@@ -2,8 +2,8 @@
 n.d(t, {
     A: () => x
 });
-var l = n(627968),
-    a = n(64700),
+var a = n(627968),
+    l = n(64700),
     i = n(503698),
     r = n.n(i),
     s = n(158954),
@@ -19,42 +19,42 @@ function x(e) {
         viewId: n,
         officialGuildId: i,
         onClose: x,
-        source: h
-    } = e, f = t.length > 7, [g, p] = a.useState(!1), _ = a.useMemo(() => t.slice(0, f && !g ? 6 : void 0), [t, f, g]);
-    return (0, l.jsxs)("div", {
-        children: [(0, l.jsx)(s.DZT, {
+        source: f
+    } = e, h = t.length > 7, [g, p] = l.useState(!1), _ = l.useMemo(() => t.slice(0, h && !g ? 6 : void 0), [t, h, g]);
+    return (0, a.jsxs)("div", {
+        children: [(0, a.jsx)(s.DZT, {
             className: u.bV,
             variant: "text-md/semibold",
             color: "text-strong",
             children: d.intl.string(d.t.ak8OHk)
-        }), 0 === t.length ? (0, l.jsx)(s.EYj, {
+        }), 0 === t.length ? (0, a.jsx)(s.EYj, {
             variant: "text-xs/semibold",
             color: "text-strong",
             className: m.p$,
             children: d.intl.string(d.t.R5fYVO)
-        }) : (0, l.jsxs)(l.Fragment, {
-            children: [(0, l.jsx)("div", {
+        }) : (0, a.jsxs)(a.Fragment, {
+            children: [(0, a.jsx)("div", {
                 className: r()(m.yz, {
-                    [m.T6]: f && !g
+                    [m.T6]: h && !g
                 }),
-                children: (0, l.jsx)("div", {
+                children: (0, a.jsx)("div", {
                     className: u.fi,
-                    children: _.map(e => (0, l.jsx)(o.A, {
+                    children: _.map(e => (0, a.jsx)(o.A, {
                         entry: e,
                         viewId: n,
                         onClose: x,
                         officialGuildId: i,
-                        source: h
+                        source: f
                     }, e.id))
                 })
-            }), f && !g && (0, l.jsxs)(c.DUT, {
+            }), h && !g && (0, a.jsxs)(c.DUT, {
                 className: m.ND,
                 onClick: () => p(!0),
-                children: [(0, l.jsx)(s.EYj, {
+                children: [(0, a.jsx)(s.EYj, {
                     variant: "text-xs/semibold",
                     color: "interactive-text-default",
                     children: d.intl.string(d.t.yohc6E)
-                }), (0, l.jsx)(c.abt, {
+                }), (0, a.jsx)(c.abt, {
                     size: "xs"
                 })]
             })]

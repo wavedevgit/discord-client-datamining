@@ -3,8 +3,8 @@ n.d(t, {
     A: () => j,
     Q: () => _
 });
-var l = n(627968),
-    a = n(64700),
+var a = n(627968),
+    l = n(64700),
     i = n(379834),
     r = n(158954),
     s = n(827734),
@@ -14,13 +14,13 @@ var l = n(627968),
     u = n(459746),
     m = n(503364),
     x = n(305080),
-    h = n(985018),
-    f = n(967725);
+    f = n(985018),
+    h = n(967725);
 
 function g(e) {
     let {
         game: t
-    } = e, n = t.supplementalData, [i] = a.useState(() => Math.random()), r = a.useMemo(() => {
+    } = e, n = t.supplementalData, [i] = l.useState(() => Math.random()), r = l.useMemo(() => {
         if (null == n) return "";
         let {
             artwork: e,
@@ -36,8 +36,8 @@ function g(e) {
         }
         return ""
     }, [n, i]);
-    return (0, d.uJ)(r) ? null : (0, l.jsx)("div", {
-        className: f.y1,
+    return (0, d.uJ)(r) ? null : (0, a.jsx)("div", {
+        className: h.y1,
         style: {
             backgroundImage: `url("${r}")`
         }
@@ -48,14 +48,14 @@ function p(e) {
     let {
         game: t,
         application: n,
-        entries: a
-    } = e, s = t.supplementalData, u = a.some(e => (0, c.CZ)(e) === i.m.GLOBAL), m = s?.name ?? t.name ?? n?.name, x = (s?.genres ?? t.genres ?? []).map(o.du).join(", ");
-    return (0, l.jsxs)("div", {
-        className: f.wt,
-        children: [u && (0, l.jsx)(v, {}), (0, l.jsx)(r.DZT, {
+        entries: l
+    } = e, s = t.supplementalData, u = l.some(e => (0, c.CZ)(e) === i.m.GLOBAL), m = s?.name ?? t.name ?? n?.name, x = (s?.genres ?? t.genres ?? []).map(o.du).join(", ");
+    return (0, a.jsxs)("div", {
+        className: h.wt,
+        children: [u && (0, a.jsx)(v, {}), (0, a.jsx)(r.DZT, {
             variant: "heading-xxl/semibold",
             children: m
-        }), (0, d.uJ)(x) ? null : (0, l.jsx)(r.EYj, {
+        }), (0, d.uJ)(x) ? null : (0, a.jsx)(r.EYj, {
             variant: "text-md/normal",
             color: "text-default",
             children: x
@@ -67,75 +67,75 @@ function _(e) {
     let {
         game: t,
         application: n,
-        isTwoColumn: a
+        isTwoColumn: l
     } = e, i = t.supplementalData;
-    return null == i ? null : (0, l.jsx)("div", {
-        className: a ? f.n8 : f.FS,
-        children: (0, l.jsx)(u.A, {
+    return null == i ? null : (0, a.jsx)("div", {
+        className: l ? h.n8 : h.FS,
+        children: (0, a.jsx)(u.A, {
             game: i,
             application: n,
-            className: f.xe,
+            className: h.xe,
             size: u.w.LARGE
         })
     })
 }
-let v = () => (0, l.jsxs)("div", {
-        className: f.p_,
-        children: [(0, l.jsx)(r.Y3C, {
+let v = () => (0, a.jsxs)("div", {
+        className: h.p_,
+        children: [(0, a.jsx)(r.Y3C, {
             size: "xs",
             color: s.A.colors.BADGE_EXPRESSIVE_TEXT_DEFAULT,
             "aria-hidden": "true"
-        }), (0, l.jsx)(r.EYj, {
+        }), (0, a.jsx)(r.EYj, {
             variant: "text-md/bold",
             color: "badge-expressive-text-default",
-            children: h.intl.string(h.t.kAlUsy)
+            children: f.intl.string(f.t.kAlUsy)
         })]
     }),
     j = function(e) {
         let {
             game: t,
             application: n,
-            entries: a,
+            entries: l,
             onClose: i
         } = e, {
             isTwoColumn: r
         } = (0, x.c)();
-        return r ? (0, l.jsxs)(l.Fragment, {
-            children: [(0, l.jsx)(g, {
+        return r ? (0, a.jsxs)(a.Fragment, {
+            children: [(0, a.jsx)(g, {
                 game: t
-            }), (0, l.jsx)("div", {
-                className: f.kL,
-                children: (0, l.jsxs)("div", {
-                    className: f.cb,
-                    children: [(0, l.jsx)(_, {
+            }), (0, a.jsx)("div", {
+                className: h.kL,
+                children: (0, a.jsxs)("div", {
+                    className: h.cb,
+                    children: [(0, a.jsx)(_, {
                         game: t,
                         application: n,
                         isTwoColumn: !0
-                    }), (0, l.jsx)(p, {
+                    }), (0, a.jsx)(p, {
                         game: t,
                         application: n,
-                        entries: a
+                        entries: l
                     })]
                 })
-            }), (0, l.jsx)(m.N, {
+            }), (0, a.jsx)(m.N, {
                 applicationId: n.id,
                 onClose: i,
-                className: f.HK
+                className: h.HK
             })]
-        }) : (0, l.jsxs)(l.Fragment, {
-            children: [(0, l.jsx)(g, {
+        }) : (0, a.jsxs)(a.Fragment, {
+            children: [(0, a.jsx)(g, {
                 game: t
-            }), (0, l.jsx)("div", {
-                className: f.kL,
-                children: (0, l.jsx)(p, {
+            }), (0, a.jsx)("div", {
+                className: h.kL,
+                children: (0, a.jsx)(p, {
                     game: t,
                     application: n,
-                    entries: a
+                    entries: l
                 })
-            }), (0, l.jsx)(m.N, {
+            }), (0, a.jsx)(m.N, {
                 applicationId: n.id,
                 onClose: i,
-                className: f.HK
+                className: h.HK
             })]
         })
     }

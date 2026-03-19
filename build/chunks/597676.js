@@ -1,9 +1,9 @@
 /** chunk id: 597676 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => f
 });
-var l = n(64700),
-    a = n(311907),
+var a = n(64700),
+    l = n(311907),
     i = n(843472),
     r = n(155718),
     s = n(731068),
@@ -13,8 +13,8 @@ var l = n(64700),
 let u = /^#{1,3}\s+(.+)$/;
 
 function m(e) {
-    let t, n, l = (0, o._c)(e) ? e.components.filter(e => e.type === r.I5.TEXT_DISPLAY).map(e => e.content).join("\n") : e.content,
-        a = function(e) {
+    let t, n, a = (0, o._c)(e) ? e.components.filter(e => e.type === r.I5.TEXT_DISPLAY).map(e => e.content).join("\n") : e.content,
+        l = function(e) {
             if ((0, o._c)(e)) {
                 let t = e.components.find(e => e.type === r.I5.MEDIA_GALLERY),
                     n = t?.items[0]?.media;
@@ -37,28 +37,28 @@ function m(e) {
                 url: n.proxy_url,
                 type: "video"
             };
-            let l = e.embeds.find(e => null != e.video && null != e.thumbnail);
-            if (l?.thumbnail != null) return {
-                url: l.thumbnail.proxyURL ?? l.thumbnail.url,
+            let a = e.embeds.find(e => null != e.video && null != e.thumbnail);
+            if (a?.thumbnail != null) return {
+                url: a.thumbnail.proxyURL ?? a.thumbnail.url,
                 type: "image"
             }
         }(e),
         {
             title: i,
             body: d
-        } = null != (n = (-1 === (t = l.indexOf("\n")) ? l : l.slice(0, t)).match(u)) ? {
+        } = null != (n = (-1 === (t = a.indexOf("\n")) ? a : a.slice(0, t)).match(u)) ? {
             title: n[1].trim(),
-            body: -1 === t ? "" : l.slice(t + 1).trimStart()
+            body: -1 === t ? "" : a.slice(t + 1).trimStart()
         } : {
-            body: l
+            body: a
         };
     return {
         id: e.id,
-        mediaUrl: a?.url,
-        mediaType: a?.type,
+        mediaUrl: l?.url,
+        mediaType: l?.type,
         title: i,
         body: d,
-        content: l
+        content: a
     }
 }
 
@@ -69,19 +69,19 @@ function x(e, t) {
     return !0
 }
 
-function h(e) {
-    let t = l.useRef([]),
-        n = (0, a.bG)([d.A], () => {
+function f(e) {
+    let t = a.useRef([]),
+        n = (0, l.bG)([d.A], () => {
             let n = null != e ? d.A.getMessages(e) : void 0;
             return null != n && n.length > 0 && (t.current = n.toArray().reverse().map(m)), t.current
         }, [e], x),
-        r = (0, a.bG)([d.A], () => {
+        r = (0, l.bG)([d.A], () => {
             if (null == e || n.length > 0) return !1;
             let t = d.A.getMessages(e);
             return t?.error !== !0 && (null == t || !0 !== t.hasFetched)
         }, [e, n.length]),
-        s = l.useRef(null);
-    return l.useEffect(() => {
+        s = a.useRef(null);
+    return a.useEffect(() => {
         null == e || s.current !== e && (s.current = e, i.A.fetchMessages({
             channelId: e,
             limit: 50

@@ -1,2 +1,32 @@
 /** chunk id: 37948 params = (module,exports,require) **/
-e.exports = JSON.parse('{"/cp93l":["N\xe4chster Monat"],"raS6yf":["Vorheriger Monat"],"JA5C7L":["L\xf6schen"],"I8kUqR":["Kalender \xf6ffnen"],"db85vU":["Keine Artikel zum Anzeigen"],"bPKiId":["Keine Ergebnisse f\xfcr „",[1,"query"],"“"],"WfH9in":["Schlie\xdfen"],"m3Vfcs":["Nicht erneut anzeigen"],"cgdAs2":["(Wird in einem neuen Tab ge\xf6ffnet)"],"2L/ygS":[[1,"percent"],"\xa0% abgeschlossen"],"/Y7vRd":["Klicke zum Entfernen auf „L\xf6schen“."],"VMNfsY":["Ausgew\xe4hlt"],"A+pfVR":["Ausw\xe4hlen\xa0…"],"v2YSk/":["Schritt\xa0",[1,"stepNumber"]," von\xa0",[1,"stepCount"]],"YpT3kk":["Video vergr\xf6\xdfern und abspielen"]}')
+a.d(t, {
+    A: () => l
+}), a(323874), a(14289), a(35956);
+var n = a(64700),
+    r = a(25171);
+let o = "steam",
+    s = /^\/app\/(\d+)(?:\/)?/;
+
+function l(e) {
+    let t = function(e) {
+        let [t, a] = n.useState(!1);
+        return n.useEffect(() => {
+            r.A.isProtocolRegistered(e).then(a)
+        }, [e]), t
+    }(o);
+    return n.useCallback(a => {
+        let n;
+        if (null != a) {
+            try {
+                n = new URL(a)
+            } catch {
+                return
+            }
+            if ("store.steampowered.com" === n.hostname && t) {
+                let e = n.pathname.match(s)?.[1];
+                null != e && (a = `${o}://store/${e}`)
+            } else n.searchParams.set("utm_source", "discord"), a = n.toString();
+            null != e ? e(a) : window.open(a, "_blank", "noreferrer noopener")
+        }
+    }, [e, t])
+}

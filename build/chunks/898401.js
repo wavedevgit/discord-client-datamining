@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(421380),
-    a = n(397927),
+var a = n(421380),
+    l = n(397927),
     r = n(465794),
     s = n(888675),
     o = n(652215),
@@ -21,21 +21,21 @@ function _(e) {
     return (0, i.jsx)(s.A, {
         contentClassName: u.o9,
         iconContainerClassName: u.zc,
-        iconNode: (0, i.jsx)(a.XFE, {
+        iconNode: (0, i.jsx)(l.XFE, {
             colorClass: u.Kk
         }),
         children: (0, i.jsxs)("div", {
             className: u.kL,
             children: [(0, i.jsxs)("div", {
-                children: [(0, i.jsx)(a.Text, {
+                children: [(0, i.jsx)(l.Text, {
                     variant: "text-sm/medium",
                     children: t.content
                 }), (0, i.jsxs)("div", {
                     className: u.C5,
-                    children: [(0, i.jsx)(a.tvc, {
+                    children: [(0, i.jsx)(l.tvc, {
                         size: "xs",
                         colorClass: u.bu
-                    }), (0, i.jsx)(a.Text, {
+                    }), (0, i.jsx)(l.Text, {
                         variant: "text-xs/medium",
                         className: u.vp,
                         children: d.intl.string(d.t["BMw+7I"])
@@ -50,7 +50,7 @@ function _(e) {
                     textOptions: {
                         textOverride: d.intl.string(d.t.Y2WKTl)
                     },
-                    size: l.$n.Sizes.SMALL,
+                    size: a.$n.Sizes.SMALL,
                     premiumModalAnalyticsLocation: {
                         section: _,
                         object: o.ZSU.MESSAGE

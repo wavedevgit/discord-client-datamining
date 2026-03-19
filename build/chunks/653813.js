@@ -25,7 +25,7 @@ function f(e) {
         giftMessage: g
     } = e, {
         priceOptions: I
-    } = (0, l.P5)(), S = r.useCallback(e => {
+    } = (0, l.P5)(), C = r.useCallback(e => {
         (0, o.A)({
             isGift: !0,
             giftRecipient: i,
@@ -66,7 +66,7 @@ function f(e) {
             className: m.S3,
             "data-migration-pending": !0,
             children: (0, n.jsx)(d.A, {
-                onSelectSku: S,
+                onSelectSku: C,
                 giftRecipient: i,
                 priceOptions: I,
                 onWishlistItemClick: t

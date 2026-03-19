@@ -3,8 +3,8 @@ n.d(t, {
     A: () => E
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(417597),
+    a = n(64700),
+    l = n(417597),
     r = n(451988),
     s = n(397927),
     o = n(775602),
@@ -20,9 +20,9 @@ function E(e) {
         giftIntentType: t,
         recipientUser: n,
         channel: E
-    } = e, I = (0, a.bG)([o.A], () => o.A.useReducedMotion), T = l.useRef(null), {
-        createMultipleConfettiAt: N
-    } = l.useContext(c.x), f = l.useCallback(e => ({
+    } = e, I = (0, l.bG)([o.A], () => o.A.useReducedMotion), T = a.useRef(null), {
+        createMultipleConfettiAt: f
+    } = a.useContext(c.x), N = a.useCallback(e => ({
         size: {
             type: "static-random",
             minValue: e.confettiSize - 6,
@@ -40,19 +40,19 @@ function E(e) {
             }
         }
     }), []);
-    return l.useEffect(() => {
+    return a.useEffect(() => {
         if (I) return;
         let e = T.current;
         if (null == e) return;
         let t = null,
             n = new IntersectionObserver(i => {
-                let [l] = i;
-                l.intersectionRatio < .5 || (n.disconnect(), (t = new r.J_(1e3, () => {
+                let [a] = i;
+                a.intersectionRatio < .5 || (n.disconnect(), (t = new r.J_(1e3, () => {
                     let t = e.getBoundingClientRect(),
-                        n = f({
+                        n = N({
                             confettiSize: 8
                         });
-                    N(t.left + t.width / 2, t.top + t.height / 2, n, 60)
+                    f(t.left + t.width / 2, t.top + t.height / 2, n, 60)
                 })).delay())
             }, {
                 threshold: .5
@@ -60,7 +60,7 @@ function E(e) {
         return n.observe(e), () => {
             n.disconnect(), t?.cancel()
         }
-    }, [N, T, I, f]), (0, i.jsx)(_.A, {
+    }, [f, T, I, N]), (0, i.jsx)(_.A, {
         contentClassName: A.o9,
         iconContainerClassName: A.zc,
         iconNode: (0, i.jsx)(s.XFE, {

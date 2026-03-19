@@ -20,7 +20,7 @@ function o(n) {
         onPurchase: c,
         PurchaseButton: m,
         GiftButton: p,
-        availabilityLabel: x
+        availabilityLabel: h
     } = n;
     return (0, t.jsx)(r.vN, {
         children: (0, t.jsxs)("div", {
@@ -60,7 +60,7 @@ function o(n) {
                 children: [null != m && (0, t.jsx)(a.EYj, {
                     color: "interactive-text-default",
                     variant: "text-sm/normal",
-                    children: x
+                    children: h
                 }), (0, t.jsxs)("div", {
                     className: d.GC,
                     children: [null != m && (0, t.jsx)(m, {

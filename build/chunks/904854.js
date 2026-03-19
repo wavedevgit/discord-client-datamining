@@ -3,8 +3,8 @@ n.d(t, {
     A: () => T
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(158954),
+    a = n(64700),
+    l = n(158954),
     r = n(311907),
     s = n(397927),
     o = n(21119),
@@ -19,51 +19,51 @@ var i = n(627968),
 
 function T(e) {
     var t;
-    let n, T, N, f, C, g, {
-            message: h,
-            channel: p,
+    let n, T, f, N, C, g, {
+            message: p,
+            channel: h,
             compact: R
         } = e,
-        S = (0, A.K)(h),
-        x = (0, r.yK)([d.default], () => h.call?.participants != null ? h.call.participants.map(e => d.default.getUser(e)).filter(e => null != e).filter(e => e.id !== h.author.id) : [], [h.author.id, h.call]),
+        x = (0, A.K)(p),
+        S = (0, r.yK)([d.default], () => p.call?.participants != null ? p.call.participants.map(e => d.default.getUser(e)).filter(e => null != e).filter(e => e.id !== p.author.id) : [], [p.author.id, p.call]),
         O = (0, r.bG)([o.A], () => o.A.getUserAffinitiesMap(), []),
-        M = l.useMemo(() => (0, c.L)(x, O, "VoiceSession - participants"), [x, O]),
-        D = (t = h.author, n = (0, _.P)({
+        M = a.useMemo(() => (0, c.L)(S, O, "VoiceSession - participants"), [S, O]),
+        D = (t = p.author, n = (0, _.P)({
             user: t,
-            channelId: p.id,
-            guildId: p.guild_id,
-            messageId: h.id
+            channelId: h.id,
+            guildId: h.guild_id,
+            messageId: p.id
         }), T = (0, _.P)({
             user: M[0],
-            channelId: p.id,
-            guildId: p.guild_id,
-            messageId: h.id
-        }), N = (0, _.P)({
+            channelId: h.id,
+            guildId: h.guild_id,
+            messageId: p.id
+        }), f = (0, _.P)({
             user: M[1],
-            channelId: p.id,
-            guildId: p.guild_id,
-            messageId: h.id
-        }), f = (0, u.Ay)(h), C = (0, u.d8)(M[0], p), g = (0, u.d8)(M[1], p), null == S ? E.intl.format(E.t["eX6e/3"], {
-            username: f.nick,
-            usernameHook: n(f)
+            channelId: h.id,
+            guildId: h.guild_id,
+            messageId: p.id
+        }), N = (0, u.Ay)(p), C = (0, u.d8)(M[0], h), g = (0, u.d8)(M[1], h), null == x ? E.intl.format(E.t["eX6e/3"], {
+            username: N.nick,
+            usernameHook: n(N)
         }) : E.intl.format(E.t.YUbgR8, {
             userCount: M.length + 1,
-            username: f.nick,
-            usernameHook: n(f),
+            username: N.nick,
+            usernameHook: n(N),
             username2: C.nick,
             username2Hook: T(C),
             username3: g.nick,
-            username3Hook: N(g),
+            username3Hook: f(g),
             otherCount: M.length - 1,
-            duration: S
+            duration: x
         }));
     return (0, i.jsx)(m.A, {
-        iconNode: (0, i.jsx)(a.HKD, {
+        iconNode: (0, i.jsx)(l.HKD, {
             size: "md",
             color: s.LU0.colors.STATUS_POSITIVE
         }),
         iconContainerClassName: I.z,
-        timestamp: h.timestamp,
+        timestamp: p.timestamp,
         compact: R,
         children: D
     })

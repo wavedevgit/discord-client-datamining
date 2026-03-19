@@ -1,100 +1,100 @@
 /** chunk id: 839671 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v,
-    K: () => j
+    A: () => j,
+    K: () => A
 });
-var l = n(627968);
-n(64700);
-var a = n(503698),
-    i = n.n(a),
-    r = n(505779),
-    s = n(990078),
-    c = n(397927),
-    o = n(409626),
-    d = n(880405),
-    u = n(985018),
-    m = n(728528),
-    x = n(612617);
-let h = [r.V.OFFICIAL, r.V.TWITTER, r.V.YOUTUBE],
-    f = {
-        colorClass: x.wP
-    },
+var a = n(627968),
+    l = n(64700),
+    i = n(503698),
+    r = n.n(i),
+    s = n(505779),
+    c = n(990078),
+    o = n(397927),
+    d = n(409626),
+    u = n(37948),
+    m = n(985018),
+    x = n(728528),
+    f = n(612617);
+let h = [s.V.OFFICIAL, s.V.TWITTER, s.V.YOUTUBE],
     g = {
+        colorClass: f.wP
+    },
+    p = {
         size: "xs",
-        colorClass: x.wP
+        colorClass: f.wP
     };
 
-function p(e, t) {
+function _(e, t) {
     switch (e.category) {
-        case r.V.OFFICIAL:
+        case s.V.OFFICIAL:
             return {
-                icon: (0, l.jsx)(c.L_e, {
+                icon: (0, a.jsx)(o.L_e, {
                     ...t
-                }), action: o.Ws.WebsiteLink, title: u.intl.string(u.t.fOUKvg)
+                }), action: d.Ws.WebsiteLink, title: m.intl.string(m.t.fOUKvg)
             };
-        case r.V.TWITTER:
+        case s.V.TWITTER:
             return {
-                icon: (0, l.jsx)(c.p3p, {
+                icon: (0, a.jsx)(o.p3p, {
                     ...t
-                }), action: o.Ws.XLink, title: u.intl.string(u.t.INic4y)
+                }), action: d.Ws.XLink, title: m.intl.string(m.t.INic4y)
             };
-        case r.V.YOUTUBE:
+        case s.V.YOUTUBE:
             return {
-                action: o.Ws.YouTubeLink, icon: (0, l.jsx)(c.CiD, {
+                action: d.Ws.YouTubeLink, icon: (0, a.jsx)(o.CiD, {
                     ...t
-                }), title: u.intl.string(u.t.lNmxbE)
+                }), title: m.intl.string(m.t.lNmxbE)
             };
-        case r.V.FACEBOOK:
+        case s.V.FACEBOOK:
             return {
-                icon: (0, l.jsx)(c.Zc1, {
+                icon: (0, a.jsx)(o.Zc1, {
                     ...t
-                }), action: o.Ws.FacebookLink, title: u.intl.string(u.t.FjyREK)
+                }), action: d.Ws.FacebookLink, title: m.intl.string(m.t.FjyREK)
             };
-        case r.V.INSTAGRAM:
+        case s.V.INSTAGRAM:
             return {
-                icon: (0, l.jsx)(c.LyU, {
+                icon: (0, a.jsx)(o.LyU, {
                     ...t
-                }), action: o.Ws.InstagramLink, title: u.intl.string(u.t["cgR+IK"])
+                }), action: d.Ws.InstagramLink, title: m.intl.string(m.t["cgR+IK"])
             };
-        case r.V.BLUESKY:
+        case s.V.BLUESKY:
             return {
-                icon: (0, l.jsx)(c.akf, {
+                icon: (0, a.jsx)(o.akf, {
                     ...t
-                }), action: o.Ws.BlueskyLink, title: u.intl.string(u.t["D/PHq5"])
+                }), action: d.Ws.BlueskyLink, title: m.intl.string(m.t["D/PHq5"])
             };
-        case r.V.REDDIT:
+        case s.V.REDDIT:
             return {
-                icon: (0, l.jsx)(c.T1e, {
+                icon: (0, a.jsx)(o.T1e, {
                     ...t
-                }), action: o.Ws.RedditLink, title: u.intl.string(u.t["Hgb+fc"])
+                }), action: d.Ws.RedditLink, title: m.intl.string(m.t["Hgb+fc"])
             };
-        case r.V.TWITCH:
+        case s.V.TWITCH:
             return {
-                icon: (0, l.jsx)(c.aWO, {
+                icon: (0, a.jsx)(o.aWO, {
                     ...t
-                }), action: o.Ws.TwitchLink, title: u.intl.string(u.t["7xtz4G"])
+                }), action: d.Ws.TwitchLink, title: m.intl.string(m.t["7xtz4G"])
             };
         default:
             throw Error("Unknown website category")
     }
 }
 
-function _(e) {
+function v(e) {
     let {
         website: t,
         trackClick: n
     } = e, {
-        action: a,
+        action: l,
         icon: i,
         title: r
-    } = p(t, f);
-    return (0, l.jsx)(s.m, {
+    } = _(t, g);
+    return (0, a.jsx)(c.m, {
         text: r,
-        children: (0, l.jsx)(c.MzZ, {
+        children: (0, a.jsx)(o.MzZ, {
             onClick: () => {
-                n(a)
+                n(l)
             },
-            className: x.yO,
+            className: f.yO,
             href: t.url,
             target: "_blank",
             "aria-label": r,
@@ -102,27 +102,27 @@ function _(e) {
         })
     })
 }
-let v = function(e) {
+let j = function(e) {
     let {
         detectedGame: t,
         trackClick: n
     } = e;
     if (null == t.websites) return null;
-    let a = t.websites.filter(e => {
+    let l = t.websites.filter(e => {
         let {
             category: t
         } = e;
         return h.includes(t)
     }).sort((e, t) => e.category - t.category);
-    return 0 === a.length ? null : (0, l.jsxs)("div", {
-        children: [(0, l.jsx)(c.Heading, {
-            className: m.bV,
+    return 0 === l.length ? null : (0, a.jsxs)("div", {
+        children: [(0, a.jsx)(o.Heading, {
+            className: x.bV,
             variant: "text-xs/semibold",
             color: "text-default",
-            children: u.intl.string(u.t["Oj3o1/"])
-        }), (0, l.jsx)("div", {
-            className: i()(m.nM, m.mX),
-            children: a.map(e => (0, l.jsx)(_, {
+            children: m.intl.string(m.t["Oj3o1/"])
+        }), (0, a.jsx)("div", {
+            className: r()(x.nM, x.mX),
+            children: l.map(e => (0, a.jsx)(v, {
                 website: e,
                 trackClick: n
             }, e.url))
@@ -130,28 +130,24 @@ let v = function(e) {
     })
 };
 
-function j(e) {
+function A(e) {
     let {
         website: t,
         trackClick: n
-    } = e, {
-        action: a,
-        icon: i,
-        title: r
-    } = p(t, g);
-    return (0, l.jsx)(s.m, {
-        __unsupportedReactNodeAsText: t.url,
-        children: (0, l.jsx)(c.DUT, {
-            tag: "a",
-            onClick: () => {
-                n(a)
-            },
-            className: x.yO,
-            title: r,
-            href: (0, d.L$)(t.url),
-            target: "_blank",
-            rel: "noreferrer noopener",
-            children: i
+    } = e, i = (0, u.A)(), {
+        action: r,
+        icon: s,
+        title: d
+    } = _(t, p), m = l.useCallback(() => {
+        n(r), i(t.url)
+    }, [r, i, n, t.url]);
+    return (0, a.jsx)(c.m, {
+        text: d,
+        children: (0, a.jsx)(o.DUT, {
+            onClick: m,
+            className: f.yO,
+            title: d,
+            children: s
         })
     })
 }

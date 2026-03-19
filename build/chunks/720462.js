@@ -1,9 +1,9 @@
 /** chunk id: 720462 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => f
 });
-var l = n(627968),
-    a = n(64700),
+var a = n(627968),
+    l = n(64700),
     i = n(503698),
     r = n.n(i),
     s = n(735438),
@@ -13,47 +13,47 @@ var l = n(627968),
     u = n(775602),
     m = n(985018),
     x = n(970206);
-let h = e => {
+let f = e => {
     let {
         children: t,
         gap: n = 24,
         edgeFade: i = "xl",
-        hideActionsWhenDisabled: h = !0,
-        className: f,
+        hideActionsWhenDisabled: f = !0,
+        className: h,
         "aria-label": g
-    } = e, p = a.useId(), _ = a.useRef(0), v = a.useRef(0), j = a.useRef(0), A = a.useRef(!1), I = a.useRef(!1), E = a.useRef(null), N = (0, c.bG)([u.A], () => u.A.keyboardModeEnabled), b = (0, c.bG)([u.A], () => u.A.useReducedMotion), C = a.useMemo(() => a.Children.map(t, e => a.isValidElement(e) ? null != e && "object" == typeof e && e.$$typeof === Symbol.for("react.portal") ? e : a.cloneElement(e, {
+    } = e, p = l.useId(), _ = l.useRef(0), v = l.useRef(0), j = l.useRef(0), A = l.useRef(!1), E = l.useRef(!1), I = l.useRef(null), b = (0, c.bG)([u.A], () => u.A.keyboardModeEnabled), N = (0, c.bG)([u.A], () => u.A.useReducedMotion), C = l.useMemo(() => l.Children.map(t, e => l.isValidElement(e) ? null != e && "object" == typeof e && e.$$typeof === Symbol.for("react.portal") ? e : l.cloneElement(e, {
         tabIndex: -1
-    }) : e), [t]), [T, S] = a.useState(!1), [L, k] = a.useState(!1), [y, G] = a.useState(!0), R = () => {
-        S(v.current > _.current)
-    }, O = a.useCallback(() => {
-        if (I.current) return;
+    }) : e), [t]), [T, L] = l.useState(!1), [S, k] = l.useState(!1), [y, G] = l.useState(!0), R = () => {
+        L(v.current > _.current)
+    }, M = l.useCallback(() => {
+        if (E.current) return;
         let e = P.current;
         if (null == e) return;
         let t = Math.floor((j.current + e.clientWidth / 2) / (e.scrollWidth / e.childElementCount));
-        E.current = Math.max(0, Math.min(e.childElementCount - 1, t))
-    }, []), M = a.useCallback(() => {
+        I.current = Math.max(0, Math.min(e.childElementCount - 1, t))
+    }, []), O = l.useCallback(() => {
         let e = P.current;
-        null != e && (k(j.current > 0), G(j.current + e.clientWidth < e.scrollWidth), O())
-    }, [O]), w = a.useCallback(() => {
+        null != e && (k(j.current > 0), G(j.current + e.clientWidth < e.scrollWidth), M())
+    }, [M]), D = l.useCallback(() => {
         let e = P.current;
         if (null == e) return;
-        let t = E.current;
+        let t = I.current;
         Array.from(e.children).forEach((e, n) => {
             Array.from(e.children).forEach(e => {
-                N && n !== t ? e.setAttribute("inert", "true") : e.removeAttribute("inert")
+                b && n !== t ? e.setAttribute("inert", "true") : e.removeAttribute("inert")
             })
         })
-    }, [N]), D = (0, d.w)(e => {
+    }, [b]), w = (0, d.w)(e => {
         let {
             contentRect: t
         } = e;
-        _.current = t.width, null != P.current && (j.current = P.current?.scrollLeft), R(), M(), w()
-    }), P = a.useRef(null);
-    a.useEffect(() => {
+        _.current = t.width, null != P.current && (j.current = P.current?.scrollLeft), R(), O(), D()
+    }), P = l.useRef(null);
+    l.useEffect(() => {
         let e = P.current;
         if (null == e) return;
         let t = new ResizeObserver(() => {
-            v.current = e.scrollWidth, e.scrollLeft !== j.current && (e.scrollLeft = j.current), R(), M()
+            v.current = e.scrollWidth, e.scrollLeft !== j.current && (e.scrollLeft = j.current), R(), O()
         });
         Array.from(e.children).forEach(e => {
             t.observe(e)
@@ -65,11 +65,11 @@ let h = e => {
         });
         return n.observe(e, {
             childList: !0
-        }), e.addEventListener("scrollend", M), () => {
-            t.disconnect(), n.disconnect(), e.removeEventListener("scrollend", M)
+        }), e.addEventListener("scrollend", O), () => {
+            t.disconnect(), n.disconnect(), e.removeEventListener("scrollend", O)
         }
-    }, [M]);
-    let V = a.useMemo(() => (0, s.throttle)(() => {
+    }, [O]);
+    let V = l.useMemo(() => (0, s.throttle)(() => {
             let e = P.current;
             if (null == e) return;
             let {
@@ -77,12 +77,12 @@ let h = e => {
             } = e, n = Math.max(0, t - _.current);
             j.current = n, A.current = !0, e.scrollTo({
                 left: n,
-                behavior: b ? "auto" : "smooth"
+                behavior: N ? "auto" : "smooth"
             }), e.addEventListener("scrollend", () => A.current = !1, {
                 once: !0
-            }), M()
-        }, 200), [_, M, b]),
-        Y = a.useMemo(() => (0, s.throttle)(() => {
+            }), O()
+        }, 200), [_, O, N]),
+        W = l.useMemo(() => (0, s.throttle)(() => {
             let e = P.current;
             if (null == e) return;
             let {
@@ -90,91 +90,91 @@ let h = e => {
             } = e, n = t + _.current;
             j.current = n, A.current = !0, e.scrollTo({
                 left: n,
-                behavior: b ? "auto" : "smooth"
+                behavior: N ? "auto" : "smooth"
             }), e.addEventListener("scrollend", () => A.current = !1, {
                 once: !0
-            }), M()
-        }, 200), [_, M, b]),
-        W = a.useCallback(() => {
+            }), O()
+        }, 200), [_, O, N]),
+        Y = l.useCallback(() => {
             let e = P.current;
             if (null == e) return !1;
             for (let t of e.children)
                 if (t.contains(document.activeElement)) return !0;
             return !1
         }, []),
-        U = a.useCallback(() => {
+        U = l.useCallback(() => {
             setTimeout(() => {
-                if (!W()) {
+                if (!Y()) {
                     let e = P.current;
                     if (null != e) {
                         for (let t of (e.setAttribute("tabIndex", "0"), e.children)) t.setAttribute("tabIndex", "-1");
-                        w()
+                        D()
                     }
                 }
             }, 10)
-        }, [W, w]);
-    a.useEffect(() => {
-        w()
-    }, [N, w]);
+        }, [Y, D]);
+    l.useEffect(() => {
+        D()
+    }, [b, D]);
     let F = {
         "--custom-edge-fade-width": `var(--space-${i})`
     };
-    return (0, l.jsxs)("div", {
-        ref: D,
+    return (0, a.jsxs)("div", {
+        ref: w,
         role: null != g ? "region" : void 0,
         "aria-label": g,
         style: F,
-        className: r()(x.kL, f),
-        children: [T && (0, l.jsxs)("div", {
+        className: r()(x.kL, h),
+        children: [T && (0, a.jsxs)("div", {
             className: x.o1,
             role: "group",
-            children: [(0, l.jsx)("div", {
+            children: [(0, a.jsx)("div", {
                 className: r()(x.x6, {
-                    [x.r9]: !L && h
+                    [x.r9]: !S && f
                 }),
-                children: (0, l.jsx)(o.K0, {
+                children: (0, a.jsx)(o.K0, {
                     icon: o.Zge,
                     variant: "overlay-secondary",
                     onClick: V,
-                    disabled: !L,
+                    disabled: !S,
                     "aria-label": m.intl.string(m.t.FQx1Ru),
-                    "aria-hidden": !L && h,
+                    "aria-hidden": !S && f,
                     "aria-controls": p
                 })
-            }), (0, l.jsx)("div", {
+            }), (0, a.jsx)("div", {
                 className: r()(x.x6, {
-                    [x.r9]: !y && h
+                    [x.r9]: !y && f
                 }),
-                children: (0, l.jsx)(o.K0, {
+                children: (0, a.jsx)(o.K0, {
                     icon: o.KS6,
                     variant: "overlay-secondary",
-                    onClick: Y,
+                    onClick: W,
                     disabled: !y,
                     "aria-label": m.intl.string(m.t.H4hwjn),
-                    "aria-hidden": !y && h,
+                    "aria-hidden": !y && f,
                     "aria-controls": p
                 })
             })]
-        }), (0, l.jsx)(o.BJc, {
+        }), (0, a.jsx)(o.BJc, {
             direction: "horizontal",
             gap: n,
             id: p,
             "aria-label": g,
             ref: P,
             className: r()(x.Y_, {
-                [x.jL]: L,
+                [x.jL]: S,
                 [x.w6]: y,
-                [x.XG]: L && y,
-                [x.DY]: N
+                [x.XG]: S && y,
+                [x.DY]: b
             }),
             tabIndex: 0,
             onFocus: e => {
                 let t = P.current;
                 if (null != t) {
-                    if (e.preventDefault(), O(), -1 !== t.tabIndex) {
-                        let e = E?.current ?? 0,
+                    if (e.preventDefault(), M(), -1 !== t.tabIndex) {
+                        let e = I?.current ?? 0,
                             n = t.children[e];
-                        null != n && (n.focus(), n.setAttribute("tabIndex", "0"), E.current = e, w())
+                        null != n && (n.focus(), n.setAttribute("tabIndex", "0"), I.current = e, D())
                     }
                     t.setAttribute("tabIndex", "-1")
                 }
@@ -186,30 +186,30 @@ let h = e => {
                 let t = P.current;
                 if (null == t) return;
                 let n = t.children,
-                    l = E.current ?? 0,
-                    a = n[l];
-                null != a && a.setAttribute("tabIndex", "-1");
+                    a = I.current ?? 0,
+                    l = n[a];
+                null != l && l.setAttribute("tabIndex", "-1");
                 let i = ["ArrowLeft"],
                     r = ["ArrowRight"];
                 if ([...i, ...r].includes(e.key))
-                    if (e.preventDefault(), i.includes(e.key) && (l = Math.max(0, l - 1)), r.includes(e.key) && (l = Math.min(t.childElementCount - 1, l + 1)), null != (a = n[l])) {
-                        a.setAttribute("tabIndex", "0"), t.setAttribute("tabIndex", "-1"), a.focus({
+                    if (e.preventDefault(), i.includes(e.key) && (a = Math.max(0, a - 1)), r.includes(e.key) && (a = Math.min(t.childElementCount - 1, a + 1)), null != (l = n[a])) {
+                        l.setAttribute("tabIndex", "0"), t.setAttribute("tabIndex", "-1"), l.focus({
                             preventScroll: !0
                         });
-                        let e = a.offsetLeft - t.clientWidth / 2 + a.offsetWidth / 2,
+                        let e = l.offsetLeft - t.clientWidth / 2 + l.offsetWidth / 2,
                             n = Math.max(0, Math.min(t.scrollWidth - t.clientWidth, e));
-                        j.current = n, n !== t.scrollLeft && (A.current = !0, I.current = !0, t.scrollTo({
+                        j.current = n, n !== t.scrollLeft && (A.current = !0, E.current = !0, t.scrollTo({
                             left: n,
-                            behavior: b ? "auto" : "smooth"
+                            behavior: N ? "auto" : "smooth"
                         }), t.addEventListener("scrollend", () => {
-                            A.current = !1, I.current = !1
+                            A.current = !1, E.current = !1
                         }, {
                             once: !0
-                        })), E.current = l, w()
-                    } else t.setAttribute("tabIndex", "0"), O()
+                        })), I.current = a, D()
+                    } else t.setAttribute("tabIndex", "0"), M()
             },
             onScroll: e => {
-                A.current || (j.current = e.target.scrollLeft, M())
+                A.current || (j.current = e.target.scrollLeft, O())
             },
             children: C
         })]

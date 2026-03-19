@@ -1,23 +1,23 @@
 /** chunk id: 226151 params = (module,exports,require) **/
-a.d(n, {
+t.d(n, {
     default: () => x
 });
-var t = a(627968);
-a(64700);
-var i = a(793574),
-    l = a(688810),
-    s = a(937008),
-    d = a(156312),
-    r = a(491057),
-    c = a(546042),
-    o = a(721252),
-    u = a(674223),
-    p = a(818348);
+var a = t(627968);
+t(64700);
+var i = t(793574),
+    l = t(688810),
+    s = t(937008),
+    d = t(156312),
+    r = t(491057),
+    c = t(546042),
+    o = t(721252),
+    u = t(674223),
+    p = t(818348);
 
 function h(e) {
     let {
         onClose: n,
-        onComplete: a,
+        onComplete: t,
         transitionState: i,
         applicationId: s,
         analyticsLocationObject: r,
@@ -25,9 +25,9 @@ function h(e) {
     } = e, {} = (0, d.P5)(), {
         analyticsLocations: u
     } = (0, l.Ay)();
-    return (0, t.jsx)(c.PaymentModal, {
+    return (0, a.jsx)(c.PaymentModal, {
         onClose: n,
-        onComplete: a,
+        onComplete: t,
         applicationId: s,
         skuId: o,
         initialPlanId: null,
@@ -40,30 +40,32 @@ function h(e) {
 function x(e) {
     let {
         loadId: n,
-        applicationId: a,
+        applicationId: t,
         skuId: c,
         analyticsLocations: x,
-        isGift: m = !1
+        isGift: m = !1,
+        checkoutFlow: g
     } = e, {
-        analyticsLocations: g
+        analyticsLocations: f
     } = (0, l.Ay)(x, i.A.PREMIUM_PAYMENT_MODAL);
-    return (0, t.jsx)(l.f5, {
-        value: g,
-        children: (0, t.jsx)(d.PaymentContextProvider, {
+    return (0, a.jsx)(l.f5, {
+        value: f,
+        children: (0, a.jsx)(d.PaymentContextProvider, {
             loadId: n,
             stepConfigs: function() {
                 let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
                 return [o.kJ, ...e ? [u.K] : [], o.zK, ...o.hh, o.r2, o.zX]
             }(m),
-            applicationId: a,
+            applicationId: t,
             skuIDs: [c],
             activeSubscription: null,
             purchaseType: p.VV.ONE_TIME,
             isGift: m,
-            children: (0, t.jsx)(r.Qt, {
-                children: (0, t.jsx)(s.dX, {
+            unifiedCheckoutFlow: g,
+            children: (0, a.jsx)(r.Qt, {
+                children: (0, a.jsx)(s.dX, {
                     isGift: m,
-                    children: (0, t.jsx)(h, {
+                    children: (0, a.jsx)(h, {
                         ...e
                     })
                 })

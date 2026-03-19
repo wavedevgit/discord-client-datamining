@@ -3,9 +3,9 @@ n.d(t, {
     A: () => V
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    r = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(989349),
     o = n.n(s),
     c = n(718564),
@@ -17,15 +17,15 @@ var i = n(627968),
     E = n(585510),
     I = n(903093),
     T = n(785823),
-    N = n(449585),
-    f = n(137207),
+    f = n(449585),
+    N = n(137207),
     C = n(997509),
     g = n(916768),
-    h = n(854627),
-    p = n(342296),
+    p = n(854627),
+    h = n(342296),
     R = n(734057),
-    S = n(696451),
-    x = n(287809),
+    x = n(696451),
+    S = n(287809),
     O = n(643204),
     M = n(112758),
     D = n(809115),
@@ -41,14 +41,14 @@ function y() {
     })
 }
 
-function k(e) {
+function b(e) {
     let {
         message: t,
         compact: n
     } = e, {
-        notificationType: l
+        notificationType: a
     } = (0, T.Bk)(t);
-    switch (l) {
+    switch (a) {
         case T.ZA:
         case c.W.RAID:
             return (0, i.jsx)(B, {
@@ -70,19 +70,19 @@ function k(e) {
                 compact: n
             });
         default:
-            return (0, i.jsx)(b, {
+            return (0, i.jsx)(k, {
                 compact: n
             })
     }
 }
 
-function b(e) {
+function k(e) {
     let {
         compact: t
     } = e;
     return (0, i.jsx)(w, {
         compact: t,
-        header: (0, i.jsxs)(l.Fragment, {
+        header: (0, i.jsxs)(a.Fragment, {
             children: [(0, i.jsx)(m.EpV, {
                 size: "xs",
                 color: _.A.colors.TEXT_DEFAULT.css
@@ -106,7 +106,7 @@ function G(e) {
     } = e;
     return (0, i.jsx)(w, {
         compact: t,
-        header: (0, i.jsxs)(l.Fragment, {
+        header: (0, i.jsxs)(a.Fragment, {
             children: [(0, i.jsx)(m.EpV, {
                 size: "xs",
                 color: _.A.colors.TEXT_DEFAULT.css
@@ -128,18 +128,18 @@ function F(e) {
     let {
         message: t,
         compact: n
-    } = e, a = x.default.getUser((0, T.ZD)(t)), r = R.A.getBasicChannel(t.channel_id)?.guild_id, s = null != r && null != a ? S.Ay.getMember(r, a.id) : null, {
+    } = e, l = S.default.getUser((0, T.ZD)(t)), r = R.A.getBasicChannel(t.channel_id)?.guild_id, s = null != r && null != l ? x.Ay.getMember(r, l.id) : null, {
         avatarSrc: c,
         avatarDecorationSrc: d,
         eventHandlers: u
-    } = (0, h.A)({
-        userId: a?.id,
+    } = (0, p.A)({
+        userId: l?.id,
         guildId: r,
         size: 12
-    }), A = l.useRef(null);
+    }), A = a.useRef(null);
     return (0, i.jsx)(w, {
         compact: n,
-        header: (0, i.jsxs)(l.Fragment, {
+        header: (0, i.jsxs)(a.Fragment, {
             children: [(0, i.jsx)(m.Hnu, {
                 size: "xs",
                 color: _.A.colors.TEXT_FEEDBACK_POSITIVE.css
@@ -153,14 +153,14 @@ function F(e) {
             className: j.Ns,
             children: [(0, i.jsx)("div", {
                 className: j.gk,
-                children: null != s && null != a && (0, i.jsxs)(l.Fragment, {
+                children: null != s && null != l && (0, i.jsxs)(a.Fragment, {
                     children: [(0, i.jsx)(m.Text, {
                         variant: "text-xs/medium",
                         color: "text-default",
                         children: L.intl.string(L.t.qlFrXW)
-                    }), (0, i.jsx)(p.A, {
+                    }), (0, i.jsx)(h.A, {
                         targetElementRef: A,
-                        user: a,
+                        user: l,
                         guildId: r,
                         channelId: t.channel_id,
                         messageId: t.id,
@@ -181,7 +181,7 @@ function F(e) {
                                 style: {
                                     color: null != s.colorString ? s.colorString : _.A.colors.TEXT_DEFAULT.css
                                 },
-                                children: [" ", "@", a.username]
+                                children: [" ", "@", l.username]
                             })]
                         })
                     })]
@@ -205,36 +205,36 @@ function B(e) {
         message: t,
         compact: n
     } = e, {
-        joinAttempts: a,
+        joinAttempts: l,
         raidDatetime: r,
         dmsSent: s,
         raidType: c,
         resolvedReason: A
-    } = (0, T.Bk)(t), f = (0, u.bG)([R.A], () => R.A.getChannel(t.channel_id), [t.channel_id]), C = f?.guild_id ?? null, {
+    } = (0, T.Bk)(t), N = (0, u.bG)([R.A], () => R.A.getChannel(t.channel_id), [t.channel_id]), C = N?.guild_id ?? null, {
         shouldShowIncidentActions: g
-    } = (0, E.Li)(C), h = (0, M.Am)(t.author.id, t.channel_id), p = l.useCallback(() => {
-        let e = f?.guild_id;
-        null != e && (0, N.is)(t.id, e)
-    }, [t.id, f]), S = c === d.p.DM_RAID, x = S ? m.EpV : m.EF8;
+    } = (0, E.Li)(C), p = (0, M.Am)(t.author.id, t.channel_id), h = a.useCallback(() => {
+        let e = N?.guild_id;
+        null != e && (0, f.is)(t.id, e)
+    }, [t.id, N]), x = c === d.p.DM_RAID, S = x ? m.EpV : m.EF8;
     return (0, i.jsx)(w, {
         compact: n,
-        header: (0, i.jsxs)(l.Fragment, {
-            children: [(0, i.jsx)(x, {
+        header: (0, i.jsxs)(a.Fragment, {
+            children: [(0, i.jsx)(S, {
                 size: "xs",
                 color: _.A.colors.TEXT_FEEDBACK_CRITICAL.css
             }), (0, i.jsx)(m.Text, {
                 variant: "text-md/semibold",
                 color: "text-feedback-critical",
-                children: S ? L.intl.string(L.t["8+lHUb"]) : L.intl.string(L.t.xMwcwV)
+                children: x ? L.intl.string(L.t["8+lHUb"]) : L.intl.string(L.t.xMwcwV)
             })]
         }),
         subheader: (0, i.jsxs)("div", {
             className: j.Ns,
-            children: [null != a && (0, i.jsx)(m.Text, {
+            children: [null != l && (0, i.jsx)(m.Text, {
                 variant: "text-xs/medium",
                 color: "text-default",
                 children: L.intl.format(L.t["4ylIiu"], {
-                    joinCount: a
+                    joinCount: l
                 })
             }), null != s && (0, i.jsx)(m.Text, {
                 variant: "text-xs/medium",
@@ -242,7 +242,7 @@ function B(e) {
                 children: L.intl.format(L.t["5C8Mh3"], {
                     dmsSent: s
                 })
-            }), null != r && (0, i.jsxs)(l.Fragment, {
+            }), null != r && (0, i.jsxs)(a.Fragment, {
                 children: [(0, i.jsx)(y, {}), (0, i.jsx)(m.Text, {
                     variant: "text-xs/medium",
                     color: "text-default",
@@ -271,7 +271,7 @@ function B(e) {
                     textVariant: "text-xs/medium",
                     text: L.intl.string(L.t.DEoVWZ),
                     onClick: e => {
-                        h(e)
+                        p(e)
                     }
                 })]
             }), (0, i.jsx)(y, {}), (0, i.jsx)("div", {
@@ -281,7 +281,7 @@ function B(e) {
                     textVariant: "text-xs/medium",
                     size: "sm",
                     text: (0, T.Oj)(A),
-                    onClick: p
+                    onClick: h
                 })
             })]
         }) : null
@@ -292,14 +292,14 @@ function H(e) {
     let {
         message: t,
         compact: n
-    } = e, a = R.A.getBasicChannel(t.channel_id)?.guild_id, {
+    } = e, l = R.A.getBasicChannel(t.channel_id)?.guild_id, {
         raidDatetime: r,
         decisionId: s,
         suspiciousMentionActivityUntil: c
     } = (0, T.Bk)(t);
     return (0, i.jsx)(w, {
         compact: n,
-        header: (0, i.jsxs)(l.Fragment, {
+        header: (0, i.jsxs)(a.Fragment, {
             children: [(0, i.jsx)(m.EpV, {
                 size: "xs",
                 color: _.A.colors.TEXT_FEEDBACK_CRITICAL.css
@@ -332,8 +332,8 @@ function H(e) {
                     size: "sm",
                     text: L.intl.string(L.t.oX14El),
                     onClick: function() {
-                        null != a && null != s && (0, f.W5)(a, s, () => {
-                            (0, g.w)(c), (0, f.wu)(a)
+                        null != l && null != s && (0, N.W5)(l, s, () => {
+                            (0, g.w)(c), (0, N.wu)(l)
                         })
                     }
                 })
@@ -345,7 +345,7 @@ function H(e) {
                     size: "sm",
                     text: L.intl.string(L.t["1R7QIx"]),
                     onClick: function() {
-                        null != a && C.A.open(a, U.BEX.GUILD_AUTOMOD, void 0, U.nd0.AUTOMOD_MENTION_SPAM)
+                        null != l && C.A.open(l, U.BEX.GUILD_AUTOMOD, void 0, U.nd0.AUTOMOD_MENTION_SPAM)
                     }
                 })
             })]
@@ -357,8 +357,8 @@ function w(e) {
     let {
         compact: t,
         header: n,
-        subheader: l,
-        content: a,
+        subheader: a,
+        content: l,
         footerButtons: s
     } = e;
     return (0, i.jsxs)("div", {
@@ -372,11 +372,11 @@ function w(e) {
                 children: [(0, i.jsx)("div", {
                     className: j.MY,
                     children: n
-                }), null != l && (0, i.jsx)("div", {
+                }), null != a && (0, i.jsx)("div", {
                     className: j.m_,
-                    children: l
+                    children: a
                 })]
-            }), a]
+            }), l]
         }), null != s && (0, i.jsx)("div", {
             className: r()(j.Y4, j.UX, {
                 [j.oE]: t
@@ -390,8 +390,8 @@ function V(e) {
     let {
         id: t,
         compact: n,
-        message: l,
-        channel: a
+        message: a,
+        channel: l
     } = e, {
         avatarSrc: s,
         eventHandlers: {
@@ -400,7 +400,7 @@ function V(e) {
         }
     } = (0, D.a)(!0), {
         notificationType: u
-    } = (0, T.Bk)(l), _ = null == u || u === c.W.RAID;
+    } = (0, T.Bk)(a), _ = null == u || u === c.W.RAID;
     return (0, i.jsx)("div", {
         onMouseEnter: o,
         onMouseLeave: d,
@@ -418,7 +418,7 @@ function V(e) {
                     [j.oE]: n
                 }),
                 children: [(0, i.jsx)(O.ix, {
-                    message: l,
+                    message: a,
                     messageClassname: j.he,
                     className: r()(j.QV, j.he, {
                         [j.oE]: n
@@ -446,8 +446,8 @@ function V(e) {
                     showTimestamp: !0
                 }), (0, i.jsx)("div", {
                     className: j.BZ
-                }), (0, i.jsx)(k, {
-                    message: l,
+                }), (0, i.jsx)(b, {
+                    message: a,
                     compact: n
                 })]
             })

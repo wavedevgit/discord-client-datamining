@@ -2,8 +2,8 @@
 n.d(t, {
     V: () => u
 });
-var l = n(64700),
-    a = n(311907),
+var a = n(64700),
+    l = n(311907),
     i = n(223273),
     r = n(832163),
     s = n(594832),
@@ -13,15 +13,15 @@ var l = n(64700),
 
 function u(e) {
     let t = o.default.getCurrentUser()?.id,
-        n = l.useMemo(() => null != t ? [t] : [], [t]),
-        u = (0, a.bG)([r.A], () => r.A.getStorefrontDetectableGameAndApplicationIds()),
-        m = l.useMemo(() => {
+        n = a.useMemo(() => null != t ? [t] : [], [t]),
+        u = (0, l.bG)([r.A], () => r.A.getStorefrontDetectableGameAndApplicationIds()),
+        m = a.useMemo(() => {
             if (null != e && e.type === d.S7.GAME) return e.linkedGames?.find(e => e.type === i.Mh.OFFICIAL && null != e.application && u.has(e.application.id))?.application
         }, [e, u]),
-        x = l.useMemo(() => m?.id != null ? [m.id] : [], [m]),
+        x = a.useMemo(() => m?.id != null ? [m.id] : [], [m]),
         {
-            recommendations: h,
-            status: f
+            recommendations: f,
+            status: h
         } = (0, c.XQ)({
             applicationIds: x,
             userIds: n,
@@ -29,10 +29,10 @@ function u(e) {
             source: s.B5.USER_PROFILE
         });
     return {
-        socialLayerStorefrontRecommendationsData: l.useMemo(() => null == m || null == m.guildId || "success" !== f || 0 === h.length ? null : {
+        socialLayerStorefrontRecommendationsData: a.useMemo(() => null == m || null == m.guildId || "success" !== h || 0 === f.length ? null : {
             application: m,
-            skuIds: h.map(e => e.id),
+            skuIds: f.map(e => e.id),
             guildId: m.guildId
-        }, [m, f, h])
+        }, [m, h, f])
     }
 }

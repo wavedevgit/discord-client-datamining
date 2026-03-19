@@ -3,8 +3,8 @@ n.d(t, {
     A: () => u
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(397927),
+    a = n(64700),
+    l = n(397927),
     r = n(517905),
     s = n(763754),
     o = n(888675),
@@ -15,14 +15,14 @@ function d(e) {
         children: t,
         messageReference: n,
         guildName: s
-    } = e, o = l.useRef(null);
-    if (null == n) return (0, i.jsx)(a.MzZ, {
+    } = e, o = a.useRef(null);
+    if (null == n) return (0, i.jsx)(l.MzZ, {
         children: t
     });
     let {
         guild_id: c
     } = n;
-    return null == c ? (0, i.jsx)(a.MzZ, {
+    return null == c ? (0, i.jsx)(l.MzZ, {
         children: t
     }) : (0, i.jsx)(r.A, {
         guildId: c,
@@ -31,10 +31,10 @@ function d(e) {
         children: e => {
             let {
                 "aria-controls": n,
-                "aria-expanded": l,
+                "aria-expanded": a,
                 ...r
             } = e;
-            return (0, i.jsx)(a.MzZ, {
+            return (0, i.jsx)(l.MzZ, {
                 ...r,
                 ref: o,
                 children: t
@@ -46,13 +46,13 @@ function d(e) {
 function u(e) {
     let {
         usernameHook: t,
-        message: l,
-        compact: a
+        message: a,
+        compact: l
     } = e, {
         content: r,
         timestamp: u,
         messageReference: _
-    } = l, m = (0, s.Ay)(l), A = t(m), E = (r ?? "").split(" ").slice(0, -1).join(" "), I = c.intl.format(c.t["47CZc2"], {
+    } = a, m = (0, s.Ay)(a), A = t(m), E = (r ?? "").split(" ").slice(0, -1).join(" "), I = c.intl.format(c.t["47CZc2"], {
         username: m.nick,
         usernameHook: A,
         webhookName: r,
@@ -65,7 +65,7 @@ function u(e) {
     return (0, i.jsx)(o.A, {
         icon: n(617184),
         timestamp: u,
-        compact: a,
+        compact: l,
         children: I
     })
 }

@@ -3,18 +3,18 @@ n.d(t, {
     A: () => d
 });
 var i = n(311907),
-    l = n(73153),
-    a = n(613057);
+    a = n(73153),
+    l = n(613057);
 let r = null,
-    s = [a.Hi.REDISTRIBUTABLE_INSTALL_FAILED, a.Hi.POST_INSTALL_FAILED, a.Hi.POST_INSTALL_CANCELLED],
-    o = [a.Hi.APPLICATION_NOT_FOUND, a.Hi.APPLICATION_LOAD_FAILED, a.Hi.INTERRUPTED, a.Hi.DESERIALIZATION_FAILED];
+    s = [l.Hi.REDISTRIBUTABLE_INSTALL_FAILED, l.Hi.POST_INSTALL_FAILED, l.Hi.POST_INSTALL_CANCELLED],
+    o = [l.Hi.APPLICATION_NOT_FOUND, l.Hi.APPLICATION_LOAD_FAILED, l.Hi.INTERRUPTED, l.Hi.DESERIALIZATION_FAILED];
 class c extends i.Ay.Store {
     static displayName = "DispatchApplicationErrorStore";
     getLastError() {
         return r
     }
 }
-let d = new c(l.h, {
+let d = new c(a.h, {
     DISPATCH_APPLICATION_LAUNCH_SETUP_START: function() {
         null != r && null != r.code && s.includes(r.code) && (r = null)
     },

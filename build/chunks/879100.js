@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(404374),
     S = n(156312),
     f = n(543767),
-    g = n(477421),
-    A = n(234419),
+    A = n(477421),
+    g = n(234419),
     h = n(163538),
     P = n(796012),
     T = n(363476),
@@ -37,8 +37,8 @@ var i = n(627968),
     L = n(252424),
     w = n(927578),
     M = n(580630),
-    O = n(599669),
-    G = n(652215);
+    G = n(599669),
+    O = n(652215);
 n(601107);
 var k = n(26279),
     B = n(788868),
@@ -58,7 +58,7 @@ function q(e) {
         priceOptions: q
     } = e, {
         setInvoicePreview: K
-    } = (0, S.P5)(), H = (0, h.A)(), J = t.interval, F = t.intervalCount, $ = (0, o.bG)([C.A], () => C.A.getForSkuAndInterval((0, w.mH)(B.pe.GUILD), J, F)), Z = (0, o.bG)([U.default], () => U.default.getCurrentUser()), z = (0, v.A)({
+    } = (0, S.P5)(), H = (0, h.A)(), F = t.interval, J = t.intervalCount, $ = (0, o.bG)([C.A], () => C.A.getForSkuAndInterval((0, w.mH)(B.pe.GUILD), F, J)), Z = (0, o.bG)([U.default], () => U.default.getCurrentUser()), z = (0, v.A)({
         forceFetch: !1
     });
     u()(null != $, "Missing guildBoostingSubscriptionPlan");
@@ -87,7 +87,7 @@ function q(e) {
         K(ei)
     }, [K, ei]);
     let el = !et && null == ei && null == er,
-        ea = (0, A.V)()?.subscription_trial?.sku_id === B.pe.TIER_2,
+        ea = (0, g.V)()?.subscription_trial?.sku_id === B.pe.TIER_2,
         es = w.Ay.hasBoostDiscount(Z),
         eu = ei?.findInvoiceItemByPlanId($.id),
         eo = null != eu ? {
@@ -109,14 +109,14 @@ function q(e) {
         ey = (0, w.J$)(q.paymentSourceId),
         {
             ipCountryCode: eI
-        } = (0, g.A)(),
+        } = (0, A.A)(),
         ev = "HR" === eI && eo.currency === V.Yr.EUR,
         ex = z.fractionalState === B.xc.FP_SUB_PAUSED;
     return s(el), (0, i.jsxs)("div", {
         children: [ex && (0, i.jsx)(j.vi, {
             fractionalPremiumInfo: z
-        }), ed && null != P ? (0, i.jsx)(O.Ak, {
-            text: (0, O.zT)(P.currentPeriodEnd)
+        }), ed && null != P ? (0, i.jsx)(G.Ak, {
+            text: (0, G.zT)(P.currentPeriodEnd)
         }) : (0, i.jsx)("div", {
             className: a()(W.hA, W.G3),
             children: Y.intl.string(Y.t.jNY1FO)
@@ -161,8 +161,8 @@ function q(e) {
                         } = e;
                         return t === B.WT.YEAR ? Y.intl.string(Y.t.YDpAzZ) : t === B.WT.MONTH && 1 === n ? Y.intl.string(Y.t["6ZR3By"]) : null
                     }({
-                        intervalType: J,
-                        intervalCount: F
+                        intervalType: F,
+                        intervalCount: J
                     }) : Y.intl.string(Y.t.K9Bmze)
                 })]
             }), (0, i.jsx)("div", {
@@ -184,8 +184,8 @@ function q(e) {
                         price: l
                     }) : null
                 }({
-                    intervalType: J,
-                    intervalCount: F,
+                    intervalType: F,
+                    intervalCount: J,
                     amount: eo.amount,
                     currency: eo.currency
                 })
@@ -204,8 +204,8 @@ function q(e) {
                 children: el ? (0, i.jsx)(m.y$y, {}) : (0, i.jsx)(T.A, {
                     price: ec,
                     currency: eo.currency,
-                    intervalType: J,
-                    intervalCount: F,
+                    intervalType: F,
+                    intervalCount: J,
                     isPrepaidPaymentSource: ey
                 })
             })]
@@ -215,7 +215,7 @@ function q(e) {
             })
         }), (0, i.jsx)(p.A, {
             message: Y.intl.format(Y.t.Om31w8, {
-                documentationLink: D.A.getArticleURL(G.MVz.LOCALIZED_PRICING)
+                documentationLink: D.A.getArticleURL(O.MVz.LOCALIZED_PRICING)
             })
         }), ed ? (0, i.jsx)(E.G, {}) : (0, i.jsx)(E.A, {
             text: em,
@@ -245,7 +245,7 @@ function K(e) {
     return t = s ? null == f ? Y.intl.format(Y.t.P52e1r, {}) : Y.intl.format(Y.t["4UnIk9"], {
         guildName: f
     }) : c ? Y.intl.format(Y.t.gFaKd1, {
-        helpCenterLink: D.A.getArticleURL(G.MVz.FRACTIONAL_PREMIUM_ABOUT)
+        helpCenterLink: D.A.getArticleURL(O.MVz.FRACTIONAL_PREMIUM_ABOUT)
     }) : null == f ? Y.intl.format(Y.t.SZ5ohR, {
         guildSubscriptionQuantity: a
     }) : Y.intl.format(Y.t.GxK3Mv, {

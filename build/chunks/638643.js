@@ -12,8 +12,8 @@ var n = i(627968),
     o = i(67480),
     c = i(915043),
     d = i(163437),
-    p = i(490744),
-    S = i(652215);
+    S = i(490744),
+    p = i(652215);
 async function I(t) {
     let {
         subscriptionPlanId: e,
@@ -24,8 +24,8 @@ async function I(t) {
         analyticsLocation: T,
         disableGuildSelector: E = !1
     } = t, {
-        promise: f,
-        resolve: C
+        promise: C,
+        resolve: f
     } = Promise.withResolvers();
     if ((0, d.PJ)(a.flags) && !1 === E) {
         let {
@@ -47,10 +47,10 @@ async function I(t) {
             stackingBehavior: "stack"
         }), A = await t
     }
-    let N = o.A.getParentSKU(a.id),
-        h = null;
-    return null != N && ([h] = (0, c.wm)({
-        groupSku: N,
+    let h = o.A.getParentSKU(a.id),
+        N = null;
+    return null != h && ([N] = (0, c.wm)({
+        groupSku: h,
         SubscriptionStore: u.A,
         SubscriptionPlanStore: r.A,
         mapSubscriptionItems: c.W_,
@@ -58,32 +58,34 @@ async function I(t) {
     })), (0, s.A)({
         initialPlanId: e,
         skuId: a.id,
-        activeSubscription: h,
+        activeSubscription: N,
         applicationId: a.applicationId,
         planGroup: I,
         guildId: A,
-        renderHeader: (t, e, i) => (0, n.jsx)(p.fs, {
+        renderHeader: (t, e, i) => (0, n.jsx)(S.fs, {
             step: i,
             onClose: () => e(!1)
         }),
-        analyticsSubscriptionType: S.rzx.APPLICATION,
+        analyticsSubscriptionType: p.rzx.APPLICATION,
         analyticsLocations: _,
         analyticsLocation: T,
-        onComplete: C,
+        onComplete: f,
         showBenefitsFirst: !1,
         forcesTransitionToGuild: !1
-    }), f
+    }), C
 }
 
 function A(t) {
     let {
         appId: e,
         skuId: i,
-        analyticsLocations: n
+        analyticsLocations: n,
+        checkoutFlow: l
     } = t;
     (0, a.A)({
         applicationId: e,
         skuId: i,
-        analyticsLocations: n
+        analyticsLocations: n,
+        checkoutFlow: l
     })
 }

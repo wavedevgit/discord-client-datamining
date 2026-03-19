@@ -1,13 +1,13 @@
 /** chunk id: 915043 params = (module,exports,require) **/
 i.d(e, {
-    $s: () => C,
-    CZ: () => f,
-    E: () => N,
-    GD: () => m,
+    $s: () => f,
+    CZ: () => C,
+    E: () => h,
+    GD: () => g,
     Ko: () => L,
-    W_: () => g,
+    W_: () => P,
     mJ: () => E,
-    sD: () => h,
+    sD: () => N,
     wm: () => F
 }), i(321073), i(938796);
 var n, l = i(64700),
@@ -18,14 +18,14 @@ var n, l = i(64700),
     o = i(97352),
     c = i(166403),
     d = i(67480),
-    p = i(324050),
-    S = i(143582),
+    S = i(324050),
+    p = i(143582),
     I = i(337095),
     A = i(607940),
     _ = i(163437),
     T = i(652215),
     E = ((n = {})[n.NOT_LOADED = 0] = "NOT_LOADED", n[n.LOADING = 1] = "LOADING", n[n.LOADED = 2] = "LOADED", n[n.ERROR = 3] = "ERROR", n);
-let f = t => {
+let C = t => {
     let {
         guildId: e,
         canFetch: i = !0,
@@ -34,21 +34,21 @@ let f = t => {
     return l.useEffect(() => {
         if (null == e || e === T.ME) return;
         let t = A.A.getEntitlementsForGuildFetchState(e);
-        i && (t === A.e.NOT_FETCHED || n) && (0, S.f5)(e)
+        i && (t === A.e.NOT_FETCHED || n) && (0, p.f5)(e)
     }, [e, i, n]), {
         entitlementsLoaded: a === A.e.FETCHED
     }
 };
 
-function C(t) {
+function f(t) {
     let e = t?.id ?? T.dJq,
         {
             entitlementsLoaded: i
-        } = f({
+        } = C({
             guildId: e,
             canFetch: (0, s.bG)([u.A], () => u.A.can(T.xBc.ADMINISTRATOR, t))
         }),
-        n = (0, s.bG)([p.A], () => p.A.getLastGuildDismissedTime(e)),
+        n = (0, s.bG)([S.A], () => S.A.getLastGuildDismissedTime(e)),
         a = (0, s.yK)([A.A], () => {
             let t = A.A.getEntitlementsForGuild(e),
                 i = A.A.getEntitlementsForGuild(e, !1),
@@ -62,7 +62,7 @@ function C(t) {
         }), [a, r]);
     return i ? o.filter(t => null != t.endsAt && t.endsAt.getTime() > Math.max(n ?? 0, Date.now() - 2592e6)) : []
 }
-let N = () => {
+let h = () => {
     let [t, e] = l.useState(0);
     return l.useEffect(() => {
         e(1), Promise.all([(0, a.qw)({
@@ -83,7 +83,7 @@ let N = () => {
     }
 };
 
-function h(t, e) {
+function N(t, e) {
     let i = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
         [n, a] = l.useState([]),
         [u, o] = l.useState(!1);
@@ -96,15 +96,15 @@ function h(t, e) {
         isFetching: u
     }
 }
-let g = t => t.items;
+let P = t => t.items;
 
-function m(t, e) {
-    return O(t, e, g)
+function g(t, e) {
+    return O(t, e, P)
 }
-let P = t => t.renewalMutations?.items ?? [];
+let m = t => t.renewalMutations?.items ?? [];
 
 function L(t, e) {
-    return O(t, e, P)
+    return O(t, e, m)
 }
 
 function O(t, e, i) {

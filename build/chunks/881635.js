@@ -3,8 +3,8 @@ n.d(t, {
     A: () => _
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(311907),
+    a = n(64700),
+    l = n(311907),
     r = n(397927),
     s = n(688810),
     o = n(287809),
@@ -18,10 +18,10 @@ function _(e) {
         analyticsLocation: n,
         analyticsLocations: _,
         closeLayer: m
-    } = e, [A, E] = l.useState(!1), {
+    } = e, [A, E] = a.useState(!1), {
         analyticsLocations: I
-    } = (0, s.Ay)(_ ?? []), T = (0, a.bG)([o.default], () => o.default.getCurrentUser()), N = T?.isPremiumGroupMember();
-    async function f() {
+    } = (0, s.Ay)(_ ?? []), T = (0, l.bG)([o.default], () => o.default.getCurrentUser()), f = T?.isPremiumGroupMember();
+    async function N() {
         E(!0), await (0, c.g)({
             analyticsLocations: I,
             analyticsLocation: {
@@ -41,8 +41,8 @@ function _(e) {
         size: "md",
         icon: r._Jp,
         text: u.intl.string(u.t.gKmQ1G),
-        onClick: f,
+        onClick: N,
         loading: A,
-        disabled: N
+        disabled: f
     })
 }

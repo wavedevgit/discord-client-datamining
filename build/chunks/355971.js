@@ -22,10 +22,10 @@ function u(e) {
             iconClassName: p,
             tooltipText: m
         } = e,
-        [C, g] = (0, o.yK)([l.A], () => [l.A.desaturateUserColors, l.A.saturation]),
-        h = (0, d.rdh)(_.A.unsafe_rawColors.PRIMARY_300).hex(),
-        x = (0, a.LX)(n ?? h),
-        y = (0, a.$k)(x, !1, C ? g : null);
+        [C, h] = (0, o.yK)([l.A], () => [l.A.desaturateUserColors, l.A.saturation]),
+        g = (0, d.rdh)(_.A.unsafe_rawColors.PRIMARY_300).hex(),
+        x = (0, a.LX)(n ?? g),
+        y = (0, a.$k)(x, !1, C ? h : null);
     return t = null != f ? f : .3 > (0, a.OK)(x) ? _.A.unsafe_rawColors.PRIMARY_630.css : _.A.unsafe_rawColors.WHITE.css, (0, r.jsx)(i.m, {
         text: null != m ? m : s.intl.string(s.t.T3PvV4),
         children: (0, r.jsx)(c.A, {

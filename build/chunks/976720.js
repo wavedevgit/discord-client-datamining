@@ -2,8 +2,8 @@
 n.d(t, {
     A: () => d
 });
-var l = n(627968),
-    a = n(64700),
+var a = n(627968),
+    l = n(64700),
     i = n(158954),
     r = n(44724),
     s = n(409626),
@@ -15,16 +15,16 @@ function d(e) {
         invite: t,
         trackClick: n,
         closeModal: d
-    } = e, u = a.useCallback(() => {
+    } = e, u = l.useCallback(() => {
         t?.guild != null && (0, r.X)({
             guildId: t.guild.id
         })
-    }, [t]), m = a.useCallback(() => {
+    }, [t]), m = l.useCallback(() => {
         t?.guild != null && ((0, r.default)({
             invite: t
         }), d(), n(s.Ws.GameShop))
     }, [d, t, n]);
-    return new Set(t?.guild?.features).has(c.GuildFeatures.SOCIAL_LAYER_STOREFRONT) ? (0, l.jsx)(i.$nd, {
+    return new Set(t?.guild?.features).has(c.GuildFeatures.SOCIAL_LAYER_STOREFRONT) ? (0, a.jsx)(i.$nd, {
         variant: "primary",
         text: o.intl.string(o.t.v8UpgE),
         icon: i.U1X,

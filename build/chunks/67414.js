@@ -3,8 +3,8 @@ n.d(t, {
     A: () => O
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(110259),
+    a = n(64700),
+    l = n(110259),
     r = n(311907),
     s = n(397927),
     o = n(966327),
@@ -17,27 +17,27 @@ var i = n(627968),
     E = n(242874),
     I = n(275759),
     T = n(979474),
-    N = n(51501),
-    f = n(788868),
+    f = n(51501),
+    N = n(788868),
     C = n(652215),
     g = n(778712),
-    h = n(985018),
-    p = n(308086);
+    p = n(985018),
+    h = n(308086);
 let R = (0, s.FT9)(g._3.SIZE_56),
-    S = (0, s.FT9)(g._3.SIZE_24);
+    x = (0, s.FT9)(g._3.SIZE_24);
 
-function x(e) {
+function S(e) {
     let {
         user: t,
         ariaLabel: n,
-        showCutout: a
-    } = e, r = l.useId(), s = "u" > typeof document && document.documentElement?.dir === "rtl" ? -2 : R - S - -2, c = R - S - -3;
+        showCutout: l
+    } = e, r = a.useId(), s = "u" > typeof document && document.documentElement?.dir === "rtl" ? -2 : R - x - -2, c = R - x - -3;
     return (0, i.jsxs)("svg", {
         width: R,
         height: R,
         viewBox: `0 0 ${R} ${R}`,
-        className: p.XH,
-        children: [a && (0, i.jsxs)("mask", {
+        className: h.XH,
+        children: [l && (0, i.jsxs)("mask", {
             id: r,
             maskUnits: "userSpaceOnUse",
             children: [(0, i.jsx)("rect", {
@@ -47,9 +47,9 @@ function x(e) {
                 height: R,
                 fill: "white"
             }), (0, i.jsx)("circle", {
-                cx: s + S / 2,
-                cy: c + S / 2,
-                r: S / 2 + 2,
+                cx: s + x / 2,
+                cy: c + x / 2,
+                r: x / 2 + 2,
                 fill: "black"
             })]
         }), (0, i.jsx)("foreignObject", {
@@ -57,9 +57,9 @@ function x(e) {
             y: 0,
             width: R,
             height: R,
-            mask: a ? `url(#${r})` : void 0,
+            mask: l ? `url(#${r})` : void 0,
             children: (0, i.jsx)(o.A, {
-                className: p.A6,
+                className: h.A6,
                 user: t,
                 "aria-label": n,
                 size: g._3.SIZE_56
@@ -72,84 +72,84 @@ function O(e) {
     let {
         giftIntentType: t,
         recipientUser: R,
-        analyticsPage: S,
+        analyticsPage: x,
         analyticsSection: O,
         innerRef: M
     } = e, D = (0, r.bG)([m.default], () => m.default.getCurrentUser()), {
         analyticsLocations: P
-    } = (0, d.Ay)(c.A.PREMIUM_GIFT_INTENT_CARD), U = (0, r.bG)([I.Ay], () => I.Ay.getFriendAnniversaryYears(R.id)), v = (0, N.$)(t), {
+    } = (0, d.Ay)(c.A.PREMIUM_GIFT_INTENT_CARD), U = (0, r.bG)([I.Ay], () => I.Ay.getFriendAnniversaryYears(R.id)), v = (0, f.$)(t), {
         openGiftModal: L
     } = (0, T.$)({
         giftRecipient: R,
         analyticsLocations: P,
         analyticsLocation: v.chat,
         analyticsObject: {
-            page: S,
+            page: x,
             section: O,
             object: C.ZSU.BUTTON_CTA,
             objectType: C.AnalyticsObjectTypes.GIFT
         },
         location: "gift-intent-card"
     });
-    l.useEffect(() => {
+    a.useEffect(() => {
         (0, u.x)({
-            name: a.ImpressionNames.GIFT_INTENT_CARD,
-            type: a.ImpressionTypes.VIEW,
+            name: l.ImpressionNames.GIFT_INTENT_CARD,
+            type: l.ImpressionTypes.VIEW,
             properties: {
                 gift_intent_type: t,
                 num_friend_anniversaries: I.Ay.getFriendAnniversaries().length
             }
         })
     }, [t]);
-    let j = () => t === f.np.FRIEND_ANNIVERSARY ? h.intl.string(h.t.ilhtIa) : (0, E.yE)(t);
+    let j = () => t === N.np.FRIEND_ANNIVERSARY ? p.intl.string(p.t.ilhtIa) : (0, E.yE)(t);
     return (0, i.jsx)("div", {
         ref: M,
-        className: p.Qs,
+        className: h.Qs,
         children: (0, i.jsxs)("div", {
-            className: p.gx,
+            className: h.gx,
             children: [(0, i.jsxs)("div", {
-                className: p.ou,
+                className: h.ou,
                 children: [(0, i.jsxs)("div", {
-                    className: p.HD,
-                    children: [(0, i.jsx)(x, {
+                    className: h.HD,
+                    children: [(0, i.jsx)(S, {
                         user: R,
                         ariaLabel: R.username,
                         showCutout: null != D
                     }), null != D && (0, i.jsx)(o.A, {
-                        className: p.GM,
+                        className: h.GM,
                         user: D,
                         "aria-label": R.username,
                         size: g._3.SIZE_24
                     })]
                 }), (0, i.jsxs)("div", {
-                    className: p.FS,
+                    className: h.FS,
                     children: [(0, i.jsx)(s.Text, {
                         variant: "text-md/medium",
                         color: "text-strong",
                         lineClamp: 3,
-                        children: t === f.np.FRIEND_ANNIVERSARY ? h.intl.string(h.t.CeQIwZ) : (0, E.yE)(t)
+                        children: t === N.np.FRIEND_ANNIVERSARY ? p.intl.string(p.t.CeQIwZ) : (0, E.yE)(t)
                     }), (0, i.jsxs)("div", {
-                        className: p.jA,
+                        className: h.jA,
                         children: [(0, i.jsx)(s.$yI, {
                             size: "xs"
                         }), (0, i.jsx)(s.Text, {
-                            className: p.Tm,
+                            className: h.Tm,
                             variant: "text-md/normal",
                             color: "text-subtle",
                             lineClamp: 1,
-                            children: t === f.np.FRIEND_ANNIVERSARY ? h.intl.formatToPlainString(h.t.PpG27s, {
+                            children: t === N.np.FRIEND_ANNIVERSARY ? p.intl.formatToPlainString(p.t.PpG27s, {
                                 numberOfYears: U
                             }) : (0, E.yE)(t)
                         })]
                     })]
                 })]
             }), (0, i.jsxs)("div", {
-                className: p.UD,
+                className: h.UD,
                 children: [(0, i.jsx)(s.Button, {
                     size: "sm",
                     variant: "secondary",
-                    text: h.intl.string(h.t.nffuyb),
-                    "aria-label": h.intl.string(h.t.nffuyb),
+                    text: p.intl.string(p.t.nffuyb),
+                    "aria-label": p.intl.string(p.t.nffuyb),
                     onClick: e => {
                         e.stopPropagation(), A.default.track(C.HAw.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
                             gift_intent_type: t,

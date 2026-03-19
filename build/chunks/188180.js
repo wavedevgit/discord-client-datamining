@@ -34,22 +34,22 @@ function _(e) {
         StronglyDiscouragedCustomComponent: g,
         usePersistentBadge: _,
         useTitle: y,
-        variant: b = "default"
-    } = l, v = y?.(), A = function(e) {
+        variant: v = "default"
+    } = l, b = y?.(), A = function(e) {
         switch (e) {
             case "default":
                 return "currentColor";
             case "destructive":
                 return "text-feedback-critical"
         }
-    }(b), j = function(e) {
+    }(v), j = function(e) {
         switch (e) {
             case "default":
                 return "currentColor";
             case "destructive":
                 return o.LU0.colors.ICON_FEEDBACK_CRITICAL
         }
-    }(b), N = _?.(i), S = a.useMemo(() => null != c ? i ? null : (0, r.jsx)(h.A, {
+    }(v), N = _?.(i), S = a.useMemo(() => null != c ? i ? null : (0, r.jsx)(h.A, {
         badge: c
     }) : null != N ? (0, r.jsx)(p.A, {
         badge: N
@@ -61,7 +61,7 @@ function _(e) {
             ...d,
             className: s()(x.AS, {
                 [x.vu]: i,
-                [x.RD]: "destructive" === b
+                [x.RD]: "destructive" === v
             }),
             onClick: n,
             children: [null != g ? (0, r.jsx)(g, {}) : (0, r.jsxs)("div", {
@@ -73,7 +73,7 @@ function _(e) {
                 }), (0, r.jsx)(o.Text, {
                     variant: "text-md/medium",
                     color: A,
-                    children: v
+                    children: b
                 })]
             }), S]
         }), m]
@@ -96,13 +96,13 @@ function y(e) {
         if (null == o || !(0, u.Iu)(o.layout)) return null;
         let e = o.layout.filter(u.bJ);
         return e.length > 1 ? e : null
-    }, [o]), b = null != o ? () => {
+    }, [o]), v = null != o ? () => {
         let e = h === o.key && null != y ? y[0].key : o.key;
         m.A.navigate(e, {
             animateSidebarScroll: !0,
             showNavigationMobile: !1
         })
-    } : t.onClick, v = a.useMemo(() => x && null != y ? (0, r.jsx)(g.A, {
+    } : t.onClick, b = a.useMemo(() => x && null != y ? (0, r.jsx)(g.A, {
         categories: y,
         visibleContent: n,
         dismissibleBadges: i
@@ -110,22 +110,22 @@ function y(e) {
     return s ? (0, r.jsx)(_, {
         tag: A,
         panelKey: o?.key,
-        onClick: b,
+        onClick: v,
         active: x,
         node: t,
         dismissibleBadge: j,
-        children: v
+        children: b
     }) : (0, r.jsx)(l.tG, {
         id: t.key,
         children: e => (0, r.jsx)(_, {
             tag: A,
             panelKey: o?.key,
-            onClick: b,
+            onClick: v,
             active: x,
             node: t,
             dismissibleBadge: j,
             listItemProps: e,
-            children: v
+            children: b
         })
     })
 }

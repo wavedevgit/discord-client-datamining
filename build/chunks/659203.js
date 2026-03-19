@@ -1,11 +1,11 @@
 /** chunk id: 659203 params = (module,exports,require) **/
 n.d(t, {
-    A: () => k
+    A: () => b
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(989349),
-    r = n.n(a),
+    a = n(64700),
+    l = n(989349),
+    r = n.n(l),
     s = n(607399),
     o = n(465323),
     c = n(311907),
@@ -17,15 +17,15 @@ var i = n(627968),
     E = n(532794),
     I = n(287809),
     T = n(166403),
-    N = n(954571),
-    f = n(405269),
+    f = n(954571),
+    N = n(405269),
     C = n(975571),
     g = n(927578),
-    h = n(580630),
-    p = n(851746),
+    p = n(580630),
+    h = n(851746),
     R = n(259297),
-    S = n(727949),
-    x = n(664654),
+    x = n(727949),
+    S = n(664654),
     O = n(303682),
     M = n(857586),
     D = n(378135),
@@ -34,7 +34,7 @@ var i = n(627968),
     v = n(985018),
     L = n(102205),
     j = n(954457);
-class y extends l.Component {
+class y extends a.Component {
     trialOffer;
     referralsSent;
     currentUser;
@@ -111,13 +111,13 @@ class y extends l.Component {
             trialEndsAt: t
         } = this.props;
         if (void 0 !== e.redeemed_at && !this.isSender && null !== t) return v.intl.formatToPlainString(v.t.nP0ivR, {
-            date: (0, f.i$)(r()(t), "LL")
+            date: (0, N.i$)(r()(t), "LL")
         });
         if (this.recipientHasNitro || void 0 === e.expires_at) return null;
         let n = r()(e.expires_at);
         return this.offerExpired ? v.intl.formatToPlainString(v.t.PuSHfU, {
-            date: (0, f.i$)(r()(n), "LL")
-        }) : (0, S.GQ)(n.valueOf())
+            date: (0, N.i$)(r()(n), "LL")
+        }) : (0, x.GQ)(n.valueOf())
     }
     renderMedia() {
         return (0, i.jsx)("div", {
@@ -171,7 +171,7 @@ class y extends l.Component {
                             case R.Y.VARIANT_2: {
                                 let e = (0, o.TW)(v.intl.currentLocale);
                                 return v.intl.format(v.t["+KbxV6"], {
-                                    fixedTrialCost: (0, h.$g)(0, e)
+                                    fixedTrialCost: (0, p.$g)(0, e)
                                 })
                             }
                             case R.Y.VARIANT_3:
@@ -196,16 +196,16 @@ class y extends l.Component {
                     children: this.renderExpirationDate()
                 })]
             }),
-            l = (0, i.jsx)(d.Button, {
+            a = (0, i.jsx)(d.Button, {
                 variant: "primary",
                 disabled: !1,
                 size: "md",
                 onClick: () => (e => {
                     let {
                         analyticsLocations: t,
-                        startingScreen: l
+                        startingScreen: a
                     } = e;
-                    N.default.track(U.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+                    f.default.track(U.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
                         location_stack: t
                     }), (0, d.mMO)(async () => {
                         let {
@@ -213,16 +213,16 @@ class y extends l.Component {
                         } = await Promise.resolve().then(n.bind(n, 303682));
                         return t => (0, i.jsx)(e, {
                             ...t,
-                            startingScreen: l
+                            startingScreen: a
                         })
                     })
                 })({
                     analyticsLocations: [],
-                    startingScreen: this.referralsSent.size === x.Z ? O.SelectFriendsModalScreens.REMINDER : O.SelectFriendsModalScreens.SELECT_FRIENDS
+                    startingScreen: this.referralsSent.size === S.Z ? O.SelectFriendsModalScreens.REMINDER : O.SelectFriendsModalScreens.SELECT_FRIENDS
                 }),
                 text: v.intl.string(v.t.Lm2nFc)
             }),
-            a = this.isSender ? l : t,
+            l = this.isSender ? a : t,
             r = (0, i.jsx)(d._V3, {
                 src: j.A,
                 height: 84,
@@ -262,7 +262,7 @@ class y extends l.Component {
                         })]
                     }), (0, i.jsx)("div", {
                         className: L.ox,
-                        children: a
+                        children: l
                     })]
                 })]
             })]
@@ -270,32 +270,32 @@ class y extends l.Component {
     }
 }
 
-function k(e) {
+function b(e) {
     let {
         userTrialOfferId: t,
         canRenderReferralEmbed: n,
-        compact: l
+        compact: a
     } = e, {
-        trialOffer: a,
+        trialOffer: l,
         isResolving: r,
         referralsSent: o
-    } = (0, c.cf)([p.A], () => ({
-        trialOffer: n ? p.A.getRelevantUserTrialOffer(t) : null,
-        isResolving: !!n && p.A.isResolving(t),
-        referralsSent: p.A.getRecipientStatus()
-    }), [n, t]), d = I.default.getCurrentUser(), A = (0, c.bG)([I.default], () => null != a && (0, g.TW)(void 0 !== d && a.user_id === d.id ? d : I.default.getUser(a.user_id))), E = (0, c.bG)([T.A], () => A ? T.A.getPremiumTypeSubscription()?.trialEndsAt : null), {
-        analyticsLocations: N
+    } = (0, c.cf)([h.A], () => ({
+        trialOffer: n ? h.A.getRelevantUserTrialOffer(t) : null,
+        isResolving: !!n && h.A.isResolving(t),
+        referralsSent: h.A.getRecipientStatus()
+    }), [n, t]), d = I.default.getCurrentUser(), A = (0, c.bG)([I.default], () => null != l && (0, g.TW)(void 0 !== d && l.user_id === d.id ? d : I.default.getUser(l.user_id))), E = (0, c.bG)([T.A], () => A ? T.A.getPremiumTypeSubscription()?.trialEndsAt : null), {
+        analyticsLocations: f
     } = (0, m.Ay)(_.A.SHARE_NITRO_EMBED);
     return r ? (0, i.jsx)(u.Wb, {
         isHorizontal: !s.Fr
-    }) : n && null != a && void 0 !== d ? (0, i.jsx)(y, {
-        trialOffer: a,
+    }) : n && null != l && void 0 !== d ? (0, i.jsx)(y, {
+        trialOffer: l,
         referralsSent: o,
         currentUser: d,
         recipientHasNitro: A,
         trialEndsAt: E,
-        analyticsLocations: N,
-        compact: l
+        analyticsLocations: f,
+        compact: a
     }) : (0, i.jsx)("div", {
         className: L.TU,
         children: (0, i.jsx)("div", {

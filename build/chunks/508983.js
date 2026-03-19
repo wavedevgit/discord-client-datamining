@@ -3,9 +3,9 @@ n.d(t, {
     A: () => Z
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    r = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(989349),
     o = n.n(s),
     c = n(837381),
@@ -17,15 +17,15 @@ var i = n(627968),
     E = n(775602),
     I = n(709066),
     T = n(845625),
-    N = n(785823),
-    f = n(449585),
+    f = n(785823),
+    N = n(449585),
     C = n(137207),
     g = n(22007),
-    h = n(378570),
-    p = n(589022),
+    p = n(378570),
+    h = n(589022),
     R = n(576705),
-    S = n(287809),
-    x = n(562153),
+    x = n(287809),
+    S = n(562153),
     O = n(427262),
     M = n(465364),
     D = n(763754),
@@ -35,8 +35,8 @@ var i = n(627968),
     L = n(535421),
     j = n(112758),
     y = n(754459),
-    k = n(809115),
-    b = n(888675),
+    b = n(809115),
+    k = n(888675),
     G = n(381941),
     F = n(652215),
     B = n(705751),
@@ -48,22 +48,22 @@ function q(e, t) {
     let {
         popouts: n,
         selected: i,
-        setPopout: a
+        setPopout: l
     } = (0, y.A)(e.id, G.Fd), {
         usernameProfile: r,
         avatarProfile: s
-    } = n, o = (0, j.r4)(e.author.id, t.id), c = (0, j.UY)(e.author.id, t.id, e.id), d = (0, j.m)(e, t, r, a);
+    } = n, o = (0, j.r4)(e.author.id, t.id), c = (0, j.UY)(e.author.id, t.id, e.id), d = (0, j.m)(e, t, r, l);
     return {
         selected: i,
         onContextMenu: o,
         onContextMenuModerateUser: c,
         onClickUsername: d,
-        onClickAvatar: (0, j.Jo)(s, a),
-        onPopoutRequestClose: l.useCallback(() => a({
+        onClickAvatar: (0, j.Jo)(s, l),
+        onPopoutRequestClose: a.useCallback(() => l({
             usernameProfile: !1,
             avatarProfile: !1,
             referencedUsernameProfile: !1
-        }), [a]),
+        }), [l]),
         renderPopout: L.A,
         showAvatarPopout: s,
         showUsernamePopout: r
@@ -71,9 +71,9 @@ function q(e, t) {
 }
 
 function X(e, t, n) {
-    return l.useMemo(() => {
-        if (null != t && null != n) return l => (0, i.jsx)(p.A, {
-            ...l,
+    return a.useMemo(() => {
+        if (null != t && null != n) return a => (0, i.jsx)(h.A, {
+            ...a,
             user: t,
             currentUser: n,
             guildId: e.guild_id,
@@ -86,11 +86,11 @@ function K(e) {
     let {
         children: t,
         className: n,
-        compact: l
+        compact: a
     } = e;
     return (0, i.jsx)("div", {
         className: r()(V.xQ, n, {
-            [V.oE]: l
+            [V.oE]: a
         }),
         children: t
     })
@@ -136,40 +136,40 @@ function J(e) {
     let {
         alertAction: t,
         guildId: n
-    } = e, l = (0, d.bG)([S.default], () => S.default.getUser(t.actor), [t.actor]);
+    } = e, a = (0, d.bG)([x.default], () => x.default.getUser(t.actor), [t.actor]);
     try {
         let e = parseInt(t.actionType);
-        if (null == l) return z(e);
-        let a = function(e, t, n) {
-            let i = x.Ay.getNickname(n, null, t) ?? O.Ay.getUserTag(t),
-                l = o()(e.ts),
-                a = `${i} ${l.fromNow()}`;
+        if (null == a) return z(e);
+        let l = function(e, t, n) {
+            let i = S.Ay.getNickname(n, null, t) ?? O.Ay.getUserTag(t),
+                a = o()(e.ts),
+                l = `${i} ${a.fromNow()}`;
             try {
                 switch (parseInt(e.actionType)) {
                     case T.G.DELETE_USER_MESSAGE:
                         return w.intl.formatToPlainString(w.t.BtKE9h, {
                             userName: i,
-                            timestamp: l.fromNow()
+                            timestamp: a.fromNow()
                         });
                     case T.G.SET_COMPLETED:
                         return w.intl.formatToPlainString(w.t.dyo9US, {
                             userName: i,
-                            timestamp: l.fromNow()
+                            timestamp: a.fromNow()
                         });
                     case T.G.SUBMIT_FEEDBACK:
                         return w.intl.formatToPlainString(w.t["C9/kIO"], {
                             userName: i,
-                            timestamp: l.fromNow()
+                            timestamp: a.fromNow()
                         });
                     default:
-                        return a
+                        return l
                 }
             } catch (e) {
-                return a
+                return l
             }
-        }(t, l, n);
+        }(t, a, n);
         return (0, i.jsx)(_.m, {
-            text: a,
+            text: l,
             children: z(e)
         })
     } catch (e) {
@@ -181,44 +181,44 @@ function W(e) {
     let {
         alertActionsExecution: t,
         guildId: n
-    } = e, l = Object.values(t.actions).sort((e, t) => e.actionType < t.actionType ? 1 : -1);
+    } = e, a = Object.values(t.actions).sort((e, t) => e.actionType < t.actionType ? 1 : -1);
     return (0, i.jsx)("div", {
         className: V.q_,
-        children: l.map(e => (0, i.jsx)(J, {
+        children: a.map(e => (0, i.jsx)(J, {
             alertAction: e,
             guildId: n
         }, e.actionType))
     })
 }
-let Q = l.memo(function(e) {
+let Q = a.memo(function(e) {
     let t, {
             message: n,
-            channel: l,
-            embedChannel: a,
+            channel: a,
+            embedChannel: l,
             compact: r,
             interactionUserId: s
         } = e,
-        o = q(n, l),
-        c = X(l, n.author),
+        o = q(n, a),
+        c = X(a, n.author),
         d = (0, D.Ay)(n),
         u = (0, v.tO)({
             message: n,
-            channel: l,
+            channel: a,
             author: d,
-            guildId: l?.guild_id,
+            guildId: a?.guild_id,
             compact: r,
             ...o
         }, c),
-        _ = S.default.getUser(s),
-        A = q(n, l),
-        E = X(l, _, S.default.getCurrentUser());
+        _ = x.default.getUser(s),
+        A = q(n, a),
+        E = X(a, _, x.default.getCurrentUser());
     if (null != _) {
-        let e = (0, D.FT)(_, l),
+        let e = (0, D.FT)(_, a),
             i = (0, v.tO)({
                 message: n,
-                channel: l,
+                channel: a,
                 author: e,
-                guildId: l?.guild_id,
+                guildId: a?.guild_id,
                 compact: r,
                 ...A
             }, E);
@@ -229,10 +229,10 @@ let Q = l.memo(function(e) {
         color: "text-strong",
         tag: "span",
         className: V.he,
-        children: (0, N.fu)(n, a, () => (0, i.jsx)("div", {
+        children: (0, f.fu)(n, l, () => (0, i.jsx)("div", {
             className: V.aT,
             children: (0, i.jsx)(P.A, {
-                channel: a,
+                channel: l,
                 className: V.HA,
                 openChatWithoutConnecting: !0
             })
@@ -244,22 +244,22 @@ function Z(e) {
     let {
         id: t,
         compact: n,
-        message: a,
+        message: l,
         channel: s
     } = e, {
         avatarSrc: o,
         eventHandlers: {
             onMouseEnter: _,
-            onMouseLeave: p
+            onMouseLeave: h
         }
-    } = (0, k.a)(!0), {
-        onFocus: S,
-        ...x
+    } = (0, b.a)(!0), {
+        onFocus: x,
+        ...S
     } = (0, c.rm)(t ?? ""), {
         isFocused: O,
         handleFocus: D,
         handleBlur: P
-    } = (0, j.G8)(S), L = (0, d.bG)([E.A], () => E.A.keyboardModeEnabled), y = (0, d.bG)([R.A], () => R.A.can(F.xBc.MANAGE_MESSAGES, s), [s]), {
+    } = (0, j.G8)(x), L = (0, d.bG)([E.A], () => E.A.keyboardModeEnabled), y = (0, d.bG)([R.A], () => R.A.can(F.xBc.MANAGE_MESSAGES, s), [s]), {
         ruleName: G,
         embedChannel: X,
         decisionId: z,
@@ -270,32 +270,32 @@ function Z(e) {
         timeoutDuration: et,
         decisionReason: en,
         alertActionsExecution: ei,
-        quarantineType: el,
-        interactionUserId: ea
-    } = (0, N.Ay)(a), er = l.useMemo(() => (0, M.Tz)($, J, s.id), [$, J, s]), {
+        quarantineType: ea,
+        interactionUserId: el
+    } = (0, f.Ay)(l), er = a.useMemo(() => (0, M.Tz)($, J, s.id), [$, J, s]), {
         selected: es,
         ...eo
-    } = q(a, s), ec = l.useCallback(() => {
-        (0, f.w2)(a.id, $, z, s)
-    }, [a.id, $, z, s]), ed = l.useCallback(e => {
+    } = q(l, s), ec = a.useCallback(() => {
+        (0, N.w2)(l.id, $, z, s)
+    }, [l.id, $, z, s]), ed = a.useCallback(e => {
         null != ee && null != X && (e.stopPropagation(), e.preventDefault(), (0, g.A)(F.BVt.CHANNEL(X?.guild_id, X?.id, ee)))
-    }, [X, ee]), eu = l.useCallback(e => {
+    }, [X, ee]), eu = a.useCallback(e => {
         null != X && (A.default.selectChannel({
             guildId: X.guild_id,
             channelId: e,
-            messageId: a.id
-        }), (0, h.iN)(e))
-    }, [a, X]), e_ = l.useCallback(() => {
-        (0, C.E5)(a.id, s, T.G.DELETE_USER_MESSAGE)
-    }, [s, a.id]), em = (0, H.getFriendlyDurationString)(Number(et)), eA = null != en, eE = y && null != ee && (null == ei || !ei.actions.hasOwnProperty(T.G.DELETE_USER_MESSAGE)), eI = a.embeds.length > 0 ? a.embeds[0].fields.find(e => "channel_id" === e.rawName)?.rawValue : null, eT = null != eI;
+            messageId: l.id
+        }), (0, p.iN)(e))
+    }, [l, X]), e_ = a.useCallback(() => {
+        (0, C.E5)(l.id, s, T.G.DELETE_USER_MESSAGE)
+    }, [s, l.id]), em = (0, H.getFriendlyDurationString)(Number(et)), eA = null != en, eE = y && null != ee && (null == ei || !ei.actions.hasOwnProperty(T.G.DELETE_USER_MESSAGE)), eI = l.embeds.length > 0 ? l.embeds[0].fields.find(e => "channel_id" === e.rawName)?.rawValue : null, eT = null != eI;
     return (0, i.jsx)("div", {
         onMouseEnter: _,
-        onMouseLeave: p,
-        children: (0, i.jsx)(b.A, {
+        onMouseLeave: h,
+        children: (0, i.jsx)(k.A, {
             className: r()(V.rs, {
                 [V.oE]: n
             }),
-            iconNode: n ? null : (0, i.jsx)(k.l, {
+            iconNode: n ? null : (0, i.jsx)(b.l, {
                 src: o
             }),
             iconContainerClassName: V.zc,
@@ -305,7 +305,7 @@ function Z(e) {
                     [V.oE]: n
                 }),
                 children: [(0, i.jsx)(v.ix, {
-                    message: a,
+                    message: l,
                     messageClassname: V.he,
                     className: r()(V.QV, V.he, {
                         [V.oE]: n
@@ -322,11 +322,11 @@ function Z(e) {
                             type: B.nu.SYSTEM_DM,
                             className: V.Al
                         }), (0, i.jsx)(Q, {
-                            message: a,
+                            message: l,
                             channel: s,
                             embedChannel: X,
                             compact: n,
-                            interactionUserId: ea
+                            interactionUserId: el
                         })]
                     }),
                     compact: n,
@@ -336,8 +336,8 @@ function Z(e) {
                         [V.oE]: n
                     }),
                     children: (0, i.jsx)(U.A, {
-                        ...x,
-                        message: a,
+                        ...S,
+                        message: l,
                         channel: X,
                         content: er,
                         compact: n,
@@ -381,7 +381,7 @@ function Z(e) {
                                             duration: em
                                         })
                                     })]
-                                }), null != el && (0, i.jsxs)(i.Fragment, {
+                                }), null != ea && (0, i.jsxs)(i.Fragment, {
                                     children: [(0, i.jsx)("div", {
                                         className: r()(V.Om, V.Gx)
                                     }), (0, i.jsx)(m.Text, {
@@ -390,7 +390,7 @@ function Z(e) {
                                         tag: "span",
                                         className: V.nx,
                                         children: w.intl.format(w.t["26bB2M"], {
-                                            reason: (0, N.o2)(el)
+                                            reason: (0, f.o2)(ea)
                                         })
                                     })]
                                 })]

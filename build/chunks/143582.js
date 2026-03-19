@@ -1,7 +1,7 @@
 /** chunk id: 143582 params = (module,exports,require) **/
 i.d(e, {
-    Hc: () => p,
-    _R: () => S,
+    Hc: () => S,
+    _R: () => p,
     f5: () => d,
     vz: () => c
 });
@@ -95,13 +95,13 @@ async function d(t) {
     }
 }
 
-function p(t) {
+function S(t) {
     n.h.dispatch({
         type: "APPLICATION_SUBSCRIPTIONS_CHANNEL_NOTICE_DISMISSED",
         guildId: t
     })
 }
-async function S(t) {
+async function p(t) {
     let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
     n.h.dispatch({
         type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTING_FOR_PLAN",
@@ -118,7 +118,7 @@ async function S(t) {
             if (e.subscription_plans[0].id === t) return l.ur(e.id, void 0, void 0, !0)
         })), o(i)
     } catch (i) {
-        if ("status" in i && 429 === i.status && e < 10) await S(t, ++e);
+        if ("status" in i && 429 === i.status && e < 10) await p(t, ++e);
         else throw i
     }
 }

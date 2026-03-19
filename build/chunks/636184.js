@@ -3,9 +3,9 @@ n.d(t, {
     h: () => R
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    r = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(158954),
     o = n(311907),
     c = n(582754),
@@ -17,18 +17,18 @@ var i = n(627968),
     E = n(975571),
     I = n(427262),
     T = n(326084),
-    N = n(851746),
-    f = n(652215),
+    f = n(851746),
+    N = n(652215),
     C = n(985018),
     g = n(633308),
-    h = n(299148);
-let p = e => {
+    p = n(299148);
+let h = e => {
         let {
             recipient: t,
             status: n,
-            onClose: l
+            onClose: a
         } = e, {
-            avatarSrc: a,
+            avatarSrc: l,
             eventHandlers: s
         } = (0, _.A)({
             userId: t?.id,
@@ -40,7 +40,7 @@ let p = e => {
                 imageClassName: r()({
                     [g.jN]: c
                 }),
-                src: a,
+                src: l,
                 "aria-label": o,
                 size: d._3J.SIZE_32,
                 ...s
@@ -72,7 +72,7 @@ let p = e => {
                     var e;
                     return e = t.id, void((0, m.default)(), u.A.openPrivateChannel({
                         recipientIds: e
-                    }), l())
+                    }), a())
                 }
             })]
         })
@@ -81,16 +81,16 @@ let p = e => {
         let {
             transitionState: t,
             results: n,
-            onClose: a,
+            onClose: l,
             isReminderConfirmation: r
-        } = e, u = (0, o.bG)([N.A], () => N.A.getReferralsRemaining());
-        A.default.track(f.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED);
+        } = e, u = (0, o.bG)([f.A], () => f.A.getReferralsRemaining());
+        A.default.track(N.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED);
         let {
             reducedMotion: _
-        } = l.useContext(c.CZ);
+        } = a.useContext(c.CZ);
         return null === u ? (0, i.jsx)(d.y$y, {}) : (0, i.jsx)(s.ExpressiveModal, {
             graphic: _.enabled ? {
-                src: h.A,
+                src: p.A,
                 type: "image"
             } : {
                 rive: d.lBW,
@@ -99,18 +99,18 @@ let p = e => {
             gradientColor: "nitro-pink",
             title: 0 === n.filter(e => e.status === T.o.SUCCESS).length ? C.intl.string(C.t["7VBEue"]) : !0 === r ? C.intl.string(C.t.GP5lbq) : C.intl.string(C.t.tKCltd),
             subtitle: !0 === r ? C.intl.format(C.t["4gJJfD"], {
-                helpdeskArticle: E.A.getArticleURL(f.MVz.REFERRAL_PROGRAM)
+                helpdeskArticle: E.A.getArticleURL(N.MVz.REFERRAL_PROGRAM)
             }) : C.intl.format(C.t.AwGSWl, {
-                helpdeskArticle: E.A.getArticleURL(f.MVz.REFERRAL_PROGRAM)
+                helpdeskArticle: E.A.getArticleURL(N.MVz.REFERRAL_PROGRAM)
             }),
-            onClose: a,
+            onClose: l,
             transitionState: t,
             children: (0, i.jsx)("div", {
                 className: g.Hz,
-                children: n.map(e => (0, i.jsx)(p, {
+                children: n.map(e => (0, i.jsx)(h, {
                     recipient: e.recipient,
                     status: e.status,
-                    onClose: a
+                    onClose: l
                 }, e.recipient.id))
             })
         })

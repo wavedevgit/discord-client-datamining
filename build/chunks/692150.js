@@ -1,6 +1,6 @@
 /** chunk id: 692150 params = (module,exports,require) **/
 n.r(t), n.d(t, {
-    default: () => S
+    default: () => b
 });
 var a = n(627968),
     s = n(64700),
@@ -20,23 +20,23 @@ var a = n(627968),
     j = n(969117),
     h = n(982257),
     A = n(140033),
-    p = n(486180),
-    C = n(566704),
-    b = n(652215),
-    I = n(738072),
-    N = n(985018),
-    E = n(192150);
+    C = n(486180),
+    p = n(566704),
+    I = n(652215),
+    N = n(738072),
+    E = n(985018),
+    S = n(192150);
 
-function S(e) {
+function b(e) {
     let {
         guildId: t
     } = e;
     (0, g.tR)(t);
     let n = (0, f.U)("GameServerPage"),
-        S = (0, l.bG)([u.A], () => u.A.getGuild(t)?.features.has(b.GuildFeatures.GAME_SERVERS) ?? !1);
-    (0, C.A)(S ? t : null), s.useEffect(() => {
-        S && ((0, x.cq)(t), d.A.getDetectableGames())
-    }, [t, S]);
+        b = (0, l.bG)([u.A], () => u.A.getGuild(t)?.features.has(I.GuildFeatures.GAME_SERVERS) ?? !1);
+    (0, p.A)(b ? t : null), s.useEffect(() => {
+        b && ((0, x.cq)(t), d.A.getDetectableGames())
+    }, [t, b]);
     let T = (0, m.A)(t),
         R = (0, j.N)("GameServerPage"),
         M = (0, l.bG)([v.A], () => v.A.getStateForGuild(t)),
@@ -49,52 +49,52 @@ function S(e) {
             }, `${e.gameId}-${n}`))
         }, [M?.instances, M?.hasFetchedInstances, t]);
     return (0, a.jsxs)("div", {
-        className: E.kL,
+        className: S.kL,
         children: [(0, a.jsxs)(c.Ay, {
-            className: E.KE,
+            className: S.KE,
             toolbar: (0, a.jsx)("div", {}),
             children: [(0, a.jsx)(c.Ay.Icon, {
                 icon: i.GameControllerIcon,
                 "aria-label": ""
             }), (0, a.jsx)(c.Ay.Title, {
-                children: N.intl.string(I.default.vCzwM7)
+                children: E.intl.string(N.default.vCzwM7)
             }), (0, a.jsx)(r.LpS, {
                 disableColor: !0,
-                text: N.intl.string(N.t.oW0eUd),
-                className: E.qS
+                text: E.intl.string(E.t.oW0eUd),
+                className: S.qS
             }), (0, a.jsx)(c.Ay.Divider, {
-                className: E.yF
+                className: S.yF
             }), (0, a.jsx)(r.Text, {
                 variant: "text-sm/normal",
                 color: "text-muted",
-                children: N.intl.format(I.default.LiR4eN, {
-                    helpCenterUrl: _.A.getArticleURL(b.MVz.GAME_SERVER_HOSTING)
+                children: E.intl.format(N.default.LiR4eN, {
+                    helpCenterUrl: _.A.getArticleURL(I.MVz.GAME_SERVER_HOSTING)
                 })
             })]
         }), (0, a.jsxs)("div", {
-            className: E.hQ,
-            children: [S && !M?.hasFetchedInstances ? (0, a.jsx)("div", {
-                className: E.dc,
+            className: S.hQ,
+            children: [b && !M?.hasFetchedInstances ? (0, a.jsx)("div", {
+                className: S.dc,
                 children: (0, a.jsx)(r.y$y, {
                     type: r.tVU.SPINNING_CIRCLE
                 })
             }) : null == y ? (0, a.jsx)(h.A, {
                 guildId: t
             }) : (0, a.jsxs)("div", {
-                className: E.nd,
+                className: S.nd,
                 children: [n && (0, a.jsx)("div", {
-                    className: E.MR,
+                    className: S.MR,
                     children: (0, a.jsx)(o.A, {
                         look: o.k.WARNING,
-                        children: N.intl.format(I.default.XzXjK2, {})
+                        children: E.intl.format(N.default.XzXjK2, {})
                     })
                 }), (0, a.jsx)(r.IpV, {
                     children: (0, a.jsx)("div", {
-                        className: E.Y_,
+                        className: S.Y_,
                         children: y
                     })
                 })]
-            }), (T || R) && (0, a.jsx)(p.A, {
+            }), (T || R) && (0, a.jsx)(C.A, {
                 guildId: t,
                 isAdmin: T ?? !1
             })]

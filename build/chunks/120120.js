@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(417597),
-    a = n(397927),
+var a = n(417597),
+    l = n(397927),
     r = n(775602),
     s = n(763754),
     o = n(447215),
@@ -21,7 +21,7 @@ function E(e) {
         guildId: t,
         user: n,
         username: s
-    } = e, o = (0, l.bG)([r.A], () => !r.A.useReducedMotion), c = n.getAvatarURL(t, 56, o), d = (0, i.jsx)("img", {
+    } = e, o = (0, a.bG)([r.A], () => !r.A.useReducedMotion), c = n.getAvatarURL(t, 56, o), d = (0, i.jsx)("img", {
         src: c,
         className: A.dj,
         alt: ""
@@ -34,14 +34,14 @@ function E(e) {
         }),
         children: [(0, i.jsx)(u.A, {
             avatar: d
-        }), (0, i.jsx)(a.Text, {
+        }), (0, i.jsx)(l.Text, {
             className: A.Bi,
             tag: "p",
             color: "status-positive-text",
             variant: "heading-xl/medium",
             children: m.intl.format(m.t["52BAtC"], {
                 username: s,
-                usernameHook: (e, t) => (0, i.jsx)(a.Text, {
+                usernameHook: (e, t) => (0, i.jsx)(l.Text, {
                     tag: "span",
                     color: "status-positive-text",
                     variant: "heading-xxl/extrabold",
@@ -56,31 +56,31 @@ function E(e) {
 function I(e) {
     let {
         channel: t,
-        message: l,
-        compact: a
-    } = e, r = (0, s.Ay)(l), u = (0, o.P)({
-        user: l.author,
+        message: a,
+        compact: l
+    } = e, r = (0, s.Ay)(a), u = (0, o.P)({
+        user: a.author,
         channelId: t.id,
         guildId: t.guild_id,
-        messageId: l.id
+        messageId: a.id
     })(r), A = m.intl.format(m.t.TQs67g, {
         username: r.nick,
         usernameHook: u,
-        productName: l.purchaseNotification?.guild_product_purchase?.product_name ?? "",
+        productName: a.purchaseNotification?.guild_product_purchase?.product_name ?? "",
         handleProductListingClick: () => {
-            (0, d.pX)(_.BVt.GUILD_PRODUCT(t.guild_id, l.purchaseNotification?.guild_product_purchase?.listing_id ?? ""))
+            (0, d.pX)(_.BVt.GUILD_PRODUCT(t.guild_id, a.purchaseNotification?.guild_product_purchase?.listing_id ?? ""))
         }
     });
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(c.A, {
             icon: n(617184),
-            timestamp: l.timestamp,
-            compact: a,
+            timestamp: a.timestamp,
+            compact: l,
             children: A
         }), (0, i.jsx)(E, {
             username: r.nick,
             guildId: t.guild_id,
-            user: l.author
+            user: a.author
         })]
     })
 }

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(143413),
-    a = n(672834);
+var a = n(143413),
+    l = n(672834);
 
 function r(e) {
     let {
@@ -14,7 +14,7 @@ function r(e) {
         compact: r,
         disableInteraction: s
     } = e;
-    return (0, l.A)(t) ? (0, i.jsx)(a.A, {
+    return (0, a.A)(t) ? (0, i.jsx)(l.A, {
         message: t,
         channel: n,
         compact: r,

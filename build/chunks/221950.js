@@ -8,8 +8,8 @@ n.d(t, {
     uO: () => u
 });
 var i = n(73153),
-    l = n(997509),
-    a = n(976860),
+    a = n(997509),
+    l = n(976860),
     r = n(71393),
     s = n(134413),
     o = n(11541),
@@ -32,12 +32,12 @@ function _(e) {
 function m(e, t) {
     let {
         continuationToken: n,
-        ...l
+        ...a
     } = t;
     i.h.dispatch({
         type: "MEMBER_SAFETY_PAGINATION_UPDATE",
         guildId: e,
-        pagination: l
+        pagination: a
     })
 }
 async function A(e, t) {
@@ -51,7 +51,7 @@ async function A(e, t) {
 function E(e) {
     let t = (0, s.Ml)(e),
         n = r.A.getGuild(e);
-    return !!t && null != n && (n.features.has(c.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) || n.features.has(c.GuildFeatures.COMMUNITY) || n.features.has(c.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) ? (0, a.pX)(c.BVt.CHANNEL(e, d.VV.MEMBER_SAFETY)) : l.A.open(n.id, c.BEX.MEMBERS), !0)
+    return !!t && null != n && (n.features.has(c.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) || n.features.has(c.GuildFeatures.COMMUNITY) || n.features.has(c.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) ? (0, l.pX)(c.BVt.CHANNEL(e, d.VV.MEMBER_SAFETY)) : a.A.open(n.id, c.BEX.MEMBERS), !0)
 }
 async function I(e, t) {
     let n = await (0, o.vk)(e, t);

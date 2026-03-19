@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(311907),
-    a = n(994500),
+var a = n(311907),
+    l = n(994500),
     r = n(301960);
 
 function s(e) {
@@ -13,7 +13,7 @@ function s(e) {
         message: t,
         channel: n,
         compact: s
-    } = e, o = (0, l.bG)([a.A], () => null != t.interaction && a.A.isBlocked(t.interaction.user.id), [t.interaction]);
+    } = e, o = (0, a.bG)([l.A], () => null != t.interaction && l.A.isBlocked(t.interaction.user.id), [t.interaction]);
     return (0, i.jsx)(r.A, {
         message: t,
         channel: n,

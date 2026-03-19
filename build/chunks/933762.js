@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(311907),
-    a = n(397927),
+var a = n(311907),
+    l = n(397927),
     r = n(734057),
     s = n(763754),
     o = n(888675),
@@ -20,7 +20,7 @@ function u(e) {
         onClickThread: _,
         onClickViewThreads: m,
         onContextMenuThread: A
-    } = e, E = (0, s.Ay)(t), I = u(E), T = (0, l.bG)([r.A], () => r.A.getChannel(t.messageReference?.channel_id)), N = c.intl.format(c.t.cZ9Uf2, {
+    } = e, E = (0, s.Ay)(t), I = u(E), T = (0, a.bG)([r.A], () => r.A.getChannel(t.messageReference?.channel_id)), f = c.intl.format(c.t.cZ9Uf2, {
         actorName: E.nick,
         actorHook: I,
         threadName: T?.name ?? t.content,
@@ -31,13 +31,13 @@ function u(e) {
         viewThreadsOnClick: m
     });
     return (0, i.jsx)(o.A, {
-        iconNode: (0, i.jsx)(a.ysw, {
+        iconNode: (0, i.jsx)(l.ysw, {
             size: "md",
             color: "currentColor",
             className: d.K
         }),
         timestamp: t.timestamp,
         compact: n,
-        children: N
+        children: f
     })
 }

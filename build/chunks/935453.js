@@ -1,6 +1,6 @@
 /** chunk id: 935453 params = (module,exports,require) **/
 n.d(t, {
-    N: () => u
+    N: () => _
 });
 var i = n(627968);
 n(64700);
@@ -9,16 +9,17 @@ var r = n(835245),
     l = n(391048),
     s = n(636099),
     o = n(608805),
-    d = n(954571),
-    c = n(652215);
+    d = n(120700),
+    c = n(954571),
+    u = n(652215);
 
-function u(e) {
+function _(e) {
     let {
         guildProductListing: t,
-        guildId: u,
-        sourceAnalyticsLocations: _
-    } = e, m = !1, h = (0, r.A)(), p = t.id, g = () => {
-        m = !0
+        guildId: _,
+        sourceAnalyticsLocations: m
+    } = e, h = !1, p = (0, r.A)(), g = t.id, A = () => {
+        h = !0
     };
     (0, a.mMO)(async () => {
         let {
@@ -27,31 +28,32 @@ function u(e) {
         return n => (0, i.jsx)(e, {
             ...n,
             applicationId: t.application_id,
-            skuId: p,
-            sourceAnalyticsLocations: _,
+            skuId: g,
+            sourceAnalyticsLocations: m,
             guildProductContext: {
                 guildProductListingId: t.id,
-                guildId: u
+                guildId: _
             },
-            loadId: h,
-            onComplete: g
+            loadId: p,
+            onComplete: A
         })
     }, {
         onCloseCallback: () => {
-            if (!m) {
+            if (!h) {
                 let e = (0, o.q1)({
-                    location: "GuildProductPurchaseModal"
+                    location: "GuildProductPurchaseModal",
+                    unifiedCheckoutFlow: d.C.GUILD_PRODUCT_CHECKOUT
                 });
-                d.default.track(c.HAw.PAYMENT_FLOW_CANCELED, {
-                    load_id: h,
-                    payment_type: c.frM[c.VVm.ONE_TIME],
+                c.default.track(u.HAw.PAYMENT_FLOW_CANCELED, {
+                    load_id: p,
+                    payment_type: u.frM[u.VVm.ONE_TIME],
                     is_gift: !1,
-                    sku_id: p,
-                    location_stack: Array.isArray(_) ? _ : [_],
+                    sku_id: g,
+                    location_stack: Array.isArray(m) ? m : [m],
                     checkout_design: e ? o.rS.UNIFIED : o.rS.LEGACY
                 })
             }(0, l.ET)(), (0, s.z)()
         },
-        onCloseRequest: c.tEg
+        onCloseRequest: u.tEg
     })
 }

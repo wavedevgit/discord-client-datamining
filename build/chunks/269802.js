@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(827734),
-    a = n(397927),
+var a = n(827734),
+    l = n(397927),
     r = n(763754),
     s = n(888675),
     o = n(985018),
@@ -23,9 +23,9 @@ function d(e) {
     });
     return (0, i.jsx)(s.A, {
         className: c.d,
-        iconNode: (0, i.jsx)(a.qux, {
+        iconNode: (0, i.jsx)(l.qux, {
             size: "md",
-            color: l.A.unsafe_rawColors.GREEN_360.css
+            color: a.A.unsafe_rawColors.GREEN_360.css
         }),
         iconContainerClassName: c.z,
         timestamp: t.timestamp,

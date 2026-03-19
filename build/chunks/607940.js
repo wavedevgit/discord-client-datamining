@@ -1,6 +1,6 @@
 /** chunk id: 607940 params = (module,exports,require) **/
 i.d(e, {
-    A: () => g,
+    A: () => P,
     e: () => d
 });
 var n, l = i(284009),
@@ -12,11 +12,11 @@ var n, l = i(284009),
     c = i(67480),
     d = ((n = {})[n.NOT_FETCHED = 0] = "NOT_FETCHED", n[n.FETCHING = 1] = "FETCHING", n[n.FETCHED = 2] = "FETCHED", n);
 
-function p(t) {
+function S(t) {
     return `subscription_listing:${t}`
 }
 
-function S(t) {
+function p(t) {
     return `application:${t}`
 }
 
@@ -27,41 +27,41 @@ function I(t, e, i) {
 function A(t, e) {
     return `entitlement:${e}:${t}`
 }
-let _ = new r.J(t => [S(t.application_id), ...t.subscription_listings_ids.map(p)], t => t.id),
+let _ = new r.J(t => [p(t.application_id), ...t.subscription_listings_ids.map(S)], t => t.id),
     T = new r.J(t => {
         var e;
-        return [S(t.application_id), (e = t.subscription_plans[0].id, `plan:${e}`)]
+        return [p(t.application_id), (e = t.subscription_plans[0].id, `plan:${e}`)]
     }, t => t.id),
     E = new r.J(t => [I(t.applicationId, t.isValid(null, c.A), t.guildId), A(t.isValid(null, c.A), t.guildId)], t => t.id),
-    f = {},
-    C = {};
+    C = {},
+    f = {};
 
-function N(t) {
+function h(t) {
     for (let i of (_.set(t.id, t), t.subscription_listings ?? [])) {
         var e;
         e = i, T.set(e.id, e)
     }
 }
-class h extends a.il {
+class N extends a.il {
     static displayName = "ApplicationSubscriptionStore";
     getSubscriptionGroupListingsForApplicationFetchState(t) {
-        return f[t] ?? 0
+        return C[t] ?? 0
     }
     getSubscriptionGroupListing(t) {
         return _.get(t)
     }
     getSubscriptionGroupListingForSubscriptionListing(t) {
-        let e = _.values(p(t));
+        let e = _.values(S(t));
         return s()(e.length <= 1, "Found multiple group listings for listing"), e[0]
     }
     getSubscriptionListing(t) {
         return T.get(t)
     }
     getSubscriptionListingsForApplication(t) {
-        return T.values(S(t))
+        return T.values(p(t))
     }
     getEntitlementsForGuildFetchState(t) {
-        return C[t] ?? 0
+        return f[t] ?? 0
     }
     getSubscriptionListingForPlan(t) {
         let e = T.values(`plan:${t}`);
@@ -76,16 +76,16 @@ class h extends a.il {
         return E.values(A(e, t))
     }
 }
-let g = new h(u.h, {
+let P = new N(u.h, {
     LOGOUT: function() {
-        _.clear(), T.clear(), E.clear(), f = {}, C = {}
+        _.clear(), T.clear(), E.clear(), C = {}, f = {}
     },
     APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS: function(t) {
         let {
             applicationId: e,
             groupListingId: i
         } = t;
-        f[e] = 1;
+        C[e] = 1;
         let n = _.get(i);
         if (null != n)
             for (let t of n.subscription_listings_ids) T.delete(t)
@@ -95,26 +95,26 @@ let g = new h(u.h, {
             applicationId: e,
             groupListing: i
         } = t;
-        f[e] = 2, N(i)
+        C[e] = 2, h(i)
     },
     APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS_FAILURE: function(t) {
         let {
             applicationId: e
         } = t;
-        f[e] = 2
+        C[e] = 2
     },
     APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS(t) {
         let {
             guildId: e
         } = t;
-        C[e] = 1
+        f[e] = 1
     },
     APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS(t) {
         let {
             guildId: e,
             entitlements: i
         } = t;
-        C[e] = 2, i.forEach(t => {
+        f[e] = 2, i.forEach(t => {
             let e = o.A.createFromServer(t);
             E.set(e.id, e)
         })
@@ -123,12 +123,12 @@ let g = new h(u.h, {
         let {
             guildId: e
         } = t;
-        C[e] = 0
+        f[e] = 0
     },
     APPLICATION_SUBSCRIPTIONS_FETCH_LISTING_FOR_PLAN_SUCCESS: function(t) {
         let {
             groupListing: e
         } = t;
-        N(e)
+        h(e)
     }
 })

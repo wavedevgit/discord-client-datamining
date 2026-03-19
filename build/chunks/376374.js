@@ -1,8 +1,8 @@
 /** chunk id: 376374 params = (module,exports,require) **/
 i.d(e, {
     $P: () => f,
-    rc: () => E,
-    wF: () => T
+    rc: () => C,
+    wF: () => E
 });
 var n, l = i(627968);
 i(64700);
@@ -10,17 +10,18 @@ var s = i(323125),
     a = i(397927),
     r = i(793574),
     u = i(688810),
-    o = i(897100),
-    c = i(638643),
-    d = i(976860),
+    o = i(285871),
+    c = i(897100),
+    d = i(638643),
+    S = i(976860),
     p = i(954571),
-    S = i(580630),
-    I = i(56754),
-    A = i(652215),
-    _ = i(985018),
-    T = ((n = {})[n.AVAILABLE = 0] = "AVAILABLE", n[n.LOADING = 1] = "LOADING", n[n.UPCOMING_PLAN = 2] = "UPCOMING_PLAN", n[n.SUBSCRIBED = 3] = "SUBSCRIBED", n[n.UNAVAILABLE = 4] = "UNAVAILABLE", n);
+    I = i(580630),
+    A = i(56754),
+    _ = i(652215),
+    T = i(985018),
+    E = ((n = {})[n.AVAILABLE = 0] = "AVAILABLE", n[n.LOADING = 1] = "LOADING", n[n.UPCOMING_PLAN = 2] = "UPCOMING_PLAN", n[n.SUBSCRIBED = 3] = "SUBSCRIBED", n[n.UNAVAILABLE = 4] = "UNAVAILABLE", n);
 
-function E(t) {
+function C(t) {
     let {
         appId: e,
         onClick: i,
@@ -29,8 +30,8 @@ function E(t) {
         subscriptionPlan: a,
         icon: r,
         state: u = 0
-    } = t, o = null != a ? (0, S._J)(a) : null, c = 1 === u;
-    return 0 === u || c ? (0, l.jsx)(C, {
+    } = t, o = null != a ? (0, I._J)(a) : null, c = 1 === u;
+    return 0 === u || c ? (0, l.jsx)(h, {
         appId: e,
         skuId: s,
         onClick: t => {
@@ -38,22 +39,22 @@ function E(t) {
         },
         loading: c,
         icon: r,
-        text: null != o ? _.intl.formatToPlainString(_.t.i4T8vz, {
+        text: null != o ? T.intl.formatToPlainString(T.t.i4T8vz, {
             rate: o
-        }) : _.intl.string(_.t.uuzaAK)
+        }) : T.intl.string(T.t.uuzaAK)
     }) : (0, l.jsx)(N, {
         text: function(t, e) {
             switch (t) {
                 case 2:
-                    return _.intl.formatToPlainString(_.t.k1ew5N, {
+                    return T.intl.formatToPlainString(T.t.k1ew5N, {
                         rate: e
                     });
                 case 3:
-                    return _.intl.formatToPlainString(_.t["Hs3Y+I"], {
+                    return T.intl.formatToPlainString(T.t["Hs3Y+I"], {
                         rate: e
                     });
                 case 4:
-                    return _.intl.string(_.t.DLAKbi)
+                    return T.intl.string(T.t.DLAKbi)
             }
         }(u, o ?? "")
     })
@@ -67,49 +68,50 @@ function f(t) {
         sku: s,
         icon: a
     } = t, {
-        analyticsLocations: o
-    } = (0, u.Ay)(r.A.APP_STOREFRONT), d = (0, I.L)(s.id), p = s.type === A.Puh.DURABLE && d, {
-        price: T
+        analyticsLocations: c
+    } = (0, u.Ay)(r.A.APP_STOREFRONT), S = (0, A.L)(s.id), p = s.type === _.Puh.DURABLE && S, {
+        price: E
     } = s;
-    return null == T ? null : p ? (0, l.jsx)(N, {
-        text: _.intl.string(_.t["6cfuDj"])
-    }) : (0, l.jsx)(C, {
+    return null == E ? null : p ? (0, l.jsx)(N, {
+        text: T.intl.string(T.t["6cfuDj"])
+    }) : (0, l.jsx)(h, {
         appId: e,
         skuId: s.id,
         onClick: t => {
             (i ?? (() => {
-                (0, c.k)({
+                (0, d.k)({
                     appId: e,
                     skuId: s.id,
-                    analyticsLocations: o
+                    analyticsLocations: c,
+                    checkoutFlow: o.C.PREMIUM_APPS_OTP_CHECKOUT
                 })
             }))(t), n?.()
         },
-        text: _.intl.format(_.t.Xp5WTn, {
-            price: (0, S.$g)(T.amount, T.currency)
+        text: T.intl.format(T.t.Xp5WTn, {
+            price: (0, I.$g)(E.amount, E.currency)
         }),
         icon: a
     })
 }
 
-function C(t) {
+function h(t) {
     let {
         appId: e,
         skuId: i,
         onClick: n,
         ...r
-    } = t, u = (0, o.A)();
+    } = t, u = (0, c.A)();
     return (0, l.jsx)(a.Button, {
         ...r,
         onClick: t => {
-            if (p.default.track(A.HAw.STOREFRONT_PURCHASE_CLICKED, {
+            if (p.default.track(_.HAw.STOREFRONT_PURCHASE_CLICKED, {
                     application_id: e,
                     sku_id: i
                 }), !u) {
                 t.preventDefault(), t.stopPropagation();
-                let n = A.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(e, i),
+                let n = _.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(e, i),
                     l = (0, s.T2)(n, !1);
-                (0, d.pX)(l);
+                (0, S.pX)(l);
                 return
             }
             n?.(t)

@@ -3,8 +3,8 @@ n.d(t, {
     A: () => u,
     N: () => m
 });
-var l = n(627968),
-    a = n(64700),
+var a = n(627968),
+    l = n(64700),
     i = n(990078),
     r = n(397927),
     s = n(442433),
@@ -16,11 +16,11 @@ function u(e) {
     let {
         applicationId: t,
         className: n
-    } = e, u = a.useRef(null), m = (0, c.A)({
+    } = e, u = l.useRef(null), m = (0, c.A)({
         id: t,
         label: d.intl.string(d.t["FfCL+6"])
     }), x = (0, o.n)(t);
-    return null == m && null == x ? null : (0, l.jsx)(r.YNO, {
+    return null == m && null == x ? null : (0, a.jsx)(r.YNO, {
         targetElementRef: u,
         align: "top",
         position: "right",
@@ -29,7 +29,7 @@ function u(e) {
             let {
                 closePopout: t
             } = e;
-            return (0, l.jsx)(r.W1t, {
+            return (0, a.jsx)(r.W1t, {
                 "data-menu-migrated-auto": !0,
                 navId: "game-profile-context",
                 onClose: () => {
@@ -37,22 +37,22 @@ function u(e) {
                 },
                 "aria-label": d.intl.string(d.t.PNeFgW),
                 onSelect: () => {},
-                children: (0, l.jsxs)(l.Fragment, {
-                    children: [(0, l.jsx)(r.rXV, {
+                children: (0, a.jsxs)(a.Fragment, {
+                    children: [(0, a.jsx)(r.rXV, {
                         children: m
-                    }), (0, l.jsx)(r.rXV, {
+                    }), (0, a.jsx)(r.rXV, {
                         children: x
                     })]
                 })
             })
         },
-        children: e => (0, l.jsx)(i.m, {
+        children: e => (0, a.jsx)(i.m, {
             text: d.intl.string(d.t["UKOtz+"]),
-            children: (0, l.jsx)(r.DUT, {
+            children: (0, a.jsx)(r.DUT, {
                 innerRef: u,
                 className: n,
                 ...e,
-                children: (0, l.jsx)(r.jNK, {
+                children: (0, a.jsx)(r.jNK, {
                     size: "xs",
                     color: r.LU0.colors.WHITE
                 })
@@ -66,13 +66,13 @@ function m(e) {
         applicationId: t,
         onClose: n,
         className: u
-    } = e, m = a.useRef(null), x = (0, c.A)({
+    } = e, m = l.useRef(null), x = (0, c.A)({
         id: t,
         label: d.intl.string(d.t["FfCL+6"])
-    }), h = (0, o.n)(t);
-    return (0, l.jsxs)("div", {
+    }), f = (0, o.n)(t);
+    return (0, a.jsxs)("div", {
         className: u,
-        children: [(null != x || null != h) && (0, l.jsx)(r.YNO, {
+        children: [(null != x || null != f) && (0, a.jsx)(r.YNO, {
             targetElementRef: m,
             align: "top",
             position: "right",
@@ -81,28 +81,28 @@ function m(e) {
                 let {
                     closePopout: t
                 } = e;
-                return (0, l.jsx)(r.W1t, {
+                return (0, a.jsx)(r.W1t, {
                     navId: "game-profile-context",
                     onClose: () => {
                         (0, s.Z_)(), t()
                     },
                     "aria-label": d.intl.string(d.t.PNeFgW),
                     onSelect: () => {},
-                    children: (0, l.jsxs)(l.Fragment, {
-                        children: [(0, l.jsx)(r.rXV, {
-                            children: h
-                        }), (0, l.jsx)(r.rXV, {
+                    children: (0, a.jsxs)(a.Fragment, {
+                        children: [(0, a.jsx)(r.rXV, {
+                            children: f
+                        }), (0, a.jsx)(r.rXV, {
                             children: x
                         })]
                     })
                 })
             },
-            children: e => (0, l.jsx)(i.m, {
+            children: e => (0, a.jsx)(i.m, {
                 text: d.intl.string(d.t["UKOtz+"]),
-                children: (0, l.jsx)("div", {
+                children: (0, a.jsx)("div", {
                     ...e,
                     ref: m,
-                    children: (0, l.jsx)(r.K0, {
+                    children: (0, a.jsx)(r.K0, {
                         icon: r.jNK,
                         variant: "overlay-secondary",
                         color: "currentColor",
@@ -110,7 +110,7 @@ function m(e) {
                     })
                 })
             })
-        }), (0, l.jsx)(r.K0, {
+        }), (0, a.jsx)(r.K0, {
             icon: r.d$L,
             variant: "overlay-secondary",
             color: "currentColor",

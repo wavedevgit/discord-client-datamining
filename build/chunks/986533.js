@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(503698),
-    a = n.n(l),
+var a = n(503698),
+    l = n.n(a),
     r = n(397927),
     s = n(709066),
     o = n(763754),
@@ -21,11 +21,11 @@ function I(e) {
     let {
         message: t,
         compact: n,
-        usernameHook: l
-    } = e, I = (0, o.Ay)(t), T = l(I), {
-        avatarSrc: N,
+        usernameHook: a
+    } = e, I = (0, o.Ay)(t), T = a(I), {
+        avatarSrc: f,
         eventHandlers: {
-            onMouseEnter: f,
+            onMouseEnter: N,
             onMouseLeave: C
         }
     } = (0, d.a)(!0), g = "" !== t.content ? new Date(t.content).toLocaleString(A.intl.currentLocale, {
@@ -36,25 +36,25 @@ function I(e) {
         year: "numeric"
     }) : "";
     return (0, i.jsx)("div", {
-        onMouseEnter: f,
+        onMouseEnter: N,
         onMouseLeave: C,
         children: (0, i.jsx)(u.A, {
-            className: a()(E.rs, {
+            className: l()(E.rs, {
                 [E.oE]: n
             }),
             iconNode: n ? null : (0, i.jsx)(d.l, {
-                src: N
+                src: f
             }),
             iconContainerClassName: E.zc,
             compact: n,
             children: (0, i.jsxs)("div", {
-                className: a()(E.Qs, {
+                className: l()(E.Qs, {
                     [E.oE]: n
                 }),
                 children: [(0, i.jsx)(c.ix, {
                     message: t,
                     messageClassname: E.he,
-                    className: a()(E.QV, E.he, {
+                    className: l()(E.QV, E.he, {
                         [E.oE]: n
                     }),
                     username: (0, i.jsxs)("div", {
@@ -73,7 +73,7 @@ function I(e) {
                     compact: n,
                     showTimestamp: !0
                 }), (0, i.jsx)("div", {
-                    className: a()(E.__invalid_messageContent, {
+                    className: l()(E.__invalid_messageContent, {
                         [E.oE]: n
                     }),
                     children: t.type === _.lAJ.GUILD_INCIDENT_ALERT_MODE_ENABLED ? A.intl.format(A.t["+m8eD7"], {

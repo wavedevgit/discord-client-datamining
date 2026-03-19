@@ -11,53 +11,55 @@ var a = n(284009),
     d = n(73825),
     l = n(851907),
     c = n(160946),
-    s = n(869146),
-    u = n(143582),
-    f = n(490744),
-    b = n(67480),
-    p = n(342098),
-    m = n(216678),
-    C = n(652215);
+    s = n(589078),
+    u = n(869146),
+    f = n(143582),
+    b = n(490744),
+    p = n(67480),
+    m = n(342098),
+    C = n(216678),
+    h = n(652215);
 async function g(e) {
-    var t, n, a, g, h;
-    let x, y, {
-            applicationId: v,
-            skuId: I,
-            initialPlanId: w,
-            analyticsLocations: k,
-            analyticsLocationObject: A
+    var t, n, a, g, x;
+    let y, v, {
+            applicationId: I,
+            skuId: w,
+            initialPlanId: k,
+            analyticsLocations: A,
+            analyticsLocationObject: j
         } = e,
-        j = b.A.get(I);
-    if (null == j) {
-        let e = (await (0, i.JI)(v)).find(e => e.sku.id === I);
-        o()(null != e, "Could not find store listing for sku"), e.sku.type === C.Puh.SUBSCRIPTION_GROUP && await (0, u.vz)(v, e.id)
+        P = p.A.get(w);
+    if (null == P) {
+        let e = (await (0, i.JI)(I)).find(e => e.sku.id === w);
+        o()(null != e, "Could not find store listing for sku"), e.sku.type === h.Puh.SUBSCRIPTION_GROUP && await (0, f.vz)(I, e.id)
     }
-    j = j ?? b.A.get(I), o()(null != j && j.applicationId === v, "SKU must belong to application"), j.type !== C.Puh.SUBSCRIPTION || (0, c.B)([j.id]) || await (0, d.ur)(j.id);
-    let L = null == (y = null != (x = (0, l.LU)({
-        applicationId: v
-    })) ? s.A.getWindow(x) : void 0) || y.closed ? _.SYi : _.KX8;
-    if (j.type !== C.Puh.SUBSCRIPTION) return new Promise((e, t) => {
-        (0, m.A)({
-            applicationId: v,
-            skuId: I,
-            analyticsLocationObject: A,
-            analyticsLocations: k,
+    P = P ?? p.A.get(w), o()(null != P && P.applicationId === I, "SKU must belong to application"), P.type !== h.Puh.SUBSCRIPTION || (0, c.B)([P.id]) || await (0, d.ur)(P.id);
+    let L = null == (v = null != (y = (0, l.LU)({
+        applicationId: I
+    })) ? u.A.getWindow(y) : void 0) || v.closed ? _.SYi : _.KX8;
+    if (P.type !== h.Puh.SUBSCRIPTION) return new Promise((e, t) => {
+        (0, C.A)({
+            applicationId: I,
+            skuId: w,
+            analyticsLocationObject: j,
+            analyticsLocations: A,
             contextKey: L,
             onComplete: t => {
                 e(t?.entitlements ?? [])
             },
             onClose: e => {
                 e || t()
-            }
+            },
+            checkoutFlow: s.CL.PREMIUM_APPS_OTP_CHECKOUT
         })
     });
-    await (t = v, n = I, a = w, g = A, h = k, (0, p.l)({
+    await (t = I, n = w, a = k, g = j, x = A, (0, m.l)({
         applicationId: t,
         skuId: n,
         initialPlanId: a,
         analyticsLocationObject: g,
-        analyticsLocations: h,
-        renderHeader: (e, t, n) => (0, r.jsx)(f.fs, {
+        analyticsLocations: x,
+        renderHeader: (e, t, n) => (0, r.jsx)(b.fs, {
             step: n,
             onClose: () => t(!1)
         })

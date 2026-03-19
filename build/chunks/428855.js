@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(397927),
-    a = n(880652),
+var a = n(397927),
+    l = n(880652),
     r = n(187817);
 
 function s(e) {
@@ -14,15 +14,15 @@ function s(e) {
         questionId: n,
         value: s,
         onValueChange: o
-    } = e, c = t.Selector !== a.BO.SINGLE_LINE;
+    } = e, c = t.Selector !== l.BO.SINGLE_LINE;
     return (0, i.jsx)("div", {
         className: r.k,
-        children: c ? (0, i.jsx)(l.fs1, {
+        children: c ? (0, i.jsx)(a.fs1, {
             value: s,
             onChange: e => o(n, e),
             placeholder: "Enter your response...",
             rows: 4
-        }) : (0, i.jsx)(l.ksK, {
+        }) : (0, i.jsx)(a.ksK, {
             value: s,
             onChange: e => o(n, e),
             placeholder: "Enter your response..."

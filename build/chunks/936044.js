@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(503698),
-    a = n.n(l),
+var a = n(503698),
+    l = n.n(a),
     r = n(763754),
     s = n(491182),
     o = n(291812),
@@ -16,7 +16,7 @@ function u(e) {
     let {
         message: t,
         channel: n,
-        content: l,
+        content: a,
         className: u,
         compact: _,
         popoutProps: m,
@@ -25,22 +25,22 @@ function u(e) {
         ...I
     } = e, T = (0, r.Ay)(t);
     return (0, i.jsx)("div", {
-        className: a()({
+        className: l()({
             [d.Ym]: E
         }, d.gD, {
             [d.oE]: _
         }, u),
         children: (0, i.jsx)(s.A, {
             ...I,
-            className: a()(d.zC, {
+            className: l()(d.zC, {
                 [d.oE]: _
             }),
             childrenMessageContent: (0, i.jsx)(o.Ay, {
-                className: a()(d.__invalid_messageContent, {
+                className: l()(d.__invalid_messageContent, {
                     [d.oE]: _
                 }),
                 message: t,
-                content: l,
+                content: a,
                 compact: _ ?? !1
             }),
             childrenHeader: (0, i.jsx)(c.Ay, {
@@ -50,7 +50,7 @@ function u(e) {
                 guildId: n?.guild_id,
                 compact: _,
                 hideTimestamp: A,
-                className: a()(d.wx, {
+                className: l()(d.wx, {
                     [d.oE]: _
                 }),
                 ...m ?? {}

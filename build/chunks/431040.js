@@ -2,8 +2,8 @@
 n.d(t, {
     A: () => g
 });
-var l = n(627968),
-    a = n(64700),
+var a = n(627968),
+    l = n(64700),
     i = n(397927),
     r = n(541830),
     s = n(240248),
@@ -13,10 +13,10 @@ var l = n(627968),
     u = n(839671),
     m = n(936636),
     x = n(985018),
-    h = n(203540);
+    f = n(203540);
 
-function f() {
-    return (0, l.jsx)(i.Text, {
+function h() {
+    return (0, a.jsx)(i.Text, {
         variant: "text-sm/normal",
         color: "text-subtle",
         children: x.intl.string(x.t.GruYxV)
@@ -27,99 +27,99 @@ let g = function(e) {
         application: t,
         detectedGame: n,
         trackAction: g
-    } = e, p = a.useMemo(() => n.genres.map(r.du).join(", "), [n]), _ = n.publishers.join(", "), v = n.developers.join(", "), j = n.firstReleaseDate, A = (0, o.A)(n), I = (0, c.Y)(n), E = !(0, s.uJ)(p), N = !(0, s.uJ)(_), b = !(0, s.uJ)(v), C = !(0, s.uJ)(j), T = A.length > 0, S = I.length > 0 && !I.every(e => (0, s.uJ)(e.url));
-    return (0, l.jsxs)("div", {
-        className: h.uW,
-        children: [(0, l.jsx)("div", {
-            className: h.Gf,
-            children: (0, l.jsx)(i.Heading, {
+    } = e, p = l.useMemo(() => n.genres.map(r.du).join(", "), [n]), _ = n.publishers.join(", "), v = n.developers.join(", "), j = n.firstReleaseDate, A = (0, o.A)(n), E = (0, c.Y)(n), I = !(0, s.uJ)(p), b = !(0, s.uJ)(_), N = !(0, s.uJ)(v), C = !(0, s.uJ)(j), T = A.length > 0, L = E.length > 0 && !E.every(e => (0, s.uJ)(e.url));
+    return (0, a.jsxs)("div", {
+        className: f.uW,
+        children: [(0, a.jsx)("div", {
+            className: f.Gf,
+            children: (0, a.jsx)(i.Heading, {
                 variant: "heading-sm/semibold",
                 color: "text-strong",
                 children: x.intl.string(x.t["7OjmmH"])
             })
-        }), (0, l.jsxs)("div", {
-            className: h.kL,
-            children: [(0, l.jsxs)("div", {
-                className: h.J1,
-                children: [(0, l.jsx)(i.Text, {
+        }), (0, a.jsxs)("div", {
+            className: f.kL,
+            children: [(0, a.jsxs)("div", {
+                className: f.J1,
+                children: [(0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     children: 1 !== n.genres.length ? x.intl.string(x.t.pDgwYB) : x.intl.string(x.t.mjFKqn)
-                }), E ? (0, l.jsx)(i.Text, {
+                }), I ? (0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
-                    className: h.Gu,
+                    className: f.Gu,
                     children: p
-                }) : (0, l.jsx)(f, {})]
-            }), (0, l.jsxs)("div", {
-                className: h.J1,
-                children: [(0, l.jsx)(i.Text, {
+                }) : (0, a.jsx)(h, {})]
+            }), (0, a.jsxs)("div", {
+                className: f.J1,
+                children: [(0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     children: 1 !== n.publishers.length ? x.intl.string(x.t.Hc7Enk) : x.intl.string(x.t["4Byy/G"])
-                }), N ? (0, l.jsx)(i.Text, {
+                }), b ? (0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
-                    className: h.Gu,
+                    className: f.Gu,
                     children: _
-                }) : (0, l.jsx)(f, {})]
-            }), (0, l.jsxs)("div", {
-                className: h.J1,
-                children: [(0, l.jsx)(i.Text, {
+                }) : (0, a.jsx)(h, {})]
+            }), (0, a.jsxs)("div", {
+                className: f.J1,
+                children: [(0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     children: 1 !== n.developers.length ? x.intl.string(x.t.KATEJB) : x.intl.string(x.t.na3PT0)
-                }), b ? (0, l.jsx)(i.Text, {
+                }), N ? (0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
-                    className: h.Gu,
+                    className: f.Gu,
                     children: v
-                }) : (0, l.jsx)(f, {})]
-            }), (0, l.jsxs)("div", {
-                className: h.J1,
-                children: [(0, l.jsx)(i.Text, {
+                }) : (0, a.jsx)(h, {})]
+            }), (0, a.jsxs)("div", {
+                className: f.J1,
+                children: [(0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     children: x.intl.string(x.t.H3mPDT)
-                }), C ? (0, l.jsx)(i.Text, {
+                }), C ? (0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
-                    className: h.Gu,
+                    className: f.Gu,
                     children: new Date(j).toLocaleDateString(x.intl.currentLocale, {
                         year: "numeric",
                         month: "long",
                         day: "numeric"
                     })
-                }) : (0, l.jsx)(f, {})]
-            }), (0, l.jsxs)("div", {
-                className: h.J1,
-                children: [(0, l.jsx)(i.Text, {
+                }) : (0, a.jsx)(h, {})]
+            }), (0, a.jsxs)("div", {
+                className: f.J1,
+                children: [(0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     children: A.length > 1 ? x.intl.string(x.t.PNqxNe) : x.intl.string(x.t["UxAag+"])
-                }), T ? (0, l.jsx)("div", {
-                    className: h.Gu,
-                    children: A.map(e => (0, l.jsx)(m.s, {
+                }), T ? (0, a.jsx)("div", {
+                    className: f.Gu,
+                    children: A.map(e => (0, a.jsx)(m.s, {
                         platform: e
                     }, e))
-                }) : (0, l.jsx)(f, {})]
-            }), (0, l.jsxs)("div", {
-                className: h.J1,
-                children: [(0, l.jsx)(i.Text, {
+                }) : (0, a.jsx)(h, {})]
+            }), (0, a.jsxs)("div", {
+                className: f.J1,
+                children: [(0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     children: x.intl.string(x.t["Oj3o1/"])
-                }), S ? (0, l.jsx)("div", {
-                    className: h.Gu,
-                    children: I.map(e => (0, l.jsx)(u.K, {
+                }), L ? (0, a.jsx)("div", {
+                    className: f.Gu,
+                    children: E.map(e => (0, a.jsx)(u.K, {
                         website: e,
                         trackClick: g
                     }, e.url))
-                }) : (0, l.jsx)(f, {})]
+                }) : (0, a.jsx)(h, {})]
             })]
-        }), (0, l.jsx)("div", {
-            className: h.OQ,
-            children: (0, l.jsx)(d.A, {
+        }), (0, a.jsx)("div", {
+            className: f.OQ,
+            children: (0, a.jsx)(d.A, {
                 application: t,
                 trackAction: g
             })

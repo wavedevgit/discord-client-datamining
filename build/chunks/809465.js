@@ -21,8 +21,8 @@ var a = n(503698),
 function g() {
     let e = (0, d.GV)(),
         t = window.GLOBAL_ENV.RELEASE_CHANNEL,
-        n = "513724",
-        a = "cb9ce355eab0f8a851b410e17d5f9371aa404041".substring(0, 7),
+        n = "513757",
+        a = "9be5a781f3fe0440cee940a717001b56a2090520".substring(0, 7),
         s = c.A?.app.getVersion(),
         g = c.A?.app.getBuildNumber(),
         x = c.A?.app.getAppArch(),
@@ -34,10 +34,10 @@ function g() {
                 [n, r, a] = f.Ay.parsedOSRelease;
             return e.includes("Windows 10") && void 0 !== a && a >= 22e3 && (e = e.replace("Windows 10", "Windows 11")), e.includes("OS X 10.15.7") && void 0 !== n && n >= 20 && (e = `macOS ${n>=25?n+1:n-9}`), `${e} (${t})`
         }(),
-        b = [t, n, `(${a})`];
-    return null != s && (b.push(`Host ${s}`), null != x && b.push(x.toLowerCase()), null != g && b.push(`(${g})`)), b.push(`Build Override: ${null!=_?_.id:"N/A"}`), null != y && b.push(y), (0, r.jsxs)(r.Fragment, {
+        v = [t, n, `(${a})`];
+    return null != s && (v.push(`Host ${s}`), null != x && v.push(x.toLowerCase()), null != g && v.push(`(${g})`)), v.push(`Build Override: ${null!=_?_.id:"N/A"}`), null != y && v.push(y), (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(m.A, {
-            copyValue: b.join(" "),
+            copyValue: v.join(" "),
             text: h.intl.string(h.t["9Al4Qd"]),
             "aria-label": !1,
             dataMeticulousIgnore: "true",

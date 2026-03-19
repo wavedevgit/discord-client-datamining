@@ -5,8 +5,8 @@ n.d(t, {
     ez: () => T
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(311907),
+    a = n(64700),
+    l = n(311907),
     r = n(447215),
     s = n(888675),
     o = n(976860),
@@ -19,12 +19,12 @@ let A = (e, t) => {
     let {
         joinRequest: n,
         joinRequestGuild: i
-    } = (0, _.A)(t.id), s = (0, a.bG)([u.default], () => u.default.getUser(n?.userId)), m = (0, r.P)({
+    } = (0, _.A)(t.id), s = (0, l.bG)([u.default], () => u.default.getUser(n?.userId)), m = (0, r.P)({
         user: s,
         channelId: t.id,
         guildId: t.guild_id,
         messageId: e.id
-    }), A = (0, a.bG)([d.Ay, c.default], () => d.Ay.isMember(i?.id, c.default.getId())), E = l.useCallback(() => {
+    }), A = (0, l.bG)([d.Ay, c.default], () => d.Ay.isMember(i?.id, c.default.getId())), E = a.useCallback(() => {
         A && null != i && (0, o.uh)(i.id)
     }, [i, A]);
     return {
@@ -38,18 +38,18 @@ let A = (e, t) => {
 function E(e) {
     let {
         message: t,
-        channel: l,
-        compact: a
+        channel: a,
+        compact: l
     } = e, {
         guild: r,
         joinRequest: o,
         usernameHook: c,
         guildNameClick: d
-    } = A(t, l), u = o?.user?.username, _ = r?.name;
+    } = A(t, a), u = o?.user?.username, _ = r?.name;
     return (0, i.jsx)(s.A, {
         icon: n(617184),
         timestamp: t.timestamp,
-        compact: a,
+        compact: l,
         children: null != u && null != _ ? m.intl.format(m.t["21R6Ch"], {
             username: u,
             usernameHook: c(),
@@ -62,18 +62,18 @@ function E(e) {
 function I(e) {
     let {
         message: t,
-        channel: l,
-        compact: a
+        channel: a,
+        compact: l
     } = e, {
         guild: r,
         joinRequest: o,
         usernameHook: c,
         guildNameClick: d
-    } = A(t, l), u = o?.user?.username, _ = r?.name;
+    } = A(t, a), u = o?.user?.username, _ = r?.name;
     return (0, i.jsx)(s.A, {
         icon: n(884797),
         timestamp: t.timestamp,
-        compact: a,
+        compact: l,
         children: null != u && null != _ ? m.intl.format(m.t["Bz/QC2"], {
             username: u,
             usernameHook: c(),
@@ -86,18 +86,18 @@ function I(e) {
 function T(e) {
     let {
         message: t,
-        channel: l,
-        compact: a
+        channel: a,
+        compact: l
     } = e, {
         guild: r,
         joinRequest: o,
         usernameHook: c,
         guildNameClick: d
-    } = A(t, l), u = o?.user?.username, _ = r?.name;
+    } = A(t, a), u = o?.user?.username, _ = r?.name;
     return (0, i.jsx)(s.A, {
         icon: n(884797),
         timestamp: t.timestamp,
-        compact: a,
+        compact: l,
         children: null != u && null != _ ? m.intl.format(m.t.Kpkesg, {
             username: u,
             usernameHook: c(),

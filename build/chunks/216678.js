@@ -16,13 +16,14 @@ function d(t) {
     let {
         applicationId: e,
         skuId: d,
-        onClose: p,
-        onComplete: S,
+        onClose: S,
+        onComplete: p,
         analyticsLocations: I,
         analyticsLocationObject: A,
         contextKey: _,
-        isGift: T = !1
-    } = t, E = !1, f = (0, l.A)();
+        isGift: T = !1,
+        checkoutFlow: E
+    } = t, C = !1, f = (0, l.A)();
     (0, s.mMO)(async () => {
         let {
             default: t
@@ -41,19 +42,21 @@ function d(t) {
                 analyticsLocationObject: A,
                 isGift: T,
                 onClose: t => {
-                    l(), p?.(t)
+                    l(), S?.(t)
                 },
                 onComplete: t => {
-                    E = !0, S?.(t)
-                }
+                    C = !0, p?.(t)
+                },
+                checkoutFlow: E
             })
         }
     }, {
         contextKey: _,
         onCloseCallback: () => {
-            if (!E) {
+            if (!C) {
                 let t = (0, u.q1)({
-                    location: "StandardOneTimePaymentModal"
+                    location: "StandardOneTimePaymentModal",
+                    unifiedCheckoutFlow: E
                 });
                 o.default.track(c.HAw.PAYMENT_FLOW_CANCELED, {
                     load_id: f,
@@ -65,7 +68,7 @@ function d(t) {
                     location_stack: I,
                     checkout_design: t ? u.rS.UNIFIED : u.rS.LEGACY
                 })
-            }(0, a.ET)(), (0, r.z)(), p?.(E)
+            }(0, a.ET)(), (0, r.z)(), S?.(C)
         },
         onCloseRequest: c.tEg
     })

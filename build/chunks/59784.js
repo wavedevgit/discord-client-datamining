@@ -3,8 +3,8 @@ n.d(t, {
     A: () => T
 });
 var i = n(448761),
-    l = n(311907),
-    a = n(73153),
+    a = n(311907),
+    l = n(73153),
     r = n(661191),
     s = n(677185),
     o = n(88001),
@@ -33,9 +33,9 @@ function E(e) {
         state: o.xI.FETCHING,
         invite: null,
         errorStatus: null
-    }), a.h.wait(() => (0, s.el)(t).catch(c.FXj)), !0)
+    }), l.h.wait(() => (0, s.el)(t).catch(c.FXj)), !0)
 }
-class I extends l.Ay.Store {
+class I extends a.Ay.Store {
     static displayName = "PremiumGroupInviteStore";
     getInvite(e) {
         return d.get(e) ?? null
@@ -60,7 +60,7 @@ class I extends l.Ay.Store {
         return _
     }
 }
-let T = new I(a.h, {
+let T = new I(l.h, {
     PREMIUM_GROUP_INVITES_FETCH_START: function() {
         _ = !0
     },
@@ -130,12 +130,12 @@ let T = new I(a.h, {
         } = e, n = d.get(t);
         if (n?.invite == null) return !1;
         let i = n.invite.subscription,
-            l = new Date().toISOString();
+            a = new Date().toISOString();
         for (let [e, n] of d) e !== t && n.invite?.subscription === i && d.set(e, {
             state: o.xI.REMOVED,
             invite: {
                 ...n.invite,
-                removed_at: l
+                removed_at: a
             },
             errorStatus: null
         })

@@ -20,8 +20,8 @@ var r = n(627968),
     x = n(12901),
     _ = n(921854),
     y = n(987281),
-    b = n(985018),
-    v = n(365782);
+    v = n(985018),
+    b = n(365782);
 let A = new Set([f.X.PROFILE_PANEL, f.X.SUBSCRIPTIONS_PANEL, f.X.FAMILY_CENTER_PANEL, f.X.POGGERMODE_PANEL]);
 
 function j(e) {
@@ -30,12 +30,12 @@ function j(e) {
         ...n
     } = e, i = m.A.useField("query");
     (0, y.V)();
-    let b = a.useCallback(() => {
+    let v = a.useCallback(() => {
             m.A.setState({
                 query: ""
             }), o.A.terminate()
         }, []),
-        [v, j] = a.useState(!1);
+        [b, j] = a.useState(!1);
     return (a.useLayoutEffect(() => {
         let e = () => {
             null == d.default.getCurrentUser() && (j(!0), (0, x.default)())
@@ -43,7 +43,7 @@ function j(e) {
         return u.default.addChangeListener(e), () => {
             u.default.removeChangeListener(e), p.A.resetState(), l.default.resetState(), s.A.close()
         }
-    }, []), v) ? null : (0, r.jsx)(c.A, {
+    }, []), b) ? null : (0, r.jsx)(c.A, {
         partialRoot: _.D,
         searchBar: N,
         emptyState: S,
@@ -54,7 +54,7 @@ function j(e) {
         target: t,
         defaultTarget: f.X.ACCOUNT_PANEL,
         searchQuery: i,
-        clearSearchQuery: b,
+        clearSearchQuery: v,
         ...n
     })
 }
@@ -80,7 +80,7 @@ function N() {
     return a.useEffect(() => () => {
         o.A.terminate()
     }, []), (0, r.jsx)("div", {
-        className: v.P,
+        className: b.P,
         children: (0, r.jsx)(i.IWV, {
             size: "md",
             query: e,
@@ -94,15 +94,15 @@ function N() {
 
 function S() {
     return (0, r.jsxs)("div", {
-        className: v.t,
+        className: b.t,
         children: [(0, r.jsx)(i.Text, {
             variant: "text-sm/semibold",
             color: "text-strong",
-            children: b.intl.string(b.t.zihbmv)
+            children: v.intl.string(v.t.zihbmv)
         }), (0, r.jsx)(i.Text, {
             variant: "text-sm/normal",
             color: "text-subtle",
-            children: b.intl.string(b.t.XclvsB)
+            children: v.intl.string(v.t.XclvsB)
         })]
     })
 }

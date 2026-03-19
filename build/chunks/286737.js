@@ -1,9 +1,9 @@
 /** chunk id: 286737 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => f
 });
-var l = n(627968),
-    a = n(64700),
+var a = n(627968),
+    l = n(64700),
     i = n(311907),
     r = n(397927),
     s = n(289363),
@@ -14,60 +14,60 @@ var l = n(627968),
     m = n(985018),
     x = n(889983);
 
-function h(e) {
+function f(e) {
     let {
         trackAction: t
     } = e, {
         fetchedAuthorization: n,
-        hasAlreadyLinked: h,
-        canStartAuthorization: f,
+        hasAlreadyLinked: f,
+        canStartAuthorization: h,
         startAuthorization: g,
         connectionApp: p,
         officialInvite: _
-    } = (0, u.c)(), v = (0, i.bG)([c.default], () => c.default.getCurrentUser()), j = a.useCallback(() => {
+    } = (0, u.c)(), v = (0, i.bG)([c.default], () => c.default.getCurrentUser()), j = l.useCallback(() => {
         t(d.Ws.LinkAccount), g({
             analyticsLocations: ["game_profile"]
         })
     }, [t, g]);
-    if (!n || null == p || !f || h || null == v) return null;
+    if (!n || null == p || !h || f || null == v) return null;
     let A = _?.guild != null ? o.Ay.getGuildSplashURL({
         id: _.guild.id,
         splash: _.guild.splash
     }) : null;
-    return (0, l.jsxs)("div", {
+    return (0, a.jsxs)("div", {
         className: x.uW,
-        children: [(0, l.jsx)(r.Heading, {
+        children: [(0, a.jsx)(r.Heading, {
             className: x.Gf,
             variant: "heading-sm/semibold",
             color: "text-strong",
             children: m.intl.string(m.t["VDAhr+"])
-        }), (0, l.jsxs)("div", {
+        }), (0, a.jsxs)("div", {
             className: x.kL,
-            children: [null != A ? (0, l.jsx)("img", {
+            children: [null != A ? (0, a.jsx)("img", {
                 className: x.ll,
                 src: A,
                 alt: ""
-            }) : (0, l.jsx)("div", {
+            }) : (0, a.jsx)("div", {
                 className: x.sB,
-                children: (0, l.jsx)(s.default, {
+                children: (0, a.jsx)(s.default, {
                     application: p
                 })
-            }), (0, l.jsxs)("div", {
+            }), (0, a.jsxs)("div", {
                 className: x.hQ,
-                children: [(0, l.jsxs)("div", {
+                children: [(0, a.jsxs)("div", {
                     className: x.FS,
-                    children: [(0, l.jsx)(r.Heading, {
+                    children: [(0, a.jsx)(r.Heading, {
                         variant: "heading-md/semibold",
                         color: "text-default",
                         children: m.intl.formatToPlainString(m.t.hUbQT2, {
                             gameName: p.name
                         })
-                    }), (0, l.jsx)(r.Text, {
+                    }), (0, a.jsx)(r.Text, {
                         variant: "text-sm/medium",
                         color: "text-muted",
                         children: m.intl.string(m.t["JKqu+4"])
                     })]
-                }), (0, l.jsx)(r.Button, {
+                }), (0, a.jsx)(r.Button, {
                     variant: "secondary",
                     icon: r.A5T,
                     text: m.intl.string(m.t.jynBQ5),

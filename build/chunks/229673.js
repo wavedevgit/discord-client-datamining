@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(934551),
-    a = n(429913),
+var a = n(934551),
+    l = n(429913),
     r = n(769015),
     s = n(975571),
     o = n(763754),
@@ -28,16 +28,16 @@ function A(e) {
         channelId: n.id,
         guildId: void 0,
         messageId: void 0
-    })(), N = (0, a.h)(t.applicationId);
-    if (null == N) return null;
-    let f = _.intl.format(_.t.m7Lwas, {
+    })(), f = (0, l.h)(t.applicationId);
+    if (null == f) return null;
+    let N = _.intl.format(_.t.m7Lwas, {
         username: I,
         usernameHook: T,
-        gameName: N.name,
+        gameName: f.name,
         gameIconHook: e => (0, i.jsxs)("span", {
             className: m.Y_,
             children: [(0, i.jsx)(r.A, {
-                game: N,
+                game: f,
                 size: r.M.XXSMALL,
                 className: m.p4
             }), " ", e]
@@ -45,13 +45,13 @@ function A(e) {
         helpdeskArticle: s.A.getArticleURL(u.MVz.SOCIAL_LAYER_CONNECTIONS)
     });
     return (0, i.jsx)(d.A, {
-        iconNode: (0, i.jsx)(l.GameControllerIcon, {
+        iconNode: (0, i.jsx)(a.GameControllerIcon, {
             size: "sm"
         }),
         compact: E,
         contentClassName: m.Qs,
         children: (0, i.jsx)("div", {
-            children: f
+            children: N
         })
     })
 }

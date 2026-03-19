@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(397927),
-    a = n(582252);
+var a = n(397927),
+    l = n(582252);
 
 function r(e) {
     let {
@@ -18,9 +18,9 @@ function r(e) {
         onTextInputChange: d
     } = e, u = "true" === n.TextEntry, _ = `choice-label-${t}`;
     return (0, i.jsxs)("div", {
-        className: a.NV,
-        children: [(0, i.jsxs)(l.DUT, {
-            className: a.d,
+        className: l.NV,
+        children: [(0, i.jsxs)(a.DUT, {
+            className: l.d,
             onClick: () => {
                 s(t)
             },
@@ -28,15 +28,15 @@ function r(e) {
             "aria-checked": r,
             "aria-labelledby": _,
             children: [(0, i.jsx)("div", {
-                className: a.jl,
-                children: "radio" === o ? (0, i.jsx)(l.TN6, {
+                className: l.jl,
+                children: "radio" === o ? (0, i.jsx)(a.TN6, {
                     disabled: !1,
                     checked: r
-                }) : (0, i.jsx)(l.P7L, {
+                }) : (0, i.jsx)(a.P7L, {
                     disabled: !1,
                     checked: r
                 })
-            }), (0, i.jsx)(l.Text, {
+            }), (0, i.jsx)(a.Text, {
                 id: _,
                 variant: "text-md/normal",
                 color: "text-subtle",
@@ -47,8 +47,8 @@ function r(e) {
                 })
             })]
         }), u && (0, i.jsx)("div", {
-            className: a.Vi,
-            children: (0, i.jsx)(l.ksK, {
+            className: l.Vi,
+            children: (0, i.jsx)(a.ksK, {
                 value: c ?? "",
                 onChange: e => {
                     r || s(t), d?.(t, e)

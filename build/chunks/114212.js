@@ -1,11 +1,11 @@
 /** chunk id: 114212 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => h,
+    Ay: () => g,
     B5: () => b,
     BP: () => m,
     FQ: () => u,
     Uj: () => C,
-    VF: () => g,
+    VF: () => h,
     _G: () => p
 });
 var r = n(627968);
@@ -115,9 +115,9 @@ let b = 44,
     p = 22,
     m = 26,
     C = 26,
-    g = 6;
+    h = 6;
 
-function h(e) {
+function g(e) {
     let {
         messages: t,
         groupSpacing: n = 0,

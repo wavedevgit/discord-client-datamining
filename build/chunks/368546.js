@@ -2,8 +2,8 @@
 n.d(t, {
     A: () => i
 });
-var l = n(64700);
-let a = "requestVideoFrameCallback" in HTMLVideoElement.prototype;
+var a = n(64700);
+let l = "requestVideoFrameCallback" in HTMLVideoElement.prototype;
 
 function i(e) {
     let {
@@ -11,20 +11,20 @@ function i(e) {
         canvasRef: n,
         enabled: i
     } = e;
-    l.useEffect(() => {
+    a.useEffect(() => {
         if (!i) return;
         let e = t.current,
-            l = n.current;
-        if (null == e || null == l) return;
-        l.width = 10, l.height = 6;
-        let r = l.getContext("2d");
+            a = n.current;
+        if (null == e || null == a) return;
+        a.width = 10, a.height = 6;
+        let r = a.getContext("2d");
         if (null == r) return;
         let s = !1;
 
         function c() {
             s || e.readyState < 2 || r.drawImage(e, 0, 0, 10, 6)
         }
-        if (a) {
+        if (l) {
             let t;
 
             function o() {
@@ -52,11 +52,11 @@ function i(e) {
                 t = requestAnimationFrame(m)
             }
 
-            function h() {
+            function f() {
                 cancelAnimationFrame(t)
             }
-            return e.addEventListener("play", x), e.addEventListener("pause", h), e.addEventListener("ended", h), e.addEventListener("seeked", c), e.addEventListener("loadeddata", c), e.paused ? e.readyState >= 2 && c() : t = requestAnimationFrame(m), () => {
-                s = !0, cancelAnimationFrame(t), e.removeEventListener("play", x), e.removeEventListener("pause", h), e.removeEventListener("ended", h), e.removeEventListener("seeked", c), e.removeEventListener("loadeddata", c)
+            return e.addEventListener("play", x), e.addEventListener("pause", f), e.addEventListener("ended", f), e.addEventListener("seeked", c), e.addEventListener("loadeddata", c), e.paused ? e.readyState >= 2 && c() : t = requestAnimationFrame(m), () => {
+                s = !0, cancelAnimationFrame(t), e.removeEventListener("play", x), e.removeEventListener("pause", f), e.removeEventListener("ended", f), e.removeEventListener("seeked", c), e.removeEventListener("loadeddata", c)
             }
         }
     }, [t, n, i])

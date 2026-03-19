@@ -1,8 +1,8 @@
 /** chunk id: 885996 params = (module,exports,require) **/
 i.d(e, {
     FY: () => I,
-    GS: () => p,
-    OP: () => S
+    GS: () => S,
+    OP: () => p
 });
 var n = i(627968);
 i(64700);
@@ -14,30 +14,30 @@ var l = i(503698),
     o = i(827734),
     c = i(159416),
     d = i(301542);
-let p = 5;
+let S = 5;
 
-function S(t) {
+function p(t) {
     let {
         description: e,
         imgSrc: i,
         renderPurchaseButton: l,
-        onPurchase: S,
+        onPurchase: p,
         title: I,
         onDetails: A,
         benefitItems: _,
         benefitsSummary: T,
         subtitle: E,
-        maxBenefits: f = p
+        maxBenefits: C = S
     } = t;
     return (0, n.jsx)(a.vN, {
         children: (0, n.jsxs)("div", {
             className: s()(c.kL, d.t),
             tabIndex: 0,
             onClick: () => {
-                null != A ? A() : null != S && S()
+                null != A ? A() : null != p && p()
             },
             onKeyUp: t => {
-                "Enter" === t.key && (t.stopPropagation(), t.preventDefault(), null != A ? A() : null != S && S())
+                "Enter" === t.key && (t.stopPropagation(), t.preventDefault(), null != A ? A() : null != p && p())
             },
             children: [(0, n.jsx)("div", {
                 className: c.Nr,
@@ -60,7 +60,7 @@ function S(t) {
                         })
                     }), null != l ? l({
                         onClick: t => {
-                            t.stopPropagation(), S?.()
+                            t.stopPropagation(), p?.()
                         }
                     }) : null, E, null != e && "" !== e && (0, n.jsx)(u.EYj, {
                         className: c.h_,
@@ -88,12 +88,12 @@ function S(t) {
                             color: "text-default",
                             variant: "eyebrow",
                             children: r.A.Messages.STOREFRONT_BENEFITS_TITLE
-                        }), _.length > f ? (0, n.jsxs)(n.Fragment, {
-                            children: [_.slice(0, f), (0, n.jsx)(u.EYj, {
+                        }), _.length > C ? (0, n.jsxs)(n.Fragment, {
+                            children: [_.slice(0, C), (0, n.jsx)(u.EYj, {
                                 variant: "text-md/semibold",
                                 color: "text-subtle",
                                 children: r.A.Messages.STOREFRONT_MORE_BENEFITS.format({
-                                    count: _.length - f
+                                    count: _.length - C
                                 })
                             })]
                         }) : _]

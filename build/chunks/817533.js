@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(311907),
-    a = n(775602),
+var a = n(311907),
+    l = n(775602),
     r = n(324483);
 
 function s(e) {
@@ -13,7 +13,7 @@ function s(e) {
         guildId: t,
         user: n,
         className: s
-    } = e, o = (0, l.bG)([a.A], () => !a.A.useReducedMotion), c = n.getAvatarURL(t, 56, o), d = (0, i.jsx)("foreignObject", {
+    } = e, o = (0, a.bG)([l.A], () => !l.A.useReducedMotion), c = n.getAvatarURL(t, 56, o), d = (0, i.jsx)("foreignObject", {
         x: "30",
         y: "68",
         width: "56",

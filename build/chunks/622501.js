@@ -73,14 +73,14 @@ function T(e) {
         priceOptions: T
     } = e, {
         analyticsLocations: h,
-        sourceAnalyticsLocations: N
-    } = (0, p.Ay)(u.A.GUILD_BOOSTING_PREMIUM_UPSELL), C = null == n || null == n.premiumSubscriptionType, L = I.Ay.getPrice(y.gD.PREMIUM_MONTH_TIER_2, !1, !1, T), R = (0, g.$g)(L.amount, L.currency), j = (0, _.V)(), D = j?.trial_id, k = j?.subscription_trial?.sku_id === y.pe.TIER_2;
+        sourceAnalyticsLocations: C
+    } = (0, p.Ay)(u.A.GUILD_BOOSTING_PREMIUM_UPSELL), N = null == n || null == n.premiumSubscriptionType, L = I.Ay.getPrice(y.gD.PREMIUM_MONTH_TIER_2, !1, !1, T), R = (0, g.$g)(L.amount, L.currency), j = (0, _.V)(), D = j?.trial_id, k = j?.subscription_trial?.sku_id === y.pe.TIER_2;
     return i.useEffect(() => {
         A.default.track(b.HAw.PREMIUM_UPSELL_VIEWED, {
             type: y.e.GUILD_PREMIUM_UPSELL_MODAL,
-            location_stack: N
+            location_stack: C
         })
-    }, [N]), (0, l.jsxs)(l.Fragment, {
+    }, [C]), (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)(c.s_y, {
             "data-migration-pending": !0,
             onClick: t,
@@ -98,7 +98,7 @@ function T(e) {
                     monthlyPrice: R
                 })
             }), (0, l.jsx)(M, {
-                shouldUpsellFromNoneTier: C
+                shouldUpsellFromNoneTier: N
             })]
         }), (0, l.jsx)(o.jlY, {
             children: (0, l.jsxs)(c.BJc, {

@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968);
 n(64700);
-var l = n(397927),
-    a = n(597864),
+var a = n(397927),
+    l = n(597864),
     r = n(880652),
     s = n(340533);
 
@@ -38,7 +38,7 @@ function o(e) {
     };
     return null == t.Choices ? (0, i.jsx)("div", {
         className: s.kL,
-        children: (0, i.jsx)(l.Text, {
+        children: (0, i.jsx)(a.Text, {
             variant: "text-sm/medium",
             className: s.WN,
             children: "No choices available for this question"
@@ -49,7 +49,7 @@ function o(e) {
             className: s.Me,
             children: Object.entries(t.Choices).map(e => {
                 let [t, n] = e;
-                return (0, i.jsx)(a.B, {
+                return (0, i.jsx)(l.B, {
                     choiceId: t,
                     choice: n,
                     isSelected: c === t,
@@ -82,8 +82,8 @@ function c(e) {
             i = {};
         return t.forEach(e => {
             let t = e.split(":TEXT:", 2),
-                l = t[0];
-            n.push(l), t.length > 1 && (i[l] = t[1])
+                a = t[0];
+            n.push(a), t.length > 1 && (i[a] = t[1])
         }), {
             selectedChoices: n,
             textInputs: i
@@ -105,7 +105,7 @@ function c(e) {
     };
     return null == t.Choices || 0 === Object.keys(t.Choices).length ? (0, i.jsx)("div", {
         className: s.kL,
-        children: (0, i.jsx)(l.Text, {
+        children: (0, i.jsx)(a.Text, {
             variant: "text-sm/medium",
             className: s.WN,
             children: "No choices available for this question"
@@ -116,7 +116,7 @@ function c(e) {
             className: s.Me,
             children: Object.entries(t.Choices).map(e => {
                 let [t, n] = e;
-                return (0, i.jsx)(a.B, {
+                return (0, i.jsx)(l.B, {
                     choiceId: t,
                     choice: n,
                     isSelected: c.includes(t),
@@ -134,18 +134,18 @@ function d(e) {
     let {
         question: t,
         questionId: n,
-        value: l,
-        onValueChange: a
+        value: a,
+        onValueChange: l
     } = e;
     return t.Selector === r.BO.SINGLE_ANSWER ? (0, i.jsx)(o, {
         question: t,
         questionId: n,
-        value: l,
-        onValueChange: a
+        value: a,
+        onValueChange: l
     }) : (0, i.jsx)(c, {
         question: t,
         questionId: n,
-        value: l,
-        onValueChange: a
+        value: a,
+        onValueChange: l
     })
 }

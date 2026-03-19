@@ -64,18 +64,12 @@ function B(e) {
                 currentUserId: t,
                 author: n,
                 voiceStates: i
-            } = e, r = n.id === t, a = i.length > 0, l = i.some(e => e.user?.id === n.id), s = i.length - !!l;
-            return a ? r ? {
-                label: l ? O.intl.format(O.t["2RWMFV"], {
-                    othersCount: s
-                }) : O.intl.format(O.t.IWXzHV, {
-                    othersCount: s
-                })
-            } : {
-                label: l ? O.intl.format(O.t.Da7tZx, {
-                    othersCount: s
-                }) : O.intl.format(O.t["3VbQvv"], {
-                    othersCount: s
+            } = e, r = n.id === t, a = i.length > 0, l = i.length;
+            return a ? {
+                label: r ? O.intl.format(O.t["2RWMFV"], {
+                    othersCount: l
+                }) : O.intl.format(O.t.Da7tZx, {
+                    othersCount: l
                 })
             } : {
                 label: r ? O.intl.string(O.t.DVDvCD) : O.intl.string(O.t.TY77rq),

@@ -13,13 +13,14 @@ var l = i(284009),
     o = i(391048),
     c = i(636099),
     d = i(608805),
+    S = i(589078),
     p = i(163437),
-    S = i(97352),
-    I = i(67480),
-    A = i(954571),
-    _ = i(937008),
-    T = i(491057),
-    E = i(652215);
+    I = i(97352),
+    A = i(67480),
+    _ = i(954571),
+    T = i(937008),
+    E = i(491057),
+    C = i(652215);
 
 function f(t) {
     let {
@@ -28,17 +29,17 @@ function f(t) {
         analyticsObject: s,
         analyticsLocation: u,
         analyticsLocations: p,
-        analyticsSubscriptionType: S,
-        renderHeader: I,
+        analyticsSubscriptionType: I,
+        renderHeader: A,
         planGroup: f,
-        skuId: C,
+        skuId: h,
         guildId: N,
-        reviewWarningMessage: h,
+        reviewWarningMessage: P,
         applicationId: g,
         showBenefitsFirst: m,
-        onComplete: P,
-        forcesTransitionToGuild: L
-    } = t, O = (0, a.A)(), F = !1;
+        onComplete: L,
+        forcesTransitionToGuild: O
+    } = t, F = (0, a.A)(), b = !1;
     (0, r.mMO)(async () => {
         let {
             PaymentContextProvider: t
@@ -49,56 +50,58 @@ function f(t) {
             showBenefitsFirst: m
         });
         return i => (0, n.jsx)(t, {
-            loadId: O,
+            loadId: F,
             applicationId: g,
             activeSubscription: l,
             stepConfigs: o,
-            skuIDs: [C],
-            children: (0, n.jsx)(T.Qt, {
-                children: (0, n.jsx)(_.dX, {
+            skuIDs: [h],
+            unifiedCheckoutFlow: S.CL.PREMIUM_APPS_SUBSCRIPTION_CHECKOUT,
+            children: (0, n.jsx)(E.Qt, {
+                children: (0, n.jsx)(T.dX, {
                     children: (0, n.jsx)(a, {
                         ...i,
                         initialPlanId: e,
-                        skuId: C,
+                        skuId: h,
                         analyticsLocations: p,
                         analyticsObject: s,
                         analyticsLocation: u,
-                        analyticsSubscriptionType: S,
-                        renderHeader: I,
+                        analyticsSubscriptionType: I,
+                        renderHeader: A,
                         planGroup: f,
-                        reviewWarningMessage: h,
+                        reviewWarningMessage: P,
                         applicationId: g,
                         guildId: N ?? void 0,
                         onComplete: () => {
-                            F = !0, P?.()
+                            b = !0, L?.()
                         },
-                        forcesTransitionToGuild: L
+                        forcesTransitionToGuild: O
                     })
                 })
             })
         })
     }, {
         onCloseCallback: () => {
-            if (!F) {
+            if (!b) {
                 let t = (0, d.q1)({
-                    location: "ApplicationPaymentModal"
+                    location: "ApplicationPaymentModal",
+                    unifiedCheckoutFlow: S.CL.PREMIUM_APPS_SUBSCRIPTION_CHECKOUT
                 });
-                A.default.track(E.HAw.PAYMENT_FLOW_CANCELED, {
-                    load_id: O,
-                    payment_type: E.frM[E.VVm.SUBSCRIPTION],
+                _.default.track(C.HAw.PAYMENT_FLOW_CANCELED, {
+                    load_id: F,
+                    payment_type: C.frM[C.VVm.SUBSCRIPTION],
                     location: u ?? s,
                     is_gift: !1,
-                    sku_id: C,
+                    sku_id: h,
                     application_id: g,
                     location_stack: p,
                     checkout_design: t ? d.rS.UNIFIED : d.rS.LEGACY
                 }), (0, o.ET)(), (0, c.z)()
             }
         },
-        onCloseRequest: E.tEg
+        onCloseRequest: C.tEg
     })
 }
-let C = async (t, e) => {
+let h = async (t, e) => {
     let i = (await (0, u.LM)(t)).filter(t => null == t.ends_at || new Date(t.ends_at) > new Date).find(t => t.sku_id === e);
     s()(null == i, "User already has an active subscription to this SKU")
 };
@@ -110,15 +113,15 @@ async function N(t) {
         analyticsLocationObject: l,
         analyticsLocations: a,
         renderHeader: r
-    } = t, u = I.A.get(i), o = S.A.getForSKU(i);
+    } = t, u = A.A.get(i), o = I.A.getForSKU(i);
     s()(null != u, "Failed to find SKU");
     let c = (0, p.bg)(u.flags);
-    s()(c, "Guild application subscriptions unsupported!"), await C(e, i), f({
+    s()(c, "Guild application subscriptions unsupported!"), await h(e, i), f({
         initialPlanId: n ?? o[0]?.id,
         activeSubscription: null,
         analyticsLocations: a,
         analyticsLocationObject: l,
-        analyticsSubscriptionType: E.rzx.APPLICATION,
+        analyticsSubscriptionType: C.rzx.APPLICATION,
         renderHeader: r,
         planGroup: [],
         skuId: i,

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(638075),
-    a = n(763754),
+var a = n(638075),
+    l = n(763754),
     r = n(888675),
     s = n(985018);
 
@@ -14,7 +14,7 @@ function o(e) {
         message: t,
         usernameHook: o,
         compact: c
-    } = e, d = (0, a.Ay)(t), u = o(d), _ = l.A.getSystemMessageUserJoin(t.id), m = s.intl.format(_, {
+    } = e, d = (0, l.Ay)(t), u = o(d), _ = a.A.getSystemMessageUserJoin(t.id), m = s.intl.format(_, {
         username: d.nick,
         usernameHook: u
     });

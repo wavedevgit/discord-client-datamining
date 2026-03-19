@@ -20,9 +20,9 @@ var r = n(627968),
     x = n(189857),
     _ = n(674085),
     y = n(890690),
-    b = n(652099);
+    v = n(652099);
 
-function v(e) {
+function b(e) {
     let {
         category: t,
         onClick: n,
@@ -37,8 +37,8 @@ function v(e) {
         id: u,
         children: e => (0, r.jsxs)(m.DUT, {
             onClick: n,
-            className: s()(b.AS, {
-                [b.vu]: a
+            className: s()(v.AS, {
+                [v.vu]: a
             }),
             ...e,
             children: [h, null != i && !a && (0, r.jsx)(_.A, {
@@ -115,7 +115,7 @@ function A(e) {
             }
         }(o);
     return (0, y.u)(t), (0, r.jsxs)("div", {
-        className: b.o8,
+        className: v.o8,
         role: "list",
         style: {
             "--custom-nav-count": t.length,
@@ -123,21 +123,21 @@ function A(e) {
             "--custom-nav-width": "2px"
         },
         children: [(0, r.jsx)("div", {
-            className: b.u4,
+            className: v.u4,
             "aria-hidden": "true",
             ref: _,
             children: (0, r.jsx)(c.animated.div, {
-                className: b.FF,
+                className: v.FF,
                 style: j,
                 ref: d
             })
         }), (0, r.jsx)("div", {
-            className: b.gu,
+            className: v.gu,
             "aria-hidden": "true",
             ref: A
         }), t.map(e => {
             let t = (0, x.H)(e.key, n, i);
-            return (0, r.jsx)(v, {
+            return (0, r.jsx)(b, {
                 onClick: () => {
                     var t;
                     return t = e.key, void g.A.navigate(t, {

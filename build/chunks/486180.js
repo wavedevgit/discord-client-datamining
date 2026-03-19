@@ -29,22 +29,22 @@ function A(e) {
         isAdmin: n
     } = e, {
         state: A,
-        shouldFetchCatalog: p
+        shouldFetchCatalog: C
     } = (0, l.cf)([u.A], () => ({
         state: u.A.getStateForGuild(t),
         shouldFetchCatalog: u.A.shouldFetchCatalogForGuild(t)
     }));
     s.useEffect(() => {
-        p && (0, o.z9)(t)
-    }, [t, p]);
+        C && (0, o.z9)(t)
+    }, [t, C]);
     let {
-        catalog: C,
-        instances: b
+        catalog: p,
+        instances: I
     } = s.useMemo(() => ({
         catalog: Object.values(A?.catalog ?? {}),
         instances: Object.values(A?.instances ?? {})
-    }), [A?.catalog, A?.instances]), I = b.length >= g.ZI;
-    return 0 === C.length ? (0, a.jsx)("div", {
+    }), [A?.catalog, A?.instances]), N = I.length >= g.ZI;
+    return 0 === p.length ? (0, a.jsx)("div", {
         className: j.kL,
         children: (0, a.jsx)(d.y$y, {
             type: d.tVU.SPINNING_CIRCLE,
@@ -56,14 +56,14 @@ function A(e) {
             className: j.R_,
             variant: "heading-md/semibold",
             children: v.intl.string(n ? f.default["3vWDMz"] : f.default.Uvf9GK)
-        }), n && I && (0, a.jsx)("div", {
+        }), n && N && (0, a.jsx)("div", {
             className: j.Bq,
             children: (0, a.jsx)(m.k, {})
         }), (0, a.jsx)(i.IpV, {
             className: j.nd,
             children: (0, a.jsx)("div", {
                 className: j.Y_,
-                children: C.map((e, s) => n ? (0, a.jsx)(r.m, {
+                children: p.map((e, s) => n ? (0, a.jsx)(r.m, {
                     asContainer: !0,
                     text: e.disabled ? v.intl.formatToPlainString(f.default.uVpJYf, {
                         gameName: e.name
@@ -80,7 +80,7 @@ function A(e) {
                         }),
                         imageClassName: j.Sl,
                         titleClassName: j.DD,
-                        variant: I || e.disabled ? _.e.DISABLED : _.e.CLICKABLE,
+                        variant: N || e.disabled ? _.e.DISABLED : _.e.CLICKABLE,
                         location: c.A.GAME_SERVER_PAGE_SIDEBAR
                     })
                 }, `sidebar-game-${s}-${e.id}`) : (0, a.jsx)(_.A, {

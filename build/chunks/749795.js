@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(503698),
-    a = n.n(l),
+var a = n(503698),
+    l = n.n(a),
     r = n(397927),
     s = n(709066),
     o = n(763754),
@@ -20,19 +20,19 @@ function E(e) {
     let {
         message: t,
         compact: n,
-        usernameHook: l
-    } = e, E = (0, o.Ay)(t), I = l(E), {
+        usernameHook: a
+    } = e, E = (0, o.Ay)(t), I = a(E), {
         avatarSrc: T,
         eventHandlers: {
-            onMouseEnter: N,
-            onMouseLeave: f
+            onMouseEnter: f,
+            onMouseLeave: N
         }
     } = (0, d.a)(!0);
     return (0, i.jsx)("div", {
-        onMouseEnter: N,
-        onMouseLeave: f,
+        onMouseEnter: f,
+        onMouseLeave: N,
         children: (0, i.jsx)(u.A, {
-            className: a()(A.rs, {
+            className: l()(A.rs, {
                 [A.oE]: n
             }),
             iconNode: n ? null : (0, i.jsx)(d.l, {
@@ -41,13 +41,13 @@ function E(e) {
             iconContainerClassName: A.zc,
             compact: n,
             children: (0, i.jsxs)("div", {
-                className: a()(A.Qs, {
+                className: l()(A.Qs, {
                     [A.oE]: n
                 }),
                 children: [(0, i.jsx)(c.ix, {
                     message: t,
                     messageClassname: A.he,
-                    className: a()(A.QV, A.he, {
+                    className: l()(A.QV, A.he, {
                         [A.oE]: n
                     }),
                     username: (0, i.jsxs)("div", {
@@ -66,7 +66,7 @@ function E(e) {
                     compact: n,
                     showTimestamp: !0
                 }), (0, i.jsx)("div", {
-                    className: a()(A.__invalid_messageContent, {
+                    className: l()(A.__invalid_messageContent, {
                         [A.oE]: n
                     }),
                     children: m.intl.format(m.t.qntXNQ, {

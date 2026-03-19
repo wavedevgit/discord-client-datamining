@@ -3,13 +3,13 @@ n.d(t, {
     GQ: () => A,
     NF: () => T,
     QG: () => I,
-    Tp: () => f,
+    Tp: () => N,
     ZR: () => E,
-    ne: () => N
+    ne: () => f
 });
 var i = n(311907),
-    l = n(554146),
-    a = n(826673),
+    a = n(554146),
+    l = n(826673),
     r = n(367727),
     s = n(927813),
     o = n(661191),
@@ -29,9 +29,9 @@ function A(e) {
         numMinutes: Math.floor(60 * t)
     })
 }
-let E = () => (0, a.k8)(l.M.REFERRAL_PROGRAM_NITRO_TAB_BADGE),
+let E = () => (0, l.k8)(a.M.REFERRAL_PROGRAM_NITRO_TAB_BADGE),
     I = () => {
-        (0, a.Dr)(l.M.REFERRAL_PROGRAM_NITRO_TAB_BADGE)
+        (0, l.Dr)(a.M.REFERRAL_PROGRAM_NITRO_TAB_BADGE)
     },
     T = e => {
         let {
@@ -40,20 +40,20 @@ let E = () => (0, a.k8)(l.M.REFERRAL_PROGRAM_NITRO_TAB_BADGE),
         if (null == t) return !1;
         let n = void 0 !== t.referrer_id,
             i = void 0 === t.redeemed_at,
-            l = new Date(o.default.extractTimestamp(t.id)),
-            a = new Date;
-        return n && i && a >= l
+            a = new Date(o.default.extractTimestamp(t.id)),
+            l = new Date;
+        return n && i && l >= a
     },
-    N = e => {
-        null != e ? (0, r.qr)(l.M.REFERRAL_PROGRAM_POPOVER_V2, e, {
+    f = e => {
+        null != e ? (0, r.qr)(a.M.REFERRAL_PROGRAM_POPOVER_V2, e, {
             dismissAction: _.i.INDIRECT_ACTION
-        }) : (0, a.Dr)(l.M.REFERRAL_PROGRAM_POPOVER)
+        }) : (0, l.Dr)(a.M.REFERRAL_PROGRAM_POPOVER)
     },
-    f = () => {
+    N = () => {
         let e, t = (0, u.m)(!1),
             n = (0, i.bG)([c.A], () => c.A.getReferralsRemaining()),
             r = (0, i.bG)([c.A], () => c.A.getReminderStateId());
         return e = (0, d.A)({
             location: "ReferralProgramUtils"
-        }) ? null != r && !(0, a.u$)(l.M.REFERRAL_PROGRAM_POPOVER_V2, r).isDismissed : !(0, a.k8)(l.M.REFERRAL_PROGRAM_POPOVER), t && e && null != n && n > 0
+        }) ? null != r && !(0, l.u$)(a.M.REFERRAL_PROGRAM_POPOVER_V2, r).isDismissed : !(0, l.k8)(a.M.REFERRAL_PROGRAM_POPOVER), t && e && null != n && n > 0
     }

@@ -19,8 +19,8 @@ var l = i(627968),
     j = i(51758),
     A = i(857071),
     f = i(728950),
-    p = i(97352),
-    _ = i(975571),
+    _ = i(97352),
+    p = i(975571),
     N = i(500345),
     b = i(599941),
     I = i(624456),
@@ -28,8 +28,8 @@ var l = i(627968),
     C = i(396695),
     S = i(916727),
     E = i(354033),
-    y = i(2242),
-    L = i(652215),
+    L = i(2242),
+    y = i(652215),
     k = i(985018);
 let R = (e, t, i, a) => {
     let r, R = (0, d.bG)([A.A], () => A.A.isLurking(t)),
@@ -40,7 +40,7 @@ let R = (e, t, i, a) => {
         M = U?.id,
         D = e?.published === !0,
         F = U?.sku_id,
-        w = (0, d.bG)([p.A], () => null != M ? p.A.get(M) : null),
+        w = (0, d.bG)([_.A], () => null != M ? _.A.get(M) : null),
         {
             activeSubscription: H,
             activeSubscriptionPlanFromStore: B
@@ -65,7 +65,7 @@ let R = (e, t, i, a) => {
     O || R && !G ? r = k.intl.string(k.t.pQK5ho) : z === M ? r = k.intl.formatToPlainString(k.t.UlBRTl, {
         changeDate: null != H ? c()(H.currentPeriodEnd).format("MMM DD, YYYY") : ""
     }) : K ? r = k.intl.string(k.t.ePFYOS) : X ? r = k.intl.string(k.t["0lPoT2"]) : Z && (r = k.intl.string(k.t.cEMaCt));
-    let ee = (0, m.A)(y.Yl);
+    let ee = (0, m.A)(L.Yl);
     n.useEffect(() => {
         D && null != F && o.h.wait(() => {
             (0, u.ur)(F)
@@ -78,16 +78,16 @@ let R = (e, t, i, a) => {
                 l?.is_eligible === !0 ? i = $?.active_trial?.id : n = k.intl.string(k.t.vuvsK5)
             }(0, f.A)({
                 activeSubscription: H,
-                analyticsSubscriptionType: L.rzx.GUILD,
+                analyticsSubscriptionType: y.rzx.GUILD,
                 trialId: i,
                 trialFooterMessageOverride: $?.active_trial != null ? k.intl.format(k.t.zyGyNk, {
                     buttonText: k.intl.string(k.t.BEeXib),
                     interval: (0, N.Gg)(U),
                     days: 1,
-                    contactLink: L.X7G.CONTACT,
-                    cancelSubscriptionArticle: _.A.getArticleURL(L.MVz.ROLE_SUBSCRIPTION_CANCEL),
-                    helpdeskArticle: _.A.getArticleURL(L.MVz.ROLE_SUBSCRIPTION_TRIAL),
-                    paidServiceTermsArticle: _.A.getArticleURL(L.MVz.PAID_TERMS),
+                    contactLink: y.X7G.CONTACT,
+                    cancelSubscriptionArticle: p.A.getArticleURL(y.MVz.ROLE_SUBSCRIPTION_CANCEL),
+                    helpdeskArticle: p.A.getArticleURL(y.MVz.ROLE_SUBSCRIPTION_TRIAL),
+                    paidServiceTermsArticle: p.A.getArticleURL(y.MVz.PAID_TERMS),
                     tierName: U.name
                 }) : void 0,
                 analyticsLocations: Q,
