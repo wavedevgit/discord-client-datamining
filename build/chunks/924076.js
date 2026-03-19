@@ -3,8 +3,8 @@ n.d(t, {
     A: () => h
 }), n(938796);
 var i = n(627968),
-    l = n(64700),
-    r = n(311907),
+    r = n(64700),
+    l = n(311907),
     a = n(241524),
     s = n(163437),
     o = n(490744),
@@ -26,7 +26,7 @@ function h(e) {
         selectedSku: b,
         selectedStoreListing: A,
         application: j
-    } = (0, u.P5)(), v = (0, a.A)(x.Y), S = (0, r.bG)([c.A], () => c.A.getGuild(h?.guild_id)), C = l.useCallback(() => t(m.pn.REVIEW), [t]);
+    } = (0, u.P5)(), v = (0, a.A)(x.Y), S = (0, l.bG)([c.A], () => c.A.getGuild(h?.guild_id)), C = r.useCallback(() => t(m.pn.REVIEW), [t]);
     if (null == b) return null;
     let _ = (0, s.bg)(b.flags);
     return (0, i.jsxs)(i.Fragment, {

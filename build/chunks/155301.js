@@ -3,8 +3,8 @@ n.d(t, {
     A: () => u
 });
 var i = n(627968),
-    l = n(64700),
-    r = n(459793),
+    r = n(64700),
+    l = n(459793),
     a = n(97352),
     s = n(927578),
     o = n(937008),
@@ -16,42 +16,39 @@ function u(e) {
         initialStep: t,
         initialPlanId: n,
         guildId: u,
-        setAnalyticsData: m,
-        handleClose: p
+        setAnalyticsData: m
     } = e, {
-        blockedPayments: f,
-        setStep: x,
-        hasFetchedSubscriptions: g,
-        hasFetchedSubscriptionPlans: h,
-        currencyLoading: b,
-        selectedSkuId: A,
-        setSelectedSkuId: j,
-        setSelectedPlanId: v,
-        priceOptions: S,
-        setSubscriptionMetadataRequest: C
+        blockedPayments: p,
+        setStep: f,
+        hasFetchedSubscriptions: x,
+        hasFetchedSubscriptionPlans: g,
+        currencyLoading: h,
+        selectedSkuId: b,
+        setSelectedSkuId: A,
+        setSelectedPlanId: j,
+        priceOptions: v,
+        setSubscriptionMetadataRequest: S
     } = (0, d.P5)(), {
-        isGift: _
-    } = (0, o.Pv)(), [y, N] = l.useState(!g || !h || b);
-    return (l.useEffect(() => {
-        N(!g || !h || b)
-    }, [b, h, g]), l.useEffect(() => {
-        null != u && C({
+        isGift: C
+    } = (0, o.Pv)(), [_, y] = r.useState(!x || !g || h);
+    return (r.useEffect(() => {
+        y(!x || !g || h)
+    }, [h, g, x]), r.useEffect(() => {
+        null != u && S({
             guild_id: u
         })
-    }, [u, C]), l.useEffect(() => {
-        v(n);
+    }, [u, S]), r.useEffect(() => {
+        j(n);
         let e = null != n ? a.A.get(n) : null;
-        y || f || (m(t => {
-            let n = null != e ? (0, s.y8)(e.id, !1, _, S) : void 0;
+        _ || p || (m(t => {
+            let n = null != e ? (0, s.y8)(e.id, !1, C, v) : void 0;
             return {
                 ...t,
                 subscription_plan_id: e?.id,
                 price: n?.amount,
                 regular_price: e?.price,
-                currency: S.currency
+                currency: v.currency
             }
-        }), null != e && (j(e?.skuId), x(t)))
-    }, [f, n, _, y, S, A, m, v, j, x, t]), y) ? (0, i.jsx)(c.A, {}) : f ? (0, i.jsx)(r.oO, {
-        onClose: p
-    }) : null
+        }), null != e && (A(e?.skuId), f(t)))
+    }, [p, n, C, _, v, b, m, j, A, f, t]), _) ? (0, i.jsx)(c.A, {}) : p ? (0, i.jsx)(l.oO, {}) : null
 }

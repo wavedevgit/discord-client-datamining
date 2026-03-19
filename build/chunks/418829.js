@@ -4,8 +4,8 @@ n.d(t, {
     A: () => g
 });
 var r = n(627968),
-    a = n(64700),
-    i = n(964486),
+    i = n(64700),
+    a = n(964486),
     s = n(250703),
     l = n(877260),
     o = n(823092),
@@ -25,20 +25,20 @@ function p(e) {
         sidebarFooter: x,
         searchBar: _,
         onViewChange: y,
-        emptyState: b,
-        searchQuery: v,
+        emptyState: v,
+        searchQuery: b,
         clearSearchQuery: A
     } = e, j = d.A.useField("currentPanelKey"), {
         node: N,
         visibleDirectory: S,
         accessibleDirectory: C
-    } = (0, u.Ay)(t, v ?? ""), k = null != n && S.entry(n)?.parentPanelKey != null ? n : p, E = a.useMemo(() => {
+    } = (0, u.Ay)(t, b ?? ""), k = null != n && S.entry(n)?.parentPanelKey != null ? n : p, E = i.useMemo(() => {
         let e = C.entry(j ?? k)?.parentPanelKey;
         if (null != e) return C.getPanelOrThrow(e)
     }, [j, C, k]), {
         navigateWithValidation: w
     } = (0, o.L_)();
-    a.useEffect(() => {
+    i.useEffect(() => {
         m.A.init({
             accessibleDirectory: C,
             onViewChange: y,
@@ -47,19 +47,19 @@ function p(e) {
             }
         })
     }, [C, w, y, A, S]);
-    let [I, T] = a.useState(!0);
-    (0, i.Ay)(() => (m.A.navigate(k, {
+    let [I, T] = i.useState(!0);
+    (0, a.Ay)(() => (m.A.navigate(k, {
         animatePanelScroll: !1,
         animateSidebarScroll: !1,
         showNavigationMobile: null == n
     }), T(!1), () => {
         m.A.reset(), f.A.reset(), d.A.resetState()
     }));
-    let R = a.useMemo(() => ({
+    let R = i.useMemo(() => ({
             visibleDirectory: S,
             accessibleDirectory: C
         }), [S, C]),
-        D = a.useMemo(() => () => w(g), [w, g]),
+        D = i.useMemo(() => () => w(g), [w, g]),
         O = null != j ? S.get(j) : void 0;
     return (0, r.jsx)(c.x.Provider, {
         value: R,
@@ -69,7 +69,7 @@ function p(e) {
                 root: N,
                 onClose: D,
                 footer: x,
-                emptyState: b,
+                emptyState: v,
                 searchBar: _
             }), (0, r.jsx)(s.A, {
                 onClose: D,

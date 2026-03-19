@@ -293,9 +293,7 @@ function eu(e) {
         },
         shouldUseManaModal: !0
     });
-    if (eb) n = (0, l.jsx)(g.oO, {
-        onClose: na
-    });
+    if (eb) n = (0, l.jsx)(g.oO, {});
     else if (eM && eN && eQ && null != n_ && "" !== n_)
         if (eg?.isPausedOrPausePending && !eg.isPausedAllowsUpdatesButNotResume) n = (0, l.jsx)(c.cwr, {
             children: (0, l.jsx)("p", {
