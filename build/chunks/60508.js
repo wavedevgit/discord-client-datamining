@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(652495),
     E = n(960005),
     S = n(992990),
-    C = n(652215),
-    f = n(985018),
+    f = n(652215),
+    C = n(985018),
     b = n(865047),
     N = n(288894);
 let I = e => {
@@ -48,9 +48,9 @@ let I = e => {
             fractionalState: U
         } = (0, m.A)(),
         k = (0, A.d)();
-    G ? (t = f.intl.string(f.t["+vt7w9"]), n = f.intl.string(f.t.LgHbnL)) : (t = f.intl.string(f.t.LgHbnL), n = f.intl.string(f.t["+vt7w9"]));
+    G ? (t = C.intl.string(C.t["+vt7w9"]), n = C.intl.string(C.t.LgHbnL)) : (t = C.intl.string(C.t.LgHbnL), n = C.intl.string(C.t["+vt7w9"]));
     let V = () => {
-        I(!1), g.default.track(C.HAw.NITRO_HOME_NAVIGATION, {
+        I(!1), g.default.track(f.HAw.NITRO_HOME_NAVIGATION, {
             current_component: h.A2.SEE_ALL,
             next_component: v,
             interaction_component: "Back Button"
@@ -115,7 +115,7 @@ let I = e => {
                         variant: "heading-xxl/extrabold",
                         color: "text-strong",
                         className: b.R_,
-                        children: f.intl.string(f.t.LTaxu9)
+                        children: C.intl.string(C.t.LTaxu9)
                     }), (0, i.jsx)(E.A, {
                         className: b.Nm,
                         cards: (0, p.vx)({
@@ -133,7 +133,7 @@ let I = e => {
                 }), (0, i.jsx)(o.L, {
                     innerRef: R,
                     onChange: e => {
-                        e && !D && (g.default.track(C.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                        e && !D && (g.default.track(f.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                             location_stack: L
                         }), P(!0))
                     },
@@ -146,7 +146,7 @@ let I = e => {
                     className: b.Kw,
                     width: 112,
                     height: 85,
-                    alt: f.intl.string(f.t.X4IxWL)
+                    alt: C.intl.string(C.t.X4IxWL)
                 })]
             })
         })

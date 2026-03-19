@@ -32,7 +32,7 @@ function A(e) {
     }), {
         pendingAvatarDecoration: E,
         errors: S
-    } = (0, u.CP)(n?.id), C = h ? r.wLn : a.$n;
+    } = (0, u.CP)(n?.id), f = h ? r.wLn : a.$n;
     return (0, i.jsx)(_.A, {
         className: s,
         forcedDivider: x,
@@ -41,7 +41,7 @@ function A(e) {
         errors: S,
         children: (0, i.jsxs)("div", {
             className: g.NC,
-            children: [(0, i.jsx)(C, {
+            children: [(0, i.jsx)(f, {
                 size: a.$n.Sizes.SMALL,
                 onClick: () => {
                     (0, c.L)({

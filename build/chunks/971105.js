@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(933392),
     E = n(97352),
     S = n(166403),
-    C = n(927578),
-    f = n(61509),
+    f = n(927578),
+    C = n(61509),
     b = n(652215),
     N = n(788868),
     I = n(818348),
@@ -68,7 +68,7 @@ function R(e) {
                         className: j.Bd,
                         ref: o,
                         overflow: "auto",
-                        children: h.map((e, t) => (0, i.jsx)(f.A, {
+                        children: h.map((e, t) => (0, i.jsx)(C.A, {
                             className: a()(j.Nj, j.Bd),
                             payment: e,
                             locale: n,
@@ -105,7 +105,7 @@ class O extends s.PureComponent {
                 className: j.Q2,
                 children: v.intl.format(v.t.eG0uZB, {
                     paymentGatewayName: I.qm[e.paymentGateway],
-                    billingHistoryLink: (0, C.tW)(e.paymentGateway, "BILLING_HISTORY")
+                    billingHistoryLink: (0, f.tW)(e.paymentGateway, "BILLING_HISTORY")
                 })
             })]
         })
@@ -150,7 +150,7 @@ class O extends s.PureComponent {
 function L(e) {
     let t = e.skuId,
         n = e.subscription?.items[0].planId;
-    return !(null == t || null == n || Object.values(N.pe).includes(t) || (0, C.ys)(n))
+    return !(null == t || null == n || Object.values(N.pe).includes(t) || (0, f.ys)(n))
 }
 
 function D(e) {

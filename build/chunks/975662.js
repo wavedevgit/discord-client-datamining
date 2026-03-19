@@ -21,8 +21,8 @@ var i, s = n(627968),
     T = n(358776),
     E = n(840065),
     S = n(430452),
-    C = n(287809),
-    f = n(166403),
+    f = n(287809),
+    C = n(166403),
     b = n(255438),
     N = n(975571),
     I = n(927578),
@@ -74,9 +74,9 @@ let ex = () => {
         analyticsLocations: e
     } = (0, c.Ay)(d.A.PREMIUM_MARKETING_PERK_CARD), t = (0, o.Ay)(), n = (0, b.Xq)(P.f3 / 1024, {
         useKibibytes: !0
-    }), i = (0, a.bG)([f.A], () => f.A.getPremiumTypeSubscription()), eA = null != i ? I.Ay.getPremiumPlanItem(i) : null, ex = (null != eA ? I.Ay.getSkuIdForPlan(eA.planId) : null) === P.pe.TIER_2, eh = C.default.getCurrentUser(), ep = (0, I.TW)(eh, P.PremiumTypes.TIER_2), eT = (0, I.TW)(eh, P.PremiumTypes.TIER_0), eE = (0, _.A)(S.Ay), {
+    }), i = (0, a.bG)([C.A], () => C.A.getPremiumTypeSubscription()), eA = null != i ? I.Ay.getPremiumPlanItem(i) : null, ex = (null != eA ? I.Ay.getSkuIdForPlan(eA.planId) : null) === P.pe.TIER_2, eh = f.default.getCurrentUser(), ep = (0, I.TW)(eh, P.PremiumTypes.TIER_2), eT = (0, I.TW)(eh, P.PremiumTypes.TIER_0), eE = (0, _.A)(S.Ay), {
         isFractionalPremiumActive: eS
-    } = (0, u.A)(), eC = null != i && i.hasPremiumAtLeast(P.PremiumTypes.TIER_2), ef = (0, g.JZ)(r.M.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), eb = (0, x.A)({
+    } = (0, u.A)(), ef = null != i && i.hasPremiumAtLeast(P.PremiumTypes.TIER_2), eC = (0, g.JZ)(r.M.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), eb = (0, x.A)({
         scrollPosition: U._F.TRY_IT_OUT,
         analyticsLocations: e
     }), eN = () => {
@@ -365,11 +365,11 @@ let ex = () => {
             descriptionCta: ep ? k.intl.string(k.t.jVcuVY) : k.intl.string(k.t.JST6jl),
             isPremiumGetCta: !ep,
             onCtaClick: ep ? () => {
-                ef || (0, g.Dr)(r.M.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE, {
+                eC || (0, g.Dr)(r.M.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE, {
                     dismissAction: G.i.TAKE_ACTION
                 }), eb()
             } : void 0,
-            pillText: ef || !ep ? void 0 : k.intl.string(k.t.y2b7CA).toLocaleUpperCase(),
+            pillText: eC || !ep ? void 0 : k.intl.string(k.t.y2b7CA).toLocaleUpperCase(),
             perkImage: eg.A
         },
         customThemes: {
@@ -412,7 +412,7 @@ let ex = () => {
         },
         premiumGroup: (0, v.u)()
     };
-    return ep && eC && (eL.tenureBadge = {
+    return ep && ef && (eL.tenureBadge = {
         name: "tenureBadge",
         title: k.intl.string(k.t.rnsqpa),
         pillText: k.intl.string(k.t["jyYgZ+"]).toLocaleUpperCase(),

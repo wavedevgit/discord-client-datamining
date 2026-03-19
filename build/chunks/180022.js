@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(784356),
     E = n(452910),
     S = n(652215),
-    C = n(49999),
-    f = n(985018),
+    f = n(49999),
+    C = n(985018),
     b = n(538662);
 let N = s.memo(e => {
     let {
@@ -57,7 +57,7 @@ let N = s.memo(e => {
     return (s.useEffect(() => {
         v && j && (O(!0), g.default.track(S.HAw.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
             card_type: t
-        }), null != l && M(C.i.TAKE_ACTION))
+        }), null != l && M(f.i.TAKE_ACTION))
     }, [v, j, l, t, M]), (0, _.A)({
         type: o.ImpressionTypes.VIEW,
         name: o.ImpressionNames.PERK_DISCOVERABILITY_CARD,
@@ -125,7 +125,7 @@ let N = s.memo(e => {
                 onTransitionEnd: e => {
                     j && "transform" === e.propertyName && e.target.classList.contains(b.Ci) && (O(!0), g.default.track(S.HAw.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
                         card_type: t
-                    }), null != l && M(C.i.TAKE_ACTION))
+                    }), null != l && M(f.i.TAKE_ACTION))
                 },
                 children: [(0, i.jsx)("div", {
                     className: b.UF,
@@ -149,7 +149,7 @@ let N = s.memo(e => {
                     className: b.Z7,
                     children: (0, i.jsx)(c.Button, {
                         variant: "primary",
-                        text: f.intl.string(f.t.dcztdU),
+                        text: C.intl.string(C.t.dcztdU),
                         onClick: () => y(!0)
                     })
                 })]
@@ -176,8 +176,8 @@ let I = s.forwardRef((e, t) => {
         perkComponent: x,
         cardVariant: h,
         cardType: S,
-        onClick: C,
-        backgroundImage: f,
+        onClick: f,
+        backgroundImage: C,
         pillText: N,
         perkImage: I,
         imageOverlayText: v,
@@ -185,17 +185,17 @@ let I = s.forwardRef((e, t) => {
     } = e, y = S === p.cJ.CARD_CAROUSEL_FIRST_ROW || S === p.cJ.CARD_CAROUSEL_SECOND_ROW || S === p.cJ.CARD_CAROUSEL_THIRD_ROW, R = null != r || null != o, O = (0, A.Q)(h);
     return (0, i.jsxs)(c.DUT, {
         className: a()(b.Nr, g, O.cardContainer?.className, {
-            [b.vk]: null != C,
+            [b.vk]: null != f,
             [b.JP]: y,
             [b.NT]: j
         }),
         onMouseEnter: m,
         style: {
-            backgroundImage: null != f ? `url(${f})` : void 0,
-            backgroundPosition: null != f ? "bottom right" : void 0,
-            backgroundRepeat: null != f ? "no-repeat" : void 0
+            backgroundImage: null != C ? `url(${C})` : void 0,
+            backgroundPosition: null != C ? "bottom right" : void 0,
+            backgroundRepeat: null != C ? "no-repeat" : void 0
         },
-        onClick: C,
+        onClick: f,
         children: [null != N && (0, i.jsx)(c.Text, {
             variant: "text-xs/semibold",
             className: b.Io,

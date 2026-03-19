@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(772538),
     E = n(61610),
     S = n(751461),
-    C = n(638324),
-    f = n(998337),
+    f = n(638324),
+    C = n(998337),
     b = n(531525),
     N = n(190363),
     I = n(652215),
@@ -38,7 +38,7 @@ let j = () => (0, i.jsxs)(A.A, {
         children: [(0, i.jsx)(l.x, {
             setting: b.Ho.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
             children: (0, i.jsx)(g.A, {})
-        }), (0, i.jsx)(S.A, {}), (0, i.jsx)(C.A, {}), (0, i.jsx)(E.A, {}), (0, i.jsx)(T.A, {})]
+        }), (0, i.jsx)(S.A, {}), (0, i.jsx)(f.A, {}), (0, i.jsx)(E.A, {}), (0, i.jsx)(T.A, {})]
     }),
     R = () => (0, i.jsxs)(A.A, {
         title: v.intl.string(v.t["1Qn8iV"]),
@@ -62,8 +62,8 @@ function L() {
         }];
     return (0, i.jsx)(r.R, {
         header: v.intl.string(v.t["+o1pDZ"]),
-        notice: (0, i.jsx)(f.A, {
-            page: f.R.CONTENT_AND_SOCIAL
+        notice: (0, i.jsx)(C.A, {
+            page: C.R.CONTENT_AND_SOCIAL
         }),
         children: (0, i.jsx)(o.A, {
             parentSetting: b.Ho.CONTENT_SOCIAL,

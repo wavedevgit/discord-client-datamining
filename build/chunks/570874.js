@@ -21,5 +21,5 @@ let A = (0, i.zZ)(s.X.CONTENT_AND_SOCIAL_PERMISSIONS_CATEGORY, {
             t = (0, r.Xj)();
         if ((0, a.Tx)() === l.YG) return e ?? t
     },
-    buildLayout: () => [d.a, _.V, m.w, u.H, c.U]
+    buildLayout: () => [d.a, _.V, m.w, u.Ho, c.UK]
 })

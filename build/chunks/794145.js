@@ -1,6 +1,7 @@
 /** chunk id: 794145 params = (module,exports,require) **/
 n.d(t, {
-    V: () => S
+    K: () => E,
+    V: () => f
 });
 var i = n(421380),
     s = n(171316),
@@ -19,14 +20,15 @@ var i = n(421380),
     h = n(355097),
     p = n(652215),
     T = n(985018);
-let E = (e, t) => {
+let E = () => (0, m.e)() ? T.intl.string(T.t.PMsfcH) : T.intl.string(T.t.RAQUSN),
+    S = (e, t) => {
         r.default.track(p.HAw.GUILD_DEFAULT_DMS_UPDATED, {
             default_guilds_restricted: e,
             applied_to_existing_guilds: t
         })
     },
-    S = (0, l.zD)(u.X.CONTENT_AND_SOCIAL_PERMISSIONS_DMS_SETTING, {
-        useTitle: () => (0, m.e)() ? T.intl.string(T.t.PMsfcH) : T.intl.string(T.t.RAQUSN),
+    f = (0, l.zD)(u.X.CONTENT_AND_SOCIAL_PERMISSIONS_DMS_SETTING, {
+        useTitle: E,
         useSubtitle: () => {
             let e = (0, g.Tx)(),
                 t = (0, g.q9)(),
@@ -54,10 +56,10 @@ let E = (e, t) => {
                     cancelText: T.intl.string(T.t.p89ACt),
                     confirmButtonColor: i.$n.Colors.BRAND,
                     onConfirm: () => {
-                        c.n6.updateSetting(n), E(n, !1)
+                        c.n6.updateSetting(n), S(n, !1)
                     },
                     onCancel: () => {
-                        c.n6.updateSetting(n), c.$s.updateSetting(n ? a.A.getGuildIds() : []), E(n, !0)
+                        c.n6.updateSetting(n), c.$s.updateSetting(n ? a.A.getGuildIds() : []), S(n, !0)
                     }
                 })
             } else {

@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(927578),
     E = n(40185),
     S = n(526292),
-    C = n(234419),
-    f = n(690737),
+    f = n(234419),
+    C = n(690737),
     b = n(320908),
     N = n(412260),
     I = n(396375),
@@ -61,7 +61,7 @@ let V = e => {
             Z = null != K ? (0, T.EL)(K) : null,
             q = null != Z ? T.Ay.getSkuIdForPlan(Z.planId) : null,
             J = null !== q && q !== D.pe.TIER_2 ? D.pe.TIER_2 : null,
-            Q = (0, C.V)(),
+            Q = (0, f.V)(),
             $ = Q?.subscription_trial?.sku_id,
             ee = (0, S.ar)(),
             et = (0, E.cg)(),
@@ -158,7 +158,7 @@ let V = e => {
                 })
             }), (0, i.jsx)("div", {
                 className: U.hz
-            }), (0, i.jsx)(f.A, {
+            }), (0, i.jsx)(C.A, {
                 isVisible: !w && !H && X,
                 subscriptionTier: J,
                 isApplicationHome: !1,

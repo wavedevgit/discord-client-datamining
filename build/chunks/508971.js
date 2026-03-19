@@ -32,8 +32,8 @@ function m(e) {
         T = a ? "text-default" : "text-muted",
         E = r()(n),
         S = null != x && a,
-        C = S ? o.DUT : "div";
-    return (0, i.jsxs)(C, {
+        f = S ? o.DUT : "div";
+    return (0, i.jsxs)(f, {
         className: l()(_.kL, S && _.b),
         onClick: () => {
             S && x()

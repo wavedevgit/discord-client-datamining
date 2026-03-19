@@ -40,15 +40,15 @@ function h() {
             value: s.TO.BLOCK,
             label: A.intl.string(A.t["D/157Y"])
         }],
-        C = [{
+        f = [{
             value: s.TO.BLUR,
             label: A.intl.string(A.t.S49Uad)
         }],
-        f = {
+        C = {
             value: s.TO.SHOW,
             label: A.intl.string(A.t["5k5OFp"])
         };
-    e && (S.unshift(f), C.unshift(f));
+    e && (S.unshift(C), f.unshift(C));
     let b = {
         isDisabled: n,
         tooltipText: t ? A.intl.string(x.default["6Af/cw"]) : void 0
@@ -78,7 +78,7 @@ function h() {
                 goreContentGuilds: e
             }),
             isDisabled: !e || n,
-            options: C,
+            options: f,
             tooltipText: t ? A.intl.string(x.default["6Af/cw"]) : void 0
         })]
     })

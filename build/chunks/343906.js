@@ -22,8 +22,8 @@ var i = n(627968),
     T = n(438732),
     E = n(500470),
     S = n(153739),
-    C = n(834981),
-    f = n(607822),
+    f = n(834981),
+    C = n(607822),
     b = n(254847),
     N = n(436805),
     I = n(773349),
@@ -72,8 +72,8 @@ function k(e) {
         isMoreLoading: x
     } = (0, h.A)({
         onError: n
-    }), E = (0, A.kN)().get(t), [S, C] = s.useState(O.PH), f = s.useCallback(() => {
-        C(e => e + O.PH), _(t)
+    }), E = (0, A.kN)().get(t), [S, f] = s.useState(O.PH), C = s.useCallback(() => {
+        f(e => e + O.PH), _(t)
     }, [t, _]);
     o()(E, `No text for action type: ${t}`);
     let v = t === O.NV.PURCHASES && null != c ? E.sectionHeader(c) : E.sectionHeader(d),
@@ -131,7 +131,7 @@ function k(e) {
             className: a()(M.FQ, {
                 [M.r9]: x
             }),
-            onClick: f,
+            onClick: C,
             role: "button",
             "aria-disabled": x,
             children: x ? (0, i.jsx)(u.y$y, {
@@ -149,12 +149,12 @@ function k(e) {
 }
 let V = () => {
         let e = (0, T.A)(),
-            t = (0, C.vx)(),
+            t = (0, f.vx)(),
             n = (0, x.y)(P.intl.formatToPlainString(D.default["7hqFl9"], {
                 activeLinks: t.length
             }), P.intl.string(D.default["Q/D/0Q"])),
             s = (0, A.cV)(!!e),
-            l = (0, C.v4)(s);
+            l = (0, f.v4)(s);
         return e && t.length > 1 ? (0, i.jsx)(u.Text, {
             variant: "eyebrow",
             children: l
@@ -196,7 +196,7 @@ let V = () => {
     });
 w.displayName = "FamilyCenterActivityCardAccountRow";
 let B = () => {
-        let e = (0, C.GR)(),
+        let e = (0, f.GR)(),
             t = (0, d.bG)([g.A], () => g.A.getSelectedTeenId()),
             {
                 selectTeenUser: n
@@ -230,9 +230,9 @@ let B = () => {
     H = () => {
         let e = (0, E.k)(),
             t = (0, T.A)(),
-            n = (0, C.vx)(),
+            n = (0, f.vx)(),
             s = (0, A.cV)(!!t),
-            l = (0, C.v4)(s);
+            l = (0, f.v4)(s);
         return null === e ? null : t && 1 !== n.length ? (0, i.jsx)(B, {}) : (0, i.jsx)(w, {
             userId: e,
             subText: l
@@ -242,7 +242,7 @@ let B = () => {
         let e = (0, A.Mo)(),
             t = (0, p.lI)(),
             n = (0, A.jp)(),
-            s = (0, C.v4)(n);
+            s = (0, f.v4)(n);
         return (0, i.jsxs)("div", {
             className: M.kL,
             children: [(0, i.jsxs)("div", {
@@ -261,7 +261,7 @@ let B = () => {
                         className: M.O2,
                         children: e.map(e => {
                             let [t, n] = e;
-                            return (0, i.jsx)(f.A, {
+                            return (0, i.jsx)(C.A, {
                                 displayType: t,
                                 header: n.tooltipHeader()
                             }, `counter-${t}`)

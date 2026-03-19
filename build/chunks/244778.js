@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(40185),
     E = n(89366),
     S = n(422936),
-    C = n(234419),
-    f = n(863156),
+    f = n(234419),
+    C = n(863156),
     b = n(194509),
     N = n(396375),
     I = n(511484),
@@ -157,7 +157,7 @@ let U = () => {
             X = (0, r.bG)([x.default], () => x.default.getCurrentUser()),
             W = null != X && X.isPremiumWithPremiumGroup(),
             K = (0, p.YE)(X, R.PremiumTypes.TIER_2),
-            Z = (0, C.V)(),
+            Z = (0, f.V)(),
             q = Z?.subscription_trial?.sku_id,
             J = (0, E.Us)(),
             Q = (0, S.O)(),
@@ -246,7 +246,7 @@ let U = () => {
                     className: a()(L.Qw, L.__invalid_textColor),
                     variant: "heading-xxl/extrabold",
                     children: v ?? O.intl.string(O.t.FIbMh9)
-                }), W && (0, i.jsx)(f.A, {
+                }), W && (0, i.jsx)(C.A, {
                     premiumGroupRole: X.premiumGroupRole,
                     className: L.vg
                 }), (0, i.jsxs)("div", {

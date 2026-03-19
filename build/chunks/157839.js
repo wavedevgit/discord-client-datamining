@@ -51,8 +51,8 @@ let E = e => {
             variant: n,
             noBackground: l = !1,
             leftAlignHeaders: S = !1,
-            showAllPerksButton: C,
-            headerClassname: f
+            showAllPerksButton: f,
+            headerClassname: C
         } = e, b = s.useRef(null), N = n === h.cJ.WHATS_NEW, I = (0, r.bG)([c.default], () => c.default.getCurrentUser()), v = (0, A.E)();
         s.useEffect(() => {
             N && v()
@@ -87,25 +87,25 @@ let E = e => {
                 [T.Uv]: S
             }, t),
             children: [(0, i.jsx)(E, {
-                showAllPerksButton: C,
+                showAllPerksButton: f,
                 leftAlignHeaders: S,
                 title: j.title,
-                headerClassname: f
+                headerClassname: C
             }), (0, i.jsx)(o.Text, {
                 variant: "text-lg/normal",
                 color: "text-strong",
                 className: a()(T.VA, {
-                    [T.VA]: null == C || S,
-                    [T.Xx]: null != C && !S,
+                    [T.VA]: null == f || S,
+                    [T.Xx]: null != f && !S,
                     [T.Ij]: N || S,
                     [T.Ob]: G,
                     [T.dO]: S,
                     [T.br]: !S
                 }),
                 children: j.subtitle
-            }), !S && null != C && (0, i.jsx)("div", {
+            }), !S && null != f && (0, i.jsx)("div", {
                 className: T.xk,
-                children: C
+                children: f
             }), (0, i.jsx)("div", {
                 className: T.Ui,
                 children: M.map((e, t) => (0, i.jsx)(g.A, {

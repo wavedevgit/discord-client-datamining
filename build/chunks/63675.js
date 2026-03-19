@@ -29,8 +29,8 @@ function p(e) {
         guildId: T,
         className: E,
         showPremiumIcon: S = !0,
-        showResetThemeButton: C = !1,
-        forcedDivider: f
+        showResetThemeButton: f = !1,
+        forcedDivider: C
     } = e, b = (0, u.Ay)(t.id, T), {
         primaryColor: N,
         secondaryColor: I
@@ -49,7 +49,7 @@ function p(e) {
         disabled: !v && !p,
         className: l()(h.__invalid_profileThemesSection, E),
         showPremiumIcon: S,
-        forcedDivider: f,
+        forcedDivider: C,
         children: (0, i.jsxs)("div", {
             className: h.hd,
             children: [(0, i.jsx)("div", {
@@ -82,7 +82,7 @@ function p(e) {
                         children: x.intl.string(x.t["8elvy6"])
                     })
                 })
-            }), C && null != T && (0, i.jsx)("div", {
+            }), f && null != T && (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: h.WA,
                 children: (0, i.jsx)(d.Button, {

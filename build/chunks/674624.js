@@ -22,8 +22,8 @@ var i, s = n(627968),
     T = n(149757),
     E = n(920050),
     S = n(189024),
-    C = n(652215),
-    f = n(355097),
+    f = n(652215),
+    C = n(355097),
     b = n(985018),
     N = n(64514),
     I = n(121818),
@@ -55,7 +55,7 @@ function P() {
             analyticsLocations: i
         } = (0, u.Ay)(c.A.PREMIUM_MARKETING_PERK_CARD),
         L = (0, m.A)({
-            scrollPosition: f._F.TRY_IT_OUT,
+            scrollPosition: C._F.TRY_IT_OUT,
             analyticsLocations: i
         }),
         D = (0, l.useCallback)(() => {
@@ -76,7 +76,7 @@ function P() {
             })
         }, [i]),
         G = (0, l.useCallback)(() => {
-            (0, g.pX)(C.BVt.COLLECTIBLES_SHOP)
+            (0, g.pX)(f.BVt.COLLECTIBLES_SHOP)
         }, []),
         U = (0, l.useCallback)(() => {
             (0, h.openUserSettings)(A.X.SOUNDBOARD_CATEGORY, {

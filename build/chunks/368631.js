@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(93471),
     E = n(790076),
     S = n(224515),
-    C = n(357864),
-    f = n(16986),
+    f = n(357864),
+    C = n(16986),
     b = n(682262),
     N = n(604151),
     I = n(531525),
@@ -55,7 +55,7 @@ let y = () => {
         return Object.freeze({
             [I.Ho.SEARCH_NO_RESULTS]: {
                 section: o.Fq.CUSTOM,
-                element: C.A
+                element: f.A
             },
             [I.Ho.PROFILE_CUSTOMIZATION]: {
                 section: v.nc_.PROFILE_CUSTOMIZATION,
@@ -287,7 +287,7 @@ let y = () => {
                 searchableTitles: [j.intl.string(j.t["/VQax8"])],
                 label: j.intl.string(j.t["/VQax8"]),
                 ariaLabel: j.intl.string(j.t["/VQax8"]),
-                element: f.A
+                element: C.A
             },
             [I.Ho.MESSAGE_SEARCH]: {
                 section: v.nc_.TEXT,

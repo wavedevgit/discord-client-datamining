@@ -20,7 +20,7 @@ function x(e) {
     let {
         showHeader: t = !1
     } = e, n = (0, a.bG)([c.A], () => c.A.isSyncing), x = (0, a.bG)([u.A], () => u.A.paymentSources), h = (0, a.bG)([u.A], () => u.A.defaultPaymentSourceId), p = (0, a.bG)([m.default], () => m.default.locale), T = (0, a.bG)([_.A], () => _.A.getPremiumTypeSubscription()), E = (0, a.bG)([c.A], () => c.A.isRemovingPaymentSource), S = (0, a.bG)([c.A], () => c.A.isUpdatingPaymentSource), {
-        enabled: C
+        enabled: f
     } = (0, d.c)({
         location: "UserSettingsBilling"
     });
@@ -37,6 +37,6 @@ function x(e) {
         locale: p,
         removing: E,
         submitting: S,
-        showGiftCards: C
+        showGiftCards: f
     })
 }

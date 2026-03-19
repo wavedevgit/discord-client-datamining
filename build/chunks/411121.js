@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(871123),
     E = n(366523),
     S = n(961350),
-    C = n(30793),
-    f = n(351906),
+    f = n(30793),
+    C = n(351906),
     b = n(97352),
     N = n(67480),
     I = n(147925),
@@ -269,19 +269,19 @@ class P extends s.PureComponent {
         })
     }
 }
-let M = d.Ay.connectStores([N.A, f.A, C.A, A.A, b.A, S.default], e => {
+let M = d.Ay.connectStores([N.A, C.A, f.A, A.A, b.A, S.default], e => {
     let {
         skuId: t,
         subscriptionPlanId: n,
         giftStyle: i
     } = e, s = N.A.get(t);
     if (null == s) throw Error("SKU was unavailable while rendering gift.");
-    let l = C.A.getForGifterSKUAndPlan(S.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === i);
+    let l = f.A.getForGifterSKUAndPlan(S.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === i);
     return {
         sku: s,
-        hideCodes: f.A.enabled,
-        isFetching: C.A.getUserGiftCodesFetchingForSKUAndPlan(t, n),
-        loadedAt: C.A.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
+        hideCodes: C.A.enabled,
+        isFetching: f.A.getUserGiftCodesFetchingForSKUAndPlan(t, n),
+        loadedAt: f.A.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
         application: A.A.getApplication(s.applicationId),
         subscriptionPlan: null != n ? (0, y.c9)(n) : null,
         giftCodes: l

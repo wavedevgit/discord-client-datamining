@@ -25,7 +25,7 @@ let E = (0, o.Ld)(),
             availablePrimaryGuilds: t,
             pendingPrimaryGuildId: n,
             onChange: o
-        } = e, S = s.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), C = (0, l.bG)([g.default], () => (0, c.Zo)(g.default.getCurrentUser()?.primaryGuild).guildId), f = void 0 !== n ? n : C, b = s.useMemo(() => t.reduce((e, t) => (t.profile?.tag != null && e.push({
+        } = e, S = s.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), f = (0, l.bG)([g.default], () => (0, c.Zo)(g.default.getCurrentUser()?.primaryGuild).guildId), C = void 0 !== n ? n : f, b = s.useMemo(() => t.reduce((e, t) => (t.profile?.tag != null && e.push({
             label: t.name,
             value: t.id
         }), e), []), [t]), N = s.useCallback(e => {
@@ -71,7 +71,7 @@ let E = (0, o.Ld)(),
             })
         }, [N]), y = s.useCallback(e => {
             o?.(e)
-        }, [o]), R = s.useCallback(e => e === f, [f]), O = s.useCallback(e => e, []), L = s.useCallback(() => {
+        }, [o]), R = s.useCallback(e => e === C, [C]), O = s.useCallback(e => e, []), L = s.useCallback(() => {
             o?.(null)
         }, [o]), D = s.useRef(null);
         return (0, m.A)(D, h._F.GUILD_TAG), (0, i.jsxs)(_.A, {
@@ -93,7 +93,7 @@ let E = (0, o.Ld)(),
                 renderOptionValue: j,
                 serialize: O,
                 clear: L,
-                clearable: null != f,
+                clearable: null != C,
                 maxVisibleItems: 8,
                 "data-migration-pending": !0
             })]

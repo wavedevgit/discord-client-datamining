@@ -24,8 +24,8 @@ var i = n(627968),
     T = n(832946),
     E = n(287809),
     S = n(954571),
-    C = n(975571),
-    f = n(927578),
+    f = n(975571),
+    C = n(927578),
     b = n(83617),
     N = n(543767),
     I = n(526292),
@@ -137,7 +137,7 @@ function F(e) {
             className: V.QL,
             children: k.intl.string(k.t.KXQjfc)
         }), (0, i.jsx)("div", {
-            children: f.Ay.getBillingInformationString(t, n, s, !1, r)
+            children: C.Ay.getBillingInformationString(t, n, s, !1, r)
         })]
     })
 }
@@ -202,19 +202,19 @@ function z(e) {
             analyticsLocations: p,
             analyticsLocation: n
         },
-        [C] = (0, N.Kq)(S);
-    C = _ ?? C;
+        [f] = (0, N.Kq)(S);
+    f = _ ?? f;
     let v = (0, A.A)(),
         y = (0, j.p)(),
         M = (0, I.nf)(),
-        w = f.Ay.isBaseSubscriptionCanceled(t),
+        w = C.Ay.isBaseSubscriptionCanceled(t),
         B = (0, R.v)(t, s);
-    if (null == E || null == C) return (0, i.jsx)(u.y$y, {});
-    let H = B ? (0, I.Bv)(C) : null,
+    if (null == E || null == f) return (0, i.jsx)(u.y$y, {});
+    let H = B ? (0, I.Bv)(f) : null,
         Y = null != H || null != M && (M.discountId === G.q || M.discountId === G.EG),
         z = B && (w && null != y || !w && Y) ? (0, i.jsx)(O.A, {
             subscription: t,
-            invoicePreview: C,
+            invoicePreview: f,
             paymentSource: s,
             discountOffer: y,
             renewalChurnDiscountInfo: H,
@@ -224,7 +224,7 @@ function z(e) {
         }) : (0, i.jsx)(D.A, {
             subscription: t,
             currentInvoicePreview: E,
-            renewalInvoicePreview: C,
+            renewalInvoicePreview: f,
             paymentSource: s,
             busy: l,
             analyticsLocation: n
@@ -246,7 +246,7 @@ function z(e) {
                     className: V.zH,
                     children: [(0, i.jsx)(F, {
                         subscription: t,
-                        renewalInvoicePreview: C,
+                        renewalInvoicePreview: f,
                         className: V.g4,
                         fractionalPremiumInfo: v,
                         openInvoice: x
@@ -291,7 +291,7 @@ function W() {
             className: V.dk,
             variant: "text-sm/normal",
             children: k.intl.format(k.t["6eXiiC"], {
-                helpCenterLink: C.A.getArticleURL(U.MVz.NITRO)
+                helpCenterLink: f.A.getArticleURL(U.MVz.NITRO)
             })
         })]
     })
@@ -313,8 +313,8 @@ function K(e) {
             analyticsLocations: p
         } = (0, g.Ay)(m.A.SUBSCRIPTION_DETAILS),
         S = (0, j.p)(),
-        C = null != l ? l.slice(1) : [],
-        [f, b] = s.useState(0);
+        f = null != l ? l.slice(1) : [],
+        [C, b] = s.useState(0);
     s.useEffect(() => {
         if (!x) return;
         let e = e => {
@@ -329,7 +329,7 @@ function K(e) {
         renewal: !0,
         analyticsLocations: p,
         analyticsLocation: A,
-        fetchKey: f
+        fetchKey: C
     }), [R] = (0, N.Kq)({
         subscriptionId: n.id,
         renewal: !0,
@@ -337,7 +337,7 @@ function K(e) {
         analyticsLocations: p,
         analyticsLocation: A,
         userDiscountOfferId: S?.id,
-        fetchKey: f
+        fetchKey: C
     }), O = a?.invalid, L = (0, d.bG)([E.default], () => E.default.getCurrentUser()?.hasFreePremium()), D = o()(n.currentPeriodEnd), P = null != n.paymentSourceId, G = R?.total ?? 0, F = !P && G > 0 && (7 >= D.diff(o()(), "days") || n.status === U.Dmq.PAST_DUE) && !L && !n.isPurchasedExternally, Y = O && n.status === U.Dmq.PAST_DUE && !L && !n.isPurchasedExternally, X = (0, v.l)(), W = !L && X, K = n?.status === U.Dmq.PAST_DUE, Z = K ? o()().diff(o()(n.currentPeriodStart), "days") : 0, q = null != h && h.isPremiumGroupPrimary(), J = n.hasAnyPremiumGroup, [Q] = (0, N.C8)({
         subscriptionId: n.id,
         preventFetch: !(W || K)
@@ -359,7 +359,7 @@ function K(e) {
             analyticsLocations: p
         }), t, (0, i.jsxs)("div", {
             children: [(0, i.jsx)("div", {
-                className: C.length > 0 ? V.HZ : V.__invalid_singleSubscription,
+                className: f.length > 0 ? V.HZ : V.__invalid_singleSubscription,
                 children: (0, i.jsx)(z, {
                     subscription: n,
                     analyticsLocation: A,
@@ -373,7 +373,7 @@ function K(e) {
                     fetchedOpenInvoice: Q,
                     isPremiumGroup: q
                 })
-            }), C.map((e, t) => (0, i.jsxs)("div", {
+            }), f.map((e, t) => (0, i.jsxs)("div", {
                 className: V.HZ,
                 children: [(0, i.jsx)(u.Heading, {
                     variant: "heading-md/semibold",

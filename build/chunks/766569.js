@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(622543),
     E = n(696451),
     S = n(351906),
-    C = n(287809),
-    f = n(975571),
+    f = n(287809),
+    C = n(975571),
     b = n(927578),
     N = n(159001),
     I = n(65767),
@@ -53,8 +53,8 @@ function D(e) {
         onGuildChange: n
     } = e, {
         analyticsLocations: l
-    } = (0, _.Ay)(u.A.USER_SETTINGS_GUILD_PROFILE), D = (0, r.bG)([C.default], () => {
-        let e = C.default.getCurrentUser();
+    } = (0, _.Ay)(u.A.USER_SETTINGS_GUILD_PROFILE), D = (0, r.bG)([f.default], () => {
+        let e = f.default.getCurrentUser();
         return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
     }), P = (0, r.bG)([E.Ay], () => null != t ? E.Ay.getMember(t.id, D.id) : null), M = (0, r.bG)([T.A], () => !T.A.isFetchingProfile(D.id, t?.id)), G = (0, r.bG)([S.A], () => S.A.hidePersonalInformation), {
         pendingAvatar: U,
@@ -76,7 +76,7 @@ function D(e) {
         children: [(0, i.jsx)(o.Text, {
             variant: "text-sm/normal",
             children: R.intl.format(R.t["/PTB2E"], {
-                helpCenterLink: f.A.getArticleURL(y.MVz.GUILD_PROFILES)
+                helpCenterLink: C.A.getArticleURL(y.MVz.GUILD_PROFILES)
             })
         }), null != t ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(j.A, {

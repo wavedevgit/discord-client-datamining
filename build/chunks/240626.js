@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(473145),
     E = n(927578),
     S = n(432334),
-    C = n(101135),
-    f = n(708030),
+    f = n(101135),
+    C = n(708030),
     b = n(652215),
     N = n(788868),
     I = n(985018),
@@ -42,7 +42,7 @@ function j(e) {
         className: v.Hp,
         children: [(0, i.jsxs)("div", {
             className: v.YL,
-            children: [(0, i.jsx)(f.A, {
+            children: [(0, i.jsx)(C.A, {
                 className: v.W6,
                 hasCooldown: t.isOnCooldown(),
                 isCanceled: g,
@@ -53,7 +53,7 @@ function j(e) {
                 children: I.intl.format(I.t.Z4ULRD, {
                     date: r.currentPeriodEnd
                 })
-            }) : t.isOnCooldown() && null != m ? (0, i.jsx)(C.A, {
+            }) : t.isOnCooldown() && null != m ? (0, i.jsx)(f.A, {
                 cooldown: m.getTime()
             }) : (0, i.jsx)(c.Text, {
                 className: v.__invalid_unappliedGuildBoostSlotDescription,
@@ -118,11 +118,11 @@ let O = function(e) {
         g = (0, r.bG)([p.A], () => p.A.getPremiumTypeSubscription()),
         A = g?.isPausedOrPausePending === !0,
         {
-            fractionalState: C
+            fractionalState: f
         } = (0, _.A)(),
-        f = (0, r.bG)([u.A], () => u.A.useReducedMotion),
+        C = (0, r.bG)([u.A], () => u.A.useReducedMotion),
         O = (0, r.bG)([h.default], () => h.default.getCurrentUser()),
-        L = C === N.xc.FP_SUB_PAUSED,
+        L = f === N.xc.FP_SUB_PAUSED,
         D = A && !L,
         {
             appliedGuildBoostSlots: P,
@@ -155,10 +155,10 @@ let O = function(e) {
             let e = [];
             for (let t = 0; t < F; t++) e.push((0, i.jsx)(S.A, {
                 className: v.YA,
-                useReducedMotion: f
+                useReducedMotion: C
             }, t));
             return e
-        }, [F, f]),
+        }, [F, C]),
         z = s.useMemo(() => M.find(e => e.isAvailable()), [M]);
     if (0 === M.length) return null;
     let X = M.length;
@@ -184,7 +184,7 @@ let O = function(e) {
     } else n = k ? I.intl.string(I.t["8pcUZi"]) : I.intl.formatToPlainString(I.t.Kaw82o, {
         numUnappliedGuildBoostSlots: X
     });
-    return l = A && C === N.xc.NONE ? I.intl.string(I.t.mOWsF1) : I.intl.string(I.t.xr4m5B), (0, i.jsx)("div", {
+    return l = A && f === N.xc.NONE ? I.intl.string(I.t.mOWsF1) : I.intl.string(I.t.xr4m5B), (0, i.jsx)("div", {
         className: v.iE,
         children: (0, i.jsxs)("div", {
             className: a()(v.Qs, [v.Yq]),
@@ -237,8 +237,8 @@ let O = function(e) {
                     onCancel: y,
                     onUncancel: R,
                     premiumSubscription: g,
-                    useReducedMotion: f,
-                    fractionalState: C
+                    useReducedMotion: C,
+                    fractionalState: f
                 }, e.id))
             })]
         })

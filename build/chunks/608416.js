@@ -66,17 +66,17 @@ let A = e => {
         onRest: () => E(e => -1 * e)
     } : {
         blur: 0
-    }), C = (0, a.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * _), [_]), [f, b] = (0, a.useState)(0), [N, I] = (0, a.useState)(1), v = (0, o.zhh)({
-        xOffset: f,
+    }), f = (0, a.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * _), [_]), [C, b] = (0, a.useState)(0), [N, I] = (0, a.useState)(1), v = (0, o.zhh)({
+        xOffset: C,
         config: {
             tension: 10,
             friction: 10,
-            duration: C
+            duration: f
         }
     });
     return ((0, d.A)(() => {
         b(N * (.5 * Math.random() * 5 + 2.5)), I(e => -1 * e)
-    }, C), u) ? m : (0, l.jsx)(r.animated.div, {
+    }, f), u) ? m : (0, l.jsx)(r.animated.div, {
         style: {
             transform: g.y?.to(e => {
                 if (null == i) return "translateY(0px)";

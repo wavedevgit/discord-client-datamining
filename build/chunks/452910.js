@@ -27,8 +27,8 @@ let h = e => {
         descriptionCta: T,
         isPremiumGetCta: E,
         onCtaClick: S,
-        cardVariant: C
-    } = e, f = (0, c.V)(), b = f?.subscription_trial, N = (0, d.O)(), I = (0, r.FY)({
+        cardVariant: f
+    } = e, C = (0, c.V)(), b = C?.subscription_trial, N = (0, d.O)(), I = (0, r.FY)({
         intervalType: b?.interval,
         intervalCount: b?.interval_count
     }), v = (0, o.G)({
@@ -39,7 +39,7 @@ let h = e => {
         onDiscountOffer: A.intl.formatToPlainString(A.t.bkQ4bH, {
             percent: N?.discount.amount
         })
-    }), j = (0, _.Q)(C);
+    }), j = (0, _.Q)(f);
     return (0, i.jsxs)("div", {
         className: l()(x.L_, j?.overlayContainer?.className),
         children: [(0, i.jsx)(m.A, {

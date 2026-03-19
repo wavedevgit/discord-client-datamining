@@ -22,7 +22,7 @@ function o(e) {
     } = t, g = t.setValue, A = o(), x = d?.(), h = n(), p = c(), T = _?.(), E = m?.(), S = (0, l.A)({
         persistentBadge: T,
         dismissibleBadges: E
-    }), C = (0, a.q)(t);
+    }), f = (0, a.q)(t);
     return (0, i.jsx)(r.L, {
         children: (0, i.jsx)(s.l6P, {
             selectionMode: "single",
@@ -32,7 +32,7 @@ function o(e) {
             value: h,
             clearable: u,
             onSelectionChange: e => {
-                C(), g(e)
+                f(), g(e)
             },
             layout: "horizontal-responsive",
             fullWidth: !0,

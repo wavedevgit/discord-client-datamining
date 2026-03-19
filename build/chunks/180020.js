@@ -26,8 +26,8 @@ function S(e) {
         user: t,
         guildId: n,
         className: S
-    } = e, C = m.Ay.canUsePremiumProfileCustomization(t), {
-        analyticsLocations: f
+    } = e, f = m.Ay.canUsePremiumProfileCustomization(t), {
+        analyticsLocations: C
     } = (0, o.Ay)(), {
         userDisplayNameStyles: b,
         guildDisplayNameStyles: N,
@@ -35,10 +35,10 @@ function S(e) {
         pendingErrors: v
     } = (0, g.B0)(t, n), [j, y] = (0, d.kn)([l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), R = j === l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, O = (0, s.useCallback)(() => {
         y(h.i.TAKE_ACTION), _.default.track(x.HAw.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, c.L)({
-            analyticsLocations: f,
+            analyticsLocations: C,
             guildId: n
         })
-    }, [f, y, n]), L = (0, s.useCallback)(() => {
+    }, [C, y, n]), L = (0, s.useCallback)(() => {
         (0, r.dM)(null), _.default.track(x.HAw.DISPLAY_NAME_STYLES_REMOVED)
     }, []), D = (0, s.useCallback)(() => {
         (0, u.mZ)(null)
@@ -50,7 +50,7 @@ function S(e) {
             className: E.A
         }) : void 0,
         className: S,
-        showPremiumIcon: C,
+        showPremiumIcon: f,
         errors: v,
         children: (0, i.jsxs)("div", {
             className: E.N,

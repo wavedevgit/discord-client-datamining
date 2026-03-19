@@ -22,9 +22,9 @@ var s = n(963935),
     T = n(691116),
     E = n(353667),
     S = n(182884),
-    C = n(115617);
+    f = n(115617);
 
-function f(e) {
+function C(e) {
     let {
         node: t
     } = e;
@@ -59,7 +59,7 @@ function f(e) {
                 node: t
             });
         case s.Z6.SPLIT:
-            return (0, i.jsx)(C.A, {
+            return (0, i.jsx)(f.A, {
                 node: t
             });
         case s.Z6.TOGGLE:
@@ -105,11 +105,11 @@ function b(e) {
     let {
         node: t
     } = e;
-    return t.type === s.Z6.PANEL ? (0, i.jsx)(f, {
+    return t.type === s.Z6.PANEL ? (0, i.jsx)(C, {
         node: t
     }) : (0, i.jsx)(l.A, {
         node: t,
-        children: (0, i.jsx)(f, {
+        children: (0, i.jsx)(C, {
             node: t
         })
     })

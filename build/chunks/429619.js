@@ -25,7 +25,7 @@ let x = () => {
         body: p,
         version: T,
         revertTextColor: E
-    } = (0, u.M)(), S = s.useContext(o.gl), C = S?.navigateWithValidation ?? (e => e());
+    } = (0, u.M)(), S = s.useContext(o.gl), f = S?.navigateWithValidation ?? (e => e());
     return s.useEffect(() => {
         d.default.track(_.HAw.PREMIUM_UPSELL_VIEWED, {
             type: m.e.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
@@ -61,7 +61,7 @@ let x = () => {
             })]
         }), (0, i.jsx)(l.Button, {
             onClick: () => {
-                C(() => (0, c.Cz)({
+                f(() => (0, c.Cz)({
                     analyticsLocations: e,
                     analyticsSource: a.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL
                 }))

@@ -39,7 +39,7 @@ let S = e => {
             ...s
         }, t.id)
     },
-    C = e => {
+    f = e => {
         let {
             slotIndex: t
         } = e;
@@ -48,7 +48,7 @@ let S = e => {
             children: t
         })
     },
-    f = e => {
+    C = e => {
         let {
             referralSentUsers: t
         } = e;
@@ -63,7 +63,7 @@ let S = e => {
                         }, t[n].id);
                         e.push(s)
                     } else {
-                        let t = (0, i.jsx)(C, {
+                        let t = (0, i.jsx)(f, {
                             slotIndex: n + 1
                         }, n);
                         e.push(t)
@@ -105,7 +105,7 @@ let S = e => {
                 })
             }), (0, i.jsxs)("div", {
                 className: T.IH,
-                children: [(0, i.jsx)(f, {
+                children: [(0, i.jsx)(C, {
                     referralSentUsers: s
                 }), (0, i.jsxs)("div", {
                     className: T.n4,

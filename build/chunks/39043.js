@@ -41,13 +41,13 @@ let m = s.memo(function(e) {
                     })
             }
         }, [h, t.key]),
-        C = s.useMemo(() => (0, l.debounce)(S, 50), [S]),
-        f = (0, a.w)(C),
+        f = s.useMemo(() => (0, l.debounce)(S, 50), [S]),
+        C = (0, a.w)(f),
         b = n?.(h),
         N = g?.(),
         I = (0, c.q)(t);
     return (0, i.jsx)(u.f, {
-        ref: f,
+        ref: C,
         title: b,
         collapsedSubtitle: N,
         isExpanded: h,

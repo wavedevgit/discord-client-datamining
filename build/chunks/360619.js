@@ -36,7 +36,7 @@ function h() {
         E = (0, r.A)() ?? !0,
         {
             hasBlockedUsers: S,
-            hasIgnoredUsers: C
+            hasIgnoredUsers: f
         } = (0, s.cf)([_.A], () => ({
             hasBlockedUsers: _.A.getBlockedIDs().length > 0,
             hasIgnoredUsers: _.A.getIgnoredIDs().length > 0
@@ -50,9 +50,9 @@ function h() {
         isEligibleForQuests: p,
         isStricterMessageRequestsEnabled: T,
         isAdultUser: E,
-        hasIgnoredUsers: C,
+        hasIgnoredUsers: f,
         hasBlockedUsers: S
-    }), [S, C, E, p, A, n, t, T, h, e])
+    }), [S, f, E, p, A, n, t, T, h, e])
 }
 
 function p(e) {

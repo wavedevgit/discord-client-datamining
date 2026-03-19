@@ -22,8 +22,8 @@ var i = n(627968),
     T = n(899847),
     E = n(695515),
     S = n(438732),
-    C = n(809697),
-    f = n(834981),
+    f = n(809697),
+    C = n(834981),
     b = n(102615),
     N = n(246109),
     I = n(452141),
@@ -62,7 +62,7 @@ function k(e) {
     let {
         section: t,
         handleItemSelect: n
-    } = e, s = (0, f.VT)(), l = (0, S.A)();
+    } = e, s = (0, C.VT)(), l = (0, S.A)();
     return t === R.u9.CONTENT_AND_SOCIAL || t === R.u9.DATA_AND_PRIVACY ? null : (0, i.jsxs)(d.VQ0, {
         className: P.c5,
         "aria-label": D.intl.string(L.default.RZqaJn),
@@ -95,7 +95,7 @@ function V(e) {
         theme: t,
         section: n,
         handleItemSelect: s
-    } = e, l = (0, g.GV)(), o = (0, f.VT)();
+    } = e, l = (0, g.GV)(), o = (0, C.VT)();
     return (0, i.jsx)(d.NPJ, {
         theme: t,
         children: e => (0, i.jsxs)(A.A, {
@@ -147,7 +147,7 @@ function w() {
             }
         });
     if (s.useEffect(() => {
-            (0, p._)(C.q[n])
+            (0, p._)(f.q[n])
         }, [n]), a) return null;
     let r = M[n];
     return (0, i.jsxs)("main", {
@@ -175,8 +175,8 @@ function B() {
     } = (0, _.Ay)(u.A.FAMILY_CENTER), t = (0, S.A)(), n = (0, o.bG)([E.A], () => E.A.getIsInitialized()), l = (0, o.bG)([x.A], () => x.A.theme), r = (0, g.GV)(), {
         isLoading: A,
         selectedTab: p,
-        handleTabChange: C,
-        showAgeGateModal: f
+        handleTabChange: f,
+        showAgeGateModal: C
     } = (0, y.j)({
         location: R.MH.SIDENAV,
         onMountEffect: () => {
@@ -186,7 +186,7 @@ function B() {
     if (s.useEffect(() => {
             let e = h.dm.getSetting();
             n && t && void 0 === e && h.dm.updateSetting(!0)
-        }, [n, t]), f) return null;
+        }, [n, t]), C) return null;
     let b = p !== R.u9.SETTINGS ? p : R.u9.ACTIVITY,
         N = G[b];
     return (0, i.jsx)(_.f5, {
@@ -200,7 +200,7 @@ function B() {
                 theme: l,
                 section: b,
                 handleItemSelect: e => {
-                    C(e)
+                    f(e)
                 }
             }), (0, i.jsx)(d.VQ0.Panel, {
                 id: b,

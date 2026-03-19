@@ -21,7 +21,7 @@ var i = n(627968),
     T = n(870236),
     E = n(985018),
     S = n(324034);
-let C = e => {
+let f = e => {
         let {
             title: t,
             buttonText: n,
@@ -47,7 +47,7 @@ let C = e => {
             })]
         })
     },
-    f = () => {
+    C = () => {
         let e = (0, h.vx)(),
             t = () => {
                 (0, u.openUserSettings)(d.X.CONTENT_AND_SOCIAL_PANEL)
@@ -158,13 +158,13 @@ let C = e => {
                     color: "text-muted",
                     children: E.intl.string(T.default.Sv236e)
                 })]
-            }), (0, i.jsx)(C, {
+            }), (0, i.jsx)(f, {
                 title: E.intl.string(E.t["+o1pDZ"]),
                 buttonText: E.intl.string(E.t.bt75uw),
                 onButtonPress: () => r(p.u9.CONTENT_AND_SOCIAL)
             }), (0, i.jsx)(o.A, {
                 className: S.yF
-            }), (0, i.jsx)(C, {
+            }), (0, i.jsx)(f, {
                 title: E.intl.string(E.t.OAuOHD),
                 buttonText: E.intl.string(E.t.bt75uw),
                 onButtonPress: () => r(p.u9.DATA_AND_PRIVACY)
@@ -181,6 +181,6 @@ let C = e => {
         let e = (0, x.A)();
         return 0 === (0, h.vx)().length ? null : (0, i.jsx)("div", {
             className: S.kL,
-            children: e ? (0, i.jsx)(f, {}) : (0, i.jsx)(N, {})
+            children: e ? (0, i.jsx)(C, {}) : (0, i.jsx)(N, {})
         })
     }

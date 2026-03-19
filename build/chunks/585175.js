@@ -22,7 +22,7 @@ var i = n(627968),
     E = n(244984);
 let S = (0, m.Ld)();
 
-function C(e) {
+function f(e) {
     let {
         isSpeaking: t,
         className: n,
@@ -45,7 +45,7 @@ function C(e) {
     })
 }
 
-function f(e) {
+function C(e) {
     let {
         volume: t,
         id: n,
@@ -162,13 +162,13 @@ let b = (0, g.E2)(x.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
                     description: x,
                     checked: e,
                     onChange: n
-                }), e ? (0, i.jsx)(C, {
+                }), e ? (0, i.jsx)(f, {
                     isSpeaking: c,
                     className: T.UJ,
                     ariaDescribedBy: S,
                     ariaLabelledBy: E,
                     disabled: t
-                }) : (0, i.jsx)(f, {
+                }) : (0, i.jsx)(C, {
                     volume: a,
                     ariaDescribedBy: S,
                     ariaLabelledBy: E,
@@ -182,14 +182,14 @@ let b = (0, g.E2)(x.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
                 label: p.intl.string(p.t["sqUm+k"]),
                 description: x,
                 layout: "vertical",
-                children: n => e ? (0, i.jsx)(C, {
+                children: n => e ? (0, i.jsx)(f, {
                     isSpeaking: c,
                     className: T.UJ,
                     id: n.controlId,
                     ariaDescribedBy: n.describedById,
                     ariaLabelledBy: n.labelId,
                     disabled: t
-                }) : (0, i.jsx)(f, {
+                }) : (0, i.jsx)(C, {
                     volume: a,
                     id: n.controlId,
                     ariaDescribedBy: n.describedById,

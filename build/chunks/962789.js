@@ -109,7 +109,7 @@ function S(e) {
     })
 }
 
-function C() {
+function f() {
     let e = u.Zk.useSetting();
     return (0, i.jsx)(x.h, {
         children: (0, i.jsx)(h.Ay, {
@@ -123,7 +123,7 @@ function C() {
     })
 }
 
-function f() {
+function C() {
     let e = u.TA.useSetting(),
         t = e === l.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET ? l.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL : e,
         n = [{
@@ -195,9 +195,9 @@ function v() {
             children: [(0, i.jsx)(N, {
                 applications: t
             }), t.length > 0 && (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(C, {}), (0, i.jsx)("div", {
+                children: [(0, i.jsx)(f, {}), (0, i.jsx)("div", {
                     className: E.yF
-                }), (0, i.jsx)(f, {})]
+                }), (0, i.jsx)(C, {})]
             })]
         })
     })

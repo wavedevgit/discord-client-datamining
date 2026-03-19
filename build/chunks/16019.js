@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(792656),
     E = n(224850),
     S = n(552554),
-    C = n(797255),
-    f = n(288351),
+    f = n(797255),
+    C = n(288351),
     b = n(103733),
     N = n(326180),
     I = n(788868),
@@ -53,7 +53,7 @@ let y = s.memo(s.forwardRef((e, t) => {
                         containerVisibilityPercentage: M
                     }), w && (0, i.jsx)("div", {
                         className: j.XN,
-                        children: (0, i.jsx)(f.A, {
+                        children: (0, i.jsx)(C.A, {
                             enablePremiumBrandRefresh: !0
                         })
                     }), (0, i.jsx)("div", {
@@ -68,7 +68,7 @@ let y = s.memo(s.forwardRef((e, t) => {
                         className: j.rf,
                         children: [L && (0, i.jsx)("div", {
                             className: j.eZ,
-                            children: (0, i.jsx)(C.A, {
+                            children: (0, i.jsx)(f.A, {
                                 referrer: O,
                                 enablePremiumBrandRefresh: !0
                             })

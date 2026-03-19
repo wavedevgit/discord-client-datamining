@@ -1,39 +1,30 @@
 /** chunk id: 393858 params = (module,exports,require) **/
 n.d(t, {
-    f: () => g
+    f: () => _
 });
 var i = n(574381),
     s = n(311907),
     l = n(314116),
     a = n(827343),
     r = n(77729),
-    o = n(480862),
-    d = n(729410),
-    c = n(419954),
-    u = n(430452),
-    _ = n(780964),
-    m = n(985018);
-let g = (0, c.zD)(_.X.VOICE_AND_VIDEO_OPENH264, {
-    useTitle: () => m.intl.string(m.t.qFphsa),
-    useSubtitle: () => m.intl.string(m.t.cQfwyY),
+    o = n(419954),
+    d = n(430452),
+    c = n(780964),
+    u = n(985018);
+let _ = (0, o.zD)(c.X.VOICE_AND_VIDEO_OPENH264, {
+    useTitle: () => u.intl.string(u.t.qFphsa),
+    useSubtitle: () => u.intl.string(u.t.cQfwyY),
     usePredicate: function() {
-        if (!(0, i.j9)()) return !1;
-        let e = (0, d.b)({
-                location: "OpenH264Setting"
-            }),
-            t = (0, o.n)({
-                location: "OpenH264Setting"
-            });
-        return e.enabled || t.enabled
+        return (0, i.j9)()
     },
     useValue: function() {
-        return (0, s.bG)([u.Ay], () => u.Ay.getOpenH264Enabled())
+        return (0, s.bG)([d.Ay], () => d.Ay.getOpenH264Enabled())
     },
     setValue: function(e) {
         a.A.setOpenH264Enabled(e), (0, l.A)({
-            title: m.intl.string(m.t["9jf31O"]),
-            subtitle: m.intl.string(m.t["J2wg+X"]),
-            confirmText: m.intl.string(m.t.BddRzS),
+            title: u.intl.string(u.t["9jf31O"]),
+            subtitle: u.intl.string(u.t["J2wg+X"]),
+            confirmText: u.intl.string(u.t.BddRzS),
             onConfirm: () => r.A.app.relaunch()
         })
     },

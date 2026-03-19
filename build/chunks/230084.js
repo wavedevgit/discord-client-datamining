@@ -30,11 +30,11 @@ function x(e) {
         className: T,
         disabled: E = !1,
         isTryItOut: S = !1,
-        forcedDivider: C,
-        withHighlight: f = !1
+        forcedDivider: f,
+        withHighlight: C = !1
     } = e, {
         newestAnalyticsLocation: b
-    } = (0, d.Ay)(), N = f ? o.wLn : r.$n, I = s.useCallback(() => {
+    } = (0, d.Ay)(), N = C ? o.wLn : r.$n, I = s.useCallback(() => {
         (0, c.XD)({
             uploadType: _.HL.AVATAR,
             analyticsSource: b,
@@ -48,12 +48,12 @@ function x(e) {
         title: x,
         errors: n,
         disabled: E,
-        forcedDivider: C,
+        forcedDivider: f,
         children: (0, i.jsxs)("div", {
             className: g.NC,
             children: [(0, i.jsx)(N, {
                 className: a()({
-                    [g.yj]: f
+                    [g.yj]: C
                 }),
                 size: r.$n.Sizes.SMALL,
                 onClick: I,

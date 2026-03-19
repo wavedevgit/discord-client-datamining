@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(680243),
     E = n(843401),
     S = n(430452),
-    C = n(532624),
-    f = n(975571),
+    f = n(532624),
+    C = n(975571),
     b = n(723702),
     N = n(350535),
     I = n(790174),
@@ -74,7 +74,7 @@ class P extends s.PureComponent {
         }) : y.Yy.has(t) ? (0, i.jsx)(c.po8, {
             messageType: c.YCn.ERROR,
             children: R.intl.format(R.t.MOIaNd, {
-                keyboardNavArticle: f.A.getArticleURL(j.MVz.KEYBOARD_NAVIGATION)
+                keyboardNavArticle: C.A.getArticleURL(j.MVz.KEYBOARD_NAVIGATION)
             })
         }) : (0, i.jsx)(c.Text, {
             variant: "text-md/normal",
@@ -374,7 +374,7 @@ function G() {
     s.useEffect(() => (u.A.enableAll(!1), () => {
         u.A.enableAll(!0)
     }), []);
-    let e = (0, r.bG)([C.Ay], () => C.Ay.getState()),
+    let e = (0, r.bG)([f.Ay], () => f.Ay.getState()),
         t = (0, r.bG)([S.Ay], () => (0, h.A)(S.Ay)),
         n = (0, r.bG)([T.A], () => T.A.isSupported),
         l = (0, x.sw)(),

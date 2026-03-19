@@ -1,6 +1,8 @@
 /** chunk id: 785048 params = (module,exports,require) **/
 n.d(t, {
-    U: () => A
+    K7: () => x,
+    UK: () => h,
+    f7: () => A
 });
 var i = n(419954),
     s = n(954571),
@@ -14,8 +16,13 @@ var i = n(419954),
     _ = n(355097),
     m = n(652215),
     g = n(985018);
-let A = (0, i.zD)(o.X.CONTENT_AND_SOCIAL_PERMISSIONS_ACTIVITY_JOIN_SETTING, {
-    useTitle: () => g.intl.string(g.t["T+nevN"]),
+let A = () => (0, c.Tx)() !== d.YG;
+
+function x() {
+    return g.intl.string(g.t["T+nevN"])
+}
+let h = (0, i.zD)(o.X.CONTENT_AND_SOCIAL_PERMISSIONS_ACTIVITY_JOIN_SETTING, {
+    useTitle: x,
     useSubtitle: () => g.intl.format(g.t.jXKQCu, {
         helpdeskArticle: l.A.getArticleURL(m.MVz.ACTIVITY_STATUS_SETTINGS)
     }),
@@ -32,5 +39,5 @@ let A = (0, i.zD)(o.X.CONTENT_AND_SOCIAL_PERMISSIONS_ACTIVITY_JOIN_SETTING, {
             guild_id: t
         })
     },
-    usePredicate: () => (0, c.Tx)() !== d.YG
+    usePredicate: A
 })

@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(21316),
     E = n(240626),
     S = n(841532),
-    C = n(788868),
-    f = n(53633);
+    f = n(788868),
+    C = n(53633);
 
 function b(e) {
     let {
@@ -31,12 +31,12 @@ function b(e) {
         fractionalState: D
     } = (0, a.A)({
         forceFetch: !0
-    }), P = N?.isPremiumGroupMember(), M = t?.isPausedOrPausePending !== !0 && D === C.xc.NONE && !P;
+    }), P = N?.isPremiumGroupMember(), M = t?.isPausedOrPausePending !== !0 && D === f.xc.NONE && !P;
     return (0, i.jsxs)("div", {
-        className: f.GO,
+        className: C.GO,
         children: [(0, i.jsx)(r.kb, {
-            className: f.ek
-        }), (0, i.jsx)(S.A, {}), P && (0, i.jsx)(u.A, {}), !j && (0, i.jsx)(p.A, {}), t?.isPaused && D !== C.xc.FP_SUB_PAUSED ? (0, i.jsx)(h.N, {
+            className: C.ek
+        }), (0, i.jsx)(S.A, {}), P && (0, i.jsx)(u.A, {}), !j && (0, i.jsx)(p.A, {}), t?.isPaused && D !== f.xc.FP_SUB_PAUSED ? (0, i.jsx)(h.N, {
             appliedGuildBoosts: L,
             premiumSubscription: t
         }) : (0, i.jsx)(h.A, {
@@ -49,13 +49,13 @@ function b(e) {
             canAddBoosts: R && M,
             canApplyBoosts: O
         }), (0, i.jsx)(c.A, {
-            className: f.e4,
+            className: C.e4,
             hideHeading: !0,
             hideTier0: !0
         }), (0, i.jsx)(o.A, {
-            cardClassName: f.KW
+            cardClassName: C.KW
         }), (0, i.jsx)(d.A, {
-            className: f.JL
+            className: C.JL
         })]
     })
 }

@@ -1,6 +1,6 @@
 /** chunk id: 102255 params = (module,exports,require) **/
 n.d(t, {
-    AF: () => C,
+    AF: () => f,
     Im: () => E,
     jH: () => T
 });
@@ -38,7 +38,7 @@ function E() {
         children: (0, i.jsx)(o.y$y, {})
     }) : (0, i.jsx)(o.nVY, {
         label: h.intl.string(h.t.LLS19o),
-        children: (0, i.jsx)(f, {
+        children: (0, i.jsx)(C, {
             session: e,
             current: !0
         })
@@ -70,7 +70,7 @@ function S(e) {
     })
 }
 
-function C() {
+function f() {
     let {
         currentSession: e,
         otherSessions: t
@@ -78,7 +78,7 @@ function C() {
     return null == e && 0 === t.length || 0 === t.length && n?.mfaEnabled ? null : t.length > 0 || !n?.mfaEnabled ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)(o.nVY, {
             label: h.intl.string(h.t.xx1MWc),
-            children: [t.map(e => (0, i.jsx)(f, {
+            children: [t.map(e => (0, i.jsx)(C, {
                 session: e,
                 useChecks: l.size > 0,
                 checked: l.has(e.id_hash),
@@ -97,7 +97,7 @@ function C() {
     }) : null
 }
 
-function f(e) {
+function C(e) {
     let {
         session: t,
         current: n,

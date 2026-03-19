@@ -25,14 +25,14 @@ function p(e) {
         sidebarFooter: x,
         searchBar: _,
         onViewChange: y,
-        emptyState: v,
-        searchQuery: b,
+        emptyState: b,
+        searchQuery: v,
         clearSearchQuery: A
     } = e, j = d.A.useField("currentPanelKey"), {
         node: N,
         visibleDirectory: S,
         accessibleDirectory: C
-    } = (0, u.Ay)(t, b ?? ""), k = null != n && S.entry(n)?.parentPanelKey != null ? n : p, E = a.useMemo(() => {
+    } = (0, u.Ay)(t, v ?? ""), k = null != n && S.entry(n)?.parentPanelKey != null ? n : p, E = a.useMemo(() => {
         let e = C.entry(j ?? k)?.parentPanelKey;
         if (null != e) return C.getPanelOrThrow(e)
     }, [j, C, k]), {
@@ -69,7 +69,7 @@ function p(e) {
                 root: N,
                 onClose: D,
                 footer: x,
-                emptyState: v,
+                emptyState: b,
                 searchBar: _
             }), (0, r.jsx)(s.A, {
                 onClose: D,

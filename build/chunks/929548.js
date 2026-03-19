@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(780964),
     E = n(652215),
     S = n(731854),
-    C = n(985018);
-let f = (0, m.D)(() => ({
+    f = n(985018);
+let C = (0, m.D)(() => ({
     isUploading: !1,
     isDisabled: !1
 }));
@@ -33,9 +33,9 @@ async function b() {
 
 function N(e) {
     (0, o.A)({
-        title: C.intl.string(C.t["7UXEF2"]),
-        subtitle: C.intl.string(C.t.IYPrRl),
-        confirmText: C.intl.string(C.t.BddRzS),
+        title: f.intl.string(f.t["7UXEF2"]),
+        subtitle: f.intl.string(f.t.IYPrRl),
+        confirmText: f.intl.string(f.t.BddRzS),
         onConfirm: () => u.A.setDebugLogging(e)
     })
 }
@@ -51,19 +51,19 @@ async function I(e) {
             message: {
                 message: "User Live Dump"
             }
-        }), await (0, g.a)(E.Umv.RTC), e = C.intl.string(C.t["fKBB8+"]), t = C.intl.string(C.t.BvyxE7), (0, r.A)({
+        }), await (0, g.a)(E.Umv.RTC), e = f.intl.string(f.t["fKBB8+"]), t = f.intl.string(f.t.BvyxE7), (0, r.A)({
             title: e,
             subtitle: t
         })
     } catch (a) {
         var s;
         let e, t, n, l;
-        s = a.displayMessage, e = C.intl.string(C.t.QZg0J7), t = s ?? C.intl.string(C.t.VzHcSm), n = (0, A.B1)(A.iy.DEBUG_LOG_UPLOAD_FAILED)?.errorCode, l = C.intl.formatToPlainString(C.t.ejOT95, {
+        s = a.displayMessage, e = f.intl.string(f.t.QZg0J7), t = s ?? f.intl.string(f.t.VzHcSm), n = (0, A.B1)(A.iy.DEBUG_LOG_UPLOAD_FAILED)?.errorCode, l = f.intl.formatToPlainString(f.t.ejOT95, {
             errorCode: n
         }), (0, c.qfG)(n => (0, i.jsx)(c.VoidConfirmModal, {
             header: e,
             confirmButtonColor: d.$n.Colors.BRAND,
-            confirmText: C.intl.string(C.t.BddRzS),
+            confirmText: f.intl.string(f.t.BddRzS),
             ...n,
             children: (0, i.jsxs)("div", {
                 style: {
@@ -90,37 +90,37 @@ async function I(e) {
 }
 async function v() {
     await I({
-        onUploadStart: () => f.setState({
+        onUploadStart: () => C.setState({
             isUploading: !0
         }),
-        onUploadFinish: () => f.setState({
+        onUploadFinish: () => C.setState({
             isUploading: !1,
             isDisabled: !0
         })
     })
 }
 let j = (0, x.E2)(T.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
-    useSearchTerms: () => [C.intl.string(C.t["726JHL"]), C.intl.string(C.t.EbwFfR), C.intl.string(C.t.nuPtYi)],
+    useSearchTerms: () => [f.intl.string(f.t["726JHL"]), f.intl.string(f.t.EbwFfR), f.intl.string(f.t.nuPtYi)],
     usePredicate: function() {
         let e = (0, a.bG)([h.Ay], () => h.Ay.supports(S.O5.DEBUG_LOGGING));
         return l.Av && e && null != _.A.fileManager.readLogFiles
     },
     Component: function() {
         let e = (0, a.bG)([h.Ay], () => h.Ay.getDebugLogging()),
-            t = f.useField("isUploading"),
-            n = f.useField("isDisabled"),
+            t = C.useField("isUploading"),
+            n = C.useField("isDisabled"),
             l = s.useId();
         return (0, i.jsxs)("fieldset", {
             children: [(0, i.jsx)(c.AC4, {
                 tag: "legend",
                 id: l,
-                children: C.intl.string(C.t["FjN+et"])
+                children: f.intl.string(f.t["FjN+et"])
             }), (0, i.jsxs)(c.BJc, {
                 direction: "vertical",
                 gap: 4,
                 children: [(0, i.jsx)(c.dOG, {
-                    label: C.intl.string(C.t["726JHL"]),
-                    description: C.intl.string(C.t["/7ak9Q"]),
+                    label: f.intl.string(f.t["726JHL"]),
+                    description: f.intl.string(f.t["/7ak9Q"]),
                     checked: e,
                     onChange: N
                 }), (0, i.jsx)("div", {
@@ -129,16 +129,16 @@ let j = (0, x.E2)(T.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
                     children: (0, i.jsxs)(c.ButtonGroup, {
                         children: [(0, i.jsx)(c.Button, {
                             variant: "secondary",
-                            text: C.intl.string(C.t.EbwFfR),
+                            text: f.intl.string(f.t.EbwFfR),
                             onClick: v,
                             loading: t,
                             disabled: n,
-                            "aria-label": C.intl.string(C.t.aY1OH2)
+                            "aria-label": f.intl.string(f.t.aY1OH2)
                         }), (0, i.jsx)(c.Button, {
                             variant: "secondary",
-                            text: C.intl.string(C.t.nuPtYi),
+                            text: f.intl.string(f.t.nuPtYi),
                             onClick: b,
-                            "aria-label": C.intl.string(C.t["L/hFOe"])
+                            "aria-label": f.intl.string(f.t["L/hFOe"])
                         })]
                     })
                 })]
