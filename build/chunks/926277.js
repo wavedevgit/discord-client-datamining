@@ -5,12 +5,12 @@ n.d(t, {
 });
 var i = n(311907),
     a = n(997590),
-    l = n(324580),
-    r = n(985018);
+    r = n(324580),
+    l = n(985018);
 
 function s(e) {
     let [t] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [a.A];
-    return e === l.Iq ? r.intl.string(r.t.Omu0fS) : t.getCategoryName(e)
+    return e === r.Iq ? l.intl.string(l.t.Omu0fS) : t.getCategoryName(e)
 }
 
 function o(e) {

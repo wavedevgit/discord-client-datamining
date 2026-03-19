@@ -86,7 +86,7 @@ function C() {
                     let n = new Set(l);
                     t ? n.add(e.id_hash) : n.delete(e.id_hash), a(n)
                 }
-            }, e.id_hash)), n?.mfaEnabled ? null : (0, i.jsx)(b, {})]
+            }, e.id_hash)), n?.mfaEnabled ? null : (0, i.jsx)(N, {})]
         }), t.length > 0 && (0, i.jsx)("div", {
             className: p.wq,
             children: (0, i.jsx)(S, {
@@ -194,7 +194,7 @@ function f(e) {
     }, t.id_hash)
 }
 
-function b() {
+function N() {
     return (0, i.jsxs)("div", {
         className: a()(p.dZ, p.EC),
         children: [(0, i.jsxs)("div", {

@@ -1,6 +1,6 @@
 /** chunk id: 483706 params = (module,exports,require) **/
 n.d(t, {
-    p: () => I
+    p: () => b
 });
 var i = n(627968),
     s = n(64700),
@@ -87,7 +87,7 @@ let C = e => {
             })]
         })
     },
-    b = e => {
+    N = e => {
         let {
             teenId: t
         } = e, s = (0, A.y3)(), r = s?.restrictedSchedule?.rules.length ?? 0;
@@ -131,7 +131,7 @@ let C = e => {
             })]
         })
     },
-    N = () => {
+    I = () => {
         let e = (0, A.y3)(),
             t = (0, A.tl)(),
             {
@@ -171,16 +171,16 @@ let C = e => {
             }), a && e?.id != null && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(o.A, {
                     className: S.yF
-                }), (0, i.jsx)(b, {
+                }), (0, i.jsx)(N, {
                     teenId: e.id
                 })]
             })]
         })
     },
-    I = () => {
+    b = () => {
         let e = (0, x.A)();
         return 0 === (0, h.vx)().length ? null : (0, i.jsx)("div", {
             className: S.kL,
-            children: e ? (0, i.jsx)(f, {}) : (0, i.jsx)(N, {})
+            children: e ? (0, i.jsx)(f, {}) : (0, i.jsx)(I, {})
         })
     }

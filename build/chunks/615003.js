@@ -5,8 +5,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     a = n(64700),
-    l = n(837381),
-    r = n(877624),
+    r = n(837381),
+    l = n(877624),
     s = n(311907),
     o = n(554146),
     d = n(3026),
@@ -49,7 +49,7 @@ var i = n(627968),
 let K = e => {
         let {
             selected: t
-        } = e, n = (0, s.bG)([p.default], () => p.default.getCurrentUser()), i = (0, s.bG)([E.A], () => E.A.getPremiumTypeSubscription()), a = (0, b.V)(), l = (0, y.O)(), r = (0, T.cg)(), o = (0, k.H)(), d = (0, f.Of)(n, i), c = (0, s.bG)([C.A], () => C.A.getCreatedAtOverride()), u = t || null != a || null != l || r || null != o || d, A = null != c ? c : n?.createdAt;
+        } = e, n = (0, s.bG)([p.default], () => p.default.getCurrentUser()), i = (0, s.bG)([E.A], () => E.A.getPremiumTypeSubscription()), a = (0, b.V)(), r = (0, y.O)(), l = (0, T.cg)(), o = (0, k.H)(), d = (0, f.Of)(n, i), c = (0, s.bG)([C.A], () => C.A.getCreatedAtOverride()), u = t || null != a || null != r || l || null != o || d, A = null != c ? c : n?.createdAt;
         return u || null != n && null != A && Date.now() - A.getTime() > 12096e5
     },
     q = e => {
@@ -64,12 +64,12 @@ let K = e => {
             Z = (0, s.bG)([E.A], () => E.A.getPremiumTypeSubscription()),
             J = (0, f.Of)(X, Z),
             ee = (0, f.YE)(X, H.PremiumTypes.TIER_2),
-            et = (0, l.rm)("nitro"),
+            et = (0, r.rm)("nitro"),
             en = (0, b.V)(),
             ei = (0, y.O)(),
             ea = (0, v.p)(),
-            el = (0, S.d)(),
-            er = (0, T.cg)(),
+            er = (0, S.d)(),
+            el = (0, T.cg)(),
             es = (0, M.NF)({
                 trialOffer: en
             }),
@@ -109,10 +109,10 @@ let K = e => {
             eO = en?.trial_id === H.Dw,
             eL = [],
             eR = [];
-        (0, _.Tc)() && (eA && eL.push(o.M.RECURRING_3P_PROMOTION_POPOVER), er && eL.push(o.M.BOGO_2025_NITRO_TAB_BADGE));
+        (0, _.Tc)() && (eA && eL.push(o.M.RECURRING_3P_PROMOTION_POPOVER), el && eL.push(o.M.BOGO_2025_NITRO_TAB_BADGE));
         let [eP, eD] = (0, m.kn)(eL, void 0, !0);
         eN && eR.push(o.M.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK), eo && eR.push(o.M.PREMIUM_GROUP_POPOVER), ep && eR.push(o.M.PREMIUM_ORBS_UPSELL_POPOVER), eT && eR.push(o.M.PREMIUM_ORBS_REWARDS_INTRO_POPOVER);
-        let [eM, ej] = (0, m.kn)(eR, void 0, !0), ew = (0, O.c)(r.C.PREMIUM_TAB), eU = (0, O.c)(r.C.PREMIUM_TAB_TOOLTIP), [eG, ek] = (0, m.Cc)(null != ew && "premiumTab" === ew.properties.properties.oneofKind ? o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE : null, ew?.promotionId ?? "", void 0, !0), [eV, eB] = (0, m.Cc)(eC ? o.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER : null, eE ?? "", void 0, !0), eH = null != eU && "premiumTabTooltip" === eU.properties.properties.oneofKind && eG === o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE;
+        let [eM, ej] = (0, m.kn)(eR, void 0, !0), ew = (0, O.c)(l.C.PREMIUM_TAB), eU = (0, O.c)(l.C.PREMIUM_TAB_TOOLTIP), [eG, ek] = (0, m.Cc)(null != ew && "premiumTab" === ew.properties.properties.oneofKind ? o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE : null, ew?.promotionId ?? "", void 0, !0), [eV, eB] = (0, m.Cc)(eC ? o.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER : null, eE ?? "", void 0, !0), eH = null != eU && "premiumTabTooltip" === eU.properties.properties.oneofKind && eG === o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE;
         if (a.useEffect(() => {
                 !0 === C && null != eP && eD(Y.i.AUTO_DISMISS), !0 === C && null != eM && ej(Y.i.AUTO_DISMISS), !0 === C && null != eG && ek(Y.i.AUTO_DISMISS), !0 === C && null != eV && eB(Y.i.AUTO_DISMISS)
             }, [eD, C, eP, ej, eM, eG, ek, eV, eB]), !K({
@@ -124,7 +124,7 @@ let K = e => {
                 has_premium: J
             }), null != eP && eD(Y.i.USER_DISMISS), null != eG && ek(Y.i.USER_DISMISS), eM === o.M.PREMIUM_GROUP_POPOVER && ej(Y.i.USER_DISMISS)
         };
-        eS === H.xc.NONE || el || (n = 7, t = (0, i.jsx)(x.A, {
+        eS === H.xc.NONE || er || (n = 7, t = (0, i.jsx)(x.A, {
             className: "",
             startsAt: ex,
             endsAt: ev,
@@ -142,7 +142,7 @@ let K = e => {
             acknowledgedBadgeCopy: ew.properties.properties.premiumTab.acknowledgedBadgeLabel,
             isDismissed: eG !== o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE
         }), n = 9;
-        else if (er) t = (0, i.jsx)(R.A, {}), n = 0;
+        else if (el) t = (0, i.jsx)(R.A, {}), n = 0;
         else if (es) {
             let e = (0, M.ZR)();
             t = (0, i.jsx)(U.MA, {
@@ -158,7 +158,7 @@ let K = e => {
                 badge_decorator: n,
                 has_premium: J
             }), eD(Y.i.USER_DISMISS)
-        }) : el ? (t = (0, i.jsx)(G.d, {
+        }) : er ? (t = (0, i.jsx)(G.d, {
             expiresAt: ev
         }), n = 4) : null != ed ? (t = (0, i.jsx)(B.A, {
             copy: ed,

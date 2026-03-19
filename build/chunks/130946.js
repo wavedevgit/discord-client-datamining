@@ -1,6 +1,6 @@
 /** chunk id: 130946 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b,
+    A: () => N,
     c: () => f
 });
 var i, s = n(627968);
@@ -24,7 +24,7 @@ var l = n(503698),
     S = n(767032),
     C = n(990521),
     f = ((i = {}).SUBSCRIBER_HOME = "SUBSCRIBER_HOME", i.NITRO_SETTINGS = "SETTINGS", i.APPLICATION_NITRO_HOME = "APPLICATION_NITRO_HOME", i);
-let b = function(e) {
+let N = function(e) {
     let {
         variant: t
     } = e, n = (0, m.cg)(), i = (0, d.Ay)(), l = (0, o.Mwr)(i) ? r.XD.BRAND_INVERTED : r.XD.BRAND;

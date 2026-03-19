@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(311907),
-    l = n(562465),
+    l = n(311907),
+    s = n(562465),
     r = n(397927),
     o = n(384904),
     d = n(803306),
@@ -54,7 +54,7 @@ let g = [{
 }];
 
 function _() {
-    let [e, t] = i.useState(!1), n = (0, s.bG)([u.default], () => u.default.getCurrentUser()), _ = (0, c.Lh)(), f = (0, s.bG)([m.A], () => m.A.getPremiumTypeSubscription()), v = null != _ ? p.VD[_]?.tenureReqNumMonths ?? 0 : 0, b = i.useCallback(async e => {
+    let [e, t] = i.useState(!1), n = (0, l.bG)([u.default], () => u.default.getCurrentUser()), _ = (0, c.Lh)(), f = (0, l.bG)([m.A], () => m.A.getPremiumTypeSubscription()), v = null != _ ? p.VD[_]?.tenureReqNumMonths ?? 0 : 0, b = i.useCallback(async e => {
         let a = new Date;
         e > 0 ? a.setMonth(a.getMonth() - e) : a.setDate(a.getDate() - 7), a.setDate(a.getDate() - 2);
         let i = {
@@ -62,7 +62,7 @@ function _() {
             endedAt: void 0,
             premium_streak_started_at: h.default.fromTimestamp(a.getTime())
         };
-        t(!0), await l.Bo.patch({
+        t(!0), await s.Bo.patch({
             url: `/debug/subscriptions/${f.id}`,
             body: i,
             rejectWithError: !1

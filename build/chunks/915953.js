@@ -29,22 +29,22 @@ function d(e) {
         onMarkerRender: S,
         stickToMarkers: C,
         fieldLayout: f,
-        usePersistentBadge: b,
-        getDismissibleBadges: N
-    } = t, [I] = s.useState(() => d()), v = h?.(), j = m(), y = g?.(), R = A?.(), O = x?.(), D = _?.(), L = b?.(), P = N?.(), G = (0, a.A)({
-        persistentBadge: L,
+        usePersistentBadge: N,
+        getDismissibleBadges: I
+    } = t, [b] = s.useState(() => d()), v = h?.(), j = m(), y = g?.(), O = A?.(), R = x?.(), L = _?.(), D = N?.(), P = I?.(), G = (0, a.A)({
+        persistentBadge: D,
         dismissibleBadges: P
     }), M = (0, r.q)(t);
     return (0, i.jsxs)(o.L, {
         children: [(0, i.jsx)(l.Apm, {
             label: j,
             description: y,
-            disabled: O,
-            initialValue: I,
+            disabled: R,
+            initialValue: b,
             value: v,
             minValue: c,
             maxValue: u,
-            defaultValue: D,
+            defaultValue: L,
             onValueRender: p,
             asValueChanges: T,
             onValueChange: e => {
@@ -56,10 +56,10 @@ function d(e) {
             stickToMarkers: C,
             layout: f,
             badge: G
-        }), null != R && (0, i.jsx)(l.Text, {
+        }), null != O && (0, i.jsx)(l.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
-            children: R
+            children: O
         })]
     })
 }

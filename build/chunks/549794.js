@@ -4,8 +4,8 @@ n.d(t, {
 }), n(323874), n(14289), n(35956);
 var i = n(420970),
     a = n(975807),
-    l = n(646865),
-    r = n(933958),
+    r = n(646865),
+    l = n(933958),
     s = n(51520),
     o = n(700475),
     d = n(969151),
@@ -40,16 +40,16 @@ let S = new Set([N.AM, N.eK]),
                     }
                 } = e;
                 (0, I.lG)(t.transport);
-                let i = r.Ay.getCurrentEmbeddedActivity();
+                let i = l.Ay.getCurrentEmbeddedActivity();
                 try {
                     let e = new URL(n).toString();
                     if (p.isPlatformEmbedded) {
-                        let e = (0, l.f)() ? T.MLl.ACTIVITY_POPOUT : null;
+                        let e = (0, r.f)() ? T.MLl.ACTIVITY_POPOUT : null;
                         m.A.focus(e, !0)
                     }
-                    let r = u.A.getApplication(t.application?.id),
+                    let l = u.A.getApplication(t.application?.id),
                         o = (0, d.H)(i?.location);
-                    if (await (0, c.u)(r?.id, e)) return (0, a.A)(e), _.default.track(T.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+                    if (await (0, c.u)(l?.id, e)) return (0, a.A)(e), _.default.track(T.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
                         application_id: t.application?.id,
                         url: e,
                         opened: !0
@@ -78,7 +78,7 @@ let S = new Set([N.AM, N.eK]),
                             })
                         }
                     }, void 0, void 0, (0, s.j)({
-                        application: r,
+                        application: l,
                         channelId: o
                     })))
                 } catch (e) {
@@ -124,8 +124,8 @@ let S = new Set([N.AM, N.eK]),
                     }
                 } = e;
                 (0, I.lG)(t.transport);
-                let l = (0, I.D2)(t.application);
-                if (null == l) throw new E.A({
+                let r = (0, I.D2)(t.application);
+                if (null == r) throw new E.A({
                     errorCode: T.Lw6.INVALID_COMMAND
                 }, "No application.");
                 if (!(0, A.n)(t.application, T.gfo.EMBEDDED)) throw new E.A({
@@ -133,7 +133,7 @@ let S = new Set([N.AM, N.eK]),
                 }, "This application cannot access this API");
                 return new Promise(e => {
                     (0, o.a)({
-                        applicationId: l,
+                        applicationId: r,
                         customId: n,
                         linkId: a,
                         message: i,

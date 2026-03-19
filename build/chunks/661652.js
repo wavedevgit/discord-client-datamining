@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    l = n(503698),
+    s = n.n(l),
     r = n(311907),
     o = n(873298),
     d = n(397927),
@@ -47,7 +47,7 @@ let N = [{
 
 function I() {
     var e;
-    let t, n, s = i.useRef(null),
+    let t, n, l = i.useRef(null),
         {
             analyticsLocations: o
         } = (0, m.Ay)(u.A.DEV_TOOLS),
@@ -79,8 +79,8 @@ function I() {
             deauthorize: n
         });
     return (0, a.jsxs)("div", {
-        ref: s,
-        className: l()(S.nd, E.n),
+        ref: l,
+        className: s()(S.nd, E.n),
         children: [(0, a.jsxs)("div", {
             className: E.k,
             children: [(0, a.jsx)(d.Heading, {

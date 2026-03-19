@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(311907),
-    l = n(692617),
-    r = n(397927),
+    r = n(692617),
+    l = n(397927),
     s = n(297413),
     o = n(775602),
     d = n(29160),
@@ -26,19 +26,19 @@ let T = e => {
         let {
             userId: t
         } = e, n = (0, E.y)(t);
-        return null == n || 0 === n.length ? (0, i.jsx)(r.Text, {
+        return null == n || 0 === n.length ? (0, i.jsx)(l.Text, {
             className: C.tE,
             variant: "text-sm/normal",
             color: "text-muted",
             children: f.intl.string(f.t.jpY0X5)
         }) : (0, i.jsxs)("div", {
             className: C.I9,
-            children: [(0, i.jsx)(l.A, {
+            children: [(0, i.jsx)(r.A, {
                 guilds: n,
                 maxGuilds: 3,
                 size: c.$v.Sizes.SMOL,
                 hideOverflowCount: !0
-            }), (0, i.jsx)(r.Text, {
+            }), (0, i.jsx)(l.Text, {
                 className: C.tE,
                 variant: "text-sm/normal",
                 color: "text-muted",
@@ -48,18 +48,18 @@ let T = e => {
             })]
         })
     },
-    N = g.Ay.getEnableHardwareAcceleration() ? r.JsQ : r.euF;
+    N = g.Ay.getEnableHardwareAcceleration() ? l.JsQ : l.euF;
 
 function S(e) {
     let {
         channel: t,
         otherUser: n,
-        active: l
-    } = e, c = (0, a.bG)([o.A], () => o.A.useReducedMotion), g = (0, a.bG)([_.A], () => null == n ? null : _.A.getNickname(n.id)), E = !c && l, S = (0, p.j)(t), {
+        active: r
+    } = e, c = (0, a.bG)([o.A], () => o.A.useReducedMotion), g = (0, a.bG)([_.A], () => null == n ? null : _.A.getNickname(n.id)), E = !c && r, S = (0, p.j)(t), {
         avatarDecorationSrc: x
     } = (0, A.A)({
         user: n,
-        size: (0, u.Te)(r._3J.SIZE_40),
+        size: (0, u.Te)(l._3J.SIZE_40),
         onlyAnimateOnHoverOrFocus: !0
     });
     return (0, i.jsxs)(i.Fragment, {
@@ -67,7 +67,7 @@ function S(e) {
             className: C.my,
             src: (0, h.Y)(t, 40, E),
             avatarDecoration: x,
-            size: r._3J.SIZE_40,
+            size: l._3J.SIZE_40,
             "aria-label": n?.username ?? f.intl.string(f.t["30mdIx"])
         }), (0, i.jsxs)("div", {
             className: C.yt,
@@ -80,7 +80,7 @@ function S(e) {
                     className: C.I8,
                     usernameClass: C.Xh,
                     discriminatorClass: null != m.Ay.getGlobalName(n) ? C.vl : C.D2
-                }), (0, i.jsx)(r.Text, {
+                }), (0, i.jsx)(l.Text, {
                     className: C.L7,
                     color: "text-muted",
                     variant: "text-xs/normal",
@@ -90,7 +90,7 @@ function S(e) {
                 hoverText: (0, i.jsx)(I.A, {
                     channel: t
                 }),
-                forceHover: l,
+                forceHover: r,
                 children: (0, i.jsx)(T, {
                     userId: n.id
                 })

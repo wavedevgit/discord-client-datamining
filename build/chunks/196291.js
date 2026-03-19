@@ -23,16 +23,16 @@ var i = n(627968),
     S = n(954571),
     C = n(927578),
     f = n(884546),
-    b = n(597551),
-    N = n(230084),
-    I = n(180020),
+    N = n(597551),
+    I = n(230084),
+    b = n(180020),
     v = n(212168),
     j = n(730588),
     y = n(63675),
-    R = n(253604),
-    O = n(652215),
-    D = n(788868),
-    L = n(355097),
+    O = n(253604),
+    R = n(652215),
+    L = n(788868),
+    D = n(355097),
     P = n(985018),
     G = n(567567);
 
@@ -60,28 +60,28 @@ function M(e) {
         preset: Y,
         onShuffle: z
     } = (0, _.A)(), X = s.useRef(null);
-    (0, b.A)(X, L._F.TRY_IT_OUT);
+    (0, N.A)(X, D._F.TRY_IT_OUT);
     let {
         analyticsLocations: W,
         newestAnalyticsLocation: K,
         sourceAnalyticsLocations: Z
     } = (0, d.Ay)(o.A.USER_SETTINGS_TRY_OUT_PREMIUM), q = e => {
-        e && ((0, r.zq)(H), (0, T.Zz)(B), (0, T.Dv)(F), S.default.track(O.HAw.TRY_IT_OUT_PRESET_SELECTED, {
+        e && ((0, r.zq)(H), (0, T.Zz)(B), (0, T.Dv)(F), S.default.track(R.HAw.TRY_IT_OUT_PRESET_SELECTED, {
             preset: Y
         }))
     };
     s.useEffect(() => {
-        n && S.default.track(O.HAw.PREMIUM_UPSELL_VIEWED, {
-            type: D.e.PREMIUM_PROFILE_TRY_IT_OUT,
+        n && S.default.track(R.HAw.PREMIUM_UPSELL_VIEWED, {
+            type: L.e.PREMIUM_PROFILE_TRY_IT_OUT,
             location: {
-                page: O.liQ.USER_SETTINGS
+                page: R.liQ.USER_SETTINGS
             },
             location_stack: Z
         })
     }, [Z, t, n]);
-    let J = (0, u.V)()?.subscription_trial?.sku_id === D.pe.TIER_2,
+    let J = (0, u.V)()?.subscription_trial?.sku_id === L.pe.TIER_2,
         Q = (0, c.O)(),
-        $ = (0, g.U9)(Q, D.pe.TIER_2);
+        $ = (0, g.U9)(Q, L.pe.TIER_2);
     return M ? (0, i.jsx)(d.f5, {
         value: W,
         children: (0, i.jsxs)(v.A, {
@@ -104,7 +104,7 @@ function M(e) {
                     children: [(0, i.jsx)(m.A, {
                         preset: Y,
                         onShuffle: z
-                    }), (0, i.jsx)(R.A, {
+                    }), (0, i.jsx)(O.A, {
                         user: t
                     })]
                 }),
@@ -136,14 +136,14 @@ function M(e) {
                         showRemoveBannerButton: null != F,
                         onBannerChange: T.xe,
                         showPremiumIcon: !1
-                    }), !k && (0, i.jsx)(N.A, {
+                    }), !k && (0, i.jsx)(I.A, {
                         className: G.fz,
                         isTryItOut: !0,
                         onAvatarChange: T.e$,
                         showRemoveAvatarButton: !1,
                         changeAvatarButtonText: P.intl.string(P.t["7z0D1c"]),
                         sectionTitle: P.intl.string(P.t.vtFfPX)
-                    }), (0, i.jsx)(I.A, {
+                    }), (0, i.jsx)(b.A, {
                         user: t,
                         className: G.fz
                     }), !J && (0, i.jsx)(a.Text, {
@@ -171,8 +171,8 @@ function M(e) {
                 children: [(0, i.jsx)("div", {
                     className: G.BU
                 }), (0, i.jsx)(x.Ay, {
-                    type: D.e.CUSTOM_PROFILE_TRY_OUT_UPSELL,
-                    subscriptionTier: D.pe.TIER_2
+                    type: L.e.CUSTOM_PROFILE_TRY_OUT_UPSELL,
+                    subscriptionTier: L.pe.TIER_2
                 })]
             })]
         })

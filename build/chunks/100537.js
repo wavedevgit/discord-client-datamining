@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    r = n(503698),
+    l = n.n(r),
     s = n(311907),
     o = n(827734),
     d = n(421380),
@@ -40,7 +40,7 @@ let D = {
 function M(e) {
     let {
         frame: t
-    } = e, n = (0, p.h)(t.applicationId), l = (0, u.A)(), {
+    } = e, n = (0, p.h)(t.applicationId), r = (0, u.A)(), {
         selectedChannelId: M,
         selectedVoiceChannelId: j
     } = (0, s.cf)([S.A], () => ({
@@ -70,7 +70,7 @@ function M(e) {
         return e.observe(V.current), () => e.disconnect()
     }, []), a.useEffect(() => {
         let e = e => {
-            null == k.current || (0, c.HG$)(k.current, e.target) || l || x.A.updateFrameLayoutMode({
+            null == k.current || (0, c.HG$)(k.current, e.target) || r || x.A.updateFrameLayoutMode({
                 applicationId: t.applicationId,
                 layoutMode: b.y.PIP
             })
@@ -78,7 +78,7 @@ function M(e) {
         return document.addEventListener("mousedown", e), () => {
             document.removeEventListener("mousedown", e)
         }
-    }, [t.applicationId, l]);
+    }, [t.applicationId, r]);
     let W = B.width / Math.max(B.height, 1) < L.B5,
         K = 0,
         q = 0,
@@ -96,7 +96,7 @@ function M(e) {
     return (0, i.jsx)(c.NPJ, {
         theme: O.NJ8.DARK,
         children: e => (0, i.jsxs)("div", {
-            className: r()(P.iE, D[$], e),
+            className: l()(P.iE, D[$], e),
             ref: k,
             style: {
                 right: w && !Number.isNaN(X) ? X : 0
@@ -106,7 +106,7 @@ function M(e) {
             }), (0, i.jsx)("div", {
                 className: P.lq,
                 children: (0, i.jsx)("div", {
-                    className: r()(P.ht, {
+                    className: l()(P.ht, {
                         [P.kK]: z
                     }),
                     style: {

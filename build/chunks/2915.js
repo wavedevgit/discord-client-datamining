@@ -5,8 +5,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    l = n(503698),
+    s = n.n(l),
     r = n(334279),
     o = n(421380),
     d = n(397927),
@@ -30,11 +30,11 @@ let _ = {
         let t, {
                 entitlement: n,
                 active: i,
-                onDelete: s
+                onDelete: l
             } = e,
             r = e => null != e ? (0, u.i$)(e, "LLL") : "---";
         return (0, a.jsxs)("div", {
-            className: l()(x.Nr, i ? p.C1 : ""),
+            className: s()(x.Nr, i ? p.C1 : ""),
             children: [(0, a.jsxs)(d.Text, {
                 variant: "text-md/normal",
                 children: ["ID: ", n.id, " "]
@@ -52,12 +52,12 @@ let _ = {
             }), (0, a.jsxs)(d.Text, {
                 variant: "text-md/normal",
                 children: ["Entitlement source type: ", null != (t = n.sourceType) && t in _ ? _[t] : `Unknown source type ${t}`]
-            }), i && null != s && (0, a.jsx)(o.$n, {
+            }), i && null != l && (0, a.jsx)(o.$n, {
                 className: x.RW,
                 size: o.$n.Sizes.TINY,
                 color: o.$n.Colors.RED,
                 look: o.$n.Looks.OUTLINED,
-                onClick: s,
+                onClick: l,
                 children: "Delete"
             })]
         })
@@ -77,7 +77,7 @@ let _ = {
     }];
 
 function b() {
-    let [e, t] = i.useState(!1), [n, s] = i.useState(r.j.PREMIUM_TIER_2_1_HOUR), [u, _] = i.useState([]), [b, j] = i.useState([]), {
+    let [e, t] = i.useState(!1), [n, l] = i.useState(r.j.PREMIUM_TIER_2_1_HOUR), [u, _] = i.useState([]), [b, j] = i.useState([]), {
         refreshEntitlementList: A,
         grantFractionalPremium: C,
         deleteFractionalPremium: y,
@@ -136,12 +136,12 @@ function b() {
                 style: {
                     marginBottom: "8px"
                 },
-                className: l()([x.uW, p.Uo]),
+                className: s()([x.uW, p.Uo]),
                 children: [(0, a.jsx)(d.l6P, {
                     label: "Fractional Premium SKU",
                     value: n,
                     options: v,
-                    onSelectionChange: s,
+                    onSelectionChange: l,
                     selectionMode: "single",
                     fullWidth: !0
                 }), (0, a.jsx)(d.Button, {

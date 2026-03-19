@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    l = n(503698),
+    s = n.n(l),
     r = n(311907),
     o = n(562465),
     d = n(397927),
@@ -67,7 +67,7 @@ let b = async () => (await o.Bo.get({
 function A() {
     let e = (0, r.bG)([x.A], () => x.A.getPremiumTypeSubscription()),
         t = (0, r.bG)([h.default], () => h.default.getCurrentUser()),
-        [n, s] = i.useState("511651880837840896"),
+        [n, l] = i.useState("511651880837840896"),
         [m, _] = i.useState([]),
         [A, C] = i.useState(!1),
         y = i.useCallback(async () => {
@@ -114,14 +114,14 @@ function A() {
                     onClick: y
                 })]
             }), (0, a.jsx)("section", {
-                className: l()([f.uW, f.Uo]),
+                className: s()([f.uW, f.Uo]),
                 children: null == e && (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)(d.l6P, {
                         label: "Premium Plan",
                         hideLabel: !0,
                         value: n,
                         options: j,
-                        onSelectionChange: s,
+                        onSelectionChange: l,
                         selectionMode: "single",
                         fullWidth: !0
                     }), (0, a.jsx)(d.Button, {
@@ -139,7 +139,7 @@ function A() {
                 className: v.wx,
                 children: "Bulk Actions"
             }), (0, a.jsx)("section", {
-                className: l()([f.uW, f.Uo]),
+                className: s()([f.uW, f.Uo]),
                 children: (0, a.jsx)(d.Button, {
                     variant: "primary",
                     size: "sm",

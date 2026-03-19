@@ -29,10 +29,10 @@ function E(e) {
         sectionTitle: S,
         forcedDivider: C = !1,
         withTutorial: f = !1,
-        showBorder: b = !1
+        showBorder: N = !1
     } = e, {
-        analyticsLocations: N
-    } = (0, d.Ay)(), I = _.Ay.canUsePremiumProfileCustomization(t), v = (0, m.N2)({
+        analyticsLocations: I
+    } = (0, d.Ay)(), b = _.Ay.canUsePremiumProfileCustomization(t), v = (0, m.N2)({
         user: t,
         guildId: n?.id
     }), {
@@ -40,27 +40,27 @@ function E(e) {
         errors: y
     } = (0, m.nZ)(n?.id);
     s.useEffect(() => {
-        I && u.default.track(x.HAw.PREMIUM_UPSELL_VIEWED, {
+        b && u.default.track(x.HAw.PREMIUM_UPSELL_VIEWED, {
             type: h.e.PROFILE_EFFECTS_INLINE_SETTINGS,
-            location_stack: N
+            location_stack: I
         })
-    }, [I, N]);
-    let R = f ? o.wLn : r.$n;
+    }, [b, I]);
+    let O = f ? o.wLn : r.$n;
     return (0, i.jsx)(g.A, {
         forcedDivider: C,
         borderType: A.i.PREMIUM,
         hasBackground: !0,
         title: S,
-        showBorder: b,
+        showBorder: N,
         errors: y,
         className: E,
         children: (0, i.jsxs)("div", {
             className: T.NC,
-            children: [(0, i.jsx)(R, {
+            children: [(0, i.jsx)(O, {
                 size: r.$n.Sizes.SMALL,
                 onClick: () => {
                     (0, c.W)({
-                        analyticsLocations: N,
+                        analyticsLocations: I,
                         guild: n,
                         initialSelectedEffect: l
                     })

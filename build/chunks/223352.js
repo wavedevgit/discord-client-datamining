@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    l = n(503698),
+    s = n.n(l),
     r = n(497766),
     o = n(311907),
     d = n(397927),
@@ -23,11 +23,11 @@ let v = e => {
     let {
         isFullyExpanded: t,
         partnerBranding: n
-    } = e, s = (0, g.q)().label, v = (0, o.bG)([c.A], () => c.A.useReducedMotion), {
+    } = e, l = (0, g.q)().label, v = (0, o.bG)([c.A], () => c.A.useReducedMotion), {
         quest: b
     } = i.useContext(p.T), {
         expansionSpring: j
-    } = i.useContext(x.PW), A = s ? -4 : 6;
+    } = i.useContext(x.PW), A = l ? -4 : 6;
     return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(r.animated.div, {
             className: f.tE,
@@ -58,8 +58,8 @@ let v = e => {
                 }
             })
         }), (0, a.jsxs)(r.animated.div, {
-            className: l()(f.pm, {
-                [f.nd]: s
+            className: s()(f.pm, {
+                [f.nd]: l
             }),
             style: {
                 transform: (0, r.to)([j.to({
@@ -71,18 +71,18 @@ let v = e => {
                 })], (e, t) => `translate(${e}px, ${t}px)`)
             },
             children: [(0, a.jsx)("div", {
-                className: l()({
-                    [f.Iu]: !s
+                className: s()({
+                    [f.Iu]: !l
                 }),
                 children: n
             }), (0, a.jsx)(r.animated.div, {
-                className: l()(f.ol, {
-                    [f.yZ]: s
+                className: s()(f.ol, {
+                    [f.yZ]: l
                 }),
                 style: {
                     opacity: (0, h.a)(j.to({
                         range: [0, 1],
-                        output: [s ? 1 : .7, 0]
+                        output: [l ? 1 : .7, 0]
                     }))
                 },
                 children: (0, a.jsx)(d.Text, {

@@ -6,8 +6,8 @@ n.d(t, {
 var a = n(627968);
 n(64700);
 var i = n(397927),
-    s = n(970931),
-    l = n(253932),
+    l = n(970931),
+    s = n(253932),
     r = n(927813),
     o = n(427262),
     d = n(146901),
@@ -39,31 +39,31 @@ function p(e) {
     let {
         status: t,
         currentStatus: n,
-        description: s
-    } = e, l = t !== u.clD.ONLINE, r = (0, a.jsx)(a.Fragment, {
+        description: l
+    } = e, s = t !== u.clD.ONLINE, r = (0, a.jsx)(a.Fragment, {
         children: h.map(e => {
             let {
-                duration: s,
-                label: l
+                duration: l,
+                label: s
             } = e;
             return (0, a.jsx)(i.Drp, {
-                id: `${t}-${s}`,
-                label: l(),
+                id: `${t}-${l}`,
+                label: s(),
                 action: () => (0, c.A)({
                     nextStatus: t,
                     prevStatus: n,
-                    durationMillis: s
+                    durationMillis: l
                 }),
                 dontCloseOnAction: !0
-            }, s ?? x)
+            }, l ?? x)
         })
     });
     return (0, a.jsx)(i.Drp, {
         id: t,
         keepItemStyles: !0,
-        hasSubmenu: l,
+        hasSubmenu: s,
         label: (0, o.MU)(t),
-        subtext: s,
+        subtext: l,
         iconLeft: () => (0, a.jsx)(i.nW6, {
             status: t,
             size: 10
@@ -79,7 +79,7 @@ function p(e) {
             })
         },
         dontCloseOnAction: !0,
-        children: l ? r : void 0
+        children: s ? r : void 0
     })
 }
 
@@ -99,9 +99,9 @@ function g(e) {
 }
 
 function _(e) {
-    let t = l.CY.useSetting(),
-        n = (0, s.kB)(),
-        r = l.Jr.useSetting(),
+    let t = s.CY.useSetting(),
+        n = (0, l.kB)(),
+        r = s.Jr.useSetting(),
         o = e === u.clD.DND,
         d = a => {
             let i = g(t);
@@ -119,13 +119,13 @@ function _(e) {
             children: h.map(t => {
                 let {
                     duration: n,
-                    label: l
+                    label: s
                 } = t;
                 return (0, a.jsx)(i.Drp, {
                     id: `${e}-${n}`,
-                    label: l(),
+                    label: s(),
                     action: () => {
-                        (0, s.ES)(!0, n)
+                        (0, l.ES)(!0, n)
                     },
                     dontCloseOnAction: !0
                 }, n ?? x)
@@ -175,7 +175,7 @@ function _(e) {
                     })
                 }) : m.intl.string(m.t["Br1q+x"]),
                 action: () => {
-                    (0, s.ES)(!n)
+                    (0, l.ES)(!n)
                 },
                 dontCloseOnAction: !0,
                 children: c

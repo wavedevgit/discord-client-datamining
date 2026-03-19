@@ -47,7 +47,7 @@ function S(e) {
     } else t = T.intl.formatToPlainString(T.t.eNXZ5O, {
         planName: f
     });
-    let b = n.hasFreePremium() || null != r && r.isPurchasedExternally;
+    let N = n.hasFreePremium() || null != r && r.isPurchasedExternally;
     return (0, i.jsxs)("div", {
         className: E.Bh,
         children: [(0, i.jsx)("div", {
@@ -68,7 +68,7 @@ function S(e) {
                 children: T.intl.format(T.t.LzobT9, {
                     planName: f
                 })
-            }), !b && (0, i.jsx)(d.Heading, {
+            }), !N && (0, i.jsx)(d.Heading, {
                 className: E.gj,
                 variant: "heading-sm/semibold",
                 color: "text-default",

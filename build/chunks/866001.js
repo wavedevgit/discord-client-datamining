@@ -4,8 +4,8 @@ n.d(t, {
 }), n(172879);
 var a = n(627968),
     i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    l = n(503698),
+    s = n.n(l),
     r = n(985623),
     o = n.n(r),
     d = n(989349),
@@ -114,7 +114,7 @@ function w(e) {
     let {
         actionLog: t,
         initialHeight: n
-    } = e, s = i.useMemo(() => t.error ? [...O, {
+    } = e, l = i.useMemo(() => t.error ? [...O, {
         id: "error",
         name: (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsx)(f.A, {
@@ -128,7 +128,7 @@ function w(e) {
             } = e;
             return (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsx)("div", {
-                    className: l()(E.u4, N.KE),
+                    className: s()(E.u4, N.KE),
                     children: (0, a.jsx)("div", {
                         className: N.R5,
                         children: (0, a.jsx)(m.$n, {
@@ -150,19 +150,19 @@ function w(e) {
         TabBar: r,
         renderSelectedTab: o
     } = (0, T.Ay)({
-        tabs: s
-    }, [s]);
+        tabs: l
+    }, [l]);
     return (0, a.jsxs)(C.A, {
         className: E.rf,
         minHeight: 100,
         initialHeight: n,
         children: [(0, a.jsx)(r, {}), (0, a.jsxs)(p.Ay, {
-            className: l()(N.jr, E.nZ),
+            className: s()(N.jr, E.nZ),
             children: [(0, a.jsx)(p.Ay.Icon, {
                 icon: h.KBH,
                 tooltip: t.name
             }), (0, a.jsx)(p.Ay.Title, {
-                wrapperClassName: l()(N.qd, N.ZE),
+                wrapperClassName: s()(N.qd, N.ZE),
                 className: N.Pz,
                 children: t.name
             }), (0, a.jsx)(p.Ay.Icon, {
@@ -232,7 +232,7 @@ let D = [{
 function P() {
     let e = i.useRef(null),
         [t, n] = i.useState(""),
-        s = function(e) {
+        l = function(e) {
             let [t, n] = i.useState(e.logs);
             return i.useEffect(() => {
                 let t = o()(() => {
@@ -243,10 +243,10 @@ function P() {
                 }
             }, [e]), t
         }(x.h.actionLogger),
-        r = i.useMemo(() => s.map(e => ({
+        r = i.useMemo(() => l.map(e => ({
             key: e.id.toString(),
             actionLog: e
-        })).toReversed(), [s]),
+        })).toReversed(), [l]),
         [d, c] = i.useState(r),
         [m, p] = i.useState(r),
         [g, f] = i.useState(!1),
@@ -263,7 +263,7 @@ function P() {
         S = g ? "Enable Event Tracking" : "Pause Event Tracking";
     return (0, a.jsxs)("div", {
         ref: e,
-        className: l()(N.nd, E.nd),
+        className: s()(N.nd, E.nd),
         children: [(0, a.jsxs)("div", {
             className: E.KE,
             children: [(0, a.jsx)(u.m, {

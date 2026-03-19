@@ -4,8 +4,8 @@ n.d(t, {
 }), n(323874), n(14289), n(35956);
 var i = n(627968),
     a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    r = n(503698),
+    l = n.n(r),
     s = n(873263),
     o = n(835245),
     d = n(110259),
@@ -58,8 +58,8 @@ var i = n(627968),
     en = n(475529),
     ei = n(654487),
     ea = n(652215),
-    el = n(758836),
-    er = n(613057),
+    er = n(758836),
+    el = n(613057),
     es = n(985018),
     eo = n(467303),
     ed = n(318808),
@@ -77,13 +77,13 @@ function eg(e) {
         enabled: n
     } = (0, D.Z)({
         location: ei.rE.QUEST_HOME_DESKTOP
-    }), l = (0, c.bG)([_.A], () => _.A.useReducedMotion), s = (0, c.bG)([j.A], () => j.A.isFocused()), {
+    }), r = (0, c.bG)([_.A], () => _.A.useReducedMotion), s = (0, c.bG)([j.A], () => j.A.isFocused()), {
         ref: o,
         inViewport: d
     } = (0, $.p)(), u = a.useRef(null);
     if (a.useEffect(() => {
-            u?.current != null && (u.current.paused || s && d && !l ? u.current.paused && !l && d && s && u.current.play() : u.current.pause())
-        }, [l, d, s]), n) {
+            u?.current != null && (u.current.paused || s && d && !r ? u.current.paused && !r && d && s && u.current.play() : u.current.pause())
+        }, [r, d, s]), n) {
         let e = (0, U.TM)();
         return (0, i.jsx)(C.A, {
             ref: e => {
@@ -92,7 +92,7 @@ function eg(e) {
             loop: !0,
             muted: !0,
             playsInline: !0,
-            className: r()(eo.BW, eo.Lk),
+            className: l()(eo.BW, eo.Lk),
             onProgress: t,
             "data-mtctest-ignore": "true",
             controls: !1,
@@ -104,7 +104,7 @@ function eg(e) {
     }
     return (0, i.jsx)("img", {
         src: ed.Ay,
-        className: r()(eo.BW, eo.J6),
+        className: l()(eo.BW, eo.J6),
         alt: "",
         onLoad: t
     })
@@ -117,16 +117,16 @@ function ep(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("img", {
             src: eA.Ay,
-            className: r()(eo.BW, eo.rZ),
+            className: l()(eo.BW, eo.rZ),
             alt: ""
         }), (0, i.jsx)("img", {
             src: e_.Ay,
-            className: r()(eo.BW, eo.rZ),
+            className: l()(eo.BW, eo.rZ),
             alt: "",
             onLoad: t
         }), (0, i.jsx)("img", {
             src: eh.Ay,
-            className: r()(eo.BW, eo.rZ),
+            className: l()(eo.BW, eo.rZ),
             alt: ""
         })]
     })
@@ -136,7 +136,7 @@ function eE(e) {
     let {
         renderBanner: t,
         children: n,
-        header: l,
+        header: r,
         withQuestsGrid: s = !0
     } = e, {
         isInDiscoverQuestHomeTab: o,
@@ -155,12 +155,14 @@ function eE(e) {
         enabled: g
     } = H.sn.useConfig({
         location: ei.rE.QUEST_HOME_DESKTOP
-    }), p = a.useRef(null), E = a.useCallback(() => {
-        p.current?.resetSortingFiltering()
+    }), p = a.useRef(null), E = a.useCallback(e => {
+        p.current?.resetSortingFiltering(), requestAnimationFrame(() => {
+            p.current?.scrollToQuest(e)
+        })
     }, []);
     return (0, i.jsxs)(et.X.Provider, {
         value: u,
-        children: [l, (0, i.jsxs)(L.A, {
+        children: [r, (0, i.jsxs)(L.A, {
             onScroll: d,
             ref: u,
             children: [function() {
@@ -175,7 +177,7 @@ function eE(e) {
                 return t()
             }(), (0, i.jsx)(v.A, {
                 children: (0, i.jsxs)("div", {
-                    className: r()(eo.Qs, {
+                    className: l()(eo.Qs, {
                         [eo.HR]: g && !m && A !== Y.NC.ALL
                     }),
                     children: [n, s ? A === Y.NC.CLAIMED ? (0, i.jsx)(X.A, {
@@ -191,7 +193,7 @@ function eE(e) {
 let eI = function(e) {
     let {
         topLevelRoute: t
-    } = e, n = (0, s.zy)(), l = (0, s.W6)(), _ = a.useMemo(() => (0, R.B)(n.pathname, ea.BVt.QUEST_HOME_DEPRECATED)?.isExact === !0, [n.pathname]), C = (0, c.bG)([E.A], () => E.A.getState("quests")), {
+    } = e, n = (0, s.zy)(), r = (0, s.W6)(), _ = a.useMemo(() => (0, R.B)(n.pathname, ea.BVt.QUEST_HOME_DEPRECATED)?.isExact === !0, [n.pathname]), C = (0, c.bG)([E.A], () => E.A.getState("quests")), {
         selectedTab: v,
         onSelectTab: L,
         tabs: j
@@ -244,7 +246,7 @@ let eI = function(e) {
                 sectionType: ea.JJy.ORBS_BALANCE_MENU,
                 ctaObject: ea.ZSU.CTA_TO_ORBS_SHOP
             }), (0, I.Cz)({
-                tab: el.G2.ORBS,
+                tab: er.G2.ORBS,
                 analyticsLocations: [],
                 analyticsSource: m.A.ORBS_BALANCE_MENU
             })
@@ -264,7 +266,7 @@ let eI = function(e) {
         if (eA && i === Y.NC.PREVIEW_TOOL) {
             let t = e.get(Y.L1.QUEST_ID);
             p.A.openNativeAppModal("quests", ea.e$_.DEEP_LINK, {
-                type: er.XK.QUEST_PREVIEW_TOOL,
+                type: el.XK.QUEST_PREVIEW_TOOL,
                 params: {
                     questId: t,
                     tab: i
@@ -273,21 +275,21 @@ let eI = function(e) {
             return
         }
         let a = performance.getEntriesByType("navigation")[0];
-        if ("POP" === l.action && a?.type === "navigate" && t && i !== Y.NC.PREVIEW_TOOL) {
+        if ("POP" === r.action && a?.type === "navigate" && t && i !== Y.NC.PREVIEW_TOOL) {
             let t = (0, k.uJ)(n.hash) ? null : n.hash.substring(1),
                 a = e.get(Y.L1.SORT),
-                l = e.get(Y.L1.FILTER);
+                r = e.get(Y.L1.FILTER);
             p.A.openNativeAppModal("quests", ea.e$_.DEEP_LINK, {
-                type: er.XK.QUEST_HOME,
+                type: el.XK.QUEST_HOME,
                 params: {
                     questId: (0, k.uJ)(t) ? void 0 : t,
                     sort: a,
-                    filter: l,
+                    filter: r,
                     tab: i
                 }
             })
         }
-    }, [n.search, C, eA, l.action, n.hash, t]), a.useEffect(() => {
+    }, [n.search, C, eA, r.action, n.hash, t]), a.useEffect(() => {
         t && (0, T.Dr)(u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING)
     }, [t]);
     let eh = a.useCallback(() => {
@@ -301,13 +303,13 @@ let eI = function(e) {
             })
         }, []),
         e_ = a.useCallback(e => {
-            l.replace({
-                ...l.location,
+            r.replace({
+                ...r.location,
                 hash: void 0
             }), ec.current?.scrollToTop({
                 animate: !1
             }), L(e)
-        }, [l, L]);
+        }, [r, L]);
     return (0, i.jsx)(J.M.Provider, {
         value: {
             onAssetLoadComplete: $
@@ -321,7 +323,7 @@ let eI = function(e) {
                 selectedTab: v
             }), [_, U, e_, ec, v]),
             children: (0, i.jsx)("div", {
-                className: r()(eo.kL, {
+                className: l()(eo.kL, {
                     [eo.KY]: !t
                 }),
                 children: _ ? (0, i.jsx)(eE, {
@@ -370,7 +372,7 @@ let eI = function(e) {
                                 variant: "overlay-primary",
                                 text: es.intl.string(es.t["1Wm127"]),
                                 onClick: () => (0, I.Cz)({
-                                    tab: el.G2.ORBS,
+                                    tab: er.G2.ORBS,
                                     analyticsLocations: [],
                                     analyticsSource: m.A.INTRO_TO_ORBS_QUEST_BANNER
                                 })
@@ -380,9 +382,9 @@ let eI = function(e) {
                                 onClick: ee
                             })]
                         }),
-                        className: r()(eo.cI, eo.GF),
+                        className: l()(eo.cI, eo.GF),
                         children: [(0, i.jsx)("div", {
-                            className: r()(eo.nY, eo.vu)
+                            className: l()(eo.nY, eo.vu)
                         }), (0, i.jsx)(eg, {
                             onLoadComplete: $
                         })]

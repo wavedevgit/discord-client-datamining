@@ -1,10 +1,10 @@
 /** chunk id: 355443 params = (module,exports,require) **/
 n.d(t, {
-    H: () => l
+    H: () => r
 });
 var i = n(179771),
     a = n(672162);
-let l = {
+let r = {
         [a.vd.INITIATE_IMAGE_UPLOAD]: {
             request: void 0,
             response: e => ({
@@ -91,7 +91,7 @@ let l = {
                     user: s(e).required(),
                     presence: e.object({
                         status: e.string().required(),
-                        activity: r(e).allow(null)
+                        activity: l(e).allow(null)
                     })
                 }))
             })
@@ -134,7 +134,7 @@ let l = {
             })
         }
     },
-    r = e => e.object({
+    l = e => e.object({
         session_id: e.string().optional(),
         type: e.number().optional(),
         name: e.string().required(),

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(219703);
-let l = 2 * Math.PI * 5;
+    l = n(219703);
+let s = 2 * Math.PI * 5;
 
 function r(e) {
     let {
@@ -26,7 +26,7 @@ function r(e) {
     return (0, a.jsxs)("svg", {
         width: 12,
         height: 12,
-        className: s.G,
+        className: l.G,
         children: [(0, a.jsx)("circle", {
             strokeWidth: 2,
             fill: "transparent",
@@ -35,15 +35,15 @@ function r(e) {
             cy: 6,
             stroke: "var(--opacity-white-48)"
         }), (0, a.jsx)("circle", {
-            className: s.q,
+            className: l.q,
             strokeWidth: 2,
             fill: "transparent",
             r: 5,
             cx: 6,
             cy: 6,
             stroke: "var(--white)",
-            strokeDasharray: l,
-            strokeDashoffset: l * (1 - c)
+            strokeDasharray: s,
+            strokeDashoffset: s * (1 - c)
         })]
     })
 }

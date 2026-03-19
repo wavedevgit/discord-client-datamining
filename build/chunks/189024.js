@@ -23,16 +23,16 @@ var i = n(627968),
     S = n(398523),
     C = n(612669),
     f = n(161319),
-    b = n(920050),
-    N = n(9458),
-    I = n(788868),
+    N = n(920050),
+    I = n(9458),
+    b = n(788868),
     v = n(88001),
     j = n(519412),
     y = n(985018),
-    R = n(340091),
-    O = n(998663),
-    D = n(817577),
-    L = n(419455),
+    O = n(340091),
+    R = n(998663),
+    L = n(817577),
+    D = n(419455),
     P = n(288604),
     G = n(893160),
     M = n(509442);
@@ -72,8 +72,8 @@ function U() {
                 })
             });
             (0, A.A)({
-                subscriptionTier: I.pe.TIER_2,
-                initialPlanId: I.gD.PREMIUM_GROUP_MONTH,
+                subscriptionTier: b.pe.TIER_2,
+                initialPlanId: b.gD.PREMIUM_GROUP_MONTH,
                 analyticsLocations: e
             })
         } else(0, r.mMO)(async () => {
@@ -84,7 +84,7 @@ function U() {
                 ...t
             })
         })
-    }, [U, e, w]), X = (0, N.A)(e), {
+    }, [U, e, w]), X = (0, I.A)(e), {
         currentDate: W,
         nDaysInMonth: K
     } = (0, s.useMemo)(() => {
@@ -96,14 +96,14 @@ function U() {
     }, []);
     return (0, s.useMemo)(() => {
         let n = [t ? {
-                id: b.PREMIUM_GROUP_CARD_ID,
+                id: N.PREMIUM_GROUP_CARD_ID,
                 title: y.intl.string(j.default.YkvksF),
                 description: (0, i.jsxs)(i.Fragment, {
                     children: [y.intl.formatToPlainString(j.default.JlyGQj, {
                         totalSeats: v.aw,
                         premiumGroupProductName: (0, v.DP)()
                     }), (0, i.jsx)("div", {
-                        className: R.LF,
+                        className: O.LF,
                         children: (0, i.jsx)(g.A, {
                             onClick: Y,
                             children: y.intl.string(j.default.yYyGJH)
@@ -111,7 +111,7 @@ function U() {
                     })]
                 }),
                 pillText: y.intl.string(y.t.oW0eUd),
-                primaryAsset: D,
+                primaryAsset: L,
                 ...U ? {
                     ctaIcon: r.tvc,
                     ctaIconPosition: "start"
@@ -119,13 +119,13 @@ function U() {
                 ctaText: y.intl.string(U ? y.t.IJI7yk : y.t.jVcuVY),
                 onCtaClick: z
             } : null, k ? {
-                id: b.RECURRING_3P_PROMOTIONS_CARD_ID,
+                id: N.RECURRING_3P_PROMOTIONS_CARD_ID,
                 title: y.intl.string(y.t.m7PucM),
                 description: y.intl.format(y.t.zh1X7u, {}),
                 subscriptionRequired: !0,
                 pillText: y.intl.string(y.t.oW0eUd),
                 caption: (0, i.jsx)("img", {
-                    src: O,
+                    src: R,
                     alt: "SteelSeries"
                 }),
                 backgroundAssetUrl: G.A,
@@ -136,15 +136,15 @@ function U() {
                 }),
                 blurTint: "#2E213D"
             } : null, {
-                id: b.DISPLAY_NAME_STYLES_CARD_ID,
+                id: N.DISPLAY_NAME_STYLES_CARD_ID,
                 title: y.intl.string(y.t.OLtTrt),
                 description: y.intl.string(y.t["di/pXR"]),
                 onCtaClick: B,
-                primaryAsset: L.A,
+                primaryAsset: D.A,
                 ctaText: y.intl.string(y.t.jVcuVY),
                 pillText: y.intl.string(y.t.y2b7CA)
             }, {
-                id: b.CLIENT_THEMES_CARD_ID,
+                id: N.CLIENT_THEMES_CARD_ID,
                 title: y.intl.string(y.t.acc6h6),
                 description: y.intl.formatToPlainString(y.t.WQazjs, {
                     themeCount: 20
@@ -155,7 +155,7 @@ function U() {
                     (0, _.nf)(_.HP.CUSTOM_THEME)
                 }
             }, {
-                id: b.PERMADECOS_CARD_ID,
+                id: N.PERMADECOS_CARD_ID,
                 title: y.intl.string(y.t.L14NZN),
                 description: y.intl.string(y.t.eCZkAI),
                 primaryAsset: (0, i.jsx)(l.u7P, {
@@ -165,7 +165,7 @@ function U() {
                 ctaText: y.intl.string(y.t.jVcuVY),
                 onCtaClick: H
             }, {
-                id: b.CUSTOM_APP_ICONS_CARD_ID,
+                id: N.CUSTOM_APP_ICONS_CARD_ID,
                 title: y.intl.string(y.t["GU+wqh"]),
                 description: y.intl.string(y.t["1uPk1Z"]),
                 primaryAsset: P.A,

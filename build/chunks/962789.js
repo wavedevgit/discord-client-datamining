@@ -1,7 +1,7 @@
 /** chunk id: 962789 params = (module,exports,require) **/
 n.d(t, {
-    A: () => j,
-    T: () => v
+    A: () => v,
+    T: () => b
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -15,15 +15,14 @@ var i = n(627968),
     _ = n(780964),
     m = n(978304),
     g = n(840065),
-    A = n(744479),
-    x = n(871930),
-    h = n(578746),
-    p = n(531525),
-    T = n(652215),
-    E = n(985018),
-    S = n(419205);
+    A = n(505653),
+    x = n(106148),
+    h = n(650832),
+    p = n(652215),
+    T = n(985018),
+    E = n(419205);
 
-function C(e) {
+function S(e) {
     let {
         applications: t
     } = e, n = s.useMemo(() => t.sort((e, t) => c.default.compare(t.id, e.id)), [t]), l = s.useMemo(() => {
@@ -35,13 +34,13 @@ function C(e) {
         }
         let t = e.join(", "),
             s = n.length - 3;
-        return s > 0 ? E.intl.format(E.t.sHFdTg, {
+        return s > 0 ? T.intl.format(T.t.sHFdTg, {
             gameList: t,
             plusMoreHook: (e, t) => (0, i.jsx)(r.Text, {
                 tag: "span",
                 variant: "text-sm/medium",
                 color: "text-muted",
-                children: E.intl.format(E.t["EADv+4"], {
+                children: T.intl.format(T.t["EADv+4"], {
                     count: s
                 })
             }, t)
@@ -64,13 +63,13 @@ function C(e) {
                 children: (0, i.jsx)("img", {
                     src: c,
                     "aria-label": r,
-                    className: S.Kk
+                    className: E.Kk
                 })
             }, d))
         }
         let t = n.length - 3;
         return t > 0 && e.push((0, i.jsx)("div", {
-            className: S.lK,
+            className: E.lK,
             children: (0, i.jsx)(r.Text, {
                 variant: "text-xs/medium",
                 color: "text-default",
@@ -79,9 +78,9 @@ function C(e) {
         }, "omitted")), e
     }, [n]);
     return (0, i.jsxs)("div", {
-        className: S.wx,
+        className: E.wx,
         children: [(0, i.jsxs)("div", {
-            className: S.kX,
+            className: E.kX,
             children: [(0, i.jsx)(r.Text, {
                 variant: "text-md/normal",
                 color: "text-strong",
@@ -90,34 +89,33 @@ function C(e) {
                 onClick: () => {
                     (0, g.openUserSettings)(_.X.AUTHORIZED_APPS_PANEL)
                 },
-                className: S.bJ,
+                className: E.bJ,
                 children: [(0, i.jsx)(r.Text, {
                     variant: "text-xs/normal",
                     color: "interactive-text-default",
-                    children: E.intl.format(E.t.oYaYOe, {})
+                    children: T.intl.format(T.t.oYaYOe, {})
                 }), (0, i.jsx)(r._BQ, {
                     size: "xxs",
                     color: r.LU0.colors.INTERACTIVE_TEXT_DEFAULT,
-                    className: S.g7
+                    className: E.g7
                 })]
             })]
         }), (0, i.jsx)("div", {
-            className: S.yF
+            className: E.yF
         }), (0, i.jsx)("div", {
-            className: S.lJ,
+            className: E.lJ,
             children: d
         })]
     })
 }
 
-function f() {
+function C() {
     let e = u.Zk.useSetting();
     return (0, i.jsx)(x.h, {
-        setting: p.H.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
         children: (0, i.jsx)(h.Ay, {
-            title: E.intl.string(E.t.XpBObB),
-            note: E.intl.format(E.t.oZsHTD, {
-                helpdeskArticle: d.A.getArticleURL(T.MVz.SLAYER_GAME_FRIENDS)
+            title: T.intl.string(T.t.XpBObB),
+            note: T.intl.format(T.t.oZsHTD, {
+                helpdeskArticle: d.A.getArticleURL(p.MVz.SLAYER_GAME_FRIENDS)
             }),
             value: e,
             onChange: u.Zk.updateSetting
@@ -125,24 +123,23 @@ function f() {
     })
 }
 
-function b() {
+function f() {
     let e = u.TA.useSetting(),
         t = e === l.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET ? l.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL : e,
         n = [{
-            name: E.intl.string(E.t.JIFnN9),
+            name: T.intl.string(T.t.JIFnN9),
             value: l.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL
         }, {
-            name: E.intl.string(E.t.rRdsk1),
+            name: T.intl.string(T.t.rRdsk1),
             value: l.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_USERS_WITH_GAME
         }, {
-            name: E.intl.string(E.t.AolKwN),
+            name: T.intl.string(T.t.AolKwN),
             value: l.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE
         }];
     return (0, i.jsxs)(x.h, {
-        setting: p.H.PRIVACY_AND_SAFETY_IN_GAME_DMS,
         children: [(0, i.jsx)(x._, {
-            header: E.intl.string(E.t["ms+Tme"]),
-            description: E.intl.string(E.t["4NN4+/"])
+            header: T.intl.string(T.t["ms+Tme"]),
+            description: T.intl.string(T.t["4NN4+/"])
         }), (0, i.jsx)(r.z6M, {
             value: t,
             options: n,
@@ -153,17 +150,17 @@ function b() {
 
 function N() {
     return (0, i.jsxs)("div", {
-        className: S.do,
+        className: E.do,
         children: [(0, i.jsx)(r.Text, {
             variant: "text-md/medium",
             color: "text-strong",
-            className: S.xV,
-            children: E.intl.string(E.t["+0U77d"])
+            className: E.xV,
+            children: T.intl.string(T.t["+0U77d"])
         }), (0, i.jsx)(r.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: E.intl.format(E.t.V8wClM, {
-                helpdeskArticle: d.A.getArticleURL(T.MVz.SOCIAL_LAYER_CONNECTIONS)
+            children: T.intl.format(T.t.V8wClM, {
+                helpdeskArticle: d.A.getArticleURL(p.MVz.SOCIAL_LAYER_CONNECTIONS)
             })
         })]
     })
@@ -173,12 +170,12 @@ function I(e) {
     let {
         applications: t
     } = e;
-    return t.length > 0 ? (0, i.jsx)(C, {
+    return t.length > 0 ? (0, i.jsx)(S, {
         applications: t
     }) : (0, i.jsx)(N, {})
 }
 
-function v() {
+function b() {
     let {
         showLoadingIndicator: e,
         slayerSdkApplications: t
@@ -188,7 +185,7 @@ function v() {
     })
 }
 
-function j() {
+function v() {
     let {
         showLoadingIndicator: e,
         slayerSdkApplications: t
@@ -198,9 +195,9 @@ function j() {
             children: [(0, i.jsx)(I, {
                 applications: t
             }), t.length > 0 && (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(f, {}), (0, i.jsx)("div", {
-                    className: S.yF
-                }), (0, i.jsx)(b, {})]
+                children: [(0, i.jsx)(C, {}), (0, i.jsx)("div", {
+                    className: E.yF
+                }), (0, i.jsx)(f, {})]
             })]
         })
     })

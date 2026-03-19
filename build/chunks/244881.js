@@ -4,15 +4,15 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    l = n(503698),
+    s = n.n(l),
     r = n(397927),
     o = n(979286),
     d = n(194878);
 let c = () => {
     let [e, t] = i.useState(void 0);
     return (0, a.jsxs)("div", {
-        className: l()(d.kL, d.fi),
+        className: s()(d.kL, d.fi),
         children: [(0, a.jsx)(r.ksK, {
             fullWidth: !0,
             label: "Shop Layout URL Override",

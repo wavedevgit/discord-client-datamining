@@ -5,16 +5,14 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(397927),
-    l = n(871930);
+    l = n(106148);
 
 function a(e) {
     let {
         children: t,
-        description: n,
-        setting: a
+        description: n
     } = e;
     return (0, i.jsxs)(l.h, {
-        setting: a,
         children: [(0, i.jsx)(s.BJc, {
             gap: 0,
             children: t

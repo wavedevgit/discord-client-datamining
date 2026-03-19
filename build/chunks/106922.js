@@ -24,16 +24,16 @@ var i = n(627968),
     S = n(736653),
     C = n(793574),
     f = n(688810),
-    b = n(86379),
-    N = n(531260),
-    I = n(160946),
+    N = n(86379),
+    I = n(531260),
+    b = n(160946),
     v = n(459793),
     j = n(721668),
     y = n(976860),
-    R = n(780964),
-    O = n(12901),
-    D = n(840065),
-    L = n(351906),
+    O = n(780964),
+    R = n(12901),
+    L = n(840065),
+    D = n(351906),
     P = n(287809),
     G = n(166403),
     M = n(224016),
@@ -111,7 +111,7 @@ function em() {
         s = (0, u.bG)([G.A], () => G.A.getPremiumTypeSubscription()),
         l = (0, u.bG)([P.default], () => P.default.getCurrentUser()),
         r = l?.isPremiumWithPremiumGroup(),
-        o = (0, N.A)(),
+        o = (0, I.A)(),
         d = (0, B.d)(),
         c = null !== s && null !== s.planIdFromItems;
     if (!c && !o.isFractionalPremiumActive && !r) return null;
@@ -177,7 +177,7 @@ function em() {
                         U.default.track(ei.HAw.PREMIUM_SETTINGS_INTERACTED, {
                             cta_type: eo,
                             target: ed
-                        }), (0, O.default)(), (0, y.pX)(ei.BVt.APPLICATION_STORE)
+                        }), (0, R.default)(), (0, y.pX)(ei.BVt.APPLICATION_STORE)
                     },
                     variant: "overlay-secondary",
                     fullWidth: !0,
@@ -194,7 +194,7 @@ function em() {
                         U.default.track(ei.HAw.PREMIUM_SETTINGS_INTERACTED, {
                             cta_type: eo,
                             target: ed
-                        }), (0, O.default)(), (0, y.pX)(ei.BVt.APPLICATION_STORE)
+                        }), (0, R.default)(), (0, y.pX)(ei.BVt.APPLICATION_STORE)
                     },
                     text: es.intl.string(es.t.VR2iVB),
                     size: "md"
@@ -204,7 +204,7 @@ function em() {
                         U.default.track(ei.HAw.PREMIUM_SETTINGS_INTERACTED, {
                             cta_type: "to_subscriptions_button",
                             target: "subscriptions settings"
-                        }), (0, D.openUserSettings)(R.X.SUBSCRIPTIONS_PANEL)
+                        }), (0, L.openUserSettings)(O.X.SUBSCRIPTIONS_PANEL)
                     },
                     text: es.intl.string(es.t["9uDy6C"]),
                     fullWidth: !0,
@@ -311,16 +311,16 @@ function eA() {
     })
 }
 let ex = function() {
-    let e = (0, b.Hp)(),
+    let e = (0, N.Hp)(),
         {
             analyticsLocations: t
         } = (0, f.Ay)(C.A.PREMIUM_SETTINGS),
         n = (0, u.bG)([P.default], () => P.default.getCurrentUser()),
         l = (0, u.bG)([G.A], () => G.A.getPremiumTypeSubscription()),
         a = (0, u.bG)([G.A], () => G.A.hasFetchedSubscriptions()),
-        r = (0, I.Y)(et.T7),
+        r = (0, b.Y)(et.T7),
         [o, m] = s.useState(!0),
-        g = (0, N.A)({
+        g = (0, I.A)({
             forceFetch: !0
         }),
         A = (0, u.bG)([Y.A], () => {
@@ -328,16 +328,16 @@ let ex = function() {
             return null == e || "billingSettingsNitroGiftBanner" !== e.properties.properties.oneofKind ? null : e.properties.properties.billingSettingsNitroGiftBanner
         }),
         S = !(d.Fr || d.v1) && null != A,
-        y = (0, u.bG)([L.A], () => L.A.enabled),
-        R = s.useRef(null);
+        y = (0, u.bG)([D.A], () => D.A.enabled),
+        O = s.useRef(null);
     (0, X.i)();
-    let O = (0, z.m)();
+    let R = (0, z.m)();
     s.useEffect(() => {
         h.h.wait(async () => {
             y || e || await Promise.all([p.hP(), p.$o(), (0, T.zS)(null, null, ei.tF5.DISCOVERY)]), m(!1)
         })
     }, [y, e]);
-    let [D, M] = s.useState(!1);
+    let [L, M] = s.useState(!1);
     if (y) return (0, i.jsx)(E.A, {});
     if (e) return (0, i.jsx)(v.uK, {});
     let k = a && null !== l && r,
@@ -355,7 +355,7 @@ let ex = function() {
             children: [(0, i.jsxs)("div", {
                 children: [S && (0, i.jsx)(eg, {
                     config: A
-                }), (0, i.jsx)(em, {}), O && (0, i.jsx)(ee.A, {
+                }), (0, i.jsx)(em, {}), R && (0, i.jsx)(ee.A, {
                     isInSettings: !0
                 }), !S && (0, i.jsx)(eA, {}), (0, i.jsx)($.A, {
                     hideCTAs: !0,
@@ -365,14 +365,14 @@ let ex = function() {
                     selectedPlanTier: et.PremiumTypes.TIER_2
                 })]
             }), (0, i.jsx)(_.L, {
-                innerRef: R,
+                innerRef: O,
                 onChange: e => {
-                    e && !D && (U.default.track(ei.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                    e && !L && (U.default.track(ei.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                         location_stack: t
                     }), M(!0))
                 },
                 children: (0, i.jsx)("div", {
-                    ref: R,
+                    ref: O,
                     className: el._Z
                 })
             })]

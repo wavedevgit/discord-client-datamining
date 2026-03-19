@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    l = n(503698),
+    s = n.n(l),
     r = n(735438),
     o = n.n(r),
     d = n(681154),
@@ -32,7 +32,7 @@ var a = n(627968),
     k = n(661251);
 let R = [{
     key: "type",
-    cellClassName: l()(I.Hn, I.T$),
+    cellClassName: s()(I.Hn, I.T$),
     render(e) {
         let {
             type: t
@@ -44,7 +44,7 @@ let R = [{
     }
 }, {
     key: "count",
-    cellClassName: l()(I.Hn, I.MX),
+    cellClassName: s()(I.Hn, I.MX),
     render(e) {
         let {
             entries: t
@@ -92,8 +92,8 @@ function O(e) {
 function w() {
     var e;
     let t, n = (0, u.bG)([y.A], () => y.A.getFeed(N.X1.GLOBAL_FEED)),
-        s = (0, u.bG)([y.A], () => y.A.getDebugImpressionCappingDisabled()),
-        l = (0, u.bG)([C.A], () => C.A.getDebugFastImpressionCappingEnabled()),
+        l = (0, u.bG)([y.A], () => y.A.getDebugImpressionCappingDisabled()),
+        s = (0, u.bG)([C.A], () => C.A.getDebugFastImpressionCappingEnabled()),
         r = (e = n?.entries?.map(e => e.content), Object.keys(t = o().groupBy(e, e => e.content_type)).map(e => {
             let n = t[e];
             return {
@@ -169,7 +169,7 @@ function w() {
                     }
                 }), (0, a.jsx)(h.Button, {
                     variant: "primary",
-                    text: s ? "Enable Impression Capping" : "Disable Impression Capping",
+                    text: l ? "Enable Impression Capping" : "Disable Impression Capping",
                     fullWidth: !0,
                     onClick: function() {
                         x.h.dispatch({
@@ -178,7 +178,7 @@ function w() {
                     }
                 }), (0, a.jsx)(h.Button, {
                     variant: "primary",
-                    text: l ? "Disable Fast Impression Capping" : "Enable Fast Impression Capping",
+                    text: s ? "Disable Fast Impression Capping" : "Enable Fast Impression Capping",
                     fullWidth: !0,
                     onClick: function() {
                         x.h.dispatch({

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(503698),
-    l = n.n(a),
-    r = n(435371),
+    r = n.n(a),
+    l = n(435371),
     s = n(397927),
     o = n(430086),
     d = n(963169),
@@ -24,7 +24,7 @@ let h = o.GY.binds["0"],
         } = (0, c.L)();
         return (0, i.jsxs)("div", {
             className: A.y_,
-            children: [(0, i.jsx)(r.m_, {
+            children: [(0, i.jsx)(l.m_, {
                 ariaHidden: !0,
                 shouldShow: n,
                 text: u.intl.string(u.t.B9vzIP),
@@ -32,7 +32,7 @@ let h = o.GY.binds["0"],
                 children: (0, i.jsx)(s.DUT, {
                     "aria-label": u.intl.string(u.t.B9vzIP),
                     "aria-disabled": !n,
-                    className: l()(A.x6, A.aX, {
+                    className: r()(A.x6, A.aX, {
                         [A.r9]: !n
                     }),
                     onClick: () => (0, d.OE)("nav_button"),
@@ -42,7 +42,7 @@ let h = o.GY.binds["0"],
                         color: "currentColor"
                     })
                 })
-            }), (0, i.jsx)(r.m_, {
+            }), (0, i.jsx)(l.m_, {
                 ariaHidden: !0,
                 shouldShow: a,
                 text: u.intl.string(u.t["9KJ29e"]),
@@ -50,7 +50,7 @@ let h = o.GY.binds["0"],
                 children: (0, i.jsx)(s.DUT, {
                     "aria-label": u.intl.string(u.t["9KJ29e"]),
                     "aria-disabled": !a,
-                    className: l()(A.x6, A.sY, {
+                    className: r()(A.x6, A.sY, {
                         [A.r9]: !a
                     }),
                     onClick: () => (0, d.Qb)("nav_button"),

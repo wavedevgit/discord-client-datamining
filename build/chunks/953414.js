@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    l = n(503698),
+    s = n.n(l),
     r = n(311907),
     o = n(397927),
     d = n(58736),
@@ -24,16 +24,16 @@ function _(e) {
     let {
         store: t,
         dataGetter: n
-    } = e, [s, l] = i.useState(n(t));
+    } = e, [l, s] = i.useState(n(t));
     return i.useEffect(() => {
-        let e = () => l(n(t));
+        let e = () => s(n(t));
         return e(), t.addChangeListener(e), () => {
             t.removeChangeListener(e)
         }
     }, [t, n]), (0, a.jsx)(o.IpV, {
         className: p.Dx,
         children: (0, a.jsx)(c.A, {
-            data: s
+            data: l
         })
     })
 }
@@ -86,7 +86,7 @@ function b(e) {
         initialHeight: n
     } = e, {
         TabBar: i,
-        renderSelectedTab: s
+        renderSelectedTab: l
     } = (0, h.Ay)({
         tabs: v
     }, []);
@@ -95,14 +95,14 @@ function b(e) {
         minHeight: 100,
         initialHeight: n,
         children: [(0, a.jsx)(i, {}), (0, a.jsxs)(d.Ay, {
-            className: l()(x.jr, p.nZ),
+            className: s()(x.jr, p.nZ),
             children: [(0, a.jsx)(d.Ay.Icon, {
                 icon: o.gqV,
                 tooltip: t.getName()
             }), (0, a.jsx)(d.Ay.Title, {
                 children: t.getName()
             })]
-        }), s({
+        }), l({
             store: t
         })]
     })
@@ -111,21 +111,21 @@ function b(e) {
 function j() {
     let e = i.useRef(null),
         [t, n] = i.useState(""),
-        s = r.il.getAll(),
-        d = i.useMemo(() => s.map(e => ({
+        l = r.il.getAll(),
+        d = i.useMemo(() => l.map(e => ({
             key: e._dispatchToken,
             store: e
-        })).sort(g), [s]).filter(e => (function(e, t) {
+        })).sort(g), [l]).filter(e => (function(e, t) {
             let {
                 store: n
             } = e;
             return n.getName().toLowerCase().includes(t.toLowerCase())
         })(e, t)),
         [c, u] = i.useState(),
-        h = s.find(e => e._dispatchToken === c);
+        h = l.find(e => e._dispatchToken === c);
     return (0, a.jsxs)("div", {
         ref: e,
-        className: l()(x.nd, p.nd),
+        className: s()(x.nd, p.nd),
         children: [(0, a.jsx)("div", {
             className: p.KE,
             children: (0, a.jsx)(o.IWV, {

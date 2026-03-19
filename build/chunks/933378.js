@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    l = n(503698),
+    s = n.n(l),
     r = n(114046),
     o = n(311907),
     d = n(397927),
@@ -38,7 +38,7 @@ function S(e) {
     let {
         quest: t,
         useReducedMotion: n
-    } = e, s = (0, b.H1)(t.id, m.uF.QUEST_BAR_V2, m.uF.QUEST_BAR_V2), o = (0, b.Xf)({
+    } = e, l = (0, b.H1)(t.id, m.uF.QUEST_BAR_V2, m.uF.QUEST_BAR_V2), o = (0, b.Xf)({
         useReducedMotion: n
     }), c = (0, x.Ut)(), f = (0, g.go)(), {
         errorHints: j,
@@ -71,15 +71,15 @@ function S(e) {
                 children: j.map((e, n) => {
                     if (e.type === r._.EXPIRED_CREDENTIAL) {
                         let i = u.A.getAccount(e.connected_account_id, e.connected_account_type),
-                            s = (0, _.IG)(e),
-                            l = (0, _.$J)(e);
+                            l = (0, _.IG)(e),
+                            s = (0, _.$J)(e);
                         return (0, a.jsx)(T, {
-                            children: C.intl.format(s, {
+                            children: C.intl.format(l, {
                                 account_name: i?.name,
                                 onClick: () => {
                                     (0, _.v0)({
                                         quest: t,
-                                        platformType: l
+                                        platformType: s
                                     }, {
                                         content: m.uF.QUEST_BAR,
                                         ctaContent: p.Cy.DEFIBRILLATOR_RECONNECT_CONSOLE,
@@ -118,18 +118,18 @@ function S(e) {
                 variant: "text-xs/medium",
                 children: E
             }), (0, a.jsx)(d.DUT, {
-                className: l()(y.w, {
+                className: s()(y.w, {
                     [y.r9]: A
                 }),
                 onClick: () => S(),
                 children: o.render()
             })]
         }), (0, a.jsxs)("div", {
-            className: l()({
+            className: s()({
                 [y.Iu]: A
             }),
             children: [N(), 0 === j.length ? null : (0, a.jsx)(T, {
-                children: s
+                children: l
             })]
         })]
     })
@@ -138,7 +138,7 @@ let E = function(e) {
     let {
         quest: t,
         taskDetails: n
-    } = e, s = (0, o.bG)([c.A], () => c.A.useReducedMotion), l = (0, h.Du)(), r = i.useMemo(() => (0, _.bg)(t).filter(e => l.xboxAndPlaystationAccounts.find(t => t.type === e)), [l.xboxAndPlaystationAccounts, t]), {
+    } = e, l = (0, o.bG)([c.A], () => c.A.useReducedMotion), s = (0, h.Du)(), r = i.useMemo(() => (0, _.bg)(t).filter(e => s.xboxAndPlaystationAccounts.find(t => t.type === e)), [s.xboxAndPlaystationAccounts, t]), {
         steps: d,
         hasConnectedAccounts: u,
         isProgressingQuestForLaunchedGame: x,
@@ -146,12 +146,12 @@ let E = function(e) {
     } = i.useMemo(() => {
         let e = r.length > 0,
             i = e && (0, f.YL)(t),
-            s = t.config.messages.gameTitle,
+            l = t.config.messages.gameTitle,
             o = t.userStatus?.completedAt != null;
         return {
             steps: [{
                 renderContent: () => (0, a.jsx)(j.Z, {
-                    ...l,
+                    ...s,
                     quest: t,
                     sourceQuestContent: m.uF.QUEST_BAR_V2
                 }),
@@ -159,7 +159,7 @@ let E = function(e) {
             }, {
                 renderContent: () => (0, a.jsx)(A.L5, {
                     children: (0, v.ui)(t) ? C.intl.string(C.t["5tXqFe"]) : C.intl.formatToPlainString(C.t["+8JB6Y"], {
-                        gameTitle: s
+                        gameTitle: l
                     })
                 }),
                 isComplete: i || o
@@ -175,12 +175,12 @@ let E = function(e) {
             isProgressingQuestForLaunchedGame: i,
             isQuestComplete: o
         }
-    }, [l, r.length, t, n.targetMinutes]);
+    }, [s, r.length, t, n.targetMinutes]);
     return (0, a.jsx)(A.Ay, {
         heading: C.intl.string(C.t.UPWlJu),
         steps: d,
         children: u && !x && !p && (0, a.jsx)(S, {
-            useReducedMotion: s,
+            useReducedMotion: l,
             quest: t
         })
     })

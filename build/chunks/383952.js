@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    l = n(503698),
+    s = n.n(l),
     r = n(158954),
     o = n(311907),
     d = n(827734),
@@ -37,7 +37,7 @@ var a = n(627968),
 function D(e) {
     let t, {
             selfMute: n,
-            serverMute: s,
+            serverMute: l,
             suppress: D,
             awaitingRemote: M,
             iconForeground: P,
@@ -70,19 +70,19 @@ function D(e) {
             location: "MicrophoneButton"
         }),
         ee = i.useRef(null),
-        et = n || D || s,
+        et = n || D || l,
         en = (0, C.q)(et),
         {
             analyticsLocations: ea
         } = (0, h.Ay)(m.A.AUDIO_INPUT_BUTTON),
         {
             Component: ei,
-            events: es,
-            play: el
+            events: el,
+            play: es
         } = en,
-        er = s || D ? r.O1p : ei;
-    i.useEffect(() => () => el(), [et, el]);
-    let eo = (0, _.A)(n, s, D, M);
+        er = l || D ? r.O1p : ei;
+    i.useEffect(() => () => es(), [et, es]);
+    let eo = (0, _.A)(n, l, D, M);
     t = F ? {
         tooltipType: "green_void_do_not_use",
         tooltipText: I.intl.string(I.t["29gnR4"]),
@@ -131,13 +131,13 @@ function D(e) {
                 let {
                     onClick: i
                 } = e, {
-                    isShown: s
-                } = n, o = s ? r.tN5 : r.abt;
+                    isShown: l
+                } = n, o = l ? r.tN5 : r.abt;
                 return (0, a.jsxs)("div", {
                     ref: ee,
-                    className: l()(R.Lh, {
+                    className: s()(R.Lh, {
                         [R.v8]: et,
-                        [R.q6]: s
+                        [R.q6]: l
                     }),
                     children: [(0, a.jsx)(E.A, {
                         "aria-checked": et,
@@ -154,17 +154,17 @@ function D(e) {
                         onClick: eu,
                         onContextMenu: i,
                         onMouseEnter: () => {
-                            U(), es.onMouseEnter()
+                            U(), el.onMouseEnter()
                         },
                         onMouseLeave: () => {
-                            L(), es.onMouseLeave()
+                            L(), el.onMouseLeave()
                         },
                         plated: null != G,
                         redGlow: et,
                         role: "switch",
                         ...t,
                         children: ed ? (0, a.jsx)("div", {
-                            className: l()(O.U, {
+                            className: s()(O.U, {
                                 [O.z]: z
                             })
                         }) : null
@@ -172,8 +172,8 @@ function D(e) {
                         "aria-label": W ? I.intl.formatToPlainString(I.t["18wnuD"], {
                             inputDeviceName: X
                         }) : I.intl.string(I.t.fRzCbB),
-                        className: l()(R.UT, {
-                            [R.q6]: s
+                        className: s()(R.UT, {
+                            [R.q6]: l
                         }),
                         disabled: M,
                         icon: (0, a.jsx)(o, {
@@ -194,7 +194,7 @@ function D(e) {
                         tooltipPositionKey: W ? I.intl.formatToPlainString(I.t["18wnuD"], {
                             inputDeviceName: X
                         }) : void 0,
-                        tooltipShouldShow: !s,
+                        tooltipShouldShow: !l,
                         tooltipText: W ? I.intl.format(I.t["18wnuD"], {
                             inputDeviceName: X
                         }) : I.intl.string(I.t.fRzCbB)

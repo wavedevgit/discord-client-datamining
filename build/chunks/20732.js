@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(64700),
     i = n(731738),
-    s = n(831062),
-    l = n(260364),
+    l = n(831062),
+    s = n(260364),
     r = n(341915),
     o = n(561844),
     d = n(590202),
@@ -35,7 +35,7 @@ function u(e) {
                 impression_id: f.current?.getId()
             },
             sourceQuestContent: r.uF.QUEST_BAR_V2
-        }), s.A.increment({
+        }), l.A.increment({
             name: i.K.QUEST_CONTENT_RENDERING_FAILURE,
             tags: [`quest_id:${t.id}`, `quest_content:${(0,d.jO)(r.uF.QUEST_BAR)}`, "reason:asset_loading_error"]
         }))
@@ -64,6 +64,6 @@ function u(e) {
             sourceQuestContent: r.uF.QUEST_BAR_V2
         })
     }, [m, h, x, t.id, p, f]), a.useEffect(() => {
-        (!g || _) && l.A.clearTracking(), m && h && !x && !n && u && l.A.stopTracking(t.id)
+        (!g || _) && s.A.clearTracking(), m && h && !x && !n && u && s.A.stopTracking(t.id)
     }, [g, _, m, h, x, n, u, t.id])
 }

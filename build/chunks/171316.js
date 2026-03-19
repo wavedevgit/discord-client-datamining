@@ -1,88 +1,88 @@
 /** chunk id: 171316 params = (module,exports,require) **/
-e.d(_, {
-    KK: () => V,
-    NZ: () => O,
-    gr: () => s,
-    lH: () => D,
-    uM: () => a,
-    xs: () => N
+n.d(e, {
+    KK: () => f,
+    NZ: () => C,
+    gr: () => E,
+    lH: () => p,
+    uM: () => G,
+    xs: () => A
 });
-var E = e(64700),
-    A = e(311907),
-    I = e(873298),
-    T = e(444802),
-    S = e(662502),
-    n = e(93857),
-    C = e(115063),
-    R = e(899847),
-    i = e(842144),
-    l = e(704724),
-    r = e(500470),
-    u = e(834981),
-    d = e(835002);
-let N = () => {
-        let t = (0, r.x)(),
-            _ = n.p7.useControlledSetting(t?.id);
+var i = n(64700),
+    l = n(311907),
+    r = n(873298),
+    u = n(444802),
+    d = n(662502),
+    s = n(93857),
+    a = n(115063),
+    o = n(899847),
+    c = n(842144),
+    g = n(704724),
+    S = n(500470),
+    _ = n(834981),
+    T = n(835002);
+let A = () => {
+        let t = (0, S.x)(),
+            e = s.p7.useControlledSetting(t?.id);
         return null == t ? null : {
-            explicitContentNonFriendDm: (0, l.J6)({
+            explicitContentNonFriendDm: (0, g.J6)({
                 teenId: t?.id,
-                setting: _?.explicitContentNonFriendDm
+                setting: e?.explicitContentNonFriendDm
             }),
-            explicitContentFriendDm: (0, l.J6)({
+            explicitContentFriendDm: (0, g.J6)({
                 teenId: t?.id,
-                setting: _?.explicitContentFriendDm,
+                setting: e?.explicitContentFriendDm,
                 isFriend: !0
             }),
-            explicitContentGuilds: I.TO.BLUR
+            explicitContentGuilds: r.TO.BLUR
         }
     },
-    s = () => {
-        let t = (0, r.x)(),
-            _ = n.oQ.useControlledSetting(t?.id);
+    E = () => {
+        let t = (0, S.x)(),
+            e = s.oQ.useControlledSetting(t?.id);
         if (null == t) return null;
         let {
-            goreContentNonFriendDm: e,
-            goreContentFriendDm: E
-        } = _ ?? {};
+            goreContentNonFriendDm: n,
+            goreContentFriendDm: i
+        } = e ?? {};
         return {
-            goreContentNonFriendDm: (0, l.ky)(e) ? e : (0, T.jj)({
+            goreContentNonFriendDm: (0, g.ky)(n) ? n : (0, u.jj)({
                 isDm: !0
             }),
-            goreContentFriendDm: (0, l.ky)(E) ? E : (0, T.jj)({
+            goreContentFriendDm: (0, g.ky)(i) ? i : (0, u.jj)({
                 isDm: !0,
                 isFriend: !0
             }),
-            goreContentGuilds: I.TO.BLUR
+            goreContentGuilds: r.TO.BLUR
         }
     },
-    V = () => {
-        let t = (0, r.x)(),
-            _ = n.qz.useControlledSetting(t?.id),
-            e = n.yr.useControlledSetting(t?.id);
-        return null != e ? e : !!_ || _
+    f = () => {
+        let t = (0, S.x)(),
+            e = s.qz.useControlledSetting(t?.id),
+            n = s.yr.useControlledSetting(t?.id);
+        return null != n ? n : !!e || e
     };
 
-function O() {
-    let t = (0, r.x)(),
-        _ = n.up.useControlledSetting(t?.id),
-        e = E.useMemo(() => (0, C.Lx)(_), [_]);
-    return e.mutualGuilds && !e.all
+function C() {
+    let t = (0, S.x)(),
+        e = s.up.useControlledSetting(t?.id),
+        n = i.useMemo(() => (0, a.Lx)(e), [e]);
+    return n.mutualGuilds && !n.all
 }
 
-function a() {
-    return (0, u.Du)()
+function G() {
+    return (0, _.Du)()
 }
 
-function D(t) {
-    let _, e;
+function p(t) {
+    let e, n;
     return {
-        hasConsented: (_ = (0, r.k)(), (0, A.bG)([i.A], () => i.A.hasConsented(_, t))),
-        updateConsent: (e = (0, r.k)(), E.useCallback(async _ => {
-            if (null != e) try {
-                await R.Ay.updateTeenConsents(e, _ ? [t] : [], _ ? [] : [t])
+        hasConsented: (e = (0, S.k)(), (0, l.bG)([c.A], () => c.A.hasConsented(e, t))),
+        updateConsent: (n = (0, S.k)(), i.useCallback(async e => {
+            if (null != n) try {
+                await o.Ay.updateTeenConsents(n, e ? [t] : [], e ? [] : [t])
             } catch (t) {
-                S.A.showFailedToast(d.OB.GENERIC_ERROR)
+                d.A.showFailedToast(T.OB.GENERIC_ERROR)
             }
-        }, [e, t]))
+        }, [n, t]))
     }
 }

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    l = n(503698),
+    s = n.n(l),
     r = n(341915),
     o = n(890687),
     d = n(18437),
@@ -24,7 +24,7 @@ function b(e) {
     let {
         quest: t,
         className: n,
-        questContent: s,
+        questContent: l,
         contentPosition: r,
         rowIndex: m,
         impressionRef: b,
@@ -34,24 +34,24 @@ function b(e) {
             questId: t.id,
             event: f.HAw.QUEST_HOVER,
             properties: {
-                content_id: s,
-                content_name: (0, c.jO)(s),
+                content_id: l,
+                content_name: (0, c.jO)(l),
                 content_position: r
             },
             sourceQuestContent: j
         }), E && (0, h.l9)()
-    }, [N, t.id, s, E, j, r]), k = i.useCallback(() => {
+    }, [N, t.id, l, E, j, r]), k = i.useCallback(() => {
         C(!1), N({
             questId: t.id,
             event: f.HAw.QUEST_HOVER_OFF,
             properties: {
-                content_id: s,
-                content_name: (0, c.jO)(s),
+                content_id: l,
+                content_name: (0, c.jO)(l),
                 content_position: r
             },
             sourceQuestContent: j
         })
-    }, [N, t.id, s, j, r]), R = i.useContext(p.X), {
+    }, [N, t.id, l, j, r]), R = i.useContext(p.X), {
         visibilityElementRef: O,
         almostVisibleInViewport: w
     } = function(e) {
@@ -72,7 +72,7 @@ function b(e) {
         ref: e => {
             b.current = e, O.current = e
         },
-        className: l()(v.k, n),
+        className: s()(v.k, n),
         onMouseEnter: I,
         onMouseLeave: k,
         onFocus: I,
@@ -86,7 +86,7 @@ function b(e) {
             sourceQuestContent: j
         }), (0, a.jsx)(_.A, {
             quest: t,
-            questContent: s,
+            questContent: l,
             isHovering: A,
             contentPosition: r,
             rowIndex: m,
@@ -96,8 +96,7 @@ function b(e) {
         })]
     })
 }
-
-function j(e) {
+let j = i.memo(function(e) {
     return (0, a.jsx)(m.R, {
         questOrQuests: e.quest,
         questContent: e.questContent,
@@ -110,4 +109,4 @@ function j(e) {
             impressionRef: t
         })
     })
-}
+})

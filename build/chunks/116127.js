@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(311907),
     a = n(73153),
-    l = n(335934),
-    r = n(596720);
+    r = n(335934),
+    l = n(596720);
 let s = {};
 class o extends i.Ay.DeviceSettingsStore {
     static displayName = "ICYMIFiltersStore";
@@ -17,10 +17,10 @@ class o extends i.Ay.DeviceSettingsStore {
         return !0 === s.filterStaffContent
     }
     onlyShowRecentGeneratedCandidates() {
-        return !!(0, l.o$)("processRawItems", !1).contentGenerationEnabled && !0 === s.onlyShowRecentGeneratedCandidates
+        return !!(0, r.o$)("processRawItems", !1).contentGenerationEnabled && !0 === s.onlyShowRecentGeneratedCandidates
     }
     getDoubleTapBehavior() {
-        return s.doubleTapBehavior ?? r.Ai.DEFAULT
+        return s.doubleTapBehavior ?? l.Ai.DEFAULT
     }
     getState() {
         return s

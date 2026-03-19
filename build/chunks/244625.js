@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(681154),
-    r = n(311907),
+    r = n(681154),
+    l = n(311907),
     s = n(713654),
     o = n(263063),
     d = n(698441),
@@ -63,7 +63,7 @@ function E(e) {
             default:
                 return t.timestamp
         }
-    }, [t]), T = (0, r.bG)([u.A], () => u.A.getChannel(E), [E]), N = T?.guild_id ?? I, S = (0, r.bG)([A.A], () => null != N ? A.A.getGuild(N) : null, [N]), x = (0, r.bG)([h.default], () => null != f ? h.default.getUser(f) : null, [f]);
+    }, [t]), T = (0, l.bG)([u.A], () => u.A.getChannel(E), [E]), N = T?.guild_id ?? I, S = (0, l.bG)([A.A], () => null != N ? A.A.getGuild(N) : null, [N]), x = (0, l.bG)([h.default], () => null != f ? h.default.getUser(f) : null, [f]);
     return "unknown" === n ? null : (0, i.jsx)("div", {
         className: p.kL,
         children: (0, i.jsxs)("div", {
@@ -119,10 +119,10 @@ function E(e) {
                                 return g.intl.string(g.t.bYNuVx);
                             case "contentInventory":
                                 switch (t.data.content.content_type) {
-                                    case l.ContentInventoryEntryType.CUSTOM_STATUS:
+                                    case r.ContentInventoryEntryType.CUSTOM_STATUS:
                                         return g.intl.string(g.t.fxOLPR);
-                                    case l.ContentInventoryEntryType.TOP_GAME:
-                                    case l.ContentInventoryEntryType.PLAYED_GAME:
+                                    case r.ContentInventoryEntryType.TOP_GAME:
+                                    case r.ContentInventoryEntryType.PLAYED_GAME:
                                         return g.intl.string(g.t.ktOTRQ);
                                     default:
                                         return `${t.data.content.content_type}`

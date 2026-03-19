@@ -5,8 +5,8 @@ n.d(t, {
 var a = n(627968);
 n(64700);
 var i = n(503698),
-    s = n.n(i),
-    l = n(397927),
+    l = n.n(i),
+    s = n(397927),
     r = n(350246);
 let o = function(e) {
     let {
@@ -14,9 +14,9 @@ let o = function(e) {
         children: n,
         withBorder: i = !1
     } = e;
-    return (0, a.jsx)(l.M1G, {
-        children: (0, a.jsx)(l.ZpM, {
-            className: s()(r.Rx, {
+    return (0, a.jsx)(s.M1G, {
+        children: (0, a.jsx)(s.ZpM, {
+            className: l()(r.Rx, {
                 [r.aK]: i
             }),
             outline: i,

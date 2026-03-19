@@ -92,8 +92,8 @@ let E = {
                 showPartnerImage: T = !1,
                 countdownBar: C
             } = e,
-            [f, b] = s.useState(m.code),
-            [N, I] = s.useState(!1),
+            [f, N] = s.useState(m.code),
+            [I, b] = s.useState(!1),
             v = (t = m.partnerId, n = (0, a.bG)([o.A], () => (0, l.Mwr)(o.A.theme)), null == (d = E[t]) ? null : n ? d.logos.dark : d.logos.light),
             j = null == f;
         return (0, i.jsxs)("div", {
@@ -111,13 +111,13 @@ let E = {
                         }), (0, i.jsx)(l.DZT, {
                             variant: "heading-sm/medium",
                             color: "text-subtle",
-                            children: N ? x.intl.format(x.t.i2EuFO, {
+                            children: I ? x.intl.format(x.t.i2EuFO, {
                                 helpdeskArticle: c.A.getArticleURL(A.MVz.RECURRING_PROMOTION)
                             }) : j ? x.intl.string(m.body) : x.intl.format(m.bodyWithExpiration, {
                                 date: m.endDate
                             })
                         })]
-                    }), j && (N ? (0, i.jsx)(l.$nd, {
+                    }), j && (I ? (0, i.jsx)(l.$nd, {
                         icon: l.EpV,
                         variant: "critical-secondary",
                         size: "sm",
@@ -133,9 +133,9 @@ let E = {
                                 promotionId: m.id,
                                 analyticsLocations: []
                             }).then(e => {
-                                b(e.code)
+                                N(e.code)
                             }).catch(e => {
-                                I(!0), u.A.captureException(e)
+                                b(!0), u.A.captureException(e)
                             })
                         }
                     }))]

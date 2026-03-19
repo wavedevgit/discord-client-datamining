@@ -1,6 +1,6 @@
 /** chunk id: 591203 params = (module,exports,require) **/
 n.d(t, {
-    L: () => N
+    L: () => I
 });
 var i = n(627968),
     s = n(64700),
@@ -35,7 +35,7 @@ function f(e) {
     })
 }
 
-function b(e) {
+function N(e) {
     let {
         guildId: t
     } = e, n = (0, l.bG)([T.A], () => T.A.settings.guilds?.guilds?.[t]?.joinSound), s = f(n);
@@ -61,7 +61,7 @@ function b(e) {
         })]
     })
 }
-let N = (0, u.E2)(p.X.ENTRANCE_SOUNDS_SETTING, {
+let I = (0, u.E2)(p.X.ENTRANCE_SOUNDS_SETTING, {
     useSearchTerms: () => [S.intl.string(S.t.nzUc3B)],
     Component: function() {
         let {
@@ -74,11 +74,11 @@ let N = (0, u.E2)(p.X.ENTRANCE_SOUNDS_SETTING, {
         }, [T, e]), s.useEffect(() => {
             (0, _.E7)()
         }, []);
-        let N = s.useCallback((e, t) => {
+        let I = s.useCallback((e, t) => {
             let {
                 inDropdown: n
             } = t;
-            return null == e ? null : n ? (0, i.jsx)(b, {
+            return null == e ? null : n ? (0, i.jsx)(N, {
                 guildId: e.value
             }) : null
         }, []);
@@ -97,7 +97,7 @@ let N = (0, u.E2)(p.X.ENTRANCE_SOUNDS_SETTING, {
                 onChange: e => {
                     n(null == e ? "0" : e.id)
                 },
-                renderOptionSuffix: N,
+                renderOptionSuffix: I,
                 hideDivider: !0
             }), (0, i.jsxs)(c.A, {
                 title: S.intl.format(S.t.I2TsYN, {

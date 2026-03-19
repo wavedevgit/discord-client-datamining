@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(311907),
-    r = n(397927),
+    r = n(311907),
+    l = n(397927),
     s = n(713654),
     o = n(698441),
     d = n(435328),
@@ -21,7 +21,7 @@ var i = n(627968),
 function E(e) {
     let {
         eventId: t
-    } = e, n = (0, l.bG)([o.Ay], () => o.Ay.getGuildScheduledEvent(t), [t]), E = (0, l.bG)([m.A], () => m.A.getGuild(n?.guild_id), [n]), I = (0, l.bG)([_.A], () => _.A.getChannel(n?.channel_id), [n]), f = (0, c.nh)(t, null), C = null != n && (0, o.Fd)(n), T = null != n ? (0, h.G3)(n) : null, N = (0, u.A)(n?.guild_id, n?.id, T), S = f?.startTime.toISOString(), {
+    } = e, n = (0, r.bG)([o.Ay], () => o.Ay.getGuildScheduledEvent(t), [t]), E = (0, r.bG)([m.A], () => m.A.getGuild(n?.guild_id), [n]), I = (0, r.bG)([_.A], () => _.A.getChannel(n?.channel_id), [n]), f = (0, c.nh)(t, null), C = null != n && (0, o.Fd)(n), T = null != n ? (0, h.G3)(n) : null, N = (0, u.A)(n?.guild_id, n?.id, T), S = f?.startTime.toISOString(), {
         startDateTimeString: x
     } = a.useMemo(() => C ? {
         startDateTimeString: g.intl.string(g.t.TxqPQR)
@@ -32,16 +32,16 @@ function E(e) {
         className: p.Qo,
         children: [(0, i.jsx)("div", {
             className: p.At,
-            children: (0, i.jsx)(r.Text, {
+            children: (0, i.jsx)(l.Text, {
                 variant: "text-sm/semibold",
                 color: C ? "status-positive" : "text-brand",
                 children: x
             })
-        }), (0, i.jsx)(r.Text, {
+        }), (0, i.jsx)(l.Text, {
             variant: "text-lg/semibold",
             className: O ? p.X_ : void 0,
             children: n.name
-        }), O && (0, i.jsx)(r.Text, {
+        }), O && (0, i.jsx)(l.Text, {
             variant: "text-md/normal",
             color: "text-subtle",
             className: p.tj,
@@ -54,10 +54,10 @@ function E(e) {
             className: p.oo,
             children: [(0, i.jsxs)("div", {
                 className: p.ik,
-                children: [(0, i.jsx)(r.nFg, {
+                children: [(0, i.jsx)(l.nFg, {
                     size: "xs",
                     color: "currentColor"
-                }), (0, i.jsx)(r.Text, {
+                }), (0, i.jsx)(l.Text, {
                     variant: "text-xs/normal",
                     color: "text-muted",
                     children: g.intl.format(g.t["+DLsD8"], {
@@ -69,7 +69,7 @@ function E(e) {
                 children: [null != b ? (0, i.jsx)(b, {
                     size: "xs",
                     color: "currentColor"
-                }) : null, (0, i.jsx)(r.Text, {
+                }) : null, (0, i.jsx)(l.Text, {
                     variant: "text-xs/normal",
                     color: "text-muted",
                     className: p.HA,

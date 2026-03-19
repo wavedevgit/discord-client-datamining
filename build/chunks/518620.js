@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(884362),
-    r = n(837381),
+    r = n(884362),
+    l = n(837381),
     s = n(311907),
     o = n(397927),
     d = n(775602);
@@ -25,10 +25,10 @@ let h = function(e) {
         let {
             section: i,
             row: a
-        } = e, l = t[i];
-        if (null == l || null == a) return null;
-        let r = l[a];
-        return null == r ? null : n(r, i)
+        } = e, r = t[i];
+        if (null == r || null == a) return null;
+        let l = r[a];
+        return null == l ? null : n(l, i)
     }, E = a.useCallback((e, n) => {
         let i = t[e]?.[n];
         return m === c.m3P.ALL && i?.giftIntentType === u.np.FRIEND_ANNIVERSARY && 0 === e ? 72 : 62
@@ -57,16 +57,16 @@ let h = function(e) {
             padding: 8,
             callback: () => t?.focus()
         })
-    }, []), y = (0, l.Ay)({
+    }, []), y = (0, r.Ay)({
         id: "people-list",
         isEnabled: T,
         scrollToStart: S,
         scrollToEnd: x,
         setFocus: v
     }), b = a.useMemo(() => t.map(e => e.length), [t]);
-    return (0, i.jsx)(r.hD, {
+    return (0, i.jsx)(l.hD, {
         navigator: y,
-        children: (0, i.jsx)(r.PR, {
+        children: (0, i.jsx)(l.PR, {
             children: e => {
                 let {
                     ref: t,

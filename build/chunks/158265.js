@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    l = n(503698),
+    s = n.n(l),
     r = n(106778),
     o = n(340287),
     d = n(497766),
@@ -25,7 +25,7 @@ let A = e => {
     let {
         overlayRef: t,
         progressBarRef: n,
-        isHovered: s
+        isHovered: l
     } = e, {
         quest: A,
         isExpanded: C
@@ -42,7 +42,7 @@ let A = e => {
         let e = n.current,
             t = k.current;
         if (null != t && null != e && L.isReady) {
-            var a, i, s, l;
+            var a, i, l, s;
             let {
                 x: n,
                 y: r
@@ -50,7 +50,7 @@ let A = e => {
                 x: o,
                 y: d
             } = t.getBoundingClientRect();
-            L.createMultipleConfetti((a = n - o, i = r - d, s = e.clientHeight, l = e.clientWidth, {
+            L.createMultipleConfetti((a = n - o, i = r - d, l = e.clientHeight, s = e.clientWidth, {
                 ...v.Mw,
                 position: {
                     type: "static-random",
@@ -59,8 +59,8 @@ let A = e => {
                         y: i
                     },
                     maxValue: {
-                        x: a + s,
-                        y: i + l
+                        x: a + l,
+                        y: i + s
                     }
                 },
                 velocity: {
@@ -100,8 +100,8 @@ let A = e => {
     }, [E, O, R, S, G]), i.useEffect(() => {
         L.isReady && (!N.current && E && (S(), G()), N.current = E)
     }, [E, N, G, S, L]), i.useEffect(() => {
-        s && E && (S(), G())
-    }, [s, E, S, G]), I) ? null : (0, a.jsxs)("div", {
+        l && E && (S(), G())
+    }, [l, E, S, G]), I) ? null : (0, a.jsxs)("div", {
         className: b.iE,
         "aria-hidden": "true",
         ref: k,
@@ -111,7 +111,7 @@ let A = e => {
                 opacity: (0, x.a)(T)
             }
         }), (0, a.jsx)(d.animated.div, {
-            className: l()(b.sJ, b.ix),
+            className: s()(b.sJ, b.ix),
             style: {
                 opacity: (0, x.a)(T)
             }
@@ -134,7 +134,7 @@ let A = e => {
                 spriteWidth: v.wn,
                 spriteHeight: v.wn
             }), null != t.current && (0, o.createPortal)((0, a.jsx)(d.animated.div, {
-                className: l()(b.sJ, b.d7),
+                className: s()(b.sJ, b.d7),
                 style: {
                     opacity: (0, x.a)(T)
                 }

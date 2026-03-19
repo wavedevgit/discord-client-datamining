@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(311907),
-    l = n(843282),
+    l = n(311907),
+    s = n(843282),
     r = n(732955),
     o = n(421380),
     d = n(397927),
@@ -107,8 +107,8 @@ function B(e) {
         quest: t,
         questContent: n,
         sourceQuestContent: i,
-        onClick: s,
-        text: l
+        onClick: l,
+        text: s
     } = e, {
         enabled: o
     } = _.K.useConfig({
@@ -130,8 +130,8 @@ function B(e) {
             onClick: u
         }), (0, a.jsx)(r.$nd, {
             variant: "primary",
-            onClick: s ?? void 0,
-            text: l
+            onClick: l ?? void 0,
+            text: s
         })]
     }) : (0, a.jsxs)(r.e2v, {
         direction: "horizontal",
@@ -152,8 +152,8 @@ function B(e) {
             }
         }), (0, a.jsx)(r.$nd, {
             variant: "primary",
-            onClick: s ?? void 0,
-            text: l
+            onClick: l ?? void 0,
+            text: s
         })]
     })
 }
@@ -164,11 +164,11 @@ function G(e) {
         sourceQuestContent: n,
         formattedExpirationDate: i
     } = e, {
-        enabled: s
+        enabled: l
     } = _.K.useConfig({
         location: O.rE.QUEST_LEARN_MORE_CTA
     }), {
-        externalLinkCta: l,
+        externalLinkCta: s,
         handleOpenExternalLink: o
     } = L({
         quest: t,
@@ -176,13 +176,13 @@ function G(e) {
     }), d = w.intl.format(w.t["14o6QY"], {
         expiryDate: i
     });
-    return s ? (0, a.jsxs)(r.e2v, {
+    return l ? (0, a.jsxs)(r.e2v, {
         direction: "horizontal",
         fullWidth: !0,
         wrap: !1,
         children: [(0, a.jsx)(r.$nd, {
             variant: "secondary",
-            text: l,
+            text: s,
             onClick: o
         }), (0, a.jsx)(r.$nd, {
             variant: "secondary",
@@ -211,7 +211,7 @@ function F(e) {
         contentPosition: A,
         rowIndex: T,
         sourceQuestContent: L
-    } = e, F = (0, s.bG)([c.A], () => c.A.useReducedMotion), V = (0, N.Xf)({
+    } = e, F = (0, l.bG)([c.A], () => c.A.useReducedMotion), V = (0, N.Xf)({
         useReducedMotion: F
     }), W = (0, b.Ut)(), H = (0, v.RR)({
         quest: t
@@ -222,11 +222,11 @@ function F(e) {
         isClaiming: $,
         isEnrolling: q,
         isQuestEnrollmentBlocked: Q
-    } = (0, s.cf)([h.A], () => ({
+    } = (0, l.cf)([h.A], () => ({
         isClaiming: h.A.isClaimingReward(t.id) || h.A.isFetchingRewardCode(t.id),
         isEnrolling: h.A.isEnrolling(t.id),
         isQuestEnrollmentBlocked: null != h.A.questEnrollmentBlockedUntil
-    })), Y = t.userStatus?.enrolledAt != null, J = t.userStatus?.completedAt != null, X = J && t.userStatus?.claimedAt == null, Z = (0, y.if)(t), ee = !(0, y.Ic)(t), et = (0, v.In)(t), en = (0, S.IO)(t), ea = (0, S.K$)(t), ei = (0, S.Cr)(t), es = (0, v.fc)(t), [el, er, eo] = (0, v.Qo)(t, es), ed = ee && et === v.F3.ACCEPTED, ec = ed && el === x.X0.SELECT, eu = ed && !ec && er.length > 1, em = g.t.useConfig({
+    })), Y = t.userStatus?.enrolledAt != null, J = t.userStatus?.completedAt != null, X = J && t.userStatus?.claimedAt == null, Z = (0, y.if)(t), ee = !(0, y.Ic)(t), et = (0, v.In)(t), en = (0, S.IO)(t), ea = (0, S.K$)(t), ei = (0, S.Cr)(t), el = (0, v.fc)(t), [es, er, eo] = (0, v.Qo)(t, el), ed = ee && et === v.F3.ACCEPTED, ec = ed && es === x.X0.SELECT, eu = ed && !ec && er.length > 1, em = g.t.useConfig({
         location: O.rE.QUEST_HOME_DESKTOP
     }), eh = (0, k.Pd)(t), ex = (0, m.O)(e => e.clearErrorHints), ep = i.useCallback(e => {
         eo(e), e === O.fO.DESKTOP && (_([]), ex(t.id))
@@ -356,7 +356,7 @@ function F(e) {
                 fullWidth: !0
             })
         })
-    }) : Y && !eb ? eE = ec ? (0, a.jsx)(l.Pw, {
+    }) : Y && !eb ? eE = ec ? (0, a.jsx)(s.Pw, {
         className: D.dd,
         isSelected: () => !1,
         options: M,
@@ -376,7 +376,7 @@ function F(e) {
         },
         size: "sm",
         "data-migration-pending": !0
-    }) : (0, S.g5)(t) && !K && el !== x.X0.DESKTOP ? H ? (0, a.jsx)("div", {
+    }) : (0, S.g5)(t) && !K && es !== x.X0.DESKTOP ? H ? (0, a.jsx)("div", {
         className: D.x6,
         children: (0, a.jsx)(r.$nd, {
             variant: "secondary",
@@ -464,10 +464,10 @@ function F(e) {
             children: eE
         }), eu && (0, a.jsx)("div", {
             className: D.qz,
-            children: (0, a.jsx)(l.Pw, {
+            children: (0, a.jsx)(s.Pw, {
                 className: D.xZ,
                 isSelected: e => {
-                    switch (el) {
+                    switch (es) {
                         case x.X0.DESKTOP:
                             return e === O.fO.DESKTOP;
                         case x.X0.CONSOLE:

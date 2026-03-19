@@ -6,8 +6,8 @@ n.d(t, {
 var a = n(627968);
 n(64700);
 var i = n(311907),
-    s = n(116833),
-    l = n(342494),
+    l = n(116833),
+    s = n(342494),
     r = n(73153),
     o = n(626584),
     d = n(71393),
@@ -46,13 +46,13 @@ function p(e) {
         variant: "secondary"
     }];
     return (0, a.jsxs)(a.Fragment, {
-        children: [e.children, (0, a.jsx)(l.AM, {
+        children: [e.children, (0, a.jsx)(s.AM, {
             targetElementRef: e.targetElementRef,
             shouldShow: !0,
             position: "top",
             graphic: {
                 type: "dynamic",
-                component: s.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
+                component: l.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
                 props: {
                     guildId: t.id,
                     guildProfile: t.profile
@@ -92,13 +92,13 @@ function g(e) {
         variant: "secondary"
     }];
     return (0, a.jsxs)(a.Fragment, {
-        children: [e.children, (0, a.jsx)(l.AM, {
+        children: [e.children, (0, a.jsx)(s.AM, {
             targetElementRef: e.targetElementRef,
             shouldShow: !0,
             position: "top",
             graphic: {
                 type: "dynamic",
-                component: s.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
+                component: l.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
                 props: {
                     guildId: t.id,
                     guildProfile: t.profile

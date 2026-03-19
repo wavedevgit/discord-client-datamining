@@ -1,6 +1,6 @@
 /** chunk id: 42765 params = (module,exports,require) **/
 n.d(t, {
-    q: () => p
+    q: () => h
 }), n(667532);
 var i = n(627968);
 n(64700);
@@ -15,73 +15,71 @@ var s = n(873298),
     _ = n(945276),
     m = n(86689),
     g = n(639383),
-    A = n(531525),
-    x = n(985018),
-    h = n(842130);
+    A = n(985018),
+    x = n(842130);
 
-function p() {
+function h() {
     let e = (0, _.A)() ?? !0,
         t = (0, u.uM)(),
         n = (0, c.G)(),
         {
-            goreContentGuilds: p,
-            goreContentFriendDm: T,
-            goreContentNonFriendDm: E
+            goreContentGuilds: h,
+            goreContentFriendDm: p,
+            goreContentNonFriendDm: T
         } = (0, d.g)(),
-        S = e => {
+        E = e => {
             let t = Object.values(e);
             (0, r.hK)() && t.includes(s.TO.SHOW) ? l.A.showAgeVerificationGetStartedModal({
                 entryPoint: a.q1.SENSITIVE_MEDIA_FILTER_SETTINGS
             }) : (0, o.qY)(e)
         },
-        C = [{
+        S = [{
             value: s.TO.BLUR,
-            label: x.intl.string(x.t.S49Uad)
+            label: A.intl.string(A.t.S49Uad)
         }, {
             value: s.TO.BLOCK,
-            label: x.intl.string(x.t["D/157Y"])
+            label: A.intl.string(A.t["D/157Y"])
         }],
-        f = [{
+        C = [{
             value: s.TO.BLUR,
-            label: x.intl.string(x.t.S49Uad)
+            label: A.intl.string(A.t.S49Uad)
         }],
-        b = {
+        f = {
             value: s.TO.SHOW,
-            label: x.intl.string(x.t["5k5OFp"])
+            label: A.intl.string(A.t["5k5OFp"])
         };
-    e && (C.unshift(b), f.unshift(b));
+    e && (S.unshift(f), C.unshift(f));
     let N = {
         isDisabled: n,
-        tooltipText: t ? x.intl.string(h.default["6Af/cw"]) : void 0
+        tooltipText: t ? A.intl.string(x.default["6Af/cw"]) : void 0
     };
     return (0, i.jsxs)(m.E, {
-        setting: A.H.GORE_MEDIA_REDACTION,
-        description: x.intl.string(x.t.XgH9eh),
+        description: A.intl.string(A.t.XgH9eh),
         children: [(0, i.jsx)(g.A, {
-            title: x.intl.string(x.t["+uI23H"]),
-            value: T,
-            onChange: e => S({
+            title: A.intl.string(A.t["+uI23H"]),
+            value: p,
+            onChange: e => E({
                 goreContentFriendDm: e
             }),
-            options: C,
+            options: S,
             ...N
         }), (0, i.jsx)(g.A, {
-            title: x.intl.string(x.t["Yh+HX1"]),
-            value: E,
-            onChange: e => S({
+            title: A.intl.string(A.t["Yh+HX1"]),
+            value: T,
+            onChange: e => E({
                 goreContentNonFriendDm: e
             }),
-            options: C,
+            options: S,
             ...N
         }), (0, i.jsx)(g.A, {
-            title: x.intl.string(x.t["FP+a42"]),
-            value: p,
-            onChange: e => S({
+            title: A.intl.string(A.t["FP+a42"]),
+            value: h,
+            onChange: e => E({
                 goreContentGuilds: e
             }),
             isDisabled: !e || n,
-            options: f,
-            tooltipText: t ? x.intl.string(h.default["6Af/cw"]) : void 0
+            options: C,
+            tooltipText: t ? A.intl.string(x.default["6Af/cw"]) : void 0
         })]
     })
 }

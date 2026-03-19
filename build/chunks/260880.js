@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    l = n(503698),
+    s = n.n(l),
     r = n(761929),
     o = n(124070);
 
@@ -14,7 +14,7 @@ function d(e) {
         resizableNode: t,
         minHeight: n,
         onResize: i
-    } = e, s = (0, r.A)({
+    } = e, l = (0, r.A)({
         minDimension: n,
         resizableDomNodeRef: t,
         onElementResize: i,
@@ -22,7 +22,7 @@ function d(e) {
         usePointerEvents: !0
     });
     return (0, a.jsx)("div", {
-        onPointerDown: s,
+        onPointerDown: l,
         className: o.Di
     })
 }
@@ -31,9 +31,9 @@ function c(e) {
     let {
         children: t,
         className: n,
-        initialHeight: s,
+        initialHeight: l,
         minHeight: r
-    } = e, c = i.useRef(null), [u, m] = i.useState(s);
+    } = e, c = i.useRef(null), [u, m] = i.useState(l);
     return (0, a.jsxs)("div", {
         ref: c,
         className: o.kL,
@@ -46,7 +46,7 @@ function c(e) {
             minHeight: r,
             onResize: m
         }), (0, a.jsx)("div", {
-            className: l()(o.KZ, n),
+            className: s()(o.KZ, n),
             children: t
         })]
     })

@@ -1,7 +1,7 @@
 /** chunk id: 123857 params = (module,exports,require) **/
 n.d(t, {
     Ix: () => k,
-    J3: () => L,
+    J3: () => D,
     Q3: () => w,
     mx: () => B
 });
@@ -26,16 +26,16 @@ var i = n(627968),
     S = n(511484),
     C = n(811611),
     f = n(97469),
-    b = n(954571),
-    N = n(544028),
-    I = n(253932),
+    N = n(954571),
+    I = n(544028),
+    b = n(253932),
     v = n(12901),
     j = n(652215),
     y = n(49999),
-    R = n(788868),
-    O = n(985018),
-    D = n(594969);
-let L = () => {
+    O = n(788868),
+    R = n(985018),
+    L = n(594969);
+let D = () => {
     (0, h.Dr)(a.M.CLIENT_THEMES_SPARKLE_PREVIEW, {
         dismissAction: y.i.PRIMARY,
         forceTrack: !0
@@ -44,11 +44,11 @@ let L = () => {
 
 function P() {
     let e = (0, p.O)(),
-        t = (0, S.U9)(e, R.pe.TIER_2) ? O.intl.formatToPlainString(O.t.bkQ4bH, {
+        t = (0, S.U9)(e, O.pe.TIER_2) ? R.intl.formatToPlainString(R.t.bkQ4bH, {
             percent: e?.discount.amount
-        }) : O.intl.string(O.t.mr4K7D);
+        }) : R.intl.string(R.t.mr4K7D);
     return (0, i.jsx)(E.A, {
-        subscriptionTier: R.pe.TIER_2,
+        subscriptionTier: O.pe.TIER_2,
         defaultTextOverride: t,
         premiumModalAnalyticsLocation: {
             object: j.ZSU.BUTTON_CTA,
@@ -60,13 +60,13 @@ function P() {
 
 function G() {
     let e = (0, l.bG)([m.A], () => m.A.isPreview),
-        t = (0, T.V)()?.subscription_trial?.sku_id === R.pe.TIER_2;
+        t = (0, T.V)()?.subscription_trial?.sku_id === O.pe.TIER_2;
     return !e || t ? null : (0, i.jsxs)("div", {
-        className: D.gY,
+        className: L.gY,
         children: [(0, i.jsx)(o.Button, {
             variant: "secondary",
-            text: O.intl.string(O.t["E+COuA"]),
-            onClick: L
+            text: R.intl.string(R.t["E+COuA"]),
+            onClick: D
         }), (0, i.jsx)(P, {})]
     })
 }
@@ -78,33 +78,33 @@ function M(e) {
         analyticsLocations: a
     } = (0, _.Ay)(u.A.USER_SETTINGS);
     return (s.useEffect(() => {
-        n && b.default.track(j.HAw.PREMIUM_UPSELL_VIEWED, {
-            type: R.e.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
+        n && N.default.track(j.HAw.PREMIUM_UPSELL_VIEWED, {
+            type: O.e.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
             location_stack: a
         })
     }, [n, a]), n) ? (0, i.jsx)("div", {
-        className: D._$,
+        className: L._$,
         children: t
     }) : t
 }
 
 function U() {
     let e = (0, l.bG)([m.A], () => m.A.isPreview),
-        t = (0, T.V)()?.subscription_trial?.sku_id === R.pe.TIER_2;
+        t = (0, T.V)()?.subscription_trial?.sku_id === O.pe.TIER_2;
     return e && t ? (0, i.jsxs)("div", {
         children: [(0, i.jsx)("div", {
-            className: D.c7,
+            className: L.c7,
             children: (0, i.jsx)(o.Button, {
                 variant: "secondary",
                 fullWidth: !0,
-                text: O.intl.string(O.t["E+COuA"]),
-                onClick: () => L()
+                text: R.intl.string(R.t["E+COuA"]),
+                onClick: () => D()
             })
         }), (0, i.jsx)("div", {
-            className: D.BU
+            className: L.BU
         }), (0, i.jsx)(C.Ay, {
-            type: R.e.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL,
-            subscriptionTier: R.pe.TIER_2
+            type: O.e.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL,
+            subscriptionTier: O.pe.TIER_2
         })]
     }) : null
 }
@@ -112,7 +112,7 @@ let k = () => (0, i.jsx)("div", {
     children: (0, i.jsxs)(A.Ay, {
         type: A.v0.SETTINGS,
         children: [(0, i.jsx)(A.Ay.Basic, {
-            className: D.a6
+            className: L.a6
         }), (0, i.jsx)(V, {}), (0, i.jsx)(g.A, {}), (0, i.jsxs)(M, {
             children: [(0, i.jsx)(A.Ay.Gradient, {
                 disabled: !1,
@@ -128,17 +128,17 @@ function V() {
             theme: t,
             useForcedColors: n,
             gradientPreset: s
-        } = (0, l.cf)([N.A, c.A, m.A], () => ({
-            theme: N.A.theme,
+        } = (0, l.cf)([I.A, c.A, m.A], () => ({
+            theme: I.A.theme,
             useForcedColors: c.A.useForcedColors,
             gradientPreset: m.A.gradientPreset
         })),
-        a = null != I.eh.useSetting().customUserThemeSettings;
+        a = null != b.eh.useSetting().customUserThemeSettings;
     return t !== j.NJ8.LIGHT ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(o.cGx, {
             gap: 24
         }), (0, i.jsx)(o.dOG, {
-            label: O.intl.string(O.t.yF54Ks),
+            label: R.intl.string(R.t.yF54Ks),
             checked: e && (0, r.qB)(t) && !n,
             disabled: t !== j.NJ8.LIGHT || n || null != s || a,
             onChange: d.LO
@@ -149,8 +149,8 @@ function V() {
 }
 let w = () => (0, l.bG)([m.A], () => m.A.isPreview) ? null : (0, i.jsx)(o.Button, {
     variant: "primary",
-    text: O.intl.string(O.t.qYXrkX),
-    onClick: L
+    text: R.intl.string(R.t.qYXrkX),
+    onClick: D
 });
 
 function B(e) {
@@ -163,10 +163,10 @@ function B(e) {
             children: [(0, i.jsx)(A.ew, {
                 isCoachmark: !1,
                 renderCTAButtons: () => (0, i.jsx)(G, {}),
-                headingClassName: D.EK,
+                headingClassName: L.EK,
                 titleTextVariant: "text-md/semibold",
-                titleClassName: D.cI,
-                titleIconClassName: D.Hq
+                titleClassName: L.cI,
+                titleIconClassName: L.Hq
             }), (0, i.jsx)(o.BJc, {
                 direction: "horizontal",
                 wrap: !0,

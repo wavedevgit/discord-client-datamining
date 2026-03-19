@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    l = n(503698),
+    s = n.n(l),
     r = n(497766),
     o = n(311907),
     d = n(397927),
@@ -32,7 +32,7 @@ function N(e) {
     let {
         quest: t,
         questContent: n,
-        isHovering: s,
+        isHovering: l,
         contentPosition: N,
         rowIndex: k,
         isVisibleInViewport: R,
@@ -46,7 +46,7 @@ function N(e) {
     } = i.useContext(j.M), {
         expansionSpring: V
     } = (0, d.zhh)({
-        expansionSpring: +!!s,
+        expansionSpring: +!!l,
         config: {
             ...y.N,
             clamp: !0
@@ -115,11 +115,11 @@ function N(e) {
                         }), (0, a.jsx)(f.A, {
                             size: 76,
                             percentComplete: $,
-                            percentCompleteText: s && !(0, g.Ic)(t) ? q : void 0,
+                            percentCompleteText: l && !(0, g.Ic)(t) ? q : void 0,
                             children: (0, a.jsx)(v.A, {
                                 quest: t,
                                 questContent: n,
-                                autoplay: s,
+                                autoplay: l,
                                 onLoadComplete: F,
                                 lazyLoad: !0,
                                 fullWidth: !0,
@@ -128,7 +128,7 @@ function N(e) {
                         })]
                     }) : (0, a.jsx)(v.A, {
                         quest: t,
-                        autoplay: s,
+                        autoplay: l,
                         questContent: n,
                         className: S.eB,
                         onLoadComplete: F,
@@ -138,7 +138,7 @@ function N(e) {
                 })
             }), (0, a.jsxs)("div", {
                 ref: L,
-                className: l()(S.FS, {
+                className: s()(S.FS, {
                     [S.wq]: !G
                 }),
                 children: [(0, a.jsx)(d.Heading, {

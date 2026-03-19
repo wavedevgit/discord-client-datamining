@@ -33,16 +33,16 @@ function x(e) {
         forcedDivider: C,
         withHighlight: f = !1
     } = e, {
-        newestAnalyticsLocation: b
-    } = (0, d.Ay)(), N = f ? o.wLn : r.$n, I = s.useCallback(() => {
+        newestAnalyticsLocation: N
+    } = (0, d.Ay)(), I = f ? o.wLn : r.$n, b = s.useCallback(() => {
         (0, c.XD)({
             uploadType: _.HL.AVATAR,
-            analyticsSource: b,
+            analyticsSource: N,
             filters: S ? A : void 0,
             guildId: p,
             isTryItOut: S
         })
-    }, [p, b, S]);
+    }, [p, N, S]);
     return (0, i.jsx)(u.A, {
         className: T,
         title: x,
@@ -51,12 +51,12 @@ function x(e) {
         forcedDivider: C,
         children: (0, i.jsxs)("div", {
             className: g.NC,
-            children: [(0, i.jsx)(N, {
+            children: [(0, i.jsx)(I, {
                 className: a()({
                     [g.yj]: f
                 }),
                 size: r.$n.Sizes.SMALL,
-                onClick: I,
+                onClick: b,
                 children: h ?? m.intl.string(m.t["4OynCD"])
             }), t && (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,

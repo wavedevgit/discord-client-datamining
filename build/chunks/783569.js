@@ -5,8 +5,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(497766),
-    l = n(311907),
+    l = n(497766),
+    s = n(311907),
     r = n(397927),
     o = n(765671),
     d = n(475743),
@@ -33,7 +33,7 @@ function h(e) {
     } = e, {
         springConfig: n,
         isExpanded: m
-    } = i.useContext(u), h = (0, l.bG)([c.A], () => c.A.useReducedMotion), {
+    } = i.useContext(u), h = (0, s.bG)([c.A], () => c.A.useReducedMotion), {
         ref: x,
         height: p = null
     } = (0, o.Ay)(), g = (0, d.A)(p) ?? null, [{
@@ -49,7 +49,7 @@ function h(e) {
             height: p,
             immediate: !m || h || null === g
         })
-    }, [p, f, m, h, g]), (0, a.jsx)(s.animated.div, {
+    }, [p, f, m, h, g]), (0, a.jsx)(l.animated.div, {
         style: {
             height: null === g ? "auto" : _,
             overflow: "hidden"

@@ -1,23 +1,20 @@
 /** chunk id: 884705 params = (module,exports,require) **/
-n.d(t, {
-    A: () => o
-});
 var i = n(311907),
-    s = n(73153);
-let l = !1;
+    a = n(73153);
+let r = !1;
 
-function a() {
-    l = !1
+function l() {
+    r = !1
 }
-class r extends i.Ay.Store {
+class s extends i.Ay.Store {
     isTogglesDisabled() {
-        return l
+        return r
     }
 }
-let o = new r(s.h, {
+new s(a.h, {
     AD_PERSONALIZATION_TOGGLES_RESTRICTED: function(e) {
-        l = e.disabled ?? !1
+        r = e.disabled ?? !1
     },
-    CONNECTION_OPEN: a,
-    LOGOUT: a
+    CONNECTION_OPEN: l,
+    LOGOUT: l
 })

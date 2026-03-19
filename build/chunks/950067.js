@@ -5,8 +5,8 @@ n.d(t, {
 });
 var a = n(627968);
 n(64700);
-var l = n(397927),
-    r = n(73153),
+var r = n(397927),
+    l = n(73153),
     s = n(272355),
     o = n(323073),
     d = n(315982),
@@ -31,20 +31,20 @@ n(436317);
 var y = n(315290);
 
 function b() {
-    null != i && (0, l.OoC)(i)
+    null != i && (0, r.OoC)(i)
 }
 class O extends s.A {
     _initialize() {
-        r.h.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), r.h.subscribe("LOGOUT", b)
+        l.h.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), l.h.subscribe("LOGOUT", b)
     }
     _terminate() {
-        r.h.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen), r.h.unsubscribe("LOGOUT", b)
+        l.h.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen), l.h.unsubscribe("LOGOUT", b)
     }
     handleConnectionOpen() {
         var e;
-        let t, r = N.A.getType();
-        if (null == r) return;
-        switch (r) {
+        let t, l = N.A.getType();
+        if (null == l) return;
+        switch (l) {
             case S.zY.INVITE_UNCLAIMED:
                 h.A.flowStart(y.do.INVITE, y.ju.NUF_STARTED);
                 break;
@@ -56,7 +56,7 @@ class O extends s.A {
         }
         let s = !1,
             b = E.A.getGuildId();
-        if (r === S.zY.INVITE_UNCLAIMED) {
+        if (l === S.zY.INVITE_UNCLAIMED) {
             let e = p.A.getGuild(b);
             null != e && (0, u.Qd)(e) && (s = !0, (0, _.Fy)(e.id))
         }
@@ -94,7 +94,7 @@ class O extends s.A {
                             f.xb(e)
                     }
                 };
-                i = await (0, l.mMO)(async () => {
+                i = await (0, r.mMO)(async () => {
                     let {
                         default: e
                     } = await Promise.all([n.e("86746"), n.e("81890")]).then(n.bind(n, 218318));
@@ -123,7 +123,7 @@ class O extends s.A {
             predicate: () => s && !I.default.getCurrentUser()?.isClaimed() && !0
         }, {
             key: "Guild Welcome Modal",
-            open: e => (0, l.mMO)(async () => {
+            open: e => (0, r.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("98063").then(n.bind(n, 143154));

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(397927),
-    l = n(669550),
+    l = n(397927),
+    s = n(669550),
     r = n(963935),
     o = n(921854),
     d = n(522958),
@@ -16,16 +16,16 @@ function m(e) {
     let {
         setting: t,
         depth: n,
-        highlightMode: s
-    } = e, l = i.useContext(x)?.get(t), r = null;
-    return null != l && l.length > 0 && (r = l.sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(m, {
+        highlightMode: l
+    } = e, s = i.useContext(x)?.get(t), r = null;
+    return null != s && s.length > 0 && (r = s.sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(m, {
         setting: e,
         depth: n + 1,
-        highlightMode: s
+        highlightMode: l
     }, e))), (0, a.jsx)(d.n, {
         title: t,
         initExpanded: n <= 2,
-        highlightMode: s,
+        highlightMode: l,
         children: r
     })
 }
@@ -35,7 +35,7 @@ function h(e) {
         setting: t,
         depth: n,
         inheritedHighlightMode: i
-    } = e, s = function(e, t) {
+    } = e, l = function(e, t) {
         if ("migrated" === t) return "migrated";
         switch (e.type) {
             case r.Z6.ROOT:
@@ -47,15 +47,15 @@ function h(e) {
             default:
                 return t ?? "migrated"
         }
-    }(t, i), l = "migrated" === s ? "migrated" : void 0, o = null;
+    }(t, i), s = "migrated" === l ? "migrated" : void 0, o = null;
     return (0, r.nW)(t) && t.layout.length > 0 && (o = t.layout.map(e => (0, a.jsx)(h, {
         setting: e,
         depth: n + 1,
-        inheritedHighlightMode: l
+        inheritedHighlightMode: s
     }, e.key))), (0, a.jsx)(d.n, {
         title: t.key,
         initExpanded: n <= 2,
-        highlightMode: s,
+        highlightMode: l,
         children: o
     })
 }
@@ -66,15 +66,15 @@ function p() {
         legacySettingDirectory: n
     } = (0, c.B)(), {
         node: r
-    } = (0, l.Ay)(o.D, ""), d = (0, l.KA)();
-    return (0, a.jsxs)(s.nVY, {
+    } = (0, s.Ay)(o.D, ""), d = (0, s.KA)();
+    return (0, a.jsxs)(l.nVY, {
         label: "Settings Tree",
-        children: [(0, a.jsx)(s.dOG, {
+        children: [(0, a.jsx)(l.dOG, {
             label: "Bypass Predicates",
             description: "Forces all migrated settings to be visible.",
             checked: d,
-            onChange: l.jL
-        }), (0, a.jsx)(s.dOG, {
+            onChange: s.jL
+        }), (0, a.jsx)(l.dOG, {
             checked: e,
             onChange: e => t(e),
             label: "Show Legacy Settings Tree"

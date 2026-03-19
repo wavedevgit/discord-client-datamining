@@ -5,8 +5,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(311907),
-    l = n(554146),
+    l = n(311907),
+    s = n(554146),
     r = n(342494),
     o = n(932001),
     d = n(827827),
@@ -29,8 +29,8 @@ function A() {
             shouldShow: t = !0
         } = e,
         [n, a] = i.useState(Date.now()),
-        r = (0, s.bG)([u.A], () => u.A.hasLayers()),
-        d = (0, s.bG)([m.A], () => m.A.getStatus()),
+        r = (0, l.bG)([u.A], () => u.A.hasLayers()),
+        d = (0, l.bG)([m.A], () => m.A.getStatus()),
         h = c._6.useSetting(),
         _ = h?.value != null ? Number(h.value) : null,
         f = c.CY.useSetting(),
@@ -48,7 +48,7 @@ function A() {
             let e = setInterval(() => a(Date.now()), v);
             return () => clearInterval(e)
         }
-    }, [d]), (0, o.Wl)(C && !r && t ? l.M.DO_NOT_DISTURB_REMINDER_POPOVER : null, {
+    }, [d]), (0, o.Wl)(C && !r && t ? s.M.DO_NOT_DISTURB_REMINDER_POPOVER : null, {
         cooldownDurationMs: j,
         numTimesToRecur: 2
     }, p.m.ACCOUNT_NAME_ZONE, !0)
@@ -60,17 +60,17 @@ function C(e) {
         onDismiss: n,
         children: i
     } = e, {
-        enabled: s,
-        titleText: l,
+        enabled: l,
+        titleText: s,
         bodyText: o
     } = (0, x.k)({
         location: "popover",
         autoTrackExposure: !1
     });
-    return null != t.current && s ? (0, a.jsxs)(a.Fragment, {
+    return null != t.current && l ? (0, a.jsxs)(a.Fragment, {
         children: [i, (0, a.jsx)(r.AM, {
             targetElementRef: t,
-            title: _.intl.string(l),
+            title: _.intl.string(s),
             body: _.intl.string(o),
             caretConfig: {
                 align: "start"

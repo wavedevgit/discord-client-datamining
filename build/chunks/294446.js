@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(397927),
-    l = n(851907),
-    r = n(587895),
+    r = n(851907),
+    l = n(587895),
     s = n(200330),
     o = n(321987),
     d = n(595244),
@@ -36,23 +36,23 @@ let p = (0, h.A)(e => {
         integrationType: v,
         pid: y,
         signal: b
-    } = e, O = `OAuth2Authorize_${t}_${C}_${T}`, L = null != v ? n?.get(v) : void 0, R = L?.application ?? r.A.getApplication(t);
-    return new Promise((e, r) => {
+    } = e, O = `OAuth2Authorize_${t}_${C}_${T}`, L = null != v ? n?.get(v) : void 0, R = L?.application ?? l.A.getApplication(t);
+    return new Promise((e, l) => {
         let L = (0, _.d5)(y),
             P = a.SYi;
-        null != R && null != (0, l.Ay)({
+        null != R && null != (0, r.Ay)({
             application: R,
             channelId: T
         }) ? P = a.KX8 : L.context === m.BRT.POPOUT && (P = a.KX8);
         let D = !1,
             M = n => {
                 let {
-                    clientId: l,
+                    clientId: r,
                     location: s
                 } = n;
-                if (null == l || l === t) {
+                if (null == r || r === t) {
                     if (D = !0, null == s) {
-                        r(new A.A({
+                        l(new A.A({
                             errorCode: m.Lw6.OAUTH2_ERROR
                         }, "OAuth2 Error: No location provided")), L.lock();
                         return
@@ -114,7 +114,7 @@ let p = (0, h.A)(e => {
         }), {
             modalKey: O,
             onCloseCallback: () => {
-                j(), D || (r(new A.A({
+                j(), D || (l(new A.A({
                     errorCode: m.Lw6.OAUTH2_ERROR
                 }, "User cancelled authorization")), L.lock())
             }
@@ -122,7 +122,7 @@ let p = (0, h.A)(e => {
     })
 }, function(e, t, n) {
     if ((0, _.kS)(n) || !c.isPlatformEmbedded) return;
-    let i = (0, l.Ay)({
+    let i = (0, r.Ay)({
         application: e,
         channelId: t
     });

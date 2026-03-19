@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var a = n(627968),
     i = n(64700),
-    s = n(806235),
-    l = n(264461),
+    l = n(806235),
+    s = n(264461),
     r = n(986294),
     o = n(502128),
     d = n(807876),
@@ -59,8 +59,8 @@ var x = n(173628),
     en = n(573121),
     ea = n(263758),
     ei = n(229244),
-    es = n(76037),
-    el = n(922316),
+    el = n(76037),
+    es = n(922316),
     er = n(231643),
     eo = n(935460),
     ed = n(654487);
@@ -107,7 +107,7 @@ function ec() {
             id: "shop_collectibles",
             name: "Collectibles Preview",
             group: er.fu.SHOP,
-            render: () => (0, a.jsx)(l.A, {})
+            render: () => (0, a.jsx)(s.A, {})
         }), e.push({
             id: "quick_actions",
             name: "Quick Actions",
@@ -161,12 +161,12 @@ function ec() {
             id: "quick_switcher",
             name: "Quick Switcher",
             group: er.fu.USERS,
-            render: () => (0, a.jsx)(es.A, {})
+            render: () => (0, a.jsx)(el.A, {})
         }), e.push({
             id: "clips",
             name: "Clips",
             group: er.fu.AUDIO_VIDEO,
-            render: () => (0, a.jsx)(s.A, {})
+            render: () => (0, a.jsx)(l.A, {})
         })), e.push({
             id: "rive",
             name: "Rive",
@@ -360,7 +360,7 @@ function ec() {
             id: "Revenue Storybook",
             name: "Revenue Storybook",
             group: er.fu.BILLING,
-            render: () => (0, a.jsx)(el.A, {})
+            render: () => (0, a.jsx)(es.A, {})
         }), (0, d.Q)({
             location: ed.rE.QUEST_PREVIEW_TOOL
         }) && e.push({

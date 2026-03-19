@@ -53,18 +53,18 @@ let E = e => {
             leftAlignHeaders: S = !1,
             showAllPerksButton: C,
             headerClassname: f
-        } = e, b = s.useRef(null), N = n === h.cJ.WHATS_NEW, I = (0, r.bG)([c.default], () => c.default.getCurrentUser()), v = (0, A.E)();
+        } = e, N = s.useRef(null), I = n === h.cJ.WHATS_NEW, b = (0, r.bG)([c.default], () => c.default.getCurrentUser()), v = (0, A.E)();
         s.useEffect(() => {
-            N && v()
-        }, [v, N]);
-        let j = (0, p.G4)(N),
+            I && v()
+        }, [v, I]);
+        let j = (0, p.G4)(I),
             y = (0, x.A)(),
-            R = (0, p.LQ)(),
+            O = (0, p.LQ)(),
             {
-                fractionalState: O
+                fractionalState: R
             } = (0, d.A)(),
-            D = (0, u.d)(),
-            L = _.A.useExperiment({
+            L = (0, u.d)(),
+            D = _.A.useExperiment({
                 location: "PremiumPerks"
             }).enabled,
             P = (0, m.O9)(),
@@ -72,16 +72,16 @@ let E = e => {
                 perksCards: y,
                 variant: n,
                 hideCardsOnNarrowScreen: !1,
-                isPremiumSubscriber: R,
-                fractionalState: O,
-                isInReverseTrial: D,
-                recurring3PPromotionExperiment: L,
+                isPremiumSubscriber: O,
+                fractionalState: R,
+                isInReverseTrial: L,
+                recurring3PPromotionExperiment: D,
                 showPremiumGroup: P,
-                isPremiumGroupMember: I?.isPremiumGroupMember()
+                isPremiumGroupMember: b?.isPremiumGroupMember()
             }),
             M = G.some(e => null != e.pillText);
         return (0, i.jsxs)("div", {
-            ref: b,
+            ref: N,
             className: a()(T.uW, {
                 [T.qO]: !S,
                 [T.Uv]: S
@@ -97,7 +97,7 @@ let E = e => {
                 className: a()(T.VA, {
                     [T.VA]: null == C || S,
                     [T.Xx]: null != C && !S,
-                    [T.Ij]: N || S,
+                    [T.Ij]: I || S,
                     [T.Ob]: M,
                     [T.dO]: S,
                     [T.br]: !S

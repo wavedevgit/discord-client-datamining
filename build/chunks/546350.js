@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(64700),
     i = n(311907),
-    s = n(397927),
-    l = n(775602),
+    l = n(397927),
+    s = n(775602),
     r = n(654487);
 
 function o(e) {
@@ -16,7 +16,7 @@ function o(e) {
         unfurlEnabled: d,
         hasSeenUnfurl: c,
         onUnfurlDismissed: u
-    } = e, m = d && !t && !c, [h, x] = a.useState(m ? "unfurledWithTimeout" : "none"), p = (0, i.bG)([l.A], () => l.A.useReducedMotion), [g, _] = a.useState(m), [f, v] = a.useState(!g), [b, j] = a.useState(!0), A = a.useRef(o), C = a.useCallback(e => {
+    } = e, m = d && !t && !c, [h, x] = a.useState(m ? "unfurledWithTimeout" : "none"), p = (0, i.bG)([s.A], () => s.A.useReducedMotion), [g, _] = a.useState(m), [f, v] = a.useState(!g), [b, j] = a.useState(!0), A = a.useRef(o), C = a.useCallback(e => {
         n || (v(!1), _(e))
     }, [n]), y = a.useCallback(() => {
         C(!0)
@@ -24,7 +24,7 @@ function o(e) {
         C(!1)
     }, [C]), S = t ? r.ZV : r.Ko, [{
         expansionSpring: E
-    }, N] = (0, s.zhh)(() => ({
+    }, N] = (0, l.zhh)(() => ({
         from: {
             expansionSpring: 0
         },
@@ -44,7 +44,7 @@ function o(e) {
     }, [g, N, p]);
     let {
         visibilitySpring: I
-    } = (0, s.zhh)({
+    } = (0, l.zhh)({
         from: {
             visibilitySpring: 0
         },

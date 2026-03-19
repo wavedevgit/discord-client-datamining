@@ -55,9 +55,9 @@ let h = e => {
             avatarDecoAssetDescription: S,
             ellipseOpacity: C,
             customAnimationClassName: f,
-            circleColor: b,
-            circleStroke: N
-        } = e, I = (0, o.bG)([c.A], () => c.A.useReducedMotion), v = t && !I;
+            circleColor: N,
+            circleStroke: I
+        } = e, b = (0, o.bG)([c.A], () => c.A.useReducedMotion), v = t && !b;
         return (0, s.jsx)("div", {
             className: r()(A.G3, n),
             children: (0, s.jsx)(g.A, {
@@ -65,7 +65,7 @@ let h = e => {
                     [A.uJ]: v,
                     [f ?? ""]: v
                 }),
-                progressCircleStroke: N,
+                progressCircleStroke: I,
                 progressCircleStrokeSize: a,
                 percentage: i ?? u,
                 initialPercentage: i ?? x,
@@ -80,7 +80,7 @@ let h = e => {
                             });
                         case 1:
                             return (0, s.jsx)(m.A, {
-                                circleColor: b,
+                                circleColor: N,
                                 ellipseOpacity: C
                             });
                         case 2:

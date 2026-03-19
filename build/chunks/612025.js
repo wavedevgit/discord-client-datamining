@@ -1,21 +1,21 @@
 /** chunk id: 612025 params = (module,exports,require) **/
-e.d(_, {
-    YG: () => A,
-    xk: () => T
+n.d(e, {
+    YG: () => l,
+    xk: () => u
 });
-var E = e(353640);
-let A = "0",
-    I = {
-        selectedGuildId: A
+var i = n(353640);
+let l = "0",
+    r = {
+        selectedGuildId: l
     },
-    T = (0, E.v)(t => ({
-        ...I,
-        setSelectedGuildId: _ => {
+    u = (0, i.v)(t => ({
+        ...r,
+        setSelectedGuildId: e => {
             t({
-                selectedGuildId: _
+                selectedGuildId: e
             })
         },
         reset: () => {
-            t(I)
+            t(r)
         }
     }))

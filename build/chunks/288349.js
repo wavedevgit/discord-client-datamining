@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(503698),
-    l = n.n(a),
-    r = n(554146),
+    r = n.n(a),
+    l = n(554146),
     s = n(366999),
     o = n(160761),
     d = n(953727),
@@ -20,18 +20,18 @@ function _(e) {
         width: t = 14,
         height: n = 15,
         color: a = "white",
-        foreground: l,
-        ...r
+        foreground: r,
+        ...l
     } = e;
     return (0, i.jsxs)("svg", {
         ...(0, d.A)({
-            ...r
+            ...l
         }),
         preserveAspectRatio: "none",
         width: t,
         height: n,
         viewBox: "0 0 14 15",
-        className: l,
+        className: r,
         xmlns: "http://www.w3.org/2000/svg",
         children: [(0, i.jsx)("defs", {
             children: (0, i.jsxs)("linearGradient", {
@@ -82,12 +82,12 @@ function m(e) {
         messageStyle: d,
         upperCase: m,
         showSparkles: g
-    } = e, [p] = (0, o.Bo)(r.M.FRACTIONAL_NITRO_DURATION_LEFT_PILL, {
+    } = e, [p] = (0, o.Bo)(l.M.FRACTIONAL_NITRO_DURATION_LEFT_PILL, {
         showAfterTimestamp: n.valueOf(),
         cooldownDurationMs: 0
     }), E = (0, s.Ay)(a, d);
     return "" === E ? null : (m && (E = E.toUpperCase()), (0, i.jsxs)("div", {
-        className: l()(t, u.Iv),
+        className: r()(t, u.Iv),
         children: [g ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(_, {
                 foreground: u.QX,
@@ -98,7 +98,7 @@ function m(e) {
             })]
         }) : null, (0, i.jsx)(c.R, {
             text: E,
-            colorOptions: p === r.M.FRACTIONAL_NITRO_DURATION_LEFT_PILL ? c.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL : c.at.PREMIUM_TIER_2_GREY_FILL
+            colorOptions: p === l.M.FRACTIONAL_NITRO_DURATION_LEFT_PILL ? c.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL : c.at.PREMIUM_TIER_2_GREY_FILL
         })]
     }))
 }

@@ -1,6 +1,6 @@
 /** chunk id: 312574 params = (module,exports,require) **/
 n.d(t, {
-    u: () => b
+    u: () => N
 });
 var i = n(627968),
     s = n(935399),
@@ -75,7 +75,7 @@ let f = (0, c.t_)(_.X.OVERLAY_PANEL, {
         },
         buildLayout: () => [g.u, A.X, h.D, x.h]
     }),
-    b = (0, c.i4)(_.X.OVERLAY_SIDEBAR_ITEM, {
+    N = (0, c.i4)(_.X.OVERLAY_SIDEBAR_ITEM, {
         useTitle: () => T.intl.string(T.t["9cb1Uz"]),
         icon: l.WindowTopOutlineIcon,
         usePredicate: m.b_,

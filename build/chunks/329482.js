@@ -5,8 +5,8 @@ n.d(t, {
 var a = n(627968);
 n(64700);
 var i = n(503698),
-    s = n.n(i),
-    l = n(136722),
+    l = n.n(i),
+    s = n(136722),
     r = n(311907),
     o = n(397927),
     d = n(47167),
@@ -24,15 +24,15 @@ function v(e) {
     let {
         title: t,
         can: n
-    } = e, i = n ? o.A9s : o.PGe, l = (0, a.jsx)("div", {
-        className: s()(_.v_, n ? _.uU : _.Ss),
+    } = e, i = n ? o.A9s : o.PGe, s = (0, a.jsx)("div", {
+        className: l()(_.v_, n ? _.uU : _.Ss),
         children: (0, a.jsx)(i, {
             className: _.Kk
         })
     });
     return (0, a.jsxs)("div", {
         className: _.z8,
-        children: [l, (0, a.jsx)("div", {
+        children: [s, (0, a.jsx)("div", {
             className: _.rv,
             children: (0, a.jsx)(o.Text, {
                 variant: "text-md/normal",
@@ -56,7 +56,7 @@ function b() {
             let {
                 title: t,
                 flag: n
-            } = e, i = l.zy(b, n);
+            } = e, i = s.zy(b, n);
             return (0, a.jsx)(v, {
                 title: t,
                 can: i
@@ -66,14 +66,14 @@ function b() {
             let {
                 title: t,
                 flag: n
-            } = e, i = l.zy(j, n);
+            } = e, i = s.zy(j, n);
             return (0, a.jsx)(v, {
                 title: t,
                 can: i
             }, t)
         });
     return (0, a.jsx)("div", {
-        className: s()(f.nd, _.nd),
+        className: l()(f.nd, _.nd),
         children: (0, a.jsxs)("div", {
             className: _.l$,
             children: [(0, a.jsxs)("section", {

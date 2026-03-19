@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(488428),
-    l = n(835245),
+    l = n(488428),
+    s = n(835245),
     r = n(311907),
     o = n(435371),
     d = n(421380),
@@ -62,7 +62,7 @@ let w = function() {
         isSubmitting: X,
         responseMessage: Z,
         redeemVirtualCurrency: ee
-    } = (0, T.Q)(), [et, en] = i.useState(I.dJq), [ea, ei] = i.useState(""), [es, el] = i.useState(I.dJq), [er, eo] = i.useState(I.dJq);
+    } = (0, T.Q)(), [et, en] = i.useState(I.dJq), [ea, ei] = i.useState(""), [el, es] = i.useState(I.dJq), [er, eo] = i.useState(I.dJq);
     return (0, a.jsx)(x.f5, {
         value: H,
         children: (0, a.jsx)(c.IpV, {
@@ -237,7 +237,7 @@ let w = function() {
                         text: "Open Link",
                         disabled: F,
                         onClick: () => {
-                            window.open(I.BVt.BILLING_PREMIUM_SUBSCRIBE + "?" + s.stringify({
+                            window.open(I.BVt.BILLING_PREMIUM_SUBSCRIBE + "?" + l.stringify({
                                 ...B
                             }))
                         }
@@ -275,7 +275,7 @@ let w = function() {
                         variant: "primary",
                         text: "Redeem Virtual Currency for SKU",
                         loading: X,
-                        onClick: () => ee(et, (0, l.A)())
+                        onClick: () => ee(et, (0, s.A)())
                     }), null != Z && (0, a.jsx)(c.Text, {
                         variant: "text-sm/normal",
                         children: Z
@@ -344,14 +344,14 @@ let w = function() {
                                 label: "SKU ID",
                                 hideLabel: !0,
                                 placeholder: "SKU ID",
-                                value: es,
-                                onChange: e => el(e)
+                                value: el,
+                                onChange: e => es(e)
                             }), (0, a.jsx)(c.Button, {
                                 variant: "primary",
                                 text: "Open Standard Payment Modal for SKU",
                                 onClick: () => (0, C.A)({
                                     applicationId: ea,
-                                    skuId: es,
+                                    skuId: el,
                                     analyticsLocations: H
                                 })
                             })]

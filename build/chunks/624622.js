@@ -4,38 +4,38 @@ n.d(t, {
 });
 var a = n(311907),
     i = n(73153),
-    s = n(427157);
-let l = {
+    l = n(427157);
+let s = {
     pools: null,
     users: null
 };
 
 function r(e) {
-    null == l.users && (l.users = new Map), l.users.set(e.id, new s.A(e))
+    null == s.users && (s.users = new Map), s.users.set(e.id, new l.A(e))
 }
 class o extends a.Ay.PersistedStore {
     static displayName = "GeneratedTestUsersStore";
     static persistKey = "GeneratedTestUsersStore";
     initialize(e) {
-        null != e && (null != e.pools && (l.pools = new Map(Object.entries(e.pools))), null != e.users && (l.users = new Map(Object.entries(e.users))))
+        null != e && (null != e.pools && (s.pools = new Map(Object.entries(e.pools))), null != e.users && (s.users = new Map(Object.entries(e.users))))
     }
     getState() {
         return {
-            pools: null != l.pools ? Object.fromEntries(l.pools) : null,
-            users: null != l.users ? Object.fromEntries(l.users) : null
+            pools: null != s.pools ? Object.fromEntries(s.pools) : null,
+            users: null != s.users ? Object.fromEntries(s.users) : null
         }
     }
     getUsersForPool(e) {
-        return Array.from(l.users?.values() ?? []).filter(t => l.pools?.get(e)?.userIds.includes(t.id))
+        return Array.from(s.users?.values() ?? []).filter(t => s.pools?.get(e)?.userIds.includes(t.id))
     }
     getPool(e) {
-        return l.pools?.get(e) ?? null
+        return s.pools?.get(e) ?? null
     }
     getUser(e) {
-        return l.users?.get(e) ?? null
+        return s.users?.get(e) ?? null
     }
     getPools() {
-        return null === l.pools ? null : Array.from(l.pools.values())
+        return null === s.pools ? null : Array.from(s.pools.values())
     }
 }
 let d = new o(i.h, {
@@ -44,15 +44,15 @@ let d = new o(i.h, {
             pool: t,
             users: n
         } = e;
-        null == l.pools && (l.pools = new Map), l.pools.set(t.id, t), n.forEach(r)
+        null == s.pools && (s.pools = new Map), s.pools.set(t.id, t), n.forEach(r)
     },
     GENERATED_POOL_REMOVE_FROM_LIST: function(e) {
         let {
             poolId: t
-        } = e, n = l.pools?.get(t);
+        } = e, n = s.pools?.get(t);
         if (null == n) return !1;
         n.userIds.length > 0 && n.userIds.forEach(e => {
-            l.users?.delete(e)
-        }), l.pools?.delete(t)
+            s.users?.delete(e)
+        }), s.pools?.delete(t)
     }
 })

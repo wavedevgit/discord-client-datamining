@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    l = n(503698),
+    s = n.n(l),
     r = n(158954),
     o = n(311907),
     d = n(902592),
@@ -26,7 +26,7 @@ let g = e => {
                     t(1)
                 },
                 children: (0, a.jsx)("div", {
-                    className: l()(p.vK, p.Dg),
+                    className: s()(p.vK, p.Dg),
                     children: (0, a.jsx)(r.EYj, {
                         variant: "text-md/bold",
                         color: "always-white",
@@ -38,7 +38,7 @@ let g = e => {
                     t(2)
                 },
                 children: (0, a.jsx)("div", {
-                    className: l()(p.vK, p.st),
+                    className: s()(p.vK, p.st),
                     children: (0, a.jsx)(r.EYj, {
                         variant: "text-md/bold",
                         color: "always-white",
@@ -50,7 +50,7 @@ let g = e => {
                     t(3)
                 },
                 children: (0, a.jsx)("div", {
-                    className: l()(p.vK, p.IP),
+                    className: s()(p.vK, p.IP),
                     children: (0, a.jsx)(r.EYj, {
                         variant: "text-md/bold",
                         color: "always-white",

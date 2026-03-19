@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(873263),
-    l = n(435220),
-    r = n(162157),
+    r = n(435220),
+    l = n(162157),
     s = n(652215);
 
 function o() {
@@ -24,11 +24,11 @@ function o() {
             path: s.BVt.APPLICATION_DIRECTORY_PROFILE_STORE_SKU(":applicationId", ":skuId"),
             to: s.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(":applicationId", ":skuId")
         }), (0, i.jsx)(a.rd, {
-            path: s.BVt.APPLICATION_DIRECTORY_PROFILE_SECTION(":applicationId", r.h.STORE),
-            to: s.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(":applicationId", l.GlobalDiscoveryAppsSections.STORE)
+            path: s.BVt.APPLICATION_DIRECTORY_PROFILE_SECTION(":applicationId", l.h.STORE),
+            to: s.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(":applicationId", r.GlobalDiscoveryAppsSections.STORE)
         }), (0, i.jsx)(a.rd, {
-            path: s.BVt.APPLICATION_DIRECTORY_PROFILE_SECTION(":applicationId", r.h.PREMIUM_DEPRECATED),
-            to: s.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(":applicationId", l.GlobalDiscoveryAppsSections.STORE)
+            path: s.BVt.APPLICATION_DIRECTORY_PROFILE_SECTION(":applicationId", l.h.PREMIUM_DEPRECATED),
+            to: s.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(":applicationId", r.GlobalDiscoveryAppsSections.STORE)
         }), (0, i.jsx)(a.rd, {
             path: s.BVt.APPLICATION_DIRECTORY_PROFILE(":applicationId"),
             to: {

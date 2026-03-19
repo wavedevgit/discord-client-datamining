@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(497766),
-    l = n(568329),
+    l = n(497766),
+    s = n(568329),
     r = n(963713);
 
 function o() {
@@ -14,7 +14,7 @@ function o() {
         animatedComponentProps: t,
         recalculateAnimationPositions: n,
         mountPoints: o
-    } = i.useContext(l.PW), {
+    } = i.useContext(s.PW), {
         isExpanded: d
     } = i.useContext(r.T);
     return i.useEffect(() => {
@@ -34,12 +34,12 @@ function o() {
             let {
                 id: n,
                 collapsedLeft: i,
-                expandedLeft: l,
+                expandedLeft: s,
                 collapsedTop: r,
                 expandedTop: d,
                 width: c
             } = t, u = o.get(n);
-            return (0, a.jsx)(s.animated.div, {
+            return (0, a.jsx)(l.animated.div, {
                 ref: u,
                 style: {
                     zIndex: 2,
@@ -47,9 +47,9 @@ function o() {
                     top: 0,
                     left: 0,
                     width: c,
-                    transform: (0, s.to)([e.to({
+                    transform: (0, l.to)([e.to({
                         range: [0, 1],
-                        output: [i, l]
+                        output: [i, s]
                     }), e.to({
                         range: [0, 1],
                         output: [r, d]

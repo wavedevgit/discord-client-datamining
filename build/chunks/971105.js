@@ -1,6 +1,6 @@
 /** chunk id: 971105 params = (module,exports,require) **/
 n.d(t, {
-    A: () => L
+    A: () => D
 });
 var i = n(627968),
     s = n(64700),
@@ -23,14 +23,14 @@ var i = n(627968),
     S = n(166403),
     C = n(927578),
     f = n(61509),
-    b = n(652215),
-    N = n(788868),
-    I = n(818348),
+    N = n(652215),
+    I = n(788868),
+    b = n(818348),
     v = n(985018),
     j = n(166789),
     y = n(124953);
 
-function R(e) {
+function O(e) {
     let {
         payments: t,
         locale: n,
@@ -80,7 +80,7 @@ function R(e) {
         })
     })
 }
-class O extends s.PureComponent {
+class R extends s.PureComponent {
     static defaultProps = {
         compactMode: !1
     };
@@ -99,12 +99,12 @@ class O extends s.PureComponent {
             children: [(0, i.jsx)("div", {
                 className: j.BF,
                 children: v.intl.format(v.t["6mIX6s"], {
-                    paymentGatewayName: I.qm[e.paymentGateway]
+                    paymentGatewayName: b.qm[e.paymentGateway]
                 })
             }), (0, i.jsx)("div", {
                 className: j.Q2,
                 children: v.intl.format(v.t.eG0uZB, {
-                    paymentGatewayName: I.qm[e.paymentGateway],
+                    paymentGatewayName: b.qm[e.paymentGateway],
                     billingHistoryLink: (0, C.tW)(e.paymentGateway, "BILLING_HISTORY")
                 })
             })]
@@ -136,7 +136,7 @@ class O extends s.PureComponent {
                             children: v.intl.string(v.t["6MqHXV"])
                         })]
                     })
-                }), (0, i.jsx)(R, {
+                }), (0, i.jsx)(O, {
                     compactMode: e,
                     locale: s,
                     payments: t,
@@ -147,22 +147,22 @@ class O extends s.PureComponent {
     }
 }
 
-function D(e) {
+function L(e) {
     let t = e.skuId,
         n = e.subscription?.items[0].planId;
-    return !(null == t || null == n || Object.values(N.pe).includes(t) || (0, C.ys)(n))
+    return !(null == t || null == n || Object.values(I.pe).includes(t) || (0, C.ys)(n))
 }
 
-function L(e) {
+function D(e) {
     let t = (0, c.bG)([T.A], () => T.A.getPayments()),
         n = (0, c.bG)([S.A], () => S.A.getPremiumTypeSubscription()),
-        l = s.useMemo(() => new Set(t.filter(D).map(e => {
+        l = s.useMemo(() => new Set(t.filter(L).map(e => {
             let {
                 subscription: t
             } = e;
             return t?.items[0].planId
         })), [t]),
-        a = s.useMemo(() => new Set(t.filter(D).map(e => {
+        a = s.useMemo(() => new Set(t.filter(L).map(e => {
             let {
                 skuId: t
             } = e;
@@ -170,12 +170,12 @@ function L(e) {
         })), [t]),
         r = (0, c.yK)([E.A], () => E.A.getPlanIdsForSkus(Array.from(a))),
         o = s.useCallback(() => r.length === l.size, [r, l]),
-        d = s.useMemo(() => t.filter(e => e.currency !== b.Yri.DISCORD_ORB), [t]);
+        d = s.useMemo(() => t.filter(e => e.currency !== N.Yri.DISCORD_ORB), [t]);
     return s.useEffect(() => {
         o() || _.h.wait(() => {
             a.forEach(e => (0, A.ur)(e, void 0, void 0, !0, void 0))
         })
-    }, [o, a]), (0, i.jsx)(O, {
+    }, [o, a]), (0, i.jsx)(R, {
         ...e,
         payments: d,
         subscription: n

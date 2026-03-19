@@ -7,8 +7,8 @@ n.d(t, {
 });
 var a = n(64700),
     i = n(873298),
-    s = n(631670),
-    l = n(817281),
+    l = n(631670),
+    s = n(817281),
     r = n(955572),
     o = n(775602),
     d = n(4227),
@@ -41,14 +41,14 @@ async function T() {
                 let t = b.ag[a];
                 e = t?.theme ?? v.NJ8.DARK
             } else e = y([v.NJ8.DARK, v.NJ8.DARKER, v.NJ8.MIDNIGHT]);
-            await l.u_({
+            await s.u_({
                 theme: e,
                 backgroundGradientPresetId: a ?? void 0,
                 customUserThemeSettings: void 0
             }, g.Sb.INFREQUENT_USER_ACTION)
         } else {
             let e = y(A);
-            await l.u_({
+            await s.u_({
                 theme: e,
                 backgroundGradientPresetId: void 0,
                 customUserThemeSettings: void 0
@@ -72,8 +72,8 @@ async function S() {
             (0, u.pX)(e)
         }
         let e = h.A.getPendingChanges(),
-            l = (0, m.Sk)(e);
-        await (0, s._L)(l).finally(s.pZ)
+            s = (0, m.Sk)(e);
+        await (0, l._L)(s).finally(l.pZ)
     } catch (e) {}
 }
 
@@ -106,14 +106,14 @@ function N() {
             S = p.Xi.getSetting();
         return () => {
             try {
-                l.u_({
+                s.u_({
                     theme: f,
                     backgroundGradientPresetId: v ?? void 0,
                     customUserThemeSettings: void 0
                 }, g.Sb.INFREQUENT_USER_ACTION), (0, u.Dx)(A), (0, u.pX)(C);
                 let e = h.A.getPendingChanges(),
                     t = (0, m.Sk)(e);
-                (0, s._L)(t).finally(s.pZ), (0, r.XS)(y), (0, r.AC)(T), p.Xi.updateSetting(S)
+                (0, l._L)(t).finally(l.pZ), (0, r.XS)(y), (0, r.AC)(T), p.Xi.updateSetting(S)
             } catch (e) {}
         }
     }, [])

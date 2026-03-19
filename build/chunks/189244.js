@@ -5,8 +5,8 @@ n.d(t, {
 var a = n(627968);
 n(64700);
 var i = n(311907),
-    s = n(873298),
-    l = n(397927),
+    l = n(873298),
+    s = n(397927),
     r = n(775602),
     o = n(590180),
     d = n(4227),
@@ -40,61 +40,61 @@ function f() {
     return (0, p.DB)(), (0, a.jsxs)("div", {
         className: _.kL,
         children: [(0, a.jsxs)("div", {
-            children: [(0, a.jsx)(l.Heading, {
+            children: [(0, a.jsx)(s.Heading, {
                 variant: "heading-lg/semibold",
                 children: "Randomize customization settings"
-            }), (0, a.jsx)(l.Text, {
+            }), (0, a.jsx)(s.Text, {
                 variant: "text-md/normal",
                 children: "Randomly sets appearance-related settings. Leaving this tab or closing devtools will reset to your initial state."
-            }), (0, a.jsx)(l.Button, {
+            }), (0, a.jsx)(s.Button, {
                 variant: "primary",
                 size: "sm",
                 text: "Randomize Theme",
                 onClick: p.t0
-            }), (0, a.jsx)(l.Button, {
+            }), (0, a.jsx)(s.Button, {
                 variant: "primary",
                 size: "sm",
                 text: "Randomize Collectibles",
                 onClick: p.ZL
-            }), (0, a.jsx)(l.Button, {
+            }), (0, a.jsx)(s.Button, {
                 variant: "primary",
                 size: "sm",
                 text: "Randomize Appearance Settings",
                 onClick: p.ln
             })]
         }), (0, a.jsxs)("div", {
-            children: [(0, a.jsx)(l.Heading, {
+            children: [(0, a.jsx)(s.Heading, {
                 variant: "heading-lg/semibold",
                 children: "Current Settings"
-            }), (0, a.jsxs)(l.Text, {
+            }), (0, a.jsxs)(s.Text, {
                 variant: "text-md/normal",
                 children: ["Theme: ", n]
-            }), (0, a.jsxs)(l.Text, {
+            }), (0, a.jsxs)(s.Text, {
                 variant: "text-md/normal",
                 children: ["Client Theme ID:", " ", null != f ? g.ag[f]?.getName() : "None"]
-            }), (0, a.jsxs)(l.Text, {
+            }), (0, a.jsxs)(s.Text, {
                 variant: "text-md/normal",
                 children: ["Avatar Decoration: ", S?.name ?? "None"]
-            }), (0, a.jsxs)(l.Text, {
+            }), (0, a.jsxs)(s.Text, {
                 variant: "text-md/normal",
                 children: ["Nameplate: ", E?.name ?? "None"]
-            }), (0, a.jsxs)(l.Text, {
+            }), (0, a.jsxs)(s.Text, {
                 variant: "text-md/normal",
                 children: ["Font Size: ", N, "px"]
-            }), (0, a.jsxs)(l.Text, {
+            }), (0, a.jsxs)(s.Text, {
                 variant: "text-md/normal",
                 children: ["Message Spacing: ", I]
-            }), (0, a.jsxs)(l.Text, {
+            }), (0, a.jsxs)(s.Text, {
                 variant: "text-md/normal",
                 children: ["UI Density: ", k, " (", function(e) {
                     switch (e) {
-                        case s.NS.COMPACT:
+                        case l.NS.COMPACT:
                             return "Compact";
-                        case s.NS.COZY:
+                        case l.NS.COZY:
                             return "Cozy";
-                        case s.NS.DEFAULT:
+                        case l.NS.DEFAULT:
                             return "Default";
-                        case s.NS.RESPONSIVE:
+                        case l.NS.RESPONSIVE:
                             return "Responsive";
                         default:
                             return "Unknown"

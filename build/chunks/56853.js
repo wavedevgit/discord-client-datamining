@@ -4,8 +4,8 @@ n.d(t, {
 }), n(134528), n(947204);
 var a = n(627968),
     i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    l = n(503698),
+    s = n.n(l),
     r = n(497766),
     o = n(417597),
     d = n(990078),
@@ -43,7 +43,7 @@ function U(e) {
         variant: n = "default"
     } = e;
     return (0, a.jsx)("div", {
-        className: l()(P.Io, {
+        className: s()(P.Io, {
             [P.tV]: "brand" === n,
             "theme-light": "default" === n
         }),
@@ -60,8 +60,8 @@ function L(e) {
     let {
         quest: t,
         errorHints: n,
-        warningHints: s,
-        isDarkTheme: l,
+        warningHints: l,
+        isDarkTheme: s,
         sourceQuestContent: o
     } = e, {
         ref: d,
@@ -75,17 +75,17 @@ function L(e) {
     } : n.length > 0 ? {
         type: 0,
         hints: n.map(e => e.message)
-    } : s.length > 0 ? {
+    } : l.length > 0 ? {
         type: 1,
-        hints: s
+        hints: l
     } : {
         type: 2,
         hints: []
-    }, [n, h, x, s]), _ = 2 !== p, f = (0, u.zhh)({
+    }, [n, h, x, l]), _ = 2 !== p, f = (0, u.zhh)({
         opacity: +!!_,
         height: _ ? c : 0,
         config: w.N
-    }), b = 0 === p ? u.EpV : u.mir, j = u.LU0.unsafe_rawColors.RED_345.css, A = 0 === p ? j : l ? u.LU0.colors.TEXT_DEFAULT : u.LU0.colors.WHITE;
+    }), b = 0 === p ? u.EpV : u.mir, j = u.LU0.unsafe_rawColors.RED_345.css, A = 0 === p ? j : s ? u.LU0.colors.TEXT_DEFAULT : u.LU0.colors.WHITE;
     return (0, a.jsx)(r.animated.div, {
         style: {
             height: f.height,
@@ -101,7 +101,7 @@ function L(e) {
                     color: A
                 }), (0, a.jsx)(u.Text, {
                     variant: "text-xs/medium",
-                    color: l ? "text-muted" : "always-white",
+                    color: s ? "text-muted" : "always-white",
                     children: g.at(0)
                 })]
             }), 0 === p && (0, a.jsx)(u.QWc, {
@@ -122,14 +122,14 @@ function B(e) {
     let {
         quest: t,
         isHovering: n,
-        errorHints: s,
-        warningHints: l,
+        errorHints: l,
+        warningHints: s,
         isVisibleInViewport: r,
         onCtxMenuClose: m,
         onCtxMenuOpen: y,
         onCtxMenuSelect: N,
         sourceQuestContent: w
-    } = e, B = (0, p.O)(e => e.getErrorHints(t.id)), G = B.length > 0 ? B : s, F = (0, A.IO)(t), V = (0, h.Ay)(), W = ((0, c.Mw)(V) ? D.NJ8.DARK : D.NJ8.LIGHT) === D.NJ8.DARK, H = (0, v.LS)(t), K = t.userStatus?.claimedAt != null, z = (0, v.S5)(t.config.expiresAt, {
+    } = e, B = (0, p.O)(e => e.getErrorHints(t.id)), G = B.length > 0 ? B : l, F = (0, A.IO)(t), V = (0, h.Ay)(), W = ((0, c.Mw)(V) ? D.NJ8.DARK : D.NJ8.LIGHT) === D.NJ8.DARK, H = (0, v.LS)(t), K = t.userStatus?.claimedAt != null, z = (0, v.S5)(t.config.expiresAt, {
         month: "numeric",
         day: "numeric"
     }), $ = t.userStatus?.enrolledAt != null, q = t.userStatus?.completedAt != null, {
@@ -273,7 +273,7 @@ function B(e) {
             }), (0, a.jsx)(L, {
                 quest: t,
                 errorHints: G,
-                warningHints: l,
+                warningHints: s,
                 isDarkTheme: W,
                 sourceQuestContent: w
             })]

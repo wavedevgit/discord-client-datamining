@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var a = n(627968),
     i = n(64700),
-    s = n(311907),
-    l = n(342494),
+    l = n(311907),
+    s = n(342494),
     r = n(688810),
     o = n(704824),
     d = n(362490),
@@ -30,10 +30,10 @@ function y(e) {
         onClose: n
     } = e, [y, T] = i.useState(!1), {
         trackUserProfileEditAction: S
-    } = (0, h.NJ)(), E = (0, s.bG)([v.default], () => v.default.getId()), N = function() {
-        let e, t, n = (0, s.bG)([v.default], () => v.default.getId()),
+    } = (0, h.NJ)(), E = (0, l.bG)([v.default], () => v.default.getId()), N = function() {
+        let e, t, n = (0, l.bG)([v.default], () => v.default.getId()),
             a = (0, g.A)(n),
-            l = i.useMemo(() => a.filter(e => e instanceof x.R), [a]),
+            s = i.useMemo(() => a.filter(e => e instanceof x.R), [a]),
             r = (e = (0, c.ul)({
                 location: "UserProfileAccountPopoutApplicationWidgetCoachmark"
             }), i.useMemo(() => e?.filter(e => e.isEligibleForEditProfileUpsell()), [e])),
@@ -50,25 +50,25 @@ function y(e) {
                 t = [];
             for (let n of r) {
                 let a = p.find(e => e.application.id === n.applicationId),
-                    i = l.find(e => e.applicationId === n.applicationId),
-                    s = h.find(e => e.id === n.applicationId),
+                    i = s.find(e => e.applicationId === n.applicationId),
+                    l = h.find(e => e.id === n.applicationId),
                     r = f.find(e => e.context.application.id === n.applicationId);
-                if (null == s) return null;
+                if (null == l) return null;
                 null != a && null == i ? e.push({
                     type: "linked",
                     config: n,
-                    application: s,
+                    application: l,
                     dismissibleContent: n.editProfileLinkedDc
                 }) : null == a && r?.preferredFlow != null && t.push({
                     type: "unlinked",
                     config: n,
-                    application: s,
+                    application: l,
                     dismissibleContent: n.editProfileUnlinkedDc,
                     authFlow: r.preferredFlow
                 })
             }
             return [...e, ...t]
-        }, [r, p, _, l, h, f])
+        }, [r, p, _, s, h, f])
     }(), {
         analyticsLocations: I
     } = (0, r.Ay)();
@@ -77,7 +77,7 @@ function y(e) {
         children: e => {
             let {
                 visibleContent: i,
-                markAsDismissed: s
+                markAsDismissed: l
             } = e, r = N.find(e => e.dismissibleContent === i);
             if (null == r) return null;
             let o = "linked" === r.type,
@@ -85,9 +85,9 @@ function y(e) {
                     userId: E,
                     tabSection: A.RP.WIDGETS
                 }).then(() => {
-                    s(j.i.TAKE_ACTION), n()
+                    l(j.i.TAKE_ACTION), n()
                 });
-            return (0, a.jsx)(l.AM, {
+            return (0, a.jsx)(s.AM, {
                 targetElementRef: t,
                 position: "right",
                 gradientColor: "blue",
@@ -99,7 +99,7 @@ function y(e) {
                     applicationName: r.application.name
                 }),
                 body: o ? C.intl.string(C.t["63Kso0"]) : C.intl.string(C.t.HwXoeC),
-                onRequestClose: () => s(j.i.USER_DISMISS),
+                onRequestClose: () => l(j.i.USER_DISMISS),
                 actions: [o ? {
                     text: C.intl.string(C.t.VSLDly),
                     onClick: () => {

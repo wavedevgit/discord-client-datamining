@@ -24,7 +24,7 @@ function o(e) {
     } = t, x = d(), h = c?.(), p = n(), T = u?.() ?? !1, E = _?.(), S = m?.(), C = A?.(), f = (0, l.A)({
         persistentBadge: S,
         dismissibleBadges: C
-    }), b = (0, a.q)(t);
+    }), N = (0, a.q)(t);
     return (0, i.jsxs)(r.L, {
         children: [(0, i.jsx)(s.dOG, {
             label: x,
@@ -33,7 +33,7 @@ function o(e) {
             checked: p,
             hasIcon: g,
             onChange: e => {
-                b(), o(e)
+                N(), o(e)
             },
             disabled: T
         }), T && null != E ? (0, i.jsx)(s.po8, {

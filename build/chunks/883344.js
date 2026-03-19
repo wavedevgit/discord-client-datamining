@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(681154),
     a = n(311907),
-    l = n(73153),
-    r = n(99753),
+    r = n(73153),
+    l = n(99753),
     s = n(20805),
     o = n(583846),
     d = n(49463),
@@ -58,8 +58,8 @@ let P = +C.A.Millis.DAY,
     en = 0,
     ei = !0,
     ea = !1,
-    el = new Set,
-    er = !1,
+    er = new Set,
+    el = !1,
     es = !1,
     eo = 0,
     ed = 0;
@@ -124,7 +124,7 @@ function e_() {
 }
 
 function em(e) {
-    let t, n, a, l, d;
+    let t, n, a, r, d;
     if (U.length > 0 && (M = U, U = [], G = []), W++, null != e) Z = e.newUnread, J = e.newRead;
     else {
         let [e, t] = eg(M);
@@ -170,7 +170,7 @@ function em(e) {
         t.forEach(e => {
             V[e.id] = e, null != b.A.getReadTimestamp(e.id) ? i.push(e) : n.push(e)
         }), Z = eA(Z, n, y.Mm.GUILD_EVENT, 7), J = eA(J, i, y.Mm.GUILD_EVENT, 7)
-    }(), t = new Set, n = {}, a = [], l = [], (d = r.A.getFeed(R.X1.GLOBAL_FEED)?.entries ?? []).sort((e, t) => e.rank - t.rank).slice(0, 5), d.forEach(e => {
+    }(), t = new Set, n = {}, a = [], r = [], (d = l.A.getFeed(R.X1.GLOBAL_FEED)?.entries ?? []).sort((e, t) => e.rank - t.rank).slice(0, 5), d.forEach(e => {
         if (t.has(e.content.id) || e.content.content_type !== i.ContentInventoryEntryType.PLAYED_GAME && e.content.content_type !== i.ContentInventoryEntryType.CUSTOM_STATUS && e.content.content_type !== i.ContentInventoryEntryType.TOP_GAME || (0, o.I5)(e.content)) return;
         if ((0, s.zD)(e.content)) {
             if (null == n[e.content.author_id] && (n[e.content.author_id] = new Set), n[e.content.author_id].has(e.content.extra.application_id)) return;
@@ -182,7 +182,7 @@ function em(e) {
             score: 15,
             activity: e.content
         });
-        let r = {
+        let l = {
             id: e.content.id,
             type: y.Mm.ACTIVITY,
             score: 15,
@@ -191,8 +191,8 @@ function em(e) {
                 content_id: e.content.id
             }
         };
-        t.add(e.content.id), V[r.id] = r, null != b.A.getReadTimestamp(r.id) ? l.push(r) : a.push(r)
-    }), Z = eA(Z, a, y.Mm.ACTIVITY, 5), J = eA(J, l, y.Mm.ACTIVITY, 5), eh()), null != k.load_id && j !== k.load_id && (S.k.trackFeedLoaded({
+        t.add(e.content.id), V[l.id] = l, null != b.A.getReadTimestamp(l.id) ? r.push(l) : a.push(l)
+    }), Z = eA(Z, a, y.Mm.ACTIVITY, 5), J = eA(J, r, y.Mm.ACTIVITY, 5), eh()), null != k.load_id && j !== k.load_id && (S.k.trackFeedLoaded({
         newTrackingProps: k,
         hasNewContent: q,
         unreadFeedItems: Z,
@@ -242,11 +242,11 @@ function eT(e) {
         messageId: n,
         userId: i,
         emoji: a,
-        reactionType: l
-    } = e, r = B[n];
-    if (null == r || r.type !== y.Mm.MESSAGE) return !1;
+        reactionType: r
+    } = e, l = B[n];
+    if (null == l || l.type !== y.Mm.MESSAGE) return !1;
     let s = A.default.getId() === i;
-    "MESSAGE_REACTION_ADD" === t ? r.message = r.message.addReaction(a, s, e.colors, l) : r.message = r.message.removeReaction(a, s, l)
+    "MESSAGE_REACTION_ADD" === t ? l.message = l.message.addReaction(a, s, e.colors, r) : l.message = l.message.removeReaction(a, s, r)
 }
 
 function eN(e) {
@@ -257,15 +257,15 @@ function eN(e) {
         (a > ee || !z) && e.type === y.Mm.MESSAGE && e.data.channel_id === t ? n.push(e) : i.push(e)
     });
     let a = q,
-        [l, r] = eg(U);
-    if (G = ep(l, t), q = z ? a && G.length >= y.$P : a && ec(i, U), 0 === n.length && a === q) return !1;
+        [r, l] = eg(U);
+    if (G = ep(r, t), q = z ? a && G.length >= y.$P : a && ec(i, U), 0 === n.length && a === q) return !1;
     0 !== n.length && (Z = i, J = [...J, ...n])
 }
 class eS extends a.Ay.PersistedStore {
     static displayName = "ICYMIStore";
     static persistKey = "ICYMIStore";
     initialize(e) {
-        this.waitFor(A.default, h.A, r.A, d.A, _.A, c.Ay, m.A, v.A, b.A, g.A, p.A, E.Ay, I.A, f.Ay), null != e && ((M = e.dehydratedItems ?? []).forEach(e => {
+        this.waitFor(A.default, h.A, l.A, d.A, _.A, c.Ay, m.A, v.A, b.A, g.A, p.A, E.Ay, I.A, f.Ay), null != e && ((M = e.dehydratedItems ?? []).forEach(e => {
             V[e.id] = e
         }), F = e.customGuildScores ?? {}, Y = e.customChannelScoresByGuild ?? {}, X = e.numOpens ?? 0, w = e.lastOpened ?? 0, en = e.lastJoinedRecommendedGuild ?? 0, ed = e.lastTakenICYMISurvey ?? 0)
     }
@@ -343,13 +343,13 @@ class eS extends a.Ay.PersistedStore {
         return ea
     }
     isHydrating() {
-        return el.size > 0
+        return er.size > 0
     }
     notificationItem() {
         return Q
     }
     getIsTabFocused() {
-        return er
+        return el
     }
     isFirstPageHydrated() {
         return es
@@ -375,9 +375,9 @@ class eS extends a.Ay.PersistedStore {
         }
     }
 }
-let ex = new eS(l.h, {
+let ex = new eS(r.h, {
     LOGOUT: function() {
-        M = [], U = [], G = [], V = {}, k = {}, B = {}, H = {}, j = null, F = {}, Y = {}, W = 0, K = !1, q = !1, z = !1, Z = [], J = [], ee = 0, w = 0, en = 0, ei = !0, ea = !1, el = new Set, Q = null, er = !1, es = !1, $ = null, eo = 0
+        M = [], U = [], G = [], V = {}, k = {}, B = {}, H = {}, j = null, F = {}, Y = {}, W = 0, K = !1, q = !1, z = !1, Z = [], J = [], ee = 0, w = 0, en = 0, ei = !0, ea = !1, er = new Set, Q = null, el = !1, es = !1, $ = null, eo = 0
     },
     LOAD_ICYMI_FROM_NOTIFICATION: function(e) {
         let {
@@ -414,7 +414,7 @@ let ex = new eS(l.h, {
             loadId: n,
             startTime: i,
             isInitialLoad: a,
-            isReloading: l
+            isReloading: r
         } = e;
         U = function(e) {
             let {
@@ -434,22 +434,22 @@ let ex = new eS(l.h, {
             load_time_millis: Date.now() - i,
             feed_item_ids: U.map(e => e.id)
         };
-        let [r, s] = eg(U);
-        if (G = ep(r), !z || 0 === W || a) W = 0, !er && ec(r, U) ? (q = !0, K = !0) : q = !1, em({
-            newUnread: r,
+        let [l, s] = eg(U);
+        if (G = ep(l), !z || 0 === W || a) W = 0, !el && ec(l, U) ? (q = !0, K = !0) : q = !1, em({
+            newUnread: l,
             newRead: s
         });
         else {
             W > 0 && (Q = null);
             let e = G.length > y.$P;
-            l || (q = e), e && ((0, O.kx)([...r, ...s], 0, y.w5), r.length + s.length === 0 && (es = !0))
+            r || (q = e), e && ((0, O.kx)([...l, ...s], 0, y.w5), l.length + s.length === 0 && (es = !0))
         }
         S.k.trackFeedLoaded({
             newTrackingProps: k,
             hasNewContent: q,
-            unreadFeedItems: r,
+            unreadFeedItems: l,
             readFeedItems: s,
-            homeSessionId: er ? "foreground_load" : "background_load"
+            homeSessionId: el ? "foreground_load" : "background_load"
         })
     },
     LOAD_ICYMI_HYDRATED: function(e) {
@@ -458,8 +458,8 @@ let ex = new eS(l.h, {
             activityItems: n,
             generatedCandidateItems: i,
             requestMessageItems: a,
-            requestActivityItems: l,
-            requestGeneratedCandidateItems: r,
+            requestActivityItems: r,
+            requestGeneratedCandidateItems: l,
             startingIndex: s,
             endingIndex: o
         } = e;
@@ -496,7 +496,7 @@ let ex = new eS(l.h, {
                     message: i
                 }
             } else B[t.message.id] = (0, O.Rh)(t, n)
-        }), l.forEach(e => {
+        }), r.forEach(e => {
             let t = c[e.content_id];
             if (null == t) {
                 H[e.content_id] = !0;
@@ -511,7 +511,7 @@ let ex = new eS(l.h, {
                 ...n,
                 activity: t
             }
-        }), r.forEach(e => {
+        }), l.forEach(e => {
             let t = u[e.content_id];
             if (null == t) {
                 H[e.content_id] = !0;
@@ -526,7 +526,7 @@ let ex = new eS(l.h, {
                 ...n,
                 candidate: (0, O.GM)(t)
             }
-        }), s === ee && (ee = o), el.delete((0, O.Vq)(s, o))
+        }), s === ee && (ee = o), er.delete((0, O.Vq)(s, o))
     },
     LOAD_ICYMI_CUSTOM_SCORES: function(e) {
         let {
@@ -621,19 +621,19 @@ let ex = new eS(l.h, {
         let {
             hydrationId: t
         } = e;
-        el.add(t)
+        er.add(t)
     },
     LOAD_ICYMI_HYDRATED_FAILED: function(e) {
         let {
             hydrationId: t
         } = e;
-        el.delete(t)
+        er.delete(t)
     },
     ICYMI_SET_FOCUSED_TAB: function(e) {
         let {
             focused: t
         } = e;
-        er = t
+        el = t
     },
     LOAD_ICYMI_CURRENT_STATUS_MEDIA: function(e) {
         let {

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(397927),
-    l = n(964486),
+    l = n(397927),
+    s = n(964486),
     r = n(847599),
     o = n(767379),
     d = n(240248),
@@ -26,18 +26,18 @@ function A(e) {
     let {
         task: t,
         handleSubmit: n,
-        disabled: s
-    } = e, [l, r] = i.useState(t), o = i.useMemo(() => ({
-        task: l,
+        disabled: l
+    } = e, [s, r] = i.useState(t), o = i.useMemo(() => ({
+        task: s,
         setTask: r
-    }), [l, r]);
+    }), [s, r]);
     return i.useEffect(() => {
         r(t)
     }, [t]), (0, a.jsxs)(u.h.Provider, {
         value: o,
         children: [(0, a.jsx)(p.A, {}), (0, a.jsx)(x.A, {
             onSubmit: n,
-            disabled: s
+            disabled: l
         })]
     })
 }
@@ -87,7 +87,7 @@ let C = function(e) {
             }
         }
     }, [u, N]);
-    (0, l.Ay)(() => {
+    (0, s.Ay)(() => {
         N()
     });
     let k = i.useMemo(() => u?.task_type === m.wP.AGE_VERIFICATION, [u]);
@@ -109,43 +109,43 @@ let C = function(e) {
             dismissable: !1
         }) : (0, a.jsx)("div", {
             className: b.nA,
-            children: p ? (0, a.jsx)(s.y$y, {
-                type: s.y$y.Type.SPINNING_CIRCLE
+            children: p ? (0, a.jsx)(l.y$y, {
+                type: l.y$y.Type.SPINNING_CIRCLE
             }) : (0, a.jsx)("div", {
                 className: b.kL,
-                children: (0, a.jsxs)(s.BJc, {
+                children: (0, a.jsxs)(l.BJc, {
                     direction: "horizontal",
                     justify: "start",
                     className: b.rf,
-                    children: [null !== y && (0, a.jsxs)(s.BJc, {
+                    children: [null !== y && (0, a.jsxs)(l.BJc, {
                         direction: "vertical",
                         justify: "space-between",
                         align: "center",
                         className: b.Nj,
                         padding: 16,
-                        children: [(0, a.jsxs)(s.BJc, {
+                        children: [(0, a.jsxs)(l.BJc, {
                             direction: "vertical",
                             gap: 4,
-                            children: [(0, a.jsx)(s.Heading, {
+                            children: [(0, a.jsx)(l.Heading, {
                                 variant: "heading-xl/semibold",
                                 children: v.intl.string(v.t.c6kn6F)
-                            }), (0, a.jsx)(s.Text, {
+                            }), (0, a.jsx)(l.Text, {
                                 variant: "text-md/normal",
                                 color: "text-muted",
                                 children: v.intl.string(v.t.ZUEGFn)
                             })]
-                        }), (0, a.jsxs)(s.BJc, {
+                        }), (0, a.jsxs)(l.BJc, {
                             direction: "horizontal",
                             justify: "center",
                             align: "center",
-                            children: [(0, a.jsx)(s.Button, {
+                            children: [(0, a.jsx)(l.Button, {
                                 fullWidth: !0,
                                 variant: "secondary",
                                 text: v.intl.string(v.t["2jxGer"]),
                                 onClick: () => {
                                     (0, h.k)("safety_flows_modal")
                                 }
-                            }), (0, a.jsx)(s.Button, {
+                            }), (0, a.jsx)(l.Button, {
                                 fullWidth: !0,
                                 text: v.intl.string(v.t["7NqTJn"]),
                                 onClick: () => {

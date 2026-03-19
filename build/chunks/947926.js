@@ -5,8 +5,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    l = n(503698),
+    s = n.n(l),
     r = n(497766),
     o = n(311907),
     d = n(475743),
@@ -62,7 +62,7 @@ function B(e) {
     let {
         quest: t,
         unfurlEnabled: n = !1,
-        unfurlDurationInMilliseconds: s
+        unfurlDurationInMilliseconds: l
     } = e, c = (0, g.L)({
         quest: t,
         location: M.rE.QUESTS_BAR
@@ -86,8 +86,8 @@ function B(e) {
         expandQuestBar: en,
         isExpansionAnimationComplete: ea,
         isVisibilityAnimationAtRest: ei,
-        expansionSpring: es,
-        visibilitySpring: el,
+        expansionSpring: el,
+        visibilitySpring: es,
         springConfig: er,
         onQuestBarFocus: eo,
         isUnfurl: ed,
@@ -161,18 +161,18 @@ function B(e) {
                 onMouseEnter: ev,
                 onFocus: e_,
                 onBlur: ef,
-                className: l()(P.iE, {
+                className: s()(P.iE, {
                     [P.Xc]: !J,
                     [P.uv]: J && ei
                 }),
                 style: {
-                    height: el.to({
+                    height: es.to({
                         range: [0, 1],
                         output: [0, eS]
                     })
                 },
                 children: (0, a.jsx)(r.animated.div, {
-                    className: l()(P.FG, {
+                    className: s()(P.FG, {
                         [P.E$]: ee,
                         [P.KA]: z
                     }),
@@ -182,7 +182,7 @@ function B(e) {
                         children: (0, a.jsx)(y.oK, {
                             expandedContentRef: ej,
                             collapsedContentRef: eA,
-                            expansionSpring: es,
+                            expansionSpring: el,
                             children: (0, a.jsxs)(N.C, {
                                 quest: t,
                                 taskDetails: ey,
@@ -205,7 +205,7 @@ function B(e) {
                                     isUnfurl: ed,
                                     children: (0, a.jsxs)(a.Fragment, {
                                         children: [(0, a.jsx)(k.A, {}), !z && (0, a.jsx)(C.A, {
-                                            unfurlTimeoutDurationInMilliseconds: s,
+                                            unfurlTimeoutDurationInMilliseconds: l,
                                             withUnfurlTimeout: ec,
                                             onUnfurlTimeoutComplete: eu
                                         })]

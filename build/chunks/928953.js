@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    l = n(503698),
+    s = n.n(l),
     r = n(397927),
     o = n(961895),
     d = n(343991),
@@ -32,7 +32,7 @@ let m = () => {
         let {
             className: t,
             onDrop: n,
-            children: s
+            children: l
         } = e, [x, p] = i.useState(!1), g = i.useRef(null), _ = i.useCallback(e => {
             h(e), p(!0), (0, r.OoC)(d.D)
         }, []), f = i.useCallback(e => {
@@ -49,12 +49,12 @@ let m = () => {
         }, [n]);
         return (0, a.jsxs)("div", {
             ref: g,
-            className: l()(t, u.iE),
+            className: s()(t, u.iE),
             onDragEnter: _,
             onDragOver: h,
             onDragLeave: f,
             onDrop: v,
-            children: [s, x && (0, a.jsx)("div", {
+            children: [l, x && (0, a.jsx)("div", {
                 className: u.d2,
                 children: (0, a.jsxs)("div", {
                     className: u.vW,

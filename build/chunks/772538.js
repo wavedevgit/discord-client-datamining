@@ -1,55 +1,53 @@
 /** chunk id: 772538 params = (module,exports,require) **/
-e.d(_, {
-    A: () => V
+n.d(e, {
+    A: () => E
 });
-var E = e(627968),
-    A = e(64700),
-    I = e(954571),
-    T = e(975571),
-    S = e(115063),
-    n = e(253932),
-    C = e(112469),
-    R = e(871930),
-    i = e(578746),
-    l = e(542457),
-    r = e(355097),
-    u = e(531525);
-e(820575);
-var d = e(652215),
-    N = e(985018);
+var i = n(627968),
+    l = n(64700),
+    r = n(954571),
+    u = n(975571),
+    d = n(115063),
+    s = n(253932),
+    a = n(112469),
+    o = n(106148),
+    c = n(650832),
+    g = n(542457),
+    S = n(355097);
+n(927693);
+var _ = n(652215),
+    T = n(985018);
 
-function s(t) {
+function A(t) {
     let {
-        ingress: _,
-        guildId: e
-    } = t, C = n.pE.useSetting().includes(e), r = A.useCallback(t => {
-        let E = (0, S.CN)();
-        t ? E.delete(e) : E.add(e), n.pE.updateSetting([...E]), I.default.track(d.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
-            action: l.m.RESTRICT_GUILD_ACTIVITY_JOIN_TOGGLE,
-            ingress: _,
-            guild_id: e
+        ingress: e,
+        guildId: n
+    } = t, a = s.pE.useSetting().includes(n), S = l.useCallback(t => {
+        let i = (0, d.CN)();
+        t ? i.delete(n) : i.add(n), s.pE.updateSetting([...i]), r.default.track(_.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+            action: g.m.RESTRICT_GUILD_ACTIVITY_JOIN_TOGGLE,
+            ingress: e,
+            guild_id: n
         })
-    }, [_, e]);
-    return "0" === e ? null : (0, E.jsx)(R.h, {
-        setting: u.H.PRIVACY_SERVER_SPECIFIC_PRIVACY_ACTIVITY_JOINING_V2,
-        children: (0, E.jsx)(i.Ay, {
-            title: N.intl.string(N.t["T+nevN"]),
-            value: !C,
-            onChange: r,
-            note: N.intl.format(N.t.jXKQCu, {
-                helpdeskArticle: T.A.getArticleURL(d.MVz.ACTIVITY_STATUS_SETTINGS)
+    }, [e, n]);
+    return "0" === n ? null : (0, i.jsx)(o.h, {
+        children: (0, i.jsx)(c.Ay, {
+            title: T.intl.string(T.t["T+nevN"]),
+            value: !a,
+            onChange: S,
+            note: T.intl.format(T.t.jXKQCu, {
+                helpdeskArticle: u.A.getArticleURL(_.MVz.ACTIVITY_STATUS_SETTINGS)
             })
         })
     })
 }
 
-function V(t) {
+function E(t) {
     let {
-        ingress: _ = r.bf.USER_SETTINGS_PRIVACY_SAFETY,
-        guildId: e
-    } = t, A = (0, C.Tx)();
-    return (0, E.jsx)(s, {
-        ingress: _,
-        guildId: e ?? A
+        ingress: e = S.bf.USER_SETTINGS_PRIVACY_SAFETY,
+        guildId: n
+    } = t, l = (0, a.Tx)();
+    return (0, i.jsx)(A, {
+        ingress: e,
+        guildId: n ?? l
     })
 }

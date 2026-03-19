@@ -44,7 +44,7 @@ function C() {
             onChange: c,
             onClear: () => c("")
         }), u.length > 0 ? u.map(e => {
-            let t = "guild" === e.experiment.kind ? b : f;
+            let t = "guild" === e.experiment.kind ? N : f;
             return (0, i.jsx)(t, {
                 experiment: e.experiment,
                 experimentId: e.id,
@@ -69,7 +69,7 @@ function f(e) {
         defaultOpen: m
     } = e, [A, h] = s.useState(m), [T, C] = s.useState(!1), f = s.useCallback(() => {
         h(e => !e)
-    }, []), b = (0, r.bG)([x.default], () => x.default.getId()), N = (0, g.iN)(t, b), I = (0, g.Fm)(t, b), v = (0, r.yK)([_.A], () => a().sortBy(_.A.getRecentExposures(E.Vh.USER, n), e => {
+    }, []), N = (0, r.bG)([x.default], () => x.default.getId()), I = (0, g.iN)(t, N), b = (0, g.Fm)(t, N), v = (0, r.yK)([_.A], () => a().sortBy(_.A.getRecentExposures(E.Vh.USER, n), e => {
         let [t, n] = e;
         return -n
     }).map(e => {
@@ -115,20 +115,20 @@ function f(e) {
         className: S.Os,
         children: y
     });
-    let R = "";
-    return R = t.system === c.l5.LEGACY ? `Currently assigned to bucket ${N??E.RE.NOT_ELIGIBLE}` : null != N ? `Currently assigned to variant ${N}` : "Currently unassigned", (0, i.jsxs)("div", {
+    let O = "";
+    return O = t.system === c.l5.LEGACY ? `Currently assigned to bucket ${I??E.RE.NOT_ELIGIBLE}` : null != I ? `Currently assigned to variant ${I}` : "Currently unassigned", (0, i.jsxs)("div", {
         className: S.Os,
         children: [y, (0, i.jsx)("div", {
             children: (0, i.jsx)(u.g, {
                 label: t.system === c.l5.LEGACY ? "Bucket Override" : "Variant Override",
-                description: R,
+                description: O,
                 experiment: t,
                 experimentId: n,
                 overrideInfo: l
             })
         }), (0, i.jsx)("div", {
             className: S.h_,
-            children: null == I ? (0, i.jsx)(o.Text, {
+            children: null == b ? (0, i.jsx)(o.Text, {
                 variant: "text-sm/normal",
                 color: "text-subtle",
                 children: 'Warning: Server did not send any experiment config. You may need to check the "Send to Client" box in the admin UI.'
@@ -141,7 +141,7 @@ function f(e) {
             }), (0, i.jsx)(o.Text, {
                 variant: "code",
                 className: S.AS,
-                children: null == I ? "None" : JSON.stringify(I, void 0, 2)
+                children: null == b ? "None" : JSON.stringify(b, void 0, 2)
             }), (0, i.jsx)(o.Text, {
                 variant: "text-lg/medium",
                 className: S.id,
@@ -172,7 +172,7 @@ function f(e) {
     })
 }
 
-function b(e) {
+function N(e) {
     let {
         experiment: t,
         experimentId: n,

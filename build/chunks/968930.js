@@ -4,15 +4,15 @@ n.d(t, {
 });
 var i = n(73153),
     a = n(631670),
-    l = n(272355),
-    r = n(159001),
+    r = n(272355),
+    l = n(159001),
     s = n(688796),
     o = n(101058),
     d = n(207803),
     c = n(287809),
     u = n(927578),
     A = n(339984);
-class h extends l.A {
+class h extends r.A {
     _initialize() {
         i.h.subscribe("PROFILE_CUSTOMIZATION_OPEN_PREVIEW_MODAL", this.maybeOpenProfilePreviewModal)
     }
@@ -25,12 +25,12 @@ class h extends l.A {
                 image: t,
                 file: n,
                 guildId: i,
-                analyticsSource: l,
+                analyticsSource: r,
                 isTryItOut: h
             } = e;
             if (h) return void(0, d.e$)(t);
             let _ = c.default.getCurrentUser(),
-                m = null != i ? r.zq : a.zq,
+                m = null != i ? l.zq : a.zq,
                 g = u.Ay.canUseAnimatedAvatar(_);
             if (g || "image/gif" !== n.type) return void m(t);
             if (null == _) return;
@@ -41,7 +41,7 @@ class h extends l.A {
             if (!g) return void(0, s.G)({
                 uploadType: A.HL.AVATAR,
                 imageSrc: p,
-                analyticsSource: l
+                analyticsSource: r
             })
         })(e) : e.uploadType === A.HL.BANNER ? (e => {
             let {
@@ -49,14 +49,14 @@ class h extends l.A {
                 guildId: n,
                 analyticsSource: i,
                 isTryItOut: a
-            } = e, l = t.imageUri;
-            if (a) return void(0, d.xe)(l);
+            } = e, r = t.imageUri;
+            if (a) return void(0, d.xe)(r);
             let o = c.default.getCurrentUser(),
-                h = null != n ? r.Iz : d.Iz,
+                h = null != n ? l.Iz : d.Iz,
                 _ = u.Ay.canUsePremiumProfileCustomization(o);
-            u.Ay.canUsePremiumProfileCustomization(o) ? h(l) : null == o || _ || (0, s.G)({
+            u.Ay.canUsePremiumProfileCustomization(o) ? h(r) : null == o || _ || (0, s.G)({
                 uploadType: A.HL.BANNER,
-                imageSrc: l,
+                imageSrc: r,
                 analyticsSource: i
             })
         })(e) : void 0

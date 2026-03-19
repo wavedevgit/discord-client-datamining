@@ -23,16 +23,16 @@ var i = n(627968),
     S = n(790114),
     C = n(836602),
     f = n(262),
-    b = n(950191),
-    N = n(854627),
-    I = n(542535),
+    N = n(950191),
+    I = n(854627),
+    b = n(542535),
     v = n(915614),
     j = n(662758),
     y = n(957565),
-    R = n(975571),
-    O = n(427262),
-    D = n(837921),
-    L = n(253932),
+    O = n(975571),
+    R = n(427262),
+    L = n(837921),
+    D = n(253932),
     P = n(780964),
     G = n(192501),
     M = n(840065),
@@ -41,7 +41,7 @@ var i = n(627968),
     V = n(985018),
     w = n(536242),
     B = n(609290);
-let H = D.Ay.getEnableHardwareAcceleration() ? c.JsQ : c.euF;
+let H = L.Ay.getEnableHardwareAcceleration() ? c.JsQ : c.euF;
 
 function F() {
     (0, M.openUserSettings)(P.X.PROFILE_PANEL)
@@ -124,7 +124,7 @@ function z(e) {
     let {
         user: t,
         className: n
-    } = e, l = (0, p.EC)(), r = l?.nick?.[0] ?? null, u = O.Ay.getGlobalName(t), _ = s.useRef(null), [m, g] = s.useState(!1);
+    } = e, l = (0, p.EC)(), r = l?.nick?.[0] ?? null, u = R.Ay.getGlobalName(t), _ = s.useRef(null), [m, g] = s.useState(!1);
     return s.useEffect(() => {
         g(null != _.current && _.current.scrollWidth > _.current.clientWidth)
     }, [u]), (0, i.jsxs)("div", {
@@ -358,7 +358,7 @@ function Z(e) {
     } = e, n = (0, x.A)({
         id: t.id,
         label: V.intl.string(V.t["/AXYnE"])
-    }), l = L.Q_.useSetting(), a = s.useRef(null);
+    }), l = D.Q_.useSetting(), a = s.useRef(null);
     return l && y.p5 ? (0, i.jsx)(c.YNO, {
         targetElementRef: a,
         renderPopout: e => {
@@ -392,7 +392,7 @@ function q(e) {
     let {
         className: t
     } = e, l = (0, g.b8)(), r = (0, g.yM)(), o = (0, g.Y2)(), d = !l || r, u = V.intl.string(V.t["9KiIz6"]), A = V.intl.string(V.t.DVywUB), x = V.intl.string(V.t.lKDPGA), h = s.useCallback(() => {
-        window.open(R.A.getArticleURL(U.MVz.TIGGER_PAWTECT_LEARN_MORE), "_blank")
+        window.open(O.A.getArticleURL(U.MVz.TIGGER_PAWTECT_LEARN_MORE), "_blank")
     }, []), p = s.useCallback(() => {
         (0, c.mMO)(async () => {
             let {
@@ -452,10 +452,10 @@ function q(e) {
 function J(e) {
     let {
         currentUser: t
-    } = e, n = (0, b.Ay)(t.id), s = (0, f.A)(n), l = L.jP.useSetting(), a = (0, r.bG)([C.A], () => C.A.getErrors()), o = a?.avatar?.[0], {
+    } = e, n = (0, N.Ay)(t.id), s = (0, f.A)(n), l = D.jP.useSetting(), a = (0, r.bG)([C.A], () => C.A.getErrors()), o = a?.avatar?.[0], {
         avatarSrc: d,
         avatarDecorationSrc: _
-    } = (0, N.A)({
+    } = (0, I.A)({
         userId: t?.id,
         size: c._3J.SIZE_80
     }), m = (0, S.A)(), g = (0, E.fk)();
@@ -490,7 +490,7 @@ function J(e) {
                     }), (0, i.jsx)(Z, {
                         user: t
                     })]
-                }), (0, i.jsx)(I.A, {
+                }), (0, i.jsx)(b.A, {
                     badges: s,
                     className: B.C_,
                     badgeClassName: B.qS

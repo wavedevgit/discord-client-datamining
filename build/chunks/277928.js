@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(397927),
-    l = n(341915),
+    l = n(397927),
+    s = n(341915),
     r = n(714510),
     o = n(646764),
     d = n(568329),
@@ -28,7 +28,7 @@ let h = e => {
         quest: _,
         isExpanded: t,
         activeScreen: p,
-        sourceQuestContent: l.uF.QUEST_BAR_V2,
+        sourceQuestContent: s.uF.QUEST_BAR_V2,
         popoutTargetElementRef: g,
         onGameSheetOpened: f,
         onGameSheetClosed: v
@@ -47,9 +47,9 @@ let h = e => {
                 children: (0, a.jsx)(o.A, {
                     fullWidth: !0,
                     quest: _,
-                    questContent: l.uF.QUEST_BAR_V2,
+                    questContent: s.uF.QUEST_BAR_V2,
                     autoplay: !1,
-                    sourceQuestContent: l.uF.QUEST_BAR_V2
+                    sourceQuestContent: s.uF.QUEST_BAR_V2
                 })
             })
         }), (0, a.jsxs)("div", {
@@ -57,7 +57,7 @@ let h = e => {
             children: [(0, a.jsx)(d.dN, {
                 inState: n,
                 id: "progress-title",
-                children: e => (0, a.jsx)(s.Text, {
+                children: e => (0, a.jsx)(l.Text, {
                     ref: e,
                     className: m.FZ,
                     color: "text-strong",
@@ -68,7 +68,7 @@ let h = e => {
                 inState: n,
                 id: "progress-subtitle",
                 isTextTransition: !0,
-                children: e => (0, a.jsx)(s.Text, {
+                children: e => (0, a.jsx)(l.Text, {
                     ref: e,
                     className: m.FZ,
                     color: "text-muted",

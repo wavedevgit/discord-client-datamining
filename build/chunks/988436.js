@@ -5,8 +5,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    l = n(503698),
+    s = n.n(l),
     r = n(158954),
     o = n(311907),
     d = n(990078),
@@ -32,7 +32,7 @@ function E(e) {
     let {
         quest: t,
         errorHints: n,
-        transitionState: s,
+        transitionState: l,
         onClose: A,
         sourceQuestContent: E
     } = e, [I, k] = (0, i.useState)(n), R = (0, p.UX)(), O = (0, _.Ut)(), w = (0, v.vU)()?.getId(), D = (0, o.bG)([m.A], () => m.A.useReducedMotion), M = (0, C.Xf)({
@@ -56,7 +56,7 @@ function E(e) {
         }
     });
     return (0, a.jsx)(r.Modal, {
-        transitionState: s,
+        transitionState: l,
         onClose: A,
         title: T.intl.string(T.t.W5lmKt),
         subtitle: R.message,
@@ -84,7 +84,7 @@ function E(e) {
                     color: "text-default",
                     children: T.intl.string(T.t["+/hZM/"])
                 }), (0, a.jsxs)(u.DUT, {
-                    className: l()(S.Tm, {
+                    className: s()(S.Tm, {
                         [S.r9]: F
                     }),
                     onClick: G,
@@ -138,12 +138,12 @@ function N(e) {
         icon: t,
         text: n,
         errors: i = [],
-        gameTile: s
+        gameTile: l
     } = e, r = i.length > 0, o = r ? u.esW : u.QtE;
     return (0, a.jsxs)("div", {
         className: S.dJ,
         children: [(0, a.jsxs)("div", {
-            className: l()(S.w_, {
+            className: s()(S.w_, {
                 [S.qu]: r
             }),
             children: [(0, a.jsxs)("div", {
@@ -155,10 +155,10 @@ function N(e) {
                 })]
             }), (0, a.jsxs)("div", {
                 className: S.d3,
-                children: [s, (0, a.jsx)(o, {
+                children: [l, (0, a.jsx)(o, {
                     color: "currentColor",
                     size: "sm",
-                    className: l()({
+                    className: s()({
                         [S.kX]: !r,
                         [S.z3]: r
                     })

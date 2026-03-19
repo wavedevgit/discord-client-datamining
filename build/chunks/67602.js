@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(311907),
-    l = n(397927),
-    r = n(975807),
+    r = n(397927),
+    l = n(975807),
     s = n(64983),
     o = n(152621),
     d = n(194362),
@@ -35,7 +35,7 @@ function g(e) {
         message: I,
         cta: (0, i.jsxs)("span", {
             className: m.m,
-            children: [_.intl.string(_.t["2u6ZlY"]), (0, i.jsx)(l.I9m, {
+            children: [_.intl.string(_.t["2u6ZlY"]), (0, i.jsx)(r.I9m, {
                 size: "xs",
                 color: "currentColor"
             })]
@@ -48,7 +48,7 @@ function g(e) {
         onClick: async () => {
             n(h.i.TAKE_ACTION);
             let e = await (0, d.a)(A.dSh.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY);
-            (0, r.A)(e)
+            (0, l.A)(e)
         }
     })
 }

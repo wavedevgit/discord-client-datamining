@@ -4,8 +4,8 @@ n.d(t, {
 }), n(323874), n(14289), n(35956);
 var i = n(627968),
     a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    r = n(503698),
+    l = n.n(r),
     s = n(873263),
     o = n(311907),
     d = n(397927),
@@ -40,15 +40,15 @@ function O() {
 let L = function(e) {
     let {
         initialSection: t
-    } = e, n = (0, s.zy)(), l = (0, s.W6)();
+    } = e, n = (0, s.zy)(), r = (0, s.W6)();
     a.useEffect(() => {
         "true" === new URLSearchParams(n.search).get("confirm-age") && c.h.dispatch({
             type: "AGE_GATE_MODAL_OPEN",
             source: v.w_.DEEP_LINK_PROMPT
         }).then(() => {
-            l.replace(x.BVt.ME)
+            r.replace(x.BVt.ME)
         })
-    }, [l, n]), a.useEffect(() => {
+    }, [r, n]), a.useEffect(() => {
         u.I(x.BVt.FRIENDS), (0, I.d)("friends")
     }, []);
     let p = (0, o.bG)([f.A], () => f.A.theme),
@@ -112,7 +112,7 @@ let L = function(e) {
                 children: y.intl.string(y.t.j0wbE5)
             }),
             ariaLabel: y.intl.string(y.t.j0wbE5),
-            className: r()(b.AS, b.GU)
+            className: l()(b.AS, b.GU)
         }],
         k = null,
         V = (0, i.jsx)("div", {

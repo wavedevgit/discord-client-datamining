@@ -1,6 +1,6 @@
 /** chunk id: 534217 params = (module,exports,require) **/
 n.d(t, {
-    S: () => N
+    S: () => I
 }), n(321073);
 var i = n(627968);
 n(64700);
@@ -71,7 +71,7 @@ let S = e => {
             })()
         })
     },
-    b = e => {
+    N = e => {
         let {
             nReferralsSent: t
         } = e;
@@ -90,7 +90,7 @@ let S = e => {
             })
         })
     },
-    N = e => {
+    I = e => {
         let {
             className: t
         } = e, {
@@ -100,7 +100,7 @@ let S = e => {
             className: l()(T.kL, t),
             children: [(0, i.jsx)("div", {
                 className: T.G3,
-                children: (0, i.jsx)(b, {
+                children: (0, i.jsx)(N, {
                     nReferralsSent: o.size
                 })
             }), (0, i.jsxs)("div", {

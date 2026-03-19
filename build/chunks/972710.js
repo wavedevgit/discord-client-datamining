@@ -1,6 +1,6 @@
 /** chunk id: 972710 params = (module,exports,require) **/
 n.d(t, {
-    C: () => R
+    C: () => O
 });
 var i = n(627968),
     s = n(64700),
@@ -23,11 +23,11 @@ var i = n(627968),
     S = n(927578),
     C = n(866312),
     f = n(327479),
-    b = n(652215),
-    N = n(601107),
-    I = n(985018),
+    N = n(652215),
+    I = n(601107),
+    b = n(985018),
     v = n(141384);
-let j = [b.Dmq.PAST_DUE, b.Dmq.ACCOUNT_HOLD, b.Dmq.BILLING_RETRY],
+let j = [N.Dmq.PAST_DUE, N.Dmq.ACCOUNT_HOLD, N.Dmq.BILLING_RETRY],
     y = e => {
         let {
             transitionState: t,
@@ -37,7 +37,7 @@ let j = [b.Dmq.PAST_DUE, b.Dmq.ACCOUNT_HOLD, b.Dmq.BILLING_RETRY],
             analyticsLocation: r
         } = e, [o, d] = s.useState(!1), [u, g] = s.useState(!1);
         s.useEffect(() => {
-            E.default.track(b.HAw.GUILD_BOOST_PAST_DUE_CANCEL_MODAL_VIEWED, {
+            E.default.track(N.HAw.GUILD_BOOST_PAST_DUE_CANCEL_MODAL_VIEWED, {
                 subscription_id: l.id,
                 location_stack: a
             })
@@ -45,7 +45,7 @@ let j = [b.Dmq.PAST_DUE, b.Dmq.ACCOUNT_HOLD, b.Dmq.BILLING_RETRY],
         let A = async () => {
             d(!0), g(!1);
             try {
-                await (0, m.M2)(l.id, a, r), E.default.track(b.HAw.GUILD_BOOST_PAST_DUE_CANCELLATION_FLOW_COMPLETED, {
+                await (0, m.M2)(l.id, a, r), E.default.track(N.HAw.GUILD_BOOST_PAST_DUE_CANCELLATION_FLOW_COMPLETED, {
                     subscription_id: l.id,
                     location_stack: a
                 }), (0, m.hP)(), n()
@@ -53,11 +53,11 @@ let j = [b.Dmq.PAST_DUE, b.Dmq.ACCOUNT_HOLD, b.Dmq.BILLING_RETRY],
                 g(!0), d(!1)
             }
         }, x = [{
-            text: I.intl.string(I.t.oEAioF),
+            text: b.intl.string(b.t.oEAioF),
             onClick: () => n(),
             variant: "secondary"
         }, {
-            text: I.intl.string(I.t["cY+Oob"]),
+            text: b.intl.string(b.t["cY+Oob"]),
             onClick: () => A(),
             disabled: o,
             variant: "critical-primary",
@@ -66,18 +66,18 @@ let j = [b.Dmq.PAST_DUE, b.Dmq.ACCOUNT_HOLD, b.Dmq.BILLING_RETRY],
         return (0, i.jsx)(c.Modal, {
             size: "md",
             transitionState: t,
-            title: I.intl.string(I.t.LZunzZ),
-            subtitle: I.intl.string(I.t.FClXh9),
+            title: b.intl.string(b.t.LZunzZ),
+            subtitle: b.intl.string(b.t.FClXh9),
             actions: x,
             onClose: async () => n(),
             children: u ? (0, i.jsx)(_.wx6, {
                 type: "critical",
-                children: I.intl.string(I.t["5mlOCW"])
+                children: b.intl.string(b.t["5mlOCW"])
             }) : null
         })
     };
 
-function R(e) {
+function O(e) {
     let t, {
             subscription: n,
             renewalInvoicePreview: s,
@@ -90,25 +90,25 @@ function R(e) {
             return o()(null != e, "GuildBoostingHeader: currentUser cannot be undefined"), e
         }),
         {
-            analyticsLocations: R
+            analyticsLocations: O
         } = (0, A.Ay)(g.A.GUILD_BOOSTING_SUBSCRIPTION_HEADER),
-        O = (0, C.A)({
+        R = (0, C.A)({
             location: "GuildBoostingHeader"
         });
     if (0 === (0, S.bx)(n.additionalPlans)) return null;
     let {
-        status: D
-    } = n, L = (0, S.$k)(n), P = O && !L && n.isBoostOnly && j.includes(n.status);
-    if (L) t = v.v2;
-    else switch (D) {
-        case b.Dmq.PAST_DUE:
-        case b.Dmq.ACCOUNT_HOLD:
-        case b.Dmq.BILLING_RETRY:
+        status: L
+    } = n, D = (0, S.$k)(n), P = R && !D && n.isBoostOnly && j.includes(n.status);
+    if (D) t = v.v2;
+    else switch (L) {
+        case N.Dmq.PAST_DUE:
+        case N.Dmq.ACCOUNT_HOLD:
+        case N.Dmq.BILLING_RETRY:
             t = v.P7;
             break;
-        case b.Dmq.PAUSE_PENDING:
-        case b.Dmq.PAUSED:
-            t = n.pauseReason !== N.qf.FRACTIONAL_PREMIUM ? v.C7 : v.wG;
+        case N.Dmq.PAUSE_PENDING:
+        case N.Dmq.PAUSED:
+            t = n.pauseReason !== I.qf.FRACTIONAL_PREMIUM ? v.C7 : v.wG;
             break;
         default:
             t = v.wG
@@ -124,7 +124,7 @@ function R(e) {
                 className: v.eC,
                 children: [(0, i.jsx)("div", {
                     className: a()(v.Ab, {
-                        [v.aD]: L
+                        [v.aD]: D
                     })
                 }), (0, i.jsx)("div", {
                     children: (0, S.Uf)({
@@ -144,22 +144,22 @@ function R(e) {
                             j.includes(n.status) && (0, _.mMO)(async () => e => (0, i.jsx)(y, {
                                 ...e,
                                 subscription: n,
-                                analyticsLocations: R,
+                                analyticsLocations: O,
                                 analyticsLocation: m
                             }))
                         },
                         size: "sm",
-                        text: I.intl.string(I.t["ETE/oC"])
+                        text: b.intl.string(b.t["ETE/oC"])
                     })
                 }), (0, i.jsx)(f.A, {
                     onClick: () => (0, p.openUserSettings)(h.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL),
-                    text: I.intl.string(I.t["NQ5g/U"])
+                    text: b.intl.string(b.t["NQ5g/U"])
                 })]
             })]
         }), !r && (0, i.jsx)(_.Text, {
             className: v.yW,
             variant: "text-sm/normal",
-            children: I.intl.format(d.Fr ? I.t.uxYBEa : I.t.k6haR9, {
+            children: b.intl.format(d.Fr ? b.t.uxYBEa : b.t.k6haR9, {
                 openAppHook: () => (0, x.A)("app")
             })
         })]

@@ -24,26 +24,26 @@ var s = n(284009),
     S = n(101058),
     C = n(836602),
     f = n(622543),
-    b = n(696451),
-    N = n(71393),
-    I = n(287809),
+    N = n(696451),
+    I = n(71393),
+    b = n(287809),
     v = n(927578),
     j = n(427262),
     y = n(159001),
-    R = n(684732),
-    O = n(168917),
-    D = n(746706),
-    L = n(788868),
+    O = n(684732),
+    R = n(168917),
+    L = n(746706),
+    D = n(788868),
     P = n(985018),
     G = n(453814);
 
 function M() {
-    let e = (0, a.bG)([I.default], () => {
-            let e = I.default.getCurrentUser();
+    let e = (0, a.bG)([b.default], () => {
+            let e = b.default.getCurrentUser();
             return l()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
         }),
-        t = (0, c.L)(L.PremiumTypes.TIER_2),
-        n = (0, a.bG)([C.A, N.A], () => N.A.getGuild(C.A.selectedGuildId));
+        t = (0, c.L)(D.PremiumTypes.TIER_2),
+        n = (0, a.bG)([C.A, I.A], () => I.A.getGuild(C.A.selectedGuildId));
     l()(null != n, "guild should not be null");
     let {
         pendingAvatar: s,
@@ -59,12 +59,12 @@ function M() {
     })), H = (0, S.V7)({
         userId: e.id,
         image: s
-    }), F = (0, d.EC)(n.id), Y = (0, a.bG)([b.Ay], () => null == n.id ? null : b.Ay.getMember(n.id, e.id)), z = (0, a.bG)([f.A], () => f.A.getGuildMemberProfile(e.id, n.id)), X = v.Ay.canUsePremiumProfileCustomization(e), W = (0, u.z5)(s, Y?.avatar), K = (0, u.Ac)(U, z?.banner), Z = (0, R.lS)(w, z?.themeColors), q = z?.bio ?? "", J = z?.pronouns ?? "", Q = (e, t, n) => {
+    }), F = (0, d.EC)(n.id), Y = (0, a.bG)([N.Ay], () => null == n.id ? null : N.Ay.getMember(n.id, e.id)), z = (0, a.bG)([f.A], () => f.A.getGuildMemberProfile(e.id, n.id)), X = v.Ay.canUsePremiumProfileCustomization(e), W = (0, u.z5)(s, Y?.avatar), K = (0, u.Ac)(U, z?.banner), Z = (0, O.lS)(w, z?.themeColors), q = z?.bio ?? "", J = z?.pronouns ?? "", Q = (e, t, n) => {
         n(e ?? (null != t ? null : void 0))
     };
     return (0, i.jsxs)("div", {
         className: G.Q,
-        children: [(0, i.jsx)(O.A, {
+        children: [(0, i.jsx)(R.A, {
             errors: B?.nick ?? F?.nick,
             username: j.Ay.getName(e),
             pendingNick: M,
@@ -75,11 +75,11 @@ function M() {
             sectionTitle: P.intl.string(P.t["+T3RI/"]),
             errors: B?.pronouns,
             onPronounsChange: e => {
-                (0, R.d7)(e, J)
+                (0, O.d7)(e, J)
             },
             pendingPronouns: V,
             currentPronouns: J
-        }, "pronouns"), (0, i.jsxs)(D.A, {
+        }, "pronouns"), (0, i.jsxs)(L.A, {
             user: e,
             showOverlay: !X,
             children: [(0, i.jsx)(g.A, {
@@ -149,7 +149,7 @@ function M() {
                 pendingAvatarSrc: H,
                 pendingColors: w,
                 onThemeColorsChange: e => {
-                    (0, R.wx)(e, z?.themeColors)
+                    (0, O.wx)(e, z?.themeColors)
                 },
                 guildId: n?.id,
                 showResetThemeButton: Z
@@ -165,7 +165,7 @@ function M() {
                         })
                     })]
                 }),
-                onBioChange: e => (0, R.Rn)(e, q),
+                onBioChange: e => (0, O.Rn)(e, q),
                 errors: B?.bio ?? F?.bio,
                 pendingBio: k,
                 currentBio: q,

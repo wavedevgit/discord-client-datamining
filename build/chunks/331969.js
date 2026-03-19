@@ -48,7 +48,7 @@ function f(e) {
         n.current = t
     });
     let [l, a] = s.useState(t.params?.channelId ?? void 0), d = s.useCallback(() => {
-        (0, r.mMO)(async () => e => (0, i.jsx)(b, {
+        (0, r.mMO)(async () => e => (0, i.jsx)(N, {
             ...e,
             onSelect: e => {
                 a(e), o.A.setKeybind({
@@ -68,7 +68,7 @@ function f(e) {
                 align: c.A.Align.STRETCH,
                 children: [(0, i.jsx)("div", {
                     className: p.$X,
-                    children: (0, i.jsx)(N, {
+                    children: (0, i.jsx)(I, {
                         channelId: l
                     })
                 }), (0, i.jsx)(c.A.Child, {
@@ -85,24 +85,24 @@ function f(e) {
     })
 }
 
-function b(e) {
+function N(e) {
     let t, n, {
             transitionState: o,
             onClose: c,
             onSelect: T
         } = e,
         f = s.useId(),
-        b = s.useRef(null),
+        N = s.useRef(null),
         {
-            query: N,
-            updateQuery: I,
+            query: I,
+            updateQuery: b,
             queryResults: v
         } = (0, d.A)({
             visible: !0,
             autocompleterResultTypes: E,
             autocompleterBeforeCreateSearchContext: S
         }),
-        j = (t = "" !== N, n = (0, a.yK)([m.Ay, _.A, A.A], () => {
+        j = (t = "" !== I, n = (0, a.yK)([m.Ay, _.A, A.A], () => {
             let e = A.A.getGuildId();
             if (t || null == e) return [];
             let n = [];
@@ -114,7 +114,7 @@ function b(e) {
         }, [t]), t ? null : n),
         {
             focusedIndex: y,
-            setFocusedIndex: R
+            setFocusedIndex: O
         } = function(e) {
             let [t, n] = s.useState(0), i = s.useRef(e);
             return e !== i.current && 0 !== t && n(0), s.useEffect(() => {
@@ -123,28 +123,28 @@ function b(e) {
                 focusedIndex: t,
                 setFocusedIndex: n
             }
-        }(N);
+        }(I);
     s.useEffect(() => {
         let {
             current: e
-        } = b;
+        } = N;
         null == e || e.isItemVisible(0, y, !0) || e.scrollToIndex({
             section: 0,
             row: y
         })
     }, [y]);
-    let O = null != j ? j.length : v.length,
-        D = (() => {
+    let R = null != j ? j.length : v.length,
+        L = (() => {
             if (null != j) return j[y]?.id;
             let e = v[y];
             if (e?.type === x.rD.VOICE_CHANNEL) return e.record.id
         })(),
-        L = O > 0 || "" === N ? {
+        D = R > 0 || "" === I ? {
             innerId: f,
             innerRole: "listbox",
             innerAriaLabel: h.intl.string(h.t["+N3fW7"]),
-            ref: b,
-            sections: [O],
+            ref: N,
+            sections: [R],
             renderRow: function(e) {
                 let {
                     row: t
@@ -161,11 +161,11 @@ function b(e) {
                     channel: n,
                     category: s,
                     focused: y === t,
-                    onMouseEnter: () => R(t),
+                    onMouseEnter: () => O(t),
                     onClick: () => {
                         T(n.id), c()
                     },
-                    onFocus: () => R(t),
+                    onFocus: () => O(t),
                     children: null != l ? (0, i.jsx)("div", {
                         className: p.J5,
                         children: l.name
@@ -187,8 +187,8 @@ function b(e) {
         subtitle: h.intl.string(h.t.q4JpM8),
         actions: void 0,
         input: (0, i.jsx)(r.ksK, {
-            value: N,
-            onChange: I,
+            value: I,
+            onChange: b,
             onKeyDown: function(e) {
                 let t = e.key.toLowerCase();
                 if ("arrowdown" === t || "arrowup" === t || "enter" === t || "escape" === t) switch (e.preventDefault(), t) {
@@ -205,26 +205,26 @@ function b(e) {
                         break
                     }
                     case "arrowup":
-                        0 === y ? R(O - 1) : R(y - 1);
+                        0 === y ? O(R - 1) : O(y - 1);
                         break;
                     case "arrowdown":
-                        y >= O - 1 ? R(0) : R(y + 1)
+                        y >= R - 1 ? O(0) : O(y + 1)
                 }
             },
             placeholder: h.intl.string(h.t.tG0r7g),
             role: "combobox",
             "aria-controls": f,
-            "aria-expanded": O > 0,
-            "aria-activedescendant": O > 0 && null != D ? D : void 0,
+            "aria-expanded": R > 0,
+            "aria-activedescendant": R > 0 && null != L ? L : void 0,
             "aria-autocomplete": "list",
             spellCheck: !1,
             autoFocus: !0
         }),
-        listProps: L
+        listProps: D
     })
 }
 
-function N(e) {
+function I(e) {
     let {
         channelId: t
     } = e, {

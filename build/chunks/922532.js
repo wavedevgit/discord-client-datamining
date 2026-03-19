@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(64700),
     i = n(341915),
-    s = n(561844),
-    l = n(590202),
+    l = n(561844),
+    s = n(590202),
     r = n(652215);
 
 function o(e) {
@@ -41,12 +41,12 @@ function o(e) {
     }, [S]), N = a.useCallback(() => {
         window.clearTimeout(p.current), _ || v || g.current || o(!1)
     }, [_, v, o]), I = a.useCallback(() => {
-        (0, s.av)({
+        (0, l.av)({
             questId: t.id,
             event: r.HAw.QUEST_HOVER,
             properties: {
                 content_id: i.uF.QUEST_BAR,
-                content_name: (0, l.jO)(i.uF.QUEST_BAR),
+                content_name: (0, s.jO)(i.uF.QUEST_BAR),
                 impression_id: h.current?.getId()
             },
             shouldExtendSession: !0,
@@ -55,12 +55,12 @@ function o(e) {
             withDelay: !0
         })
     }, [S, h, t.id]), k = a.useCallback(() => {
-        (0, s.av)({
+        (0, l.av)({
             questId: t.id,
             event: r.HAw.QUEST_HOVER_OFF,
             properties: {
                 content_id: i.uF.QUEST_BAR,
-                content_name: (0, l.jO)(i.uF.QUEST_BAR),
+                content_name: (0, s.jO)(i.uF.QUEST_BAR),
                 impression_id: h.current?.getId()
             },
             sourceQuestContent: i.uF.QUEST_BAR_V2

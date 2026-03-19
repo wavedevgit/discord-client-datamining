@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    l = n(503698),
+    s = n.n(l),
     r = n(607399),
     o = n(397927),
     d = n(354949),
@@ -48,7 +48,7 @@ class g extends i.PureComponent {
             children: [(0, a.jsxs)(o.BJc, {
                 gap: 16,
                 fullWidth: !1,
-                className: l()(x.kL, {
+                className: s()(x.kL, {
                     [x.Fr]: r.Fr
                 }),
                 align: "center",
@@ -105,7 +105,7 @@ class g extends i.PureComponent {
                             supportURL: c.A.getSubmitRequestURL()
                         })
                     }), (0, a.jsx)("div", {
-                        className: l()(x.qr, x.mf),
+                        className: s()(x.qr, x.mf),
                         children: "•"
                     }), (0, a.jsx)(o.Text, {
                         variant: "text-sm/semibold",

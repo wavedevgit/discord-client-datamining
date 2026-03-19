@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(732955),
-    l = n(421380),
+    l = n(732955),
+    s = n(421380),
     r = n(397927),
     o = n(793574),
     d = n(979286),
@@ -34,7 +34,7 @@ function N(e) {
         sourceQuestContent: n,
         taskDetails: i
     } = e;
-    return (0, a.jsx)(s.$nd, {
+    return (0, a.jsx)(l.$nd, {
         variant: "primary",
         fullWidth: !0,
         onClick: () => {
@@ -54,8 +54,8 @@ let I = e => {
         let {
             quest: t,
             sourceQuestContent: n
-        } = e, i = (0, x.go)(), l = (0, p.wr)(t);
-        return (0, a.jsx)(s.$nd, {
+        } = e, i = (0, x.go)(), s = (0, p.wr)(t);
+        return (0, a.jsx)(l.$nd, {
             size: "sm",
             fullWidth: !0,
             onClick: () => (0, g.pu)(t, {
@@ -64,7 +64,7 @@ let I = e => {
                 impressionId: i,
                 sourceQuestContent: n
             }),
-            text: l
+            text: s
         })
     },
     k = e => {
@@ -72,7 +72,7 @@ let I = e => {
             quest: t,
             sourceQuestContent: n
         } = e, i = (0, x.vU)()?.getId();
-        return (0, a.jsx)(s.$nd, {
+        return (0, a.jsx)(l.$nd, {
             fullWidth: !0,
             onClick: () => (0, g.se)({
                 quest: t
@@ -94,7 +94,7 @@ let I = e => {
         }), {
             launchInGameActivity: i
         } = (0, m.zW)(t);
-        return (0, v.vA)(t) ? (0, a.jsx)(s.$nd, {
+        return (0, v.vA)(t) ? (0, a.jsx)(l.$nd, {
             fullWidth: !0,
             variant: "primary",
             icon: (0, A.Oz)(t),
@@ -108,7 +108,7 @@ let I = e => {
             quest: t,
             sourceQuestContent: n,
             taskDetails: i,
-            popoutTargetElementRef: l,
+            popoutTargetElementRef: s,
             onGameSheetOpened: r,
             onGameSheetClosed: o
         } = e, {
@@ -118,10 +118,10 @@ let I = e => {
             quest: t,
             sourceQuestContent: n,
             applications: d ?? [],
-            targetElementRef: l,
+            targetElementRef: s,
             onGameSheetOpened: r,
             onGameSheetClosed: o,
-            children: e => (0, a.jsx)(s.$nd, {
+            children: e => (0, a.jsx)(l.$nd, {
                 variant: "secondary",
                 fullWidth: !0,
                 size: "sm",
@@ -149,20 +149,20 @@ let I = e => {
                 analyticsSource: o.A.QUEST_HOME_PAGE
             }) : x()
         }, [r, t.config, t.userStatus?.claimedAt, x]);
-        return (0, a.jsx)(s.$nd, {
+        return (0, a.jsx)(l.$nd, {
             fullWidth: !0,
             onClick: p,
             text: n ?? S.intl.string(S.t.cfY4PE),
             ...h,
-            size: h.size === l.$n.Sizes.MEDIUM ? "md" : "sm"
+            size: h.size === s.$n.Sizes.MEDIUM ? "md" : "sm"
         })
     },
     D = e => {
         let {
             sourceQuestContent: t,
             awaitingConsoleConnections: n,
-            hasMadeProgress: s,
-            isProgressing: l,
+            hasMadeProgress: l,
+            isProgressing: s,
             activeScreen: r,
             popoutTargetElementRef: o
         } = e, {
@@ -170,7 +170,7 @@ let I = e => {
             onGameSheetOpen: u,
             onGameSheetClose: m,
             taskDetails: h
-        } = i.useContext(y.T), x = d.userStatus?.completedAt != null, p = (0, f.vv)(d), g = r !== c.X0.SELECT && !s && !l, _ = null;
+        } = i.useContext(y.T), x = d.userStatus?.completedAt != null, p = (0, f.vv)(d), g = r !== c.X0.SELECT && !l && !s, _ = null;
         return x ? _ = (0, a.jsx)(w, {
             quest: d,
             sourceQuestContent: t
@@ -204,7 +204,7 @@ function M(e) {
     return (0, a.jsxs)("div", {
         className: E.oG,
         ref: t,
-        children: [e.showBackButton && (0, a.jsx)(s.K0, {
+        children: [e.showBackButton && (0, a.jsx)(l.K0, {
             size: "sm",
             "aria-label": S.intl.string(S.t["13/7kX"]),
             onClick: e.onBack,

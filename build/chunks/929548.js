@@ -26,12 +26,12 @@ let f = (0, m.D)(() => ({
     isUploading: !1,
     isDisabled: !1
 }));
-async function b() {
+async function N() {
     let e = await _.A.fileManager.getLogPath();
     _.A.fileManager.showItemInFolder(e)
 }
 
-function N(e) {
+function I(e) {
     (0, o.A)({
         title: C.intl.string(C.t["7UXEF2"]),
         subtitle: C.intl.string(C.t.IYPrRl),
@@ -39,7 +39,7 @@ function N(e) {
         onConfirm: () => u.A.setDebugLogging(e)
     })
 }
-async function I(e) {
+async function b(e) {
     let {
         onUploadStart: t,
         onUploadFinish: n
@@ -89,7 +89,7 @@ async function I(e) {
     }
 }
 async function v() {
-    await I({
+    await b({
         onUploadStart: () => f.setState({
             isUploading: !0
         }),
@@ -122,7 +122,7 @@ let j = (0, x.E2)(T.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
                     label: C.intl.string(C.t["726JHL"]),
                     description: C.intl.string(C.t["/7ak9Q"]),
                     checked: e,
-                    onChange: N
+                    onChange: I
                 }), (0, i.jsx)("div", {
                     role: "group",
                     "aria-labelledby": l,
@@ -137,7 +137,7 @@ let j = (0, x.E2)(T.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
                         }), (0, i.jsx)(c.Button, {
                             variant: "secondary",
                             text: C.intl.string(C.t.nuPtYi),
-                            onClick: b,
+                            onClick: N,
                             "aria-label": C.intl.string(C.t["L/hFOe"])
                         })]
                     })

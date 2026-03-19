@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(397927),
-    s = n(736653),
-    l = n(653523),
+    l = n(736653),
+    s = n(653523),
     r = n(270704),
     o = n(652215),
     d = n(566305);
@@ -14,7 +14,7 @@ function c(e) {
     let {
         selected: t,
         onSelect: n
-    } = e, c = (0, s.Ay)();
+    } = e, c = (0, l.Ay)();
     return (0, a.jsxs)("div", {
         className: d.N,
         children: [(0, a.jsx)(i.Text, {
@@ -24,14 +24,14 @@ function c(e) {
             className: d.Z,
             children: r.Z6.map(e => {
                 let i = c !== o.NJ8.LIGHT ? e.darkBackground : e.lightBackground,
-                    s = t === e.name;
-                return (0, a.jsx)(l.S4, {
+                    l = t === e.name;
+                return (0, a.jsx)(s.S4, {
                     onSelect: () => n(e),
                     style: {
                         background: i
                     },
                     name: e.name,
-                    isSelected: s
+                    isSelected: l
                 }, e.name)
             })
         })]

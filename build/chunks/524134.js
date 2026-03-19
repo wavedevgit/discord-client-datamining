@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(110259),
-    l = n(311907),
+    l = n(110259),
+    s = n(311907),
     r = n(562465),
     o = n(397927),
     d = n(830215),
@@ -29,13 +29,13 @@ function T() {
     let {
         action: e,
         theme: t
-    } = (0, l.cf)([f.A, _.A], () => ({
+    } = (0, s.cf)([f.A, _.A], () => ({
         action: f.A.getAction(),
         theme: _.A.theme
     })), T = v.A.getVerificationTypes(e), [S, E] = i.useState(0), N = (0, m.A)(T);
     (0, x.A)({
-        type: s.ImpressionTypes.MODAL,
-        name: s.ImpressionNames.USER_ACTION_REQUIRED,
+        type: l.ImpressionTypes.MODAL,
+        name: l.ImpressionNames.USER_ACTION_REQUIRED,
         properties: {
             verification_type: T[0],
             verification_types: T

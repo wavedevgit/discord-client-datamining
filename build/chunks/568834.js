@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(311907),
-    l = n(554146),
+    l = n(311907),
+    s = n(554146),
     r = n(397927),
     o = n(541689),
     d = n(199773),
@@ -20,11 +20,11 @@ function p() {
         dailyCapReached: e,
         dailyCapOverridden: t,
         newUserMinAgeRequiredOverridden: n
-    } = (0, s.cf)([d.A], () => ({
+    } = (0, l.cf)([d.A], () => ({
         dailyCapReached: d.A.hasUserHitDCCap(),
         dailyCapOverridden: d.A.dailyCapOverridden,
         newUserMinAgeRequiredOverridden: d.A.newUserMinAgeRequiredOverridden
-    })), [p, g] = i.useState(""), [_, f] = i.useState(20), v = i.useMemo(() => Object.keys(l.M).filter(e => e.toLowerCase().includes(p.toLowerCase())).reverse(), [p]), b = i.useCallback(e => {
+    })), [p, g] = i.useState(""), [_, f] = i.useState(20), v = i.useMemo(() => Object.keys(s.M).filter(e => e.toLowerCase().includes(p.toLowerCase())).reverse(), [p]), b = i.useCallback(e => {
         let t = e.currentTarget;
         t.scrollHeight - t.scrollTop <= t.clientHeight + 100 && _ < v.length && f(e => e + 100)
     }, [_, v.length]);

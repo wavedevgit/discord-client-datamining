@@ -5,8 +5,8 @@ n.d(t, {
 });
 var a = n(73153),
     i = n(846293),
-    s = n(394681),
-    l = n(976860),
+    l = n(394681),
+    s = n(976860),
     r = n(961350),
     o = n(723702),
     d = n(837921),
@@ -22,7 +22,7 @@ async function h(e, t) {
         errorCode: m.Lw6.INVALID_INVITE
     }, `Invalid invite id: ${e}`);
     if (null != n && "experiments" in n)
-        for (let e of n.experiments ?? []) e === s.R.definition.id && null != u.guild && s.R.trackExposure({
+        for (let e of n.experiments ?? []) e === l.R.definition.id && null != u.guild && l.R.trackExposure({
             guildId: u.guild.id,
             location: t
         });
@@ -31,7 +31,7 @@ async function h(e, t) {
         invite: u,
         code: e,
         context: m.BRT.APP
-    }) : (0, l.bG)(m.BVt.INVITE(e)), o.isPlatformEmbedded && d.Ay.focus(), {
+    }) : (0, s.bG)(m.BVt.INVITE(e)), o.isPlatformEmbedded && d.Ay.focus(), {
         invite: u,
         code: e
     }

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    l = n(503698),
+    s = n.n(l),
     r = n(397927),
     o = n(341915),
     d = n(890687),
@@ -19,20 +19,20 @@ function x() {
         quest: e,
         onCtxMenuOpen: t,
         onCtxMenuClose: n,
-        onCtxMenuSelect: s
+        onCtxMenuSelect: l
     } = i.useContext(u.T), x = (0, d.S5)(e.config.expiresAt);
     return (0, a.jsxs)("div", {
         className: h.pS,
         children: [(0, a.jsx)(r.Text, {
             variant: "text-xxs/medium",
-            className: l()(h.Uu, h.TK),
+            className: s()(h.Uu, h.TK),
             children: m.intl.format(m.t["pX+fmn"], {
                 expirationDate: x
             })
         }), (0, a.jsx)(c.C, {
             onOpen: t,
             onClose: n,
-            onSelect: s,
+            onSelect: l,
             questContent: o.uF.QUEST_BAR_V2,
             quest: e,
             shouldShowDisclosure: !1,
@@ -45,7 +45,7 @@ function x() {
                 children: (0, a.jsx)(r.jNK, {
                     size: "md",
                     color: "currentColor",
-                    className: l()(h.Bx, h.U9)
+                    className: s()(h.Bx, h.U9)
                 })
             })
         })]

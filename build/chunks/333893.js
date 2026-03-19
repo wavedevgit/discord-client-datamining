@@ -1,8 +1,8 @@
 /** chunk id: 333893 params = (module,exports,require) **/
 var i = n(311907),
     a = n(73153),
-    l = n(142120),
-    r = n(734057),
+    r = n(142120),
+    l = n(734057),
     s = n(661191);
 let o = Object.freeze({
         online: null,
@@ -15,7 +15,7 @@ class A extends i.Ay.PersistedStore {
     static displayName = "ChannelMemberCountStore";
     static persistKey = "channelMemberCounts";
     initialize(e) {
-        this.waitFor(l.A, r.A), c = e ?? d
+        this.waitFor(r.A, l.A), c = e ?? d
     }
     getState() {
         return c
@@ -27,13 +27,13 @@ class A extends i.Ay.PersistedStore {
         u = {
             guildId: e,
             channelId: t
-        }, l.A.getSocket().requestChannelMemberCount(e, t)
+        }, r.A.getSocket().requestChannelMemberCount(e, t)
     }
 }
 new A(a.h, {
     CONNECTION_OPEN: function() {
-        null != u && l.A.getSocket().requestChannelMemberCount(u.guildId, u.channelId), s.default.keys(c).forEach(e => {
-            null == r.A.getChannel(e) && delete c[e]
+        null != u && r.A.getSocket().requestChannelMemberCount(u.guildId, u.channelId), s.default.keys(c).forEach(e => {
+            null == l.A.getChannel(e) && delete c[e]
         })
     },
     CHANNEL_MEMBER_COUNT_UPDATE: function(e) {

@@ -4,8 +4,8 @@ n.d(t, {
 }), n(801541);
 var a = n(627968),
     i = n(64700),
-    s = n(284009),
-    l = n.n(s),
+    l = n(284009),
+    s = n.n(l),
     r = n(889137),
     o = n(412703),
     d = n(440703),
@@ -133,8 +133,8 @@ let L = "1193992107035983872",
 
 function G() {
     var e;
-    let [t, s] = i.useState(B), c = i.useCallback(e => {
-        s({
+    let [t, l] = i.useState(B), c = i.useCallback(e => {
+        l({
             ...e,
             preview: !0
         })
@@ -166,23 +166,23 @@ function G() {
         let a = t.config.taskConfigV2.tasks,
             i = a[o.n.WATCH_VIDEO];
         if (null == i) return;
-        let s = {
+        let l = {
             ...i.assets
         };
         switch (e) {
             case "videoPlayerVideo":
-                s.video = {
+                l.video = {
                     url: n
                 };
                 break;
             case "videoPlayerVideoLowRes":
-                s.videoLowRes = {
+                l.videoLowRes = {
                     url: n
                 };
                 break;
             case "videoPlayerThumbnail":
-                s.video = {
-                    ...s.video,
+                l.video = {
+                    ...l.video,
                     thumbnail: n
                 };
                 break;
@@ -199,7 +199,7 @@ function G() {
                         ...a,
                         [o.n.WATCH_VIDEO]: {
                             ...i,
-                            assets: s
+                            assets: l
                         }
                     }
                 }
@@ -229,10 +229,10 @@ function G() {
 
     function Y(e, n, a) {
         if ("name" === e || "nameWithArticle" === e) {
-            var i, s;
+            var i, l;
             c({
                 ...t,
-                config: (i = t.config, s = {
+                config: (i = t.config, l = {
                     [e]: n
                 }, (0, r.YW)(i).with({
                     configVersion: 2
@@ -244,7 +244,7 @@ function G() {
                             ...e,
                             messages: {
                                 ...e.messages,
-                                ...s
+                                ...l
                             }
                         } : e)
                     }
@@ -275,7 +275,7 @@ function G() {
             return 10 * O.A.Seconds.MINUTE
         }, [t.config.taskConfigV2.tasks]),
         ee = i.useMemo(() => o.n.WATCH_VIDEO in t.config.taskConfigV2.tasks, [t.config.taskConfigV2.tasks]);
-    l()(!1 !== t.preview && null != t.preview, "Preview config must have property preview: true");
+    s()(!1 !== t.preview && null != t.preview, "Preview config must have property preview: true");
     let et = t.config.taskConfigV2.tasks[o.n.WATCH_VIDEO];
     return (0, a.jsxs)(m.IpV, {
         className: w.kL,
@@ -346,7 +346,7 @@ function G() {
                     let a = t.config.taskConfigV2.tasks,
                         i = a[o.n.WATCH_VIDEO];
                     if (null == i) return;
-                    let s = {
+                    let l = {
                         ...i.messages,
                         [e]: n
                     };
@@ -360,7 +360,7 @@ function G() {
                                     ...a,
                                     [o.n.WATCH_VIDEO]: {
                                         ...i,
-                                        messages: s
+                                        messages: l
                                     }
                                 }
                             }

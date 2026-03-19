@@ -1,6 +1,6 @@
 /** chunk id: 161290 params = (module,exports,require) **/
 n.d(t, {
-    A: () => L
+    A: () => D
 });
 var i = n(627968);
 n(64700);
@@ -24,17 +24,17 @@ var s = n(284009),
     S = n(63675),
     C = n(617514),
     f = n(546849),
-    b = n(101058),
-    N = n(207803),
-    I = n(836602),
+    N = n(101058),
+    I = n(207803),
+    b = n(836602),
     v = n(622543),
     j = n(950191),
     y = n(287809),
-    R = n(927578),
-    O = n(985018),
-    D = n(264671);
+    O = n(927578),
+    R = n(985018),
+    L = n(264671);
 
-function L() {
+function D() {
     let e = (0, a.bG)([y.default], () => {
             let e = y.default.getCurrentUser();
             return l()(null != e, "DefaultCustomizationSections: user cannot be undefined"), e
@@ -43,7 +43,7 @@ function L() {
         {
             pendingAvatar: n,
             pendingGlobalName: s,
-            pendingBanner: L,
+            pendingBanner: D,
             pendingBio: P,
             pendingPronouns: G,
             pendingAccentColor: M,
@@ -51,29 +51,29 @@ function L() {
             pendingLegacyUsernameDisabled: k,
             pendingPrimaryGuildId: V,
             errors: w
-        } = (0, a.cf)([I.A], () => {
-            let e = I.A.getPendingChanges(),
-                t = I.A.getErrors();
+        } = (0, a.cf)([b.A], () => {
+            let e = b.A.getPendingChanges(),
+                t = b.A.getErrors();
             return {
                 ...e,
                 errors: t
             }
         }),
-        B = (0, b.V7)({
+        B = (0, N.V7)({
             userId: e.id,
             image: n
         }),
         H = (0, o.EC)(),
-        F = R.Ay.canUsePremiumProfileCustomization(e),
+        F = O.Ay.canUsePremiumProfileCustomization(e),
         Y = (0, u.z5)(n, e.avatar),
-        z = (0, u.Ac)(L, t?.banner),
+        z = (0, u.Ac)(D, t?.banner),
         X = (0, j.Ay)(e.id),
         W = X?.getLegacyUsername(),
         K = (w.global_name?.length ?? 0) > 0 ? w.global_name : H?.nick ?? [],
         Z = (w.bio?.length ?? 0) > 0 ? w.bio : H?.bio ?? [],
         q = (0, c.b)();
     return (0, i.jsxs)("div", {
-        className: D.Q,
+        className: L.Q,
         children: [(0, i.jsx)(A.A, {
             placeholder: e.username,
             errors: K,
@@ -82,45 +82,45 @@ function L() {
             onGlobalNameChange: r.U6,
             user: e
         }), (0, i.jsx)(f.A, {
-            sectionTitle: O.intl.string(O.t["+T3RI/"]),
+            sectionTitle: R.intl.string(R.t["+T3RI/"]),
             errors: w.pronouns,
-            onPronounsChange: N.Oz,
+            onPronounsChange: I.Oz,
             pendingPronouns: G,
             currentPronouns: t?.pronouns ?? ""
         }, "pronouns"), (0, i.jsx)(C.A, {}), (0, i.jsx)(g.A, {
             onAvatarChange: r.zq,
             showRemoveAvatarButton: Y,
             errors: w.avatar,
-            sectionTitle: O.intl.string(O.t.lqaIxI),
+            sectionTitle: R.intl.string(R.t.lqaIxI),
             forcedDivider: !0
         }, "avatar"), (0, i.jsx)(m.A, {
             user: e,
-            sectionTitle: O.intl.string(O.t["7v0T9P"])
+            sectionTitle: R.intl.string(R.t["7v0T9P"])
         }, "decoration"), (0, i.jsx)(h.A, {
             user: e
         }), (0, i.jsx)(E.A, {
             user: e,
-            sectionTitle: O.intl.string(O.t.wR5wOo)
+            sectionTitle: R.intl.string(R.t.wR5wOo)
         }, "effect"), F ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(p.A, {
                 showRemoveBannerButton: z,
                 errors: w.banner,
-                onBannerChange: N.Iz,
+                onBannerChange: I.Iz,
                 forcedDivider: !0
             }, "banner"), (0, i.jsx)(S.A, {
                 user: e,
                 pendingAvatarSrc: B,
                 pendingColors: U,
-                onThemeColorsChange: N.Zz,
+                onThemeColorsChange: I.Zz,
                 forcedDivider: !0
             })]
         }) : (0, i.jsx)(T.A, {
             user: e,
             savedUserColor: t?.accentColor,
             pendingColor: M,
-            setPendingAccentColor: N.XW
+            setPendingAccentColor: I.XW
         }, "color"), (0, i.jsx)(_.A, {
-            sectionTitle: O.intl.string(O.t.ZzAR2Y),
+            sectionTitle: R.intl.string(R.t.ZzAR2Y),
             errors: Z,
             onBioChange: e => (0, u.Ru)(e, t?.bio),
             pendingBio: P,

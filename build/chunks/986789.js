@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(390544),
-    l = n(311907),
+    l = n(390544),
+    s = n(311907),
     r = n(397927),
     o = n(73153),
     d = n(665171),
@@ -15,9 +15,9 @@ var a = n(627968),
     h = n(566381);
 
 function x() {
-    let e = (0, l.bG)([m.A], () => m.A.getGuildId()),
-        t = (0, l.bG)([u.A], () => u.A.getGuild(e)?.name),
-        n = (0, l.bG)([c.A], () => c.A.getStateForGuild(e)?.instances),
+    let e = (0, s.bG)([m.A], () => m.A.getGuildId()),
+        t = (0, s.bG)([u.A], () => u.A.getGuild(e)?.name),
+        n = (0, s.bG)([c.A], () => c.A.getStateForGuild(e)?.instances),
         x = i.useMemo(() => Object.values(n ?? {})[0], [n]),
         p = i.useCallback(t => {
             null != x && null != e && o.h.dispatch({
@@ -29,7 +29,7 @@ function x() {
                 }
             })
         }, [x, e]),
-        g = i.useMemo(() => Object.values(s.M).map(e => (0, a.jsx)(r.Button, {
+        g = i.useMemo(() => Object.values(l.M).map(e => (0, a.jsx)(r.Button, {
             variant: "primary",
             text: e,
             onClick: () => {

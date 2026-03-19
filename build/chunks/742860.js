@@ -4,8 +4,8 @@ n.d(t, {
 }), n(801541);
 var a = n(627968),
     i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    l = n(503698),
+    s = n.n(l),
     r = n(497766),
     o = n(889137),
     d = n(311907),
@@ -54,8 +54,8 @@ var a = n(627968),
 let X = i.forwardRef(function(e, t) {
     let {
         isHovered: n,
-        asset: s,
-        poster: l,
+        asset: l,
+        poster: s,
         className: r,
         autoPlay: o = !1
     } = e, {
@@ -68,15 +68,15 @@ let X = i.forwardRef(function(e, t) {
             m.current = e, null != t && ("function" == typeof t ? t(e) : t.current = e)
         },
         autoPlay: o,
-        poster: l,
+        poster: s,
         loop: !0,
         muted: !0,
         playsInline: !0,
         className: r,
         controls: !1,
         children: (0, a.jsx)("source", {
-            src: s.url,
-            type: s.mimetype ?? void 0
+            src: l.url,
+            type: l.mimetype ?? void 0
         })
     })
 });
@@ -86,15 +86,15 @@ function Z(e) {
         onClick: t
     } = e, {
         quest: n
-    } = i.useContext(W.T), s = (0, d.bG)([x.A], () => x.A.useReducedMotion), [r, o] = i.useState(!1), u = (0, T.tW)(n, T.fY.QUEST_BAR_HERO_VIDEO, void 0, !1), h = (0, T.tW)(n, T.fY.VIDEO_PLAYER_THUMBNAIL, void 0, !1), p = (0, b.Kr)(e => e.getVideoProgressState)(n.id), g = n.userStatus?.completedAt != null && p === b.K2.COMPLETED, _ = !g && (!s || r);
+    } = i.useContext(W.T), l = (0, d.bG)([x.A], () => x.A.useReducedMotion), [r, o] = i.useState(!1), u = (0, T.tW)(n, T.fY.QUEST_BAR_HERO_VIDEO, void 0, !1), h = (0, T.tW)(n, T.fY.VIDEO_PLAYER_THUMBNAIL, void 0, !1), p = (0, b.Kr)(e => e.getVideoProgressState)(n.id), g = n.userStatus?.completedAt != null && p === b.K2.COMPLETED, _ = !g && (!l || r);
     return (0, a.jsxs)(m.DUT, {
         className: J.QO,
         onClick: t,
         onMouseEnter: () => {
-            s && !r && o(!0)
+            l && !r && o(!0)
         },
         onMouseLeave: () => {
-            s && r && o(!1)
+            l && r && o(!1)
         },
         children: [null != h && (0, a.jsx)(R.Sn, {
             id: "QuestBarContentExpanded_videoThumbnail",
@@ -112,7 +112,7 @@ function Z(e) {
                 autoPlay: !1,
                 asset: u,
                 poster: h?.url,
-                className: l()(J.NM, {
+                className: s()(J.NM, {
                     [J.Gc]: _
                 })
             })
@@ -134,7 +134,7 @@ function ee(e) {
         quest: t
     } = e;
     return (0, a.jsx)(D.A, {
-        className: l()(J.Qq, J.wq),
+        className: s()(J.Qq, J.wq),
         learnMoreStyle: "text",
         quest: t,
         questContent: v.uF.QUEST_BAR_V2,
@@ -146,7 +146,7 @@ function et(e) {
     let {
         preferImageHeroAsset: t,
         isInteractable: n,
-        containerRef: s,
+        containerRef: l,
         onAcceptQuest: o
     } = e, {
         quest: c,
@@ -186,7 +186,7 @@ function et(e) {
             ref: N,
             children: (0, a.jsxs)("div", {
                 className: J.do,
-                ref: s,
+                ref: l,
                 children: [(0, a.jsxs)("div", {
                     className: J.zH,
                     children: [(0, a.jsx)(ee, {
@@ -239,7 +239,7 @@ function et(e) {
                 opacity: (0, M.a)(b.to([0, 1], [1, 0]))
             },
             children: (0, a.jsx)("div", {
-                className: l()(J.LC, J.Ge),
+                className: s()(J.LC, J.Ge),
                 style: B
             })
         }), (0, a.jsxs)(r.animated.div, {
@@ -265,7 +265,7 @@ function et(e) {
                     src: k.url
                 })
             }), (0, a.jsx)("div", {
-                className: l()(J.tV, {
+                className: s()(J.tV, {
                     [J.tt]: F
                 })
             })]
@@ -278,23 +278,23 @@ function en(e) {
         overlayRef: t,
         containerRef: n
     } = e, {
-        quest: s,
+        quest: l,
         taskDetails: d
     } = i.useContext(W.T), {
         expansionSpring: c
-    } = i.useContext(L.PW), u = s.userStatus?.completedAt != null, m = d.percentComplete > 0, h = (0, y.Vn)(s), [x, p, g] = (0, y.Qo)(s, d), _ = i.useRef(null), f = i.useRef(null), b = (0, y.RR)({
-        quest: s
-    }), j = (0, I.vv)(s), A = (0, y.I3)(s), C = i.useCallback(() => {
+    } = i.useContext(L.PW), u = l.userStatus?.completedAt != null, m = d.percentComplete > 0, h = (0, y.Vn)(l), [x, p, g] = (0, y.Qo)(l, d), _ = i.useRef(null), f = i.useRef(null), b = (0, y.RR)({
+        quest: l
+    }), j = (0, I.vv)(l), A = (0, y.I3)(l), C = i.useCallback(() => {
         (0, P.d5)({
-            quest: s,
+            quest: l,
             questContent: v.uF.QUEST_BAR_V2,
             sourceQuestContent: v.uF.QUEST_BAR_V2,
             sourceQuestContentCTA: S.Cy.QUEST_BAR_VIDEO_QUEST_PREVIEW
         })
-    }, [s]), T = null != A ? A.percentComplete : d.percentComplete;
+    }, [l]), T = null != A ? A.percentComplete : d.percentComplete;
     return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(r.animated.div, {
-            className: l()(J.tv, J.ag),
+            className: s()(J.tv, J.ag),
             style: {
                 backgroundImage: `linear-gradient(90deg, ${Q.V1}, ${Q.us})`,
                 opacity: (0, M.a)(c.to({
@@ -321,13 +321,13 @@ function en(e) {
                 activeScreen: x,
                 popoutTargetElementRef: f
             }), (0, a.jsx)(V.T, {
-                children: !u && !(0, N.W1)(s) && (0, o.YW)(x).with(v.X0.SELECT, () => (0, a.jsx)($.A, {
+                children: !u && !(0, N.W1)(l) && (0, o.YW)(x).with(v.X0.SELECT, () => (0, a.jsx)($.A, {
                     onConsole: () => g(q.fO.CONSOLE),
                     onDesktop: () => g(q.fO.DESKTOP)
                 })).with(v.X0.DESKTOP, () => (0, a.jsx)(H.A, {
-                    quest: s
+                    quest: l
                 })).with(v.X0.CONSOLE, () => (0, a.jsx)(F.A, {
-                    quest: s,
+                    quest: l,
                     taskDetails: d
                 })).exhaustive()
             }), (0, a.jsxs)(V.T, {
@@ -344,7 +344,7 @@ function en(e) {
                 })]
             })]
         }), (0, a.jsx)("div", {
-            className: l()(J.tv, J.Sx),
+            className: s()(J.tv, J.Sx),
             style: {
                 backgroundImage: `linear-gradient(90deg, ${Q.V1}, ${Q.us})`
             }
@@ -370,7 +370,7 @@ async function ea(e, t, n, a) {
 let ei = i.forwardRef(function(e, t) {
     let {
         children: n,
-        className: s,
+        className: l,
         overlayRef: o,
         isUnfurl: d
     } = e, {
@@ -388,7 +388,7 @@ let ei = i.forwardRef(function(e, t) {
     }, [h, p, g]), f = h.userStatus?.enrolledAt != null, b = u && m;
     return (0, a.jsxs)(r.animated.div, {
         "aria-hidden": !b,
-        className: l()(s, J.Rh, {
+        className: s()(l, J.Rh, {
             [J.Yd]: b,
             [J.iH]: f
         }),

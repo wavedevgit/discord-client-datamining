@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    l = n(503698),
+    s = n.n(l),
     r = n(158954),
     o = n(397927),
     d = n(234560),
@@ -27,7 +27,7 @@ let h = [{
 function p() {
     let [e, t] = i.useState("virtual-currency"), n = i.useMemo(() => x[e], [e]);
     return (0, a.jsxs)("div", {
-        className: l()(u.nd, m.kL),
+        className: s()(u.nd, m.kL),
         children: [(0, a.jsx)(o.VQ0, {
             className: m.$H,
             selectedItem: e,

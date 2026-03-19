@@ -23,16 +23,16 @@ var i = n(627968),
     S = n(954571),
     C = n(131168),
     f = n(482589),
-    b = n(511484),
-    N = n(322631),
-    I = n(570627),
+    N = n(511484),
+    I = n(322631),
+    b = n(570627),
     v = n(568031),
     j = n(518491),
     y = n(965591),
-    R = n(495022),
-    O = n(157839),
-    D = n(382694),
-    L = n(60508),
+    O = n(495022),
+    R = n(157839),
+    L = n(382694),
+    D = n(60508),
     P = n(821158),
     G = n(235365),
     M = n(994763),
@@ -44,7 +44,7 @@ var i = n(627968),
 let H = e => {
     let {
         userId: t
-    } = e, n = I.m.useConfig({
+    } = e, n = b.m.useConfig({
         location: "PremiumSubscriberHome"
     }).enabled, l = (0, r.zy)();
     s.useEffect(() => {
@@ -85,7 +85,7 @@ let H = e => {
             } : {}
         }, [l.search]);
     (0, M.z)(K ?? "", null != K, q, J);
-    let [Q, $] = s.useState(!1), ee = (0, C.p)(), et = s.useRef(null), [en, ei] = s.useState(!1), [es, el] = s.useState(!1), ea = null != ee && null != Y && Y.status === k.Dmq.CANCELED, er = (0, b.iU)(U.gD.PREMIUM_MONTH_TIER_2, ee, Y), eo = !es && ea, {
+    let [Q, $] = s.useState(!1), ee = (0, C.p)(), et = s.useRef(null), [en, ei] = s.useState(!1), [es, el] = s.useState(!1), ea = null != ee && null != Y && Y.status === k.Dmq.CANCELED, er = (0, N.iU)(U.gD.PREMIUM_MONTH_TIER_2, ee, Y), eo = !es && ea, {
         analyticsLocations: ed
     } = (0, m.Ay)(_.A.PREMIUM_SUBSCRIBER_NITRO_HOME), [ec, eu] = s.useState(!1);
     return null != (0, o.bG)([p.A], () => null != t ? p.A.getUserProfile(t) : null) && (z || null != X) ? (0, i.jsxs)(i.Fragment, {
@@ -112,25 +112,25 @@ let H = e => {
                             userDiscountOffer: ee,
                             discountedPrice: er
                         })
-                    }), n && (0, i.jsx)(D.A, {
+                    }), n && (0, i.jsx)(L.A, {
                         glowingPerkId: Z
-                    }), !n && (0, i.jsx)(O.A, {
-                        variant: N.cJ.WHATS_NEW,
+                    }), !n && (0, i.jsx)(R.A, {
+                        variant: I.cJ.WHATS_NEW,
                         className: w.Iw,
                         noBackground: !0,
                         leftAlignHeaders: !0
                     }), null != X && W && (0, i.jsx)(G.A, {
                         location: _.A.PREMIUM_MARKETING_NITRO_HOME_ORBS_SECTION
-                    }), n && (0, i.jsx)(R.A, {
+                    }), n && (0, i.jsx)(O.A, {
                         glowingPerkId: Z
-                    }), !n && (0, i.jsx)(O.A, {
+                    }), !n && (0, i.jsx)(R.A, {
                         className: w.xU,
-                        variant: N.cJ.PERKS_DISCOVERABILITY,
+                        variant: I.cJ.PERKS_DISCOVERABILITY,
                         noBackground: !0,
                         leftAlignHeaders: !0,
                         showAllPerksButton: (0, i.jsx)(P.A, {
                             setIsAllPerksVisible: ei,
-                            previousComponent: N.A2.HOME
+                            previousComponent: I.A2.HOME
                         })
                     }), (0, i.jsx)(v.A, {
                         className: w.Zy,
@@ -166,10 +166,10 @@ let H = e => {
                 churnDiscountOffer: ee,
                 discountedPrice: er
             })]
-        }), !n && (0, i.jsx)(L.A, {
+        }), !n && (0, i.jsx)(D.A, {
             isAllPerksVisible: en,
             setIsAllPerksVisible: ei,
-            previousComponent: N.A2.HOME,
+            previousComponent: I.A2.HOME,
             enablePremiumBrandRefresh: !0
         })]
     }) : (0, i.jsx)("div", {

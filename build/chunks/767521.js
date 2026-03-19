@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(311907),
-    r = n(827734),
+    r = n(311907),
+    l = n(827734),
     s = n(397927),
     o = n(817281),
     d = n(688810),
@@ -17,13 +17,13 @@ var i = n(627968),
 let m = function() {
     let {
         analyticsLocations: e
-    } = (0, d.Ay)(), t = (0, l.bG)([u.A], () => u.A.theme), n = a.useRef(null);
+    } = (0, d.Ay)(), t = (0, r.bG)([u.A], () => u.A.theme), n = a.useRef(null);
     a.useEffect(() => {
         null == n.current && (n.current = t)
     }, [t]);
-    let m = (0, s.rdh)(r.A.colors.BACKGROUND_BASE_LOW, A.NJ8.LIGHT),
-        g = (0, s.rdh)(r.A.colors.BACKGROUND_BASE_LOW, A.NJ8.DARKER),
-        p = (0, s.rdh)(r.A.colors.BACKGROUND_BASE_LOW, A.NJ8.MIDNIGHT),
+    let m = (0, s.rdh)(l.A.colors.BACKGROUND_BASE_LOW, A.NJ8.LIGHT),
+        g = (0, s.rdh)(l.A.colors.BACKGROUND_BASE_LOW, A.NJ8.DARKER),
+        p = (0, s.rdh)(l.A.colors.BACKGROUND_BASE_LOW, A.NJ8.MIDNIGHT),
         E = a.useMemo(() => [{
             theme: A.NJ8.LIGHT,
             label: h.t.K2sFfo,

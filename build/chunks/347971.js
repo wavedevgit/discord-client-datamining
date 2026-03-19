@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(158954),
-    l = n(397927),
+    l = n(158954),
+    s = n(397927),
     r = n(839214),
     o = n(849823),
     d = n(840065);
@@ -30,20 +30,20 @@ function u() {
                 path: t.path
             })
         }, []);
-    return (0, a.jsxs)(s.nVY, {
+    return (0, a.jsxs)(l.nVY, {
         label: "Settings Deep Link Tool",
-        children: [(0, a.jsx)(l.ksK, {
+        children: [(0, a.jsx)(s.ksK, {
             label: "URL",
             placeholder: "e.g. /settings/appearance",
             onChange: e => c.setState({
                 urlString: e,
                 error: null
             })
-        }), (0, a.jsx)(s.$nd, {
+        }), (0, a.jsx)(l.$nd, {
             variant: "primary",
             onClick: t,
             text: "Open User Settings for URL"
-        }), null != e && (0, a.jsx)(s.EYj, {
+        }), null != e && (0, a.jsx)(l.EYj, {
             variant: "text-sm/normal",
             color: "text-feedback-critical",
             children: e

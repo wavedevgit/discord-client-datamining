@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    l = n(503698),
+    s = n.n(l),
     r = n(497766),
     o = n(341915),
     d = n(890687),
@@ -21,7 +21,7 @@ var a = n(627968),
 let v = i.forwardRef(function(e, t) {
     let {
         className: n,
-        overlayRef: s
+        overlayRef: l
     } = e, {
         expansionSpring: v
     } = i.useContext(u.PW), {
@@ -32,13 +32,13 @@ let v = i.forwardRef(function(e, t) {
     } = i.useContext(x.T), y = b.userStatus?.completedAt != null, T = (0, d.I3)(b), S = i.useRef(null), E = b.userStatus?.enrolledAt != null, N = null != T ? T.percentComplete : j.percentComplete, [I, k] = i.useState(!1);
     return (0, a.jsxs)(a.Fragment, {
         children: [y && (0, a.jsx)(h.A, {
-            overlayRef: s,
+            overlayRef: l,
             progressBarRef: S,
             isHovered: I
         }), (0, a.jsx)(r.animated.div, {
             ref: t,
             "aria-hidden": A && C,
-            className: l()(n, f.hR, {
+            className: s()(n, f.hR, {
                 [f.Ag]: A,
                 [f.s]: E
             }),

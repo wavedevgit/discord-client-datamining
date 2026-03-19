@@ -2,7 +2,7 @@
 n.d(t, {
     Ay: () => E,
     dd: () => T,
-    lD: () => N
+    lD: () => I
 });
 var i = n(627968),
     s = n(64700),
@@ -50,13 +50,13 @@ function E(e) {
     return (0, i.jsxs)(m.A, {
         className: t,
         title: x.intl.string(x.t.Cq98yL),
-        children: [(0, i.jsx)(b, {}), (0, i.jsx)(a.cGx, {
+        children: [(0, i.jsx)(N, {}), (0, i.jsx)(a.cGx, {
             gap: 32
         }), (0, i.jsx)(C, {}), (0, i.jsx)(a.cGx, {
             gap: 32
         }), (0, i.jsx)(f, {}), (0, i.jsx)(a.cGx, {
             gap: 32
-        }), (0, i.jsx)(N, {})]
+        }), (0, i.jsx)(I, {})]
     })
 }
 
@@ -140,7 +140,7 @@ function f() {
     })
 }
 
-function b() {
+function N() {
     let e = _.tz.useSetting(),
         t = u.isPlatformEmbedded ? x.intl.string(h.default.UQ9RHJ) : x.intl.string(x.t.oKqC4t);
     return (0, i.jsx)(c.x, {
@@ -160,7 +160,7 @@ function b() {
     })
 }
 
-function N() {
+function I() {
     return (0, i.jsx)(c.x, {
         setting: g.H.ACTIVITY_PRIVACY_TOS,
         children: (0, i.jsx)(a.ZpM, {

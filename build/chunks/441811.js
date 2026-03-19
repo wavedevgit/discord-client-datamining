@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    s = n(311907),
-    l = n(265486),
+    l = n(311907),
+    s = n(265486),
     r = n(688810),
     o = n(626584),
     d = n(780964),
@@ -25,7 +25,7 @@ function f(e) {
         children: o
     } = e, {
         analyticsLocations: f
-    } = (0, r.Ay)(), v = (0, i.useRef)(null), b = (0, s.bG)([u.A], () => u.A.isFocused()), j = (0, i.useCallback)(() => {
+    } = (0, r.Ay)(), v = (0, i.useRef)(null), b = (0, l.bG)([u.A], () => u.A.isFocused()), j = (0, i.useCallback)(() => {
         t(h.i.TAKE_ACTION), (0, c.openUserSettings)(d.X.PROFILE_PANEL, {
             analyticsLocations: f
         }, () => {
@@ -39,7 +39,7 @@ function f(e) {
     return (0, i.useEffect)(() => {
         b && v.current?.paused ? v.current?.play().catch(_.error) : b || v.current?.pause()
     }, [b]), (0, a.jsxs)(a.Fragment, {
-        children: [o, (0, a.jsx)(l.A, {
+        children: [o, (0, a.jsx)(s.A, {
             targetElementRef: n,
             shouldShow: !0,
             onRequestClose: A,

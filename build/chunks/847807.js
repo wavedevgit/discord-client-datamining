@@ -4,12 +4,12 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(397927),
-    s = n(817281),
-    l = n(736653),
+    l = n(817281),
+    s = n(736653),
     r = n(653523),
     o = n(818348);
 let d = function() {
-    let e = (0, l.Ay)();
+    let e = (0, s.Ay)();
     return (0, a.jsx)(i.D0$, {
         label: "Theme",
         children: (0, a.jsxs)("div", {
@@ -20,13 +20,13 @@ let d = function() {
             children: [(0, a.jsx)(r.zy, {
                 theme: o.NJ.LIGHT,
                 isSelected: e === o.NJ.LIGHT,
-                onSelect: () => (0, s.u_)({
+                onSelect: () => (0, l.u_)({
                     theme: o.NJ.LIGHT
                 })
             }), (0, a.jsx)(r.zy, {
                 theme: o.NJ.DARK,
                 isSelected: e === o.NJ.DARK,
-                onSelect: () => (0, s.u_)({
+                onSelect: () => (0, l.u_)({
                     theme: o.NJ.DARK
                 })
             })]

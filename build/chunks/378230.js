@@ -5,8 +5,8 @@ n.d(t, {
 var a = n(627968);
 n(64700);
 var i = n(503698),
-    s = n.n(i),
-    l = n(397927),
+    l = n.n(i),
+    s = n(397927),
     r = n(935649),
     o = n(847599),
     d = n(480237),
@@ -15,22 +15,22 @@ var i = n(503698),
 
 function m() {
     return (0, a.jsx)("div", {
-        className: s()(u.nd, c.k),
+        className: l()(u.nd, c.k),
         children: (0, a.jsxs)("div", {
-            children: [(0, a.jsx)(l.Heading, {
+            children: [(0, a.jsx)(s.Heading, {
                 variant: "heading-lg/semibold",
                 children: "Quick Actions"
-            }), (0, a.jsx)(l.cGx, {
+            }), (0, a.jsx)(s.cGx, {
                 gap: 16
             }), (0, a.jsxs)("div", {
                 className: c.h,
-                children: [(0, a.jsx)(l.Button, {
+                children: [(0, a.jsx)(s.Button, {
                     variant: "primary",
                     size: "sm",
                     text: "Launch Age Verification Test Tool",
                     onClick: () => (0, d.A)(),
                     fullWidth: !0
-                }), (0, a.jsx)(l.Button, {
+                }), (0, a.jsx)(s.Button, {
                     variant: "primary",
                     size: "sm",
                     text: "Launch Age Verification Modal",

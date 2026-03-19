@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(503698),
-    l = n.n(a),
-    r = n(397927),
+    r = n.n(a),
+    l = n(397927),
     s = n(297413),
     o = n(828043);
 
@@ -16,15 +16,15 @@ function d(e) {
         user: t,
         status: n,
         isFocused: a,
-        guildId: l
+        guildId: r
     } = e;
     return (0, i.jsxs)("div", {
         className: o.Ku,
-        children: [(0, i.jsx)(r.euF, {
-            src: t.getAvatarURL(l, 24),
+        children: [(0, i.jsx)(l.euF, {
+            src: t.getAvatarURL(r, 24),
             className: o.my,
             "aria-label": t.username,
-            size: r._3J.SIZE_24,
+            size: l._3J.SIZE_24,
             status: n,
             statusColor: a ? "currentColor" : void 0
         }), (0, i.jsx)(s.A, {
@@ -41,7 +41,7 @@ function c(e) {
     return (0, i.jsxs)("div", {
         className: o.Ku,
         children: [(0, i.jsx)("div", {
-            className: l()(o.my, o.L5)
+            className: r()(o.my, o.L5)
         }), (0, i.jsx)("div", {
             children: t
         })]

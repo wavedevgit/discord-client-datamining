@@ -1,6 +1,6 @@
 /** chunk id: 766569 params = (module,exports,require) **/
 n.d(t, {
-    A: () => L
+    A: () => D
 });
 var i = n(627968),
     s = n(64700),
@@ -23,16 +23,16 @@ var i = n(627968),
     S = n(351906),
     C = n(287809),
     f = n(975571),
-    b = n(927578),
-    N = n(159001),
-    I = n(65767),
+    N = n(927578),
+    I = n(159001),
+    b = n(65767),
     v = n(281052),
     j = n(687021),
     y = n(652215),
-    R = n(985018),
-    O = n(764121);
+    O = n(985018),
+    R = n(764121);
 
-function D(e) {
+function L(e) {
     (0, o.mMO)(async () => {
         let {
             default: t
@@ -47,35 +47,35 @@ function D(e) {
     })
 }
 
-function L(e) {
+function D(e) {
     let {
         selectedGuild: t,
         onGuildChange: n
     } = e, {
         analyticsLocations: l
-    } = (0, _.Ay)(u.A.USER_SETTINGS_GUILD_PROFILE), L = (0, r.bG)([C.default], () => {
+    } = (0, _.Ay)(u.A.USER_SETTINGS_GUILD_PROFILE), D = (0, r.bG)([C.default], () => {
         let e = C.default.getCurrentUser();
         return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-    }), P = (0, r.bG)([E.Ay], () => null != t ? E.Ay.getMember(t.id, L.id) : null), G = (0, r.bG)([T.A], () => !T.A.isFetchingProfile(L.id, t?.id)), M = (0, r.bG)([S.A], () => S.A.hidePersonalInformation), {
+    }), P = (0, r.bG)([E.Ay], () => null != t ? E.Ay.getMember(t.id, D.id) : null), G = (0, r.bG)([T.A], () => !T.A.isFetchingProfile(D.id, t?.id)), M = (0, r.bG)([S.A], () => S.A.hidePersonalInformation), {
         pendingAvatar: U,
         pendingNameplate: k,
         ...V
     } = (0, r.cf)([p.A], () => p.A.getPendingChanges(t?.id)), w = (0, h.V7)({
-        userId: L.id,
+        userId: D.id,
         image: U
     }), B = (0, g.lw)({
         pendingValue: k,
-        userValue: L?.collectibles?.nameplate,
+        userValue: D?.collectibles?.nameplate,
         guildValue: P?.collectibles?.nameplate,
         guildId: t?.id
     }), {
         pendingDisplayNameStyles: H
-    } = (0, g.B0)(L, t?.id);
-    return (s.useEffect(() => () => d.h.wait(N.IM), []), M) ? (0, i.jsx)(c.A, {}) : G ? (0, i.jsxs)(_.f5, {
+    } = (0, g.B0)(D, t?.id);
+    return (s.useEffect(() => () => d.h.wait(I.IM), []), M) ? (0, i.jsx)(c.A, {}) : G ? (0, i.jsxs)(_.f5, {
         value: l,
         children: [(0, i.jsx)(o.Text, {
             variant: "text-sm/normal",
-            children: R.intl.format(R.t["/PTB2E"], {
+            children: O.intl.format(O.t["/PTB2E"], {
                 helpCenterLink: f.A.getArticleURL(y.MVz.GUILD_PROFILES)
             })
         }), null != t ? (0, i.jsxs)(i.Fragment, {
@@ -85,8 +85,8 @@ function L(e) {
             }), (0, i.jsx)(A.A, {
                 profilePreviewTitle: (0, i.jsx)(o.Heading, {
                     variant: "heading-md/medium",
-                    className: O.Y,
-                    children: R.intl.formatToPlainString(R.t.Tc0slG, {
+                    className: R.Y,
+                    children: O.intl.formatToPlainString(O.t.Tc0slG, {
                         guildName: t?.name
                     })
                 }),
@@ -94,22 +94,22 @@ function L(e) {
                     ...V,
                     pendingAvatar: w,
                     pendingDisplayNameStyles: H,
-                    user: L,
+                    user: D,
                     guild: t,
-                    canUsePremiumCustomization: b.Ay.canUsePremiumProfileCustomization(L),
-                    onUpsellClick: D
+                    canUsePremiumCustomization: N.Ay.canUsePremiumProfileCustomization(D),
+                    onUpsellClick: L
                 }),
                 nameplatePreview: (0, i.jsx)(m.A, {
                     ...V,
                     pendingDisplayNameStyles: H,
-                    user: L,
+                    user: D,
                     guildId: t?.id,
                     nameplate: B,
-                    className: null == B ? O.t : void 0,
+                    className: null == B ? R.t : void 0,
                     isHighlighted: !0
                 }),
                 children: (0, i.jsx)(v.A, {})
             })]
-        }) : (0, i.jsx)(I.A, {})]
+        }) : (0, i.jsx)(b.A, {})]
     }) : (0, i.jsx)(o.y$y, {})
 }

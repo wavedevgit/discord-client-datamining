@@ -1,7 +1,7 @@
 /** chunk id: 726532 params = (module,exports,require) **/
 n.d(t, {
     i: () => f,
-    j: () => N
+    j: () => I
 });
 var i = n(627968),
     s = n(64700),
@@ -82,8 +82,8 @@ let S = () => (0, i.jsxs)(a.BJc, {
                 members: f
             } = r,
             {
-                title: b,
-                description: N
+                title: N,
+                description: I
             } = (() => {
                 switch (s.subscriptionStatus) {
                     case h.Dmq.CANCELED:
@@ -126,8 +126,8 @@ let S = () => (0, i.jsxs)(a.BJc, {
             children: [(0, i.jsx)(S, {}), (0, i.jsxs)("div", {
                 className: E.wS,
                 children: [(0, i.jsx)(C, {
-                    title: b,
-                    description: N,
+                    title: N,
+                    description: I,
                     button: (0, i.jsx)(a.Button, {
                         variant: "secondary",
                         text: T.intl.string(p.default.NCu2JD),
@@ -167,7 +167,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
             })]
         })
     },
-    b = e => {
+    N = e => {
         let {
             premiumGroupMembers: t,
             isLoadingPremiumGroupMembers: n,
@@ -230,7 +230,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
             }, `seat-available-${t}`))]
         })
     },
-    N = e => {
+    I = e => {
         let {
             subscription: t,
             analyticsLocations: c
@@ -239,15 +239,15 @@ let S = () => (0, i.jsxs)(a.BJc, {
             isLoading: A
         } = (0, m.A)(t.id), {
             numAvailableInvites: f,
-            numTotalSeats: N,
-            numUsedSeats: I
+            numTotalSeats: I,
+            numUsedSeats: b
         } = (0, l.cf)([_.A], () => ({
             numAvailableInvites: _.A.getNumAvailableInvites(),
             numTotalSeats: _.A.getNumTotalSeats(),
             numUsedSeats: _.A.getNumUsedSeats()
         })), [v, j] = s.useState(!1), {
             status: y
-        } = t, R = s.useCallback(() => {
+        } = t, O = s.useCallback(() => {
             (0, a.mMO)(async () => {
                 let {
                     PremiumBrandRefreshSubscriptionCancellationModal: e
@@ -258,9 +258,9 @@ let S = () => (0, i.jsxs)(a.BJc, {
                     analyticsLocations: c
                 })
             })
-        }, [t, c]), O = s.useCallback(async () => {
+        }, [t, c]), R = s.useCallback(async () => {
             j(!0), await (0, r.Ir)(t, c), j(!1)
-        }, [t, c]), D = () => {
+        }, [t, c]), L = () => {
             o.default.track(h.HAw.PREMIUM_GROUP_SUBSCRIPTION_CARD_INVITE_CLICKED, {
                 subscription_id: t.id
             }), (0, a.mMO)(async () => {
@@ -272,7 +272,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
                     subscription: t
                 })
             })
-        }, L = s.useMemo(() => !x.BE.includes(t.status) && f > 0, [t.status, f]), {
+        }, D = s.useMemo(() => !x.BE.includes(t.status) && f > 0, [t.status, f]), {
             title: P,
             description: G
         } = (() => {
@@ -323,7 +323,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
                         variant: "expressive",
                         size: "md",
                         text: T.intl.string(p.default.EFTJMQ),
-                        onClick: O,
+                        onClick: R,
                         loading: v
                     }) : (0, i.jsxs)(a.BJc, {
                         direction: "vertical",
@@ -333,21 +333,21 @@ let S = () => (0, i.jsxs)(a.BJc, {
                             size: "md",
                             fullWidth: !0,
                             text: T.intl.string(p.default.Tcmclj),
-                            onClick: D,
-                            disabled: !L
+                            onClick: L,
+                            disabled: !D
                         }), (0, i.jsx)(a.Button, {
                             variant: "secondary",
                             size: "md",
                             fullWidth: !0,
                             text: T.intl.string(p.default.oO0EYw),
-                            onClick: R
+                            onClick: O
                         })]
                     })
-                }), (0, i.jsx)(b, {
+                }), (0, i.jsx)(N, {
                     premiumGroupMembers: g,
                     isLoadingPremiumGroupMembers: A,
-                    canInvite: L,
-                    onInvite: D,
+                    canInvite: D,
+                    onInvite: L,
                     onRemoveMember: e => {
                         o.default.track(h.HAw.PREMIUM_GROUP_SUBSCRIPTION_CARD_REMOVE_MEMBER_CLICKED, {
                             subscription_id: t.id,
@@ -381,8 +381,8 @@ let S = () => (0, i.jsxs)(a.BJc, {
                             })
                         })
                     },
-                    numTotalSeats: N,
-                    numUsedSeats: I,
+                    numTotalSeats: I,
+                    numUsedSeats: b,
                     numAvailableInvites: f
                 })]
             })]
