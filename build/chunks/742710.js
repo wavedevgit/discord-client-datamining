@@ -24,8 +24,8 @@ var r = n(397927),
     j = n(858808),
     v = n(685049),
     E = n(985018),
-    T = n(461349),
-    b = n(8208);
+    T = n(966271),
+    b = n(695510);
 
 function N(e) {
     let {
@@ -58,7 +58,7 @@ function N(e) {
     })
 }
 
-function S(e) {
+function y(e) {
     let {
         applicationId: t,
         userId: n,
@@ -84,7 +84,7 @@ function S(e) {
     })
 }
 
-function y(e) {
+function S(e) {
     let {
         user: t,
         guildId: n,
@@ -126,7 +126,7 @@ function R(e) {
             size: "xxs",
             color: r.LU0.colors.ICON_MUTED,
             className: b.Ls
-        }), (0, i.jsx)(y, {
+        }), (0, i.jsx)(S, {
             user: n,
             guildId: l,
             channelId: a,
@@ -147,7 +147,7 @@ function k(e) {
         applicationId: u
     } = e, g = (0, o.GV)(), m = (0, o.GV)(), {
         trackUserProfileEditAction: f
-    } = (0, x.NJ)(), [h, _] = l.useState("idle"), [A, I] = l.useState(t ?? ""), j = l.useRef(null), v = l.useRef(null), T = E.intl.string(E.t.xKSfBT), N = null != t && "" !== t.trim(), S = l.useCallback(() => {
+    } = (0, x.NJ)(), [h, _] = l.useState("idle"), [A, I] = l.useState(t ?? ""), j = l.useRef(null), v = l.useRef(null), T = E.intl.string(E.t.xKSfBT), N = null != t && "" !== t.trim(), y = l.useCallback(() => {
         f({
             action: "PRESS_ADD_COMMENTARY",
             widgetEdited: c
@@ -190,13 +190,13 @@ function k(e) {
         ref: v,
         role: "group",
         "aria-labelledby": m,
-        onClick: S,
+        onClick: y,
         className: b.Vg,
         children: [(0, i.jsx)(r.R2l, {
             size: "xxs",
             color: r.LU0.colors.ICON_MUTED,
             className: b.Ls
-        }), (0, i.jsx)(y, {
+        }), (0, i.jsx)(S, {
             user: n,
             guildId: a,
             channelId: d,
@@ -208,7 +208,7 @@ function k(e) {
             innerRef: j,
             "aria-label": E.intl.string(E.t.ppb9MJ),
             onClick: e => {
-                e.stopPropagation(), S()
+                e.stopPropagation(), y()
             },
             focusProps: {
                 ringTarget: v
@@ -230,14 +230,14 @@ function L(e) {
         coverRef: x,
         className: E
     } = e, {
-        applicationId: y,
+        applicationId: S,
         comment: C,
         tags: L
     } = a, {
         coverImageUrl: w,
         gameName: O,
         isLoading: P
-    } = (0, d.A)(y), D = {
+    } = (0, d.A)(S), D = {
         variant: "heading-sm/medium",
         color: "text-default"
     }, G = g.default.getCurrentUser(), M = G?.id === t.id, U = 1 === (0, p.cv)(o), F = !c && M, W = F && (0, p.y9)(o), H = F && !U, {
@@ -249,7 +249,7 @@ function L(e) {
             className: null == w || c ? void 0 : T.iL,
             imageSrc: w,
             gameName: O,
-            applicationId: y,
+            applicationId: S,
             userId: t.id,
             disableInteraction: c,
             hideTooltip: !0
@@ -267,8 +267,8 @@ function L(e) {
                 children: [c ? (0, i.jsx)(r.Heading, {
                     ...D,
                     children: O
-                }) : (0, i.jsx)(S, {
-                    applicationId: y,
+                }) : (0, i.jsx)(y, {
+                    applicationId: S,
                     userId: t.id,
                     gameName: O,
                     ...D
@@ -278,7 +278,7 @@ function L(e) {
                     guildId: n,
                     channelId: l,
                     widgetType: o,
-                    applicationId: y
+                    applicationId: S
                 }) : (0, i.jsx)(R, {
                     text: C,
                     user: t,
@@ -288,12 +288,12 @@ function L(e) {
                     tags: L,
                     isCurrentUser: M,
                     widgetType: o,
-                    applicationId: y,
+                    applicationId: S,
                     disableInteraction: c,
                     className: b._A
                 }), !c && (0, i.jsx)(v.o, {
                     className: b.Ez,
-                    applicationId: y,
+                    applicationId: S,
                     guildId: n,
                     channelId: l
                 })]

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(554146),
-    r = n(397927),
-    a = n(367513),
+    a = n(397927),
+    r = n(367513),
     o = n(738876),
     c = n(698718),
     d = n(812771),
@@ -15,12 +15,12 @@ var i = n(627968),
     h = n(826673),
     A = n(58736),
     m = n(31717),
-    p = n(203982),
-    g = n(43189),
+    g = n(203982),
+    p = n(43189),
     _ = n(652215),
     f = n(49999),
     x = n(985018),
-    C = n(266920);
+    C = n(163818);
 let E = function(e) {
     let {
         channel: t,
@@ -33,17 +33,17 @@ let E = function(e) {
         })
     }, []);
     let I = s.useCallback(() => {
-            a.A.updateChatOpen(t.id, !1, "close button"), p._.safeDispatch(_.jej.FOCUS_CHAT_BUTTON)
+            r.A.updateChatOpen(t.id, !1, "close button"), g._.safeDispatch(_.jej.FOCUS_CHAT_BUTTON)
         }, [t.id]),
         N = (0, i.jsx)(A.Ay.Icon, {
-            icon: r.PGe,
+            icon: a.PGe,
             tooltip: x.intl.string(x.t.cpT0Cq),
             onClick: I
         });
     return (0, i.jsxs)(d.A, {
         sidebarType: d.X.CallChatSidebar,
         maxWidth: E,
-        floatingLayer: g.Ay,
+        floatingLayer: p.Ay,
         children: [(0, i.jsx)(o.A, {
             channel: t,
             draftType: m.C.ChannelMessage
@@ -51,7 +51,7 @@ let E = function(e) {
             toolbar: N,
             "aria-label": x.intl.string(x.t.BIYAqa),
             children: [(0, i.jsx)(A.Ay.ChannelIcon, {
-                icon: r.oyn,
+                icon: a.oyn,
                 "aria-label": x.intl.string(x.t.Kx5kCN)
             }), (0, i.jsx)(A.Ay.Title, {
                 children: t.name

@@ -12,8 +12,8 @@ function o(e) {
     let {
         onError: t,
         onSuccess: n
-    } = e ?? {}, [o, d] = i.useState(!1), [c, u] = i.useState(!1), [_, m] = i.useState(!1), [g, A] = i.useState(!1), [x, h] = i.useState(!1), [p, T] = i.useState(!1), [E, S] = i.useState(!1), [C, f] = i.useState(!1), N = o || c || _ || g || p || C, I = i.useCallback(async e => {
-        if (!N) {
+    } = e ?? {}, [o, d] = i.useState(!1), [c, u] = i.useState(!1), [_, m] = i.useState(!1), [g, A] = i.useState(!1), [x, h] = i.useState(!1), [p, T] = i.useState(!1), [E, S] = i.useState(!1), [C, f] = i.useState(!1), b = o || c || _ || g || p || C, N = i.useCallback(async e => {
+        if (!b) {
             d(!0);
             try {
                 await (0, l.nt)(e, r.Ef.ACTIVE), n?.()
@@ -24,8 +24,8 @@ function o(e) {
                 d(!1)
             }
         }
-    }, [N, t, n]), b = i.useCallback(async e => {
-        if (!N) {
+    }, [b, t, n]), I = i.useCallback(async e => {
+        if (!b) {
             u(!0);
             try {
                 await (0, l.nt)(e, r.Ef.DECLINED), n?.()
@@ -36,8 +36,8 @@ function o(e) {
                 u(!1)
             }
         }
-    }, [N, t, n]), v = i.useCallback(async e => {
-        if (!N) {
+    }, [b, t, n]), v = i.useCallback(async e => {
+        if (!b) {
             m(!0);
             try {
                 await (0, l.nt)(e, r.Ef.INACTIVE), n?.()
@@ -48,8 +48,8 @@ function o(e) {
                 m(!1)
             }
         }
-    }, [N, t, n]), j = i.useCallback(async e => {
-        if (!N) {
+    }, [b, t, n]), j = i.useCallback(async e => {
+        if (!b) {
             A(!0);
             try {
                 await (0, l.e$)(e), n?.()
@@ -60,7 +60,7 @@ function o(e) {
                 A(!1)
             }
         }
-    }, [N, t, n]), y = i.useCallback(async () => {
+    }, [b, t, n]), y = i.useCallback(async () => {
         if (!x) {
             h(!0);
             try {
@@ -72,7 +72,7 @@ function o(e) {
                 h(!1)
             }
         }
-    }, [x, t, n]), O = i.useCallback(async e => {
+    }, [x, t, n]), R = i.useCallback(async e => {
         if (!E) {
             S(!0);
             try {
@@ -86,11 +86,11 @@ function o(e) {
         }
     }, [E, t, n]);
     return {
-        acceptLinkRequest: I,
-        declineLinkRequest: b,
+        acceptLinkRequest: N,
+        declineLinkRequest: I,
         disconnectLinkRequest: v,
         cancelLinkRequest: j,
-        selectTeenUser: O,
+        selectTeenUser: R,
         getLinkCode: y,
         requestLink: i.useCallback(async (e, i) => {
             if (!p) {

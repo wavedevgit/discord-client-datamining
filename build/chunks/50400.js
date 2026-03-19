@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(497766),
-    r = n(837381),
-    a = n(311907),
+    a = n(837381),
+    r = n(311907),
     o = n(397927),
     c = n(442433),
     d = n(313961),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(47167),
     A = n(598104),
     m = n(616356),
-    p = n(383501),
-    g = n(222823),
+    g = n(383501),
+    p = n(222823),
     _ = n(309010),
     f = n(287809),
     x = n(607567),
@@ -27,7 +27,7 @@ var i = n(627968),
     b = n(65611),
     S = n(652215),
     T = n(985018),
-    v = n(308294);
+    v = n(2724);
 let y = {
     friction: 28,
     tension: 600
@@ -137,7 +137,7 @@ class R extends s.PureComponent {
         null != s ? (0, c.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("38389")]).then(n.bind(n, 385913));
+            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("49783")]).then(n.bind(n, 385913));
             return n => (0, i.jsx)(e, {
                 ...n,
                 channel: t,
@@ -160,16 +160,16 @@ class R extends s.PureComponent {
             channelName: t,
             selected: n,
             badge: s,
-            audio: r,
-            video: a,
+            audio: a,
+            video: r,
             stream: c,
             isCurrentUserInThisDMCall: d,
             unread: u,
             treeItemProps: h
         } = this.props, {
             hovered: m,
-            animating: p
-        } = this.state, g = e.isMultiUserDM() && null == e.icon, _ = () => (0, i.jsx)(o.jlP, {
+            animating: g
+        } = this.state, p = e.isMultiUserDM() && null == e.icon, _ = () => (0, i.jsx)(o.jlP, {
             to: S.BVt.CHANNEL(S.ME, e.id),
             onMouseEnter: () => this.setState({
                 hovered: !0
@@ -183,9 +183,9 @@ class R extends s.PureComponent {
                 name: t
             }) : "",
             onContextMenu: this.handleContextMenu,
-            icon: g ? void 0 : this.getChannelIcon(),
-            backgroundStyle: g ? "on-hover" : "always",
-            children: g ? (0, i.jsx)(A.A, {
+            icon: p ? void 0 : this.getChannelIcon(),
+            backgroundStyle: p ? "on-hover" : "always",
+            children: p ? (0, i.jsx)(A.A, {
                 channel: e,
                 size: o._3J.SIZE_40,
                 facepileSizeOverride: o._3J.SIZE_32,
@@ -197,9 +197,9 @@ class R extends s.PureComponent {
             style: this.getAnimatedStyle(),
             children: (0, i.jsxs)(N.c, {
                 children: [(0, i.jsx)(E.A, {
-                    hovered: !p && m,
-                    selected: !p && n,
-                    unread: !p && u,
+                    hovered: !g && m,
+                    selected: !g && n,
+                    unread: !g && u,
                     className: v.I
                 }), (0, i.jsx)(I.A, {
                     channel: e,
@@ -208,8 +208,8 @@ class R extends s.PureComponent {
                         selected: !1,
                         lowerBadge: s > 0 ? (0, b.wN)(s, void 0, !0) : null,
                         upperBadge: (0, b.oi)({
-                            audio: r,
-                            video: a,
+                            audio: a,
+                            video: r,
                             screenshare: c,
                             isCurrentUserConnected: d
                         }),
@@ -226,13 +226,13 @@ class R extends s.PureComponent {
 let O = s.forwardRef(function(e, t) {
     let n = e.channel.id,
         s = (0, h.Ay)(e.channel),
-        l = (0, r.Vd)(n, 2),
-        c = (0, a.bG)([p.A], () => p.A.getChannelId(), []),
-        u = (0, a.bG)([d.A], () => d.A.getMode(n), [n]),
-        A = (0, a.bG)([m.A], () => m.A.getAllApplicationStreamsForChannel(n).length > 0),
-        f = (0, a.bG)([x.Ay], () => x.Ay.getVoiceStatesForChannel(e.channel).length > 0, [e.channel]),
-        C = (0, a.bG)([_.A], () => _.A.getChannelId(), []),
-        E = (0, a.bG)([g.Ay], () => g.Ay.getMentionCount(n), [n]),
+        l = (0, a.Vd)(n, 2),
+        c = (0, r.bG)([g.A], () => g.A.getChannelId(), []),
+        u = (0, r.bG)([d.A], () => d.A.getMode(n), [n]),
+        A = (0, r.bG)([m.A], () => m.A.getAllApplicationStreamsForChannel(n).length > 0),
+        f = (0, r.bG)([x.Ay], () => x.Ay.getVoiceStatesForChannel(e.channel).length > 0, [e.channel]),
+        C = (0, r.bG)([_.A], () => _.A.getChannelId(), []),
+        E = (0, r.bG)([p.Ay], () => p.Ay.getMentionCount(n), [n]),
         I = c === n,
         N = !1,
         b = !1;

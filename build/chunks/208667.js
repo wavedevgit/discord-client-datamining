@@ -6,13 +6,13 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(110259),
-    r = n(837381),
-    a = n(397927),
+    a = n(837381),
+    r = n(397927),
     o = n(928039),
     c = n(139286),
     d = n(688895),
     u = n(456425),
-    h = n(1347);
+    h = n(18373);
 
 function A(e) {
     let {
@@ -20,7 +20,7 @@ function A(e) {
         items: n,
         loading: A,
         loadMore: m
-    } = e, p = s.useRef(null), g = (0, o.A)("for-you", p);
+    } = e, g = s.useRef(null), p = (0, o.A)("for-you", g);
     (0, c.A)({
         type: l.ImpressionTypes.VIEW,
         name: l.ImpressionNames.NOTIFICATION_CENTER_LANDING,
@@ -31,33 +31,33 @@ function A(e) {
         disableTrack: !t
     }, [t]);
     let _ = () => {
-        let e = p.current?.getScrollerState();
+        let e = g.current?.getScrollerState();
         null == e || e.scrollHeight - e.scrollTop - e.offsetHeight < 1500 && m()
     };
-    return t ? 0 === n.length ? (0, i.jsx)(d.H, {}) : (0, i.jsx)(r.hD, {
-        navigator: g,
-        children: (0, i.jsx)(r.PR, {
+    return t ? 0 === n.length ? (0, i.jsx)(d.H, {}) : (0, i.jsx)(a.hD, {
+        navigator: p,
+        children: (0, i.jsx)(a.PR, {
             children: e => {
                 let {
                     ref: t,
                     ...s
                 } = e;
-                return (0, i.jsxs)(a.T7Y, {
+                return (0, i.jsxs)(r.T7Y, {
                     className: h.kL,
                     ref: e => {
-                        p.current = e, t.current = e?.getScrollerNode() ?? null
+                        g.current = e, t.current = e?.getScrollerNode() ?? null
                     },
                     ...s,
                     onScroll: _,
                     children: [(0, i.jsx)(u.$, {
                         items: n
-                    }), A ? (0, i.jsx)(a.y$y, {
+                    }), A ? (0, i.jsx)(r.y$y, {
                         className: h.u1
                     }) : null]
                 })
             }
         })
-    }) : (0, i.jsx)(a.y$y, {
+    }) : (0, i.jsx)(r.y$y, {
         className: h.k$
     })
 }

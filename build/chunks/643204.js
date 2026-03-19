@@ -1,15 +1,15 @@
 /** chunk id: 643204 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => Y,
-    ix: () => K,
-    tO: () => z
+    Ay: () => X,
+    ix: () => Y,
+    tO: () => J
 }), n(321073), n(938796);
 var l = n(627968),
     s = n(64700),
     i = n(503698),
-    a = n.n(i),
-    r = n(607399),
+    r = n.n(i),
+    a = n(607399),
     o = n(665260),
     u = n(311907),
     c = n(990078),
@@ -17,42 +17,44 @@ var l = n(627968),
     m = n(793574),
     h = n(688810),
     g = n(429913),
-    p = n(593643),
-    A = n(802341),
-    x = n(634202),
-    f = n(870136),
-    v = n(200759),
-    j = n(919395),
-    N = n(9842),
-    C = n(657048),
-    b = n(93956),
-    E = n(352413),
-    I = n(854627),
-    y = n(342296),
-    T = n(964404),
-    R = n(71393),
-    _ = n(576705),
-    S = n(287809),
-    M = n(486020),
+    A = n(593643),
+    f = n(802341),
+    p = n(634202),
+    x = n(17447),
+    v = n(908247),
+    C = n(870136),
+    N = n(200759),
+    b = n(919395),
+    T = n(9842),
+    E = n(657048),
+    j = n(93956),
+    I = n(352413),
+    _ = n(854627),
+    S = n(342296),
+    R = n(964404),
+    y = n(71393),
+    M = n(576705),
+    O = n(287809),
+    w = n(486020),
     k = n(203982),
-    O = n(763754),
-    w = n(635071),
-    G = n(860227),
-    D = n(449859),
-    P = n(855344),
-    L = n(812299),
-    U = n(109054),
-    $ = n(652215),
-    H = n(985018),
-    V = n(679740);
+    L = n(763754),
+    G = n(635071),
+    D = n(860227),
+    P = n(449859),
+    U = n(855344),
+    H = n(812299),
+    V = n(109054),
+    F = n(652215),
+    $ = n(985018),
+    B = n(222590);
 
-function B(e) {
+function z(e) {
     let {
         avatarSrc: t,
         avatarDecorationSrc: n,
         compact: s,
         onClick: i,
-        onContextMenu: r,
+        onContextMenu: a,
         onMouseDown: o,
         onMouseEnter: u,
         onMouseLeave: c,
@@ -65,131 +67,136 @@ function B(e) {
         children: [(0, l.jsx)("img", {
             ref: g,
             onClick: i,
-            onContextMenu: r,
+            onContextMenu: a,
             onKeyDown: d,
             onMouseDown: o,
             onMouseEnter: u,
             onMouseLeave: c,
             src: t,
             "aria-hidden": !0,
-            className: a()(h, V.my, {
-                [V.oE]: s,
-                [V.vk]: null != i,
-                [V.uU]: m
+            className: r()(h, B.my, {
+                [B.oE]: s,
+                [B.vk]: null != i,
+                [B.uU]: m
             }),
             alt: " "
         }), null == n || s ? null : (0, l.jsx)("img", {
-            className: V.M,
+            className: B.M,
             src: n,
             alt: " ",
             "aria-hidden": !0
         })]
     })
 }
-let F = s.memo(function(e) {
+let K = s.memo(function(e) {
     let {
         message: t,
         author: n,
         channel: i,
-        guildId: a,
-        compact: r = !1,
+        guildId: r,
+        compact: a = !1,
         roleIconProps: o,
         showUsernamePopout: c,
         renderPopout: m,
         onClickUsername: h,
         onContextMenu: g,
-        displayCompactAvatars: f = !1,
-        onPopoutRequestClose: j,
-        preview: N,
-        subscribeToGroupId: b,
-        hideGuildTag: E
-    } = e, I = (0, O.Ay)(t, n), y = s.useMemo(() => (0, L.y)({
+        displayCompactAvatars: C = !1,
+        onPopoutRequestClose: b,
+        preview: T,
+        subscribeToGroupId: j,
+        hideGuildTag: I
+    } = e, _ = (0, L.Ay)(t, n), S = s.useMemo(() => (0, H.y)({
         message: t,
         channel: i,
         user: t?.author,
-        compact: r,
+        compact: a,
         isRepliedMessage: !1
-    }), [t, i, r]), T = s.useRef(null), _ = (0, u.bG)([R.A], () => R.A.getGuild(a)), S = s.useMemo(() => J(r, f, o, _), [r, f, o, _]), M = s.useMemo(() => null == o ? null : 1 === S && null != _ ? (0, l.jsx)(d.YNO, {
-        targetElementRef: T,
+    }), [t, i, a]), R = s.useRef(null), M = (0, u.bG)([y.A], () => y.A.getGuild(r)), O = s.useMemo(() => W(a, C, o, M), [a, C, o, M]), w = s.useMemo(() => null == o ? null : 1 === O && null != M ? (0, l.jsx)(d.YNO, {
+        targetElementRef: R,
         animation: d.YNO.Animation.TRANSLATE,
         align: "center",
         autoInvert: !0,
         nudgeAlignIntoViewport: !0,
         position: "right",
-        renderPopout: () => (0, l.jsx)(P.A, {
+        renderPopout: () => (0, l.jsx)(U.A, {
             roleIcon: o,
-            guild: _
+            guild: M
         }),
         clickTrap: !0,
         children: e => {
             let {
                 onClick: t
             } = e;
-            return (0, l.jsx)(C.A, {
-                ref: T,
+            return (0, l.jsx)(E.A, {
+                ref: R,
                 ...o,
-                className: V.UT,
+                className: B.UT,
                 onClick: t
             })
         }
-    }, "role-icon-children") : 2 === S ? (0, l.jsx)(C.A, {
+    }, "role-icon-children") : 2 === O ? (0, l.jsx)(E.A, {
         ...o,
-        className: V.UT
-    }, "role-icon-children") : null, [S, o, _]), {
+        className: B.UT
+    }, "role-icon-children") : null, [O, o, M]), {
         enabled: k
-    } = (0, p.D8)({
-        guildId: _?.id,
+    } = (0, A.D8)({
+        guildId: M?.id,
         location: "MessageHeader"
-    }), G = s.useMemo(() => {
+    }), D = x.L.useConfig({
+        location: "message_header"
+    }).enabled, P = s.useMemo(() => {
         let e = [];
-        return null != M && e.push(M), null != _ && (e.push((0, l.jsx)(v.A, {
-            guild: _,
+        return null != w && e.push(w), null != M && (e.push((0, l.jsx)(N.A, {
+            guild: M,
             message: t
-        }, "new-member")), k && e.push((0, l.jsx)(A.A, {
-            guild: _,
+        }, "new-member")), k && e.push((0, l.jsx)(f.A, {
+            guild: M,
             message: t
-        }, "voice-channel"))), null != i && null != _ && e.push((0, l.jsx)(x.A, {
-            guild: _,
+        }, "voice-channel"))), null != i && null != M && e.push((0, l.jsx)(p.A, {
+            guild: M,
             channel: i,
             userId: t.author.id,
             messageId: t.id
-        }, "connections")), e
-    }, [t, i, M, _, k]);
-    return null == I ? null : (0, l.jsxs)(l.Fragment, {
-        children: [(0, l.jsx)(w.A, {
+        }, "connections")), D && null != i && e.push((0, l.jsx)(v.A, {
+            channelId: i.id,
+            messageId: t.id
+        }, "moderation-label")), e
+    }, [t, i, w, M, k, D]);
+    return null == _ ? null : (0, l.jsxs)(l.Fragment, {
+        children: [(0, l.jsx)(G.A, {
             message: t,
             channel: i,
-            author: I,
-            compact: r,
+            author: _,
+            compact: a,
             roleIcon: o,
             showPopout: c,
             renderPopout: m,
             onClick: h,
             onContextMenu: g,
-            onPopoutRequestClose: j,
+            onPopoutRequestClose: b,
             decorations: {
-                [w.w.SYSTEM_TAG]: y,
-                [w.w.BADGES]: G
+                [G.w.SYSTEM_TAG]: S,
+                [G.w.BADGES]: P
             },
-            previewGuildId: a,
-            preview: N,
-            subscribeToGroupId: b,
-            hideGuildTag: E
-        }), r && (0, l.jsxs)(l.Fragment, {
+            previewGuildId: r,
+            preview: T,
+            subscribeToGroupId: j,
+            hideGuildTag: I
+        }), a && (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)("i", {
-                className: V.me,
+                className: B.me,
                 children: ":"
             }), " "]
         })]
     })
 });
 
-function z(e, t, n) {
+function J(e, t, n) {
     let {
         message: s,
         channel: i,
-        author: a,
-        compact: r = !1,
+        author: r,
+        compact: a = !1,
         onContextMenu: o,
         showUsernamePopout: u,
         roleIcon: c,
@@ -197,11 +204,11 @@ function z(e, t, n) {
         onPopoutRequestClose: m
     } = e;
     return (0, l.jsxs)(l.Fragment, {
-        children: [(0, l.jsx)(w.A, {
+        children: [(0, l.jsx)(G.A, {
             message: s,
             channel: i,
-            author: a,
-            compact: r,
+            author: r,
+            compact: a,
             roleIcon: c,
             showPopout: u,
             renderPopout: t,
@@ -210,230 +217,230 @@ function z(e, t, n) {
             onPopoutRequestClose: m,
             decorations: n,
             preview: !0
-        }), r && (0, l.jsxs)(l.Fragment, {
+        }), a && (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)("i", {
-                className: V.me,
+                className: B.me,
                 children: ":"
             }), " "]
         })]
     })
 }
 
-function K(e) {
+function Y(e) {
     let {
         message: t,
         avatar: n,
         username: s,
         usernameSpanId: i,
-        usernameClassName: r,
+        usernameClassName: a,
         compact: u,
         showTimestamp: c,
         showTimestampOnHover: m,
         ariaLabelledBy: h,
-        ariaDescribedBy: p,
-        className: A,
-        messageClassname: x,
-        badges: f
-    } = e, v = (0, o.Lt)(t.flags, $.pr7.SENT_BY_SOCIAL_LAYER_INTEGRATION) ? t.applicationId : null, j = (0, g.h)(v);
+        ariaDescribedBy: A,
+        className: f,
+        messageClassname: p,
+        badges: x
+    } = e, v = (0, o.Lt)(t.flags, F.pr7.SENT_BY_SOCIAL_LAYER_INTEGRATION) ? t.applicationId : null, C = (0, g.h)(v);
     return (0, l.jsxs)(l.Fragment, {
         children: [!u && n, (0, l.jsxs)(d.H, {
-            className: a()(V.wx, A),
-            "aria-describedby": p,
+            className: r()(B.wx, f),
+            "aria-describedby": A,
             "aria-labelledby": h,
-            children: [c && u && (0, l.jsx)(D.A, {
-                id: (0, G.xl)(t),
+            children: [c && u && (0, l.jsx)(P.A, {
+                id: (0, D.xl)(t),
                 compact: !0,
                 timestamp: t.timestamp,
                 isVisibleOnlyOnHover: m,
-                className: x,
+                className: p,
                 isInline: !1,
-                application: j
+                application: C
             }), u && n, (0, l.jsx)("span", {
                 id: i,
-                className: r,
+                className: a,
                 children: s
-            }), c && !u && (0, l.jsx)(D.A, {
-                id: (0, G.xl)(t),
+            }), c && !u && (0, l.jsx)(P.A, {
+                id: (0, D.xl)(t),
                 timestamp: t.timestamp,
-                className: x,
-                application: j
-            }), null != f && f.length > 0 ? (0, l.jsx)("div", {
-                className: V.cV,
-                children: f
+                className: p,
+                application: C
+            }), null != x && x.length > 0 ? (0, l.jsx)("div", {
+                className: B.cV,
+                children: x
             }) : null]
         })]
     })
 }
 
-function J(e, t, n, l) {
+function W(e, t, n, l) {
     return (!e || t) && null != n && null != l ? 1 : (!e || t) && null != n ? 2 : 0
 }
-let Y = s.memo(function(e) {
+let X = s.memo(function(e) {
     let {
         message: t,
         repliedMessage: n,
         compact: i = !1,
         renderPopout: g,
-        showTimestampOnHover: p,
-        roleIcon: A,
-        subscribeToGroupId: x,
-        hideTimestamp: v,
-        hideGuildTag: C,
-        className: O,
-        channel: w,
-        preview: D
-    } = e, P = s.useMemo(() => null != g ? e => g(e, t) : void 0, [g, t]), [, z] = (0, f.Ay)(t.author.id, e.guildId), Y = (0, u.bG)([_.A, R.A], () => {
-        let n = R.A.getGuild(e.guildId);
-        return null != t.author && null != n && _.A.canManageUser($.xBc.MODERATE_MEMBERS, t.author, n)
-    }, [t.author, e.guildId]), W = z && Y, X = function(e) {
+        showTimestampOnHover: A,
+        roleIcon: f,
+        subscribeToGroupId: p,
+        hideTimestamp: x,
+        hideGuildTag: v,
+        className: N,
+        channel: E,
+        preview: L
+    } = e, G = s.useMemo(() => null != g ? e => g(e, t) : void 0, [g, t]), [, P] = (0, C.Ay)(t.author.id, e.guildId), U = (0, u.bG)([M.A, y.A], () => {
+        let n = y.A.getGuild(e.guildId);
+        return null != t.author && null != n && M.A.canManageUser(F.xBc.MODERATE_MEMBERS, t.author, n)
+    }, [t.author, e.guildId]), J = P && U, X = function(e) {
         let {
             props: t,
             guildId: n,
             handleRenderPopout: i,
-            showCommunicationDisabledStyles: a = !1,
+            showCommunicationDisabledStyles: r = !1,
             className: o
         } = e, {
             message: c,
             author: d,
             compact: g = !1,
-            subscribeToGroupId: p,
-            animate: A = !0,
-            onContextMenu: x,
-            onClickAvatar: f,
+            subscribeToGroupId: A,
+            animate: f = !0,
+            onContextMenu: p,
+            onClickAvatar: x,
             onPopoutRequestClose: v,
-            showAvatarPopout: N
-        } = t, C = s.useRef(null), [b, R] = s.useState(!1), {
-            analyticsLocations: _
-        } = (0, h.Ay)(m.A.AVATAR), O = (0, u.bG)([S.default], () => S.default.getCurrentUser()), w = (0, u.bG)([T.Ay], () => t.displayCompactAvatars ?? T.Ay.displayCompactAvatars), G = (0, U.A)(c), D = g ? 32 : 80, {
-            pendingAvatarDecoration: P
-        } = (0, E.A)({
+            showAvatarPopout: C
+        } = t, N = s.useRef(null), [T, E] = s.useState(!1), {
+            analyticsLocations: j
+        } = (0, h.Ay)(m.A.AVATAR), y = (0, u.bG)([O.default], () => O.default.getCurrentUser()), M = (0, u.bG)([R.Ay], () => t.displayCompactAvatars ?? R.Ay.displayCompactAvatars), L = (0, V.A)(c), G = g ? 32 : 80, {
+            pendingAvatarDecoration: D
+        } = (0, I.A)({
             guildId: n
-        }), L = (0, j.lw)({
-            pendingValue: c.author.id === O?.id ? P : void 0,
+        }), P = (0, b.lw)({
+            pendingValue: c.author.id === y?.id ? D : void 0,
             userValue: c.author?.avatarDecoration,
             guildValue: d?.guildMemberAvatarDecoration,
             guildId: n
         }), {
-            avatarSrc: H,
-            avatarDecorationSrc: V,
-            eventHandlers: F
-        } = (0, I.A)({
+            avatarSrc: U,
+            avatarDecorationSrc: H,
+            eventHandlers: $
+        } = (0, _.A)({
             userId: c.author.id,
             guildId: n,
-            size: D,
-            animateOnHover: null != p ? !b : !A,
-            avatarDecorationOverride: L,
+            size: G,
+            animateOnHover: null != A ? !T : !f,
+            avatarDecorationOverride: P,
             showPending: !0
-        }), z = c.isInteractionPlaceholder(), K = s.useMemo(() => z && null == c.author.avatar && null == d.guildMemberAvatar && c.application?.icon != null ? M.Ay.getApplicationIconURL({
+        }), B = c.isInteractionPlaceholder(), K = s.useMemo(() => B && null == c.author.avatar && null == d.guildMemberAvatar && c.application?.icon != null ? w.Ay.getApplicationIconURL({
             id: c.application.id,
             icon: c.application.icon,
-            size: D,
+            size: G,
             fallbackAvatar: !1
-        }) ?? H : null != c.webhookId && null == d.guildMemberAvatar ? M.Ay.getUserAvatarURL({
+        }) ?? U : null != c.webhookId && null == d.guildMemberAvatar ? w.Ay.getUserAvatarURL({
             avatar: c.author.avatar,
             id: c.author.id,
             discriminator: c.author.discriminator,
             bot: !0
-        }, !1, D) : H, [z, c.author.avatar, c.author.id, c.author.discriminator, c.application?.icon, c.application?.id, c.webhookId, H, D, d.guildMemberAvatar]);
+        }, !1, G) : U, [B, c.author.avatar, c.author.id, c.author.discriminator, c.application?.icon, c.application?.id, c.webhookId, U, G, d.guildMemberAvatar]);
         if (s.useEffect(() => {
-                if (null != p) return k._.subscribeKeyed($.zOV.ANIMATE_CHAT_AVATAR, `${p}:${c.author.id}`, R), () => void k._.unsubscribeKeyed($.zOV.ANIMATE_CHAT_AVATAR, `${p}:${c.author.id}`, R)
-            }, [c.author.id, p]), !g || w) return null != i && null != N ? (0, l.jsx)(h.f5, {
-            value: _,
-            children: (0, l.jsx)(y.A, {
-                targetElementRef: C,
+                if (null != A) return k._.subscribeKeyed(F.zOV.ANIMATE_CHAT_AVATAR, `${A}:${c.author.id}`, E), () => void k._.unsubscribeKeyed(F.zOV.ANIMATE_CHAT_AVATAR, `${A}:${c.author.id}`, E)
+            }, [c.author.id, A]), !g || M) return null != i && null != C ? (0, l.jsx)(h.f5, {
+            value: j,
+            children: (0, l.jsx)(S.A, {
+                targetElementRef: N,
                 user: c.author,
                 guildId: n,
                 channelId: c.channel_id,
                 messageId: c.id,
-                shouldShow: N,
-                shouldPreload: G,
+                shouldShow: C,
+                shouldPreload: L,
                 renderPopout: i,
-                position: r.Fr ? "window_center" : "right",
+                position: a.Fr ? "window_center" : "right",
                 avatarUrl: K,
                 onRequestClose: v,
-                clickTrap: N,
-                children: e => B({
-                    ...F,
+                clickTrap: C,
+                children: e => z({
+                    ...$,
                     avatarSrc: K,
-                    avatarDecorationSrc: V,
+                    avatarDecorationSrc: H,
                     compact: g,
-                    onClick: f,
-                    onContextMenu: x,
+                    onClick: x,
+                    onContextMenu: p,
                     onMouseDown: e.onMouseDown,
                     onKeyDown: e.onKeyDown,
-                    showCommunicationDisabledStyles: a,
+                    showCommunicationDisabledStyles: r,
                     className: o,
-                    avatarImgRef: C
+                    avatarImgRef: N
                 })
             })
         }) : (0, l.jsx)(h.f5, {
-            value: _,
-            children: B({
-                ...F,
+            value: j,
+            children: z({
+                ...$,
                 avatarSrc: K,
-                avatarDecorationSrc: V,
+                avatarDecorationSrc: H,
                 compact: g,
-                onClick: f,
-                onContextMenu: x,
+                onClick: x,
+                onContextMenu: p,
                 onMouseDown: void 0,
                 onKeyDown: void 0,
-                showCommunicationDisabledStyles: a,
+                showCommunicationDisabledStyles: r,
                 className: o
             })
         })
     }({
         props: e,
         guildId: e.guildId,
-        handleRenderPopout: P,
-        showCommunicationDisabledStyles: W
-    }), q = (0, u.bG)([T.Ay], () => e.displayCompactAvatars ?? T.Ay.displayCompactAvatars), Q = s.useMemo(() => (0, L.k)({
+        handleRenderPopout: G,
+        showCommunicationDisabledStyles: J
+    }), q = (0, u.bG)([R.Ay], () => e.displayCompactAvatars ?? R.Ay.displayCompactAvatars), Q = s.useMemo(() => (0, H.k)({
         message: t,
-        channel: w,
+        channel: E,
         user: t?.author,
         compact: i,
         isRepliedMessage: !1
-    }), [t, w, i]), Z = (0, u.bG)([R.A], () => J(i, q, A, R.A.getGuild(e.guildId)), [i, q, A, e.guildId]), ee = s.useMemo(() => {
+    }), [t, E, i]), Z = (0, u.bG)([y.A], () => W(i, q, f, y.A.getGuild(e.guildId)), [i, q, f, e.guildId]), ee = s.useMemo(() => {
         let e = [];
-        return (0, o.Lt)(t.flags, $.pr7.SUPPRESS_NOTIFICATIONS) && e.push((0, l.jsx)(b.A, {}, "suppress-notifications")), e
-    }, [t]), et = (0, G.d$)(t, x), en = (0, G.xl)(t), el = v ? `${et}` : `${et} ${en}`, es = n?.state === N.a.LOADED ? (0, G.nS)(t) : void 0;
-    return (0, l.jsx)(K, {
+        return (0, o.Lt)(t.flags, F.pr7.SUPPRESS_NOTIFICATIONS) && e.push((0, l.jsx)(j.A, {}, "suppress-notifications")), e
+    }, [t]), et = (0, D.d$)(t, p), en = (0, D.xl)(t), el = x ? `${et}` : `${et} ${en}`, es = n?.state === T.a.LOADED ? (0, D.nS)(t) : void 0;
+    return (0, l.jsx)(Y, {
         message: t,
         avatar: X,
         username: (0, l.jsxs)(l.Fragment, {
-            children: [W && (0, l.jsx)(c.m, {
-                text: H.intl.string(H.t["AeYyL+"]),
+            children: [J && (0, l.jsx)(c.m, {
+                text: $.intl.string($.t["AeYyL+"]),
                 children: (0, l.jsxs)(l.Fragment, {
                     children: [(0, l.jsx)(d.gQi, {
                         size: "xxs",
                         color: "currentColor",
-                        className: i ? V.EI : V.bu
+                        className: i ? B.EI : B.bu
                     }), (0, l.jsx)(d.AC4, {
-                        children: H.intl.string(H.t.AmHag5)
+                        children: $.intl.string($.t.AmHag5)
                     })]
                 })
-            }), (0, l.jsx)(F, {
+            }), (0, l.jsx)(K, {
                 ...e,
                 message: t,
-                channel: w,
+                channel: E,
                 compact: i,
-                roleIconProps: A,
-                renderPopout: P,
-                preview: D,
-                subscribeToGroupId: x,
-                hideGuildTag: C
+                roleIconProps: f,
+                renderPopout: G,
+                preview: L,
+                subscribeToGroupId: p,
+                hideGuildTag: v
             })]
         }),
-        usernameSpanId: (0, G.d$)(t, x),
-        usernameClassName: a()(V.TK, {
-            [V.yF]: 0 !== Z,
-            [V.hB]: null != Q || ee.length > 0
+        usernameSpanId: (0, D.d$)(t, p),
+        usernameClassName: r()(B.TK, {
+            [B.yF]: 0 !== Z,
+            [B.hB]: null != Q || ee.length > 0
         }),
         compact: i,
-        showTimestamp: !0 !== v,
-        showTimestampOnHover: p,
+        showTimestamp: !0 !== x,
+        showTimestampOnHover: A,
         ariaLabelledBy: el,
         ariaDescribedBy: es,
-        className: O,
+        className: N,
         badges: ee
     })
 })

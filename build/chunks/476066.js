@@ -22,7 +22,7 @@ var r = n(627968),
     S = n(267956),
     A = n(662903),
     C = n(838541),
-    _ = n(681636);
+    _ = n(221190);
 let b = {
         tension: 250,
         friction: 5,
@@ -90,7 +90,7 @@ let b = {
         (0, d.u5)(() => {
             eY.current && (eY.current = !1)
         });
-        let e4 = l.useCallback(function(e) {
+        let e9 = l.useCallback(function(e) {
             let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
             if (ea(e), B?.(e, t), null != eK.current) switch (e) {
                 case u.Q6.PLAYING:
@@ -109,14 +109,14 @@ let b = {
                 n = en && !et;
             if ((e || t || n) && null != eK.current && es === u.Q6.PLAYING) {
                 let n = e || t ? "visibility" : "focus";
-                ez(n), e4(u.Q6.PAUSED, n)
+                ez(n), e9(u.Q6.PAUSED, n)
             }
-        }, [i, et, en, er, el, es, e4]), l.useEffect(() => {
+        }, [i, et, en, er, el, es, e9]), l.useEffect(() => {
             en && W?.(et, es)
         }, [et, en, es, W]), l.useEffect(() => {
             el && q?.(er, es)
         }, [er, el, es, q]);
-        let [e9, e8] = l.useState(!1), e3 = l.useRef(null), e5 = l.useRef(0);
+        let [e4, e8] = l.useState(!1), e3 = l.useRef(null), e5 = l.useRef(0);
         l.useLayoutEffect(() => {
             e5.current = performance.now()
         }, []);
@@ -137,18 +137,18 @@ let b = {
                 null != e3.current && clearTimeout(e3.current)
             }
         }, [es, te]);
-        let tn = !e9 && (ec || eo || es === u.Q6.ENDED),
+        let tn = !e4 && (ec || eo || es === u.Q6.ENDED),
             tr = l.useCallback(() => {
                 let e = (0, f.qf)(eK.current?.parentNode, eK.current);
                 null == e || (0, f._U)(e) || (e.removeEventListener(f.Wb, tr), eF(!1), F?.(!1), e2(u.oA.MD))
             }, [F]),
             tl = () => {
-                null == eK.current || (ts(Math.max(eK.current.currentTime - 10, 0)), es === u.Q6.ENDED && e4(u.Q6.PAUSED, "seek"))
+                null == eK.current || (ts(Math.max(eK.current.currentTime - 10, 0)), es === u.Q6.ENDED && e9(u.Q6.PAUSED, "seek"))
             },
             ti = () => {
                 if (null == eK.current || P) return;
                 let e = Math.min(eK.current.currentTime + 10, e1);
-                ts(e), es !== u.Q6.ENDED && e >= eK.current.duration && e4(u.Q6.ENDED, "seek")
+                ts(e), es !== u.Q6.ENDED && e >= eK.current.duration && e9(u.Q6.ENDED, "seek")
             };
         l.useEffect(() => {
             let e = eK.current;
@@ -166,13 +166,13 @@ let b = {
             ta = () => {
                 if (null != eK.current) switch (es) {
                     case u.Q6.ENDED:
-                        ts(0), e4(u.Q6.PLAYING, "user");
+                        ts(0), e9(u.Q6.PLAYING, "user");
                         break;
                     case u.Q6.PLAYING:
-                        ez("user"), e4(u.Q6.PAUSED, "user");
+                        ez("user"), e9(u.Q6.PAUSED, "user");
                         break;
                     default:
-                        e4(u.Q6.PLAYING, "user")
+                        e9(u.Q6.PLAYING, "user")
                 }
             },
             to = e => {
@@ -203,7 +203,7 @@ let b = {
                     let e = null != eM.current ? performance.now() - eM.current : null;
                     z?.(e), eC(!1)
                 }
-                e4(u.Q6.PLAYING, "buffering_recovery")
+                e9(u.Q6.PLAYING, "buffering_recovery")
             }
         };
         l.useEffect(() => {
@@ -248,8 +248,8 @@ let b = {
         let tv = es === u.Q6.ENDED,
             tx = l.useCallback(function() {
                 let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "user";
-                null != eK.current && (ts(0), e4(u.Q6.PLAYING, e))
-            }, [ts, e4]);
+                null != eK.current && (ts(0), e9(u.Q6.PLAYING, e))
+            }, [ts, e9]);
         return (0, r.jsx)(c.DUT, {
             className: _.W6,
             "data-fullscreen": eB,
@@ -293,7 +293,7 @@ let b = {
                         null != eK.current && (I?.(eK.current.currentTime, eK.current.duration), eh(eK.current.currentTime / eK.current.duration * 100))
                     },
                     onEnded: e => {
-                        e4(u.Q6.ENDED, "playback_complete"), eC(!1), w?.()
+                        e9(u.Q6.ENDED, "playback_complete"), eC(!1), w?.()
                     },
                     onLoadedData: e => {
                         if (eg) {
@@ -384,7 +384,7 @@ let b = {
                 }), eP && es !== u.Q6.ENDED && null != U && (0, r.jsxs)(r.Fragment, {
                     children: [(0, r.jsx)(c.DUT, {
                         onClick: () => {
-                            es === u.Q6.PAUSED && e4(u.Q6.PLAYING, "user"), eQ(!1)
+                            es === u.Q6.PAUSED && e9(u.Q6.PLAYING, "user"), eQ(!1)
                         },
                         tabIndex: -1,
                         children: (0, r.jsx)("div", {
@@ -468,7 +468,7 @@ let b = {
                             isFullyVisible: tn && eN,
                             maxSeekableTime: tn && eN ? e1 : void 0,
                             onClick: e => {
-                                ts(e), es === u.Q6.ENDED && e4(u.Q6.PLAYING, "user")
+                                ts(e), es === u.Q6.ENDED && e9(u.Q6.PLAYING, "user")
                             },
                             onScrubBack: tl,
                             onScrubForward: ti,

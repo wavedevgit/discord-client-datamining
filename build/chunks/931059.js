@@ -32,7 +32,7 @@ let {
     "sv-SE": () => t.e("99413").then(t.t.bind(t, 176180, 19)),
     th: () => t.e("17171").then(t.t.bind(t, 373598, 19)),
     tr: () => t.e("4337").then(t.t.bind(t, 873192, 19)),
-    uk: () => t.e("47011").then(t.t.bind(t, 326433, 19)),
+    uk: () => t.e("47011").then(t.t.bind(t, 548814, 19)),
     vi: () => t.e("46536").then(t.t.bind(t, 562587, 19)),
     "zh-CN": () => t.e("28977").then(t.t.bind(t, 576328, 19)),
     "zh-TW": () => t.e("49137").then(t.t.bind(t, 983944, 19)),

@@ -20,7 +20,7 @@ var n = a(627968),
     h = a(53505),
     j = a(652215),
     v = a(985018),
-    N = a(386144);
+    N = a(988898);
 let w = [{
         getOs: () => v.intl.string(v.t.NK5ySJ),
         icon: N.Bt,

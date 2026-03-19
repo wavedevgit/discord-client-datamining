@@ -6,11 +6,11 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(990078),
-    r = n(397927),
-    a = n(976860),
+    a = n(397927),
+    r = n(976860),
     o = n(93055),
     c = n(652215),
-    d = n(665606),
+    d = n(525736),
     u = n(985018);
 let h = s.lazy(() => n.e("60497").then(n.bind(n, 908424)));
 
@@ -19,9 +19,9 @@ function A(e) {
         className: t
     } = e, {
         hasAccess: n
-    } = (0, o.TW)("FavoriteGuildHeaderActionButton"), A = s.useRef(null), m = n ? u.intl.string(d.default.G9fGlP) : u.intl.string(u.t.ojM1xJ), p = s.useCallback(() => {
-        (0, a.pX)(c.BVt.ME)
-    }, []), g = s.useCallback(e => {
+    } = (0, o.TW)("FavoriteGuildHeaderActionButton"), A = s.useRef(null), m = n ? u.intl.string(d.default.G9fGlP) : u.intl.string(u.t.ojM1xJ), g = s.useCallback(() => {
+        (0, r.pX)(c.BVt.ME)
+    }, []), p = s.useCallback(e => {
         let {
             closePopout: t
         } = e;
@@ -34,12 +34,12 @@ function A(e) {
             })
         })
     }, []);
-    return n ? (0, i.jsx)(r.YNO, {
+    return n ? (0, i.jsx)(a.YNO, {
         targetElementRef: A,
         position: "bottom",
         align: "left",
         spacing: 4,
-        renderPopout: g,
+        renderPopout: p,
         children: (e, n) => {
             let {
                 isShown: s
@@ -49,12 +49,12 @@ function A(e) {
                 position: "bottom",
                 asContainer: !0,
                 shouldShow: !s,
-                children: (0, i.jsx)(r.DUT, {
+                children: (0, i.jsx)(a.DUT, {
                     innerRef: A,
                     className: t,
                     "aria-label": m,
                     ...e,
-                    children: (0, i.jsx)(r.TIR, {
+                    children: (0, i.jsx)(a.TIR, {
                         color: "currentColor",
                         size: "refresh_sm"
                     })
@@ -65,11 +65,11 @@ function A(e) {
         text: m,
         position: "bottom",
         asContainer: !0,
-        children: (0, i.jsx)(r.DUT, {
+        children: (0, i.jsx)(a.DUT, {
             className: t,
             "aria-label": m,
-            onClick: p,
-            children: (0, i.jsx)(r.PGe, {
+            onClick: g,
+            children: (0, i.jsx)(a.PGe, {
                 color: "currentColor",
                 size: "refresh_sm"
             })

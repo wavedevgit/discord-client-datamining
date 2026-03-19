@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    r = n(182061),
-    a = n(886393),
+    a = n(182061),
+    r = n(886393),
     o = n(307623),
     c = n(660273),
     d = n(707792),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(271456),
     A = n(200273),
     m = n(565846),
-    p = n(57907),
-    g = n(375500),
+    g = n(57907),
+    p = n(375500),
     _ = n(707653),
     f = n(50268),
     x = n(584682),
@@ -32,20 +32,20 @@ var i = n(627968),
 function y(e) {
     let {
         channel: t
-    } = e, [n, r] = s.useState(!1), a = s.useRef(null);
+    } = e, [n, a] = s.useState(!1), r = s.useRef(null);
 
     function o() {
-        r(e => !e)
+        a(e => !e)
     }
     let c = v.intl.string(v.t["UKOtz+"]);
     return (0, i.jsx)(l.YNO, {
-        targetElementRef: a,
+        targetElementRef: r,
         shouldShow: n,
         animation: l.YNO.Animation.NONE,
         position: "bottom",
         align: "right",
         autoInvert: !1,
-        onRequestClose: () => r(!1),
+        onRequestClose: () => a(!1),
         renderPopout: function(e) {
             return (0, i.jsx)(j, {
                 ...e,
@@ -58,7 +58,7 @@ function y(e) {
             } = t;
             return (0, i.jsx)(C.Ay.Icon, {
                 ...e,
-                ref: a,
+                ref: r,
                 onClick: o,
                 tooltip: n ? null : c,
                 icon: l.jNK,
@@ -74,7 +74,7 @@ function j(e) {
         channel: t,
         closePopout: n,
         onSelect: s
-    } = e, x = (0, c.A)(t, "Sidebar Overflow"), C = (0, u.A)(t), N = (0, p.A)(t), b = (0, g.A)(t), S = (0, r.A)(t), y = (0, d.A)(t), j = (0, m.A)(t.id), R = (0, A.A)(t), O = (0, o.A)(t), L = (0, a.A)(t), M = (0, f.A)({
+    } = e, x = (0, c.A)(t, "Sidebar Overflow"), C = (0, u.A)(t), N = (0, g.A)(t), b = (0, p.A)(t), S = (0, a.A)(t), y = (0, d.A)(t), j = (0, m.A)(t.id), R = (0, A.A)(t), O = (0, o.A)(t), L = (0, r.A)(t), M = (0, f.A)({
         id: t.id,
         label: v.intl.string(v.t.DQ797g)
     }), D = (0, _.A)(t), G = (0, h.A)(t);

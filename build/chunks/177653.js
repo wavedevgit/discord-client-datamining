@@ -18,9 +18,9 @@ var s = n(503698),
     A = n(538511),
     x = n(788868),
     h = n(652215),
-    p = n(519412),
+    p = n(518582),
     T = n(985018),
-    E = n(802937);
+    E = n(599359);
 
 function S(e) {
     let t, {
@@ -47,7 +47,7 @@ function S(e) {
     } else t = T.intl.formatToPlainString(T.t.eNXZ5O, {
         planName: f
     });
-    let N = n.hasFreePremium() || null != r && r.isPurchasedExternally;
+    let b = n.hasFreePremium() || null != r && r.isPurchasedExternally;
     return (0, i.jsxs)("div", {
         className: E.Bh,
         children: [(0, i.jsx)("div", {
@@ -68,7 +68,7 @@ function S(e) {
                 children: T.intl.format(T.t.LzobT9, {
                     planName: f
                 })
-            }), !N && (0, i.jsx)(d.Heading, {
+            }), !b && (0, i.jsx)(d.Heading, {
                 className: E.gj,
                 variant: "heading-sm/semibold",
                 color: "text-default",

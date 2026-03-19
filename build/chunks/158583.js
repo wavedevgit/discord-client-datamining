@@ -1,6 +1,6 @@
 /** chunk id: 158583 params = (module,exports,require) **/
 n.d(t, {
-    T: () => I
+    T: () => N
 });
 var i = n(627968),
     s = n(64700),
@@ -20,11 +20,11 @@ var i = n(627968),
     p = n(93055),
     T = n(652215),
     E = n(788868),
-    S = n(665606),
+    S = n(525736),
     C = n(985018);
 let f = m.A.getArticleURL(T.MVz.FAVORITES_GUILD);
 
-function N() {
+function b() {
     let {
         analyticsLocations: e
     } = (0, o.Ay)(r.A.USER_SETTINGS_FAVORITES), t = s.useCallback(() => {
@@ -56,7 +56,7 @@ function N() {
     })
 }
 
-function I() {
+function N() {
     let e = (0, l.bG)([A.A], () => A.A.favoriteGuildEnabled),
         t = (0, l.bG)([_.default], () => {
             let e = _.default.getCurrentUser();
@@ -74,5 +74,5 @@ function I() {
         onChange: r,
         label: C.intl.string(S.default.OT1NK5),
         badge: "beta"
-    }) : (0, i.jsx)(N, {})
+    }) : (0, i.jsx)(b, {})
 }

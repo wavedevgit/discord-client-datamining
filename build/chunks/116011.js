@@ -17,7 +17,7 @@ var i = n(627968),
     g = n(699443),
     A = n(652215),
     x = n(985018),
-    h = n(342087),
+    h = n(929993),
     p = n(870378),
     T = n(8496);
 let E = {
@@ -92,8 +92,8 @@ let E = {
                 showPartnerImage: T = !1,
                 countdownBar: C
             } = e,
-            [f, N] = s.useState(m.code),
-            [I, b] = s.useState(!1),
+            [f, b] = s.useState(m.code),
+            [N, I] = s.useState(!1),
             v = (t = m.partnerId, n = (0, a.bG)([o.A], () => (0, l.Mwr)(o.A.theme)), null == (d = E[t]) ? null : n ? d.logos.dark : d.logos.light),
             j = null == f;
         return (0, i.jsxs)("div", {
@@ -111,13 +111,13 @@ let E = {
                         }), (0, i.jsx)(l.DZT, {
                             variant: "heading-sm/medium",
                             color: "text-subtle",
-                            children: I ? x.intl.format(x.t.i2EuFO, {
+                            children: N ? x.intl.format(x.t.i2EuFO, {
                                 helpdeskArticle: c.A.getArticleURL(A.MVz.RECURRING_PROMOTION)
                             }) : j ? x.intl.string(m.body) : x.intl.format(m.bodyWithExpiration, {
                                 date: m.endDate
                             })
                         })]
-                    }), j && (I ? (0, i.jsx)(l.$nd, {
+                    }), j && (N ? (0, i.jsx)(l.$nd, {
                         icon: l.EpV,
                         variant: "critical-secondary",
                         size: "sm",
@@ -133,9 +133,9 @@ let E = {
                                 promotionId: m.id,
                                 analyticsLocations: []
                             }).then(e => {
-                                N(e.code)
+                                b(e.code)
                             }).catch(e => {
-                                b(!0), u.A.captureException(e)
+                                I(!0), u.A.captureException(e)
                             })
                         }
                     }))]

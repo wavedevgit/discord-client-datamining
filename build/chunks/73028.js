@@ -1,40 +1,39 @@
 /** chunk id: 73028 params = (module,exports,require) **/
-"use strict";
-n.d(e, {
+n.d(t, {
     U: () => o
 });
 var i = n(627968);
 n(64700);
-var r = n(397927),
-    s = n(157559),
-    l = n(818348),
+var l = n(397927),
+    r = n(157559),
+    s = n(818348),
     a = n(985018);
-let o = (t, e) => {
-    let o = `group-dm-edit-modal-${t}`,
+let o = (e, t) => {
+    let o = `group-dm-edit-modal-${e}`,
         c = !1,
-        u = t => {
-            c = t
+        u = e => {
+            c = e
         },
         d = () => {
-            c ? s.A.show({
+            c ? r.A.show({
                 title: a.intl.string(a.t.pvRCSu),
                 body: a.intl.string(a.t.DRi46S),
                 confirmText: a.intl.string(a.t["6GQDFu"]),
                 confirmVariant: "critical-primary",
                 cancelText: a.intl.string(a.t.DmDzZB),
-                onConfirm: () => (0, r.OoC)(o),
-                onCancel: l.tE
-            }) : (0, r.OoC)(o)
+                onConfirm: () => (0, l.OoC)(o),
+                onCancel: s.tE
+            }) : (0, l.OoC)(o)
         };
-    (0, r.mMO)(async () => {
+    (0, l.mMO)(async () => {
         let {
-            default: r
+            default: l
         } = await n.e("42455").then(n.bind(n, 66442));
-        return n => (0, i.jsx)(r, {
+        return n => (0, i.jsx)(l, {
             closeOrShowDiscardChangesAlert: d,
             setHasPendingChanges: u,
-            channelId: t,
-            location: e,
+            channelId: e,
+            location: t,
             ...n
         })
     }, {

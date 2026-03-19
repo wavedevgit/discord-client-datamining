@@ -1,6 +1,6 @@
 /** chunk id: 404096 params = (module,exports,require) **/
 n.d(t, {
-    w: () => N
+    w: () => b
 });
 var i = n(421380),
     s = n(935649),
@@ -28,7 +28,7 @@ let f = (e, t) => {
             applied_to_existing_guilds: t
         })
     },
-    N = (0, r.zD)(A.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING, {
+    b = (0, r.zD)(A.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING, {
         useTitle: () => C.intl.string(C.t["3o2ojh"]),
         useSubtitle: () => (0, h.q9)() ? C.intl.format(C.t.WpnWLc, {
             helpdeskArticle: c.A.getArticleURL(S.MVz.MESSAGE_REQUESTS)

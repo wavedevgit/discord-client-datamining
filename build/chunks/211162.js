@@ -5,7 +5,7 @@ n.d(t, {
 var a = n(627968),
     i = n(397927),
     l = n(93471),
-    s = n(661251);
+    s = n(930821);
 
 function r() {
     return (0, a.jsx)(i.IpV, {

@@ -7,10 +7,10 @@ n.d(t, {
 var i = n(627968),
     s = n(503698),
     l = n.n(s),
-    r = n(512750),
-    a = n(990208),
+    a = n(512750),
+    r = n(990208),
     o = n(568065),
-    c = n(291305),
+    c = n(919139),
     d = n(107836);
 
 function u(e) {
@@ -30,7 +30,7 @@ function h(e) {
         powerup: n,
         isHovering: s,
         forceStaticImage: d
-    } = e, h = (0, a.A)(n, s, d);
+    } = e, h = (0, r.A)(n, s, d);
     switch (n.type) {
         case o.o9.LEVEL:
             return (0, i.jsx)(u, {});
@@ -39,7 +39,7 @@ function h(e) {
                 alt: "",
                 src: h,
                 className: l()(c.T, {
-                    [c.W]: n.skuId === r.aN
+                    [c.W]: n.skuId === a.aN
                 }, t)
             })
     }

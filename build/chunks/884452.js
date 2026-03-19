@@ -2,23 +2,23 @@
 "use strict";
 n.d(t, {
     Ay: () => _,
-    is: () => g,
-    sc: () => p
+    is: () => p,
+    sc: () => g
 });
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    r = n(637248),
-    a = n(728321),
+    a = n(637248),
+    r = n(728321),
     o = n(244083),
     c = n(32603),
     d = n(823142),
     u = n(83766),
     h = n(652215),
     A = n(985018),
-    m = n(495401);
+    m = n(343319);
 
-function p(e, t, n, i) {
+function g(e, t, n, i) {
     let s = "compact" === i ? 8 : 12;
     if (e === c.PU) return s;
     if (e === c.bK) return t.features.has(h.GuildFeatures.HUB) ? 0 : s;
@@ -32,7 +32,7 @@ function p(e, t, n, i) {
     return "compact" === i ? 32 : 40
 }
 
-function g(e, t) {
+function p(e, t) {
     switch (e) {
         case c.PU:
             return "hoisted-spacer";
@@ -55,17 +55,17 @@ let _ = s.memo(function(e) {
     let {
         sectionIndex: t,
         guild: n,
-        guildChannels: p,
-        guildChannelsVersion: g,
+        guildChannels: g,
+        guildChannelsVersion: p,
         selectedChannelId: _,
         disableManageChannels: f
     } = e, x = s.useCallback(() => {
-        let e = p.getCategoryFromSection(p.recentsSectionNumber);
+        let e = g.getCategoryFromSection(g.recentsSectionNumber);
         if (null == e) return;
         let t = null,
             i = e.getShownChannelAndThreadIds();
-        null != _ && i.includes(_) && (t = (0, r.xb)(p)), (0, r.DD)(n.id, i, t)
-    }, [n.id, _, p, g]), {
+        null != _ && i.includes(_) && (t = (0, a.xb)(g)), (0, a.DD)(n.id, i, t)
+    }, [n.id, _, g, p]), {
         density: C
     } = (0, l.wRf)(), E = "compact" === C ? 8 : 12;
     switch (t) {
@@ -86,15 +86,15 @@ let _ = s.memo(function(e) {
             return (0, i.jsx)(d.P4, {
                 name: A.intl.string(A.t.mlPMCy)
             });
-        case p.recentsSectionNumber:
+        case g.recentsSectionNumber:
             return (0, i.jsx)(d.P4, {
                 name: A.intl.string(A.t.gKcrqM),
                 onDismiss: x
             });
-        case p.voiceChannelsSectionNumber: {
-            let e = p.getCategoryFromSection(p.voiceChannelsSectionNumber);
+        case g.voiceChannelsSectionNumber: {
+            let e = g.getCategoryFromSection(g.voiceChannelsSectionNumber);
             if (null == e || e.isEmpty()) return null;
-            let n = p.getChannelFromSectionRow(t, 0)?.channel;
+            let n = g.getChannelFromSectionRow(t, 0)?.channel;
             return (0, i.jsxs)(s.Fragment, {
                 children: [(0, i.jsx)("div", {
                     className: m.ts
@@ -105,13 +105,13 @@ let _ = s.memo(function(e) {
             })
         }
         case c.TF: {
-            let e = p.getNamedCategoryFromSection(t);
+            let e = g.getNamedCategoryFromSection(t);
             if (null == e) return null;
             return (0, i.jsx)(d.Ay, {
                 channel: e.record,
                 position: e.position,
                 disableManageChannels: f,
-                children: (0, i.jsx)(a.A, {
+                children: (0, i.jsx)(r.A, {
                     inlineSpecs: u.qB,
                     arrowAlignment: o.oN.TOP,
                     tutorialId: "organize-by-topic",
@@ -120,7 +120,7 @@ let _ = s.memo(function(e) {
             })
         }
         default: {
-            let e = p.getNamedCategoryFromSection(t);
+            let e = g.getNamedCategoryFromSection(t);
             if (null == e) return null;
             return (0, i.jsx)(d.Ay, {
                 channel: e.record,

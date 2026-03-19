@@ -19,7 +19,7 @@ var i = n(627968),
     h = n(518477),
     _ = n(652215),
     A = n(985018),
-    I = n(892984);
+    I = n(829138);
 let j = "user-profile-save-reset-toolbar-label";
 
 function v(e) {
@@ -27,7 +27,7 @@ function v(e) {
         className: t
     } = e, {
         trackUserProfileEditSaved: n
-    } = (0, g.NJ)(), [a, v] = l.useState(!1), E = (0, o.yK)([p.A], () => p.A.getSaveablePendingWidgets() ?? []), T = (0, o.yK)([p.A], () => p.A.getChangedWidgets()), b = (0, o.yK)([p.A], () => p.A.getRemovedWidgets()), N = (0, o.bG)([p.A], () => p.A.hasUnsavedChanges()), S = (0, o.bG)([p.A], () => p.A.canSaveChanges()), y = (0, o.bG)([p.A], () => p.A.isSubmitting), C = (0, o.bG)([c.A], () => c.A.useReducedMotion), R = (0, d.pnh)(N, {
+    } = (0, g.NJ)(), [a, v] = l.useState(!1), E = (0, o.yK)([p.A], () => p.A.getSaveablePendingWidgets() ?? []), T = (0, o.yK)([p.A], () => p.A.getChangedWidgets()), b = (0, o.yK)([p.A], () => p.A.getRemovedWidgets()), N = (0, o.bG)([p.A], () => p.A.hasUnsavedChanges()), y = (0, o.bG)([p.A], () => p.A.canSaveChanges()), S = (0, o.bG)([p.A], () => p.A.isSubmitting), C = (0, o.bG)([c.A], () => c.A.useReducedMotion), R = (0, d.pnh)(N, {
         from: {
             opacity: 0,
             y: 80 * !C
@@ -98,14 +98,14 @@ function v(e) {
                     variant: "secondary",
                     text: A.intl.string(A.t.yBZMsQ),
                     onClick: L,
-                    disabled: !N || y
+                    disabled: !N || S
                 }), (0, i.jsx)(d.Button, {
                     size: "sm",
                     variant: "primary",
                     text: A.intl.string(A.t["R3BPH+"]),
                     onClick: k,
-                    loading: y,
-                    disabled: !S || !N || y
+                    loading: S,
+                    disabled: !y || !N || S
                 })]
             })]
         })

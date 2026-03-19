@@ -13,7 +13,7 @@ var s, i = n(627968),
     d = n(407058),
     S = n(772194),
     u = n(985018),
-    A = n(53483),
+    A = n(566429),
     x = ((s = {}).ACTIONS = "ACTIONS", s.SAFETY_TIPS = "SAFETY_TIPS", s.ABOUT_SAFETY_ALERTS = "ABOUT_SAFETY_ALERTS", s);
 let _ = t => {
     let {

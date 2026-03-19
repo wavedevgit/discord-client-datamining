@@ -1,10 +1,10 @@
 /** chunk id: 168820 params = (module,exports,require) **/
 n.d(t, {
-    G: () => a
+    G: () => r
 });
 var i = n(945810),
     l = n(332628);
-let r = (0, i.mj)({
+let a = (0, i.mj)({
     name: "2025-12-video-stats-for-nerds",
     kind: "user",
     defaultConfig: {
@@ -20,7 +20,7 @@ let r = (0, i.mj)({
     }
 });
 
-function a(e) {
+function r(e) {
     let {
         location: t
     } = e, {
@@ -32,7 +32,7 @@ function a(e) {
     });
     return n ? {
         enableVideoStatsForNerds: !1
-    } : r.getConfig({
+    } : a.getConfig({
         location: t
     })
 }

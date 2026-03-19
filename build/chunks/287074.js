@@ -1,13 +1,13 @@
 /** chunk id: 287074 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(397927),
-    a = n(945830),
+    a = n(397927),
+    r = n(945830),
     o = n(323073),
     c = n(267102),
     d = n(222823),
@@ -15,11 +15,11 @@ var i = n(627968),
     h = n(58736),
     A = n(652215),
     m = n(985018);
-let p = function(e) {
+let g = function(e) {
     let {
         channel: t
-    } = e, n = (0, o.vL)(t), [p, g] = s.useState(!1), _ = (0, l.bG)([d.Ay], () => d.Ay.hasUnreadPins(t.id), [t]), f = (0, c.aL)(), x = s.useRef(null), C = s.useCallback(() => {
-        n || g(e => !e)
+    } = e, n = (0, o.vL)(t), [g, p] = s.useState(!1), _ = (0, l.bG)([d.Ay], () => d.Ay.hasUnreadPins(t.id), [t]), f = (0, c.aL)(), x = s.useRef(null), C = s.useCallback(() => {
+        n || p(e => !e)
     }, [n]);
 
     function E(e) {
@@ -27,17 +27,17 @@ let p = function(e) {
     }
     return s.useEffect(() => (u._.subscribe(A.jej.TOGGLE_CHANNEL_PINS, C), () => {
         u._.unsubscribe(A.jej.TOGGLE_CHANNEL_PINS, C)
-    }), [C]), (0, i.jsx)(r.YNO, {
+    }), [C]), (0, i.jsx)(a.YNO, {
         targetElementRef: x,
-        shouldShow: p,
-        animation: r.YNO.Animation.NONE,
+        shouldShow: g,
+        animation: a.YNO.Animation.NONE,
         position: "bottom",
         align: "right",
         autoInvert: !1,
         ignoreModalClicks: !0,
-        onRequestClose: () => g(!1),
+        onRequestClose: () => p(!1),
         renderPopout: function(e) {
-            return (0, i.jsx)(a.A, {
+            return (0, i.jsx)(r.A, {
                 ...e,
                 onJump: E,
                 channel: t
@@ -53,7 +53,7 @@ let p = function(e) {
                 ref: x,
                 onClick: C,
                 tooltip: s ? null : m.intl.string(m.t["mp1N/2"]),
-                icon: r.tsw,
+                icon: a.tsw,
                 iconSize: 20,
                 "aria-label": m.intl.string(m.t["mp1N/2"]),
                 disabled: n,

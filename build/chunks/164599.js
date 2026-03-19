@@ -18,7 +18,7 @@ var i = n(627968),
     x = n(652215),
     h = n(788868),
     p = n(985018),
-    T = n(97671);
+    T = n(971065);
 
 function E(e) {
     let {
@@ -29,10 +29,10 @@ function E(e) {
         sectionTitle: S,
         forcedDivider: C = !1,
         withTutorial: f = !1,
-        showBorder: N = !1
+        showBorder: b = !1
     } = e, {
-        analyticsLocations: I
-    } = (0, d.Ay)(), b = _.Ay.canUsePremiumProfileCustomization(t), v = (0, m.N2)({
+        analyticsLocations: N
+    } = (0, d.Ay)(), I = _.Ay.canUsePremiumProfileCustomization(t), v = (0, m.N2)({
         user: t,
         guildId: n?.id
     }), {
@@ -40,27 +40,27 @@ function E(e) {
         errors: y
     } = (0, m.nZ)(n?.id);
     s.useEffect(() => {
-        b && u.default.track(x.HAw.PREMIUM_UPSELL_VIEWED, {
+        I && u.default.track(x.HAw.PREMIUM_UPSELL_VIEWED, {
             type: h.e.PROFILE_EFFECTS_INLINE_SETTINGS,
-            location_stack: I
+            location_stack: N
         })
-    }, [b, I]);
-    let O = f ? o.wLn : r.$n;
+    }, [I, N]);
+    let R = f ? o.wLn : r.$n;
     return (0, i.jsx)(g.A, {
         forcedDivider: C,
         borderType: A.i.PREMIUM,
         hasBackground: !0,
         title: S,
-        showBorder: N,
+        showBorder: b,
         errors: y,
         className: E,
         children: (0, i.jsxs)("div", {
             className: T.NC,
-            children: [(0, i.jsx)(O, {
+            children: [(0, i.jsx)(R, {
                 size: r.$n.Sizes.SMALL,
                 onClick: () => {
                     (0, c.W)({
-                        analyticsLocations: I,
+                        analyticsLocations: N,
                         guild: n,
                         initialSelectedEffect: l
                     })

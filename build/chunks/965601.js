@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(562465),
-    r = n(990078),
-    a = n(397927),
+    a = n(990078),
+    r = n(397927),
     o = n(147087),
     c = n(320501),
     d = n(652215),
@@ -35,9 +35,9 @@ function A(e) {
         updateThreadSettings: l,
         threadSettings: d,
         textAreaState: A
-    } = e, [m, p] = s.useState(!1), [g, _] = s.useState(!1), f = (0, o.b)(), x = s.useCallback(async () => {
+    } = e, [m, g] = s.useState(!1), [p, _] = s.useState(!1), f = (0, o.b)(), x = s.useCallback(async () => {
         if (f) {
-            p(!0);
+            g(!0);
             try {
                 let e = null;
                 if (null != n) {
@@ -51,21 +51,21 @@ function A(e) {
                     })
                 }
             } finally {
-                p(!1)
+                g(!1)
             }
         }
     }, [t.id, n, l, f, A.textValue]);
     s.useEffect(() => {
-        _(!1), p(!1), t.id === d.parentChannelId && n !== d.parentMessageId && l({
+        _(!1), g(!1), t.id === d.parentChannelId && n !== d.parentMessageId && l({
             name: ""
         })
     }, [n, l, t.id, d.parentChannelId, d.parentMessageId]), s.useEffect(() => {
-        null != d.name && "" !== d.name.trim() || g || f && null != n && (_(!0), x())
-    }, [t.id, n, l, d.name, g, f, x]);
+        null != d.name && "" !== d.name.trim() || p || f && null != n && (_(!0), x())
+    }, [t.id, n, l, d.name, p, f, x]);
     let C = s.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
             if (f) return {
-                icon: a.Dud,
+                icon: r.Dud,
                 onClick: x,
                 "aria-label": u.intl.string(u.t.ZF2oBs),
                 disabled: e || m || null == n && A.textValue.trim().length < 10,
@@ -75,10 +75,10 @@ function A(e) {
         }, [f, x, m, n, A.textValue]),
         E = s.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-            return f ? (0, i.jsx)(r.m, {
+            return f ? (0, i.jsx)(a.m, {
                 text: u.intl.string(u.t.ZF2oBs),
-                children: (0, i.jsx)(a.K0, {
-                    icon: a.Dud,
+                children: (0, i.jsx)(r.K0, {
+                    icon: r.Dud,
                     variant: "secondary",
                     size: "sm",
                     "aria-label": u.intl.string(u.t.ZF2oBs),

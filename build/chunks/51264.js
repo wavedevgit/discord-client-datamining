@@ -13,7 +13,7 @@ var i = n(627968),
     u = n(380610),
     A = n(828184),
     h = n(985018),
-    _ = n(908874);
+    _ = n(588116);
 let m = "isHideDevBanner",
     g = () => {
         let [e, t] = (0, a.useState)(o.w.get(m, "false")?.toString() === "true"), n = (0, s.bG)([c.A], () => (0, u.kK)() ? c.A.getCurrentBuildOverride().overrides?.discord_web : null);
@@ -41,7 +41,7 @@ let m = "isHideDevBanner",
             children: [(0, i.jsx)(A.A, {
                 className: _.Kk
             }), h.intl.format(h.t.uyrfYF, {
-                buildNumber: "513509"
+                buildNumber: "513573"
             }), (0, i.jsx)(g, {})]
         }) : null
     }

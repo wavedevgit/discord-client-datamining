@@ -1,5 +1,4 @@
 /** chunk id: 191599 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     cW: "labelSpacing__5f877",
     Ut: "applyChangesButton__5f877",

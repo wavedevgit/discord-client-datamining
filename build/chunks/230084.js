@@ -13,7 +13,7 @@ var i = n(627968),
     u = n(128450),
     _ = n(339984),
     m = n(985018),
-    g = n(897570);
+    g = n(760160);
 let A = [{
     name: "gif",
     extensions: ["gif"]
@@ -33,16 +33,16 @@ function x(e) {
         forcedDivider: C,
         withHighlight: f = !1
     } = e, {
-        newestAnalyticsLocation: N
-    } = (0, d.Ay)(), I = f ? o.wLn : r.$n, b = s.useCallback(() => {
+        newestAnalyticsLocation: b
+    } = (0, d.Ay)(), N = f ? o.wLn : r.$n, I = s.useCallback(() => {
         (0, c.XD)({
             uploadType: _.HL.AVATAR,
-            analyticsSource: N,
+            analyticsSource: b,
             filters: S ? A : void 0,
             guildId: p,
             isTryItOut: S
         })
-    }, [p, N, S]);
+    }, [p, b, S]);
     return (0, i.jsx)(u.A, {
         className: T,
         title: x,
@@ -51,12 +51,12 @@ function x(e) {
         forcedDivider: C,
         children: (0, i.jsxs)("div", {
             className: g.NC,
-            children: [(0, i.jsx)(I, {
+            children: [(0, i.jsx)(N, {
                 className: a()({
                     [g.yj]: f
                 }),
                 size: r.$n.Sizes.SMALL,
-                onClick: b,
+                onClick: I,
                 children: h ?? m.intl.string(m.t["4OynCD"])
             }), t && (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,

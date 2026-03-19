@@ -16,7 +16,7 @@ var s = n(503698),
     m = n(76707),
     g = n(788868),
     A = n(985018),
-    x = n(296388);
+    x = n(538662);
 let h = e => {
     let {
         title: t,
@@ -28,16 +28,16 @@ let h = e => {
         isPremiumGetCta: E,
         onCtaClick: S,
         cardVariant: C
-    } = e, f = (0, c.V)(), N = f?.subscription_trial, I = (0, d.O)(), b = (0, r.FY)({
-        intervalType: N?.interval,
-        intervalCount: N?.interval_count
+    } = e, f = (0, c.V)(), b = f?.subscription_trial, N = (0, d.O)(), I = (0, r.FY)({
+        intervalType: b?.interval,
+        intervalCount: b?.interval_count
     }), v = (0, o.G)({
         defaultResponse: A.intl.string(A.t["8x0jKT"]),
         onNonTier2Subscriber: A.intl.string(A.t.IJI7yk),
-        onTier2TrialOffer: b,
-        onTier0TrialOffer: b,
+        onTier2TrialOffer: I,
+        onTier0TrialOffer: I,
         onDiscountOffer: A.intl.formatToPlainString(A.t.bkQ4bH, {
-            percent: I?.discount.amount
+            percent: N?.discount.amount
         })
     }), j = (0, _.Q)(C);
     return (0, i.jsxs)("div", {

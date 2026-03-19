@@ -6,17 +6,17 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(735438),
-    o = n.n(a),
+    a = n.n(l),
+    r = n(735438),
+    o = n.n(r),
     c = n(837381),
     d = n(884362),
     u = n(607399),
     h = n(311907),
     A = n(397927),
     m = n(442433),
-    p = n(414798),
-    g = n(775602),
+    g = n(414798),
+    p = n(775602),
     _ = n(793574),
     f = n(688810),
     x = n(485947),
@@ -43,21 +43,21 @@ var i = n(627968),
     V = n(110574),
     B = n(652215),
     H = n(985018),
-    F = n(767952),
-    K = n(701939);
+    F = n(624934),
+    K = n(268053);
 let W = k.Ay.getEnableHardwareAcceleration(),
     Y = 44 + V.b,
     z = s.memo(function(e) {
         let {
             channel: t,
             sectionId: l,
-            userId: r,
-            guildOwnerId: a
-        } = e, o = s.useRef(null), d = (0, h.bG)([L.A], () => L.A.isTyping(t.id, r)), A = (0, h.bG)([y.Ay], () => y.Ay.getMember(t.guild_id, r)), g = (0, h.bG)([j.A], () => A?.colorRoleId != null ? j.A.getRole(t.guild_id, A.colorRoleId)?.name : void 0, [t.guild_id, A]), _ = (0, h.bG)([M.default], () => M.default.getUser(r)), f = (0, h.bG)([M.default], () => M.default.getCurrentUser()), x = _?.id === f?.id, E = (0, h.bG)([R.A, O.A], () => x ? O.A.getStatus() : R.A.getStatus(r, t.guild_id)), N = (0, h.bG)([R.A], () => R.A.isMobileOnline(r)), b = (0, h.bG)([R.A, O.A], () => x ? O.A.getActivities() : R.A.getActivities(r, t.guild_id)), D = (0, h.bG)([v.A], () => v.A.getAnyStreamForUser(r)), G = (0, c.rm)(r), P = (0, h.bG)([S.A], () => S.A.canUserViewChannel(t.id, l, r)), k = _?.id != null && _.id === a, F = s.useCallback(e => {
+            userId: a,
+            guildOwnerId: r
+        } = e, o = s.useRef(null), d = (0, h.bG)([L.A], () => L.A.isTyping(t.id, a)), A = (0, h.bG)([y.Ay], () => y.Ay.getMember(t.guild_id, a)), p = (0, h.bG)([j.A], () => A?.colorRoleId != null ? j.A.getRole(t.guild_id, A.colorRoleId)?.name : void 0, [t.guild_id, A]), _ = (0, h.bG)([M.default], () => M.default.getUser(a)), f = (0, h.bG)([M.default], () => M.default.getCurrentUser()), x = _?.id === f?.id, E = (0, h.bG)([R.A, O.A], () => x ? O.A.getStatus() : R.A.getStatus(a, t.guild_id)), N = (0, h.bG)([R.A], () => R.A.isMobileOnline(a)), b = (0, h.bG)([R.A, O.A], () => x ? O.A.getActivities() : R.A.getActivities(a, t.guild_id)), D = (0, h.bG)([v.A], () => v.A.getAnyStreamForUser(a)), G = (0, c.rm)(a), P = (0, h.bG)([S.A], () => S.A.canUserViewChannel(t.id, l, a)), k = _?.id != null && _.id === r, F = s.useCallback(e => {
             null != _ && (0, m.L3)(e, async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("97262"), n.e("67447"), n.e("3798")]).then(n.bind(n, 708202));
+                } = await Promise.all([n.e("97262"), n.e("67447"), n.e("38398")]).then(n.bind(n, 708202));
                 return n => (0, i.jsx)(e, {
                     ...n,
                     user: _,
@@ -74,7 +74,7 @@ let W = k.Ay.getEnableHardwareAcceleration(),
             }), U._.dispatchToLastSubscribed(B.jej.INSERT_TEXT, {
                 plainText: e,
                 rawText: n
-            }), p.A.startTyping(t.id)
+            }), g.A.startTyping(t.id)
         }, [_, t]), Y = s.useCallback(e => {
             e.stopPropagation(), (0, C.K)({
                 guildId: t.guild_id,
@@ -116,7 +116,7 @@ let W = k.Ay.getEnableHardwareAcceleration(),
                     activities: b,
                     colorString: A?.colorString,
                     colorStrings: A?.colorStrings,
-                    colorRoleName: g,
+                    colorRoleName: p,
                     isTyping: d,
                     channel: t,
                     guildId: t.guild_id,
@@ -146,7 +146,7 @@ let W = k.Ay.getEnableHardwareAcceleration(),
             label: n,
             count: s,
             guildId: l
-        } = e, r = (0, E.$7)({
+        } = e, a = (0, E.$7)({
             roleId: t,
             guildId: l,
             size: 16
@@ -162,9 +162,9 @@ let W = k.Ay.getEnableHardwareAcceleration(),
                 title: n,
                 count: s
             }),
-            children: [null != r ? (0, i.jsx)(N.A, {
+            children: [null != a ? (0, i.jsx)(N.A, {
                 className: K.UT,
-                ...r
+                ...a
             }) : null, (0, i.jsxs)("span", {
                 "aria-hidden": !0,
                 children: [n, " — ", s]
@@ -197,7 +197,7 @@ let W = k.Ay.getEnableHardwareAcceleration(),
 
 function J(e) {
     var t, n;
-    let l, a, u, m, p, {
+    let l, r, u, m, g, {
             channel: x,
             guild: C
         } = e,
@@ -210,15 +210,15 @@ function J(e) {
         {
             navigator: T,
             listRef: v
-        } = (t = E, n = Y, l = (0, h.bG)([g.A], () => g.A.keyboardModeEnabled), a = s.useRef(null), u = s.useCallback((e, t) => {
-            let i = a.current;
+        } = (t = E, n = Y, l = (0, h.bG)([p.A], () => p.A.keyboardModeEnabled), r = s.useRef(null), u = s.useCallback((e, t) => {
+            let i = r.current;
             if (null == i) return;
             let s = parseInt(t, 10),
-                [l, r] = i.getSectionRowFromIndex(s),
-                o = 0 === l && 0 === r ? n : 0;
+                [l, a] = i.getSectionRowFromIndex(s),
+                o = 0 === l && 0 === a ? n : 0;
             i.scrollToIndex({
                 section: l,
-                row: r,
+                row: a,
                 padding: o,
                 callback: () => {
                     requestAnimationFrame(() => document.querySelector(e)?.focus({
@@ -227,13 +227,13 @@ function J(e) {
                 }
             })
         }, [n]), m = s.useCallback(() => new Promise(e => {
-            let t = a.current;
+            let t = r.current;
             if (null == t) return e();
             t.scrollToTop({
                 callback: () => requestAnimationFrame(() => e())
             })
-        }), []), p = s.useCallback(() => new Promise(e => {
-            let t = a.current;
+        }), []), g = s.useCallback(() => new Promise(e => {
+            let t = r.current;
             if (null == t) return e();
             t.scrollToBottom({
                 callback() {
@@ -246,9 +246,9 @@ function J(e) {
                 setFocus: u,
                 isEnabled: l,
                 scrollToStart: m,
-                scrollToEnd: p
+                scrollToEnd: g
             }),
-            listRef: a
+            listRef: r
         }),
         y = 0 === N.length || N.every(e => 0 === e.userIds.length);
     if (s.useEffect(() => {
@@ -268,7 +268,7 @@ function J(e) {
             navigator: T,
             children: (0, i.jsx)(A.skg, {
                 children: e => (0, i.jsx)("div", {
-                    className: r()(K.yg, K.ML, F.kL),
+                    className: a()(K.yg, K.ML, F.kL),
                     children: (0, i.jsx)(A.B8B, {
                         ref: v,
                         className: K.ol,
@@ -323,7 +323,7 @@ function Q(e) {
         channel: t
     } = e;
     return (0, i.jsxs)("div", {
-        className: r()(F.p$, F.kL, K.yg, K.ML, K.ol),
+        className: a()(F.p$, F.kL, K.yg, K.ML, K.ol),
         children: [(0, i.jsx)(A.Text, {
             className: F.ks,
             variant: "text-xs/bold",

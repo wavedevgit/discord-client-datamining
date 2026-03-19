@@ -1,32 +1,33 @@
 /** chunk id: 256331 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => s
+    A: () => a
 });
-var i = n(311907),
-    l = n(73153);
-let r = !0;
-class a extends i.Ay.DeviceSettingsStore {
+var l = n(311907),
+    s = n(73153);
+let i = !0;
+class r extends l.Ay.DeviceSettingsStore {
     static displayName = "ConversationVisibilityStore";
     static persistKey = "ConversationVisibilityStore";
     initialize(e) {
-        r = e?.highlightingEnabled ?? !0
+        i = e?.highlightingEnabled ?? !0
     }
     isHighlightingEnabled() {
-        return r
+        return i
     }
     getState() {
         return {
-            highlightingEnabled: r
+            highlightingEnabled: i
         }
     }
     getUserAgnosticState() {
         return {
-            highlightingEnabled: r
+            highlightingEnabled: i
         }
     }
 }
-let s = new a(l.h, {
+let a = new r(s.h, {
     CONVERSATIONS_TOGGLE_HIGHLIGHTING: function() {
-        r = !r
+        i = !i
     }
 })

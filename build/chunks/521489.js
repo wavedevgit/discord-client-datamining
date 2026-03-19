@@ -4,44 +4,44 @@ n.d(t, {
     N: () => h
 });
 var r = n(627968),
-    i = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    a = n(64700),
+    i = n(503698),
+    s = n.n(i),
     l = n(497766),
     o = n(110259),
     c = n(158954),
     u = n(397927),
     d = n(97469),
-    m = n(538029),
-    f = n(22789);
+    m = n(9836),
+    f = n(52379);
 
 function h(e) {
     let {
         transitionState: t,
         animationVariant: n = "default",
-        returnRef: a,
+        returnRef: i,
         "aria-label": h,
-        onClose: g,
-        trackingProps: p,
-        children: y
-    } = e, _ = i.useId(), x = i.useMemo(() => ({
+        onClose: p,
+        trackingProps: g,
+        children: x
+    } = e, _ = a.useId(), y = a.useMemo(() => ({
         id: _,
         headingId: `heading-${_}`,
-        onClose: g,
+        onClose: p,
         dismissable: !0
-    }), [_, g]), b = (0, d.NC)(), {
+    }), [_, p]), b = (0, d.NC)(), {
         theme: v
     } = (0, u.wRf)(), A = (0, c.kSI)(t, n);
     return (0, r.jsx)(c.Vs9.Provider, {
-        value: x,
+        value: y,
         children: (0, r.jsx)(u.lGe, {
             id: _,
             role: "dialog",
             "aria-label": h,
-            "aria-labelledby": null != h ? void 0 : x.headingId,
-            returnRef: a,
-            ...p,
-            impressionType: p?.impressionType ?? o.ImpressionTypes.MODAL,
+            "aria-labelledby": null != h ? void 0 : y.headingId,
+            returnRef: i,
+            ...g,
+            impressionType: g?.impressionType ?? o.ImpressionTypes.MODAL,
             children: (0, r.jsx)(c.Fmo, {
                 forceLevel: 1,
                 children: (0, r.jsx)("div", {
@@ -58,7 +58,7 @@ function h(e) {
                                     theme: v,
                                     children: e => (0, r.jsx)("div", {
                                         className: s()(e, m.h_),
-                                        children: y
+                                        children: x
                                     })
                                 })
                             })

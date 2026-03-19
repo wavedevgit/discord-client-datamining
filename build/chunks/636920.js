@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(3026),
-    a = n(435371),
+    a = n(3026),
+    r = n(435371),
     o = n(397927),
     c = n(956793),
     d = n(576705),
@@ -15,14 +15,14 @@ var i = n(627968),
     h = n(954571),
     A = n(69555),
     m = n(886019),
-    p = n(846218),
-    g = n(806246),
+    g = n(846218),
+    p = n(806246),
     _ = n(358957),
     f = n(559405),
     x = n(708455),
     C = n(652215),
     E = n(985018),
-    I = n(334994);
+    I = n(652172);
 
 function N(e) {
     let {
@@ -35,18 +35,18 @@ function N(e) {
         className: v,
         iconClassName: y,
         textClassName: j
-    } = e, R = (0, l.bG)([u.A], () => u.A.getVoiceChannelId() === n.id, [n]), O = (0, l.bG)([d.A], () => d.A.can(C.xBc.CONNECT, n), [n]), L = null == t.emoji || (0, p.n)(t.emoji, n);
+    } = e, R = (0, l.bG)([u.A], () => u.A.getVoiceChannelId() === n.id, [n]), O = (0, l.bG)([d.A], () => d.A.can(C.xBc.CONNECT, n), [n]), L = null == t.emoji || (0, g.n)(t.emoji, n);
     s.useEffect(() => {
         h.default.track(C.HAw.VIEW_HANG_STATUS, {
             source: S,
             other_user_id: N,
-            ...(0, g.A)(n.id)
+            ...(0, p.A)(n.id)
         })
     }, [S, n.id, N]);
     let M = s.useCallback(() => {
             !R && O && (c.default.selectVoiceChannel(n.id), T?.(), h.default.track(C.HAw.HANG_STATUS_CTA_CLICKED, {
                 source: S,
-                ...(0, g.A)(n.id),
+                ...(0, p.A)(n.id),
                 other_user_id: N,
                 cta_type: "join"
             }))
@@ -61,7 +61,7 @@ function N(e) {
                 } else(0, A.Iq)(e, !0);
                 T?.(), h.default.track(C.HAw.HANG_STATUS_CTA_CLICKED, {
                     source: S,
-                    ...(0, g.A)(n.id),
+                    ...(0, p.A)(n.id),
                     other_user_id: N,
                     cta_type: "swipe"
                 })
@@ -78,11 +78,11 @@ function N(e) {
         }), (0, i.jsx)(o.Text, {
             variant: "text-md/medium",
             className: j ?? I.qS,
-            children: (0, i.jsx)(r.A, {
+            children: (0, i.jsx)(a.A, {
                 delay: 0,
                 children: G
             })
-        }), R && !b ? (0, i.jsx)(a.m_, {
+        }), R && !b ? (0, i.jsx)(r.m_, {
             text: L ? void 0 : E.intl.string(E.t["0LMpW+"]),
             children: (0, i.jsx)("div", {
                 children: (0, i.jsx)(o.Button, {

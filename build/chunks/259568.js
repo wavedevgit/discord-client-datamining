@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(554146),
     l = n(116833),
-    r = n(265486),
-    a = n(942857),
+    a = n(265486),
+    r = n(942857),
     o = n(793574),
     c = n(379848),
     d = n(903223),
@@ -16,8 +16,8 @@ var s = n(554146),
     h = n(757036),
     A = n(363487),
     m = n(828162),
-    p = n(652215),
-    g = n(49999),
+    g = n(652215),
+    p = n(49999),
     _ = n(985018);
 
 function f(e) {
@@ -29,18 +29,18 @@ function f(e) {
     } = d.Ay.useExperiment({
         guildId: t.id,
         location: "progress-bar-coachmark"
-    }), E = (0, a.A)(), I = (0, d._E)(t, C), N = C && I && !E, b = [];
+    }), E = (0, r.A)(), I = (0, d._E)(t, C), N = C && I && !E, b = [];
     return null != f && f && N && b.push(s.M.BOOST_PROGRESS_BAR_ADMIN_COACHMARK), x && null != f && !f && N && b.push(s.M.BOOST_PROGRESS_BAR_MEMBER_COACHMARK), (0, i.jsx)(c.Ay, {
         contentTypes: b,
         children: e => {
             let {
-                visibleContent: a,
+                visibleContent: r,
                 markAsDismissed: c
             } = e;
-            return a === s.M.BOOST_PROGRESS_BAR_ADMIN_COACHMARK ? (0, i.jsx)(r.A, {
+            return r === s.M.BOOST_PROGRESS_BAR_ADMIN_COACHMARK ? (0, i.jsx)(a.A, {
                 targetElementRef: n,
                 onRequestClose: () => {
-                    c(g.i.USER_DISMISS)
+                    c(p.i.USER_DISMISS)
                 },
                 position: "right",
                 alignmentStrategy: "edge",
@@ -61,13 +61,13 @@ function f(e) {
                     text: _.intl.string(_.t["Xc9J+x"]),
                     variant: "primary",
                     onClick: () => {
-                        c(g.i.TAKE_ACTION), u.A.open(t.id, p.BEX.BOOST_PERKS, o.A.GUILD_BOOSTING_PROGRESS_BAR_ADMIN_COACHMARK)
+                        c(p.i.TAKE_ACTION), u.A.open(t.id, g.BEX.BOOST_PERKS, o.A.GUILD_BOOSTING_PROGRESS_BAR_ADMIN_COACHMARK)
                     }
                 }]
-            }) : a === s.M.BOOST_PROGRESS_BAR_MEMBER_COACHMARK ? (0, i.jsx)(r.A, {
+            }) : r === s.M.BOOST_PROGRESS_BAR_MEMBER_COACHMARK ? (0, i.jsx)(a.A, {
                 targetElementRef: n,
                 onRequestClose: () => {
-                    c(g.i.USER_DISMISS)
+                    c(p.i.USER_DISMISS)
                 },
                 position: "right",
                 alignmentStrategy: "edge",
@@ -88,7 +88,7 @@ function f(e) {
                     text: _.intl.string(_.t.cTJtBG),
                     variant: "primary",
                     onClick: () => {
-                        c(g.i.TAKE_ACTION), (0, m.A)(t.id, o.A.GUILD_BOOSTING_PROGRESS_BAR_MEMBER_COACHMARK)
+                        c(p.i.TAKE_ACTION), (0, m.A)(t.id, o.A.GUILD_BOOSTING_PROGRESS_BAR_MEMBER_COACHMARK)
                     }
                 }]
             }) : null

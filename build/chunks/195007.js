@@ -7,16 +7,16 @@ var i = n(627968);
 n(64700);
 var s = n(311907),
     l = n(397927),
-    r = n(588224),
-    a = n(607567),
+    a = n(588224),
+    r = n(607567),
     o = n(652215),
     c = n(985018),
-    d = n(911855);
+    d = n(124417);
 
 function u(e) {
     let {
         channel: t
-    } = e, n = (0, s.bG)([a.Ay], () => a.Ay.getVoiceStatesForChannel(t));
+    } = e, n = (0, s.bG)([r.Ay], () => r.Ay.getVoiceStatesForChannel(t));
     return (0, i.jsxs)("div", {
         className: d.zr,
         children: [(0, i.jsx)(l.Text, {
@@ -27,7 +27,7 @@ function u(e) {
             })
         }), (0, i.jsx)(l.HOs, {
             className: d.XG,
-            children: (0, i.jsx)(r.A, {
+            children: (0, i.jsx)(a.A, {
                 allowDragging: !1,
                 allowPreviews: !1,
                 className: d.Xk,

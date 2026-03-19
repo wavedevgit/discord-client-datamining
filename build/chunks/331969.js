@@ -17,7 +17,7 @@ var i = n(627968),
     A = n(967198),
     x = n(926140),
     h = n(985018),
-    p = n(971953);
+    p = n(90831);
 
 function T() {}
 let E = [x.rD.VOICE_CHANNEL];
@@ -48,7 +48,7 @@ function f(e) {
         n.current = t
     });
     let [l, a] = s.useState(t.params?.channelId ?? void 0), d = s.useCallback(() => {
-        (0, r.mMO)(async () => e => (0, i.jsx)(N, {
+        (0, r.mMO)(async () => e => (0, i.jsx)(b, {
             ...e,
             onSelect: e => {
                 a(e), o.A.setKeybind({
@@ -68,7 +68,7 @@ function f(e) {
                 align: c.A.Align.STRETCH,
                 children: [(0, i.jsx)("div", {
                     className: p.$X,
-                    children: (0, i.jsx)(I, {
+                    children: (0, i.jsx)(N, {
                         channelId: l
                     })
                 }), (0, i.jsx)(c.A.Child, {
@@ -85,24 +85,24 @@ function f(e) {
     })
 }
 
-function N(e) {
+function b(e) {
     let t, n, {
             transitionState: o,
             onClose: c,
             onSelect: T
         } = e,
         f = s.useId(),
-        N = s.useRef(null),
+        b = s.useRef(null),
         {
-            query: I,
-            updateQuery: b,
+            query: N,
+            updateQuery: I,
             queryResults: v
         } = (0, d.A)({
             visible: !0,
             autocompleterResultTypes: E,
             autocompleterBeforeCreateSearchContext: S
         }),
-        j = (t = "" !== I, n = (0, a.yK)([m.Ay, _.A, A.A], () => {
+        j = (t = "" !== N, n = (0, a.yK)([m.Ay, _.A, A.A], () => {
             let e = A.A.getGuildId();
             if (t || null == e) return [];
             let n = [];
@@ -114,7 +114,7 @@ function N(e) {
         }, [t]), t ? null : n),
         {
             focusedIndex: y,
-            setFocusedIndex: O
+            setFocusedIndex: R
         } = function(e) {
             let [t, n] = s.useState(0), i = s.useRef(e);
             return e !== i.current && 0 !== t && n(0), s.useEffect(() => {
@@ -123,28 +123,28 @@ function N(e) {
                 focusedIndex: t,
                 setFocusedIndex: n
             }
-        }(I);
+        }(N);
     s.useEffect(() => {
         let {
             current: e
-        } = N;
+        } = b;
         null == e || e.isItemVisible(0, y, !0) || e.scrollToIndex({
             section: 0,
             row: y
         })
     }, [y]);
-    let R = null != j ? j.length : v.length,
-        L = (() => {
+    let O = null != j ? j.length : v.length,
+        P = (() => {
             if (null != j) return j[y]?.id;
             let e = v[y];
             if (e?.type === x.rD.VOICE_CHANNEL) return e.record.id
         })(),
-        D = R > 0 || "" === I ? {
+        L = O > 0 || "" === N ? {
             innerId: f,
             innerRole: "listbox",
             innerAriaLabel: h.intl.string(h.t["+N3fW7"]),
-            ref: N,
-            sections: [R],
+            ref: b,
+            sections: [O],
             renderRow: function(e) {
                 let {
                     row: t
@@ -161,11 +161,11 @@ function N(e) {
                     channel: n,
                     category: s,
                     focused: y === t,
-                    onMouseEnter: () => O(t),
+                    onMouseEnter: () => R(t),
                     onClick: () => {
                         T(n.id), c()
                     },
-                    onFocus: () => O(t),
+                    onFocus: () => R(t),
                     children: null != l ? (0, i.jsx)("div", {
                         className: p.J5,
                         children: l.name
@@ -187,8 +187,8 @@ function N(e) {
         subtitle: h.intl.string(h.t.q4JpM8),
         actions: void 0,
         input: (0, i.jsx)(r.ksK, {
-            value: I,
-            onChange: b,
+            value: N,
+            onChange: I,
             onKeyDown: function(e) {
                 let t = e.key.toLowerCase();
                 if ("arrowdown" === t || "arrowup" === t || "enter" === t || "escape" === t) switch (e.preventDefault(), t) {
@@ -205,26 +205,26 @@ function N(e) {
                         break
                     }
                     case "arrowup":
-                        0 === y ? O(R - 1) : O(y - 1);
+                        0 === y ? R(O - 1) : R(y - 1);
                         break;
                     case "arrowdown":
-                        y >= R - 1 ? O(0) : O(y + 1)
+                        y >= O - 1 ? R(0) : R(y + 1)
                 }
             },
             placeholder: h.intl.string(h.t.tG0r7g),
             role: "combobox",
             "aria-controls": f,
-            "aria-expanded": R > 0,
-            "aria-activedescendant": R > 0 && null != L ? L : void 0,
+            "aria-expanded": O > 0,
+            "aria-activedescendant": O > 0 && null != P ? P : void 0,
             "aria-autocomplete": "list",
             spellCheck: !1,
             autoFocus: !0
         }),
-        listProps: D
+        listProps: L
     })
 }
 
-function I(e) {
+function N(e) {
     let {
         channelId: t
     } = e, {

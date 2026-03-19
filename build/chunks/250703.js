@@ -4,9 +4,9 @@ n.d(t, {
     A: () => _
 });
 var r = n(627968),
-    i = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    a = n(64700),
+    i = n(503698),
+    s = n.n(i),
     l = n(607399),
     o = n(732955),
     c = n(397927),
@@ -15,16 +15,16 @@ var r = n(627968),
     m = n(641324),
     f = n(82186),
     h = n(985018),
-    g = n(379763);
+    p = n(389985);
 
-function p(e) {
+function g(e) {
     let {
         icon: t,
         label: n,
-        onClick: i
+        onClick: a
     } = e;
     return (0, r.jsx)(o.K0, {
-        onClick: i,
+        onClick: a,
         icon: t,
         size: "sm",
         variant: "icon-only",
@@ -32,20 +32,20 @@ function p(e) {
     })
 }
 
-function y(e) {
+function x(e) {
     let {
         setting: t,
         onClose: n
-    } = e, i = (0, u.NC)();
+    } = e, a = (0, u.NC)();
     return (0, r.jsx)(c.NPJ, {
-        theme: i,
+        theme: a,
         children: e => (0, r.jsxs)("div", {
-            className: s()(g.$Q, e),
+            className: s()(p.$Q, e),
             children: [(0, r.jsxs)(c.BJc, {
                 direction: "horizontal",
                 align: "center",
-                className: g.y9,
-                children: [l.Fr && (0, r.jsx)(p, {
+                className: p.y9,
+                children: [l.Fr && (0, r.jsx)(g, {
                     icon: c.fEi,
                     onClick: () => d.A.setState({
                         showNavigationMobile: !0
@@ -54,7 +54,7 @@ function y(e) {
                 }), null != t && (0, r.jsx)(f.E, {
                     node: t
                 })]
-            }), (0, r.jsx)(p, {
+            }), (0, r.jsx)(g, {
                 icon: c.d$L,
                 onClick: n,
                 label: h.intl.string(h.t.cpT0Cq)
@@ -62,21 +62,21 @@ function y(e) {
         })
     })
 }
-let _ = i.memo(function(e) {
+let _ = a.memo(function(e) {
     let {
         onClose: t,
         setting: n
-    } = e, i = d.A.useField("showNavigationMobile");
+    } = e, a = d.A.useField("showNavigationMobile");
     return (0, r.jsxs)("div", {
-        className: s()(g.Qs, {
-            [g.Hw]: l.Fr,
-            [g.n7]: i
+        className: s()(p.Qs, {
+            [p.Hw]: l.Fr,
+            [p.n7]: a
         }),
-        children: [(0, r.jsx)(y, {
+        children: [(0, r.jsx)(x, {
             setting: n,
             onClose: t
         }), (0, r.jsx)("div", {
-            className: g.yp,
+            className: p.yp,
             children: null != n && (0, r.jsx)(m.A, {
                 node: n
             })

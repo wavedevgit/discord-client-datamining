@@ -4,7 +4,7 @@ t.d(e, {
     ir: () => r,
     xi: () => i
 });
-var n = t(893221);
+var n = t(196239);
 let a = {
         0: n.image,
         1: n.document,

@@ -1,5 +1,4 @@
 /** chunk id: 230686 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     t: "layoutEditorContainer__71ca2",
     c5: "highlightLayer__71ca2",

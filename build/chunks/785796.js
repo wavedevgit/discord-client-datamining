@@ -1,40 +1,39 @@
 /** chunk id: 785796 params = (module,exports,require) **/
-"use strict";
-n.d(e, {
+n.d(t, {
     A: () => o
 });
 var i = n(562465),
-    r = n(73153),
-    s = n(652215);
-let l = `${s.Joy}/api/v2/scheduled-maintenances`,
-    a = `${s.Joy}/api/v2/incidents/unresolved.json`,
+    l = n(73153),
+    r = n(652215);
+let s = `${r.Joy}/api/v2/scheduled-maintenances`,
+    a = `${r.Joy}/api/v2/incidents/unresolved.json`,
     o = {
         checkIncidents() {
             Promise.all([i.Bo.get({
-                url: `${l}/active.json`,
+                url: `${s}/active.json`,
                 rejectWithError: !0
-            }), i.Bo.get(a)]).then(t => {
-                let [e, n] = t, [i] = e.body.scheduled_maintenances, [s] = n.body.incidents;
-                r.h.dispatch({
+            }), i.Bo.get(a)]).then(e => {
+                let [t, n] = e, [i] = t.body.scheduled_maintenances, [r] = n.body.incidents;
+                l.h.dispatch({
                     type: "STATUS_PAGE_INCIDENT",
-                    incident: s || i
+                    incident: r || i
                 })
             })
         },
         checkScheduledMaintenances() {
             i.Bo.get({
-                url: `${l}/upcoming.json`,
+                url: `${s}/upcoming.json`,
                 rejectWithError: !0
-            }).then(t => {
-                let [e] = t.body.scheduled_maintenances;
-                r.h.dispatch({
+            }).then(e => {
+                let [t] = e.body.scheduled_maintenances;
+                l.h.dispatch({
                     type: "STATUS_PAGE_SCHEDULED_MAINTENANCE",
-                    maintenance: e
+                    maintenance: t
                 })
             })
         },
         ackScheduledMaintenance() {
-            r.h.dispatch({
+            l.h.dispatch({
                 type: "STATUS_PAGE_SCHEDULED_MAINTENANCE_ACK"
             })
         }

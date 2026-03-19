@@ -8,17 +8,17 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(481613),
-    o = n.n(a),
+    a = n.n(l),
+    r = n(481613),
+    o = n.n(r),
     c = n(837381),
     d = n(311907),
     u = n(397927),
     h = n(73153),
     A = n(964486),
     m = n(775602),
-    p = n(928039),
-    g = n(954571),
+    g = n(928039),
+    p = n(954571),
     _ = n(203982),
     f = n(723702),
     x = n(157296),
@@ -27,10 +27,10 @@ var i = n(627968),
     I = n(712209),
     N = n(652215),
     b = n(985018),
-    S = n(852570);
+    S = n(442672);
 
 function T(e) {
-    var t, n, l, a, x, T;
+    var t, n, l, r, x, T;
     let {
         onJump: y,
         showTutorial: j,
@@ -53,24 +53,24 @@ function T(e) {
         if (null == i || null == e) return;
         let s = i.getScrollerNode()?.children;
         if (null == s) return;
-        let r = s[e];
-        if (null == r) return;
+        let a = s[e];
+        if (null == a) return;
         let {
-            scrollTop: a,
+            scrollTop: r,
             offsetHeight: o
         } = i.getScrollerState();
-        (r.offsetTop < a || r.offsetTop > a + o) && i.scrollTo({
-            to: r.offsetTop
+        (a.offsetTop < r || a.offsetTop > r + o) && i.scrollTo({
+            to: a.offsetTop
         })
-    }), a = M, x = D, s.useEffect(() => {
+    }), r = M, x = D, s.useEffect(() => {
         let e = () => {
-            let e = a.channels.find(e => !e.collapsed);
+            let e = r.channels.find(e => !e.collapsed);
             null != e && x.markChannelRead(e)
         };
         return _._.subscribe(N.jej.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
             _._.unsubscribe(N.jej.MARK_TOP_INBOX_CHANNEL_READ, e)
         }
-    }, [x, a.channels]), T = D, s.useEffect(() => {
+    }, [x, r.channels]), T = D, s.useEffect(() => {
         let e = e => {
             ((0, f.isMac)() || (0, f.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && T.undoMarkChannelRead()
         };
@@ -78,7 +78,7 @@ function T(e) {
             document.removeEventListener("keydown", e)
         }
     }, [T]), s.useEffect(() => {
-        g.default.track(N.HAw.OPEN_POPOUT, {
+        p.default.track(N.HAw.OPEN_POPOUT, {
             type: "Inbox"
         })
     }, []), s.useEffect(() => (h.h.subscribe("CONNECTION_OPEN", O), () => {
@@ -86,7 +86,7 @@ function T(e) {
     }), [O]), (0, A.Ay)(() => (_._.subscribe(N.jej.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
         _._.unsubscribe(N.jej.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
     }));
-    let k = (0, p.A)("unreads", L);
+    let k = (0, g.A)("unreads", L);
     return 0 === U.length ? (0, i.jsx)(C.A, {
         Icon: u.K$s,
         header: b.intl.string(b.t["6XMM+D"]),
@@ -105,7 +105,7 @@ function T(e) {
                     },
                     ...n,
                     onScroll: G === I.mJ.Done ? void 0 : P,
-                    className: r()(S.XG, `group-spacing-${w}`),
+                    className: a()(S.XG, `group-spacing-${w}`),
                     children: [j ? (0, i.jsx)(v, {
                         setSeenTutorial: R
                     }) : null, (0, E.A)(U, D, y), G === I.mJ.Done ? null : (0, i.jsx)(u.y$y, {

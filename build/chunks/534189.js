@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(934551),
     l = n(311907),
-    r = n(827734),
-    a = n(922590),
+    a = n(827734),
+    r = n(922590),
     o = n(821269),
     c = n(437774),
     d = n(994500),
@@ -16,8 +16,8 @@ var s = n(934551),
     h = n(562153),
     A = n(622543),
     m = n(987112),
-    p = n(31432),
-    g = n(389996),
+    g = n(31432),
+    p = n(389996),
     _ = n(559506),
     f = n(361311),
     x = n(886891),
@@ -32,7 +32,7 @@ var s = n(934551),
     y = n(652215),
     j = n(996988),
     R = n(985018),
-    O = n(673721);
+    O = n(627699);
 
 function L(e) {
     let {
@@ -48,7 +48,7 @@ function L(e) {
     } = (0, l.cf)([d.A], () => ({
         relationshipType: d.A.getRelationshipType(t.id),
         originApplicationId: d.A.getOriginApplicationId(t.id)
-    })), w = (0, a.fi)(t.id), k = (0, o.q)({
+    })), w = (0, r.fi)(t.id), k = (0, o.q)({
         userId: t.id
     }), V = (0, l.bG)([u.A], () => u.A.hidePersonalInformation), B = (0, l.bG)([A.A], () => A.A.getUserProfile(t.id)?.application);
     return (0, i.jsxs)("div", {
@@ -61,7 +61,7 @@ function L(e) {
             nickname: h.Ay.getName(null, M.id, t),
             pronouns: L?.pronouns,
             onOpenProfile: G,
-            tags: (0, i.jsx)(p.A, {
+            tags: (0, i.jsx)(g.A, {
                 displayProfile: L,
                 themeType: j.d.SIDEBAR
             }),
@@ -94,7 +94,7 @@ function L(e) {
                 heading: R.intl.string(R.t.Iyka0U),
                 headingIcon: (0, i.jsx)(s.CircleErrorIcon, {
                     size: "xxs",
-                    color: r.A.colors.TEXT_STRONG
+                    color: a.A.colors.TEXT_STRONG
                 }),
                 headingColor: "text-strong",
                 children: (0, i.jsx)(c.T, {
@@ -110,7 +110,7 @@ function L(e) {
             children: [!V && L?.bio != null && L?.bio !== "" && (0, i.jsx)(N.A, {
                 heading: R.intl.string(R.t.ZzAR2Y),
                 headingColor: "text-strong",
-                children: (0, i.jsx)(g.A, {
+                children: (0, i.jsx)(p.A, {
                     userId: t.id,
                     userBio: L.bio,
                     isHoveringOrFocusing: D,

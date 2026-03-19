@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(235986),
     _ = n(147964),
     m = n(985018),
-    g = n(361151),
-    A = n(473169);
+    g = n(76985),
+    A = n(522759);
 let x = /^\d+$|^$/;
 
 function h(e) {
@@ -29,7 +29,7 @@ function h(e) {
         authorizedApplicationId: _.A.testModeApplicationId,
         authorizationError: _.A.error,
         authorizing: _.A.isFetchingAuthorization
-    })), [E, S] = s.useState(h ?? ""), [C, f] = s.useState("8080"), [N, I] = s.useState("localhost"), b = x.test(E);
+    })), [E, S] = s.useState(h ?? ""), [C, f] = s.useState("8080"), [b, N] = s.useState("localhost"), I = x.test(E);
     async function v() {
         d.SH();
         let e = function(e, t, n) {
@@ -40,25 +40,25 @@ function h(e) {
                 case "proxy":
                     return (0, c.Ay)(n)
             }
-        }(N, C, E);
+        }(b, C, E);
         null != await d.q1(E, e) && t()
     }
     s.useEffect(() => () => o.h.wait(() => d.SH()), []);
     let j = null != h && h === E,
         y = j ? function() {
-            d.cL(), S(""), I(null)
+            d.cL(), S(""), N(null)
         } : v,
-        O = s.useMemo(() => [{
+        R = s.useMemo(() => [{
             loading: T,
-            disabled: !b || 0 === E.length || "localhost" === N && 0 === C.length,
+            disabled: !I || 0 === E.length || "localhost" === b && 0 === C.length,
             variant: j ? "critical-primary" : "active",
             text: j ? m.intl.string(m.t.d6TR3I) : m.intl.string(m.t.qwuK5I),
             onClick: y
-        }], [E.length, T, j, b, C.length, y, N]);
+        }], [E.length, T, j, I, C.length, y, b]);
     return (0, i.jsxs)(l.Modal, {
         title: m.intl.string(m.t.f8fzky),
         subtitle: m.intl.string(m.t.a6Vill),
-        actions: O,
+        actions: R,
         onClose: t,
         transitionState: n,
         children: [null == p ? null : (0, i.jsx)("div", {
@@ -77,7 +77,7 @@ function h(e) {
                     required: !0,
                     value: E,
                     maxLength: 19,
-                    error: b ? null : m.intl.string(m.t.gPNgKO),
+                    error: I ? null : m.intl.string(m.t.gPNgKO),
                     onChange: function(e) {
                         S(e)
                     },
@@ -88,8 +88,8 @@ function h(e) {
                 children: (0, i.jsx)(r.l6P, {
                     selectionMode: "single",
                     label: m.intl.string(m.t["/GTqXG"]),
-                    disabled: !b || "" === E,
-                    value: N,
+                    disabled: !I || "" === E,
+                    value: b,
                     options: [{
                         value: "localhost",
                         label: m.intl.string(m.t["+Y9Y6r"]),
@@ -100,11 +100,11 @@ function h(e) {
                         id: "proxy"
                     }],
                     onSelectionChange: function(e) {
-                        I(e)
+                        N(e)
                     },
                     placeholder: "URL Origin Type"
                 })
-            }), "localhost" !== N ? null : (0, i.jsx)("div", {
+            }), "localhost" !== b ? null : (0, i.jsx)("div", {
                 className: g.I,
                 children: (0, i.jsx)(r.ksK, {
                     required: !0,

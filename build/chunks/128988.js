@@ -14,7 +14,7 @@ var i = n(627968),
     g = n(742710),
     m = n(463259),
     x = n(18983),
-    p = n(330966);
+    p = n(219016);
 
 function f(e) {
     let {
@@ -113,11 +113,11 @@ function f(e) {
     } = v.current ?? {
         x: 0,
         y: 0
-    }, N = _.x - T - 60 * !!I, S = _.y - b;
+    }, N = _.x - T - 60 * !!I, y = _.y - b;
     return (0, i.jsx)("div", {
         className: p.kL,
         style: {
-            transform: `translate3d(${N}px, ${S}px, 0)`
+            transform: `translate3d(${N}px, ${y}px, 0)`
         },
         children: j
     })

@@ -1,6 +1,6 @@
 /** chunk id: 468881 params = (module,exports,require) **/
 n.d(t, {
-    w: () => I
+    w: () => N
 });
 var i = n(934551),
     s = n(419954),
@@ -26,7 +26,7 @@ let f = (0, s.t_)(a.X.ACCESSIBILITY_PANEL, {
         useTitle: () => C.intl.string(C.t.G0neg7),
         buildLayout: () => [c.s, T._, x.b, p.T, g.V, h.G, u.v, _.T]
     }),
-    N = (0, s.t_)(a.X.ACCESSIBILITY_PANEL, {
+    b = (0, s.t_)(a.X.ACCESSIBILITY_PANEL, {
         useTitle: () => C.intl.string(C.t.G0neg7),
         buildLayout: () => [E.U, S.P, A.l, p.T, m.X],
         decoration: {
@@ -35,9 +35,9 @@ let f = (0, s.t_)(a.X.ACCESSIBILITY_PANEL, {
             sticky: !0
         }
     }),
-    I = (0, s.i4)(a.X.ACCESSIBILITY_SIDEBAR_ITEM, {
+    N = (0, s.i4)(a.X.ACCESSIBILITY_SIDEBAR_ITEM, {
         useTitle: () => C.intl.string(C.t.G0neg7),
         icon: i.AccessibilityIcon,
         useMenu: d.A,
-        buildLayout: () => (0, r.Ci)("AccessibilityPanel") ? [N] : [f]
+        buildLayout: () => (0, r.Ci)("AccessibilityPanel") ? [b] : [f]
     })

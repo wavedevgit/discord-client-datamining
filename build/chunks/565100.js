@@ -1,5 +1,4 @@
 /** chunk id: 565100 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     nd: "panel_ef5082",
     st: "panelGroup_ef5082",

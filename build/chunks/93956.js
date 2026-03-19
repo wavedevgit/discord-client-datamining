@@ -7,14 +7,14 @@ var l = n(627968);
 n(64700);
 var s = n(990078),
     i = n(397927),
-    a = n(985018),
-    r = n(312226);
+    r = n(985018),
+    a = n(544672);
 
 function o() {
     return (0, l.jsx)(s.m, {
-        text: a.intl.string(a.t["RO/KYj"]),
+        text: r.intl.string(r.t["RO/KYj"]),
         children: (0, l.jsx)("div", {
-            className: r.q,
+            className: a.q,
             children: (0, l.jsx)(i.Rf2, {
                 color: "currentColor",
                 size: "custom",

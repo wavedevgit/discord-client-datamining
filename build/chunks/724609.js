@@ -6,7 +6,7 @@ var i = n(627968);
 n(64700);
 var r = n(397927),
     a = n(985018),
-    l = n(727689);
+    l = n(426815);
 let s = () => (0, i.jsx)(r.LpS, {
     color: r.LU0.unsafe_rawColors.YELLOW_300.css,
     text: a.intl.string(a.t.vosPk5),

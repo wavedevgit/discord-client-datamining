@@ -1,40 +1,39 @@
 /** chunk id: 594609 params = (module,exports,require) **/
-"use strict";
-n.d(e, {
+n.d(t, {
     h: () => u
 });
 var i = n(627968),
-    r = n(64700),
-    s = n(158954),
-    l = n(397927),
+    l = n(64700),
+    r = n(158954),
+    s = n(397927),
     a = n(827343),
     o = n(985018);
 
-function c(t) {
-    let [e, n] = r.useState(!1);
-    return (0, i.jsx)(s.Modal, {
+function c(e) {
+    let [t, n] = l.useState(!1);
+    return (0, i.jsx)(r.Modal, {
         size: "md",
         title: o.intl.string(o.t["zQ1+Jw"]),
         subtitle: o.intl.string(o.t.K1gWXn),
         actions: [{
             text: o.intl.string(o.t.BddRzS),
             onClick: () => {
-                e && a.A.setSilenceWarning(!1), t.onClose()
+                t && a.A.setSilenceWarning(!1), e.onClose()
             },
             variant: "primary"
         }],
-        actionBarInput: (0, i.jsx)(s.Sc0, {
-            checked: e,
-            onChange: t => n(t),
+        actionBarInput: (0, i.jsx)(r.Sc0, {
+            checked: t,
+            onChange: e => n(e),
             label: o.intl.string(o.t.XAiAgD),
             labelType: "secondary"
         }),
-        ...t
+        ...e
     })
 }
 
 function u() {
-    (0, l.qfG)(t => (0, i.jsx)(c, {
-        ...t
+    (0, s.qfG)(e => (0, i.jsx)(c, {
+        ...e
     }))
 }

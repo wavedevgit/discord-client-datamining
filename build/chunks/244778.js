@@ -23,33 +23,33 @@ var i = n(627968),
     S = n(422936),
     C = n(234419),
     f = n(863156),
-    N = n(194509),
-    I = n(396375),
-    b = n(511484),
+    b = n(194509),
+    N = n(396375),
+    I = n(511484),
     v = n(231265),
     j = n(795269),
     y = n(38720),
-    O = n(788868),
-    R = n(985018),
-    L = n(562628),
-    D = n(196093),
-    P = n(979653),
-    G = n(255631),
-    M = n(193023);
+    R = n(788868),
+    O = n(985018),
+    P = n(472626),
+    L = n(196093),
+    D = n(979653),
+    M = n(255631),
+    G = n(193023);
 let U = () => {
         let e = (0, v._)();
         return (0, i.jsx)(j.ir, {
             text: e,
-            className: L.QR,
+            className: P.QR,
             colorOptions: j.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL
         })
     },
     k = () => (0, i.jsx)("div", {
-        className: L.Wm,
+        className: P.Wm,
         children: (0, i.jsx)(c.Heading, {
-            className: L.uC,
+            className: P.uC,
             variant: "heading-deprecated-12/extrabold",
-            children: R.intl.string(R.t["o/oRJB"])
+            children: O.intl.string(O.t["o/oRJB"])
         })
     }),
     V = e => {
@@ -59,21 +59,21 @@ let U = () => {
             } = e,
             l = (0, u.Ay)();
         if (s)
-            if (n === O.PremiumTypes.TIER_0) return (0, i.jsx)(c.Heading, {
+            if (n === R.PremiumTypes.TIER_0) return (0, i.jsx)(c.Heading, {
                 variant: "display-md",
-                className: L.dW,
-                children: R.intl.string(R.t.tUbSDK)
+                className: P.dW,
+                children: O.intl.string(O.t.tUbSDK)
             });
             else return (0, i.jsx)(c.Heading, {
                 variant: "display-md",
-                className: L.dW,
-                children: R.intl.string(R.t.Ipxkog)
+                className: P.dW,
+                children: O.intl.string(O.t.Ipxkog)
             });
-        t = n === O.PremiumTypes.TIER_0 ? (0, o.Mw)(l) ? D : P : (0, o.Mw)(l) ? G : M;
+        t = n === R.PremiumTypes.TIER_0 ? (0, o.Mw)(l) ? L : D : (0, o.Mw)(l) ? M : G;
         let a = (0, p.Dd)(n);
         return (0, i.jsx)("img", {
             src: t,
-            className: L.wm,
+            className: P.wm,
             alt: a
         })
     },
@@ -84,18 +84,18 @@ let U = () => {
             column2: s
         } = e;
         return (0, i.jsxs)("tr", {
-            className: a()(L.U1, L.YI, L.Y9),
+            className: a()(P.U1, P.YI, P.Y9),
             children: [(0, i.jsx)("th", {
                 scope: "col",
-                className: L.Cr,
+                className: P.Cr,
                 children: t
             }), (0, i.jsx)("th", {
                 scope: "col",
-                className: L.e4,
+                className: P.e4,
                 children: n
             }), (0, i.jsx)("th", {
                 scope: "col",
-                className: a()(L.e4, L.Y9),
+                className: a()(P.e4, P.Y9),
                 children: s
             })]
         })
@@ -112,27 +112,27 @@ let U = () => {
             shortRow: c = !1
         } = e;
         return (0, i.jsxs)("tr", {
-            className: a()(L.nM, {
-                [L.EE]: d,
-                [L.Y9]: r,
-                [L.kS]: o,
-                [L.YI]: l,
-                [L.vs]: c
+            className: a()(P.nM, {
+                [P.EE]: d,
+                [P.Y9]: r,
+                [P.kS]: o,
+                [P.YI]: l,
+                [P.vs]: c
             }),
             children: [(0, i.jsx)("th", {
                 scope: "row",
-                className: L.nx,
+                className: P.nx,
                 children: t
             }), (0, i.jsx)("td", {
-                className: a()(L.Hn, {
-                    [L.SD]: d
+                className: a()(P.Hn, {
+                    [P.SD]: d
                 }),
                 children: n
             }), (0, i.jsx)("td", {
-                className: a()(L.Hn, {
-                    [L.Y9]: r,
-                    [L.kS]: o,
-                    [L.SD]: d
+                className: a()(P.Hn, {
+                    [P.Y9]: r,
+                    [P.kS]: o,
+                    [P.SD]: d
                 }),
                 children: s
             })]
@@ -143,45 +143,45 @@ let U = () => {
                 className: n,
                 hideCTAs: l = !1,
                 headingOverride: v,
-                hidePill: D = !1,
-                selectedPlanColumnClassName: P,
-                selectedPlanTier: G = O.PremiumTypes.TIER_2
+                hidePill: L = !1,
+                selectedPlanColumnClassName: D,
+                selectedPlanTier: M = R.PremiumTypes.TIER_2
             } = e,
             {
-                analyticsLocations: M
+                analyticsLocations: G
             } = (0, m.Ay)(_.A.PREMIUM_MARKETING_PLAN_COMPARISON),
             H = (0, r.bG)([h.A], () => h.A.hasFetchedSubscriptions()),
-            F = (0, A.Y)(O.T7),
+            F = (0, A.Y)(R.T7),
             Y = (0, u.Ay)(),
             z = (0, o.qB)(Y),
             X = (0, r.bG)([x.default], () => x.default.getCurrentUser()),
             W = null != X && X.isPremiumWithPremiumGroup(),
-            K = (0, p.YE)(X, O.PremiumTypes.TIER_2),
+            K = (0, p.YE)(X, R.PremiumTypes.TIER_2),
             Z = (0, C.V)(),
             q = Z?.subscription_trial?.sku_id,
             J = (0, E.Us)(),
             Q = (0, S.O)(),
-            $ = null != Q && (0, b.U9)(Q, O.pe.TIER_2),
-            ee = (0, b.N1)(O.gD.PREMIUM_MONTH_TIER_2),
-            et = `${ee}/${(0,p.FJ)(O.WT.MONTH)}`,
-            en = (0, p.JM)(O.gD.PREMIUM_MONTH_TIER_0),
-            ei = (0, p.JM)(O.gD.PREMIUM_MONTH_TIER_2),
+            $ = null != Q && (0, I.U9)(Q, R.pe.TIER_2),
+            ee = (0, I.N1)(R.gD.PREMIUM_MONTH_TIER_2),
+            et = `${ee}/${(0,p.FJ)(R.WT.MONTH)}`,
+            en = (0, p.JM)(R.gD.PREMIUM_MONTH_TIER_0),
+            ei = (0, p.JM)(R.gD.PREMIUM_MONTH_TIER_2),
             es = (0, g.A)(),
             el = (0, y.R)(en, ei, $, et, es.fractionalState),
             ea = (0, T.cg)();
         if (!H || !F) return null;
         let er = {
             label: (0, i.jsx)(c.Heading, {
-                className: L.__invalid_textColor,
+                className: P.__invalid_textColor,
                 variant: "heading-lg/extrabold",
-                children: R.intl.string(R.t.ED4UVD)
+                children: O.intl.string(O.t.ED4UVD)
             }),
             column1: (0, i.jsx)(V, {
-                premiumType: O.PremiumTypes.TIER_0,
+                premiumType: R.PremiumTypes.TIER_0,
                 isPremiumGroup: W
             }),
             column2: (0, i.jsx)(V, {
-                premiumType: O.PremiumTypes.TIER_2,
+                premiumType: R.PremiumTypes.TIER_2,
                 isPremiumGroup: W
             })
         };
@@ -196,69 +196,69 @@ let U = () => {
         }) : el.push({
             label: null,
             column1: (0, i.jsxs)(i.Fragment, {
-                children: [q === O.pe.TIER_2 || ea ? (0, i.jsx)(I.A, {
-                    className: L.x6,
-                    subscriptionTier: O.pe.TIER_0,
+                children: [q === R.pe.TIER_2 || ea ? (0, i.jsx)(N.A, {
+                    className: P.x6,
+                    subscriptionTier: R.pe.TIER_0,
                     showIcon: !1,
                     look: d.pR.OUTLINED,
                     color: z ? d.XD.BRAND : d.XD.WHITE
-                }) : (0, i.jsx)(I.A, {
-                    className: L.x6,
-                    subscriptionTier: O.pe.TIER_0,
+                }) : (0, i.jsx)(N.A, {
+                    className: P.x6,
+                    subscriptionTier: R.pe.TIER_0,
                     showIcon: !1
-                }), J === O.PremiumTypes.TIER_2 || null != q ? null : (0, i.jsx)(N.A, {
-                    className: L.x6,
-                    subscriptionTier: O.pe.TIER_0
+                }), J === R.PremiumTypes.TIER_2 || null != q ? null : (0, i.jsx)(b.A, {
+                    className: P.x6,
+                    subscriptionTier: R.pe.TIER_0
                 })]
             }),
             column2: (0, i.jsxs)(i.Fragment, {
-                children: [q === O.pe.TIER_0 ? (0, i.jsx)(I.A, {
-                    className: L.x6,
-                    subscriptionTier: O.pe.TIER_2,
+                children: [q === R.pe.TIER_0 ? (0, i.jsx)(N.A, {
+                    className: P.x6,
+                    subscriptionTier: R.pe.TIER_2,
                     showIcon: !1,
                     look: d.pR.OUTLINED,
                     color: z ? d.XD.BRAND : d.XD.WHITE
-                }) : (0, i.jsx)(I.A, {
-                    className: L.x6,
-                    subscriptionTier: O.pe.TIER_2,
+                }) : (0, i.jsx)(N.A, {
+                    className: P.x6,
+                    subscriptionTier: R.pe.TIER_2,
                     showIcon: !1,
                     hasActivePromotion: ea
-                }), J === O.PremiumTypes.TIER_0 || null != q ? null : (0, i.jsx)(N.A, {
-                    className: L.x6,
-                    subscriptionTier: O.pe.TIER_2
+                }), J === R.PremiumTypes.TIER_0 || null != q ? null : (0, i.jsx)(b.A, {
+                    className: P.x6,
+                    subscriptionTier: R.pe.TIER_2
                 })]
             }),
             withBottomBorder: !1,
             withBottomBorderRadius: !0,
             buttonsRow: null == q
-        }), t = D ? null : null != q || null != J ? (0, i.jsx)(j.ir, {
-            text: null != q ? R.intl.string(R.t.IBYG5U) : R.intl.string(R.t.ce1v3V),
-            className: L.ls,
-            colorOptions: q === O.pe.TIER_0 ? z ? j.at.PREMIUM_TIER_0_GRADIENT_FILL : j.at.PREMIUM_TIER_0_WHITE_FILL : z ? K ? j.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL : j.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL : j.at.PREMIUM_TIER_2_WHITE_FILL
+        }), t = L ? null : null != q || null != J ? (0, i.jsx)(j.ir, {
+            text: null != q ? O.intl.string(O.t.IBYG5U) : O.intl.string(O.t.ce1v3V),
+            className: P.ls,
+            colorOptions: q === R.pe.TIER_0 ? z ? j.at.PREMIUM_TIER_0_GRADIENT_FILL : j.at.PREMIUM_TIER_0_WHITE_FILL : z ? K ? j.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL : j.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL : j.at.PREMIUM_TIER_2_WHITE_FILL
         }) : ea ? (0, i.jsx)(U, {}) : (0, i.jsx)(k, {});
-        let eo = q === O.pe.TIER_0 || J === O.PremiumTypes.TIER_0 || G === O.PremiumTypes.TIER_0;
+        let eo = q === R.pe.TIER_0 || J === R.PremiumTypes.TIER_0 || M === R.PremiumTypes.TIER_0;
         return (0, i.jsx)(m.f5, {
-            value: M,
+            value: G,
             children: (0, i.jsxs)("div", {
-                className: a()(L.zr, n),
+                className: a()(P.zr, n),
                 "data-testid": "v2-marketing-page-comparison-table",
                 children: [(0, i.jsx)(c.Heading, {
-                    className: a()(L.Qw, L.__invalid_textColor),
+                    className: a()(P.Qw, P.__invalid_textColor),
                     variant: "heading-xxl/extrabold",
-                    children: v ?? R.intl.string(R.t.FIbMh9)
+                    children: v ?? O.intl.string(O.t.FIbMh9)
                 }), W && (0, i.jsx)(f.A, {
                     premiumGroupRole: X.premiumGroupRole,
-                    className: L.vg
+                    className: P.vg
                 }), (0, i.jsxs)("div", {
-                    className: L.wY,
+                    className: P.wY,
                     children: [(0, i.jsx)("div", {
-                        className: a()(P, {
-                            [L.A9]: eo,
-                            [L.ce]: !eo && !W
+                        className: a()(D, {
+                            [P.A9]: eo,
+                            [P.ce]: !eo && !W
                         }),
                         children: !eo && t
                     }), (0, i.jsxs)("table", {
-                        className: L.tp,
+                        className: P.tp,
                         children: [(0, i.jsx)("thead", {
                             children: (0, i.jsx)(w, {
                                 ...er

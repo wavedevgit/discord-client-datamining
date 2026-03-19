@@ -1,87 +1,87 @@
 /** chunk id: 224850 params = (module,exports,require) **/
-t.d(n, {
-    A: () => f,
-    n: () => x
+n.d(t, {
+    A: () => T,
+    n: () => A
 });
-var i = t(627968),
-    a = t(64700),
-    s = t(503698),
-    l = t.n(s),
-    r = t(311907),
-    c = t(397927),
-    o = t(854627),
-    u = t(560138),
-    d = t(778712),
-    m = t(985018),
-    _ = t(115640);
+var i = n(627968),
+    l = n(64700),
+    r = n(503698),
+    s = n.n(r),
+    a = n(311907),
+    o = n(397927),
+    c = n(854627),
+    u = n(560138),
+    d = n(778712),
+    _ = n(985018),
+    E = n(445818);
 
-function f(e) {
+function T(e) {
     let {
-        smallerText: n,
-        className: t,
-        textColor: s,
-        isApplicationHome: o,
-        enablePremiumBrandRefresh: f
-    } = e, h = (0, r.bG)([u.A], () => u.A.affinities.slice(0, 3).reverse()), p = h.map((e, n) => (0, i.jsx)(x, {
+        smallerText: t,
+        className: n,
+        textColor: r,
+        isApplicationHome: c,
+        enablePremiumBrandRefresh: T
+    } = e, I = (0, a.bG)([u.A], () => u.A.affinities.slice(0, 3).reverse()), p = I.map((e, t) => (0, i.jsx)(A, {
         affinity: e,
-        applyMask: n !== h.length - 1,
-        size: f ? d._3.SIZE_24 : d._3.SIZE_32
-    }, e.id)), g = e => null != e.globalName ? e.globalName : e.username, E = a.useMemo(() => 3 === h.length ? m.intl.formatToPlainString(m.t.c7ETJH, {
-        username: g(h[2])
-    }) : 2 === h.length ? m.intl.formatToPlainString(m.t["st8Rh/"], {
-        username: g(h[1]),
-        otherUsername: g(h[0])
-    }) : 1 === h.length ? m.intl.formatToPlainString(m.t.dpjXPL, {
-        username: g(h[0])
-    }) : "", [h]);
-    return 0 === h.length ? null : (0, i.jsxs)("div", {
-        className: l()(f ? _.bD : _.kL, t, {
-            [_.gr]: !f && o
+        applyMask: t !== I.length - 1,
+        size: T ? d._3.SIZE_24 : d._3.SIZE_32
+    }, e.id)), N = e => null != e.globalName ? e.globalName : e.username, m = l.useMemo(() => 3 === I.length ? _.intl.formatToPlainString(_.t.c7ETJH, {
+        username: N(I[2])
+    }) : 2 === I.length ? _.intl.formatToPlainString(_.t["st8Rh/"], {
+        username: N(I[1]),
+        otherUsername: N(I[0])
+    }) : 1 === I.length ? _.intl.formatToPlainString(_.t.dpjXPL, {
+        username: N(I[0])
+    }) : "", [I]);
+    return 0 === I.length ? null : (0, i.jsxs)("div", {
+        className: s()(T ? E.bD : E.kL, n, {
+            [E.gr]: !T && c
         }),
         children: [(0, i.jsx)("div", {
-            className: _.zc,
+            className: E.zc,
             children: p
         }), (0, i.jsx)("div", {
-            className: _.FS,
+            className: E.FS,
             children: (0, i.jsx)(function() {
-                return f ? (0, i.jsx)(c.Text, {
+                return T ? (0, i.jsx)(o.Text, {
                     variant: "text-sm/medium",
-                    color: s,
-                    children: E
-                }) : n || o ? (0, i.jsx)(c.Text, {
-                    variant: o ? "text-sm/normal" : "text-lg/medium",
-                    color: s,
-                    children: E
-                }) : (0, i.jsx)(c.Heading, {
+                    color: r,
+                    children: m
+                }) : t || c ? (0, i.jsx)(o.Text, {
+                    variant: c ? "text-sm/normal" : "text-lg/medium",
+                    color: r,
+                    children: m
+                }) : (0, i.jsx)(o.Heading, {
                     variant: "heading-xl/medium",
-                    color: s,
-                    children: E
+                    color: r,
+                    children: m
                 })
             }, {})
         })]
     })
 }
 
-function x(e) {
+function A(e) {
     let {
-        affinity: n,
-        applyMask: t,
-        size: a
+        affinity: t,
+        applyMask: n,
+        size: l
     } = e, {
-        avatarSrc: s,
-        eventHandlers: r
-    } = (0, o.A)({
-        userId: n?.id,
-        size: a,
+        avatarSrc: r,
+        eventHandlers: a
+    } = (0, c.A)({
+        userId: t?.id,
+        size: l,
         animateOnHover: !0
     });
-    return (0, i.jsx)(c.euF, {
-        className: l()(_.Kk, {
-            [_.dK]: t
+    return (0, i.jsx)(o.euF, {
+        className: s()(E.Kk, {
+            [E.dK]: n
         }),
-        src: s,
-        "aria-label": n.username,
-        size: a,
-        ...r
+        src: r,
+        "aria-label": t.username,
+        size: l,
+        ...a
     })
 }

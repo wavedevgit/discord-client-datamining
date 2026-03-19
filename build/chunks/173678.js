@@ -1,23 +1,23 @@
 /** chunk id: 173678 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    M: () => g,
+    M: () => p,
     z: () => _
 });
 var i = n(627968),
     s = n(575593),
     l = n(397927),
-    r = n(576030),
-    a = n(245068),
+    a = n(576030),
+    r = n(245068),
     o = n(44120),
     c = n(353157),
     d = n(957785),
     u = n(788868),
     h = n(985018),
-    A = n(733557),
-    m = n(101616);
+    A = n(55751),
+    m = n(754558);
 
-function p(e, t, n) {
+function g(e, t, n) {
     (0, o.A)({
         skuId: e.skuId,
         isGift: !0,
@@ -27,25 +27,25 @@ function p(e, t, n) {
     })
 }
 
-function g(e, t) {
+function p(e, t) {
     let {
         moreCount: n,
         profileOwner: l,
         analyticsLocations: o,
         onViewWishlist: u,
         isSingleCard: m = !1,
-        wishlistId: g,
+        wishlistId: p,
         showTypeTooltip: _ = !1,
         cardSize: f
     } = t, x = null != e.bundleItems && e.bundleItems.length > 0, C = null != n && n > 0, E = _ && !C, I = C ? h.intl.string(h.t.TxBQzD) : h.intl.string(h.t.pLPjsb), N = {
         title: E ? h.intl.string(h.t.HFhcqh) : I,
         body: E ? h.intl.string(h.t.ilhtIa) : void 0,
-        renderIcon: E ? r.GM : void 0,
+        renderIcon: E ? a.GM : void 0,
         shouldShow: !0
     }, b = !x && e.collectiblesItem.type === s.R.PROFILE_EFFECT;
     return (0, i.jsx)(d.A, {
         onCardClick: () => {
-            C ? u() : p(e, l, o)
+            C ? u() : g(e, l, o)
         },
         tooltipConfig: N,
         shouldScalePreview: x || !b,
@@ -56,7 +56,7 @@ function g(e, t) {
                 };
                 return (0, i.jsx)("div", {
                     className: A.hT,
-                    children: (0, i.jsx)(a.X, {
+                    children: (0, i.jsx)(r.X, {
                         product: t,
                         isHighlighted: !1,
                         user: l
@@ -72,7 +72,7 @@ function g(e, t) {
         moreCount: n,
         isSingleCard: m,
         wishlistItem: e,
-        wishlistId: g,
+        wishlistId: p,
         cardSize: f
     }, e.skuId)
 }
@@ -80,15 +80,15 @@ function g(e, t) {
 function _(e, t) {
     let {
         profileOwner: n,
-        analyticsLocations: r,
-        wishlistId: a,
+        analyticsLocations: a,
+        wishlistId: r,
         onViewWishlist: o
-    } = t, c = null != e.bundleItems && e.bundleItems.length > 0, d = g(e, {
+    } = t, c = null != e.bundleItems && e.bundleItems.length > 0, d = p(e, {
         profileOwner: n,
-        analyticsLocations: r,
+        analyticsLocations: a,
         onViewWishlist: o,
         isSingleCard: !0,
-        wishlistId: a,
+        wishlistId: r,
         index: 0
     }), u = c ? h.intl.string(h.t.Zr5tjn) : function(e) {
         switch (e.collectiblesItem.type) {
@@ -108,7 +108,7 @@ function _(e, t) {
             className: m.S7,
             children: [(0, i.jsx)(l.DUT, {
                 onClick: () => {
-                    p(e, n, r)
+                    g(e, n, a)
                 },
                 className: m.Hh,
                 "aria-label": h.intl.string(h.t.pLPjsb),

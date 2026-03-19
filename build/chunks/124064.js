@@ -14,7 +14,7 @@ var i = n(627968),
     _ = n(128450),
     m = n(652215),
     g = n(985018),
-    A = n(973746);
+    A = n(656420);
 let x = (0, d.Ld)(),
     h = (0, u.createChannelRecord)({
         id: "1",
@@ -31,15 +31,15 @@ function T(e) {
         placeholder: T,
         currentBio: E,
         disabled: S = !1
-    } = e, [C, f] = s.useState(u ?? E), [N, I] = s.useState((0, r.x7)(C)), b = s.useRef(E), v = s.useRef(!1);
+    } = e, [C, f] = s.useState(u ?? E), [b, N] = s.useState((0, r.x7)(C)), I = s.useRef(E), v = s.useRef(!1);
     return s.useEffect(() => {
-        if (b.current !== E) {
+        if (I.current !== E) {
             let e = (0, r.x7)(E);
-            f(E), I(e)
+            f(E), N(e)
         }
-        b.current = E
+        I.current = E
     }, [E]), s.useEffect(() => {
-        void 0 !== u || C === E || v.current || (f(E), I((0, r.x7)(E)))
+        void 0 !== u || C === E || v.current || (f(E), N((0, r.x7)(E)))
     }, [u, E, C]), (0, i.jsxs)(_.A, {
         title: t,
         titleId: x,
@@ -53,12 +53,12 @@ function T(e) {
             innerClassName: A.Z,
             maxCharacterCount: m.NA2,
             onChange: function(e, t, n) {
-                t !== C && (f(t), I(n), d(t))
+                t !== C && (f(t), N(n), d(t))
             },
             placeholder: T,
             channel: h,
             textValue: C,
-            richValue: N,
+            richValue: b,
             emojiPickerCloseOnModalOuterClick: !0,
             parentModalKey: c.USER_SETTINGS_MODAL_KEY,
             type: a.oU.PROFILE_BIO_INPUT,

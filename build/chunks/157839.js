@@ -18,7 +18,7 @@ var i = n(627968),
     x = n(975662),
     h = n(322631),
     p = n(17307),
-    T = n(609195);
+    T = n(204593);
 let E = e => {
         let {
             showAllPerksButton: t,
@@ -53,35 +53,35 @@ let E = e => {
             leftAlignHeaders: S = !1,
             showAllPerksButton: C,
             headerClassname: f
-        } = e, N = s.useRef(null), I = n === h.cJ.WHATS_NEW, b = (0, r.bG)([c.default], () => c.default.getCurrentUser()), v = (0, A.E)();
+        } = e, b = s.useRef(null), N = n === h.cJ.WHATS_NEW, I = (0, r.bG)([c.default], () => c.default.getCurrentUser()), v = (0, A.E)();
         s.useEffect(() => {
-            I && v()
-        }, [v, I]);
-        let j = (0, p.G4)(I),
+            N && v()
+        }, [v, N]);
+        let j = (0, p.G4)(N),
             y = (0, x.A)(),
-            O = (0, p.LQ)(),
+            R = (0, p.LQ)(),
             {
-                fractionalState: R
+                fractionalState: O
             } = (0, d.A)(),
-            L = (0, u.d)(),
-            D = _.A.useExperiment({
+            P = (0, u.d)(),
+            L = _.A.useExperiment({
                 location: "PremiumPerks"
             }).enabled,
-            P = (0, m.O9)(),
-            G = (0, p.vx)({
+            D = (0, m.O9)(),
+            M = (0, p.vx)({
                 perksCards: y,
                 variant: n,
                 hideCardsOnNarrowScreen: !1,
-                isPremiumSubscriber: O,
-                fractionalState: R,
-                isInReverseTrial: L,
-                recurring3PPromotionExperiment: D,
-                showPremiumGroup: P,
-                isPremiumGroupMember: b?.isPremiumGroupMember()
+                isPremiumSubscriber: R,
+                fractionalState: O,
+                isInReverseTrial: P,
+                recurring3PPromotionExperiment: L,
+                showPremiumGroup: D,
+                isPremiumGroupMember: I?.isPremiumGroupMember()
             }),
-            M = G.some(e => null != e.pillText);
+            G = M.some(e => null != e.pillText);
         return (0, i.jsxs)("div", {
-            ref: N,
+            ref: b,
             className: a()(T.uW, {
                 [T.qO]: !S,
                 [T.Uv]: S
@@ -97,8 +97,8 @@ let E = e => {
                 className: a()(T.VA, {
                     [T.VA]: null == C || S,
                     [T.Xx]: null != C && !S,
-                    [T.Ij]: I || S,
-                    [T.Ob]: M,
+                    [T.Ij]: N || S,
+                    [T.Ob]: G,
                     [T.dO]: S,
                     [T.br]: !S
                 }),
@@ -108,7 +108,7 @@ let E = e => {
                 children: C
             }), (0, i.jsx)("div", {
                 className: T.Ui,
-                children: G.map((e, t) => (0, i.jsx)(g.A, {
+                children: M.map((e, t) => (0, i.jsx)(g.A, {
                     ...e,
                     forceShadow: l
                 }, `${e.name}_${t}`))

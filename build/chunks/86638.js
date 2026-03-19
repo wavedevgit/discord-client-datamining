@@ -26,10 +26,10 @@ var i = n(627968),
     T = n(479026),
     b = n(699976),
     N = n(652215),
-    S = n(788868),
-    y = n(518477),
+    y = n(788868),
+    S = n(518477),
     C = n(985018),
-    R = n(894100);
+    R = n(738878);
 let k = b.Z.SIZE_133;
 
 function L(e) {
@@ -62,22 +62,22 @@ function L(e) {
     }, []);
     let {
         trackUserProfileWishlistAction: N
-    } = (0, f.NJ)(), S = l.useCallback(() => {
+    } = (0, f.NJ)(), y = l.useCallback(() => {
         null != _ && (N({
             wishlistId: _,
-            action: y.Mq.WISHLIST_ITEM_CLICKED,
+            action: S.Mq.WISHLIST_ITEM_CLICKED,
             skuId: t.sku.id,
             productLines: new Set([t.sku.productLine])
         }), x())
     }, [x, t.sku, _, N]), L = l.useCallback(() => {
         null != _ && (N({
             wishlistId: _,
-            action: y.Mq.WISHLIST_ITEM_CLICKED,
+            action: S.Mq.WISHLIST_ITEM_CLICKED,
             skuId: t.sku.id,
             productLines: new Set([t.sku.productLine])
         }), p())
     }, [p, t.sku, _, N]), w = l.useCallback(() => {
-        (0, h.XA)(y.jM.SOMETHING_WENT_WRONG), o.ORC.announce(C.intl.string(C.t.F8FvUy))
+        (0, h.XA)(S.jM.SOMETHING_WENT_WRONG), o.ORC.announce(C.intl.string(C.t.F8FvUy))
     }, []), O = null != c ? (0, i.jsx)("div", {
         ref: T,
         className: R.BU,
@@ -104,10 +104,10 @@ function L(e) {
             }, u),
             disableHoverOrFocus: d,
             onHoverOrFocusChange: m,
-            onClick: S,
+            onClick: y,
             children: [(0, i.jsx)(E.AJ, {
                 spec: k,
-                onClick: G ? L : S,
+                onClick: G ? L : y,
                 isHoveringOrFocusing: g,
                 label: P,
                 icon: D
@@ -146,7 +146,7 @@ function w(e) {
         (0, p.a)(t.sku, {
             isGift: !e,
             giftRecipient: a,
-            giftingOrigin: S.vQ.USER_PROFILE_WISHLIST
+            giftingOrigin: y.vQ.USER_PROFILE_WISHLIST
         }, {
             analyticsLocations: [...r, c.A.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD_GIFT_BUTTON]
         })
@@ -180,7 +180,7 @@ function O(e) {
         (0, m.A)({
             skuId: t.sku.id,
             isGift: !e,
-            giftingOrigin: S.vQ.USER_PROFILE_WISHLIST,
+            giftingOrigin: y.vQ.USER_PROFILE_WISHLIST,
             analyticsLocations: o ?? [],
             giftRecipient: n
         })

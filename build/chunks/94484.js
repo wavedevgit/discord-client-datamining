@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(342494),
-    r = n(985018),
-    a = n(282222);
+    a = n(985018),
+    r = n(282222);
 
 function o(e) {
     let {
@@ -26,9 +26,9 @@ function o(e) {
     s.useEffect(() => {
         n?.()
     }, [n]);
-    let p = {
+    let g = {
         type: "image",
-        src: a.A,
+        src: r.A,
         aspectRatio: "16/9"
     };
     return (0, i.jsx)(l.AM, {
@@ -41,18 +41,18 @@ function o(e) {
         align: h,
         onRequestClose: o,
         actions: [{
-            text: r.intl.string(r.t.RzWDqY),
+            text: a.intl.string(a.t.RzWDqY),
             variant: "primary",
             onClick: c,
             onMouseDown: d
         }],
         targetElementRef: t,
-        title: r.intl.format(r.t.TpuAkN, {
+        title: a.intl.format(a.t.TpuAkN, {
             applicationName: m
         }),
-        body: r.intl.format(r.t.TlwPZw, {
+        body: a.intl.format(a.t.TlwPZw, {
             applicationName: m
         }),
-        graphic: p
+        graphic: g
     })
 }

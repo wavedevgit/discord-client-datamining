@@ -23,21 +23,21 @@ var i = n(627968),
     S = n(40185),
     C = n(994763),
     f = n(130946),
-    N = n(407775),
-    I = n(817267),
-    b = n(736455),
+    b = n(407775),
+    N = n(817267),
+    I = n(736455),
     v = n(509388),
     j = n(400292),
     y = n(536195),
-    O = n(577174),
-    R = n(127493),
-    L = n(23003),
-    D = n(16019),
-    P = n(768229),
-    G = n(788868),
-    M = n(652215),
+    R = n(577174),
+    O = n(127493),
+    P = n(23003),
+    L = n(16019),
+    D = n(768229),
+    M = n(788868),
+    G = n(652215),
     U = n(818348),
-    k = n(511030);
+    k = n(475616);
 let V = () => {
     let e = (0, r.zy)();
     (0, A.P)(g.b);
@@ -54,7 +54,7 @@ let V = () => {
         q = (0, o.bG)([p.A], () => p.A.getPremiumTypeSubscription()),
         J = null != q ? (0, E.EL)(q) : null,
         Q = null != J ? E.Ay.getSkuIdForPlan(J.planId) : null,
-        $ = null !== Q && Q !== G.pe.TIER_2 ? G.pe.TIER_2 : null,
+        $ = null !== Q && Q !== M.pe.TIER_2 ? M.pe.TIER_2 : null,
         ee = (0, S.cg)(),
         {
             analyticsLocations: et
@@ -64,12 +64,12 @@ let V = () => {
     }, []);
     let en = (0, h.DK)(x.W.NITRO, "PremiumMarketingHome"),
         ei = s.useMemo(() => !!en && "orbs" === new URLSearchParams(e.search).get("section"), [e.search, en]);
-    (0, C.z)(L.NI.ORB_REWARDS, ei);
-    let es = [b.k.HOME, b.k.WHATS_NEW, b.k.BEST_OF_NITRO, b.k.PLANS, b.k.COMPARE],
+    (0, C.z)(P.NI.ORB_REWARDS, ei);
+    let es = [I.k.HOME, I.k.WHATS_NEW, I.k.BEST_OF_NITRO, I.k.PLANS, I.k.COMPARE],
         {
             navBarSections: el,
             activeSectionId: ea
-        } = (0, P.o)(es),
+        } = (0, D.o)(es),
         {
             home: er,
             whatsNew: eo,
@@ -82,9 +82,9 @@ let V = () => {
                 [k.Hq]: !B
             }),
             "data-cy": "tier-0-marketing-page",
-            children: [(0, i.jsx)(I.A, {
+            children: [(0, i.jsx)(N.A, {
                 className: k.yH
-            }), (0, i.jsx)(O.A, {
+            }), (0, i.jsx)(R.A, {
                 navBarSections: el,
                 activeSectionId: ea
             }), (0, i.jsxs)("div", {
@@ -97,7 +97,7 @@ let V = () => {
                         onChange: e => F(e),
                         threshold: 0,
                         active: !0,
-                        children: (0, i.jsx)(D.A, {
+                        children: (0, i.jsx)(L.A, {
                             ref: l,
                             subscriptionTier: $,
                             isEligibleForBogoPromotion: ee
@@ -111,14 +111,14 @@ let V = () => {
                 }), (0, i.jsx)("div", {
                     className: k.So,
                     ref: eo.ref,
-                    children: (0, i.jsx)(R.Ct, {
+                    children: (0, i.jsx)(O.Ct, {
                         shouldLoadVideo: K,
                         isReducedMotion: B
                     })
                 }), (0, i.jsx)("div", {
                     className: k.KQ,
                     ref: ed.ref,
-                    children: (0, i.jsx)(R.oO, {
+                    children: (0, i.jsx)(O.oO, {
                         shouldLoadVideo: K,
                         isReducedMotion: B
                     })
@@ -130,7 +130,7 @@ let V = () => {
                         onChange: e => z(e),
                         threshold: .1,
                         active: !0,
-                        children: (0, i.jsx)(N.hy, {
+                        children: (0, i.jsx)(b.hy, {
                             innerRef: n
                         })
                     })
@@ -142,7 +142,7 @@ let V = () => {
             }), (0, i.jsx)(d.L, {
                 innerRef: V,
                 onChange: e => {
-                    e && !X && (T.default.track(M.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                    e && !X && (T.default.track(G.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                         location_stack: et
                     }), W(!0))
                 },
@@ -156,7 +156,7 @@ let V = () => {
                 isVisible: !H && !Y && K,
                 subscriptionTier: $,
                 isEligibleForBogoPromotion: ee
-            }), (0, i.jsx)(I.A, {
+            }), (0, i.jsx)(N.A, {
                 className: k.MF
             })]
         });

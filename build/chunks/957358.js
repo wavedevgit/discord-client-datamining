@@ -7,7 +7,7 @@ var i = n(627968),
     r = n(735438),
     l = n.n(r),
     s = n(998304),
-    o = n(542692);
+    o = n(485246);
 class d extends a.PureComponent {
     dataChangedAt;
     fillColor;

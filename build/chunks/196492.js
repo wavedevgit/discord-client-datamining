@@ -7,30 +7,30 @@ var i = n(627968);
 n(64700);
 var s = n(158954),
     l = n(397927),
-    r = n(73153),
-    a = n(272355),
+    a = n(73153),
+    r = n(272355),
     o = n(652215),
     c = n(985018);
 let d = "ActivityInviteManager",
     u = () => {
-        r.h.dispatch({
+        a.h.dispatch({
             type: "ACTIVITY_INVITE_MODAL_CLOSE"
         })
     };
-class h extends a.A {
+class h extends r.A {
     _initialize() {
-        r.h.subscribe("ACTIVITY_INVITE_MODAL_OPEN", this.handleModalOpen), r.h.subscribe("ACTIVITY_INVITE_MODAL_CLOSE", this.handleModalClose)
+        a.h.subscribe("ACTIVITY_INVITE_MODAL_OPEN", this.handleModalOpen), a.h.subscribe("ACTIVITY_INVITE_MODAL_CLOSE", this.handleModalClose)
     }
     _terminate() {
-        r.h.unsubscribe("ACTIVITY_INVITE_MODAL_OPEN", this.handleModalOpen), r.h.unsubscribe("ACTIVITY_INVITE_MODAL_CLOSE", this.handleModalClose)
+        a.h.unsubscribe("ACTIVITY_INVITE_MODAL_OPEN", this.handleModalOpen), a.h.unsubscribe("ACTIVITY_INVITE_MODAL_CLOSE", this.handleModalClose)
     }
     handleModalOpen(e) {
         let {
             activity: t,
-            isPrivate: r,
-            context: a
-        } = e, h = a === o.BRT.POPOUT ? l.KX8 : l.SYi;
-        r ? (0, l.qfG)(e => (0, i.jsx)(s.Modal, {
+            isPrivate: a,
+            context: r
+        } = e, h = r === o.BRT.POPOUT ? l.KX8 : l.SYi;
+        a ? (0, l.qfG)(e => (0, i.jsx)(s.Modal, {
             title: c.intl.formatToPlainString(c.t["2tN7ih"], {
                 name: t.name
             }),

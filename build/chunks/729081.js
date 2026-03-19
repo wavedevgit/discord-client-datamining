@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(735438),
+    a = n.n(l),
+    r = n(735438),
     o = n(835245),
     c = n(158954),
     d = n(311907),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(568598),
     A = n(313961),
     m = n(246356),
-    p = n(178213),
-    g = n(332772),
+    g = n(178213),
+    p = n(332772),
     _ = n(594832),
     f = n(631784),
     x = n(721932),
@@ -32,7 +32,7 @@ var i = n(627968),
     j = n(652215),
     R = n(806931),
     O = n(985018),
-    L = n(877409);
+    L = n(430071);
 let M = `vc-gifting-${(0,o.A)()}`;
 
 function D(e) {
@@ -46,8 +46,8 @@ function D(e) {
     s.useEffect(() => {
         t || n()
     }, [n, t]);
-    let G = (0, p.GG)("social_layer_storefront_gifting_mini_shelf");
-    (0, g.T)({
+    let G = (0, g.GG)("social_layer_storefront_gifting_mini_shelf");
+    (0, p.T)({
         location: "social_layer_storefront_gifting_mini_shelf"
     });
     let U = (0, d.bG)([u.A], () => u.A.getApplication(y.XR)),
@@ -67,7 +67,7 @@ function D(e) {
         }, [P, U]),
         k = s.useMemo(() => {
             let e = P.map(e => (0, R.Xw)(e) || (0, R.Ay)(e) ? e.user.id : null).filter(N.Vq);
-            return (0, a.uniq)([...w, ...e])
+            return (0, r.uniq)([...w, ...e])
         }, [P, w]),
         V = s.useMemo(() => [y.XR], []),
         {
@@ -146,7 +146,7 @@ function D(e) {
                         })]
                     })
                 }), (0, i.jsx)("div", {
-                    className: r()(L.Xb, {
+                    className: a()(L.Xb, {
                         [L.Im]: G
                     }),
                     children: "loading" === B || 0 === H.length ? (0, i.jsx)(c.y$y, {

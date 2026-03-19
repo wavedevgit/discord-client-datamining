@@ -30,22 +30,22 @@ function E(e) {
     } = (0, l.cf)([_.A], () => ({
         familyCenterInitialized: _.A.getIsInitialized(),
         isLoading: _.A.isLoading()
-    })), N = (0, g.k)(), {
-        selectedTab: I,
-        handleTabChange: b
+    })), b = (0, g.k)(), {
+        selectedTab: N,
+        handleTabChange: I
     } = (0, m.A)(), v = c.default.getCurrentUser(), j = null != E, y = C && null != v && !j;
     (0, a.Ay)(() => {
         (0, d.d)("family-center"), null != n && n()
     });
-    let O = {
+    let R = {
             isConsideredAdult: "adult" === E,
             numOfAcceptedRequests: S,
-            selectedTab: I,
-            selectedTeenId: N
+            selectedTab: N,
+            selectedTeenId: b
         },
-        R = i.useRef(O);
+        O = i.useRef(R);
     return i.useEffect(() => {
-        R.current = O
+        O.current = R
     }), i.useEffect(() => {
         if (C && j) {
             let {
@@ -53,7 +53,7 @@ function E(e) {
                 numOfAcceptedRequests: n,
                 selectedTab: i,
                 selectedTeenId: l
-            } = R.current;
+            } = O.current;
             u.default.track(p.HAw.FAMILY_CENTER_VIEWED, {
                 is_considered_adult: e,
                 num_of_accepted_links: n,
@@ -68,8 +68,8 @@ function E(e) {
         y && (0, r.yO)(T.w_.FAMILY_CENTER)
     }, [y]), {
         isLoading: f,
-        selectedTab: I,
-        handleTabChange: b,
+        selectedTab: N,
+        handleTabChange: I,
         showAgeGateModal: y
     }
 }

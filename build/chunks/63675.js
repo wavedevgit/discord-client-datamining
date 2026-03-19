@@ -17,7 +17,7 @@ var s = n(503698),
     g = n(911180),
     A = n(128450),
     x = n(985018),
-    h = n(114403);
+    h = n(890069);
 
 function p(e) {
     let {
@@ -31,18 +31,18 @@ function p(e) {
         showPremiumIcon: S = !0,
         showResetThemeButton: C = !1,
         forcedDivider: f
-    } = e, N = (0, u.Ay)(t.id, T), {
-        primaryColor: I,
-        secondaryColor: b
+    } = e, b = (0, u.Ay)(t.id, T), {
+        primaryColor: N,
+        secondaryColor: I
     } = (0, _.A)({
         user: t,
-        displayProfile: N,
+        displayProfile: b,
         pendingThemeColors: s,
         isPreview: !0
-    }), v = m.Ay.canUsePremiumProfileCustomization(t), j = null != n ? n : t.getAvatarURL(T, 80), y = (0, d.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), O = (0, c.rh)(j, y, !1);
-    if (null == I || null == b) return null;
-    let R = e => {
-        a(r()(e, N?.themeColors) ? void 0 : e)
+    }), v = m.Ay.canUsePremiumProfileCustomization(t), j = null != n ? n : t.getAvatarURL(T, 80), y = (0, d.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), R = (0, c.rh)(j, y, !1);
+    if (null == N || null == I) return null;
+    let O = e => {
+        a(r()(e, b?.themeColors) ? void 0 : e)
     };
     return (0, i.jsx)(A.A, {
         title: x.intl.string(x.t.DMeO2X),
@@ -55,9 +55,9 @@ function p(e) {
             children: [(0, i.jsx)("div", {
                 className: h.YX,
                 children: (0, i.jsx)(g.A, {
-                    onChange: e => R([e, b]),
-                    color: I,
-                    suggestedColors: O,
+                    onChange: e => O([e, I]),
+                    color: N,
+                    suggestedColors: R,
                     showEyeDropper: !0,
                     label: (0, i.jsx)(d.Text, {
                         className: h.yz,
@@ -70,9 +70,9 @@ function p(e) {
             }), (0, i.jsx)("div", {
                 className: h.YX,
                 children: (0, i.jsx)(g.A, {
-                    onChange: e => R([I, e]),
-                    color: b,
-                    suggestedColors: O,
+                    onChange: e => O([N, e]),
+                    color: I,
+                    suggestedColors: R,
                     showEyeDropper: !0,
                     label: (0, i.jsx)(d.Text, {
                         className: h.yz,
@@ -89,7 +89,7 @@ function p(e) {
                     variant: "secondary",
                     size: "sm",
                     text: x.intl.string(x.t["L+GmoR"]),
-                    onClick: () => R([null, null])
+                    onClick: () => O([null, null])
                 })
             })]
         })

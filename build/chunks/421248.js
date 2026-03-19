@@ -16,7 +16,7 @@ var s = n(873298),
     m = n(86689),
     g = n(639383),
     A = n(985018),
-    x = n(842130);
+    x = n(870236);
 
 function h() {
     let e = (0, _.A)() ?? !0,
@@ -49,7 +49,7 @@ function h() {
             label: A.intl.string(A.t["5k5OFp"])
         };
     e && (S.unshift(f), C.unshift(f));
-    let N = {
+    let b = {
         isDisabled: n,
         tooltipText: t ? A.intl.string(x.default["6Af/cw"]) : void 0
     };
@@ -62,7 +62,7 @@ function h() {
                 explicitContentFriendDm: e
             }),
             options: S,
-            ...N
+            ...b
         }), (0, i.jsx)(g.A, {
             title: A.intl.string(A.t["Yh+HX1"]),
             value: T,
@@ -70,7 +70,7 @@ function h() {
                 explicitContentNonFriendDm: e
             }),
             options: S,
-            ...N
+            ...b
         }), (0, i.jsx)(g.A, {
             title: A.intl.string(A.t["FP+a42"]),
             value: h,

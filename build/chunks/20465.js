@@ -7,8 +7,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(735438),
+    a = n.n(l),
+    r = n(735438),
     o = n(497766),
     c = n(311907),
     d = n(397927),
@@ -16,8 +16,8 @@ var i = n(627968),
     h = n(367513),
     A = n(843472),
     m = n(386467),
-    p = n(465364),
-    g = n(763754),
+    g = n(465364),
+    p = n(763754),
     _ = n(448368),
     f = n(378058),
     x = n(148355),
@@ -28,7 +28,7 @@ var i = n(627968),
     b = n(403362),
     S = n(652215),
     T = n(838541),
-    v = n(279633);
+    v = n(262159);
 let y = 10 * N.A.Millis.SECOND;
 
 function j(e) {
@@ -40,13 +40,13 @@ function j(e) {
     } = (0, c.cf)([E.A], () => ({
         isBlocked: E.A.isBlockedForMessage(t),
         isIgnored: E.A.isIgnoredForMessage(t)
-    }), [t]), a = (0, g.X4)(t), o = s.useContext(m.A), [u, C] = s.useState(!1), N = s.useCallback(e => {
+    }), [t]), r = (0, p.X4)(t), o = s.useContext(m.A), [u, C] = s.useState(!1), N = s.useCallback(e => {
         "A" !== e.target.nodeName && (h.A.updateChatOpen(t.channel_id, !0), A.A.jumpToMessage({
             channelId: t.channel_id,
             messageId: t.id,
             flash: !0
         }))
-    }, [t.channel_id, t.id]), b = null != t.content && "" !== t.content ? (0, p.Ay)(t, {
+    }, [t.channel_id, t.id]), b = null != t.content && "" !== t.content ? (0, g.Ay)(t, {
         isInteracting: u
     }).content : null, {
         contentPlaceholder: S,
@@ -73,7 +73,7 @@ function j(e) {
         },
         onClick: N,
         children: [(0, i.jsxs)("div", {
-            className: r()(v.kn, {
+            className: a()(v.kn, {
                 [v.mK]: t.mentioned
             }),
             children: [null != L ? null : R, y ?? L ?? (0, i.jsx)("span", {
@@ -81,10 +81,10 @@ function j(e) {
             }), null != L ? null : j]
         }), (0, i.jsx)("img", {
             alt: "",
-            src: a?.guildMemberAvatar != null && null != o ? (0, I.s7)({
+            src: r?.guildMemberAvatar != null && null != o ? (0, I.s7)({
                 guildId: o,
                 userId: t.author.id,
-                avatar: a.guildMemberAvatar
+                avatar: r.guildMemberAvatar
             }) : t.author.getAvatarURL(o, 32),
             className: v.my
         })]
@@ -104,8 +104,8 @@ function R(e) {
             isFrozen: n,
             count: i,
             lingerMs: l
-        } = e, [r, a] = s.useState([]), [o, d] = s.useState(!1), h = s.useRef(null), A = s.useRef(void 0), m = s.useCallback(() => {
-            a([]), d(!0)
+        } = e, [a, r] = s.useState([]), [o, d] = s.useState(!1), h = s.useRef(null), A = s.useRef(void 0), m = s.useCallback(() => {
+            r([]), d(!0)
         }, []);
         s.useEffect(() => {
             function e(e) {
@@ -114,7 +114,7 @@ function R(e) {
                     message: i,
                     optimistic: s
                 } = e;
-                n !== t || i.type === S.lAJ.STAGE_START || i.type === S.lAJ.STAGE_END || i.type === S.lAJ.STAGE_TOPIC || i.type === S.lAJ.STAGE_SPEAKER || i.type === S.lAJ.STAGE_RAISE_HAND || s || (clearTimeout(A.current), A.current = setTimeout(m, l), a(e => [...e, i.id]))
+                n !== t || i.type === S.lAJ.STAGE_START || i.type === S.lAJ.STAGE_END || i.type === S.lAJ.STAGE_TOPIC || i.type === S.lAJ.STAGE_SPEAKER || i.type === S.lAJ.STAGE_RAISE_HAND || s || (clearTimeout(A.current), A.current = setTimeout(m, l), r(e => [...e, i.id]))
             }
             return u.h.subscribe("MESSAGE_CREATE", e), () => {
                 u.h.unsubscribe("MESSAGE_CREATE", e)
@@ -122,38 +122,38 @@ function R(e) {
         }, [t, m, i, l]), s.useEffect(() => () => {
             clearTimeout(A.current)
         }, []), s.useEffect(() => {
-            r.length > 3 && a(e => {
+            a.length > 3 && r(e => {
                 let t = e.length - 3;
                 return [...e.slice(t)]
             })
-        }, [r]), n && null == h.current ? h.current = r : n || null == h.current || (h.current = null);
-        let p = h.current ?? r;
+        }, [a]), n && null == h.current ? h.current = a : n || null == h.current || (h.current = null);
+        let g = h.current ?? a;
         return {
             toastsHidden: o,
-            toastMessages: (0, c.yK)([C.A], () => p.map(e => C.A.getMessage(t, e)), [t, p]).filter(b.Vq)
+            toastMessages: (0, c.yK)([C.A], () => g.map(e => C.A.getMessage(t, e)), [t, g]).filter(b.Vq)
         }
     }({
         channelId: t,
         isFrozen: l,
         count: 3,
         lingerMs: y
-    }), p = s.useRef({}), [g, _] = s.useState({}), f = s.useCallback((e, t) => {
-        null == t ? delete p.current[e] : p.current[e] = t
-    }, []), x = s.useRef(g);
+    }), g = s.useRef({}), [p, _] = s.useState({}), f = s.useCallback((e, t) => {
+        null == t ? delete g.current[e] : g.current[e] = t
+    }, []), x = s.useRef(p);
     s.useLayoutEffect(() => {
-        x.current = g
+        x.current = p
     }), s.useLayoutEffect(() => {
         let e = {},
             t = 0;
         for (let n of m) {
-            let i = p.current[n.id] ?? 0;
+            let i = g.current[n.id] ?? 0;
             e[n.id] = t, t += i + 8
-        }(0, a.isEqual)(e, x.current) || _(e)
+        }(0, r.isEqual)(e, x.current) || _(e)
     }, [m]);
     let E = m.map(e => ({
             message: e,
-            height: p.current[e.id],
-            y: g[e.id]
+            height: g.current[e.id],
+            y: p[e.id]
         })),
         I = (0, d.pnh)(E, {
             keys: e => e.message.id,
@@ -192,7 +192,7 @@ function R(e) {
     return (0, i.jsx)(d.NPJ, {
         theme: S.NJ8.DARK,
         children: e => (0, i.jsx)("div", {
-            className: r()(n, e),
+            className: a()(n, e),
             onMouseEnter: () => {
                 h(!0)
             },

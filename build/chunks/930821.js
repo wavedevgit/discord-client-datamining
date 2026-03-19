@@ -1,5 +1,4 @@
 /** chunk id: 930821 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     nd: "panel_fe7ab2",
     wx: "header_fe7ab2",

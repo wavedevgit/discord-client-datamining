@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(397927),
     c = n(80682),
     d = n(845056),
@@ -15,23 +15,23 @@ var i = n(627968),
     h = n(713654),
     A = n(832163),
     m = n(565688),
-    p = n(533562),
-    g = n(93879),
+    g = n(533562),
+    p = n(93879),
     _ = n(71393),
     f = n(576705),
     x = n(977997),
     C = n(954571),
     E = n(246084),
     I = n(667936),
-    N = n(879349),
+    N = n(101730),
     b = n(884415),
     S = n(611330),
     T = n(652215),
     v = n(699976),
     y = n(985018),
-    j = n(439792),
-    R = n(335419),
-    O = n(248789);
+    j = n(611422),
+    R = n(386777),
+    O = n(513679);
 
 function L(e) {
     let t, {
@@ -52,12 +52,12 @@ function L(e) {
     }, [l, f]), (0, c.Eq)(t, "VoiceChannelActivities");
     let N = (0, u.Ay)(l),
         b = Array.from((0, u.Rz)(N).values()),
-        S = (0, p.W)(),
+        S = (0, g.W)(),
         R = (0, d.mM)(f),
         L = (0, m.m)({
             location: "voice_channel_activities"
         }),
-        D = (0, a.bG)([A.A], () => A.A.getStorefrontDetectableGameAndApplicationIds()),
+        D = (0, r.bG)([A.A], () => A.A.getStorefrontDetectableGameAndApplicationIds()),
         G = R.length + b.length > 0;
     return (s.useEffect(() => {
         G && C.default.track(T.HAw.OPEN_POPOUT, {
@@ -65,7 +65,7 @@ function L(e) {
             channel_id: l.id
         })
     }, [G, l.id]), G) ? (0, i.jsxs)(o.HOs, {
-        className: r()(O.popover, j.kL),
+        className: a()(O.popover, j.kL),
         children: [(0, i.jsx)(M, {
             channel: l,
             isChannelSelected: x,
@@ -80,18 +80,18 @@ function L(e) {
         }, t)), R.map((e, t) => {
             let {
                 members: n,
-                activity: r
-            } = e, a = r.application_id;
-            return (null != S && (a = S), L && null != a && D.has(a)) ? (0, i.jsxs)(s.Fragment, {
+                activity: a
+            } = e, r = a.application_id;
+            return (null != S && (r = S), L && null != r && D.has(r)) ? (0, i.jsxs)(s.Fragment, {
                 children: [(0, i.jsx)(I.A, {
-                    presenceActivity: r,
+                    presenceActivity: a,
                     channel: l,
                     members: n,
                     onAction: _
-                }), (0, i.jsx)(g.A, {
+                }), (0, i.jsx)(p.A, {
                     className: j.L,
                     rewardOfferNoticeClassName: j.Nh,
-                    applicationId: a,
+                    applicationId: r,
                     userIds: n.map(e => e.user.id),
                     location: "voice_channel",
                     guildId: l.guild_id,
@@ -100,7 +100,7 @@ function L(e) {
                     cardSpec: v.Z.SIZE_110
                 })]
             }, `${t}-with-gifting-breadcrumb`) : (0, i.jsx)(I.A, {
-                presenceActivity: r,
+                presenceActivity: a,
                 channel: l,
                 members: n,
                 onAction: _
@@ -118,7 +118,7 @@ function L(e) {
                             (0, o.mMO)(async () => {
                                 let {
                                     default: e
-                                } = await Promise.all([n.e("14033"), n.e("78151")]).then(n.bind(n, 585265));
+                                } = await Promise.all([n.e("14033"), n.e("28335")]).then(n.bind(n, 585265));
                                 return t => (0, i.jsx)(e, {
                                     ...t,
                                     guild: h
@@ -137,14 +137,14 @@ function M(e) {
         channel: t,
         isChannelSelected: n,
         voiceStatesCount: s
-    } = e, l = (0, a.bG)([f.A], () => !f.A.can(T.xBc.CONNECT, t)), o = (0, a.bG)([x.A], () => x.A.hasVideo(t.id)), c = (0, E.Ay)({
+    } = e, l = (0, r.bG)([f.A], () => !f.A.can(T.xBc.CONNECT, t)), o = (0, r.bG)([x.A], () => x.A.hasVideo(t.id)), c = (0, E.Ay)({
         channel: t,
         locked: l,
         video: o,
         selected: n
-    }), d = (0, a.bG)([_.A], () => _.A.getGuild(t.guild_id));
+    }), d = (0, r.bG)([_.A], () => _.A.getGuild(t.guild_id));
     return null == (0, h.gU)(t, d) ? null : (0, i.jsxs)("div", {
-        className: r()(j.oT, R.oT),
+        className: a()(j.oT, R.oT),
         children: [(0, i.jsx)(N.A, {
             channel: t
         }), c ? (0, i.jsx)(b.A, {

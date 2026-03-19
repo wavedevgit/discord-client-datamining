@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(665260),
+    a = n.n(l),
+    r = n(665260),
     o = n(158954),
     c = n(314116),
     d = n(397927),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(843472),
     A = n(47167),
     m = n(12351),
-    p = n(386467),
-    g = n(928658),
+    g = n(386467),
+    p = n(928658),
     _ = n(226698),
     f = n(994500),
     x = n(287809),
@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(636922),
     I = n(652215),
     N = n(985018),
-    b = n(641131),
-    S = n(378720);
+    b = n(733045),
+    S = n(477986);
 class T extends s.PureComponent {
     state = {
         report: !1,
@@ -41,12 +41,12 @@ class T extends s.PureComponent {
             moderatorReportData: s
         } = this.props, {
             moderatorReportChannelId: l,
-            isFlagResolved: r
+            isFlagResolved: a
         } = s ?? {};
-        e ? (0, g.V2)(i, "message_delete_alert", () => h.A.deleteMessage(n.id, i.id).then(() => {
-            null != l && (t && !r && _.A.resolveFlag(l), this.props.onClose?.())
+        e ? (0, p.V2)(i, "message_delete_alert", () => h.A.deleteMessage(n.id, i.id).then(() => {
+            null != l && (t && !a && _.A.resolveFlag(l), this.props.onClose?.())
         })) : h.A.deleteMessage(n.id, i.id).then(() => {
-            null != l && (t && !r && _.A.resolveFlag(l), this.props.onClose?.())
+            null != l && (t && !a && _.A.resolveFlag(l), this.props.onClose?.())
         })
     };
     handleDeleteMana = () => {
@@ -69,16 +69,16 @@ class T extends s.PureComponent {
             } = this.state,
             {
                 channel: l,
-                message: r,
+                message: a,
                 showContextMenuHint: c,
                 moderatorReportData: u,
                 ...h
             } = this.props,
-            A = l.type === I.rbe.GUILD_ANNOUNCEMENT && (0, a.Lt)(r.flags, I.pr7.CROSSPOSTED);
+            A = l.type === I.rbe.GUILD_ANNOUNCEMENT && (0, r.Lt)(a.flags, I.pr7.CROSSPOSTED);
         c && (e = (0, i.jsx)(m.A, {
             className: S.Vc,
             children: N.intl.format(N.t.IxY7E6, {})
-        })), (0, C.AR)(r) && (t = (0, i.jsx)("div", {
+        })), (0, C.AR)(a) && (t = (0, i.jsx)("div", {
             className: S.Vc,
             children: (0, i.jsx)(d.dOG, {
                 label: N.intl.string(N.t.x0jzo9),
@@ -86,13 +86,13 @@ class T extends s.PureComponent {
                 onChange: this.handleToggleReport
             })
         }));
-        let g = A ? N.intl.string(N.t["2kHABX"]) : N.intl.string(N.t.AMvpS4),
+        let p = A ? N.intl.string(N.t["2kHABX"]) : N.intl.string(N.t.AMvpS4),
             _ = (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)("div", {
                     className: S.iU,
                     children: (0, i.jsx)(E.A, {
                         channel: l,
-                        message: r,
+                        message: a,
                         disableInteraction: !0
                     })
                 }), t, e]
@@ -101,11 +101,11 @@ class T extends s.PureComponent {
             let {
                 isFlagResolved: e
             } = u;
-            return (0, i.jsx)(p.A.Provider, {
+            return (0, i.jsx)(g.A.Provider, {
                 value: l.guild_id,
                 children: (0, i.jsx)(o.Modal, {
                     title: N.intl.string(N.t.MWMcg7),
-                    subtitle: g,
+                    subtitle: p,
                     actions: [{
                         variant: "critical-primary",
                         text: N.intl.string(N.t.oyYWHE),
@@ -121,11 +121,11 @@ class T extends s.PureComponent {
                 })
             })
         }
-        return (0, i.jsx)(p.A.Provider, {
+        return (0, i.jsx)(g.A.Provider, {
             value: l.guild_id,
             children: (0, i.jsx)(o.Modal, {
                 title: A ? N.intl.string(N.t.aIz1oV) : N.intl.string(N.t.MWMcg7),
-                subtitle: g,
+                subtitle: p,
                 actions: [{
                     text: N.intl.string(N.t["ETE/oC"]),
                     onClick: h.onClose,
@@ -179,7 +179,7 @@ let v = {
             cancelText: N.intl.string(N.t["ETE/oC"]),
             children: (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)("div", {
-                    className: r()(S.iU, S.YK),
+                    className: a()(S.iU, S.YK),
                     children: (0, i.jsx)(E.A, {
                         channel: e,
                         message: t,

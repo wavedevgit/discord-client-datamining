@@ -19,11 +19,11 @@ var i = n(627968),
     h = n(544028),
     p = n(652215),
     T = n(986238),
-    E = n(138666),
-    S = n(506823),
-    C = n(473169);
+    E = n(258588),
+    S = n(436833),
+    C = n(522759);
 let f = ["discord_web", "discord_marketing", "discord_developers", "discord_ios", "discord_android"],
-    N = [{
+    b = [{
         id: "branch",
         value: "branch",
         label: "Branch Name"
@@ -33,10 +33,10 @@ let f = ["discord_web", "discord_marketing", "discord_developers", "discord_ios"
         label: "Commit SHA"
     }];
 
-function I(e) {
+function N(e) {
     return "discord_ios" in e || "discord_android" in e
 }
-class b extends s.Component {
+class I extends s.Component {
     handleRemoveBuildOverride = () => {
         this.props.onBuildOverrideRemoved(this.props.project)
     };
@@ -74,7 +74,7 @@ class b extends s.Component {
                     children: (0, i.jsx)(u.l6P, {
                         selectionMode: "single",
                         label: "Override Type",
-                        options: N,
+                        options: b,
                         onSelectionChange: this.handleOverrideTypeChanged,
                         value: t,
                         disabled: s
@@ -241,7 +241,7 @@ class v extends s.Component {
             saving: t,
             errors: n
         } = this.state;
-        return null == e ? null : o().map(e, (e, s) => (0, i.jsx)(b, {
+        return null == e ? null : o().map(e, (e, s) => (0, i.jsx)(I, {
             project: s,
             overrideType: e.type,
             overrideId: e.id,
@@ -287,7 +287,7 @@ class v extends s.Component {
             }), (0, i.jsx)(u.Button, {
                 variant: "primary",
                 text: "Save Build Overrides",
-                disabled: I(t ?? {}),
+                disabled: N(t ?? {}),
                 onClick: this.handleSaveChanges,
                 loading: e
             })]
@@ -303,7 +303,7 @@ class v extends s.Component {
             className: C.QX
         }) : null != s && 0 === Object.keys(s).length ? this.renderEmpty() : this.renderItems();
         let l = !n && !t && this.getAvailableProjects().length > 0,
-            a = I(s ?? {}) && "stable" !== window.GLOBAL_ENV.RELEASE_CHANNEL ? (0, i.jsx)(u.Text, {
+            a = N(s ?? {}) && "stable" !== window.GLOBAL_ENV.RELEASE_CHANNEL ? (0, i.jsx)(u.Text, {
                 color: "text-feedback-critical",
                 variant: "text-md/normal",
                 children: "Mobile build overrides must be generated using the desktop/web stable client for now!"
@@ -464,7 +464,7 @@ class j extends s.Component {
         }), 0 === e.meta.user_ids.length && this.setStatusMessage("Warning! No users added to the whitelist! This link could be used by anyone to override their build.", 1))
     };
     isMobile() {
-        return I(this.props.buildOverrides ?? {})
+        return N(this.props.buildOverrides ?? {})
     }
     renderSettingsForm() {
         let {

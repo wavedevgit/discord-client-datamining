@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     _: () => l,
-    e: () => r
+    e: () => a
 });
 var i = n(73153),
     s = n(435183);
@@ -13,6 +13,6 @@ async function l(e, t) {
     }), await s.Ay.updateVoiceChannelStatus(e, t)
 }
 
-function r(e) {
+function a(e) {
     s.Ay.updateVoiceChannelStatus(e, "")
 }

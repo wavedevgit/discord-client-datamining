@@ -6,17 +6,17 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(735438),
-    o = n.n(a),
+    a = n.n(l),
+    r = n(735438),
+    o = n.n(r),
     c = n(311907),
     d = n(397927),
     u = n(730134),
     h = n(378570),
     A = n(863005),
     m = n(707539),
-    p = n(747926),
-    g = n(576705),
+    g = n(747926),
+    p = n(576705),
     _ = n(222823),
     f = n(287809),
     x = n(486020),
@@ -24,24 +24,24 @@ var i = n(627968),
     E = n(652215),
     I = n(37411),
     N = n(985018),
-    b = n(533848),
-    S = n(248789);
+    b = n(64022),
+    S = n(513679);
 
 function T(e) {
     let {
         channel: t
-    } = e, l = (0, c.yK)([A.A, _.Ay, g.A], () => {
+    } = e, l = (0, c.yK)([A.A, _.Ay, p.A], () => {
         let e = A.A.getActiveJoinedRelevantThreadsForParent(t.guild_id, t.id);
-        return o()(A.A.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(o().values(A.A.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && g.A.can(E.xBc.VIEW_CHANNEL, t)).sort((e, t) => {
+        return o()(A.A.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(o().values(A.A.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && p.A.can(E.xBc.VIEW_CHANNEL, t)).sort((e, t) => {
             let n = _.Ay.lastMessageId(e.id),
                 i = _.Ay.lastMessageId(t.id);
             return C.default.compare(n, i)
         }).reverse().value()
-    }), a = t.isForumLikeChannel() ? 5 : 3, u = t.isForumLikeChannel() ? d.bSJ : d.ysw;
+    }), r = t.isForumLikeChannel() ? 5 : 3, u = t.isForumLikeChannel() ? d.bSJ : d.ysw;
     return s.useEffect(() => {
         (0, m.TE)()
     }, []), (0, i.jsxs)("div", {
-        className: r()(S.popover, b.SW),
+        className: a()(S.popover, b.SW),
         children: [(0, i.jsx)(d.Text, {
             variant: "text-sm/medium",
             color: "text-muted",
@@ -49,9 +49,9 @@ function T(e) {
             children: t.isForumLikeChannel() ? N.intl.string(N.t.ioVdO2) : N.intl.string(N.t.VNYs2v)
         }), (0, i.jsxs)("div", {
             className: b.p_,
-            children: [l.slice(0, t.isForumLikeChannel() ? l.length : a).map(e => (0, i.jsx)(v, {
+            children: [l.slice(0, t.isForumLikeChannel() ? l.length : r).map(e => (0, i.jsx)(v, {
                 thread: e
-            }, e.id)).filter(e => s.isValidElement(e)).slice(0, a), (0, i.jsxs)(d.DUT, {
+            }, e.id)).filter(e => s.isValidElement(e)).slice(0, r), (0, i.jsxs)(d.DUT, {
                 className: b.nM,
                 onClick: () => {
                     t.isForumLikeChannel() ? (0, h.iN)(t.id) : (0, d.mMO)(async () => {
@@ -90,7 +90,7 @@ function v(e) {
     return (0, i.jsxs)(d.DUT, {
         className: b.nM,
         onClick: e => {
-            (0, p.JA)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, I.H9.POPOUT)
+            (0, g.JA)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, I.H9.POPOUT)
         },
         children: [(0, i.jsx)("div", {
             className: b.R4,

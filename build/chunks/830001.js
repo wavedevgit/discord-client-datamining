@@ -1,6 +1,6 @@
 /** chunk id: 830001 params = (module,exports,require) **/
 n.d(t, {
-    f: () => N
+    f: () => b
 });
 var i = n(627968),
     s = n(934551),
@@ -20,7 +20,7 @@ var i = n(627968),
     p = n(633817),
     T = n(652215),
     E = n(985018),
-    S = n(722125);
+    S = n(812335);
 let C = [{
         badgeType: m.Xi.NEW,
         dismissibleContent: a.M.WIDGETS_USER_SETTINGS_NEW_BADGE
@@ -39,7 +39,7 @@ let C = [{
         }),
         buildLayout: () => [p.I]
     }),
-    N = (0, _.i4)(h.X.PROFILE_SIDEBAR_ITEM, {
+    b = (0, _.i4)(h.X.PROFILE_SIDEBAR_ITEM, {
         useTitle: () => E.intl.string(E.t["vi7f+q"]),
         icon: function() {
             let e = (0, l.bG)([x.default], () => x.default.getCurrentUser()),

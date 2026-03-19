@@ -1,6 +1,6 @@
 /** chunk id: 353667 params = (module,exports,require) **/
 n.d(t, {
-    j: () => b
+    j: () => I
 });
 var i = n(627968),
     s = n(64700),
@@ -18,7 +18,7 @@ var i = n(627968),
     x = n(397274),
     h = n(641324),
     p = n(46373),
-    T = n(872175);
+    T = n(639485);
 
 function E(e) {
     let {
@@ -113,7 +113,7 @@ function f(e) {
     })
 }
 
-function N(e) {
+function b(e) {
     let {
         panelKey: t,
         layout: n,
@@ -171,7 +171,7 @@ function N(e) {
     })
 }
 
-function I(e) {
+function N(e) {
     let {
         panelKey: t,
         notice: n,
@@ -188,20 +188,20 @@ function I(e) {
     })
 }
 
-function b(e) {
+function I(e) {
     let {
         node: t
     } = e, {
         layout: n
     } = t;
     if ((0, r.bG)([u.A], () => u.A.hidePersonalInformation) && t.hideInStreamerMode) return (0, i.jsx)(c.A, {});
-    if ((0, m.zY)(n)) return (0, i.jsx)(N, {
+    if ((0, m.zY)(n)) return (0, i.jsx)(b, {
         panelKey: t.key,
         notice: t.notice,
         decoration: t.decoration,
         layout: n
     });
-    if ((0, m.Iu)(n)) return (0, i.jsx)(I, {
+    if ((0, m.Iu)(n)) return (0, i.jsx)(N, {
         panelKey: t.key,
         notice: t.notice,
         decoration: t.decoration,

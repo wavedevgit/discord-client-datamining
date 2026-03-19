@@ -13,7 +13,7 @@ var i = n(627968),
     u = n(652215),
     _ = n(53516),
     m = n(985018),
-    g = n(139674);
+    g = n(221432);
 
 function A(e) {
     let t, n, {
@@ -50,11 +50,11 @@ function A(e) {
                 children: m.intl.string(m.t["W0/Duf"])
             }))
         }, []),
-        N = s.useCallback(e => null == e ? "" : `${"*".repeat(e.length-4)}${e.slice(-4)}`, []),
-        I = null != A.phone,
-        b = A.hasFlag(u.nhx.MFA_SMS);
-    if (I || b) {
-        let e = h ? A.phone : N(A.phone);
+        b = s.useCallback(e => null == e ? "" : `${"*".repeat(e.length-4)}${e.slice(-4)}`, []),
+        N = null != A.phone,
+        I = A.hasFlag(u.nhx.MFA_SMS);
+    if (N || I) {
+        let e = h ? A.phone : b(A.phone);
         n = (0, i.jsxs)(l.Text, {
             variant: "text-sm/normal",
             children: [m.intl.format(m.t.PXVoEO, {
@@ -66,7 +66,7 @@ function A(e) {
             })]
         })
     }
-    if (b) t = (0, i.jsx)(l.Button, {
+    if (I) t = (0, i.jsx)(l.Button, {
         variant: "critical-secondary",
         size: "sm",
         text: m.intl.string(m.t.KLWnit),
@@ -84,7 +84,7 @@ function A(e) {
                 onClick: C,
                 loading: x,
                 disabled: null != e
-            }), I ? (0, i.jsx)(l.Button, {
+            }), N ? (0, i.jsx)(l.Button, {
                 variant: "secondary",
                 size: "sm",
                 text: m.intl.string(m.t.Ulqq6K),

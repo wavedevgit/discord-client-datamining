@@ -6,17 +6,17 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(735438),
-    o = n.n(a),
+    a = n.n(l),
+    r = n(735438),
+    o = n.n(r),
     c = n(873263),
     d = n(837381),
     u = n(621466),
     h = n(311907),
     A = n(554146),
     m = n(52133),
-    p = n(451988),
-    g = n(827734),
+    g = n(451988),
+    p = n(827734),
     _ = n(192308),
     f = n(397927),
     x = n(951001),
@@ -60,8 +60,8 @@ var i = n(627968),
     ei = n(343170),
     es = n(652215),
     el = n(985018),
-    er = n(216788);
-let ea = (0, B.isWindows)() ? 4 : 12 * !(0, B.isMac)();
+    ea = n(266450);
+let er = (0, B.isWindows)() ? 4 : 12 * !(0, B.isMac)();
 
 function eo(e) {
     return e.startsWith(es.BVt.GUILD_DISCOVERY) || e.startsWith(es.BVt.GLOBAL_DISCOVERY)
@@ -74,7 +74,7 @@ class ec {
     sizes;
     scrollerRef = s.createRef();
     nodeRefs = {};
-    timeout = new p.Ep;
+    timeout = new g.Ep;
     observer;
     constructor(e, t, n, i, s) {
         this.guildsTree = e, this.setScrolling = t, this.setIsScrolledToBottom = n, this.onScroll = i, this.sizes = s, (0, R.u9)(this.getVisibleGuildIds)
@@ -125,14 +125,14 @@ class ec {
             iconTotalSize: i,
             badgeVisibleBuffer: s,
             heightBeforeGuilds: l,
-            bottomInset: r
-        } = this.sizes, a = this.scrollerRef.current;
-        if (null == a) return !1;
+            bottomInset: a
+        } = this.sizes, r = this.scrollerRef.current;
+        if (null == r) return !1;
         let o = n.findIndex(t => "string" == typeof t || null == t ? t === e : t.includes(e));
         if (o < 0) return !1;
         let c = i * o + l,
-            d = a.getScrollerState();
-        return !t && !!(c >= d.scrollTop) || !!t && !!(c + i + s <= d.scrollTop + d.offsetHeight - r)
+            d = r.getScrollerState();
+        return !t && !!(c >= d.scrollTop) || !!t && !!(c + i + s <= d.scrollTop + d.offsetHeight - a)
     };
     getVisibleGuildIds = () => {
         let e = this.scrollerRef.current;
@@ -144,8 +144,8 @@ class ec {
                 s = this.nodeRefs[i];
             if (null == s) return !1;
             let l = s.getBoundingClientRect(),
-                r = l.top - n;
-            return r + l.height > 0 && r < t
+                a = l.top - n;
+            return a + l.height > 0 && a < t
         }).map(e => {
             let {
                 id: t
@@ -178,9 +178,9 @@ function ed(e) {
         hideDms: t,
         scrollToTop: n,
         lurkingGuildIds: l
-    } = e, r = (0, y.A)("TopSection"), {
-        isExperimentEnabled: a
-    } = (0, v.TW)("TopSection"), o = (0, h.bG)([k.A], () => null != k.A.getVoiceChannelId()), c = (0, _.useHasAnyModalOpen)(), d = (0, S.Ay)(e => e.postConnectionOpen), [u, m] = (0, T.kn)(d && a && !o && !c ? [A.M.FAVORITES_SERVER_ONBOARDING_INTRO] : []), p = u === A.M.FAVORITES_SERVER_ONBOARDING_INTRO, [g] = (0, T.kn)(p ? [A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM] : [], void 0, !0), f = g === A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM, x = s.useRef(!1), C = f && r;
+    } = e, a = (0, y.A)("TopSection"), {
+        isExperimentEnabled: r
+    } = (0, v.TW)("TopSection"), o = (0, h.bG)([k.A], () => null != k.A.getVoiceChannelId()), c = (0, _.useHasAnyModalOpen)(), d = (0, S.Ay)(e => e.postConnectionOpen), [u, m] = (0, T.kn)(d && r && !o && !c ? [A.M.FAVORITES_SERVER_ONBOARDING_INTRO] : []), g = u === A.M.FAVORITES_SERVER_ONBOARDING_INTRO, [p] = (0, T.kn)(g ? [A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM] : [], void 0, !0), f = p === A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM, x = s.useRef(!1), C = f && a;
     s.useEffect(() => {
         C && !x.current && n(), x.current = C
     }, [n, C]);
@@ -192,7 +192,7 @@ function ed(e) {
             location: "GuildsBar"
         });
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(Q.C, {}), N === L.RK.SERVER_RAIL_TOP && (0, i.jsx)(M.A, {}), r ? (0, i.jsx)(j.A, {
+        children: [(0, i.jsx)(Q.C, {}), N === L.RK.SERVER_RAIL_TOP && (0, i.jsx)(M.A, {}), a ? (0, i.jsx)(j.A, {
             shouldShowIntroPopover: f,
             markIntroPopoverAsDismissed: m
         }) : null, !t && (0, i.jsx)(Y.A, {}), I.map(e => (0, i.jsx)(ei.A, {
@@ -209,11 +209,11 @@ function eu(e) {
         disableAppDownload: n,
         isOverlay: s,
         renderTreeNode: l,
-        lurkingGuildIds: r
-    } = e, [a] = (0, h.yK)([V.Ay], () => {
+        lurkingGuildIds: a
+    } = e, [r] = (0, h.yK)([V.Ay], () => {
         let e = V.Ay.getGuildsTree();
         return [e, e.version]
-    }), o = a.getRoots(), c = (0, h.yK)([U.A], () => U.A.getGeoRestrictedGuilds()).map(e => (0, i.jsx)(X.A, {
+    }), o = r.getRoots(), c = (0, h.yK)([U.A], () => U.A.getGeoRestrictedGuilds()).map(e => (0, i.jsx)(X.A, {
         id: e.id,
         name: e.name,
         icon: e.icon
@@ -225,7 +225,7 @@ function eu(e) {
             gap: "xs",
             children: o.map((e, t) => l(e, t, o.length))
         }), c, (0, i.jsx)(Z.A, {}), s ? null : (0, i.jsx)(q.A, {
-            disableTooltip: r.length > 0,
+            disableTooltip: a.length > 0,
             lastTargetNode: o[o.length - 1]
         }), s ? null : t, n ? null : (0, i.jsx)(z.A, {})]
     })
@@ -236,7 +236,7 @@ function eh(e) {
         disableAppDownload: t = B.isPlatformEmbedded,
         isOverlay: n = !1,
         className: l,
-        themeOverride: a
+        themeOverride: r
     } = e, [o] = (0, h.yK)([V.Ay], () => {
         let e = V.Ay.getGuildsTree();
         return [e, e.version]
@@ -244,10 +244,10 @@ function eh(e) {
         isSorting: _,
         startSorting: x,
         stopSorting: E
-    } = (0, H.A)(), S = s.useRef(!1), [T] = s.useState(() => new p.Ep), v = s.useRef(null), j = s.useRef(null), {
+    } = (0, H.A)(), S = s.useRef(!1), [T] = s.useState(() => new g.Ep), v = s.useRef(null), j = s.useRef(null), {
         ref: R,
         ...U
-    } = (0, d.$y)(), P = (0, f.R7z)(), [w, k] = s.useState(!1), Y = (0, f.rdh)(g.A.modules.guildbar.AVATAR_SIZE), z = (0, f.rdh)(g.A.space.SPACE_XS), q = (0, y.A)("GuildsBar"), {
+    } = (0, d.$y)(), P = (0, f.R7z)(), [w, k] = s.useState(!1), Y = (0, f.rdh)(p.A.modules.guildbar.AVATAR_SIZE), z = (0, f.rdh)(p.A.space.SPACE_XS), q = (0, y.A)("GuildsBar"), {
         pathname: X
     } = (0, c.zy)(), {
         entrypoint: Q
@@ -259,7 +259,7 @@ function eh(e) {
             iconTotalSize: e,
             badgeVisibleBuffer: e - 16,
             separatorSize: t = 2 + z,
-            heightBeforeGuilds: ea + t + Z * e,
+            heightBeforeGuilds: er + t + Z * e,
             bottomInset: 16
         });
         return new ec(o, k, es.tEg, () => {
@@ -333,38 +333,38 @@ function eh(e) {
                     return null
             }
         }, [x, E, _, en.setNodeRef]),
-        ep = (0, i.jsx)(J.A, {
+        eg = (0, i.jsx)(J.A, {
             selected: eh,
-            className: er.ai
+            className: ea.ai
         }),
-        eg = Q === L.RK.SERVER_RAIL_BOTTOM;
+        ep = Q === L.RK.SERVER_RAIL_BOTTOM;
     return (0, i.jsx)(N.f5, {
         value: ei,
         children: (0, i.jsx)(f.NPJ, {
-            theme: a,
+            theme: r,
             children: e => (0, i.jsxs)("nav", {
-                className: r()(er.iE, l, e, {
-                    [er.R]: m
+                className: a()(ea.iE, l, e, {
+                    [ea.R]: m
                 }),
                 "aria-label": el.intl.string(el.t.PjnF2t),
                 children: [(0, i.jsx)(W.A, {
                     ref: v,
                     isVisible: en.isItemVisible,
                     onJumpTo: en.handleJumpToGuild,
-                    className: er.Xl,
-                    barClassName: er.Sh
+                    className: ea.Xl,
+                    barClassName: ea.Sh
                 }), (0, i.jsx)("ul", {
                     ref: R,
                     ...U,
                     ...P,
                     role: "tree",
-                    className: er.B2,
+                    className: ea.B2,
                     children: (0, i.jsxs)("div", {
-                        className: er.qD,
+                        className: ea.qD,
                         children: [(0, i.jsxs)(f.zCo, {
-                            className: r()({
-                                [er.XG]: !0,
-                                [er.qw]: w
+                            className: a()({
+                                [ea.XG]: !0,
+                                [ea.qw]: w
                             }),
                             experimental_useStack: !0,
                             gap: "xs",
@@ -374,17 +374,17 @@ function eh(e) {
                                 scrollToTop: eA,
                                 lurkingGuildIds: A
                             }), (0, i.jsx)($.A, {}), (0, i.jsx)(eu, {
-                                guildDiscoveryButton: ep,
+                                guildDiscoveryButton: eg,
                                 disableAppDownload: t,
                                 isOverlay: n,
                                 renderTreeNode: em,
                                 lurkingGuildIds: A
                             })]
-                        }), eg && (0, i.jsxs)("div", {
+                        }), ep && (0, i.jsxs)("div", {
                             children: [(0, i.jsx)($.A, {
                                 fullWidth: !0
                             }), (0, i.jsx)("div", {
-                                className: er.JU,
+                                className: ea.JU,
                                 children: (0, i.jsx)(M.A, {})
                             })]
                         })]
@@ -394,11 +394,11 @@ function eh(e) {
                     ref: j,
                     isVisible: en.isItemVisible,
                     onJumpTo: en.handleJumpToGuild,
-                    className: r()(er.LZ, {
-                        [er.CH]: !n && !eg,
-                        [er.c0]: !n && eg
+                    className: a()(ea.LZ, {
+                        [ea.CH]: !n && !ep,
+                        [ea.c0]: !n && ep
                     }),
-                    barClassName: er.Sh
+                    barClassName: ea.Sh
                 })]
             })
         })

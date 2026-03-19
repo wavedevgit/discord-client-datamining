@@ -4,9 +4,9 @@ n.d(t, {
     L: () => v
 }), n(321073);
 var r = n(627968),
-    i = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    a = n(64700),
+    i = n(503698),
+    s = n.n(i),
     l = n(837381),
     o = n(607399),
     c = n(397927),
@@ -15,29 +15,29 @@ var r = n(627968),
     m = n(97469),
     f = n(199966),
     h = n(894858),
-    g = n(397274),
-    p = n(189857),
-    y = n(188180),
+    p = n(397274),
+    g = n(189857),
+    x = n(188180),
     _ = n(133457),
-    x = n(985018),
-    b = n(658646);
+    y = n(985018),
+    b = n(45272);
 
 function v(e) {
     let {
         root: t,
         onClose: n,
-        footer: a,
-        emptyState: y,
+        footer: i,
+        emptyState: x,
         searchBar: v
-    } = e, j = h.A.useField("showNavigationMobile"), N = i.useRef(null), [S] = i.useState(t), {
+    } = e, j = h.A.useField("showNavigationMobile"), N = a.useRef(null), [S] = a.useState(t), {
         accessibleDirectory: C
-    } = (0, f._)(), k = i.useMemo(() => (0, p.Z)(S, C), [S, C]), [E] = (0, d.kn)(k.allDismissibleContents);
+    } = (0, f._)(), k = a.useMemo(() => (0, g.Z)(S, C), [S, C]), [E] = (0, d.kn)(k.allDismissibleContents);
     (0, _.B)({
         visibleContent: E,
         dismissibleBadges: k,
         accessibleDirectory: C
     });
-    let [w, I] = i.useMemo(() => {
+    let [w, I] = a.useMemo(() => {
         let e = [],
             n = [];
         return t.layout.forEach(t => {
@@ -60,7 +60,7 @@ function v(e) {
                         onClick: n,
                         variant: "icon-only",
                         size: "sm",
-                        "aria-label": x.intl.string(x.t.cpT0Cq)
+                        "aria-label": y.intl.string(y.t.cpT0Cq)
                     })
                 }), (0, r.jsx)("div", {
                     children: w.map(e => (0, r.jsx)(A, {
@@ -69,7 +69,7 @@ function v(e) {
                         dismissibleBadges: k,
                         hoisted: !0
                     }, e.key))
-                }), null != v && (0, r.jsx)(v, {}), null != y && 0 === I.length && (0, r.jsx)(y, {})]
+                }), null != v && (0, r.jsx)(v, {}), null != x && 0 === I.length && (0, r.jsx)(x, {})]
             }), (0, r.jsx)(l.hD, {
                 navigator: R,
                 children: (0, r.jsx)(l.PR, {
@@ -80,7 +80,7 @@ function v(e) {
                         } = e;
                         return (0, r.jsxs)(c.ChK, {
                             ref: e => {
-                                N.current = e, g.A.setSidebarScrollerRef(e), t.current = e?.getScrollerNode() ?? null
+                                N.current = e, p.A.setSidebarScrollerRef(e), t.current = e?.getScrollerNode() ?? null
                             },
                             className: b.Mt,
                             fade: !0,
@@ -92,7 +92,7 @@ function v(e) {
                                     visibleContent: E,
                                     dismissibleBadges: k
                                 }, e.key))
-                            }), null != a && (0, r.jsx)(a, {})]
+                            }), null != i && (0, r.jsx)(i, {})]
                         })
                     }
                 })
@@ -105,8 +105,8 @@ function A(e) {
     let {
         section: t,
         visibleContent: n,
-        dismissibleBadges: i,
-        hoisted: a = !1
+        dismissibleBadges: a,
+        hoisted: i = !1
     } = e, s = t.useTitle?.();
     return (0, r.jsxs)("ul", {
         className: b.uW,
@@ -119,11 +119,11 @@ function A(e) {
                 color: "text-muted",
                 children: s
             })
-        }), t.layout.map(e => (0, r.jsx)(y.X, {
+        }), t.layout.map(e => (0, r.jsx)(x.X, {
             node: e,
             visibleContent: n,
-            dismissibleBadges: i,
-            hoisted: a
+            dismissibleBadges: a,
+            hoisted: i
         }, e.key))]
     })
 }

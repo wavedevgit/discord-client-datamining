@@ -1,6 +1,6 @@
 /** chunk id: 60508 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => I
 });
 var i = n(627968),
     s = n(64700),
@@ -23,73 +23,73 @@ var i = n(627968),
     S = n(992990),
     C = n(652215),
     f = n(985018),
-    N = n(520089),
-    I = n(288894);
-let b = e => {
+    b = n(865047),
+    N = n(288894);
+let I = e => {
     let t, n, {
             isAllPerksVisible: l,
-            setIsAllPerksVisible: b,
+            setIsAllPerksVisible: I,
             previousComponent: v,
             enablePremiumBrandRefresh: j
         } = e,
         y = s.useRef(null),
-        O = s.useRef(null),
-        R = Object.entries((0, x.A)()).reduce((e, t) => {
+        R = s.useRef(null),
+        O = Object.entries((0, x.A)()).reduce((e, t) => {
             let [n, i] = t;
             return !1 !== i.canReveal && "upcomingDropUntimed" !== i.name && (e[n] = i), e
         }, {}),
         {
-            analyticsLocations: L
+            analyticsLocations: P
         } = (0, _.Ay)(u.A.PREMIUM_SUBSCRIBER_NITRO_HOME),
-        [D, P] = s.useState(!1),
-        G = (0, r.bG)([c.A], () => c.A.useReducedMotion),
-        M = (0, p.LQ)(),
+        [L, D] = s.useState(!1),
+        M = (0, r.bG)([c.A], () => c.A.useReducedMotion),
+        G = (0, p.LQ)(),
         {
             fractionalState: U
         } = (0, m.A)(),
         k = (0, A.d)();
-    M ? (t = f.intl.string(f.t["+vt7w9"]), n = f.intl.string(f.t.LgHbnL)) : (t = f.intl.string(f.t.LgHbnL), n = f.intl.string(f.t["+vt7w9"]));
+    G ? (t = f.intl.string(f.t["+vt7w9"]), n = f.intl.string(f.t.LgHbnL)) : (t = f.intl.string(f.t.LgHbnL), n = f.intl.string(f.t["+vt7w9"]));
     let V = () => {
-        b(!1), g.default.track(C.HAw.NITRO_HOME_NAVIGATION, {
+        I(!1), g.default.track(C.HAw.NITRO_HOME_NAVIGATION, {
             current_component: h.A2.SEE_ALL,
             next_component: v,
             interaction_component: "Back Button"
         })
     };
     return (0, i.jsx)(d.GtU, {
-        className: a()(N.NX, {
-            [N.ho]: l,
-            [N.LM]: G
+        className: a()(b.NX, {
+            [b.ho]: l,
+            [b.LM]: M
         }),
         inert: !l,
         ref: y,
         children: (0, i.jsx)(d.hLv, {
             color: "nitro-pink",
-            className: a()(N.kL, N.Gd, {
-                [N.fv]: !j
+            className: a()(b.kL, b.Gd, {
+                [b.fv]: !j
             }),
             children: (0, i.jsxs)(_.f5, {
-                value: L,
+                value: P,
                 children: [j ? (0, i.jsx)(S.A, {
                     onBackClick: V
                 }) : (0, i.jsx)(T.A, {
-                    className: N.v1,
+                    className: b.v1,
                     onBackClick: V
                 }), (0, i.jsxs)("div", {
-                    className: a()(N.fi, {
-                        [N._9]: j
+                    className: a()(b.fi, {
+                        [b._9]: j
                     }),
                     children: [(0, i.jsx)(d.Heading, {
                         variant: "heading-xxl/extrabold",
                         color: "text-strong",
-                        className: N.R_,
+                        className: b.R_,
                         children: t
                     }), (0, i.jsx)(E.A, {
-                        className: N.Nm,
+                        className: b.Nm,
                         cards: (0, p.vx)({
-                            perksCards: R,
+                            perksCards: O,
                             variant: h.cJ.CARD_CAROUSEL_FIRST_ROW,
-                            isPremiumSubscriber: M,
+                            isPremiumSubscriber: G,
                             hideCardsOnNarrowScreen: !0,
                             fractionalState: U,
                             isInReverseTrial: k
@@ -98,14 +98,14 @@ let b = e => {
                     }), (0, i.jsx)(d.Heading, {
                         variant: "heading-xxl/extrabold",
                         color: "text-strong",
-                        className: N.R_,
+                        className: b.R_,
                         children: n
                     }), (0, i.jsx)(E.A, {
-                        className: N.Nm,
+                        className: b.Nm,
                         cards: (0, p.vx)({
-                            perksCards: R,
+                            perksCards: O,
                             variant: h.cJ.CARD_CAROUSEL_SECOND_ROW,
-                            isPremiumSubscriber: M,
+                            isPremiumSubscriber: G,
                             hideCardsOnNarrowScreen: !0,
                             fractionalState: U,
                             isInReverseTrial: k
@@ -114,14 +114,14 @@ let b = e => {
                     }), (0, i.jsx)(d.Heading, {
                         variant: "heading-xxl/extrabold",
                         color: "text-strong",
-                        className: N.R_,
+                        className: b.R_,
                         children: f.intl.string(f.t.LTaxu9)
                     }), (0, i.jsx)(E.A, {
-                        className: N.Nm,
+                        className: b.Nm,
                         cards: (0, p.vx)({
-                            perksCards: R,
+                            perksCards: O,
                             variant: h.cJ.CARD_CAROUSEL_THIRD_ROW,
-                            isPremiumSubscriber: M,
+                            isPremiumSubscriber: G,
                             hideCardsOnNarrowScreen: !0,
                             fractionalState: U,
                             isInReverseTrial: k
@@ -129,21 +129,21 @@ let b = e => {
                         cardType: h.cJ.CARD_CAROUSEL_THIRD_ROW
                     })]
                 }), (0, i.jsx)("div", {
-                    className: N.hz
+                    className: b.hz
                 }), (0, i.jsx)(o.L, {
-                    innerRef: O,
+                    innerRef: R,
                     onChange: e => {
-                        e && !D && (g.default.track(C.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
-                            location_stack: L
-                        }), P(!0))
+                        e && !L && (g.default.track(C.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                            location_stack: P
+                        }), D(!0))
                     },
                     children: (0, i.jsx)("div", {
-                        ref: O,
-                        className: N._Z
+                        ref: R,
+                        className: b._Z
                     })
                 }), (0, i.jsx)("img", {
-                    src: I,
-                    className: N.Kw,
+                    src: N,
+                    className: b.Kw,
                     width: 112,
                     height: 85,
                     alt: f.intl.string(f.t.X4IxWL)

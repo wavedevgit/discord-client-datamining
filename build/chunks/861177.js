@@ -1,50 +1,50 @@
 /** chunk id: 861177 params = (module,exports,require) **/
-t.d(n, {
-    default: () => b
+a.d(e, {
+    default: () => U
 });
-var c = t(627968);
-t(64700);
-var _ = t(311907),
-    a = t(385612),
-    o = t(287809),
-    r = t(927578),
-    i = t(87719),
-    s = t(244975),
-    d = t(788868),
-    p = t(652215),
-    u = t(339984),
-    C = t(985018),
-    l = t(626072);
+var c = a(627968);
+a(64700);
+var n = a(311907),
+    s = a(385612),
+    o = a(287809),
+    i = a(927578),
+    r = a(87719),
+    d = a(244975),
+    l = a(788868),
+    p = a(652215),
+    u = a(339984),
+    f = a(985018),
+    y = a(626072);
 
-function b(e) {
+function U(t) {
     let {
-        onClose: n,
-        source: t,
-        ...b
-    } = e, h = (0, _.bG)([o.default], () => o.default.getCurrentUser()), y = r.Ay.isPremium(h) ? C.t.E0sNsc : C.t.UBcuto, f = C.intl.format(y, {
+        onClose: e,
+        source: a,
+        ...U
+    } = t, b = (0, n.bG)([o.default], () => o.default.getCurrentUser()), A = i.Ay.isPremium(b) ? f.t.E0sNsc : f.t.UBcuto, C = f.intl.format(A, {
         onLearnMore: function() {
-            n(), (0, i.e)()
+            e(), (0, r.e)()
         }
     });
-    return (0, c.jsx)(s.A, {
-        artURL: l.A,
-        type: d.e.CUSTOM_PROFILE_UPSELL,
-        title: C.intl.string(C.t.BbsMm4),
-        body: f,
-        glowUp: f,
+    return (0, c.jsx)(d.A, {
+        artURL: y.A,
+        type: l.e.CUSTOM_PROFILE_UPSELL,
+        title: f.intl.string(f.t.BbsMm4),
+        body: C,
+        glowUp: C,
         onSecondaryClick: () => {
-            n(), (0, a.XD)({
+            e(), (0, s.XD)({
                 uploadType: u.HL.BANNER,
-                analyticsSource: t
+                analyticsSource: a
             })
         },
-        secondaryCTA: C.intl.string(C.t.SpAQib),
-        analyticsSource: t,
+        secondaryCTA: f.intl.string(f.t.SpAQib),
+        analyticsSource: a,
         analyticsLocation: {
             section: p.JJy.USER_PROFILE,
             object: p.ZSU.BUTTON_CTA
         },
-        onClose: n,
-        ...b
+        onClose: e,
+        ...U
     })
 }

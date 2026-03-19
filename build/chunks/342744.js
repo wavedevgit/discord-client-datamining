@@ -1,6 +1,6 @@
 /** chunk id: 342744 params = (module,exports,require) **/
 n.d(t, {
-    default: () => N
+    default: () => b
 });
 var i = n(627968),
     s = n(64700),
@@ -19,7 +19,7 @@ var i = n(627968),
     h = n(166403),
     p = n(927578),
     T = n(985018),
-    E = n(359294);
+    E = n(326428);
 async function S(e, t, n, i) {
     let s = (0, p.aE)(e, t);
     await (0, u.Ey)(n), await (0, c.nV)(e, {
@@ -59,7 +59,7 @@ function f() {
     })
 }
 
-function N(e) {
+function b(e) {
     let {
         guildBoostSlotId: t,
         transitionState: n,
@@ -71,14 +71,14 @@ function N(e) {
         h.A.hasFetchedSubscriptions() || (0, c.hP)()
     }, []);
     let E = (0, o.bG)([h.A], () => h.A.getPremiumTypeSubscription()),
-        [N, I] = s.useState(1),
-        [b, v] = s.useState(!1),
+        [b, N] = s.useState(1),
+        [I, v] = s.useState(!1),
         [j, y] = s.useState(null),
-        O = s.useCallback(async () => {
+        R = s.useCallback(async () => {
             if (null != E) try {
                 v(!0), y(null);
                 let e = (0, x.v)(E, 1);
-                a()((0, p.bx)(e) <= (0, p.bx)(E.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await S(E, e, t, u), I(2)
+                a()((0, p.bx)(e) <= (0, p.bx)(E.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await S(E, e, t, u), N(2)
             } catch (t) {
                 let e = t instanceof _.Ey ? t : new _.Ey(t, t.code);
                 y(T.intl.string(e.code === m.tG.BILLING_PAUSE_INVALID_UPDATE ? T.t.dq4vq7 : T.t["5mlOCW"])), v(!1)
@@ -91,7 +91,7 @@ function N(e) {
             onClose: async () => await l(),
             size: "sm",
             title: (() => {
-                switch (N) {
+                switch (b) {
                     case 1:
                         return T.intl.string(T.t.l52ih2);
                     case 2:
@@ -101,18 +101,18 @@ function N(e) {
                 }
             })(),
             actions: (() => {
-                switch (N) {
+                switch (b) {
                     case 1:
                         return [{
                             variant: "secondary",
                             text: T.intl.string(T.t.oEAioF),
-                            disabled: b,
+                            disabled: I,
                             onClick: l
                         }, {
                             variant: "primary",
                             text: T.intl.string(T.t.etZP4B),
-                            loading: b,
-                            onClick: O
+                            loading: I,
+                            onClick: R
                         }];
                     case 2:
                         return [{
@@ -126,7 +126,7 @@ function N(e) {
             })(),
             children: (() => {
                 if (null == E) return (0, i.jsx)(d.y$y, {});
-                switch (N) {
+                switch (b) {
                     case 1:
                         return (0, i.jsx)(C, {
                             errorMsg: j
@@ -134,7 +134,7 @@ function N(e) {
                     case 2:
                         return (0, i.jsx)(f, {});
                     default:
-                        throw Error(`Unexpected step: ${N}`)
+                        throw Error(`Unexpected step: ${b}`)
                 }
             })()
         })

@@ -11,7 +11,7 @@ var i = n(627968),
     o = n(555337),
     d = n(339984),
     c = n(985018),
-    u = n(577332);
+    u = n(31186);
 
 function m(e) {
     let {
@@ -24,7 +24,7 @@ function m(e) {
         (0, r.mMO)(async () => {
             let {
                 default: s
-            } = await Promise.all([n.e("59701"), n.e("35929"), n.e("74571"), n.e("94073")]).then(n.bind(n, 142630));
+            } = await Promise.all([n.e("59701"), n.e("35929"), n.e("74571"), n.e("33535")]).then(n.bind(n, 142630));
             return n => (0, i.jsx)(s, {
                 uploadType: d.HL.GUILD_ICON,
                 imageUri: e,

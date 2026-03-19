@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(575593),
+    a = n.n(l),
+    r = n(575593),
     o = n(158954),
     c = n(417597),
     d = n(793574),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(587895),
     A = n(44120),
     m = n(317560),
-    p = n(533406),
-    g = n(183555),
+    g = n(533406),
+    p = n(183555),
     _ = n(146423),
     f = n(662349),
     x = n(216020),
@@ -26,7 +26,7 @@ var i = n(627968),
     N = n(788868),
     b = n(518477),
     S = n(985018),
-    T = n(556786);
+    T = n(247584);
 let v = E.Z.SIZE_90;
 
 function y(e) {
@@ -34,7 +34,7 @@ function y(e) {
         sku: t,
         wishlistOwner: n,
         wishlistId: l,
-        isSingleCard: a,
+        isSingleCard: r,
         style: c,
         skuPreviewStyle: d,
         onDetailsClick: u,
@@ -42,7 +42,7 @@ function y(e) {
         singleCardInfo: A
     } = e, {
         trackUserProfileWishlistAction: m
-    } = (0, g.NJ)(), p = s.useCallback(() => {
+    } = (0, p.NJ)(), g = s.useCallback(() => {
         m({
             action: b.Mq.PRESS_WISHLIST_BREADCRUMB_CARD,
             skuId: t.id,
@@ -79,22 +79,22 @@ function y(e) {
                 sku: t,
                 user: n,
                 spec: v,
-                cardStyle: r()(T.Nr, T.Q1, c),
-                skuPreviewStyle: r()(T.ho, d),
-                onClick: p,
+                cardStyle: a()(T.Nr, T.Q1, c),
+                skuPreviewStyle: a()(T.ho, d),
+                onClick: g,
                 onHoverOrFocusChange: y,
                 children: (0, i.jsx)(f.AJ, {
                     spec: v,
-                    onClick: N ? C : p,
+                    onClick: N ? C : g,
                     isHoveringOrFocusing: S,
                     label: E,
                     icon: I
                 })
             })
-        }), a && (0, i.jsx)(x.A, {
+        }), r && (0, i.jsx)(x.A, {
             title: A.title,
             description: A.description,
-            onClick: p
+            onClick: g
         })]
     })
 }
@@ -104,39 +104,39 @@ function j(e) {
         sku: t,
         wishlistOwner: n,
         analyticsLocations: l,
-        ...r
-    } = e, a = (0, c.bG)([h.A], () => h.A.getApplication(t.applicationId)), {
+        ...a
+    } = e, r = (0, c.bG)([h.A], () => h.A.getApplication(t.applicationId)), {
         analyticsLocations: o
     } = (0, u.Ay)(...l ?? [], d.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON), A = s.useCallback(() => {
-        (0, p.a)(t, {
+        (0, g.a)(t, {
             isGift: !0,
             giftRecipient: n,
             giftingOrigin: N.vQ.USER_PROFILE_WISHLIST
         }, {
             analyticsLocations: o
         })
-    }, [t, n, o]), g = s.useCallback(() => {
-        a?.guildId != null && (0, m.R)({
+    }, [t, n, o]), p = s.useCallback(() => {
+        r?.guildId != null && (0, m.R)({
             skuId: t.id,
             applicationId: t.applicationId,
-            guildId: a.guildId,
+            guildId: r.guildId,
             isStorefront: !1,
             analyticsLocations: o
         })
-    }, [a?.guildId, t.id, t.applicationId, o]), _ = s.useMemo(() => ({
+    }, [r?.guildId, t.id, t.applicationId, o]), _ = s.useMemo(() => ({
         title: t.name,
         description: S.intl.format(S.t["CqpEC+"], {
-            applicationName: a?.name
+            applicationName: r?.name
         })
-    }), [t.name, a?.name]);
+    }), [t.name, r?.name]);
     return (0, i.jsx)(y, {
         sku: t,
         analyticsLocations: o,
         wishlistOwner: n,
-        onDetailsClick: g,
+        onDetailsClick: p,
         onPurchaseClick: A,
         singleCardInfo: _,
-        ...r
+        ...a
     })
 }
 
@@ -159,13 +159,13 @@ function R(e) {
         analyticsLocations: l
     }), u = s.useMemo(() => {
         switch (t?.tenantMetadata?.collectibles?.type) {
-            case a.R.PROFILE_EFFECT:
-            case a.R.NAMEPLATE:
+            case r.R.PROFILE_EFFECT:
+            case r.R.NAMEPLATE:
                 return;
-            case a.R.AVATAR_DECORATION:
-                return r()(T.ML, T._P);
+            case r.R.AVATAR_DECORATION:
+                return a()(T.ML, T._P);
             default:
-                return r()(T.ML, T.ZY)
+                return a()(T.ML, T.ZY)
         }
     }, [t?.tenantMetadata?.collectibles?.type]), h = s.useMemo(() => ({
         title: t.name,
@@ -173,11 +173,11 @@ function R(e) {
             if (e.tenantMetadata?.collectibles == null) return "";
             if (null != e.bundledSkus && e.bundledSkus.length > 0) return S.intl.string(S.t.Zr5tjn);
             switch (e.tenantMetadata.collectibles.type) {
-                case a.R.AVATAR_DECORATION:
+                case r.R.AVATAR_DECORATION:
                     return S.intl.string(S.t["7v0T9P"]);
-                case a.R.PROFILE_EFFECT:
+                case r.R.PROFILE_EFFECT:
                     return S.intl.string(S.t.wR5wOo);
-                case a.R.NAMEPLATE:
+                case r.R.NAMEPLATE:
                     return S.intl.string(S.t.x5CoXR);
                 default:
                     return ""

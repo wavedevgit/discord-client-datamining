@@ -1,66 +1,66 @@
 /** chunk id: 880405 params = (module,exports,require) **/
-n.d(t, {
-    L$: () => c,
-    NP: () => s,
-    Qq: () => d
+n.d(e, {
+    L$: () => s,
+    NP: () => a,
+    Qq: () => u
 }), n(323874), n(14289), n(35956);
-var l = n(562465),
-    a = n(73153),
-    i = n(198982),
-    r = n(652215);
-let s = async e => {
+var r = n(562465),
+    i = n(73153),
+    o = n(198982),
+    l = n(652215);
+let a = async t => {
     try {
-        let t = ((await l.Bo.get({
-            url: r.Rsh.SIMILAR_GAMES(e),
+        let e = ((await r.Bo.get({
+            url: l.Rsh.SIMILAR_GAMES(t),
             rejectWithError: !1
-        })).body.similar_games ?? []).filter(t => t !== e);
-        a.h.dispatch({
+        })).body.similar_games ?? []).filter(e => e !== t);
+        i.h.dispatch({
             type: "GAME_PROFILE_GET_SIMILAR_GAMES_SUCCESS",
-            applicationId: e,
-            games: t
+            applicationId: t,
+            games: e
         })
-    } catch (e) {
-        throw new i.LG(e)
+    } catch (t) {
+        throw new o.LG(t)
     }
-}, c = e => o(e, {
+}, s = t => c(t, {
     utm_source: "discord"
-}), o = (e, t) => {
+}), c = (t, e) => {
     try {
-        let n = new URL(e, window.location.origin);
-        return Object.entries(t).forEach(e => {
-            let [t, l] = e;
-            n.searchParams.set(t, l)
+        let n = new URL(t, window.location.origin);
+        return Object.entries(e).forEach(t => {
+            let [e, r] = t;
+            n.searchParams.set(e, r)
         }), n.toString()
     } catch {
-        let [n, l] = e.split("#");
+        let [n, r] = t.split("#");
         try {
-            let e = new URL(n, window.location.origin);
-            return Object.entries(t).forEach(t => {
-                let [n, l] = t;
-                e.searchParams.set(n, l)
-            }), null != l ? `${e.toString()}#${l}` : e.toString()
+            let t = new URL(n, window.location.origin);
+            return Object.entries(e).forEach(e => {
+                let [n, r] = e;
+                t.searchParams.set(n, r)
+            }), null != r ? `${t.toString()}#${r}` : t.toString()
         } catch {
-            let n = e.includes("?"),
-                l = Object.entries(t).map(e => {
-                    let [t, n] = e;
-                    return `${encodeURIComponent(t)}=${encodeURIComponent(n)}`
+            let n = t.includes("?"),
+                r = Object.entries(e).map(t => {
+                    let [e, n] = t;
+                    return `${encodeURIComponent(e)}=${encodeURIComponent(n)}`
                 }).join("&");
-            return `${e}${n?"&":"?"}${l}`
+            return `${t}${n?"&":"?"}${r}`
         }
     }
 };
 
-function d(e, t) {
-    if (null == e) return null;
-    let n = c(e),
-        l = function(e) {
+function u(t, e) {
+    if (null == t) return null;
+    let n = s(t),
+        r = function(t) {
             try {
-                let t = new URL(e);
-                if ("store.steampowered.com" !== t.hostname) return null;
-                let n = t.pathname.match(/^\/app\/(\d+)(\/|$)/);
+                let e = new URL(t);
+                if ("store.steampowered.com" !== e.hostname) return null;
+                let n = e.pathname.match(/^\/app\/(\d+)(\/|$)/);
                 if (null != n) return `steam://store/${n[1]}`
             } catch {}
             return null
-        }(e);
-    return t ? l ?? n : n
+        }(t);
+    return e ? r ?? n : n
 }

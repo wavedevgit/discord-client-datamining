@@ -1,9 +1,8 @@
 /** chunk id: 936944 params = (module,exports,require) **/
 e.exports = {
-    Qs: "content_d77702",
-    R$: "radioGroup_d77702",
-    Gt: "gameIcon_d77702",
-    Gr: "detectedGameFrame_d77702",
-    q_: "detectedGameIcon_d77702",
-    x_: "detectedGameIconPlaceholder_d77702"
+    Vf: "previewTitle__0e467",
+    VH: "preview__0e467",
+    DZ: "messages__0e467",
+    HD: "avatars__0e467",
+    Jb: "previewRight__0e467"
 }

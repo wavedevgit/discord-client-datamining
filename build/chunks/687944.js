@@ -1,6 +1,6 @@
 /** chunk id: 687944 params = (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => N
 });
 var i = n(627968);
 n(64700);
@@ -20,7 +20,7 @@ var s = n(990078),
     h = n(788868),
     p = n(652215),
     T = n(985018),
-    E = n(424850),
+    E = n(888668),
     S = n(818724);
 let C = {
     page: p.liQ.USER_SETTINGS,
@@ -73,7 +73,7 @@ function f(e) {
     })
 }
 
-function N(e) {
+function b(e) {
     let {
         discountOffer: t,
         premiumSubscription: n
@@ -96,36 +96,36 @@ function N(e) {
         })]
     })
 }
-let I = function(e) {
+let N = function(e) {
     let t, c, {
             subscription: m,
             invoicePreview: g,
             isLoading: h,
-            analyticsLocation: I,
-            discountInfo: b,
+            analyticsLocation: N,
+            discountInfo: I,
             renewalChurnDiscountInfo: v,
             discountOffer: j
         } = e,
         {
             analyticsLocations: y
         } = (0, r.Ay)(a.A.CHURN_DISCOUNT_SUBSCRIPTION_HEADER),
-        O = e => {
+        R = e => {
             (0, l.mMO)(async () => {
                 let {
                     PremiumBrandRefreshSubscriptionCancellationModal: t
-                } = await Promise.all([n.e("41353"), n.e("35432"), n.e("82383")]).then(n.bind(n, 281439));
+                } = await Promise.all([n.e("41353"), n.e("35432"), n.e("49561")]).then(n.bind(n, 281439));
                 return n => (0, i.jsx)(t, {
                     ...n,
                     premiumSubscription: m,
-                    analyticsLocation: I,
+                    analyticsLocation: N,
                     analyticsLocations: y,
                     initialStep: e
                 })
             })
         },
-        R = _.Ay.getPlanIdFromInvoice(m, g),
-        L = (0, A.ux)(j?.expires_at);
-    return (0, d.m1)(R) ? null : (0, i.jsx)("div", {
+        O = _.Ay.getPlanIdFromInvoice(m, g),
+        P = (0, A.ux)(j?.expires_at);
+    return (0, d.m1)(O) ? null : (0, i.jsx)("div", {
         className: E.S6,
         children: (0, i.jsx)(l.hLv, {
             color: "nitro-pink",
@@ -142,7 +142,7 @@ let I = function(e) {
                         className: E.tD,
                         variant: "text-sm/medium",
                         color: "text-strong",
-                        children: null != j && L
+                        children: null != j && P
                     })]
                 }), (0, i.jsx)("div", {
                     className: E.T
@@ -150,14 +150,14 @@ let I = function(e) {
                     className: E.ly,
                     children: [(0, i.jsxs)("div", {
                         className: E.Yc,
-                        children: [null != j ? (0, i.jsx)(N, {
+                        children: [null != j ? (0, i.jsx)(b, {
                             discountOffer: j,
                             premiumSubscription: m
                         }) : (0, i.jsx)(f, {
                             premiumSubscription: m,
-                            discountInfo: b ?? v,
+                            discountInfo: I ?? v,
                             invoicePreview: g,
-                            isDiscountActive: null != b
+                            isDiscountActive: null != I
                         }), (0, i.jsx)("div", {
                             className: E.e_,
                             children: (t = _.Ay.isSwitchingPlansDisabled(m), c = _.Ay.getSwitchingPlansDisabledMessage(m), _.Ay.isBaseSubscriptionCanceled(m) ? (0, i.jsx)(l.Button, {
@@ -166,7 +166,7 @@ let I = function(e) {
                                 size: "md",
                                 text: T.intl.string(T.t.zrCzVB),
                                 loading: h,
-                                onClick: () => O(x.g.CONFIRM_DISCOUNT)
+                                onClick: () => R(x.g.CONFIRM_DISCOUNT)
                             }) : (0, i.jsxs)("div", {
                                 className: E.qK,
                                 children: [(0, i.jsx)(s.m, {
@@ -181,7 +181,7 @@ let I = function(e) {
                                         onClick: () => {
                                             (0, o.A)({
                                                 analyticsLocations: y,
-                                                analyticsLocation: I,
+                                                analyticsLocation: N,
                                                 analyticsObject: C,
                                                 subscription: m
                                             })
@@ -193,7 +193,7 @@ let I = function(e) {
                                     text: T.intl.string(T.t["ETE/oC"]),
                                     loading: h,
                                     onClick: () => {
-                                        m.status !== p.Dmq.CANCELED && O()
+                                        m.status !== p.Dmq.CANCELED && R()
                                     }
                                 })]
                             }))

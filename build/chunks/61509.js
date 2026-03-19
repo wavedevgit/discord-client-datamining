@@ -23,19 +23,19 @@ var i = n(627968),
     S = n(120385),
     C = n(235986),
     f = n(769015),
-    N = n(250627),
-    I = n(871109),
-    b = n(571654),
+    b = n(250627),
+    N = n(871109),
+    I = n(571654),
     v = n(411342),
     j = n(179499),
     y = n(22007),
-    O = n(95035),
-    R = n(337095),
-    L = n(871123),
-    D = n(510022),
-    P = n(378058),
-    G = n(148355),
-    M = n(780964),
+    R = n(95035),
+    O = n(337095),
+    P = n(871123),
+    L = n(510022),
+    D = n(378058),
+    M = n(148355),
+    G = n(780964),
     U = n(12901),
     k = n(840065),
     V = n(202613),
@@ -57,7 +57,7 @@ var i = n(627968),
     et = n(788868),
     en = n(818348),
     ei = n(985018),
-    es = n(124953);
+    es = n(956171);
 let el = e => `https://${ee.XlF}/hc/${e.toLowerCase()}/requests/new?ticket_form_id=360000118612`,
     ea = [ee.Puh.DURABLE_PRIMARY, ee.Puh.DURABLE, ee.Puh.CONSUMABLE],
     er = [ee.__0.FAILED, ee.__0.REVERSED, ee.__0.CANCELED],
@@ -130,9 +130,9 @@ function e_(e) {
     let {
         guildId: t,
         guildProductListingId: n
-    } = e, l = (0, N.Qi)(t, n, {
+    } = e, l = (0, b.Qi)(t, n, {
         requireCurrentGuild: !1
-    }), a = (0, b.z)(l), r = (0, _.bG)([B.A], () => B.A.getGuild(t)), o = l?.role_id != null && l?.attachments_count === 0 ? ei.intl.string(ei.t.H11qcT) : a, d = s.useCallback(async () => {
+    }), a = (0, I.z)(l), r = (0, _.bG)([B.A], () => B.A.getGuild(t)), o = l?.role_id != null && l?.attachments_count === 0 ? ei.intl.string(ei.t.H11qcT) : a, d = s.useCallback(async () => {
         r?.features.has(ee.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE) ? await (0, y.A)(ee.BVt.GUILD_PRODUCT(t, n)) : await (0, y.A)(ee.BVt.CHANNEL(t)), (0, U.default)()
     }, [r, t, n]);
     return (0, i.jsxs)(i.Fragment, {
@@ -141,7 +141,7 @@ function e_(e) {
             detail: o
         }), null != r && (0, i.jsx)(eu, {
             description: ei.intl.string(ei.t.Wpn8z8),
-            detail: (0, i.jsx)(O.A, {
+            detail: (0, i.jsx)(R.A, {
                 onClick: d,
                 children: r.name
             })
@@ -153,9 +153,9 @@ function em(e) {
     let {
         guildId: t,
         guildProductListingId: n
-    } = e, s = (0, N.Qi)(t, n, {
+    } = e, s = (0, b.Qi)(t, n, {
         requireCurrentGuild: !1
-    }), l = (0, _.bG)([I.A], () => I.A.getGuildProductFetchState(n) === I.e.FETCHING), a = s?.role_id, r = (0, _.bG)([w.A], () => null != a ? w.A.getRole(t, a) : void 0, [t, a]), o = (0, j.A)({
+    }), l = (0, _.bG)([N.A], () => N.A.getGuildProductFetchState(n) === N.e.FETCHING), a = s?.role_id, r = (0, _.bG)([w.A], () => null != a ? w.A.getRole(t, a) : void 0, [t, a]), o = (0, j.A)({
         guildId: t,
         productId: n
     }), d = (s?.attachments?.length ?? 0) > 0, c = null != r;
@@ -340,7 +340,7 @@ class eg extends s.PureComponent {
             payment: e,
             hasLinkedToApplication: t
         } = this.props;
-        return (0, L.bF)(e.sku) && e.status === ee.__0.COMPLETED ? null != e.entitlements && e.entitlements.some(e => e.isFulfilled()) ? (0, i.jsx)("span", {
+        return (0, P.bF)(e.sku) && e.status === ee.__0.COMPLETED ? null != e.entitlements && e.entitlements.some(e => e.isFulfilled()) ? (0, i.jsx)("span", {
             className: es.gD,
             children: ei.intl.string(ei.t.Osji1u)
         }) : e.isGift ? null != e.entitlements && e.entitlements.some(e => null != e.gifterId) ? (0, i.jsx)("span", {
@@ -483,7 +483,7 @@ class eg extends s.PureComponent {
                 children: (0, i.jsx)(g.$nd, {
                     variant: "primary",
                     text: ei.intl.string(ei.t["jcSP+g"]),
-                    onClick: () => (0, k.openUserSettings)(M.X.GIFT_PANEL)
+                    onClick: () => (0, k.openUserSettings)(G.X.GIFT_PANEL)
                 })
             })]
         }) : o ? null : (0, i.jsxs)(s.Fragment, {
@@ -513,7 +513,7 @@ class eg extends s.PureComponent {
                             sku_id: t.sku.id,
                             application_id: l.id,
                             location_stack: r
-                        }), (0, D.n)({
+                        }), (0, L.n)({
                             sku: t.sku,
                             application: l,
                             analyticsLocations: r
@@ -527,7 +527,7 @@ class eg extends s.PureComponent {
         let {
             payment: e
         } = this.props;
-        if ((0, L.bF)(e.sku)) return this.renderAdditionalGameItemDetails()
+        if ((0, P.bF)(e.sku)) return this.renderAdditionalGameItemDetails()
     }
     renderRefundDetails() {
         let e, {
@@ -652,8 +652,8 @@ class eg extends s.PureComponent {
             })
         } else if (null != _)
             if (t = l.isGuildProductPurchase && l.isSoftDeletedProduct ? ei.intl.string(ei.t.O7uLmw) : _.name, null != d) {
-                let t = (0, P.Id)(d);
-                e = (0, i.jsx)(G.A, {
+                let t = (0, D.Id)(d);
+                e = (0, i.jsx)(M.A, {
                     disableAnimation: !u,
                     isInteracting: u,
                     sticker: t,
@@ -794,25 +794,25 @@ function eA(e) {
         paymentSources: F.A.paymentSources
     })), {
         hasAlreadyLinked: A
-    } = (0, T.RD)((0, L.bF)(t.sku) ? m : void 0), x = (0, _.bG)([E.A], () => null != d ? E.A.getApplication(d) : null);
+    } = (0, T.RD)((0, P.bF)(t.sku) ? m : void 0), x = (0, _.bG)([E.A], () => null != d ? E.A.getApplication(d) : null);
     s.useEffect(() => {
-        c && null != d && (0, R.TA)(d)
+        c && null != d && (0, O.TA)(d)
     }, [d, c]);
     let S = (0, _.bG)([B.A], () => B.A.getGuild(m?.guildId)),
         C = r ? m : void 0,
         f = t.subscription,
-        N = (0, _.bG)([Y.A], () => null != f && f.type !== ee.rzx.PREMIUM ? Y.A.get(f.items[0].planId) : null),
-        I = (0, _.bG)([H.default], () => {
+        b = (0, _.bG)([Y.A], () => null != f && f.type !== ee.rzx.PREMIUM ? Y.A.get(f.items[0].planId) : null),
+        N = (0, _.bG)([H.default], () => {
             let e = t.isGift ? t.entitlements?.find(e => e.user?.id != null && null != e.gifterId) : null;
             return null == e ? null : H.default.getUser(e.user?.id ?? null) ?? e?.user
         }, [t]),
         {
-            analyticsLocations: b
+            analyticsLocations: I
         } = (0, p.Ay)(h.A.BILLING_SETTINGS_BILLING);
     return (0, i.jsx)(eg, {
         applicationStatistics: u,
         application: c ? x : C,
-        analyticsLocations: b,
+        analyticsLocations: I,
         guild: S,
         stickerPack: null,
         paymentSources: g,
@@ -820,8 +820,8 @@ function eA(e) {
         compactMode: l,
         className: a,
         payment: t,
-        plan: N,
-        claimedGiftUser: I,
+        plan: b,
+        claimedGiftUser: N,
         hasLinkedToApplication: A
     })
 }

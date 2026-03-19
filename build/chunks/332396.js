@@ -6,17 +6,17 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(735438),
-    o = n.n(a),
+    a = n.n(l),
+    r = n(735438),
+    o = n.n(r),
     c = n(311907),
     d = n(435371),
     u = n(397927),
     h = n(933958),
     A = n(104171),
     m = n(63995),
-    p = n(69407),
-    g = n(616356),
+    g = n(69407),
+    p = n(616356),
     _ = n(734057),
     f = n(287809),
     x = n(607567),
@@ -25,7 +25,7 @@ var i = n(627968),
     I = n(181079),
     N = n(652215),
     b = n(985018),
-    S = n(653750);
+    S = n(770992);
 
 function T(e, t) {
     return 0 === t.length ? null : (0, i.jsxs)("div", {
@@ -52,18 +52,18 @@ function v() {
             } = e;
             return t
         })), [n]),
-        r = (0, c.yK)([m.A], () => o().flatMap(s, e => m.A.getMutableParticipants(e, p.ip.SPEAKER).filter(e => e.type === p.wY.VOICE).map(e => {
+        a = (0, c.yK)([m.A], () => o().flatMap(s, e => m.A.getMutableParticipants(e, g.ip.SPEAKER).filter(e => e.type === g.wY.VOICE).map(e => {
             let {
                 user: t
             } = e;
             return t
         }))),
-        a = (0, c.bG)([m.A], () => {
+        r = (0, c.bG)([m.A], () => {
             let e = 0;
-            for (let t of s) e += m.A.getParticipantCount(t, p.ip.AUDIENCE);
+            for (let t of s) e += m.A.getParticipantCount(t, g.ip.AUDIENCE);
             return e
         }),
-        d = (0, c.yK)([g.A], () => g.A.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
+        d = (0, c.yK)([p.A], () => p.A.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
         b = (0, c.yK)([h.Ay], () => {
             let e = h.Ay.getEmbeddedActivitiesByChannel(),
                 n = [];
@@ -73,7 +73,7 @@ function v() {
         v = (0, c.yK)([f.default], () => b.map(e => f.default.getUser(e)), [b]),
         y = (0, c.yK)([f.default], () => d.map(e => f.default.getUser(e)), [d]),
         j = T(u.HKD, l.filter(e => !d.includes(e.id) && !b.includes(e.id))),
-        R = 0 === r.length ? null : (0, i.jsxs)("div", {
+        R = 0 === a.length ? null : (0, i.jsxs)("div", {
             className: S.nM,
             children: [(0, i.jsx)(u.qux, {
                 size: "lg",
@@ -81,7 +81,7 @@ function v() {
                 className: S.RI
             }), (0, i.jsx)(A.Ay, {
                 guildId: void 0,
-                users: r,
+                users: a,
                 max: 3
             }), (0, i.jsxs)("div", {
                 className: S.GZ,
@@ -92,7 +92,7 @@ function v() {
                     className: S._I,
                     color: "text-default",
                     variant: "text-xs/medium",
-                    children: a
+                    children: r
                 })]
             })]
         }),
@@ -106,9 +106,9 @@ function v() {
 function y() {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
-            className: r()(S.nM, S.Dl),
+            className: a()(S.nM, S.Dl),
             children: (0, i.jsx)("span", {
-                className: r()(S.cN, S.NT),
+                className: a()(S.cN, S.NT),
                 children: b.intl.string(b.t.wMWyci)
             })
         }), (0, i.jsx)(v, {})]

@@ -1,64 +1,65 @@
 /** chunk id: 8880 params = (module,exports,require) **/
-n.d(e, {
+"use strict";
+n.d(t, {
     A: () => o
 });
 var i = n(311907),
-    r = n(73153);
+    s = n(73153);
 let l = {
         speechRate: 1,
         currentMessage: null
     },
-    s = l;
-class a extends i.Ay.DeviceSettingsStore {
+    a = l;
+class r extends i.Ay.DeviceSettingsStore {
     static displayName = "TTSStore";
     static persistKey = "TTSStore";
     static migrations = [];
-    initialize(t) {
-        s = {
+    initialize(e) {
+        a = {
             ...l,
-            ...t ?? null
+            ...e ?? null
         }
     }
-    isSpeakingMessage(t, e) {
+    isSpeakingMessage(e, t) {
         let {
             currentMessage: n
-        } = s;
-        return null !== n && n.channelId === t && n.messageId === e
+        } = a;
+        return null !== n && n.channelId === e && n.messageId === t
     }
     get currentMessage() {
-        return s.currentMessage
+        return a.currentMessage
     }
     get speechRate() {
-        return s.speechRate
+        return a.speechRate
     }
     getUserAgnosticState() {
-        return s
+        return a
     }
 }
-let o = new a(r.h, __OVERLAY__ ? {} : {
-    SPEAKING_MESSAGE: function(t) {
+let o = new r(s.h, __OVERLAY__ ? {} : {
+    SPEAKING_MESSAGE: function(e) {
         let {
-            messageId: e,
+            messageId: t,
             channelId: n
-        } = t;
-        s = {
-            ...s,
+        } = e;
+        a = {
+            ...a,
             currentMessage: {
-                messageId: e,
+                messageId: t,
                 channelId: n
             }
         }
     },
     STOP_SPEAKING: function() {
-        s = {
-            ...s,
+        a = {
+            ...a,
             currentMessage: null
         }
     },
-    SET_TTS_SPEECH_RATE: function(t) {
-        s = {
-            ...s,
-            speechRate: t.speechRate
+    SET_TTS_SPEECH_RATE: function(e) {
+        a = {
+            ...a,
+            speechRate: e.speechRate
         }
     }
 })

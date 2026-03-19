@@ -1,53 +1,53 @@
 /** chunk id: 807734 params = (module,exports,require) **/
-i.d(e, {
+n.d(t, {
     A: () => u
 });
-var n = i(64700),
-    r = i(311907),
-    l = i(847599),
-    a = i(787301),
-    s = i(295972),
-    o = i(36149),
-    c = i(40449),
-    d = i(985018);
-let u = function(t) {
+var a = n(64700),
+    i = n(311907),
+    l = n(847599),
+    s = n(787301),
+    r = n(295972),
+    o = n(36149),
+    d = n(40449),
+    c = n(985018);
+let u = function(e) {
     let {
-        onClose: e,
-        onMethodClick: i,
+        onClose: t,
+        onMethodClick: n,
         classificationId: u
-    } = t, {
-        methods: E,
-        loading: _
-    } = (0, r.cf)([a.A], () => ({
-        methods: a.A.methods,
-        loading: a.A.loading
+    } = e, {
+        methods: m,
+        loading: h
+    } = (0, i.cf)([s.A], () => ({
+        methods: s.A.methods,
+        loading: s.A.loading
     })), {
-        initiateAgeVerification: A
+        initiateAgeVerification: x
     } = (0, o.nn)({
-        onComplete: e,
+        onComplete: t,
         entryPoint: l.q1.EXPRESSIVE_GET_STARTED,
         shouldShowExpressiveModal: !0,
         classificationId: u
     });
-    return n.useEffect(() => {
-        null == E && (0, s.DJ)()
-    }, [E]), {
-        ageVerificationMethods: E?.map(t => {
-            let e = c.uv[t];
-            if (null == e) return null;
+    return a.useEffect(() => {
+        null == m && (0, r.DJ)()
+    }, [m]), {
+        ageVerificationMethods: m?.map(e => {
+            let t = d.uv[e];
+            if (null == t) return null;
             let {
-                title: n,
-                description: r
-            } = e;
+                title: a,
+                description: i
+            } = t;
             return {
-                id: t,
-                title: d.intl.string(n),
-                description: d.intl.string(r),
-                onClick: async e => {
-                    (0, l.St)(e, l.WU.EXPRESSIVE_PRIMARY, l._7.METHOD_SELECT, t), i?.(), await A(t)
+                id: e,
+                title: c.intl.string(a),
+                description: c.intl.string(i),
+                onClick: async t => {
+                    (0, l.St)(t, l.WU.EXPRESSIVE_PRIMARY, l._7.METHOD_SELECT, e), n?.(), await x(e)
                 }
             }
-        }).filter(t => null != t),
-        loading: _
+        }).filter(e => null != e),
+        loading: h
     }
 }

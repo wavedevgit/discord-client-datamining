@@ -1,6 +1,6 @@
 /** chunk id: 340186 params = (module,exports,require) **/
 n.d(t, {
-    g: () => N
+    g: () => b
 });
 var i = n(934551),
     s = n(554146),
@@ -30,7 +30,7 @@ let C = (0, l.t_)(r.X.CHAT_PANEL, {
         dismissibleContent: s.M.FAVORITES_GUILD_NEW_BADGE,
         StronglyDiscouragedCustomComponent: c.L
     }],
-    N = (0, l.i4)(r.X.CHAT_SIDEBAR_ITEM, {
+    b = (0, l.i4)(r.X.CHAT_SIDEBAR_ITEM, {
         useTitle: () => S.intl.string(S.t["/VQax8"]),
         icon: i.ChatIcon,
         usePredicate: () => !(0, o.Ci)("ChatSidebarItem"),

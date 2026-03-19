@@ -1,9 +1,10 @@
 /** chunk id: 650764 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
-    u: () => l
+    u: () => s
 });
 var i = n(85526);
 
-function l(e) {
+function s(e) {
     return i.fromByteArray(e)
 }

@@ -1,7 +1,7 @@
 /** chunk id: 962789 params = (module,exports,require) **/
 n.d(t, {
     A: () => v,
-    T: () => b
+    T: () => I
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -20,7 +20,7 @@ var i = n(627968),
     h = n(650832),
     p = n(652215),
     T = n(985018),
-    E = n(419205);
+    E = n(761547);
 
 function S(e) {
     let {
@@ -148,7 +148,7 @@ function f() {
     })
 }
 
-function N() {
+function b() {
     return (0, i.jsxs)("div", {
         className: E.do,
         children: [(0, i.jsx)(r.Text, {
@@ -166,21 +166,21 @@ function N() {
     })
 }
 
-function I(e) {
+function N(e) {
     let {
         applications: t
     } = e;
     return t.length > 0 ? (0, i.jsx)(S, {
         applications: t
-    }) : (0, i.jsx)(N, {})
+    }) : (0, i.jsx)(b, {})
 }
 
-function b() {
+function I() {
     let {
         showLoadingIndicator: e,
         slayerSdkApplications: t
     } = (0, m.A)(!0);
-    return e ? (0, i.jsx)(r.y$y, {}) : (0, i.jsx)(I, {
+    return e ? (0, i.jsx)(r.y$y, {}) : (0, i.jsx)(N, {
         applications: t
     })
 }
@@ -192,7 +192,7 @@ function v() {
     } = (0, m.A)(!0);
     return (0, i.jsx)(A.A, {
         children: e ? (0, i.jsx)(r.y$y, {}) : (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(I, {
+            children: [(0, i.jsx)(N, {
                 applications: t
             }), t.length > 0 && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(C, {}), (0, i.jsx)("div", {

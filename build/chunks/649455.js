@@ -4,15 +4,15 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(311907),
-    a = n(397927),
+    a = n(311907),
+    r = n(397927),
     s = n(953584),
     o = n(168820),
     d = n(77350);
 
 function c(e, t) {
     let n = e?.url ?? "",
-        c = (0, r.bG)([s.Ay], () => s.Ay.isVideoStatsEnabled(n)),
+        c = (0, a.bG)([s.Ay], () => s.Ay.isVideoStatsEnabled(n)),
         u = l.useCallback(() => {
             "" !== n && (0, s.FM)(n)
         }, [n]);
@@ -22,12 +22,12 @@ function c(e, t) {
     } = (0, o.G)({
         location: "useVideoStatsMenuItem"
     });
-    return g ? (0, i.jsx)(a.sLh, {
+    return g ? (0, i.jsx)(r.sLh, {
         id: "video-stats-for-nerds",
         label: "Stats for Nerds",
         leadingAccessory: {
             type: "icon",
-            icon: a.mir
+            icon: r.mir
         },
         checked: c,
         action: u

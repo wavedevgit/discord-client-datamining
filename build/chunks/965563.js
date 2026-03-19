@@ -13,7 +13,7 @@ var i = n(627968),
     u = n(612025),
     _ = n(303351),
     m = n(985018),
-    g = n(208227);
+    g = n(21973);
 let A = {
     label: () => m.intl.string(m.t["32u1Dx"]),
     value: u.YG

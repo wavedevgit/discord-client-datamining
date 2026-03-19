@@ -16,7 +16,7 @@ var i = n(627968),
     x = n(622543),
     p = n(49999),
     f = n(985018),
-    h = n(881562);
+    h = n(757424);
 let _ = 90 * m.A.Millis.DAY,
     A = 90 * m.A.Millis.DAY;
 
@@ -30,12 +30,12 @@ function I(e) {
     } = e, j = (0, u.GG)("social_layer_wishlist_recommendations_on_profile"), v = (n?.items.length ?? 0) > 0, [E, T] = l.useState(!1);
     !a || v || E || T(!0);
     let b = (0, o.bG)([x.A], () => null != n ? new Date(x.A.getWishlistSettings(t.id, n.id)?.updated_at ?? 0).valueOf() : 0),
-        [N, S] = (0, c.Wl)(d.M.USER_PROFILE_WISHLIST_RECOMMENDATIONS, {
+        [N, y] = (0, c.Wl)(d.M.USER_PROFILE_WISHLIST_RECOMMENDATIONS, {
             showAfterTimestamp: b + A,
             cooldownDurationMs: _
         }, void 0, !0),
-        y = N === d.M.USER_PROFILE_WISHLIST_RECOMMENDATIONS;
-    return a && (!v || y || E) ? (0, i.jsxs)("div", {
+        S = N === d.M.USER_PROFILE_WISHLIST_RECOMMENDATIONS;
+    return a && (!v || S || E) ? (0, i.jsxs)("div", {
         className: s()(h.kL, I),
         children: [(0, i.jsxs)("div", {
             className: h.wx,
@@ -46,7 +46,7 @@ function I(e) {
             }), v && (0, i.jsx)(r.JnF, {
                 size: "xs",
                 onClick: () => {
-                    T(!1), S(p.i.USER_DISMISS)
+                    T(!1), y(p.i.USER_DISMISS)
                 }
             })]
         }), (0, i.jsx)(g.A, {

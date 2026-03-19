@@ -2,14 +2,14 @@
 "use strict";
 n.d(t, {
     Ln: () => _,
-    Z0: () => g,
-    kt: () => p
+    Z0: () => p,
+    kt: () => g
 }), n(839272);
 var i = n(64700),
     s = n(311907),
     l = n(394577),
-    r = n(21119),
-    a = n(696451),
+    a = n(21119),
+    r = n(696451),
     o = n(576705),
     c = n(287809),
     d = n(607567),
@@ -18,7 +18,7 @@ var i = n(64700),
     A = n(366251),
     m = n(652215);
 
-function p(e) {
+function g(e) {
     let {
         channel: t
     } = e, n = t?.guild_id, {
@@ -28,7 +28,7 @@ function p(e) {
         location: "useVoiceInviteSuggestions"
     }, {
         autoTrackExposure: !1
-    }), h = (0, s.bG)([r.A], () => r.A.getUserAffinitiesMap(), []), A = new Set((0, s.bG)([d.Ay], () => null == t ? [] : d.Ay.getVoiceStatesForChannel(t).map(e => e.user.id), [t])), m = (0, s.yK)([a.Ay, c.default], () => a.Ay.getMembers(n).map(e => c.default.getUser(e.userId)).filter(u.Vq).filter(e => !A.has(e.id)), [n, A]);
+    }), h = (0, s.bG)([a.A], () => a.A.getUserAffinitiesMap(), []), A = new Set((0, s.bG)([d.Ay], () => null == t ? [] : d.Ay.getVoiceStatesForChannel(t).map(e => e.user.id), [t])), m = (0, s.yK)([r.Ay, c.default], () => r.Ay.getMembers(n).map(e => c.default.getUser(e.userId)).filter(u.Vq).filter(e => !A.has(e.id)), [n, A]);
     return i.useMemo(() => m.toSorted((e, t) => {
         let {
             id: n
@@ -39,7 +39,7 @@ function p(e) {
     }), [m, h]).slice(0, o)
 }
 
-function g(e) {
+function p(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
         {
             collapsed: n = !1

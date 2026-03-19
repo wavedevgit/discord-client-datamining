@@ -17,8 +17,8 @@ var l = n(503698),
     x = n(685049),
     p = n(617086),
     f = n(985018),
-    h = n(461349),
-    _ = n(616060);
+    h = n(966271),
+    _ = n(523934);
 
 function A(e) {
     let {
@@ -72,8 +72,8 @@ function I(e) {
         gameName: b,
         isLoading: N
     } = (0, r.A)(t.applicationId), {
-        registerDragHandleRef: S
-    } = (0, u.r)(), y = (0, p.A)(t.applicationId).length > 0, C = o.default.getCurrentUser(), R = C?.id === n, k = !I && R, {
+        registerDragHandleRef: y
+    } = (0, u.r)(), S = (0, p.A)(t.applicationId).length > 0, C = o.default.getCurrentUser(), R = C?.id === n, k = !I && R, {
         isDragging: L
     } = (0, s.V)(e => ({
         isDragging: e.isDragging()
@@ -84,11 +84,11 @@ function I(e) {
             applicationId: t.applicationId,
             userId: n,
             disableInteraction: I,
-            className: a()(y ? _.kO : void 0, null == T || I ? void 0 : h.iL),
+            className: a()(S ? _.kO : void 0, null == T || I ? void 0 : h.iL),
             hideTooltip: L,
             coverRef: E
         }), k && (0, i.jsx)(c.jV, {
-            buttonRef: S(t.applicationId),
+            buttonRef: y(t.applicationId),
             className: _.BU
         }), !I && (0, i.jsx)(x.d, {
             userId: n,

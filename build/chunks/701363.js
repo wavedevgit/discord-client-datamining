@@ -61,7 +61,7 @@ var l = n(627968),
     en = n(837921),
     el = n(652215),
     es = n(985018),
-    ei = n(45119);
+    ei = n(477549);
 let ea = en.Ay.getEnableHardwareAcceleration() ? x.JsQ : x.euF,
     er = {
         offset: {
@@ -281,7 +281,7 @@ function eA(e) {
         }) : (0, N.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("76779")]).then(n.bind(n, 385913));
+            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("40009")]).then(n.bind(n, 385913));
             return n => (0, l.jsx)(e, {
                 ...n,
                 user: r,
@@ -321,7 +321,7 @@ function eA(e) {
         effectDisplayType: em || i || ef ? G.G.ANIMATED : G.G.PLAIN,
         loop: em,
         boldFontOpacity: .9
-    }), e6 = ew ? (0, l.jsxs)(l.Fragment, {
+    }), e3 = ew ? (0, l.jsxs)(l.Fragment, {
         children: [e9, (0, l.jsx)(V.Ay, {
             primaryGuild: r?.primaryGuild,
             userId: r?.id,
@@ -331,7 +331,7 @@ function eA(e) {
                 [ei.Y_]: eV
             })
         })]
-    }) : e9, e7 = s.useRef(null), e3 = (0, w.W)({
+    }) : e9, e7 = s.useRef(null), e6 = (0, w.W)({
         location: "PrivateChannel"
     }) && r?.displayNameStyles != null, e4 = [(0, y.Ay)({
         channel: t,
@@ -340,10 +340,10 @@ function eA(e) {
         channel: t,
         muted: eG,
         userStatus: B
-    })].filter(Boolean).join(", "), e5 = (0, S.bG)([$.Ay], () => $.Ay.lastMessageId(t.id)), {
-        waveShouldShow: e8,
+    })].filter(Boolean).join(", "), e8 = (0, S.bG)([$.Ay], () => $.Ay.lastMessageId(t.id)), {
+        waveShouldShow: e5,
         wavePressed: te
-    } = (0, D.A)(t, e5), {
+    } = (0, D.A)(t, e8), {
         showClose: tt
     } = R.A.useConfig({
         location: "PrivateChannel"
@@ -403,7 +403,7 @@ function eA(e) {
                     }), (0, l.jsx)("div", {
                         className: ei.lU,
                         ref: eL,
-                        children: e6
+                        children: e3
                     }), (0, l.jsx)(o.N_, {
                         style: eR,
                         innerRef: eh,
@@ -472,26 +472,26 @@ function eA(e) {
                             }) : null,
                             name: (0, l.jsx)(h.A, {
                                 className: a()(ei.uN, {
-                                    [ei.e8]: e3
+                                    [ei.e8]: e6
                                 }),
-                                children: e6
+                                children: e3
                             }),
                             decorators: t.isSystemDM() ? (0, l.jsx)(M.A, {
                                 className: ei.G$,
                                 type: M.A.Types.SYSTEM_DM,
                                 verified: !0
                             }) : null,
-                            withDisplayNameStyles: e3
+                            withDisplayNameStyles: e6
                         })
                     }), (0, l.jsxs)("div", {
                         className: a()(ei._q, {
                             [ei.EY]: ez
                         }),
-                        children: [eF ? (0, l.jsx)(ec, {}) : null, ek ? (0, l.jsx)(ed, {}) : null, e8 && null != eB ? (0, l.jsx)(eo, {
+                        children: [eF ? (0, l.jsx)(ec, {}) : null, ek ? (0, l.jsx)(ed, {}) : null, e5 && null != eB ? (0, l.jsx)(eo, {
                             channelName: eB,
                             onClick: te,
                             showNameplate: ez
-                        }) : null, tt || !e8 ? (0, l.jsx)(eu, {
+                        }) : null, tt || !e5 ? (0, l.jsx)(eu, {
                             icon: x.PGe,
                             "aria-label": eU ? es.intl.string(es.t["26C4oi"]) : es.intl.string(es.t.jsvgc3),
                             onClick: eU ? e2 : eJ,

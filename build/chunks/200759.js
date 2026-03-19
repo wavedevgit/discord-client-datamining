@@ -6,20 +6,20 @@ n.d(t, {
 var l = n(627968),
     s = n(64700),
     i = n(990078),
-    a = n(397927),
-    r = n(351001),
+    r = n(397927),
+    a = n(351001),
     o = n(226884),
     u = n(985018),
-    c = n(58855);
+    c = n(697449);
 
 function d(e) {
     let {
         guild: t,
         message: n
     } = e, d = s.useRef(null);
-    return (0, r.HU)(t.id, n.author.id) ? (0, l.jsx)(a.YNO, {
+    return (0, a.HU)(t.id, n.author.id) ? (0, l.jsx)(r.YNO, {
         targetElementRef: d,
-        animation: a.YNO.Animation.TRANSLATE,
+        animation: r.YNO.Animation.TRANSLATE,
         align: "center",
         autoInvert: !0,
         nudgeAlignIntoViewport: !0,
@@ -38,7 +38,7 @@ function d(e) {
             let {
                 onClick: t
             } = e;
-            return (0, l.jsx)(a.DUT, {
+            return (0, l.jsx)(r.DUT, {
                 onClick: t,
                 tag: "span",
                 innerRef: d,
@@ -46,7 +46,7 @@ function d(e) {
                     text: u.intl.string(u.t["v/OYd2"]),
                     children: (0, l.jsx)("div", {
                         className: c.C,
-                        children: (0, l.jsx)(a.NVf, {
+                        children: (0, l.jsx)(r.NVf, {
                             size: "custom",
                             color: "currentColor",
                             width: 20,

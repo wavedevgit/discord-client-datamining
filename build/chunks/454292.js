@@ -23,23 +23,23 @@ var i = n(627968),
     S = n(224964),
     C = n(31408),
     f = n(985018),
-    N = n(829054);
-let I = {
+    b = n(988288);
+let N = {
         enabled: !0,
         combosEnabled: !0,
         screenshakeEnabled: !1,
         confettiEnabled: !1
     },
-    b = (0, l.range)(0, 11),
+    I = (0, l.range)(0, 11),
     v = (0, l.range)(0, 2.25, .25),
     j = (0, l.range)(1, 11),
     y = (0, l.range)(1, 26),
-    O = {
+    R = {
         0: "poggermode_settings_panel",
         1: "poggermode_achievements_panel"
     };
 
-function R(e) {
+function O(e) {
     let {
         disabled: t,
         locations: n,
@@ -61,19 +61,19 @@ function R(e) {
     })
 }
 
-function L(e) {
+function P(e) {
     let {
         children: t
     } = e;
     return (0, i.jsx)(d.Text, {
-        className: N.iF,
+        className: b.iF,
         variant: "text-sm/normal",
         color: "text-default",
         children: t
     })
 }
 
-function D(e) {
+function L(e) {
     let {
         settings: {
             enabled: t,
@@ -90,7 +90,7 @@ function D(e) {
                 title: l ? f.intl.string(f.t["FxT+p0"]) : f.intl.string(f.t.TAZ4F9),
                 subtitle: l ? f.intl.string(f.t.gmixrx) : f.intl.string(f.t.jN3t3K),
                 confirmText: f.intl.string(f.t.JFfins),
-                onConfirm: () => s(l ? I : {
+                onConfirm: () => s(l ? N : {
                     enabled: !0,
                     warningSeen: !0
                 })
@@ -101,7 +101,7 @@ function D(e) {
     })
 }
 
-function P(e) {
+function D(e) {
     let {
         settings: {
             enabled: t,
@@ -126,9 +126,9 @@ function P(e) {
             children: [(0, i.jsx)(d.Text, {
                 variant: "text-md/semibold",
                 color: o ? "text-muted" : "text-strong",
-                className: N.KF,
+                className: b.KF,
                 children: f.intl.string(f.t.vd0D81)
-            }), (0, i.jsx)(L, {
+            }), (0, i.jsx)(P, {
                 children: f.intl.string(f.t.a18Sug)
             }), (0, i.jsx)(d.Apm, {
                 disabled: o,
@@ -146,9 +146,9 @@ function P(e) {
             children: [(0, i.jsx)(d.Text, {
                 variant: "text-md/semibold",
                 color: o ? "text-muted" : "text-strong",
-                className: N.KF,
+                className: b.KF,
                 children: f.intl.string(f.t.sPO3ij)
-            }), (0, i.jsx)(L, {
+            }), (0, i.jsx)(P, {
                 children: f.intl.string(f.t.xoldVn)
             }), (0, i.jsx)(d.Apm, {
                 disabled: o,
@@ -162,7 +162,7 @@ function P(e) {
                 }, 0),
                 onValueRender: e => `${e}`
             })]
-        }), (0, i.jsx)(R, {
+        }), (0, i.jsx)(O, {
             disabled: o,
             locations: [{
                 location: C.k.CHAT_INPUT,
@@ -189,7 +189,7 @@ function P(e) {
     })
 }
 
-function G(e) {
+function M(e) {
     let {
         settings: {
             enabled: t,
@@ -221,16 +221,16 @@ function G(e) {
             children: [(0, i.jsx)(d.Text, {
                 variant: "text-md/semibold",
                 color: r ? "text-muted" : "text-strong",
-                className: N.KF,
+                className: b.KF,
                 children: f.intl.string(f.t.L0oQuh)
-            }), (0, i.jsx)(L, {
+            }), (0, i.jsx)(P, {
                 children: f.intl.string(f.t["/OOFpL"])
             }), (0, i.jsx)(d.Apm, {
                 disabled: r,
-                markers: b,
+                markers: I,
                 stickToMarkers: !0,
-                minValue: b[0],
-                maxValue: b[b.length - 1],
+                minValue: I[0],
+                maxValue: I[I.length - 1],
                 initialValue: l,
                 onValueChange: e => a({
                     combosRequiredCount: e
@@ -241,7 +241,7 @@ function G(e) {
     })
 }
 
-function M(e) {
+function G(e) {
     let {
         settings: {
             enabled: t,
@@ -265,9 +265,9 @@ function M(e) {
             children: [(0, i.jsx)(d.Text, {
                 variant: "text-md/semibold",
                 color: u ? "text-muted" : "text-strong",
-                className: N.KF,
+                className: b.KF,
                 children: f.intl.string(f.t.UxnnC4)
-            }), (0, i.jsx)(L, {
+            }), (0, i.jsx)(P, {
                 children: f.intl.string(f.t.CEOEOb)
             }), (0, i.jsx)(d.Apm, {
                 disabled: u,
@@ -285,7 +285,7 @@ function M(e) {
                 },
                 onMarkerRender: e => e === v[v.length - 1] ? f.intl.string(f.t["4rbMWc"]) : `${100*e}%`
             })]
-        }), (0, i.jsx)(R, {
+        }), (0, i.jsx)(O, {
             disabled: u,
             locations: [{
                 location: C.uD.CHAT_INPUT,
@@ -320,7 +320,7 @@ function U(e) {
                 children: f.intl.string(f.t["1SLnki"])
             }), (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
-                className: N.hw,
+                className: b.hw,
                 children: (0, i.jsx)(d.Button, {
                     variant: "primary",
                     size: "sm",
@@ -343,15 +343,15 @@ function k(e) {
     } = e;
     return (0, i.jsxs)(d.DUT, {
         onClick: () => t(1),
-        className: N.Tq,
+        className: b.Tq,
         children: [(0, i.jsx)("div", {
-            className: N.w1,
+            className: b.w1,
             children: (0, i.jsx)(d.OR, {
                 size: "md",
                 color: r.A.unsafe_rawColors.ORANGE_345.css
             })
         }), (0, i.jsxs)("div", {
-            className: N.qL,
+            className: b.qL,
             children: [(0, i.jsx)(d.Heading, {
                 variant: "heading-md/semibold",
                 color: "text-strong",
@@ -365,7 +365,7 @@ function k(e) {
             size: "custom",
             color: "currentColor",
             width: 16,
-            className: N.nT
+            className: b.nT
         })]
     })
 }
@@ -406,18 +406,18 @@ function w(e) {
     };
     return s.useEffect(() => (window.addEventListener("mousemove", m), () => window.removeEventListener("mousemove", m)), []), (0, i.jsxs)(d.BJc, {
         gap: 24,
-        children: [(0, i.jsx)(D, {
+        children: [(0, i.jsx)(L, {
             settings: l,
             updateSettings: u
         }), (0, i.jsx)(k, {
             onChangePage: t
-        }), (0, i.jsx)(G, {
-            settings: l,
-            updateSettings: u
         }), (0, i.jsx)(M, {
             settings: l,
             updateSettings: u
-        }), (0, i.jsx)(P, {
+        }), (0, i.jsx)(G, {
+            settings: l,
+            updateSettings: u
+        }), (0, i.jsx)(D, {
             settings: l,
             updateSettings: u
         }), (0, i.jsx)(U, {
@@ -435,12 +435,12 @@ function H() {
         }, 500);
         return () => clearTimeout(t)
     }, [e]), s.useEffect(() => {
-        (0, m._)(O[e])
+        (0, m._)(R[e])
     }, [e]), s.useEffect(() => {
         Math.random() > .99 && (0, x._)(h.sn.VISITOR_100)
     }, []), (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(u.A, {
-            className: N.l3,
+            className: b.l3,
             step: e,
             direction: n,
             children: ((e, t, n) => {
@@ -462,9 +462,9 @@ function H() {
                 }
             })(e, t, o)
         }), (0, i.jsx)("div", {
-            className: g ? N.Sr : N.IP,
+            className: g ? b.Sr : b.IP,
             children: (0, i.jsx)(d.akl, {
-                className: N.gT,
+                className: b.gT,
                 importData: V,
                 shouldAnimate: g,
                 autoplay: !1,

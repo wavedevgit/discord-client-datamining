@@ -14,7 +14,7 @@ var i = n(627968),
     _ = n(385612),
     m = n(652215),
     g = n(985018),
-    A = n(567458);
+    A = n(844923);
 
 function x(e) {
     let {
@@ -27,12 +27,12 @@ function x(e) {
         colorPickerMiddle: T,
         colorPickerFooter: E,
         showEyeDropper: S
-    } = e, C = s.useRef(null), f = (0, c.rdh)(d.A.colors.BACKGROUND_BASE_LOW).hex(), N = d.A.colors.BACKGROUND_MOD_MUTED.css, I = (0, _.sN)(l), b = (0, o.Hl)(l), v = b === f ? N : b, j = I ? d.A.unsafe_rawColors.WHITE.css : d.A.unsafe_rawColors.PRIMARY_530.css, y = (0, u.A)(T), O = (0, u.A)(E), [R, L] = s.useState((0, r.A)());
+    } = e, C = s.useRef(null), f = (0, c.rdh)(d.A.colors.BACKGROUND_BASE_LOW).hex(), b = d.A.colors.BACKGROUND_MOD_MUTED.css, N = (0, _.sN)(l), I = (0, o.Hl)(l), v = I === f ? b : I, j = N ? d.A.unsafe_rawColors.WHITE.css : d.A.unsafe_rawColors.PRIMARY_530.css, y = (0, u.A)(T), R = (0, u.A)(E), [O, P] = s.useState((0, r.A)());
     return s.useEffect(() => {
-        (y !== T || O !== E) && L((0, r.A)())
-    }, [E, T, O, y]), (0, i.jsx)(c.YNO, {
+        (y !== T || R !== E) && P((0, r.A)())
+    }, [E, T, R, y]), (0, i.jsx)(c.YNO, {
         targetElementRef: C,
-        positionKey: R,
+        positionKey: O,
         renderPopout: e => (0, i.jsx)(c.VNw, {
             ...e,
             value: l,
@@ -58,7 +58,7 @@ function x(e) {
                     tabIndex: h ? -1 : 0,
                     onClick: h ? m.tEg : t,
                     style: {
-                        backgroundColor: b,
+                        backgroundColor: I,
                         borderColor: v
                     },
                     className: A.nf,

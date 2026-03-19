@@ -1,13 +1,13 @@
 /** chunk id: 369915 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => p
 }), n(321073);
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(442433),
-    a = n(686956),
+    a = n(442433),
+    r = n(686956),
     o = n(366811),
     c = n(383394),
     d = n(458294),
@@ -15,11 +15,11 @@ var i = n(627968),
     h = n(403362),
     A = n(842452),
     m = n(305928),
-    p = n(652215);
-let g = s.memo(function(e) {
+    g = n(652215);
+let p = s.memo(function(e) {
     let {
         folderNode: t,
-        ...g
+        ...p
     } = e, {
         id: _,
         name: f,
@@ -31,7 +31,7 @@ let g = s.memo(function(e) {
                     n = u.A.getGuild(t);
                 return null != n ? n.name : null
             }).filter(h.Vq),
-            n = 2 * p.F05,
+            n = 2 * g.F05,
             i = [];
         for (let e of t)(e.length < n || 0 === i.length) && (i.push(e), n -= e.length);
         return `${i.join(", ")}${i.length<t.length?", ...":""}`
@@ -44,9 +44,9 @@ let g = s.memo(function(e) {
         isMentionLowImportance: E.every(e => d.default.getIsMentionLowImportance(e)),
         unread: E.some(e => d.default.hasUnread(e))
     })), j = s.useCallback(() => {
-        a.A.toggleGuildFolderExpand(_)
+        r.A.toggleGuildFolderExpand(_)
     }, [_]), R = s.useCallback(e => {
-        (0, r.L3)(e, async () => {
+        (0, a.L3)(e, async () => {
             let {
                 default: e
             } = await n.e("32857").then(n.bind(n, 842112));
@@ -60,7 +60,7 @@ let g = s.memo(function(e) {
         })
     }, [_, f, x, y, T]);
     return (0, i.jsx)(A.A, {
-        ...g,
+        ...p,
         folderNode: t,
         expanded: N,
         selected: null != I && E.includes(I),

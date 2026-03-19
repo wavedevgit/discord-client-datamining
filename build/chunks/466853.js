@@ -20,7 +20,7 @@ var i = n(627968),
     _ = n(557137),
     A = n(192),
     I = n(985018),
-    j = n(856969);
+    j = n(500779);
 
 function v(e) {
     let {
@@ -89,14 +89,14 @@ function E(e) {
         headerActionButtons: E,
         headerClassName: T,
         additionalManageWidgetMenuItems: b
-    } = e, N = (0, d.GV)(), S = (0, o.bG)([c.default], () => c.default.getId() === t), y = (0, f.g)(), {
+    } = e, N = (0, d.GV)(), y = (0, o.bG)([c.default], () => c.default.getId() === t), S = (0, f.g)(), {
         trackUserProfileAction: C
     } = (0, u.NJ)(), R = (0, x.A)({
         widget: n,
         onAction: C
-    }), k = y === n.type;
+    }), k = S === n.type;
     (0, m.A)(R, k);
-    let L = S && null != p && !a,
+    let L = y && null != p && !a,
         w = () => (0, i.jsxs)("div", {
             className: s()(j.kL, g),
             children: [(0, i.jsx)(_.A, {

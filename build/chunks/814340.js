@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(158954),
+    a = n.n(l),
+    r = n(158954),
     o = n(311907),
     c = n(990078),
     d = n(397927),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(390435),
     A = n(775121),
     m = n(629357),
-    p = n(599677),
-    g = n(12351),
+    g = n(599677),
+    p = n(12351),
     _ = n(915089),
     f = n(734057),
     x = n(458294),
@@ -34,7 +34,7 @@ var i = n(627968),
     O = n(826050),
     L = n(652215),
     M = n(985018),
-    D = n(171814);
+    D = n(235088);
 let G = () => (0, i.jsxs)("div", {
     className: D.p$,
     children: [(0, i.jsx)("div", {
@@ -186,7 +186,7 @@ class F extends s.PureComponent {
                 return (0, u.L3)(e, async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("43600"), n.e("68587"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("21968"), n.e("35894"), n.e("50796"), n.e("8458"), n.e("11810"), n.e("39048"), n.e("30453"), n.e("56475"), n.e("54469"), n.e("51438")]).then(n.bind(n, 544676));
+                    } = await Promise.all([n.e("43600"), n.e("68587"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("96760"), n.e("35894"), n.e("50796"), n.e("8458"), n.e("11810"), n.e("52848"), n.e("30453"), n.e("56475"), n.e("54469"), n.e("21322")]).then(n.bind(n, 544676));
                     return n => (0, i.jsx)(e, {
                         ...n,
                         guild: t.record,
@@ -281,7 +281,7 @@ class F extends s.PureComponent {
                 return (0, u.L3)(e, async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("97262"), n.e("32418"), n.e("47969")]).then(n.bind(n, 668569));
+                    } = await Promise.all([n.e("97262"), n.e("32418"), n.e("45689")]).then(n.bind(n, 668569));
                     return n => (0, i.jsx)(e, {
                         ...n,
                         user: t.record,
@@ -420,7 +420,7 @@ class F extends s.PureComponent {
             selectedIndex: s
         } = this.props, {
             showScores: l
-        } = p.A.getCurrentConfig({
+        } = g.A.getCurrentConfig({
             location: "62f4be_1"
         }, {
             autoTrackExposure: !1
@@ -522,11 +522,11 @@ class F extends s.PureComponent {
         }
     };
     renderProtip() {
-        return (0, i.jsx)(g.A, {
-            className: r()(D.PP, {
+        return (0, i.jsx)(p.A, {
+            className: a()(D.PP, {
                 [D.ov]: this.state.query.length > 0
             }),
-            type: g.A.Types.INLINE,
+            type: p.A.Types.INLINE,
             children: M.intl.format(M.t.wukqXQ, {
                 userSymbolHook: (e, t) => H(t, m.AT.USER, M.intl.string(M.t.GQRCGn)),
                 textChannelSymbolHook: (e, t) => H(t, m.AT.TEXT_CHANNEL, M.intl.string(M.t.wrwhuZ)),
@@ -548,7 +548,7 @@ class F extends s.PureComponent {
         })
     }
     render() {
-        return (0, i.jsx)(a.dWK, {
+        return (0, i.jsx)(r.dWK, {
             "aria-label": M.intl.string(M.t.ZvKwYa),
             size: "lg",
             transitionState: this.props.transitionState,

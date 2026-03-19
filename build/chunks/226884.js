@@ -1,34 +1,34 @@
 /** chunk id: 226884 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => A
 });
 var l = n(627968);
 n(64700);
 var s = n(397927),
     i = n(964486),
-    a = n(58149),
-    r = n(652176),
+    r = n(58149),
+    a = n(652176),
     o = n(448290),
     u = n(734057),
     c = n(309010),
     d = n(954571),
     m = n(652215),
     h = n(985018),
-    g = n(360158);
-let p = function(e) {
+    g = n(637936);
+let A = function(e) {
     let {
         guild: t,
         message: n,
-        onClose: p
-    } = e, A = u.A.getChannel(c.A.getChannelId(t.id));
+        onClose: A
+    } = e, f = u.A.getChannel(c.A.getChannelId(t.id));
     return ((0, i.Ay)(() => {
         d.default.track(m.HAw.OPEN_POPOUT, {
             type: "New Member Badge Popout",
             guild_id: t.id,
-            channel_id: A?.id
+            channel_id: f?.id
         })
-    }), null == A) ? null : (0, l.jsx)(r.Uq, {
+    }), null == f) ? null : (0, l.jsx)(a.Uq, {
         className: g.cc,
         children: (0, l.jsxs)("div", {
             className: g.jC,
@@ -63,9 +63,9 @@ let p = function(e) {
                     }),
                     fullWidth: !0,
                     onClick: () => {
-                        a.Ay.trackWithMetadata(m.HAw.NEW_MEMBER_MENTION_CTA_CLICKED, {
+                        r.Ay.trackWithMetadata(m.HAw.NEW_MEMBER_MENTION_CTA_CLICKED, {
                             target_user_id: n.author.id
-                        }), p(), (0, o.C)(n.author, A.id)
+                        }), A(), (0, o.C)(n.author, f.id)
                     }
                 })
             })]

@@ -7,9 +7,9 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    r = n(397927),
-    a = n(769015),
-    o = n(129353);
+    a = n(397927),
+    r = n(769015),
+    o = n(669563);
 
 function c(e) {
     let {
@@ -21,7 +21,7 @@ function c(e) {
     {
         if (1 === n.length) return (0, i.jsx)("div", {
             className: l()(o.kL, t, s && o.F4),
-            children: (0, i.jsx)(a.A, {
+            children: (0, i.jsx)(r.A, {
                 game: n[0].application,
                 className: o.wK
             })
@@ -29,13 +29,13 @@ function c(e) {
         let e = n.length - 1;
         return (0, i.jsxs)("div", {
             className: l()(o.kL, t, s && o.F4),
-            children: [(0, i.jsx)(a.A, {
+            children: [(0, i.jsx)(r.A, {
                 game: n[0].application,
                 className: o.wK
-            }), 2 === n.length ? (0, i.jsx)(a.A, {
+            }), 2 === n.length ? (0, i.jsx)(r.A, {
                 game: n[1].application,
                 className: o.wK
-            }) : (0, i.jsx)(r.Text, {
+            }) : (0, i.jsx)(a.Text, {
                 className: o.ju,
                 variant: "text-xs/bold",
                 color: "interactive-text-active",

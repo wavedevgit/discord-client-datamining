@@ -7,8 +7,8 @@ n.d(t, {
 var i, s = n(627968);
 n(64700);
 var l = n(503698),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(139033),
     c = n(397927),
     d = n(830215),
@@ -16,12 +16,12 @@ var l = n(503698),
     h = n(915089),
     A = n(557722),
     m = n(834942),
-    p = n(287809),
-    g = n(652215),
+    g = n(287809),
+    p = n(652215),
     _ = n(53516),
     f = n(985018),
-    x = n(43310),
-    C = n(248789),
+    x = n(178768),
+    C = n(513679),
     E = ((i = {})[i.VOICE = 0] = "VOICE", i);
 let I = e => {
     let {
@@ -34,13 +34,13 @@ let I = e => {
         notPhoneVerified: b,
         newAccount: S,
         newMember: T
-    } = (0, a.bG)([m.A], () => m.A.getCheck(i), [i]), v = 0 === t ? f.intl.string(f.t["6zY8BI"]) : null, y = null, j = null;
+    } = (0, r.bG)([m.A], () => m.A.getCheck(i), [i]), v = 0 === t ? f.intl.string(f.t["6zY8BI"]) : null, y = null, j = null;
     return (0 === t && (I ? (y = f.intl.string(f.t.IRxUlG), j = f.intl.string(f.t.fiNVin)) : b ? (y = f.intl.string(f.t.vW8iUF), j = f.intl.string(f.t["50gfOv"])) : N ? (y = f.intl.string(f.t.vdSOpz), j = f.intl.string(f.t.lm1UKt)) : T ? (y = f.intl.formatToPlainString(f.t.v1ktYb, {
-        min: g.$8o.MEMBER_AGE
+        min: p.$8o.MEMBER_AGE
     }), j = f.intl.string(f.t.BddRzS)) : S && (y = f.intl.formatToPlainString(f.t.sncw41, {
-        min: g.$8o.ACCOUNT_AGE
+        min: p.$8o.ACCOUNT_AGE
     }), j = f.intl.string(f.t.BddRzS))), null == v || null == y) ? null : (0, s.jsxs)(c.lGe, {
-        className: r()(C.popover, x.kL),
+        className: a()(C.popover, x.kL),
         "aria-labelledby": E,
         children: [(0, s.jsx)("img", {
             alt: "",
@@ -68,7 +68,7 @@ let I = e => {
                             I ? u.R() : b ? (0, c.mMO)(async () => {
                                 let {
                                     default: e
-                                } = await Promise.all([n.e("84704"), n.e("45668")]).then(n.bind(n, 615715));
+                                } = await Promise.all([n.e("84704"), n.e("24676")]).then(n.bind(n, 615715));
                                 return t => (0, s.jsx)(e, {
                                     reason: A.d.GUILD_PHONE_REQUIRED,
                                     ...t
@@ -78,7 +78,7 @@ let I = e => {
                             }) : N && (d.A.verifyResend(), (0, o.A)({
                                 title: f.intl.string(f.t.LykQYk),
                                 subtitle: f.intl.format(f.t.azKEPy, {
-                                    email: p.default.getCurrentUser()?.email
+                                    email: g.default.getCurrentUser()?.email
                                 })
                             })), l()
                         }

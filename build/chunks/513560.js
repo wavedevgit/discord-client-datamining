@@ -5,20 +5,20 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(397927),
-    r = n(843626),
-    a = n(427209),
+    a = n(843626),
+    r = n(427209),
     s = n(519222),
     o = n(985018);
 
 function d(e, t) {
-    return (0, r.m)(e) ? (0, i.jsx)(l.Drp, {
+    return (0, a.m)(e) ? (0, i.jsx)(l.Drp, {
         id: "forward",
         label: o.intl.string(o.t.I3ltXO),
         leadingAccessory: {
             type: "icon",
-            icon: a.A
+            icon: r.A
         },
-        icon: a.A,
+        icon: r.A,
         action: () => {
             (0, s.Z4)(t, e)
         }

@@ -10,7 +10,7 @@ var i = n(627968),
     o = n(435371),
     d = n(397927),
     c = n(573435),
-    u = n(683050);
+    u = n(635040);
 let A = a.forwardRef(function(e, t) {
     let {
         icon: n,

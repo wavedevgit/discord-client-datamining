@@ -24,19 +24,19 @@ var u = n(355097),
     S = n(795710),
     C = n(484813),
     f = n(1748),
-    N = n(772473),
-    I = n(64514),
-    b = n(121818),
+    b = n(772473),
+    N = n(64514),
+    I = n(121818),
     v = n(536851),
     j = n(992186),
     y = n(629139),
-    O = n(753563),
-    R = n(584378),
-    L = n(747918),
-    D = n(330290),
-    P = n(252261),
-    G = n(106731);
-let M = (e, t, n) => (0, s.Mw)(e) ? t : n,
+    R = n(753563),
+    O = n(584378),
+    P = n(747918),
+    L = n(330290),
+    D = n(252261),
+    M = n(106731);
+let G = (e, t, n) => (0, s.Mw)(e) ? t : n,
     U = e => {
         let {
             styles: t
@@ -56,7 +56,7 @@ let M = (e, t, n) => (0, s.Mw)(e) ? t : n,
             badgeAlt: {
                 title: _.intl.string(_.t["5cYMu0"]),
                 description: _.intl.string(_.t.vxk9va),
-                imageSource: M(s, m, g),
+                imageSource: G(s, m, g),
                 imageClassName: t.badgeNewImage
             },
             clientThemes: {
@@ -107,55 +107,55 @@ let M = (e, t, n) => (0, s.Mw)(e) ? t : n,
             longerMessages: {
                 title: _.intl.string(_.t.BUScid),
                 description: _.intl.string(_.t.vN6XpQ),
-                imageSource: M(s, O, R),
+                imageSource: G(s, R, O),
                 imageClassName: t.longerMessagesImage
             },
             moreGuilds: {
                 title: _.intl.string(_.t.Bv8Pfk),
                 description: _.intl.string(_.t.JMfaTU),
-                imageSource: M(s, x, L),
+                imageSource: G(s, x, P),
                 imageClassName: t.moreGuildsImage
             },
             moreGuildsAlt: {
                 title: _.intl.string(_.t.Bv8Pfk),
                 description: _.intl.string(_.t.JMfaTU),
-                imageSource: M(s, p, T),
+                imageSource: G(s, p, T),
                 imageClassName: t.moreGuildsAltImage
             },
             soundboard: {
                 title: _.intl.string(_.t["lGcW+c"]),
                 description: _.intl.string(_.t["/fDyO+"]),
-                imageSource: M(s, E, S),
+                imageSource: G(s, E, S),
                 imageClassName: t.soundboardImage
             },
             stickers: {
                 title: _.intl.string(_.t["1c+xwT"]),
                 description: _.intl.string(_.t.hJG8ZN),
-                imageSource: M(s, C, D),
+                imageSource: G(s, C, L),
                 imageClassName: t.stickersImage
             },
             stickersBurst: {
                 title: _.intl.string(_.t.tzdIwI),
                 description: _.intl.string(_.t.hJG8ZN),
-                imageSource: M(s, C, D),
+                imageSource: G(s, C, L),
                 imageClassName: t.stickersImage
             },
             stickersPremiumPerk: {
                 title: _.intl.string(_.t.tzdIwI),
                 description: _.intl.string(_.t.hJG8ZN),
-                imageSource: M(s, C, D),
+                imageSource: G(s, C, L),
                 imageClassName: t.stickersImage
             },
             streaming: {
                 title: _.intl.string(_.t.RSXQYO),
                 description: _.intl.string(_.t.ymCPxp),
-                imageSource: P,
+                imageSource: D,
                 imageClassName: t.streamingImage
             },
             superReactions: {
                 title: _.intl.string(_.t["uZt5q/"]),
                 description: _.intl.string(_.t.ZK3ZoX),
-                imageSource: M(s, f, N),
+                imageSource: G(s, f, b),
                 imageClassName: t.superReactionsImage
             },
             upload: {
@@ -165,13 +165,13 @@ let M = (e, t, n) => (0, s.Mw)(e) ? t : n,
                 description: _.intl.formatToPlainString(_.t["HI+cfm"], {
                     premiumMaxSize: k
                 }),
-                imageSource: G,
+                imageSource: M,
                 imageClassName: t.uploadImage
             },
             videoBackground: {
                 title: _.intl.string(_.t.NaGpTf),
                 description: _.intl.string(_.t["A8O/Qw"]),
-                imageSource: M(s, I, b),
+                imageSource: G(s, N, I),
                 imageClassName: t.videoBackgroundImage
             }
         }

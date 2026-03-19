@@ -1,18 +1,18 @@
 /** chunk id: 633452 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => r
+    A: () => a
 });
 var l = n(311907),
     s = n(73153);
 let i = new Map;
-class a extends l.Ay.Store {
+class r extends l.Ay.Store {
     static displayName = "GuildRoleConnectionEligibilityStore";
     getGuildRoleConnectionEligibility(e) {
         return null != e ? i.get(e) : void 0
     }
 }
-let r = new a(s.h, {
+let a = new r(s.h, {
     GUILD_ROLE_CONNECTION_ELIGIBILITY_FETCH_SUCCESS: e => {
         let {
             roleId: t,

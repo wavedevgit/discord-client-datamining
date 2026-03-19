@@ -23,11 +23,11 @@ var i = n(627968),
     S = n(927578),
     C = n(83617),
     f = n(615396),
-    N = n(543767),
-    I = n(652215),
-    b = n(985018),
-    v = n(752375),
-    j = n(20976);
+    b = n(543767),
+    N = n(652215),
+    I = n(985018),
+    v = n(107189),
+    j = n(641254);
 
 function y(e) {
     let {
@@ -36,16 +36,16 @@ function y(e) {
         highlightAddPaymentMethodButton: l,
         dropdownClassName: r,
         analyticsLocation: y,
-        currentInvoicePreview: R,
-        disabled: L = !1
-    } = e, D = (0, d.bG)([p.A], () => p.A.hidePersonalInformation), [P, G] = (0, d.yK)([T.A], () => [T.A.paymentSources, T.A.hasFetchedPaymentSources]), M = (0, h.Y)((0, f.MP)(t)), {
+        currentInvoicePreview: O,
+        disabled: P = !1
+    } = e, L = (0, d.bG)([p.A], () => p.A.hidePersonalInformation), [D, M] = (0, d.yK)([T.A], () => [T.A.paymentSources, T.A.hasFetchedPaymentSources]), G = (0, h.Y)((0, f.MP)(t)), {
         analyticsLocations: U
-    } = (0, x.Ay)(), k = s.useMemo(() => Object.values(P).filter(e => !e.invalid), [P]), [V, w] = s.useState(!1), [B, H] = s.useState(t.currency), F = async (e, n, i) => {
+    } = (0, x.Ay)(), k = s.useMemo(() => Object.values(D).filter(e => !e.invalid), [D]), [V, w] = s.useState(!1), [B, H] = s.useState(t.currency), F = async (e, n, i) => {
         if (null == t) throw Error("missing subscription and paymentSource");
         null == e ? await _.r6(t, n, i, U, y) : await _.uK(t, e, n, i, U, y), w(!1), H(n)
     }, Y = async (e, n, i) => {
         w(!0);
-        let s = await (0, N.OQ)({
+        let s = await (0, b.OQ)({
                 subscriptionId: t.id,
                 paymentSourceId: e?.id,
                 renewal: !0,
@@ -57,7 +57,7 @@ function y(e) {
                 amount: s.subtotal,
                 currency: s.currency
             };
-        R.currency !== s.currency || R.currency === s.currency && R.total !== s.total ? await O(s, () => {
+        O.currency !== s.currency || O.currency === s.currency && O.total !== s.total ? await R(s, () => {
             i(e, n, l)
         }, () => {
             w(!1)
@@ -66,7 +66,7 @@ function y(e) {
         let n = E.A.get(t.planIdForCurrencies);
         o()(null != e, "paymentSource not specified for change"), o()(null != n, "Unable to fetch plan");
         let i = (0, C._w)(n.id, e.id, !1);
-        return i.length > 0 ? i[0] : I.Yri.USD
+        return i.length > 0 ? i[0] : N.Yri.USD
     }, X = e => {
         (0, C.c_)(e.id, (0, f.MP)(t)).then(() => {
             Y(e, z(e), F)
@@ -80,7 +80,7 @@ function y(e) {
             onCloseCallback: () => {
                 (0, u.ET)()
             },
-            onCloseRequest: I.tEg
+            onCloseRequest: N.tEg
         })
     };
     if (t.isPurchasedExternally) {
@@ -91,17 +91,17 @@ function y(e) {
             className: v.uZ,
             children: (0, i.jsx)(c.Button, {
                 variant: "secondary",
-                text: b.intl.string(b.t.SgX7Ra),
+                text: I.intl.string(I.t.SgX7Ra),
                 fullWidth: !0
             })
         })
     }
-    if (!G || !M) return (0, i.jsx)(c.y$y, {});
+    if (!M || !G) return (0, i.jsx)(c.y$y, {});
     if (!(k.length > 0)) return (0, i.jsx)(c.Button, {
         fullWidth: !0,
         variant: l ? "primary" : "secondary",
         onClick: W,
-        text: b.intl.string(b.t.CpOiEO)
+        text: I.intl.string(I.t.CpOiEO)
     });
     {
         let e, n = E.A.get(t.planIdForCurrencies);
@@ -110,26 +110,26 @@ function y(e) {
         return (0, i.jsxs)(i.Fragment, {
             children: [(e = t.paymentSourceId, (0, i.jsx)(A.A, {
                 prependOption: null == e ? {
-                    label: b.intl.string(b.t.iA5vA1),
+                    label: I.intl.string(I.t.iA5vA1),
                     value: null
                 } : null,
                 className: r,
                 paymentSources: k,
-                hidePersonalInformation: D,
+                hidePersonalInformation: L,
                 selectedPaymentSourceId: e,
                 onChange: e => {
                     null != e && Y(e, z(e), F)
                 },
                 onPaymentSourceAdd: W,
                 dropdownLoading: V,
-                disabled: L,
+                disabled: P,
                 paymentGatewayRestrictions: t.eligiblePaymentGateways
             })), null != t.paymentSourceId ? (0, i.jsx)(g.f, {
                 currencies: s,
                 children: (0, i.jsx)("div", {
                     className: a()(v.Gl, j.Uu, j.Hu),
                     children: (0, i.jsx)(g.A, {
-                        label: b.intl.string(b.t["0YjaXf"]),
+                        label: I.intl.string(I.t["0YjaXf"]),
                         selectedCurrency: B,
                         currencies: s,
                         onChange: e => {
@@ -141,7 +141,7 @@ function y(e) {
         })
     }
 }
-let O = async (e, t, s) => {
+let R = async (e, t, s) => {
     let l = await (0, c.mMO)(async () => {
         let {
             default: l

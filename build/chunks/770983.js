@@ -25,9 +25,9 @@ var i = n(627968),
     E = n(188275),
     T = n(518477),
     b = n(985018),
-    N = n(79711);
+    N = n(525785);
 
-function S(e) {
+function y(e) {
     let {
         application: t,
         sku: n,
@@ -84,7 +84,7 @@ function S(e) {
     })
 }
 
-function y(e) {
+function S(e) {
     let {
         wishlist: t,
         handleOpenUserProfileModal: n,
@@ -106,7 +106,7 @@ function y(e) {
             wishlistOwner: f,
             handleOpenUserProfileModal: n,
             analyticsLocations: a
-        }, e.id) : (0, i.jsx)(S, {
+        }, e.id) : (0, i.jsx)(y, {
             application: x,
             sku: e,
             handleOpenUserProfileModal: n,
@@ -128,7 +128,7 @@ function C(e) {
         numItems: n,
         source: I.B5.USER_PROFILE
     });
-    return (0, i.jsx)(y, {
+    return (0, i.jsx)(S, {
         isLoading: "loading" === s,
         recommendations: a,
         numWishlistItemsToRecommend: n,

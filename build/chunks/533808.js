@@ -1,6 +1,6 @@
 /** chunk id: 533808 params = (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => N
 });
 var i = n(627968),
     s = n(64700),
@@ -21,9 +21,9 @@ var i = n(627968),
     T = n(849918),
     E = n(219887),
     S = n(985018),
-    C = n(670566);
+    C = n(233364);
 let f = "isDefault";
-class N extends s.PureComponent {
+class b extends s.PureComponent {
     static defaultProps = {
         onDelete: () => {},
         onSubmit: () => {},
@@ -276,7 +276,7 @@ class N extends s.PureComponent {
         })
     }
 }
-let I = o.Ay.connectStores([x.A], () => ({
+let N = o.Ay.connectStores([x.A], () => ({
     updateError: x.A.editSourceError,
     removeError: x.A.removeSourceError
-}))(N)
+}))(b)

@@ -6,17 +6,17 @@ n.d(t, {
 });
 var i, s = n(627968),
     l = n(64700),
-    r = n(311907),
-    a = n(342494),
+    a = n(311907),
+    r = n(342494),
     o = n(397927),
     c = n(827827),
     d = n(253932),
     u = n(461213),
     h = n(481045),
-    A = n(536482),
+    A = n(730844),
     m = n(985018),
-    p = n(761960),
-    g = n(233732);
+    g = n(125962),
+    p = n(233732);
 
 function _(e) {
     let {
@@ -24,7 +24,7 @@ function _(e) {
     } = e;
     return (0, s.jsx)("div", {
         "data-button-hoisted-classname-wrapper": !0,
-        className: p.K2,
+        className: g.K2,
         children: (0, s.jsx)(o.Button, {
             variant: "primary",
             size: "sm",
@@ -43,17 +43,17 @@ function f(e) {
     let {
         showCurrentGame: t,
         shouldShowStatus: n = !1
-    } = e, i = (0, r.bG)([u.A], () => u.A.getStatus());
+    } = e, i = (0, a.bG)([u.A], () => u.A.getStatus());
     return (0, s.jsxs)("div", {
-        className: p.E3,
+        className: g.E3,
         children: [(0, s.jsxs)("div", {
-            className: p.fu,
+            className: g.fu,
             children: [(0, s.jsx)(o.Text, {
                 variant: "text-sm/medium",
                 color: "text-strong",
                 children: m.intl.string(A.default.WhdCGP)
             }), n && (0, s.jsxs)("div", {
-                className: p.$v,
+                className: g.$v,
                 children: [(0, s.jsx)(o.nW6, {
                     status: o.clD.ONLINE,
                     size: 8
@@ -79,10 +79,10 @@ function x(e) {
         children: t
     } = e, n = (0, l.useRef)(null);
     return (0, o.tjt)(n), (0, s.jsx)("div", {
-        className: p.iE,
+        className: g.iE,
         ref: n,
         children: (0, s.jsx)("div", {
-            className: p.Qs,
+            className: g.Qs,
             children: t
         })
     })
@@ -100,7 +100,7 @@ function C(e) {
             color: "text-subtle",
             children: m.intl.string(A.default["7cfFob"])
         }), (0, s.jsx)(o.cGx, {
-            className: p.yF
+            className: g.yF
         }), (0, s.jsx)(h.qA, {
             onClosePopout: t
         })]
@@ -121,10 +121,10 @@ function E(e) {
             children: [(0, s.jsx)(o.Heading, {
                 variant: "heading-sm/semibold",
                 color: "text-strong",
-                className: p._M,
+                className: g._M,
                 children: m.intl.string(A.default["5YsmGI"])
             }), (0, s.jsxs)("div", {
-                className: p.$v,
+                className: g.$v,
                 children: [(0, s.jsx)(o.nW6, {
                     status: o.clD.ONLINE,
                     size: 8
@@ -157,7 +157,7 @@ function I(e) {
             color: "text-subtle",
             children: m.intl.string(A.default["7cfFob"])
         }), (0, s.jsx)(o.cGx, {
-            className: p.yF
+            className: g.yF
         }), (0, s.jsx)(h.qA, {
             onClosePopout: t
         })]
@@ -170,9 +170,9 @@ function b(e) {
         showPopout: t,
         popoutState: n,
         handleClose: i,
-        popoutTargetRef: r,
+        popoutTargetRef: a,
         children: u
-    } = e, [p, _] = (0, l.useState)(n), f = (0, l.useRef)(null), x = function(e) {
+    } = e, [g, _] = (0, l.useState)(n), f = (0, l.useRef)(null), x = function(e) {
         if (null === e) return null;
         switch (e) {
             case 0:
@@ -227,7 +227,7 @@ function b(e) {
             default:
                 return null
         }
-    }(p), N = (0, l.useRef)(t);
+    }(g), N = (0, l.useRef)(t);
     if ((0, l.useEffect)(() => {
             t && !N.current && _(n), t !== N.current && (N.current = t)
         }, [n, t]), null == x || !t) return u;
@@ -239,8 +239,8 @@ function b(e) {
             textLink: l
         } = x;
         return (0, s.jsxs)(s.Fragment, {
-            children: [(0, s.jsx)(a.AM, {
-                targetElementRef: r,
+            children: [(0, s.jsx)(r.AM, {
+                targetElementRef: a,
                 shouldShow: !0,
                 position: "top",
                 align: "center",
@@ -251,7 +251,7 @@ function b(e) {
                 gradientColor: "purple",
                 graphic: {
                     type: "image",
-                    src: g.A
+                    src: p.A
                 },
                 actions: [{
                     ...e,

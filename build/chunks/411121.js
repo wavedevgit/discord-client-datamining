@@ -1,6 +1,6 @@
 /** chunk id: 411121 params = (module,exports,require) **/
 n.d(t, {
-    A: () => G
+    A: () => M
 });
 var i = n(627968),
     s = n(64700),
@@ -23,16 +23,16 @@ var i = n(627968),
     S = n(961350),
     C = n(30793),
     f = n(351906),
-    N = n(97352),
-    I = n(67480),
-    b = n(147925),
+    b = n(97352),
+    N = n(67480),
+    I = n(147925),
     v = n(957565),
     j = n(45938),
     y = n(615396),
-    O = n(788868),
-    R = n(985018),
-    L = n(539785);
-class D extends s.PureComponent {
+    R = n(788868),
+    O = n(985018),
+    P = n(553551);
+class L extends s.PureComponent {
     _copyModeTimeout = new c.Ep;
     state = {
         copyMode: _.qCr.DEFAULT
@@ -43,11 +43,11 @@ class D extends s.PureComponent {
     get copyButtonText() {
         switch (this.state.copyMode) {
             case _.qCr.SUCCESS:
-                return R.intl.string(R.t.XVvPjU);
+                return O.intl.string(O.t.XVvPjU);
             case _.qCr.ERROR:
-                return R.intl.string(R.t.i4GM3L);
+                return O.intl.string(O.t.i4GM3L);
             default:
-                return R.intl.string(R.t.OpuAlK)
+                return O.intl.string(O.t.OpuAlK)
         }
     }
     handleRevoke(e) {
@@ -77,33 +77,33 @@ class D extends s.PureComponent {
         } = this.state;
         return (0, i.jsxs)(x.A, {
             direction: x.A.Direction.VERTICAL,
-            className: L.Gj,
+            className: P.Gj,
             children: [(0, i.jsx)(_.e2O, {
-                className: L.ph,
+                className: P.ph,
                 value: (0, j.Zq)(t.code),
                 text: this.copyButtonText,
                 mode: n,
                 supportsCopy: v.p5,
-                hideMessage: e ? R.intl.string(R.t["0RLn47"]) : null,
+                hideMessage: e ? O.intl.string(O.t["0RLn47"]) : null,
                 onCopy: this.handleCopy,
                 buttonColor: u.XD.BRAND,
                 buttonLook: u.pR.FILLED
             }), (0, i.jsxs)("div", {
-                className: L.KB,
+                className: P.KB,
                 children: [null != t.expiresAt ? (0, i.jsxs)(s.Fragment, {
-                    children: [R.intl.format(R.t.ltVZcJ, {
+                    children: [O.intl.format(O.t.ltVZcJ, {
                         hours: t.expiresAt.diff(o()(), "h")
                     }), " —\xa0"]
                 }) : null, (0, i.jsx)(_.DUT, {
                     tag: "a",
                     onClick: () => this.handleRevoke(t.code),
-                    children: R.intl.string(R.t.v6Yazx)
+                    children: O.intl.string(O.t.v6Yazx)
                 })]
             })]
         })
     }
 }
-class P extends s.PureComponent {
+class D extends s.PureComponent {
     _loadedAt = null;
     state = {
         isOpen: !1,
@@ -146,10 +146,10 @@ class P extends s.PureComponent {
         return (0, T.bF)(e) ? (0, i.jsx)(E.e, {
             shape: "square",
             sku: e,
-            containerClassName: L.ez
+            containerClassName: P.ez
         }) : null != t ? (0, i.jsx)(p.A, {
             giftStyle: t,
-            className: L.ez,
+            className: P.ez,
             shouldAnimate: this.state.isHovered
         }) : (0, i.jsx)(h.A, {
             game: n,
@@ -164,19 +164,19 @@ class P extends s.PureComponent {
             application: n
         } = this.props;
         return (0, T.bF)(e) ? (0, i.jsxs)("div", {
-            className: a()(L.Oc, L.ic),
+            className: a()(P.Oc, P.ic),
             children: [(0, i.jsx)(h.A, {
                 game: n,
                 size: h.M.XSMALL,
                 skuId: e.id,
-                className: L._u
-            }), R.intl.format(R.t["6plpZi"], {
+                className: P._u
+            }), O.intl.format(O.t["6plpZi"], {
                 applicationName: n.name,
                 copies: t.length
             })]
         }) : (0, i.jsx)("div", {
-            className: L.Oc,
-            children: R.intl.format(R.t.zMcvcA, {
+            className: P.Oc,
+            children: O.intl.format(O.t.zMcvcA, {
                 copies: t.length
             })
         })
@@ -187,14 +187,14 @@ class P extends s.PureComponent {
             subscriptionPlan: n,
             giftCodeBatchId: s
         } = this.props;
-        return e = s === O.FB ? R.intl.string(R.t.odsU6W) : s === O.Bu && null != n ? R.intl.formatToPlainString(n.interval === O.WT.MONTH ? R.t.uZjpiJ : R.t.bJW1EA, {
+        return e = s === R.FB ? O.intl.string(O.t.odsU6W) : s === R.Bu && null != n ? O.intl.formatToPlainString(n.interval === R.WT.MONTH ? O.t.uZjpiJ : O.t.bJW1EA, {
             skuName: t.name,
             intervalCount: n.intervalCount
-        }) : null == n ? t.name : R.intl.formatToPlainString(n.interval === O.WT.MONTH ? R.t.rCJvqo : R.t.Vd3Iu8, {
+        }) : null == n ? t.name : O.intl.formatToPlainString(n.interval === R.WT.MONTH ? O.t.rCJvqo : O.t.Vd3Iu8, {
             skuName: t.name,
             intervalCount: n.intervalCount
         }), (0, i.jsx)("div", {
-            className: L.mO,
+            className: P.mO,
             children: e
         })
     }
@@ -202,14 +202,14 @@ class P extends s.PureComponent {
         return (0, i.jsxs)(x.A, {
             justify: x.A.Justify.BETWEEN,
             align: x.A.Align.CENTER,
-            className: L.pe,
+            className: P.pe,
             children: [(0, i.jsx)(_.Text, {
                 variant: "text-md/normal",
-                children: R.intl.string(R.t.lELyPj)
+                children: O.intl.string(O.t.lELyPj)
             }), (0, i.jsx)(_.Button, {
                 variant: "primary",
                 size: "sm",
-                text: R.intl.string(R.t.Q3Qguo),
+                text: O.intl.string(O.t.Q3Qguo),
                 loading: this.state.isCreating,
                 onClick: this.handleGenerateGiftCode
             })]
@@ -236,30 +236,30 @@ class P extends s.PureComponent {
             className: l,
             children: [(0, i.jsx)(_.DUT, {
                 onClick: this.handleToggleOpen,
-                className: L.Nr,
+                className: P.Nr,
                 onMouseEnter: () => this.setIsHovered(!0),
                 onMouseLeave: () => this.setIsHovered(!1),
                 children: (0, i.jsx)(g.A.Header, {
                     splashArtURL: t.getSplashURL(512),
                     children: (0, i.jsxs)("div", {
-                        className: L.MY,
+                        className: P.MY,
                         children: [(0, i.jsxs)(x.A, {
                             align: x.A.Align.CENTER,
                             children: [this.renderGiftIcon(), (0, i.jsxs)("div", {
-                                className: L.TK,
+                                className: P.TK,
                                 children: [this.renderTitle(), this.renderSubtitle()]
                             })]
-                        }), (0, i.jsx)(b.A, {
-                            direction: d ? b.A.Directions.UP : b.A.Directions.DOWN,
-                            className: L.eO
+                        }), (0, i.jsx)(I.A, {
+                            direction: d ? I.A.Directions.UP : I.A.Directions.DOWN,
+                            className: P.eO
                         })]
                     })
                 })
             }), d ? (0, i.jsx)(g.A.Body, {
                 children: r ? (0, i.jsx)(_.y$y, {
-                    className: L.u1
+                    className: P.u1
                 }) : (0, i.jsxs)(s.Fragment, {
-                    children: [n.length < e.length ? this.renderGenerateGiftCodeRow() : null, n.map(e => (0, i.jsx)(D, {
+                    children: [n.length < e.length ? this.renderGenerateGiftCodeRow() : null, n.map(e => (0, i.jsx)(L, {
                         giftCode: e,
                         sku: a,
                         hideCode: o
@@ -269,12 +269,12 @@ class P extends s.PureComponent {
         })
     }
 }
-let G = d.Ay.connectStores([I.A, f.A, C.A, A.A, N.A, S.default], e => {
+let M = d.Ay.connectStores([N.A, f.A, C.A, A.A, b.A, S.default], e => {
     let {
         skuId: t,
         subscriptionPlanId: n,
         giftStyle: i
-    } = e, s = I.A.get(t);
+    } = e, s = N.A.get(t);
     if (null == s) throw Error("SKU was unavailable while rendering gift.");
     let l = C.A.getForGifterSKUAndPlan(S.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === i);
     return {
@@ -286,4 +286,4 @@ let G = d.Ay.connectStores([I.A, f.A, C.A, A.A, N.A, S.default], e => {
         subscriptionPlan: null != n ? (0, y.c9)(n) : null,
         giftCodes: l
     }
-})(P)
+})(D)

@@ -1,10 +1,10 @@
 /** chunk id: 828578 params = (module,exports,require) **/
-a.d(s, {
-    E: () => p
+r.d(e, {
+    E: () => i
 });
-var i = a(397927),
-    o = a(985018);
+var n = r(397927),
+    s = r(985018);
 
-function p() {
-    (0, i.showToast)((0, i.createToast)(o.intl.string(o.t["TGg/2k"]), i.ToastType.FAILURE))
+function i() {
+    (0, n.showToast)((0, n.createToast)(s.intl.string(s.t["TGg/2k"]), n.ToastType.FAILURE))
 }

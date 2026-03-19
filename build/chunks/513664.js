@@ -2,7 +2,7 @@
 n.d(t, {
     Ay: () => E,
     dd: () => T,
-    lD: () => I
+    lD: () => N
 });
 var i = n(627968),
     s = n(64700),
@@ -18,8 +18,8 @@ var i = n(627968),
     g = n(531525),
     A = n(652215),
     x = n(985018),
-    h = n(536482),
-    p = n(208746);
+    h = n(730844),
+    p = n(13476);
 
 function T() {
     let e = _.tz.useSetting();
@@ -50,13 +50,13 @@ function E(e) {
     return (0, i.jsxs)(m.A, {
         className: t,
         title: x.intl.string(x.t.Cq98yL),
-        children: [(0, i.jsx)(N, {}), (0, i.jsx)(a.cGx, {
+        children: [(0, i.jsx)(b, {}), (0, i.jsx)(a.cGx, {
             gap: 32
         }), (0, i.jsx)(C, {}), (0, i.jsx)(a.cGx, {
             gap: 32
         }), (0, i.jsx)(f, {}), (0, i.jsx)(a.cGx, {
             gap: 32
-        }), (0, i.jsx)(I, {})]
+        }), (0, i.jsx)(N, {})]
     })
 }
 
@@ -140,7 +140,7 @@ function f() {
     })
 }
 
-function N() {
+function b() {
     let e = _.tz.useSetting(),
         t = u.isPlatformEmbedded ? x.intl.string(h.default.UQ9RHJ) : x.intl.string(x.t.oKqC4t);
     return (0, i.jsx)(c.x, {
@@ -160,7 +160,7 @@ function N() {
     })
 }
 
-function I() {
+function N() {
     return (0, i.jsx)(c.x, {
         setting: g.H.ACTIVITY_PRIVACY_TOS,
         children: (0, i.jsx)(a.ZpM, {

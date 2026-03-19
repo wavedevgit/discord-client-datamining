@@ -30,7 +30,7 @@ var i = n(627968),
     b = n(652215),
     v = n(936649),
     j = n(985018),
-    R = n(286062);
+    R = n(840056);
 
 function M(e) {
     let {
@@ -101,7 +101,7 @@ function D(e) {
             }), null != P && (0, d.mMO)(async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("43600"), n.e("28136"), n.e("8421")]).then(n.bind(n, 234355));
+                } = await Promise.all([n.e("43600"), n.e("28136"), n.e("9925")]).then(n.bind(n, 234355));
                 return t => (0, i.jsx)(e, {
                     ...t,
                     guild: P,

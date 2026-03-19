@@ -12,7 +12,7 @@ var i = n(627968),
     c = n(253932),
     u = n(780964),
     _ = n(985018),
-    m = n(536482);
+    m = n(730844);
 let g = (0, d.Qx)(u.X.ACTIVITY_PRIVACY_PER_GUILD_DEFAULT_SETTING, {
     useTitle: () => (0, r.i)("GuildActivitySharingDefaultSetting") ? _.intl.string(_.t.vpgck1) : _.intl.string(m.default["/LHVbt"]),
     useOptions: function() {

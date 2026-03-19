@@ -8,7 +8,7 @@ var i = n(627968),
     l = n(242564),
     r = n(250627),
     a = n(985018),
-    o = n(276539);
+    o = n(239825);
 let d = (0, l.IE)([(0, l.mP)({
     key: "LISTING_NAME",
     cellClassName: o.Qy,

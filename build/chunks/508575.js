@@ -7,7 +7,7 @@ var a = n(627968),
     l = n(843282),
     s = n(397927),
     r = n(927813),
-    o = n(93587);
+    o = n(930625);
 let d = [{
         value: 1,
         label: "Stream Desktop"

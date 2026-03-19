@@ -1,25 +1,25 @@
 /** chunk id: 59544 params = (module,exports,require) **/
-n.d(t, {
-    A: () => s,
-    Q: () => c
+n.d(e, {
+    A: () => a,
+    Q: () => s
 });
-var l = n(64700),
-    a = n(25171),
-    i = n(880405);
+var r = n(64700),
+    i = n(25171),
+    o = n(880405);
 
-function r() {
-    let [e, t] = l.useState(!1);
-    return l.useEffect(() => {
-        a.A.isProtocolRegistered("steam").then(t)
-    }, []), e
+function l() {
+    let [t, e] = r.useState(!1);
+    return r.useEffect(() => {
+        i.A.isProtocolRegistered("steam").then(e)
+    }, []), t
 }
 
-function s(e) {
-    let t = r();
-    return (0, i.Qq)(e, t)
+function a(t) {
+    let e = l();
+    return (0, o.Qq)(t, e)
 }
 
-function c(e) {
-    let t = r();
-    return l.useMemo(() => e.map(e => (0, i.Qq)(e, t)), [e, t])
+function s(t) {
+    let e = l();
+    return r.useMemo(() => t.map(t => (0, o.Qq)(t, e)), [t, e])
 }

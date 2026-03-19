@@ -1,92 +1,92 @@
 /** chunk id: 491182 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => A
 });
 var l = n(627968),
     s = n(64700),
     i = n(503698),
-    a = n.n(i),
-    r = n(311907),
+    r = n.n(i),
+    a = n(311907),
     o = n(473193),
     u = n(397927),
     c = n(824994),
     d = n(176201),
     m = n(676608),
     h = n(317525),
-    g = n(679740);
-let p = function(e) {
+    g = n(222590);
+let A = function(e) {
     let {
         className: t,
         compact: n = !1,
         contentOnly: i = !1,
-        zalgo: p = !0,
-        preview: A = !1,
-        disableInteraction: x = !1,
-        childrenRepliedMessage: f,
+        zalgo: A = !0,
+        preview: f = !1,
+        disableInteraction: p = !1,
+        childrenRepliedMessage: x,
         childrenExecutedCommand: v,
-        childrenHeader: j,
+        childrenHeader: C,
         childrenSystemMessage: N,
-        childrenButtons: C,
-        childrenMessageContent: b,
+        childrenButtons: b,
+        childrenMessageContent: T,
         childrenAccessories: E,
-        messageRef: I,
-        focusProps: y = {
+        messageRef: j,
+        focusProps: I = {
             offset: {
                 left: 4,
                 right: 4
             }
         },
-        hasThread: T,
-        isSystemMessage: R,
-        hasReply: _,
-        author: S,
+        hasThread: _,
+        isSystemMessage: S,
+        hasReply: R,
+        author: y,
         onMouseEnter: M,
-        onMouseLeave: k,
-        ...O
-    } = e, w = (0, r.bG)([h.A], () => S?.guildId == null || S?.colorRoleId == null ? null : h.A.getRole(S.guildId, S.colorRoleId)), G = (0, m.jV)(S?.guildId, w) && (0, d.kz)(S), [D, P] = s.useState(!1), L = s.useCallback(e => {
-        P(!0), M?.(e)
+        onMouseLeave: O,
+        ...w
+    } = e, k = (0, a.bG)([h.A], () => y?.guildId == null || y?.colorRoleId == null ? null : h.A.getRole(y.guildId, y.colorRoleId)), L = (0, m.jV)(y?.guildId, k) && (0, d.kz)(y), [G, D] = s.useState(!1), P = s.useCallback(e => {
+        D(!0), M?.(e)
     }, [M]), U = s.useCallback(e => {
-        P(!1), k?.(e)
-    }, [k]), $ = (0, c.W)({
+        D(!1), O?.(e)
+    }, [O]), H = (0, c.W)({
         location: "BaseMessage"
-    }), H = (0, l.jsx)(o.C.Provider, {
+    }), V = (0, l.jsx)(o.C.Provider, {
         value: {
-            animate: D,
-            setAnimate: P
+            animate: G,
+            setAnimate: D
         },
         children: (0, l.jsx)(u.vN3, {
-            ...y,
+            ...I,
             children: (0, l.jsxs)("div", {
-                className: a()(t, {
-                    [g.D7]: G,
-                    [g.e8]: $ && S?.displayNameStyles != null && S?.guildId == null,
+                className: r()(t, {
+                    [g.D7]: L,
+                    [g.e8]: H && y?.displayNameStyles != null && y?.guildId == null,
                     [g.iE]: !0,
                     [g.kl]: i,
                     [g.oE]: n,
-                    [g.VH]: A,
+                    [g.VH]: f,
                     [g.E]: !n,
-                    [g.GZ]: p,
-                    [g.pR]: T,
-                    [g.X4]: R,
-                    [g.h8]: _
+                    [g.GZ]: A,
+                    [g.pR]: _,
+                    [g.X4]: S,
+                    [g.h8]: R
                 }),
-                ref: I,
-                ...O,
+                ref: j,
+                ...w,
                 role: "article",
-                onMouseEnter: L,
+                onMouseEnter: P,
                 onMouseLeave: U,
-                children: [f, v, (0, l.jsxs)("div", {
+                children: [x, v, (0, l.jsxs)("div", {
                     className: g.PG,
-                    children: [N, j, null == N && b]
-                }), E, null != C ? (0, l.jsx)("div", {
+                    children: [N, C, null == N && T]
+                }), E, null != b ? (0, l.jsx)("div", {
                     className: g.UD,
-                    children: C
+                    children: b
                 }) : null]
             })
         })
     });
-    return x ? (0, l.jsx)(u.M1G, {
-        children: H
-    }) : H
+    return p ? (0, l.jsx)(u.M1G, {
+        children: V
+    }) : V
 }

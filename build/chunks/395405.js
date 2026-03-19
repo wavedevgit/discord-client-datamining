@@ -28,7 +28,7 @@ var i = n(627968),
     C = n(240248),
     I = n(652215),
     v = n(985018),
-    S = n(306769);
+    S = n(875139);
 let y = (0, C.xI)(u.A.GUILD_SETTINGS_PREMIUM_TIER_STATUS_PROGRESS_WITH_SUBSCRIPTIONS_MARGIN_TOP);
 class R extends s.Component {
     tierRefs = {};

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(397927),
-    a = n(43189),
+    a = n(397927),
+    r = n(43189),
     o = n(964404),
     c = n(461782),
     d = n(447404);
@@ -20,7 +20,7 @@ function u(e) {
         renderComponent: h,
         nudgeAlignIntoViewport: A = !1,
         skipForceHide: m = !1
-    } = e, p = s.useContext(c.vG), [g, _] = s.useState(""), [f, x] = s.useState(!1), C = (0, l.bG)([o.Ay], () => o.Ay.callHeaderHeight), E = s.useRef(null), I = s.useRef(0);
+    } = e, g = s.useContext(c.vG), [p, _] = s.useState(""), [f, x] = s.useState(!1), C = (0, l.bG)([o.Ay], () => o.Ay.callHeaderHeight), E = s.useRef(null), I = s.useRef(0);
     s.useEffect(() => {
         let e = t.current;
         if (null != e) return e.addEventListener("click", u), () => e.removeEventListener("click", u)
@@ -31,13 +31,13 @@ function u(e) {
         preventIdle: N,
         allowIdle: b
     } = (0, d.o)("popup");
-    return t?.current == null ? null : (0, i.jsx)(a.Ay, {
-        children: (0, i.jsx)(r.QCO, {
+    return t?.current == null ? null : (0, i.jsx)(r.Ay, {
+        children: (0, i.jsx)(a.QCO, {
             targetRef: t,
             position: "top",
             align: "center",
             spacing: 0,
-            positionKey: g,
+            positionKey: p,
             nudgeAlignIntoViewport: A,
             children: () => (0, i.jsx)("div", {
                 ref: E,
@@ -46,7 +46,7 @@ function u(e) {
                 onBlur: b,
                 onMouseLeave: b,
                 children: h({
-                    hidden: f || p || n,
+                    hidden: f || g || n,
                     onDismiss: u
                 })
             })

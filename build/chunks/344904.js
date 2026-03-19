@@ -14,7 +14,7 @@ var i, s = n(627968),
     _ = n(251360),
     m = n(468052),
     g = n(769411),
-    A = n(242142),
+    A = n(794332),
     x = ((i = {})[i.NITRO_GEM = 0] = "NITRO_GEM", i[i.NITRO_LOGO = 1] = "NITRO_LOGO", i[i.AVATAR_DECO = 2] = "AVATAR_DECO", i);
 let h = e => {
         let {
@@ -55,9 +55,9 @@ let h = e => {
             avatarDecoAssetDescription: S,
             ellipseOpacity: C,
             customAnimationClassName: f,
-            circleColor: N,
-            circleStroke: I
-        } = e, b = (0, o.bG)([c.A], () => c.A.useReducedMotion), v = t && !b;
+            circleColor: b,
+            circleStroke: N
+        } = e, I = (0, o.bG)([c.A], () => c.A.useReducedMotion), v = t && !I;
         return (0, s.jsx)("div", {
             className: r()(A.G3, n),
             children: (0, s.jsx)(g.A, {
@@ -65,7 +65,7 @@ let h = e => {
                     [A.uJ]: v,
                     [f ?? ""]: v
                 }),
-                progressCircleStroke: I,
+                progressCircleStroke: N,
                 progressCircleStrokeSize: a,
                 percentage: i ?? u,
                 initialPercentage: i ?? x,
@@ -80,7 +80,7 @@ let h = e => {
                             });
                         case 1:
                             return (0, s.jsx)(m.A, {
-                                circleColor: N,
+                                circleColor: b,
                                 ellipseOpacity: C
                             });
                         case 2:

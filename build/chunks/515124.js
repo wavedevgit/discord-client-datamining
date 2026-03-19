@@ -14,7 +14,7 @@ var i = n(311907),
     u = n(922529),
     m = n(53705),
     h = n(154323),
-    x = n(300902);
+    x = n(63248);
 let p = () => {
     let e = (0, i.bG)([h.A], () => h.A.get("shop_disable_cache")),
         t = (0, i.bG)([h.A], () => h.A.get("shop_include_unpublished"));

@@ -1,13 +1,13 @@
 /** chunk id: 722884 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => r
+    A: () => a
 });
 var i = n(627968),
     s = n(397927),
     l = n(131955);
 
-function r(e) {
+function a(e) {
     let {
         channel: t
     } = e;

@@ -18,7 +18,7 @@ var s = n(311907),
     A = n(572566),
     x = n(652215),
     h = n(985018),
-    p = n(551934);
+    p = n(103224);
 
 function T(e) {
     let {
@@ -29,7 +29,7 @@ function T(e) {
         navigateToHome: x,
         subscriptionGroup: T,
         renewalSkuId: S
-    } = e, C = (0, r.A)(t, 100), f = (0, m.PJ)(T.flags), N = f ? a.RR9 : a.nys, I = f ? h.intl.string(h.t["46YF2D"]) : h.intl.string(h.t.fFyGiA), b = n.metadata?.application_subscription_guild_id, v = (0, s.bG)([u.A], () => f && null != b ? u.A.getGuild(b) : void 0, [b, f]), j = (0, s.bG)([_.A], () => {
+    } = e, C = (0, r.A)(t, 100), f = (0, m.PJ)(T.flags), b = f ? a.RR9 : a.nys, N = f ? h.intl.string(h.t["46YF2D"]) : h.intl.string(h.t.fFyGiA), I = n.metadata?.application_subscription_guild_id, v = (0, s.bG)([u.A], () => f && null != I ? u.A.getGuild(I) : void 0, [I, f]), j = (0, s.bG)([_.A], () => {
         if (null != S) return _.A.get(S)
     }, [S]), y = (0, A.Y)(n.currentPeriodEnd);
     return (0, i.jsxs)("div", {
@@ -49,10 +49,10 @@ function T(e) {
                     children: [(0, i.jsxs)(a.Heading, {
                         variant: "heading-md/normal",
                         className: p.N4,
-                        children: [(0, i.jsx)(N, {
+                        children: [(0, i.jsx)(b, {
                             size: "xs",
                             color: "currentColor"
-                        }), " ", I]
+                        }), " ", N]
                     }), null != v && (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)(a.Text, {
                             variant: "text-md/normal",
@@ -121,7 +121,7 @@ function T(e) {
                 })
             }, e.id) : (0, i.jsx)(E, {
                 storeListing: e,
-                guildId: b,
+                guildId: I,
                 navigateToHome: x
             }, e.id))]
         })]

@@ -5,13 +5,13 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(397927),
-    r = n(604681),
-    a = n(17447),
+    a = n(604681),
+    r = n(17447),
     s = n(141850),
     o = n(736339);
 
 function d(e, t) {
-    if (!(0, a.f)("message_context_menu")) return null;
+    if (!(0, r.f)("message_context_menu")) return null;
     let n = o.A.getConversationForMessage(t.id, e.id);
     return null == n ? null : (0, i.jsx)(l.Drp, {
         id: "view-conversation",
@@ -22,7 +22,7 @@ function d(e, t) {
         },
         icon: l.oyn,
         action: () => {
-            r.A.openConversationsSection(), (0, s.s4)(t.id, n)
+            a.A.openConversationsSection(), (0, s.s4)(t.id, n)
         }
     })
 }

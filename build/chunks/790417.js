@@ -23,7 +23,7 @@ var l = n(311907),
     I = n(518477),
     j = n(652215),
     v = n(985018),
-    E = n(897757);
+    E = n(628959);
 
 function T(e) {
     let {
@@ -32,9 +32,9 @@ function T(e) {
         displayProfile: T,
         guildId: b,
         channelId: N,
-        onClose: S
+        onClose: y
     } = e, {
-        live: y,
+        live: S,
         recent: C,
         stream: R
     } = (0, u.A)(t.id), {
@@ -46,7 +46,7 @@ function T(e) {
     }), w = (0, l.bG)([s.A], () => s.A.isFetchingUserOutbox(t.id)), O = t.id === n.id, P = (0, l.bG)([d.A, o.A], () => {
         let e = O ? d.A.getStatus() : o.A.getStatus(t.id);
         return e === a.clD.OFFLINE || e === a.clD.INVISIBLE
-    }), D = y.length > 0 || null != R, G = T?.private !== !0 && null == R && null == L && null != k, M = !P && (D || G), U = C.length > 0;
+    }), D = S.length > 0 || null != R, G = T?.private !== !0 && null == R && null == L && null != k, M = !P && (D || G), U = C.length > 0;
     return M || U || !w ? M || U || w ? (0, i.jsxs)(A.K, {
         className: E.XG,
         fade: !0,
@@ -59,21 +59,21 @@ function T(e) {
                         user: t,
                         currentUser: n,
                         stream: R,
-                        onClose: S
+                        onClose: y
                     })
-                }), y.map((e, l) => (0, i.jsx)("li", {
+                }), S.map((e, l) => (0, i.jsx)("li", {
                     children: (0, i.jsx)(m.A, {
                         user: t,
                         currentUser: n,
                         activity: e,
-                        onClose: S
+                        onClose: y
                     })
                 }, `live-${l}`)), G && (0, i.jsx)("li", {
                     children: (0, i.jsx)(f.A, {
                         user: t,
                         currentUser: n,
                         voiceChannel: k,
-                        onClose: S
+                        onClose: y
                     })
                 })]
             })
@@ -92,18 +92,18 @@ function T(e) {
                     children: (0, i.jsx)(x.A, {
                         user: t,
                         entry: e,
-                        onClose: S
+                        onClose: y
                     })
                 }, e.id))
             })
         }) : null]
     }) : O ? (0, i.jsx)(h.qv, {
-        onClose: S
+        onClose: y
     }) : (0, i.jsx)(h.zf, {
         user: t,
         guildId: T?.guildId ?? b,
         channelId: N,
-        onClose: S
+        onClose: y
     }) : (0, i.jsx)("div", {
         className: E.kR,
         children: Array.from({

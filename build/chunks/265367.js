@@ -7,12 +7,12 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(73153),
-    r = n(272355),
-    a = n(793322),
+    a = n(272355),
+    r = n(793322),
     o = n(174768),
     c = n(814340);
 let d = "QUICK_SWITCHER_MODAL_KEY";
-class u extends r.A {
+class u extends a.A {
     _initialize() {
         l.h.subscribe("QUICKSWITCHER_SHOW", this.handleShow), l.h.subscribe("QUICKSWITCHER_HIDE", this.handleHide)
     }
@@ -25,7 +25,7 @@ class u extends r.A {
         }), {
             modalKey: d,
             instant: !0,
-            onCloseCallback: a.jD
+            onCloseCallback: r.jD
         })
     }
     handleHide() {

@@ -1,10 +1,10 @@
 /** chunk id: 428130 params = (module,exports,require) **/
 n.d(t, {
-    $p: () => O,
-    IE: () => I,
+    $p: () => R,
+    IE: () => N,
     Ys: () => y,
     ac: () => j,
-    y2: () => R
+    y2: () => O
 });
 var i = n(627968),
     s = n(64700),
@@ -26,46 +26,46 @@ var i = n(627968),
     E = n(652215),
     S = n(381941),
     C = n(985018),
-    f = n(333056),
-    N = n(473169);
-let I = {
+    f = n(960298),
+    b = n(522759);
+let N = {
         COZY: "cozy",
         COMPACT: "compact"
     },
-    b = "1337",
+    I = "1337",
     v = e => {
         let t = 0;
         return [(0, u.rh)({
             ...(0, _.Ay)({
-                channelId: b,
+                channelId: I,
                 content: C.intl.string(C.t.oZxkEq)
             }),
             state: E.cmJ.SENT,
             id: `${t++}`
         }), (0, u.rh)({
             ...(0, _.Ay)({
-                channelId: b,
+                channelId: I,
                 content: (0, o.Mw)(e) ? C.intl.string(C.t["WGb/v7"]) : C.intl.string(C.t["62m4mz"])
             }),
             state: E.cmJ.SENT,
             id: `${t++}`
         }), (0, u.rh)({
             ...(0, _.Ay)({
-                channelId: b,
+                channelId: I,
                 content: C.intl.string(C.t.a0Byo5)
             }),
             state: E.cmJ.SENT,
             id: `${t++}`
         }), (0, u.rh)({
             ...(0, _.Ay)({
-                channelId: b,
+                channelId: I,
                 content: C.intl.string(C.t.bmwEWJ)
             }),
             state: E.cmJ.SENT,
             id: `${t++}`
         }), (0, u.rh)({
             ...(0, _.Ay)({
-                channelId: b,
+                channelId: I,
                 content: C.intl.string(C.t["hK9QW/"])
             }),
             state: E.cmJ.SENT,
@@ -91,12 +91,12 @@ let I = {
             (0, p.openUserSettings)(h.X.SYNC_FORCED_COLORS)
         }
     }),
-    O = () => C.intl.format(C.t["5LEQdc"], {
+    R = () => C.intl.format(C.t["5LEQdc"], {
         onAccessibilityClick: () => {
             (0, p.openUserSettings)(h.X.ACCESSIBILITY_PANEL)
         }
     }),
-    R = () => {
+    O = () => {
         let e = x.hH.useSetting(),
             t = x.hD.useSetting(),
             n = x.rs.useSetting(),
@@ -113,7 +113,7 @@ let I = {
             T = (0, o.Mw)(l) ? _ : h;
         return (0, i.jsx)(d.M1G, {
             children: (0, i.jsx)(d.ZpM, {
-                className: a()(f.VH, N.C2, e ? f.Me : void 0, `group-spacing-${null!=u?u:e?S.y5:S.ES}`),
+                className: a()(f.VH, b.C2, e ? f.Me : void 0, `group-spacing-${null!=u?u:e?S.y5:S.ES}`),
                 outline: !0,
                 "aria-hidden": !0,
                 children: T.map((t, n) => (0, i.jsx)(g.A, {

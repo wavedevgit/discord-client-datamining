@@ -12,7 +12,7 @@ var l = n(627968),
     d = n(59544),
     u = n(778591),
     m = n(985018),
-    x = n(719187);
+    x = n(107701);
 let h = function(e) {
     let {
         detectedGame: t

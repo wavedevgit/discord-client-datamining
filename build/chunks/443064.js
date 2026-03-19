@@ -23,28 +23,28 @@ var i = n(627968),
     S = n(790114),
     C = n(836602),
     f = n(262),
-    N = n(950191),
-    I = n(854627),
-    b = n(542535),
+    b = n(950191),
+    N = n(854627),
+    I = n(542535),
     v = n(915614),
     j = n(662758),
     y = n(957565),
-    O = n(975571),
-    R = n(427262),
-    L = n(837921),
-    D = n(253932),
-    P = n(780964),
-    G = n(192501),
-    M = n(840065),
+    R = n(975571),
+    O = n(427262),
+    P = n(837921),
+    L = n(253932),
+    D = n(780964),
+    M = n(192501),
+    G = n(840065),
     U = n(652215),
     k = n(53516),
     V = n(985018),
-    w = n(536242),
-    B = n(609290);
-let H = L.Ay.getEnableHardwareAcceleration() ? c.JsQ : c.euF;
+    w = n(949268),
+    B = n(944300);
+let H = P.Ay.getEnableHardwareAcceleration() ? c.JsQ : c.euF;
 
 function F() {
-    (0, M.openUserSettings)(P.X.PROFILE_PANEL)
+    (0, G.openUserSettings)(D.X.PROFILE_PANEL)
 }
 
 function Y(e) {
@@ -124,7 +124,7 @@ function z(e) {
     let {
         user: t,
         className: n
-    } = e, l = (0, p.EC)(), r = l?.nick?.[0] ?? null, u = R.Ay.getGlobalName(t), _ = s.useRef(null), [m, g] = s.useState(!1);
+    } = e, l = (0, p.EC)(), r = l?.nick?.[0] ?? null, u = O.Ay.getGlobalName(t), _ = s.useRef(null), [m, g] = s.useState(!1);
     return s.useEffect(() => {
         g(null != _.current && _.current.scrollWidth > _.current.clientWidth)
     }, [u]), (0, i.jsxs)("div", {
@@ -206,7 +206,7 @@ function W(e) {
             handleClick: () => (0, c.mMO)(async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("89129"), n.e("75283")]).then(n.bind(n, 354096));
+                } = await Promise.all([n.e("89129"), n.e("4709")]).then(n.bind(n, 354096));
                 return t => (0, i.jsx)(e, {
                     ...t
                 })
@@ -221,14 +221,14 @@ function W(e) {
                 buttonAriaLabel: V.intl.string(V.t["8peUT0"]),
                 valueMessage: (0, i.jsx)(X, {
                     text: e,
-                    censor: G.B,
+                    censor: M.B,
                     revealLabel: V.intl.string(V.t["Zvx+yV"]),
                     hideLabel: V.intl.string(V.t.nqTD4d)
                 }),
                 handleClick: () => (0, c.mMO)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("89129"), n.e("75283")]).then(n.bind(n, 354096));
+                    } = await Promise.all([n.e("89129"), n.e("4709")]).then(n.bind(n, 354096));
                     return t => (0, i.jsx)(e, {
                         ...t
                     })
@@ -285,7 +285,7 @@ function K(e) {
     } = l, d = null != r;
     return t = d ? (0, i.jsx)(X, {
         text: r,
-        censor: G.D,
+        censor: M.D,
         revealLabel: V.intl.string(V.t.eY3xlT),
         hideLabel: V.intl.string(V.t["jllbv+"])
     }) : V.intl.string(V.t.I5kDqj), (0, i.jsxs)("div", {
@@ -358,7 +358,7 @@ function Z(e) {
     } = e, n = (0, x.A)({
         id: t.id,
         label: V.intl.string(V.t["/AXYnE"])
-    }), l = D.Q_.useSetting(), a = s.useRef(null);
+    }), l = L.Q_.useSetting(), a = s.useRef(null);
     return l && y.p5 ? (0, i.jsx)(c.YNO, {
         targetElementRef: a,
         renderPopout: e => {
@@ -392,7 +392,7 @@ function q(e) {
     let {
         className: t
     } = e, l = (0, g.b8)(), r = (0, g.yM)(), o = (0, g.Y2)(), d = !l || r, u = V.intl.string(V.t["9KiIz6"]), A = V.intl.string(V.t.DVywUB), x = V.intl.string(V.t.lKDPGA), h = s.useCallback(() => {
-        window.open(O.A.getArticleURL(U.MVz.TIGGER_PAWTECT_LEARN_MORE), "_blank")
+        window.open(R.A.getArticleURL(U.MVz.TIGGER_PAWTECT_LEARN_MORE), "_blank")
     }, []), p = s.useCallback(() => {
         (0, c.mMO)(async () => {
             let {
@@ -452,10 +452,10 @@ function q(e) {
 function J(e) {
     let {
         currentUser: t
-    } = e, n = (0, N.Ay)(t.id), s = (0, f.A)(n), l = D.jP.useSetting(), a = (0, r.bG)([C.A], () => C.A.getErrors()), o = a?.avatar?.[0], {
+    } = e, n = (0, b.Ay)(t.id), s = (0, f.A)(n), l = L.jP.useSetting(), a = (0, r.bG)([C.A], () => C.A.getErrors()), o = a?.avatar?.[0], {
         avatarSrc: d,
         avatarDecorationSrc: _
-    } = (0, I.A)({
+    } = (0, N.A)({
         userId: t?.id,
         size: c._3J.SIZE_80
     }), m = (0, S.A)(), g = (0, E.fk)();
@@ -490,7 +490,7 @@ function J(e) {
                     }), (0, i.jsx)(Z, {
                         user: t
                     })]
-                }), (0, i.jsx)(b.A, {
+                }), (0, i.jsx)(I.A, {
                     badges: s,
                     className: B.C_,
                     badgeClassName: B.qS

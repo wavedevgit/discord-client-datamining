@@ -2,10 +2,10 @@
 n.d(t, {
     A: () => s
 });
-var a = n(64700);
+var r = n(64700);
 
-function r(e, t) {
-    return (r = Object.setPrototypeOf || function(e, t) {
+function a(e, t) {
+    return (a = Object.setPrototypeOf || function(e, t) {
         return e.__proto__ = t, e
     })(e, t)
 }
@@ -17,8 +17,8 @@ var i = function(e) {
     o = ["sitekey", "theme", "size", "badge", "tabindex", "hl", "isolated"],
     s = function(e) {
         function t() {
-            for (var t, n = arguments.length, r = Array(n), o = 0; o < n; o++) r[o] = arguments[o];
-            return (t = e.call.apply(e, [this].concat(r)) || this).container = void 0, t.timer = void 0, t.state = {
+            for (var t, n = arguments.length, a = Array(n), o = 0; o < n; o++) a[o] = arguments[o];
+            return (t = e.call.apply(e, [this].concat(a)) || this).container = void 0, t.timer = void 0, t.state = {
                 instanceKey: Date.now(),
                 ready: !1,
                 rendered: !1,
@@ -33,12 +33,12 @@ var i = function(e) {
             }, t._prepare = function() {
                 var e = t.props,
                     n = e.explicit,
-                    a = e.onLoad;
+                    r = e.onLoad;
                 window.grecaptcha.ready(function() {
                     t.setState({
                         ready: !0
                     }, function() {
-                        n || t.renderExplicitly(), a && a()
+                        n || t.renderExplicitly(), r && r()
                     })
                 })
             }, t._renderRecaptcha = function(e, t) {
@@ -67,7 +67,7 @@ var i = function(e) {
                 return new Promise(function(e, n) {
                     if (t.state.rendered) return n(Error("This recaptcha instance has been already rendered."));
                     if (!t.state.ready || !t.container) return n(Error("Recaptcha is not ready for rendering yet."));
-                    var a = t._renderRecaptcha(t.container, {
+                    var r = t._renderRecaptcha(t.container, {
                         sitekey: t.props.sitekey,
                         theme: t.props.theme,
                         size: t.props.size,
@@ -80,7 +80,7 @@ var i = function(e) {
                         hl: t.state.invisible ? void 0 : t.props.hl
                     });
                     t.setState({
-                        instanceId: a,
+                        instanceId: r,
                         rendered: !0
                     }, function() {
                         t.props.onRender && t.props.onRender(), e()
@@ -101,7 +101,7 @@ var i = function(e) {
                     n(Error("This recaptcha instance did not render yet."))
                 })
             }, t.render = function() {
-                var e = a.createElement("div", {
+                var e = r.createElement("div", {
                     key: t.state.instanceKey,
                     id: t.props.id,
                     className: t.props.className,
@@ -118,15 +118,15 @@ var i = function(e) {
                 }) : e
             }, t
         }
-        return t.prototype = Object.create(e.prototype), t.prototype.constructor = t, r(t, e), t.getDerivedStateFromProps = function(e, t) {
+        return t.prototype = Object.create(e.prototype), t.prototype.constructor = t, a(t, e), t.getDerivedStateFromProps = function(e, t) {
             var n = "invisible" === e.size;
             return n !== t.invisible ? {
                 invisible: n
             } : null
         }, t.prototype.componentDidUpdate = function(e) {
             var t = this;
-            o.reduce(function(n, a) {
-                return t.props[a] !== e[a] ? [].concat(n, [a]) : n
+            o.reduce(function(n, r) {
+                return t.props[r] !== e[r] ? [].concat(n, [r]) : n
             }, []).length > 0 && this.setState({
                 instanceKey: Date.now(),
                 rendered: !1
@@ -134,7 +134,7 @@ var i = function(e) {
                 t.props.explicit || t.renderExplicitly()
             })
         }, t
-    }(a.Component);
+    }(r.Component);
 s.defaultProps = {
     id: "",
     className: "g-recaptcha",

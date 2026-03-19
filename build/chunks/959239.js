@@ -5,13 +5,13 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(397927),
-    r = n(969632),
-    a = n(985018);
+    a = n(969632),
+    r = n(985018);
 
 function s(e) {
-    return null == e.reactions || 0 === e.reactions.length || e.isPoll() && !(0, r.Gh)(e) ? null : (0, i.jsx)(l.Drp, {
+    return null == e.reactions || 0 === e.reactions.length || e.isPoll() && !(0, a.Gh)(e) ? null : (0, i.jsx)(l.Drp, {
         id: "reactions",
-        label: a.intl.string(a.t.wikODq),
+        label: r.intl.string(r.t.wikODq),
         leadingAccessory: {
             type: "icon",
             icon: l.ShF

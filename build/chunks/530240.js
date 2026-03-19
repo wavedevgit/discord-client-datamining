@@ -22,7 +22,7 @@ var i = n(627968),
     T = n(652215),
     E = n(788868),
     S = n(985018),
-    C = n(325234);
+    C = n(904004);
 
 function f(e) {
     let {
@@ -95,7 +95,7 @@ function f(e) {
     }))
 }
 
-function N(e) {
+function b(e) {
     let {
         guildTier: t,
         guildBoostSlot: n,
@@ -103,7 +103,7 @@ function N(e) {
         hasCancelableGuildBoostSlot: u,
         showAltText: _,
         isLastGuildBoostSlot: g
-    } = e, A = (0, a.bG)([o.A], () => o.A.useReducedMotion), p = s.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), T = s.useMemo(() => null != p && p > new Date, [p]), E = (0, m.I5)(n), N = (0, d.A)(), I = s.useRef(null);
+    } = e, A = (0, a.bG)([o.A], () => o.A.useReducedMotion), p = s.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), T = s.useMemo(() => null != p && p > new Date, [p]), E = (0, m.I5)(n), b = (0, d.A)(), N = s.useRef(null);
     return (0, i.jsxs)("div", {
         className: C.PW,
         children: [(0, i.jsxs)("div", {
@@ -123,10 +123,10 @@ function N(e) {
                     showAltText: _,
                     isCanceled: E,
                     premiumSubscription: l,
-                    fractionalPremiumInfo: N
+                    fractionalPremiumInfo: b
                 })
             }), (0, i.jsx)(r.YNO, {
-                targetElementRef: I,
+                targetElementRef: N,
                 renderPopout: function(e) {
                     let {
                         closePopout: t
@@ -136,14 +136,14 @@ function N(e) {
                         guildBoostSlot: n,
                         premiumSubscription: l,
                         hasCancelableGuildBoostSlot: u,
-                        fractionalState: N.fractionalState
+                        fractionalState: b.fractionalState
                     })
                 },
                 position: "right",
                 align: "center",
                 children: e => (0, i.jsx)(r.DUT, {
                     ...e,
-                    innerRef: I,
+                    innerRef: N,
                     "aria-label": S.intl.string(S.t.PdRCRg),
                     className: C.oU,
                     children: (0, i.jsx)(r.FHP, {
@@ -158,7 +158,7 @@ function N(e) {
     })
 }
 
-function I(e) {
+function N(e) {
     let {
         guildId: t,
         guildBoostSlotRecords: n,
@@ -171,7 +171,7 @@ function I(e) {
         children: [(0, i.jsx)(p.A, {
             guildId: t,
             boostingVariant: !1
-        }), n.map((e, t) => (0, i.jsx)(N, {
+        }), n.map((e, t) => (0, i.jsx)(b, {
             guildTier: o?.premiumTier,
             guildBoostSlot: e,
             premiumSubscription: s,
@@ -182,7 +182,7 @@ function I(e) {
     })
 }
 
-function b(e) {
+function I(e) {
     let {
         guildId: t,
         appliedGuildBoosts: n,
@@ -206,7 +206,7 @@ function b(e) {
         children: [(0, i.jsx)(p.A, {
             guildId: t,
             boostingVariant: !1
-        }), n.map((e, t) => (0, i.jsx)(N, {
+        }), n.map((e, t) => (0, i.jsx)(b, {
             guildTier: l?.premiumTier,
             guildBoostSlot: o,
             premiumSubscription: s,
@@ -232,7 +232,7 @@ function v(e) {
         className: C.iE,
         children: [(0, i.jsx)("div", {
             className: C.kL,
-            children: A.default.keys(l).map(e => (0, i.jsx)(b, {
+            children: A.default.keys(l).map(e => (0, i.jsx)(I, {
                 guildId: e,
                 premiumSubscription: n,
                 appliedGuildBoosts: l[e]
@@ -279,7 +279,7 @@ function j(e) {
         className: C.iE,
         children: [(0, i.jsx)("div", {
             className: C.kL,
-            children: A.default.keys(r).map(e => (0, i.jsx)(I, {
+            children: A.default.keys(r).map(e => (0, i.jsx)(N, {
                 guildId: e,
                 guildBoostSlotRecords: r[e],
                 premiumSubscription: n,

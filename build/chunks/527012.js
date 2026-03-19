@@ -1,33 +1,32 @@
 /** chunk id: 527012 params = (module,exports,require) **/
-"use strict";
-n.d(e, {
+n.d(t, {
     y: () => o
 });
 var i = n(627968);
 n(64700);
-var r = n(732955),
-    s = n(397927),
-    l = n(652215),
-    a = n(321018);
+var l = n(732955),
+    r = n(397927),
+    s = n(652215),
+    a = n(829376);
 
-function o(t) {
+function o(e) {
     let {
-        buttonText: e,
+        buttonText: t,
         onGoBack: n,
         onDismiss: o,
         showCloseButton: c
-    } = t;
-    return (0, i.jsxs)(s.$Td, {
+    } = e;
+    return (0, i.jsxs)(r.$Td, {
         className: a.eR,
-        children: [c && (0, i.jsx)(s.PMB, {
+        children: [c && (0, i.jsx)(r.PMB, {
             onClick: o,
             className: a.b,
-            noticeType: l.kqX.BACK_TO_PREVIOUS_SCREEN
-        }), (0, i.jsx)(r.$nd, {
-            text: e,
+            noticeType: s.kqX.BACK_TO_PREVIOUS_SCREEN
+        }), (0, i.jsx)(l.$nd, {
+            text: t,
             variant: "overlay-secondary",
             size: "sm",
-            icon: s.rJJ,
+            icon: r.rJJ,
             onClick: n
         })]
     })

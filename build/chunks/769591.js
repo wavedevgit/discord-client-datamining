@@ -1,61 +1,61 @@
 /** chunk id: 769591 params = (module,exports,require) **/
 "use strict";
-n.d(t, {
-    b8: () => d,
-    ct: () => g,
-    os: () => b
-}), n(938796);
-var i = n(665260),
-    a = n(311907),
-    r = n(544743),
-    l = n(543465),
-    s = n(661191),
-    _ = n(652215),
-    o = n(355097),
-    c = n(985018);
+t.d(n, {
+    b8: () => _,
+    ct: () => S,
+    os: () => E
+}), t(938796);
+var i = t(665260),
+    l = t(311907),
+    r = t(544743),
+    s = t(543465),
+    u = t(661191),
+    a = t(652215),
+    c = t(355097),
+    o = t(985018);
 
-function d() {
+function _() {
     return [{
         id: "15-minutes",
-        label: c.intl.string(c.t["8ot6gv"]),
-        value: o.Xx.MINUTES_15
+        label: o.intl.string(o.t["8ot6gv"]),
+        value: c.Xx.MINUTES_15
     }, {
         id: "1-hour",
-        label: c.intl.string(c.t.UMWBZr),
-        value: o.Xx.HOURS_1
+        label: o.intl.string(o.t.UMWBZr),
+        value: c.Xx.HOURS_1
     }, {
         id: "3-hours",
-        label: c.intl.string(c.t.QmYWtu),
-        value: o.Xx.HOURS_3
+        label: o.intl.string(o.t.QmYWtu),
+        value: c.Xx.HOURS_3
     }, {
         id: "8-hours",
-        label: c.intl.string(c.t.EpAXPC),
-        value: o.Xx.HOURS_8
+        label: o.intl.string(o.t.EpAXPC),
+        value: c.Xx.HOURS_8
     }, {
         id: "24-hours",
-        label: c.intl.string(c.t["755t4q"]),
-        value: o.Xx.HOURS_24
+        label: o.intl.string(o.t["755t4q"]),
+        value: c.Xx.HOURS_24
     }, {
         id: "forever",
-        label: c.intl.string(c.t.r3LawO),
-        value: o.Xx.ALWAYS
+        label: o.intl.string(o.t.r3LawO),
+        value: c.Xx.ALWAYS
     }]
 }
-let u = {
+let d = {
     ignoreMute: !1,
     ignoreUnreadSetting: !0,
     ignoreNotificationSetting: !1
 };
 
-function g(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : u;
-    return s.default.keys(e).filter(n => {
-        let a = e[n].message_notifications !== _.orn.NULL,
-            l = i.Lt(e[n].flags ?? 0, o.vv.UNREADS_ALL_MESSAGES) || i.Lt(e[n].flags ?? 0, o.vv.UNREADS_ONLY_MENTIONS);
-        return !t.ignoreUnreadSetting && l || !t.ignoreNotificationSetting && a || !t.ignoreMute && (0, r.tG)(e[n])
+function S(e) {
+    let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : d;
+    return u.default.keys(e).filter(t => {
+        let l = e[t].message_notifications !== a.orn.NULL,
+            s = i.Lt(e[t].flags ?? 0, c.vv.UNREADS_ALL_MESSAGES) || i.Lt(e[t].flags ?? 0, c.vv.UNREADS_ONLY_MENTIONS);
+        return !n.ignoreUnreadSetting && s || !n.ignoreNotificationSetting && l || !n.ignoreMute && (0, r.tG)(e[t])
     })
 }
 
-function b(e) {
-    return (0, a.bG)([l.Ay], () => l.Ay.useNewNotifications)
+function E(e) {
+    return (0, l.bG)([s.Ay], () => s.Ay.useNewNotifications)
 }

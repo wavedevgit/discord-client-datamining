@@ -1,72 +1,72 @@
 /** chunk id: 145963 params = (module,exports,require) **/
-n.d(t, {
-    UV: () => u,
-    rZ: () => x,
-    uC: () => m
+n.d(e, {
+    UV: () => I,
+    rZ: () => T,
+    uC: () => E
 });
-var l = n(627968),
-    a = n(64700),
-    i = n(505779),
-    r = n(397927),
-    s = n(59544),
-    c = n(305080),
-    o = n(985018),
-    d = n(937418);
+var r = n(627968),
+    i = n(64700),
+    o = n(505779),
+    l = n(397927),
+    a = n(59544),
+    s = n(305080),
+    c = n(985018),
+    u = n(435740);
 
-function u() {
-    return a.useMemo(() => ({
-        [i.V.STEAM]: {
-            icon: r.NXQ,
-            text: o.intl.string(o.t.FsANs4),
-            "aria-label": o.intl.string(o.t["P+ePTG"])
+function I() {
+    return i.useMemo(() => ({
+        [o.V.STEAM]: {
+            icon: l.NXQ,
+            text: c.intl.string(c.t.FsANs4),
+            "aria-label": c.intl.string(c.t["P+ePTG"])
         },
-        [i.V.ROBLOX]: {
-            icon: r.H0M,
-            text: o.intl.string(o.t["pJ+P+h"]),
-            "aria-label": o.intl.string(o.t.tYxpdf)
+        [o.V.ROBLOX]: {
+            icon: l.H0M,
+            text: c.intl.string(c.t["pJ+P+h"]),
+            "aria-label": c.intl.string(c.t.tYxpdf)
         },
-        [i.V.BATTLENET]: {
-            icon: r.aG0,
-            text: o.intl.string(o.t["A7grp+"]),
-            "aria-label": o.intl.string(o.t.x9at20)
+        [o.V.BATTLENET]: {
+            icon: l.aG0,
+            text: c.intl.string(c.t["A7grp+"]),
+            "aria-label": c.intl.string(c.t.x9at20)
         },
-        [i.V.RIOT]: {
-            icon: r.ALT,
-            text: o.intl.string(o.t.h6MapL),
-            "aria-label": o.intl.string(o.t["528nvc"])
+        [o.V.RIOT]: {
+            icon: l.ALT,
+            text: c.intl.string(c.t.h6MapL),
+            "aria-label": c.intl.string(c.t["528nvc"])
         },
-        [i.V.MINECRAFT]: {
-            text: o.intl.string(o.t["HZbmO+"]),
-            "aria-label": o.intl.string(o.t.WWTqYn)
+        [o.V.MINECRAFT]: {
+            text: c.intl.string(c.t["HZbmO+"]),
+            "aria-label": c.intl.string(c.t.WWTqYn)
         },
-        [i.V.EPICGAMES]: {
-            icon: r.r_I,
-            text: o.intl.string(o.t.ZbBMHa),
-            "aria-label": o.intl.string(o.t.BwX0UW)
+        [o.V.EPICGAMES]: {
+            icon: l.r_I,
+            text: c.intl.string(c.t.ZbBMHa),
+            "aria-label": c.intl.string(c.t.BwX0UW)
         }
     }), [])
 }
 
-function m(e) {
+function E(t) {
     let {
-        website: t
-    } = e, n = (0, s.A)(t.url), a = u()[t.category];
-    return null == a || null == n ? null : (0, l.jsx)(x, {
-        ...a,
+        website: e
+    } = t, n = (0, a.A)(e.url), i = I()[e.category];
+    return null == i || null == n ? null : (0, r.jsx)(T, {
+        ...i,
         onClick: () => window.open(n, "_blank", "noreferrer noopener")
     })
 }
 
-function x(e) {
+function T(t) {
     let {
-        ...t
-    } = e, {
+        ...e
+    } = t, {
         isTwoColumn: n
-    } = (0, c.c)();
-    return (0, l.jsx)("div", {
-        className: d.U,
-        children: (0, l.jsx)(r.Button, {
-            ...t,
+    } = (0, s.c)();
+    return (0, r.jsx)("div", {
+        className: u.U,
+        children: (0, r.jsx)(l.Button, {
+            ...e,
             variant: n ? "overlay-secondary" : "secondary",
             fullWidth: !0,
             role: "link"

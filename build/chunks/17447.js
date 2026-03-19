@@ -1,8 +1,10 @@
 /** chunk id: 17447 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
-    f: () => l
+    L: () => l,
+    f: () => s
 });
-let i = (0, n(945810).mj)({
+let l = (0, n(945810).mj)({
         kind: "user",
         name: "2026-03-conversation-highlighting-utility",
         defaultConfig: {
@@ -17,6 +19,6 @@ let i = (0, n(945810).mj)({
             }
         }
     }),
-    l = e => i.getConfig({
+    s = e => l.getConfig({
         location: e
     }).enabled

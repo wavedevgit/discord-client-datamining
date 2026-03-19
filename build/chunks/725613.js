@@ -1,13 +1,13 @@
 /** chunk id: 725613 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(478437),
     s = n(574381),
     l = n(311907),
-    r = n(73153),
-    a = n(142120),
+    a = n(73153),
+    r = n(142120),
     o = n(927813),
     c = n(661470);
 let d = new Set,
@@ -24,9 +24,9 @@ function A() {
 function m(e) {
     d.delete(e.guild.id)
 }
-class p extends l.Ay.Store {
+class g extends l.Ay.Store {
     initialize() {
-        this.waitFor(a.A)
+        this.waitFor(r.A)
     }
     static displayName = "VoiceChannelStartTimeStore";
     getStartTime(e) {
@@ -36,7 +36,7 @@ class p extends l.Ay.Store {
         return d.has(e)
     }
 }
-let g = new p(r.h, {
+let p = new g(a.h, {
     GUILD_CREATE: m,
     GUILD_DELETE: m,
     CONNECTION_RESUMED: A,
@@ -68,6 +68,6 @@ let g = new p(r.h, {
         let {
             guildId: t
         } = e;
-        d.add(t), a.A.getSocket().requestChannelInfo(t, ["status", "voice_start_time"])
+        d.add(t), r.A.getSocket().requestChannelInfo(t, ["status", "voice_start_time"])
     }
 })

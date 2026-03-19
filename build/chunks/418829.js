@@ -1,11 +1,11 @@
 /** chunk id: 418829 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var r = n(627968),
-    i = n(64700),
-    a = n(964486),
+    a = n(64700),
+    i = n(964486),
     s = n(250703),
     l = n(877260),
     o = n(823092),
@@ -14,17 +14,17 @@ var r = n(627968),
     d = n(894858),
     m = n(272053),
     f = n(397274),
-    h = n(500425);
+    h = n(894803);
 
-function g(e) {
+function p(e) {
     let {
         partialRoot: t,
         target: n,
-        defaultTarget: g,
-        onClose: p,
-        sidebarFooter: y,
+        defaultTarget: p,
+        onClose: g,
+        sidebarFooter: x,
         searchBar: _,
-        onViewChange: x,
+        onViewChange: y,
         emptyState: b,
         searchQuery: v,
         clearSearchQuery: A
@@ -32,35 +32,35 @@ function g(e) {
         node: N,
         visibleDirectory: S,
         accessibleDirectory: C
-    } = (0, u.Ay)(t, v ?? ""), k = null != n && S.entry(n)?.parentPanelKey != null ? n : g, E = i.useMemo(() => {
+    } = (0, u.Ay)(t, v ?? ""), k = null != n && S.entry(n)?.parentPanelKey != null ? n : p, E = a.useMemo(() => {
         let e = C.entry(j ?? k)?.parentPanelKey;
         if (null != e) return C.getPanelOrThrow(e)
     }, [j, C, k]), {
         navigateWithValidation: w
     } = (0, o.L_)();
-    i.useEffect(() => {
+    a.useEffect(() => {
         m.A.init({
             accessibleDirectory: C,
-            onViewChange: x,
+            onViewChange: y,
             navigateWithValidation: (e, t) => {
                 null == S.entry(e) && A?.(), w(t)
             }
         })
-    }, [C, w, x, A, S]);
-    let [I, T] = i.useState(!0);
-    (0, a.Ay)(() => (m.A.navigate(k, {
+    }, [C, w, y, A, S]);
+    let [I, T] = a.useState(!0);
+    (0, i.Ay)(() => (m.A.navigate(k, {
         animatePanelScroll: !1,
         animateSidebarScroll: !1,
         showNavigationMobile: null == n
     }), T(!1), () => {
         m.A.reset(), f.A.reset(), d.A.resetState()
     }));
-    let R = i.useMemo(() => ({
+    let R = a.useMemo(() => ({
             visibleDirectory: S,
             accessibleDirectory: C
         }), [S, C]),
-        D = i.useMemo(() => () => w(p), [w, p]),
-        M = null != j ? S.get(j) : void 0;
+        D = a.useMemo(() => () => w(g), [w, g]),
+        O = null != j ? S.get(j) : void 0;
     return (0, r.jsx)(c.x.Provider, {
         value: R,
         children: (0, r.jsxs)("div", {
@@ -68,20 +68,20 @@ function g(e) {
             children: [(0, r.jsx)(l.L, {
                 root: N,
                 onClose: D,
-                footer: y,
+                footer: x,
                 emptyState: b,
                 searchBar: _
             }), (0, r.jsx)(s.A, {
                 onClose: D,
-                setting: I ? void 0 : M ?? E
+                setting: I ? void 0 : O ?? E
             })]
         })
     })
 }
 
-function p(e) {
+function g(e) {
     return (0, r.jsx)(o.ms, {
-        children: (0, r.jsx)(g, {
+        children: (0, r.jsx)(p, {
             ...e
         })
     })

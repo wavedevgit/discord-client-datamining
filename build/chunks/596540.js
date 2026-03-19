@@ -1,28 +1,28 @@
 /** chunk id: 596540 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    r = n(73153),
-    a = n(964486),
+    a = n(73153),
+    r = n(964486),
     o = n(203982),
     c = n(851109),
     d = n(355741),
     u = n(480680),
     h = n(652215),
     A = n(985018),
-    m = n(782462);
+    m = n(39368);
 
-function p(e) {
+function g(e) {
     let {
         children: t,
         popoutPosition: n,
         popoutAlign: u,
         targetElementRef: m,
-        spacing: p = 0
+        spacing: g = 0
     } = e, {
         isOpen: _,
         setIsOpen: f
@@ -31,11 +31,11 @@ function p(e) {
     }, [f]), C = s.useCallback(() => {
         f(!_)
     }, [_, f]);
-    (0, a.Ay)(() => {
+    (0, r.Ay)(() => {
         let e = () => {
             f(!1)
         };
-        return r.h.subscribe("USER_SETTINGS_MODAL_OPEN", e), () => r.h.unsubscribe("USER_SETTINGS_MODAL_OPEN", e)
+        return a.h.subscribe("USER_SETTINGS_MODAL_OPEN", e), () => a.h.unsubscribe("USER_SETTINGS_MODAL_OPEN", e)
     }), s.useEffect(() => (o._.subscribe(h.jej.TOGGLE_INBOX, C), () => void o._.unsubscribe(h.jej.TOGGLE_INBOX, C)), [C]);
     let {
         entrypoint: E
@@ -50,10 +50,10 @@ function p(e) {
         animationPosition: E === c.RK.TITLE_BAR_LEFT ? "bottom" : "left",
         position: n,
         onRequestClose: x,
-        spacing: p,
+        spacing: g,
         renderPopout: () => (0, i.jsx)(l.lGe, {
             "aria-label": A.intl.string(A.t.GSmTKJ),
-            children: (0, i.jsx)(g, {})
+            children: (0, i.jsx)(p, {})
         }),
         children: (e, n) => {
             let {
@@ -64,7 +64,7 @@ function p(e) {
     })
 }
 
-function g() {
+function p() {
     return (0, i.jsxs)("div", {
         className: m.kL,
         children: [(0, i.jsx)("div", {
