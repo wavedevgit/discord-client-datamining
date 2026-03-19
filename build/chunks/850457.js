@@ -1,104 +1,103 @@
-/** chunk id: 850457, original params: e,t,n (module,exports,require) **/
+/** chunk id: 850457 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => S
+    A: () => I
 });
 var i = n(627968);
 n(64700);
-var s = n(503698),
-    l = n.n(s),
-    a = n(311907),
-    r = n(827734),
-    o = n(397927),
-    c = n(587895),
-    d = n(47167),
-    u = n(475889),
-    h = n(693879),
-    A = n(769015),
-    p = n(290987),
-    m = n(287809),
-    g = n(562153),
+var s = n(311907),
+    l = n(827734),
+    a = n(397927),
+    r = n(587895),
+    o = n(47167),
+    c = n(475889),
+    d = n(693879),
+    u = n(769015),
+    h = n(290987),
+    A = n(769022),
+    m = n(898926),
+    g = n(287809),
+    p = n(562153),
     _ = n(996439),
-    f = n(573143),
-    x = n(360635),
-    C = n(985018),
-    E = n(615349);
+    f = n(985018),
+    x = n(707143);
 
-function I(e) {
+function C(e) {
     let {
         event: t,
         guildId: n,
-        channelId: s
-    } = e, l = (0, a.bG)([m.default], () => m.default.getUser(t.userId)), r = (0, a.bG)([c.A], () => null != t.applicationId ? c.A.getApplication(t.applicationId) : void 0), d = g.Ay.useName(n, s, l);
-    if (null == l) return null;
-    let u = t.eventType === x.i.ACTIVITY_ENDED;
+        channelId: l
+    } = e, o = (0, s.bG)([g.default], () => g.default.getUser(t.userId)), c = (0, s.bG)([r.A], () => t.eventType === m.i.ACTIVITY_ENDED && null != t.applicationId ? r.A.getApplication(t.applicationId) : void 0), d = p.Ay.useName(n, l, o);
+    if (null == o) return null;
+    let A = t.eventType === m.i.ACTIVITY_ENDED;
     return (0, i.jsxs)("div", {
-        className: E.NG,
+        className: x.NG,
         children: [(0, i.jsx)("div", {
-            className: E.Wz
+            className: x.Wz
         }), (0, i.jsx)("div", {
-            className: E.xW,
-            children: u && null != r ? (0, i.jsx)(A.A, {
-                game: r,
-                className: E.AW
-            }) : (0, i.jsx)(o.euF, {
-                src: l.getAvatarURL(n, 20),
-                size: o._3J.SIZE_20,
-                "aria-label": l.username
+            className: x.xW,
+            children: A && null != c ? (0, i.jsx)(u.A, {
+                game: c,
+                className: x.AW
+            }) : (0, i.jsx)(a.euF, {
+                src: o.getAvatarURL(n, 20),
+                size: a._3J.SIZE_20,
+                "aria-label": o.username
             })
         }), (0, i.jsxs)("div", {
-            className: E.Kw,
-            children: [u ? (0, i.jsx)(o.Text, {
+            className: x.Kw,
+            children: [A ? (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
-                className: E.rN,
-                children: C.intl.format(C.t.CKIMrx, {
+                className: x.rN,
+                children: f.intl.format(f.t.CKIMrx, {
                     user: d,
                     activityName: t.applicationName ?? "Unknown"
                 })
-            }) : (0, i.jsx)(o.Text, {
+            }) : (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
-                className: E.qJ,
-                children: C.intl.format(C.t.TlVwqn, {
+                className: x.qJ,
+                children: f.intl.format(f.t.TlVwqn, {
                     user: d,
-                    userHook: (e, t) => (0, i.jsx)(o.Text, {
+                    userHook: (e, t) => (0, i.jsx)(a.Text, {
                         variant: "text-sm/semibold",
-                        className: E.C3,
+                        className: x.C3,
                         children: e
                     }, t),
-                    labelHook: (e, t) => (0, i.jsx)("span", {
-                        className: E.CS,
+                    labelHook: (e, t) => (0, i.jsx)(a.Text, {
+                        variant: "text-sm/normal",
+                        className: x.CS,
                         children: e
                     }, t)
                 })
-            }), (0, i.jsx)(o.Text, {
+            }), (0, i.jsx)(a.Text, {
                 variant: "text-xs/normal",
                 color: "text-muted",
-                className: E.gE,
-                children: (0, i.jsx)(p.Ay, {
+                className: x.gE,
+                children: (0, i.jsx)(h.Ay, {
                     end: t.timestamp,
-                    location: p.Ay.Locations.VOICE_CHANNEL_HISTORY
+                    location: h.Ay.Locations.VOICE_CHANNEL_HISTORY
                 })
             })]
         })]
     })
 }
 
-function N(e) {
+function E(e) {
     let {
         channel: t
-    } = e, n = (0, u.H)(t), s = (0, d.Ay)(t);
+    } = e, n = (0, c.H)(t), s = (0, o.Ay)(t);
     return (0, i.jsxs)("div", {
-        className: E.hY,
-        children: [(0, i.jsx)(o.HKD, {
+        className: x.hY,
+        children: [(0, i.jsx)(a.HKD, {
             size: "custom",
-            color: r.A.colors.ICON_FEEDBACK_POSITIVE,
+            color: l.A.colors.ICON_FEEDBACK_POSITIVE,
             height: 20,
             width: 20
-        }), (0, i.jsx)(o.Text, {
+        }), (0, i.jsx)(a.Text, {
             variant: "text-md/medium",
-            className: E.HA,
+            className: x.HA,
             children: s
-        }), null != n && (0, i.jsx)(h.z, {
+        }), null != n && (0, i.jsx)(d.z, {
             textColor: "text-feedback-positive",
             entry: {
                 start: n
@@ -107,26 +106,23 @@ function N(e) {
     })
 }
 
-function S(e) {
+function I(e) {
     let {
-        channel: t,
-        isStandardGap: n
-    } = e, [s, r] = (0, a.bG)([f.A], () => [f.A.getHistory(t.id), f.A.getHistoryVersion()], [t.id], _.D);
-    return 0 === s.length ? null : (0, i.jsxs)("div", {
-        className: l()(E.kL, {
-            [E.iA]: n
-        }),
-        children: [(0, i.jsx)(N, {
+        channel: t
+    } = e, [n, l] = (0, s.bG)([A.A], () => [A.A.getHistory(t.id), A.A.getHistoryVersion(t.id)], [t.id], _.D);
+    return 0 === n.length ? null : (0, i.jsxs)("div", {
+        className: x.kL,
+        children: [(0, i.jsx)(E, {
             channel: t
-        }), (0, i.jsx)(o.HOs, {
+        }), (0, i.jsx)(a.HOs, {
             children: (0, i.jsxs)("div", {
-                className: E.PI,
-                children: [(0, i.jsx)(o.Text, {
+                className: x.PI,
+                children: [(0, i.jsx)(a.Text, {
                     variant: "text-sm/medium",
                     color: "text-muted",
-                    className: E.s8,
-                    children: C.intl.string(C.t.N0ED9s)
-                }), s.map(e => (0, i.jsx)(I, {
+                    className: x.s8,
+                    children: f.intl.string(f.t.N0ED9s)
+                }), n.map(e => (0, i.jsx)(C, {
                     event: e,
                     guildId: t.guild_id,
                     channelId: t.id

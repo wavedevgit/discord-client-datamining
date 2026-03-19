@@ -34,8 +34,8 @@ function E(t) {
         unavailableReason: _,
         onWatchStream: x,
         onAction: y,
-        showHeader: I = !1,
-        hideTip: N = !1,
+        showHeader: N = !1,
+        hideTip: I = !1,
         className: j
     } = t, D = (0, s.bG)([u.A], () => {
         if (null != c) {
@@ -43,10 +43,10 @@ function E(t) {
             else if (null != c.name) return u.A.getApplicationByName(c.name)
         }
         return null
-    }, [c]), P = null != l && null != l.name ? f.intl.formatToPlainString(f.t["4CQq9Q"], {
+    }, [c]), O = null != l && null != l.name ? f.intl.formatToPlainString(f.t["4CQq9Q"], {
         name: l.name
-    }) : f.intl.string(f.t["Jpkr/q"]), O = (0, n.jsxs)(n.Fragment, {
-        children: [I && (0, n.jsxs)("div", {
+    }) : f.intl.string(f.t["Jpkr/q"]), P = (0, n.jsxs)(n.Fragment, {
+        children: [N && (0, n.jsxs)("div", {
             className: T.WG,
             children: [null != D && (0, n.jsx)(A.A, {
                 game: D,
@@ -54,7 +54,7 @@ function E(t) {
             }), (0, n.jsx)(a.Text, {
                 variant: "text-xs/bold",
                 color: "currentColor",
-                children: P
+                children: O
             })]
         }), null != x ? (0, n.jsxs)(a.DUT, {
             onClick: x,
@@ -109,7 +109,7 @@ function E(t) {
                 channelId: e.channelId,
                 className: T.lx,
                 onAction: y
-            }), !N && (0, n.jsx)(m.A, {
+            }), !I && (0, n.jsx)(m.A, {
                 type: m.A.Types.INLINE,
                 className: T.PP,
                 children: __OVERLAY__ ? f.intl.string(f.t.YRdw70) : f.intl.string(f.t.CCTgbF)
@@ -120,7 +120,7 @@ function E(t) {
         className: T.yt,
         children: (0, n.jsx)("div", {
             className: r()(S.popover, T.Rh, j),
-            children: O
+            children: P
         })
     })
 }

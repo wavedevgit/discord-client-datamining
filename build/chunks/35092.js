@@ -60,7 +60,7 @@ function y(e) {
         label: E,
         icon: I,
         isPromptingPurchase: N
-    } = (0, f.hB)({
+    } = (0, f.h)({
         sku: t,
         wishlistOwner: n,
         isOwned: !1,
@@ -83,7 +83,7 @@ function y(e) {
                 skuPreviewStyle: a()(T.ho, d),
                 onClick: g,
                 onHoverOrFocusChange: y,
-                children: (0, i.jsx)(f.AJ, {
+                children: (0, i.jsx)(f.A, {
                     spec: v,
                     onClick: N ? C : g,
                     isHoveringOrFocusing: S,

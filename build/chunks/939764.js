@@ -1,38 +1,35 @@
 /** chunk id: 939764 params = (module,exports,require) **/
 n.d(t, {
-    V: () => u
+    V: () => d
 });
 var a = n(64700),
     l = n(311907),
-    i = n(223273),
+    i = n(429913),
     r = n(832163),
     s = n(594832),
     c = n(631784),
-    o = n(287809),
-    d = n(705751);
+    o = n(287809);
 
-function u(e) {
+function d(e) {
     let t = o.default.getCurrentUser()?.id,
         n = a.useMemo(() => null != t ? [t] : [], [t]),
-        u = (0, l.bG)([r.A], () => r.A.getStorefrontDetectableGameAndApplicationIds()),
-        m = a.useMemo(() => {
-            if (null != e && e.type === d.S7.GAME) return e.linkedGames?.find(e => e.type === i.Mh.OFFICIAL && null != e.application && u.has(e.application.id))?.application
-        }, [e, u]),
-        x = a.useMemo(() => m?.id != null ? [m.id] : [], [m]),
+        d = (0, l.bG)([r.A], () => null != e ? r.A.getApplicationIdFromDetectableId(e.id) : void 0),
+        u = (0, i.h)(d),
+        m = a.useMemo(() => null != d ? [d] : [], [d]),
         {
-            recommendations: f,
-            status: h
+            recommendations: x,
+            status: f
         } = (0, c.XQ)({
-            applicationIds: x,
+            applicationIds: m,
             userIds: n,
             numItems: 6,
             source: s.B5.USER_PROFILE
         });
     return {
-        socialLayerStorefrontRecommendationsData: a.useMemo(() => null == m || null == m.guildId || "success" !== h || 0 === f.length ? null : {
-            application: m,
-            skuIds: f.map(e => e.id),
-            guildId: m.guildId
-        }, [m, h, f])
+        socialLayerStorefrontRecommendationsData: a.useMemo(() => null == u || null == u.guildId || "success" !== f || 0 === x.length ? null : {
+            application: u,
+            skuIds: x.map(e => e.id),
+            guildId: u.guildId
+        }, [u, f, x])
     }
 }

@@ -31,11 +31,11 @@ function C(t) {
         label: x,
         ...y
     } = t, {
-        setDevice: I,
-        Icon: N,
+        setDevice: N,
+        Icon: I,
         getCanSetDevice: j,
         getWarningMessage: D,
-        getLocation: P
+        getLocation: O
     } = {
         [T.oh.AUDIO_INPUT]: {
             setDevice: c.A.setInputDevice,
@@ -65,20 +65,20 @@ function C(t) {
             getLocation: t => `${t}.SingleSelectVideoDevices`
         }
     } [e], {
-        analyticsLocations: O
-    } = (0, m.Ay)(), U = (0, a.bG)([A.A], () => A.A.theme), L = P(r), b = (0, f.tR)(e), {
+        analyticsLocations: P
+    } = (0, m.Ay)(), U = (0, a.bG)([A.A], () => A.A.theme), L = O(r), b = (0, f.tR)(e), {
         id: M
     } = (0, f.x5)(e), R = (0, a.bG)([g.Ay], () => j(g.Ay)), G = (0, n.jsx)(u.po8, {
         messageType: u.YCn.WARNING,
         children: D()
     }), V = l.useCallback(t => {
-        (v?.(t) ?? !0) && I(t, {
+        (v?.(t) ?? !0) && N(t, {
             location: L,
-            analyticsLocations: O
+            analyticsLocations: P
         })
-    }, [L, O, v, I]);
+    }, [L, P, v, N]);
 
-    function w(t) {
+    function H(t) {
         let e, l, {
                 label: r,
                 value: a
@@ -102,7 +102,7 @@ function C(t) {
             }),
             children: [!_ && (0, n.jsx)("div", {
                 className: E.Kt,
-                children: (0, n.jsx)(N, {
+                children: (0, n.jsx)(I, {
                     size: "custom",
                     width: 20,
                     height: 20,
@@ -143,10 +143,10 @@ function C(t) {
             }),
             isDisabled: !R,
             popoutPosition: "bottom",
-            renderOptionLabel: t => w(t, !0),
+            renderOptionLabel: t => H(t, !0),
             renderOptionValue: t => {
                 let [e] = t;
-                return w(e)
+                return H(e)
             },
             optionClassName: E.OS,
             ...y,

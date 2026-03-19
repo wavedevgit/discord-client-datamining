@@ -1,24 +1,22 @@
-/** chunk id: 469178, original params: e,t,n (module,exports,require) **/
+/** chunk id: 469178 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => a
 });
 var i = n(64700),
-    s = n(977997),
-    l = n(591939),
-    a = n(376947),
-    r = n(573143);
+    s = n(820512),
+    l = n(591346);
 
-function o(e) {
+function a(e) {
     let {
         channel: t
-    } = e, n = s.A.getVoiceStatesForChannel(t.id), o = null != n && Object.keys(n).length > 0, {
-        enableHistoryHover: c
-    } = (0, a.NH)({
+    } = e, {
+        enableHistoryHover: n
+    } = (0, l.G8)({
         guildId: t.guild_id,
         location: "VoiceChannelHistoryTracking"
     });
     return i.useEffect(() => {
-        c && o && !(0, r.o)(t.id) && (0, l.H)(t.id)
-    }, [t.id, c, o]), null
+        n && (0, s.H)(t.id)
+    }, [t.id, n]), null
 }

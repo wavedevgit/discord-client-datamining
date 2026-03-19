@@ -40,13 +40,13 @@ function f(t) {
         }), _.dispatch(h.jej.POPOUT_CLOSE), p._.dispatch(h.jej.MODAL_CLOSE), a.A.popAll())
     };
     if (null == i) return null;
-    let I = (0, u.CT)(v);
-    return e ? I = g.intl.string(g.t.XvBdeT) : x && (I = g.intl.string(g.t["JH1SJ+"])), (0, n.jsxs)(n.Fragment, {
+    let N = (0, u.CT)(v);
+    return e ? N = g.intl.string(g.t.XvBdeT) : x && (N = g.intl.string(g.t["JH1SJ+"])), (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(s.Button, {
             size: "sm",
             variant: x ? "secondary" : "active",
             icon: s.Fzq,
-            text: I,
+            text: N,
             disabled: e || x || !C,
             onClick: () => y(!1),
             fullWidth: !0

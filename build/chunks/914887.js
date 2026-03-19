@@ -1,17 +1,17 @@
 /** chunk id: 914887 params = (module,exports,require) **/
 n.d(e, {
-    a: () => i
+    a: () => a
 });
 var r = n(64700),
     s = n(954571),
-    a = n(652215);
+    i = n(652215);
 
-function i(t, e, n, i) {
+function a(t, e, n, a) {
     let l = r.useRef(null),
         u = r.useRef(e),
         c = r.useRef({
             positionInSection: n,
-            analyticsLocations: i
+            analyticsLocations: a
         });
     r.useEffect(() => {
         u.current = e
@@ -21,7 +21,7 @@ function i(t, e, n, i) {
                 sessionId: e,
                 guildId: n,
                 pageIndex: r,
-                pageTitle: i,
+                pageTitle: a,
                 pageSection: l,
                 pageSectionTitle: o,
                 isUserGuildMember: d,
@@ -30,12 +30,12 @@ function i(t, e, n, i) {
                 positionInSection: _,
                 analyticsLocations: g
             } = c.current;
-            s.default.track(a.HAw.SLAYER_STOREFRONT_CARD_IMPRESSION, {
+            s.default.track(i.HAw.SLAYER_STOREFRONT_CARD_IMPRESSION, {
                 slayer_storefront_session_id: e,
                 sku_id: t,
                 guild_id: n,
                 page_index: r,
-                page_title: i,
+                page_title: a,
                 page_section: l,
                 page_section_title: o,
                 position_in_section: _,

@@ -86,7 +86,7 @@ function L(e) {
         label: P,
         icon: D,
         isPromptingPurchase: G
-    } = (0, E.hB)({
+    } = (0, E.h)({
         sku: t.sku,
         wishlistOwner: n,
         isOwned: A,
@@ -105,7 +105,7 @@ function L(e) {
             disableHoverOrFocus: d,
             onHoverOrFocusChange: m,
             onClick: y,
-            children: [(0, i.jsx)(E.AJ, {
+            children: [(0, i.jsx)(E.A, {
                 spec: k,
                 onClick: G ? L : y,
                 isHoveringOrFocusing: g,

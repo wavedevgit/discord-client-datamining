@@ -75,7 +75,7 @@ function M(t) {
         label: P,
         icon: v,
         isPromptingPurchase: x
-    } = (0, C.hB)({
+    } = (0, C.h)({
         sku: e,
         wishlistOwner: o,
         isOwned: !1,
@@ -98,7 +98,7 @@ function M(t) {
             sku: e,
             isCardHovered: y && !R,
             location: "DMGiftingModalWishlistItemCardBase"
-        }), !R && (0, n.jsx)(C.AJ, {
+        }), !R && (0, n.jsx)(C.A, {
             spec: E,
             onClick: x ? b : N,
             label: P,

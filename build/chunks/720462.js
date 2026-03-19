@@ -23,7 +23,7 @@ let f = e => {
         "aria-label": g
     } = e, p = l.useId(), _ = l.useRef(0), v = l.useRef(0), j = l.useRef(0), A = l.useRef(!1), E = l.useRef(!1), I = l.useRef(null), b = (0, c.bG)([u.A], () => u.A.keyboardModeEnabled), N = (0, c.bG)([u.A], () => u.A.useReducedMotion), C = l.useMemo(() => l.Children.map(t, e => l.isValidElement(e) ? null != e && "object" == typeof e && e.$$typeof === Symbol.for("react.portal") ? e : l.cloneElement(e, {
         tabIndex: -1
-    }) : e), [t]), [T, L] = l.useState(!1), [S, k] = l.useState(!1), [y, G] = l.useState(!0), R = () => {
+    }) : e), [t]), [T, L] = l.useState(!1), [S, k] = l.useState(!1), [y, R] = l.useState(!0), G = () => {
         L(v.current > _.current)
     }, M = l.useCallback(() => {
         if (E.current) return;
@@ -33,7 +33,7 @@ let f = e => {
         I.current = Math.max(0, Math.min(e.childElementCount - 1, t))
     }, []), O = l.useCallback(() => {
         let e = P.current;
-        null != e && (k(j.current > 0), G(j.current + e.clientWidth < e.scrollWidth), M())
+        null != e && (k(j.current > 0), R(j.current + e.clientWidth < e.scrollWidth), M())
     }, [M]), D = l.useCallback(() => {
         let e = P.current;
         if (null == e) return;
@@ -47,13 +47,13 @@ let f = e => {
         let {
             contentRect: t
         } = e;
-        _.current = t.width, null != P.current && (j.current = P.current?.scrollLeft), R(), O(), D()
+        _.current = t.width, null != P.current && (j.current = P.current?.scrollLeft), G(), O(), D()
     }), P = l.useRef(null);
     l.useEffect(() => {
         let e = P.current;
         if (null == e) return;
         let t = new ResizeObserver(() => {
-            v.current = e.scrollWidth, e.scrollLeft !== j.current && (e.scrollLeft = j.current), R(), O()
+            v.current = e.scrollWidth, e.scrollLeft !== j.current && (e.scrollLeft = j.current), G(), O()
         });
         Array.from(e.children).forEach(e => {
             t.observe(e)

@@ -5,14 +5,14 @@ n.d(e, {
 });
 var r = n(627968),
     s = n(64700),
-    a = n(503698),
-    i = n.n(a),
+    i = n(503698),
+    a = n.n(i),
     l = n(120690);
 
 function u() {
     let [t] = s.useState(() => Math.floor(1600 * Math.random()) / 1e3);
     return (0, r.jsx)("div", {
-        className: i()(l.Vl, l.Yf),
+        className: a()(l.Vl, l.Yf),
         style: {
             animationDelay: `${t}s`
         }
