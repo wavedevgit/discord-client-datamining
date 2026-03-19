@@ -260,7 +260,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
             })
         }, [t, c]), O = s.useCallback(async () => {
             j(!0), await (0, r.Ir)(t, c), j(!1)
-        }, [t, c]), P = () => {
+        }, [t, c]), L = () => {
             o.default.track(h.HAw.PREMIUM_GROUP_SUBSCRIPTION_CARD_INVITE_CLICKED, {
                 subscription_id: t.id
             }), (0, a.mMO)(async () => {
@@ -272,8 +272,8 @@ let S = () => (0, i.jsxs)(a.BJc, {
                     subscription: t
                 })
             })
-        }, L = s.useMemo(() => !x.BE.includes(t.status) && f > 0, [t.status, f]), {
-            title: D,
+        }, D = s.useMemo(() => !x.BE.includes(t.status) && f > 0, [t.status, f]), {
+            title: P,
             description: M
         } = (() => {
             switch (y) {
@@ -317,7 +317,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
             children: [(0, i.jsx)(S, {}), (0, i.jsxs)("div", {
                 className: E.wS,
                 children: [(0, i.jsx)(C, {
-                    title: D,
+                    title: P,
                     description: M,
                     button: d.ki(t) ? (0, i.jsx)(a.Button, {
                         variant: "expressive",
@@ -333,8 +333,8 @@ let S = () => (0, i.jsxs)(a.BJc, {
                             size: "md",
                             fullWidth: !0,
                             text: T.intl.string(p.default.Tcmclj),
-                            onClick: P,
-                            disabled: !L
+                            onClick: L,
+                            disabled: !D
                         }), (0, i.jsx)(a.Button, {
                             variant: "secondary",
                             size: "md",
@@ -346,8 +346,8 @@ let S = () => (0, i.jsxs)(a.BJc, {
                 }), (0, i.jsx)(b, {
                     premiumGroupMembers: g,
                     isLoadingPremiumGroupMembers: A,
-                    canInvite: L,
-                    onInvite: P,
+                    canInvite: D,
+                    onInvite: L,
                     onRemoveMember: e => {
                         o.default.track(h.HAw.PREMIUM_GROUP_SUBSCRIPTION_CARD_REMOVE_MEMBER_CLICKED, {
                             subscription_id: t.id,

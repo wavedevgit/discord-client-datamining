@@ -39,9 +39,9 @@ let I = e => {
             return !1 !== i.canReveal && "upcomingDropUntimed" !== i.name && (e[n] = i), e
         }, {}),
         {
-            analyticsLocations: P
+            analyticsLocations: L
         } = (0, _.Ay)(u.A.PREMIUM_SUBSCRIBER_NITRO_HOME),
-        [L, D] = s.useState(!1),
+        [D, P] = s.useState(!1),
         M = (0, r.bG)([c.A], () => c.A.useReducedMotion),
         G = (0, p.LQ)(),
         {
@@ -69,7 +69,7 @@ let I = e => {
                 [b.fv]: !j
             }),
             children: (0, i.jsxs)(_.f5, {
-                value: P,
+                value: L,
                 children: [j ? (0, i.jsx)(S.A, {
                     onBackClick: V
                 }) : (0, i.jsx)(T.A, {
@@ -133,9 +133,9 @@ let I = e => {
                 }), (0, i.jsx)(o.L, {
                     innerRef: R,
                     onChange: e => {
-                        e && !L && (g.default.track(C.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
-                            location_stack: P
-                        }), D(!0))
+                        e && !D && (g.default.track(C.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                            location_stack: L
+                        }), P(!0))
                     },
                     children: (0, i.jsx)("div", {
                         ref: R,

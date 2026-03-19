@@ -1,7 +1,7 @@
 /** chunk id: 616755 params = (module,exports,require) **/
 i.d(t, {
     A: () => S,
-    H: () => b
+    H: () => L
 });
 var l = i(627968),
     n = i(64700),
@@ -199,7 +199,7 @@ function S(e) {
     })
 }
 
-function b(e) {
+function L(e) {
     let {
         invite: t,
         guild: i,
@@ -214,8 +214,8 @@ function b(e) {
         treatment: S
     } = u.SH.useConfig({
         location: "AcceptInviteModalRedesign"
-    }), b = null != s && s.length > 0, {
-        gamesToDisplay: L,
+    }), L = null != s && s.length > 0, {
+        gamesToDisplay: b,
         lastGameToDisplay: R,
         remainingGames: O
     } = (0, g.A)(c), U = n.useMemo(() => c.traits.map((e, t) => ({
@@ -265,7 +265,7 @@ function b(e) {
                         guild: i,
                         invite: t,
                         showGuildTag: !0
-                    }), b && (0, l.jsx)(m.A, {
+                    }), L && (0, l.jsx)(m.A, {
                         friendMemberIds: s,
                         className: C.QS,
                         avatarSize: o._3J.SIZE_24
@@ -273,8 +273,8 @@ function b(e) {
                         variant: "text-sm/normal",
                         color: "text-default",
                         children: i.description
-                    }), 0 === L.length ? null : "v1" === S ? (0, l.jsx)(_.A, {
-                        gamesToDisplay: L,
+                    }), 0 === b.length ? null : "v1" === S ? (0, l.jsx)(_.A, {
+                        gamesToDisplay: b,
                         lastGameToDisplay: R,
                         remainingGames: O,
                         activity: c.gameActivity
@@ -282,7 +282,7 @@ function b(e) {
                         direction: "vertical",
                         gap: 8,
                         children: (0, l.jsx)(h.A, {
-                            gamesToDisplay: L,
+                            gamesToDisplay: b,
                             lastGameToDisplay: R,
                             remainingGames: O,
                             activity: c.gameActivity,

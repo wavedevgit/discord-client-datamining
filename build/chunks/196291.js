@@ -31,9 +31,9 @@ var i = n(627968),
     y = n(63675),
     R = n(253604),
     O = n(652215),
-    P = n(788868),
-    L = n(355097),
-    D = n(985018),
+    L = n(788868),
+    D = n(355097),
+    P = n(985018),
     M = n(219501);
 
 function G(e) {
@@ -60,7 +60,7 @@ function G(e) {
         preset: Y,
         onShuffle: z
     } = (0, _.A)(), X = s.useRef(null);
-    (0, b.A)(X, L._F.TRY_IT_OUT);
+    (0, b.A)(X, D._F.TRY_IT_OUT);
     let {
         analyticsLocations: W,
         newestAnalyticsLocation: K,
@@ -72,16 +72,16 @@ function G(e) {
     };
     s.useEffect(() => {
         n && S.default.track(O.HAw.PREMIUM_UPSELL_VIEWED, {
-            type: P.e.PREMIUM_PROFILE_TRY_IT_OUT,
+            type: L.e.PREMIUM_PROFILE_TRY_IT_OUT,
             location: {
                 page: O.liQ.USER_SETTINGS
             },
             location_stack: Z
         })
     }, [Z, t, n]);
-    let J = (0, u.V)()?.subscription_trial?.sku_id === P.pe.TIER_2,
+    let J = (0, u.V)()?.subscription_trial?.sku_id === L.pe.TIER_2,
         Q = (0, c.O)(),
-        $ = (0, g.U9)(Q, P.pe.TIER_2);
+        $ = (0, g.U9)(Q, L.pe.TIER_2);
     return G ? (0, i.jsx)(d.f5, {
         value: W,
         children: (0, i.jsxs)(v.A, {
@@ -98,7 +98,7 @@ function G(e) {
                         size: "md",
                         color: "currentColor",
                         className: M.PC
-                    }), D.intl.string(D.t.gMlDNd)]
+                    }), P.intl.string(P.t.gMlDNd)]
                 }),
                 profilePreview: (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(m.A, {
@@ -113,11 +113,11 @@ function G(e) {
                     children: [(0, i.jsxs)("div", {
                         children: [(0, i.jsx)(a.Heading, {
                             variant: "heading-xl/extrabold",
-                            children: D.intl.string(D.t["2zGdAW"])
+                            children: P.intl.string(P.t["2zGdAW"])
                         }), (0, i.jsx)(a.Text, {
                             className: M.h_,
                             variant: "text-sm/normal",
-                            children: D.intl.string(D.t.xeEC20)
+                            children: P.intl.string(P.t.xeEC20)
                         })]
                     }), (0, i.jsx)(y.A, {
                         className: M.fz,
@@ -141,21 +141,21 @@ function G(e) {
                         isTryItOut: !0,
                         onAvatarChange: T.e$,
                         showRemoveAvatarButton: !1,
-                        changeAvatarButtonText: D.intl.string(D.t["7z0D1c"]),
-                        sectionTitle: D.intl.string(D.t.vtFfPX)
+                        changeAvatarButtonText: P.intl.string(P.t["7z0D1c"]),
+                        sectionTitle: P.intl.string(P.t.vtFfPX)
                     }), (0, i.jsx)(I.A, {
                         user: t,
                         className: M.fz
                     }), !J && (0, i.jsx)(a.Text, {
                         variant: "text-sm/normal",
-                        children: D.intl.string(D.t["smo74/"])
+                        children: P.intl.string(P.t["smo74/"])
                     })]
                 })
             }), !J && (0, i.jsx)(A.d, {
                 onSubscribeModalClose: q,
                 className: M.Kv,
                 showUpsell: !0,
-                text: D.intl.format(D.t.TmfgI2, {
+                text: P.intl.format(P.t.TmfgI2, {
                     onClick: () => {
                         (0, h.K)({
                             analyticsSource: K,
@@ -163,16 +163,16 @@ function G(e) {
                         })
                     }
                 }),
-                button: U ? D.intl.string(D.t.AfRWI8) : $ ? D.intl.formatToPlainString(D.t.bkQ4bH, {
+                button: U ? P.intl.string(P.t.AfRWI8) : $ ? P.intl.formatToPlainString(P.t.bkQ4bH, {
                     percent: Q?.discount.amount
-                }) : D.intl.string(D.t.pj0XBN),
+                }) : P.intl.string(P.t.pj0XBN),
                 position: "inline"
             }), J && (0, i.jsxs)("div", {
                 children: [(0, i.jsx)("div", {
                     className: M.BU
                 }), (0, i.jsx)(x.Ay, {
-                    type: P.e.CUSTOM_PROFILE_TRY_OUT_UPSELL,
-                    subscriptionTier: P.pe.TIER_2
+                    type: L.e.CUSTOM_PROFILE_TRY_OUT_UPSELL,
+                    subscriptionTier: L.pe.TIER_2
                 })]
             })]
         })

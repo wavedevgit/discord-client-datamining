@@ -31,23 +31,23 @@ var i = n(627968),
     y = n(38720),
     R = n(788868),
     O = n(985018),
-    P = n(472626),
-    L = n(196093),
-    D = n(979653),
+    L = n(472626),
+    D = n(196093),
+    P = n(979653),
     M = n(255631),
     G = n(193023);
 let U = () => {
         let e = (0, v._)();
         return (0, i.jsx)(j.ir, {
             text: e,
-            className: P.QR,
+            className: L.QR,
             colorOptions: j.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL
         })
     },
     k = () => (0, i.jsx)("div", {
-        className: P.Wm,
+        className: L.Wm,
         children: (0, i.jsx)(c.Heading, {
-            className: P.uC,
+            className: L.uC,
             variant: "heading-deprecated-12/extrabold",
             children: O.intl.string(O.t["o/oRJB"])
         })
@@ -61,19 +61,19 @@ let U = () => {
         if (s)
             if (n === R.PremiumTypes.TIER_0) return (0, i.jsx)(c.Heading, {
                 variant: "display-md",
-                className: P.dW,
+                className: L.dW,
                 children: O.intl.string(O.t.tUbSDK)
             });
             else return (0, i.jsx)(c.Heading, {
                 variant: "display-md",
-                className: P.dW,
+                className: L.dW,
                 children: O.intl.string(O.t.Ipxkog)
             });
-        t = n === R.PremiumTypes.TIER_0 ? (0, o.Mw)(l) ? L : D : (0, o.Mw)(l) ? M : G;
+        t = n === R.PremiumTypes.TIER_0 ? (0, o.Mw)(l) ? D : P : (0, o.Mw)(l) ? M : G;
         let a = (0, p.Dd)(n);
         return (0, i.jsx)("img", {
             src: t,
-            className: P.wm,
+            className: L.wm,
             alt: a
         })
     },
@@ -84,18 +84,18 @@ let U = () => {
             column2: s
         } = e;
         return (0, i.jsxs)("tr", {
-            className: a()(P.U1, P.YI, P.Y9),
+            className: a()(L.U1, L.YI, L.Y9),
             children: [(0, i.jsx)("th", {
                 scope: "col",
-                className: P.Cr,
+                className: L.Cr,
                 children: t
             }), (0, i.jsx)("th", {
                 scope: "col",
-                className: P.e4,
+                className: L.e4,
                 children: n
             }), (0, i.jsx)("th", {
                 scope: "col",
-                className: a()(P.e4, P.Y9),
+                className: a()(L.e4, L.Y9),
                 children: s
             })]
         })
@@ -112,27 +112,27 @@ let U = () => {
             shortRow: c = !1
         } = e;
         return (0, i.jsxs)("tr", {
-            className: a()(P.nM, {
-                [P.EE]: d,
-                [P.Y9]: r,
-                [P.kS]: o,
-                [P.YI]: l,
-                [P.vs]: c
+            className: a()(L.nM, {
+                [L.EE]: d,
+                [L.Y9]: r,
+                [L.kS]: o,
+                [L.YI]: l,
+                [L.vs]: c
             }),
             children: [(0, i.jsx)("th", {
                 scope: "row",
-                className: P.nx,
+                className: L.nx,
                 children: t
             }), (0, i.jsx)("td", {
-                className: a()(P.Hn, {
-                    [P.SD]: d
+                className: a()(L.Hn, {
+                    [L.SD]: d
                 }),
                 children: n
             }), (0, i.jsx)("td", {
-                className: a()(P.Hn, {
-                    [P.Y9]: r,
-                    [P.kS]: o,
-                    [P.SD]: d
+                className: a()(L.Hn, {
+                    [L.Y9]: r,
+                    [L.kS]: o,
+                    [L.SD]: d
                 }),
                 children: s
             })]
@@ -143,8 +143,8 @@ let U = () => {
                 className: n,
                 hideCTAs: l = !1,
                 headingOverride: v,
-                hidePill: L = !1,
-                selectedPlanColumnClassName: D,
+                hidePill: D = !1,
+                selectedPlanColumnClassName: P,
                 selectedPlanTier: M = R.PremiumTypes.TIER_2
             } = e,
             {
@@ -172,7 +172,7 @@ let U = () => {
         if (!H || !F) return null;
         let er = {
             label: (0, i.jsx)(c.Heading, {
-                className: P.__invalid_textColor,
+                className: L.__invalid_textColor,
                 variant: "heading-lg/extrabold",
                 children: O.intl.string(O.t.ED4UVD)
             }),
@@ -197,68 +197,68 @@ let U = () => {
             label: null,
             column1: (0, i.jsxs)(i.Fragment, {
                 children: [q === R.pe.TIER_2 || ea ? (0, i.jsx)(N.A, {
-                    className: P.x6,
+                    className: L.x6,
                     subscriptionTier: R.pe.TIER_0,
                     showIcon: !1,
                     look: d.pR.OUTLINED,
                     color: z ? d.XD.BRAND : d.XD.WHITE
                 }) : (0, i.jsx)(N.A, {
-                    className: P.x6,
+                    className: L.x6,
                     subscriptionTier: R.pe.TIER_0,
                     showIcon: !1
                 }), J === R.PremiumTypes.TIER_2 || null != q ? null : (0, i.jsx)(b.A, {
-                    className: P.x6,
+                    className: L.x6,
                     subscriptionTier: R.pe.TIER_0
                 })]
             }),
             column2: (0, i.jsxs)(i.Fragment, {
                 children: [q === R.pe.TIER_0 ? (0, i.jsx)(N.A, {
-                    className: P.x6,
+                    className: L.x6,
                     subscriptionTier: R.pe.TIER_2,
                     showIcon: !1,
                     look: d.pR.OUTLINED,
                     color: z ? d.XD.BRAND : d.XD.WHITE
                 }) : (0, i.jsx)(N.A, {
-                    className: P.x6,
+                    className: L.x6,
                     subscriptionTier: R.pe.TIER_2,
                     showIcon: !1,
                     hasActivePromotion: ea
                 }), J === R.PremiumTypes.TIER_0 || null != q ? null : (0, i.jsx)(b.A, {
-                    className: P.x6,
+                    className: L.x6,
                     subscriptionTier: R.pe.TIER_2
                 })]
             }),
             withBottomBorder: !1,
             withBottomBorderRadius: !0,
             buttonsRow: null == q
-        }), t = L ? null : null != q || null != J ? (0, i.jsx)(j.ir, {
+        }), t = D ? null : null != q || null != J ? (0, i.jsx)(j.ir, {
             text: null != q ? O.intl.string(O.t.IBYG5U) : O.intl.string(O.t.ce1v3V),
-            className: P.ls,
+            className: L.ls,
             colorOptions: q === R.pe.TIER_0 ? z ? j.at.PREMIUM_TIER_0_GRADIENT_FILL : j.at.PREMIUM_TIER_0_WHITE_FILL : z ? K ? j.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL : j.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL : j.at.PREMIUM_TIER_2_WHITE_FILL
         }) : ea ? (0, i.jsx)(U, {}) : (0, i.jsx)(k, {});
         let eo = q === R.pe.TIER_0 || J === R.PremiumTypes.TIER_0 || M === R.PremiumTypes.TIER_0;
         return (0, i.jsx)(m.f5, {
             value: G,
             children: (0, i.jsxs)("div", {
-                className: a()(P.zr, n),
+                className: a()(L.zr, n),
                 "data-testid": "v2-marketing-page-comparison-table",
                 children: [(0, i.jsx)(c.Heading, {
-                    className: a()(P.Qw, P.__invalid_textColor),
+                    className: a()(L.Qw, L.__invalid_textColor),
                     variant: "heading-xxl/extrabold",
                     children: v ?? O.intl.string(O.t.FIbMh9)
                 }), W && (0, i.jsx)(f.A, {
                     premiumGroupRole: X.premiumGroupRole,
-                    className: P.vg
+                    className: L.vg
                 }), (0, i.jsxs)("div", {
-                    className: P.wY,
+                    className: L.wY,
                     children: [(0, i.jsx)("div", {
-                        className: a()(D, {
-                            [P.A9]: eo,
-                            [P.ce]: !eo && !W
+                        className: a()(P, {
+                            [L.A9]: eo,
+                            [L.ce]: !eo && !W
                         }),
                         children: !eo && t
                     }), (0, i.jsxs)("table", {
-                        className: P.tp,
+                        className: L.tp,
                         children: [(0, i.jsx)("thead", {
                             children: (0, i.jsx)(w, {
                                 ...er

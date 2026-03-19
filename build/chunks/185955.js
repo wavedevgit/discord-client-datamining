@@ -71,13 +71,13 @@ let E = (0, o.Ld)(),
             })
         }, [N]), y = s.useCallback(e => {
             o?.(e)
-        }, [o]), R = s.useCallback(e => e === f, [f]), O = s.useCallback(e => e, []), P = s.useCallback(() => {
+        }, [o]), R = s.useCallback(e => e === f, [f]), O = s.useCallback(e => e, []), L = s.useCallback(() => {
             o?.(null)
-        }, [o]), L = s.useRef(null);
-        return (0, m.A)(L, h._F.GUILD_TAG), (0, i.jsxs)(_.A, {
+        }, [o]), D = s.useRef(null);
+        return (0, m.A)(D, h._F.GUILD_TAG), (0, i.jsxs)(_.A, {
             title: p.intl.string(p.t.Pdd1nd),
             titleId: E,
-            ref: L,
+            ref: D,
             children: [(0, i.jsx)(r.Text, {
                 className: T.VA,
                 variant: "text-sm/normal",
@@ -92,7 +92,7 @@ let E = (0, o.Ld)(),
                 renderTrailing: v,
                 renderOptionValue: j,
                 serialize: O,
-                clear: P,
+                clear: L,
                 clearable: null != f,
                 maxVisibleItems: 8,
                 "data-migration-pending": !0

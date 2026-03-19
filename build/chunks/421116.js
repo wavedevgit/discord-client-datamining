@@ -31,9 +31,9 @@ var i = n(627968),
     y = n(536195),
     R = n(577174),
     O = n(127493),
-    P = n(23003),
-    L = n(16019),
-    D = n(768229),
+    L = n(23003),
+    D = n(16019),
+    P = n(768229),
     M = n(788868),
     G = n(652215),
     U = n(818348),
@@ -64,12 +64,12 @@ let V = () => {
     }, []);
     let en = (0, h.DK)(x.W.NITRO, "PremiumMarketingHome"),
         ei = s.useMemo(() => !!en && "orbs" === new URLSearchParams(e.search).get("section"), [e.search, en]);
-    (0, C.z)(P.NI.ORB_REWARDS, ei);
+    (0, C.z)(L.NI.ORB_REWARDS, ei);
     let es = [I.k.HOME, I.k.WHATS_NEW, I.k.BEST_OF_NITRO, I.k.PLANS, I.k.COMPARE],
         {
             navBarSections: el,
             activeSectionId: ea
-        } = (0, D.o)(es),
+        } = (0, P.o)(es),
         {
             home: er,
             whatsNew: eo,
@@ -97,7 +97,7 @@ let V = () => {
                         onChange: e => F(e),
                         threshold: 0,
                         active: !0,
-                        children: (0, i.jsx)(L.A, {
+                        children: (0, i.jsx)(D.A, {
                             ref: l,
                             subscriptionTier: $,
                             isEligibleForBogoPromotion: ee

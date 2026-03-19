@@ -4,9 +4,9 @@ n.d(t, {
     A: () => g
 });
 var r = n(627968),
-    i = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    a = n(64700),
+    i = n(503698),
+    s = n.n(i),
     l = n(397927),
     o = n(975807),
     c = n(212031),
@@ -45,7 +45,7 @@ function p(e) {
 }
 
 function g() {
-    let e = i.useRef(null);
+    let e = a.useRef(null);
     return (0, r.jsxs)("div", {
         children: [(0, r.jsx)(d.A, {}), (0, r.jsxs)("div", {
             className: h.yJ,

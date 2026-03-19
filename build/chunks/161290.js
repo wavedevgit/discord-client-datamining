@@ -1,6 +1,6 @@
 /** chunk id: 161290 params = (module,exports,require) **/
 n.d(t, {
-    A: () => L
+    A: () => D
 });
 var i = n(627968);
 n(64700);
@@ -32,9 +32,9 @@ var s = n(284009),
     y = n(287809),
     R = n(927578),
     O = n(985018),
-    P = n(961618);
+    L = n(961618);
 
-function L() {
+function D() {
     let e = (0, a.bG)([y.default], () => {
             let e = y.default.getCurrentUser();
             return l()(null != e, "DefaultCustomizationSections: user cannot be undefined"), e
@@ -43,8 +43,8 @@ function L() {
         {
             pendingAvatar: n,
             pendingGlobalName: s,
-            pendingBanner: L,
-            pendingBio: D,
+            pendingBanner: D,
+            pendingBio: P,
             pendingPronouns: M,
             pendingAccentColor: G,
             pendingThemeColors: U,
@@ -66,14 +66,14 @@ function L() {
         H = (0, o.EC)(),
         F = R.Ay.canUsePremiumProfileCustomization(e),
         Y = (0, u.z5)(n, e.avatar),
-        z = (0, u.Ac)(L, t?.banner),
+        z = (0, u.Ac)(D, t?.banner),
         X = (0, j.Ay)(e.id),
         W = X?.getLegacyUsername(),
         K = (w.global_name?.length ?? 0) > 0 ? w.global_name : H?.nick ?? [],
         Z = (w.bio?.length ?? 0) > 0 ? w.bio : H?.bio ?? [],
         q = (0, c.b)();
     return (0, i.jsxs)("div", {
-        className: P.Q,
+        className: L.Q,
         children: [(0, i.jsx)(A.A, {
             placeholder: e.username,
             errors: K,
@@ -123,7 +123,7 @@ function L() {
             sectionTitle: O.intl.string(O.t.ZzAR2Y),
             errors: Z,
             onBioChange: e => (0, u.Ru)(e, t?.bio),
-            pendingBio: D,
+            pendingBio: P,
             currentBio: t?.bio ?? ""
         }, "bio"), q.length > 0 && (0, i.jsx)(d.A, {
             availablePrimaryGuilds: q,

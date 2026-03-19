@@ -31,15 +31,15 @@ var i = n(627968),
     y = n(650583),
     R = n(985018),
     O = n(228784),
-    P = n(522759);
+    L = n(522759);
 
-function L(e) {
+function D(e) {
     let {
         children: t
     } = e;
     return t([g.Q_.MESSAGE, g.Q_.NAVIGATION, g.Q_.DND, g.Q_.CHAT, g.Q_.VOICE_AND_VIDEO, g.Q_.MISCELLANEOUS])
 }
-class D extends s.PureComponent {
+class P extends s.PureComponent {
     handleActionChanged = e => {
         u.A.setKeybind({
             ...this.props.keybind,
@@ -260,7 +260,7 @@ class M extends s.PureComponent {
         u.A.addKeybind()
     };renderKeybinds(e) {
         return e.map((t, n) => (0, i.jsxs)(s.Fragment, {
-            children: [(0, i.jsx)(D, {
+            children: [(0, i.jsx)(P, {
                 keybind: t,
                 keybindDescriptions: this.keybindDescriptions,
                 keybindActionTypes: this.keybindActionTypes
@@ -288,7 +288,7 @@ class M extends s.PureComponent {
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(I.A, {
                 title: R.intl.string(R.t.T9DA2K),
-                className: P.IE,
+                className: L.IE,
                 children: b.isPlatformEmbedded ? (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsxs)("div", {
                         className: O.OQ,
@@ -334,7 +334,7 @@ class M extends s.PureComponent {
                             })]
                         })
                     })
-                }), (0, i.jsx)(L, {
+                }), (0, i.jsx)(D, {
                     children: e => (0, i.jsx)(i.Fragment, {
                         children: e.map((e, t) => {
                             let n = (0, g.Gm)(e),

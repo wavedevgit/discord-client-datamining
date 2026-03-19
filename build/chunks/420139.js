@@ -37,10 +37,10 @@ function y(e) {
         dropdownClassName: r,
         analyticsLocation: y,
         currentInvoicePreview: O,
-        disabled: P = !1
-    } = e, L = (0, d.bG)([p.A], () => p.A.hidePersonalInformation), [D, M] = (0, d.yK)([T.A], () => [T.A.paymentSources, T.A.hasFetchedPaymentSources]), G = (0, h.Y)((0, f.MP)(t)), {
+        disabled: L = !1
+    } = e, D = (0, d.bG)([p.A], () => p.A.hidePersonalInformation), [P, M] = (0, d.yK)([T.A], () => [T.A.paymentSources, T.A.hasFetchedPaymentSources]), G = (0, h.Y)((0, f.MP)(t)), {
         analyticsLocations: U
-    } = (0, x.Ay)(), k = s.useMemo(() => Object.values(D).filter(e => !e.invalid), [D]), [V, w] = s.useState(!1), [B, H] = s.useState(t.currency), F = async (e, n, i) => {
+    } = (0, x.Ay)(), k = s.useMemo(() => Object.values(P).filter(e => !e.invalid), [P]), [V, w] = s.useState(!1), [B, H] = s.useState(t.currency), F = async (e, n, i) => {
         if (null == t) throw Error("missing subscription and paymentSource");
         null == e ? await _.r6(t, n, i, U, y) : await _.uK(t, e, n, i, U, y), w(!1), H(n)
     }, Y = async (e, n, i) => {
@@ -115,14 +115,14 @@ function y(e) {
                 } : null,
                 className: r,
                 paymentSources: k,
-                hidePersonalInformation: L,
+                hidePersonalInformation: D,
                 selectedPaymentSourceId: e,
                 onChange: e => {
                     null != e && Y(e, z(e), F)
                 },
                 onPaymentSourceAdd: W,
                 dropdownLoading: V,
-                disabled: P,
+                disabled: L,
                 paymentGatewayRestrictions: t.eligiblePaymentGateways
             })), null != t.paymentSourceId ? (0, i.jsx)(g.f, {
                 currencies: s,

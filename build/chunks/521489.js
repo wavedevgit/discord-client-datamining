@@ -4,9 +4,9 @@ n.d(t, {
     N: () => h
 });
 var r = n(627968),
-    i = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    a = n(64700),
+    i = n(503698),
+    s = n.n(i),
     l = n(497766),
     o = n(110259),
     c = n(158954),
@@ -19,18 +19,18 @@ function h(e) {
     let {
         transitionState: t,
         animationVariant: n = "default",
-        returnRef: a,
+        returnRef: i,
         "aria-label": h,
         onClose: p,
         trackingProps: g,
         children: x
-    } = e, _ = i.useId(), y = i.useMemo(() => ({
+    } = e, _ = a.useId(), y = a.useMemo(() => ({
         id: _,
         headingId: `heading-${_}`,
         onClose: p,
         dismissable: !0
-    }), [_, p]), v = (0, d.NC)(), {
-        theme: b
+    }), [_, p]), b = (0, d.NC)(), {
+        theme: v
     } = (0, u.wRf)(), A = (0, c.kSI)(t, n);
     return (0, r.jsx)(c.Vs9.Provider, {
         value: y,
@@ -39,7 +39,7 @@ function h(e) {
             role: "dialog",
             "aria-label": h,
             "aria-labelledby": null != h ? void 0 : y.headingId,
-            returnRef: a,
+            returnRef: i,
             ...g,
             impressionType: g?.impressionType ?? o.ImpressionTypes.MODAL,
             children: (0, r.jsx)(c.Fmo, {
@@ -47,7 +47,7 @@ function h(e) {
                 children: (0, r.jsx)("div", {
                     className: m.nw,
                     children: (0, r.jsx)(u.NPJ, {
-                        theme: v,
+                        theme: b,
                         children: e => (0, r.jsx)(l.animated.div, {
                             "data-mana-component": "layer-modal",
                             className: s()(f.container, m.yl, e),
@@ -55,7 +55,7 @@ function h(e) {
                             children: (0, r.jsx)("div", {
                                 className: m.jE,
                                 children: (0, r.jsx)(u.NPJ, {
-                                    theme: b,
+                                    theme: v,
                                     children: e => (0, r.jsx)("div", {
                                         className: s()(e, m.h_),
                                         children: x

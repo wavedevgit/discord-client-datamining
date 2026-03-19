@@ -31,13 +31,13 @@ var i = n(627968),
     y = n(553081),
     R = n(422936),
     O = n(234419),
-    P = n(558533),
-    L = n(788868),
-    D = n(652215),
+    L = n(558533),
+    D = n(788868),
+    P = n(652215),
     M = n(916692);
 let G = function(e) {
     let {
-        entrypoint: t = L.Mf.UserSettings
+        entrypoint: t = D.Mf.UserSettings
     } = e;
     (0, E.P)(T.b);
     let n = (0, x.Hp)(),
@@ -51,20 +51,20 @@ let G = function(e) {
         w = V?.id,
         B = (0, O.V)(),
         H = (0, R.O)(),
-        F = (0, h.Y)(L.T7),
+        F = (0, h.Y)(D.T7),
         [Y, z] = s.useState(!0),
         X = s.useRef(0),
-        W = (0, I.YE)(V, L.PremiumTypes.TIER_2),
+        W = (0, I.YE)(V, D.PremiumTypes.TIER_2),
         K = (0, r.bG)([v.A], () => v.A.hasFetched);
     s.useEffect(() => {
         K || c.xG()
     }, [K]), s.useEffect(() => {
         d.h.wait(async () => {
             let e = Date.now();
-            await Promise.all([c.hP(), c.$o(), (0, u.zS)(null, null, D.tF5.DISCOVERY)]), X.current = Date.now() - e, z(!1)
+            await Promise.all([c.hP(), c.$o(), (0, u.zS)(null, null, P.tF5.DISCOVERY)]), X.current = Date.now() - e, z(!1)
         })
     }, []), s.useEffect(() => {
-        Y || N.default.track(D.HAw.PREMIUM_MARKETING_PAGE_VIEWED, {
+        Y || N.default.track(P.HAw.PREMIUM_MARKETING_PAGE_VIEWED, {
             location_stack: l,
             load_duration_ms: X.current
         })
@@ -72,7 +72,7 @@ let G = function(e) {
         n && (null != B || null != H) && (0, j.u1)(B, H)
     }, [n, B, H]);
     let Z = (0, r.bG)([S.A], () => S.A.enabled),
-        q = t === L.Mf.ApplicationStoreHome,
+        q = t === D.Mf.ApplicationStoreHome,
         J = Z ? (0, i.jsx)(_.A, {}) : n ? (0, i.jsx)(p.uK, {}) : q && W ? (0, i.jsx)(A.f5, {
             value: G,
             children: (0, i.jsx)(y.A, {
@@ -86,7 +86,7 @@ let G = function(e) {
         children: [q && (0, i.jsx)(m.A, {}), J]
     }) : (0, i.jsx)(A.f5, {
         value: G,
-        children: (0, i.jsx)(P.A, {
+        children: (0, i.jsx)(L.A, {
             entrypoint: t
         })
     })

@@ -32,9 +32,9 @@ var i = n(627968),
     y = n(975571),
     R = n(773669),
     O = n(801264),
-    P = n(523104),
-    L = n(856220),
-    D = n(652215),
+    L = n(523104),
+    D = n(856220),
+    P = n(652215),
     M = n(783419),
     G = n(985018),
     U = n(197168);
@@ -127,7 +127,7 @@ function V(e) {
         null != e && (V(e), g.A.setVisibility(f.type, f.id, e), z(null)), null != t && (B(t), g.A.setMetadataVisibility(f.type, f.id, t), W(null))
     }, [f]), (0, i.jsxs)("div", {
         className: U.FI,
-        children: [(t = h.A.get(f.type), n = h.A.get(Q), l = "1" === (f.metadata ?? {})[M.pK.TWITTER_VERIFIED], a = null, t.type === D.fg2.TWITTER && l && (a = (0, i.jsx)(c.m, {
+        children: [(t = h.A.get(f.type), n = h.A.get(Q), l = "1" === (f.metadata ?? {})[M.pK.TWITTER_VERIFIED], a = null, t.type === P.fg2.TWITTER && l && (a = (0, i.jsx)(c.m, {
             text: G.intl.string(G.t.Jebrww),
             children: (0, i.jsx)(b.A, {
                 color: d.A.unsafe_rawColors.TWITTER.css,
@@ -203,29 +203,29 @@ function V(e) {
                     color: "currentColor"
                 })
             })]
-        })), f.twoWayLink ? null : f.type === D.fg2.XBOX ? (0, i.jsx)(L._, {}) : f.type === D.fg2.PLAYSTATION ? (0, i.jsx)(P.j, {}) : null, function(e) {
+        })), f.twoWayLink ? null : f.type === P.fg2.XBOX ? (0, i.jsx)(D._, {}) : f.type === P.fg2.PLAYSTATION ? (0, i.jsx)(L.j, {}) : null, function(e) {
             let t = e.metadata ?? {},
                 n = null,
                 s = (0, T.An)(t[M.pK.CREATED_AT], I);
             switch (e.type) {
-                case D.fg2.REDDIT:
+                case P.fg2.REDDIT:
                     n = (0, C.xE)(t, U.Nz);
                     break;
-                case D.fg2.STEAM:
+                case P.fg2.STEAM:
                     n = (0, C.dy)(t, U.Nz);
                     break;
-                case D.fg2.BLUESKY:
-                case D.fg2.TWITTER:
-                case D.fg2.MASTODON:
+                case P.fg2.BLUESKY:
+                case P.fg2.TWITTER:
+                case P.fg2.MASTODON:
                     n = (0, C.ED)(t, U.Nz);
                     break;
-                case D.fg2.EBAY:
+                case P.fg2.EBAY:
                     n = (0, C.ub)(t, U.Nz);
                     break;
-                case D.fg2.PAYPAL:
+                case P.fg2.PAYPAL:
                     n = (0, C.gZ)(t, U.Nz);
                     break;
-                case D.fg2.TIKTOK:
+                case P.fg2.TIKTOK:
                     n = (0, C.HU)(t, U.Nz)
             }
             null !== s && (null == n && (n = []), n?.push((0, i.jsx)(_.Text, {
@@ -247,7 +247,7 @@ function V(e) {
                     variant: "text-xs/normal",
                     className: U.vt,
                     children: G.intl.format(G.t.Up2ni7, {
-                        helpdeskUrl: y.A.getArticleURL(D.MVz.CONNECTION_DETAILS)
+                        helpdeskUrl: y.A.getArticleURL(P.MVz.CONNECTION_DETAILS)
                     })
                 }, "label")], a = G.intl.string(G.t["LVh3/5"]);
             return l && (a = G.intl.string(G.t.i4jeWR)), n.push((0, i.jsx)("div", {
@@ -271,13 +271,13 @@ function V(e) {
                 className: U.tJ,
                 children: n
             })
-        }(f), (D.txh.has(f.type) && (o = (0, i.jsx)(_.dOG, {
+        }(f), (P.txh.has(f.type) && (o = (0, i.jsx)(_.dOG, {
             label: G.intl.string(G.t["+KCMSi"]),
             checked: v,
             onChange: function(e) {
                 j(e), g.A.setFriendSync(f.type, f.id, e)
             }
-        })), D.ewM.has(f.type) && (m = (0, i.jsx)(_.dOG, {
+        })), P.ewM.has(f.type) && (m = (0, i.jsx)(_.dOG, {
             label: G.intl.format(G.t["6u6J0q"], {
                 platform: $.name
             }),
@@ -346,7 +346,7 @@ function w() {
     return (0, i.jsx)(_.D0$, {
         label: G.intl.string(G.t.ZeDrUf),
         description: G.intl.format(G.t["oYc+Gz"], {
-            privacyPolicyUrl: D.X7G.PRIVACY
+            privacyPolicyUrl: P.X7G.PRIVACY
         }),
         children: (0, i.jsx)(H, {})
     })
@@ -356,7 +356,7 @@ function B(e) {
     let t = h.A.get(e);
     (0, E.A)({
         platformType: t.type
-    }), j.default.track(D.HAw.ACCOUNT_LINK_STEP, {
+    }), j.default.track(P.HAw.ACCOUNT_LINK_STEP, {
         previous_step: "desktop connections",
         current_step: "desktop oauth",
         platform_type: t.type

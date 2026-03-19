@@ -1,6 +1,6 @@
 /** chunk id: 971105 params = (module,exports,require) **/
 n.d(t, {
-    A: () => L
+    A: () => D
 });
 var i = n(627968),
     s = n(64700),
@@ -147,22 +147,22 @@ class O extends s.PureComponent {
     }
 }
 
-function P(e) {
+function L(e) {
     let t = e.skuId,
         n = e.subscription?.items[0].planId;
     return !(null == t || null == n || Object.values(N.pe).includes(t) || (0, C.ys)(n))
 }
 
-function L(e) {
+function D(e) {
     let t = (0, c.bG)([T.A], () => T.A.getPayments()),
         n = (0, c.bG)([S.A], () => S.A.getPremiumTypeSubscription()),
-        l = s.useMemo(() => new Set(t.filter(P).map(e => {
+        l = s.useMemo(() => new Set(t.filter(L).map(e => {
             let {
                 subscription: t
             } = e;
             return t?.items[0].planId
         })), [t]),
-        a = s.useMemo(() => new Set(t.filter(P).map(e => {
+        a = s.useMemo(() => new Set(t.filter(L).map(e => {
             let {
                 skuId: t
             } = e;

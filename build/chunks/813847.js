@@ -1,13 +1,13 @@
 /** chunk id: 813847 params = (module,exports,require) **/
 n.d(t, {
-    e: () => a
+    e: () => o
 });
 var r = n(64700),
     i = n(568065),
     l = n(136708),
     s = n(985018);
 
-function a(e, t, n) {
+function o(e, t, n) {
     return r.useMemo(() => t.sourceEntitlement?.ends_at != null ? {
         type: "expiring",
         expiringAt: t.sourceEntitlement.ends_at

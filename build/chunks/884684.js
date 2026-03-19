@@ -6,42 +6,42 @@ var r = n(64700),
     i = n(512750),
     l = n(311907),
     s = n(645619),
-    a = n(568065);
-let o = {
+    o = n(568065);
+let a = {
         guildTagsBadgePacks: [i.tv, i.OJ, i.Ht, i.jF]
     },
-    d = Object.entries(o).reduce((e, t) => {
+    u = Object.entries(a).reduce((e, t) => {
         let [n, r] = t;
         for (let t of r) e[t] = n;
         return e
     }, {}),
-    u = [a.o9.LEVEL, a.o9.PERK];
+    d = [o.o9.LEVEL, o.o9.PERK];
 
 function c(e, t) {
     let n = (0, l.bG)([s.A], () => s.A.getStateForGuild(e));
-    return r.useMemo(() => u.reduce((e, r) => {
+    return r.useMemo(() => d.reduce((e, r) => {
         let l = n?.powerupCatalog[r];
         if (null == l) return e;
         let s = function(e, t, n) {
             let r = [],
                 l = t.reduce((e, t) => {
-                    if (t.type !== a.o9.PERK) return e;
-                    let n = d[t.skuId];
+                    if (t.type !== o.o9.PERK) return e;
+                    let n = u[t.skuId];
                     return null == n || (e[n] ??= [], e[n].push(t)), e
                 }, {});
             for (let e of t) {
-                if (e.type === a.o9.LEVEL) {
+                if (e.type === o.o9.LEVEL) {
                     r.push({
                         type: "singleLevel",
                         powerup: e
                     });
                     continue
                 }
-                let t = d[e.skuId];
+                let t = u[e.skuId];
                 if (null != t) {
                     let e = l[t];
                     if (void 0 !== e) {
-                        let n = o[t];
+                        let n = a[t];
                         e.sort((e, t) => n.indexOf(e.skuId) - n.indexOf(t.skuId)), r.push({
                             type: "multiPerk",
                             group: t,
@@ -55,7 +55,7 @@ function c(e, t) {
                     powerup: e
                 })
             }
-            return n && e === a.o9.PERK && r.unshift({
+            return n && e === o.o9.PERK && r.unshift({
                     type: "gameServer"
                 }),
                 function(e) {

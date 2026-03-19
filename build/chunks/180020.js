@@ -38,11 +38,11 @@ function S(e) {
             analyticsLocations: f,
             guildId: n
         })
-    }, [f, y, n]), P = (0, s.useCallback)(() => {
+    }, [f, y, n]), L = (0, s.useCallback)(() => {
         (0, r.dM)(null), _.default.track(x.HAw.DISPLAY_NAME_STYLES_REMOVED)
-    }, []), L = (0, s.useCallback)(() => {
+    }, []), D = (0, s.useCallback)(() => {
         (0, u.mZ)(null)
-    }, []), D = void 0 !== I || (null != n ? null != N : null != b);
+    }, []), P = void 0 !== I || (null != n ? null != N : null != b);
     return (0, i.jsx)(A.A, {
         title: p.intl.string(T.default["86GtGH"]),
         titleIcon: R ? (0, i.jsx)(a.LpS, {
@@ -59,16 +59,16 @@ function S(e) {
                 size: "sm",
                 text: p.intl.string(T.default.vJqrIg),
                 onClick: O
-            }), null == n && D && (0, i.jsx)(a.Button, {
+            }), null == n && P && (0, i.jsx)(a.Button, {
                 variant: "secondary",
                 size: "sm",
                 text: p.intl.string(T.default.ymq8WQ),
-                onClick: P
+                onClick: L
             }), null != n && null != (void 0 !== I ? I : N) && (0, i.jsx)(a.Button, {
                 variant: "secondary",
                 size: "sm",
                 text: p.intl.string(T.default["j/KRxc"]),
-                onClick: L
+                onClick: D
             })]
         })
     })

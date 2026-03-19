@@ -39,7 +39,7 @@ function j(e) {
             invite_code: t.code,
             location: "accept_invite_modal_redesign"
         }), D(!y)
-    }, [i.id, t.code, y]), b = (0, m.Sn)();
+    }, [i.id, t.code, y]), L = (0, m.Sn)();
     return (0, l.jsxs)("div", {
         className: j,
         children: [null != I ? (0, l.jsx)("div", {
@@ -48,7 +48,7 @@ function j(e) {
                 type: "critical",
                 children: I
             })
-        }) : null, b ? (0, l.jsx)(c.A, {
+        }) : null, L ? (0, l.jsx)(c.A, {
             className: A.sX
         }) : null, (0, l.jsxs)(s.ButtonGroup, {
             fullWidthContainer: !0,
@@ -58,14 +58,14 @@ function j(e) {
                 onClick: f,
                 loading: v,
                 variant: "primary",
-                disabled: b,
-                text: b ? p.intl.string(p.t.ZNCziL) : C,
-                icon: b || null == E ? void 0 : () => (0, l.jsx)(r.A, {
+                disabled: L,
+                text: L ? p.intl.string(p.t.ZNCziL) : C,
+                icon: L || null == E ? void 0 : () => (0, l.jsx)(r.A, {
                     "aria-hidden": !0,
                     size: s._3J.SIZE_16,
                     user: E
                 })
-            }), b ? null : (0, l.jsx)(s.YNO, {
+            }), L ? null : (0, l.jsx)(s.YNO, {
                 targetElementRef: N,
                 animation: s.YNO.Animation.NONE,
                 position: "top",

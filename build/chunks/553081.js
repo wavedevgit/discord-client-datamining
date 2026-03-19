@@ -31,9 +31,9 @@ var i = n(627968),
     y = n(965591),
     R = n(495022),
     O = n(157839),
-    P = n(382694),
-    L = n(60508),
-    D = n(821158),
+    L = n(382694),
+    D = n(60508),
+    P = n(821158),
     M = n(235365),
     G = n(994763),
     U = n(788868),
@@ -112,7 +112,7 @@ let H = e => {
                             userDiscountOffer: ee,
                             discountedPrice: er
                         })
-                    }), n && (0, i.jsx)(P.A, {
+                    }), n && (0, i.jsx)(L.A, {
                         glowingPerkId: Z
                     }), !n && (0, i.jsx)(O.A, {
                         variant: N.cJ.WHATS_NEW,
@@ -128,7 +128,7 @@ let H = e => {
                         variant: N.cJ.PERKS_DISCOVERABILITY,
                         noBackground: !0,
                         leftAlignHeaders: !0,
-                        showAllPerksButton: (0, i.jsx)(D.A, {
+                        showAllPerksButton: (0, i.jsx)(P.A, {
                             setIsAllPerksVisible: ei,
                             previousComponent: N.A2.HOME
                         })
@@ -166,7 +166,7 @@ let H = e => {
                 churnDiscountOffer: ee,
                 discountedPrice: er
             })]
-        }), !n && (0, i.jsx)(L.A, {
+        }), !n && (0, i.jsx)(D.A, {
             isAllPerksVisible: en,
             setIsAllPerksVisible: ei,
             previousComponent: N.A2.HOME,

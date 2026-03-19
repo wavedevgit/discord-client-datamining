@@ -1,8 +1,8 @@
 /** chunk id: 674624 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => D,
-    jW: () => P,
-    w1: () => L
+    Ay: () => P,
+    jW: () => L,
+    w1: () => D
 });
 var i, s = n(627968),
     l = n(64700),
@@ -32,8 +32,8 @@ var i, s = n(627968),
     y = n(163635),
     R = n(345362),
     O = n(509442),
-    P = ((i = {}).BEST_OF_NITRO = "bestof", i.APPEARANCE_STYLE = "appearance", i.UPGRADES = "upgrades", i.VIP_EXTRAS = "vip", i);
-let L = [{
+    L = ((i = {}).BEST_OF_NITRO = "bestof", i.APPEARANCE_STYLE = "appearance", i.UPGRADES = "upgrades", i.VIP_EXTRAS = "vip", i);
+let D = [{
     id: "bestof",
     label: () => b.intl.string(b.t.q1u7nQ)
 }, {
@@ -47,24 +47,24 @@ let L = [{
     label: () => b.intl.string(b.t.DjEAcv)
 }];
 
-function D() {
+function P() {
     let e = (0, d.DP)(),
         t = (0, p.Lh)(),
         n = (0, T.N)(t)?.standard ?? null,
         {
             analyticsLocations: i
         } = (0, u.Ay)(c.A.PREMIUM_MARKETING_PERK_CARD),
-        P = (0, m.A)({
+        L = (0, m.A)({
             scrollPosition: f._F.TRY_IT_OUT,
             analyticsLocations: i
         }),
-        L = (0, l.useCallback)(() => {
+        D = (0, l.useCallback)(() => {
             let e = (0, x.Ci)("openClientThemes");
             (0, h.openUserSettings)(e ? A.X.DISPLAY_THEME_CATEGORY : A.X.APPEARANCE_PANEL, {
                 analyticsLocations: i
             })
         }, [i]),
-        D = (0, l.useCallback)(() => {
+        P = (0, l.useCallback)(() => {
             (0, h.openUserSettings)(A.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
                 analyticsLocations: i
             })
@@ -104,7 +104,7 @@ function D() {
             }),
             subscriptionRequired: !0,
             ctaText: b.intl.string(b.t.jVcuVY),
-            onCtaClick: D,
+            onCtaClick: P,
             primaryAsset: (0, s.jsx)(a.CIt, {
                 alt: "",
                 ariaHidden: !0
@@ -115,7 +115,7 @@ function D() {
             title: b.intl.string(b.t.xDRab3),
             description: b.intl.string(b.t.yn6fWA),
             ctaText: b.intl.string(b.t.jVcuVY),
-            onCtaClick: P,
+            onCtaClick: L,
             primaryAsset: (0, s.jsx)(a.R$P, {
                 alt: "",
                 ariaHidden: !0
@@ -137,7 +137,7 @@ function D() {
                 themeCount: 20
             }),
             ctaText: b.intl.string(b.t.jVcuVY),
-            onCtaClick: L,
+            onCtaClick: D,
             primaryAsset: O.A,
             categories: ["bestof", "appearance"]
         }, {
@@ -258,6 +258,6 @@ function D() {
                 ariaHidden: !0
             }),
             categories: ["vip"]
-        }], [e, n, P, L, D, M, G, U, k]);
+        }], [e, n, L, D, P, M, G, U, k]);
     return (0, l.useMemo)(() => B.filter(e => null != e && !w.includes(e.id)), [B, w])
 }

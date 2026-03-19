@@ -12,10 +12,10 @@ function s(e) {
         notificationConfig: n
     } = (0, l.A)(e, "GuildPowerupNotificationContainer"), s = [];
     t && null != n && s.push(r.M.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION);
-    let [a, o] = (0, i.ww)(s, e);
+    let [o, a] = (0, i.ww)(s, e);
     return {
-        shouldShow: null != a && a === r.M.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION,
+        shouldShow: null != o && o === r.M.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION,
         notificationConfig: n,
-        markAsDismissed: o
+        markAsDismissed: a
     }
 }

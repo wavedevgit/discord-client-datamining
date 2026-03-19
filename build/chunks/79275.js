@@ -1,40 +1,40 @@
 /** chunk id: 79275 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => f
 }), n(321073);
 var r = n(627968),
     i = n(64700),
     l = n(512750),
     s = n(311907),
-    a = n(554146),
-    o = n(192308),
-    d = n(342494),
-    u = n(932001),
+    o = n(554146),
+    a = n(192308),
+    u = n(342494),
+    d = n(932001),
     c = n(186111),
-    m = n(89305),
-    p = n(49999),
+    p = n(89305),
+    m = n(49999),
     _ = n(136708),
-    x = n(985018);
+    A = n(985018);
 
-function A(e) {
+function f(e) {
     let {
         powerup: t,
         targetRef: n,
-        isCardVisible: A
-    } = e, f = (0, s.bG)([c.A], () => c.A.hasLayers()), g = (0, o.useHasAnyModalOpen)(), v = t.skuId === l.FB ? {
-        title: x.intl.string(_.default.YWo6VL),
-        body: x.intl.string(_.default.gXVvKc),
-        dismissibleContentType: a.M.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER
+        isCardVisible: f
+    } = e, g = (0, s.bG)([c.A], () => c.A.hasLayers()), x = (0, a.useHasAnyModalOpen)(), v = t.skuId === l.FB ? {
+        title: A.intl.string(_.default.YWo6VL),
+        body: A.intl.string(_.default.gXVvKc),
+        dismissibleContentType: o.M.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER
     } : null, h = [];
-    null == v || f || !A || g || h.push(v.dismissibleContentType);
-    let [b, j] = (0, u.kn)(h), E = i.useCallback(() => {
-        j(p.i.INDIRECT_ACTION)
-    }, [j]);
-    return ((0, m.A)({
+    null == v || g || !f || x || h.push(v.dismissibleContentType);
+    let [E, b] = (0, d.kn)(h), I = i.useCallback(() => {
+        b(m.i.INDIRECT_ACTION)
+    }, [b]);
+    return ((0, p.A)({
         targetRef: n,
-        onShouldClose: E,
-        enabled: null != b
-    }), null == v || null == b) ? null : (0, r.jsx)(d.AM, {
+        onShouldClose: I,
+        enabled: null != E
+    }), null == v || null == E) ? null : (0, r.jsx)(u.AM, {
         targetElementRef: n,
         shouldShow: !0,
         position: "right",
@@ -46,7 +46,7 @@ function A(e) {
         title: v.title,
         body: v.body,
         onRequestClose: () => {
-            j(p.i.USER_DISMISS)
+            b(m.i.USER_DISMISS)
         }
     })
 }

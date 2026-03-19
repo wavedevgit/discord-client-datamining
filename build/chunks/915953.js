@@ -31,9 +31,9 @@ function d(e) {
         fieldLayout: f,
         usePersistentBadge: b,
         getDismissibleBadges: N
-    } = t, [I] = s.useState(() => d()), v = h?.(), j = m(), y = g?.(), R = A?.(), O = x?.(), P = _?.(), L = b?.(), D = N?.(), M = (0, a.A)({
-        persistentBadge: L,
-        dismissibleBadges: D
+    } = t, [I] = s.useState(() => d()), v = h?.(), j = m(), y = g?.(), R = A?.(), O = x?.(), L = _?.(), D = b?.(), P = N?.(), M = (0, a.A)({
+        persistentBadge: D,
+        dismissibleBadges: P
     }), G = (0, r.q)(t);
     return (0, i.jsxs)(o.L, {
         children: [(0, i.jsx)(l.Apm, {
@@ -44,7 +44,7 @@ function d(e) {
             value: v,
             minValue: c,
             maxValue: u,
-            defaultValue: P,
+            defaultValue: L,
             onValueRender: p,
             asValueChanges: T,
             onValueChange: e => {

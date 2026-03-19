@@ -29,7 +29,7 @@ var i = n(627968),
 function I(e) {
     let {
         premiumSubscription: t
-    } = e, n = (0, l.bG)([x.A], () => x.A.boostSlots), I = s.useMemo(() => Object.values(n), [n]), v = (0, l.bG)([A.default], () => A.default.getCurrentUser()), j = h.Ay.isPremium(v, b.PremiumTypes.TIER_2), y = (0, l.bG)([m.A], () => m.A.affinities), R = (0, l.bG)([g.Ay], () => g.Ay.getFlattenedGuildIds()), O = y.length > 0 || R.length > 0, P = I.length > 0, L = s.useMemo(() => I.filter(e => null != e.premiumGuildSubscription), [I]), D = L.length > 0, M = I.length > L.length, G = (0, l.bG)([_.A], () => _.A.getCurrentUserAppliedBoosts()), {
+    } = e, n = (0, l.bG)([x.A], () => x.A.boostSlots), I = s.useMemo(() => Object.values(n), [n]), v = (0, l.bG)([A.default], () => A.default.getCurrentUser()), j = h.Ay.isPremium(v, b.PremiumTypes.TIER_2), y = (0, l.bG)([m.A], () => m.A.affinities), R = (0, l.bG)([g.Ay], () => g.Ay.getFlattenedGuildIds()), O = y.length > 0 || R.length > 0, L = I.length > 0, D = s.useMemo(() => I.filter(e => null != e.premiumGuildSubscription), [I]), P = D.length > 0, M = I.length > D.length, G = (0, l.bG)([_.A], () => _.A.getCurrentUserAppliedBoosts()), {
         fractionalState: U
     } = (0, a.A)({
         forceFetch: !0
@@ -39,12 +39,12 @@ function I(e) {
         children: [(0, i.jsx)(r.kb, {
             className: N.ek
         }), (0, i.jsx)(T.A, {
-            hasGuildBoostSlots: P,
-            hasAppliedGuildBoosts: D,
+            hasGuildBoostSlots: L,
+            hasAppliedGuildBoosts: P,
             hasBoostPerk: B,
             canAddBoosts: w
         }), H && (0, i.jsx)(C.A, {
-            hasAppliedGuildBoosts: D,
+            hasAppliedGuildBoosts: P,
             hasBoostPerk: B,
             hasGuildAffinitiesOrInGuild: O,
             subscriptionIsPausedOrPausePending: V
@@ -58,7 +58,7 @@ function I(e) {
             guildBoostSlots: I,
             fractionalPremiumState: U
         }), (0, i.jsx)(S.A, {
-            canAddBoosts: D && w,
+            canAddBoosts: P && w,
             canApplyBoosts: M
         }), (0, i.jsx)(c.A, {
             className: N.e4,

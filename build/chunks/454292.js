@@ -61,7 +61,7 @@ function O(e) {
     })
 }
 
-function P(e) {
+function L(e) {
     let {
         children: t
     } = e;
@@ -73,7 +73,7 @@ function P(e) {
     })
 }
 
-function L(e) {
+function D(e) {
     let {
         settings: {
             enabled: t,
@@ -101,7 +101,7 @@ function L(e) {
     })
 }
 
-function D(e) {
+function P(e) {
     let {
         settings: {
             enabled: t,
@@ -128,7 +128,7 @@ function D(e) {
                 color: o ? "text-muted" : "text-strong",
                 className: b.KF,
                 children: f.intl.string(f.t.vd0D81)
-            }), (0, i.jsx)(P, {
+            }), (0, i.jsx)(L, {
                 children: f.intl.string(f.t.a18Sug)
             }), (0, i.jsx)(d.Apm, {
                 disabled: o,
@@ -148,7 +148,7 @@ function D(e) {
                 color: o ? "text-muted" : "text-strong",
                 className: b.KF,
                 children: f.intl.string(f.t.sPO3ij)
-            }), (0, i.jsx)(P, {
+            }), (0, i.jsx)(L, {
                 children: f.intl.string(f.t.xoldVn)
             }), (0, i.jsx)(d.Apm, {
                 disabled: o,
@@ -223,7 +223,7 @@ function M(e) {
                 color: r ? "text-muted" : "text-strong",
                 className: b.KF,
                 children: f.intl.string(f.t.L0oQuh)
-            }), (0, i.jsx)(P, {
+            }), (0, i.jsx)(L, {
                 children: f.intl.string(f.t["/OOFpL"])
             }), (0, i.jsx)(d.Apm, {
                 disabled: r,
@@ -267,7 +267,7 @@ function G(e) {
                 color: u ? "text-muted" : "text-strong",
                 className: b.KF,
                 children: f.intl.string(f.t.UxnnC4)
-            }), (0, i.jsx)(P, {
+            }), (0, i.jsx)(L, {
                 children: f.intl.string(f.t.CEOEOb)
             }), (0, i.jsx)(d.Apm, {
                 disabled: u,
@@ -406,7 +406,7 @@ function w(e) {
     };
     return s.useEffect(() => (window.addEventListener("mousemove", m), () => window.removeEventListener("mousemove", m)), []), (0, i.jsxs)(d.BJc, {
         gap: 24,
-        children: [(0, i.jsx)(L, {
+        children: [(0, i.jsx)(D, {
             settings: l,
             updateSettings: u
         }), (0, i.jsx)(k, {
@@ -417,7 +417,7 @@ function w(e) {
         }), (0, i.jsx)(G, {
             settings: l,
             updateSettings: u
-        }), (0, i.jsx)(D, {
+        }), (0, i.jsx)(P, {
             settings: l,
             updateSettings: u
         }), (0, i.jsx)(U, {

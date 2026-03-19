@@ -31,9 +31,9 @@ var i = n(627968),
     y = n(901125),
     R = n(729230),
     O = n(227273),
-    P = n(244778),
-    L = n(788868),
-    D = n(652215),
+    L = n(244778),
+    D = n(788868),
+    P = n(652215),
     M = n(985018),
     G = n(443137),
     U = n(552559),
@@ -60,7 +60,7 @@ let V = e => {
             K = (0, o.bG)([h.A], () => h.A.getPremiumTypeSubscription()),
             Z = null != K ? (0, T.EL)(K) : null,
             q = null != Z ? T.Ay.getSkuIdForPlan(Z.planId) : null,
-            J = null !== q && q !== L.pe.TIER_2 ? L.pe.TIER_2 : null,
+            J = null !== q && q !== D.pe.TIER_2 ? D.pe.TIER_2 : null,
             Q = (0, C.V)(),
             $ = Q?.subscription_trial?.sku_id,
             ee = (0, S.ar)(),
@@ -87,15 +87,15 @@ let V = e => {
                     innerRef: e,
                     tier0CTAButton: (0, i.jsx)(I.A, {
                         showIcon: !1,
-                        subscriptionTier: L.pe.TIER_0,
+                        subscriptionTier: D.pe.TIER_0,
                         className: G.Ph,
                         look: u.pR.OUTLINED,
                         color: u.XD.WHITE,
                         buttonShineClassName: G.Qr
                     }),
-                    tier2CTAButton: $ === L.pe.TIER_0 ? (0, i.jsx)(I.A, {
+                    tier2CTAButton: $ === D.pe.TIER_0 ? (0, i.jsx)(I.A, {
                         showIcon: !1,
-                        subscriptionTier: L.pe.TIER_2,
+                        subscriptionTier: D.pe.TIER_2,
                         className: G.Ph,
                         look: u.pR.OUTLINED,
                         color: u.XD.WHITE,
@@ -103,7 +103,7 @@ let V = e => {
                     }) : (0, i.jsx)(I.A, {
                         color: u.XD.BRAND_INVERTED,
                         showIcon: !1,
-                        subscriptionTier: L.pe.TIER_2,
+                        subscriptionTier: D.pe.TIER_2,
                         className: G.Ph,
                         hasActivePromotion: en,
                         textOptions: {
@@ -152,7 +152,7 @@ let V = e => {
                 className: U.B_
             }), (0, i.jsx)("div", {
                 className: U.aC,
-                children: (0, i.jsx)(P.A, {
+                children: (0, i.jsx)(L.A, {
                     className: U.JQ,
                     hideCTAs: !0
                 })
@@ -166,7 +166,7 @@ let V = e => {
             }), (0, i.jsx)(d.L, {
                 innerRef: n,
                 onChange: e => {
-                    e && !Y && (p.default.track(D.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                    e && !Y && (p.default.track(P.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                         location_stack: es
                     }), z(!0))
                 },

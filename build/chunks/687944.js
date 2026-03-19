@@ -124,7 +124,7 @@ let N = function(e) {
             })
         },
         O = _.Ay.getPlanIdFromInvoice(m, g),
-        P = (0, A.ux)(j?.expires_at);
+        L = (0, A.ux)(j?.expires_at);
     return (0, d.m1)(O) ? null : (0, i.jsx)("div", {
         className: E.S6,
         children: (0, i.jsx)(l.hLv, {
@@ -142,7 +142,7 @@ let N = function(e) {
                         className: E.tD,
                         variant: "text-sm/medium",
                         color: "text-strong",
-                        children: null != j && P
+                        children: null != j && L
                     })]
                 }), (0, i.jsx)("div", {
                     className: E.T

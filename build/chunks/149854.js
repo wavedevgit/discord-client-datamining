@@ -1,58 +1,58 @@
 /** chunk id: 149854 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => g
 });
 var r = n(627968),
     i = n(64700),
     l = n(512750),
     s = n(397927),
-    a = n(840120),
-    o = n(998418),
-    d = n(890942),
-    u = n(722523),
+    o = n(840120),
+    a = n(998418),
+    u = n(890942),
+    d = n(722523),
     c = n(490557),
-    m = n(634925),
-    p = n(744201),
+    p = n(634925),
+    m = n(744201),
     _ = n(867060),
-    x = n(568065),
-    A = n(772574);
+    A = n(568065),
+    f = n(772574);
 
-function f(e) {
+function g(e) {
     let {
         guildId: t,
         powerup: n
-    } = e, [f, g] = i.useState(void 0);
-    (0, _.A)(f);
-    let [v, h] = i.useState(!1), b = (0, o.Ay)(t, n).type !== x.b_.INACTIVE, {
-        textColor: j
-    } = (0, p.A)(b), E = (0, a.M5)(t, "GuildPowerupPerkCard"), I = n.skuId === l.FB;
-    return (0, r.jsxs)(m.h, {
+    } = e, [g, x] = i.useState(void 0);
+    (0, _.A)(g);
+    let [v, h] = i.useState(!1), E = (0, a.Ay)(t, n).type !== A.b_.INACTIVE, {
+        textColor: b
+    } = (0, m.A)(E), I = (0, o.M5)(t, "GuildPowerupPerkCard"), j = n.skuId === l.FB;
+    return (0, r.jsxs)(p.h, {
         onHover: e => h(e),
         guildId: t,
         powerup: n,
-        badge: I && E ? "beta" : void 0,
+        badge: j && I ? "beta" : void 0,
         children: [(0, r.jsx)(c.l, {
-            className: A.Sl,
+            className: f.Sl,
             powerup: n,
             isHovering: v
-        }), (0, r.jsx)(d.Ft, {
+        }), (0, r.jsx)(u.Ft, {
             title: n.title,
-            textColor: j,
-            footer: (0, r.jsx)(m.A, {
+            textColor: b,
+            footer: (0, r.jsx)(p.A, {
                 guildId: t,
                 powerup: n
             }),
             children: (0, r.jsx)(s.Text, {
-                className: A.h_,
-                color: j,
+                className: f.h_,
+                color: b,
                 variant: "text-sm/medium",
                 children: n.description
             })
-        }), (0, r.jsx)(d.kd, {
-            children: (0, r.jsx)(u.Ay, {
+        }), (0, r.jsx)(u.kd, {
+            children: (0, r.jsx)(d.Ay, {
                 guildId: t,
                 powerup: n,
-                onError: g
+                onError: x
             })
         })]
     })

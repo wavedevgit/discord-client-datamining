@@ -22,12 +22,12 @@ function x() {
             title: g.intl.string(g.t.GYpoAq),
             component: c.Z,
             orientation: "vertical",
-            setting: _.H.SEXUALLY_EXPLICIT_MEDIA_REDACTION
+            setting: _.Ho.SEXUALLY_EXPLICIT_MEDIA_REDACTION
         }, {
             title: g.intl.string(g.t["16/3Bi"]),
             component: u.q,
             orientation: "vertical",
-            setting: _.H.GORE_MEDIA_REDACTION
+            setting: _.Ho.GORE_MEDIA_REDACTION
         }], []),
         n = s.useCallback(e => {
             l.A.setSection(m.nc_.CONTENT_AND_SOCIAL, e)

@@ -31,9 +31,9 @@ var i = n(627968),
     y = n(985018),
     R = n(355313),
     O = n(998663),
-    P = n(817577),
-    L = n(419455),
-    D = n(288604),
+    L = n(817577),
+    D = n(419455),
+    P = n(288604),
     M = n(893160),
     G = n(509442);
 
@@ -111,7 +111,7 @@ function U() {
                     })]
                 }),
                 pillText: y.intl.string(y.t.oW0eUd),
-                primaryAsset: P,
+                primaryAsset: L,
                 ...U ? {
                     ctaIcon: r.tvc,
                     ctaIconPosition: "start"
@@ -140,7 +140,7 @@ function U() {
                 title: y.intl.string(y.t.OLtTrt),
                 description: y.intl.string(y.t["di/pXR"]),
                 onCtaClick: B,
-                primaryAsset: L.A,
+                primaryAsset: D.A,
                 ctaText: y.intl.string(y.t.jVcuVY),
                 pillText: y.intl.string(y.t.y2b7CA)
             }, {
@@ -168,7 +168,7 @@ function U() {
                 id: b.CUSTOM_APP_ICONS_CARD_ID,
                 title: y.intl.string(y.t["GU+wqh"]),
                 description: y.intl.string(y.t["1uPk1Z"]),
-                primaryAsset: D.A,
+                primaryAsset: P.A,
                 ctaText: y.intl.string(y.t.y9TxXV),
                 onCtaClick: F
             }],

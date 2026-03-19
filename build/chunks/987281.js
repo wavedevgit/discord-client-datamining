@@ -11,7 +11,7 @@ var i = n(64700),
     o = n(360619),
     d = n(531525);
 let c = (0, l.D)(() => ({
-    searchResults: d.R,
+    searchResults: d.RH,
     hasSearchResults: !1
 }));
 

@@ -1,7 +1,7 @@
 /** chunk id: 123857 params = (module,exports,require) **/
 n.d(t, {
     Ix: () => k,
-    J3: () => L,
+    J3: () => D,
     Q3: () => w,
     mx: () => B
 });
@@ -34,15 +34,15 @@ var i = n(627968),
     y = n(49999),
     R = n(788868),
     O = n(985018),
-    P = n(56783);
-let L = () => {
+    L = n(56783);
+let D = () => {
     (0, h.Dr)(a.M.CLIENT_THEMES_SPARKLE_PREVIEW, {
         dismissAction: y.i.PRIMARY,
         forceTrack: !0
     }), (0, x.nf)(x.HP.CLIENT_THEMES), (0, v.default)()
 };
 
-function D() {
+function P() {
     let e = (0, p.O)(),
         t = (0, S.U9)(e, R.pe.TIER_2) ? O.intl.formatToPlainString(O.t.bkQ4bH, {
             percent: e?.discount.amount
@@ -62,12 +62,12 @@ function M() {
     let e = (0, l.bG)([m.A], () => m.A.isPreview),
         t = (0, T.V)()?.subscription_trial?.sku_id === R.pe.TIER_2;
     return !e || t ? null : (0, i.jsxs)("div", {
-        className: P.gY,
+        className: L.gY,
         children: [(0, i.jsx)(o.Button, {
             variant: "secondary",
             text: O.intl.string(O.t["E+COuA"]),
-            onClick: L
-        }), (0, i.jsx)(D, {})]
+            onClick: D
+        }), (0, i.jsx)(P, {})]
     })
 }
 
@@ -83,7 +83,7 @@ function G(e) {
             location_stack: a
         })
     }, [n, a]), n) ? (0, i.jsx)("div", {
-        className: P._$,
+        className: L._$,
         children: t
     }) : t
 }
@@ -93,15 +93,15 @@ function U() {
         t = (0, T.V)()?.subscription_trial?.sku_id === R.pe.TIER_2;
     return e && t ? (0, i.jsxs)("div", {
         children: [(0, i.jsx)("div", {
-            className: P.c7,
+            className: L.c7,
             children: (0, i.jsx)(o.Button, {
                 variant: "secondary",
                 fullWidth: !0,
                 text: O.intl.string(O.t["E+COuA"]),
-                onClick: () => L()
+                onClick: () => D()
             })
         }), (0, i.jsx)("div", {
-            className: P.BU
+            className: L.BU
         }), (0, i.jsx)(C.Ay, {
             type: R.e.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL,
             subscriptionTier: R.pe.TIER_2
@@ -112,7 +112,7 @@ let k = () => (0, i.jsx)("div", {
     children: (0, i.jsxs)(A.Ay, {
         type: A.v0.SETTINGS,
         children: [(0, i.jsx)(A.Ay.Basic, {
-            className: P.a6
+            className: L.a6
         }), (0, i.jsx)(V, {}), (0, i.jsx)(g.A, {}), (0, i.jsxs)(G, {
             children: [(0, i.jsx)(A.Ay.Gradient, {
                 disabled: !1,
@@ -150,7 +150,7 @@ function V() {
 let w = () => (0, l.bG)([m.A], () => m.A.isPreview) ? null : (0, i.jsx)(o.Button, {
     variant: "primary",
     text: O.intl.string(O.t.qYXrkX),
-    onClick: L
+    onClick: D
 });
 
 function B(e) {
@@ -163,10 +163,10 @@ function B(e) {
             children: [(0, i.jsx)(A.ew, {
                 isCoachmark: !1,
                 renderCTAButtons: () => (0, i.jsx)(M, {}),
-                headingClassName: P.EK,
+                headingClassName: L.EK,
                 titleTextVariant: "text-md/semibold",
-                titleClassName: P.cI,
-                titleIconClassName: P.Hq
+                titleClassName: L.cI,
+                titleIconClassName: L.Hq
             }), (0, i.jsx)(o.BJc, {
                 direction: "horizontal",
                 wrap: !0,

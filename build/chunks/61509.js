@@ -31,9 +31,9 @@ var i = n(627968),
     y = n(22007),
     R = n(95035),
     O = n(337095),
-    P = n(871123),
-    L = n(510022),
-    D = n(378058),
+    L = n(871123),
+    D = n(510022),
+    P = n(378058),
     M = n(148355),
     G = n(780964),
     U = n(12901),
@@ -340,7 +340,7 @@ class eg extends s.PureComponent {
             payment: e,
             hasLinkedToApplication: t
         } = this.props;
-        return (0, P.bF)(e.sku) && e.status === ee.__0.COMPLETED ? null != e.entitlements && e.entitlements.some(e => e.isFulfilled()) ? (0, i.jsx)("span", {
+        return (0, L.bF)(e.sku) && e.status === ee.__0.COMPLETED ? null != e.entitlements && e.entitlements.some(e => e.isFulfilled()) ? (0, i.jsx)("span", {
             className: es.gD,
             children: ei.intl.string(ei.t.Osji1u)
         }) : e.isGift ? null != e.entitlements && e.entitlements.some(e => null != e.gifterId) ? (0, i.jsx)("span", {
@@ -513,7 +513,7 @@ class eg extends s.PureComponent {
                             sku_id: t.sku.id,
                             application_id: l.id,
                             location_stack: r
-                        }), (0, L.n)({
+                        }), (0, D.n)({
                             sku: t.sku,
                             application: l,
                             analyticsLocations: r
@@ -527,7 +527,7 @@ class eg extends s.PureComponent {
         let {
             payment: e
         } = this.props;
-        if ((0, P.bF)(e.sku)) return this.renderAdditionalGameItemDetails()
+        if ((0, L.bF)(e.sku)) return this.renderAdditionalGameItemDetails()
     }
     renderRefundDetails() {
         let e, {
@@ -652,7 +652,7 @@ class eg extends s.PureComponent {
             })
         } else if (null != _)
             if (t = l.isGuildProductPurchase && l.isSoftDeletedProduct ? ei.intl.string(ei.t.O7uLmw) : _.name, null != d) {
-                let t = (0, D.Id)(d);
+                let t = (0, P.Id)(d);
                 e = (0, i.jsx)(M.A, {
                     disableAnimation: !u,
                     isInteracting: u,
@@ -794,7 +794,7 @@ function eA(e) {
         paymentSources: F.A.paymentSources
     })), {
         hasAlreadyLinked: A
-    } = (0, T.RD)((0, P.bF)(t.sku) ? m : void 0), x = (0, _.bG)([E.A], () => null != d ? E.A.getApplication(d) : null);
+    } = (0, T.RD)((0, L.bF)(t.sku) ? m : void 0), x = (0, _.bG)([E.A], () => null != d ? E.A.getApplication(d) : null);
     s.useEffect(() => {
         c && null != d && (0, O.TA)(d)
     }, [d, c]);

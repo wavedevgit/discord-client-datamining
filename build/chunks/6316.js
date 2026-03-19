@@ -1,13 +1,13 @@
 /** chunk id: 6316 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => o
 });
 var r = n(64700),
     i = n(311907),
     l = n(904629),
     s = n(522055);
 
-function a(e) {
+function o(e) {
     let t = (0, i.bG)([s.A], () => s.A.getStateForGuild(e));
     return r.useMemo(() => {
         let e = Object.values(t?.entitlements ?? {});

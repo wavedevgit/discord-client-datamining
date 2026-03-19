@@ -32,7 +32,7 @@ var i = n(627968),
     R = n(985018),
     O = n(673977);
 
-function P(e) {
+function L(e) {
     let {
         premiumSubscription: t,
         fractionalPremiumInfo: n,
@@ -77,7 +77,7 @@ function P(e) {
         })
     })
 }
-async function L(e, t, n, i) {
+async function D(e, t, n, i) {
     let s, l, r = null != i ? i : (s = Object.values(S.A.boostSlots), null != (l = a().sortBy(s.filter(e => !(0, b.I5)(e)), e => [null != e.premiumGuildSubscription, null != e.cooldownEndsAt ? new Date(e.cooldownEndsAt) : null])[0]) ? l.id : null);
     if (null == r) throw Error("No slot to cancel");
     let o = (0, N.aE)(e, t);
@@ -89,7 +89,7 @@ async function L(e, t, n, i) {
     }, (0, N.UC)(o, e.currency, e.paymentSourceId), n)
 }
 
-function D(e) {
+function P(e) {
     let {
         premiumSubscription: t,
         guildBoostSlotId: n,
@@ -105,14 +105,14 @@ function D(e) {
                 [], !0
             ]
         }
-    }, [t]), P = s.useRef(c);
+    }, [t]), L = s.useRef(c);
     s.useEffect(() => {
-        P.current = c
+        L.current = c
     }), s.useEffect(() => {
-        y && P.current()
+        y && L.current()
     }, [y]);
     let {
-        premiumSubscriptionPlan: D,
+        premiumSubscriptionPlan: P,
         premiumGuildPlan: M
     } = (0, o.cf)([C.A], () => {
         let e = C.A.get(t.planId);
@@ -136,7 +136,7 @@ function D(e) {
         analyticsLocations: G,
         analyticsLocation: _.A.GUILD_BOOST_SLOT_CANCELLATION_MODAL_RENEWAL_INVOICE_PREVIEW
     });
-    if (null == V || null == D || null == M || null == U) return (0, i.jsx)(d.y$y, {});
+    if (null == V || null == P || null == M || null == U) return (0, i.jsx)(d.y$y, {});
     let w = t.items.some(e => {
             let {
                 planId: t
@@ -158,7 +158,7 @@ function D(e) {
         {
             interval: F,
             intervalCount: Y
-        } = D,
+        } = P,
         z = R.intl.format(R.t["0W23cu"], {
             endDate: V.subscriptionPeriodStart
         });
@@ -207,7 +207,7 @@ function D(e) {
                 disabled: u,
                 onClick: async () => {
                     try {
-                        g(!0), f(null), await L(t, b, G, n), r()
+                        g(!0), f(null), await D(t, b, G, n), r()
                     } catch (e) {
                         f(R.intl.string(R.t["5mlOCW"])), g(!1)
                     }
@@ -272,7 +272,7 @@ function G(e) {
     });
     else switch (A) {
         case 1:
-            t = (0, i.jsx)(P, {
+            t = (0, i.jsx)(L, {
                 premiumSubscription: r,
                 fractionalPremiumInfo: u,
                 isInventory: null == n.premiumGuildSubscription,
@@ -286,7 +286,7 @@ function G(e) {
                 "data-migration-pending": !0,
                 transitionState: l,
                 parentComponent: "GuildBoostSlotCancellationModal",
-                children: (0, i.jsx)(D, {
+                children: (0, i.jsx)(P, {
                     premiumSubscription: r,
                     guildBoostSlotId: n.id,
                     fractionalPremiumInfo: u,

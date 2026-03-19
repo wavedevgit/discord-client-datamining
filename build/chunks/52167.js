@@ -32,9 +32,9 @@ var u = n(355097),
     y = n(629139),
     R = n(753563),
     O = n(584378),
-    P = n(747918),
-    L = n(330290),
-    D = n(252261),
+    L = n(747918),
+    D = n(330290),
+    P = n(252261),
     M = n(106731);
 let G = (e, t, n) => (0, s.Mw)(e) ? t : n,
     U = e => {
@@ -113,7 +113,7 @@ let G = (e, t, n) => (0, s.Mw)(e) ? t : n,
             moreGuilds: {
                 title: _.intl.string(_.t.Bv8Pfk),
                 description: _.intl.string(_.t.JMfaTU),
-                imageSource: G(s, x, P),
+                imageSource: G(s, x, L),
                 imageClassName: t.moreGuildsImage
             },
             moreGuildsAlt: {
@@ -131,25 +131,25 @@ let G = (e, t, n) => (0, s.Mw)(e) ? t : n,
             stickers: {
                 title: _.intl.string(_.t["1c+xwT"]),
                 description: _.intl.string(_.t.hJG8ZN),
-                imageSource: G(s, C, L),
+                imageSource: G(s, C, D),
                 imageClassName: t.stickersImage
             },
             stickersBurst: {
                 title: _.intl.string(_.t.tzdIwI),
                 description: _.intl.string(_.t.hJG8ZN),
-                imageSource: G(s, C, L),
+                imageSource: G(s, C, D),
                 imageClassName: t.stickersImage
             },
             stickersPremiumPerk: {
                 title: _.intl.string(_.t.tzdIwI),
                 description: _.intl.string(_.t.hJG8ZN),
-                imageSource: G(s, C, L),
+                imageSource: G(s, C, D),
                 imageClassName: t.stickersImage
             },
             streaming: {
                 title: _.intl.string(_.t.RSXQYO),
                 description: _.intl.string(_.t.ymCPxp),
-                imageSource: D,
+                imageSource: P,
                 imageClassName: t.streamingImage
             },
             superReactions: {

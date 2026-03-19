@@ -27,9 +27,9 @@ function x(e) {
         colorPickerMiddle: T,
         colorPickerFooter: E,
         showEyeDropper: S
-    } = e, C = s.useRef(null), f = (0, c.rdh)(d.A.colors.BACKGROUND_BASE_LOW).hex(), b = d.A.colors.BACKGROUND_MOD_MUTED.css, N = (0, _.sN)(l), I = (0, o.Hl)(l), v = I === f ? b : I, j = N ? d.A.unsafe_rawColors.WHITE.css : d.A.unsafe_rawColors.PRIMARY_530.css, y = (0, u.A)(T), R = (0, u.A)(E), [O, P] = s.useState((0, r.A)());
+    } = e, C = s.useRef(null), f = (0, c.rdh)(d.A.colors.BACKGROUND_BASE_LOW).hex(), b = d.A.colors.BACKGROUND_MOD_MUTED.css, N = (0, _.sN)(l), I = (0, o.Hl)(l), v = I === f ? b : I, j = N ? d.A.unsafe_rawColors.WHITE.css : d.A.unsafe_rawColors.PRIMARY_530.css, y = (0, u.A)(T), R = (0, u.A)(E), [O, L] = s.useState((0, r.A)());
     return s.useEffect(() => {
-        (y !== T || R !== E) && P((0, r.A)())
+        (y !== T || R !== E) && L((0, r.A)())
     }, [E, T, R, y]), (0, i.jsx)(c.YNO, {
         targetElementRef: C,
         positionKey: O,

@@ -1,15 +1,15 @@
 /** chunk id: 960736 params = (module,exports,require) **/
 n.d(t, {
-    N9: () => v,
+    N9: () => I,
     Z1: () => A,
     dR: () => u,
-    jJ: () => p,
+    jJ: () => g,
     lD: () => _,
     p9: () => f,
     qO: () => c,
-    tJ: () => I,
+    tJ: () => m,
     uE: () => S,
-    xD: () => g,
+    xD: () => p,
     xP: () => s
 });
 var i = n(353640),
@@ -87,11 +87,11 @@ let _ = (0, i.v)(e => ({
         return e.nickname !== d.nickname || e.dmsAllowed !== d.dmsAllowed || e.showActivity !== o(e.guildSize)
     },
     f = () => _.getState().inviteCode,
-    g = () => _.getState().guildId,
-    p = () => _.getState().touched,
+    p = () => _.getState().guildId,
+    g = () => _.getState().touched,
     A = () => _.getState().dmsAllowed,
-    I = () => _.getState().nickname,
-    v = () => _.getState().showActivity,
+    m = () => _.getState().nickname,
+    I = () => _.getState().showActivity,
     S = () => {
         let {
             nickname: e

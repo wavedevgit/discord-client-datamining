@@ -63,20 +63,20 @@ let E = e => {
             {
                 fractionalState: O
             } = (0, d.A)(),
-            P = (0, u.d)(),
-            L = _.A.useExperiment({
+            L = (0, u.d)(),
+            D = _.A.useExperiment({
                 location: "PremiumPerks"
             }).enabled,
-            D = (0, m.O9)(),
+            P = (0, m.O9)(),
             M = (0, p.vx)({
                 perksCards: y,
                 variant: n,
                 hideCardsOnNarrowScreen: !1,
                 isPremiumSubscriber: R,
                 fractionalState: O,
-                isInReverseTrial: P,
-                recurring3PPromotionExperiment: L,
-                showPremiumGroup: D,
+                isInReverseTrial: L,
+                recurring3PPromotionExperiment: D,
+                showPremiumGroup: P,
                 isPremiumGroupMember: I?.isPremiumGroupMember()
             }),
             G = M.some(e => null != e.pillText);

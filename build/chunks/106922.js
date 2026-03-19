@@ -32,9 +32,9 @@ var i = n(627968),
     y = n(976860),
     R = n(780964),
     O = n(12901),
-    P = n(840065),
-    L = n(351906),
-    D = n(287809),
+    L = n(840065),
+    D = n(351906),
+    P = n(287809),
     M = n(166403),
     G = n(224016),
     U = n(954571),
@@ -109,7 +109,7 @@ function em() {
         t = (0, w.nf)(),
         n = (0, S.Ay)(),
         s = (0, u.bG)([M.A], () => M.A.getPremiumTypeSubscription()),
-        l = (0, u.bG)([D.default], () => D.default.getCurrentUser()),
+        l = (0, u.bG)([P.default], () => P.default.getCurrentUser()),
         r = l?.isPremiumWithPremiumGroup(),
         o = (0, N.A)(),
         d = (0, B.d)(),
@@ -204,7 +204,7 @@ function em() {
                         U.default.track(ei.HAw.PREMIUM_SETTINGS_INTERACTED, {
                             cta_type: "to_subscriptions_button",
                             target: "subscriptions settings"
-                        }), (0, P.openUserSettings)(R.X.SUBSCRIPTIONS_PANEL)
+                        }), (0, L.openUserSettings)(R.X.SUBSCRIPTIONS_PANEL)
                     },
                     text: es.intl.string(es.t["9uDy6C"]),
                     fullWidth: !0,
@@ -315,7 +315,7 @@ let ex = function() {
         {
             analyticsLocations: t
         } = (0, f.Ay)(C.A.PREMIUM_SETTINGS),
-        n = (0, u.bG)([D.default], () => D.default.getCurrentUser()),
+        n = (0, u.bG)([P.default], () => P.default.getCurrentUser()),
         l = (0, u.bG)([M.A], () => M.A.getPremiumTypeSubscription()),
         a = (0, u.bG)([M.A], () => M.A.hasFetchedSubscriptions()),
         r = (0, I.Y)(et.T7),
@@ -328,7 +328,7 @@ let ex = function() {
             return null == e || "billingSettingsNitroGiftBanner" !== e.properties.properties.oneofKind ? null : e.properties.properties.billingSettingsNitroGiftBanner
         }),
         S = !(d.Fr || d.v1) && null != A,
-        y = (0, u.bG)([L.A], () => L.A.enabled),
+        y = (0, u.bG)([D.A], () => D.A.enabled),
         R = s.useRef(null);
     (0, X.i)();
     let O = (0, z.m)();
@@ -337,7 +337,7 @@ let ex = function() {
             y || e || await Promise.all([p.hP(), p.$o(), (0, T.zS)(null, null, ei.tF5.DISCOVERY)]), m(!1)
         })
     }, [y, e]);
-    let [P, G] = s.useState(!1);
+    let [L, G] = s.useState(!1);
     if (y) return (0, i.jsx)(E.A, {});
     if (e) return (0, i.jsx)(v.uK, {});
     let k = a && null !== l && r,
@@ -367,7 +367,7 @@ let ex = function() {
             }), (0, i.jsx)(_.L, {
                 innerRef: R,
                 onChange: e => {
-                    e && !P && (U.default.track(ei.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                    e && !L && (U.default.track(ei.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                         location_stack: t
                     }), G(!0))
                 },

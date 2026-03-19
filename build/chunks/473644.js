@@ -27,11 +27,11 @@ function v(e) {
         invite: i,
         discoveryGuild: v,
         showGuildTag: I = !1
-    } = e, f = i.approximate_presence_count ?? 0, T = i.approximate_member_count ?? 0, C = (0, a.bG)([g.default], () => g.default.locale), N = (0, u.P)(p.default.extractTimestamp(t.id), C), y = (0, a.bG)([d.A], () => v?.primary_category_id != null ? d.A.getCategoryName(v.primary_category_id) : null), D = t.premiumTier ?? A.TVA.NONE, S = D !== A.TVA.NONE, b = t.preferredLocale ?? v?.preferred_locale ?? null, L = n.useMemo(() => {
-        if ("en-US" === b) return j.intl.string(j.t.LQLMGP);
-        let e = (0, j.getAvailableLocales)().find(e => e.value === b);
-        return null != e ? j.intl.string(e.localizedName) : b
-    }, [b]), R = null != b && "" !== b, O = null != y, U = R || O || S, G = O || S, {
+    } = e, f = i.approximate_presence_count ?? 0, T = i.approximate_member_count ?? 0, C = (0, a.bG)([g.default], () => g.default.locale), N = (0, u.P)(p.default.extractTimestamp(t.id), C), y = (0, a.bG)([d.A], () => v?.primary_category_id != null ? d.A.getCategoryName(v.primary_category_id) : null), D = t.premiumTier ?? A.TVA.NONE, S = D !== A.TVA.NONE, L = t.preferredLocale ?? v?.preferred_locale ?? null, b = n.useMemo(() => {
+        if ("en-US" === L) return j.intl.string(j.t.LQLMGP);
+        let e = (0, j.getAvailableLocales)().find(e => e.value === L);
+        return null != e ? j.intl.string(e.localizedName) : L
+    }, [L]), R = null != L && "" !== L, O = null != y, U = R || O || S, G = O || S, {
         enabled: k
     } = r.SH.useConfig({
         location: "AcceptInviteModalGuildDetailsHeader"
@@ -83,7 +83,7 @@ function v(e) {
                     tag: "span",
                     variant: "text-sm/normal",
                     color: "text-subtle",
-                    children: L
+                    children: b
                 }), G && (0, l.jsx)("span", {
                     className: E.LO,
                     "aria-hidden": !0
