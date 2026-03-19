@@ -1,6 +1,6 @@
 /** chunk id: 777426 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => y
 });
 var i = n(627968),
     a = n(64700),
@@ -27,12 +27,12 @@ n(646363);
 var S = n(985018),
     x = n(187449);
 
-function v(e) {
+function y(e) {
     let {
         ref: t,
         isFocused: r,
-        isActive: v,
-        status: y,
+        isActive: y,
+        status: v,
         activities: b,
         applicationStream: O,
         isGameRelationship: L,
@@ -83,7 +83,7 @@ function v(e) {
     return (0, i.jsx)(_.A, {
         ref: t,
         isFocused: r,
-        isActive: v,
+        isActive: y,
         user: j,
         onOtherHover: D,
         onClick: M,
@@ -93,7 +93,7 @@ function v(e) {
             children: [(0, i.jsx)(g.A, {
                 className: x.Cv,
                 user: j,
-                status: y,
+                status: v,
                 isMobile: R,
                 isVR: P,
                 subText: (0, i.jsxs)(i.Fragment, {
@@ -101,7 +101,7 @@ function v(e) {
                         hovered: e,
                         activities: b,
                         applicationStream: O,
-                        status: y,
+                        status: v,
                         user: j,
                         userIgnored: E.A.isIgnored(j.id)
                     }), (0, i.jsxs)("div", {

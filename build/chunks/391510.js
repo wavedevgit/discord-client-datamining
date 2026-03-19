@@ -99,15 +99,15 @@ let E = ["1402418171662569542"],
                 S > 0 && (r.flags = S);
                 let {
                     assets: x,
-                    party: v,
-                    secrets: y,
+                    party: y,
+                    secrets: v,
                     timestamps: b,
                     buttons: O,
                     type: L
                 } = r;
-                if (null == L && (r.type = p.$pd.PLAYING), null != y) {
-                    let e = a().values(y).filter(e => !!e);
-                    if (null != v && a().intersection(e, [v.id]).length > 0 && !E.includes(n.application.id)) throw new _.A({
+                if (null == L && (r.type = p.$pd.PLAYING), null != v) {
+                    let e = a().values(v).filter(e => !!e);
+                    if (null != y && a().intersection(e, [y.id]).length > 0 && !E.includes(n.application.id)) throw new _.A({
                         errorCode: p.Lw6.INVALID_ACTIVITY_SECRET
                     }, "secrets cannot match the party id");
                     if (a().uniq(e).length < e.length) throw new _.A({

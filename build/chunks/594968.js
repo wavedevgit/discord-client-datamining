@@ -96,7 +96,7 @@ function x(e) {
     })
 }
 
-function v(e) {
+function y(e) {
     let {
         isGameRelationship: t,
         applicationId: n,
@@ -125,7 +125,7 @@ function v(e) {
     })
 }
 
-function y(e) {
+function v(e) {
     let {
         user: t,
         hovered: n,
@@ -149,7 +149,7 @@ function y(e) {
                 color: "text-muted",
                 children: T.intl.string(T.t.bgL68y)
             })]
-        }) : (0, i.jsx)(v, {
+        }) : (0, i.jsx)(y, {
             isGameRelationship: r,
             isProvisional: t.isProvisional,
             applicationId: o,
@@ -183,7 +183,7 @@ function b(e) {
         onClick: f,
         children: e => (0, i.jsxs)("div", {
             className: N.a4,
-            children: [(0, i.jsx)(y, {
+            children: [(0, i.jsx)(v, {
                 user: t,
                 hovered: e,
                 status: p,

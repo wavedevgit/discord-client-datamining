@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(247455),
     S = n(57718),
     x = n(652215),
-    v = n(985018),
-    y = n(454622);
+    y = n(985018),
+    v = n(454622);
 let b = (0, a.memo)(function(e) {
     let {
         quest: t
@@ -80,12 +80,12 @@ let b = (0, a.memo)(function(e) {
             onBlur: et,
             onMouseEnter: ee,
             onMouseLeave: et,
-            className: l()(y.kL, {
-                [y.yo]: n
+            className: l()(v.kL, {
+                [v.yo]: n
             }),
             children: [null != j && F && null != K && (0, i.jsx)("div", {
                 ref: M,
-                className: y.FX,
+                className: v.FX,
                 style: {
                     top: b
                 },
@@ -96,13 +96,13 @@ let b = (0, a.memo)(function(e) {
                     animateOnHover: !n
                 })
             }), H ? (0, i.jsx)(T.A, {
-                className: y.Sl
+                className: v.Sl
             }) : Y ? (0, i.jsx)(N.A, {
-                className: y.Sl,
+                className: v.Sl,
                 isAnimated: n,
                 questName: t.config.messages.questName
             }) : $.isAnimated ? (0, i.jsx)(m.A, {
-                className: y.JU,
+                className: v.JU,
                 autoPlay: !1,
                 children: (0, i.jsx)("source", {
                     src: $.url,
@@ -110,36 +110,36 @@ let b = (0, a.memo)(function(e) {
                     onError: () => en($.url)
                 })
             }) : (0, i.jsx)("img", {
-                className: y.Sl,
+                className: v.Sl,
                 src: $.url,
                 alt: t.config.messages.questName,
                 onError: () => en($.url)
             }), (0, i.jsx)("div", {
-                className: l()(y.Lw, {
-                    [y.en]: q,
-                    [y.So]: !q
+                className: l()(v.Lw, {
+                    [v.en]: q,
+                    [v.So]: !q
                 })
             }), (0, i.jsx)("div", {
                 ref: D,
-                className: y.r$,
+                className: v.r$,
                 style: {
                     transform: `translateY(-${Q}px)`
                 },
                 children: (0, i.jsx)(S.Ay, {
-                    logotypeClassName: l()(y.wm, {
-                        [y.A0]: z
+                    logotypeClassName: l()(v.wm, {
+                        [v.A0]: z
                     }),
                     quest: t,
                     withGameTile: !1
                 })
             }), (0, i.jsxs)("div", {
                 ref: w,
-                className: y.zH,
+                className: v.zH,
                 children: [(0, i.jsx)(u.Heading, {
-                    className: y.DD,
+                    className: v.DD,
                     variant: "heading-md/semibold",
                     color: "always-white",
-                    children: v.intl.format(v.t.EAYZAr, {
+                    children: y.intl.format(y.t.EAYZAr, {
                         questName: t.config.messages.questName
                     })
                 }), (0, i.jsx)(u.Text, {
@@ -148,7 +148,7 @@ let b = (0, a.memo)(function(e) {
                     style: {
                         opacity: q ? 1 : .75
                     },
-                    children: v.intl.format(v.t["kXVcV+"], {
+                    children: y.intl.format(y.t["kXVcV+"], {
                         reward: B.name,
                         claimedDate: k
                     })

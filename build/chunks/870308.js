@@ -61,7 +61,21 @@ let _ = () => {
                     }
                 }
             }
-            return null
+            return t?.type === r.G.TAB_TOOLTIP ? {
+                type: A.FF.TAB_TOOLTIP,
+                title: () => t.title,
+                body: () => t.body,
+                asset: t.asset,
+                badgeIcon: t.badgeIcon,
+                badgeText: t.badgeText,
+                entrypointBackgroundStyle: t.refTargetBackground?.style,
+                entryPointBackgroundAssets: {
+                    srcDark: e.buttonBGRestingDark,
+                    srcLight: e.buttonBGRestingLight,
+                    srcDarkHovered: e.buttonBGHoverDark,
+                    srcLightHovered: e.buttonBGHoverLight
+                }
+            } : null
         })(m, e) : null,
         p = i.useCallback(() => {
             null != g && _(h.i.AUTO)

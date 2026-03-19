@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(844358),
     S = n(828430),
     x = n(857365),
-    v = n(861638),
-    y = n(793574),
+    y = n(861638),
+    v = n(793574),
     b = n(114716),
     O = n(752412),
     L = n(105220),
@@ -79,8 +79,8 @@ var i = n(627968),
     eN = n(265367),
     eS = n(77509),
     ex = n(463347),
-    ev = n(334465),
-    ey = n(976860),
+    ey = n(334465),
+    ev = n(976860),
     eb = n(569745),
     eO = n(985986),
     eL = n(138298),
@@ -122,7 +122,7 @@ var i = n(627968),
     tn = n(613057);
 n(115036), n(943577), n(131319), n(794383), n(845618), n(712687), n(328968), n(67480), n(874486), n(162605), n(2866), n(628965), n(752319), n(836602), n(555337), n(863036), n(291731), n(176360), n(972937), n(279061), n(750128), n(921955);
 let ti = !1;
-(0, v.as)(), s.Ay.initialize(), eO.A.loadServer(), e2.isPlatformEmbedded && (e3.Ay.on("USER_SETTINGS_OPEN", (e, t) => {
+(0, y.as)(), s.Ay.initialize(), eO.A.loadServer(), e2.isPlatformEmbedded && (e3.Ay.on("USER_SETTINGS_OPEN", (e, t) => {
     (0, eY.openUserSettings)()
 }), e3.Ay.on("LAUNCH_APPLICATION", (e, t) => {
     let n = eZ.A.getActiveLibraryApplication(t);
@@ -305,7 +305,7 @@ let tu = [{
         } = t.params;
         return (0, X.B)(() => (0, eG.openUserProfileModal)({
             userId: n,
-            sourceAnalyticsLocations: [y.A.URI_SCHEME]
+            sourceAnalyticsLocations: [v.A.URI_SCHEME]
         })), (0, i.jsx)(l.rd, {
             to: eQ.A.defaultRoute
         })
@@ -497,7 +497,7 @@ function tA(e) {
         }
         of tu) {
         if (!n) continue;
-        let i = (0, ev.B)(e, {
+        let i = (0, ey.B)(e, {
             path: t
         });
         if (null != i) return i
@@ -514,8 +514,8 @@ function th(e) {
     if (!Q.A.isConnected()) return;
     let {
         location: a
-    } = (0, ey.JK)();
-    a.pathname === i && (null == e$.A.getChannel(t) ? (0, ey.bG)(e8.BVt.CHANNEL(n)) : (0, ey.bG)(i))
+    } = (0, ev.JK)();
+    a.pathname === i && (null == e$.A.getChannel(t) ? (0, ev.bG)(e8.BVt.CHANNEL(n)) : (0, ev.bG)(i))
 }
 class t_ extends a.PureComponent {
     historyUnlisten = () => {};
@@ -564,7 +564,7 @@ class t_ extends a.PureComponent {
                     let e = ez.Ay.getCurrentSidebarChannelId(n),
                         t = e !== s;
                     if (null != a && null != s && t)
-                        if (d)(0, ey.bG)(e8.BVt.CHANNEL(i, s, l));
+                        if (d)(0, ev.bG)(e8.BVt.CHANNEL(i, s, l));
                         else {
                             let e = {
                                 type: eR.LU.THREAD
@@ -585,7 +585,7 @@ class t_ extends a.PureComponent {
                         n = e === e8.BVt.GUILD_DISCOVERY;
                     t || n ? ed.A.closeSidebar() : ed.A.openSidebar()
                 } else(o && A || !_ && !o) && ed.A.closeSidebar()
-            } else td.some(t => (0, ev.B)(e, t)?.isExact === !0) || (0, ey.bG)(eQ.A.fallbackRoute)
+            } else td.some(t => (0, ey.B)(e, t)?.isExact === !0) || (0, ev.bG)(eQ.A.fallbackRoute)
         }(t, n), (0, V.MS)()
     }
     ensureChannelMatchesGuild(e) {

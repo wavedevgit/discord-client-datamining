@@ -25,7 +25,7 @@ function E(e) {
         startDateTimeString: x
     } = a.useMemo(() => C ? {
         startDateTimeString: g.intl.string(g.t.TxqPQR)
-    } : (0, h.CC)(S ?? new Date().toISOString()), [S, C]), v = null != n ? (0, A.oF)(n) : void 0, y = I?.name ?? v, b = null != I ? (0, s.gU)(I) : null;
+    } : (0, h.CC)(S ?? new Date().toISOString()), [S, C]), y = null != n ? (0, A.oF)(n) : void 0, v = I?.name ?? y, b = null != I ? (0, s.gU)(I) : null;
     if (null == n || null == E) return null;
     let O = null != n.description && n.description.length > 0;
     return (0, i.jsxs)("div", {
@@ -73,7 +73,7 @@ function E(e) {
                     variant: "text-xs/normal",
                     color: "text-muted",
                     className: p.HA,
-                    children: null != y ? (0, d.l)(y, !0) : null
+                    children: null != v ? (0, d.l)(v, !0) : null
                 })]
             })]
         })]

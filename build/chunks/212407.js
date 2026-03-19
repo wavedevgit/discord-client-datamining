@@ -64,7 +64,7 @@ let s = e => {
                 buttonBGHoverLight: s ?? t ?? m?.light,
                 buttonBGRestingDark: o ?? c ?? l?.dark,
                 buttonBGRestingLight: d ?? c ?? l?.light,
-                coachtipAvatar: u ?? e?.avatar
+                coachtipAvatar: u ?? (e?.type === i.G.COACHTIP ? e.avatar : void 0)
             }
         }, [t, n, s, c, o, d, u, e])
     },

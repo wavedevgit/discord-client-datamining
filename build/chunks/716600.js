@@ -38,19 +38,19 @@ function m(e) {
             href: d.A.getArticleURL(m.helpArticleId),
             children: h.intl.string(h.t["sBp+u0"])
         })]
-    }) : void 0, v = {
+    }) : void 0, y = {
         type: "video",
         src: I ? m.heroArtVideoLinkLightTheme : m.videoLink
     };
-    null != m.heroArtVideoSubtitles && (v.subtitles = m.heroArtVideoSubtitles.map(e => ({
+    null != m.heroArtVideoSubtitles && (y.subtitles = m.heroArtVideoSubtitles.map(e => ({
         locale: e.locale,
         src: e.link,
         isDefault: !1
-    }))), ("" !== m.heroArtImageLinkDarkTheme || "" !== m.heroArtImageLinkLightTheme) && (v = {
+    }))), ("" !== m.heroArtImageLinkDarkTheme || "" !== m.heroArtImageLinkLightTheme) && (y = {
         type: "image",
         src: I ? m.heroArtImageLinkLightTheme : m.heroArtImageLinkDarkTheme
     });
-    let y = "" !== m.modalTopPill ? () => (0, i.jsx)(c.R, {
+    let v = "" !== m.modalTopPill ? () => (0, i.jsx)(c.R, {
         text: m.modalTopPill,
         className: _.ON
     }) : void 0;
@@ -59,11 +59,11 @@ function m(e) {
         promotionId: n,
         renderModalProps: g,
         header: m.header,
-        modalTopExtra: y,
+        modalTopExtra: v,
         subHeader: m.subheader,
         subHeaderExtra: x,
         body: m.body,
-        heroArt: v,
+        heroArt: y,
         featureCards: m.featureCards.map(e => ({
             header: e.header,
             subHeader: e.body,

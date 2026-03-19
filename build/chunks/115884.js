@@ -53,8 +53,8 @@ function x(e) {
         placeholder: t = g.intl.string(g.t["Rn/sLl"])
     } = e, n = a.useRef(null), r = a.useRef(null), [s, A] = a.useReducer(S, f), {
         canSend: x,
-        hint: v,
-        error: y,
+        hint: y,
+        error: v,
         success: b
     } = s;
     return a.useEffect(() => {
@@ -102,7 +102,7 @@ function x(e) {
                 ref: r,
                 className: l()(p.fc, {
                     [p.kX]: b,
-                    [p.z3]: y
+                    [p.z3]: v
                 }),
                 children: [(0, i.jsx)(d.ob, {
                     id: C,
@@ -140,12 +140,12 @@ function x(e) {
                     "data-1p-ignore": !0,
                     placeholder: t,
                     "aria-label": t,
-                    "aria-invalid": null != y || void 0,
-                    "aria-describedby": null != y ? N : T
-                }), null != v && (0, i.jsx)("div", {
+                    "aria-invalid": null != v || void 0,
+                    "aria-describedby": null != v ? N : T
+                }), null != y && (0, i.jsx)("div", {
                     className: p.dQ,
                     "aria-hidden": !0,
-                    children: v
+                    children: y
                 }), (0, i.jsx)(c.Button, {
                     variant: "primary",
                     size: "sm",
@@ -154,14 +154,14 @@ function x(e) {
                     type: "submit"
                 })]
             })
-        }), null != y && (0, i.jsx)("div", {
+        }), null != v && (0, i.jsx)("div", {
             role: "alert",
             children: (0, i.jsx)(c.Text, {
                 id: N,
                 variant: "text-sm/normal",
                 className: E.Ot,
                 color: "text-feedback-critical",
-                children: y
+                children: v
             })
         }), null != b && (0, i.jsx)("div", {
             role: "status",

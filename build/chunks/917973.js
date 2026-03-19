@@ -37,7 +37,7 @@ function C(e) {
     }, [t, n]), S = (0, s.bG)([h.A], () => h.A.getGuild(t)), x = a.useMemo(() => null == S ? null : _.Ay.getGuildSplashURL({
         id: S.id,
         splash: S.splash
-    }), [S]), v = (0, u.S)(x);
+    }), [S]), y = (0, u.S)(x);
     return (0, i.jsxs)("div", {
         className: l()(I.kf, f.iW, {
             [f.Me]: null == x
@@ -49,10 +49,10 @@ function C(e) {
             width: C,
             height: T,
             imageClassName: f.Iv
-        }) : (0, i.jsx)(A.A, {}), null != v && null != x && (0, i.jsx)("div", {
+        }) : (0, i.jsx)(A.A, {}), null != y && null != x && (0, i.jsx)("div", {
             className: f.D7,
             style: {
-                background: `linear-gradient(180deg, ${(0,m.cb)(v,.16)} 0%, ${(0,m.cb)(v,1)} 100%)`
+                background: `linear-gradient(180deg, ${(0,m.cb)(y,.16)} 0%, ${(0,m.cb)(y,1)} 100%)`
             }
         }), null != x && (0, i.jsx)("div", {
             className: f.D7

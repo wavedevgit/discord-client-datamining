@@ -23,8 +23,8 @@ var a = n(311907),
     N = n(614792),
     S = n(961350),
     x = n(309010),
-    v = n(967198),
-    y = n(612181),
+    y = n(967198),
+    v = n(612181),
     b = n(723702),
     O = n(837367),
     L = n(736400),
@@ -60,7 +60,7 @@ async function G(e, t, n) {
     D.verbose("loading early cache");
     let r = f.A.getSocket();
     r.connect();
-    let s = v.A.getGuildId() ?? null,
+    let s = y.A.getGuildId() ?? null,
         o = x.A.getChannelId() ?? null,
         d = performance.now(),
         c = N.A.loadCachedMessages.measureAsyncWithoutNesting(() => U(e, s, o)),
@@ -71,7 +71,7 @@ async function G(e, t, n) {
         I = null == e ? Promise.resolve([]) : i.A.timeAsync("\uD83D\uDCBE", "cache: read_states", () => h.A.getAll(e)),
         C = null == e ? Promise.resolve([]) : i.A.timeAsync("\uD83D\uDCBE", "cache: user_guild_settings", () => _.A.getAll(e)),
         [
-            [T, S], y, b, O, L, P, M
+            [T, S], v, b, O, L, P, M
         ] = await Promise.all([c, u, A, p, E, I, C]),
         j = performance.now() - d;
     if (D.verbose(`cache loaded in ${j}ms (channel_history ${T}ms)`), null == S) return (0, R.A)("database:history_cache_null"), D.verbose("finished without dispatching CACHE_LOADED"), [!1, null, 0];
@@ -81,7 +81,7 @@ async function G(e, t, n) {
     return await new Promise((e, t) => a.Ay.Emitter.batched(() => {
         i.A.time("\uD83D\uDCBE", "Dispatch Mini Cache", () => l.h.dispatch({
             type: "CACHE_LOADED",
-            guilds: y,
+            guilds: v,
             privateChannels: O,
             initialGuildChannels: b.channels ?? [],
             users: [...S.users],
@@ -120,7 +120,7 @@ async function G(e, t, n) {
             read_states: ${P.length}
             user_guild_settings: ${M.length}
       )`), N.A.setEarlyCacheInfo({
-        guilds: y.length
+        guilds: v.length
     }), D.verbose("finished dispatching CACHE_LOADED"), [!0, G ? k ?? null : null, O.length]
 }
 let k = !1;
@@ -287,7 +287,7 @@ function F(e) {
 class Y extends a.Ay.Store {
     static displayName = "CacheStore";
     initialize() {
-        this.waitFor(S.default, f.A, x.A, v.A), f.A.getSocket().dispatcher.unpauseDispatchQueue()
+        this.waitFor(S.default, f.A, x.A, y.A), f.A.getSocket().dispatcher.unpauseDispatchQueue()
     }
     hasCache() {
         return !0
@@ -299,7 +299,7 @@ class Y extends a.Ay.Store {
         return w
     }
     canWriteCaches(e) {
-        return (0, y.wR)() ? M ? (D.log("Not writing cache because caches cleared"), !1) : !!e || (D.log("Not writing cache because never connected"), !1) : (D.log("Not writing cache because not authenticated"), !1)
+        return (0, v.wR)() ? M ? (D.log("Not writing cache because caches cleared"), !1) : !!e || (D.log("Not writing cache because never connected"), !1) : (D.log("Not writing cache because not authenticated"), !1)
     }
     async loadCacheAsync(e, t) {
         let n = (0, O.q)(t);

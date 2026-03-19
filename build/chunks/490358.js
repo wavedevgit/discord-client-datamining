@@ -1,6 +1,6 @@
 /** chunk id: 490358 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => y
 });
 var i = n(627968),
     a = n(64700),
@@ -53,14 +53,14 @@ function x(e) {
         })]
     })
 }
-let v = e => {
+let y = e => {
     let {
         guildId: t
     } = e, {
         ref: n,
         width: o,
         height: d
-    } = (0, s.Ay)(), [A, h] = a.useState(T.go.INITIAL), v = (0, r.bG)([p.A], () => p.A.getRequest(t)), y = (0, r.bG)([u.A], () => u.A.getGuild(t)), {
+    } = (0, s.Ay)(), [A, h] = a.useState(T.go.INITIAL), y = (0, r.bG)([p.A], () => p.A.getRequest(t)), v = (0, r.bG)([u.A], () => u.A.getGuild(t)), {
         hasFetchedRequestToJoinGuilds: b,
         guildPreviewDisabled: O
     } = (0, r.cf)([p.A], () => ({
@@ -68,8 +68,8 @@ let v = e => {
         guildPreviewDisabled: p.A.getJoinRequestGuild(t)
     }));
     a.useEffect(() => {
-        null != y && (0, c.pX)(C.BVt.CHANNEL(t))
-    }, [y, t]), a.useEffect(() => {
+        null != v && (0, c.pX)(C.BVt.CHANNEL(t))
+    }, [v, t]), a.useEffect(() => {
         b || _.A.fetchRequestToJoinGuilds()
     }, [b]);
     let L = a.useCallback(() => {
@@ -103,8 +103,8 @@ let v = e => {
         }), (0, i.jsx)("div", {
             className: S.FG,
             children: (() => {
-                if (null == v) return null;
-                switch (v.applicationStatus) {
+                if (null == y) return null;
+                switch (y.applicationStatus) {
                     case g.B5.SUBMITTED:
                         return (0, i.jsx)(f.A, {
                             onWithdrawApplication: () => D(!0),
@@ -116,7 +116,7 @@ let v = e => {
                             onReapply: P,
                             confirmText: N.intl.string(N.t.g9tK0o),
                             onWithdrawApplication: D,
-                            rejectionReason: v.rejectionReason,
+                            rejectionReason: y.rejectionReason,
                             guild: O
                         });
                     default:

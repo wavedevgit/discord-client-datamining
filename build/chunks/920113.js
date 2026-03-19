@@ -1,6 +1,6 @@
 /** chunk id: 920113 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => y
 });
 var i = n(627968),
     a = n(64700),
@@ -25,7 +25,7 @@ var i = n(627968),
     N = n(985018),
     S = n(706572),
     x = n(370808);
-let v = (0, u.A)(function(e) {
+let y = (0, u.A)(function(e) {
     let {
         width: t
     } = e, n = (0, p.c)("ICYMIPage", !1);
@@ -38,11 +38,11 @@ let v = (0, u.A)(function(e) {
     });
     let r = (0, o.bG)([g.A], () => g.A.theme),
         u = (0, o.bG)([E.A], () => E.A.isRefreshing()),
-        v = a.useRef(null);
+        y = a.useRef(null);
     (0, h.HU)({
         location: N.intl.string(N.t["jnXV/V"])
     });
-    let [y, b] = a.useState(!1);
+    let [v, b] = a.useState(!1);
     a.useEffect(() => {
         let e = e => {
                 e.metaKey && b(!0)
@@ -64,7 +64,7 @@ let v = (0, u.A)(function(e) {
         R = a.useCallback(async e => {
             e.metaKey && L ? await (0, I.be)(T.ZSU.ACK_GRAVITY_REGENERATE_FEED_AND_CLEAR_READ_STATES_BUTTON) : await O()
         }, [O, L]),
-        P = y && L ? N.intl.string(N.t.YplSn2) : N.intl.string(N.t.wzzjk9);
+        P = v && L ? N.intl.string(N.t.YplSn2) : N.intl.string(N.t.wzzjk9);
     return n ? (0, i.jsxs)("div", {
         className: l()(x.TE, S.kL),
         children: [(0, i.jsx)(d.NPJ, {
@@ -91,10 +91,10 @@ let v = (0, u.A)(function(e) {
                 })]
             })
         }), (0, i.jsx)("div", {
-            ref: v,
+            ref: y,
             className: l()(x.Qs, S.Qs),
             children: (0, i.jsx)(C.A, {
-                scrollContainerRef: v
+                scrollContainerRef: y
             })
         })]
     }) : null

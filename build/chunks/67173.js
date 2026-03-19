@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(398025),
     S = n(419818),
     x = n(652215),
-    v = n(49999),
-    y = n(985018),
+    y = n(49999),
+    v = n(985018),
     b = n(817259);
 let O = Math.ceil(Math.sqrt(115200)),
     L = (O - 240) / 2,
@@ -40,9 +40,9 @@ let O = Math.ceil(Math.sqrt(115200)),
         } = function() {
             let e = (0, A.useHasAnyModalOpen)(),
                 t = (0, c.bG)([I.A], () => I.A.quests.size > 0),
-                [n, i] = (0, E.kn)(!e && t ? [u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING] : [], v.m.PRIVATE_CHANNELS_LIST, !0),
+                [n, i] = (0, E.kn)(!e && t ? [u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING] : [], y.m.PRIVATE_CHANNELS_LIST, !0),
                 r = a.useCallback(() => {
-                    i(v.i.TAKE_ACTION)
+                    i(y.i.TAKE_ACTION)
                 }, [i]),
                 l = n === u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING,
                 s = (0, p.JZ)(u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING);
@@ -151,14 +151,14 @@ let O = Math.ceil(Math.sqrt(115200)),
                 onClick: U,
                 route: x.BVt.QUEST_HOME,
                 selected: t,
-                text: y.intl.string(y.t.JALI2K),
+                text: v.intl.string(v.t.JALI2K),
                 ...n,
                 children: [M && (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)("div", {
                         className: b.qS,
                         children: (0, i.jsx)(d.Exy, {
                             type: {
-                                text: y.intl.string(y.t.y2b7CA)
+                                text: v.intl.string(v.t.y2b7CA)
                             },
                             variant: "expressive"
                         })
@@ -183,7 +183,7 @@ let O = Math.ceil(Math.sqrt(115200)),
                         }
                     }), (0, i.jsx)(_.LpS, {
                         className: b.qS,
-                        text: y.intl.string(y.t.y2b7CA),
+                        text: v.intl.string(v.t.y2b7CA),
                         color: _.LU0.colors.BACKGROUND_BRAND.css
                     })]
                 })]

@@ -24,8 +24,8 @@ var i, a = n(627968),
     N = n(960076),
     S = n(847177),
     x = n(359549),
-    v = n(793574),
-    y = n(688810),
+    y = n(793574),
+    v = n(688810),
     b = n(139286),
     O = n(627363),
     L = n(587895),
@@ -400,7 +400,7 @@ ef.Header = eI, ef.Body = e => {
         activity: l
     } = e, {
         analyticsLocations: s
-    } = (0, y.Ay)(v.A.NOW_PLAYING_ITEM_GAME_SECTION);
+    } = (0, v.Ay)(y.A.NOW_PLAYING_ITEM_GAME_SECTION);
     return (0, a.jsxs)(eu, {
         children: [(0, a.jsxs)("div", {
             className: el.yn,
@@ -428,7 +428,7 @@ ef.Header = eI, ef.Body = e => {
         user: r
     } = e, {
         analyticsLocations: l
-    } = (0, y.Ay)(v.A.NOW_PLAYING_ITEM_RICH_PRESENCE_SECTION), {
+    } = (0, v.Ay)(y.A.NOW_PLAYING_ITEM_RICH_PRESENCE_SECTION), {
         data: o
     } = (0, O.YY)(t.application_id), {
         assets: d,
@@ -652,7 +652,7 @@ ef.Header = eI, ef.Body = e => {
         A = (0, g.p)(),
         {
             analyticsLocations: _
-        } = (0, y.Ay)();
+        } = (0, v.Ay)();
     if (null == c) return null;
     let m = L.A.getApplication(c);
     if (null == m) return null;

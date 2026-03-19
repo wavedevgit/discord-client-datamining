@@ -25,15 +25,15 @@ var i = n(627968),
     N = n(652215),
     S = n(49999),
     x = n(985018),
-    v = n(573785);
-let y = [],
+    y = n(573785);
+let v = [],
     b = e => {
         let {
             tagText: t,
             className: n
         } = e;
         return (0, i.jsx)(A.LpS, {
-            className: l()(v.Tc, n),
+            className: l()(y.Tc, n),
             text: t
         })
     },
@@ -46,23 +46,23 @@ let y = [],
             wideStyle: s
         } = e;
         return (0, i.jsxs)("div", {
-            className: l()(v.Vr, {
-                [v.tF]: s
+            className: l()(y.Vr, {
+                [y.tF]: s
             }),
             children: [null != r ? (0, i.jsx)(b, {
                 tagText: r,
-                className: v.bX
+                className: y.bX
             }) : null, (0, i.jsx)("img", {
                 alt: "",
-                className: l()(v._n, {
-                    [v.tF]: s
+                className: l()(y._n, {
+                    [y.tF]: s
                 }),
                 src: a
             }), (0, i.jsxs)("div", {
-                className: v.Zz,
+                className: y.Zz,
                 children: [(0, i.jsx)(A.Heading, {
                     variant: "heading-md/bold",
-                    className: v.Hf,
+                    className: y.Hf,
                     children: t
                 }), (0, i.jsx)(A.Text, {
                     variant: "text-md/normal",
@@ -93,7 +93,7 @@ function L(e) {
     } = e, {
         onClose: B,
         transitionState: H
-    } = b, F = (0, p.GV)(), Y = U.length % 2 == 0, W = (0, d.bG)([h.A], () => h.A.useReducedMotion), [K, q] = a.useState(Date.now()), [z, $] = a.useState(0), [Q, X] = a.useState(0), [Z, J] = a.useState(!1), [ee, et] = a.useState(!0), en = a.useRef(K), ei = a.useRef(z), ea = a.useRef(Q), er = a.useRef(Z), el = a.useRef(ee), [es, eo] = a.useState(y), ed = a.useRef(!1);
+    } = b, F = (0, p.GV)(), Y = U.length % 2 == 0, W = (0, d.bG)([h.A], () => h.A.useReducedMotion), [K, q] = a.useState(Date.now()), [z, $] = a.useState(0), [Q, X] = a.useState(0), [Z, J] = a.useState(!1), [ee, et] = a.useState(!0), en = a.useRef(K), ei = a.useRef(z), ea = a.useRef(Q), er = a.useRef(Z), el = a.useRef(ee), [es, eo] = a.useState(v), ed = a.useRef(!1);
 
     function ec() {
         let e = Date.now(),
@@ -128,7 +128,7 @@ function L(e) {
                 });
                 eo(await Promise.all(e))
             } catch (e) {
-                T.A.captureException(e), eo(y)
+                T.A.captureException(e), eo(v)
             }
         };
         !0 !== ed.current && e(), ed.current = !0
@@ -164,23 +164,23 @@ function L(e) {
         }
     }, [G, n]), (0, i.jsx)(A.EOs, {
         "data-migration-pending": !0,
-        className: l()(v.zr, v.kv, r),
+        className: l()(y.zr, y.kv, r),
         transitionState: H,
         "aria-labelledby": F,
         parentComponent: "PremiumAnnouncementModalVariant1",
         children: (0, i.jsxs)(A.hLv, {
             color: "nitro-pink",
             children: [(0, i.jsx)("div", {
-                className: v.cG,
+                className: y.cG,
                 children: (0, i.jsx)(u.JnF, {
                     "data-migration-pending": !0,
                     onClick: async () => await B()
                 })
             }), P?.(), (0, i.jsxs)(A.$mQ, {
                 "data-migration-pending": !0,
-                className: v.Qs,
+                className: y.Qs,
                 children: ["video" === L.type ? (0, i.jsx)(E.A, {
-                    className: l()(v.Ki, R),
+                    className: l()(y.Ki, R),
                     autoPlay: !W,
                     loop: !0,
                     muted: !0,
@@ -214,7 +214,7 @@ function L(e) {
                         }, e.locale)
                     })
                 }) : "embed" === L.type ? (0, i.jsx)(m.rr, {
-                    className: l()(v.Ki, R),
+                    className: l()(y.Ki, R),
                     allowFullScreen: !1,
                     href: L.href,
                     thumbnail: L.thumbnail,
@@ -232,31 +232,31 @@ function L(e) {
                     }
                 }) : "image" === L.type ? (0, i.jsx)("img", {
                     alt: "",
-                    className: l()(v.Ki, R),
+                    className: l()(y.Ki, R),
                     src: L.src
                 }) : null, (0, i.jsx)(A.Heading, {
                     variant: "display-md",
-                    className: l()(v.TK, M),
+                    className: l()(y.TK, M),
                     children: D
                 }), (0, i.jsxs)(A.Text, {
                     variant: "text-md/normal",
                     color: "text-subtle",
-                    className: v.uI,
+                    className: y.uI,
                     children: [j, w?.()]
                 }), null != V && "" !== V && (0, i.jsx)(A.Heading, {
                     variant: "heading-lg/semibold",
-                    className: v.G3,
+                    className: y.G3,
                     children: V
                 }), U.length > 0 && (0, i.jsx)("div", {
-                    className: l()(v.IS, {
-                        [v.tF]: Y
+                    className: l()(y.IS, {
+                        [y.tF]: Y
                     }),
                     children: U.map((e, t) => (0, i.jsx)(O, {
                         ...e,
                         wideStyle: Y
                     }, `${e.header}_${t}`))
                 }), (0, i.jsx)("div", {
-                    className: v.UD,
+                    className: y.UD,
                     children: k()
                 })]
             })]

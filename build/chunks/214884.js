@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(323443),
     S = n(63995),
     x = n(69407),
-    v = n(446600),
-    y = n(964175),
+    y = n(446600),
+    v = n(964175),
     b = n(342296),
     O = n(576705),
     L = n(287809),
@@ -40,7 +40,7 @@ function w(e) {
     let {
         guild: t,
         isStudyRoomNotice: n = !1
-    } = e, r = (0, E.V)(t.id), u = (0, I.BP)(t.id), b = (0, s.bG)([v.A], () => v.A.getStageInstanceByChannel(r?.id), [r]), {
+    } = e, r = (0, E.V)(t.id), u = (0, I.BP)(t.id), b = (0, s.bG)([y.A], () => y.A.getStageInstanceByChannel(r?.id), [r]), {
         isStageNoticeHidden: w,
         isEventNoticeHidden: G
     } = (0, s.cf)([g.A], () => ({
@@ -50,7 +50,7 @@ function w(e) {
         isEventNoticeHidden: g.A.isLiveChannelNoticeHidden({
             eventId: u?.id
         })
-    }), [b, u]), k = r?.id, V = (0, s.yK)([S.A], () => [...new Set(S.A.getMutableParticipants(k, x.ip.SPEAKER).map(e => e.user))], [k]), B = (0, s.bG)([S.A], () => null != k ? S.A.getParticipantCount(k, x.ip.AUDIENCE) : 0, [k]), H = (0, s.bG)([O.A], () => O.A.can(P.xBc.CONNECT, r)), F = (0, y.A)(r?.id), Y = u?.creator_id, W = (0, s.bG)([L.default], () => L.default.getUser(Y), [Y]);
+    }), [b, u]), k = r?.id, V = (0, s.yK)([S.A], () => [...new Set(S.A.getMutableParticipants(k, x.ip.SPEAKER).map(e => e.user))], [k]), B = (0, s.bG)([S.A], () => null != k ? S.A.getParticipantCount(k, x.ip.AUDIENCE) : 0, [k]), H = (0, s.bG)([O.A], () => O.A.can(P.xBc.CONNECT, r)), F = (0, v.A)(r?.id), Y = u?.creator_id, W = (0, s.bG)([L.default], () => L.default.getUser(Y), [Y]);
     a.useEffect(() => {
         null != Y && (0, c.wz)(Y)
     }, [Y]);
