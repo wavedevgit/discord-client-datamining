@@ -1,47 +1,47 @@
 /** chunk id: 918338 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => u
 });
 var i = n(627968),
     a = n(64700),
-    s = n(503698),
-    r = n.n(s),
+    r = n(503698),
+    s = n.n(r),
     l = n(579473),
     o = n(415441),
     d = n(516226),
     c = n(985018),
-    u = n(989194);
+    _ = n(989194);
 
-function m(e) {
+function u(e) {
     let {
         quest: t,
         isInteracting: n,
-        hideAssets: s,
-        imageSize: m,
-        containerClassName: g,
-        imageClassName: p,
-        assetRef: f
-    } = e, v = a.useMemo(() => (0, l.tW)(t, l.fY.HERO_IMAGE), [t]), _ = a.useMemo(() => (0, l.tW)(t, l.fY.HERO_VIDEO), [t]), {
-        onAssetLoadComplete: x
+        hideAssets: r,
+        imageSize: u,
+        containerClassName: p,
+        imageClassName: E,
+        assetRef: m
+    } = e, h = a.useMemo(() => (0, l.tW)(t, l.fY.HERO_IMAGE), [t]), S = a.useMemo(() => (0, l.tW)(t, l.fY.HERO_VIDEO), [t]), {
+        onAssetLoadComplete: g
     } = a.useContext(d.M);
     return (0, i.jsx)("div", {
-        className: r()(u.l1, g),
-        children: !s && (0, i.jsx)(o.N, {
-            imageAsset: null != v ? {
-                asset: v,
+        className: s()(_.l1, p),
+        children: !r && (0, i.jsx)(o.N, {
+            imageAsset: null != h ? {
+                asset: h,
                 assetId: "QuestTileBanner",
                 alt: c.intl.string(c.t.jnijWz),
-                className: r()(u.LO, p)
+                className: s()(_.LO, E)
             } : void 0,
-            videoAsset: null != _ ? {
-                asset: _,
+            videoAsset: null != S ? {
+                asset: S,
                 assetId: "QuestTileBanner_heroAnimated",
-                className: u.G9
+                className: _.G9
             } : void 0,
             showVideo: n,
-            imageSize: m,
-            onLoadComplete: x,
-            assetRef: f
+            imageSize: u,
+            onLoadComplete: g,
+            assetRef: m
         })
     })
 }

@@ -1,31 +1,31 @@
 /** chunk id: 922283 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => _
 });
 var a = n(627968),
     l = n(64700),
     i = n(990078),
     r = n(397927),
     s = n(223273),
-    c = n(317607),
-    o = n(676937),
+    o = n(317607),
+    c = n(676937),
     d = n(37948),
     u = n(778591),
     m = n(985018),
     x = n(107701);
-let f = function(e) {
+let _ = function(e) {
     let {
         detectedGame: t
     } = e, {
         reviews: n,
-        applicationId: f
-    } = t, h = n?.steam ?? {
+        applicationId: _
+    } = t, g = n?.steam ?? {
         rating: void 0,
         ratingCount: void 0
-    }, g = (0, u.I)(f), p = (0, d.A)(), _ = (0, c.j)(h.rating, h.ratingCount), v = (0, o.y)(_), j = l.useCallback(() => {
-        p(g)
-    }, [p, g]);
-    return null == g ? null : (0, a.jsxs)("div", {
+    }, f = (0, u.I)(_), p = (0, d.A)(), h = (0, o.j)(g.rating, g.ratingCount), v = (0, c.y)(h), A = l.useCallback(() => {
+        p(f)
+    }, [p, f]);
+    return null == f ? null : (0, a.jsxs)("div", {
         className: x.uW,
         children: [(0, a.jsx)("div", {
             className: x.Gf,
@@ -35,7 +35,7 @@ let f = function(e) {
                 children: m.intl.string(m.t.GaAQXP)
             })
         }), (0, a.jsx)(r.DUT, {
-            onClick: j,
+            onClick: A,
             className: x.nf,
             role: "link",
             "aria-label": m.intl.string(m.t.YNC5Di),
@@ -56,21 +56,21 @@ let f = function(e) {
                                 children: m.intl.string(m.t.whmopT)
                             })]
                         }), (0, a.jsx)(i.m, {
-                            text: _ === s.vI.NO_USER_REVIEWS ? m.intl.string(m.t.CLMt8J) : m.intl.format(m.t["lzANJ/"], {
-                                rating: h.rating,
-                                rating_count: h.ratingCount?.toLocaleString()
+                            text: h === s.vI.NO_USER_REVIEWS ? m.intl.string(m.t.CLMt8J) : m.intl.format(m.t["lzANJ/"], {
+                                rating: g.rating,
+                                rating_count: g.ratingCount?.toLocaleString()
                             }).toString(),
                             children: (0, a.jsxs)("div", {
                                 className: x.Z0,
                                 children: [(0, a.jsx)(r.Text, {
                                     variant: "text-xs/medium",
                                     color: v,
-                                    children: (0, o.a)(_)
-                                }), null != h.ratingCount && _ !== s.vI.NO_USER_REVIEWS && (0, a.jsx)(r.Text, {
+                                    children: (0, c.a)(h)
+                                }), null != g.ratingCount && h !== s.vI.NO_USER_REVIEWS && (0, a.jsx)(r.Text, {
                                     variant: "text-xs/medium",
                                     color: "text-subtle",
                                     children: m.intl.format(m.t.sgIoin, {
-                                        rating_count: h.ratingCount?.toLocaleString()
+                                        rating_count: g.ratingCount?.toLocaleString()
                                     }).toString()
                                 })]
                             })

@@ -1,12 +1,12 @@
 /** chunk id: 674085 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => l
 });
 var r = n(627968),
     i = n(158954),
     a = n(933297);
-let s = function(e) {
+let l = function(e) {
     let {
         badge: t
     } = e;

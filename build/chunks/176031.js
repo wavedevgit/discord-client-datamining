@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(509963),
     S = n(775602),
     x = n(924283),
-    y = n(139286),
-    v = n(213750),
+    v = n(139286),
+    y = n(213750),
     b = n(771781),
     O = n(932001),
     L = n(379848),
@@ -101,7 +101,7 @@ let e_ = e => {
             cooldownDurationMs: B.hb
         }), I = m === A.M.GIFTING_INTENT_FRIENDS_TAB_BADGE;
         a.useEffect(() => {
-            I && (0, y.x)({
+            I && (0, v.x)({
                 name: o.ImpressionNames.GIFT_INTENT_BADGE,
                 type: o.ImpressionTypes.VIEW,
                 properties: {
@@ -117,12 +117,12 @@ let e_ = e => {
                     tab_opened: e
                 })
             },
-            [N, v] = a.useState(!1),
+            [N, y] = a.useState(!1),
             b = () => {
-                v(!1)
+                y(!1)
             },
             L = () => {
-                v(!0)
+                y(!0)
             },
             R = () => (0, i.jsx)(C.z9, {
                 onClick: T,
@@ -364,7 +364,7 @@ let eN = a.memo(function(e) {
                         }
                     }
                 }), S]
-            }, "nitro-tab-group") : null, (0, i.jsx)(v.i, {
+            }, "nitro-tab-group") : null, (0, i.jsx)(y.i, {
                 selected: m === es.BVt.COLLECTIBLES_SHOP || r?.startsWith(es.BVt.COLLECTIBLES_SHOP),
                 listItemRef: I,
                 locationState: {
@@ -422,7 +422,7 @@ function ex() {
             location: "Private Channels"
         });
     (0, b.Tc)() && (m && !I && E.push(A.M.REFERRAL_PROGRAM_POPOVER), p && E.push(A.M.RECURRING_3P_PROMOTION_POPOVER));
-    let [f] = (0, O.Cc)(m && I ? A.M.REFERRAL_PROGRAM_POPOVER_V2 : null, g ?? "", void 0, !0), [C, T] = (0, O.kn)(E, void 0, !0), N = null == f && C === A.M.RECURRING_3P_PROMOTION_POPOVER, S = I ? f === A.M.REFERRAL_PROGRAM_POPOVER_V2 : C === A.M.REFERRAL_PROGRAM_POPOVER, x = (0, M.H)(), y = (e = J.dm.useSetting(), t = (0, j.A)(), !0 === e && !0 === t);
+    let [f] = (0, O.Cc)(m && I ? A.M.REFERRAL_PROGRAM_POPOVER_V2 : null, g ?? "", void 0, !0), [C, T] = (0, O.kn)(E, void 0, !0), N = null == f && C === A.M.RECURRING_3P_PROMOTION_POPOVER, S = I ? f === A.M.REFERRAL_PROGRAM_POPOVER_V2 : C === A.M.REFERRAL_PROGRAM_POPOVER, x = (0, M.H)(), v = (e = J.dm.useSetting(), t = (0, j.A)(), !0 === e && !0 === t);
     return (0, i.jsx)(eN, {
         theme: l,
         showLibrary: r,
@@ -434,7 +434,7 @@ function ex() {
         showReferralProgramPopover: S,
         showRecurring3PPopover: N,
         shouldShowMessageRequestsRow: x,
-        shouldShowFamilyCenterRow: y,
+        shouldShowFamilyCenterRow: v,
         selectedChannelId: c,
         path: h
     })

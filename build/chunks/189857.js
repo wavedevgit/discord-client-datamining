@@ -1,7 +1,7 @@
 /** chunk id: 189857 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    H: () => s,
+    H: () => l,
     Z: () => a
 }), n(321073);
 var r = n(963935),
@@ -10,8 +10,8 @@ var r = n(963935),
 function a(e, t) {
     let n = [],
         a = new Map,
-        s = new Map,
-        l = new Map;
+        l = new Map,
+        s = new Map;
     return (0, i.A)(e, e => {
         if (!("getDismissibleBadges" in e)) return;
         let i = e.getDismissibleBadges?.();
@@ -31,22 +31,22 @@ function a(e, t) {
             let {
                 dismissibleContent: r
             } = e;
-            n.push(r), a.set(r, t), l.set(r, e);
-            let i = s.get(t.sidebarItemKey) ?? new Set;
-            if (i.add(r), s.set(t.sidebarItemKey, i), null != t.categoryKey) {
-                let e = s.get(t.categoryKey) ?? new Set;
-                e.add(r), s.set(t.categoryKey, e)
+            n.push(r), a.set(r, t), s.set(r, e);
+            let i = l.get(t.sidebarItemKey) ?? new Set;
+            if (i.add(r), l.set(t.sidebarItemKey, i), null != t.categoryKey) {
+                let e = l.get(t.categoryKey) ?? new Set;
+                e.add(r), l.set(t.categoryKey, e)
             }
         })(e, u))
     }), {
         allDismissibleContents: n,
         dismissibleContentToNodeKeys: a,
-        nodeKeyToDismissibleContents: s,
-        dismissibleContentToBadge: l
+        nodeKeyToDismissibleContents: l,
+        dismissibleContentToBadge: s
     }
 }
 
-function s(e, t, n) {
+function l(e, t, n) {
     let {
         nodeKeyToDismissibleContents: r,
         dismissibleContentToBadge: i

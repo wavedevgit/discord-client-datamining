@@ -14,7 +14,7 @@ var i = n(735438),
     u = n(702211),
     m = n(287070),
     p = n(101058),
-    g = n(207803),
+    g = n(84540),
     x = n(836602),
     f = n(950191),
     A = n(814390),
@@ -116,7 +116,9 @@ let P = e => {
             hideFakeActivity: k,
             canUsePremiumCustomization: S,
             onUpsellClick: _.A,
-            onBannerChange: g.Iz
+            onBannerChange: e => (0, g.p)({
+                banner: e
+            })
         };
         return (0, r.jsxs)("div", {
             className: I.i1,

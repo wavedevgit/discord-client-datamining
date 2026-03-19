@@ -1,6 +1,6 @@
 /** chunk id: 194045 params = (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => v
 });
 var i = n(627968);
 n(64700);
@@ -90,4 +90,4 @@ class x extends _.A {
         })
     }
 }
-let y = new x
+let v = new x

@@ -27,8 +27,8 @@ var i, a = n(627968),
     N = n(954571),
     S = n(403362),
     x = n(707592),
-    y = n(698441),
-    v = n(935159),
+    v = n(698441),
+    y = n(935159),
     b = n(695400),
     O = n(11550),
     L = n(435328),
@@ -113,7 +113,7 @@ function H(e) {
         return t
     }), [n]), r = (0, u.gU)(n);
     return (0, a.jsx)(B, {
-        onClickCloseIcon: () => (0, v.iF)({
+        onClickCloseIcon: () => (0, y.iF)({
             eventId: t?.id
         }),
         heading: k.intl.string(k.t["X2K3/4"]),
@@ -136,10 +136,10 @@ function F(e) {
     let {
         guildEvent: t,
         noticeType: n
-    } = e, i = (0, j.G3)(t), r = (0, o.bG)([y.Ay], () => y.Ay.isInterestedInEventRecurrence(t.id, i), [t.id, i]), l = (0, o.bG)([O.A], () => O.A.getUpcomingNoticeSeenTime(t.id), [t.id]);
-    return r || null != l || (0, v.pE)(t.id), (0, a.jsx)(d.Button, {
+    } = e, i = (0, j.G3)(t), r = (0, o.bG)([v.Ay], () => v.Ay.isInterestedInEventRecurrence(t.id, i), [t.id, i]), l = (0, o.bG)([O.A], () => O.A.getUpcomingNoticeSeenTime(t.id), [t.id]);
+    return r || null != l || (0, y.pE)(t.id), (0, a.jsx)(d.Button, {
         onClick: function() {
-            (0, w.A)(t.id, null, t.guild_id, () => setTimeout(() => (0, v.Lx)(t.id), 1e3)), N.default.track(G.HAw.CHANNEL_NOTICE_CTA_CLICKED, {
+            (0, w.A)(t.id, null, t.guild_id, () => setTimeout(() => (0, y.Lx)(t.id), 1e3)), N.default.track(G.HAw.CHANNEL_NOTICE_CTA_CLICKED, {
                 guild_id: t.guild_id,
                 notice_type: n
             })
@@ -193,7 +193,7 @@ function Y(e) {
                     N.default.track(G.HAw.CHANNEL_NOTICE_CLOSED, {
                         notice_type: n,
                         guild_id: t.guild_id
-                    }), (0, v.Lx)(t.id)
+                    }), (0, y.Lx)(t.id)
                 },
                 className: V.ut,
                 "aria-label": k.intl.string(k.t.cpT0Cq),
@@ -246,7 +246,7 @@ function W(e) {
         guildEvent: t
     } = e, n = (0, M.oF)(t);
     return null == n ? null : (0, a.jsx)(B, {
-        onClickCloseIcon: () => (0, v.iF)({
+        onClickCloseIcon: () => (0, y.iF)({
             eventId: t?.id
         }),
         heading: k.intl.string(k.t["1+boPi"]),
@@ -314,7 +314,7 @@ function z(e) {
         count: `${r}`
     });
     return (0, a.jsx)(B, {
-        onClickCloseIcon: () => (0, v.iF)({
+        onClickCloseIcon: () => (0, y.iF)({
             stageId: t?.id
         }),
         heading: k.intl.string(k.t["X2K3/4"]),

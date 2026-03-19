@@ -1,27 +1,30 @@
 /** chunk id: 900254 params = (module,exports,require) **/
 n.d(t, {
-    A: () => o
+    A: () => d
 });
 var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(631670),
-    a = n(253932),
-    r = n(985018);
+    a = n(84540),
+    r = n(253932),
+    o = n(985018);
 
-function o(e) {
+function d(e) {
     let {
         legacyUsername: t,
         pendingLegacyUsernameDisabled: n
-    } = e, o = a.m$.useSetting(), d = void 0 !== n ? n : o;
+    } = e, d = r.m$.useSetting(), c = void 0 !== n ? n : d;
     return (0, i.jsx)(s.dOG, {
-        label: r.intl.string(r.t["3cWDuO"]),
-        description: d ? null : r.intl.formatToPlainString(r.t.aYhclf, {
+        label: o.intl.string(o.t["3cWDuO"]),
+        description: c ? null : o.intl.formatToPlainString(o.t.aYhclf, {
             username: t
         }),
-        checked: !d,
+        checked: !c,
         onChange: e => {
-            !e === o ? (0, l._e)() : (0, l.VG)(!e)
+            !e === d ? (0, l._e)() : (0, a.p)({
+                legacyUsernameDisabled: !e
+            })
         }
     })
 }

@@ -31,8 +31,8 @@ let m = (0, s.debounce)(c.Ay.trackWithMetadata, 500),
             onClick: N,
             cta: S,
             ctaColor: x,
-            centerText: y,
-            className: v
+            centerText: v,
+            className: y
         } = e;
         a.useEffect(() => {
             m(A.HAw.CHANNEL_NOTICE_VIEWED, {
@@ -63,14 +63,14 @@ let m = (0, s.debounce)(c.Ay.trackWithMetadata, 500),
             className: l()(_.DD, {
                 [_.vG]: null == s
             }, {
-                [_.gX]: y
+                [_.gX]: v
             }),
             children: n
         }));
         let L = null;
         "function" == typeof r ? L = r() : null != r && (L = (0, i.jsx)(d.Text, {
             className: l()({
-                [_.gX]: y
+                [_.gX]: v
             }),
             variant: "text-sm/normal",
             color: "text-muted",
@@ -78,7 +78,7 @@ let m = (0, s.debounce)(c.Ay.trackWithMetadata, 500),
         }));
         let R = null != E ? `${E}px` : "16px";
         return (0, i.jsxs)("div", {
-            className: l()(_.kL, v),
+            className: l()(_.kL, y),
             children: [!0 === C ? null : (0, i.jsx)(d.DUT, {
                 onClick: () => {
                     c.Ay.trackWithMetadata(A.HAw.CHANNEL_NOTICE_CLOSED, {

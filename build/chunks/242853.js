@@ -1,6 +1,6 @@
 /** chunk id: 242853 params = (module,exports,require) **/
 s.d(t, {
-    A: () => p
+    A: () => h
 });
 var l = s(627968);
 s(64700);
@@ -15,9 +15,9 @@ var a = s(503698),
     m = s(241015),
     _ = s(985018),
     x = s(402141),
-    h = s(345195);
+    p = s(345195);
 
-function p(e) {
+function h(e) {
     let {
         selectedEffectId: t,
         setSelectedEffectId: s,
@@ -53,15 +53,15 @@ function g(e) {
         onClick: a
     } = e, i = (0, o._)(t);
     return (0, l.jsx)(r.DUT, {
-        className: n()(h.Tw, {
-            [h.wH]: s
+        className: n()(p.Tw, {
+            [p.wH]: s
         }),
         onClick: a,
         children: (0, l.jsx)(c.A, {
             userName: i.name,
             effectDisplayType: d.G.STATIC,
             displayNameStyles: i.previewStyles,
-            textClassName: h.tr,
+            textClassName: p.tr,
             inProfile: !0
         })
     }, t)

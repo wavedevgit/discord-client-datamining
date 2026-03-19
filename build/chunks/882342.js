@@ -4,36 +4,36 @@ n.d(t, {
 });
 var r = n(627968);
 n(64700);
-var i = n(990078),
-    a = n(397927),
+var a = n(990078),
+    i = n(397927),
     l = n(580630),
     s = n(993408),
-    c = n(641563),
-    o = n(652215),
+    o = n(641563),
+    c = n(652215),
     d = n(985018),
     u = n(195782);
 
 function m(e) {
     let {
         product: t
-    } = e, n = (0, s.yt)(t, o.lid.PREMIUM_TIER_2);
+    } = e, n = (0, s.yt)(t, c.lid.PREMIUM_TIER_2);
     if (null == n) return null;
     let m = (0, l.RS)(n.amount, n.currency);
     return (0, r.jsxs)("div", {
         className: u.k,
-        children: [(0, r.jsx)(i.m, {
+        children: [(0, r.jsx)(a.m, {
             text: d.intl.string(d.t.MPFyJ5),
             "aria-label": d.intl.string(d.t.X3Ekj8),
-            children: (0, r.jsx)(a.tvc, {
+            children: (0, r.jsx)(i.tvc, {
                 size: "md",
                 color: "currentColor",
                 className: u.o
             })
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(i.Text, {
             variant: "text-xs/medium",
             children: d.intl.format(d.t.Sv8iic, {
                 price: m,
-                subscribeNowHook: e => (0, r.jsx)(c.Z, {
+                subscribeNowHook: e => (0, r.jsx)(o.Z, {
                     text: e
                 })
             })

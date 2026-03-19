@@ -1,18 +1,18 @@
 /** chunk id: 387945 params = (module,exports,require) **/
-r.d(e, {
-    A: () => a
+r.d(t, {
+    A: () => s
 });
-var i = r(627968);
+var n = r(627968);
 r(64700);
-var n = r(397927),
-    l = r(536572),
-    s = r(561769);
-let a = t => {
+var l = r(397927),
+    i = r(536572),
+    a = r(561769);
+let s = e => {
     let {
-        skuId: e,
+        skuId: t,
         className: r
-    } = t, a = (0, s.nY)(), u = (0, s.Vm)(e), o = a ? (0, l.VG)(u) : (0, l.sE)(u);
-    return (0, i.jsx)(n.Heading, {
+    } = e, s = (0, a.nY)(), u = (0, a.Vm)(t), o = s ? (0, i.VG)(u) : (0, i.sE)(u);
+    return (0, n.jsx)(l.Heading, {
         variant: "heading-md/medium",
         color: "text-strong",
         className: r,

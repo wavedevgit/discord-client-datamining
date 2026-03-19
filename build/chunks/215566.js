@@ -6,9 +6,9 @@ n.d(t, {
 var r = n(627968),
     i = n(158954),
     a = n(397927),
-    s = n(933297);
+    l = n(933297);
 
-function l(e) {
+function s(e) {
     let {
         badge: t
     } = e;
@@ -28,17 +28,17 @@ let c = function(e) {
         badge: t
     } = e;
     switch (t.badgeType) {
-        case s.Xi.BETA:
+        case l.Xi.BETA:
             return (0, r.jsx)(i.Exy, {
                 type: "beta",
                 variant: "brand"
             });
-        case s.Xi.COUNT:
+        case l.Xi.COUNT:
             return (0, r.jsx)(o, {
                 badge: t
             });
-        case s.Xi.STRONGLY_DISCOURAGED_CUSTOM:
-            return (0, r.jsx)(l, {
+        case l.Xi.STRONGLY_DISCOURAGED_CUSTOM:
+            return (0, r.jsx)(s, {
                 badge: t
             })
     }

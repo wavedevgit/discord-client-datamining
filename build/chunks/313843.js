@@ -1,23 +1,23 @@
 /** chunk id: 313843 params = (module,exports,require) **/
 n.d(t, {
-    A: () => j,
-    Q: () => _
+    A: () => A,
+    Q: () => h
 });
 var a = n(627968),
     l = n(64700),
     i = n(379834),
     r = n(158954),
     s = n(827734),
-    c = n(583846),
-    o = n(541830),
+    o = n(583846),
+    c = n(541830),
     d = n(240248),
     u = n(459746),
     m = n(503364),
     x = n(305080),
-    f = n(985018),
-    h = n(967725);
+    _ = n(985018),
+    g = n(967725);
 
-function g(e) {
+function f(e) {
     let {
         game: t
     } = e, n = t.supplementalData, [i] = l.useState(() => Math.random()), r = l.useMemo(() => {
@@ -37,7 +37,7 @@ function g(e) {
         return ""
     }, [n, i]);
     return (0, d.uJ)(r) ? null : (0, a.jsx)("div", {
-        className: h.y1,
+        className: g.y1,
         style: {
             backgroundImage: `url("${r}")`
         }
@@ -49,9 +49,9 @@ function p(e) {
         game: t,
         application: n,
         entries: l
-    } = e, s = t.supplementalData, u = l.some(e => (0, c.CZ)(e) === i.m.GLOBAL), m = s?.name ?? t.name ?? n?.name, x = (s?.genres ?? t.genres ?? []).map(o.du).join(", ");
+    } = e, s = t.supplementalData, u = l.some(e => (0, o.CZ)(e) === i.m.GLOBAL), m = s?.name ?? t.name ?? n?.name, x = (s?.genres ?? t.genres ?? []).map(c.du).join(", ");
     return (0, a.jsxs)("div", {
-        className: h.wt,
+        className: g.wt,
         children: [u && (0, a.jsx)(v, {}), (0, a.jsx)(r.DZT, {
             variant: "heading-xxl/semibold",
             children: m
@@ -63,24 +63,24 @@ function p(e) {
     })
 }
 
-function _(e) {
+function h(e) {
     let {
         game: t,
         application: n,
         isTwoColumn: l
     } = e, i = t.supplementalData;
     return null == i ? null : (0, a.jsx)("div", {
-        className: l ? h.n8 : h.FS,
+        className: l ? g.n8 : g.FS,
         children: (0, a.jsx)(u.A, {
             game: i,
             application: n,
-            className: h.xe,
+            className: g.xe,
             size: u.w.LARGE
         })
     })
 }
 let v = () => (0, a.jsxs)("div", {
-        className: h.p_,
+        className: g.p_,
         children: [(0, a.jsx)(r.Y3C, {
             size: "xs",
             color: s.A.colors.BADGE_EXPRESSIVE_TEXT_DEFAULT,
@@ -88,10 +88,10 @@ let v = () => (0, a.jsxs)("div", {
         }), (0, a.jsx)(r.EYj, {
             variant: "text-md/bold",
             color: "badge-expressive-text-default",
-            children: f.intl.string(f.t.kAlUsy)
+            children: _.intl.string(_.t.kAlUsy)
         })]
     }),
-    j = function(e) {
+    A = function(e) {
         let {
             game: t,
             application: n,
@@ -101,13 +101,13 @@ let v = () => (0, a.jsxs)("div", {
             isTwoColumn: r
         } = (0, x.c)();
         return r ? (0, a.jsxs)(a.Fragment, {
-            children: [(0, a.jsx)(g, {
+            children: [(0, a.jsx)(f, {
                 game: t
             }), (0, a.jsx)("div", {
-                className: h.kL,
+                className: g.kL,
                 children: (0, a.jsxs)("div", {
-                    className: h.cb,
-                    children: [(0, a.jsx)(_, {
+                    className: g.cb,
+                    children: [(0, a.jsx)(h, {
                         game: t,
                         application: n,
                         isTwoColumn: !0
@@ -120,13 +120,13 @@ let v = () => (0, a.jsxs)("div", {
             }), (0, a.jsx)(m.N, {
                 applicationId: n.id,
                 onClose: i,
-                className: h.HK
+                className: g.HK
             })]
         }) : (0, a.jsxs)(a.Fragment, {
-            children: [(0, a.jsx)(g, {
+            children: [(0, a.jsx)(f, {
                 game: t
             }), (0, a.jsx)("div", {
-                className: h.kL,
+                className: g.kL,
                 children: (0, a.jsx)(p, {
                     game: t,
                     application: n,
@@ -135,7 +135,7 @@ let v = () => (0, a.jsxs)("div", {
             }), (0, a.jsx)(m.N, {
                 applicationId: n.id,
                 onClose: i,
-                className: h.HK
+                className: g.HK
             })]
         })
     }

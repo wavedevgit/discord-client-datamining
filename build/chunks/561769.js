@@ -1,84 +1,83 @@
 /** chunk id: 561769 params = (module,exports,require) **/
-"use strict";
-n.d(t, {
-    AW: () => C,
-    Hi: () => E,
-    UU: () => I,
-    Vm: () => b,
-    gZ: () => x,
+a.d(t, {
+    AW: () => v,
+    Hi: () => y,
+    UU: () => k,
+    Vm: () => A,
+    gZ: () => j,
     nY: () => f,
-    ql: () => N,
-    v3: () => _
+    ql: () => _,
+    v3: () => g
 });
-var i, s, l = n(64700),
-    a = n(575593),
-    r = n(417597),
-    o = n(793574),
-    c = n(688810),
-    d = n(954571),
-    u = n(590180),
-    h = n(161918),
-    A = n(572595),
-    m = n(57020),
-    g = n(758836),
-    p = n(652215);
-let _ = l.createContext({
+var l, r, n = a(64700),
+    s = a(575593),
+    o = a(417597),
+    d = a(793574),
+    i = a(688810),
+    c = a(954571),
+    u = a(590180),
+    x = a(161918),
+    h = a(572595),
+    m = a(57020),
+    b = a(758836),
+    p = a(652215);
+let g = n.createContext({
     flattenProductVariants: void 0,
     productOverride: void 0,
     prioritizedCurrency: void 0
 });
 
 function f() {
-    return l.useContext(_).flattenProductVariants
+    return n.useContext(g).flattenProductVariants
 }
 
-function x() {
-    return l.useContext(_).prioritizedCurrency
+function j() {
+    return n.useContext(g).prioritizedCurrency
 }
-var C = ((i = {}).NONE = "none", i.NEW = "new", i.ORBS_EXCLUSIVE = "orbs_exclusive", i.LIMITED_TIME = "limited_time", i.NITRO_EXCLUSIVE = "nitro_exclusive", i),
-    E = ((s = {}).FIAT = "fiat", s.ORBS = "orbs", s);
-let I = (e, t, n) => i => {
-        d.default.track(p.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-            collectibles_shop_session_id: n?.sessionId,
+var v = ((l = {}).NONE = "none", l.NEW = "new", l.ORBS_EXCLUSIVE = "orbs_exclusive", l.LIMITED_TIME = "limited_time", l.NITRO_EXCLUSIVE = "nitro_exclusive", l),
+    y = ((r = {}).FIAT = "fiat", r.ORBS = "orbs", r);
+let k = (e, t, a) => l => {
+        c.default.track(p.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            collectibles_shop_session_id: a?.sessionId,
             sku_id: e.skuId,
             page_type: t,
-            page_section: n?.pageSection,
-            page_category: t === g.G2.HOME ? void 0 : n?.pageCategory,
-            page_index: t === g.G2.CATALOG ? n?.pageIndex : void 0,
-            page_size: t === g.G2.CATALOG ? n?.pageSize : void 0,
-            tile_type: a.R[e.type],
-            tile_position: String(n?.tilePosition),
-            cta_name: i
+            page_section: a?.pageSection,
+            page_category: t === b.G2.HOME ? void 0 : a?.pageCategory,
+            page_index: t === b.G2.CATALOG ? a?.pageIndex : void 0,
+            page_size: t === b.G2.CATALOG ? a?.pageSize : void 0,
+            tile_type: s.R[e.type],
+            tile_position: String(a?.tilePosition),
+            cta_name: l
         })
     },
-    N = (e, t, n) => {
-        let i = (0, h.Mk)(),
-            s = i?.tab,
+    _ = (e, t, a) => {
+        let l = (0, x.Mk)(),
+            r = l?.tab,
             {
-                analyticsLocations: a
-            } = (0, c.Ay)(o.A.COLLECTIBLES_SHOP_CARD),
-            d = (0, r.bG)([u.A], () => u.A.getCategoryForProduct(e.skuId)),
-            g = l.useRef(null);
-        return l.useCallback(t => i => {
-            if (null == d) return;
-            let l = (0, m.A)({
+                analyticsLocations: s
+            } = (0, i.Ay)(d.A.COLLECTIBLES_SHOP_CARD),
+            c = (0, o.bG)([u.A], () => u.A.getCategoryForProduct(e.skuId)),
+            b = n.useRef(null);
+        return n.useCallback(t => l => {
+            if (null == c) return;
+            let n = (0, m.A)({
                 product: e
             });
-            g.current = i.currentTarget, n?.(), (0, A.t)({
+            b.current = l.currentTarget, a?.(), (0, h.t)({
                 product: e,
-                category: d,
-                shouldCheckoutWithOrbs: l,
-                analyticsLocations: a,
+                category: c,
+                shouldCheckoutWithOrbs: n,
+                analyticsLocations: s,
                 analyticsSource: t,
-                returnRef: g,
-                tab: s
+                returnRef: b,
+                tab: r
             })
-        }, [e, s, d, a, n])(t)
+        }, [e, r, c, s, a])(t)
     },
-    b = e => {
+    A = e => {
         let {
             flattenProductVariants: t,
-            productOverride: n
-        } = l.useContext(_);
-        return (0, r.bG)([u.A], () => null != n ? n : t ? u.A.getProduct(e) : u.A.getCategoryForProduct(e)?.products.find(t => t.skuId === e))
+            productOverride: a
+        } = n.useContext(g);
+        return (0, o.bG)([u.A], () => null != a ? a : t ? u.A.getProduct(e) : u.A.getCategoryForProduct(e)?.products.find(t => t.skuId === e))
     }

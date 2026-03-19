@@ -4,35 +4,35 @@ n.d(t, {
 });
 var r = n(627968);
 n(64700);
-var i = n(503698),
-    a = n.n(i),
+var a = n(503698),
+    i = n.n(a),
     l = n(993408),
     s = n(506742),
-    c = n(219103),
-    o = n(163620);
+    o = n(219103),
+    c = n(163620);
 
 function d(e) {
     let {
         product: t,
         isPremiumUser: n,
-        discount: i,
+        discount: a,
         className: d,
         discountOfferAmount: u,
         hideStrikethroughPrice: m = !1,
         nitroIconType: h,
-        nitroIconSize: x = "md"
-    } = e, p = (0, l.WD)(t, {
+        nitroIconSize: p = "md"
+    } = e, x = (0, l.WD)(t, {
         isPremiumUser: n,
-        discount: i
+        discount: a
     });
-    if (null == p) return null;
+    if (null == x) return null;
     let {
         defaultPrice: f,
         showDefaultPriceOnly: v
-    } = p;
+    } = x;
     if (v) return (0, r.jsx)("div", {
-        className: a()(o.kG, d),
-        children: (0, r.jsx)(c.x, {
+        className: i()(c.kG, d),
+        children: (0, r.jsx)(o.x, {
             priceAmount: f.amount,
             priceCurrency: f.currency
         })
@@ -41,21 +41,21 @@ function d(e) {
         showNitroPrice: _,
         originalPrice: g,
         finalPrice: A
-    } = p;
+    } = x;
     return (0, r.jsxs)("div", {
-        className: a()(o.kG, d),
+        className: i()(c.kG, d),
         children: [m ? null : (0, r.jsx)(s.a, {
             price: g,
-            className: o.q9
-        }), (0, r.jsx)(c.x, {
+            className: c.q9
+        }), (0, r.jsx)(o.x, {
             priceAmount: A.amount,
             priceCurrency: A.currency,
-            discount: i,
-            className: a()({
-                [o.q9]: null == u
+            discount: a,
+            className: i()({
+                [c.q9]: null == u
             }),
             nitroIconType: _ ? h : void 0,
-            nitroIconSize: x,
+            nitroIconSize: p,
             discountOfferAmount: u
         })]
     })

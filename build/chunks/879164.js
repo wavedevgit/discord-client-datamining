@@ -1,6 +1,6 @@
 /** chunk id: 879164 params = (module,exports,require) **/
 s.d(t, {
-    _: () => h
+    _: () => p
 });
 var l = s(627968);
 s(64700);
@@ -16,12 +16,12 @@ var a = s(990078),
     _ = s(985018),
     x = s(886984);
 
-function h(e) {
+function p(e) {
     let {
         onApply: t,
         onSurpriseMe: s,
-        onClose: h,
-        canApply: p
+        onClose: p,
+        canApply: h
     } = e, g = (0, o.L)(u.PremiumTypes.TIER_2), f = (0, l.jsx)(n.Button, {
         variant: "secondary",
         size: "md",
@@ -40,10 +40,10 @@ function h(e) {
         className: x.k0,
         children: [f, (0, l.jsx)(a.m, {
             text: _.intl.string(m.default.cVTpnj),
-            shouldShow: !p,
+            shouldShow: !h,
             children: (0, l.jsx)(n.Button, {
                 onClick: t,
-                disabled: !p,
+                disabled: !h,
                 text: _.intl.string(_.t["1Qm822"]),
                 variant: "primary",
                 size: "md",
@@ -66,7 +66,7 @@ function h(e) {
                 className: x.h_,
                 children: _.intl.format(m.default.PWf0xS, {
                     onClickNitro: () => {
-                        d.default.track(c.HAw.DISPLAY_NAME_STYLES_NITRO_CLICKED), (0, i.x)(h)
+                        d.default.track(c.HAw.DISPLAY_NAME_STYLES_NITRO_CLICKED), (0, i.x)(p)
                     }
                 })
             })]

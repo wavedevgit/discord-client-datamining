@@ -15,8 +15,8 @@ var a = s(503698),
     m = s(750656),
     _ = s(241015),
     x = s(985018),
-    h = s(402141),
-    p = s(640615);
+    p = s(402141),
+    h = s(640615);
 
 function g(e) {
     let {
@@ -29,7 +29,7 @@ function g(e) {
         className: g,
         children: [(0, l.jsxs)(r.DZT, {
             variant: "heading-md/semibold",
-            className: h.s,
+            className: p.s,
             children: [x.intl.string(_.default.nP0ngb), (0, l.jsx)(d.tvc, {
                 size: "xs",
                 color: d.LU0.colors.TEXT_DEFAULT
@@ -45,22 +45,22 @@ function g(e) {
                     text: x.intl.string(a.name),
                     asContainer: !0,
                     children: (0, l.jsx)(d.DUT, {
-                        className: n()(p.SO, {
-                            [p.wH]: i
+                        className: n()(h.SO, {
+                            [h.wH]: i
                         }),
                         onClick: () => s(e),
                         "aria-label": x.intl.string(a.name),
                         children: (0, l.jsx)(r.EYj, {
                             variant: "text-lg/semibold",
                             color: i ? "text-strong" : "text-default",
-                            className: n()(p.FH, a.className),
+                            className: n()(h.FH, a.className),
                             children: "Gg"
                         })
                     })
                 }, e)
             })
         }), f && N && (0, l.jsxs)("div", {
-            className: p.Lb,
+            className: h.Lb,
             children: [(0, l.jsx)(r.mir, {
                 size: "lg"
             }), (0, l.jsx)(r.EYj, {

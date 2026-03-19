@@ -1,6 +1,6 @@
 /** chunk id: 854514 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v,
+    A: () => y,
     H: () => b
 });
 var i = n(627968),
@@ -27,7 +27,7 @@ var i = n(627968),
     S = n(985018),
     x = n(487866);
 
-function y(e) {
+function v(e) {
     let {
         assetImage: t,
         assetVideo: n
@@ -95,7 +95,7 @@ function y(e) {
     })
 }
 
-function v(e) {
+function y(e) {
     let {
         config: t,
         onQuestCtaClick: n
@@ -105,7 +105,7 @@ function v(e) {
         location: T.rE.QUEST_HOME_DESKTOP
     }), [m, E] = a.useState("display-lg"), f = a.useCallback(e => {
         e.contentRect.width < 500 ? E("display-md") : E("display-lg")
-    }, []), v = (0, c.w)(f, [], {
+    }, []), y = (0, c.w)(f, [], {
         fireOnMount: !0
     }), b = (0, o.bG)([h.A], () => h.A.quests), {
         dismissQuestHomeHeroContent: O
@@ -122,7 +122,7 @@ function v(e) {
                 [x.Qx]: !r
             }),
             ref: t => {
-                v.current = t, e.current = t
+                y.current = t, e.current = t
             },
             children: (0, i.jsxs)("div", {
                 className: x.FG,
@@ -190,7 +190,7 @@ function v(e) {
                             }, a) : null)]
                         })]
                     })]
-                }), (0, i.jsx)(y, {
+                }), (0, i.jsx)(v, {
                     assetImage: t.assetHeroImage,
                     assetVideo: t.assetHeroVideo
                 })]

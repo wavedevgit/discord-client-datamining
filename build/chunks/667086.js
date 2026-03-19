@@ -1,6 +1,6 @@
 /** chunk id: 667086 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => y
 });
 var i = n(627968),
     a = n(64700),
@@ -38,16 +38,16 @@ let N = {
         compact: 72
     };
 
-function y(e) {
+function v(e) {
     let {
         onClick: t,
         selectedOverride: n = !1,
         popoutProps: r,
         ref: s,
         focusSectionProps: o
-    } = e, [_, g] = a.useState(!1), I = (0, p.lI)(), f = n || I, y = n || f, v = (0, i.jsx)(u.XFE, {
+    } = e, [_, g] = a.useState(!1), I = (0, p.lI)(), f = n || I, v = n || f, y = (0, i.jsx)(u.XFE, {
         className: T.Kk,
-        color: _ || y ? u.LU0.colors.ICON_STRONG : u.LU0.colors.ICON_MUTED,
+        color: _ || v ? u.LU0.colors.ICON_STRONG : u.LU0.colors.ICON_MUTED,
         size: "sm"
     }), {
         badge: b,
@@ -63,7 +63,7 @@ function y(e) {
             horizontal: !0
         }), (0, i.jsx)(c.m, {
             asContainer: !0,
-            shouldShow: !y,
+            shouldShow: !v,
             text: C.intl.string(C.t.HcoRu0),
             children: (0, i.jsxs)(u.DUT, {
                 innerRef: s,
@@ -86,18 +86,18 @@ function y(e) {
                             width: d.E.sm,
                             height: d.E.sm,
                             mask: A.Ay.Masks.HEADER_BAR_BADGE_BOTTOM,
-                            children: v
+                            children: y
                         }), (0, i.jsx)("div", {
                             className: T.Zm
                         })]
-                    }) : v
+                    }) : y
                 }), b]
             })
         })]
     })
 }
 
-function v() {
+function y() {
     let {
         focusSectionProps: e
     } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, t = a.useRef(null), {
@@ -105,7 +105,7 @@ function v() {
     } = (0, g.X8)({
         location: "NotificationsInboxButton"
     }), r = (0, o.bG)([_.A], () => _.A.getChannelId()), l = a.useMemo(() => f.BVt.CHANNEL(f.gNP, r ?? void 0), [r]), d = (0, E.HN)();
-    return n === g.U5.SIDEBAR ? (0, i.jsx)(y, {
+    return n === g.U5.SIDEBAR ? (0, i.jsx)(v, {
         onClick: () => {
             d(), (0, s.pX)(l)
         },
@@ -115,7 +115,7 @@ function v() {
         popoutPosition: "bottom",
         popoutAlign: "left",
         spacing: 2,
-        children: (n, a, r) => (0, i.jsx)(y, {
+        children: (n, a, r) => (0, i.jsx)(v, {
             ref: t,
             selectedOverride: a,
             onClick: () => {

@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(187696),
     S = n(723690),
     x = n(652215),
-    y = n(788868),
-    v = n(731854),
+    v = n(788868),
+    y = n(731854),
     b = n(985018),
     O = n(187449);
 
@@ -67,7 +67,7 @@ function L(e) {
             cancelText: b.intl.string(b.t["ETE/oC"]),
             onConfirm: _
         })
-    }, [_, r, t]), g = (0, s.bG)([p.Ay], () => p.Ay.supports(v.O5.VIDEO)), E = t.isProvisional, C = r ? b.intl.string(b.t.RLcE6x) : b.intl.string(b.t.cvSt1J);
+    }, [_, r, t]), g = (0, s.bG)([p.Ay], () => p.Ay.supports(y.O5.VIDEO)), E = t.isProvisional, C = r ? b.intl.string(b.t.RLcE6x) : b.intl.string(b.t.cvSt1J);
     return (0, i.jsxs)(o.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "friend-row",
@@ -148,7 +148,7 @@ class R extends a.PureComponent {
         } = this.props, {
             isActiveRow: p
         } = this.state;
-        return (0, h.p)(A.A.FRIENDS_LIST) && c === y.np.FRIEND_ANNIVERSARY && m && 0 === g ? (0, i.jsx)(_.A, {
+        return (0, h.p)(A.A.FRIENDS_LIST) && c === v.np.FRIEND_ANNIVERSARY && m && 0 === g ? (0, i.jsx)(_.A, {
             ref: this.peopleListItemRef,
             isFocused: t,
             isActive: p,

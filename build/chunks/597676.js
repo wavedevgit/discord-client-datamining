@@ -1,21 +1,21 @@
 /** chunk id: 597676 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => _
 });
 var a = n(64700),
     l = n(311907),
     i = n(843472),
     r = n(155718),
     s = n(731068),
-    c = n(77350),
-    o = n(383233),
+    o = n(77350),
+    c = n(383233),
     d = n(320501);
 let u = /^#{1,3}\s+(.+)$/;
 
 function m(e) {
-    let t, n, a = (0, o._c)(e) ? e.components.filter(e => e.type === r.I5.TEXT_DISPLAY).map(e => e.content).join("\n") : e.content,
+    let t, n, a = (0, c._c)(e) ? e.components.filter(e => e.type === r.I5.TEXT_DISPLAY).map(e => e.content).join("\n") : e.content,
         l = function(e) {
-            if ((0, o._c)(e)) {
+            if ((0, c._c)(e)) {
                 let t = e.components.find(e => e.type === r.I5.MEDIA_GALLERY),
                     n = t?.items[0]?.media;
                 if (null != n) {
@@ -27,12 +27,12 @@ function m(e) {
                     }
                 }
             }
-            let t = e.attachments.find(e => (0, c.tT)(e.content_type));
+            let t = e.attachments.find(e => (0, o.tT)(e.content_type));
             if (null != t) return {
                 url: t.proxy_url,
                 type: "image"
             };
-            let n = e.attachments.find(e => (0, c.XB)(e.content_type));
+            let n = e.attachments.find(e => (0, o.XB)(e.content_type));
             if (null != n) return {
                 url: n.proxy_url,
                 type: "video"
@@ -69,7 +69,7 @@ function x(e, t) {
     return !0
 }
 
-function f(e) {
+function _(e) {
     let t = a.useRef([]),
         n = (0, l.bG)([d.A], () => {
             let n = null != e ? d.A.getMessages(e) : void 0;

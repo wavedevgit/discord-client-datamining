@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(486164),
     S = n(821589),
     x = n(979286),
-    y = n(335657),
-    v = n(252362),
+    v = n(335657),
+    y = n(252362),
     b = n(540063),
     O = n(870308),
     L = n(998694),
@@ -57,7 +57,7 @@ let U = e => {
             noCache: e,
             includeUnpublished: t
         } = (0, L.A)();
-        return (0, y.y)(P.G2.HOME, {
+        return (0, v.y)(P.G2.HOME, {
             noCache: e,
             includeUnpublished: t
         }, void 0, !0), null
@@ -158,9 +158,9 @@ let U = e => {
             T = a.useRef(null),
             N = a.useRef(null),
             x = (0, g.Ay)(),
-            y = (0, A.Mw)(x);
-        E ? y ? (t = r.entryPointBackgroundAssets?.srcDarkHovered, n = r.entrypointBackgroundStyle?.hovered?.dark) : (t = r.entryPointBackgroundAssets?.srcLightHovered, n = r.entrypointBackgroundStyle?.hovered?.light) : y ? (t = r.entryPointBackgroundAssets?.srcDark, n = r.entrypointBackgroundStyle?.resting?.dark) : (t = r.entryPointBackgroundAssets?.srcLight, n = r.entrypointBackgroundStyle?.resting?.light);
-        let v = a.useCallback(e => {
+            v = (0, A.Mw)(x);
+        E ? v ? (t = r.entryPointBackgroundAssets?.srcDarkHovered, n = r.entrypointBackgroundStyle?.hovered?.dark) : (t = r.entryPointBackgroundAssets?.srcLightHovered, n = r.entrypointBackgroundStyle?.hovered?.light) : v ? (t = r.entryPointBackgroundAssets?.srcDark, n = r.entrypointBackgroundStyle?.resting?.dark) : (t = r.entryPointBackgroundAssets?.srcLight, n = r.entrypointBackgroundStyle?.resting?.light);
+        let y = a.useCallback(e => {
                 let t = r.assetIds;
                 null != t && t.length > 0 && u(e => (e + 1) % t.length);
                 let n = r.avatarDecorationSkuIds;
@@ -196,7 +196,7 @@ let U = e => {
                 ...s,
                 icon: r.entryPointIcon,
                 ...e,
-                onMouseEnter: () => v(e.onMouseEnter),
+                onMouseEnter: () => y(e.onMouseEnter),
                 onMouseLeave: () => b(e.onMouseLeave),
                 children: [(0, i.jsx)("div", {
                     ref: T,
@@ -341,7 +341,7 @@ let U = e => {
                     badgeIcon: t.badgeIcon,
                     badgeText: t.badgeText
                 })]
-            }), (0, i.jsx)(v.A, {
+            }), (0, i.jsx)(y.A, {
                 displayOptions: t,
                 targetElementRef: s,
                 onClick: () => n(M.i.TAKE_ACTION),

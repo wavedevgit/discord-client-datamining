@@ -14,8 +14,8 @@ var l = s(627968),
     m = s(763754),
     _ = s(20851),
     x = s(369496),
-    h = s(550111),
-    p = s(919395),
+    p = s(550111),
+    h = s(919395),
     g = s(287070),
     f = s(101058),
     N = s(836602),
@@ -52,7 +52,7 @@ function I(e) {
         userNameplate: B,
         guildNameplate: J,
         pendingNameplate: F
-    } = (0, p.rv)(t, s?.id), V = (0, x.WK)(J);
+    } = (0, h.rv)(t, s?.id), V = (0, x.WK)(J);
     O && !G ? R = v.NJ8.DARK : !O && G && (R = v.NJ8.LIGHT);
     let q = (0, a.useCallback)(() => {
             S.default.track(v.HAw.DISPLAY_NAME_STYLES_CLOSED), w()
@@ -128,7 +128,7 @@ function I(e) {
                     hideGuildTag: !0,
                     className: D.OT,
                     previewGuildId: s?.id
-                }), (0, l.jsx)(h.A, {
+                }), (0, l.jsx)(p.A, {
                     user: t,
                     guildId: s?.id,
                     nameplate: F,

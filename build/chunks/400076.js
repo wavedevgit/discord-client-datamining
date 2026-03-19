@@ -1,11 +1,11 @@
 /** chunk id: 400076 params = (module,exports,require) **/
-r.d(e, {
-    L: () => l,
-    w: () => a
+r.d(t, {
+    L: () => i,
+    w: () => s
 });
-var i, n = r(945810),
-    l = ((i = {})[i.CONTROL = 0] = "CONTROL", i[i.DEFAULT_AVATAR = 1] = "DEFAULT_AVATAR", i[i.DEFAULT_AVATAR_NO_ANIMATION = 2] = "DEFAULT_AVATAR_NO_ANIMATION", i);
-let s = (0, n.mj)({
+var n, l = r(945810),
+    i = ((n = {})[n.CONTROL = 0] = "CONTROL", n[n.DEFAULT_AVATAR = 1] = "DEFAULT_AVATAR", n[n.DEFAULT_AVATAR_NO_ANIMATION = 2] = "DEFAULT_AVATAR_NO_ANIMATION", n);
+let a = (0, l.mj)({
         name: "2026-02-shop-card-personalization-negative-test",
         kind: "user",
         defaultConfig: {
@@ -23,6 +23,6 @@ let s = (0, n.mj)({
             }
         }
     }),
-    a = t => s.useConfig({
-        location: t
+    s = e => a.useConfig({
+        location: e
     })

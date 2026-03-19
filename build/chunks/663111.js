@@ -30,8 +30,8 @@ function N() {
         N = (0, r.bG)([m.A], () => m.A.getChannelId()),
         S = (0, r.bG)([h.A], () => h.A.getChannel(N), [N]),
         x = n ?? S?.guild_id,
-        y = (0, r.bG)([_.A], () => _.A.getGuild(x), [x]),
-        v = (0, o.DZ)(),
+        v = (0, r.bG)([_.A], () => _.A.getGuild(x), [x]),
+        y = (0, o.DZ)(),
         b = (0, A.lI)(),
         {
             application: O,
@@ -57,10 +57,10 @@ function N() {
         draggable: !1
     })) : b ? (e = f.intl.string(f.t.HcoRu0), P = (0, i.jsx)(l.XFE, {
         size: "sm"
-    })) : null != y ? (e = (0, d.YC)(y), P = v ? (0, i.jsx)(l.Gg5, {
+    })) : null != v ? (e = (0, d.YC)(v), P = y ? (0, i.jsx)(l.Gg5, {
         size: "sm"
     }) : (0, i.jsx)(u.Ay, {
-        guild: y,
+        guild: v,
         size: u.Ay.Sizes.SMOL,
         active: !0,
         className: T.$f

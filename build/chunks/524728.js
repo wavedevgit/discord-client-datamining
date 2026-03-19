@@ -1,96 +1,96 @@
 /** chunk id: 524728 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => E
 });
 var i = n(627968),
     a = n(64700),
-    s = n(158954),
-    r = n(397927),
+    r = n(158954),
+    s = n(397927),
     l = n(341915),
     o = n(73473),
     d = n(545986),
     c = n(240710),
-    u = n(985018),
-    m = n(512508);
+    _ = n(985018),
+    u = n(512508);
 
-function g(e) {
+function p(e) {
     let {
         onClose: t,
         transitionState: n
     } = e;
-    return (0, i.jsx)(s.Modal, {
+    return (0, i.jsx)(r.Modal, {
         size: "md",
-        title: u.intl.string(u.t.Hd3D8W),
+        title: _.intl.string(_.t.Hd3D8W),
         actions: [{
             variant: "primary",
-            text: u.intl.string(u.t.cpT0Cq),
+            text: _.intl.string(_.t.cpT0Cq),
             onClick: t
         }],
         onClose: t,
         transitionState: n,
-        children: (0, i.jsx)(r.Text, {
+        children: (0, i.jsx)(s.Text, {
             variant: "text-md/medium",
             color: "text-subtle",
-            children: u.intl.string(u.t.Ij97SL)
+            children: _.intl.string(_.t.Ij97SL)
         })
     })
 }
 
-function p(e) {
+function E(e) {
     let {
         quest: t,
         sourceQuestContent: n,
-        transitionState: s,
-        onClose: u,
-        rewardContent: p,
-        isRewardContentLoading: f,
-        rewardContentHasError: v,
-        location: _
-    } = e, x = l.uF.REWARD_MODAL, [h, C] = a.useState(!0), A = a.useCallback(async () => {
-        await (0, d.f7)(t.config.ctaConfig.link) && (u(), (0, r.s7G)())
-    }, [t.config.ctaConfig.link, u]);
-    if (v) return (0, i.jsx)(g, {
-        onClose: u,
-        transitionState: s
+        transitionState: r,
+        onClose: _,
+        rewardContent: E,
+        isRewardContentLoading: m,
+        rewardContentHasError: h,
+        location: S
+    } = e, g = l.uF.REWARD_MODAL, [f, A] = a.useState(!0), v = a.useCallback(async () => {
+        await (0, d.f7)(t.config.ctaConfig.link) && (_(), (0, s.s7G)())
+    }, [t.config.ctaConfig.link, _]);
+    if (h) return (0, i.jsx)(p, {
+        onClose: _,
+        transitionState: r
     });
-    let N = f || h;
+    let N = m || f;
     return (0, i.jsx)(o.R, {
         questOrQuests: t,
-        questContent: x,
+        questContent: g,
         sourceQuestContent: n,
         children: e => (0, i.jsxs)(i.Fragment, {
-            children: [N ? (0, i.jsx)(r.y$y, {
-                className: m.u1,
-                type: r.y$y.Type.WANDERING_CUBES
+            children: [N ? (0, i.jsx)(s.y$y, {
+                className: u.u1,
+                type: s.y$y.Type.WANDERING_CUBES
             }) : null, (0, i.jsx)("div", {
                 ref: e,
                 style: {
                     visibility: N ? "hidden" : "visible"
                 },
-                children: (0, i.jsxs)(r.EOs, {
+                children: (0, i.jsxs)(s.EOs, {
                     "data-migration-pending": !0,
-                    transitionState: N ? r.ip4.HIDDEN : s,
-                    size: r.rIJ.DYNAMIC,
-                    className: m.yl,
+                    transitionState: N ? s.ip4.HIDDEN : r,
+                    size: s.rIJ.DYNAMIC,
+                    className: u.yl,
                     parentComponent: "QuestRewardModalBase",
-                    children: [(0, i.jsx)(r.s_y, {
+                    children: [(0, i.jsx)(s.s_y, {
                         "data-migration-pending": !0,
-                        className: m.b,
-                        onClick: u,
+                        className: u.b,
+                        onClick: _,
                         withCircleBackground: !0
                     }), (0, i.jsxs)("div", {
-                        className: m.jE,
+                        className: u.jE,
                         children: [(0, i.jsx)("div", {
-                            className: m._H,
-                            children: p
+                            className: u._H,
+                            children: E
                         }), (0, i.jsx)("div", {
-                            className: m.xK,
+                            className: u.xK,
                             children: (0, i.jsx)(c.A, {
                                 quest: t,
                                 sourceQuestContent: n,
-                                onLoadComplete: () => C(!1),
-                                preCtaClick: A,
-                                location: _
+                                onLoadComplete: () => A(!1),
+                                preCtaClick: v,
+                                location: S
                             })
                         })]
                     })]

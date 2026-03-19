@@ -1,52 +1,54 @@
 /** chunk id: 196291 params = (module,exports,require) **/
 n.d(t, {
-    A: () => G
+    A: () => k
 });
 var i = n(627968),
     s = n(64700),
     l = n(311907),
     a = n(397927),
-    r = n(631670),
-    o = n(793574),
-    d = n(688810),
-    c = n(422936),
-    u = n(234419),
-    _ = n(10368),
-    m = n(535646),
-    g = n(511484),
-    A = n(202639),
-    x = n(811611),
-    h = n(407217),
-    p = n(101058),
-    T = n(207803),
+    r = n(793574),
+    o = n(688810),
+    d = n(422936),
+    c = n(234419),
+    u = n(10368),
+    _ = n(535646),
+    m = n(511484),
+    g = n(202639),
+    A = n(811611),
+    x = n(407217),
+    h = n(101058),
+    p = n(207803),
+    T = n(84540),
     E = n(836602),
     S = n(954571),
-    f = n(927578),
-    C = n(884546),
-    b = n(597551),
-    N = n(230084),
-    I = n(180020),
-    v = n(212168),
-    j = n(730588),
-    y = n(63675),
-    R = n(253604),
-    O = n(652215),
-    L = n(788868),
-    D = n(355097),
-    P = n(985018),
-    M = n(219501);
+    f = n(515718),
+    C = n(927578),
+    b = n(919395),
+    N = n(884546),
+    I = n(597551),
+    v = n(230084),
+    j = n(180020),
+    y = n(212168),
+    R = n(730588),
+    O = n(63675),
+    L = n(253604),
+    D = n(652215),
+    P = n(788868),
+    M = n(355097),
+    G = n(985018),
+    U = n(219501);
 
-function G(e) {
+function k(e) {
     let {
         user: t,
         isVisible: n,
-        shouldShow: G
-    } = e, U = f.Ay.isPremium(t), k = f.Ay.canUseAnimatedAvatar(t), {
-        pendingAvatar: V,
-        pendingThemeColors: w,
-        tryItOutThemeColors: B,
-        tryItOutAvatar: H,
-        tryItOutBanner: F
+        shouldShow: k
+    } = e, V = C.Ay.isPremium(t), w = C.Ay.canUseAnimatedAvatar(t), {
+        pendingAvatar: B,
+        pendingThemeColors: H,
+        tryItOutThemeColors: F,
+        tryItOutAvatar: Y,
+        tryItOutBanner: z
     } = (0, l.cf)([E.A], () => {
         let e = E.A.getPendingChanges(),
             t = E.A.getErrors(),
@@ -57,122 +59,140 @@ function G(e) {
             errors: t
         }
     }), {
-        preset: Y,
-        onShuffle: z
-    } = (0, _.A)(), X = s.useRef(null);
-    (0, b.A)(X, D._F.TRY_IT_OUT);
+        preset: X,
+        onShuffle: W
+    } = (0, u.A)(), K = s.useRef(null);
+    (0, I.A)(K, M._F.TRY_IT_OUT);
     let {
-        analyticsLocations: W,
-        newestAnalyticsLocation: K,
-        sourceAnalyticsLocations: Z
-    } = (0, d.Ay)(o.A.USER_SETTINGS_TRY_OUT_PREMIUM), q = e => {
-        e && ((0, r.zq)(H), (0, T.Zz)(B), (0, T.Dv)(F), S.default.track(O.HAw.TRY_IT_OUT_PRESET_SELECTED, {
-            preset: Y
+        analyticsLocations: Z,
+        newestAnalyticsLocation: q,
+        sourceAnalyticsLocations: J
+    } = (0, o.Ay)(r.A.USER_SETTINGS_TRY_OUT_PREMIUM), Q = e => {
+        e && (z?.startsWith("https:") === !0 ? fetch(z).then(e => e.blob()).then(e => (0, f.We)(e)).then(e => {
+            (0, T.p)({
+                avatar: Y,
+                themeColors: F,
+                banner: e
+            })
+        }).catch(() => {
+            (0, T.p)({
+                avatar: Y,
+                themeColors: F
+            })
+        }) : null != z ? (0, T.p)({
+            avatar: Y,
+            themeColors: F,
+            banner: z
+        }) : (0, T.p)({
+            avatar: Y,
+            themeColors: F
+        }), (0, b.WU)(Y), S.default.track(D.HAw.TRY_IT_OUT_PRESET_SELECTED, {
+            preset: X
         }))
     };
     s.useEffect(() => {
-        n && S.default.track(O.HAw.PREMIUM_UPSELL_VIEWED, {
-            type: L.e.PREMIUM_PROFILE_TRY_IT_OUT,
+        n && S.default.track(D.HAw.PREMIUM_UPSELL_VIEWED, {
+            type: P.e.PREMIUM_PROFILE_TRY_IT_OUT,
             location: {
-                page: O.liQ.USER_SETTINGS
+                page: D.liQ.USER_SETTINGS
             },
-            location_stack: Z
+            location_stack: J
         })
-    }, [Z, t, n]);
-    let J = (0, u.V)()?.subscription_trial?.sku_id === L.pe.TIER_2,
-        Q = (0, c.O)(),
-        $ = (0, g.U9)(Q, L.pe.TIER_2);
-    return G ? (0, i.jsx)(d.f5, {
-        value: W,
-        children: (0, i.jsxs)(v.A, {
-            ref: X,
-            className: M.MT,
-            type: v.i.PREMIUM,
+    }, [J, t, n]);
+    let $ = (0, c.V)()?.subscription_trial?.sku_id === P.pe.TIER_2,
+        ee = (0, d.O)(),
+        et = (0, m.U9)(ee, P.pe.TIER_2);
+    return k ? (0, i.jsx)(o.f5, {
+        value: Z,
+        children: (0, i.jsxs)(y.A, {
+            ref: K,
+            className: U.MT,
+            type: y.i.PREMIUM,
             isShown: !0,
             hasBackground: !0,
-            children: [(0, i.jsx)(C.A, {
+            children: [(0, i.jsx)(N.A, {
                 stickyPreview: !1,
-                layoutClassName: M.th,
+                layoutClassName: U.th,
                 profilePreviewTitle: (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(a.tvc, {
                         size: "md",
                         color: "currentColor",
-                        className: M.PC
-                    }), P.intl.string(P.t.gMlDNd)]
+                        className: U.PC
+                    }), G.intl.string(G.t.gMlDNd)]
                 }),
                 profilePreview: (0, i.jsxs)(i.Fragment, {
-                    children: [(0, i.jsx)(m.A, {
-                        preset: Y,
-                        onShuffle: z
-                    }), (0, i.jsx)(R.A, {
+                    children: [(0, i.jsx)(_.A, {
+                        preset: X,
+                        onShuffle: W
+                    }), (0, i.jsx)(L.A, {
                         user: t
                     })]
                 }),
                 children: (0, i.jsxs)("div", {
-                    className: M.EN,
+                    className: U.EN,
                     children: [(0, i.jsxs)("div", {
                         children: [(0, i.jsx)(a.Heading, {
                             variant: "heading-xl/extrabold",
-                            children: P.intl.string(P.t["2zGdAW"])
+                            children: G.intl.string(G.t["2zGdAW"])
                         }), (0, i.jsx)(a.Text, {
-                            className: M.h_,
+                            className: U.h_,
                             variant: "text-sm/normal",
-                            children: P.intl.string(P.t.xeEC20)
+                            children: G.intl.string(G.t.xeEC20)
                         })]
-                    }), (0, i.jsx)(y.A, {
-                        className: M.fz,
+                    }), (0, i.jsx)(O.A, {
+                        className: U.fz,
                         user: t,
-                        pendingAvatarSrc: (0, p.V7)({
+                        pendingAvatarSrc: (0, h.V7)({
                             userId: t.id,
-                            image: H ?? V
+                            image: Y ?? B
                         }),
-                        pendingColors: B ?? w,
-                        onThemeColorsChange: T.a,
+                        pendingColors: F ?? H,
+                        onThemeColorsChange: p.a,
                         showPremiumIcon: !1,
                         preventDisabled: !0
-                    }), (0, i.jsx)(j.A, {
-                        className: M.fz,
+                    }), (0, i.jsx)(R.A, {
+                        className: U.fz,
                         isTryItOut: !0,
-                        showRemoveBannerButton: null != F,
-                        onBannerChange: T.xe,
+                        showRemoveBannerButton: null != z,
+                        onBannerChange: p.xe,
                         showPremiumIcon: !1
-                    }), !k && (0, i.jsx)(N.A, {
-                        className: M.fz,
+                    }), !w && (0, i.jsx)(v.A, {
+                        className: U.fz,
                         isTryItOut: !0,
-                        onAvatarChange: T.e$,
+                        onAvatarChange: p.e$,
                         showRemoveAvatarButton: !1,
-                        changeAvatarButtonText: P.intl.string(P.t["7z0D1c"]),
-                        sectionTitle: P.intl.string(P.t.vtFfPX)
-                    }), (0, i.jsx)(I.A, {
+                        changeAvatarButtonText: G.intl.string(G.t["7z0D1c"]),
+                        sectionTitle: G.intl.string(G.t.vtFfPX)
+                    }), (0, i.jsx)(j.A, {
                         user: t,
-                        className: M.fz
-                    }), !J && (0, i.jsx)(a.Text, {
+                        className: U.fz
+                    }), !$ && (0, i.jsx)(a.Text, {
                         variant: "text-sm/normal",
-                        children: P.intl.string(P.t["smo74/"])
+                        children: G.intl.string(G.t["smo74/"])
                     })]
                 })
-            }), !J && (0, i.jsx)(A.d, {
-                onSubscribeModalClose: q,
-                className: M.Kv,
+            }), !$ && (0, i.jsx)(g.d, {
+                onSubscribeModalClose: Q,
+                className: U.Kv,
                 showUpsell: !0,
-                text: P.intl.format(P.t.TmfgI2, {
+                text: G.intl.format(G.t.TmfgI2, {
                     onClick: () => {
-                        (0, h.K)({
-                            analyticsSource: K,
-                            onSubscribeFinish: q
+                        (0, x.K)({
+                            analyticsSource: q,
+                            onSubscribeFinish: Q
                         })
                     }
                 }),
-                button: U ? P.intl.string(P.t.AfRWI8) : $ ? P.intl.formatToPlainString(P.t.bkQ4bH, {
-                    percent: Q?.discount.amount
-                }) : P.intl.string(P.t.pj0XBN),
+                button: V ? G.intl.string(G.t.AfRWI8) : et ? G.intl.formatToPlainString(G.t.bkQ4bH, {
+                    percent: ee?.discount.amount
+                }) : G.intl.string(G.t.pj0XBN),
                 position: "inline"
-            }), J && (0, i.jsxs)("div", {
+            }), $ && (0, i.jsxs)("div", {
                 children: [(0, i.jsx)("div", {
-                    className: M.BU
-                }), (0, i.jsx)(x.Ay, {
-                    type: L.e.CUSTOM_PROFILE_TRY_OUT_UPSELL,
-                    subscriptionTier: L.pe.TIER_2
+                    className: U.BU
+                }), (0, i.jsx)(A.Ay, {
+                    type: P.e.CUSTOM_PROFILE_TRY_OUT_UPSELL,
+                    subscriptionTier: P.pe.TIER_2
                 })]
             })]
         })

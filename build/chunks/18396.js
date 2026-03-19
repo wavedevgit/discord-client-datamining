@@ -1,6 +1,6 @@
 /** chunk id: 18396 params = (module,exports,require) **/
 s.d(t, {
-    A: () => p
+    A: () => h
 });
 var l = s(627968),
     a = s(64700),
@@ -14,21 +14,21 @@ var l = s(627968),
     m = s(241015),
     _ = s(985018),
     x = s(786344),
-    h = s(402141);
+    p = s(402141);
 
-function p(e) {
+function h(e) {
     let {
         selectedColors: t,
         setSelectedColors: s,
-        defaultColor: p,
+        defaultColor: h,
         selectedEffectId: g,
         className: f
     } = e, N = g === n.z.GRADIENT, C = (0, a.useCallback)(e => {
         s([e]), d.default.track(u.HAw.DISPLAY_NAME_STYLES_COLOR_SELECTED, {
-            default: e === p,
+            default: e === h,
             colors: [e]
         })
-    }, [s, p]), A = (0, a.useCallback)(e => {
+    }, [s, h]), A = (0, a.useCallback)(e => {
         s(e), d.default.track(u.HAw.DISPLAY_NAME_STYLES_COLOR_SELECTED, {
             default: !1,
             colors: e
@@ -38,7 +38,7 @@ function p(e) {
         className: f,
         children: [(0, l.jsxs)(i.DZT, {
             variant: "heading-md/semibold",
-            className: h.s,
+            className: p.s,
             children: [_.intl.string(m.default.JOpi7z), (0, l.jsx)(r.tvc, {
                 size: "xs",
                 color: r.LU0.colors.TEXT_DEFAULT
@@ -46,7 +46,7 @@ function p(e) {
         }), (0, l.jsx)(o.default, {
             className: x.Ei,
             colorContainerClassName: x.rx,
-            defaultColor: p,
+            defaultColor: h,
             colors: N ? c.Wf : c.Jl,
             value: t[0],
             secondaryValue: t[1] ?? void 0,

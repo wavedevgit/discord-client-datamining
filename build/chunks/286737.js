@@ -1,38 +1,38 @@
 /** chunk id: 286737 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => _
 });
 var a = n(627968),
     l = n(64700),
     i = n(311907),
     r = n(397927),
     s = n(289363),
-    c = n(287809),
-    o = n(486020),
+    o = n(287809),
+    c = n(486020),
     d = n(409626),
     u = n(305080),
     m = n(985018),
     x = n(889983);
 
-function f(e) {
+function _(e) {
     let {
         trackAction: t
     } = e, {
         fetchedAuthorization: n,
-        hasAlreadyLinked: f,
-        canStartAuthorization: h,
-        startAuthorization: g,
+        hasAlreadyLinked: _,
+        canStartAuthorization: g,
+        startAuthorization: f,
         connectionApp: p,
-        officialInvite: _
-    } = (0, u.c)(), v = (0, i.bG)([c.default], () => c.default.getCurrentUser()), j = l.useCallback(() => {
-        t(d.Ws.LinkAccount), g({
+        officialInvite: h
+    } = (0, u.c)(), v = (0, i.bG)([o.default], () => o.default.getCurrentUser()), A = l.useCallback(() => {
+        t(d.Ws.LinkAccount), f({
             analyticsLocations: ["game_profile"]
         })
-    }, [t, g]);
-    if (!n || null == p || !h || f || null == v) return null;
-    let A = _?.guild != null ? o.Ay.getGuildSplashURL({
-        id: _.guild.id,
-        splash: _.guild.splash
+    }, [t, f]);
+    if (!n || null == p || !g || _ || null == v) return null;
+    let j = h?.guild != null ? c.Ay.getGuildSplashURL({
+        id: h.guild.id,
+        splash: h.guild.splash
     }) : null;
     return (0, a.jsxs)("div", {
         className: x.uW,
@@ -43,9 +43,9 @@ function f(e) {
             children: m.intl.string(m.t["VDAhr+"])
         }), (0, a.jsxs)("div", {
             className: x.kL,
-            children: [null != A ? (0, a.jsx)("img", {
+            children: [null != j ? (0, a.jsx)("img", {
                 className: x.ll,
-                src: A,
+                src: j,
                 alt: ""
             }) : (0, a.jsx)("div", {
                 className: x.sB,
@@ -71,7 +71,7 @@ function f(e) {
                     variant: "secondary",
                     icon: r.A5T,
                     text: m.intl.string(m.t.jynBQ5),
-                    onClick: j,
+                    onClick: A,
                     fullWidth: !0
                 })]
             })]

@@ -13,8 +13,8 @@ var a = n(64700),
     o = n(775602),
     d = n(4227),
     c = n(993408),
-    u = n(919395),
-    m = n(587600),
+    u = n(587600),
+    m = n(84540),
     h = n(836602),
     x = n(544028),
     p = n(253932),
@@ -63,17 +63,11 @@ async function S() {
         a = t.length > 0,
         i = n.length > 0;
     if (a || i) try {
-        if (a) {
-            let e = y([...t, null]);
-            (0, u.Dx)(e)
-        }
-        if (i) {
-            let e = y([...n, null]);
-            (0, u.pX)(e)
-        }
-        let e = h.A.getPendingChanges(),
-            s = (0, m.Sk)(e);
-        await (0, l._L)(s).finally(l.pZ)
+        let e = {};
+        a && (e.avatarDecoration = y([...t, null])), i && (e.nameplate = y([...n, null])), (0, m.p)(e);
+        let s = h.A.getPendingChanges(),
+            r = (0, u.Sk)(s);
+        await (0, l._L)(r).finally(l.pZ)
     } catch (e) {}
 }
 
@@ -110,9 +104,12 @@ function N() {
                     theme: f,
                     backgroundGradientPresetId: v ?? void 0,
                     customUserThemeSettings: void 0
-                }, g.Sb.INFREQUENT_USER_ACTION), (0, u.Dx)(A), (0, u.pX)(C);
+                }, g.Sb.INFREQUENT_USER_ACTION), (0, m.p)({
+                    avatarDecoration: A,
+                    nameplate: C
+                });
                 let e = h.A.getPendingChanges(),
-                    t = (0, m.Sk)(e);
+                    t = (0, u.Sk)(e);
                 (0, l._L)(t).finally(l.pZ), (0, r.XS)(y), (0, r.AC)(T), p.Xi.updateSetting(S)
             } catch (e) {}
         }

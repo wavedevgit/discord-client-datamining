@@ -1,6 +1,6 @@
 /** chunk id: 217549 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => y
 }), n(321073);
 var i = n(627968),
     a = n(64700),
@@ -25,12 +25,12 @@ var i = n(627968),
     N = n(715671),
     S = n(652215),
     x = n(985018);
-let y = d.A.get(S.fg2.XBOX).name;
+let v = d.A.get(S.fg2.XBOX).name;
 
-function v(e) {
+function y(e) {
     let {
         currentActivities: t
-    } = e, n = t.length > 1, v = function(e) {
+    } = e, n = t.length > 1, y = function(e) {
         let {
             currentActivities: t
         } = e, n = (0, r.bG)([p.A], () => p.A.getAccounts().some(e => e.type === d.A.get(S.fg2.XBOX).type)), a = t.some(e => {
@@ -43,7 +43,7 @@ function v(e) {
             id: "xbox-connect",
             action: () => (0, g.openUserSettings)(m.X.CONNECTIONS_PANEL),
             label: x.intl.formatToPlainString(x.t.XWSHTb, {
-                platform: y
+                platform: v
             })
         })
     }(e), b = function(e) {
@@ -136,5 +136,5 @@ function v(e) {
             })
         }(e, n))
     }
-    return [v, ...O]
+    return [y, ...O]
 }

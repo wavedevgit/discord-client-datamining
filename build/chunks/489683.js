@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(707606),
     S = n(155718),
     x = n(933958),
-    y = n(967812),
-    v = n(404522),
+    v = n(967812),
+    y = n(404522),
     b = n(782091),
     O = n(641703),
     L = n(521588),
@@ -79,8 +79,8 @@ var i = n(627968),
     eN = n(616356),
     eS = n(961350),
     ex = n(734057),
-    ey = n(71393),
-    ev = n(186111),
+    ev = n(71393),
+    ey = n(186111),
     eb = n(430452),
     eO = n(576705),
     eL = n(383501),
@@ -224,11 +224,11 @@ function eJ(e) {
         };
         (0, w.X)(o, w.O.CAMERA, e), e ? (0, eC.A)(n, T) : n()
     }, [t, T, o]), S = A || n || h, {
-        Component: y,
-        play: v,
+        Component: v,
+        play: y,
         events: b
     } = (0, m.K)(d.enabled ? "disable" : "enable");
-    return a.useEffect(() => () => v(), [d.enabled, v]), (0, i.jsx)(eT.r, {
+    return a.useEffect(() => () => y(), [d.enabled, y]), (0, i.jsx)(eT.r, {
         onChange: N,
         onCameraUnavailable: C,
         hasPermission: u,
@@ -244,7 +244,7 @@ function eJ(e) {
                 iconComponent: r,
                 iconColor: d,
                 ...c
-            } = e, u = (0, i.jsx)(y, {
+            } = e, u = (0, i.jsx)(v, {
                 size: "md",
                 className: l()(ez.iA, {
                     [ez.ij]: !S
@@ -325,7 +325,7 @@ function e0(e) {
         userInActivity: _
     } = (0, c.cf)([x.Ay], () => ({
         userInActivity: null != x.Ay.getSelfEmbeddedActivityForChannel(t.id)
-    })), m = (0, v.b)({
+    })), m = (0, y.b)({
         surface: S.YI.VOICE_LAUNCHER,
         skipFetchingShelf: !0
     }), g = d !== b.xy.CAN_LAUNCH, {
@@ -478,9 +478,9 @@ function e7(e) {
             (0, ef.A)(f, n.id, A)
         }, [f, n.id, A]),
         S = m.find(e => e.ownerId === h?.id),
-        y = (0, ep.T)(n, h, m);
+        v = (0, ep.T)(n, h, m);
     t = null == S ? r ? N : eI.A : () => (0, K.A)(S);
-    let v = null != S || y.length > 0,
+    let y = null != S || v.length > 0,
         b = g ? eq.intl.string(eq.t.fjBNo1) : eq.intl.string(eq.t.uQn9B8),
         O = C || s || T,
         L = null != S,
@@ -530,14 +530,14 @@ function e7(e) {
                     buttonRef: d,
                     size: E.$n.Sizes.MEDIUM,
                     onClick: e => {
-                        (0, w.X)(u, w.O.STREAM, null == S), v ? n(e) : t()
+                        (0, w.X)(u, w.O.STREAM, null == S), y ? n(e) : t()
                     },
                     disabled: !g || o,
                     className: l()(ez.x6, ez.Sq, {
                         [ez.rK]: null != S,
                         [ez.r9]: !g || o
                     }),
-                    ...v ? r : null,
+                    ...y ? r : null,
                     onMouseEnter: () => {
                         a?.(), D.onMouseEnter()
                     },
@@ -822,7 +822,7 @@ let e5 = (0, N.A)(function(e) {
         }),
         o = (0, c.bG)([ex.A], () => ex.A.getChannel(l), [l]),
         d = o?.getGuildId(),
-        u = (0, c.bG)([ey.A], () => ey.A.getGuild(d), [d]),
+        u = (0, c.bG)([ev.A], () => ev.A.getGuild(d), [d]),
         A = (0, c.cf)([eb.Ay], () => ({
             noiseCancellationSupported: eb.Ay.isNoiseCancellationSupported(),
             noiseCancellationActive: (0, Z.A)(eb.Ay.getNoiseCancellation(), eb.Ay.getSystemMicrophoneMode()),
@@ -832,7 +832,7 @@ let e5 = (0, N.A)(function(e) {
         h = (0, c.bG)([eb.Ay, z.A], () => z.A.hasHotspot(eW._.VOICE_PANEL_INTRODUCTION) && (0, eU.mv)(r) && !eb.Ay.isInteractionRequired() && !o?.isGuildStageVoice()),
         _ = (0, c.bG)([eD.A], () => null != l && eD.A.hasVideo(l), [l]),
         m = (0, c.bG)([eN.A], () => eN.A.getCurrentUserActiveStream()),
-        g = (0, c.bG)([ev.A], () => ev.A.hasLayers()),
+        g = (0, c.bG)([ey.A], () => ey.A.hasLayers()),
         p = (0, c.bG)([$.A], () => $.A.isViewingRoles(d)),
         E = (0, c.bG)([eO.A], () => p && !eO.A.can(eH.xBc.VIEW_CHANNEL, o), [p, o]),
         f = eh.vL.useSetting(),
@@ -849,13 +849,13 @@ let e5 = (0, N.A)(function(e) {
                 voiceState: i
             }
         }) ?? N ?? [], [C, T, N]),
-        [x, v] = a.useState(!1);
+        [x, y] = a.useState(!1);
     a.useEffect(() => {
-        (p || E) && v(!1)
-    }, [p, E, v]);
+        (p || E) && y(!1)
+    }, [p, E, y]);
     let {
         analyticsLocations: b
-    } = (0, P.Ay)(R.A.RTC_PANEL), L = (0, y.A)(d ?? eH.dJq, o?.id), D = (0, O.A)(o?.id), M = (0, et.T)({
+    } = (0, P.Ay)(R.A.RTC_PANEL), L = (0, v.A)(d ?? eH.dJq, o?.id), D = (0, O.A)(o?.id), M = (0, et.T)({
         location: "RTCConnection"
     }), j = (0, en.A)({
         channelId: o?.id
@@ -894,7 +894,7 @@ let e5 = (0, N.A)(function(e) {
                     size: "sm",
                     fullWidth: !0,
                     onClick: () => {
-                        v(!0)
+                        y(!0)
                     },
                     text: eq.intl.string(eq.t.WAI6xu),
                     focusProps: e$

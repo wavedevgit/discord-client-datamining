@@ -1,92 +1,92 @@
 /** chunk id: 888363 params = (module,exports,require) **/
 n.d(e, {
-    default: () => S
+    default: () => A
 });
 var l = n(627968),
     r = n(64700),
-    s = n(397927),
-    a = n(830215),
-    i = n(631670),
+    a = n(397927),
+    i = n(830215),
+    s = n(631670),
     o = n(235986),
-    c = n(894778),
-    u = n(954571),
-    d = n(53505),
-    _ = n(652215),
-    m = n(315290),
-    p = n(985018),
-    f = n(304629);
+    _ = n(894778),
+    c = n(954571),
+    u = n(53505),
+    d = n(652215),
+    E = n(315290),
+    S = n(985018),
+    p = n(304629);
 
-function g(t) {
+function T(t) {
     let {
         email: e,
         setEmail: n,
-        claimRequired: u,
-        onSuccess: d,
-        onClose: _
-    } = t, [g, N] = r.useState(), [S, A] = r.useState(""), [C, w] = r.useState(""), [T, h] = r.useState(!1);
-    r.useEffect(() => c.A.flowStep(m.do.ANY, m.hc.CLAIM_ACCOUNT), []);
-    let x = async t => {
-        t.preventDefault(), h(!0), N(""), w("");
+        claimRequired: c,
+        onSuccess: u,
+        onClose: d
+    } = t, [T, h] = r.useState(), [A, m] = r.useState(""), [N, I] = r.useState(""), [f, C] = r.useState(!1);
+    r.useEffect(() => _.A.flowStep(E.do.ANY, E.hc.CLAIM_ACCOUNT), []);
+    let R = async t => {
+        t.preventDefault(), C(!0), h(""), I("");
         try {
-            await (0, i.KD)({
+            await (0, s.KD)({
                 email: e,
-                password: S
-            }), h(!1), d()
+                password: A
+            }), C(!1), u()
         } catch (t) {
-            t?.body?.email && N(t.body.email), t?.body?.password && w(t.body.password), h(!1)
+            t?.body?.email && h(t.body.email), t?.body?.password && I(t.body.password), C(!1)
         }
     };
     return (0, l.jsxs)("div", {
-        children: [(0, l.jsxs)(s.rQ0, {
-            className: f._5,
+        children: [(0, l.jsxs)(a.rQ0, {
+            className: p._5,
             direction: o.A.Direction.VERTICAL,
             separator: !1,
             children: [(0, l.jsx)("div", {
-                className: f.gD
-            }), (0, l.jsx)(s.Heading, {
-                className: f.Hc,
+                className: p.gD
+            }), (0, l.jsx)(a.Heading, {
+                className: p.Hc,
                 variant: "heading-xl/semibold",
-                children: p.intl.string(p.t["uQShv/"])
-            }), (0, l.jsx)(s.Text, {
-                className: f.bQ,
+                children: S.intl.string(S.t["uQShv/"])
+            }), (0, l.jsx)(a.Text, {
+                className: p.bQ,
                 variant: "text-md/normal",
                 color: "text-default",
-                children: u ? p.intl.string(p.t.sW28gZ) : p.intl.string(p.t["gP/vPe"])
-            }), (0, l.jsx)(s.s_y, {
-                className: f.b,
-                onClick: _
+                children: c ? S.intl.string(S.t.sW28gZ) : S.intl.string(S.t["gP/vPe"])
+            }), (0, l.jsx)(a.s_y, {
+                className: p.b,
+                onClick: d
             })]
-        }), (0, l.jsx)(s.$mQ, {
+        }), (0, l.jsx)(a.$mQ, {
             children: (0, l.jsx)("form", {
-                className: f.oB,
-                onSubmit: x,
-                children: (0, l.jsxs)(s.BJc, {
+                className: p.oB,
+                onSubmit: R,
+                children: (0, l.jsxs)(a.BJc, {
                     gap: 16,
-                    children: [(0, l.jsx)(s.ksK, {
-                        label: p.intl.string(p.t.dI4d4S),
+                    children: [(0, l.jsx)(a.ksK, {
+                        label: S.intl.string(S.t.dI4d4S),
                         value: e,
-                        error: g,
+                        error: T,
                         onChange: t => n(t),
                         autoFocus: !0
-                    }), (0, l.jsx)(s.ksK, {
-                        label: p.intl.string(p.t["CIGa+7"]),
+                    }), (0, l.jsx)(a.ksK, {
+                        label: S.intl.string(S.t["CIGa+7"]),
                         type: "password",
-                        value: S,
-                        error: C,
-                        onChange: t => A(t)
-                    }), (0, l.jsx)(s.Button, {
-                        text: p.intl.string(p.t.fiNVin),
+                        value: A,
+                        error: N,
+                        onChange: t => m(t)
+                    }), (0, l.jsx)(a.Button, {
+                        text: S.intl.string(S.t.fiNVin),
                         variant: "primary",
                         fullWidth: !0,
                         type: "submit",
-                        loading: T,
-                        disabled: 0 === e.length || 0 === S.length
-                    }), u && (0, l.jsx)("div", {
-                        className: f.pV,
-                        children: (0, l.jsx)(s.QWc, {
-                            text: p.intl.string(p.t["2jxGer"]),
+                        loading: f,
+                        disabled: 0 === e.length || 0 === A.length
+                    }), c && (0, l.jsx)("div", {
+                        className: p.pV,
+                        children: (0, l.jsx)(a.QWc, {
+                            text: S.intl.string(S.t["2jxGer"]),
                             onClick: () => {
-                                a.A.logout("claim_account_modal"), _()
+                                i.A.logout("claim_account_modal"), d()
                             }
                         })
                     })]
@@ -96,48 +96,48 @@ function g(t) {
     })
 }
 
-function N(t) {
+function h(t) {
     let {
         email: e,
         claimRequired: n,
-        onClose: a
-    } = t, i = n ? p.t.D7trIB : p.t.JNWX7G;
-    return r.useEffect(() => c.A.flowStep(m.do.ANY, m.hc.CLAIM_ACCOUNT_SUCCESS), []), (0, l.jsxs)("div", {
-        children: [(0, l.jsxs)(s.$mQ, {
-            className: f.Zc,
-            children: [!n && (0, l.jsx)(s.s_y, {
-                className: f.b,
-                onClick: a
+        onClose: i
+    } = t, s = n ? S.t.D7trIB : S.t.JNWX7G;
+    return r.useEffect(() => _.A.flowStep(E.do.ANY, E.hc.CLAIM_ACCOUNT_SUCCESS), []), (0, l.jsxs)("div", {
+        children: [(0, l.jsxs)(a.$mQ, {
+            className: p.Zc,
+            children: [!n && (0, l.jsx)(a.s_y, {
+                className: p.b,
+                onClick: i
             }), (0, l.jsx)("div", {
-                className: f.hW
-            }), (0, l.jsx)(s.Text, {
-                className: f.QK,
+                className: p.hW
+            }), (0, l.jsx)(a.Text, {
+                className: p.QK,
                 variant: "text-lg/semibold",
-                children: p.intl.format(i, {
+                children: S.intl.format(s, {
                     email: e
                 })
-            }), (0, l.jsx)(s.Text, {
-                className: f.pQ,
+            }), (0, l.jsx)(a.Text, {
+                className: p.pQ,
                 variant: "text-md/normal",
-                children: p.intl.string(p.t.eXqM2d)
+                children: S.intl.string(S.t.eXqM2d)
             })]
-        }), n ? (0, l.jsx)(s.jlY, {
+        }), n ? (0, l.jsx)(a.jlY, {
             direction: o.A.Direction.VERTICAL,
-            children: (0, l.jsx)(s.Button, {
-                text: p.intl.string(p.t.BddRzS),
+            children: (0, l.jsx)(a.Button, {
+                text: S.intl.string(S.t.BddRzS),
                 variant: "primary",
                 fullWidth: !0,
-                onClick: a
+                onClick: i
             })
-        }) : (0, l.jsx)(s.jlY, {
+        }) : (0, l.jsx)(a.jlY, {
             direction: o.A.Direction.VERTICAL,
-            children: (0, l.jsx)(s.Button, {
-                text: p.intl.string(p.t.ygArIV),
+            children: (0, l.jsx)(a.Button, {
+                text: S.intl.string(S.t.ygArIV),
                 variant: "primary",
                 fullWidth: !0,
                 onClick: function() {
-                    window.open((0, d.SU)(), "_blank"), u.default.track(_.HAw.DOWNLOAD_APP, {
-                        platform: (0, d.Vf)(),
+                    window.open((0, u.SU)(), "_blank"), c.default.track(d.HAw.DOWNLOAD_APP, {
+                        platform: (0, u.Vf)(),
                         ptb: !1,
                         released: !0,
                         has_e_mail: !0,
@@ -150,28 +150,28 @@ function N(t) {
     })
 }
 
-function S(t) {
+function A(t) {
     let {
         onClose: e,
         transitionState: n,
-        claimRequired: a = !1
-    } = t, [i, o] = r.useState(""), [c, u] = r.useState(!1);
-    return c ? (0, l.jsx)(s.EOs, {
+        claimRequired: i = !1
+    } = t, [s, o] = r.useState(""), [_, c] = r.useState(!1);
+    return _ ? (0, l.jsx)(a.EOs, {
         transitionState: n,
         parentComponent: "ClaimAccountModal",
-        children: (0, l.jsx)(N, {
-            email: i,
-            claimRequired: a,
+        children: (0, l.jsx)(h, {
+            email: s,
+            claimRequired: i,
             onClose: e
         })
-    }) : (0, l.jsx)(s.EOs, {
+    }) : (0, l.jsx)(a.EOs, {
         transitionState: n,
         parentComponent: "ClaimAccountModal",
-        children: (0, l.jsx)(g, {
-            email: i,
+        children: (0, l.jsx)(T, {
+            email: s,
             setEmail: o,
-            claimRequired: a,
-            onSuccess: () => u(!0),
+            claimRequired: i,
+            onSuccess: () => c(!0),
             onClose: e
         })
     })

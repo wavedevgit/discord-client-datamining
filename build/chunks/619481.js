@@ -14,8 +14,8 @@ var l = s(627968),
     m = s(688810),
     _ = s(139286),
     x = s(919395),
-    h = s(71393),
-    p = s(287809),
+    p = s(71393),
+    h = s(287809),
     g = s(954571),
     f = s(871162),
     N = s(945096),
@@ -38,7 +38,7 @@ function y(e) {
         analyticsLocations: s,
         guildId: y,
         onClose: P
-    } = e, w = (0, o.bG)([p.default], () => p.default.getCurrentUser()), R = (0, j.b)(w, y), G = (0, o.bG)([h.A], () => h.A.getGuild(y)), {
+    } = e, w = (0, o.bG)([h.default], () => h.default.getCurrentUser()), R = (0, j.b)(w, y), G = (0, o.bG)([p.A], () => p.A.getGuild(y)), {
         userDisplayNameStyles: O,
         guildDisplayNameStyles: z,
         pendingDisplayNameStyles: M

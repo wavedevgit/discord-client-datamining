@@ -47,8 +47,8 @@ let p = [],
                 })
             }, [C]),
             {
-                quests: y,
-                excludedQuests: v,
+                quests: v,
+                excludedQuests: y,
                 isFetchingCurrentQuests: b,
                 hasFetched: O
             } = (0, d.Qh)(d.NC.ALL, a.useMemo(() => ({
@@ -74,7 +74,7 @@ let p = [],
         }, [N]), (0, d.$P)({
             selectedSortMethod: T,
             selectedFilters: N,
-            numQuestsVisible: y.length
+            numQuestsVisible: v.length
         }), a.useImperativeHandle(t, () => ({
             resetSortingFiltering: () => {
                 L(), S(_.kL.SUGGESTED)
@@ -101,8 +101,8 @@ let p = [],
                 })]
             }), (0, i.jsx)(A.A, {
                 ref: n,
-                quests: y,
-                excludedQuests: v,
+                quests: v,
+                excludedQuests: y,
                 isFetching: b,
                 hasFetched: O,
                 hasFiltersApplied: N.length > 0,

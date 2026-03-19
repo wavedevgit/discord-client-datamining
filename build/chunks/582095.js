@@ -25,8 +25,8 @@ var i = n(311907),
     N = n(639621),
     S = n(652215),
     x = n(360469),
-    y = n(165610),
-    v = n(731854);
+    v = n(165610),
+    y = n(731854);
 class b {
     rpcServer;
     transports;
@@ -97,7 +97,7 @@ class b {
     handleSpeaking = e => {
         if (0 === this.rpcServer.subscriptions.length) return;
         let t = 0 !== e.speakingFlags ? S.ZE4.SPEAKING_START : S.ZE4.SPEAKING_STOP;
-        if (e.context === v.x.DEFAULT) {
+        if (e.context === y.x.DEFAULT) {
             let n = m.A.getVoiceChannelId();
             if (null != n) {
                 let i = o.A.getChannel(n);
@@ -173,7 +173,7 @@ class b {
             layoutMode: n
         } = e;
         if (0 === this.rpcServer.subscriptions.length) return;
-        let i = n === y.y.PIP ? x.bN.PIP : x.bN.FOCUSED,
+        let i = n === v.y.PIP ? x.bN.PIP : x.bN.FOCUSED,
             a = i !== x.bN.FOCUSED;
         this.rpcServer.dispatchToSubscriptions(S.ZE4.ACTIVITY_PIP_MODE_UPDATE, e => e.socket.application.id === t, {
             is_pip_mode: a

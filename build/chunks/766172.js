@@ -1,12 +1,12 @@
 /** chunk id: 766172 params = (module,exports,require) **/
-a.d(n, {
-    Y: () => i
+n.d(t, {
+    Y: () => a
 });
-var t = a(575593);
-let i = e => {
+var r = n(575593);
+let a = e => {
     let {
-        product: n,
-        selectedVariantIndex: a
+        product: t,
+        selectedVariantIndex: n
     } = e;
-    return n.type === t.R.VARIANTS_GROUP && null != a ? n.variants?.[a]?.skuId ?? n.skuId : n.skuId
+    return t.type === r.R.VARIANTS_GROUP && null != n ? t.variants?.[n]?.skuId ?? t.skuId : t.skuId
 }

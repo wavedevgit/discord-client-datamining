@@ -21,7 +21,7 @@ let g = function(t) {
         e?.(), (0, d.mMO)(async () => {
             let {
                 default: t
-            } = await Promise.all([n.e("89129"), n.e("65224")]).then(n.bind(n, 354096));
+            } = await Promise.all([n.e("89129"), n.e("68839")]).then(n.bind(n, 354096));
             return e => (0, i.jsx)(t, {
                 ...e
             })

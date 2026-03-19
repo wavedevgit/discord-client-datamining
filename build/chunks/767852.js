@@ -25,16 +25,16 @@ var i = n(627968),
     N = n(954571),
     S = n(674378),
     x = n(240248),
-    y = n(471761),
-    v = n(652215),
+    v = n(471761),
+    y = n(652215),
     b = n(985018),
     O = n(924760);
 let L = (0, x.xI)(u.A.GAME_LIST_ROW_MIN_HEIGHT),
     R = (0, x.xI)(u.A.GAME_LIST_LINKED_TO_GLOW_DURATION),
     P = Object.freeze({
-        [v.DpB.PLATFORM]: "Platform",
-        [v.DpB.LAST_PLAYED]: "Last Played",
-        [v.DpB.NAME]: "Name"
+        [y.DpB.PLATFORM]: "Platform",
+        [y.DpB.LAST_PLAYED]: "Last Played",
+        [y.DpB.NAME]: "Name"
     }),
     D = e => {
         let {
@@ -53,7 +53,7 @@ let L = (0, x.xI)(u.A.GAME_LIST_ROW_MIN_HEIGHT),
         })
     },
     M = [{
-        key: v.DpB.NAME,
+        key: y.DpB.NAME,
         renderHeader: () => b.intl.string(b.t.dBfWfc),
         sort: !0,
         cellClassName: O.UQ,
@@ -69,7 +69,7 @@ let L = (0, x.xI)(u.A.GAME_LIST_ROW_MIN_HEIGHT),
                 children: [(0, i.jsx)("div", {
                     className: O.TF,
                     children: e.libraryApplication.getBranchedName(e.application)
-                }), e.libraryApplication.hasFlag(v.hM6.PREMIUM) ? (0, i.jsx)(c.m, {
+                }), e.libraryApplication.hasFlag(y.hM6.PREMIUM) ? (0, i.jsx)(c.m, {
                     text: b.intl.string(b.t.tG2SzG),
                     children: (0, i.jsx)(A.tvc, {
                         size: "md",
@@ -80,7 +80,7 @@ let L = (0, x.xI)(u.A.GAME_LIST_ROW_MIN_HEIGHT),
             })]
         })
     }, {
-        key: v.DpB.PLATFORM,
+        key: y.DpB.PLATFORM,
         renderHeader: () => b.intl.string(b.t.YR4cHH),
         sort: !0,
         cellClassName: O.AA,
@@ -89,11 +89,11 @@ let L = (0, x.xI)(u.A.GAME_LIST_ROW_MIN_HEIGHT),
             let t = e.libraryApplication.getDistributor();
             return (0, i.jsx)(p.A, {
                 align: p.A.Align.CENTER,
-                children: null != t ? v.gG4[t] : b.intl.string(b.t["F+l3Jt"])
+                children: null != t ? y.gG4[t] : b.intl.string(b.t["F+l3Jt"])
             })
         }
     }, {
-        key: v.DpB.LAST_PLAYED,
+        key: y.DpB.LAST_PLAYED,
         renderHeader: () => b.intl.string(b.t.FDDyjS),
         sort: !0,
         cellClassName: O.SX,
@@ -112,7 +112,7 @@ let L = (0, x.xI)(u.A.GAME_LIST_ROW_MIN_HEIGHT),
             })
         }
     }, {
-        key: v.DpB.ACTIONS,
+        key: y.DpB.ACTIONS,
         renderHeader: () => null,
         cellClassName: O.AT,
         render(e, t, n) {
@@ -123,25 +123,25 @@ let L = (0, x.xI)(u.A.GAME_LIST_ROW_MIN_HEIGHT),
                 children: [(0, i.jsxs)("div", {
                     className: O.nU,
                     children: [(0, i.jsx)(D, {
-                        flag: v.hM6.PRIVATE,
+                        flag: y.hM6.PRIVATE,
                         item: e,
                         icon: A.G3N,
                         tooltip: b.intl.string(b.t.NozAop)
                     }), (0, i.jsx)(D, {
-                        flag: v.hM6.OVERLAY_DISABLED,
+                        flag: y.hM6.OVERLAY_DISABLED,
                         item: e,
                         icon: A.nkR,
                         tooltip: b.intl.string(b.t.Az9eqn)
-                    }), (0, i.jsx)(y.A, {
+                    }), (0, i.jsx)(v.A, {
                         className: l()(O.up, {
                             [O.R]: !e.supportsCloudSync
                         }),
                         libraryApplication: e.libraryApplication
                     })]
                 }), (0, S.XZ)(e.libraryApplication) ? (0, i.jsx)(g.A, {
-                    analyticsListSort: (r = t.sortKey, s = t.sortDirection, `${P[r]} ${s===v.tSW.ASCENDING?"ASC":"DESC"}`),
+                    analyticsListSort: (r = t.sortKey, s = t.sortDirection, `${P[r]} ${s===y.tSW.ASCENDING?"ASC":"DESC"}`),
                     analyticsListIndex: n,
-                    source: v.ThZ.APPLICATION_LIBRARY,
+                    source: y.ThZ.APPLICATION_LIBRARY,
                     libraryApplication: e.libraryApplication,
                     playButtonVariant: o ? "primary" : "secondary",
                     size: "sm",
@@ -238,33 +238,33 @@ class w extends a.PureComponent {
             } = this.props;
         for (let t of n) {
             switch (t.libraryApplication.getDistributor()) {
-                case v.d3x.DISCORD:
+                case y.d3x.DISCORD:
                     e.num_applications_discord++;
                     break;
-                case v.d3x.STEAM:
+                case y.d3x.STEAM:
                     e.num_applications_steam++;
                     break;
-                case v.d3x.BATTLENET:
+                case y.d3x.BATTLENET:
                     e.num_applications_battlenet++;
                     break;
-                case v.d3x.TWITCH:
+                case y.d3x.TWITCH:
                     e.num_applications_twitch++;
                     break;
-                case v.d3x.UPLAY:
+                case y.d3x.UPLAY:
                     e.num_applications_uplay++;
                     break;
-                case v.d3x.ORIGIN:
+                case y.d3x.ORIGIN:
                     e.num_applications_origin++;
                     break;
-                case v.d3x.GOG:
+                case y.d3x.GOG:
                     e.num_applications_gog++;
                     break;
-                case v.d3x.EPIC:
+                case y.d3x.EPIC:
                     e.num_applications_epic++
             }
             e.num_applications_total++
         }
-        N.default.track(v.HAw.LIBRARY_VIEWED, {
+        N.default.track(y.HAw.LIBRARY_VIEWED, {
             ...e,
             load_id: t.loadId
         })

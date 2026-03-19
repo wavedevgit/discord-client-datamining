@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(780645),
     S = n(72152),
     x = n(502103),
-    y = n(929163),
-    v = n(423183),
+    v = n(929163),
+    y = n(423183),
     b = n(568185),
     O = n(225437),
     L = n(221094),
@@ -419,14 +419,14 @@ function e_(e) {
     a.useEffect(() => {
         t !== et && ee(!W)
     }, [t, et, W]);
-    let [ei, ea] = (0, E.Ay)(e => [el.cA.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(es.m.GUILD_HEADER_TOOLTIPS)], l.x), eo = (0, p.A)(c), ed = (0, u.red)(u.DXt), ec = (0, s.bG)([q.A], () => q.A.hasLayers()), eA = (0, P.xr)(e => e.fullScreenLayers.length > 0), e_ = (0, s.bG)([B.A], () => B.A.shouldShow(eu)), em = (0, v.A)(t), eg = c?.features.has(er.GuildFeatures.HUB) === !0, ep = b && c?.features.has(er.GuildFeatures.DISCOVERABLE) === !0, eE = (0, s.bG)([O.A, q.A], () => null != c && null != k && b && !q.A.hasLayers() && O.A.shouldShowGuildTemplateDirtyTooltip(t)), eI = (0, s.bG)([H.A], () => H.A.getChannel(r)), {
+    let [ei, ea] = (0, E.Ay)(e => [el.cA.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(es.m.GUILD_HEADER_TOOLTIPS)], l.x), eo = (0, p.A)(c), ed = (0, u.red)(u.DXt), ec = (0, s.bG)([q.A], () => q.A.hasLayers()), eA = (0, P.xr)(e => e.fullScreenLayers.length > 0), e_ = (0, s.bG)([B.A], () => B.A.shouldShow(eu)), em = (0, y.A)(t), eg = c?.features.has(er.GuildFeatures.HUB) === !0, ep = b && c?.features.has(er.GuildFeatures.DISCOVERABLE) === !0, eE = (0, s.bG)([O.A, q.A], () => null != c && null != k && b && !q.A.hasLayers() && O.A.shouldShowGuildTemplateDirtyTooltip(t)), eI = (0, s.bG)([H.A], () => H.A.getChannel(r)), {
         isPopoutOpen: ef
     } = (0, S.S)(), eC = c?.features.has(er.GuildFeatures.COMMUNITY) ?? !1, eT = Z.Ay.isNewUser(k), eN = J && !eT;
     (0, x.A)(c);
     let eS = (0, I.JZ)(o.M.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
-        ex = (0, y.A)(t),
-        ey = (0, s.bG)([Q.A], () => Q.A.getChannelId()),
-        ev = (0, s.bG)([$.A], () => $.A.desyncedVoiceStatesCount),
+        ex = (0, v.A)(t),
+        ev = (0, s.bG)([Q.A], () => Q.A.getChannelId()),
+        ey = (0, s.bG)([$.A], () => $.A.desyncedVoiceStatesCount),
         eb = (0, U.A)(t),
         eO = (0, D.C$)(t, "GuildSidebar"),
         eL = (0, s.bG)([K.A], () => K.A.getGuild(t)?.features.has(er.GuildFeatures.GAME_SERVERS) ?? !1, [t]),
@@ -468,8 +468,8 @@ function e_(e) {
         selectedChannel: eI,
         selectedVoiceChannelId: C,
         voiceStates: A,
-        rtcConnectedChannelId: ey,
-        rtcDesyncedVoiceStatesCount: ev,
+        rtcConnectedChannelId: ev,
+        rtcDesyncedVoiceStatesCount: ey,
         isUnavailable: R,
         user: k,
         hasChannelNotice: null != eo || ei,

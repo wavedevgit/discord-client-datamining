@@ -38,7 +38,7 @@ function _(e) {
         onAcceptSuccess: E,
         onRejectSuccess: p,
         onError: g
-    }), y = C || T || N || S || x;
+    }), v = C || T || N || S || x;
     return (0, i.jsxs)("div", {
         className: h.kL,
         children: [(0, i.jsx)(u.A, {
@@ -57,7 +57,7 @@ function _(e) {
                     onClick: e => {
                         e.stopPropagation(), f(_.id)
                     },
-                    disabled: y,
+                    disabled: v,
                     loading: T || x
                 })
             }), (0, i.jsx)("div", {
@@ -70,7 +70,7 @@ function _(e) {
                     onClick: e => {
                         e.stopPropagation(), I(_.id)
                     },
-                    disabled: y,
+                    disabled: v,
                     loading: C || N || S
                 })
             })]

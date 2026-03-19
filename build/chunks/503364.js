@@ -8,18 +8,18 @@ var a = n(627968),
     i = n(990078),
     r = n(397927),
     s = n(442433),
-    c = n(50268),
-    o = n(67518),
+    o = n(50268),
+    c = n(67518),
     d = n(985018);
 
 function u(e) {
     let {
         applicationId: t,
         className: n
-    } = e, u = l.useRef(null), m = (0, c.A)({
+    } = e, u = l.useRef(null), m = (0, o.A)({
         id: t,
         label: d.intl.string(d.t["FfCL+6"])
-    }), x = (0, o.n)(t);
+    }), x = (0, c.n)(t);
     return null == m && null == x ? null : (0, a.jsx)(r.YNO, {
         targetElementRef: u,
         align: "top",
@@ -66,13 +66,13 @@ function m(e) {
         applicationId: t,
         onClose: n,
         className: u
-    } = e, m = l.useRef(null), x = (0, c.A)({
+    } = e, m = l.useRef(null), x = (0, o.A)({
         id: t,
         label: d.intl.string(d.t["FfCL+6"])
-    }), f = (0, o.n)(t);
+    }), _ = (0, c.n)(t);
     return (0, a.jsxs)("div", {
         className: u,
-        children: [(null != x || null != f) && (0, a.jsx)(r.YNO, {
+        children: [(null != x || null != _) && (0, a.jsx)(r.YNO, {
             targetElementRef: m,
             align: "top",
             position: "right",
@@ -90,7 +90,7 @@ function m(e) {
                     onSelect: () => {},
                     children: (0, a.jsxs)(a.Fragment, {
                         children: [(0, a.jsx)(r.rXV, {
-                            children: f
+                            children: _
                         }), (0, a.jsx)(r.rXV, {
                             children: x
                         })]

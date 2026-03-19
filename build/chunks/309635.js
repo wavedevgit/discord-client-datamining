@@ -1,25 +1,25 @@
 /** chunk id: 309635 params = (module,exports,require) **/
 n.d(e, {
-    W: () => l
+    W: () => a
 });
 var i = n(627968);
 n(64700);
-var a = n(397927);
-let l = t => {
+var r = n(397927);
+let a = t => {
     let {
         initialSelectedEffect: e,
-        analyticsLocations: l,
-        guild: r
+        analyticsLocations: a,
+        guild: l
     } = t;
-    (0, a.mMO)(async () => {
+    (0, r.mMO)(async () => {
         let {
             default: t
         } = await n.e("92818").then(n.bind(n, 892873));
         return n => (0, i.jsx)(t, {
             ...n,
-            guild: r,
+            guild: l,
             initialSelectedEffect: e,
-            analyticsLocations: l
+            analyticsLocations: a
         })
     }, {})
 }

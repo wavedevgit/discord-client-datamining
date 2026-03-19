@@ -1,19 +1,19 @@
 /** chunk id: 318346 params = (module,exports,require) **/
-n.d(t, {
-    Y: () => i
+n.d(e, {
+    Y: () => a
 });
-var a = n(954571),
-    s = n(652215);
+var i = n(954571),
+    r = n(652215);
 
-function i(e) {
+function a(t) {
     let {
-        pageType: t,
+        pageType: e,
         sectionType: n,
-        ctaObject: i
-    } = e;
-    a.default.track(s.HAw.ORBS_ENTRYPOINT_CLICKED, {
-        location_page: t,
+        ctaObject: a
+    } = t;
+    i.default.track(r.HAw.ORBS_ENTRYPOINT_CLICKED, {
+        location_page: e,
         location_section: n,
-        location_object: i
+        location_object: a
     })
 }

@@ -1,59 +1,59 @@
 /** chunk id: 883662 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => f
+    A: () => _
 });
 var r = n(627968),
     i = n(64700),
     a = n(311907),
-    s = n(521489),
-    l = n(397927),
+    l = n(521489),
+    s = n(397927),
     o = n(775602),
     c = n(531685),
     u = n(203982),
     d = n(418829),
-    m = n(652215);
+    h = n(652215);
 
-function f(e) {
+function _(e) {
     let {
         partialRoot: t,
         target: n,
-        defaultTarget: f,
-        onViewChange: h,
-        sidebarFooter: g,
+        defaultTarget: _,
+        onViewChange: f,
+        sidebarFooter: m,
         emptyState: p,
-        searchQuery: x,
-        clearSearchQuery: _,
-        searchBar: b,
-        ...y
-    } = e, [v, A] = i.useState(!1), [j, N] = i.useState(1.4), C = i.useRef(null), S = (0, a.bG)([o.A], () => o.A.useReducedMotion), k = (0, a.bG)([c.A], () => c.A.isFocused());
+        searchQuery: b,
+        clearSearchQuery: y,
+        searchBar: g,
+        ...v
+    } = e, [x, E] = i.useState(!1), [S, A] = i.useState(1.4), N = i.useRef(null), C = (0, a.bG)([o.A], () => o.A.useReducedMotion), j = (0, a.bG)([c.A], () => c.A.isFocused());
     return i.useEffect(() => {
         let e = e => {
             let {
                 intensity: t,
                 duration: n
             } = e;
-            !S && k && (A(!0), N(t ?? 1.4), clearTimeout(C.current), C.current = setTimeout(() => A(!1), n ?? 1e3))
+            !C && j && (E(!0), A(t ?? 1.4), clearTimeout(N.current), N.current = setTimeout(() => E(!1), n ?? 1e3))
         };
-        return u._.subscribe(m.jej.SHAKE_SETTINGS_MODAL, e), () => {
-            u._.unsubscribe(m.jej.SHAKE_SETTINGS_MODAL, e), clearTimeout(C.current)
+        return u._.subscribe(h.jej.SHAKE_SETTINGS_MODAL, e), () => {
+            u._.unsubscribe(h.jej.SHAKE_SETTINGS_MODAL, e), clearTimeout(N.current)
         }
-    }, [S, k]), (0, r.jsx)(l.bfh, {
-        isShaking: v,
-        intensity: j,
-        children: (0, r.jsx)(s.N, {
-            ...y,
+    }, [C, j]), (0, r.jsx)(s.bfh, {
+        isShaking: x,
+        intensity: S,
+        children: (0, r.jsx)(l.N, {
+            ...v,
             children: (0, r.jsx)(d.A, {
-                onClose: y.onClose,
+                onClose: v.onClose,
                 partialRoot: t,
                 target: n,
-                defaultTarget: f,
-                onViewChange: h,
+                defaultTarget: _,
+                onViewChange: f,
                 emptyState: p,
-                sidebarFooter: g,
-                searchQuery: x,
-                clearSearchQuery: _,
-                searchBar: b
+                sidebarFooter: m,
+                searchQuery: b,
+                clearSearchQuery: y,
+                searchBar: g
             })
         })
     })

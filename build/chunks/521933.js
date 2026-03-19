@@ -28,7 +28,7 @@ let r = {
         (0, s.mMO)(async () => {
             let {
                 default: t
-            } = await n.e("27672").then(n.bind(n, 888363));
+            } = await Promise.all([n.e("78925"), n.e("5291")]).then(n.bind(n, 888363));
             return n => (0, i.jsx)(t, {
                 claimRequired: e,
                 ...n

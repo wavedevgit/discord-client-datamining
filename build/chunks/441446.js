@@ -1,37 +1,37 @@
 /** chunk id: 441446 params = (module,exports,require) **/
-l.d(t, {
-    Hq: () => u,
-    LB: () => p,
-    MG: () => d,
-    nB: () => s,
+a.d(t, {
+    Hq: () => i,
+    LB: () => x,
+    MG: () => u,
+    nB: () => d,
     wn: () => c
 });
-var a = l(627968);
-l(64700);
-var n = l(503698),
-    r = l.n(n),
-    i = l(397927),
-    o = l(14503);
-let s = () => (0, a.jsx)("hr", {
+var l = a(627968);
+a(64700);
+var r = a(503698),
+    n = a.n(r),
+    s = a(397927),
+    o = a(14503);
+let d = () => (0, l.jsx)("hr", {
         className: o.ts
     }),
-    u = e => {
+    i = e => {
         let {
             label: t,
-            children: l,
-            direction: n = "horizontal",
-            className: u
+            children: a,
+            direction: r = "horizontal",
+            className: i
         } = e;
-        return (0, a.jsxs)(a.Fragment, {
-            children: [(0, a.jsx)(s, {}), (0, a.jsx)(i.Text, {
+        return (0, l.jsxs)(l.Fragment, {
+            children: [(0, l.jsx)(d, {}), (0, l.jsx)(s.Text, {
                 variant: "text-md/semibold",
                 className: o.cW,
                 children: t
-            }), (0, a.jsx)("div", {
-                className: r()(o.kL, u, {
-                    [o.YG]: "vertical" === n
+            }), (0, l.jsx)("div", {
+                className: n()(o.kL, i, {
+                    [o.YG]: "vertical" === r
                 }),
-                children: l
+                children: a
             })]
         })
     },
@@ -39,16 +39,16 @@ let s = () => (0, a.jsx)("hr", {
         let {
             children: t
         } = e;
-        return (0, a.jsx)("div", {
+        return (0, l.jsx)("div", {
             className: o.uW,
             children: t
         })
     },
-    d = e => (0, a.jsx)("div", {
+    u = e => (0, l.jsx)("div", {
         className: o.wO,
         children: e.children
     }),
-    p = e => (0, a.jsx)("fieldset", {
+    x = e => (0, l.jsx)("fieldset", {
         className: o.lI,
         children: e.children
     })

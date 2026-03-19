@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(668267),
     S = n(379587),
     x = n(5180),
-    y = n(953384),
-    v = n(973522),
+    v = n(953384),
+    y = n(973522),
     b = n(15285),
     O = n(142120),
     L = n(442187),
@@ -80,11 +80,11 @@ async function ed(e) {
         exe: g,
         distributor: p,
         rawExePath: E
-    } = (0, v.wH)(t), I = a.enabledLegacy || a.enabledOOP, f = j.x.legacyEnabled || j.x.oopEnabled, C = a.source;
+    } = (0, y.wH)(t), I = a.enabledLegacy || a.enabledOOP, f = j.x.legacyEnabled || j.x.oopEnabled, C = a.source;
     ei.default.track(el.HAw.LAUNCH_GAME, {
         game: _,
         game_id: m,
-        verified: null != n && (0, v.PQ)(E, n?.executables),
+        verified: null != n && (0, y.PQ)(E, n?.executables),
         elevated: t.elevated,
         is_launcher: t?.isLauncher ?? !1,
         game_platform: el.yTV.DESKTOP,
@@ -187,7 +187,7 @@ class ec extends a.PureComponent {
         if (e.runningGame !== o && null != o && !o.isLauncher && (!p || T)) {
             let {
                 gameId: e
-            } = (0, v.wH)(o), r = void 0 !== e ? F.A.getDetectableGame(e) : null, l = b.Ay.getOverrideForGame(o), s = W.A.getGuildIds(), u = B.JG.getSetting(), A = s.filter(e => !u.includes(e)).slice(0, 200), h = null;
+            } = (0, y.wH)(o), r = void 0 !== e ? F.A.getDetectableGame(e) : null, l = b.Ay.getOverrideForGame(o), s = W.A.getGuildIds(), u = B.JG.getSetting(), A = s.filter(e => !u.includes(e)).slice(0, 200), h = null;
             h = null != l ? "custom_override" : null != r ? "verified_game" : "launcher";
             let _ = U.default.getTrackedGameByPid(o.pid),
                 m = (0, b.hw)(o),
@@ -218,7 +218,7 @@ class ec extends a.PureComponent {
             }
         }
         if (e.runningNonGame !== u && u?.id != null && e.runningNonGame?.id !== u.id) {
-            let e = y.A.getById(u.id);
+            let e = v.A.getById(u.id);
             null != e && ei.default.track(el.HAw.LAUNCH_NON_GAME_APPLICATION, {
                 name: e.name,
                 application_id: e.id,
@@ -228,7 +228,7 @@ class ec extends a.PureComponent {
                 distributor: u.distributor,
                 detection_method: "verified_non_game_application",
                 current_user_status: X.A.getStatus(),
-                executable_path: (0, v.Ic)(u.exePath),
+                executable_path: (0, y.Ic)(u.exePath),
                 voice_channel_id: t,
                 voice_channel_type: i,
                 voice_channel_bitrate: a,
@@ -288,7 +288,7 @@ class ec extends a.PureComponent {
 }
 
 function eu() {
-    let [e, t] = (0, o.yK)([$.A], () => [$.A.getVoiceChannelId(), $.A.getChannelId()], []), n = (0, o.bG)([H.A], () => H.A.getChannel(t), [t]), r = (0, o.bG)([f.A], () => n?.id != null && f.A.getChatOpen(n.id), [n]), l = n?.nsfw, s = (0, o.bG)([H.A], () => H.A.getChannel(e), [e]), d = (0, o.bG)([Q.A], () => Q.A.getGuildId(), []), c = (0, o.bG)([W.A], () => W.A.getGuild(d), [d]), u = (0, o.bG)([J.default], () => J.default.getCurrentUser(), []), E = (0, o.bG)([Y.Ay], () => null != u && null != d && (Y.Ay.getMember(d, u.id)?.isPending ?? !1), [u, d]), I = (0, o.bG)([et.Ay], () => et.Ay.getState().section, []), C = (0, o.bG)([ee.A], () => ee.A.getHomeLink(), []), y = (0, o.bG)([O.A], () => O.A.isConnected(), []), [v, P] = (0, o.yK)([K.Ay], () => [K.Ay.isVideoEnabled(), K.Ay.isScreenSharing()], []), j = (0, o.bG)([X.A], () => X.A.getPrimaryActivity(), []), {
+    let [e, t] = (0, o.yK)([$.A], () => [$.A.getVoiceChannelId(), $.A.getChannelId()], []), n = (0, o.bG)([H.A], () => H.A.getChannel(t), [t]), r = (0, o.bG)([f.A], () => n?.id != null && f.A.getChatOpen(n.id), [n]), l = n?.nsfw, s = (0, o.bG)([H.A], () => H.A.getChannel(e), [e]), d = (0, o.bG)([Q.A], () => Q.A.getGuildId(), []), c = (0, o.bG)([W.A], () => W.A.getGuild(d), [d]), u = (0, o.bG)([J.default], () => J.default.getCurrentUser(), []), E = (0, o.bG)([Y.Ay], () => null != u && null != d && (Y.Ay.getMember(d, u.id)?.isPending ?? !1), [u, d]), I = (0, o.bG)([et.Ay], () => et.Ay.getState().section, []), C = (0, o.bG)([ee.A], () => ee.A.getHomeLink(), []), v = (0, o.bG)([O.A], () => O.A.isConnected(), []), [y, P] = (0, o.yK)([K.Ay], () => [K.Ay.isVideoEnabled(), K.Ay.isScreenSharing()], []), j = (0, o.bG)([X.A], () => X.A.getPrimaryActivity(), []), {
         currentGame: w,
         currentNonGame: U
     } = (0, o.cf)([b.Ay], () => ({
@@ -300,8 +300,8 @@ function eu() {
         selectedGuildId: d,
         friendsTabSection: I,
         homeLink: C,
-        connected: y,
-        videoEnabled: v,
+        connected: v,
+        videoEnabled: y,
         isScreenSharing: P,
         voiceChannelId: s?.id,
         voiceChannelGuildId: s?.getGuildId(),

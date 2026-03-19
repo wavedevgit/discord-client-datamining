@@ -22,14 +22,14 @@ var s = n(284009),
     T = n(63675),
     E = n(546849),
     S = n(101058),
-    f = n(836602),
-    C = n(622543),
-    b = n(696451),
-    N = n(71393),
-    I = n(287809),
-    v = n(927578),
-    j = n(427262),
-    y = n(159001),
+    f = n(84540),
+    C = n(836602),
+    b = n(622543),
+    N = n(696451),
+    I = n(71393),
+    v = n(287809),
+    j = n(927578),
+    y = n(427262),
     R = n(684732),
     O = n(168917),
     L = n(746706),
@@ -38,12 +38,12 @@ var s = n(284009),
     M = n(745496);
 
 function G() {
-    let e = (0, a.bG)([I.default], () => {
-            let e = I.default.getCurrentUser();
+    let e = (0, a.bG)([v.default], () => {
+            let e = v.default.getCurrentUser();
             return l()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
         }),
         t = (0, c.L)(D.PremiumTypes.TIER_2),
-        n = (0, a.bG)([f.A, N.A], () => N.A.getGuild(f.A.selectedGuildId));
+        n = (0, a.bG)([C.A, I.A], () => I.A.getGuild(C.A.selectedGuildId));
     l()(null != n, "guild should not be null");
     let {
         pendingAvatar: s,
@@ -53,20 +53,20 @@ function G() {
         pendingPronouns: V,
         pendingThemeColors: w,
         errors: B
-    } = (0, a.cf)([f.A], () => ({
-        ...f.A.getPendingChanges(n.id),
-        errors: f.A.getErrors(n.id)
+    } = (0, a.cf)([C.A], () => ({
+        ...C.A.getPendingChanges(n.id),
+        errors: C.A.getErrors(n.id)
     })), H = (0, S.V7)({
         userId: e.id,
         image: s
-    }), F = (0, d.EC)(n.id), Y = (0, a.bG)([b.Ay], () => null == n.id ? null : b.Ay.getMember(n.id, e.id)), z = (0, a.bG)([C.A], () => C.A.getGuildMemberProfile(e.id, n.id)), X = v.Ay.canUsePremiumProfileCustomization(e), W = (0, u.z5)(s, Y?.avatar), K = (0, u.Ac)(U, z?.banner), Z = (0, R.lS)(w, z?.themeColors), q = z?.bio ?? "", J = z?.pronouns ?? "", Q = (e, t, n) => {
+    }), F = (0, d.EC)(n.id), Y = (0, a.bG)([N.Ay], () => null == n.id ? null : N.Ay.getMember(n.id, e.id)), z = (0, a.bG)([b.A], () => b.A.getGuildMemberProfile(e.id, n.id)), X = j.Ay.canUsePremiumProfileCustomization(e), W = (0, u.z5)(s, Y?.avatar), K = (0, u.Ac)(U, z?.banner), Z = (0, R.l)(w, z?.themeColors), q = z?.bio ?? "", J = z?.pronouns ?? "", Q = (e, t, n) => {
         n(e ?? (null != t ? null : void 0))
     };
     return (0, i.jsxs)("div", {
         className: M.Q,
         children: [(0, i.jsx)(O.A, {
             errors: B?.nick ?? F?.nick,
-            username: j.Ay.getName(e),
+            username: y.Ay.getName(e),
             pendingNick: G,
             currentNick: Y?.nick,
             user: e,
@@ -74,9 +74,10 @@ function G() {
         }, "nick"), (0, i.jsx)(E.A, {
             sectionTitle: P.intl.string(P.t["+T3RI/"]),
             errors: B?.pronouns,
-            onPronounsChange: e => {
-                (0, R.d7)(e, J)
-            },
+            onPronounsChange: e => (0, f.p)({
+                guildId: n.id,
+                pronouns: e
+            }),
             pendingPronouns: V,
             currentPronouns: J
         }, "pronouns"), (0, i.jsxs)(L.A, {
@@ -94,7 +95,10 @@ function G() {
                     })]
                 }),
                 showRemoveAvatarButton: W,
-                onAvatarChange: e => Q(e, Y?.avatar, y.zq),
+                onAvatarChange: e => Q(e, Y?.avatar, e => (0, f.p)({
+                    guildId: n.id,
+                    avatar: e
+                })),
                 errors: B?.avatar,
                 guildId: n.id,
                 disabled: !X
@@ -141,17 +145,21 @@ function G() {
             }, "effect"), (0, i.jsx)(h.A, {
                 showRemoveBannerButton: K,
                 errors: B?.banner,
-                onBannerChange: e => Q(e, z?.banner, y.Iz),
-                guildId: n?.id,
+                onBannerChange: e => Q(e, z?.banner, e => (0, f.p)({
+                    guildId: n.id,
+                    banner: e
+                })),
+                guildId: n.id,
                 disabled: !X
             }, "banner"), (0, i.jsx)(T.A, {
                 user: e,
                 pendingAvatarSrc: H,
                 pendingColors: w,
-                onThemeColorsChange: e => {
-                    (0, R.wx)(e, z?.themeColors)
-                },
-                guildId: n?.id,
+                onThemeColorsChange: e => (0, f.p)({
+                    guildId: n.id,
+                    themeColors: e
+                }),
+                guildId: n.id,
                 showResetThemeButton: Z
             }), (0, i.jsx)(_.A, {
                 placeholder: P.intl.string(P.t["/7NKgv"]),
@@ -165,7 +173,10 @@ function G() {
                         })
                     })]
                 }),
-                onBioChange: e => (0, R.Rn)(e, q),
+                onBioChange: e => (0, f.p)({
+                    guildId: n.id,
+                    bio: e
+                }),
                 errors: B?.bio ?? F?.bio,
                 pendingBio: k,
                 currentBio: q,

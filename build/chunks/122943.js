@@ -34,8 +34,8 @@ let T = a.memo(function(e) {
     } = (0, s.cf)([m.A], () => ({
         isBlocked: null != T && m.A.isBlockedForMessage(T),
         isIgnored: null != T && m.A.isIgnoredForMessage(T)
-    }), [T]), x = (0, s.bG)([_.A], () => _.A.can(p.xBc.MANAGE_MESSAGES, t)), y = h.gs.useSetting(), {
-        content: v
+    }), [T]), x = (0, s.bG)([_.A], () => _.A.can(p.xBc.MANAGE_MESSAGES, t)), v = h.gs.useSetting(), {
+        content: y
     } = a.useMemo(() => T?.content != null && "" !== T.content ? (0, c.Ay)(T, {
         formatInline: !0,
         noStyleAndInteraction: !0
@@ -65,7 +65,7 @@ let T = a.memo(function(e) {
         let {
             contentPlaceholder: e,
             renderedContent: t
-        } = (0, u.o)(T, v, N, S, l()(f.BK, C.tZ), {
+        } = (0, u.o)(T, y, N, S, l()(f.BK, C.tZ), {
             leadingIconClass: f.AF,
             trailingIconClass: f.AF,
             iconSize: E.eJ
@@ -90,7 +90,7 @@ let T = a.memo(function(e) {
     });
     else b = null;
     return (0, i.jsx)(A.Bs.Provider, {
-        value: (0, d.A)(y, x),
+        value: (0, d.A)(v, x),
         children: (0, i.jsx)(o.M1G, {
             className: f.JY,
             children: b

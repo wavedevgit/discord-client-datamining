@@ -184,15 +184,15 @@ function I(e) {
                 src: g.A.Header.Icon.Src.MULTIPLE
             })
         }
-    }(t), y = (0, A.A)({
+    }(t), v = (0, A.A)({
         applicationId: t.currentActivities[0]?.activity?.application_id,
         location: "FriendsActivityFeed",
         source: u.Ob.FriendsActivityFeed
-    }), v = (0, d.A)({
+    }), y = (0, d.A)({
         userId: T.user.id,
         guildId: C?.id
     }), b = (0, c.a)({
-        displayNameStyles: v
+        displayNameStyles: y
     });
     return (0, i.jsx)(g.A.Header, {
         priorityUser: T,
@@ -200,8 +200,8 @@ function I(e) {
         title: N,
         subtitle: S,
         icon: x,
-        onSubtitleClick: y,
-        onIconClick: y,
+        onSubtitleClick: v,
+        onIconClick: v,
         onContextMenu: e => a(e, T.user),
         displayNameFont: 1 === f.length ? b : void 0
     })

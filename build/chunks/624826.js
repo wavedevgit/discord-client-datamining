@@ -1,24 +1,23 @@
-/** chunk id: 624826, original params: e,t,n (module,exports,require) **/
-"use strict";
+/** chunk id: 624826 params = (module,exports,require) **/
 n.d(t, {
-    t: () => s
+    t: () => l
 });
-var r = n(392107),
-    i = n(954571),
-    a = n(486020),
-    o = n(652215);
+var i = n(392107),
+    a = n(954571),
+    r = n(486020),
+    s = n(652215);
 
-function s(e) {
+function l(e) {
     let {
         avatarHash: t,
         avatarId: n,
-        isGuildProfile: s = !1,
-        avatarAssetOrigin: l = r.E.NEW_ASSET
+        isGuildProfile: l = !1,
+        avatarAssetOrigin: o = i.E.NEW_ASSET
     } = e;
-    i.default.track(o.HAw.USER_AVATAR_UPDATED, {
-        animated: (0, a.VI)(t),
-        is_guild_profile: s,
-        recent_avatar_id: l === r.E.ARCHIVED_ASSET ? Number(n) : void 0,
-        is_edited_recent_avatar: l === r.E.EDITED_ARCHIVED_ASSET
+    a.default.track(s.HAw.USER_AVATAR_UPDATED, {
+        animated: (0, r.VI)(t),
+        is_guild_profile: l,
+        recent_avatar_id: o === i.E.ARCHIVED_ASSET ? Number(n) : void 0,
+        is_edited_recent_avatar: o === i.E.EDITED_ARCHIVED_ASSET
     })
 }

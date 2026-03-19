@@ -1,28 +1,28 @@
 /** chunk id: 94836 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A,
-    a: () => E
+    A: () => j,
+    a: () => I
 });
 var a = n(627968),
     l = n(64700),
     i = n(503698),
     r = n.n(i),
     s = n(311907),
-    c = n(397927),
-    o = n(775602),
+    o = n(397927),
+    c = n(775602),
     d = n(435582),
     u = n(607470),
     m = n(720462),
     x = n(256905),
-    f = n(409626),
-    h = n(368546),
-    g = n(985018),
+    _ = n(409626),
+    g = n(368546),
+    f = n(985018),
     p = n(728528),
-    _ = n(281568),
+    h = n(281568),
     v = n(903404),
-    j = n(176959);
+    A = n(176959);
 
-function A(e) {
+function j(e) {
     let {
         detectedGame: t,
         trackAction: n
@@ -37,7 +37,7 @@ function A(e) {
         })), ...e]
     }, [t.artwork, t.screenshots]), s = r.length > 2;
 
-    function o(e) {
+    function c(e) {
         if (null == i.current) return;
         let t = i.current.getScrollerState().scrollLeft;
         i.current.scrollTo({
@@ -46,25 +46,25 @@ function A(e) {
         })
     }
     return 0 === r.length ? null : (0, a.jsxs)("div", {
-        children: [(0, a.jsx)(c.Heading, {
+        children: [(0, a.jsx)(o.Heading, {
             className: p.bV,
             variant: "text-md/semibold",
             color: "text-strong",
-            children: g.intl.string(g.t.bNdK5x)
+            children: f.intl.string(f.t.bNdK5x)
         }), (0, a.jsxs)("div", {
-            className: s ? _.DA : _.pZ,
-            children: [(0, a.jsx)(c.zCo, {
+            className: s ? h.DA : h.pZ,
+            children: [(0, a.jsx)(o.zCo, {
                 ref: i,
-                className: _.ec,
+                className: h.ec,
                 orientation: "horizontal",
-                children: r.map((e, t) => (0, a.jsx)(c.DUT, {
-                    className: _.gw,
+                children: r.map((e, t) => (0, a.jsx)(o.DUT, {
+                    className: h.gw,
                     focusProps: {
                         offset: 4,
-                        ringClassName: _.jR
+                        ringClassName: h.jR
                     },
                     onClick: () => {
-                        n(f.Ws.ClickImage), (0, x.R)({
+                        n(_.Ws.ClickImage), (0, x.R)({
                             items: r,
                             startingIndex: t,
                             shouldHideMediaOptions: !0,
@@ -73,30 +73,30 @@ function A(e) {
                     },
                     children: (0, a.jsx)("img", {
                         src: e.url,
-                        className: _.Zm,
-                        alt: g.intl.formatToPlainString(g.t.COYYrn, {
+                        className: h.Zm,
+                        alt: f.intl.formatToPlainString(f.t.COYYrn, {
                             game: name
                         })
                     })
                 }, t))
             }), s && (0, a.jsxs)("div", {
-                className: _.NA,
+                className: h.NA,
                 children: [(0, a.jsx)("div", {
-                    className: _.EJ
-                }), (0, a.jsx)(c.DUT, {
-                    className: _.G9,
-                    onClick: () => o(-1),
-                    children: (0, a.jsx)(c.rJJ, {
-                        className: _.UE,
+                    className: h.EJ
+                }), (0, a.jsx)(o.DUT, {
+                    className: h.G9,
+                    onClick: () => c(-1),
+                    children: (0, a.jsx)(o.rJJ, {
+                        className: h.UE,
                         color: "currentColor"
                     })
                 }), (0, a.jsx)("div", {
-                    className: _.Pj
-                }), (0, a.jsx)(c.DUT, {
-                    className: _.G9,
-                    onClick: () => o(1),
-                    children: (0, a.jsx)(c.EdP, {
-                        className: _.UE,
+                    className: h.Pj
+                }), (0, a.jsx)(o.DUT, {
+                    className: h.G9,
+                    onClick: () => c(1),
+                    children: (0, a.jsx)(o.EdP, {
+                        className: h.UE,
                         color: "currentColor"
                     })
                 })]
@@ -105,12 +105,12 @@ function A(e) {
     })
 }
 
-function E(e) {
+function I(e) {
     let {
         detectedGame: t
-    } = e, [n, i] = l.useState(0), [f, p] = l.useState(t.artwork), [_, A] = l.useState(t.screenshots), E = l.useRef(null), I = l.useRef(null), b = (0, s.bG)([o.A], () => o.A.useReducedMotion);
-    (f !== t.artwork || _ !== t.screenshots) && (p(t.artwork), A(t.screenshots), i(0));
-    let N = l.useMemo(() => {
+    } = e, [n, i] = l.useState(0), [_, p] = l.useState(t.artwork), [h, j] = l.useState(t.screenshots), I = l.useRef(null), b = l.useRef(null), C = (0, s.bG)([c.A], () => c.A.useReducedMotion);
+    (_ !== t.artwork || h !== t.screenshots) && (p(t.artwork), j(t.screenshots), i(0));
+    let E = l.useMemo(() => {
             let e = (t.trailers ?? []).map(e => ({
                     url: (0, d.A)(e.application_id, e.id),
                     type: "VIDEO"
@@ -124,32 +124,32 @@ function E(e) {
                 type: "IMAGE"
             })), ...n]
         }, [t.trailers, t.artwork, t.screenshots]),
-        C = N.length > 0 ? Math.min(n, N.length - 1) : 0,
-        T = N[C],
-        L = T?.type === "VIDEO";
-    return ((0, h.A)({
-        videoRef: E,
-        canvasRef: I,
-        enabled: L && !b
-    }), 0 === N.length) ? null : (0, a.jsxs)("div", {
+        N = E.length > 0 ? Math.min(n, E.length - 1) : 0,
+        T = E[N],
+        S = T?.type === "VIDEO";
+    return ((0, g.A)({
+        videoRef: I,
+        canvasRef: b,
+        enabled: S && !C
+    }), 0 === E.length) ? null : (0, a.jsxs)("div", {
         className: v.kL,
-        children: [L ? (0, a.jsxs)("div", {
-            className: j.ND,
-            children: [!b && (0, a.jsx)("canvas", {
-                ref: I,
-                className: j.HW,
+        children: [S ? (0, a.jsxs)("div", {
+            className: A.ND,
+            children: [!C && (0, a.jsx)("canvas", {
+                ref: b,
+                className: A.HW,
                 "aria-hidden": "true"
             }), (0, a.jsx)(u.A, {
-                ref: E,
-                className: j.dj,
+                ref: I,
+                className: A.dj,
                 src: T.url,
                 controls: !0,
                 playsInline: !0
             })]
-        }) : (0, a.jsx)(c.DUT, {
+        }) : (0, a.jsx)(o.DUT, {
             className: v.gv,
             onClick: () => {
-                let e = N.filter(e => "IMAGE" === e.type),
+                let e = E.filter(e => "IMAGE" === e.type),
                     t = e.indexOf(T);
                 (0, x.R)({
                     items: e,
@@ -161,19 +161,19 @@ function E(e) {
             children: (0, a.jsx)("img", {
                 src: T.url,
                 className: v.c8,
-                alt: g.intl.formatToPlainString(g.t.COYYrn, {
+                alt: f.intl.formatToPlainString(f.t.COYYrn, {
                     game: t.name
                 })
             })
         }), (0, a.jsx)(m.A, {
             gap: "xs",
-            children: N.map((e, n) => (0, a.jsx)(c.DUT, {
-                className: r()(v.JS, n === C && v.Y4),
+            children: E.map((e, n) => (0, a.jsx)(o.DUT, {
+                className: r()(v.JS, n === N && v.Y4),
                 onClick: () => i(n),
                 children: (0, a.jsx)("img", {
                     src: e.url,
                     className: v.xn,
-                    alt: g.intl.formatToPlainString(g.t.COYYrn, {
+                    alt: f.intl.formatToPlainString(f.t.COYYrn, {
                         game: t.name
                     })
                 })

@@ -33,11 +33,11 @@ function S() {
         } = (0, l.G)(),
         {
             tabs: x,
-            selectedTab: y,
-            setSelectedTab: v
+            selectedTab: v,
+            setSelectedTab: y
         } = (0, p.f)(),
-        b = (0, h.Ub)(y),
-        O = !f.R0.has(y),
+        b = (0, h.Ub)(v),
+        O = !f.R0.has(v),
         {
             searchQuery: L,
             onSearchTextChange: R,
@@ -63,8 +63,8 @@ function S() {
         }),
         V = u.A.useField("fetchedQuery"),
         B = a.useCallback(e => {
-            v(e), M && P()
-        }, [M, P, v]),
+            y(e), M && P()
+        }, [M, P, y]),
         H = a.useMemo(() => M ? x.filter(e => {
             let {
                 id: t
@@ -83,7 +83,7 @@ function S() {
         F.current.flushSeenGuilds(e.current)
     }, [b]), a.useEffect(() => {
         S()
-    }, [y, S]), a.useEffect(() => {
+    }, [v, S]), a.useEffect(() => {
         M || u.A.setState({
             scrollPosition: null
         })
@@ -101,7 +101,7 @@ function S() {
             }), !M && (0, i.jsx)(d.A, {
                 className: k,
                 tabs: H,
-                selectedTab: y,
+                selectedTab: v,
                 onTabSelect: B,
                 onAvailableWidthChange: w
             }), M && (0, i.jsx)(r.Heading, {
@@ -126,7 +126,7 @@ function S() {
             onGuildCardClick: W,
             onGuildCardSeen: Y
         }) : (0, i.jsx)(E.A, {
-            selectedTab: y,
+            selectedTab: v,
             onScroll: t,
             onGuildCardClick: W,
             onGuildCardSeen: Y

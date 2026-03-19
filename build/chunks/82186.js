@@ -7,8 +7,8 @@ var r = n(627968);
 n(64700);
 var i = n(158954),
     a = n(963935),
-    s = n(272053),
-    l = n(215566),
+    l = n(272053),
+    s = n(215566),
     o = n(985018),
     c = n(325490);
 
@@ -26,7 +26,7 @@ function u(e) {
             color: n ? "text-default" : void 0,
             className: c.b,
             children: a
-        }), n && null != o && (0, r.jsx)(l.A, {
+        }), n && null != o && (0, r.jsx)(s.A, {
             badge: o
         }), !n && (0, r.jsx)(i.EYj, {
             variant: "text-md/normal",
@@ -39,7 +39,7 @@ function u(e) {
         className: c.QF,
         children: n ? u : (0, r.jsx)(i.DUT, {
             onClick: () => {
-                s.A.navigate(t.key)
+                l.A.navigate(t.key)
             },
             className: c.vk,
             children: u
