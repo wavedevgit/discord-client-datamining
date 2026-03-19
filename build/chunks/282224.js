@@ -63,18 +63,18 @@ function I(e) {
         channelId: T,
         guildId: n.guild_id,
         messageId: t.id
-    })(N), g = (0, s.d8)(f, n), p = (0, o.P)({
+    })(N), g = (0, s.d8)(f, n), h = (0, o.P)({
         user: f,
         channelId: T,
         guildId: n.guild_id,
         messageId: t.id
-    })(g), h = m[A] ?? null;
-    if (null == h) return null;
-    let R = _.intl.format(h(), {
+    })(g), p = m[A] ?? null;
+    if (null == p) return null;
+    let R = _.intl.format(p(), {
         actorName: I.nick,
         actorHook: C,
         targetName: g?.nick,
-        targetHook: p
+        targetHook: h
     });
     return (0, i.jsx)(c.A, {
         iconNode: (0, i.jsx)(E, {

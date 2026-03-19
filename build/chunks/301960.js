@@ -21,8 +21,8 @@ var i = n(627968),
     N = n(975412),
     C = n(168186),
     g = n(597929),
-    p = n(589022),
-    h = n(427157),
+    h = n(589022),
+    p = n(427157),
     R = n(287809),
     x = n(486020),
     S = n(203982),
@@ -85,7 +85,7 @@ function b(e, t, n, a, l, s) {
             userId: t.id,
             guildId: d?.guild_id ?? ""
         }) ?? void 0,
-        p = () => (function(e) {
+        h = () => (function(e) {
             let {
                 user: t,
                 guildId: n,
@@ -115,15 +115,15 @@ function b(e, t, n, a, l, s) {
             onContextMenu: 1 === n ? N : T,
             ref: s
         }),
-        h = 1 === n ? E : A;
-    return null != l && null != h && null != s ? (0, i.jsx)(_.YNO, {
+        p = 1 === n ? E : A;
+    return null != l && null != p && null != s ? (0, i.jsx)(_.YNO, {
         targetElementRef: s,
         renderPopout: l,
-        shouldShow: h,
+        shouldShow: p,
         position: "right",
         onRequestClose: C,
-        children: p
-    }) : p()
+        children: h
+    }) : h()
 }
 
 function k(e, t, n, a, l) {
@@ -170,7 +170,7 @@ function F(e) {
         x = (0, u.bG)([R.default], () => R.default.getCurrentUser()),
         D = a.useRef(null),
         y = a.useRef(null),
-        F = a.useMemo(() => (e, t, a) => (o()(null != t, "ExecutedCommand: user cannot be undefined"), o()(null != x, "ExecutedCommand: currentUser cannot be undefined"), o()(null != l, "ExecutedCommand: channel cannot be undefined"), (0, i.jsx)(p.A, {
+        F = a.useMemo(() => (e, t, a) => (o()(null != t, "ExecutedCommand: user cannot be undefined"), o()(null != x, "ExecutedCommand: currentUser cannot be undefined"), o()(null != l, "ExecutedCommand: channel cannot be undefined"), (0, i.jsx)(h.A, {
             ...e,
             user: t,
             currentUser: x,
@@ -186,7 +186,7 @@ function F(e) {
             interactionData: n.interactionData
         })), [l, n.id, n.interactionData]),
         H = (0, C.Am)(n),
-        w = H?.type === m.G4.APPLICATION_COMMAND && null != H.target_user ? new h.A(H.target_user) : null,
+        w = H?.type === m.G4.APPLICATION_COMMAND && null != H.target_user ? new p.A(H.target_user) : null,
         V = H?.type === m.G4.APPLICATION_COMMAND && null != n.messageReference && null != e.renderTargetMessage,
         q = (0, M.d8)(n.interaction?.user, l),
         X = (0, M.d8)(w, l),

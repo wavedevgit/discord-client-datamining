@@ -21,8 +21,8 @@ var i = n(627968),
     N = n(612669),
     C = n(88001),
     g = n(652215),
-    p = n(518582),
-    h = n(985018),
+    h = n(518582),
+    p = n(985018),
     R = n(498581),
     x = n(421438);
 let S = e => {
@@ -34,7 +34,7 @@ let S = e => {
         return (0, i.jsx)(s.Button, {
             variant: "expressive",
             size: "md",
-            text: h.intl.string(p.default.rjuKse),
+            text: p.intl.string(h.default.rjuKse),
             icon: l.tvc,
             onClick: () => {
                 if (null == r) return;
@@ -86,7 +86,7 @@ let S = e => {
         return (0, i.jsx)(s.Button, {
             variant: "secondary",
             size: "md",
-            text: h.intl.string(p.default["eYHh+z"]),
+            text: p.intl.string(h.default["eYHh+z"]),
             onClick: () => {
                 if (null == a || !l.isDM()) return void E.A.captureMessage("CancelInviteButton onClick: unexpected state", {
                     extra: {
@@ -197,8 +197,8 @@ let S = e => {
         });
         if (null == T) return null;
         let g = s === C.xI.PENDING,
-            p = null;
-        return p = I ? g ? (0, i.jsx)(O, {
+            h = null;
+        return h = I ? g ? (0, i.jsx)(O, {
             disabled: !1,
             invite: d,
             channel: n
@@ -215,6 +215,6 @@ let S = e => {
             header: T.header,
             body: T.body,
             compact: a,
-            actionButton: p
+            actionButton: h
         })
     }

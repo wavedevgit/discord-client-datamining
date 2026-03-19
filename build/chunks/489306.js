@@ -80,6 +80,9 @@ function R(e) {
                 R = (0, l.bG)([c.A], () => c.A.getGuild(e)?.features.has(y.GuildFeatures.GAME_SERVERS) ?? !1),
                 O = (0, l.bG)([A.A], () => A.A.getLowestGameCostForGuild(e)),
                 L = (n = (0, x.gz)(e, "GuildPowerupsChannelRow"), r = (0, h.C$)(e, "GuildPowerupsChannelRow"), m = (0, f.RA)(e, "GuildPowerupsChannelRow"), g = (0, l.bG)([c.A], () => c.A.getGuild(e)?.features.has(y.GuildFeatures.GAME_SERVERS)), i.useMemo(() => {
+                    let i = t?.allPowerups?.[s.zY] != null,
+                        l = t?.unlockedPowerups?.[s.zY] != null;
+                    if (i && !l) return v.q.FILE_UPLOAD_250_MB;
                     if (m && !Array.from(v.r9[v.q.GUILD_TAG_BADGE_PACKS_WAVE_TWO]).some(e => t?.unlockedPowerups?.[e] != null)) return v.q.GUILD_TAG_BADGE_PACKS_WAVE_TWO;
                     if (r && !g) return v.q.GAME_SERVER_HOSTING;
                     if (!Array.from(v.r9[v.q.GUILD_TAG_BADGE_PACKS_WAVE_ONE]).some(e => t?.unlockedPowerups?.[e] != null)) return v.q.GUILD_TAG_BADGE_PACKS_WAVE_ONE;

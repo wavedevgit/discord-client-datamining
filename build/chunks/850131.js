@@ -56,7 +56,7 @@ function g(e) {
     }) : null
 }
 
-function p(e) {
+function h(e) {
     let t, {
             type: n,
             ...a
@@ -122,7 +122,7 @@ function p(e) {
     })
 }
 
-function h(e) {
+function p(e) {
     let {
         className: t,
         data: n,
@@ -149,7 +149,7 @@ function h(e) {
         children: [(0, i.jsx)(g, {
             hasNoVotes: "NO_VOTES" === s.type,
             victorEmoji: n.victorEmoji
-        }), (0, i.jsx)(p, {
+        }), (0, i.jsx)(h, {
             ...s
         }), null != l && (0, i.jsx)(c.Button, {
             size: "sm",
@@ -171,14 +171,14 @@ function R(e) {
         channelId: n.id,
         guildId: n.guild_id,
         messageId: t.id
-    }), p = t.messageReference, R = a.useCallback(() => {
-        null != p && d.A.jumpToMessage({
-            channelId: p.channel_id,
-            messageId: p.message_id,
+    }), h = t.messageReference, R = a.useCallback(() => {
+        null != h && d.A.jumpToMessage({
+            channelId: h.channel_id,
+            messageId: h.message_id,
             flash: !0,
             returnMessageId: t.id
         })
-    }, [t.id, p]);
+    }, [t.id, h]);
     return null == u ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(A.A, {
             iconNode: (0, i.jsx)(c.YRe, {
@@ -192,7 +192,7 @@ function R(e) {
                 title: I,
                 titleOnClick: R
             })
-        }), (0, i.jsx)(h, {
+        }), (0, i.jsx)(p, {
             className: N.E6,
             data: u,
             onClickPollLink: r ? void 0 : R

@@ -21,8 +21,8 @@ var i = n(627968),
     N = n(449585),
     C = n(137207),
     g = n(22007),
-    p = n(378570),
-    h = n(589022),
+    h = n(378570),
+    p = n(589022),
     R = n(576705),
     x = n(287809),
     S = n(562153),
@@ -72,7 +72,7 @@ function q(e, t) {
 
 function X(e, t, n) {
     return a.useMemo(() => {
-        if (null != t && null != n) return a => (0, i.jsx)(h.A, {
+        if (null != t && null != n) return a => (0, i.jsx)(p.A, {
             ...a,
             user: t,
             currentUser: n,
@@ -250,7 +250,7 @@ function Z(e) {
         avatarSrc: o,
         eventHandlers: {
             onMouseEnter: _,
-            onMouseLeave: h
+            onMouseLeave: p
         }
     } = (0, b.a)(!0), {
         onFocus: x,
@@ -284,13 +284,13 @@ function Z(e) {
             guildId: X.guild_id,
             channelId: e,
             messageId: l.id
-        }), (0, p.iN)(e))
+        }), (0, h.iN)(e))
     }, [l, X]), e_ = a.useCallback(() => {
         (0, C.E5)(l.id, s, T.G.DELETE_USER_MESSAGE)
     }, [s, l.id]), em = (0, H.getFriendlyDurationString)(Number(et)), eA = null != en, eE = y && null != ee && (null == ei || !ei.actions.hasOwnProperty(T.G.DELETE_USER_MESSAGE)), eI = l.embeds.length > 0 ? l.embeds[0].fields.find(e => "channel_id" === e.rawName)?.rawValue : null, eT = null != eI;
     return (0, i.jsx)("div", {
         onMouseEnter: _,
-        onMouseLeave: h,
+        onMouseLeave: p,
         children: (0, i.jsx)(k.A, {
             className: r()(V.rs, {
                 [V.oE]: n

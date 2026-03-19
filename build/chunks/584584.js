@@ -1,6 +1,6 @@
 /** chunk id: 584584 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => p
 }), n(321073);
 var i = n(735438),
     a = n.n(i),
@@ -46,7 +46,7 @@ function g() {
     }
     return e
 }
-class p extends l.Ay.Store {
+class h extends l.Ay.Store {
     static displayName = "DetectedOffPlatformPremiumPerksStore";
     initialize() {
         this.waitFor(u.A, A.A, _.Ay, E.A, m.default), C = r.w.get(T) ?? C
@@ -55,7 +55,7 @@ class p extends l.Ay.Store {
         return a().values(f)
     }
 }
-let h = new p(s.h, {
+let p = new h(s.h, {
     LOGOUT: function() {
         f = {}, N = {}
     },

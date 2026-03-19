@@ -25,8 +25,8 @@ var i = n(989349),
     N = n(161518),
     C = n(49463),
     g = n(15285),
-    p = n(142120),
-    h = n(652896),
+    h = n(142120),
+    p = n(652896),
     R = n(585510),
     x = n(610136),
     S = n(229527),
@@ -79,8 +79,8 @@ var i = n(989349),
     eN = n(927578),
     eC = n(837921),
     eg = n(755439),
-    ep = n(422033),
-    eh = n(966846),
+    eh = n(422033),
+    ep = n(966846),
     eR = n(652215);
 n(436317);
 var ex = n(788868),
@@ -284,8 +284,8 @@ let eX = {
         })
     },
     [eR.kqX.DISPATCH_INSTALL_SCRIPT_PROGRESS]: {
-        predicate: () => null != ep.A.getLastProgress(),
-        metadata: () => ep.A.getLastProgress()
+        predicate: () => null != eh.A.getLastProgress(),
+        metadata: () => eh.A.getLastProgress()
     },
     [eR.kqX.SPOTIFY_AUTO_PAUSED]: {
         predicate: () => G.A.wasAutoPaused()
@@ -311,7 +311,7 @@ let eX = {
         predicate: () => (0, L.So)()
     },
     [eR.kqX.CORRUPT_INSTALLATION]: {
-        predicate: () => ef.isPlatformEmbedded && (!s.A.supported() || eh.A.isCorruptInstallation())
+        predicate: () => ef.isPlatformEmbedded && (!s.A.supported() || ep.A.isCorruptInstallation())
     },
     [eR.kqX.VIDEO_UNSUPPORTED_BROWSER]: {
         predicate: e => {
@@ -581,14 +581,14 @@ let eX = {
         predicate: () => {
             let e = X.A.getCurrentUserActiveStream();
             if (null == e) return !1;
-            let t = (0, h._z)(e),
+            let t = (0, p._z)(e),
                 n = b.A.getStreamHeartbeatFailure(t);
             return null != n && Date.now() - n.firstFailedAt >= eS.tZ
         },
         metadata: () => {
             let e = X.A.getCurrentUserActiveStream();
             return {
-                streamKey: null != e ? (0, h._z)(e) : null
+                streamKey: null != e ? (0, p._z)(e) : null
             }
         }
     },
@@ -639,7 +639,7 @@ let eX = {
 };
 
 function eK() {
-    if (!p.A.isConnected()) return !1;
+    if (!h.A.isConnected()) return !1;
     eG = null;
     let e = eu.default.getCurrentUser();
     if (null == e) return !1;
@@ -679,7 +679,7 @@ function eY() {
 class ez extends r.Ay.Store {
     static displayName = "NoticeStore";
     initialize() {
-        this.syncWith([N.A, ec.Ay, ei.A, Q.A, er.A, j.A, eE.A, Y.default, W.A, w.A, x.A, b.A, X.A, g.Ay, q.A, N.A], eK), this.waitFor(N.A, m.A, X.A, K.default, Y.default, z.A, J.A, P.A, W.A, E.A, Q.A, eg.A, ep.A, eh.A, eI.A, C.A, p.A, O.A, x.A, Z.Ay, $.A, M.A, D.A, ee.Ay, et.A, em.A, en.A, ei.A, j.A, b.A, ea.A, g.Ay, el.A, er.A, G.A, es.A, eo.A, U.A, eA.A, ec.Ay, eT.A, H.Ay, eE.A, ed.A, w.A, eu.default, e_.A, q.A)
+        this.syncWith([N.A, ec.Ay, ei.A, Q.A, er.A, j.A, eE.A, Y.default, W.A, w.A, x.A, b.A, X.A, g.Ay, q.A, N.A], eK), this.waitFor(N.A, m.A, X.A, K.default, Y.default, z.A, J.A, P.A, W.A, E.A, Q.A, eg.A, eh.A, ep.A, eI.A, C.A, h.A, O.A, x.A, Z.Ay, $.A, M.A, D.A, ee.Ay, et.A, em.A, en.A, ei.A, j.A, b.A, ea.A, g.Ay, el.A, er.A, G.A, es.A, eo.A, U.A, eA.A, ec.Ay, eT.A, H.Ay, eE.A, ed.A, w.A, eu.default, e_.A, q.A)
     }
     hasNotice() {
         return null != eG && null != eG.type

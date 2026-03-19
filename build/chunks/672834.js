@@ -21,8 +21,8 @@ var i = n(627968),
     N = n(698441),
     C = n(484724),
     g = n(997509),
-    p = n(850131),
-    h = n(31051),
+    h = n(850131),
+    p = n(31051),
     R = n(659203),
     x = n(446028),
     S = n(302291),
@@ -75,8 +75,8 @@ var i = n(627968),
     eN = n(576471),
     eC = n(808821),
     eg = n(933762),
-    ep = n(840233),
-    eh = n(536030),
+    eh = n(840233),
+    ep = n(536030),
     eR = n(912746),
     ex = n(817253),
     eS = n(911726),
@@ -158,7 +158,7 @@ let eL = Object.freeze({
                 guildId: n.guild_id,
                 messageId: t.id
             });
-            return n.isThread() ? (0, i.jsx)(ep.A, {
+            return n.isThread() ? (0, i.jsx)(eh.A, {
                 message: t,
                 channel: n,
                 compact: a,
@@ -191,7 +191,7 @@ let eL = Object.freeze({
                 guildId: n.guild_id,
                 messageId: t.id
             });
-            return n.isThread() ? (0, i.jsx)(eh.A, {
+            return n.isThread() ? (0, i.jsx)(ep.A, {
                 message: t,
                 channel: n,
                 compact: a,
@@ -626,7 +626,7 @@ let eL = Object.freeze({
         [eM.lAJ.CUSTOM_GIFT]: void 0,
         [eM.lAJ.GUILD_GAMING_STATS_PROMPT]: void 0,
         [eM.lAJ.VOICE_HANGOUT_INVITE]: void 0,
-        [eM.lAJ.POLL_RESULT]: p.A,
+        [eM.lAJ.POLL_RESULT]: h.A,
         [eM.lAJ.CHANGELOG]: void 0,
         [eM.lAJ.NITRO_NOTIFICATION]: function(e) {
             let {
@@ -709,7 +709,7 @@ let eL = Object.freeze({
                 channel: n,
                 compact: a
             } = e;
-            return (0, i.jsx)(h.A, {
+            return (0, i.jsx)(p.A, {
                 message: t,
                 channel: n,
                 compact: a

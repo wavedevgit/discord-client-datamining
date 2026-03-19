@@ -21,8 +21,8 @@ var i = n(627968),
     N = n(405269),
     C = n(975571),
     g = n(927578),
-    p = n(580630),
-    h = n(851746),
+    h = n(580630),
+    p = n(851746),
     R = n(259297),
     x = n(727949),
     S = n(664654),
@@ -171,7 +171,7 @@ class y extends a.Component {
                             case R.Y.VARIANT_2: {
                                 let e = (0, o.TW)(v.intl.currentLocale);
                                 return v.intl.format(v.t["+KbxV6"], {
-                                    fixedTrialCost: (0, p.$g)(0, e)
+                                    fixedTrialCost: (0, h.$g)(0, e)
                                 })
                             }
                             case R.Y.VARIANT_3:
@@ -279,10 +279,10 @@ function b(e) {
         trialOffer: l,
         isResolving: r,
         referralsSent: o
-    } = (0, c.cf)([h.A], () => ({
-        trialOffer: n ? h.A.getRelevantUserTrialOffer(t) : null,
-        isResolving: !!n && h.A.isResolving(t),
-        referralsSent: h.A.getRecipientStatus()
+    } = (0, c.cf)([p.A], () => ({
+        trialOffer: n ? p.A.getRelevantUserTrialOffer(t) : null,
+        isResolving: !!n && p.A.isResolving(t),
+        referralsSent: p.A.getRecipientStatus()
     }), [n, t]), d = I.default.getCurrentUser(), A = (0, c.bG)([I.default], () => null != l && (0, g.TW)(void 0 !== d && l.user_id === d.id ? d : I.default.getUser(l.user_id))), E = (0, c.bG)([T.A], () => A ? T.A.getPremiumTypeSubscription()?.trialEndsAt : null), {
         analyticsLocations: f
     } = (0, m.Ay)(_.A.SHARE_NITRO_EMBED);

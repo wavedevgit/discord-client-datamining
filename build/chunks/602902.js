@@ -24,13 +24,13 @@ async function N(e, t) {
         channelId: N,
         analyticsLocations: C,
         messageReference: g
-    } = t, p = o.A.getChannel(N);
-    if (null != p) {
+    } = t, h = o.A.getChannel(N);
+    if (null != h) {
         if (null != g) {
             let e = d.A.getMessage(g.channel_id, g.message_id);
             null != e && (0, s.Yf)({
                 message: e,
-                channel: p,
+                channel: h,
                 shouldMention: !1,
                 showMentionToggle: !1
             })
@@ -57,13 +57,13 @@ async function N(e, t) {
                 }
                 u.default.track(f.HAw.CLIP_SHARED, {
                     location_stack: C,
-                    guild_id: p.guild_id,
-                    channel_id: p.id,
-                    channel_type: p.type,
+                    guild_id: h.guild_id,
+                    channel_id: h.id,
+                    channel_type: h.type,
                     application_id: i.applicationId,
                     clip_id: i.id
                 })
-            }(0, m.R)(t, p, c.C.ChannelMessage, {
+            }(0, m.R)(t, h, c.C.ChannelMessage, {
                 filesMetadata: n,
                 origin: "unknown:clip_share"
             }), a.closeAllModals()

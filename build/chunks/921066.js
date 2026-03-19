@@ -24,8 +24,8 @@ function g(e) {
     let {
         message: t,
         guild: g,
-        usernameHook: p
-    } = e, h = (0, r.bG)([c.A], () => c.A.useReducedMotion), R = (i || (i = n.t(l, 2))).useContext(s.C)?.animate ?? !1, x = !h && R, S = (0, A.Ay)(t), O = p(S), M = (0, _.A)(t);
+        usernameHook: h
+    } = e, p = (0, r.bG)([c.A], () => c.A.useReducedMotion), R = (i || (i = n.t(l, 2))).useContext(s.C)?.animate ?? !1, x = !p && R, S = (0, A.Ay)(t), O = h(S), M = (0, _.A)(t);
     return (0, a.jsxs)("div", {
         className: T.kL,
         children: [(0, a.jsx)(m.A, {

@@ -21,8 +21,8 @@ var i = n(627968),
     N = n(137207),
     C = n(997509),
     g = n(916768),
-    p = n(854627),
-    h = n(342296),
+    h = n(854627),
+    p = n(342296),
     R = n(734057),
     x = n(696451),
     S = n(287809),
@@ -132,7 +132,7 @@ function F(e) {
         avatarSrc: c,
         avatarDecorationSrc: d,
         eventHandlers: u
-    } = (0, p.A)({
+    } = (0, h.A)({
         userId: l?.id,
         guildId: r,
         size: 12
@@ -158,7 +158,7 @@ function F(e) {
                         variant: "text-xs/medium",
                         color: "text-default",
                         children: L.intl.string(L.t.qlFrXW)
-                    }), (0, i.jsx)(h.A, {
+                    }), (0, i.jsx)(p.A, {
                         targetElementRef: A,
                         user: l,
                         guildId: r,
@@ -212,7 +212,7 @@ function B(e) {
         resolvedReason: A
     } = (0, T.Bk)(t), N = (0, u.bG)([R.A], () => R.A.getChannel(t.channel_id), [t.channel_id]), C = N?.guild_id ?? null, {
         shouldShowIncidentActions: g
-    } = (0, E.Li)(C), p = (0, M.Am)(t.author.id, t.channel_id), h = a.useCallback(() => {
+    } = (0, E.Li)(C), h = (0, M.Am)(t.author.id, t.channel_id), p = a.useCallback(() => {
         let e = N?.guild_id;
         null != e && (0, f.is)(t.id, e)
     }, [t.id, N]), x = c === d.p.DM_RAID, S = x ? m.EpV : m.EF8;
@@ -271,7 +271,7 @@ function B(e) {
                     textVariant: "text-xs/medium",
                     text: L.intl.string(L.t.DEoVWZ),
                     onClick: e => {
-                        p(e)
+                        h(e)
                     }
                 })]
             }), (0, i.jsx)(y, {}), (0, i.jsx)("div", {
@@ -281,7 +281,7 @@ function B(e) {
                     textVariant: "text-xs/medium",
                     size: "sm",
                     text: (0, T.Oj)(A),
-                    onClick: h
+                    onClick: p
                 })
             })]
         }) : null

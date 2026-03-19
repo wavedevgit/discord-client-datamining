@@ -27,11 +27,11 @@ function C(e) {
         onClick: n,
         beforeTransition: C,
         className: g,
-        openChatWithoutConnecting: p
-    } = e, h = (0, a.bG)([I.default, E.A], () => null == t ? "" : (0, c.m1)(t, I.default, E.A), [t]);
+        openChatWithoutConnecting: h
+    } = e, p = (0, a.bG)([I.default, E.A], () => null == t ? "" : (0, c.m1)(t, I.default, E.A), [t]);
     return (0, i.jsx)(l.m, {
         "data-pending-richtooltip-migration": !0,
-        __unsupportedReactNodeAsText: h,
+        __unsupportedReactNodeAsText: p,
         position: "top",
         children: (0, i.jsx)(d.A, {
             role: "link",
@@ -53,10 +53,10 @@ function C(e) {
                         o.default.selectVoiceChannel(a.id);
                         return
                     }(0, u.pX)(N.BVt.CHANNEL(e, t))
-                }(t?.guild_id, t?.id, p))
+                }(t?.guild_id, t?.id, h))
             },
             iconType: (0, T.QG)(t),
-            children: h
+            children: p
         })
     })
 }

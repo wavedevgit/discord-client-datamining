@@ -21,8 +21,8 @@ var i = n(627968),
     N = n(652215),
     C = n(985018),
     g = n(633308),
-    p = n(299148);
-let h = e => {
+    h = n(299148);
+let p = e => {
         let {
             recipient: t,
             status: n,
@@ -90,7 +90,7 @@ let h = e => {
         } = a.useContext(c.CZ);
         return null === u ? (0, i.jsx)(d.y$y, {}) : (0, i.jsx)(s.ExpressiveModal, {
             graphic: _.enabled ? {
-                src: p.A,
+                src: h.A,
                 type: "image"
             } : {
                 rive: d.lBW,
@@ -107,7 +107,7 @@ let h = e => {
             transitionState: t,
             children: (0, i.jsx)("div", {
                 className: g.Hz,
-                children: n.map(e => (0, i.jsx)(h, {
+                children: n.map(e => (0, i.jsx)(p, {
                     recipient: e.recipient,
                     status: e.status,
                     onClose: l
