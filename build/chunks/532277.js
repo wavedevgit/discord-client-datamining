@@ -19,14 +19,14 @@ function u(e) {
         hideLabel: u,
         channel: h,
         onChange: g
-    } = e, [m, x] = i.useState(null), A = h.rateLimitPerUser, f = i.useMemo(() => {
+    } = e, [m, x] = i.useState(null), A = h.rateLimitPerUser, p = i.useMemo(() => {
         let e = [...m ?? o.s_7];
         return e.includes(A) || e.unshift(A), e.map(e => ({
             id: e.toString(),
             label: (0, r.$)(e, !1),
             value: e
         }))
-    }, [m, A]), p = i.useCallback(e => {
+    }, [m, A]), f = i.useCallback(e => {
         g(e), x(null)
     }, [g]), b = i.useCallback(e => {
         if ("" === e) return void x(null);
@@ -49,9 +49,9 @@ function u(e) {
             hideLabel: u,
             helperText: n,
             value: A,
-            onSelectionChange: p,
+            onSelectionChange: f,
             onQueryChange: e => b(e.target.value),
-            options: f,
+            options: p,
             onBlur: C,
             placeholder: d.intl.string(d.t.dBqQu4)
         })

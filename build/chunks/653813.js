@@ -1,6 +1,6 @@
 /** chunk id: 653813 params = (module,exports,require) **/
 t.d(i, {
-    default: () => p
+    default: () => h
 });
 var n = t(627968),
     r = t(64700),
@@ -20,8 +20,8 @@ function f(e) {
         onClose: t,
         transitionState: a,
         analyticsLocations: f,
-        analyticsLocation: p,
-        analyticsObject: h,
+        analyticsLocation: h,
+        analyticsObject: p,
         giftMessage: g
     } = e, {
         priceOptions: I
@@ -32,8 +32,8 @@ function f(e) {
             subscriptionTier: e,
             giftingOrigin: c.vQ.DM_CHANNEL,
             analyticsLocations: f ?? [],
-            analyticsLocation: p,
-            analyticsObject: h ?? {
+            analyticsLocation: h,
+            analyticsObject: p ?? {
                 page: _.liQ.DM_CHANNEL,
                 section: _.JJy.CHANNEL_TEXT_AREA,
                 object: _.ZSU.BUTTON_ICON,
@@ -41,7 +41,7 @@ function f(e) {
             },
             giftMessage: g
         }), t()
-    }, [i, f, p, h, g, t]);
+    }, [i, f, h, p, g, t]);
     return (0, n.jsxs)(s.EOs, {
         transitionState: a,
         size: s.rIJ.DYNAMIC,
@@ -75,7 +75,7 @@ function f(e) {
     })
 }
 
-function p(e) {
+function h(e) {
     let {
         giftRecipient: i,
         onClose: t,

@@ -74,7 +74,7 @@ function L(e) {
         W = r.useCallback(() => {
             (0, d.pX)(S.BVt.QUEST_PREVIEW_TOOL_2(e.quest.id))
         }, [e.quest.id]),
-        z = e.shouldShowDisclosure && e.quest.id !== y.Fw;
+        Y = e.shouldShowDisclosure && e.quest.id !== y.Fw;
     return (0, i.jsxs)(l.W1t, {
         "data-menu-migrated": !0,
         variant: "fixed",
@@ -125,7 +125,7 @@ function L(e) {
                     type: "icon",
                     icon: l.r2v
                 }
-            }), z && (0, i.jsx)(l.Drp, {
+            }), Y && (0, i.jsx)(l.Drp, {
                 id: "display-disclosure",
                 label: j.intl.string(j.t.GcsZKJ),
                 action: () => {

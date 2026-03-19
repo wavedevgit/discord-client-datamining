@@ -1,6 +1,6 @@
 /** chunk id: 466802 params = (module,exports,require) **/
 n.d(t, {
-    A: () => Y
+    A: () => z
 });
 var i = n(627968),
     r = n(64700),
@@ -364,8 +364,8 @@ class W extends r.Component {
         }) : this.renderEmbed()
     }
 }
-let z = (0, h.A)((0, m.A)(W)),
-    Y = function(e) {
+let Y = (0, h.A)((0, m.A)(W)),
+    z = function(e) {
         let {
             code: t,
             author: n
@@ -376,7 +376,7 @@ let z = (0, h.A)((0, m.A)(W)),
             giftCode: N.A.get(t),
             resolved: N.A.getIsResolved(t)
         })), l = (0, d.bG)([L.default], () => null != r && null != r.userId ? L.default.getUser(r.userId) : null), s = (0, d.bG)([R.A], () => null != r ? R.A.get(r.skuId) : null), o = (0, d.bG)([j.A], () => null != s && r?.entitlementBranches != null ? w.YI(r.entitlementBranches, s, j.A) : null), c = (0, g.h)(s?.applicationId), u = (0, k.zz)(r?.subscriptionPlanId), _ = (0, d.bG)([S.default], () => null != r ? S.default.getId() === r.userId : S.default.getId() === n.id);
-        return (0, i.jsx)(z, {
+        return (0, i.jsx)(Y, {
             ...e,
             skuApplication: c,
             giftCode: r,

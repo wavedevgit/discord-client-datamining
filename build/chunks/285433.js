@@ -49,7 +49,7 @@ let L = (0, s.animated)(c.abt),
         } = (0, u.Ay)(), [F, H] = r.useState(null), [V, q] = r.useState(null), W = (0, m.A)(e => {
             let t = e.target;
             H(t.offsetWidth), q(t.scrollWidth)
-        }), z = (0, _.w)(W), Y = (0, T.a3)(a), Q = a === h.uF.QUESTS_EMBED, K = (0, p.wT)(n, y.rE.QUESTS_CARD, a, U), J = n.userStatus?.completedAt != null, X = (0, A.Ut)(), Z = (0, g.S5)(n.config.expiresAt), $ = (0, g.S5)(n.config.rewardsConfig.rewardsExpireAt), ee = r.useMemo(() => null != n.config.cosponsorMetadata, [n]), et = e => {
+        }), Y = (0, _.w)(W), z = (0, T.a3)(a), Q = a === h.uF.QUESTS_EMBED, K = (0, p.wT)(n, y.rE.QUESTS_CARD, a, U), J = n.userStatus?.completedAt != null, X = (0, A.Ut)(), Z = (0, g.S5)(n.config.expiresAt), $ = (0, g.S5)(n.config.rewardsConfig.rewardsExpireAt), ee = r.useMemo(() => null != n.config.cosponsorMetadata, [n]), et = e => {
             e.stopPropagation(), e.currentTarget.blur(), O(), X({
                 questId: n.id,
                 questContent: a,
@@ -68,13 +68,13 @@ let L = (0, s.animated)(c.abt),
         });
         return (0, i.jsxs)("div", {
             className: l()(j.nw, {
-                [j.fu]: Y,
+                [j.fu]: z,
                 [j.Gg]: Q,
                 [j.e5]: "xs" === R
             }),
             "aria-label": N.intl.string(N.t.dcl9MQ),
             style: {
-                height: Y ? G : void 0
+                height: z ? G : void 0
             },
             children: [(0, i.jsx)(f.A, {
                 quest: n,
@@ -93,12 +93,12 @@ let L = (0, s.animated)(c.abt),
                         [j.eX]: Q
                     }),
                     style: {
-                        y: Y ? P.to({
+                        y: z ? P.to({
                             range: [0, 1],
                             output: [T.es, 0]
                         }) : void 0
                     },
-                    children: [Y && (0, i.jsx)(s.animated.div, {
+                    children: [z && (0, i.jsx)(s.animated.div, {
                         className: j.gM,
                         style: {
                             opacity: (0, b.a)(P.to({
@@ -138,7 +138,7 @@ let L = (0, s.animated)(c.abt),
                             B.current = e
                         },
                         className: l()(j.Yu, {
-                            [j.fu]: Y,
+                            [j.fu]: z,
                             [j.Gg]: Q
                         }),
                         style: {
@@ -162,7 +162,7 @@ let L = (0, s.animated)(c.abt),
                                     __unsupportedReactNodeAsText: n.config.messages.questName,
                                     shouldShow: null != F && null != V && F < V,
                                     children: (0, i.jsx)(c.Heading, {
-                                        ref: z,
+                                        ref: Y,
                                         variant: "lg" === R ? "heading-xxl/bold" : "sm" === R ? "heading-xl/bold" : "heading-lg/bold",
                                         className: j.R_,
                                         color: "always-white",
@@ -187,7 +187,7 @@ let L = (0, s.animated)(c.abt),
                 }), (0, i.jsxs)(s.animated.div, {
                     className: j._q,
                     style: {
-                        top: Y ? P.to({
+                        top: z ? P.to({
                             range: [0, 1],
                             output: [T.es / 2 - T.uR / 2, T.wl]
                         }) : T.wl
@@ -197,7 +197,7 @@ let L = (0, s.animated)(c.abt),
                         quest: n,
                         questContentPosition: k,
                         shouldShowDisclosure: !0,
-                        hideLearnMore: Y,
+                        hideLearnMore: z,
                         showShareLink: !t && Q,
                         sourceQuestContent: U,
                         children: e => (0, i.jsx)(s.animated.div, {

@@ -58,7 +58,7 @@ function B(e) {
         q = (0, u.bG)([j.Ay], () => V ? j.Ay.getVoiceStatesForChannelAlt(H.id, F.id) : [], [H.id, F.id, V]),
         {
             label: W,
-            sublabel: z
+            sublabel: Y
         } = function(e) {
             let {
                 currentUserId: t,
@@ -80,26 +80,26 @@ function B(e) {
             author: a.author,
             voiceStates: q
         }),
-        Y = (0, u.bG)([S.A], () => null != S.A.getGuild(F.id), [F.id]),
+        z = (0, u.bG)([S.A], () => null != S.A.getGuild(F.id), [F.id]),
         Q = (0, u.bG)([y.Ay], () => C.A.canAcceptInvite([y.Ay], t), [t]),
         K = t.state === k.elq.ACCEPTING,
         {
             analyticsLocations: J
         } = (0, x.Ay)(A.A.INVITE_EMBED),
         X = r.useCallback(() => {
-            let e = Y ? "transition" : "accept";
-            Y ? d() : f(), (0, m.he)({
+            let e = z ? "transition" : "accept";
+            z ? d() : f(), (0, m.he)({
                 invite: t,
                 action: e,
                 inviter_id: a.author.id,
                 invite_message_id: a.id
             }, J)
-        }, [t, a, J, Y, d, f]),
+        }, [t, a, J, z, d, f]),
         Z = r.useCallback(() => {
-            Y ? (0, I.iN)(H.id) : f({
+            z ? (0, I.iN)(H.id) : f({
                 autoJoin: !1
             })
-        }, [H.id, Y, f]),
+        }, [H.id, z, f]),
         $ = (0, D.A)({
             invite: t,
             message: a,
@@ -109,13 +109,13 @@ function B(e) {
         }),
         ee = B.activityPreviewEnabled && null != $,
         et = r.useCallback(() => {
-            null != $ && (Y ? (h.default.selectVoiceChannel($.channelId), (0, p.Nl)($)) : f(), (0, m.he)({
+            null != $ && (z ? (h.default.selectVoiceChannel($.channelId), (0, p.Nl)($)) : f(), (0, m.he)({
                 invite: t,
-                action: Y ? "watch" : "accept",
+                action: z ? "watch" : "accept",
                 inviter_id: a.author.id,
                 invite_message_id: a.id
             }, J))
-        }, [$, Y, t, a, J, f]),
+        }, [$, z, t, a, J, f]),
         en = (0, u.bG)([g.A], () => g.A.useReducedMotion),
         ei = r.useRef(null),
         er = r.useRef(null),
@@ -206,10 +206,10 @@ function B(e) {
                     }) : null, (0, i.jsx)(_.Text, {
                         variant: "text-md/medium",
                         children: W
-                    }), null != z ? (0, i.jsx)(_.Text, {
+                    }), null != Y ? (0, i.jsx)(_.Text, {
                         variant: "text-sm/normal",
                         className: U.$B,
-                        children: z
+                        children: Y
                     }) : null]
                 })]
             }), ee ? (0, i.jsx)(M.A, {

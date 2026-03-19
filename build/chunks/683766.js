@@ -1,5 +1,6 @@
 /** chunk id: 683766 params = (module,exports,require) **/
 e.exports = {
+    v8: "wishlistBannerContainer_b05cb4",
     A1: "wishlistBanner_b05cb4",
     $R: "wishlistBannerHeader_b05cb4",
     Rb: "wishlistBannerViewAllButtonContainer_b05cb4",

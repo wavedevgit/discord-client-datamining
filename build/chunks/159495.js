@@ -18,8 +18,8 @@ var l = n(627968),
     m = n(397927),
     x = n(157559),
     A = n(308528),
-    f = n(702805),
-    p = n(442433),
+    p = n(702805),
+    f = n(442433),
     b = n(508384),
     C = n(155718),
     j = n(736653),
@@ -54,7 +54,7 @@ let J = u.Ay.connectStores([T.A, M.A], () => {
     return {
         submitting: T.A.formState === W.XlH.SUBMITTING,
         onReset() {
-            (0, f.Ts)()
+            (0, p.Ts)()
         },
         onSave() {
             if (null == e) return;
@@ -62,7 +62,7 @@ let J = u.Ay.connectStores([T.A, M.A], () => {
                 let n = T.A.getPermissionOverwrite(t);
                 return null != n && e.push(n), e
             }, []);
-            (0, f.R$)(e.id, t)
+            (0, p.R$)(e.id, t)
         }
     }
 })(h.A);
@@ -99,7 +99,7 @@ function Q(e) {
                     allow: i,
                     deny: s
                 }
-            }))(0, f.LA)(n, t.id, i, s);
+            }))(0, p.LA)(n, t.id, i, s);
         else {
             let e;
             if (t.type === C.r2.MEMBER) {
@@ -117,8 +117,8 @@ function Q(e) {
     }, h = e => {
         let t = w.A.can(W.xBc.ADMINISTRATOR, i) || w.A.can(W.xBc.MANAGE_ROLES, n, void 0, void 0, !0);
         return n.isGuildStageVoice() && y.Zq.has(e) ? Y.intl.string(Y.t.bTS5lf) : !((!d.aI(e, W.xBc.MANAGE_ROLES) || t) && (null == e || w.A.can(e, i) || t)) && Y.intl.string(Y.t.nOtPMM)
-    }, g = t.id === a, p = n.isForumLikeChannel() && d.zy(t.deny, W.xBc.SEND_MESSAGES), b = d.zy(t.deny, W.xBc.SEND_MESSAGES), j = d.zy(t.deny, W.xBc.READ_MESSAGE_HISTORY), N = P.A.generateChannelPermissionSpec(a, n, g, {
-        createPostsDisabled: p,
+    }, g = t.id === a, f = n.isForumLikeChannel() && d.zy(t.deny, W.xBc.SEND_MESSAGES), b = d.zy(t.deny, W.xBc.SEND_MESSAGES), j = d.zy(t.deny, W.xBc.READ_MESSAGE_HISTORY), N = P.A.generateChannelPermissionSpec(a, n, g, {
+        createPostsDisabled: f,
         sendMessagesDisabled: b,
         readMessageHistoryDisabled: j
     });
@@ -284,7 +284,7 @@ function K() {
         E = (0, u.bG)([N.A], () => N.A.roleStyle),
         M = i.useCallback((e, t) => {
             if (null == s) return null;
-            (0, p.L3)(e, async () => {
+            (0, f.L3)(e, async () => {
                 let {
                     id: e,
                     role: i,
@@ -316,7 +316,7 @@ function K() {
             type: t,
             allow: U.x3,
             deny: U.x3
-        }).then(() => (0, f.G9)(e))
+        }).then(() => (0, p.G9)(e))
     };
     null != a && null == a[c.id] && (a[c.id] = U.xT(c.id));
     let w = h.filter(e => a[e.id]?.type === C.r2.ROLE).map(e => (0, l.jsx)(b.A, {
@@ -366,7 +366,7 @@ function K() {
         className: Z.uA,
         scrollable: !0,
         children: (0, l.jsxs)(m.VQ0, {
-            onItemSelect: f.G9,
+            onItemSelect: p.G9,
             selectedItem: r,
             orientation: "vertical",
             children: [(e = (0, g.Mw)(y) ? n(546716) : n(233497), (0, l.jsx)(m.YNO, {

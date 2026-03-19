@@ -103,9 +103,9 @@ let w = e => {
         year: "numeric",
         month: "long",
         day: "numeric"
-    }), F = B >= A.F3.ACCEPTED, H = B >= A.F3.COMPLETED, V = D || k, q = (0, g.wT)(t, N.rE.QUESTS_CARD, n, U), W = (0, x.Ut)(), z = (0, A.fc)(t), Y = (0, g.mU)({
+    }), F = B >= A.F3.ACCEPTED, H = B >= A.F3.COMPLETED, V = D || k, q = (0, g.wT)(t, N.rE.QUESTS_CARD, n, U), W = (0, x.Ut)(), Y = (0, A.fc)(t), z = (0, g.mU)({
         quest: t,
-        taskDetails: z,
+        taskDetails: Y,
         location: N.rE.QUESTS_CARD,
         questContent: l.u.QUESTS_EMBED,
         sourceQuestContent: U,
@@ -204,7 +204,7 @@ let w = e => {
                         quest: t,
                         locale: X,
                         isQuestExpired: w,
-                        collectibleQuestRewardDescription: Y,
+                        collectibleQuestRewardDescription: z,
                         formattedCompletionDate: G
                     })
                 })]

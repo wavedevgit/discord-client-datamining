@@ -134,9 +134,9 @@ function j(e, t) {
         submitting: H,
         tapShouldOpenVotersModal: V,
         showResults: q
-    } = j, W = (0, x.aw)(G), z = b.intl.formatToPlainString(b.t.XRkuof, {
+    } = j, W = (0, x.aw)(G), Y = b.intl.formatToPlainString(b.t.XRkuof, {
         count: W
-    }), Y = Math.max(...T.map(e => {
+    }), z = Math.max(...T.map(e => {
         let t = y(G, `${e.answer_id}`);
         return t?.count_details?.vote ?? 0
     })), Q = T.map(e => {
@@ -145,7 +145,7 @@ function j(e, t) {
             d = o?.count_details?.vote ?? 0,
             c = 0 === W ? 0 : d / W,
             u = F.has(a),
-            _ = d >= Y && 0 !== d,
+            _ = d >= z && 0 !== d,
             m = k && (o?.me_vote ?? !1),
             g = (t = {
                 didSelfVote: m,
@@ -277,7 +277,7 @@ function j(e, t) {
         enabled: !0,
         type: "cancel"
     })).otherwise(() => ({
-        label: z,
+        label: Y,
         secondaryLabel: w,
         accessibilityHint: J,
         presentation: "text",

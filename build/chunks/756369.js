@@ -47,8 +47,8 @@ var i = n(627968),
     V = n(46054),
     q = n(731068),
     W = n(619517),
-    z = n(207133),
-    Y = n(480191),
+    Y = n(207133),
+    z = n(480191),
     Q = n(269849),
     K = n(704413),
     J = n(695206),
@@ -101,8 +101,8 @@ var i = n(627968),
     eV = n(573163),
     eq = n(861986),
     eW = n(937266),
-    ez = n(343552),
-    eY = n(581619),
+    eY = n(343552),
+    ez = n(581619),
     eQ = n(652215),
     eK = n(985018),
     eJ = n(656191);
@@ -412,7 +412,7 @@ class e1 extends r.Component {
         if (e.type === eQ.Auw.GIFT) return null;
         let _ = eX.includes(e.type) ? e.url : e.image?.url ?? e.video?.url;
         return (0, i.jsx)(R.G.Provider, {
-            value: (0, ez.b)(_, e.image, e.video, e.thumbnail, e.provider?.name),
+            value: (0, eY.b)(_, e.image, e.video, e.thumbnail, e.provider?.name),
             children: (0, i.jsx)(E.Ay, {
                 embed: e,
                 obscureReason: u ?? void 0,
@@ -462,7 +462,7 @@ class e1 extends r.Component {
             hasBailedAst: n
         } = this.props;
         return 0 === e.embeds.length || !t || n ? null : e.embeds.map((t, n) => {
-            if (eY.z.has(t.type) || (0, ex.p6)(t) || (0, U.f)(t) && !(0, B.d)(e) || (0, ex.V)(t) || (0, ex.G8)(t)) return null;
+            if (ez.z.has(t.type) || (0, ex.p6)(t) || (0, U.f)(t) && !(0, B.d)(e) || (0, ex.V)(t) || (0, ex.G8)(t)) return null;
             if (t.type === eQ.Auw.COMPONENTS && null != t.components && t.components.length > 0) {
                 var r = this;
                 let {
@@ -671,7 +671,7 @@ class e1 extends r.Component {
         })
     }
     renderMediaPostEmbeds(e) {
-        return e.embeds.flatMap(t => t.type !== eQ.Auw.POST_PREVIEW || null == t.url ? [] : (0, i.jsx)(Y.A, {
+        return e.embeds.flatMap(t => t.type !== eQ.Auw.POST_PREVIEW || null == t.url ? [] : (0, i.jsx)(z.A, {
             embedUrl: t.url,
             message: e,
             channel: this.props.channel
@@ -763,7 +763,7 @@ function e7(e) {
         communicationDisabled: C,
         isActiveChannelOrUnarchivableThread: E,
         isAutomodQuarantined: f
-    }), j = (0, H.S)((n.editedTimestamp ?? n.timestamp).valueOf()), L = (0, z.A)(t?.id), R = (0, K.A)(n), P = (0, S.P)(n), D = (0, eb.z)(t), k = (0, eE._f)(n.id, n.channel_id), O = (0, T._R)();
+    }), j = (0, H.S)((n.editedTimestamp ?? n.timestamp).valueOf()), L = (0, Y.A)(t?.id), R = (0, K.A)(n), P = (0, S.P)(n), D = (0, eb.z)(t), k = (0, eE._f)(n.id, n.channel_id), O = (0, T._R)();
     return (0, i.jsx)(e1, {
         canSuppressEmbeds: I,
         canDeleteAttachments: v,
@@ -799,7 +799,7 @@ let e2 = e => {
         disableReactionUpdates: s = !0,
         disableComponentInteractivity: o = !0,
         ...d
-    } = e, c = eo.X6.useSetting(), u = eo.hD.useSetting(), _ = eo.rs.useSetting(), m = eo.kt.useSetting(), h = (0, H.S)((t.editedTimestamp ?? t.timestamp).valueOf()), p = (0, z.A)(n?.id), g = (0, S.P)(t), A = (0, eE._f)(t.id, t.channel_id), x = (0, K.A)(t);
+    } = e, c = eo.X6.useSetting(), u = eo.hD.useSetting(), _ = eo.rs.useSetting(), m = eo.kt.useSetting(), h = (0, H.S)((t.editedTimestamp ?? t.timestamp).valueOf()), p = (0, Y.A)(n?.id), g = (0, S.P)(t), A = (0, eE._f)(t.id, t.channel_id), x = (0, K.A)(t);
     return (0, i.jsx)(e1, {
         ...d,
         message: t,

@@ -1,7 +1,7 @@
 /** chunk id: 633839 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => f
 });
 var l = n(627968),
     i = n(64700),
@@ -18,12 +18,12 @@ var l = n(627968),
 n(253913);
 var x = n(652215),
     A = n(985018),
-    f = n(944616);
+    p = n(944616);
 
-function p(e) {
+function f(e) {
     let {
         channel: t
-    } = e, s = (0, r.bG)([g.A], () => g.A.can(x.xBc.MANAGE_CHANNELS, t), [t]), u = t.availableTags.length >= 20, m = t.availableTags.length > 0, p = i.useCallback(() => {
+    } = e, s = (0, r.bG)([g.A], () => g.A.can(x.xBc.MANAGE_CHANNELS, t), [t]), u = t.availableTags.length >= 20, m = t.availableTags.length > 0, f = i.useCallback(() => {
         let e = t.availableTags.length >= 20;
         s && !e && (0, d.mMO)(async () => {
             let {
@@ -57,7 +57,7 @@ function p(e) {
         })
     });
     return (0, l.jsxs)("div", {
-        className: f._A,
+        className: p._A,
         children: [m ? t.availableTags.map(e => (0, l.jsx)(b, {
             tag: e,
             availableTags: t.availableTags,
@@ -67,9 +67,9 @@ function p(e) {
             onDragReset: N,
             onDragStart: j
         }, e.id)) : null, m ? (0, l.jsx)(d.DUT, {
-            onClick: p,
-            className: a()(f.JE, {
-                [f.r9]: !s || u
+            onClick: f,
+            className: a()(p.JE, {
+                [p.r9]: !s || u
             }),
             children: (0, l.jsx)(d.j96, {
                 size: "custom",
@@ -82,7 +82,7 @@ function p(e) {
             variant: "primary",
             text: A.intl.string(A.t["/jubeD"]),
             disabled: !s,
-            onClick: p
+            onClick: f
         })]
     })
 }
@@ -100,7 +100,7 @@ function b(e) {
         drag: h,
         dragSourcePosition: g,
         drop: x,
-        setIsDraggable: p
+        setIsDraggable: f
     } = (0, u.A)({
         type: "CHANNEL_SETTINGS_FORUM_TAGS",
         index: c,
@@ -110,15 +110,15 @@ function b(e) {
         onDragReset: d
     });
     return (0, l.jsx)("div", {
-        className: a()(f.kL, {
-            [f.A]: null != g && c < g,
-            [f.Ze]: null != g && c > g
+        className: a()(p.kL, {
+            [p.A]: null != g && c < g,
+            [p.Ze]: null != g && c > g
         }),
         ref: e => {
             h(x(e))
         },
-        onMouseEnter: () => p(i),
-        onMouseLeave: () => p(!1),
+        onMouseEnter: () => f(i),
+        onMouseLeave: () => f(!1),
         children: (0, l.jsx)(m.A, {
             tag: t,
             disabled: !i,

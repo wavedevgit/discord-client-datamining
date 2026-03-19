@@ -18,8 +18,8 @@ var i = n(503698),
     m = n(709066),
     x = n(63104),
     A = n(60868),
-    f = n(894328),
-    p = n(997509),
+    p = n(894328),
+    f = n(997509),
     b = n(776781),
     C = n(233993),
     j = n(110618),
@@ -53,54 +53,54 @@ function P(e) {
         className: B.xz,
         sections: [n.length, i.length],
         renderRow: function(e) {
-            let A, f, p, {
+            let A, p, f, {
                     section: C,
                     row: j
                 } = e,
                 N = !1;
             switch (C) {
                 case O.oO.ROLES:
-                    p = (f = n[j]).rowType === O.T6.ROLE && f.tags?.guild_connections === null ? (0, l.jsx)(x.A, {
+                    f = (p = n[j]).rowType === O.T6.ROLE && p.tags?.guild_connections === null ? (0, l.jsx)(x.A, {
                         className: B.a,
-                        color: f.colorString,
+                        color: p.colorString,
                         size: 20
                     }) : (0, l.jsx)(o.iTF, {
                         size: "custom",
                         className: B.a,
-                        color: f.colorString,
+                        color: p.colorString,
                         height: 20
                     }), A = (0, l.jsxs)(l.Fragment, {
-                        children: [p, (0, l.jsx)(o.Text, {
+                        children: [f, (0, l.jsx)(o.Text, {
                             variant: "text-sm/normal",
-                            color: f.disabled ? "text-muted" : "text-default",
-                            children: f.name
+                            color: p.disabled ? "text-muted" : "text-default",
+                            children: p.name
                         })]
-                    }), N = f.disabled;
+                    }), N = p.disabled;
                     break;
                 case O.oO.MEMBERS:
-                    f = i[j], A = (0, l.jsxs)(l.Fragment, {
+                    p = i[j], A = (0, l.jsxs)(l.Fragment, {
                         children: [(0, l.jsx)(o.euF, {
-                            src: f.avatarURL,
+                            src: p.avatarURL,
                             size: o._3J.SIZE_20,
                             "aria-hidden": !0
                         }), (0, l.jsx)(o.Text, {
                             variant: "text-sm/normal",
-                            children: f.name
-                        }), f.bot && (0, l.jsx)(m.A, {
-                            verified: f.verifiedBot
+                            children: p.name
+                        }), p.bot && (0, l.jsx)(m.A, {
+                            verified: p.verifiedBot
                         }), (0, l.jsx)(o.Text, {
                             color: "text-muted",
                             className: B.Gq,
                             variant: "text-xs/normal",
-                            children: f.username
+                            children: p.username
                         })]
-                    }), N = f.disabled;
+                    }), N = p.disabled;
                     break;
                 default:
-                    f = null
+                    p = null
             }
-            if (null == f) return null;
-            let v = !N && null == a && null != f.id;
+            if (null == p) return null;
+            let v = !N && null == a && null != p.id;
             return (0, l.jsxs)("div", {
                 className: B.TL,
                 role: "listitem",
@@ -112,14 +112,14 @@ function P(e) {
                     children: [(0, l.jsx)(o.Text, {
                         color: "text-muted",
                         variant: "text-xs/normal",
-                        children: I.vV(f.rowType)
-                    }), f.rowType !== O.T6.EMPTY_STATE && (0, l.jsx)(r.m, {
+                        children: I.vV(p.rowType)
+                    }), p.rowType !== O.T6.EMPTY_STATE && (0, l.jsx)(r.m, {
                         asContainer: !0,
-                        text: a ?? u(f.rowType, f.disabled),
+                        text: a ?? u(p.rowType, p.disabled),
                         children: (0, l.jsx)(o.DUT, {
                             onClick: () => {
                                 var e, n, l;
-                                return v && null != f && (e = f.id, n = f.name, l = f.rowType, void d.A.show({
+                                return v && null != p && (e = p.id, n = p.name, l = p.rowType, void d.A.show({
                                     title: k.intl.string(k.t.GuPYQB),
                                     body: k.intl.format(k.t.xERCnZ, {
                                         name: n
@@ -146,7 +146,7 @@ function P(e) {
                         })
                     })]
                 })]
-            }, f.id)
+            }, p.id)
         },
         rowHeight: 40,
         renderSection: function(e) {
@@ -238,7 +238,7 @@ function V(e) {
     async function m() {
         let e = i.accessPermissions,
             s = E.default.getCurrentUser();
-        r || null == await (0, f.D)(t.id, i.id) ? (I.uB(i, e, r), r || null == s || u || I.tP(i, e)) : (0, o.mMO)(async () => {
+        r || null == await (0, p.D)(t.id, i.id) ? (I.uB(i, e, r), r || null == s || u || I.tP(i, e)) : (0, o.mMO)(async () => {
             let {
                 Modal: e
             } = await Promise.resolve().then(n.bind(n, 158954));
@@ -247,7 +247,7 @@ function V(e) {
                 title: k.intl.string(k.t.ZzdgUm),
                 subtitle: k.intl.format(k.t.DwY2vN, {
                     onClick: () => {
-                        p.A.open(t.id, G.BEX.ONBOARDING), n.onClose()
+                        f.A.open(t.id, G.BEX.ONBOARDING), n.onClose()
                     }
                 }),
                 actions: [{

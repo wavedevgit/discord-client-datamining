@@ -65,13 +65,13 @@ function U(e) {
         instanceId: H,
         isCurrentlyInInstance: V,
         canLaunchInChannel: q
-    } = (0, N.w)(t.id), W = (0, c.A)(), z = (0, p.Vr)({
+    } = (0, N.w)(t.id), W = (0, c.A)(), Y = (0, p.Vr)({
         context: {
             type: "contextless"
         },
         applicationId: t.id,
         botUserId: C?.id
-    }), Y = null != v && b && z, Q = q && b, K = (0, x.e)(t), J = (0, w.F)(t), X = (0, w.t)(t), Z = r.useMemo(() => {
+    }), z = null != v && b && Y, Q = q && b, K = (0, x.e)(t), J = (0, w.F)(t), X = (0, w.t)(t), Z = r.useMemo(() => {
         let e = [];
         return b ? K ? e.push({
             label: k.intl.string(k.t.RscU7I),
@@ -96,7 +96,7 @@ function U(e) {
                 })
             },
             disabled: V
-        }), !Q && Y && e.push({
+        }), !Q && z && e.push({
             label: k.intl.string(k.t.JeK1Wg),
             trackingArea: R.kY.PLAY,
             onClick() {
@@ -109,7 +109,7 @@ function U(e) {
                 })
             }
         })) : null != X && e.push(X), e
-    }, [b, X, K, t.id, Q, Y, H, V, F, W, a, O, U, v]), $ = b ? (0, i.jsx)(G, {
+    }, [b, X, K, t.id, Q, z, H, V, F, W, a, O, U, v]), $ = b ? (0, i.jsx)(G, {
         app: t
     }) : (0, i.jsx)(B, {
         app: t
