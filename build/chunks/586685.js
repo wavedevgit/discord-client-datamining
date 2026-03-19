@@ -56,20 +56,20 @@ function h() {
     return (0, i.jsxs)(a.f5, {
         value: e,
         children: [(0, i.jsx)(d.x, {
-            setting: _.Ho.GIFT_CODE_REDEMPTION,
+            setting: _.H.GIFT_CODE_REDEMPTION,
             children: (0, i.jsx)(g, {})
         }), (0, i.jsx)(d.x, {
-            setting: _.Ho.GIFT_INVENTORY_QUESTS,
+            setting: _.H.GIFT_INVENTORY_QUESTS,
             children: (0, i.jsx)(A, {
                 inOldSettings: !0
             })
         }), (0, i.jsx)(d.x, {
-            setting: _.Ho.GIFT_INVENTORY_LIST,
+            setting: _.H.GIFT_INVENTORY_LIST,
             children: (0, i.jsx)(x, {
                 inOldSettings: !0
             })
         }), (0, i.jsx)(d.x, {
-            setting: _.Ho.GIFT_BLOCKED_PAYMENTS,
+            setting: _.H.GIFT_BLOCKED_PAYMENTS,
             children: (0, i.jsx)(r.uK, {})
         })]
     })

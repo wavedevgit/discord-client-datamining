@@ -5,8 +5,8 @@ n.d(t, {
 }), n(667532);
 var r = n(627968);
 n(64700);
-var a = n(158954),
-    i = n(963935),
+var i = n(158954),
+    a = n(963935),
     s = n(272053),
     l = n(215566),
     o = n(985018),
@@ -16,19 +16,19 @@ function u(e) {
     let {
         node: t,
         isLast: n
-    } = e, i = t.useTitle(), o = t.usePersistentBadge?.(), u = (0, r.jsxs)(a.BJc, {
+    } = e, a = t.useTitle(), o = t.usePersistentBadge?.(), u = (0, r.jsxs)(i.BJc, {
         direction: "horizontal",
         align: "center",
         gap: "xs",
         className: c.Ze,
-        children: [(0, r.jsx)(a.EYj, {
+        children: [(0, r.jsx)(i.EYj, {
             variant: n ? "text-md/medium" : "text-md/normal",
             color: n ? "text-default" : void 0,
             className: c.b,
-            children: i
+            children: a
         }), n && null != o && (0, r.jsx)(l.A, {
             badge: o
-        }), !n && (0, r.jsx)(a.EYj, {
+        }), !n && (0, r.jsx)(i.EYj, {
             variant: "text-md/normal",
             color: "interactive-text-default",
             children: "/"
@@ -37,7 +37,7 @@ function u(e) {
     return (0, r.jsx)("li", {
         "aria-current": n ? "page" : void 0,
         className: c.QF,
-        children: n ? u : (0, r.jsx)(a.DUT, {
+        children: n ? u : (0, r.jsx)(i.DUT, {
             onClick: () => {
                 s.A.navigate(t.key)
             },
@@ -52,13 +52,13 @@ function d(e) {
         node: t
     } = e, n = function(e) {
         let t = [e];
-        for (let n = e.parent; null != n && n.type !== i.Z6.SIDEBAR_ITEM; n = n.parent) n.type === i.Z6.PANEL && t.unshift(n);
+        for (let n = e.parent; null != n && n.type !== a.Z6.SIDEBAR_ITEM; n = n.parent) n.type === a.Z6.PANEL && t.unshift(n);
         return t
     }(t);
     return (0, r.jsx)("nav", {
         "aria-label": o.intl.string(o.t["bM+M/m"]),
         className: c.m7,
-        children: (0, r.jsx)(a.BJc, {
+        children: (0, r.jsx)(i.BJc, {
             direction: "horizontal",
             role: "list",
             className: c.jD,

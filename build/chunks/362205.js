@@ -4,9 +4,9 @@ n.d(t, {
     A: () => A
 });
 var r = n(627968),
-    a = n(64700),
-    i = n(503698),
-    s = n.n(i),
+    i = n(64700),
+    a = n(503698),
+    s = n.n(a),
     l = n(284009),
     o = n.n(l),
     c = n(497766),
@@ -15,19 +15,19 @@ var r = n(627968),
     m = n(397927),
     f = n(775602),
     h = n(253932),
-    p = n(894858),
-    g = n(272053),
+    g = n(894858),
+    p = n(272053),
     x = n(189857),
     _ = n(674085),
-    y = n(890690),
-    b = n(652099);
+    b = n(890690),
+    y = n(652099);
 
 function v(e) {
     let {
         category: t,
         onClick: n,
-        active: a,
-        dismissibleBadge: i
+        active: i,
+        dismissibleBadge: a
     } = e, {
         useTitle: l,
         useSubnavLabel: c,
@@ -37,12 +37,12 @@ function v(e) {
         id: u,
         children: e => (0, r.jsxs)(m.DUT, {
             onClick: n,
-            className: s()(b.AS, {
-                [b.vu]: a
+            className: s()(y.AS, {
+                [y.vu]: i
             }),
             ...e,
-            children: [h, null != i && !a && (0, r.jsx)(_.A, {
-                badge: i
+            children: [h, null != a && !i && (0, r.jsx)(_.A, {
+                badge: a
             })]
         }, u)
     })
@@ -52,13 +52,13 @@ function A(e) {
     let {
         categories: t,
         visibleContent: n,
-        dismissibleBadges: i
-    } = e, [s, l] = a.useState(() => {
-        let e = p.A.getField("currentCategoryKey"),
+        dismissibleBadges: a
+    } = e, [s, l] = i.useState(() => {
+        let e = g.A.getField("currentCategoryKey"),
             n = t.find(t => t.key === e);
         return n?.key ?? t[0].key
     });
-    a.useEffect(() => p.A.subscribe(e => {
+    i.useEffect(() => g.A.subscribe(e => {
         let {
             currentCategoryKey: t
         } = e;
@@ -69,7 +69,7 @@ function A(e) {
     }, {
         equalityFn: u.x
     }), [t]);
-    let o = a.useMemo(() => Math.max(t.findIndex(e => e.key === s), 0), [t, s]),
+    let o = i.useMemo(() => Math.max(t.findIndex(e => e.key === s), 0), [t, s]),
         {
             thumbRef: d,
             trackRef: _,
@@ -77,11 +77,11 @@ function A(e) {
             springs: j
         } = function(e) {
             let t = h.Xi.useSetting(),
-                n = a.useRef(null),
-                r = a.useRef(null),
-                i = a.useRef(null),
-                s = a.useRef(!0),
-                l = a.useRef(t),
+                n = i.useRef(null),
+                r = i.useRef(null),
+                a = i.useRef(null),
+                s = i.useRef(!0),
+                l = i.useRef(t),
                 [o, c] = (0, m.zhh)(() => ({
                     y: 0,
                     height: 0,
@@ -91,11 +91,11 @@ function A(e) {
                         tension: 300
                     }
                 }));
-            return a.useLayoutEffect(() => {
+            return i.useLayoutEffect(() => {
                 let e = l.current !== t,
-                    a = () => {
-                        if (null == n.current || null == r.current || null == i.current) return;
-                        let [a, u] = [n.current.getBoundingClientRect(), i.current.getBoundingClientRect()], d = a.width / 2, m = (u.y - a.y) / d, h = u.height / d;
+                    i = () => {
+                        if (null == n.current || null == r.current || null == a.current) return;
+                        let [i, u] = [n.current.getBoundingClientRect(), a.current.getBoundingClientRect()], d = i.width / 2, m = (u.y - i.y) / d, h = u.height / d;
                         s.current || e || f.A.useReducedMotion ? (o.y.set(m), o.height.set(h)) : c({
                             y: m,
                             height: h
@@ -103,19 +103,19 @@ function A(e) {
                     },
                     u = null;
                 return e ? u = requestAnimationFrame(() => {
-                    u = null, a()
-                }) : a(), () => {
+                    u = null, i()
+                }) : i(), () => {
                     null != u && cancelAnimationFrame(u)
                 }
             }, [e, c, o.y, o.height, t]), {
                 thumbRef: r,
                 trackRef: n,
-                thumbAnchorRef: i,
+                thumbAnchorRef: a,
                 springs: o
             }
         }(o);
-    return (0, y.u)(t), (0, r.jsxs)("div", {
-        className: b.o8,
+    return (0, b.u)(t), (0, r.jsxs)("div", {
+        className: y.o8,
         role: "list",
         style: {
             "--custom-nav-count": t.length,
@@ -123,24 +123,24 @@ function A(e) {
             "--custom-nav-width": "2px"
         },
         children: [(0, r.jsx)("div", {
-            className: b.u4,
+            className: y.u4,
             "aria-hidden": "true",
             ref: _,
             children: (0, r.jsx)(c.animated.div, {
-                className: b.FF,
+                className: y.FF,
                 style: j,
                 ref: d
             })
         }), (0, r.jsx)("div", {
-            className: b.gu,
+            className: y.gu,
             "aria-hidden": "true",
             ref: A
         }), t.map(e => {
-            let t = (0, x.H)(e.key, n, i);
+            let t = (0, x.H)(e.key, n, a);
             return (0, r.jsx)(v, {
                 onClick: () => {
                     var t;
-                    return t = e.key, void g.A.navigate(t, {
+                    return t = e.key, void p.A.navigate(t, {
                         showNavigationMobile: !1
                     })
                 },

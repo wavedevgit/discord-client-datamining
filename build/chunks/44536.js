@@ -23,17 +23,17 @@ var r = t(397927),
     C = t(200273),
     m = t(565846),
     O = t(57907),
-    g = t(375500),
-    T = t(707653),
+    T = t(375500),
+    g = t(707653),
     I = t(985018);
 let R = (0, a.A)(function(e) {
     let {
         channel: n,
         onSelect: t
-    } = e, a = (0, c.A)(n), d = (0, A.A)(n), R = (0, O.A)(n), y = (0, s.A)(n), G = (0, v.A)(n), S = (0, f.A)(n), N = (0, o.A)({
+    } = e, a = (0, c.A)(n), d = (0, A.A)(n), R = (0, O.A)(n), G = (0, s.A)(n), y = (0, v.A)(n), S = (0, f.A)(n), N = (0, o.A)({
         id: n.id,
         label: I.intl.string(I.t.DQ797g)
-    }), L = (0, h.A)(n, "Context Menu"), F = (0, E.A)(n), D = (0, b.A)(n), U = (0, g.A)(n), x = (0, C.A)(n), j = (0, m.A)(n.id), w = (0, _.A)(n), V = (0, T.A)(n), M = (0, u.m)(n), k = (0, u.y)(n), P = (0, p.A)(n);
+    }), F = (0, h.A)(n, "Context Menu"), L = (0, E.A)(n), D = (0, b.A)(n), U = (0, T.A)(n), x = (0, C.A)(n), j = (0, m.A)(n.id), w = (0, _.A)(n), V = (0, g.A)(n), M = (0, u.m)(n), k = (0, u.y)(n), P = (0, p.A)(n);
     return (0, i.jsxs)(r.W1t, {
         "data-menu-migrated": !0,
         navId: "thread-context",
@@ -45,11 +45,11 @@ let R = (0, a.A)(function(e) {
         }, "mark-as-read-or-favorite"), (0, i.jsx)(r.rXV, {
             children: M
         }), (0, i.jsxs)(r.rXV, {
-            children: [L, w, y, G, x, j, a]
+            children: [F, w, G, y, x, j, a]
         }, "thread-actions"), (0, i.jsxs)(r.rXV, {
             children: [R, U]
         }, "notifications"), (0, i.jsxs)(r.rXV, {
-            children: [V, F, P, D, S]
+            children: [V, L, P, D, S]
         }, "admin-actions"), (0, i.jsx)(r.rXV, {
             children: k
         }), (0, i.jsx)(r.rXV, {

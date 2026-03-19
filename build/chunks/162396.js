@@ -1,12 +1,12 @@
 /** chunk id: 162396 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var r = n(627968),
-    a = n(64700),
-    i = n(503698),
-    s = n.n(i),
+    i = n(64700),
+    a = n(503698),
+    s = n.n(a),
     l = n(397927),
     o = n(975807),
     c = n(212031),
@@ -16,7 +16,7 @@ var r = n(627968),
     f = n(985018),
     h = n(779432);
 
-function p(e) {
+function g(e) {
     let {
         onClose: t
     } = e;
@@ -44,8 +44,8 @@ function p(e) {
     })
 }
 
-function g() {
-    let e = a.useRef(null);
+function p() {
+    let e = i.useRef(null);
     return (0, r.jsxs)("div", {
         children: [(0, r.jsx)(d.A, {}), (0, r.jsxs)("div", {
             className: h.yJ,
@@ -83,7 +83,7 @@ function g() {
                     let {
                         closePopout: t
                     } = e;
-                    return (0, r.jsx)(p, {
+                    return (0, r.jsx)(g, {
                         onClose: t
                     })
                 },

@@ -1,10 +1,11 @@
 /** chunk id: 93055 params = (module,exports,require) **/
 n.d(e, {
     Af: () => v,
-    CJ: () => E,
+    CJ: () => C,
     DZ: () => p,
     Rm: () => b,
-    TW: () => A
+    TW: () => A,
+    e4: () => E
 }), n(321073);
 var i = n(478437),
     a = n(311907);
@@ -51,7 +52,16 @@ function p() {
     return (0, f.ai)(t)
 }
 
-function E() {
+function E(t, e) {
+    let n = p(),
+        {
+            hasAccess: i
+        } = A(e),
+        l = (0, a.bG)([u.A], () => null != t && (u.A.isFavorite(t.id) || t.isThread() && u.A.isFavorite(t.parent_id)), [t]);
+    return !n || i && l ? t ?? null : null
+}
+
+function C() {
     let t = (0, c.J)(t => t.favoriteAdded);
     return {
         favoriteAdded: t,
