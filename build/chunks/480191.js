@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(112758),
     f = n(754459),
     C = n(967144),
-    I = n(342296),
-    E = n(253932),
+    E = n(342296),
+    I = n(253932),
     v = n(696451),
     b = n(287809),
     T = n(486020),
@@ -42,7 +42,7 @@ function D(e) {
         channel: a
     } = e, D = r.useRef(null), k = r.useRef(null), O = (0, j.D)(t, n), {
         setPopout: U
-    } = (0, f.A)(n.id, R.Fd), B = (0, x.VL)(n, a, U, !0), G = E.kt.useSetting(), F = (0, S.j)(), [H, V] = r.useState(!1), [q, W] = r.useState(O?.coverImage == null), z = (0, o.bG)([v.Ay, b.default], () => v.Ay.isMember(O?.guildId, b.default.getCurrentUser()?.id), [O]), Y = (0, o.bG)([v.Ay], () => O?.authorId != null ? v.Ay.getMember(O.guildId, O.authorId) : null), Q = (0, m.A)(Y?.avatarDecoration != null ? Y?.avatarDecoration : O?.user?.avatarDecoration), [K, J, X] = r.useMemo(() => [Y?.colorString ?? "inherit", Y?.colorStrings ?? null, Y?.colorRoleId], [Y]), Z = (0, C.gn)(Y?.guildId, O?.authorId ?? void 0, J), {
+    } = (0, f.A)(n.id, R.Fd), B = (0, x.VL)(n, a, U, !0), G = I.kt.useSetting(), F = (0, S.j)(), [H, V] = r.useState(!1), [q, W] = r.useState(O?.coverImage == null), z = (0, o.bG)([v.Ay, b.default], () => v.Ay.isMember(O?.guildId, b.default.getCurrentUser()?.id), [O]), Y = (0, o.bG)([v.Ay], () => O?.authorId != null ? v.Ay.getMember(O.guildId, O.authorId) : null), Q = (0, m.A)(Y?.avatarDecoration != null ? Y?.avatarDecoration : O?.user?.avatarDecoration), [K, J, X] = r.useMemo(() => [Y?.colorString ?? "inherit", Y?.colorStrings ?? null, Y?.colorRoleId], [Y]), Z = (0, C.gn)(Y?.guildId, O?.authorId ?? void 0, J), {
         reducedMotion: $
     } = r.useContext(c.CZY), [ee, et] = r.useState(!1), en = r.useCallback(() => {
         V(!0)
@@ -128,7 +128,7 @@ function D(e) {
                 })]
             }), (0, i.jsxs)("div", {
                 className: M._5,
-                children: [null != O.authorId && null != el && (0, i.jsx)(I.A, {
+                children: [null != O.authorId && null != el && (0, i.jsx)(E.A, {
                     targetElementRef: k,
                     userId: O.authorId,
                     guildId: O.guildId,
@@ -178,7 +178,7 @@ function D(e) {
                                 colorString: K,
                                 colorStrings: Z,
                                 className: M.fh
-                            }) : (0, i.jsx)(I.A, {
+                            }) : (0, i.jsx)(E.A, {
                                 targetElementRef: D,
                                 userId: O.authorId,
                                 guildId: O.guildId,

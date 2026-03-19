@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(472590),
     f = n(878831),
     C = n(768349),
-    I = n(985018),
-    E = n(62323),
+    E = n(985018),
+    I = n(62323),
     v = n(748921);
 
 function b(e) {
@@ -40,16 +40,16 @@ function b(e) {
     })(c);
     return (0, i.jsx)(p.A, {
         compact: !1,
-        children: I.intl.format(s === t.author.id ? I.t.anvg2q : I.t.AxVbYF, {
+        children: E.intl.format(s === t.author.id ? E.t.anvg2q : E.t.AxVbYF, {
             username: c.nick,
             usernameHook: u,
             applicationHook: () => {
                 let e = null != d ? o.MzZ : "div";
                 return (0, i.jsxs)(e, {
                     onClick: d,
-                    className: E.Lf,
+                    className: I.Lf,
                     children: [(0, i.jsx)("img", {
-                        alt: I.intl.string(I.t["2B/phM"]),
+                        alt: E.intl.string(E.t["2B/phM"]),
                         src: r,
                         className: l()(v.Gt, _.M.XSMALL)
                     }), (0, i.jsx)(o.Text, {
@@ -92,7 +92,7 @@ function T(e) {
             i = !0,
             r = !1;
         if (null != h ? e = [{
-                label: I.intl.string(I.t["s+J8Dl"]),
+                label: E.intl.string(E.t["s+J8Dl"]),
                 trackingArea: u.kY.PLAY,
                 isDeadEnd: !0,
                 onClick: () => {
@@ -107,7 +107,7 @@ function T(e) {
                 hasAccountLinkButton: !1
             };
             else R && i && (e.push({
-                label: I.intl.string(I.t.lw71Nf),
+                label: E.intl.string(E.t.lw71Nf),
                 trackingArea: u.kY.CONNECT_ACCOUNT,
                 onClick: () => {
                     P({
@@ -127,7 +127,7 @@ function T(e) {
     let B = k.length > 0,
         G = r.useMemo(() => (0, i.jsx)(o.Text, {
             variant: "text-xs/medium",
-            className: E.h_,
+            className: I.h_,
             color: "none",
             lineClamp: 3,
             children: (0, A.BE)(t, a, l, m, B)

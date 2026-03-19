@@ -21,8 +21,8 @@ var i = n(627968),
     x = n(427262),
     f = n(218394),
     C = n(386952),
-    I = n(381969),
-    E = n(920814),
+    E = n(381969),
+    I = n(920814),
     v = n(235665),
     b = n(985018),
     T = n(656708);
@@ -96,7 +96,7 @@ function N(e) {
     } = (0, C.e)(), f = (n?.description?.trim().length ?? 0) > 0, [N, j] = r.useState(1), L = (0, d.A)("(max-width: 1439px)"), {
         selectedTab: R,
         isPhantomPreview: P
-    } = (0, I.k)(), M = R === E.B.GUILD_PRODUCTS_PREVIEW ? b.intl.string(b.t["LvXy/H"]) : b.intl.string(b.t.XyqKh8), w = f ? (0, i.jsxs)(i.Fragment, {
+    } = (0, E.k)(), M = R === I.B.GUILD_PRODUCTS_PREVIEW ? b.intl.string(b.t["LvXy/H"]) : b.intl.string(b.t.XyqKh8), w = f ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(A, {
             lineClamp: L || 2 === N ? 2 : 3,
             children: (0, i.jsx)(o.Text, {

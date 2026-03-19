@@ -1,62 +1,62 @@
 /** chunk id: 961977 params = (module,exports,require) **/
 t.d(l, {
-    A: () => h
+    A: () => I
 });
 var n = t(627968),
     s = t(64700),
-    i = t(158954),
-    a = t(554146),
+    a = t(158954),
+    i = t(554146),
     r = t(397927),
-    d = t(357186),
-    o = t(932001),
+    o = t(357186),
+    d = t(932001),
     c = t(151252),
     u = t(733391),
     _ = t(133015),
     g = t(476438),
-    p = t(652215),
-    I = t(49999),
-    x = t(985018),
-    f = t(8519);
+    x = t(652215),
+    p = t(49999),
+    f = t(985018),
+    A = t(8519);
 
-function A(e) {
+function h(e) {
     let {
         location: l
     } = e, t = (0, _.n)({
         location: l
-    }), c = (0, g.B)(), [A, h] = (0, o.RF)(t ? a.M.GAME_SHOP_ORBS_REWARD_BANNER : null, (0, d.c)(a.M.GAME_SHOP_ORBS_REWARD_BANNER), void 0, !0), m = A !== a.M.GAME_SHOP_ORBS_REWARD_BANNER;
+    }), c = (0, g.B)(), [h, I] = (0, d.RF)(t ? i.M.GAME_SHOP_ORBS_REWARD_BANNER : null, (0, o.c)(i.M.GAME_SHOP_ORBS_REWARD_BANNER), void 0, !0), m = h !== i.M.GAME_SHOP_ORBS_REWARD_BANNER;
     return (s.useEffect(() => {
         t && (0, u.Xw)()
     }, [t]), !t || m) ? null : (0, n.jsxs)(r.$Td, {
-        className: f.U,
+        className: A.U,
         color: r.Hv$.BRAND,
         children: [(0, n.jsx)(r.PMB, {
-            noticeType: p.kqX.GAME_SHOP_ORBS_REWARD_BANNER,
-            onClick: () => h(I.i.USER_DISMISS)
-        }), (0, n.jsx)(i.Cp8, {
+            noticeType: x.kqX.GAME_SHOP_ORBS_REWARD_BANNER,
+            onClick: () => I(p.i.USER_DISMISS)
+        }), (0, n.jsx)(a.Cp8, {
             size: "xs",
             color: "currentColor"
         }), (0, n.jsxs)("div", {
-            className: f.f,
-            children: [(0, n.jsxs)(i.EYj, {
+            className: A.f,
+            children: [(0, n.jsxs)(a.EYj, {
                 variant: "text-sm/bold",
                 color: "currentColor",
-                children: [x.intl.string(x.t.yYEZGi), null != c && ` (${c})`]
-            }), (0, n.jsx)(i.EYj, {
+                children: [f.intl.string(f.t.yYEZGi), null != c && ` (${c})`]
+            }), (0, n.jsx)(a.EYj, {
                 variant: "text-sm/bold",
                 color: "currentColor",
                 children: "—"
-            }), (0, n.jsx)(i.EYj, {
+            }), (0, n.jsx)(a.EYj, {
                 variant: "text-sm/medium",
                 color: "currentColor",
-                children: x.intl.format(x.t.RUuXiA, {
-                    applicationName: x.intl.string(x.t.Uu8hke)
+                children: f.intl.format(f.t.RUuXiA, {
+                    applicationName: f.intl.string(f.t.Uu8hke)
                 })
             })]
         })]
     })
 }
 
-function h(e) {
+function I(e) {
     let {
         location: l
     } = e, {
@@ -64,7 +64,7 @@ function h(e) {
     } = (0, c.Z)({
         location: l
     });
-    return t ? (0, n.jsx)(A, {
+    return t ? (0, n.jsx)(h, {
         location: l
     }) : null
 }

@@ -22,29 +22,29 @@ function x(e) {
     let {
         code: t,
         message: n
-    } = e, [x, f, C] = (0, s.yK)([h.A], () => [h.A.getApplication(t), h.A.isInvalidApplication(t), h.A.getApplicationFetchState(t)], [t]), I = (0, s.bG)([u.A], () => u.A.getGuildId() ?? void 0), [E, v] = r.useState(!1), b = r.useCallback(e => {
+    } = e, [x, f, C] = (0, s.yK)([h.A], () => [h.A.getApplication(t), h.A.isInvalidApplication(t), h.A.getApplicationFetchState(t)], [t]), E = (0, s.bG)([u.A], () => u.A.getGuildId() ?? void 0), [I, v] = r.useState(!1), b = r.useCallback(e => {
         e && v(!0)
     }, []), T = (0, a.K)(b), y = r.useCallback(() => {
         _.default.track(p.HAw.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
             application_id: t,
             device_platform: l.Fr ? "mobile_web" : "desktop_web",
             sender_user_id: n.author.id,
-            guild_id: I,
+            guild_id: E,
             channel_id: n.channel_id
         })
-    }, [t, I, n.author.id, n.channel_id]);
+    }, [t, E, n.author.id, n.channel_id]);
     return (r.useEffect(() => {
         (0, m.eP)(t)
     }, [t]), r.useEffect(() => {
-        E && C === h.e.FETCHED && y()
-    }, [E, C, y]), r.useEffect(() => {
-        E && f && _.default.track(p.HAw.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
+        I && C === h.e.FETCHED && y()
+    }, [I, C, y]), r.useEffect(() => {
+        I && f && _.default.track(p.HAw.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
             device_platform: l.Fr ? "mobile_web" : "desktop_web",
             sender_user_id: n.author.id,
-            guild_id: I,
+            guild_id: E,
             channel_id: n.channel_id
         })
-    }, [E, I, f, n.author.id, n.channel_id]), f) ? (0, i.jsxs)(d.A, {
+    }, [I, E, f, n.author.id, n.channel_id]), f) ? (0, i.jsxs)(d.A, {
         containerRef: T,
         children: [(0, i.jsx)(d.A.Header, {
             text: g.intl.string(g.t.j4KtLa)

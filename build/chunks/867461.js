@@ -1,6 +1,6 @@
 /** chunk id: 867461 params = (module,exports,require) **/
 n.d(t, {
-    l: () => E
+    l: () => I
 });
 var i = n(627968),
     r = n(64700),
@@ -21,7 +21,7 @@ var i = n(627968),
     f = n(985018),
     C = n(679643);
 
-function I(e) {
+function E(e) {
     let {
         children: t,
         variant: n = "default"
@@ -40,13 +40,13 @@ function I(e) {
     })
 }
 
-function E(e) {
+function I(e) {
     let {
         quest: t,
         isInteracting: n,
         location: a,
         sourceQuestContent: l
-    } = e, E = (0, h.Ic)(t), v = t.userStatus?.claimedAt != null, b = (0, m.S5)(t.config.expiresAt, {
+    } = e, I = (0, h.Ic)(t), v = t.userStatus?.claimedAt != null, b = (0, m.S5)(t.config.expiresAt, {
         month: "numeric",
         day: "numeric"
     }), T = (0, o.bG)([_.A], () => _.A.getQuestHomeHeroConfig()), y = r.useMemo(() => null != T && (0, p.I0)(T, t.id), [T, t.id]), S = (0, c.Ay)(), N = (0, s.Mwr)(S) ? "text-muted" : "always-white";
@@ -77,9 +77,9 @@ function E(e) {
                         direction: "horizontal",
                         fullWidth: !1,
                         gap: 8,
-                        children: [y && !E && (0, i.jsx)(I, {
+                        children: [y && !I && (0, i.jsx)(E, {
                             children: f.intl.string(f.t.Jt6u7B)
-                        }), t.preview && (0, i.jsx)(I, {
+                        }), t.preview && (0, i.jsx)(E, {
                             variant: "brand",
                             children: f.intl.string(f.t.SKNnqq)
                         })]
@@ -131,7 +131,7 @@ function E(e) {
                             color: "always-white",
                             children: t.config.cosponsorMetadata?.name ?? t.config.messages.gamePublisher
                         })]
-                    }), E || v ? null : (0, i.jsx)(s.EYj, {
+                    }), I || v ? null : (0, i.jsx)(s.EYj, {
                         variant: "text-sm/medium",
                         color: N,
                         children: f.intl.format(f.t["7D8r4F"], {

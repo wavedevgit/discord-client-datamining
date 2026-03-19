@@ -21,8 +21,8 @@ var i = n(627968),
     x = n(67480),
     f = n(328968),
     C = n(652215),
-    I = n(985018),
-    E = n(659210);
+    E = n(985018),
+    I = n(659210);
 class v extends r.Component {
     static defaultProps = {
         renderFallback: C.tEg
@@ -78,10 +78,10 @@ class v extends r.Component {
     renderViewInStoreButton() {
         return (0, i.jsx)(s.$n.Link, {
             to: C.BVt.APPLICATION_STORE,
-            className: E.h,
+            className: I.h,
             color: s.$n.Colors.GREEN,
             size: s.$n.Sizes.SMALL,
-            children: I.intl.string(I.t["W+NB90"])
+            children: E.intl.string(E.t["W+NB90"])
         })
     }
     renderApplicationTile = (e, t) => {
@@ -119,19 +119,19 @@ class v extends r.Component {
             renderCustomActions: l
         } = this.props;
         if (null != l) return (0, i.jsx)("div", {
-            className: E.i,
+            className: I.i,
             children: l()
         });
         if (null == n) return null;
         let s = null != n && n.primarySkuId === r,
             o = null != a && a.hasFlag(C.hM6.HIDDEN);
         return (0, i.jsxs)("div", {
-            className: E.i,
+            className: I.i,
             children: [!s || o ? this.renderViewInStoreButton() : (0, i.jsx)(c.A, {
                 application: n,
                 disabledVariant: "primary",
                 size: "sm",
-                className: E.h,
+                className: I.h,
                 source: C.ThZ.MESSAGE_EMBED,
                 onClick: this.handleActionButtonClick
             }), t && !o || e.premium ? null : (0, i.jsx)(u.A, {

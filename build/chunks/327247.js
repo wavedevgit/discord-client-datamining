@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(561844),
     f = n(590202),
     C = n(710969),
-    I = n(92246),
-    E = n(792620),
+    E = n(92246),
+    I = n(792620),
     v = n(453384),
     b = n(201805),
     T = n(212614),
@@ -40,7 +40,7 @@ function D(e) {
         quest: t,
         location: n,
         isInteracting: a,
-        contentPosition: E,
+        contentPosition: I,
         sourceQuestContent: b
     } = e, D = r.useRef(null), {
         ref: U,
@@ -54,7 +54,7 @@ function D(e) {
             friction: 20,
             clamp: !0
         }
-    }), H = (0, C.Ic)(t), V = (0, A.In)(t), q = (0, I.mq)(t.config), W = (0, I.mH)(t.config), z = t.userStatus?.enrolledAt != null, Y = t.userStatus?.completedAt != null, Q = t.userStatus?.claimedAt != null, K = (0, I.ks)(t.config), J = (0, I._Z)(t.config), {
+    }), H = (0, C.Ic)(t), V = (0, A.In)(t), q = (0, E.mq)(t.config), W = (0, E.mH)(t.config), z = t.userStatus?.enrolledAt != null, Y = t.userStatus?.completedAt != null, Q = t.userStatus?.claimedAt != null, K = (0, E.ks)(t.config), J = (0, E._Z)(t.config), {
         completedRatio: X,
         completedRatioDisplay: Z
     } = (0, A.O9)(t), $ = (0, g.gj)(t, b, _.Ob.QuestEmbed, D), ee = (0, y.Pd)(t), et = r.useMemo(() => Q && K ? R.intl.format(R.t["8Op4c4"], {
@@ -97,11 +97,11 @@ function D(e) {
         }), (0, x.Y5)({
             questId: t.id,
             questContent: n,
-            questContentPosition: E,
+            questContentPosition: I,
             questContentCTA: f.Cy.LEARN_MORE,
             sourceQuestContent: b
         })
-    }, [t.id, n, E, b]), ea = (0, c.bG)([h.A], () => null != h.A.questEnrollmentBlockedUntil, []), el = p.t.useConfig({
+    }, [t.id, n, I, b]), ea = (0, c.bG)([h.A], () => null != h.A.questEnrollmentBlockedUntil, []), el = p.t.useConfig({
         location: L.rE.EMBED_DESKTOP
     });
     return (0, i.jsxs)("div", {
@@ -198,13 +198,13 @@ function D(e) {
                     surface: y.V3.QUEST_EMBED,
                     analyticsCtxQuestContent: n,
                     analyticsCtxSourceQuestContent: b,
-                    analyticsCtxQuestContentPosition: E
+                    analyticsCtxQuestContentPosition: I
                 }) : (0, i.jsx)(O, {
                     quest: t,
                     progressState: V,
                     questContent: n,
                     sourceQuestContent: b,
-                    questContentPosition: E
+                    questContentPosition: I
                 })]
             })
         })]
@@ -231,7 +231,7 @@ function O(e) {
         questContent: r,
         questContentPosition: a,
         sourceQuestContent: l
-    } = e, s = (0, c.bG)([h.A], () => h.A.isEnrolling(t.id)), o = (0, E.vv)(t), u = (0, E.Cr)(t), _ = (0, C.Ic)(t), m = (0, b._c)({
+    } = e, s = (0, c.bG)([h.A], () => h.A.isEnrolling(t.id)), o = (0, I.vv)(t), u = (0, I.Cr)(t), _ = (0, C.Ic)(t), m = (0, b._c)({
         progressState: n,
         quest: t,
         questContent: r,

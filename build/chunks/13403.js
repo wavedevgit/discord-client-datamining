@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(692969),
     f = n(928550),
     C = n(760751),
-    I = n(320501),
-    E = n(139675),
+    E = n(320501),
+    I = n(139675),
     v = n(486020),
     b = n(456060),
     T = n(659051),
@@ -56,7 +56,7 @@ function M(e) {
                 bot: n
             } = t;
             return {
-                iconSrc: (e.activity?.icon_override != null ? (0, E.uD)(t.id, e.activity?.icon_override) : null) ?? v.Ay.getApplicationIconURL({
+                iconSrc: (e.activity?.icon_override != null ? (0, I.uD)(t.id, e.activity?.icon_override) : null) ?? v.Ay.getApplicationIconURL({
                     id: t.id,
                     icon: t.icon,
                     bot: n
@@ -111,7 +111,7 @@ function M(e) {
         el = !(0, T.A)(q, F, k.id),
         es = (0, b.n$)(Y, F.activity?.type, el),
         eo = r.useRef(null),
-        ed = (0, a.bG)([I.A], () => I.A.getMessages(O.id)),
+        ed = (0, a.bG)([E.A], () => E.A.getMessages(O.id)),
         ec = () => {
             let e = [];
             return (0, y.G)(F.id, ed) && en && !ei && et.enabled && e.push(l.M.GAME_INVITE_ACCOUNT_LINK_UPSELL), (0, i.jsx)(g.Ay, {

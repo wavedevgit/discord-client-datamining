@@ -1,6 +1,6 @@
 /** chunk id: 572211 params = (module,exports,require) **/
 n.d(t, {
-    h: () => E,
+    h: () => I,
     u: () => C
 }), n(323874), n(14289), n(35956);
 var i, r = n(627968),
@@ -21,7 +21,7 @@ var i, r = n(627968),
     f = n(545581),
     C = ((i = {})[i.BOT = 0] = "BOT", i[i.ACTIVITY = 1] = "ACTIVITY", i);
 
-function I(e) {
+function E(e) {
     let {
         onClick: t,
         children: n,
@@ -39,14 +39,14 @@ function I(e) {
     })
 }
 
-function E(e) {
+function I(e) {
     var t;
     let {
         title: n,
         header: i,
         footer: l,
         info: C,
-        staticBannerSrc: E,
+        staticBannerSrc: I,
         videoBannerSrc: v,
         bannerAspectRatio: b = 0,
         iconSrc: T,
@@ -71,7 +71,7 @@ function E(e) {
     let {
         primaryColor: R,
         secondaryColor: P
-    } = (0, h.A)(T ?? E), M = `linear-gradient(45deg, ${R}, ${P})`, w = (0, u.bG)([m.A], () => m.A.useReducedMotion), D = a.useRef(!1), k = (0, d.K)(e => {
+    } = (0, h.A)(T ?? I), M = `linear-gradient(45deg, ${R}, ${P})`, w = (0, u.bG)([m.A], () => m.A.useReducedMotion), D = a.useRef(!1), k = (0, d.K)(e => {
         !1 === D.current && e && (N?.onView?.(), (0, g.wV)({
             appId: N.id,
             linkType: N.linkType,
@@ -81,7 +81,7 @@ function E(e) {
             channelId: N.channelId,
             messageId: N.messageId
         }), D.current = !0)
-    }, void 0), O = null != E, U = null != v && !1 === w, B = O || U, G = 0 === b ? f.pv : f.$g, F = a.useRef(null), H = a.useCallback(() => {
+    }, void 0), O = null != I, U = null != v && !1 === w, B = O || U, G = 0 === b ? f.pv : f.$g, F = a.useRef(null), H = a.useCallback(() => {
         let e = F.current;
         null == e || ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
     }, []), V = a.useMemo(() => !!U && new URL(v).pathname.endsWith(".gif"), [U, v]), q = a.useMemo(() => {
@@ -110,7 +110,7 @@ function E(e) {
     return (0, r.jsxs)("div", {
         ref: k,
         className: f.E6,
-        children: [B && (0, r.jsxs)(I, {
+        children: [B && (0, r.jsxs)(E, {
             onClick: W,
             className: s()(f.cy, G, {
                 [f.wk]: U
@@ -130,7 +130,7 @@ function E(e) {
             })), O && (0, r.jsx)("div", {
                 className: f.LR,
                 style: {
-                    backgroundImage: `url(${E})`
+                    backgroundImage: `url(${I})`
                 },
                 onTransitionEnd: H
             })]
@@ -145,7 +145,7 @@ function E(e) {
                     color: "none",
                     className: f.wx,
                     children: i
-                }), (0, r.jsxs)(I, {
+                }), (0, r.jsxs)(E, {
                     onClick: q,
                     className: s()(f.FG, {
                         [f.ry]: null != q

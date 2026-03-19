@@ -12,38 +12,35 @@ function o(e) {
     let {
         isQuestAccepted: t,
         isQuestCompleted: n,
-        isQuestBarVisible: o,
-        unfurlEnabled: d,
-        hasSeenUnfurl: c,
-        onUnfurlDismissed: u
-    } = e, m = d && !t && !c, [h, x] = a.useState(m ? "unfurledWithTimeout" : "none"), p = (0, i.bG)([s.A], () => s.A.useReducedMotion), [g, _] = a.useState(m), [f, v] = a.useState(!g), [b, j] = a.useState(!0), A = a.useRef(o), C = a.useCallback(e => {
-        n || (v(!1), _(e))
-    }, [n]), y = a.useCallback(() => {
-        C(!0)
-    }, [C]), T = a.useCallback(() => {
-        C(!1)
-    }, [C]), S = t ? r.ZV : r.Ko, [{
-        expansionSpring: E
-    }, N] = (0, l.zhh)(() => ({
+        isQuestBarVisible: o
+    } = e, d = (0, i.bG)([s.A], () => s.A.useReducedMotion), [c, u] = a.useState(!1), [m, h] = a.useState(!0), [x, p] = a.useState(!0), g = a.useRef(o), _ = a.useCallback(e => {
+        n || (h(!1), u(e))
+    }, [n]), f = a.useCallback(() => {
+        _(!0)
+    }, [_]), v = a.useCallback(() => {
+        _(!1)
+    }, [_]), b = t ? r.ZV : r.Ko, [{
+        expansionSpring: j
+    }, A] = (0, l.zhh)(() => ({
         from: {
             expansionSpring: 0
         },
-        config: S,
-        onRest: e => {
-            v(!0), 0 === e.value && x("none")
+        config: b,
+        onRest: () => {
+            h(!0)
         },
         onStart: () => {
-            v(!1)
+            h(!1)
         }
     }));
     a.useEffect(() => {
-        N({
-            expansionSpring: +!!g,
-            immediate: p
+        A({
+            expansionSpring: +!!c,
+            immediate: d
         })
-    }, [g, N, p]);
+    }, [c, A, d]);
     let {
-        visibilitySpring: I
+        visibilitySpring: C
     } = (0, l.zhh)({
         from: {
             visibilitySpring: 0
@@ -57,35 +54,24 @@ function o(e) {
             clamp: !0
         },
         onRest: () => {
-            j(!0)
+            p(!0)
         },
         onStart: () => {
-            j(!1)
+            p(!1)
         }
     });
-    a.useLayoutEffect(() => {
-        o !== A.current && j(!1), A.current = o
-    }, [o]);
-    let k = a.useCallback(() => {
-            "unfurledWithTimeout" === h && (x("unfurledWithTimeoutCanceled"), u())
-        }, [u, h]),
-        R = a.useCallback(() => {
-            C(!1), u()
-        }, [C, u]);
-    return {
-        isExpanded: g,
-        setIsExpanded: C,
-        expandQuestBar: y,
-        collapseQuestBar: T,
-        isExpansionAnimationComplete: f,
-        isVisibilityAnimationAtRest: b,
-        expansionSpring: E,
-        visibilitySpring: I,
-        springConfig: S,
-        onQuestBarFocus: k,
-        onUnfurlTimeoutComplete: R,
-        isUnfurl: "none" !== h,
-        isUnfurlTimeoutActive: "unfurledWithTimeout" === h
+    return a.useLayoutEffect(() => {
+        o !== g.current && p(!1), g.current = o
+    }, [o]), {
+        isExpanded: c,
+        setIsExpanded: _,
+        expandQuestBar: f,
+        collapseQuestBar: v,
+        isExpansionAnimationComplete: m,
+        isVisibilityAnimationAtRest: x,
+        expansionSpring: j,
+        visibilitySpring: C,
+        springConfig: b
     }
 }
 n(272111)

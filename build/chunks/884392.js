@@ -36,14 +36,14 @@ let g = function(e) {
         preClickCallback: x,
         analyticsCtxQuestContent: f,
         analyticsCtxSourceQuestContent: C,
-        analyticsCtxQuestContentPosition: I,
-        analyticsCtxQuestContentRowIndex: E
+        analyticsCtxQuestContentPosition: E,
+        analyticsCtxQuestContentRowIndex: I
     } = e, v = {
         questContent: f,
         questContentCTA: p(c),
         sourceQuestContent: C,
-        questContentPosition: I,
-        questContentRowIndex: E
+        questContentPosition: E,
+        questContentRowIndex: I
     }, b = n.id, {
         isEnrolling: T
     } = (0, a.cf)([o.A], () => ({

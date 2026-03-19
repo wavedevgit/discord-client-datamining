@@ -4,18 +4,18 @@ t.d(l, {
 });
 var n = t(627968),
     s = t(371794),
-    i = t(871123),
-    a = t(734643);
+    a = t(871123),
+    i = t(734643);
 
 function r(e) {
     let {
         applicationId: l,
         backgroundImageAssetId: t
-    } = e, r = null != t ? (0, s.YE)(l, t, 1024, i.pV) : null;
+    } = e, r = null != t ? (0, s.YE)(l, t, 1024, a.pV) : null;
     return (0, n.jsx)("div", {
-        className: a._,
+        className: i._,
         children: null != r ? (0, n.jsx)("div", {
-            className: a.i,
+            className: i.i,
             style: {
                 backgroundImage: `url(${r})`
             }

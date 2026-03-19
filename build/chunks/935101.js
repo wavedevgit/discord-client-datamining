@@ -2,10 +2,10 @@
 a.d(t, {
     A: () => f
 });
-var n = a(64700),
-    _ = a(311907),
-    r = a(205693),
-    o = a(451988),
+var _ = a(64700),
+    n = a(311907),
+    o = a(205693),
+    r = a(451988),
     i = a(430452),
     l = a(383501),
     s = a(485296),
@@ -20,25 +20,25 @@ function f() {
         showPTTSpeakingIndicator: e
     } = u.A.useConfig({
         location: "useSpeakingWhilePTT"
-    }), [t, a] = n.useState(!1), c = (0, _.bG)([i.Ay], () => i.Ay.getMode() === d.TB.PUSH_TO_TALK), f = (0, _.bG)([l.A], () => l.A.getRTCConnectionId()), g = (0, _.bG)([i.Ay], () => {
+    }), [t, a] = _.useState(!1), c = (0, n.bG)([i.Ay], () => i.Ay.getMode() === d.TB.PUSH_TO_TALK), f = (0, n.bG)([l.A], () => l.A.getRTCConnectionId()), g = (0, n.bG)([i.Ay], () => {
         let e = i.Ay.getModeOptions().updatedAt;
         return null != e && Date.now() - e < b
-    }), m = n.useRef(new o.Ep);
-    return n.useEffect(() => {
+    }), x = _.useRef(new r.Ep);
+    return _.useEffect(() => {
         a(!1)
-    }, [f]), n.useEffect(() => {
+    }, [f]), _.useEffect(() => {
         let t = 0,
-            n = m.current;
+            _ = x.current;
 
-        function _(e, _) {
-            let r = (_ & d.ME.VOICE) === d.ME.VOICE,
-                o = s.A.isCurrentUserPTTActive();
-            r && !o ? ++t >= 6 && (a(!0), n.start(p, () => {
+        function n(e, n) {
+            let o = (n & d.ME.VOICE) === d.ME.VOICE,
+                r = s.A.isCurrentUserPTTActive();
+            o && !r ? ++t >= 6 && (a(!0), _.start(p, () => {
                 a(!1)
             })) : t = 0
         }
-        return g && e && c && null != f && i.Ay.getMediaEngine().on(r.bg.VoiceActivity, _), () => {
-            i.Ay.getMediaEngine().removeListener(r.bg.VoiceActivity, _), n.stop()
+        return g && e && c && null != f && i.Ay.getMediaEngine().on(o.bg.VoiceActivity, n), () => {
+            i.Ay.getMediaEngine().removeListener(o.bg.VoiceActivity, n), _.stop()
         }
     }, [e, c, g, f]), t
 }

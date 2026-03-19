@@ -85,11 +85,16 @@ let I = {
                     guildId: A.Kf
                 })
             }, [M]),
-            w = r.useCallback(e => {
-                M("card_click", e), (0, p.R)({
-                    skuId: e,
-                    applicationId: A.XR,
-                    guildId: A.Kf,
+            w = r.useCallback((e, t) => {
+                let {
+                    skuId: s,
+                    applicationId: n,
+                    guildId: r
+                } = t;
+                M("card_click", s), (0, p.R)({
+                    skuId: s,
+                    applicationId: n,
+                    guildId: r,
                     isStorefront: !1,
                     analyticsLocations: O
                 })
@@ -157,10 +162,8 @@ let I = {
                             className: v.$2,
                             children: k.map((e, t) => (0, n.jsx)(f.A, {
                                 skuId: e,
-                                applicationId: A.XR,
-                                guildId: A.Kf,
                                 positionInSection: t,
-                                onClick: () => w(e)
+                                onClick: w
                             }, e))
                         })
                     })]

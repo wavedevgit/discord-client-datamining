@@ -17,30 +17,29 @@ function o(e) {
         isQuestCompleted: c,
         isQuestAccepted: u,
         prevIsQuestAccepted: m,
-        impressionRef: h,
-        onQuestBarFocus: x
-    } = e, p = a.useRef(-1), g = a.useRef(!1), [_, f] = a.useState(!1), [v, b] = a.useState(!1), j = a.useCallback(() => {
-        f(!0)
-    }, []), A = a.useCallback(() => {
-        f(!1), g.current || c || o(!1)
+        impressionRef: h
+    } = e, x = a.useRef(-1), p = a.useRef(!1), [g, _] = a.useState(!1), [f, v] = a.useState(!1), b = a.useCallback(() => {
+        _(!0)
+    }, []), j = a.useCallback(() => {
+        _(!1), p.current || c || o(!1)
+    }, [c, o]), A = a.useCallback(() => {
+        _(!1), c || o(!1), p.current = !1
     }, [c, o]), C = a.useCallback(() => {
-        f(!1), c || o(!1), g.current = !1
-    }, [c, o]), y = a.useCallback(() => {
-        b(!0)
-    }, []), T = a.useCallback(() => {
-        b(!1), o(!1)
-    }, [o]), S = a.useCallback(function() {
+        v(!0)
+    }, []), y = a.useCallback(() => {
+        v(!1), o(!1)
+    }, [o]), T = a.useCallback(function() {
         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-        if (x(), n) return;
+        if (n) return;
         let {
             withDelay: t = !1
         } = e;
-        t ? p.current = window.setTimeout(d, 75) : d()
-    }, [d, n, x]), E = a.useCallback(() => {
-        S()
-    }, [S]), N = a.useCallback(() => {
-        window.clearTimeout(p.current), _ || v || g.current || o(!1)
-    }, [_, v, o]), I = a.useCallback(() => {
+        t ? x.current = window.setTimeout(d, 75) : d()
+    }, [d, n]), S = a.useCallback(() => {
+        T()
+    }, [T]), E = a.useCallback(() => {
+        window.clearTimeout(x.current), g || f || p.current || o(!1)
+    }, [g, f, o]), N = a.useCallback(() => {
         (0, l.av)({
             questId: t.id,
             event: r.HAw.QUEST_HOVER,
@@ -51,10 +50,10 @@ function o(e) {
             },
             shouldExtendSession: !0,
             sourceQuestContent: i.uF.QUEST_BAR_V2
-        }), g.current = !0, S({
+        }), p.current = !0, T({
             withDelay: !0
         })
-    }, [S, h, t.id]), k = a.useCallback(() => {
+    }, [T, h, t.id]), I = a.useCallback(() => {
         (0, l.av)({
             questId: t.id,
             event: r.HAw.QUEST_HOVER_OFF,
@@ -64,26 +63,26 @@ function o(e) {
                 impression_id: h.current?.getId()
             },
             sourceQuestContent: i.uF.QUEST_BAR_V2
-        }), g.current = !1, N()
-    }, [N, h, t.id]);
+        }), p.current = !1, E()
+    }, [E, h, t.id]);
     return a.useEffect(() => {
-        v && k()
-    }, [v, k]), a.useLayoutEffect(() => {
-        u && !m && g.current && d()
+        f && I()
+    }, [f, I]), a.useLayoutEffect(() => {
+        u && !m && p.current && d()
     }, [d, u, m]), a.useLayoutEffect(() => {
-        c || !u || m || g.current || o(!1)
+        c || !u || m || p.current || o(!1)
     }, [u, c, m, o]), {
-        ctxMenuOpen: _,
-        gameSheetOpen: v,
-        handleCtxMenuOpened: j,
-        handleCtxMenuClosed: A,
-        handleCtxMenuSelection: C,
-        handleGameSheetOpened: y,
-        handleGameSheetClosed: T,
-        handleFocus: S,
-        handleFocusWithoutDelay: E,
-        handleBlur: N,
-        handleMouseEnter: I,
-        handleMouseLeave: k
+        ctxMenuOpen: g,
+        gameSheetOpen: f,
+        handleCtxMenuOpened: b,
+        handleCtxMenuClosed: j,
+        handleCtxMenuSelection: A,
+        handleGameSheetOpened: C,
+        handleGameSheetClosed: y,
+        handleFocus: T,
+        handleFocusWithoutDelay: S,
+        handleBlur: E,
+        handleMouseEnter: N,
+        handleMouseLeave: I
     }
 }

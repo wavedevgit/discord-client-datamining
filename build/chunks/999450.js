@@ -29,17 +29,13 @@ function x() {
     }, [e, t]);
     if (null == e) return null;
     let {
-        application: x,
-        skuIds: f,
-        guildId: h
+        skuIds: x
     } = e;
     return (0, a.jsx)(d.A, {
         title: m.intl.string(m.t.WDdlUb),
         onClickViewAll: u.tE,
         children: (0, a.jsx)(c.R, {
-            applicationId: x.id,
-            skuIds: f,
-            guildId: h,
+            skuIds: x,
             analyticsLocations: t,
             onCardClick: n
         })

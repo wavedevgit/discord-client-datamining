@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(71393),
     f = n(954571),
     C = n(722888),
-    I = n(43136),
-    E = n(575926),
+    E = n(43136),
+    I = n(575926),
     v = n(652215),
     b = n(985018),
     T = n(566457);
@@ -53,13 +53,13 @@ function y(e) {
         children: (0, i.jsx)(u.y$y, {})
     }) : null == n || null == y ? null : (0, i.jsxs)("div", {
         className: T.lm,
-        children: [(0, i.jsx)(I.C, {
+        children: [(0, i.jsx)(E.C, {
             coverImageAsset: y.cover_image_asset ?? null
         }), (0, i.jsx)(u.hKd, {
             size: 16
         }), (0, i.jsxs)("div", {
             className: T.qs,
-            children: [(0, i.jsx)(E.h, {
+            children: [(0, i.jsx)(I.h, {
                 height: "16px",
                 width: "16px",
                 color: d.A.colors.INTERACTIVE_TEXT_DEFAULT.css
@@ -115,7 +115,7 @@ function y(e) {
                 className: T.$h,
                 children: (0, i.jsx)(c.$nd, {
                     onClick: j,
-                    icon: E.A,
+                    icon: I.A,
                     text: b.intl.string(b.t.jXx1CC)
                 })
             })]

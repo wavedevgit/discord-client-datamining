@@ -1,33 +1,29 @@
 /** chunk id: 205830 params = (module,exports,require) **/
 t.d(l, {
-    $: () => d
+    $: () => o
 });
 var n = t(627968);
 t(64700);
 var s = t(503698),
-    i = t.n(s),
-    a = t(183802),
+    a = t.n(s),
+    i = t(183802),
     r = t(616838);
 
-function d(e) {
+function o(e) {
     let {
-        applicationId: l,
-        skuIds: t,
-        variant: s = a.s.SMALL,
-        guildId: d,
-        analyticsLocations: o
+        skuIds: l,
+        variant: t = i.s.SMALL,
+        analyticsLocations: s
     } = e;
-    return null == t || 0 === t.length ? null : (0, n.jsx)("div", {
-        className: i()(r.kL, r.$2, {
-            [r.Wc]: s === a.s.MEDIUM
+    return null == l || 0 === l.length ? null : (0, n.jsx)("div", {
+        className: a()(r.kL, r.$2, {
+            [r.Wc]: t === i.s.MEDIUM
         }),
-        children: t.map((e, t) => (0, n.jsx)(a.A, {
-            positionInSection: t,
-            applicationId: l,
+        children: l.map((e, l) => (0, n.jsx)(i.A, {
+            positionInSection: l,
             skuId: e,
-            variant: s,
-            guildId: d,
-            analyticsLocations: o
-        }, `${e}-${t}`))
+            variant: t,
+            analyticsLocations: s
+        }, `${e}-${l}`))
     })
 }

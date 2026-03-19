@@ -4,21 +4,21 @@ t.r(l), t.d(l, {
 });
 var n = t(627968),
     s = t(64700),
-    i = t(503698),
-    a = t.n(i),
+    a = t(503698),
+    i = t.n(a),
     r = t(835245),
-    d = t(311907),
-    o = t(397927),
+    o = t(311907),
+    d = t(397927),
     c = t(444927),
     u = t(793574),
     _ = t(688810),
     g = t(976860),
-    p = t(594832),
-    I = t(961350),
-    x = t(696451),
-    f = t(71393),
-    A = t(67480),
-    h = t(449054),
+    x = t(594832),
+    p = t(961350),
+    f = t(696451),
+    A = t(71393),
+    h = t(67480),
+    I = t(449054),
     m = t(733391),
     E = t(439303),
     j = t(35826),
@@ -33,40 +33,39 @@ function C(e) {
     let {
         storefront: l,
         guildId: t,
-        selectedPageIndex: i,
-        selectedSku: a
-    } = e, r = (0, E.jM)(), d = s.useRef(r);
+        selectedPageIndex: a,
+        selectedSku: i
+    } = e, r = (0, E.jM)(), o = s.useRef(r);
     s.useEffect(() => {
-        d.current = r
+        o.current = r
     }, [r]);
-    let o = a?.id;
+    let d = i?.id;
     return s.useEffect(() => {
-        if (null != o) return (0, k.R)({
-            skuId: o,
+        if (null != d) return (0, k.R)({
+            skuId: d,
             applicationId: l.applicationId,
             guildId: t,
             isStorefront: !0,
             analyticsLocations: [u.A.SOCIAL_LAYER_STOREFRONT],
-            analyticsContext: d.current,
+            analyticsContext: o.current,
             onClose: () => {
-                (0, g.JK)().location.pathname.indexOf(N.BVt.CHANNELS_GAME_SHOP(t, i)) >= 0 && (0, j.A)({
+                (0, g.JK)().location.pathname.indexOf(N.BVt.CHANNELS_GAME_SHOP(t, a)) >= 0 && (0, j.A)({
                     guildId: t,
-                    pageIndex: i
+                    pageIndex: a
                 })
             }
         }), () => {
             (0, k.j)()
         }
-    }, [t, i, o, l.applicationId]), (0, n.jsxs)("div", {
+    }, [t, a, d, l.applicationId]), (0, n.jsxs)("div", {
         className: v.k,
         children: [(0, n.jsx)(b.A, {
             guildId: t,
             storefront: l,
-            selectedPageIndex: i
+            selectedPageIndex: a
         }), (0, n.jsx)(R.a, {
             applicationId: l.applicationId,
-            guildId: t,
-            page: l.pages[i]
+            page: l.pages[a]
         })]
     })
 }
@@ -76,21 +75,21 @@ function L(e) {
         match: l
     } = e, {
         guildId: t,
-        gameShopPageIndex: i,
+        gameShopPageIndex: a,
         gameShopSkuId: g
     } = l.params, {
         analyticsLocations: j
     } = (0, _.Ay)(u.A.SOCIAL_LAYER_STOREFRONT), k = (0, S.A)({
         guildId: t
-    }), b = (0, d.bG)([I.default], () => I.default.getSessionId(), []), R = (0, d.bG)([A.A], () => A.A.get(g), [g]);
-    (0, p.pE)();
+    }), b = (0, o.bG)([p.default], () => p.default.getSessionId(), []), R = (0, o.bG)([h.A], () => h.A.get(g), [g]);
+    (0, x.pE)();
     let N = (0, c.A)((0, r.A)()),
-        L = (0, d.bG)([x.Ay, I.default], () => x.Ay.isMember(t, I.default.getId())),
+        L = (0, o.bG)([f.Ay, p.default], () => f.Ay.isMember(t, p.default.getId())),
         M = s.useMemo(() => {
-            if (null == i) return 0;
-            let e = parseInt(i, 10);
+            if (null == a) return 0;
+            let e = parseInt(a, 10);
             return isNaN(e) || null != k && null != k.storefront && e >= k.storefront.pages.length ? 0 : e
-        }, [i, k]),
+        }, [a, k]),
         T = k?.storefront?.pages[M]?.title ?? null,
         O = k?.storefront?.pages[M]?.leaderboard != null,
         y = s.useMemo(() => ({
@@ -104,12 +103,12 @@ function L(e) {
     return (s.useEffect(() => {
         null != t && (0, m.SP)(t, M, null != g ? g : null)
     }, [t, M, g]), s.useEffect(() => {
-        null == t || null == b || null == f.A.getGuild(t) && (0, h.Z2)(t, {}, {
+        null == t || null == b || null == A.A.getGuild(t) && (0, I.Z2)(t, {}, {
             shouldNavigate: !1
         })
     }, [t, b]), null == t || k?.storefront == null) ? (0, n.jsx)("div", {
-        className: a()(v.u, v.k),
-        children: (0, n.jsx)(o.y$y, {})
+        className: i()(v.u, v.k),
+        children: (0, n.jsx)(d.y$y, {})
     }) : (0, n.jsx)(_.f5, {
         value: j,
         children: (0, n.jsx)(E.E9, {

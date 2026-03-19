@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(235986),
     f = n(242874),
     C = n(499454),
-    I = n(75825),
-    E = n(976860),
+    E = n(75825),
+    I = n(976860),
     v = n(871123),
     b = n(317560),
     T = n(780964),
@@ -105,7 +105,7 @@ class W extends r.Component {
         let {
             libraryApplication: t
         } = this.props;
-        e.preventDefault(), null != t && t.isHidden() ? (0, E.pX)(B.BVt.APPLICATION_LIBRARY_SETTINGS) : (0, E.pX)(B.BVt.APPLICATION_LIBRARY, {
+        e.preventDefault(), null != t && t.isHidden() ? (0, I.pX)(B.BVt.APPLICATION_LIBRARY_SETTINGS) : (0, I.pX)(B.BVt.APPLICATION_LIBRARY, {
             state: {
                 applicationId: null != t ? t.id : void 0
             }
@@ -301,7 +301,7 @@ class W extends r.Component {
             className: r,
             children: [n && (0, i.jsx)(P.A, {
                 className: H.nr
-            }), null != e.giftStyle && (0, i.jsx)(I.A, {
+            }), null != e.giftStyle && (0, i.jsx)(E.A, {
                 defaultAnimationState: e.redeemed ? f.oA.LOOP : f.oA.IDLE,
                 giftStyle: e.giftStyle,
                 className: a

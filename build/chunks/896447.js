@@ -4,39 +4,35 @@ t.d(l, {
 });
 var n = t(627968),
     s = t(64700),
-    i = t(397927),
-    a = t(439303),
+    a = t(397927),
+    i = t(439303),
     r = t(183802),
-    d = t(205830),
-    o = t(749025);
+    o = t(205830),
+    d = t(749025);
 
 function c(e) {
     let {
         analyticsSectionId: l,
-        applicationId: t,
-        guildId: c,
-        sectionTitle: u,
-        skuIds: _,
-        variant: g = r.s.SMALL
-    } = e, p = s.useMemo(() => ({
+        sectionTitle: t,
+        skuIds: c,
+        variant: u = r.s.SMALL
+    } = e, _ = s.useMemo(() => ({
         pageSection: l,
-        pageSectionTitle: u
-    }), [l, u]);
-    return null == _ || 0 === _.length ? null : (0, n.jsx)(a.E9, {
-        newValue: p,
+        pageSectionTitle: t
+    }), [l, t]);
+    return null == c || 0 === c.length ? null : (0, n.jsx)(i.E9, {
+        newValue: _,
         children: (0, n.jsxs)("div", {
-            className: o.h,
-            children: [null != u && u.length > 0 && (0, n.jsx)(i.Heading, {
+            className: d.h,
+            children: [null != t && t.length > 0 && (0, n.jsx)(a.Heading, {
                 variant: "heading-lg/semibold",
                 color: "text-strong",
                 lineClamp: 1,
-                className: o.G,
-                children: u
-            }), (0, n.jsx)(d.$, {
-                applicationId: t,
-                skuIds: _,
-                variant: g,
-                guildId: c
+                className: d.G,
+                children: t
+            }), (0, n.jsx)(o.$, {
+                skuIds: c,
+                variant: u
             })]
         })
     })

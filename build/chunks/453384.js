@@ -26,10 +26,10 @@ let _ = "var(--background-mod-strong)",
             strokeWidth: 3
         } : {
             strokeWidth: 4
-        }, x = a / 2, f = a / 2 - A / 2, C = 2 * Math.PI * f, I = C - n * C, E = r.useMemo(() => ({
+        }, x = a / 2, f = a / 2 - A / 2, C = 2 * Math.PI * f, E = C - n * C, I = r.useMemo(() => ({
             strokeDasharray: `${C} ${C}`,
-            strokeDashoffset: I
-        }), [C, I]), {
+            strokeDashoffset: E
+        }), [C, E]), {
             progressTextAnimation: v
         } = (0, o.zhh)({
             progressTextAnimation: +(null != h && 1 !== n),
@@ -88,7 +88,7 @@ let _ = "var(--background-mod-strong)",
                     cx: x,
                     cy: x,
                     stroke: "rgba(98, 196, 101, 1)",
-                    style: E
+                    style: I
                 })]
             })]
         })

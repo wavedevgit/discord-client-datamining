@@ -23,8 +23,8 @@ var i = n(889137),
     x = n(969632),
     f = n(438437),
     C = n(842901),
-    I = n(589590),
-    E = n(708676),
+    E = n(589590),
+    I = n(708676),
     v = n(652215),
     b = n(985018);
 let T = {
@@ -52,7 +52,7 @@ function N(e, t) {
     } = e;
     if (null == i) return;
     let r = e.state === v.cmJ.SENT,
-        a = r ? n ?? (0, E.J)(i.expiry) : "",
+        a = r ? n ?? (0, I.J)(i.expiry) : "",
         l = null == a && r,
         {
             selectedAnswerIds: s,
@@ -68,23 +68,23 @@ function N(e, t) {
     }
     let f = s.size > 0,
         C = g.some(e => !0 === e.me_vote),
-        I = !h && C,
-        b = I || l || p,
+        E = !h && C,
+        b = E || l || p,
         y = r && x && (!C || h || b),
         N = c.A.getChannel(e.getChannelId())?.getGuildId?.(),
         j = null != N ? u.Ay.getSelfMember(N) : null,
         L = (0, o.TR)(j),
         R = (0, d.Z)(j),
-        P = !m && f && !I && r && !L && !R;
+        P = !m && f && !E && r && !L && !R;
     return {
         poll: i,
         canTapAnswers: y,
-        canRemoveVote: I && r && !l,
+        canRemoveVote: E && r && !l,
         canShowVoteCounts: b,
         canSubmitVote: P,
         expirationLabel: a,
         hasSelectedAnswer: f,
-        hasVoted: I,
+        hasVoted: E,
         hasVoteRecorded: C,
         isEditingVote: h,
         isExpired: l,
@@ -110,8 +110,8 @@ function j(e, t) {
     let _ = m.default.getCurrentUser();
     if (null == _) return;
     let A = a.A.useReducedMotion,
-        E = c.A.getChannel(e.getChannelId())?.getGuildId?.(),
-        v = (0, C.T)(_, E),
+        I = c.A.getChannel(e.getChannelId())?.getGuildId?.(),
+        v = (0, C.T)(_, I),
         T = u.answers,
         S = u.layout_type,
         j = N(e, t, {
@@ -318,7 +318,7 @@ function j(e, t) {
         }, () => f.CQ.CHECKBOXES).exhaustive(),
         answerTapAccessibilityLabel: V ? J : void 0,
         layoutType: S,
-        resources: (0, I.A)({
+        resources: (0, E.A)({
             theme: o,
             layoutType: S
         }),

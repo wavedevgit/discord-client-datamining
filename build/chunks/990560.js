@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(860689),
     f = n(62350),
     C = n(882072),
-    I = n(58262),
-    E = n(309818),
+    E = n(58262),
+    I = n(309818),
     v = n(112007),
     b = n(877695),
     T = n(242907),
@@ -102,7 +102,7 @@ function R(e) {
         default:
             switch ((0, _.On)(D)) {
                 case _.Xd.GROUP_DM:
-                    H = (0, i.jsx)(E.A, {
+                    H = (0, i.jsx)(I.A, {
                         onTransitionToInviteChannel: G,
                         onAcceptInstantInvite: F,
                         currentUserId: U,
@@ -111,7 +111,7 @@ function R(e) {
                     });
                     break;
                 case _.Xd.FRIEND:
-                    H = (0, i.jsx)(I.A, {
+                    H = (0, i.jsx)(E.A, {
                         invite: D,
                         message: n,
                         getAcceptInviteContext: R

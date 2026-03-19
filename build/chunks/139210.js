@@ -1,6 +1,6 @@
 /** chunk id: 139210 params = (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => C
 });
 var a = n(627968),
     i = n(64700),
@@ -18,121 +18,116 @@ var a = n(627968),
     g = n(545986),
     _ = n(568329),
     f = n(963713),
-    v = n(223352),
-    b = n(152515);
+    v = n(223352);
 n(272111);
-var j = n(985018),
-    A = n(229170);
-let C = (0, r.animated)(x.Ay),
-    y = e => {
-        let {
-            withUnfurlTimeout: t,
-            unfurlTimeoutDurationInMilliseconds: n,
-            onUnfurlTimeoutComplete: l
-        } = e, x = (0, u.go)(), {
-            expansionSpring: y
-        } = i.useContext(_.PW), {
-            onCtxMenuOpen: T,
-            onCtxMenuClose: S,
-            onCtxMenuSelect: E,
-            isExpanded: N,
-            isExpansionAnimationComplete: I,
-            quest: k
-        } = i.useContext(f.T), R = i.useCallback(() => {
-            (0, g.Zc)(k, {
-                content: d.uF.QUEST_BAR_V2,
-                ctaContent: c.Cy.OPEN_DISCLOSURE,
-                sourceQuestContent: d.uF.QUEST_BAR_V2
-            })
-        }, [k]), O = i.useCallback(() => {
-            (0, m.pu)(k, {
-                content: d.uF.QUEST_BAR_V2,
-                ctaContent: c.Cy.OPEN_GAME_LINK,
-                impressionId: x,
-                sourceQuestContent: d.uF.QUEST_BAR_V2
-            })
-        }, [x, k]), w = N && I, D = (0, a.jsx)(o.DUT, {
-            onClick: O,
-            className: s()(A.vk, {
-                [A.wm]: w
-            }),
-            children: (0, a.jsx)(C, {
-                quest: k,
-                withGameTile: !1,
-                logotypeClassName: A.Iu,
-                logotypeStyle: {
-                    height: 24,
-                    maxWidth: 92,
-                    transform: (0, r.to)([y.to({
-                        range: [0, 1],
-                        output: [1, 1]
-                    })], e => `scale(${e})`)
-                }
-            })
-        });
+var b = n(985018),
+    j = n(229170);
+let A = (0, r.animated)(x.Ay),
+    C = () => {
+        let e = (0, u.go)(),
+            {
+                expansionSpring: t
+            } = i.useContext(_.PW),
+            {
+                onCtxMenuOpen: n,
+                onCtxMenuClose: l,
+                onCtxMenuSelect: x,
+                isExpanded: C,
+                isExpansionAnimationComplete: y,
+                quest: T
+            } = i.useContext(f.T),
+            S = i.useCallback(() => {
+                (0, g.Zc)(T, {
+                    content: d.uF.QUEST_BAR_V2,
+                    ctaContent: c.Cy.OPEN_DISCLOSURE,
+                    sourceQuestContent: d.uF.QUEST_BAR_V2
+                })
+            }, [T]),
+            E = i.useCallback(() => {
+                (0, m.pu)(T, {
+                    content: d.uF.QUEST_BAR_V2,
+                    ctaContent: c.Cy.OPEN_GAME_LINK,
+                    impressionId: e,
+                    sourceQuestContent: d.uF.QUEST_BAR_V2
+                })
+            }, [e, T]),
+            N = C && y,
+            I = (0, a.jsx)(o.DUT, {
+                onClick: E,
+                className: s()(j.vk, {
+                    [j.wm]: N
+                }),
+                children: (0, a.jsx)(A, {
+                    quest: T,
+                    withGameTile: !1,
+                    logotypeClassName: j.Iu,
+                    logotypeStyle: {
+                        height: 24,
+                        maxWidth: 92,
+                        transform: (0, r.to)([t.to({
+                            range: [0, 1],
+                            output: [1, 1]
+                        })], e => `scale(${e})`)
+                    }
+                })
+            });
         return (0, a.jsxs)(r.animated.div, {
-            className: s()(A.iE, A.Ht, {
-                [A.tT]: w
+            className: s()(j.iE, j.Ht, {
+                [j.tT]: N
             }),
             style: {
-                transform: (0, r.to)([y.to({
+                transform: (0, r.to)([t.to({
                     range: [0, 1],
                     output: [6, 0]
                 })], e => `translateY(${e}px)`)
             },
             children: [(0, a.jsx)(r.animated.div, {
-                className: A.Tu,
+                className: j.Tu,
                 style: {
-                    opacity: (0, p.a)(y.to({
+                    opacity: (0, p.a)(t.to({
                         range: [0, 1],
                         output: [0, 1]
                     }))
                 }
             }), (0, a.jsx)(v.A, {
-                isFullyExpanded: w,
-                partnerBranding: D
+                isFullyExpanded: N,
+                partnerBranding: I
             }), (0, a.jsxs)(r.animated.div, {
-                className: A.P0,
+                className: j.P0,
                 style: {
-                    opacity: (0, p.a)(y.to({
+                    opacity: (0, p.a)(t.to({
                         range: [0, 1],
                         output: [0, 1]
                     }))
                 },
                 children: [(0, a.jsxs)(o.DUT, {
-                    className: A.y8,
-                    onClick: R,
+                    className: j.y8,
+                    onClick: S,
                     children: [(0, a.jsx)(o.Text, {
                         color: "always-white",
                         variant: "text-xs/normal",
-                        children: j.intl.string(j.t.o6FLcF)
+                        children: b.intl.string(b.t.o6FLcF)
                     }), (0, a.jsx)(o.cBN, {
                         color: o.LU0.colors.WHITE,
-                        className: A.P$
+                        className: j.P$
                     })]
-                }), t ? (0, a.jsx)("div", {
-                    className: A.uJ,
-                    children: (0, a.jsx)(b.n, {
-                        timeoutDurationInMilliseconds: n,
-                        onTimeoutComplete: l
-                    })
-                }) : (0, a.jsx)(h.C, {
-                    onOpen: T,
-                    onClose: S,
-                    onSelect: E,
+                }), (0, a.jsx)(h.C, {
+                    onOpen: n,
+                    onClose: l,
+                    onSelect: x,
                     questContent: d.uF.QUEST_BAR_V2,
-                    quest: k,
+                    quest: T,
                     shouldShowDisclosure: !0,
                     showShareLink: !0,
                     sourceQuestContent: d.uF.QUEST_BAR_V2,
                     children: e => (0, a.jsx)(o.DUT, {
                         ...e,
-                        className: s()(A.uJ, A.rb),
-                        "aria-label": j.intl.string(j.t.DEoVWZ),
+                        className: s()(j.uJ, j.rb),
+                        "aria-label": b.intl.string(b.t.DEoVWZ),
                         children: (0, a.jsx)(o.jNK, {
                             size: "md",
                             color: "currentColor",
-                            className: s()(A.Bx, A.ON)
+                            className: s()(j.Bx, j.ON)
                         })
                     })
                 })]
