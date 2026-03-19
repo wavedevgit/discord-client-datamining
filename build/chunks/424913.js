@@ -36,10 +36,10 @@ function L(e) {
     } = e, {
         autocompletes: N,
         mode: v
-    } = t, O = (0, m.A)({
+    } = t, F = (0, m.A)({
         autocompletes: N,
         mode: v
-    }), F = (0, R.A)({
+    }), O = (0, R.A)({
         setSearchQuery: C,
         searchContext: r,
         mode: v
@@ -111,9 +111,7 @@ function L(e) {
             }) : void 0,
             onSelect: () => _.A.openSearchFiltersModal(r)
         })
-    }, [r]), {
-        items: w
-    } = (0, ({
+    }, [r]), w = (0, ({
         [x.o$q.EMPTY]: () => {
             let e = [];
             if (null != L && (0, d.HM)(r) && r.type === x.I4_.DMS) {
@@ -159,7 +157,7 @@ function L(e) {
                     });
                 e.push(s)
             }
-            let t = [...F, W({
+            let t = [...O, W({
                 hasOtherSearchFiltersVisible: !0
             })];
             if (e.push((0, E.wE)(S.$.GROUP, {
@@ -208,9 +206,7 @@ function L(e) {
                     });
                 e.push(s)
             }
-            return {
-                items: e
-            }
+            return e
         },
         [x.o$q.FILTER_ALL]: () => {
             let e = [];
@@ -262,8 +258,7 @@ function L(e) {
             let {
                 autocompleteCount: s,
                 autocompleteGroups: l
-            } = O({
-                filterFn: e => e.group !== x.x2k.DATES && e.group !== x.x2k.SEARCH_OPTIONS && e.group !== x.LWr.FILTER_HAS && e.results.length > 0,
+            } = F({
                 getAutocompleteRowItem: e => {
                     let {
                         result: t,
@@ -320,7 +315,7 @@ function L(e) {
                 }
             });
             if (0 === s) {
-                let t = [...F, W({
+                let t = [...O, W({
                     hasOtherSearchFiltersVisible: !0
                 })];
                 e.push((0, E.wE)(S.$.GROUP, {
@@ -333,16 +328,13 @@ function L(e) {
                 });
                 e.push(t)
             }
-            return s > 0 && e.push(...l), {
-                items: e
-            }
+            return s > 0 && e.push(...l), e
         },
         [x.o$q.FILTER]: () => {
             let {
                 autocompleteCount: e,
                 autocompleteGroups: t
-            } = O({
-                filterFn: e => e.results.length > 0,
+            } = F({
                 getAutocompleteRowItem: t => {
                     let {
                         result: r,
@@ -394,9 +386,7 @@ function L(e) {
                     })
                 }
             });
-            return {
-                items: [...t]
-            }
+            return [...t]
         }
     })[v.type])(), D = s.useMemo(() => {
         let e = [];

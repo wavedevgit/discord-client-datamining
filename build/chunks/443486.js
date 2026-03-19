@@ -7,7 +7,7 @@ var n = r(627968),
     l = r(397927),
     a = r(822382),
     i = r(771650),
-    o = r(415822),
+    o = r(674142),
     c = r(753806),
     u = r(272444),
     d = r(806595),
@@ -23,7 +23,7 @@ function p(e) {
         setSearchQuery: t,
         searchContext: r,
         mode: p
-    } = e, A = (0, o.u)(r);
+    } = e, A = (0, o.o)(r);
     return s.useMemo(() => {
         let e = [{
             type: S.LWr.FILTER_FROM,

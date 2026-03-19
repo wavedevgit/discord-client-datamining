@@ -15,9 +15,9 @@ r.d(t, {
     oK: () => p,
     oR: () => N,
     pY: () => A,
-    rE: () => O,
+    rE: () => F,
     uZ: () => I,
-    vy: () => F,
+    vy: () => O,
     wU: () => x
 });
 var n, s = r(58149),
@@ -322,8 +322,7 @@ let L = new Map([
     ]),
     C = new Map([
         [u.x2k.HISTORY, "history"],
-        [u.x2k.DATES, "dates"],
-        [u.x2k.SEARCH_OPTIONS, "search_options"]
+        [u.x2k.DATES, "dates"]
     ]);
 
 function N(e) {
@@ -378,7 +377,7 @@ function v(e) {
     })
 }
 
-function O(e) {
+function F(e) {
     let {
         searchContext: t,
         searchAutocompleteSelectAction: r
@@ -391,7 +390,7 @@ function O(e) {
         search_autocomplete_select_action: r
     })
 }
-var F = ((n = {}).SEARCH_HEADER = "search_header", n.USER_SETTINGS = "user_settings", n);
+var O = ((n = {}).SEARCH_HEADER = "search_header", n.USER_SETTINGS = "user_settings", n);
 
 function k(e) {
     let {

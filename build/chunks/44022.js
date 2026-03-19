@@ -31,8 +31,8 @@ var n = r(627968),
     C = r(85109),
     N = r(756377),
     v = r(601179),
-    O = r(216595),
-    F = r(948331),
+    F = r(216595),
+    O = r(948331),
     k = r(371349),
     j = r(652215),
     M = r(985018),
@@ -73,7 +73,7 @@ function H(e) {
             total_count: r.length,
             overdue_count: C.A.getOverdueMessageReminderCount()
         }
-    }, {}, [r.length]), 0 === r.length) ? (0, n.jsx)(F.g, {}) : (0, n.jsx)(U, {
+    }, {}, [r.length]), 0 === r.length) ? (0, n.jsx)(O.g, {}) : (0, n.jsx)(U, {
         savedMessageKeys: r,
         closePopout: t
     })
@@ -174,7 +174,7 @@ function q(e) {
         }), null != t.saveData.dueAt ? (0, n.jsx)(k.A, {
             reminder: t,
             throttledNow: l
-        }) : null, (0, n.jsx)(O.A, {
+        }) : null, (0, n.jsx)(F.A, {
             channel: i
         }), (0, n.jsx)(p.A, {
             message: t.message,
@@ -186,7 +186,7 @@ function q(e) {
             trackAnnouncementViews: !0
         }, t.message.id), (0, n.jsx)(A.Ay, {
             className: W.S3,
-            children: (0, n.jsx)(Q, {
+            children: (0, n.jsx)(z, {
                 savedMessage: t,
                 jumpToMessage: o
             })
@@ -228,7 +228,7 @@ function $(e) {
     })
 }
 
-function Q(e) {
+function z(e) {
     let {
         savedMessage: t,
         jumpToMessage: s

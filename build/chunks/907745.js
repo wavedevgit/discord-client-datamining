@@ -1,6 +1,6 @@
 /** chunk id: 907745 params = (module,exports,require) **/
 r.d(t, {
-    Ay: () => z,
+    Ay: () => Q,
     E2: () => P
 });
 var n = r(627968),
@@ -31,8 +31,8 @@ var n = r(627968),
     C = r(771650),
     N = r(616252),
     v = r(753806),
-    O = r(775427),
-    F = r(65600),
+    F = r(775427),
+    O = r(65600),
     k = r(145331),
     j = r(19801),
     M = r(768570),
@@ -448,15 +448,15 @@ class $ extends s.PureComponent {
     }
 }
 
-function Q(e) {
+function z(e) {
     let {
         searchContext: t,
         className: r
-    } = e, l = (0, b.bS)(t), a = (0, u.bG)([f.A], () => f.A.keyboardModeEnabled), i = (0, u.bG)([F.A], () => F.A.getEditorState(l)), o = s.useMemo(() => null != i ? i : y.e_(x.ys(C.Ay)), [i]);
+    } = e, l = (0, b.bS)(t), a = (0, u.bG)([f.A], () => f.A.keyboardModeEnabled), i = (0, u.bG)([O.A], () => O.A.getEditorState(l)), o = s.useMemo(() => null != i ? i : y.e_(x.ys(C.Ay)), [i]);
     s.useEffect(() => {
         T.A.initializeAutocomplete(t)
     }, [t]);
-    let c = (0, u.bG)([F.A], () => F.A.getIsSearchTokensInitialized()),
+    let c = (0, u.bG)([O.A], () => O.A.getIsSearchTokensInitialized()),
         h = s.useRef(c);
     s.useEffect(() => {
         c && h.current !== c && (h.current = c, v.A.ensureSearchInputDecorators(t))
@@ -480,10 +480,10 @@ function Q(e) {
     s.useEffect(() => {
         L.A.setSidebarOpen(t, R)
     }, [t, R]);
-    let O = (0, d.Ry6)(W.b);
+    let F = (0, d.Ry6)(W.b);
     s.useEffect(() => {
-        L.A.setFiltersModalOpen(t, O)
-    }, [t, O]);
+        L.A.setFiltersModalOpen(t, F)
+    }, [t, F]);
     let j = s.useCallback(e => {
             let {
                 queryString: r,
@@ -540,16 +540,16 @@ function Q(e) {
     })
 }
 
-function z(e) {
+function Q(e) {
     let {
         className: t,
         guildId: r,
         channelId: s
-    } = e, l = (0, O.J)({
+    } = e, l = (0, F.J)({
         guildId: r,
         channelId: s
     });
-    return null == l ? null : (0, n.jsx)(Q, {
+    return null == l ? null : (0, n.jsx)(z, {
         className: t,
         searchContext: l
     })

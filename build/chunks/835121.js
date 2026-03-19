@@ -11,37 +11,36 @@ function s(e) {
     } = e;
     return n.useCallback(e => {
         let {
-            filterFn: n,
-            getAutocompleteRowItem: s,
-            getAutocompleteGroupItem: l
-        } = e, a = 0, i = [], o = [];
+            getAutocompleteRowItem: n,
+            getAutocompleteGroupItem: s
+        } = e, l = 0, a = [], i = [];
         for (let e of t) {
             let t = [],
                 {
-                    group: c,
-                    results: u
+                    group: o,
+                    results: c
                 } = e;
-            if (n(e)) {
-                for (let e of u) {
-                    let n = s({
+            if (e.results.length > 0) {
+                for (let e of c) {
+                    let s = n({
                         result: e,
                         modeType: r.type,
-                        group: c
+                        group: o
                     });
-                    t.push(n)
+                    t.push(s)
                 }
-                a += u.length;
-                let e = l({
-                    group: c,
+                l += c.length;
+                let e = s({
+                    group: o,
                     rows: t
                 });
-                i.push(e), o.push(...t)
+                a.push(e), i.push(...t)
             }
         }
         return {
-            autocompleteCount: a,
-            autocompleteGroups: i,
-            allAutocompleteRows: o
+            autocompleteCount: l,
+            autocompleteGroups: a,
+            allAutocompleteRows: i
         }
     }, [t, r.type])
 }

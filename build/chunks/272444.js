@@ -1,9 +1,9 @@
 /** chunk id: 272444 params = (module,exports,require) **/
 r.d(t, {
     AX: () => M,
-    JK: () => Q,
+    JK: () => z,
     Jx: () => I,
-    YD: () => F,
+    YD: () => O,
     _h: () => $,
     bg: () => b,
     bj: () => L,
@@ -158,7 +158,7 @@ function v(e) {
     })
 }
 
-function O(e) {
+function F(e) {
     let {
         headerId: t,
         titleText: r,
@@ -175,7 +175,7 @@ function O(e) {
     })
 }
 
-function F(e) {
+function O(e) {
     let {
         navId: t,
         item: r,
@@ -189,7 +189,7 @@ function F(e) {
     return (0, n.jsxs)(v, {
         title: o,
         showDivider: s > 0,
-        children: [(0, n.jsx)(O, {
+        children: [(0, n.jsx)(F, {
             headerId: o,
             titleText: o,
             trailingIcon: c
@@ -358,28 +358,40 @@ function H(e) {
         result: t,
         group: r
     } = e;
-    if (r === R.x2k.HISTORY) return (0, n.jsx)(o.$p$, {
-        size: "sm",
-        color: "currentColor",
-        className: T.Fx
-    });
-    let {
-        channel: s,
-        user: l
-    } = t;
-    return null != s ? (0, n.jsx)(o.N$i, {
-        size: "sm",
-        color: "currentColor",
-        className: T.Fx
-    }) : null != l ? r === R.LWr.FILTER_MENTIONS ? (0, n.jsx)(o.XxR, {
-        size: "sm",
-        color: "currentColor",
-        className: T.Fx
-    }) : (0, n.jsx)(o.nys, {
-        size: "sm",
-        color: "currentColor",
-        className: T.Fx
-    }) : null
+    switch (r) {
+        case R.x2k.HISTORY:
+            return (0, n.jsx)(o.$p$, {
+                size: "sm",
+                color: "currentColor",
+                className: T.Fx
+            });
+        case R.LWr.FILTER_IN:
+            return (0, n.jsx)(o.N$i, {
+                size: "sm",
+                color: "currentColor",
+                className: T.Fx
+            });
+        case R.LWr.FILTER_FROM:
+            return (0, n.jsx)(o.nys, {
+                size: "sm",
+                color: "currentColor",
+                className: T.Fx
+            });
+        case R.LWr.FILTER_MENTIONS:
+            return (0, n.jsx)(o.XxR, {
+                size: "sm",
+                color: "currentColor",
+                className: T.Fx
+            });
+        case R.LWr.FILTER_HAS:
+            return (0, n.jsx)(U, {
+                text: t.text,
+                size: "sm",
+                className: T.Fx
+            });
+        default:
+            return null
+    }
 }
 
 function P(e) {
@@ -471,7 +483,7 @@ function $(e) {
     }) : null
 }
 
-function Q(e) {
+function z(e) {
     let {
         channel: t,
         user: r,
