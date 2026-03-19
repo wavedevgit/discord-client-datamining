@@ -47,8 +47,8 @@ var l = n(627968),
     V = n(534400),
     q = n(111864),
     B = n(967054),
-    z = n(226540),
-    H = n(227),
+    H = n(226540),
+    z = n(227),
     W = n(854627),
     K = n(616356),
     Y = n(290863),
@@ -246,7 +246,7 @@ function eA(e) {
     } = (0, S.cf)([J.A], () => ({
         ignored: J.A.isIgnored(t.getRecipientId()),
         blocked: J.A.isBlocked(t.getRecipientId())
-    })), eF = eO && eQ, ek = eO && eP, eV = (eG || eF || ek) && !(i || em), eq = (0, S.bG)([$.Ay], () => $.Ay.getMentionCount(t.id) > 0), eB = (0, U.Ay)(t), ez = s.useRef(null), eH = null != Z && (i || em || ef), eW = () => {
+    })), eF = eO && eQ, ek = eO && eP, eV = (eG || eF || ek) && !(i || em), eq = (0, S.bG)([$.Ay], () => $.Ay.getMentionCount(t.id) > 0), eB = (0, U.Ay)(t), eH = s.useRef(null), ez = null != Z && (i || em || ef), eW = () => {
         eA(!0)
     }, eK = () => {
         eA(!1)
@@ -394,12 +394,12 @@ function eA(e) {
                     onClick: e0,
                     muted: eV,
                     selected: i,
-                    children: [(0, l.jsx)(H.A, {
-                        nameplate: eH ? Z : void 0,
+                    children: [(0, l.jsx)(z.A, {
+                        nameplate: ez ? Z : void 0,
                         selected: i,
                         hovered: em,
                         content: e7,
-                        placement: z.u.CHANNEL
+                        placement: H.u.CHANNEL
                     }), (0, l.jsx)("div", {
                         className: ei.lU,
                         ref: eL,
@@ -485,12 +485,12 @@ function eA(e) {
                         })
                     }), (0, l.jsxs)("div", {
                         className: a()(ei._q, {
-                            [ei.EY]: eH
+                            [ei.EY]: ez
                         }),
                         children: [eF ? (0, l.jsx)(ec, {}) : null, ek ? (0, l.jsx)(ed, {}) : null, e8 && null != eB ? (0, l.jsx)(eo, {
                             channelName: eB,
                             onClick: te,
-                            showNameplate: eH
+                            showNameplate: ez
                         }) : null, tt || !e8 ? (0, l.jsx)(eu, {
                             icon: x.PGe,
                             "aria-label": eU ? es.intl.string(es.t["26C4oi"]) : es.intl.string(es.t.jsvgc3),
@@ -498,7 +498,7 @@ function eA(e) {
                             onMouseDown: eX,
                             nameplate: Z,
                             reducedClickTarget: !0,
-                            visibleElementRef: ez
+                            visibleElementRef: eH
                         }) : null]
                     })]
                 }), ev && (0, l.jsx)(F.A, {

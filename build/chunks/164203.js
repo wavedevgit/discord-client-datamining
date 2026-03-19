@@ -44,8 +44,8 @@ var l = n(627968),
     V = n(311243),
     q = n(545986),
     B = n(654487),
-    z = n(652215),
-    H = n(806931),
+    H = n(652215),
+    z = n(806931),
     W = n(985018),
     K = n(470699);
 
@@ -55,14 +55,14 @@ function Y(e) {
         quest: n,
         previewQuest: i,
         isParticipatingOverride: p
-    } = e, _ = (0, M.Ut)(), [D, Y] = s.useState(!1), $ = s.useCallback(() => Y(!0), []), J = s.useCallback(() => Y(!1), []), Z = (0, r.bG)([S.default], () => S.default.getCurrentUser()), X = (0, r.bG)([E.A], () => E.A.getState().theme), ee = (0, u.Mw)(X) ? z.NJ8.DARK : z.NJ8.LIGHT, et = (0, r.bG)([c.A], () => c.A.getParticipants(e.channelId), [e.channelId]), en = (0, r.bG)([T.A], () => (0, R.t6)(T.A.quests, T.A.questToDeliverForPlacement, x.yW.DESKTOP_ACCOUNT_PANEL_AREA), []), {
+    } = e, _ = (0, M.Ut)(), [D, Y] = s.useState(!1), $ = s.useCallback(() => Y(!0), []), J = s.useCallback(() => Y(!1), []), Z = (0, r.bG)([S.default], () => S.default.getCurrentUser()), X = (0, r.bG)([E.A], () => E.A.getState().theme), ee = (0, u.Mw)(X) ? H.NJ8.DARK : H.NJ8.LIGHT, et = (0, r.bG)([c.A], () => c.A.getParticipants(e.channelId), [e.channelId]), en = (0, r.bG)([T.A], () => (0, R.t6)(T.A.quests, T.A.questToDeliverForPlacement, x.yW.DESKTOP_ACCOUNT_PANEL_AREA), []), {
         isCurrentUserStreamingQuestApplication: el,
         isQuestInQuestBar: es
     } = (0, r.cf)([f.A], () => {
         var e;
         return {
             isCurrentUserStreamingQuestApplication: null != n && null != Z && (e = f.A, et.some(t => {
-                if (t.type !== H.lp.STREAM || t.user.id !== Z.id) return !1;
+                if (t.type !== z.lp.STREAM || t.user.id !== Z.id) return !1;
                 let l = (0, A.nr)(t.stream, e);
                 return null != l && (0, y.zS)(l, n)
             })),
@@ -71,7 +71,7 @@ function Y(e) {
     }, [Z, n, et, en]), ei = (0, L.pU)(n)?.[0], ea = (0, r.bG)([d.Ay, f.A], () => {
         let e = d.Ay.getRunningGames().map(e => e.id);
         if ((0, L.xZ)(n) && null !== ei && e.includes(ei)) return !0;
-        let t = null != Z ? f.A.findActivity(Z.id, e => e.type !== z.$pd.CUSTOM_STATUS) : null;
+        let t = null != Z ? f.A.findActivity(Z.id, e => e.type !== H.$pd.CUSTOM_STATUS) : null;
         return !!(null != t && (0, L.g5)(n) && (0, y.zS)(t, n))
     }, [n, Z, ei]), er = !0 === p || el || ea, eu = (0, r.bG)([T.A], () => null != n && T.A.isEnrolling(n.id), [n]), eo = (0, r.bG)([c.A], () => (Z?.id == null ? null : c.A.getParticipant(t, Z.id)) != null, [t, Z]), {
         launchInGameActivity: ec
@@ -258,13 +258,13 @@ function $(e) {
         d = (0, r.bG)([c.A], () => c.A.getParticipants(e.channelId), [e.channelId]),
         m = (0, r.bG)([f.A], () => null != e.previewQuest ? e.previewQuest : function(e, t, n) {
             for (let l of e) {
-                if (l.type === H.lp.STREAM) {
+                if (l.type === z.lp.STREAM) {
                     let e = (0, A.nr)(l.stream, n) ?? null,
                         s = (0, y.nq)(t, e);
                     if (null != s && s.userStatus?.claimedAt == null) return s
                 }
                 for (let l of e)
-                    if (!(0, H.PJ)(l))
+                    if (!(0, z.PJ)(l))
                         for (let e of n.getActivities(l.user.id)) {
                             let n = (0, y.nq)(t, e);
                             if (null != n && n.userStatus?.claimedAt == null) return n
