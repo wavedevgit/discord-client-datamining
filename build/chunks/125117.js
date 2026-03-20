@@ -17,7 +17,6 @@ function c(e) {
         user: e.user,
         activities: e.activities,
         nickname: e.nickname,
-        gameProfileEntry: e.gameProfileEntry,
         relationshipType: e.relationshipType
     }
 }
