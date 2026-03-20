@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(580630),
     f = n(871123),
     C = n(733391),
-    E = n(832163),
-    I = n(317560),
+    I = n(832163),
+    E = n(317560),
     v = n(533406),
     b = n(300182),
     T = n(183802),
@@ -39,7 +39,7 @@ function j(e) {
     } = (0, c.Ay)(d.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED);
     (0, h.pE)();
     let O = (0, l.bG)([p.default], () => j.isDM() && null != j.recipients && 0 !== j.recipients.length ? p.default.getUser(j.recipients[0]) : null),
-        U = (0, l.bG)([E.A], () => null != n ? E.A.getNormalizedSKUEligibility(n) : void 0, [n]),
+        U = (0, l.bG)([I.A], () => null != n ? I.A.getNormalizedSKUEligibility(n) : void 0, [n]),
         {
             primaryIconAsset: B,
             primaryIconLabel: G
@@ -48,7 +48,7 @@ function j(e) {
         null == t || null == n || A.A.isFetchingForSKU(n) || (0, C.qf)(t, n)
     }, [t, n]);
     let F = r.useCallback(e => {
-            e.stopPropagation(), R?.applicationId != null && null != t && (0, I.R)({
+            e.stopPropagation(), R?.applicationId != null && null != t && (0, E.R)({
                 skuId: n,
                 applicationId: R.applicationId,
                 guildId: t,

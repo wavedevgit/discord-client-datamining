@@ -44,14 +44,14 @@ class x extends r.PureComponent {
             className: x,
             forceAddReactions: f,
             reactionClassName: C,
-            useChatFontScaling: E,
-            forceHideReactionCreates: I,
+            useChatFontScaling: I,
+            forceHideReactionCreates: E,
             remainingReactions: v,
             combinedReactions: b,
             visibleReactionsCount: T
         } = this.props, {
             disableTransitionAppear: y
-        } = this.state, S = E ? g : p, N = T > 0;
+        } = this.state, S = I ? g : p, N = T > 0;
         if (!N && !f) return null;
         let j = f || N;
         return (0, i.jsxs)(s.F, {
@@ -74,7 +74,7 @@ class x extends r.PureComponent {
                 isLurking: r,
                 isPendingMember: a,
                 isForumToolbar: d,
-                useChatFontScaling: E,
+                useChatFontScaling: I,
                 className: C
             }), v > 0 && (0, i.jsx)(o.DUT, {
                 onClick: t => {
@@ -87,11 +87,11 @@ class x extends r.PureComponent {
                     variant: "text-sm/normal",
                     children: ["+", v]
                 })
-            }), !t && !I && (0, i.jsx)(c.t, {
+            }), !t && !E && (0, i.jsx)(c.t, {
                 tabIndex: j || this.state.isHovered ? 0 : -1,
                 message: e,
                 channel: A,
-                useChatFontScaling: E,
+                useChatFontScaling: I,
                 isHovered: this.state.isHovered,
                 className: l()({
                     [S.forceShow]: j

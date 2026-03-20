@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(205184),
     f = n(689168),
     C = n(403362),
-    E = n(456060),
-    I = n(131724),
+    I = n(456060),
+    E = n(131724),
     v = n(987709),
     b = n(850670),
     T = n(206589),
@@ -156,14 +156,14 @@ function U(e) {
         className: k.dS,
         color: "none",
         lineClamp: 2,
-        children: [et ? (0, E.YC)(t, l, s, y, !1) : ee, et ? null : ei]
+        children: [et ? (0, I.YC)(t, l, s, y, !1) : ee, et ? null : ei]
     }), [et, t, l, s, y, ee, ei]), ea = r.useMemo(() => (0, i.jsxs)("div", {
         className: k.pq,
         children: [er, W || et ? null : Y]
     }), [er, W, et, Y]), el = !!L, es = (0, A.e)(n), {
         canJoin: eo,
         remoteJoinPlatform: ed
-    } = (0, I.D)({
+    } = (0, E.D)({
         presenceActivity: V,
         currentUserPresenceActivity: q,
         currentUserId: y,
@@ -172,7 +172,7 @@ function U(e) {
         isEmbeddedApplication: R,
         isFrameApplication: es,
         isGameLaunchable: el
-    }), ec = (0, I.M)(V, q, t, n), eu = (0, v.E)(V, t, n, y), e_ = (0, T.w)(q, V), em = (0, S.L)(V), eh = (0, o.bG)([f.A], () => null != V && null != V.application_id && f.A.getState(V.application_id, M.xL.JOIN) === M.eAD.LOADING), {
+    }), ec = (0, E.M)(V, q, t, n), eu = (0, v.E)(V, t, n, y), e_ = (0, T.w)(q, V), em = (0, S.L)(V), eh = (0, o.bG)([f.A], () => null != V && null != V.application_id && f.A.getState(V.application_id, M.xL.JOIN) === M.eAD.LOADING), {
         actions: ep,
         hasAccountLinkButton: eg
     } = r.useMemo(() => {

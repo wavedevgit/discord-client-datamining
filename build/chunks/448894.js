@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(168428),
     f = n(652215),
     C = n(172799),
-    E = n(985018),
-    I = n(42441);
+    I = n(985018),
+    E = n(42441);
 
 function v(e) {
     let t, {
@@ -66,24 +66,24 @@ function v(e) {
     let G = null != n.channel ? (0, m.OY)(n.channel) : null,
         F = A.Ay.getName(D),
         H = P || !M && B,
-        V = E.intl.string(E.t.I6JG46),
+        V = I.intl.string(I.t.I6JG46),
         q = "active";
-    B && !M ? (t = k ? E.intl.string(E.t.oBLoZJ) : E.intl.formatToPlainString(E.t["0QJmA+"], {
+    B && !M ? (t = k ? I.intl.string(I.t.oBLoZJ) : I.intl.formatToPlainString(I.t["0QJmA+"], {
         name: F
-    }), V = E.intl.string(E.t.Wdi5E1)) : (q = "active", P && (V = E.intl.string(E.t.Q1W99y), q = "secondary"), t = k ? E.intl.string(E.t["4hyaHu"]) : E.intl.formatToPlainString(E.t.QmlLEq, {
+    }), V = I.intl.string(I.t.Wdi5E1)) : (q = "active", P && (V = I.intl.string(I.t.Q1W99y), q = "secondary"), t = k ? I.intl.string(I.t["4hyaHu"]) : I.intl.formatToPlainString(I.t.QmlLEq, {
         name: F
     }));
     let W = N === v.id && null != G ? (0, i.jsx)(_.A.Channel, {
         channel: G
-    }) : E.intl.formatToPlainString(E.t.u0vaDE, {
+    }) : I.intl.formatToPlainString(I.t.u0vaDE, {
         guildName: v.name
     });
     return (0, i.jsxs)(_.A, {
         children: [(0, i.jsx)(_.A.Header, {
-            text: E.intl.string(E.t["wS+5Wb"])
+            text: I.intl.string(I.t["wS+5Wb"])
         }), (0, i.jsxs)(_.A.Body, {
             children: [(0, i.jsxs)("div", {
-                className: I.iH,
+                className: E.iH,
                 children: [(0, i.jsx)(_.A.Icon, {
                     guild: v,
                     onClick: B && M ? U : void 0

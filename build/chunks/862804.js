@@ -52,7 +52,7 @@ class h {
             f = (0, u.Fe)(x.message.timestamp),
             C = e.getChannel(this.parentMessage.channel_id);
         if (null != C && C.guild_id === A.messageReference?.guild_id) {
-            var E;
+            var I;
             let r = e.getChannel(A.messageReference?.channel_id);
             if (null == r) {
                 let e = h.getGuild(C.guild_id);
@@ -66,10 +66,10 @@ class h {
             return c.can(r.accessPermissions, r) ? {
                 snapshotIndex: g,
                 footerInfo: {
-                    originLabel: E = (0, i.m1)(r, t, n, !0),
+                    originLabel: I = (0, i.m1)(r, t, n, !0),
                     timestampLabel: f,
                     accessibilityLabel: _.intl.formatToPlainString(_.t["+l04BN"], {
-                        origin: E,
+                        origin: I,
                         timestamp: f
                     })
                 }
@@ -77,11 +77,11 @@ class h {
                 snapshotIndex: g
             }
         }
-        let I = A.messageReference?.guild_id;
-        if (null == I) return {
+        let E = A.messageReference?.guild_id;
+        if (null == E) return {
             snapshotIndex: g
         };
-        let v = h.getGuild(I) ?? p.getGuild(I);
+        let v = h.getGuild(E) ?? p.getGuild(E);
         return null == v ? {
             snapshotIndex: g
         } : {

@@ -23,25 +23,25 @@ function _(e) {
         guildId: a,
         ref: _,
         motion: m
-    } = e, h = n.length > 4, p = h ? n.slice(0, 3) : n, g = h ? n.length - 4 + 1 : 0, A = Math.min(h ? p.length + 1 : p.length, 4), x = (m?.percentX ?? 0) * 6, f = (m?.percentY ?? 0) * 6, C = 1 + (m?.proximity ?? 0) / 2 * .08, [E, I] = (0, o.zhh)(() => ({
+    } = e, h = n.length > 4, p = h ? n.slice(0, 3) : n, g = h ? n.length - 4 + 1 : 0, A = Math.min(h ? p.length + 1 : p.length, 4), x = (m?.percentX ?? 0) * 6, f = (m?.percentY ?? 0) * 6, C = 1 + (m?.proximity ?? 0) / 2 * .08, [I, E] = (0, o.zhh)(() => ({
         x: 0,
         y: 0,
         scale: 1,
         config: u
     }));
     return r.useEffect(() => {
-        I({
+        E({
             x: x,
             y: f,
             scale: C
         })
-    }, [x, f, C, I]), (0, i.jsxs)(s.animated.div, {
+    }, [x, f, C, E]), (0, i.jsxs)(s.animated.div, {
         ref: _,
         className: l()(c.gg, t),
         "data-count": A,
         "aria-hidden": !0,
         style: {
-            transform: (0, s.to)([E.x, E.y, E.scale], (e, t, n) => `translate3d(${e}px, ${t}px, 0) scale(${n})`)
+            transform: (0, s.to)([I.x, I.y, I.scale], (e, t, n) => `translate3d(${e}px, ${t}px, 0) scale(${n})`)
         },
         children: [p.map((e, t) => {
             var n;

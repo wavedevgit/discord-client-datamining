@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(590202),
     f = n(971649),
     C = n(651892),
-    E = n(710969),
-    I = n(792620),
+    I = n(710969),
+    E = n(792620),
     v = n(814793),
     b = n(201805),
     T = n(545986),
@@ -32,7 +32,7 @@ var i = n(627968),
 
 function L(e) {
     let t = (0, a.bG)([m.A], () => m.A.questDeliveryOverride, []),
-        n = (0, E.vy)(e.questContent),
+        n = (0, I.vy)(e.questContent),
         c = [h.uF.QUEST_BAR_V2, h.uF.QUEST_BAR].includes(e.questContent),
         L = (0, A.Ut)(),
         R = (0, f.go)(),
@@ -147,7 +147,7 @@ function L(e) {
                         questContentPosition: e.questContentPosition,
                         questContentCTA: x.Cy.CONTEXT_MENU_HIDE_CONTENT,
                         sourceQuestContent: e.sourceQuestContent
-                    }), (0, E.vy)(e.questContent) && ((0, _.g5)(e.quest.id, e.questContent), c && (0, T.z6)(e.quest))
+                    }), (0, I.vy)(e.questContent) && ((0, _.g5)(e.quest.id, e.questContent), c && (0, T.z6)(e.quest))
                 },
                 subtext: j.intl.string(j.t.RK9gxo)
             })]
@@ -173,13 +173,13 @@ function L(e) {
                 id: "complete",
                 label: j.intl.string(j.t.jQEfRT),
                 action: w
-            }), (0, I.g5)(e.quest) && (0, i.jsxs)(l.Drp, {
+            }), (0, E.g5)(e.quest) && (0, i.jsxs)(l.Drp, {
                 id: "console",
                 label: "Console Heartbeat",
                 children: [(0, i.jsx)(l.Drp, {
                     disabled: !0,
                     id: "status",
-                    label: `Status: ${(0,I.YL)(e.quest)?"alive":"dead"}`
+                    label: `Status: ${(0,E.YL)(e.quest)?"alive":"dead"}`
                 }), (0, i.jsx)(l.Drp, {
                     id: "start",
                     label: "Start heartbeat (cheatmode)",

@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(652215),
     f = n(307731),
     C = n(985018),
-    E = n(361410),
-    I = n(533990);
+    I = n(361410),
+    E = n(533990);
 class v extends r.Component {
     state = {
         isReactionPickerActive: !1
@@ -91,7 +91,7 @@ class v extends r.Component {
             isReactionPickerActive: s
         } = this.state;
         if (e.state === x.cmJ.SENDING || (0, d.Lt)(e.flags, x.pr7.EPHEMERAL)) return null;
-        let o = r ? I : E,
+        let o = r ? E : I,
             c = {
                 size: "sm",
                 color: "currentColor",

@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(688810),
     f = n(450149),
     C = n(290331),
-    E = n(281489),
-    I = n(378570),
+    I = n(281489),
+    E = n(378570),
     v = n(21119),
     b = n(95701),
     T = n(734057),
@@ -96,7 +96,7 @@ function B(e) {
             }, J)
         }, [t, a, J, z, d, f]),
         Z = r.useCallback(() => {
-            z ? (0, I.iN)(H.id) : f({
+            z ? (0, E.iN)(H.id) : f({
                 autoJoin: !1
             })
         }, [H.id, z, f]),
@@ -193,7 +193,7 @@ function B(e) {
                     className: U.WD,
                     children: [ee ? (0, i.jsx)("div", {
                         className: U.WM,
-                        children: (0, i.jsx)(E.A, {
+                        children: (0, i.jsx)(I.A, {
                             guildId: F.id,
                             partySize: {
                                 knownSize: ec.length,

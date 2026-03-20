@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(354287),
     f = n(112150),
     C = n(574660),
-    E = n(429913),
-    I = n(713654),
+    I = n(429913),
+    E = n(713654),
     v = n(734057),
     b = n(71393),
     T = n(576705),
@@ -80,7 +80,7 @@ function O(e) {
         textColor: a
     } = e;
     if (null != t && null != n) {
-        let e = (0, I.gU)(t, n);
+        let e = (0, E.gU)(t, n);
         return (0, i.jsxs)("div", {
             className: l()(D.Ix, {
                 [D.v6]: r
@@ -137,8 +137,8 @@ function U(e) {
             })
         }, [a.inviter?.id, A.id]),
         f = (0, d.bG)([b.A], () => null != a.guild ? b.A.getGuild(a.guild.id) : null, [a]),
-        C = (0, E.A)([A.id])[0],
-        I = (0, d.bG)([m.Ay], () => a?.channel != null && m.Ay.getSelfEmbeddedActivityForChannel(a.channel.id)?.applicationId === A.id),
+        C = (0, I.A)([A.id])[0],
+        E = (0, d.bG)([m.Ay], () => a?.channel != null && m.Ay.getSelfEmbeddedActivityForChannel(a.channel.id)?.applicationId === A.id),
         N = (0, d.bG)([m.Ay], () => (a.channel?.id != null ? m.Ay.getEmbeddedActivitiesForChannel(a.channel.id) : []).some(e => {
             let {
                 applicationId: t
@@ -170,8 +170,8 @@ function U(e) {
         if (null == a.guild) return (0, i.jsx)(L.A, {});
         f = (0, j.DY)(a.guild)
     }
-    t = H ? I ? w.intl.string(w.t.DPfdsq) : N ? w.intl.string(w.t.sqe0hj) : w.intl.string(w.t.RscU7I) : w.intl.string(w.t["2BP08E"]);
-    let V = H && !D || H && I;
+    t = H ? E ? w.intl.string(w.t.DPfdsq) : N ? w.intl.string(w.t.sqe0hj) : w.intl.string(w.t.RscU7I) : w.intl.string(w.t["2BP08E"]);
+    let V = H && !D || H && E;
     return (D || (n = w.intl.string(w.t.hHGrWz)), null == a.code || "" === a.code || null == C) ? null : (0, i.jsx)(p.f5, {
         value: k,
         children: (0, i.jsx)(B, {
@@ -209,8 +209,8 @@ function B(e) {
         buttonLabel: m,
         disabled: h,
         disabledReason: p,
-        handleAcceptInvite: E,
-        onView: I
+        handleAcceptInvite: I,
+        onView: E
     } = e, {
         bot: v,
         icon: b
@@ -224,8 +224,8 @@ function B(e) {
         submitting: _,
         disabled: h,
         disabledReason: h && null != p ? p : void 0,
-        onClick: E
-    }], [m, a, _, h, p, E]);
+        onClick: I
+    }], [m, a, _, h, p, I]);
     return (0, i.jsx)(g.h, {
         header: t.name,
         title: w.intl.string(w.t["7vb6nw"]),
@@ -256,7 +256,7 @@ function B(e) {
         trackingConfig: {
             id: t.id,
             linkType: P.J.ACTIVITY_INVITE,
-            onView: I,
+            onView: E,
             guildId: s.id,
             channelId: l?.id,
             messageId: o.id,

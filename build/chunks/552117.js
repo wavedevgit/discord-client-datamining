@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(767143),
     f = n(652176),
     C = n(87719),
-    E = n(465794),
-    I = n(71393),
+    I = n(465794),
+    E = n(71393),
     v = n(287809),
     b = n(954571),
     T = n(927578),
@@ -157,7 +157,7 @@ let U = e => {
             [N, L] = r.useState(!1),
             U = v.default.getCurrentUser(),
             B = T.Ay.canUseCustomStickersEverywhere(U),
-            G = (0, s.bG)([I.A], () => I.A.getGuild(n.guild_id)),
+            G = (0, s.bG)([E.A], () => E.A.getGuild(n.guild_id)),
             F = null != G,
             [H, V] = r.useState(!1),
             [q, W] = r.useState(null),
@@ -225,7 +225,7 @@ let U = e => {
                     children: [(0, i.jsx)(O, {
                         description: t,
                         sticker: n
-                    }), Z && (0, i.jsx)(E.A, {
+                    }), Z && (0, i.jsx)(I.A, {
                         className: D.lI,
                         subscriptionTier: P.pe.TIER_2,
                         size: c.$n.Sizes.SMALL,

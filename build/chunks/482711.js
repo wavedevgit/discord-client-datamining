@@ -110,13 +110,13 @@ function A(e) {
         onCopyProductLink: x,
         onTestDownload: f,
         onReportProduct: C
-    } = e, E = r.useRef(null);
+    } = e, I = r.useRef(null);
     return (0, i.jsx)("div", {
         onClick: e => {
             e.stopPropagation()
         },
         children: (0, i.jsx)(s.YNO, {
-            targetElementRef: E,
+            targetElementRef: I,
             position: "right",
             align: "top",
             spacing: -8,
@@ -144,7 +144,7 @@ function A(e) {
                 } = n;
                 return (0, i.jsx)(s.DUT, {
                     ...e,
-                    innerRef: E,
+                    innerRef: I,
                     "aria-label": h.intl.formatToPlainString(h.t.RtqjeB, {
                         productName: t.name
                     }),
@@ -172,14 +172,14 @@ function x(e) {
         onDeleteProduct: x,
         onCopyProductLink: f,
         onTestDownload: C,
-        disabled: E = !1
-    } = e, I = (0, d.R)(t, 600), v = null !== t.price_tier ? (0, c.$g)(t.price_tier, m.Yr.USD) : void 0, b = (0, u.z)(t);
+        disabled: I = !1
+    } = e, E = (0, d.R)(t, 600), v = null !== t.price_tier ? (0, c.$g)(t.price_tier, m.Yr.USD) : void 0, b = (0, u.z)(t);
     return (0, i.jsxs)(s.sqX, {
         tag: "article",
         className: l()(p.gc, p.Um, {
-            [p.r9]: E
+            [p.r9]: I
         }),
-        onClick: E ? void 0 : r,
+        onClick: I ? void 0 : r,
         onContextMenu: function(e) {
             (0, o.L3)(e, () => Promise.resolve(e => (0, i.jsx)(g, {
                 ...e,
@@ -205,7 +205,7 @@ function x(e) {
         }),
         children: [(0, i.jsx)("img", {
             alt: "",
-            src: I,
+            src: E,
             className: p.K_
         }), (0, i.jsxs)("div", {
             className: p.aG,
@@ -236,7 +236,7 @@ function x(e) {
                 }), (0, i.jsx)(s.hKd, {
                     size: 16
                 }), t.published ? (0, i.jsx)(_.S, {}) : (0, i.jsx)(_.$, {})]
-            }), !E && (0, i.jsx)(A, {
+            }), !I && (0, i.jsx)(A, {
                 product: t,
                 guildId: n,
                 showEditProduct: !0,

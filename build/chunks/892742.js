@@ -28,19 +28,19 @@ function x(e) {
     } = (0, o.mL)({
         fetchPolicy: "cache-or-network",
         callerSource: "embed"
-    }), C = r.useMemo(() => (0, d.vc)(t, n, x), [t, n, x]), E = r.useMemo(() => x.find(e => e.id === t), [t, x]), {
-        enabled: I
+    }), C = r.useMemo(() => (0, d.vc)(t, n, x), [t, n, x]), I = r.useMemo(() => x.find(e => e.id === t), [t, x]), {
+        enabled: E
     } = s.S.useConfig({
         location: g.rE.EMBED_DESKTOP
     });
     return f ? (0, i.jsx)(a.y$y, {
         className: A.u
-    }) : null == C ? null != E ? (0, i.jsx)(u.g, {
+    }) : null == C ? null != I ? (0, i.jsx)(u.g, {
         questId: t
     }) : (0, i.jsx)(_.l, {
         questId: t,
         reason: _.o.NOT_FOUND
-    }) : (0, c.E0)(C.config) ? I ? (0, i.jsx)(p.M, {
+    }) : (0, c.E0)(C.config) ? E ? (0, i.jsx)(p.M, {
         quest: C,
         location: l.uF.QUESTS_EMBED,
         sourceQuestContent: l.uF.QUESTS_EMBED

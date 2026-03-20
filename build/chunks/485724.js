@@ -21,8 +21,8 @@ var i = n(627968),
     x = n(207371),
     f = n(205184),
     C = n(773669),
-    E = n(961350),
-    I = n(734057),
+    I = n(961350),
+    E = n(734057),
     v = n(994500),
     b = n(967198),
     T = n(287809),
@@ -58,7 +58,7 @@ function U(e) {
         staticBannerSrc: S,
         videoBannerSrc: L,
         bannerAspectRatio: D
-    } = (0, M.f)(t), O = (0, s.bG)([E.default], () => l ?? E.default.getId(), [l]), {
+    } = (0, M.f)(t), O = (0, s.bG)([I.default], () => l ?? I.default.getId(), [l]), {
         analyticsLocations: U
     } = (0, _.Ay)(u.A.APP_MESSAGE_EMBED), {
         currentChannelId: F,
@@ -130,7 +130,7 @@ function U(e) {
             referrerId: O,
             activityCustomId: a,
             onView: g,
-            guildId: I.A.getChannel(o.channel_id)?.guild_id,
+            guildId: E.A.getChannel(o.channel_id)?.guild_id,
             channelId: o.channel_id,
             messageId: o.id
         }

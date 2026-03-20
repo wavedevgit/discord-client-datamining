@@ -26,7 +26,7 @@ function h(e) {
         enabledContentHarmTypeFlags: A,
         onSuppressEmbed: x,
         hiddenSpoiler: f = !1
-    } = e, [C, E] = (0, o.zn)();
+    } = e, [C, I] = (0, o.zn)();
     return 0 === t.length ? null : (0, i.jsx)(c.N, {
         gifAutoPlay: r,
         getGifFavButton: h,
@@ -37,7 +37,7 @@ function h(e) {
             message: n,
             shouldDisableInteractiveComponents: !0,
             children: (0, i.jsx)(o.O7.Root, {
-                containerInnerWidth: E,
+                containerInnerWidth: I,
                 children: (0, i.jsx)("div", {
                     style: {
                         width: "100%"

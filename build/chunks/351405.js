@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(125017),
     f = n(104171),
     C = n(13403),
-    E = n(536189),
-    I = n(652215),
+    I = n(536189),
+    E = n(652215),
     v = n(272984),
     b = n(62323);
 
@@ -64,7 +64,7 @@ function y(e) {
         hideParty: b,
         onView: y
     } = e, S = (0, s.b)(n), N = (0, a.bG)([c.default], () => c.default.getId()), j = (0, a.bG)([m.A], () => {
-        if (null == g.application) return m.A.findActivity(g.author.id, e => e.type === I.$pd.LISTENING);
+        if (null == g.application) return m.A.findActivity(g.author.id, e => e.type === E.$pd.LISTENING);
         {
             let e = g.author.id;
             return (0, A.v)(g) && (e = e === N && l.isPrivate() ? l.getRecipientId() : N), m.A.getApplicationActivity(e, g.application.id)
@@ -82,7 +82,7 @@ function y(e) {
         guildId: l.guild_id,
         activityActionType: g.activity?.type
     }), [w, P, M, l.guild_id, g.activity?.type]);
-    return (0, v.pH)(j?.party?.id) || S.id === d.HT.id ? (0, i.jsx)(E.A, {
+    return (0, v.pH)(j?.party?.id) || S.id === d.HT.id ? (0, i.jsx)(I.A, {
         application: S,
         currentUserPresenceActivity: L,
         hideParty: b,
@@ -91,7 +91,7 @@ function y(e) {
         partyStatusElement: D,
         presenceActivity: j,
         guildId: l.guild_id
-    }) : g.activity?.type === I.xL.STREAM_REQUEST ? (0, i.jsx)(o.A, {
+    }) : g.activity?.type === E.xL.STREAM_REQUEST ? (0, i.jsx)(o.A, {
         analyticsLocations: t,
         application: S,
         channel: l,

@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(734057),
     f = n(540999),
     C = n(71393),
-    E = n(576705),
-    I = n(994500),
+    I = n(576705),
+    E = n(994500),
     v = n(287809),
     b = n(862804),
     T = n(627950),
@@ -51,7 +51,7 @@ function R(e) {
         message: t,
         snapshot: n,
         index: c
-    } = e, _ = r.useMemo(() => new b.j(t, n, c), [t, n, c]), m = (0, l.bG)([x.A, v.default, I.A, E.A, C.A, u.A], () => _.getForwardInfo(x.A, v.default, I.A, E.A, C.A, u.A).footerInfo, [_], s.A), h = (0, l.bG)([x.A], () => x.A.getChannel(t.messageReference?.channel_id)), p = r.useCallback(() => {
+    } = e, _ = r.useMemo(() => new b.j(t, n, c), [t, n, c]), m = (0, l.bG)([x.A, v.default, E.A, I.A, C.A, u.A], () => _.getForwardInfo(x.A, v.default, E.A, I.A, C.A, u.A).footerInfo, [_], s.A), h = (0, l.bG)([x.A], () => x.A.getChannel(t.messageReference?.channel_id)), p = r.useCallback(() => {
         (0, T.A)(t)
     }, [t]);
     return null == m ? null : (0, i.jsxs)(d.DUT, {
@@ -97,7 +97,7 @@ function M(e) {
     } = e, s = r.useMemo(() => (0, y.A)(t, n), [t, n]), o = A.hD.useSetting(), d = A.rs.useSetting(), c = (0, l.bG)([f.A], () => f.A.isDeveloper), u = (0, _.S)((s.editedTimestamp ?? s.timestamp).valueOf()), {
         content: g,
         hasSpoilerEmbeds: C,
-        hasBailedAst: E
+        hasBailedAst: I
     } = (0, h.A)(s, {
         hideSimpleEmbedContent: o && d,
         isInteracting: !1,
@@ -107,8 +107,8 @@ function M(e) {
         allowLinks: !0,
         allowDevLinks: c,
         previewLinkTarget: !0
-    }), I = (0, l.bG)([x.A], () => x.A.getChannel(t.channel_id)), v = A.hH.useSetting();
-    return null == I ? null : (0, i.jsxs)("div", {
+    }), E = (0, l.bG)([x.A], () => x.A.getChannel(t.channel_id)), v = A.hH.useSetting();
+    return null == E ? null : (0, i.jsxs)("div", {
         className: j.kL,
         children: [(0, i.jsx)("div", {
             className: j.hD
@@ -121,11 +121,11 @@ function M(e) {
             }), (0, p.A)({
                 channelMessageProps: {
                     message: s,
-                    channel: I,
+                    channel: E,
                     compact: v
                 },
                 hasSpoilerEmbeds: C,
-                hasBailedAst: E,
+                hasBailedAst: I,
                 isInteracting: !1,
                 isMessageSnapshot: !0,
                 renderThreadAccessory: !1

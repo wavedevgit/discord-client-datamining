@@ -1,6 +1,6 @@
 /** chunk id: 709634 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => I
 });
 var i = n(627968),
     r = n(64700),
@@ -20,19 +20,19 @@ var i = n(627968),
     x = n(67642),
     f = n(222590),
     C = n(513653);
-let E = e => {
+let I = e => {
     let {
         reportingUserId: t,
         guildId: n,
         compact: a,
         channel: s,
-        messageId: E,
-        reportedTimestamp: I
+        messageId: I,
+        reportedTimestamp: E
     } = e, v = h.default.getUser(t), b = r.useMemo(() => a ? (0, _.A)((0, p.i$)(o()(), "LT")) : null, [a]), T = (0, m.P)({
         user: v,
         channelId: s.id,
         guildId: n,
-        messageId: E
+        messageId: I
     })((0, c.m2)(v, s)), y = null != v ? v.getAvatarURL(n, (0, d.FT9)(d._3J.SIZE_16)) : C, S = null != v ? A.intl.format(g.default["+zqXZs"], {
         username: v.username,
         onUserClick: T
@@ -56,7 +56,7 @@ let E = e => {
                 className: x.Ek,
                 children: "•"
             }), (0, i.jsx)(u.A, {
-                timestamp: I,
+                timestamp: E,
                 className: x.vE
             })]
         })]

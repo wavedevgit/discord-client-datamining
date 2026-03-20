@@ -25,8 +25,8 @@ function p(e) {
         partyStatusElement: x,
         currentUserPresenceActivity: f,
         onClickContent: C,
-        onView: E,
-        guildId: I
+        onView: I,
+        guildId: E
     } = e, v = (0, u.w)(f, g), b = (0, d.Gq)(g, n.author, "Invite Embed"), T = r.useMemo(() => {
         let e = [];
         return v || e.push({
@@ -75,9 +75,9 @@ function p(e) {
         trackingConfig: {
             id: t.id,
             linkType: _.J.RICH_PRESENCE_INVITE,
-            onView: E,
+            onView: I,
             referrerId: n.author.id,
-            guildId: I,
+            guildId: E,
             channelId: n.channel_id,
             messageId: n.id
         }
