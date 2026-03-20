@@ -17,7 +17,7 @@ var s = n(503698),
     A = n(985018),
     m = n(778337);
 
-function g(e) {
+function _(e) {
     let {
         hidden: t,
         onDismiss: n
@@ -78,7 +78,7 @@ function p(e) {
     } = e;
     return (0, i.jsx)(u.x, {
         ...t,
-        renderComponent: e => (0, i.jsx)(g, {
+        renderComponent: e => (0, i.jsx)(_, {
             ...e
         })
     })

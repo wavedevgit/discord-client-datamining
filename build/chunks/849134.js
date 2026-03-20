@@ -20,11 +20,11 @@ function d(e) {
         onActionMouseDown: h,
         position: A = "right",
         align: m = "top",
-        caretConfig: g = {
+        caretConfig: _ = {
             align: "start"
         },
         skuImageDetails: p,
-        title: _,
+        title: g,
         body: f,
         overlayImageUrl: x
     } = e;
@@ -49,7 +49,7 @@ function d(e) {
         size: "lg",
         shouldShow: !0,
         position: A,
-        caretConfig: g,
+        caretConfig: _,
         gradientColor: "purple",
         alignmentStrategy: "edge",
         align: m,
@@ -65,7 +65,7 @@ function d(e) {
             onMouseDown: h
         }],
         targetElementRef: t,
-        title: _ ?? r.intl.string(r.t.Ylu2JM),
+        title: g ?? r.intl.string(r.t.Ylu2JM),
         body: f ?? r.intl.string(r.t.vgylLQ),
         graphic: C
     })

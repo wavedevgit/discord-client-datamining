@@ -19,10 +19,10 @@ function A(e) {
         entry: t,
         onSelect: A,
         closePopout: m,
-        hideEditButton: g = !1
+        hideEditButton: _ = !1
     } = e, {
         isEntryAdmin: p,
-        canEdit: _,
+        canEdit: g,
         canRemove: f
     } = (0, u.A)(t), x = (0, o.A)({
         id: t.guildId,
@@ -30,7 +30,7 @@ function A(e) {
         onSuccess: m
     });
     s.useEffect(() => {
-        _ || f || null != x || (0, r.Z_)()
+        g || f || null != x || (0, r.Z_)()
     });
     let C = () => {
         d.ZM(t.channelId, t.guildId)
@@ -46,7 +46,7 @@ function A(e) {
         "aria-label": h.intl.string(h.t.HpQykc),
         onSelect: A,
         children: [(0, i.jsxs)(a.rXV, {
-            children: [_ && !g ? (0, i.jsx)(a.Drp, {
+            children: [g && !_ ? (0, i.jsx)(a.Drp, {
                 id: "update-entry",
                 label: h.intl.string(h.t.XnuOvN),
                 action: function() {

@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(932001),
     A = n(651649),
     m = n(253932),
-    g = n(734057),
+    _ = n(734057),
     p = n(203982),
-    _ = n(517381),
+    g = n(517381),
     f = n(822382),
     x = n(868974),
     C = n(771650),
@@ -125,9 +125,9 @@ function k(e) {
         paginationTotalCount: h,
         renderPageWrapper: A,
         onBlockedResultsClick: m,
-        searchRequestAnalyticsId: g,
+        searchRequestAnalyticsId: _,
         searchResultsQuery: p,
-        isFavoritesSearch: _
+        isFavoritesSearch: g
     } = e, {
         totalResults: f,
         isSearching: x,
@@ -164,9 +164,9 @@ function k(e) {
         paginationTotalCount: h,
         renderPageWrapper: A,
         onBlockedResultsClick: m,
-        searchRequestAnalyticsId: g,
+        searchRequestAnalyticsId: _,
         searchResultsQuery: p,
-        isFavoritesSearch: _
+        isFavoritesSearch: g
     });
     let {
         showNoResultsAlt: I
@@ -194,7 +194,7 @@ let V = [],
             messages: u,
             blockCount: A,
             ignoreCount: m,
-            isFeedbackVisible: _,
+            isFeedbackVisible: g,
             dismissFeedbackEntrypoint: x,
             onSearchModeChange: E,
             onPageChange: N,
@@ -257,7 +257,7 @@ let V = [],
                 }), E(e))
             }, [E, n.isSearching, t, b, a]),
             q = s.useCallback((e, i) => {
-                let s = g.A.getChannel(e.channel_id),
+                let s = _.A.getChannel(e.channel_id),
                     l = null != s ? s.getGuildId() : null,
                     r = (0, f.bS)(t),
                     {
@@ -355,7 +355,7 @@ let V = [],
                 })]
             }), (0, i.jsx)(w, {
                 searchContext: t,
-                isFeedbackVisible: _,
+                isFeedbackVisible: g,
                 dismissFeedbackEntrypoint: x
             })]
         })
@@ -380,19 +380,19 @@ function H(e) {
             }, []),
             isFeedbackVisible: e
         }
-    }(), o = (0, f.bS)(t), c = (0, r.cf)([_.A, T.A], () => ({
-        isSearching: _.A.getIsFetching(o) ?? !1,
-        isIndexing: _.A.getIsIndexing(o) ?? !1,
-        isHistoricalIndexing: _.A.getIsHistoricalIndexing(o) ?? !1,
-        documentsIndexed: _.A.getDocumentsIndexed(o),
+    }(), o = (0, f.bS)(t), c = (0, r.cf)([g.A, T.A], () => ({
+        isSearching: g.A.getIsFetching(o) ?? !1,
+        isIndexing: g.A.getIsIndexing(o) ?? !1,
+        isHistoricalIndexing: g.A.getIsHistoricalIndexing(o) ?? !1,
+        documentsIndexed: g.A.getDocumentsIndexed(o),
         offset: T.A.getSearchResultsOffset(o) ?? 0,
-        totalResults: _.A.getTotalCount(o) ?? 0,
-        hasError: null != _.A.getError(o),
+        totalResults: g.A.getTotalCount(o) ?? 0,
+        hasError: null != g.A.getError(o),
         showBlockedResults: T.A.shouldShowBlockedResults(o),
         showNoResultsAlt: T.A.shouldShowNoResultsAlt(o)
-    })), d = (0, r.bG)([_.A], () => _.A.getAnalyticsId(o)), {
+    })), d = (0, r.bG)([g.A], () => g.A.getAnalyticsId(o)), {
         renderedMessages: h,
-        ignoreCount: g,
+        ignoreCount: _,
         blockCount: p
     } = (0, b.A)({
         searchContext: t
@@ -423,7 +423,7 @@ function H(e) {
             search: O,
             searchRequestAnalyticsId: D,
             messages: R,
-            ignoreCount: g,
+            ignoreCount: _,
             blockCount: p,
             renderEmbeds: m.rs.useSetting(),
             isFeedbackVisible: l,

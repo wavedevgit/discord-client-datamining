@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(133343),
     A = n(609425),
     m = n(922301),
-    g = n(750112),
+    _ = n(750112),
     p = n(451909),
-    _ = n(538355),
+    g = n(538355),
     f = n(854627),
     x = n(447404),
     C = n(320501),
@@ -32,7 +32,7 @@ let T = e => {
             message: n,
             out: s = !1,
             noAnimate: l = !1
-        } = e, o = (0, _.A)(n, {
+        } = e, o = (0, g.A)(n, {
             hideSimpleEmbedContent: !0,
             formatInline: !1,
             noStyleAndInteraction: !1,
@@ -64,7 +64,7 @@ let T = e => {
                     "aria-label": "User Avatar",
                     isTyping: !1
                 })
-            }), (0, i.jsx)(g.A, {
+            }), (0, i.jsx)(_.A, {
                 userName: d,
                 displayNameStyles: u,
                 effectDisplayType: m.G.STATIC,
@@ -92,7 +92,7 @@ let T = e => {
             channel: t,
             idle: n,
             showChat: l
-        } = e, A = s.useRef(new Set), [m, g] = s.useState([]), [_, f] = s.useState(0), I = s.useRef(null), b = s.useRef(!1), [v, y] = s.useState(!0), [j, R] = s.useState(""), [O, L] = s.useState((0, u.x7)(j));
+        } = e, A = s.useRef(new Set), [m, _] = s.useState([]), [g, f] = s.useState(0), I = s.useRef(null), b = s.useRef(!1), [v, y] = s.useState(!0), [j, R] = s.useState(""), [O, L] = s.useState((0, u.x7)(j));
         s.useEffect(() => {
             let e = A.current;
             return () => {
@@ -112,10 +112,10 @@ let T = e => {
             })
         }, [I]), s.useEffect(() => {
             let e = Date.now();
-            g(C.A.getMessages(t.id)._array.filter(t => t.timestamp.getTime() > e - 12e5).slice(-50))
+            _(C.A.getMessages(t.id)._array.filter(t => t.timestamp.getTime() > e - 12e5).slice(-50))
         }, [t]);
         let M = s.useCallback(e => {
-                g(t => {
+                _(t => {
                     if (!t.some(t => t.id === e.id)) {
                         let n = [...t, e];
                         return n.length > 50 && n.shift(), n
@@ -126,7 +126,7 @@ let T = e => {
             D = s.useMemo(() => {
                 let e = m[m.length - 1];
                 if (null == e) return !0;
-                if (_ + 100 > Date.now()) return !1;
+                if (g + 100 > Date.now()) return !1;
                 let t = Date.now() > e.timestamp.getTime() + 5e3;
                 if (!t) {
                     let e = setTimeout(() => {
@@ -135,7 +135,7 @@ let T = e => {
                     A.current.add(e)
                 }
                 return t
-            }, [m, _]);
+            }, [m, g]);
         return s.useEffect(() => {
             let e = e => {
                 let {

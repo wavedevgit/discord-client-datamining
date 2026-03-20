@@ -15,14 +15,14 @@ var i = n(627968),
     h = n(151119),
     A = n(278941),
     m = n(665909),
-    g = n(186111),
+    _ = n(186111),
     p = n(58736),
-    _ = n(327337),
+    g = n(327337),
     f = n(985018);
 let x = s.memo(function(e) {
     let {
         channel: t
-    } = e, x = (0, u.u)(t.id), C = (0, h.S)(t.id), E = (0, A.e)(t.id), I = (0, a.useHasAnyModalOpen)(), N = (0, l.bG)([g.A], () => g.A.hasLayers()), b = s.useCallback(() => C ? f.intl.string(f.t["16QyDv"]) : null != E ? f.intl.string(f.t.kCN9i0) : null, [C, E]), S = s.useMemo(() => (C || null != E) && !I && !N, [C, E, I, N]), [T, v] = s.useState(b());
+    } = e, x = (0, u.u)(t.id), C = (0, h.S)(t.id), E = (0, A.e)(t.id), I = (0, a.useHasAnyModalOpen)(), N = (0, l.bG)([_.A], () => _.A.hasLayers()), b = s.useCallback(() => C ? f.intl.string(f.t["16QyDv"]) : null != E ? f.intl.string(f.t.kCN9i0) : null, [C, E]), S = s.useMemo(() => (C || null != E) && !I && !N, [C, E, I, N]), [T, v] = s.useState(b());
     s.useEffect(() => {
         null != E && null != x && (o.ORC.announce(f.intl.string(f.t.acsXuG)), setTimeout(() => {
             (0, d.xi)(t.id, [E.id])
@@ -69,7 +69,7 @@ let x = s.memo(function(e) {
                 })
             }
         }, {
-            modalKey: _.V
+            modalKey: g.V
         }), (0, m._$)({
             channelId: t.id,
             senderId: t.getRecipientId(),

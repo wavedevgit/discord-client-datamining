@@ -1,7 +1,7 @@
 /** chunk id: 287074 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -15,10 +15,10 @@ var i = n(627968),
     h = n(58736),
     A = n(652215),
     m = n(985018);
-let g = function(e) {
+let _ = function(e) {
     let {
         channel: t
-    } = e, n = (0, o.vL)(t), [g, p] = s.useState(!1), _ = (0, l.bG)([d.Ay], () => d.Ay.hasUnreadPins(t.id), [t]), f = (0, c.aL)(), x = s.useRef(null), C = s.useCallback(() => {
+    } = e, n = (0, o.vL)(t), [_, p] = s.useState(!1), g = (0, l.bG)([d.Ay], () => d.Ay.hasUnreadPins(t.id), [t]), f = (0, c.aL)(), x = s.useRef(null), C = s.useCallback(() => {
         n || p(e => !e)
     }, [n]);
 
@@ -29,7 +29,7 @@ let g = function(e) {
         u._.unsubscribe(A.jej.TOGGLE_CHANNEL_PINS, C)
     }), [C]), (0, i.jsx)(a.YNO, {
         targetElementRef: x,
-        shouldShow: g,
+        shouldShow: _,
         animation: a.YNO.Animation.NONE,
         position: "bottom",
         align: "right",
@@ -57,7 +57,7 @@ let g = function(e) {
                 iconSize: 20,
                 "aria-label": m.intl.string(m.t["mp1N/2"]),
                 disabled: n,
-                showBadge: _,
+                showBadge: g,
                 selected: s
             })
         }

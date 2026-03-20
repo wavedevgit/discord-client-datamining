@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(442433),
     A = n(676002),
     m = n(296216),
-    g = n(685399),
+    _ = n(685399),
     p = n(271683),
-    _ = n(186369),
+    g = n(186369),
     f = n(725613),
     x = n(963027),
     C = n(844262),
@@ -321,9 +321,9 @@ class es extends Y.Ay {
             isUserOver: h,
             connectChannelDropTarget: A,
             connectChannelDragSource: m,
-            connectUserDropTarget: g,
+            connectUserDropTarget: _,
             connectDragPreview: p,
-            canReorderChannel: _,
+            canReorderChannel: g,
             canMoveMembers: f,
             showTutorial: E,
             hasActiveEvent: I,
@@ -421,7 +421,7 @@ class es extends Y.Ay {
                 })
             }), this.renderHangoutWindow(), this.renderVoiceUsers()]
         });
-        return f && (w = g(w)), _ && (w = A(m(w))), E && (w = (0, i.jsx)(D.A, {
+        return f && (w = _(w)), g && (w = A(m(w))), E && (w = (0, i.jsx)(D.A, {
             childRef: this.ref,
             tutorialId: "voice-conversations",
             position: "right",
@@ -455,7 +455,7 @@ function ea(e) {
             bypassLimit: V.A.can(ee.xBc.MOVE_MEMBERS, n),
             unverifiedAccount: !i.canChat
         }
-    }), A = (0, r.bG)([F.A], () => F.A.hasVideo(n.id)), m = (0, g.Ay)(n), p = (0, E.Ay)(n), x = (0, y.Qs)(n.id), C = (0, r.bG)([f.A], () => null != f.A.getStartTime(n), [n]), {
+    }), A = (0, r.bG)([F.A], () => F.A.hasVideo(n.id)), m = (0, _.Ay)(n), p = (0, E.Ay)(n), x = (0, y.Qs)(n.id), C = (0, r.bG)([f.A], () => null != f.A.getStartTime(n), [n]), {
         isSubscriptionGated: I,
         needSubscriptionToAccess: N
     } = (0, v.A)(n.id), S = (0, b.A)(), T = (0, r.bG)([H.Ay], () => H.Ay.isFavorite(t.id, n.id)), j = e.connected || S?.channelId === n.id, {
@@ -474,7 +474,7 @@ function ea(e) {
     }), {
         enableHighlight: G,
         enableWaveformIcon: U
-    } = (0, _.b)(t.id, "VoiceChannel"), w = null != c && c.length > 0, K = G && w, W = U && w, Y = (0, z.A)({
+    } = (0, g.b)(t.id, "VoiceChannel"), w = null != c && c.length > 0, K = G && w, W = U && w, Y = (0, z.A)({
         channel: n,
         isChannelSelected: a,
         isChannelCollapsed: o,

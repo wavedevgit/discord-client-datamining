@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(688810),
     A = n(966597),
     m = n(85109),
-    g = n(44022),
+    _ = n(44022),
     p = n(566908),
-    _ = n(594061),
+    g = n(594061),
     f = n(617617),
     x = n(203982),
     C = n(646468),
@@ -46,18 +46,18 @@ function y(e) {
         } = (0, h.Ay)(u.A.NOTIFICATION_CENTER),
         [P, w] = s.useState(!1),
         [k, V] = [(0, o.bG)([f.A], () => f.A.settings.inbox?.currentTab ?? c.Y2.UNREADS), s.useCallback(e => {
-            _.wc.updateAsync("inbox", t => {
+            g.wc.updateAsync("inbox", t => {
                 if (t.currentTab === e) return !1;
                 t.currentTab = e
-            }, _.Sb.FREQUENT_USER_ACTION)
+            }, g.Sb.FREQUENT_USER_ACTION)
         }, [])],
         {
             showTutorial: B,
             setSeenTutorial: H
         } = (t = (0, o.bG)([f.A], () => f.A.settings.inbox?.viewedTutorial ?? !1), n = s.useCallback(() => {
-            _.wc.updateAsync("inbox", e => {
+            g.wc.updateAsync("inbox", e => {
                 e.viewedTutorial = !0
-            }, _.Sb.INFREQUENT_USER_ACTION)
+            }, g.Sb.INFREQUENT_USER_ACTION)
         }, []), {
             showTutorial: !t && k === c.Y2.UNREADS,
             setSeenTutorial: n
@@ -111,7 +111,7 @@ function y(e) {
                             }),
                             children: k === c.Y2.FOR_YOU ? (0, i.jsx)(C.Ay, {}) : k === c.Y2.MENTIONS ? (0, i.jsx)(E.A, {
                                 onJump: q
-                            }) : W && Y && k === c.Y2.BOOKMARKS ? (0, i.jsx)(g.J, {
+                            }) : W && Y && k === c.Y2.BOOKMARKS ? (0, i.jsx)(_.J, {
                                 closePopout: F
                             }) : k === c.Y2.SCHEDULED ? (0, i.jsx)(N.w, {}) : (0, i.jsx)(r.tH, {
                                 fallback: (0, i.jsx)(b.T, {}),

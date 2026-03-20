@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(182592),
     A = n(562153),
     m = n(183555),
-    g = n(672385),
+    _ = n(672385),
     p = n(950191),
-    _ = n(657331),
+    g = n(657331),
     f = n(718019),
     x = n(31432),
     C = n(915614),
@@ -47,7 +47,7 @@ function L(e) {
         isHoveringOrFocusing: w,
         isHovering: k
     } = (0, u.A)(P), V = () => {
-        (0, _.openUserProfileModal)({
+        (0, g.openUserProfileModal)({
             sourceAnalyticsLocations: G,
             hideRestrictedProfile: !0,
             ...U
@@ -119,7 +119,7 @@ function L(e) {
                     className: R.qr,
                     children: (0, i.jsx)(a.DUT, {
                         onClick: () => {
-                            V(), (0, g.Wn)({
+                            V(), (0, _.Wn)({
                                 action: "PRESS_VIEW_PROFILE",
                                 analyticsLocations: G,
                                 ...U

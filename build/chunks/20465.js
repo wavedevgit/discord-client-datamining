@@ -16,9 +16,9 @@ var i = n(627968),
     h = n(367513),
     A = n(843472),
     m = n(386467),
-    g = n(465364),
+    _ = n(465364),
     p = n(763754),
-    _ = n(448368),
+    g = n(448368),
     f = n(378058),
     x = n(148355),
     C = n(320501),
@@ -46,14 +46,14 @@ function j(e) {
             messageId: t.id,
             flash: !0
         }))
-    }, [t.channel_id, t.id]), b = null != t.content && "" !== t.content ? (0, g.Ay)(t, {
+    }, [t.channel_id, t.id]), b = null != t.content && "" !== t.content ? (0, _.Ay)(t, {
         isInteracting: u
     }).content : null, {
         contentPlaceholder: S,
         renderedContent: y,
         trailingIcon: j,
         leadingIcon: R
-    } = (0, _.o)(t, b, n, l, v.BK, {
+    } = (0, g.o)(t, b, n, l, v.BK, {
         trailingIconClass: v.sl,
         leadingIconClass: v.aG,
         iconSize: T.eJ
@@ -127,18 +127,18 @@ function R(e) {
                 return [...e.slice(t)]
             })
         }, [a]), n && null == h.current ? h.current = a : n || null == h.current || (h.current = null);
-        let g = h.current ?? a;
+        let _ = h.current ?? a;
         return {
             toastsHidden: o,
-            toastMessages: (0, c.yK)([C.A], () => g.map(e => C.A.getMessage(t, e)), [t, g]).filter(b.Vq)
+            toastMessages: (0, c.yK)([C.A], () => _.map(e => C.A.getMessage(t, e)), [t, _]).filter(b.Vq)
         }
     }({
         channelId: t,
         isFrozen: l,
         count: 3,
         lingerMs: y
-    }), g = s.useRef({}), [p, _] = s.useState({}), f = s.useCallback((e, t) => {
-        null == t ? delete g.current[e] : g.current[e] = t
+    }), _ = s.useRef({}), [p, g] = s.useState({}), f = s.useCallback((e, t) => {
+        null == t ? delete _.current[e] : _.current[e] = t
     }, []), x = s.useRef(p);
     s.useLayoutEffect(() => {
         x.current = p
@@ -146,13 +146,13 @@ function R(e) {
         let e = {},
             t = 0;
         for (let n of m) {
-            let i = g.current[n.id] ?? 0;
+            let i = _.current[n.id] ?? 0;
             e[n.id] = t, t += i + 8
-        }(0, r.isEqual)(e, x.current) || _(e)
+        }(0, r.isEqual)(e, x.current) || g(e)
     }, [m]);
     let E = m.map(e => ({
             message: e,
-            height: g.current[e.id],
+            height: _.current[e.id],
             y: p[e.id]
         })),
         I = (0, d.pnh)(E, {

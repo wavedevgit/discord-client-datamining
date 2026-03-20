@@ -16,9 +16,9 @@ var s = n(503698),
     h = n(309698),
     A = n(47167),
     m = n(713654),
-    g = n(769015),
+    _ = n(769015),
     p = n(508654),
-    _ = n(974930),
+    g = n(974930),
     f = n(961314),
     x = n(58736),
     C = n(742589),
@@ -88,12 +88,12 @@ function H(e) {
         } = e,
         a = (0, T.$F)(l),
         r = (0, p.Qs)(l.id),
-        c = null != r ? (0, _.G3)(r) : null,
+        c = null != r ? (0, g.G3)(r) : null,
         u = null != r;
     if (s?.type === D.lp.ACTIVITY) null != n && (t = (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(x.Ay.Divider, {
             className: w.yF
-        }), (0, i.jsx)(g.A, {
+        }), (0, i.jsx)(_.A, {
             game: n,
             className: w.RI
         }), (0, i.jsx)(o.Text, {
@@ -138,14 +138,14 @@ function F(e) {
         guild: s,
         appContext: c,
         inCall: d,
-        isChatOpen: g,
+        isChatOpen: _,
         exitFullScreen: p
     } = e, {
-        focusedParticipant: _
+        focusedParticipant: g
     } = (0, a.cf)([j.A], () => ({
         focusedParticipant: j.A.getSelectedParticipant(t.id),
         participantsOpen: j.A.getParticipantsOpen(t.id)
-    }), [t.id]), f = (0, A.Ay)(t), I = (0, m.gU)(t), [T] = (0, u.A)(_?.type === D.lp.ACTIVITY ? [_.applicationId] : []), v = P.intl.string(P.t.BVZqJl);
+    }), [t.id]), f = (0, A.Ay)(t), I = (0, m.gU)(t), [T] = (0, u.A)(g?.type === D.lp.ACTIVITY ? [g.applicationId] : []), v = P.intl.string(P.t.BVZqJl);
     t.isDM() ? v = P.intl.string(P.t.jN2DfZ) : t.isGroupDM() && (v = P.intl.string(P.t["e5y+gm"]));
     let y = (0, a.bG)([h.A], () => h.A.getChannelStatus(t)),
         L = t.isGuildVoice() && d && null != y && y.length > 0,
@@ -208,7 +208,7 @@ function F(e) {
                     channel: t,
                     appContext: c,
                     inCall: d,
-                    isChatOpen: g,
+                    isChatOpen: _,
                     exitFullScreen: p
                 }),
                 children: [(0, i.jsx)(x.Ay.Title, {
@@ -232,7 +232,7 @@ function F(e) {
                     guild: s
                 }), (0, i.jsx)(H, {
                     focusedApplication: T,
-                    focusedParticipant: _,
+                    focusedParticipant: g,
                     channel: t
                 })]
             })

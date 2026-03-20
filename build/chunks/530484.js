@@ -16,14 +16,14 @@ var s = n(311907),
     h = n(652793),
     A = n(790782),
     m = n(985018),
-    g = n(516632);
+    _ = n(516632);
 
 function p(e) {
     let {
         guild: t,
         selected: p
     } = e, {
-        hasUnread: _,
+        hasUnread: g,
         mentionCount: f
     } = (0, s.cf)([d.Ay], () => ({
         hasUnread: d.Ay.hasUnread(t.id, A.P.GUILD_EVENT),
@@ -65,9 +65,9 @@ function p(e) {
                 })
             })
         },
-        showUnread: _ && !x,
+        showUnread: g && !x,
         trailing: !x && f > 0 ? (0, i.jsx)(a.hVq, {
-            className: g.Do,
+            className: _.Do,
             disableColor: !0,
             count: f
         }) : null

@@ -16,9 +16,9 @@ var i = n(627968),
     h = n(765671),
     A = n(964486),
     m = n(793574),
-    g = n(688810),
+    _ = n(688810),
     p = n(313961),
-    _ = n(520698),
+    g = n(520698),
     f = n(43189),
     x = n(518530),
     C = n(384059),
@@ -72,7 +72,7 @@ function es(e) {
         selectedParticipant: c
     } = e, {
         parentAnalyticsLocation: d
-    } = (0, g.Ay)(), h = t.getGuildId(), A = (0, o.bG)([G.A], () => G.A.getMostRecentSelectedTextChannelId(h), [h]), m = O.default.getId(), f = !(0, o.bG)([p.A], () => p.A.isFullscreenInContext(n)) && (!U.isPlatformEmbedded || P.Ay.supportsFeature($.BYE.POPOUT_WINDOWS)), x = null != c && c.type !== Z.lp.ACTIVITY && c.user.id !== m, E = s.useMemo(() => a?.window ?? window, [a]), N = (0, J.A)({
+    } = (0, _.Ay)(), h = t.getGuildId(), A = (0, o.bG)([G.A], () => G.A.getMostRecentSelectedTextChannelId(h), [h]), m = O.default.getId(), f = !(0, o.bG)([p.A], () => p.A.isFullscreenInContext(n)) && (!U.isPlatformEmbedded || P.Ay.supportsFeature($.BYE.POPOUT_WINDOWS)), x = null != c && c.type !== Z.lp.ACTIVITY && c.user.id !== m, E = s.useMemo(() => a?.window ?? window, [a]), N = (0, J.A)({
         channel: t,
         appContext: n,
         popoutOpen: l,
@@ -81,7 +81,7 @@ function es(e) {
     }), S = n === $.BRT.POPOUT && U.isPlatformEmbedded && P.Ay.supportsFeature($.BYE.POPOUT_WINDOWS);
     return (0, i.jsxs)(i.Fragment, {
         children: [x ? (0, i.jsx)(R.A, {
-            context: (0, _.A)(c.type),
+            context: (0, g.A)(c.type),
             userId: c.user.id,
             currentWindow: E,
             sliderClassName: et.MQ,
@@ -125,12 +125,12 @@ function ea(e) {
             popoutWindowAlwaysOnTop: u,
             popoutOpen: h,
             popoutType: A,
-            chatOpen: _,
+            chatOpen: g,
             idleProps: x
         } = e,
         {
             analyticsLocations: C
-        } = (0, g.Ay)(m.A.VOICE_CONTROL_TRAY),
+        } = (0, _.Ay)(m.A.VOICE_CONTROL_TRAY),
         I = (0, E.Us)(),
         N = (0, o.bG)([G.A], () => G.A.getVoiceChannelId() === n.id, [n.id]),
         b = (0, o.bG)([D.A], () => D.A.can($.xBc.CONNECT, n)),
@@ -171,14 +171,14 @@ function ea(e) {
             paddingTop: B
         },
         disableGradients: !N || 0 === R && v.x.TOP,
-        renderBottomCenter: () => N ? (0, i.jsx)(g.f5, {
+        renderBottomCenter: () => N ? (0, i.jsx)(_.f5, {
             value: C,
             children: (0, i.jsx)(z.A, {
                 channel: n,
                 isOnStartStageScreen: U
             })
         }) : null,
-        renderBottomRight: () => N ? (0, i.jsx)(g.f5, {
+        renderBottomRight: () => N ? (0, i.jsx)(_.f5, {
             value: C,
             children: (0, i.jsx)(es, {
                 channel: n,
@@ -194,7 +194,7 @@ function ea(e) {
             showRequestToSpeakSidebar: c,
             channel: n
         }),
-        renderChatToasts: () => !P || _ || j ? null : (0, i.jsx)(f.Ay, {
+        renderChatToasts: () => !P || g || j ? null : (0, i.jsx)(f.Ay, {
             children: (0, i.jsx)(T.A, {
                 className: a()(et.T6, {
                     [et.c3]: c
@@ -214,7 +214,7 @@ function er(e) {
     let {
         channel: t,
         popoutType: l
-    } = e, [r, u] = s.useState(!1), _ = s.useCallback(() => {
+    } = e, [r, u] = s.useState(!1), g = s.useCallback(() => {
         u(!r)
     }, [r, u]), {
         popoutWindow: C,
@@ -224,7 +224,7 @@ function er(e) {
         popoutWindowAlwaysOnTop: N.A.getIsAlwaysOnTop($.MLl.CHANNEL_CALL_POPOUT)
     })), b = null != C && !C.closed, {
         analyticsLocations: T
-    } = (0, g.Ay)(m.A.STAGE_CHANNEL_CALL), v = (0, E.Us)(), y = (0, o.bG)([p.A], () => p.A.getChatOpen(t.id), [t.id]), j = (0, o.bG)([M.A], () => M.A.getGuild(t.guild_id), [t.guild_id]);
+    } = (0, _.Ay)(m.A.STAGE_CHANNEL_CALL), v = (0, E.Us)(), y = (0, o.bG)([p.A], () => p.A.getChatOpen(t.id), [t.id]), j = (0, o.bG)([M.A], () => M.A.getGuild(t.guild_id), [t.guild_id]);
     (0, A.Ay)(() => {
         null == c.w.get(en) && ((0, d.mMO)(async () => {
             let {
@@ -239,7 +239,7 @@ function er(e) {
         width: R = 0,
         ref: O
     } = (0, h.Ay)(), L = !b || v === $.BRT.POPOUT;
-    return (0, i.jsx)(g.f5, {
+    return (0, i.jsx)(_.f5, {
         value: T,
         children: (0, i.jsxs)(f.qh, {
             children: [(0, i.jsxs)("div", {
@@ -256,7 +256,7 @@ function er(e) {
                             timeout: 2e3,
                             children: e => (0, i.jsx)(ea, {
                                 channel: t,
-                                toggleRequestToSpeakSidebar: _,
+                                toggleRequestToSpeakSidebar: g,
                                 showRequestToSpeakSidebar: r,
                                 popoutWindow: C,
                                 popoutWindowAlwaysOnTop: I,
@@ -269,7 +269,7 @@ function er(e) {
                     })
                 }), r ? (0, i.jsx)(F.A, {
                     channel: t,
-                    toggleRequestToSpeakSidebar: _,
+                    toggleRequestToSpeakSidebar: g,
                     chatOpen: y
                 }) : null, (0, i.jsx)("div", {
                     className: et.B2,

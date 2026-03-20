@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(451988),
     A = n(397927),
     m = n(308528),
-    g = n(442433),
+    _ = n(442433),
     p = n(817281),
-    _ = n(658128),
+    g = n(658128),
     f = n(976860),
     x = n(345942),
     C = n(260509),
@@ -44,7 +44,7 @@ let G = {
 };
 
 function U(e, t) {
-    (0, g.L3)(e, async () => {
+    (0, _.L3)(e, async () => {
         let {
             default: e
         } = await Promise.all([n.e("43600"), n.e("68587"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("96760"), n.e("35894"), n.e("50796"), n.e("8458"), n.e("11810"), n.e("52848"), n.e("30453"), n.e("56475"), n.e("54469"), n.e("21322")]).then(n.bind(n, 544676));
@@ -59,7 +59,7 @@ let P = s.memo(function(e) {
         guildNode: t,
         setRef: n,
         onDragStart: l,
-        onDragEnd: g,
+        onDragEnd: _,
         route: P,
         guild: w,
         animatable: k,
@@ -98,7 +98,7 @@ let P = s.memo(function(e) {
                 nodeId: t.id
             }),
             end() {
-                g?.(), (0, p.um)(I.Ay.getCompatibleGuildFolders())
+                _?.(), (0, p.um)(I.Ay.getCompatibleGuildFolders())
             },
             collect: e => ({
                 dragging: e.isDragging()
@@ -109,10 +109,10 @@ let P = s.memo(function(e) {
         ed = !q && eo,
         [eu, eh] = s.useState(!1),
         [eA, em] = s.useState(!1),
-        [eg] = s.useState(() => new h.J_(70, () => em(!0))),
+        [e_] = s.useState(() => new h.J_(70, () => em(!0))),
         ep = (0, N.nr)() && !d.Fr;
-    s.useEffect(() => () => eg.cancel(), [eg]);
-    let e_ = s.useCallback(() => {
+    s.useEffect(() => () => e_.cancel(), [e_]);
+    let eg = s.useCallback(() => {
             null != P ? (0, f.pX)(P, {
                 state: G
             }) : (0, x.u)(ee, {
@@ -121,7 +121,7 @@ let P = s.memo(function(e) {
         }, [ee, P]),
         ef = s.useCallback(() => {
             if (null != P || null == w || F || !X) return;
-            let e = (0, _.W)(w.id);
+            let e = (0, g.W)(w.id);
             null != e && m.A.preload(w.id, e)
         }, [P, w, F, X]),
         ex = (0, u.bG)([E.Ay], () => E.Ay.isCurrentUserGuest(ee)),
@@ -132,8 +132,8 @@ let P = s.memo(function(e) {
             "ArrowLeft" === e.key && null != et && document.querySelector(`[aria-owns=folder-items-${et}]`)?.focus()
         }, [et]),
         eI = s.useCallback(e => {
-            e ? eg.delay() : (eg.cancel(), em(!1))
-        }, [eg]);
+            e ? e_.delay() : (e_.cancel(), em(!1))
+        }, [e_]);
 
     function eN() {
         q || ec(!0)
@@ -164,7 +164,7 @@ let P = s.memo(function(e) {
                 mentions: K
             }),
             name: w.name,
-            onClick: e_,
+            onClick: eg,
             onMouseEnter: eN,
             onMouseLeave: eb,
             onMouseDown: ef,
@@ -190,7 +190,7 @@ let P = s.memo(function(e) {
                         mentions: K
                     }),
                     name: w.name,
-                    onClick: e_,
+                    onClick: eg,
                     onMouseEnter: eN,
                     onMouseLeave: eb,
                     onMouseDown: ef,

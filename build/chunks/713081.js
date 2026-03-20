@@ -21,15 +21,15 @@ function m(e) {
         quest: t,
         questContent: n,
         sourceQuestContent: m,
-        onClose: g,
+        onClose: _,
         size: p = "md"
-    } = e, _ = (0, c.LS)(t), f = (0, s.bG)([o.A], () => o.A.useReducedMotion), x = null != (0, d._Z)(t.config), C = (0, u.vv)(t), E = (0, h.v)({
+    } = e, g = (0, c.LS)(t), f = (0, s.bG)([o.A], () => o.A.useReducedMotion), x = null != (0, d._Z)(t.config), C = (0, u.vv)(t), E = (0, h.v)({
         quest: t,
         questContent: n,
         sourceQuestContent: m,
-        onCloseModal: g,
+        onCloseModal: _,
         shouldShowShopIfAlreadyClaimed: !0
-    }), I = t.userStatus?.claimedAt != null ? x ? A.intl.string(A.t.WYchde) : A.intl.string(A.t.vTgCWx) : A.intl.string(A.t.cfY4PE), N = t.userStatus?.completedAt == null ? _ ? A.intl.string(A.t.NJ6Bnm) : C ? A.intl.string(A.t.USNO1K) : void 0 : void 0;
+    }), I = t.userStatus?.claimedAt != null ? x ? A.intl.string(A.t.WYchde) : A.intl.string(A.t.vTgCWx) : A.intl.string(A.t.cfY4PE), N = t.userStatus?.completedAt == null ? g ? A.intl.string(A.t.NJ6Bnm) : C ? A.intl.string(A.t.USNO1K) : void 0 : void 0;
     return (0, i.jsx)(a.m, {
         text: N,
         children: (0, i.jsx)("div", {

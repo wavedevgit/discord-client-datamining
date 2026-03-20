@@ -16,7 +16,7 @@ var i = n(627968),
 function h(e) {
     let {
         channel: t
-    } = e, [n, h] = s.useState(!1), A = s.useRef(null), m = (0, a.vL)(t), g = s.useCallback(() => {
+    } = e, [n, h] = s.useState(!1), A = s.useRef(null), m = (0, a.vL)(t), _ = s.useCallback(() => {
         h(!1)
     }, []), p = s.useCallback(() => {
         n || (0, o.D3)("Popout"), h(!n)
@@ -28,13 +28,13 @@ function h(e) {
         align: "right",
         autoInvert: !1,
         shouldShow: n,
-        onRequestClose: g,
+        onRequestClose: _,
         renderPopout: function() {
             return (0, i.jsx)(l.lGe, {
                 children: (0, i.jsx)(c.A, {
                     className: u.T,
                     channel: t,
-                    onClose: g,
+                    onClose: _,
                     context: "popout"
                 })
             })

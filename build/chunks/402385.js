@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(641703),
     A = n(313961),
     m = n(826673),
-    g = n(379848),
+    _ = n(379848),
     p = n(753727),
-    _ = n(267102),
+    g = n(267102),
     f = n(222692),
     x = n(442353),
     C = n(470710),
@@ -84,7 +84,7 @@ class M extends s.PureComponent {
             tooltip: e
         });
         return (0, i.jsxs)(i.Fragment, {
-            children: [m, (0, i.jsx)(g.Ay, {
+            children: [m, (0, i.jsx)(_.Ay, {
                 contentTypes: d,
                 children: e => {
                     let {
@@ -160,12 +160,12 @@ function D(e) {
         callActive: C.A.isCallActive(t.id),
         callUnavailable: C.A.isCallUnavailable(t.id)
     })), m = t.getRecipientId(), {
-        notFriend: g,
+        notFriend: _,
         isBlocked: f
     } = (0, l.cf)([N.A], () => ({
         notFriend: t.type === y.rbe.DM && null != m && !N.A.isFriend(m),
         isBlocked: t.type === y.rbe.DM && null != m && N.A.isBlocked(m)
-    })), x = (0, l.bG)([b.default], () => b.default.getUser(m)), I = (0, _.Us)(), T = [], v = (0, h.A)(t.id), j = (0, l.bG)([E.A], () => E.A.hasLayers());
+    })), x = (0, l.bG)([b.default], () => b.default.getUser(m)), I = (0, g.Us)(), T = [], v = (0, h.A)(t.id), j = (0, l.bG)([E.A], () => E.A.hasLayers());
     return (v && !j && T.push(a.M.ACTIVITY_GDM_CALL_TOOLTIP), n || x?.bot) ? null : (0, i.jsx)(M, {
         channel: t,
         mode: s,
@@ -173,7 +173,7 @@ function D(e) {
         callActive: c,
         isProvisional: x?.isProvisional ?? !1,
         callUnavailable: d,
-        notFriend: g,
+        notFriend: _,
         isBlocked: f,
         appContext: I,
         dismissibleContentTypes: T,

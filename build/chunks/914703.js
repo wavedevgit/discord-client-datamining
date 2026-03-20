@@ -19,7 +19,7 @@ function d(e) {
         onSelect: d,
         navId: u,
         label: h
-    } = e, A = (0, l.A)(t, "Notifications Bell"), m = (0, a.A)(t), g = (0, o.X)(t);
+    } = e, A = (0, l.A)(t, "Notifications Bell"), m = (0, a.A)(t), _ = (0, o.X)(t);
     return (0, i.jsxs)(s.W1t, {
         "data-menu-migrated-auto": !0,
         navId: u,
@@ -41,7 +41,7 @@ function d(e) {
                     action: () => r.A.setNotificationSettings(t, {
                         flags: n
                     }),
-                    checked: n === g
+                    checked: n === _
                 }, n)
             })
         })]

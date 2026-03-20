@@ -15,7 +15,7 @@ var i = n(627968),
     h = n(775602),
     A = n(480004);
 let m = [A.u8, A.n$, A.uN, A.no],
-    g = s.memo(function(e) {
+    _ = s.memo(function(e) {
         let {
             emoji: t,
             onAnimationEnd: n
@@ -63,7 +63,7 @@ function p(e) {
             left: "52%"
         },
         "aria-hidden": !0,
-        children: a.map(e => (0, i.jsx)(g, {
+        children: a.map(e => (0, i.jsx)(_, {
             emoji: e,
             onAnimationEnd: u
         }, e.key))

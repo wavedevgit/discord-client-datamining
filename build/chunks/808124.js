@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(266626),
     A = n(998740),
     m = n(732777),
-    g = n(709382),
+    _ = n(709382),
     p = n(287245),
-    _ = n(615658),
+    g = n(615658),
     f = n(592044),
     x = n(100449),
     C = n(952057),
@@ -52,7 +52,7 @@ let N = e => {
             let {
                 contentRect: t,
                 target: n
-            } = e, i = n.getBoundingClientRect(), s = t.width, l = t.height, a = s / g.i.width * 1.5, r = l / g.i.height * 1.5, o = s / g.i.width * 1.1, c = l / g.i.height * 1.1;
+            } = e, i = n.getBoundingClientRect(), s = t.width, l = t.height, a = s / _.i.width * 1.5, r = l / _.i.height * 1.5, o = s / _.i.width * 1.1, c = l / _.i.height * 1.1;
             V({
                 x: s / 2 + i.x,
                 y: l / 2 + i.y
@@ -142,7 +142,7 @@ let N = e => {
                     style: {
                         transform: `translate(${M.x}px, ${M.y}px) scale(${j}) `
                     },
-                    children: (0, i.jsx)(g.A, {
+                    children: (0, i.jsx)(_.A, {
                         roomSeats: h.seats,
                         roomParticipants: h.participants,
                         participants: r,
@@ -214,7 +214,7 @@ let N = e => {
                         left: Y.x,
                         top: Y.y
                     } : void 0
-                }), (0, i.jsx)(_.A, {}), (0, i.jsx)("div", {
+                }), (0, i.jsx)(g.A, {}), (0, i.jsx)("div", {
                     className: a()(I.Lw, {
                         [I.FD]: A
                     }),

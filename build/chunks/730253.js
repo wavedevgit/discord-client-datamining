@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(793574),
     A = n(688810),
     m = n(941971),
-    g = n(900848),
+    _ = n(900848),
     p = n(65611),
-    _ = n(855725),
+    g = n(855725),
     f = n(532794),
     x = n(366811),
     C = n(345942),
@@ -77,10 +77,10 @@ function F(e) {
         })),
         eA = (0, a.bG)([N.A], () => N.A.getChannelId(D.YYv)),
         em = (0, a.bG)([I.A], () => I.A.getChannel(eA)),
-        eg = (0, x.A)(e => e.guildId),
-        ep = (0, R.ai)(eg),
+        e_ = (0, x.A)(e => e.guildId),
+        ep = (0, R.ai)(e_),
         {
-            badge: e_,
+            badge: eg,
             unread: ef
         } = (0, O.A)(eh),
         ex = (F = null != (t = (0, a.bG)([N.A], () => N.A.getVoiceChannelId())) && null != eh[t], K = (0, a.bG)([E.A], () => {
@@ -100,7 +100,7 @@ function F(e) {
             isCurrentUserConnected: F,
             activity: Z
         })),
-        eC = e_ > 0 ? (0, _.w)(e_) : null,
+        eC = eg > 0 ? (0, g.w)(eg) : null,
         eE = s.useRef(!1),
         {
             hasAccess: eI
@@ -136,7 +136,7 @@ function F(e) {
                 es(), clearTimeout(t)
             }
         }
-    }, [ei, es]), (0, i.jsxs)(g.c, {
+    }, [ei, es]), (0, i.jsxs)(_.c, {
         children: [(0, i.jsx)(m.A, {
             selected: ep,
             hovered: er,
@@ -153,7 +153,7 @@ function F(e) {
                         ...en,
                         ariaLabel: k.intl.formatToPlainString(k.t["/uzRss"], {
                             guildName: k.intl.string(k.t.wMWyci),
-                            mentions: e_
+                            mentions: eg
                         }),
                         "aria-selected": ep,
                         to: {

@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(222823),
     A = n(309010),
     m = n(287809),
-    g = n(851109),
+    _ = n(851109),
     p = n(394953),
-    _ = n(355216),
+    g = n(355216),
     f = n(596540),
     x = n(879221);
 n(445368);
@@ -38,7 +38,7 @@ function b(e) {
         ref: h
     } = e, m = (0, l.Vd)("notifications-inbox"), [f, E] = s.useState(!1), b = (0, p.lI)(), S = n || b, {
         notificationCenterVariant: T
-    } = (0, g.X8)({
+    } = (0, _.X8)({
         location: "NotificationsInboxButtonInner"
     }), {
         badge: v,
@@ -47,17 +47,17 @@ function b(e) {
     } = function(e) {
         let {
             notificationCenterVariant: t
-        } = (0, g.X8)({
+        } = (0, _.X8)({
             location: "NotificationsInboxButtonInner"
         }), {
             unreadChannelIds: n
         } = (0, p.U4)(), s = N(), {
             badge: l,
             dimensions: a
-        } = (0, _.ux)({
+        } = (0, g.ux)({
             isSelected: e
         });
-        return t === g.U5.LEGACY ? {
+        return t === _.U5.LEGACY ? {
             badge: s ? (0, i.jsx)(o.SC0, {
                 style: {
                     height: 13,
@@ -76,17 +76,17 @@ function b(e) {
             unreadChannelsCount: n.length,
             badgeDimensions: a
         }
-    }(S), R = T === g.U5.LEGACY ? o.K$s : o.XFE, O = (0, a.bG)([A.A], () => A.A.getChannelId()), L = s.useMemo(() => {
-        if (T === g.U5.SIDEBAR) return C.BVt.CHANNEL(C.gNP, O)
+    }(S), R = T === _.U5.LEGACY ? o.K$s : o.XFE, O = (0, a.bG)([A.A], () => A.A.getChannelId()), L = s.useMemo(() => {
+        if (T === _.U5.SIDEBAR) return C.BVt.CHANNEL(C.gNP, O)
     }, [T, O]);
     return (0, i.jsxs)(d.c, {
         ref: h,
         children: [(0, i.jsx)(c.A, {
-            selected: S && T === g.U5.SIDEBAR,
-            hovered: f && T === g.U5.SIDEBAR,
+            selected: S && T === _.U5.SIDEBAR,
+            hovered: f && T === _.U5.SIDEBAR,
             unread: j > 0,
             className: I.Io,
-            disabled: T === g.U5.LEGACY
+            disabled: T === _.U5.LEGACY
         }), (0, i.jsx)(x.A, {
             children: (0, i.jsx)(o.Qk9, {
                 selected: S || f,
@@ -117,14 +117,14 @@ function S() {
     let e = s.useRef(null),
         {
             notificationCenterVariant: t
-        } = (0, g.X8)({
+        } = (0, _.X8)({
             location: "NotificationsInboxButton"
         }),
         n = N(),
-        l = (0, _.HN)();
-    return t === g.U5.SIDEBAR ? (0, i.jsx)(b, {
+        l = (0, g.HN)();
+    return t === _.U5.SIDEBAR ? (0, i.jsx)(b, {
         onClick: l
-    }) : t === g.U5.POPOUT ? (0, i.jsx)(f.A, {
+    }) : t === _.U5.POPOUT ? (0, i.jsx)(f.A, {
         targetElementRef: e,
         popoutPosition: "right",
         popoutAlign: "bottom",
@@ -136,7 +136,7 @@ function S() {
             },
             popoutProps: s
         })
-    }) : t === g.U5.LEGACY ? (0, i.jsx)(u.C, {
+    }) : t === _.U5.LEGACY ? (0, i.jsx)(u.C, {
         spacing: 0,
         badgeState: {
             badgeForYou: n

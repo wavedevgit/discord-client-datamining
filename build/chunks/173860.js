@@ -101,7 +101,7 @@ class m extends s.Component {
         }
     }
 }
-class g extends s.PureComponent {
+class _ extends s.PureComponent {
     static contextType = u.CZY;
     static defaultProps = {
         className: h.kL,
@@ -200,4 +200,4 @@ class g extends s.PureComponent {
         })
     }
 }
-let p = g
+let p = _

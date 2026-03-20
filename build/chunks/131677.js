@@ -1,7 +1,7 @@
 /** chunk id: 131677 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => g
 });
 var i = n(311907),
     s = n(73153),
@@ -23,7 +23,7 @@ function m() {
     return A()
 }
 
-function g(e) {
+function _(e) {
     let {
         channelId: t
     } = e, n = r.A.getChannel(t);
@@ -38,11 +38,11 @@ class p extends i.Ay.Store {
         return u
     }
 }
-let _ = new p(s.h, {
+let g = new p(s.h, {
     CONNECTION_OPEN: m,
     OVERLAY_INITIALIZE: m,
-    MESSAGE_CREATE: g,
-    MESSAGE_ACK: g,
+    MESSAGE_CREATE: _,
+    MESSAGE_ACK: _,
     CHANNEL_SELECT: function(e) {
         let {
             channelId: t

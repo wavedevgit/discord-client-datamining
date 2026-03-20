@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(46054),
     A = n(102876),
     m = n(657331),
-    g = n(253932),
+    _ = n(253932),
     p = n(427157),
-    _ = n(287809),
+    g = n(287809),
     f = n(954571),
     x = n(661191),
     C = n(998218),
@@ -41,7 +41,7 @@ function G(e) {
         item: t
     } = e, n = t.message?.content;
     if (null == n) return (0, i.jsx)("div", {});
-    let s = _.default.getUser(t.message?.author?.id) ?? new p.A(t.message?.author),
+    let s = g.default.getUser(t.message?.author?.id) ?? new p.A(t.message?.author),
         l = h.A.parse(n);
     return (0, i.jsxs)("div", {
         className: L.PI,
@@ -139,17 +139,17 @@ let k = s.memo(function(e) {
                     acked: d
                 })
             }
-        }, [t, d, o]), g = null;
-        t.type === I.Uo.INCOMING_FRIEND_REQUESTS && null != t.other_user ? g = (0, i.jsx)(y.A, {
+        }, [t, d, o]), _ = null;
+        t.type === I.Uo.INCOMING_FRIEND_REQUESTS && null != t.other_user ? _ = (0, i.jsx)(y.A, {
             userId: t.other_user.id
-        }) : t.type === I.Uo.INCOMING_GAME_FRIEND_REQUESTS && null != t.other_user ? g = (0, i.jsx)(y.A, {
+        }) : t.type === I.Uo.INCOMING_GAME_FRIEND_REQUESTS && null != t.other_user ? _ = (0, i.jsx)(y.A, {
             userId: t.other_user.id,
             applicationId: t.applicationId
-        }) : (t.type === I.hW.FRIEND_REQUEST_ACCEPTED || t.type === I.hW.GAME_FRIEND_REQUEST_ACCEPTED) && null != t.other_user && (g = (0, i.jsx)(y.R, {
+        }) : (t.type === I.hW.FRIEND_REQUEST_ACCEPTED || t.type === I.hW.GAME_FRIEND_REQUEST_ACCEPTED) && null != t.other_user && (_ = (0, i.jsx)(y.R, {
             userId: t.other_user.id
         }));
         let p = null != t.local_id,
-            _ = (0, b.A)({
+            g = (0, b.A)({
                 item: t,
                 renderApplication: e => (0, i.jsx)(w, {
                     applicationId: e
@@ -171,7 +171,7 @@ let k = s.memo(function(e) {
                 focusProps: {
                     offset: 4
                 },
-                "aria-label": _,
+                "aria-label": g,
                 onClick: A,
                 children: [d ? null : (0, i.jsx)("div", {
                     className: L.gy
@@ -184,7 +184,7 @@ let k = s.memo(function(e) {
                     }), (0, i.jsxs)(a.Text, {
                         variant: "text-md/normal",
                         color: d ? "text-muted" : "text-default",
-                        children: ["string" != typeof _ ? _ : h.A.parse(_), M]
+                        children: ["string" != typeof g ? g : h.A.parse(g), M]
                     }), t.message?.content != null ? (0, i.jsx)(G, {
                         item: t
                     }) : null, null != t.callout ? (0, i.jsx)(U, {
@@ -193,7 +193,7 @@ let k = s.memo(function(e) {
                         variant: "text-xs/medium",
                         color: d ? "text-muted" : "text-default",
                         children: (0, N.jb)(x.default.extractTimestamp(t.id))
-                    }), g]
+                    }), _]
                 })]
             }), p ? null : (0, i.jsx)(j.e, {
                 item: t
@@ -203,7 +203,7 @@ let k = s.memo(function(e) {
     V = s.memo(function(e) {
         let {
             items: t
-        } = e, n = g.ns.useSetting();
+        } = e, n = _.ns.useSetting();
         return (0, S.q)(t), (0, i.jsx)(i.Fragment, {
             children: t.map(e => (0, i.jsx)(k, {
                 item: e,

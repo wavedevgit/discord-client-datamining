@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(475743),
     A = n(775602),
     m = n(58149),
-    g = n(587837),
+    _ = n(587837),
     p = n(473553),
-    _ = n(964404),
+    g = n(964404),
     f = n(709562),
     x = n(383831),
     C = n(128286),
@@ -56,7 +56,7 @@ function W(e) {
         renderExternalHeader: l
     } = e, W = (0, L.A)(), Y = (0, r.yK)([y.Ay], () => y.Ay.getEmbeddedActivitiesForLocation(n), [n]), z = (0, O.H)(n), q = (0, r.bG)([E.A], () => E.A.getChannel(z)), X = (0, j.IQ)(Y), J = (0, j.Rz)(X), Q = s.useCallback(() => {
         (0, v.gk)(k.Gd.PIP)
-    }, []), $ = s.useRef(null), Z = (0, r.bG)([y.Ay], () => y.Ay.getFocusedLayout()), ee = Z !== k.E8.NO_CHAT, [et, en] = s.useState(_.Ay.activityPanelHeight ?? t ?? null), ei = s.useCallback(e => {
+    }, []), $ = s.useRef(null), Z = (0, r.bG)([y.Ay], () => y.Ay.getFocusedLayout()), ee = Z !== k.E8.NO_CHAT, [et, en] = s.useState(g.Ay.activityPanelHeight ?? t ?? null), ei = s.useCallback(e => {
         u.Ay.updatedUnsyncedSettings({
             activityPanelHeight: e
         })
@@ -92,7 +92,7 @@ function W(e) {
                 null != t && void 0 !== t && e.set(t.userId, t)
             }), e
         }, [eA]),
-        eg = function(e, t, n) {
+        e_ = function(e, t, n) {
             let i = (0, h.A)(e),
                 l = e !== i,
                 [a, r] = s.useState(!1);
@@ -118,8 +118,8 @@ function W(e) {
         }(ee, et, t),
         ep = (0, P.G)();
     if (null == W) return null;
-    let e_ = [];
-    null != eu && (e_ = Array.from(eu.embeddedActivity.userIds).map(e => b.default.getUser(e)).filter(e => null != e && void 0 !== e));
+    let eg = [];
+    null != eu && (eg = Array.from(eu.embeddedActivity.userIds).map(e => b.default.getUser(e)).filter(e => null != e && void 0 !== e));
     let ef = e => {
         if (null == e || void 0 === e || e === D.mt) return null;
         let t = em.get(e.id),
@@ -140,7 +140,7 @@ function W(e) {
         children: e => (0, i.jsxs)("div", {
             className: a()(H.iE, K[Z], e),
             ref: $,
-            style: eg,
+            style: e_,
             children: [l?.(), (0, i.jsx)(p.A, {
                 applicationId: W.id
             }), (0, i.jsxs)("div", {
@@ -172,7 +172,7 @@ function W(e) {
                     className: H.qr,
                     children: [(0, i.jsx)(D.Ay, {
                         renderIcon: !1,
-                        users: e_,
+                        users: eg,
                         size: F,
                         max: 6,
                         renderUser: ef
@@ -210,7 +210,7 @@ function W(e) {
                         onClosePopout: () => {}
                     }) : null]
                 }) : null]
-            }), ee && null != t ? (0, i.jsx)(g.A, {
+            }), ee && null != t ? (0, i.jsx)(_.A, {
                 minHeight: 480,
                 maxHeight: t,
                 resizableNode: $,

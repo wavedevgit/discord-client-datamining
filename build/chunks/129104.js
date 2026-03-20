@@ -1,7 +1,7 @@
 /** chunk id: 129104 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    R: () => _
+    R: () => g
 });
 var i = n(627968),
     s = n(64700),
@@ -15,30 +15,30 @@ var i = n(627968),
     h = n(309010),
     A = n(559405),
     m = n(652215),
-    g = n(307731),
+    _ = n(307731),
     p = n(330584);
 
-function _(e) {
+function g(e) {
     let {
         customStatusEmoji: t,
         setCustomStatusEmoji: n,
-        selectedDefaultStatus: _,
+        selectedDefaultStatus: g,
         setIsEmojiPickerOpen: f,
         defaultStatusVariant: x
     } = e, C = s.useRef(null), E = (0, l.bG)([h.A, u.A], () => u.A.getChannel(h.A.getVoiceChannelId())), I = s.useCallback(() => null != t ? (0, i.jsx)(r.A, {
         emojiId: t.id,
         emojiName: t.name,
         animated: !!t.animated
-    }) : null != _ ? (0, i.jsx)(A.A, {
+    }) : null != g ? (0, i.jsx)(A.A, {
         className: p.Kk,
         userId: d.default.getId(),
         size: 20,
         hangStatusActivity: {
             type: m.$pd.HANG_STATUS,
-            state: _
+            state: g
         },
         fallbackVariant: x
-    }) : null, [t, x, _]);
+    }) : null, [t, x, g]);
     return (0, i.jsx)(a.YNO, {
         targetElementRef: C,
         onRequestOpen: () => f(!0),
@@ -66,7 +66,7 @@ function _(e) {
                         animated: !1
                     }), s && t()
                 },
-                pickerIntention: g.b_.STATUS
+                pickerIntention: _.b_.STATUS
             })
         },
         position: "left",
@@ -81,7 +81,7 @@ function _(e) {
                 ref: C,
                 active: s,
                 tabIndex: 0,
-                renderButtonContents: null == t && null == _ ? null : I
+                renderButtonContents: null == t && null == g ? null : I
             })
         }
     })

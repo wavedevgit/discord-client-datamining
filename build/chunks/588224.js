@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(429913),
     A = n(313961),
     m = n(532622),
-    g = n(550946),
+    _ = n(550946),
     p = n(140547),
-    _ = n(242919),
+    g = n(242919),
     f = n(7054),
     x = n(220995),
     C = n(582904),
@@ -50,7 +50,7 @@ let k = s.memo(e => {
     } = e, x = s.id, C = (0, r.bG)([v.default], () => v.default.getId() === x, [x]), [S, j, R] = (0, r.yK)([y.Ay], () => C ? [!y.Ay.isSupported() || y.Ay.isSelfMute() || y.Ay.isSelfMutedTemporarily(), y.Ay.isSelfDeaf(), !1] : [!y.Ay.isSupported() || y.Ay.isLocalMute(x), !1, y.Ay.isLocalVideoDisabled(x)], [C, x]), w = (0, r.bG)([L.A], () => L.A.isPrioritySpeaker(x)), k = (0, c.A)({
         userId: x,
         checkSoundSharing: !0
-    }), V = (0, g.A)(l.guild_id, x), B = (0, r.bG)([A.A], () => A.A.getGuildRingingUsers(l.id).has(x)), H = (0, r.bG)([d.Ay], () => d.Ay.getEmbeddedActivitiesForChannel(l.id).find(e => {
+    }), V = (0, _.A)(l.guild_id, x), B = (0, r.bG)([A.A], () => A.A.getGuildRingingUsers(l.id).has(x)), H = (0, r.bG)([d.Ay], () => d.Ay.getEmbeddedActivitiesForChannel(l.id).find(e => {
         let {
             userIds: t
         } = e;
@@ -60,7 +60,7 @@ let k = s.memo(e => {
     } = (0, p.$j)({
         guildId: l.guild_id,
         location: "VoiceUsers"
-    }), $ = (0, m.Ay)(l, !0, s), Z = (0, r.bG)([_.A], () => C ? _.A.getHangStatusActivity() : null, [C]), ee = (0, f.h)(x), et = (0, b.uy)(l.id, x), {
+    }), $ = (0, m.Ay)(l, !0, s), Z = (0, r.bG)([g.A], () => C ? g.A.getHangStatusActivity() : null, [C]), ee = (0, f.h)(x), et = (0, b.uy)(l.id, x), {
         enableVCStatusIcons: en,
         enableRequestToStream: ei
     } = I.m.useExperiment({
@@ -109,9 +109,9 @@ let V = [],
             collapsed: d,
             collapsedMax: u = 6,
             tabIndex: m,
-            location: g,
+            location: _,
             numAudience: p,
-            withGuildIcon: _ = !1,
+            withGuildIcon: g = !1,
             className: f,
             children: E,
             isThread: I = !1
@@ -169,7 +169,7 @@ let V = [],
                         previewIsOpen: y,
                         shouldShowHoverPopout: N === s.id,
                         tabIndex: m,
-                        location: g
+                        location: _
                     }, `voice-user-${s.id}-${o}`)
                 });
             return D && s.unshift((0, i.jsx)(x.p, {
@@ -185,7 +185,7 @@ let V = [],
         return null == Y && null == E ? null : (0, i.jsxs)(S.Wr, {
             className: a()(f, w.p_, {
                 [w.yZ]: d,
-                [w.lY]: _,
+                [w.lY]: g,
                 [w.fT]: I
             }),
             collapsed: d,

@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(58149),
     A = n(976860),
     m = n(734057),
-    g = n(510560),
+    _ = n(510560),
     p = n(572448),
-    _ = n(955454),
+    g = n(955454),
     f = n(502754),
     x = n(652215),
     C = n(985018),
@@ -103,7 +103,7 @@ let I = s.memo(function(e) {
                     children: (0, i.jsxs)(c.ButtonGroup, {
                         size: "sm",
                         className: E.GC,
-                        children: [(0, i.jsx)(g.A, {
+                        children: [(0, i.jsx)(_.A, {
                             channel: o
                         }), (0, i.jsx)(b, {
                             ...e
@@ -114,7 +114,7 @@ let I = s.memo(function(e) {
                     channel: t,
                     channelRecord: o,
                     gotoChannel: C
-                }) : "forum" === t.type ? (0, i.jsx)(_.A, {
+                }) : "forum" === t.type ? (0, i.jsx)(g.A, {
                     channel: t,
                     channelRecord: o,
                     deleteChannel: l

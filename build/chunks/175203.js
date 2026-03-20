@@ -16,9 +16,9 @@ var i = n(627968),
     h = n(397927),
     A = n(827343),
     m = n(820284),
-    g = n(793574),
+    _ = n(793574),
     p = n(587895),
-    _ = n(429913),
+    g = n(429913),
     f = n(520698),
     x = n(659974),
     C = n(164617),
@@ -72,7 +72,7 @@ let eh = [er.lp.ACTIVITY],
         var t, n, l;
         let r, o, d, {
                 participant: u,
-                popoutType: g,
+                popoutType: _,
                 onDoubleClick: C,
                 onContextMenu: I,
                 onClick: N,
@@ -89,7 +89,7 @@ let eh = [er.lp.ACTIVITY],
                 noBorder: es = !1,
                 noVideoRender: eA = !1,
                 focused: em = !1,
-                blocked: eg = !1,
+                blocked: e_ = !1,
                 ignored: ep = !1,
                 fit: ef = v.$.CONTAIN,
                 paused: ex = !1,
@@ -105,7 +105,7 @@ let eh = [er.lp.ACTIVITY],
             eR = (0, c.bG)([V.default], () => V.default.getId()),
             eO = u.type === er.lp.ACTIVITY ? null : u.user,
             eL = eO?.id ?? null,
-            [eM] = (0, _.A)(u.type === er.lp.ACTIVITY ? [u.applicationId] : []),
+            [eM] = (0, g.A)(u.type === er.lp.ACTIVITY ? [u.applicationId] : []),
             eD = (0, c.bG)([F.Ay], () => null != eL && F.Ay.isLocalVideoDisabled(eL, (0, f.A)(u.type)), [eL, u.type]),
             eG = (0, c.bG)([F.Ay], () => null != eL ? F.Ay.getVideoToggleState(eL, (0, f.A)(u.type)) : ea.bb8.NONE, [eL, u.type]),
             eU = eG === ea.bb8.AUTO_PROBING,
@@ -186,7 +186,7 @@ let eh = [er.lp.ACTIVITY],
                 e9 = (0, i.jsx)(en.A, {
                     participant: u,
                     selected: Q,
-                    popoutType: g,
+                    popoutType: _,
                     width: q,
                     fit: ef,
                     onVideoResize: X,
@@ -207,13 +207,13 @@ let eh = [er.lp.ACTIVITY],
                     channel: z,
                     inCall: J,
                     participant: u,
-                    popoutType: g,
+                    popoutType: _,
                     fit: ef,
                     onVideoResize: X,
                     paused: ex,
                     selected: Q,
                     width: q,
-                    blocked: eg,
+                    blocked: e_,
                     ignored: ep,
                     noVideoRender: eA || eU,
                     pulseSpeakingIndicator: eC
@@ -243,7 +243,7 @@ let eh = [er.lp.ACTIVITY],
                     fit: ef,
                     onVideoResize: X,
                     paused: ex,
-                    popoutType: g
+                    popoutType: _
                 })
         }
         let e2 = s.useRef(null),
@@ -322,7 +322,7 @@ let eh = [er.lp.ACTIVITY],
                                         color: "currentColor",
                                         className: eu.Dt
                                     })
-                                }) : null, eh.includes(u.type) ? null : (0, i.jsx)(e_, {
+                                }) : null, eh.includes(u.type) ? null : (0, i.jsx)(eg, {
                                     focused: em,
                                     width: q,
                                     inCall: J,
@@ -333,7 +333,7 @@ let eh = [er.lp.ACTIVITY],
                                     idle: eN,
                                     platform: eK,
                                     title: (0, $.A)(z, u),
-                                    blocked: eg,
+                                    blocked: e_,
                                     ignored: ep,
                                     localVideoDisabled: eD,
                                     videoToggleState: eG,
@@ -345,7 +345,7 @@ let eh = [er.lp.ACTIVITY],
                                     application: eq,
                                     secureFramesVerified: eQ,
                                     isHovered: ey,
-                                    popoutType: g,
+                                    popoutType: _,
                                     paused: ex,
                                     controlsBottom: eI,
                                     streamId: u.type === er.lp.STREAM ? u.streamId : null
@@ -408,7 +408,7 @@ function em(e) {
     }
 }
 
-function eg(e) {
+function e_(e) {
     let {
         icon: t,
         tooltipText: n,
@@ -443,9 +443,9 @@ function ep(e) {
         hideWhenInactive: l,
         idle: a
     } = e, r = s.useMemo(() => (0, I.A)(t, n), [t, n]), o = (0, c.bG)([L.A], () => L.A.getIsAlwaysOnTop(r)), d = s.useCallback(() => {
-        (0, N.X)(g.A.CALL_TILE_POPOUT, N.O.STAY_ON_TOP, !o), M.setAlwaysOnTop(r, !o)
+        (0, N.X)(_.A.CALL_TILE_POPOUT, N.O.STAY_ON_TOP, !o), M.setAlwaysOnTop(r, !o)
     }, [r, o]);
-    return J.isPlatformEmbedded && Q.Ay.supportsFeature(ea.BYE.POPOUT_WINDOWS) ? (0, i.jsx)(eg, {
+    return J.isPlatformEmbedded && Q.Ay.supportsFeature(ea.BYE.POPOUT_WINDOWS) ? (0, i.jsx)(e_, {
         onClick: d,
         tooltipText: o ? ed.intl.string(ed.t.YdyDM9) : ed.intl.string(ed.t.ZVGHwP),
         icon: o ? h.hl9 : h.qgw,
@@ -454,7 +454,7 @@ function ep(e) {
     }) : null
 }
 eA.displayName = "CallTile";
-let e_ = s.memo(e => {
+let eg = s.memo(e => {
     let {
         idle: t,
         title: n,
@@ -462,7 +462,7 @@ let e_ = s.memo(e => {
         focused: A,
         videoToggleState: m,
         blocked: p,
-        ignored: _,
+        ignored: g,
         participantId: x,
         participantType: E,
         participantUserId: T,
@@ -528,15 +528,15 @@ let e_ = s.memo(e => {
         participantId: x,
         hideWhenInactive: !1,
         idle: t
-    }, "stay-on-top")), ei.push((0, i.jsx)(eg, {
+    }, "stay-on-top")), ei.push((0, i.jsx)(e_, {
         onClick: () => {
-            (0, N.X)(g.A.CALL_TILE_POPOUT, N.O.POPOUT_RETURN), M.close((0, I.A)(v.id, x))
+            (0, N.X)(_.A.CALL_TILE_POPOUT, N.O.POPOUT_RETURN), M.close((0, I.A)(v.id, x))
         },
         tooltipText: ed.intl.string(ed.t["7Dwcnj"]),
         icon: o.WindowReturnIcon,
         hideWhenInactive: !1,
         idle: t
-    }, "close"))) : (ei.push((0, i.jsx)(eg, {
+    }, "close"))) : (ei.push((0, i.jsx)(e_, {
         onClick: e => {
             e.stopPropagation(), Z(!0), O(e, !0, er.GK.THREE_DOT)
         },
@@ -544,7 +544,7 @@ let e_ = s.memo(e => {
         icon: h.jNK,
         hideWhenInactive: !$,
         idle: t
-    }, "options")), ee && ei.push((0, i.jsx)(eg, {
+    }, "options")), ee && ei.push((0, i.jsx)(e_, {
         onClick: V,
         tooltipText: G ? ed.intl.string(ed.t.YqAjXy) : ed.intl.string(ed.t.w4m945),
         icon: G ? h._RO : h.HKD,
@@ -598,7 +598,7 @@ let e_ = s.memo(e => {
                         className: eu.Q6,
                         color: d.A.unsafe_rawColors.RED_400.css
                     })
-                }) : null, _ ? (0, i.jsx)("div", {
+                }) : null, g ? (0, i.jsx)("div", {
                     className: eu.PP,
                     children: (0, i.jsx)(h.G3N, {
                         size: "lg",
@@ -632,6 +632,6 @@ let e_ = s.memo(e => {
         })]
     })
 });
-e_.displayName = "CallTileOverlay";
+eg.displayName = "CallTileOverlay";
 let ef = v.$,
     ex = eA

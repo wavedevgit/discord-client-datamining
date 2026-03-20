@@ -15,10 +15,10 @@ var i = n(627968),
     h = n(493819),
     A = n(722884),
     m = n(924804),
-    g = n(985018),
+    _ = n(985018),
     p = n(229320);
 
-function _(e) {
+function g(e) {
     let {
         channel: t,
         imageUrl: n
@@ -40,7 +40,7 @@ function _(e) {
         }), (0, i.jsxs)("div", {
             className: p.n_,
             children: [(0, i.jsx)(a.m, {
-                text: g.intl.string(m.default.XJ4UpB),
+                text: _.intl.string(m.default.XJ4UpB),
                 children: (0, i.jsx)(r.DUT, {
                     className: p.HF,
                     onClick: l,
@@ -50,7 +50,7 @@ function _(e) {
                     })
                 })
             }), (0, i.jsx)(a.m, {
-                text: g.intl.string(m.default.XV4qT6),
+                text: _.intl.string(m.default.XV4qT6),
                 children: (0, i.jsx)(r.DUT, {
                     className: p.HF,
                     onClick: o,
@@ -83,7 +83,7 @@ function f(e) {
             }), (0, i.jsx)(r.Text, {
                 variant: "text-sm/medium",
                 color: "currentColor",
-                children: g.intl.string(m.default.NGcIOF)
+                children: _.intl.string(m.default.NGcIOF)
             })]
         })
     })
@@ -99,7 +99,7 @@ function x(e) {
         guildId: t.guild_id,
         location: "HangoutWindow"
     }), r = (0, l.bG)([o.A], () => o.A.getChannelStatus(t), [t]), c = s.useMemo(() => (0, u.TP)(r), [r]), h = s.useMemo(() => null == r ? null : (0, u.K7)(r), [r]);
-    return a ? null != r && c && null != h ? (0, i.jsx)(_, {
+    return a ? null != r && c && null != h ? (0, i.jsx)(g, {
         channel: t,
         imageUrl: h
     }) : n ? (0, i.jsx)(f, {

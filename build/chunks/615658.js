@@ -19,9 +19,9 @@ let A = () => {
         n = (0, c.n)(e => e.genre),
         A = (0, c.n)(e => e.songIndex),
         m = (0, c.n)(e => e.playRadio),
-        g = (0, c.n)(e => e.globalMute),
+        _ = (0, c.n)(e => e.globalMute),
         p = (0, c.n)(e => e.playNextSong),
-        _ = (0, c.n)(e => e.volumes),
+        g = (0, c.n)(e => e.volumes),
         f = s.useRef(null),
         x = s.useRef(null),
         C = s.useRef(null),
@@ -29,34 +29,34 @@ let A = () => {
         I = (0, l.bG)([d.A], () => d.A.assets);
     return (s.useEffect(() => {
         let e = f.current;
-        null != e && E?.src != null && (e.pause(), e.src = E.src, !g && m && t && e.play()?.catch(e => {
+        null != e && E?.src != null && (e.pause(), e.src = E.src, !_ && m && t && e.play()?.catch(e => {
             o.A.captureException(e)
         }))
-    }, [E?.src, g, m, t]), s.useEffect(() => {
+    }, [E?.src, _, m, t]), s.useEffect(() => {
         let e = x.current,
             n = C.current;
-        null != e && (g || !t ? e.pause() : e.play()?.catch(e => {
+        null != e && (_ || !t ? e.pause() : e.play()?.catch(e => {
             o.A.captureException(e)
-        })), null != n && (g || !t ? n.pause() : n.play()?.catch(e => {
+        })), null != n && (_ || !t ? n.pause() : n.play()?.catch(e => {
             o.A.captureException(e)
         }))
-    }, [g, t]), t) ? (0, i.jsxs)(i.Fragment, {
+    }, [_, t]), t) ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(a.A, {
             ref: f,
             onEnded: p,
-            volume: g ? 0 : _.radio,
+            volume: _ ? 0 : g.radio,
             children: (0, i.jsx)("source", {
                 src: E?.src
             })
         }), (0, i.jsx)(a.A, {
             ref: x,
-            volume: g ? 0 : _.environment,
+            volume: _ ? 0 : g.environment,
             children: (0, i.jsx)("source", {
                 src: I?.sounds?.[u.qi.ENVIRONMENT]
             })
         }), (0, i.jsx)(a.A, {
             ref: C,
-            volume: g ? 0 : _.campfire,
+            volume: _ ? 0 : g.campfire,
             children: (0, i.jsx)("source", {
                 src: I?.sounds?.[u.qi.CAMPFIRE]
             })

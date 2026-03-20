@@ -135,7 +135,7 @@ class m extends s.PureComponent {
         })
     }
 }
-class g extends s.PureComponent {
+class _ extends s.PureComponent {
     _timeouts = [];
     children = [];
     state = {
@@ -198,4 +198,4 @@ class g extends s.PureComponent {
         })
     }
 }
-let p = g
+let p = _

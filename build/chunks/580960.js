@@ -16,9 +16,9 @@ var s = n(397927),
     h = n(927578),
     A = n(882442),
     m = n(869968),
-    g = n(694080),
+    _ = n(694080),
     p = n(70730);
-class _ extends a.A {
+class g extends a.A {
     _premiumPaymentModalCloseResolve = null;
     _premiumPaymentModalCloseReject = null;
     _initialize() {
@@ -47,7 +47,7 @@ class _ extends a.A {
         let e = d.default.getCurrentUser();
         if (null != e && e.verified) {
             let t = (u.A.canFractionalPremiumUserUseOffer() || !(0, h.TW)(e)) && !u.A.isFetchingOffer();
-            await (0, g._D)("PremiumManager", t)
+            await (0, _._D)("PremiumManager", t)
         }
         l.h.dispatch({
             type: "PREMIUM_MARKETING_DATA_READY"
@@ -113,4 +113,4 @@ class _ extends a.A {
         })
     }
 }
-let f = new _
+let f = new g

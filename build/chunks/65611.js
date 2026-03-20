@@ -51,7 +51,7 @@ function A(e) {
         if (!c) return null;
         t = r.k9F
     }
-    return g({
+    return _({
         icon: t,
         isCurrentUserConnected: l
     })
@@ -72,13 +72,13 @@ function m(e) {
                 return [void 0, r.R2l]
         }
     }(t);
-    return g({
+    return _({
         icon: i,
         color: n
     })
 }
 
-function g(e) {
+function _(e) {
     let {
         icon: t,
         color: n,

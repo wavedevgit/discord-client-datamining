@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(442433),
     A = n(730134),
     m = n(964486),
-    g = n(80682),
+    _ = n(80682),
     p = n(58736),
-    _ = n(967144),
+    g = n(967144),
     f = n(342296),
     x = n(696451),
     C = n(576705),
@@ -73,10 +73,10 @@ let O = s.memo(function(e) {
         } = (0, c.cf)([E.A], () => ({
             isMobile: E.A.isMobileOnline(l.user.id),
             status: E.A.getStatus(l.user.id, N)
-        })), y = (0, c.bG)([x.Ay], () => x.Ay.getMember(N, l.user.id)), O = (0, _.gn)(t.guild_id, y?.userId, y?.colorStrings ?? null), L = s.useMemo(() => ({
+        })), y = (0, c.bG)([x.Ay], () => x.Ay.getMember(N, l.user.id)), O = (0, g.gn)(t.guild_id, y?.userId, y?.colorStrings ?? null), L = s.useMemo(() => ({
             [N]: [l.user.id]
         }), [N, l.user.id]);
-        (0, g.Eq)(L, "RequestToSpeakSidebar");
+        (0, _.Eq)(L, "RequestToSpeakSidebar");
         let M = l.rtsState === S.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK,
             D = e => {
                 (0, h.L3)(e, async () => {

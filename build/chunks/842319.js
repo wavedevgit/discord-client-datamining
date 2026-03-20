@@ -268,7 +268,7 @@ function w() {
                 className: G.sA,
                 children: (0, l.jsx)(h.A, {})
             })]
-        }), null != a && 0 !== O && (0, l.jsx)(u.A, {
+        }), null != a && 0 !== O && a.planId !== M && (0, l.jsx)(u.A, {
             className: G.et,
             children: (0, l.jsx)(c.Text, {
                 variant: "text-xs/medium",

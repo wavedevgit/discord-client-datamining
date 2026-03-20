@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(3648),
     A = n(178213),
     m = n(332772),
-    g = n(872472),
+    _ = n(872472),
     p = n(721932),
-    _ = n(35092),
+    g = n(35092),
     f = n(183555),
     x = n(535089),
     C = n(946356),
@@ -65,7 +65,7 @@ function v(e) {
                 i = !1;
             for (let s = 0; s < t.length && e.length < D; s++) {
                 let l = t[s];
-                e.push(l), (0, p.$)(l) && (0, d.bF)(l.sku) ? n = !0 : (0, g.L)(l) && (i = !0)
+                e.push(l), (0, p.$)(l) && (0, d.bF)(l.sku) ? n = !0 : (0, _.L)(l) && (i = !0)
             }
             return {
                 visibleItems: e,
@@ -83,7 +83,7 @@ function v(e) {
             for (let i = 0; i < U.length; i++) {
                 let l = U[i],
                     a = i === D - 1 && t.length > D;
-                (0, g.L)(l) ? (s.add(l.skuProductLine), e.push((0, E.M)(l, {
+                (0, _.L)(l) ? (s.add(l.skuProductLine), e.push((0, E.M)(l, {
                     index: i,
                     moreCount: a ? t.length - D + 1 : void 0,
                     profileOwner: n,
@@ -114,7 +114,7 @@ function v(e) {
             onAction: G,
             productLines: V
         }),
-        H = (0, s.useMemo)(() => M ? U.map((e, s) => null == e.sku ? null : (0, i.jsx)(_.A, {
+        H = (0, s.useMemo)(() => M ? U.map((e, s) => null == e.sku ? null : (0, i.jsx)(g.A, {
             sku: e.sku,
             index: s,
             wishlistOwner: n,
@@ -127,7 +127,7 @@ function v(e) {
         W = F !== l.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL;
     if (0 === w.length) return null;
     let Y = w;
-    return null != k && ((0, g.L)(k) ? Y = (0, E.z)(k, {
+    return null != k && ((0, _.L)(k) ? Y = (0, E.z)(k, {
         profileOwner: n,
         analyticsLocations: O,
         wishlistId: y,

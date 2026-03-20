@@ -35,9 +35,9 @@ function A(e) {
         updateThreadSettings: l,
         threadSettings: d,
         textAreaState: A
-    } = e, [m, g] = s.useState(!1), [p, _] = s.useState(!1), f = (0, o.b)(), x = s.useCallback(async () => {
+    } = e, [m, _] = s.useState(!1), [p, g] = s.useState(!1), f = (0, o.b)(), x = s.useCallback(async () => {
         if (f) {
-            g(!0);
+            _(!0);
             try {
                 let e = null;
                 if (null != n) {
@@ -51,16 +51,16 @@ function A(e) {
                     })
                 }
             } finally {
-                g(!1)
+                _(!1)
             }
         }
     }, [t.id, n, l, f, A.textValue]);
     s.useEffect(() => {
-        _(!1), g(!1), t.id === d.parentChannelId && n !== d.parentMessageId && l({
+        g(!1), _(!1), t.id === d.parentChannelId && n !== d.parentMessageId && l({
             name: ""
         })
     }, [n, l, t.id, d.parentChannelId, d.parentMessageId]), s.useEffect(() => {
-        null != d.name && "" !== d.name.trim() || p || f && null != n && (_(!0), x())
+        null != d.name && "" !== d.name.trim() || p || f && null != n && (g(!0), x())
     }, [t.id, n, l, d.name, p, f, x]);
     let C = s.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];

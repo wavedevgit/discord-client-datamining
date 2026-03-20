@@ -22,10 +22,10 @@ function u(e) {
         onAnimationRest: h
     } = e, A = {}, m = {};
     A.transform = "translate3d(10px, 10px, 0) scale3d(3, 3, 1)", m.transform = "translate3d(0, 0, 0) scale3d(1, 1, 1)";
-    let g = (0, o.rdh)(r.A.unsafe_rawColors.BRAND_500).hex(),
+    let _ = (0, o.rdh)(r.A.unsafe_rawColors.BRAND_500).hex(),
         p = (0, o.rdh)(r.A.unsafe_rawColors.PRIMARY_630).hex();
-    s && null == t.icon && (A.backgroundColor = g, m.backgroundColor = p);
-    let _ = (0, o.pnh)(n, {
+    s && null == t.icon && (A.backgroundColor = _, m.backgroundColor = p);
+    let g = (0, o.pnh)(n, {
         from: A,
         enter: m,
         leave: A,
@@ -36,7 +36,7 @@ function u(e) {
         onRest: h
     });
     return (0, i.jsx)(i.Fragment, {
-        children: _((e, n, s) => n && (0, i.jsx)("div", {
+        children: g((e, n, s) => n && (0, i.jsx)("div", {
             className: d.qc,
             children: (0, i.jsx)("div", {
                 className: l()(d.MJ, d.L0),

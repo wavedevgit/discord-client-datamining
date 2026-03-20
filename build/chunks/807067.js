@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(688810),
     A = n(735991),
     m = n(786115),
-    g = n(975412),
+    _ = n(975412),
     p = n(392054),
-    _ = n(354138),
+    g = n(354138),
     f = n(111042),
     x = n(767599),
     C = n(267102),
@@ -43,7 +43,7 @@ function L(e) {
             fetchState: p,
             voiceBannerCollection: C
         } = (t = (0, c.bG)([I.default], () => I.default.onlyShowPreviewAppCollections) ? a.W.PREVIEW : a.W.ACTIVE, s.useEffect(() => {
-            (0, _.An)({
+            (0, g.An)({
                 surface: R,
                 activeState: t
             })
@@ -80,7 +80,7 @@ function L(e) {
         className: j.V8,
         innerRef: b,
         onClick: () => {
-            h(), (0, g.A)({
+            h(), (0, _.A)({
                 context: {
                     type: "channel",
                     channel: l
@@ -112,15 +112,15 @@ let M = s.forwardRef(function(e, t) {
         onClick: A,
         className: m
     } = e, {
-        id: _,
+        id: g,
         guild_id: f
     } = l;
     s.useEffect(() => {
         N.default.track(v.HAw.ACTIVITIES_CENTER_CONTROL_TRAY_BUTTON_HOVERED, {
-            channel_id: _,
+            channel_id: g,
             guild_id: f
         })
-    }, [_, f]), s.useEffect(() => {
+    }, [g, f]), s.useEffect(() => {
         a || r()
     }, [r, a]);
     let x = (0, C.Us)(),
@@ -137,7 +137,7 @@ let M = s.forwardRef(function(e, t) {
         return () => clearTimeout(e)
     }, []);
     let G = s.useCallback(() => {
-            (0, g.A)({
+            (0, _.A)({
                 context: null != l ? {
                     type: "channel",
                     channel: l

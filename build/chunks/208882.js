@@ -1,14 +1,14 @@
 /** chunk id: 208882 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    BA: () => _,
+    BA: () => g,
     FA: () => f,
     LH: () => C,
     Se: () => p,
     WD: () => m,
     YS: () => A,
     Yc: () => h,
-    ZM: () => g,
+    ZM: () => _,
     uU: () => x
 });
 var i = n(111956),
@@ -81,7 +81,7 @@ async function m(e, t, n) {
     })
 }
 
-function g(e, t) {
+function _(e, t) {
     o.A.delete({
         url: u.Rsh.DIRECTORY_CHANNEL_ENTRY(e, t),
         trackedActionData: {
@@ -129,7 +129,7 @@ let p = s()(async (e, t) => {
             })
         }
     }, 200),
-    _ = e => {
+    g = e => {
         r.h.dispatch({
             type: "GUILD_DIRECTORY_SEARCH_CLEAR",
             channelId: e

@@ -22,9 +22,9 @@ var i = n(64700),
     h = n(563312),
     A = n(974930),
     m = n(988794),
-    g = n(652215);
+    _ = n(652215);
 let p = [],
-    _ = 15 * o.A.Millis.MINUTE;
+    g = 15 * o.A.Millis.MINUTE;
 
 function f(e, t) {
     return (0, s.yK)([a.A, c.Ay, r.A, l.A], () => {
@@ -33,7 +33,7 @@ function f(e, t) {
             let t = e.channel_id;
             if (null == t) return !0;
             let n = l.A.getChannel(t);
-            return r.A.can(g.xBc.VIEW_CHANNEL, n)
+            return r.A.can(_.xBc.VIEW_CHANNEL, n)
         })
     }, [t, e])
 }
@@ -41,7 +41,7 @@ function f(e, t) {
 function x(e) {
     return (0, s.bG)([c.Ay, l.A, r.A], () => {
         let t = l.A.getChannel(e);
-        if (!r.A.can(g.xBc.VIEW_CHANNEL, t) || null == t?.guild_id) return null;
+        if (!r.A.can(_.xBc.VIEW_CHANNEL, t) || null == t?.guild_id) return null;
         let n = c.Ay.getGuildScheduledEventsByIndex(c.ej.CHANNEL_EVENT_ACTIVE(e));
         return n.length > 0 ? n[0] : null
     }, [e])
@@ -63,7 +63,7 @@ function E(e) {
             if (e.entity_type === m.Ps.NONE || e.status !== m.XG.SCHEDULED) return !1;
             if (null == e.channel_id) return !0;
             let t = l.A.getChannel(e.channel_id);
-            return r.A.can(g.xBc.VIEW_CHANNEL, t)
+            return r.A.can(_.xBc.VIEW_CHANNEL, t)
         }), [e]),
         n = (0, s.cf)([u.A], () => u.A.getAllEventDismissals()),
         i = (0, s.cf)([u.A], () => u.A.getAllUpcomingNoticeSeenTimes()),
@@ -75,7 +75,7 @@ function E(e) {
             }
         }, {}), [t]),
         h = (0, s.bG)([a.A], () => a.A.getGuild(e)),
-        p = null != h && !h.features.has(g.GuildFeatures.COMMUNITY) && h.features.has(g.GuildFeatures.INTERNAL_EMPLOYEE_ONLY);
+        p = null != h && !h.features.has(_.GuildFeatures.COMMUNITY) && h.features.has(_.GuildFeatures.INTERNAL_EMPLOYEE_ONLY);
     if (null != t && null != o && p)
         for (let e = 0; e < t.length; e++) {
             let s = t[e],
@@ -95,7 +95,7 @@ function I(e) {
         if (e.entity_type === m.Ps.NONE || !(0, c.Fd)(e)) return !1;
         if (null == e.channel_id) return !0;
         let t = l.A.getChannel(e.channel_id);
-        return r.A.can(g.xBc.VIEW_CHANNEL, t)
+        return r.A.can(_.xBc.VIEW_CHANNEL, t)
     }), [e])
 }
 
@@ -115,7 +115,7 @@ function S(e) {
     i.useEffect(() => {
         let e = setInterval(() => {
             n(Date.now())
-        }, _);
+        }, g);
         return () => clearInterval(e)
     }, []);
     let l = (0, s.bG)([c.Ay], () => null == e ? [] : c.Ay.getGuildScheduledEventsByIndex(c.ej.CHANNEL_EVENT_UPCOMING(e)), [e, t]);

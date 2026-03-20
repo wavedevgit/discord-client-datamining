@@ -20,10 +20,10 @@ function u(e, t, n) {
         deleteChannel: h,
         toggle: A,
         getNumUnreadChannels: m
-    } = t, g = null;
+    } = t, _ = null;
     return l().flatMap(e, e => {
-        let t = e.sortOrder !== g;
-        g = e.sortOrder;
+        let t = e.sortOrder !== _;
+        _ = e.sortOrder;
         let l = [];
         return t && (e.hasLoadedAnything && e.sortOrder === o.xB.ReallyOldChannel ? l.push((0, i.jsx)(a.A, {
             className: d.y,

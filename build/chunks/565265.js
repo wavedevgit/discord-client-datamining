@@ -1,7 +1,7 @@
 /** chunk id: 565265 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => g
 });
 var i = n(627968),
     s = n(64700),
@@ -16,16 +16,16 @@ var i = n(627968),
     A = n(734911),
     m = n(830412);
 
-function g(e) {
+function _(e) {
     return e.matches("a") || "highlight" === e.className || e.className.includes("mention")
 }
 class p extends s.Component {
     handleOpenTopic = e => {
         let t = e.target;
         if ((0, r.vq)(t)) {
-            if (g(t)) return;
+            if (_(t)) return;
             let e = t.parentNode;
-            if ((0, r.vq)(e) && g(e)) return
+            if ((0, r.vq)(e) && _(e)) return
         }(0, o.mMO)(async () => {
             let {
                 default: e
@@ -75,4 +75,4 @@ class p extends s.Component {
         }) : null
     }
 }
-let _ = p
+let g = p

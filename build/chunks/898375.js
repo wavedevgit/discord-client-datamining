@@ -1,7 +1,7 @@
 /** chunk id: 898375 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -16,13 +16,13 @@ var i = n(627968),
     A = n(985018),
     m = n(724137);
 
-function g(e) {
+function _(e) {
     let {
         quest: t,
         questDescription: n,
-        completedRatio: g,
+        completedRatio: _,
         minimizeFrame: p,
-        onClose: _
+        onClose: g
     } = e, f = (0, o.Ut)(), x = s.useCallback(() => {
         f({
             questId: t.id,
@@ -32,8 +32,8 @@ function g(e) {
         }), (0, h.navigateToQuestHome)({
             fromContent: r.uF.RUNNING_ACTIVITY,
             questId: t.id
-        }), p(), _()
-    }, [t.id, f, p, _]);
+        }), p(), g()
+    }, [t.id, f, p, g]);
     return (0, i.jsxs)("div", {
         className: m.kL,
         children: [(0, i.jsxs)("div", {
@@ -47,7 +47,7 @@ function g(e) {
             }), (0, i.jsx)(a.DUT, {
                 className: m.b,
                 "aria-label": A.intl.string(A.t.cpT0Cq),
-                onClick: _,
+                onClick: g,
                 children: (0, i.jsx)(a.PGe, {
                     size: "sm",
                     color: "currentColor"
@@ -58,7 +58,7 @@ function g(e) {
             children: [(0, i.jsx)("div", {
                 children: (0, i.jsx)(d.A, {
                     size: 48,
-                    percentComplete: g,
+                    percentComplete: _,
                     children: (0, i.jsx)(u.A, {
                         fullWidth: !0,
                         quest: t,

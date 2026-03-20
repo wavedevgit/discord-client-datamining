@@ -5,7 +5,7 @@ n.d(t, {
     AI: () => h,
     Xc: () => f,
     ae: () => C,
-    g8: () => _,
+    g8: () => g,
     gF: () => N,
     gS: () => E,
     vz: () => x
@@ -33,17 +33,17 @@ function m(e) {
             return -1
     }
 }
-let g = new Map([
+let _ = new Map([
     [s.KP.FRIENDS_AND_ALL_GUILDS, A.ACTIVITY_STATUS_OFF],
     [s.KP.FRIENDS_AND_SMALL_GUILDS, A.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS],
     [s.KP.FRIENDS_ONLY, A.ACTIVITY_STATUS_ON]
 ]);
 
 function p(e) {
-    return g.get(e) ?? A.ACTIVITY_STATUS_OFF
+    return _.get(e) ?? A.ACTIVITY_STATUS_OFF
 }
 
-function _(e, t) {
+function g(e, t) {
     if (e === t) return null;
     let n = m(e),
         i = m(t);
@@ -109,7 +109,7 @@ function E(e, t) {
     let n = p(t),
         i = l._Z.getSetting();
     if (i === n || m(p(e)) > m(n) != m(i) > m(n)) return null;
-    let a = _(i, n);
+    let a = g(i, n);
     if (null == a) return null;
     let r = function(e) {
         switch (e) {

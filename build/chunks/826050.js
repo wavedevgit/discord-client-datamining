@@ -18,7 +18,7 @@ let m = {
     friction: 15,
     tension: 100
 };
-class g extends s.PureComponent {
+class _ extends s.PureComponent {
     state = {
         shown: !1,
         translateY: new r.A.Value(0)
@@ -136,4 +136,4 @@ class g extends s.PureComponent {
         }
     }
 }
-let p = g
+let p = _

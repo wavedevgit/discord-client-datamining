@@ -1,7 +1,7 @@
 /** chunk id: 530804 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    $n: () => _,
+    $n: () => g,
     uy: () => x,
     vp: () => f
 }), n(321073);
@@ -17,22 +17,22 @@ var i = n(64700),
     h = n(584569),
     A = n(383501),
     m = n(287809),
-    g = n(977997),
+    _ = n(977997),
     p = n(403362);
 
-function _(e, t) {
+function g(e, t) {
     let n = (0, l.bG)([h.A, A.A], () => e === A.A.getChannelId() ? h.A.getDesyncedVoiceStates() : null),
         a = (0, l.yK)([r.A], () => null == e ? [] : [...r.A.getGuildRingingUsers(e)]),
         c = (0, l.yK)([m.default], () => a.map(e => m.default.getUser(e)).filter(p.Vq)),
-        g = (0, l.bG)([d.A], () => d.A.getBasicChannel(e)),
-        _ = i.useMemo(() => c.map(e => ({
+        _ = (0, l.bG)([d.A], () => d.A.getBasicChannel(e)),
+        g = i.useMemo(() => c.map(e => ({
             voiceState: new o.A(e.id),
             user: e,
-            member: g?.guild_id != null ? u.Ay.getMember(g?.guild_id, e.id) : null,
+            member: _?.guild_id != null ? u.Ay.getMember(_?.guild_id, e.id) : null,
             nick: e.globalName,
             comparator: e.globalName,
             _isPlaceholder: !1
-        })), [c, g?.guild_id]);
+        })), [c, _?.guild_id]);
     return i.useMemo(() => (function(e, t, n) {
         if ((null == e || 0 === e.length) && 0 === n.length) return t;
         let i = [],
@@ -53,7 +53,7 @@ function _(e, t) {
                 return t
             }), 0, e)
         }), i
-    })(n, t, _), [n, t, _])
+    })(n, t, g), [n, t, g])
 }
 
 function f(e, t) {
@@ -73,8 +73,8 @@ function x(e, t) {
         a = i.useRef(null),
         [r, o] = i.useState(!1),
         [d, u] = i.useState(!1),
-        h = (0, l.bG)([A.A, g.A], () => null != t && null != e && A.A.getChannelId() === e && null != g.A.isInChannel(e, t) && A.A.isUserConnected(t)),
-        m = (0, l.bG)([A.A, g.A], () => null != t && null != e && A.A.getChannelId() === e && null != g.A.isInChannel(e, t) && !A.A.isUserConnected(t));
+        h = (0, l.bG)([A.A, _.A], () => null != t && null != e && A.A.getChannelId() === e && null != _.A.isInChannel(e, t) && A.A.isUserConnected(t)),
+        m = (0, l.bG)([A.A, _.A], () => null != t && null != e && A.A.getChannelId() === e && null != _.A.isInChannel(e, t) && !A.A.isUserConnected(t));
     return i.useEffect(() => {
         h && u(!0)
     }, [h]), i.useEffect(() => {

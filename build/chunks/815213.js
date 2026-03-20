@@ -20,7 +20,7 @@ function m(e) {
     return null != t && null != t.getGuildId() && !(t.isThread() ? c.A.isMuted(t.id) : h.Ay.isChannelMuted(t.getGuildId(), t.id)) && (0, o.Y)(t)
 }
 
-function g(e) {
+function _(e) {
     let t = d.A.getChannel(e);
     if (null == t) return !1;
     let n = t.getGuildId();
@@ -44,7 +44,7 @@ let p = s.forwardRef(function(e, t) {
         ref: t,
         ...c,
         isUnread: m,
-        isMentioned: g,
+        isMentioned: _,
         items: d,
         animate: u
     })

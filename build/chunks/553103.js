@@ -18,15 +18,15 @@ var i = n(512750),
 function m(e, t) {
     let n = (0, s.bG)([l.A], () => l.A.getGuild(e)?.features),
         m = (0, s.bG)([a.A], () => a.A.getStateForGuild(e)),
-        g = m?.allPowerups[i.FB],
-        p = (0, c.Ay)(e, g),
-        _ = (0, r.j$)(e, t),
-        f = g?.storeRemovalDate,
+        _ = m?.allPowerups[i.FB],
+        p = (0, c.Ay)(e, _),
+        g = (0, r.j$)(e, t),
+        f = _?.storeRemovalDate,
         x = n?.has(u.GuildFeatures.PARTNERED) ?? !1,
-        C = _ && null != f && !x && p.type === d.b_.POWERUP_ACTIVATED,
+        C = g && null != f && !x && p.type === d.b_.POWERUP_ACTIVATED,
         E = C ? {
             title: A.intl.formatToPlainString(h.default.mgoPkU, {
-                perkName: g?.title
+                perkName: _?.title
             }),
             description: A.intl.formatToPlainString(h.default.UT9pkI, {
                 dateString: (0, o.A)(f)

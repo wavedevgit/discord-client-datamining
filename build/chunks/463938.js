@@ -15,10 +15,10 @@ var i = n(627968),
     h = n(147925),
     A = n(652215),
     m = n(746080),
-    g = n(985018),
+    _ = n(985018),
     p = n(997290);
 
-function _(e, t) {
+function g(e, t) {
     return (0, i.jsx)(o.Text, {
         variant: "text-xs/bold",
         color: "text-default",
@@ -52,15 +52,15 @@ let f = s.memo(function(e) {
                 className: p.A1,
                 children: [(0, i.jsx)(o.Heading, {
                     variant: "heading-sm/bold",
-                    children: g.intl.string(g.t.SnrR3x)
+                    children: _.intl.string(_.t.SnrR3x)
                 }), (0, i.jsxs)("div", {
                     className: p.Ib,
                     children: [(0, i.jsx)(o.Text, {
                         variant: "text-xs/medium",
                         color: "text-muted",
                         className: p.Cv,
-                        children: g.intl.format(g.t.eqZ1lW, {
-                            numberHook: _,
+                        children: _.intl.format(_.t.eqZ1lW, {
+                            numberHook: g,
                             total: C.toString(),
                             completed: x.toString()
                         })

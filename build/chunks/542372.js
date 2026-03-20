@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(574172),
     A = n(423562),
     m = n(309010),
-    g = n(954571),
+    _ = n(954571),
     p = n(203982),
-    _ = n(723702),
+    g = n(723702),
     f = n(475815),
     x = n(652215);
 
@@ -92,11 +92,11 @@ function C(e) {
             channel: e,
             maybeLeaveFullScreen: t
         } = w.current;
-        return g.default.track(x.HAw.VIDEO_LAYOUT_TOGGLED, {
+        return _.default.track(x.HAw.VIDEO_LAYOUT_TOGGLED, {
             video_layout: b ? "popout" : T,
             ...(0, o.QS)(e.id)
         }), () => {
-            b && (0, _.isMac)() || t(T)
+            b && (0, g.isMac)() || t(T)
         }
     }, [T, b]), s.useEffect(() => {
         null != O && S.current === x._Of.VIDEO && v === x._Of.VOICE && (0, f.sP)(O, R)

@@ -16,9 +16,9 @@ var s = n(503698),
     h = n(714114),
     A = n(729551),
     m = n(58149),
-    g = n(571694),
+    _ = n(571694),
     p = n(47167),
-    _ = n(713654),
+    g = n(713654),
     f = n(915089),
     x = n(263063),
     C = n(616356),
@@ -123,7 +123,7 @@ function D(e) {
     let {
         channel: t,
         gotoChannel: n
-    } = e, s = (0, r.bG)([S.default], () => t.isDM() ? S.default.getUser(t.getRecipientId()) : null), l = null == s ? (0, g.Y)(t) : s.getAvatarURL(void 0, 40);
+    } = e, s = (0, r.bG)([S.default], () => t.isDM() ? S.default.getUser(t.getRecipientId()) : null), l = null == s ? (0, _.Y)(t) : s.getAvatarURL(void 0, 40);
     return (0, i.jsx)(d.DUT, {
         onClick: n,
         tabIndex: -1,
@@ -157,7 +157,7 @@ function U(e) {
         channel: t,
         gotoChannel: n,
         mentionCount: s
-    } = e, a = (0, r.bG)([I.A], () => I.A.getGuild(t.guild_id)), c = (0, r.bG)([E.A], () => E.A.getChannel(t.parent_id)), u = (0, r.bG)([b.Ay], () => b.Ay.getIsMentionLowImportance(t.id)), h = (0, _.gU)(t, a), A = (0, p.Ay)(t, !1), m = null == c ? a?.name : `${a?.name} › ${c.name}`, g = t.isMultiUserDM() ? y.intl.formatToPlainString(y.t.CxSA5N, {
+    } = e, a = (0, r.bG)([I.A], () => I.A.getGuild(t.guild_id)), c = (0, r.bG)([E.A], () => E.A.getChannel(t.parent_id)), u = (0, r.bG)([b.Ay], () => b.Ay.getIsMentionLowImportance(t.id)), h = (0, g.gU)(t, a), A = (0, p.Ay)(t, !1), m = null == c ? a?.name : `${a?.name} › ${c.name}`, _ = t.isMultiUserDM() ? y.intl.formatToPlainString(y.t.CxSA5N, {
         members: t.recipients.length + 1
     }) : t.isPrivate() ? (0, i.jsx)(P, {
         channel: t
@@ -195,7 +195,7 @@ function U(e) {
             color: "text-default",
             variant: "text-xs/normal",
             className: j.PL,
-            children: g
+            children: _
         })]
     })
 }

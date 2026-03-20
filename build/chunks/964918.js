@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(378570),
     A = n(863005),
     m = n(707539),
-    g = n(747926),
+    _ = n(747926),
     p = n(576705),
-    _ = n(222823),
+    g = n(222823),
     f = n(287809),
     x = n(486020),
     C = n(661191),
@@ -30,11 +30,11 @@ var i = n(627968),
 function T(e) {
     let {
         channel: t
-    } = e, l = (0, c.yK)([A.A, _.Ay, p.A], () => {
+    } = e, l = (0, c.yK)([A.A, g.Ay, p.A], () => {
         let e = A.A.getActiveJoinedRelevantThreadsForParent(t.guild_id, t.id);
         return o()(A.A.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(o().values(A.A.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && p.A.can(E.xBc.VIEW_CHANNEL, t)).sort((e, t) => {
-            let n = _.Ay.lastMessageId(e.id),
-                i = _.Ay.lastMessageId(t.id);
+            let n = g.Ay.lastMessageId(e.id),
+                i = g.Ay.lastMessageId(t.id);
             return C.default.compare(n, i)
         }).reverse().value()
     }), r = t.isForumLikeChannel() ? 5 : 3, u = t.isForumLikeChannel() ? d.bSJ : d.ysw;
@@ -90,7 +90,7 @@ function v(e) {
     return (0, i.jsxs)(d.DUT, {
         className: b.nM,
         onClick: e => {
-            (0, g.JA)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, I.H9.POPOUT)
+            (0, _.JA)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, I.H9.POPOUT)
         },
         children: [(0, i.jsx)("div", {
             className: b.R4,

@@ -43,7 +43,13 @@ let _ = a.memo(function(e) {
         contentType: l,
         data: _,
         markAsDismissed: m
-    } = t;
+    } = t, g = {
+        position: "bottom",
+        align: "center",
+        caretConfig: {
+            align: "center"
+        }
+    };
     return (0, i.jsx)(i.Fragment, {
         children: (() => {
             switch (l) {
@@ -52,7 +58,8 @@ let _ = a.memo(function(e) {
                         renderPopout: e => (0, i.jsx)(u.UB, {
                             guildId: n.id,
                             markAsDismissed: m,
-                            channelRowRef: e
+                            channelRowRef: e,
+                            ...g
                         }),
                         renderGuildHeaderDropdownButton: a
                     });
@@ -61,7 +68,18 @@ let _ = a.memo(function(e) {
                         renderPopout: e => (0, i.jsx)(u.YX, {
                             guildId: n.id,
                             markAsDismissed: m,
-                            channelRowRef: e
+                            channelRowRef: e,
+                            ...g
+                        }),
+                        renderGuildHeaderDropdownButton: a
+                    });
+                case r.M.GAME_SERVER_PRICING_CHANGE_COACHMARK:
+                    return (0, i.jsx)(h, {
+                        renderPopout: e => (0, i.jsx)(u.Ns, {
+                            guildId: n.id,
+                            markAsDismissed: m,
+                            channelRowRef: e,
+                            ...g
                         }),
                         renderGuildHeaderDropdownButton: a
                     });
@@ -83,7 +101,8 @@ let _ = a.memo(function(e) {
                             guildId: n.id,
                             powerup: e,
                             markAsDismissed: m,
-                            channelRowRef: t
+                            channelRowRef: t,
+                            ...g
                         }),
                         renderGuildHeaderDropdownButton: a
                     })
@@ -97,7 +116,8 @@ let _ = a.memo(function(e) {
                             guildId: n.id,
                             featuredExpiringPowerup: e,
                             markAsDismissed: m,
-                            channelRowRef: t
+                            channelRowRef: t,
+                            ...g
                         }),
                         renderGuildHeaderDropdownButton: a
                     })

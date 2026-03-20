@@ -1,7 +1,7 @@
 /** chunk id: 484191 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => g
 });
 var i = n(627968),
     s = n(64700),
@@ -15,13 +15,13 @@ var i = n(627968),
     h = n(175203),
     A = n(426660),
     m = n(806931),
-    g = n(985018),
+    _ = n(985018),
     p = n(426897);
-let _ = function(e) {
+let g = function(e) {
     let {
         participants: t,
         channel: n,
-        hasConnectPermission: _
+        hasConnectPermission: g
     } = e, f = t.filter(m.Xw), x = (0, d.H)(n.guild_id), C = s.useCallback(() => {
         x ? (0, c.Ze)(n.guild_id, () => a.default.selectVoiceChannel(n.id)) : a.default.selectVoiceChannel(n.id)
     }, [n.id, n.guild_id, x]), E = 4 === f.length ? 2 : 3, I = (0, o.Ay)(n);
@@ -50,12 +50,12 @@ let _ = function(e) {
             children: (0, i.jsx)(l.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",
-                children: 0 === f.length ? g.intl.string(g.t.zSqdrS) : 1 === f.length ? g.intl.formatToPlainString(g.t.BUyJIG, {
+                children: 0 === f.length ? _.intl.string(_.t.zSqdrS) : 1 === f.length ? _.intl.formatToPlainString(_.t.BUyJIG, {
                     a: (0, u.A)(n, f[0])
-                }) : 2 === f.length ? g.intl.formatToPlainString(g.t["dcyZf/"], {
+                }) : 2 === f.length ? _.intl.formatToPlainString(_.t["dcyZf/"], {
                     a: (0, u.A)(n, f[0]),
                     b: (0, u.A)(n, f[1])
-                }) : f.length > 2 ? g.intl.formatToPlainString(g.t["44/Obu"], {
+                }) : f.length > 2 ? _.intl.formatToPlainString(_.t["44/Obu"], {
                     a: (0, u.A)(n, f[0]),
                     b: (0, u.A)(n, f[1]),
                     n: f.length - 2
@@ -65,9 +65,9 @@ let _ = function(e) {
             className: p.PD,
             children: (0, i.jsx)(l.Button, {
                 variant: "overlay-primary",
-                text: _ ? g.intl.string(g.t["96ANUN"]) : g.intl.string(g.t.TVBCKZ),
+                text: g ? _.intl.string(_.t["96ANUN"]) : _.intl.string(_.t.TVBCKZ),
                 onClick: C,
-                disabled: !_
+                disabled: !g
             })
         })]
     })

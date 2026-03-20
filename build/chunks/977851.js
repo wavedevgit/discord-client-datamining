@@ -15,16 +15,16 @@ var i = n(627968),
     h = n(384059),
     A = n(222823),
     m = n(309010),
-    g = n(741961),
+    _ = n(741961),
     p = n(234320),
-    _ = n(20465),
+    g = n(20465),
     f = n(108460),
     x = n(709562),
     C = n(652215),
     E = n(985018);
 
 function I(e) {
-    let t = (0, o.bG)([g.A], () => !(0, r.isEmpty)(g.A.getTypingUsers(e)), [e]),
+    let t = (0, o.bG)([_.A], () => !(0, r.isEmpty)(_.A.getTypingUsers(e)), [e]),
         n = (0, o.bG)([m.A], () => m.A.getVoiceChannelId() === e, [e]),
         {
             unreadCount: i,
@@ -67,7 +67,7 @@ function b(e) {
             showingClassName: r,
             onClick: A,
             inPopout: m,
-            showRequestToSpeakSidebar: g,
+            showRequestToSpeakSidebar: _,
             toggleRequestToSpeakSidebar: f,
             ...b
         } = e,
@@ -93,7 +93,7 @@ function b(e) {
                 a(t > 0);
                 let e = setTimeout(() => {
                     a(!1)
-                }, _.R);
+                }, g.R);
                 return () => {
                     clearTimeout(e), a(!1)
                 }
@@ -104,8 +104,8 @@ function b(e) {
             }
         }(n),
         L = s.useCallback(() => {
-            (0, h.X)(S, h.O.CHAT, !y), A?.(), !y && g && f?.(), c.A.updateChatOpen(n, !y, "toggle chat button")
-        }, [n, y, A, g, f, S]),
+            (0, h.X)(S, h.O.CHAT, !y), A?.(), !y && _ && f?.(), c.A.updateChatOpen(n, !y, "toggle chat button")
+        }, [n, y, A, _, f, S]),
         M = s.useCallback(e => {
             let {
                 className: t

@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(313961),
     A = n(826673),
     m = n(855687),
-    g = n(267102),
+    _ = n(267102),
     p = n(733586),
-    _ = n(530804),
+    g = n(530804),
     f = n(71393),
     x = n(576705),
     C = n(686502),
@@ -37,9 +37,9 @@ function S(e) {
         inCall: j,
         totalNumberOfParticipants: R,
         popoutType: O
-    } = e, L = (0, g.Us)() === N.BRT.POPOUT, M = (0, r.bG)([f.A], () => f.A.getGuild(v.guild_id), [v.guild_id]), {
+    } = e, L = (0, _.Us)() === N.BRT.POPOUT, M = (0, r.bG)([f.A], () => f.A.getGuild(v.guild_id), [v.guild_id]), {
         dismissedActivityEntryPointTileChannel: D
-    } = (0, I.P)(), G = (0, r.bG)([h.A], () => h.A.getUserParticipantCount(v.id), [v]), U = (0, _.vp)(v.id, t), P = s.useCallback(() => {
+    } = (0, I.P)(), G = (0, r.bG)([h.A], () => h.A.getUserParticipantCount(v.id), [v]), U = (0, g.vp)(v.id, t), P = s.useCallback(() => {
         (0, a.r)(() => {
             I.P.setState({
                 dismissedActivityEntryPointTileChannel: v.id

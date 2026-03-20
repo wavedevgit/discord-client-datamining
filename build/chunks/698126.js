@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(976860),
     A = n(734057),
     m = n(71393),
-    g = n(576705),
+    _ = n(576705),
     p = n(557534),
-    _ = n(166444),
+    g = n(166444),
     f = n(652215),
     x = n(790782),
     C = n(719550);
@@ -69,7 +69,7 @@ class I extends p.Ay {
                 [C.r9]: this.isDisabled()
             }),
             "data-dnd-name": e.name,
-            children: (0, i.jsxs)(_.Ay, {
+            children: (0, i.jsxs)(g.Ay, {
                 className: C.Ki,
                 channel: e,
                 selected: t,
@@ -93,11 +93,11 @@ let N = (0, d.a)(I),
             channel: t,
             guild: n,
             disableSorting: s
-        } = e, l = (0, r.cf)([A.A, g.A], () => {
+        } = e, l = (0, r.cf)([A.A, _.A], () => {
             let e = A.A.getChannel(t.parent_id);
             return {
-                canManageChannel: g.A.can(f.xBc.MANAGE_CHANNELS, t),
-                canReorderChannel: !0 !== s && null != e ? g.A.can(f.xBc.MANAGE_CHANNELS, e) : g.A.can(f.xBc.MANAGE_CHANNELS, n)
+                canManageChannel: _.A.can(f.xBc.MANAGE_CHANNELS, t),
+                canReorderChannel: !0 !== s && null != e ? _.A.can(f.xBc.MANAGE_CHANNELS, e) : _.A.can(f.xBc.MANAGE_CHANNELS, n)
             }
         });
         return (0, i.jsx)(N, {

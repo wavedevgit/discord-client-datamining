@@ -1,7 +1,7 @@
 /** chunk id: 933057 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -16,10 +16,10 @@ var i = n(627968),
     A = n(652215),
     m = n(985018);
 
-function g(e) {
+function _(e) {
     let {
         channel: t
-    } = e, n = (0, d.X)(t), [g, p] = s.useState(!1), _ = s.useRef(null), f = (0, l.bG)([o.A], () => null != t.guild_id && o.A.isLurking(t.guild_id));
+    } = e, n = (0, d.X)(t), [_, p] = s.useState(!1), g = s.useRef(null), f = (0, l.bG)([o.A], () => null != t.guild_id && o.A.isLurking(t.guild_id));
     if (s.useEffect(() => {
             let e = () => p(!0);
             return c._.subscribe(A.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
@@ -28,8 +28,8 @@ function g(e) {
         }, []), f) return null;
     let x = m.intl.string(m.t.h850Ss);
     return (0, i.jsx)(a.YNO, {
-        targetElementRef: _,
-        shouldShow: g,
+        targetElementRef: g,
+        shouldShow: _,
         animation: a.YNO.Animation.NONE,
         position: "bottom",
         align: "right",
@@ -47,7 +47,7 @@ function g(e) {
             } = t;
             return (0, i.jsx)(r.Ay.Icon, {
                 ...e,
-                ref: _,
+                ref: g,
                 onClick: () => p(e => !e),
                 tooltip: s ? null : x,
                 icon: n === h.CP.NO_MESSAGES ? a.a_I : a.XFE,

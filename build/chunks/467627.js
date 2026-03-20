@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(311907),
     A = n(554146),
     m = n(52133),
-    g = n(451988),
+    _ = n(451988),
     p = n(827734),
-    _ = n(192308),
+    g = n(192308),
     f = n(397927),
     x = n(951001),
     C = n(964486),
@@ -74,7 +74,7 @@ class ec {
     sizes;
     scrollerRef = s.createRef();
     nodeRefs = {};
-    timeout = new g.Ep;
+    timeout = new _.Ep;
     observer;
     constructor(e, t, n, i, s) {
         this.guildsTree = e, this.setScrolling = t, this.setIsScrolledToBottom = n, this.onScroll = i, this.sizes = s, (0, R.u9)(this.getVisibleGuildIds)
@@ -180,7 +180,7 @@ function ed(e) {
         lurkingGuildIds: l
     } = e, a = (0, y.A)("TopSection"), {
         isExperimentEnabled: r
-    } = (0, v.TW)("TopSection"), o = (0, h.bG)([k.A], () => null != k.A.getVoiceChannelId()), c = (0, _.useHasAnyModalOpen)(), d = (0, S.Ay)(e => e.postConnectionOpen), [u, m] = (0, T.kn)(d && r && !o && !c ? [A.M.FAVORITES_SERVER_ONBOARDING_INTRO] : []), g = u === A.M.FAVORITES_SERVER_ONBOARDING_INTRO, [p] = (0, T.kn)(g ? [A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM] : [], void 0, !0), f = p === A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM, x = s.useRef(!1), C = f && a;
+    } = (0, v.TW)("TopSection"), o = (0, h.bG)([k.A], () => null != k.A.getVoiceChannelId()), c = (0, g.useHasAnyModalOpen)(), d = (0, S.Ay)(e => e.postConnectionOpen), [u, m] = (0, T.kn)(d && r && !o && !c ? [A.M.FAVORITES_SERVER_ONBOARDING_INTRO] : []), _ = u === A.M.FAVORITES_SERVER_ONBOARDING_INTRO, [p] = (0, T.kn)(_ ? [A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM] : [], void 0, !0), f = p === A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM, x = s.useRef(!1), C = f && a;
     s.useEffect(() => {
         C && !x.current && n(), x.current = C
     }, [n, C]);
@@ -241,10 +241,10 @@ function eh(e) {
         let e = V.Ay.getGuildsTree();
         return [e, e.version]
     }), u = (0, h.bG)([O.A], () => O.A.lurkingGuildIds()), A = s.useMemo(() => n ? [] : u, [u, n]), m = (0, h.bG)([b.A], () => b.A.isFullscreenInContext()), {
-        isSorting: _,
+        isSorting: g,
         startSorting: x,
         stopSorting: E
-    } = (0, H.A)(), S = s.useRef(!1), [T] = s.useState(() => new g.Ep), v = s.useRef(null), j = s.useRef(null), {
+    } = (0, H.A)(), S = s.useRef(!1), [T] = s.useState(() => new _.Ep), v = s.useRef(null), j = s.useRef(null), {
         ref: R,
         ...U
     } = (0, d.$y)(), P = (0, f.R7z)(), [w, k] = s.useState(!1), Y = (0, f.rdh)(p.A.modules.guildbar.AVATAR_SIZE), z = (0, f.rdh)(p.A.space.SPACE_XS), q = (0, y.A)("GuildsBar"), {
@@ -311,7 +311,7 @@ function eh(e) {
                         folderNode: t,
                         setNodeRef: en.setNodeRef,
                         draggable: !0,
-                        sorting: _,
+                        sorting: g,
                         onDragStart: x,
                         onDragEnd: E,
                         renderChildNode: e,
@@ -323,7 +323,7 @@ function eh(e) {
                         guildNode: t,
                         setRef: en.setNodeRef,
                         draggable: !0,
-                        sorting: _,
+                        sorting: g,
                         onDragStart: x,
                         onDragEnd: E,
                         "aria-setsize": s,
@@ -332,8 +332,8 @@ function eh(e) {
                 default:
                     return null
             }
-        }, [x, E, _, en.setNodeRef]),
-        eg = (0, i.jsx)(J.A, {
+        }, [x, E, g, en.setNodeRef]),
+        e_ = (0, i.jsx)(J.A, {
             selected: eh,
             className: ea.ai
         }),
@@ -374,7 +374,7 @@ function eh(e) {
                                 scrollToTop: eA,
                                 lurkingGuildIds: A
                             }), (0, i.jsx)($.A, {}), (0, i.jsx)(eu, {
-                                guildDiscoveryButton: eg,
+                                guildDiscoveryButton: e_,
                                 disableAppDownload: t,
                                 isOverlay: n,
                                 renderTreeNode: em,

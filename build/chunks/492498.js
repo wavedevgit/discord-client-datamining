@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(323073),
     A = n(202803),
     m = n(636922),
-    g = n(835835),
+    _ = n(835835),
     p = n(566908),
-    _ = n(253932),
+    g = n(253932),
     f = n(734057),
     x = n(517019),
     C = n(309010),
@@ -57,7 +57,7 @@ function R(e) {
         hasMore: o,
         loading: h,
         guildFilter: m,
-        roleFilter: _,
+        roleFilter: g,
         everyoneFilter: x
     } = (0, r.cf)([E.Ay], () => ({
         messages: E.Ay.getMentions(),
@@ -68,16 +68,16 @@ function R(e) {
         everyoneFilter: E.Ay.everyoneFilter
     })), I = (0, p.Sc)({
         location: "RecentMentions"
-    }), N = (0, u.A)(m), b = (0, u.A)(_), y = (0, u.A)(x);
+    }), N = (0, u.A)(m), b = (0, u.A)(g), y = (0, u.A)(x);
     s.useEffect(() => {
-        E.Ay.hasLoadedEver ? (null != N && m !== N || null != b && _ !== b || null != y && x !== y) && j(n, !0) : j(n, !0)
-    }, [N, m, b, _, y, x, n, !0]), (0, d.Ay)(() => {
+        E.Ay.hasLoadedEver ? (null != N && m !== N || null != b && g !== b || null != y && x !== y) && j(n, !0) : j(n, !0)
+    }, [N, m, b, g, y, x, n, !0]), (0, d.Ay)(() => {
         l?.some(A.$r) && (c.A.clearMentions(), j(n, !0))
     }), s.useEffect(() => () => {
         c.A.truncateMentions(S.Ue3)
     }, []);
     let R = s.useCallback(() => null, []);
-    return (0, i.jsx)(g.Ay, {
+    return (0, i.jsx)(_.Ay, {
         className: a()(v.sH, {
             [v.qC]: I
         }),
@@ -142,7 +142,7 @@ function L(e) {
                 channel: l,
                 className: v.iU,
                 hideAccessories: r,
-                compact: _.hH.getSetting(),
+                compact: g.hH.getSetting(),
                 animateAvatar: !1,
                 focusProps: y,
                 trackAnnouncementViews: !0

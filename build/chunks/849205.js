@@ -16,13 +16,13 @@ var s = n(417597),
     h = n(427262),
     A = n(742589),
     m = n(985018),
-    g = n(370808);
+    _ = n(370808);
 
 function p(e) {
     let t = e.channel.getRecipientId(),
         n = e.channel.isSystemDM(),
         p = (0, s.bG)([u.default], () => u.default.getUser(t)),
-        _ = (0, s.bG)([c.A], () => c.A.getStatus(t)),
+        g = (0, s.bG)([c.A], () => c.A.getStatus(t)),
         f = (0, s.bG)([c.A], () => c.A.isMobileOnline(t)),
         x = (0, s.bG)([c.A], () => c.A.isVROnline(t)),
         C = (0, s.bG)([d.A], () => d.A.getNickname(t)),
@@ -38,10 +38,10 @@ function p(e) {
             children: m.intl.string(m.t.EJRzg7)
         }), null != p && !n && (0, i.jsx)("div", {
             children: (0, i.jsx)(a.euF, {
-                status: _,
+                status: g,
                 isMobile: f,
                 isVR: x,
-                className: g.my,
+                className: _.my,
                 size: a._3J.SIZE_20,
                 "aria-label": h.Ay.getName(p),
                 src: p.getAvatarURL(void 0, 20)
@@ -50,7 +50,7 @@ function p(e) {
             level: e.level,
             onClick: e.handleClick,
             onContextMenu: e.handleContextMenu,
-            className: null != e.handleClick ? g.or : null,
+            className: null != e.handleClick ? _.or : null,
             children: (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(l.m, {
                     text: E,
@@ -65,7 +65,7 @@ function p(e) {
                         size: "xs",
                         "aria-label": m.intl.string(m.t.VHXh8a),
                         color: a.LU0.colors.INTERACTIVE_TEXT_DEFAULT,
-                        className: g.vW
+                        className: _.vW
                     })
                 })]
             })

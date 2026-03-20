@@ -17,9 +17,9 @@ var s = n(284009),
     h = n(71393),
     A = n(375492),
     m = n(576705),
-    g = n(709562),
+    _ = n(709562),
     p = n(652215),
-    _ = n(985018);
+    g = n(985018);
 
 function f(e) {
     let {
@@ -72,8 +72,8 @@ function x(e) {
         ...R
     } = e, O = (0, u.Us)(), {
         parentAnalyticsLocation: L
-    } = (0, c.Ay)(), M = s?.getGuildId(), D = (0, a.bG)([h.A], () => null != M ? h.A.getGuild(M) : null, [M]), G = (0, a.bG)([A.A], () => null != t ? A.A.getApplicationActivity(t) : void 0), U = null == t || N ? r.DpX : r.dCJ, P = _.intl.string(_.t["6F9ivu"]);
-    return (null != t && (P = _.intl.string(_.t["OzOM/q"])), null != n && (P = _.intl.string(_.t["6VQaqd"])), null != G && b) ? (0, i.jsx)(g.A, {
+    } = (0, c.Ay)(), M = s?.getGuildId(), D = (0, a.bG)([h.A], () => null != M ? h.A.getGuild(M) : null, [M]), G = (0, a.bG)([A.A], () => null != t ? A.A.getApplicationActivity(t) : void 0), U = null == t || N ? r.DpX : r.dCJ, P = g.intl.string(g.t["6F9ivu"]);
+    return (null != t && (P = g.intl.string(g.t["OzOM/q"])), null != n && (P = g.intl.string(g.t["6VQaqd"])), null != G && b) ? (0, i.jsx)(_.A, {
         onClick: () => {
             null != L && (0, d.X)(L, d.O.INVITE), o.qf(G, !1, O)
         },
@@ -84,7 +84,7 @@ function x(e) {
         size: v,
         buttonText: y,
         color: j ?? void 0
-    }) : null != D && null != s && m.A.can(p.xBc.CREATE_INSTANT_INVITE, s) ? (0, i.jsx)(g.A, {
+    }) : null != D && null != s && m.A.can(p.xBc.CREATE_INSTANT_INVITE, s) ? (0, i.jsx)(_.A, {
         onClick: () => {
             l()(null != D, "guild cannot be null"), l()(null != s, "channel cannot be null"), null != L && (0, d.X)(L, d.O.INVITE), f({
                 guild: D,

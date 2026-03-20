@@ -2,11 +2,12 @@
 "use strict";
 n.d(t, {
     FC: () => r,
-    W2: () => u,
+    W2: () => h,
     rd: () => o,
-    ru: () => c,
+    ru: () => d,
     ty: () => a,
-    ww: () => d
+    vn: () => c,
+    ww: () => u
 });
 var i = n(554146),
     s = n(932001),
@@ -25,19 +26,23 @@ function o(e) {
 }
 
 function c(e) {
+    return (0, s.kn)(e ? [i.M.GAME_SERVER_PRICING_CHANGE_COACHMARK] : [])
+}
+
+function d(e) {
     return (0, s.Wl)(e ? i.M.GUILD_POWERUP_NOTIFICATION : null, {
         cooldownDurationMs: l.lE
     })
 }
 
-function d(e, t) {
+function u(e, t) {
     return (0, s.D8)(e ? i.M.BOOST_TO_UNLOCK_COACHMARK : null, t, {
         cooldownDurationMs: l.bW,
         numTimesToRecur: 5
     })
 }
 
-function u(e, t) {
+function h(e, t) {
     return (0, s.D8)(e ? i.M.EXPIRING_POWERUP_COACHMARK : null, t, {
         cooldownDurationMs: l.mD
     })

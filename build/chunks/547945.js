@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(397927),
     A = n(928039),
     m = n(636922),
-    g = n(976860),
+    _ = n(976860),
     p = n(151282),
-    _ = n(199160),
+    g = n(199160),
     f = n(551640),
     x = n(970244),
     C = n(253932),
@@ -44,9 +44,9 @@ function O() {
 }
 
 function L() {
-    let e = (0, u.bG)([_.A], () => _.A.getScheduledMessagesForInbox(), []),
+    let e = (0, u.bG)([g.A], () => g.A.getScheduledMessagesForInbox(), []),
         t = s.useMemo(() => Object.values(e).sort((e, t) => new Date(e.sendAtTimestamp) > new Date(t.sendAtTimestamp) ? -1 : 1), [e]),
-        n = (0, u.bG)([_.A], () => _.A.loading, []),
+        n = (0, u.bG)([g.A], () => g.A.loading, []),
         l = s.useRef(null),
         a = (0, A.A)("scheduled-messages", l);
     return n ? (0, i.jsx)(h.y$y, {
@@ -86,7 +86,7 @@ function M(e) {
             channel: n,
             scheduledMessages: [...e[n.id]?.scheduledMessages ?? [], t]
         }), e
-    }, {}), [t]), l = (0, u.bG)([_.A], () => _.A.getMessagesPendingDeletion(), []);
+    }, {}), [t]), l = (0, u.bG)([g.A], () => g.A.getMessagesPendingDeletion(), []);
     return (0, i.jsx)(i.Fragment, {
         children: Object.entries(n).map(e => {
             let [t, {
@@ -97,7 +97,7 @@ function M(e) {
                 className: j.WG,
                 children: [(0, i.jsx)(S.A, {
                     channel: n,
-                    gotoChannel: () => (0, g.pX)(v.BVt.CHANNEL(n.getGuildId(), n.id)),
+                    gotoChannel: () => (0, _.pX)(v.BVt.CHANNEL(n.getGuildId(), n.id)),
                     children: null
                 }), s.map(e => {
                     let t = l.has(e.scheduledMessageId);
@@ -160,7 +160,7 @@ let D = s.memo(function(e) {
         }).catch(e => {
             (0, x.kM)(e.message)
         })
-    }, [t.scheduledMessageId]), g = s.useCallback(() => {
+    }, [t.scheduledMessageId]), _ = s.useCallback(() => {
         (0, x.CI)({
             scheduledMessage: t
         })
@@ -191,7 +191,7 @@ let D = s.memo(function(e) {
                     size: "sm",
                     children: [(0, i.jsx)(d.K0, {
                         icon: h.O4,
-                        onClick: g,
+                        onClick: _,
                         variant: "icon-only",
                         "aria-label": y.intl.string(y.t.SBcdAN)
                     }), (0, i.jsx)(d.K0, {

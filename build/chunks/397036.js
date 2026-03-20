@@ -1,7 +1,7 @@
 /** chunk id: 397036 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => g
 });
 var i = n(627968),
     s = n(64700),
@@ -15,14 +15,14 @@ var i = n(627968),
     h = n(136179),
     A = n(250253),
     m = n(652215),
-    g = n(985018),
+    _ = n(985018),
     p = n(449515);
 
-function _(e) {
+function g(e) {
     let {
         guildId: t,
         channelId: n
-    } = e, _ = (0, d.e)({
+    } = e, g = (0, d.e)({
         guildId: t,
         channelId: n
     }), f = (0, c.uk)(t), x = (0, c.Tq)(t), C = (0, l.bG)([o.A], () => o.A.getGuild(t), [t]), E = C?.name, I = (0, l.bG)([r.A], () => r.A.getChannel(n)), N = s.useMemo(() => {
@@ -34,7 +34,7 @@ function _(e) {
     return ((0, u.A)({
         guildId: t,
         location: m.ThZ.ROLE_SUBSCRIPTION_GATED_CHANNEL,
-        relevantSubscriptionListingIds: _.map(e => e.id)
+        relevantSubscriptionListingIds: g.map(e => e.id)
     }), null == C) ? (0, i.jsx)("div", {
         className: p.__invalid_spinnerContainer,
         children: (0, i.jsx)(a.y$y, {
@@ -45,7 +45,7 @@ function _(e) {
         children: [(0, i.jsx)(a.Heading, {
             variant: "heading-xl/semibold",
             className: p.DX,
-            children: g.intl.format(g.t.xHMpym, {
+            children: _.intl.format(_.t.xHMpym, {
                 serverName: E,
                 channelName: I?.name
             })
@@ -55,7 +55,7 @@ function _(e) {
             color: "text-default",
             children: x?.description
         }), (0, i.jsx)(h.A, {
-            children: _.filter(e => null != N[e.id]).map(e => (0, i.jsx)(A.A, {
+            children: g.filter(e => null != N[e.id]).map(e => (0, i.jsx)(A.A, {
                 guildId: t,
                 listingId: e.id,
                 groupListingId: N[e.id],

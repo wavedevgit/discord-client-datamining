@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(186111),
     A = n(532624),
     m = n(350535),
-    g = n(274372),
+    _ = n(274372),
     p = n(572164),
-    _ = n(399925),
+    g = n(399925),
     f = n(652215),
     x = n(985018),
     C = n(575568),
@@ -73,7 +73,7 @@ let N = e => {
             } = (0, c.Ay)(),
             n = (0, l.bG)([h.A], () => h.A.hasLayers()),
             a = (0, p.Et)(),
-            o = (0, l.bG)([g.A], () => g.A.getIsAtMaxSaveClipOperations()),
+            o = (0, l.bG)([_.A], () => _.A.getIsAtMaxSaveClipOperations()),
             C = (0, l.bG)([A.Ay], () => A.Ay.getKeybindForAction(f.hCu.SAVE_CLIP));
         if (!a || null == C || n) return null;
         let E = m.dI(C.shortcut, !0);
@@ -88,7 +88,7 @@ let N = e => {
                     hotkey: m.dI(C?.shortcut, !0)
                 }) : x.intl.string(x.t.s52pju),
                 onClick: () => {
-                    (0, _.l0)(), (0, d.X)(t, d.O.CLIP)
+                    (0, g.l0)(), (0, d.X)(t, d.O.CLIP)
                 },
                 onContextMenu: I,
                 icon: r.xgA

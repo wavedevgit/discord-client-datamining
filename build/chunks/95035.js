@@ -20,7 +20,7 @@ let o = s.forwardRef(function(e, t) {
         e.repeat || ((e.charCode === r.Ks6.SPACE || e.charCode === r.Ks6.ENTER) && (e.preventDefault(), null != n && (0, a.pX)(n), c?.()), d?.(e))
     }, [n, d, c]), m = s.useCallback(e => {
         e.metaKey || e.shiftKey || 0 !== e.button || (e.preventDefault(), e.stopPropagation(), null != n && (0, a.pX)(n), c?.())
-    }, [n, c]), g = (0, i.jsx)("a", {
+    }, [n, c]), _ = (0, i.jsx)("a", {
         ref: t,
         href: n,
         onClick: m,
@@ -30,6 +30,6 @@ let o = s.forwardRef(function(e, t) {
     });
     return (0, i.jsx)(l.vN3, {
         ...u,
-        children: g
+        children: _
     })
 })

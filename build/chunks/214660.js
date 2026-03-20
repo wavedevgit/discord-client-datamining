@@ -16,9 +16,9 @@ var l = n(503698),
     h = n(915089),
     A = n(557722),
     m = n(834942),
-    g = n(287809),
+    _ = n(287809),
     p = n(652215),
-    _ = n(53516),
+    g = n(53516),
     f = n(985018),
     x = n(178768),
     C = n(513679),
@@ -74,11 +74,11 @@ let I = e => {
                                     ...t
                                 })
                             }, {
-                                modalKey: _.V
+                                modalKey: g.V
                             }) : N && (d.A.verifyResend(), (0, o.A)({
                                 title: f.intl.string(f.t.LykQYk),
                                 subtitle: f.intl.format(f.t.azKEPy, {
-                                    email: g.default.getCurrentUser()?.email
+                                    email: _.default.getCurrentUser()?.email
                                 })
                             })), l()
                         }

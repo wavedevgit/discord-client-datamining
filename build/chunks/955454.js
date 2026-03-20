@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(970278),
     A = n(747926),
     m = n(734057),
-    g = n(403362),
+    _ = n(403362),
     p = n(661191),
-    _ = n(652215),
+    g = n(652215),
     f = n(37411),
     x = n(858926);
 
@@ -36,15 +36,15 @@ function C(e) {
             id: t
         } = e;
         return m.A.getChannel(t)
-    }).filter(g.Vq).sort((e, t) => p.default.compare(e.id, t.id)).value(), [t.oldestReadMessageId, n.guild_id, n.id]), E = s.useCallback((e, t) => {
+    }).filter(_.Vq).sort((e, t) => p.default.compare(e.id, t.id)).value(), [t.oldestReadMessageId, n.guild_id, n.id]), E = s.useCallback((e, t) => {
         (0, A.JA)(e, t, f.H9.INBOX)
     }, []);
     return s.useEffect(() => {
         null == n || !t.isFullyLoaded || t.hasError || t.collapsed || 0 !== C.length || o.h.wait(() => {
             (0, c.ack)(t.channelId, {
-                section: _.JJy.INBOX,
-                object: _.ZSU.ACK_INBOX_FORUM_NO_POSTS,
-                objectType: _.AnalyticsObjectTypes.ACK_AUTOMATIC
+                section: g.JJy.INBOX,
+                object: g.ZSU.ACK_INBOX_FORUM_NO_POSTS,
+                objectType: g.AnalyticsObjectTypes.ACK_AUTOMATIC
             }, !0), l(t.channelId)
         })
     }), (0, i.jsx)("div", {

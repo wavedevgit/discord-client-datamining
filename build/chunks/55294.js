@@ -1,7 +1,7 @@
 /** chunk id: 55294 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _,
+    A: () => g,
     N: () => x
 });
 var i = n(64700),
@@ -16,22 +16,22 @@ var i = n(64700),
     h = n(31717),
     A = n(522602),
     m = n(393309),
-    g = n(381941),
+    _ = n(381941),
     p = n(985018);
 
-function _(e) {
+function g(e) {
     let {
         parentChannel: t,
         parentMessageId: n,
         threadSettings: s,
         privateThreadMode: c,
         location: d,
-        onThreadCreated: _,
+        onThreadCreated: g,
         useDefaultThreadName: f
     } = e, x = i.useCallback((e, t, n, i) => {
         a.A.sendMessage(e.id, u.Ay.parse(e, n), void 0, {
             eagerDispatch: !1,
-            location: g.Hx.THREAD_CREATION,
+            location: _.Hx.THREAD_CREATION,
             stickerIds: i,
             attachmentsToUpload: t,
             onAttachmentUploadError: (i, s, a, c) => {
@@ -52,7 +52,7 @@ function _(e) {
         threadSettings: s,
         privateThreadMode: c,
         location: d,
-        onThreadCreated: _,
+        onThreadCreated: g,
         useDefaultThreadName: f,
         uploadHandler: x
     })

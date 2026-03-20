@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(147192),
     A = n(738876),
     m = n(775602),
-    g = n(793574),
+    _ = n(793574),
     p = n(688810),
-    _ = n(355622),
+    g = n(355622),
     f = n(408018),
     x = n(133343),
     C = n(171593),
@@ -46,7 +46,7 @@ var i = n(627968),
     F = n(985018),
     K = n(980461),
     W = n(549661);
-let Y = _.oU.THREAD_CREATION;
+let Y = g.oU.THREAD_CREATION;
 
 function z(e) {
     let {
@@ -55,7 +55,7 @@ function z(e) {
         location: s
     } = e, l = (0, r.bG)([y.A], () => y.A.getChannel(t)), {
         analyticsLocations: a
-    } = (0, p.Ay)(g.A.CREATE_THREAD);
+    } = (0, p.Ay)(_.A.CREATE_THREAD);
     return null == l ? null : (0, i.jsx)(p.f5, {
         value: a,
         children: (0, i.jsx)(M.Ah, {
@@ -122,9 +122,9 @@ function X(e) {
             t.bumpDispatchPriority()
         }, [t])),
         {
-            threadSettings: g,
+            threadSettings: _,
             setThreadSettings: p,
-            updateThreadSettings: _
+            updateThreadSettings: g
         } = function(e, t) {
             let n = (0, r.bG)([j.A], () => j.A.getThreadSettings(e.id) ?? {}, [e.id]),
                 [i, l] = s.useState(n),
@@ -169,8 +169,8 @@ function X(e) {
         } = (0, V.C)({
             parentChannel: n,
             parentMessageId: l,
-            updateThreadSettings: _,
-            threadSettings: g,
+            updateThreadSettings: g,
+            threadSettings: _,
             textAreaState: x
         }),
         {
@@ -187,7 +187,7 @@ function X(e) {
                 textAreaState: a,
                 location: r,
                 enableAIFeatures: o
-            } = e, [c, d] = s.useState(null), [u, h] = s.useState(null), [A, m] = s.useState(!1), g = (0, B.A)({
+            } = e, [c, d] = s.useState(null), [u, h] = s.useState(null), [A, m] = s.useState(!1), _ = (0, B.A)({
                 parentChannel: t,
                 parentMessageId: n,
                 threadSettings: i,
@@ -226,7 +226,7 @@ function X(e) {
                         shouldRefocus: !0
                     };
                     try {
-                        await g(e, s, l)
+                        await _(e, s, l)
                     } catch (e) {
                         return e.body?.code === H.t02.AUTOMOD_TITLE_BLOCKED ? d((0, U.z0)(e.body, t)) : e.body?.code === H.t02.INVALID_FORM_BODY && e.body?.errors?.name != null && d((0, U.T4)()), m(!1), {
                             shouldClear: !1,
@@ -237,19 +237,19 @@ function X(e) {
                         shouldClear: !0,
                         shouldRefocus: !1
                     }
-                }, [g, a.textValue, i.name, n, t, A, o]),
+                }, [_, a.textValue, i.name, n, t, A, o]),
                 submitting: A
             }
         }({
             parentChannel: n,
             parentMessageId: l,
-            threadSettings: g,
+            threadSettings: _,
             privateThreadMode: E,
             textAreaState: x,
             location: d,
             enableAIFeatures: b
         }),
-        w = (0, P.Iy)(g, E) ? o.tn0 : o.ysw;
+        w = (0, P.Iy)(_, E) ? o.tn0 : o.ysw;
     return (0, i.jsx)("div", {
         className: K.TE,
         onMouseDown: A,
@@ -277,8 +277,8 @@ function X(e) {
                                 children: [(0, i.jsx)(Q, {
                                     parentChannel: n,
                                     parentMessageId: l,
-                                    threadSettings: g,
-                                    updateThreadSettings: _,
+                                    threadSettings: _,
+                                    updateThreadSettings: g,
                                     error: y,
                                     disabled: G,
                                     isGeneratingAI: N,
@@ -286,8 +286,8 @@ function X(e) {
                                     getThreadNameInputAccessory: v
                                 }), n.type === H.rbe.GUILD_TEXT ? (0, i.jsx)(J, {
                                     startedFromMessage: null != l,
-                                    threadSettings: g,
-                                    updateThreadSettings: _,
+                                    threadSettings: _,
+                                    updateThreadSettings: g,
                                     privateThreadMode: E
                                 }) : null]
                             })]
@@ -350,12 +350,12 @@ function Q(e) {
         getThreadNameInputAccessory: h
     } = e, A = s.name ?? "", m = (0, U.vr)(a, {
         content: A
-    }), g = (0, P.l1)(t, n), p = null != n && !u, _ = (0, E.GV)(), f = u ? F.intl.string(F.t["Nb2/RE"]) : "" !== g ? g : F.intl.string(F.t["Nb2/RE"]);
+    }), _ = (0, P.l1)(t, n), p = null != n && !u, g = (0, E.GV)(), f = u ? F.intl.string(F.t["Nb2/RE"]) : "" !== _ ? _ : F.intl.string(F.t["Nb2/RE"]);
     return (0, i.jsx)(o.ksK, {
         label: F.intl.string(p ? F.t.JPvIiL : F.t.j3XWjD),
         trailing: h(r),
         value: A,
-        id: _,
+        id: g,
         placeholder: f,
         maxLength: H.Ign,
         onChange: e => {
@@ -381,7 +381,7 @@ function $(e) {
         setTextAreaState: l,
         submit: u,
         error: h
-    } = e, [A, m] = s.useState(!0), g = s.useCallback(() => m(!0), []), p = s.useCallback(() => m(!1), []), _ = s.useCallback((e, n, i) => {
+    } = e, [A, m] = s.useState(!0), _ = s.useCallback(() => m(!0), []), p = s.useCallback(() => m(!1), []), g = s.useCallback((e, n, i) => {
         c.A.saveDraft(t.id, n, j.C.FirstThreadMessage), l(e => ("" !== n && e.textValue !== n ? d.A.startTyping(t.id) : "" === n && d.A.stopTyping(t.id), {
             textValue: n,
             richValue: i
@@ -396,7 +396,7 @@ function $(e) {
     }, [u]);
     (0, M.Vo)({
         event: H.jej.TEXTAREA_FOCUS,
-        handler: g
+        handler: _
     }), (0, M.Vo)({
         event: H.jej.TEXTAREA_BLUR,
         handler: p
@@ -426,9 +426,9 @@ function $(e) {
             innerClassName: a()(K.SL, {
                 [K.cr]: null != I
             }),
-            onFocus: g,
+            onFocus: _,
             onBlur: p,
-            onChange: _,
+            onChange: g,
             onSubmit: f,
             promptToUpload: G.R
         })]

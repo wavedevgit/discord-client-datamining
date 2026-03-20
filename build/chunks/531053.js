@@ -17,10 +17,10 @@ var i = n(627968),
     h = n(263715),
     A = n(550591),
     m = n(652215),
-    g = n(985018),
+    _ = n(985018),
     p = n(944179);
 
-function _(e) {
+function g(e) {
     let t = s.useRef(null),
         n = e.map(e => e[0]);
     return s.useLayoutEffect(() => {
@@ -61,7 +61,7 @@ function x(e) {
     } = e, r = s.useMemo(() => f([h.PJ.GUILD, h.PJ.FOLDER], n, a, l), [n, a, l]), [{
         canDrop: o,
         isOver: d
-    }, u] = (0, c.H)(r), A = _([
+    }, u] = (0, c.H)(r), A = g([
         [o, p.OP],
         [d, p.NQ]
     ]);
@@ -69,7 +69,7 @@ function x(e) {
         ref: e => {
             A.current = e, u(e)
         },
-        "data-dnd-name": g.intl.formatToPlainString(g.t["A5aDw+"], {
+        "data-dnd-name": _.intl.formatToPlainString(_.t["A5aDw+"], {
             itemName: t
         }),
         className: p.aC
@@ -88,7 +88,7 @@ function C(e) {
     s.useEffect(() => {
         l?.(o)
     }, [l, o]);
-    let u = _([
+    let u = g([
         [r, p.OP],
         [o, p.NQ]
     ]);
@@ -101,7 +101,7 @@ function C(e) {
             ref: e => {
                 u.current = e, d(e)
             },
-            "data-dnd-name": g.intl.formatToPlainString(g.t.qiQ0QI, {
+            "data-dnd-name": _.intl.formatToPlainString(_.t.qiQ0QI, {
                 itemName: t
             }),
             className: a()(p.dw, {})
@@ -138,9 +138,9 @@ function I(e) {
     } = e, [{
         canDrop: s,
         isOver: l
-    }, a] = (0, c.H)(() => f([h.PJ.GUILD], n, !0, !0)), r = _([
+    }, a] = (0, c.H)(() => f([h.PJ.GUILD], n, !0, !0)), r = g([
         [l, p.a7]
-    ]), o = _([
+    ]), o = g([
         [l, p.NQ],
         [s, p.OP]
     ]);

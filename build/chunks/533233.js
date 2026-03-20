@@ -19,8 +19,8 @@ function h(e) {
         h = (0, r.zy)(e.id, o.ip.AUDIENCE),
         A = (0, d.qT)(e.id),
         m = (0, i.bG)([l.A], () => l.A.getGuild(e.guild_id), [e.guild_id]),
-        g = (0, i.bG)([a.A], () => a.A.can(c.QY, e), [e]),
+        _ = (0, i.bG)([a.A], () => a.A.can(c.QY, e), [e]),
         p = m?.maxStageVideoChannelUsers ?? 0,
-        _ = !(null != m && m.features.has(u.GuildFeatures.COMMUNITY)) && p > u.uaN;
-    return A && !t && g && !_ && n + h >= p
+        g = !(null != m && m.features.has(u.GuildFeatures.COMMUNITY)) && p > u.uaN;
+    return A && !t && _ && !g && n + h >= p
 }

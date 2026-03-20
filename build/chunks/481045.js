@@ -16,21 +16,21 @@ var i = n(627968),
     h = n(704037),
     A = n(730844),
     m = n(985018),
-    g = n(247307);
+    _ = n(247307);
 let p = () => {
     (0, o.openUserSettings)(r.X.ACTIVITY_PRIVACY_PANEL)
 };
 
-function _(e) {
+function g(e) {
     let {
         children: t,
         onClick: n
     } = e;
     return (0, i.jsxs)(l.DUT, {
-        className: g.E1,
+        className: _.E1,
         onClick: n,
         children: [(0, i.jsx)("div", {
-            className: g.j3,
+            className: _.j3,
             children: t
         }), (0, i.jsx)(l._BQ, {
             color: l.LU0.colors.TEXT_SUBTLE,
@@ -42,8 +42,8 @@ function _(e) {
 function f(e) {
     let {
         onClosePopout: t
-    } = e, n = a.tz.useSetting(), r = (0, s.bG)([c.Ay], () => c.Ay.getFlattenedGuildIds()), o = (0, d.Kk)(), g = r.filter(e => !o.has(e)), f = (0, u.AB)(g);
-    return 0 === r.length ? null : (0, i.jsxs)(_, {
+    } = e, n = a.tz.useSetting(), r = (0, s.bG)([c.Ay], () => c.Ay.getFlattenedGuildIds()), o = (0, d.Kk)(), _ = r.filter(e => !o.has(e)), f = (0, u.AB)(_);
+    return 0 === r.length ? null : (0, i.jsxs)(g, {
         onClick: () => {
             t(), p()
         },

@@ -1,7 +1,7 @@
 /** chunk id: 615952 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => _
 });
 var i = n(627968);
 n(64700);
@@ -17,12 +17,12 @@ var s = n(311907),
     A = n(652215),
     m = n(985018);
 
-function g(e) {
+function _(e) {
     let {
         user: t
     } = e, {
         analyticsLocations: n
-    } = (0, a.Ay)(), g = (0, s.bG)([c.default], () => c.default.getId() === t.id), p = (0, s.bG)([d.A], () => d.A.isBlockedOrIgnored(t.id) || d.A.isSpam(t.id)), _ = (0, o.j)("UserProfileGiftingBannerButton"), {
+    } = (0, a.Ay)(), _ = (0, s.bG)([c.default], () => c.default.getId() === t.id), p = (0, s.bG)([d.A], () => d.A.isBlockedOrIgnored(t.id) || d.A.isSpam(t.id)), g = (0, o.j)("UserProfileGiftingBannerButton"), {
         openGiftModal: f
     } = (0, r.$)({
         giftRecipient: t,
@@ -35,7 +35,7 @@ function g(e) {
         },
         location: "user-profile-gifting-banner-button"
     });
-    return null == t || t.bot || g || p || !_ ? null : (0, i.jsx)(u.br, {
+    return null == t || t.bot || _ || p || !g ? null : (0, i.jsx)(u.br, {
         icon: l.okO,
         tooltipText: m.intl.string(m.t.PEjaCx),
         action: h.pt.GIFT,

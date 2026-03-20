@@ -15,10 +15,10 @@ var i = n(627968),
     h = n(323073),
     A = n(506164),
     m = n(204925),
-    g = n(985018),
+    _ = n(985018),
     p = n(570328);
 
-function _(e) {
+function g(e) {
     let {
         guild: t,
         channelId: n
@@ -29,7 +29,7 @@ function _(e) {
         null != t && o.A.nsfwReturnToSafety(t.id)
     }, [t]), p = s.useCallback(() => {
         null != t && o.A.nsfwAgree(t.id)
-    }, [t]), _ = s.useCallback(() => {
+    }, [t]), g = s.useCallback(() => {
         c.A.showAgeVerificationGetStartedModal({
             entryPoint: d.q1.NSFW_GUILD
         })
@@ -39,13 +39,13 @@ function _(e) {
         ...a,
         guildId: t?.id,
         channelId: n,
-        disagreement: g.intl.string(g.t["/g10LC"])
+        disagreement: _.intl.string(_.t["/g10LC"])
     };
     switch (l) {
         case d.A5.NSFW_CHANNEL_AGE_VERIFY:
         case d.A5.GUILD_LARGE_SERVER:
             return (0, i.jsx)(A.A, {
-                onAgree: _,
+                onAgree: g,
                 onDisagree: r,
                 modalType: l,
                 ...f
@@ -75,7 +75,7 @@ let f = function(e) {
         className: p.X,
         children: (0, i.jsx)("div", {
             className: a()(l, p.i),
-            children: (0, i.jsx)(_, {
+            children: (0, i.jsx)(g, {
                 guild: t,
                 channelId: n
             })

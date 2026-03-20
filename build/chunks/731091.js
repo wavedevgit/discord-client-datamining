@@ -15,14 +15,14 @@ var i = n(627968),
     h = n(628325),
     A = n(849077),
     m = n(985018),
-    g = n(738301);
+    _ = n(738301);
 
 function p(e) {
     let {
         className: t
     } = e, n = (0, c.op)(), s = (0, u.i3)(), {
         selectedFilter: p,
-        setSelectedFilter: _
+        setSelectedFilter: g
     } = (0, d.A)(), f = (0, h.S)(e => e.setInboxReadState);
     if (!s) return null;
     let x = p === A.Io.ALL ? m.intl.string(m.t["2pAkDA"]) : m.intl.string(m.t.HcoRu0);
@@ -30,13 +30,13 @@ function p(e) {
         position: "bottom",
         text: x,
         children: (0, i.jsx)(o.DUT, {
-            className: l()(t, g.a, {
-                [g.S]: p === A.Io.BOOKMARKS
+            className: l()(t, _.a, {
+                [_.S]: p === A.Io.BOOKMARKS
             }),
             "aria-label": x,
             onClick: () => {
                 let e = p === A.Io.ALL ? A.Io.BOOKMARKS : A.Io.ALL;
-                _(e), e === A.Io.ALL && f(!1), (0, c.Ut)({
+                g(e), e === A.Io.ALL && f(!1), (0, c.Ut)({
                     section: e,
                     enabled: !0,
                     viewId: n

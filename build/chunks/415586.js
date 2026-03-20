@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(332456),
     A = n(973854),
     m = n(47167),
-    g = n(698718),
+    _ = n(698718),
     p = n(355622),
-    _ = n(58736),
+    g = n(58736),
     f = n(353428),
     x = n(378570),
     C = n(734057),
@@ -69,7 +69,7 @@ function j(e) {
         children: [(0, i.jsx)(d.A, {
             channel: L,
             draftType: E.C.ChannelMessage
-        }), (0, i.jsx)(_.Ay, {
+        }), (0, i.jsx)(g.Ay, {
             toolbar: U,
             "aria-label": v.intl.string(v.t.Pwe8tN),
             children: (0, f.zF)({
@@ -94,7 +94,7 @@ function j(e) {
             })
         }), (0, i.jsx)("div", {
             className: y.T,
-            children: (0, i.jsx)(g.A, {
+            children: (0, i.jsx)(_.A, {
                 channel: L,
                 guild: M,
                 chatInputType: p.oU.SIDEBAR

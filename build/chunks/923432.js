@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(531685),
     A = n(147036),
     m = n(288989),
-    g = n(985018),
+    _ = n(985018),
     p = n(280284);
-let _ = {
+let g = {
     friction: 30,
     tension: 300
 };
@@ -46,7 +46,7 @@ function f(e) {
         }), (0, i.jsx)(c.Text, {
             variant: "text-xs/semibold",
             className: p.pM,
-            children: g.intl.format(g.t["fDlr+F"], {
+            children: _.intl.format(_.t["fDlr+F"], {
                 count: m.length
             })
         }), (0, i.jsx)(u.A, {
@@ -78,7 +78,7 @@ function x(e) {
         to: {
             transform: b ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
         },
-        config: _
+        config: g
     }, C ? "respect-motion-settings" : "animate-never"), T = s.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), null != N && u(N)
     }, [u, N]);
@@ -112,7 +112,7 @@ function x(e) {
                     variant: "text-xs/semibold",
                     color: "interactive-text-default",
                     className: p.pM,
-                    children: g.intl.string(g.t.FCRiT3)
+                    children: _.intl.string(_.t.FCRiT3)
                 })]
             }) : E === m.k.MENTIONS ? (0, i.jsx)(c.DUT, {
                 className: a()(p.M0, p.vU),
@@ -121,7 +121,7 @@ function x(e) {
                     variant: "text-xs/semibold",
                     color: "badge-text-brand",
                     className: p.pM,
-                    children: g.intl.format(g.t.EQcLyp, {
+                    children: _.intl.format(_.t.EQcLyp, {
                         count: I
                     })
                 })

@@ -20,7 +20,7 @@ function c(e) {
         u && a.Ay.updatedUnsyncedSettings({
             disableHideSelfStreamAndVideoConfirmationAlert: !0
         }), n(), c()
-    }, [n, u, c]), m = t === r.f.STREAM ? o.intl.string(o.t["/lFMWr"]) : o.intl.string(o.t.xzxhZS), g = t === r.f.STREAM ? o.intl.string(o.t.xaOX7d) : o.intl.string(o.t.oU1p9O);
+    }, [n, u, c]), m = t === r.f.STREAM ? o.intl.string(o.t["/lFMWr"]) : o.intl.string(o.t.xzxhZS), _ = t === r.f.STREAM ? o.intl.string(o.t.xaOX7d) : o.intl.string(o.t.oU1p9O);
     return (0, i.jsx)(l.aFV, {
         size: "md",
         actionBarInput: (0, i.jsx)(l.Sc0, {
@@ -39,7 +39,7 @@ function c(e) {
             onClick: A
         }],
         title: m,
-        subtitle: g,
+        subtitle: _,
         onClose: c,
         ...d
     })

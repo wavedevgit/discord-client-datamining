@@ -15,19 +15,19 @@ var i = n(627968),
     h = n(665691),
     A = n(954571),
     m = n(652215),
-    g = n(985018),
+    _ = n(985018),
     p = n(242633);
-let _ = e => {
+let g = e => {
         let {
             channel: t
         } = e;
         return (0, h.bG)({
             channelId: t.id
         }) ? (0, i.jsx)(l.m, {
-            text: g.intl.string(g.t.QyZ4Td),
+            text: _.intl.string(_.t.QyZ4Td),
             children: (0, i.jsx)(a.m5V, {
                 size: "xs",
-                "aria-label": g.intl.string(g.t.VHXh8a),
+                "aria-label": _.intl.string(_.t.VHXh8a),
                 color: a.LU0.colors.INTERACTIVE_TEXT_DEFAULT
             })
         }) : null
@@ -39,7 +39,7 @@ let _ = e => {
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(l.m, {
                 asContainer: !0,
-                text: g.intl.string(g.t["5Q9+/L"]),
+                text: _.intl.string(_.t["5Q9+/L"]),
                 position: "bottom",
                 children: (0, i.jsxs)(a.DUT, {
                     className: p.cD,
@@ -66,7 +66,7 @@ let _ = e => {
                             location: o.A.HEADER_BAR
                         })
                     },
-                    "aria-label": g.intl.string(g.t["5Q9+/L"]),
+                    "aria-label": _.intl.string(_.t["5Q9+/L"]),
                     children: [(0, i.jsx)(d.A, {
                         className: p.gn,
                         "aria-hidden": !0,
@@ -83,7 +83,7 @@ let _ = e => {
                         color: "currentColor"
                     })]
                 })
-            }), (0, i.jsx)(_, {
+            }), (0, i.jsx)(g, {
                 channel: t
             })]
         })

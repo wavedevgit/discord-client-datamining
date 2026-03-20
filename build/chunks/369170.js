@@ -1,7 +1,7 @@
 /** chunk id: 369170 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => g
 });
 var i = n(627968),
     s = n(64700),
@@ -15,14 +15,14 @@ var i = n(627968),
     h = n(788868),
     A = n(525736),
     m = n(985018),
-    g = n(715994),
+    _ = n(715994),
     p = n(988572);
 
-function _(e) {
+function g(e) {
     let {
         theme: t
     } = e, {
-        hasAccess: _
+        hasAccess: g
     } = (0, u.TW)("favorites_empty_state"), {
         analyticsLocations: f
     } = (0, o.Ay)(r.A.FAVORITES_GUILD_HOME), x = s.useCallback(() => {
@@ -50,11 +50,11 @@ function _(e) {
                     width: 197,
                     height: 107
                 }), (0, i.jsx)(a.SGT, {
-                    className: g.Y,
-                    noteClassName: g.A,
+                    className: _.Y,
+                    noteClassName: _.A,
                     note: m.intl.string(A.default["+SuGKb"]),
                     children: m.intl.string(A.default["wh+Rz1"])
-                }), _ ? (0, i.jsx)(a.Button, {
+                }), g ? (0, i.jsx)(a.Button, {
                     text: m.intl.string(A.default["6kk0gM"]),
                     onClick: x,
                     icon: l.PlusMediumIcon

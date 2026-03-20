@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(676002),
     A = n(811024),
     m = n(685399),
-    g = n(323073),
+    _ = n(323073),
     p = n(963027),
-    _ = n(5932),
+    g = n(5932),
     f = n(570622),
     x = n(414808),
     C = n(721592),
@@ -188,7 +188,7 @@ class k extends L.Ay {
             connectChannelDragSource: h,
             connectDragPreview: A,
             canReorderChannel: m,
-            isSubscriptionGated: g,
+            isSubscriptionGated: _,
             isFavoriteSuggestion: f,
             subtitle: C,
             forceTopLevelThread: E,
@@ -198,7 +198,7 @@ class k extends L.Ay {
             showMenuItemPopover: S,
             markMenuItemPopoverAsDismissed: T,
             channelItemRef: v
-        } = this.props, y = v ?? this.channelItemRef, j = !S && o, R = !S && b && null != I && I.length > 0, O = (0, _.M)(C), L = (0, i.jsxs)("li", {
+        } = this.props, y = v ?? this.channelItemRef, j = !S && o, R = !S && b && null != I && I.length > 0, O = (0, g.M)(C), L = (0, i.jsxs)("li", {
             className: a()(this.getClassName(), {
                 [w.r9]: this.isDisabled(),
                 [w.wH]: n
@@ -235,7 +235,7 @@ class k extends L.Ay {
                         channel: e,
                         unread: l,
                         mentionCount: d,
-                        isSubscriptionGated: g
+                        isSubscriptionGated: _
                     }),
                     children: [f && (0, i.jsxs)(i.Fragment, {
                         children: [this.renderAcceptSuggestionButton(), this.renderRemoveSuggestionButton()]
@@ -268,7 +268,7 @@ function B(e) {
         unread: y.Ay.hasUnread(t.id),
         ackMessageId: y.Ay.ackMessageId(t.id),
         isLowImportanceMention: y.Ay.getIsMentionLowImportance(t.id)
-    })), _ = (0, o.bG)([j.Ay], () => j.Ay.resolveUnreadSetting(t)), x = (0, o.cf)([N.A, T.A], () => {
+    })), g = (0, o.bG)([j.Ay], () => j.Ay.resolveUnreadSetting(t)), x = (0, o.cf)([N.A, T.A], () => {
         let e = N.A.getChannel(t.parent_id);
         return {
             canManageChannel: T.A.can(U.xBc.MANAGE_CHANNELS, t),
@@ -277,7 +277,7 @@ function B(e) {
     }), S = (0, o.bG)([E.A], () => E.A.shouldIndicateNewChannel(n.id, t.id)), {
         needSubscriptionToAccess: R,
         isSubscriptionGated: O
-    } = (0, C.A)(t.id), L = (0, o.bG)([j.Ay], () => j.Ay.isFavorite(n.id, t.id)), D = (0, g.vL)(t), G = (0, A.Gp)(t.id), w = (0, M.A)({
+    } = (0, C.A)(t.id), L = (0, o.bG)([j.Ay], () => j.Ay.isFavorite(n.id, t.id)), D = (0, _.vL)(t), G = (0, A.Gp)(t.id), w = (0, M.A)({
         channel: t,
         isChannelCollapsed: !1,
         isChannelSelected: d,
@@ -286,7 +286,7 @@ function B(e) {
         isNewChannel: S,
         muted: c,
         enableActivities: G,
-        resolvedUnreadSetting: _
+        resolvedUnreadSetting: g
     }), k = (0, m.Ay)(t), [B, H] = s.useState(!1), F = (0, r.K)(s.useCallback(e => {
         H(e)
     }, [])), {
@@ -312,7 +312,7 @@ function B(e) {
         channelIsContentGated: D,
         channelInfo: w,
         embeddedApps: k,
-        resolvedUnreadSetting: _,
+        resolvedUnreadSetting: g,
         hasChannelInfo: null != w,
         enableActivities: G,
         showMenuItemPopover: K,

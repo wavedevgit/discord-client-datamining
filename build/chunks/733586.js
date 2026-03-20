@@ -32,13 +32,13 @@ function h(e) {
         keyExtractor: l,
         paddingTop: h = 0,
         paddingBottom: A = 0
-    } = e, [m, g] = s.useState({
+    } = e, [m, _] = s.useState({
         width: 0,
         height: 0
     }), {
         width: p,
-        height: _
-    } = m, f = n?.length ?? 0, x = p - 16, C = _ - (h + A), {
+        height: g
+    } = m, f = n?.length ?? 0, x = p - 16, C = g - (h + A), {
         tileStyle: E,
         tileWidth: I,
         rows: N,
@@ -48,7 +48,7 @@ function h(e) {
         let a, r, o, h, {
             rows: A,
             columns: m,
-            tileWidth: g
+            tileWidth: _
         } = (i = e, s = t, l = n, r = Math.floor(s / 25), a = i > 25 ? u(r, s, e => {
             let t;
             return d(e, s) * (Math.ceil((l - (t = e / c)) / (8 + t)) + 1) > 25
@@ -62,9 +62,9 @@ function h(e) {
         });
         return {
             tileStyle: {
-                width: g
+                width: _
             },
-            tileWidth: g,
+            tileWidth: _,
             rows: A,
             columns: m
         }
@@ -97,6 +97,6 @@ function h(e) {
         rowCount: N,
         rowCountBySection: [N],
         rowHeight: v,
-        onResize: g
+        onResize: _
     })
 }

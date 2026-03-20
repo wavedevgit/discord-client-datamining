@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(390435),
     A = n(775121),
     m = n(629357),
-    g = n(599677),
+    _ = n(599677),
     p = n(12351),
-    _ = n(915089),
+    g = n(915089),
     f = n(734057),
     x = n(458294),
     C = n(71393),
@@ -123,7 +123,7 @@ function H(e, t, n) {
 class F extends s.PureComponent {
     scrollerRef = s.createRef();
     inputRef = s.createRef();
-    _listId = (0, _.Ld)();
+    _listId = (0, g.Ld)();
     state = {
         query: this.props.query,
         mouseFocusDisabled: !0
@@ -420,7 +420,7 @@ class F extends s.PureComponent {
             selectedIndex: s
         } = this.props, {
             showScores: l
-        } = g.A.getCurrentConfig({
+        } = _.A.getCurrentConfig({
             location: "62f4be_1"
         }, {
             autoTrackExposure: !1

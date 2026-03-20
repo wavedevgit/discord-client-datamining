@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(694257),
     A = n(927630),
     m = n(120017),
-    g = n(779271),
+    _ = n(779271),
     p = n(763793),
-    _ = n(985018),
+    g = n(985018),
     f = n(247541);
 
 function x(e) {
@@ -72,18 +72,18 @@ let C = (0, a.A)(e => {
             let {
                 section: t
             } = e;
-            return 1 === t ? 0 === T ? null : (0, i.jsx)(g.A, {
+            return 1 === t ? 0 === T ? null : (0, i.jsx)(_.A, {
                 participantCount: T,
-                label: _.intl.string(_.t.CduOkx),
+                label: g.intl.string(g.t.CduOkx),
                 className: f.wx,
                 onClick: () => K(!F),
                 collapsed: F,
                 speakers: R,
                 channel: a,
                 isStreamLive: O
-            }, `speaker-header-${t}`) : 2 === t ? 0 === v ? null : (0, i.jsx)(g.A, {
+            }, `speaker-header-${t}`) : 2 === t ? 0 === v ? null : (0, i.jsx)(_.A, {
                 participantCount: v,
-                label: _.intl.string(_.t["3foUu5"]),
+                label: g.intl.string(g.t["3foUu5"]),
                 className: f.wx,
                 onClick: () => Y(!W),
                 collapsed: W,

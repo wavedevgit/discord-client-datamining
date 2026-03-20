@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(782091),
     A = n(641703),
     m = n(807067),
-    g = n(521588),
+    _ = n(521588),
     p = n(688810),
-    _ = n(975412),
+    g = n(975412),
     f = n(384059),
     x = n(379848),
     C = n(267102),
@@ -47,7 +47,7 @@ function v(e) {
         parentAnalyticsLocation: H,
         newestAnalyticsLocation: F
     } = (0, p.Ay)(), K = s.useCallback(() => {
-        (0, f.X)(H, f.O.ACTIVITY), (0, _.A)({
+        (0, f.X)(H, f.O.ACTIVITY), (0, g.A)({
             context: null != t ? {
                 type: "channel",
                 channel: t
@@ -124,7 +124,7 @@ function v(e) {
                                         onMouseLeave: U
                                     })
                                 })
-                            }), t === a.M.ACTIVITIES_VOICE_LAUNCHER_BADGE ? (0, i.jsx)(g.a, {
+                            }), t === a.M.ACTIVITIES_VOICE_LAUNCHER_BADGE ? (0, i.jsx)(_.a, {
                                 top: 2,
                                 right: 2,
                                 size: 6

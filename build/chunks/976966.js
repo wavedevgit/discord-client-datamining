@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(253932),
     A = n(975571),
     m = n(822382),
-    g = n(753806),
+    _ = n(753806),
     p = n(345859),
-    _ = n(145331),
+    g = n(145331),
     f = n(121806),
     x = n(652215),
     C = n(49999),
@@ -33,7 +33,7 @@ function N(e) {
         isIndexing: c,
         isSearching: h,
         documentsIndexed: A,
-        selectedChannelId: _
+        selectedChannelId: g
     } = e, N = (0, p.H)(t), {
         totalFilters: S
     } = (0, f.vj)(N, t), T = s.useMemo(() => {
@@ -50,7 +50,7 @@ function N(e) {
     }, [D, M, y]), U = s.useCallback(e => {
         M("user:explicit" === e ? C.i.USER_DISMISS : C.i.AUTO_DISMISS)
     }, [M]), P = s.useCallback(() => {
-        G(null), g.A.openSearchFiltersModal(t)
+        G(null), _.A.openSearchFiltersModal(t)
     }, [G, t]), w = s.useMemo(() => S > 0 ? E.intl.format(E.t.uaR4sI, {
         filterCount: S
     }) : E.intl.string(E.t.UdhTtk), [S]), k = t.type === x.I4_.DMS || t.type === x.I4_.CHANNEL;
@@ -83,7 +83,7 @@ function N(e) {
                 setOpenPopout: G
             }), k && (0, i.jsx)(j, {
                 searchContext: t,
-                selectedChannelId: _,
+                selectedChannelId: g,
                 isPopoutOpen: "settings" === v,
                 setOpenPopout: G,
                 isPopoverVisible: D,
@@ -185,22 +185,22 @@ function j(e) {
         isPopoverVisible: c
     } = e, u = s.useRef(null), A = h.Hu.useSetting(), m = s.useCallback(e => {
         if (A !== e) {
-            if ((0, _._k)({
+            if ((0, g._k)({
                     searchContext: t,
                     prevIsCrossDMSettingEnabled: h.Hu.getSetting(),
                     isCrossDMSettingEnabled: e,
-                    location: _.vy.SEARCH_HEADER
+                    location: g.vy.SEARCH_HEADER
                 }), e) {
                 let e = {
                     type: x.I4_.DMS
                 };
-                g.A.transitionStateToSearchContext(t, e, g.A.cleanUpPrivateChannelSearchState)
+                _.A.transitionStateToSearchContext(t, e, _.A.cleanUpPrivateChannelSearchState)
             } else {
                 let e = {
                     type: x.I4_.CHANNEL,
                     channelId: n
                 };
-                g.A.transitionStateToSearchContext(t, e)
+                _.A.transitionStateToSearchContext(t, e)
             }
             a(null), h.Hu.updateSetting(e)
         }

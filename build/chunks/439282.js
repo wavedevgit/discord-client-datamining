@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(713654),
     A = n(832163),
     m = n(565688),
-    g = n(533562),
+    _ = n(533562),
     p = n(93879),
-    _ = n(71393),
+    g = n(71393),
     f = n(576705),
     x = n(977997),
     C = n(954571),
@@ -37,7 +37,7 @@ function L(e) {
     let t, {
         channel: l,
         guild: h,
-        onAction: _,
+        onAction: g,
         voiceStates: f,
         isChannelSelected: x,
         shouldShowSettingNudge: E
@@ -52,7 +52,7 @@ function L(e) {
     }, [l, f]), (0, c.Eq)(t, "VoiceChannelActivities");
     let N = (0, u.Ay)(l),
         b = Array.from((0, u.Rz)(N).values()),
-        S = (0, g.W)(),
+        S = (0, _.W)(),
         R = (0, d.mM)(f),
         L = (0, m.m)({
             location: "voice_channel_activities"
@@ -76,7 +76,7 @@ function L(e) {
             embeddedApp: e,
             presenceActivity: e.presenceActivity ?? void 0,
             channel: l,
-            onAction: _
+            onAction: g
         }, t)), R.map((e, t) => {
             let {
                 members: n,
@@ -87,7 +87,7 @@ function L(e) {
                     presenceActivity: a,
                     channel: l,
                     members: n,
-                    onAction: _
+                    onAction: g
                 }), (0, i.jsx)(p.A, {
                     className: j.L,
                     rewardOfferNoticeClassName: j.Nh,
@@ -103,7 +103,7 @@ function L(e) {
                 presenceActivity: a,
                 channel: l,
                 members: n,
-                onAction: _
+                onAction: g
             }, t)
         }), E && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
@@ -142,7 +142,7 @@ function M(e) {
         locked: l,
         video: o,
         selected: n
-    }), d = (0, r.bG)([_.A], () => _.A.getGuild(t.guild_id));
+    }), d = (0, r.bG)([g.A], () => g.A.getGuild(t.guild_id));
     return null == (0, h.gU)(t, d) ? null : (0, i.jsxs)("div", {
         className: a()(j.oT, R.oT),
         children: [(0, i.jsx)(N.A, {

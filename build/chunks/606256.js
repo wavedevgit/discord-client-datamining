@@ -19,9 +19,9 @@ let A = s.forwardRef(function(e, t) {
         onClick: l,
         onContextMenu: A,
         icon: m,
-        selected: g,
+        selected: _,
         tooltip: p,
-        upperBadge: _,
+        upperBadge: g,
         lowerBadge: f,
         lowerBadgeSize: x,
         showPill: C = !0,
@@ -37,14 +37,14 @@ let A = s.forwardRef(function(e, t) {
             className: h.Io,
             children: (0, i.jsx)(c.A, {
                 hovered: y,
-                selected: g
+                selected: _
             })
         }) : null, (0, i.jsx)(u.A, {
             text: p,
-            selected: g,
+            selected: _,
             children: (0, i.jsx)(o.Qk9, {
                 selected: !0,
-                upperBadge: _,
+                upperBadge: g,
                 lowerBadge: f,
                 lowerBadgeSize: x,
                 children: (0, i.jsx)(o.DUT, {
@@ -57,11 +57,11 @@ let A = s.forwardRef(function(e, t) {
                     },
                     onMouseDown: T,
                     className: a()(h.oZ, E, {
-                        [h.wH]: g || y
+                        [h.wH]: _ || y
                     }),
                     onClick: l,
                     "aria-label": R,
-                    "aria-selected": g,
+                    "aria-selected": _,
                     onContextMenu: A,
                     focusProps: {
                         enabled: !1

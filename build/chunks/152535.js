@@ -20,10 +20,10 @@ function m(e) {
         channel: t,
         themeable: n,
         whichPopoutIsOpen: m,
-        setWhichPopoutIsOpen: g
+        setWhichPopoutIsOpen: _
     } = e, {
         parentAnalyticsLocation: p
-    } = (0, r.Ay)(), _ = s.useRef(null), {
+    } = (0, r.Ay)(), g = s.useRef(null), {
         isHovered: f,
         setIsHovered: x,
         onMouseEnter: C,
@@ -40,10 +40,10 @@ function m(e) {
     }, [C, b]), v = s.useCallback(() => {
         null == m && (E(), S())
     }, [E, S, m]), y = s.useCallback(() => {
-        (0, o.X)(p, o.O.GIFTING), m === h.P.GIFTING ? (g?.(void 0), E()) : (null != m ? (N(), C()) : N(), g?.(h.P.GIFTING))
-    }, [C, E, p, N, g, m]);
+        (0, o.X)(p, o.O.GIFTING), m === h.P.GIFTING ? (_?.(void 0), E()) : (null != m ? (N(), C()) : N(), _?.(h.P.GIFTING))
+    }, [C, E, p, N, _, m]);
     return (0, i.jsx)(a.Y, {
-        targetElementRef: _,
+        targetElementRef: g,
         shouldShow: f && (m === h.P.GIFTING || null == m) || m === h.P.GIFTING,
         animation: a.Y.Animation.FADE,
         animationPosition: "top",
@@ -51,7 +51,7 @@ function m(e) {
         align: "center",
         spacing: 16,
         onRequestClose: () => {
-            x(!1), g?.(void 0)
+            x(!1), _?.(void 0)
         },
         renderPopout: e => {
             let {
@@ -66,7 +66,7 @@ function m(e) {
             })
         },
         children: () => (0, i.jsx)(u.l, {
-            ref: _,
+            ref: g,
             isTrayButton: !0,
             themeable: n,
             "aria-label": A.intl.string(A.t.PEjaCx),

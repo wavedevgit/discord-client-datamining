@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(793574),
     A = n(688810),
     m = n(919395),
-    g = n(657331),
+    _ = n(657331),
     p = n(696451),
-    _ = n(71393),
+    g = n(71393),
     f = n(287809),
     x = n(583613),
     C = n(403362),
@@ -49,7 +49,7 @@ class S {
     }
     generateNicknameGuildPairs = (0, x.L_)(e => a()(p.Ay.getNicknameGuildsMapping(e?.id ?? this.userId)).toPairs().map(e => {
         let [t, n] = e;
-        return [t, n.map(e => _.A.getGuild(e)?.name).filter(C.Vq)]
+        return [t, n.map(e => g.A.getGuild(e)?.name).filter(C.Vq)]
     }).filter(t => {
         let [n] = t;
         return n !== e?.globalName
@@ -93,7 +93,7 @@ class S {
         })
     }
     handleClick = () => {
-        (0, g.openUserProfileModal)({
+        (0, _.openUserProfileModal)({
             userId: this.userId,
             channelId: this.channelId,
             sourceAnalyticsLocations: this.analyticsLocations,
@@ -106,7 +106,7 @@ function T(e) {
     let {
         channel: t
     } = e, n = t.getRecipientId(), l = (0, m.EI)(n), a = Array(l.length).fill(null), {
-        analyticsLocations: g
+        analyticsLocations: _
     } = (0, A.Ay)(h.A.AKA), p = function(e) {
         let {
             userId: t,
@@ -126,7 +126,7 @@ function T(e) {
         }), a
     }({
         userId: n,
-        analyticsLocations: g,
+        analyticsLocations: _,
         channelId: t.id
     }), [x, C] = s.useState(!1), I = s.useCallback(() => {
         C(!0)
@@ -136,7 +136,7 @@ function T(e) {
     return 0 === p.getNicknameGuildPairs().length && 0 === l.length ? (0, i.jsx)("div", {
         className: b.jH
     }) : (0, i.jsxs)(A.f5, {
-        value: g,
+        value: _,
         children: [(0, i.jsx)(E.cG, {
             className: b.yF
         }), (0, i.jsx)(d.LpS, {
@@ -152,7 +152,7 @@ function T(e) {
                     a = l[n];
                 return null == a || null == s ? null : (0, i.jsx)(c.m, {
                     asContainer: !0,
-                    text: _.A.getGuild(a)?.name,
+                    text: g.A.getGuild(a)?.name,
                     position: "bottom",
                     children: (0, i.jsx)("img", {
                         alt: "",

@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(636449),
     A = n(263715),
     m = n(928568),
-    g = n(842452),
+    _ = n(842452),
     p = n(357064),
-    _ = n(985018),
+    g = n(985018),
     f = n(420956);
 
 function x(e) {
@@ -43,16 +43,16 @@ function x(e) {
                         className: f.q3,
                         children: [(0, i.jsx)(a.Heading, {
                             variant: "heading-md/medium",
-                            children: _.intl.string(_.t["0YV0YE"])
+                            children: g.intl.string(g.t["0YV0YE"])
                         }), (0, i.jsx)(a.Text, {
                             variant: "text-xs/normal",
                             color: "text-muted",
-                            children: _.intl.string(_.t["0UQVDL"])
+                            children: g.intl.string(g.t["0UQVDL"])
                         })]
                     }), (0, i.jsx)(a.Button, {
                         variant: "primary",
                         size: "sm",
-                        text: _.intl.string(_.t["4r+amb"]),
+                        text: g.intl.string(g.t["4r+amb"]),
                         fullWidth: !0,
                         onClick: h
                     })]
@@ -79,7 +79,7 @@ function C(e) {
     } = e, [n, C] = s.useState(!1), E = (0, l.bG)([u.A], () => u.A.getGuildId()), I = (0, l.bG)([d.A], () => d.A.hasFetchedRequestToJoinGuilds), N = (0, m.A)(), b = (0, r.A)(E), S = s.useMemo(() => {
         let e = (0, A.xW)({
             folderId: h.U.PENDING_JOIN_REQUESTS_FOLDER,
-            folderName: _.intl.string(_.t["scsU+l"]),
+            folderName: g.intl.string(g.t["scsU+l"]),
             expanded: n,
             guildIds: []
         });
@@ -94,7 +94,7 @@ function C(e) {
         !n && T && b !== E && C(!0)
     }, [n, T, b, E]), 0 === N.length) ? null : (0, i.jsx)(x, {
         onActivate: t,
-        children: (0, i.jsx)(g.A, {
+        children: (0, i.jsx)(_.A, {
             folderNode: S,
             expanded: n,
             selected: T,

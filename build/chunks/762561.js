@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(713517),
     A = n(182592),
     m = n(594832),
-    g = n(183555),
+    _ = n(183555),
     p = n(672385),
-    _ = n(622543),
+    g = n(622543),
     f = n(950191),
     x = n(679492),
     C = n(657331),
@@ -48,7 +48,7 @@ function V(e) {
         channel: p
     } = e, V = __OVERLAY__, H = (0, f.Ay)(t.id), F = (0, c.Ay)(), {
         analyticsLocations: K
-    } = (0, u.Ay)(d.A.USER_PROFILE_SIDEBAR), W = (0, g.pb)({
+    } = (0, u.Ay)(d.A.USER_PROFILE_SIDEBAR), W = (0, _.pb)({
         layout: "SIDEBAR",
         userId: t.id,
         channelId: p.id
@@ -69,8 +69,8 @@ function V(e) {
         })
     }, $ = H?.widgets != null && H.widgets.length > 0, {
         defaultWishlistId: Z
-    } = (0, r.cf)([_.A], () => ({
-        defaultWishlistId: _.A.getFirstWishlistId(t.id)
+    } = (0, r.cf)([g.A], () => ({
+        defaultWishlistId: g.A.getFirstWishlistId(t.id)
     })), {
         wishlist: ee
     } = (0, m.fw)({
@@ -79,7 +79,7 @@ function V(e) {
     }), et = s.useMemo(() => null == ee ? null : ee.items.filter(e => !e.isOwned), [ee]);
     return (0, i.jsx)(u.f5, {
         value: K,
-        children: (0, i.jsx)(g.of, {
+        children: (0, i.jsx)(_.of, {
             value: W,
             isLoaded: H?.isLoaded,
             children: (0, i.jsx)(x.Hl, {

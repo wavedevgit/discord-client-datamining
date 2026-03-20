@@ -16,9 +16,9 @@ var s = n(554146),
     h = n(757036),
     A = n(363487),
     m = n(828162),
-    g = n(652215),
+    _ = n(652215),
     p = n(49999),
-    _ = n(985018);
+    g = n(985018);
 
 function f(e) {
     let {
@@ -55,13 +55,13 @@ function f(e) {
                     aspectRatio: "21/9"
                 },
                 size: "video",
-                title: _.intl.string(_.t.bjJ7xZ),
-                body: _.intl.string(_.t.SeBPzu),
+                title: g.intl.string(g.t.bjJ7xZ),
+                body: g.intl.string(g.t.SeBPzu),
                 actions: [{
-                    text: _.intl.string(_.t["Xc9J+x"]),
+                    text: g.intl.string(g.t["Xc9J+x"]),
                     variant: "primary",
                     onClick: () => {
-                        c(p.i.TAKE_ACTION), u.A.open(t.id, g.BEX.BOOST_PERKS, o.A.GUILD_BOOSTING_PROGRESS_BAR_ADMIN_COACHMARK)
+                        c(p.i.TAKE_ACTION), u.A.open(t.id, _.BEX.BOOST_PERKS, o.A.GUILD_BOOSTING_PROGRESS_BAR_ADMIN_COACHMARK)
                     }
                 }]
             }) : r === s.M.BOOST_PROGRESS_BAR_MEMBER_COACHMARK ? (0, i.jsx)(a.A, {
@@ -82,10 +82,10 @@ function f(e) {
                     aspectRatio: "21/9"
                 },
                 size: "video",
-                title: _.intl.string(_.t["8W0djT"]),
-                body: _.intl.string(_.t.tgSfkH),
+                title: g.intl.string(g.t["8W0djT"]),
+                body: g.intl.string(g.t.tgSfkH),
                 actions: [{
-                    text: _.intl.string(_.t.cTJtBG),
+                    text: g.intl.string(g.t.cTJtBG),
                     variant: "primary",
                     onClick: () => {
                         c(p.i.TAKE_ACTION), (0, m.A)(t.id, o.A.GUILD_BOOSTING_PROGRESS_BAR_MEMBER_COACHMARK)

@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(826673),
     A = n(58736),
     m = n(31717),
-    g = n(203982),
+    _ = n(203982),
     p = n(43189),
-    _ = n(652215),
+    g = n(652215),
     f = n(49999),
     x = n(985018),
     C = n(163818);
@@ -33,7 +33,7 @@ let E = function(e) {
         })
     }, []);
     let I = s.useCallback(() => {
-            r.A.updateChatOpen(t.id, !1, "close button"), g._.safeDispatch(_.jej.FOCUS_CHAT_BUTTON)
+            r.A.updateChatOpen(t.id, !1, "close button"), _._.safeDispatch(g.jej.FOCUS_CHAT_BUTTON)
         }, [t.id]),
         N = (0, i.jsx)(A.Ay.Icon, {
             icon: a.PGe,

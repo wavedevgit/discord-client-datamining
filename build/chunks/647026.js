@@ -19,21 +19,21 @@ let u = e => {
         mostRecentQuery: h,
         handleClearSearch: A,
         handleSearchKeyPress: m,
-        handleCreateOrAddGuild: g,
+        handleCreateOrAddGuild: _,
         searchResults: p,
-        searchFetching: _
+        searchFetching: g
     } = e;
-    if (_) t = (0, i.jsx)("div", {
+    if (g) t = (0, i.jsx)("div", {
         className: o.$$,
         children: (0, i.jsx)(s.y$y, {
             className: o.u1
         })
     });
     else if (0 === p.length) {
-        let e = null != g ? r.intl.format(r.t.qWFupn, {
+        let e = null != _ ? r.intl.format(r.t.qWFupn, {
             addServerHook: function(e, t) {
                 return (0, i.jsx)(s.MzZ, {
-                    onClick: g,
+                    onClick: _,
                     children: e
                 }, t)
             }

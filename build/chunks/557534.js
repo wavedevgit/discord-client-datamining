@@ -19,9 +19,9 @@ var i = n(627968),
     h = n(698441),
     A = n(855687),
     m = n(816662),
-    g = n(446600),
+    _ = n(446600),
     p = n(728321),
-    _ = n(95701),
+    g = n(95701),
     f = n(616356),
     x = n(71393),
     C = n(576705),
@@ -47,7 +47,7 @@ function y(e) {
         forceShowButtons: l,
         hasChannelInfo: h = !1
     } = e;
-    return (0, r.bG)([C.A, E.A], () => n || (0, u.ai)(E.A.getGuildId()) || !C.A.can(N.xBc.MANAGE_CHANNELS, t) && !C.A.can(N.xBc.MANAGE_ROLES, t) && !C.A.can(N.xBc.MANAGE_WEBHOOKS, t) || (0, _.tr)(t.type) && !C.A.can(N.xBc.VIEW_CHANNEL, t) || t.isGuildVocal() && !C.A.can(N.xBc.CONNECT, t) || !_.bk.has(t.type) || t.isModeratorReportChannel()) ? null : (0, i.jsx)(o.m, {
+    return (0, r.bG)([C.A, E.A], () => n || (0, u.ai)(E.A.getGuildId()) || !C.A.can(N.xBc.MANAGE_CHANNELS, t) && !C.A.can(N.xBc.MANAGE_ROLES, t) && !C.A.can(N.xBc.MANAGE_WEBHOOKS, t) || (0, g.tr)(t.type) && !C.A.can(N.xBc.VIEW_CHANNEL, t) || t.isGuildVocal() && !C.A.can(N.xBc.CONNECT, t) || !g.bk.has(t.type) || t.isModeratorReportChannel()) ? null : (0, i.jsx)(o.m, {
         asContainer: !0,
         text: b.intl.string(b.t["3gUsJb"]),
         children: (0, i.jsx)(c.DUT, {
@@ -73,8 +73,8 @@ function j(e) {
         locked: d,
         tabIndex: u,
         forceShowButtons: m,
-        hasChannelInfo: _ = !1
-    } = e, E = (0, r.bG)([x.A], () => x.A.getGuild(t.getGuildId())), I = (0, r.bG)([g.A], () => g.A.getStageInstanceByChannel(t.id), [t.id]), T = (0, r.bG)([h.Ay], () => h.Ay.getActiveEventByChannel(t.id), [t.id]), v = (0, r.bG)([C.A], () => (0, A.K)(C.A, E, t, I)), y = (0, r.bG)([], () => t?.type === N.rbe.GUILD_VOICE ? b.intl.string(b.t["EE+P0H"]) : b.intl.string(b.t["0jeAXt"])), j = s.useRef(null);
+        hasChannelInfo: g = !1
+    } = e, E = (0, r.bG)([x.A], () => x.A.getGuild(t.getGuildId())), I = (0, r.bG)([_.A], () => _.A.getStageInstanceByChannel(t.id), [t.id]), T = (0, r.bG)([h.Ay], () => h.Ay.getActiveEventByChannel(t.id), [t.id]), v = (0, r.bG)([C.A], () => (0, A.K)(C.A, E, t, I)), y = (0, r.bG)([], () => t?.type === N.rbe.GUILD_VOICE ? b.intl.string(b.t["EE+P0H"]) : b.intl.string(b.t["0jeAXt"])), j = s.useRef(null);
     if (d || !v || t.isModeratorReportChannel() || t.isThread()) return null;
     let R = (0, i.jsx)(c.Rvf, {
         size: "xs",
@@ -94,7 +94,7 @@ function j(e) {
         asContainer: !0,
         text: y,
         children: (0, i.jsx)(c.DUT, {
-            className: a()(S.Xs, m ? S.Tf : void 0, _ ? S.bw : S.UI),
+            className: a()(S.Xs, m ? S.Tf : void 0, g ? S.bw : S.UI),
             onClick: function() {
                 if (null != E) {
                     let e = f.A.getAllActiveStreams().filter(e => e.state !== N.XYD.ENDED && e.channelId === t.id);

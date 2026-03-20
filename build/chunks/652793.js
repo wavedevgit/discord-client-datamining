@@ -22,9 +22,9 @@ function h(e) {
         renderIcon: h,
         text: A,
         selected: m,
-        trailing: g,
+        trailing: _,
         background: p,
-        showUnread: _ = !1,
+        showUnread: g = !1,
         ref: f,
         ...x
     } = e, C = (0, a.rm)(t), E = (0, r.O)(A) ?? "";
@@ -52,7 +52,7 @@ function h(e) {
             className: l()(d.fx, u.iE, {
                 [u.J1]: m
             }, n),
-            children: [p, _ ? (0, i.jsx)("div", {
+            children: [p, g ? (0, i.jsx)("div", {
                 className: l()(u.gy, u.WS)
             }) : null, (0, i.jsx)("div", {
                 className: l()([u.nf, u.ae, s]),
@@ -65,7 +65,7 @@ function h(e) {
                         className: u.UU,
                         "aria-hidden": !0,
                         children: A
-                    }), g]
+                    }), _]
                 })
             })]
         })

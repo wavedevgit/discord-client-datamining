@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(480890),
     A = n(160761),
     m = n(421773),
-    g = n(536432),
+    _ = n(536432),
     p = n(674168),
-    _ = n(989799),
+    g = n(989799),
     f = n(173660),
     x = n(430452),
     C = n(246356),
@@ -43,7 +43,7 @@ function b(e) {
     } = (0, r.E)(), L = t.getGuildId(), {
         mute: M,
         suppress: D
-    } = (0, f.A)(t), G = (0, l.bG)([x.Ay], () => x.Ay.isDeaf()), U = M || D || G, P = (0, g.VE)({
+    } = (0, f.A)(t), G = (0, l.bG)([x.Ay], () => x.Ay.isDeaf()), U = M || D || G, P = (0, _.VE)({
         isSoundboardButtonDisabled: U
     }), [w, k] = (0, A.DP)(P), {
         analyticsLocations: V
@@ -91,7 +91,7 @@ function b(e) {
                 children: (0, i.jsx)("div", {
                     onMouseEnter: F,
                     onMouseLeave: K,
-                    children: (0, i.jsx)(_.A, {
+                    children: (0, i.jsx)(g.A, {
                         guildId: L,
                         channel: t,
                         onClose: n,

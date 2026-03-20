@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(813516),
     A = n(906141),
     m = n(253932),
-    g = n(961350),
+    _ = n(961350),
     p = n(287809),
-    _ = n(405269),
+    g = n(405269),
     f = n(576456),
     x = n(712209),
     C = n(652215),
@@ -75,14 +75,14 @@ function T(e) {
         location: "20e3b0_1"
     }, {
         autoTrackExposure: !1
-    }), r = m.hH.useSetting(), A = (0, u.iJ)(n), f = !1, N = 0 === t.messages.length || a()(t.messages[0].timestamp).isSame(a()(), "day"), b = p.default.getUser(g.default.getId())?.hasFlag(C.nhx.SPAMMER) ?? !1, T = [];
+    }), r = m.hH.useSetting(), A = (0, u.iJ)(n), f = !1, N = 0 === t.messages.length || a()(t.messages[0].timestamp).isSame(a()(), "day"), b = p.default.getUser(_.default.getId())?.hasFlag(C.nhx.SPAMMER) ?? !1, T = [];
     if (!t.collapsed) {
         let e = null,
             c = null,
             m = t.messages.slice(0, x.sz);
         m.forEach(t => {
             if (!N && (null == e || !e.isSame(t.timestamp, "day"))) {
-                let n = (0, _.i$)(t.timestamp, "LL");
+                let n = (0, g.i$)(t.timestamp, "LL");
                 T.push((0, i.jsx)(h.A, {
                     className: I.yF,
                     children: n

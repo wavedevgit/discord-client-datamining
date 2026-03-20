@@ -16,9 +16,9 @@ var s = n(503698),
     h = n(572808),
     A = n(241080),
     m = n(952057),
-    g = n(985018),
+    _ = n(985018),
     p = n(522040);
-let _ = e => {
+let g = e => {
         let {
             soundKey: t,
             globalMute: n
@@ -61,7 +61,7 @@ let _ = e => {
                 children: (0, i.jsx)(r.Heading, {
                     variant: "heading-md/medium",
                     color: "text-subtle",
-                    children: g.intl.string(m.default.vaWEe0)
+                    children: _.intl.string(m.default.vaWEe0)
                 })
             }), (0, i.jsxs)(r.BJc, {
                 direction: "horizontal",
@@ -76,7 +76,7 @@ let _ = e => {
                     }), (0, i.jsx)(r.Text, {
                         variant: "text-sm/normal",
                         color: "text-subtle",
-                        children: g.intl.format(m.default.i22p4p, {
+                        children: _.intl.format(m.default.i22p4p, {
                             artist: j.artist
                         })
                     })]
@@ -85,13 +85,13 @@ let _ = e => {
                     children: [(0, i.jsx)(r.K0, {
                         variant: "icon-only",
                         size: "sm",
-                        "aria-label": g.intl.string(m.default.FL0ePz),
+                        "aria-label": _.intl.string(m.default.FL0ePz),
                         icon: r.fEi,
                         onClick: T
                     }), (0, i.jsx)(r.K0, {
                         variant: "icon-only",
                         size: "sm",
-                        "aria-label": g.intl.string(m.default.zsW8PM),
+                        "aria-label": _.intl.string(m.default.zsW8PM),
                         icon: b ? r.E$n : r.udU,
                         onClick: e => {
                             e.preventDefault(), e.stopPropagation(), S(!b)
@@ -99,7 +99,7 @@ let _ = e => {
                     }), (0, i.jsx)(r.K0, {
                         variant: "icon-only",
                         size: "sm",
-                        "aria-label": g.intl.string(m.default["+nt9+r"]),
+                        "aria-label": _.intl.string(m.default["+nt9+r"]),
                         icon: r.uhT,
                         onClick: v
                     })]
@@ -151,14 +151,14 @@ let _ = e => {
                 children: [(0, i.jsx)(r.Text, {
                     variant: "text-md/medium",
                     color: "text-subtle",
-                    children: g.intl.string(m.default.IWSNp9)
+                    children: _.intl.string(m.default.IWSNp9)
                 }), (0, i.jsx)("div", {
                     className: l()({
                         [p.SU]: x
                     }),
                     children: (0, i.jsx)(r.K0, {
                         variant: "icon-only",
-                        "aria-label": g.intl.string(m.default.Tf8XqQ),
+                        "aria-label": _.intl.string(m.default.Tf8XqQ),
                         icon: x ? r._RO : r.HKD,
                         onClick: e => {
                             e.preventDefault(), e.stopPropagation(), C(!x)
@@ -167,13 +167,13 @@ let _ = e => {
                 })]
             }), (0, i.jsxs)(r.BJc, {
                 gap: 8,
-                children: [(0, i.jsx)(_, {
+                children: [(0, i.jsx)(g, {
                     soundKey: h.wS.RADIO,
                     globalMute: x
-                }), (0, i.jsx)(_, {
+                }), (0, i.jsx)(g, {
                     soundKey: h.wS.ENVIRONMENT,
                     globalMute: x
-                }), (0, i.jsx)(_, {
+                }), (0, i.jsx)(g, {
                     soundKey: h.wS.CAMPFIRE,
                     globalMute: x
                 })]

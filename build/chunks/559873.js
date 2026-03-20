@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(164684),
     A = n(85109),
     m = n(914703),
-    g = n(932883),
+    _ = n(932883),
     p = n(394953),
-    _ = n(654795),
+    g = n(654795),
     f = n(849077),
     x = n(652215),
     C = n(985018),
@@ -37,7 +37,7 @@ function N(e) {
         message: l,
         Icon: o,
         interactionType: c
-    } = e, [d, u] = (0, s.useState)(!1), h = (0, g.op)();
+    } = e, [d, u] = (0, s.useState)(!1), h = (0, _.op)();
     return (0, i.jsx)(a.m, {
         text: t,
         position: "top",
@@ -48,7 +48,7 @@ function N(e) {
         children: (0, i.jsx)(r.DUT, {
             className: E.XI,
             onClick: e => {
-                (0, g.Ml)({
+                (0, _.Ml)({
                     message: l,
                     interactionType: c,
                     viewId: h
@@ -71,10 +71,10 @@ function b(e) {
         Menu: c,
         interactionType: d,
         actionType: u
-    } = e, h = (0, g.op)(), [A, m] = (0, s.useState)(!1), [p, f] = (0, s.useState)(!1), x = (0, s.useRef)(null), {
+    } = e, h = (0, _.op)(), [A, m] = (0, s.useState)(!1), [p, f] = (0, s.useState)(!1), x = (0, s.useRef)(null), {
         openMenu: C,
         closeMenu: I
-    } = (0, _.s)();
+    } = (0, g.s)();
     return (0, i.jsx)(r.YNO, {
         shouldShow: p,
         animation: r.YNO.Animation.NONE,
@@ -107,7 +107,7 @@ function b(e) {
                 className: E.XI,
                 onClick: e => {
                     let t;
-                    (0, g.Ml)({
+                    (0, _.Ml)({
                         message: n,
                         interactionType: d,
                         viewId: h
@@ -139,7 +139,7 @@ let S = {
                 objectType: x.AnalyticsObjectTypes.ACK_MANUAL
             }, !0, void 0, e.id)
         },
-        interactionType: g.X8.ACK
+        interactionType: _.X8.ACK
     },
     [f.kR.BOOKMARK]: {
         type: "menu",
@@ -149,7 +149,7 @@ let S = {
         }) : (0, i.jsx)(r.c$8, {
             ...e
         }),
-        interactionType: g.X8.BOOKMARK,
+        interactionType: _.X8.BOOKMARK,
         Menu: e => {
             let {
                 message: t,
@@ -200,7 +200,7 @@ let S = {
         type: "menu",
         Icon: r.XFE,
         label: C.intl.string(C.t.h850Ss),
-        interactionType: g.X8.SETTINGS,
+        interactionType: _.X8.SETTINGS,
         Menu: e => {
             let {
                 channel: t,

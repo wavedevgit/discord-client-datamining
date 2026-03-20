@@ -15,16 +15,16 @@ var i = n(417597),
     h = n(473529),
     A = n(978165),
     m = n(960253),
-    g = n(18905),
+    _ = n(18905),
     p = n(488803),
-    _ = n(969117),
+    g = n(969117),
     f = n(363487),
     x = n(871123),
     C = n(281405),
     E = n(652215);
 
 function I(e) {
-    let t = (0, g.A)(e.id),
+    let t = (0, _.A)(e.id),
         n = (0, o.W)(e.id),
         I = (0, m.vz)(e.id),
         N = (0, l.r)(e),
@@ -41,7 +41,7 @@ function I(e) {
         D = (0, f.A)(e.id),
         G = (0, p.C$)(e.id, "useGuildActionRows"),
         U = e.features.has(E.GuildFeatures.GAME_SERVERS),
-        P = (0, _.N)("useGuildActionRows"),
+        P = (0, g.N)("useGuildActionRows"),
         [w] = (0, a.kn)(G && P && !U ? [s.M.EMPTY_GAME_SERVER_TAB] : [], void 0, !0),
         k = (0, r.ws)(e, {
             location: "guild-action-rows"

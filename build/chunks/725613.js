@@ -24,7 +24,7 @@ function A() {
 function m(e) {
     d.delete(e.guild.id)
 }
-class g extends l.Ay.Store {
+class _ extends l.Ay.Store {
     initialize() {
         this.waitFor(r.A)
     }
@@ -36,7 +36,7 @@ class g extends l.Ay.Store {
         return d.has(e)
     }
 }
-let p = new g(a.h, {
+let p = new _(a.h, {
     GUILD_CREATE: m,
     GUILD_DELETE: m,
     CONNECTION_RESUMED: A,

@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(47167),
     A = n(598104),
     m = n(616356),
-    g = n(383501),
+    _ = n(383501),
     p = n(222823),
-    _ = n(309010),
+    g = n(309010),
     f = n(287809),
     x = n(607567),
     C = n(531685),
@@ -168,8 +168,8 @@ class R extends s.PureComponent {
             treeItemProps: h
         } = this.props, {
             hovered: m,
-            animating: g
-        } = this.state, p = e.isMultiUserDM() && null == e.icon, _ = () => (0, i.jsx)(o.jlP, {
+            animating: _
+        } = this.state, p = e.isMultiUserDM() && null == e.icon, g = () => (0, i.jsx)(o.jlP, {
             to: S.BVt.CHANNEL(S.ME, e.id),
             onMouseEnter: () => this.setState({
                 hovered: !0
@@ -197,9 +197,9 @@ class R extends s.PureComponent {
             style: this.getAnimatedStyle(),
             children: (0, i.jsxs)(N.c, {
                 children: [(0, i.jsx)(E.A, {
-                    hovered: !g && m,
-                    selected: !g && n,
-                    unread: !g && u,
+                    hovered: !_ && m,
+                    selected: !_ && n,
+                    unread: !_ && u,
                     className: v.I
                 }), (0, i.jsx)(I.A, {
                     channel: e,
@@ -216,7 +216,7 @@ class R extends s.PureComponent {
                         lowerBadgeSize: {
                             width: (0, o.o6S)(s)
                         },
-                        children: _()
+                        children: g()
                     })
                 })]
             })
@@ -227,11 +227,11 @@ let O = s.forwardRef(function(e, t) {
     let n = e.channel.id,
         s = (0, h.Ay)(e.channel),
         l = (0, a.Vd)(n, 2),
-        c = (0, r.bG)([g.A], () => g.A.getChannelId(), []),
+        c = (0, r.bG)([_.A], () => _.A.getChannelId(), []),
         u = (0, r.bG)([d.A], () => d.A.getMode(n), [n]),
         A = (0, r.bG)([m.A], () => m.A.getAllApplicationStreamsForChannel(n).length > 0),
         f = (0, r.bG)([x.Ay], () => x.Ay.getVoiceStatesForChannel(e.channel).length > 0, [e.channel]),
-        C = (0, r.bG)([_.A], () => _.A.getChannelId(), []),
+        C = (0, r.bG)([g.A], () => g.A.getChannelId(), []),
         E = (0, r.bG)([p.Ay], () => p.Ay.getMentionCount(n), [n]),
         I = c === n,
         N = !1,

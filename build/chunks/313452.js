@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(928039),
     A = n(793574),
     m = n(688810),
-    g = n(222823),
+    _ = n(222823),
     p = n(203982),
-    _ = n(661191),
+    g = n(661191),
     f = n(851109),
     x = n(932883),
     C = n(39324),
@@ -134,11 +134,11 @@ function D(e) {
             messageCategoryOpenStates: W,
             toggleOpenState: Y
         } = (0, C.A)(),
-        z = (t = (0, d.yK)([E.A], () => E.A.getNotifyingChannelIds() ?? []), (0, d.bG)([E.A, g.Ay], () => {
+        z = (t = (0, d.yK)([E.A], () => E.A.getNotifyingChannelIds() ?? []), (0, d.bG)([E.A, _.Ay], () => {
             let e = E.A.getChannelInfoMap();
             for (let n of t) {
                 let t = e[n];
-                if ((null == t || t.loadState === S.Ve.UNLOADED) && g.Ay.hasUnread(n)) return !0
+                if ((null == t || t.loadState === S.Ve.UNLOADED) && _.Ay.hasUnread(n)) return !0
             }
             return !1
         }, [t]));
@@ -189,7 +189,7 @@ function D(e) {
                 let n = (0, I.i7)(e);
                 e.kind === S.yL.MENTION ? t[n].push(e) : e.channelId in i[n] ? i[n][e.channelId].push(e) : i[n][e.channelId] = [e]
             }), o().each(L, n => {
-                [...Object.values(i[n]).map(e => e.reverse()), ...t[n].map(e => [e])].sort((e, t) => _.default.compare(t[0].id, e[0].id)).forEach(t => {
+                [...Object.values(i[n]).map(e => e.reverse()), ...t[n].map(e => [e])].sort((e, t) => g.default.compare(t[0].id, e[0].id)).forEach(t => {
                     e[n].push(t)
                 })
             })), e

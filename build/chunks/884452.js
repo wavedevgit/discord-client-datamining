@@ -1,9 +1,9 @@
 /** chunk id: 884452 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => _,
+    Ay: () => g,
     is: () => p,
-    sc: () => g
+    sc: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -18,7 +18,7 @@ var i = n(627968),
     A = n(985018),
     m = n(343319);
 
-function g(e, t, n, i) {
+function _(e, t, n, i) {
     let s = "compact" === i ? 8 : 12;
     if (e === c.PU) return s;
     if (e === c.bK) return t.features.has(h.GuildFeatures.HUB) ? 0 : s;
@@ -51,21 +51,21 @@ function p(e, t) {
         }
     }
 }
-let _ = s.memo(function(e) {
+let g = s.memo(function(e) {
     let {
         sectionIndex: t,
         guild: n,
-        guildChannels: g,
+        guildChannels: _,
         guildChannelsVersion: p,
-        selectedChannelId: _,
+        selectedChannelId: g,
         disableManageChannels: f
     } = e, x = s.useCallback(() => {
-        let e = g.getCategoryFromSection(g.recentsSectionNumber);
+        let e = _.getCategoryFromSection(_.recentsSectionNumber);
         if (null == e) return;
         let t = null,
             i = e.getShownChannelAndThreadIds();
-        null != _ && i.includes(_) && (t = (0, a.xb)(g)), (0, a.DD)(n.id, i, t)
-    }, [n.id, _, g, p]), {
+        null != g && i.includes(g) && (t = (0, a.xb)(_)), (0, a.DD)(n.id, i, t)
+    }, [n.id, g, _, p]), {
         density: C
     } = (0, l.wRf)(), E = "compact" === C ? 8 : 12;
     switch (t) {
@@ -86,15 +86,15 @@ let _ = s.memo(function(e) {
             return (0, i.jsx)(d.P4, {
                 name: A.intl.string(A.t.mlPMCy)
             });
-        case g.recentsSectionNumber:
+        case _.recentsSectionNumber:
             return (0, i.jsx)(d.P4, {
                 name: A.intl.string(A.t.gKcrqM),
                 onDismiss: x
             });
-        case g.voiceChannelsSectionNumber: {
-            let e = g.getCategoryFromSection(g.voiceChannelsSectionNumber);
+        case _.voiceChannelsSectionNumber: {
+            let e = _.getCategoryFromSection(_.voiceChannelsSectionNumber);
             if (null == e || e.isEmpty()) return null;
-            let n = g.getChannelFromSectionRow(t, 0)?.channel;
+            let n = _.getChannelFromSectionRow(t, 0)?.channel;
             return (0, i.jsxs)(s.Fragment, {
                 children: [(0, i.jsx)("div", {
                     className: m.ts
@@ -105,7 +105,7 @@ let _ = s.memo(function(e) {
             })
         }
         case c.TF: {
-            let e = g.getNamedCategoryFromSection(t);
+            let e = _.getNamedCategoryFromSection(t);
             if (null == e) return null;
             return (0, i.jsx)(d.Ay, {
                 channel: e.record,
@@ -120,7 +120,7 @@ let _ = s.memo(function(e) {
             })
         }
         default: {
-            let e = g.getNamedCategoryFromSection(t);
+            let e = _.getNamedCategoryFromSection(t);
             if (null == e) return null;
             return (0, i.jsx)(d.Ay, {
                 channel: e.record,

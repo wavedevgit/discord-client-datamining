@@ -16,9 +16,9 @@ var i = n(627968),
     h = n(573435),
     A = n(101555),
     m = n(263063),
-    g = n(714991),
+    _ = n(714991),
     p = n(776231),
-    _ = n(345942),
+    g = n(345942),
     f = n(71393),
     x = n(486020),
     C = n(860689),
@@ -117,7 +117,7 @@ let j = s.memo(function(e) {
     } = e, [l, a] = s.useState(!1), o = null != (0, r.bG)([f.A], () => f.A.getGuild(t.guildId)), A = async () => {
         a(!0);
         try {
-            o ? (0, _.u)(t.guildId) : await u.A.joinGuild(t.guildId, {
+            o ? (0, g.u)(t.guildId) : await u.A.joinGuild(t.guildId, {
                 source: N.Q4z.DIRECTORY_ENTRY
             })
         } finally {
@@ -176,7 +176,7 @@ let j = s.memo(function(e) {
             className: S.OA,
             children: [(0, i.jsxs)("div", {
                 className: S.DD,
-                children: [(0, i.jsx)(g.A, {
+                children: [(0, i.jsx)(_.A, {
                     className: S.n2,
                     guild: t
                 }), (0, i.jsx)(c.Text, {

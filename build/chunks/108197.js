@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(442433),
     A = n(152007),
     m = n(747926),
-    g = n(734057),
+    _ = n(734057),
     p = n(222823),
-    _ = n(977997),
+    g = n(977997),
     f = n(607567),
     x = n(892896),
     C = n(884415),
@@ -103,7 +103,7 @@ let R = s.memo(function(e) {
         isSelectedVoice: y,
         isLast: R,
         withGuildIcon: O
-    } = e, L = (0, o.bG)([f.Ay], () => f.Ay.getVoiceStatesForChannel(t), [t]), M = (0, o.bG)([_.A], () => _.A.hasVideo(t.id)), {
+    } = e, L = (0, o.bG)([f.Ay], () => f.Ay.getVoiceStatesForChannel(t), [t]), M = (0, o.bG)([g.A], () => g.A.hasVideo(t.id)), {
         unread: D,
         mentionCount: G,
         isMentionLowImportance: U
@@ -116,7 +116,7 @@ let R = s.memo(function(e) {
     }, [t]), k = s.useCallback(() => {
         u.A.preload(t.guild_id, t.id)
     }, [t.guild_id, t.id]), V = s.useCallback(e => {
-        let s = g.A.getChannel(t.id);
+        let s = _.A.getChannel(t.id);
         null != s && (0, h.L3)(e, async () => {
             let {
                 default: e

@@ -16,9 +16,9 @@ var s = n(163126),
     h = n(21241),
     A = n(503062),
     m = n(51943),
-    g = n(946356),
+    _ = n(946356),
     p = n(359656),
-    _ = n(985018),
+    g = n(985018),
     f = n(155698);
 
 function x(e) {
@@ -34,11 +34,11 @@ function x(e) {
         mutualFriends: N,
         mutualGuilds: b
     } = (0, c.A)(t), S = !t.bot && null != I && I > 0, T = null != b && b.length > 0;
-    return S || T ? (0, i.jsxs)(g.A.Overlay, {
+    return S || T ? (0, i.jsxs)(_.A.Overlay, {
         className: f.Lw,
         children: [T && (0, i.jsx)(p.A, {
             section: "MUTUAL_GUILDS",
-            header: _.intl.string(_.t["4lTDZq"]),
+            header: g.intl.string(g.t["4lTDZq"]),
             listClassName: f.p_,
             items: b.map(e => {
                 let {
@@ -56,7 +56,7 @@ function x(e) {
             className: f.yF
         }), S && (0, i.jsx)(p.A, {
             section: "MUTUAL_FRIENDS",
-            header: _.intl.string(_.t["0mTJ3j"]),
+            header: g.intl.string(g.t["0mTJ3j"]),
             listClassName: f.p_,
             onExpand: () => (0, d.A)(t.id, E),
             items: null == N ? Array.from({

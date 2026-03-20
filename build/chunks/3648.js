@@ -1,8 +1,8 @@
 /** chunk id: 3648 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _,
-    Z: () => g
+    A: () => g,
+    Z: () => _
 });
 var i = n(627968);
 n(64700);
@@ -18,15 +18,15 @@ var s = n(397927),
     A = n(673892),
     m = n(754558);
 
-function g(e, t) {
+function _(e, t) {
     let {
         moreCount: n,
         onViewWishlist: s,
         isSingleCard: a = !1,
         profileOwner: m,
-        wishlistId: g,
+        wishlistId: _,
         cardSize: p,
-        analyticsLocations: _
+        analyticsLocations: g
     } = t, f = null != n && n > 0, x = {
         title: f ? h.intl.string(h.t.TxBQzD) : h.intl.string(h.t["4yiU7x"]),
         body: f ? void 0 : h.intl.string(h.t.ilhtIa),
@@ -41,7 +41,7 @@ function g(e, t) {
                 giftRecipient: m,
                 giftingOrigin: u.vQ.USER_PROFILE_WISHLIST
             }, {
-                analyticsLocations: [..._, l.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON]
+                analyticsLocations: [...g, l.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON]
             })
         },
         tooltipConfig: x,
@@ -55,7 +55,7 @@ function g(e, t) {
         }),
         moreCount: n,
         isSingleCard: a,
-        wishlistId: g,
+        wishlistId: _,
         cardSize: p
     }, e.skuId)
 }
@@ -102,13 +102,13 @@ function p(e) {
     })
 }
 
-function _(e, t) {
+function g(e, t) {
     let {
         profileOwner: n,
         analyticsLocations: s,
         wishlistId: l,
         onViewWishlist: a
-    } = t, r = g(e, {
+    } = t, r = _(e, {
         index: 0,
         profileOwner: n,
         analyticsLocations: s,

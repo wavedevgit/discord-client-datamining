@@ -16,20 +16,20 @@ var s = n(417597),
     h = n(694967),
     A = n(431516),
     m = n(652215),
-    g = n(985018);
+    _ = n(985018);
 
 function p(e) {
     let t = (0, s.bG)([o.A], () => o.A.getChannelId() === e.id),
         p = (0, u.A)(),
-        _ = p?.channelId === e.id,
+        g = p?.channelId === e.id,
         f = (0, r.J)(e) && !e.isPrivate(),
         x = (0, r.A)(e),
         C = !(0, s.bG)([c.A], () => c.A.isInChannel(e.id)) && x || f,
         E = (0, h.A)();
-    if (!_ && 0 === E.length) return null;
+    if (!g && 0 === E.length) return null;
     let I = (0, A.A)(void 0);
-    return _ ? (0, i.jsx)(l.Drp, {
-        label: g.intl.string(g.t.PlwgdU),
+    return g ? (0, i.jsx)(l.Drp, {
+        label: _.intl.string(_.t.PlwgdU),
         id: "handoff",
         action: () => {
             (0, d.x)(p)
@@ -45,7 +45,7 @@ function p(e) {
         let c = (0, A.A)(s.type);
         return (0, i.jsx)(l.Drp, {
             id: `transfer-${s.type}-${s.id}`,
-            label: (r = s.type, o = t, r === m.fg2.XBOX ? o ? g.intl.string(g.t["qVE/VF"]) : g.intl.string(g.t.E8euSk) : r === m.fg2.PLAYSTATION ? o ? g.intl.string(g.t.vzfxmY) : g.intl.string(g.t.QxEYDj) : r === m.fg2.PLAYSTATION_STAGING ? o ? g.intl.string(g.t.BDiXtV) : g.intl.string(g.t["bhdB9+"]) : void 0),
+            label: (r = s.type, o = t, r === m.fg2.XBOX ? o ? _.intl.string(_.t["qVE/VF"]) : _.intl.string(_.t.E8euSk) : r === m.fg2.PLAYSTATION ? o ? _.intl.string(_.t.vzfxmY) : _.intl.string(_.t.QxEYDj) : r === m.fg2.PLAYSTATION_STAGING ? o ? _.intl.string(_.t.BDiXtV) : _.intl.string(_.t["bhdB9+"]) : void 0),
             action: () => {
                 !s.twoWayLink || s.revoked ? (0, a.A)({
                     platformType: s.type,

@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(334463),
     A = n(175203),
     m = n(652215),
-    g = n(806931),
+    _ = n(806931),
     p = n(353088),
-    _ = n(754694);
+    g = n(754694);
 let f = "CameraPreviewPosition";
 
 function x(e) {
@@ -33,16 +33,16 @@ function x(e) {
         return [e, s.useCallback(e => {
             o.w.set(f, e), t(e)
         }, [])]
-    }(), b = s.useRef(null), S = null == x.getGuildId() ? 70 : 50, T = (0, r.bG)([h.A], () => h.A.pipWidth(g.R8.CAMERA_PREVIEW)), v = C.length, y = T * v + 8 * (v - 1), j = s.useMemo(() => ({
-        minWidth: g.mn[g.R8.CAMERA_PREVIEW] * v + 8 * (v - 1),
-        maxWidth: g.cF[g.R8.CAMERA_PREVIEW] * v + 8 * (v - 1)
+    }(), b = s.useRef(null), S = null == x.getGuildId() ? 70 : 50, T = (0, r.bG)([h.A], () => h.A.pipWidth(_.R8.CAMERA_PREVIEW)), v = C.length, y = T * v + 8 * (v - 1), j = s.useMemo(() => ({
+        minWidth: _.mn[_.R8.CAMERA_PREVIEW] * v + 8 * (v - 1),
+        maxWidth: _.cF[_.R8.CAMERA_PREVIEW] * v + 8 * (v - 1)
     }), [v]);
     s.useLayoutEffect(() => {
         b.current?.ensureIsInPosition()
     }, [C.length]);
     let R = s.useCallback(e => {
             let t = 0 === v ? e : (e - 8 * (v - 1)) / v;
-            c.EB(t, g.R8.CAMERA_PREVIEW)
+            c.EB(t, _.R8.CAMERA_PREVIEW)
         }, [v]),
         O = s.useCallback((e, t) => {
             N(t)
@@ -69,7 +69,7 @@ function x(e) {
                     participant: e,
                     channel: x,
                     onContextMenu: n,
-                    className: a()(p.Vs, _.a8),
+                    className: a()(p.Vs, g.a8),
                     fit: A.Yl.COVER,
                     inCall: !0,
                     popoutType: d.N.NO_POPOUT,

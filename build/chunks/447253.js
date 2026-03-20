@@ -36,7 +36,7 @@ function m(e) {
     })
 }
 
-function g(e) {
+function _(e) {
     let {
         folderNode: t,
         hovered: n,
@@ -83,7 +83,7 @@ function p(e) {
         tooltipName: d,
         folderGroupId: m,
         folderButtonContent: p,
-        onClick: _,
+        onClick: g,
         onContextMenu: f,
         onHoverChange: x,
         onKeyDown: C,
@@ -101,7 +101,7 @@ function p(e) {
     return (0, i.jsx)(o.vN3, {
         children: (0, i.jsxs)(o.DUT, {
             className: A.H3,
-            onClick: _,
+            onClick: g,
             onContextMenu: f,
             onMouseEnter: v,
             onMouseLeave: y,
@@ -134,7 +134,7 @@ function p(e) {
                     children: null != p ? (0, i.jsx)("div", {
                         className: A.hJ,
                         children: p
-                    }) : (0, i.jsx)(g, {
+                    }) : (0, i.jsx)(_, {
                         folderNode: t,
                         hovered: S,
                         sorting: l

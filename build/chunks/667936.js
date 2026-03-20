@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(592182),
     A = n(172710),
     m = n(636585),
-    g = n(95701),
+    _ = n(95701),
     p = n(961350),
-    _ = n(287809),
+    g = n(287809),
     f = n(486020),
     x = n(427262),
     C = n(43950),
@@ -70,7 +70,7 @@ let b = e => {
         embeddedApp: a,
         onAction: o,
         enableUserHoverActivities: c
-    } = e, m = null != a, f = m ? Array.from(a.embeddedActivity.userIds) : [], x = (0, r.bG)([_.default, p.default], () => m ? _.default.getUser(f[0]) : null != l ? l.length <= 0 ? null : l.find(e => e.user.id !== p.default.getId())?.user ?? l[0].user : void 0), I = s.useCallback(() => {
+    } = e, m = null != a, f = m ? Array.from(a.embeddedActivity.userIds) : [], x = (0, r.bG)([g.default, p.default], () => m ? g.default.getUser(f[0]) : null != l ? l.length <= 0 ? null : l.find(e => e.user.id !== p.default.getId())?.user ?? l[0].user : void 0), I = s.useCallback(() => {
         if (!c && null != l) return () => (0, i.jsx)(N, {
             guildId: t.guild_id,
             members: l
@@ -78,7 +78,7 @@ let b = e => {
     }, [c, l, t.guild_id])();
     if (null == x) return null;
     let b = m || (0, u.A)(n),
-        S = (0, g.gV)(t.type),
+        S = (0, _.gV)(t.type),
         T = c ? C.z : C.A;
     return (0, i.jsxs)("div", {
         className: c ? void 0 : E.Eb,

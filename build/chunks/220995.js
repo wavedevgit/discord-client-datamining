@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(964486),
     A = n(793574),
     m = n(688810),
-    g = n(139286),
+    _ = n(139286),
     p = n(713517),
-    _ = n(71393),
+    g = n(71393),
     f = n(576705),
     x = n(954571),
     C = n(778768),
@@ -35,7 +35,7 @@ function T(e) {
     } = e, T = s.useRef(null), [v, y] = s.useState(!1), j = s.useRef(null), R = s.useRef(null), [O, L] = s.useState(0), {
         analyticsLocations: M
     } = (0, m.Ay)(A.A.VOICE_INVITE_SUGGESTIONS);
-    (0, g.A)({
+    (0, _.A)({
         name: o.ImpressionNames.VOICE_INVITE_SUGGESTIONS_ENTRYPOINT,
         type: o.ImpressionTypes.VIEW,
         properties: {
@@ -45,7 +45,7 @@ function T(e) {
         }
     });
     let D = (0, c.bG)([f.A], () => f.A.can(E.xBc.CREATE_INSTANT_INVITE, t), [t]),
-        G = (0, c.bG)([_.A], () => _.A.getGuild(t.guild_id)),
+        G = (0, c.bG)([g.A], () => g.A.getGuild(t.guild_id)),
         [U, P] = s.useState(!1),
         w = s.useRef(null),
         {

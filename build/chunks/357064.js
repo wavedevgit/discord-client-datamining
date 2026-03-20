@@ -30,11 +30,11 @@ function A(e, t) {
 function m(e) {
     let {
         guildNode: t
-    } = e, n = t.id, l = (0, s.bG)([r.A], () => r.A.getRequest(n)), m = (0, s.bG)([r.A], () => r.A.getJoinRequestGuild(n), [n]), g = (0, s.bG)([c.A], () => c.A.isFocused()), p = (0, s.bG)([o.A], () => o.A.getGuildId());
+    } = e, n = t.id, l = (0, s.bG)([r.A], () => r.A.getRequest(n)), m = (0, s.bG)([r.A], () => r.A.getJoinRequestGuild(n), [n]), _ = (0, s.bG)([c.A], () => c.A.isFocused()), p = (0, s.bG)([o.A], () => o.A.getGuildId());
     return null == m ? null : (0, i.jsx)(d.A, {
         guildNode: t,
         guild: m,
-        animatable: g,
+        animatable: _,
         draggable: !1,
         selected: n === p,
         preloadOnClick: !1,

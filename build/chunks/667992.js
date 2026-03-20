@@ -15,15 +15,15 @@ var i = n(627968),
     h = n(480890),
     A = n(267102),
     m = n(342296),
-    g = n(636585),
+    _ = n(636585),
     p = n(486020),
-    _ = n(116700);
+    g = n(116700);
 
 function f(e) {
     let {
         channel: t,
         speaker: l,
-        className: g
+        className: _
     } = e, f = s.useRef(null), {
         newestAnalyticsLocation: x
     } = (0, u.Ay)(), C = (0, A.Us)(), {
@@ -69,7 +69,7 @@ function f(e) {
                 children: (0, i.jsx)(o.euF, {
                     src: N ?? l.user.getAvatarURL(t.guild_id, 24),
                     size: o._3J.SIZE_24,
-                    className: a()(_.my, g),
+                    className: a()(g.my, _),
                     "aria-label": l.userNick,
                     isSpeaking: I && !E.enabled
                 })
@@ -83,8 +83,8 @@ function x(e) {
         speakers: t,
         channel: n
     } = e;
-    return (0, i.jsx)(g.A, {
-        className: _.z,
+    return (0, i.jsx)(_.A, {
+        className: g.z,
         guildId: n.guild_id,
         users: t,
         max: 10,
@@ -94,7 +94,7 @@ function x(e) {
             className: t
         }, s),
         renderMoreUsers: (e, t, n) => (0, i.jsx)("div", {
-            className: a()(_.$U, t),
+            className: a()(g.$U, t),
             children: e
         }, n)
     })

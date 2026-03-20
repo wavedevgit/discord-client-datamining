@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(951001),
     A = n(775602),
     m = n(793574),
-    g = n(58149),
+    _ = n(58149),
     p = n(688810),
-    _ = n(660387),
+    g = n(660387),
     f = n(343328),
     x = n(485947),
     C = n(915089),
@@ -244,9 +244,9 @@ class U extends s.Component {
                 num_users_visible: a.length,
                 num_users_visible_with_mobile_indicator: r.filter(e => null != e && j.A.isMobileOnline(e)).length
             };
-        this.hasReportedAnalytics = !0, g.Ay.trackWithMetadata(L.HAw.DM_LIST_VIEWED, {
+        this.hasReportedAnalytics = !0, _.Ay.trackWithMetadata(L.HAw.DM_LIST_VIEWED, {
             ...c,
-            ...(0, _.F)(),
+            ...(0, g.F)(),
             visible_user_ids: r.filter(e => null != e),
             changelog_dm_visible: o
         })
@@ -374,7 +374,7 @@ let P = e => {
         theme: l,
         children: a,
         listScrollerRef: d
-    } = e, h = s.Children.count(a), g = y.A.getMutablePrivateChannels(), _ = (0, S.uX)(g), f = (0, c.yK)([R.default, b.A, T.A], () => {
+    } = e, h = s.Children.count(a), _ = y.A.getMutablePrivateChannels(), g = (0, S.uX)(_), f = (0, c.yK)([R.default, b.A, T.A], () => {
         let e = R.default.getPrivateChannelIds();
         return (0, S.eh)(e, [b.A, T.A])
     });
@@ -427,7 +427,7 @@ let P = e => {
             children: (0, i.jsx)(U, {
                 ...e,
                 density: t,
-                channels: _,
+                channels: g,
                 privateChannelIds: f,
                 listRef: M,
                 theme: N ?? l,

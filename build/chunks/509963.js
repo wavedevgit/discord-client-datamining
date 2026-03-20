@@ -16,9 +16,9 @@ var i = n(627968),
     h = n(397927),
     A = n(587895),
     m = n(290987),
-    g = n(976860),
+    _ = n(976860),
     p = n(194871),
-    _ = n(966846),
+    g = n(966846),
     f = n(674378),
     x = n(505806),
     C = n(652215),
@@ -149,7 +149,7 @@ class S extends s.PureComponent {
         let {
             onClick: t
         } = this.props;
-        e.preventDefault(), e.stopPropagation(), null != t && t(e), (0, g.pX)(C.BVt.APPLICATION_LIBRARY)
+        e.preventDefault(), e.stopPropagation(), null != t && t(e), (0, _.pX)(C.BVt.APPLICATION_LIBRARY)
     };
     getTooltipText() {
         let {
@@ -206,8 +206,8 @@ function T(e, t) {
         return null != l && e.push(l), e
     }, [])
 }
-let v = o.Ay.connectStores([_.A, p.A, A.A], () => {
-    let e = _.A.activeItems,
+let v = o.Ay.connectStores([g.A, p.A, A.A], () => {
+    let e = g.A.activeItems,
         t = T(e, p.A),
         {
             total: n,
@@ -215,7 +215,7 @@ let v = o.Ay.connectStores([_.A, p.A, A.A], () => {
         } = f.zY(t);
     return {
         percent: f.uA(i, n),
-        isPaused: _.A.paused,
+        isPaused: g.A.paused,
         firstApplication: e.length > 0 ? A.A.getApplication(e[0].applicationId) : null,
         firstState: t.length > 0 ? t[0] : null
     }

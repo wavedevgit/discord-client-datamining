@@ -19,9 +19,9 @@ var i = n(627968),
     h = n(397927),
     A = n(914430),
     m = n(442433),
-    g = n(676002),
+    _ = n(676002),
     p = n(485947),
-    _ = n(924985),
+    g = n(924985),
     f = n(71393),
     x = n(576705),
     C = n(543465),
@@ -38,7 +38,7 @@ let v = s.memo(function(e) {
         let t, {
                 channel: l,
                 connectChannelDragSource: u,
-                connectChannelDropTarget: g,
+                connectChannelDropTarget: _,
                 disableManageChannels: E,
                 position: I,
                 sortingPosition: v,
@@ -46,7 +46,7 @@ let v = s.memo(function(e) {
                 children: j
             } = e,
             R = (0, o.bG)([C.Ay], () => C.Ay.isChannelMuted(l.getGuildId(), l.id)),
-            O = (0, o.bG)([_.A], () => _.A.isCollapsed(l.id)),
+            O = (0, o.bG)([g.A], () => g.A.isCollapsed(l.id)),
             L = (0, o.bG)([x.A], () => x.A.can(N.xBc.MANAGE_CHANNELS, l));
         t = null != v ? I > v ? S.mU : S.TR : S.fx;
         let M = s.useCallback(() => {
@@ -152,9 +152,9 @@ let v = s.memo(function(e) {
                     })
                 }), j]
             });
-        return null != g && null != u ? g(u(B)) : B
+        return null != _ && null != u ? _(u(B)) : B
     }),
-    y = (0, g.a)(v),
+    y = (0, _.a)(v),
     j = s.memo(function(e) {
         let {
             name: t,

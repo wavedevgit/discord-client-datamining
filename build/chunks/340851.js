@@ -17,9 +17,9 @@ var i = n(627968),
     h = n(956793),
     A = n(401843),
     m = n(296216),
-    g = n(323073),
+    _ = n(323073),
     p = n(793574),
-    _ = n(480890),
+    g = n(480890),
     f = n(643501),
     x = n(916641),
     C = n(652896),
@@ -117,9 +117,9 @@ let K = (0, m.J)(function(e) {
         isSelfOnOtherClient: eh = !1,
         tabIndex: eA,
         location: em,
-        isSelf: eg,
+        isSelf: e_,
         application: ep,
-        hangStatusActivity: e_,
+        hangStatusActivity: eg,
         requestToStreamActivity: ef,
         showHangStatus: ex
     } = e, {
@@ -167,20 +167,20 @@ let K = (0, m.J)(function(e) {
                     channel: m,
                     showMediaItems: !0,
                     showStageChannelItems: m.isGuildStageVoice(),
-                    onInteraction: (0, _.s)("GuildChannelUserContextMenu", p.A.VOICE_USER, {
+                    onInteraction: (0, g.s)("GuildChannelUserContextMenu", p.A.VOICE_USER, {
                         targetUserId: l.id
                     })
                 })
             })
         },
-        eY = e => eg ? (0, i.jsx)(b.h, {
+        eY = e => e_ ? (0, i.jsx)(b.h, {
             ...e,
             channel: m,
             setIsHangStatusInputFocused: ej,
             setIsEmojiPickerOpen: eM
-        }) : null != e_ ? (0, i.jsx)(S.E, {
+        }) : null != eg ? (0, i.jsx)(S.E, {
             ...e,
-            hangStatusActivity: e_,
+            hangStatusActivity: eg,
             channel: m,
             userId: l.id
         }) : null,
@@ -188,7 +188,7 @@ let K = (0, m.J)(function(e) {
             userId: l.id,
             channel: m
         }),
-        eq = () => (0, g.r9)() && (0, g.UK)(m.id) ? null : (0, i.jsx)(N.A, {
+        eq = () => (0, _.r9)() && (0, _.UK)(m.id) ? null : (0, i.jsx)(N.A, {
             user: l,
             channel: m,
             onWatch: eK,
@@ -244,10 +244,10 @@ let K = (0, m.J)(function(e) {
                             onDoubleClick: eK,
                             onContextMenu: eW,
                             guildId: m.guild_id,
-                            isSelf: eg,
+                            isSelf: e_,
                             application: ep,
                             channelId: m.id,
-                            hangStatusActivity: e_,
+                            hangStatusActivity: eg,
                             showHangStatus: ex
                         };
                     if (eh) return (0, i.jsx)(o.m, {
@@ -263,15 +263,15 @@ let K = (0, m.J)(function(e) {
                         user: l,
                         onAction: eB,
                         onWatchStream: en ? eK : void 0,
-                        hangStatusActivity: e_,
+                        hangStatusActivity: eg,
                         renderSelfHangStatus: eY
                     }) : en ? r = eq : eU && l.id !== O.default.getId() ? r = ez : ex && (r = eY), (0, i.jsx)(c.YNO, {
                         targetElementRef: eE,
                         position: "right",
                         renderPopout: r,
-                        shouldShow: (eo || ex && eD && (!eC || eg)) && !eI,
+                        shouldShow: (eo || ex && eD && (!eC || e_)) && !eI,
                         onRequestClose: eV,
-                        align: ex && eG && !eg && !eC ? "center" : void 0,
+                        align: ex && eG && !e_ && !eC ? "center" : void 0,
                         spacing: 17,
                         children: () => (0, i.jsx)(y.Ay, {
                             ...s,

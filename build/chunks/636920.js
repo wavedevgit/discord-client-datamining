@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(954571),
     A = n(69555),
     m = n(886019),
-    g = n(846218),
+    _ = n(846218),
     p = n(806246),
-    _ = n(358957),
+    g = n(358957),
     f = n(559405),
     x = n(708455),
     C = n(652215),
@@ -35,7 +35,7 @@ function N(e) {
         className: v,
         iconClassName: y,
         textClassName: j
-    } = e, R = (0, l.bG)([u.A], () => u.A.getVoiceChannelId() === n.id, [n]), O = (0, l.bG)([d.A], () => d.A.can(C.xBc.CONNECT, n), [n]), L = null == t.emoji || (0, g.n)(t.emoji, n);
+    } = e, R = (0, l.bG)([u.A], () => u.A.getVoiceChannelId() === n.id, [n]), O = (0, l.bG)([d.A], () => d.A.can(C.xBc.CONNECT, n), [n]), L = null == t.emoji || (0, _.n)(t.emoji, n);
     s.useEffect(() => {
         h.default.track(C.HAw.VIEW_HANG_STATUS, {
             source: S,
@@ -53,7 +53,7 @@ function N(e) {
         }, [R, O, n.id, N, S, T]),
         D = s.useCallback(() => {
             if (!R || !L || null == t.state) return;
-            let [e] = (0, _.e)(N, t.state);
+            let [e] = (0, g.e)(N, t.state);
             if (null != e) {
                 if (e === x.Kk.CUSTOM) {
                     if (null == t.details || null == t.emoji) return;

@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(663997),
     A = n(652793),
     m = n(576705),
-    g = n(221950),
+    _ = n(221950),
     p = n(652215),
-    _ = n(985018);
+    g = n(985018);
 
 function f(e) {
     let {
@@ -32,7 +32,7 @@ function f(e) {
         })
     }, [f, t]);
     let E = s.useCallback(() => {
-            (0, g.aZ)(t.id)
+            (0, _.aZ)(t.id)
         }, [t.id]),
         I = (0, o.q8)(t.id, a.M.MEMBERS_LAUNCH_UPSELL);
     return (0, i.jsx)("div", {
@@ -44,7 +44,7 @@ function f(e) {
                 color: "currentColor",
                 className: e
             }),
-            text: _.intl.string(_.t.oclz3Z),
+            text: g.intl.string(g.t.oclz3Z),
             selected: n,
             onClick: E,
             trailing: C > 0 ? (0, i.jsx)(r.hVq, {

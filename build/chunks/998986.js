@@ -16,9 +16,9 @@ var s = n(503698),
     h = n(58149),
     A = n(289397),
     m = n(486418),
-    g = n(575926),
+    _ = n(575926),
     p = n(826673),
-    _ = n(130978),
+    g = n(130978),
     f = n(976860),
     x = n(808728),
     C = n(71393),
@@ -35,7 +35,7 @@ function y(e) {
         guildId: t,
         selected: n,
         handleClick: s
-    } = e, d = (0, _.w)(t, "guild_shop_channel_row"), m = (0, a.bG)([C.A], () => C.A.getGuild(t)), b = m?.features.has(N.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) === !0, y = "false" === o.w.get(S.bJ, "false"), j = (0, a.bG)([u.A], () => u.A.useReducedMotion);
+    } = e, d = (0, g.w)(t, "guild_shop_channel_row"), m = (0, a.bG)([C.A], () => C.A.getGuild(t)), b = m?.features.has(N.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) === !0, y = "false" === o.w.get(S.bJ, "false"), j = (0, a.bG)([u.A], () => u.A.useReducedMotion);
     return (0, i.jsx)(I.G, {
         id: `shop-${t}`,
         className: l()(v.A2, {
@@ -43,7 +43,7 @@ function y(e) {
             [v.ST]: y
         }),
         innerClassName: v.LE,
-        renderIcon: e => (0, i.jsx)(g.h, {
+        renderIcon: e => (0, i.jsx)(_.h, {
             width: 20,
             height: 20,
             className: l()([e, v.sV])
@@ -92,7 +92,7 @@ function j(e) {
         handleClick: a
     }) : (0, i.jsx)(I.G, {
         id: `shop-${t.id}`,
-        renderIcon: e => (0, i.jsx)(g.h, {
+        renderIcon: e => (0, i.jsx)(_.h, {
             width: 20,
             height: 20,
             className: e

@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(203982),
     A = n(484191),
     m = n(665450),
-    g = n(526369),
+    _ = n(526369),
     p = n(699707),
-    _ = n(713397),
+    g = n(713397),
     f = n(652215),
     x = n(806931),
     C = n(691453);
@@ -72,7 +72,7 @@ let E = (0, a.A)(e => {
     if (null == a) {
         if (0 === n.length) {
             let e = t.length > 0 && !k;
-            return (0, i.jsx)(_.A, {
+            return (0, i.jsx)(g.A, {
                 channelId: T.id,
                 allPoppedOut: e
             })
@@ -81,7 +81,7 @@ let E = (0, a.A)(e => {
             className: C.HA,
             justify: d.A.Justify.CENTER,
             align: d.A.Align.CENTER,
-            children: (0, i.jsx)(g.A, {
+            children: (0, i.jsx)(_.A, {
                 channel: T,
                 className: C.g9,
                 participants: w,

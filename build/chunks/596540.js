@@ -1,7 +1,7 @@
 /** chunk id: 596540 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -16,21 +16,21 @@ var i = n(627968),
     A = n(985018),
     m = n(39368);
 
-function g(e) {
+function _(e) {
     let {
         children: t,
         popoutPosition: n,
         popoutAlign: u,
         targetElementRef: m,
-        spacing: g = 0
+        spacing: _ = 0
     } = e, {
-        isOpen: _,
+        isOpen: g,
         setIsOpen: f
     } = (0, d.A)(), x = s.useCallback(() => {
         f(!1)
     }, [f]), C = s.useCallback(() => {
-        f(!_)
-    }, [_, f]);
+        f(!g)
+    }, [g, f]);
     (0, r.Ay)(() => {
         let e = () => {
             f(!1)
@@ -44,13 +44,13 @@ function g(e) {
     });
     return (0, i.jsx)(l.YNO, {
         targetElementRef: m,
-        shouldShow: _,
+        shouldShow: g,
         align: u,
         animation: E === c.RK.TITLE_BAR_LEFT ? l.YNO.Animation.TRANSLATE : l.YNO.Animation.FADE,
         animationPosition: E === c.RK.TITLE_BAR_LEFT ? "bottom" : "left",
         position: n,
         onRequestClose: x,
-        spacing: g,
+        spacing: _,
         renderPopout: () => (0, i.jsx)(l.lGe, {
             "aria-label": A.intl.string(A.t.GSmTKJ),
             children: (0, i.jsx)(p, {})

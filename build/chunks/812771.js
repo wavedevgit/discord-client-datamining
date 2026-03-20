@@ -15,10 +15,10 @@ var i, s = n(627968),
     h = n(761929),
     A = n(964404),
     m = n(743898),
-    g = n(83181),
+    _ = n(83181),
     p = ((i = {})[i.PostSidebar = 0] = "PostSidebar", i[i.ThreadSidebar = 1] = "ThreadSidebar", i[i.CallChatSidebar = 2] = "CallChatSidebar", i[i.MessageRequestSidebar = 3] = "MessageRequestSidebar", i[i.HomeSidebar = 4] = "HomeSidebar", i);
 
-function _(e) {
+function g(e) {
     let {
         resizableNode: t,
         onResize: n,
@@ -36,7 +36,7 @@ function _(e) {
     });
     return (0, s.jsx)("div", {
         onMouseDown: r,
-        className: g.Di
+        className: _.Di
     })
 }
 
@@ -79,18 +79,18 @@ function f(e) {
             }
         }), (0, s.jsx)(T, {
             children: (0, s.jsxs)("div", {
-                className: r()(g.PA, {
-                    [g.R]: !1
+                className: r()(_.PA, {
+                    [_.R]: !1
                 }),
                 children: [(0, s.jsx)("div", {
-                    className: r()(g.Uc, {
-                        [g.DU]: I,
-                        [g.iK]: !I
+                    className: r()(_.Uc, {
+                        [_.DU]: I,
+                        [_.iK]: !I
                     }),
                     style: {
                         width: S
                     }
-                }), !I && (0, s.jsx)(_, {
+                }), !I && (0, s.jsx)(g, {
                     minWidth: 450,
                     maxWidth: n,
                     resizableNode: p,
@@ -98,8 +98,8 @@ function f(e) {
                     onResizeEnd: E
                 }), (0, s.jsx)("div", {
                     ref: p,
-                    className: r()(g.kL, {
-                        [g.DU]: I
+                    className: r()(_.kL, {
+                        [_.DU]: I
                     }),
                     style: {
                         width: b

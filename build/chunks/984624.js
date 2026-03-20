@@ -1,7 +1,7 @@
 /** chunk id: 984624 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => g
 });
 var i = n(627968),
     s = n(64700),
@@ -15,19 +15,19 @@ var i = n(627968),
     h = n(707592),
     A = n(496092),
     m = n(132860),
-    g = n(508654),
+    _ = n(508654),
     p = n(985018);
 
-function _(e) {
+function g(e) {
     let {
         channelId: t,
         onClick: n
-    } = e, _ = (0, r.Us)(), f = (0, g.Qs)(t), x = (0, l.bG)([u.A], () => u.A.getChannel(t), [t]), {
+    } = e, g = (0, r.Us)(), f = (0, _.Qs)(t), x = (0, l.bG)([u.A], () => u.A.getChannel(t), [t]), {
         canManageGuildEvent: C
     } = (0, o.nr)(x), E = C(f), I = s.useRef(null);
     if (null == f) return null;
     let N = () => {
-            null != x && (0, m.A)(x) ? (0, h.Py)(x, _) : n()
+            null != x && (0, m.A)(x) ? (0, h.Py)(x, g) : n()
         },
         b = () => {
             A.A.endEvent(f.id, f.guild_id)

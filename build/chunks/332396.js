@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(933958),
     A = n(104171),
     m = n(63995),
-    g = n(69407),
+    _ = n(69407),
     p = n(616356),
-    _ = n(734057),
+    g = n(734057),
     f = n(287809),
     x = n(607567),
     C = n(403362),
@@ -42,7 +42,7 @@ function T(e, t) {
 }
 
 function v() {
-    let e = (0, c.yK)([I.A, _.A], () => E.default.keys(I.A.getFavoriteChannels()).map(e => _.A.getChannel(e)).filter(C.Vq)),
+    let e = (0, c.yK)([I.A, g.A], () => E.default.keys(I.A.getFavoriteChannels()).map(e => g.A.getChannel(e)).filter(C.Vq)),
         t = e.map(e => e.id),
         n = e.filter(e => e.type === N.rbe.GUILD_VOICE),
         s = e.filter(e => e.type === N.rbe.GUILD_STAGE_VOICE).map(e => e.id),
@@ -52,7 +52,7 @@ function v() {
             } = e;
             return t
         })), [n]),
-        a = (0, c.yK)([m.A], () => o().flatMap(s, e => m.A.getMutableParticipants(e, g.ip.SPEAKER).filter(e => e.type === g.wY.VOICE).map(e => {
+        a = (0, c.yK)([m.A], () => o().flatMap(s, e => m.A.getMutableParticipants(e, _.ip.SPEAKER).filter(e => e.type === _.wY.VOICE).map(e => {
             let {
                 user: t
             } = e;
@@ -60,7 +60,7 @@ function v() {
         }))),
         r = (0, c.bG)([m.A], () => {
             let e = 0;
-            for (let t of s) e += m.A.getParticipantCount(t, g.ip.AUDIENCE);
+            for (let t of s) e += m.A.getParticipantCount(t, _.ip.AUDIENCE);
             return e
         }),
         d = (0, c.yK)([p.A], () => p.A.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),

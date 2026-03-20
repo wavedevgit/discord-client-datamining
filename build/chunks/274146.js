@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(938764),
     A = n(519480),
     m = n(352123),
-    g = n(372536),
+    _ = n(372536),
     p = n(491346),
-    _ = n(667369),
+    g = n(667369),
     f = n(647026),
     x = n(946116),
     C = n(652215),
@@ -54,7 +54,7 @@ let N = e => {
             }, !0, !0, e)
         })
     }, [t.id]);
-    let j = s.useMemo(() => null != S ? (0, _._)(Object.values(S), b) : null, [S, b]),
+    let j = s.useMemo(() => null != S ? (0, g._)(Object.values(S), b) : null, [S, b]),
         {
             mostRecentQuery: R,
             searchFetching: O,
@@ -130,7 +130,7 @@ let N = e => {
         })
     }) : j?.length === 0 && null == b ? (0, i.jsx)("div", {
         className: I.$$,
-        children: (0, i.jsx)(g.A, {
+        children: (0, i.jsx)(_.A, {
             guild: N,
             onAddGuild: k
         })

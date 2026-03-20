@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     e: () => m,
-    h: () => g
+    h: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -24,7 +24,7 @@ function A(e) {
         onKeyDown: u,
         onContextMenu: A,
         onMouseEnter: m,
-        onMouseLeave: g,
+        onMouseLeave: _,
         className: p,
         ariaHidden: f,
         avatarDecoration: x,
@@ -64,7 +64,7 @@ function A(e) {
                             width: l,
                             x: a,
                             y: r
-                        } = _(e, n, i), o = (t - e.size) / 2;
+                        } = g(e, n, i), o = (t - e.size) / 2;
                         return {
                             width: l,
                             height: s,
@@ -104,7 +104,7 @@ function A(e) {
         onMouseDown: r,
         onKeyDown: u,
         onMouseEnter: m ?? void 0,
-        onMouseLeave: g ?? void 0,
+        onMouseLeave: _ ?? void 0,
         "aria-label": b ?? void 0,
         "aria-hidden": f,
         children: [t, y]
@@ -113,7 +113,7 @@ function A(e) {
         style: S,
         onContextMenu: A ?? void 0,
         onMouseEnter: m ?? void 0,
-        onMouseLeave: g ?? void 0,
+        onMouseLeave: _ ?? void 0,
         role: "img",
         "aria-label": b ?? void 0,
         "aria-hidden": f,
@@ -129,7 +129,7 @@ function m(e) {
         "aria-label": o,
         imageClassName: d,
         cornerIconUrl: m,
-        cornerIconOffsetX: g = 0,
+        cornerIconOffsetX: _ = 0,
         cornerIconOffsetY: f = 0
     } = e, x = (0, u.Kj)(n), C = x.size, E = (0, s.useId)();
     return (0, i.jsx)(A, {
@@ -138,9 +138,9 @@ function m(e) {
         ariaHidden: l,
         specs: x,
         children: (0, i.jsxs)("svg", {
-            width: C + g,
+            width: C + _,
             height: C + f,
-            viewBox: `0 0 ${C+g} ${C+f}`,
+            viewBox: `0 0 ${C+_} ${C+f}`,
             className: a()(h.dK, h.JW),
             "aria-hidden": !0,
             children: [(0, i.jsxs)("mask", {
@@ -156,7 +156,7 @@ function m(e) {
                         width: l,
                         x: a,
                         y: r
-                    } = _(e, t, n);
+                    } = g(e, t, n);
                     return (0, i.jsx)("rect", {
                         mask: `url(#${c.hW.SQUIRCLE})`,
                         height: s,
@@ -165,7 +165,7 @@ function m(e) {
                         y: r,
                         fill: "black"
                     })
-                }(x, g, f)]
+                }(x, _, f)]
             }), (0, i.jsx)("foreignObject", {
                 x: 0,
                 y: 0,
@@ -178,7 +178,7 @@ function m(e) {
                     isSpeaking: !1
                 })
             }), null != m && (0, i.jsx)("foreignObject", {
-                ...p(x, g, f),
+                ...p(x, _, f),
                 mask: `url(#${c.hW.SQUIRCLE})`,
                 children: (0, i.jsx)("img", {
                     src: m,
@@ -191,7 +191,7 @@ function m(e) {
     })
 }
 
-function g(e) {
+function _(e) {
     let {
         src: t,
         size: n,
@@ -200,7 +200,7 @@ function g(e) {
         cornerIconUrl: o,
         cornerIconOffsetX: d = 0,
         cornerIconOffsetY: m = 0
-    } = e, g = (0, s.useId)(), f = (0, s.useId)(), x = (0, u.Kj)(n), C = x.size + d, E = x.size + m, I = _(x, d, m), N = p(x, d, m);
+    } = e, _ = (0, s.useId)(), f = (0, s.useId)(), x = (0, u.Kj)(n), C = x.size + d, E = x.size + m, I = g(x, d, m), N = p(x, d, m);
     return (0, i.jsx)(A, {
         ...e,
         ariaLabel: r,
@@ -213,7 +213,7 @@ function g(e) {
             className: a()(h.dK, h.JW),
             "aria-hidden": !0,
             children: [(0, i.jsxs)("mask", {
-                id: g,
+                id: _,
                 children: [(0, i.jsx)("rect", {
                     x: 0,
                     y: 0,
@@ -240,7 +240,7 @@ function g(e) {
                 y: 0,
                 width: x.size,
                 height: x.size,
-                mask: `url(#${g})`,
+                mask: `url(#${_})`,
                 children: (0, i.jsx)("div", {
                     className: h.yA,
                     children: (0, i.jsx)("img", {
@@ -273,7 +273,7 @@ function p(e, t, n) {
     }
 }
 
-function _(e, t, n) {
+function g(e, t, n) {
     let i = p(e, t, n),
         s = i.x - 2,
         l = i.y - 2;

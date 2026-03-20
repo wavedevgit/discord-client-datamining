@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(116833),
     A = n(342494),
     m = n(397927),
-    g = n(73153),
+    _ = n(73153),
     p = n(298990),
-    _ = n(367513),
+    g = n(367513),
     f = n(951001),
     x = n(492684),
     C = n(707606),
@@ -69,9 +69,9 @@ var i = n(627968),
     eh = n(287809),
     eA = n(157257),
     em = n(954571),
-    eg = n(975571),
+    e_ = n(975571),
     ep = n(723702),
-    e_ = n(498057),
+    eg = n(498057),
     ef = n(994314),
     ex = n(485599),
     eC = n(204722),
@@ -96,8 +96,8 @@ function eR(e) {
         canStartAuthorization: c,
         startAuthorization: d,
         accountLinkUpsellTargetRef: m,
-        inviteButtonRef: g,
-        accountLinkButtonRef: _,
+        inviteButtonRef: _,
+        accountLinkButtonRef: g,
         gameCommunityGuildId: f,
         parentAnalyticsLocation: x,
         analyticsLocations: C,
@@ -107,7 +107,7 @@ function eR(e) {
         hasLoadedQuestBar: N
     } = (0, ee.c9)({
         location: ev.rE.CONFLICT_CHECKS
-    }), b = e_.A.useConfig({
+    }), b = eg.A.useConfig({
         location: "ActivityPanelGameCard"
     }), S = !N || !I, T = (0, eC.W)(t, n, s), v = [], y = !1;
     S || (a && r ? T && null == s ? v.push(u.M.ACCOUNT_LINK_INVITE_FRIENDS) : v.push(u.M.POST_ACCOUNT_CONNECTION_RTC_POPOVER) : !a && c && null != t && (y = !0), null != f && l?.id != null && l?.name != null && v.push(u.M.JOIN_GAME_COMMUNITY_RTC_CTA));
@@ -141,7 +141,7 @@ function eR(e) {
             return s === u.M.ACCOUNT_LINK_INVITE_FRIENDS ? (0, i.jsx)(A.AM, {
                 title: ey.intl.string(ey.t["0l2pEt"]),
                 body: ey.intl.string(ey.t["DSZUK/"]),
-                targetElementRef: g,
+                targetElementRef: _,
                 align: "right",
                 shouldShow: !0,
                 onRequestClose: () => a(eb.i.USER_DISMISS),
@@ -174,7 +174,7 @@ function eR(e) {
                 actions: [{
                     text: ey.intl.string(ey.t.aRIFWD),
                     onClick: () => {
-                        a(eb.i.TAKE_ACTION), window.open(eg.A.getArticleURL(eI.MVz.IN_GAME_FEATURES), "_blank")
+                        a(eb.i.TAKE_ACTION), window.open(e_.A.getArticleURL(eI.MVz.IN_GAME_FEATURES), "_blank")
                     }
                 }],
                 shouldShow: !0,
@@ -191,7 +191,7 @@ function eR(e) {
                     gameName: t.name
                 }),
                 body: ey.intl.string(b.altBody ? ey.t["JKqu+4"] : ey.t.qYAzOp),
-                targetElementRef: _,
+                targetElementRef: g,
                 align: "right",
                 shouldShow: !0,
                 gradientColor: "purple",
@@ -349,7 +349,7 @@ class eL extends s.PureComponent {
         let {
             isActivityPopoutOpen: e
         } = this.props;
-        this.handleChannelLinkClick(), e && g.h.dispatch({
+        this.handleChannelLinkClick(), e && _.h.dispatch({
             type: "ACTIVITY_POPOUT_WINDOW_OPEN"
         })
     };
@@ -359,7 +359,7 @@ class eL extends s.PureComponent {
             embeddedActivity: t,
             isActivityPopoutOpen: n
         } = this.props;
-        o()(null != t, "Activity cannot be null during navigation click"), o()(null != e, "Channel cannot be null during navigation click"), f.A.channelListScrollTo(e.guild_id ?? eI.ME, e.id), !n && ((0, et.gV)(e.type) && _.A.selectParticipant(e.id, (0, O.Qt)({
+        o()(null != t, "Activity cannot be null during navigation click"), o()(null != e, "Channel cannot be null during navigation click"), f.A.channelListScrollTo(e.guild_id ?? eI.ME, e.id), !n && ((0, et.gV)(e.type) && g.A.selectParticipant(e.id, (0, O.Qt)({
             applicationId: t.applicationId,
             instanceId: t.compositeInstanceId
         })), (0, et.pQ)(e.type) && (0, b.gk)(eN.Gd.PANEL))
@@ -369,7 +369,7 @@ class eL extends s.PureComponent {
             frame: e,
             isActivityPopoutOpen: t
         } = this.props;
-        (o()(null != e, "Frame cannot be null during navigation click"), t) ? g.h.dispatch({
+        (o()(null != e, "Frame cannot be null during navigation click"), t) ? _.h.dispatch({
             type: "ACTIVITY_POPOUT_WINDOW_OPEN"
         }): w.A.updateFrameLayoutMode({
             applicationId: e.applicationId,
@@ -506,7 +506,7 @@ let eM = (0, C.A)(function(e) {
     let {
         guildId: t,
         ...n
-    } = e, l = (0, d.bG)([ei.default], () => ei.default.getId()), a = (0, d.bG)([H.Ay, eA.A], () => (0, X.A)(H.Ay, eA.A)), r = (0, d.bG)([eu.A, es.A], () => es.A.getChannel(eu.A.getVoiceChannelId())), o = (0, d.bG)([S.Ay], () => S.Ay.getConnectedActivityChannelId()), u = (0, d.bG)([es.A], () => es.A.getChannel(o)), h = (0, d.bG)([ea.A], () => ea.A.getGuild(u?.guild_id)), [A, m] = (0, d.yK)([en.A], () => [en.A.getCurrentUserActiveStream(), en.A.getStreamerActiveStreamMetadata()]), g = (0, d.bG)([I.A], () => I.A.useReducedMotion), p = (0, d.bG)([S.Ay], () => S.Ay.getCurrentEmbeddedActivity()), _ = (0, d.bG)([k.A], () => k.A.getConnectedFrame()), f = (0, d.bG)([ea.A, eo.A], () => null == r || W.vz(r, ea.A, eo.A, !1)), [x] = (0, R.A)([(null != m && null != m.id ? m.id : null != a && null != a.id ? a.id : null != p ? p.applicationId : null != _ ? _.applicationId : void 0) ?? ""]), C = (0, d.bG)([G.A], () => G.A.getFakeGameData()), b = (0, d.bG)([S.Ay], () => S.Ay.getCurrentEmbeddedActivity()), v = (0, T.u)() && null != b && (0, N.f)(), O = (0, d.bG)([er.Ay], () => (0, Y.A)(er.Ay) && (0, ep.isWindows)()), L = (0, d.bG)([ec.A], () => null != l ? ec.A.findActivity(l, e => e.type === eI.$pd.PLAYING) : null), D = null != A && A.ownerId === l && A.state !== eI.XYD.ENDED, U = (0, d.bG)([eh.default, ed.A], () => null != u ? (0, M.m1)(u, eh.default, ed.A) : void 0), P = (0, $.A)(), [w, V] = s.useState(!1), F = (0, d.bG)([Q.A], () => Q.A.getWindowOpen(eI.MLl.ACTIVITY_POPOUT)), {
+    } = e, l = (0, d.bG)([ei.default], () => ei.default.getId()), a = (0, d.bG)([H.Ay, eA.A], () => (0, X.A)(H.Ay, eA.A)), r = (0, d.bG)([eu.A, es.A], () => es.A.getChannel(eu.A.getVoiceChannelId())), o = (0, d.bG)([S.Ay], () => S.Ay.getConnectedActivityChannelId()), u = (0, d.bG)([es.A], () => es.A.getChannel(o)), h = (0, d.bG)([ea.A], () => ea.A.getGuild(u?.guild_id)), [A, m] = (0, d.yK)([en.A], () => [en.A.getCurrentUserActiveStream(), en.A.getStreamerActiveStreamMetadata()]), _ = (0, d.bG)([I.A], () => I.A.useReducedMotion), p = (0, d.bG)([S.Ay], () => S.Ay.getCurrentEmbeddedActivity()), g = (0, d.bG)([k.A], () => k.A.getConnectedFrame()), f = (0, d.bG)([ea.A, eo.A], () => null == r || W.vz(r, ea.A, eo.A, !1)), [x] = (0, R.A)([(null != m && null != m.id ? m.id : null != a && null != a.id ? a.id : null != p ? p.applicationId : null != g ? g.applicationId : void 0) ?? ""]), C = (0, d.bG)([G.A], () => G.A.getFakeGameData()), b = (0, d.bG)([S.Ay], () => S.Ay.getCurrentEmbeddedActivity()), v = (0, T.u)() && null != b && (0, N.f)(), O = (0, d.bG)([er.Ay], () => (0, Y.A)(er.Ay) && (0, ep.isWindows)()), L = (0, d.bG)([ec.A], () => null != l ? ec.A.findActivity(l, e => e.type === eI.$pd.PLAYING) : null), D = null != A && A.ownerId === l && A.state !== eI.XYD.ENDED, U = (0, d.bG)([eh.default, ed.A], () => null != u ? (0, M.m1)(u, eh.default, ed.A) : void 0), P = (0, $.A)(), [w, V] = s.useState(!1), F = (0, d.bG)([Q.A], () => Q.A.getWindowOpen(eI.MLl.ACTIVITY_POPOUT)), {
         parentAnalyticsLocation: K,
         analyticsLocations: z
     } = (0, y.Ay)(), {
@@ -516,10 +516,10 @@ let eM = (0, C.A)(function(e) {
         startAuthorization: ee
     } = (0, j.RD)(x, {
         allowedFlows: [j._M.RPC, j._M.WEB]
-    }), [et, eg] = s.useState(!1), e_ = (0, E.A)(x?.id);
+    }), [et, e_] = s.useState(!1), eg = (0, E.A)(x?.id);
     s.useEffect(() => {
-        e_ !== x?.id && eg(!1)
-    }, [x, e_, eg]);
+        eg !== x?.id && e_(!1)
+    }, [x, eg, e_]);
     let ef = (0, c.K)(e => {
             e && null != Z && em.default.track(eI.HAw.ACTIVITY_PANEL_SDK_LINK_VIEWED, {
                 game_id: a?.id ?? null,
@@ -540,11 +540,11 @@ let eM = (0, C.A)(function(e) {
         canGoLive: O || v || void 0 !== C,
         activity: L,
         embeddedActivity: p,
-        frame: _,
+        frame: g,
         userId: l,
         runningGame: C ?? a,
         application: x,
-        useReducedMotion: g,
+        useReducedMotion: _,
         isStreaming: D,
         channel: u,
         canStream: f,
@@ -563,7 +563,7 @@ let eM = (0, C.A)(function(e) {
         accountLinkButtonRef: ef,
         startAuthorization: function() {
             for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
-            return eg(!0), ee(...t)
+            return e_(!0), ee(...t)
         },
         didStartAuthorization: et,
         connectionApp: Z,

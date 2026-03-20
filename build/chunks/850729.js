@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(793943),
     A = n(411976),
     m = n(912309),
-    g = n(400492),
+    _ = n(400492),
     p = n(728321),
-    _ = n(309010),
+    g = n(309010),
     f = n(287809),
     x = n(816733),
     C = n(619921),
@@ -54,7 +54,7 @@ function G(e) {
         badge: a,
         link: u,
         showProgressBadge: A
-    } = e, [m, _] = s.useState(!1), [f, x] = s.useState(!1), [C, E] = s.useState(null), [I, N] = s.useState(0), b = (0, l.Vd)("home"), R = (0, h.fy)().activePanel === h.HP.APP_ICON, G = () => {
+    } = e, [m, g] = s.useState(!1), [f, x] = s.useState(!1), [C, E] = s.useState(null), [I, N] = s.useState(0), b = (0, l.Vd)("home"), R = (0, h.fy)().activePanel === h.HP.APP_ICON, G = () => {
         E(null), N(0), clearTimeout(C)
     };
     if (null == n) return null;
@@ -74,13 +74,13 @@ function G(e) {
                 width: (0, o.o6S)(a)
             },
             children: (0, i.jsx)(o.jlP, {
-                onMouseEnter: () => _(!0),
-                onMouseLeave: () => _(!1),
+                onMouseEnter: () => g(!0),
+                onMouseLeave: () => g(!1),
                 onClick: () => {
                     if (!__OVERLAY__ && (null != C && clearTimeout(C), E(setTimeout(G, 500)), N(I + 1), 15 === I)) {
                         G();
                         let e = !r.w.get(j.wqg);
-                        r.w.set(j.wqg, e), e && r.w.set(O.L, !0), e ? (0, g.Ak)("discodo") : (0, g.Ak)("user_leave"), x(!0), setTimeout(() => {
+                        r.w.set(j.wqg, e), e && r.w.set(O.L, !0), e ? (0, _.Ak)("discodo") : (0, _.Ak)("user_leave"), x(!0), setTimeout(() => {
                             x(!1)
                         }, 1e3)
                     }
@@ -148,14 +148,14 @@ function U() {
         })),
         d = l.fractionalState === R.xc.NONE ? r + o : 0,
         h = (0, a.bG)([f.default], () => f.default.getCurrentUser()),
-        g = (0, A.W)(),
-        p = n + d + g,
-        S = p === d && d > 0 && n + g === 0,
+        _ = (0, A.W)(),
+        p = n + d + _,
+        S = p === d && d > 0 && n + _ === 0,
         T = C.A.getHomeLink();
     return S && (T = j.BVt.APPLICATION_STORE), (0, i.jsx)(G, {
         selected: e,
         user: h,
-        selectedChannelId: _.A.getChannelId(j.ME),
+        selectedChannelId: g.A.getChannelId(j.ME),
         badge: p,
         link: T,
         showProgressBadge: t

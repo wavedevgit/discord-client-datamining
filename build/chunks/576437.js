@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(461213),
     A = n(954571),
     m = n(130802),
-    g = n(652215),
+    _ = n(652215),
     p = n(49999),
-    _ = n(654487);
+    g = n(654487);
 let f = e => {
     let {
         children: t,
@@ -31,21 +31,21 @@ let f = e => {
             isQuestBarEmpty: n,
             hasLoadedQuestBar: i
         } = (0, c.c9)({
-            location: _.rE.CONFLICT_CHECKS
+            location: g.rE.CONFLICT_CHECKS
         }), s = d.tz.useSetting(), a = (0, u.G)(), r = (0, l.bG)([h.A], () => h.A.getStatus()), {
             isOpen: A
         } = (0, o.A)();
         if ((n && i || t) && !a && !A && !__OVERLAY__) {
-            if (!s && r === g.clD.INVISIBLE) return t ? m.u5.ActivityAndStatus : m.u5.ActivityAndStatusNux;
+            if (!s && r === _.clD.INVISIBLE) return t ? m.u5.ActivityAndStatus : m.u5.ActivityAndStatusNux;
             if (!s) return t ? m.u5.Activity : m.u5.ActivityNux;
-            if (r === g.clD.INVISIBLE) return t ? m.u5.Status : m.u5.StatusNux
+            if (r === _.clD.INVISIBLE) return t ? m.u5.Status : m.u5.StatusNux
         }
         return null
     }({
         isForceShowSharingPopout: n
     });
     (0, s.useEffect)(() => {
-        n && A.default.track(g.HAw.OPEN_POPOUT, {
+        n && A.default.track(_.HAw.OPEN_POPOUT, {
             type: "SharingPrivacyPopout"
         })
     }, [n]);

@@ -19,7 +19,7 @@ function A(e) {
         className: t
     } = e, {
         hasAccess: n
-    } = (0, o.TW)("FavoriteGuildHeaderActionButton"), A = s.useRef(null), m = n ? u.intl.string(d.default.G9fGlP) : u.intl.string(u.t.ojM1xJ), g = s.useCallback(() => {
+    } = (0, o.TW)("FavoriteGuildHeaderActionButton"), A = s.useRef(null), m = n ? u.intl.string(d.default.G9fGlP) : u.intl.string(u.t.ojM1xJ), _ = s.useCallback(() => {
         (0, r.pX)(c.BVt.ME)
     }, []), p = s.useCallback(e => {
         let {
@@ -68,7 +68,7 @@ function A(e) {
         children: (0, i.jsx)(a.DUT, {
             className: t,
             "aria-label": m,
-            onClick: g,
+            onClick: _,
             children: (0, i.jsx)(a.PGe, {
                 color: "currentColor",
                 size: "refresh_sm"

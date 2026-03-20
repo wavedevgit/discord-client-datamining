@@ -1,7 +1,7 @@
 /** chunk id: 266069 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    u: () => g
+    u: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -16,16 +16,16 @@ var i = n(627968),
     A = n(107227),
     m = n(488732);
 
-function g(e) {
+function _(e) {
     let {
         label: t,
         icon: n,
         setStatus: l,
-        isFavorited: g,
+        isFavorited: _,
         onFavoriteClick: p
-    } = e, [_, f] = s.useState(!1), x = (0, r.bG)([u.A], () => u.A.getFavoritedStatuses().length >= u.x), C = null != p, E = s.useCallback(e => {
+    } = e, [g, f] = s.useState(!1), x = (0, r.bG)([u.A], () => u.A.getFavoritedStatuses().length >= u.x), C = null != p, E = s.useCallback(e => {
         e.stopPropagation(), p?.()
-    }, [p]), I = g ? d.Gg5 : d.yA2;
+    }, [p]), I = _ ? d.Gg5 : d.yA2;
     return (0, i.jsxs)(d.DUT, {
         onClick: l,
         onMouseEnter: () => {
@@ -42,14 +42,14 @@ function g(e) {
             variant: "text-md/normal",
             className: A.rv,
             children: t
-        }), _ && C && (0, i.jsx)(c.m_, {
-            text: x && !g ? h.intl.string(h.t.YSDH9n) : void 0,
+        }), g && C && (0, i.jsx)(c.m_, {
+            text: x && !_ ? h.intl.string(h.t.YSDH9n) : void 0,
             children: (0, i.jsx)(d.DUT, {
                 className: a()(A.ff, A.wB),
                 onClick: E,
                 children: (0, i.jsx)(I, {
                     className: A.ut,
-                    color: g ? o.A.colors.ICON_FEEDBACK_WARNING : "currentColor"
+                    color: _ ? o.A.colors.ICON_FEEDBACK_WARNING : "currentColor"
                 })
             })
         })]

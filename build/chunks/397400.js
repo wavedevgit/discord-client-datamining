@@ -3,9 +3,9 @@
 n.d(t, {
     Ai: () => p,
     ET: () => x,
-    Jh: () => g,
+    Jh: () => _,
     SX: () => h,
-    ed: () => _,
+    ed: () => g,
     f7: () => f,
     ft: () => u,
     gU: () => E,
@@ -79,7 +79,7 @@ function m(e, t, n, i) {
     })
 }
 
-function g(e) {
+function _(e) {
     let {
         guildId: t,
         productId: n,
@@ -113,7 +113,7 @@ function p(e, t, n, i) {
     })
 }
 
-function _(e, t, n) {
+function g(e, t, n) {
     a.default.track(c.HAw.GAME_SERVER_COPY_IP_CLICKED, {
         guild_id: e,
         game_server_id: t,

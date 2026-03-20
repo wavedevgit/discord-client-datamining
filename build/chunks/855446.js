@@ -14,9 +14,9 @@ var i, s = n(627968),
     h = n(849269),
     A = n(881343),
     m = n(697675),
-    g = n(869003),
+    _ = n(869003),
     p = n(652215),
-    _ = n(985018),
+    g = n(985018),
     f = n(374310);
 let x = ["embedded_cover"],
     C = {
@@ -44,7 +44,7 @@ function I(e) {
         guildId: t.channel.getGuildId() ?? void 0,
         locationObject: {},
         onActivityItemSelected: i,
-        embeddedActivitiesManager: g.A,
+        embeddedActivitiesManager: _.A,
         assetNames: x,
         commandOrigin: I
     }), [v, y] = l.useState(!1), j = l.useCallback(() => {
@@ -69,7 +69,7 @@ function I(e) {
                         children: (0, s.jsx)(d.Text, {
                             variant: "text-sm/medium",
                             color: "always-white",
-                            children: _.intl.string(_.t.VJlc0S)
+                            children: g.intl.string(g.t.VJlc0S)
                         })
                     })
                 });
@@ -81,7 +81,7 @@ function I(e) {
                         children: (0, s.jsx)(d.Text, {
                             variant: "text-sm/medium",
                             color: "always-white",
-                            children: _.intl.string(_.t["wH/wDO"])
+                            children: g.intl.string(g.t["wH/wDO"])
                         })
                     })
                 });

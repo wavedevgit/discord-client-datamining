@@ -17,10 +17,10 @@ var i = n(627968),
     h = n(543465),
     A = n(147036),
     m = n(32603),
-    g = n(85808),
+    _ = n(85808),
     p = n(823142);
 n(83766);
-var _ = n(719550),
+var g = n(719550),
     f = n(343319);
 let x = s.memo(function(e) {
     let {
@@ -47,10 +47,10 @@ function C(e) {
     let {
         hasDivider: c,
         canHaveVoiceSummary: d
-    } = (0, g.B3)(n, a, t), u = c ? r ? 9 : 12 : 0;
+    } = (0, _.B3)(n, a, t), u = c ? r ? 9 : 12 : 0;
     if (!d || t === m.PU) return u;
     let h = n.getNamedCategoryFromSection(t);
-    return null == h ? u : (0, g.Bo)({
+    return null == h ? u : (0, _.Bo)({
         category: h,
         selectedChannelId: s,
         selectedVoiceChannelId: l,
@@ -63,7 +63,7 @@ function E(e, t, n) {
     let {
         hasDivider: i,
         canHaveVoiceSummary: s
-    } = (0, g.B3)(t, n, e);
+    } = (0, _.B3)(t, n, e);
     return `section-footer-${e}${i?"-divider":""}${s?"-voice-summary":""}`
 }
 let I = s.memo(function(e) {
@@ -79,7 +79,7 @@ let I = s.memo(function(e) {
     } = e, {
         hasDivider: b,
         canHaveVoiceSummary: S
-    } = s.useMemo(() => (0, g.B3)(n, N, t), [n, N, t, l]), T = s.useMemo(() => t === m.PU ? null : n.getCategoryFromSection(t), [n, t, l]), v = (0, u.jN)(C), {
+    } = s.useMemo(() => (0, _.B3)(n, N, t), [n, N, t, l]), T = s.useMemo(() => t === m.PU ? null : n.getCategoryFromSection(t), [n, t, l]), v = (0, u.jN)(C), {
         enableWaveformIcon: y
     } = (0, c.b)(C, "ChannelListSectionFooter"), j = (0, r.yK)([h.Ay], () => {
         if (null == T || !T.isCollapsed || !S) return [];
@@ -115,7 +115,7 @@ let I = s.memo(function(e) {
                 guildId: C,
                 renderLeadingIcon: y ? e => (0, i.jsx)(d.A, {
                     color: "currentColor",
-                    className: a()(e, _.Gj)
+                    className: a()(e, g.Gj)
                 }) : void 0
             })
         }), O]

@@ -16,9 +16,9 @@ var i = n(627968),
     h = n(397927),
     A = n(442433),
     m = n(793574),
-    g = n(688810),
+    _ = n(688810),
     p = n(139286),
-    _ = n(480890),
+    g = n(480890),
     f = n(267102),
     x = n(342296),
     C = n(961350),
@@ -107,7 +107,7 @@ let T = s.memo(function(e) {
             blocked: u
         } = t, I = l.getGuildId(), N = C.default.getId(), {
             newestAnalyticsLocation: T
-        } = (0, g.Ay)(m.A.AUDIENCE_TILE), y = (0, f.Us)(), j = (0, d.bG)([E.Ay], () => null != I && E.Ay.getMember(I, r.id)?.premiumSince != null, [I, r.id]), R = s.useRef(null);
+        } = (0, _.Ay)(m.A.AUDIENCE_TILE), y = (0, f.Us)(), j = (0, d.bG)([E.Ay], () => null != I && E.Ay.getMember(I, r.id)?.premiumSince != null, [I, r.id]), R = s.useRef(null);
         o()(null != I, "Channel cannot be guildless");
         let O = s.useCallback(e => {
             (0, p.x)({
@@ -130,7 +130,7 @@ let T = s.memo(function(e) {
                     showMediaItems: !0,
                     showStageChannelItems: !0,
                     showChatItems: !1,
-                    onInteraction: (0, _.s)("GuildChannelUserContextMenu", T, {
+                    onInteraction: (0, g.s)("GuildChannelUserContextMenu", T, {
                         targetUserId: r.id,
                         tileType: b.qs.USER
                     })

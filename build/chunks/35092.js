@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(587895),
     A = n(44120),
     m = n(317560),
-    g = n(533406),
+    _ = n(533406),
     p = n(183555),
-    _ = n(146423),
+    g = n(146423),
     f = n(662349),
     x = n(216020),
     C = n(479026),
@@ -42,7 +42,7 @@ function y(e) {
         singleCardInfo: A
     } = e, {
         trackUserProfileWishlistAction: m
-    } = (0, p.NJ)(), g = s.useCallback(() => {
+    } = (0, p.NJ)(), _ = s.useCallback(() => {
         m({
             action: b.Mq.PRESS_WISHLIST_BREADCRUMB_CARD,
             skuId: t.id,
@@ -74,18 +74,18 @@ function y(e) {
         fullWidth: !1,
         children: [(0, i.jsx)("div", {
             className: T.kL,
-            children: (0, i.jsx)(_.A, {
+            children: (0, i.jsx)(g.A, {
                 disableHoverOrFocus: !0,
                 sku: t,
                 user: n,
                 spec: v,
                 cardStyle: a()(T.Nr, T.Q1, c),
                 skuPreviewStyle: a()(T.ho, d),
-                onClick: g,
+                onClick: _,
                 onHoverOrFocusChange: y,
                 children: (0, i.jsx)(f.A, {
                     spec: v,
-                    onClick: N ? C : g,
+                    onClick: N ? C : _,
                     isHoveringOrFocusing: S,
                     label: E,
                     icon: I
@@ -94,7 +94,7 @@ function y(e) {
         }), r && (0, i.jsx)(x.A, {
             title: A.title,
             description: A.description,
-            onClick: g
+            onClick: _
         })]
     })
 }
@@ -108,7 +108,7 @@ function j(e) {
     } = e, r = (0, c.bG)([h.A], () => h.A.getApplication(t.applicationId)), {
         analyticsLocations: o
     } = (0, u.Ay)(...l ?? [], d.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON), A = s.useCallback(() => {
-        (0, g.a)(t, {
+        (0, _.a)(t, {
             isGift: !0,
             giftRecipient: n,
             giftingOrigin: N.vQ.USER_PROFILE_WISHLIST
@@ -123,7 +123,7 @@ function j(e) {
             isStorefront: !1,
             analyticsLocations: o
         })
-    }, [r?.guildId, t.id, t.applicationId, o]), _ = s.useMemo(() => ({
+    }, [r?.guildId, t.id, t.applicationId, o]), g = s.useMemo(() => ({
         title: t.name,
         description: S.intl.format(S.t["CqpEC+"], {
             applicationName: r?.name
@@ -135,7 +135,7 @@ function j(e) {
         wishlistOwner: n,
         onDetailsClick: p,
         onPurchaseClick: A,
-        singleCardInfo: _,
+        singleCardInfo: g,
         ...a
     })
 }

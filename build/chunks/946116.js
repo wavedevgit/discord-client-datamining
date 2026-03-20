@@ -3,7 +3,7 @@
 n.d(t, {
     Y1: () => A,
     fx: () => u,
-    g2: () => g,
+    g2: () => _,
     m8: () => h,
     mU: () => m,
     ul: () => p
@@ -17,7 +17,7 @@ var i, s, l, a, r = n(136722),
     A = ((l = {}).CREATE = "CREATE", l.HUB_SCHOOL_CLUB = "HUB_SCHOOL_CLUB", l.HUB_STUDY = "HUB_STUDY", l.HUB_CLASS = "HUB_CLASS", l.HUB_SOCIAL = "HUB_SOCIAL", l.HUB_MAJOR = "HUB_MAJOR", l.HUB_DORM = "HUB_DORM", l),
     m = ((a = {})[a.ALL = -1] = "ALL", a[a.UNCATEGORIZED = 0] = "UNCATEGORIZED", a[a.SCHOOL_CLUB = 1] = "SCHOOL_CLUB", a[a.CLASS = 2] = "CLASS", a[a.STUDY_SOCIAL = 3] = "STUDY_SOCIAL", a[a.MISC = 5] = "MISC", a);
 
-function g(e) {
+function _(e) {
     return "883060064561299456" === e ? [{
         id: "club",
         value: 1,

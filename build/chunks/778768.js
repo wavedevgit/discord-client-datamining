@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(397927),
     A = n(846293),
     m = n(774300),
-    g = n(566903),
+    _ = n(566903),
     p = n(714114),
-    _ = n(864436),
+    g = n(864436),
     f = n(835072),
     x = n(793574),
     C = n(688810),
@@ -52,7 +52,7 @@ function H(e) {
     } = e, u = s.useRef(null), A = (0, N.A)(u), m = (0, G.kt)({
         channel: t
     }), {
-        enabled: g
+        enabled: _
     } = T.A.useExperiment({
         guildId: t.guild_id,
         location: "VoiceInviteSuggestionsPopover"
@@ -72,7 +72,7 @@ function H(e) {
     }, [r]), s.useEffect(() => {
         l?.(A.isHoveringOrFocusing)
     }, [l, A]);
-    let _ = s.useCallback(() => {
+    let g = s.useCallback(() => {
         let e = j.A.getGuild(t.guild_id);
         o()(null != e, "VoiceInviteSuggestionsPopover must be used in context of a guild"), (0, h.mMO)(async () => {
             let {
@@ -92,7 +92,7 @@ function H(e) {
         className: a()(k.popover, w.oO),
         children: (0, i.jsxs)("div", {
             className: w.vW,
-            children: [g && (0, i.jsx)(h.Text, {
+            children: [_ && (0, i.jsx)(h.Text, {
                 variant: "text-sm/medium",
                 color: "text-muted",
                 className: w.DD,
@@ -102,10 +102,10 @@ function H(e) {
                 children: [m.map(e => (0, i.jsx)(F, {
                     channel: t,
                     user: e,
-                    ringingEnabled: g
+                    ringingEnabled: _
                 }, e.id)), (0, i.jsxs)(h.DUT, {
                     tag: "li",
-                    onClick: _,
+                    onClick: g,
                     className: a()(w.nM, w.vk),
                     children: [(0, i.jsx)("div", {
                         className: w.R4,
@@ -168,7 +168,7 @@ function F(e) {
         };
         let e = z.find(e => e.type !== U.$pd.CUSTOM_STATUS && e.type !== U.$pd.HANG_STATUS);
         return {
-            activityStatusText: (0, g.A)(e, !1),
+            activityStatusText: (0, _.A)(e, !1),
             activityStatusIcon: null == e ? void 0 : (0, f.f)(e)
         }
     }, [K, z]), {
@@ -253,7 +253,7 @@ function F(e) {
                     color: $,
                     channel: J,
                     className: w.RI
-                }) : null != X ? (0, i.jsx)(_.A, {
+                }) : null != X ? (0, i.jsx)(g.A, {
                     icon: X,
                     className: w.RI
                 }) : null, (0, i.jsx)(h.Text, {

@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(5180),
     A = n(209047),
     m = n(454938),
-    g = n(855687),
+    _ = n(855687),
     p = n(731091),
-    _ = n(544028),
+    g = n(544028),
     f = n(253932),
     x = n(576705),
     C = n(486020),
@@ -139,8 +139,8 @@ function L(e) {
         onContextMenu: r,
         ariaControls: o,
         ariaExpanded: m,
-        children: _
-    } = e, f = (0, h.YC)(l), C = (0, c.bG)([x.A], () => (0, g.K)(x.A, l)), E = s.useCallback(() => {
+        children: g
+    } = e, f = (0, h.YC)(l), C = (0, c.bG)([x.A], () => (0, _.K)(x.A, l)), E = s.useCallback(() => {
         C ? (0, u.mMO)(async () => {
             let {
                 default: e
@@ -179,7 +179,7 @@ function L(e) {
                 })]
             }), (0, i.jsx)("div", {
                 className: T.dx,
-                children: _
+                children: g
             })]
         }), l.id === b.Vc && (0, i.jsx)(A.A, {
             className: T.sq
@@ -209,7 +209,7 @@ let M = s.memo(function(e) {
         onClick: d,
         onContextMenu: h,
         onMouseDown: A,
-        disableBannerAnimation: g,
+        disableBannerAnimation: _,
         "aria-expanded": p,
         "aria-controls": x,
         guild: I,
@@ -219,7 +219,7 @@ let M = s.memo(function(e) {
         headerClassName: R,
         communityInfoVisible: O,
         hasSubheader: M
-    } = e, G = I.features.has(N.GuildFeatures.ANIMATED_BANNER), U = (0, m.A)(I), P = !U && (0, E.A)(I), w = !U && O, k = (0, C.VI)(b) && G && !g, [V, B] = s.useState(!1), H = s.useRef(!1), F = s.useRef(null), K = t ?? F, W = s.useRef(void 0), Y = f.kt.getSetting(), z = (0, c.bG)([_.A], () => _.A.theme);
+    } = e, G = I.features.has(N.GuildFeatures.ANIMATED_BANNER), U = (0, m.A)(I), P = !U && (0, E.A)(I), w = !U && O, k = (0, C.VI)(b) && G && !_, [V, B] = s.useState(!1), H = s.useRef(!1), F = s.useRef(null), K = t ?? F, W = s.useRef(void 0), Y = f.kt.getSetting(), z = (0, c.bG)([g.A], () => g.A.theme);
     s.useEffect(() => {
         if (k && n && !H.current && Y) return B(!0), W.current = setTimeout(() => {
             B(!1)

@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(887700),
     A = n(855446),
     m = n(793574),
-    g = n(688810),
+    _ = n(688810),
     p = n(975412),
-    _ = n(392054),
+    g = n(392054),
     f = n(826673),
     x = n(757293),
     C = n(954571),
@@ -68,8 +68,8 @@ function v(e) {
     } = e, {
         analyticsLocations: l,
         newestAnalyticsLocation: r
-    } = (0, g.Ay)(m.A.VC_TILE_ACTIVITY_SHELF_BUTTON);
-    return (0, i.jsx)(g.f5, {
+    } = (0, _.Ay)(m.A.VC_TILE_ACTIVITY_SHELF_BUTTON);
+    return (0, i.jsx)(_.f5, {
         value: l,
         children: (0, i.jsxs)(E.A, {
             className: b.zr,
@@ -133,7 +133,7 @@ function y(e) {
     let {
         analyticsLocations: c,
         newestAnalyticsLocation: u
-    } = (0, g.Ay)(m.A.VC_TILE_ACTIVITY_INVITE);
+    } = (0, _.Ay)(m.A.VC_TILE_ACTIVITY_INVITE);
 
     function h() {
         (0, d.mMO)(async () => {
@@ -163,7 +163,7 @@ function y(e) {
             analyticsLocation: u
         })
     }
-    return (0, i.jsx)(g.f5, {
+    return (0, i.jsx)(_.f5, {
         value: c,
         children: (0, i.jsx)(d.NPJ, {
             disableAdaptiveTheme: !0,
@@ -213,12 +213,12 @@ function j(e) {
         }).slice(0, 3),
         {
             analyticsLocations: S
-        } = (0, g.Ay)(m.A.VC_TILE_ACTIVITY_SUGGESTION),
+        } = (0, _.Ay)(m.A.VC_TILE_ACTIVITY_SUGGESTION),
         T = s.useMemo(() => ({
             channel: t,
             type: "channel"
         }), [t]);
-    return (0, i.jsx)(g.f5, {
+    return (0, i.jsx)(_.f5, {
         value: S,
         children: (0, i.jsxs)(E.A, {
             className: b.zr,
@@ -235,7 +235,7 @@ function j(e) {
                     activityItem: e,
                     aspectRatio: A.C.AspectRatio.SIXTEEN_BY_NINE,
                     animatedDivClass: b.KU,
-                    commandOrigin: _.iw.VOICE_TILE_ACTIVITY_SUGGESTIONS
+                    commandOrigin: g.iw.VOICE_TILE_ACTIVITY_SUGGESTIONS
                 }, e.application.id))
             }), (0, i.jsxs)(d.DUT, {
                 className: b.HI,

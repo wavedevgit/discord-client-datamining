@@ -1,9 +1,9 @@
 /** chunk id: 582904 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ln: () => _,
+    Ln: () => g,
     Z0: () => p,
-    kt: () => g
+    kt: () => _
 }), n(839272);
 var i = n(64700),
     s = n(311907),
@@ -18,7 +18,7 @@ var i = n(64700),
     A = n(366251),
     m = n(652215);
 
-function g(e) {
+function _(e) {
     let {
         channel: t
     } = e, n = t?.guild_id, {
@@ -53,7 +53,7 @@ function p(e) {
     }
 }
 
-function _(e) {
+function g(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
         {
             collapsed: n = !1

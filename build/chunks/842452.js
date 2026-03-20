@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(397927),
     A = n(817281),
     m = n(534409),
-    g = n(711014),
+    _ = n(711014),
     p = n(240248),
-    _ = n(263715),
+    g = n(263715),
     f = n(941971),
     x = n(447253),
     C = n(531053),
@@ -69,13 +69,13 @@ let y = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
         let [{
             dragging: ei
         }, es] = (0, r.i)({
-            type: _.PJ.FOLDER,
+            type: g.PJ.FOLDER,
             item: () => (k?.(), {
-                type: _.PJ.FOLDER,
+                type: g.PJ.FOLDER,
                 nodeId: u.id
             }),
             end() {
-                V?.(), (0, A.um)(g.Ay.getCompatibleGuildFolders())
+                V?.(), (0, A.um)(_.Ay.getCompatibleGuildFolders())
             },
             collect: e => ({
                 dragging: e.isDragging()
@@ -144,7 +144,7 @@ let y = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                 targetNode: u,
                 onDragOverChanged: el
             }) : null]
-        }), em = null != u.color ? u.color : b.DO, eg = em === b.DO ? void 0 : (0, d.Hl)(em);
+        }), em = null != u.color ? u.color : b.DO, e_ = em === b.DO ? void 0 : (0, d.Hl)(em);
         return (0, i.jsxs)("div", {
             ref: eh,
             className: a()(T.qc, {
@@ -152,7 +152,7 @@ let y = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                 [T.Lg]: et
             }),
             style: {
-                "--custom-folder-color": eg ?? ""
+                "--custom-folder-color": e_ ?? ""
             },
             "data-drop-hovering": Z,
             children: [!ei && O && (0, i.jsx)("span", {

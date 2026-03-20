@@ -16,9 +16,9 @@ var s = n(311907),
     h = n(935159),
     A = n(508654),
     m = n(974930),
-    g = n(47868),
+    _ = n(47868),
     p = n(985018),
-    _ = n(416824);
+    g = n(416824);
 
 function f(e) {
     let {
@@ -28,7 +28,7 @@ function f(e) {
         canManageGuildEvent: I
     } = (0, r.nr)(x), N = (0, s.bG)([c.A], () => C.filter(e => !c.A.isEventDismissed(e.id)), [C]), b = (0, s.cf)([u.Ay], () => N.reduce((e, t) => (e[t.id] = u.Ay.getUserCount(t.id, (0, m.G3)(t)), e), {}), [N]);
     return N.length < 1 || E ? null : (0, i.jsx)(i.Fragment, {
-        children: N.map(e => (0, i.jsx)(g.A, {
+        children: N.map(e => (0, i.jsx)(_.A, {
             icon: (0, i.jsx)(a.CTc, {
                 size: "custom",
                 color: "currentColor",
@@ -60,7 +60,7 @@ function f(e) {
                 return t = e.id, void(0, h.Nt)(t)
             } : void 0,
             userCount: b[e.id],
-            className: _.f
+            className: g.f
         }, e.id))
     })
 }

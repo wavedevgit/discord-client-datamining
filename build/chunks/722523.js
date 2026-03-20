@@ -17,7 +17,7 @@ var s = n(503698),
     h = n(568065),
     A = n(136708),
     m = n(985018),
-    g = n(452565);
+    _ = n(452565);
 
 function p(e) {
     let {
@@ -27,7 +27,7 @@ function p(e) {
         onClick: r
     } = e, o = (0, d.A)(n, s), c = (0, u.A)(n, s), p = h.HO.has(s.skuId);
     return (0, i.jsx)("div", {
-        className: l()(g.FS, t),
+        className: l()(_.FS, t),
         children: (0, i.jsx)(a.$nd, {
             variant: "primary",
             fullWidth: !0,
@@ -39,16 +39,16 @@ function p(e) {
     })
 }
 
-function _(e) {
+function g(e) {
     let {
         className: t,
         guildId: n,
         powerup: s
     } = e, r = (0, u.A)(n, s);
     return (0, i.jsx)("div", {
-        className: l()(g.kL, t),
+        className: l()(_.kL, t),
         children: (0, i.jsx)("div", {
-            className: g.FS,
+            className: _.FS,
             children: (0, i.jsx)(a.$nd, {
                 variant: "primary",
                 fullWidth: !0,
@@ -71,7 +71,7 @@ function f(e) {
         isPowerupActive: u
     } = (0, r.A)(n, s), h = !u;
     return (0, i.jsxs)("div", {
-        className: l()(g.kL, t),
+        className: l()(_.kL, t),
         children: [d && (0, i.jsx)(c.A, {
             guildId: n,
             powerup: s,
@@ -92,7 +92,7 @@ function x(e) {
     } = e;
     return (0, o.A)(t.guildId) ? (0, i.jsx)(f, {
         ...t
-    }) : (0, i.jsx)(_, {
+    }) : (0, i.jsx)(g, {
         ...t
     })
 }

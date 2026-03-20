@@ -16,9 +16,9 @@ var i = n(627968),
     h = n(793574),
     A = n(230135),
     m = n(552836),
-    g = n(147925),
+    _ = n(147925),
     p = n(363487),
-    _ = n(267771),
+    g = n(267771),
     f = n(828162),
     x = n(259568),
     C = n(136708),
@@ -76,10 +76,10 @@ let N = s.forwardRef((e, t) => {
                         appliedBoostCount: n,
                         maxBoostCount: l
                     })
-                }), (0, i.jsx)(g.A, {
+                }), (0, i.jsx)(_.A, {
                     width: 12,
                     height: 12,
-                    direction: g.A.Directions.RIGHT,
+                    direction: _.A.Directions.RIGHT,
                     className: a()(I.Qq, I.ue)
                 })]
             })]
@@ -91,14 +91,14 @@ function b(e) {
     let {
         guild: t,
         withMargin: l
-    } = e, r = s.useRef(null), o = (0, _.A)(t), g = (0, p.A)(t.id), C = s.useCallback(() => {
+    } = e, r = s.useRef(null), o = (0, g.A)(t), _ = (0, p.A)(t.id), C = s.useCallback(() => {
         (0, f.A)(t.id, h.A.GUILD_BOOSTING_SIDEBAR_DISPLAY)
     }, [t.id]), E = (0, c.bG)([m.A], () => m.A.getCountForGuild(t.id) ?? 0);
     s.useEffect(() => {
         E !== t.premiumSubscriberCount && (0, A.u)(t.id, t.premiumSubscriberCount)
     }, [t.id, E, t.premiumSubscriberCount]);
     let b = s.useCallback(e => {
-        g && (0, u.L3)(e, async () => {
+        _ && (0, u.L3)(e, async () => {
             let {
                 default: e
             } = await n.e("71728").then(n.bind(n, 709843));
@@ -107,7 +107,7 @@ function b(e) {
                 guild: t
             })
         })
-    }, [g, t]);
+    }, [_, t]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.DUT, {
             "aria-label": void 0,

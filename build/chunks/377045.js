@@ -1,7 +1,7 @@
 /** chunk id: 377045 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -16,23 +16,23 @@ var i = n(627968),
     A = n(985018),
     m = n(985531);
 
-function g(e) {
+function _(e) {
     let t, {
-        channelId: g
+        channelId: _
     } = e;
     s.useEffect(() => {
-        u.A.loadThread(g)
+        u.A.loadThread(_)
     });
     let p = (0, o.DZ)(),
-        _ = (0, a.bG)([h.A], () => h.A.theme);
+        g = (0, a.bG)([h.A], () => h.A.theme);
     return p ? (0, i.jsxs)("div", {
         className: m.A,
         children: [l.Fr && (0, i.jsx)(d.Ay, {
             children: null
         }), (0, i.jsx)(c.A, {
-            theme: _
+            theme: g
         })]
-    }) : (t = null != g ? (0, i.jsx)(r.y$y, {
+    }) : (t = null != _ ? (0, i.jsx)(r.y$y, {
         type: r.y$y.Type.SPINNING_CIRCLE
     }) : (0, i.jsx)(r.SGT, {
         note: A.intl.string(A.t["LTr+x9"]),
@@ -42,7 +42,7 @@ function g(e) {
         children: [l.Fr && (0, i.jsx)(d.Ay, {
             children: null
         }), (0, i.jsxs)(r.ppr, {
-            theme: _,
+            theme: g,
             children: [(0, i.jsx)(r.G8R, {
                 darkSrc: n(355937),
                 lightSrc: n(332327),

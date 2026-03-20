@@ -20,19 +20,19 @@ function A(e) {
         groupListingId: n,
         location: A,
         relevantSubscriptionListingIds: m
-    } = e, g = (0, c.X)("useTrackRoleSubscriptionUpsellAnalytics"), {
+    } = e, _ = (0, c.X)("useTrackRoleSubscriptionUpsellAnalytics"), {
         activeSubscription: p
-    } = (0, u.A)(n), _ = null != p, f = (0, s.yK)([d.A], () => (m ?? []).filter(e => d.A.getSubscriptionListing(e)?.published === !0), [m]), {
+    } = (0, u.A)(n), g = null != p, f = (0, s.yK)([d.A], () => (m ?? []).filter(e => d.A.getSubscriptionListing(e)?.published === !0), [m]), {
         analyticsLocations: x
     } = (0, a.Ay)((0, r.UC)() ?? []), C = i.useRef(!1);
     i.useEffect(() => {
-        g && null != n && null != f && !C.current && (C.current = !0, o.default.track(h.HAw.ROLE_SUBSCRIPTION_LISTING_UPSELL_PAGE_VIEWED, {
+        _ && null != n && null != f && !C.current && (C.current = !0, o.default.track(h.HAw.ROLE_SUBSCRIPTION_LISTING_UPSELL_PAGE_VIEWED, {
             role_subscription_group_listing_id: n,
             role_subscription_listing_ids: f,
-            is_premium_member: _,
+            is_premium_member: g,
             location_stack: x,
             location: A,
             ...(0, l.H$)(t)
         }))
-    }, [t, n, g, A, f, _, x])
+    }, [t, n, _, A, f, g, x])
 }

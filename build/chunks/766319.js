@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(386467),
     A = n(760751),
     m = n(383501),
-    g = n(287809),
+    _ = n(287809),
     p = n(762370),
-    _ = n(25528),
+    g = n(25528),
     f = n(652215),
     x = n(55705),
     C = n(985018),
@@ -31,8 +31,8 @@ function I(e) {
         } = e,
         d = (0, u.YY)(n.application_id).data,
         [h, A] = s.useState(!1),
-        [g, p] = s.useState(0),
-        _ = (0, r.bG)([m.A], () => m.A.getChannelId() !== l.id);
+        [_, p] = s.useState(0),
+        g = (0, r.bG)([m.A], () => m.A.getChannelId() !== l.id);
     async function I() {
         p(1);
         try {
@@ -50,7 +50,7 @@ function I(e) {
         }
         p(2)
     }
-    if (_ && (t = C.intl.string(x.default.qRXats)), n.type === f.$pd.PLAYING) {
+    if (g && (t = C.intl.string(x.default.qRXats)), n.type === f.$pd.PLAYING) {
         let e = d?.getIconURL(46);
         return (0, i.jsxs)("div", {
             className: E.gd,
@@ -75,11 +75,11 @@ function I(e) {
                     })]
                 })]
             }), (0, i.jsx)(o.Button, {
-                loading: 1 === g,
-                disabled: _ || 2 === g,
+                loading: 1 === _,
+                disabled: g || 2 === _,
                 fullWidth: !0,
                 size: "sm",
-                text: 2 === g ? C.intl.string(x.default["8HU1M2"]) : C.intl.string(x.default.DKHhec),
+                text: 2 === _ ? C.intl.string(x.default["8HU1M2"]) : C.intl.string(x.default.DKHhec),
                 onClick: I
             }), null != t && (0, i.jsx)(o.Text, {
                 className: E.H$,
@@ -95,7 +95,7 @@ function N(e) {
     let {
         userId: t,
         channel: n
-    } = e, o = (0, r.bG)([g.default], () => g.default.getUser(t)), c = (0, _.Ay)(t, n.guild_id), u = (0, p.A)(t, n.id), m = s.useMemo(() => l.uniqWith(c, (e, t) => {
+    } = e, o = (0, r.bG)([_.default], () => _.default.getUser(t)), c = (0, g.Ay)(t, n.guild_id), u = (0, p.A)(t, n.id), m = s.useMemo(() => l.uniqWith(c, (e, t) => {
         if (e.application_id === t.application_id) return !0;
         let n = A.A.searchGamesByName(e.name),
             i = new Set(A.A.searchGamesByName(t.name));

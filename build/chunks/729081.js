@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(311907),
     A = n(52133),
     m = n(568598),
-    g = n(313961),
+    _ = n(313961),
     p = n(246356),
-    _ = n(178213),
+    g = n(178213),
     f = n(332772),
     x = n(594832),
     C = n(631784),
@@ -57,13 +57,13 @@ function B(e) {
     s.useEffect(() => {
         t || n()
     }, [n, t]);
-    let A = (0, _.GG)("social_layer_storefront_gifting_mini_shelf");
+    let A = (0, g.GG)("social_layer_storefront_gifting_mini_shelf");
     (0, f.T)({
         location: "social_layer_storefront_gifting_mini_shelf"
     });
     let B = (0, h.bG)([y.A], () => y.A.getStorefrontDetectableGameAndApplicationIds()),
         F = (0, R.W)(),
-        [K] = (0, h.bG)([g.A], () => null != d.id ? [g.A.getParticipants(d.id), g.A.getParticipantsVersion(d.id)] : [
+        [K] = (0, h.bG)([_.A], () => null != d.id ? [_.A.getParticipants(d.id), _.A.getParticipantsVersion(d.id)] : [
             [], 0
         ], [d.id], m.hS),
         [W, Y] = (0, h.bG)([b.A], () => {

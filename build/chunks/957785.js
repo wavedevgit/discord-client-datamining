@@ -20,16 +20,16 @@ let A = s.forwardRef(function(e, t) {
         shouldScalePreview: l = !0,
         renderPreview: A,
         moreCount: m,
-        isSingleCard: g = !1,
+        isSingleCard: _ = !1,
         wishlistId: p,
-        wishlistItem: _,
+        wishlistItem: g,
         cardSize: f = u.Y.MEDIUM
     } = e, {
         skuId: x,
         skuProductLine: C
-    } = _, {
+    } = g, {
         trackUserProfileWishlistAction: E
-    } = (0, d.NJ)(), I = l ? h.ho : h.C8, N = g ? h.pr : h.Nr, b = null != m && m > 0, S = (0, i.jsxs)(o.DUT, {
+    } = (0, d.NJ)(), I = l ? h.ho : h.C8, N = _ ? h.pr : h.Nr, b = null != m && m > 0, S = (0, i.jsxs)(o.DUT, {
         onClick: () => {
             n(), E({
                 action: b ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
@@ -57,7 +57,7 @@ let A = s.forwardRef(function(e, t) {
     });
     return (0, i.jsx)(r.un, {
         asContainer: !0,
-        asset: s.renderIcon?.(_),
+        asset: s.renderIcon?.(g),
         assetSize: c.Q8,
         title: s.title,
         body: s.body ?? "",
