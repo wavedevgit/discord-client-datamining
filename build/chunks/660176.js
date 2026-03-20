@@ -1,6 +1,6 @@
 /** chunk id: 660176 params = (module,exports,require) **/
 n.d(t, {
-    A: () => V
+    A: () => w
 });
 var i = n(627968),
     a = n(64700),
@@ -80,7 +80,7 @@ function k(e) {
     let {
         compact: t
     } = e;
-    return (0, i.jsx)(w, {
+    return (0, i.jsx)(V, {
         compact: t,
         header: (0, i.jsxs)(a.Fragment, {
             children: [(0, i.jsx)(m.EpV, {
@@ -104,7 +104,7 @@ function G(e) {
     let {
         compact: t
     } = e;
-    return (0, i.jsx)(w, {
+    return (0, i.jsx)(V, {
         compact: t,
         header: (0, i.jsxs)(a.Fragment, {
             children: [(0, i.jsx)(m.EpV, {
@@ -137,7 +137,7 @@ function F(e) {
         guildId: r,
         size: 12
     }), A = a.useRef(null);
-    return (0, i.jsx)(w, {
+    return (0, i.jsx)(V, {
         compact: n,
         header: (0, i.jsxs)(a.Fragment, {
             children: [(0, i.jsx)(m.Hnu, {
@@ -216,7 +216,7 @@ function B(e) {
         let e = N?.guild_id;
         null != e && (0, f.is)(t.id, e)
     }, [t.id, N]), x = c === d.p.DM_RAID, S = x ? m.EpV : m.EF8;
-    return (0, i.jsx)(w, {
+    return (0, i.jsx)(V, {
         compact: n,
         header: (0, i.jsxs)(a.Fragment, {
             children: [(0, i.jsx)(S, {
@@ -297,7 +297,7 @@ function H(e) {
         decisionId: s,
         suspiciousMentionActivityUntil: c
     } = (0, T.Bk)(t);
-    return (0, i.jsx)(w, {
+    return (0, i.jsx)(V, {
         compact: n,
         header: (0, i.jsxs)(a.Fragment, {
             children: [(0, i.jsx)(m.EpV, {
@@ -353,7 +353,7 @@ function H(e) {
     })
 }
 
-function w(e) {
+function V(e) {
     let {
         compact: t,
         header: n,
@@ -386,7 +386,7 @@ function w(e) {
     })
 }
 
-function V(e) {
+function w(e) {
     let {
         id: t,
         compact: n,

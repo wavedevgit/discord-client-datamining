@@ -1,7 +1,7 @@
 /** chunk id: 362205 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => E
+    A: () => S
 });
 var r = n(627968),
     i = n(64700),
@@ -12,17 +12,19 @@ var r = n(627968),
     c = n(497766),
     u = n(942381),
     d = n(837381),
-    h = n(397927),
-    _ = n(775602),
-    f = n(253932),
-    m = n(894858),
-    p = n(272053),
-    b = n(189857),
-    g = n(674085),
-    y = n(890690),
-    v = n(652099);
+    h = n(319354),
+    _ = n(397927),
+    f = n(775602),
+    m = n(253932),
+    p = n(894858),
+    b = n(272053),
+    g = n(189857),
+    y = n(674085),
+    v = n(188180),
+    x = n(890690),
+    E = n(652099);
 
-function x(e) {
+function A(e) {
     let {
         category: t,
         onClick: n,
@@ -32,33 +34,33 @@ function x(e) {
         useTitle: s,
         useSubnavLabel: c,
         key: u
-    } = t, _ = s?.(), f = c?.() ?? _;
+    } = t, h = s?.(), f = c?.() ?? h;
     return o()(null != f, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(d.tG, {
         id: u,
-        children: e => (0, r.jsxs)(h.DUT, {
+        children: e => (0, r.jsxs)(_.DUT, {
             onClick: n,
-            className: l()(v.AS, {
-                [v.vu]: i
+            className: l()(E.AS, {
+                [E.vu]: i
             }),
             ...e,
-            children: [f, null != a && !i && (0, r.jsx)(g.A, {
+            children: [f, null != a && !i && (0, r.jsx)(y.A, {
                 badge: a
             })]
         }, u)
     })
 }
 
-function E(e) {
+function S(e) {
     let {
         categories: t,
         visibleContent: n,
         dismissibleBadges: a
     } = e, [l, s] = i.useState(() => {
-        let e = m.A.getField("currentCategoryKey"),
+        let e = p.A.getField("currentCategoryKey"),
             n = t.find(t => t.key === e);
         return n?.key ?? t[0].key
     });
-    i.useEffect(() => m.A.subscribe(e => {
+    i.useEffect(() => p.A.subscribe(e => {
         let {
             currentCategoryKey: t
         } = e;
@@ -72,17 +74,17 @@ function E(e) {
     let o = i.useMemo(() => Math.max(t.findIndex(e => e.key === l), 0), [t, l]),
         {
             thumbRef: d,
-            trackRef: g,
-            thumbAnchorRef: E,
-            springs: A
+            trackRef: y,
+            thumbAnchorRef: S,
+            springs: N
         } = function(e) {
-            let t = f.Xi.useSetting(),
+            let t = m.Xi.useSetting(),
                 n = i.useRef(null),
                 r = i.useRef(null),
                 a = i.useRef(null),
                 l = i.useRef(!0),
                 s = i.useRef(t),
-                [o, c] = (0, h.zhh)(() => ({
+                [o, c] = (0, _.zhh)(() => ({
                     y: 0,
                     height: 0,
                     config: {
@@ -95,10 +97,10 @@ function E(e) {
                 let e = s.current !== t,
                     i = () => {
                         if (null == n.current || null == r.current || null == a.current) return;
-                        let [i, u] = [n.current.getBoundingClientRect(), a.current.getBoundingClientRect()], d = i.width / 2, h = (u.y - i.y) / d, f = u.height / d;
-                        l.current || e || _.A.useReducedMotion ? (o.y.set(h), o.height.set(f)) : c({
+                        let [i, u] = [n.current.getBoundingClientRect(), a.current.getBoundingClientRect()], d = i.width / 2, h = (u.y - i.y) / d, _ = u.height / d;
+                        l.current || e || f.A.useReducedMotion ? (o.y.set(h), o.height.set(_)) : c({
                             y: h,
-                            height: f
+                            height: _
                         }), l.current = !1, s.current = t
                     },
                     u = null;
@@ -114,33 +116,34 @@ function E(e) {
                 springs: o
             }
         }(o);
-    return (0, y.u)(t), (0, r.jsxs)("div", {
-        className: v.o8,
+    return (0, x.u)(t), (0, r.jsxs)("div", {
+        className: E.o8,
         role: "list",
         style: {
             "--custom-nav-count": t.length,
             "--custom-nav-index": o,
-            "--custom-nav-width": "2px"
+            "--custom-nav-width": "2px",
+            "--custom-icon-size": `${h.E[v.V]}px`
         },
         children: [(0, r.jsx)("div", {
-            className: v.u4,
+            className: E.u4,
             "aria-hidden": "true",
-            ref: g,
+            ref: y,
             children: (0, r.jsx)(c.animated.div, {
-                className: v.FF,
-                style: A,
+                className: E.FF,
+                style: N,
                 ref: d
             })
         }), (0, r.jsx)("div", {
-            className: v.gu,
+            className: E.gu,
             "aria-hidden": "true",
-            ref: E
+            ref: S
         }), t.map(e => {
-            let t = (0, b.H)(e.key, n, a);
-            return (0, r.jsx)(x, {
+            let t = (0, g.H)(e.key, n, a);
+            return (0, r.jsx)(A, {
                 onClick: () => {
                     var t;
-                    return t = e.key, void p.A.navigate(t, {
+                    return t = e.key, void b.A.navigate(t, {
                         showNavigationMobile: !1
                     })
                 },

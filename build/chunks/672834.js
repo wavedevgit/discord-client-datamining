@@ -41,8 +41,8 @@ var i = n(627968),
     F = n(576705),
     B = n(290863),
     H = n(309010),
-    w = n(287809),
-    V = n(977997),
+    V = n(287809),
+    w = n(977997),
     q = n(203982),
     X = n(562153),
     K = n(728458),
@@ -147,7 +147,7 @@ let eL = Object.freeze({
                 compact: a
             } = e, {
                 author: r
-            } = t, s = t.getChannelId(), o = (0, l.bG)([w.default], () => w.default.getUser(t.mentions[0]), [t]), c = X.Ay.getName(null, s, o), d = (0, Z.P)({
+            } = t, s = t.getChannelId(), o = (0, l.bG)([V.default], () => V.default.getUser(t.mentions[0]), [t]), c = X.Ay.getName(null, s, o), d = (0, Z.P)({
                 user: r,
                 channelId: s,
                 guildId: n.guild_id,
@@ -180,7 +180,7 @@ let eL = Object.freeze({
                 compact: a
             } = e, {
                 author: r
-            } = t, s = t.getChannelId(), o = (0, l.bG)([w.default], () => w.default.getUser(t.mentions[0]), [t]), c = (0, Z.P)({
+            } = t, s = t.getChannelId(), o = (0, l.bG)([V.default], () => V.default.getUser(t.mentions[0]), [t]), c = (0, Z.P)({
                 user: r,
                 channelId: s,
                 guildId: n.guild_id,
@@ -219,7 +219,7 @@ let eL = Object.freeze({
             } = e, {
                 id: s,
                 author: o
-            } = t, d = y.default.getId(), u = t.getChannelId(), _ = (0, l.bG)([b.A], () => b.A.isCallActive(u, s), [u, s]), m = (0, l.bG)([V.A], () => V.A.getVoiceState(eM.ME, d)), A = !_ && null != t.call && !t.call.participants.includes(d), E = _ && (null == m || m.channelId !== u), I = a.useCallback(() => c.default.selectVoiceChannel(u), [u]), T = (0, Z.P)({
+            } = t, d = y.default.getId(), u = t.getChannelId(), _ = (0, l.bG)([b.A], () => b.A.isCallActive(u, s), [u, s]), m = (0, l.bG)([w.A], () => w.A.getVoiceState(eM.ME, d)), A = !_ && null != t.call && !t.call.participants.includes(d), E = _ && (null == m || m.channelId !== u), I = a.useCallback(() => c.default.selectVoiceChannel(u), [u]), T = (0, Z.P)({
                 user: o,
                 channelId: u,
                 guildId: r.guild_id,
@@ -654,7 +654,7 @@ let eL = Object.freeze({
             let {
                 message: t,
                 channel: n
-            } = e, a = t.giftingPrompt, r = (0, l.bG)([w.default], () => w.default.getUser(a?.recipientUserId));
+            } = e, a = t.giftingPrompt, r = (0, l.bG)([V.default], () => V.default.getUser(a?.recipientUserId));
             return null == a || null == r ? null : (0, i.jsx)(J.A, {
                 giftIntentType: a.giftIntentType,
                 recipientUser: r,
