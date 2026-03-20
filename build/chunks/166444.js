@@ -225,6 +225,7 @@ let B = i.memo(function(e) {
                 onClick: () => N?.(n),
                 ...Q,
                 "aria-label": H,
+                "aria-current": h ? "page" : void 0,
                 focusProps: {
                     enabled: !1
                 },
