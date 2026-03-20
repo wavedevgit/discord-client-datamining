@@ -14,8 +14,8 @@ var a = n(627968),
     u = n(554146),
     m = n(451988),
     h = n(397927),
-    x = n(442433),
-    p = n(820284),
+    p = n(442433),
+    x = n(820284),
     g = n(717558),
     _ = n(964486),
     f = n(220839),
@@ -68,8 +68,8 @@ var a = n(627968),
     eu = n(461213),
     em = n(485296),
     eh = n(287809),
-    ex = n(486020),
-    ep = n(203982),
+    ep = n(486020),
+    ex = n(203982),
     eg = n(927813),
     e_ = n(403362),
     ef = n(536194),
@@ -103,10 +103,10 @@ function eU(e) {
         handleClick: c,
         handleMouseLeave: u,
         renderNameTag: m,
-        nameplate: x,
+        nameplate: p,
         avatarDecoration: g,
         "data-jump-section": _
-    } = e, v = i.useRef(null), b = t ?? v, j = (0, ex.F_)({
+    } = e, v = i.useRef(null), b = t ?? v, j = (0, ep.F_)({
         avatarDecoration: g,
         size: (0, S.Te)(h._3J.SIZE_32)
     }), A = (0, M.A)(), {
@@ -129,16 +129,16 @@ function eU(e) {
                 } = t;
                 null != n && a(n), e.current?.()
             };
-            return ep._.subscribe(eE.jej.SHOW_ACCOUNT_PROFILE_POPOUT, t), () => {
-                ep._.unsubscribe(eE.jej.SHOW_ACCOUNT_PROFILE_POPOUT, t)
+            return ex._.subscribe(eE.jej.SHOW_ACCOUNT_PROFILE_POPOUT, t), () => {
+                ex._.unsubscribe(eE.jej.SHOW_ACCOUNT_PROFILE_POPOUT, t)
             }
         }), {
             updateOpenPopoutRef: t,
             highlightBadge: l ? n : void 0,
             setHighlightBadge: a
         }
-    }(), E = (0, W.K)(x);
-    return null == o ? null : (0, a.jsx)(p.A, {
+    }(), E = (0, W.K)(p);
+    return null == o ? null : (0, a.jsx)(x.A, {
         object: eE.ZSU.AVATAR,
         children: (0, a.jsx)(Q.A, {
             user: o,
@@ -190,7 +190,7 @@ function eU(e) {
                         e.onClick?.(t), c?.(t)
                     },
                     className: s()(eR.Q9, {
-                        [eR.ZQ]: null != x
+                        [eR.ZQ]: null != p
                     }),
                     children: [(0, a.jsx)(h.DUT, {
                         ...u,
@@ -273,20 +273,20 @@ class eL extends i.PureComponent {
         let {
             currentUser: t
         } = this.props;
-        null != t && (0, x.L3)(e, async () => {
+        null != t && (0, p.L3)(e, async () => {
             let {
                 default: e
             } = await n.e("50143").then(n.bind(n, 92962));
             return t => (0, a.jsx)(e, {
                 ...t,
-                onClose: x.Z_,
+                onClose: p.Z_,
                 onInteraction: (0, w.s)("UserSettingsMenu", C.A.ACCOUNT)
             })
         })
     };
     audioOnInteractionHandler = (0, w.s)("AudioDeviceMenu", C.A.ACCOUNT);
     handleInputAudioContextMenu = (e, t) => {
-        this.dismissTooltips(), (0, x.L3)(e, async () => {
+        this.dismissTooltips(), (0, p.L3)(e, async () => {
             let {
                 default: e
             } = await n.e("78827").then(n.bind(n, 385318));
@@ -299,7 +299,7 @@ class eL extends i.PureComponent {
                 return (0, a.jsx)(y.f5, {
                     value: t,
                     children: (0, a.jsx)(e, {
-                        onClose: x.Z_,
+                        onClose: p.Z_,
                         renderInputDevices: !0,
                         renderInputProfiles: n.length > 0,
                         renderInputVolume: !0,
@@ -311,14 +311,14 @@ class eL extends i.PureComponent {
         })
     };
     handleOutputAudioContextMenu = (e, t) => {
-        this.dismissTooltips(), (0, x.L3)(e, async () => {
+        this.dismissTooltips(), (0, p.L3)(e, async () => {
             let {
                 default: e
             } = await n.e("78827").then(n.bind(n, 385318));
             return () => (0, a.jsx)(y.f5, {
                 value: t,
                 children: (0, a.jsx)(e, {
-                    onClose: x.Z_,
+                    onClose: p.Z_,
                     renderOutputDevices: !0,
                     renderOutputVolume: !0,
                     minimal: !0,
@@ -575,8 +575,8 @@ function eB(e) {
         handleMouseEnterMute: u,
         handleMouseLeaveMute: m,
         handleToggleSelfDeaf: h,
-        handleToggleSelfMute: x,
-        handleInputAudioContextMenu: p,
+        handleToggleSelfMute: p,
+        handleInputAudioContextMenu: x,
         handleOutputAudioContextMenu: g,
         handleOpenAccountSettings: _,
         handleOpenSettingsContextMenu: f,
@@ -599,8 +599,8 @@ function eB(e) {
             awaitingRemote: i,
             onMouseEnter: u,
             onMouseLeave: m,
-            onClick: x,
-            onContextMenu: p,
+            onClick: p,
+            onContextMenu: x,
             iconForeground: null != b ? eR.t4 : void 0,
             nameplate: b,
             shouldShowSpeakingWhileMutedTooltip: o,
@@ -676,10 +676,10 @@ function eF() {
             userId: t
         }),
         m = (0, c.bG)([em.A], () => em.A.getVoiceVolume(t)),
-        x = ev.Ay.useUserTag(e, {
+        p = ev.Ay.useUserTag(e, {
             decoration: "never"
         }),
-        p = (0, c.bG)([ed.A, el.A], () => {
+        x = (0, c.bG)([ed.A, el.A], () => {
             let e = ed.A.getChannelId();
             return null != e ? el.A.getChannel(e) : null
         }),
@@ -687,11 +687,11 @@ function eF() {
             mute: _,
             selfMute: f,
             suppress: v
-        } = (0, ee.A)(p),
+        } = (0, ee.A)(x),
         {
             selfDeaf: b,
             deaf: j
-        } = (0, Z.A)(p),
+        } = (0, Z.A)(x),
         A = (0, c.bG)([E.A], () => (0, N.kK)() ? E.A.getCurrentBuildOverride().overrides?.discord_web : null),
         S = (0, c.bG)([eo.Ay], () => eo.Ay.getSpeakingWhileMuted()),
         k = (0, c.bG)([I.A], () => I.A.isFullscreenInContext()),
@@ -734,7 +734,7 @@ function eF() {
     } = eG(eI.oh.AUDIO_OUTPUT), {
         shouldShowTooltip: J,
         dismissTooltip: X
-    } = (0, et.A)(), ex = (0, en.A)(), ep = i.useMemo(() => K ? "input" : Q ? "output" : void 0, [K, Q]), eg = i.useCallback(e => {
+    } = (0, et.A)(), ep = (0, en.A)(), ex = i.useMemo(() => K ? "input" : Q ? "output" : void 0, [K, Q]), eg = i.useCallback(e => {
         switch (e) {
             case "input":
                 q();
@@ -750,9 +750,9 @@ function eF() {
             username: U,
             activities: n,
             applicationStream: r,
-            voiceChannel: p,
+            voiceChannel: x,
             dismissibleContents: H,
-            userTag: x,
+            userTag: p,
             occluded: O,
             selfDeaf: b,
             selfMute: f,
@@ -761,7 +761,7 @@ function eF() {
             speaking: d,
             voiceDb: m,
             speakingWhileMuted: S,
-            speakingWhilePTTInactive: ex,
+            speakingWhilePTTInactive: ep,
             status: s,
             streaming: l,
             suppress: v,
@@ -772,8 +772,8 @@ function eF() {
             avatarDecoration: P,
             isQuestBarEmpty: F,
             isListenAlongVisible: W,
-            deviceChangedTooltipType: ep,
-            onDismissDeviceChangedTooltip: () => eg(ep),
+            deviceChangedTooltipType: ex,
+            onDismissDeviceChangedTooltip: () => eg(ex),
             shouldShowPTTJoinTooltip: J,
             dismissPTTJoinTooltip: X
         })

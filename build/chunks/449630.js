@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(765671),
     m = n(793574),
     h = n(688810),
-    x = n(395332),
-    p = n(713517),
+    p = n(395332),
+    x = n(713517),
     g = n(645507),
     _ = n(970931),
     f = n(258836),
@@ -74,7 +74,7 @@ function et(e) {
     } = (0, u.Ay)(), {
         isHoveringOrFocusing: ed,
         isHovering: ec
-    } = (0, p.A)(er);
+    } = (0, x.A)(er);
     i.useEffect(() => {
         l?.(er.current)
     }, [er, l]), i.useEffect(() => (V.A.setState({
@@ -85,8 +85,8 @@ function et(e) {
     let eu = (0, d.bG)([U.A], () => U.A.getStatus(t.id)),
         em = P.CY.useSetting(),
         eh = (0, q.Q)(em),
-        ex = (0, d.bG)([L.A], () => L.A.hidePersonalInformation),
-        ep = (0, _.kB)(),
+        ep = (0, d.bG)([L.A], () => L.A.hidePersonalInformation),
+        ex = (0, _.kB)(),
         eg = P.Q_.useSetting(),
         e_ = (0, q.T)(eu),
         ef = (0, W.j)(n),
@@ -119,10 +119,10 @@ function et(e) {
         ek = i.useCallback(() => {
             ev(), eI()
         }, [ev, eI]),
-        eR = (0, x.JY)({
+        eR = (0, p.JY)({
             location: "UserProfileAccountPopout"
         }),
-        eO = (0, x.on)({
+        eO = (0, p.on)({
             location: "UserProfileAccountPopout"
         });
     return (0, a.jsx)(h.f5, {
@@ -189,7 +189,7 @@ function et(e) {
                         }), (0, a.jsx)(M.A, {
                             user: t,
                             bio: ei?.bio,
-                            hidePersonalInformation: ex,
+                            hidePersonalInformation: ep,
                             onClose: n
                         }), eN && (0, a.jsx)(k.A, {
                             user: t,
@@ -222,7 +222,7 @@ function et(e) {
                                             status: eu,
                                             size: 12
                                         }),
-                                        trailing: (ep || eu === Y.clD.DND) && (0, a.jsx)(c.a_I, {
+                                        trailing: (ex || eu === Y.clD.DND) && (0, a.jsx)(c.a_I, {
                                             size: "xxs"
                                         }),
                                         renderSubmenu: r.Fr ? void 0 : e => {

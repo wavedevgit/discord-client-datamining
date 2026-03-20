@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    r = n(681154),
-    l = n(311907),
+    l = n(681154),
+    r = n(311907),
     s = n(713654),
     o = n(263063),
     d = n(698441),
@@ -26,7 +26,6 @@ function E(e) {
             case "message":
             case "guildEvent":
             case "forumThread":
-            case "generatedCandidate":
                 return "guild";
             case "contentInventory":
                 return "user";
@@ -37,8 +36,6 @@ function E(e) {
         switch (t.data.kind) {
             case "message":
                 return t.data.message.channel_id;
-            case "generatedCandidate":
-                return t.data.item.channel_id;
             case "forumThread":
                 return t.data.threadChannel.id;
             default:
@@ -58,12 +55,10 @@ function E(e) {
                 return _.default.extractTimestamp(t.data.message.id);
             case "guildEvent":
                 return _.default.extractTimestamp(t.data.eventId);
-            case "generatedCandidate":
-                return _.default.extractTimestamp(t.data.item.content_id);
             default:
                 return t.timestamp
         }
-    }, [t]), T = (0, l.bG)([u.A], () => u.A.getChannel(E), [E]), N = T?.guild_id ?? I, S = (0, l.bG)([A.A], () => null != N ? A.A.getGuild(N) : null, [N]), x = (0, l.bG)([h.default], () => null != f ? h.default.getUser(f) : null, [f]);
+    }, [t]), T = (0, r.bG)([u.A], () => u.A.getChannel(E), [E]), N = T?.guild_id ?? I, S = (0, r.bG)([A.A], () => null != N ? A.A.getGuild(N) : null, [N]), x = (0, r.bG)([h.default], () => null != f ? h.default.getUser(f) : null, [f]);
     return "unknown" === n ? null : (0, i.jsx)("div", {
         className: p.kL,
         children: (0, i.jsxs)("div", {
@@ -111,18 +106,16 @@ function E(e) {
                             case "message":
                                 if (t.channelType === m.rbe.GUILD_ANNOUNCEMENT) return g.intl.string(g.t["8P08G9"]);
                                 return g.intl.string(g.t.hMFMY9);
-                            case "generatedCandidate":
-                                return g.intl.string(g.t.ljgIO9);
                             case "guildEvent":
                                 return g.intl.string(g.t["6pFsLQ"]);
                             case "forumThread":
                                 return g.intl.string(g.t.bYNuVx);
                             case "contentInventory":
                                 switch (t.data.content.content_type) {
-                                    case r.ContentInventoryEntryType.CUSTOM_STATUS:
+                                    case l.ContentInventoryEntryType.CUSTOM_STATUS:
                                         return g.intl.string(g.t.fxOLPR);
-                                    case r.ContentInventoryEntryType.TOP_GAME:
-                                    case r.ContentInventoryEntryType.PLAYED_GAME:
+                                    case l.ContentInventoryEntryType.TOP_GAME:
+                                    case l.ContentInventoryEntryType.PLAYED_GAME:
                                         return g.intl.string(g.t.ktOTRQ);
                                     default:
                                         return `${t.data.content.content_type}`

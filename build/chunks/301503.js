@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    r = n(397927),
-    l = n(178629),
+    l = n(397927),
+    r = n(178629),
     s = n(770472),
     o = n(737823),
     d = (n(153527), n(876622)),
@@ -30,14 +30,14 @@ function S() {
             onScroll: t,
             scrollPosition: n,
             resetScrollPosition: S
-        } = (0, l.G)(),
+        } = (0, r.G)(),
         {
             tabs: x,
-            selectedTab: y,
-            setSelectedTab: v
+            selectedTab: v,
+            setSelectedTab: y
         } = (0, p.f)(),
-        b = (0, h.Ub)(y),
-        O = !f.R0.has(y),
+        b = (0, h.Ub)(v),
+        O = !f.R0.has(v),
         {
             searchQuery: L,
             onSearchTextChange: R,
@@ -63,8 +63,8 @@ function S() {
         }),
         V = u.A.useField("fetchedQuery"),
         B = a.useCallback(e => {
-            v(e), M && P()
-        }, [M, P, v]),
+            y(e), M && P()
+        }, [M, P, y]),
         H = a.useMemo(() => M ? x.filter(e => {
             let {
                 id: t
@@ -83,7 +83,7 @@ function S() {
         F.current.flushSeenGuilds(e.current)
     }, [b]), a.useEffect(() => {
         S()
-    }, [y, S]), a.useEffect(() => {
+    }, [v, S]), a.useEffect(() => {
         M || u.A.setState({
             scrollPosition: null
         })
@@ -94,17 +94,17 @@ function S() {
             children: [!M && (0, i.jsx)(o.ns, {
                 scrollPosition: n
             }), M ? (0, i.jsx)(o.XQ, {
-                icon: r.Zge,
+                icon: l.Zge,
                 onClick: P
             }) : (0, i.jsx)(o.T4, {
-                icon: r.RR9
+                icon: l.RR9
             }), !M && (0, i.jsx)(d.A, {
                 className: k,
                 tabs: H,
-                selectedTab: y,
+                selectedTab: v,
                 onTabSelect: B,
                 onAvailableWidthChange: w
-            }), M && (0, i.jsx)(r.Heading, {
+            }), M && (0, i.jsx)(l.Heading, {
                 variant: "heading-lg/semibold",
                 color: "text-strong",
                 className: N.ov,
@@ -126,7 +126,7 @@ function S() {
             onGuildCardClick: W,
             onGuildCardSeen: Y
         }) : (0, i.jsx)(E.A, {
-            selectedTab: y,
+            selectedTab: v,
             onScroll: t,
             onGuildCardClick: W,
             onGuildCardSeen: Y

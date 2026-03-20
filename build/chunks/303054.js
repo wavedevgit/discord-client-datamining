@@ -24,13 +24,13 @@ function d(e) {
             children: e.key
         }),
         ...e
-    })), [t]), x = 0 === n.length ? [1] : [n.length];
+    })), [t]), p = 0 === n.length ? [1] : [n.length];
     return (0, a.jsx)("div", {
         className: o.CZ,
         children: (0, a.jsx)(r.OZj, {
             className: l,
             innerClassName: o.tp,
-            sections: x,
+            sections: p,
             sectionHeight: 40,
             renderSection: e => {
                 let {
@@ -58,12 +58,12 @@ function d(e) {
                 } = e, i = n[t];
                 if (null == i) return null;
                 let l = i.key,
-                    x = s()(o.jD, {
+                    p = s()(o.jD, {
                         [o.wD]: l === u,
                         rowClassName: d
                     });
                 return (0, a.jsx)(r.DUT, {
-                    className: x,
+                    className: p,
                     onClick: () => c?.(i),
                     children: h.map(e => {
                         let n = e.cellClassName,

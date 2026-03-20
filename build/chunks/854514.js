@@ -1,12 +1,12 @@
 /** chunk id: 854514 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v,
+    A: () => y,
     H: () => b
 });
 var i = n(627968),
     a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    l = n(503698),
+    r = n.n(l),
     s = n(323889),
     o = n(311907),
     d = n(397927),
@@ -27,12 +27,12 @@ var i = n(627968),
     S = n(985018),
     x = n(487866);
 
-function y(e) {
+function v(e) {
     let {
         assetImage: t,
         assetVideo: n
-    } = e, r = a.useRef(null);
-    (0, f.A)(r, T.rE.QUEST_HOME_DESKTOP);
+    } = e, l = a.useRef(null);
+    (0, f.A)(l, T.rE.QUEST_HOME_DESKTOP);
     let s = a.useMemo(() => (null != n ? (0, m.WV)(n.url) : null) ?? t.url, [n, t]);
     return null == n ? (0, i.jsxs)("div", {
         className: x.Tv,
@@ -46,14 +46,14 @@ function y(e) {
                 alt: t.altText
             })
         }), (0, i.jsx)("div", {
-            className: l()(x.LO, x.jx, x.hw),
+            className: r()(x.LO, x.jx, x.hw),
             children: (0, i.jsx)("img", {
                 className: x.LY,
                 src: t.url,
                 alt: ""
             })
         }), (0, i.jsx)("div", {
-            className: l()(x.LO, x.jx, x.Co),
+            className: r()(x.LO, x.jx, x.Co),
             children: (0, i.jsx)("img", {
                 className: x.LY,
                 src: t.url,
@@ -69,7 +69,7 @@ function y(e) {
             children: (0, i.jsx)(E.N, {
                 showImage: !1,
                 showVideo: !0,
-                assetRef: r,
+                assetRef: l,
                 imageAsset: {
                     alt: n.altText,
                     className: x.LY,
@@ -95,17 +95,17 @@ function y(e) {
     })
 }
 
-function v(e) {
+function y(e) {
     let {
         config: t,
         onQuestCtaClick: n
     } = e, {
-        enabled: r
+        enabled: l
     } = (0, A.Z)({
         location: T.rE.QUEST_HOME_DESKTOP
     }), [m, E] = a.useState("display-lg"), f = a.useCallback(e => {
         e.contentRect.width < 500 ? E("display-md") : E("display-lg")
-    }, []), v = (0, c.w)(f, [], {
+    }, []), y = (0, c.w)(f, [], {
         fireOnMount: !0
     }), b = (0, o.bG)([h.A], () => h.A.quests), {
         dismissQuestHomeHeroContent: O
@@ -118,11 +118,11 @@ function v(e) {
         questContent: _.uF.QUEST_HOME_HERO,
         sourceQuestContent: _.uF.QUEST_HOME_HERO,
         children: e => (0, i.jsx)("div", {
-            className: l()(x.iE, "theme-midnight", {
-                [x.Qx]: !r
+            className: r()(x.iE, "theme-midnight", {
+                [x.Qx]: !l
             }),
             ref: t => {
-                v.current = t, e.current = t
+                y.current = t, e.current = t
             },
             children: (0, i.jsxs)("div", {
                 className: x.FG,
@@ -190,7 +190,7 @@ function v(e) {
                             }, a) : null)]
                         })]
                     })]
-                }), (0, i.jsx)(y, {
+                }), (0, i.jsx)(v, {
                     assetImage: t.assetHeroImage,
                     assetVideo: t.assetHeroVideo
                 })]
@@ -201,7 +201,7 @@ function v(e) {
 
 function b() {
     return (0, i.jsx)("div", {
-        className: l()(x.iE, x.FG, x.B3),
+        className: r()(x.iE, x.FG, x.B3),
         children: (0, i.jsx)(d.y$y, {})
     })
 }

@@ -33,12 +33,12 @@ function u(e) {
         label: u,
         sublabel: m,
         trailing: h,
-        renderSubmenu: x,
-        ref: p
+        renderSubmenu: p,
+        ref: x
     } = e, g = null != n, _ = (0, r.rE)({
         action: t,
         onClick: n
-    }), [f, v] = i.useState(!1), b = i.useRef(null), j = p ?? b, A = null != x, C = A && g, y = {
+    }), [f, v] = i.useState(!1), b = i.useRef(null), j = x ?? b, A = null != p, C = A && g, y = {
         offset: {
             top: -8,
             left: -8,
@@ -125,7 +125,7 @@ function u(e) {
         children: (0, a.jsx)(s.YNO, {
             targetElementRef: j,
             spacing: 0,
-            renderPopout: x,
+            renderPopout: p,
             shouldShow: f,
             onRequestClose: S,
             children: N

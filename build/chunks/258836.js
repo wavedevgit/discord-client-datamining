@@ -1,6 +1,6 @@
 /** chunk id: 258836 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => p
 });
 var a = n(627968),
     i = n(64700),
@@ -14,16 +14,16 @@ var a = n(627968),
     m = n(188016);
 let h = i.lazy(() => n.e("24832").then(n.bind(n, 748579)));
 
-function x() {
+function p() {
     let e = (0, l.bG)([o.A], () => o.A.useReducedMotion),
         t = (0, d.A)(e => e.shouldRenderTenureLevelUp),
         n = (0, c.A)();
-    return e || !t || null == n ? null : (0, a.jsx)(p, {
+    return e || !t || null == n ? null : (0, a.jsx)(x, {
         levelUpData: n
     })
 }
 
-function p(e) {
+function x(e) {
     let {
         levelUpData: t
     } = e, n = i.useRef(null), l = i.useCallback(() => {

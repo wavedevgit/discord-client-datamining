@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    l = n(503698),
+    r = n.n(l),
     s = n(417597),
     o = n(554146),
     d = n(621956),
@@ -25,14 +25,14 @@ var i = n(627968),
     N = n(674168),
     S = n(989799),
     x = n(652215),
-    y = n(49999),
-    v = n(985018),
+    v = n(49999),
+    y = n(985018),
     b = n(492685);
 
 function O(e) {
     let {
         channel: t,
-        ...r
+        ...l
     } = e, O = a.useRef(null), {
         mute: L,
         suppress: R
@@ -73,7 +73,7 @@ function O(e) {
         value: V,
         children: (0, i.jsx)(c.m, {
             targetElementRef: O,
-            text: L ? v.intl.string(v.t["Ox4/zU"]) : R ? v.intl.string(v.t["+YBKYI"]) : P ? v.intl.string(v.t.X1lQli) : v.intl.string(v.t["6EJvHt"]),
+            text: L ? y.intl.string(y.t["Ox4/zU"]) : R ? y.intl.string(y.t["+YBKYI"]) : P ? y.intl.string(y.t.X1lQli) : y.intl.string(y.t["6EJvHt"]),
             asContainer: !0,
             shouldShow: !M,
             children: (0, i.jsx)(A.YNO, {
@@ -102,7 +102,7 @@ function O(e) {
                     children: (0, i.jsx)(u.$n, {
                         "data-migration-pending": !0,
                         ...e,
-                        className: l()(b.x6, b.Sq, {
+                        className: r()(b.x6, b.Sq, {
                             [b.W4]: M,
                             [b.r9]: D
                         }),
@@ -110,18 +110,18 @@ function O(e) {
                         innerClassName: b.bk,
                         disabled: D,
                         onClick: () => {
-                            null != G && G !== o.M.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && k(y.i.UNKNOWN), j(!M), Y(), (0, g.X)(B, g.O.SOUNDBOARD)
+                            null != G && G !== o.M.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && k(v.i.UNKNOWN), j(!M), Y(), (0, g.X)(B, g.O.SOUNDBOARD)
                         },
                         onMouseEnter: e => {
-                            r.onMouseEnter?.(e), W()
+                            l.onMouseEnter?.(e), W()
                         },
                         onMouseLeave: e => {
-                            r.onMouseLeave?.(e), K()
+                            l.onMouseLeave?.(e), K()
                         },
                         onContextMenu: H,
                         fullWidth: !0,
                         size: u.$n.Sizes.MEDIUM,
-                        ...r,
+                        ...l,
                         children: (0, i.jsx)(F, {
                             className: b.iA,
                             size: "sm",

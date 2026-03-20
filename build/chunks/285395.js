@@ -1,20 +1,20 @@
 /** chunk id: 285395 params = (module,exports,require) **/
 n.d(t, {
     j: () => s,
-    t: () => l
+    t: () => r
 });
 var i = n(403362),
     a = n(488995),
-    r = n(985018);
+    l = n(985018);
 
-function l(e) {
+function r(e) {
     switch (e) {
         case a.GlobalDiscoveryTab.SERVERS:
-            return r.intl.string(r.t["+Anbp9"]);
+            return l.intl.string(l.t["+Anbp9"]);
         case a.GlobalDiscoveryTab.APPS:
-            return r.intl.string(r.t.bGwCoR);
+            return l.intl.string(l.t.bGwCoR);
         case a.GlobalDiscoveryTab.QUESTS:
-            return r.intl.string(r.t.EcaD4e);
+            return l.intl.string(l.t.EcaD4e);
         default:
             (0, i.xb)(e)
     }

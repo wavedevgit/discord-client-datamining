@@ -4,8 +4,8 @@ n.d(t, {
 }), n(323874), n(14289), n(35956);
 var i = n(627968),
     a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    l = n(503698),
+    r = n.n(l),
     s = n(873263),
     o = n(835245),
     d = n(110259),
@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(239365),
     S = n(178629),
     x = n(701508),
-    y = n(979590),
-    v = n(45758),
+    v = n(979590),
+    y = n(45758),
     b = n(737823),
     O = n(153527),
     L = n(783531),
@@ -58,8 +58,8 @@ var i = n(627968),
     en = n(475529),
     ei = n(654487),
     ea = n(652215),
-    er = n(758836),
-    el = n(613057),
+    el = n(758836),
+    er = n(613057),
     es = n(985018),
     eo = n(941797),
     ed = n(318808),
@@ -77,13 +77,13 @@ function eg(e) {
         enabled: n
     } = (0, D.Z)({
         location: ei.rE.QUEST_HOME_DESKTOP
-    }), r = (0, c.bG)([_.A], () => _.A.useReducedMotion), s = (0, c.bG)([j.A], () => j.A.isFocused()), {
+    }), l = (0, c.bG)([_.A], () => _.A.useReducedMotion), s = (0, c.bG)([j.A], () => j.A.isFocused()), {
         ref: o,
         inViewport: d
     } = (0, $.p)(), u = a.useRef(null);
     if (a.useEffect(() => {
-            u?.current != null && (u.current.paused || s && d && !r ? u.current.paused && !r && d && s && u.current.play() : u.current.pause())
-        }, [r, d, s]), n) {
+            u?.current != null && (u.current.paused || s && d && !l ? u.current.paused && !l && d && s && u.current.play() : u.current.pause())
+        }, [l, d, s]), n) {
         let e = (0, U.TM)();
         return (0, i.jsx)(C.A, {
             ref: e => {
@@ -92,7 +92,7 @@ function eg(e) {
             loop: !0,
             muted: !0,
             playsInline: !0,
-            className: l()(eo.BW, eo.Lk),
+            className: r()(eo.BW, eo.Lk),
             onProgress: t,
             "data-mtctest-ignore": "true",
             controls: !1,
@@ -104,7 +104,7 @@ function eg(e) {
     }
     return (0, i.jsx)("img", {
         src: ed.Ay,
-        className: l()(eo.BW, eo.J6),
+        className: r()(eo.BW, eo.J6),
         alt: "",
         onLoad: t
     })
@@ -117,16 +117,16 @@ function ep(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("img", {
             src: eA.Ay,
-            className: l()(eo.BW, eo.rZ),
+            className: r()(eo.BW, eo.rZ),
             alt: ""
         }), (0, i.jsx)("img", {
             src: e_.Ay,
-            className: l()(eo.BW, eo.rZ),
+            className: r()(eo.BW, eo.rZ),
             alt: "",
             onLoad: t
         }), (0, i.jsx)("img", {
             src: eh.Ay,
-            className: l()(eo.BW, eo.rZ),
+            className: r()(eo.BW, eo.rZ),
             alt: ""
         })]
     })
@@ -136,7 +136,7 @@ function eE(e) {
     let {
         renderBanner: t,
         children: n,
-        header: r,
+        header: l,
         withQuestsGrid: s = !0
     } = e, {
         isInDiscoverQuestHomeTab: o,
@@ -162,7 +162,7 @@ function eE(e) {
     }, []);
     return (0, i.jsxs)(et.X.Provider, {
         value: u,
-        children: [r, (0, i.jsxs)(L.A, {
+        children: [l, (0, i.jsxs)(L.A, {
             onScroll: d,
             ref: u,
             children: [function() {
@@ -175,9 +175,9 @@ function eE(e) {
                     })
                 }
                 return t()
-            }(), (0, i.jsx)(y.A, {
+            }(), (0, i.jsx)(v.A, {
                 children: (0, i.jsxs)("div", {
-                    className: l()(eo.Qs, {
+                    className: r()(eo.Qs, {
                         [eo.HR]: g && !m && A !== Y.NC.ALL
                     }),
                     children: [n, s ? A === Y.NC.CLAIMED ? (0, i.jsx)(X.A, {
@@ -193,18 +193,18 @@ function eE(e) {
 let eI = function(e) {
     let {
         topLevelRoute: t
-    } = e, n = (0, s.zy)(), r = (0, s.W6)(), _ = a.useMemo(() => (0, R.B)(n.pathname, ea.BVt.QUEST_HOME_DEPRECATED)?.isExact === !0, [n.pathname]), C = (0, c.bG)([E.A], () => E.A.getState("quests")), {
-        selectedTab: y,
+    } = e, n = (0, s.zy)(), l = (0, s.W6)(), _ = a.useMemo(() => (0, R.B)(n.pathname, ea.BVt.QUEST_HOME_DEPRECATED)?.isExact === !0, [n.pathname]), C = (0, c.bG)([E.A], () => E.A.getState("quests")), {
+        selectedTab: v,
         onSelectTab: L,
         tabs: j
     } = (0, en.J)({
         withClaimedQuestsTab: !_
     });
     a.useLayoutEffect(() => {
-        _ && y === Y.NC.CLAIMED && B.A.setState({
+        _ && v === Y.NC.CLAIMED && B.A.setState({
             tab: Y.NC.ALL
         })
-    }, [_, y]);
+    }, [_, v]);
     let {
         onScroll: U,
         scrollPosition: H
@@ -223,10 +223,10 @@ let eI = function(e) {
                 utm_medium_current: e.utmMediumCurrent,
                 utm_campaign_current: e.utmCampaignCurrent,
                 utm_content_current: e.utmContentCurrent,
-                tab: y
+                tab: v
             }
         })
-    }, [y]);
+    }, [v]);
     let {
         enabled: X
     } = (0, D.Z)({
@@ -246,7 +246,7 @@ let eI = function(e) {
                 sectionType: ea.JJy.ORBS_BALANCE_MENU,
                 ctaObject: ea.ZSU.CTA_TO_ORBS_SHOP
             }), (0, I.Cz)({
-                tab: er.G2.ORBS,
+                tab: el.G2.ORBS,
                 analyticsLocations: [],
                 analyticsSource: m.A.ORBS_BALANCE_MENU
             })
@@ -266,7 +266,7 @@ let eI = function(e) {
         if (eA && i === Y.NC.PREVIEW_TOOL) {
             let t = e.get(Y.L1.QUEST_ID);
             p.A.openNativeAppModal("quests", ea.e$_.DEEP_LINK, {
-                type: el.XK.QUEST_PREVIEW_TOOL,
+                type: er.XK.QUEST_PREVIEW_TOOL,
                 params: {
                     questId: t,
                     tab: i
@@ -275,21 +275,21 @@ let eI = function(e) {
             return
         }
         let a = performance.getEntriesByType("navigation")[0];
-        if ("POP" === r.action && a?.type === "navigate" && t && i !== Y.NC.PREVIEW_TOOL) {
+        if ("POP" === l.action && a?.type === "navigate" && t && i !== Y.NC.PREVIEW_TOOL) {
             let t = (0, k.uJ)(n.hash) ? null : n.hash.substring(1),
                 a = e.get(Y.L1.SORT),
-                r = e.get(Y.L1.FILTER);
+                l = e.get(Y.L1.FILTER);
             p.A.openNativeAppModal("quests", ea.e$_.DEEP_LINK, {
-                type: el.XK.QUEST_HOME,
+                type: er.XK.QUEST_HOME,
                 params: {
                     questId: (0, k.uJ)(t) ? void 0 : t,
                     sort: a,
-                    filter: r,
+                    filter: l,
                     tab: i
                 }
             })
         }
-    }, [n.search, C, eA, r.action, n.hash, t]), a.useEffect(() => {
+    }, [n.search, C, eA, l.action, n.hash, t]), a.useEffect(() => {
         t && (0, T.Dr)(u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING)
     }, [t]);
     let eh = a.useCallback(() => {
@@ -303,13 +303,13 @@ let eI = function(e) {
             })
         }, []),
         e_ = a.useCallback(e => {
-            r.replace({
-                ...r.location,
+            l.replace({
+                ...l.location,
                 hash: void 0
             }), ec.current?.scrollToTop({
                 animate: !1
             }), L(e)
-        }, [r, L]);
+        }, [l, L]);
     return (0, i.jsx)(J.M.Provider, {
         value: {
             onAssetLoadComplete: $
@@ -320,10 +320,10 @@ let eI = function(e) {
                 onScroll: U,
                 onSelectTab: e_,
                 scrollerRef: ec,
-                selectedTab: y
-            }), [_, U, e_, ec, y]),
+                selectedTab: v
+            }), [_, U, e_, ec, v]),
             children: (0, i.jsx)("div", {
-                className: l()(eo.kL, {
+                className: r()(eo.kL, {
                     [eo.KY]: !t
                 }),
                 children: _ ? (0, i.jsx)(eE, {
@@ -341,7 +341,7 @@ let eI = function(e) {
                         })
                     }),
                     header: (0, i.jsx)(O.S, {
-                        selectedTabId: y,
+                        selectedTabId: v,
                         handleTransition: e_,
                         tabs: j,
                         icon: A.r2v
@@ -364,7 +364,7 @@ let eI = function(e) {
                         })]
                     })
                 }) : X ? (0, i.jsx)(eE, {
-                    renderBanner: () => y !== Y.NC.PREVIEW_TOOL && (0, i.jsxs)(x.A, {
+                    renderBanner: () => v !== Y.NC.PREVIEW_TOOL && (0, i.jsxs)(x.A, {
                         title: et,
                         description: ed,
                         button: (0, i.jsxs)(A.ButtonGroup, {
@@ -372,7 +372,7 @@ let eI = function(e) {
                                 variant: "overlay-primary",
                                 text: es.intl.string(es.t["1Wm127"]),
                                 onClick: () => (0, I.Cz)({
-                                    tab: er.G2.ORBS,
+                                    tab: el.G2.ORBS,
                                     analyticsLocations: [],
                                     analyticsSource: m.A.INTRO_TO_ORBS_QUEST_BANNER
                                 })
@@ -382,15 +382,15 @@ let eI = function(e) {
                                 onClick: ee
                             })]
                         }),
-                        className: l()(eo.cI, eo.GF),
+                        className: r()(eo.cI, eo.GF),
                         children: [(0, i.jsx)("div", {
-                            className: l()(eo.nY, eo.vu)
+                            className: r()(eo.nY, eo.vu)
                         }), (0, i.jsx)(eg, {
                             onLoadComplete: $
                         })]
                     }),
                     header: (0, i.jsx)(O.S, {
-                        selectedTabId: y,
+                        selectedTabId: v,
                         handleTransition: e_,
                         tabs: j,
                         endContent: (0, i.jsx)(M.SS, {
@@ -431,9 +431,9 @@ let eI = function(e) {
                     }),
                     children: (0, i.jsx)("div", {
                         className: eo.vR,
-                        children: (0, i.jsx)(v.A, {
+                        children: (0, i.jsx)(y.A, {
                             tabs: j,
-                            selectedTab: y,
+                            selectedTab: v,
                             onTabSelect: e_
                         })
                     })

@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(308528),
     m = n(571694),
     h = n(47167),
-    x = n(704844),
-    p = n(734057),
+    p = n(704844),
+    x = n(734057),
     g = n(994500),
     _ = n(287809),
     f = n(645959),
@@ -30,10 +30,10 @@ function y() {
         {
             selectedChannel: l,
             options: s
-        } = (0, d.cf)([p.A, _.default, g.A], () => ({
-            selectedChannel: p.A.getChannel(t),
+        } = (0, d.cf)([x.A, _.default, g.A], () => ({
+            selectedChannel: x.A.getChannel(t),
             options: e.map(e => {
-                let t = p.A.getChannel(e.channelId);
+                let t = x.A.getChannel(e.channelId);
                 return {
                     id: e.channelId,
                     value: e.channelId,
@@ -49,7 +49,7 @@ function y() {
         u = i.useCallback(() => {
             if (null == l || !l.isPrivate()) return;
             let e = (0, o.PQ)(l.recipientFlags ?? 0, r.o.DISMISSED_IN_GAME_MESSAGE_NUX);
-            x.A.updatePrivateChannelRecipientFlags(l.id, e)
+            p.A.updatePrivateChannelRecipientFlags(l.id, e)
         }, [l]),
         v = !!l?.isPrivate() && (0, o.Lt)(l.recipientFlags ?? 0, r.o.DISMISSED_IN_GAME_MESSAGE_NUX);
     return (0, a.jsxs)("div", {

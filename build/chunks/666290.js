@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(284009),
-    r = n.n(a),
-    l = n(765379),
+    l = n.n(a),
+    r = n(765379),
     s = n(90644),
     o = n(61330),
     d = n(609425),
@@ -38,19 +38,19 @@ function I(e) {
                 user: t
             } = e;
             return t.id
-        })), a = n.filter(e => !i.has(e.id)), r = _.Ay.getName(t[0].user), l = null != t[1] ? _.Ay.getName(t[1].user) : null != a[0] ? _.Ay.getName(a[0]) : null;
+        })), a = n.filter(e => !i.has(e.id)), l = _.Ay.getName(t[0].user), r = null != t[1] ? _.Ay.getName(t[1].user) : null != a[0] ? _.Ay.getName(a[0]) : null;
         switch (n.length) {
             case 1:
-                return r;
+                return l;
             case 2:
                 return E.intl.format(E.t.t1DyC1, {
-                    user1: r,
-                    user2: l
+                    user1: l,
+                    user2: r
                 });
             default:
                 return E.intl.format(E.t["5CSEcJ"], {
-                    user1: r,
-                    user2: l,
+                    user1: l,
+                    user2: r,
                     extras: n.length - 2
                 })
         }
@@ -66,7 +66,7 @@ function I(e) {
         } = e, u = t.length, A = a.length - u, _ = c[0], I = _?.activity, f = _?.startedPlayingTime, C = {
             name: I?.name ?? ""
         };
-        if ((0, l.A)(I) && null != I) return {
+        if ((0, r.A)(I) && null != I) return {
             subtitle: (0, i.jsx)(h.Ay, {
                 start: f,
                 location: h.Ay.Locations.ACTIVITY_FEED_NEW,
@@ -167,7 +167,7 @@ function I(e) {
                 game: n,
                 startedPlayingTime: a
             } = e;
-            return r()(null != t, "Activity was null somehow"), {
+            return l()(null != t, "Activity was null somehow"), {
                 subtitle: (0, i.jsx)(h.Ay, {
                     start: a,
                     location: h.Ay.Locations.ACTIVITY_FEED_NEW,
@@ -184,15 +184,15 @@ function I(e) {
                 src: g.A.Header.Icon.Src.MULTIPLE
             })
         }
-    }(t), y = (0, A.A)({
+    }(t), v = (0, A.A)({
         applicationId: t.currentActivities[0]?.activity?.application_id,
         location: "FriendsActivityFeed",
         source: u.Ob.FriendsActivityFeed
-    }), v = (0, d.A)({
+    }), y = (0, d.A)({
         userId: T.user.id,
         guildId: C?.id
     }), b = (0, c.a)({
-        displayNameStyles: v
+        displayNameStyles: y
     });
     return (0, i.jsx)(g.A.Header, {
         priorityUser: T,
@@ -200,8 +200,8 @@ function I(e) {
         title: N,
         subtitle: S,
         icon: x,
-        onSubtitleClick: y,
-        onIconClick: y,
+        onSubtitleClick: v,
+        onIconClick: v,
         onContextMenu: e => a(e, T.user),
         displayNameFont: 1 === f.length ? b : void 0
     })

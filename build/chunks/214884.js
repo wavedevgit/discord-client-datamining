@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    l = n(503698),
+    r = n.n(l),
     s = n(311907),
     o = n(827734),
     d = n(397927),
@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(323443),
     S = n(63995),
     x = n(69407),
-    y = n(446600),
-    v = n(964175),
+    v = n(446600),
+    y = n(964175),
     b = n(342296),
     O = n(576705),
     L = n(287809),
@@ -40,7 +40,7 @@ function w(e) {
     let {
         guild: t,
         isStudyRoomNotice: n = !1
-    } = e, r = (0, E.V)(t.id), u = (0, I.BP)(t.id), b = (0, s.bG)([y.A], () => y.A.getStageInstanceByChannel(r?.id), [r]), {
+    } = e, l = (0, E.V)(t.id), u = (0, I.BP)(t.id), b = (0, s.bG)([v.A], () => v.A.getStageInstanceByChannel(l?.id), [l]), {
         isStageNoticeHidden: w,
         isEventNoticeHidden: G
     } = (0, s.cf)([g.A], () => ({
@@ -50,7 +50,7 @@ function w(e) {
         isEventNoticeHidden: g.A.isLiveChannelNoticeHidden({
             eventId: u?.id
         })
-    }), [b, u]), k = r?.id, V = (0, s.yK)([S.A], () => [...new Set(S.A.getMutableParticipants(k, x.ip.SPEAKER).map(e => e.user))], [k]), B = (0, s.bG)([S.A], () => null != k ? S.A.getParticipantCount(k, x.ip.AUDIENCE) : 0, [k]), H = (0, s.bG)([O.A], () => O.A.can(P.xBc.CONNECT, r)), F = (0, v.A)(r?.id), Y = u?.creator_id, W = (0, s.bG)([L.default], () => L.default.getUser(Y), [Y]);
+    }), [b, u]), k = l?.id, V = (0, s.yK)([S.A], () => [...new Set(S.A.getMutableParticipants(k, x.ip.SPEAKER).map(e => e.user))], [k]), B = (0, s.bG)([S.A], () => null != k ? S.A.getParticipantCount(k, x.ip.AUDIENCE) : 0, [k]), H = (0, s.bG)([O.A], () => O.A.can(P.xBc.CONNECT, l)), F = (0, y.A)(l?.id), Y = u?.creator_id, W = (0, s.bG)([L.default], () => L.default.getUser(Y), [Y]);
     a.useEffect(() => {
         null != Y && (0, c.wz)(Y)
     }, [Y]);
@@ -69,8 +69,8 @@ function w(e) {
             guildEvent: t,
             stageInstance: n,
             activeChannel: a,
-            canConnect: r,
-            myRole: l,
+            canConnect: l,
+            myRole: r,
             eventCreator: s,
             speakers: o,
             listenerCount: c,
@@ -89,7 +89,7 @@ function w(e) {
                     color: "currentColor",
                     className: j.NR
                 }) : null,
-                canListenIn: r,
+                canListenIn: l,
                 buttonText: M.intl.string(M.t.wBoE6L),
                 users: [],
                 overflowUsers: null
@@ -98,7 +98,7 @@ function w(e) {
         if (null == t || u) {
             if (E) {
                 let e = M.intl.string(M.t.ZYO5OK);
-                return l?.speaker ? e = M.intl.string(M.t["/cnSFc"]) : null != l && (e = M.intl.string(M.t.btSGOj)), {
+                return r?.speaker ? e = M.intl.string(M.t["/cnSFc"]) : null != r && (e = M.intl.string(M.t.btSGOj)), {
                     noticeType: 0,
                     title: n.topic,
                     location: a.name,
@@ -109,7 +109,7 @@ function w(e) {
                         height: 16,
                         className: j.NR
                     }),
-                    canListenIn: r,
+                    canListenIn: l,
                     buttonText: e,
                     onClose: () => (0, m.iF)({
                         stageId: n?.id
@@ -134,7 +134,7 @@ function w(e) {
             }
         } else if (t.entity_type === D.Ps.STAGE_INSTANCE && E) {
             let e = M.intl.string(M.t.ZYO5OK);
-            return l?.speaker ? e = M.intl.string(M.t["/cnSFc"]) : null != l && (e = M.intl.string(M.t.btSGOj)), {
+            return r?.speaker ? e = M.intl.string(M.t["/cnSFc"]) : null != r && (e = M.intl.string(M.t.btSGOj)), {
                 noticeType: 0,
                 title: n.topic,
                 location: a.name,
@@ -145,7 +145,7 @@ function w(e) {
                     height: 16,
                     className: j.NR
                 }),
-                canListenIn: r,
+                canListenIn: l,
                 buttonText: e,
                 onClose: () => (0, m.iF)({
                     stageId: n?.id
@@ -218,7 +218,7 @@ function w(e) {
                     color: "currentColor",
                     className: j.NR
                 }) : null,
-                canListenIn: r,
+                canListenIn: l,
                 buttonText: M.intl.string(M.t.nxUtoQ),
                 onClose: () => (0, m.iF)({
                     eventId: t?.id
@@ -247,7 +247,7 @@ function w(e) {
     })({
         guildEvent: u,
         stageInstance: b,
-        activeChannel: r,
+        activeChannel: l,
         canConnect: H,
         myRole: F,
         eventCreator: W,
@@ -256,7 +256,7 @@ function w(e) {
         isEventNoticeHidden: G,
         isStageNoticeHidden: w,
         isStudyRoomNotice: n
-    }), [u, b, r, H, F, W, V, B, G, w, n]);
+    }), [u, b, l, H, F, W, V, B, G, w, n]);
     return null == K ? null : (0, i.jsxs)("div", {
         className: j.kL,
         children: [null != ee ? (0, i.jsx)(d.DUT, {
@@ -288,7 +288,7 @@ function w(e) {
         }), (0, i.jsx)(d.Text, {
             variant: "text-md/medium",
             color: "text-strong",
-            className: l()(j.DD, j.VD),
+            className: r()(j.DD, j.VD),
             children: q
         }), (0, i.jsxs)("div", {
             className: j.j5,
@@ -306,7 +306,7 @@ function w(e) {
                 size: "sm",
                 text: X,
                 onClick: () => {
-                    if (Q) null != r && null != r.getGuildId() && ((0, N.av)(r), (0, T.uh)(r.getGuildId(), r.id));
+                    if (Q) null != l && null != l.getGuildId() && ((0, N.av)(l), (0, T.uh)(l.getGuildId(), l.id));
                     else {
                         if (null == u) return;
                         (0, h.uR)({
@@ -324,16 +324,16 @@ function U(e) {
     let {
         user: t,
         guildId: n
-    } = e, r = a.useRef(null);
+    } = e, l = a.useRef(null);
     return (0, i.jsx)(b.A, {
-        targetElementRef: r,
+        targetElementRef: l,
         user: t,
         guildId: n,
         newAnalyticsLocations: [u.A.AVATAR],
         clickTrap: !0,
         children: e => (0, i.jsx)(d.euF, {
             ...e,
-            ref: r,
+            ref: l,
             src: t.getAvatarURL(n, 24),
             "aria-label": t.username,
             size: d._3J.SIZE_24,

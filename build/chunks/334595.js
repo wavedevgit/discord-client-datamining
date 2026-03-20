@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(397927),
-    r = n(964404),
-    l = n(954571),
+    l = n(964404),
+    r = n(954571),
     s = n(723702),
     o = n(837921),
     d = n(845187),
@@ -14,7 +14,7 @@ var a = n(397927),
 let u = "activity-hardware-acceleration-modal";
 
 function A(e) {
-    r.Ay.disableActivityHardwareAccelerationPrompt || !s.isPlatformEmbedded || o.Ay.getEnableHardwareAcceleration() || (0, a.mMO)(async () => {
+    l.Ay.disableActivityHardwareAccelerationPrompt || !s.isPlatformEmbedded || o.Ay.getEnableHardwareAcceleration() || (0, a.mMO)(async () => {
         let {
             default: t
         } = await Promise.resolve().then(n.bind(n, 845187));
@@ -25,7 +25,7 @@ function A(e) {
     }, {
         modalKey: u,
         onCloseRequest: () => {
-            l.default.track(c.HAw.MODAL_DISMISSED, {
+            r.default.track(c.HAw.MODAL_DISMISSED, {
                 type: d.a
             }), (0, a.OoC)(u)
         }

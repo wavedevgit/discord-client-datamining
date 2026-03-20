@@ -1,8 +1,8 @@
 /** chunk id: 362442 params = (module,exports,require) **/
 var i = n(311907),
     a = n(506774),
-    r = n(451988),
-    l = n(73153),
+    l = n(451988),
+    r = n(73153),
     s = n(308368),
     o = n(973522),
     d = n(15285),
@@ -24,24 +24,24 @@ let I = "ActivityTrackingStore",
 
 function x(e) {
     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
-    t && y(e, !0);
+    t && v(e, !0);
     let n = N[e.applicationId];
     null != n && (n.stop(), delete N[e.applicationId]), delete T[e.applicationId], a.w.set(I, T)
 }
 
-function y(e) {
+function v(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
         n = Date.now(),
         i = null != e.updatedAt ? n - e.updatedAt : 0;
     i > f + C && (i = 0);
-    let l = (0, A.kv)(e.applicationId, m.A),
+    let r = (0, A.kv)(e.applicationId, m.A),
         o = p.A.getVoiceChannelId(),
         d = h.default.getSessionId(),
         c = g.A.getMediaSessionId();
     s.A.updateActivity({
         applicationId: e.applicationId,
         distributor: e.isDiscordApplication ? E.d3x.DISCORD : e.distributor,
-        shareActivity: l,
+        shareActivity: r,
         token: e.token,
         duration: Math.floor(i / 1e3),
         closed: t,
@@ -51,16 +51,16 @@ function y(e) {
         mediaSessionId: c
     }), e.updatedAt = n;
     let u = N[e.applicationId];
-    null == u && (u = N[e.applicationId] = new r.IX).start(f, () => y(e)), t || (T[e.applicationId] = e, a.w.set(I, T))
+    null == u && (u = N[e.applicationId] = new l.IX).start(f, () => v(e)), t || (T[e.applicationId] = e, a.w.set(I, T))
 }
 
-function v() {
+function y() {
     let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
         t = d.Ay.getVisibleRunningGames(),
         n = new Set;
     for (let e of t) {
         let t = _.A.findGame(e);
-        null != t && (n.add(t.id), t.id in T || y({
+        null != t && (n.add(t.id), t.id in T || v({
             applicationId: t.id,
             updatedAt: Date.now(),
             distributor: e.distributor,
@@ -77,18 +77,18 @@ function b() {
 class O extends i.Ay.Store {
     static displayName = "ActivityTrackingStore";
     initialize() {
-        this.waitFor(h.default, _.A, m.A, g.A, d.Ay, p.A, c.A), this.syncWith([c.A], v)
+        this.waitFor(h.default, _.A, m.A, g.A, d.Ay, p.A, c.A), this.syncWith([c.A], y)
     }
     getActivities() {
         return T
     }
 }
-new O(l.h, {
-    RUNNING_GAMES_CHANGE: () => v(),
+new O(r.h, {
+    RUNNING_GAMES_CHANGE: () => y(),
     CONNECTION_OPEN: function() {
         if (S) return !1;
-        for (let e of Object.keys(T)) y(T[e]);
-        v(!1), S = !0
+        for (let e of Object.keys(T)) v(T[e]);
+        y(!1), S = !0
     },
     CONNECTION_CLOSED: function(e) {
         let {

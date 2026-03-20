@@ -1,11 +1,11 @@
 /** chunk id: 939846 params = (module,exports,require) **/
 n.d(t, {
-    A: () => er
+    A: () => el
 });
 var i = n(627968),
     a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    l = n(503698),
+    r = n.n(l),
     s = n(837381),
     o = n(731738),
     d = n(311907),
@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(379848),
     S = n(742589),
     x = n(831062),
-    y = n(378570),
-    v = n(138298),
+    v = n(378570),
+    y = n(138298),
     b = n(940382),
     O = n(210714),
     L = n(544028),
@@ -59,7 +59,7 @@ function et() {
     let e = a.useRef(null),
         t = (0, F.W)(),
         n = (0, Y.A)(),
-        r = (0, V.k)(),
+        l = (0, V.k)(),
         d = (0, m.w)(),
         c = a.useCallback(() => {
             (0, A.showToast)((0, A.createToast)(Z.intl.string(Z.t["EDYbS+"]), A.ToastType.FAILURE))
@@ -82,15 +82,15 @@ function et() {
             } = e, a = n[t], s = n[t + 1]?.channel?.id, o = a.channel.id;
             return (0, i.jsx)(q.A, {
                 index: t,
-                className: l()({
+                className: r()({
                     [J.wH]: null != _ && _ === o,
                     [J.wZ]: null != _ && _ === s
                 }),
                 channel: a.channel,
                 user: a.user,
-                hasSingleMessageRequest: r
+                hasSingleMessageRequest: l
             }, o)
-        }, [r, n, _]),
+        }, [l, n, _]),
         I = a.useCallback(() => (0, i.jsxs)(f.A, {
             className: J.Gf,
             children: [t > 0 ? Z.intl.formatToPlainString(Z.t.rA4iWY, {
@@ -120,12 +120,12 @@ function et() {
             children: t => {
                 let {
                     ref: a,
-                    role: r,
-                    ...l
+                    role: l,
+                    ...r
                 } = t;
                 return (0, i.jsx)(A.B8B, {
                     className: J.p_,
-                    innerRole: r,
+                    innerRole: l,
                     innerAriaLabel: Z.intl.string(Z.t.e7GWjQ),
                     ref: t => {
                         e.current = t, a.current = t?.getScrollerNode() ?? null
@@ -139,7 +139,7 @@ function et() {
                     sections: [n.length],
                     chunkSize: 30,
                     fade: !0,
-                    ...l
+                    ...r
                 }, "message-requests-list")
             }
         })
@@ -150,15 +150,15 @@ function en(e) {
     let {
         pageWidth: t,
         onSidebarResize: n
-    } = e, a = (0, d.bG)([D.Ay], () => D.Ay.getSidebarState(D.fe)), r = (0, d.bG)([M.A], () => M.A.getChannel(a?.channelId));
-    if (null == a || a.type !== b.PE.VIEW_MESSAGE_REQUEST || null == r || !r.isPrivate()) return null;
-    let l = t - Q.ItT;
+    } = e, a = (0, d.bG)([D.Ay], () => D.Ay.getSidebarState(D.fe)), l = (0, d.bG)([M.A], () => M.A.getChannel(a?.channelId));
+    if (null == a || a.type !== b.PE.VIEW_MESSAGE_REQUEST || null == l || !l.isPrivate()) return null;
+    let r = t - Q.ItT;
     return (0, i.jsx)(E.A, {
         sidebarType: E.X.MessageRequestSidebar,
-        maxWidth: l,
+        maxWidth: r,
         onWidthChange: n,
         children: (0, i.jsx)(I.A, {
-            channel: r,
+            channel: l,
             baseChannelId: D.fe
         })
     })
@@ -172,38 +172,38 @@ let ei = e => {
         children: n => {
             let {
                 visibleContent: a,
-                markAsDismissed: r
-            } = n, l = {
+                markAsDismissed: l
+            } = n, r = {
                 position: "bottom",
                 caretConfig: {
                     position: "top",
                     align: "center"
                 },
                 shouldShow: !0,
-                onRequestClose: () => r(X.i.USER_DISMISS),
+                onRequestClose: () => l(X.i.USER_DISMISS),
                 targetElementRef: e.targetElementRef
             };
             return a === c.M.MESSAGE_REQUEST_SETTINGS_COACH_MARK ? (0, i.jsxs)(i.Fragment, {
                 children: [e.children, t ? (0, i.jsx)(u.AM, {
-                    ...l,
+                    ...r,
                     title: Z.intl.string(Z.t.hRT8tc),
                     body: Z.intl.string(Z.t.apPgJG),
                     actions: [{
                         text: Z.intl.string(Z.t.LNoAQW),
-                        onClick: () => r(X.i.TAKE_ACTION)
+                        onClick: () => l(X.i.TAKE_ACTION)
                     }]
                 }) : (0, i.jsx)(u.AM, {
-                    ...l,
+                    ...r,
                     title: Z.intl.string(Z.t.hRT8tc),
                     body: Z.intl.string(Z.t["8JWods"]),
                     actions: [{
                         text: Z.intl.string(Z.t.JN6EOJ),
                         onClick: e => {
-                            e.stopPropagation(), (0, P.openUserSettings)(R.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING), r(X.i.TAKE_ACTION)
+                            e.stopPropagation(), (0, P.openUserSettings)(R.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING), l(X.i.TAKE_ACTION)
                         }
                     }, {
                         text: Z.intl.string(Z.t.LNoAQW),
-                        onClick: () => r(X.i.USER_DISMISS),
+                        onClick: () => l(X.i.USER_DISMISS),
                         variant: "secondary"
                     }]
                 })]
@@ -218,7 +218,7 @@ function ea(e) {
     } = e;
     return t === $.zz.SPAM ? (0, i.jsx)(z.A, {}) : (0, i.jsx)(et, {})
 }
-let er = (0, _.A)(function(e) {
+let el = (0, _.A)(function(e) {
     let {
         width: t
     } = e, n = (0, F.W)();
@@ -229,7 +229,7 @@ let er = (0, _.A)(function(e) {
             name: o.K.MESSAGE_REQUEST_VIEW
         })
     });
-    let r = (0, d.bG)([L.A], () => L.A.theme),
+    let l = (0, d.bG)([L.A], () => L.A.theme),
         s = (0, W.I)(),
         [c, u] = a.useState(!1),
         _ = (0, d.bG)([D.Ay], () => {
@@ -242,7 +242,7 @@ let er = (0, _.A)(function(e) {
         I = (0, U.A)(m),
         f = a.useRef(null);
     a.useEffect(() => {
-        null != m && !E && I && p && ((0, y.iN)(m), v.A.closeChannelSidebar(D.fe))
+        null != m && !E && I && p && ((0, v.iN)(m), y.A.closeChannelSidebar(D.fe))
     }, [m, I, p, E]);
     let [T, N] = a.useState($.zz.REQUESTS), R = e => {
         N(e)
@@ -251,12 +251,12 @@ let er = (0, _.A)(function(e) {
         location: Z.intl.string(Z.t.e7GWjQ)
     }), (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
-            className: l()(ee.TE, J.kL, {
+            className: r()(ee.TE, J.kL, {
                 [ee.js]: p,
                 [ee.jl]: p && c
             }),
             children: [(0, i.jsx)(A.NPJ, {
-                theme: r,
+                theme: l,
                 children: e => (0, i.jsxs)(S.A, {
                     className: e,
                     toolbar: !0,

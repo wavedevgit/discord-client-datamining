@@ -1,6 +1,6 @@
 /** chunk id: 68738 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => x
 });
 var a = n(627968),
     i = n(64700),
@@ -203,7 +203,7 @@ let h = {
             })
         }
     },
-    x = {
+    p = {
         GuildShopSortOptions: i.lazy(async () => {
             let {
                 default: e
@@ -219,13 +219,13 @@ let h = {
         })
     };
 
-function p() {
+function x() {
     let e = i.useMemo(() => Object.keys(h).map(e => ({
             label: e,
             value: e,
             id: e
         })).sort((e, t) => e.label.localeCompare(t.label)), []),
-        t = i.useMemo(() => Object.keys(x).map(e => ({
+        t = i.useMemo(() => Object.keys(p).map(e => ({
             label: e,
             value: e,
             id: e
@@ -235,7 +235,7 @@ function p() {
         c = i.useCallback(e => {
             null != n && (0, s.L3)(e, h[n])
         }, [n]),
-        p = null != o ? x[o] : null;
+        x = null != o ? p[o] : null;
     return (0, a.jsx)(l.IpV, {
         className: m.nd,
         children: (0, a.jsxs)(l.BJc, {
@@ -290,13 +290,13 @@ function p() {
                     onSelectionChange: d,
                     selectionMode: "single"
                 })
-            }), null != p && (0, a.jsx)(i.Suspense, {
+            }), null != x && (0, a.jsx)(i.Suspense, {
                 fallback: (0, a.jsx)(l.Text, {
                     variant: "text-sm/normal",
                     color: "text-muted",
                     children: "Loading..."
                 }),
-                children: (0, a.jsx)(p, {})
+                children: (0, a.jsx)(x, {})
             })]
         })
     })

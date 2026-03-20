@@ -16,8 +16,8 @@ var a = n(627968),
 function h(e) {
     let t, n, {
             webBuildOverride: h,
-            onClick: x,
-            onContextMenu: p,
+            onClick: p,
+            onContextMenu: x,
             iconForeground: g,
             nameplate: _
         } = e,
@@ -30,8 +30,8 @@ function h(e) {
         }
     });
     let j = i.useCallback(() => {
-        b(!1), x()
-    }, [x]);
+        b(!1), p()
+    }, [p]);
     t = null != h ? m.intl.formatToPlainString(m.t.Gzh6ZP, {
         webBuildOverride: h.id
     }) : m.intl.string(m.t.cduTBL);
@@ -43,7 +43,7 @@ function h(e) {
             tooltipText: t,
             tooltipPositionKey: n,
             onClick: j,
-            onContextMenu: p,
+            onContextMenu: x,
             "aria-label": m.intl.string(m.t.cduTBL),
             icon: (0, a.jsx)(A, {
                 size: "refresh_sm",

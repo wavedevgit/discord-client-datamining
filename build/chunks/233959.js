@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(111162),
     a = n(84002),
-    r = n(603265),
-    l = n(652215);
+    l = n(603265),
+    r = n(652215);
 let s = e => {
     let {
         origin: t,
@@ -16,7 +16,7 @@ let s = e => {
         logger: c,
         postClose: u
     } = e;
-    return new r.A({
+    return new l.A({
         origin: t,
         postMessageToRPCClient: n,
         frameId: s,
@@ -25,7 +25,7 @@ let s = e => {
         logger: c,
         postClose: u,
         onSendingToRPCClient: (e, t) => {
-            (i.default.isLoggingOverlayEvents || e.cmd !== l.e$_.OVERLAY && e.evt !== l.ZE4.OVERLAY) && c.info(`Socket Emit: ${t}`, (0, a.A)(e))
+            (i.default.isLoggingOverlayEvents || e.cmd !== r.e$_.OVERLAY && e.evt !== r.ZE4.OVERLAY) && c.info(`Socket Emit: ${t}`, (0, a.A)(e))
         }
     })
 }

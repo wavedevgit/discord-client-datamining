@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(260880),
     m = n(303054),
     h = n(231643),
-    x = n(930821),
-    p = n(998758);
+    p = n(930821),
+    x = n(998758);
 
 function g(e, t) {
     return e.store.getName().localeCompare(t.store.getName())
@@ -31,7 +31,7 @@ function _(e) {
             t.removeChangeListener(e)
         }
     }, [t, n]), (0, a.jsx)(o.IpV, {
-        className: p.Dx,
+        className: x.Dx,
         children: (0, a.jsx)(c.A, {
             data: l
         })
@@ -39,7 +39,7 @@ function _(e) {
 }
 let f = [{
         key: "name",
-        cellClassName: p.__invalid_eventColumn,
+        cellClassName: x.__invalid_eventColumn,
         render(e) {
             let {
                 store: t
@@ -56,7 +56,7 @@ let f = [{
                 store: t
             } = e;
             return null == t.__getLocalVars ? (0, a.jsxs)("div", {
-                className: p.Dx,
+                className: x.Dx,
                 children: ["Store is missing ", (0, a.jsx)("code", {
                     children: "__getLocalVars"
                 }), " method."]
@@ -91,11 +91,11 @@ function b(e) {
         tabs: v
     }, []);
     return (0, a.jsxs)(u.A, {
-        className: p.rf,
+        className: x.rf,
         minHeight: 100,
         initialHeight: n,
         children: [(0, a.jsx)(i, {}), (0, a.jsxs)(d.Ay, {
-            className: s()(x.jr, p.nZ),
+            className: s()(p.jr, x.nZ),
             children: [(0, a.jsx)(d.Ay.Icon, {
                 icon: o.gqV,
                 tooltip: t.getName()
@@ -125,9 +125,9 @@ function j() {
         h = l.find(e => e._dispatchToken === c);
     return (0, a.jsxs)("div", {
         ref: e,
-        className: s()(x.nd, p.nd),
+        className: s()(p.nd, x.nd),
         children: [(0, a.jsx)("div", {
-            className: p.KE,
+            className: x.KE,
             children: (0, a.jsx)(o.IWV, {
                 size: "sm",
                 query: t,

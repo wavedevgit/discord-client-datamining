@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    r = n(311907),
-    l = n(883344),
+    l = n(311907),
+    r = n(883344),
     s = n(859524),
     o = n(567061),
     d = n(519028),
@@ -16,7 +16,7 @@ var i = n(627968),
 let _ = function(e) {
     let {
         scrollContainerRef: t
-    } = e, n = (0, r.bG)([l.A], () => l.A.notificationItem(), []), {
+    } = e, n = (0, l.bG)([r.A], () => r.A.notificationItem(), []), {
         showDot: _
     } = (0, d.A)(), m = a.useRef(null), [g, p] = a.useState(!1), {
         data: E,
@@ -31,12 +31,12 @@ let _ = function(e) {
     a.useEffect(() => () => {
         N()
     }, [N]);
-    let S = (0, r.bG)([l.A], () => l.A.hasNewContent(), []),
-        x = (0, r.bG)([l.A], () => l.A.isHydrating(), []),
-        y = a.useMemo(() => T[0].onViewableItemsChanged, [T]),
+    let S = (0, l.bG)([r.A], () => r.A.hasNewContent(), []),
+        x = (0, l.bG)([r.A], () => r.A.isHydrating(), []),
+        v = a.useMemo(() => T[0].onViewableItemsChanged, [T]),
         {
-            registerItemRef: v
-        } = (0, A.N)(E, y, t),
+            registerItemRef: y
+        } = (0, A.N)(E, v, t),
         b = a.useMemo(() => E.some(e => "end" === e.data.kind), [E]),
         O = a.useCallback(() => {
             if (b) return;
@@ -88,12 +88,12 @@ let _ = function(e) {
                 children: "You're all caught up!"
             })
         }, e.id) : (0, i.jsx)("div", {
-            ref: t => v(e.id, t),
+            ref: t => y(e.id, t),
             "data-item-id": e.id,
             children: (0, i.jsx)(u.A, {
                 item: e
             })
-        }, e.id), [v]);
+        }, e.id), [y]);
     return I && 0 === E.length ? (0, i.jsx)("div", {
         style: {
             padding: "32px",

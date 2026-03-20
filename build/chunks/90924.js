@@ -20,8 +20,8 @@ n.d(t, {
 }), n(321073), n(938796), n(735438);
 var i = n(567243),
     a = n(179771),
-    r = n(562465),
-    l = n(898467),
+    l = n(562465),
+    r = n(898467),
     s = n(843472),
     o = n(956518),
     d = n(587895),
@@ -41,8 +41,8 @@ var i = n(567243),
     N = n(562153),
     S = n(257120),
     x = n(998218),
-    y = n(636401),
-    v = n(639621),
+    v = n(636401),
+    y = n(639621),
     b = n(613057),
     O = n(652215);
 let L = x.A.toURLSafe(window.GLOBAL_ENV.API_ENDPOINT)?.host ?? "localhost",
@@ -119,7 +119,7 @@ function k(e) {
         mention_roles: e.mention_roles || e.mentionRoles,
         embeds: e.embeds,
         attachments: e.attachments,
-        author: null != i ? (0, v.A)(i) : void 0,
+        author: null != i ? (0, y.A)(i) : void 0,
         pinned: e.pinned,
         type: e.type
     }
@@ -129,8 +129,8 @@ function V(e, t, n) {
     let {
         mute: i,
         deaf: a,
-        selfMute: r,
-        selfDeaf: l,
+        selfMute: l,
+        selfDeaf: r,
         suppress: s,
         userId: o
     } = n, d = f.default.getUser(o);
@@ -143,18 +143,18 @@ function V(e, t, n) {
         voice_state: {
             mute: i,
             deaf: a,
-            self_mute: r,
-            self_deaf: l,
+            self_mute: l,
+            self_deaf: r,
             suppress: s
         },
-        user: (0, v.A)(d)
+        user: (0, y.A)(d)
     }
 }
 
 function B(e, t) {
     return {
         type: e,
-        user: (0, v.A)(t),
+        user: (0, y.A)(t),
         presence: {
             status: I.A.getStatus(t.id, null),
             activity: null
@@ -206,7 +206,7 @@ function K(e, t, n) {
 }
 
 function q(e) {
-    return r.Bo.get({
+    return l.Bo.get({
         url: O.Rsh.APPLICATION_RPC(e),
         oldFormErrors: !0,
         retries: 3,
@@ -217,7 +217,7 @@ function q(e) {
         } = e;
         return t
     }, () => {
-        throw new y.A({
+        throw new v.A({
             closeCode: O.YI$.INVALID_CLIENTID
         }, "Invalid Client ID")
     })
@@ -227,37 +227,37 @@ async function z(e, t, n) {
     if ("string" == typeof n)
         if (e.transport === b.z4.POST_MESSAGE) {
             let e = (0, o.Ay)(t);
-            if (null == e || !U(n, [e])) throw new y.A({
+            if (null == e || !U(n, [e])) throw new v.A({
                 closeCode: O.YI$.INVALID_ORIGIN
             }, "Invalid Origin")
         } else {
             let e = await q(t);
-            if (i = A.Ay.createFromServer(e), !U(n, e.rpc_origins)) throw new y.A({
+            if (i = A.Ay.createFromServer(e), !U(n, e.rpc_origins)) throw new v.A({
                 closeCode: O.YI$.INVALID_ORIGIN
             }, "Invalid Origin")
         } null == i && (i = A.Ay.createFromServer(await q(t)));
     let {
         id: a,
-        name: r,
-        icon: l,
+        name: l,
+        icon: r,
         coverImage: s,
         flags: c
     } = i;
     e.application = {
         id: a,
-        name: r,
-        icon: l,
+        name: l,
+        icon: r,
         coverImage: s,
         flags: c
     }
 }
 async function $(e, t, n) {
     let i = M[e];
-    null == i && (i = new l.A(t ? 2 : 60, D), M[e] = i);
+    null == i && (i = new r.A(t ? 2 : 60, D), M[e] = i);
     try {
         await i.process(n)
     } catch (e) {
-        throw new y.A({
+        throw new v.A({
             closeCode: O.YI$.CLOSE_ABNORMAL
         }, "Socket closed during throttle")
     }
@@ -318,13 +318,13 @@ function Z(e, t) {
 }
 
 function J(e) {
-    if (e !== b.z4.POST_MESSAGE) throw new y.A({
+    if (e !== b.z4.POST_MESSAGE) throw new v.A({
         errorCode: O.Lw6.INVALID_COMMAND
     }, `command not available from "${e} transport`)
 }
 
 function ee(e) {
-    if (null == e.id) throw new y.A({
+    if (null == e.id) throw new v.A({
         errorCode: O.Lw6.INVALID_COMMAND
     }, "Invalid application");
     return e.id

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i, a = n(627968);
 n(64700);
-var r = n(192308),
-    l = n(768569),
+var l = n(192308),
+    r = n(768569),
     s = n(164554),
     o = n(305498),
     d = n(909255),
@@ -27,7 +27,7 @@ function _(e) {
         lastGrantedRewardAmount: p,
         dismissCoachMark: E,
         dismissOrbsDropPopover: I
-    } = e, f = (0, r.useHasAnyModalOpen)();
+    } = e, f = (0, l.useHasAnyModalOpen)();
     switch (n) {
         case "churn_discount":
             if (null != h && null != _) return (0, a.jsx)(u.A, {
@@ -39,7 +39,7 @@ function _(e) {
             });
             break;
         case "premium_group":
-            return (0, a.jsx)(l.p, {
+            return (0, a.jsx)(r.p, {
                 targetElementRef: i,
                 dismissPopover: E,
                 children: t

@@ -14,8 +14,8 @@ var a = n(627968),
     u = n(139286),
     m = n(58736),
     h = n(923917),
-    x = n(574172),
-    p = n(147925),
+    p = n(574172),
+    x = n(147925),
     g = n(538064),
     _ = n(265059),
     f = n(867041),
@@ -45,7 +45,7 @@ function T(e) {
 }
 
 function S() {
-    (0, x.open)(j.MLl.DEVTOOLS_POPOUT, () => (0, a.jsx)(h.A, {
+    (0, p.open)(j.MLl.DEVTOOLS_POPOUT, () => (0, a.jsx)(h.A, {
         windowKey: j.MLl.DEVTOOLS_POPOUT,
         title: "DevTools",
         withTitleBar: !0,
@@ -148,8 +148,8 @@ function I() {
             onClick: g.pf,
             children: (0, a.jsxs)(m.Ay, {
                 className: s()(y.jr, C.J$),
-                toolbar: (0, a.jsx)(p.A, {
-                    direction: p.A.Directions.UP
+                toolbar: (0, a.jsx)(x.A, {
+                    direction: x.A.Directions.UP
                 }),
                 children: [(0, a.jsx)(m.Ay.Icon, {
                     icon: d.VaJ,

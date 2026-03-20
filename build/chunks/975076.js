@@ -4,13 +4,13 @@ n.d(t, {
 });
 var i = n(311907),
     a = n(576705),
-    r = n(125022),
-    l = n(558593),
+    l = n(125022),
+    r = n(558593),
     s = n(652215);
 
 function o(e) {
-    let t = (0, l.q)(e, "useCanShowGameClaimCoachmark");
-    return (0, i.bG)([a.A, r.A], () => !!t && !!a.A.canWithPartialContext(s.xBc.ADMINISTRATOR, {
+    let t = (0, r.q)(e, "useCanShowGameClaimCoachmark");
+    return (0, i.bG)([a.A, l.A], () => !!t && !!a.A.canWithPartialContext(s.xBc.ADMINISTRATOR, {
         guildId: e
-    }) && r.A.hasUnclaimedGames(e), [e, t])
+    }) && l.A.hasUnclaimedGames(e), [e, t])
 }

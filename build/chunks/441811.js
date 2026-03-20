@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(531685),
     m = n(259065),
     h = n(49999),
-    x = n(241015),
-    p = n(985018),
+    p = n(241015),
+    x = n(985018),
     g = n(439315);
 let _ = new o.A("DisplayNameStylesCoachmark");
 
@@ -57,10 +57,10 @@ function f(e) {
                 loop: !0
             },
             size: "lg",
-            title: p.intl.string(x.default["1AE464"]),
-            body: [p.intl.string(x.default.cNc1g9), p.intl.string(p.t["4JNXHG"])],
+            title: x.intl.string(p.default["1AE464"]),
+            body: [x.intl.string(p.default.cNc1g9), x.intl.string(x.t["4JNXHG"])],
             actions: [{
-                text: p.intl.string(p.t.uw9zI7),
+                text: x.intl.string(x.t.uw9zI7),
                 variant: "primary",
                 onClick: j
             }]

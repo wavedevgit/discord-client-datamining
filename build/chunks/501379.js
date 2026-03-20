@@ -13,14 +13,14 @@ var a = n(627968),
     u = n(58736),
     m = n(773669),
     h = n(231545),
-    x = n(708403),
-    p = n(985018);
+    p = n(708403),
+    x = n(985018);
 
 function g() {
     let e = (0, d.bG)([m.default], () => m.default.locale),
         [t, n] = i.useState(),
         s = (0, l.runtimeHashMessageKey)(t ?? ""),
-        g = i.useMemo(() => p.t[s], [s]);
+        g = i.useMemo(() => x.t[s], [s]);
     return (0, a.jsxs)("div", {
         children: [(0, a.jsxs)(u.Ay, {
             children: [(0, a.jsx)(u.Ay.Icon, {
@@ -29,23 +29,23 @@ function g() {
             }), (0, a.jsx)(u.Ay.Title, {
                 children: "Locale"
             })]
-        }), (0, a.jsxs)(x.OA, {
-            children: [(0, a.jsx)(x.mA, {
+        }), (0, a.jsxs)(p.OA, {
+            children: [(0, a.jsx)(p.mA, {
                 name: "Active System",
                 children: "@discord/intl"
-            }), (0, a.jsx)(x.mA, {
+            }), (0, a.jsx)(p.mA, {
                 name: "App",
                 children: e
-            }), (0, a.jsx)(x.mA, {
+            }), (0, a.jsx)(p.mA, {
                 name: "System",
-                children: p.systemLocale
-            }), (0, a.jsx)(x.mA, {
+                children: x.systemLocale
+            }), (0, a.jsx)(p.mA, {
                 name: "@discord/intl",
-                children: p.intl.currentLocale
-            }), (0, a.jsx)(x.mA, {
+                children: x.intl.currentLocale
+            }), (0, a.jsx)(p.mA, {
                 name: "common i18n",
                 children: o.A.getLocale()
-            }), (0, a.jsx)(x.mA, {
+            }), (0, a.jsx)(p.mA, {
                 name: "Moment",
                 children: r().locale()
             })]
@@ -56,10 +56,10 @@ function g() {
             }), (0, a.jsx)(u.Ay.Title, {
                 children: "New System Messages"
             })]
-        }), (0, a.jsx)(x.OA, {
-            children: (0, a.jsx)(x.mA, {
+        }), (0, a.jsx)(p.OA, {
+            children: (0, a.jsx)(p.mA, {
                 name: "Unique Rendered Main Messages",
-                children: Object.keys(p.t).length
+                children: Object.keys(x.t).length
             })
         }), (0, a.jsx)("div", {
             style: {
@@ -72,11 +72,11 @@ function g() {
                 name: "Message name",
                 placeholder: "Find a message"
             })
-        }), (0, a.jsxs)(x.OA, {
-            children: [(0, a.jsx)(x.mA, {
+        }), (0, a.jsxs)(p.OA, {
+            children: [(0, a.jsx)(p.mA, {
                 name: "Hashed key",
                 children: s
-            }), (0, a.jsx)(x.mA, {
+            }), (0, a.jsx)(p.mA, {
                 name: "Exists?",
                 children: null != g ? "yes" : "no"
             })]

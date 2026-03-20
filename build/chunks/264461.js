@@ -13,20 +13,20 @@ var a = n(627968),
     u = n(869146),
     m = n(680108),
     h = n(439895),
-    x = n(652215),
-    p = n(335603);
+    p = n(652215),
+    x = n(335603);
 let g = e => {
         let {
             setTab: t
-        } = e, n = (0, o.bG)([u.A], () => u.A.getWindowOpen(x.MLl.DEVTOOLS_POPOUT));
+        } = e, n = (0, o.bG)([u.A], () => u.A.getWindowOpen(p.MLl.DEVTOOLS_POPOUT));
         return (0, a.jsxs)("div", {
-            className: p.Qs,
+            className: x.Qs,
             children: [(0, a.jsx)(r.DUT, {
                 onClick: () => {
                     t(1)
                 },
                 children: (0, a.jsx)("div", {
-                    className: s()(p.vK, p.Dg),
+                    className: s()(x.vK, x.Dg),
                     children: (0, a.jsx)(r.EYj, {
                         variant: "text-md/bold",
                         color: "always-white",
@@ -38,7 +38,7 @@ let g = e => {
                     t(2)
                 },
                 children: (0, a.jsx)("div", {
-                    className: s()(p.vK, p.st),
+                    className: s()(x.vK, x.st),
                     children: (0, a.jsx)(r.EYj, {
                         variant: "text-md/bold",
                         color: "always-white",
@@ -50,7 +50,7 @@ let g = e => {
                     t(3)
                 },
                 children: (0, a.jsx)("div", {
-                    className: s()(p.vK, p.IP),
+                    className: s()(x.vK, x.IP),
                     children: (0, a.jsx)(r.EYj, {
                         variant: "text-md/bold",
                         color: "always-white",
@@ -86,9 +86,9 @@ let g = e => {
     _ = () => {
         let [e, t] = i.useState(0);
         return (0, a.jsxs)(r.IpV, {
-            className: p.iE,
+            className: x.iE,
             children: [(0, a.jsxs)("div", {
-                className: p.C$,
+                className: x.C$,
                 children: [(0, a.jsx)(r.DZT, {
                     variant: "heading-xxl/medium",
                     children: "Collectibles DevTools"

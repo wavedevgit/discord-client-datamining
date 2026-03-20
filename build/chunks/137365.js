@@ -20,8 +20,8 @@ var a = n(450827),
     u = n(71393),
     m = n(994500),
     h = n(287809),
-    x = n(860689),
-    p = n(661191),
+    p = n(860689),
+    x = n(661191),
     g = n(427262),
     _ = n(926140);
 let f = new l.A("SearchDebugUtils");
@@ -112,7 +112,7 @@ function C() {
         a = [],
         l = [];
     e.forEach(e => {
-        (0, x.fh)(e) ? t.push(e): e.isDM() ? a.push(e) : e.isMultiUserDM() ? l.push(e) : n.push(e)
+        (0, p.fh)(e) ? t.push(e): e.isDM() ? a.push(e) : e.isMultiUserDM() ? l.push(e) : n.push(e)
     }), f.info("START Frecency"), f.info("Guilds"), t.forEach(e => {
         let t = o.A.getScoreWithoutFetchingLatest(e.id);
         f.info(`id: ${e.id} - name: ${e.name} - Frecency Score: ${t}`)
@@ -174,7 +174,7 @@ async function S() {
     let t = JSON.parse(e.users),
         n = h.default.getUsers(),
         i = new Set(Object.keys(t)),
-        l = p.default.keys(n),
+        l = x.default.keys(n),
         s = [];
     return l.forEach(e => {
         i.has(e) || s.push(e)

@@ -1,6 +1,6 @@
 /** chunk id: 809991 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => p
 });
 var a = n(627968);
 n(64700);
@@ -15,20 +15,20 @@ var i = n(554146),
     m = n(49999),
     h = n(654487);
 
-function x(e) {
+function p(e) {
     let {
         isQuestBarEmpty: t,
         hasLoadedQuestBar: n
     } = (0, u.c9)({
         location: h.rE.CONFLICT_CHECKS
-    }), x = null != e.targetElementRef.current && t && n, [p, g] = (0, o.r)(e.guildId, {
-        shouldShow: x
+    }), p = null != e.targetElementRef.current && t && n, [x, g] = (0, o.r)(e.guildId, {
+        shouldShow: p
     }), [_, f] = (0, o.L)(e.currentUser, {
-        shouldShow: x
+        shouldShow: p
     }), [v, b] = (0, l.l)({
-        shouldShow: x
+        shouldShow: p
     });
-    return x ? p === i.M.GUILD_TAG_AVAILABLE_COACHMARK_V2 ? (0, a.jsx)(d.w, {
+    return p ? x === i.M.GUILD_TAG_AVAILABLE_COACHMARK_V2 ? (0, a.jsx)(d.w, {
         guildId: e.guildId,
         onDismiss: g,
         targetElementRef: e.targetElementRef,
@@ -47,7 +47,7 @@ function x(e) {
             groupName: m.m.ACCOUNT_NAME_ZONE,
             targetElementRef: e.targetElementRef
         }), (0, a.jsx)(s.Ay, {
-            contentTypes: x ? e.additionalDCs ?? [] : [],
+            contentTypes: p ? e.additionalDCs ?? [] : [],
             groupName: m.m.ACCOUNT_NAME_ZONE,
             children: t => {
                 let {

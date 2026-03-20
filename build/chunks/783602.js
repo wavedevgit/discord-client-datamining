@@ -1,6 +1,6 @@
 /** chunk id: 783602 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => p
 });
 var a = n(627968),
     i = n(64700),
@@ -14,20 +14,20 @@ var a = n(627968),
     m = n(985018),
     h = n(801882);
 
-function x() {
+function p() {
     let {
         quest: e,
         onCtxMenuOpen: t,
         onCtxMenuClose: n,
         onCtxMenuSelect: l
-    } = i.useContext(u.T), x = (0, d.S5)(e.config.expiresAt);
+    } = i.useContext(u.T), p = (0, d.S5)(e.config.expiresAt);
     return (0, a.jsxs)("div", {
         className: h.pS,
         children: [(0, a.jsx)(r.Text, {
             variant: "text-xxs/medium",
             className: s()(h.Uu, h.TK),
             children: m.intl.format(m.t["pX+fmn"], {
-                expirationDate: x
+                expirationDate: p
             })
         }), (0, a.jsx)(c.C, {
             onOpen: t,

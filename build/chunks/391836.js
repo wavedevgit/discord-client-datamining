@@ -4,15 +4,15 @@ n.d(t, {
 }), n(938796), n(321073);
 var i = n(179771),
     a = n(136722),
-    r = n(420970),
-    l = n(994500),
+    l = n(420970),
+    r = n(994500),
     s = n(287809),
     o = n(636401),
     d = n(90924),
     c = n(613057),
     u = n(652215);
 let A = {
-    [u.e$_.GET_RELATIONSHIPS]: (0, r.T)(u.e$_.GET_RELATIONSHIPS, {
+    [u.e$_.GET_RELATIONSHIPS]: (0, l.T)(u.e$_.GET_RELATIONSHIPS, {
         scope: {
             [c.sm.ANY]: [i.F.RELATIONSHIPS_READ]
         },
@@ -21,12 +21,12 @@ let A = {
                 errorCode: u.Lw6.INVALID_PERMISSIONS
             }, "Missing Permissions");
             let t = [];
-            for (let [n, i] of l.A.getMutableRelationships().entries()) {
+            for (let [n, i] of r.A.getMutableRelationships().entries()) {
                 if (i === u.eA$.NONE) continue;
                 let a = s.default.getUser(n);
                 if (null == a) continue;
-                let r = (0, d.Gc)(i, a);
-                t.push((0, d.LP)(r, e.socket.application.id))
+                let l = (0, d.Gc)(i, a);
+                t.push((0, d.LP)(l, e.socket.application.id))
             }
             return {
                 relationships: t

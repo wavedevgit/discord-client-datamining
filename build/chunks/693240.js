@@ -1,6 +1,6 @@
 /** chunk id: 693240 params = (module,exports,require) **/
 n.d(t, {
-    o: () => p,
+    o: () => x,
     w: () => g
 });
 var a = n(627968);
@@ -15,9 +15,9 @@ var i = n(311907),
     u = n(514661),
     m = n(49999),
     h = n(985018);
-let x = new o.A("GuildTagAvailableCoachmark");
+let p = new o.A("GuildTagAvailableCoachmark");
 
-function p(e) {
+function x(e) {
     let t = (0, i.bG)([d.A], () => d.A.getGuild(e.guildId));
 
     function n(n) {
@@ -31,14 +31,14 @@ function p(e) {
     }
     let {
         isAdopting: o,
-        onAdoptTag: p,
+        onAdoptTag: x,
         onEditProfile: g
     } = (0, u.A)(t?.id ?? null, () => n(m.i.TAKE_ACTION));
-    if (null == t || !(0, c.q0)(t)) return x.error("GuildTagChangedCoachmark rendered without guildId for a guild with tags."), e.children;
+    if (null == t || !(0, c.q0)(t)) return p.error("GuildTagChangedCoachmark rendered without guildId for a guild with tags."), e.children;
     let _ = [{
         text: h.intl.string(h.t.jwEaiX),
         loading: o,
-        onClick: p,
+        onClick: x,
         variant: "primary"
     }, {
         text: h.intl.string(h.t.s5vZlQ),
@@ -78,9 +78,9 @@ function g(e) {
     let {
         isAdopting: r,
         onAdoptTag: o,
-        onEditProfile: p
+        onEditProfile: x
     } = (0, u.A)(t?.id ?? null, () => n(m.i.TAKE_ACTION));
-    if (null == t || !(0, c.q0)(t)) return x.error("GuildTagAvailableCoachmark rendered without guildId for a guild with tags."), e.children;
+    if (null == t || !(0, c.q0)(t)) return p.error("GuildTagAvailableCoachmark rendered without guildId for a guild with tags."), e.children;
     let g = [{
         text: h.intl.string(h.t.jwEaiX),
         loading: r,
@@ -88,7 +88,7 @@ function g(e) {
         variant: "primary"
     }, {
         text: h.intl.string(h.t.s5vZlQ),
-        onClick: p,
+        onClick: x,
         variant: "secondary"
     }];
     return (0, a.jsxs)(a.Fragment, {

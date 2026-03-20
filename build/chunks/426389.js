@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    r = n(735438),
-    l = n.n(r),
+    l = n(735438),
+    r = n.n(l),
     s = n(111956),
     o = n.n(s),
     d = n(311907),
@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(943577),
     S = n(954571),
     x = n(927813),
-    y = n(279877),
-    v = n(112273),
+    v = n(279877),
+    y = n(112273),
     b = n(666290),
     O = n(928636),
     L = n(502696),
@@ -40,15 +40,15 @@ let w = 15 * x.A.Millis.MINUTE,
         let {
             party: t,
             onUserContextMenu: n,
-            onChannelContextMenu: r,
-            quest: l
+            onChannelContextMenu: l,
+            quest: r
         } = e, s = a.useRef(null), d = (0, i.jsx)(b.A, {
             party: t,
             onUserContextMenu: n
-        }), u = (0, i.jsx)(v.A, {
+        }), u = (0, i.jsx)(y.A, {
             party: t,
-            onChannelContextMenu: r,
-            quest: l
+            onChannelContextMenu: l,
+            quest: r
         }), {
             partiedMembers: A,
             applicationStreams: h,
@@ -95,15 +95,15 @@ let w = 15 * x.A.Millis.MINUTE,
             }
         }) : null
     }),
-    G = l().throttle(() => f.u(), 3e5);
+    G = r().throttle(() => f.u(), 3e5);
 
 function k() {
     let {
         nowPlayingCards: e,
         loaded: t,
         needsRefresh: n,
-        fetching: r,
-        currentUser: l
+        fetching: l,
+        currentUser: r
     } = (0, d.cf)([N.A, C.A, T.default], () => ({
         nowPlayingCards: N.A.nowPlayingCards,
         loaded: N.A.loaded,
@@ -111,11 +111,11 @@ function k() {
         fetching: C.A.isFetching(),
         currentUser: T.default.getCurrentUser()
     })), s = (0, d.bG)([h.A], () => h.A.quests), o = (0, g.oH)(Array.from(s.values()));
-    a.useEffect(() => (u.h.wait(() => y.O()), () => {
-        u.h.wait(() => y.v())
-    }), [l?.id]), a.useEffect(() => {
-        n && !r && G()
-    }, [n, r]);
+    a.useEffect(() => (u.h.wait(() => v.O()), () => {
+        u.h.wait(() => v.v())
+    }), [r?.id]), a.useEffect(() => {
+        n && !l && G()
+    }, [n, l]);
     let {
         use_api_call: f
     } = m.M.getConfig({
@@ -128,36 +128,36 @@ function k() {
             n = new Map,
             i = new Set,
             a = (0, I.$e)(s, D.B3);
-        for (let r of e) r.party.currentActivities.forEach(e => {
+        for (let l of e) l.party.currentActivities.forEach(e => {
             let {
-                activity: l
+                activity: r
             } = e;
-            if (null == l) return;
-            let s = (0, E.nq)(a, l);
-            null == s || i.has(s.id) || (t.set(r.party.id, s), i.add(s.id), n.set(r.party.id, s.id))
+            if (null == r) return;
+            let s = (0, E.nq)(a, r);
+            null == s || i.has(s.id) || (t.set(l.party.id, s), i.add(s.id), n.set(l.party.id, s.id))
         });
         return {
             questsByPartyId: t,
             questIdsByPartyId: n
         }
-    }, [e, s, o]), v = (0, d.bG)([h.A], () => h.A.earnedQuestForPlacement.get(_.uF.ACTIVITY_PANEL), []), b = a.useRef([]), O = a.useMemo(() => {
+    }, [e, s, o]), y = (0, d.bG)([h.A], () => h.A.earnedQuestForPlacement.get(_.uF.ACTIVITY_PANEL), []), b = a.useRef([]), O = a.useMemo(() => {
         let e = Array.from(x.values()),
             t = b.current;
         return t.length === e.length && e.every((e, n) => e === t[n]) ? t : (b.current = e, e)
     }, [x]);
     a.useEffect(() => {
         f && 0 !== O.length && (0, A.yO)(O, _.uF.ACTIVITY_PANEL, "NowPlaying")
-    }, [O, f, v]);
+    }, [O, f, y]);
     let L = a.useMemo(() => {
             if (!f) return S;
-            if (null == v) return new Map;
+            if (null == y) return new Map;
             let e = new Map;
             for (let [t, n] of x.entries()) {
-                let i = v.quests.get(n);
+                let i = y.quests.get(n);
                 (0, p.Oh)(i) && null != i.questWithUserStatus && e.set(t, i.questWithUserStatus)
             }
             return e
-        }, [f, v, S, x]),
+        }, [f, y, S, x]),
         R = null;
     return t ? R = e.length > 0 ? e.map(e => {
         let {

@@ -1,10 +1,10 @@
 /** chunk id: 291731 params = (module,exports,require) **/
-let i, a, r;
+let i, a, l;
 n.d(t, {
     A: () => b
 }), n(321073);
-var l = n(735438),
-    s = n.n(l),
+var r = n(735438),
+    s = n.n(r),
     o = n(311907),
     d = n(73153),
     c = n(824953),
@@ -29,7 +29,7 @@ function N() {
     I = m.XlH.OPEN, f = {}, C = !1
 }
 let S = s().debounce(() => {
-    C && ((null == p || s().isEqual(p, x(p.id))) && (C = !1), C || v.emitChange())
+    C && ((null == p || s().isEqual(p, x(p.id))) && (C = !1), C || y.emitChange())
 }, 500);
 
 function x(e) {
@@ -40,7 +40,7 @@ function x(e) {
         return n === e
     })
 }
-class y extends o.Ay.Store {
+class v extends o.Ay.Store {
     static displayName = "ChannelSettingsIntegrationsStore";
     initialize() {
         this.waitFor(u.A, A.A, _.A, h.A)
@@ -68,7 +68,7 @@ class y extends o.Ay.Store {
             submitting: I === m.XlH.SUBMITTING,
             webhooks: g,
             editedWebhook: p,
-            section: r,
+            section: l,
             sectionId: T,
             hasChanges: this.hasChanges(),
             isFetching: E,
@@ -76,7 +76,7 @@ class y extends o.Ay.Store {
         }
     }
 }
-let v = new y(d.h, __OVERLAY__ ? {} : {
+let y = new v(d.h, __OVERLAY__ ? {} : {
         INTEGRATION_SETTINGS_INIT: N,
         INTEGRATION_SETTINGS_SAVE_SUCCESS: N,
         CHANNEL_SETTINGS_SET_SECTION: function(e) {
@@ -84,7 +84,7 @@ let v = new y(d.h, __OVERLAY__ ? {} : {
                 section: t
             } = e;
             if (t !== m.p_A.INTEGRATIONS) return !1;
-            if (r = m.wLn.OVERVIEW, null == i) {
+            if (l = m.wLn.OVERVIEW, null == i) {
                 let e = u.A.getChannel(),
                     t = e?.getGuildId();
                 null != e && null != t && (c.A.fetchForChannel(t, e.id), E = !0), N()
@@ -95,7 +95,7 @@ let v = new y(d.h, __OVERLAY__ ? {} : {
                 section: t,
                 sectionId: n
             } = e;
-            r = t, T = n
+            l = t, T = n
         },
         INTEGRATION_SETTINGS_START_EDITING_WEBHOOK: function(e) {
             let {
@@ -123,13 +123,13 @@ let v = new y(d.h, __OVERLAY__ ? {} : {
             let {
                 guildId: t,
                 channelId: n,
-                webhooks: r
+                webhooks: l
             } = e;
-            if (E = !1, null != i && t === i.id && null != a && n === a.id && null != r && I !== m.XlH.SUBMITTING) {
+            if (E = !1, null != i && t === i.id && null != a && n === a.id && null != l && I !== m.XlH.SUBMITTING) {
                 for (let e = g.length - 1; e >= 0; e--) {
                     let t = g[e];
                     if (null != n && t?.channel_id !== n) continue;
-                    let i = r.find(e => {
+                    let i = l.find(e => {
                         let {
                             id: n
                         } = e;
@@ -143,7 +143,7 @@ let v = new y(d.h, __OVERLAY__ ? {} : {
                         g[e] = n, C || p?.id !== n.id || (p = n)
                     } else p?.id === t.id && (p = null), g.splice(e, 1)
                 }
-                for (let e of r) null == g.find(t => {
+                for (let e of l) null == g.find(t => {
                     let {
                         id: n
                     } = t;
@@ -160,4 +160,4 @@ let v = new y(d.h, __OVERLAY__ ? {} : {
             I = m.XlH.OPEN, f = e.errors ?? {}
         }
     }),
-    b = v
+    b = y

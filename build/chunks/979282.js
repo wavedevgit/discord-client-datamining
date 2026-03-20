@@ -1,17 +1,17 @@
 /** chunk id: 979282 params = (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => r
 });
 var i = n(627968);
 n(64700);
 var a = n(518620),
-    r = n(901319);
+    l = n(901319);
 
-function l(e) {
+function r(e) {
     let {
         rows: t,
         renderRow: n,
-        renderSection: l,
+        renderSection: r,
         isVirtualizedList: s,
         hasSearchQuery: o,
         sectionFilter: d,
@@ -21,14 +21,14 @@ function l(e) {
     return s ? (0, i.jsx)(a.A, {
         rows: t,
         renderRow: n,
-        renderSection: l,
+        renderSection: r,
         footer: c,
         sectionFilter: d,
         renderSectionFooter: u
-    }) : (0, i.jsx)(r.A, {
+    }) : (0, i.jsx)(l.A, {
         rows: t,
         renderRow: n,
-        renderSection: l,
+        renderSection: r,
         sectionFilter: d,
         hasSearchQuery: o,
         footer: c,

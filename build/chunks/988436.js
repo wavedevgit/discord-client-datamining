@@ -14,8 +14,8 @@ var a = n(627968),
     u = n(397927),
     m = n(775602),
     h = n(544028),
-    x = n(341915),
-    p = n(890687),
+    p = n(341915),
+    x = n(890687),
     g = n(579473),
     _ = n(18437),
     f = n(590202),
@@ -35,18 +35,18 @@ function E(e) {
         transitionState: l,
         onClose: A,
         sourceQuestContent: E
-    } = e, [I, k] = (0, i.useState)(n), R = (0, p.UX)(), O = (0, _.Ut)(), w = (0, v.vU)()?.getId(), D = (0, o.bG)([m.A], () => m.A.useReducedMotion), M = (0, C.Xf)({
+    } = e, [I, k] = (0, i.useState)(n), R = (0, x.UX)(), O = (0, _.Ut)(), w = (0, v.vU)()?.getId(), D = (0, o.bG)([m.A], () => m.A.useReducedMotion), M = (0, C.Xf)({
         useReducedMotion: D,
         className: S.Zf
     }), P = I.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), U = (0, j.YL)(t), L = (0, o.bG)([h.A], () => h.A.getState().theme), B = (0, c.Mw)(L) ? y.NJ.DARK : y.NJ.LIGHT, {
         startConsoleQuest: G,
         startingConsoleQuest: F
-    } = (0, p.Wj)({
+    } = (0, x.Wj)({
         questId: t.id,
         beforeRequest: () => {
             M.startAnimation(), O({
                 questId: t.id,
-                questContent: x.uF.CONNECTIONS_MODAL,
+                questContent: p.uF.CONNECTIONS_MODAL,
                 questContentCTA: f.Cy.DEFIBRILLATOR,
                 sourceQuestContent: E
             })
@@ -65,7 +65,7 @@ function E(e) {
             onClick: () => void(A(), (0, b.b6)({
                 quest: t
             }, {
-                content: x.uF.CONNECTIONS_MODAL,
+                content: p.uF.CONNECTIONS_MODAL,
                 ctaContent: f.Cy.VIEW_CONSOLE_CONNECTIONS_LINK,
                 impressionId: w,
                 sourceQuestContent: E
@@ -191,7 +191,7 @@ function I(e) {
             return (0, a.jsx)(A.R, {
                 overrideVisibility: !0,
                 questOrQuests: e.quest,
-                questContent: x.uF.CONNECTIONS_MODAL,
+                questContent: p.uF.CONNECTIONS_MODAL,
                 sourceQuestContent: e.sourceQuestContent,
                 children: () => (0, a.jsx)(t, {
                     ...n,

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    l = n(503698),
+    r = n.n(l),
     s = n(735438),
     o = n.n(s),
     d = n(397927),
@@ -30,13 +30,13 @@ let x = Object.freeze({
         left: 32,
         right: 202
     }),
-    y = Object.freeze({
+    v = Object.freeze({
         top: 0,
         bottom: 0,
         left: 32,
         right: 32
     }),
-    v = {
+    y = {
         page: N.liQ.GUILD_DISCOVERY,
         object: N.ZSU.CARD,
         section: N.JJy.DISCOVER_SEARCH
@@ -50,7 +50,7 @@ function O(e) {
     let {
         loadId: t,
         onGuildCardSeen: n,
-        onGuildCardClick: r
+        onGuildCardClick: l
     } = e, {
         guildIds: o,
         loading: h,
@@ -92,7 +92,7 @@ function O(e) {
                             paddingLeft: n.left,
                             width: n.width - 16
                         },
-                        className: l()(S.R_, {
+                        className: r()(S.R_, {
                             [S.Ze]: !j
                         }),
                         children: [!j && (0, i.jsxs)("div", {
@@ -108,7 +108,7 @@ function O(e) {
                     }, a);
                 case 1:
                     return (0, i.jsx)(d.y$y, {
-                        className: l()(S.u1, {
+                        className: r()(S.u1, {
                             [S.qx]: j
                         })
                     }, a)
@@ -146,12 +146,12 @@ function O(e) {
             }
         }, []),
         X = a.useCallback(async (e, t, n, i) => {
-            await r(e, t, n, i);
+            await l(e, t, n, i);
             let a = B.current?.getScrollerState()?.scrollTop;
             null != a && m.A.setState({
                 scrollPosition: a
             })
-        }, [r]),
+        }, [l]),
         Z = a.useCallback((e, t, n, a) => {
             if (0 !== e) return null;
             {
@@ -160,7 +160,7 @@ function O(e) {
                     style: n,
                     children: (0, i.jsx)(T.Ay, {
                         guildId: e,
-                        onClick: async e => await X(e, t, L, v),
+                        onClick: async e => await X(e, t, L, y),
                         onView: e => W(e)
                     })
                 }, a)
@@ -196,7 +196,7 @@ function O(e) {
         }, 100, {
             leading: !0
         }), [O]),
-        ee = j ? x : y;
+        ee = j ? x : v;
     return (0, i.jsx)("div", {
         className: S.kL,
         ref: Y,

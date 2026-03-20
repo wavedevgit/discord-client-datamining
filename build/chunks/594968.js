@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    r = n(311907),
-    l = n(827734),
+    l = n(311907),
+    r = n(827734),
     s = n(397927),
     o = n(308528),
     d = n(688810),
@@ -28,7 +28,7 @@ function S(e) {
     let {
         user: t,
         applicationId: n,
-        isGameRelationship: r,
+        isGameRelationship: l,
         active: o,
         onAcceptFriendRequest: d
     } = e, [c, u] = a.useState(!1), A = m.default.getCurrentUser()?.isStaff() && t?.isStaff(), {
@@ -37,7 +37,7 @@ function S(e) {
     } = (0, p.I)({
         userId: t.id,
         applicationId: n,
-        isGameRelationship: r,
+        isGameRelationship: l,
         location: "Friends",
         onFinally: () => {
             u(!1)
@@ -51,7 +51,7 @@ function S(e) {
         children: [A && (0, i.jsx)("div", {
             className: N.ou,
             children: (0, i.jsx)(s.LpS, {
-                color: l.A.unsafe_rawColors.BRAND_500.css,
+                color: r.A.unsafe_rawColors.BRAND_500.css,
                 text: T.intl.string(T.t.oMx98L)
             })
         }), (0, i.jsx)(E.A, {
@@ -75,14 +75,14 @@ function x(e) {
     let {
         userId: t,
         applicationId: n,
-        isGameRelationship: r,
-        active: l
+        isGameRelationship: l,
+        active: r
     } = e, {
         cancelFriendRequest: o
     } = (0, p.I)({
         userId: t,
         applicationId: n,
-        isGameRelationship: r,
+        isGameRelationship: l,
         location: "Friends"
     }), d = a.useCallback(e => {
         e.stopPropagation(), o()
@@ -92,17 +92,17 @@ function x(e) {
         actionType: E.A.ActionTypes.DENY,
         tooltip: T.intl.string(T.t.eaq81S),
         onClick: d,
-        shouldHighlight: l
+        shouldHighlight: r
     })
 }
 
-function y(e) {
+function v(e) {
     let {
         isGameRelationship: t,
         applicationId: n,
-        userTag: l,
+        userTag: r,
         isProvisional: o
-    } = e, d = a.useMemo(() => t ? T.intl.string(T.t["Uv/eTx"]) : l, [t, l]), h = (0, r.bG)([c.A], () => null != n ? c.A.getApplication(n) : null);
+    } = e, d = a.useMemo(() => t ? T.intl.string(T.t["Uv/eTx"]) : r, [t, r]), h = (0, l.bG)([c.A], () => null != n ? c.A.getApplication(n) : null);
     return (0, i.jsxs)("div", {
         className: N.P9,
         children: [!o && (0, i.jsx)(s.Text, {
@@ -125,12 +125,12 @@ function y(e) {
     })
 }
 
-function v(e) {
+function y(e) {
     let {
         user: t,
         hovered: n,
         status: a,
-        isGameRelationship: r,
+        isGameRelationship: l,
         applicationId: o,
         isFriend: d
     } = e, c = g.Ay.useUserTag(t);
@@ -143,14 +143,14 @@ function v(e) {
             className: N.Tl,
             children: [(0, i.jsx)(s.Uzd, {
                 size: "sm",
-                color: l.A.colors.ICON_FEEDBACK_POSITIVE
+                color: r.A.colors.ICON_FEEDBACK_POSITIVE
             }), (0, i.jsx)(s.Text, {
                 variant: "text-sm/medium",
                 color: "text-muted",
                 children: T.intl.string(T.t.bgL68y)
             })]
-        }) : (0, i.jsx)(y, {
-            isGameRelationship: r,
+        }) : (0, i.jsx)(v, {
+            isGameRelationship: l,
             isProvisional: t.isProvisional,
             applicationId: o,
             userTag: c
@@ -162,14 +162,14 @@ function b(e) {
     let {
         user: t,
         type: n,
-        status: l,
+        status: r,
         isFocused: c,
         applicationId: u,
         isGameRelationship: A,
         onAcceptFriendRequest: m
     } = e, {
         analyticsLocations: g
-    } = (0, d.Ay)(), p = l === C.clD.OFFLINE ? C.clD.UNKNOWN : l, E = (0, r.bG)([_.A], () => _.A.getRelationshipType(t.id)), f = a.useCallback(() => (0, h.openUserProfileModal)({
+    } = (0, d.Ay)(), p = r === C.clD.OFFLINE ? C.clD.UNKNOWN : r, E = (0, l.bG)([_.A], () => _.A.getRelationshipType(t.id)), f = a.useCallback(() => (0, h.openUserProfileModal)({
         userId: t.id,
         sourceAnalyticsLocations: g
     }), [g, t.id]), T = e => {
@@ -183,7 +183,7 @@ function b(e) {
         onClick: f,
         children: e => (0, i.jsxs)("div", {
             className: N.a4,
-            children: [(0, i.jsx)(v, {
+            children: [(0, i.jsx)(y, {
                 user: t,
                 hovered: e,
                 status: p,

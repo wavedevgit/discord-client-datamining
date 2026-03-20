@@ -14,8 +14,8 @@ var i = n(311907),
     u = n(287809),
     m = n(954571),
     h = n(427262),
-    x = n(429707),
-    p = n(274303),
+    p = n(429707),
+    x = n(274303),
     g = n(994125),
     _ = n(347853),
     f = n(652215),
@@ -32,7 +32,7 @@ function j(e) {
         C = A.map(i => {
             let s = new d.A(i),
                 o = s.id === t?.id,
-                c = i.tokenStatus === p.U.INVALID,
+                c = i.tokenStatus === x.U.INVALID,
                 u = n ? null : `#${s.discriminator}`;
             return (0, a.jsx)(r.Drp, {
                 id: s.id,
@@ -82,7 +82,7 @@ function j(e) {
                             location: {
                                 section: f.JJy.USER_PROFILE
                             }
-                        }), x.Mx(n))
+                        }), p.Mx(n))
                     }
                 }
             }, s.id)

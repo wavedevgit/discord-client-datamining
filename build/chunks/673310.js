@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    r = n(397927),
-    l = n(698441),
+    l = n(397927),
+    r = n(698441),
     s = n(976860),
     o = n(378570),
     d = n(657331),
@@ -23,15 +23,12 @@ function _(e) {
                 (0, o.ci)(t.data.message.channel_id, t.data.message.id);
                 break;
             case "guildEvent": {
-                let e = l.Ay.getGuildScheduledEvent(t.data.eventId);
+                let e = r.Ay.getGuildScheduledEvent(t.data.eventId);
                 null != e && (0, s.pX)(A.BVt.GUILD_EVENT_DETAILS(e.guild_id, e.id));
                 break
             }
             case "forumThread":
                 (0, o.ci)(t.data.threadChannel.id, t.data.message.id);
-                break;
-            case "generatedCandidate":
-                (0, o.ci)(t.data.item.channel_id, t.data.item.message_ids[0]);
                 break;
             case "contentInventory":
                 (0, d.openUserProfileModal)({
@@ -39,7 +36,7 @@ function _(e) {
                 })
         }
     }, [t]);
-    return (0, i.jsxs)(r.DUT, {
+    return (0, i.jsxs)(l.DUT, {
         className: h.k,
         onClick: n,
         children: [(0, i.jsx)(u.A, {

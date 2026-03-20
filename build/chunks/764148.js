@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(256415),
     a = n(837921),
-    r = n(214961),
-    l = n(88065),
+    l = n(214961),
+    r = n(88065),
     s = n(474951),
     o = n(770804),
     d = n(539754),
@@ -25,9 +25,9 @@ var i = n(256415),
     N = n(388331),
     S = n(466444),
     x = n(177235),
-    y = n(266686);
-let v = {
-        ...r.U,
+    v = n(266686);
+let y = {
+        ...l.U,
         ...u.A,
         ...A.A,
         ..._.A,
@@ -45,17 +45,17 @@ let v = {
         ...T.A
     },
     b = {
-        ...l.A,
+        ...r.A,
         ...o.c,
         ...d.I,
         ...c.p
     },
     O = {
         server: s.A,
-        commands: v,
+        commands: y,
         events: b,
         stores: [i.default],
-        transports: [y.A],
+        transports: [v.A],
         registerTransportsForEmbeddedPlatform: function() {
             a.Ay.ensureModule("discord_rpc").then(() => {
                 for (let e of [n(33006).A, n(998921).A]) s.A.registerTransport(e)

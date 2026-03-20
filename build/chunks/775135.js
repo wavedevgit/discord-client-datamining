@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     a = n(64700),
-    r = n(311907),
-    l = n(554146),
+    l = n(311907),
+    r = n(554146),
     s = n(506774),
     o = n(108722),
     d = n(932001),
@@ -25,9 +25,9 @@ var i = n(627968),
     N = n(90166),
     S = n(940447),
     x = n(665037),
-    y = n(946960),
-    v = n(49999);
-let b = new Set([l.M.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION, l.M.CHANNEL_NOTICE_GUILD_BANNER]);
+    v = n(946960),
+    y = n(49999);
+let b = new Set([r.M.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION, r.M.CHANNEL_NOTICE_GUILD_BANNER]);
 
 function O(e) {
     e.stopPropagation()
@@ -39,60 +39,60 @@ function R(e) {
     let n, {
             guild: _
         } = e,
-        [g, p] = a.useState(s.w.get(y.hV) ?? 0),
+        [g, p] = a.useState(s.w.get(v.hV) ?? 0),
         E = (t = _.id, n = (0, c.I)(t), a.useMemo(() => {
             let e = [];
-            return n && e.push(l.M.GAME_CLAIM_COACHMARK), e.length > 0 ? e : L
+            return n && e.push(r.M.GAME_CLAIM_COACHMARK), e.length > 0 ? e : L
         }, [n])),
-        [I, f] = (0, d.ww)(E, _.id, v.m.CHANNEL_NOTICES, !0),
+        [I, f] = (0, d.ww)(E, _.id, y.m.CHANNEL_NOTICES, !0),
         C = null != I,
-        N = (0, r.yK)(y.cJ, () => C ? [] : y.cA.filter(e => {
+        N = (0, l.yK)(v.cJ, () => C ? [] : v.cA.filter(e => {
             let {
                 dismissibleContentType: t,
                 store: n
             } = e;
             return !0 === n?.channelNoticePredicate(_, g) && !b.has(t)
         }).map(e => e.dismissibleContentType), [_, g, C]),
-        [x, R] = (0, d.kn)(N, v.m.CHANNEL_NOTICES),
+        [x, R] = (0, d.kn)(N, y.m.CHANNEL_NOTICES),
         P = I ?? x,
         D = null != I ? f : R,
         M = a.useCallback(() => {
             var e;
-            e = Date.now(), s.w.set(y.hV, e), p(e), D(v.i.UNKNOWN)
+            e = Date.now(), s.w.set(v.hV, e), p(e), D(y.i.UNKNOWN)
         }, [D]),
         j = (() => {
             switch (P) {
-                case l.M.CHANNEL_NOTICE_HUBLINK:
+                case r.M.CHANNEL_NOTICE_HUBLINK:
                     return (0, i.jsx)(m.A, {
                         guild: _,
                         markAsDismissed: M
                     });
-                case l.M.CHANNEL_NOTICE_INVITE:
+                case r.M.CHANNEL_NOTICE_INVITE:
                     return (0, i.jsx)(T.A, {
                         guild: _,
                         markAsDismissed: M
                     });
-                case l.M.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION:
+                case r.M.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION:
                     return (0, i.jsx)(h.A, {
                         guild: _,
                         markAsDismissed: M
                     });
-                case l.M.CHANNEL_NOTICE_QUICKSWITCHER:
+                case r.M.CHANNEL_NOTICE_QUICKSWITCHER:
                     return (0, i.jsx)(S.A, {
                         guild: _,
                         markAsDismissed: M
                     });
-                case l.M.CHANNEL_NOTICE_GUILD_BANNER:
+                case r.M.CHANNEL_NOTICE_GUILD_BANNER:
                     return (0, i.jsx)(A.A, {
                         guild: _,
                         markAsDismissed: M
                     });
-                case l.M.LINKED_ROLE_ADMIN_GUILD:
+                case r.M.LINKED_ROLE_ADMIN_GUILD:
                     return (0, i.jsx)(o.A, {
                         guild: _,
-                        markAsDismissed: () => D(v.i.UNKNOWN)
+                        markAsDismissed: () => D(y.i.UNKNOWN)
                     });
-                case l.M.GAME_CLAIM_COACHMARK:
+                case r.M.GAME_CLAIM_COACHMARK:
                     return (0, i.jsx)(u.A, {
                         guild: _,
                         markAsDismissed: D

@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(793574),
     m = n(688810),
     h = n(975460),
-    x = n(362490),
-    p = n(487431),
+    p = n(362490),
+    x = n(487431),
     g = n(587895),
     _ = n(429913),
     f = n(15285),
@@ -57,16 +57,16 @@ function I() {
         w = (0, _.h)(k),
         D = (0, h.g)(w),
         M = (0, r.yK)([g.A], () => w?.linkedGames?.map(e => g.A.getApplication(e.id)).filter(e => null != e) ?? []),
-        P = (0, x.RD)(w, {
-            allowedFlows: [x._M.RPC],
+        P = (0, p.RD)(w, {
+            allowedFlows: [p._M.RPC],
             debug: !0
         }),
-        U = (0, x.RD)(w, {
-            allowedFlows: [x._M.WEB],
+        U = (0, p.RD)(w, {
+            allowedFlows: [p._M.WEB],
             debug: !0
         }),
         L = (0, r.bG)([A.A], () => null != D && A.A.isConnected(D.id)),
-        B = (0, x.RD)(w, {
+        B = (0, p.RD)(w, {
             debug: !0
         }),
         {
@@ -119,34 +119,34 @@ function I() {
             children: [(0, a.jsx)(d.Heading, {
                 variant: "heading-lg/normal",
                 children: "Authorization"
-            }), (0, a.jsx)(p.VT, {
-                overallStatus: P.debug.isSubscribedToAuthorizeRequest ? p.nW.OVERALL_GOOD : L ? p.nW.WARN : p.nW.OVERALL_BAD,
+            }), (0, a.jsx)(x.VT, {
+                overallStatus: P.debug.isSubscribedToAuthorizeRequest ? x.nW.OVERALL_GOOD : L ? x.nW.WARN : x.nW.OVERALL_BAD,
                 name: y.intl.string(T.default.AGLx00),
                 steps: [{
-                    status: L ? p.nW.GOOD : p.nW.BAD,
+                    status: L ? x.nW.GOOD : x.nW.BAD,
                     text: y.intl.string(T.default.kxF9br),
                     description: L ? null : y.intl.string(T.default.PFxxJa),
                     learnMoreLink: L ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
                 }, {
-                    status: P.debug.isSubscribedToAuthorizeRequest ? p.nW.GOOD : L ? p.nW.WARN : p.nW.BAD,
+                    status: P.debug.isSubscribedToAuthorizeRequest ? x.nW.GOOD : L ? x.nW.WARN : x.nW.BAD,
                     text: y.intl.string(T.default.S94dzs),
                     description: P.debug.isSubscribedToAuthorizeRequest || !L ? null : y.intl.string(T.default.aTULMB),
                     learnMoreLink: P.debug.isSubscribedToAuthorizeRequest || !L ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
                 }],
-                isChosen: B.chosenFlow === x._M.RPC
-            }), (0, a.jsx)(p.VT, {
-                overallStatus: U.debug.hasConnectionEntrypointUrl ? p.nW.OVERALL_GOOD : p.nW.OVERALL_BAD,
+                isChosen: B.chosenFlow === p._M.RPC
+            }), (0, a.jsx)(x.VT, {
+                overallStatus: U.debug.hasConnectionEntrypointUrl ? x.nW.OVERALL_GOOD : x.nW.OVERALL_BAD,
                 name: y.intl.string(T.default.K3ObrU),
                 steps: [{
-                    status: U.debug.hasConnectionEntrypointUrl ? p.nW.GOOD : p.nW.BAD,
+                    status: U.debug.hasConnectionEntrypointUrl ? x.nW.GOOD : x.nW.BAD,
                     text: y.intl.string(T.default["8a7IrV"]),
                     description: U.debug.hasConnectionEntrypointUrl ? y.intl.formatToPlainString(T.default["9iLeL2"], {
                         url: U.connectionApp?.connectionEntrypointUrl
                     }) : null
                 }],
-                isChosen: B.chosenFlow === x._M.WEB
-            }), (0, a.jsx)(p.Sy, {
-                status: B.hasAlreadyLinked ? p.nW.OVERALL_GOOD : p.nW.OVERALL_BAD,
+                isChosen: B.chosenFlow === p._M.WEB
+            }), (0, a.jsx)(x.Sy, {
+                status: B.hasAlreadyLinked ? x.nW.OVERALL_GOOD : x.nW.OVERALL_BAD,
                 text: y.intl.string(y.t["Vu/zmQ"])
             }), 0 === B.debug.validFlows.length && (0, a.jsx)(d.Text, {
                 style: {

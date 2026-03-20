@@ -1,10 +1,10 @@
 /** chunk id: 83147 params = (module,exports,require) **/
 n.d(t, {
-    $: () => r
+    $: () => l
 });
 var i = n(636401),
     a = n(652215);
-let r = {
+let l = {
     handler(e) {
         throw new i.A({
             errorCode: a.Lw6.INVALID_COMMAND

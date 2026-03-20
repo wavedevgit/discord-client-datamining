@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(714510),
     m = n(890687),
     h = n(590202),
-    x = n(971649),
-    p = n(651892),
+    p = n(971649),
+    x = n(651892),
     g = n(901406),
     _ = n(92246),
     f = n(792620),
@@ -54,7 +54,7 @@ let I = e => {
         let {
             quest: t,
             sourceQuestContent: n
-        } = e, i = (0, x.go)(), s = (0, p.wr)(t);
+        } = e, i = (0, p.go)(), s = (0, x.wr)(t);
         return (0, a.jsx)(l.$nd, {
             size: "sm",
             fullWidth: !0,
@@ -71,7 +71,7 @@ let I = e => {
         let {
             quest: t,
             sourceQuestContent: n
-        } = e, i = (0, x.vU)()?.getId();
+        } = e, i = (0, p.vU)()?.getId();
         return (0, a.jsx)(l.$nd, {
             fullWidth: !0,
             onClick: () => (0, g.se)({
@@ -138,20 +138,20 @@ let I = e => {
             questContent: u = c.uF.QUEST_BAR_V2,
             sourceQuestContent: m,
             ...h
-        } = e, x = (0, j.ix)({
+        } = e, p = (0, j.ix)({
             quest: t,
             questContent: u,
             sourceQuestContent: m
-        }), p = i.useCallback(e => {
+        }), x = i.useCallback(e => {
             r?.(e), (0, _.ks)(t.config) && t.userStatus?.claimedAt != null ? (0, d.Cz)({
                 tab: T.G2.ORBS,
                 analyticsLocations: [],
                 analyticsSource: o.A.QUEST_HOME_PAGE
-            }) : x()
-        }, [r, t.config, t.userStatus?.claimedAt, x]);
+            }) : p()
+        }, [r, t.config, t.userStatus?.claimedAt, p]);
         return (0, a.jsx)(l.$nd, {
             fullWidth: !0,
-            onClick: p,
+            onClick: x,
             text: n ?? S.intl.string(S.t.cfY4PE),
             ...h,
             size: h.size === s.$n.Sizes.MEDIUM ? "md" : "sm"
@@ -170,11 +170,11 @@ let I = e => {
             onGameSheetOpen: u,
             onGameSheetClose: m,
             taskDetails: h
-        } = i.useContext(y.T), x = d.userStatus?.completedAt != null, p = (0, f.vv)(d), g = r !== c.X0.SELECT && !l && !s, _ = null;
-        return x ? _ = (0, a.jsx)(w, {
+        } = i.useContext(y.T), p = d.userStatus?.completedAt != null, x = (0, f.vv)(d), g = r !== c.X0.SELECT && !l && !s, _ = null;
+        return p ? _ = (0, a.jsx)(w, {
             quest: d,
             sourceQuestContent: t
-        }) : p ? _ = (0, a.jsx)(N, {
+        }) : x ? _ = (0, a.jsx)(N, {
             quest: d,
             sourceQuestContent: t,
             taskDetails: h

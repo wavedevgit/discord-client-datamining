@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(681154),
     a = n(954571),
-    r = n(883344),
-    l = n(596720),
+    l = n(883344),
+    r = n(596720),
     s = n(652215);
 let o = e => {
         switch (e.data.kind) {
@@ -25,8 +25,6 @@ let o = e => {
                 return "recommended_guilds";
             case "forumThread":
                 return "forum_thread";
-            case "generatedCandidate":
-                return "generated_candidate";
             case "icymiHeader":
                 return "icymi_header";
             default:
@@ -35,30 +33,28 @@ let o = e => {
     },
     d = e => {
         switch (e.type) {
-            case l.Mm.MESSAGE:
+            case r.Mm.MESSAGE:
                 if (e.data.channel_type === s.rbe.GUILD_ANNOUNCEMENT) return "announcement";
                 return "message";
-            case l.Mm.ACTIVITY:
+            case r.Mm.ACTIVITY:
                 return "hotwheels_gaming_activity";
-            case l.Mm.CUSTOM_STATUS:
+            case r.Mm.CUSTOM_STATUS:
                 return "hotwheels_custom_status";
-            case l.Mm.GUILD_EVENT:
+            case r.Mm.GUILD_EVENT:
                 return "guild_event";
-            case l.Mm.RECOMMENDED_GUILDS:
-                return "recommended_guilds";
-            case l.Mm.GENERATED_CANDIDATE:
-                return "generated_candidate"
+            case r.Mm.RECOMMENDED_GUILDS:
+                return "recommended_guilds"
         }
     },
     c = {
         trackItemInteraction(e) {
             a.default.track(s.HAw.FEED_ITEM_INTERACTED, {
-                load_id: r.A.getLoadId(),
+                load_id: l.A.getLoadId(),
                 feed_item_type: e.type,
                 feed_item_id: e.id,
                 home_session_id: "gravity",
                 action_type: e.actionType,
-                feed_item_index: r.A.getIndexInHydratedFeed(e.id),
+                feed_item_index: l.A.getIndexInHydratedFeed(e.id),
                 icymi_session_id: e.icymiSessionId,
                 impression_id: e.impressionId,
                 ux_variation: e.uxVariation,
@@ -67,7 +63,7 @@ let o = e => {
         },
         trackItemShortImpression(e, t, n) {
             a.default.track(s.HAw.FEED_ITEM_SEEN_BATCH, {
-                load_id: r.A.getLoadId(),
+                load_id: l.A.getLoadId(),
                 home_session_id: "gravity",
                 feed_item_ids: e.map(e => e.item.id),
                 feed_item_types: e.map(e => o(e.item)),
@@ -82,7 +78,7 @@ let o = e => {
         },
         trackItemLongImpression(e, t, n) {
             a.default.track(s.HAw.FEED_ITEM_SEEN_LONG, {
-                load_id: r.A.getLoadId(),
+                load_id: l.A.getLoadId(),
                 home_session_id: "gravity",
                 feed_item_ids: e.map(e => e.item.id),
                 feed_item_types: e.map(e => o(e.item)),
@@ -99,11 +95,11 @@ let o = e => {
             let t = [],
                 n = [],
                 i = [],
-                r = [];
+                l = [];
             e.unreadFeedItems.forEach(e => {
                 t.push(e.id), i.push(d(e))
             }), e.readFeedItems.forEach(e => {
-                n.push(e.id), r.push(d(e))
+                n.push(e.id), l.push(d(e))
             }), a.default.track(s.HAw.FEED_LOADED, {
                 ...e.newTrackingProps,
                 home_session_id: e.homeSessionId,
@@ -111,19 +107,19 @@ let o = e => {
                 unread_feed_item_ids: t,
                 read_feed_item_ids: n,
                 unread_feed_item_types: i,
-                read_feed_item_types: r
+                read_feed_item_types: l
             })
         },
         trackFeedShown(e) {
             a.default.track(s.HAw.FEED_SHOWN, {
-                load_id: r.A.getLoadId(),
+                load_id: l.A.getLoadId(),
                 home_session_id: e.homeSessionId,
                 variant: e.variant
             })
         },
         trackFeedFirstScrollStarted() {
             a.default.track(s.HAw.HOME_FIRST_SCROLL_STARTED, {
-                load_id: r.A.getLoadId(),
+                load_id: l.A.getLoadId(),
                 home_session_id: "gravity"
             })
         },
@@ -132,26 +128,9 @@ let o = e => {
         },
         trackFeedFeedbackSubmitted(e) {
             a.default.track(s.HAw.HOME_FEEDBACK_SUBMITTED, {
-                load_id: r.A.getLoadId(),
+                load_id: l.A.getLoadId(),
                 home_session_id: "gravity",
                 ...e
-            })
-        },
-        trackGeneratedCandidateFeedback(e) {
-            a.default.track(s.HAw.FEED_ITEM_CONTENT_GEN_FEEDBACK, {
-                feedback_type: e.isPositive ? "thumbs_up" : "thumbs_down",
-                content_id: parseInt(e.item.content_id),
-                channel_id: parseInt(e.item.channel_id),
-                content_type: e.item.type.toString(),
-                guild_id: e.item.guild_id,
-                home_session_id: "gravity",
-                load_id: r.A.getLoadId(),
-                version: 1,
-                primary_text_length: e.item.primary_text.length ?? 0,
-                secondary_text_length: e.item.secondary_text.length ?? 0,
-                message_count: e.item.message_ids.length ?? 0,
-                user_count: e.item.user_ids.length ?? 0,
-                generated_item_index: e.generatedItemIndex
             })
         },
         trackFeedOnboardingScreenSkipped(e) {
@@ -173,28 +152,28 @@ let o = e => {
         },
         trackFeedEmptyLoadingSeen() {
             a.default.track(s.HAw.ICYMI_FEED_EMPTY_LOADING_SEEN, {
-                load_id: r.A.getLoadId(),
-                version: r.A.getVersion()
+                load_id: l.A.getLoadId(),
+                version: l.A.getVersion()
             })
         },
         trackFeedEmptyLoadingComplete(e) {
             a.default.track(s.HAw.ICYMI_FEED_EMPTY_LOADING_COMPLETE, {
-                load_id: r.A.getLoadId(),
+                load_id: l.A.getLoadId(),
                 dwell_time_ms: e.dwellTimeMs,
-                version: r.A.getVersion()
+                version: l.A.getVersion()
             })
         },
         trackFeedEmptyLoadingAbandoned(e) {
             a.default.track(s.HAw.ICYMI_FEED_EMPTY_LOADING_ABANDONED, {
-                load_id: r.A.getLoadId(),
+                load_id: l.A.getLoadId(),
                 dwell_time_ms: e.dwellTimeMs,
-                version: r.A.getVersion()
+                version: l.A.getVersion()
             })
         },
         trackFeedSessionStarted(e) {
             a.default.track(s.HAw.FEED_SESSION_STARTED, {
-                load_id: r.A.getLoadId(),
-                version: r.A.getVersion(),
+                load_id: l.A.getLoadId(),
+                version: l.A.getVersion(),
                 session_start_time_ms: e.sessionStartTimeMs,
                 icymi_session_id: e.icymiSessionId,
                 previous_icymi_session_count: e.previousIcymiSessionCount,
@@ -203,8 +182,8 @@ let o = e => {
         },
         trackFeedSessionCompleted(e) {
             a.default.track(s.HAw.FEED_SESSION_COMPLETED, {
-                load_id: r.A.getLoadId(),
-                version: r.A.getVersion(),
+                load_id: l.A.getLoadId(),
+                version: l.A.getVersion(),
                 session_duration_ms: e.sessionDurationMs,
                 session_start_time_ms: e.sessionStartTimeMs,
                 session_end_time_ms: e.sessionEndTimeMs,
@@ -225,8 +204,8 @@ let o = e => {
         },
         trackFeedItemDwell1s(e) {
             a.default.track(s.HAw.FEED_ITEM_1S_DWELLED, {
-                load_id: r.A.getLoadId(),
-                version: r.A.getVersion(),
+                load_id: l.A.getLoadId(),
+                version: l.A.getVersion(),
                 impression_id: e.impressionId,
                 item_id: e.itemId,
                 item_type: e.itemType,
@@ -248,8 +227,8 @@ let o = e => {
         },
         trackFeedItemDwelled(e) {
             a.default.track(s.HAw.FEED_ITEM_DWELLED, {
-                load_id: r.A.getLoadId(),
-                version: r.A.getVersion(),
+                load_id: l.A.getLoadId(),
+                version: l.A.getVersion(),
                 impression_id: e.impressionId,
                 dwell_time_ms: e.dwellTimeMs,
                 item_id: e.itemId,
@@ -272,10 +251,10 @@ let o = e => {
         },
         trackFeedItemActioned(e) {
             a.default.track(s.HAw.FEED_ITEM_ACTIONED, {
-                load_id: r.A.getLoadId(),
+                load_id: l.A.getLoadId(),
                 icymi_session_id: e.icymiSessionId,
                 ux_variation: e.uxVariation,
-                version: r.A.getVersion(),
+                version: l.A.getVersion(),
                 session_action_index: e.sessionActionIndex,
                 item_id: e.itemId,
                 item_type: e.itemType,
@@ -288,10 +267,10 @@ let o = e => {
         },
         trackFeedFilterActioned(e) {
             a.default.track(s.HAw.FEED_FILTER_ACTIONED, {
-                load_id: r.A.getLoadId(),
+                load_id: l.A.getLoadId(),
                 icymi_session_id: e.icymiSessionId,
                 ux_variation: e.uxVariation,
-                version: r.A.getVersion(),
+                version: l.A.getVersion(),
                 session_action_index: e.sessionActionIndex,
                 filter_setting_context: e.filterParameters.filterSettingContext,
                 filter_target_type: e.filterParameters.filterTargetType,
@@ -308,10 +287,10 @@ let o = e => {
         },
         trackFeedPageActioned(e) {
             a.default.track(s.HAw.FEED_PAGE_ACTIONED, {
-                load_id: r.A.getLoadId(),
+                load_id: l.A.getLoadId(),
                 icymi_session_id: e.icymiSessionId,
                 ux_variation: e.uxVariation,
-                version: r.A.getVersion(),
+                version: l.A.getVersion(),
                 session_action_index: e.sessionActionIndex,
                 action_gesture_type: e.actionParameters.actionGestureType,
                 action_target_element: e.actionParameters.actionTargetElement,

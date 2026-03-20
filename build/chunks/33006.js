@@ -3,9 +3,9 @@ let i, a;
 n.d(t, {
     A: () => R
 }), n(323874), n(14289), n(35956), n(321073);
-var r = n(143236),
-    l = n(735438),
-    s = n.n(l),
+var l = n(143236),
+    r = n(735438),
+    s = n.n(r),
     o = n(73153),
     d = n(626584),
     c = n(111162),
@@ -47,10 +47,10 @@ function x() {
     a.listen(E.xEi + e % E.sJq, "127.0.0.1", t)
 }
 
-function y(e, t, n) {
+function v(e, t, n) {
     let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 200,
         a = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {},
-        r = null != S(e.headers).origin ? {
+        l = null != S(e.headers).origin ? {
             "Access-Control-Allow-Origin": S(e.headers).origin,
             "Access-Control-Allow-Credentials": "true",
             "Access-Control-Allow-Methods": "POST, GET, PUT, PATCH, DELETE",
@@ -58,13 +58,13 @@ function y(e, t, n) {
         } : {};
     n = n ? JSON.stringify(n) : "", i = 200 === i && 0 === n.length ? 204 : i, t.setHeader("Content-Length", I.byteLength(n).toString()), t.setHeader("Content-Type", "application/json"), t.writeHead(i, {
         ...a,
-        ...r
+        ...l
     }), t.end(n)
 }
 
-function v(e, t, n, i) {
+function y(e, t, n, i) {
     let a = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : 0;
-    y(e, t, {
+    v(e, t, {
         code: a,
         message: i
     }, n)
@@ -105,7 +105,7 @@ class O extends m.A {
         this._closeCallback(t, e)
     }
 }
-class L extends r.EventEmitter {
+class L extends l.EventEmitter {
     constructor() {
         super();
         let e = 0;
@@ -120,24 +120,24 @@ class L extends r.EventEmitter {
     }
     handleRequest(e, t) {
         let [n, i] = S(e.url).split("?"), a = S(e.method);
-        if ("/rpc" === n && "OPTIONS" === a) return void y(e, t, {
+        if ("/rpc" === n && "OPTIONS" === a) return void v(e, t, {
             body: ""
         });
-        let r = "POST" === a;
-        if ("/rpc" === n && ("GET" === a || r)) {
+        let l = "POST" === a;
+        if ("/rpc" === n && ("GET" === a || l)) {
             let n = new URLSearchParams(i),
-                a = r ? S(e.headers)["content-type"].split("/")[1] : "json",
-                l = function() {
+                a = l ? S(e.headers)["content-type"].split("/")[1] : "json",
+                r = function() {
                     let {
                         protocol: e,
                         host: i
                     } = u.A.toURLSafe(n.get("callback") ?? "") ?? {};
                     e === location.protocol && i === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", C), t.writeHead(301), t.end()
                 },
-                s = new O(!r ? l : y.bind(null, e, t), !r ? l : v.bind(null, e, t, 400), Number(n.get("v")), a);
-            r ? (0, g.j7)(s, S(e.headers).origin, n.get("client_id")).then(() => {
+                s = new O(!l ? r : v.bind(null, e, t), !l ? r : y.bind(null, e, t, 400), Number(n.get("v")), a);
+            l ? (0, g.j7)(s, S(e.headers).origin, n.get("client_id")).then(() => {
                 let n = "";
-                e.on("data", e => n += e), e.on("error", () => v(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(s, n))
+                e.on("data", e => n += e), e.on("error", () => y(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(s, n))
             }).catch(e => {
                 let {
                     code: t,
@@ -147,7 +147,7 @@ class L extends r.EventEmitter {
             }) : (s.authorization.scopes = [p.kw], this.handleMessage(s, decodeURIComponent(n.get("payload") ?? "")));
             return
         }
-        v(e, t, 404, "Not Found")
+        y(e, t, 404, "Not Found")
     }
     handleConnection(e) {
         let t, n = new URLSearchParams(S(e.upgradeReq).url.split("?")[1]),

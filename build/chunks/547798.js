@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(73153),
     m = n(787880),
     h = n(142120),
-    x = n(69555),
-    p = n(237984),
+    p = n(69555),
+    x = n(237984),
     g = n(43203),
     _ = n(349435),
     f = n(674272),
@@ -96,7 +96,7 @@ function k() {
                 variant: "primary",
                 size: "sm",
                 text: "Reset Hang Status State",
-                onClick: x.B7
+                onClick: p.B7
             })
         }), (0, a.jsx)("div", {
             className: s()(E.N, N.QB),
@@ -137,7 +137,7 @@ function k() {
                 variant: "primary",
                 size: "sm",
                 text: "Open Overlay",
-                onClick: () => (0, p.o)()
+                onClick: () => (0, x.o)()
             }), (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",

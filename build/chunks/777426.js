@@ -1,11 +1,11 @@
 /** chunk id: 777426 params = (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => v
 });
 var i = n(627968),
     a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    l = n(503698),
+    r = n.n(l),
     s = n(110259),
     o = n(311907),
     d = n(3203),
@@ -27,12 +27,12 @@ n(646363);
 var S = n(985018),
     x = n(187449);
 
-function y(e) {
+function v(e) {
     let {
         ref: t,
-        isFocused: r,
-        isActive: y,
-        status: v,
+        isFocused: l,
+        isActive: v,
+        status: y,
         activities: b,
         applicationStream: O,
         isGameRelationship: L,
@@ -82,18 +82,18 @@ function y(e) {
     };
     return (0, i.jsx)(_.A, {
         ref: t,
-        isFocused: r,
-        isActive: y,
+        isFocused: l,
+        isActive: v,
         user: j,
         onOtherHover: D,
         onClick: M,
         height: 72,
         children: e => (0, i.jsxs)("div", {
-            className: l()(x.a4, x.Z$),
+            className: r()(x.a4, x.Z$),
             children: [(0, i.jsx)(g.A, {
                 className: x.Cv,
                 user: j,
-                status: v,
+                status: y,
                 isMobile: R,
                 isVR: P,
                 subText: (0, i.jsxs)(i.Fragment, {
@@ -101,7 +101,7 @@ function y(e) {
                         hovered: e,
                         activities: b,
                         applicationStream: O,
-                        status: v,
+                        status: y,
                         user: j,
                         userIgnored: E.A.isIgnored(j.id)
                     }), (0, i.jsxs)("div", {

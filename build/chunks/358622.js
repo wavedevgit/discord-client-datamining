@@ -1,6 +1,6 @@
 /** chunk id: 358622 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => x
 });
 var a = n(627968);
 n(64700);
@@ -34,7 +34,7 @@ let m = e => {
             return `${t} ${r.M[n]}`
         }
     }],
-    x = [{
+    p = [{
         key: "candidates",
         render(e) {
             let {
@@ -44,12 +44,12 @@ let m = e => {
         }
     }];
 
-function p() {
+function x() {
     let e = (0, s.bG)([o.A], () => o.A.getDCFEvents()),
         t = (0, d.Ay)(e => e.candidates),
         n = (0, d.Ay)(e => e.lastWinnerTime),
         i = 0 !== n ? l()(n).fromNow() : "n/a",
-        p = (0, d.Ay)(e => 0 === e.lastWinnerTime ? null : e.recentlyShown[0]),
+        x = (0, d.Ay)(e => 0 === e.lastWinnerTime ? null : e.recentlyShown[0]),
         g = e.map(e => {
             let {
                 eventType: t,
@@ -72,12 +72,12 @@ function p() {
             children: ["Last winner time: ", i]
         }), (0, a.jsx)("br", {}), (0, a.jsxs)("div", {
             className: u.pq,
-            children: ["Last winner: ", null != p ? r.M[p] : "None"]
+            children: ["Last winner: ", null != x ? r.M[x] : "None"]
         }), (0, a.jsx)("br", {}), (0, a.jsx)("div", {
             className: u.uI,
             children: (0, a.jsx)(c.A, {
                 className: u.Th,
-                columns: x,
+                columns: p,
                 data: _
             })
         }), (0, a.jsx)("br", {}), (0, a.jsx)(c.A, {

@@ -2,12 +2,12 @@
 n.d(t, {
     Ay: () => L,
     jO: () => O,
-    nO: () => v
+    nO: () => y
 });
 var i = n(627968),
     a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    l = n(503698),
+    r = n.n(l),
     s = n(311907),
     o = n(230109),
     d = n(397927),
@@ -27,21 +27,21 @@ var i = n(627968),
     N = n(211917),
     S = n(937495),
     x = n(517061),
-    y = n(970890);
+    v = n(970890);
 
-function v(e) {
+function y(e) {
     let {
         guild: t,
-        onClick: r,
+        onClick: l,
         onView: s
-    } = e, [_, m] = a.useState(!1), [I, v] = a.useState(!1), [b, O] = a.useState(!1), L = a.useRef(null), R = a.useCallback(async () => {
-        v(!0);
+    } = e, [_, m] = a.useState(!1), [I, y] = a.useState(!1), [b, O] = a.useState(!1), L = a.useRef(null), R = a.useCallback(async () => {
+        y(!0);
         try {
-            await r(t.id)
+            await l(t.id)
         } finally {
-            v(!1)
+            y(!1)
         }
-    }, [t.id, r]), P = a.useCallback(e => {
+    }, [t.id, l]), P = a.useCallback(e => {
         e && !_ && (m(!0), s?.(t.id))
     }, [t.id, _, s]), D = a.useCallback(e => {
         (0, c.L3)(e, async () => {
@@ -60,7 +60,7 @@ function v(e) {
             size: 300 * (0, p.mZ)()
         });
         if (null != e) return e;
-        if (j) return y;
+        if (j) return v;
         switch (M) {
             case C.NJ8.DARK:
                 return S;
@@ -95,7 +95,7 @@ function v(e) {
                 children: [(0, i.jsxs)("div", {
                     className: N.wx,
                     children: [(0, i.jsx)("div", {
-                        className: l()(N.vK, {
+                        className: r()(N.vK, {
                             [N.Kc]: b
                         }),
                         children: (0, i.jsx)("img", {
@@ -185,9 +185,9 @@ function b(e) {
         guildId: t,
         onClick: n,
         onView: a
-    } = e, r = (0, s.bG)([I.A], () => I.A.getGuild(t));
-    return null == r ? null : (0, i.jsx)(v, {
-        guild: r,
+    } = e, l = (0, s.bG)([I.A], () => I.A.getGuild(t));
+    return null == l ? null : (0, i.jsx)(y, {
+        guild: l,
         onClick: n,
         onView: a
     })
@@ -197,8 +197,8 @@ function O(e) {
     let {
         guildId: t,
         index: n,
-        onClick: r,
-        onView: l
+        onClick: l,
+        onView: r
     } = e, s = a.useRef(null == t), o = a.useCallback((e, t, n, a) => null == t.guildId ? (0, i.jsx)(m.A, {
         state: n,
         cleanUp: a,
@@ -211,10 +211,10 @@ function O(e) {
         animate: s.current,
         children: (0, i.jsx)(b, {
             guildId: t.guildId,
-            onClick: r,
-            onView: l
+            onClick: l,
+            onView: r
         })
-    }, e), [r, l]), c = a.useCallback(e => e.guildId ?? `${e.index}`, []), u = a.useMemo(() => [{
+    }, e), [l, r]), c = a.useCallback(e => e.guildId ?? `${e.index}`, []), u = a.useMemo(() => [{
         guildId: t,
         index: n
     }], [t, n]);

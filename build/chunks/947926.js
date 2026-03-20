@@ -14,8 +14,8 @@ var a = n(627968),
     u = n(186111),
     m = n(859703),
     h = n(341915),
-    x = n(677402),
-    p = n(943849),
+    p = n(677402),
+    x = n(943849),
     g = n(890687),
     _ = n(792620),
     f = n(241124),
@@ -59,10 +59,10 @@ function P() {
 function U(e) {
     let {
         quest: t
-    } = e, n = (0, p.L)({
+    } = e, n = (0, x.L)({
         quest: t,
         location: w.rE.QUESTS_BAR
-    }), l = (0, x.H)({
+    }), l = (0, p.H)({
         location: w.rE.QUESTS_BAR
     }), c = (0, o.bG)([m.A], () => null != m.A.questEnrollmentBlockedUntil), {
         isQuestBarVisible: U,
@@ -120,8 +120,8 @@ function U(e) {
     });
     let em = i.useRef(null),
         eh = i.useRef(null),
-        ex = i.useRef(null),
-        ep = (0, g.fc)(t),
+        ep = i.useRef(null),
+        ex = (0, g.fc)(t),
         eg = (0, g.UH)(V);
     if (i.useEffect(() => {
             F && (0, j.l9)()
@@ -170,7 +170,7 @@ function U(e) {
                             expansionSpring: ee,
                             children: (0, a.jsxs)(E.C, {
                                 quest: t,
-                                taskDetails: ep,
+                                taskDetails: ex,
                                 isExpanded: Q,
                                 isExpansionAnimationComplete: X,
                                 onCtxMenuClose: ei,
@@ -182,16 +182,16 @@ function U(e) {
                                 children: [(0, a.jsx)(y.A, {
                                     ref: eh,
                                     className: D.Qs,
-                                    overlayRef: ex
+                                    overlayRef: ep
                                 }, K ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, a.jsx)(T.A, {
                                     className: D.Qs,
-                                    overlayRef: ex,
+                                    overlayRef: ep,
                                     ref: em,
                                     children: (0, a.jsxs)(a.Fragment, {
                                         children: [(0, a.jsx)(I.A, {}), !W && (0, a.jsx)(A.A, {})]
                                     })
                                 }), (0, a.jsx)("div", {
-                                    ref: ex,
+                                    ref: ep,
                                     className: D.Lw
                                 })]
                             })

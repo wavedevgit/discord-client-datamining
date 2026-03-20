@@ -1,6 +1,6 @@
 /** chunk id: 495242 params = (module,exports,require) **/
 n.d(t, {
-    Z: () => x
+    Z: () => p
 });
 var a = n(627968);
 n(64700);
@@ -51,7 +51,7 @@ function h(e) {
     }) : null
 }
 
-function x(e) {
+function p(e) {
     return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(i.Text, {
             color: "text-muted",

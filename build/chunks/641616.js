@@ -14,8 +14,8 @@ var a = n(627968),
     m = n(540999),
     h = n(865116);
 n(283030);
-var x = n(173628),
-    p = n(378230),
+var p = n(173628),
+    x = n(378230),
     g = n(374058),
     _ = n(974857),
     f = n(358622),
@@ -130,7 +130,7 @@ function ec() {
             id: "age_verification",
             name: "Age Verification",
             group: er.fu.DEVELOPMENT,
-            render: () => (0, a.jsx)(p.A, {})
+            render: () => (0, a.jsx)(x.A, {})
         }), e.push({
             id: "feedback",
             name: "Feedback",
@@ -249,7 +249,7 @@ function ec() {
             name: "Affinity",
             group: er.fu.USERS,
             tags: ["friends"],
-            render: () => (0, a.jsx)(x.A, {})
+            render: () => (0, a.jsx)(p.A, {})
         }), m.A.isDeveloper && (e.push({
             id: "content_inventory",
             name: "Content Inventory",

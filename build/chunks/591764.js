@@ -49,7 +49,7 @@ function m() {
                 })
             }
         }, []),
-        x = i.useMemo(() => e.map(e => {
+        p = i.useMemo(() => e.map(e => {
             let t = o.default.getUser(e),
                 n = null != t ? d.Ay.getName(t) : "Unknown";
             return (0, a.jsx)("div", {
@@ -85,7 +85,7 @@ function m() {
                         children: "User IDs missing from Worker:"
                     }), (0, a.jsx)("div", {
                         className: c.uk,
-                        children: x
+                        children: p
                     })]
                 }), n && 0 === e.length && (0, a.jsx)(l.Text, {
                     variant: "text-md/normal",

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    r = n(397927),
-    l = n(517905),
+    l = n(397927),
+    r = n(517905),
     s = n(903915);
 let o = function(e) {
     let {
@@ -14,18 +14,18 @@ let o = function(e) {
     } = e, o = a.useRef(null), d = a.useCallback((e, t) => {
         e.stopPropagation(), t.onClick(e)
     }, []);
-    return (0, i.jsx)(l.A, {
+    return (0, i.jsx)(r.A, {
         guildId: n,
         position: "left",
         targetElementRef: o,
-        children: e => (0, i.jsx)(r.DUT, {
+        children: e => (0, i.jsx)(l.DUT, {
             ...e,
             innerRef: o,
             className: t,
             onClick: t => d(t, e),
             children: (0, i.jsx)("div", {
                 className: s.K,
-                children: (0, i.jsx)(r._Xm, {
+                children: (0, i.jsx)(l._Xm, {
                     size: "xs",
                     color: "currentColor"
                 })

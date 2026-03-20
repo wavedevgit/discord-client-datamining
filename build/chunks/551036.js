@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    r = n(607399),
-    l = n(311907),
+    l = n(607399),
+    r = n(311907),
     s = n(397927),
     o = n(384904),
     d = n(9113),
@@ -25,50 +25,50 @@ var i = n(627968),
     N = n(167010),
     S = n(139613),
     x = n(746080),
-    y = n(985018),
-    v = n(879544);
+    v = n(985018),
+    y = n(879544);
 
 function b(e) {
     let {
         guildId: t
-    } = e, n = (0, l.bG)([g.A], () => g.A.getGuild(t), [t]), b = (0, l.bG)([_.A], () => _.A.isConnected()), O = (0, A.A)(t), L = (0, I.A)(t), R = (0, l.bG)([p.A], () => p.A.isSubscriptionFetching), P = (0, E.X)(), {
+    } = e, n = (0, r.bG)([g.A], () => g.A.getGuild(t), [t]), b = (0, r.bG)([_.A], () => _.A.isConnected()), O = (0, A.A)(t), L = (0, I.A)(t), R = (0, r.bG)([p.A], () => p.A.isSubscriptionFetching), P = (0, E.X)(), {
         shouldHideGuildPurchaseEntryPoints: D,
         restrictionsLoading: M
     } = (0, h.MH)(t), j = null == n || !P || R || M;
     (0, c.HU)({
-        subsection: y.intl.string(y.t["KzCF/6"]),
+        subsection: v.intl.string(v.t["KzCF/6"]),
         location: n?.name
-    }), (0, d.A)(r.Fr ? "role-subscriptions-overview" : void 0);
+    }), (0, d.A)(l.Fr ? "role-subscriptions-overview" : void 0);
     let w = b && (null == n || !(O || L) || D && !M);
     if (a.useEffect(() => {
             o.hP()
         }, []), a.useEffect(() => {
-            w && !r.Fr && (0, u.B)(t, x.VV.ROLE_SUBSCRIPTIONS)
-        }, [t, w]), r.Fr && w) {
+            w && !l.Fr && (0, u.B)(t, x.VV.ROLE_SUBSCRIPTIONS)
+        }, [t, w]), l.Fr && w) {
         let e = null == n ? T.b.NOT_GUILD_MEMBER : T.b.GUILD_NOT_ELIGIBLE;
         return (0, i.jsx)(T.k, {
             errorType: e
         })
     }
     return (0, i.jsxs)("div", {
-        className: v.kL,
+        className: y.kL,
         children: [(0, i.jsxs)(m.A, {
             toolbar: (0, i.jsx)(a.Fragment, {}),
-            className: v.jr,
+            className: y.jr,
             children: [(0, i.jsx)(m.A.Icon, {
                 icon: (0, s.kHD)(f.A),
                 "aria-hidden": !0
             }), (0, i.jsx)(m.A.Title, {
-                children: y.intl.string(y.t["KzCF/6"])
+                children: v.intl.string(v.t["KzCF/6"])
             })]
         }), (0, i.jsx)("div", {
             id: S.K
         }), (0, i.jsx)("div", {
-            className: v.Qs,
+            className: y.Qs,
             children: O ? (0, i.jsx)(s.d_W, {
-                className: v.XG,
+                className: y.XG,
                 children: (0, i.jsx)("div", {
-                    className: v.gT,
+                    className: y.gT,
                     children: j ? (0, i.jsx)(s.y$y, {}) : (0, i.jsx)(C.A, {
                         guild: n
                     })

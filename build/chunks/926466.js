@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    l = n(503698),
+    r = n.n(l),
     s = n(735438),
     o = n(421380),
     d = n(397927),
@@ -19,7 +19,7 @@ let m = (0, s.debounce)(c.Ay.trackWithMetadata, 500),
         let {
             guild: t,
             title: n,
-            message: r,
+            message: l,
             image: s,
             type: g,
             imageStyles: p,
@@ -31,8 +31,8 @@ let m = (0, s.debounce)(c.Ay.trackWithMetadata, 500),
             onClick: N,
             cta: S,
             ctaColor: x,
-            centerText: y,
-            className: v
+            centerText: v,
+            className: y
         } = e;
         a.useEffect(() => {
             m(A.HAw.CHANNEL_NOTICE_VIEWED, {
@@ -60,25 +60,25 @@ let m = (0, s.debounce)(c.Ay.trackWithMetadata, 500),
         "function" == typeof n ? O = n() : null != n && (O = (0, i.jsx)(d.Text, {
             variant: "text-md/medium",
             color: "text-strong",
-            className: l()(_.DD, {
+            className: r()(_.DD, {
                 [_.vG]: null == s
             }, {
-                [_.gX]: y
+                [_.gX]: v
             }),
             children: n
         }));
         let L = null;
-        "function" == typeof r ? L = r() : null != r && (L = (0, i.jsx)(d.Text, {
-            className: l()({
-                [_.gX]: y
+        "function" == typeof l ? L = l() : null != l && (L = (0, i.jsx)(d.Text, {
+            className: r()({
+                [_.gX]: v
             }),
             variant: "text-sm/normal",
             color: "text-muted",
-            children: r
+            children: l
         }));
         let R = null != E ? `${E}px` : "16px";
         return (0, i.jsxs)("div", {
-            className: l()(_.kL, v),
+            className: r()(_.kL, y),
             children: [!0 === C ? null : (0, i.jsx)(d.DUT, {
                 onClick: () => {
                     c.Ay.trackWithMetadata(A.HAw.CHANNEL_NOTICE_CLOSED, {

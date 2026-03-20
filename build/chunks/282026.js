@@ -1,6 +1,6 @@
 /** chunk id: 282026 params = (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => l
 });
 var i = n(839214);
 let a = Object.freeze({
@@ -12,4 +12,4 @@ let a = Object.freeze({
         resultsInitialCategoryId: null,
         scrollPosition: null
     }),
-    r = (0, i.D)(() => a)
+    l = (0, i.D)(() => a)

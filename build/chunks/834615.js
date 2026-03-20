@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    l = n(503698),
+    r = n.n(l),
     s = n(311907),
     o = n(397927),
     d = n(409626),
@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(270045),
     S = n(201805),
     x = n(212614),
-    y = n(79545),
-    v = n(847641),
+    v = n(79545),
+    y = n(847641),
     b = n(311243),
     O = n(545986),
     L = n(654487),
@@ -37,13 +37,13 @@ var i = n(627968),
 function M(e) {
     let {
         quest: t
-    } = e, n = (0, g.S5)(t.config.expiresAt), a = (0, g.S5)(t.config.rewardsConfig.rewardsExpireAt), r = (0, s.bG)([c.A], () => c.A.getState().theme), l = (0, o.Mwr)(r) ? R.NJ8.DARK : R.NJ8.LIGHT, d = t.userStatus?.completedAt != null;
+    } = e, n = (0, g.S5)(t.config.expiresAt), a = (0, g.S5)(t.config.rewardsConfig.rewardsExpireAt), l = (0, s.bG)([c.A], () => c.A.getState().theme), r = (0, o.Mwr)(l) ? R.NJ8.DARK : R.NJ8.LIGHT, d = t.userStatus?.completedAt != null;
     return (0, i.jsxs)("div", {
         className: D.R_,
         children: [(0, i.jsx)("img", {
             className: D.tb,
             alt: "",
-            src: (0, p.tW)(t, p.fY.GAME_TILE, l).url
+            src: (0, p.tW)(t, p.fY.GAME_TILE, r).url
         }), (0, i.jsxs)("div", {
             className: D.UD,
             children: [(0, i.jsx)(o.Heading, {
@@ -69,11 +69,11 @@ function j(e) {
     let {
         nodeRef: t,
         quest: n
-    } = e, r = (0, E.Ut)(), c = (0, s.bG)([A.A], () => A.A.isEnrolling(n.id), [n]), [p, T] = a.useState(!1), R = a.useCallback(() => T(!0), []), j = a.useCallback(() => T(!1), []), {
+    } = e, l = (0, E.Ut)(), c = (0, s.bG)([A.A], () => A.A.isEnrolling(n.id), [n]), [p, T] = a.useState(!1), R = a.useCallback(() => T(!0), []), j = a.useCallback(() => T(!1), []), {
         launchInGameActivity: w
     } = (0, g.zW)(n), U = _.t.useConfig({
         location: L.rE.ACTIVITY_PANEL
-    }), G = (0, y.Pd)(n), k = a.useCallback(e => {
+    }), G = (0, v.Pd)(n), k = a.useCallback(e => {
         e.stopPropagation()
     }, []), V = a.useCallback(() => {
         (0, u.Oy)(n.id, {
@@ -82,7 +82,7 @@ function j(e) {
             sourceQuestContent: h.uF.ACTIVITY_PANEL
         }), (0, C.vA)(n) && w()
     }, [n, w]), B = a.useCallback(() => {
-        null != n && (r({
+        null != n && (l({
             questId: n.id,
             questContent: h.uF.ACTIVITY_PANEL,
             questContentCTA: I.Cy.TRACK_PROGRESS,
@@ -91,8 +91,8 @@ function j(e) {
             fromContent: h.uF.ACTIVITY_PANEL,
             questId: n.id
         }))
-    }, [n, r]), H = a.useCallback(() => {
-        r({
+    }, [n, l]), H = a.useCallback(() => {
+        l({
             questId: n.id,
             questContent: h.uF.ACTIVITY_PANEL,
             questContentCTA: I.Cy.LEARN_MORE,
@@ -101,7 +101,7 @@ function j(e) {
             fromContent: h.uF.ACTIVITY_PANEL,
             questId: n.id
         })
-    }, [n.id, r]), F = (0, S.ix)({
+    }, [n.id, l]), F = (0, S.ix)({
         quest: n,
         questContent: h.uF.ACTIVITY_PANEL,
         sourceQuestContent: h.uF.ACTIVITY_PANEL
@@ -119,7 +119,7 @@ function j(e) {
         ref: e => {
             t.current = e
         },
-        className: l()(D.iE, {
+        className: r()(D.iE, {
             [D.tJ]: Y
         }),
         onClick: k,
@@ -132,7 +132,7 @@ function j(e) {
             className: D.Wp,
             children: [Y ? (0, i.jsx)(M, {
                 quest: n
-            }) : (0, i.jsx)(v.A, {}), (0, i.jsx)(N.C, {
+            }) : (0, i.jsx)(y.A, {}), (0, i.jsx)(N.C, {
                 quest: n,
                 questContent: h.uF.ACTIVITY_PANEL,
                 shouldShowDisclosure: n.userStatus?.enrolledAt == null,
@@ -178,9 +178,9 @@ function j(e) {
                     variant: "secondary",
                     text: P.intl.string(P.t.LLLLPD),
                     onClick: H
-                }), U.enabled && G === y.UA.UNENROLLED && U.enabledQuestStates.has(y.UA.UNENROLLED) && !(0, f.Ic)(n) ? (0, i.jsx)(x.A, {
+                }), U.enabled && G === v.UA.UNENROLLED && U.enabledQuestStates.has(v.UA.UNENROLLED) && !(0, f.Ic)(n) ? (0, i.jsx)(x.A, {
                     quest: n,
-                    surface: y.V3.ACTIVITY_PANEL,
+                    surface: v.V3.ACTIVITY_PANEL,
                     size: "md",
                     analyticsCtxQuestContent: h.uF.ACTIVITY_PANEL,
                     analyticsCtxSourceQuestContent: h.uF.ACTIVITY_PANEL

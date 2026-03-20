@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(397927),
-    r = n(263063),
-    l = n(253932),
+    l = n(263063),
+    r = n(253932),
     s = n(218394),
     o = n(258335),
     d = n(918296);
@@ -18,7 +18,7 @@ function c(e) {
         guild: c,
         description: u,
         children: A
-    } = e, h = l.kt.useSetting(), _ = (0, s.j)(), [m, g] = (0, o.A)(t, _ && h);
+    } = e, h = r.kt.useSetting(), _ = (0, s.j)(), [m, g] = (0, o.A)(t, _ && h);
     return (0, i.jsxs)("div", {
         className: d.kL,
         children: [(0, i.jsx)("div", {
@@ -31,9 +31,9 @@ function c(e) {
             })
         }), (0, i.jsx)("div", {
             className: d._C,
-            children: (0, i.jsx)(r.Ay, {
+            children: (0, i.jsx)(l.Ay, {
                 guild: c,
-                size: r.Ay.Sizes.XLARGE
+                size: l.Ay.Sizes.XLARGE
             })
         }), (0, i.jsx)(a.Heading, {
             variant: "heading-xl/semibold",

@@ -16,14 +16,14 @@ var a = n(627968),
 let h = i.createContext({
         setDropHandler: () => {}
     }),
-    x = [{
+    p = [{
         name: "Preview",
         value: "preview"
     }, {
         name: "Validate",
         value: "validate"
     }],
-    p = {
+    x = {
         id: "none",
         label: "[none selected]",
         value: null
@@ -60,7 +60,7 @@ let h = i.createContext({
                 previewProfileEffectSkuId: t,
                 setPreviewProfileEffectSkuId: n
             } = (0, o.JE)(),
-            r = i.useMemo(() => [p, ...e.map(e => ({
+            r = i.useMemo(() => [x, ...e.map(e => ({
                 id: e.skuId,
                 label: e.name,
                 value: e.skuId
@@ -200,14 +200,14 @@ let h = i.createContext({
             validationComplete: n,
             warnings: s,
             errors: r
-        } = (0, u.y)(), o = Object.entries(r), d = Object.entries(s), c = o.length > 0, x = d.length > 0, {
-            setDropHandler: p
+        } = (0, u.y)(), o = Object.entries(r), d = Object.entries(s), c = o.length > 0, p = d.length > 0, {
+            setDropHandler: x
         } = i.useContext(h), g = i.useCallback(n => {
             t(), e(n)
         }, [e, t]);
         return i.useEffect(() => {
-            p(g)
-        }, [g, p]), (0, a.jsxs)(a.Fragment, {
+            x(g)
+        }, [g, x]), (0, a.jsxs)(a.Fragment, {
             children: [n ? (0, a.jsxs)("div", {
                 className: m._f,
                 children: [(0, a.jsx)(l.Text, {
@@ -216,7 +216,7 @@ let h = i.createContext({
                     children: `${o.length} errors`
                 }), (0, a.jsx)(l.Text, {
                     variant: "text-md/normal",
-                    color: x ? "text-feedback-warning" : "text-default",
+                    color: p ? "text-feedback-warning" : "text-default",
                     children: `${d.length} warnings`
                 }), (0, a.jsx)(l.Button, {
                     variant: "primary",
@@ -257,7 +257,7 @@ let h = i.createContext({
                         }, `${n}-${t}`)
                     })
                 })]
-            }), x && (0, a.jsxs)(a.Fragment, {
+            }), p && (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsx)(l.Heading, {
                     variant: "heading-lg/bold",
                     children: "Warnings"
@@ -299,13 +299,13 @@ let h = i.createContext({
             clearIgnoredFilenames: d,
             processAndUpsertAssets: u
         } = (0, c.ds)(), {
-            setDropHandler: x
-        } = i.useContext(h), p = i.useCallback(e => {
+            setDropHandler: p
+        } = i.useContext(h), x = i.useCallback(e => {
             n(), u(e)
         }, [u, n]);
         return i.useEffect(() => {
-            x(p)
-        }, [p, x]), (0, a.jsxs)(a.Fragment, {
+            p(x)
+        }, [x, p]), (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsx)(l.Text, {
                 variant: "text-md/normal",
                 children: "Drop files in this panel to begin preview."
@@ -338,7 +338,7 @@ let h = i.createContext({
         return (0, a.jsxs)("div", {
             className: m.kL,
             children: [(0, a.jsx)(l.IzF, {
-                options: x,
+                options: p,
                 value: e,
                 onChange: e => {
                     let {

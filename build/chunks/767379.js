@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(627575),
     m = n(393033),
     h = n(105428),
-    x = n(975571),
-    p = n(935649),
+    p = n(975571),
+    x = n(935649),
     g = n(847599),
     _ = n(295972),
     f = n(36149),
@@ -35,7 +35,7 @@ function S(e) {
         variant: "text-xs/medium",
         children: C.intl.format(A.default.htWh1G, {
             handleOnHelpUrlHook: () => {
-                p.A.openUrl(j.d$.LEARN_MORE_UU_APPEAL_LINK), (0, g.St)(t, g.WU.EXPRESSIVE_PRIMARY, g._7.LEARN_MORE)
+                x.A.openUrl(j.d$.LEARN_MORE_UU_APPEAL_LINK), (0, g.St)(t, g.WU.EXPRESSIVE_PRIMARY, g._7.LEARN_MORE)
             }
         })
     }) : n === g.q1.SAFETY_FLOWS ? (0, a.jsx)(o.QWc, {
@@ -91,7 +91,7 @@ let E = function(e) {
         },
         title: (0, f.ST)(n),
         subtitle: (0, f.mK)(n, () => {
-            p.A.openUrl(x.A.getArticleURL(b.MVz.TIGGER_PAWTECT_LEARN_MORE)), (0, g.St)(D, g.WU.EXPRESSIVE_PRIMARY, g._7.LEARN_MORE)
+            x.A.openUrl(p.A.getArticleURL(b.MVz.TIGGER_PAWTECT_LEARN_MORE)), (0, g.St)(D, g.WU.EXPRESSIVE_PRIMARY, g._7.LEARN_MORE)
         }, P),
         actionBarInput: (0, a.jsx)(S, {
             modalSessionId: D,

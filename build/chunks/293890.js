@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(397927),
-    r = n(73153),
-    l = n(298990),
+    l = n(73153),
+    r = n(298990),
     s = n(846293),
     o = n(684013),
     d = n(980142),
@@ -63,15 +63,15 @@ let I = new c.A("RPCCommandsOverlay"),
                 if (null == a) throw new h.A({
                     errorCode: E.Lw6.INVALID_COMMAND
                 }, "No application.");
-                let r = u.A.getApplicationActivity(a);
-                if (null == r || null == r.secrets || !(0, _.px)(n, r.party, r.secrets)) throw new h.A({
+                let l = u.A.getApplicationActivity(a);
+                if (null == l || null == l.secrets || !(0, _.px)(n, l.party, l.secrets)) throw new h.A({
                     errorCode: E.Lw6.NO_ELIGIBLE_ACTIVITY
                 }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
                 let {
                     lock: s,
                     context: o
-                } = (0, g.d5)(i), c = (0, d.A)(r, A.A);
-                return (0, l.qf)(r, c, o).then(() => {
+                } = (0, g.d5)(i), c = (0, d.A)(l, A.A);
+                return (0, r.qf)(l, c, o).then(() => {
                     if (s(), c) throw new h.A({
                         errorCode: E.Lw6.NO_ELIGIBLE_ACTIVITY
                     }, "No eligible activity for application. Ensure user does have have privacy enabled.")
@@ -105,17 +105,17 @@ let I = new c.A("RPCCommandsOverlay"),
                     }, `Invalid invite id: ${i}`);
                     let {
                         context: a,
-                        lock: l
+                        lock: r
                     } = (0, g.d5)(n);
                     return new Promise(e => {
-                        r.h.dispatch({
+                        l.h.dispatch({
                             type: "INVITE_MODAL_OPEN",
                             invite: t,
                             code: i,
                             context: a,
                             resolve: e
                         })
-                    }).then(l)
+                    }).then(r)
                 })
             }
         },
@@ -129,9 +129,9 @@ let I = new c.A("RPCCommandsOverlay"),
                     args: {
                         pid: t
                     },
-                    socket: r
-                } = e, l = r.application.id;
-                if (null == l) throw new h.A({
+                    socket: l
+                } = e, r = l.application.id;
+                if (null == r) throw new h.A({
                     errorCode: E.Lw6.INVALID_COMMAND
                 }, "No application.");
                 let {
@@ -145,8 +145,8 @@ let I = new c.A("RPCCommandsOverlay"),
                         } = await n.e("96531").then(n.bind(n, 880510));
                         return t => (0, i.jsx)(e, {
                             ...t,
-                            mediaEngineContext: l,
-                            subtitle: r.application.name ?? void 0
+                            mediaEngineContext: r,
+                            subtitle: l.application.name ?? void 0
                         })
                     }, {
                         contextKey: o === E.BRT.POPOUT ? a.KX8 : a.SYi,

@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(990078),
     m = n(421380),
     h = n(397927),
-    x = n(73153),
-    p = n(58736),
+    p = n(73153),
+    x = n(58736),
     g = n(379078),
     _ = n(704554),
     f = n(603349),
@@ -156,16 +156,16 @@ function w(e) {
         className: E.rf,
         minHeight: 100,
         initialHeight: n,
-        children: [(0, a.jsx)(r, {}), (0, a.jsxs)(p.Ay, {
+        children: [(0, a.jsx)(r, {}), (0, a.jsxs)(x.Ay, {
             className: s()(N.jr, E.nZ),
-            children: [(0, a.jsx)(p.Ay.Icon, {
+            children: [(0, a.jsx)(x.Ay.Icon, {
                 icon: h.KBH,
                 tooltip: t.name
-            }), (0, a.jsx)(p.Ay.Title, {
+            }), (0, a.jsx)(x.Ay.Title, {
                 wrapperClassName: s()(N.qd, N.ZE),
                 className: N.Pz,
                 children: t.name
-            }), (0, a.jsx)(p.Ay.Icon, {
+            }), (0, a.jsx)(x.Ay.Icon, {
                 icon: h.TdU,
                 tooltip: "Copy event data",
                 onClick: () => {
@@ -242,17 +242,17 @@ function P() {
                     e.off("log", t)
                 }
             }, [e]), t
-        }(x.h.actionLogger),
+        }(p.h.actionLogger),
         r = i.useMemo(() => l.map(e => ({
             key: e.id.toString(),
             actionLog: e
         })).toReversed(), [l]),
         [d, c] = i.useState(r),
-        [m, p] = i.useState(r),
+        [m, x] = i.useState(r),
         [g, f] = i.useState(!1),
         [v, b] = i.useState(),
         j = i.useCallback(e => {
-            p(e)
+            x(e)
         }, []);
     (0, _.RT)(t, g ? d : r, j, M);
     let A = i.useCallback(e => {

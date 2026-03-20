@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(311907),
     m = n(506774),
     h = n(397927),
-    x = n(73153),
-    p = n(587895),
+    p = n(73153),
+    x = n(587895),
     g = n(429913),
     _ = n(303054),
     f = n(409626),
@@ -76,10 +76,10 @@ function O(e) {
     return (0, a.jsx)(h.dOG, {
         checked: i,
         onChange: function() {
-            i ? x.h.dispatch({
+            i ? p.h.dispatch({
                 type: "CONTENT_INVENTORY_SET_FILTERS",
                 filters: void 0
-            }) : x.h.dispatch({
+            }) : p.h.dispatch({
                 type: "CONTENT_INVENTORY_SET_FILTERS",
                 filters: {
                     types: new Set([t])
@@ -104,7 +104,7 @@ function w() {
         })),
         d = (0, u.bG)([y.A], () => y.A.getFeedState(N.X1.GLOBAL_FEED)?.loading === !0),
         [O, w] = i.useState(""),
-        M = (0, u.bG)([b.A, p.A], () => parseInt(O) > 0 ? O : b.A.searchGamesByName(O)[0] ?? p.A.getApplicationByName(O)?.id, [O]),
+        M = (0, u.bG)([b.A, x.A], () => parseInt(O) > 0 ? O : b.A.searchGamesByName(O)[0] ?? x.A.getApplicationByName(O)?.id, [O]),
         P = (0, v.A)({
             applicationId: M,
             location: "DevToolsContentInventory",
@@ -136,7 +136,7 @@ function w() {
                     text: "Refresh Now",
                     fullWidth: !0,
                     onClick: function() {
-                        x.h.dispatch({
+                        p.h.dispatch({
                             type: "CONTENT_INVENTORY_MANUAL_REFRESH",
                             feedId: N.X1.GLOBAL_FEED,
                             feature: c.M.INBOX
@@ -154,7 +154,7 @@ function w() {
                     text: "Clear Impressions",
                     fullWidth: !0,
                     onClick: function() {
-                        x.h.dispatch({
+                        p.h.dispatch({
                             type: "CONTENT_INVENTORY_DEBUG_CLEAR_IMPRESSIONS"
                         })
                     }
@@ -163,7 +163,7 @@ function w() {
                     text: "Log Impressions",
                     fullWidth: !0,
                     onClick: function() {
-                        x.h.dispatch({
+                        p.h.dispatch({
                             type: "CONTENT_INVENTORY_DEBUG_LOG_IMPRESSIONS"
                         })
                     }
@@ -172,7 +172,7 @@ function w() {
                     text: l ? "Enable Impression Capping" : "Disable Impression Capping",
                     fullWidth: !0,
                     onClick: function() {
-                        x.h.dispatch({
+                        p.h.dispatch({
                             type: "CONTENT_INVENTORY_DEBUG_TOGGLE_IMPRESSION_CAPPING"
                         })
                     }
@@ -181,7 +181,7 @@ function w() {
                     text: s ? "Disable Fast Impression Capping" : "Enable Fast Impression Capping",
                     fullWidth: !0,
                     onClick: function() {
-                        x.h.dispatch({
+                        p.h.dispatch({
                             type: "CONTENT_INVENTORY_DEBUG_TOGGLE_FAST_IMPRESSION_CAPPING"
                         })
                     }
@@ -220,7 +220,7 @@ function w() {
                     })),
                     value: B,
                     onSelectionChange: function(e) {
-                        x.h.dispatch({
+                        p.h.dispatch({
                             type: "CONTENT_INVENTORY_FORCE_SHOW_GAME_SHARING",
                             gameToShow: e
                         })

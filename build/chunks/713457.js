@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(403362),
     m = n(178540),
     h = n(859703),
-    x = n(341915),
-    p = n(12251),
+    p = n(341915),
+    x = n(12251),
     g = n(33621),
     _ = n(551456),
     f = n(714510),
@@ -93,7 +93,7 @@ function L(e) {
         externalLinkCta: (0, C.wr)(t),
         handleOpenExternalLink: i.useCallback(() => {
             (0, T.pu)(t, {
-                content: x.uF.QUEST_HOME_DESKTOP,
+                content: p.uF.QUEST_HOME_DESKTOP,
                 ctaContent: j.Cy.OPEN_GAME_LINK,
                 impressionId: a,
                 sourceQuestContent: n
@@ -226,11 +226,11 @@ function F(e) {
         isClaiming: h.A.isClaimingReward(t.id) || h.A.isFetchingRewardCode(t.id),
         isEnrolling: h.A.isEnrolling(t.id),
         isQuestEnrollmentBlocked: null != h.A.questEnrollmentBlockedUntil
-    })), Y = t.userStatus?.enrolledAt != null, J = t.userStatus?.completedAt != null, X = J && t.userStatus?.claimedAt == null, Z = (0, y.if)(t), ee = !(0, y.Ic)(t), et = (0, v.In)(t), en = (0, S.IO)(t), ea = (0, S.K$)(t), ei = (0, S.Cr)(t), el = (0, v.fc)(t), [es, er, eo] = (0, v.Qo)(t, el), ed = ee && et === v.F3.ACCEPTED, ec = ed && es === x.X0.SELECT, eu = ed && !ec && er.length > 1, em = g.t.useConfig({
+    })), Y = t.userStatus?.enrolledAt != null, J = t.userStatus?.completedAt != null, X = J && t.userStatus?.claimedAt == null, Z = (0, y.if)(t), ee = !(0, y.Ic)(t), et = (0, v.In)(t), en = (0, S.IO)(t), ea = (0, S.K$)(t), ei = (0, S.Cr)(t), el = (0, v.fc)(t), [es, er, eo] = (0, v.Qo)(t, el), ed = ee && et === v.F3.ACCEPTED, ec = ed && es === p.X0.SELECT, eu = ed && !ec && er.length > 1, em = g.t.useConfig({
         location: O.rE.QUEST_HOME_DESKTOP
-    }), eh = (0, k.Pd)(t), ex = (0, m.O)(e => e.clearErrorHints), ep = i.useCallback(e => {
-        eo(e), e === O.fO.DESKTOP && (_([]), ex(t.id))
-    }, [eo, _, ex, t.id]), {
+    }), eh = (0, k.Pd)(t), ep = (0, m.O)(e => e.clearErrorHints), ex = i.useCallback(e => {
+        eo(e), e === O.fO.DESKTOP && (_([]), ep(t.id))
+    }, [eo, _, ep, t.id]), {
         text: eg,
         onClick: e_
     } = (0, N._c)({
@@ -266,12 +266,12 @@ function F(e) {
     } = (0, v.zW)(t), eA = (0, f.NA)({
         quest: t,
         shortText: !0
-    }), eC = p.s5.useConfig({
+    }), eC = x.s5.useConfig({
         location: O.rE.QUESTS_CARD
-    }), ey = eC.enabled && (eC.variant === p.tL.LEARN_MORE_CTA_ONLY || eC.variant === p.tL.COMBINE_LEARN_MORE_CTA_AND_EXPRESSIVE_BUTTON), eT = (0, v.do)({
+    }), ey = eC.enabled && (eC.variant === x.tL.LEARN_MORE_CTA_ONLY || eC.variant === x.tL.COMBINE_LEARN_MORE_CTA_AND_EXPRESSIVE_BUTTON), eT = (0, v.do)({
         quest: t,
         content: n,
-        ctaContent: eC.variant === p.tL.LEARN_MORE_CTA_ONLY ? j.Cy.LEARN_MORE_CTA_AND_EXPRESSIVE_BUTTON_TREATMENT_TWO_OPEN_GAME_LINK : j.Cy.LEARN_MORE_CTA_AND_EXPRESSIVE_BUTTON_TREATMENT_THREE_OPEN_GAME_LINK,
+        ctaContent: eC.variant === x.tL.LEARN_MORE_CTA_ONLY ? j.Cy.LEARN_MORE_CTA_AND_EXPRESSIVE_BUTTON_TREATMENT_TWO_OPEN_GAME_LINK : j.Cy.LEARN_MORE_CTA_AND_EXPRESSIVE_BUTTON_TREATMENT_THREE_OPEN_GAME_LINK,
         sourceQuestContent: L
     }), eS = null;
     if (ey) {
@@ -363,7 +363,7 @@ function F(e) {
         placeholder: w.intl.string(w.t.drVw4T),
         renderOptionLabel: P,
         renderOptionValue: U,
-        select: ep,
+        select: ex,
         serialize: e => {
             switch (e) {
                 case O.fO.DESKTOP:
@@ -376,7 +376,7 @@ function F(e) {
         },
         size: "sm",
         "data-migration-pending": !0
-    }) : (0, S.g5)(t) && !K && es !== x.X0.DESKTOP ? H ? (0, a.jsx)("div", {
+    }) : (0, S.g5)(t) && !K && es !== p.X0.DESKTOP ? H ? (0, a.jsx)("div", {
         className: D.x6,
         children: (0, a.jsx)(r.$nd, {
             variant: "secondary",
@@ -468,9 +468,9 @@ function F(e) {
                 className: D.xZ,
                 isSelected: e => {
                     switch (es) {
-                        case x.X0.DESKTOP:
+                        case p.X0.DESKTOP:
                             return e === O.fO.DESKTOP;
-                        case x.X0.CONSOLE:
+                        case p.X0.CONSOLE:
                             return e === O.fO.CONSOLE;
                         default:
                             return !1
@@ -480,7 +480,7 @@ function F(e) {
                 placeholder: w.intl.string(w.t.drVw4T),
                 renderOptionLabel: P,
                 renderOptionValue: U,
-                select: ep,
+                select: ex,
                 serialize: e => {
                     switch (e) {
                         case O.fO.DESKTOP:

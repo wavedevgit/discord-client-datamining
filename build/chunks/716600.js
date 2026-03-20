@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(934551),
-    r = n(232582),
-    l = n(732955),
+    l = n(232582),
+    r = n(732955),
     s = n(397927),
     o = n(954571),
     d = n(975571),
@@ -27,7 +27,7 @@ function m(e) {
         isLightTheme: I
     } = e, f = `AnnouncementModalVariant1_${t}`, {
         onClose: C
-    } = g, T = m.button?.copy ?? h.intl.string(h.t.YScQSF), N = m.button?.buttonAction === r.dz.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", S = (0, u.h)({
+    } = g, T = m.button?.copy ?? h.intl.string(h.t.YScQSF), N = m.button?.buttonAction === l.dz.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", S = (0, u.h)({
         buttonAction: m.button?.buttonAction,
         analyticsLocations: p,
         analyticsLocation: E,
@@ -38,19 +38,19 @@ function m(e) {
             href: d.A.getArticleURL(m.helpArticleId),
             children: h.intl.string(h.t["sBp+u0"])
         })]
-    }) : void 0, y = {
+    }) : void 0, v = {
         type: "video",
         src: I ? m.heroArtVideoLinkLightTheme : m.videoLink
     };
-    null != m.heroArtVideoSubtitles && (y.subtitles = m.heroArtVideoSubtitles.map(e => ({
+    null != m.heroArtVideoSubtitles && (v.subtitles = m.heroArtVideoSubtitles.map(e => ({
         locale: e.locale,
         src: e.link,
         isDefault: !1
-    }))), ("" !== m.heroArtImageLinkDarkTheme || "" !== m.heroArtImageLinkLightTheme) && (y = {
+    }))), ("" !== m.heroArtImageLinkDarkTheme || "" !== m.heroArtImageLinkLightTheme) && (v = {
         type: "image",
         src: I ? m.heroArtImageLinkLightTheme : m.heroArtImageLinkDarkTheme
     });
-    let v = "" !== m.modalTopPill ? () => (0, i.jsx)(c.R, {
+    let y = "" !== m.modalTopPill ? () => (0, i.jsx)(c.R, {
         text: m.modalTopPill,
         className: _.ON
     }) : void 0;
@@ -59,11 +59,11 @@ function m(e) {
         promotionId: n,
         renderModalProps: g,
         header: m.header,
-        modalTopExtra: v,
+        modalTopExtra: y,
         subHeader: m.subheader,
         subHeaderExtra: x,
         body: m.body,
-        heroArt: y,
+        heroArt: v,
         featureCards: m.featureCards.map(e => ({
             header: e.header,
             subHeader: e.body,
@@ -73,7 +73,7 @@ function m(e) {
         changeLogId: f,
         button: () => {
             let e = Date.now();
-            return (0, i.jsx)(l.$nd, {
+            return (0, i.jsx)(r.$nd, {
                 variant: "expressive",
                 size: "md",
                 onClick: () => {

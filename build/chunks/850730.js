@@ -16,8 +16,8 @@ var a = n(64700),
     u = n(587600),
     m = n(84540),
     h = n(836602),
-    x = n(544028),
-    p = n(253932),
+    p = n(544028),
+    x = n(253932),
     g = n(594061),
     _ = n(287809),
     f = n(927578),
@@ -78,18 +78,18 @@ function E() {
         let t = y(j.qh);
         (0, r.AC)(t);
         let n = y(C);
-        p.Xi.updateSetting(n)
+        x.Xi.updateSetting(n)
     } catch (e) {}
 }
 
 function N() {
     a.useEffect(() => {
         let e = _.default.getCurrentUser(),
-            t = p.eh.getSetting(),
+            t = x.eh.getSetting(),
             n = d.A.purchases,
             a = (0, c.x9)(n),
             i = (0, c.$W)(n),
-            f = x.A.theme,
+            f = p.A.theme,
             v = t.backgroundGradientPresetId,
             b = e?.avatarDecoration?.skuId,
             j = e?.collectibles?.nameplate?.skuId,
@@ -97,7 +97,7 @@ function N() {
             C = null != j ? i.find(e => e.skuId === j) ?? null : null,
             y = o.A.fontSize,
             T = o.A.messageGroupSpacing,
-            S = p.Xi.getSetting();
+            S = x.Xi.getSetting();
         return () => {
             try {
                 s.u_({
@@ -110,7 +110,7 @@ function N() {
                 });
                 let e = h.A.getPendingChanges(),
                     t = (0, u.Sk)(e);
-                (0, l._L)(t).finally(l.pZ), (0, r.XS)(y), (0, r.AC)(T), p.Xi.updateSetting(S)
+                (0, l._L)(t).finally(l.pZ), (0, r.XS)(y), (0, r.AC)(T), x.Xi.updateSetting(S)
             } catch (e) {}
         }
     }, [])

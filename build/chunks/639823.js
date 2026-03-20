@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(451988),
     a = n(73153),
-    r = n(956793),
-    l = n(272355),
+    l = n(956793),
+    r = n(272355),
     s = n(616356),
     o = n(734057),
     d = n(71393),
@@ -16,7 +16,7 @@ var i = n(451988),
     _ = n(652215);
 let m = new i.Ep,
     g = new i.Ep;
-class p extends l.A {
+class p extends r.A {
     _initialize() {
         a.h.subscribe("IDLE", this.handleIdleUpdate)
     }
@@ -32,13 +32,13 @@ class p extends l.A {
         let t = u.A.getChannelId();
         if (null == t) return;
         g.start(18e6, () => {
-            r.default.selectVoiceChannel(null)
+            l.default.selectVoiceChannel(null)
         });
         let n = d.A.getGuild(u.A.getGuildId());
         if (null == n || null == n.afkChannelId || n.afkChannelId === t || null == n.afkTimeout) return;
         let i = o.A.getChannel(t);
         null == i || i.isGuildStageVoice() || m.start(e + n.afkTimeout * A.A.Millis.SECOND - Date.now(), () => {
-            null != (n = d.A.getGuild(u.A.getGuildId())) && null != n.afkChannelId && r.default.selectVoiceChannel(n.afkChannelId, !1, !1, {
+            null != (n = d.A.getGuild(u.A.getGuildId())) && null != n.afkChannelId && l.default.selectVoiceChannel(n.afkChannelId, !1, !1, {
                 bypassIdleUpdate: !0
             })
         })

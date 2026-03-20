@@ -13,7 +13,7 @@ function o(e) {
         isQuestAccepted: t,
         isQuestCompleted: n,
         isQuestBarVisible: o
-    } = e, d = (0, i.bG)([s.A], () => s.A.useReducedMotion), [c, u] = a.useState(!1), [m, h] = a.useState(!0), [x, p] = a.useState(!0), g = a.useRef(o), _ = a.useCallback(e => {
+    } = e, d = (0, i.bG)([s.A], () => s.A.useReducedMotion), [c, u] = a.useState(!1), [m, h] = a.useState(!0), [p, x] = a.useState(!0), g = a.useRef(o), _ = a.useCallback(e => {
         n || (h(!1), u(e))
     }, [n]), f = a.useCallback(() => {
         _(!0)
@@ -54,21 +54,21 @@ function o(e) {
             clamp: !0
         },
         onRest: () => {
-            p(!0)
+            x(!0)
         },
         onStart: () => {
-            p(!1)
+            x(!1)
         }
     });
     return a.useLayoutEffect(() => {
-        o !== g.current && p(!1), g.current = o
+        o !== g.current && x(!1), g.current = o
     }, [o]), {
         isExpanded: c,
         setIsExpanded: _,
         expandQuestBar: f,
         collapseQuestBar: v,
         isExpansionAnimationComplete: m,
-        isVisibilityAnimationAtRest: x,
+        isVisibilityAnimationAtRest: p,
         expansionSpring: j,
         visibilitySpring: C,
         springConfig: b

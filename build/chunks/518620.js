@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    r = n(884362),
-    l = n(837381),
+    l = n(884362),
+    r = n(837381),
     s = n(311907),
     o = n(397927),
     d = n(775602);
@@ -25,10 +25,10 @@ let h = function(e) {
         let {
             section: i,
             row: a
-        } = e, r = t[i];
-        if (null == r || null == a) return null;
-        let l = r[a];
-        return null == l ? null : n(l, i)
+        } = e, l = t[i];
+        if (null == l || null == a) return null;
+        let r = l[a];
+        return null == r ? null : n(r, i)
     }, E = a.useCallback((e, n) => {
         let i = t[e]?.[n];
         return m === c.m3P.ALL && i?.giftIntentType === u.np.FRIEND_ANNIVERSARY && 0 === e ? 72 : 62
@@ -49,7 +49,7 @@ let h = function(e) {
         t.scrollToBottom({
             callback: () => requestAnimationFrame(() => e())
         })
-    }), []), y = a.useCallback(e => {
+    }), []), v = a.useCallback(e => {
         let t = document.querySelector(e),
             n = N.current;
         null != t && null != n && n.scrollIntoViewNode({
@@ -57,16 +57,16 @@ let h = function(e) {
             padding: 8,
             callback: () => t?.focus()
         })
-    }, []), v = (0, r.Ay)({
+    }, []), y = (0, l.Ay)({
         id: "people-list",
         isEnabled: T,
         scrollToStart: S,
         scrollToEnd: x,
-        setFocus: y
+        setFocus: v
     }), b = a.useMemo(() => t.map(e => e.length), [t]);
-    return (0, i.jsx)(l.hD, {
-        navigator: v,
-        children: (0, i.jsx)(l.PR, {
+    return (0, i.jsx)(r.hD, {
+        navigator: y,
+        children: (0, i.jsx)(r.PR, {
             children: e => {
                 let {
                     ref: t,

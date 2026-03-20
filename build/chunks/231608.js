@@ -1,11 +1,11 @@
 /** chunk id: 231608 params = (module,exports,require) **/
 n.d(t, {
-    o: () => r
+    o: () => l
 });
 var i = n(855511),
     a = n(682261);
 
-function r(e) {
+function l(e) {
     return {
         af_voice_chat: e.voiceChannels.length > 0,
         af_people_count: e.partiedMembers.length,

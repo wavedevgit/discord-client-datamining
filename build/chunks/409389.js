@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    r = n(873263),
-    l = n(397927),
+    l = n(873263),
+    r = n(397927),
     s = n(403362),
     o = n(240248),
     d = n(890687),
@@ -47,8 +47,8 @@ let p = [],
                 })
             }, [C]),
             {
-                quests: y,
-                excludedQuests: v,
+                quests: v,
+                excludedQuests: y,
                 isFetchingCurrentQuests: b,
                 hasFetched: O
             } = (0, d.Qh)(d.NC.ALL, a.useMemo(() => ({
@@ -60,8 +60,8 @@ let p = [],
             }, [x]),
             R = a.useRef(null),
             P = a.useRef(null),
-            D = (0, r.zy)(),
-            M = (0, r.W6)();
+            D = (0, l.zy)(),
+            M = (0, l.W6)();
         return a.useEffect(() => {
             "" !== D.hash && null != R.current && null != P.current && (T !== R.current || N !== P.current) && M.replace({
                 ...D,
@@ -74,7 +74,7 @@ let p = [],
         }, [N]), (0, d.$P)({
             selectedSortMethod: T,
             selectedFilters: N,
-            numQuestsVisible: y.length
+            numQuestsVisible: v.length
         }), a.useImperativeHandle(t, () => ({
             resetSortingFiltering: () => {
                 L(), S(_.kL.SUGGESTED)
@@ -85,7 +85,7 @@ let p = [],
         }), [L, S]), (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)("div", {
                 className: g.Mj,
-                children: [(0, i.jsx)(l.Heading, {
+                children: [(0, i.jsx)(r.Heading, {
                     variant: "heading-lg/medium",
                     children: m.intl.string(m.t.giYD00)
                 }), (0, i.jsxs)("div", {
@@ -101,8 +101,8 @@ let p = [],
                 })]
             }), (0, i.jsx)(A.A, {
                 ref: n,
-                quests: y,
-                excludedQuests: v,
+                quests: v,
+                excludedQuests: y,
                 isFetching: b,
                 hasFetched: O,
                 hasFiltersApplied: N.length > 0,

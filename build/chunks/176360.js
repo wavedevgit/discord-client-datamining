@@ -3,8 +3,8 @@ let i, a;
 n.d(t, {
     A: () => b
 });
-var r = n(735438),
-    l = n.n(r),
+var l = n(735438),
+    r = n.n(l),
     s = n(311907),
     o = n(506774),
     d = n(73153),
@@ -32,12 +32,12 @@ function x(e) {
     return null != t && null == n[t] && (n[t] = c.xT(t)), n
 }
 
-function y() {
+function v() {
     if (f = u.A.getChannel(), C = u.A.getCategory(), null == f) return !1;
     let e = f.getGuildId();
     I = E = x(f), null == E[T] && (T = e), a = null != C, i = c.r(f, C), N = null, p = !1, g = h.XlH.CLOSED, m.clear()
 }
-class v extends s.Ay.Store {
+class y extends s.Ay.Store {
     static displayName = "ChannelSettingsPermissionsStore";
     initialize() {
         this.waitFor(u.A, A.A)
@@ -79,30 +79,30 @@ class v extends s.Ay.Store {
         return S
     }
 }
-let b = new v(d.h, {
+let b = new y(d.h, {
     CHANNEL_SETTINGS_SET_SECTION: function(e) {
         let {
             section: t
         } = e;
         if (null != f || t !== h.p_A.PERMISSIONS) return !1;
-        y()
+        v()
     },
-    CHANNEL_SETTINGS_PERMISSIONS_INIT: y,
+    CHANNEL_SETTINGS_PERMISSIONS_INIT: v,
     CHANNEL_SETTINGS_PERMISSIONS_UPDATE_PERMISSION: function(e) {
         let {
             id: t,
             allow: n,
             deny: a
-        } = e, r = E?.[t];
-        if (null == r || null == f) return !1;
-        r = {
-            ...r,
+        } = e, l = E?.[t];
+        if (null == l || null == f) return !1;
+        l = {
+            ...l,
             allow: n,
             deny: a
         }, E = {
             ...E,
-            [t]: r
-        }, m.add(t), g = h.XlH.OPEN, p = !l().isEqual(E, I), i = c.r(f, C)
+            [t]: l
+        }, m.add(t), g = h.XlH.OPEN, p = !r().isEqual(E, I), i = c.r(f, C)
     },
     CHANNEL_SETTINGS_PERMISSIONS_SELECT_PERMISSION: function(e) {
         let {
@@ -115,7 +115,7 @@ let b = new v(d.h, {
         }
     },
     CHANNEL_SETTINGS_INIT: function() {
-        u.A.getSection() === h.p_A.PERMISSIONS && y()
+        u.A.getSection() === h.p_A.PERMISSIONS && v()
     },
     CHANNEL_SETTINGS_CLOSE: function() {
         g = h.XlH.CLOSED, E = null, I = null, f = null, C = null, p = !1, m.clear(), T = null, N = null
@@ -149,7 +149,7 @@ let b = new v(d.h, {
         let {
             silent: t
         } = e;
-        t ? g = h.XlH.OPEN : (g = h.XlH.CLOSED, y())
+        t ? g = h.XlH.OPEN : (g = h.XlH.CLOSED, v())
     },
     CHANNEL_SETTINGS_PERMISSIONS_SET_ADVANCED_MODE: function(e) {
         let {

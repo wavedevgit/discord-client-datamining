@@ -14,8 +14,8 @@ var a = n(627968),
     u = n(405269),
     m = n(367744),
     h = n(652215),
-    x = n(181421),
-    p = n(872985),
+    p = n(181421),
+    x = n(872985),
     g = n(930821);
 let _ = {
         [h.GD.QUEST_REWARD]: "Quest Reward",
@@ -34,7 +34,7 @@ let _ = {
             } = e,
             r = e => null != e ? (0, u.i$)(e, "LLL") : "---";
         return (0, a.jsxs)("div", {
-            className: s()(x.Nr, i ? p.C1 : ""),
+            className: s()(p.Nr, i ? x.C1 : ""),
             children: [(0, a.jsxs)(d.Text, {
                 variant: "text-md/normal",
                 children: ["ID: ", n.id, " "]
@@ -53,7 +53,7 @@ let _ = {
                 variant: "text-md/normal",
                 children: ["Entitlement source type: ", null != (t = n.sourceType) && t in _ ? _[t] : `Unknown source type ${t}`]
             }), i && null != l && (0, a.jsx)(o.$n, {
-                className: x.RW,
+                className: p.RW,
                 size: o.$n.Sizes.TINY,
                 color: o.$n.Colors.RED,
                 look: o.$n.Looks.OUTLINED,
@@ -92,9 +92,9 @@ function b() {
     }, [S]), (0, a.jsx)(d.IpV, {
         className: g.nd,
         children: (0, a.jsxs)("div", {
-            className: p.l$,
+            className: x.l$,
             children: [(0, a.jsxs)("div", {
-                className: p.dL,
+                className: x.dL,
                 children: [(0, a.jsx)(d.Text, {
                     style: {
                         marginBottom: "8px"
@@ -103,7 +103,7 @@ function b() {
                     children: "Manage Fractional Nitro"
                 }), (0, a.jsxs)(d.DUT, {
                     onClick: () => t(!e),
-                    className: x.As,
+                    className: p.As,
                     children: [(0, a.jsx)("div", {
                         children: (0, a.jsx)(d.Text, {
                             variant: "text-md/normal",
@@ -136,7 +136,7 @@ function b() {
                 style: {
                     marginBottom: "8px"
                 },
-                className: s()([x.uW, p.Uo]),
+                className: s()([p.uW, x.Uo]),
                 children: [(0, a.jsx)(d.l6P, {
                     label: "Fractional Premium SKU",
                     value: n,
@@ -150,12 +150,12 @@ function b() {
                     onClick: () => C(n)
                 })]
             }), (0, a.jsxs)("section", {
-                className: x.uW,
+                className: p.uW,
                 children: [(0, a.jsxs)("div", {
                     style: {
                         flexWrap: "wrap"
                     },
-                    className: p.dL,
+                    className: x.dL,
                     children: [(0, a.jsx)(d.Text, {
                         style: {
                             marginBottom: "8px"
@@ -163,7 +163,7 @@ function b() {
                         variant: "text-lg/semibold",
                         children: "Entitlements"
                     }), (0, a.jsxs)("div", {
-                        className: x.GC,
+                        className: p.GC,
                         children: [(0, a.jsx)(o.$n, {
                             disabled: E,
                             size: o.$n.Sizes.TINY,

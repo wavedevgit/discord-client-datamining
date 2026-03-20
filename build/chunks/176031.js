@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    l = n(503698),
+    r = n.n(l),
     s = n(942381),
     o = n(110259),
     d = n(837381),
@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(509963),
     S = n(775602),
     x = n(924283),
-    y = n(139286),
-    v = n(213750),
+    v = n(139286),
+    y = n(213750),
     b = n(771781),
     O = n(932001),
     L = n(379848),
@@ -58,8 +58,8 @@ var i = n(627968),
     en = n(67480),
     ei = n(619921),
     ea = n(595623),
-    er = n(954571),
-    el = n(541830),
+    el = n(954571),
+    er = n(541830),
     es = n(652215),
     eo = n(851110),
     ed = n(49999),
@@ -71,7 +71,7 @@ let e_ = e => {
         let {
             selected: t,
             ...n
-        } = e, a = (0, R.c)("PrivateChannels.ICYMIButton"), r = (0, d.rm)("icymi");
+        } = e, a = (0, R.c)("PrivateChannels.ICYMIButton"), l = (0, d.rm)("icymi");
         return a ? (0, i.jsx)("div", {
             className: eh.F2,
             children: (0, i.jsx)(C.z9, {
@@ -85,7 +85,7 @@ let e_ = e => {
                     })]
                 }),
                 ...n,
-                ...r
+                ...l
             })
         }) : null
     },
@@ -93,7 +93,7 @@ let e_ = e => {
         let {
             selected: t,
             ...n
-        } = e, r = (0, d.rm)("friends"), l = (0, U.kX)(), s = (0, u.bG)([B.Ay], () => B.Ay.canShowFriendsTabBadge()), c = (0, u.bG)([S.A], () => S.A.useReducedMotion), {
+        } = e, l = (0, d.rm)("friends"), r = (0, U.kX)(), s = (0, u.bG)([B.Ay], () => B.Ay.canShowFriendsTabBadge()), c = (0, u.bG)([S.A], () => S.A.useReducedMotion), {
             enabled: h
         } = k.u.useConfig({
             location: "Friends Tab"
@@ -101,7 +101,7 @@ let e_ = e => {
             cooldownDurationMs: B.hb
         }), I = m === A.M.GIFTING_INTENT_FRIENDS_TAB_BADGE;
         a.useEffect(() => {
-            I && (0, y.x)({
+            I && (0, v.x)({
                 name: o.ImpressionNames.GIFT_INTENT_BADGE,
                 type: o.ImpressionTypes.VIEW,
                 properties: {
@@ -111,18 +111,18 @@ let e_ = e => {
         }, [I]);
         let T = () => {
                 let e;
-                I ? (er.default.track(es.HAw.GIFT_INTENT_BADGE_CLICKED, {
+                I ? (el.default.track(es.HAw.GIFT_INTENT_BADGE_CLICKED, {
                     gift_intent_type: ec.np.FRIEND_ANNIVERSARY
                 }), e = es.m3P.ALL, f.A.setSection(es.m3P.ALL), g(ed.i.TAKE_ACTION)) : e = ea.Ay.getState().section, (0, x.A)({
                     tab_opened: e
                 })
             },
-            [N, v] = a.useState(!1),
+            [N, y] = a.useState(!1),
             b = () => {
-                v(!1)
+                y(!1)
             },
             L = () => {
-                v(!0)
+                y(!0)
             },
             R = () => (0, i.jsx)(C.z9, {
                 onClick: T,
@@ -134,9 +134,9 @@ let e_ = e => {
                 onMouseEnter: L,
                 onMouseLeave: b,
                 ...n,
-                ...r,
-                children: l > 0 ? (0, i.jsx)(E.hVq, {
-                    count: l
+                ...l,
+                children: r > 0 ? (0, i.jsx)(E.hVq, {
+                    count: r
                 }) : null
             });
         return (0, i.jsx)("div", {
@@ -179,16 +179,16 @@ let e_ = e => {
             selected: t,
             hideGameUpdateProgressIndicator: n,
             ...a
-        } = e, r = (0, d.rm)("library");
+        } = e, l = (0, d.rm)("library");
         return (0, i.jsx)(C.z9, {
             selected: t,
             route: es.BVt.APPLICATION_LIBRARY,
             icon: E._z,
             text: eu.intl.string(eu.t.cw57ar),
             ...a,
-            ...r,
+            ...l,
             children: (0, i.jsx)(N.A, {
-                className: l()(eh.Qw, {
+                className: r()(eh.Qw, {
                     [eh.QI]: n
                 })
             })
@@ -207,13 +207,13 @@ let e_ = e => {
             channelId: a
         } = (0, P.N)();
         if (!(0, M.H)()) return null;
-        let r = null == a ? void 0 : () => I.A.preload(es.ME, a);
+        let l = null == a ? void 0 : () => I.A.preload(es.ME, a);
         return (0, i.jsx)(C.z9, {
             selected: t,
             route: es.BVt.MESSAGE_REQUESTS,
             icon: E.u6c,
             text: eu.intl.string(eu.t.e7GWjQ),
-            onClick: r,
+            onClick: l,
             ...n,
             children: (0, i.jsx)(ep, {})
         })
@@ -221,7 +221,7 @@ let e_ = e => {
     eI = e => {
         let {
             selected: t
-        } = e, n = eu.intl.string(eA.default.Rkdixs), r = (0, d.rm)("family-center"), [l, s] = a.useState(!0);
+        } = e, n = eu.intl.string(eA.default.Rkdixs), l = (0, d.rm)("family-center"), [r, s] = a.useState(!0);
         return (0, i.jsx)(C.z9, {
             selected: t,
             route: es.BVt.FAMILY_CENTER,
@@ -234,9 +234,9 @@ let e_ = e => {
                 s(!1)
             },
             interactiveClassName: eh.M1,
-            ...r,
+            ...l,
             children: (0, i.jsx)(ef, {
-                isParentHovered: l
+                isParentHovered: r
             })
         })
     },
@@ -261,7 +261,7 @@ let e_ = e => {
                 icon: E.PGe
             })
         }) : a > 0 ? (0, i.jsx)("div", {
-            className: l()(eh.lL, eh.iL),
+            className: r()(eh.lL, eh.iL),
             children: (0, i.jsx)(E.hVq, {
                 count: a
             })
@@ -298,7 +298,7 @@ let eN = a.memo(function(e) {
     let {
         showLibrary: t,
         hasLibraryApplication: n,
-        homeLink: r,
+        homeLink: l,
         premiumTabSelected: s,
         shouldShowNitroTab: o,
         showReferralProgramPopover: d,
@@ -322,7 +322,7 @@ let eN = a.memo(function(e) {
             offsetX: -52,
             children: (0, i.jsx)("div", {
                 ref: p,
-                className: l()(eh.ON, {
+                className: r()(eh.ON, {
                     [eh.jD]: c.Fr
                 }),
                 children: (0, i.jsx)(E.Button, {
@@ -343,14 +343,14 @@ let eN = a.memo(function(e) {
             selectedChannelId: _,
             listScrollerRef: f,
             children: [(0, i.jsx)(em, {
-                selected: null != m ? m === es.BVt.FRIENDS : r === es.BVt.FRIENDS
+                selected: null != m ? m === es.BVt.FRIENDS : l === es.BVt.FRIENDS
             }, "friends"), N ? (0, i.jsx)(e_, {
-                selected: null != m ? m === es.BVt.ICYMI : r === es.BVt.ICYMI
+                selected: null != m ? m === es.BVt.ICYMI : l === es.BVt.ICYMI
             }, "icymi") : null, n && t ? (0, i.jsx)(eg, {
-                selected: null == m ? null != r && r.startsWith(es.BVt.APPLICATION_LIBRARY) : m.startsWith(es.BVt.APPLICATION_LIBRARY),
-                hideGameUpdateProgressIndicator: r === es.BVt.APPLICATION_LIBRARY
+                selected: null == m ? null != l && l.startsWith(es.BVt.APPLICATION_LIBRARY) : m.startsWith(es.BVt.APPLICATION_LIBRARY),
+                hideGameUpdateProgressIndicator: l === es.BVt.APPLICATION_LIBRARY
             }, "library") : null, A ? (0, i.jsx)(eE, {
-                selected: null == m ? null != r && r.startsWith(es.BVt.MESSAGE_REQUESTS) : m === es.BVt.MESSAGE_REQUESTS
+                selected: null == m ? null != l && l.startsWith(es.BVt.MESSAGE_REQUESTS) : m === es.BVt.MESSAGE_REQUESTS
             }, "message-requests") : null, o ? (0, i.jsxs)("div", {
                 children: [(0, i.jsx)(K.o, {
                     nitroTabButtonRef: C,
@@ -358,26 +358,26 @@ let eN = a.memo(function(e) {
                     route: es.BVt.APPLICATION_STORE,
                     locationState: {
                         analyticsSource: {
-                            page: eT(r),
+                            page: eT(l),
                             section: es.JJy.NAVIGATION,
                             object: es.ZSU.NAVIGATION_LINK
                         }
                     }
                 }), S]
-            }, "nitro-tab-group") : null, (0, i.jsx)(v.i, {
-                selected: m === es.BVt.COLLECTIBLES_SHOP || r?.startsWith(es.BVt.COLLECTIBLES_SHOP),
+            }, "nitro-tab-group") : null, (0, i.jsx)(y.i, {
+                selected: m === es.BVt.COLLECTIBLES_SHOP || l?.startsWith(es.BVt.COLLECTIBLES_SHOP),
                 listItemRef: I,
                 locationState: {
                     analyticsSource: {
-                        page: eT(r),
+                        page: eT(l),
                         section: es.JJy.NAVIGATION,
                         object: es.ZSU.NAVIGATION_LINK
                     }
                 }
             }, "discord-shop"), h ? (0, i.jsx)(eI, {
-                selected: null != r && r.startsWith(es.BVt.FAMILY_CENTER) || null != m && m.startsWith(es.BVt.FAMILY_CENTER)
+                selected: null != l && l.startsWith(es.BVt.FAMILY_CENTER) || null != m && m.startsWith(es.BVt.FAMILY_CENTER)
             }, "family-center") : null, (0, i.jsx)(z.A, {
-                selected: null == m ? null != r && r.startsWith(es.BVt.QUEST_HOME) : m === es.BVt.QUEST_HOME
+                selected: null == m ? null != l && l.startsWith(es.BVt.QUEST_HOME) : m === es.BVt.QUEST_HOME
             }, "quests"), (0, i.jsx)(eS, {}, "section-divider-top")]
         })]
     })
@@ -393,12 +393,12 @@ function ex() {
     let e, t, n = (0, u.bG)([ei.A], () => ei.A.getHomeLink()),
         a = (0, u.bG)([en.A], () => {
             if (n === es.BVt.APPLICATION_STORE) return !0;
-            let e = (0, el.qt)(n);
+            let e = (0, er.qt)(n);
             return null != e && (en.A.get(e)?.premium ?? !1)
         }, [n]),
-        r = !J.l_.useSetting(),
+        l = !J.l_.useSetting(),
         {
-            theme: l
+            theme: r
         } = (0, u.cf)([Z.A], () => ({
             theme: Z.A.theme
         })),
@@ -422,10 +422,10 @@ function ex() {
             location: "Private Channels"
         });
     (0, b.Tc)() && (m && !I && E.push(A.M.REFERRAL_PROGRAM_POPOVER), p && E.push(A.M.RECURRING_3P_PROMOTION_POPOVER));
-    let [f] = (0, O.Cc)(m && I ? A.M.REFERRAL_PROGRAM_POPOVER_V2 : null, g ?? "", void 0, !0), [C, T] = (0, O.kn)(E, void 0, !0), N = null == f && C === A.M.RECURRING_3P_PROMOTION_POPOVER, S = I ? f === A.M.REFERRAL_PROGRAM_POPOVER_V2 : C === A.M.REFERRAL_PROGRAM_POPOVER, x = (0, M.H)(), y = (e = J.dm.useSetting(), t = (0, j.A)(), !0 === e && !0 === t);
+    let [f] = (0, O.Cc)(m && I ? A.M.REFERRAL_PROGRAM_POPOVER_V2 : null, g ?? "", void 0, !0), [C, T] = (0, O.kn)(E, void 0, !0), N = null == f && C === A.M.RECURRING_3P_PROMOTION_POPOVER, S = I ? f === A.M.REFERRAL_PROGRAM_POPOVER_V2 : C === A.M.REFERRAL_PROGRAM_POPOVER, x = (0, M.H)(), v = (e = J.dm.useSetting(), t = (0, j.A)(), !0 === e && !0 === t);
     return (0, i.jsx)(eN, {
-        theme: l,
-        showLibrary: r,
+        theme: r,
+        showLibrary: l,
         hasLibraryApplication: o,
         storeLink: d,
         homeLink: n,
@@ -434,7 +434,7 @@ function ex() {
         showReferralProgramPopover: S,
         showRecurring3PPopover: N,
         shouldShowMessageRequestsRow: x,
-        shouldShowFamilyCenterRow: y,
+        shouldShowFamilyCenterRow: v,
         selectedChannelId: c,
         path: h
     })

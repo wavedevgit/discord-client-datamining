@@ -42,9 +42,9 @@ function c() {
 }
 
 function u() {
-    let [e, t] = i.useState(null), [n, l] = i.useState(null), [r, o] = i.useState(null), [c, u] = i.useState([]), x = i.useRef(null), [p, g] = i.useState(400), [_, f] = i.useState(400), v = i.useCallback(() => {
+    let [e, t] = i.useState(null), [n, l] = i.useState(null), [r, o] = i.useState(null), [c, u] = i.useState([]), p = i.useRef(null), [x, g] = i.useState(400), [_, f] = i.useState(400), v = i.useCallback(() => {
         setTimeout(() => {
-            o(x.current?.getProperties() ?? {}), u(x.current?.getArtboards() ?? []), l({})
+            o(p.current?.getProperties() ?? {}), u(p.current?.getArtboards() ?? []), l({})
         }, 1e3)
     }, []), b = i.useCallback((e, t) => {
         null != n && l(n => ({
@@ -64,12 +64,12 @@ function u() {
             onRiveLoad: j
         }), null != e && (0, a.jsx)("div", {
             style: {
-                width: p,
+                width: x,
                 height: _
             },
             children: (0, a.jsx)(d._7m, {
                 src: e,
-                ref: x,
+                ref: p,
                 onLoad: v,
                 dynamicDataBinding: n ?? {}
             })
@@ -82,7 +82,7 @@ function u() {
                 }), (0, a.jsx)(d.ksK, {
                     type: "number",
                     label: "width",
-                    value: p.toString(),
+                    value: x.toString(),
                     onChange: e => g(parseInt(e))
                 }), (0, a.jsx)(d.ksK, {
                     type: "number",

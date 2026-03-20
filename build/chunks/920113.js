@@ -1,11 +1,11 @@
 /** chunk id: 920113 params = (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => v
 });
 var i = n(627968),
     a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    l = n(503698),
+    r = n.n(l),
     s = n(877227),
     o = n(311907),
     d = n(397927),
@@ -25,7 +25,7 @@ var i = n(627968),
     N = n(985018),
     S = n(706572),
     x = n(370808);
-let y = (0, u.A)(function(e) {
+let v = (0, u.A)(function(e) {
     let {
         width: t
     } = e, n = (0, p.c)("ICYMIPage", !1);
@@ -36,13 +36,13 @@ let y = (0, u.A)(function(e) {
     }, [n]), (0, A.Ay)(() => {
         n && (0, m.d)("icymi")
     });
-    let r = (0, o.bG)([g.A], () => g.A.theme),
+    let l = (0, o.bG)([g.A], () => g.A.theme),
         u = (0, o.bG)([E.A], () => E.A.isRefreshing()),
-        y = a.useRef(null);
+        v = a.useRef(null);
     (0, h.HU)({
         location: N.intl.string(N.t["jnXV/V"])
     });
-    let [v, b] = a.useState(!1);
+    let [y, b] = a.useState(!1);
     a.useEffect(() => {
         let e = e => {
                 e.metaKey && b(!0)
@@ -58,17 +58,17 @@ let y = (0, u.A)(function(e) {
         }
     }, []);
     let O = (0, f.E)(),
-        L = p.E2.useExperiment({
+        L = p.f8.useConfig({
             location: "icymi page"
         }).enabled,
         R = a.useCallback(async e => {
             e.metaKey && L ? await (0, I.be)(T.ZSU.ACK_GRAVITY_REGENERATE_FEED_AND_CLEAR_READ_STATES_BUTTON) : await O()
         }, [O, L]),
-        P = v && L ? N.intl.string(N.t.YplSn2) : N.intl.string(N.t.wzzjk9);
+        P = y && L ? N.intl.string(N.t.YplSn2) : N.intl.string(N.t.wzzjk9);
     return n ? (0, i.jsxs)("div", {
-        className: l()(x.TE, S.kL),
+        className: r()(x.TE, S.kL),
         children: [(0, i.jsx)(d.NPJ, {
-            theme: r,
+            theme: l,
             children: e => (0, i.jsxs)(_.A, {
                 className: e,
                 toolbar: (0, i.jsx)(_.A.Icon, {
@@ -91,10 +91,10 @@ let y = (0, u.A)(function(e) {
                 })]
             })
         }), (0, i.jsx)("div", {
-            ref: y,
-            className: l()(x.Qs, S.Qs),
+            ref: v,
+            className: r()(x.Qs, S.Qs),
             children: (0, i.jsx)(C.A, {
-                scrollContainerRef: y
+                scrollContainerRef: v
             })
         })]
     }) : null

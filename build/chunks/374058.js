@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(397927),
     m = n(297413),
     h = n(58736),
-    x = n(379078),
-    p = n(704554),
+    p = n(379078),
+    x = n(704554),
     g = n(287809),
     _ = n(957565),
     f = n(405269),
@@ -106,7 +106,7 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
                 },
                 onClose: r,
                 filteredEvents: d
-            } = e, c = g.default.getUser(l), x = o()(i);
+            } = e, c = g.default.getUser(l), p = o()(i);
             return (0, a.jsxs)("div", {
                 "data-mtctest-ignore": "true",
                 children: [(0, a.jsxs)(h.Ay, {
@@ -149,8 +149,8 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
                         copyValue: i.toISOString(),
                         children: (0, a.jsxs)("time", {
                             dateTime: i.toISOString(),
-                            title: (0, f.i$)(x, "LLLL"),
-                            children: ["(", o().locale(), ") ", (0, f.mk)(x)]
+                            title: (0, f.i$)(p, "LLLL"),
+                            children: ["(", o().locale(), ") ", (0, f.mk)(p)]
                         })
                     }), null != c && (0, a.jsx)(j.mA, {
                         name: "User",
@@ -238,7 +238,7 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
         }
     },
     D = {
-        searchType: x.n.REGEX,
+        searchType: p.n.REGEX,
         searchStringGenerator: e => {
             let {
                 event: t,
@@ -255,10 +255,10 @@ function M() {
         l = (0, d.bG)([v.A], () => v.A.loggedEventsVersion),
         [r, o] = i.useState(() => Object.keys(w)),
         [m, h] = i.useState(v.A.loggedEvents),
-        x = i.useCallback(e => {
+        p = i.useCallback(e => {
             h(e)
         }, []);
-    (0, p.RT)(t, v.A.loggedEvents, x, D, [l]);
+    (0, x.RT)(t, v.A.loggedEvents, p, D, [l]);
     let g = m.filter(e => {
             for (let t of r)
                 if (w[t].filter(e)) return !0;

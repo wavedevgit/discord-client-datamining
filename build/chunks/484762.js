@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(435371),
     m = n(421380),
     h = n(397927),
-    x = n(73153),
-    p = n(391973),
+    p = n(73153),
+    x = n(391973),
     g = n(684013),
     _ = n(56562),
     f = n(765671),
@@ -273,12 +273,12 @@ let et = i.memo(function(e) {
 function ea(e) {
     let t, n = (t = Object.values((0, c.yK)([w.A], () => w.A.getWidgetsForLayout(q.G))), t.find(t => t.type === e));
     return [n, () => {
-        if (null != n)(0, p.uv)(n.id);
+        if (null != n)(0, x.uv)(n.id);
         else {
             let t = X[e];
             if (null == t) return;
             let n = t(q.G);
-            (0, p.jn)(n)
+            (0, x.jn)(n)
         }
     }]
 }
@@ -601,7 +601,7 @@ let er = i.memo(function(e) {
         })
     });
 
-function ex(e) {
+function ep(e) {
     let {
         modalProps: t,
         onClose: n
@@ -654,7 +654,7 @@ function ex(e) {
         })]
     })
 }
-let ep = {
+let ex = {
     native: {
         label: "Native",
         filter: e => e.type === C.ON.NativeLegacy || e.type === C.ON.NativeOOP
@@ -795,8 +795,8 @@ let eb = ["__webpack_require__", "fn"],
                 stack: c,
                 data: u,
                 timestamp: m,
-                pid: x
-            } = t, p = o()(m), g = ef(l);
+                pid: p
+            } = t, x = o()(m), g = ef(l);
             return (0, a.jsxs)(h.ArX, {
                 className: Y.bW,
                 children: [(0, a.jsxs)(j.A, {
@@ -836,11 +836,11 @@ let eb = ["__webpack_require__", "fn"],
                     className: Y.ZK,
                     children: [(0, a.jsx)(W.mA, {
                         name: "Timestamp",
-                        copyValue: p.toISOString(),
+                        copyValue: x.toISOString(),
                         children: (0, a.jsx)("time", {
-                            dateTime: p.toISOString(),
-                            title: (0, L.i$)(p, "LLLL"),
-                            children: (0, L.i$)(p, "L h:mm:ss.SSS")
+                            dateTime: x.toISOString(),
+                            title: (0, L.i$)(x, "LLLL"),
+                            children: (0, L.i$)(x, "L h:mm:ss.SSS")
                         })
                     }), (0, a.jsx)(W.mA, {
                         name: "Log Type",
@@ -850,9 +850,9 @@ let eb = ["__webpack_require__", "fn"],
                         })
                     }), (0, a.jsx)(W.mA, {
                         name: "PID",
-                        copyValue: x?.toString() ?? "null",
+                        copyValue: p?.toString() ?? "null",
                         children: (0, a.jsx)("code", {
-                            children: x?.toString() ?? "null"
+                            children: p?.toString() ?? "null"
                         })
                     }), (0, a.jsx)(W.mA, {
                         name: "Native ID",
@@ -915,20 +915,20 @@ function ey() {
     let {
         ref: e,
         height: t
-    } = (0, f.Ay)(), n = (0, c.bG)([N.A], () => N.A.isModuleLoggingEnabled()), [l, r] = i.useState(n), [o, d] = i.useState(!1), [u, m] = i.useState(null), [x, p] = i.useState(Object.keys(ep)), [_, v] = (0, c.bG)([N.A], () => N.A.getOverlayLoggingBreadcrumbs(), [], G.D), [b, j] = i.useState(null), A = b ?? _, C = null != b ? -1 : v;
+    } = (0, f.Ay)(), n = (0, c.bG)([N.A], () => N.A.isModuleLoggingEnabled()), [l, r] = i.useState(n), [o, d] = i.useState(!1), [u, m] = i.useState(null), [p, x] = i.useState(Object.keys(ex)), [_, v] = (0, c.bG)([N.A], () => N.A.getOverlayLoggingBreadcrumbs(), [], G.D), [b, j] = i.useState(null), A = b ?? _, C = null != b ? -1 : v;
     i.useEffect(() => {
         0 !== C && (o ? m(A.reduce((e, t) => "game_tracking_starting" === t.name ? Math.max(e, t.timestamp) : e, 0)) : m(null))
     }, [o, A, C]);
     let [y, T] = i.useState(""), S = i.useMemo(() => 0 === C ? [] : A.filter(e => {
         if (o && null != u && e.timestamp < u) return !1;
-        for (let t of x) {
+        for (let t of p) {
             let {
                 filter: n
-            } = ep[t];
+            } = ex[t];
             if (n(e)) return !0
         }
         return !1
-    }), [A, x, u, o, C]), [E, I] = i.useState(S), [k, O] = i.useState(null), w = i.useMemo(() => A.find(e => e.key === k), [A, k]), D = i.useCallback(e => {
+    }), [A, p, u, o, C]), [E, I] = i.useState(S), [k, O] = i.useState(null), w = i.useMemo(() => A.find(e => e.key === k), [A, k]), D = i.useCallback(e => {
         I(e)
     }, []), {
         renderSelectedTab: M
@@ -956,7 +956,7 @@ function ey() {
         }, []),
         $ = i.useCallback(e => {
             if (e) return j(null);
-            (0, h.qfG)(e => (0, a.jsx)(ex, {
+            (0, h.qfG)(e => (0, a.jsx)(ep, {
                 modalProps: e,
                 onClose: t => {
                     W(t), e.onClose()
@@ -1013,12 +1013,12 @@ function ey() {
                 })]
             }), (0, a.jsx)("div", {
                 className: s()(Y._V, Y.XQ),
-                children: Object.entries(ep).map(e => {
+                children: Object.entries(ex).map(e => {
                     let [t, n] = e;
                     return (0, a.jsx)(h.DUT, {
-                        className: s()(Y.pb, x.includes(t) && Y.bx),
+                        className: s()(Y.pb, p.includes(t) && Y.bx),
                         onClick: () => {
-                            p(e => e.includes(t) ? e.filter(e => e !== t) : [...e, t])
+                            x(e => e.includes(t) ? e.filter(e => e !== t) : [...e, t])
                         },
                         children: (0, a.jsx)(h.Text, {
                             variant: "text-sm/normal",
@@ -1211,11 +1211,11 @@ function eR() {
 
 function eO() {
     let [e, t] = i.useState("state");
-    return i.useEffect(() => (x.h.dispatch({
+    return i.useEffect(() => (p.h.dispatch({
         type: "OVERLAY_SET_DETAILED_LOGGING",
         enabled: !0
     }), () => {
-        x.h.dispatch({
+        p.h.dispatch({
             type: "OVERLAY_SET_DETAILED_LOGGING",
             enabled: !1
         })

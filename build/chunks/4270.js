@@ -1,11 +1,11 @@
 /** chunk id: 4270 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => y
 });
 var i = n(627968),
     a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    l = n(503698),
+    r = n.n(l),
     s = n(837381),
     o = n(731738),
     d = n(397927),
@@ -25,14 +25,14 @@ var i = n(627968),
     N = n(687599),
     S = n(652215),
     x = n(985018),
-    y = n(38702);
+    v = n(38702);
 
-function v() {
+function y() {
     let e = a.useRef(null),
         t = (0, I.A)(),
         n = (0, f.I)(),
-        r = (0, g.r)(),
-        v = (0, c.w)(),
+        l = (0, g.r)(),
+        y = (0, c.w)(),
         b = (0, A.A)("message-requests-spam-list"),
         {
             channelId: O
@@ -61,22 +61,22 @@ function v() {
             } = e, a = t[n], s = t[n + 1]?.channel?.id, o = a.channel.id;
             return (0, i.jsx)(T.A, {
                 index: n,
-                className: l()({
-                    [y.wH]: null != O && O === o,
-                    [y.wZ]: null != O && O === s
+                className: r()({
+                    [v.wH]: null != O && O === o,
+                    [v.wZ]: null != O && O === s
                 }),
                 channel: a.channel,
                 user: a.user,
-                hasSingleMessageRequest: r
+                hasSingleMessageRequest: l
             }, o)
-        }, [t, r, O]),
+        }, [t, l, O]),
         M = a.useCallback(() => (0, i.jsxs)(h.A, {
-            className: y.Gf,
+            className: v.Gf,
             children: [x.intl.format(x.t.C79Edh, {
                 count: n
-            }), v && n > 0 ? (0, i.jsxs)(i.Fragment, {
+            }), y && n > 0 ? (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(d.Text, {
-                    className: y.sg,
+                    className: v.sg,
                     variant: "eyebrow",
                     color: "text-default",
                     tag: "span",
@@ -88,7 +88,7 @@ function v() {
                     "aria-label": x.intl.string(x.t.p6t7RC)
                 })]
             }) : null]
-        }, "message-requests-spam-title"), [n, P, v]);
+        }, "message-requests-spam-title"), [n, P, y]);
     return 0 === t.length ? (0, i.jsx)(C.A, {
         section: N.zz.SPAM
     }) : (0, i.jsx)(s.hD, {
@@ -97,12 +97,12 @@ function v() {
             children: n => {
                 let {
                     ref: a,
-                    role: r,
-                    ...l
+                    role: l,
+                    ...r
                 } = n;
                 return (0, i.jsx)(d.B8B, {
-                    className: y.p_,
-                    innerRole: r,
+                    className: v.p_,
+                    innerRole: l,
                     innerAriaLabel: x.intl.string(x.t.e7GWjQ),
                     ref: t => {
                         e.current = t, a.current = t?.getScrollerNode() ?? null
@@ -116,7 +116,7 @@ function v() {
                     sections: [t.length],
                     chunkSize: 30,
                     fade: !0,
-                    ...l
+                    ...r
                 }, "message-requests-spam-list")
             }
         })

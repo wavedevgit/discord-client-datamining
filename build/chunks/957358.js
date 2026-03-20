@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    r = n(735438),
-    l = n.n(r),
+    l = n(735438),
+    r = n.n(l),
     s = n(998304),
     o = n(485246);
 class d extends a.PureComponent {
@@ -22,8 +22,8 @@ class d extends a.PureComponent {
             maxValue: n,
             data: i,
             animate: a
-        } = this.props, r = null == e || e.data !== t.data && !l().isEqual(e.data, t.data);
-        if (r && (this.dataChangedAt = performance.now(), this.maxValue = null != n ? n : Math.max(...i)), r || null == e || !e.animate && a || e.color !== this.props.color) {
+        } = this.props, l = null == e || e.data !== t.data && !r().isEqual(e.data, t.data);
+        if (l && (this.dataChangedAt = performance.now(), this.maxValue = null != n ? n : Math.max(...i)), l || null == e || !e.animate && a || e.color !== this.props.color) {
             let e = s.E2(this.props.color);
             this.fillColor = `rgba(${e.r}, ${e.g}, ${e.b}, 0.5)`, window.cancelAnimationFrame(this.animationFrameRequestId), this.animationFrameRequestId = window.requestAnimationFrame(this.updateAnimation)
         }
@@ -42,18 +42,18 @@ class d extends a.PureComponent {
         if (null == i) return;
         let {
             data: a,
-            updateInterval: r,
-            color: l,
+            updateInterval: l,
+            color: r,
             numUpdatesToShow: o,
             lineWidth: d,
             animate: c,
             gradientStopColor: u
         } = this.props;
         if (a.length < 2) return;
-        let A = Math.max(Math.min((e - this.dataChangedAt) / r, 1), 0),
+        let A = Math.max(Math.min((e - this.dataChangedAt) / l, 1), 0),
             h = i.getContext("2d"),
             _ = this.maxValue;
-        h.strokeStyle = l, h.lineWidth = d;
+        h.strokeStyle = r, h.lineWidth = d;
         let m = i.height - h.lineWidth,
             g = h.createLinearGradient(0, 0, 0, m);
         if (null != u) g.addColorStop(0, u);
@@ -62,7 +62,7 @@ class d extends a.PureComponent {
                 r: e,
                 g: t,
                 b: n
-            } = s.E2(l);
+            } = s.E2(r);
             g.addColorStop(0, `rgba(${e}, ${t}, ${n}, 0)`)
         }
         g.addColorStop(1, this.fillColor), h.fillStyle = g;

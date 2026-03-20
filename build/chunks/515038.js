@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(775602),
     m = n(409626),
     h = n(106799),
-    x = n(714510),
-    p = n(890687),
+    p = n(714510),
+    x = n(890687),
     g = n(710969),
     _ = n(92246),
     f = n(453384),
@@ -54,7 +54,7 @@ function N(e) {
     }), W = t.userStatus?.completedAt != null, H = t.userStatus?.claimedAt != null, K = (0, _.ks)(t.config), z = (0, _._Z)(t.config), {
         completedRatio: $,
         completedRatioDisplay: q
-    } = (0, p.O9)(t), Q = (0, x.gj)(t, w, m.Ob.QuestHome, D), Y = i.useMemo(() => H && K ? T.intl.format(T.t["8Op4c4"], {
+    } = (0, x.O9)(t), Q = (0, p.gj)(t, w, m.Ob.QuestHome, D), Y = i.useMemo(() => H && K ? T.intl.format(T.t["8Op4c4"], {
         balanceHook: () => (0, a.jsxs)(I, {
             questId: t.id,
             children: [(0, a.jsx)(h.A, {

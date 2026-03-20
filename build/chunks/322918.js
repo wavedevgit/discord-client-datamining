@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    l = n(503698),
+    r = n.n(l),
     s = n(311907),
     o = n(827734),
     d = n(421380),
@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(128286),
     S = n(309010),
     x = n(625180),
-    y = n(898879),
-    v = n(293495),
+    v = n(898879),
+    y = n(293495),
     b = n(165610),
     O = n(652215),
     L = n(5867),
@@ -40,7 +40,7 @@ let D = {
 function M(e) {
     let {
         frame: t
-    } = e, n = (0, p.h)(t.applicationId), r = (0, u.A)(), {
+    } = e, n = (0, p.h)(t.applicationId), l = (0, u.A)(), {
         selectedChannelId: M,
         selectedVoiceChannelId: j
     } = (0, s.cf)([S.A], () => ({
@@ -70,7 +70,7 @@ function M(e) {
         return e.observe(V.current), () => e.disconnect()
     }, []), a.useEffect(() => {
         let e = e => {
-            null == k.current || (0, c.HG$)(k.current, e.target) || r || x.A.updateFrameLayoutMode({
+            null == k.current || (0, c.HG$)(k.current, e.target) || l || x.A.updateFrameLayoutMode({
                 applicationId: t.applicationId,
                 layoutMode: b.y.PIP
             })
@@ -78,7 +78,7 @@ function M(e) {
         return document.addEventListener("mousedown", e), () => {
             document.removeEventListener("mousedown", e)
         }
-    }, [t.applicationId, r]);
+    }, [t.applicationId, l]);
     let W = B.width / Math.max(B.height, 1) < L.B5,
         K = 0,
         q = 0,
@@ -92,11 +92,11 @@ function M(e) {
         Q = (0, m.G)();
     if (null == n) return null;
     let X = (U ?? O.da6) + G,
-        Z = (0, v.YY)(t);
+        Z = (0, y.YY)(t);
     return (0, i.jsx)(c.NPJ, {
         theme: O.NJ8.DARK,
         children: e => (0, i.jsxs)("div", {
-            className: l()(P.iE, D[$], e),
+            className: r()(P.iE, D[$], e),
             ref: k,
             style: {
                 right: w && !Number.isNaN(X) ? X : 0
@@ -106,7 +106,7 @@ function M(e) {
             }), (0, i.jsx)("div", {
                 className: P.lq,
                 children: (0, i.jsx)("div", {
-                    className: l()(P.ht, {
+                    className: r()(P.ht, {
                         [P.kK]: z
                     }),
                     style: {
@@ -116,7 +116,7 @@ function M(e) {
                         paddingBottom: q
                     },
                     ref: V,
-                    children: (0, i.jsx)(y.A, {
+                    children: (0, i.jsx)(v.A, {
                         className: P.pU,
                         embedId: Z
                     })

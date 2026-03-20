@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    r = n(397927),
-    l = n(189252),
+    l = n(397927),
+    r = n(189252),
     s = n(538064),
     o = n(786574),
     d = n(641616),
@@ -14,17 +14,17 @@ var i = n(627968),
 function u(e) {
     let {
         onClose: t
-    } = e, n = (0, d.x)(), a = (0, o.N)(n, s.Ft), l = (0, c.A)();
-    return (0, i.jsxs)(r.W1t, {
+    } = e, n = (0, d.x)(), a = (0, o.N)(n, s.Ft), r = (0, c.A)();
+    return (0, i.jsxs)(l.W1t, {
         "data-menu-migrated": !0,
         onSelect: () => {},
         navId: "devtools-popout",
         variant: "fixed",
         onClose: t,
         "aria-label": "DevTools Actions",
-        children: [a, (0, i.jsx)(r.rXV, {
+        children: [a, (0, i.jsx)(l.rXV, {
             "aria-label": "Playgrounds",
-            children: l
+            children: r
         })]
     })
 }
@@ -40,10 +40,10 @@ function A(e) {
     return (0, i.jsx)("div", {
         onMouseEnter: () => h(!0),
         onMouseLeave: () => h(!1),
-        children: (0, i.jsx)(r.YNO, {
+        children: (0, i.jsx)(l.YNO, {
             targetElementRef: A,
             shouldShow: n,
-            animation: r.YNO.Animation.NONE,
+            animation: l.YNO.Animation.NONE,
             position: "bottom",
             align: "right",
             autoInvert: !1,
@@ -56,10 +56,10 @@ function A(e) {
                 let {
                     isShown: a
                 } = n;
-                return (0, i.jsx)(l.A, {
+                return (0, i.jsx)(r.A, {
                     ref: A,
                     onClick: () => (0, s.Ft)(),
-                    icon: r.VaJ,
+                    icon: l.VaJ,
                     "aria-label": "DevTools",
                     selected: a,
                     ...t
