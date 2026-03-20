@@ -3,27 +3,27 @@ a.d(t, {
     A: () => d
 });
 var l = a(627968),
-    r = a(397927),
-    n = a(53566),
+    n = a(397927),
+    r = a(53566),
     s = a(427941),
-    o = a(119039);
+    i = a(119039);
 let d = e => {
     let {
         backgroundImage: t,
         href: a,
         ctaText: d
-    } = e, i = (0, n.S)(d ?? "");
+    } = e, o = (0, r.S)(d ?? "");
     return (0, l.jsx)("div", {
-        className: o.q,
+        className: i.q,
         children: (0, l.jsx)(s.A, {
             backgroundImage: t,
             backgroundPosition: "left",
             children: (0, l.jsx)("div", {
-                className: o.R,
-                children: (0, l.jsx)(r.Text, {
+                className: i.R,
+                children: (0, l.jsx)(n.Text, {
                     variant: "text-lg/bold",
                     color: "always-white",
-                    children: i
+                    children: o
                 })
             })
         })

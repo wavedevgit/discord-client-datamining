@@ -1,12 +1,12 @@
 /** chunk id: 41770 params = (module,exports,require) **/
-l.d(t, {
-    C8: () => r,
-    Ej: () => a,
-    Ot: () => i,
-    oP: () => o,
+r.d(t, {
+    C8: () => l,
+    Ej: () => c,
+    Ot: () => a,
+    oP: () => s,
     uG: () => n
 });
-let r = "dummy-tenant",
+let l = "dummy-tenant",
     n = {
         id: "dummy-shop-home",
         children: [{
@@ -71,7 +71,7 @@ let r = "dummy-tenant",
             templateId: "dummy-popular-picks"
         }]
     },
-    i = {
+    a = {
         id: "dummy-popular-picks",
         children: [{
             block: "Section",
@@ -100,7 +100,7 @@ let r = "dummy-tenant",
             }]
         }]
     },
-    o = {
+    s = {
         id: "dummy-orb-shelf",
         children: [{
             block: "Section",
@@ -143,7 +143,7 @@ let r = "dummy-tenant",
             }]
         }]
     },
-    a = {
+    c = {
         id: "dummy-sku-list",
         children: [{
             block: "SkuList",

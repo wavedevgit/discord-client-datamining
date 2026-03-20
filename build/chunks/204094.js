@@ -4,10 +4,10 @@ a.d(t, {
 });
 var l = a(627968);
 a(64700);
-var r = a(397927),
-    n = a(206845),
+var n = a(397927),
+    r = a(206845),
     s = a(453854),
-    o = a(985018);
+    i = a(985018);
 let d = {
     name: "SkuPreview",
     id: "skupreview",
@@ -18,67 +18,67 @@ let d = {
         return (0, l.jsxs)("div", {
             children: [(0, l.jsx)(s.A, {
                 skuId: t
-            }), (0, l.jsx)("hr", {}), (0, l.jsx)(r.Text, {
+            }), (0, l.jsx)("hr", {}), (0, l.jsx)(n.Text, {
                 variant: "text-md/bold",
                 children: "Sample Skus:"
-            }), (0, l.jsxs)(r.BJc, {
+            }), (0, l.jsxs)(n.BJc, {
                 direction: "horizontal",
-                children: [(0, l.jsx)(r.Text, {
+                children: [(0, l.jsx)(n.Text, {
                     variant: "text-sm/bold",
                     children: "Avatar Decoration"
-                }), (0, l.jsx)(n.A, {
-                    text: o.intl.string(o.t.OpuAlK),
+                }), (0, l.jsx)(r.A, {
+                    text: i.intl.string(i.t.OpuAlK),
                     delay: 0,
                     "aria-label": !1,
                     copyValue: "1458472704192811088",
-                    children: e => (0, l.jsx)(r.DUT, {
+                    children: e => (0, l.jsx)(n.DUT, {
                         ...e,
                         style: {
                             cursor: "pointer"
                         },
-                        children: (0, l.jsx)(r.Text, {
+                        children: (0, l.jsx)(n.Text, {
                             variant: "text-sm/normal",
                             children: "1458472704192811088"
                         })
                     })
                 })]
-            }), (0, l.jsxs)(r.BJc, {
+            }), (0, l.jsxs)(n.BJc, {
                 direction: "horizontal",
-                children: [(0, l.jsx)(r.Text, {
+                children: [(0, l.jsx)(n.Text, {
                     variant: "text-sm/bold",
                     children: "Profile Effect"
-                }), (0, l.jsx)(n.A, {
-                    text: o.intl.string(o.t.OpuAlK),
+                }), (0, l.jsx)(r.A, {
+                    text: i.intl.string(i.t.OpuAlK),
                     delay: 0,
                     "aria-label": !1,
                     copyValue: "1458479739110166560",
-                    children: e => (0, l.jsx)(r.DUT, {
+                    children: e => (0, l.jsx)(n.DUT, {
                         ...e,
                         style: {
                             cursor: "pointer"
                         },
-                        children: (0, l.jsx)(r.Text, {
+                        children: (0, l.jsx)(n.Text, {
                             variant: "text-sm/normal",
                             children: "1458479739110166560"
                         })
                     })
                 })]
-            }), (0, l.jsxs)(r.BJc, {
+            }), (0, l.jsxs)(n.BJc, {
                 direction: "horizontal",
-                children: [(0, l.jsx)(r.Text, {
+                children: [(0, l.jsx)(n.Text, {
                     variant: "text-sm/bold",
                     children: "Nameplate"
-                }), (0, l.jsx)(n.A, {
-                    text: o.intl.string(o.t.OpuAlK),
+                }), (0, l.jsx)(r.A, {
+                    text: i.intl.string(i.t.OpuAlK),
                     delay: 0,
                     "aria-label": !1,
                     copyValue: "1458472704524156959",
-                    children: e => (0, l.jsx)(r.DUT, {
+                    children: e => (0, l.jsx)(n.DUT, {
                         ...e,
                         style: {
                             cursor: "pointer"
                         },
-                        children: (0, l.jsx)(r.Text, {
+                        children: (0, l.jsx)(n.Text, {
                             variant: "text-sm/normal",
                             children: "1458472704524156959"
                         })

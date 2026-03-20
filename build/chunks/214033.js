@@ -4,12 +4,12 @@ a.d(t, {
 });
 var l = a(627968);
 a(64700);
-var r = a(397927),
-    n = a(206845),
+var n = a(397927),
+    r = a(206845),
     s = a(604238),
-    o = a(261225),
+    i = a(261225),
     d = a(282203),
-    i = a(985018);
+    o = a(985018);
 let c = {
     name: "SkuList",
     id: "skulist",
@@ -21,16 +21,16 @@ let c = {
             showSkeleton: u
         } = e, x = (0, s.e)();
         return (0, l.jsxs)("div", {
-            children: [(0, l.jsx)(r.Heading, {
+            children: [(0, l.jsx)(n.Heading, {
                 variant: "heading-lg/bold",
                 children: "The SkuList component takes a list of skus and maps them into a block"
-            }), (0, l.jsx)(r.Text, {
+            }), (0, l.jsx)(n.Text, {
                 variant: "text-md/semibold",
                 children: "Here, we have a list of 3 skuIds and we map over them, pushing them into ShopProductCards"
-            }), (0, l.jsx)(r.Text, {
+            }), (0, l.jsx)(n.Text, {
                 variant: "text-md/semibold",
                 children: "This will be useful when wanting to get a dynamic list of sku ids from the server (like popular picks) and push them into a product grid"
-            }), (0, l.jsx)("br", {}), (0, l.jsx)(o.A, {
+            }), (0, l.jsx)("br", {}), (0, l.jsx)(i.A, {
                 columns: 3,
                 children: (0, l.jsx)(d.A, {
                     skuIds: t?.split(","),
@@ -40,67 +40,67 @@ let c = {
                     showSkeleton: u,
                     componentMap: x
                 })
-            }), (0, l.jsx)("hr", {}), (0, l.jsx)(r.Text, {
+            }), (0, l.jsx)("hr", {}), (0, l.jsx)(n.Text, {
                 variant: "text-md/bold",
                 children: "Sample Skus:"
-            }), (0, l.jsxs)(r.BJc, {
+            }), (0, l.jsxs)(n.BJc, {
                 direction: "horizontal",
-                children: [(0, l.jsx)(r.Text, {
+                children: [(0, l.jsx)(n.Text, {
                     variant: "text-sm/bold",
                     children: "Avatar Decoration"
-                }), (0, l.jsx)(n.A, {
-                    text: i.intl.string(i.t.OpuAlK),
+                }), (0, l.jsx)(r.A, {
+                    text: o.intl.string(o.t.OpuAlK),
                     delay: 0,
                     "aria-label": !1,
                     copyValue: "1458472704192811088",
-                    children: e => (0, l.jsx)(r.DUT, {
+                    children: e => (0, l.jsx)(n.DUT, {
                         ...e,
                         style: {
                             cursor: "pointer"
                         },
-                        children: (0, l.jsx)(r.Text, {
+                        children: (0, l.jsx)(n.Text, {
                             variant: "text-sm/normal",
                             children: "1458472704192811088"
                         })
                     })
                 })]
-            }), (0, l.jsxs)(r.BJc, {
+            }), (0, l.jsxs)(n.BJc, {
                 direction: "horizontal",
-                children: [(0, l.jsx)(r.Text, {
+                children: [(0, l.jsx)(n.Text, {
                     variant: "text-sm/bold",
                     children: "Profile Effect"
-                }), (0, l.jsx)(n.A, {
-                    text: i.intl.string(i.t.OpuAlK),
+                }), (0, l.jsx)(r.A, {
+                    text: o.intl.string(o.t.OpuAlK),
                     delay: 0,
                     "aria-label": !1,
                     copyValue: "1458479739110166560",
-                    children: e => (0, l.jsx)(r.DUT, {
+                    children: e => (0, l.jsx)(n.DUT, {
                         ...e,
                         style: {
                             cursor: "pointer"
                         },
-                        children: (0, l.jsx)(r.Text, {
+                        children: (0, l.jsx)(n.Text, {
                             variant: "text-sm/normal",
                             children: "1458479739110166560"
                         })
                     })
                 })]
-            }), (0, l.jsxs)(r.BJc, {
+            }), (0, l.jsxs)(n.BJc, {
                 direction: "horizontal",
-                children: [(0, l.jsx)(r.Text, {
+                children: [(0, l.jsx)(n.Text, {
                     variant: "text-sm/bold",
                     children: "Nameplate"
-                }), (0, l.jsx)(n.A, {
-                    text: i.intl.string(i.t.OpuAlK),
+                }), (0, l.jsx)(r.A, {
+                    text: o.intl.string(o.t.OpuAlK),
                     delay: 0,
                     "aria-label": !1,
                     copyValue: "1458472704524156959",
-                    children: e => (0, l.jsx)(r.DUT, {
+                    children: e => (0, l.jsx)(n.DUT, {
                         ...e,
                         style: {
                             cursor: "pointer"
                         },
-                        children: (0, l.jsx)(r.Text, {
+                        children: (0, l.jsx)(n.Text, {
                             variant: "text-sm/normal",
                             children: "1458472704524156959"
                         })

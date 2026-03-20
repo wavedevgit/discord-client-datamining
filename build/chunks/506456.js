@@ -1,12 +1,12 @@
 /** chunk id: 506456 params = (module,exports,require) **/
-l.d(t, {
+r.d(t, {
     A: () => p,
-    c: () => s
-}), l(323874), l(14289), l(35956), l(321073);
-var r = l(64700),
-    n = l(735438),
-    i = l(736653);
-let o = {
+    c: () => i
+}), r(323874), r(14289), r(35956), r(321073);
+var l = r(64700),
+    n = r(735438),
+    a = r(736653);
+let s = {
         gif: "image/gif",
         webp: "image/webp",
         apng: "image/apng",
@@ -18,102 +18,102 @@ let o = {
         webm: "video/webm",
         mov: "video/quicktime"
     },
-    a = new Set(["video/mp4", "video/webm", "video/quicktime"]),
-    s = e => null != e && a.has(e),
+    c = new Set(["video/mp4", "video/webm", "video/quicktime"]),
+    i = e => null != e && c.has(e),
     d = [],
-    c = new Map,
+    o = new Map,
     u = new Map,
-    h = (e, t) => {
+    m = (e, t) => {
         if (null != e) return (0, n.isString)(e) ? e : "light" === t ? e.light : e.dark
     },
-    m = e => {
+    h = e => {
         try {
             let t = new URL(e).pathname;
-            return o[t.split(".").pop()?.toLowerCase() ?? ""]
+            return s[t.split(".").pop()?.toLowerCase() ?? ""]
         } catch {
-            return o[e.split("?")[0].split(".").pop()?.toLowerCase() ?? ""]
+            return s[e.split("?")[0].split(".").pop()?.toLowerCase() ?? ""]
         }
     },
     p = e => {
-        let t = (0, i.Ay)(),
-            l = r.useMemo(() => {
-                let l;
-                return null == e ? d : (l = Array.isArray(e) ? e : [e], l.flatMap(e => {
+        let t = (0, a.Ay)(),
+            r = l.useMemo(() => {
+                let r;
+                return null == e ? d : (r = Array.isArray(e) ? e : [e], r.flatMap(e => {
                     if (null == e) return [];
                     if ("object" == typeof e && "src" in e) {
-                        let l = h(e.src, t);
-                        return null == l ? [] : [{
-                            src: l,
+                        let r = m(e.src, t);
+                        return null == r ? [] : [{
+                            src: r,
                             alt: e.alt,
-                            mimeType: m(l)
+                            mimeType: h(r)
                         }]
                     }
-                    let l = h(e, t);
-                    return null != l ? [{
-                        src: l,
-                        mimeType: m(l)
+                    let r = m(e, t);
+                    return null != r ? [{
+                        src: r,
+                        mimeType: h(r)
                     }] : []
                 }))
             }, [e, t]),
-            [n, o] = r.useState({}),
-            [a, s] = r.useState(new Set);
-        return r.useEffect(() => {
-            if (0 === l.length) return;
+            [n, s] = l.useState({}),
+            [c, i] = l.useState(new Set);
+        return l.useEffect(() => {
+            if (0 === r.length) return;
             let e = {},
                 t = [];
             for (let {
-                    src: r,
+                    src: l,
                     mimeType: n
                 }
-                of l) null == n && (c.has(r) ? e[r] = c.get(r) : t.push(r));
+                of r) null == n && (o.has(l) ? e[l] = o.get(l) : t.push(l));
             if (0 === Object.keys(e).length && 0 === t.length) return;
-            let r = !1;
+            let l = !1;
             return (async () => {
-                let l = t.length > 0 ? await Promise.all(t.map(async e => [e, await (e => {
-                    if (c.has(e)) return Promise.resolve({
-                        mimeType: c.get(e),
+                let r = t.length > 0 ? await Promise.all(t.map(async e => [e, await (e => {
+                    if (o.has(e)) return Promise.resolve({
+                        mimeType: o.get(e),
                         status: void 0
                     });
                     let t = u.get(e);
                     if (null != t) return t;
-                    let l = fetch(e, {
+                    let r = fetch(e, {
                         method: "HEAD"
                     }).then(t => {
                         if (!t.ok) return {
                             mimeType: void 0,
                             status: t.status
                         };
-                        let l = (t.headers.get("Content-Type") ?? "").split(";")[0].trim(),
-                            r = "" !== l ? l : void 0;
-                        return c.set(e, r), {
-                            mimeType: r,
+                        let r = (t.headers.get("Content-Type") ?? "").split(";")[0].trim(),
+                            l = "" !== r ? r : void 0;
+                        return o.set(e, l), {
+                            mimeType: l,
                             status: t.status
                         }
                     }).catch(() => ({
                         mimeType: void 0,
                         status: void 0
                     })).finally(() => u.delete(e));
-                    return u.set(e, l), l
+                    return u.set(e, r), r
                 })(e)])) : [];
-                if (!r) {
+                if (!l) {
                     let t = {},
-                        r = [];
-                    for (let [e, n] of l) null != n.status && n.status >= 400 ? r.push(e) : t[e] = n.mimeType;
-                    o(l => ({
-                        ...l,
+                        l = [];
+                    for (let [e, n] of r) null != n.status && n.status >= 400 ? l.push(e) : t[e] = n.mimeType;
+                    s(r => ({
+                        ...r,
                         ...e,
                         ...t
-                    })), r.length > 0 && s(e => new Set([...e, ...r]))
+                    })), l.length > 0 && i(e => new Set([...e, ...l]))
                 }
             })(), () => {
-                r = !0
+                l = !0
             }
-        }, [l]), r.useMemo(() => {
-            if (0 === l.length) return null;
-            let e = l.map(e => ({
+        }, [r]), l.useMemo(() => {
+            if (0 === r.length) return null;
+            let e = r.map(e => ({
                 ...e,
                 mimeType: e.mimeType ?? n[e.src]
             }));
-            return e.find(e => !a.has(e.src)) ?? e[0]
-        }, [l, n, a])
+            return e.find(e => !c.has(e.src)) ?? e[0]
+        }, [r, n, c])
     }

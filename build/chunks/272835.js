@@ -3,12 +3,12 @@ a.d(t, {
     H: () => u
 });
 var l = a(627968),
-    r = a(64700),
-    n = a(735438),
+    n = a(64700),
+    r = a(735438),
     s = a(397927),
-    o = a(252561),
+    i = a(252561),
     d = a(720462),
-    i = a(488669);
+    o = a(488669);
 let c = [{
         id: "xxs",
         label: "xxs",
@@ -82,8 +82,8 @@ let c = [{
         name: "Interactive H Scroll",
         id: "interactive-h-scroll",
         component: () => {
-            let [e, t] = r.useState(15), [a, u] = r.useState(8), [x, h] = r.useState("xl"), [m, b] = r.useState(!0), p = r.useMemo(() => [...Array(e)].map((e, t) => (0, l.jsx)(s.DUT, {
-                className: i.j,
+            let [e, t] = n.useState(15), [a, u] = n.useState(8), [x, h] = n.useState("xl"), [m, b] = n.useState(!0), p = n.useMemo(() => [...Array(e)].map((e, t) => (0, l.jsx)(s.DUT, {
+                className: o.j,
                 onClick: () => console.log(t),
                 children: (0, l.jsxs)(s.BJc, {
                     direction: "vertical",
@@ -103,7 +103,7 @@ let c = [{
                     edgeFade: x,
                     hideActionsWhenDisabled: m,
                     children: p
-                }), (0, l.jsx)(o.nB, {}), (0, l.jsxs)(o.MG, {
+                }), (0, l.jsx)(i.nB, {}), (0, l.jsxs)(i.MG, {
                     children: [(0, l.jsx)(s.Checkbox, {
                         checked: m,
                         onChange: () => b(!m),
@@ -113,11 +113,11 @@ let c = [{
                         min: 0,
                         value: e.toString(),
                         onChange: e => {
-                            t((0, n.clamp)(+e, 0, 100))
+                            t((0, r.clamp)(+e, 0, 100))
                         },
                         label: "Children Count"
                     })]
-                }), (0, l.jsx)(o.MG, {
+                }), (0, l.jsx)(i.MG, {
                     children: (0, l.jsx)(s.l6P, {
                         value: a,
                         options: c,
@@ -126,7 +126,7 @@ let c = [{
                         selectionMode: "single",
                         fullWidth: !0
                     })
-                }), (0, l.jsx)(o.MG, {
+                }), (0, l.jsx)(i.MG, {
                     children: (0, l.jsx)(s.l6P, {
                         value: x,
                         options: c,

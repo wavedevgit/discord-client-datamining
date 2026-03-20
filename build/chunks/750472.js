@@ -1,12 +1,12 @@
 /** chunk id: 750472 params = (module,exports,require) **/
 a.d(t, {
-    D: () => o
+    D: () => i
 });
 var l = a(627968),
-    r = a(397927),
-    n = a(673277),
+    n = a(397927),
+    r = a(673277),
     s = a(190503);
-let o = {
+let i = {
     name: "Image",
     id: "cms-image",
     component: e => {
@@ -15,8 +15,8 @@ let o = {
             videoSrc: a
         } = e;
         return (0, l.jsxs)("div", {
-            children: [(0, l.jsxs)(n.A, {
-                children: [(0, l.jsx)(r.Text, {
+            children: [(0, l.jsxs)(r.A, {
+                children: [(0, l.jsx)(n.Text, {
                     variant: "text-lg/semibold",
                     children: "Static image"
                 }), (0, l.jsx)("div", {
@@ -29,8 +29,8 @@ let o = {
                         }
                     })
                 })]
-            }), (0, l.jsxs)(n.A, {
-                children: [(0, l.jsx)(r.Text, {
+            }), (0, l.jsxs)(r.A, {
+                children: [(0, l.jsx)(n.Text, {
                     variant: "text-lg/semibold",
                     children: "Video asset"
                 }), (0, l.jsx)("div", {

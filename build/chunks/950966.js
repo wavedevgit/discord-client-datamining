@@ -1,34 +1,34 @@
 /** chunk id: 950966 params = (module,exports,require) **/
 a.d(t, {
-    Z: () => o
+    Z: () => i
 });
 var l = a(627968);
 a(64700);
-var r = a(397927),
-    n = a(264302);
+var n = a(397927),
+    r = a(264302);
 let s = e => {
         let {
             color: t,
             children: a
         } = e;
-        return (0, l.jsx)(r.ZpM, {
+        return (0, l.jsx)(n.ZpM, {
             style: {
                 backgroundColor: t,
                 padding: "16px",
                 minWidth: "100px",
                 minHeight: "100px"
             },
-            children: (0, l.jsx)(r.Text, {
+            children: (0, l.jsx)(n.Text, {
                 variant: "text-md/semibold",
                 children: a
             })
         })
     },
-    o = {
+    i = {
         name: "Stack",
         id: "cms-stack",
         component: e => (0, l.jsxs)(l.Fragment, {
-            children: [(0, l.jsx)(r.Text, {
+            children: [(0, l.jsx)(n.Text, {
                 variant: "text-lg/semibold",
                 children: "Stack component for CMS layouts."
             }), (0, l.jsx)("div", {
@@ -36,7 +36,7 @@ let s = e => {
                     border: "1px dashed #ccc",
                     padding: "16px"
                 },
-                children: (0, l.jsxs)(n.A, {
+                children: (0, l.jsxs)(r.A, {
                     ...e,
                     children: [(0, l.jsx)(s, {
                         color: "#5865F2",
@@ -49,7 +49,7 @@ let s = e => {
                         children: "Item 3"
                     })]
                 })
-            }), (0, l.jsx)("hr", {}), (0, l.jsx)(r.Text, {
+            }), (0, l.jsx)("hr", {}), (0, l.jsx)(n.Text, {
                 variant: "text-md/semibold",
                 children: "Horizontal Stack"
             }), (0, l.jsx)("div", {
@@ -57,7 +57,7 @@ let s = e => {
                     border: "1px dashed #ccc",
                     padding: "16px"
                 },
-                children: (0, l.jsxs)(n.A, {
+                children: (0, l.jsxs)(r.A, {
                     ...e,
                     direction: "horizontal",
                     children: [(0, l.jsx)(s, {
@@ -71,7 +71,7 @@ let s = e => {
                         children: "Item 3"
                     })]
                 })
-            }), (0, l.jsx)(r.Text, {
+            }), (0, l.jsx)(n.Text, {
                 variant: "text-md/semibold",
                 children: "Vertical Stack"
             }), (0, l.jsx)("div", {
@@ -79,7 +79,7 @@ let s = e => {
                     border: "1px dashed #ccc",
                     padding: "16px"
                 },
-                children: (0, l.jsxs)(n.A, {
+                children: (0, l.jsxs)(r.A, {
                     ...e,
                     direction: "vertical",
                     children: [(0, l.jsx)(s, {

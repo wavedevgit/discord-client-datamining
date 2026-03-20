@@ -1,18 +1,18 @@
 /** chunk id: 970488 params = (module,exports,require) **/
-l.d(t, {
-    A: () => o
+r.d(t, {
+    A: () => s
 });
-var r = l(627968),
-    n = l(261225),
-    i = l(973207);
-let o = e => {
+var l = r(627968),
+    n = r(261225),
+    a = r(973207);
+let s = e => {
     let {
         children: t,
-        columns: l = 1,
-        rows: o = 1
-    } = e, a = Math.max(1, Math.min(n.M, Math.floor(l))), s = Math.max(1, Math.min(n.M, Math.floor(o))), d = i[`gridItemColumns${a}`], c = i[`gridItemRows${s}`];
-    return (0, r.jsx)("div", {
-        className: `${i.gridItem} ${d} ${c}`,
+        columns: r = 1,
+        rows: s = 1
+    } = e, c = Math.max(1, Math.min(n.M, Math.floor(r))), i = Math.max(1, Math.min(n.M, Math.floor(s))), d = a[`gridItemColumns${c}`], o = a[`gridItemRows${i}`];
+    return (0, l.jsx)("div", {
+        className: `${a.gridItem} ${d} ${o}`,
         children: t
     })
 }

@@ -1,17 +1,17 @@
 /** chunk id: 264302 params = (module,exports,require) **/
-l.d(t, {
-    A: () => i
+r.d(t, {
+    A: () => a
 });
-var r = l(627968);
-l(64700);
-var n = l(732955);
-let i = e => {
+var l = r(627968);
+r(64700);
+var n = r(732955);
+let a = e => {
     let {
         gap: t = 24,
-        ...l
+        ...r
     } = e;
-    return (0, r.jsx)(n.BJc, {
-        ...l,
+    return (0, l.jsx)(n.BJc, {
+        ...r,
         gap: t
     })
 }

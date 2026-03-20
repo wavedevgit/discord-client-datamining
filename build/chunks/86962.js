@@ -4,45 +4,45 @@ a.d(t, {
 });
 var l = a(627968);
 a(64700);
-var r = a(397927),
-    n = a(605248);
+var n = a(397927),
+    r = a(605248);
 let s = {
     name: "Text",
     id: "cms-text",
     component: e => (0, l.jsxs)(l.Fragment, {
-        children: [(0, l.jsx)(r.Text, {
+        children: [(0, l.jsx)(n.Text, {
             variant: "text-lg/semibold",
             children: "Text component for CMS content."
-        }), (0, l.jsx)(n.A, {
+        }), (0, l.jsx)(r.A, {
             ...e
-        }), (0, l.jsx)("hr", {}), (0, l.jsx)(n.A, {
+        }), (0, l.jsx)("hr", {}), (0, l.jsx)(r.A, {
             content: "Variant = text-xs/normal",
             variant: "text-xs/normal"
-        }), (0, l.jsx)(n.A, {
+        }), (0, l.jsx)(r.A, {
             content: "Variant = text-sm/normal",
             variant: "text-sm/normal"
-        }), (0, l.jsx)(n.A, {
+        }), (0, l.jsx)(r.A, {
             content: "Variant = text-sm/medium",
             variant: "text-sm/medium"
-        }), (0, l.jsx)(n.A, {
+        }), (0, l.jsx)(r.A, {
             content: "Variant = text-sm/semibold",
             variant: "text-sm/semibold"
-        }), (0, l.jsx)(n.A, {
+        }), (0, l.jsx)(r.A, {
             content: "Variant = text-md/normal",
             variant: "text-md/normal"
-        }), (0, l.jsx)(n.A, {
+        }), (0, l.jsx)(r.A, {
             content: "Variant = text-md/medium",
             variant: "text-md/medium"
-        }), (0, l.jsx)(n.A, {
+        }), (0, l.jsx)(r.A, {
             content: "Variant = text-md/semibold",
             variant: "text-md/semibold"
-        }), (0, l.jsx)(n.A, {
+        }), (0, l.jsx)(r.A, {
             content: "Variant = text-lg/normal",
             variant: "text-lg/normal"
-        }), (0, l.jsx)(n.A, {
+        }), (0, l.jsx)(r.A, {
             content: "Variant = text-lg/medium",
             variant: "text-lg/medium"
-        }), (0, l.jsx)(n.A, {
+        }), (0, l.jsx)(r.A, {
             content: "Variant = text-lg/semibold",
             variant: "text-lg/semibold"
         })]

@@ -1,69 +1,69 @@
 /** chunk id: 118713 params = (module,exports,require) **/
-l.d(t, {
-    A: () => c
+r.d(t, {
+    A: () => o
 });
-var r = l(627968),
-    n = l(64700),
-    i = l(503698),
-    o = l.n(i),
-    a = l(713517),
-    s = l(656071);
+var l = r(627968),
+    n = r(64700),
+    a = r(503698),
+    s = r.n(a),
+    c = r(713517),
+    i = r(656071);
 let d = e => {
         let {
             position: t,
-            children: l
+            children: r
         } = e;
-        return (0, r.jsx)("div", {
-            className: o()(s.child, s[t]),
-            children: l
+        return (0, l.jsx)("div", {
+            className: s()(i.child, i[t]),
+            children: r
         })
     },
-    c = e => {
+    o = e => {
         let {
             children: t,
-            paused: l = !1,
-            slideDuration: i = 5e3
-        } = e, [o, c] = n.useState(0), u = n.useRef(null), h = (0, a.M)(u), m = n.useRef(void 0), p = n.useMemo(() => n.Children.map(t, e => n.isValidElement(e) ? null != e && "object" == typeof e && e.$$typeof === Symbol.for("react.portal") ? e : n.cloneElement(e, {
+            paused: r = !1,
+            slideDuration: a = 5e3
+        } = e, [s, o] = n.useState(0), u = n.useRef(null), m = (0, c.M)(u), h = n.useRef(void 0), p = n.useMemo(() => n.Children.map(t, e => n.isValidElement(e) ? null != e && "object" == typeof e && e.$$typeof === Symbol.for("react.portal") ? e : n.cloneElement(e, {
             tabIndex: -1
         }) : e), [t]);
         n.useEffect(() => {
-            Array.isArray(p) ? c(o >= p?.length ? Math.max(p?.length - 1, 0) : o) : c(0)
-        }, [p, o]);
-        let _ = l || h;
+            Array.isArray(p) ? o(s >= p?.length ? Math.max(p?.length - 1, 0) : s) : o(0)
+        }, [p, s]);
+        let A = r || m;
         return (n.useEffect(() => {
-            if (_) {
-                null != m.current && (window.clearTimeout(m.current), m.current = void 0);
+            if (A) {
+                null != h.current && (window.clearTimeout(h.current), h.current = void 0);
                 return
             }
             let e = () => {
-                c(e => {
+                o(e => {
                     let t = e + 1;
                     return t >= (p?.length ?? 1) ? 0 : t
-                }), m.current = window.setTimeout(e, i)
+                }), h.current = window.setTimeout(e, a)
             };
-            window.clearTimeout(m.current), m.current = window.setTimeout(e, i)
-        }, [_, i, p]), n.useEffect(() => () => {
-            window.clearTimeout(m.current)
-        }, []), null == p) ? null : Array.isArray(p) ? (0, r.jsx)("div", {
+            window.clearTimeout(h.current), h.current = window.setTimeout(e, a)
+        }, [A, a, p]), n.useEffect(() => () => {
+            window.clearTimeout(h.current)
+        }, []), null == p) ? null : Array.isArray(p) ? (0, l.jsx)("div", {
             ref: u,
-            className: s.carousel,
-            children: (0, r.jsx)("div", {
-                className: s.children,
+            className: i.carousel,
+            children: (0, l.jsx)("div", {
+                className: i.children,
                 children: p?.map((e, t) => {
-                    var l, n, i;
-                    let a = (l = t, n = o, i = p.length, l === n ? "center" : l < n ? n === i - 1 && 0 === l ? "right" : "left" : 0 === n && l === i - 1 ? "left" : "right");
-                    return (0, r.jsx)(d, {
-                        position: a,
+                    var r, n, a;
+                    let c = (r = t, n = s, a = p.length, r === n ? "center" : r < n ? n === a - 1 && 0 === r ? "right" : "left" : 0 === n && r === a - 1 ? "left" : "right");
+                    return (0, l.jsx)(d, {
+                        position: c,
                         children: e
                     }, t)
                 })
             })
-        }) : (0, r.jsx)("div", {
+        }) : (0, l.jsx)("div", {
             ref: u,
-            className: s.carousel,
-            children: (0, r.jsx)("div", {
-                className: s.children,
-                children: (0, r.jsx)(d, {
+            className: i.carousel,
+            children: (0, l.jsx)("div", {
+                className: i.children,
+                children: (0, l.jsx)(d, {
                     position: "center",
                     children: t
                 })

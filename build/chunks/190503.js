@@ -1,25 +1,25 @@
 /** chunk id: 190503 params = (module,exports,require) **/
-l.d(t, {
-    A: () => a
+r.d(t, {
+    A: () => c
 });
-var r = l(627968),
-    n = l(607470),
-    i = l(506456),
-    o = l(858217);
-let a = e => {
+var l = r(627968),
+    n = r(607470),
+    a = r(506456),
+    s = r(858217);
+let c = e => {
     let {
         src: t
-    } = e, l = (0, i.A)(t);
-    return null == l ? null : (0, i.c)(l.mimeType) ? (0, r.jsx)(n.A, {
-        className: o.S,
-        src: l.src,
+    } = e, r = (0, a.A)(t);
+    return null == r ? null : (0, a.c)(r.mimeType) ? (0, l.jsx)(n.A, {
+        className: s.S,
+        src: r.src,
         autoPlay: !0,
         loop: !0,
         muted: !0,
         playsInline: !0
-    }) : (0, r.jsx)("img", {
-        className: o.S,
-        src: l.src,
-        alt: l.alt ?? ""
+    }) : (0, l.jsx)("img", {
+        className: s.S,
+        src: r.src,
+        alt: r.alt ?? ""
     })
 }
