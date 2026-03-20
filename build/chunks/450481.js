@@ -2,56 +2,56 @@
 n.d(t, {
     p: () => p
 });
-var i = n(64700),
-    a = n(575593),
+var a = n(64700),
+    i = n(575593),
     l = n(631670),
     r = n(587600),
     o = n(207803),
-    d = n(993408),
-    s = n(442759),
-    _ = n(985018);
+    s = n(993408),
+    d = n(442759),
+    u = n(985018);
 let p = e => {
     let {
         product: t,
         onSuccess: p,
-        onError: E
-    } = e, [c, S] = i.useState(!1), {
-        firstAvatarDecoration: u,
-        firstProfileEffect: I,
-        firstNameplate: h
-    } = (0, s.f5)(t), T = (0, d.aw)(t) ? _.intl.string(_.t.tf1ZZ4) : t.type === a.R.AVATAR_DECORATION ? _.intl.string(_.t.zOA4ax) : t.type === a.R.NAMEPLATE ? _.intl.string(_.t.gOzMvx) : _.intl.string(_.t.SWm2ai);
+        onError: c
+    } = e, [_, E] = a.useState(!1), {
+        firstAvatarDecoration: S,
+        firstProfileEffect: h,
+        firstNameplate: v
+    } = (0, d.f5)(t), g = (0, s.aw)(t) ? u.intl.string(u.t.tf1ZZ4) : t.type === i.R.AVATAR_DECORATION ? u.intl.string(u.t.zOA4ax) : t.type === i.R.NAMEPLATE ? u.intl.string(u.t.gOzMvx) : u.intl.string(u.t.SWm2ai);
     return {
-        handleUseNow: i.useCallback(async () => {
-            S(!0);
+        handleUseNow: a.useCallback(async () => {
+            E(!0);
             let e = {};
             try {
-                if (null != u && (e.avatarDecoration = u), null != I) {
+                if (null != S && (e.avatarDecoration = S), null != h) {
                     let e = (0, r.yX)({
-                        pendingProfileEffect: I
+                        pendingProfileEffect: h
                     });
                     await (0, o.gi)(e)
                 }
-                null != h && (e.nameplate = h), Object.keys(e).length > 0 && await (0, l._L)(e);
+                null != v && (e.nameplate = v), Object.keys(e).length > 0 && await (0, l._L)(e);
                 {
                     let {
                         ToastPosition: e,
                         ToastType: t,
-                        createToast: i,
-                        popToast: a,
+                        createToast: a,
+                        popToast: i,
                         showToast: l
                     } = await Promise.resolve().then(n.bind(n, 397927));
-                    a(), l(i(T, t.MESSAGE, {
+                    i(), l(a(g, t.MESSAGE, {
                         duration: 6e3,
                         position: e.TOP
                     }))
                 }
                 p?.()
             } catch (e) {
-                E?.(e)
+                c?.(e)
             } finally {
-                S(!1)
+                E(!1)
             }
-        }, [u, I, h, p, T, E]),
-        isApplying: c
+        }, [S, h, v, p, g, c]),
+        isApplying: _
     }
 }

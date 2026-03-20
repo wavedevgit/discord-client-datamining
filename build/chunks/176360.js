@@ -32,12 +32,12 @@ function x(e) {
     return null != t && null == n[t] && (n[t] = c.xT(t)), n
 }
 
-function v() {
+function y() {
     if (f = u.A.getChannel(), C = u.A.getCategory(), null == f) return !1;
     let e = f.getGuildId();
     I = E = x(f), null == E[T] && (T = e), a = null != C, i = c.r(f, C), N = null, p = !1, g = h.XlH.CLOSED, m.clear()
 }
-class y extends s.Ay.Store {
+class v extends s.Ay.Store {
     static displayName = "ChannelSettingsPermissionsStore";
     initialize() {
         this.waitFor(u.A, A.A)
@@ -79,15 +79,15 @@ class y extends s.Ay.Store {
         return S
     }
 }
-let b = new y(d.h, {
+let b = new v(d.h, {
     CHANNEL_SETTINGS_SET_SECTION: function(e) {
         let {
             section: t
         } = e;
         if (null != f || t !== h.p_A.PERMISSIONS) return !1;
-        v()
+        y()
     },
-    CHANNEL_SETTINGS_PERMISSIONS_INIT: v,
+    CHANNEL_SETTINGS_PERMISSIONS_INIT: y,
     CHANNEL_SETTINGS_PERMISSIONS_UPDATE_PERMISSION: function(e) {
         let {
             id: t,
@@ -115,7 +115,7 @@ let b = new y(d.h, {
         }
     },
     CHANNEL_SETTINGS_INIT: function() {
-        u.A.getSection() === h.p_A.PERMISSIONS && v()
+        u.A.getSection() === h.p_A.PERMISSIONS && y()
     },
     CHANNEL_SETTINGS_CLOSE: function() {
         g = h.XlH.CLOSED, E = null, I = null, f = null, C = null, p = !1, m.clear(), T = null, N = null
@@ -149,7 +149,7 @@ let b = new y(d.h, {
         let {
             silent: t
         } = e;
-        t ? g = h.XlH.OPEN : (g = h.XlH.CLOSED, v())
+        t ? g = h.XlH.OPEN : (g = h.XlH.CLOSED, y())
     },
     CHANNEL_SETTINGS_PERMISSIONS_SET_ADVANCED_MODE: function(e) {
         let {

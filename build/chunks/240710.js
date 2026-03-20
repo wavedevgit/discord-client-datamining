@@ -1,6 +1,6 @@
 /** chunk id: 240710 params = (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => C
 });
 var i = n(627968),
     a = n(64700),
@@ -16,11 +16,11 @@ var i = n(627968),
     E = n(901406),
     m = n(814793),
     h = n(241124),
-    S = n(918338),
-    g = n(201805),
-    f = n(654487),
-    A = n(818348),
-    v = n(985018),
+    g = n(918338),
+    f = n(201805),
+    S = n(654487),
+    v = n(818348),
+    A = n(985018),
     N = n(661942);
 
 function T(e) {
@@ -28,9 +28,9 @@ function T(e) {
         quest: t,
         sourceQuestContent: n,
         onLoadComplete: T,
-        preCtaClick: I
-    } = e, C = (0, o.Ay)(), R = (0, s.Mwr)(C) ? A.NJ.DARK : A.NJ.LIGHT, y = (0, p.wr)(t), x = (0, u.go)(), D = (0, m.E0)(t.config), L = async () => {
-        await I?.(), (0, E.pu)(t, {
+        preCtaClick: C
+    } = e, I = (0, o.Ay)(), R = (0, s.Mwr)(I) ? v.NJ.DARK : v.NJ.LIGHT, y = (0, p.wr)(t), x = (0, u.go)(), D = (0, m.E0)(t.config), L = async () => {
+        await C?.(), (0, E.pu)(t, {
             content: d.uF.REWARD_MODAL,
             ctaContent: _.Cy.OPEN_GAME_LINK,
             impressionId: x,
@@ -38,14 +38,14 @@ function T(e) {
         })
     }, j = a.useMemo(() => {
         let e = t.config.ctaConfig?.subtitle;
-        return null != e ? e : (0, m.pv)(t.config) !== r.Z.GAMEPLAY || t.config.features.includes(f.Li.NON_GAMING_PLAY_QUEST) || (0, m.ui)(t) ? v.intl.string(v.t.y8Xf3k) : v.intl.string(v.t["wirwN+"])
+        return null != e ? e : (0, m.pv)(t.config) !== r.Z.GAMEPLAY || t.config.features.includes(S.Li.NON_GAMING_PLAY_QUEST) || (0, m.ui)(t) ? A.intl.string(A.t.y8Xf3k) : A.intl.string(A.t["wirwN+"])
     }, [t]), {
         isLoading: O
     } = (0, h.Gk)();
     a.useEffect(() => {
         O || T()
     }, [O, T]);
-    let k = (0, g.Lk)({
+    let k = (0, f.Lk)({
         isShareable: D,
         questId: t.id,
         trackingCtx: a.useMemo(() => ({
@@ -59,7 +59,7 @@ function T(e) {
         className: N.kL,
         children: [(0, i.jsx)(h.Sn, {
             id: "hero-display",
-            children: e => (0, i.jsx)(S.A, {
+            children: e => (0, i.jsx)(g.A, {
                 quest: t,
                 imageSize: {
                     width: 908,
@@ -76,7 +76,7 @@ function T(e) {
                 children: e => (0, i.jsx)("img", {
                     ref: e,
                     className: N.a$,
-                    alt: v.intl.formatToPlainString(v.t.rtm15P, {
+                    alt: A.intl.formatToPlainString(A.t.rtm15P, {
                         name: t.config.messages.gameTitle
                     }),
                     src: (0, c.tW)(t, c.fY.LOGO_TYPE, R).url
@@ -90,7 +90,7 @@ function T(e) {
                     variant: "heading-md/semibold",
                     color: "text-strong",
                     className: N.fx,
-                    children: v.intl.format(v.t.EAYZAr, {
+                    children: A.intl.format(A.t.EAYZAr, {
                         questName: t.config.messages.questName
                     })
                 }), (0, i.jsx)(s.EYj, {
@@ -103,7 +103,7 @@ function T(e) {
                 children: e => (0, i.jsx)("img", {
                     ref: e,
                     className: N.rw,
-                    alt: v.intl.formatToPlainString(v.t.rtm15P, {
+                    alt: A.intl.formatToPlainString(A.t.rtm15P, {
                         name: t.config.messages.gameTitle
                     }),
                     src: (0, c.tW)(t, c.fY.GAME_TILE, R).url
@@ -117,11 +117,11 @@ function T(e) {
                 fullWidth: !0,
                 fullWidthContainer: !0,
                 children: [D && (0, i.jsx)(l.m_, {
-                    text: v.intl.string(v.t.WmfZHZ),
+                    text: A.intl.string(A.t.WmfZHZ),
                     children: (0, i.jsx)(s.K0, {
                         icon: s.qYV,
                         onClick: k,
-                        "aria-label": v.intl.string(v.t.WmfZHZ),
+                        "aria-label": A.intl.string(A.t.WmfZHZ),
                         variant: "secondary"
                     })
                 }), (0, i.jsx)(s.$nd, {
@@ -137,7 +137,7 @@ function T(e) {
     })
 }
 
-function I(e) {
+function C(e) {
     let {
         quest: t,
         location: n

@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(128286),
     S = n(309010),
     x = n(625180),
-    v = n(898879),
-    y = n(293495),
+    y = n(898879),
+    v = n(293495),
     b = n(165610),
     O = n(652215),
     L = n(5867),
@@ -92,7 +92,7 @@ function M(e) {
         Q = (0, m.G)();
     if (null == n) return null;
     let X = (U ?? O.da6) + G,
-        Z = (0, y.YY)(t);
+        Z = (0, v.YY)(t);
     return (0, i.jsx)(c.NPJ, {
         theme: O.NJ8.DARK,
         children: e => (0, i.jsxs)("div", {
@@ -116,7 +116,7 @@ function M(e) {
                         paddingBottom: q
                     },
                     ref: V,
-                    children: (0, i.jsx)(v.A, {
+                    children: (0, i.jsx)(y.A, {
                         className: P.pU,
                         embedId: Z
                     })

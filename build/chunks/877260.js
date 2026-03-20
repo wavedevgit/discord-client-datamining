@@ -18,8 +18,8 @@ var r = n(627968),
     m = n(397274),
     p = n(189857),
     b = n(188180),
-    y = n(133457),
-    g = n(985018),
+    g = n(133457),
+    y = n(985018),
     v = n(45272);
 
 function x(e) {
@@ -29,10 +29,10 @@ function x(e) {
         footer: a,
         emptyState: b,
         searchBar: x
-    } = e, S = f.A.useField("showNavigationMobile"), A = i.useRef(null), [N] = i.useState(t), {
+    } = e, A = f.A.useField("showNavigationMobile"), S = i.useRef(null), [N] = i.useState(t), {
         accessibleDirectory: C
     } = (0, _._)(), j = i.useMemo(() => (0, p.Z)(N, C), [N, C]), [I] = (0, d.kn)(j.allDismissibleContents);
-    (0, y.B)({
+    (0, g.B)({
         visibleContent: I,
         dismissibleBadges: j,
         accessibleDirectory: C
@@ -43,13 +43,13 @@ function x(e) {
         return t.layout.forEach(t => {
             t.hoisted ? e.push(t) : n.push(t)
         }), [e, n]
-    }, [t.layout]), k = (0, h.NC)(), w = (0, u.A)("settings-sidebar", A);
+    }, [t.layout]), k = (0, h.NC)(), w = (0, u.A)("settings-sidebar", S);
     return (0, r.jsx)(c.NPJ, {
         theme: k,
         children: e => (0, r.jsxs)("div", {
             className: l()(v.pz, e, {
                 [v.Hw]: o.Fr,
-                [v.n7]: S
+                [v.n7]: A
             }),
             children: [(0, r.jsxs)("div", {
                 className: v.gM,
@@ -60,7 +60,7 @@ function x(e) {
                         onClick: n,
                         variant: "icon-only",
                         size: "sm",
-                        "aria-label": g.intl.string(g.t.cpT0Cq)
+                        "aria-label": y.intl.string(y.t.cpT0Cq)
                     })
                 }), (0, r.jsx)("div", {
                     children: T.map(e => (0, r.jsx)(E, {
@@ -80,7 +80,7 @@ function x(e) {
                         } = e;
                         return (0, r.jsxs)(c.ChK, {
                             ref: e => {
-                                A.current = e, m.A.setSidebarScrollerRef(e), t.current = e?.getScrollerNode() ?? null
+                                S.current = e, m.A.setSidebarScrollerRef(e), t.current = e?.getScrollerNode() ?? null
                             },
                             className: v.Mt,
                             fade: !0,

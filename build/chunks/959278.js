@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(107361),
     S = n(389405),
     x = n(549711),
-    v = n(313961),
-    y = n(264140),
+    y = n(313961),
+    v = n(264140),
     b = n(72800),
     O = n(30747),
     L = n(811736),
@@ -79,8 +79,8 @@ var i = n(627968),
     eN = n(696451),
     eS = n(71393),
     ex = n(309010),
-    ev = n(519057),
-    ey = n(954571),
+    ey = n(519057),
+    ev = n(954571),
     eb = n(403362),
     eO = n(661191),
     eL = n(349320),
@@ -245,7 +245,7 @@ let eU = (0, c.Fe)({
                     guildId: r
                 });
             case eP.VV.REPORT_TO_MOD:
-                return (0, i.jsx)(y.A, {});
+                return (0, i.jsx)(v.A, {});
             default:
                 (0, eb.xb)(c)
         }
@@ -260,7 +260,7 @@ let eU = (0, c.Fe)({
                 inputSkuId: e
             }, a.id)
         }
-        return (0, i.jsx)(y.A, {})
+        return (0, i.jsx)(v.A, {})
     },
     e$ = a.memo(function() {
         let {
@@ -440,7 +440,7 @@ function ti(e) {
         hideSidebar: r,
         hideChannelList: s,
         isSidebarOpen: o
-    } = e, d = (0, A.bG)([v.A], () => v.A.isFullscreenInContext()), c = (0, M.D)("ChannelSidebar"), m = (0, P.useAppSidebarState)(e => !e.isOpen) && c;
+    } = e, d = (0, A.bG)([y.A], () => y.A.isFullscreenInContext()), c = (0, M.D)("ChannelSidebar"), m = (0, P.useAppSidebarState)(e => !e.isOpen) && c;
     a.useLayoutEffect(() => {
         if (c) {
             let e = parseInt(h.w.get(p.o) ?? "");
@@ -475,7 +475,7 @@ function ti(e) {
             document.body.classList.add(ew.cB)
         }, []),
         f = a.useCallback(e => {
-            document.body.classList.remove(ew.cB), document.body.classList.remove(ew._A), document.body.classList.remove(ew.uN), document.body.classList.remove(ew.l4), g.current?.style.setProperty("--custom-overdrag", "0px"), h.w.set(p.o, e), ey.default.track(eR.HAw.CHANNEL_SIDEBAR_RESIZED, {
+            document.body.classList.remove(ew.cB), document.body.classList.remove(ew._A), document.body.classList.remove(ew.uN), document.body.classList.remove(ew.l4), g.current?.style.setProperty("--custom-overdrag", "0px"), h.w.set(p.o, e), ev.default.track(eR.HAw.CHANNEL_SIDEBAR_RESIZED, {
                 width: e
             })
         }, []),
@@ -531,7 +531,7 @@ function ti(e) {
 }
 
 function ta() {
-    let e, t = (0, A.bG)([ev.Ay], () => ev.Ay.hasNotice()),
+    let e, t = (0, A.bG)([ey.Ay], () => ey.Ay.hasNotice()),
         n = (0, ef.NC)(),
         r = function() {
             let [e, t] = a.useState(() => window.location.pathname.startsWith(eR.BVt.GUILD_MEMBER_VERIFICATION("")));
@@ -554,7 +554,7 @@ function ta() {
         g = a.useCallback(() => ee.A.openSidebar(), []),
         p = (0, M.D)("AppView"),
         E = (0, P.useAppSidebarState)(e => !e.isOpen),
-        I = (0, A.bG)([v.A], () => v.A.isFullscreenInContext()),
+        I = (0, A.bG)([y.A], () => y.A.isFullscreenInContext()),
         f = (0, A.bG)([w.A], () => w.A.isFrameActive());
     return (0, i.jsx)("div", {
         className: ew.kL,

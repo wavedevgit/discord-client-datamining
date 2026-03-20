@@ -23,24 +23,24 @@ function _(e) {
         sidebarFooter: m,
         emptyState: p,
         searchQuery: b,
-        clearSearchQuery: y,
-        searchBar: g,
+        clearSearchQuery: g,
+        searchBar: y,
         ...v
-    } = e, [x, E] = i.useState(!1), [S, A] = i.useState(1.4), N = i.useRef(null), C = (0, a.bG)([o.A], () => o.A.useReducedMotion), j = (0, a.bG)([c.A], () => c.A.isFocused());
+    } = e, [x, E] = i.useState(!1), [A, S] = i.useState(1.4), N = i.useRef(null), C = (0, a.bG)([o.A], () => o.A.useReducedMotion), j = (0, a.bG)([c.A], () => c.A.isFocused());
     return i.useEffect(() => {
         let e = e => {
             let {
                 intensity: t,
                 duration: n
             } = e;
-            !C && j && (E(!0), A(t ?? 1.4), clearTimeout(N.current), N.current = setTimeout(() => E(!1), n ?? 1e3))
+            !C && j && (E(!0), S(t ?? 1.4), clearTimeout(N.current), N.current = setTimeout(() => E(!1), n ?? 1e3))
         };
         return u._.subscribe(h.jej.SHAKE_SETTINGS_MODAL, e), () => {
             u._.unsubscribe(h.jej.SHAKE_SETTINGS_MODAL, e), clearTimeout(N.current)
         }
     }, [C, j]), (0, r.jsx)(s.bfh, {
         isShaking: x,
-        intensity: S,
+        intensity: A,
         children: (0, r.jsx)(l.N, {
             ...v,
             children: (0, r.jsx)(d.A, {
@@ -52,8 +52,8 @@ function _(e) {
                 emptyState: p,
                 sidebarFooter: m,
                 searchQuery: b,
-                clearSearchQuery: y,
-                searchBar: g
+                clearSearchQuery: g,
+                searchBar: y
             })
         })
     })

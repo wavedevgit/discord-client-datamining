@@ -32,8 +32,8 @@ function C(e) {
         voiceChannels: N,
         currentActivities: S,
         partiedMembers: x,
-        applicationStreams: v,
-        guildContext: y
+        applicationStreams: y,
+        guildContext: v
     } = t, b = (0, A.sb)(C), O = [], L = e => {
         let {
             length: t
@@ -70,14 +70,14 @@ function C(e) {
                 L(t);
                 break
             }
-        } return v.length > 0 && T && v.forEach(e => {
+        } return y.length > 0 && T && y.forEach(e => {
         let {
             stream: t,
             streamUser: n,
             activity: l
         } = e;
         L((0, i.jsx)(E.A.ApplicationStreamingSection, {
-            guildId: y?.id,
+            guildId: v?.id,
             user: n,
             activity: l,
             applicationStream: t,
@@ -125,7 +125,7 @@ function C(e) {
             let e = N.length > 0 && N[0].members.length > 1,
                 a = r.length > 1;
             L((0, i.jsx)(E.A.TwitchSection, {
-                guildId: y?.id,
+                guildId: v?.id,
                 activity: n,
                 user: e || a ? A : null,
                 getAssetImage: g.uD

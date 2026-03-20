@@ -16,9 +16,9 @@ var r = n(627968),
     h = n(222650),
     m = n(273926),
     f = n(453016),
-    E = n(652215);
+    x = n(652215);
 
-function x(e) {
+function E(e) {
     let {
         guildId: t,
         formFields: n,
@@ -86,8 +86,8 @@ function p(e) {
         _ = (0, d.B)({
             guildId: n
         });
-    return (t = _ === E.PvD.NONE ? null : _ === E.PvD.VERY_HIGH ? h.A : c.G, null == u) ? null : (0, r.jsxs)(r.Fragment, {
-        children: [!o && null != t && (0, r.jsx)(t, {}), (0, r.jsx)(x, {
+    return (t = _ === x.PvD.NONE ? null : _ === x.PvD.VERY_HIGH ? h.A : c.G, null == u) ? null : (0, r.jsxs)(r.Fragment, {
+        children: [!o && null != t && (0, r.jsx)(t, {}), (0, r.jsx)(E, {
             guildId: n,
             formFields: s,
             updateFormFields: l
@@ -109,12 +109,12 @@ function g(e) {
         f = _?.isPhoneVerified() || _?.isStaff(),
         p = _?.verified || f,
         g = !1;
-    m === E.PvD.NONE ? (g = !0, t = null) : m === E.PvD.VERY_HIGH ? (g = f ?? !1, t = h.e) : (g = p ?? !1, t = c.O);
-    let N = s.useRef(g);
+    m === x.PvD.NONE ? (g = !0, t = null) : m === x.PvD.VERY_HIGH ? (g = f ?? !1, t = h.e) : (g = p ?? !1, t = c.O);
+    let v = s.useRef(g);
     return null == _ ? null : (0, r.jsxs)(r.Fragment, {
-        children: [!u && !N.current && null != t && (0, r.jsx)(t, {
+        children: [!u && !v.current && null != t && (0, r.jsx)(t, {
             isUserVerified: g
-        }), (0, r.jsx)(x, {
+        }), (0, r.jsx)(E, {
             guildId: n,
             formFields: l,
             updateFormFields: o

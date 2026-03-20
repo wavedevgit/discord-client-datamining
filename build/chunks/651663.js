@@ -16,15 +16,15 @@ var i = n(627968),
     E = n(287809),
     m = n(728458),
     h = n(829219),
-    S = n(341915),
-    g = n(890687),
-    f = n(579473),
-    A = n(92246),
-    v = n(109174),
+    g = n(341915),
+    f = n(890687),
+    S = n(579473),
+    v = n(92246),
+    A = n(109174),
     N = n(524728),
     T = n(654487),
-    I = n(985018),
-    C = n(201025);
+    C = n(985018),
+    I = n(201025);
 
 function R(e) {
     let {
@@ -33,11 +33,11 @@ function R(e) {
         onUseNow: a,
         user: r,
         mode: s
-    } = e, o = (0, f.tW)(t, f.fY.REWARD).url, c = (0, g.FA)(t.config), _ = r.avatarDecoration?.skuId != null && r.avatarDecoration.skuId === n?.skuId;
+    } = e, o = (0, S.tW)(t, S.fY.REWARD).url, c = (0, f.FA)(t.config), _ = r.avatarDecoration?.skuId != null && r.avatarDecoration.skuId === n?.skuId;
     return (0, i.jsxs)("div", {
-        className: C.hQ,
+        className: I.hQ,
         children: [(0, i.jsx)("div", {
-            className: C.i1,
+            className: I.i1,
             children: (0, i.jsx)(d.A, {
                 user: r,
                 guildId: null,
@@ -46,12 +46,12 @@ function R(e) {
                 questPreviewRewardAssetUrl: o
             })
         }), (0, i.jsxs)("div", {
-            className: C.dD,
+            className: I.dD,
             children: [(0, i.jsx)(l.Heading, {
                 variant: "heading-xl/semibold",
                 color: "text-strong",
-                className: C.R_,
-                children: I.intl.string(I.t["0/Yz+Y"])
+                className: I.R_,
+                children: C.intl.string(C.t["0/Yz+Y"])
             }), (0, i.jsx)(l.Text, {
                 variant: "text-sm/medium",
                 color: "text-subtle",
@@ -60,7 +60,7 @@ function R(e) {
         }), (0, i.jsx)(l.Button, {
             variant: "secondary",
             size: "sm",
-            text: _ ? I.intl.string(I.t.hjaYYn) : I.intl.string(I.t.MAS7uK),
+            text: _ ? C.intl.string(C.t.hjaYYn) : C.intl.string(C.t.MAS7uK),
             loading: "applying" === s,
             disabled: "claimed" !== s || _,
             onClick: a,
@@ -75,9 +75,9 @@ function y(e) {
         onClose: n,
         transitionState: l,
         preview: d,
-        location: f,
-        sourceQuestContent: I
-    } = e, C = (0, g.C5)(t.id) ?? t, y = a.useMemo(() => (0, A.nj)(C.config), [C]), x = (0, s.bG)([E.default], () => E.default.getCurrentUser()), [D, L] = function(e) {
+        location: S,
+        sourceQuestContent: C
+    } = e, I = (0, f.C5)(t.id) ?? t, y = a.useMemo(() => (0, v.nj)(I.config), [I]), x = (0, s.bG)([E.default], () => E.default.getCurrentUser()), [D, L] = function(e) {
         let {
             product: t,
             isFetching: n
@@ -94,29 +94,29 @@ function y(e) {
             return (0, o.pZ)(), !!n?.ok
         };
         return [i, s]
-    }(y?.skuId ?? null), j = C.userStatus?.claimedAt != null, O = !d && !j, [k, P] = a.useState(O ? "loading" : "claimed");
+    }(y?.skuId ?? null), j = I.userStatus?.claimedAt != null, O = !d && !j, [k, G] = a.useState(O ? "loading" : "claimed");
     a.useEffect(() => {
-        O && (0, h.Oq)(C.id, S.pY.CROSS_PLATFORM, f).then(() => P("claimed")).catch(() => P("error"))
-    }, [C.id, f, O]);
-    let G = !0 === d && null === D && y?.skuId !== "",
+        O && (0, h.Oq)(I.id, g.pY.CROSS_PLATFORM, S).then(() => G("claimed")).catch(() => G("error"))
+    }, [I.id, S, O]);
+    let P = !0 === d && null === D && y?.skuId !== "",
         U = null == x,
-        w = U || null == D && !0 !== d || G || "loading" === k,
+        w = U || null == D && !0 !== d || P || "loading" === k,
         b = "error" === k || null == y,
         M = async () => {
-            P("applying"), P(await L() ? "applied" : "claimed")
+            G("applying"), G(await L() ? "applied" : "claimed")
         };
     return (0, i.jsx)(N.A, {
         onClose: n,
         transitionState: l,
-        quest: C,
-        sourceQuestContent: I,
+        quest: I,
+        sourceQuestContent: C,
         location: T.rE.COLLECTIBLE_REWARD_MODAL,
         isRewardContentLoading: w,
         rewardContentHasError: b,
-        rewardContent: b || U ? null : (0, i.jsx)(v.A, {
+        rewardContent: b || U ? null : (0, i.jsx)(A.A, {
             rewardName: y.messages.name,
             children: (0, i.jsx)(R, {
-                quest: C,
+                quest: I,
                 avatarDeco: D,
                 user: x,
                 mode: k,

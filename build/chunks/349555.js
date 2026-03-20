@@ -25,8 +25,8 @@ let p = 4 * u.A.Millis.SECOND,
             hasFetched: E,
             hasFiltersApplied: I = !1,
             onClearFilters: f
-        } = e, C = (0, o.zy)(), T = a.useRef(""), [N, S] = a.useState(null), [x, v] = a.useState(0), [{
-            highlightAnimationProgress: y
+        } = e, C = (0, o.zy)(), T = a.useRef(""), [N, S] = a.useState(null), [x, y] = a.useState(0), [{
+            highlightAnimationProgress: v
         }, b] = (0, c.zhh)(() => ({
             highlightAnimationProgress: 1,
             config: {
@@ -34,7 +34,7 @@ let p = 4 * u.A.Millis.SECOND,
             }
         })), O = a.useCallback(e => {
             let t = (0, h.vc)(e, n, r);
-            return null != t && (S(t.id), v(e => e + 1), !0)
+            return null != t && (S(t.id), y(e => e + 1), !0)
         }, [n, r]);
         a.useImperativeHandle(t, () => ({
             scrollToQuest: O
@@ -98,12 +98,12 @@ let p = 4 * u.A.Millis.SECOND,
                         [g.XB]: a
                     }),
                     style: a ? {
-                        boxShadow: (0, d.to)([y.to({
+                        boxShadow: (0, d.to)([v.to({
                             range: [0, .25, .75, 1],
                             output: [0, 1, 1, 0]
                         })], e => `0 0 ${25*e}px 0 rgba(88, 101, 242, ${e})`)
                     } : r ? {
-                        opacity: (0, d.to)([y.to({
+                        opacity: (0, d.to)([v.to({
                             range: [0, .25, .75, 1],
                             output: [1, .4, .4, 1]
                         })], e => e)

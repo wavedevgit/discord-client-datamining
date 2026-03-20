@@ -7,13 +7,13 @@ var r = n(627968),
     i = n(287070),
     l = n(101058),
     s = n(836602),
-    o = n(927578),
-    c = n(132198),
+    c = n(927578),
+    o = n(132198),
     d = n(618733);
 let u = e => {
     let {
         user: t
-    } = e, n = o.Ay.canUsePremiumProfileCustomization(t), {
+    } = e, n = c.Ay.canUsePremiumProfileCustomization(t), {
         pendingAvatar: u,
         ...m
     } = (0, a.cf)([s.A], () => s.A.getPendingChanges()), h = (0, l.V7)({
@@ -26,7 +26,7 @@ let u = e => {
             ...m,
             pendingAvatar: h,
             user: t,
-            pendingBadges: [(0, c._)()],
+            pendingBadges: [(0, o._)()],
             canUsePremiumCustomization: n,
             disabledInputs: !0,
             hideExampleButton: !0

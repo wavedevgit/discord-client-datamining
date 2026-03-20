@@ -22,7 +22,7 @@ var i = n(627968),
     E = n(287809),
     S = n(203982),
     f = n(115063),
-    C = n(955838),
+    C = n(507553),
     b = n(652215),
     N = n(355097),
     I = n(985018),
@@ -40,7 +40,7 @@ function y() {
         t = (0, r.bG)([h.A], () => h.A.getGuild(e)),
         n = (0, r.bG)([_.A], () => _.A.showNotice()),
         l = (0, r.bG)([E.default], () => E.default.getCurrentUser()),
-        y = C.default.useField("subsection");
+        y = C.A.useField("subsection");
     return s.useEffect(() => {
         (0, A._)(j[y])
     }, [y]), s.useEffect(() => {
@@ -63,7 +63,7 @@ function y() {
                         }), S._.dispatch(b.jej.EMPHASIZE_NOTICE);
                         return
                     }
-                    e === N.Eq.GUILD && null != t && (0, c.V2)(t.id), C.default.setState({
+                    e === N.Eq.GUILD && null != t && (0, c.V2)(t.id), C.A.setState({
                         subsection: e
                     })
                 }

@@ -1,23 +1,23 @@
 /** chunk id: 63574 params = (module,exports,require) **/
 n.d(t, {
-    A: () => o
+    A: () => c
 });
 var r = n(627968),
     a = n(158954),
     i = n(298072),
     l = n(623373),
     s = n(561769);
-let o = e => {
+let c = e => {
     let {
         skuId: t,
         overrideVariantIndex: n,
-        className: o
-    } = e, c = (0, s.Vm)(t), d = (0, i.Q)(c);
-    return null != c && (0, l.B1)(c) ? (0, r.jsx)(a.EYj, {
+        className: c
+    } = e, o = (0, s.Vm)(t), d = (0, i.Q)(o);
+    return null != o && (0, l.B1)(o) ? (0, r.jsx)(a.EYj, {
         variant: "text-xs/medium",
         color: "text-subtle",
-        className: o,
+        className: c,
         lineClamp: 1,
-        children: c.variants[n ?? d].variantLabel
+        children: o.variants[n ?? d].variantLabel
     }) : null
 }

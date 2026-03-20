@@ -1,17 +1,17 @@
 /** chunk id: 301518 params = (module,exports,require) **/
-a.d(t, {
-    S: () => s
+n.d(t, {
+    S: () => _
 });
-var l = a(224771),
-    r = a(624210),
-    n = a(224949);
-async function s(e) {
+var r = n(224771),
+    a = n(624210),
+    o = n(224949);
+async function _(e) {
     let {
         checkoutSucceeded: t
     } = e;
     if (t) return;
-    let a = n.A.currentOrder;
-    if (a?.id != null && a.status === l.Re.DRAFT) try {
-        await (0, r.Nl)(a.id)
+    let n = o.A.currentOrder;
+    if (n?.id != null && n.status === r.Re.DRAFT) try {
+        await (0, a.Nl)(n.id)
     } catch (e) {}
 }

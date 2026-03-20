@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(383501),
     S = n(309010),
     x = n(485296),
-    v = n(977997),
-    y = n(607567),
+    y = n(977997),
+    v = n(607567),
     b = n(403362),
     O = n(652215);
 
@@ -150,16 +150,16 @@ function U() {
 }
 
 function G() {
-    return L([v.A], () => v.A.userHasBeenMovedVersion, (e, t) => {
+    return L([y.A], () => y.A.userHasBeenMovedVersion, (e, t) => {
         if (e !== t) return "user_moved"
     }), null
 }
 
 function k() {
-    return L([S.A, v.A], () => {
+    return L([S.A, y.A], () => {
         let e = S.A.getVoiceChannelId();
         if (null == e) return m.zF.NONE;
-        let t = v.A.getVoiceStateForChannel(e);
+        let t = y.A.getVoiceStateForChannel(e);
         return (0, m.eY)(t)
     }, (e, t) => {
         if (e !== t && t === m.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) return "reconnect"
@@ -167,7 +167,7 @@ function k() {
 }
 
 function V() {
-    return L([S.A, p.A, E.default, v.A, I.A], () => {
+    return L([S.A, p.A, E.default, y.A, I.A], () => {
         let e, t, n = S.A.getVoiceChannelId(),
             i = E.default.getId(),
             a = [],
@@ -176,7 +176,7 @@ function V() {
             s = p.A.getAllActiveStreams();
         if (null != n) {
             let i = I.A.getChannel(n);
-            null != i && (e = i.type, t = y.Ay.countVoiceStatesForChannel(i.id) - !!v.A.isInChannel(i.id), a = p.A.getAllApplicationStreamsForChannel(i.id).map(e => e.ownerId))
+            null != i && (e = i.type, t = v.Ay.countVoiceStatesForChannel(i.id) - !!y.A.isInChannel(i.id), a = p.A.getAllApplicationStreamsForChannel(i.id).map(e => e.ownerId))
         }
         let o = null;
         return o = 1 === s.length ? s[0] : p.A.getCurrentUserActiveStream(), o?.state === O.XYD.CONNECTING && (o = null), null != o && (r = (0, u._z)(o), l = p.A.getViewerIds(r).filter(e => e !== i).length), {

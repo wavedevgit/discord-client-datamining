@@ -1,88 +1,88 @@
 /** chunk id: 140877 params = (module,exports,require) **/
 r.d(t, {
-    A: () => b
+    A: () => I
 });
 var n = r(627968),
     l = r(64700),
     i = r(417597),
-    a = r(397927),
-    s = r(287809),
+    s = r(397927),
+    a = r(287809),
     u = r(927578),
     o = r(298072),
     c = r(993408),
     d = r(740076),
-    h = r(466459),
+    f = r(466459),
     m = r(623373),
-    f = r(219103),
-    x = r(561769),
-    A = r(525723),
+    h = r(219103),
+    A = r(561769),
+    x = r(525723),
     p = r(57020),
-    v = r(985018),
+    C = r(985018),
     g = r(306931);
-let C = e => {
+let v = e => {
         let {
             product: t,
             prioritizedCurrency: r
-        } = e, o = (0, i.bG)([s.default], () => s.default.getCurrentUser()), m = u.Ay.canUseCollectibles(o), {
-            isDisabled: x
+        } = e, o = (0, i.bG)([a.default], () => a.default.getCurrentUser()), m = u.Ay.canUseCollectibles(o), {
+            isDisabled: A
         } = (0, d.I)(t.skuId), {
-            isPurchased: C,
-            isPartiallyOwnedBundle: b
-        } = (0, h.h)(t), I = (0, c.G0)(t), k = (0, c.tt)(t), E = l.useMemo(() => (0, c.fT)(t, m), [t, m]), y = (0, A.V_)(t), {
-            checkoutEligiblePrices: j,
-            hasSufficientOrbs: R,
-            shouldCheckoutWithOrbs: _
+            isPurchased: v,
+            isPartiallyOwnedBundle: I
+        } = (0, f.h)(t), b = (0, c.G0)(t), k = (0, c.tt)(t), E = l.useMemo(() => (0, c.fT)(t, m), [t, m]), j = (0, x.V_)(t), {
+            checkoutEligiblePrices: y,
+            hasSufficientOrbs: T,
+            shouldCheckoutWithOrbs: R
         } = (0, p.F)({
             product: t,
             isPremiumUser: m,
             prioritizedCurrency: r,
-            hasDiscountOffer: null != y
-        }), T = I && !m;
-        return x ? (0, n.jsx)(a.Text, {
+            hasDiscountOffer: null != j
+        }), _ = b && !m;
+        return A ? (0, n.jsx)(s.Text, {
             variant: "text-md/medium",
             color: "text-muted",
             lineClamp: 1,
-            children: v.intl.string(v.t.wu4gyV)
-        }) : b ? (0, n.jsx)(a.Text, {
+            children: C.intl.string(C.t.wu4gyV)
+        }) : I ? (0, n.jsx)(s.Text, {
             variant: "text-md/medium",
             color: "text-muted",
             lineClamp: 1,
-            children: v.intl.string(v.t.BEjTij)
-        }) : C && !T ? (0, n.jsx)(a.Text, {
+            children: C.intl.string(C.t.BEjTij)
+        }) : v && !_ ? (0, n.jsx)(s.Text, {
             variant: "text-md/medium",
             color: "text-muted",
             lineClamp: 1,
-            children: v.intl.string(v.t["6cfuDj"])
-        }) : k ? (0, n.jsx)(a.Text, {
+            children: C.intl.string(C.t["6cfuDj"])
+        }) : k ? (0, n.jsx)(s.Text, {
             variant: "text-md/bold",
             color: "text-strong",
             lineClamp: 1,
-            children: v.intl.string(v.t.nBtvYB)
-        }) : I ? (0, n.jsx)(a.Text, {
+            children: C.intl.string(C.t.nBtvYB)
+        }) : b ? (0, n.jsx)(s.Text, {
             variant: "text-md/bold",
             color: "text-strong",
             lineClamp: 1,
-            children: v.intl.string(v.t.rt69oo)
-        }) : 0 === j.length ? null : (0, n.jsx)(f.x, {
-            priceAmount: j[0].amount,
-            priceCurrency: j[0].currency,
+            children: C.intl.string(C.t.rt69oo)
+        }) : 0 === y.length ? null : (0, n.jsx)(h.x, {
+            priceAmount: y[0].amount,
+            priceCurrency: y[0].currency,
             discount: E,
             nitroIconType: m ? "default" : void 0,
             nitroIconSize: "sm",
-            discountOfferAmount: y,
-            className: _ && !R ? g.c : void 0,
+            discountOfferAmount: j,
+            className: R && !T ? g.c : void 0,
             variant: "text-md/bold"
         })
     },
-    b = e => {
+    I = e => {
         let {
             skuId: t,
             prioritizedCurrency: r
-        } = e, l = (0, x.Vm)(t), i = (0, o.Q)(l);
+        } = e, l = (0, A.Vm)(t), i = (0, o.Q)(l);
         if (null == l) return null;
-        let a = (0, m.rb)(l, i);
-        return (0, n.jsx)(C, {
-            product: a,
+        let s = (0, m.rb)(l, i);
+        return (0, n.jsx)(v, {
+            product: s,
             prioritizedCurrency: r
         })
     }

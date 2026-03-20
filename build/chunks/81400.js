@@ -1,74 +1,73 @@
 /** chunk id: 81400 params = (module,exports,require) **/
 n.d(t, {
-    EC: () => N,
-    j8: () => m,
-    uZ: () => p
+    EC: () => m,
+    j8: () => R,
+    uZ: () => N
 }), n(938796);
 var i = n(64700),
     l = n(417597),
     r = n(159001),
-    s = n(780964),
-    a = n(961350),
-    o = n(696451),
-    c = n(71393),
-    u = n(576705),
-    d = n(967198),
-    _ = n(229527),
-    E = n(652215),
-    T = n(340837),
-    A = n(355097),
-    I = n(985018);
-
-function p(e) {
-    return (0, l.bG)([a.default, o.Ay], () => {
-        if (null == e) return !1;
-        let t = a.default.getId();
-        return (0, _.TR)(o.Ay.getMember(e, t))
-    }, [e])
-}
+    s = n(507553),
+    a = n(780964),
+    o = n(961350),
+    c = n(696451),
+    u = n(71393),
+    d = n(576705),
+    _ = n(967198),
+    E = n(229527),
+    T = n(652215),
+    A = n(340837),
+    I = n(355097),
+    p = n(985018);
 
 function N(e) {
-    return (0, l.cf)([a.default, o.Ay, d.A, c.A], () => {
-        let t = {
-                nick: void 0,
-                bio: void 0
-            },
-            n = d.A.getGuildId(),
-            i = e ?? n,
-            l = c.A.getGuild(i);
-        if (null == l || null == i) return t;
-        let r = a.default.getId(),
-            s = o.Ay.getMember(i, r),
-            u = (0, _.wR)(s?.flags);
-        return 0 === u.size || (u.has(T.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) && (null == e ? t.nick = [I.intl.formatToPlainString(I.t.WBUh3O, {
-            guildName: l.name ?? ""
-        })] : t.nick = [I.intl.string(I.t.EPZCrM)]), u.has(T.D.AUTOMOD_QUARANTINED_BIO) && (t.bio = [I.intl.string(I.t.dZh1vz)])), t
+    return (0, l.bG)([o.default, c.Ay], () => {
+        if (null == e) return !1;
+        let t = o.default.getId();
+        return (0, E.TR)(c.Ay.getMember(e, t))
     }, [e])
 }
 
 function m(e) {
+    return (0, l.cf)([o.default, c.Ay, _.A, u.A], () => {
+        let t = {
+                nick: void 0,
+                bio: void 0
+            },
+            n = _.A.getGuildId(),
+            i = e ?? n,
+            l = u.A.getGuild(i);
+        if (null == l || null == i) return t;
+        let r = o.default.getId(),
+            s = c.Ay.getMember(i, r),
+            a = (0, E.wR)(s?.flags);
+        return 0 === a.size || (a.has(A.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) && (null == e ? t.nick = [p.intl.formatToPlainString(p.t.WBUh3O, {
+            guildName: l.name ?? ""
+        })] : t.nick = [p.intl.string(p.t.EPZCrM)]), a.has(A.D.AUTOMOD_QUARANTINED_BIO) && (t.bio = [p.intl.string(p.t.dZh1vz)])), t
+    }, [e])
+}
+
+function R(e) {
     let {
         guildId: t,
-        scrollPosition: a,
-        analyticsLocations: o
-    } = e, d = (0, l.bG)([c.A], () => c.A.getGuild(t), [t]), _ = (0, l.bG)([u.A], () => null != d && u.A.can(E.xBc.CHANGE_NICKNAME, d), [d]);
+        scrollPosition: o,
+        analyticsLocations: c
+    } = e, _ = (0, l.bG)([u.A], () => u.A.getGuild(t), [t]), E = (0, l.bG)([d.A], () => null != _ && d.A.can(T.xBc.CHANGE_NICKNAME, _), [_]);
     return [i.useCallback(() => {
-        if (null == d) return;
-        E.nc_.PROFILE_CUSTOMIZATION;
-        let e = A.Eq.GUILD;
-        _ ? (0, r.V2)(d.id) : e = A.Eq.USER_PROFILE;
+        if (null == _) return;
+        T.nc_.PROFILE_CUSTOMIZATION;
+        let e = I.Eq.GUILD;
+        E ? (0, r.V2)(_.id) : e = I.Eq.USER_PROFILE;
         {
             let {
                 openUserSettings: t
-            } = n(840065), {
-                default: i
-            } = n(955838);
-            i.setState({
+            } = n(840065);
+            s.A.setState({
                 subsection: e,
-                scrollPosition: a
-            }), t(s.X.PROFILE_PANEL, {
-                analyticsLocations: o
+                scrollPosition: o
+            }), t(a.X.PROFILE_PANEL, {
+                analyticsLocations: c
             })
         }
-    }, [_, a, o, d]), _]
+    }, [E, o, c, _]), E]
 }

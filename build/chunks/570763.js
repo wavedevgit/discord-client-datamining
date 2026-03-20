@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(239365),
     S = n(178629),
     x = n(701508),
-    v = n(979590),
-    y = n(45758),
+    y = n(979590),
+    v = n(45758),
     b = n(737823),
     O = n(153527),
     L = n(783531),
@@ -175,7 +175,7 @@ function eE(e) {
                     })
                 }
                 return t()
-            }(), (0, i.jsx)(v.A, {
+            }(), (0, i.jsx)(y.A, {
                 children: (0, i.jsxs)("div", {
                     className: l()(eo.Qs, {
                         [eo.HR]: g && !m && A !== Y.NC.ALL
@@ -194,17 +194,17 @@ let eI = function(e) {
     let {
         topLevelRoute: t
     } = e, n = (0, s.zy)(), r = (0, s.W6)(), _ = a.useMemo(() => (0, R.B)(n.pathname, ea.BVt.QUEST_HOME_DEPRECATED)?.isExact === !0, [n.pathname]), C = (0, c.bG)([E.A], () => E.A.getState("quests")), {
-        selectedTab: v,
+        selectedTab: y,
         onSelectTab: L,
         tabs: j
     } = (0, en.J)({
         withClaimedQuestsTab: !_
     });
     a.useLayoutEffect(() => {
-        _ && v === Y.NC.CLAIMED && B.A.setState({
+        _ && y === Y.NC.CLAIMED && B.A.setState({
             tab: Y.NC.ALL
         })
-    }, [_, v]);
+    }, [_, y]);
     let {
         onScroll: U,
         scrollPosition: H
@@ -223,10 +223,10 @@ let eI = function(e) {
                 utm_medium_current: e.utmMediumCurrent,
                 utm_campaign_current: e.utmCampaignCurrent,
                 utm_content_current: e.utmContentCurrent,
-                tab: v
+                tab: y
             }
         })
-    }, [v]);
+    }, [y]);
     let {
         enabled: X
     } = (0, D.Z)({
@@ -320,8 +320,8 @@ let eI = function(e) {
                 onScroll: U,
                 onSelectTab: e_,
                 scrollerRef: ec,
-                selectedTab: v
-            }), [_, U, e_, ec, v]),
+                selectedTab: y
+            }), [_, U, e_, ec, y]),
             children: (0, i.jsx)("div", {
                 className: l()(eo.kL, {
                     [eo.KY]: !t
@@ -341,7 +341,7 @@ let eI = function(e) {
                         })
                     }),
                     header: (0, i.jsx)(O.S, {
-                        selectedTabId: v,
+                        selectedTabId: y,
                         handleTransition: e_,
                         tabs: j,
                         icon: A.r2v
@@ -364,7 +364,7 @@ let eI = function(e) {
                         })]
                     })
                 }) : X ? (0, i.jsx)(eE, {
-                    renderBanner: () => v !== Y.NC.PREVIEW_TOOL && (0, i.jsxs)(x.A, {
+                    renderBanner: () => y !== Y.NC.PREVIEW_TOOL && (0, i.jsxs)(x.A, {
                         title: et,
                         description: ed,
                         button: (0, i.jsxs)(A.ButtonGroup, {
@@ -390,7 +390,7 @@ let eI = function(e) {
                         })]
                     }),
                     header: (0, i.jsx)(O.S, {
-                        selectedTabId: v,
+                        selectedTabId: y,
                         handleTransition: e_,
                         tabs: j,
                         endContent: (0, i.jsx)(M.SS, {
@@ -431,9 +431,9 @@ let eI = function(e) {
                     }),
                     children: (0, i.jsx)("div", {
                         className: eo.vR,
-                        children: (0, i.jsx)(y.A, {
+                        children: (0, i.jsx)(v.A, {
                             tabs: j,
-                            selectedTab: v,
+                            selectedTab: y,
                             onTabSelect: e_
                         })
                     })

@@ -8,15 +8,15 @@ var a = n(990078),
     i = n(397927),
     l = n(580630),
     s = n(993408),
-    o = n(641563),
-    c = n(652215),
+    c = n(641563),
+    o = n(652215),
     d = n(985018),
     u = n(195782);
 
 function m(e) {
     let {
         product: t
-    } = e, n = (0, s.yt)(t, c.lid.PREMIUM_TIER_2);
+    } = e, n = (0, s.yt)(t, o.lid.PREMIUM_TIER_2);
     if (null == n) return null;
     let m = (0, l.RS)(n.amount, n.currency);
     return (0, r.jsxs)("div", {
@@ -33,7 +33,7 @@ function m(e) {
             variant: "text-xs/medium",
             children: d.intl.format(d.t.Sv8iic, {
                 price: m,
-                subscribeNowHook: e => (0, r.jsx)(o.Z, {
+                subscribeNowHook: e => (0, r.jsx)(c.Z, {
                     text: e
                 })
             })

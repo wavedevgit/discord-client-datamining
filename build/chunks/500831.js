@@ -26,8 +26,8 @@ var i = n(627968),
     N = n(851109),
     S = n(667086),
     x = n(87001),
-    v = n(52144),
-    y = n(97469),
+    y = n(52144),
+    v = n(97469),
     b = n(253932),
     O = n(430363),
     L = n(113800),
@@ -62,7 +62,7 @@ let U = (0, r.v)(() => ({
         a.useLayoutEffect(() => {
             M.Ay.setMinimumSize(800, 500)
         }, []);
-        let H = (0, y.NC)(),
+        let H = (0, v.NC)(),
             F = (0, s.bG)([D.A, x.A], () => (0, j._U)()),
             Y = (0, l.xl)(),
             W = function(e) {
@@ -93,7 +93,7 @@ let U = (0, r.v)(() => ({
                     trailing: (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)(m.A, {}), U ? (0, i.jsx)(L.A, {}) : null, B && (0, i.jsx)(p.A, {}), (0, i.jsx)(h.A, {
                             canShowReminder: !0
-                        }), V && (0, i.jsx)(v.A, {
+                        }), V && (0, i.jsx)(y.A, {
                             ..."RECENTS" === W ? e : {}
                         }), n ? (0, i.jsx)(f.w, {
                             focusSectionProps: "HELP" === W ? e : void 0

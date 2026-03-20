@@ -1,13 +1,13 @@
 /** chunk id: 796150 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    default: () => S
+    default: () => A
 });
 var r = n(627968),
     i = n(64700),
     a = n(397927),
     l = n(252452),
-    s = n(955838),
+    s = n(507553),
     o = n(324593),
     c = n(883662),
     u = n(961350),
@@ -18,34 +18,34 @@ var r = n(627968),
     m = n(960545),
     p = n(841329),
     b = n(12901),
-    y = n(921854),
-    g = n(987281),
+    g = n(921854),
+    y = n(987281),
     v = n(985018),
     x = n(365782);
 let E = new Set([_.X.PROFILE_PANEL, _.X.SUBSCRIPTIONS_PANEL, _.X.FAMILY_CENTER_PANEL, _.X.POGGERMODE_PANEL]);
 
-function S(e) {
+function A(e) {
     let {
         target: t,
         ...n
     } = e, a = h.A.useField("query");
-    (0, g.V)();
+    (0, y.V)();
     let v = i.useCallback(() => {
             h.A.setState({
                 query: ""
             }), o.A.terminate()
         }, []),
-        [x, S] = i.useState(!1);
+        [x, A] = i.useState(!1);
     return (i.useLayoutEffect(() => {
         let e = () => {
-            null == d.default.getCurrentUser() && (S(!0), (0, b.default)())
+            null == d.default.getCurrentUser() && (A(!0), (0, b.default)())
         };
         return u.default.addChangeListener(e), () => {
-            u.default.removeChangeListener(e), m.A.resetState(), s.default.resetState(), l.A.close()
+            u.default.removeChangeListener(e), m.A.resetState(), s.A.resetState(), l.A.close()
         }
     }, []), x) ? null : (0, r.jsx)(c.A, {
-        partialRoot: y.D,
-        searchBar: A,
+        partialRoot: g.D,
+        searchBar: S,
         emptyState: N,
         sidebarFooter: f.A,
         onViewChange: e => {
@@ -59,7 +59,7 @@ function S(e) {
     })
 }
 
-function A() {
+function S() {
     let e = h.A.useField("query"),
         t = i.useCallback(e => {
             h.A.setState({

@@ -1,11 +1,11 @@
 /** chunk id: 212407 params = (module,exports,require) **/
 n.d(t, {
     Kk: () => s,
-    MV: () => c,
+    MV: () => o,
     U1: () => d,
     bv: () => u,
     qY: () => m,
-    s4: () => o,
+    s4: () => c,
     w$: () => h
 });
 var r = n(64700),
@@ -30,8 +30,8 @@ let s = e => {
             }
         }, [t, n, a, s, e])
     },
-    o = (e, t) => (0, i.mb)(l.RN.FEATURED_BLOCK) ?? t?.assetUrl ?? e?.featuredBlockUrl,
-    c = e => {
+    c = (e, t) => (0, i.mb)(l.RN.FEATURED_BLOCK) ?? t?.assetUrl ?? e?.featuredBlockUrl,
+    o = e => {
         let t = (0, i.mb)(l.RN.CATALOG_BANNER_STATIC),
             n = (0, i.mb)(l.RN.CATALOG_BANNER_ANIMATED),
             r = (0, i.mb)(l.RN.CATALOG_BANNER_RIVE);
@@ -46,12 +46,12 @@ let s = e => {
         let t = (0, i.mb)(l.RN.SHOP_BUTTON_BG_HOVER),
             n = (0, i.mb)(l.RN.SHOP_BUTTON_BG_HOVER_DARK),
             s = (0, i.mb)(l.RN.SHOP_BUTTON_BG_HOVER_LIGHT),
-            o = (0, i.mb)(l.RN.SHOP_BUTTON_BG_RESTING),
-            c = (0, i.mb)(l.RN.SHOP_BUTTON_BG_RESTING_DARK),
+            c = (0, i.mb)(l.RN.SHOP_BUTTON_BG_RESTING),
+            o = (0, i.mb)(l.RN.SHOP_BUTTON_BG_RESTING_DARK),
             d = (0, i.mb)(l.RN.SHOP_BUTTON_BG_RESTING_LIGHT),
             u = (0, i.mb)(l.RN.COACHTIP_AVATAR);
         return r.useMemo(() => {
-            let r = [t, n, s, o, c, d, u].some(e => null != e);
+            let r = [t, n, s, c, o, d, u].some(e => null != e);
             if (e?.type === a.G.COACHMARK) return {
                 hasPreviewAssets: !1
             };
@@ -62,11 +62,11 @@ let s = e => {
                 hasPreviewAssets: r,
                 buttonBGHoverDark: n ?? t ?? m?.dark,
                 buttonBGHoverLight: s ?? t ?? m?.light,
-                buttonBGRestingDark: c ?? o ?? l?.dark,
-                buttonBGRestingLight: d ?? o ?? l?.light,
+                buttonBGRestingDark: o ?? c ?? l?.dark,
+                buttonBGRestingLight: d ?? c ?? l?.light,
                 coachtipAvatar: u ?? (e?.type === a.G.COACHTIP ? e.avatar : void 0)
             }
-        }, [t, n, s, o, c, d, u, e])
+        }, [t, n, s, c, o, d, u, e])
     },
     m = e => ({
         bannerUrl: e.bannerUrl,

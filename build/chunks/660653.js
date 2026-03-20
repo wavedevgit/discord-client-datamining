@@ -1,34 +1,34 @@
 /** chunk id: 660653 params = (module,exports,require) **/
-n.d(e, {
-    Wb: () => s,
-    uh: () => l
+r.d(e, {
+    Wb: () => i,
+    uh: () => s
 });
-var i = n(993408),
-    r = n(442759);
+var n = r(993408),
+    l = r(442759);
 
 function a(t) {
     var e;
-    let n;
+    let r;
     return e = t.items, {
-        firstProfileEffect: (n = new r.Ym(e)).firstProfileEffect,
-        firstAvatarDecoration: n.firstAvatarDecoration,
-        firstNameplate: n.firstNameplate
+        firstProfileEffect: (r = new l.Ym(e)).firstProfileEffect,
+        firstAvatarDecoration: r.firstAvatarDecoration,
+        firstNameplate: r.firstNameplate
     }
 }
 
-function l(t) {
+function s(t) {
     return function(t) {
         let {
             firstAvatarDecoration: e,
-            firstProfileEffect: n,
-            firstNameplate: i
+            firstProfileEffect: r,
+            firstNameplate: n
         } = t;
-        return null != e && null != n && null == i || null != e && null != n && null != i
+        return null != e && null != r && null == n || null != e && null != r && null != n
     }(a(t))
 }
 
-function s(t) {
-    if (!(0, i.aw)(t)) return !1;
+function i(t) {
+    if (!(0, n.aw)(t)) return !1;
     let {
         firstNameplate: e
     } = a(t);

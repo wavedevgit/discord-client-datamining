@@ -25,8 +25,8 @@ var i = n(73153),
     N = n(430452),
     S = n(383501),
     x = n(351906),
-    v = n(532624),
-    y = n(242286),
+    y = n(532624),
+    v = n(242286),
     b = n(256415),
     O = n(954571),
     L = n(427603),
@@ -141,7 +141,7 @@ let j = {
     },
     [R.hCu.TOGGLE_OVERLAY_INPUT_LOCK]: {
         onTrigger(e, t) {
-            if (!(0, v.DV)(t.shortcut)) return;
+            if (!(0, y.DV)(t.shortcut)) return;
             let n = (0, L.A)();
             null != n && r.A.setInputLocked(!b.default.isLocked(n), n)
         },
@@ -152,9 +152,9 @@ let j = {
     },
     [R.hCu.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET]: {
         onTrigger() {
-            let e = y.default.getFocusedPID(),
+            let e = v.default.getFocusedPID(),
                 t = null != e;
-            null != e && t && b.default.isPinned(R.uss.TEXT) && b.default.isLocked(e) && y.default.isReady(e) && r.A.activateRegion(R.ajI.TEXT_WIDGET)
+            null != e && t && b.default.isPinned(R.uss.TEXT) && b.default.isLocked(e) && v.default.isReady(e) && r.A.activateRegion(R.ajI.TEXT_WIDGET)
         },
         keyEvents: {
             keyup: !0,

@@ -1,6 +1,6 @@
 /** chunk id: 812016 params = (module,exports,require) **/
 n.d(t, {
-    I: () => c
+    I: () => o
 });
 var r = n(627968);
 n(64700);
@@ -8,13 +8,13 @@ var a = n(397927),
     i = n(224016),
     l = n(985018),
     s = n(705316),
-    o = n(461727);
-let c = () => {
+    c = n(461727);
+let o = () => {
     let e = [l.t.E1NP2x, l.t.kpMomJ, l.t.xT1Vfn, l.t.myyAEr, l.t.zTk8Ul];
     return (0, r.jsxs)("div", {
         className: s.kL,
         children: [(0, r.jsx)("img", {
-            src: o.A,
+            src: c.A,
             alt: "",
             className: s.ym
         }), (0, r.jsx)(i.A, {

@@ -24,21 +24,21 @@ function f(e) {
         onClose: m,
         trackingProps: p,
         children: b
-    } = e, y = i.useId(), g = i.useMemo(() => ({
-        id: y,
-        headingId: `heading-${y}`,
+    } = e, g = i.useId(), y = i.useMemo(() => ({
+        id: g,
+        headingId: `heading-${g}`,
         onClose: m,
         dismissable: !0
-    }), [y, m]), v = (0, d.NC)(), {
+    }), [g, m]), v = (0, d.NC)(), {
         theme: x
     } = (0, u.wRf)(), E = (0, c.kSI)(t, n);
     return (0, r.jsx)(c.Vs9.Provider, {
-        value: g,
+        value: y,
         children: (0, r.jsx)(u.lGe, {
-            id: y,
+            id: g,
             role: "dialog",
             "aria-label": f,
-            "aria-labelledby": null != f ? void 0 : g.headingId,
+            "aria-labelledby": null != f ? void 0 : y.headingId,
             returnRef: a,
             ...p,
             impressionType: p?.impressionType ?? o.ImpressionTypes.MODAL,

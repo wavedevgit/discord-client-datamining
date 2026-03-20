@@ -51,8 +51,8 @@ var a = n(627968),
     J = n(313843),
     Z = n(286737),
     $ = n(839671),
-    q = n(94836),
-    Q = n(392332),
+    Q = n(94836),
+    q = n(392332),
     ee = n(639714),
     et = n(310721),
     en = n(922283),
@@ -175,13 +175,13 @@ function e_(e) {
     } = e;
     return (0, a.jsxs)("div", {
         className: ed.V0,
-        children: [(0, a.jsx)(Q.A, {
+        children: [(0, a.jsx)(q.A, {
             entries: l,
             viewId: c,
             officialGuildId: i?.guild?.id,
             onClose: o,
             source: u
-        }), (0, a.jsx)(q.A, {
+        }), (0, a.jsx)(Q.A, {
             detectedGame: t,
             trackAction: d
         }), (0, a.jsx)(el.A, {
@@ -204,7 +204,7 @@ function eg(e) {
         className: eu.oC,
         children: [(0, a.jsxs)("div", {
             className: eu.lM,
-            children: [(0, a.jsx)(q.a, {
+            children: [(0, a.jsx)(Q.a, {
                 detectedGame: t.supplementalData,
                 trackAction: n
             }), (0, a.jsx)(es.A, {
@@ -231,7 +231,7 @@ function ef(e) {
     } = (0, B.c)();
     return null == t.supplementalData ? null : (0, a.jsxs)("div", {
         className: ed.V0,
-        children: [(0, a.jsx)(q.a, {
+        children: [(0, a.jsx)(Q.a, {
             detectedGame: t.supplementalData,
             trackAction: n
         }), (0, a.jsxs)("div", {
@@ -604,10 +604,10 @@ function eI(e) {
         $ = (0, d.w)(Z, [], {
             fireOnMount: !0
         }),
-        q = l.useCallback(() => {
+        Q = l.useCallback(() => {
             o(), (0, S.closeUserProfileModal)()
         }, [o]),
-        Q = l.useMemo(() => ({
+        q = l.useMemo(() => ({
             application: k,
             isTwoColumn: m,
             canStartAuthorization: P,
@@ -618,8 +618,8 @@ function eI(e) {
             officialInvite: H,
             isMember: z,
             socialLayerStorefrontRecommendationsData: K,
-            closeModal: q
-        }), [k, m, P, w, U, W, F, H, z, K, q]),
+            closeModal: Q
+        }), [k, m, P, w, U, W, F, H, z, K, Q]),
         ee = l.useCallback(() => {
             o(), (0, S.closeUserProfileModal)()
         }, [o]);
@@ -628,7 +628,7 @@ function eI(e) {
         onClose: o,
         size: "xxl",
         children: (0, a.jsx)(B.D.Provider, {
-            value: Q,
+            value: q,
             children: (0, a.jsx)("div", {
                 className: r()(v, eu.kL),
                 ref: $,

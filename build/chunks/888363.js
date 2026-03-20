@@ -1,6 +1,6 @@
 /** chunk id: 888363 params = (module,exports,require) **/
 n.d(e, {
-    default: () => A
+    default: () => m
 });
 var l = n(627968),
     r = n(64700),
@@ -23,14 +23,14 @@ function T(t) {
         claimRequired: c,
         onSuccess: u,
         onClose: d
-    } = t, [T, h] = r.useState(), [A, m] = r.useState(""), [N, I] = r.useState(""), [f, C] = r.useState(!1);
+    } = t, [T, h] = r.useState(), [m, A] = r.useState(""), [N, I] = r.useState(""), [f, C] = r.useState(!1);
     r.useEffect(() => _.A.flowStep(E.do.ANY, E.hc.CLAIM_ACCOUNT), []);
     let R = async t => {
         t.preventDefault(), C(!0), h(""), I("");
         try {
             await (0, s.KD)({
                 email: e,
-                password: A
+                password: m
             }), C(!1), u()
         } catch (t) {
             t?.body?.email && h(t.body.email), t?.body?.password && I(t.body.password), C(!1)
@@ -71,16 +71,16 @@ function T(t) {
                     }), (0, l.jsx)(a.ksK, {
                         label: S.intl.string(S.t["CIGa+7"]),
                         type: "password",
-                        value: A,
+                        value: m,
                         error: N,
-                        onChange: t => m(t)
+                        onChange: t => A(t)
                     }), (0, l.jsx)(a.Button, {
                         text: S.intl.string(S.t.fiNVin),
                         variant: "primary",
                         fullWidth: !0,
                         type: "submit",
                         loading: f,
-                        disabled: 0 === e.length || 0 === A.length
+                        disabled: 0 === e.length || 0 === m.length
                     }), c && (0, l.jsx)("div", {
                         className: p.pV,
                         children: (0, l.jsx)(a.QWc, {
@@ -150,7 +150,7 @@ function h(t) {
     })
 }
 
-function A(t) {
+function m(t) {
     let {
         onClose: e,
         transitionState: n,

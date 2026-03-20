@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(780645),
     S = n(72152),
     x = n(502103),
-    v = n(929163),
-    y = n(423183),
+    y = n(929163),
+    v = n(423183),
     b = n(568185),
     O = n(225437),
     L = n(221094),
@@ -420,13 +420,13 @@ function em(e) {
     a.useEffect(() => {
         t !== en && et(!K)
     }, [t, en, K]);
-    let [ea, er] = (0, E.Ay)(e => [es.cA.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(eo.m.GUILD_HEADER_TOOLTIPS)], l.x), ed = (0, p.A)(c), ec = (0, u.red)(u.DXt), eu = (0, s.bG)([z.A], () => z.A.hasLayers()), eh = (0, P.xr)(e => e.fullScreenLayers.length > 0), em = (0, s.bG)([H.A], () => H.A.shouldShow(eA)), eg = (0, y.A)(t), ep = c?.features.has(el.GuildFeatures.HUB) === !0, eE = b && c?.features.has(el.GuildFeatures.DISCOVERABLE) === !0, eI = (0, s.bG)([O.A, z.A], () => null != c && null != V && b && !z.A.hasLayers() && O.A.shouldShowGuildTemplateDirtyTooltip(t)), ef = (0, s.bG)([F.A], () => F.A.getChannel(r)), {
+    let [ea, er] = (0, E.Ay)(e => [es.cA.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(eo.m.GUILD_HEADER_TOOLTIPS)], l.x), ed = (0, p.A)(c), ec = (0, u.red)(u.DXt), eu = (0, s.bG)([z.A], () => z.A.hasLayers()), eh = (0, P.xr)(e => e.fullScreenLayers.length > 0), em = (0, s.bG)([H.A], () => H.A.shouldShow(eA)), eg = (0, v.A)(t), ep = c?.features.has(el.GuildFeatures.HUB) === !0, eE = b && c?.features.has(el.GuildFeatures.DISCOVERABLE) === !0, eI = (0, s.bG)([O.A, z.A], () => null != c && null != V && b && !z.A.hasLayers() && O.A.shouldShowGuildTemplateDirtyTooltip(t)), ef = (0, s.bG)([F.A], () => F.A.getChannel(r)), {
         isPopoutOpen: eC
     } = (0, S.S)(), eT = c?.features.has(el.GuildFeatures.COMMUNITY) ?? !1, eN = J.Ay.isNewUser(V), eS = ee && !eN;
     (0, x.A)(c);
     let ex = (0, I.JZ)(o.M.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
-        ev = (0, v.A)(t),
-        ey = (0, s.bG)([X.A], () => X.A.getChannelId()),
+        ey = (0, y.A)(t),
+        ev = (0, s.bG)([X.A], () => X.A.getChannelId()),
         eb = (0, s.bG)([Q.A], () => Q.A.desyncedVoiceStatesCount),
         eO = (0, G.A)(t),
         eL = (0, D.C$)(t, "GuildSidebar"),
@@ -438,7 +438,7 @@ function em(e) {
         ew = (0, U.A)(t),
         eU = !1 === eO && eD && null != ew,
         eG = [];
-    ep && eG.push(o.M.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP), eg && eG.push(o.M.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL), eE && eG.push(o.M.GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL), !1 === eO && eG.push(o.M.GUILD_POWERUP_PERKS_COACHMARK), eL && !eR && !1 === eO && eG.push(o.M.GAME_SERVER_HOSTING_NEW_PERK_AVAILABLE_COACHMARK), eL && !1 === eO && eG.push(o.M.GAME_SERVER_HOSTING_BATCH_RELEASE_V2_COACHMARK), eL && !eR && eP && !1 === eO && eG.push(o.M.GAME_SERVER_PRICING_CHANGE_COACHMARK), ev && eG.push(o.M.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL);
+    ep && eG.push(o.M.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP), eg && eG.push(o.M.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL), eE && eG.push(o.M.GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL), !1 === eO && eG.push(o.M.GUILD_POWERUP_PERKS_COACHMARK), eL && !eR && !1 === eO && eG.push(o.M.GAME_SERVER_HOSTING_NEW_PERK_AVAILABLE_COACHMARK), eL && !1 === eO && eG.push(o.M.GAME_SERVER_HOSTING_BATCH_RELEASE_V2_COACHMARK), eL && !eR && eP && !1 === eO && eG.push(o.M.GAME_SERVER_PRICING_CHANGE_COACHMARK), ey && eG.push(o.M.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL);
     let [ek, eV] = (0, f.kn)(eG, eo.m.GUILD_HEADER_TOOLTIPS), eB = null == ek, [eH, eF] = (0, f.D8)(eB && ej ? o.M.BOOST_TO_UNLOCK_COACHMARK : null, t, {
         cooldownDurationMs: j.bW,
         numTimesToRecur: 5
@@ -470,7 +470,7 @@ function em(e) {
         selectedChannel: ef,
         selectedVoiceChannelId: C,
         voiceStates: A,
-        rtcConnectedChannelId: ey,
+        rtcConnectedChannelId: ev,
         rtcDesyncedVoiceStatesCount: eb,
         isUnavailable: R,
         user: V,

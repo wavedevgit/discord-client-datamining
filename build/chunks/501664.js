@@ -8,8 +8,8 @@ var a = n(503698),
     i = n.n(a),
     l = n(993408),
     s = n(506742),
-    o = n(219103),
-    c = n(163620);
+    c = n(219103),
+    o = n(163620);
 
 function d(e) {
     let {
@@ -20,19 +20,19 @@ function d(e) {
         discountOfferAmount: u,
         hideStrikethroughPrice: m = !1,
         nitroIconType: h,
-        nitroIconSize: p = "md"
-    } = e, x = (0, l.WD)(t, {
+        nitroIconSize: x = "md"
+    } = e, p = (0, l.WD)(t, {
         isPremiumUser: n,
         discount: a
     });
-    if (null == x) return null;
+    if (null == p) return null;
     let {
         defaultPrice: f,
         showDefaultPriceOnly: v
-    } = x;
+    } = p;
     if (v) return (0, r.jsx)("div", {
-        className: i()(c.kG, d),
-        children: (0, r.jsx)(o.x, {
+        className: i()(o.kG, d),
+        children: (0, r.jsx)(c.x, {
             priceAmount: f.amount,
             priceCurrency: f.currency
         })
@@ -41,21 +41,21 @@ function d(e) {
         showNitroPrice: _,
         originalPrice: g,
         finalPrice: A
-    } = x;
+    } = p;
     return (0, r.jsxs)("div", {
-        className: i()(c.kG, d),
+        className: i()(o.kG, d),
         children: [m ? null : (0, r.jsx)(s.a, {
             price: g,
-            className: c.q9
-        }), (0, r.jsx)(o.x, {
+            className: o.q9
+        }), (0, r.jsx)(c.x, {
             priceAmount: A.amount,
             priceCurrency: A.currency,
             discount: a,
             className: i()({
-                [c.q9]: null == u
+                [o.q9]: null == u
             }),
             nitroIconType: _ ? h : void 0,
-            nitroIconSize: p,
+            nitroIconSize: x,
             discountOfferAmount: u
         })]
     })

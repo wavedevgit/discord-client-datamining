@@ -45,18 +45,18 @@ function E(e) {
         rewardContent: E,
         isRewardContentLoading: m,
         rewardContentHasError: h,
-        location: S
-    } = e, g = l.uF.REWARD_MODAL, [f, A] = a.useState(!0), v = a.useCallback(async () => {
+        location: g
+    } = e, f = l.uF.REWARD_MODAL, [S, v] = a.useState(!0), A = a.useCallback(async () => {
         await (0, d.f7)(t.config.ctaConfig.link) && (_(), (0, s.s7G)())
     }, [t.config.ctaConfig.link, _]);
     if (h) return (0, i.jsx)(p, {
         onClose: _,
         transitionState: r
     });
-    let N = m || f;
+    let N = m || S;
     return (0, i.jsx)(o.R, {
         questOrQuests: t,
-        questContent: g,
+        questContent: f,
         sourceQuestContent: n,
         children: e => (0, i.jsxs)(i.Fragment, {
             children: [N ? (0, i.jsx)(s.y$y, {
@@ -88,9 +88,9 @@ function E(e) {
                             children: (0, i.jsx)(c.A, {
                                 quest: t,
                                 sourceQuestContent: n,
-                                onLoadComplete: () => A(!1),
-                                preCtaClick: v,
-                                location: S
+                                onLoadComplete: () => v(!1),
+                                preCtaClick: A,
+                                location: g
                             })
                         })]
                     })]

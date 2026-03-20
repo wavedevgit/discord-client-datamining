@@ -25,8 +25,8 @@ var i = n(256415),
     N = n(388331),
     S = n(466444),
     x = n(177235),
-    v = n(266686);
-let y = {
+    y = n(266686);
+let v = {
         ...r.U,
         ...u.A,
         ...A.A,
@@ -52,10 +52,10 @@ let y = {
     },
     O = {
         server: s.A,
-        commands: y,
+        commands: v,
         events: b,
         stores: [i.default],
-        transports: [v.A],
+        transports: [y.A],
         registerTransportsForEmbeddedPlatform: function() {
             a.Ay.ensureModule("discord_rpc").then(() => {
                 for (let e of [n(33006).A, n(998921).A]) s.A.registerTransport(e)

@@ -8,8 +8,8 @@ var a = n(503698),
     i = n.n(a),
     l = n(397927),
     s = n(580630),
-    o = n(985018),
-    c = n(332822);
+    c = n(985018),
+    o = n(332822);
 let d = e => {
     let {
         price: {
@@ -21,9 +21,9 @@ let d = e => {
     } = e, u = (0, s.RS)(t, n);
     return (0, r.jsxs)(l.Text, {
         variant: d,
-        className: i()(c.v, a),
+        className: i()(o.v, a),
         children: [(0, r.jsx)(l.AC4, {
-            children: o.intl.format(o.t["2CEGln"], {
+            children: c.intl.format(c.t["2CEGln"], {
                 price: u
             })
         }), (0, r.jsx)("span", {

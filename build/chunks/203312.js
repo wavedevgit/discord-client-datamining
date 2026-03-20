@@ -8,22 +8,22 @@ var a = n(503698),
     i = n.n(a),
     l = n(397927),
     s = n(993408),
-    o = n(985018),
-    c = n(399508);
+    c = n(985018),
+    o = n(399508);
 let d = e => {
     let {
         category: t,
-        daysRemainingText: n = o.t.Io7ozn,
+        daysRemainingText: n = c.t.Io7ozn,
         className: a
     } = e;
     if (!(0, s.HF)(t.unpublishedAt)) return null;
     let d = (0, s.WU)(t.unpublishedAt),
-        u = d > 1 ? o.intl.formatToPlainString(n, {
+        u = d > 1 ? c.intl.formatToPlainString(n, {
             days: d
-        }) : o.intl.string(o.t.Bc13HF);
+        }) : c.intl.string(c.t.Bc13HF);
     return (0, r.jsx)(l.LpS, {
         disableColor: !0,
         text: u,
-        className: i()(c.q, a)
+        className: i()(o.q, a)
     })
 }

@@ -2,7 +2,7 @@
 n.d(t, {
     Ay: () => L,
     jO: () => O,
-    nO: () => y
+    nO: () => v
 });
 var i = n(627968),
     a = n(64700),
@@ -27,19 +27,19 @@ var i = n(627968),
     N = n(211917),
     S = n(937495),
     x = n(517061),
-    v = n(970890);
+    y = n(970890);
 
-function y(e) {
+function v(e) {
     let {
         guild: t,
         onClick: r,
         onView: s
-    } = e, [_, m] = a.useState(!1), [I, y] = a.useState(!1), [b, O] = a.useState(!1), L = a.useRef(null), R = a.useCallback(async () => {
-        y(!0);
+    } = e, [_, m] = a.useState(!1), [I, v] = a.useState(!1), [b, O] = a.useState(!1), L = a.useRef(null), R = a.useCallback(async () => {
+        v(!0);
         try {
             await r(t.id)
         } finally {
-            y(!1)
+            v(!1)
         }
     }, [t.id, r]), P = a.useCallback(e => {
         e && !_ && (m(!0), s?.(t.id))
@@ -60,7 +60,7 @@ function y(e) {
             size: 300 * (0, p.mZ)()
         });
         if (null != e) return e;
-        if (j) return v;
+        if (j) return y;
         switch (M) {
             case C.NJ8.DARK:
                 return S;
@@ -186,7 +186,7 @@ function b(e) {
         onClick: n,
         onView: a
     } = e, r = (0, s.bG)([I.A], () => I.A.getGuild(t));
-    return null == r ? null : (0, i.jsx)(y, {
+    return null == r ? null : (0, i.jsx)(v, {
         guild: r,
         onClick: n,
         onView: a

@@ -2,21 +2,21 @@
 n.d(t, {
     XU: () => j,
     Yr: () => A,
-    k0: () => C
+    k0: () => N
 });
 var r = n(64700),
     a = n(873263),
     i = n(311907),
     l = n(775602),
     s = n(793574),
-    o = n(688810),
-    c = n(590180),
+    c = n(688810),
+    o = n(590180),
     d = n(870216),
     u = n(298072),
     m = n(238184),
     h = n(572595),
-    p = n(159439),
-    x = n(57020),
+    x = n(159439),
+    p = n(57020),
     f = n(652215);
 let v = "#itemSkuId=",
     _ = RegExp(`^${v}(\\d+)$`),
@@ -30,13 +30,13 @@ let v = "#itemSkuId=",
         }, [e, t.pathname])
     },
     j = () => {
-        let e = (0, p.U)(),
+        let e = (0, x.U)(),
             t = r.useRef(null),
             n = (0, a.zy)(),
             l = n.pathname === f.BVt.COLLECTIBLES_SHOP ? s.A.HOME_PAGE_SHOP_TAB : s.A.COLLECTIBLES_SHOP,
             {
                 analyticsLocations: v
-            } = (0, o.Ay)(l),
+            } = (0, c.Ay)(l),
             g = (0, m.A)();
         r.useEffect(() => {
             let e = _.exec(n.hash);
@@ -54,15 +54,15 @@ let v = "#itemSkuId=",
                             analyticsLocations: n,
                             analyticsSource: r,
                             tab: a
-                        } = e, i = c.A.getProduct(t), l = c.A.getCategoryForProduct(t);
+                        } = e, i = o.A.getProduct(t), l = o.A.getCategoryForProduct(t);
                         if (null != i && null != l) {
                             let e = i,
-                                s = (0, x.A)({
+                                s = (0, p.A)({
                                     product: i
                                 }),
-                                o = document.getElementById(`shop-item-${e.skuId}`);
-                            if (o !== document.activeElement && o?.focus(), null != i.variantGroupStoreListingId) {
-                                let n = c.A.getProductByStoreListingId(i.variantGroupStoreListingId);
+                                c = document.getElementById(`shop-item-${e.skuId}`);
+                            if (c !== document.activeElement && c?.focus(), null != i.variantGroupStoreListingId) {
+                                let n = o.A.getProductByStoreListingId(i.variantGroupStoreListingId);
                                 if (null != n) {
                                     e = n;
                                     let r = n.variants?.findIndex(e => e.skuId === t);
@@ -88,16 +88,16 @@ let v = "#itemSkuId=",
             }
         }, [v, l, e, A, g])
     },
-    C = e => {
+    N = e => {
         let t = r.useRef({}),
             n = (0, i.bG)([l.A], () => l.A.useReducedMotion),
-            a = (0, i.bG)([c.A], () => c.A.isFetchingCategories),
-            [s, o] = r.useState(null),
+            a = (0, i.bG)([o.A], () => o.A.isFetchingCategories),
+            [s, c] = r.useState(null),
             d = r.useCallback((e, n) => {
                 t.current[e] = n
             }, []),
             u = r.useCallback(r => {
-                a ? o(r) : setTimeout(() => {
+                a ? c(r) : setTimeout(() => {
                     let a = t.current[r];
                     null != a && e?.scrollIntoViewNode({
                         node: a,
@@ -106,10 +106,10 @@ let v = "#itemSkuId=",
                         shouldScrollToStart: !0
                     })
                 }, 100)
-            }, [e, n, a, o]);
+            }, [e, n, a, c]);
         return r.useEffect(() => {
-            a || null == s || (u(s), o(null))
-        }, [a, u, s, o]), {
+            a || null == s || (u(s), c(null))
+        }, [a, u, s, c]), {
             setCategoryRef: d,
             handleScrollToCategory: u
         }

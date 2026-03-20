@@ -1,9 +1,9 @@
 /** chunk id: 338724 params = (module,exports,require) **/
 n.d(t, {
     $x: () => p,
-    Qg: () => x,
-    dy: () => N,
-    he: () => v,
+    Qg: () => E,
+    dy: () => v,
+    he: () => N,
     x$: () => g
 });
 var r, s = n(64700),
@@ -18,8 +18,8 @@ var r, s = n(64700),
     h = n(513461),
     m = n(709977),
     f = n(890620),
-    E = n(985018),
-    x = ((r = {})[r.CLAIM_ACCOUNT = 0] = "CLAIM_ACCOUNT", r[r.EMAIL_CONFIRMATION = 1] = "EMAIL_CONFIRMATION", r[r.VERIFICATION_FORM = 2] = "VERIFICATION_FORM", r);
+    x = n(985018),
+    E = ((r = {})[r.CLAIM_ACCOUNT = 0] = "CLAIM_ACCOUNT", r[r.EMAIL_CONFIRMATION = 1] = "EMAIL_CONFIRMATION", r[r.VERIFICATION_FORM = 2] = "VERIFICATION_FORM", r);
 
 function p(e, t, n) {
     let [r, l] = s.useState(!1), d = (0, i.bG)([_.A], () => _.A.get(e)), c = (0, i.bG)([a.A], () => a.A.pendingState);
@@ -35,7 +35,7 @@ function p(e, t, n) {
                 let t = c.termRules.map(e => e.value.trim()).filter(e => "" !== e);
                 e = [{
                     field_type: h.rX.TERMS,
-                    label: E.intl.string(E.t["9suSIA"]),
+                    label: x.intl.string(x.t["9suSIA"]),
                     values: t,
                     required: !0
                 }]
@@ -56,7 +56,7 @@ function g(e, t, n) {
     return s.useMemo(() => n && a?.id === e ? a : null != r ? r : null != t ? (0, c.Yh)(t) : null, [n, a, e, r, t])
 }
 
-function N(e) {
+function v(e) {
     let t = !e?.isClaimed(),
         n = e?.verified,
         [r, i] = s.useState(2 * !t);
@@ -70,7 +70,7 @@ function N(e) {
     }
 }
 
-function v(e) {
+function N(e) {
     let t = (0, f.YN)(e => e.hasUnsubmittedChanges);
     s.useEffect(() => ((0, f.Yb)(!1), () => {
         (0, f.Yb)(!1)

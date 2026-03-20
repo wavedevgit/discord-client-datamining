@@ -1,6 +1,6 @@
 /** chunk id: 89473 params = (module,exports,require) **/
 n.d(t, {
-    default: () => N
+    default: () => v
 });
 var r = n(627968),
     s = n(64700),
@@ -15,40 +15,40 @@ var r = n(627968),
     h = n(890620),
     m = n(338724),
     f = n(29697),
-    E = n(260197),
-    x = n(985018),
+    x = n(260197),
+    E = n(985018),
     p = n(684335);
 let g = () => (0, r.jsx)(a.A, {
         submitting: !1,
-        message: x.intl.string(x.t["8g514U"]),
+        message: E.intl.string(E.t["8g514U"]),
         onReset: () => {
             (0, h.C7)(!1)
         },
-        onResetText: x.intl.string(x.t["ETE/oC"]),
+        onResetText: E.intl.string(E.t["ETE/oC"]),
         onSave: () => {
-            (0, h.C7)(!1), (0, c.OoC)(E.LC)
+            (0, h.C7)(!1), (0, c.OoC)(x.LC)
         },
-        onSaveText: x.intl.string(x.t["Xt+Uab"]),
+        onSaveText: E.intl.string(E.t["Xt+Uab"]),
         onSaveButtonColor: d.XD.RED
     }),
-    N = e => {
+    v = e => {
         let {
             transitionState: t,
             guildId: n,
             onClose: a,
             onComplete: d,
-            inviteKey: E,
-            isPreview: x = !1
-        } = e, N = (0, h.YN)(e => e.shouldShowWarning), {
-            verificationForm: v,
-            hasFetched: S
-        } = (0, m.$x)(n, x, E), j = (0, u.GV)();
+            inviteKey: x,
+            isPreview: E = !1
+        } = e, v = (0, h.YN)(e => e.shouldShowWarning), {
+            verificationForm: N,
+            hasFetched: j
+        } = (0, m.$x)(n, E, x), I = (0, u.GV)();
         return (s.useEffect(() => {
-            S && v === _.U && a()
-        }, [S, a, v]), v === _.U) ? null : (0, r.jsxs)(r.Fragment, {
+            j && N === _.U && a()
+        }, [j, a, N]), N === _.U) ? null : (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsxs)(i.dWK, {
                 transitionState: t,
-                "aria-labelledby": j,
+                "aria-labelledby": I,
                 size: "xxl",
                 onClose: a,
                 children: [(0, r.jsx)("div", {
@@ -59,16 +59,16 @@ let g = () => (0, r.jsx)(a.A, {
                 }), (0, r.jsx)("div", {
                     className: p.kL,
                     children: (0, r.jsx)(f.A, {
-                        verificationForm: v,
-                        headerId: j,
+                        verificationForm: N,
+                        headerId: I,
                         guildId: n,
                         onClose: a,
                         onComplete: d,
-                        isPreview: x
+                        isPreview: E
                     })
                 })]
             }), (0, r.jsx)(l.F, {
-                children: !0 === N && (0, r.jsx)(c.FQk, {
+                children: !0 === v && (0, r.jsx)(c.FQk, {
                     className: p.lm,
                     children: (0, r.jsx)(g, {})
                 })

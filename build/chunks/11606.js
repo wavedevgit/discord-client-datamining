@@ -8,8 +8,8 @@ var a = n(503698),
     i = n.n(a),
     l = n(575593),
     s = n(397927),
-    o = n(985018),
-    c = n(979190);
+    c = n(985018),
+    o = n(979190);
 
 function d(e) {
     var t;
@@ -17,10 +17,10 @@ function d(e) {
         product: n,
         isDarkText: a = !1,
         isOrbExclusive: d = !1
-    } = e, u = (t = n.type, d ? o.intl.string(o.t["0TmQRG"]) : t === l.R.AVATAR_DECORATION ? o.intl.string(o.t["7v0T9P"]) : t === l.R.PROFILE_EFFECT ? o.intl.string(o.t.wR5wOo) : null);
+    } = e, u = (t = n.type, d ? c.intl.string(c.t["0TmQRG"]) : t === l.R.AVATAR_DECORATION ? c.intl.string(c.t["7v0T9P"]) : t === l.R.PROFILE_EFFECT ? c.intl.string(c.t.wR5wOo) : null);
     return null === u ? null : (0, r.jsx)(s.Text, {
         variant: "text-xxs/normal",
-        className: i()([c.kL, a ? c.ap : c.aK]),
+        className: i()([o.kL, a ? o.ap : o.aK]),
         children: u
     })
 }

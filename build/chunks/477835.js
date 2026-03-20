@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(674168),
     S = n(989799),
     x = n(652215),
-    v = n(49999),
-    y = n(985018),
+    y = n(49999),
+    v = n(985018),
     b = n(492685);
 
 function O(e) {
@@ -73,7 +73,7 @@ function O(e) {
         value: V,
         children: (0, i.jsx)(c.m, {
             targetElementRef: O,
-            text: L ? y.intl.string(y.t["Ox4/zU"]) : R ? y.intl.string(y.t["+YBKYI"]) : P ? y.intl.string(y.t.X1lQli) : y.intl.string(y.t["6EJvHt"]),
+            text: L ? v.intl.string(v.t["Ox4/zU"]) : R ? v.intl.string(v.t["+YBKYI"]) : P ? v.intl.string(v.t.X1lQli) : v.intl.string(v.t["6EJvHt"]),
             asContainer: !0,
             shouldShow: !M,
             children: (0, i.jsx)(A.YNO, {
@@ -110,7 +110,7 @@ function O(e) {
                         innerClassName: b.bk,
                         disabled: D,
                         onClick: () => {
-                            null != G && G !== o.M.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && k(v.i.UNKNOWN), j(!M), Y(), (0, g.X)(B, g.O.SOUNDBOARD)
+                            null != G && G !== o.M.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && k(y.i.UNKNOWN), j(!M), Y(), (0, g.X)(B, g.O.SOUNDBOARD)
                         },
                         onMouseEnter: e => {
                             r.onMouseEnter?.(e), W()
