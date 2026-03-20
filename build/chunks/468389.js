@@ -19,9 +19,9 @@ var l = e(311907),
     E = e(881335),
     b = e(961350),
     _ = e(734057),
-    f = e(498642),
-    h = e(71393),
-    N = e(375492),
+    h = e(498642),
+    N = e(71393),
+    f = e(375492),
     S = e(576705),
     m = e(290863),
     T = e(994500),
@@ -57,7 +57,7 @@ function X(i, t) {
             } = i;
             return e.has(t.id)
         }) : e
-    }, [t, i]), Z = (0, l.bG)([S.A], () => null == i || i.isPrivate() || S.A.can(k.xBc.SEND_MESSAGES, i), [i]), W = (0, l.yK)([x.A], () => [...q.map(i => null != i.application_id && x.A.getState(i.application_id, k.xL.JOIN) === k.eAD.LOADING), ...F.map(i => x.A.getState(i.applicationId, k.xL.JOIN) === k.eAD.LOADING)], [q, F]), z = (0, c.A)([...q.filter(i => i?.application_id != null).map(i => i.application_id), ...F.map(i => i.applicationId)]), ii = i?.id, it = (0, l.yK)([_.A, h.A, f.A, T.A, C.A, j.A, S.A, N.A, v.A], () => [...q.map(i => (0, V.A)({
+    }, [t, i]), Z = (0, l.bG)([S.A], () => null == i || i.isPrivate() || S.A.can(k.xBc.SEND_MESSAGES, i), [i]), W = (0, l.yK)([x.A], () => [...q.map(i => null != i.application_id && x.A.getState(i.application_id, k.xL.JOIN) === k.eAD.LOADING), ...F.map(i => x.A.getState(i.applicationId, k.xL.JOIN) === k.eAD.LOADING)], [q, F]), z = (0, c.A)([...q.filter(i => i?.application_id != null).map(i => i.application_id), ...F.map(i => i.applicationId)]), ii = i?.id, it = (0, l.yK)([_.A, N.A, h.A, T.A, C.A, j.A, S.A, f.A, v.A], () => [...q.map(i => (0, V.A)({
         user: t ?? w,
         activity: i,
         application: z.find(t => t?.id === i.application_id),
@@ -65,13 +65,13 @@ function X(i, t) {
         currentUser: w,
         isEmbedded: (0, M.A)(i),
         ChannelStore: _.A,
-        GuildStore: h.A,
-        GuildMemberCountStore: f.A,
+        GuildStore: N.A,
+        GuildMemberCountStore: h.A,
         RelationshipStore: T.A,
         SelectedChannelStore: C.A,
         VoiceStateStore: j.A,
         PermissionStore: S.A,
-        LocalActivityStore: N.A,
+        LocalActivityStore: f.A,
         SelfPresenceStore: v.A
     })), ...F.map(i => {
         let e = t ?? w;
@@ -82,7 +82,7 @@ function X(i, t) {
             currentUser: w,
             isActivitiesEnabledForCurrentPlatform: (0, G.A)(),
             ChannelStore: _.A,
-            GuildStore: h.A,
+            GuildStore: N.A,
             VoiceStateStore: j.A,
             PermissionStore: S.A
         }) === P.Gy.CAN_JOIN
@@ -134,7 +134,7 @@ function X(i, t) {
                 analyticsLocations: X
             })
         }, is = [];
-    return B?.forEach(l => {
+    return null != t && null != w && t?.id === w.id || (B?.forEach(l => {
         let d = t?.id != null && l.userIds.has(t?.id),
             o = S.A.can(k.xBc.CREATE_INSTANT_INVITE, i),
             s = z.find(i => i?.id === l.applicationId);
@@ -145,7 +145,7 @@ function X(i, t) {
             action: () => {
                 ((l, d) => {
                     let o = _.A.getChannel(l),
-                        s = null == o ? void 0 : h.A.getGuild(o.guild_id);
+                        s = null == o ? void 0 : N.A.getGuild(o.guild_id);
                     if (null != o && null != s) {
                         if (null != t) return U.Ue({
                             channelId: o.id,
@@ -184,18 +184,18 @@ function X(i, t) {
                 })((0, Y.H)(l.location), l.applicationId)
             }
         }, `self-embedded-${l.applicationId}`))
-    }), H.forEach((i, e) => {
-        t?.id !== b.default.getId() && (i.type === k.$pd.PLAYING && (0, $.A)(i, k.jUm.JOIN) ? is.push((0, n.jsx)(a.Drp, {
+    }), H.forEach((i, t) => {
+        i.type === k.$pd.PLAYING && (0, $.A)(i, k.jUm.JOIN) ? is.push((0, n.jsx)(a.Drp, {
             id: "invite-to-join",
             label: Q.intl.string(Q.t["3fRySx"]),
             subtext: i.name,
             action: () => ia(k.xL.JOIN, i)
-        }, `self${e}`)) : i.type === k.$pd.LISTENING && (0, $.A)(i, k.jUm.SYNC) && is.push((0, n.jsx)(a.Drp, {
+        }, `self${t}`)) : i.type === k.$pd.LISTENING && (0, $.A)(i, k.jUm.SYNC) && is.push((0, n.jsx)(a.Drp, {
             id: "invite-to-listen",
             label: Q.intl.string(Q.t["5vvGpV"]),
             subtext: i.name,
             action: () => ia(k.xL.LISTEN, i)
-        }, `self${e}`)))
+        }, `self${t}`))
     }), is.length > 0 && is.push((0, n.jsx)(a.bXX, {}, "menu-separator")), q.forEach((e, l) => {
         let d = (0, $.A)(e, k.jUm.EMBEDDED),
             o = (0, $.A)(e, k.jUm.CONTEXTLESS);
@@ -251,5 +251,5 @@ function X(i, t) {
             subtext: s.name,
             action: () => io(i)
         }, `embedded-activity-${i.applicationId}`))
-    }), is
+    })), is
 }

@@ -34,9 +34,9 @@ function v(e) {
         } = e,
         T = !1,
         S = (0, l.A)(),
-        L = j ? "gift-payment-modal" : "payment-modal",
-        k = x.default.getCurrentUser();
-    k?.verified ? (r.h.wait(() => {
+        k = j ? "gift-payment-modal" : "payment-modal",
+        L = x.default.getCurrentUser();
+    L?.verified ? (r.h.wait(() => {
         r.h.dispatch({
             type: "PAYMENT_MODAL_OPEN"
         })
@@ -47,7 +47,7 @@ function v(e) {
         onStepChange: e => {
             t = e
         },
-        modalKey: L,
+        modalKey: k,
         isGift: j,
         giftMessage: I,
         giftingOrigin: b,
@@ -73,7 +73,7 @@ function v(e) {
             }(0, s.ET)(), (0, o.z)(), E?.(T), T && (0, m.gB)()
         },
         onCloseRequest: () => {
-            null != t && h.has(t) && (0, i.OoC)(L)
+            null != t && h.has(t) && (0, i.OoC)(k)
         },
         onComplete: () => {
             T = !0, N?.()
