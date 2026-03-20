@@ -30,8 +30,8 @@ var a = n(627968),
     N = n(731854),
     I = n(985018),
     k = n(83214),
-    R = n(845775),
-    O = n(565204),
+    O = n(845775),
+    R = n(565204),
     w = n(973324);
 
 function D(e) {
@@ -41,8 +41,8 @@ function D(e) {
             suppress: D,
             awaitingRemote: M,
             iconForeground: P,
-            onMouseEnter: U,
-            onMouseLeave: L,
+            onMouseEnter: L,
+            onMouseLeave: U,
             onClick: B,
             nameplate: G,
             shouldShowSpeakingWhileMutedTooltip: F,
@@ -135,14 +135,14 @@ function D(e) {
                 } = n, o = l ? r.tN5 : r.abt;
                 return (0, a.jsxs)("div", {
                     ref: ee,
-                    className: s()(R.Lh, {
-                        [R.v8]: et,
-                        [R.q6]: l
+                    className: s()(O.Lh, {
+                        [O.v8]: et,
+                        [O.q6]: l
                     }),
                     children: [(0, a.jsx)(E.A, {
                         "aria-checked": et,
                         "aria-label": I.intl.string(I.t.w4m945),
-                        className: R.eT,
+                        className: O.eT,
                         disabled: M,
                         icon: (0, a.jsx)(er, {
                             size: "custom",
@@ -154,30 +154,30 @@ function D(e) {
                         onClick: eu,
                         onContextMenu: i,
                         onMouseEnter: () => {
-                            U(), el.onMouseEnter()
+                            L(), el.onMouseEnter()
                         },
                         onMouseLeave: () => {
-                            L(), el.onMouseLeave()
+                            U(), el.onMouseLeave()
                         },
                         plated: null != G,
                         redGlow: et,
                         role: "switch",
                         ...t,
                         children: ed ? (0, a.jsx)("div", {
-                            className: s()(O.U, {
-                                [O.z]: z
+                            className: s()(R.U, {
+                                [R.z]: z
                             })
                         }) : null
                     }), (0, a.jsx)(E.A, {
                         "aria-label": W ? I.intl.formatToPlainString(I.t["18wnuD"], {
                             inputDeviceName: X
                         }) : I.intl.string(I.t.fRzCbB),
-                        className: s()(R.UT, {
-                            [R.q6]: l
+                        className: s()(O.UT, {
+                            [O.q6]: l
                         }),
                         disabled: M,
                         icon: (0, a.jsx)(o, {
-                            className: R.$$,
+                            className: O.$$,
                             size: "custom",
                             width: 12,
                             height: 12,
@@ -185,8 +185,8 @@ function D(e) {
                         }),
                         onClick: i,
                         onContextMenu: i,
-                        onMouseEnter: U,
-                        onMouseLeave: L,
+                        onMouseEnter: L,
+                        onMouseLeave: U,
                         plated: null != G,
                         redGlow: et,
                         tooltipType: W ? "green_void_do_not_use" : void 0,

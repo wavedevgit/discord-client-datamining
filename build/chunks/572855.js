@@ -216,7 +216,7 @@ function w(e) {
                 action: m
             }, "media-viewer-copy-image"), i && (0, n.jsx)(c.Drp, {
                 id: "media-viewer-copy-link",
-                label: M.intl.string(M.t.WqhZss),
+                label: M.intl.string(M.t["92CPQ+"]),
                 icon: c.qYV,
                 leadingAccessory: {
                     type: "icon",

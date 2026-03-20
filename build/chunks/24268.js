@@ -44,15 +44,15 @@ function v() {
                 ...e
             })) : d.cL()
         }, []),
-        R = (0, u.A)({
+        O = (0, u.A)({
             location: "DevToolsSlayerStorefrontPanel",
             applicationId: l,
             source: c.Ob.Embed,
             trackEntryPointImpression: !0
         }),
-        O = i.useCallback(e => {
-            R?.(e)
-        }, [R]);
+        R = i.useCallback(e => {
+            O?.(e)
+        }, [O]);
     return (0, a.jsx)("div", {
         className: s()(_.nd, f.n),
         children: (0, a.jsxs)("div", {
@@ -78,7 +78,7 @@ function v() {
                 onChange: k
             }), (0, a.jsx)(o.Button, {
                 text: "Open Game Profile Modal",
-                onClick: O
+                onClick: R
             }), (0, a.jsx)(o.Heading, {
                 variant: "heading-lg/normal",
                 children: "Wishlists"

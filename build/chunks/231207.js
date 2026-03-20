@@ -30,8 +30,8 @@ var a = n(627968),
     N = n(71393),
     I = n(166403),
     k = n(652215),
-    R = n(788868),
-    O = n(606793);
+    O = n(788868),
+    R = n(606793);
 
 function w(e) {
     let {
@@ -46,12 +46,12 @@ function w(e) {
     }) : null
 }
 let D = function() {
-    let [e, t] = i.useState(R.pe.TIER_2), [n, v] = i.useState(null), b = (0, r.yK)([N.A], () => N.A.getGuildsArray()), [D] = (0, r.yK)([I.A], () => [I.A.getPremiumSubscription()]), M = b.map(e => ({
+    let [e, t] = i.useState(O.pe.TIER_2), [n, v] = i.useState(null), b = (0, r.yK)([N.A], () => N.A.getGuildsArray()), [D] = (0, r.yK)([I.A], () => [I.A.getPremiumSubscription()]), M = b.map(e => ({
         id: e.id,
         value: e,
         label: e.name
-    })), [P, U] = i.useState(M.length > 0 ? M[0].value : null), [L, B] = i.useState(""), [G, F] = i.useState({
-        plan_id: R.gD.PREMIUM_MONTH_TIER_2,
+    })), [P, L] = i.useState(M.length > 0 ? M[0].value : null), [U, B] = i.useState(""), [G, F] = i.useState({
+        plan_id: O.gD.PREMIUM_MONTH_TIER_2,
         gift: "true"
     }), V = "true" !== G.gift && null != D, [W, H] = i.useState(M.length > 0 ? M[0].value : null), {
         analyticsLocations: K
@@ -67,7 +67,7 @@ let D = function() {
     return (0, a.jsx)(p.f5, {
         value: K,
         children: (0, a.jsx)(c.IpV, {
-            className: O.XG,
+            className: R.XG,
             children: (0, a.jsxs)(c.BJc, {
                 direction: "vertical",
                 gap: 24,
@@ -80,15 +80,15 @@ let D = function() {
                         value: e,
                         options: [{
                             id: "tier_2",
-                            value: R.pe.TIER_2,
+                            value: O.pe.TIER_2,
                             label: "Nitro"
                         }, {
                             id: "tier_1",
-                            value: R.pe.TIER_1,
+                            value: O.pe.TIER_1,
                             label: "Nitro Classic"
                         }, {
                             id: "tier_0",
-                            value: R.pe.TIER_0,
+                            value: O.pe.TIER_0,
                             label: "Nitro Basic"
                         }, {
                             id: "none",
@@ -113,15 +113,15 @@ let D = function() {
                         value: n,
                         options: [{
                             id: "tier_2",
-                            value: R.pe.TIER_2,
+                            value: O.pe.TIER_2,
                             label: "Nitro"
                         }, {
                             id: "tier_1",
-                            value: R.pe.TIER_1,
+                            value: O.pe.TIER_1,
                             label: "Nitro Classic"
                         }, {
                             id: "tier_0",
-                            value: R.pe.TIER_0,
+                            value: O.pe.TIER_0,
                             label: "Nitro Basic"
                         }, {
                             id: "none",
@@ -146,7 +146,7 @@ let D = function() {
                         label: "Boost",
                         value: P,
                         options: M,
-                        onSelectionChange: e => U(e),
+                        onSelectionChange: e => L(e),
                         selectionMode: "single",
                         fullWidth: !0
                     }), null != P ? (0, a.jsx)(_.A, {
@@ -168,17 +168,17 @@ let D = function() {
                         children: [(0, a.jsx)(c.ksK, {
                             label: "Standalone: Trial Promotion Redemption",
                             placeholder: "Promotion Code",
-                            value: L,
+                            value: U,
                             onChange: e => B(e)
                         }), (0, a.jsx)(o.m_, {
                             text: "Need Promotion Code",
-                            shouldShow: L.length < 1,
+                            shouldShow: U.length < 1,
                             children: (0, a.jsx)(c.Button, {
                                 variant: "primary",
                                 text: "Open Link",
-                                disabled: L.length < 1,
+                                disabled: U.length < 1,
                                 onClick: () => {
-                                    window.open(k.BVt.BILLING_PROMOTION_REDEMPTION(L))
+                                    window.open(k.BVt.BILLING_PROMOTION_REDEMPTION(U))
                                 }
                             })
                         })]
@@ -190,15 +190,15 @@ let D = function() {
                         value: G.plan_id,
                         options: [{
                             id: "tier_2",
-                            value: R.gD.PREMIUM_MONTH_TIER_2,
+                            value: O.gD.PREMIUM_MONTH_TIER_2,
                             label: "Nitro"
                         }, {
                             id: "tier_1",
-                            value: R.gD.PREMIUM_MONTH_TIER_1,
+                            value: O.gD.PREMIUM_MONTH_TIER_1,
                             label: "Nitro Classic"
                         }, {
                             id: "tier_0",
-                            value: R.gD.PREMIUM_MONTH_TIER_0,
+                            value: O.gD.PREMIUM_MONTH_TIER_0,
                             label: "Nitro Basic"
                         }],
                         onSelectionChange: e => {
@@ -253,12 +253,12 @@ let D = function() {
                             variant: "text-sm/normal",
                             children: "Virtual Currency Balance:"
                         }), J ? (0, a.jsx)("div", {
-                            className: O.wG,
+                            className: R.wG,
                             children: (0, a.jsx)(c.y$y, {
                                 type: c.tVU.SPINNING_CIRCLE
                             })
                         }) : (0, a.jsxs)("div", {
-                            className: O.dB,
+                            className: R.dB,
                             children: [null !== X && (0, a.jsxs)(c.Text, {
                                 variant: "text-sm/normal",
                                 children: ["Error fetching Virtual Currency Balance: ", X.message]

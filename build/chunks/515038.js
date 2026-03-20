@@ -35,11 +35,11 @@ function N(e) {
         isHovering: l,
         contentPosition: N,
         rowIndex: k,
-        isVisibleInViewport: R,
-        onReceiveErrorHints: O,
+        isVisibleInViewport: O,
+        onReceiveErrorHints: R,
         sourceQuestContent: w
-    } = e, D = i.useRef(null), M = (0, _.mq)(t.config), P = (0, _.mH)(t.config), U = t.userStatus?.enrolledAt != null, {
-        ref: L,
+    } = e, D = i.useRef(null), M = (0, _.mq)(t.config), P = (0, _.mH)(t.config), L = t.userStatus?.enrolledAt != null, {
+        ref: U,
         scrollHeight: B
     } = (0, c.wR)(), G = 104 !== B, {
         onAssetLoadComplete: F
@@ -97,14 +97,14 @@ function N(e) {
             },
             className: S.z,
             children: [(0, a.jsx)(A.A, {
-                showPlaceholder: !R,
+                showPlaceholder: !O,
                 width: 80,
                 height: 80,
                 children: (0, a.jsxs)("div", {
                     className: S.c6,
                     children: [!H && W && (0, a.jsx)("div", {
                         className: S.Nz
-                    }), U ? (0, a.jsxs)("div", {
+                    }), L ? (0, a.jsxs)("div", {
                         className: S.Tr,
                         children: [W && (0, a.jsx)(d.akl, {
                             importData: E,
@@ -137,7 +137,7 @@ function N(e) {
                     })]
                 })
             }), (0, a.jsxs)("div", {
-                ref: L,
+                ref: U,
                 className: s()(S.FS, {
                     [S.wq]: !G
                 }),
@@ -165,7 +165,7 @@ function N(e) {
             questContent: n,
             contentPosition: N,
             rowIndex: k,
-            onReceiveErrorHints: O,
+            onReceiveErrorHints: R,
             sourceQuestContent: w
         })]
     })

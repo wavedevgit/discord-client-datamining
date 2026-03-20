@@ -170,8 +170,8 @@ function S(e) {
         [d, f] = i.useState(!1),
         [S, E] = i.useState(!1),
         [N, I] = i.useState(!1),
-        [k, R] = i.useState(!1),
-        [O, w] = i.useState(null),
+        [k, O] = i.useState(!1),
+        [R, w] = i.useState(null),
         D = e => {
             let t = new Date(e);
             return p.default.fromTimestamp(t.getTime())
@@ -206,7 +206,7 @@ function S(e) {
                 w(e.body?.message || e.message || "Failed to renew subscription")
             }
             r()
-        }, U = v.hd[l.planIdFromItems]?.premiumType === v.PremiumTypes.TIER_0, L = l.metadata?.ended_at, B = null != L ? new Date(L).toISOString().substring(0, 10) : "", G = [{
+        }, L = v.hd[l.planIdFromItems]?.premiumType === v.PremiumTypes.TIER_0, U = l.metadata?.ended_at, B = null != U ? new Date(U).toISOString().substring(0, 10) : "", G = [{
             id: "id",
             label: `ID: ${l.id}`,
             isDisabled: !1
@@ -232,7 +232,7 @@ function S(e) {
         label: `Pause Reason: ${l.pauseReason in C?C[l.pauseReason]:`Unknown pause reason ${l.pauseReason}`}`,
         isDisabled: !1
     }), (0, a.jsx)("div", {
-        className: s()(b.Nr, U ? b.Qf : b.C1),
+        className: s()(b.Nr, L ? b.Qf : b.C1),
         children: (0, a.jsxs)(u.nVY, {
             label: `Type: ${null==(n=l.planIdFromItems)?"No plan id":n in v.hd?v.hd[n].name:`Unknown plan id ${n}`}`,
             className: j.lI,
@@ -281,7 +281,7 @@ function S(e) {
                 className: j.VK,
                 children: [(0, a.jsxs)(u.DUT, {
                     onClick: () => {
-                        R(!k)
+                        O(!k)
                     },
                     className: j.Eh,
                     children: [(0, a.jsx)("div", {
@@ -390,11 +390,11 @@ function S(e) {
                                     })))
                                 }
                             })]
-                        }), null !== O && (0, a.jsx)("div", {
+                        }), null !== R && (0, a.jsx)("div", {
                             className: j.z3,
                             children: (0, a.jsx)(u.wx6, {
                                 type: "critical",
-                                children: O
+                                children: R
                             })
                         })]
                     }), (0, a.jsxs)(u.BJc, {

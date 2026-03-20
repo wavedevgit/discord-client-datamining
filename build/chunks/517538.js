@@ -102,14 +102,14 @@ function j() {
         krispModelOverride: N,
         inputMode: I,
         echoCancellation: k,
-        autoThreshold: R,
-        vadUseKrisp: O,
+        autoThreshold: O,
+        vadUseKrisp: R,
         vadKrispActivationThreshold: w,
         noiseCancellation: D,
         noiseSuppression: M,
         noiseSuppressionSupported: P,
-        noiseCancellationSupported: U,
-        noiseCancellationEnableStats: L,
+        noiseCancellationSupported: L,
+        noiseCancellationEnableStats: U,
         vadDuringPreProcess: B
     } = (0, r.cf)([x.Ay], () => ({
         krispModels: x.Ay.getKrispModels(),
@@ -147,7 +147,7 @@ function j() {
         })
     });
     let K = [];
-    return U && K.push({
+    return L && K.push({
         id: "krisp",
         label: "Krisp",
         value: "KRISP"
@@ -202,24 +202,24 @@ function j() {
                     fullWidth: !0
                 }), (0, a.jsx)(d.dOG, {
                     label: "Enable Stats",
-                    checked: L,
+                    checked: U,
                     onChange: e => c.A.setNoiseCancellationEnableStats(e)
                 })]
             }), I === g.TB.VOICE_ACTIVITY && (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsx)(d.dOG, {
                     label: "Auto Threshold",
-                    checked: R,
+                    checked: O,
                     onChange: e => c.A.setMode(g.TB.VOICE_ACTIVITY, {
                         autoThreshold: e
                     })
-                }), R && (0, a.jsxs)(a.Fragment, {
+                }), O && (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)(d.dOG, {
                         label: "Use Krisp VAD",
-                        checked: O,
+                        checked: R,
                         onChange: e => c.A.setMode(g.TB.VOICE_ACTIVITY, {
                             vadUseKrisp: e
                         })
-                    }), O && (0, a.jsx)(d.Apm, {
+                    }), R && (0, a.jsx)(d.Apm, {
                         label: "Krisp VAD Activation Threshold",
                         initialValue: w,
                         onValueChange: e => c.A.setMode(g.TB.VOICE_ACTIVITY, {

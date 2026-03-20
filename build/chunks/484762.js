@@ -1,6 +1,6 @@
 /** chunk id: 484762 params = (module,exports,require) **/
 n.d(t, {
-    A: () => eO
+    A: () => eR
 }), n(321073);
 var a = n(627968),
     i = n(64700),
@@ -30,14 +30,14 @@ var a = n(627968),
     N = n(127242),
     I = n(869014),
     k = n(379078),
-    R = n(704554),
-    O = n(528772),
+    O = n(704554),
+    R = n(528772),
     w = n(555528),
     D = n(157257),
     M = n(532624),
     P = n(242286),
-    U = n(957565),
-    L = n(405269),
+    L = n(957565),
+    U = n(405269),
     B = n(927813),
     G = n(996439),
     F = n(350535),
@@ -102,7 +102,7 @@ function ee(e) {
         color: m.$n.Colors.LINK,
         size: m.$n.Sizes.MIN,
         onClick: function() {
-            (0, U.C)(t, () => l(!0))
+            (0, L.C)(t, () => l(!0))
         },
         className: Y.DT,
         children: ["Application Id: ", t, " ", n ? Q.intl.string(Q.t.t5VZ88) : null]
@@ -285,7 +285,7 @@ function ea(e) {
 
 function ei(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-    return t ? `${e.toFixed(2)}ms` : (0, L.i$)(o()(e), "h:mm:ss.SSS")
+    return t ? `${e.toFixed(2)}ms` : (0, U.i$)(o()(e), "h:mm:ss.SSS")
 }
 let el = i.memo(function(e) {
     let {
@@ -427,7 +427,7 @@ let er = i.memo(function(e) {
         let e = (0, c.cf)([T.default], () => T.default.getTrackedGames()),
             t = (0, V.getPID)(),
             n = (0, c.bG)([T.default], () => T.default.isOverlayOOPEnabledForPid(t), [t]),
-            [i, l] = (0, c.yK)([O.A], () => [O.A.enabled, O.A.keepOpen]),
+            [i, l] = (0, c.yK)([R.A], () => [R.A.enabled, R.A.keepOpen]),
             s = (0, c.bG)([P.default], () => P.default.getFocusedPID()),
             r = (0, c.bG)([P.default], () => P.default.isFocusedPidOutOfProcess());
         return (0, a.jsxs)("div", {
@@ -752,7 +752,7 @@ let e_ = [{
         let {
             timestamp: t
         } = e;
-        return (0, L.i$)(o()(t), "h:mm:ss.SSS")
+        return (0, U.i$)(o()(t), "h:mm:ss.SSS")
     }
 }];
 
@@ -815,7 +815,7 @@ let eb = ["__webpack_require__", "fn"],
                         children: [i, " (", l, ")", (0, a.jsx)(h.DUT, {
                             tag: "span",
                             className: Y.KE,
-                            onClick: () => (0, U.C)(i),
+                            onClick: () => (0, L.C)(i),
                             children: (0, a.jsx)(h.TdU, {
                                 color: "currentColor",
                                 size: "sm"
@@ -825,7 +825,7 @@ let eb = ["__webpack_require__", "fn"],
                         icon: h.TdU,
                         tooltip: "Copy all properties",
                         onClick: () => {
-                            (0, U.C)(ev(t))
+                            (0, L.C)(ev(t))
                         }
                     }), (0, a.jsx)(j.A.Icon, {
                         icon: h.aXh,
@@ -839,8 +839,8 @@ let eb = ["__webpack_require__", "fn"],
                         copyValue: x.toISOString(),
                         children: (0, a.jsx)("time", {
                             dateTime: x.toISOString(),
-                            title: (0, L.i$)(x, "LLLL"),
-                            children: (0, L.i$)(x, "L h:mm:ss.SSS")
+                            title: (0, U.i$)(x, "LLLL"),
+                            children: (0, U.i$)(x, "L h:mm:ss.SSS")
                         })
                     }), (0, a.jsx)(W.mA, {
                         name: "Log Type",
@@ -928,29 +928,29 @@ function ey() {
             if (n(e)) return !0
         }
         return !1
-    }), [A, p, u, o, C]), [E, I] = i.useState(S), [k, O] = i.useState(null), w = i.useMemo(() => A.find(e => e.key === k), [A, k]), D = i.useCallback(e => {
+    }), [A, p, u, o, C]), [E, I] = i.useState(S), [k, R] = i.useState(null), w = i.useMemo(() => A.find(e => e.key === k), [A, k]), D = i.useCallback(e => {
         I(e)
     }, []), {
         renderSelectedTab: M
     } = (0, z.Ay)({
         tabs: eA
     }, []);
-    (0, R.RT)(y, S, D, eC, [A]);
+    (0, O.RT)(y, S, D, eC, [A]);
     let P = i.useCallback(e => {
             r(e), g.A.setModuleLogging(e)
         }, []),
-        [L, B] = i.useState(!1),
+        [U, B] = i.useState(!1),
         F = i.useRef(null),
         V = i.useCallback(() => {
-            (0, U.C)(JSON.stringify(S)), B(!0)
+            (0, L.C)(JSON.stringify(S)), B(!0)
         }, [S]);
     i.useEffect(() => {
-        if (L) return F.current = setTimeout(() => {
+        if (U) return F.current = setTimeout(() => {
             B(!1)
         }, 4e3), () => {
             null != F.current && clearTimeout(F.current)
         }
-    }, [L]);
+    }, [U]);
     let W = i.useCallback(e => {
             j(null != e ? JSON.parse(e) : null)
         }, []),
@@ -994,8 +994,8 @@ function ey() {
                     children: [(0, a.jsx)(h.Text, {
                         variant: "text-sm/normal",
                         color: "text-subtle",
-                        children: L ? "Copied" : "Copy All"
-                    }), L ? (0, a.jsx)(h.A9s, {
+                        children: U ? "Copied" : "Copy All"
+                    }), U ? (0, a.jsx)(h.A9s, {
                         size: "sm",
                         color: h.LU0.unsafe_rawColors.GREEN_330.css
                     }) : (0, a.jsx)(h.TdU, {
@@ -1042,7 +1042,7 @@ function ey() {
                 columns: e_,
                 data: E,
                 selectedRowKey: k ?? void 0,
-                onClickRow: e => O(e.key)
+                onClickRow: e => R(e.key)
             })
         }), null != w && (0, a.jsx)(H.A, {
             className: s()(Y.st, Y.rf),
@@ -1050,7 +1050,7 @@ function ey() {
             initialHeight: null != t ? t / 3 : 300,
             children: M({
                 breadcrumb: w,
-                onClose: () => O(null)
+                onClose: () => R(null)
             })
         })]
     })
@@ -1200,7 +1200,7 @@ let eN = e => {
         })
     });
 
-function eR() {
+function eO() {
     return (0, a.jsx)(h.ArX, {
         children: (0, a.jsx)("div", {
             className: s()(J.nd, Y.rf),
@@ -1209,7 +1209,7 @@ function eR() {
     })
 }
 
-function eO() {
+function eR() {
     let [e, t] = i.useState("state");
     return i.useEffect(() => (p.h.dispatch({
         type: "OVERLAY_SET_DETAILED_LOGGING",
@@ -1248,6 +1248,6 @@ function eO() {
                     children: "Experiments"
                 })
             })]
-        }), "state" === e && (0, a.jsx)(eE, {}), "logging" === e && (0, a.jsx)(ey, {}), "experiments" === e && (0, a.jsx)(eR, {})]
+        }), "state" === e && (0, a.jsx)(eE, {}), "logging" === e && (0, a.jsx)(ey, {}), "experiments" === e && (0, a.jsx)(eO, {})]
     })
 }

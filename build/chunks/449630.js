@@ -30,14 +30,14 @@ var a = n(627968),
     N = n(559506),
     I = n(646986),
     k = n(379654),
-    R = n(946356),
-    O = n(810396),
+    O = n(946356),
+    R = n(810396),
     w = n(376285),
     D = n(159218),
     M = n(442228),
     P = n(253932),
-    U = n(290863),
-    L = n(351906),
+    L = n(290863),
+    U = n(351906),
     B = n(957565),
     G = n(562153),
     F = n(927578),
@@ -82,10 +82,10 @@ function et(e) {
     }), () => V.A.setState({
         isOpen: !1
     })), []);
-    let eu = (0, d.bG)([U.A], () => U.A.getStatus(t.id)),
+    let eu = (0, d.bG)([L.A], () => L.A.getStatus(t.id)),
         em = P.CY.useSetting(),
         eh = (0, q.Q)(em),
-        ep = (0, d.bG)([L.A], () => L.A.hidePersonalInformation),
+        ep = (0, d.bG)([U.A], () => U.A.hidePersonalInformation),
         ex = (0, _.kB)(),
         eg = P.Q_.useSetting(),
         e_ = (0, q.T)(eu),
@@ -119,10 +119,10 @@ function et(e) {
         ek = i.useCallback(() => {
             ev(), eI()
         }, [ev, eI]),
-        eR = (0, p.JY)({
+        eO = (0, p.JY)({
             location: "UserProfileAccountPopout"
         }),
-        eO = (0, p.on)({
+        eR = (0, p.on)({
             location: "UserProfileAccountPopout"
         });
     return (0, a.jsx)(h.f5, {
@@ -139,7 +139,7 @@ function et(e) {
                     displayProfile: ei,
                     handleOpenUserProfileModal: eE,
                     height: eo
-                }), (0, a.jsxs)(R.A, {
+                }), (0, a.jsxs)(O.A, {
                     className: Z.BK,
                     user: t,
                     displayProfile: ei,
@@ -169,7 +169,7 @@ function et(e) {
                         },
                         children: [(0, a.jsx)(N.A, {
                             userId: t.id
-                        }), (0, a.jsx)(O.A, {
+                        }), (0, a.jsx)(R.A, {
                             user: t,
                             className: Z.Xh,
                             nickname: G.Ay.getName(void 0, null, t),
@@ -205,7 +205,7 @@ function et(e) {
                             onClose: n
                         }), (0, a.jsxs)("div", {
                             className: Z.T_,
-                            children: [(0, a.jsx)(R.A.Overlay, {
+                            children: [(0, a.jsx)(O.A.Overlay, {
                                 className: Z.g0,
                                 children: (0, a.jsxs)(K.Gs, {
                                     children: [(0, a.jsx)(K.N3, {
@@ -263,7 +263,7 @@ function et(e) {
                                         } : void 0
                                     })]
                                 })
-                            }), (0, a.jsx)(R.A.Overlay, {
+                            }), (0, a.jsx)(O.A.Overlay, {
                                 className: Z.g0,
                                 children: (0, a.jsxs)(K.Gs, {
                                     children: [(0, a.jsx)(K.N3, {
@@ -299,7 +299,7 @@ function et(e) {
                         skuId: ei.profileEffect.skuId,
                         isHovering: ec
                     })]
-                }), eR && eO ? (0, a.jsx)(H.A, {
+                }), eO && eR ? (0, a.jsx)(H.A, {
                     targetElementRef: eA,
                     onClose: n
                 }) : null, (0, a.jsx)(f.A, {})]

@@ -31,14 +31,14 @@ var p = n(173628),
     N = n(226936),
     I = n(27126),
     k = n(498336),
-    R = n(615112),
-    O = n(501379),
+    O = n(615112),
+    R = n(501379),
     w = n(517538),
     D = n(211162),
     M = n(436102),
     P = n(435459),
-    U = n(68738),
-    L = n(912878),
+    L = n(68738),
+    U = n(912878),
     B = n(477102),
     G = n(465895),
     F = n(484762),
@@ -184,7 +184,7 @@ function ec() {
             name: "Intl",
             group: er.fu.UI,
             tags: ["i18n", "localization", "messages"],
-            render: () => (0, a.jsx)(O.A, {})
+            render: () => (0, a.jsx)(R.A, {})
         }), e.push({
             id: "colors",
             name: "Colors",
@@ -213,7 +213,7 @@ function ec() {
             name: "Messaging",
             group: er.fu.USERS,
             tags: ["dm", "nux", "system dm"],
-            render: () => (0, a.jsx)(L.A, {})
+            render: () => (0, a.jsx)(U.A, {})
         }), e.push({
             id: "reporting",
             name: "Reporting",
@@ -237,7 +237,7 @@ function ec() {
             name: "Menus",
             group: er.fu.UI,
             tags: ["contextmenus", "popout"],
-            render: () => (0, a.jsx)(U.A, {})
+            render: () => (0, a.jsx)(L.A, {})
         }), e.push({
             id: "layers",
             name: "Layers",
@@ -275,7 +275,7 @@ function ec() {
             name: "Hotspots",
             group: er.fu.EXPERIMENTS,
             tags: ["coachmarks", "nux", "onboarding"],
-            render: () => (0, a.jsx)(R.A, {})
+            render: () => (0, a.jsx)(O.A, {})
         }), e.push({
             id: "perks",
             name: "Perks",

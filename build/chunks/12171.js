@@ -1282,7 +1282,7 @@ let b = [{
     };
 
 function S() {
-    let [e, t] = i.useState("US"), [n, d] = i.useState(null), [c, m] = i.useState(null), [h, p] = i.useState(null), [g, S] = i.useState(null), [E, N] = i.useState("pm_card_us"), [k, R] = i.useState(!1), D = Object.values((0, l.bG)([x.A], () => x.A.paymentSources)), M = j[e], P = async () => {
+    let [e, t] = i.useState("US"), [n, d] = i.useState(null), [c, m] = i.useState(null), [h, p] = i.useState(null), [g, S] = i.useState(null), [E, N] = i.useState("pm_card_us"), [k, O] = i.useState(!1), D = Object.values((0, l.bG)([x.A], () => x.A.paymentSources)), M = j[e], P = async () => {
         let t = E;
         "" === t && (t = "pm_card_us"), await s.Bo.post({
             url: "/debug/payment-source",
@@ -1292,12 +1292,12 @@ function S() {
             },
             rejectWithError: !1
         }), await (0, o.$o)()
-    }, U = async () => {
+    }, L = async () => {
         await s.Bo.del({
             url: "/debug/payment-source",
             rejectWithError: !1
         }), await (0, o.$o)()
-    }, L = async () => {
+    }, U = async () => {
         await s.Bo.del({
             url: "/debug/rate-limits",
             rejectWithError: !1
@@ -1338,7 +1338,7 @@ function S() {
                         }
                     }),
                     onSelectionChange: e => {
-                        t(e), N(j[e][0].value), R(1 === j[e].length)
+                        t(e), N(j[e][0].value), O(1 === j[e].length)
                     }
                 }), "US" === e && (0, a.jsx)(r.l6P, {
                     selectionMode: "single",
@@ -1405,12 +1405,12 @@ function S() {
                     variant: "primary",
                     size: "sm",
                     text: "Delete All Payment Sources",
-                    onClick: U
+                    onClick: L
                 }), (0, a.jsx)(r.Button, {
                     variant: "primary",
                     size: "sm",
                     text: "Reset API Rate limits and reload app",
-                    onClick: L
+                    onClick: U
                 })]
             }), (0, a.jsx)(r.Text, {
                 style: {
@@ -1419,7 +1419,7 @@ function S() {
                 },
                 variant: "text-lg/bold",
                 children: "Generate Gift Card PIN"
-            }), (0, a.jsx)(O, {}), (0, a.jsx)(r.Text, {
+            }), (0, a.jsx)(R, {}), (0, a.jsx)(r.Text, {
                 style: {
                     marginTop: "24px",
                     marginBottom: "16px"
@@ -1502,7 +1502,7 @@ let k = [{
         value: "DE",
         label: "Germany (EUR)"
     }],
-    R = {
+    O = {
         US: "usd",
         CA: "cad",
         FR: "eur",
@@ -1510,7 +1510,7 @@ let k = [{
         DE: "eur"
     };
 
-function O() {
+function R() {
     let [e, t] = i.useState("US"), [n, l] = i.useState("500"), [o, d] = i.useState(null), [c, u] = i.useState(!1), [m, h] = i.useState(!1), [p, x] = i.useState(null), g = parseInt(n, 10), _ = !isNaN(g) && g >= 500 && g <= 5e3, f = async () => {
         if (_) {
             u(!0), x(null), d(null), h(!1);
@@ -1519,7 +1519,7 @@ function O() {
                     url: "/billing/gift-card/create-on-demand-pin",
                     body: {
                         country: e,
-                        currency: R[e],
+                        currency: O[e],
                         amount: g
                     },
                     rejectWithError: !0

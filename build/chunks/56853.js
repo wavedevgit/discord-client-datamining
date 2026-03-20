@@ -30,14 +30,14 @@ var a = n(627968),
     N = n(398025),
     I = n(545986),
     k = n(516226),
-    R = n(720875),
-    O = n(654487),
+    O = n(720875),
+    R = n(654487),
     w = n(419367),
     D = n(652215),
     M = n(985018),
     P = n(679643);
 
-function U(e) {
+function L(e) {
     let {
         children: t,
         variant: n = "default"
@@ -56,7 +56,7 @@ function U(e) {
     })
 }
 
-function L(e) {
+function U(e) {
     let {
         quest: t,
         errorHints: n,
@@ -142,7 +142,7 @@ function B(e) {
             sourceQuestContentCTA: b.Cy.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
         })
     }, [F, t, w]), X = (0, o.bG)([g.A], () => g.A.getQuestHomeHeroConfig()), Z = i.useMemo(() => null != X && (0, C.I0)(X, t.id), [X, t.id]), ee = f.s5.useConfig({
-        location: O.rE.QUESTS_CARD
+        location: R.rE.QUESTS_CARD
     }), et = ee.enabled && ee.variant === f.tL.INFO_ICON, en = (0, v.do)({
         quest: t,
         content: _.uF.QUEST_HOME_DESKTOP,
@@ -177,9 +177,9 @@ function B(e) {
                         direction: "horizontal",
                         fullWidth: !1,
                         gap: 8,
-                        children: [Z && !(0, j.Ic)(t) && (0, a.jsx)(U, {
+                        children: [Z && !(0, j.Ic)(t) && (0, a.jsx)(L, {
                             children: M.intl.string(M.t.Jt6u7B)
-                        }), t.preview && (0, a.jsx)(U, {
+                        }), t.preview && (0, a.jsx)(L, {
                             variant: "brand",
                             children: M.intl.string(M.t.SKNnqq)
                         })]
@@ -225,7 +225,7 @@ function B(e) {
                             })
                         })
                     })]
-                }), (0, a.jsx)(R.A, {
+                }), (0, a.jsx)(O.A, {
                     showPlaceholder: !r,
                     width: 100,
                     height: 30,
@@ -270,7 +270,7 @@ function B(e) {
                         })
                     })]
                 })]
-            }), (0, a.jsx)(L, {
+            }), (0, a.jsx)(U, {
                 quest: t,
                 errorHints: G,
                 warningHints: s,

@@ -1,26 +1,27 @@
 /** chunk id: 953414 params = (module,exports,require) **/
 n.d(t, {
-    A: () => j
-});
+    A: () => A
+}), n(321073);
 var a = n(627968),
     i = n(64700),
     l = n(503698),
     s = n.n(l),
     r = n(311907),
     o = n(397927),
-    d = n(58736),
-    c = n(231545),
-    u = n(260880),
-    m = n(303054),
-    h = n(231643),
-    p = n(930821),
-    x = n(998758);
+    d = n(73153),
+    c = n(58736),
+    u = n(231545),
+    m = n(260880),
+    h = n(303054),
+    p = n(231643),
+    x = n(930821),
+    g = n(998758);
 
-function g(e, t) {
+function _(e, t) {
     return e.store.getName().localeCompare(t.store.getName())
 }
 
-function _(e) {
+function f(e) {
     let {
         store: t,
         dataGetter: n
@@ -31,103 +32,199 @@ function _(e) {
             t.removeChangeListener(e)
         }
     }, [t, n]), (0, a.jsx)(o.IpV, {
-        className: x.Dx,
-        children: (0, a.jsx)(c.A, {
+        className: g.Dx,
+        children: (0, a.jsx)(u.A, {
             data: l
         })
     })
 }
-let f = [{
-        key: "name",
-        cellClassName: x.__invalid_eventColumn,
-        render(e) {
-            let {
-                store: t
-            } = e;
-            return t.getName()
-        }
-    }],
-    v = [{
-        id: "local",
-        name: "Local Variables",
-        group: h.fu.NONE,
-        render(e) {
-            let {
-                store: t
-            } = e;
-            return null == t.__getLocalVars ? (0, a.jsxs)("div", {
-                className: x.Dx,
-                children: ["Store is missing ", (0, a.jsx)("code", {
-                    children: "__getLocalVars"
-                }), " method."]
-            }) : (0, a.jsx)(_, {
-                store: t,
-                dataGetter: e => e.__getLocalVars()
-            })
-        }
-    }, {
-        id: "instance",
-        name: "Store Instance",
-        group: h.fu.NONE,
-        render(e) {
-            let {
-                store: t
-            } = e;
-            return (0, a.jsx)(_, {
-                store: t,
-                dataGetter: e => e
-            })
-        }
-    }];
 
-function b(e) {
+function v(e) {
+    let {
+        store: t
+    } = e, [n, l] = i.useState(() => JSON.stringify(t.__getLocalVars(), null, 2)), [r, c] = i.useState(null), u = i.useCallback(() => {
+        l(JSON.stringify(t.__getLocalVars(), null, 2)), c(null)
+    }, [t]);
+    i.useEffect(() => (t.addChangeListener(u), () => t.removeChangeListener(u)), [t, u]);
+    let m = i.useCallback(() => {
+            let e;
+            c(null);
+            try {
+                e = JSON.parse(n)
+            } catch (e) {
+                c(e instanceof SyntaxError ? e.message : "Invalid JSON");
+                return
+            }
+            let a = t.__getLocalVarsEditConfig?.();
+            if (null == a) return void c("Store does not support editing");
+            try {
+                for (let e of a.preDispatches ?? []) d.h.dispatch(e);
+                d.h.dispatch({
+                    ...a.buildPayload(e),
+                    type: a.actionType
+                }), u()
+            } catch (e) {
+                c(e instanceof Error ? e.message : String(e))
+            }
+        }, [n, t, u]),
+        h = i.useCallback(() => {
+            let e = t.__getLocalVarsEditConfig?.();
+            if (e?.getPurgeVars == null) return void c("Store does not support purge");
+            c(null);
+            try {
+                let t = e.getPurgeVars();
+                for (let t of e.preDispatches ?? []) d.h.dispatch(t);
+                d.h.dispatch({
+                    ...e.buildPayload(t),
+                    type: e.actionType
+                }), u()
+            } catch (e) {
+                c(e instanceof Error ? e.message : String(e))
+            }
+        }, [t, u]);
+    return (0, a.jsxs)("div", {
+        className: s()(g.Dx, g.Ef),
+        children: [(0, a.jsx)("textarea", {
+            className: g.Vz,
+            value: n,
+            onChange: e => l(e.target.value),
+            spellCheck: !1,
+            "aria-label": "Edit local variables as JSON"
+        }), null != r && (0, a.jsx)("div", {
+            className: g.Xf,
+            role: "alert",
+            children: r
+        }), (0, a.jsxs)("div", {
+            className: g.KA,
+            children: [(0, a.jsx)(o.Button, {
+                variant: "primary",
+                size: "sm",
+                text: "Apply",
+                onClick: m
+            }), (0, a.jsx)(o.Button, {
+                variant: "secondary",
+                size: "sm",
+                text: "Refresh from store",
+                onClick: u
+            }), t.__getLocalVarsEditConfig?.().getPurgeVars != null && (0, a.jsx)(o.Button, {
+                variant: "secondary",
+                size: "sm",
+                text: "Purge store",
+                onClick: h
+            })]
+        })]
+    })
+}
+let b = [{
+    key: "name",
+    cellClassName: g.__invalid_eventColumn,
+    render(e) {
+        let {
+            store: t
+        } = e;
+        return t.getName()
+    }
+}];
+
+function j(e) {
     let {
         store: t,
         initialHeight: n
-    } = e, {
-        TabBar: i,
-        renderSelectedTab: l
-    } = (0, h.Ay)({
-        tabs: v
+    } = e, l = i.useMemo(() => {
+        let e;
+        return e = [{
+            id: "local",
+            name: "Local Variables",
+            group: p.fu.NONE,
+            render(e) {
+                let {
+                    store: t
+                } = e;
+                return null == t.__getLocalVars ? (0, a.jsxs)("div", {
+                    className: g.Dx,
+                    children: ["Store is missing ", (0, a.jsx)("code", {
+                        children: "__getLocalVars"
+                    }), " method."]
+                }) : (0, a.jsx)(f, {
+                    store: t,
+                    dataGetter: e => e.__getLocalVars()
+                })
+            }
+        }, {
+            id: "instance",
+            name: "Store Instance",
+            group: p.fu.NONE,
+            render(e) {
+                let {
+                    store: t
+                } = e;
+                return (0, a.jsx)(f, {
+                    store: t,
+                    dataGetter: e => e
+                })
+            }
+        }], null != t.__getLocalVars && e.push({
+            id: "edit-local",
+            name: "Edit Local Variables",
+            group: p.fu.NONE,
+            render(e) {
+                let {
+                    store: t
+                } = e;
+                return null == t.__getLocalVarsEditConfig ? (0, a.jsxs)("div", {
+                    className: g.Dx,
+                    children: ["Store is missing ", (0, a.jsx)("code", {
+                        children: "__getLocalVarsEditConfig"
+                    }), " method."]
+                }) : (0, a.jsx)(v, {
+                    store: t
+                })
+            }
+        }), e
+    }, [t]), {
+        TabBar: r,
+        renderSelectedTab: d
+    } = (0, p.Ay)({
+        tabs: l
     }, []);
-    return (0, a.jsxs)(u.A, {
-        className: x.rf,
+    return (0, a.jsxs)(m.A, {
+        className: g.rf,
         minHeight: 100,
         initialHeight: n,
-        children: [(0, a.jsx)(i, {}), (0, a.jsxs)(d.Ay, {
-            className: s()(p.jr, x.nZ),
-            children: [(0, a.jsx)(d.Ay.Icon, {
+        children: [(0, a.jsx)(r, {}), (0, a.jsxs)(c.Ay, {
+            className: s()(x.jr, g.nZ),
+            children: [(0, a.jsx)(c.Ay.Icon, {
                 icon: o.gqV,
                 tooltip: t.getName()
-            }), (0, a.jsx)(d.Ay.Title, {
+            }), (0, a.jsx)(c.Ay.Title, {
                 children: t.getName()
             })]
-        }), l({
+        }), d({
             store: t
         })]
     })
 }
 
-function j() {
+function A() {
     let e = i.useRef(null),
         [t, n] = i.useState(""),
         l = r.il.getAll(),
         d = i.useMemo(() => l.map(e => ({
             key: e._dispatchToken,
             store: e
-        })).sort(g), [l]).filter(e => (function(e, t) {
+        })).sort(_), [l]).filter(e => (function(e, t) {
             let {
                 store: n
             } = e;
             return n.getName().toLowerCase().includes(t.toLowerCase())
         })(e, t)),
         [c, u] = i.useState(),
-        h = l.find(e => e._dispatchToken === c);
+        m = l.find(e => e._dispatchToken === c);
     return (0, a.jsxs)("div", {
         ref: e,
-        className: s()(p.nd, x.nd),
+        className: s()(x.nd, g.nd),
         children: [(0, a.jsx)("div", {
-            className: x.KE,
+            className: g.KE,
             children: (0, a.jsx)(o.IWV, {
                 size: "sm",
                 query: t,
@@ -136,14 +233,14 @@ function j() {
                 placeholder: "Search stores",
                 "aria-label": "Search stores"
             })
-        }), (0, a.jsx)(m.A, {
-            columns: f,
+        }), (0, a.jsx)(h.A, {
+            columns: b,
             data: d,
             selectedRowKey: c,
             onClickRow: e => u(e.key)
-        }), null != h && (0, a.jsx)(b, {
-            store: h,
+        }), null != m && (0, a.jsx)(j, {
+            store: m,
             initialHeight: null != e.current ? e.current.clientHeight / 2 : 300
-        })]
+        }, c)]
     })
 }

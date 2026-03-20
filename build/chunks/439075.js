@@ -51,8 +51,8 @@ function b(e) {
             },
             sourceQuestContent: j
         })
-    }, [N, t.id, l, j, r]), R = i.useContext(x.X), {
-        visibilityElementRef: O,
+    }, [N, t.id, l, j, r]), O = i.useContext(x.X), {
+        visibilityElementRef: R,
         almostVisibleInViewport: w
     } = function(e) {
         let [t, n] = i.useState(!1), a = i.useCallback(e => {
@@ -66,11 +66,11 @@ function b(e) {
             }, !0),
             almostVisibleInViewport: t
         }
-    }(R?.current?.getScrollerNode() ?? null);
+    }(O?.current?.getScrollerNode() ?? null);
     return (0, a.jsxs)("div", {
         id: `quest-tile-${t.id}`,
         ref: e => {
-            b.current = e, O.current = e
+            b.current = e, R.current = e
         },
         className: s()(v.k, n),
         onMouseEnter: I,
