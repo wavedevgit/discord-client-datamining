@@ -333,11 +333,11 @@ function F(e) {
         })
     }) : ea ? eE = (0, a.jsx)("div", {
         className: D.x6,
-        children: em.enabled && eh === k.UA.UNENROLLED && em.enabledQuestStates.has(k.UA.UNENROLLED) ? (0, a.jsxs)(r.e2v, {
+        children: em.enabled && (eh === k.UA.UNENROLLED || eh === k.UA.ENROLLED) && em.enabledQuestStates.has(eh) ? (0, a.jsxs)(r.e2v, {
             direction: "horizontal",
             fullWidth: !0,
             wrap: !1,
-            children: [eS, (0, a.jsx)(I.A, {
+            children: [eh === k.UA.UNENROLLED ? eS : null, (0, a.jsx)(I.A, {
                 quest: t,
                 surface: k.V3.QUEST_HOME_TILE_FOOTER,
                 analyticsCtxQuestContent: n,
@@ -376,6 +376,15 @@ function F(e) {
         },
         size: "sm",
         "data-migration-pending": !0
+    }) : em.enabled && eh === k.UA.ENROLLED && em.enabledQuestStates.has(k.UA.ENROLLED) ? (0, a.jsx)("div", {
+        className: D.x6,
+        children: (0, a.jsx)(I.A, {
+            quest: t,
+            surface: k.V3.QUEST_HOME_TILE_FOOTER,
+            analyticsCtxQuestContent: n,
+            analyticsCtxSourceQuestContent: U,
+            analyticsCtxQuestContentPosition: A
+        })
     }) : (0, S.g5)(t) && !K && es !== p.X0.DESKTOP ? H ? (0, a.jsx)("div", {
         className: D.x6,
         children: (0, a.jsx)(r.$nd, {
