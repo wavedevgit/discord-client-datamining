@@ -8,8 +8,8 @@ a.d(t, {
     dB: () => A,
     dL: () => f,
     eb: () => I,
-    et: () => g,
-    hc: () => C,
+    et: () => C,
+    hc: () => g,
     uP: () => h,
     uk: () => m
 }), a(321073);
@@ -92,7 +92,7 @@ let d = [],
             loading: t
         }
     },
-    g = () => {
+    C = () => {
         let [e, t] = n.useState(!1), [a, l] = n.useState(null);
         return {
             error: a,
@@ -108,7 +108,7 @@ let d = [],
             }
         }
     },
-    C = () => {
+    g = () => {
         let [e, t] = (0, i.A)(o.mK), {
             loading: a,
             error: n

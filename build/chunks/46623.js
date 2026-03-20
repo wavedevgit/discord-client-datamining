@@ -1,5 +1,5 @@
 /** chunk id: 46623 params = (module,exports,require) **/
-i.d(t, {
+i.d(e, {
     A: () => c
 });
 var s = i(627968);
@@ -13,11 +13,11 @@ var r = i(732955),
 
 function c() {
     let {
-        selectedTab: e,
-        isPhantomPreview: t,
+        selectedTab: t,
+        isPhantomPreview: e,
         handlePreviewDismiss: i
     } = (0, l.k)();
-    return t ? (0, s.jsxs)(s.Fragment, {
+    return e ? (0, s.jsxs)(s.Fragment, {
         children: [(0, s.jsxs)("div", {
             className: o.ZF,
             children: [(0, s.jsx)(n.G3N, {
@@ -26,10 +26,10 @@ function c() {
             }), (0, s.jsx)(n.Text, {
                 variant: "text-sm/normal",
                 className: o.cP,
-                children: e === d.B.GUILD_PRODUCTS_PREVIEW ? a.intl.string(a.t.F4Z0nV) : a.intl.string(a.t.pzTFpM)
+                children: t === d.B.GUILD_PRODUCTS_PREVIEW ? a.intl.string(a.t.F4Z0nV) : a.intl.string(a.t.pzTFpM)
             })]
         }), (0, s.jsx)(r.$nd, {
-            text: e === d.B.GUILD_PRODUCTS_PREVIEW ? a.intl.string(a.t.YF35pV) : a.intl.string(a.t.r30bky),
+            text: t === d.B.GUILD_PRODUCTS_PREVIEW ? a.intl.string(a.t.YF35pV) : a.intl.string(a.t.r30bky),
             size: "sm",
             variant: "secondary",
             onClick: i

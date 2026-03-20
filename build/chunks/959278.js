@@ -43,7 +43,7 @@ var i = n(627968),
     B = n(490358),
     H = n(961973),
     F = n(917973),
-    Y = n(130978),
+    Y = n(440293),
     W = n(551036),
     K = n(46533),
     q = n(467627),
@@ -183,7 +183,7 @@ let eU = (0, c.Fe)({
                 }
             });
         (0, eh.C$)(c) && (0, eh.C$)(d) || (null != u && (0, eI.pX)(eR.BVt.CHANNEL(u.id, (0, e_.A)(u))), (0, Z.E)());
-        let I = (0, Y.$)(l, "channel_renderer");
+        let I = (0, Y.$)(l);
         if (null != l && null != c && (0, eP.jq)(c)) switch (c) {
             case eP.VV.ROLE_SUBSCRIPTIONS:
                 return I ? (0, i.jsx)(ek, {

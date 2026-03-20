@@ -17,8 +17,8 @@ var i = n(627968),
     T = n(967305),
     A = n(739455),
     I = n(997509),
-    p = n(976860),
-    N = n(309010),
+    N = n(976860),
+    p = n(309010),
     m = n(967198),
     R = n(792831),
     h = n(147925),
@@ -65,7 +65,7 @@ function M(e) {
 function L() {
     let e = l.useRef(null),
         t = (0, a.bG)([m.A], () => m.A.getGuildId()),
-        n = (0, a.bG)([N.A], () => N.A.getChannelId(t)),
+        n = (0, a.bG)([p.A], () => p.A.getChannelId(t)),
         {
             viewingRoles: r,
             backNavigationSection: s,
@@ -96,7 +96,7 @@ function L() {
             let {
                 backToSettings: n
             } = e;
-            null != t && (C.A.isFullServerPreview(t) && (0, p.pX)(y.BVt.CHANNEL(t)), E.Ay.shouldShowOnboarding(t) && (_.A.finishOnboarding(t), (0, T.Jg)(t)), (0, g.rf)(t), n && I.A.open(t, s), s === y.BEX.ROLE_SUBSCRIPTIONS && (0, A.Fx)(t))
+            null != t && (C.A.isFullServerPreview(t) && (0, N.pX)(y.BVt.CHANNEL(t)), E.Ay.shouldShowOnboarding(t) && (_.A.finishOnboarding(t), (0, T.Jg)(t)), (0, g.rf)(t), n && I.A.open(t, s), s === y.BEX.ROLE_SUBSCRIPTIONS && (0, A.Fx)(t))
         };
     return (0, i.jsxs)(d.$Td, {
         color: d.Hv$.BRAND,

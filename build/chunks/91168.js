@@ -16,7 +16,7 @@ var i = n(627968),
     g = n(774780),
     x = n(591552),
     h = n(961973),
-    _ = n(130978),
+    _ = n(440293),
     p = n(84763),
     A = n(567305),
     f = n(739455),
@@ -75,7 +75,7 @@ var i = n(627968),
     eA = n(221009);
 let ef = {
     getSectionDefinition: function(e, t) {
-        let ef = (0, _.$)(t.guild.id, "guild_settings"),
+        let ef = (0, _.$)(t.guild.id),
             ej = !1 === t.guild.features.has(eh.GuildFeatures.CREATOR_MONETIZABLE) && !1 === t.guild.features.has(eh.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL),
             eN = ef && ej ? {
                 label: (0, i.jsx)("div", {
@@ -257,7 +257,7 @@ let ef = {
                 };
             case eh.BEX.GUILD_PRODUCTS:
                 return {
-                    section: eh.BEX.GUILD_PRODUCTS, label: ep.intl.string(ep.t.X6h2gz), ariaLabel: ep.intl.string(ep.t.X6h2gz), element: p.A, predicate: () => t.monetizationPredicate() && (0, _.$)(t.guild.id, "guild_product_settings_predicate") && (0, A.hA)(t.guild)
+                    section: eh.BEX.GUILD_PRODUCTS, label: ep.intl.string(ep.t.X6h2gz), ariaLabel: ep.intl.string(ep.t.X6h2gz), element: p.A, predicate: () => t.monetizationPredicate() && (0, _.$)(t.guild.id) && (0, A.hA)(t.guild)
                 };
             case eh.BEX.ROLE_SUBSCRIPTIONS_STORE_PAGE:
                 return {

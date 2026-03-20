@@ -1,5 +1,5 @@
 /** chunk id: 324269 params = (module,exports,require) **/
-i.d(t, {
+i.d(e, {
     default: () => C
 });
 var s = i(627968),
@@ -10,29 +10,29 @@ var s = i(627968),
     a = i(284683),
     o = i(985018);
 
-function c(e) {
+function c(t) {
     let {
-        closePopout: t,
+        closePopout: e,
         sortOptionContext: i
-    } = e, {
+    } = t, {
         sortOption: n,
         setSortOption: d,
         onReset: c
-    } = i, C = r.useMemo(() => a.aq.map(e => (0, s.jsx)(l.iDA, {
-        id: `${e}`,
+    } = i, C = r.useMemo(() => a.aq.map(t => (0, s.jsx)(l.iDA, {
+        id: `${t}`,
         group: "sort-by",
-        label: (0, a.Ac)(e),
-        action: () => d(e),
-        checked: n === e
-    }, e)), [d, n]);
+        label: (0, a.Ac)(t),
+        action: () => d(t),
+        checked: n === t
+    }, t)), [d, n]);
     return (0, s.jsx)("div", {
         children: (0, s.jsxs)(l.W1t, {
             "data-menu-migrated": !0,
             navId: "sort-and-view",
             "aria-label": o.intl.string(o.t["4jfWTK"]),
             hideScroller: !0,
-            onClose: t,
-            onSelect: t,
+            onClose: e,
+            onSelect: e,
             children: [(0, s.jsx)(l.rXV, {
                 label: o.intl.string(o.t.mBvLev),
                 children: C
@@ -48,25 +48,25 @@ function c(e) {
 }
 
 function C() {
-    let e = (0, d.R)(),
-        t = (0, a.Ac)(e.sortOption),
+    let t = (0, d.R)(),
+        e = (0, a.Ac)(t.sortOption),
         i = r.useRef(null);
     return (0, s.jsx)(l.YNO, {
         targetElementRef: i,
-        renderPopout: t => {
+        renderPopout: e => {
             let {
                 closePopout: i
-            } = t;
+            } = e;
             return (0, s.jsx)(c, {
                 closePopout: i,
-                sortOptionContext: e
+                sortOptionContext: t
             })
         },
         position: "bottom",
         align: "left",
-        children: e => (0, s.jsx)(n.$nd, {
-            ...e,
-            text: t,
+        children: t => (0, s.jsx)(n.$nd, {
+            ...t,
+            text: e,
             icon: l.JNJ,
             variant: "secondary",
             buttonRef: i

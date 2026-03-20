@@ -1,5 +1,5 @@
 /** chunk id: 398828 params = (module,exports,require) **/
-i.d(t, {
+i.d(e, {
     A: () => m
 });
 var s = i(627968);
@@ -19,10 +19,10 @@ var r = i(417597),
     p = i(150536);
 
 function j() {
-    let e = o.kt.useSetting(),
-        t = (0, C.j)(),
+    let t = o.kt.useSetting(),
+        e = (0, C.j)(),
         i = (0, r.bG)([l.A], () => l.A.useReducedMotion),
-        n = t && e && !i ? (0, d.n)("server_products/storefront/question-mark.gif") : (0, d.n)("server_products/storefront/question-mark.png");
+        n = e && t && !i ? (0, d.n)("server_products/storefront/question-mark.gif") : (0, d.n)("server_products/storefront/question-mark.png");
     return (0, s.jsxs)("div", {
         className: p.Xq,
         children: [(0, s.jsx)(a.A, {
@@ -69,16 +69,16 @@ function g() {
     })
 }
 
-function m(e) {
+function m(t) {
     let {
-        guildId: t
-    } = e;
+        guildId: e
+    } = t;
     return (0, s.jsxs)("div", {
         className: p.Bh,
         children: [(0, s.jsxs)("div", {
             className: p.gp,
             children: [(0, s.jsx)(j, {}), (0, s.jsx)(u.A, {
-                guildId: t,
+                guildId: e,
                 showCTA: !0
             })]
         }), (0, s.jsx)(g, {})]

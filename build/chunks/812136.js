@@ -1,5 +1,5 @@
 /** chunk id: 812136 params = (module,exports,require) **/
-i.d(t, {
+i.d(e, {
     F: () => A
 });
 var s = i(627968);
@@ -11,7 +11,7 @@ var r = i(503698),
     a = i(397927),
     o = i(775602),
     c = i(289397),
-    C = i(130978),
+    C = i(440293),
     u = i(976860),
     x = i(381969),
     h = i(920814),
@@ -24,9 +24,9 @@ var r = i(503698),
     v = i(985018),
     L = i(713244);
 
-function I(e) {
+function I(t) {
     let {
-        icon: t,
+        icon: e,
         title: i,
         body: r,
         selected: l,
@@ -34,7 +34,7 @@ function I(e) {
         onClick: o,
         onPreviewDismiss: c,
         isNew: C = !1
-    } = e;
+    } = t;
     return (0, s.jsxs)(a.sqX, {
         onClick: d ? void 0 : o,
         "aria-disabled": d,
@@ -46,7 +46,7 @@ function I(e) {
         "aria-label": i,
         children: [(0, s.jsx)("div", {
             className: L.zc,
-            children: t
+            children: e
         }), (0, s.jsx)(a.hKd, {
             size: 8,
             horizontal: !0
@@ -76,16 +76,16 @@ function I(e) {
     })
 }
 
-function A(e) {
+function A(t) {
     let {
-        guild: t
-    } = e, i = (0, C.w)(t.id, "guild_shop_category_selector"), {
+        guild: e
+    } = t, i = (0, C.w)(e.id), {
         selectedTab: r,
         setSelectedTab: n,
         categoryTabs: A,
         handlePreviewDismiss: w
-    } = (0, x.k)(), N = "false" === d.w.get(g.Db, "false"), T = (0, l.bG)([o.A], () => o.A.useReducedMotion), R = A.map(e => {
-        switch (e) {
+    } = (0, x.k)(), N = "false" === d.w.get(g.Db, "false"), T = (0, l.bG)([o.A], () => o.A.useReducedMotion), R = A.map(t => {
+        switch (t) {
             case h.B.GUILD_PRODUCTS:
                 return (0, s.jsx)(I, {
                     icon: (0, s.jsx)(_.A, {
@@ -96,7 +96,7 @@ function A(e) {
                     body: v.intl.string(v.t["0JFpRW"]),
                     selected: r === h.B.GUILD_PRODUCTS,
                     onClick: () => n(h.B.GUILD_PRODUCTS)
-                }, e);
+                }, t);
             case h.B.GUILD_ROLE_SUBSCRIPTIONS:
                 return (0, s.jsx)(I, {
                     icon: (0, s.jsx)(p.A, {
@@ -105,12 +105,12 @@ function A(e) {
                     }),
                     title: v.intl.string(v.t["KzCF/6"]),
                     body: i ? v.intl.string(v.t["jqz+ly"]) : v.intl.format(v.t.ycs4oO, {
-                        openRoleSubPage: () => (0, u.pX)(m.BVt.CHANNEL(t.id, f.VV.ROLE_SUBSCRIPTIONS))
+                        openRoleSubPage: () => (0, u.pX)(m.BVt.CHANNEL(e.id, f.VV.ROLE_SUBSCRIPTIONS))
                     }),
                     disabled: !i,
                     selected: r === h.B.GUILD_ROLE_SUBSCRIPTIONS,
                     onClick: () => n(h.B.GUILD_ROLE_SUBSCRIPTIONS)
-                }, e);
+                }, t);
             case h.B.GUILD_PRODUCTS_PREVIEW:
                 return (0, s.jsx)(I, {
                     icon: N ? (0, s.jsx)("img", {
@@ -131,7 +131,7 @@ function A(e) {
                     },
                     onPreviewDismiss: w,
                     isNew: N
-                }, e);
+                }, t);
             default:
                 return null
         }

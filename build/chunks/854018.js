@@ -1,5 +1,5 @@
 /** chunk id: 854018 params = (module,exports,require) **/
-i.d(t, {
+i.d(e, {
     A: () => a
 });
 var s = i(627968);
@@ -9,18 +9,18 @@ var r = i(827734),
     l = i(736653),
     d = i(953727);
 
-function a(e) {
+function a(t) {
     let {
-        width: t = 160,
+        width: e = 160,
         height: i = 210,
         color: a = r.A.unsafe_rawColors.WHITE.css,
         ...o
-    } = e, c = (0, l.Ay)(), C = (0, n.qB)(c);
+    } = t, c = (0, l.Ay)(), C = (0, n.qB)(c);
     return (0, s.jsx)("svg", {
         ...(0, d.A)(o),
-        width: t,
+        width: e,
         height: i,
-        viewBox: `0 0 ${t} ${i}`,
+        viewBox: `0 0 ${e} ${i}`,
         fill: "none",
         xmlns: "http://www.w3.org/2000/svg",
         ...o,

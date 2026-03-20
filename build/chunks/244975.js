@@ -17,8 +17,8 @@ var i = n(627968),
     T = n(611371),
     A = n(721923),
     I = n(954571),
-    p = n(927578),
-    N = n(560138),
+    N = n(927578),
+    p = n(560138),
     m = n(422936),
     R = n(234419),
     h = n(465794),
@@ -81,9 +81,9 @@ function U(e) {
         analyticsSource: a,
         guildBoostProps: r,
         type: n
-    }, ep = l.useRef(eI);
+    }, eN = l.useRef(eI);
     l.useEffect(() => {
-        ep.current = eI
+        eN.current = eI
     }), l.useEffect(() => {
         if (Q) return;
         let {
@@ -92,7 +92,7 @@ function U(e) {
             analyticsSource: n,
             guildBoostProps: i,
             type: l
-        } = ep.current;
+        } = eN.current;
         ed ? I.default.track(x.HAw.PREMIUM_GUILD_UPSELL_VIEWED, {
             type: `${l} - Tier ${i?.boostedGuildTier}`,
             guild_id: i?.guild.id,
@@ -104,11 +104,11 @@ function U(e) {
             source: n,
             location: e,
             location_stack: t,
-            sku_id: (0, p.mH)(Y)
+            sku_id: (0, N.mH)(Y)
         })
     }, [ed, Y, Q]);
-    let eN = (0, o.bG)([N.A], () => N.A.affinities),
-        em = eN.length > 1 && function(e) {
+    let ep = (0, o.bG)([p.A], () => p.A.affinities),
+        em = ep.length > 1 && function(e) {
             switch (e) {
                 case y.e.ANIMATED_AVATAR_MODAL_UPSELL:
                 case y.e.ANIMATED_BANNER_MODAL_UPSELL:
@@ -121,7 +121,7 @@ function U(e) {
                     return !1
             }
         }(n),
-        eR = (0, o.bG)([N.A], () => N.A.hasFetched);
+        eR = (0, o.bG)([p.A], () => p.A.hasFetched);
     l.useEffect(() => {
         eR || d.xG()
     }, [eR]);
@@ -171,7 +171,7 @@ function U(e) {
                             className: P.TN
                         }) : null]
                     }), em ? (0, i.jsx)(O.A, {
-                        affinities: eN
+                        affinities: ep
                     }) : void 0, er, (0, i.jsx)(u.Text, {
                         variant: eo ? "text-sm/normal" : "text-md/normal",
                         className: s()(B, P.uI),
@@ -205,7 +205,7 @@ function U(e) {
                         onClose: H
                     });
                     let e = et ? f.intl.string(f.t.pj0XBN) : void 0;
-                    return eT && (null != e_ ? e = (0, p.FY)({
+                    return eT && (null != e_ ? e = (0, N.FY)({
                         intervalType: e_?.subscription_trial?.interval,
                         intervalCount: e_?.subscription_trial?.interval_count
                     }) : null != eE && (e = f.intl.formatToPlainString(f.t.bkQ4bH, {
@@ -254,12 +254,12 @@ function M(e) {
         showBetaBadge: E = !1,
         subscriptionTier: T = y.pe.TIER_2,
         hidePremiumOfferUpsell: A
-    } = e, I = (0, R.V)(), N = (0, m.O)(), h = !A && (I?.subscription_trial?.sku_id === T || (0, g.U9)(N, T)) && null == s, C = f.intl.string(f.t.pj0XBN);
-    h && (null != I ? C = (0, p.FY)({
+    } = e, I = (0, R.V)(), p = (0, m.O)(), h = !A && (I?.subscription_trial?.sku_id === T || (0, g.U9)(p, T)) && null == s, C = f.intl.string(f.t.pj0XBN);
+    h && (null != I ? C = (0, N.FY)({
         intervalType: I?.subscription_trial?.interval,
         intervalCount: I?.subscription_trial?.interval_count
-    }) : null != N && (C = f.intl.formatToPlainString(f.t.bkQ4bH, {
-        percent: N.discount.amount
+    }) : null != p && (C = f.intl.formatToPlainString(f.t.bkQ4bH, {
+        percent: p.discount.amount
     })));
     let O = null;
     return _ ? O = "new" : E && (O = "beta"), null != I && (O = "free_trial"), (0, i.jsx)(S.A, {

@@ -1,6 +1,6 @@
 /** chunk id: 626262 params = (module,exports,require) **/
 n.d(t, {
-    $: () => p
+    $: () => N
 });
 var i = n(627968),
     l = n(64700),
@@ -16,7 +16,7 @@ var i = n(627968),
     T = n(49999),
     A = n(652215),
     I = n(788868);
-let p = e => {
+let N = e => {
     let {
         dismissibleContent: t,
         noticeType: n
@@ -37,18 +37,18 @@ let p = e => {
                     cooldownDurationMs: 1 / 0
                 }
         }
-    }, [n]), p = s()().add(5, "days").toDate(), [N, m] = (0, E.Bo)(t, r, T.m.NOTICE_BAR);
-    if (null == N) return null;
-    if (N === a.M.NAGBAR_NOTICE_OFFER_EXPIRING) {
+    }, [n]), N = s()().add(5, "days").toDate(), [p, m] = (0, E.Bo)(t, r, T.m.NOTICE_BAR);
+    if (null == p) return null;
+    if (p === a.M.NAGBAR_NOTICE_OFFER_EXPIRING) {
         if (n === A.kqX.PREMIUM_TIER_2_TRIAL_ENDING) return (0, i.jsx)(u.A, {
             dismissCurrentNotice: () => {
-                m(T.i.USER_DISMISS), (0, o.w)(p)
+                m(T.i.USER_DISMISS), (0, o.w)(N)
             },
             subscriptionTier: I.pe.TIER_2
         });
         if (n === A.kqX.PREMIUM_TIER_2_DISCOUNT_ENDING) return (0, i.jsx)(c.A, {
             dismissCurrentNotice: () => {
-                m(T.i.USER_DISMISS), (0, o.w)(p)
+                m(T.i.USER_DISMISS), (0, o.w)(N)
             },
             subscriptionTier: I.pe.TIER_2
         })

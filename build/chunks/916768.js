@@ -17,8 +17,8 @@ var i = n(627968),
     T = n(830215),
     A = n(503703),
     I = n(912851),
-    p = n(169604),
-    N = n(956793),
+    N = n(169604),
+    p = n(956793),
     m = n(785796),
     R = n(55619),
     h = n(246605),
@@ -71,8 +71,8 @@ var i = n(627968),
     eT = n(147964),
     eA = n(519057),
     eI = n(954571),
-    ep = n(975571),
-    eN = n(723702),
+    eN = n(975571),
+    ep = n(723702),
     em = n(652215),
     eR = n(502075),
     eh = n(788868),
@@ -97,7 +97,7 @@ let ey = e => {
         return n ? (0, i.jsx)(d.DUT, {
             tag: "span",
             className: eO.wz,
-            onClick: () => open(ep.A.getArticleURL(em.MVz.AV_ERROR_CODES)),
+            onClick: () => open(eN.A.getArticleURL(em.MVz.AV_ERROR_CODES)),
             children: s
         }) : s
     },
@@ -115,7 +115,7 @@ let ey = e => {
             }), eC.intl.string(eC.t.o3zuYz), (0, i.jsx)(ey, {
                 error: j.iy.NO_INPUT_DEVICES
             }), (0, i.jsx)(d.eCN, {
-                href: ep.A.getArticleURL(em.MVz.NO_INPUT_DETECTED),
+                href: eN.A.getArticleURL(em.MVz.NO_INPUT_DETECTED),
                 noticeType: t,
                 children: eC.intl.string(eC.t.RYKKox)
             })]
@@ -123,7 +123,7 @@ let ey = e => {
     };
 
 function ef(e) {
-    return (0, eN.isWindows)() && c().satisfies(g.A?.os.release, eR.PH) ? `ms-settings:sound-properties?endpointId=${e}` : "ms-settings:sound"
+    return (0, ep.isWindows)() && c().satisfies(g.A?.os.release, eR.PH) ? `ms-settings:sound-properties?endpointId=${e}` : "ms-settings:sound"
 }
 
 function eP(e) {
@@ -154,7 +154,7 @@ function eP(e) {
         },
         children: eC.intl.string(eC.t.I6YlB4)
     })) : (t = eC.intl.string(eC.t.nCO9bI), n = (0, i.jsx)(d.eCN, {
-        href: ep.A.getArticleURL(em.MVz.NO_INPUT_DETECTED),
+        href: eN.A.getArticleURL(em.MVz.NO_INPUT_DETECTED),
         noticeType: l,
         children: eC.intl.string(eC.t.RYKKox)
     })), (0, i.jsxs)(d.$Td, {
@@ -251,7 +251,7 @@ let eU = l.memo(function() {
                     onClick: () => eD(ec),
                     noticeType: r.type
                 }), eC.intl.format(eC.t["08KQ1P"], {
-                    helpCenterLink: ep.A.getArticleURL(em.MVz.WIN32_DEPRECATE)
+                    helpCenterLink: eN.A.getArticleURL(em.MVz.WIN32_DEPRECATE)
                 })]
             });
         case em.kqX.WIN7_8_DEPRECATED_MESSAGE:
@@ -264,7 +264,7 @@ let eU = l.memo(function() {
                     onClick: () => eD(eR),
                     noticeType: r.type
                 }), eC.intl.format(eC.t["8Je+dX"], {
-                    helpCenterLink: ep.A.getArticleURL(em.MVz.WIN7_8_DEPRECATE)
+                    helpCenterLink: eN.A.getArticleURL(em.MVz.WIN7_8_DEPRECATE)
                 })]
             });
         case em.kqX.WIN_COMPAT_MODE_MESSAGE:
@@ -288,7 +288,7 @@ let eU = l.memo(function() {
                     onClick: () => eD(ey),
                     noticeType: r.type
                 }), eC.intl.format(eC.t.q8VPLo, {
-                    helpCenterLink: ep.A.getArticleURL(em.MVz.MACOS_19_DEPRECATE)
+                    helpCenterLink: eN.A.getArticleURL(em.MVz.MACOS_19_DEPRECATE)
                 })]
             });
         case em.kqX.E2EE_UPDATE_REQUIRED:
@@ -300,8 +300,8 @@ let eU = l.memo(function() {
                 children: [(0, i.jsx)(d.PMB, {
                     onClick: () => eD(ef),
                     noticeType: r.type
-                }), eC.intl.format(eN.isPlatformEmbedded ? eC.t.J232TI : eC.t.vceuiL, {
-                    helpCenterLink: ep.A.getArticleURL(em.MVz.END_TO_END_ENCRYPTION)
+                }), eC.intl.format(ep.isPlatformEmbedded ? eC.t.J232TI : eC.t.vceuiL, {
+                    helpCenterLink: eN.A.getArticleURL(em.MVz.END_TO_END_ENCRYPTION)
                 })]
             });
         case em.kqX.WINDOWS_MEDIA_PACK_REQUIRED:
@@ -311,7 +311,7 @@ let eU = l.memo(function() {
                     onClick: () => eD(),
                     noticeType: r.type
                 }), eC.intl.string(eC.t.iW0fcQ), (0, i.jsx)(d.eCN, {
-                    href: ep.A.getArticleURL(em.MVz.WINDOWS_MEDIA_PACK),
+                    href: eN.A.getArticleURL(em.MVz.WINDOWS_MEDIA_PACK),
                     target: "_blank",
                     noticeType: r.type,
                     children: eC.intl.string(eC.t.LQG5j6)
@@ -346,13 +346,13 @@ let eU = l.memo(function() {
                 color: d.Hv$.WARNING,
                 children: [(0, i.jsx)(d.PMB, {
                     onClick: () => {
-                        p.A.clearRemoteDisconnectVoiceChannelId(), eD()
+                        N.A.clearRemoteDisconnectVoiceChannelId(), eD()
                     },
                     noticeType: r.type
                 }), eC.intl.string(eC.t.bOQ3jV), (0, i.jsx)(d.Z_L, {
                     onClick: () => {
                         let e = eu.A.getRemoteDisconnectVoiceChannelId();
-                        null != e && null != eo.A.getChannel(e) && N.default.selectVoiceChannel(e)
+                        null != e && null != eo.A.getChannel(e) && p.default.selectVoiceChannel(e)
                     },
                     noticeType: r.type,
                     children: eC.intl.string(eC.t.vD60Pv)
@@ -363,13 +363,13 @@ let eU = l.memo(function() {
                 color: d.Hv$.DEFAULT,
                 children: [(0, i.jsx)(d.PMB, {
                     onClick: () => {
-                        p.A.clearLastSessionVoiceChannelId(), eD()
+                        N.A.clearLastSessionVoiceChannelId(), eD()
                     },
                     noticeType: r.type
                 }), eC.intl.string(eC.t.jY2lUA), (0, i.jsx)(d.Z_L, {
                     onClick: () => {
                         let e = eu.A.getLastSessionVoiceChannelId();
-                        null != e && null != eo.A.getChannel(e) && N.default.selectVoiceChannel(e)
+                        null != e && null != eo.A.getChannel(e) && p.default.selectVoiceChannel(e)
                     },
                     noticeType: r.type,
                     children: eC.intl.string(eC.t.vD60Pv)
@@ -392,7 +392,7 @@ let eU = l.memo(function() {
                     children: eC.intl.string(eC.t.NiTd0e)
                 }), (0, i.jsx)(d.MzZ, {
                     className: eO.N0,
-                    href: ep.A.getArticleURL(em.MVz.SPOTIFY_AUTO_PAUSED),
+                    href: eN.A.getArticleURL(em.MVz.SPOTIFY_AUTO_PAUSED),
                     target: "_blank",
                     children: eC.intl.string(eC.t.CiqAIU)
                 })]
@@ -599,7 +599,7 @@ let eU = l.memo(function() {
             return (0, i.jsxs)(d.$Td, {
                 color: d.Hv$.DANGER,
                 children: [eC.intl.string(eC.t["ugxmk/"]), (0, i.jsx)(d.eCN, {
-                    href: ep.A.getArticleURL(em.MVz.CORRUPT_INSTALLATION),
+                    href: eN.A.getArticleURL(em.MVz.CORRUPT_INSTALLATION),
                     target: "_blank",
                     noticeType: r.type,
                     children: eC.intl.string(eC.t["6ik4Xk"])
@@ -842,7 +842,7 @@ let eU = l.memo(function() {
                     noticeType: r.type,
                     children: eC.intl.string(eC.t.kvHdFN)
                 }), (0, i.jsx)(d.MzZ, {
-                    href: ep.A.getArticleURL(em.MVz.QUARANTINE),
+                    href: eN.A.getArticleURL(em.MVz.QUARANTINE),
                     target: "_blank",
                     className: eO.yw,
                     children: eC.intl.string(eC.t.hvVgAZ)

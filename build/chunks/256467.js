@@ -1,5 +1,5 @@
 /** chunk id: 256467 params = (module,exports,require) **/
-i.r(t), i.d(t, {
+i.r(e), i.d(e, {
     default: () => O
 });
 var s = i(627968),
@@ -36,14 +36,14 @@ var s = i(627968),
     U = i(701741),
     P = i(370808);
 
-function E(e) {
+function E(t) {
     let {
-        guildId: t,
+        guildId: e,
         productId: i
-    } = e, {
+    } = t, {
         loaded: r,
         subscriptionsSettings: n
-    } = (0, g.G)(t), l = (0, a.bG)([j.A], () => j.A.getGuild(t)), {
+    } = (0, g.G)(e), l = (0, a.bG)([j.A], () => j.A.getGuild(e)), {
         selectedTab: d,
         isPhantomPreview: o,
         categoryTabs: C
@@ -64,33 +64,33 @@ function E(e) {
                 children: [(0, s.jsx)(c.hKd, {
                     size: 32
                 }), o && (0, s.jsx)(N.A, {
-                    guildId: t
+                    guildId: e
                 }), d === L.B.GUILD_PRODUCTS && (0, s.jsx)(I.h, {
-                    guildId: t,
+                    guildId: e,
                     productId: i
                 }), d === L.B.GUILD_ROLE_SUBSCRIPTIONS && (0, s.jsx)(A.A, {
-                    guildId: t
+                    guildId: e
                 })]
             })]
         })
     })
 }
 
-function H(e) {
+function H(t) {
     let {
-        guildId: t,
+        guildId: e,
         productId: i
-    } = e, n = (0, a.bG)([x.A], () => x.A.isConnected()), g = (0, a.bG)([j.A], () => j.A.getGuild(t)), {
+    } = t, n = (0, a.bG)([x.A], () => x.A.isConnected()), g = (0, a.bG)([j.A], () => j.A.getGuild(e)), {
         shouldHideGuildPurchaseEntryPoints: f,
         restrictionsLoading: L
-    } = (0, u.MH)(t), {
+    } = (0, u.MH)(e), {
         selectedTab: I,
         isPhantomPreview: A,
         categoryTabs: w
     } = (0, v.k)(), N = n && (null == g || 0 === w.length && !A || f && !L);
     return r.useEffect(() => {
-        N && (0, m.B)(t, V.VV.GUILD_SHOP)
-    }, [t, N]), (0, C.A)({
+        N && (0, m.B)(e, V.VV.GUILD_SHOP)
+    }, [e, N]), (0, C.A)({
         type: k.z.PAGE,
         name: d.ImpressionNames.GUILD_SHOP_PAGE,
         properties: {
@@ -113,7 +113,7 @@ function H(e) {
         }), (0, s.jsx)(c.d_W, {
             className: U.Qs,
             children: n ? (0, s.jsx)(E, {
-                guildId: t,
+                guildId: e,
                 productId: i
             }) : (0, s.jsx)(c.y$y, {})
         }), (0, s.jsx)(_.A, {
@@ -124,19 +124,19 @@ function H(e) {
     })
 }
 
-function O(e) {
+function O(t) {
     let {
-        guildId: t,
+        guildId: e,
         productId: i,
         initialTab: r
-    } = e;
+    } = t;
     return null == r && null != i && (r = L.B.GUILD_PRODUCTS), (0, s.jsx)(v.A, {
         initialTab: r,
-        guildId: t,
+        guildId: e,
         children: (0, s.jsx)(H, {
             initialTab: r,
             productId: i,
-            guildId: t
+            guildId: e
         })
     })
 }

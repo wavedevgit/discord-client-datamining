@@ -1,5 +1,5 @@
 /** chunk id: 638964 params = (module,exports,require) **/
-i.d(t, {
+i.d(e, {
     h: () => j
 });
 var s = i(627968),
@@ -17,19 +17,19 @@ var s = i(627968),
     _ = i(985018),
     p = i(564032);
 
-function j(e) {
+function j(t) {
     let {
-        guildId: t,
+        guildId: e,
         productId: i
-    } = e, {
+    } = t, {
         listingsLoaded: n
-    } = (0, C.bb)(t), d = (0, C.fZ)(t), j = r.useRef(null), {
+    } = (0, C.bb)(e), d = (0, C.fZ)(e), j = r.useRef(null), {
         sortOption: g
-    } = (0, x.R)(), m = r.useMemo(() => (function(e, t) {
+    } = (0, x.R)(), m = r.useMemo(() => (function(t, e) {
         let i, s;
-        switch (t) {
+        switch (e) {
             case h.p$.NAME:
-                i = e => e.name.toLowerCase(), s = "asc";
+                i = t => t.name.toLowerCase(), s = "asc";
                 break;
             case h.p$.PRICE_ASC:
                 i = "price_tier", s = "asc";
@@ -41,32 +41,32 @@ function j(e) {
                 i = "published_at", s = "desc";
                 break;
             default:
-                return e
+                return t
         }
-        return a().orderBy(e, [i], [s])
+        return a().orderBy(t, [i], [s])
     })(d, g), [d, g]);
     return n ? (0, s.jsx)("ul", {
         className: p.Ui,
         "aria-label": _.intl.string(_.t.qe4kTa),
-        children: m.map(e => (0, s.jsx)("li", {
+        children: m.map(t => (0, s.jsx)("li", {
             className: p.Nr,
             children: (0, s.jsx)("div", {
                 className: l()(p.Ux, {
-                    [p.Oj]: e.id === i
+                    [p.Oj]: t.id === i
                 }),
-                ref: e.id === i ? j : void 0,
+                ref: t.id === i ? j : void 0,
                 onLoad: () => {
-                    let t = j.current;
-                    null != t && e.id === i && (t.scrollIntoView({
+                    let e = j.current;
+                    null != e && t.id === i && (e.scrollIntoView({
                         behavior: "smooth",
                         block: "center"
                     }), setTimeout(() => {
-                        t.classList.remove(p.Oj)
+                        e.classList.remove(p.Oj)
                     }, 2e3))
                 },
                 children: (0, s.jsx)(u.i, {
-                    guildProductListing: e,
-                    guildId: t,
+                    guildProductListing: t,
+                    guildId: e,
                     location: c.A.GUILD_SHOP_PAGE,
                     shouldShowFullDescriptionButton: !1,
                     hideRoleTag: !0,
@@ -76,8 +76,8 @@ function j(e) {
                     thumbnailHeight: 187,
                     descriptionTextVariant: "text-xs/normal",
                     showOpaqueBackground: !0
-                }, e.id)
-            }, e.id)
-        }, e.id))
+                }, t.id)
+            }, t.id)
+        }, t.id))
     }) : (0, s.jsx)(o.y$y, {})
 }

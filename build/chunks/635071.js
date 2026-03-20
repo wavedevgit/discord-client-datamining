@@ -18,8 +18,8 @@ var n, l = a(627968),
     m = a(922301),
     h = a(750112),
     I = a(73392),
-    g = a(386467),
-    C = a(534400),
+    C = a(386467),
+    g = a(534400),
     T = a(176201),
     E = a(676608),
     R = a(342296),
@@ -50,7 +50,7 @@ function N(e) {
         decorations: H,
         previewGuildId: W,
         subscribeToGroupId: k
-    } = e, j = r.useRef(null), V = r.useContext(g.A), K = n?.guild_id ?? V, {
+    } = e, j = r.useRef(null), V = r.useContext(C.A), K = n?.guild_id ?? V, {
         analyticsLocations: z
     } = (0, A.Ay)(p.A.USERNAME), $ = N ? "@" : "", {
         nick: J,
@@ -99,7 +99,7 @@ function N(e) {
         }) : ed,
         "data-text": $ + J,
         "data-username-has-gradient": !!es || void 0
-    }, ep = r.useMemo(() => U ? null : (0, l.jsx)(C.Cw, {
+    }, ep = r.useMemo(() => U ? null : (0, l.jsx)(g.Cw, {
         primaryGuild: t.primaryGuild,
         userId: a.author.id,
         contextGuildId: K,

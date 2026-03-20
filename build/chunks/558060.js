@@ -1,5 +1,5 @@
 /** chunk id: 558060 params = (module,exports,require) **/
-i.d(t, {
+i.d(e, {
     R: () => o,
     default: () => c
 });
@@ -11,21 +11,21 @@ var s = i(627968),
 let a = r.createContext(void 0);
 
 function o() {
-    let e = r.useContext(a);
-    return l()(null != e, "must use useGuildShopSortContext within a GuildShopSortOptionsContextProvider"), e
+    let t = r.useContext(a);
+    return l()(null != t, "must use useGuildShopSortContext within a GuildShopSortOptionsContextProvider"), t
 }
 
-function c(e) {
+function c(t) {
     let {
-        children: t,
+        children: e,
         defaultSortOption: i = d.p$.NEWEST_ARRIVALS
-    } = e, [n, l] = r.useState(i);
+    } = t, [n, l] = r.useState(i);
     return (0, s.jsx)(a.Provider, {
         value: {
             sortOption: n,
             setSortOption: l,
             onReset: () => l(i)
         },
-        children: t
+        children: e
     })
 }

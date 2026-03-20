@@ -18,7 +18,7 @@ var s = n(503698),
     m = n(486418),
     _ = n(575926),
     p = n(826673),
-    g = n(130978),
+    g = n(440293),
     f = n(976860),
     x = n(808728),
     C = n(71393),
@@ -35,7 +35,7 @@ function y(e) {
         guildId: t,
         selected: n,
         handleClick: s
-    } = e, d = (0, g.w)(t, "guild_shop_channel_row"), m = (0, a.bG)([C.A], () => C.A.getGuild(t)), b = m?.features.has(N.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) === !0, y = "false" === o.w.get(S.bJ, "false"), j = (0, a.bG)([u.A], () => u.A.useReducedMotion);
+    } = e, d = (0, g.w)(t), m = (0, a.bG)([C.A], () => C.A.getGuild(t)), b = m?.features.has(N.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) === !0, y = "false" === o.w.get(S.bJ, "false"), j = (0, a.bG)([u.A], () => u.A.useReducedMotion);
     return (0, i.jsx)(I.G, {
         id: `shop-${t}`,
         className: l()(v.A2, {

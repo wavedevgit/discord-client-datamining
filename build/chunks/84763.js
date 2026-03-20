@@ -9,14 +9,14 @@ var s = n(417597),
     l = n(397927),
     r = n(262828),
     a = n(555337),
-    o = n(130978),
+    o = n(440293),
     d = n(831806),
     c = n(652215),
     u = n(705751);
 
 function m() {
     let e = (0, s.bG)([a.A], () => a.A.getGuild()),
-        t = (0, o.w)(e?.id, "guild_product_settings"),
+        t = (0, o.w)(e?.id),
         {
             application: n,
             loading: m

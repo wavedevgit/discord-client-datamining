@@ -16,8 +16,8 @@ var i = n(627968),
     T = n(585510),
     A = n(834409),
     I = n(903093),
-    p = n(652215),
-    N = n(746080),
+    N = n(652215),
+    p = n(746080),
     m = n(985018),
     R = n(623393);
 
@@ -28,11 +28,11 @@ function h(e) {
         shouldShowIncidentActions: O,
         incidentData: y,
         isUnderLockdown: x
-    } = (0, T.Li)(g), f = (0, o.fw)(C?.id ?? p.dJq), P = l.useCallback(() => null != C && (0, c.aZ)(C.id), [C]);
+    } = (0, T.Li)(g), f = (0, o.fw)(C?.id ?? N.dJq), P = l.useCallback(() => null != C && (0, c.aZ)(C.id), [C]);
     if (null == C || null == y || !O) return null;
     let D = e => {
-            e && f && S !== N.VV.MEMBER_SAFETY && P() ? E.default.track(p.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
-                notice_type: p.kqX.GUILD_RAID_NOTIFICATION,
+            e && f && S !== p.VV.MEMBER_SAFETY && P() ? E.default.track(N.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
+                notice_type: N.kqX.GUILD_RAID_NOTIFICATION,
                 guild_id: C.id
             }) : (0, s.mMO)(async () => {
                 let e = {
@@ -60,7 +60,7 @@ function h(e) {
         color: s.Hv$.NEUTRAL,
         children: [(0, i.jsx)(s.PMB, {
             onClick: t,
-            noticeType: p.kqX.GUILD_RAID_NOTIFICATION
+            noticeType: N.kqX.GUILD_RAID_NOTIFICATION
         }), U, M, (0, i.jsx)(s.zr9, {
             className: R.hP,
             onClick: () => D(!1),
@@ -82,13 +82,13 @@ function h(e) {
         }) : m.intl.formatToPlainString(m.t.W87xDE, {
             guildName: C.name
         }),
-        j = f && S === N.VV.MEMBER_SAFETY;
+        j = f && S === p.VV.MEMBER_SAFETY;
     return (0, i.jsxs)(s.$Td, {
         className: R.lm,
         color: s.Hv$.WARNING,
         children: [(0, i.jsx)(s.PMB, {
             onClick: t,
-            noticeType: p.kqX.GUILD_RAID_NOTIFICATION
+            noticeType: N.kqX.GUILD_RAID_NOTIFICATION
         }), U, L, !j && (0, i.jsx)(s.zr9, {
             className: R.hP,
             onClick: () => D(!0),

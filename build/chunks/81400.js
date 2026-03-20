@@ -2,7 +2,7 @@
 n.d(t, {
     EC: () => m,
     j8: () => R,
-    uZ: () => N
+    uZ: () => p
 }), n(938796);
 var i = n(64700),
     l = n(417597),
@@ -18,9 +18,9 @@ var i = n(64700),
     T = n(652215),
     A = n(340837),
     I = n(355097),
-    p = n(985018);
+    N = n(985018);
 
-function N(e) {
+function p(e) {
     return (0, l.bG)([o.default, c.Ay], () => {
         if (null == e) return !1;
         let t = o.default.getId();
@@ -41,9 +41,9 @@ function m(e) {
         let r = o.default.getId(),
             s = c.Ay.getMember(i, r),
             a = (0, E.wR)(s?.flags);
-        return 0 === a.size || (a.has(A.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) && (null == e ? t.nick = [p.intl.formatToPlainString(p.t.WBUh3O, {
+        return 0 === a.size || (a.has(A.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) && (null == e ? t.nick = [N.intl.formatToPlainString(N.t.WBUh3O, {
             guildName: l.name ?? ""
-        })] : t.nick = [p.intl.string(p.t.EPZCrM)]), a.has(A.D.AUTOMOD_QUARANTINED_BIO) && (t.bio = [p.intl.string(p.t.dZh1vz)])), t
+        })] : t.nick = [N.intl.string(N.t.EPZCrM)]), a.has(A.D.AUTOMOD_QUARANTINED_BIO) && (t.bio = [N.intl.string(N.t.dZh1vz)])), t
     }, [e])
 }
 
