@@ -42,7 +42,7 @@ function P(e) {
         transitionState: k,
         onClose: G,
         sourceAnalyticsLocations: B = []
-    } = e, U = t === N.ME ? void 0 : t, D = (0, _.Ay)(n.id, U), F = u.Ay.getName(U, P, n), w = (0, o.GV)(), {
+    } = e, U = t === N.ME ? void 0 : t, D = (0, _.Ay)(n.id, U), w = u.Ay.getName(U, P, n), F = (0, o.GV)(), {
         analyticsLocations: V
     } = (0, l.Ay)([...B, a.A.USER_PROFILE_MODAL]), z = (0, A.pb)({
         layout: "MODAL",
@@ -63,14 +63,14 @@ function P(e) {
                 transitionState: k,
                 className: T.zr,
                 hideShadow: !0,
-                "aria-labelledby": w,
+                "aria-labelledby": F,
                 parentComponent: "NonUserBotProfileModal",
                 children: [(0, i.jsx)(r.Fmo, {
                     component: (0, i.jsx)(r.AC4, {
                         children: (0, i.jsx)(r.H, {
-                            id: w,
+                            id: F,
                             children: E.intl.format(E.t.KRe1Fk, {
-                                name: F
+                                name: w
                             })
                         })
                     }),
@@ -104,7 +104,7 @@ function P(e) {
                                 className: T.Xh,
                                 user: n,
                                 guildId: U,
-                                nickname: F,
+                                nickname: w,
                                 pronouns: D?.pronouns,
                                 nicknameVariant: "heading-xl/bold",
                                 tags: (0, i.jsx)(x.A, {

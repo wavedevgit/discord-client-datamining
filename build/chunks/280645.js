@@ -23,9 +23,9 @@ function g(e) {
         guildId: t,
         ...g
     } = e, {
-        trackUserProfileAction: f
-    } = (0, d.NJ)(), h = (0, n.bG)([r.A], () => r.A.getGuild(t)), j = (0, n.bG)([s.Ay], () => s.Ay.getMember(t, l)), I = j?.roles, v = (0, n.yK)([a.A], () => a.A.getManyRoles(t, I ?? []).sort(c.m), [I, t]), [N] = (0, n.yK)([o.A], () => [o.A.can(p.xBc.MANAGE_ROLES, h), o.A.getGuildVersion(t)]);
-    if (null == h) return null;
+        trackUserProfileAction: h
+    } = (0, d.NJ)(), f = (0, n.bG)([r.A], () => r.A.getGuild(t)), j = (0, n.bG)([s.Ay], () => s.Ay.getMember(t, l)), I = j?.roles, v = (0, n.yK)([a.A], () => a.A.getManyRoles(t, I ?? []).sort(c.m), [I, t]), [N] = (0, n.yK)([o.A], () => [o.A.can(p.xBc.MANAGE_ROLES, f), o.A.getGuildVersion(t)]);
+    if (null == f) return null;
     let y = N && null != j;
     return 0 !== v.length || y ? (0, i.jsx)(m.A, {
         heading: x.intl.string(x.t["LPJmL/"]),
@@ -33,15 +33,15 @@ function g(e) {
         ...g,
         children: (0, i.jsx)(u.YR, {
             userId: l,
-            guild: h,
+            guild: f,
             roles: v,
             onAddRole: () => {
-                f({
+                h({
                     action: "ADD_ROLE"
                 })
             },
             onRemoveRole: () => {
-                f({
+                h({
                     action: "REMOVE_ROLE"
                 })
             },

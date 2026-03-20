@@ -43,14 +43,14 @@ function p(e) {
                 "aria-hidden": !0
             })
         }), e
-    }, [p, x]), f = n.useCallback(e => {
+    }, [p, x]), h = n.useCallback(e => {
         t(e === A ? null : e)
     }, [t]);
     return (0, i.jsx)(a.ZiE, {
         label: u.intl.string(u.t.rki38K),
         hideLabel: !0,
         selectionMode: "single",
-        onSelectionChange: f,
+        onSelectionChange: h,
         value: l ?? A,
         options: g
     })

@@ -11,8 +11,8 @@ var r = i(503698),
     a = i(397927),
     o = i(775602),
     c = i(289397),
-    C = i(976860),
-    u = i(491026),
+    C = i(130978),
+    u = i(976860),
     x = i(381969),
     h = i(920814),
     _ = i(305015),
@@ -79,7 +79,7 @@ function I(e) {
 function A(e) {
     let {
         guild: t
-    } = e, i = (0, u.YZ)(t.id, "guild_shop_category_selector"), {
+    } = e, i = (0, C.w)(t.id, "guild_shop_category_selector"), {
         selectedTab: r,
         setSelectedTab: n,
         categoryTabs: A,
@@ -105,7 +105,7 @@ function A(e) {
                     }),
                     title: v.intl.string(v.t["KzCF/6"]),
                     body: i ? v.intl.string(v.t["jqz+ly"]) : v.intl.format(v.t.ycs4oO, {
-                        openRoleSubPage: () => (0, C.pX)(m.BVt.CHANNEL(t.id, f.VV.ROLE_SUBSCRIPTIONS))
+                        openRoleSubPage: () => (0, u.pX)(m.BVt.CHANNEL(t.id, f.VV.ROLE_SUBSCRIPTIONS))
                     }),
                     disabled: !i,
                     selected: r === h.B.GUILD_ROLE_SUBSCRIPTIONS,

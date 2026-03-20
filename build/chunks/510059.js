@@ -17,8 +17,8 @@ var n = t(503698),
     p = t(773669),
     x = t(307600),
     g = t(652215),
-    f = t(783419),
-    h = t(985018),
+    h = t(783419),
+    f = t(985018),
     j = t(884293);
 
 function I(e) {
@@ -28,7 +28,7 @@ function I(e) {
             userId: s
         } = e,
         a = t.metadata ?? {},
-        p = (0, m.An)(a[f.pK.CREATED_AT], n),
+        p = (0, m.An)(a[h.pK.CREATED_AT], n),
         I = d.A.get((0, u.ML)(t.type));
     return (0, i.jsxs)("li", {
         className: j.FI,
@@ -37,7 +37,7 @@ function I(e) {
             children: (0, i.jsx)("div", {
                 className: j.k_,
                 children: (0, i.jsx)("img", {
-                    alt: h.intl.formatToPlainString(h.t.rtm15P, {
+                    alt: f.intl.formatToPlainString(f.t.rtm15P, {
                         name: I?.name
                     }),
                     className: j.tV,
@@ -59,7 +59,7 @@ function I(e) {
                     href: l,
                     className: j.Y2,
                     useDefaultUnderlineStyles: !1,
-                    "aria-label": I?.name != null ? `${I.name}, ${t.name}, ${h.intl.string(h.t.q5jLJB)}` : `${t.name}, ${h.intl.string(h.t.q5jLJB)}`,
+                    "aria-label": I?.name != null ? `${I.name}, ${t.name}, ${f.intl.string(f.t.q5jLJB)}` : `${t.name}, ${f.intl.string(f.t.q5jLJB)}`,
                     onClick: e => {
                         (0, c.zV)(g.HAw.CONNECTED_ACCOUNT_VIEWED, {
                             platform_type: t.type,
@@ -86,7 +86,7 @@ function I(e) {
                     })
                 }), null != p && (0, i.jsx)(o.Text, {
                     variant: "text-xs/normal",
-                    children: h.intl.format(h.t["9rfonh"], {
+                    children: f.intl.format(f.t["9rfonh"], {
                         date: p
                     })
                 })]

@@ -22,8 +22,8 @@ function x(e) {
         currentUser: t,
         guildId: x,
         originGuildId: g,
-        channelId: f,
-        displayProfile: h,
+        channelId: h,
+        displayProfile: f,
         relationshipType: j,
         onClose: I
     } = e, {
@@ -31,8 +31,8 @@ function x(e) {
     } = (0, s.Ay)(), N = (0, a.A)({
         user: l,
         guildId: g,
-        channelId: f,
-        displayProfile: h,
+        channelId: h,
+        displayProfile: f,
         onClose: I
     }), {
         gameFriends: y,

@@ -7,5 +7,5 @@ var i = n(419954),
     l = n(830001);
 let a = (0, i.WI)(s.X.PROFILE_SECTION, {
     hoisted: !0,
-    buildLayout: () => [l.f]
+    buildLayout: () => [l.f, l.A]
 })

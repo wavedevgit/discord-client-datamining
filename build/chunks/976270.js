@@ -45,8 +45,8 @@ function S(e) {
         roleId: B,
         sessionId: U,
         initialTabSection: D,
-        initialScrollTarget: F,
-        transitionState: w,
+        initialScrollTarget: w,
+        transitionState: F,
         onClose: V,
         sourceAnalyticsLocations: z = []
     } = e, W = S === L.ME ? void 0 : S, H = (0, u.Ay)(n.id, W), X = d.Ay.getName(W, k, n), Y = (0, o.GV)(), {
@@ -72,10 +72,10 @@ function S(e) {
             value: K,
             isLoaded: H?.isLoaded,
             children: (0, i.jsx)(_.N, {
-                value: F,
+                value: w,
                 children: (0, i.jsx)(s.EOs, {
                     "data-migration-pending": !0,
-                    transitionState: w,
+                    transitionState: F,
                     className: R.zr,
                     hideShadow: !0,
                     "aria-labelledby": Y,
@@ -115,7 +115,7 @@ function S(e) {
                                     }), (0, i.jsx)(N.A, {
                                         user: n,
                                         themeType: O.d.MODAL,
-                                        hasEntered: w === s.ip4.ENTERED,
+                                        hasEntered: F === s.ip4.ENTERED,
                                         onCloseProfile: V,
                                         disableToolbar: !0
                                     }), (0, i.jsxs)("div", {

@@ -1,6 +1,6 @@
 /** chunk id: 513265 params = (module,exports,require) **/
 t.d(l, {
-    A: () => h
+    A: () => f
 });
 var i = t(627968),
     n = t(64700),
@@ -51,7 +51,7 @@ let g = {
             type: d.ToastType.FAILURE
         }
     },
-    f = e => {
+    h = e => {
         let {
             message: l,
             icon: t,
@@ -70,11 +70,11 @@ let g = {
             })]
         })
     },
-    h = e => {
+    f = e => {
         let {
             className: l,
             onAutoHide: t
-        } = e, s = (0, u.fu)(), m = (0, o.bG)([c.A], () => c.A.useReducedMotion), [A, x] = n.useState(!1), [h, j] = n.useState(null);
+        } = e, s = (0, u.fu)(), m = (0, o.bG)([c.A], () => c.A.useReducedMotion), [A, x] = n.useState(!1), [f, j] = n.useState(null);
         n.useEffect(() => {
             null !== s ? (x(!0), j(g[s]), d.ORC.announce(g[s].message)) : x(!1)
         }, [s]);
@@ -106,11 +106,11 @@ let g = {
                 return () => clearTimeout(e)
             }
         }, [A, t]), (0, i.jsx)(i.Fragment, {
-            children: I((e, t) => t && null !== h && (0, i.jsx)(r.animated.div, {
+            children: I((e, t) => t && null !== f && (0, i.jsx)(r.animated.div, {
                 className: a()(l, p.Jt),
                 style: e,
-                children: (0, i.jsx)(f, {
-                    ...h
+                children: (0, i.jsx)(h, {
+                    ...f
                 })
             }))
         })

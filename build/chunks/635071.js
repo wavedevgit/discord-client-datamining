@@ -44,8 +44,8 @@ function N(e) {
         hideSystemTag: O = !1,
         className: x,
         onClick: M,
-        onContextMenu: F,
-        onPopoutRequestClose: w,
+        onContextMenu: w,
+        onPopoutRequestClose: F,
         renderPopout: B,
         decorations: H,
         previewGuildId: W,
@@ -88,7 +88,7 @@ function N(e) {
             } : void 0
         })(),
         onClick: M,
-        onContextMenu: F,
+        onContextMenu: w,
         children: eo ? (0, l.jsx)(h.A, {
             userName: ed,
             displayNameStyles: q,
@@ -118,7 +118,7 @@ function N(e) {
             avatar: t.guildMemberAvatar,
             size: 80
         }) : void 0,
-        onRequestClose: w,
+        onRequestClose: F,
         clickTrap: G,
         children: e => {
             let {

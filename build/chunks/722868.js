@@ -22,8 +22,8 @@ function p(e) {
         displayProfile: x,
         onClose: g
     } = e, {
-        analyticsLocations: f,
-        sourceAnalyticsLocations: h
+        analyticsLocations: h,
+        sourceAnalyticsLocations: f
     } = (0, a.Ay)(), {
         context: j,
         trackUserProfileAction: I
@@ -39,10 +39,10 @@ function p(e) {
                 userId: l.id,
                 ...j,
                 guildId: t,
-                sourceAnalyticsLocations: h
+                sourceAnalyticsLocations: f
             }), I({
                 action: "PRESS_VIEW_SERVER_PROFILE",
-                analyticsLocations: f,
+                analyticsLocations: h,
                 ...j
             })
         }
@@ -58,10 +58,10 @@ function p(e) {
                 ...j,
                 guildId: void 0,
                 originGuildId: t,
-                sourceAnalyticsLocations: h
+                sourceAnalyticsLocations: f
             }), I({
                 action: "PRESS_VIEW_MAIN_PROFILE",
-                analyticsLocations: f,
+                analyticsLocations: h,
                 ...j
             })
         }
