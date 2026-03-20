@@ -1,6 +1,6 @@
 /** chunk id: 284605 params = (module,exports,require) **/
 n.d(t, {
-    i: () => I
+    i: () => E
 });
 var i = n(627968);
 n(64700);
@@ -22,12 +22,12 @@ var r = n(417597),
     f = n(10979),
     C = n(652215);
 
-function I(e) {
+function E(e) {
     let {
         guildProductListing: t,
         guildId: n,
-        location: I,
-        shouldShowFullDescriptionButton: E = !0,
+        location: E,
+        shouldShowFullDescriptionButton: I = !0,
         hideRoleTag: v = !1,
         lineClamp: b = 1,
         cardWidth: T,
@@ -40,13 +40,13 @@ function I(e) {
     } = (0, o.MH)(n), k = (0, g.X)(t), O = (0, x.A)({
         guildId: n,
         guildProductListingId: t.id,
-        sourceAnalyticsLocations: I
+        sourceAnalyticsLocations: E
     });
     if (null == L || D) return null;
     let U = () => (0, f.M)({
             guildId: n,
             guildProductListingId: t.id,
-            analyticsLocation: I
+            analyticsLocation: E
         }),
         B = (0, i.jsx)(A.i, {
             product: t,
@@ -82,7 +82,7 @@ function I(e) {
             ...O
         }),
         productType: M,
-        shouldShowFullDescriptionButton: E,
+        shouldShowFullDescriptionButton: I,
         onShowFullDescription: U,
         onTapCard: U,
         actionMenu: B,

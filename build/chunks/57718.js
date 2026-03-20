@@ -30,8 +30,8 @@ let f = function(e) {
         withCosponsor: x = !0,
         withGameTile: f = !0,
         logotypeStyle: C,
-        onLoadComplete: I
-    } = e, E = (0, c.Mw)(A) ? p.NJ8.DARK : p.NJ8.LIGHT, v = (0, _.a5)(r.id, E), b = x && null != r.config.cosponsorMetadata && null != v;
+        onLoadComplete: E
+    } = e, I = (0, c.Mw)(A) ? p.NJ8.DARK : p.NJ8.LIGHT, v = (0, _.a5)(r.id, I), b = x && null != r.config.cosponsorMetadata && null != v;
     return (0, a.jsxs)("div", {
         className: s()(g.Iu, t),
         children: [f && (0, a.jsx)(h.Sn, {
@@ -40,7 +40,7 @@ let f = function(e) {
                 ref: e,
                 className: g._Y,
                 alt: "",
-                src: (0, m.tW)(r, m.fY.GAME_TILE, E).url,
+                src: (0, m.tW)(r, m.fY.GAME_TILE, I).url,
                 style: {
                     borderRadius: function(e) {
                         switch (e) {
@@ -53,7 +53,7 @@ let f = function(e) {
                     width: i,
                     height: i
                 },
-                onLoad: I
+                onLoad: E
             })
         }), (0, a.jsx)(h.Sn, {
             id: "QuestPartnerBranding_gameLogotype",
@@ -64,8 +64,8 @@ let f = function(e) {
                 }),
                 style: C,
                 alt: r.config.messages.gameTitle,
-                src: (0, m.tW)(r, m.fY.LOGO_TYPE, E).url,
-                onLoad: I
+                src: (0, m.tW)(r, m.fY.LOGO_TYPE, I).url,
+                onLoad: E
             })
         }), b && (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsx)("div", {
@@ -85,7 +85,7 @@ let f = function(e) {
                     style: C,
                     alt: r.config.cosponsorMetadata?.name ?? "",
                     src: v.url,
-                    onLoad: I
+                    onLoad: E
                 })
             })]
         })]

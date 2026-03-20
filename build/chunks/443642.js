@@ -1,6 +1,6 @@
 /** chunk id: 443642 params = (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => E
 });
 var i = n(627968),
     r = n(64700),
@@ -20,12 +20,12 @@ var i = n(627968),
     x = n(788868),
     f = n(998162);
 let C = (0, _.xI)(l.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
-    I = e => {
+    E = e => {
         let {
             renderableSticker: t,
             channel: n,
             isInteracting: l
-        } = e, _ = r.useRef(null), [I, E] = r.useState(!0), [v, b] = r.useState(String(Date.now())), [T] = (0, m.Zq)(t, l), {
+        } = e, _ = r.useRef(null), [E, I] = r.useState(!0), [v, b] = r.useState(String(Date.now())), [T] = (0, m.Zq)(t, l), {
             analyticsLocations: y
         } = (0, c.Ay)(o.A.STICKER_MESSAGE), S = (0, i.jsxs)("span", {
             className: f.Zl,
@@ -44,7 +44,7 @@ let C = (0, _.xI)(l.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
                     animation: s.YNO.Animation.TRANSLATE,
                     positionKey: v,
                     onRequestClose: () => {
-                        E(!0)
+                        I(!0)
                     },
                     renderPopout: e => (0, i.jsx)(g.A, {
                         ...e,
@@ -59,7 +59,7 @@ let C = (0, _.xI)(l.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
                         } = e;
                         return (0, i.jsx)(a.m, {
                             ...u.Uk,
-                            shouldShow: I,
+                            shouldShow: E,
                             __unsupportedReactNodeAsText: (0, u.yR)(S),
                             "aria-label": !1,
                             onTooltipShow: () => {
@@ -76,7 +76,7 @@ let C = (0, _.xI)(l.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
                                 innerRef: _,
                                 className: f.q7,
                                 onClick: e => {
-                                    E(!I), n(e)
+                                    I(!E), n(e)
                                 },
                                 tag: "span",
                                 children: (0, i.jsx)(p.A, {

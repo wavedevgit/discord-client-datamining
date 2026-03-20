@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(696451),
     f = n(860689),
     C = n(505417),
-    I = n(168428),
-    E = n(652215),
+    E = n(168428),
+    I = n(652215),
     v = n(985018),
     b = n(42441);
 
@@ -40,14 +40,14 @@ function T(e) {
             approximate_member_count: D,
             approximate_presence_count: k
         } = L,
-        O = L.state === E.elq.ACCEPTING,
+        O = L.state === I.elq.ACCEPTING,
         U = null != w ? (0, A.OY)(w) : null,
         B = null != j,
         G = null != U,
         F = null != U && U.isGuildStageVoice(),
         H = (0, l.Lt)(L.flags ?? 0, a.Q.IS_GUEST_INVITE),
         V = U?.isGuildVoiceOrThread() ?? !1,
-        q = j?.features.has(E.GuildFeatures.HUB) ?? !1,
+        q = j?.features.has(I.GuildFeatures.HUB) ?? !1,
         W = j?.id,
         {
             analyticsLocations: Y
@@ -69,8 +69,8 @@ function T(e) {
             }, Y)
         }, [L, R, Y, B, S, N]);
     if (null == j) {
-        if (null == L.guild) return (0, i.jsx)(I.A, {});
-        (j = f.DY(L.guild)).premiumTier = L.guild.premium_tier ?? E.TVA.NONE
+        if (null == L.guild) return (0, i.jsx)(E.A, {});
+        (j = f.DY(L.guild)).premiumTier = L.guild.premium_tier ?? I.TVA.NONE
     }
     let ee = (0, C.l)({
         isVoiceChannel: V,
@@ -154,7 +154,7 @@ function T(e) {
                     text: V ? F ? v.intl.string(v.t["7vb2cc"]) : v.intl.string(v.t.gpqgah) : B ? v.intl.string(v.t.cEnaWx) : v.intl.string(v.t.XpeFYr)
                 })
             })]
-        }), j.features.has(E.GuildFeatures.HUB) && (0, i.jsxs)(i.Fragment, {
+        }), j.features.has(I.GuildFeatures.HUB) && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
                 className: b.me
             }), (0, i.jsx)(d.Text, {

@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(486020),
     f = n(795816),
     C = n(933958),
-    I = n(574152),
-    E = n(782091),
+    E = n(574152),
+    I = n(782091),
     v = n(985018);
 
 function b(e) {
@@ -39,11 +39,11 @@ function b(e) {
         botUserId: t?.bot?.id
     }), j = null != t && (0, o.Ag)(t), L = null != S && j && N, {
         analyticsLocations: R
-    } = (0, l.Ay)(a.A.ACTIVITY_CUSTOM_LINK), P = (0, r.bG)([A.A], () => A.A.getChannelId()), M = (0, E.et)(P), w = (0, r.bG)([C.Ay], () => {
+    } = (0, l.Ay)(a.A.ACTIVITY_CUSTOM_LINK), P = (0, r.bG)([A.A], () => A.A.getChannelId()), M = (0, I.et)(P), w = (0, r.bG)([C.Ay], () => {
         if (null == P) return;
         let e = C.Ay.getEmbeddedActivitiesForChannel(P).filter(e => e.applicationId === t.id);
         return e.length > 0 ? e[0].compositeInstanceId : void 0
-    }), D = (0, r.bG)([C.Ay], () => C.Ay.getCurrentEmbeddedActivity()), k = (0, I.A)(), O = M === E.xy.CAN_LAUNCH, U = null != w && D?.compositeInstanceId === w, B = null != n ? n : b.customId, G = (0, p.e)(t), F = [];
+    }), D = (0, r.bG)([C.Ay], () => C.Ay.getCurrentEmbeddedActivity()), k = (0, E.A)(), O = M === I.xy.CAN_LAUNCH, U = null != w && D?.compositeInstanceId === w, B = null != n ? n : b.customId, G = (0, p.e)(t), F = [];
     G ? F.push({
         label: v.intl.string(v.t.RscU7I),
         trackingArea: _.kY.PLAY,

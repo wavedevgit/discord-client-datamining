@@ -26,21 +26,21 @@ function C(e) {
         message: t,
         compact: n
     } = e, r = (0, l.bG)([c.A], () => c.A.getChannel(u.default.castMessageIdAsChannelId(t.id)));
-    return null == r ? null : (0, i.jsx)(I, {
+    return null == r ? null : (0, i.jsx)(E, {
         channel: r,
         compact: n,
         isSystemMessage: (0, d.A)(t)
     })
 }
 
-function I(e) {
+function E(e) {
     var t;
     let r, d, c, {
             channel: u,
             compact: C,
-            isSystemMessage: I
+            isSystemMessage: E
         } = e,
-        E = (0, l.bG)([m.A], () => m.A.getCount(u.id)),
+        I = (0, l.bG)([m.A], () => m.A.getCount(u.id)),
         v = (t = u, r = (0, l.bG)([m.A], () => m.A.getMostRecentMessage(t.id)), d = (0, l.bG)([m.A], () => m.A.getCount(t.id)), c = (0, h.JO)(t), t.threadMetadata?.archived ? x.intl.string(x.t.ZTo4HS) : null == d || 0 === d ? x.intl.string(x.t.HYtNyE) : null == r ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("span", {
                 children: x.intl.string(x.t.ZTo4HS)
@@ -57,12 +57,12 @@ function I(e) {
                 children: (0, h.aK)(c)
             })]
         })),
-        b = null != E && E > 0;
+        b = null != I && I > 0;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             className: a()(f.GI, {
                 [f.E]: !C,
-                [f.E_]: I
+                [f.E_]: E
             })
         }), (0, i.jsx)(s.DUT, {
             onClick: function(e) {
@@ -87,7 +87,7 @@ function I(e) {
             },
             "aria-roledescription": x.intl.string(x.t["8ipxiY"]),
             className: a()(f.kL, {
-                [f.og]: I
+                [f.og]: E
             }),
             children: (0, i.jsxs)(s.RDc, {
                 children: [(0, i.jsxs)("div", {
@@ -100,7 +100,7 @@ function I(e) {
                     }), (0, i.jsx)("span", {
                         className: f.lO,
                         "aria-hidden": !b,
-                        children: (0, _.ub)(E, u.id)
+                        children: (0, _.ub)(I, u.id)
                     })]
                 }), (0, i.jsx)(s.Text, {
                     variant: "text-sm/normal",

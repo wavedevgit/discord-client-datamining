@@ -25,8 +25,8 @@ var i = n(627968),
     x = n(969632),
     f = n(438437),
     C = n(290794),
-    I = n(789646),
-    E = n(985018),
+    E = n(789646),
+    I = n(985018),
     v = n(330751);
 
 function b(e) {
@@ -35,7 +35,7 @@ function b(e) {
         children: n
     } = e;
     return (0, i.jsx)("ul", {
-        "aria-label": E.intl.string(E.t.sJpqBS),
+        "aria-label": I.intl.string(I.t.sJpqBS),
         className: t,
         children: n
     })
@@ -47,7 +47,7 @@ function T(e) {
         children: n
     } = e;
     return (0, i.jsx)("div", {
-        "aria-label": E.intl.string(E.t.sJpqBS),
+        "aria-label": I.intl.string(I.t.sJpqBS),
         role: "group",
         className: t,
         children: n
@@ -65,7 +65,7 @@ function y(e) {
         orientation: "vertical"
     });
     return (0, i.jsx)("div", {
-        "aria-label": E.intl.string(E.t.sJpqBS),
+        "aria-label": I.intl.string(I.t.sJpqBS),
         ref: r,
         ...a,
         className: t,
@@ -82,7 +82,7 @@ function S(e) {
         children: s
     } = e, {
         pollAnswerRef: o
-    } = (0, I.Mg)();
+    } = (0, E.Mg)();
     return (0, i.jsx)(c.DUT, {
         role: "checkbox",
         className: l()(t, v.Sn),
@@ -103,7 +103,7 @@ function N(e) {
         isFirstAnswer: o
     } = e, {
         pollAnswerRef: d
-    } = (0, I.Mg)();
+    } = (0, E.Mg)();
     return (0, i.jsx)(c.DUT, {
         role: "radio",
         className: l()(t, v.Sn),

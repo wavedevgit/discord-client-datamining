@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(590202),
     f = n(918338),
     C = n(270045),
-    I = n(57718),
-    E = n(847641),
+    E = n(57718),
+    I = n(847641),
     v = n(646764),
     b = n(398025),
     T = n(433745),
@@ -57,12 +57,12 @@ let L = (0, s.animated)(c.abt),
                 questContentPosition: k,
                 sourceQuestContent: U
             })
-        }, en = (0, i.jsx)(I.Ay, {
+        }, en = (0, i.jsx)(E.Ay, {
             className: j.Iu,
             logotypeClassName: ee ? j.qN : void 0,
-            gameTileSize: I.LU.MEDIUM,
+            gameTileSize: E.LU.MEDIUM,
             quest: n,
-            separatorSpacing: I.C8.MEDIUM,
+            separatorSpacing: E.C8.MEDIUM,
             theme: S.NJ.DARK,
             withGameTile: !Q || null == n.config.cosponsorMetadata
         });
@@ -124,7 +124,7 @@ let L = (0, s.animated)(c.abt),
                                 className: j.if,
                                 children: [(0, i.jsxs)("div", {
                                     className: j.dc,
-                                    children: [en, (0, i.jsx)(E.A, {
+                                    children: [en, (0, i.jsx)(I.A, {
                                         color: "always-white"
                                     })]
                                 }), (0, i.jsx)(c.Text, {
@@ -153,7 +153,7 @@ let L = (0, s.animated)(c.abt),
                             className: j.uA,
                             children: [(0, i.jsxs)("div", {
                                 className: j._V,
-                                children: [en, Q ? null : (0, i.jsx)(E.A, {
+                                children: [en, Q ? null : (0, i.jsx)(I.A, {
                                     color: "always-white"
                                 })]
                             }), (0, i.jsxs)("div", {

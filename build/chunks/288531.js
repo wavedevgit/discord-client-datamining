@@ -21,8 +21,8 @@ var r = n(503698),
     x = n(18437),
     f = n(590202),
     C = n(92246),
-    I = n(792620),
-    E = n(201805),
+    E = n(792620),
+    I = n(201805),
     v = n(212614),
     b = n(79545),
     T = n(646764),
@@ -66,7 +66,7 @@ function M(e) {
         questContent: r,
         questContentPosition: a,
         sourceQuestContent: l
-    } = e, c = (0, s.bG)([h.A], () => h.A.isEnrolling(t.id)), u = (0, I.vv)(t), _ = (0, I.Cr)(t), m = (0, E._c)({
+    } = e, c = (0, s.bG)([h.A], () => h.A.isEnrolling(t.id)), u = (0, E.vv)(t), _ = (0, E.Cr)(t), m = (0, I._c)({
         progressState: n,
         quest: t,
         questContent: r,
@@ -93,7 +93,7 @@ let w = e => {
         quest: t,
         location: n,
         size: r,
-        isFocused: E,
+        isFocused: I,
         isQuestExpired: w,
         isExpanded: D,
         isAnimating: k,
@@ -112,7 +112,7 @@ let w = e => {
         gameProfileSource: c.Ob.QuestEmbed
     }), Q = (0, s.bG)([h.A], () => null != h.A.questEnrollmentBlockedUntil, []), K = p.t.useConfig({
         location: N.rE.QUEST_HOME_DESKTOP
-    }), J = (0, b.Pd)(t), X = (0, s.bG)([u.default], () => u.default.locale), Z = w && !H, $ = (0, I.vv)(t);
+    }), J = (0, b.Pd)(t), X = (0, s.bG)([u.default], () => u.default.locale), Z = w && !H, $ = (0, E.vv)(t);
     return (0, i.jsx)("div", {
         className: R.zr,
         children: (0, i.jsxs)("div", {
@@ -135,7 +135,7 @@ let w = e => {
                             color: d.LU0.colors.WHITE
                         })
                     }), (0, i.jsx)(T.A, {
-                        autoplay: E,
+                        autoplay: I,
                         className: a()({
                             [R.Lu]: "lg" === r,
                             [R.je]: "sm" === r,

@@ -7,8 +7,8 @@ var l = i(627968),
     a = i(503698),
     s = i.n(a),
     r = i(397927),
-    d = i(793574),
-    o = i(688810),
+    o = i(793574),
+    d = i(688810),
     c = i(404374),
     u = i(772366),
     m = i(954571),
@@ -23,7 +23,7 @@ function p(e) {
     } = e, {
         analyticsLocations: i,
         sourceAnalyticsLocations: a
-    } = (0, o.Ay)(d.A.PREMIUM_UPSELL_TOOLTIP);
+    } = (0, d.Ay)(o.A.PREMIUM_UPSELL_TOOLTIP);
     return n.useEffect(() => {
         m.default.track(x.HAw.PREMIUM_UPSELL_VIEWED, {
             type: g.e.GUILD_CAP_INLINE_INVITE_MODAL,

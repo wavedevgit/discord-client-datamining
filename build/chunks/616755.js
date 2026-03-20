@@ -8,8 +8,8 @@ var l = i(627968),
     a = i(503698),
     s = i.n(a),
     r = i(110259),
-    d = i(158954),
-    o = i(397927),
+    o = i(158954),
+    d = i(397927),
     c = i(241524),
     u = i(260451),
     m = i(444316),
@@ -55,7 +55,7 @@ function y(e) {
         guild: i,
         splashURL: a,
         friendMemberIds: r,
-        discoveryGuild: d
+        discoveryGuild: o
     } = e, c = null != r && r.length > 0, [u, x] = n.useState(!1), g = n.useCallback(e => {
         x(e), j.default.track(T.HAw.INVITE_ACCEPT_DETAILS_VIEWED, {
             guild_id: i.id,
@@ -78,22 +78,22 @@ function y(e) {
                 children: [(0, l.jsx)(I.A, {
                     guild: i,
                     outline: !0
-                }), (0, l.jsxs)(o.BJc, {
+                }), (0, l.jsxs)(d.BJc, {
                     direction: "vertical",
                     gap: 16,
                     children: [(0, l.jsx)(v.A, {
                         guild: i,
                         invite: t,
-                        discoveryGuild: d
+                        discoveryGuild: o
                     }), c && (0, l.jsx)(m.A, {
                         friendMemberIds: r,
                         className: C.QS,
-                        avatarSize: o._3J.SIZE_24
+                        avatarSize: d._3J.SIZE_24
                     })]
                 }), (0, l.jsx)(f.A, {
                     invite: t,
                     guild: i,
-                    discoveryGuild: d,
+                    discoveryGuild: o,
                     expanded: u,
                     setExpanded: g,
                     scrollableSectionClassName: C.kw
@@ -125,7 +125,7 @@ function D(e) {
             className: C.x6,
             children: [(0, l.jsx)(I.A, {
                 guild: i
-            }), (0, l.jsxs)(o.BJc, {
+            }), (0, l.jsxs)(d.BJc, {
                 direction: "vertical",
                 gap: 16,
                 children: [(0, l.jsx)(v.A, {
@@ -135,7 +135,7 @@ function D(e) {
                 }), r && (0, l.jsx)(m.A, {
                     friendMemberIds: a,
                     className: C.QS,
-                    avatarSize: o._3J.SIZE_24
+                    avatarSize: d._3J.SIZE_24
                 })]
             }), (0, l.jsx)("div", {
                 className: C.Sd,
@@ -172,7 +172,7 @@ function S(e) {
     } = u.zQ.useConfig({
         location: "AcceptInviteModalRedesign"
     }), p = (0, c.A)("(max-width: 600px)"), A = "v1" === _ || p, j = n.useMemo(() => A ? y : D, [A]);
-    return (0, l.jsxs)(o.dWK, {
+    return (0, l.jsxs)(d.dWK, {
         size: A ? "md" : "xxl",
         "aria-labelledby": m,
         "aria-label": t?.name ?? g?.name ?? "",
@@ -189,7 +189,7 @@ function S(e) {
         },
         children: [(0, l.jsx)("div", {
             className: C.cG,
-            children: (0, l.jsx)(d.s_y, {
+            children: (0, l.jsx)(o.s_y, {
                 shouldColorMix: !0
             })
         }), (0, l.jsx)(j, {
@@ -226,7 +226,7 @@ function L(e) {
         defaultColor: G.hex(),
         forceDefaultColor: null != c.brandColorPrimary
     }), M = c.brandColorPrimary ?? k;
-    return (0, l.jsxs)(o.dWK, {
+    return (0, l.jsxs)(d.dWK, {
         size: "md",
         "aria-labelledby": f,
         "aria-label": i?.name ?? y?.name ?? "",
@@ -243,7 +243,7 @@ function L(e) {
         },
         children: [(0, l.jsx)("div", {
             className: C.cG,
-            children: (0, l.jsx)(d.s_y, {
+            children: (0, l.jsx)(o.s_y, {
                 shouldColorMix: !0
             })
         }), (0, l.jsxs)("div", {
@@ -258,7 +258,7 @@ function L(e) {
                 children: [(0, l.jsx)(I.A, {
                     guild: i,
                     outline: !0
-                }), (0, l.jsxs)(o.BJc, {
+                }), (0, l.jsxs)(d.BJc, {
                     direction: "vertical",
                     gap: 16,
                     children: [(0, l.jsx)(v.A, {
@@ -268,8 +268,8 @@ function L(e) {
                     }), L && (0, l.jsx)(m.A, {
                         friendMemberIds: s,
                         className: C.QS,
-                        avatarSize: o._3J.SIZE_24
-                    }), null != i.description && "" !== i.description && (0, l.jsx)(o.Text, {
+                        avatarSize: d._3J.SIZE_24
+                    }), null != i.description && "" !== i.description && (0, l.jsx)(d.Text, {
                         variant: "text-sm/normal",
                         color: "text-default",
                         children: i.description
@@ -278,7 +278,7 @@ function L(e) {
                         lastGameToDisplay: R,
                         remainingGames: O,
                         activity: c.gameActivity
-                    }) : "v2" === S ? (0, l.jsx)(o.BJc, {
+                    }) : "v2" === S ? (0, l.jsx)(d.BJc, {
                         direction: "vertical",
                         gap: 8,
                         children: (0, l.jsx)(h.A, {

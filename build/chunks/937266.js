@@ -21,12 +21,12 @@ var i = n(627968),
     x = n(189081),
     f = n(67480),
     C = n(328968),
-    I = n(652215),
-    E = n(985018),
+    E = n(652215),
+    I = n(985018),
     v = n(659210);
 class b extends r.Component {
     static defaultProps = {
-        renderFallback: I.tEg
+        renderFallback: E.tEg
     };
     state = {
         playing: !1,
@@ -41,8 +41,8 @@ class b extends r.Component {
         } = this.props;
         return {
             ...e,
-            section: null != t ? t : I.JJy.APPLICATION_EMBED,
-            object: I.ZSU.CARD
+            section: null != t ? t : E.JJy.APPLICATION_EMBED,
+            object: E.ZSU.CARD
         }
     }
     componentDidMount() {
@@ -83,9 +83,9 @@ class b extends r.Component {
                 role: "link",
                 variant: "active",
                 size: "sm",
-                text: E.intl.string(E.t["W+NB90"]),
+                text: I.intl.string(I.t["W+NB90"]),
                 onClick: () => {
-                    (0, A.pX)(I.BVt.APPLICATION_STORE)
+                    (0, A.pX)(E.BVt.APPLICATION_STORE)
                 }
             })
         })
@@ -130,7 +130,7 @@ class b extends r.Component {
         });
         if (null == n) return null;
         let s = null != n && n.primarySkuId === r,
-            o = null != a && a.hasFlag(I.hM6.HIDDEN);
+            o = null != a && a.hasFlag(E.hM6.HIDDEN);
         return (0, i.jsxs)("div", {
             className: v.i,
             children: [!s || o ? this.renderViewInStoreButton() : (0, i.jsx)(c.A, {
@@ -138,7 +138,7 @@ class b extends r.Component {
                 disabledVariant: "primary",
                 size: "sm",
                 className: v.h,
-                source: I.ThZ.MESSAGE_EMBED,
+                source: E.ThZ.MESSAGE_EMBED,
                 onClick: this.handleActionButtonClick
             }), t && !o || e.premium ? null : (0, i.jsx)(u.A, {
                 type: u.A.Types.EMBED,
@@ -157,14 +157,14 @@ class b extends r.Component {
         } = this.props, s = n > m.Tm;
         return null == e || null == t ? r ? l() : (0, i.jsx)(m.Wb, {
             isHorizontal: s
-        }) : e.productLine === I.EZt.COLLECTIBLES ? (0, i.jsx)(d.A, {
-            section: I.JJy.APPLICATION_EMBED,
+        }) : e.productLine === E.EZt.COLLECTIBLES ? (0, i.jsx)(d.A, {
+            section: E.JJy.APPLICATION_EMBED,
             children: this.renderApplicationTile(e, t)
         }) : (0, i.jsx)(d.A, {
-            section: I.JJy.APPLICATION_EMBED,
+            section: E.JJy.APPLICATION_EMBED,
             children: (0, i.jsx)(a.N_, {
                 onClick: this.handleLinkClick,
-                to: I.BVt.APPLICATION_STORE,
+                to: E.BVt.APPLICATION_STORE,
                 onMouseEnter: this.handleMouseEnter,
                 onMouseLeave: this.handleMouseLeave,
                 children: this.renderApplicationTile(e, t)

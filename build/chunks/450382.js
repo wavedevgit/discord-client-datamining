@@ -7,8 +7,8 @@ var l = i(627968),
     a = i(991660),
     s = i(311907),
     r = i(397927),
-    d = i(565645),
-    o = i(59520),
+    o = i(565645),
+    d = i(59520),
     c = i(997590),
     u = i(954571),
     m = i(475720),
@@ -51,7 +51,7 @@ function p(e) {
             children: t.reasons_to_join.map((e, t) => (0, l.jsxs)(r.BJc, {
                 direction: "horizontal",
                 gap: 8,
-                children: [(0, l.jsx)(d.A, {
+                children: [(0, l.jsx)(o.A, {
                     className: h.E2,
                     size: "reaction",
                     emojiId: e.emoji_id,
@@ -109,7 +109,7 @@ function A(e) {
         invite: t,
         guild: i,
         discoveryGuild: s,
-        scrollableSectionClassName: d,
+        scrollableSectionClassName: o,
         expanded: c,
         setExpanded: m
     } = e, _ = null != m, A = s?.about != null && "" !== s.about || s?.reasons_to_join != null && s.reasons_to_join.length > 0, j = n.useCallback((e, t) => {
@@ -118,13 +118,13 @@ function A(e) {
             invite_code: e,
             action: "scrolled"
         })
-    }, []), E = (0, o.I)(j, 3e3, [t.code, i.id], {
+    }, []), E = (0, d.I)(j, 3e3, [t.code, i.id], {
         trailing: !1
     }), v = n.useCallback(() => {
         E(t.code, i.id)
     }, [t.code, i.id, E]);
     return A ? (0, l.jsx)(a.A, {
-        className: d,
+        className: o,
         gradientClassName: h.wH,
         onScroll: v,
         children: (0, l.jsxs)("div", {
@@ -179,7 +179,7 @@ function A(e) {
             })]
         })
     }) : (0, l.jsx)("div", {
-        className: d,
+        className: o,
         children: (0, l.jsx)("div", {
             className: h.Bn,
             children: null != i.description && "" !== i.description && (0, l.jsx)(r.Text, {

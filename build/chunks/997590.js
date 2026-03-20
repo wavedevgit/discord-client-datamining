@@ -7,14 +7,14 @@ var l = i(311907),
     a = i(403362),
     s = i(324580),
     r = i(985018);
-let d = null,
-    o = [],
+let o = null,
+    d = [],
     c = [],
     u = {};
 class m extends l.Ay.Store {
     static displayName = "GuildDiscoveryCategoryStore";
     getPrimaryCategories() {
-        return o
+        return d
     }
     getDiscoveryCategories() {
         let e = s.FZ.map(e => c.find(t => t.categoryId === e)).filter(a.Vq);
@@ -34,7 +34,7 @@ class m extends l.Ay.Store {
         return c
     }
     getFetchedLocale() {
-        return d
+        return o
     }
     getCategoryName(e) {
         return e === s.Iq ? r.intl.string(r.t.Ym2Ri6) : u[e]
@@ -79,6 +79,6 @@ let x = new m(n.h, {
                 name: i
             }), u[e] = i
         }
-        d = l, o = n, c = a
+        o = l, d = n, c = a
     }
 })

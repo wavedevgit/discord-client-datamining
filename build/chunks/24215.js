@@ -7,8 +7,8 @@ var l = i(627968),
     a = i(397927),
     s = i(539895),
     r = i(844330),
-    d = i(253932),
-    o = i(650832),
+    o = i(253932),
+    d = i(650832),
     c = i(954571),
     u = i(960736),
     m = i(652215),
@@ -48,7 +48,7 @@ function p(e) {
             variant: "text-sm/medium",
             color: "text-default",
             children: t
-        }), (0, l.jsx)(o.Ay, {
+        }), (0, l.jsx)(d.Ay, {
             value: i,
             onChange: n,
             title: ""
@@ -56,11 +56,11 @@ function p(e) {
     })
 }
 let A = () => {
-    let e = d.tz.useSetting(),
+    let e = o.tz.useSetting(),
         {
             nickname: t,
             dmsAllowed: i,
-            showActivity: o,
+            showActivity: d,
             setNickname: g,
             setDmsAllowed: A,
             setShowActivity: j,
@@ -98,7 +98,7 @@ let A = () => {
             onChange: A
         }), (0, l.jsx)(h, {}), e && (0, l.jsx)(p, {
             label: x.intl.string(x.t.bN4m1G),
-            checked: o,
+            checked: d,
             onChange: j
         })]
     })

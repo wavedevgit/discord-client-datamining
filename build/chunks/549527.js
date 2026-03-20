@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(643204),
     f = n(535421),
     C = n(112758),
-    I = n(754459),
-    E = n(538355),
+    E = n(754459),
+    I = n(538355),
     v = n(699352),
     b = n(378570),
     T = n(138298),
@@ -99,7 +99,7 @@ function F(e) {
         let {
             popouts: n,
             setPopout: i
-        } = (0, I.A)(e.id, U.Fd), {
+        } = (0, E.A)(e.id, U.Fd), {
             usernameProfile: a,
             avatarProfile: l
         } = n, s = (0, C.m)(e, t, a, i);
@@ -174,7 +174,7 @@ function H(e) {
             content: A,
             hasSpoilerEmbeds: x,
             hasBailedAst: f
-        } = (0, E.A)(d, {
+        } = (0, I.A)(d, {
             hideSimpleEmbedContent: u && m,
             isInteracting: !1,
             formatInline: !1,

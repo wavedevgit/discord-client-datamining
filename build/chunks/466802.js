@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(242874),
     f = n(499454),
     C = n(75825),
-    I = n(976860),
-    E = n(871123),
+    E = n(976860),
+    I = n(871123),
     v = n(317560),
     b = n(780964),
     T = n(840065),
@@ -104,7 +104,7 @@ class q extends r.Component {
         let {
             libraryApplication: t
         } = this.props;
-        e.preventDefault(), null != t && t.isHidden() ? (0, I.pX)(U.BVt.APPLICATION_LIBRARY_SETTINGS) : (0, I.pX)(U.BVt.APPLICATION_LIBRARY, {
+        e.preventDefault(), null != t && t.isHidden() ? (0, E.pX)(U.BVt.APPLICATION_LIBRARY_SETTINGS) : (0, E.pX)(U.BVt.APPLICATION_LIBRARY, {
             state: {
                 applicationId: null != t ? t.id : void 0
             }
@@ -139,7 +139,7 @@ class q extends r.Component {
             sku: n,
             skuApplication: i
         } = this.props;
-        null != n && (0, E.bF)(n) && null != i && null != i.guildId ? (e.preventDefault(), (0, v.R)({
+        null != n && (0, I.bF)(n) && null != i && null != i.guildId ? (e.preventDefault(), (0, v.R)({
             skuId: n.id,
             applicationId: i.id,
             guildId: i.guildId,
@@ -230,7 +230,7 @@ class q extends r.Component {
         let s = i.isPreorder() ? G.intl.formatToPlainString(G.t.evinTd, {
             name: i.name
         }) : i.name;
-        if (e.redeemed) return e.isSubscription || (0, g.hU)(e) || (0, E.bF)(i) ? G.intl.string(G.t.mVC3Cv) : G.intl.format(G.t["ss/L+/"], {
+        if (e.redeemed) return e.isSubscription || (0, g.hU)(e) || (0, I.bF)(i) ? G.intl.string(G.t.mVC3Cv) : G.intl.format(G.t["ss/L+/"], {
             skuName: s,
             onViewInLibrary: this.handleViewLibrary
         });
@@ -322,7 +322,7 @@ class q extends r.Component {
             sku: n
         } = this.props;
         if (null == e) return null;
-        let r = null != e.giftStyle && !(0, E.bF)(n);
+        let r = null != e.giftStyle && !(0, I.bF)(n);
         return (0, i.jsx)(O.k, {
             skuId: e.skuId,
             onEmbedClick: this.handleEmbedClick,

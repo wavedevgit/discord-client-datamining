@@ -7,8 +7,8 @@ var l = i(627968),
     a = i(311907),
     s = i(397927),
     r = i(966327),
-    d = i(972387),
-    o = i(539895),
+    o = i(972387),
+    d = i(539895),
     c = i(233761),
     u = i(960736),
     m = i(398884),
@@ -27,8 +27,8 @@ function j(e) {
     } = e, E = (0, a.bG)([x.default], () => x.default.getCurrentUser()), {
         submitting: v,
         error: I
-    } = (0, a.cf)([o.A], () => o.A.getProps()), f = n.useCallback(() => {
-        d.A.acceptInvite(t)
+    } = (0, a.cf)([d.A], () => d.A.getProps()), f = n.useCallback(() => {
+        o.A.acceptInvite(t)
     }, [t]), T = (0, u.uE)(), C = "" !== T ? p.intl.format(p.t["9sWQNT"], {
         usernameHook: (e, t) => (0, l.jsx)("span", {
             children: T

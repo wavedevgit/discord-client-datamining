@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(392054),
     f = n(572211),
     C = n(178910),
-    I = n(354287),
-    E = n(574660),
+    E = n(354287),
+    I = n(574660),
     v = n(853390),
     b = n(611010),
     T = n(961350),
@@ -124,7 +124,7 @@ let F = r.memo(function(e) {
                 analyticsLocations: v,
                 componentId: ee
             })
-        }, ei = $.disabled ? U.intl.string(U.t.JBnc7N) : U.intl.string(U.t.cX9uLZ), er = (0, E.F)(J, () => {
+        }, ei = $.disabled ? U.intl.string(U.t.JBnc7N) : U.intl.string(U.t.cX9uLZ), er = (0, I.F)(J, () => {
             j.default.track(D.HAw.ACTIVITY_INSTANCE_EMBED_CLICKED, {
                 application_id: n.id,
                 channel_id: a,
@@ -145,7 +145,7 @@ let F = r.memo(function(e) {
         }),
         ed = [{
             label: $.text,
-            trackingArea: I.kY.PLAY,
+            trackingArea: E.kY.PLAY,
             onClick: en,
             disabled: $.disabled,
             disabledReason: t,

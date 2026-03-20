@@ -1,38 +1,41 @@
 /** chunk id: 72951 params = (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => u
 });
 var i = n(627968),
     r = n(503698),
     a = n.n(r),
-    l = n(397927),
-    s = n(47167),
-    o = n(713654),
-    d = n(340857);
+    l = n(3026),
+    s = n(397927),
+    o = n(47167),
+    d = n(713654),
+    c = n(340857);
 
-function c(e) {
+function u(e) {
     let {
         className: t,
         channel: n,
         guild: r,
-        onClick: c
-    } = e, u = (0, o.gU)(n, r), _ = (0, s.Ay)(n);
-    return (0, i.jsxs)(l.DUT, {
-        onClick: c,
-        className: a()(d.UP, t),
-        children: [null != u && (0, i.jsx)(u, {
-            className: d.p,
+        onClick: u
+    } = e, _ = (0, d.gU)(n, r), m = (0, o.Ay)(n);
+    return (0, i.jsxs)(s.DUT, {
+        onClick: u,
+        className: a()(c.UP, t),
+        children: [null != _ && (0, i.jsx)(_, {
+            className: c.p,
             color: "currentColor",
             size: "custom",
             width: 12,
             height: 12
-        }), (0, i.jsxs)(l.Text, {
+        }), (0, i.jsx)(s.Text, {
             variant: "text-xs/medium",
             lineClamp: 1,
             color: "currentColor",
-            children: [r.name, " / ", _]
-        }), (0, i.jsx)(l._BQ, {
-            className: d.t4,
+            children: (0, i.jsxs)(l.A, {
+                children: [r.name, " / ", m]
+            })
+        }), (0, i.jsx)(s._BQ, {
+            className: c.t4,
             color: "currentColor",
             size: "custom",
             width: 12,

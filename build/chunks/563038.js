@@ -7,8 +7,8 @@ var l = i(627968),
     a = i(110259),
     s = i(158954),
     r = i(417597),
-    d = i(397927),
-    o = i(890698),
+    o = i(397927),
+    d = i(890698),
     c = i(966327),
     u = i(964486),
     m = i(616755),
@@ -74,8 +74,8 @@ function U(e) {
     }, [M, M?.approximate_member_count, M?.code, M?.guild?.id]);
     let z = (0, _.uE)(),
         {
-            enabled: w,
-            discoveryGuild: H,
+            enabled: H,
+            discoveryGuild: w,
             isLoading: B
         } = (0, N.qE)(M?.guild ?? null, "AcceptInviteModal"),
         {
@@ -148,7 +148,7 @@ function U(e) {
             children: (0, l.jsx)(s.y$y, {})
         })
     });
-    if (w && null != ee) return (0, l.jsx)(g.f5, {
+    if (H && null != ee) return (0, l.jsx)(g.f5, {
         value: Z,
         children: (0, l.jsx)(m.A, {
             transitionState: G,
@@ -158,19 +158,19 @@ function U(e) {
             guild: ee,
             splashURL: i,
             friendMemberIds: J ?? void 0,
-            discoveryGuild: H,
+            discoveryGuild: w,
             onClose: X
         })
     });
     let er = null != F ? (0, p.oO)(F) : null,
-        ed = function(e) {
+        eo = function(e) {
             if (null == e) return !1;
             let t = null != e.description && e.description.length > 0,
                 i = null != e.traits && e.traits.filter(e => e.label.length > 0).length > 0,
                 l = null != e.gameApplicationIds && e.gameApplicationIds.length > 0;
             return t && (i || l)
         }(er);
-    return null != er && ed && null != ee && (N.SH.getConfig({
+    return null != er && eo && null != ee && (N.SH.getConfig({
         location: "AcceptInviteModal.hasProfile"
     }), W) ? (0, l.jsx)(g.f5, {
         value: Z,
@@ -210,7 +210,7 @@ function U(e) {
                         className: R.Ro,
                         children: [(0, l.jsx)("div", {
                             id: K,
-                            children: (0, l.jsx)(o.A, {
+                            children: (0, l.jsx)(d.A, {
                                 invite: M,
                                 disableUser: ea,
                                 error: P
@@ -228,7 +228,7 @@ function U(e) {
                                     text: es ? b.intl.string(b.t.ZNCziL) : U,
                                     icon: es || null == k ? void 0 : () => (0, l.jsx)(c.A, {
                                         "aria-hidden": !0,
-                                        size: d._3J.SIZE_16,
+                                        size: o._3J.SIZE_16,
                                         user: k,
                                         className: R.Mp
                                     })

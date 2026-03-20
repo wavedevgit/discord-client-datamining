@@ -8,8 +8,8 @@ var l = i(627968),
     a = i(503698),
     s = i.n(a),
     r = i(821418),
-    d = i(665260),
-    o = i(311907),
+    o = i(665260),
+    d = i(311907),
     c = i(397927),
     u = i(854378),
     m = i(573435),
@@ -80,7 +80,7 @@ let D = () => (0, l.jsxs)(n.Fragment, {
             } = e,
             {
                 currentUser: U
-            } = (0, o.cf)([E.default], () => ({
+            } = (0, d.cf)([E.default], () => ({
                 currentUser: E.default.getCurrentUser()
             }));
         if (null == a) return null;
@@ -90,7 +90,7 @@ let D = () => (0, l.jsxs)(n.Fragment, {
             P = m || null == a.inviter ? null : new j.A(a.inviter),
             V = !(null != a.approximate_member_count && a.approximate_member_count > 100 || null != G && G.features.has(f.GuildFeatures.COMMUNITY)) && null != P,
             F = null,
-            Y = (0, d.Lt)(a.flags ?? 0, r.Q.IS_GUEST_INVITE),
+            Y = (0, o.Lt)(a.flags ?? 0, r.Q.IS_GUEST_INVITE),
             z = !1;
         if (null != G) R && (F = null == P ? N.intl.string(N.t["3rE1P8"]) : N.intl.formatToPlainString(N.t["5u47va"], {
             username: I.Ay.getFormattedName(P)

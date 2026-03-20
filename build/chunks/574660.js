@@ -1,7 +1,7 @@
 /** chunk id: 574660 params = (module,exports,require) **/
 n.d(t, {
     F: () => C,
-    t: () => I
+    t: () => E
 });
 var i = n(64700),
     r = n(311907),
@@ -78,7 +78,7 @@ function C(e, t) {
     } : void 0, [e.id, r, n, d, c, u, a, t, _])
 }
 
-function I(e) {
+function E(e) {
     let {
         canViewApp: t,
         isInstallable: n
