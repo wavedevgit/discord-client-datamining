@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(64700),
     l = n(158954),
-    i = n(892358),
-    s = n(92246),
+    s = n(892358),
+    i = n(92246),
     a = n(752231),
     o = n(654487);
 let u = {
@@ -47,12 +47,12 @@ function p(e) {
             videoDuration: r,
             questConfig: l,
             timelineRect: a
-        } = e, o = Math.max(0, (0, i.DX)(n, r, a) - m);
+        } = e, o = Math.max(0, (0, s.DX)(n, r, a) - m);
         return {
             leftPx: o,
             rightPx: o + m,
             targetSec: n,
-            label: (0, s.mq)(l),
+            label: (0, i.mq)(l),
             index: t
         }
     })({

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(627968),
     l = n(64700),
-    i = n(397927),
-    s = n(681636);
+    s = n(397927),
+    i = n(681636);
 
 function a(e) {
     let {
@@ -15,30 +15,30 @@ function a(e) {
     } = e, o = l.useMemo(() => (t ?? "").split("\n").map(e => e.trim()).filter(e => e.length > 0), [t]);
     return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
-            className: s.Mm,
-            children: [(0, r.jsx)(i.Heading, {
+            className: i.Mm,
+            children: [(0, r.jsx)(s.Heading, {
                 variant: "heading-md/semibold",
                 color: "currentColor",
                 children: "Transcript"
-            }), (0, r.jsx)(i.DUT, {
+            }), (0, r.jsx)(s.DUT, {
                 onClick: a,
-                className: s.GI,
-                children: (0, r.jsx)(i.PGe, {
+                className: i.GI,
+                children: (0, r.jsx)(s.PGe, {
                     color: "currentColor"
                 })
             })]
-        }), (0, r.jsx)(i.vN3, {
-            children: (0, r.jsx)(i.ArX, {
-                className: s.j5,
+        }), (0, r.jsx)(s.vN3, {
+            children: (0, r.jsx)(s.ArX, {
+                className: i.j5,
                 fade: !0,
                 children: (0, r.jsx)("div", {
-                    className: s.FN,
+                    className: i.FN,
                     children: n ? (0, r.jsx)("div", {
-                        className: s.Cw,
-                        children: (0, r.jsx)(i.y$y, {
-                            type: i.y$y.Type.WANDERING_CUBES
+                        className: i.Cw,
+                        children: (0, r.jsx)(s.y$y, {
+                            type: s.y$y.Type.WANDERING_CUBES
                         })
-                    }) : (0, r.jsx)(i.Heading, {
+                    }) : (0, r.jsx)(s.Heading, {
                         variant: "heading-md/normal",
                         color: "text-muted",
                         children: o.map((e, t) => (0, r.jsx)("p", {

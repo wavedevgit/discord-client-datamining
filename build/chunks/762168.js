@@ -3,7 +3,7 @@ r.d(t, {
     DX: () => m,
     _v: () => x,
     cs: () => y,
-    ec: () => v,
+    ec: () => C,
     kK: () => g,
     sn: () => S
 });
@@ -55,7 +55,7 @@ function g() {
         } = e;
     return {
         userId: "123",
-        questId: C,
+        questId: v,
         enrolledAt: a,
         completedAt: r,
         claimedAt: o,
@@ -66,14 +66,14 @@ function g() {
         progress: {}
     }
 }
-let C = `playground-video-quest-${Date.now()}`;
+let v = `playground-video-quest-${Date.now()}`;
 
-function v(e) {
+function C(e) {
     return {
-        id: C,
+        id: v,
         preview: !0,
         config: {
-            id: C,
+            id: v,
             configVersion: 2,
             startsAt: "2024-01-01T00:00:00+00:00",
             expiresAt: "2030-01-01T00:00:00+00:00",
@@ -181,7 +181,7 @@ function h(e) {
         width: l ? 360 : 640,
         height: l ? 640 : 360,
         videoTitle: l ? "Test Portrait Video" : "Test Landscape Video"
-    }), p = v(_), C = n ? {
+    }), p = C(_), v = n ? {
         ...p,
         userStatus: g({
             enrolledAt: p.userStatus?.enrolledAt ?? null,
@@ -200,7 +200,7 @@ function h(e) {
             "--custom-footer-horizontal-padding": "20px"
         },
         children: (0, a.jsx)(S, {
-            quest: C,
+            quest: v,
             isPortrait: l,
             isFullscreenEnabled: c,
             setIsFullscreenEnabled: u,

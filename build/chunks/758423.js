@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(64700),
     l = n(771253),
-    i = n(412703),
-    s = n(902173),
+    s = n(412703),
+    i = n(902173),
     a = n(662903),
     o = n(579473),
     u = n(752231),
@@ -23,8 +23,8 @@ function p(e, t, n, c) {
         } = r.useContext(u.VideoQuestConfigContext),
         h = r.useRef(!1),
         v = r.useRef(null),
-        x = E.taskConfigV2.tasks[i.n.WATCH_VIDEO]?.assets,
-        g = r.useMemo(() => E.features.includes(s.L.FULL_EPISODE_VIDEO_QUEST), [E.features]),
+        x = E.taskConfigV2.tasks[s.n.WATCH_VIDEO]?.assets,
+        g = r.useMemo(() => E.features.includes(i.L.FULL_EPISODE_VIDEO_QUEST), [E.features]),
         S = r.useMemo(() => null != x ? l.Ay.isSupported() && null != x.videoHls ? o.fY.VIDEO_PLAYER_VIDEO_HLS : g ? null : m.has(t) || null == x.videoLowRes ? o.fY.VIDEO_PLAYER_VIDEO : o.fY.VIDEO_PLAYER_VIDEO_LOW_RES : null, [x, t, g]),
         A = r.useMemo(() => null != c ? {
             url: c,

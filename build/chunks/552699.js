@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(627968),
     l = n(64700),
-    i = n(503698),
-    s = n.n(i),
+    s = n(503698),
+    i = n.n(s),
     a = n(435371),
     o = n(397927),
     u = n(713517),
@@ -25,12 +25,12 @@ function S() {
         quest: e,
         sourceQuestContent: t,
         isPortrait: n,
-        onClose: i
+        onClose: s
     } = l.useContext(h.VideoQuestModalContext), S = (0, f.go)(), A = (0, m.LS)(e), C = l.useRef(null), {
         isHoveringOrFocusing: _
     } = (0, u.A)(C), b = (0, E.H)({
         quest: e,
-        onClose: i,
+        onClose: s,
         sourceQuestContent: t,
         impressionId: S
     }), y = e.config.ctaConfig.subtitle, T = void 0 !== y && !(0, c.uJ)(y);
@@ -40,7 +40,7 @@ function S() {
             onClick: () => b(d.uF.VIDEO_MODAL, p.Cy.OPEN_GAME_LINK),
             className: x._S,
             children: (0, r.jsxs)("div", {
-                className: s()(g.hA, x.t8, {
+                className: i()(g.hA, x.t8, {
                     [x.Mc]: A
                 }),
                 ref: C,
@@ -49,7 +49,7 @@ function S() {
                     children: (0, r.jsx)(o.Heading, {
                         variant: "heading-md/medium",
                         color: "text-strong",
-                        className: s()(x.xw, {
+                        className: i()(x.xw, {
                             [x._L]: n
                         }),
                         lineClamp: n ? void 0 : 1,
@@ -58,11 +58,11 @@ function S() {
                         })
                     })
                 }), (0, r.jsxs)("div", {
-                    className: s()(x.sB, {
+                    className: i()(x.sB, {
                         [x.fi]: n
                     }),
                     children: [(0, r.jsx)("div", {
-                        className: s()(x.PV, {
+                        className: i()(x.PV, {
                             [x.WV]: n,
                             [x.mq]: n
                         }),
@@ -72,7 +72,7 @@ function S() {
                         })
                     }), (0, r.jsx)(o.Heading, {
                         variant: "heading-sm/medium",
-                        className: s()(x.PV, {
+                        className: i()(x.PV, {
                             [x.WV]: n,
                             [x.mq]: n
                         }),
@@ -82,11 +82,11 @@ function S() {
                     }), T ? (0, r.jsxs)(r.Fragment, {
                         children: [(0, r.jsx)("div", {
                             "aria-hidden": "true",
-                            className: s()(x.SC, {
+                            className: i()(x.SC, {
                                 [x.b2]: n
                             })
                         }), (0, r.jsx)(o.Heading, {
-                            className: s()(x.xw, {
+                            className: i()(x.xw, {
                                 [x._L]: n
                             }),
                             variant: "heading-sm/medium",

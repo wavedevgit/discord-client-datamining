@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(627968),
     l = n(64700),
-    i = n(503698),
-    s = n.n(i),
+    s = n(503698),
+    i = n.n(s),
     a = n(497766),
     o = n(397927),
     u = n(892358),
@@ -21,7 +21,7 @@ let E = {
         let {
             currentPx: t,
             indicator: n,
-            isAnimated: i,
+            isAnimated: s,
             quest: h,
             sourceQuestContent: v,
             expansionSpring: x,
@@ -36,26 +36,26 @@ let E = {
             index: T
         } = n, {
             completedRatio: N
-        } = (0, d.O9)(h), [D, R] = l.useState(!1), L = b - p.Ue, M = t >= L ? Math.min(1, (t - L) / (y - L)) : 0, j = 0 === T && N < 1, {
+        } = (0, d.O9)(h), [D, R] = l.useState(!1), j = b - p.Ue, L = t >= j ? Math.min(1, (t - j) / (y - j)) : 0, M = 0 === T && N < 1, {
             fill: I
         } = (0, o.zhh)({
-            fill: 100 * M,
+            fill: 100 * L,
             config: E,
             onRest: () => {
-                M <= 0 && R(!1)
+                L <= 0 && R(!1)
             },
             onStart: () => {
                 R(!0)
             }
         });
         return (0, r.jsxs)(a.animated.div, {
-            className: s()(f.ck, {
-                [f.a]: j && D,
-                [f.C9]: !j && D
+            className: i()(f.ck, {
+                [f.a]: M && D,
+                [f.C9]: !M && D
             }),
             style: {
-                left: i ? x.to(e => b - e) : b,
-                "--custom-indicator-size": i ? x.to(e => `${p.lS+2*e}px`) : `${p.lS}px`,
+                left: s ? x.to(e => b - e) : b,
+                "--custom-indicator-size": s ? x.to(e => `${p.lS+2*e}px`) : `${p.lS}px`,
                 "--custom-indicator-fill": I.to(e => e)
             },
             children: [(0, r.jsx)(o.DUT, {

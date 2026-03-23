@@ -1,6 +1,6 @@
 /** chunk id: 104473 params = (module,exports,require) **/
 r.d(t, {
-    AZ: () => u,
+    AZ: () => _,
     kz: () => s
 });
 var a = r(627968);
@@ -8,9 +8,10 @@ r(64700);
 var o = r(397927),
     n = r(476066),
     i = r(6503);
-let s = "https://cdn.discordapp.com/assets/media_channel/admin_edu_discord_birthday.mp4";
+let s = "https://cdn.discordapp.com/assets/media_channel/admin_edu_discord_birthday.mp4",
+    l = "https://cdn.discordapp.com/assets/og_img_discord_home.png";
 
-function l(e) {
+function d(e) {
     let {
         orientation: t,
         thumbnailUrl: r,
@@ -35,13 +36,15 @@ function l(e) {
     })
 }
 
-function d(e) {
+function c(e) {
     let {
         orientation: t,
         autoplay: r,
         seekForwardRestricted: i,
         videoUrl: s,
-        showEndScreen: d
+        poster: c,
+        showEndScreen: u,
+        active: _
     } = e;
     return (0, a.jsx)("div", {
         style: {
@@ -52,6 +55,8 @@ function d(e) {
         },
         children: (0, a.jsx)(n.A, {
             src: s,
+            poster: c,
+            active: _,
             autoplay: r,
             orientation: t,
             seekForwardRestricted: i,
@@ -62,20 +67,20 @@ function d(e) {
             onProgressUpdate: () => {},
             onEnded: () => {},
             onError: () => {},
-            renderEndScreen: d ? e => {
+            renderEndScreen: u ? e => {
                 let {
                     replay: r
                 } = e;
-                return (0, a.jsx)(l, {
+                return (0, a.jsx)(d, {
                     orientation: t,
-                    thumbnailUrl: "https://cdn.discordapp.com/assets/og_img_discord_home.png",
+                    thumbnailUrl: l,
                     onReplay: r
                 })
             } : void 0
-        })
+        }, String(_))
     })
 }
-let c = {
+let u = {
         orientation: {
             label: "Orientation",
             type: "select",
@@ -103,48 +108,58 @@ let c = {
             type: "text",
             defaultValue: s
         },
+        poster: {
+            label: "Poster URL",
+            type: "text",
+            defaultValue: l
+        },
         showEndScreen: {
             label: "Show End Screen",
             type: "boolean",
             defaultValue: !0
+        },
+        active: {
+            label: "Active",
+            type: "boolean",
+            defaultValue: !0
         }
     },
-    u = {
+    _ = {
         title: "Discord Video Player (Generic)",
         stories: [{
             name: "Landscape Video (Generic)",
             id: "landscape-video-generic",
-            component: d,
+            component: c,
             controls: {
-                ...c,
+                ...u,
                 orientation: {
-                    ...c.orientation,
+                    ...u.orientation,
                     defaultValue: "landscape"
                 }
             }
         }, {
             name: "Portrait Video (Generic)",
             id: "portrait-video-generic",
-            component: d,
+            component: c,
             controls: {
-                ...c,
+                ...u,
                 orientation: {
-                    ...c.orientation,
+                    ...u.orientation,
                     defaultValue: "portrait"
                 }
             }
         }, {
             name: "HLS Video (Generic)",
             id: "hls-video-generic",
-            component: d,
+            component: c,
             controls: {
-                ...c,
+                ...u,
                 orientation: {
-                    ...c.orientation,
+                    ...u.orientation,
                     defaultValue: "landscape"
                 },
                 videoUrl: {
-                    ...c.videoUrl,
+                    ...u.videoUrl,
                     defaultValue: "https://cdn.discordapp.com/assets/quests/1276640451235156082/transcoded_akuma_trailer.m3u8"
                 }
             }

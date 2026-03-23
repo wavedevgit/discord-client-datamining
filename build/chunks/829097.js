@@ -1,10 +1,10 @@
 /** chunk id: 829097 params = (module,exports,require) **/
 n.d(t, {
-    _: () => s
+    _: () => i
 });
 var r = n(945810),
     l = n(332628);
-let i = (0, r.mj)({
+let s = (0, r.mj)({
     name: "2025-09-video-qoe-metrics-tracking",
     kind: "user",
     defaultConfig: {
@@ -20,7 +20,7 @@ let i = (0, r.mj)({
     }
 });
 
-function s(e) {
+function i(e) {
     let {
         location: t
     } = e, {
@@ -32,7 +32,7 @@ function s(e) {
     });
     return n ? {
         externalAnalyticsEnabled: !1
-    } : i.getConfig({
+    } : s.getConfig({
         location: t
     })
 }

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(627968),
     l = n(64700),
-    i = n(311907),
-    s = n(990078),
+    s = n(311907),
+    i = n(990078),
     a = n(397927),
     o = n(775602),
     u = n(341915),
@@ -24,16 +24,16 @@ function g() {
         quest: e,
         sourceQuestContent: t,
         onClose: n
-    } = l.useContext(E.VideoQuestModalContext), [g, S] = l.useState(!1), A = (0, i.bG)([o.A], () => o.A.useReducedMotion), C = l.useRef(e.userStatus?.completedAt), [_, b] = l.useState(!1), y = (0, d.mq)(e.config), {
+    } = l.useContext(E.VideoQuestModalContext), [g, S] = l.useState(!1), A = (0, s.bG)([o.A], () => o.A.useReducedMotion), C = l.useRef(e.userStatus?.completedAt), [_, b] = l.useState(!1), y = (0, d.mq)(e.config), {
         completedRatio: T,
         completedRatioDisplay: N
-    } = (0, c.O9)(e), D = e.userStatus?.completedAt != null, R = e.userStatus?.claimedAt != null, L = h.intl.formatToPlainString(D && !R ? h.t.NRp4K4 : h.t["12IWP2"], {
+    } = (0, c.O9)(e), D = e.userStatus?.completedAt != null, R = e.userStatus?.claimedAt != null, j = h.intl.formatToPlainString(D && !R ? h.t.NRp4K4 : h.t["12IWP2"], {
         rewardName: y
     });
     l.useEffect(() => {
         null == C.current && e.userStatus?.completedAt != null && b(!0), C.current = e.userStatus?.completedAt
     }, [e.userStatus?.completedAt]);
-    let M = (0, f.v)({
+    let L = (0, f.v)({
         quest: e,
         questContent: u.uF.QUEST_HOME_DESKTOP,
         sourceQuestContent: t,
@@ -48,9 +48,9 @@ function g() {
             loop: !1,
             autoplay: !1,
             shouldAnimate: _ && !A
-        }), (0, r.jsx)(s.m, {
+        }), (0, r.jsx)(i.m, {
             position: "top",
-            text: L,
+            text: j,
             onTooltipShow: () => {
                 S(!0)
             },
@@ -63,7 +63,7 @@ function g() {
                     cursor: "pointer"
                 } : void 0,
                 onClick: e => {
-                    D && M(e)
+                    D && L(e)
                 },
                 children: (0, r.jsx)(m.A, {
                     size: 48,

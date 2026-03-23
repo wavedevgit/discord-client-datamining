@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(627968),
     l = n(64700),
-    i = n(158954),
-    s = n(892358),
+    s = n(158954),
+    i = n(892358),
     a = n(475815),
     o = n(341915),
     u = n(245853),
@@ -44,58 +44,58 @@ function A(e) {
         n(e, d.Cy.LEARN_MORE), N(e, d.Cy.OPEN_GAME_LINK)
     }, [y, t, N, n]), {
         title: R,
-        subtitle: L
+        subtitle: j
     } = {
         title: (0, p.wr)(b),
         subtitle: b.config.ctaConfig.subtitle ?? g.intl.string(g.t.mxaHfx)
     }, {
-        enabled: M
+        enabled: L
     } = u.uK.useConfig({
         location: x.rE.VIDEO_MODAL
-    }), j = l.useMemo(() => (0, c.tW)(b, c.fY.VIDEO_PLAYER_THUMBNAIL, void 0, !1)?.url ?? null, [b]);
-    return M ? (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(s.nY, {
-            url: j
-        }), (0, r.jsx)(s.KP, {}), (0, r.jsxs)(s.zj, {
+    }), M = l.useMemo(() => (0, c.tW)(b, c.fY.VIDEO_PLAYER_THUMBNAIL, void 0, !1)?.url ?? null, [b]);
+    return L ? (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(i.nY, {
+            url: M
+        }), (0, r.jsx)(i.KP, {}), (0, r.jsxs)(i.zj, {
             orientation: A,
-            children: [null != j && (0, r.jsx)(f.R, {
+            children: [null != M && (0, r.jsx)(f.R, {
                 questOrQuests: b,
                 questContent: o.uF.VIDEO_MODAL_END_CARD,
                 sourceQuestContent: _,
-                children: e => (0, r.jsx)(s.Kb, {
+                children: e => (0, r.jsx)(i.Kb, {
                     ref: t => {
                         e.current = t
                     },
-                    url: j,
+                    url: M,
                     orientation: A
                 })
-            }), (0, r.jsx)(s.lx, {
+            }), (0, r.jsx)(i.lx, {
                 title: R,
-                subtitle: L,
+                subtitle: j,
                 ctaBtnLabel: b.config.ctaConfig.buttonLabel,
-                ctaIcon: i.KS6,
+                ctaIcon: s.KS6,
                 onCTAClick: () => D(o.uF.VIDEO_MODAL),
                 orientation: A
             })]
         })]
     }) : (0, r.jsxs)(r.Fragment, {
-        children: [null != j && (0, r.jsx)(f.R, {
+        children: [null != M && (0, r.jsx)(f.R, {
             questOrQuests: b,
             questContent: o.uF.VIDEO_MODAL_END_CARD,
             sourceQuestContent: _,
-            children: e => (0, r.jsx)(s.pK, {
+            children: e => (0, r.jsx)(i.pK, {
                 ref: t => {
                     e.current = t
                 },
-                url: j
+                url: M
             })
         }), (0, r.jsx)("div", {
             className: S.MT,
             "data-testid": "discord-web-video-player-end-screen"
-        }), (0, r.jsx)(s.OH, {
+        }), (0, r.jsx)(i.OH, {
             title: R,
-            subtitle: L,
-            icon: i.KS6,
+            subtitle: j,
+            icon: s.KS6,
             className: S.mT,
             onClick: () => D(o.uF.VIDEO_MODAL),
             divider: (0, r.jsx)(h.A, {

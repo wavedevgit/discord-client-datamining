@@ -10,8 +10,8 @@ n.d(t, {
 });
 var r = n(627968),
     l = n(64700),
-    i = n(503698),
-    s = n.n(i),
+    s = n(503698),
+    i = n.n(s),
     a = n(158954),
     o = n(827734),
     u = n(681636);
@@ -40,7 +40,7 @@ function m(e) {
         children: n
     } = e;
     return (0, r.jsx)("div", {
-        className: s()(u.Pb, {
+        className: i()(u.Pb, {
             [u.II]: "portrait" === t
         }),
         children: n
@@ -57,7 +57,7 @@ function p(e) {
         ref: l,
         src: t,
         alt: "Video thumbnail",
-        className: s()(u.C, {
+        className: i()(u.C, {
             [u.TW]: "portrait" === n
         })
     })
@@ -81,12 +81,12 @@ function E(e) {
         title: t,
         subtitle: n,
         ctaBtnLabel: l,
-        onCTAClick: i,
+        onCTAClick: s,
         orientation: a,
         ctaIcon: o
     } = e;
     return (0, r.jsxs)("div", {
-        className: s()(u.pP, {
+        className: i()(u.pP, {
             [u.iC]: "portrait" === a
         }),
         children: [(0, r.jsx)(h, {
@@ -95,7 +95,7 @@ function E(e) {
         }), (0, r.jsx)(v, {
             label: l,
             icon: o,
-            onClick: i
+            onClick: s
         })]
     })
 }
@@ -123,7 +123,7 @@ function v(e) {
     let {
         label: t,
         icon: n,
-        onClick: i,
+        onClick: s,
         className: c
     } = e, [d, m] = l.useState(!1), p = () => {
         m(!0)
@@ -131,12 +131,12 @@ function v(e) {
         m(!1)
     };
     return (0, r.jsxs)(a.DUT, {
-        className: s()(u.uU, u.iM, c),
+        className: i()(u.uU, u.iM, c),
         onMouseEnter: p,
         onMouseLeave: f,
         onFocus: p,
         onBlur: f,
-        onClick: i,
+        onClick: s,
         children: [(0, r.jsx)(a.DZT, {
             variant: "heading-md/semibold",
             className: u.ce,
@@ -153,7 +153,7 @@ function x(e) {
     let {
         title: t,
         subtitle: n,
-        icon: i,
+        icon: s,
         onClick: o,
         className: c,
         divider: d
@@ -163,7 +163,7 @@ function x(e) {
         p(!1)
     };
     return (0, r.jsx)(a.DUT, {
-        className: s()(u.Mr, u.iM, c),
+        className: i()(u.Mr, u.iM, c),
         onMouseEnter: f,
         onMouseLeave: E,
         onFocus: f,
@@ -182,7 +182,7 @@ function x(e) {
                     className: u.Hk,
                     children: n
                 })]
-            }), d, (0, r.jsx)(i, {
+            }), d, (0, r.jsx)(s, {
                 size: "md",
                 color: m ? "#FFFFFF" : "#B5BAC1",
                 className: u.J5

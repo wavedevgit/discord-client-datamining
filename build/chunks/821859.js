@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(627968),
     l = n(64700),
-    i = n(503698),
-    s = n.n(i),
+    s = n(503698),
+    i = n.n(s),
     a = n(497766),
     o = n(876230),
     u = n(61491),
@@ -23,7 +23,7 @@ function E(e) {
     let {
         isFullyVisible: t,
         percent: n,
-        animate: i,
+        animate: s,
         interactionEnabled: E,
         backgroundColor: h,
         playerState: v,
@@ -40,9 +40,9 @@ function E(e) {
         handleMouseEnter: N,
         handleMouseLeave: D,
         handleMouseMove: R,
-        handleKeyDown: L,
-        hoveredAtX: M,
-        maxSeekableX: j,
+        handleKeyDown: j,
+        hoveredAtX: L,
+        maxSeekableX: M,
         isHovering: I,
         handleClick: w,
         ariaProps: k
@@ -54,7 +54,7 @@ function E(e) {
         duration: g,
         percent: n,
         onClick: A
-    }), O = l.useMemo(() => null == M || null == T ? null : (0, u.rB)((0, u.hc)(M, T, g)), [M, T, g]), P = l.useMemo(() => {
+    }), O = l.useMemo(() => null == L || null == T ? null : (0, u.rB)((0, u.hc)(L, T, g)), [L, T, g]), P = l.useMemo(() => {
         if (null != T) return (0, u.TO)(n, T)
     }, [n, T]), [{
         currentPxSpring: Q
@@ -65,9 +65,9 @@ function E(e) {
     l.useEffect(() => {
         U({
             currentPxSpring: P ?? 0,
-            immediate: !i
+            immediate: !s
         })
-    }, [P, i, U]);
+    }, [P, s, U]);
     let V = T?.width != null && T?.width !== 0 ? T?.width : 1,
         B = l.useMemo(() => [{
             startPx: 0,
@@ -84,7 +84,7 @@ function E(e) {
             "--custom-initial-timeline-height": "4px"
         },
         children: (0, r.jsxs)(c.DUT, {
-            className: s()(p.KF, {
+            className: i()(p.KF, {
                 [p.uc]: E
             }),
             ignoreKeyPress: !0,
@@ -92,7 +92,7 @@ function E(e) {
             onMouseEnter: N,
             onMouseLeave: D,
             onMouseMove: R,
-            onKeyDown: L,
+            onKeyDown: j,
             tabIndex: E ? void 0 : -1,
             children: [(0, r.jsx)("div", {
                 className: p.G9,
@@ -103,7 +103,7 @@ function E(e) {
                     backgroundColor: h,
                     timelineWidth: V,
                     preloadedBuffers: x,
-                    maxSeekableX: j,
+                    maxSeekableX: M,
                     interactionEnabled: E,
                     useNewStyles: !0,
                     progressFillClassName: p.UA,
@@ -115,7 +115,7 @@ function E(e) {
                 variant: "text-xs/normal",
                 color: "always-white",
                 style: {
-                    left: null != M ? `${M}px` : "auto"
+                    left: null != L ? `${L}px` : "auto"
                 },
                 children: O
             }), I && E && null != P && (0, r.jsx)(a.animated.div, {

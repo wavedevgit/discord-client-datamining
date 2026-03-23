@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(627968),
     l = n(349941),
-    i = n(158954),
-    s = n(311907),
+    s = n(158954),
+    i = n(311907),
     a = n(876230),
     o = n(544028),
     u = n(681636);
@@ -24,7 +24,7 @@ let d = function(e) {
         playerState: n,
         pauseReason: a,
         getStatusMessage: d = c
-    } = e, m = (0, s.bG)([o.A], () => o.A.getState().theme), p = d({
+    } = e, m = (0, i.bG)([o.A], () => o.A.getState().theme), p = d({
         hasVideoAsset: t,
         playerState: n,
         pauseReason: a
@@ -37,7 +37,7 @@ let d = function(e) {
             style: {
                 background: (0, l.Mw)(m) ? "rgba(0, 0, 0, 0.65)" : "rgba(255, 255, 255, 0.65)"
             },
-            children: (0, r.jsx)(i.EYj, {
+            children: (0, r.jsx)(s.EYj, {
                 variant: "text-sm/normal",
                 color: "text-default",
                 children: p

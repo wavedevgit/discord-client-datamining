@@ -17,8 +17,8 @@ var a = r(627968),
     b = r(792620),
     m = r(753386),
     g = r(752231),
-    C = r(179615),
-    v = r(576199),
+    v = r(179615),
+    C = r(576199),
     S = r(758423),
     h = r(458817),
     x = r(873856),
@@ -38,10 +38,10 @@ function T(e) {
         quest: R,
         videoSessionId: I,
         setIsFullscreenEnabled: B
-    } = o.useContext(g.VideoQuestModalContext), D = (0, o.useRef)(null), w = (0, b.Yh)(R), O = R.userStatus?.completedAt != null, U = o.useMemo(() => R.config.features.includes(y.Li.FULL_EPISODE_VIDEO_QUEST), [R.config.features]), L = (0, _.Kr)(e => e.videoProgress[R.id] ?? _.yc, n.x), j = (0, _.Kr)(e => e.setVideoProgress), F = (0, s.g)(O, L, w.progressSeconds), [N] = o.useState(() => d.A.getEffectiveConnectionSpeed()), W = O ? void 0 : Math.max(L.maxTimestampSec, w.progressSeconds), {
+    } = o.useContext(g.VideoQuestModalContext), D = (0, o.useRef)(null), w = (0, b.Yh)(R), O = R.userStatus?.completedAt != null, U = o.useMemo(() => R.config.features.includes(y.Li.FULL_EPISODE_VIDEO_QUEST), [R.config.features]), L = (0, _.Kr)(e => e.videoProgress[R.id] ?? _.yc, n.x), F = (0, _.Kr)(e => e.setVideoProgress), j = (0, s.g)(O, L, w.progressSeconds), [N] = o.useState(() => d.A.getEffectiveConnectionSpeed()), W = O ? void 0 : Math.max(L.maxTimestampSec, w.progressSeconds), {
         videoAsset: M,
         videoAssetType: Q
-    } = (0, S.A)(D, N, F, k, !1), q = (0, o.useRef)(null), G = o.useCallback(e => {
+    } = (0, S.A)(D, N, j, k, !1), q = (0, o.useRef)(null), G = o.useCallback(e => {
         q.current = e
     }, []), H = o.useMemo(() => (0, p.L)({
         quest: R,
@@ -89,7 +89,7 @@ function T(e) {
         onAnalytics: el,
         emitIntervalMs: l.KI,
         minSegmentDurationMs: l._4
-    }), eg = (0, o.useRef)(null), eC = o.useCallback((e, t) => {
+    }), eg = (0, o.useRef)(null), ev = o.useCallback((e, t) => {
         switch (e) {
             case i.Q6.PLAYING:
                 ec(!0), D.current?.paused === !0 && $(eg.current), eg.current = null;
@@ -115,7 +115,7 @@ function T(e) {
             case i.Q6.ENDED:
                 ec(!1)
         }
-    }, [$, Z, em]), ev = o.useCallback(() => {
+    }, [$, Z, em]), eC = o.useCallback(() => {
         z(N)
     }, [z, N]), eS = o.useCallback(e => {
         e_(!0), X(e)
@@ -124,19 +124,19 @@ function T(e) {
     }, [er]), ex = o.useCallback(e => {
         B(e), ea(e)
     }, [B, ea]), ey = o.useCallback((e, a) => {
-        j(R.id, e, a), (0, c.Gn)(R.id, w.taskType, e), r(e);
+        F(R.id, e, a), (0, c.Gn)(R.id, w.taskType, e), r(e);
         let o = U && e >= t && !Y.current;
         (e >= K.current || o) && (o && (Y.current = !0), K.current = e + y.aA + Math.random() * y.A6, O || R.userStatus?.enrolledAt == null || (0, m.zv)(R, e), es())
-    }, [R, w.taskType, t, O, U, es, j, r]), eT = o.useCallback((e, t) => {
-        em(), null != D.current && j(R.id, t, D.current.duration)
-    }, [R.id, j, em]), eP = o.useCallback(() => {
+    }, [R, w.taskType, t, O, U, es, F, r]), eT = o.useCallback((e, t) => {
+        em(), null != D.current && F(R.id, t, D.current.duration)
+    }, [R.id, F, em]), eP = o.useCallback(() => {
         if (em(), null != D.current) {
             let e = D.current.duration;
-            O || R.userStatus?.enrolledAt == null || (0, m.zv)(R, e + 1), j(R.id, e, e)
+            O || R.userStatus?.enrolledAt == null || (0, m.zv)(R, e + 1), F(R.id, e, e)
         }
-    }, [R, O, j, em]), eA = o.useCallback((e, t) => {
+    }, [R, O, F, em]), eA = o.useCallback((e, t) => {
         eo(e, t)
-    }, [eo]), eE = o.useMemo(() => (0, f.tW)(R, f.fY.VIDEO_PLAYER_CAPTION, void 0, !1), [R]), ek = o.useCallback(() => (0, a.jsx)(v.A, {}), []), eV = o.useCallback(() => (0, a.jsx)(C.A, {
+    }, [eo]), eE = o.useMemo(() => (0, f.tW)(R, f.fY.VIDEO_PLAYER_CAPTION, void 0, !1), [R]), ek = o.useCallback(() => (0, a.jsx)(C.A, {}), []), eV = o.useCallback(() => (0, a.jsx)(v.A, {
         videoRef: D,
         onTrackQuestContentClick: ei,
         orientation: E
@@ -152,12 +152,12 @@ function T(e) {
         videoUrlOverride: k,
         src: M?.url,
         poster: void 0,
-        initialTimeSec: F,
+        initialTimeSec: j,
         maxSeekableTimeSec: W,
         seekForwardRestricted: !O,
         captionTrackUrl: eE?.url,
-        onPlayerStateChange: eC,
-        onLoadStart: ev,
+        onPlayerStateChange: ev,
+        onLoadStart: eC,
         onLoadEnd: eS,
         onFirstFrame: eh,
         onBufferingStart: ee,

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(627968),
     l = n(64700),
-    i = n(435371),
-    s = n(397927),
+    s = n(435371),
+    i = n(397927),
     a = n(341915),
     o = n(590202),
     u = n(971649),
@@ -26,7 +26,7 @@ function f(e) {
             ctaContent: o.Cy.COPY_QUEST_URL,
             impressionId: E,
             sourceQuestContent: f
-        }), (0, s.showToast)((0, s.createToast)(p.intl.string(p.t["+5kSoW"]), s.ToastType.SUCCESS)))
+        }), (0, i.showToast)((0, i.createToast)(p.intl.string(p.t["+5kSoW"]), i.ToastType.SUCCESS)))
     }, [E, h, n.id, f]);
     return h ? (0, r.jsx)("div", {
         "data-testid": "video-quest-share-btn",
@@ -34,11 +34,11 @@ function f(e) {
         style: {
             marginLeft: t ? "auto" : void 0
         },
-        children: (0, r.jsx)(i.m_, {
+        children: (0, r.jsx)(s.m_, {
             text: p.intl.string(p.t.WmfZHZ),
-            children: (0, r.jsx)(s.K0, {
+            children: (0, r.jsx)(i.K0, {
                 variant: "overlay-secondary",
-                icon: s.qYV,
+                icon: i.qYV,
                 "aria-label": p.intl.string(p.t.RDE0Sc),
                 onClick: v
             })

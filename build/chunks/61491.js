@@ -4,14 +4,14 @@ function r(e, t, n) {
 }
 
 function l(e, t, n) {
-    return i(e / t * 100, n)
+    return s(e / t * 100, n)
 }
 
-function i(e, t) {
+function s(e, t) {
     return e / 100 * t.width
 }
 
-function s(e) {
+function i(e) {
     let t = 0 | e,
         n = Math.floor(t / 3600),
         r = Math.floor(t % 3600 / 60),
@@ -20,7 +20,7 @@ function s(e) {
 }
 n.d(t, {
     DX: () => l,
-    TO: () => i,
+    TO: () => s,
     hc: () => r,
-    rB: () => s
+    rB: () => i
 })

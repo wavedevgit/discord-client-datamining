@@ -3,12 +3,12 @@ n.d(t, {
     Ay: () => u,
     Bu: () => o,
     OJ: () => a,
-    XY: () => s
+    XY: () => i
 });
 var r = n(64700),
     l = n(771253),
-    i = n(876230);
-let s = 8e5,
+    s = n(876230);
+let i = 8e5,
     a = 20,
     o = 30;
 
@@ -48,20 +48,20 @@ function u(e, t) {
                 })
             };
         return r.on(l.Ay.Events.FRAG_LOADING, () => {
-            r.config.minAutoBitrate !== s && (r.config.minAutoBitrate = s)
+            r.config.minAutoBitrate !== i && (r.config.minAutoBitrate = i)
         }), r.on(l.Ay.Events.ERROR, (e, t) => {
             if (f.current?.(function(e) {
                     switch (e) {
                         case l.Ay.ErrorTypes.NETWORK_ERROR:
-                            return i.SB.HLS_NETWORK_ERROR;
+                            return s.SB.HLS_NETWORK_ERROR;
                         case l.Ay.ErrorTypes.MEDIA_ERROR:
-                            return i.SB.HLS_MEDIA_ERROR;
+                            return s.SB.HLS_MEDIA_ERROR;
                         case l.Ay.ErrorTypes.MUX_ERROR:
-                            return i.SB.HLS_MUX_ERROR;
+                            return s.SB.HLS_MUX_ERROR;
                         case l.Ay.ErrorTypes.KEY_SYSTEM_ERROR:
-                            return i.SB.HLS_KEY_SYSTEM_ERROR;
+                            return s.SB.HLS_KEY_SYSTEM_ERROR;
                         default:
-                            return i.SB.HLS_OTHER_ERROR
+                            return s.SB.HLS_OTHER_ERROR
                     }
                 }(t.type), {
                     errorDetails: t.details,

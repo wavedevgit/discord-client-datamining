@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(627968),
     l = n(64700),
-    i = n(341915),
-    s = n(713081),
+    s = n(341915),
+    i = n(713081),
     a = n(752231);
 
 function o() {
@@ -14,9 +14,9 @@ function o() {
         sourceQuestContent: t,
         onClose: n
     } = l.useContext(a.VideoQuestModalContext);
-    return (0, r.jsx)(s.A, {
+    return (0, r.jsx)(i.A, {
         quest: e,
-        questContent: i.uF.QUEST_HOME_DESKTOP,
+        questContent: s.uF.QUEST_HOME_DESKTOP,
         sourceQuestContent: t,
         onClose: n
     })

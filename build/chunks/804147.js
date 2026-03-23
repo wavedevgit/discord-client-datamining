@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var r = n(627968),
     l = n(64700),
-    i = n(503698),
-    s = n.n(i),
+    s = n(503698),
+    i = n.n(s),
     a = n(497766),
     o = n(61491),
     u = n(397927),
@@ -27,7 +27,7 @@ function g(e) {
     let {
         targetSec: t,
         isFullyVisible: n,
-        percent: i,
+        percent: s,
         animate: g,
         interactionEnabled: S,
         isQuestCompleted: A,
@@ -39,10 +39,10 @@ function g(e) {
         onClick: N,
         onScrubBack: D,
         onScrubForward: R,
-        "data-testid": L
+        "data-testid": j
     } = e, {
-        quest: M,
-        sourceQuestContent: j,
+        quest: L,
+        sourceQuestContent: M,
         useNewProgressBarStyling: I
     } = l.useContext(p.VideoQuestModalContext), {
         contRef: w,
@@ -62,11 +62,11 @@ function g(e) {
         maxSeekableTime: y,
         interactionEnabled: S,
         duration: b,
-        percent: i,
+        percent: s,
         onClick: N
     }), $ = l.useMemo(() => null == V || null == k ? null : (0, o.rB)((0, o.hc)(V, k, b)), [V, k, b]), Y = l.useMemo(() => {
-        if (null != k) return (0, o.TO)(i, k)
-    }, [i, k]), {
+        if (null != k) return (0, o.TO)(s, k)
+    }, [s, k]), {
         currentPxSpring: H
     } = (0, u.zhh)({
         currentPxSpring: Y ?? 0,
@@ -91,13 +91,13 @@ function g(e) {
         if (0 === e.length) return n;
         for (let r = 0; r < e.length; r++) {
             let l = Math.max(0, e[r].leftPx - E.Ue),
-                i = Math.min(t, e[r].rightPx + E.Ue),
-                s = n?.[n.length - 1];
-            null != s && (s.endPx = l, s.rightIndicatorIndex = r);
-            let a = null != s && s.endPx <= s.startPx,
-                o = a ? s?.leftIndicatorIndex : r;
-            a && n.pop(), i < t && n.push({
-                startPx: i,
+                s = Math.min(t, e[r].rightPx + E.Ue),
+                i = n?.[n.length - 1];
+            null != i && (i.endPx = l, i.rightIndicatorIndex = r);
+            let a = null != i && i.endPx <= i.startPx,
+                o = a ? i?.leftIndicatorIndex : r;
+            a && n.pop(), s < t && n.push({
+                startPx: s,
                 endPx: t,
                 leftIndicatorIndex: o,
                 rightIndicatorIndex: null
@@ -108,13 +108,13 @@ function g(e) {
     return (0, r.jsx)("div", {
         className: v.jD,
         ref: w,
-        "data-testid": L,
+        "data-testid": j,
         style: {
             "--custom-timeline-height": `${I||F?4:2}px`,
             "--custom-initial-timeline-height": `${I?4:2}px`
         },
         children: (0, r.jsxs)(u.DUT, {
-            className: s()(v.KF, {
+            className: i()(v.KF, {
                 [v.uc]: S
             }),
             ignoreKeyPress: !0,
@@ -150,8 +150,8 @@ function g(e) {
                     indicator: e,
                     isAnimated: n,
                     expansionSpring: J,
-                    quest: M,
-                    sourceQuestContent: j,
+                    quest: L,
+                    sourceQuestContent: M,
                     onMouseEnter: () => q(e.index),
                     onMouseLeave: () => q(null),
                     onClick: null != N ? () => N(l) : void 0

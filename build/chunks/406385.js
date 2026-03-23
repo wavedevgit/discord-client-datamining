@@ -8,8 +8,8 @@ n.d(t, {
 });
 var r = n(627968),
     l = n(64700),
-    i = n(503698),
-    s = n.n(i),
+    s = n(503698),
+    i = n.n(s),
     a = n(497766),
     o = n(827734),
     u = n(876230),
@@ -47,9 +47,9 @@ function S(e) {
     let {
         current: t,
         duration: n
-    } = e, l = null != t ? (0, c.rB)(t) : E, i = null != n ? (0, c.rB)(n) : E;
+    } = e, l = null != t ? (0, c.rB)(t) : E, s = null != n ? (0, c.rB)(n) : E;
     return (0, r.jsxs)("div", {
-        className: s()(f.d$, f.jk),
+        className: i()(f.d$, f.jk),
         "data-testid": "discord-web-video-player-duration",
         children: [(0, r.jsx)(m.Text, {
             variant: "text-xs/normal",
@@ -62,7 +62,7 @@ function S(e) {
         }), (0, r.jsx)(m.Text, {
             variant: "text-xs/normal",
             className: f.Ue,
-            children: i
+            children: s
         })]
     })
 }
@@ -70,7 +70,7 @@ let A = l.forwardRef(function(e, t) {
     let {
         iconComponent: n,
         animationTime: l,
-        visible: i,
+        visible: s,
         ariaLabel: c,
         active: p,
         disabled: E,
@@ -83,7 +83,7 @@ let A = l.forwardRef(function(e, t) {
     } = e, b = e => (0, r.jsx)(m.DUT, {
         ...e,
         onClick: !0 === E ? void 0 : A,
-        className: s()(f.K5, {
+        className: i()(f.K5, {
             [f.Iy]: E
         }),
         "aria-label": c,
@@ -96,7 +96,7 @@ let A = l.forwardRef(function(e, t) {
                 opacity: (0, a.to)([l.to({
                     range: [0, 1],
                     output: [0, 1]
-                })], e => `${i?e:Math.pow(e,8)}`),
+                })], e => `${s?e:Math.pow(e,8)}`),
                 height: {
                     [u.n4.LG]: "32px",
                     [u.n4.MD]: "24px"
@@ -105,14 +105,14 @@ let A = l.forwardRef(function(e, t) {
             children: (0, r.jsx)(n, {
                 size: g[C],
                 color: !0 !== E ? o.A.colors.WHITE : o.A.colors.TEXT_MUTED,
-                className: s()(f.jk, {
+                className: i()(f.jk, {
                     [f.x2]: p,
                     [f.Wr]: !E
                 })
             })
         })
     });
-    return null != v && i ? (0, r.jsx)(d.m_, {
+    return null != v && s ? (0, r.jsx)(d.m_, {
         text: v,
         keyboardShortcut: "" !== (S ?? "").trim() ? S : void 0,
         delay: x,

@@ -26,7 +26,7 @@ let _ = "var(--background-mod-strong)",
             strokeWidth: 3
         } : {
             strokeWidth: 4
-        }, C = n / 2, v = n / 2 - g / 2, S = 2 * Math.PI * v, h = S - r * S, x = o.useMemo(() => ({
+        }, v = n / 2, C = n / 2 - g / 2, S = 2 * Math.PI * C, h = S - r * S, x = o.useMemo(() => ({
             strokeDasharray: `${S} ${S}`,
             strokeDashoffset: h
         }), [S, h]), {
@@ -68,25 +68,25 @@ let _ = "var(--background-mod-strong)",
                     className: u.qB,
                     strokeWidth: g,
                     fill: "transparent",
-                    r: v,
-                    cx: C,
-                    cy: C,
+                    r: C,
+                    cx: v,
+                    cy: v,
                     stroke: _
                 }), (0, a.jsx)("circle", {
                     className: u.qB,
                     strokeWidth: g,
                     fill: "transparent",
-                    r: v,
-                    cx: C,
-                    cy: C,
+                    r: C,
+                    cx: v,
+                    cy: v,
                     stroke: _
                 }), (0, a.jsx)("circle", {
                     className: u.qB,
                     strokeWidth: g,
                     fill: "transparent",
-                    r: v,
-                    cx: C,
-                    cy: C,
+                    r: C,
+                    cx: v,
+                    cy: v,
                     stroke: "rgba(98, 196, 101, 1)",
                     style: x
                 })]
