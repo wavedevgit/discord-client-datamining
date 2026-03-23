@@ -1,9 +1,8 @@
 /** chunk id: 909536 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    Gh: () => i
+    Gh: () => l
 });
-let r = (0, n(945810).mj)({
+let i = (0, n(945810).mj)({
     name: "2026-03-wishlisting-nitro",
     kind: "user",
     defaultConfig: {
@@ -26,8 +25,8 @@ let r = (0, n(945810).mj)({
     }
 });
 
-function i(e) {
-    return r.useConfig({
+function l(e) {
+    return i.useConfig({
         location: e
     }).isEnabled
 }

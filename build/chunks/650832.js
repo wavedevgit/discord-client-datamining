@@ -1,52 +1,53 @@
 /** chunk id: 650832 params = (module,exports,require) **/
-t.d(a, {
-    Ay: () => l
+"use strict";
+n.d(t, {
+    Ay: () => o
 });
-var n = t(627968);
-t(64700);
-var _ = t(435371),
-    r = t(397927);
+var i = n(627968);
+n(64700);
+var s = n(435371),
+    r = n(397927);
 
-function i(e) {
+function l(e) {
     let {
-        value: a,
-        onChange: t,
-        note: _,
-        title: i,
-        disabled: o
+        value: t,
+        onChange: n,
+        note: s,
+        title: l,
+        disabled: a
     } = e;
-    return (0, n.jsx)(r.dOG, {
-        checked: a,
-        onChange: t,
-        disabled: o,
-        label: i,
-        description: _
+    return (0, i.jsx)(r.dOG, {
+        checked: t,
+        onChange: n,
+        disabled: a,
+        label: l,
+        description: s
     })
 }
 
-function o(e) {
+function a(e) {
     let {
-        tooltipText: a,
-        ...t
+        tooltipText: t,
+        ...n
     } = e;
-    return (0, n.jsx)(_.m_, {
-        text: a,
+    return (0, i.jsx)(s.m_, {
+        text: t,
         asContainer: !0,
         align: "right",
         caretConfig: {
             position: "bottom",
             align: "end"
         },
-        children: (0, n.jsx)(i, {
-            ...t
+        children: (0, i.jsx)(l, {
+            ...n
         })
     })
 }
 
-function l(e) {
-    return "tooltipText" in e && null != e.tooltipText ? (0, n.jsx)(o, {
+function o(e) {
+    return "tooltipText" in e && null != e.tooltipText ? (0, i.jsx)(a, {
         ...e
-    }) : (0, n.jsx)(i, {
+    }) : (0, i.jsx)(l, {
         ...e
     })
 }

@@ -1,71 +1,71 @@
 /** chunk id: 206845 params = (module,exports,require) **/
-n.d(t, {
-    A: () => h
+a.d(t, {
+    A: () => g
 });
-var i = n(627968),
-    s = n(64700),
-    l = n(735438),
-    a = n(451988),
-    r = n(397927),
-    o = n(954571),
-    d = n(957565),
-    c = n(927813),
-    u = n(652215),
-    _ = n(985018);
-let m = c.A.Millis.SECOND,
-    g = 2 * m,
-    A = c.A.Millis.HALF_SECOND,
-    x = [() => _.intl.string(_.t.MSaeTe), () => _.intl.string(_.t.UmrCw7), () => _.intl.string(_.t.gKE0Jq), () => _.intl.string(_.t["4DSKbi"]), () => _.intl.string(_.t["+8ENdT"]), () => _.intl.string(_.t.GlWHv8), () => _.intl.string(_.t.hIzxU9), () => _.intl.string(_.t["26uMPL"]), () => _.intl.string(_.t.uFs7R2), () => _.intl.string(_.t.bLXdcY), () => _.intl.string(_.t.gPg9fS)];
+var l = a(627968),
+    n = a(64700),
+    r = a(735438),
+    s = a(451988),
+    i = a(397927),
+    d = a(954571),
+    o = a(957565),
+    c = a(927813),
+    u = a(652215),
+    x = a(985018);
+let h = c.A.Millis.SECOND,
+    m = 2 * h,
+    b = c.A.Millis.HALF_SECOND,
+    p = [() => x.intl.string(x.t.MSaeTe), () => x.intl.string(x.t.UmrCw7), () => x.intl.string(x.t.gKE0Jq), () => x.intl.string(x.t["4DSKbi"]), () => x.intl.string(x.t["+8ENdT"]), () => x.intl.string(x.t.GlWHv8), () => x.intl.string(x.t.hIzxU9), () => x.intl.string(x.t["26uMPL"]), () => x.intl.string(x.t.uFs7R2), () => x.intl.string(x.t.bLXdcY), () => x.intl.string(x.t.gPg9fS)];
 
-function h(e) {
+function g(e) {
     let {
         text: t,
-        copyValue: n,
+        copyValue: a,
         children: c,
-        onCopy: _,
-        "aria-label": h,
-        delay: p = A,
-        dataMeticulousIgnore: T
-    } = e, [E, S] = s.useState(0), [f, C] = s.useState(!1), [b, N] = s.useState(!1), [I] = s.useState(() => new a.Ep), [v] = s.useState(() => new a.Ep);
-    if (s.useEffect(() => () => {
-            I.stop(), v.stop()
-        }, [I, v]), !d.p5) return (0, i.jsx)(i.Fragment, {
+        onCopy: x,
+        "aria-label": g,
+        delay: f = b,
+        dataMeticulousIgnore: j
+    } = e, [v, y] = n.useState(0), [k, _] = n.useState(!1), [A, S] = n.useState(!1), [C] = n.useState(() => new s.Ep), [I] = n.useState(() => new s.Ep);
+    if (n.useEffect(() => () => {
+            C.stop(), I.stop()
+        }, [C, I]), !o.p5) return (0, l.jsx)(l.Fragment, {
         children: c({})
     });
-    let j = E >= x.length - 1,
-        y = j ? r.oMw.RED : r.oMw.GREEN,
-        R = f ? y : r.oMw.PRIMARY;
-    return (0, i.jsx)(r.STz, {
+    let T = v >= p.length - 1,
+        w = T ? i.oMw.RED : i.oMw.GREEN,
+        V = k ? w : i.oMw.PRIMARY;
+    return (0, l.jsx)(i.STz, {
         text: (() => {
-            if (!f) return t;
-            let e = (0, l.clamp)(E - 1, 0, x.length - 1),
-                n = x[e] ?? x[0];
-            return (0, i.jsx)(r.bfh, {
-                isShaking: j,
-                children: n()
+            if (!k) return t;
+            let e = (0, r.clamp)(v - 1, 0, p.length - 1),
+                a = p[e] ?? p[0];
+            return (0, l.jsx)(i.bfh, {
+                isShaking: T,
+                children: a()
             })
         })(),
-        delay: p,
-        "aria-label": h,
-        dataMeticulousIgnore: T,
-        color: R,
-        forceOpen: b,
+        delay: f,
+        "aria-label": g,
+        dataMeticulousIgnore: j,
+        color: V,
+        forceOpen: A,
         onAnimationRest: (e, t) => {
-            !b && f && t.phase === u.lLE.LEAVE && C(!1)
+            !A && k && t.phase === u.lLE.LEAVE && _(!1)
         },
         children: e => {
             let {
                 onClick: t,
-                onMouseEnter: i,
-                ...s
+                onMouseEnter: l,
+                ...n
             } = e;
             return c({
-                ...s,
+                ...n,
                 onClick: () => {
-                    t?.(), _?.(), (0, d.C)(n), o.default.track(u.HAw.TEXT_COPIED), b || S(E + 1), N(!0), C(!0), I.start(m, () => N(!1)), v.start(g, () => S(0))
+                    t?.(), x?.(), (0, o.C)(a), d.default.track(u.HAw.TEXT_COPIED), A || y(v + 1), S(!0), _(!0), C.start(h, () => S(!1)), I.start(m, () => y(0))
                 },
                 onMouseEnter: () => {
-                    f ? (I.stop(), N(!1)) : i?.()
+                    k ? (C.stop(), S(!1)) : l?.()
                 }
             })
         }

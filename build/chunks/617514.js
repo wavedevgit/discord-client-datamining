@@ -15,7 +15,7 @@ var i = n(627968),
     m = n(49999),
     g = n(518477),
     A = n(985018),
-    x = n(392402);
+    x = n(133788);
 let h = () => {
     let [e, t] = (0, o.kn)([l.M.WIDGETS_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE]), n = e === l.M.WIDGETS_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, h = (0, s.bG)([c.default], () => c.default.getId());
     return (0, i.jsx)(u.A, {

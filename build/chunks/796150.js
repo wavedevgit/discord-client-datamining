@@ -21,7 +21,7 @@ var r = n(627968),
     g = n(921854),
     y = n(987281),
     v = n(985018),
-    x = n(365782);
+    x = n(249316);
 let E = new Set([_.X.PROFILE_PANEL, _.X.SUBSCRIPTIONS_PANEL, _.X.FAMILY_CENTER_PANEL, _.X.POGGERMODE_PANEL]);
 
 function A(e) {

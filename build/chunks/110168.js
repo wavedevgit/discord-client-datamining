@@ -1,20 +1,20 @@
 /** chunk id: 110168 params = (module,exports,require) **/
-n.d(t, {
+n.d(e, {
     r: () => l
 });
 var i = n(627968);
 n(64700);
-var r = n(397927),
-    a = n(746350);
+var a = n(397927),
+    s = n(746350);
 
-function l(e) {
+function l(t) {
     let {
-        text: t,
+        text: e,
         id: n
-    } = e;
-    (0, r.showToast)((0, r.createToast)(t, r.ToastType.CUSTOM, {
-        component: (0, i.jsx)(a.M, {
-            text: t
+    } = t;
+    (0, a.showToast)((0, a.createToast)(e, a.ToastType.CUSTOM, {
+        component: (0, i.jsx)(s.M, {
+            text: e
         }, n)
     }))
 }

@@ -10,7 +10,7 @@ var s, o = t(627968),
     n = t(503698),
     a = t.n(n),
     c = t(55731),
-    l = t(368727),
+    l = t(264869),
     d = ((s = {}).SIZE_40 = "SIZE_40", s.SIZE_60 = "SIZE_60", s);
 let p = Object.freeze({
         SIZE_40: "size-40",

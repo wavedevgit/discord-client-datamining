@@ -20,7 +20,7 @@ var i = t(627968),
     A = t(652215),
     x = t(598380),
     E = t(985018),
-    I = t(522978);
+    I = t(113684);
 let R = function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : f.default.locale;
     return `https://${A.XlF}/hc/${e.toLowerCase()}/requests/new?ticket_form_id=360000168511`

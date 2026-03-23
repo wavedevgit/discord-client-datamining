@@ -23,7 +23,7 @@ var i = n(627968),
     E = n(745891),
     y = n(855790),
     v = n(985018),
-    S = n(981208);
+    S = n(803946);
 class C extends s.Component {
     state = {
         showOpacitySlider: !1

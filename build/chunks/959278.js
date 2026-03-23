@@ -42,7 +42,7 @@ var i = n(627968),
     V = n(386467),
     B = n(490358),
     H = n(961973),
-    F = n(917973),
+    F = n(140354),
     Y = n(440293),
     W = n(551036),
     K = n(46533),
@@ -89,7 +89,7 @@ var i = n(627968),
     eD = n(758836),
     eM = n(539916),
     ej = n(613057),
-    ew = n(913022);
+    ew = n(933460);
 let eU = (0, c.Fe)({
         createPromise: () => Promise.resolve().then(n.bind(n, 500831)),
         webpackId: 500831
@@ -332,10 +332,10 @@ function e5() {
         topLevelRoute: !0
     })
 }
-let e2 = e => (0, i.jsx)(S.A, {
+let e3 = e => (0, i.jsx)(S.A, {
         ...e
     }),
-    e3 = () => (0, i.jsx)(es.A, {}),
+    e2 = () => (0, i.jsx)(es.A, {}),
     e4 = () => (0, i.jsx)($.A, {}),
     e8 = () => (0, i.jsx)(J.A, {}),
     te = () => (0, i.jsx)(er.A, {}),
@@ -585,7 +585,7 @@ function ta() {
                                     })
                                 }), (0, i.jsx)(x.A, {
                                     path: eR.BVt.ACTIVITY_DETAILS(":applicationId"),
-                                    render: e2,
+                                    render: e3,
                                     impressionName: d.ImpressionNames.ACTIVITY_DETAILS,
                                     impressionProperties: e => {
                                         let {
@@ -666,7 +666,7 @@ function ta() {
                                 }), (0, i.jsx)(x.A, {
                                     path: eR.BVt.ME,
                                     exact: !0,
-                                    render: e3,
+                                    render: e2,
                                     impressionName: d.ImpressionNames.FRIENDS,
                                     disableTrack: !0
                                 }), c === ei.U5.SIDEBAR && (0, i.jsx)(x.A, {

@@ -23,7 +23,7 @@ var i = n(627968),
 n(445368);
 var C = n(652215),
     E = n(790782),
-    I = n(877066);
+    I = n(626600);
 
 function N() {
     let e = (0, a.bG)([m.default], () => m.default.getCurrentUser());

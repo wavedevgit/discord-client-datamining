@@ -23,7 +23,7 @@ var i = n(627968),
     S = n(219887),
     f = n(652215),
     C = n(985018),
-    b = n(828225);
+    b = n(228851);
 class N extends s.PureComponent {
     static defaultProps = {
         isEditing: !1,

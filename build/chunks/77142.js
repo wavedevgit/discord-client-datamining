@@ -1,5 +1,5 @@
 /** chunk id: 77142 params = (module,exports,require) **/
-e.exports = {
+t.exports = {
     Ui: "cardContainer__8833c",
     Nr: "card__8833c",
     Ux: "cardContent__8833c",

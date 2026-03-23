@@ -21,7 +21,7 @@ var i = n(627968),
     f = n(849077),
     x = n(652215),
     C = n(985018),
-    E = n(823221);
+    E = n(471135);
 let I = {
     [f.Th.MENTION]: [f.kR.SETTINGS],
     [f.Th.REPLY]: [f.kR.SETTINGS],

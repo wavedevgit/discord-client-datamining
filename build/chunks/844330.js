@@ -1,82 +1,83 @@
 /** chunk id: 844330 params = (module,exports,require) **/
-t.d(a, {
+"use strict";
+n.d(t, {
     A: () => c
 });
-var n = t(627968),
-    _ = t(64700),
-    r = t(503698),
-    i = t.n(r),
-    o = t(397927),
-    l = t(147925),
-    s = t(463794);
+var i = n(627968),
+    s = n(64700),
+    r = n(503698),
+    l = n.n(r),
+    a = n(397927),
+    o = n(147925),
+    d = n(314516);
 
 function c(e) {
     let {
-        icon: a,
-        title: t,
+        icon: t,
+        title: n,
         subtitle: r,
         children: c,
-        className: p,
-        isExpanded: d,
-        onExpandedChange: u,
-        defaultExpanded: f = !1,
-        onOpen: x,
+        className: u,
+        isExpanded: h,
+        onExpandedChange: _,
+        defaultExpanded: p = !1,
+        onOpen: g,
         maxHeight: m
-    } = e, [b, g] = _.useState(f), h = _.useRef(null), [C, v] = _.useState(null), I = void 0 !== d, S = I ? d : b;
-    _.useEffect(() => {
-        S && null != h.current && v(h.current.scrollHeight)
-    }, [S, c]);
-    let j = _.useCallback(() => {
-            let e = !S;
-            I || g(e), u?.(e), e && null != x && x()
-        }, [S, I, u, x]),
-        k = _.useMemo(() => {
-            if (S) {
+    } = e, [f, A] = s.useState(p), x = s.useRef(null), [E, I] = s.useState(null), v = void 0 !== h, N = v ? h : f;
+    s.useEffect(() => {
+        N && null != x.current && I(x.current.scrollHeight)
+    }, [N, c]);
+    let j = s.useCallback(() => {
+            let e = !N;
+            v || A(e), _?.(e), e && null != g && g()
+        }, [N, v, _, g]),
+        S = s.useMemo(() => {
+            if (N) {
                 if (null != m) return {
                     maxHeight: "number" == typeof m ? `${m}px` : m
                 };
-                if (null != C) return {
-                    maxHeight: `${C}px`
+                if (null != E) return {
+                    maxHeight: `${E}px`
                 }
             }
-        }, [m, S, C]);
-    return (0, n.jsxs)("div", {
-        className: i()(s.Yt, p, {
-            [s.Sg]: S
+        }, [m, N, E]);
+    return (0, i.jsxs)("div", {
+        className: l()(d.Yt, u, {
+            [d.Sg]: N
         }),
-        children: [(0, n.jsxs)(o.DUT, {
-            className: s.wx,
+        children: [(0, i.jsxs)(a.DUT, {
+            className: d.wx,
             onClick: j,
-            children: [null != a && (0, n.jsx)("div", {
-                className: s.Y5,
-                children: a
-            }), (0, n.jsxs)("div", {
-                className: s.DD,
-                children: [(0, n.jsx)(o.Text, {
+            children: [null != t && (0, i.jsx)("div", {
+                className: d.Y5,
+                children: t
+            }), (0, i.jsxs)("div", {
+                className: d.DD,
+                children: [(0, i.jsx)(a.Text, {
                     variant: "text-sm/medium",
                     color: "text-default",
-                    children: t
-                }), null != r && "" !== r && (0, n.jsx)(o.Text, {
+                    children: n
+                }), null != r && "" !== r && (0, i.jsx)(a.Text, {
                     variant: "text-xs/medium",
                     color: "text-subtle",
                     children: r
                 })]
-            }), (0, n.jsx)("div", {
-                className: i()(s.OW, {
-                    [s.Sg]: S
+            }), (0, i.jsx)("div", {
+                className: l()(d.OW, {
+                    [d.Sg]: N
                 }),
-                children: (0, n.jsx)(l.A, {
+                children: (0, i.jsx)(o.A, {
                     width: 20,
                     height: 20,
-                    direction: l.A.Directions.RIGHT
+                    direction: o.A.Directions.RIGHT
                 })
             })]
-        }), (0, n.jsx)("div", {
-            ref: h,
-            className: i()(s.Qs, {
-                [s.Sg]: S
+        }), (0, i.jsx)("div", {
+            ref: x,
+            className: l()(d.Qs, {
+                [d.Sg]: N
             }),
-            style: k,
+            style: S,
             children: c
         })]
     })

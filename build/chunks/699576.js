@@ -1,53 +1,53 @@
 /** chunk id: 699576 params = (module,exports,require) **/
-n.d(t, {
-    A: () => h
+n.d(e, {
+    A: () => g
 });
 var i = n(627968),
     a = n(64700),
-    r = n(503698),
-    o = n.n(r),
+    o = n(503698),
+    r = n.n(o),
     s = n(311907),
     l = n(287809),
-    c = n(927578),
-    _ = n(202639),
-    d = n(688796),
-    A = n(652215),
+    A = n(927578),
+    c = n(202639),
+    _ = n(688796),
+    d = n(652215),
     u = n(339984),
-    g = n(985018),
-    m = n(946556);
+    L = n(985018),
+    m = n(719154);
 
-function h(e) {
+function g(t) {
     let {
-        uploadType: t,
+        uploadType: e,
         analyticsSource: n,
-        className: r,
-        ...h
-    } = e, L = a.useCallback(() => {
-        (0, d.G)({
-            uploadType: t,
+        className: o,
+        ...g
+    } = t, E = a.useCallback(() => {
+        (0, _.G)({
+            uploadType: e,
             analyticsSource: n
         })
-    }, [t, n]), x = (0, s.bG)([l.default], () => l.default.getCurrentUser()), C = c.Ay.canUseAnimatedAvatar(x), N = a.useMemo(() => {
-        switch (t) {
+    }, [e, n]), N = (0, s.bG)([l.default], () => l.default.getCurrentUser()), R = A.Ay.canUseAnimatedAvatar(N), C = a.useMemo(() => {
+        switch (e) {
             case u.HL.AVATAR:
-                return g.intl.format(g.t["pvw/HH"], {
-                    onClick: L
+                return L.intl.format(L.t["pvw/HH"], {
+                    onClick: E
                 });
             case u.HL.BANNER:
-                return g.intl.format(g.t.aCrz1e, {
-                    onClick: L
+                return L.intl.format(L.t.aCrz1e, {
+                    onClick: E
                 });
             default:
                 return ""
         }
-    }, [t, L]);
-    return t !== u.HL.AVATAR && t !== u.HL.BANNER || t === u.HL.AVATAR && C ? null : (0, i.jsx)(_.d, {
-        text: N,
-        button: g.intl.string(g.t.BmJkbd),
+    }, [e, E]);
+    return e !== u.HL.AVATAR && e !== u.HL.BANNER || e === u.HL.AVATAR && R ? null : (0, i.jsx)(c.d, {
+        text: C,
+        button: L.intl.string(L.t.BmJkbd),
         buttonAnalyticsObject: {
-            section: A.JJy.USER_PROFILE
+            section: d.JJy.USER_PROFILE
         },
-        className: o()(m.k, r),
-        ...h
+        className: r()(m.k, o),
+        ...g
     })
 }

@@ -6,7 +6,7 @@ var t = a(627968),
     o = a(64700),
     n = a(18051),
     i = a(158954),
-    s = a(504514);
+    s = a(922516);
 let r = Object.entries(n).filter(e => {
         let l = e[1];
         return "function" == typeof l && "riveSrc" in l

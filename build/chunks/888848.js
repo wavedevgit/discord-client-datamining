@@ -32,7 +32,7 @@ var i, s = n(627968),
     R = n(861621),
     O = n(652215),
     L = n(985018),
-    D = n(509940),
+    D = n(486526),
     P = ((i = {})[i.LOADING = 0] = "LOADING", i[i.DONE = 1] = "DONE", i[i.ERROR = 2] = "ERROR", i);
 
 function M(e) {

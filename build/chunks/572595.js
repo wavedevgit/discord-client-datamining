@@ -1,47 +1,47 @@
 /** chunk id: 572595 params = (module,exports,require) **/
-n.d(t, {
-    M: () => c,
-    t: () => o
+a.d(t, {
+    M: () => o,
+    t: () => d
 });
-var a = n(627968);
-n(64700);
-var l = n(397927),
-    i = n(4227),
-    r = n(466459);
-let s = "collectibles shop product details modal",
-    o = e => {
+var l = a(627968);
+a(64700);
+var n = a(397927),
+    r = a(4227),
+    s = a(466459);
+let i = "collectibles shop product details modal",
+    d = e => {
         let {
             product: t,
-            category: o,
-            shouldCheckoutWithOrbs: c,
-            analyticsSource: d,
+            category: d,
+            shouldCheckoutWithOrbs: o,
+            analyticsSource: c,
             analyticsLocations: u,
-            returnRef: m,
-            tab: x
+            returnRef: x,
+            tab: h
         } = e;
         if (t.isCategoryReward) {
             let {
                 isPurchased: e
-            } = (0, r.o)(i.A, t);
+            } = (0, s.o)(r.A, t);
             if (!e) return
-        }(0, l.mMO)(async () => {
+        }(0, n.mMO)(async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("14138"), n.e("8555"), n.e("49924"), n.e("28936"), n.e("68859"), n.e("40396"), n.e("13088"), n.e("48330"), n.e("92414"), n.e("94857"), n.e("48840"), n.e("49559"), n.e("42006"), n.e("37372"), n.e("89783"), n.e("99328"), n.e("93612"), n.e("68461")]).then(n.bind(n, 929400));
-            return n => (0, a.jsx)(e, {
-                ...n,
+            } = await Promise.all([a.e("14138"), a.e("8555"), a.e("49924"), a.e("28936"), a.e("68859"), a.e("40396"), a.e("13088"), a.e("48330"), a.e("92414"), a.e("94857"), a.e("48840"), a.e("49559"), a.e("42006"), a.e("37372"), a.e("16783"), a.e("62452"), a.e("93612"), a.e("34219")]).then(a.bind(a, 929400));
+            return a => (0, l.jsx)(e, {
+                ...a,
                 product: t,
-                category: o,
-                shouldCheckoutWithOrbs: c,
-                analyticsSource: d,
+                category: d,
+                shouldCheckoutWithOrbs: o,
+                analyticsSource: c,
                 analyticsLocations: u,
-                returnRef: m,
-                tab: x
+                returnRef: x,
+                tab: h
             })
         }, {
-            modalKey: s
+            modalKey: i
         })
     },
-    c = () => {
-        (0, l.OoC)(s)
+    o = () => {
+        (0, n.OoC)(i)
     }

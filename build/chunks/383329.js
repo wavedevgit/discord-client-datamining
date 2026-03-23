@@ -1,23 +1,22 @@
 /** chunk id: 383329 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    R: () => d
+    R: () => u
 });
 var i = n(64700),
-    a = n(735438),
-    r = n.n(a),
-    l = n(311907),
-    s = n(735321),
-    _ = n(760751),
-    o = n(282435);
+    l = n(735438),
+    a = n.n(l),
+    s = n(311907),
+    r = n(735321),
+    o = n(760751),
+    d = n(282435);
 
 function c(e) {
-    return o.Bf.get(e) ?? 0
+    return d.Bf.get(e) ?? 0
 }
 
-function d() {
-    let e = (0, l.bG)([_.A], () => _.A.games),
-        t = i.useMemo(() => r()(e).filter(e => (0, s.XX)(e)).map(e => ({
+function u() {
+    let e = (0, s.bG)([o.A], () => o.A.games),
+        t = i.useMemo(() => a()(e).filter(e => (0, r.XX)(e)).map(e => ({
             id: e.id,
             value: e.id,
             label: e.name

@@ -8,7 +8,7 @@ var a = n(627968),
     s = n(591764),
     r = n(453675),
     o = n(683110),
-    d = n(959224);
+    d = n(520657);
 
 function c() {
     return (0, a.jsxs)(i.IpV, {

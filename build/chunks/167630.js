@@ -1,46 +1,47 @@
 /** chunk id: 167630 params = (module,exports,require) **/
-t.d(n, {
+"use strict";
+n.d(t, {
     A: () => u
 });
-var i = t(627968),
-    l = t(64700),
-    d = t(397927),
-    r = t(435328),
-    s = t(427080),
-    a = t(515115),
-    c = t(988794),
-    o = t(458242);
+var i = n(627968),
+    s = n(64700),
+    r = n(397927),
+    l = n(435328),
+    a = n(427080),
+    o = n(515115),
+    d = n(988794),
+    c = n(888804);
 
 function u(e) {
     let {
-        guildScheduledEvent: n,
-        channel: t,
+        guildScheduledEvent: t,
+        channel: n,
         onClose: u
-    } = e, _ = n.entity_type === c.Ps.EXTERNAL, g = l.useCallback(e => (0, s.GI)(n, u)(e), [n, u]), f = (0, a.L)(n, t);
-    if (null == f) return null;
+    } = e, h = t.entity_type === d.Ps.EXTERNAL, _ = s.useCallback(e => (0, a.GI)(t, u)(e), [t, u]), p = (0, o.L)(t, n);
+    if (null == p) return null;
     let {
-        IconComponent: h,
-        locationName: x
-    } = f, m = (0, i.jsxs)(i.Fragment, {
-        children: [null != h && (0, i.jsx)(h, {
+        IconComponent: g,
+        locationName: m
+    } = p, f = (0, i.jsxs)(i.Fragment, {
+        children: [null != g && (0, i.jsx)(g, {
             size: "custom",
             color: "currentColor",
             width: 20,
             height: 20,
-            className: o.p
-        }), (0, i.jsx)(d.Text, {
+            className: c.p
+        }), (0, i.jsx)(r.Text, {
             color: "text-default",
             variant: "text-sm/normal",
-            className: o.fN,
-            children: (0, r.l)(x, !0)
+            className: c.fN,
+            children: (0, l.l)(m, !0)
         })]
     });
     return (0, i.jsx)("div", {
-        className: o.nM,
-        children: null != g ? (0, i.jsx)(d.DUT, {
-            className: _ ? o.dC : o.h7,
-            onClick: g,
-            children: m
-        }) : m
+        className: c.nM,
+        children: null != _ ? (0, i.jsx)(r.DUT, {
+            className: h ? c.dC : c.h7,
+            onClick: _,
+            children: f
+        }) : f
     })
 }

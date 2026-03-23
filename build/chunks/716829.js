@@ -25,7 +25,7 @@ let {
     lt: () => l.e("18641").then(l.t.bind(l, 228488, 19)),
     nl: () => l.e("72699").then(l.t.bind(l, 323062, 19)),
     no: () => l.e("55352").then(l.t.bind(l, 760235, 19)),
-    pl: () => l.e("43565").then(l.t.bind(l, 815567, 19)),
+    pl: () => l.e("43565").then(l.t.bind(l, 593186, 19)),
     "pt-BR": () => l.e("84382").then(l.t.bind(l, 489037, 19)),
     ro: () => l.e("21756").then(l.t.bind(l, 66807, 19)),
     ru: () => l.e("52558").then(l.t.bind(l, 602205, 19)),

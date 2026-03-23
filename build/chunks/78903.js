@@ -12,7 +12,7 @@ var r = n(627968),
     d = n(652215),
     p = n(746080),
     C = n(985018),
-    u = n(925532);
+    u = n(442146);
 let x = function(t) {
     let {
         guildId: i,

@@ -24,7 +24,7 @@ var i = n(627968),
     S = n(633817),
     f = n(652215),
     C = n(985018),
-    b = n(812335);
+    b = n(722125);
 let N = [{
         badgeType: m.Xi.NEW,
         dismissibleContent: a.M.WIDGETS_USER_SETTINGS_NEW_BADGE

@@ -1,21 +1,22 @@
 /** chunk id: 662427 params = (module,exports,require) **/
-n.d(t, {
+"use strict";
+n.d(e, {
     A: () => a
 });
 var i = n(311907),
-    l = n(73153);
-let r = [];
-class s extends i.Ay.Store {
+    r = n(73153);
+let s = [];
+class l extends i.Ay.Store {
     static displayName = "CreatorMonetizationMarketingStore";
     getEligibleGuildsForNagActivate() {
-        return r
+        return s
     }
 }
-let a = new s(l.h, {
-    CREATOR_MONETIZATION_NAG_ACTIVATE_ELIGIBLITY_FETCH_SUCCESS: function(e) {
+let a = new l(r.h, {
+    CREATOR_MONETIZATION_NAG_ACTIVATE_ELIGIBLITY_FETCH_SUCCESS: function(t) {
         let {
-            eligibleGuilds: t
-        } = e;
-        r = t
+            eligibleGuilds: e
+        } = t;
+        s = e
     }
 })

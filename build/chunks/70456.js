@@ -1,15 +1,14 @@
 /** chunk id: 70456 params = (module,exports,require) **/
-"use strict";
-n.d(t, {
-    N: () => l
+n.d(e, {
+    N: () => r
 });
-var i = n(353640),
-    s = n(121894);
-let l = (0, i.v)(e => ({
+var l = n(353640),
+    i = n(121894);
+let r = (0, l.v)(t => ({
     canCloseModal: !0,
-    onUpdateCanCloseModal(t) {
-        (0, s.r)(() => e({
-            canCloseModal: t
+    onUpdateCanCloseModal(e) {
+        (0, i.r)(() => t({
+            canCloseModal: e
         }))
     }
 }))

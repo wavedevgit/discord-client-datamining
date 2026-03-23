@@ -13,8 +13,8 @@ var a = n(627968),
     d = n(409626),
     u = n(37948),
     m = n(985018),
-    x = n(728528),
-    _ = n(612617);
+    x = n(851822),
+    _ = n(307291);
 let g = [s.V.OFFICIAL, s.V.TWITTER, s.V.YOUTUBE],
     f = {
         colorClass: _.wP

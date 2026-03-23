@@ -1,35 +1,35 @@
 /** chunk id: 721127 params = (module,exports,require) **/
-n.d(t, {
-    A: () => c
+n.d(e, {
+    A: () => A
 });
 var i = n(627968);
 n(64700);
 var a = n(503698),
-    r = n.n(a),
-    o = n(397927),
+    o = n.n(a),
+    r = n(397927),
     s = n(404374),
-    l = n(615673);
+    l = n(468099);
 
-function c(e) {
+function A(t) {
     let {
-        text: t,
+        text: e,
         className: n,
         button: a,
-        reducedRightPadding: c = !1
-    } = e;
+        reducedRightPadding: A = !1
+    } = t;
     return (0, i.jsxs)("div", {
-        className: r()(c ? l.wp : l.Ug, n),
+        className: o()(A ? l.wp : l.Ug, n),
         children: [(0, i.jsxs)("div", {
             className: l.g9,
-            children: [(0, i.jsx)(o.tvc, {
+            children: [(0, i.jsx)(r.tvc, {
                 size: "md",
                 className: l.Kk,
                 color: s.k0.PREMIUM_TIER_2
-            }), (0, i.jsx)(o.Text, {
+            }), (0, i.jsx)(r.Text, {
                 className: l.Qq,
                 variant: "text-md/normal",
                 color: "text-strong",
-                children: t
+                children: e
             })]
         }), a]
     })

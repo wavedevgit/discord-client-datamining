@@ -29,7 +29,7 @@ var i = n(627968),
     T = n(855446),
     v = n(652215),
     y = n(985018),
-    j = n(789445);
+    j = n(176187);
 let R = r.K.APP_LAUNCHER_IN_VOICE_BANNER,
     O = `vc-activities-${(0,l.A)()}`;
 

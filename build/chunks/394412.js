@@ -18,7 +18,7 @@ var s = n(311907),
     m = n(974930),
     _ = n(47868),
     p = n(985018),
-    g = n(416824);
+    g = n(242182);
 
 function f(e) {
     let {
@@ -46,7 +46,7 @@ function f(e) {
                 I(e) ? (0, a.mMO)(async () => {
                     let {
                         default: t
-                    } = await Promise.all([n.e("51354"), n.e("77223"), n.e("26625")]).then(n.bind(n, 199226));
+                    } = await Promise.all([n.e("51354"), n.e("77223"), n.e("24531")]).then(n.bind(n, 199226));
                     return n => (0, i.jsx)(t, {
                         ...n,
                         event: e

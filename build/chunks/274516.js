@@ -1,5 +1,5 @@
 /** chunk id: 274516 params = (module,exports,require) **/
-var l = {
+var a = {
     "./2017-11-16.mp4": "394734",
     "./channel-following.png": "611418",
     "./discovery.jpg": "59383",
@@ -10,17 +10,17 @@ var l = {
     "./store.jpg": "191686"
 };
 
-function s(e) {
-    return n(i(e))
+function n(e) {
+    return l(r(e))
 }
 
-function i(e) {
-    if (!n.o(l, e)) {
+function r(e) {
+    if (!l.o(a, e)) {
         var t = Error("Cannot find module '" + e + "'");
         throw t.code = "MODULE_NOT_FOUND", t
     }
-    return l[e]
+    return a[e]
 }
-s.keys = function() {
-    return Object.keys(l)
-}, s.resolve = i, e.exports = s, s.id = 274516
+n.keys = function() {
+    return Object.keys(a)
+}, n.resolve = r, e.exports = n, n.id = 274516

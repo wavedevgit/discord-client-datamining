@@ -6,8 +6,8 @@ var i = n(627968),
     s = n(64700),
     l = n(503698),
     a = n.n(l),
-    r = n(597833),
-    o = n(913953);
+    r = n(112303),
+    o = n(50567);
 let d = {
         VERTICAL: r.yG,
         HORIZONTAL: r.OZ,

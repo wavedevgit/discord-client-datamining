@@ -17,10 +17,10 @@ var i = n(627968),
     A = n(859241),
     x = n(295405),
     h = n(166403),
-    p = n(875564),
+    p = n(653183),
     T = n(843838),
     E = n(652215),
-    S = n(199869);
+    S = n(417711);
 
 function f() {
     let e = (0, g.j)("UserSettingsPremiumGuildSubscriptions");

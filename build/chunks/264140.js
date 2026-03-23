@@ -120,7 +120,7 @@ var f = n(483270),
     e8 = n(957173),
     e4 = n(516607),
     te = n(985018),
-    tt = n(370808);
+    tt = n(638990);
 let tn = (0, P.Fe)({
     createPromise: () => n.e("46875").then(n.bind(n, 625846)),
     webpackId: 625846,
@@ -223,7 +223,7 @@ class ti extends s.PureComponent {
         o()(null != s, "Missing user in Channel.openDMContextMenu"), (0, g.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("49783")]).then(n.bind(n, 385913));
+            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("38389")]).then(n.bind(n, 385913));
             return n => (0, i.jsx)(e, {
                 ...n,
                 user: s,

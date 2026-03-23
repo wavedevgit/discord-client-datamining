@@ -21,8 +21,8 @@ var a = n(627968),
     v = n(263834),
     b = n(865116),
     j = n(716371),
-    A = n(512126),
-    C = n(930821);
+    A = n(701940),
+    C = n(661251);
 
 function y() {
     let e = (0, d.yK)([f.default], () => f.default.getSortedChannels()[1]),

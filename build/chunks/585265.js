@@ -1,63 +1,63 @@
 /** chunk id: 585265 params = (module,exports,require) **/
-s.d(t, {
-    default: () => x
+e.d(t, {
+    default: () => p
 });
-var e = s(627968);
-s(64700);
-var n = s(158954),
-    r = s(397927),
-    l = s(772538),
-    d = s(61610),
-    a = s(751461),
-    o = s(638324),
-    c = s(505653),
-    u = s(355097),
-    A = s(985018);
+var s = e(627968);
+e(64700);
+var r = e(158954),
+    n = e(397927),
+    a = e(772538),
+    d = e(61610),
+    l = e(751461),
+    o = e(638324),
+    c = e(505653),
+    u = e(355097),
+    _ = e(985018);
 
-function R(i) {
+function f(i) {
     let {
         guildId: t
     } = i;
-    return (0, e.jsxs)(c.A, {
-        children: [(0, e.jsx)(a.A, {
+    return (0, s.jsxs)(c.A, {
+        children: [(0, s.jsx)(l.A, {
             ingress: u.bf.SERVER_PRIVACY_MODAL,
             guildId: t
-        }), (0, e.jsx)(o.A, {
+        }), (0, s.jsx)(o.A, {
             ingress: u.bf.SERVER_PRIVACY_MODAL,
             guildId: t
-        }), (0, e.jsx)(d.A, {
+        }), (0, s.jsx)(d.A, {
             ingress: u.bf.SERVER_PRIVACY_MODAL,
             guildId: t
-        }), (0, e.jsx)(l.A, {
+        }), (0, s.jsx)(a.A, {
             ingress: u.bf.SERVER_PRIVACY_MODAL,
             guildId: t
-        }), (0, e.jsx)(r.Text, {
+        }), (0, s.jsx)(n.Text, {
             color: "text-default",
             variant: "text-sm/normal",
-            children: A.intl.format(A.t.LNsV04, {
+            children: _.intl.format(_.t.LNsV04, {
                 policyLink: "https://discord.com/safety/360043709612-our-policies"
             })
         })]
     })
 }
 
-function x(i) {
+function p(i) {
     let {
         guild: t,
-        transitionState: s,
-        onClose: r
-    } = i, l = `${A.intl.string(A.t.BayiAo)}—${null!=t?t.name:"??"}`;
-    return (0, e.jsx)(n.Modal, {
-        transitionState: s,
+        transitionState: e,
+        onClose: n
+    } = i, a = `${_.intl.string(_.t.BayiAo)}—${null!=t?t.name:"??"}`;
+    return (0, s.jsx)(r.Modal, {
+        transitionState: e,
         size: "sm",
-        title: l,
+        title: a,
         actions: [{
-            onClick: () => r(),
+            onClick: () => n(),
             variant: "primary",
-            text: A.intl.string(A.t.i4jeWR)
+            text: _.intl.string(_.t.i4jeWR)
         }],
-        onClose: () => Promise.resolve(r()),
-        children: (0, e.jsx)(R, {
+        onClose: () => Promise.resolve(n()),
+        children: (0, s.jsx)(f, {
             guildId: t.id
         })
     })

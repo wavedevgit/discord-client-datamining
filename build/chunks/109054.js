@@ -1,10 +1,10 @@
 /** chunk id: 109054 params = (module,exports,require) **/
-a.d(t, {
+n.d(t, {
     A: () => r
 });
-var n = a(455207),
-    l = a(943667);
+var l = n(455207),
+    a = n(943667);
 
 function r(e) {
-    return !((0, n.MZ)(e) || (0, l.A)(e) && e.messageReference?.guild_id != null) && (null == e.interaction || "SENDING" !== e.state)
+    return !((0, l.MZ)(e) || (0, a.A)(e) && e.messageReference?.guild_id != null) && (null == e.interaction || "SENDING" !== e.state)
 }

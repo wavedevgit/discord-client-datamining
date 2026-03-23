@@ -6,7 +6,7 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(763793),
-    a = n(434479);
+    a = n(532485);
 let r = s.memo(function(e) {
     let {
         channel: t,

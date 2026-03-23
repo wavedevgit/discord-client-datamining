@@ -97,7 +97,7 @@ class O extends s.A {
                 i = await (0, l.mMO)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("86746"), n.e("68718")]).then(n.bind(n, 218318));
+                    } = await Promise.all([n.e("86746"), n.e("81890")]).then(n.bind(n, 218318));
                     return n => (0, a.jsx)(e, {
                         ...n,
                         onSlideChange: t

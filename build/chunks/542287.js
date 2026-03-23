@@ -9,7 +9,7 @@ var r = n(990078),
     l = n(235986),
     s = n(455207),
     o = n(985018),
-    d = n(913409);
+    d = n(485135);
 let c = () => (0, i.jsxs)(l.A, {
     align: l.A.Align.CENTER,
     justify: l.A.Justify.CENTER,

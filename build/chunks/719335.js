@@ -1,57 +1,57 @@
 /** chunk id: 719335 params = (module,exports,require) **/
-n.d(t, {
-    A: () => C
+n.d(e, {
+    A: () => R
 });
 var i = n(627968),
     a = n(64700),
-    r = n(311907),
-    o = n(421380),
+    o = n(311907),
+    r = n(421380),
     s = n(793574),
     l = n(688810),
-    c = n(465794),
-    _ = n(721127),
-    d = n(287809),
-    A = n(954571),
+    A = n(465794),
+    c = n(721127),
+    _ = n(287809),
+    d = n(954571),
     u = n(927578),
-    g = n(652215),
+    L = n(652215),
     m = n(339984),
-    h = n(788868),
-    L = n(985018),
-    x = n(731785);
+    g = n(788868),
+    E = n(985018),
+    N = n(560207);
 
-function C(e) {
+function R(t) {
     let {
-        analyticsSection: t,
+        analyticsSection: e,
         type: n
-    } = e, C = (0, r.bG)([d.default], () => d.default.getCurrentUser()), N = u.Ay.canUseAnimatedAvatar(C), f = u.Ay.canUsePremiumProfileCustomization(C), R = n === m.HL.BANNER && f || n === m.HL.AVATAR && N, {
-        sourceAnalyticsLocations: p
+    } = t, R = (0, o.bG)([_.default], () => _.default.getCurrentUser()), C = u.Ay.canUseAnimatedAvatar(R), f = u.Ay.canUsePremiumProfileCustomization(R), x = n === m.HL.BANNER && f || n === m.HL.AVATAR && C, {
+        sourceAnalyticsLocations: v
     } = (0, l.Ay)(s.A.PREMIUM_PREVIEW_UPSELL_HEADER);
     if (a.useEffect(() => {
-            R || A.default.track(g.HAw.PREMIUM_UPSELL_VIEWED, {
-                type: t,
-                location_stack: p
+            x || d.default.track(L.HAw.PREMIUM_UPSELL_VIEWED, {
+                type: e,
+                location_stack: v
             })
-        }, [R, t, p]), R) return null;
-    let E = (0, i.jsx)(c.A, {
-        className: x.__invalid_getNitroLink,
-        size: o.$n.Sizes.SMALL,
-        look: o.$n.Looks.LINK,
-        color: o.$n.Colors.LINK,
-        subscriptionTier: h.pe.TIER_2,
+        }, [x, e, v]), x) return null;
+    let p = (0, i.jsx)(A.A, {
+        className: N.__invalid_getNitroLink,
+        size: r.$n.Sizes.SMALL,
+        look: r.$n.Looks.LINK,
+        color: r.$n.Colors.LINK,
+        subscriptionTier: g.pe.TIER_2,
         textOptions: {
-            textOverride: L.intl.format(L.t["944tDv"], {})
+            textOverride: E.intl.format(E.t["944tDv"], {})
         },
         showIcon: !1,
         premiumModalAnalyticsLocation: {
-            section: t,
-            object: g.ZSU.BUTTON_CTA
+            section: e,
+            object: L.ZSU.BUTTON_CTA
         },
         disableShine: !0
     });
-    return (0, i.jsx)(_.A, {
+    return (0, i.jsx)(c.A, {
         reducedRightPadding: !0,
-        className: x.C,
-        text: L.intl.format(L.t.Og803x, {}),
-        button: E
+        className: N.C,
+        text: E.intl.format(E.t.Og803x, {}),
+        button: p
     })
 }

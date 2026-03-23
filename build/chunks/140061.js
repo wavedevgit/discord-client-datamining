@@ -1,8 +1,8 @@
 /** chunk id: 140061 params = (module,exports,require) **/
 var i = n(311907),
     a = n(506774),
-    r = n(451988),
-    l = n(73153),
+    l = n(451988),
+    r = n(73153),
     s = n(308368),
     o = n(973522),
     d = n(15285),
@@ -34,14 +34,14 @@ function v(e) {
         n = Date.now(),
         i = null != e.updatedAt ? n - e.updatedAt : 0;
     i > f + C && (i = 0);
-    let l = (0, A.kv)(e.applicationId, m.A),
+    let r = (0, A.kv)(e.applicationId, m.A),
         o = p.A.getVoiceChannelId(),
         d = h.default.getSessionId(),
         c = g.A.getMediaSessionId();
     s.A.updateActivity({
         applicationId: e.applicationId,
         distributor: e.isDiscordApplication ? E.d3x.DISCORD : e.distributor,
-        shareActivity: l,
+        shareActivity: r,
         token: e.token,
         duration: Math.floor(i / 1e3),
         closed: t,
@@ -51,7 +51,7 @@ function v(e) {
         mediaSessionId: c
     }), e.updatedAt = n;
     let u = N[e.applicationId];
-    null == u && (u = N[e.applicationId] = new r.IX).start(f, () => v(e)), t || (T[e.applicationId] = e, a.w.set(I, T))
+    null == u && (u = N[e.applicationId] = new l.IX).start(f, () => v(e)), t || (T[e.applicationId] = e, a.w.set(I, T))
 }
 
 function y() {
@@ -83,7 +83,7 @@ class O extends i.Ay.Store {
         return T
     }
 }
-new O(l.h, {
+new O(r.h, {
     RUNNING_GAMES_CHANGE: () => y(),
     CONNECTION_OPEN: function() {
         if (S) return !1;

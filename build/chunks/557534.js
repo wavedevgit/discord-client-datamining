@@ -29,7 +29,7 @@ var i = n(627968),
     I = n(343360),
     N = n(652215),
     b = n(985018),
-    S = n(719550);
+    S = n(728444);
 
 function T(e, t, n) {
     return null != t && !!t && !(0, I.ws)(n, e.type)
@@ -101,7 +101,7 @@ function j(e) {
                     (0, c.mMO)(async () => {
                         let {
                             default: s
-                        } = await Promise.all([n.e("43600"), n.e("75329")]).then(n.bind(n, 234355));
+                        } = await Promise.all([n.e("43600"), n.e("52537")]).then(n.bind(n, 234355));
                         return n => (0, i.jsx)(s, {
                             ...n,
                             guild: E,

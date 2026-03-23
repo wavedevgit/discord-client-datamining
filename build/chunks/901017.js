@@ -1,31 +1,31 @@
 /** chunk id: 901017 params = (module,exports,require) **/
-t.d(n, {
-    A: () => a
+s.d(n, {
+    A: () => c
 });
-var l = t(627968);
-t(64700);
-var i = t(503698),
-    r = t.n(i),
-    s = t(817479);
+var i = s(627968);
+s(64700);
+var r = s(503698),
+    t = s.n(r),
+    l = s(597145);
 
-function a(e) {
+function c(e) {
     let {
         icon: n,
-        iconClassName: t,
-        description: i,
-        color: a
+        iconClassName: s,
+        description: r,
+        color: c
     } = e;
-    return (0, l.jsxs)("div", {
-        className: s.bK,
-        children: [(0, l.jsx)("div", {
-            className: s.f8,
-            children: (0, l.jsx)(n, {
-                color: a ?? "currentColor",
-                className: r()(s.kf, t)
+    return (0, i.jsxs)("div", {
+        className: l.bK,
+        children: [(0, i.jsx)("div", {
+            className: l.f8,
+            children: (0, i.jsx)(n, {
+                color: c ?? "currentColor",
+                className: t()(l.kf, s)
             })
-        }), (0, l.jsx)("div", {
-            className: s.jV,
-            children: i
+        }), (0, i.jsx)("div", {
+            className: l.jV,
+            children: r
         })]
     })
 }

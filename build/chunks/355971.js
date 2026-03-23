@@ -1,42 +1,42 @@
 /** chunk id: 355971 params = (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => _
 });
-var r = n(627968);
+var l = n(627968);
 n(64700);
 var a = n(317097),
-    o = n(311907),
-    _ = n(827734),
-    i = n(990078),
+    r = n(311907),
+    i = n(827734),
+    s = n(990078),
     d = n(397927),
-    l = n(775602),
+    o = n(775602),
     c = n(496885),
-    s = n(985018);
+    u = n(985018);
 
-function u(e) {
+function _(e) {
     let t, {
             color: n,
-            size: u,
-            forcedIconColor: f,
-            className: b,
+            size: _,
+            forcedIconColor: m,
+            className: x,
             iconClassName: p,
-            tooltipText: m
+            tooltipText: h
         } = e,
-        [C, h] = (0, o.yK)([l.A], () => [l.A.desaturateUserColors, l.A.saturation]),
-        g = (0, d.rdh)(_.A.unsafe_rawColors.PRIMARY_300).hex(),
-        x = (0, a.LX)(n ?? g),
-        y = (0, a.$k)(x, !1, C ? h : null);
-    return t = null != f ? f : .3 > (0, a.OK)(x) ? _.A.unsafe_rawColors.PRIMARY_630.css : _.A.unsafe_rawColors.WHITE.css, (0, r.jsx)(i.m, {
-        text: null != m ? m : s.intl.string(s.t.T3PvV4),
-        children: (0, r.jsx)(c.A, {
-            className: b,
-            color: y,
-            size: u,
-            children: (0, r.jsx)(d.Uzd, {
+        [g, A] = (0, r.yK)([o.A], () => [o.A.desaturateUserColors, o.A.saturation]),
+        v = (0, d.rdh)(i.A.unsafe_rawColors.PRIMARY_300).hex(),
+        f = (0, a.LX)(n ?? v),
+        b = (0, a.$k)(f, !1, g ? A : null);
+    return t = null != m ? m : .3 > (0, a.OK)(f) ? i.A.unsafe_rawColors.PRIMARY_630.css : i.A.unsafe_rawColors.WHITE.css, (0, l.jsx)(s.m, {
+        text: null != h ? h : u.intl.string(u.t.T3PvV4),
+        children: (0, l.jsx)(c.A, {
+            className: x,
+            color: b,
+            size: _,
+            children: (0, l.jsx)(d.Uzd, {
                 size: "custom",
                 color: t,
-                height: u,
-                width: u,
+                height: _,
+                width: _,
                 className: p
             })
         })

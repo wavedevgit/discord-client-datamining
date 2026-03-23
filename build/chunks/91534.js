@@ -21,7 +21,7 @@ var i = n(627968),
     A = n(652215);
 n(823894);
 var f = n(985018),
-    j = n(731566);
+    j = n(729168);
 let N = {
         page: A.liQ.GUILD_SETTINGS,
         section: A.JJy.GUILD_SETTINGS_STICKERS,
