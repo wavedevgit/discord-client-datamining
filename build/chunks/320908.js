@@ -1,6 +1,6 @@
 /** chunk id: 320908 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => I
+    Ay: () => v
 });
 var i = n(627968),
     s = n(64700),
@@ -18,11 +18,11 @@ var i = n(627968),
     x = n(89366),
     p = n(194509),
     h = n(396375),
-    T = n(224850),
-    E = n(552554),
-    f = n(985018),
+    f = n(224850),
+    T = n(552554),
+    E = n(985018),
     S = n(986970);
-let C = e => {
+let b = e => {
         let {
             inOfferExperience: t,
             subscriptionTier: n,
@@ -56,7 +56,7 @@ let C = e => {
             children: [u, " ", m]
         })
     },
-    b = () => (0, i.jsxs)(i.Fragment, {
+    C = () => (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(m.p, {
             className: S.zd
         }), (0, i.jsx)(m.p, {
@@ -73,7 +73,7 @@ function N(e) {
         variant: t = "text-lg/normal",
         withBottomMargin: n = !0,
         isApplicationHome: s
-    } = e, l = (0, E.N)();
+    } = e, l = (0, T.N)();
     return (0, i.jsx)(d.Text, {
         variant: t,
         color: s ? "text-subtle" : "always-white",
@@ -81,12 +81,12 @@ function N(e) {
             [S.If]: n,
             [S.jn]: s
         }),
-        children: f.intl.format(f.t.kt9wxs, {
+        children: E.intl.format(E.t.kt9wxs, {
             cheapestMonthlyPrice: l
         })
     })
 }
-let I = s.forwardRef((e, t) => {
+let v = s.forwardRef((e, t) => {
     let {
         className: n,
         buttonClassName: s,
@@ -94,44 +94,44 @@ let I = s.forwardRef((e, t) => {
         isDarkMode: m
     } = e, {
         analyticsLocations: h
-    } = (0, u.Ay)(c.A.PREMIUM_MARKETING_HERO_CTA), E = (0, x.QQ)(), I = (0, A.ar)(), v = (0, g.cg)(), j = (0, r.bG)([_.A], () => _.A.affinities).length > 0, y = f.intl.string(f.t.YCZldK);
+    } = (0, u.Ay)(c.A.PREMIUM_MARKETING_HERO_CTA), T = (0, x.QQ)(), v = (0, A.ar)(), I = (0, g.cg)(), j = (0, r.bG)([_.A], () => _.A.affinities).length > 0, y = E.intl.string(E.t.YCZldK);
     return (0, i.jsx)(u.f5, {
         value: h,
         children: (0, i.jsxs)("div", {
             ref: t,
             className: a()(S.kL, n, {
-                [S.V1]: !I,
-                [S.Q4]: !I && j
+                [S.V1]: !v,
+                [S.Q4]: !v && j
             }),
             "data-testid": "v2-marketing-page-hero-header",
             children: [(0, i.jsxs)("div", {
-                className: I ? S.I6 : S.G1,
+                className: v ? S.I6 : S.G1,
                 children: [(0, i.jsx)(d.Heading, {
-                    variant: I ? "display-lg" : "display-md",
+                    variant: v ? "display-lg" : "display-md",
                     color: "always-white",
                     children: y
                 }), j ? (0, i.jsx)("div", {
                     className: S.DF,
-                    children: (0, i.jsx)(T.A, {
+                    children: (0, i.jsx)(f.A, {
                         textColor: "always-white",
-                        smallerText: !I
+                        smallerText: !v
                     })
-                }) : (0, i.jsx)(N, {}), v || E ? (0, i.jsx)("div", {
+                }) : (0, i.jsx)(N, {}), I || T ? (0, i.jsx)("div", {
                     className: S.UD,
                     children: (0, i.jsx)(p.A, {
                         className: a()(S.x6, s),
                         color: o.XD.WHITE
                     })
-                }) : (0, i.jsx)(C, {
+                }) : (0, i.jsx)(b, {
                     subscriptionTier: l,
-                    inOfferExperience: I,
+                    inOfferExperience: v,
                     buttonClassName: s,
                     isDarkMode: m
                 }), j && (0, i.jsx)(N, {
                     variant: "text-md/normal",
                     withBottomMargin: !1
                 })]
-            }), !I && (0, i.jsx)(b, {})]
+            }), !v && (0, i.jsx)(C, {})]
         })
     })
 })

@@ -23,10 +23,10 @@ var a = n(627968),
     j = n(546183),
     A = n(134861),
     C = n(157257),
-    y = n(985018),
-    T = n(271469),
+    T = n(985018),
+    E = n(271469),
     S = n(661251),
-    E = n(508474);
+    y = n(508474);
 let N = [{
     id: "unset",
     label: "Unset",
@@ -52,20 +52,20 @@ function I() {
             analyticsLocations: o
         } = (0, m.Ay)(u.A.DEV_TOOLS),
         I = b.TA.useSetting(),
-        [k, O] = i.useState(""),
-        R = (0, r.bG)([f.Ay, C.A], () => (0, v.A)(f.Ay, C.A)),
-        w = (0, _.h)(k),
+        [O, R] = i.useState(""),
+        k = (0, r.bG)([f.Ay, C.A], () => (0, v.A)(f.Ay, C.A)),
+        w = (0, _.h)(O),
         D = (0, h.g)(w),
         M = (0, r.yK)([g.A], () => w?.linkedGames?.map(e => g.A.getApplication(e.id)).filter(e => null != e) ?? []),
         P = (0, x.RD)(w, {
             allowedFlows: [x._M.RPC],
             debug: !0
         }),
-        U = (0, x.RD)(w, {
+        L = (0, x.RD)(w, {
             allowedFlows: [x._M.WEB],
             debug: !0
         }),
-        L = (0, r.bG)([A.A], () => null != D && A.A.isConnected(D.id)),
+        U = (0, r.bG)([A.A], () => null != D && A.A.isConnected(D.id)),
         B = (0, x.RD)(w, {
             debug: !0
         }),
@@ -80,9 +80,9 @@ function I() {
         });
     return (0, a.jsxs)("div", {
         ref: s,
-        className: l()(S.nd, E.n),
+        className: l()(S.nd, y.n),
         children: [(0, a.jsxs)("div", {
-            className: E.k,
+            className: y.k,
             children: [(0, a.jsx)(d.Heading, {
                 variant: "heading-lg/normal",
                 children: "Settings"
@@ -95,18 +95,18 @@ function I() {
                 fullWidth: !0
             })]
         }), (0, a.jsxs)("div", {
-            className: E.k,
+            className: y.k,
             children: [(0, a.jsx)(d.Heading, {
                 variant: "heading-lg/normal",
                 children: "Application"
             }), (0, a.jsx)(d.ksK, {
                 label: "Application ID",
-                value: k,
-                onChange: O
-            }), null != R && null != R.id ? (0, a.jsx)(d.Button, {
-                onClick: () => O(R.id),
+                value: O,
+                onChange: R
+            }), null != k && null != k.id ? (0, a.jsx)(d.Button, {
+                onClick: () => R(k.id),
                 variant: "primary",
-                text: `Use detected game: ${R.name} (${R.id})`
+                text: `Use detected game: ${k.name} (${k.id})`
             }) : null, (0, a.jsxs)(d.Text, {
                 variant: "text-md/normal",
                 children: ["Application Name: ", null != w ? w.name : "N/A"]
@@ -115,46 +115,46 @@ function I() {
                 children: ["Linked Games:", " ", M.length > 0 ? M.map(e => (0, h.t)(w)?.id === e.id ? `${e.name}*` : e.name).join(", ") : "N/A"]
             })]
         }), (0, a.jsxs)("div", {
-            className: E.k,
+            className: y.k,
             children: [(0, a.jsx)(d.Heading, {
                 variant: "heading-lg/normal",
                 children: "Authorization"
             }), (0, a.jsx)(p.VT, {
-                overallStatus: P.debug.isSubscribedToAuthorizeRequest ? p.nW.OVERALL_GOOD : L ? p.nW.WARN : p.nW.OVERALL_BAD,
-                name: y.intl.string(T.default.AGLx00),
+                overallStatus: P.debug.isSubscribedToAuthorizeRequest ? p.nW.OVERALL_GOOD : U ? p.nW.WARN : p.nW.OVERALL_BAD,
+                name: T.intl.string(E.default.AGLx00),
                 steps: [{
-                    status: L ? p.nW.GOOD : p.nW.BAD,
-                    text: y.intl.string(T.default.kxF9br),
-                    description: L ? null : y.intl.string(T.default.PFxxJa),
-                    learnMoreLink: L ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
+                    status: U ? p.nW.GOOD : p.nW.BAD,
+                    text: T.intl.string(E.default.kxF9br),
+                    description: U ? null : T.intl.string(E.default.PFxxJa),
+                    learnMoreLink: U ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
                 }, {
-                    status: P.debug.isSubscribedToAuthorizeRequest ? p.nW.GOOD : L ? p.nW.WARN : p.nW.BAD,
-                    text: y.intl.string(T.default.S94dzs),
-                    description: P.debug.isSubscribedToAuthorizeRequest || !L ? null : y.intl.string(T.default.aTULMB),
-                    learnMoreLink: P.debug.isSubscribedToAuthorizeRequest || !L ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
+                    status: P.debug.isSubscribedToAuthorizeRequest ? p.nW.GOOD : U ? p.nW.WARN : p.nW.BAD,
+                    text: T.intl.string(E.default.S94dzs),
+                    description: P.debug.isSubscribedToAuthorizeRequest || !U ? null : T.intl.string(E.default.aTULMB),
+                    learnMoreLink: P.debug.isSubscribedToAuthorizeRequest || !U ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
                 }],
                 isChosen: B.chosenFlow === x._M.RPC
             }), (0, a.jsx)(p.VT, {
-                overallStatus: U.debug.hasConnectionEntrypointUrl ? p.nW.OVERALL_GOOD : p.nW.OVERALL_BAD,
-                name: y.intl.string(T.default.K3ObrU),
+                overallStatus: L.debug.hasConnectionEntrypointUrl ? p.nW.OVERALL_GOOD : p.nW.OVERALL_BAD,
+                name: T.intl.string(E.default.K3ObrU),
                 steps: [{
-                    status: U.debug.hasConnectionEntrypointUrl ? p.nW.GOOD : p.nW.BAD,
-                    text: y.intl.string(T.default["8a7IrV"]),
-                    description: U.debug.hasConnectionEntrypointUrl ? y.intl.formatToPlainString(T.default["9iLeL2"], {
-                        url: U.connectionApp?.connectionEntrypointUrl
+                    status: L.debug.hasConnectionEntrypointUrl ? p.nW.GOOD : p.nW.BAD,
+                    text: T.intl.string(E.default["8a7IrV"]),
+                    description: L.debug.hasConnectionEntrypointUrl ? T.intl.formatToPlainString(E.default["9iLeL2"], {
+                        url: L.connectionApp?.connectionEntrypointUrl
                     }) : null
                 }],
                 isChosen: B.chosenFlow === x._M.WEB
             }), (0, a.jsx)(p.Sy, {
                 status: B.hasAlreadyLinked ? p.nW.OVERALL_GOOD : p.nW.OVERALL_BAD,
-                text: y.intl.string(y.t["Vu/zmQ"])
+                text: T.intl.string(T.t["Vu/zmQ"])
             }), 0 === B.debug.validFlows.length && (0, a.jsx)(d.Text, {
                 style: {
                     minWidth: 0,
                     overflow: "hidden"
                 },
                 variant: "text-md/medium",
-                children: y.intl.string(T.default.eg0mNa)
+                children: T.intl.string(E.default.eg0mNa)
             }), (0, a.jsx)(d.Button, {
                 disabled: !B.canStartAuthorization,
                 onClick: () => B.startAuthorization({
@@ -174,8 +174,8 @@ function I() {
                 variant: "secondary",
                 text: "Start In-App Authorization"
             }), (0, a.jsx)(d.Button, {
-                disabled: !U.canStartAuthorization,
-                onClick: () => U.startAuthorization({
+                disabled: !L.canStartAuthorization,
+                onClick: () => L.startAuthorization({
                     analyticsLocations: o
                 }),
                 variant: "secondary",

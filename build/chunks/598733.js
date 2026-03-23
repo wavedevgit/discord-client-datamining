@@ -1,46 +1,45 @@
 /** chunk id: 598733 params = (module,exports,require) **/
-"use strict";
-n.d(e, {
-    A: () => R
+n.d(t, {
+    A: () => m
 });
 var i = n(627968),
-    r = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    l = n(64700),
+    r = n(503698),
+    s = n.n(r),
     a = n(311907),
     o = n(421380),
     c = n(397927),
     u = n(686956),
     d = n(976860),
-    E = n(71393),
-    _ = n(967198),
+    _ = n(71393),
+    E = n(967198),
     T = n(449054),
     A = n(652215),
     I = n(985018),
     N = n(163677),
     p = n(1624);
-let R = 21552 == n.j ? () => {
-    let t = (0, a.bG)([_.A], () => _.A.getGuildId(), []),
-        e = (0, a.bG)([E.A], () => E.A.getGuild(t), [t]),
-        [n, s] = r.useState(!1);
-    if (null == e) return null;
-    let R = async () => {
-        s(!0);
+let m = () => {
+    let e = (0, a.bG)([E.A], () => E.A.getGuildId(), []),
+        t = (0, a.bG)([_.A], () => _.A.getGuild(e), [e]),
+        [n, r] = l.useState(!1);
+    if (null == t) return null;
+    let m = async () => {
+        r(!0);
         try {
-            T.cf(e.id), await u.A.joinGuild(e.id, {
+            T.cf(t.id), await u.A.joinGuild(t.id, {
                 source: A.Q4z.NOTICE_BAR
             })
         } catch {
-            s(!1)
+            r(!1)
         }
     };
     return (0, i.jsxs)("div", {
-        className: l()(N.lm, p.lm),
+        className: s()(N.lm, p.lm),
         children: [(0, i.jsxs)(o.$n, {
             look: o.$n.Looks.OUTLINED,
             color: o.$n.Colors.WHITE,
             size: o.$n.Sizes.NONE,
-            className: l()(N.x6, N.aX),
+            className: s()(N.x6, N.aX),
             innerClassName: N.gb,
             onClick: () => {
                 (0, d.JK)().goBack()
@@ -60,10 +59,10 @@ let R = 21552 == n.j ? () => {
             color: o.$n.Colors.WHITE,
             size: o.$n.Sizes.NONE,
             submitting: n,
-            onClick: R,
+            onClick: m,
             children: I.intl.format(I.t.uHN7ny, {
-                guild: e.name
+                guild: t.name
             })
         })]
     })
-} : null
+}

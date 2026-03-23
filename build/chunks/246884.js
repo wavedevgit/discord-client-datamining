@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(728321),
     A = n(260509),
     m = n(71393),
-    p = n(287809),
-    _ = n(531053),
+    _ = n(287809),
+    p = n(531053),
     g = n(606256),
     f = n(652215),
     x = n(819638),
@@ -50,7 +50,7 @@ function b(e) {
     let {
         disableTooltip: t,
         lastTargetNode: n
-    } = e, r = (0, l.yK)([m.A], () => m.A.getGuildsArray()), b = (0, l.bG)([p.default], () => p.default.getCurrentUser()), S = s.useMemo(() => r.some(e => (0, A.bM)(e, b)), [r, b]), T = (0, a.red)(e => (0, a.fDT)(e, x.fc)), {
+    } = e, r = (0, l.yK)([m.A], () => m.A.getGuildsArray()), b = (0, l.bG)([_.default], () => _.default.getCurrentUser()), S = s.useMemo(() => r.some(e => (0, A.bM)(e, b)), [r, b]), T = (0, a.red)(e => (0, a.fDT)(e, x.fc)), {
         analyticsLocations: v
     } = (0, o.Ay)(), y = (0, i.jsx)(g.A, {
         showPill: !1,
@@ -80,7 +80,7 @@ function b(e) {
             tutorialId: S ? "create-more-servers" : "create-first-server",
             inlineSpecs: I,
             position: "right",
-            children: [y, null != n && (0, i.jsx)(_.Ay, {
+            children: [y, null != n && (0, i.jsx)(p.Ay, {
                 name: C.intl.string(C.t["45xjM5"]),
                 targetNode: n,
                 below: !0,

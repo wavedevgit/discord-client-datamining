@@ -21,10 +21,10 @@ function A(e) {
             togglingSMS: x
         } = e,
         [p, h] = s.useState(!1),
-        T = s.useCallback(e => {
+        f = s.useCallback(e => {
             e.preventDefault(), h(!p)
         }, [p]),
-        E = s.useCallback(function() {
+        T = s.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
             (0, l.qfG)(t => (0, i.jsx)(d.default, {
                 reason: r.d.USER_SETTINGS_UPDATE,
@@ -34,15 +34,15 @@ function A(e) {
                 modalKey: m.V
             })
         }, []),
-        f = s.useCallback(() => {
-            E()
-        }, [E]),
+        E = s.useCallback(() => {
+            T()
+        }, [T]),
         S = s.useCallback(() => {
-            null == A.phone ? E({
+            null == A.phone ? T({
                 onAddedPhone: a.A.enableSMS
             }) : a.A.enableSMS()
-        }, [A, E]),
-        C = s.useCallback(() => {
+        }, [A, T]),
+        b = s.useCallback(() => {
             (0, l.qfG)(e => (0, i.jsx)(o.default, {
                 ...e,
                 handleSubmit: a.A.disableSMS,
@@ -50,28 +50,28 @@ function A(e) {
                 children: _.intl.string(_.t["W0/Duf"])
             }))
         }, []),
-        b = s.useCallback(e => null == e ? "" : `${"*".repeat(e.length-4)}${e.slice(-4)}`, []),
+        C = s.useCallback(e => null == e ? "" : `${"*".repeat(e.length-4)}${e.slice(-4)}`, []),
         N = null != A.phone,
-        I = A.hasFlag(u.nhx.MFA_SMS);
-    if (N || I) {
-        let e = p ? A.phone : b(A.phone);
+        v = A.hasFlag(u.nhx.MFA_SMS);
+    if (N || v) {
+        let e = p ? A.phone : C(A.phone);
         n = (0, i.jsxs)(l.Text, {
             variant: "text-sm/normal",
             children: [_.intl.format(_.t.PXVoEO, {
                 phoneNumber: e
             }), (0, i.jsx)(l.MzZ, {
-                onClick: T,
+                onClick: f,
                 className: g.vN,
                 children: p ? _.intl.string(_.t.FfltIN) : _.intl.string(_.t.llArAg)
             })]
         })
     }
-    if (I) t = (0, i.jsx)(l.Button, {
+    if (v) t = (0, i.jsx)(l.Button, {
         variant: "critical-secondary",
         size: "sm",
         text: _.intl.string(_.t.KLWnit),
         loading: x,
-        onClick: C
+        onClick: b
     });
     else {
         let e = (0, c.B)(A);
@@ -88,7 +88,7 @@ function A(e) {
                 variant: "secondary",
                 size: "sm",
                 text: _.intl.string(_.t.Ulqq6K),
-                onClick: f
+                onClick: E
             }) : null]
         })
     }

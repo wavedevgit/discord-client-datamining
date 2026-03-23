@@ -1,7 +1,7 @@
 /** chunk id: 59000 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -15,7 +15,7 @@ var i = n(627968),
     h = n(491986),
     A = n(745652),
     m = n(855324);
-let p = () => {
+let _ = () => {
     let e = (0, r.Ay)();
     s.useEffect(() => {
         o.Ay.trackWithMetadata(d.HAw.GUILD_OUTAGE_VIEWED, {})

@@ -80,10 +80,10 @@ function b() {
     let [e, t] = i.useState(!1), [n, s] = i.useState(r.j.PREMIUM_TIER_2_1_HOUR), [u, _] = i.useState([]), [b, j] = i.useState([]), {
         refreshEntitlementList: A,
         grantFractionalPremium: C,
-        deleteFractionalPremium: y,
-        triggerNextEntitlementFulfillment: T,
+        deleteFractionalPremium: T,
+        triggerNextEntitlementFulfillment: E,
         entitlements: S,
-        loading: E
+        loading: y
     } = (0, m.o)();
     return i.useEffect(() => {
         A()
@@ -165,21 +165,21 @@ function b() {
                     }), (0, a.jsxs)("div", {
                         className: x.GC,
                         children: [(0, a.jsx)(o.$n, {
-                            disabled: E,
+                            disabled: y,
                             size: o.$n.Sizes.TINY,
                             color: o.$n.Colors.PRIMARY,
                             look: o.$n.Looks.OUTLINED,
-                            onClick: () => T(),
+                            onClick: () => E(),
                             children: "Run fulfillment"
                         }), (0, a.jsx)(o.$n, {
-                            disabled: E,
+                            disabled: y,
                             size: o.$n.Sizes.TINY,
                             color: o.$n.Colors.RED,
                             look: o.$n.Looks.OUTLINED,
-                            onClick: () => y(),
+                            onClick: () => T(),
                             children: "Delete all"
                         }), (0, a.jsx)(o.$n, {
-                            disabled: E,
+                            disabled: y,
                             look: o.$n.Looks.BLANK,
                             size: o.$n.Sizes.ICON,
                             onClick: A,
@@ -203,7 +203,7 @@ function b() {
                         children: u.map(e => (0, a.jsx)(f, {
                             entitlement: e,
                             active: !0,
-                            onDelete: () => y(e.id)
+                            onDelete: () => T(e.id)
                         }, e.id))
                     })]
                 }), b.length > 0 && (0, a.jsxs)("div", {

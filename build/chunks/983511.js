@@ -18,15 +18,15 @@ var i = n(627968),
     x = n(543767),
     p = n(253390),
     h = n(735164),
-    T = n(683433),
-    E = n(692440),
-    f = n(178368),
+    f = n(683433),
+    T = n(692440),
+    E = n(178368),
     S = n(97352),
-    C = n(166403),
-    b = n(473145),
+    b = n(166403),
+    C = n(473145),
     N = n(927578),
-    I = n(580630),
-    v = n(802790),
+    v = n(580630),
+    I = n(802790),
     j = n(788868),
     y = n(818348),
     O = n(985018),
@@ -78,7 +78,7 @@ function L(e) {
     })
 }
 async function P(e, t, n, i) {
-    let s, l, r = null != i ? i : (s = Object.values(f.A.boostSlots), null != (l = a().sortBy(s.filter(e => !(0, b.I5)(e)), e => [null != e.premiumGuildSubscription, null != e.cooldownEndsAt ? new Date(e.cooldownEndsAt) : null])[0]) ? l.id : null);
+    let s, l, r = null != i ? i : (s = Object.values(E.A.boostSlots), null != (l = a().sortBy(s.filter(e => !(0, C.I5)(e)), e => [null != e.premiumGuildSubscription, null != e.cooldownEndsAt ? new Date(e.cooldownEndsAt) : null])[0]) ? l.id : null);
     if (null == r) throw Error("No slot to cancel");
     let o = (0, N.aE)(e, t);
     await (0, u.HJ)(r), await (0, c.nV)(e, {
@@ -97,7 +97,7 @@ function D(e) {
         onBack: a,
         onNext: r,
         onClose: c
-    } = e, [u, g] = s.useState(!1), [f, C] = s.useState(null), [b, y] = s.useMemo(() => {
+    } = e, [u, g] = s.useState(!1), [E, b] = s.useState(null), [C, y] = s.useMemo(() => {
         try {
             return [(0, p.v)(t, -1), !1]
         } catch {
@@ -129,7 +129,7 @@ function D(e) {
         paymentSourceId: t.paymentSourceId,
         analyticsLocations: G,
         analyticsLocation: m.A.GUILD_BOOST_SLOT_CANCELLATION_MODAL_CURRENT_INVOICE_PREVIEW
-    }), U = null != M ? (0, N.Om)(t, b[0]?.quantity ?? 0, M.id) : null, [w] = (0, x.Kq)({
+    }), U = null != M ? (0, N.Om)(t, C[0]?.quantity ?? 0, M.id) : null, [w] = (0, x.Kq)({
         subscriptionId: t.id,
         items: U,
         renewal: !0,
@@ -148,15 +148,15 @@ function D(e) {
             } = e;
             return !j.pW.has(t)
         }) != null,
-        B = b.some(e => {
+        B = C.some(e => {
             let {
                 planId: t
             } = e;
             return j.pW.has(t)
         }),
-        H = V || B ? w.total - k.total : -k.total,
+        F = V || B ? w.total - k.total : -k.total,
         {
-            interval: F,
+            interval: H,
             intervalCount: Y
         } = D,
         z = O.intl.format(O.t["0W23cu"], {
@@ -165,17 +165,17 @@ function D(e) {
     return t.isPausedForFractionalPremium && l.fetched && (z = O.intl.format(O.t.eb0xgS, {
         expirationDate: l.endsAt.toDate()
     })), (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(v.A, {
+        children: [(0, i.jsx)(I.A, {
             "data-migration-pending": !0,
             onClose: c
         }), (0, i.jsxs)(d.$mQ, {
             "data-migration-pending": !0,
             className: R.rf,
-            children: [null !== f && (0, i.jsx)("div", {
+            children: [null !== E && (0, i.jsx)("div", {
                 className: R.z3,
                 children: (0, i.jsx)(d.wx6, {
                     type: "critical",
-                    children: f
+                    children: E
                 })
             }), (0, i.jsx)("div", {
                 children: z
@@ -187,10 +187,10 @@ function D(e) {
                     label: O.intl.format(O.t["Vg+LRr"], {
                         subscriptionCount: 1
                     }),
-                    value: (0, I.CE)((0, I.$g)(H, t.currency), F, Y),
+                    value: (0, v.CE)((0, v.$g)(F, t.currency), H, Y),
                     className: R.Au
                 }), null != U && U.length > 0 ? (0, i.jsxs)("div", {
-                    children: [(0, i.jsx)(h.pK, {}), (0, i.jsx)(E.m0, {
+                    children: [(0, i.jsx)(h.pK, {}), (0, i.jsx)(T.m0, {
                         premiumSubscription: t,
                         renewalInvoice: w,
                         isUpdate: !0
@@ -207,12 +207,12 @@ function D(e) {
                 disabled: u,
                 onClick: async () => {
                     try {
-                        g(!0), C(null), await P(t, b, G, n), r()
+                        g(!0), b(null), await P(t, C, G, n), r()
                     } catch (e) {
-                        C(O.intl.string(O.t["5mlOCW"])), g(!1)
+                        b(O.intl.string(O.t["5mlOCW"])), g(!1)
                     }
                 }
-            }), (0, i.jsx)(T.A, {
+            }), (0, i.jsx)(f.A, {
                 onClick: a
             })]
         })]
@@ -258,9 +258,9 @@ function G(e) {
         onClose: a
     } = e;
     s.useEffect(() => {
-        C.A.hasFetchedSubscriptions() || (0, c.hP)()
+        b.A.hasFetchedSubscriptions() || (0, c.hP)()
     }, []);
-    let r = (0, o.bG)([C.A], () => C.A.getPremiumTypeSubscription()),
+    let r = (0, o.bG)([b.A], () => b.A.getPremiumTypeSubscription()),
         u = (0, g.A)(),
         [A, x] = s.useState(1),
         {

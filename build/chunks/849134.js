@@ -20,10 +20,10 @@ function d(e) {
         onActionMouseDown: h,
         position: A = "right",
         align: m = "top",
-        caretConfig: p = {
+        caretConfig: _ = {
             align: "start"
         },
-        skuImageDetails: _,
+        skuImageDetails: p,
         title: g,
         body: f,
         overlayImageUrl: x
@@ -31,25 +31,25 @@ function d(e) {
     s.useEffect(() => {
         n?.()
     }, [n]);
-    let C = s.useMemo(() => _?.imageUrl == null ? {
+    let C = s.useMemo(() => p?.imageUrl == null ? {
         type: "image",
         src: c.A,
         aspectRatio: "6/4"
     } : (0, a.e)({
-        imageUrl: _?.imageUrl,
-        backgroundImageUrl: _?.backgroundImageUrl,
+        imageUrl: p?.imageUrl,
+        backgroundImageUrl: p?.backgroundImageUrl,
         altText: r.intl.string(r.t["ulQB+t"]),
         overlayImageUrl: x,
         customClassNames: {
             containerClassName: o.z,
             foregroundImageClassName: o._
         }
-    }), [_?.imageUrl, _?.backgroundImageUrl, x]);
+    }), [p?.imageUrl, p?.backgroundImageUrl, x]);
     return (0, i.jsx)(l.AM, {
         size: "lg",
         shouldShow: !0,
         position: A,
-        caretConfig: p,
+        caretConfig: _,
         gradientColor: "purple",
         alignmentStrategy: "edge",
         align: m,

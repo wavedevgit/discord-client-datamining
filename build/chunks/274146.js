@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(938764),
     A = n(519480),
     m = n(352123),
-    p = n(372536),
-    _ = n(268965),
+    _ = n(372536),
+    p = n(268965),
     g = n(667369),
     f = n(647026),
     x = n(946116),
@@ -130,11 +130,11 @@ let N = e => {
         })
     }) : j?.length === 0 && null == b ? (0, i.jsx)("div", {
         className: I.$$,
-        children: (0, i.jsx)(p.A, {
+        children: (0, i.jsx)(_.A, {
             guild: N,
             onAddGuild: k
         })
-    }) : (0, i.jsx)(_.A, {
+    }) : (0, i.jsx)(p.A, {
         channel: t,
         searchQuery: M,
         setSearchQuery: D,

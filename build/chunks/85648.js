@@ -1,6 +1,6 @@
 /** chunk id: 85648 params = (module,exports,require) **/
 n.d(t, {
-    S: () => v
+    S: () => I
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -18,23 +18,23 @@ var i = n(627968),
     x = n(729770),
     p = n(274835),
     h = n(505112),
-    T = n(163944),
-    E = n(41197),
-    f = n(28161),
+    f = n(163944),
+    T = n(41197),
+    E = n(28161),
     S = n(114074),
-    C = n(413336),
-    b = n(985018);
+    b = n(413336),
+    C = n(985018);
 let N = (0, o.t_)(c.X.DISPLAY_PANEL, {
-        useTitle: () => b.intl.string(b.t.DVatCa),
-        buildLayout: () => [S.K, T.S, E.X, h.S, f.f, (0, C.$)(!0), p.J]
+        useTitle: () => C.intl.string(C.t.DVatCa),
+        buildLayout: () => [S.K, f.S, T.X, h.S, E.f, (0, b.$)(!0), p.J]
     }),
-    I = [...A.j0, {
+    v = [...A.j0, {
         badgeType: d.Xi.STRONGLY_DISCOURAGED_CUSTOM,
         dismissibleContent: a.M.FAVORITES_GUILD_NEW_BADGE,
         StronglyDiscouragedCustomComponent: x.L
     }],
-    v = (0, o.i4)(c.X.DISPLAY_SIDEBAR_ITEM, {
-        useTitle: () => b.intl.string(b.t.DVatCa),
+    I = (0, o.i4)(c.X.DISPLAY_SIDEBAR_ITEM, {
+        useTitle: () => C.intl.string(C.t.DVatCa),
         icon: l.PaintPaletteIcon,
         usePredicate: () => (0, u.bp)("DisplaySidebarItem"),
         useMenu: function() {
@@ -44,13 +44,13 @@ let N = (0, o.t_)(c.X.DISPLAY_PANEL, {
             return s.useMemo(() => {
                 let s = [...e];
                 return null != t && s.push((0, i.jsx)(r.rXV, {
-                    label: b.intl.string(b.t.Ob7VMB),
+                    label: C.intl.string(C.t.Ob7VMB),
                     children: t
                 }, "text-and-images")), null != n && s.push((0, i.jsx)(r.rXV, {
                     children: n
                 }, "streamer-mode")), s
             }, [e, t, n])
         },
-        getDismissibleBadges: () => I,
+        getDismissibleBadges: () => v,
         buildLayout: () => [N]
     })

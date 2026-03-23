@@ -44,7 +44,7 @@ let _ = e => {
     g = e => {
         let {
             inModal: t
-        } = e, n = (0, o.y)(c.intl.string(d.default["TCzk/e"]), c.intl.string(d.default["2OqtJJ"])), s = (0, o.y)(c.intl.string(d.default.ASf7XN), c.intl.string(d.default["82y87X"])), l = (0, o.y)(c.intl.string(d.default["0QDVFN"]), c.intl.string(d.default["1xBHHV"])), m = c.intl.string(d.default["JvJ3P/"]), g = (0, o.y)(c.intl.string(d.default.l0ChgF), c.intl.string(d.default.S2ss5X)), A = (0, o.y)(c.intl.string(d.default.LDu4Uk), c.intl.string(d.default.fEgtLV)), x = c.intl.string(d.default["4SCALu"]), p = c.intl.string(d.default.oYf9P7), h = (0, o.y)(c.intl.string(d.default["dES/2r"]), c.intl.string(d.default.ep6mdN)), T = (0, o.y)(c.intl.string(d.default["30+sih"]), c.intl.string(d.default["0cuLn1"])), E = (0, o.y)(c.intl.string(d.default.tHTyRh), c.intl.string(d.default.TeNlMb)), f = (0, o.y)(c.intl.string(d.default.wZejZr), c.intl.string(d.default.tdgcf1));
+        } = e, n = (0, o.y)(c.intl.string(d.default["TCzk/e"]), c.intl.string(d.default["2OqtJJ"])), s = (0, o.y)(c.intl.string(d.default.ASf7XN), c.intl.string(d.default["82y87X"])), l = (0, o.y)(c.intl.string(d.default["0QDVFN"]), c.intl.string(d.default["1xBHHV"])), m = c.intl.string(d.default["JvJ3P/"]), g = (0, o.y)(c.intl.string(d.default.l0ChgF), c.intl.string(d.default.S2ss5X)), A = (0, o.y)(c.intl.string(d.default.LDu4Uk), c.intl.string(d.default.fEgtLV)), x = c.intl.string(d.default["4SCALu"]), p = c.intl.string(d.default.oYf9P7), h = (0, o.y)(c.intl.string(d.default["dES/2r"]), c.intl.string(d.default.ep6mdN)), f = (0, o.y)(c.intl.string(d.default["30+sih"]), c.intl.string(d.default["0cuLn1"])), T = (0, o.y)(c.intl.string(d.default.tHTyRh), c.intl.string(d.default.TeNlMb)), E = (0, o.y)(c.intl.string(d.default.wZejZr), c.intl.string(d.default.tdgcf1));
         return (0, i.jsxs)("div", {
             children: [(0, i.jsx)(_, {
                 header: m,
@@ -88,15 +88,15 @@ let _ = e => {
                 }),
                 inModal: t
             }), (0, i.jsx)(_, {
-                header: T,
-                description: E,
+                header: f,
+                description: T,
                 icon: (0, i.jsx)(a.FlagIcon, {
                     size: "md"
                 }),
                 inModal: t
             }), (0, i.jsx)(_, {
                 header: c.intl.string(d.default.UCuHM8),
-                description: f,
+                description: E,
                 icon: (0, i.jsx)(a.SettingsIcon, {
                     size: "md"
                 }),

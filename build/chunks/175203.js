@@ -16,8 +16,8 @@ var i = n(627968),
     h = n(397927),
     A = n(827343),
     m = n(820284),
-    p = n(793574),
-    _ = n(587895),
+    _ = n(793574),
+    p = n(587895),
     g = n(429913),
     f = n(520698),
     x = n(659974),
@@ -72,7 +72,7 @@ let eh = [er.lp.ACTIVITY],
         var t, n, l;
         let r, o, d, {
                 participant: u,
-                popoutType: p,
+                popoutType: _,
                 onDoubleClick: C,
                 onContextMenu: I,
                 onClick: N,
@@ -89,8 +89,8 @@ let eh = [er.lp.ACTIVITY],
                 noBorder: es = !1,
                 noVideoRender: eA = !1,
                 focused: em = !1,
-                blocked: ep = !1,
-                ignored: e_ = !1,
+                blocked: e_ = !1,
+                ignored: ep = !1,
                 fit: ef = v.$.CONTAIN,
                 paused: ex = !1,
                 pulseSpeakingIndicator: eC = !1,
@@ -153,7 +153,7 @@ let eh = [er.lp.ACTIVITY],
             }),
             eY = (0, c.bG)([K.A], () => eW && null != eL ? K.A.findActivity(eL, e => null != e.application_id && e.type === ea.$pd.PLAYING) : null, [eW, eL]),
             ez = (0, c.bG)([B.A], () => eY?.application_id != null ? B.A.getDetectableGame(eY.application_id) : null),
-            eq = (0, c.bG)([_.A], () => null != ez && eY?.application_id != null ? _.A.getApplication(eY?.application_id) : void 0),
+            eq = (0, c.bG)([p.A], () => null != ez && eY?.application_id != null ? p.A.getApplication(eY?.application_id) : void 0),
             eX = (0, D.UF)({
                 userId: eL,
                 channelId: z.id
@@ -186,7 +186,7 @@ let eh = [er.lp.ACTIVITY],
                 e9 = (0, i.jsx)(en.A, {
                     participant: u,
                     selected: Q,
-                    popoutType: p,
+                    popoutType: _,
                     width: q,
                     fit: ef,
                     onVideoResize: X,
@@ -207,14 +207,14 @@ let eh = [er.lp.ACTIVITY],
                     channel: z,
                     inCall: J,
                     participant: u,
-                    popoutType: p,
+                    popoutType: _,
                     fit: ef,
                     onVideoResize: X,
                     paused: ex,
                     selected: Q,
                     width: q,
-                    blocked: ep,
-                    ignored: e_,
+                    blocked: e_,
+                    ignored: ep,
                     noVideoRender: eA || eU,
                     pulseSpeakingIndicator: eC
                 }), e7 = (0, i.jsx)(ei.s, {
@@ -243,7 +243,7 @@ let eh = [er.lp.ACTIVITY],
                     fit: ef,
                     onVideoResize: X,
                     paused: ex,
-                    popoutType: p
+                    popoutType: _
                 })
         }
         let e2 = s.useRef(null),
@@ -333,8 +333,8 @@ let eh = [er.lp.ACTIVITY],
                                     idle: eN,
                                     platform: eK,
                                     title: (0, $.A)(z, u),
-                                    blocked: ep,
-                                    ignored: e_,
+                                    blocked: e_,
+                                    ignored: ep,
                                     localVideoDisabled: eD,
                                     videoToggleState: eG,
                                     hideAudioIcon: eH,
@@ -345,7 +345,7 @@ let eh = [er.lp.ACTIVITY],
                                     application: eq,
                                     secureFramesVerified: eQ,
                                     isHovered: ey,
-                                    popoutType: p,
+                                    popoutType: _,
                                     paused: ex,
                                     controlsBottom: eI,
                                     streamId: u.type === er.lp.STREAM ? u.streamId : null
@@ -408,7 +408,7 @@ function em(e) {
     }
 }
 
-function ep(e) {
+function e_(e) {
     let {
         icon: t,
         tooltipText: n,
@@ -436,16 +436,16 @@ function ep(e) {
     })
 }
 
-function e_(e) {
+function ep(e) {
     let {
         channelId: t,
         participantId: n,
         hideWhenInactive: l,
         idle: a
     } = e, r = s.useMemo(() => (0, I.A)(t, n), [t, n]), o = (0, c.bG)([L.A], () => L.A.getIsAlwaysOnTop(r)), d = s.useCallback(() => {
-        (0, N.X)(p.A.CALL_TILE_POPOUT, N.O.STAY_ON_TOP, !o), M.setAlwaysOnTop(r, !o)
+        (0, N.X)(_.A.CALL_TILE_POPOUT, N.O.STAY_ON_TOP, !o), M.setAlwaysOnTop(r, !o)
     }, [r, o]);
-    return J.isPlatformEmbedded && Q.Ay.supportsFeature(ea.BYE.POPOUT_WINDOWS) ? (0, i.jsx)(ep, {
+    return J.isPlatformEmbedded && Q.Ay.supportsFeature(ea.BYE.POPOUT_WINDOWS) ? (0, i.jsx)(e_, {
         onClick: d,
         tooltipText: o ? ed.intl.string(ed.t.YdyDM9) : ed.intl.string(ed.t.ZVGHwP),
         icon: o ? h.hl9 : h.qgw,
@@ -461,7 +461,7 @@ let eg = s.memo(e => {
         width: l,
         focused: A,
         videoToggleState: m,
-        blocked: _,
+        blocked: p,
         ignored: g,
         participantId: x,
         participantType: E,
@@ -523,20 +523,20 @@ let eg = s.memo(e => {
     return A && E === er.lp.STREAM && ei.push((0, i.jsx)(j.A, {
         streamId: W,
         paused: H
-    }, "zoom-controls")), A ? B === C.N.CALL_TILE && (ei.push((0, i.jsx)(e_, {
+    }, "zoom-controls")), A ? B === C.N.CALL_TILE && (ei.push((0, i.jsx)(ep, {
         channelId: v.id,
         participantId: x,
         hideWhenInactive: !1,
         idle: t
-    }, "stay-on-top")), ei.push((0, i.jsx)(ep, {
+    }, "stay-on-top")), ei.push((0, i.jsx)(e_, {
         onClick: () => {
-            (0, N.X)(p.A.CALL_TILE_POPOUT, N.O.POPOUT_RETURN), M.close((0, I.A)(v.id, x))
+            (0, N.X)(_.A.CALL_TILE_POPOUT, N.O.POPOUT_RETURN), M.close((0, I.A)(v.id, x))
         },
         tooltipText: ed.intl.string(ed.t["7Dwcnj"]),
         icon: o.WindowReturnIcon,
         hideWhenInactive: !1,
         idle: t
-    }, "close"))) : (ei.push((0, i.jsx)(ep, {
+    }, "close"))) : (ei.push((0, i.jsx)(e_, {
         onClick: e => {
             e.stopPropagation(), Z(!0), O(e, !0, er.GK.THREE_DOT)
         },
@@ -544,7 +544,7 @@ let eg = s.memo(e => {
         icon: h.jNK,
         hideWhenInactive: !$,
         idle: t
-    }, "options")), ee && ei.push((0, i.jsx)(ep, {
+    }, "options")), ee && ei.push((0, i.jsx)(e_, {
         onClick: V,
         tooltipText: G ? ed.intl.string(ed.t.YqAjXy) : ed.intl.string(ed.t.w4m945),
         icon: G ? h._RO : h.HKD,
@@ -591,7 +591,7 @@ let eg = s.memo(e => {
                     className: eu.gr,
                     size: "xs",
                     color: "currentColor"
-                }), _ ? (0, i.jsx)("div", {
+                }), p ? (0, i.jsx)("div", {
                     className: eu.Z5,
                     children: (0, i.jsx)(h.KTN, {
                         size: "lg",

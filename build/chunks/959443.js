@@ -1,7 +1,7 @@
 /** chunk id: 959443 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T,
-    L: () => E
+    A: () => f,
+    L: () => T
 });
 var i = n(627968);
 n(64700);
@@ -21,7 +21,7 @@ var s = n(503698),
     p = n(996554),
     h = n(114149);
 
-function T(e) {
+function f(e) {
     let {
         className: t
     } = e, {
@@ -72,8 +72,8 @@ function T(e) {
     })
 }
 
-function E() {
-    return (0, i.jsx)(T, {
+function T() {
+    return (0, i.jsx)(f, {
         className: p.YH
     })
 }

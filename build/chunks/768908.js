@@ -1,7 +1,7 @@
 /** chunk id: 768908 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => F,
-    T: () => H,
+    Ay: () => H,
+    T: () => F,
     Wx: () => B,
     cH: () => V
 }), n(321073);
@@ -21,24 +21,24 @@ var i = n(627968),
     x = n(496885),
     p = n(227309),
     h = n(847521),
-    T = n(760751),
-    E = n(189081),
-    f = n(954571),
+    f = n(760751),
+    T = n(189081),
+    E = n(954571),
     S = n(583613),
-    C = n(723702),
-    b = n(544028),
+    b = n(723702),
+    C = n(544028),
     N = n(790174),
-    I = n(652215),
-    v = n(650583),
+    v = n(652215),
+    I = n(650583),
     j = n(985018),
     y = n(900506),
     O = n(976092),
     R = n(20976),
     L = n(473169);
-let P = r.Ay.connectStores([b.A], () => ({
-        theme: b.A.theme
+let P = r.Ay.connectStores([C.A], () => ({
+        theme: C.A.theme
     }))(c.ppr),
-    D = (0, C.isWindows)();
+    D = (0, b.isWindows)();
 
 function M(e) {
     let {
@@ -86,19 +86,19 @@ function G(e) {
         isOverride: A,
         subgames: p,
         isSubgame: S = !1,
-        parentGame: C
-    } = e, b = (0, r.cf)([g.Ay, T.A, E.A], () => (0, g.xU)(t, g.Ay, T.A, E.A)), {
+        parentGame: b
+    } = e, C = (0, r.cf)([g.Ay, f.A, T.A], () => (0, g.xU)(t, g.Ay, f.A, T.A)), {
         canToggleDetection: N,
         isCurrentGameDetectionEnabled: O
     } = (0, r.cf)([g.Ay], () => ({
-        canToggleDetection: null == C || g.Ay.isDetectionEnabled(C),
-        isCurrentGameDetectionEnabled: g.Ay.isDetectionEnabled(b)
-    })), L = (0, r.bG)([g.Ay], () => g.Ay.getVisibleGame()), [P, M] = s.useState(!1), k = s.useMemo(() => (0, h.n1)(b) ? S ? b.gameName : j.intl.formatToPlainString(j.t.G6BGdx, {
-        subgameName: b.gameName
-    }) : b.name, [b, S]), [U, w] = s.useState(k ?? "???"), V = a()(R.tR, {
+        canToggleDetection: null == b || g.Ay.isDetectionEnabled(b),
+        isCurrentGameDetectionEnabled: g.Ay.isDetectionEnabled(C)
+    })), L = (0, r.bG)([g.Ay], () => g.Ay.getVisibleGame()), [P, M] = s.useState(!1), k = s.useMemo(() => (0, h.n1)(C) ? S ? C.gameName : j.intl.formatToPlainString(j.t.G6BGdx, {
+        subgameName: C.gameName
+    }) : C.name, [C, S]), [U, w] = s.useState(k ?? "???"), V = a()(R.tR, {
         [y.LO]: !l,
         [y.Rw]: l,
-        [y.FB]: null != b && l,
+        [y.FB]: null != C && l,
         [y.xL]: S,
         [y.fG]: null != p && p.length > 0
     });
@@ -123,21 +123,21 @@ function G(e) {
                 }, {
                     text: j.intl.string(j.t.Fmjztz),
                     onClick: () => {
-                        u.A.toggleDetection(b), t.onClose()
+                        u.A.toggleDetection(C), t.onClose()
                     },
                     variant: "primary"
                 }]
             })
-        }) : u.A.toggleDetection(b)
+        }) : u.A.toggleDetection(C)
     }
-    let H = null != L && (0, g.Es)(b) === (0, g.Es)(L),
-        F = null != C && C.id === L?.id || H || null != p && p.some(e => e.id === L?.id);
+    let F = null != L && (0, g.Es)(C) === (0, g.Es)(L),
+        H = null != b && b.id === L?.id || F || null != p && p.some(e => e.id === L?.id);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
             className: V,
             children: [(0, i.jsxs)("div", {
                 className: a()(y.$K, R.Vd),
-                children: [b.verified && !A ? (0, i.jsxs)("div", {
+                children: [C.verified && !A ? (0, i.jsxs)("div", {
                     className: y.HS,
                     children: [(0, i.jsx)("div", {
                         className: y.mO,
@@ -162,18 +162,18 @@ function G(e) {
                     maxLength: 128,
                     value: U,
                     onBlur: function() {
-                        b.name !== U && u.A.editName(b, U)
+                        C.name !== U && u.A.editName(C, U)
                     },
                     onKeyDown: function(e) {
-                        e.key === v.dh.ENTER && (e.currentTarget.blur(), e.preventDefault())
+                        e.key === I.dh.ENTER && (e.currentTarget.blur(), e.preventDefault())
                     },
                     onChange: e => w(e.target.value)
                 }), function() {
                     let e, {
                         played: t,
                         exePath: n
-                    } = b;
-                    return l || H ? e = j.intl.string(j.t.VbV5dv) : null != t && "" !== t && (e = j.intl.format(j.t["gGeOE+"], {
+                    } = C;
+                    return l || F ? e = j.intl.string(j.t.VbV5dv) : null != t && "" !== t && (e = j.intl.format(j.t["gGeOE+"], {
                         when: t
                     })), (0, i.jsx)("div", {
                         className: y.GN,
@@ -192,10 +192,10 @@ function G(e) {
                         className: y.ym,
                         onClick: function() {
                             if (P) return;
-                            let e = null != b.id ? T.A.getDetectableGame(b.id) : null;
-                            f.default.track(I.HAw.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
+                            let e = null != C.id ? f.A.getDetectableGame(C.id) : null;
+                            E.default.track(v.HAw.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
                                 application_id: e?.id,
-                                game_name: (0, h.n1)(b) ? b.gameName : b.name
+                                game_name: (0, h.n1)(C) ? C.gameName : C.name
                             }), M(!0), (0, c.mMO)(async () => {
                                 let {
                                     default: t
@@ -203,9 +203,9 @@ function G(e) {
                                 return n => (0, i.jsx)(t, {
                                     ...n,
                                     detectedActivity: {
-                                        name: b.name ?? "",
-                                        application_id: e?.id ?? b.id ?? void 0,
-                                        type: I.$pd.PLAYING
+                                        name: C.name ?? "",
+                                        application_id: e?.id ?? C.id ?? void 0,
+                                        type: v.$pd.PLAYING
                                     },
                                     onSubmitted: () => {}
                                 })
@@ -222,7 +222,7 @@ function G(e) {
             }), function() {
                 let {
                     detectable: e
-                } = b, t = e && N ? (0, i.jsx)(c.bMW, {
+                } = C, t = e && N ? (0, i.jsx)(c.bMW, {
                     size: "md",
                     color: "currentColor",
                     className: y.Lj,
@@ -246,11 +246,11 @@ function G(e) {
                     })
                 })
             }(), function() {
-                if (!D || null != C) return null;
+                if (!D || null != b) return null;
                 let {
                     overlay: e,
                     overlayWarn: t
-                } = b, n = e ? (0, i.jsx)(c.kN9, {
+                } = C, n = e ? (0, i.jsx)(c.kN9, {
                     size: "md",
                     color: "currentColor",
                     className: y.Lj,
@@ -275,16 +275,16 @@ function G(e) {
                             className: y.ym,
                             onClick: () => {
                                 var t;
-                                return t = !e, void u.A.toggleOverlay(b, t, t)
+                                return t = !e, void u.A.toggleOverlay(C, t, t)
                             },
                             children: n
                         })
                     })]
                 })
-            }(), l && !A || F ? null : (0, i.jsx)(m.A, {
+            }(), l && !A || H ? null : (0, i.jsx)(m.A, {
                 className: y.LS,
                 onClick: function() {
-                    u.A.deleteEntry(b), p?.forEach(e => {
+                    u.A.deleteEntry(C), p?.forEach(e => {
                         u.A.deleteEntry(e)
                     })
                 }
@@ -296,7 +296,7 @@ function G(e) {
                     rawGame: e,
                     isOverride: !1,
                     isSubgame: !0,
-                    parentGame: b
+                    parentGame: C
                 }), t !== p.length - 1 && (0, i.jsx)("div", {
                     className: y.PQ
                 })]
@@ -385,7 +385,7 @@ let w = (0, S.L_)(function() {
             })]
         })
     },
-    H = e => {
+    F = e => {
         let {
             hideHeader: t = !1
         } = e, n = (0, r.yK)([g.Ay], () => g.Ay.getGamesSeen(!1)), l = (0, r.bG)([g.Ay], () => w(...g.Ay.getOverrides()));
@@ -415,7 +415,7 @@ let w = (0, S.L_)(function() {
             })
         })
     },
-    F = function(e) {
+    H = function(e) {
         let {
             className: t,
             showHeader: n = !0
@@ -425,6 +425,6 @@ let w = (0, S.L_)(function() {
             className: t,
             children: [(0, i.jsx)(V, {}), (0, i.jsx)(B, {}), (0, i.jsx)(c.cGx, {
                 gap: 20
-            }), (0, i.jsx)(H, {})]
+            }), (0, i.jsx)(F, {})]
         })
     }

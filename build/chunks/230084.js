@@ -27,36 +27,36 @@ function x(e) {
         sectionTitle: x,
         changeAvatarButtonText: p,
         guildId: h,
-        className: T,
-        disabled: E = !1,
-        isTryItOut: f = !1,
+        className: f,
+        disabled: T = !1,
+        isTryItOut: E = !1,
         forcedDivider: S,
-        withHighlight: C = !1
+        withHighlight: b = !1
     } = e, {
-        newestAnalyticsLocation: b
-    } = (0, d.Ay)(), N = C ? o.wLn : r.$n, I = s.useCallback(() => {
+        newestAnalyticsLocation: C
+    } = (0, d.Ay)(), N = b ? o.wLn : r.$n, v = s.useCallback(() => {
         (0, c.XD)({
             uploadType: m.HL.AVATAR,
-            analyticsSource: b,
-            filters: f ? A : void 0,
+            analyticsSource: C,
+            filters: E ? A : void 0,
             guildId: h,
-            isTryItOut: f
+            isTryItOut: E
         })
-    }, [h, b, f]);
+    }, [h, C, E]);
     return (0, i.jsx)(u.A, {
-        className: T,
+        className: f,
         title: x,
         errors: n,
-        disabled: E,
+        disabled: T,
         forcedDivider: S,
         children: (0, i.jsxs)("div", {
             className: g.NC,
             children: [(0, i.jsx)(N, {
                 className: a()({
-                    [g.yj]: C
+                    [g.yj]: b
                 }),
                 size: r.$n.Sizes.SMALL,
-                onClick: I,
+                onClick: v,
                 children: p ?? _.intl.string(_.t["4OynCD"])
             }), t && (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,

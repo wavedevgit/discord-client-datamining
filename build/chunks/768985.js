@@ -1,6 +1,6 @@
 /** chunk id: 768985 params = (module,exports,require) **/
 n.d(t, {
-    j: () => E
+    j: () => T
 });
 var i = n(64700),
     s = n(731738),
@@ -18,30 +18,30 @@ var i = n(64700),
     x = n(834981),
     p = n(191627),
     h = n(652215),
-    T = n(204925);
+    f = n(204925);
 
-function E(e) {
+function T(e) {
     let {
         location: t,
         onMountEffect: n
-    } = e, E = (0, A.A)(), f = (0, x.W1)(), {
+    } = e, T = (0, A.A)(), E = (0, x.W1)(), {
         familyCenterInitialized: S,
-        isLoading: C
+        isLoading: b
     } = (0, l.cf)([m.A], () => ({
         familyCenterInitialized: m.A.getIsInitialized(),
         isLoading: m.A.isLoading()
-    })), b = (0, g.k)(), {
+    })), C = (0, g.k)(), {
         selectedTab: N,
-        handleTabChange: I
-    } = (0, _.A)(), v = c.default.getCurrentUser(), j = null != E, y = S && null != v && !j;
+        handleTabChange: v
+    } = (0, _.A)(), I = c.default.getCurrentUser(), j = null != T, y = S && null != I && !j;
     (0, a.Ay)(() => {
         (0, d.d)("family-center"), null != n && n()
     });
     let O = {
-            isConsideredAdult: "adult" === E,
-            numOfAcceptedRequests: f,
+            isConsideredAdult: "adult" === T,
+            numOfAcceptedRequests: E,
             selectedTab: N,
-            selectedTeenId: b
+            selectedTeenId: C
         },
         R = i.useRef(O);
     return i.useEffect(() => {
@@ -65,11 +65,11 @@ function E(e) {
             })
         }
     }, [S, j, t]), i.useEffect(() => {
-        y && (0, r.yO)(T.w_.FAMILY_CENTER)
+        y && (0, r.yO)(f.w_.FAMILY_CENTER)
     }, [y]), {
-        isLoading: C,
+        isLoading: b,
         selectedTab: N,
-        handleTabChange: I,
+        handleTabChange: v,
         showAgeGateModal: y
     }
 }

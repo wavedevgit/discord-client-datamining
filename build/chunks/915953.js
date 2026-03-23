@@ -24,14 +24,14 @@ function d(e) {
         useDisabled: x,
         useExternalValue: p,
         onValueRender: h,
-        asValueChanges: T,
-        markers: E,
-        onMarkerRender: f,
+        asValueChanges: f,
+        markers: T,
+        onMarkerRender: E,
         stickToMarkers: S,
-        fieldLayout: C,
-        usePersistentBadge: b,
+        fieldLayout: b,
+        usePersistentBadge: C,
         getDismissibleBadges: N
-    } = t, [I] = s.useState(() => d()), v = p?.(), j = _(), y = g?.(), O = A?.(), R = x?.(), L = m?.(), P = b?.(), D = N?.(), M = (0, a.A)({
+    } = t, [v] = s.useState(() => d()), I = p?.(), j = _(), y = g?.(), O = A?.(), R = x?.(), L = m?.(), P = C?.(), D = N?.(), M = (0, a.A)({
         persistentBadge: P,
         dismissibleBadges: D
     }), G = (0, r.q)(t);
@@ -40,21 +40,21 @@ function d(e) {
             label: j,
             description: y,
             disabled: R,
-            initialValue: I,
-            value: v,
+            initialValue: v,
+            value: I,
             minValue: c,
             maxValue: u,
             defaultValue: L,
             onValueRender: h,
-            asValueChanges: T,
+            asValueChanges: f,
             onValueChange: e => {
                 G(), n?.(e)
             },
             orientation: "horizontal",
-            markers: E,
-            onMarkerRender: f,
+            markers: T,
+            onMarkerRender: E,
             stickToMarkers: S,
-            layout: C,
+            layout: b,
             badge: M
         }), null != O && (0, i.jsx)(l.Text, {
             variant: "text-xs/normal",

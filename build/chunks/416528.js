@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(402216),
     A = n(689874),
     m = n(872363),
-    p = n(966597),
-    _ = n(922281),
+    _ = n(966597),
+    p = n(922281),
     g = n(51082),
     f = n(275731),
     x = n(289552),
@@ -73,7 +73,7 @@ function O(e) {
     }), [o]), y = t.isGuildVoiceOrThread() && !n, {
         enabled: O,
         inInbox: L
-    } = p.A.useConfig({
+    } = _.A.useConfig({
         location: "ChannelCallHeaderToolbar"
     }), M = [];
     return g && M.push((0, i.jsx)(R, {
@@ -115,7 +115,7 @@ function O(e) {
                 className: j.x6
             })
         }
-    }, "call-members-popout")), O && !L && M.push((0, i.jsx)(_.A, {
+    }, "call-members-popout")), O && !L && M.push((0, i.jsx)(p.A, {
         className: j.x6
     }, "for-later")), y && M.push((0, i.jsx)(E.V, {
         channelId: t.id,

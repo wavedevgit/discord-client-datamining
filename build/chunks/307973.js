@@ -23,9 +23,9 @@ let _ = e => {
         starContainerClassName: x,
         boltAssetClassName: p,
         carAssetClassName: h,
-        hammerAssetClassName: T,
-        keyAssetClassName: E,
-        starAssetClassName: f,
+        hammerAssetClassName: f,
+        keyAssetClassName: T,
+        starAssetClassName: E,
         animationSpeedScale: S = 1
     } = e;
     return (0, i.jsxs)(i.Fragment, {
@@ -104,7 +104,7 @@ let _ = e => {
                 animationSpeedScale: S,
                 children: (0, i.jsx)("img", {
                     src: c.A,
-                    className: T,
+                    className: f,
                     alt: ""
                 })
             })
@@ -137,7 +137,7 @@ let _ = e => {
                 animationSpeedScale: S,
                 children: (0, i.jsx)("img", {
                     src: u.A,
-                    className: E,
+                    className: T,
                     alt: ""
                 })
             })
@@ -170,7 +170,7 @@ let _ = e => {
                 animationSpeedScale: S,
                 children: (0, i.jsx)("img", {
                     src: m.A,
-                    className: f,
+                    className: E,
                     alt: ""
                 })
             })

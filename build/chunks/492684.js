@@ -1,5 +1,5 @@
 /** chunk id: 492684 params = (module,exports,require) **/
-i.d(e, {
+i.d(t, {
     A: () => o
 });
 var n = i(627968),
@@ -7,15 +7,15 @@ var n = i(627968),
     r = i(451988),
     s = i(985018);
 
-function a(t) {
-    return `${t}`.length < 13 ? 1e3 * t : t
+function a(e) {
+    return `${e}`.length < 13 ? 1e3 * e : e
 }
 
-function o(t) {
+function o(e) {
     return class extends l.PureComponent {
         _interval;
-        constructor(t) {
-            super(t), this._interval = new r.IX, this.state = {
+        constructor(e) {
+            super(e), this._interval = new r.IX, this.state = {
                 ...this.getUpdatedTime()
             }
         }
@@ -25,25 +25,25 @@ function o(t) {
         componentWillUnmount() {
             this._interval.stop()
         }
-        componentDidUpdate(t) {
-            (t.timestamps.end !== this.props.timestamps.end || t.timestamps.start !== this.props.timestamps.start) && this.setState(this.getUpdatedTime())
+        componentDidUpdate(e) {
+            (e.timestamps.end !== this.props.timestamps.end || e.timestamps.start !== this.props.timestamps.start) && this.setState(this.getUpdatedTime())
         }
         getUpdatedTime() {
             let {
-                timestamps: t
-            } = this.props, e = Date.now() / 1e3;
-            return null != t.end ? this.getDiff(e, a(t.end) / 1e3) : null != t.start ? this.getDiff(a(t.start) / 1e3, e) : {
+                timestamps: e
+            } = this.props, t = Date.now() / 1e3;
+            return null != e.end ? this.getDiff(t, a(e.end) / 1e3) : null != e.start ? this.getDiff(a(e.start) / 1e3, t) : {
                 hours: 0,
                 minutes: 0,
                 seconds: 0
             }
         }
-        renderTime(t) {
-            let e = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-            return e && t <= 0 ? -1 : t < 10 ? `0${t}` : t
+        renderTime(e) {
+            let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+            return t && e <= 0 ? -1 : e < 10 ? `0${e}` : e
         }
-        getDiff(t, e) {
-            let i = Math.max(e - t, 0),
+        getDiff(e, t) {
+            let i = Math.max(t - e, 0),
                 n = Math.floor(i) % 60,
                 l = Math.floor(i / 60) % 60;
             return {
@@ -54,15 +54,15 @@ function o(t) {
         }
         render() {
             let {
-                timestamps: e,
+                timestamps: t,
                 ...i
             } = this.props, l = this.renderTime(this.state.hours, !0), r = this.renderTime(this.state.minutes), a = this.renderTime(this.state.seconds), o = -1 === l ? `${r}:${a}` : `${l}:${r}:${a}`;
-            return null != e.end ? (0, n.jsx)(t, {
+            return null != t.end ? (0, n.jsx)(e, {
                 ...i,
                 message: s.intl.formatToPlainString(s.t["I/J7vI"], {
                     duration: o
                 })
-            }) : null != e.start ? (0, n.jsx)(t, {
+            }) : null != t.start ? (0, n.jsx)(e, {
                 ...i,
                 message: s.intl.formatToPlainString(s.t.M9Fexd, {
                     duration: o

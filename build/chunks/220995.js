@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(964486),
     A = n(793574),
     m = n(688810),
-    p = n(139286),
-    _ = n(713517),
+    _ = n(139286),
+    p = n(713517),
     g = n(71393),
     f = n(576705),
     x = n(954571),
@@ -35,7 +35,7 @@ function T(e) {
     } = e, T = s.useRef(null), [v, y] = s.useState(!1), j = s.useRef(null), R = s.useRef(null), [O, L] = s.useState(0), {
         analyticsLocations: M
     } = (0, m.Ay)(A.A.VOICE_INVITE_SUGGESTIONS);
-    (0, p.A)({
+    (0, _.A)({
         name: o.ImpressionNames.VOICE_INVITE_SUGGESTIONS_ENTRYPOINT,
         type: o.ImpressionTypes.VIEW,
         properties: {
@@ -50,7 +50,7 @@ function T(e) {
         w = s.useRef(null),
         {
             isHoveringOrFocusing: k
-        } = (0, _.A)(D ? T : w),
+        } = (0, p.A)(D ? T : w),
         [V, B] = s.useState(!1),
         H = k || V,
         F = s.useCallback(function() {

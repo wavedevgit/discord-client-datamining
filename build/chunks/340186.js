@@ -1,6 +1,6 @@
 /** chunk id: 340186 params = (module,exports,require) **/
 n.d(t, {
-    g: () => b
+    g: () => C
 });
 var i = n(934551),
     s = n(554146),
@@ -18,23 +18,23 @@ var i = n(934551),
     x = n(81453),
     p = n(289882),
     h = n(427887),
-    T = n(222323),
-    E = n(411476),
-    f = n(985018);
+    f = n(222323),
+    T = n(411476),
+    E = n(985018);
 let S = (0, l.t_)(r.X.CHAT_PANEL, {
-        useTitle: () => f.intl.string(f.t["/VQax8"]),
-        buildLayout: () => [g.M, u.f, m.z, h.J, x.n, T.p, E.U, A.W, p.o, _.c]
+        useTitle: () => E.intl.string(E.t["/VQax8"]),
+        buildLayout: () => [g.M, u.f, m.z, h.J, x.n, f.p, T.U, A.W, p.o, _.c]
     }),
-    C = [{
+    b = [{
         badgeType: a.Xi.STRONGLY_DISCOURAGED_CUSTOM,
         dismissibleContent: s.M.FAVORITES_GUILD_NEW_BADGE,
         StronglyDiscouragedCustomComponent: c.L
     }],
-    b = (0, l.i4)(r.X.CHAT_SIDEBAR_ITEM, {
-        useTitle: () => f.intl.string(f.t["/VQax8"]),
+    C = (0, l.i4)(r.X.CHAT_SIDEBAR_ITEM, {
+        useTitle: () => E.intl.string(E.t["/VQax8"]),
         icon: i.ChatIcon,
         usePredicate: () => !(0, o.Ci)("ChatSidebarItem"),
         useMenu: d.A,
-        getDismissibleBadges: () => C,
+        getDismissibleBadges: () => b,
         buildLayout: () => [S]
     })

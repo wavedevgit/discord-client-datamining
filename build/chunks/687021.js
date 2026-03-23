@@ -46,7 +46,7 @@ function h(e) {
         globalOption: n,
         onChange: l,
         renderOptionSuffix: a
-    } = e, c = (0, r.bG)([u.A], () => u.A.showNotice()), p = (0, r.bG)([_.Ay], () => _.Ay.getFlattenedGuildIds()), h = (0, r.bG)([m.A], () => m.A.getGuilds()), T = s.useMemo(() => {
+    } = e, c = (0, r.bG)([u.A], () => u.A.showNotice()), p = (0, r.bG)([_.Ay], () => _.Ay.getFlattenedGuildIds()), h = (0, r.bG)([m.A], () => m.A.getGuilds()), f = s.useMemo(() => {
         let e = p.map(e => {
             let t = h[e];
             return null == t ? null : {
@@ -55,7 +55,7 @@ function h(e) {
             }
         }).filter(g.Vq);
         return null != n && e.unshift(n), e
-    }, [p, h, n]), E = s.useCallback(e => {
+    }, [p, h, n]), T = s.useCallback(e => {
         let t = e?.label === n?.label && e?.value === n?.value;
         return null == e || "" === e.value || t ? null : (0, i.jsx)(d.Ay, {
             className: x.c,
@@ -72,8 +72,8 @@ function h(e) {
             null != t && l(t)
         },
         value: t,
-        options: T,
-        renderOptionPrefix: E,
+        options: f,
+        renderOptionPrefix: T,
         renderOptionSuffix: a,
         placeholder: A.intl.string(A.t["kMgj+e"]),
         "data-migration-pending": !0

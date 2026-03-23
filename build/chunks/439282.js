@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(713654),
     A = n(832163),
     m = n(565688),
-    p = n(533562),
-    _ = n(93879),
+    _ = n(533562),
+    p = n(93879),
     g = n(71393),
     f = n(576705),
     x = n(977997),
@@ -52,7 +52,7 @@ function L(e) {
     }, [l, f]), (0, c.Eq)(t, "VoiceChannelActivities");
     let N = (0, u.Ay)(l),
         b = Array.from((0, u.Rz)(N).values()),
-        S = (0, p.W)(),
+        S = (0, _.W)(),
         R = (0, d.mM)(f),
         L = (0, m.m)({
             location: "voice_channel_activities"
@@ -88,7 +88,7 @@ function L(e) {
                     channel: l,
                     members: n,
                     onAction: g
-                }), (0, i.jsx)(_.A, {
+                }), (0, i.jsx)(p.A, {
                     className: j.L,
                     rewardOfferNoticeClassName: j.Nh,
                     applicationId: r,

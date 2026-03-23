@@ -1,6 +1,6 @@
 /** chunk id: 163233 params = (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => T
 }), n(321073);
 var a = n(627968),
     i = n(64700),
@@ -24,13 +24,13 @@ var a = n(627968),
     A = n(518477),
     C = n(985018);
 
-function y(e) {
+function T(e) {
     let {
         targetElementRef: t,
         onClose: n
-    } = e, [y, T] = i.useState(!1), {
+    } = e, [T, E] = i.useState(!1), {
         trackUserProfileEditAction: S
-    } = (0, h.NJ)(), E = (0, s.bG)([v.default], () => v.default.getId()), N = function() {
+    } = (0, h.NJ)(), y = (0, s.bG)([v.default], () => v.default.getId()), N = function() {
         let e, t, n = (0, s.bG)([v.default], () => v.default.getId()),
             a = (0, g.A)(n),
             l = i.useMemo(() => a.filter(e => e instanceof x.R), [a]),
@@ -82,7 +82,7 @@ function y(e) {
             if (null == r) return null;
             let o = "linked" === r.type,
                 d = () => (0, _.openUserProfileModal)({
-                    userId: E,
+                    userId: y,
                     tabSection: A.RP.WIDGETS
                 }).then(() => {
                     s(j.i.TAKE_ACTION), n()
@@ -103,7 +103,7 @@ function y(e) {
                 actions: [o ? {
                     text: C.intl.string(C.t.VSLDly),
                     onClick: () => {
-                        T(!0), d().then(() => {
+                        E(!0), d().then(() => {
                             let e;
                             return e = new x.R({
                                 applicationId: r.application.id
@@ -111,20 +111,20 @@ function y(e) {
                                 action: "WIDGET_ADDED",
                                 ...e.getProfileEditAnalyticsOptions()
                             }), (0, f.XA)(A.jM.WIDGET_ADDED))
-                        }).finally(() => T(!1))
+                        }).finally(() => E(!1))
                     },
-                    loading: y
+                    loading: T
                 } : {
                     text: C.intl.string(C.t["DSJi3+"]),
                     onClick: () => {
                         r.authFlow.initiate({
                             onConfirm: () => {
-                                T(!0), d().finally(() => T(!1))
+                                E(!0), d().finally(() => E(!1))
                             },
                             analyticsLocations: I
                         })
                     },
-                    loading: y
+                    loading: T
                 }]
             })
         }

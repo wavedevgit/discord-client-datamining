@@ -1,7 +1,7 @@
 /** chunk id: 522861 params = (module,exports,require) **/
 n.d(t, {
-    LP: () => E,
-    nK: () => f
+    LP: () => T,
+    nK: () => E
 });
 var i = n(627968),
     s = n(64700),
@@ -53,7 +53,7 @@ function h(e) {
     let {
         userId: t,
         last: n
-    } = e, l = (0, r.bG)([m.A], () => m.A.isBlocked(t)), g = (0, r.bG)([_.default], () => _.default.getUser(t)), [p, h] = s.useState(!1), T = s.useCallback(() => {
+    } = e, l = (0, r.bG)([m.A], () => m.A.isBlocked(t)), g = (0, r.bG)([_.default], () => _.default.getUser(t)), [p, h] = s.useState(!1), f = s.useCallback(() => {
         h(!0), l ? d.A.unblockUser(t).catch(() => {
             h(!1)
         }) : d.A.unignoreUser(t, u.A.USER_SETTINGS).catch(() => {
@@ -84,13 +84,13 @@ function h(e) {
         }), (0, i.jsx)(o.Button, {
             variant: "secondary",
             text: A.intl.string(l ? A.t.XyHpKH : A.t["8wXU9B"]),
-            onClick: T,
+            onClick: f,
             loading: p
         })]
     })
 }
 
-function T(e) {
+function f(e) {
     let {
         userIds: t,
         listType: n
@@ -127,17 +127,17 @@ function T(e) {
     })
 }
 
-function E() {
+function T() {
     let e = (0, r.yK)([m.A], () => m.A.getBlockedIDs());
-    return (0, i.jsx)(T, {
+    return (0, i.jsx)(f, {
         userIds: e,
         listType: "blocked"
     })
 }
 
-function f() {
+function E() {
     let e = (0, r.yK)([m.A], () => m.A.getIgnoredIDs());
-    return (0, i.jsx)(T, {
+    return (0, i.jsx)(f, {
         userIds: e,
         listType: "ignored"
     })

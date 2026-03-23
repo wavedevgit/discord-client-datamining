@@ -16,8 +16,8 @@ var i = n(627968),
     h = n(298990),
     A = n(942857),
     m = n(646865),
-    p = n(833349),
-    _ = n(869003),
+    _ = n(833349),
+    p = n(869003),
     g = n(521588),
     f = n(688810),
     x = n(362490),
@@ -48,7 +48,7 @@ var i = n(627968),
     K = n(275540);
 
 function W(e, t, n) {
-    return null != e && (null != n ? n.applicationId === e.id : null != t && (t.application_id === e.id || e.linkedGames?.some(e => e.id === t.application_id)) && t.type === V.$pd.PLAYING && (0, p.A)(t, V.jUm.JOIN))
+    return null != e && (null != n ? n.applicationId === e.id : null != t && (t.application_id === e.id || e.linkedGames?.some(e => e.id === t.application_id)) && t.type === V.$pd.PLAYING && (0, _.A)(t, V.jUm.JOIN))
 }
 let Y = s.memo(function(e) {
         let {
@@ -57,7 +57,7 @@ let Y = s.memo(function(e) {
             guildId: r,
             isStreaming: c,
             channel: A,
-            canStream: p,
+            canStream: _,
             runningGame: g,
             embeddedActivity: I,
             frame: O,
@@ -89,13 +89,13 @@ let Y = s.memo(function(e) {
                 application_id: M.application_id,
                 location: Y.location
             }), (0, h.qf)(M, !1)
-        }, [M, Y, en, g]), ep = s.useCallback((e, t) => () => {
-            (0, C.X)(en, C.O.LEAVE_ACTIVITY), _.A.leaveActivity({
+        }, [M, Y, en, g]), e_ = s.useCallback((e, t) => () => {
+            (0, C.X)(en, C.O.LEAVE_ACTIVITY), p.A.leaveActivity({
                 location: t,
                 applicationId: e,
                 showFeedback: !0
             })
-        }, [en]), e_ = s.useCallback(e => () => {
+        }, [en]), ep = s.useCallback(e => () => {
             (0, C.X)(en, C.O.LEAVE_ACTIVITY), N.A.stopFrame({
                 applicationId: e
             })
@@ -203,7 +203,7 @@ let Y = s.memo(function(e) {
                 let s = null;
                 return c ? (e = !1, t = () => {
                     eg(), (0, C.X)(en, C.O.STREAM, !1)
-                }, n = u.GT3, s = H.intl.string(H.t.S5anIc)) : p ? (e = !1, t = () => {
+                }, n = u.GT3, s = H.intl.string(H.t.S5anIc)) : _ ? (e = !1, t = () => {
                     ef(), (0, C.X)(en, C.O.STREAM, !0)
                 }, n = u.Fzq, s = null != g ? H.intl.formatToPlainString(H.t.AB5gTy, {
                     game: g.name
@@ -225,12 +225,12 @@ let Y = s.memo(function(e) {
             }) : null,
             ej = null == I ? null : (0, i.jsx)(k.A, {
                 tooltipText: H.intl.string(H.t["R/FK4A"]),
-                onClick: ep(I.applicationId, I.location),
+                onClick: e_(I.applicationId, I.location),
                 icon: u.oLl
             }),
             eR = null == O ? null : (0, i.jsx)(k.A, {
                 tooltipText: H.intl.string(H.t["R/FK4A"]),
-                onClick: e_(O.applicationId),
+                onClick: ep(O.applicationId),
                 icon: u.oLl
             }),
             eO = null == t ? null : (0, i.jsx)(E.A, {}),
@@ -300,11 +300,11 @@ function q(e) {
             isQuestBarEmpty: h,
             hasLoadedQuestBar: m
         } = (0, O.c9)(),
-        [p, _] = (0, I.kn)(!d && h && m ? [c.M.GAME_DETECTION_CREATE_GAME_SERVER_COACHMARK] : [], void 0, !0),
+        [_, p] = (0, I.kn)(!d && h && m ? [c.M.GAME_DETECTION_CREATE_GAME_SERVER_COACHMARK] : [], void 0, !0),
         [f, x] = (0, I.kn)([c.M.GAME_SERVER_GAME_DETECTION_UPSELL_NEW_BADGE], void 0, !0),
         C = s.useCallback(() => {
-            _(B.i.TAKE_ACTION), x(B.i.TAKE_ACTION), n()
-        }, [_, x, n]);
+            p(B.i.TAKE_ACTION), x(B.i.TAKE_ACTION), n()
+        }, [p, x, n]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
             className: K.IF,
@@ -323,9 +323,9 @@ function q(e) {
                 right: 2,
                 alert: !0
             })]
-        }), null != p && a({
+        }), null != _ && a({
             targetElementRef: r,
-            markAsDismissed: _,
+            markAsDismissed: p,
             markBadgeAsDismissed: x
         })]
     })

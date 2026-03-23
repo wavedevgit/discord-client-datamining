@@ -19,9 +19,9 @@ function o(e) {
         clearable: u,
         usePersistentBadge: m,
         getDismissibleBadges: _
-    } = t, g = t.setValue, A = o(), x = d?.(), p = n(), h = c(), T = m?.(), E = _?.(), f = (0, l.A)({
-        persistentBadge: T,
-        dismissibleBadges: E
+    } = t, g = t.setValue, A = o(), x = d?.(), p = n(), h = c(), f = m?.(), T = _?.(), E = (0, l.A)({
+        persistentBadge: f,
+        dismissibleBadges: T
     }), S = (0, a.q)(t);
     return (0, i.jsx)(r.L, {
         children: (0, i.jsx)(s.l6P, {
@@ -36,7 +36,7 @@ function o(e) {
             },
             layout: "horizontal-responsive",
             fullWidth: !0,
-            badge: f
+            badge: E
         })
     })
 }

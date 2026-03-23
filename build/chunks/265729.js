@@ -18,15 +18,15 @@ var i = n(627968),
     x = n(807055),
     p = n(264779),
     h = n(35587),
-    T = n(982311),
-    E = n(465794),
-    f = n(212168),
+    f = n(982311),
+    T = n(465794),
+    E = n(212168),
     S = n(976860),
-    C = n(287809),
-    b = n(469778),
+    b = n(287809),
+    C = n(469778),
     N = n(45938),
-    I = n(927578),
-    v = n(780964),
+    v = n(927578),
+    I = n(780964),
     j = n(411121),
     y = n(12901),
     O = n(840065),
@@ -45,28 +45,28 @@ function M(e) {
         [d, u] = s.useState(!1),
         [m, A] = s.useState(!1),
         h = () => u(e => !e),
-        E = (0, _.Ay)(),
-        f = (0, p.WD)(n.id, E),
+        T = (0, _.Ay)(),
+        E = (0, p.WD)(n.id, T),
         S = null != l,
-        C = (0, x.A)(n, S);
+        b = (0, x.A)(n, S);
     S && d ? t = P.intl.format(P.t.pkxVx6, {
-        endDate: C,
+        endDate: b,
         onClickDetails: h
     }) : S && !d ? t = P.intl.format(P.t["4sFeob"], {
-        endDate: C,
+        endDate: b,
         onClickDetails: h
     }) : !S && d ? t = P.intl.format(P.t["RBnE+l"], {
-        endDate: C,
+        endDate: b,
         onClickDetails: h
     }) : S || d || (t = P.intl.format(P.t["57+7Qn"], {
-        endDate: C,
+        endDate: b,
         onClickDetails: h
     }));
-    let b = S ? P.intl.string(P.t["2cHUti"]) : P.intl.string(P.t.O13yhz),
+    let C = S ? P.intl.string(P.t["2cHUti"]) : P.intl.string(P.t.O13yhz),
         N = s.useCallback(() => A(!1), []),
         {
-            outboundTitle: I,
-            outboundTermsAndConditions: v
+            outboundTitle: v,
+            outboundTermsAndConditions: I
         } = n;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
@@ -79,13 +79,13 @@ function M(e) {
                         className: D.$G,
                         children: (0, i.jsx)("img", {
                             alt: "",
-                            src: f,
+                            src: E,
                             className: D.IJ
                         })
                     }), (0, i.jsxs)("div", {
                         children: [(0, i.jsx)(c.Heading, {
                             variant: "heading-md/semibold",
-                            children: I
+                            children: v
                         }), (0, i.jsx)(c.Text, {
                             variant: "text-sm/normal",
                             color: "text-default",
@@ -94,7 +94,7 @@ function M(e) {
                         })]
                     })]
                 }), !o && (0, i.jsx)(c.Button, {
-                    text: b,
+                    text: C,
                     onClick: () => A(!0),
                     disabled: o,
                     size: "sm"
@@ -103,12 +103,12 @@ function M(e) {
                 className: D.GL,
                 variant: "text-xs/normal",
                 color: "text-default",
-                children: g.A.parse(v, !1, {
+                children: g.A.parse(I, !1, {
                     allowLinks: !0
                 })
             })]
         }), m && (0, i.jsx)(c.aFV, {
-            renderModal: e => (0, i.jsx)(T.A, {
+            renderModal: e => (0, i.jsx)(f.A, {
                 ...e,
                 onClose: N,
                 onClaim: r,
@@ -122,19 +122,19 @@ function M(e) {
 let G = function(e) {
     let {
         inOldSettings: t = !1
-    } = e, n = (0, d.yK)([b.A], () => b.A.getGiftable()), [l, r] = o().partition(n, e => {
+    } = e, n = (0, d.yK)([C.A], () => C.A.getGiftable()), [l, r] = o().partition(n, e => {
         let {
             giftCodeBatchId: t
         } = e;
         return null == t
-    }), _ = (0, d.bG)([C.default], () => I.Ay.isPremiumExactly(C.default.getCurrentUser(), L.PremiumTypes.TIER_2)), g = o().groupBy(l, e => (0, N.Kx)(e.skuId, e.subscriptionPlanId, e.giftStyle)), [x, p] = s.useState(!1);
+    }), _ = (0, d.bG)([b.default], () => v.Ay.isPremiumExactly(b.default.getCurrentUser(), L.PremiumTypes.TIER_2)), g = o().groupBy(l, e => (0, N.Kx)(e.skuId, e.subscriptionPlanId, e.giftStyle)), [x, p] = s.useState(!1);
     s.useEffect(() => {
         u.h.wait(() => {
             (0, m.XJ)().then(() => p(!0))
         })
     }, []);
     let {
-        promotionsLoaded: T,
+        promotionsLoaded: f,
         activeOutboundPromotions: G,
         claimedEndedOutboundPromotions: k,
         claimedOutboundPromotionCodeMap: U,
@@ -145,7 +145,7 @@ let G = function(e) {
         autoTrackExposure: !1,
         disable: _
     }).enabled && V;
-    return x && T ? (0, i.jsxs)(i.Fragment, {
+    return x && f ? (0, i.jsxs)(i.Fragment, {
         children: [function() {
             let e = r.find(e => e.giftCodeBatchId === L.FB && !e.consumed),
                 n = r.filter(e => e.giftCodeBatchId === L.Bu && !e.consumed) ?? [],
@@ -173,7 +173,7 @@ let G = function(e) {
                                 (0, y.default)(), (0, S.pX)(R.BVt.APPLICATION_STORE)
                             }
                         })
-                    }), (0, i.jsx)(E.A, {
+                    }), (0, i.jsx)(T.A, {
                         showGradient: !0,
                         className: D.aA,
                         subscriptionTier: L.pe.TIER_2,
@@ -186,10 +186,10 @@ let G = function(e) {
                 className: t ? D.sW : void 0,
                 children: [d, V ? (0, i.jsx)(c.cGx, {
                     className: D.yF
-                }) : null, (0, i.jsx)(f.A, {
+                }) : null, (0, i.jsx)(E.A, {
                     className: D.Yj,
                     isShown: B,
-                    type: f.i.PREMIUM,
+                    type: E.i.PREMIUM,
                     hasBackground: !0,
                     children: (0, i.jsxs)("div", {
                         className: a()({
@@ -253,7 +253,7 @@ let G = function(e) {
                         className: D.WO,
                         children: P.intl.format(P.t.HezvJ8, {
                             onClick: function() {
-                                (0, O.openUserSettings)(v.X.NITRO_PANEL)
+                                (0, O.openUserSettings)(I.X.NITRO_PANEL)
                             }
                         })
                     })]

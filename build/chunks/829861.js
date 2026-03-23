@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(475743),
     A = n(775602),
     m = n(58149),
-    p = n(587837),
-    _ = n(473553),
+    _ = n(587837),
+    p = n(473553),
     g = n(964404),
     f = n(709562),
     x = n(383831),
@@ -92,7 +92,7 @@ function W(e) {
                 null != t && void 0 !== t && e.set(t.userId, t)
             }), e
         }, [eA]),
-        ep = function(e, t, n) {
+        e_ = function(e, t, n) {
             let i = (0, h.A)(e),
                 l = e !== i,
                 [a, r] = s.useState(!1);
@@ -116,7 +116,7 @@ function W(e) {
                 } : i
             }, [o, e, n, t])
         }(ee, et, t),
-        e_ = (0, P.G)();
+        ep = (0, P.G)();
     if (null == W) return null;
     let eg = [];
     null != eu && (eg = Array.from(eu.embeddedActivity.userIds).map(e => b.default.getUser(e)).filter(e => null != e && void 0 !== e));
@@ -140,8 +140,8 @@ function W(e) {
         children: e => (0, i.jsxs)("div", {
             className: a()(H.iE, K[Z], e),
             ref: $,
-            style: ep,
-            children: [l?.(), (0, i.jsx)(_.A, {
+            style: e_,
+            children: [l?.(), (0, i.jsx)(p.A, {
                 applicationId: W.id
             }), (0, i.jsxs)("div", {
                 className: H.lq,
@@ -198,7 +198,7 @@ function W(e) {
                                 color: "disconnect"
                             })
                         })]
-                    }), e_ ? (0, i.jsx)(C.A, {
+                    }), ep ? (0, i.jsx)(C.A, {
                         popoutOpen: !1,
                         onOpenPopout: () => {
                             (0, m.zV)(V.HAw.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, G.A)({
@@ -210,7 +210,7 @@ function W(e) {
                         onClosePopout: () => {}
                     }) : null]
                 }) : null]
-            }), ee && null != t ? (0, i.jsx)(p.A, {
+            }), ee && null != t ? (0, i.jsx)(_.A, {
                 minHeight: 480,
                 maxHeight: t,
                 resizableNode: $,

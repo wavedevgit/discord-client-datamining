@@ -30,10 +30,10 @@ let u = e => {
         h = s.useCallback(e => ({
             x: (e - m) * 100
         }), [m]),
-        [T, E] = (0, o.mX6)(t.length, h);
+        [f, T] = (0, o.mX6)(t.length, h);
     return s.useEffect(() => {
-        E(h)
-    }, [E, h]), (0, i.jsx)("div", {
+        T(h)
+    }, [T, h]), (0, i.jsx)("div", {
         className: n,
         children: (0, i.jsxs)("div", {
             className: c.Ui,
@@ -51,7 +51,7 @@ let u = e => {
                 })
             }), (0, i.jsx)("div", {
                 className: c.C8,
-                children: T.map((e, n) => {
+                children: f.map((e, n) => {
                     let {
                         x: s
                     } = e;

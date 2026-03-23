@@ -1,6 +1,6 @@
 /** chunk id: 157839 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => E
 });
 var i = n(627968),
     s = n(64700),
@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(975662),
     p = n(322631),
     h = n(17307),
-    T = n(609195);
-let E = e => {
+    f = n(609195);
+let T = e => {
         let {
             showAllPerksButton: t,
             leftAlignHeaders: n,
@@ -28,35 +28,35 @@ let E = e => {
         } = e, a = (0, i.jsx)(o.Heading, {
             variant: "heading-xxl/extrabold",
             color: "text-strong",
-            className: null != l ? l : T.R_,
+            className: null != l ? l : f.R_,
             children: s
         });
         return null == t ? a : n ? (0, i.jsxs)("div", {
-            className: T.bV,
+            className: f.bV,
             children: [a, null != t && (0, i.jsx)("div", {
-                className: T.W0,
+                className: f.W0,
                 children: t
             })]
         }) : (0, i.jsx)("div", {
-            className: T.kL,
+            className: f.kL,
             children: (0, i.jsx)("div", {
-                className: T.pr,
+                className: f.pr,
                 children: a
             })
         })
     },
-    f = e => {
+    E = e => {
         let {
             className: t,
             variant: n,
             noBackground: l = !1,
-            leftAlignHeaders: f = !1,
+            leftAlignHeaders: E = !1,
             showAllPerksButton: S,
-            headerClassname: C
-        } = e, b = s.useRef(null), N = n === p.cJ.WHATS_NEW, I = (0, r.bG)([c.default], () => c.default.getCurrentUser()), v = (0, A.E)();
+            headerClassname: b
+        } = e, C = s.useRef(null), N = n === p.cJ.WHATS_NEW, v = (0, r.bG)([c.default], () => c.default.getCurrentUser()), I = (0, A.E)();
         s.useEffect(() => {
-            N && v()
-        }, [v, N]);
+            N && I()
+        }, [I, N]);
         let j = (0, h.G4)(N),
             y = (0, x.A)(),
             O = (0, h.LQ)(),
@@ -77,37 +77,37 @@ let E = e => {
                 isInReverseTrial: L,
                 recurring3PPromotionExperiment: P,
                 showPremiumGroup: D,
-                isPremiumGroupMember: I?.isPremiumGroupMember()
+                isPremiumGroupMember: v?.isPremiumGroupMember()
             }),
             G = M.some(e => null != e.pillText);
         return (0, i.jsxs)("div", {
-            ref: b,
-            className: a()(T.uW, {
-                [T.qO]: !f,
-                [T.Uv]: f
+            ref: C,
+            className: a()(f.uW, {
+                [f.qO]: !E,
+                [f.Uv]: E
             }, t),
-            children: [(0, i.jsx)(E, {
+            children: [(0, i.jsx)(T, {
                 showAllPerksButton: S,
-                leftAlignHeaders: f,
+                leftAlignHeaders: E,
                 title: j.title,
-                headerClassname: C
+                headerClassname: b
             }), (0, i.jsx)(o.Text, {
                 variant: "text-lg/normal",
                 color: "text-strong",
-                className: a()(T.VA, {
-                    [T.VA]: null == S || f,
-                    [T.Xx]: null != S && !f,
-                    [T.Ij]: N || f,
-                    [T.Ob]: G,
-                    [T.dO]: f,
-                    [T.br]: !f
+                className: a()(f.VA, {
+                    [f.VA]: null == S || E,
+                    [f.Xx]: null != S && !E,
+                    [f.Ij]: N || E,
+                    [f.Ob]: G,
+                    [f.dO]: E,
+                    [f.br]: !E
                 }),
                 children: j.subtitle
-            }), !f && null != S && (0, i.jsx)("div", {
-                className: T.xk,
+            }), !E && null != S && (0, i.jsx)("div", {
+                className: f.xk,
                 children: S
             }), (0, i.jsx)("div", {
-                className: T.Ui,
+                className: f.Ui,
                 children: M.map((e, t) => (0, i.jsx)(g.A, {
                     ...e,
                     forceShadow: l

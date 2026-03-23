@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(688810),
     A = n(709066),
     m = n(87664),
-    p = n(485947),
-    _ = n(111864),
+    _ = n(485947),
+    p = n(111864),
     g = n(342296),
     f = n(290863),
     x = n(994500),
@@ -39,7 +39,7 @@ function L(e) {
         channel: r,
         status: u,
         activities: h
-    } = e, A = (0, a.bG)([C.A], () => null != C.A.getTypingUsers(r.id)[t.id]), p = (0, a.bG)([E.default], () => E.default.getCurrentUser()), I = (0, a.bG)([f.A], () => f.A.isMobileOnline(t.id)), b = (0, a.bG)([x.A], () => x.A.getNickname(t.id)), T = (0, m.A)(t.id), j = s.useRef(null), R = e => {
+    } = e, A = (0, a.bG)([C.A], () => null != C.A.getTypingUsers(r.id)[t.id]), _ = (0, a.bG)([E.default], () => E.default.getCurrentUser()), I = (0, a.bG)([f.A], () => f.A.isMobileOnline(t.id)), b = (0, a.bG)([x.A], () => x.A.getNickname(t.id)), T = (0, m.A)(t.id), j = s.useRef(null), R = e => {
         (0, o.L3)(e, async () => {
             let {
                 default: e
@@ -59,7 +59,7 @@ function L(e) {
             plainText: e,
             rawText: n
         }), c.A.startTyping(r.id)
-    }, M = (0, _.r)({
+    }, M = (0, p.r)({
         user: t
     }), [D, G] = s.useState(!1);
     return (0, i.jsx)(g.A, {
@@ -80,7 +80,7 @@ function L(e) {
             return (0, i.jsx)(d.A, {
                 ref: j,
                 user: t,
-                currentUser: p,
+                currentUser: _,
                 isOwner: t.id === r.ownerId,
                 ownerTooltipText: y.intl.string(y.t["MRXZ+x"]),
                 shouldAnimateStatus: O,
@@ -163,7 +163,7 @@ function D(e) {
                 children: (0, i.jsxs)(r.HOs, {
                     className: j.ol,
                     fade: !0,
-                    children: [(0, i.jsxs)(p.A, {
+                    children: [(0, i.jsxs)(_.A, {
                         className: j.lL,
                         children: [`${y.intl.string(y.t["9Oq93m"])}—${c.length} `, d && (0, i.jsx)(A.A, {
                             type: A.A.Types.STAFF_ONLY_DM

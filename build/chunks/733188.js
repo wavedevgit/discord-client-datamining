@@ -1,6 +1,6 @@
 /** chunk id: 733188 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => E
 });
 var i = n(627968),
     s = n(64700),
@@ -23,7 +23,7 @@ let h = new m.nA({
         type: A.rbe.GUILD_TEXT,
         name: "preview"
     }),
-    T = [{
+    f = [{
         status: a.clD.IDLE,
         discriminator: "2"
     }, {
@@ -35,7 +35,7 @@ let h = new m.nA({
         discriminator: "4"
     }];
 
-function E(e) {
+function T(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [];
     return (0, o.rh)({
         ...(0, d.Ay)({
@@ -47,10 +47,10 @@ function E(e) {
     })
 }
 
-function f() {
+function E() {
     let e = g.hH.useSetting(),
         t = g.jW.useSetting(),
-        n = s.useMemo(() => [E(x.intl.formatToPlainString(x.t.BknJRT, {}), t ? [{
+        n = s.useMemo(() => [T(x.intl.formatToPlainString(x.t.BknJRT, {}), t ? [{
             emoji: {
                 id: null,
                 name: "\uD83E\uDD40",
@@ -70,7 +70,7 @@ function f() {
             count: 1,
             me_burst: !1,
             burst_count: 0
-        }] : []), E(x.intl.formatToPlainString(x.t["4rDfgM"], {}))], [t]),
+        }] : []), T(x.intl.formatToPlainString(x.t["4rDfgM"], {}))], [t]),
         o = (0, l.bG)([r.A], () => r.A.messageGroupSpacing);
     return (0, i.jsx)(a.M1G, {
         children: (0, i.jsxs)("section", {
@@ -102,7 +102,7 @@ function f() {
                     className: p.Jb,
                     children: [(0, i.jsx)("div", {
                         className: p.HD,
-                        children: T.map(e => {
+                        children: f.map(e => {
                             let {
                                 status: t,
                                 discriminator: n,

@@ -23,10 +23,10 @@ var a = n(627968),
     j = n(516226),
     A = n(720875),
     C = n(713457),
-    y = n(419367),
-    T = n(985018),
+    T = n(419367),
+    E = n(985018),
     S = n(196240);
-let E = async () => await n.e("40119").then(n.t.bind(n, 718698, 19));
+let y = async () => await n.e("40119").then(n.t.bind(n, 718698, 19));
 
 function N(e) {
     let {
@@ -34,12 +34,12 @@ function N(e) {
         questContent: n,
         isHovering: s,
         contentPosition: N,
-        rowIndex: k,
-        isVisibleInViewport: O,
-        onReceiveErrorHints: R,
+        rowIndex: O,
+        isVisibleInViewport: R,
+        onReceiveErrorHints: k,
         sourceQuestContent: w
-    } = e, D = i.useRef(null), M = (0, _.mq)(t.config), P = (0, _.mH)(t.config), U = t.userStatus?.enrolledAt != null, {
-        ref: L,
+    } = e, D = i.useRef(null), M = (0, _.mq)(t.config), P = (0, _.mH)(t.config), L = t.userStatus?.enrolledAt != null, {
+        ref: U,
         scrollHeight: B
     } = (0, c.wR)(), G = 104 !== B, {
         onAssetLoadComplete: F
@@ -48,13 +48,13 @@ function N(e) {
     } = (0, d.zhh)({
         expansionSpring: +!!s,
         config: {
-            ...y.N,
+            ...T.N,
             clamp: !0
         }
-    }), W = t.userStatus?.completedAt != null, H = t.userStatus?.claimedAt != null, K = (0, _.ks)(t.config), z = (0, _._Z)(t.config), {
+    }), H = t.userStatus?.completedAt != null, W = t.userStatus?.claimedAt != null, K = (0, _.ks)(t.config), z = (0, _._Z)(t.config), {
         completedRatio: $,
         completedRatioDisplay: q
-    } = (0, p.O9)(t), Q = (0, x.gj)(t, w, m.Ob.QuestHome, D), Y = i.useMemo(() => H && K ? T.intl.format(T.t["8Op4c4"], {
+    } = (0, p.O9)(t), Y = (0, x.gj)(t, w, m.Ob.QuestHome, D), Q = i.useMemo(() => W && K ? E.intl.format(E.t["8Op4c4"], {
         balanceHook: () => (0, a.jsxs)(I, {
             questId: t.id,
             children: [(0, a.jsx)(h.A, {
@@ -63,10 +63,10 @@ function N(e) {
                 customSize: 14
             }), z]
         }, t.id)
-    }) : H ? (0, a.jsx)(I, {
+    }) : W ? (0, a.jsx)(I, {
         questId: t.id,
         children: M
-    }) : K ? T.intl.format(T.t.ro1sze, {
+    }) : K ? E.intl.format(E.t.ro1sze, {
         balanceHook: () => (0, a.jsxs)(I, {
             questId: t.id,
             children: [(0, a.jsx)(h.A, {
@@ -75,19 +75,19 @@ function N(e) {
                 customSize: 14
             }), z]
         }, t.id)
-    }) : T.intl.format(T.t["0IUT4Y"], {
+    }) : E.intl.format(E.t["0IUT4Y"], {
         rewardWithArticleHook: () => (0, a.jsx)(I, {
             questId: t.id,
             children: P
         }, t.id)
-    }), [M, H, P, t.id, z, K]), J = i.useMemo(() => {
-        if (null != Q) return (0, a.jsx)(d.Text, {
+    }), [M, W, P, t.id, z, K]), J = i.useMemo(() => {
+        if (null != Y) return (0, a.jsx)(d.Text, {
             variant: "text-sm/medium",
             color: "text-muted",
             className: S.h_,
-            children: Q
+            children: Y
         })
-    }, [Q]), X = (0, o.bG)([u.A], () => u.A.useReducedMotion);
+    }, [Y]), X = (0, o.bG)([u.A], () => u.A.useReducedMotion);
     return (0, a.jsxs)("div", {
         className: S.kL,
         ref: D,
@@ -97,17 +97,17 @@ function N(e) {
             },
             className: S.z,
             children: [(0, a.jsx)(A.A, {
-                showPlaceholder: !O,
+                showPlaceholder: !R,
                 width: 80,
                 height: 80,
                 children: (0, a.jsxs)("div", {
                     className: S.c6,
-                    children: [!H && W && (0, a.jsx)("div", {
+                    children: [!W && H && (0, a.jsx)("div", {
                         className: S.Nz
-                    }), U ? (0, a.jsxs)("div", {
+                    }), L ? (0, a.jsxs)("div", {
                         className: S.Tr,
-                        children: [W && (0, a.jsx)(d.akl, {
-                            importData: E,
+                        children: [H && (0, a.jsx)(d.akl, {
+                            importData: y,
                             className: S.t_,
                             loop: !1,
                             autoplay: !1,
@@ -137,7 +137,7 @@ function N(e) {
                     })]
                 })
             }), (0, a.jsxs)("div", {
-                ref: L,
+                ref: U,
                 className: l()(S.FS, {
                     [S.wq]: !G
                 }),
@@ -145,14 +145,14 @@ function N(e) {
                     variant: "eyebrow",
                     color: "text-brand",
                     className: S.G$,
-                    children: T.intl.format(T.t.EAYZAr, {
+                    children: E.intl.format(E.t.EAYZAr, {
                         questName: t.config.messages.questName
                     })
                 }), (0, a.jsx)(d.Text, {
                     variant: "text-md/semibold",
                     color: "text-strong",
                     className: S.wx,
-                    children: Y
+                    children: Q
                 }), J]
             }), G && (0, a.jsx)(r.animated.div, {
                 style: {
@@ -164,8 +164,8 @@ function N(e) {
             quest: t,
             questContent: n,
             contentPosition: N,
-            rowIndex: k,
-            onReceiveErrorHints: R,
+            rowIndex: O,
+            onReceiveErrorHints: k,
             sourceQuestContent: w
         })]
     })

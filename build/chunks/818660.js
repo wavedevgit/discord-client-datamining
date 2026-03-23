@@ -18,15 +18,15 @@ var i = n(627968),
     x = n(734066),
     p = n(880144),
     h = n(168943),
-    T = n(680243),
-    E = n(843401),
-    f = n(430452),
+    f = n(680243),
+    T = n(843401),
+    E = n(430452),
     S = n(532624),
-    C = n(975571),
-    b = n(723702),
+    b = n(975571),
+    C = n(723702),
     N = n(350535),
-    I = n(790174),
-    v = n(331969),
+    v = n(790174),
+    I = n(331969),
     j = n(652215),
     y = n(650583),
     O = n(985018),
@@ -74,7 +74,7 @@ class D extends s.PureComponent {
         }) : y.Yy.has(t) ? (0, i.jsx)(c.po8, {
             messageType: c.YCn.ERROR,
             children: O.intl.format(O.t.MOIaNd, {
-                keyboardNavArticle: C.A.getArticleURL(j.MVz.KEYBOARD_NAVIGATION)
+                keyboardNavArticle: b.A.getArticleURL(j.MVz.KEYBOARD_NAVIGATION)
             })
         }) : (0, i.jsx)(c.Text, {
             variant: "text-md/normal",
@@ -137,7 +137,7 @@ class D extends s.PureComponent {
         let {
             action: e
         } = this.props.keybind;
-        return e === j.hCu.SWITCH_TO_VOICE_CHANNEL ? (0, i.jsx)(v.A, {
+        return e === j.hCu.SWITCH_TO_VOICE_CHANNEL ? (0, i.jsx)(I.A, {
             keybind: this.props.keybind
         }) : void 0
     }
@@ -199,11 +199,11 @@ class M extends s.PureComponent {
             id: "activate-overlay-region-text-widget",
             value: j.hCu.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET,
             label: O.intl.string(O.t.hurHWo)
-        })), t && ((0, b.isWindows)() || f.Ay.getUseSystemScreensharePicker()) && l.push({
+        })), t && ((0, C.isWindows)() || E.Ay.getUseSystemScreensharePicker()) && l.push({
             id: "toggle-go-live-streaming",
             value: j.hCu.TOGGLE_GO_LIVE_STREAMING,
             label: O.intl.string(O.t.ybdjJD)
-        }), (0, b.isDesktop)() && (l.push({
+        }), (0, C.isDesktop)() && (l.push({
             id: "navigate-back",
             value: j.hCu.NAVIGATE_BACK,
             label: O.intl.string(O.t.gRSaOa)
@@ -254,7 +254,7 @@ class M extends s.PureComponent {
             [j.hCu.TOGGLE_STREAMER_MODE]: O.intl.string(O.t.YszLLx),
             [j.hCu.VAD_PRIORITY]: O.intl.string(O.t.rSe8IZ)
         };
-        return (0, h.L)() && (s[j.hCu.TOGGLE_CAMERA] = O.intl.string(O.t.v1JBtL)), e && (s[j.hCu.TOGGLE_OVERLAY_INPUT_LOCK] = O.intl.string(O.t.IoP5vc)), t && (0, b.isWindows)() && (s[j.hCu.TOGGLE_GO_LIVE_STREAMING] = O.intl.string(O.t.s4C238)), (0, b.isDesktop)() && (s[j.hCu.NAVIGATE_BACK] = O.intl.string(O.t.nKDlEt), s[j.hCu.NAVIGATE_FORWARD] = O.intl.string(O.t.DK0FFk), s[j.hCu.SOUNDBOARD] = (0, b.isWindows)() ? O.intl.string(O.t["5wJefL"]) : O.intl.string(O.t.gzjsSP), s[j.hCu.SOUNDBOARD_HOLD] = (0, b.isWindows)() ? O.intl.string(O.t.RRkZc9) : O.intl.string(O.t.laNlTl), n && (s[j.hCu.SAVE_CLIP] = O.intl.string(O.t.z3Wbam), i && (s[j.hCu.SAVE_SCREENSHOT] = O.intl.string(O.t.m0zd57)))), s
+        return (0, h.L)() && (s[j.hCu.TOGGLE_CAMERA] = O.intl.string(O.t.v1JBtL)), e && (s[j.hCu.TOGGLE_OVERLAY_INPUT_LOCK] = O.intl.string(O.t.IoP5vc)), t && (0, C.isWindows)() && (s[j.hCu.TOGGLE_GO_LIVE_STREAMING] = O.intl.string(O.t.s4C238)), (0, C.isDesktop)() && (s[j.hCu.NAVIGATE_BACK] = O.intl.string(O.t.nKDlEt), s[j.hCu.NAVIGATE_FORWARD] = O.intl.string(O.t.DK0FFk), s[j.hCu.SOUNDBOARD] = (0, C.isWindows)() ? O.intl.string(O.t["5wJefL"]) : O.intl.string(O.t.gzjsSP), s[j.hCu.SOUNDBOARD_HOLD] = (0, C.isWindows)() ? O.intl.string(O.t.RRkZc9) : O.intl.string(O.t.laNlTl), n && (s[j.hCu.SAVE_CLIP] = O.intl.string(O.t.z3Wbam), i && (s[j.hCu.SAVE_SCREENSHOT] = O.intl.string(O.t.m0zd57)))), s
     }
     handleAddKeybind = () => {
         u.A.addKeybind()
@@ -286,10 +286,10 @@ class M extends s.PureComponent {
             enableScreenshotKeybind: t
         } = this.props, n = a()(this.props.keybinds).reject(e => e.managed && ![j.hCu.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, j.hCu.SAVE_CLIP, j.hCu.SAVE_SCREENSHOT].includes(e.action)).reject(t => !e && (t.action === j.hCu.SAVE_CLIP || t.action === j.hCu.SAVE_SCREENSHOT)).reject(e => !t && e.action === j.hCu.SAVE_SCREENSHOT).reject(e => !this.props.allowSoundboard && (e.action === j.hCu.SOUNDBOARD || e.action === j.hCu.SOUNDBOARD_HOLD)).sortBy(e => e.id).sortBy(e => !0 === e.managed ? -1 : 0).value(), l = a()((0, g.Bx)()).filter(e => e.description !== O.intl.string(O.t.HnNtEI)).groupBy(e => e.group).value();
         return (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(I.A, {
+            children: [(0, i.jsx)(v.A, {
                 title: O.intl.string(O.t.T9DA2K),
                 className: L.IE,
-                children: b.isPlatformEmbedded ? (0, i.jsxs)(i.Fragment, {
+                children: C.isPlatformEmbedded ? (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsxs)("div", {
                         className: R.OQ,
                         children: [this.renderKeybindWarning(), (0, i.jsx)("div", {
@@ -301,7 +301,7 @@ class M extends s.PureComponent {
                                 variant: "primary"
                             })
                         })]
-                    }), (0, i.jsx)(E.A, {
+                    }), (0, i.jsx)(T.A, {
                         className: R.Qo,
                         sourcePage: "keybinds"
                     }), n.length > 0 && (0, i.jsxs)(i.Fragment, {
@@ -375,15 +375,15 @@ function G() {
         u.A.enableAll(!0)
     }), []);
     let e = (0, r.bG)([S.Ay], () => S.Ay.getState()),
-        t = (0, r.bG)([f.Ay], () => (0, p.A)(f.Ay)),
-        n = (0, r.bG)([T.A], () => T.A.isSupported),
+        t = (0, r.bG)([E.Ay], () => (0, p.A)(E.Ay)),
+        n = (0, r.bG)([f.A], () => f.A.isSupported),
         l = (0, x.sw)(),
         a = (0, x.BW)();
     return (0, i.jsx)(M, {
         keybinds: e,
         canGoLive: t,
         overlaySupported: n,
-        allowSoundboard: (0, b.isWindows)(),
+        allowSoundboard: (0, C.isWindows)(),
         enableClips: l,
         enableScreenshotKeybind: a
     })

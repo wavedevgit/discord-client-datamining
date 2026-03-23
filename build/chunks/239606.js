@@ -219,11 +219,11 @@ function eN(e) {
             size: 1024
         }),
         e8 = n.useMemo(() => eC ?? (0, g.A)(), [eC]),
-        e5 = (0, eA.A)({
+        e2 = (0, eA.A)({
             user: l,
             currentUser: t
         }),
-        e2 = (0, f.q)({
+        e5 = (0, f.q)({
             userId: l.id
         }),
         e3 = (0, h.fi)(l.id),
@@ -405,10 +405,10 @@ function eN(e) {
                                                 }), eQ?.bio != null && eQ?.bio !== "" && !e6 && (0, i.jsx)(z.A, {
                                                     userBio: eQ.bio,
                                                     setLineClamp: !1
-                                                }), e2.length > 0 && (0, i.jsx)(ed.A, {
+                                                }), e5.length > 0 && (0, i.jsx)(ed.A, {
                                                     heading: eh.intl.string(eh.t["Uv/eTx"]),
                                                     children: (0, i.jsx)($.A, {
-                                                        applicationIds: e2
+                                                        applicationIds: e5
                                                     })
                                                 }), (0, i.jsx)(ed.A, {
                                                     heading: eh.intl.string(eh.t.a6XYD9),
@@ -452,7 +452,7 @@ function eN(e) {
                                             displayProfile: eQ,
                                             guildId: eU,
                                             channelId: S,
-                                            items: e5,
+                                            items: e2,
                                             initialSection: ey,
                                             onClose: e_
                                         })]

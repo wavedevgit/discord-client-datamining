@@ -20,8 +20,8 @@ function u(e) {
         centerButton: h = !1,
         awaitingRemote: A,
         onMouseEnter: m,
-        onMouseLeave: p,
-        onClick: _,
+        onMouseLeave: _,
+        onClick: p,
         ...g
     } = e, {
         parentAnalyticsLocation: f
@@ -40,10 +40,10 @@ function u(e) {
             m?.(e), I.onMouseEnter()
         },
         onMouseLeave: e => {
-            p?.(e), I.onMouseLeave()
+            _?.(e), I.onMouseLeave()
         },
         onClick: e => {
-            _?.(e), (0, o.X)(f, o.O.MIC, t)
+            p?.(e), (0, o.X)(f, o.O.MIC, t)
         },
         ...g
     })

@@ -1,7 +1,7 @@
 /** chunk id: 396495 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    b: () => _
+    b: () => p
 });
 var i = n(627968);
 n(64700);
@@ -17,7 +17,7 @@ var s = n(503698),
     A = n(985018),
     m = n(792427);
 
-function p(e) {
+function _(e) {
     let {
         hidden: t,
         onDismiss: n
@@ -72,13 +72,13 @@ function p(e) {
     })
 }
 
-function _(e) {
+function p(e) {
     let {
         ...t
     } = e;
     return (0, i.jsx)(u.x, {
         ...t,
-        renderComponent: e => (0, i.jsx)(p, {
+        renderComponent: e => (0, i.jsx)(_, {
             ...e
         })
     })

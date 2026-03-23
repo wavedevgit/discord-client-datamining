@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(311907),
     A = n(52133),
     m = n(568598),
-    p = n(313961),
-    _ = n(246356),
+    _ = n(313961),
+    p = n(246356),
     g = n(178213),
     f = n(332772),
     x = n(594832),
@@ -63,7 +63,7 @@ function B(e) {
     });
     let B = (0, h.bG)([y.A], () => y.A.getStorefrontDetectableGameAndApplicationIds()),
         F = (0, R.W)(),
-        [K] = (0, h.bG)([p.A], () => null != d.id ? [p.A.getParticipants(d.id), p.A.getParticipantsVersion(d.id)] : [
+        [K] = (0, h.bG)([_.A], () => null != d.id ? [_.A.getParticipants(d.id), _.A.getParticipantsVersion(d.id)] : [
             [], 0
         ], [d.id], m.hS),
         [W, Y] = (0, h.bG)([b.A], () => {
@@ -140,7 +140,7 @@ function B(e) {
             channel_id: d.id,
             sku_ids: $.map(e => e.id)
         })
-    }, [d.id, d.guild_id, $]), (0, i.jsx)(_.A, {
+    }, [d.id, d.guild_id, $]), (0, i.jsx)(p.A, {
         children: (0, i.jsx)(u.lGe, {
             "aria-labelledby": w,
             modal: !1,

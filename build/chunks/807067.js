@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(688810),
     A = n(735991),
     m = n(786115),
-    p = n(975412),
-    _ = n(392054),
+    _ = n(975412),
+    p = n(392054),
     g = n(354138),
     f = n(111042),
     x = n(767599),
@@ -40,7 +40,7 @@ function L(e) {
             onClick: h
         } = e,
         {
-            fetchState: _,
+            fetchState: p,
             voiceBannerCollection: C
         } = (t = (0, c.bG)([I.default], () => I.default.onlyShowPreviewAppCollections) ? a.W.PREVIEW : a.W.ACTIVE, s.useEffect(() => {
             (0, g.An)({
@@ -57,7 +57,7 @@ function L(e) {
                 activeState: t
             }))[0]
         }),
-        E = _ === f.e.FETCHING,
+        E = p === f.e.FETCHING,
         N = s.useMemo(() => {
             let e = C?.application_directory_collection_items[0];
             return null == e ? null : e.type === o.L.APPLICATION_BANNER ? e : null
@@ -80,7 +80,7 @@ function L(e) {
         className: j.V8,
         innerRef: b,
         onClick: () => {
-            h(), (0, p.A)({
+            h(), (0, _.A)({
                 context: {
                     type: "channel",
                     channel: l
@@ -137,7 +137,7 @@ let M = s.forwardRef(function(e, t) {
         return () => clearTimeout(e)
     }, []);
     let G = s.useCallback(() => {
-            (0, p.A)({
+            (0, _.A)({
                 context: null != l ? {
                     type: "channel",
                     channel: l
@@ -218,7 +218,7 @@ let M = s.forwardRef(function(e, t) {
                             },
                             aspectRatio: T.C.AspectRatio.THIRTEEN_BY_ELEVEN,
                             animatedDivClass: j.KU,
-                            commandOrigin: _.iw.MINI_SHELF
+                            commandOrigin: p.iw.MINI_SHELF
                         }, e.application.id))
                     })]
                 })]

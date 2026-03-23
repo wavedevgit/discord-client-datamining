@@ -23,10 +23,10 @@ let o = function(e) {
     s.useEffect(() => {
         (0, a.Bf)(h, A, m)
     }, [h, A, m]);
-    let p = s.useCallback(() => {
+    let _ = s.useCallback(() => {
             (0, a.mU)(a.IY.NSFW_CHANNEL_DISAGREE_CTA, h, A, m), u?.()
         }, [u, h, A, m]),
-        _ = s.useCallback(() => {
+        p = s.useCallback(() => {
             (0, a.mU)(a.IY.NSFW_CHANNEL_AGREE_CTA, h, A, m), d?.()
         }, [d, h, A, m]);
     return (0, i.jsxs)(l.BJc, {
@@ -58,9 +58,9 @@ let o = function(e) {
             children: [null != c && null != u ? (0, i.jsx)(l.Button, {
                 variant: "secondary",
                 text: c,
-                onClick: p
+                onClick: _
             }) : null, null != o && null != d ? (0, i.jsx)(l.Button, {
-                onClick: _,
+                onClick: p,
                 text: o
             }) : null]
         })]

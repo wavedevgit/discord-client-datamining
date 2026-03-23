@@ -1,7 +1,7 @@
 /** chunk id: 369915 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => p
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -15,11 +15,11 @@ var i = n(627968),
     h = n(403362),
     A = n(842452),
     m = n(305928),
-    p = n(652215);
-let _ = s.memo(function(e) {
+    _ = n(652215);
+let p = s.memo(function(e) {
     let {
         folderNode: t,
-        ..._
+        ...p
     } = e, {
         id: g,
         name: f,
@@ -31,7 +31,7 @@ let _ = s.memo(function(e) {
                     n = u.A.getGuild(t);
                 return null != n ? n.name : null
             }).filter(h.Vq),
-            n = 2 * p.F05,
+            n = 2 * _.F05,
             i = [];
         for (let e of t)(e.length < n || 0 === i.length) && (i.push(e), n -= e.length);
         return `${i.join(", ")}${i.length<t.length?", ...":""}`
@@ -60,7 +60,7 @@ let _ = s.memo(function(e) {
         })
     }, [g, f, x, y, T]);
     return (0, i.jsx)(A.A, {
-        ..._,
+        ...p,
         folderNode: t,
         expanded: N,
         selected: null != I && E.includes(I),

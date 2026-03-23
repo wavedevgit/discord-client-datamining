@@ -25,15 +25,15 @@ function p() {
         {
             goreContentGuilds: p,
             goreContentFriendDm: h,
-            goreContentNonFriendDm: T
+            goreContentNonFriendDm: f
         } = (0, d.g)(),
-        E = e => {
+        T = e => {
             let t = Object.values(e);
             (0, r.hK)() && t.includes(s.TO.SHOW) ? l.A.showAgeVerificationGetStartedModal({
                 entryPoint: a.q1.SENSITIVE_MEDIA_FILTER_SETTINGS
             }) : (0, o.qY)(e)
         },
-        f = [{
+        E = [{
             value: s.TO.BLUR,
             label: A.intl.string(A.t.S49Uad)
         }, {
@@ -44,12 +44,12 @@ function p() {
             value: s.TO.BLUR,
             label: A.intl.string(A.t.S49Uad)
         }],
-        C = {
+        b = {
             value: s.TO.SHOW,
             label: A.intl.string(A.t["5k5OFp"])
         };
-    e && (f.unshift(C), S.unshift(C));
-    let b = {
+    e && (E.unshift(b), S.unshift(b));
+    let C = {
         isDisabled: n,
         tooltipText: t ? A.intl.string(x.default["6Af/cw"]) : void 0
     };
@@ -58,23 +58,23 @@ function p() {
         children: [(0, i.jsx)(g.A, {
             title: A.intl.string(A.t["+uI23H"]),
             value: h,
-            onChange: e => E({
+            onChange: e => T({
                 goreContentFriendDm: e
             }),
-            options: f,
-            ...b
+            options: E,
+            ...C
         }), (0, i.jsx)(g.A, {
             title: A.intl.string(A.t["Yh+HX1"]),
-            value: T,
-            onChange: e => E({
+            value: f,
+            onChange: e => T({
                 goreContentNonFriendDm: e
             }),
-            options: f,
-            ...b
+            options: E,
+            ...C
         }), (0, i.jsx)(g.A, {
             title: A.intl.string(A.t["FP+a42"]),
             value: p,
-            onChange: e => E({
+            onChange: e => T({
                 goreContentGuilds: e
             }),
             isDisabled: !e || n,

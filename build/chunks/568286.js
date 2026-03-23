@@ -23,12 +23,12 @@ let p = e => {
             listing: l,
             subscription: p,
             onClose: h
-        } = e, T = (0, m.GV)(), {
-            analyticsLocations: E
+        } = e, f = (0, m.GV)(), {
+            analyticsLocations: T
         } = (0, u.Ay)(c.A.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL), {
-            cancelSubscription: f,
+            cancelSubscription: E,
             error: S,
-            submitting: C
+            submitting: b
         } = (e => {
             let [t, n] = s.useState(!1), [i, l] = s.useState(null);
             return {
@@ -44,16 +44,16 @@ let p = e => {
                 error: i,
                 submitting: t
             }
-        })(E), b = async () => {
-            await f(p.id) && h()
-        }, N = l.role_benefits.benefits.filter(e => e.ref_type === g.bN.CHANNEL), I = l.role_benefits.benefits.filter(e => e.ref_type === g.bN.INTANGIBLE), v = a()(p.currentPeriodEnd).format("MMMM Do, YYYY"), j = A.intl.formatToPlainString(A.t.KsMRP5, {
+        })(T), C = async () => {
+            await E(p.id) && h()
+        }, N = l.role_benefits.benefits.filter(e => e.ref_type === g.bN.CHANNEL), v = l.role_benefits.benefits.filter(e => e.ref_type === g.bN.INTANGIBLE), I = a()(p.currentPeriodEnd).format("MMMM Do, YYYY"), j = A.intl.formatToPlainString(A.t.KsMRP5, {
             numChannels: N.length,
-            numAdditionalBenefits: I.length,
-            subscriptionEndDate: v
+            numAdditionalBenefits: v.length,
+            subscriptionEndDate: I
         });
         return (0, i.jsx)(r.Modal, {
             transitionState: t,
-            "aria-labelledby": T,
+            "aria-labelledby": f,
             actions: [{
                 text: A.intl.string(A.t.EP6EPb),
                 variant: "secondary",
@@ -61,8 +61,8 @@ let p = e => {
             }, {
                 variant: "critical-primary",
                 text: A.intl.string(A.t.F6lUDF),
-                onClick: b,
-                loading: C
+                onClick: C,
+                loading: b
             }],
             title: A.intl.string(A.t.O6l5tM),
             subtitle: j,

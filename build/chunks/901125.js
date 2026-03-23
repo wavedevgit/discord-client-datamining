@@ -24,10 +24,10 @@ let x = e => {
         } = e,
         h = (0, u.ar)();
     if (null == s) return null;
-    let T = null != s ? c.Ay.getPremiumPlanItem(s) : null;
-    if (c.Ay.isBoostOnlySubscription(s) ? t = g.intl.string(g.t.Uj0md3) : null != T && (t = c.Ay.getTierDisplayNameByPlanId(T.planId)), null == t) return null;
-    let E = () => (0, o.openUserSettings)(r.X.SUBSCRIPTIONS_PANEL),
-        f = (null != T ? c.Ay.getSkuIdForPlan(T.planId) : null) === m.pe.TIER_1;
+    let f = null != s ? c.Ay.getPremiumPlanItem(s) : null;
+    if (c.Ay.isBoostOnlySubscription(s) ? t = g.intl.string(g.t.Uj0md3) : null != f && (t = c.Ay.getTierDisplayNameByPlanId(f.planId)), null == t) return null;
+    let T = () => (0, o.openUserSettings)(r.X.SUBSCRIPTIONS_PANEL),
+        E = (null != f ? c.Ay.getSkuIdForPlan(f.planId) : null) === m.pe.TIER_1;
     return n = null != p ? p : h ? "always-white" : "text-default", (0, i.jsxs)(a.ZpM, {
         className: l()(A.kL, x, {
             [A.He]: h
@@ -44,12 +44,12 @@ let x = e => {
         }), (0, i.jsx)(a.Text, {
             variant: "text-sm/medium",
             color: n,
-            children: f ? g.intl.format(g.t["tYuv+T"], {
+            children: E ? g.intl.format(g.t["tYuv+T"], {
                 helpdeskArticle: d.A.getArticleURL(_.MVz.PREMIUM_DETAILS),
-                onSubscriptionsClick: E
+                onSubscriptionsClick: T
             }) : g.intl.format(g.t.xHRgU2, {
                 subscriptionName: t,
-                onSubscriptionsClick: E
+                onSubscriptionsClick: T
             })
         })]
     })

@@ -1,25 +1,25 @@
 /** chunk id: 674085 params = (module,exports,require) **/
 "use strict";
-r.d(t, {
+n.d(t, {
     A: () => l
 });
-var n = r(627968),
-    a = r(158954),
-    i = r(933297);
+var r = n(627968),
+    i = n(158954),
+    a = n(933297);
 let l = function(e) {
     let {
         badge: t
     } = e;
     switch (t.badgeType) {
-        case i.Xi.NEW:
-            return (0, n.jsx)(a.Exy, {
+        case a.Xi.NEW:
+            return (0, r.jsx)(i.Exy, {
                 type: "new",
                 variant: "brand"
             });
-        case i.Xi.STRONGLY_DISCOURAGED_CUSTOM:
+        case a.Xi.STRONGLY_DISCOURAGED_CUSTOM:
             let {
-                StronglyDiscouragedCustomComponent: r
+                StronglyDiscouragedCustomComponent: n
             } = t;
-            return (0, n.jsx)(r, {})
+            return (0, r.jsx)(n, {})
     }
 }

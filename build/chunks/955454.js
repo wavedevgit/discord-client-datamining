@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(970278),
     A = n(747926),
     m = n(734057),
-    p = n(403362),
-    _ = n(661191),
+    _ = n(403362),
+    p = n(661191),
     g = n(652215),
     f = n(37411),
     x = n(357976);
@@ -30,13 +30,13 @@ function C(e) {
         let {
             id: n
         } = e;
-        return _.default.compare(n, t.oldestReadMessageId) > 0
+        return p.default.compare(n, t.oldestReadMessageId) > 0
     }).map(e => {
         let {
             id: t
         } = e;
         return m.A.getChannel(t)
-    }).filter(p.Vq).sort((e, t) => _.default.compare(e.id, t.id)).value(), [t.oldestReadMessageId, n.guild_id, n.id]), E = s.useCallback((e, t) => {
+    }).filter(_.Vq).sort((e, t) => p.default.compare(e.id, t.id)).value(), [t.oldestReadMessageId, n.guild_id, n.id]), E = s.useCallback((e, t) => {
         (0, A.JA)(e, t, f.H9.INBOX)
     }, []);
     return s.useEffect(() => {

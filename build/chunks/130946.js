@@ -1,7 +1,7 @@
 /** chunk id: 130946 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b,
-    c: () => C
+    A: () => C,
+    c: () => b
 });
 var i, s = n(627968);
 n(64700);
@@ -19,12 +19,12 @@ var l = n(503698),
     x = n(652215),
     p = n(985018),
     h = n(816128),
-    T = n(137815),
-    E = n(967521),
-    f = n(767032),
+    f = n(137815),
+    T = n(967521),
+    E = n(767032),
     S = n(990521),
-    C = ((i = {}).SUBSCRIBER_HOME = "SUBSCRIBER_HOME", i.NITRO_SETTINGS = "SETTINGS", i.APPLICATION_NITRO_HOME = "APPLICATION_NITRO_HOME", i);
-let b = function(e) {
+    b = ((i = {}).SUBSCRIBER_HOME = "SUBSCRIBER_HOME", i.NITRO_SETTINGS = "SETTINGS", i.APPLICATION_NITRO_HOME = "APPLICATION_NITRO_HOME", i);
+let C = function(e) {
     let {
         variant: t
     } = e, n = (0, _.cg)(), i = (0, d.Ay)(), l = (0, o.Mwr)(i) ? r.XD.BRAND_INVERTED : r.XD.BRAND;
@@ -72,7 +72,7 @@ let b = function(e) {
                 className: h.ZS,
                 children: (0, s.jsx)("img", {
                     alt: "",
-                    src: E.A,
+                    src: T.A,
                     className: h.F$
                 })
             })]
@@ -85,7 +85,7 @@ let b = function(e) {
                 className: h.V9,
                 children: (0, s.jsx)("img", {
                     alt: "",
-                    src: f.A,
+                    src: E.A,
                     className: h.$V
                 })
             }), (0, s.jsxs)("div", {
@@ -127,7 +127,7 @@ let b = function(e) {
             className: h.yk,
             children: (0, s.jsx)("img", {
                 alt: "",
-                src: T.A,
+                src: f.A,
                 className: h.$V
             })
         }), (0, s.jsxs)("div", {

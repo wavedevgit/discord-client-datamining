@@ -23,20 +23,20 @@ function g(e) {
         onExpandedChange: A,
         children: x,
         animate: p = !0
-    } = e, h = s.useRef(null), [T, E] = s.useState(null), f = g && null != T;
+    } = e, h = s.useRef(null), [f, T] = s.useState(null), E = g && null != f;
     return s.useLayoutEffect(() => {
-        null != h.current && null == T && E(h.current.clientHeight)
-    }, [T]), (0, i.jsxs)(r.EN, {
+        null != h.current && null == f && T(h.current.clientHeight)
+    }, [f]), (0, i.jsxs)(r.EN, {
         ref: t,
         isExpanded: g,
         onExpandedChange: A,
         children: [(0, i.jsx)(m.U, {
             ref: h,
-            style: null != T ? {
-                minHeight: T
+            style: null != f ? {
+                minHeight: f
             } : void 0,
             title: n,
-            description: f ? void 0 : l,
+            description: E ? void 0 : l,
             trailingElement: (0, i.jsx)(u.vN3, {
                 children: (0, i.jsx)(o.$, {
                     slot: "trigger",

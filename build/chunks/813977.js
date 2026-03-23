@@ -1,5 +1,5 @@
 /** chunk id: 813977 params = (module,exports,require) **/
-i.d(e, {
+i.d(t, {
     A: () => c
 });
 var n = i(627968);
@@ -12,17 +12,17 @@ var l = i(311907),
     d = i(652215),
     u = i(985018);
 
-function c(t) {
-    let e = !o.isPlatformEmbedded,
+function c(e) {
+    let t = !o.isPlatformEmbedded,
         i = (0, l.bG)([a.Ay], () => a.Ay.getMode()),
-        c = (e, l) => (0, n.jsx)(r.iDA, {
-            id: e,
+        c = (t, l) => (0, n.jsx)(r.iDA, {
+            id: t,
             group: "input-modes",
             label: l,
-            checked: i === e,
-            action: () => s.A.setMode(e, void 0, void 0, {
-                analyticsLocations: t
+            checked: i === t,
+            action: () => s.A.setMode(t, void 0, void 0, {
+                analyticsLocations: e
             })
-        }, e);
-    return [c(d.TBI.VOICE_ACTIVITY, u.intl.string(u.t.cHCEOJ)), c(d.TBI.PUSH_TO_TALK, e ? u.intl.string(u.t["1AINrB"]) : u.intl.string(u.t.Q8gkVL))]
+        }, t);
+    return [c(d.TBI.VOICE_ACTIVITY, u.intl.string(u.t.cHCEOJ)), c(d.TBI.PUSH_TO_TALK, t ? u.intl.string(u.t["1AINrB"]) : u.intl.string(u.t.Q8gkVL))]
 }

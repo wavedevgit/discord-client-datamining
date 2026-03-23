@@ -25,28 +25,28 @@ function g(e) {
         disabled: x = !1,
         showPremiumIcon: p = !0,
         isTryItOut: h = !1,
-        forcedDivider: T,
-        withHighlight: E = !1
+        forcedDivider: f,
+        withHighlight: T = !1
     } = e, {
-        newestAnalyticsLocation: f
-    } = (0, o.Ay)(), S = E ? r.wLn : a.$n;
+        newestAnalyticsLocation: E
+    } = (0, o.Ay)(), S = T ? r.wLn : a.$n;
     return (0, i.jsx)(c.A, {
         className: A,
         title: m.intl.string(m.t.Vgdusv),
         showPremiumIcon: p,
         errors: n,
         disabled: x,
-        forcedDivider: T,
+        forcedDivider: f,
         children: (0, i.jsxs)("div", {
             className: _.NC,
             children: [(0, i.jsx)(S, {
                 className: l()({
-                    [_.yj]: E
+                    [_.yj]: T
                 }),
                 size: a.$n.Sizes.SMALL,
                 onClick: () => (0, d.XD)({
                     uploadType: u.HL.BANNER,
-                    analyticsSource: f,
+                    analyticsSource: E,
                     guildId: g,
                     isTryItOut: h
                 }),

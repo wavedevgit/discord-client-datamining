@@ -1,6 +1,6 @@
 /** chunk id: 107834 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => f
 });
 var i = n(627968);
 n(64700);
@@ -19,7 +19,7 @@ var s = n(503698),
     x = n(788868),
     p = n(985018),
     h = n(187585);
-let T = a.Ay.connectStores([_.default], () => ({
+let f = a.Ay.connectStores([_.default], () => ({
     user: _.default.getCurrentUser()
 }))((0, c.A)(e => {
     let {

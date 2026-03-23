@@ -18,15 +18,15 @@ var i = n(627968),
     x = n(649032),
     p = n(26508),
     h = n(166403),
-    T = n(954571),
-    E = n(927578),
-    f = n(40185),
+    f = n(954571),
+    T = n(927578),
+    E = n(40185),
     S = n(994763),
-    C = n(130946),
-    b = n(407775),
+    b = n(130946),
+    C = n(407775),
     N = n(817267),
-    I = n(736455),
-    v = n(509388),
+    v = n(736455),
+    I = n(509388),
     j = n(400292),
     y = n(536195),
     O = n(577174),
@@ -47,15 +47,15 @@ let w = () => {
         w = s.useRef(null),
         V = s.useRef(null),
         B = (0, o.bG)([u.A], () => u.A.useReducedMotion),
-        [H, F] = s.useState(!1),
+        [F, H] = s.useState(!1),
         [Y, z] = s.useState(!1),
         [X, W] = s.useState(!1),
         [K, Z] = s.useState(!1),
         q = (0, o.bG)([h.A], () => h.A.getPremiumTypeSubscription()),
-        J = null != q ? (0, E.EL)(q) : null,
-        Q = null != J ? E.Ay.getSkuIdForPlan(J.planId) : null,
+        J = null != q ? (0, T.EL)(q) : null,
+        Q = null != J ? T.Ay.getSkuIdForPlan(J.planId) : null,
         $ = null !== Q && Q !== M.pe.TIER_2 ? M.pe.TIER_2 : null,
-        ee = (0, f.cg)(),
+        ee = (0, E.cg)(),
         {
             analyticsLocations: et
         } = (0, _.Ay)(m.A.PREMIUM_MARKETING);
@@ -65,7 +65,7 @@ let w = () => {
     let en = (0, p.DK)(x.W.NITRO, "PremiumMarketingHome"),
         ei = s.useMemo(() => !!en && "orbs" === new URLSearchParams(e.search).get("section"), [e.search, en]);
     (0, S.z)(L.NI.ORB_REWARDS, ei);
-    let es = [I.k.HOME, I.k.WHATS_NEW, I.k.BEST_OF_NITRO, I.k.PLANS, I.k.COMPARE],
+    let es = [v.k.HOME, v.k.WHATS_NEW, v.k.BEST_OF_NITRO, v.k.PLANS, v.k.COMPARE],
         {
             navBarSections: el,
             activeSectionId: ea
@@ -94,7 +94,7 @@ let w = () => {
                     ref: er.ref,
                     children: (0, i.jsx)(d.L, {
                         innerRef: l,
-                        onChange: e => F(e),
+                        onChange: e => H(e),
                         threshold: 0,
                         active: !0,
                         children: (0, i.jsx)(P.A, {
@@ -105,8 +105,8 @@ let w = () => {
                     })
                 }), ee && (0, i.jsx)("div", {
                     className: U.Hz,
-                    children: (0, i.jsx)(C.A, {
-                        variant: C.c.APPLICATION_NITRO_HOME
+                    children: (0, i.jsx)(b.A, {
+                        variant: b.c.APPLICATION_NITRO_HOME
                     })
                 }), (0, i.jsx)("div", {
                     className: U.So,
@@ -130,7 +130,7 @@ let w = () => {
                         onChange: e => z(e),
                         threshold: .1,
                         active: !0,
-                        children: (0, i.jsx)(b.hy, {
+                        children: (0, i.jsx)(C.hy, {
                             innerRef: n
                         })
                     })
@@ -142,7 +142,7 @@ let w = () => {
             }), (0, i.jsx)(d.L, {
                 innerRef: w,
                 onChange: e => {
-                    e && !X && (T.default.track(G.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                    e && !X && (f.default.track(G.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                         location_stack: et
                     }), W(!0))
                 },
@@ -150,10 +150,10 @@ let w = () => {
                     ref: w,
                     className: U._Z
                 })
-            }), (0, i.jsx)(v.A, {
+            }), (0, i.jsx)(I.A, {
                 ref: V
             }), (0, i.jsx)(j.A, {
-                isVisible: !H && !Y && K,
+                isVisible: !F && !Y && K,
                 subscriptionTier: $,
                 isEligibleForBogoPromotion: ee
             }), (0, i.jsx)(N.A, {

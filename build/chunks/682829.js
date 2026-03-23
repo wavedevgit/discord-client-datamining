@@ -18,15 +18,15 @@ var i = n(627968),
     x = n(262077),
     p = n(160946),
     h = n(235986),
-    T = n(769015),
-    E = n(723588),
-    f = n(608699),
+    f = n(769015),
+    T = n(723588),
+    E = n(608699),
     S = n(714308),
-    C = n(478407),
-    b = n(780964),
+    b = n(478407),
+    C = n(780964),
     N = n(841329),
-    I = n(351906),
-    v = n(287809),
+    v = n(351906),
+    I = n(287809),
     j = n(615405),
     y = n(295405),
     O = n(166403),
@@ -41,13 +41,13 @@ var i = n(627968),
     w = n(758400),
     V = n(790284),
     B = n(788868),
-    H = n(652215),
-    F = n(355097),
+    F = n(652215),
+    H = n(355097),
     Y = n(985018),
     z = n(547605);
 let X = {
-    [F.nR]: "role_subscriptions_panel",
-    [F.PZ]: "application_subscriptions_panel"
+    [H.nR]: "role_subscriptions_panel",
+    [H.PZ]: "application_subscriptions_panel"
 };
 
 function W() {
@@ -56,9 +56,9 @@ function W() {
         type: o.ZpM.Types.CUSTOM,
         children: (0, i.jsxs)(h.A, {
             align: h.A.Align.CENTER,
-            children: [(0, i.jsx)(T.A, {
+            children: [(0, i.jsx)(f.A, {
                 game: null,
-                size: T.M.SMALL,
+                size: f.M.SMALL,
                 className: z.pV
             }), (0, i.jsx)("span", {
                 className: z.O,
@@ -93,18 +93,18 @@ let q = function() {
         n = (0, x.A)({
             subscriptionFilter: e => w.Hy.has(e.status)
         }),
-        l = (0, r.bG)([v.default], () => v.default.getCurrentUser()),
+        l = (0, r.bG)([I.default], () => I.default.getCurrentUser()),
         m = n.length > 1,
         h = (0, r.bG)([y.A], () => null != t && null != t.paymentSourceId ? y.A.getPaymentSource(t.paymentSourceId) : null, [t]),
-        T = (0, r.bG)([O.A], () => O.A.hasFetchedSubscriptions()),
+        f = (0, r.bG)([O.A], () => O.A.hasFetchedSubscriptions()),
         R = (0, r.bG)([j.A], () => j.A.isBusy),
         D = (0, p.Y)(),
         k = V.A.useField("subsection");
     s.useEffect(() => {
-        (0, N._)(null != k ? X[k] : b.X.SUBSCRIPTIONS_PANEL)
+        (0, N._)(null != k ? X[k] : C.X.SUBSCRIPTIONS_PANEL)
     }, [k]);
     let W = (0, r.bG)([O.A], () => O.A.getActiveApplicationSubscriptions()?.length ?? 0),
-        q = (0, r.bG)([O.A], () => Object.values(O.A.getSubscriptions() ?? {}).filter(e => e.type === H.rzx.GUILD).filter(e => e.status !== H.Dmq.ENDED).length),
+        q = (0, r.bG)([O.A], () => Object.values(O.A.getSubscriptions() ?? {}).filter(e => e.type === F.rzx.GUILD).filter(e => e.status !== F.Dmq.ENDED).length),
         J = (0, A.A)({
             forceFetch: !0
         }),
@@ -115,11 +115,11 @@ let q = function() {
         (0, _.zS)(), c.hP(), (0, u.CD)(), c.$o()
     }), function() {
         V.A.resetState()
-    }), []), I.A.enabled) ? (0, i.jsx)(g.A, {}) : T && D ? k === F.nR ? (0, i.jsx)(f.A, {
+    }), []), v.A.enabled) ? (0, i.jsx)(g.A, {}) : f && D ? k === H.nR ? (0, i.jsx)(E.A, {
         onGoBack: () => V.A.setState({
             subsection: null
         })
-    }) : k === F.PZ ? (0, i.jsx)(C.A, {
+    }) : k === H.PZ ? (0, i.jsx)(b.A, {
         onGoBack: () => V.A.setState({
             subsection: null
         })
@@ -141,7 +141,7 @@ let q = function() {
                     variant: "text-md/normal",
                     className: z.JU,
                     children: Y.intl.format(Y.t["7Zi06b"], {
-                        helpCenterLink: P.A.getArticleURL(H.MVz.FRACTIONAL_PREMIUM_ABOUT)
+                        helpCenterLink: P.A.getArticleURL(F.MVz.FRACTIONAL_PREMIUM_ABOUT)
                     })
                 }), (0, i.jsx)(G.A, {
                     className: z.fX,
@@ -150,10 +150,10 @@ let q = function() {
                     hasPremiumGroup: e
                 })]
             })), (0, i.jsx)(K, {}), q > 0 && (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(Z, {}), (0, i.jsx)(E.A, {
+                children: [(0, i.jsx)(Z, {}), (0, i.jsx)(T.A, {
                     count: q,
                     onClickManageSubscription: () => V.A.setState({
-                        subsection: F.nR
+                        subsection: H.nR
                     })
                 })]
             }), W > 0 && (0, i.jsxs)(i.Fragment, {
@@ -161,8 +161,8 @@ let q = function() {
                     count: W,
                     onClickManageSubscription: () => {
                         V.A.setState({
-                            subsection: F.PZ
-                        }), L.default.track(H.HAw.PREMIUM_APPLICATION_SUBSCRIPTION_MANAGE_CTA_CLICKED)
+                            subsection: H.PZ
+                        }), L.default.track(F.HAw.PREMIUM_APPLICATION_SUBSCRIPTION_MANAGE_CTA_CLICKED)
                     }
                 })]
             }), (0, i.jsx)(Z, {}), null != t ? (0, i.jsx)(U.A, {

@@ -24,13 +24,13 @@ function p(e) {
     } = e, {
         authorizedApplicationId: p,
         authorizationError: h,
-        authorizing: T
+        authorizing: f
     } = (0, a.cf)([m.A], () => ({
         authorizedApplicationId: m.A.testModeApplicationId,
         authorizationError: m.A.error,
         authorizing: m.A.isFetchingAuthorization
-    })), [E, f] = s.useState(p ?? ""), [S, C] = s.useState("8080"), [b, N] = s.useState("localhost"), I = x.test(E);
-    async function v() {
+    })), [T, E] = s.useState(p ?? ""), [S, b] = s.useState("8080"), [C, N] = s.useState("localhost"), v = x.test(T);
+    async function I() {
         d.SH();
         let e = function(e, t, n) {
             if (null == e) return null;
@@ -40,21 +40,21 @@ function p(e) {
                 case "proxy":
                     return (0, c.Ay)(n)
             }
-        }(b, S, E);
-        null != await d.q1(E, e) && t()
+        }(C, S, T);
+        null != await d.q1(T, e) && t()
     }
     s.useEffect(() => () => o.h.wait(() => d.SH()), []);
-    let j = null != p && p === E,
+    let j = null != p && p === T,
         y = j ? function() {
-            d.cL(), f(""), N(null)
-        } : v,
+            d.cL(), E(""), N(null)
+        } : I,
         O = s.useMemo(() => [{
-            loading: T,
-            disabled: !I || 0 === E.length || "localhost" === b && 0 === S.length,
+            loading: f,
+            disabled: !v || 0 === T.length || "localhost" === C && 0 === S.length,
             variant: j ? "critical-primary" : "active",
             text: j ? _.intl.string(_.t.d6TR3I) : _.intl.string(_.t.qwuK5I),
             onClick: y
-        }], [E.length, T, j, I, S.length, y, b]);
+        }], [T.length, f, j, v, S.length, y, C]);
     return (0, i.jsxs)(l.Modal, {
         title: _.intl.string(_.t.f8fzky),
         subtitle: _.intl.string(_.t.a6Vill),
@@ -75,21 +75,21 @@ function p(e) {
                 children: (0, i.jsx)(r.ksK, {
                     label: _.intl.string(_.t.P6TzgI),
                     required: !0,
-                    value: E,
+                    value: T,
                     maxLength: 19,
-                    error: I ? null : _.intl.string(_.t.gPNgKO),
+                    error: v ? null : _.intl.string(_.t.gPNgKO),
                     onChange: function(e) {
-                        f(e)
+                        E(e)
                     },
-                    disabled: T
+                    disabled: f
                 })
             }), (0, i.jsx)("div", {
                 className: g.I,
                 children: (0, i.jsx)(r.l6P, {
                     selectionMode: "single",
                     label: _.intl.string(_.t["/GTqXG"]),
-                    disabled: !I || "" === E,
-                    value: b,
+                    disabled: !v || "" === T,
+                    value: C,
                     options: [{
                         value: "localhost",
                         label: _.intl.string(_.t["+Y9Y6r"]),
@@ -104,15 +104,15 @@ function p(e) {
                     },
                     placeholder: "URL Origin Type"
                 })
-            }), "localhost" !== b ? null : (0, i.jsx)("div", {
+            }), "localhost" !== C ? null : (0, i.jsx)("div", {
                 className: g.I,
                 children: (0, i.jsx)(r.ksK, {
                     required: !0,
                     label: _.intl.string(_.t.fF4zxq),
                     value: S,
                     maxLength: 5,
-                    onChange: e => C(e),
-                    disabled: T
+                    onChange: e => b(e),
+                    disabled: f
                 })
             })]
         })]

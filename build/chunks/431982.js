@@ -24,13 +24,13 @@ function _(e) {
         userNameplate: x,
         guildNameplate: p,
         pendingNameplate: h,
-        pendingErrors: T
-    } = (0, d.rv)(t, n?.id), E = s.useCallback(() => {
+        pendingErrors: f
+    } = (0, d.rv)(t, n?.id), T = s.useCallback(() => {
         (0, r.p)({
             analyticsLocations: g,
             guildId: n?.id
         })
-    }, [g, n?.id]), f = s.useCallback(() => {
+    }, [g, n?.id]), E = s.useCallback(() => {
         (0, o.p)({
             guildId: n?.id,
             nameplate: null
@@ -39,19 +39,19 @@ function _(e) {
     return (0, i.jsx)(c.A, {
         title: u.intl.string(u.t.x5CoXR),
         titleIcon: _,
-        errors: T,
+        errors: f,
         children: (0, i.jsxs)("div", {
             className: m.u,
             children: [(0, i.jsx)(l.Button, {
                 variant: "primary",
                 size: "sm",
                 text: u.intl.string(u.t.BwdeM1),
-                onClick: E
+                onClick: T
             }), (void 0 === h ? (A ? p : x) != null : null != h) && (0, i.jsx)(l.Button, {
                 variant: "secondary",
                 size: "sm",
                 text: A ? u.intl.string(u.t.CHf9iJ) : u.intl.string(u.t["9zwziY"]),
-                onClick: f
+                onClick: E
             })]
         })
     })

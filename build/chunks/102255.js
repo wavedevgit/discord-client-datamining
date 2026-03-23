@@ -1,8 +1,8 @@
 /** chunk id: 102255 params = (module,exports,require) **/
 n.d(t, {
     AF: () => S,
-    Im: () => E,
-    jH: () => T
+    Im: () => T,
+    jH: () => f
 });
 var i = n(627968),
     s = n(64700),
@@ -21,7 +21,7 @@ var i = n(627968),
     p = n(985018),
     h = n(123547);
 
-function T() {
+function f() {
     return (0, i.jsx)(o.Text, {
         variant: "text-sm/normal",
         className: h.h_,
@@ -29,7 +29,7 @@ function T() {
     })
 }
 
-function E() {
+function T() {
     let {
         currentSession: e
     } = (0, u.r)();
@@ -38,14 +38,14 @@ function E() {
         children: (0, i.jsx)(o.y$y, {})
     }) : (0, i.jsx)(o.nVY, {
         label: p.intl.string(p.t.LLS19o),
-        children: (0, i.jsx)(C, {
+        children: (0, i.jsx)(b, {
             session: e,
             current: !0
         })
     })
 }
 
-function f(e) {
+function E(e) {
     let {
         checked: t,
         otherSessions: n
@@ -78,7 +78,7 @@ function S() {
     return null == e && 0 === t.length || 0 === t.length && n?.mfaEnabled ? null : t.length > 0 || !n?.mfaEnabled ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)(o.nVY, {
             label: p.intl.string(p.t.xx1MWc),
-            children: [t.map(e => (0, i.jsx)(C, {
+            children: [t.map(e => (0, i.jsx)(b, {
                 session: e,
                 useChecks: l.size > 0,
                 checked: l.has(e.id_hash),
@@ -86,10 +86,10 @@ function S() {
                     let n = new Set(l);
                     t ? n.add(e.id_hash) : n.delete(e.id_hash), a(n)
                 }
-            }, e.id_hash)), n?.mfaEnabled ? null : (0, i.jsx)(b, {})]
+            }, e.id_hash)), n?.mfaEnabled ? null : (0, i.jsx)(C, {})]
         }), t.length > 0 && (0, i.jsx)("div", {
             className: h.wq,
-            children: (0, i.jsx)(f, {
+            children: (0, i.jsx)(E, {
                 checked: l,
                 otherSessions: t
             })
@@ -97,7 +97,7 @@ function S() {
     }) : null
 }
 
-function C(e) {
+function b(e) {
     let {
         session: t,
         current: n,
@@ -129,7 +129,7 @@ function C(e) {
                     text: e, icon: o.kN9
                 }
         }
-    }(t.client_info?.os), x = n ? null : (0, u.Y)(t.approx_last_used_time), T = [_, m].filter(g.Vq), E = [d, x].filter(g.Vq);
+    }(t.client_info?.os), x = n ? null : (0, u.Y)(t.approx_last_used_time), f = [_, m].filter(g.Vq), T = [d, x].filter(g.Vq);
     return (0, i.jsxs)("div", {
         className: a()(h.dZ, {
             [h.gg]: n
@@ -148,24 +148,24 @@ function C(e) {
                     variant: "eyebrow",
                     className: h.nT,
                     children: [(0, i.jsx)("span", {
-                        children: T[0]
-                    }), T.length > 1 && (0, i.jsxs)(i.Fragment, {
+                        children: f[0]
+                    }), f.length > 1 && (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)("span", {
                             children: "\xb7"
                         }), (0, i.jsx)("span", {
-                            children: T[1]
+                            children: f[1]
                         })]
                     })]
                 }), (0, i.jsxs)(o.Text, {
                     variant: "text-sm/medium",
                     className: h.nT,
                     children: [(0, i.jsx)("span", {
-                        children: E[0]
-                    }), E.length > 1 && (0, i.jsxs)(i.Fragment, {
+                        children: T[0]
+                    }), T.length > 1 && (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)("span", {
                             children: "\xb7"
                         }), (0, i.jsx)("span", {
-                            children: E[1]
+                            children: T[1]
                         })]
                     })]
                 })]
@@ -194,7 +194,7 @@ function C(e) {
     }, t.id_hash)
 }
 
-function b() {
+function C() {
     return (0, i.jsxs)("div", {
         className: a()(h.dZ, h.EC),
         children: [(0, i.jsxs)("div", {

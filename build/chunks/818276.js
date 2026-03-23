@@ -29,9 +29,9 @@ let v = i.forwardRef(function(e, t) {
         taskDetails: j,
         isExpanded: A,
         isExpansionAnimationComplete: C
-    } = i.useContext(x.T), y = b.userStatus?.completedAt != null, T = (0, d.I3)(b), S = i.useRef(null), E = b.userStatus?.enrolledAt != null, N = null != T ? T.percentComplete : j.percentComplete, [I, k] = i.useState(!1);
+    } = i.useContext(x.T), T = b.userStatus?.completedAt != null, E = (0, d.I3)(b), S = i.useRef(null), y = b.userStatus?.enrolledAt != null, N = null != E ? E.percentComplete : j.percentComplete, [I, O] = i.useState(!1);
     return (0, a.jsxs)(a.Fragment, {
-        children: [y && (0, a.jsx)(h.A, {
+        children: [T && (0, a.jsx)(h.A, {
             overlayRef: s,
             progressBarRef: S,
             isHovered: I
@@ -40,29 +40,29 @@ let v = i.forwardRef(function(e, t) {
             "aria-hidden": A && C,
             className: l()(n, f.hR, {
                 [f.Ag]: A,
-                [f.s]: E
+                [f.s]: y
             }),
             style: {
                 opacity: (0, c.a)(v.to({
                     range: [0, 1],
                     output: [1, 0]
                 })),
-                backgroundImage: y ? `linear-gradient(90deg, ${_.V1}, ${_.us})` : void 0
+                backgroundImage: T ? `linear-gradient(90deg, ${_.V1}, ${_.us})` : void 0
             },
-            onMouseEnter: () => k(!0),
-            onMouseLeave: () => k(!1),
+            onMouseEnter: () => O(!0),
+            onMouseLeave: () => O(!1),
             children: (0, a.jsxs)("div", {
                 className: f.o8,
-                children: [y && (0, a.jsxs)(a.Fragment, {
+                children: [T && (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)(g.A, {}), (0, a.jsx)("div", {
                         className: f.yF
                     })]
-                }), E ? (0, a.jsx)(p.A, {
+                }), y ? (0, a.jsx)(p.A, {
                     contentLocation: "collapsed",
                     progressBarRef: S,
                     isExpanded: !1,
                     percentComplete: N
-                }) : null, y && (0, a.jsx)(m.f, {
+                }) : null, T && (0, a.jsx)(m.f, {
                     awaitingConsoleConnections: !1,
                     hasMadeProgress: !0,
                     isProgressing: !1,

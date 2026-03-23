@@ -1,6 +1,6 @@
 /** chunk id: 332612 params = (module,exports,require) **/
 n.d(t, {
-    L: () => T
+    L: () => f
 });
 var i = n(627968),
     s = n(64700),
@@ -25,9 +25,9 @@ function p(e) {
         count: n
     } = e, {
         analyticsLocations: u
-    } = (0, d.Ay)(), p = (0, l.bG)([_.default], () => _.default.getUser(t)), h = g.Ay.getFormattedName(p), T = s.useCallback(() => {
+    } = (0, d.Ay)(), p = (0, l.bG)([_.default], () => _.default.getUser(t)), h = g.Ay.getFormattedName(p), f = s.useCallback(() => {
         (0, c.kj)(t)
-    }, [t]), E = s.useCallback(() => (0, m.openUserProfileModal)({
+    }, [t]), T = s.useCallback(() => (0, m.openUserProfileModal)({
         userId: t,
         sourceAnalyticsLocations: u
     }), [t, u]);
@@ -43,7 +43,7 @@ function p(e) {
             className: x.Qq,
             children: [(0, i.jsx)(a.DUT, {
                 className: x.Xh,
-                onClick: E,
+                onClick: T,
                 children: (0, i.jsx)(a.Text, {
                     variant: "text-md/semibold",
                     color: "interactive-text-active",
@@ -57,7 +57,7 @@ function p(e) {
                 })
             })]
         }), (0, i.jsx)(a.DUT, {
-            onClick: T,
+            onClick: f,
             className: x.Qz,
             children: (0, i.jsx)(a.ucK, {
                 size: "xs"
@@ -101,7 +101,7 @@ function h(e) {
     })
 }
 
-function T(e) {
+function f(e) {
     let {
         userId: t
     } = e, n = (0, u.k)(t);

@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(887700),
     A = n(855446),
     m = n(793574),
-    p = n(688810),
-    _ = n(975412),
+    _ = n(688810),
+    p = n(975412),
     g = n(392054),
     f = n(826673),
     x = n(757293),
@@ -68,8 +68,8 @@ function v(e) {
     } = e, {
         analyticsLocations: l,
         newestAnalyticsLocation: r
-    } = (0, p.Ay)(m.A.VC_TILE_ACTIVITY_SHELF_BUTTON);
-    return (0, i.jsx)(p.f5, {
+    } = (0, _.Ay)(m.A.VC_TILE_ACTIVITY_SHELF_BUTTON);
+    return (0, i.jsx)(_.f5, {
         value: l,
         children: (0, i.jsxs)(E.A, {
             className: b.zr,
@@ -78,7 +78,7 @@ function v(e) {
                 text: N.intl.string(N.t.qJvTKQ),
                 children: (0, i.jsx)(d.DUT, {
                     onClick: () => {
-                        (0, _.A)({
+                        (0, p.A)({
                             context: null != t ? {
                                 type: "channel",
                                 channel: t
@@ -133,7 +133,7 @@ function y(e) {
     let {
         analyticsLocations: c,
         newestAnalyticsLocation: u
-    } = (0, p.Ay)(m.A.VC_TILE_ACTIVITY_INVITE);
+    } = (0, _.Ay)(m.A.VC_TILE_ACTIVITY_INVITE);
 
     function h() {
         (0, d.mMO)(async () => {
@@ -152,7 +152,7 @@ function y(e) {
     }
 
     function A() {
-        (0, _.A)({
+        (0, p.A)({
             context: null != t ? {
                 type: "channel",
                 channel: t
@@ -163,7 +163,7 @@ function y(e) {
             analyticsLocation: u
         })
     }
-    return (0, i.jsx)(p.f5, {
+    return (0, i.jsx)(_.f5, {
         value: c,
         children: (0, i.jsx)(d.NPJ, {
             disableAdaptiveTheme: !0,
@@ -208,17 +208,17 @@ function j(e) {
             n_participants: c
         })
     });
-    let _ = (0, h.A)({
+    let p = (0, h.A)({
             guildId: n.id
         }).slice(0, 3),
         {
             analyticsLocations: S
-        } = (0, p.Ay)(m.A.VC_TILE_ACTIVITY_SUGGESTION),
+        } = (0, _.Ay)(m.A.VC_TILE_ACTIVITY_SUGGESTION),
         T = s.useMemo(() => ({
             channel: t,
             type: "channel"
         }), [t]);
-    return (0, i.jsx)(p.f5, {
+    return (0, i.jsx)(_.f5, {
         value: S,
         children: (0, i.jsxs)(E.A, {
             className: b.zr,
@@ -230,7 +230,7 @@ function j(e) {
                 className: a()(b.Di, {
                     [b.qy]: o <= 300
                 }),
-                children: _.map(e => (0, i.jsx)(A.C, {
+                children: p.map(e => (0, i.jsx)(A.C, {
                     context: T,
                     activityItem: e,
                     aspectRatio: A.C.AspectRatio.SIXTEEN_BY_NINE,

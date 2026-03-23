@@ -18,15 +18,15 @@ var i = n(627968),
     x = n(86379),
     p = n(160946),
     h = n(459793),
-    T = n(726649),
-    E = n(611924),
-    f = n(351906),
+    f = n(726649),
+    T = n(611924),
+    E = n(351906),
     S = n(287809),
-    C = n(295405),
-    b = n(166403),
+    b = n(295405),
+    C = n(166403),
     N = n(954571),
-    I = n(474090),
-    v = n(560138),
+    v = n(474090),
+    I = n(560138),
     j = n(694080),
     y = n(553081),
     O = n(422936),
@@ -39,23 +39,23 @@ let G = function(e) {
     let {
         entrypoint: t = P.Mf.UserSettings
     } = e;
-    (0, E.P)(T.b);
+    (0, T.P)(f.b);
     let n = (0, x.Hp)(),
         {
             sourceAnalyticsLocations: l,
             analyticsLocations: G
         } = (0, A.Ay)(g.A.PREMIUM_MARKETING),
-        k = (0, r.bG)([b.A], () => b.A.hasFetchedSubscriptions()),
-        U = (0, r.bG)([C.A], () => C.A.hasFetchedPaymentSources),
+        k = (0, r.bG)([C.A], () => C.A.hasFetchedSubscriptions()),
+        U = (0, r.bG)([b.A], () => b.A.hasFetchedPaymentSources),
         w = (0, r.bG)([S.default], () => S.default.getCurrentUser()),
         V = w?.id,
         B = (0, R.V)(),
-        H = (0, O.O)(),
-        F = (0, p.Y)(P.T7),
+        F = (0, O.O)(),
+        H = (0, p.Y)(P.T7),
         [Y, z] = s.useState(!0),
         X = s.useRef(0),
-        W = (0, I.YE)(w, P.PremiumTypes.TIER_2),
-        K = (0, r.bG)([v.A], () => v.A.hasFetched);
+        W = (0, v.YE)(w, P.PremiumTypes.TIER_2),
+        K = (0, r.bG)([I.A], () => I.A.hasFetched);
     s.useEffect(() => {
         K || c.xG()
     }, [K]), s.useEffect(() => {
@@ -69,16 +69,16 @@ let G = function(e) {
             load_duration_ms: X.current
         })
     }, [l, Y]), s.useEffect(() => {
-        n && (null != B || null != H) && (0, j.u1)(B, H)
-    }, [n, B, H]);
-    let Z = (0, r.bG)([f.A], () => f.A.enabled),
+        n && (null != B || null != F) && (0, j.u1)(B, F)
+    }, [n, B, F]);
+    let Z = (0, r.bG)([E.A], () => E.A.enabled),
         q = t === P.Mf.ApplicationStoreHome,
         J = Z ? (0, i.jsx)(m.A, {}) : n ? (0, i.jsx)(h.uK, {}) : q && W ? (0, i.jsx)(A.f5, {
             value: G,
             children: (0, i.jsx)(y.A, {
                 userId: V
             })
-        }) : k && F && U ? null : (0, i.jsx)("div", {
+        }) : k && H && U ? null : (0, i.jsx)("div", {
             className: a()(M.kL, M.Lq),
             children: (0, i.jsx)(o.y$y, {})
         });

@@ -1,7 +1,7 @@
 /** chunk id: 287074 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -15,11 +15,11 @@ var i = n(627968),
     h = n(58736),
     A = n(652215),
     m = n(985018);
-let p = function(e) {
+let _ = function(e) {
     let {
         channel: t
-    } = e, n = (0, o.vL)(t), [p, _] = s.useState(!1), g = (0, l.bG)([d.Ay], () => d.Ay.hasUnreadPins(t.id), [t]), f = (0, c.aL)(), x = s.useRef(null), C = s.useCallback(() => {
-        n || _(e => !e)
+    } = e, n = (0, o.vL)(t), [_, p] = s.useState(!1), g = (0, l.bG)([d.Ay], () => d.Ay.hasUnreadPins(t.id), [t]), f = (0, c.aL)(), x = s.useRef(null), C = s.useCallback(() => {
+        n || p(e => !e)
     }, [n]);
 
     function E(e) {
@@ -29,13 +29,13 @@ let p = function(e) {
         u._.unsubscribe(A.jej.TOGGLE_CHANNEL_PINS, C)
     }), [C]), (0, i.jsx)(a.YNO, {
         targetElementRef: x,
-        shouldShow: p,
+        shouldShow: _,
         animation: a.YNO.Animation.NONE,
         position: "bottom",
         align: "right",
         autoInvert: !1,
         ignoreModalClicks: !0,
-        onRequestClose: () => _(!1),
+        onRequestClose: () => p(!1),
         renderPopout: function(e) {
             return (0, i.jsx)(r.A, {
                 ...e,

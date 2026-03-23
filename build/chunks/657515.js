@@ -1,56 +1,56 @@
 /** chunk id: 657515 params = (module,exports,require) **/
-n.d(e, {
-    zH: () => L
+r.d(t, {
+    zH: () => A
 });
-var i = n(575593),
-    r = n(517950),
-    l = n(793574),
-    s = n(810498),
-    a = n(652215),
-    o = n(985018),
-    c = n(490111),
-    d = n(910026),
-    u = n(380212),
-    h = n(876318);
-n(642827), n(669531);
-var A = n(320306),
-    _ = n(516738),
-    C = n(604156);
+var n = r(575593),
+    a = r(517950),
+    i = r(793574),
+    o = r(810498),
+    _ = r(652215),
+    l = r(985018),
+    d = r(490111),
+    u = r(910026),
+    s = r(380212),
+    c = r(876318);
+r(642827), r(669531);
+var m = r(320306),
+    p = r(516738),
+    f = r(604156);
 let g = {
-        skuId: r.a.SEASONAL_GIFTING_2025_HEAD_IN_THE_CLOUDS_SKU_ID,
+        skuId: a.a.SEASONAL_GIFTING_2025_HEAD_IN_THE_CLOUDS_SKU_ID,
         assetId: "a_670b722e56740d11d1e6fe55b8094013",
-        type: i.R.AVATAR_DECORATION,
-        name: () => o.intl.string(o.t["R4q5+y"]),
-        a11yLabel: () => o.intl.string(o.t.s1HWnQ)
+        type: n.R.AVATAR_DECORATION,
+        name: () => l.intl.string(l.t["R4q5+y"]),
+        a11yLabel: () => l.intl.string(l.t.s1HWnQ)
     },
-    E = {
-        skuId: r.a.SEASONAL_GIFTING_2025_STARFALL_TIDES_SKU_ID,
+    b = {
+        skuId: a.a.SEASONAL_GIFTING_2025_STARFALL_TIDES_SKU_ID,
         assetId: "nameplates/nameplates_v2/starfall_tides/",
-        type: i.R.NAMEPLATE,
+        type: n.R.NAMEPLATE,
         palette: "sky",
-        name: () => o.intl.string(o.t.OzB7sI),
-        a11yLabel: () => o.intl.string(o.t.WX49A3)
+        name: () => l.intl.string(l.t.OzB7sI),
+        a11yLabel: () => l.intl.string(l.t.WX49A3)
     },
-    T = {
-        skuId: r.a.SEASONAL_GIFTING_2025_MIRAGE_SKU_ID,
+    C = {
+        skuId: a.a.SEASONAL_GIFTING_2025_MIRAGE_SKU_ID,
         assetId: "a_6d99f670de3fcee669660fe262e896ea",
-        type: i.R.AVATAR_DECORATION,
-        name: () => o.intl.string(o.t.ZK9IyY),
-        a11yLabel: () => o.intl.string(o.t["m/y43M"])
+        type: n.R.AVATAR_DECORATION,
+        name: () => l.intl.string(l.t.ZK9IyY),
+        a11yLabel: () => l.intl.string(l.t["m/y43M"])
     },
     I = {
         gradient: ["rgba(177, 186, 253, 1)", "rgba(91, 108, 242, 1)", "rgba(21, 18, 99, 1)"]
     },
-    L = {
-        rewards: [g, E, T],
-        rewardAssetIdMap: (0, s.t8)([g, E, T]),
+    A = {
+        rewards: [g, b, C],
+        rewardAssetIdMap: (0, o.t8)([g, b, C]),
         chatGiftIcon: {
             trinketsAnimation: {
-                getAnimationData: () => n.e("51463").then(n.bind(n, 347066)).then(t => {
+                getAnimationData: () => r.e("51463").then(r.bind(r, 347066)).then(e => {
                     let {
-                        default: e
-                    } = t;
-                    return fetch(e).then(t => t.json())
+                        default: t
+                    } = e;
+                    return fetch(t).then(e => e.json())
                 }),
                 getGlowAnimationData: () => Promise.resolve(null)
             },
@@ -59,68 +59,68 @@ let g = {
             }
         },
         firstTimeNotice: {
-            getImageUrl: (t, e) => e ? d.A : c.A,
-            title: () => o.intl.string(o.t.Eeqjcv),
-            description: () => o.intl.string(o.t["Wp+i/e"]),
-            cta: () => o.intl.string(o.t.RzWDqY),
-            analyticsLocation: l.A.GIFTING_PROMOTION_COACHMARK,
-            analyticsPage: a.liQ.PREMUIM_UPSELL_GIFTING_PROMOTION
+            getImageUrl: (e, t) => t ? u.A : d.A,
+            title: () => l.intl.string(l.t.Eeqjcv),
+            description: () => l.intl.string(l.t["Wp+i/e"]),
+            cta: () => l.intl.string(l.t.RzWDqY),
+            analyticsLocation: i.A.GIFTING_PROMOTION_COACHMARK,
+            analyticsPage: _.liQ.PREMUIM_UPSELL_GIFTING_PROMOTION
         },
         reminderNagbar: {
-            description: () => o.intl.string(o.t.veQg0t),
-            cta: () => o.intl.string(o.t.RzWDqY),
-            analyticsLocation: l.A.SEASONAL_GIFTING_REMINDER_NAGBAR,
-            analyticsPage: a.liQ.PREMUIM_UPSELL_GIFTING_PROMOTION
+            description: () => l.intl.string(l.t.veQg0t),
+            cta: () => l.intl.string(l.t.RzWDqY),
+            analyticsLocation: i.A.SEASONAL_GIFTING_REMINDER_NAGBAR,
+            analyticsPage: _.liQ.PREMUIM_UPSELL_GIFTING_PROMOTION
         },
         reminderNotice: {
-            getImageUrl: (t, e) => e ? d.A : c.A,
-            title: () => o.intl.string(o.t.bLOiLM),
-            description: () => o.intl.string(o.t["cE/UX7"]),
-            cta: () => o.intl.string(o.t.RzWDqY),
-            analyticsLocation: l.A.GIFTING_PROMOTION_COACHMARK,
-            analyticsPage: a.liQ.PREMUIM_UPSELL_GIFTING_PROMOTION
+            getImageUrl: (e, t) => t ? u.A : d.A,
+            title: () => l.intl.string(l.t.bLOiLM),
+            description: () => l.intl.string(l.t["cE/UX7"]),
+            cta: () => l.intl.string(l.t.RzWDqY),
+            analyticsLocation: i.A.GIFTING_PROMOTION_COACHMARK,
+            analyticsPage: _.liQ.PREMUIM_UPSELL_GIFTING_PROMOTION
         },
         planSelection: {
-            heading: () => o.intl.string(o.t.OEtqpm),
+            heading: () => l.intl.string(l.t.OEtqpm),
             subheading: function() {
-                let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0;
-                return o.intl.formatToPlainString(o.t["2h5M+X"], {
-                    availableCount: t
+                let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0;
+                return l.intl.formatToPlainString(l.t["2h5M+X"], {
+                    availableCount: e
                 })
             },
-            mobileSubheading: t => o.intl.formatToPlainString(o.t["2h5M+X"], {
-                availableCount: t
+            mobileSubheading: e => l.intl.formatToPlainString(l.t["2h5M+X"], {
+                availableCount: e
             }),
             gradientConfig: I,
-            getImageUrl: (t, e) => e ? h.A : u.A,
-            getBannerImageUrl: () => C.A,
-            getBackgroundImageUrl: () => _.A
+            getImageUrl: (e, t) => t ? c.A : s.A,
+            getBannerImageUrl: () => f.A,
+            getBackgroundImageUrl: () => p.A
         },
         planSelectionBanner: {
-            desktopBannerText: () => o.intl.string(o.t.Abiuci),
-            mobileBannerText: () => o.intl.string(o.t.cMiNit),
-            getImageUrl: () => h.A,
+            desktopBannerText: () => l.intl.string(l.t.Abiuci),
+            mobileBannerText: () => l.intl.string(l.t.cMiNit),
+            getImageUrl: () => c.A,
             gradientConfig: () => I,
-            getBackgroundImageUrl: () => C.A
+            getBackgroundImageUrl: () => f.A
         },
         billingSettingsMarketingBanner: {
-            getImageUrl: t => t ? h.A : u.A,
-            title: () => o.intl.string(o.t.Eeqjcv),
-            body: () => o.intl.string(o.t.IuMZS3),
-            getBackgroundImageUrl: () => A.A,
+            getImageUrl: e => e ? c.A : s.A,
+            title: () => l.intl.string(l.t.Eeqjcv),
+            body: () => l.intl.string(l.t.IuMZS3),
+            getBackgroundImageUrl: () => m.A,
             gradientConfig: {
                 gradient: ["rgba(74, 87, 192, 1)", "rgba(8, 5, 67, 1)"]
             }
         },
         giftPurchaseConfirmation: {
-            yearGiftText: o.t["0Z0G7m"],
-            monthGiftText: o.t.qyhlUP,
-            collectRewardButtonText: () => o.intl.string(o.t.kMYVwv),
-            rewardCollectedText: () => o.intl.string(o.t.eZrmtq)
+            yearGiftText: l.t["0Z0G7m"],
+            monthGiftText: l.t.qyhlUP,
+            collectRewardButtonText: () => l.intl.string(l.t.kMYVwv),
+            rewardCollectedText: () => l.intl.string(l.t.eZrmtq)
         },
         rewardSelection: {
-            heading: () => o.intl.string(o.t["3JCuX1"]),
-            primarySubtitle: () => o.intl.string(o.t.h2nMp0),
-            secondarySubtitle: () => o.intl.string(o.t.y5wftM)
+            heading: () => l.intl.string(l.t["3JCuX1"]),
+            primarySubtitle: () => l.intl.string(l.t.h2nMp0),
+            secondarySubtitle: () => l.intl.string(l.t.y5wftM)
         }
     }

@@ -21,24 +21,24 @@ function o(e) {
         usePersistentBadge: _,
         hasIcon: g,
         getDismissibleBadges: A
-    } = t, x = d(), p = c?.(), h = n(), T = u?.() ?? !1, E = m?.(), f = _?.(), S = A?.(), C = (0, l.A)({
-        persistentBadge: f,
+    } = t, x = d(), p = c?.(), h = n(), f = u?.() ?? !1, T = m?.(), E = _?.(), S = A?.(), b = (0, l.A)({
+        persistentBadge: E,
         dismissibleBadges: S
-    }), b = (0, a.q)(t);
+    }), C = (0, a.q)(t);
     return (0, i.jsxs)(r.L, {
         children: [(0, i.jsx)(s.dOG, {
             label: x,
             description: p,
-            badge: C,
+            badge: b,
             checked: h,
             hasIcon: g,
             onChange: e => {
-                b(), o(e)
+                C(), o(e)
             },
-            disabled: T
-        }), T && null != E ? (0, i.jsx)(s.po8, {
+            disabled: f
+        }), f && null != T ? (0, i.jsx)(s.po8, {
             messageType: s.YCn.WARNING,
-            children: E
+            children: T
         }) : null]
     })
 }

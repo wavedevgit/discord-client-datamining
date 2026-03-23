@@ -1,5 +1,5 @@
 /** chunk id: 556445 params = (module,exports,require) **/
-i.d(e, {
+i.d(t, {
     A: () => o
 });
 var n = i(627968);
@@ -9,36 +9,36 @@ var l = i(990078),
     s = i(562153),
     a = i(353411);
 
-function o(t) {
+function o(e) {
     let {
-        activity: e,
+        activity: t,
         user: i,
         channelId: o,
         guildId: d,
         source: u,
         size: c = "sm",
-        variant: m = "secondary",
-        onAction: p,
-        ...A
-    } = t, {
+        variant: A = "secondary",
+        onAction: m,
+        ...p
+    } = e, {
         tooltip: h,
         loading: g,
         disabled: f,
         onClick: T
-    } = (0, a.J$)(e, i, u, s.Ay.getNickname(d, o, i));
+    } = (0, a.J$)(t, i, u, s.Ay.getNickname(d, o, i));
     return (0, n.jsx)(l.m, {
         text: h,
         children: (0, n.jsx)(r.K0, {
             icon: r.J2m,
             size: c,
-            variant: m,
+            variant: A,
             onClick: () => {
-                p?.(), T()
+                m?.(), T()
             },
             disabled: f,
             loading: g,
-            "aria-label": h ?? e.name,
-            ...A
+            "aria-label": h ?? t.name,
+            ...p
         })
     })
 }

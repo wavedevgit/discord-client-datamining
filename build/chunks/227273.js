@@ -1,6 +1,6 @@
 /** chunk id: 227273 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => E
 });
 var i = n(627968),
     s = n(64700),
@@ -18,7 +18,7 @@ var i = n(627968),
     x = n(652215),
     p = n(985018),
     h = n(657989);
-let T = e => {
+let f = e => {
         let {
             isShowingAll: t,
             onClick: n
@@ -37,7 +37,7 @@ let T = e => {
             })]
         })
     },
-    E = e => {
+    T = e => {
         let {
             title: t,
             description: n,
@@ -78,14 +78,14 @@ let T = e => {
             })
         })
     },
-    f = e => {
+    E = e => {
         let {
             className: t,
             isSubscriberNitroHome: n = !1
         } = e, [l, c] = s.useState(!1), m = (0, A.d)({
             styles: h
         }), _ = (0, r.bG)([d.A], () => d.A.useReducedMotion), {
-            analyticsLocations: f
+            analyticsLocations: E
         } = (0, u.Ay)(), S = [m.emoji, m.streaming, m.upload, m.customAppIcons, m.soundboard, m.videoBackground, m.superReactions, m.stickersPremiumPerk, m.badgeAlt];
         return (0, i.jsxs)("div", {
             className: a()(h.perksContainer, t, {
@@ -101,7 +101,7 @@ let T = e => {
                 className: a()(h.perkCardContainer, {
                     [h.perkCardContainerExpanded]: l
                 }),
-                children: S.map(e => null != e && (0, i.jsx)(E, {
+                children: S.map(e => null != e && (0, i.jsx)(T, {
                     ...e
                 }, e.title))
             }), n && (0, i.jsxs)(i.Fragment, {
@@ -110,10 +110,10 @@ let T = e => {
                         [h.sizeGizmo]: !l,
                         [h.sizeGizmoExpanded]: l
                     }),
-                    children: (0, i.jsx)(T, {
+                    children: (0, i.jsx)(f, {
                         onClick: () => {
                             g.default.track(x.HAw.PREMIUM_MARKETING_PERKS_SEE_ALL_CLICKED, {
-                                location_stack: f,
+                                location_stack: E,
                                 was_expanded: l
                             }), c(!l)
                         },

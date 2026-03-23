@@ -1,6 +1,6 @@
 /** chunk id: 124064 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => f
 });
 var i = n(627968),
     s = n(64700),
@@ -22,30 +22,30 @@ let x = (0, d.Ld)(),
     }),
     h = (0, d.Ld)();
 
-function T(e) {
+function f(e) {
     let {
         sectionTitle: t,
         errors: n,
         onBioChange: d,
         pendingBio: u,
-        placeholder: T,
-        currentBio: E,
-        disabled: f = !1
-    } = e, [S, C] = s.useState(u ?? E), [b, N] = s.useState((0, r.x7)(S)), I = s.useRef(E), v = s.useRef(!1);
+        placeholder: f,
+        currentBio: T,
+        disabled: E = !1
+    } = e, [S, b] = s.useState(u ?? T), [C, N] = s.useState((0, r.x7)(S)), v = s.useRef(T), I = s.useRef(!1);
     return s.useEffect(() => {
-        if (I.current !== E) {
-            let e = (0, r.x7)(E);
-            C(E), N(e)
+        if (v.current !== T) {
+            let e = (0, r.x7)(T);
+            b(T), N(e)
         }
-        I.current = E
-    }, [E]), s.useEffect(() => {
-        void 0 !== u || S === E || v.current || (C(E), N((0, r.x7)(E)))
-    }, [u, E, S]), (0, i.jsxs)(m.A, {
+        v.current = T
+    }, [T]), s.useEffect(() => {
+        void 0 !== u || S === T || I.current || (b(T), N((0, r.x7)(T)))
+    }, [u, T, S]), (0, i.jsxs)(m.A, {
         title: t,
         titleId: x,
         description: g.intl.string(g.t.Bbw6Ac),
         errors: n,
-        disabled: f,
+        disabled: E,
         children: [(0, i.jsx)(o.Ay, {
             "aria-describedby": h,
             "aria-labelledby": x,
@@ -53,22 +53,22 @@ function T(e) {
             innerClassName: A.Z,
             maxCharacterCount: _.NA2,
             onChange: function(e, t, n) {
-                t !== S && (C(t), N(n), d(t))
+                t !== S && (b(t), N(n), d(t))
             },
-            placeholder: T,
+            placeholder: f,
             channel: p,
             textValue: S,
-            richValue: b,
+            richValue: C,
             emojiPickerCloseOnModalOuterClick: !0,
             parentModalKey: c.USER_SETTINGS_MODAL_KEY,
             type: a.oU.PROFILE_BIO_INPUT,
             onBlur: () => {
-                v.current = !1
+                I.current = !1
             },
             onFocus: () => {
-                v.current = !0
+                I.current = !0
             },
-            focused: v.current,
+            focused: I.current,
             onSubmit: function() {
                 return new Promise(e => {
                     e({

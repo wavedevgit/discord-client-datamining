@@ -24,18 +24,18 @@ let p = e => {
         buttonClassName: s,
         subtitle: p,
         description: h,
-        descriptionCta: T,
-        isPremiumGetCta: E,
-        onCtaClick: f,
+        descriptionCta: f,
+        isPremiumGetCta: T,
+        onCtaClick: E,
         cardVariant: S
-    } = e, C = (0, c.V)(), b = C?.subscription_trial, N = (0, d.O)(), I = (0, r.FY)({
-        intervalType: b?.interval,
-        intervalCount: b?.interval_count
-    }), v = (0, o.G)({
+    } = e, b = (0, c.V)(), C = b?.subscription_trial, N = (0, d.O)(), v = (0, r.FY)({
+        intervalType: C?.interval,
+        intervalCount: C?.interval_count
+    }), I = (0, o.G)({
         defaultResponse: A.intl.string(A.t["8x0jKT"]),
         onNonTier2Subscriber: A.intl.string(A.t.IJI7yk),
-        onTier2TrialOffer: I,
-        onTier0TrialOffer: I,
+        onTier2TrialOffer: v,
+        onTier0TrialOffer: v,
         onDiscountOffer: A.intl.formatToPlainString(A.t.bkQ4bH, {
             percent: N?.discount.amount
         })
@@ -49,20 +49,20 @@ let p = e => {
             subtitle: p,
             description: h,
             isOverlay: !0
-        }), E && (0, i.jsx)(u.A, {
+        }), T && (0, i.jsx)(u.A, {
             className: s,
             look: a.$n.Looks.BLANK,
             color: a.$n.Colors.CUSTOM,
             subscriptionTier: g.pe.TIER_2,
             textOptions: {
-                textOverride: v
+                textOverride: I
             },
             showGradient: !0
-        }), null != T && null != f && (0, i.jsx)(a.$n, {
+        }), null != f && null != E && (0, i.jsx)(a.$n, {
             "data-migration-pending": !0,
             className: s,
-            onClick: f,
-            children: T
+            onClick: E,
+            children: f
         })]
     })
 }

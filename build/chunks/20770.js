@@ -1,6 +1,6 @@
 /** chunk id: 20770 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => f
 }), n(938796);
 var i = n(627968);
 n(64700);
@@ -20,18 +20,18 @@ var s = n(311907),
     p = n(985018),
     h = n(551934);
 
-function T(e) {
+function f(e) {
     let {
         app: t,
         currentSubscription: n,
         currentListing: l,
         alternativeListings: g,
         navigateToHome: x,
-        subscriptionGroup: T,
-        renewalSkuId: f
-    } = e, S = (0, r.A)(t, 100), C = (0, _.PJ)(T.flags), b = C ? a.RR9 : a.nys, N = C ? p.intl.string(p.t["46YF2D"]) : p.intl.string(p.t.fFyGiA), I = n.metadata?.application_subscription_guild_id, v = (0, s.bG)([u.A], () => C && null != I ? u.A.getGuild(I) : void 0, [I, C]), j = (0, s.bG)([m.A], () => {
-        if (null != f) return m.A.get(f)
-    }, [f]), y = (0, A.Y)(n.currentPeriodEnd);
+        subscriptionGroup: f,
+        renewalSkuId: E
+    } = e, S = (0, r.A)(t, 100), b = (0, _.PJ)(f.flags), C = b ? a.RR9 : a.nys, N = b ? p.intl.string(p.t["46YF2D"]) : p.intl.string(p.t.fFyGiA), v = n.metadata?.application_subscription_guild_id, I = (0, s.bG)([u.A], () => b && null != v ? u.A.getGuild(v) : void 0, [v, b]), j = (0, s.bG)([m.A], () => {
+        if (null != E) return m.A.get(E)
+    }, [E]), y = (0, A.Y)(n.currentPeriodEnd);
     return (0, i.jsxs)("div", {
         children: [(0, i.jsxs)("div", {
             className: h.wx,
@@ -49,24 +49,24 @@ function T(e) {
                     children: [(0, i.jsxs)(a.Heading, {
                         variant: "heading-md/normal",
                         className: h.N4,
-                        children: [(0, i.jsx)(b, {
+                        children: [(0, i.jsx)(C, {
                             size: "xs",
                             color: "currentColor"
                         }), " ", N]
-                    }), null != v && (0, i.jsxs)(i.Fragment, {
+                    }), null != I && (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)(a.Text, {
                             variant: "text-md/normal",
                             children: "•"
                         }), (0, i.jsxs)("span", {
                             className: h.vP,
                             children: [(0, i.jsx)(c.Ay, {
-                                guild: v,
+                                guild: I,
                                 size: c.Ay.Sizes.SMOL
                             }), (0, i.jsx)(a.Heading, {
                                 variant: "heading-md/semibold",
                                 color: "text-muted",
                                 children: p.intl.format(p.t["7ZD8p1"], {
-                                    guildName: v.name
+                                    guildName: I.name
                                 })
                             })]
                         })]
@@ -110,7 +110,7 @@ function T(e) {
                         })
                     })]
                 })
-            }), g.map(e => e.skuId === f ? (0, i.jsx)(d.A, {
+            }), g.map(e => e.skuId === E ? (0, i.jsx)(d.A, {
                 storeListing: e,
                 cta: (0, i.jsx)(a.Text, {
                     variant: "text-sm/semibold",
@@ -119,16 +119,16 @@ function T(e) {
                         startDate: y
                     })
                 })
-            }, e.id) : (0, i.jsx)(E, {
+            }, e.id) : (0, i.jsx)(T, {
                 storeListing: e,
-                guildId: I,
+                guildId: v,
                 navigateToHome: x
             }, e.id))]
         })]
     })
 }
 
-function E(e) {
+function T(e) {
     let {
         storeListing: t,
         guildId: n,

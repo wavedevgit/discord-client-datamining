@@ -1,5 +1,5 @@
 /** chunk id: 655724 params = (module,exports,require) **/
-i.d(e, {
+i.d(t, {
     B: () => c
 });
 var n = i(627968),
@@ -11,25 +11,25 @@ var n = i(627968),
     d = i(426127),
     u = i(985018);
 
-function c(t) {
+function c(e) {
     let {
-        userId: e,
+        userId: t,
         channel: i,
         onAction: c,
-        variant: m = "primary"
-    } = t, p = (0, o.u)(e, i, "useRequestToStreamButton"), A = (0, r.bG)([a.A], () => a.A.getVoiceChannelId() === i.id, [i.id]);
-    if (null == p) return null;
+        variant: A = "primary"
+    } = e, m = (0, o.u)(t, i, "useRequestToStreamButton"), p = (0, r.bG)([a.A], () => a.A.getVoiceChannelId() === i.id, [i.id]);
+    if (null == m) return null;
     let h = (0, n.jsx)(l.$nd, {
         text: u.intl.string(d.default.DKHhec),
-        variant: m,
+        variant: A,
         size: "sm",
         onClick: () => {
-            p.handleRequestToStream("request to stream button"), c?.()
+            m.handleRequestToStream("request to stream button"), c?.()
         },
         fullWidth: !0,
-        disabled: !A
+        disabled: !p
     });
-    return A ? h : (0, n.jsx)(s.m, {
+    return p ? h : (0, n.jsx)(s.m, {
         position: "top",
         text: u.intl.string(d.default.qRXats),
         asContainer: !0,

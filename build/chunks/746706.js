@@ -1,6 +1,6 @@
 /** chunk id: 746706 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => f
 });
 var i = n(627968),
     s = n(64700),
@@ -19,23 +19,23 @@ var i = n(627968),
     p = n(896237),
     h = n(448085);
 
-function T(e) {
+function f(e) {
     let {
         user: t,
         showOverlay: n,
-        children: T
-    } = e, E = (0, r.Ay)(), {
-        analyticsLocations: f
+        children: f
+    } = e, T = (0, r.Ay)(), {
+        analyticsLocations: E
     } = (0, d.Ay)(o.A.PREMIUM_UPSELL_OVERLAY);
     return (s.useEffect(() => {
         n && u.default.track(_.HAw.PREMIUM_UPSELL_VIEWED, {
-            location_stack: f,
+            location_stack: E,
             type: g.e.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_INLINE
         })
-    }, [n, f]), n) ? (0, i.jsxs)("div", {
+    }, [n, E]), n) ? (0, i.jsxs)("div", {
         className: x.ry,
         children: [(0, i.jsx)("div", {
-            children: T
+            children: f
         }), (0, i.jsxs)("div", {
             className: x.Wc,
             children: [(0, i.jsx)("img", {
@@ -52,7 +52,7 @@ function T(e) {
                         default:
                             return p
                     }
-                }(E)
+                }(T)
             }), (0, i.jsxs)("div", {
                 className: x._9,
                 children: [(0, i.jsx)(a.Text, {
@@ -73,5 +73,5 @@ function T(e) {
                 subscriptionTier: g.pe.TIER_2
             })]
         })]
-    }) : T
+    }) : f
 }

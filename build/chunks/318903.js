@@ -22,11 +22,11 @@ function u(e) {
     } = t, g = u?.(), A = _?.(), {
         parentPanelNode: x,
         parentSidebarItemNode: p
-    } = (0, a.x)(n), h = m?.(), T = x?.useTitle?.(), E = h ?? T, f = (0, r.q)(t);
-    if (null == x || null == E) return null;
+    } = (0, a.x)(n), h = m?.(), f = x?.useTitle?.(), T = h ?? f, E = (0, r.q)(t);
+    if (null == x || null == T) return null;
     let S = null != p ? p.icon : void 0;
     return (0, i.jsx)(o.U, {
-        title: E,
+        title: T,
         description: A,
         leadingElement: null != S && (0, i.jsx)("div", {
             className: c.z,
@@ -43,7 +43,7 @@ function u(e) {
         onClick: () => {
             l.A.navigate(n, {
                 animateSidebarScroll: !1
-            }), f()
+            }), E()
         }
     })
 }

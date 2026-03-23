@@ -25,8 +25,8 @@ function _() {
         isForcedCanary: x,
         isAxeEnabled: p,
         preventPopoutClose: h,
-        onlyShowPreviewAppCollections: T,
-        disableAppCollectionsCache: E
+        onlyShowPreviewAppCollections: f,
+        disableAppCollectionsCache: T
     } = (0, s.cf)([d.default, o.A], () => ({
         layoutDebuggingEnabled: d.default.layoutDebuggingEnabled,
         isDeveloper: o.A.isDeveloper,
@@ -41,11 +41,11 @@ function _() {
         onlyShowPreviewAppCollections: d.default.onlyShowPreviewAppCollections,
         disableAppCollectionsCache: d.default.disableAppCollectionsCache
     })), {
-        horizontalSpacing: f,
+        horizontalSpacing: E,
         verticalSpacing: S
     } = (0, r.Or)(), {
-        setHorizontalSpacing: C,
-        setVerticalSpacing: b
+        setHorizontalSpacing: b,
+        setVerticalSpacing: C
     } = r.Or.getState(), N = c.HZ.useSetting();
     return t ? [(0, i.jsxs)(l.Drp, {
         id: "overrides",
@@ -72,19 +72,19 @@ function _() {
         }, "forced-canary"), (0, i.jsx)(l.sLh, {
             id: "preview-collections",
             label: "Preview Unpublished Collections",
-            checked: T,
+            checked: f,
             action: () => {
                 (0, a.x)({
-                    onlyShowPreviewAppCollections: !T
+                    onlyShowPreviewAppCollections: !f
                 })
             }
         }, "preview-collections"), (0, i.jsx)(l.sLh, {
             id: "disable-collections-cache",
             label: "Disable Collections Cache",
-            checked: E,
+            checked: T,
             action: () => {
                 (0, a.x)({
-                    disableAppCollectionsCache: !E
+                    disableAppCollectionsCache: !T
                 })
             }
         }, "disable-collections-cache")]
@@ -171,10 +171,10 @@ function _() {
                 control: (e, t) => (0, i.jsx)(l.i42, {
                     ...e,
                     ref: t,
-                    value: f,
+                    value: E,
                     minValue: 0,
                     maxValue: r.YR,
-                    onChange: e => C(e),
+                    onChange: e => b(e),
                     renderValue: e => `${Math.round(e)}px`,
                     "aria-label": "Horizontal Spacing"
                 })
@@ -187,7 +187,7 @@ function _() {
                     value: S,
                     minValue: 0,
                     maxValue: r.YR,
-                    onChange: e => b(e),
+                    onChange: e => C(e),
                     "aria-label": "Vertical Spacing",
                     renderValue: e => `${Math.round(e)}px`
                 })

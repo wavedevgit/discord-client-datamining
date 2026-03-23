@@ -3,7 +3,7 @@ n.d(t, {
     Bs: () => h,
     MT: () => x,
     U4: () => A,
-    XN: () => T,
+    XN: () => f,
     YF: () => p
 });
 var i = n(627968),
@@ -123,7 +123,7 @@ let g = e => {
             }
         })
     },
-    T = e => {
+    f = e => {
         let {
             onInvite: t,
             canInvite: n

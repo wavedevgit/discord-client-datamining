@@ -1,6 +1,6 @@
 /** chunk id: 371764 params = (module,exports,require) **/
 n.d(t, {
-    x: () => T
+    x: () => f
 });
 var i = n(627968);
 n(64700);
@@ -19,13 +19,13 @@ var s = n(110259),
     x = n(637706),
     p = n(985018),
     h = n(122506);
-let T = e => {
+let f = e => {
     let {
         componentId: t,
         promotionBannerMarketingComponentFields: n
     } = e, {
-        analyticsLocations: T
-    } = (0, m.Ay)(), E = (0, u.p)();
+        analyticsLocations: f
+    } = (0, m.Ay)(), T = (0, u.p)();
     (0, _.A)({
         type: s.ImpressionTypes.VIEW,
         name: s.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
@@ -34,10 +34,10 @@ let T = e => {
             component_id: t
         }
     });
-    let f = (0, A.h)({
+    let E = (0, A.h)({
             buttonAction: n.button?.buttonAction ?? o.dz.OPEN_TIER_2_PAYMENT_MODAL,
-            analyticsLocations: T,
-            analyticsLocation: E.location
+            analyticsLocations: f,
+            analyticsLocation: T.location
         }),
         S = (0, x.a)(n.body);
     return (0, i.jsxs)("div", {
@@ -72,7 +72,7 @@ let T = e => {
             children: (0, i.jsx)(d.$nd, {
                 variant: "expressive",
                 size: "md",
-                onClick: f,
+                onClick: E,
                 text: n.button.copy,
                 icon: a.NitroWheelIcon
             })

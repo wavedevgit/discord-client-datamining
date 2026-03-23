@@ -1,5 +1,5 @@
 /** chunk id: 338234 params = (module,exports,require) **/
-i.d(e, {
+i.d(t, {
     Uw: () => r,
     fC: () => l
 });
@@ -19,26 +19,26 @@ let n = (0, i(600975).C)({
     }]
 });
 
-function l(t) {
+function l(e) {
     let {
-        guildId: e,
+        guildId: t,
         location: i
-    } = t;
+    } = e;
     return n.useExperiment({
-        guildId: e,
+        guildId: t,
         location: i
     }, {
         autoTrackExposure: !0
     })
 }
 
-function r(t) {
+function r(e) {
     let {
-        guildId: e,
+        guildId: t,
         location: i
-    } = t;
+    } = e;
     return n.getCurrentConfig({
-        guildId: e,
+        guildId: t,
         location: i
     }, {
         autoTrackExposure: !0

@@ -1,11 +1,11 @@
 /** chunk id: 22705 params = (module,exports,require) **/
-n.d(e, {
-    A: () => i
+i.d(t, {
+    A: () => n
 });
 
-function i(t) {
-    return null != t ? {
-        id: t.id,
-        name: t.name ?? ""
+function n(e) {
+    return null != e ? {
+        id: e.id,
+        name: e.name ?? ""
     } : null
 }

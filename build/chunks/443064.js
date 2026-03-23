@@ -18,15 +18,15 @@ var i = n(627968),
     x = n(50268),
     p = n(922301),
     h = n(81400),
-    T = n(557722),
-    E = n(207560),
-    f = n(790114),
+    f = n(557722),
+    T = n(207560),
+    E = n(790114),
     S = n(836602),
-    C = n(262),
-    b = n(950191),
+    b = n(262),
+    C = n(950191),
     N = n(854627),
-    I = n(542535),
-    v = n(915614),
+    v = n(542535),
+    I = n(915614),
     j = n(662758),
     y = n(957565),
     O = n(975571),
@@ -41,9 +41,9 @@ var i = n(627968),
     w = n(985018),
     V = n(536242),
     B = n(609290);
-let H = L.Ay.getEnableHardwareAcceleration() ? c.JsQ : c.euF;
+let F = L.Ay.getEnableHardwareAcceleration() ? c.JsQ : c.euF;
 
-function F() {
+function H() {
     (0, G.openUserSettings)(D.X.PROFILE_PANEL)
 }
 
@@ -168,7 +168,7 @@ function z(e) {
                 size: "sm",
                 text: _ ? w.intl.string(w.t["16kTw/"]) : w.intl.string(w.t.bt75uw),
                 "aria-label": w.intl.string(w.t.YXeWYM),
-                onClick: F
+                onClick: H
             })
         })]
     })
@@ -321,7 +321,7 @@ function K(e) {
                             title: w.intl.string(w.t["3CTiKi"]),
                             children: l.hasFlag(k.nhx.MFA_SMS) ? w.intl.string(w.t.jrhJyo) : void 0,
                             actionText: w.intl.string(w.t.N86XcP),
-                            handleSubmit: e => T.A.removePhone(e, T.d.USER_SETTINGS_UPDATE)
+                            handleSubmit: e => f.A.removePhone(e, f.d.USER_SETTINGS_UPDATE)
                         }))
                     }
                 })
@@ -339,7 +339,7 @@ function K(e) {
                                 default: e
                             } = await Promise.resolve().then(n.bind(n, 615715));
                             return t => (0, i.jsx)(e, {
-                                reason: T.d.USER_SETTINGS_UPDATE,
+                                reason: f.d.USER_SETTINGS_UPDATE,
                                 ...t
                             })
                         }, {
@@ -402,9 +402,9 @@ function q(e) {
                 ...t
             })
         })
-    }, []), T = s.useMemo(() => l ? r ? w.intl.string(w.t.sK0dmH) : o ? w.intl.format(V.default.WM5adV, {
+    }, []), f = s.useMemo(() => l ? r ? w.intl.string(w.t.sK0dmH) : o ? w.intl.format(V.default.WM5adV, {
         handleOnHelpUrlHook: p
-    }) : w.intl.string(w.t.XxRj7f) : x, [l, r, o, x, p]), E = l && !r && o;
+    }) : w.intl.string(w.t.XxRj7f) : x, [l, r, o, x, p]), T = l && !r && o;
     return (0, i.jsxs)("div", {
         className: a()(B.ZZ, t),
         children: [(0, i.jsx)("div", {
@@ -419,11 +419,11 @@ function q(e) {
                         tag: "span",
                         color: "text-strong",
                         variant: "text-md/normal",
-                        children: [o && l && !r ? `${w.intl.string(w.t.XxRj7f)} • ` : null, T]
+                        children: [o && l && !r ? `${w.intl.string(w.t.XxRj7f)} • ` : null, f]
                     })
                 })]
             })
-        }), E && (0, i.jsx)("div", {
+        }), T && (0, i.jsx)("div", {
             "data-button-hoisted-classname-wrapper": !0,
             className: B.pr,
             children: (0, i.jsx)(c.Button, {
@@ -433,7 +433,7 @@ function q(e) {
                 "aria-label": w.intl.string(w.t.bt75uw),
                 onClick: h
             })
-        }), d && !E && (0, i.jsx)("div", {
+        }), d && !T && (0, i.jsx)("div", {
             "data-button-hoisted-classname-wrapper": !0,
             className: B.pr,
             children: (0, i.jsx)(c.Button, {
@@ -452,16 +452,16 @@ function q(e) {
 function J(e) {
     let {
         currentUser: t
-    } = e, n = (0, b.Ay)(t.id), s = (0, C.A)(n), l = P.jP.useSetting(), a = (0, r.bG)([S.A], () => S.A.getErrors()), o = a?.avatar?.[0], {
+    } = e, n = (0, C.Ay)(t.id), s = (0, b.A)(n), l = P.jP.useSetting(), a = (0, r.bG)([S.A], () => S.A.getErrors()), o = a?.avatar?.[0], {
         avatarSrc: d,
         avatarDecorationSrc: m
     } = (0, N.A)({
         userId: t?.id,
         size: c._3J.SIZE_80
-    }), _ = (0, f.A)(), g = (0, E.fk)();
+    }), _ = (0, E.A)(), g = (0, T.fk)();
     return (0, i.jsxs)("div", {
         className: B.DM,
-        children: [(0, i.jsx)(v.o, {
+        children: [(0, i.jsx)(I.o, {
             user: t,
             displayProfile: n,
             avatarSize: c._3J.SIZE_80,
@@ -472,7 +472,7 @@ function J(e) {
             themePadding: 0
         }), (0, i.jsxs)("div", {
             className: B.eF,
-            children: [(0, i.jsx)(H, {
+            children: [(0, i.jsx)(F, {
                 className: B.my,
                 src: d,
                 avatarDecoration: m,
@@ -490,7 +490,7 @@ function J(e) {
                     }), (0, i.jsx)(Z, {
                         user: t
                     })]
-                }), (0, i.jsx)(I.A, {
+                }), (0, i.jsx)(v.A, {
                     badges: s,
                     className: B.C_,
                     badgeClassName: B.qS
@@ -499,7 +499,7 @@ function J(e) {
                 variant: "primary",
                 size: "sm",
                 text: w.intl.string(w.t["2p2aYz"]),
-                onClick: F
+                onClick: H
             })]
         }), (0, i.jsxs)("div", {
             className: B.Tp,

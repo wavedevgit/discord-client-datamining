@@ -32,13 +32,13 @@ function h(e) {
         keyExtractor: l,
         paddingTop: h = 0,
         paddingBottom: A = 0
-    } = e, [m, p] = s.useState({
+    } = e, [m, _] = s.useState({
         width: 0,
         height: 0
     }), {
-        width: _,
+        width: p,
         height: g
-    } = m, f = n?.length ?? 0, x = _ - 16, C = g - (h + A), {
+    } = m, f = n?.length ?? 0, x = p - 16, C = g - (h + A), {
         tileStyle: E,
         tileWidth: I,
         rows: N,
@@ -48,7 +48,7 @@ function h(e) {
         let a, r, o, h, {
             rows: A,
             columns: m,
-            tileWidth: p
+            tileWidth: _
         } = (i = e, s = t, l = n, r = Math.floor(s / 25), a = i > 25 ? u(r, s, e => {
             let t;
             return d(e, s) * (Math.ceil((l - (t = e / c)) / (8 + t)) + 1) > 25
@@ -62,13 +62,13 @@ function h(e) {
         });
         return {
             tileStyle: {
-                width: p
+                width: _
             },
-            tileWidth: p,
+            tileWidth: _,
             rows: A,
             columns: m
         }
-    })(f, x, C), [f, x, C]), S = b + 1, T = S * I + (S - 1) * 8 <= _, v = Math.floor(I / c) + 8, y = Math.max(0, C - v * N) / 2;
+    })(f, x, C), [f, x, C]), S = b + 1, T = S * I + (S - 1) * 8 <= p, v = Math.floor(I / c) + 8, y = Math.max(0, C - v * N) / 2;
     return (0, i.jsx)(r.A, {
         fade: !0,
         className: t,
@@ -97,6 +97,6 @@ function h(e) {
         rowCount: N,
         rowCountBySection: [N],
         rowHeight: v,
-        onResize: p
+        onResize: _
     })
 }

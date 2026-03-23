@@ -1,7 +1,7 @@
 /** chunk id: 947926 params = (module,exports,require) **/
 n.d(t, {
-    A: () => L,
-    Y: () => U
+    A: () => U,
+    Y: () => L
 });
 var a = n(627968),
     i = n(64700),
@@ -24,15 +24,15 @@ var a = n(627968),
     j = n(545986),
     A = n(139210),
     C = n(568329),
-    y = n(818276),
-    T = n(742860),
+    T = n(818276),
+    E = n(742860),
     S = n(783569),
-    E = n(963713),
+    y = n(963713),
     N = n(717695),
     I = n(899592),
-    k = n(546350),
-    O = n(922532),
-    R = n(20732),
+    O = n(546350),
+    R = n(922532),
+    k = n(20732),
     w = n(654487);
 n(272111);
 var D = n(419548);
@@ -56,31 +56,31 @@ function P() {
     }, []), null
 }
 
-function U(e) {
+function L(e) {
     let {
         quest: t
     } = e, n = (0, x.L)({
         quest: t,
         location: w.rE.QUESTS_BAR
     }), s = (0, g.s)(), c = (0, o.bG)([m.A], () => null != m.A.questEnrollmentBlockedUntil), {
-        isQuestBarVisible: U,
-        reason: L
+        isQuestBarVisible: L,
+        reason: U
     } = (0, b.TQ)({
         quest: t
-    }), B = (0, o.bG)([u.A], () => u.A.hasLayers()), G = i.useRef(null), F = i.useMemo(() => (0, _.vv)(t), [t]), V = t.id, W = t.userStatus?.enrolledAt != null, H = (0, d.A)(W), K = t.userStatus?.completedAt != null, {
+    }), B = (0, o.bG)([u.A], () => u.A.hasLayers()), G = i.useRef(null), F = i.useMemo(() => (0, _.vv)(t), [t]), V = t.id, H = t.userStatus?.enrolledAt != null, W = (0, d.A)(H), K = t.userStatus?.completedAt != null, {
         hasError: z,
         isLoading: $
-    } = (0, f.Gk)(), q = i.useContext(N.Z) || s && U && !$ && !c, {
-        isExpanded: Q,
-        setIsExpanded: Y,
+    } = (0, f.Gk)(), q = i.useContext(N.Z) || s && L && !$ && !c, {
+        isExpanded: Y,
+        setIsExpanded: Q,
         expandQuestBar: J,
         isExpansionAnimationComplete: X,
         isVisibilityAnimationAtRest: Z,
         expansionSpring: ee,
         visibilitySpring: et,
         springConfig: en
-    } = (0, k.w)({
-        isQuestAccepted: W,
+    } = (0, O.w)({
+        isQuestAccepted: H,
         isQuestCompleted: K,
         isQuestBarVisible: q
     }), {
@@ -93,25 +93,25 @@ function U(e) {
         handleBlur: ed,
         handleMouseEnter: ec,
         handleMouseLeave: eu
-    } = (0, O.m)({
+    } = (0, R.m)({
         quest: t,
-        isExpanded: Q,
-        setIsExpanded: Y,
+        isExpanded: Y,
+        setIsExpanded: Q,
         expandQuestBar: J,
         isQuestCompleted: K,
-        isQuestAccepted: W,
-        prevIsQuestAccepted: H,
+        isQuestAccepted: H,
+        prevIsQuestAccepted: W,
         impressionRef: G
     });
-    (0, R.S)({
+    (0, k.S)({
         quest: t,
         hasAssetsError: z,
         isEligibleForQuests: s,
         isQuestBarVisible: q,
         isVisibilityAnimationAtRest: Z,
         isLoadingAssets: $,
-        currentQuestVisibleReason: L,
-        shouldShowQuestBar: U,
+        currentQuestVisibleReason: U,
+        shouldShowQuestBar: L,
         isQuestEnrollmentBlocked: c,
         impressionRef: G
     });
@@ -135,7 +135,7 @@ function U(e) {
             children: [q && (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsx)(M, {
                     questId: V,
-                    isExpanded: Q
+                    isExpanded: Y
                 }), (0, a.jsx)(P, {})]
             }), (0, a.jsx)(r.animated.div, {
                 "aria-hidden": !q,
@@ -155,20 +155,20 @@ function U(e) {
                 },
                 children: (0, a.jsx)(r.animated.div, {
                     className: l()(D.FG, {
-                        [D.E$]: Q,
-                        [D.KA]: W
+                        [D.E$]: Y,
+                        [D.KA]: H
                     }),
                     children: (0, a.jsx)(S.R, {
                         springConfig: en,
-                        isExpanded: Q,
+                        isExpanded: Y,
                         children: (0, a.jsx)(C.oK, {
                             expandedContentRef: em,
                             collapsedContentRef: eh,
                             expansionSpring: ee,
-                            children: (0, a.jsxs)(E.C, {
+                            children: (0, a.jsxs)(y.C, {
                                 quest: t,
                                 taskDetails: ep,
-                                isExpanded: Q,
+                                isExpanded: Y,
                                 isExpansionAnimationComplete: X,
                                 onCtxMenuClose: ei,
                                 onCtxMenuOpen: ea,
@@ -176,16 +176,16 @@ function U(e) {
                                 onGameSheetOpen: el,
                                 onGameSheetClose: er,
                                 collapsedHeight: e_,
-                                children: [(0, a.jsx)(y.A, {
+                                children: [(0, a.jsx)(T.A, {
                                     ref: eh,
                                     className: D.Qs,
                                     overlayRef: ex
-                                }, K ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, a.jsx)(T.A, {
+                                }, K ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, a.jsx)(E.A, {
                                     className: D.Qs,
                                     overlayRef: ex,
                                     ref: em,
                                     children: (0, a.jsxs)(a.Fragment, {
-                                        children: [(0, a.jsx)(I.A, {}), !W && (0, a.jsx)(A.A, {})]
+                                        children: [(0, a.jsx)(I.A, {}), !H && (0, a.jsx)(A.A, {})]
                                     })
                                 }), (0, a.jsx)("div", {
                                     ref: ex,
@@ -199,12 +199,12 @@ function U(e) {
         }))
     })
 }
-let L = 21552 == n.j ? function() {
+let U = 21552 == n.j ? function() {
     let e = (0, b.dN)();
     return null == e ? null : (0, a.jsx)(f.jY, {
         source: w.rE.QUESTS_BAR,
         questId: e.id,
-        children: (0, a.jsx)(U, {
+        children: (0, a.jsx)(L, {
             quest: e
         })
     }, e.id)

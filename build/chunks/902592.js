@@ -1,6 +1,6 @@
 /** chunk id: 902592 params = (module,exports,require) **/
 n.r(t), n.d(t, {
-    default: () => k,
+    default: () => O,
     openDevToolsPopout: () => S
 });
 var a = n(627968),
@@ -24,9 +24,9 @@ var a = n(627968),
     j = n(652215),
     A = n(985018),
     C = n(346858),
-    y = n(661251);
+    T = n(661251);
 
-function T(e) {
+function E(e) {
     let {
         resizableNode: t,
         onResize: n,
@@ -49,7 +49,7 @@ function S() {
         windowKey: j.MLl.DEVTOOLS_POPOUT,
         title: "DevTools",
         withTitleBar: !0,
-        children: (0, a.jsx)(k, {
+        children: (0, a.jsx)(O, {
             mobile: !1,
             isPopout: !0
         })
@@ -59,7 +59,7 @@ function S() {
     })
 }
 
-function E(e) {
+function y(e) {
     let {
         isPopout: t = !1
     } = e, n = (0, v.x)(), {
@@ -83,7 +83,7 @@ function E(e) {
         }
     }), (0, a.jsxs)(f.xG, {
         children: [(0, a.jsxs)(m.Ay, {
-            className: y.jr,
+            className: T.jr,
             toolbar: t ? null : (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsx)(m.Ay.Icon, {
                     icon: d.tfB,
@@ -124,13 +124,13 @@ function N() {
             width: n
         },
         "data-app-right-panel": !0,
-        children: [(0, a.jsx)(T, {
+        children: [(0, a.jsx)(E, {
             resizableNode: e,
             onResize: s,
             onResizeEnd: l
         }), (0, a.jsx)("div", {
             className: C.wp,
-            children: (0, a.jsx)(E, {})
+            children: (0, a.jsx)(y, {})
         })]
     })
 }
@@ -140,14 +140,14 @@ function I() {
         className: l()(C.kL, C.PQ),
         children: (0, a.jsx)("div", {
             className: C.wp,
-            children: (0, a.jsx)(E, {})
+            children: (0, a.jsx)(y, {})
         })
     }) : (0, a.jsx)("div", {
         className: C.kL,
         children: (0, a.jsx)(d.DUT, {
             onClick: g.pf,
             children: (0, a.jsxs)(m.Ay, {
-                className: l()(y.jr, C.J$),
+                className: l()(T.jr, C.J$),
                 toolbar: (0, a.jsx)(p.A, {
                     direction: p.A.Directions.UP
                 }),
@@ -162,14 +162,14 @@ function I() {
     })
 }
 
-function k(e) {
+function O(e) {
     let {
         mobile: t,
         isPopout: n = !1
     } = e;
     return t ? (0, a.jsx)(I, {}) : n ? (0, a.jsx)("div", {
         className: C.jC,
-        children: (0, a.jsx)(E, {
+        children: (0, a.jsx)(y, {
             isPopout: !0
         })
     }) : (0, a.jsx)(N, {})

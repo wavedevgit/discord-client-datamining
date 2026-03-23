@@ -1,6 +1,6 @@
 /** chunk id: 60508 params = (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => v
 });
 var i = n(627968),
     s = n(64700),
@@ -18,18 +18,18 @@ var i = n(627968),
     x = n(975662),
     p = n(322631),
     h = n(17307),
-    T = n(652495),
-    E = n(960005),
-    f = n(992990),
+    f = n(652495),
+    T = n(960005),
+    E = n(992990),
     S = n(652215),
-    C = n(985018),
-    b = n(520089),
+    b = n(985018),
+    C = n(520089),
     N = n(288894);
-let I = e => {
+let v = e => {
     let t, n, {
             isAllPerksVisible: l,
-            setIsAllPerksVisible: I,
-            previousComponent: v,
+            setIsAllPerksVisible: v,
+            previousComponent: I,
             enablePremiumBrandRefresh: j
         } = e,
         y = s.useRef(null),
@@ -48,44 +48,44 @@ let I = e => {
             fractionalState: k
         } = (0, _.A)(),
         U = (0, A.d)();
-    G ? (t = C.intl.string(C.t["+vt7w9"]), n = C.intl.string(C.t.LgHbnL)) : (t = C.intl.string(C.t.LgHbnL), n = C.intl.string(C.t["+vt7w9"]));
+    G ? (t = b.intl.string(b.t["+vt7w9"]), n = b.intl.string(b.t.LgHbnL)) : (t = b.intl.string(b.t.LgHbnL), n = b.intl.string(b.t["+vt7w9"]));
     let w = () => {
-        I(!1), g.default.track(S.HAw.NITRO_HOME_NAVIGATION, {
+        v(!1), g.default.track(S.HAw.NITRO_HOME_NAVIGATION, {
             current_component: p.A2.SEE_ALL,
-            next_component: v,
+            next_component: I,
             interaction_component: "Back Button"
         })
     };
     return (0, i.jsx)(d.GtU, {
-        className: a()(b.NX, {
-            [b.ho]: l,
-            [b.LM]: M
+        className: a()(C.NX, {
+            [C.ho]: l,
+            [C.LM]: M
         }),
         inert: !l,
         ref: y,
         children: (0, i.jsx)(d.hLv, {
             color: "nitro-pink",
-            className: a()(b.kL, b.Gd, {
-                [b.fv]: !j
+            className: a()(C.kL, C.Gd, {
+                [C.fv]: !j
             }),
             children: (0, i.jsxs)(m.f5, {
                 value: L,
-                children: [j ? (0, i.jsx)(f.A, {
+                children: [j ? (0, i.jsx)(E.A, {
                     onBackClick: w
-                }) : (0, i.jsx)(T.A, {
-                    className: b.v1,
+                }) : (0, i.jsx)(f.A, {
+                    className: C.v1,
                     onBackClick: w
                 }), (0, i.jsxs)("div", {
-                    className: a()(b.fi, {
-                        [b._9]: j
+                    className: a()(C.fi, {
+                        [C._9]: j
                     }),
                     children: [(0, i.jsx)(d.Heading, {
                         variant: "heading-xxl/extrabold",
                         color: "text-strong",
-                        className: b.R_,
+                        className: C.R_,
                         children: t
-                    }), (0, i.jsx)(E.A, {
-                        className: b.Nm,
+                    }), (0, i.jsx)(T.A, {
+                        className: C.Nm,
                         cards: (0, h.vx)({
                             perksCards: R,
                             variant: p.cJ.CARD_CAROUSEL_FIRST_ROW,
@@ -98,10 +98,10 @@ let I = e => {
                     }), (0, i.jsx)(d.Heading, {
                         variant: "heading-xxl/extrabold",
                         color: "text-strong",
-                        className: b.R_,
+                        className: C.R_,
                         children: n
-                    }), (0, i.jsx)(E.A, {
-                        className: b.Nm,
+                    }), (0, i.jsx)(T.A, {
+                        className: C.Nm,
                         cards: (0, h.vx)({
                             perksCards: R,
                             variant: p.cJ.CARD_CAROUSEL_SECOND_ROW,
@@ -114,10 +114,10 @@ let I = e => {
                     }), (0, i.jsx)(d.Heading, {
                         variant: "heading-xxl/extrabold",
                         color: "text-strong",
-                        className: b.R_,
-                        children: C.intl.string(C.t.LTaxu9)
-                    }), (0, i.jsx)(E.A, {
-                        className: b.Nm,
+                        className: C.R_,
+                        children: b.intl.string(b.t.LTaxu9)
+                    }), (0, i.jsx)(T.A, {
+                        className: C.Nm,
                         cards: (0, h.vx)({
                             perksCards: R,
                             variant: p.cJ.CARD_CAROUSEL_THIRD_ROW,
@@ -129,7 +129,7 @@ let I = e => {
                         cardType: p.cJ.CARD_CAROUSEL_THIRD_ROW
                     })]
                 }), (0, i.jsx)("div", {
-                    className: b.hz
+                    className: C.hz
                 }), (0, i.jsx)(o.L, {
                     innerRef: O,
                     onChange: e => {
@@ -139,14 +139,14 @@ let I = e => {
                     },
                     children: (0, i.jsx)("div", {
                         ref: O,
-                        className: b._Z
+                        className: C._Z
                     })
                 }), (0, i.jsx)("img", {
                     src: N,
-                    className: b.Kw,
+                    className: C.Kw,
                     width: 112,
                     height: 85,
-                    alt: C.intl.string(C.t.X4IxWL)
+                    alt: b.intl.string(b.t.X4IxWL)
                 })]
             })
         })

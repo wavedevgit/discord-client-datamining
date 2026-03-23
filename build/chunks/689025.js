@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(442433),
     A = n(676002),
     m = n(296216),
-    p = n(963027),
-    _ = n(202384),
+    _ = n(963027),
+    p = n(202384),
     g = n(51758),
     f = n(721592),
     x = n(214660),
@@ -87,7 +87,7 @@ class W extends U.Ay {
             connected: n,
             unverifiedAccount: i
         } = this.props, s = e.getGuildId();
-        null != s && (0, g.V)(s) && (0, _.Ze)(s), i && this.setState({
+        null != s && (0, g.V)(s) && (0, p.Ze)(s), i && this.setState({
             shouldShowGuildVerificationPopout: !0
         }), t || n || e.isRoleSubscriptionTemplatePreviewChannel() || (0, E.av)(e), __OVERLAY__ || (0, C.iN)(e.id)
     };
@@ -194,7 +194,7 @@ class W extends U.Ay {
             canReorderChannel: h,
             canMoveMembers: A,
             stageInstance: m,
-            isSubscriptionGated: _,
+            isSubscriptionGated: p,
             needSubscriptionToAccess: g,
             unread: f,
             resolvedUnreadSetting: x,
@@ -238,11 +238,11 @@ class W extends U.Ay {
                         connectDragPreview: u,
                         subtitle: this.renderSubtitle(),
                         isFavoriteSuggestion: E,
-                        "aria-label": (0, p.Ay)({
+                        "aria-label": (0, _.Ay)({
                             channel: e,
                             unread: f,
                             mentionCount: C,
-                            isSubscriptionGated: _,
+                            isSubscriptionGated: p,
                             needSubscriptionToAccess: g
                         }),
                         children: [E && this.renderAcceptSuggestionButton(), E && this.renderRemoveSuggestionButton(), !E && this.renderOpenChatButton(), !E && this.renderInviteButton(), !E && this.renderEditButton(), !E && this.renderChannelInfo()]
@@ -277,24 +277,24 @@ function z(e) {
             bypassLimit: O.A.can(V.xBc.MOVE_MEMBERS, n),
             unverifiedAccount: !i.canChat
         }
-    }), h = (0, r.bG)([v.A], () => v.A.isCollapsed(n.parent_id)), A = (0, T.Ay)(n.id), m = (0, r.bG)([b.A], () => b.A.getStageInstanceByChannel(n.id), [n.id]), p = (0, I.zy)(n.id, N.ip.AUDIENCE), {
-        isSubscriptionGated: _,
+    }), h = (0, r.bG)([v.A], () => v.A.isCollapsed(n.parent_id)), A = (0, T.Ay)(n.id), m = (0, r.bG)([b.A], () => b.A.getStageInstanceByChannel(n.id), [n.id]), _ = (0, I.zy)(n.id, N.ip.AUDIENCE), {
+        isSubscriptionGated: p,
         needSubscriptionToAccess: g
     } = (0, f.A)(n.id), x = (0, r.bG)([M.Ay], () => M.Ay.isFavorite(t.id, n.id)), C = (0, S.xn)(n.id), E = (0, P.A)({
         channel: n,
         isChannelSelected: !1,
         isChannelCollapsed: a,
         voiceStates: o,
-        isSubscriptionGated: _,
+        isSubscriptionGated: p,
         needSubscriptionToAccess: g,
         enableConnectedUserLimit: C || n.userLimit > 0 && n.userLimit < V.RCc
     }), j = e.connected && null == E;
     return (0, i.jsx)(Y, {
         categoryCollapsed: h,
         connectAction: A,
-        numAudience: p,
+        numAudience: _,
         stageInstance: m,
-        isSubscriptionGated: _,
+        isSubscriptionGated: p,
         needSubscriptionToAccess: g,
         ...c,
         ...u,

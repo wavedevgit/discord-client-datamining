@@ -1,8 +1,8 @@
 /** chunk id: 998548 params = (module,exports,require) **/
 n.d(t, {
-    Xj: () => f,
+    Xj: () => E,
     aK: () => h,
-    m3: () => T
+    m3: () => f
 });
 var i = n(627968),
     s = n(64700),
@@ -45,7 +45,7 @@ function h() {
     }, [n, e, l])
 }
 
-function T() {
+function f() {
     let e = (0, u.SJ)(),
         t = (0, d.b8)(),
         n = e && !t,
@@ -72,7 +72,7 @@ function T() {
     }, [l, n, c])
 }
 
-function E() {
+function T() {
     let e = (0, c.WX)();
     s.useEffect(() => {
         (0, m.N)(x.YA.AGE_CONFIRMATION_NOTICE, x.YX.VIEWED)
@@ -103,13 +103,13 @@ function E() {
     })
 }
 
-function f() {
+function E() {
     let e = (0, u.aX)(l.t.REACTIVE_CHECK),
         t = (0, d.b8)();
     return s.useMemo(() => {
         if (e && !t) return {
             type: g.lT.STRONGLY_DISCOURAGED_CUSTOM,
-            notice: E
+            notice: T
         }
     }, [e, t])
 }

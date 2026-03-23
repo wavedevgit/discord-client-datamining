@@ -25,7 +25,7 @@ let x = e => {
         [m.k.BEST_OF_NITRO]: g.intl.string(g.t.xQKkE8),
         [m.k.PLANS]: g.intl.string(g.t.wyNMnm),
         [m.k.COMPARE]: g.intl.string(g.t.pwD7If)
-    }, p = (0, l.bG)([d.default], () => d.default.getCurrentUser()), h = (0, o.Gh)("premium_marketing_nav_bar") && null != p, T = s.useRef(null), E = Object.values(t).sort((e, t) => e.order - t.order);
+    }, p = (0, l.bG)([d.default], () => d.default.getCurrentUser()), h = (0, o.Gh)("premium_marketing_nav_bar") && null != p, f = s.useRef(null), T = Object.values(t).sort((e, t) => e.order - t.order);
     return (0, i.jsxs)(r.A, {
         className: A.TQ,
         transparent: !0,
@@ -38,7 +38,7 @@ let x = e => {
                     colorClass: A.oG
                 }), (0, i.jsx)("div", {
                     className: A.zc,
-                    children: E.map(e => {
+                    children: T.map(e => {
                         let t = n === e.id,
                             s = x[e.id];
                         return (0, i.jsxs)(a.DUT, {
@@ -57,7 +57,7 @@ let x = e => {
             }), (0, i.jsxs)("div", {
                 className: A.MQ,
                 children: [h && (0, i.jsx)(u.l, {
-                    ref: T,
+                    ref: f,
                     size: "sm"
                 }), (0, i.jsx)(c.A, {
                     size: "sm",
@@ -65,7 +65,7 @@ let x = e => {
                 })]
             })]
         }), h && (0, i.jsx)(_.O, {
-            targetElementRef: T
+            targetElementRef: f
         })]
     })
 }

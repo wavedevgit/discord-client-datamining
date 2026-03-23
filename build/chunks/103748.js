@@ -1,6 +1,6 @@
 /** chunk id: 103748 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => y
 }), n(321073), n(323874), n(14289), n(35956);
 var a = n(627968),
     i = n(64700),
@@ -27,8 +27,8 @@ let A = {
         [_.qH.REDUCED_MOTION]: null
     },
     C = "debug",
-    y = "reduced-motion-preview-modal",
-    T = e => {
+    T = "reduced-motion-preview-modal",
+    E = e => {
         let {
             transitionState: t,
             onClose: n,
@@ -99,13 +99,13 @@ let A = {
             }), r ? (0, a.jsx)(c.DUT, {
                 className: l()(v.zd, v.eB),
                 onClick: () => {
-                    (0, c.kBI)(y) ? (0, c.OoC)(y) : (0, c.mMO)(() => Promise.resolve(e => (0, a.jsx)(T, {
+                    (0, c.kBI)(T) ? (0, c.OoC)(T) : (0, c.mMO)(() => Promise.resolve(e => (0, a.jsx)(E, {
                         ...e,
                         frameSrc: n?.src ?? null,
                         theme: i
                     })), {
-                        modalKey: y,
-                        onCloseRequest: () => (0, c.OoC)(y)
+                        modalKey: T,
+                        onCloseRequest: () => (0, c.OoC)(T)
                     })
                 },
                 children: d
@@ -120,12 +120,12 @@ let A = {
             })]
         })
     },
-    E = e => {
+    y = e => {
         let {
             effect: t
         } = e, {
             upsertConfig: n
-        } = (0, g.wu)(), s = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [d, j] = i.useState(!0), y = i.useRef({}), [T, E] = i.useState(!1), [N, I] = i.useState(!1), [k, O] = i.useState(8), [R, w] = i.useState([]), [D, M] = i.useState(A), P = i.useRef([]), [U, L] = i.useState(t.name), B = U.toLowerCase().replace(/\s+/g, "_"), G = i.useMemo(() => ({
+        } = (0, g.wu)(), s = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [d, j] = i.useState(!0), T = i.useRef({}), [E, y] = i.useState(!1), [N, I] = i.useState(!1), [O, R] = i.useState(8), [k, w] = i.useState([]), [D, M] = i.useState(A), P = i.useRef([]), [L, U] = i.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), G = i.useMemo(() => ({
             id: C,
             skuId: C,
             title: C,
@@ -133,12 +133,12 @@ let A = {
             accessibilityLabel: C,
             reducedMotionSrc: "",
             thumbnailPreviewSrc: "",
-            effects: R,
+            effects: k,
             animationType: r.l.ANIMATION_TYPE_UNSPECIFIED
-        }), [R]), F = T ? c.LU0.themes.DARKER : c.LU0.themes.LIGHT, V = e => {
+        }), [k]), F = E ? c.LU0.themes.DARKER : c.LU0.themes.LIGHT, V = e => {
             let t = e.currentTarget.files;
             return null == t ? null : t[0]
-        }, W = (e, t) => {
+        }, H = (e, t) => {
             let n = V(t);
             null != n && (0, _.Mz)(n, t => {
                 M(a => ({
@@ -169,13 +169,13 @@ let A = {
                 }
             })
         }, [t.config.stillFrames]);
-        let H = {
+        let W = {
                 effect: t,
                 upsertConfig: n
             },
-            K = i.useRef(H);
+            K = i.useRef(W);
         return (i.useEffect(() => {
-            K.current = H
+            K.current = W
         }), i.useEffect(() => {
             let {
                 effect: e,
@@ -183,13 +183,13 @@ let A = {
             } = K.current;
             e.readonly || t({
                 skuId: e.skuId,
-                name: U,
+                name: L,
                 config: {
-                    effects: R,
+                    effects: k,
                     stillFrames: D
                 }
             })
-        }, [R, D, U]), i.useEffect(() => () => {
+        }, [k, D, L]), i.useEffect(() => () => {
             P.current.forEach(e => {
                 URL.revokeObjectURL(e)
             }), P.current = []
@@ -201,33 +201,33 @@ let A = {
                 },
                 children: [(0, a.jsx)(m.A, {
                     ref: e => {
-                        y.current.animated = e
+                        T.current.animated = e
                     },
                     onChange: e => {
                         let t = V(e);
                         null != t && (0, _.Mz)(t, async e => {
-                            let n = await (0, _.Ay)(e, t, R.length);
+                            let n = await (0, _.Ay)(e, t, k.length);
                             w(e => [...e, n])
                         })
                     },
                     multiple: !1
                 }), (0, a.jsx)(m.A, {
                     ref: e => {
-                        y.current.thumbnail = e
+                        T.current.thumbnail = e
                     },
-                    onChange: e => W(_.qH.THUMBNAIL, e),
+                    onChange: e => H(_.qH.THUMBNAIL, e),
                     multiple: !1
                 }), (0, a.jsx)(m.A, {
                     ref: e => {
-                        y.current.static = e
+                        T.current.static = e
                     },
-                    onChange: e => W(_.qH.STATIC, e),
+                    onChange: e => H(_.qH.STATIC, e),
                     multiple: !1
                 }), (0, a.jsx)(m.A, {
                     ref: e => {
-                        y.current.reducedMotion = e
+                        T.current.reducedMotion = e
                     },
-                    onChange: e => W(_.qH.REDUCED_MOTION, e),
+                    onChange: e => H(_.qH.REDUCED_MOTION, e),
                     multiple: !1
                 })]
             }), (0, a.jsxs)("div", {
@@ -239,10 +239,10 @@ let A = {
                         children: "Profile Effect Name"
                     }), (0, a.jsx)("input", {
                         type: "text",
-                        value: U,
+                        value: L,
                         className: v.hF,
                         onChange: e => {
-                            L(e.target.value)
+                            U(e.target.value)
                         }
                     })]
                 }), (0, a.jsxs)("div", {
@@ -252,10 +252,10 @@ let A = {
                         children: "Dark Theme"
                     }), (0, a.jsx)("input", {
                         type: "checkbox",
-                        checked: T,
+                        checked: E,
                         className: v.OO,
                         onChange: () => {
-                            E(!T)
+                            y(!E)
                         }
                     }), (0, a.jsx)(c.Text, {
                         variant: "text-md/normal",
@@ -278,16 +278,16 @@ let A = {
                         min: 4,
                         max: 24,
                         step: 2,
-                        value: k,
-                        onChange: e => O(+e.target.value)
+                        value: O,
+                        onChange: e => R(+e.target.value)
                     }), (0, a.jsxs)(c.Text, {
                         variant: "text-sm/normal",
-                        children: [k, "px"]
+                        children: [O, "px"]
                     })]
                 }), (0, a.jsxs)("div", {
                     className: l()(v.nz, v.VH),
                     style: {
-                        borderRadius: k
+                        borderRadius: O
                     },
                     children: [N ? (0, a.jsx)("div", {
                         className: v.jq,
@@ -318,7 +318,7 @@ let A = {
                     children: N && (0, a.jsxs)("div", {
                         className: l()(v.f5, v.VH),
                         style: {
-                            borderRadius: k
+                            borderRadius: O
                         },
                         children: [(0, a.jsx)(h.A, {
                             user: s,
@@ -337,7 +337,7 @@ let A = {
                         children: [(0, a.jsx)(c.Button, {
                             variant: "active",
                             text: "Upload Animated Layer",
-                            onClick: () => y.current.animated?.activateUploadDialogue()
+                            onClick: () => T.current.animated?.activateUploadDialogue()
                         }), (0, a.jsx)(c.Text, {
                             variant: "text-sm/semibold",
                             children: "Make sure to upload the bottommost layer first!"
@@ -347,15 +347,15 @@ let A = {
                         children: [(0, a.jsx)(c.Button, {
                             variant: "active",
                             text: "Upload thumbnail.png",
-                            onClick: () => y.current.thumbnail?.activateUploadDialogue()
+                            onClick: () => T.current.thumbnail?.activateUploadDialogue()
                         }), (0, a.jsx)(c.Button, {
                             variant: "active",
                             text: "Upload static.png",
-                            onClick: () => y.current.static?.activateUploadDialogue()
+                            onClick: () => T.current.static?.activateUploadDialogue()
                         }), (0, a.jsx)(c.Button, {
                             variant: "active",
                             text: "Upload reduced_motion.png",
-                            onClick: () => y.current.reducedMotion?.activateUploadDialogue()
+                            onClick: () => T.current.reducedMotion?.activateUploadDialogue()
                         })]
                     }), (0, a.jsx)("div", {
                         className: v.q6,
@@ -381,7 +381,7 @@ let A = {
                         }), (0, a.jsxs)("div", {
                             className: v.nM,
                             children: [(0, a.jsx)(u.A, {
-                                fileContents: () => (0, _.rs)(R),
+                                fileContents: () => (0, _.rs)(k),
                                 contentType: "text/plain",
                                 fileName: `${B}_timing_config.txt`,
                                 children: (0, a.jsx)(c.Button, {
@@ -392,11 +392,11 @@ let A = {
                             }), (0, a.jsx)(u.A, {
                                 fileContents: () => JSON.stringify({
                                     ...t,
-                                    name: U,
+                                    name: L,
                                     readonly: !1,
                                     config: {
                                         ...t.config,
-                                        effects: R,
+                                        effects: k,
                                         stillFrames: D
                                     }
                                 }),
@@ -431,7 +431,7 @@ let A = {
                                 }, t)
                             })
                         })]
-                    }), R.some(e => (e.randomizedSources ?? []).length > 0) && (0, a.jsxs)("div", {
+                    }), k.some(e => (e.randomizedSources ?? []).length > 0) && (0, a.jsxs)("div", {
                         className: l()(v.uW, v.l7),
                         children: [(0, a.jsx)(c.Text, {
                             variant: "text-md/bold",
@@ -459,7 +459,7 @@ let A = {
                                 w([]), M(A)
                             }
                         })
-                    }), R.map((e, t) => (0, a.jsxs)("div", {
+                    }), k.map((e, t) => (0, a.jsxs)("div", {
                         className: v.ec,
                         children: [(0, a.jsxs)("div", {
                             className: v.D1,
@@ -570,7 +570,7 @@ let A = {
                             },
                             children: (0, a.jsx)(m.A, {
                                 ref: e => {
-                                    y.current[`randomized-${t}`] = e
+                                    T.current[`randomized-${t}`] = e
                                 },
                                 onChange: e => {
                                     let n;
@@ -596,7 +596,7 @@ let A = {
                             children: [(0, a.jsx)(c.Button, {
                                 variant: "secondary",
                                 text: "Add Alternative",
-                                onClick: () => y.current[`randomized-${t}`]?.activateUploadDialogue()
+                                onClick: () => T.current[`randomized-${t}`]?.activateUploadDialogue()
                             }), (0, a.jsx)(c.Button, {
                                 variant: "critical-secondary",
                                 text: "Remove Layer",

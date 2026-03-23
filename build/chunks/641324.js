@@ -1,6 +1,6 @@
 /** chunk id: 641324 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => C
 });
 var i = n(627968);
 n(64700);
@@ -19,12 +19,12 @@ var s = n(963935),
     x = n(743961),
     p = n(896005),
     h = n(388773),
-    T = n(691116),
-    E = n(353667),
-    f = n(182884),
+    f = n(691116),
+    T = n(353667),
+    E = n(182884),
     S = n(115617);
 
-function C(e) {
+function b(e) {
     let {
         node: t
     } = e;
@@ -35,7 +35,7 @@ function C(e) {
         case s.Z6.TAB_ITEM:
             throw Error(`${t.type} nodes should never be rendered directly`);
         case s.Z6.PANEL:
-            return (0, i.jsx)(E.j, {
+            return (0, i.jsx)(T.j, {
                 node: t
             });
         case s.Z6.LIST:
@@ -47,7 +47,7 @@ function C(e) {
                 node: t
             });
         case s.Z6.RELATED:
-            return (0, i.jsx)(f.A, {
+            return (0, i.jsx)(E.A, {
                 node: t
             });
         case s.Z6.CATEGORY:
@@ -91,7 +91,7 @@ function C(e) {
                 node: t
             });
         case s.Z6.NESTED_PANEL:
-            return (0, i.jsx)(T.A, {
+            return (0, i.jsx)(f.A, {
                 node: t
             });
         case s.Z6.CUSTOM:
@@ -101,15 +101,15 @@ function C(e) {
     }
 }
 
-function b(e) {
+function C(e) {
     let {
         node: t
     } = e;
-    return t.type === s.Z6.PANEL ? (0, i.jsx)(C, {
+    return t.type === s.Z6.PANEL ? (0, i.jsx)(b, {
         node: t
     }) : (0, i.jsx)(l.A, {
         node: t,
-        children: (0, i.jsx)(C, {
+        children: (0, i.jsx)(b, {
             node: t
         })
     })

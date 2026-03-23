@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(133343),
     A = n(609425),
     m = n(922301),
-    p = n(750112),
-    _ = n(451909),
+    _ = n(750112),
+    p = n(451909),
     g = n(538355),
     f = n(854627),
     x = n(447404),
@@ -45,7 +45,7 @@ let T = e => {
             guildId: t.guild_id
         }), {
             avatarSrc: h,
-            avatarDecorationSrc: _
+            avatarDecorationSrc: p
         } = (0, f.A)({
             userId: c.id,
             guildId: t.guild_id,
@@ -59,12 +59,12 @@ let T = e => {
             children: [(0, i.jsx)("div", {
                 children: (0, i.jsx)(r.euF, {
                     src: h,
-                    avatarDecoration: _,
+                    avatarDecoration: p,
                     size: r._3J.SIZE_24,
                     "aria-label": "User Avatar",
                     isTyping: !1
                 })
-            }), (0, i.jsx)(p.A, {
+            }), (0, i.jsx)(_.A, {
                 userName: d,
                 displayNameStyles: u,
                 effectDisplayType: m.G.STATIC,
@@ -92,7 +92,7 @@ let T = e => {
             channel: t,
             idle: n,
             showChat: l
-        } = e, A = s.useRef(new Set), [m, p] = s.useState([]), [g, f] = s.useState(0), I = s.useRef(null), b = s.useRef(!1), [v, y] = s.useState(!0), [j, R] = s.useState(""), [O, L] = s.useState((0, u.x7)(j));
+        } = e, A = s.useRef(new Set), [m, _] = s.useState([]), [g, f] = s.useState(0), I = s.useRef(null), b = s.useRef(!1), [v, y] = s.useState(!0), [j, R] = s.useState(""), [O, L] = s.useState((0, u.x7)(j));
         s.useEffect(() => {
             let e = A.current;
             return () => {
@@ -112,10 +112,10 @@ let T = e => {
             })
         }, [I]), s.useEffect(() => {
             let e = Date.now();
-            p(C.A.getMessages(t.id)._array.filter(t => t.timestamp.getTime() > e - 12e5).slice(-50))
+            _(C.A.getMessages(t.id)._array.filter(t => t.timestamp.getTime() > e - 12e5).slice(-50))
         }, [t]);
         let M = s.useCallback(e => {
-                p(t => {
+                _(t => {
                     if (!t.some(t => t.id === e.id)) {
                         let n = [...t, e];
                         return n.length > 50 && n.shift(), n
@@ -211,7 +211,7 @@ let T = e => {
                         shouldClear: !1,
                         shouldRefocus: !1
                     };
-                    let s = _.Ay.parse(t, i);
+                    let s = p.Ay.parse(t, i);
                     try {
                         return await c.A.sendMessage(t.id, s, !0, {
                             location: "Haven"

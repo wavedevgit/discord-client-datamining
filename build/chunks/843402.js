@@ -1,28 +1,28 @@
 /** chunk id: 843402 params = (module,exports,require) **/
-a.d(t, {
-    a2: () => s,
-    e0: () => u
+n.d(t, {
+    a2: () => a,
+    e0: () => r
 });
-var r = a(73153),
-    n = a(723702),
-    l = a(837921);
+var i = n(73153),
+    s = n(723702),
+    l = n(837921);
 
-function s() {
-    if (!(0, n.isDesktop)()) throw Error("Attempted to observe candidate games on a non-desktop platform");
+function a() {
+    if (!(0, s.isDesktop)()) throw Error("Attempted to observe candidate games on a non-desktop platform");
     l.Ay.setCandidateGamesCallback(e => {
-        r.h.dispatch({
+        i.h.dispatch({
             type: "CANDIDATE_GAMES_CHANGE",
             games: e
         })
-    }), r.h.dispatch({
+    }), i.h.dispatch({
         type: "GAME_DETECTION_WATCH_CANDIDATE_GAMES_START"
     })
 }
 
-function u() {
-    if (!(0, n.isDesktop)()) throw Error("Attempted to stop observing candidate games on a non-desktop platform");
-    l.Ay.clearCandidateGamesCallback(), r.h.dispatch({
+function r() {
+    if (!(0, s.isDesktop)()) throw Error("Attempted to stop observing candidate games on a non-desktop platform");
+    l.Ay.clearCandidateGamesCallback(), i.h.dispatch({
         type: "GAME_DETECTION_WATCH_CANDIDATE_GAMES_STOP"
     })
 }
-a(223273).Lb.ALL
+n(223273).Lb.ALL

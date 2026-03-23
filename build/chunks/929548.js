@@ -18,15 +18,15 @@ var i = n(627968),
     x = n(419954),
     p = n(430452),
     h = n(353835),
-    T = n(780964),
-    E = n(652215),
-    f = n(731854),
+    f = n(780964),
+    T = n(652215),
+    E = n(731854),
     S = n(985018);
-let C = (0, _.D)(() => ({
+let b = (0, _.D)(() => ({
     isUploading: !1,
     isDisabled: !1
 }));
-async function b() {
+async function C() {
     let e = await m.A.fileManager.getLogPath();
     m.A.fileManager.showItemInFolder(e)
 }
@@ -39,7 +39,7 @@ function N(e) {
         onConfirm: () => u.A.setDebugLogging(e)
     })
 }
-async function I(e) {
+async function v(e) {
     let {
         onUploadStart: t,
         onUploadFinish: n
@@ -51,7 +51,7 @@ async function I(e) {
             message: {
                 message: "User Live Dump"
             }
-        }), await (0, g.a)(E.Umv.RTC), e = S.intl.string(S.t["fKBB8+"]), t = S.intl.string(S.t.BvyxE7), (0, r.A)({
+        }), await (0, g.a)(T.Umv.RTC), e = S.intl.string(S.t["fKBB8+"]), t = S.intl.string(S.t.BvyxE7), (0, r.A)({
             title: e,
             subtitle: t
         })
@@ -88,27 +88,27 @@ async function I(e) {
         n?.()
     }
 }
-async function v() {
-    await I({
-        onUploadStart: () => C.setState({
+async function I() {
+    await v({
+        onUploadStart: () => b.setState({
             isUploading: !0
         }),
-        onUploadFinish: () => C.setState({
+        onUploadFinish: () => b.setState({
             isUploading: !1,
             isDisabled: !0
         })
     })
 }
-let j = (0, x.E2)(T.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
+let j = (0, x.E2)(f.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
     useSearchTerms: () => [S.intl.string(S.t["726JHL"]), S.intl.string(S.t.EbwFfR), S.intl.string(S.t.nuPtYi)],
     usePredicate: function() {
-        let e = (0, a.bG)([p.Ay], () => p.Ay.supports(f.O5.DEBUG_LOGGING));
+        let e = (0, a.bG)([p.Ay], () => p.Ay.supports(E.O5.DEBUG_LOGGING));
         return l.Av && e && null != m.A.fileManager.readLogFiles
     },
     Component: function() {
         let e = (0, a.bG)([p.Ay], () => p.Ay.getDebugLogging()),
-            t = C.useField("isUploading"),
-            n = C.useField("isDisabled"),
+            t = b.useField("isUploading"),
+            n = b.useField("isDisabled"),
             l = s.useId();
         return (0, i.jsxs)("fieldset", {
             children: [(0, i.jsx)(c.AC4, {
@@ -130,14 +130,14 @@ let j = (0, x.E2)(T.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
                         children: [(0, i.jsx)(c.Button, {
                             variant: "secondary",
                             text: S.intl.string(S.t.EbwFfR),
-                            onClick: v,
+                            onClick: I,
                             loading: t,
                             disabled: n,
                             "aria-label": S.intl.string(S.t.aY1OH2)
                         }), (0, i.jsx)(c.Button, {
                             variant: "secondary",
                             text: S.intl.string(S.t.nuPtYi),
-                            onClick: b,
+                            onClick: C,
                             "aria-label": S.intl.string(S.t["L/hFOe"])
                         })]
                     })

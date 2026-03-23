@@ -18,15 +18,15 @@ var i = n(627968),
     x = n(235986),
     p = n(769015),
     h = n(75825),
-    T = n(871123),
-    E = n(366523),
-    f = n(961350),
+    f = n(871123),
+    T = n(366523),
+    E = n(961350),
     S = n(30793),
-    C = n(351906),
-    b = n(97352),
+    b = n(351906),
+    C = n(97352),
     N = n(67480),
-    I = n(147925),
-    v = n(957565),
+    v = n(147925),
+    I = n(957565),
     j = n(45938),
     y = n(615396),
     O = n(788868),
@@ -58,7 +58,7 @@ class P extends s.PureComponent {
             giftCode: t,
             sku: n
         } = this.props;
-        (0, j.AK)(t, n), (0, v.C)(e, () => this.setState({
+        (0, j.AK)(t, n), (0, I.C)(e, () => this.setState({
             copyMode: m.qCr.SUCCESS
         }), () => this.setState({
             copyMode: m.qCr.ERROR
@@ -83,7 +83,7 @@ class P extends s.PureComponent {
                 value: (0, j.Zq)(t.code),
                 text: this.copyButtonText,
                 mode: n,
-                supportsCopy: v.p5,
+                supportsCopy: I.p5,
                 hideMessage: e ? R.intl.string(R.t["0RLn47"]) : null,
                 onCopy: this.handleCopy,
                 buttonColor: u.XD.BRAND,
@@ -143,7 +143,7 @@ class D extends s.PureComponent {
             giftStyle: t,
             application: n
         } = this.props;
-        return (0, T.bF)(e) ? (0, i.jsx)(E.e, {
+        return (0, f.bF)(e) ? (0, i.jsx)(T.e, {
             shape: "square",
             sku: e,
             containerClassName: L.ez
@@ -163,7 +163,7 @@ class D extends s.PureComponent {
             entitlements: t,
             application: n
         } = this.props;
-        return (0, T.bF)(e) ? (0, i.jsxs)("div", {
+        return (0, f.bF)(e) ? (0, i.jsxs)("div", {
             className: a()(L.Oc, L.ic),
             children: [(0, i.jsx)(p.A, {
                 game: n,
@@ -249,8 +249,8 @@ class D extends s.PureComponent {
                                 className: L.TK,
                                 children: [this.renderTitle(), this.renderSubtitle()]
                             })]
-                        }), (0, i.jsx)(I.A, {
-                            direction: d ? I.A.Directions.UP : I.A.Directions.DOWN,
+                        }), (0, i.jsx)(v.A, {
+                            direction: d ? v.A.Directions.UP : v.A.Directions.DOWN,
                             className: L.eO
                         })]
                     })
@@ -269,17 +269,17 @@ class D extends s.PureComponent {
         })
     }
 }
-let M = d.Ay.connectStores([N.A, C.A, S.A, A.A, b.A, f.default], e => {
+let M = d.Ay.connectStores([N.A, b.A, S.A, A.A, C.A, E.default], e => {
     let {
         skuId: t,
         subscriptionPlanId: n,
         giftStyle: i
     } = e, s = N.A.get(t);
     if (null == s) throw Error("SKU was unavailable while rendering gift.");
-    let l = S.A.getForGifterSKUAndPlan(f.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === i);
+    let l = S.A.getForGifterSKUAndPlan(E.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === i);
     return {
         sku: s,
-        hideCodes: C.A.enabled,
+        hideCodes: b.A.enabled,
         isFetching: S.A.getUserGiftCodesFetchingForSKUAndPlan(t, n),
         loadedAt: S.A.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
         application: A.A.getApplication(s.applicationId),

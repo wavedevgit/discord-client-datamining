@@ -26,9 +26,9 @@ function A(e, t) {
             version: c.A.getMemberListVersion(e),
             members: c.A.getMemberListSections(e)
         })),
-        p = null == t,
-        _ = i.useMemo(() => {
-            if (p) return h;
+        _ = null == t,
+        p = i.useMemo(() => {
+            if (_) return h;
             let e = n.filter(e => e.hoist).map(e => ({
                 id: e.id,
                 label: e.name
@@ -51,6 +51,6 @@ function A(e, t) {
                     roleId: t
                 }
             })
-        }, [n, m, A, p]);
-    return null != m ? _ : h
+        }, [n, m, A, _]);
+    return null != m ? p : h
 }

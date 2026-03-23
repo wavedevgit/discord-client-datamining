@@ -53,20 +53,20 @@ function g(e) {
             route: c.R.SWITCH_APP_PLANS,
             ...e
         }), n(m.intl.string(m.t.VFqtkP), x)
-    }, [h, T] = s.useState({});
+    }, [h, f] = s.useState({});
     s.useEffect(() => {
         for (let e of t) {
             let t = e.items[0]?.planId;
-            null != t && (T(t => ({
+            null != t && (f(t => ({
                 ...t,
                 [e.id]: d.G.LOADING
             })), (0, r._R)(t).then(() => {
-                T(t => ({
+                f(t => ({
                     ...t,
                     [e.id]: d.G.DONE
                 }))
             }).catch(() => {
-                T(t => ({
+                f(t => ({
                     ...t,
                     [e.id]: d.G.ERROR
                 }))
@@ -74,8 +74,8 @@ function g(e) {
         }
     }, [t]);
     let {
-        loadState: E
-    } = (0, o.E)(), f = E !== o.mJ.LOADED;
+        loadState: T
+    } = (0, o.E)(), E = T !== o.mJ.LOADED;
     switch (A) {
         case c.R.HOME:
             return (0, i.jsx)(i.Fragment, {
@@ -84,16 +84,16 @@ function g(e) {
                     children: (0, i.jsx)(d.A, {
                         subscription: e,
                         navigateToSwitchPlan: p,
-                        loadingState: f ? d.G.LOADING : h[e.id] ?? d.G.LOADING
+                        loadingState: E ? d.G.LOADING : h[e.id] ?? d.G.LOADING
                     })
                 }, e.id))
             });
         case c.R.SWITCH_APP_PLANS:
             let {
-                route: S, ...C
+                route: S, ...b
             } = l;
             return (0, i.jsx)(u.A, {
-                ...C,
+                ...b,
                 navigateToHome: x
             });
         default:

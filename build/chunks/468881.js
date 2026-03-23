@@ -18,17 +18,17 @@ var i = n(934551),
     x = n(581837),
     p = n(666196),
     h = n(654757),
-    T = n(556710),
-    E = n(305290),
-    f = n(8187),
+    f = n(556710),
+    T = n(305290),
+    E = n(8187),
     S = n(985018);
-let C = (0, s.t_)(a.X.ACCESSIBILITY_PANEL, {
+let b = (0, s.t_)(a.X.ACCESSIBILITY_PANEL, {
         useTitle: () => S.intl.string(S.t.G0neg7),
-        buildLayout: () => [c.s, T._, x.b, h.T, g.V, p.G, u.v, m.T]
+        buildLayout: () => [c.s, f._, x.b, h.T, g.V, p.G, u.v, m.T]
     }),
-    b = (0, s.t_)(a.X.ACCESSIBILITY_PANEL, {
+    C = (0, s.t_)(a.X.ACCESSIBILITY_PANEL, {
         useTitle: () => S.intl.string(S.t.G0neg7),
-        buildLayout: () => [E.U, f.P, A.l, h.T, _.X],
+        buildLayout: () => [T.U, E.P, A.l, h.T, _.X],
         decoration: {
             type: l.t9.STRONGLY_DISCOURAGED_CUSTOM,
             component: o.A,
@@ -39,5 +39,5 @@ let C = (0, s.t_)(a.X.ACCESSIBILITY_PANEL, {
         useTitle: () => S.intl.string(S.t.G0neg7),
         icon: i.AccessibilityIcon,
         useMenu: d.A,
-        buildLayout: () => (0, r.Ci)("AccessibilityPanel") ? [b] : [C]
+        buildLayout: () => (0, r.Ci)("AccessibilityPanel") ? [C] : [b]
     })

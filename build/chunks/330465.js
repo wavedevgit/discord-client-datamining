@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(451988),
     A = n(397927),
     m = n(308528),
-    p = n(442433),
-    _ = n(817281),
+    _ = n(442433),
+    p = n(817281),
     g = n(658128),
     f = n(976860),
     x = n(345942),
@@ -44,7 +44,7 @@ let G = {
 };
 
 function U(e, t) {
-    (0, p.L3)(e, async () => {
+    (0, _.L3)(e, async () => {
         let {
             default: e
         } = await Promise.all([n.e("43600"), n.e("68587"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("21968"), n.e("35894"), n.e("50796"), n.e("8458"), n.e("11810"), n.e("39048"), n.e("30453"), n.e("56475"), n.e("54469"), n.e("51438")]).then(n.bind(n, 544676));
@@ -59,7 +59,7 @@ let P = s.memo(function(e) {
         guildNode: t,
         setRef: n,
         onDragStart: l,
-        onDragEnd: p,
+        onDragEnd: _,
         route: P,
         guild: w,
         animatable: k,
@@ -98,7 +98,7 @@ let P = s.memo(function(e) {
                 nodeId: t.id
             }),
             end() {
-                p?.(), (0, _.um)(I.Ay.getCompatibleGuildFolders())
+                _?.(), (0, p.um)(I.Ay.getCompatibleGuildFolders())
             },
             collect: e => ({
                 dragging: e.isDragging()
@@ -109,9 +109,9 @@ let P = s.memo(function(e) {
         ed = !q && eo,
         [eu, eh] = s.useState(!1),
         [eA, em] = s.useState(!1),
-        [ep] = s.useState(() => new h.J_(70, () => em(!0))),
-        e_ = (0, N.nr)() && !d.Fr;
-    s.useEffect(() => () => ep.cancel(), [ep]);
+        [e_] = s.useState(() => new h.J_(70, () => em(!0))),
+        ep = (0, N.nr)() && !d.Fr;
+    s.useEffect(() => () => e_.cancel(), [e_]);
     let eg = s.useCallback(() => {
             null != P ? (0, f.pX)(P, {
                 state: G
@@ -132,8 +132,8 @@ let P = s.memo(function(e) {
             "ArrowLeft" === e.key && null != et && document.querySelector(`[aria-owns=folder-items-${et}]`)?.focus()
         }, [et]),
         eI = s.useCallback(e => {
-            e ? ep.delay() : (ep.cancel(), em(!1))
-        }, [ep]);
+            e ? e_.delay() : (e_.cancel(), em(!1))
+        }, [e_]);
 
     function eN() {
         q || ec(!0)
@@ -158,7 +158,7 @@ let P = s.memo(function(e) {
                 eA || eh(!1)
             }
         }),
-        ey = e_ ? (0, i.jsx)(A.jlP, {
+        ey = ep ? (0, i.jsx)(A.jlP, {
             ariaLabel: M.intl.formatToPlainString(M.t["/uzRss"], {
                 guildName: w.name,
                 mentions: K
@@ -209,7 +209,7 @@ let P = s.memo(function(e) {
         eR = (0, i.jsx)(v.g4, {
             children: (0, i.jsx)(j.A, {})
         }),
-        eO = e_ ? (0, i.jsx)(o.animated.div, {
+        eO = ep ? (0, i.jsx)(o.animated.div, {
             ref: z ? e => {
                 ea(e)
             } : void 0,

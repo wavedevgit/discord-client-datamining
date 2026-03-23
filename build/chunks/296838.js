@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(311907),
     A = n(73939),
     m = n(397927),
-    p = n(915967),
-    _ = n(34968),
+    _ = n(915967),
+    p = n(34968),
     g = n(775121),
     f = n(775602),
     x = n(400492),
@@ -46,7 +46,7 @@ function T(e) {
             return null
     }
 }
-let v = [p.Q_.MESSAGE, p.Q_.NAVIGATION, p.Q_.VOICE_AND_VIDEO, p.Q_.CHAT, p.Q_.MISCELLANEOUS];
+let v = [_.Q_.MESSAGE, _.Q_.NAVIGATION, _.Q_.VOICE_AND_VIDEO, _.Q_.CHAT, _.Q_.MISCELLANEOUS];
 
 function y(e) {
     let {
@@ -60,13 +60,13 @@ function y(e) {
 }
 
 function j() {
-    let e = s.useMemo(() => d()((0, p.Bx)()).groupBy(e => e.group).value(), []);
+    let e = s.useMemo(() => d()((0, _.Bx)()).groupBy(e => e.group).value(), []);
     return (0, i.jsx)("div", {
         className: b.Io,
         children: v.map(t => {
             let n = e[t],
-                s = (0, p.Gm)(t),
-                l = (0, p.zF)(t);
+                s = (0, _.Gm)(t),
+                l = (0, _.zF)(t);
             return (0, i.jsxs)("div", {
                 className: b.ZK,
                 children: [(0, i.jsxs)("div", {
@@ -283,7 +283,7 @@ function L(e) {
     let {
         transitionState: t,
         onClose: n
-    } = e, [l, r] = s.useState(!1), [o, c] = s.useState(!1), d = s.useMemo(() => __OVERLAY__ ? (0, _.y8)() : (0, p.Bx)(), []), {
+    } = e, [l, r] = s.useState(!1), [o, c] = s.useState(!1), d = s.useMemo(() => __OVERLAY__ ? (0, p.y8)() : (0, _.Bx)(), []), {
         keyboardModeEnabled: u,
         useReducedMotion: x
     } = (0, h.cf)([f.A], () => ({

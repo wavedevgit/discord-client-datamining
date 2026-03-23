@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(309010),
     A = n(559405),
     m = n(652215),
-    p = n(307731),
-    _ = n(680930);
+    _ = n(307731),
+    p = n(680930);
 
 function g(e) {
     let {
@@ -30,7 +30,7 @@ function g(e) {
         emojiName: t.name,
         animated: !!t.animated
     }) : null != g ? (0, i.jsx)(A.A, {
-        className: _.Kk,
+        className: p.Kk,
         userId: d.default.getId(),
         size: 20,
         hangStatusActivity: {
@@ -66,7 +66,7 @@ function g(e) {
                         animated: !1
                     }), s && t()
                 },
-                pickerIntention: p.b_.STATUS
+                pickerIntention: _.b_.STATUS
             })
         },
         position: "left",

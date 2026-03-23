@@ -1117,7 +1117,7 @@ let b = [{
             country: "US"
         }
     },
-    y = [{
+    T = [{
         label: "None",
         value: "NONE"
     }, {
@@ -1160,7 +1160,7 @@ let b = [{
         label: "Yukon",
         value: "YT"
     }],
-    T = {
+    E = {
         NONE: null,
         AB: {
             name: "Alberta Legislature Building",
@@ -1282,8 +1282,8 @@ let b = [{
     };
 
 function S() {
-    let [e, t] = i.useState("US"), [n, d] = i.useState(null), [c, m] = i.useState(null), [h, x] = i.useState(null), [g, S] = i.useState(null), [E, N] = i.useState("pm_card_us"), [k, O] = i.useState(!1), D = Object.values((0, s.bG)([p.A], () => p.A.paymentSources)), M = j[e], P = async () => {
-        let t = E;
+    let [e, t] = i.useState("US"), [n, d] = i.useState(null), [c, m] = i.useState(null), [h, x] = i.useState(null), [g, S] = i.useState(null), [y, N] = i.useState("pm_card_us"), [O, R] = i.useState(!1), D = Object.values((0, s.bG)([p.A], () => p.A.paymentSources)), M = j[e], P = async () => {
+        let t = y;
         "" === t && (t = "pm_card_us"), await l.Bo.post({
             url: "/debug/payment-source",
             body: {
@@ -1292,12 +1292,12 @@ function S() {
             },
             rejectWithError: !1
         }), await (0, o.$o)()
-    }, U = async () => {
+    }, L = async () => {
         await l.Bo.del({
             url: "/debug/payment-source",
             rejectWithError: !1
         }), await (0, o.$o)()
-    }, L = async () => {
+    }, U = async () => {
         await l.Bo.del({
             url: "/debug/rate-limits",
             rejectWithError: !1
@@ -1338,7 +1338,7 @@ function S() {
                         }
                     }),
                     onSelectionChange: e => {
-                        t(e), N(j[e][0].value), O(1 === j[e].length)
+                        t(e), N(j[e][0].value), R(1 === j[e].length)
                     }
                 }), "US" === e && (0, a.jsx)(r.l6P, {
                     selectionMode: "single",
@@ -1364,7 +1364,7 @@ function S() {
                     label: "CA Address",
                     hideLabel: !0,
                     value: h,
-                    options: y.map(e => {
+                    options: T.map(e => {
                         let {
                             value: t,
                             label: n
@@ -1376,13 +1376,13 @@ function S() {
                         }
                     }),
                     onSelectionChange: e => {
-                        x(e), S(T[e] ?? null)
+                        x(e), S(E[e] ?? null)
                     }
                 }), (0, a.jsx)(r.l6P, {
                     selectionMode: "single",
                     label: "Card Token",
                     hideLabel: !0,
-                    value: E,
+                    value: y,
                     options: M.map(e => {
                         let {
                             value: t,
@@ -1395,7 +1395,7 @@ function S() {
                         }
                     }),
                     onSelectionChange: N,
-                    disabled: k
+                    disabled: O
                 }), (0, a.jsx)(r.Button, {
                     variant: "primary",
                     size: "sm",
@@ -1405,12 +1405,12 @@ function S() {
                     variant: "primary",
                     size: "sm",
                     text: "Delete All Payment Sources",
-                    onClick: U
+                    onClick: L
                 }), (0, a.jsx)(r.Button, {
                     variant: "primary",
                     size: "sm",
                     text: "Reset API Rate limits and reload app",
-                    onClick: L
+                    onClick: U
                 })]
             }), (0, a.jsx)(r.Text, {
                 style: {
@@ -1419,7 +1419,7 @@ function S() {
                 },
                 variant: "text-lg/bold",
                 children: "Generate Gift Card PIN"
-            }), (0, a.jsx)(R, {}), (0, a.jsx)(r.Text, {
+            }), (0, a.jsx)(k, {}), (0, a.jsx)(r.Text, {
                 style: {
                     marginTop: "24px",
                     marginBottom: "16px"
@@ -1439,7 +1439,7 @@ function S() {
         })
     })
 }
-let E = [{
+let y = [{
     id: "none",
     value: "none",
     label: "No Override (use server assignment)"
@@ -1467,7 +1467,7 @@ function N(e) {
         selectionMode: "single",
         label: t,
         value: n,
-        options: [...E],
+        options: [...y],
         onSelectionChange: l
     })
 }
@@ -1481,7 +1481,7 @@ function I() {
         })
     })
 }
-let k = [{
+let O = [{
         id: "US",
         value: "US",
         label: "United States (USD)"
@@ -1502,7 +1502,7 @@ let k = [{
         value: "DE",
         label: "Germany (EUR)"
     }],
-    O = {
+    R = {
         US: "usd",
         CA: "cad",
         FR: "eur",
@@ -1510,7 +1510,7 @@ let k = [{
         DE: "eur"
     };
 
-function R() {
+function k() {
     let [e, t] = i.useState("US"), [n, s] = i.useState("500"), [o, d] = i.useState(null), [c, u] = i.useState(!1), [m, h] = i.useState(!1), [x, p] = i.useState(null), g = parseInt(n, 10), _ = !isNaN(g) && g >= 500 && g <= 5e3, f = async () => {
         if (_) {
             u(!0), p(null), d(null), h(!1);
@@ -1519,7 +1519,7 @@ function R() {
                     url: "/billing/gift-card/create-on-demand-pin",
                     body: {
                         country: e,
-                        currency: O[e],
+                        currency: R[e],
                         amount: g
                     },
                     rejectWithError: !0
@@ -1543,7 +1543,7 @@ function R() {
                 selectionMode: "single",
                 label: "Gift Card Country",
                 value: e,
-                options: k,
+                options: O,
                 onSelectionChange: t
             }), (0, a.jsx)(r.ksK, {
                 label: "Amount (500–5000)",

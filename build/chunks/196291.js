@@ -18,15 +18,15 @@ var i = n(627968),
     x = n(407217),
     p = n(101058),
     h = n(207803),
-    T = n(84540),
-    E = n(836602),
-    f = n(954571),
+    f = n(84540),
+    T = n(836602),
+    E = n(954571),
     S = n(515718),
-    C = n(927578),
-    b = n(919395),
+    b = n(927578),
+    C = n(919395),
     N = n(884546),
-    I = n(597551),
-    v = n(230084),
+    v = n(597551),
+    I = n(230084),
     j = n(180020),
     y = n(212168),
     O = n(730588),
@@ -43,16 +43,16 @@ function U(e) {
         user: t,
         isVisible: n,
         shouldShow: U
-    } = e, w = C.Ay.isPremium(t), V = C.Ay.canUseAnimatedAvatar(t), {
+    } = e, w = b.Ay.isPremium(t), V = b.Ay.canUseAnimatedAvatar(t), {
         pendingAvatar: B,
-        pendingThemeColors: H,
-        tryItOutThemeColors: F,
+        pendingThemeColors: F,
+        tryItOutThemeColors: H,
         tryItOutAvatar: Y,
         tryItOutBanner: z
-    } = (0, l.cf)([E.A], () => {
-        let e = E.A.getPendingChanges(),
-            t = E.A.getErrors(),
-            n = E.A.getTryItOutChanges();
+    } = (0, l.cf)([T.A], () => {
+        let e = T.A.getPendingChanges(),
+            t = T.A.getErrors(),
+            n = T.A.getTryItOutChanges();
         return {
             ...e,
             ...n,
@@ -62,36 +62,36 @@ function U(e) {
         preset: X,
         onShuffle: W
     } = (0, u.A)(), K = s.useRef(null);
-    (0, I.A)(K, M._F.TRY_IT_OUT);
+    (0, v.A)(K, M._F.TRY_IT_OUT);
     let {
         analyticsLocations: Z,
         newestAnalyticsLocation: q,
         sourceAnalyticsLocations: J
     } = (0, o.Ay)(r.A.USER_SETTINGS_TRY_OUT_PREMIUM), Q = e => {
         e && (z?.startsWith("https:") === !0 ? fetch(z).then(e => e.blob()).then(e => (0, S.We)(e)).then(e => {
-            (0, T.p)({
+            (0, f.p)({
                 avatar: Y,
-                themeColors: F,
+                themeColors: H,
                 banner: e
             })
         }).catch(() => {
-            (0, T.p)({
+            (0, f.p)({
                 avatar: Y,
-                themeColors: F
+                themeColors: H
             })
-        }) : null != z ? (0, T.p)({
+        }) : null != z ? (0, f.p)({
             avatar: Y,
-            themeColors: F,
+            themeColors: H,
             banner: z
-        }) : (0, T.p)({
+        }) : (0, f.p)({
             avatar: Y,
-            themeColors: F
-        }), (0, b.WU)(Y), f.default.track(P.HAw.TRY_IT_OUT_PRESET_SELECTED, {
+            themeColors: H
+        }), (0, C.WU)(Y), E.default.track(P.HAw.TRY_IT_OUT_PRESET_SELECTED, {
             preset: X
         }))
     };
     s.useEffect(() => {
-        n && f.default.track(P.HAw.PREMIUM_UPSELL_VIEWED, {
+        n && E.default.track(P.HAw.PREMIUM_UPSELL_VIEWED, {
             type: D.e.PREMIUM_PROFILE_TRY_IT_OUT,
             location: {
                 page: P.liQ.USER_SETTINGS
@@ -146,7 +146,7 @@ function U(e) {
                             userId: t.id,
                             image: Y ?? B
                         }),
-                        pendingColors: F ?? H,
+                        pendingColors: H ?? F,
                         onThemeColorsChange: h.a,
                         showPremiumIcon: !1,
                         preventDisabled: !0
@@ -156,7 +156,7 @@ function U(e) {
                         showRemoveBannerButton: null != z,
                         onBannerChange: h.xe,
                         showPremiumIcon: !1
-                    }), !V && (0, i.jsx)(v.A, {
+                    }), !V && (0, i.jsx)(I.A, {
                         className: k.fz,
                         isTryItOut: !0,
                         onAvatarChange: h.e$,

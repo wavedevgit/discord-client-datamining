@@ -26,14 +26,14 @@ function x(e) {
         forcedDivider: p = !1,
         withTutorial: h = !1
     } = e, {
-        analyticsLocations: T
-    } = (0, o.Ay)(), E = (0, m.a4)({
+        analyticsLocations: f
+    } = (0, o.Ay)(), T = (0, m.a4)({
         user: t,
         guildId: n?.id
     }), {
-        pendingAvatarDecoration: f,
+        pendingAvatarDecoration: E,
         errors: S
-    } = (0, m.CP)(n?.id), C = h ? r.wLn : a.$n;
+    } = (0, m.CP)(n?.id), b = h ? r.wLn : a.$n;
     return (0, i.jsx)(_.A, {
         className: s,
         forcedDivider: p,
@@ -42,11 +42,11 @@ function x(e) {
         errors: S,
         children: (0, i.jsxs)("div", {
             className: A.NC,
-            children: [(0, i.jsx)(C, {
+            children: [(0, i.jsx)(b, {
                 size: a.$n.Sizes.SMALL,
                 onClick: () => {
                     (0, c.L)({
-                        analyticsLocations: T,
+                        analyticsLocations: f,
                         guild: n
                     })
                 },
@@ -54,7 +54,7 @@ function x(e) {
                     [A.yj]: h
                 }),
                 children: g.intl.string(g.t.BVcYCx)
-            }), (void 0 === f ? null != E : null != f) && (0, i.jsx)("div", {
+            }), (void 0 === E ? null != T : null != E) && (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: A.DT,
                 children: (0, i.jsx)(r.Button, {

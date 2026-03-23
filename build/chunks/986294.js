@@ -23,14 +23,14 @@ var a = n(627968),
     j = n(403362),
     A = n(603047),
     C = n(435738),
-    y = n(99753),
-    T = n(868068),
+    T = n(99753),
+    E = n(868068),
     S = n(476398),
-    E = n(405311),
+    y = n(405311),
     N = n(424994),
     I = n(750100),
-    k = n(661251);
-let O = [{
+    O = n(661251);
+let R = [{
     key: "type",
     cellClassName: l()(I.Hn, I.T$),
     render(e) {
@@ -63,16 +63,16 @@ let O = [{
         let {
             type: t
         } = e;
-        return (0, a.jsx)(R, {
+        return (0, a.jsx)(k, {
             type: t
         })
     }
 }];
 
-function R(e) {
+function k(e) {
     let {
         type: t
-    } = e, n = (0, u.bG)([y.A], () => y.A.getFilters()), i = n?.types?.has(t) ?? !1;
+    } = e, n = (0, u.bG)([T.A], () => T.A.getFilters()), i = n?.types?.has(t) ?? !1;
     return (0, a.jsx)(h.dOG, {
         checked: i,
         onChange: function() {
@@ -91,8 +91,8 @@ function R(e) {
 
 function w() {
     var e;
-    let t, n = (0, u.bG)([y.A], () => y.A.getFeed(N.X1.GLOBAL_FEED)),
-        s = (0, u.bG)([y.A], () => y.A.getDebugImpressionCappingDisabled()),
+    let t, n = (0, u.bG)([T.A], () => T.A.getFeed(N.X1.GLOBAL_FEED)),
+        s = (0, u.bG)([T.A], () => T.A.getDebugImpressionCappingDisabled()),
         l = (0, u.bG)([C.A], () => C.A.getDebugFastImpressionCappingEnabled()),
         r = (e = n?.entries?.map(e => e.content), Object.keys(t = o().groupBy(e, e => e.content_type)).map(e => {
             let n = t[e];
@@ -102,25 +102,25 @@ function w() {
                 entries: n
             }
         })),
-        d = (0, u.bG)([y.A], () => y.A.getFeedState(N.X1.GLOBAL_FEED)?.loading === !0),
-        [R, w] = i.useState(""),
-        M = (0, u.bG)([b.A, p.A], () => parseInt(R) > 0 ? R : b.A.searchGamesByName(R)[0] ?? p.A.getApplicationByName(R)?.id, [R]),
+        d = (0, u.bG)([T.A], () => T.A.getFeedState(N.X1.GLOBAL_FEED)?.loading === !0),
+        [k, w] = i.useState(""),
+        M = (0, u.bG)([b.A, p.A], () => parseInt(k) > 0 ? k : b.A.searchGamesByName(k)[0] ?? p.A.getApplicationByName(k)?.id, [k]),
         P = (0, v.A)({
             applicationId: M,
             location: "DevToolsContentInventory",
             source: f.Ob.DevTools
         }),
-        U = Object.entries(m.w.get("GameProfileModal") ?? {}).filter(e => {
+        L = Object.entries(m.w.get("GameProfileModal") ?? {}).filter(e => {
             let [t, n] = e;
             return n
         }).map(e => {
             let [t] = e;
             return t
         }),
-        L = (0, g.A)(U).filter(j.Vq),
+        U = (0, g.A)(L).filter(j.Vq),
         B = (0, u.bG)([A.A], () => A.A.getFakeGameToShow());
     return (0, a.jsx)("div", {
-        className: k.nd,
+        className: O.nd,
         children: (0, a.jsxs)(h.IpV, {
             className: I.Qs,
             children: [(0, a.jsxs)(h.BJc, {
@@ -129,9 +129,9 @@ function w() {
                     variant: "text-md/semibold",
                     children: "Inventory"
                 }), r.length > 0 && (0, a.jsx)(_.A, {
-                    columns: O,
+                    columns: R,
                     data: r
-                }), (0, a.jsx)(E.A, {}), (0, a.jsx)(h.Button, {
+                }), (0, a.jsx)(y.A, {}), (0, a.jsx)(h.Button, {
                     variant: "primary",
                     text: "Refresh Now",
                     fullWidth: !0,
@@ -195,12 +195,12 @@ function w() {
                     placeholder: "App ID or full name",
                     onChange: e => (0 === e.length || e.length >= 18) && w(e),
                     onKeyDown: e => {
-                        "Enter" === e.key && (R === e.currentTarget.value ? P?.(e) : w(e.currentTarget.value))
+                        "Enter" === e.key && (k === e.currentTarget.value ? P?.(e) : w(e.currentTarget.value))
                     },
-                    error: R.length > 0 && null == P ? `No game profile for ${M??R+" - try by id"}.` : void 0,
+                    error: k.length > 0 && null == P ? `No game profile for ${M??k+" - try by id"}.` : void 0,
                     helperText: null != P ? "Game profile found" : void 0
                 }), (0, a.jsx)("ul", {
-                    children: L.map(e => (0, a.jsx)("li", {
+                    children: U.map(e => (0, a.jsx)("li", {
                         children: (0, a.jsx)(D, {
                             application: e
                         })
@@ -213,7 +213,7 @@ function w() {
                     children: "Activity Sharing"
                 }), (0, a.jsx)(h.l6P, {
                     label: "Force show game",
-                    options: T.K.map(e => ({
+                    options: E.K.map(e => ({
                         label: e,
                         value: e,
                         id: e

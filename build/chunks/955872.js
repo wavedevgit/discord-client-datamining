@@ -18,15 +18,15 @@ var i = n(627968),
     x = n(451909),
     p = n(550111),
     h = n(202639),
-    T = n(407217),
-    E = n(919395),
-    f = n(884546),
+    f = n(407217),
+    T = n(919395),
+    E = n(884546),
     S = n(287070),
-    C = n(196291),
-    b = n(101058),
+    b = n(196291),
+    C = n(101058),
     N = n(836602),
-    I = n(814390),
-    v = n(351906),
+    v = n(814390),
+    I = n(351906),
     j = n(287809),
     y = n(954571),
     O = n(927578),
@@ -41,7 +41,7 @@ function G() {
             let e = j.default.getCurrentUser();
             return a()(null != e, "UserSettingsProfileCustomization: user cannot be undefined"), e
         }),
-        t = (0, r.bG)([v.A], () => v.A.hidePersonalInformation),
+        t = (0, r.bG)([I.A], () => I.A.hidePersonalInformation),
         {
             pendingBio: n,
             pendingAvatar: l,
@@ -52,28 +52,28 @@ function G() {
             ...N.A.getPendingChanges(),
             showNotice: N.A.showNotice()
         })),
-        w = (0, b.V7)({
+        w = (0, C.V7)({
             userId: e.id,
             image: l
         }),
-        V = (0, E.lw)({
+        V = (0, T.lw)({
             pendingValue: G,
             userValue: e?.collectibles?.nameplate
         }),
-        B = (0, I.A)() && null != n ? x.Ay.parse(void 0, n).content : n,
-        H = O.Ay.canUsePremiumProfileCustomization(e),
+        B = (0, v.A)() && null != n ? x.Ay.parse(void 0, n).content : n,
+        F = O.Ay.canUsePremiumProfileCustomization(e),
         {
-            analyticsLocations: F,
+            analyticsLocations: H,
             newestAnalyticsLocation: Y
         } = (0, g.Ay)(_.A.USER_SETTINGS_USER_PROFILE);
     s.useEffect(() => () => c.h.wait(u.IM), []);
-    let [z, X] = s.useState(!1), W = !H, K = s.useRef(null);
+    let [z, X] = s.useState(!1), W = !F, K = s.useRef(null);
     return t ? (0, i.jsx)(m.A, {}) : (0, i.jsxs)(g.f5, {
-        value: F,
-        children: [(0, i.jsx)(A.A, {}), (0, i.jsx)(f.A, {
+        value: H,
+        children: [(0, i.jsx)(A.A, {}), (0, i.jsx)(E.A, {
             profilePreview: (0, i.jsx)(S.A, {
                 user: e,
-                canUsePremiumCustomization: H,
+                canUsePremiumCustomization: F,
                 onUpsellClick: R.A,
                 pendingBio: B,
                 ...U,
@@ -94,7 +94,7 @@ function G() {
             active: W,
             children: (0, i.jsx)("div", {
                 ref: K,
-                children: (0, i.jsx)(C.A, {
+                children: (0, i.jsx)(b.A, {
                     user: e,
                     shouldShow: W,
                     isVisible: z
@@ -104,7 +104,7 @@ function G() {
             className: M.EL,
             showUpsell: !z,
             text: D.intl.format(D.t.TmfgI2, {
-                onClick: () => (0, T.K)({
+                onClick: () => (0, f.K)({
                     analyticsSource: Y
                 })
             }),

@@ -17,8 +17,8 @@ var i = n(627968),
     h = n(956793),
     A = n(401843),
     m = n(296216),
-    p = n(323073),
-    _ = n(793574),
+    _ = n(323073),
+    p = n(793574),
     g = n(480890),
     f = n(643501),
     x = n(916641),
@@ -117,8 +117,8 @@ let K = (0, m.J)(function(e) {
         isSelfOnOtherClient: eh = !1,
         tabIndex: eA,
         location: em,
-        isSelf: ep,
-        application: e_,
+        isSelf: e_,
+        application: ep,
         hangStatusActivity: eg,
         requestToStreamActivity: ef,
         showHangStatus: ex
@@ -167,13 +167,13 @@ let K = (0, m.J)(function(e) {
                     channel: m,
                     showMediaItems: !0,
                     showStageChannelItems: m.isGuildStageVoice(),
-                    onInteraction: (0, g.s)("GuildChannelUserContextMenu", _.A.VOICE_USER, {
+                    onInteraction: (0, g.s)("GuildChannelUserContextMenu", p.A.VOICE_USER, {
                         targetUserId: l.id
                     })
                 })
             })
         },
-        eY = e => ep ? (0, i.jsx)(b.h, {
+        eY = e => e_ ? (0, i.jsx)(b.h, {
             ...e,
             channel: m,
             setIsHangStatusInputFocused: ej,
@@ -188,7 +188,7 @@ let K = (0, m.J)(function(e) {
             userId: l.id,
             channel: m
         }),
-        eq = () => (0, p.r9)() && (0, p.UK)(m.id) ? null : (0, i.jsx)(N.A, {
+        eq = () => (0, _.r9)() && (0, _.UK)(m.id) ? null : (0, i.jsx)(N.A, {
             user: l,
             channel: m,
             onWatch: eK,
@@ -208,7 +208,7 @@ let K = (0, m.J)(function(e) {
                 user: l,
                 guildId: m.guild_id,
                 channelId: m.id,
-                newAnalyticsLocations: [_.A.VOICE_USER],
+                newAnalyticsLocations: [p.A.VOICE_USER],
                 shouldShow: eI,
                 onRequestClose: () => eN(!1),
                 children: e => (e => {
@@ -244,8 +244,8 @@ let K = (0, m.J)(function(e) {
                             onDoubleClick: eK,
                             onContextMenu: eW,
                             guildId: m.guild_id,
-                            isSelf: ep,
-                            application: e_,
+                            isSelf: e_,
+                            application: ep,
                             channelId: m.id,
                             hangStatusActivity: eg,
                             showHangStatus: ex
@@ -269,9 +269,9 @@ let K = (0, m.J)(function(e) {
                         targetElementRef: eE,
                         position: "right",
                         renderPopout: r,
-                        shouldShow: (eo || ex && eD && (!eC || ep)) && !eI,
+                        shouldShow: (eo || ex && eD && (!eC || e_)) && !eI,
                         onRequestClose: eV,
-                        align: ex && eG && !ep && !eC ? "center" : void 0,
+                        align: ex && eG && !e_ && !eC ? "center" : void 0,
                         spacing: 17,
                         children: () => (0, i.jsx)(y.Ay, {
                             ...s,

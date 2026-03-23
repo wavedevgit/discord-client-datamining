@@ -16,8 +16,8 @@ var s = n(417597),
     h = n(646468),
     A = n(790368),
     m = n(435084),
-    p = n(412484),
-    _ = n(985018),
+    _ = n(412484),
+    p = n(985018),
     g = n(655967);
 
 function f(e) {
@@ -27,7 +27,7 @@ function f(e) {
         badgeState: h,
         closePopout: m
     } = e, {
-        enabled: p,
+        enabled: _,
         inInbox: f
     } = c.A.useConfig({
         location: "RecentsPopout"
@@ -46,14 +46,14 @@ function f(e) {
                 className: g.Hi,
                 variant: "text-lg/semibold",
                 color: "interactive-text-active",
-                children: _.intl.string(_.t.GSmTKJ)
+                children: p.intl.string(p.t.GSmTKJ)
             }), (0, i.jsxs)(r.sqX, {
                 className: g.ne,
                 onClick: e => e.stopPropagation(),
                 focusProps: {
                     enabled: !1
                 },
-                "aria-label": _.intl.string(_.t["8k+6QY"]),
+                "aria-label": p.intl.string(p.t["8k+6QY"]),
                 children: [(0, i.jsx)(x, {
                     tab: t
                 }), (0, i.jsx)(A.A, {
@@ -70,33 +70,33 @@ function f(e) {
                 className: g.$H,
                 children: [(0, i.jsxs)(r.VQ0.Item, {
                     id: l.Y2.FOR_YOU,
-                    "aria-label": _.intl.string(_.t["En+D+u"]),
+                    "aria-label": p.intl.string(p.t["En+D+u"]),
                     className: g.Mf,
-                    children: [_.intl.string(_.t["En+D+u"]), h?.badgeForYou ? (0, i.jsx)(r.SC0, {
+                    children: [p.intl.string(p.t["En+D+u"]), h?.badgeForYou ? (0, i.jsx)(r.SC0, {
                         color: a.A.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css,
                         className: g.bG
                     }) : null]
                 }), (0, i.jsx)(r.VQ0.Item, {
                     id: l.Y2.UNREADS,
                     className: g.Mf,
-                    children: _.intl.string(_.t.sRUdB8)
+                    children: p.intl.string(p.t.sRUdB8)
                 }), (0, i.jsx)(r.VQ0.Item, {
-                    "aria-label": _.intl.string(_.t.GRZF96),
+                    "aria-label": p.intl.string(p.t.GRZF96),
                     id: l.Y2.MENTIONS,
                     className: g.Mf,
-                    children: _.intl.string(_.t.GRZF96)
-                }), p && f ? (0, i.jsx)(r.VQ0.Item, {
-                    "aria-label": _.intl.string(_.t["2pAkDA"]),
+                    children: p.intl.string(p.t.GRZF96)
+                }), _ && f ? (0, i.jsx)(r.VQ0.Item, {
+                    "aria-label": p.intl.string(p.t["2pAkDA"]),
                     id: l.Y2.BOOKMARKS,
                     className: g.Mf,
-                    children: 0 === E ? _.intl.string(_.t["2pAkDA"]) : _.intl.formatToPlainString(_.t.I4fryG, {
+                    children: 0 === E ? p.intl.string(p.t["2pAkDA"]) : p.intl.formatToPlainString(p.t.I4fryG, {
                         count: E
                     })
                 }) : null, C ? (0, i.jsx)(r.VQ0.Item, {
                     "aria-label": "scheduled",
                     id: l.Y2.SCHEDULED,
                     className: g.Mf,
-                    children: _.intl.string(_.t.Fn6Odn)
+                    children: p.intl.string(p.t.Fn6Odn)
                 }) : null]
             })
         })]
@@ -107,5 +107,5 @@ function x(e) {
     let {
         tab: t
     } = e;
-    return t === l.Y2.FOR_YOU ? (0, i.jsx)(h.xc, {}) : t === l.Y2.UNREADS ? (0, i.jsx)(p.NH, {}) : t === l.Y2.MENTIONS ? (0, i.jsx)(m.A, {}) : null
+    return t === l.Y2.FOR_YOU ? (0, i.jsx)(h.xc, {}) : t === l.Y2.UNREADS ? (0, i.jsx)(_.NH, {}) : t === l.Y2.MENTIONS ? (0, i.jsx)(m.A, {}) : null
 }

@@ -30,13 +30,13 @@ function f() {
         j = (0, c.$W)(v),
         A = e?.avatarDecoration?.skuId,
         C = e?.collectibles?.nameplate?.skuId,
-        y = null != A ? b.find(e => e.skuId === A) ?? null : null,
-        T = null != C ? j.find(e => e.skuId === C) ?? null : null,
-        S = (0, i.bG)([o.A], () => o.A.getProduct(y?.skuId)),
-        E = (0, i.bG)([o.A], () => o.A.getProduct(T?.skuId)),
+        T = null != A ? b.find(e => e.skuId === A) ?? null : null,
+        E = null != C ? j.find(e => e.skuId === C) ?? null : null,
+        S = (0, i.bG)([o.A], () => o.A.getProduct(T?.skuId)),
+        y = (0, i.bG)([o.A], () => o.A.getProduct(E?.skuId)),
         N = (0, i.bG)([r.A], () => r.A.fontSize),
         I = (0, i.bG)([r.A], () => r.A.messageGroupSpacing),
-        k = h.Xi.useSetting();
+        O = h.Xi.useSetting();
     return (0, p.DB)(), (0, a.jsxs)("div", {
         className: _.kL,
         children: [(0, a.jsxs)("div", {
@@ -77,7 +77,7 @@ function f() {
                 children: ["Avatar Decoration: ", S?.name ?? "None"]
             }), (0, a.jsxs)(l.Text, {
                 variant: "text-md/normal",
-                children: ["Nameplate: ", E?.name ?? "None"]
+                children: ["Nameplate: ", y?.name ?? "None"]
             }), (0, a.jsxs)(l.Text, {
                 variant: "text-md/normal",
                 children: ["Font Size: ", N, "px"]
@@ -86,7 +86,7 @@ function f() {
                 children: ["Message Spacing: ", I]
             }), (0, a.jsxs)(l.Text, {
                 variant: "text-md/normal",
-                children: ["UI Density: ", k, " (", function(e) {
+                children: ["UI Density: ", O, " (", function(e) {
                     switch (e) {
                         case s.NS.COMPACT:
                             return "Compact";
@@ -99,7 +99,7 @@ function f() {
                         default:
                             return "Unknown"
                     }
-                }(k), ")"]
+                }(O), ")"]
             })]
         })]
     })

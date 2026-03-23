@@ -1,6 +1,6 @@
 /** chunk id: 331969 params = (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => b
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -19,10 +19,10 @@ var i = n(627968),
     p = n(985018),
     h = n(971953);
 
-function T() {}
-let E = [x.rD.VOICE_CHANNEL];
+function f() {}
+let T = [x.rD.VOICE_CHANNEL];
 
-function f(e) {
+function E(e) {
     e.setOptions({
         voiceChannelGuildFilter: null
     }), e.setLimit(1 / 0)
@@ -40,7 +40,7 @@ function S() {
     })
 }
 
-function C(e) {
+function b(e) {
     let {
         keybind: t
     } = e, n = s.useRef(t);
@@ -48,7 +48,7 @@ function C(e) {
         n.current = t
     });
     let [l, a] = s.useState(t.params?.channelId ?? void 0), d = s.useCallback(() => {
-        (0, r.mMO)(async () => e => (0, i.jsx)(b, {
+        (0, r.mMO)(async () => e => (0, i.jsx)(C, {
             ...e,
             onSelect: e => {
                 a(e), o.A.setKeybind({
@@ -85,22 +85,22 @@ function C(e) {
     })
 }
 
-function b(e) {
+function C(e) {
     let t, n, {
             transitionState: o,
             onClose: c,
-            onSelect: T
+            onSelect: f
         } = e,
-        C = s.useId(),
-        b = s.useRef(null),
+        b = s.useId(),
+        C = s.useRef(null),
         {
             query: N,
-            updateQuery: I,
-            queryResults: v
+            updateQuery: v,
+            queryResults: I
         } = (0, d.A)({
             visible: !0,
-            autocompleterResultTypes: E,
-            autocompleterBeforeCreateSearchContext: f
+            autocompleterResultTypes: T,
+            autocompleterBeforeCreateSearchContext: E
         }),
         j = (t = "" !== N, n = (0, a.yK)([_.Ay, m.A, A.A], () => {
             let e = A.A.getGuildId();
@@ -127,30 +127,30 @@ function b(e) {
     s.useEffect(() => {
         let {
             current: e
-        } = b;
+        } = C;
         null == e || e.isItemVisible(0, y, !0) || e.scrollToIndex({
             section: 0,
             row: y
         })
     }, [y]);
-    let R = null != j ? j.length : v.length,
+    let R = null != j ? j.length : I.length,
         L = (() => {
             if (null != j) return j[y]?.id;
-            let e = v[y];
+            let e = I[y];
             if (e?.type === x.rD.VOICE_CHANNEL) return e.record.id
         })(),
         P = R > 0 || "" === N ? {
-            innerId: C,
+            innerId: b,
             innerRole: "listbox",
             innerAriaLabel: p.intl.string(p.t["+N3fW7"]),
-            ref: b,
+            ref: C,
             sections: [R],
             renderRow: function(e) {
                 let {
                     row: t
                 } = e, n = (() => {
                     if (null != j) return j[t];
-                    let e = v[t];
+                    let e = I[t];
                     if (e?.type === x.rD.VOICE_CHANNEL) return e.record
                 })();
                 if (null == n) return null;
@@ -163,7 +163,7 @@ function b(e) {
                     focused: y === t,
                     onMouseEnter: () => O(t),
                     onClick: () => {
-                        T(n.id), c()
+                        f(n.id), c()
                     },
                     onFocus: () => O(t),
                     children: null != l ? (0, i.jsx)("div", {
@@ -188,7 +188,7 @@ function b(e) {
         actions: void 0,
         input: (0, i.jsx)(r.ksK, {
             value: N,
-            onChange: I,
+            onChange: v,
             onKeyDown: function(e) {
                 let t = e.key.toLowerCase();
                 if ("arrowdown" === t || "arrowup" === t || "enter" === t || "escape" === t) switch (e.preventDefault(), t) {
@@ -198,10 +198,10 @@ function b(e) {
                     case "enter": {
                         let e = (() => {
                             if (null != j) return j[y];
-                            let e = v[y];
+                            let e = I[y];
                             if (e?.type === x.rD.VOICE_CHANNEL) return e.record
                         })();
-                        null == e ? T(void 0) : T(e.id), c();
+                        null == e ? f(void 0) : f(e.id), c();
                         break
                     }
                     case "arrowup":
@@ -213,7 +213,7 @@ function b(e) {
             },
             placeholder: p.intl.string(p.t.tG0r7g),
             role: "combobox",
-            "aria-controls": C,
+            "aria-controls": b,
             "aria-expanded": R > 0,
             "aria-activedescendant": R > 0 && null != L ? L : void 0,
             "aria-autocomplete": "list",
@@ -252,9 +252,9 @@ function N(e) {
         channel: n,
         id: n.id,
         category: s,
-        onClick: T,
-        onFocus: T,
-        onMouseEnter: T,
+        onClick: f,
+        onFocus: f,
+        onMouseEnter: f,
         focused: !1,
         children: null != l ? (0, i.jsx)("div", {
             className: h.J5,

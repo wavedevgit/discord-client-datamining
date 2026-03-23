@@ -1,5 +1,5 @@
 /** chunk id: 305637 params = (module,exports,require) **/
-i.d(e, {
+i.d(t, {
     A: () => f
 });
 var n = i(627968);
@@ -12,42 +12,42 @@ var l = i(311907),
     d = i(401843),
     u = i(279250),
     c = i(267102),
-    m = i(616356),
-    p = i(734057),
-    A = i(203982),
+    A = i(616356),
+    m = i(734057),
+    p = i(203982),
     h = i(652215),
     g = i(985018);
 
-function f(t) {
+function f(e) {
     let {
-        isCurrentUser: e,
+        isCurrentUser: t,
         applicationStream: i,
         onAction: f
-    } = t, {
+    } = e, {
         activeStream: T,
         watchingOtherStream: S
-    } = (0, l.cf)([m.A], () => ({
-        activeStream: m.A.getActiveStreamForApplicationStream(i),
-        watchingOtherStream: null != i && m.A.getAllActiveStreamsForChannel(i.channelId).filter(t => {
+    } = (0, l.cf)([A.A], () => ({
+        activeStream: A.A.getActiveStreamForApplicationStream(i),
+        watchingOtherStream: null != i && A.A.getAllActiveStreamsForChannel(i.channelId).filter(e => {
             let {
-                ownerId: e
-            } = t;
-            return e !== i.ownerId
+                ownerId: t
+            } = e;
+            return t !== i.ownerId
         }).length > 0
-    })), E = (0, l.bG)([p.A], () => p.A.getChannel(i?.channelId)), [C, v] = (0, u.zP)(E), _ = (0, c.aL)(), x = null != T && null != i && T.state !== h.XYD.ENDED && T.ownerId === i.ownerId, y = t => {
+    })), E = (0, l.bG)([m.A], () => m.A.getChannel(i?.channelId)), [C, v] = (0, u.zP)(E), _ = (0, c.aL)(), x = null != T && null != i && T.state !== h.XYD.ENDED && T.ownerId === i.ownerId, y = e => {
         null != i && (f?.(), o.default.selectVoiceChannel(i.channelId), x || (0, d.Nl)(i, {
-            forceMultiple: t
-        }), _.dispatch(h.jej.POPOUT_CLOSE), A._.dispatch(h.jej.MODAL_CLOSE), a.A.popAll())
+            forceMultiple: e
+        }), _.dispatch(h.jej.POPOUT_CLOSE), p._.dispatch(h.jej.MODAL_CLOSE), a.A.popAll())
     };
     if (null == i) return null;
-    let N = (0, u.CT)(v);
-    return e ? N = g.intl.string(g.t.XvBdeT) : x && (N = g.intl.string(g.t["JH1SJ+"])), (0, n.jsxs)(n.Fragment, {
+    let I = (0, u.CT)(v);
+    return t ? I = g.intl.string(g.t.XvBdeT) : x && (I = g.intl.string(g.t["JH1SJ+"])), (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(s.Button, {
             size: "sm",
             variant: x ? "secondary" : "active",
             icon: s.Fzq,
-            text: N,
-            disabled: e || x || !C,
+            text: I,
+            disabled: t || x || !C,
             onClick: () => y(!1),
             fullWidth: !0
         }), S && !x ? (0, n.jsx)(r.m, {

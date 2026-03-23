@@ -26,7 +26,7 @@ function o(e) {
     s.useEffect(() => {
         n?.()
     }, [n]);
-    let p = {
+    let _ = {
         type: "image",
         src: r.A,
         aspectRatio: "16/9"
@@ -53,6 +53,6 @@ function o(e) {
         body: a.intl.format(a.t.TlwPZw, {
             applicationName: m
         }),
-        graphic: p
+        graphic: _
     })
 }

@@ -19,15 +19,15 @@ var i = n(627968),
     x = n(544028),
     p = n(253932),
     h = n(841329),
-    T = n(899847),
-    E = n(695515),
-    f = n(438732),
+    f = n(899847),
+    T = n(695515),
+    E = n(438732),
     S = n(809697),
-    C = n(834981),
-    b = n(102615),
+    b = n(834981),
+    C = n(102615),
     N = n(246109),
-    I = n(452141),
-    v = n(888772),
+    v = n(452141),
+    I = n(888772),
     j = n(614749),
     y = n(768985),
     O = n(191627),
@@ -36,16 +36,16 @@ var i = n(627968),
     P = n(985018),
     D = n(914280);
 let M = {
-        [O.u9.REQUESTS]: v.A,
-        [O.u9.ACTIVITY]: I.A,
+        [O.u9.REQUESTS]: I.A,
+        [O.u9.ACTIVITY]: v.A,
         [O.u9.SETTINGS]: j.A,
-        [O.u9.CONTENT_AND_SOCIAL]: b.A,
+        [O.u9.CONTENT_AND_SOCIAL]: C.A,
         [O.u9.DATA_AND_PRIVACY]: N.A
     },
     G = {
-        [O.u9.REQUESTS]: v.A,
-        [O.u9.ACTIVITY]: I.A,
-        [O.u9.CONTENT_AND_SOCIAL]: b.A,
+        [O.u9.REQUESTS]: I.A,
+        [O.u9.ACTIVITY]: v.A,
+        [O.u9.CONTENT_AND_SOCIAL]: C.A,
         [O.u9.DATA_AND_PRIVACY]: N.A
     };
 
@@ -62,7 +62,7 @@ function U(e) {
     let {
         section: t,
         handleItemSelect: n
-    } = e, s = (0, C.VT)(), l = (0, f.A)();
+    } = e, s = (0, b.VT)(), l = (0, E.A)();
     return t === O.u9.CONTENT_AND_SOCIAL || t === O.u9.DATA_AND_PRIVACY ? null : (0, i.jsxs)(d.VQ0, {
         className: D.c5,
         "aria-label": P.intl.string(L.default.RZqaJn),
@@ -95,7 +95,7 @@ function w(e) {
         theme: t,
         section: n,
         handleItemSelect: s
-    } = e, l = (0, g.GV)(), o = (0, C.VT)();
+    } = e, l = (0, g.GV)(), o = (0, b.VT)();
     return (0, i.jsx)(d.NPJ, {
         theme: t,
         children: e => (0, i.jsxs)(A.A, {
@@ -143,7 +143,7 @@ function V() {
         } = (0, y.j)({
             location: O.MH.SETTINGS,
             onMountEffect: () => {
-                T.Ay.initialPageLoad()
+                f.Ay.initialPageLoad()
             }
         });
     if (s.useEffect(() => {
@@ -172,23 +172,23 @@ function V() {
 function B() {
     let {
         analyticsLocations: e
-    } = (0, m.Ay)(u.A.FAMILY_CENTER), t = (0, f.A)(), n = (0, o.bG)([E.A], () => E.A.getIsInitialized()), l = (0, o.bG)([x.A], () => x.A.theme), r = (0, g.GV)(), {
+    } = (0, m.Ay)(u.A.FAMILY_CENTER), t = (0, E.A)(), n = (0, o.bG)([T.A], () => T.A.getIsInitialized()), l = (0, o.bG)([x.A], () => x.A.theme), r = (0, g.GV)(), {
         isLoading: A,
         selectedTab: h,
         handleTabChange: S,
-        showAgeGateModal: C
+        showAgeGateModal: b
     } = (0, y.j)({
         location: O.MH.SIDENAV,
         onMountEffect: () => {
-            c.I(R.BVt.FAMILY_CENTER), !E.A.isLoading() && E.A.canRefetch() && T.Ay.initialPageLoad()
+            c.I(R.BVt.FAMILY_CENTER), !T.A.isLoading() && T.A.canRefetch() && f.Ay.initialPageLoad()
         }
     });
     if (s.useEffect(() => {
             let e = p.dm.getSetting();
             n && t && void 0 === e && p.dm.updateSetting(!0)
-        }, [n, t]), C) return null;
-    let b = h !== O.u9.SETTINGS ? h : O.u9.ACTIVITY,
-        N = G[b];
+        }, [n, t]), b) return null;
+    let C = h !== O.u9.SETTINGS ? h : O.u9.ACTIVITY,
+        N = G[C];
     return (0, i.jsx)(m.f5, {
         value: e,
         children: (0, i.jsxs)("main", {
@@ -198,12 +198,12 @@ function B() {
                 location: P.intl.string(L.default.RZqaJn)
             }), (0, i.jsx)(w, {
                 theme: l,
-                section: b,
+                section: C,
                 handleItemSelect: e => {
                     S(e)
                 }
             }), (0, i.jsx)(d.VQ0.Panel, {
-                id: b,
+                id: C,
                 "aria-labelledby": r,
                 className: D.Om,
                 children: (0, i.jsx)(d.HOs, {

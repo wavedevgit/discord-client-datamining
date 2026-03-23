@@ -1,6 +1,6 @@
 /** chunk id: 249581 params = (module,exports,require) **/
 n.d(e, {
-    A: () => A
+    A: () => _
 });
 var i = n(627968),
     r = n(64700),
@@ -63,19 +63,19 @@ let h = t => {
     })
 };
 
-function A(t) {
+function _(t) {
     let {
         achievement: e,
         unlocked: n
     } = t, {
         name: l,
-        description: A,
-        rarity: _,
-        hideDescriptionUntilUnlock: C,
+        description: _,
+        rarity: C,
+        hideDescriptionUntilUnlock: A,
         onAction: g
     } = e, {
         color: E
-    } = (0, o.ag)(_);
+    } = (0, o.ag)(C);
     r.useEffect(() => {
         let t = setTimeout(() => {
             c.A.playAchievementUnlockSound()
@@ -85,8 +85,8 @@ function A(t) {
         }
     }, []);
     let T = null != g && n,
-        I = T ? a.DUT : "div";
-    return (0, i.jsxs)(I, {
+        L = T ? a.DUT : "div";
+    return (0, i.jsxs)(L, {
         className: s()(u.kL, T && u.b),
         onClick: () => {
             T && g()
@@ -107,7 +107,7 @@ function A(t) {
             }), (0, i.jsx)(a.Text, {
                 variant: "text-xs/medium",
                 color: "text-default",
-                children: C && !n ? "?????" : A()
+                children: A && !n ? "?????" : _()
             })]
         }), (0, i.jsx)("div", {
             className: u.Db,

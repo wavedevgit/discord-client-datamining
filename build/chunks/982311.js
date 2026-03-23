@@ -53,15 +53,15 @@ let x = function(e) {
         code: x,
         outboundPromotion: p,
         transitionState: h
-    } = e, [T, E] = s.useState(null), f = (0, u.GV)(), {
+    } = e, [f, T] = s.useState(null), E = (0, u.GV)(), {
         analyticsLocations: S
     } = (0, c.Ay)(d.A.USER_SETTINGS_GIFT_INVENTORY);
     return (s.useEffect(() => {
         null == x && (0, m.kd)({
             promotionId: p.id,
             analyticsLocations: S
-        }).then(e => n(e)).catch(e => E(e?.body?.code))
-    }, [x, p.id, n, S]), null != T) ? (0, i.jsx)(A, {
+        }).then(e => n(e)).catch(e => T(e?.body?.code))
+    }, [x, p.id, n, S]), null != f) ? (0, i.jsx)(A, {
         onClose: t,
         transitionState: h
     }) : null == x ? (0, i.jsx)(r.y$y, {
@@ -96,7 +96,7 @@ let x = function(e) {
             }
         }],
         transitionState: h,
-        "aria-label": f,
+        "aria-label": E,
         children: (0, i.jsxs)("div", {
             children: [(0, i.jsx)(r.cGx, {
                 className: g.M5

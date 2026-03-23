@@ -1,6 +1,6 @@
 /** chunk id: 338795 params = (module,exports,require) **/
 n.d(t, {
-    J: () => f
+    J: () => E
 });
 var i = n(934551),
     s = n(98207),
@@ -26,7 +26,7 @@ let h = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
         },
         buildLayout: () => [g.Q]
     }),
-    T = (0, a.dT)(c.X.ACCOUNT_SECURITY_TAB, {
+    f = (0, a.dT)(c.X.ACCOUNT_SECURITY_TAB, {
         getTitle: () => p.intl.string(p.t.Am9YHi),
         onItemSelect: () => {
             d.default.track(x.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
@@ -35,7 +35,7 @@ let h = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
         },
         buildLayout: () => [m.P, u.o, _.s]
     }),
-    E = (0, a.t_)(c.X.ACCOUNT_PANEL, {
+    T = (0, a.t_)(c.X.ACCOUNT_PANEL, {
         useTitle: () => p.intl.string(p.t["JAIM/m"]),
         initialize: function() {
             let e = o.default.getCurrentUser();
@@ -44,10 +44,10 @@ let h = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
             }
         },
         hideInStreamerMode: !0,
-        buildLayout: () => [T, h]
+        buildLayout: () => [f, h]
     }),
-    f = (0, a.i4)(c.X.ACCOUNT_SIDEBAR_ITEM, {
+    E = (0, a.i4)(c.X.ACCOUNT_SIDEBAR_ITEM, {
         useTitle: () => p.intl.string(p.t["JAIM/m"]),
         icon: i.UserIcon,
-        buildLayout: () => [E]
+        buildLayout: () => [T]
     })

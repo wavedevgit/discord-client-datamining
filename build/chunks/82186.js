@@ -1,43 +1,43 @@
 /** chunk id: 82186 params = (module,exports,require) **/
 "use strict";
-r.d(t, {
+n.d(t, {
     E: () => d
-}), r(667532);
-var n = r(627968);
-r(64700);
-var a = r(158954),
-    i = r(963935),
-    l = r(272053),
-    s = r(215566),
-    o = r(985018),
-    c = r(621580);
+}), n(667532);
+var r = n(627968);
+n(64700);
+var i = n(158954),
+    a = n(963935),
+    l = n(272053),
+    s = n(215566),
+    o = n(985018),
+    c = n(621580);
 
 function u(e) {
     let {
         node: t,
-        isLast: r
-    } = e, i = t.useTitle(), o = t.usePersistentBadge?.(), u = (0, n.jsxs)(a.BJc, {
+        isLast: n
+    } = e, a = t.useTitle(), o = t.usePersistentBadge?.(), u = (0, r.jsxs)(i.BJc, {
         direction: "horizontal",
         align: "center",
         gap: "xs",
         className: c.Ze,
-        children: [(0, n.jsx)(a.EYj, {
-            variant: r ? "text-md/medium" : "text-md/normal",
-            color: r ? "text-default" : void 0,
+        children: [(0, r.jsx)(i.EYj, {
+            variant: n ? "text-md/medium" : "text-md/normal",
+            color: n ? "text-default" : void 0,
             className: c.b,
-            children: i
-        }), r && null != o && (0, n.jsx)(s.A, {
+            children: a
+        }), n && null != o && (0, r.jsx)(s.A, {
             badge: o
-        }), !r && (0, n.jsx)(a.EYj, {
+        }), !n && (0, r.jsx)(i.EYj, {
             variant: "text-md/normal",
             color: "interactive-text-default",
             children: "/"
         })]
     });
-    return (0, n.jsx)("li", {
-        "aria-current": r ? "page" : void 0,
+    return (0, r.jsx)("li", {
+        "aria-current": n ? "page" : void 0,
         className: c.QF,
-        children: r ? u : (0, n.jsx)(a.DUT, {
+        children: n ? u : (0, r.jsx)(i.DUT, {
             onClick: () => {
                 l.A.navigate(t.key)
             },
@@ -50,21 +50,21 @@ function u(e) {
 function d(e) {
     let {
         node: t
-    } = e, r = function(e) {
+    } = e, n = function(e) {
         let t = [e];
-        for (let r = e.parent; null != r && r.type !== i.Z6.SIDEBAR_ITEM; r = r.parent) r.type === i.Z6.PANEL && t.unshift(r);
+        for (let n = e.parent; null != n && n.type !== a.Z6.SIDEBAR_ITEM; n = n.parent) n.type === a.Z6.PANEL && t.unshift(n);
         return t
     }(t);
-    return (0, n.jsx)("nav", {
+    return (0, r.jsx)("nav", {
         "aria-label": o.intl.string(o.t["bM+M/m"]),
         className: c.m7,
-        children: (0, n.jsx)(a.BJc, {
+        children: (0, r.jsx)(i.BJc, {
             direction: "horizontal",
             role: "list",
             className: c.jD,
-            children: r.map((e, t) => (0, n.jsx)(u, {
+            children: n.map((e, t) => (0, r.jsx)(u, {
                 node: e,
-                isLast: t === r.length - 1
+                isLast: t === n.length - 1
             }, e.key))
         })
     })

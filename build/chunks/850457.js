@@ -16,8 +16,8 @@ var s = n(311907),
     h = n(290987),
     A = n(769022),
     m = n(898926),
-    p = n(287809),
-    _ = n(562153),
+    _ = n(287809),
+    p = n(562153),
     g = n(996439),
     f = n(985018),
     x = n(615349);
@@ -27,7 +27,7 @@ function C(e) {
         event: t,
         guildId: n,
         channelId: l
-    } = e, o = (0, s.bG)([p.default], () => p.default.getUser(t.userId)), c = (0, s.bG)([r.A], () => t.eventType === m.i.ACTIVITY_ENDED && null != t.applicationId ? r.A.getApplication(t.applicationId) : void 0), d = _.Ay.useName(n, l, o);
+    } = e, o = (0, s.bG)([_.default], () => _.default.getUser(t.userId)), c = (0, s.bG)([r.A], () => t.eventType === m.i.ACTIVITY_ENDED && null != t.applicationId ? r.A.getApplication(t.applicationId) : void 0), d = p.Ay.useName(n, l, o);
     if (null == o) return null;
     let A = t.eventType === m.i.ACTIVITY_ENDED;
     return (0, i.jsxs)("div", {

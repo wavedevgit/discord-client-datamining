@@ -19,9 +19,9 @@ var s = n(503698),
     x = n(303682),
     p = n(652215),
     h = n(985018),
-    T = n(146449),
-    E = n(544879);
-let f = e => {
+    f = n(146449),
+    T = n(544879);
+let E = e => {
         let {
             user: t
         } = e, {
@@ -32,7 +32,7 @@ let f = e => {
             size: r._3J.SIZE_24
         });
         return (0, i.jsx)(r.euF, {
-            className: T.bj,
+            className: f.bj,
             src: n,
             "aria-label": (0, u.mG)(t),
             size: r._3J.SIZE_24,
@@ -44,21 +44,21 @@ let f = e => {
             slotIndex: t
         } = e;
         return (0, i.jsx)("div", {
-            className: T.p,
+            className: f.p,
             children: t
         })
     },
-    C = e => {
+    b = e => {
         let {
             referralSentUsers: t
         } = e;
         return (0, i.jsx)("div", {
-            className: T.L$,
+            className: f.L$,
             children: (() => {
                 let e = [];
                 for (let n = 0; n < A.Z; n++)
                     if (t?.[n] !== void 0) {
-                        let s = (0, i.jsx)(f, {
+                        let s = (0, i.jsx)(E, {
                             user: t[n]
                         }, t[n].id);
                         e.push(s)
@@ -71,19 +71,19 @@ let f = e => {
             })()
         })
     },
-    b = e => {
+    C = e => {
         let {
             nReferralsSent: t
         } = e;
         return (0, i.jsx)(r.a3E, {
             percent: 33.3 * t,
             colorOverride: "#53ac66",
-            background: T.cq,
+            background: f.cq,
             strokeSize: .8,
-            ringColorOverrideClassName: T.e0,
-            overlayClassName: t === A.Z ? T.ys : void 0,
+            ringColorOverrideClassName: f.e0,
+            overlayClassName: t === A.Z ? f.ys : void 0,
             children: (0, i.jsx)(r._V3, {
-                src: E.A,
+                src: T.A,
                 height: 93,
                 width: 93,
                 zoomable: !1
@@ -95,20 +95,20 @@ let f = e => {
             className: t
         } = e, {
             referralSentUsers: s
-        } = (0, A.J)(), o = (0, a.bG)([_.A], () => _.A.getRecipientStatus()), u = (0, a.bG)([_.A], () => _.A.getHasEligibleFriends()), E = o.size === A.Z && [...o.values()].every(e => e === m.aK.REDEEMED), f = o.size === A.Z;
+        } = (0, A.J)(), o = (0, a.bG)([_.A], () => _.A.getRecipientStatus()), u = (0, a.bG)([_.A], () => _.A.getHasEligibleFriends()), T = o.size === A.Z && [...o.values()].every(e => e === m.aK.REDEEMED), E = o.size === A.Z;
         return (0, i.jsxs)("div", {
-            className: l()(T.kL, t),
+            className: l()(f.kL, t),
             children: [(0, i.jsx)("div", {
-                className: T.G3,
-                children: (0, i.jsx)(b, {
+                className: f.G3,
+                children: (0, i.jsx)(C, {
                     nReferralsSent: o.size
                 })
             }), (0, i.jsxs)("div", {
-                className: T.IH,
-                children: [(0, i.jsx)(C, {
+                className: f.IH,
+                children: [(0, i.jsx)(b, {
                     referralSentUsers: s
                 }), (0, i.jsxs)("div", {
-                    className: T.n4,
+                    className: f.n4,
                     children: [(0, i.jsx)(r.Heading, {
                         variant: "heading-lg/semibold",
                         color: "text-strong",
@@ -118,7 +118,7 @@ let f = e => {
                         color: "text-subtle",
                         children: !1 === u ? h.intl.format(h.t["zWhX/Q"], {
                             helpdeskArticle: c.A.getArticleURL(p.MVz.REFERRAL_PROGRAM)
-                        }) : s.length === A.Z ? !0 === E ? h.intl.format(h.t["1aEjsH"], {
+                        }) : s.length === A.Z ? !0 === T ? h.intl.format(h.t["1aEjsH"], {
                             helpdeskArticle: c.A.getArticleURL(p.MVz.REFERRAL_PROGRAM)
                         }) : h.intl.format(h.t["+u3AOO"], {
                             helpdeskArticle: c.A.getArticleURL(p.MVz.REFERRAL_PROGRAM)
@@ -128,7 +128,7 @@ let f = e => {
                     })]
                 }), (0, i.jsx)(r.Button, {
                     variant: "primary",
-                    disabled: !1 === u || !0 === f,
+                    disabled: !1 === u || !0 === E,
                     text: (() => {
                         switch (g.$.getConfig({
                                 location: "ReferralBanner"

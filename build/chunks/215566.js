@@ -1,12 +1,12 @@
 /** chunk id: 215566 params = (module,exports,require) **/
 "use strict";
-r.d(t, {
+n.d(t, {
     A: () => c
 });
-var n = r(627968),
-    a = r(158954),
-    i = r(397927),
-    l = r(933297);
+var r = n(627968),
+    i = n(158954),
+    a = n(397927),
+    l = n(933297);
 
 function s(e) {
     let {
@@ -18,9 +18,9 @@ function s(e) {
 function o(e) {
     let {
         badge: t
-    } = e, r = t.useCount();
-    return r <= 0 ? null : (0, n.jsx)(i.hVq, {
-        count: r
+    } = e, n = t.useCount();
+    return n <= 0 ? null : (0, r.jsx)(a.hVq, {
+        count: n
     })
 }
 let c = function(e) {
@@ -29,16 +29,16 @@ let c = function(e) {
     } = e;
     switch (t.badgeType) {
         case l.Xi.BETA:
-            return (0, n.jsx)(a.Exy, {
+            return (0, r.jsx)(i.Exy, {
                 type: "beta",
                 variant: "brand"
             });
         case l.Xi.COUNT:
-            return (0, n.jsx)(o, {
+            return (0, r.jsx)(o, {
                 badge: t
             });
         case l.Xi.STRONGLY_DISCOURAGED_CUSTOM:
-            return (0, n.jsx)(s, {
+            return (0, r.jsx)(s, {
                 badge: t
             })
     }

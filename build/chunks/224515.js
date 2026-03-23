@@ -18,15 +18,15 @@ var i = n(627968),
     x = n(295405),
     p = n(166403),
     h = n(653183),
-    T = n(843838),
-    E = n(652215),
-    f = n(417711);
+    f = n(843838),
+    T = n(652215),
+    E = n(417711);
 
 function S() {
     let e = (0, g.j)("UserSettingsPremiumGuildSubscriptions");
     s.useEffect(() => {
         d.h.wait(() => {
-            c.hP(), c.$o(), (0, u.CD)(), (0, m.zS)(null, null, E.tF5.DISCOVERY), (0, u.tO)(!0)
+            c.hP(), c.$o(), (0, u.CD)(), (0, m.zS)(null, null, T.tF5.DISCOVERY), (0, u.tO)(!0)
         })
     }, []);
     let {
@@ -35,21 +35,21 @@ function S() {
     } = (0, r.cf)([p.A], () => ({
         hasFetchedSubscriptions: p.A.hasFetchedSubscriptions(),
         premiumSubscription: p.A.getPremiumTypeSubscription()
-    })), l = (0, _.Y)(), S = (0, r.bG)([x.A], () => x.A.hasFetchedPaymentSources), C = (0, r.bG)([A.A], () => A.A.isFetchingCurrentUserAppliedBoosts);
-    return t && l && S && !C ? (0, i.jsxs)("div", {
-        className: f.kL,
+    })), l = (0, _.Y)(), S = (0, r.bG)([x.A], () => x.A.hasFetchedPaymentSources), b = (0, r.bG)([A.A], () => A.A.isFetchingCurrentUserAppliedBoosts);
+    return t && l && S && !b ? (0, i.jsxs)("div", {
+        className: E.kL,
         children: [(0, i.jsx)("div", {
-            className: f.Tp
+            className: E.Tp
         }), (0, i.jsx)("div", {
-            className: f.Qs,
-            children: e ? (0, i.jsx)(T.A, {
+            className: E.Qs,
+            children: e ? (0, i.jsx)(f.A, {
                 premiumSubscription: n
             }) : (0, i.jsx)(h.A, {
                 premiumSubscription: n
             })
         })]
     }) : (0, i.jsx)("div", {
-        className: a()(f.kL, f.Lq),
+        className: a()(E.kL, E.Lq),
         children: (0, i.jsx)(o.y$y, {})
     })
 }

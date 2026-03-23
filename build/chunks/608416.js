@@ -53,21 +53,21 @@ let A = e => {
         onRest: () => p(e => -1 * e)
     } : {
         scale: 1
-    }), [T, E] = (0, a.useState)(1), f = (0, o.zhh)(null != t ? {
+    }), [f, T] = (0, a.useState)(1), E = (0, o.zhh)(null != t ? {
         from: {
-            blur: T > 0 ? t.startBlurRadius : t.endBlurRadius
+            blur: f > 0 ? t.startBlurRadius : t.endBlurRadius
         },
         to: {
-            blur: T > 0 ? t.endBlurRadius : t.startBlurRadius
+            blur: f > 0 ? t.endBlurRadius : t.startBlurRadius
         },
         config: {
             duration: t.duration * m
         },
-        onRest: () => E(e => -1 * e)
+        onRest: () => T(e => -1 * e)
     } : {
         blur: 0
-    }), S = (0, a.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * m), [m]), [C, b] = (0, a.useState)(0), [N, I] = (0, a.useState)(1), v = (0, o.zhh)({
-        xOffset: C,
+    }), S = (0, a.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * m), [m]), [b, C] = (0, a.useState)(0), [N, v] = (0, a.useState)(1), I = (0, o.zhh)({
+        xOffset: b,
         config: {
             tension: 10,
             friction: 10,
@@ -75,7 +75,7 @@ let A = e => {
         }
     });
     return ((0, d.A)(() => {
-        b(N * (.5 * Math.random() * 5 + 2.5)), I(e => -1 * e)
+        C(N * (.5 * Math.random() * 5 + 2.5)), v(e => -1 * e)
     }, S), u) ? _ : (0, l.jsx)(r.animated.div, {
         style: {
             transform: g.y?.to(e => {
@@ -88,9 +88,9 @@ let A = e => {
                 }
                 return `translateY(${t+n}px)`
             }),
-            translateX: c ? v.xOffset.to(e => `${e}px`) : 0,
+            translateX: c ? I.xOffset.to(e => `${e}px`) : 0,
             scale: h.scale,
-            filter: f.blur?.to(e => `blur(${e}px)`),
+            filter: E.blur?.to(e => `blur(${e}px)`),
             opacity: null != s && s.changeOpacity ? s.containerVisibilityPercentage : 1
         },
         children: _

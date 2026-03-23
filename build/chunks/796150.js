@@ -1,90 +1,86 @@
 /** chunk id: 796150 params = (module,exports,require) **/
 "use strict";
-r.d(t, {
-    default: () => S
+n.d(t, {
+    default: () => E
 });
-var n = r(627968),
-    a = r(64700),
-    i = r(397927),
-    l = r(252452),
-    s = r(507553),
-    o = r(324593),
-    c = r(883662),
-    u = r(961350),
-    d = r(287809),
-    h = r(152056),
-    f = r(780964),
-    _ = r(162396),
-    m = r(960545),
-    p = r(841329),
-    g = r(12901),
-    b = r(921854),
-    y = r(987281),
-    v = r(985018),
-    x = r(249316);
-let E = new Set([f.X.PROFILE_PANEL, f.X.SUBSCRIPTIONS_PANEL, f.X.FAMILY_CENTER_PANEL, f.X.POGGERMODE_PANEL]);
+var r = n(627968),
+    i = n(64700),
+    a = n(397927),
+    l = n(252452),
+    s = n(507553),
+    o = n(324593),
+    c = n(883662),
+    u = n(961350),
+    d = n(287809),
+    h = n(152056),
+    _ = n(780964),
+    f = n(162396),
+    m = n(960545),
+    p = n(841329),
+    b = n(12901),
+    g = n(921854),
+    y = n(985018),
+    v = n(249316);
+let x = new Set([_.X.PROFILE_PANEL, _.X.SUBSCRIPTIONS_PANEL, _.X.FAMILY_CENTER_PANEL, _.X.POGGERMODE_PANEL]);
 
-function S(e) {
+function E(e) {
     let {
         target: t,
-        ...r
-    } = e, i = h.A.useField("query");
-    (0, y.V)();
-    let v = a.useCallback(() => {
-            h.A.setState({
-                query: ""
-            }), o.A.terminate()
-        }, []),
-        [x, S] = a.useState(!1);
-    return (a.useLayoutEffect(() => {
+        ...n
+    } = e, a = h.A.useField("query"), y = i.useCallback(() => {
+        h.A.setState({
+            query: ""
+        }), o.A.terminate()
+    }, []), [v, E] = i.useState(!1);
+    return (i.useLayoutEffect(() => {
         let e = () => {
-            null == d.default.getCurrentUser() && (S(!0), (0, g.default)())
+            null == d.default.getCurrentUser() && (E(!0), (0, b.default)())
         };
         return u.default.addChangeListener(e), () => {
             u.default.removeChangeListener(e), m.A.resetState(), s.A.resetState(), l.A.close()
         }
-    }, []), x) ? null : (0, n.jsx)(c.A, {
-        partialRoot: b.D,
+    }, []), v) ? null : (0, r.jsx)(c.A, {
+        partialRoot: g.D,
         searchBar: A,
-        emptyState: N,
-        sidebarFooter: _.A,
+        emptyState: S,
+        sidebarFooter: f.A,
         onViewChange: e => {
-            E.has(e) || (0, p._)(e)
+            x.has(e) || (0, p._)(e)
         },
         target: t,
-        defaultTarget: f.X.ACCOUNT_PANEL,
-        searchQuery: i,
-        clearSearchQuery: v,
-        ...r
+        defaultTarget: _.X.ACCOUNT_PANEL,
+        searchQuery: a,
+        clearSearchQuery: y,
+        ...n
     })
 }
 
 function A() {
     let e = h.A.useField("query"),
-        t = a.useCallback(e => {
+        t = i.useCallback(e => {
             h.A.setState({
                 query: e
             }), o.A.maybeTrackQueryEntered()
         }, []),
-        r = a.useCallback(() => {
+        n = i.useCallback(() => {
             o.A.isSessionActive() || o.A.initialize()
         }, []),
-        l = a.useCallback(() => {
+        l = i.useCallback(() => {
             0 === h.A.getField("query").trim().length && o.A.terminate()
         }, []),
-        s = a.useCallback(() => {
+        s = i.useCallback(() => {
             h.A.setState({
                 query: ""
             }), o.A.terminate()
         }, []);
-    return a.useEffect(() => () => {
-        o.A.terminate()
-    }, []), (0, n.jsx)("div", {
-        className: x.P,
-        children: (0, n.jsx)(i.IWV, {
+    return i.useEffect(() => () => {
+        h.A.resetState(), o.A.terminate()
+    }, []), (0, r.jsx)("div", {
+        className: v.P,
+        children: (0, r.jsx)(a.IWV, {
             size: "md",
             query: e,
-            onFocus: r,
+            onFocus: n,
             onBlur: l,
             onChange: t,
             onClear: s
@@ -92,17 +88,17 @@ function A() {
     })
 }
 
-function N() {
-    return (0, n.jsxs)("div", {
-        className: x.t,
-        children: [(0, n.jsx)(i.Text, {
+function S() {
+    return (0, r.jsxs)("div", {
+        className: v.t,
+        children: [(0, r.jsx)(a.Text, {
             variant: "text-sm/semibold",
             color: "text-strong",
-            children: v.intl.string(v.t.zihbmv)
-        }), (0, n.jsx)(i.Text, {
+            children: y.intl.string(y.t.zihbmv)
+        }), (0, r.jsx)(a.Text, {
             variant: "text-sm/normal",
             color: "text-subtle",
-            children: v.intl.string(v.t.XclvsB)
+            children: y.intl.string(y.t.XclvsB)
         })]
     })
 }

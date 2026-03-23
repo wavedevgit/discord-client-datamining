@@ -1,6 +1,6 @@
 /** chunk id: 980545 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => T
 });
 var i = n(627968),
     s = n(64700),
@@ -18,14 +18,14 @@ var i = n(627968),
     x = n(652215),
     p = n(985018),
     h = n(608821),
-    T = n(641701);
+    f = n(641701);
 
-function E(e) {
+function T(e) {
     let {
         inOldSettings: t = !1
     } = e, n = (0, o.Mw)((0, c.Ay)()), l = s.useMemo(() => ({
         backgroundImage: "url(https://cdn.discordapp.com/assets/discovery/quests-wumpus-hikes-mountain-transparent-background.png)"
-    }), []), E = s.useCallback(() => {
+    }), []), T = s.useCallback(() => {
         (0, u.default)(), (0, A.navigateToQuestHome)({
             fromContent: _.uF.QUEST_HOME_MOVE_CALLOUT
         }), m.default.track(x.HAw.QUEST_CONTENT_CLICKED, {
@@ -49,7 +49,7 @@ function E(e) {
                     className: h.N1,
                     children: [(0, i.jsx)("img", {
                         alt: "",
-                        src: T,
+                        src: f,
                         className: h.Kk
                     }), (0, i.jsx)(d.Heading, {
                         variant: "heading-lg/bold",
@@ -64,7 +64,7 @@ function E(e) {
             }), (0, i.jsx)(d.Button, {
                 variant: n ? "primary" : "overlay-primary",
                 text: p.intl.string(p.t.GURBQl),
-                onClick: E
+                onClick: T
             })]
         })
     })

@@ -40,9 +40,9 @@ let _ = s.forwardRef(function(e, t) {
         disabled: x = !1,
         hideDivider: p = !1,
         showBorder: h = !1,
-        borderType: T,
-        hasBackground: E = !1,
-        forcedDivider: f = !1,
+        borderType: f,
+        hasBackground: T = !1,
+        forcedDivider: E = !1,
         showPremiumIcon: S = !1
     } = e;
     return (0, i.jsx)("div", {
@@ -50,15 +50,15 @@ let _ = s.forwardRef(function(e, t) {
             [u.r9]: x,
             [u.Ai]: p,
             [u.Ac]: h,
-            [u.Cx]: f
+            [u.Cx]: E
         }),
         ref: t,
         children: (0, i.jsxs)(c.A, {
             className: u.D6,
             backgroundClassName: u.fr,
             isShown: h,
-            type: T,
-            hasBackground: E,
+            type: f,
+            hasBackground: T,
             children: [(0, i.jsxs)(r.zEo, {
                 className: u.DD,
                 id: l,

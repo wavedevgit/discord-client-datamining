@@ -59,9 +59,9 @@ let x = function() {
         onToggleAllActivityRestrictedGuilds: x,
         onToggleActivityRestrictedGuild: p,
         isActivityRestricted: h,
-        numActivityRestrictedGuilds: T,
-        numTotalGuilds: E
-    } = (0, c.M)(), f = (0, s.useId)();
+        numActivityRestrictedGuilds: f,
+        numTotalGuilds: T
+    } = (0, c.M)(), E = (0, s.useId)();
     return (0, i.jsxs)("div", {
         className: g.iE,
         children: [(0, i.jsxs)("div", {
@@ -73,26 +73,26 @@ let x = function() {
                     o.default.track(u.HAw.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
                         interaction: "search_cleared",
                         sort_order: l,
-                        activity_restricted_guild_count: T,
-                        total_guild_count: E
+                        activity_restricted_guild_count: f,
+                        total_guild_count: T
                     }), n("")
                 },
                 onFocus: () => o.default.track(u.HAw.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
                     interaction: "search_focused",
                     sort_order: l,
-                    activity_restricted_guild_count: T,
-                    total_guild_count: E
+                    activity_restricted_guild_count: f,
+                    total_guild_count: T
                 }),
                 onBlur: () => o.default.track(u.HAw.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
                     interaction: "search_blurred",
                     sort_order: l,
-                    activity_restricted_guild_count: T,
-                    total_guild_count: E
+                    activity_restricted_guild_count: f,
+                    total_guild_count: T
                 }),
                 placeholder: _.intl.string(_.t["H+nRYw"]),
                 "aria-label": _.intl.string(_.t["5h0QOP"]),
                 inputProps: {
-                    "aria-controls": f,
+                    "aria-controls": E,
                     "aria-expanded": !0
                 }
             }), e.length > 0 && (0, i.jsxs)("div", {
@@ -121,8 +121,8 @@ let x = function() {
                         o.default.track(u.HAw.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
                             interaction: "sort_order_changed",
                             sort_order: e,
-                            activity_restricted_guild_count: T,
-                            total_guild_count: E
+                            activity_restricted_guild_count: f,
+                            total_guild_count: T
                         }), r(e)
                     },
                     value: l,
@@ -141,7 +141,7 @@ let x = function() {
             })
         }), (0, i.jsxs)("ul", {
             className: g.X1,
-            id: f,
+            id: E,
             "aria-label": _.intl.string(_.t["7hB4kg"]),
             children: [0 === e.length && (0, i.jsx)("div", {
                 className: g.pb,

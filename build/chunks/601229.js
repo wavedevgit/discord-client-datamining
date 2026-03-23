@@ -1,8 +1,8 @@
 /** chunk id: 601229 params = (module,exports,require) **/
 n.d(t, {
-    U6: () => T,
-    kp: () => E,
-    yG: () => f
+    U6: () => f,
+    kp: () => T,
+    yG: () => E
 });
 var i = n(627968);
 n(64700);
@@ -21,11 +21,11 @@ var s = n(311907),
     x = n(788868),
     p = n(985018),
     h = n(207645);
-let T = () => {
+let f = () => {
     (0, u.nf)(u.HP.APP_ICON), (0, g.default)()
 };
 
-function E() {
+function T() {
     return (0, i.jsx)(m.A, {
         subscriptionTier: x.pe.TIER_2,
         defaultTextOverride: p.intl.string(p.t.mr4K7D),
@@ -36,7 +36,7 @@ function E() {
         fullWidth: !0
     })
 }
-let f = () => {
+let E = () => {
     let {
         analyticsLocations: e
     } = (0, o.Ay)(r.A.USER_SETTINGS), t = (0, s.bG)([d.A], () => d.A.isUpsellPreview);
@@ -54,8 +54,8 @@ let f = () => {
                 children: [(0, i.jsx)(l.Button, {
                     variant: t ? "secondary" : "primary",
                     text: p.intl.string(p.t["hb/wE0"]),
-                    onClick: () => T()
-                }), t && (0, i.jsx)(E, {})]
+                    onClick: () => f()
+                }), t && (0, i.jsx)(T, {})]
             })
         })
     })

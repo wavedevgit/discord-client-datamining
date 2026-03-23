@@ -1,6 +1,6 @@
 /** chunk id: 254847 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T,
+    A: () => f,
     Y: () => p
 });
 var i = n(627968),
@@ -60,4 +60,4 @@ let h = s.memo(e => {
     })
 });
 h.displayName = "FamilyCenterActivityGuildRow";
-let T = h
+let f = h

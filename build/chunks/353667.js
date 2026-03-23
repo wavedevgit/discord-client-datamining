@@ -1,6 +1,6 @@
 /** chunk id: 353667 params = (module,exports,require) **/
 n.d(t, {
-    j: () => I
+    j: () => v
 });
 var i = n(627968),
     s = n(64700),
@@ -18,9 +18,9 @@ var i = n(627968),
     x = n(397274),
     p = n(641324),
     h = n(46373),
-    T = n(872175);
+    f = n(872175);
 
-function E(e) {
+function T(e) {
     let {
         notice: t,
         children: n
@@ -44,7 +44,7 @@ function E(e) {
             element: e
         } = t;
         return (0, i.jsx)(d.FQk, {
-            className: T.lm,
+            className: f.lm,
             children: (0, i.jsx)(e, {})
         })
     }, [t, l]);
@@ -56,13 +56,13 @@ function E(e) {
     })
 }
 
-function f(e) {
+function E(e) {
     let {
         decoration: t
     } = e, n = t.component;
     return (0, i.jsx)("div", {
-        className: a()(T.oK, {
-            [T.qf]: t.sticky
+        className: a()(f.oK, {
+            [f.qf]: t.sticky
         }),
         "data-settings-panel-sticky-decoration": t.sticky || void 0,
         children: (0, i.jsx)(n, {})
@@ -75,15 +75,15 @@ function S(e) {
         notice: n,
         children: l
     } = e, a = s.useRef(null);
-    return (0, i.jsx)(E, {
+    return (0, i.jsx)(T, {
         notice: n,
         children: (0, i.jsx)(d.GtU, {
-            className: T.XG,
+            className: f.XG,
             ref: e => {
                 x.A.setPanelScrollerRef(e)
             },
             children: (0, i.jsx)("div", {
-                className: T.nd,
+                className: f.nd,
                 ref: a,
                 children: (0, i.jsx)(d.xpW, {
                     containerRef: a,
@@ -94,26 +94,26 @@ function S(e) {
     })
 }
 
-function C(e) {
+function b(e) {
     let {
         layout: t,
         decoration: n
     } = e;
     return (0, i.jsxs)("div", {
-        className: T.LZ,
-        children: [null != n && (0, i.jsx)(f, {
+        className: f.LZ,
+        children: [null != n && (0, i.jsx)(E, {
             decoration: n
         }), t.map((e, n) => (0, i.jsxs)(s.Fragment, {
             children: [(0, i.jsx)(p.A, {
                 node: e
             }), n !== t.length - 1 && (0, i.jsx)(h.A, {
-                className: T.yF
+                className: f.yF
             })]
         }, e.key))]
     })
 }
 
-function b(e) {
+function C(e) {
     let {
         panelKey: t,
         layout: n,
@@ -138,7 +138,7 @@ function b(e) {
         panelKey: t,
         notice: l,
         children: [(0, i.jsx)(d.VQ0, {
-            className: T.$H,
+            className: f.$H,
             selectedItem: r,
             onItemSelect: e => {
                 A.A.navigate(e, {
@@ -163,7 +163,7 @@ function b(e) {
             })
         }), (0, i.jsx)(d.VQ0.Panel, {
             id: r,
-            children: null != o.StronglyDiscouragedCustomComponent ? (0, i.jsx)(o.StronglyDiscouragedCustomComponent, {}) : (0, i.jsx)(C, {
+            children: null != o.StronglyDiscouragedCustomComponent ? (0, i.jsx)(o.StronglyDiscouragedCustomComponent, {}) : (0, i.jsx)(b, {
                 layout: o.layout,
                 decoration: a
             })
@@ -181,21 +181,21 @@ function N(e) {
     return (0, i.jsx)(S, {
         panelKey: t,
         notice: n,
-        children: (0, i.jsx)(C, {
+        children: (0, i.jsx)(b, {
             layout: l,
             decoration: s
         })
     })
 }
 
-function I(e) {
+function v(e) {
     let {
         node: t
     } = e, {
         layout: n
     } = t;
     if ((0, r.bG)([u.A], () => u.A.hidePersonalInformation) && t.hideInStreamerMode) return (0, i.jsx)(c.A, {});
-    if ((0, _.zY)(n)) return (0, i.jsx)(b, {
+    if ((0, _.zY)(n)) return (0, i.jsx)(C, {
         panelKey: t.key,
         notice: t.notice,
         decoration: t.decoration,

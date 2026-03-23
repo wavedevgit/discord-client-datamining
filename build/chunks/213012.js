@@ -1,5 +1,5 @@
 /** chunk id: 213012 params = (module,exports,require) **/
-i.d(e, {
+i.d(t, {
     I: () => s
 });
 var n = i(562465),
@@ -9,15 +9,15 @@ let s = () => n.Bo.get({
     url: r.Rsh.GUILD_AFFINITIES,
     oldFormErrors: !0,
     rejectWithError: !1
-}).then(t => {
+}).then(e => {
     let {
         body: {
-            guild_affinities: e
+            guild_affinities: t
         }
-    } = t;
+    } = e;
     l.h.dispatch({
         type: "LOAD_GUILD_AFFINITIES_SUCCESS",
-        guildAffinities: e
+        guildAffinities: t
     })
 }, () => {
     l.h.dispatch({

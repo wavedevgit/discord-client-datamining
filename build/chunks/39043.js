@@ -22,15 +22,15 @@ let _ = s.memo(function(e) {
         useTitle: n,
         layout: _,
         useCollapsedSubtitle: g
-    } = t, [A, x] = s.useState(!0), [p, h] = s.useState(() => m(t)), T = s.useRef(p), E = s.useRef(m(t) ? "navigation" : null);
+    } = t, [A, x] = s.useState(!0), [p, h] = s.useState(() => m(t)), f = s.useRef(p), T = s.useRef(m(t) ? "navigation" : null);
     s.useEffect(() => r.A.subscribe(e => e.requestAccordionOpenKey, e => {
-        e === t.key && (T.current ? o.A.notifyAccordionExpanded(t.key) : (E.current = "navigation", x(!1), h(!0)))
+        e === t.key && (f.current ? o.A.notifyAccordionExpanded(t.key) : (T.current = "navigation", x(!1), h(!0)))
     }, {
         equalityFn: (e, t) => e === t,
         fireImmediately: !0
     }), [t.key, p]);
-    let f = s.useCallback(e => {
-            if (null != e.target && p !== T.current && (T.current = p, T.current)) switch (E.current) {
+    let E = s.useCallback(e => {
+            if (null != e.target && p !== f.current && (f.current = p, f.current)) switch (T.current) {
                 case "navigation":
                     x(!0), o.A.notifyAccordionExpanded(t.key);
                     break;
@@ -41,18 +41,18 @@ let _ = s.memo(function(e) {
                     })
             }
         }, [p, t.key]),
-        S = s.useMemo(() => (0, l.debounce)(f, 50), [f]),
-        C = (0, a.w)(S),
-        b = n?.(p),
+        S = s.useMemo(() => (0, l.debounce)(E, 50), [E]),
+        b = (0, a.w)(S),
+        C = n?.(p),
         N = g?.(),
-        I = (0, c.q)(t);
+        v = (0, c.q)(t);
     return (0, i.jsx)(u.f, {
-        ref: C,
-        title: b,
+        ref: b,
+        title: C,
         collapsedSubtitle: N,
         isExpanded: p,
         onExpandedChange: e => {
-            E.current = "user", I(), h(e)
+            T.current = "user", v(), h(e)
         },
         animate: A,
         children: _.map(e => (0, i.jsx)(d.A, {

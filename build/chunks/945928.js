@@ -1,6 +1,6 @@
 /** chunk id: 945928 params = (module,exports,require) **/
 n.d(t, {
-    Q: () => C
+    Q: () => b
 });
 var i = n(64700),
     s = n(311907),
@@ -18,11 +18,11 @@ var i = n(64700),
     x = n(338145),
     p = n(299752),
     h = n(180491),
-    T = n(903427),
-    E = n(509381),
-    f = n(985018);
+    f = n(903427),
+    T = n(509381),
+    E = n(985018);
 let S = (0, r.Qx)(u.X.VOICE_INPUT_PROFILE_SETTING, {
-        useTitle: () => f.intl.string(f.t.LM3U3k),
+        useTitle: () => E.intl.string(E.t.LM3U3k),
         usePredicate: function() {
             let {
                 enabledInputProfiles: e
@@ -31,9 +31,9 @@ let S = (0, r.Qx)(u.X.VOICE_INPUT_PROFILE_SETTING, {
             });
             return e.length > 0
         },
-        useSearchTerms: () => [f.intl.string(f.t.nuFtHH), f.intl.string(f.t.VZPR0R), f.intl.string(f.t.cjPbpT)],
+        useSearchTerms: () => [E.intl.string(E.t.nuFtHH), E.intl.string(E.t.VZPR0R), E.intl.string(E.t.cjPbpT)],
         useValue: function() {
-            return (0, s.bG)([c.Ay], () => c.Ay.getActiveInputProfile() ?? E.m.CUSTOM)
+            return (0, s.bG)([c.Ay], () => c.Ay.getActiveInputProfile() ?? T.m.CUSTOM)
         },
         setValue: function(e) {
             let t = [a.A.USER_SETTINGS_VOICE_AND_VIDEO];
@@ -48,17 +48,17 @@ let S = (0, r.Qx)(u.X.VOICE_INPUT_PROFILE_SETTING, {
                 location: "InputProfileCategory"
             });
             return [{
-                value: E.m.VOICE_ISOLATION,
-                name: f.intl.string(f.t.cjPbpT),
-                desc: f.intl.string(f.t.CzhvnE)
+                value: T.m.VOICE_ISOLATION,
+                name: E.intl.string(E.t.cjPbpT),
+                desc: E.intl.string(E.t.CzhvnE)
             }, {
-                value: E.m.STUDIO,
-                name: f.intl.string(f.t.VZPR0R),
-                desc: f.intl.string(f.t.ZaJksS)
+                value: T.m.STUDIO,
+                name: E.intl.string(E.t.VZPR0R),
+                desc: E.intl.string(E.t.ZaJksS)
             }, {
-                value: E.m.CUSTOM,
-                name: f.intl.string(f.t["N/PQjv"]),
-                desc: f.intl.string(f.t.SnBmuY)
+                value: T.m.CUSTOM,
+                name: E.intl.string(E.t["N/PQjv"]),
+                desc: E.intl.string(E.t.SnBmuY)
             }].filter(t => {
                 let {
                     value: n
@@ -67,7 +67,7 @@ let S = (0, r.Qx)(u.X.VOICE_INPUT_PROFILE_SETTING, {
             })
         }
     }),
-    C = (0, r.zZ)(u.X.VOICE_INPUT_PROFILE_CATEGORY, {
+    b = (0, r.zZ)(u.X.VOICE_INPUT_PROFILE_CATEGORY, {
         useInlineNotice: function() {
             let e = (0, s.bG)([d.A, c.Ay], () => {
                 let e = c.Ay.getInputDeviceId();
@@ -77,9 +77,9 @@ let S = (0, r.Qx)(u.X.VOICE_INPUT_PROFILE_SETTING, {
                 if (e) return {
                     type: o.lT.INLINE_NOTICE,
                     noticeType: "info",
-                    useText: () => f.intl.string(f.t["/Whuzi"])
+                    useText: () => E.intl.string(E.t["/Whuzi"])
                 }
             }, [e])
         },
-        buildLayout: () => [S, A.O, x.w, g.h, T.K, p.C, h.m, _.U]
+        buildLayout: () => [S, A.O, x.w, g.h, f.K, p.C, h.m, _.U]
     })

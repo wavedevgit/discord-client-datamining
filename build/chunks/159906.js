@@ -33,37 +33,37 @@ function p(e) {
             analyticsLocation: r.A.PREMIUM_SUBSCRIPTION_FINE_PRINT_CONTENT
         });
     if (null == h) return null;
-    let T = s ? x.r : x.a,
-        E = h.invoiceItems.find(e => {
+    let f = s ? x.r : x.a,
+        T = h.invoiceItems.find(e => {
             let {
                 subscriptionPlanId: t
             } = e;
             return (0, c.xq)(t)
         });
-    if (null == E) return null;
-    let f = E.subscriptionPlanId,
-        S = d.A.get(f);
+    if (null == T) return null;
+    let E = T.subscriptionPlanId,
+        S = d.A.get(E);
     l()(null != S, "Missing plan");
-    let C = (0, u.$g)(h.total, h.currency);
+    let b = (0, u.$g)(h.total, h.currency);
     return S.interval === _.WT.YEAR ? t = A.intl.format(A.t["jPz/39"], {
-        price: C,
+        price: b,
         termsUrl: g.X7G.TERMS,
         paidURL: g.X7G.PAID_TERMS,
         privacyUrl: g.X7G.PRIVACY
     }) : S.interval === _.WT.MONTH && (t = 1 === S.intervalCount ? A.intl.format(A.t.m27GpI, {
-        price: C,
+        price: b,
         termsUrl: g.X7G.TERMS,
         paidURL: g.X7G.PAID_TERMS,
         privacyUrl: g.X7G.PRIVACY
     }) : A.intl.format(A.t["9xf5Vx"], {
-        price: C,
+        price: b,
         termsUrl: g.X7G.TERMS,
         paidURL: g.X7G.PAID_TERMS,
         privacyUrl: g.X7G.PRIVACY,
         intervalCount: S.intervalCount
     })), (0, i.jsx)(a.Text, {
         color: "text-muted",
-        className: T,
+        className: f,
         variant: "text-xs/normal",
         children: t
     })

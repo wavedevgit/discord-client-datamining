@@ -50,20 +50,20 @@ let p = e => {
             percentage: u,
             initialPercentage: x,
             progressCircleVariation: h = 0,
-            avatarDecorationLegacyAssetId: T,
-            avatarDecorationSkuId: E,
-            avatarDecoAssetDescription: f,
+            avatarDecorationLegacyAssetId: f,
+            avatarDecorationSkuId: T,
+            avatarDecoAssetDescription: E,
             ellipseOpacity: S,
-            customAnimationClassName: C,
-            circleColor: b,
+            customAnimationClassName: b,
+            circleColor: C,
             circleStroke: N
-        } = e, I = (0, o.bG)([c.A], () => c.A.useReducedMotion), v = t && !I;
+        } = e, v = (0, o.bG)([c.A], () => c.A.useReducedMotion), I = t && !v;
         return (0, s.jsx)("div", {
             className: r()(A.G3, n),
             children: (0, s.jsx)(g.A, {
                 animationClassName: r()(A._0, {
-                    [A.uJ]: v,
-                    [C ?? ""]: v
+                    [A.uJ]: I,
+                    [b ?? ""]: I
                 }),
                 progressCircleStroke: N,
                 progressCircleStrokeSize: a,
@@ -74,20 +74,20 @@ let p = e => {
                     switch (h) {
                         case 0:
                             return (0, s.jsx)(m.A, {
-                                className: v ? A.Ow : void 0,
+                                className: I ? A.Ow : void 0,
                                 backgroundColor: r()(A.vH, l),
                                 backgroundCircleSize: d
                             });
                         case 1:
                             return (0, s.jsx)(_.A, {
-                                circleColor: b,
+                                circleColor: C,
                                 ellipseOpacity: S
                             });
                         case 2:
-                            if (null != E) return (0, s.jsx)(p, {
-                                avatarDecorationLegacyAssetId: T,
-                                avatarDecorationSkuId: E,
-                                avatarDecoAssetDescription: f
+                            if (null != T) return (0, s.jsx)(p, {
+                                avatarDecorationLegacyAssetId: f,
+                                avatarDecorationSkuId: T,
+                                avatarDecoAssetDescription: E
                             });
                             return null;
                         default:

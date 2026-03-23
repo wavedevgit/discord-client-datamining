@@ -24,12 +24,12 @@ let g = () => {
         nameUnformatted: g,
         tenureReqNumMonths: A,
         hasWideArt: x
-    } = e, p = m.intl.string(g), h = (0, o.T)(s, A), T = {
+    } = e, p = m.intl.string(g), h = (0, o.T)(s, A), f = {
         "--custom-badge-glow-color": (0, r.KU)(e.glowColor, .5)
     };
     return (0, i.jsxs)("div", {
         className: _.kL,
-        style: T,
+        style: f,
         children: [(0, i.jsx)("div", {}), " ", (0, i.jsx)("img", {
             src: n.standard,
             alt: p,

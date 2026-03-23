@@ -29,7 +29,7 @@ function b(e) {
         rowIndex: m,
         impressionRef: b,
         sourceQuestContent: j
-    } = e, [A, C] = i.useState(!1), [y, T] = i.useState([]), S = (0, o.aC)(t), E = i.useMemo(() => (0, u.vv)(t), [t]), N = (0, d.u0)(), I = i.useCallback(() => {
+    } = e, [A, C] = i.useState(!1), [T, E] = i.useState([]), S = (0, o.aC)(t), y = i.useMemo(() => (0, u.vv)(t), [t]), N = (0, d.u0)(), I = i.useCallback(() => {
         C(!0), N({
             questId: t.id,
             event: f.HAw.QUEST_HOVER,
@@ -39,8 +39,8 @@ function b(e) {
                 content_position: r
             },
             sourceQuestContent: j
-        }), E && (0, h.l9)()
-    }, [N, t.id, s, E, j, r]), k = i.useCallback(() => {
+        }), y && (0, h.l9)()
+    }, [N, t.id, s, y, j, r]), O = i.useCallback(() => {
         C(!1), N({
             questId: t.id,
             event: f.HAw.QUEST_HOVER_OFF,
@@ -51,8 +51,8 @@ function b(e) {
             },
             sourceQuestContent: j
         })
-    }, [N, t.id, s, j, r]), O = i.useContext(p.X), {
-        visibilityElementRef: R,
+    }, [N, t.id, s, j, r]), R = i.useContext(p.X), {
+        visibilityElementRef: k,
         almostVisibleInViewport: w
     } = function(e) {
         let [t, n] = i.useState(!1), a = i.useCallback(e => {
@@ -66,21 +66,21 @@ function b(e) {
             }, !0),
             almostVisibleInViewport: t
         }
-    }(O?.current?.getScrollerNode() ?? null);
+    }(R?.current?.getScrollerNode() ?? null);
     return (0, a.jsxs)("div", {
         id: `quest-tile-${t.id}`,
         ref: e => {
-            b.current = e, R.current = e
+            b.current = e, k.current = e
         },
         className: l()(v.k, n),
         onMouseEnter: I,
-        onMouseLeave: k,
+        onMouseLeave: O,
         onFocus: I,
-        onBlur: k,
+        onBlur: O,
         children: [(0, a.jsx)(g.A, {
             quest: t,
             isHovering: A,
-            errorHints: y,
+            errorHints: T,
             warningHints: S,
             isVisibleInViewport: w,
             sourceQuestContent: j
@@ -90,7 +90,7 @@ function b(e) {
             isHovering: A,
             contentPosition: r,
             rowIndex: m,
-            onReceiveErrorHints: T,
+            onReceiveErrorHints: E,
             isVisibleInViewport: w,
             sourceQuestContent: j
         })]

@@ -25,9 +25,9 @@ let d = "url(#gradient)",
             }, 200);
             return () => clearTimeout(e)
         }, [t]);
-        let T = (0, a.Ay)(),
-            E = (0, l.qB)(T),
-            f = (e => {
+        let f = (0, a.Ay)(),
+            T = (0, l.qB)(f),
+            E = (e => {
                 switch (e) {
                     case r.BN.NITRO_GEM:
                     case r.BN.AVATAR_DECO:
@@ -47,8 +47,8 @@ let d = "url(#gradient)",
                     default:
                         return
                 }
-            })(_, E),
-            C = g ?? ((e, t) => {
+            })(_, T),
+            b = g ?? ((e, t) => {
                 switch (t) {
                     case r.BN.NITRO_GEM:
                     case r.BN.AVATAR_DECO:
@@ -58,7 +58,7 @@ let d = "url(#gradient)",
                     default:
                         return
                 }
-            })(E, _);
+            })(T, _);
         return (0, i.jsxs)("div", {
             className: o.Ap,
             children: [(0, i.jsxs)("svg", {
@@ -71,10 +71,10 @@ let d = "url(#gradient)",
                     r: `${A}`,
                     cx: "50%",
                     cy: "50%",
-                    stroke: f,
+                    stroke: E,
                     strokeOpacity: S
                 }), (0, i.jsx)("circle", {
-                    stroke: C,
+                    stroke: b,
                     strokeWidth: m,
                     strokeLinecap: "round",
                     strokeDasharray: `${x} ${x}`,

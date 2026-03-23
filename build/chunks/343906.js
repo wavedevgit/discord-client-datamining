@@ -1,6 +1,6 @@
 /** chunk id: 343906 params = (module,exports,require) **/
 n.d(t, {
-    A: () => F,
+    A: () => H,
     O: () => V
 });
 var i = n(627968),
@@ -19,15 +19,15 @@ var i = n(627968),
     x = n(294433),
     p = n(10005),
     h = n(400641),
-    T = n(438732),
-    E = n(500470),
-    f = n(153739),
+    f = n(438732),
+    T = n(500470),
+    E = n(153739),
     S = n(834981),
-    C = n(607822),
-    b = n(254847),
+    b = n(607822),
+    C = n(254847),
     N = n(436805),
-    I = n(773349),
-    v = n(283900),
+    v = n(773349),
+    I = n(283900),
     j = n(475833),
     y = n(469696),
     O = n(400553),
@@ -67,29 +67,29 @@ function U(e) {
         displayType: t
     } = e, n = s.useCallback(() => {
         (0, u.showToast)((0, u.createToast)(D.intl.string(P.default.Wu8BK2), u.ToastType.FAILURE))
-    }, []), l = (0, T.A)(), r = (0, h._w)(t), d = (0, h.Gn)(t), c = (0, h.Ju)(t), {
+    }, []), l = (0, f.A)(), r = (0, h._w)(t), d = (0, h.Gn)(t), c = (0, h.Ju)(t), {
         loadMore: m,
         isMoreLoading: x
     } = (0, p.A)({
         onError: n
-    }), E = (0, A.kN)().get(t), [f, S] = s.useState(R.PH), C = s.useCallback(() => {
+    }), T = (0, A.kN)().get(t), [E, S] = s.useState(R.PH), b = s.useCallback(() => {
         S(e => e + R.PH), m(t)
     }, [t, m]);
-    o()(E, `No text for action type: ${t}`);
-    let v = t === R.NV.PURCHASES && null != c ? E.sectionHeader(c) : E.sectionHeader(d),
+    o()(T, `No text for action type: ${t}`);
+    let I = t === R.NV.PURCHASES && null != c ? T.sectionHeader(c) : T.sectionHeader(d),
         j = s.useCallback(e => {
             let {
                 row: t
             } = e, n = r[t];
             if ((0, A.aq)(n)) {
                 let e = _.default.extractTimestamp(n.event_id),
-                    t = (0, A.i6)(e, E.timestampFormatter);
-                return (0, i.jsx)(I.A, {
+                    t = (0, A.i6)(e, T.timestampFormatter);
+                return (0, i.jsx)(v.A, {
                     userId: n.entity_id,
                     subText: t
                 }, n.event_id)
             }
-            if ((0, A.Is)(n)) return (0, i.jsx)(b.A, {
+            if ((0, A.Is)(n)) return (0, i.jsx)(C.A, {
                 guildId: n.entity_id
             }, n.event_id);
             if ((0, A.u7)(n)) {
@@ -102,21 +102,21 @@ function U(e) {
                 }, n.event_id)
             }
             return null
-        }, [r, E.timestampFormatter]),
+        }, [r, T.timestampFormatter]),
         y = s.useCallback(() => (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(u.Text, {
                 className: M.bV,
                 variant: "text-md/semibold",
-                children: v
-            }), void 0 !== E.sectionDescription ? (0, i.jsx)(u.Text, {
+                children: I
+            }), void 0 !== T.sectionDescription ? (0, i.jsx)(u.Text, {
                 className: M.yV,
                 variant: "text-md/medium",
                 color: "text-muted",
-                children: E.sectionDescription(l ?? !1)
+                children: T.sectionDescription(l ?? !1)
             }) : null]
-        }), [v, E, l]);
+        }), [I, T, l]);
     if (0 === r.length) return null;
-    let O = r.slice(0, f);
+    let O = r.slice(0, E);
     return (0, i.jsxs)("div", {
         className: M.A2,
         children: [y(), (0, i.jsx)("div", {
@@ -131,7 +131,7 @@ function U(e) {
             className: a()(M.FQ, {
                 [M.r9]: x
             }),
-            onClick: C,
+            onClick: b,
             role: "button",
             "aria-disabled": x,
             children: x ? (0, i.jsx)(u.y$y, {
@@ -148,7 +148,7 @@ function U(e) {
     })
 }
 let w = () => {
-        let e = (0, T.A)(),
+        let e = (0, f.A)(),
             t = (0, S.vx)(),
             n = (0, x.y)(D.intl.formatToPlainString(P.default["7hqFl9"], {
                 activeLinks: t.length
@@ -175,10 +175,10 @@ let w = () => {
             subText: n,
             avatarSize: s = u._3J.SIZE_40,
             hideUserTag: l = !1
-        } = e, a = (0, f.F7)(t);
+        } = e, a = (0, E.F7)(t);
         return void 0 === a ? null : (0, i.jsxs)("div", {
             className: M.iO,
-            children: [(0, i.jsx)(v.H, {
+            children: [(0, i.jsx)(I.H, {
                 user: a,
                 avatarSize: s
             }), (0, i.jsxs)("div", {
@@ -227,9 +227,9 @@ let B = () => {
             "data-migration-pending": !0
         })
     },
-    H = () => {
-        let e = (0, E.k)(),
-            t = (0, T.A)(),
+    F = () => {
+        let e = (0, T.k)(),
+            t = (0, f.A)(),
             n = (0, S.vx)(),
             s = (0, A.cV)(!!t),
             l = (0, S.v4)(s);
@@ -238,7 +238,7 @@ let B = () => {
             subText: l
         })
     },
-    F = () => {
+    H = () => {
         let e = (0, A.Mo)(),
             t = (0, h.lI)(),
             n = (0, A.jp)(),
@@ -252,7 +252,7 @@ let B = () => {
                 className: G.a,
                 children: [(0, i.jsx)("div", {
                     className: M.wx,
-                    children: (0, i.jsx)(H, {})
+                    children: (0, i.jsx)(F, {})
                 }), (0, i.jsxs)(u.BJc, {
                     gap: 32,
                     padding: 32,
@@ -261,7 +261,7 @@ let B = () => {
                         className: M.O2,
                         children: e.map(e => {
                             let [t, n] = e;
-                            return (0, i.jsx)(C.A, {
+                            return (0, i.jsx)(b.A, {
                                 displayType: t,
                                 header: n.tooltipHeader()
                             }, `counter-${t}`)

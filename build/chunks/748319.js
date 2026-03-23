@@ -1,7 +1,7 @@
 /** chunk id: 748319 params = (module,exports,require) **/
 n.d(t, {
     A: () => eG,
-    g: () => eU
+    g: () => eL
 }), n(321073);
 var a = n(627968),
     i = n(64700),
@@ -24,33 +24,33 @@ var a = n(627968),
     j = n(755039),
     A = n(29160),
     C = n(793574),
-    y = n(688810),
-    T = n(325445),
+    T = n(688810),
+    E = n(325445),
     S = n(954921),
-    E = n(521502),
+    y = n(521502),
     N = n(380610),
     I = n(313961),
-    k = n(18235),
-    O = n(183184),
-    R = n(384059),
+    O = n(18235),
+    R = n(183184),
+    k = n(384059),
     w = n(480890),
     D = n(302223),
     M = n(609425),
     P = n(922301),
-    U = n(750112),
-    L = n(643501),
+    L = n(750112),
+    U = n(643501),
     B = n(977700),
     G = n(74848),
     F = n(449630),
     V = n(111864),
-    W = n(967054),
-    H = n(226540),
+    H = n(967054),
+    W = n(226540),
     K = n(227),
     z = n(201805),
     $ = n(655116),
     q = n(454719),
-    Q = n(342296),
-    Y = n(780964),
+    Y = n(342296),
+    Q = n(780964),
     J = n(77735),
     X = n(840065),
     Z = n(167579),
@@ -78,15 +78,15 @@ var a = n(627968),
     ej = n(994314),
     eA = n(485599),
     eC = n(809991),
-    ey = n(226513),
-    eT = n(383952),
+    eT = n(226513),
+    eE = n(383952),
     eS = n(245750),
-    eE = n(652215),
+    ey = n(652215),
     eN = n(731854),
     eI = n(985018),
-    ek = n(146664);
-let eO = eb.Ay.getEnableHardwareAcceleration() ? h.JsQ : h.euF,
-    eR = 2.5 * eg.A.Millis.SECOND,
+    eO = n(146664);
+let eR = eb.Ay.getEnableHardwareAcceleration() ? h.JsQ : h.euF,
+    ek = 2.5 * eg.A.Millis.SECOND,
     ew = 2 * eg.A.Millis.MINUTE,
     eD = 2 * eg.A.Millis.MINUTE,
     eM = 5 * eg.A.Millis.SECOND;
@@ -110,8 +110,8 @@ function eP(e) {
         size: (0, S.Te)(h._3J.SIZE_32)
     }), A = (0, M.A)(), {
         updateOpenPopoutRef: C,
-        highlightBadge: y,
-        setHighlightBadge: T
+        highlightBadge: T,
+        setHighlightBadge: E
     } = function() {
         let e = i.useRef(null),
             t = i.useCallback(t => {
@@ -128,22 +128,22 @@ function eP(e) {
                 } = t;
                 null != n && a(n), e.current?.()
             };
-            return ep._.subscribe(eE.jej.SHOW_ACCOUNT_PROFILE_POPOUT, t), () => {
-                ep._.unsubscribe(eE.jej.SHOW_ACCOUNT_PROFILE_POPOUT, t)
+            return ep._.subscribe(ey.jej.SHOW_ACCOUNT_PROFILE_POPOUT, t), () => {
+                ep._.unsubscribe(ey.jej.SHOW_ACCOUNT_PROFILE_POPOUT, t)
             }
         }), {
             updateOpenPopoutRef: t,
             highlightBadge: s ? n : void 0,
             setHighlightBadge: a
         }
-    }(), E = (0, W.K)(x);
+    }(), y = (0, H.K)(x);
     return null == o ? null : (0, a.jsx)(p.A, {
-        object: eE.ZSU.AVATAR,
-        children: (0, a.jsx)(Q.A, {
+        object: ey.ZSU.AVATAR,
+        children: (0, a.jsx)(Y.A, {
             user: o,
             targetElementRef: b,
             clickTrap: !0,
-            preload: () => (0, q.A)(o.id, o.getAvatarURL(void 0, Q.S), {
+            preload: () => (0, q.A)(o.id, o.getAvatarURL(void 0, Y.S), {
                 type: "account_popout",
                 withMutualGuilds: !1,
                 withMutualFriends: !1,
@@ -156,12 +156,12 @@ function eP(e) {
                 } = e;
                 return (0, a.jsx)(F.A, {
                     currentUser: o,
-                    highlightBadge: y,
+                    highlightBadge: T,
                     onClose: () => {
                         t?.()
                     },
                     setPopoutRef: n,
-                    className: ek.dI
+                    className: eO.dI
                 })
             },
             position: "top",
@@ -171,7 +171,7 @@ function eP(e) {
             fixed: !0,
             ignoreModalClicks: !0,
             onRequestClose: () => {
-                u(), T(void 0)
+                u(), E(void 0)
             },
             children: e => {
                 C(e);
@@ -182,14 +182,14 @@ function eP(e) {
                 } = e;
                 return (0, a.jsxs)("div", {
                     ref: b,
-                    style: E,
+                    style: y,
                     onMouseEnter: t,
                     onMouseDown: i,
                     onClick: t => {
                         e.onClick?.(t), c?.(t)
                     },
-                    className: l()(ek.Q9, {
-                        [ek.ZQ]: null != x
+                    className: l()(eO.Q9, {
+                        [eO.ZQ]: null != x
                     }),
                     children: [(0, a.jsx)(h.DUT, {
                         ...u,
@@ -200,19 +200,19 @@ function eP(e) {
                         focusProps: {
                             ringTarget: b
                         },
-                        className: ek.$n,
+                        className: eO.$n,
                         "data-jump-section": _
-                    }), (0, a.jsx)(eO, {
+                    }), (0, a.jsx)(eR, {
                         size: h._3J.SIZE_32,
                         src: o.getAvatarURL(void 0, 28, !1),
                         avatarDecoration: j,
-                        status: r ? eE.clD.STREAMING : d,
+                        status: r ? ey.clD.STREAMING : d,
                         isSpeaking: n,
                         voiceDb: s,
-                        className: ek.my,
+                        className: eO.my,
                         "aria-hidden": !0
                     }), (0, a.jsx)("div", {
-                        className: ek.oM,
+                        className: eO.oM,
                         children: m(A)
                     })]
                 })
@@ -220,7 +220,7 @@ function eP(e) {
         })
     })
 }
-class eU extends i.PureComponent {
+class eL extends i.PureComponent {
     speakingWhileMutedTooltipTimeout = new m.Ep;
     speakingWhilePTTTooltipTimeout = new m.Ep;
     speakingWhilePTTInactiveBackoff = new d.A(eD, null, !1);
@@ -256,17 +256,17 @@ class eU extends i.PureComponent {
             suppress: t,
             selfMute: n
         } = this.props;
-        (0, O.A)(e, t, eE.JJy.ACCOUNT_PANEL), (0, R.X)(C.A.ACCOUNT, R.O.MIC, n)
+        (0, R.A)(e, t, ey.JJy.ACCOUNT_PANEL), (0, k.X)(C.A.ACCOUNT, k.O.MIC, n)
     };
     handleToggleSelfDeaf = () => {
         let {
             serverDeaf: e,
             selfDeaf: t
         } = this.props;
-        (0, k.A)(e, eE.JJy.ACCOUNT_PANEL), (0, R.X)(C.A.ACCOUNT, R.O.DEAFEN, !t)
+        (0, O.A)(e, ey.JJy.ACCOUNT_PANEL), (0, k.X)(C.A.ACCOUNT, k.O.DEAFEN, !t)
     };
     handleOpenAccountSettings = () => {
-        this.dismissTooltips(), ed.A.isConnected() ? (0, X.openUserSettings)(Y.X.VOICE_AND_VIDEO_PANEL) : (0, X.openUserSettings)()
+        this.dismissTooltips(), ed.A.isConnected() ? (0, X.openUserSettings)(Q.X.VOICE_AND_VIDEO_PANEL) : (0, X.openUserSettings)()
     };
     handleOpenSettingsContextMenu = e => {
         let {
@@ -295,7 +295,7 @@ class eU extends i.PureComponent {
                 } = (0, J.d)({
                     location: "Account"
                 });
-                return (0, a.jsx)(y.f5, {
+                return (0, a.jsx)(T.f5, {
                     value: t,
                     children: (0, a.jsx)(e, {
                         onClose: x.Z_,
@@ -314,7 +314,7 @@ class eU extends i.PureComponent {
             let {
                 default: e
             } = await n.e("78827").then(n.bind(n, 385318));
-            return () => (0, a.jsx)(y.f5, {
+            return () => (0, a.jsx)(T.f5, {
                 value: t,
                 children: (0, a.jsx)(e, {
                     onClose: x.Z_,
@@ -386,7 +386,7 @@ class eU extends i.PureComponent {
         a ? r || !e || t || n || i || !o || null != l || s || this.setState({
             shouldShowSpeakingWhileMutedTooltip: !0
         }, () => {
-            this.lastSpeakingWhileMutedNotificationTime = performance.now(), this.speakingWhileMutedTooltipTimeout.start(eR, () => this.setState({
+            this.lastSpeakingWhileMutedNotificationTime = performance.now(), this.speakingWhileMutedTooltipTimeout.start(ek, () => this.setState({
                 shouldShowSpeakingWhileMutedTooltip: !1
             }))
         }) : (this.setState({
@@ -408,7 +408,7 @@ class eU extends i.PureComponent {
         a ? r || e || t || n || i || !o || null != l || s || this.setState({
             shouldShowSpeakingWhilePTTTooltip: !0
         }, () => {
-            this.lastSpeakingWhilePTTNotificationTime = performance.now(), this.speakingWhilePTTInactiveBackoff.fail(), this.speakingWhilePTTTooltipTimeout.start(eR, () => this.setState({
+            this.lastSpeakingWhilePTTNotificationTime = performance.now(), this.speakingWhilePTTInactiveBackoff.fail(), this.speakingWhilePTTTooltipTimeout.start(ek, () => this.setState({
                 shouldShowSpeakingWhilePTTTooltip: !1
             }))
         }) : (this.setState({
@@ -442,7 +442,7 @@ class eU extends i.PureComponent {
                 activities: t,
                 applicationStream: n,
                 voiceChannel: r,
-                textClassName: ek.XD,
+                textClassName: eO.XD,
                 hideTooltip: !0
             })]
         });
@@ -450,7 +450,7 @@ class eU extends i.PureComponent {
             let {
                 type: t
             } = e;
-            return t === eE.$pd.CUSTOM_STATUS
+            return t === ey.$pd.CUSTOM_STATUS
         });
         return null != o ? (0, a.jsxs)(A.A, {
             hoverText: l,
@@ -459,10 +459,10 @@ class eU extends i.PureComponent {
                 children: ev.Ay.humanizeStatus(s)
             }), (0, a.jsx)(D.A, {
                 activity: o,
-                emojiClassName: ek.Zg,
-                className: ek.WO
+                emojiClassName: eO.Zg,
+                className: eO.WO
             })]
-        }) : null != s && s !== eE.clD.UNKNOWN && i.hasUniqueUsername() ? (0, a.jsx)(A.A, {
+        }) : null != s && s !== ey.clD.UNKNOWN && i.hasUniqueUsername() ? (0, a.jsx)(A.A, {
             hoverText: l,
             forceHover: e,
             children: (0, a.jsx)(j.A, {
@@ -477,12 +477,12 @@ class eU extends i.PureComponent {
         } = this.props;
         return null == t ? null : (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsx)("div", {
-                className: ek.eW,
+                className: eO.eW,
                 children: (0, a.jsx)(eA.A, {
                     className: l()({
-                        [ek.e8]: null != e
+                        [eO.e8]: null != e
                     }),
-                    children: (0, a.jsx)(U.A, {
+                    children: (0, a.jsx)(L.A, {
                         userName: n,
                         displayNameStyles: e,
                         effectDisplayType: this.state.hovered ? P.G.ANIMATED : P.G.STATIC,
@@ -491,7 +491,7 @@ class eU extends i.PureComponent {
                     })
                 })
             }), (0, a.jsx)("div", {
-                className: ek.XP,
+                className: eO.XP,
                 children: (0, a.jsx)(ej.A, {
                     children: this.renderStatus()
                 })
@@ -529,18 +529,18 @@ class eU extends i.PureComponent {
             children: [(0, a.jsx)(h.skg, {
                 children: e => (0, a.jsxs)("div", {
                     ref: this.containerRef,
-                    className: l()(ek.kL, {
-                        [ek.UG]: null != n,
-                        [ek.bc]: !i,
-                        [ek.G5]: s
+                    className: l()(eO.kL, {
+                        [eO.UG]: null != n,
+                        [eO.bc]: !i,
+                        [eO.G5]: s
                     }),
                     onMouseEnter: this.handleMouseEnter,
                     onMouseLeave: this.handleMouseLeave,
                     children: [(0, a.jsx)(K.A, {
                         nameplate: t,
                         hovered: r,
-                        placement: H.u.ACCOUNT
-                    }), this.renderNameZone(e), (0, a.jsx)(eL, {
+                        placement: W.u.ACCOUNT
+                    }), this.renderNameZone(e), (0, a.jsx)(eU, {
                         ...this.props,
                         ...this.state,
                         accountContainerRef: this.containerRef,
@@ -560,7 +560,7 @@ class eU extends i.PureComponent {
     }
 }
 
-function eL(e) {
+function eU(e) {
     let {
         selfDeaf: t,
         selfMute: n,
@@ -584,13 +584,13 @@ function eL(e) {
         accountContainerRef: j,
         deviceChangedTooltipType: A,
         shouldShowPTTJoinTooltip: C = !1,
-        dismissTooltips: y,
-        speaking: T
-    } = e, S = (0, W.K)(b);
+        dismissTooltips: T,
+        speaking: E
+    } = e, S = (0, H.K)(b);
     return (0, a.jsxs)("div", {
-        className: ek.Uo,
+        className: eO.Uo,
         style: S,
-        children: [(0, a.jsx)(eT.A, {
+        children: [(0, a.jsx)(eE.A, {
             accountContainerRef: j,
             selfMute: n,
             serverMute: s,
@@ -600,30 +600,30 @@ function eL(e) {
             onMouseLeave: m,
             onClick: x,
             onContextMenu: p,
-            iconForeground: null != b ? ek.t4 : void 0,
+            iconForeground: null != b ? eO.t4 : void 0,
             nameplate: b,
             shouldShowSpeakingWhileMutedTooltip: o,
             shouldShowInputDeviceChangedTooltip: !o && "input" === A,
             shouldShowSpeakingWhilePTTTooltip: d,
             shouldShowPTTJoinTooltip: C,
-            dismissTooltips: y,
-            speaking: T
-        }), (0, a.jsx)(ey.A, {
+            dismissTooltips: T,
+            speaking: E
+        }), (0, a.jsx)(eT.A, {
             selfDeaf: t,
             serverDeaf: l,
             onClick: h,
             onContextMenu: g,
             awaitingRemote: i,
-            iconForeground: null != b ? ek.t4 : void 0,
+            iconForeground: null != b ? eO.t4 : void 0,
             nameplate: b,
             shouldShowOutputDeviceChangedTooltip: "output" === A,
-            dismissTooltips: y
+            dismissTooltips: T
         }), (0, a.jsx)(eS.A, {
             webBuildOverride: c,
             onClick: _,
             onContextMenu: f,
             dismissibleContents: v.settings,
-            iconForeground: null != b ? ek.t4 : void 0,
+            iconForeground: null != b ? eO.t4 : void 0,
             nameplate: b
         })]
     })
@@ -665,7 +665,7 @@ function eG() {
                     let {
                         type: t
                     } = e;
-                    return t === eE.$pd.STREAMING
+                    return t === ey.$pd.STREAMING
                 }),
                 status: eu.A.getStatus()
             }
@@ -691,19 +691,19 @@ function eG() {
             selfDeaf: b,
             deaf: j
         } = (0, Z.A)(p),
-        A = (0, c.bG)([E.A], () => (0, N.kK)() ? E.A.getCurrentBuildOverride().overrides?.discord_web : null),
+        A = (0, c.bG)([y.A], () => (0, N.kK)() ? y.A.getCurrentBuildOverride().overrides?.discord_web : null),
         S = (0, c.bG)([eo.Ay], () => eo.Ay.getSpeakingWhileMuted()),
-        k = (0, c.bG)([I.A], () => I.A.isFullscreenInContext()),
-        O = (0, c.bG)([er.A], () => er.A.hasLayers()),
-        R = (0, h.red)(h.DXt) || O || ef.P.isDisallowPopupsSet() || k,
-        w = (0, c.bG)([L.default], () => null != L.default.getAwaitingRemoteSessionInfo()),
+        O = (0, c.bG)([I.A], () => I.A.isFullscreenInContext()),
+        R = (0, c.bG)([er.A], () => er.A.hasLayers()),
+        k = (0, h.red)(h.DXt) || R || ef.P.isDisallowPopupsSet() || O,
+        w = (0, c.bG)([U.default], () => null != U.default.getAwaitingRemoteSessionInfo()),
         D = (0, c.bG)([ec.A], () => ec.A.getGuildId()),
         M = e?.avatarDecoration,
-        P = (0, T.A)(M),
-        U = ev.Ay.useName(e) ?? "",
+        P = (0, E.A)(M),
+        L = ev.Ay.useName(e) ?? "",
         {
             analyticsLocations: B
-        } = (0, y.Ay)(C.A.ACCOUNT),
+        } = (0, T.Ay)(C.A.ACCOUNT),
         G = (0, V.r)({
             user: e,
             guildId: void 0
@@ -711,46 +711,46 @@ function eG() {
         {
             isQuestBarEmpty: F
         } = (0, z.c9)(),
-        W = (0, c.bG)([$.A, eh.default, el.A], () => {
+        H = (0, c.bG)([$.A, eh.default, el.A], () => {
             let e, t = $.A.getSyncingWith(),
                 n = $.A.getActivity(),
                 a = [];
             return null != t ? e = t.partyId : null != n && null != n.party && null != n.party.id && (e = n.party.id), null != e && (a = o()(Array.from(el.A.getParty(e) ?? [])).map(e => eh.default.getUser(e)).filter(e_.Vq).value()), a.length > 1
         }),
-        H = {
+        W = {
             avatar: [],
             settings: []
         };
-    R || H.avatar.push(u.M.DISPLAY_NAME_STYLES_COACHMARK);
+    k || W.avatar.push(u.M.DISPLAY_NAME_STYLES_COACHMARK);
     let {
         shouldShowTooltip: K,
         dismissTooltip: q
     } = eB(eN.oh.AUDIO_INPUT), {
-        shouldShowTooltip: Q,
-        dismissTooltip: Y
+        shouldShowTooltip: Y,
+        dismissTooltip: Q
     } = eB(eN.oh.AUDIO_OUTPUT), {
         shouldShowTooltip: J,
         dismissTooltip: X
-    } = (0, et.A)(), ex = (0, en.A)(), ep = i.useMemo(() => K ? "input" : Q ? "output" : void 0, [K, Q]), eg = i.useCallback(e => {
+    } = (0, et.A)(), ex = (0, en.A)(), ep = i.useMemo(() => K ? "input" : Y ? "output" : void 0, [K, Y]), eg = i.useCallback(e => {
         switch (e) {
             case "input":
                 q();
                 break;
             case "output":
-                Y()
+                Q()
         }
-    }, [q, Y]);
-    return (0, a.jsx)(y.f5, {
+    }, [q, Q]);
+    return (0, a.jsx)(T.f5, {
         value: B,
-        children: (0, a.jsx)(eU, {
+        children: (0, a.jsx)(eL, {
             currentUser: e,
-            username: U,
+            username: L,
             activities: n,
             applicationStream: r,
             voiceChannel: p,
-            dismissibleContents: H,
+            dismissibleContents: W,
             userTag: x,
-            occluded: R,
+            occluded: k,
             selfDeaf: b,
             selfMute: f,
             serverDeaf: j,
@@ -768,7 +768,7 @@ function eG() {
             selectedGuildId: D,
             avatarDecoration: P,
             isQuestBarEmpty: F,
-            isListenAlongVisible: W,
+            isListenAlongVisible: H,
             deviceChangedTooltipType: ep,
             onDismissDeviceChangedTooltip: () => eg(ep),
             shouldShowPTTJoinTooltip: J,

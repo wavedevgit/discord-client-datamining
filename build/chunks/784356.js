@@ -24,24 +24,24 @@ let u = e => {
         descriptionCta: x,
         customContent: p,
         cardVariant: h,
-        subtitleClassName: T,
-        imageOverlayText: E
-    } = e, f = (0, o.Q)(h), S = null != E;
+        subtitleClassName: f,
+        imageOverlayText: T
+    } = e, E = (0, o.Q)(h), S = null != T;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             className: l()(c.Iv, c.Gz)
         }), (0, i.jsx)(d.A, {
             title: t,
-            cardVariantStyleInfo: f,
+            cardVariantStyleInfo: E,
             titleClassName: n,
             subtitle: A,
-            subtitleClassName: T,
+            subtitleClassName: f,
             isOverlay: !1
         }), null != u && (0, i.jsxs)("div", {
             className: l()(c.V8, {
                 [c.wP]: !m,
-                [c.QN]: !m && !f?.perkImage?.disableHoverAnimation
-            }, f?.perkImage?.className),
+                [c.QN]: !m && !E?.perkImage?.disableHoverAnimation
+            }, E?.perkImage?.className),
             children: [(0, i.jsx)("img", {
                 src: u,
                 alt: "",
@@ -51,7 +51,7 @@ let u = e => {
                 children: (0, i.jsx)(r.Text, {
                     className: c.nj,
                     variant: "text-md/bold",
-                    children: E
+                    children: T
                 })
             }) : null]
         }), null != g && (0, i.jsxs)("div", {
@@ -62,7 +62,7 @@ let u = e => {
                 fullWidth: !0,
                 onClick: _,
                 children: (0, i.jsx)("div", {
-                    className: f?.descriptionCta?.className,
+                    className: E?.descriptionCta?.className,
                     children: x
                 })
             })]

@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(311907),
     A = n(554146),
     m = n(52133),
-    p = n(451988),
-    _ = n(827734),
+    _ = n(451988),
+    p = n(827734),
     g = n(192308),
     f = n(397927),
     x = n(951001),
@@ -74,7 +74,7 @@ class ec {
     sizes;
     scrollerRef = s.createRef();
     nodeRefs = {};
-    timeout = new p.Ep;
+    timeout = new _.Ep;
     observer;
     constructor(e, t, n, i, s) {
         this.guildsTree = e, this.setScrolling = t, this.setIsScrolledToBottom = n, this.onScroll = i, this.sizes = s, (0, R.u9)(this.getVisibleGuildIds)
@@ -180,7 +180,7 @@ function ed(e) {
         lurkingGuildIds: l
     } = e, a = (0, y.A)("TopSection"), {
         isExperimentEnabled: r
-    } = (0, v.TW)("TopSection"), o = (0, h.bG)([k.A], () => null != k.A.getVoiceChannelId()), c = (0, g.useHasAnyModalOpen)(), d = (0, S.Ay)(e => e.postConnectionOpen), [u, m] = (0, T.kn)(d && r && !o && !c ? [A.M.FAVORITES_SERVER_ONBOARDING_INTRO] : []), p = u === A.M.FAVORITES_SERVER_ONBOARDING_INTRO, [_] = (0, T.kn)(p ? [A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM] : [], void 0, !0), f = _ === A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM, x = s.useRef(!1), C = f && a;
+    } = (0, v.TW)("TopSection"), o = (0, h.bG)([k.A], () => null != k.A.getVoiceChannelId()), c = (0, g.useHasAnyModalOpen)(), d = (0, S.Ay)(e => e.postConnectionOpen), [u, m] = (0, T.kn)(d && r && !o && !c ? [A.M.FAVORITES_SERVER_ONBOARDING_INTRO] : []), _ = u === A.M.FAVORITES_SERVER_ONBOARDING_INTRO, [p] = (0, T.kn)(_ ? [A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM] : [], void 0, !0), f = p === A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM, x = s.useRef(!1), C = f && a;
     s.useEffect(() => {
         C && !x.current && n(), x.current = C
     }, [n, C]);
@@ -244,10 +244,10 @@ function eh(e) {
         isSorting: g,
         startSorting: x,
         stopSorting: E
-    } = (0, H.A)(), S = s.useRef(!1), [T] = s.useState(() => new p.Ep), v = s.useRef(null), j = s.useRef(null), {
+    } = (0, H.A)(), S = s.useRef(!1), [T] = s.useState(() => new _.Ep), v = s.useRef(null), j = s.useRef(null), {
         ref: R,
         ...U
-    } = (0, d.$y)(), P = (0, f.R7z)(), [w, k] = s.useState(!1), Y = (0, f.rdh)(_.A.modules.guildbar.AVATAR_SIZE), z = (0, f.rdh)(_.A.space.SPACE_XS), q = (0, y.A)("GuildsBar"), {
+    } = (0, d.$y)(), P = (0, f.R7z)(), [w, k] = s.useState(!1), Y = (0, f.rdh)(p.A.modules.guildbar.AVATAR_SIZE), z = (0, f.rdh)(p.A.space.SPACE_XS), q = (0, y.A)("GuildsBar"), {
         pathname: X
     } = (0, c.zy)(), {
         entrypoint: Q
@@ -333,11 +333,11 @@ function eh(e) {
                     return null
             }
         }, [x, E, g, en.setNodeRef]),
-        ep = (0, i.jsx)(J.A, {
+        e_ = (0, i.jsx)(J.A, {
             selected: eh,
             className: ea.ai
         }),
-        e_ = Q === L.RK.SERVER_RAIL_BOTTOM;
+        ep = Q === L.RK.SERVER_RAIL_BOTTOM;
     return (0, i.jsx)(N.f5, {
         value: ei,
         children: (0, i.jsx)(f.NPJ, {
@@ -374,13 +374,13 @@ function eh(e) {
                                 scrollToTop: eA,
                                 lurkingGuildIds: A
                             }), (0, i.jsx)($.A, {}), (0, i.jsx)(eu, {
-                                guildDiscoveryButton: ep,
+                                guildDiscoveryButton: e_,
                                 disableAppDownload: t,
                                 isOverlay: n,
                                 renderTreeNode: em,
                                 lurkingGuildIds: A
                             })]
-                        }), e_ && (0, i.jsxs)("div", {
+                        }), ep && (0, i.jsxs)("div", {
                             children: [(0, i.jsx)($.A, {
                                 fullWidth: !0
                             }), (0, i.jsx)("div", {
@@ -395,8 +395,8 @@ function eh(e) {
                     isVisible: en.isItemVisible,
                     onJumpTo: en.handleJumpToGuild,
                     className: a()(ea.LZ, {
-                        [ea.CH]: !n && !e_,
-                        [ea.c0]: !n && e_
+                        [ea.CH]: !n && !ep,
+                        [ea.c0]: !n && ep
                     }),
                     barClassName: ea.Sh
                 })]

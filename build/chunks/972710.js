@@ -18,16 +18,16 @@ var i = n(627968),
     x = n(701273),
     p = n(780964),
     h = n(840065),
-    T = n(287809),
-    E = n(954571),
-    f = n(927578),
+    f = n(287809),
+    T = n(954571),
+    E = n(927578),
     S = n(866312),
-    C = n(327479),
-    b = n(652215),
+    b = n(327479),
+    C = n(652215),
     N = n(601107),
-    I = n(985018),
-    v = n(141384);
-let j = [b.Dmq.PAST_DUE, b.Dmq.ACCOUNT_HOLD, b.Dmq.BILLING_RETRY],
+    v = n(985018),
+    I = n(141384);
+let j = [C.Dmq.PAST_DUE, C.Dmq.ACCOUNT_HOLD, C.Dmq.BILLING_RETRY],
     y = e => {
         let {
             transitionState: t,
@@ -37,7 +37,7 @@ let j = [b.Dmq.PAST_DUE, b.Dmq.ACCOUNT_HOLD, b.Dmq.BILLING_RETRY],
             analyticsLocation: r
         } = e, [o, d] = s.useState(!1), [u, g] = s.useState(!1);
         s.useEffect(() => {
-            E.default.track(b.HAw.GUILD_BOOST_PAST_DUE_CANCEL_MODAL_VIEWED, {
+            T.default.track(C.HAw.GUILD_BOOST_PAST_DUE_CANCEL_MODAL_VIEWED, {
                 subscription_id: l.id,
                 location_stack: a
             })
@@ -45,7 +45,7 @@ let j = [b.Dmq.PAST_DUE, b.Dmq.ACCOUNT_HOLD, b.Dmq.BILLING_RETRY],
         let A = async () => {
             d(!0), g(!1);
             try {
-                await (0, _.M2)(l.id, a, r), E.default.track(b.HAw.GUILD_BOOST_PAST_DUE_CANCELLATION_FLOW_COMPLETED, {
+                await (0, _.M2)(l.id, a, r), T.default.track(C.HAw.GUILD_BOOST_PAST_DUE_CANCELLATION_FLOW_COMPLETED, {
                     subscription_id: l.id,
                     location_stack: a
                 }), (0, _.hP)(), n()
@@ -53,11 +53,11 @@ let j = [b.Dmq.PAST_DUE, b.Dmq.ACCOUNT_HOLD, b.Dmq.BILLING_RETRY],
                 g(!0), d(!1)
             }
         }, x = [{
-            text: I.intl.string(I.t.oEAioF),
+            text: v.intl.string(v.t.oEAioF),
             onClick: () => n(),
             variant: "secondary"
         }, {
-            text: I.intl.string(I.t["cY+Oob"]),
+            text: v.intl.string(v.t["cY+Oob"]),
             onClick: () => A(),
             disabled: o,
             variant: "critical-primary",
@@ -66,13 +66,13 @@ let j = [b.Dmq.PAST_DUE, b.Dmq.ACCOUNT_HOLD, b.Dmq.BILLING_RETRY],
         return (0, i.jsx)(c.Modal, {
             size: "md",
             transitionState: t,
-            title: I.intl.string(I.t.LZunzZ),
-            subtitle: I.intl.string(I.t.FClXh9),
+            title: v.intl.string(v.t.LZunzZ),
+            subtitle: v.intl.string(v.t.FClXh9),
             actions: x,
             onClose: async () => n(),
             children: u ? (0, i.jsx)(m.wx6, {
                 type: "critical",
-                children: I.intl.string(I.t["5mlOCW"])
+                children: v.intl.string(v.t["5mlOCW"])
             }) : null
         })
     };
@@ -85,8 +85,8 @@ function O(e) {
             fromStandaloneBillingPage: r = !0,
             analyticsLocation: _
         } = e,
-        E = (0, u.bG)([T.default], () => {
-            let e = T.default.getCurrentUser();
+        T = (0, u.bG)([f.default], () => {
+            let e = f.default.getCurrentUser();
             return o()(null != e, "GuildBoostingHeader: currentUser cannot be undefined"), e
         }),
         {
@@ -95,49 +95,49 @@ function O(e) {
         R = (0, S.A)({
             location: "GuildBoostingHeader"
         });
-    if (0 === (0, f.bx)(n.additionalPlans)) return null;
+    if (0 === (0, E.bx)(n.additionalPlans)) return null;
     let {
         status: L
-    } = n, P = (0, f.$k)(n), D = R && !P && n.isBoostOnly && j.includes(n.status);
-    if (P) t = v.v2;
+    } = n, P = (0, E.$k)(n), D = R && !P && n.isBoostOnly && j.includes(n.status);
+    if (P) t = I.v2;
     else switch (L) {
-        case b.Dmq.PAST_DUE:
-        case b.Dmq.ACCOUNT_HOLD:
-        case b.Dmq.BILLING_RETRY:
-            t = v.P7;
+        case C.Dmq.PAST_DUE:
+        case C.Dmq.ACCOUNT_HOLD:
+        case C.Dmq.BILLING_RETRY:
+            t = I.P7;
             break;
-        case b.Dmq.PAUSE_PENDING:
-        case b.Dmq.PAUSED:
-            t = n.pauseReason !== N.qf.FRACTIONAL_PREMIUM ? v.C7 : v.wG;
+        case C.Dmq.PAUSE_PENDING:
+        case C.Dmq.PAUSED:
+            t = n.pauseReason !== N.qf.FRACTIONAL_PREMIUM ? I.C7 : I.wG;
             break;
         default:
-            t = v.wG
+            t = I.wG
     }
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
-            className: a()(t, v.Qn),
+            className: a()(t, I.Qn),
             children: [(0, i.jsx)("div", {
-                className: v.Kq
+                className: I.Kq
             }), (0, i.jsx)("div", {
-                className: v.OL
+                className: I.OL
             }), (0, i.jsxs)("div", {
-                className: v.eC,
+                className: I.eC,
                 children: [(0, i.jsx)("div", {
-                    className: a()(v.Ab, {
-                        [v.aD]: P
+                    className: a()(I.Ab, {
+                        [I.aD]: P
                     })
                 }), (0, i.jsx)("div", {
-                    children: (0, f.Uf)({
+                    children: (0, E.Uf)({
                         subscription: n,
                         renewalInvoicePreview: s,
-                        user: E,
+                        user: T,
                         fractionalPremiumInfo: l
                     })
                 })]
             }), r && (0, i.jsxs)("div", {
-                className: v.BQ,
+                className: I.BQ,
                 children: [D && (0, i.jsx)("div", {
-                    className: v.x7,
+                    className: I.x7,
                     children: (0, i.jsx)(c.QWc, {
                         variant: "always-white",
                         onClick: () => {
@@ -149,17 +149,17 @@ function O(e) {
                             }))
                         },
                         size: "sm",
-                        text: I.intl.string(I.t["ETE/oC"])
+                        text: v.intl.string(v.t["ETE/oC"])
                     })
-                }), (0, i.jsx)(C.A, {
+                }), (0, i.jsx)(b.A, {
                     onClick: () => (0, h.openUserSettings)(p.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL),
-                    text: I.intl.string(I.t["NQ5g/U"])
+                    text: v.intl.string(v.t["NQ5g/U"])
                 })]
             })]
         }), !r && (0, i.jsx)(m.Text, {
-            className: v.yW,
+            className: I.yW,
             variant: "text-sm/normal",
-            children: I.intl.format(d.Fr ? I.t.uxYBEa : I.t.k6haR9, {
+            children: v.intl.format(d.Fr ? v.t.uxYBEa : v.t.k6haR9, {
                 openAppHook: () => (0, x.A)("app")
             })
         })]

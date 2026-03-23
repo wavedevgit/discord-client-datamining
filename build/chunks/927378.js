@@ -1,6 +1,6 @@
 /** chunk id: 927378 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => f
 });
 var i = n(627968),
     s = n(64700),
@@ -19,7 +19,7 @@ var i = n(627968),
     p = n(985018),
     h = n(657204);
 
-function T() {
+function f() {
     let e = (0, r.bG)([c.default], () => c.default.getCurrentUser()),
         {
             currentHarvestType: t,
@@ -28,12 +28,12 @@ function T() {
             currentHarvestType: g.A.harvestType,
             awaitingInitialRequest: g.A.requestingHarvest
         })),
-        [T, E] = s.useState(!1);
+        [f, T] = s.useState(!1);
     if (null == e) return null;
-    let f = (0, m.Oj)(t, e) || l,
+    let E = (0, m.Oj)(t, e) || l,
         S = null != t && a()().diff(a()(t.created_at), "days") < x.n83,
-        C = f && S,
-        b = e.isStaff(),
+        b = E && S,
+        C = e.isStaff(),
         N = !e.verified;
     return (0, i.jsxs)(A.h, {
         children: [(0, i.jsx)(A._, {
@@ -41,7 +41,7 @@ function T() {
             description: p.intl.format(p.t.P3kNfr, {
                 helpdeskArticle: u.A.getArticleURL(x.MVz.GDPR_REQUEST_DATA)
             })
-        }), C ? (0, i.jsx)(o.ZpM, {
+        }), b ? (0, i.jsx)(o.ZpM, {
             className: h.N,
             children: (0, i.jsx)(o.Text, {
                 variant: "text-md/normal",
@@ -49,7 +49,7 @@ function T() {
                     date: a()(t.created_at).add(x.n83, "days").format("MMMM Do YYYY")
                 })
             })
-        }) : b ? (0, i.jsx)(o.ZpM, {
+        }) : C ? (0, i.jsx)(o.ZpM, {
             className: h.N,
             children: (0, i.jsx)(o.Text, {
                 variant: "text-md/normal",
@@ -67,7 +67,7 @@ function T() {
                 children: (0, i.jsx)(o.Button, {
                     variant: "primary",
                     text: p.intl.string(p.t.dmBSKo),
-                    disabled: f,
+                    disabled: E,
                     onClick: () => {
                         (e => {
                             let {
@@ -84,7 +84,7 @@ function T() {
                             })
                         })({
                             onConfirm: e => {
-                                E(!0), (0, _.$)(e).then(e => {
+                                T(!0), (0, _.$)(e).then(e => {
                                     null != e && null != e.body ? d.A.show({
                                         title: p.intl.string(p.t.i2iul5),
                                         body: p.intl.string(p.t["6Nmv4i"])
@@ -98,11 +98,11 @@ function T() {
                                         title: p.intl.string(p.t.OjbtDm),
                                         body: t
                                     })
-                                }).finally(() => E(!1))
+                                }).finally(() => T(!1))
                             }
                         })
                     },
-                    loading: T || l
+                    loading: f || l
                 })
             })]
         })]

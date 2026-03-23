@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(442433),
     A = n(104171),
     m = n(47167),
-    p = n(713654),
-    _ = n(427930),
+    _ = n(713654),
+    p = n(427930),
     g = n(427209),
     f = n(763754),
     x = n(291812),
@@ -50,7 +50,7 @@ function B(e) {
         isSelected: r,
         isUnread: o,
         groupedMessages: h
-    } = e, A = n.type === P.rbe.UNKNOWN ? u.N$i : (0, p.gU)(n, null), _ = (0, m.Ay)(n, !1), g = (0, c.bG)([R.A], () => R.A.getGuild(n.getGuildId())), {
+    } = e, A = n.type === P.rbe.UNKNOWN ? u.N$i : (0, _.gU)(n, null), p = (0, m.Ay)(n, !1), g = (0, c.bG)([R.A], () => R.A.getGuild(n.getGuildId())), {
         nick: x,
         colorString: C
     } = (0, f.Ay)(t), {
@@ -179,7 +179,7 @@ function B(e) {
                             [V.gy]: o,
                             [V.wH]: r
                         }),
-                        children: [_, !T && ` \xb7 ${x}`]
+                        children: [p, !T && ` \xb7 ${x}`]
                     })]
                 }), (0, i.jsx)(K, {
                     message: t,
@@ -266,21 +266,21 @@ function K(e) {
             let e, s = "" === t.content,
                 o = t.embeds.some(e => e.type === P.Auw.GIFV),
                 c = (e = t.embeds.some(e => e.type === P.Auw.GIFV), t.attachments.length + +!!e),
-                d = (0, _.A)(t),
+                d = (0, p.A)(t),
                 h = t.stickerItems.length > 0,
                 A = t.isPoll(),
                 m = t.type === P.lAJ.POLL_RESULT,
-                p = t.hasFlag(P.pr7.IS_VOICE_MESSAGE),
+                _ = t.hasFlag(P.pr7.IS_VOICE_MESSAGE),
                 f = t.type === P.lAJ.USER_JOIN,
                 C = null;
-            1 === c ? C = u.xfq : c > 1 ? C = u.sYc : d ? C = g.A : A || m ? C = u.YRe : h ? C = u.tEP : p && (C = u.HKD);
+            1 === c ? C = u.xfq : c > 1 ? C = u.sYc : d ? C = g.A : A || m ? C = u.YRe : h ? C = u.tEP : _ && (C = u.HKD);
             let E = !0,
                 I = null;
             return s ? d ? I = k.intl.string(k.t["9ddYKt"]) : A ? (E = !1, I = t.poll?.question.text) : I = m ? k.intl.string(k.t.sad2PH) : o ? k.intl.string(k.t.p0oZmy) : c > 1 ? k.intl.formatToPlainString(k.t.rtfTKp, {
                 count: c
             }) : 1 === c ? k.intl.string(k.t.tCcq5p) : h ? k.intl.format(k.t.zY4v1B, {
                 stickerName: t.stickerItems[0].name
-            }) : p ? k.intl.string(k.t.slFYgi) : f ? k.intl.string(k.t.Yvvfw9) : k.intl.string(k.t.sDqZHL) : (E = !1, I = (0, i.jsx)(x.Ay, {
+            }) : _ ? k.intl.string(k.t.slFYgi) : f ? k.intl.string(k.t.Yvvfw9) : k.intl.string(k.t.sDqZHL) : (E = !1, I = (0, i.jsx)(x.Ay, {
                 content: r,
                 message: t,
                 compact: !1,
@@ -329,7 +329,7 @@ let W = (0, s.memo)(function(e) {
         isUnread: r
     } = e, d = t.message, A = (0, M.op)(), {
         params: m
-    } = (0, o.W5)(), p = (0, c.bG)([y.A], () => {
+    } = (0, o.W5)(), _ = (0, c.bG)([y.A], () => {
         if (null == d) return null;
         let e = y.A.getChannel(t.channelId);
         return null != e ? e : new T.jb({
@@ -338,21 +338,21 @@ let W = (0, s.memo)(function(e) {
             type: P.rbe.UNKNOWN,
             name: k.intl.string(k.t.J90oLW)
         })
-    }), _ = (0, D.s)(e => e.isMenuOpenForMessage(d?.id ?? null)), {
+    }), p = (0, D.s)(e => e.isMenuOpenForMessage(d?.id ?? null)), {
         notificationCenterVariant: g
     } = (0, O.X8)({
         location: "NotificationsInboxMessageUnit"
-    }), f = s.useMemo(() => `${d?.author.username}: ${p?.name}`, [d?.author.username, p?.name]), x = l?.map(e => e.message).filter(e => null != e) ?? [];
-    return null == d || null == p ? null : (0, i.jsx)(u.sqX, {
+    }), f = s.useMemo(() => `${d?.author.username}: ${_?.name}`, [d?.author.username, _?.name]), x = l?.map(e => e.message).filter(e => null != e) ?? [];
+    return null == d || null == _ ? null : (0, i.jsx)(u.sqX, {
         "aria-label": f,
         className: a()(V.FJ, {
             [V.wH]: d.id === m.messageId,
-            [V.Yj]: _
+            [V.Yj]: p
         }),
         onClick: () => {
             L.A.inboxItemClick({
                 message: d,
-                channel: p,
+                channel: _,
                 isUnread: r,
                 isSidebar: g === O.U5.SIDEBAR,
                 viewId: A
@@ -369,7 +369,7 @@ let W = (0, s.memo)(function(e) {
                 } = await n.e("48118").then(n.bind(n, 594005));
                 return t => (0, i.jsx)(e, {
                     ...t,
-                    channel: p
+                    channel: _
                 })
             }, {
                 disableClickTrap: !0
@@ -377,7 +377,7 @@ let W = (0, s.memo)(function(e) {
         },
         children: (0, i.jsx)(B, {
             message: d,
-            channel: p,
+            channel: _,
             isSelected: d.id === m.messageId,
             groupedMessages: x,
             isUnread: r

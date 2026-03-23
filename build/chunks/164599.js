@@ -1,6 +1,6 @@
 /** chunk id: 164599 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => E
 });
 var i = n(627968),
     s = n(64700),
@@ -18,22 +18,22 @@ var i = n(627968),
     x = n(212168),
     p = n(652215),
     h = n(788868),
-    T = n(985018),
-    E = n(97671);
+    f = n(985018),
+    T = n(97671);
 
-function f(e) {
+function E(e) {
     let {
         user: t,
         guild: n,
         initialSelectedEffect: l,
-        className: f,
+        className: E,
         sectionTitle: S,
-        forcedDivider: C = !1,
-        withTutorial: b = !1,
+        forcedDivider: b = !1,
+        withTutorial: C = !1,
         showBorder: N = !1
     } = e, {
-        analyticsLocations: I
-    } = (0, d.Ay)(), v = _.Ay.canUsePremiumProfileCustomization(t), j = (0, g.N2)({
+        analyticsLocations: v
+    } = (0, d.Ay)(), I = _.Ay.canUsePremiumProfileCustomization(t), j = (0, g.N2)({
         user: t,
         guildId: n?.id
     }), {
@@ -41,42 +41,42 @@ function f(e) {
         errors: O
     } = (0, g.nZ)(n?.id);
     s.useEffect(() => {
-        v && m.default.track(p.HAw.PREMIUM_UPSELL_VIEWED, {
+        I && m.default.track(p.HAw.PREMIUM_UPSELL_VIEWED, {
             type: h.e.PROFILE_EFFECTS_INLINE_SETTINGS,
-            location_stack: I
+            location_stack: v
         })
-    }, [v, I]);
-    let R = b ? o.wLn : r.$n;
+    }, [I, v]);
+    let R = C ? o.wLn : r.$n;
     return (0, i.jsx)(A.A, {
-        forcedDivider: C,
+        forcedDivider: b,
         borderType: x.i.PREMIUM,
         hasBackground: !0,
         title: S,
         showBorder: N,
         errors: O,
-        className: f,
+        className: E,
         children: (0, i.jsxs)("div", {
-            className: E.NC,
+            className: T.NC,
             children: [(0, i.jsx)(R, {
                 size: r.$n.Sizes.SMALL,
                 onClick: () => {
                     (0, c.W)({
-                        analyticsLocations: I,
+                        analyticsLocations: v,
                         guild: n,
                         initialSelectedEffect: l
                     })
                 },
                 className: a()({
-                    [E.yj]: b
+                    [T.yj]: C
                 }),
-                children: T.intl.string(T.t["/dRfCf"])
+                children: f.intl.string(f.t["/dRfCf"])
             }), (void 0 === y ? null != j : null != y) && (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
-                className: E.DT,
+                className: T.DT,
                 children: (0, i.jsx)(o.Button, {
                     variant: "secondary",
                     size: "sm",
-                    text: null != n ? T.intl.string(T.t.CHf9iJ) : T.intl.string(T.t.uMuafO),
+                    text: null != n ? f.intl.string(f.t.CHf9iJ) : f.intl.string(f.t.uMuafO),
                     onClick: () => {
                         (0, u.p)({
                             guildId: n?.id,

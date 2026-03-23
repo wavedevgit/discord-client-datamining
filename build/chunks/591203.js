@@ -18,13 +18,13 @@ var i = n(627968),
     x = n(595953),
     p = n(975571),
     h = n(780964),
-    T = n(617617),
-    E = n(652215);
+    f = n(617617),
+    T = n(652215);
 n(980504);
-var f = n(985018),
+var E = n(985018),
     S = n(17786);
 
-function C(e) {
+function b(e) {
     return (0, l.bG)([_.A], () => {
         if (null == e) return null;
         let {
@@ -35,10 +35,10 @@ function C(e) {
     })
 }
 
-function b(e) {
+function C(e) {
     let {
         guildId: t
-    } = e, n = (0, l.bG)([T.A], () => T.A.settings.guilds?.guilds?.[t]?.joinSound), s = C(n);
+    } = e, n = (0, l.bG)([f.A], () => f.A.settings.guilds?.guilds?.[t]?.joinSound), s = b(n);
     if (null == n || null == s) return null;
     let {
         emojiId: o,
@@ -62,36 +62,36 @@ function b(e) {
     })
 }
 let N = (0, u.E2)(h.X.ENTRANCE_SOUNDS_SETTING, {
-    useSearchTerms: () => [f.intl.string(f.t.nzUc3B)],
+    useSearchTerms: () => [E.intl.string(E.t.nzUc3B)],
     Component: function() {
         let {
             analyticsLocations: e
-        } = (0, o.Ay)(), [t, n] = s.useState("0"), r = (0, A.mz)(t), u = C(r), h = r?.type === A.PP.GLOBAL, T = (0, l.bG)([_.A], () => _.A.hasFetchedAllSounds()) && null != r && null == u;
+        } = (0, o.Ay)(), [t, n] = s.useState("0"), r = (0, A.mz)(t), u = b(r), h = r?.type === A.PP.GLOBAL, f = (0, l.bG)([_.A], () => _.A.hasFetchedAllSounds()) && null != r && null == u;
         s.useEffect(() => {
-            T && (0, g.ND)({
+            f && (0, g.ND)({
                 location: e
             })
-        }, [T, e]), s.useEffect(() => {
+        }, [f, e]), s.useEffect(() => {
             (0, m.E7)()
         }, []);
         let N = s.useCallback((e, t) => {
             let {
                 inDropdown: n
             } = t;
-            return null == e ? null : n ? (0, i.jsx)(b, {
+            return null == e ? null : n ? (0, i.jsx)(C, {
                 guildId: e.value
             }) : null
         }, []);
         return (0, i.jsxs)(a.nVY, {
-            label: f.intl.string(f.t.nzUc3B),
-            description: f.intl.format(f.t.u9RWmv, {
-                helpdeskArticle: p.A.getArticleURL(E.MVz.SOUNDBOARD)
+            label: E.intl.string(E.t.nzUc3B),
+            description: E.intl.format(E.t.u9RWmv, {
+                helpdeskArticle: p.A.getArticleURL(T.MVz.SOUNDBOARD)
             }),
             children: [(0, i.jsx)(d.A, {
                 guildId: t,
                 className: S.Dt,
                 globalOption: {
-                    label: f.intl.string(f.t["CpEUP/"]),
+                    label: E.intl.string(E.t["CpEUP/"]),
                     value: "0"
                 },
                 onChange: e => {
@@ -100,7 +100,7 @@ let N = (0, u.E2)(h.X.ENTRANCE_SOUNDS_SETTING, {
                 renderOptionSuffix: N,
                 hideDivider: !0
             }), (0, i.jsxs)(c.A, {
-                title: f.intl.format(f.t.I2TsYN, {
+                title: E.intl.format(E.t.I2TsYN, {
                     nitroWheelHook: () => (0, i.jsx)(a.tvc, {
                         size: "md",
                         color: "currentColor",
@@ -113,10 +113,10 @@ let N = (0, u.E2)(h.X.ENTRANCE_SOUNDS_SETTING, {
                     onSelect: n => {
                         null == n ? (0, g.Dv)(t, e) : (0, g.un)(t, n, e)
                     }
-                }), T && (0, i.jsx)(a.po8, {
+                }), f && (0, i.jsx)(a.po8, {
                     className: S.lm,
                     messageType: a.YCn.WARNING,
-                    children: f.intl.string(f.t.WkPsFR)
+                    children: E.intl.string(E.t.WkPsFR)
                 })]
             })]
         })

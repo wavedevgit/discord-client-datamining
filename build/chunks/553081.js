@@ -1,6 +1,6 @@
 /** chunk id: 553081 params = (module,exports,require) **/
 n.d(t, {
-    A: () => H
+    A: () => F
 }), n(321073), n(323874), n(14289), n(35956);
 var i = n(627968),
     s = n(64700),
@@ -18,15 +18,15 @@ var i = n(627968),
     x = n(961250),
     p = n(320118),
     h = n(622543),
-    T = n(576622),
-    E = n(166403),
-    f = n(954571),
+    f = n(576622),
+    T = n(166403),
+    E = n(954571),
     S = n(131168),
-    C = n(482589),
-    b = n(511484),
+    b = n(482589),
+    C = n(511484),
     N = n(322631),
-    I = n(570627),
-    v = n(568031),
+    v = n(570627),
+    I = n(568031),
     j = n(518491),
     y = n(965591),
     O = n(495022),
@@ -41,23 +41,23 @@ var i = n(627968),
     w = n(985018),
     V = n(520089),
     B = n(288894);
-let H = e => {
+let F = e => {
     let {
         userId: t
-    } = e, n = I.m.useConfig({
+    } = e, n = v.m.useConfig({
         location: "PremiumSubscriberHome"
     }).enabled, l = (0, r.zy)();
     s.useEffect(() => {
         u.h.wait(async () => {
             let e = [(0, x.Ay)()];
-            null != t && e.push((0, T.A)(t)), await Promise.all(e)
+            null != t && e.push((0, f.A)(t)), await Promise.all(e)
         })
     }, [t]), s.useEffect(() => {
         $(!0)
-    }, []), (0, C.j)(), (0, A.P)(g.b);
-    let H = s.useRef(null),
-        F = s.useRef(null),
-        Y = (0, o.bG)([E.A], () => E.A.getPremiumTypeSubscription()),
+    }, []), (0, b.j)(), (0, A.P)(g.b);
+    let F = s.useRef(null),
+        H = s.useRef(null),
+        Y = (0, o.bG)([T.A], () => T.A.getPremiumTypeSubscription()),
         {
             isReady: z,
             programReward: X,
@@ -85,7 +85,7 @@ let H = e => {
             } : {}
         }, [l.search]);
     (0, G.z)(K ?? "", null != K, q, J);
-    let [Q, $] = s.useState(!1), ee = (0, S.p)(), et = s.useRef(null), [en, ei] = s.useState(!1), [es, el] = s.useState(!1), ea = null != ee && null != Y && Y.status === U.Dmq.CANCELED, er = (0, b.iU)(k.gD.PREMIUM_MONTH_TIER_2, ee, Y), eo = !es && ea, {
+    let [Q, $] = s.useState(!1), ee = (0, S.p)(), et = s.useRef(null), [en, ei] = s.useState(!1), [es, el] = s.useState(!1), ea = null != ee && null != Y && Y.status === U.Dmq.CANCELED, er = (0, C.iU)(k.gD.PREMIUM_MONTH_TIER_2, ee, Y), eo = !es && ea, {
         analyticsLocations: ed
     } = (0, _.Ay)(m.A.PREMIUM_SUBSCRIBER_NITRO_HOME), [ec, eu] = s.useState(!1);
     return null != (0, o.bG)([h.A], () => null != t ? h.A.getUserProfile(t) : null) && (z || null != X) ? (0, i.jsxs)(i.Fragment, {
@@ -93,7 +93,7 @@ let H = e => {
             className: a()(V.xW, {
                 [V.J4]: n
             }),
-            ref: H,
+            ref: F,
             children: [(0, i.jsx)(c.hLv, {
                 color: "nitro-pink",
                 className: a()(V.kL, V.Gd),
@@ -132,7 +132,7 @@ let H = e => {
                             setIsAllPerksVisible: ei,
                             previousComponent: N.A2.HOME
                         })
-                    }), (0, i.jsx)(v.A, {
+                    }), (0, i.jsx)(I.A, {
                         className: V.Zy,
                         location: m.A.PREMIUM_MARKETING_GIFT_SECTION,
                         analyticsLocation: {
@@ -142,14 +142,14 @@ let H = e => {
                     }), (0, i.jsx)("div", {
                         className: V.hz
                     }), (0, i.jsx)(d.L, {
-                        innerRef: F,
+                        innerRef: H,
                         onChange: e => {
-                            e && !ec && (f.default.track(U.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                            e && !ec && (E.default.track(U.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                                 location_stack: ed
                             }), eu(!0))
                         },
                         children: (0, i.jsx)("div", {
-                            ref: F,
+                            ref: H,
                             className: V._Z
                         })
                     }), (0, i.jsx)("img", {

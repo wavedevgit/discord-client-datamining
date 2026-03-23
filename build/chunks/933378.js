@@ -1,6 +1,6 @@
 /** chunk id: 933378 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => y
 });
 var a = n(627968),
     i = n(64700),
@@ -23,11 +23,11 @@ var a = n(627968),
     j = n(495242),
     A = n(52093),
     C = n(985018),
-    y = n(883476);
+    T = n(883476);
 
-function T(e) {
+function E(e) {
     return (0, a.jsx)(d.Text, {
-        className: y.eW,
+        className: T.eW,
         color: "text-muted",
         variant: "text-xxs/normal",
         children: e.children
@@ -56,7 +56,7 @@ function S(e) {
         },
         afterRequest: o.stopAnimation
     }), {
-        header: E,
+        header: y,
         renderBody: N
     } = i.useMemo(() => {
         let e = j.length > 0,
@@ -73,7 +73,7 @@ function S(e) {
                         let i = u.A.getAccount(e.connected_account_id, e.connected_account_type),
                             s = (0, _.IG)(e),
                             l = (0, _.$J)(e);
-                        return (0, a.jsx)(T, {
+                        return (0, a.jsx)(E, {
                             children: C.intl.format(s, {
                                 account_name: i?.name,
                                 onClick: () => {
@@ -90,12 +90,12 @@ function S(e) {
                             })
                         }, n)
                     }
-                    return (0, a.jsx)(T, {
+                    return (0, a.jsx)(E, {
                         children: e.message
                     }, n)
                 })
             }) : () => (0, a.jsx)(d.Text, {
-                className: y.eW,
+                className: T.eW,
                 color: "text-muted",
                 variant: "text-xxs/normal",
                 children: (0, v.ui)(t) ? C.intl.string(C.t.bUyEZZ) : C.intl.format(C.t.GXqvC1, {
@@ -105,36 +105,36 @@ function S(e) {
         }
     }, [j, t, f]);
     return (0, a.jsxs)("div", {
-        className: y.XK,
+        className: T.XK,
         children: [(0, a.jsxs)("div", {
-            className: y.oK,
+            className: T.oK,
             children: [(0, a.jsx)(d.EpV, {
                 size: "custom",
                 color: "currentColor",
-                className: 0 === j.length ? y.pH : y.JA,
+                className: 0 === j.length ? T.pH : T.JA,
                 width: 16,
                 height: 16
             }), (0, a.jsx)(d.Text, {
                 variant: "text-xs/medium",
-                children: E
+                children: y
             }), (0, a.jsx)(d.DUT, {
-                className: l()(y.w, {
-                    [y.r9]: A
+                className: l()(T.w, {
+                    [T.r9]: A
                 }),
                 onClick: () => S(),
                 children: o.render()
             })]
         }), (0, a.jsxs)("div", {
             className: l()({
-                [y.Iu]: A
+                [T.Iu]: A
             }),
-            children: [N(), 0 === j.length ? null : (0, a.jsx)(T, {
+            children: [N(), 0 === j.length ? null : (0, a.jsx)(E, {
                 children: s
             })]
         })]
     })
 }
-let E = function(e) {
+let y = function(e) {
     let {
         quest: t,
         taskDetails: n

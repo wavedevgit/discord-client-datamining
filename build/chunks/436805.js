@@ -1,6 +1,6 @@
 /** chunk id: 436805 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => E
 });
 var i = n(627968),
     s = n(64700),
@@ -71,7 +71,7 @@ let A = e => {
             })
         })
     },
-    T = e => {
+    f = e => {
         let {
             displayName: t,
             product: n
@@ -104,7 +104,7 @@ let A = e => {
                 })
         }
     },
-    E = s.memo(e => {
+    T = s.memo(e => {
         let {
             skuId: t,
             subscriptionPlanId: n,
@@ -124,7 +124,7 @@ let A = e => {
             className: a()(g.kL, r),
             children: [x ? (0, i.jsx)(h, {
                 subscriptionPlanId: n
-            }) : (0, i.jsx)(T, {
+            }) : (0, i.jsx)(f, {
                 displayName: u,
                 product: c ?? null
             }), (0, i.jsxs)("div", {
@@ -139,5 +139,5 @@ let A = e => {
             })]
         })
     });
-E.displayName = "FamilyCenterActivityPurchaseRow";
-let f = E
+T.displayName = "FamilyCenterActivityPurchaseRow";
+let E = T

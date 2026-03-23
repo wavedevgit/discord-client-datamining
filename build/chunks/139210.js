@@ -33,32 +33,32 @@ let A = (0, r.animated)(x.Ay),
                 onCtxMenuClose: s,
                 onCtxMenuSelect: x,
                 isExpanded: C,
-                isExpansionAnimationComplete: y,
-                quest: T
+                isExpansionAnimationComplete: T,
+                quest: E
             } = i.useContext(f.T),
             S = i.useCallback(() => {
-                (0, g.Zc)(T, {
+                (0, g.Zc)(E, {
                     content: d.uF.QUEST_BAR_V2,
                     ctaContent: c.Cy.OPEN_DISCLOSURE,
                     sourceQuestContent: d.uF.QUEST_BAR_V2
                 })
-            }, [T]),
-            E = i.useCallback(() => {
-                (0, m.pu)(T, {
+            }, [E]),
+            y = i.useCallback(() => {
+                (0, m.pu)(E, {
                     content: d.uF.QUEST_BAR_V2,
                     ctaContent: c.Cy.OPEN_GAME_LINK,
                     impressionId: e,
                     sourceQuestContent: d.uF.QUEST_BAR_V2
                 })
-            }, [e, T]),
-            N = C && y,
+            }, [e, E]),
+            N = C && T,
             I = (0, a.jsx)(o.DUT, {
-                onClick: E,
+                onClick: y,
                 className: l()(j.vk, {
                     [j.wm]: N
                 }),
                 children: (0, a.jsx)(A, {
-                    quest: T,
+                    quest: E,
                     withGameTile: !1,
                     logotypeClassName: j.Iu,
                     logotypeStyle: {
@@ -116,7 +116,7 @@ let A = (0, r.animated)(x.Ay),
                     onClose: s,
                     onSelect: x,
                     questContent: d.uF.QUEST_BAR_V2,
-                    quest: T,
+                    quest: E,
                     shouldShowDisclosure: !0,
                     showShareLink: !0,
                     sourceQuestContent: d.uF.QUEST_BAR_V2,

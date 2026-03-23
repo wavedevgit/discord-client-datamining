@@ -1,7 +1,7 @@
 /** chunk id: 519480 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => _
 });
 var i = n(311907),
     s = n(73153),
@@ -38,7 +38,7 @@ class m extends i.Ay.Store {
         return A[e]
     }
 }
-let p = new m(s.h, {
+let _ = new m(s.h, {
     GUILD_DIRECTORY_FETCH_START: function() {
         o = !0
     },

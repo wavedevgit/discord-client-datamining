@@ -1,7 +1,7 @@
 /** chunk id: 31760 params = (module,exports,require) **/
 n.d(t, {
-    J: () => f,
-    q: () => E
+    J: () => E,
+    q: () => T
 });
 var i = n(627968),
     s = n(64700),
@@ -19,9 +19,9 @@ var i = n(627968),
     x = n(175631),
     p = n(430443),
     h = n(997442),
-    T = n(985018);
+    f = n(985018);
 
-function E(e) {
+function T(e) {
     let {
         label: t,
         description: n,
@@ -58,13 +58,13 @@ function E(e) {
         })
     })
 }
-let f = (0, a.zZ)(o.X.DEV_OVERRIDES, {
+let E = (0, a.zZ)(o.X.DEV_OVERRIDES, {
     useTitle: () => "Overrides",
     buildLayout: () => [p.U, h.l, u.B, m.q, g.g, d.Y, x.s, _.t, A.T, c.s],
     useInlineNotice: () => ({
         type: r.lT.INLINE_NOTICE,
         noticeType: "info",
-        useText: () => T.intl.format(T.t.UeZJlg, {
+        useText: () => f.intl.format(f.t.UeZJlg, {
             link: "https://i.dis.gd/dev-settings-changes"
         })
     })

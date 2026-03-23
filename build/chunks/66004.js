@@ -1,6 +1,6 @@
 /** chunk id: 66004 params = (module,exports,require) **/
-i.d(e, {
-    A: () => A
+i.d(t, {
+    A: () => p
 });
 var n = i(627968),
     l = i(64700),
@@ -11,67 +11,67 @@ var n = i(627968),
     d = i(58149),
     u = i(667050),
     c = i(407781),
-    m = i(652215),
-    p = i(6694);
+    A = i(652215),
+    m = i(6694);
 
-function A(t) {
+function p(e) {
     let {
-        channelId: e,
+        channelId: t,
         guildId: i,
-        userId: A,
+        userId: p,
         containerDimensions: h
-    } = t, g = (0, s.bG)([o.A], () => o.A.useReducedMotion), [f, T] = l.useState([]), S = f.length < 50;
+    } = e, g = (0, s.bG)([o.A], () => o.A.useReducedMotion), [f, T] = l.useState([]), S = f.length < 50;
     l.useEffect(() => {
-        function t(t) {
+        function e(e) {
             let {
                 channelId: n,
                 userId: l,
                 emoji: s,
                 animationType: a,
                 animationId: o
-            } = t;
-            if (null != A && A !== l) return;
+            } = e;
+            if (null != p && p !== l) return;
             let c = null != s && null != a && null != o;
-            if (n === e && !g && S && c) {
-                let t = (0, u.Br)(s),
+            if (n === t && !g && S && c) {
+                let e = (0, u.Br)(s),
                     n = null != s.id && !s.animated,
                     c = {
                         id: (0, r.A)(),
                         animationType: a,
                         animationId: o,
                         shouldResize: n,
-                        url: t,
+                        url: e,
                         userId: l
                     };
-                T(t => [...t, c]), d.Ay.trackWithMetadata(m.HAw.VOICE_CHANNEL_EFFECT_VIEWED, {
-                    channel_id: e,
+                T(e => [...e, c]), d.Ay.trackWithMetadata(A.HAw.VOICE_CHANNEL_EFFECT_VIEWED, {
+                    channel_id: t,
                     guild_id: i
                 })
             }
         }
-        return a.h.subscribe("VOICE_CHANNEL_EFFECT_SEND", t), () => {
-            a.h.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", t)
+        return a.h.subscribe("VOICE_CHANNEL_EFFECT_SEND", e), () => {
+            a.h.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", e)
         }
-    }, [e, i, A, g, S]);
-    let E = l.useCallback(t => {
-        T(e => {
-            let i = [...e],
-                n = i.findIndex(e => e.id === t);
+    }, [t, i, p, g, S]);
+    let E = l.useCallback(e => {
+        T(t => {
+            let i = [...t],
+                n = i.findIndex(t => t.id === e);
             return i.splice(n, 1), i
         })
     }, []);
     return g ? null : (0, n.jsx)("div", {
-        className: p.Y,
+        className: m.Y,
         style: {
             width: h.width
         },
         children: (0, n.jsx)("div", {
-            className: p.z,
-            children: f.map(t => (0, n.jsx)(c.A, {
+            className: m.z,
+            children: f.map(e => (0, n.jsx)(c.A, {
                 containerDimensions: h,
-                effect: t,
+                effect: e,
                 onComplete: E
-            }, t.id))
+            }, e.id))
         })
     })
 }

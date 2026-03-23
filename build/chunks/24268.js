@@ -31,28 +31,28 @@ function v() {
         C = i.useCallback(e => {
             v(e), n && t(e)
         }, [n, t]),
-        y = (0, x.i)(e => e.showSelfActivity),
-        T = (0, x.i)(e => e.setShowSelfActivity),
+        T = (0, x.i)(e => e.showSelfActivity),
+        E = (0, x.i)(e => e.setShowSelfActivity),
         S = (0, x.i)(e => e.recommendationApplicationIds),
-        E = (0, x.i)(e => e.setRecommendationApplicationIds),
+        y = (0, x.i)(e => e.setRecommendationApplicationIds),
         N = i.useCallback(e => {
-            e ? E(b) : E(null)
-        }, [b, E]),
+            e ? y(b) : y(null)
+        }, [b, y]),
         I = (0, r.bG)([h.A], () => null != h.A.testModeApplicationId),
-        k = i.useCallback(e => {
+        O = i.useCallback(e => {
             e ? (0, o.qfG)(e => (0, a.jsx)(m.A, {
                 ...e
             })) : d.cL()
         }, []),
-        O = (0, u.A)({
+        R = (0, u.A)({
             location: "DevToolsSlayerStorefrontPanel",
             applicationId: s,
             source: c.Ob.Embed,
             trackEntryPointImpression: !0
         }),
-        R = i.useCallback(e => {
-            O?.(e)
-        }, [O]);
+        k = i.useCallback(e => {
+            R?.(e)
+        }, [R]);
     return (0, a.jsx)("div", {
         className: l()(_.nd, f.n),
         children: (0, a.jsxs)("div", {
@@ -70,15 +70,15 @@ function v() {
                 onChange: A
             }), (0, a.jsx)(o.dOG, {
                 label: "Show own voice activity (bypass self check)",
-                checked: y,
-                onChange: T
+                checked: T,
+                onChange: E
             }), (0, a.jsx)(o.dOG, {
                 label: "Enable application test mode",
                 checked: I,
-                onChange: k
+                onChange: O
             }), (0, a.jsx)(o.Button, {
                 text: "Open Game Profile Modal",
-                onClick: R
+                onClick: k
             }), (0, a.jsx)(o.Heading, {
                 variant: "heading-lg/normal",
                 children: "Wishlists"

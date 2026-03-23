@@ -25,21 +25,21 @@ function p(e) {
     } = e, {
         applicationId: p,
         benefits: h,
-        description: T
-    } = n, E = s.useMemo(() => null == n.thumbnail ? null : (0, g.t)(p, n.thumbnail, 256), [p, n.thumbnail]), {
-        data: f
+        description: f
+    } = n, T = s.useMemo(() => null == n.thumbnail ? null : (0, g.t)(p, n.thumbnail, 256), [p, n.thumbnail]), {
+        data: E
     } = (0, c.j)(n.skuId), S = s.useMemo(() => {
-        if (null == f || 0 === f.length) return null;
-        let e = f[0];
+        if (null == E || 0 === E.length) return null;
+        let e = E[0];
         return (0, m._J)(e)
-    }, [f]);
+    }, [E]);
     return null == S ? null : (0, i.jsxs)(r.q, {
         className: a()(x.iE, l),
         header: (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)("div", {
                 className: x.qd,
-                children: [null != E && (0, i.jsx)(d._V3, {
-                    src: E.href,
+                children: [null != T && (0, i.jsx)(d._V3, {
+                    src: T.href,
                     imageClassName: x.rW,
                     width: 48,
                     height: 48
@@ -54,11 +54,11 @@ function p(e) {
                 })]
             }), t]
         }),
-        children: [!(0, _.uJ)(T) && (0, i.jsx)("div", {
+        children: [!(0, _.uJ)(f) && (0, i.jsx)("div", {
             className: x.h_,
             children: (0, i.jsx)(A.A, {
                 variant: "text-sm/medium",
-                children: T
+                children: f
             })
         }), null != h && h.length > 0 && (0, i.jsx)("div", {
             className: x.PX,

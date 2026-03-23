@@ -21,15 +21,15 @@ var i = n(627968),
     x = n(793943),
     p = n(826673),
     h = n(422936),
-    T = n(234419),
-    E = n(792656),
-    f = n(511484),
+    f = n(234419),
+    T = n(792656),
+    E = n(511484),
     S = n(811611),
-    C = n(97469),
-    b = n(954571),
+    b = n(97469),
+    C = n(954571),
     N = n(544028),
-    I = n(253932),
-    v = n(12901),
+    v = n(253932),
+    I = n(12901),
     j = n(652215),
     y = n(49999),
     O = n(788868),
@@ -39,15 +39,15 @@ let P = () => {
     (0, p.Dr)(a.M.CLIENT_THEMES_SPARKLE_PREVIEW, {
         dismissAction: y.i.PRIMARY,
         forceTrack: !0
-    }), (0, x.nf)(x.HP.CLIENT_THEMES), (0, v.default)()
+    }), (0, x.nf)(x.HP.CLIENT_THEMES), (0, I.default)()
 };
 
 function D() {
     let e = (0, h.O)(),
-        t = (0, f.U9)(e, O.pe.TIER_2) ? R.intl.formatToPlainString(R.t.bkQ4bH, {
+        t = (0, E.U9)(e, O.pe.TIER_2) ? R.intl.formatToPlainString(R.t.bkQ4bH, {
             percent: e?.discount.amount
         }) : R.intl.string(R.t.mr4K7D);
-    return (0, i.jsx)(E.A, {
+    return (0, i.jsx)(T.A, {
         subscriptionTier: O.pe.TIER_2,
         defaultTextOverride: t,
         premiumModalAnalyticsLocation: {
@@ -60,7 +60,7 @@ function D() {
 
 function M() {
     let e = (0, l.bG)([_.A], () => _.A.isPreview),
-        t = (0, T.V)()?.subscription_trial?.sku_id === O.pe.TIER_2;
+        t = (0, f.V)()?.subscription_trial?.sku_id === O.pe.TIER_2;
     return !e || t ? null : (0, i.jsxs)("div", {
         className: L.gY,
         children: [(0, i.jsx)(o.Button, {
@@ -78,7 +78,7 @@ function G(e) {
         analyticsLocations: a
     } = (0, m.Ay)(u.A.USER_SETTINGS);
     return (s.useEffect(() => {
-        n && b.default.track(j.HAw.PREMIUM_UPSELL_VIEWED, {
+        n && C.default.track(j.HAw.PREMIUM_UPSELL_VIEWED, {
             type: O.e.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
             location_stack: a
         })
@@ -90,7 +90,7 @@ function G(e) {
 
 function k() {
     let e = (0, l.bG)([_.A], () => _.A.isPreview),
-        t = (0, T.V)()?.subscription_trial?.sku_id === O.pe.TIER_2;
+        t = (0, f.V)()?.subscription_trial?.sku_id === O.pe.TIER_2;
     return e && t ? (0, i.jsxs)("div", {
         children: [(0, i.jsx)("div", {
             className: L.c7,
@@ -123,7 +123,7 @@ let U = () => (0, i.jsx)("div", {
 });
 
 function w() {
-    let e = (0, C.qo)(),
+    let e = (0, b.qo)(),
         {
             theme: t,
             useForcedColors: n,
@@ -133,7 +133,7 @@ function w() {
             useForcedColors: c.A.useForcedColors,
             gradientPreset: _.A.gradientPreset
         })),
-        a = null != I.eh.useSetting().customUserThemeSettings;
+        a = null != v.eh.useSetting().customUserThemeSettings;
     return t !== j.NJ8.LIGHT ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(o.cGx, {
             gap: 24

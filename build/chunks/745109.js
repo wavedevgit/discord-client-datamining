@@ -18,29 +18,29 @@ var i = n(627968),
     x = n(955872),
     p = n(71393),
     h = n(967198),
-    T = n(711014),
-    E = n(287809),
-    f = n(203982),
+    f = n(711014),
+    T = n(287809),
+    E = n(203982),
     S = n(115063),
-    C = n(507553),
-    b = n(652215),
+    b = n(507553),
+    C = n(652215),
     N = n(355097),
-    I = n(985018),
-    v = n(298109);
+    v = n(985018),
+    I = n(298109);
 let j = {
     [N.Eq.USER_PROFILE]: "main_profile_tab",
     [N.Eq.GUILD]: "guild_profile_tab"
 };
 
 function y() {
-    let e = (0, r.bG)([h.A, T.Ay, m.A], () => {
+    let e = (0, r.bG)([h.A, f.Ay, m.A], () => {
             let e = m.A.selectedGuildId ?? h.A.getGuildId();
-            return null == e || m._.has(e) ? T.Ay.getFlattenedGuildIds().find(e => !m._.has(e)) : e
+            return null == e || m._.has(e) ? f.Ay.getFlattenedGuildIds().find(e => !m._.has(e)) : e
         }),
         t = (0, r.bG)([p.A], () => p.A.getGuild(e)),
         n = (0, r.bG)([m.A], () => m.A.showNotice()),
-        l = (0, r.bG)([E.default], () => E.default.getCurrentUser()),
-        y = C.A.useField("subsection");
+        l = (0, r.bG)([T.default], () => T.default.getCurrentUser()),
+        y = b.A.useField("subsection");
     return s.useEffect(() => {
         (0, A._)(j[y])
     }, [y]), s.useEffect(() => {
@@ -48,9 +48,9 @@ function y() {
             guildId: t?.id
         })
     }, [t?.id, l]), (0, i.jsxs)(g.R, {
-        header: I.intl.string(I.t["vi7f+q"]),
+        header: v.intl.string(v.t["vi7f+q"]),
         children: [(0, i.jsxs)(o.VQ0, {
-            className: v.$H,
+            className: I.$H,
             type: "top",
             look: "brand",
             selectedItem: y,
@@ -60,23 +60,23 @@ function y() {
                         (0, S.fO)({
                             duration: 300,
                             intensity: d.n3
-                        }), f._.dispatch(b.jej.EMPHASIZE_NOTICE);
+                        }), E._.dispatch(C.jej.EMPHASIZE_NOTICE);
                         return
                     }
-                    e === N.Eq.GUILD && null != t && (0, c.V2)(t.id), C.A.setState({
+                    e === N.Eq.GUILD && null != t && (0, c.V2)(t.id), b.A.setState({
                         subsection: e
                     })
                 }
             },
             children: [(0, i.jsx)(o.VQ0.Item, {
-                className: v.YU,
+                className: I.YU,
                 id: N.Eq.USER_PROFILE,
-                children: I.intl.string(I.t["2p07FR"])
+                children: v.intl.string(v.t["2p07FR"])
             }, N.Eq.USER_PROFILE), (0, i.jsx)(o.VQ0.Item, {
-                className: a()(v.YU, v.HY),
-                "aria-label": I.intl.string(I.t.kPHroX),
+                className: a()(I.YU, I.HY),
+                "aria-label": v.intl.string(v.t.kPHroX),
                 id: N.Eq.GUILD,
-                children: I.intl.string(I.t.kPHroX)
+                children: v.intl.string(v.t.kPHroX)
             }, N.Eq.GUILD)]
         }), y === N.Eq.GUILD ? (0, i.jsx)(u.A, {
             selectedGuild: t,
@@ -85,7 +85,7 @@ function y() {
                     (0, S.fO)({
                         duration: 300,
                         intensity: d.n3
-                    }), f._.dispatch(b.jej.EMPHASIZE_NOTICE);
+                    }), E._.dispatch(C.jej.EMPHASIZE_NOTICE);
                     return
                 }
                 null != e && (0, c.JJ)(e.id)

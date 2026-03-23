@@ -18,12 +18,12 @@ var i = n(627968),
     x = n(235986),
     p = n(544028),
     h = n(652215),
-    T = n(986238),
-    E = n(138666),
-    f = n(506823),
+    f = n(986238),
+    T = n(138666),
+    E = n(506823),
     S = n(473169);
-let C = ["discord_web", "discord_marketing", "discord_developers", "discord_ios", "discord_android"],
-    b = [{
+let b = ["discord_web", "discord_marketing", "discord_developers", "discord_ios", "discord_android"],
+    C = [{
         id: "branch",
         value: "branch",
         label: "Branch Name"
@@ -36,7 +36,7 @@ let C = ["discord_web", "discord_marketing", "discord_developers", "discord_ios"
 function N(e) {
     return "discord_ios" in e || "discord_android" in e
 }
-class I extends s.Component {
+class v extends s.Component {
     handleRemoveBuildOverride = () => {
         this.props.onBuildOverrideRemoved(this.props.project)
     };
@@ -61,10 +61,10 @@ class I extends s.Component {
         } = this.props;
         return (0, i.jsxs)(x.A, {
             direction: x.A.Direction.VERTICAL,
-            className: a()(E.oS, S.SX, f.N, E.nM),
+            className: a()(T.oS, S.SX, E.N, T.nM),
             children: [(0, i.jsx)(m.A, {
-                className: a()(E.lL, {
-                    [E.zi]: s
+                className: a()(T.lL, {
+                    [T.zi]: s
                 }),
                 onClick: s ? void 0 : this.handleRemoveBuildOverride
             }), (0, i.jsxs)(x.A, {
@@ -74,7 +74,7 @@ class I extends s.Component {
                     children: (0, i.jsx)(u.l6P, {
                         selectionMode: "single",
                         label: "Override Type",
-                        options: b,
+                        options: C,
                         onSelectionChange: this.handleOverrideTypeChanged,
                         value: t,
                         disabled: s
@@ -91,13 +91,13 @@ class I extends s.Component {
                 })]
             }), (0, i.jsxs)(x.A.Child, {
                 children: [null != l && "" !== l && (0, i.jsx)(u.Text, {
-                    className: E.AS,
+                    className: T.AS,
                     color: "text-feedback-critical",
                     variant: "text-sm/normal",
                     children: l
                 }), (0, i.jsxs)(u.Text, {
                     variant: "text-sm/normal",
-                    className: E.AS,
+                    className: T.AS,
                     children: ["This controls the build that will be served for the ", (0, i.jsx)("code", {
                         children: e
                     }), " project."]
@@ -106,7 +106,7 @@ class I extends s.Component {
         })
     }
 }
-class v extends s.Component {
+class I extends s.Component {
     state = {
         loading: !0,
         buildOverrides: {},
@@ -143,7 +143,7 @@ class v extends s.Component {
         } = this.state;
         if (null == e) return [];
         let t = Object.keys(e);
-        return o().without(C, ...t)
+        return o().without(b, ...t)
     }
     handleAddBuildOverride = e => {
         if (null == e) return;
@@ -241,7 +241,7 @@ class v extends s.Component {
             saving: t,
             errors: n
         } = this.state;
-        return null == e ? null : o().map(e, (e, s) => (0, i.jsx)(I, {
+        return null == e ? null : o().map(e, (e, s) => (0, i.jsx)(v, {
             project: s,
             overrideType: e.type,
             overrideId: e.id,
@@ -478,7 +478,7 @@ class j extends s.Component {
             allowLoggedOut: o,
             experiments: d,
             experimentsError: c
-        } = this.state, m = T.fL.find(t => t.value === e), _ = l.map(e => ({
+        } = this.state, m = f.fL.find(t => t.value === e), _ = l.map(e => ({
             id: e,
             label: e,
             value: e
@@ -489,13 +489,13 @@ class j extends s.Component {
                 selectionMode: "single",
                 label: "Expire After",
                 value: null != m ? m.value : void 0,
-                options: T.fL,
+                options: f.fL,
                 onSelectionChange: this.handleExpirationChange
             }), this.isMobile() ? null : (0, i.jsx)(u.l6P, {
                 selectionMode: "single",
                 label: "Release Channel",
                 value: t,
-                options: T.VP,
+                options: f.VP,
                 onSelectionChange: this.handleReleaseChannelChange
             }), this.isMobile() ? (0, i.jsxs)(u.BJc, {
                 gap: 20,
@@ -585,4 +585,4 @@ class j extends s.Component {
         })
     }
 }
-let y = v
+let y = I

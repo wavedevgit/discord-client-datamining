@@ -45,16 +45,16 @@ let p = e => {
             v = g ? t : f,
             b = g || !_ && v.size > 0,
             [j, A] = i.useState(""),
-            [C, y] = i.useState(null),
-            [T, S] = i.useState(null);
+            [C, T] = i.useState(null),
+            [E, S] = i.useState(null);
         return (i.useEffect(() => {
             if ("" === j.trim() || !b) {
-                y(null), S(null);
+                T(null), S(null);
                 return
             }
             let e = d.A.getProduct(j),
                 t = d.A.getCategoryForProduct(j);
-            null != e && null != t ? (y(e), S(t)) : (y(null), S(null))
+            null != e && null != t ? (T(e), S(t)) : (T(null), S(null))
         }, [j, b]), _) ? (0, a.jsx)(l.Text, {
             variant: "text-md/normal",
             children: "Loading categories and collectibles..."
@@ -97,7 +97,7 @@ let p = e => {
                 children: [(0, a.jsx)(l.Heading, {
                     variant: "heading-lg/semibold",
                     children: "Product Preview"
-                }), null != C && null != T ? (0, a.jsxs)("div", {
+                }), null != C && null != E ? (0, a.jsxs)("div", {
                     className: x.i1,
                     children: [(0, a.jsx)(p, {
                         skuId: C.skuId

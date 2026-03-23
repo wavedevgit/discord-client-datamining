@@ -1,6 +1,6 @@
 /** chunk id: 983806 params = (module,exports,require) **/
 n.d(t, {
-    b: () => T
+    b: () => f
 });
 var i = n(627968),
     s = n(64700),
@@ -56,7 +56,7 @@ let h = () => {
             })
         })
     },
-    T = () => {
+    f = () => {
         let {
             selectedTab: e,
             handleTabChange: t

@@ -1,58 +1,58 @@
 /** chunk id: 883662 params = (module,exports,require) **/
 "use strict";
-r.d(t, {
-    A: () => f
+n.d(t, {
+    A: () => _
 });
-var n = r(627968),
-    a = r(64700),
-    i = r(311907),
-    l = r(521489),
-    s = r(397927),
-    o = r(775602),
-    c = r(531685),
-    u = r(203982),
-    d = r(418829),
-    h = r(652215);
+var r = n(627968),
+    i = n(64700),
+    a = n(311907),
+    l = n(521489),
+    s = n(397927),
+    o = n(775602),
+    c = n(531685),
+    u = n(203982),
+    d = n(418829),
+    h = n(652215);
 
-function f(e) {
+function _(e) {
     let {
         partialRoot: t,
-        target: r,
-        defaultTarget: f,
-        onViewChange: _,
+        target: n,
+        defaultTarget: _,
+        onViewChange: f,
         sidebarFooter: m,
         emptyState: p,
-        searchQuery: g,
-        clearSearchQuery: b,
+        searchQuery: b,
+        clearSearchQuery: g,
         searchBar: y,
         ...v
-    } = e, [x, E] = a.useState(!1), [S, A] = a.useState(1.4), N = a.useRef(null), C = (0, i.bG)([o.A], () => o.A.useReducedMotion), j = (0, i.bG)([c.A], () => c.A.isFocused());
-    return a.useEffect(() => {
+    } = e, [x, E] = i.useState(!1), [A, S] = i.useState(1.4), N = i.useRef(null), C = (0, a.bG)([o.A], () => o.A.useReducedMotion), j = (0, a.bG)([c.A], () => c.A.isFocused());
+    return i.useEffect(() => {
         let e = e => {
             let {
                 intensity: t,
-                duration: r
+                duration: n
             } = e;
-            !C && j && (E(!0), A(t ?? 1.4), clearTimeout(N.current), N.current = setTimeout(() => E(!1), r ?? 1e3))
+            !C && j && (E(!0), S(t ?? 1.4), clearTimeout(N.current), N.current = setTimeout(() => E(!1), n ?? 1e3))
         };
         return u._.subscribe(h.jej.SHAKE_SETTINGS_MODAL, e), () => {
             u._.unsubscribe(h.jej.SHAKE_SETTINGS_MODAL, e), clearTimeout(N.current)
         }
-    }, [C, j]), (0, n.jsx)(s.bfh, {
+    }, [C, j]), (0, r.jsx)(s.bfh, {
         isShaking: x,
-        intensity: S,
-        children: (0, n.jsx)(l.N, {
+        intensity: A,
+        children: (0, r.jsx)(l.N, {
             ...v,
-            children: (0, n.jsx)(d.A, {
+            children: (0, r.jsx)(d.A, {
                 onClose: v.onClose,
                 partialRoot: t,
-                target: r,
-                defaultTarget: f,
-                onViewChange: _,
+                target: n,
+                defaultTarget: _,
+                onViewChange: f,
                 emptyState: p,
                 sidebarFooter: m,
-                searchQuery: g,
-                clearSearchQuery: b,
+                searchQuery: b,
+                clearSearchQuery: g,
                 searchBar: y
             })
         })
