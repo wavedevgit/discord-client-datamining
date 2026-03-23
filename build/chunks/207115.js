@@ -1,6 +1,6 @@
 /** chunk id: 207115 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => h
 });
 var i = n(627968),
     l = n(64700),
@@ -9,35 +9,36 @@ var i = n(627968),
     s = n(157559),
     o = n(969632),
     d = n(649963),
-    c = n(406704),
-    u = n(576705),
-    g = n(486020),
-    A = n(690521),
-    m = n(652215),
-    p = n(985018);
+    c = n(815807),
+    u = n(406704),
+    g = n(576705),
+    A = n(486020),
+    m = n(690521),
+    p = n(652215),
+    f = n(985018);
 
-function f(e, t) {
+function h(e, t) {
     let {
         reducedMotion: n
-    } = l.useContext(r.CZY), g = (0, c.Id)(t), f = (0, a.bG)([u.A], () => u.A.can(m.xBc.MANAGE_MESSAGES, t) && g, [t, g]), y = e.reactions.reduce((e, t) => t.count_details?.vote != null || null != e.find(e => null != e.id && e.id === t.emoji.id || e.name === t.emoji.name) ? e : [...e, t.emoji], []);
-    return !f || null == e.reactions || 0 === e.reactions.length || e.isPoll() && !(0, o.Gh)(e) ? null : (0, i.jsx)(r.Drp, {
+    } = l.useContext(r.CZY), A = (0, u.Id)(t), h = (0, a.bG)([g.A], () => g.A.can(p.xBc.MANAGE_MESSAGES, t) && A, [t, A]), E = e.reactions.reduce((e, t) => t.count_details?.vote != null || null != e.find(e => null != e.id && e.id === t.emoji.id || e.name === t.emoji.name) ? e : [...e, t.emoji], []);
+    return !h || null == e.reactions || 0 === e.reactions.length || e.isPoll() && !(0, o.Gh)(e) ? null : (0, i.jsx)(r.Drp, {
         id: "remove-emoji-reactions",
-        label: p.intl.string(p.t["zx/e4P"]),
+        label: f.intl.string(f.t["zx/e4P"]),
         leadingAccessory: {
             type: "icon",
             icon: r.FD6
         },
         color: "danger",
-        children: y.map(l => (0, i.jsx)(r.Drp, {
+        children: E.map(l => (0, i.jsx)(r.Drp, {
             id: `remove-emoji-reactions-${l.name??l.id}`,
-            label: null == l.id ? l.name : `:${l.name}:`,
+            label: (0, c.b3)(l),
             action: n => {
                 n.shiftKey ? (0, d.Jf)(t.id, e.id, l) : s.A.show({
-                    title: p.intl.string(p.t["73GqTz"]),
-                    body: p.intl.string(p.t.dmy5bn),
-                    confirmText: p.intl.string(p.t.p89ACt),
+                    title: f.intl.string(f.t["73GqTz"]),
+                    body: f.intl.string(f.t.dmy5bn),
+                    confirmText: f.intl.string(f.t.p89ACt),
                     confirmVariant: "critical-primary",
-                    cancelText: p.intl.string(p.t.gm1Vej),
+                    cancelText: f.intl.string(f.t.gm1Vej),
                     onConfirm: () => {
                         (0, d.Jf)(t.id, e.id, l)
                     }
@@ -46,10 +47,10 @@ function f(e, t) {
             leadingAccessory: {
                 type: "emoji",
                 emojiId: l.id,
-                src: null == l.id ? A.Ay.getURL(l.name ?? "") : void 0,
+                src: null == l.id ? m.Ay.getURL(l.name ?? "") : void 0,
                 animated: l.animated
             },
-            icon: e => (0, i.jsx)(h, {
+            icon: e => (0, i.jsx)(y, {
                 ...e,
                 reducedMotionEnabled: n.enabled,
                 emoji: l
@@ -59,7 +60,7 @@ function f(e, t) {
     })
 }
 
-function h(e) {
+function y(e) {
     let {
         emoji: t,
         reducedMotionEnabled: n,
@@ -68,11 +69,11 @@ function h(e) {
     } = e;
     return (0, i.jsx)("img", {
         className: l,
-        src: null != t.id ? g.Ay.getEmojiURL({
+        src: null != t.id ? A.Ay.getEmojiURL({
             id: t.id,
             animated: t.animated && (!n || a),
             size: 18
-        }) : A.Ay.getURL(t.name ?? ""),
+        }) : m.Ay.getURL(t.name ?? ""),
         alt: ""
     })
 }
