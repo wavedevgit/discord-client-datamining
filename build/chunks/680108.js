@@ -4,8 +4,8 @@ n.d(t, {
 }), n(508300);
 var a = n(627968),
     i = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    s = n(503698),
+    l = n.n(s),
     r = n(835245),
     o = n(311907),
     d = n(397927),
@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(817363),
     m = n(315949),
     h = n(559474),
-    p = n(259248),
-    x = n(43708),
+    x = n(259248),
+    p = n(43708),
     g = n(14752),
     _ = n(103748),
     f = n(553622);
@@ -25,7 +25,7 @@ let v = "Make sure you're only uploading text files!",
             onClick: n
         } = e, {
             deleteConfig: i
-        } = (0, x.wu)();
+        } = (0, p.wu)();
         return (0, a.jsxs)(d.DUT, {
             className: f.B0,
             onClick: () => {
@@ -57,7 +57,7 @@ function j() {
         profileEffects: e,
         upsertConfig: t,
         clearAll: n
-    } = (0, x.wu)(), [l, j] = i.useState(), A = i.useRef(null), C = (0, o.yK)([p.A], () => p.A.getAllProfileEffects());
+    } = (0, p.wu)(), [s, j] = i.useState(), A = i.useRef(null), C = (0, o.yK)([x.A], () => x.A.getAllProfileEffects());
     (0, m.A)();
     let [y, T] = i.useState(""), S = i.useMemo(() => "" === y ? C : C.filter(e => {
         let t = y.toLowerCase(),
@@ -68,18 +68,18 @@ function j() {
         if (null == n || !e.type.startsWith("text/")) return (0, h.Ni)(v);
         let [a, i] = n.split(",");
         if (!a.includes("text/plain")) return (0, h.Ni)(v);
-        let l = JSON.parse(atob(i));
-        l.skuId = (0, r.A)(), t(l), (0, h.GF)("Profile Effect (maybe??) imported!")
+        let s = JSON.parse(atob(i));
+        s.skuId = (0, r.A)(), t(s), (0, h.GF)("Profile Effect (maybe??) imported!")
     }, [t]), N = i.useCallback(e => {
         e.currentTarget?.files == null ? (0, h.Ni)("Error uploading file. Try again!") : (0, h.KE)(e.currentTarget.files, E, h.Ni)
     }, [E]);
     return (0, a.jsxs)("div", {
         className: f.zr,
-        children: [null == l && (0, a.jsxs)(a.Fragment, {
+        children: [null == s && (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsxs)("div", {
                 className: f.nz,
                 children: [(0, a.jsxs)("div", {
-                    className: s()(f.uW, f.nM),
+                    className: l()(f.uW, f.nM),
                     children: [(0, a.jsx)(d.Heading, {
                         variant: "heading-xl/bold",
                         children: "Custom Profile Effects"
@@ -105,7 +105,7 @@ function j() {
                     }, e.skuId))
                 })]
             }), (0, a.jsxs)("div", {
-                className: s()(f.nM, f._N, f.uW),
+                className: l()(f.nM, f._N, f.uW),
                 children: [(0, a.jsxs)("div", {
                     className: f.au,
                     children: [(0, a.jsx)(d.Text, {
@@ -186,8 +186,8 @@ function j() {
                     }, e.skuId))
                 })]
             })]
-        }), null != l && (0, a.jsx)(_.A, {
-            effect: l
+        }), null != s && (0, a.jsx)(_.A, {
+            effect: s
         })]
     })
 }

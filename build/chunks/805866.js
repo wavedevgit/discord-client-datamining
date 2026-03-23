@@ -5,8 +5,8 @@ n.d(t, {
     Vn: () => d,
     wP: () => r
 }), n(64700);
-var a, i, l = n(646284),
-    s = n(985018),
+var a, i, s = n(646284),
+    l = n(985018),
     r = ((a = {})[a.REFRESH_APP = -1] = "REFRESH_APP", a[a.EMAIL_VERIFICATION = 3] = "EMAIL_VERIFICATION", a[a.AGE_VERIFICATION = 9] = "AGE_VERIFICATION", a);
 let o = {
         EMAIL_VERIFICATION: "email_verification",
@@ -16,5 +16,5 @@ let o = {
         AGE_VERIFICATION: "age_verification"
     },
     d = new Set(Object.values(o));
-s.intl.string(l.default["Qm6K/s"]), s.intl.string(l.default["dSkE/A"]);
+l.intl.string(s.default["Qm6K/s"]), l.intl.string(s.default["dSkE/A"]);
 var c = ((i = {}).Empty = "empty", i.VerificationCode = "verification_code", i)

@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var a = n(627968),
     i = n(64700),
-    l = n(554146),
-    s = n(379848),
+    s = n(554146),
+    l = n(379848),
     r = n(948011),
     o = n(364504);
 
@@ -18,20 +18,20 @@ function d(e) {
         location: "AccountProfilePopoutUpsell"
     }), u = i.useMemo(() => {
         let e = [];
-        return c && e.push(l.M.WISHLIST_USER_PROFILE_ACCOUNT_POPOUT_UPSELL), e
+        return c && e.push(s.M.WISHLIST_USER_PROFILE_ACCOUNT_POPOUT_UPSELL), e
     }, [c]);
-    return (0, a.jsx)(s.Ay, {
+    return (0, a.jsx)(l.Ay, {
         contentTypes: u,
         bypassAutoDismiss: !0,
         children: e => {
             let {
                 visibleContent: i,
-                markAsDismissed: s
+                markAsDismissed: l
             } = e;
-            return null == d ? null : i === l.M.WISHLIST_USER_PROFILE_ACCOUNT_POPOUT_UPSELL ? (0, a.jsx)(o.A, {
+            return null == d ? null : i === s.M.WISHLIST_USER_PROFILE_ACCOUNT_POPOUT_UPSELL ? (0, a.jsx)(o.A, {
                 profileUserId: t?.userId,
                 handleOpenUserProfileModal: n,
-                markAsDismissed: s
+                markAsDismissed: l
             }) : null
         }
     })

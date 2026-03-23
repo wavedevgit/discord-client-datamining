@@ -4,13 +4,13 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(735438),
-    s = n(182592),
+    s = n(735438),
+    l = n(182592),
     r = n(517286);
 let o = e => {
     let {
         config: t
-    } = e, n = i.useMemo(() => (0, l.cloneDeep)(t), [t]), o = i.useMemo(() => t.effects.some(e => null != e.randomizedSources && e.randomizedSources.length > 0), [t]), d = i.useMemo(() => {
+    } = e, n = i.useMemo(() => (0, s.cloneDeep)(t), [t]), o = i.useMemo(() => t.effects.some(e => null != e.randomizedSources && e.randomizedSources.length > 0), [t]), d = i.useMemo(() => {
         if (o) {
             var e;
             let a = 1 === (e = n.effects.reduce((e, t) => {
@@ -28,7 +28,7 @@ let o = e => {
         config: d,
         skuId: "debug"
     }, !0);
-    return (0, a.jsx)(s.p, {
+    return (0, a.jsx)(l.p, {
         profileEffectConfig: d,
         layerData: c,
         skuId: "debug"

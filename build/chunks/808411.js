@@ -9,14 +9,14 @@ var a = l(627968),
     o = l(914410),
     s = l(252561);
 let u = () => {
-    let [e, t] = n.useState(0), [l, u] = n.useState(4), [c, d] = n.useState(2), [p, m] = n.useState(o.fh.LIGHT), [h, x] = n.useState(o.qP.BLUE), [b, y] = n.useState("darkslategray"), [g, f] = n.useState("blanchedalmond"), [v, E] = n.useState("pink"), [S, j] = n.useState(!0), T = n.useMemo(() => Object.entries(o.fh).map(e => {
+    let [e, t] = n.useState(0), [l, u] = n.useState(4), [c, d] = n.useState(2), [p, m] = n.useState(o.fh.LIGHT), [h, b] = n.useState(o.qP.BLUE), [x, y] = n.useState("darkslategray"), [f, g] = n.useState("blanchedalmond"), [v, _] = n.useState("pink"), [E, C] = n.useState(!0), S = n.useMemo(() => Object.entries(o.fh).map(e => {
         let [t, l] = e;
         return {
             id: l,
             label: t,
             value: l
         }
-    }), []), C = n.useMemo(() => Object.entries(o.qP).map(e => {
+    }), []), j = n.useMemo(() => Object.entries(o.qP).map(e => {
         let [t, l] = e;
         return {
             id: l,
@@ -33,12 +33,12 @@ let u = () => {
             variant: h,
             override: {
                 default: {
-                    background: b,
-                    gradientStart: g,
+                    background: x,
+                    gradientStart: f,
                     gradientEnd: v
                 }
             },
-            glowing: S
+            glowing: E
         }), (0, a.jsx)(s.nB, {}), (0, a.jsx)(s.MG, {
             children: (0, a.jsx)(i.ksK, {
                 type: "number",
@@ -72,10 +72,10 @@ let u = () => {
                 hideLabel: !0,
                 placeholder: "Variant",
                 onSelectionChange: e => {
-                    null !== e && x(e)
+                    null !== e && b(e)
                 },
                 value: h,
-                options: C,
+                options: j,
                 selectionMode: "single",
                 fullWidth: !0
             })
@@ -88,14 +88,14 @@ let u = () => {
                     null !== e && m(e)
                 },
                 value: p,
-                options: T
+                options: S
             })
         }), (0, a.jsx)(s.MG, {
             children: (0, a.jsx)(i.Checkbox, {
                 label: "Glowing",
-                checked: S,
+                checked: E,
                 onChange: e => {
-                    j(e)
+                    C(e)
                 }
             })
         }), (0, a.jsx)(s.nB, {}), (0, a.jsx)(i.Text, {
@@ -107,7 +107,7 @@ let u = () => {
             children: 'Note: this component allows setting overrides per theme. For simplicity in this story, we only set the "default" override which applies to all themes'
         }), (0, a.jsx)(s.MG, {
             children: (0, a.jsx)(i.ksK, {
-                value: b,
+                value: x,
                 onChange: e => {
                     y(e)
                 },
@@ -115,9 +115,9 @@ let u = () => {
             })
         }), (0, a.jsx)(s.MG, {
             children: (0, a.jsx)(i.ksK, {
-                value: g,
+                value: f,
                 onChange: e => {
-                    f(e)
+                    g(e)
                 },
                 label: "Gradient Start"
             })
@@ -125,7 +125,7 @@ let u = () => {
             children: (0, a.jsx)(i.ksK, {
                 value: v,
                 onChange: e => {
-                    E(e)
+                    _(e)
                 },
                 label: "Gradient End"
             })

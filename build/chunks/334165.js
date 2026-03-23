@@ -4,21 +4,21 @@ n.d(t, {
 });
 var a = n(311907),
     i = n(73153);
-let l = {
+let s = {
         lastSeenInfos: {}
     },
-    s = l;
+    l = s;
 class r extends a.Ay.PersistedStore {
     static displayName = "GuildTagChangedCoachmarkStore";
     static persistKey = "GuildTagChangedCoachmarkStore";
     initialize(e) {
-        s = e ?? l
+        l = e ?? s
     }
     getState() {
-        return s
+        return l
     }
     getGuildLastSeenInfo(e) {
-        return s.lastSeenInfos[e] ?? null
+        return l.lastSeenInfos[e] ?? null
     }
 }
 let o = new r(i.h, {
@@ -27,9 +27,9 @@ let o = new r(i.h, {
             guildId: t,
             lastSeenInfo: n
         } = e;
-        s.lastSeenInfos[t] = n
+        l.lastSeenInfos[t] = n
     },
     LOGOUT: function() {
-        s = l
+        l = s
     }
 })

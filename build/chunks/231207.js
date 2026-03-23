@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(488428),
-    s = n(835245),
+    s = n(488428),
+    l = n(835245),
     r = n(311907),
     o = n(435371),
     d = n(421380),
@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(384904),
     m = n(73825),
     h = n(793574),
-    p = n(688810),
-    x = n(589078),
+    x = n(688810),
+    p = n(589078),
     g = n(541689),
     _ = n(721923),
     f = n(300233),
@@ -50,12 +50,12 @@ let D = function() {
         id: e.id,
         value: e,
         label: e.name
-    })), [P, L] = i.useState(M.length > 0 ? M[0].value : null), [U, B] = i.useState(""), [G, F] = i.useState({
+    })), [P, U] = i.useState(M.length > 0 ? M[0].value : null), [L, B] = i.useState(""), [G, F] = i.useState({
         plan_id: O.gD.PREMIUM_MONTH_TIER_2,
         gift: "true"
     }), V = "true" !== G.gift && null != D, [W, H] = i.useState(M.length > 0 ? M[0].value : null), {
         analyticsLocations: K
-    } = (0, p.Ay)(h.A.PAYMENT_FLOW_TEST_PAGE), [z, $] = i.useState(""), [q, Q] = i.useState(k.dJq), {
+    } = (0, x.Ay)(h.A.PAYMENT_FLOW_TEST_PAGE), [z, $] = i.useState(""), [q, Q] = i.useState(k.dJq), {
         balance: Y,
         isFetching: J,
         error: X
@@ -63,8 +63,8 @@ let D = function() {
         isSubmitting: Z,
         responseMessage: ee,
         redeemVirtualCurrency: et
-    } = (0, S.Q)(), [en, ea] = i.useState(k.dJq), [ei, el] = i.useState(""), [es, er] = i.useState(k.dJq), [eo, ed] = i.useState(k.dJq);
-    return (0, a.jsx)(p.f5, {
+    } = (0, S.Q)(), [en, ea] = i.useState(k.dJq), [ei, es] = i.useState(""), [el, er] = i.useState(k.dJq), [eo, ed] = i.useState(k.dJq);
+    return (0, a.jsx)(x.f5, {
         value: K,
         children: (0, a.jsx)(c.IpV, {
             className: R.XG,
@@ -146,7 +146,7 @@ let D = function() {
                         label: "Boost",
                         value: P,
                         options: M,
-                        onSelectionChange: e => L(e),
+                        onSelectionChange: e => U(e),
                         selectionMode: "single",
                         fullWidth: !0
                     }), null != P ? (0, a.jsx)(_.A, {
@@ -168,17 +168,17 @@ let D = function() {
                         children: [(0, a.jsx)(c.ksK, {
                             label: "Standalone: Trial Promotion Redemption",
                             placeholder: "Promotion Code",
-                            value: U,
+                            value: L,
                             onChange: e => B(e)
                         }), (0, a.jsx)(o.m_, {
                             text: "Need Promotion Code",
-                            shouldShow: U.length < 1,
+                            shouldShow: L.length < 1,
                             children: (0, a.jsx)(c.Button, {
                                 variant: "primary",
                                 text: "Open Link",
-                                disabled: U.length < 1,
+                                disabled: L.length < 1,
                                 onClick: () => {
-                                    window.open(k.BVt.BILLING_PROMOTION_REDEMPTION(U))
+                                    window.open(k.BVt.BILLING_PROMOTION_REDEMPTION(L))
                                 }
                             })
                         })]
@@ -238,7 +238,7 @@ let D = function() {
                         text: "Open Link",
                         disabled: V,
                         onClick: () => {
-                            window.open(k.BVt.BILLING_PREMIUM_SUBSCRIBE + "?" + l.stringify({
+                            window.open(k.BVt.BILLING_PREMIUM_SUBSCRIBE + "?" + s.stringify({
                                 ...G
                             }))
                         }
@@ -276,7 +276,7 @@ let D = function() {
                         variant: "primary",
                         text: "Redeem Virtual Currency for SKU",
                         loading: Z,
-                        onClick: () => et(en, (0, s.A)())
+                        onClick: () => et(en, (0, l.A)())
                     }), null != ee && (0, a.jsx)(c.Text, {
                         variant: "text-sm/normal",
                         children: ee
@@ -340,21 +340,21 @@ let D = function() {
                                 hideLabel: !0,
                                 placeholder: "Application Id",
                                 value: ei,
-                                onChange: el
+                                onChange: es
                             }), (0, a.jsx)(c.ksK, {
                                 label: "SKU ID",
                                 hideLabel: !0,
                                 placeholder: "SKU ID",
-                                value: es,
+                                value: el,
                                 onChange: e => er(e)
                             }), (0, a.jsx)(c.Button, {
                                 variant: "primary",
                                 text: "Open Standard Payment Modal for SKU",
                                 onClick: () => (0, y.A)({
                                     applicationId: ei,
-                                    skuId: es,
+                                    skuId: el,
                                     analyticsLocations: K,
-                                    checkoutFlow: x.CL.PREMIUM_APPS_OTP_CHECKOUT
+                                    checkoutFlow: p.CL.PREMIUM_APPS_OTP_CHECKOUT
                                 })
                             })]
                         })

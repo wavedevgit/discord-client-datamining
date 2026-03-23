@@ -5,8 +5,8 @@ n.d(t, {
 var a = n(627968);
 n(64700);
 var i = n(503698),
-    l = n.n(i),
-    s = n(136722),
+    s = n.n(i),
+    l = n(136722),
     r = n(311907),
     o = n(397927),
     d = n(47167),
@@ -14,8 +14,8 @@ var i = n(503698),
     u = n(71393),
     m = n(576705),
     h = n(309010),
-    p = n(967198),
-    x = n(558393),
+    x = n(967198),
+    p = n(558393),
     g = n(737045),
     _ = n(574068),
     f = n(661251);
@@ -24,15 +24,15 @@ function v(e) {
     let {
         title: t,
         can: n
-    } = e, i = n ? o.A9s : o.PGe, s = (0, a.jsx)("div", {
-        className: l()(_.v_, n ? _.uU : _.Ss),
+    } = e, i = n ? o.A9s : o.PGe, l = (0, a.jsx)("div", {
+        className: s()(_.v_, n ? _.uU : _.Ss),
         children: (0, a.jsx)(i, {
             className: _.Kk
         })
     });
     return (0, a.jsxs)("div", {
         className: _.z8,
-        children: [s, (0, a.jsx)("div", {
+        children: [l, (0, a.jsx)("div", {
             className: _.rv,
             children: (0, a.jsx)(o.Text, {
                 variant: "text-md/normal",
@@ -44,19 +44,19 @@ function v(e) {
 
 function b() {
     let e = (0, r.bG)([h.A], () => h.A.getChannelId()),
-        t = (0, r.bG)([p.A], () => p.A.getGuildId()),
+        t = (0, r.bG)([x.A], () => x.A.getGuildId()),
         n = (0, r.bG)([c.A], () => c.A.getChannel(e)),
         i = (0, r.bG)([u.A], () => u.A.getGuild(t)),
         b = (0, r.bG)([m.A], () => m.A.computePermissions(n)),
         j = (0, r.bG)([m.A], () => m.A.computePermissions(i)),
         A = (0, d.Ay)(n, !0),
         C = null != n ? (0, g.mW)(n, !1) : null,
-        y = null != i ? x.A.getGuildPermissionSpecMap(i) : null,
+        y = null != i ? p.A.getGuildPermissionSpecMap(i) : null,
         T = Object.values(C ?? {}).map(e => {
             let {
                 title: t,
                 flag: n
-            } = e, i = s.zy(b, n);
+            } = e, i = l.zy(b, n);
             return (0, a.jsx)(v, {
                 title: t,
                 can: i
@@ -66,14 +66,14 @@ function b() {
             let {
                 title: t,
                 flag: n
-            } = e, i = s.zy(j, n);
+            } = e, i = l.zy(j, n);
             return (0, a.jsx)(v, {
                 title: t,
                 can: i
             }, t)
         });
     return (0, a.jsx)("div", {
-        className: l()(f.nd, _.nd),
+        className: s()(f.nd, _.nd),
         children: (0, a.jsxs)("div", {
             className: _.l$,
             children: [(0, a.jsxs)("section", {

@@ -1,11 +1,11 @@
 /** chunk id: 982078 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => x
 });
 var a = n(627968),
     i = n(158954),
-    l = n(311907),
-    s = n(397927),
+    s = n(311907),
+    l = n(397927),
     r = n(817281),
     o = n(736653),
     d = n(837529),
@@ -22,19 +22,19 @@ let m = [5793266, 2303016],
         value: "non-nitro"
     }];
 
-function p() {
+function x() {
     let {
         themeOverride: e,
         setThemeOverride: t,
         savedClientTheme: n,
-        setSavedClientTheme: p
-    } = (0, d.Zt)(), x = (0, o.Ay)(), g = (0, l.bG)([c.A], () => c.A.settings.appearance?.clientThemeSettings), _ = g?.customUserThemeSettings != null && null != g.customUserThemeSettings.colors && g.customUserThemeSettings.colors.length > 0;
+        setSavedClientTheme: x
+    } = (0, d.Zt)(), p = (0, o.Ay)(), g = (0, s.bG)([c.A], () => c.A.settings.appearance?.clientThemeSettings), _ = g?.customUserThemeSettings != null && null != g.customUserThemeSettings.colors && g.customUserThemeSettings.colors.length > 0;
 
     function f() {
         null != n && ((0, r.u_)({
             theme: n.theme,
             customUserThemeSettings: n.customUserThemeSettings
-        }), p(null))
+        }), x(null))
     }
     return (0, a.jsx)(i.ArX, {
         children: (0, a.jsxs)(i.BJc, {
@@ -44,7 +44,7 @@ function p() {
                 boxSizing: "border-box"
             },
             children: [(0, a.jsxs)("div", {
-                children: [(0, a.jsx)(s.Nt8, {
+                children: [(0, a.jsx)(l.Nt8, {
                     collapsibleContent: (0, a.jsxs)(i.BJc, {
                         gap: 8,
                         padding: 4,
@@ -118,7 +118,7 @@ function p() {
                             variant: "text-md/medium",
                             color: "text-strong",
                             children: "Primary Color"
-                        }), (0, a.jsx)(s.VNw, {
+                        }), (0, a.jsx)(l.VNw, {
                             wrapperComponentType: "div",
                             showEyeDropper: !0,
                             eagerUpdate: !0,
@@ -134,7 +134,7 @@ function p() {
                             variant: "text-md/medium",
                             color: "text-strong",
                             children: "Secondary Color"
-                        }), (0, a.jsx)(s.VNw, {
+                        }), (0, a.jsx)(l.VNw, {
                             wrapperComponentType: "div",
                             showEyeDropper: !0,
                             eagerUpdate: !0,
@@ -176,8 +176,8 @@ function p() {
                             size: "sm",
                             text: "Use System Theme",
                             onClick: function() {
-                                g?.customUserThemeSettings != null && p({
-                                    theme: x,
+                                g?.customUserThemeSettings != null && x({
+                                    theme: p,
                                     customUserThemeSettings: g.customUserThemeSettings
                                 }), (0, r.u_)({
                                     theme: "system"

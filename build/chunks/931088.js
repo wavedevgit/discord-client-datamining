@@ -1,6 +1,6 @@
 /** chunk id: 931088 params = (module,exports,require) **/
 l.d(t, {
-    m: () => x
+    m: () => b
 });
 var a = l(627968),
     n = l(64700),
@@ -14,7 +14,7 @@ var a = l(627968),
     p = l(347378),
     m = l(606423),
     h = l(652215);
-let x = e => {
+let b = e => {
         let {
             transitionState: t,
             onClose: l,
@@ -24,18 +24,18 @@ let x = e => {
             planId: c,
             renewalInvoice: p,
             renewalInvoiceDetails: m,
-            errorOnCancel: x,
+            errorOnCancel: b,
             errorOnRedeem: y,
-            setActiveStep: g,
-            activeStep: f
+            setActiveStep: f,
+            activeStep: g
         } = e, {
             analyticsLocations: v
-        } = (0, i.Ay)(r.A.USER_SETTINGS), [E, S] = n.useState(b(f));
+        } = (0, i.Ay)(r.A.USER_SETTINGS), [_, E] = n.useState(x(g));
         return (0, n.useEffect)(() => {
-            S(b(f))
-        }, [f]), (0, a.jsx)(d.CancellationContext.Provider, {
+            E(x(g))
+        }, [g]), (0, a.jsx)(d.CancellationContext.Provider, {
             value: {
-                setStep: g,
+                setStep: f,
                 premiumType: s,
                 onClose: l,
                 transitionState: t,
@@ -53,7 +53,7 @@ let x = e => {
                 renewalInvoiceDetails: m,
                 handleCancellation: () => new Promise((e, t) => {
                     setTimeout(() => {
-                        x ? t() : e()
+                        b ? t() : e()
                     }, 1e3)
                 }),
                 applyOffer: () => new Promise((e, t) => {
@@ -64,10 +64,10 @@ let x = e => {
                 pauseDuration: null,
                 setPauseDuration: () => {}
             },
-            children: E
+            children: _
         })
     },
-    b = e => {
+    x = e => {
         switch (e) {
             case c.g.DISCOUNT_APPLIED:
                 return (0, a.jsx)(u.V, {});

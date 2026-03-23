@@ -60,15 +60,15 @@ let p = {
             showGraphic: r,
             showActions: m,
             badgeId: h,
-            showProgress: x,
-            progressCircleText: b,
+            showProgress: b,
+            progressCircleText: x,
             progressCirclePercent: y,
-            progressCircleUrgency: g,
-            delay: f,
+            progressCircleUrgency: f,
+            delay: g,
             size: v,
-            gradientColor: E,
-            estimatedTooltipHeight: S
-        } = e, j = n.useRef(null), T = n.useRef(null), C = n.useMemo(() => ({
+            gradientColor: _,
+            estimatedTooltipHeight: E
+        } = e, C = n.useRef(null), S = n.useRef(null), j = n.useMemo(() => ({
             bronze: c.Ac.PREMIUM_TENURE_1_MONTH,
             silver: c.Ac.PREMIUM_TENURE_3_MONTH,
             gold: c.Ac.PREMIUM_TENURE_6_MONTH,
@@ -77,41 +77,41 @@ let p = {
             emerald: c.Ac.PREMIUM_TENURE_36_MONTH,
             ruby: c.Ac.PREMIUM_TENURE_60_MONTH,
             opal: c.Ac.PREMIUM_TENURE_72_MONTH
-        })[h], [h]), A = null != C ? (0, u.I)(C).standard : null, P = n.useMemo(() => {
-            if (null == C) return "";
-            let e = c.VD[C];
+        })[h], [h]), T = null != j ? (0, u.I)(j).standard : null, A = n.useMemo(() => {
+            if (null == j) return "";
+            let e = c.VD[j];
             return (d.intl.string(d.t.lG6a5x) + " " + d.intl.string(e.nameUnformatted)).toLocaleUpperCase()
-        }, [C]), R = n.useMemo(() => {
-            if (!r || null == A) return;
-            let e = x ? {
-                progressCircleText: b,
+        }, [j]), P = n.useMemo(() => {
+            if (!r || null == T) return;
+            let e = b ? {
+                progressCircleText: x,
                 progressCirclePercent: y,
-                progressCircleUrgency: g
+                progressCircleUrgency: f
             } : {};
             return {
                 type: "dynamic",
                 component: i.DynamicGraphicComponent.BADGE_IMAGE_WITH_PROGRESS_CIRCLE,
                 aspectRatio: "6/4",
                 props: {
-                    src: A,
-                    alt: P,
+                    src: T,
+                    alt: A,
                     ...e
                 }
             }
-        }, [r, A, P, x, b, y, g]), _ = {
+        }, [r, T, A, b, x, y, f]), R = {
             title: t,
             body: l,
-            graphic: R,
+            graphic: P,
             actions: n.useMemo(() => {
                 if (m) return [{
                     text: "Got it",
                     variant: "primary"
                 }]
             }, [m]),
-            delay: f,
+            delay: g,
             size: v,
-            gradientColor: n.useMemo(() => "string" == typeof E && E in p ? p[E] : E, [E]),
-            estimatedTooltipHeight: S
+            gradientColor: n.useMemo(() => "string" == typeof _ && _ in p ? p[_] : _, [_]),
+            estimatedTooltipHeight: E
         };
         return (0, a.jsxs)("div", {
             children: [(0, a.jsx)(o.Text, {
@@ -128,18 +128,18 @@ let p = {
                     marginTop: "200px"
                 },
                 children: [(0, a.jsx)(s.L, {
-                    targetElementRef: j,
-                    ..._,
+                    targetElementRef: C,
+                    ...R,
                     children: (0, a.jsx)(o.Button, {
-                        buttonRef: j,
+                        buttonRef: C,
                         variant: "primary",
                         text: "Left"
                     })
                 }), (0, a.jsx)(s.L, {
-                    targetElementRef: T,
-                    ..._,
+                    targetElementRef: S,
+                    ...R,
                     children: (0, a.jsx)(o.Button, {
-                        buttonRef: T,
+                        buttonRef: S,
                         variant: "primary",
                         text: "Right"
                     })

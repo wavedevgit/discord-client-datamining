@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(397927),
-    s = n(341915),
+    s = n(397927),
+    l = n(341915),
     r = n(714510),
     o = n(646764),
     d = n(568329),
@@ -17,8 +17,8 @@ let h = e => {
         isExpanded: t,
         contentLocation: n,
         progressBarRef: h,
-        percentComplete: p,
-        activeScreen: x,
+        percentComplete: x,
+        activeScreen: p,
         popoutTargetElementRef: g
     } = e, {
         quest: _,
@@ -27,8 +27,8 @@ let h = e => {
     } = i.useContext(u.T), b = (0, r.VX)(_), j = (0, r.tH)({
         quest: _,
         isExpanded: t,
-        activeScreen: x,
-        sourceQuestContent: s.uF.QUEST_BAR_V2,
+        activeScreen: p,
+        sourceQuestContent: l.uF.QUEST_BAR_V2,
         popoutTargetElementRef: g,
         onGameSheetOpened: f,
         onGameSheetClosed: v
@@ -42,14 +42,14 @@ let h = e => {
             children: e => (0, a.jsx)(c.A, {
                 ref: e,
                 style: "small",
-                percentComplete: p,
+                percentComplete: x,
                 size: 42,
                 children: (0, a.jsx)(o.A, {
                     fullWidth: !0,
                     quest: _,
-                    questContent: s.uF.QUEST_BAR_V2,
+                    questContent: l.uF.QUEST_BAR_V2,
                     autoplay: !1,
-                    sourceQuestContent: s.uF.QUEST_BAR_V2
+                    sourceQuestContent: l.uF.QUEST_BAR_V2
                 })
             })
         }), (0, a.jsxs)("div", {
@@ -57,7 +57,7 @@ let h = e => {
             children: [(0, a.jsx)(d.dN, {
                 inState: n,
                 id: "progress-title",
-                children: e => (0, a.jsx)(l.Text, {
+                children: e => (0, a.jsx)(s.Text, {
                     ref: e,
                     className: m.FZ,
                     color: "text-strong",
@@ -68,7 +68,7 @@ let h = e => {
                 inState: n,
                 id: "progress-subtitle",
                 isTextTransition: !0,
-                children: e => (0, a.jsx)(l.Text, {
+                children: e => (0, a.jsx)(s.Text, {
                     ref: e,
                     className: m.FZ,
                     color: "text-muted",

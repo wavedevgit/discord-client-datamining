@@ -1,18 +1,18 @@
 /** chunk id: 881141 params = (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => l
 });
 var a = n(927578),
     i = n(112848),
-    l = n(788868);
+    s = n(788868);
 
-function s() {
+function l() {
     let e = (0, i.Xb)(),
         t = (0, a.nK)();
     if (null == e || !t) return null;
     let n = new Date().getTime();
-    for (let t = l.sp.length - 1; t >= 0; t--) {
-        let a = l.VD[l.sp[t]],
+    for (let t = s.sp.length - 1; t >= 0; t--) {
+        let a = s.VD[s.sp[t]],
             i = new Date(e);
         if (i.setMonth(e.getMonth() + a.tenureReqNumMonths), i.setHours(i.getHours() + 30), n > i.getTime())
             if (n - i.getTime() < 6048e5) return a.id;

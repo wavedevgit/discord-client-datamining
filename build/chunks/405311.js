@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(311907),
-    l = n(397927),
-    s = n(576470),
+    s = n(397927),
+    l = n(576470),
     r = n(99753),
     o = n(693879),
     d = n(424994);
@@ -20,15 +20,15 @@ function c() {
         }),
         c = (0, i.bG)([r.A], () => r.A.getLastFeedFetchDate(d.X1.GLOBAL_FEED));
     return (0, a.jsxs)("div", {
-        children: [t ? (0, a.jsx)(l.Text, {
+        children: [t ? (0, a.jsx)(s.Text, {
             variant: "text-md/normal",
             children: "(fetching)"
-        }) : (0, a.jsxs)(l.Text, {
+        }) : (0, a.jsxs)(s.Text, {
             variant: "text-md/normal",
-            children: ["Next fetch: ", null != n ? (0, a.jsx)(s.A, {
+            children: ["Next fetch: ", null != n ? (0, a.jsx)(l.A, {
                 deadline: n
             }) : e ? "(awaiting push)" : "(unscheduled)"]
-        }), (0, a.jsxs)(l.Text, {
+        }), (0, a.jsxs)(s.Text, {
             variant: "text-md/normal",
             children: ["Last fetch:", " ", null != c ? (0, a.jsx)(o.z, {
                 inline: !0,

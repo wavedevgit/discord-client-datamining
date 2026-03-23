@@ -1,12 +1,12 @@
 /** chunk id: 495242 params = (module,exports,require) **/
 n.d(t, {
-    Z: () => p
+    Z: () => x
 });
 var a = n(627968);
 n(64700);
 var i = n(397927),
-    l = n(780964),
-    s = n(840065),
+    s = n(780964),
+    l = n(840065),
     r = n(341915),
     o = n(18437),
     d = n(590202),
@@ -27,7 +27,7 @@ function m(e) {
                 questContent: r.uF.QUEST_BAR_V2,
                 questContentCTA: d.Cy.VIEW_CONSOLE_CONNECTIONS_LINK,
                 sourceQuestContent: c
-            }), (0, s.openUserSettings)(l.X.CONNECTIONS_PANEL)
+            }), (0, l.openUserSettings)(s.X.CONNECTIONS_PANEL)
         },
         children: (0, a.jsx)(i.Text, {
             "aria-label": t,
@@ -51,7 +51,7 @@ function h(e) {
     }) : null
 }
 
-function p(e) {
+function x(e) {
     return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(i.Text, {
             color: "text-muted",

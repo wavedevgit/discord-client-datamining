@@ -1,11 +1,11 @@
 /** chunk id: 453675 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => x
 });
 var a = n(627968),
     i = n(64700),
-    l = n(397927),
-    s = n(198982),
+    s = n(397927),
+    l = n(198982),
     r = n(839214),
     o = n(98919),
     d = n(174768),
@@ -19,19 +19,19 @@ let h = (0, r.D)(() => ({
     errorMessage: null
 }));
 
-function p() {
+function x() {
     let e = h.useField("isRecording"),
         t = h.useField("isUploading"),
         n = h.useField("isSuccess"),
         r = h.useField("errorMessage"),
-        p = i.useRef([]),
-        x = i.useRef(""),
+        x = i.useRef([]),
+        p = i.useRef(""),
         g = i.useCallback(() => {
             let {
                 results: e,
                 query: t
             } = d.A.getProps();
-            (p.current !== e || x.current !== t) && (p.current = e, x.current = t, (0, c._S)())
+            (x.current !== e || p.current !== t) && (x.current = e, p.current = t, (0, c._S)())
         }, []);
     i.useEffect(() => {
         if (e) return d.A.addChangeListener(g), () => d.A.removeChangeListener(g)
@@ -51,7 +51,7 @@ function p() {
                 errorMessage: null
             })
         } catch (t) {
-            let e = new s.LG(t);
+            let e = new l.LG(t);
             h.setState({
                 errorMessage: e.getAnyErrorMessage()
             })
@@ -61,14 +61,14 @@ function p() {
             })
         }
     }, []);
-    return (0, a.jsxs)(l.nVY, {
+    return (0, a.jsxs)(s.nVY, {
         label: "Debug Logs Session",
         description: "Click to emit debug logs as you search in the Quick Switcher. Includes your search term and all results. For each result, includes the record id, associated names, and frecency scores.",
-        children: [(0, a.jsx)(l.po8, {
-            messageType: l.YCn.INFO,
+        children: [(0, a.jsx)(s.po8, {
+            messageType: s.YCn.INFO,
             children: "When you are done, please remember to upload the logs."
-        }), (0, a.jsxs)(l.ButtonGroup, {
-            children: [(0, a.jsx)(l.Button, {
+        }), (0, a.jsxs)(s.ButtonGroup, {
+            children: [(0, a.jsx)(s.Button, {
                 variant: e ? "critical-primary" : "primary",
                 onClick: () => h.setState({
                     isRecording: !e

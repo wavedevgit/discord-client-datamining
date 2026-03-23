@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(503698),
-    l = n.n(i),
-    s = n(522603);
+    s = n.n(i),
+    l = n(522603);
 
 function r(e) {
     let {
@@ -16,7 +16,7 @@ function r(e) {
         className: o
     } = e;
     return i ? (0, a.jsx)("div", {
-        className: l()(s.s, o),
+        className: s()(l.s, o),
         style: {
             width: t,
             height: n

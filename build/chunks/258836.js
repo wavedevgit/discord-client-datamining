@@ -1,11 +1,11 @@
 /** chunk id: 258836 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => x
 });
 var a = n(627968),
     i = n(64700),
-    l = n(311907),
-    s = n(990078),
+    s = n(311907),
+    l = n(990078),
     r = n(397927),
     o = n(775602),
     d = n(832248),
@@ -14,36 +14,36 @@ var a = n(627968),
     m = n(876402);
 let h = i.lazy(() => n.e("24832").then(n.bind(n, 748579)));
 
-function p() {
-    let e = (0, l.bG)([o.A], () => o.A.useReducedMotion),
+function x() {
+    let e = (0, s.bG)([o.A], () => o.A.useReducedMotion),
         t = (0, d.A)(e => e.shouldRenderTenureLevelUp),
         n = (0, c.A)();
-    return e || !t || null == n ? null : (0, a.jsx)(x, {
+    return e || !t || null == n ? null : (0, a.jsx)(p, {
         levelUpData: n
     })
 }
 
-function x(e) {
+function p(e) {
     let {
         levelUpData: t
-    } = e, n = i.useRef(null), l = i.useCallback(() => {
+    } = e, n = i.useRef(null), s = i.useCallback(() => {
         d.A.setState({
             shouldRenderTenureLevelUp: !1
         })
     }, []);
-    return i.useEffect(() => l, [l]), (0, a.jsx)(r.Oky, {
+    return i.useEffect(() => s, [s]), (0, a.jsx)(r.Oky, {
         containerRef: n,
         children: (0, a.jsxs)("div", {
             className: m.i,
             children: [(0, a.jsx)("div", {
                 className: m.b,
-                children: (0, a.jsx)(s.m, {
+                children: (0, a.jsx)(l.m, {
                     text: u.intl.string(u.t.cpT0Cq),
                     children: (0, a.jsx)(r.K0, {
                         icon: r.PGe,
                         variant: "secondary",
                         size: "sm",
-                        onClick: l,
+                        onClick: s,
                         "aria-label": u.intl.string(u.t.cpT0Cq)
                     })
                 })

@@ -1,12 +1,12 @@
 /** chunk id: 686267 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => x
 });
 var a = n(627968);
 n(64700);
 var i = n(397927),
-    l = n(754302),
-    s = n(278466),
+    s = n(754302),
+    l = n(278466),
     r = n(805866),
     o = n(627575),
     d = n(204821),
@@ -18,10 +18,10 @@ let h = {
         [r.wP.REFRESH_APP]: u.intl.string(c.default.SzfxQ3),
         [r.wP.AGE_VERIFICATION]: u.intl.string(c.default["dSkE/A"])
     },
-    p = function() {
+    x = function() {
         let {
             task: e
-        } = (0, s.Z)(), t = e.flow_context.tasks.findIndex(t => t.task_type === e.task_type);
+        } = (0, l.Z)(), t = e.flow_context.tasks.findIndex(t => t.task_type === e.task_type);
         return (0, a.jsxs)(i.BJc, {
             direction: "vertical",
             justify: "space-between",
@@ -38,7 +38,7 @@ let h = {
                     direction: "vertical",
                     justify: "space-between",
                     gap: 0,
-                    children: e.flow_context.tasks.map((e, n) => (0, a.jsx)(l.B, {
+                    children: e.flow_context.tasks.map((e, n) => (0, a.jsx)(s.B, {
                         title: h[e.task_type] ?? "",
                         listType: "numbered",
                         index: n,

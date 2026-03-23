@@ -4,8 +4,8 @@ n.d(t, {
 }), n(172879);
 var a = n(627968),
     i = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    s = n(503698),
+    l = n.n(s),
     r = n(985623),
     o = n.n(r),
     d = n(989349),
@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(990078),
     m = n(421380),
     h = n(397927),
-    p = n(73153),
-    x = n(58736),
+    x = n(73153),
+    p = n(58736),
     g = n(379078),
     _ = n(704554),
     f = n(603349),
@@ -114,7 +114,7 @@ function w(e) {
     let {
         actionLog: t,
         initialHeight: n
-    } = e, l = i.useMemo(() => t.error ? [...R, {
+    } = e, s = i.useMemo(() => t.error ? [...R, {
         id: "error",
         name: (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsx)(f.A, {
@@ -128,7 +128,7 @@ function w(e) {
             } = e;
             return (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsx)("div", {
-                    className: s()(E.u4, N.KE),
+                    className: l()(E.u4, N.KE),
                     children: (0, a.jsx)("div", {
                         className: N.R5,
                         children: (0, a.jsx)(m.$n, {
@@ -150,22 +150,22 @@ function w(e) {
         TabBar: r,
         renderSelectedTab: o
     } = (0, T.Ay)({
-        tabs: l
-    }, [l]);
+        tabs: s
+    }, [s]);
     return (0, a.jsxs)(C.A, {
         className: E.rf,
         minHeight: 100,
         initialHeight: n,
-        children: [(0, a.jsx)(r, {}), (0, a.jsxs)(x.Ay, {
-            className: s()(N.jr, E.nZ),
-            children: [(0, a.jsx)(x.Ay.Icon, {
+        children: [(0, a.jsx)(r, {}), (0, a.jsxs)(p.Ay, {
+            className: l()(N.jr, E.nZ),
+            children: [(0, a.jsx)(p.Ay.Icon, {
                 icon: h.KBH,
                 tooltip: t.name
-            }), (0, a.jsx)(x.Ay.Title, {
-                wrapperClassName: s()(N.qd, N.ZE),
+            }), (0, a.jsx)(p.Ay.Title, {
+                wrapperClassName: l()(N.qd, N.ZE),
                 className: N.Pz,
                 children: t.name
-            }), (0, a.jsx)(x.Ay.Icon, {
+            }), (0, a.jsx)(p.Ay.Icon, {
                 icon: h.TdU,
                 tooltip: "Copy event data",
                 onClick: () => {
@@ -232,7 +232,7 @@ let D = [{
 function P() {
     let e = i.useRef(null),
         [t, n] = i.useState(""),
-        l = function(e) {
+        s = function(e) {
             let [t, n] = i.useState(e.logs);
             return i.useEffect(() => {
                 let t = o()(() => {
@@ -242,17 +242,17 @@ function P() {
                     e.off("log", t)
                 }
             }, [e]), t
-        }(p.h.actionLogger),
-        r = i.useMemo(() => l.map(e => ({
+        }(x.h.actionLogger),
+        r = i.useMemo(() => s.map(e => ({
             key: e.id.toString(),
             actionLog: e
-        })).toReversed(), [l]),
+        })).toReversed(), [s]),
         [d, c] = i.useState(r),
-        [m, x] = i.useState(r),
+        [m, p] = i.useState(r),
         [g, f] = i.useState(!1),
         [v, b] = i.useState(),
         j = i.useCallback(e => {
-            x(e)
+            p(e)
         }, []);
     (0, _.RT)(t, g ? d : r, j, M);
     let A = i.useCallback(e => {
@@ -263,7 +263,7 @@ function P() {
         S = g ? "Enable Event Tracking" : "Pause Event Tracking";
     return (0, a.jsxs)("div", {
         ref: e,
-        className: s()(N.nd, E.nd),
+        className: l()(N.nd, E.nd),
         children: [(0, a.jsxs)("div", {
             className: E.KE,
             children: [(0, a.jsx)(u.m, {

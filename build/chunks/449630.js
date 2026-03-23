@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    s = n(503698),
+    l = n.n(s),
     r = n(607399),
     o = n(158954),
     d = n(311907),
@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(765671),
     m = n(793574),
     h = n(688810),
-    p = n(395332),
-    x = n(713517),
+    x = n(395332),
+    p = n(713517),
     g = n(645507),
     _ = n(970931),
     f = n(258836),
@@ -36,8 +36,8 @@ var a = n(627968),
     D = n(159218),
     M = n(442228),
     P = n(253932),
-    L = n(290863),
-    U = n(351906),
+    U = n(290863),
+    L = n(351906),
     B = n(957565),
     G = n(562153),
     F = n(927578),
@@ -59,12 +59,12 @@ function et(e) {
     let {
         currentUser: t,
         onClose: n,
-        setPopoutRef: l,
+        setPopoutRef: s,
         highlightBadge: et,
         className: en
     } = e, ea = __OVERLAY__, ei = (0, A.Ay)(t.id, void 0), {
-        analyticsLocations: el
-    } = (0, h.Ay)(m.A.USER_PROFILE_ACCOUNT_POPOUT), es = (0, j.pb)({
+        analyticsLocations: es
+    } = (0, h.Ay)(m.A.USER_PROFILE_ACCOUNT_POPOUT), el = (0, j.pb)({
         layout: "ACCOUNT_POPOUT",
         userId: t.id,
         guildId: void 0
@@ -74,24 +74,24 @@ function et(e) {
     } = (0, u.Ay)(), {
         isHoveringOrFocusing: ed,
         isHovering: ec
-    } = (0, x.A)(er);
+    } = (0, p.A)(er);
     i.useEffect(() => {
-        l?.(er.current)
-    }, [er, l]), i.useEffect(() => (V.A.setState({
+        s?.(er.current)
+    }, [er, s]), i.useEffect(() => (V.A.setState({
         isOpen: !0
     }), () => V.A.setState({
         isOpen: !1
     })), []);
-    let eu = (0, d.bG)([L.A], () => L.A.getStatus(t.id)),
+    let eu = (0, d.bG)([U.A], () => U.A.getStatus(t.id)),
         em = P.CY.useSetting(),
         eh = (0, q.Q)(em),
-        ep = (0, d.bG)([U.A], () => U.A.hidePersonalInformation),
-        ex = (0, _.kB)(),
+        ex = (0, d.bG)([L.A], () => L.A.hidePersonalInformation),
+        ep = (0, _.kB)(),
         eg = P.Q_.useSetting(),
         e_ = (0, q.T)(eu),
         ef = (0, W.j)(n),
         ev = (0, v.A)({
-            analyticsLocations: el
+            analyticsLocations: es
         }),
         eb = (0, F.TW)(t),
         ej = i.useRef(null),
@@ -107,8 +107,8 @@ function et(e) {
     let eE = e => {
             n?.(), (0, C.openUserProfileModal)({
                 customStatusPrompt: ey,
-                sourceAnalyticsLocations: el,
-                ...es,
+                sourceAnalyticsLocations: es,
+                ...el,
                 ...e
             })
         },
@@ -119,21 +119,21 @@ function et(e) {
         ek = i.useCallback(() => {
             ev(), eI()
         }, [ev, eI]),
-        eO = (0, p.JY)({
+        eO = (0, x.JY)({
             location: "UserProfileAccountPopout"
         }),
-        eR = (0, p.on)({
+        eR = (0, x.on)({
             location: "UserProfileAccountPopout"
         });
     return (0, a.jsx)(h.f5, {
-        value: el,
+        value: es,
         children: (0, a.jsx)(j.of, {
-            value: es,
+            value: el,
             isLoaded: ei?.isLoaded,
             children: (0, a.jsxs)(c.lGe, {
                 ref: er,
                 "aria-label": X.intl.string(X.t["5fWB8U"]),
-                className: s()(Z.jC, en),
+                className: l()(Z.jC, en),
                 "data-layer": "base",
                 children: [(0, a.jsx)($.A, {
                     displayProfile: ei,
@@ -189,7 +189,7 @@ function et(e) {
                         }), (0, a.jsx)(M.A, {
                             user: t,
                             bio: ei?.bio,
-                            hidePersonalInformation: ep,
+                            hidePersonalInformation: ex,
                             onClose: n
                         }), eN && (0, a.jsx)(k.A, {
                             user: t,
@@ -222,7 +222,7 @@ function et(e) {
                                             status: eu,
                                             size: 12
                                         }),
-                                        trailing: (ex || eu === Y.clD.DND) && (0, a.jsx)(c.a_I, {
+                                        trailing: (ep || eu === Y.clD.DND) && (0, a.jsx)(c.a_I, {
                                             size: "xxs"
                                         }),
                                         renderSubmenu: r.Fr ? void 0 : e => {

@@ -1,24 +1,24 @@
 /** chunk id: 633581 params = (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => l
 });
 var a = n(627968),
     i = n(397927),
-    l = n(890687);
-let s = function(e) {
+    s = n(890687);
+let l = function(e) {
     let {
         onSelect: t,
         quest: n
     } = e, {
-        quests: s
-    } = (0, l.mL)({
+        quests: l
+    } = (0, s.mL)({
         fetchPolicy: "cache-and-network",
         callerSource: "prefill_selector"
     }), r = [{
         id: "none",
         label: "NONE",
         value: null
-    }, ...s.map(e => ({
+    }, ...l.map(e => ({
         id: e.id,
         label: e.config.messages.questName,
         value: e

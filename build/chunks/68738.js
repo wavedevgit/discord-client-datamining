@@ -1,11 +1,11 @@
 /** chunk id: 68738 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => p
 });
 var a = n(627968),
     i = n(64700),
-    l = n(397927),
-    s = n(442433),
+    s = n(397927),
+    l = n(442433),
     r = n(611010),
     o = n(734057),
     d = n(71393),
@@ -44,7 +44,7 @@ let h = {
             return () => (0, a.jsx)(e, {
                 application: t,
                 channelId: "987654321",
-                onClose: s.Z_
+                onClose: l.Z_
             })
         },
         GuildChannelListContextMenu: async () => {
@@ -93,7 +93,7 @@ let h = {
             } = await n.e("50143").then(n.bind(n, 92962));
             return t => (0, a.jsx)(e, {
                 ...t,
-                onClose: s.Z_
+                onClose: l.Z_
             })
         },
         ExpressionPickerContextMenu: async () => {
@@ -123,7 +123,7 @@ let h = {
                 ...t,
                 roleId: "123456789",
                 onLeaveRole: () => {
-                    console.log("Leave role clicked"), (0, s.Z_)()
+                    console.log("Leave role clicked"), (0, l.Z_)()
                 }
             })
         },
@@ -134,9 +134,9 @@ let h = {
                 ContentInventoryEntryType: t
             } = await Promise.resolve().then(n.bind(n, 681154)), {
                 ContentInventoryAuthorType: i
-            } = await Promise.resolve().then(n.bind(n, 6161)), l = c.default.getCurrentUser(), s = {
+            } = await Promise.resolve().then(n.bind(n, 6161)), s = c.default.getCurrentUser(), l = {
                 id: "mock-entry-123",
-                author_id: l?.id ?? "123456789",
+                author_id: s?.id ?? "123456789",
                 author_type: i.USER,
                 content_type: t.PLAYED_GAME,
                 participants: [],
@@ -148,7 +148,7 @@ let h = {
                 }
             };
             return () => (0, a.jsx)(e, {
-                entry: s,
+                entry: l,
                 requestId: "mock-request-123"
             })
         },
@@ -159,7 +159,7 @@ let h = {
             return null == t ? () => null : n => (0, a.jsx)(e, {
                 ...n,
                 addFormField: e => {
-                    console.log("Add form field:", e), (0, s.Z_)()
+                    console.log("Add form field:", e), (0, l.Z_)()
                 },
                 guild: t,
                 allowTerms: !0
@@ -190,7 +190,7 @@ let h = {
             } = await n.e("73091").then(n.bind(n, 779662)), t = Object.values(d.A.getGuilds())[0];
             return null == t ? () => null : () => (0, a.jsx)(e, {
                 guildId: t.id,
-                onClose: s.Z_
+                onClose: l.Z_
             })
         },
         MembersTableJoinTypeContextMenu: async () => {
@@ -199,11 +199,11 @@ let h = {
             } = await n.e("21539").then(n.bind(n, 441358)), t = Object.values(d.A.getGuilds())[0];
             return null == t ? () => null : () => (0, a.jsx)(e, {
                 guildId: t.id,
-                onClose: s.Z_
+                onClose: l.Z_
             })
         }
     },
-    p = {
+    x = {
         GuildShopSortOptions: i.lazy(async () => {
             let {
                 default: e
@@ -219,13 +219,13 @@ let h = {
         })
     };
 
-function x() {
+function p() {
     let e = i.useMemo(() => Object.keys(h).map(e => ({
             label: e,
             value: e,
             id: e
         })).sort((e, t) => e.label.localeCompare(t.label)), []),
-        t = i.useMemo(() => Object.keys(p).map(e => ({
+        t = i.useMemo(() => Object.keys(x).map(e => ({
             label: e,
             value: e,
             id: e
@@ -233,56 +233,56 @@ function x() {
         [n, r] = i.useState(null),
         [o, d] = i.useState(null),
         c = i.useCallback(e => {
-            null != n && (0, s.L3)(e, h[n])
+            null != n && (0, l.L3)(e, h[n])
         }, [n]),
-        x = null != o ? p[o] : null;
-    return (0, a.jsx)(l.IpV, {
+        p = null != o ? x[o] : null;
+    return (0, a.jsx)(s.IpV, {
         className: m.nd,
-        children: (0, a.jsxs)(l.BJc, {
+        children: (0, a.jsxs)(s.BJc, {
             className: u.l$,
             gap: 16,
-            children: [(0, a.jsxs)(l.BJc, {
+            children: [(0, a.jsxs)(s.BJc, {
                 gap: 8,
-                children: [(0, a.jsx)(l.Text, {
+                children: [(0, a.jsx)(s.Text, {
                     variant: "eyebrow",
                     children: "Context Menus"
-                }), (0, a.jsx)(l.Text, {
+                }), (0, a.jsx)(s.Text, {
                     variant: "text-sm/normal",
                     color: "text-muted",
                     children: "Select a menu and click Open to trigger it as a context menu at the button position."
                 })]
-            }), (0, a.jsxs)(l.BJc, {
+            }), (0, a.jsxs)(s.BJc, {
                 direction: "horizontal",
                 gap: 8,
                 align: "end",
-                children: [(0, a.jsx)(l.ZiE, {
+                children: [(0, a.jsx)(s.ZiE, {
                     label: "Open a Context Menu",
                     placeholder: "Select a menu",
                     options: e,
                     value: n,
                     onSelectionChange: r,
                     selectionMode: "single"
-                }), (0, a.jsx)(l.Button, {
+                }), (0, a.jsx)(s.Button, {
                     variant: "primary",
                     text: "Open",
                     disabled: null == n,
                     onClick: c
                 })]
-            }), (0, a.jsxs)(l.BJc, {
+            }), (0, a.jsxs)(s.BJc, {
                 gap: 8,
-                children: [(0, a.jsx)(l.Text, {
+                children: [(0, a.jsx)(s.Text, {
                     variant: "eyebrow",
                     children: "Popout Menus"
-                }), (0, a.jsx)(l.Text, {
+                }), (0, a.jsx)(s.Text, {
                     variant: "text-sm/normal",
                     color: "text-muted",
                     children: "Select a popout menu to render it. Click the rendered button to open the popout."
                 })]
-            }), (0, a.jsx)(l.BJc, {
+            }), (0, a.jsx)(s.BJc, {
                 direction: "horizontal",
                 gap: 8,
                 align: "end",
-                children: (0, a.jsx)(l.ZiE, {
+                children: (0, a.jsx)(s.ZiE, {
                     label: "Render a Popout Menu",
                     placeholder: "Select a popout",
                     options: t,
@@ -290,13 +290,13 @@ function x() {
                     onSelectionChange: d,
                     selectionMode: "single"
                 })
-            }), null != x && (0, a.jsx)(i.Suspense, {
-                fallback: (0, a.jsx)(l.Text, {
+            }), null != p && (0, a.jsx)(i.Suspense, {
+                fallback: (0, a.jsx)(s.Text, {
                     variant: "text-sm/normal",
                     color: "text-muted",
                     children: "Loading..."
                 }),
-                children: (0, a.jsx)(x, {})
+                children: (0, a.jsx)(p, {})
             })]
         })
     })

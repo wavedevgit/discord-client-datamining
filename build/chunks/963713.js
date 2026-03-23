@@ -1,11 +1,11 @@
 /** chunk id: 963713 params = (module,exports,require) **/
 n.d(t, {
-    C: () => s,
-    T: () => l
+    C: () => l,
+    T: () => s
 });
 var a = n(627968),
     i = n(64700);
-let l = i.createContext({
+let s = i.createContext({
         onCtxMenuClose: () => {},
         onCtxMenuOpen: () => {},
         onCtxMenuSelect: () => {},
@@ -17,11 +17,11 @@ let l = i.createContext({
         quest: null,
         taskDetails: null
     }),
-    s = e => {
+    l = e => {
         let {
             children: t,
             isExpanded: n,
-            isExpansionAnimationComplete: s,
+            isExpansionAnimationComplete: l,
             onCtxMenuClose: r,
             onCtxMenuOpen: o,
             onCtxMenuSelect: d,
@@ -29,10 +29,10 @@ let l = i.createContext({
             onGameSheetClose: u,
             collapsedHeight: m,
             quest: h,
-            taskDetails: p
-        } = e, x = i.useMemo(() => ({
+            taskDetails: x
+        } = e, p = i.useMemo(() => ({
             isExpanded: n,
-            isExpansionAnimationComplete: s,
+            isExpansionAnimationComplete: l,
             onCtxMenuClose: r,
             onCtxMenuOpen: o,
             onCtxMenuSelect: d,
@@ -40,10 +40,10 @@ let l = i.createContext({
             onGameSheetClose: u,
             collapsedHeight: m,
             quest: h,
-            taskDetails: p
-        }), [n, s, r, o, d, c, u, m, h, p]);
-        return (0, a.jsx)(l.Provider, {
-            value: x,
+            taskDetails: x
+        }), [n, l, r, o, d, c, u, m, h, x]);
+        return (0, a.jsx)(s.Provider, {
+            value: p,
             children: t
         })
     }

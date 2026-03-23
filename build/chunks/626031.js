@@ -1,6 +1,6 @@
 /** chunk id: 626031 params = (module,exports,require) **/
 l.d(t, {
-    A: () => f
+    A: () => g
 });
 var a = l(627968),
     n = l(64700),
@@ -14,10 +14,10 @@ var a = l(627968),
     p = l(14115),
     m = l(115093),
     h = l(467043);
-let x = new c.A("BalanceCounter"),
-    b = (0, d._$)(void 0) === m.B.PRODUCTION,
+let b = new c.A("BalanceCounter"),
+    x = (0, d._$)(void 0) === m.B.PRODUCTION,
     y = e => null == e ? 0 : `${e.toFixed(0)}`.length,
-    g = e => {
+    f = e => {
         let {
             value: t,
             onSetDigitCount: l,
@@ -37,62 +37,62 @@ let x = new c.A("BalanceCounter"),
                 totalDelta: Math.abs(e)
             }
         }, [t, r]);
-        let g = t ?? 0,
-            f = m.current ?? g,
+        let f = t ?? 0,
+            g = m.current ?? f,
             {
                 duration: v,
-                delay: E
-            } = (0, p.Y)(g - f, u),
+                delay: _
+            } = (0, p.Y)(f - g, u),
             {
-                number: S
+                number: E
             } = (0, s.zhh)({
                 from: {
-                    number: m.current ?? g
+                    number: m.current ?? f
                 },
-                number: g,
+                number: f,
                 config: {
                     mass: 1,
                     tension: 20,
                     friction: 10,
                     duration: v
                 },
-                delay: E,
+                delay: _,
                 onStart: () => {
-                    l(y(f))
+                    l(y(g))
                 },
                 onRest: () => {
-                    if (d(c + 1), i(), !b && null !== h.current && null !== m.current) {
+                    if (d(c + 1), i(), !x && null !== h.current && null !== m.current) {
                         let e = Date.now();
-                        x.log("Balance Counter finished updating: ", {
+                        b.log("Balance Counter finished updating: ", {
                             time: e - h.current.lastChangedAt,
-                            delta: g - m.current
+                            delta: f - m.current
                         })
                     }
-                    l(y(g)), m.current = g
+                    l(y(f)), m.current = f
                 }
             }),
-            j = y(Math.max(t ?? 0, S.get()));
+            C = y(Math.max(t ?? 0, E.get()));
         return (0, a.jsx)(o.animated.div, {
             style: {
-                width: `calc(${j}ch)`
+                width: `calc(${C}ch)`
             },
-            children: S.to(e => `${e.toFixed(0)}`)
+            children: E.to(e => `${e.toFixed(0)}`)
         })
     },
-    f = e => {
+    g = e => {
         let {
             value: t,
             className: l,
             ...r
-        } = e, o = null === t, [c, d] = (0, n.useState)(null), p = (0, n.useMemo)(() => y(t), [t]), m = (0, u.A)(p) ?? 0, x = (0, n.useMemo)(() => null === c ? Math.max(m, p) : Math.max(p, c), [m, p, c]), b = `${o?0:x}ch`;
+        } = e, o = null === t, [c, d] = (0, n.useState)(null), p = (0, n.useMemo)(() => y(t), [t]), m = (0, u.A)(p) ?? 0, b = (0, n.useMemo)(() => null === c ? Math.max(m, p) : Math.max(p, c), [m, p, c]), x = `${o?0:b}ch`;
         return (0, a.jsx)(s.Text, {
             variant: "text-md/semibold",
             className: i()(h.S, o ? void 0 : h.r, l),
             style: {
-                width: b,
+                width: x,
                 opacity: o ? "0" : 1
             },
-            children: o ? null : (0, a.jsx)(g, {
+            children: o ? null : (0, a.jsx)(f, {
                 onSetDigitCount: e => {
                     e !== c && d(e)
                 },

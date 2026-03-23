@@ -6,8 +6,8 @@ n.d(t, {
 var a = n(627968);
 n(64700);
 var i = n(397927),
-    l = n(970931),
-    s = n(253932),
+    s = n(970931),
+    l = n(253932),
     r = n(927813),
     o = n(427262),
     d = n(146901),
@@ -33,37 +33,37 @@ let h = [{
         duration: void 0,
         label: () => m.intl.string(m.t["46dqJY"])
     }],
-    p = "forever";
+    x = "forever";
 
-function x(e) {
+function p(e) {
     let {
         status: t,
         currentStatus: n,
-        description: l
-    } = e, s = t !== u.clD.ONLINE, r = (0, a.jsx)(a.Fragment, {
+        description: s
+    } = e, l = t !== u.clD.ONLINE, r = (0, a.jsx)(a.Fragment, {
         children: h.map(e => {
             let {
-                duration: l,
-                label: s
+                duration: s,
+                label: l
             } = e;
             return (0, a.jsx)(i.Drp, {
-                id: `${t}-${l}`,
-                label: s(),
+                id: `${t}-${s}`,
+                label: l(),
                 action: () => (0, c.A)({
                     nextStatus: t,
                     prevStatus: n,
-                    durationMillis: l
+                    durationMillis: s
                 }),
                 dontCloseOnAction: !0
-            }, l ?? p)
+            }, s ?? x)
         })
     });
     return (0, a.jsx)(i.Drp, {
         id: t,
         keepItemStyles: !0,
-        hasSubmenu: s,
+        hasSubmenu: l,
         label: (0, o.MU)(t),
-        subtext: l,
+        subtext: s,
         iconLeft: () => (0, a.jsx)(i.nW6, {
             status: t,
             size: 10
@@ -79,7 +79,7 @@ function x(e) {
             })
         },
         dontCloseOnAction: !0,
-        children: s ? r : void 0
+        children: l ? r : void 0
     })
 }
 
@@ -99,9 +99,9 @@ function g(e) {
 }
 
 function _(e) {
-    let t = s.CY.useSetting(),
-        n = (0, l.kB)(),
-        r = s.Jr.useSetting(),
+    let t = l.CY.useSetting(),
+        n = (0, s.kB)(),
+        r = l.Jr.useSetting(),
         o = e === u.clD.DND,
         d = a => {
             let i = g(t);
@@ -119,33 +119,33 @@ function _(e) {
             children: h.map(t => {
                 let {
                     duration: n,
-                    label: s
+                    label: l
                 } = t;
                 return (0, a.jsx)(i.Drp, {
                     id: `${e}-${n}`,
-                    label: s(),
+                    label: l(),
                     action: () => {
-                        (0, l.ES)(!0, n)
+                        (0, s.ES)(!0, n)
                     },
                     dontCloseOnAction: !0
-                }, n ?? p)
+                }, n ?? x)
             })
         }),
-        _ = x({
+        _ = p({
             status: u.clD.ONLINE,
             currentStatus: e
         }),
-        f = x({
+        f = p({
             status: u.clD.IDLE,
             currentStatus: e,
             description: d(u.clD.IDLE)
         }),
-        v = x({
+        v = p({
             status: u.clD.DND,
             currentStatus: e,
             description: d(u.clD.DND)
         }),
-        b = x({
+        b = p({
             status: u.clD.INVISIBLE,
             currentStatus: e,
             description: d(u.clD.INVISIBLE)
@@ -175,7 +175,7 @@ function _(e) {
                     })
                 }) : m.intl.string(m.t["Br1q+x"]),
                 action: () => {
-                    (0, l.ES)(!n)
+                    (0, s.ES)(!n)
                 },
                 dontCloseOnAction: !0,
                 children: c

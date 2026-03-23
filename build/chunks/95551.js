@@ -6,8 +6,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(934551),
-    s = n(397927),
+    s = n(934551),
+    l = n(397927),
     r = n(993401),
     o = n(985018),
     d = n(423648);
@@ -15,7 +15,7 @@ var a = n(627968),
 function c(e) {
     return (0, a.jsx)("div", {
         className: d.wE,
-        children: (0, a.jsx)(s.W1t, {
+        children: (0, a.jsx)(l.W1t, {
             "data-menu-migrated": !0,
             variant: "fixed",
             hideScroller: !0,
@@ -33,12 +33,12 @@ function u(e) {
         label: u,
         sublabel: m,
         trailing: h,
-        renderSubmenu: p,
-        ref: x
+        renderSubmenu: x,
+        ref: p
     } = e, g = null != n, _ = (0, r.rE)({
         action: t,
         onClick: n
-    }), [f, v] = i.useState(!1), b = i.useRef(null), j = x ?? b, A = null != p, C = A && g, y = {
+    }), [f, v] = i.useState(!1), b = i.useRef(null), j = p ?? b, A = null != x, C = A && g, y = {
         offset: {
             top: -8,
             left: -8,
@@ -59,12 +59,12 @@ function u(e) {
         }), (0, a.jsxs)("div", {
             className: d.$H,
             children: [(0, a.jsxs)("div", {
-                children: [(0, a.jsx)(s.Text, {
+                children: [(0, a.jsx)(l.Text, {
                     color: "currentColor",
                     variant: "text-sm/medium",
                     className: d.W1,
                     children: u
-                }), (0, a.jsx)(s.Text, {
+                }), (0, a.jsx)(l.Text, {
                     color: "currentColor",
                     variant: "text-xs/medium",
                     children: m
@@ -74,7 +74,7 @@ function u(e) {
     }), N = e => {
         let t;
         return t = C ? (0, a.jsxs)(a.Fragment, {
-            children: [(0, a.jsx)(s.DUT, {
+            children: [(0, a.jsx)(l.DUT, {
                 className: d.ef,
                 onClick: _,
                 focusProps: {
@@ -84,30 +84,30 @@ function u(e) {
                     }
                 },
                 children: E()
-            }), (0, a.jsx)(s.DUT, {
+            }), (0, a.jsx)(l.DUT, {
                 className: d.ap,
                 "aria-label": o.intl.string(o.t.PdRCRg),
                 ...e,
                 onClick: T,
                 focusProps: y,
-                children: (0, a.jsx)(l.ChevronSmallRightIcon, {
+                children: (0, a.jsx)(s.ChevronSmallRightIcon, {
                     size: "xs",
                     color: "currentColor"
                 })
             })]
-        }) : A ? (0, a.jsxs)(s.DUT, {
+        }) : A ? (0, a.jsxs)(l.DUT, {
             className: d.ef,
             ...e,
             onClick: T,
             focusProps: y,
             children: [E(), (0, a.jsx)("div", {
                 className: d.ap,
-                children: (0, a.jsx)(l.ChevronSmallRightIcon, {
+                children: (0, a.jsx)(s.ChevronSmallRightIcon, {
                     size: "xs",
                     color: "currentColor"
                 })
             })]
-        }) : (0, a.jsx)(s.DUT, {
+        }) : (0, a.jsx)(l.DUT, {
             className: d.ef,
             onClick: _,
             focusProps: y,
@@ -122,10 +122,10 @@ function u(e) {
         className: d.j$,
         onMouseEnter: T,
         onMouseLeave: S,
-        children: (0, a.jsx)(s.YNO, {
+        children: (0, a.jsx)(l.YNO, {
             targetElementRef: j,
             spacing: 0,
-            renderPopout: p,
+            renderPopout: x,
             shouldShow: f,
             onRequestClose: S,
             children: N

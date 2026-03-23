@@ -5,8 +5,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    s = n(503698),
+    l = n.n(s),
     r = n(158954),
     o = n(311907),
     d = n(990078),
@@ -14,8 +14,8 @@ var a = n(627968),
     u = n(397927),
     m = n(775602),
     h = n(544028),
-    p = n(341915),
-    x = n(890687),
+    x = n(341915),
+    p = n(890687),
     g = n(579473),
     _ = n(18437),
     f = n(590202),
@@ -32,21 +32,21 @@ function E(e) {
     let {
         quest: t,
         errorHints: n,
-        transitionState: l,
+        transitionState: s,
         onClose: A,
         sourceQuestContent: E
-    } = e, [I, k] = (0, i.useState)(n), O = (0, x.UX)(), R = (0, _.Ut)(), w = (0, v.vU)()?.getId(), D = (0, o.bG)([m.A], () => m.A.useReducedMotion), M = (0, C.Xf)({
+    } = e, [I, k] = (0, i.useState)(n), O = (0, p.UX)(), R = (0, _.Ut)(), w = (0, v.vU)()?.getId(), D = (0, o.bG)([m.A], () => m.A.useReducedMotion), M = (0, C.Xf)({
         useReducedMotion: D,
         className: S.Zf
-    }), P = I.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), L = (0, j.YL)(t), U = (0, o.bG)([h.A], () => h.A.getState().theme), B = (0, c.Mw)(U) ? y.NJ.DARK : y.NJ.LIGHT, {
+    }), P = I.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), U = (0, j.YL)(t), L = (0, o.bG)([h.A], () => h.A.getState().theme), B = (0, c.Mw)(L) ? y.NJ.DARK : y.NJ.LIGHT, {
         startConsoleQuest: G,
         startingConsoleQuest: F
-    } = (0, x.Wj)({
+    } = (0, p.Wj)({
         questId: t.id,
         beforeRequest: () => {
             M.startAnimation(), R({
                 questId: t.id,
-                questContent: p.uF.CONNECTIONS_MODAL,
+                questContent: x.uF.CONNECTIONS_MODAL,
                 questContentCTA: f.Cy.DEFIBRILLATOR,
                 sourceQuestContent: E
             })
@@ -56,7 +56,7 @@ function E(e) {
         }
     });
     return (0, a.jsx)(r.Modal, {
-        transitionState: l,
+        transitionState: s,
         onClose: A,
         title: T.intl.string(T.t.W5lmKt),
         subtitle: O.message,
@@ -65,7 +65,7 @@ function E(e) {
             onClick: () => void(A(), (0, b.b6)({
                 quest: t
             }, {
-                content: p.uF.CONNECTIONS_MODAL,
+                content: x.uF.CONNECTIONS_MODAL,
                 ctaContent: f.Cy.VIEW_CONSOLE_CONNECTIONS_LINK,
                 impressionId: w,
                 sourceQuestContent: E
@@ -84,7 +84,7 @@ function E(e) {
                     color: "text-default",
                     children: T.intl.string(T.t["+/hZM/"])
                 }), (0, a.jsxs)(u.DUT, {
-                    className: s()(S.Tm, {
+                    className: l()(S.Tm, {
                         [S.r9]: F
                     }),
                     onClick: G,
@@ -107,8 +107,8 @@ function E(e) {
                         size: "sm"
                     }),
                     text: T.intl.string(T.t.XF4wuA),
-                    errors: L ? void 0 : P.map(e => e.message),
-                    gameTile: L ? (0, a.jsx)(d.m, {
+                    errors: U ? void 0 : P.map(e => e.message),
+                    gameTile: U ? (0, a.jsx)(d.m, {
                         "aria-label": t.config.messages.gameTitle,
                         __unsupportedReactNodeAsText: (0, a.jsxs)("div", {
                             className: S.YL,
@@ -138,12 +138,12 @@ function N(e) {
         icon: t,
         text: n,
         errors: i = [],
-        gameTile: l
+        gameTile: s
     } = e, r = i.length > 0, o = r ? u.esW : u.QtE;
     return (0, a.jsxs)("div", {
         className: S.dJ,
         children: [(0, a.jsxs)("div", {
-            className: s()(S.w_, {
+            className: l()(S.w_, {
                 [S.qu]: r
             }),
             children: [(0, a.jsxs)("div", {
@@ -155,10 +155,10 @@ function N(e) {
                 })]
             }), (0, a.jsxs)("div", {
                 className: S.d3,
-                children: [l, (0, a.jsx)(o, {
+                children: [s, (0, a.jsx)(o, {
                     color: "currentColor",
                     size: "sm",
-                    className: s()({
+                    className: l()({
                         [S.kX]: !r,
                         [S.z3]: r
                     })
@@ -191,7 +191,7 @@ function I(e) {
             return (0, a.jsx)(A.R, {
                 overrideVisibility: !0,
                 questOrQuests: e.quest,
-                questContent: p.uF.CONNECTIONS_MODAL,
+                questContent: x.uF.CONNECTIONS_MODAL,
                 sourceQuestContent: e.sourceQuestContent,
                 children: () => (0, a.jsx)(t, {
                     ...n,

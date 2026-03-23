@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    s = n(503698),
+    l = n.n(s),
     r = n(311907),
     o = n(397927),
     d = n(263834),
@@ -16,7 +16,7 @@ var a = n(627968),
 function h(e) {
     let {
         devSettingsCategory: t
-    } = e, n = (0, r.bG)([c.Ay], () => c.Ay.allByCategory(t), [t], r.My), l = i.useMemo(() => n.map(e => {
+    } = e, n = (0, r.bG)([c.Ay], () => c.Ay.allByCategory(t), [t], r.My), s = i.useMemo(() => n.map(e => {
         let [t, n, {
             label: i
         }] = e;
@@ -28,7 +28,7 @@ function h(e) {
         }, t)
     }), [n]);
     return (0, a.jsx)("div", {
-        className: s()(m.nd, u.n),
-        children: l
+        className: l()(m.nd, u.n),
+        children: s
     })
 }

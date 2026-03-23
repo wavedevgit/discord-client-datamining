@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(582754),
     i = n(736653),
-    l = n(439174),
-    s = n(881141),
+    s = n(439174),
+    l = n(881141),
     r = n(788868),
     o = n(164741),
     d = n(341094),
@@ -13,8 +13,8 @@ var a = n(582754),
     u = n(915880),
     m = n(203683),
     h = n(187446),
-    p = n(935495),
-    x = n(651714),
+    x = n(935495),
+    p = n(651714),
     g = n(416307),
     _ = n(497783),
     f = n(39579),
@@ -83,23 +83,23 @@ let y = {
             light: j.A
         },
         [r.Ac.PREMIUM_TENURE_60_MONTH]: {
-            dark: p.A,
+            dark: x.A,
             light: A.A
         },
         [r.Ac.PREMIUM_TENURE_72_MONTH]: {
-            dark: x.A,
+            dark: p.A,
             light: C.A
         }
     };
 
 function S() {
-    let e = (0, s.A)(),
+    let e = (0, l.A)(),
         t = (0, a.Mw)((0, i.Ay)());
     if (!e) return null;
     let n = y[e],
         o = T[e],
         d = {
-            currentBadge: (0, l.e0)(e),
+            currentBadge: (0, s.e0)(e),
             currentBadgeTextGradient: t ? n?.dark : n?.light,
             levelUpVideoSrc: t ? o?.dark : o?.light
         },
@@ -107,7 +107,7 @@ function S() {
     if (c > 0) {
         let e = r.sp[c - 1],
             n = y[e];
-        d.prevBadge = (0, l.e0)(e), d.prevBadgeTextGradient = t ? n?.dark : n?.light
+        d.prevBadge = (0, s.e0)(e), d.prevBadgeTextGradient = t ? n?.dark : n?.light
     }
     return d
 }

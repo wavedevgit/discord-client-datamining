@@ -5,15 +5,15 @@ n.d(t, {
 var a = n(627968);
 n(64700);
 var i = n(397927),
-    l = n(976860),
-    s = n(324861),
+    s = n(976860),
+    l = n(324861),
     r = n(652215),
     o = n(663024);
 let d = function() {
     let {
         resetOnboardingExperience: e,
         resetQuestStatus: t
-    } = (0, s.A)();
+    } = (0, l.A)();
     return (0, a.jsx)("div", {
         className: o.k,
         children: (0, a.jsxs)(i.nVY, {
@@ -23,7 +23,7 @@ let d = function() {
                 children: (0, a.jsx)(i.Button, {
                     text: "Reset Onboarding State",
                     onClick: () => {
-                        e(), t(), (0, l.pX)(r.BVt.APP)
+                        e(), t(), (0, s.pX)(r.BVt.APP)
                     }
                 })
             }), (0, a.jsx)(i.po8, {

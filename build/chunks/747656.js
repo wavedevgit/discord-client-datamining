@@ -5,8 +5,8 @@ n.d(t, {
 var a = n(627968);
 n(64700);
 var i = n(311907),
-    l = n(397927),
-    s = n(155718),
+    s = n(397927),
+    l = n(155718),
     r = n(935649),
     o = n(847599),
     d = n(287809),
@@ -22,7 +22,7 @@ let m = function(e) {
             text: "Consectetur adipiscing",
             variant: "primary",
             onClick: () => {
-                n?.ageVerificationStatus === s.Tk.UNVERIFIED ? r.A.showAgeVerificationGetStartedModal({
+                n?.ageVerificationStatus === l.Tk.UNVERIFIED ? r.A.showAgeVerificationGetStartedModal({
                     entryPoint: o.q1.SAFETY_FLOWS,
                     onClose: () => t({
                         type: c.Ij.Empty
@@ -32,15 +32,15 @@ let m = function(e) {
                 })
             }
         }],
-        children: (0, a.jsxs)(l.BJc, {
+        children: (0, a.jsxs)(s.BJc, {
             gap: 8,
-            children: [(0, a.jsx)(l.Text, {
+            children: [(0, a.jsx)(s.Text, {
                 variant: "text-md/normal",
                 children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            }), (0, a.jsx)(l.Text, {
+            }), (0, a.jsx)(s.Text, {
                 variant: "text-md/normal",
                 children: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            }), (0, a.jsx)(l.Text, {
+            }), (0, a.jsx)(s.Text, {
                 variant: "text-md/normal",
                 children: "Ut enim ad minim veniam quis"
             })]

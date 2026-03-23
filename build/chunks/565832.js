@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(311907),
-    l = n(935154),
-    s = n(748319),
+    s = n(935154),
+    l = n(748319),
     r = n(287809),
     o = n(427262);
 
@@ -13,7 +13,7 @@ function d(e) {
     let {
         nameplate: t
     } = e, n = (0, i.bG)([r.default], () => r.default.getCurrentUser()), d = o.Ay.useName(n) ?? "";
-    return (0, a.jsx)(s.g, {
+    return (0, a.jsx)(l.g, {
         username: d,
         selfMute: !1,
         selfDeaf: !1,
@@ -22,7 +22,7 @@ function d(e) {
         suppress: !1,
         speaking: !1,
         streaming: !1,
-        status: l.cl.ONLINE,
+        status: s.cl.ONLINE,
         currentUser: n,
         activities: [],
         applicationStream: void 0,

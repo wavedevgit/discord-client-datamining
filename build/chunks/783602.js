@@ -1,11 +1,11 @@
 /** chunk id: 783602 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => x
 });
 var a = n(627968),
     i = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    s = n(503698),
+    l = n.n(s),
     r = n(397927),
     o = n(341915),
     d = n(890687),
@@ -14,25 +14,25 @@ var a = n(627968),
     m = n(985018),
     h = n(729836);
 
-function p() {
+function x() {
     let {
         quest: e,
         onCtxMenuOpen: t,
         onCtxMenuClose: n,
-        onCtxMenuSelect: l
-    } = i.useContext(u.T), p = (0, d.S5)(e.config.expiresAt);
+        onCtxMenuSelect: s
+    } = i.useContext(u.T), x = (0, d.S5)(e.config.expiresAt);
     return (0, a.jsxs)("div", {
         className: h.pS,
         children: [(0, a.jsx)(r.Text, {
             variant: "text-xxs/medium",
-            className: s()(h.Uu, h.TK),
+            className: l()(h.Uu, h.TK),
             children: m.intl.format(m.t["pX+fmn"], {
-                expirationDate: p
+                expirationDate: x
             })
         }), (0, a.jsx)(c.C, {
             onOpen: t,
             onClose: n,
-            onSelect: l,
+            onSelect: s,
             questContent: o.uF.QUEST_BAR_V2,
             quest: e,
             shouldShowDisclosure: !1,
@@ -45,7 +45,7 @@ function p() {
                 children: (0, a.jsx)(r.jNK, {
                     size: "md",
                     color: "currentColor",
-                    className: s()(h.Bx, h.U9)
+                    className: l()(h.Bx, h.U9)
                 })
             })
         })]

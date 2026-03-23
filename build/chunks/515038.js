@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    s = n(503698),
+    l = n.n(s),
     r = n(497766),
     o = n(311907),
     d = n(397927),
@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(775602),
     m = n(409626),
     h = n(106799),
-    p = n(714510),
-    x = n(890687),
+    x = n(714510),
+    p = n(890687),
     g = n(710969),
     _ = n(92246),
     f = n(453384),
@@ -32,21 +32,21 @@ function N(e) {
     let {
         quest: t,
         questContent: n,
-        isHovering: l,
+        isHovering: s,
         contentPosition: N,
         rowIndex: k,
         isVisibleInViewport: O,
         onReceiveErrorHints: R,
         sourceQuestContent: w
-    } = e, D = i.useRef(null), M = (0, _.mq)(t.config), P = (0, _.mH)(t.config), L = t.userStatus?.enrolledAt != null, {
-        ref: U,
+    } = e, D = i.useRef(null), M = (0, _.mq)(t.config), P = (0, _.mH)(t.config), U = t.userStatus?.enrolledAt != null, {
+        ref: L,
         scrollHeight: B
     } = (0, c.wR)(), G = 104 !== B, {
         onAssetLoadComplete: F
     } = i.useContext(j.M), {
         expansionSpring: V
     } = (0, d.zhh)({
-        expansionSpring: +!!l,
+        expansionSpring: +!!s,
         config: {
             ...y.N,
             clamp: !0
@@ -54,7 +54,7 @@ function N(e) {
     }), W = t.userStatus?.completedAt != null, H = t.userStatus?.claimedAt != null, K = (0, _.ks)(t.config), z = (0, _._Z)(t.config), {
         completedRatio: $,
         completedRatioDisplay: q
-    } = (0, x.O9)(t), Q = (0, p.gj)(t, w, m.Ob.QuestHome, D), Y = i.useMemo(() => H && K ? T.intl.format(T.t["8Op4c4"], {
+    } = (0, p.O9)(t), Q = (0, x.gj)(t, w, m.Ob.QuestHome, D), Y = i.useMemo(() => H && K ? T.intl.format(T.t["8Op4c4"], {
         balanceHook: () => (0, a.jsxs)(I, {
             questId: t.id,
             children: [(0, a.jsx)(h.A, {
@@ -104,7 +104,7 @@ function N(e) {
                     className: S.c6,
                     children: [!H && W && (0, a.jsx)("div", {
                         className: S.Nz
-                    }), L ? (0, a.jsxs)("div", {
+                    }), U ? (0, a.jsxs)("div", {
                         className: S.Tr,
                         children: [W && (0, a.jsx)(d.akl, {
                             importData: E,
@@ -115,11 +115,11 @@ function N(e) {
                         }), (0, a.jsx)(f.A, {
                             size: 76,
                             percentComplete: $,
-                            percentCompleteText: l && !(0, g.Ic)(t) ? q : void 0,
+                            percentCompleteText: s && !(0, g.Ic)(t) ? q : void 0,
                             children: (0, a.jsx)(v.A, {
                                 quest: t,
                                 questContent: n,
-                                autoplay: l,
+                                autoplay: s,
                                 onLoadComplete: F,
                                 lazyLoad: !0,
                                 fullWidth: !0,
@@ -128,7 +128,7 @@ function N(e) {
                         })]
                     }) : (0, a.jsx)(v.A, {
                         quest: t,
-                        autoplay: l,
+                        autoplay: s,
                         questContent: n,
                         className: S.eB,
                         onLoadComplete: F,
@@ -137,8 +137,8 @@ function N(e) {
                     })]
                 })
             }), (0, a.jsxs)("div", {
-                ref: U,
-                className: s()(S.FS, {
+                ref: L,
+                className: l()(S.FS, {
                     [S.wq]: !G
                 }),
                 children: [(0, a.jsx)(d.Heading, {

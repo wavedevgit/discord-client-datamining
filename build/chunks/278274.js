@@ -1,17 +1,17 @@
 /** chunk id: 278274 params = (module,exports,require) **/
 n.d(t, {
-    q: () => s
+    q: () => l
 });
 var a = n(627968);
 n(64700);
 var i = n(397927),
-    l = n(520657);
+    s = n(520657);
 
-function s(e) {
+function l(e) {
     let {
         isUploading: t,
         isSuccess: n,
-        errorMessage: s,
+        errorMessage: l,
         onClick: r,
         title: o
     } = e;
@@ -22,15 +22,15 @@ function s(e) {
             loading: t,
             disabled: t,
             text: t ? "Uploading…" : o
-        }), null != s && (0, a.jsx)(i.Text, {
+        }), null != l && (0, a.jsx)(i.Text, {
             variant: "text-sm/normal",
             color: "text-feedback-critical",
-            className: l.qS,
-            children: s
+            className: s.qS,
+            children: l
         }), n && (0, a.jsx)(i.Text, {
             variant: "text-sm/normal",
             color: "text-feedback-positive",
-            className: l.qS,
+            className: s.qS,
             children: "Logs uploaded successfully"
         })]
     })

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    s = n(503698),
+    l = n.n(s),
     r = n(334279),
     o = n(421380),
     d = n(397927),
@@ -14,8 +14,8 @@ var a = n(627968),
     u = n(405269),
     m = n(367744),
     h = n(652215),
-    p = n(753879),
-    x = n(815907),
+    x = n(753879),
+    p = n(815907),
     g = n(661251);
 let _ = {
         [h.GD.QUEST_REWARD]: "Quest Reward",
@@ -30,11 +30,11 @@ let _ = {
         let t, {
                 entitlement: n,
                 active: i,
-                onDelete: l
+                onDelete: s
             } = e,
             r = e => null != e ? (0, u.i$)(e, "LLL") : "---";
         return (0, a.jsxs)("div", {
-            className: s()(p.Nr, i ? x.C1 : ""),
+            className: l()(x.Nr, i ? p.C1 : ""),
             children: [(0, a.jsxs)(d.Text, {
                 variant: "text-md/normal",
                 children: ["ID: ", n.id, " "]
@@ -52,12 +52,12 @@ let _ = {
             }), (0, a.jsxs)(d.Text, {
                 variant: "text-md/normal",
                 children: ["Entitlement source type: ", null != (t = n.sourceType) && t in _ ? _[t] : `Unknown source type ${t}`]
-            }), i && null != l && (0, a.jsx)(o.$n, {
-                className: p.RW,
+            }), i && null != s && (0, a.jsx)(o.$n, {
+                className: x.RW,
                 size: o.$n.Sizes.TINY,
                 color: o.$n.Colors.RED,
                 look: o.$n.Looks.OUTLINED,
-                onClick: l,
+                onClick: s,
                 children: "Delete"
             })]
         })
@@ -77,7 +77,7 @@ let _ = {
     }];
 
 function b() {
-    let [e, t] = i.useState(!1), [n, l] = i.useState(r.j.PREMIUM_TIER_2_1_HOUR), [u, _] = i.useState([]), [b, j] = i.useState([]), {
+    let [e, t] = i.useState(!1), [n, s] = i.useState(r.j.PREMIUM_TIER_2_1_HOUR), [u, _] = i.useState([]), [b, j] = i.useState([]), {
         refreshEntitlementList: A,
         grantFractionalPremium: C,
         deleteFractionalPremium: y,
@@ -92,9 +92,9 @@ function b() {
     }, [S]), (0, a.jsx)(d.IpV, {
         className: g.nd,
         children: (0, a.jsxs)("div", {
-            className: x.l$,
+            className: p.l$,
             children: [(0, a.jsxs)("div", {
-                className: x.dL,
+                className: p.dL,
                 children: [(0, a.jsx)(d.Text, {
                     style: {
                         marginBottom: "8px"
@@ -103,7 +103,7 @@ function b() {
                     children: "Manage Fractional Nitro"
                 }), (0, a.jsxs)(d.DUT, {
                     onClick: () => t(!e),
-                    className: p.As,
+                    className: x.As,
                     children: [(0, a.jsx)("div", {
                         children: (0, a.jsx)(d.Text, {
                             variant: "text-md/normal",
@@ -136,12 +136,12 @@ function b() {
                 style: {
                     marginBottom: "8px"
                 },
-                className: s()([p.uW, x.Uo]),
+                className: l()([x.uW, p.Uo]),
                 children: [(0, a.jsx)(d.l6P, {
                     label: "Fractional Premium SKU",
                     value: n,
                     options: v,
-                    onSelectionChange: l,
+                    onSelectionChange: s,
                     selectionMode: "single",
                     fullWidth: !0
                 }), (0, a.jsx)(d.Button, {
@@ -150,12 +150,12 @@ function b() {
                     onClick: () => C(n)
                 })]
             }), (0, a.jsxs)("section", {
-                className: p.uW,
+                className: x.uW,
                 children: [(0, a.jsxs)("div", {
                     style: {
                         flexWrap: "wrap"
                     },
-                    className: x.dL,
+                    className: p.dL,
                     children: [(0, a.jsx)(d.Text, {
                         style: {
                             marginBottom: "8px"
@@ -163,7 +163,7 @@ function b() {
                         variant: "text-lg/semibold",
                         children: "Entitlements"
                     }), (0, a.jsxs)("div", {
-                        className: p.GC,
+                        className: x.GC,
                         children: [(0, a.jsx)(o.$n, {
                             disabled: E,
                             size: o.$n.Sizes.TINY,

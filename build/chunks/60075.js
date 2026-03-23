@@ -1,18 +1,18 @@
 /** chunk id: 60075 params = (module,exports,require) **/
 l.d(t, {
-    D5: () => f,
-    Ec: () => b,
-    KF: () => P,
+    D5: () => g,
+    Ec: () => x,
+    KF: () => A,
     LF: () => m,
-    NA: () => x,
+    NA: () => b,
     Z1: () => h,
-    lz: () => T,
-    mi: () => R,
-    s2: () => A,
+    lz: () => S,
+    mi: () => P,
+    s2: () => T,
     t$: () => p,
-    yJ: () => j,
-    yi: () => C,
-    z_: () => E
+    yJ: () => C,
+    yi: () => j,
+    z_: () => _
 });
 var a = l(627968),
     n = l(64700),
@@ -90,7 +90,7 @@ function h() {
     })
 }
 
-function x() {
+function b() {
     let e = n.useCallback(() => {
         (0, i.mMO)(async () => {
             let {
@@ -112,7 +112,7 @@ function x() {
     })
 }
 
-function b() {
+function x() {
     let [e] = n.useState("This is a sample long message that exceeds the character limit."), t = n.useCallback(() => {
         (0, i.mMO)(async () => {
             let {
@@ -147,7 +147,7 @@ let y = [{
         label: "Nameplate",
         value: d.e.NAMEPLATE_MODAL_UPSELL
     }],
-    g = {
+    f = {
         [d.e.AVATAR_DECORATION_MODAL_UPSELL]: {
             title: "Express Yourself with Avatar Decorations",
             body: "Stand out with unique avatar decorations exclusive to Nitro subscribers.",
@@ -165,13 +165,13 @@ let y = [{
         }
     };
 
-function f() {
+function g() {
     let [e, t] = n.useState(d.e.AVATAR_DECORATION_MODAL_UPSELL), r = n.useCallback(() => {
         let {
             title: t,
             body: n,
             glowUp: r
-        } = g[e];
+        } = f[e];
         (0, i.mMO)(async () => {
             let {
                 default: i
@@ -216,7 +216,7 @@ let v = [{
     value: u.qlD
 }];
 
-function E() {
+function _() {
     let [e, t] = n.useState(100), r = n.useCallback(() => {
         (0, i.mMO)(async () => {
             let {
@@ -250,7 +250,7 @@ function E() {
         })]
     })
 }
-let S = [{
+let E = [{
     id: "avatar",
     label: "Avatar",
     value: c.HL.AVATAR
@@ -260,7 +260,7 @@ let S = [{
     value: c.HL.BANNER
 }];
 
-function j() {
+function C() {
     let [e, t] = n.useState(c.HL.AVATAR), u = (0, r.bG)([s.default], () => s.default.getCurrentUser()), d = n.useCallback(() => {
         null != u && (0, i.mMO)(async () => {
             let {
@@ -282,7 +282,7 @@ function j() {
                 placeholder: "Select type",
                 onSelectionChange: e => t(e),
                 value: e,
-                options: S,
+                options: E,
                 selectionMode: "single",
                 fullWidth: !0
             })
@@ -295,7 +295,7 @@ function j() {
     })
 }
 
-function T() {
+function S() {
     let e = (0, r.bG)([s.default], () => s.default.getCurrentUser()),
         t = n.useCallback(() => {
             null != e && (0, i.mMO)(async () => {
@@ -320,7 +320,7 @@ function T() {
     })
 }
 
-function C() {
+function j() {
     let e = n.useCallback(() => {
         (0, i.mMO)(async () => {
             let {
@@ -342,7 +342,7 @@ function C() {
     })
 }
 
-function A() {
+function T() {
     let e = n.useCallback(() => {
         (0, i.mMO)(async () => {
             let {
@@ -365,7 +365,7 @@ function A() {
     })
 }
 
-function P() {
+function A() {
     let e = n.useCallback(() => {
         (0, i.mMO)(async () => {
             let {
@@ -387,7 +387,7 @@ function P() {
     })
 }
 
-function R() {
+function P() {
     let e = n.useCallback(() => {
         (0, i.mMO)(async () => {
             let {

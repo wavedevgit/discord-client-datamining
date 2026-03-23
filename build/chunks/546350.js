@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(64700),
     i = n(311907),
-    l = n(397927),
-    s = n(775602),
+    s = n(397927),
+    l = n(775602),
     r = n(654487);
 
 function o(e) {
@@ -13,7 +13,7 @@ function o(e) {
         isQuestAccepted: t,
         isQuestCompleted: n,
         isQuestBarVisible: o
-    } = e, d = (0, i.bG)([s.A], () => s.A.useReducedMotion), [c, u] = a.useState(!1), [m, h] = a.useState(!0), [p, x] = a.useState(!0), g = a.useRef(o), _ = a.useCallback(e => {
+    } = e, d = (0, i.bG)([l.A], () => l.A.useReducedMotion), [c, u] = a.useState(!1), [m, h] = a.useState(!0), [x, p] = a.useState(!0), g = a.useRef(o), _ = a.useCallback(e => {
         n || (h(!1), u(e))
     }, [n]), f = a.useCallback(() => {
         _(!0)
@@ -21,7 +21,7 @@ function o(e) {
         _(!1)
     }, [_]), b = t ? r.ZV : r.Ko, [{
         expansionSpring: j
-    }, A] = (0, l.zhh)(() => ({
+    }, A] = (0, s.zhh)(() => ({
         from: {
             expansionSpring: 0
         },
@@ -41,7 +41,7 @@ function o(e) {
     }, [c, A, d]);
     let {
         visibilitySpring: C
-    } = (0, l.zhh)({
+    } = (0, s.zhh)({
         from: {
             visibilitySpring: 0
         },
@@ -54,21 +54,21 @@ function o(e) {
             clamp: !0
         },
         onRest: () => {
-            x(!0)
+            p(!0)
         },
         onStart: () => {
-            x(!1)
+            p(!1)
         }
     });
     return a.useLayoutEffect(() => {
-        o !== g.current && x(!1), g.current = o
+        o !== g.current && p(!1), g.current = o
     }, [o]), {
         isExpanded: c,
         setIsExpanded: _,
         expandQuestBar: f,
         collapseQuestBar: v,
         isExpansionAnimationComplete: m,
-        isVisibilityAnimationAtRest: p,
+        isVisibilityAnimationAtRest: x,
         expansionSpring: j,
         visibilitySpring: C,
         springConfig: b

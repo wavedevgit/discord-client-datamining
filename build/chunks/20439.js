@@ -1,6 +1,6 @@
 /** chunk id: 20439 params = (module,exports,require) **/
 l.d(t, {
-    A: () => x
+    A: () => b
 });
 var a = l(64700),
     n = l(311907),
@@ -18,7 +18,7 @@ function h(e, t, l) {
     (0, u.IR)(t ? null : e, l ?? null)
 }
 
-function x(e) {
+function b(e) {
     let t = (0, n.bG)([i.A], () => i.A.getGuildId()),
         l = (0, d.JZ)(e, {
             cooldownDurationMs: o.A.Millis.WEEK,

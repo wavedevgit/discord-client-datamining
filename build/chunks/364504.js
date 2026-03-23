@@ -1,11 +1,11 @@
 /** chunk id: 364504 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => x
 });
 var a = n(627968),
     i = n(158954),
-    l = n(793574),
-    s = n(688810),
+    s = n(793574),
+    l = n(688810),
     r = n(687173),
     o = n(770983),
     d = n(871123),
@@ -19,14 +19,14 @@ function h() {
     })
 }
 
-function p(e) {
+function x(e) {
     let {
         profileUserId: t,
         handleOpenUserProfileModal: n,
         markAsDismissed: d
     } = e, {
         analyticsLocations: c
-    } = (0, s.Ay)([l.A.WISHLIST_ACCOUNT_POPOUT_UPSSELL]);
+    } = (0, l.Ay)([s.A.WISHLIST_ACCOUNT_POPOUT_UPSSELL]);
     return null == t ? null : (0, a.jsxs)(r.A, {
         heading: u.intl.string(u.t["vy/61K"]),
         subheading: u.intl.string(u.t.tEee9t),

@@ -1,6 +1,6 @@
 /** chunk id: 706276 params = (module,exports,require) **/
 l.d(t, {
-    o: () => x
+    o: () => b
 });
 var a = l(627968),
     n = l(64700),
@@ -14,16 +14,16 @@ var a = l(627968),
     p = l(601107),
     m = l(788868),
     h = l(818348);
-let x = () => {
-        let [e, t] = n.useState(m.PremiumTypes.TIER_0), [l, x] = n.useState(o.g.WHAT_YOU_LOSE), [y, g] = n.useState(null), [f, v] = n.useState(m.gD.PREMIUM_MONTH_TIER_0), [E, S] = n.useState([]), [j, T] = n.useState(() => {
+let b = () => {
+        let [e, t] = n.useState(m.PremiumTypes.TIER_0), [l, b] = n.useState(o.g.WHAT_YOU_LOSE), [y, f] = n.useState(null), [g, v] = n.useState(m.gD.PREMIUM_MONTH_TIER_0), [_, E] = n.useState([]), [C, S] = n.useState(() => {
             let e = new Date;
             return e.setMonth(e.getMonth() + 1), e
-        }), [C, A] = n.useState(null), [P, R] = n.useState(!1), [_, k] = n.useState(!1), [I, N] = n.useState(!1);
+        }), [j, T] = n.useState(null), [A, P] = n.useState(!1), [R, k] = n.useState(!1), [I, N] = n.useState(!1);
         (0, n.useEffect)(() => {
             (0, i.zS)()
         }, []), (0, n.useEffect)(() => {
             let e = new Date;
-            switch (f) {
+            switch (g) {
                 case m.gD.PREMIUM_MONTH_TIER_0:
                 case m.gD.PREMIUM_MONTH_TIER_1:
                 case m.gD.PREMIUM_MONTH_TIER_2:
@@ -34,11 +34,11 @@ let x = () => {
                 case m.gD.PREMIUM_YEAR_TIER_2:
                     e.setFullYear(e.getFullYear() + 1)
             }
-            T(e)
-        }, [f]), (0, n.useEffect)(() => {
+            S(e)
+        }, [g]), (0, n.useEffect)(() => {
             switch (e) {
                 case m.PremiumTypes.TIER_0:
-                    S([{
+                    E([{
                         label: "Nitro Basic Monthly",
                         value: m.gD.PREMIUM_MONTH_TIER_0
                     }, {
@@ -47,7 +47,7 @@ let x = () => {
                     }]), v(m.gD.PREMIUM_MONTH_TIER_0);
                     break;
                 case m.PremiumTypes.TIER_1:
-                    S([{
+                    E([{
                         label: "Nitro Classic Monthly",
                         value: m.gD.PREMIUM_MONTH_TIER_1
                     }, {
@@ -56,7 +56,7 @@ let x = () => {
                     }]), v(m.gD.PREMIUM_MONTH_TIER_1);
                     break;
                 case m.PremiumTypes.TIER_2:
-                    S([{
+                    E([{
                         label: "Nitro Monthly",
                         value: m.gD.PREMIUM_MONTH_TIER_2
                     }, {
@@ -65,11 +65,11 @@ let x = () => {
                     }]), v(m.gD.PREMIUM_MONTH_TIER_2)
             }
         }, [e]), (0, n.useEffect)(() => {
-            [o.g.CONFIRM_DISCOUNT, o.g.DISCOUNT_APPLIED].includes(l) && null === y && g(b()), l === o.g.PREVIEW && null === C && A(new u.A({
+            [o.g.CONFIRM_DISCOUNT, o.g.DISCOUNT_APPLIED].includes(l) && null === y && f(x()), l === o.g.PREVIEW && null === j && T(new u.A({
                 id: "",
                 invoiceItems: [{
                     id: "",
-                    subscriptionPlanId: f,
+                    subscriptionPlanId: g,
                     subscriptionPlanPrice: 200,
                     amount: 400,
                     quantity: 1,
@@ -87,10 +87,10 @@ let x = () => {
                 tax: 0,
                 taxInclusive: !0,
                 subscriptionPeriodStart: new Date,
-                subscriptionPeriodEnd: j,
+                subscriptionPeriodEnd: C,
                 status: d.lT7.PAID
-            })), l !== o.g.PREVIEW && null !== C && A(null)
-        }, [l, y, j, f, C]);
+            })), l !== o.g.PREVIEW && null !== j && T(null)
+        }, [l, y, C, g, j]);
         let M = n.useCallback(async () => {
             N(!0), await (0, r.mMO)(async () => t => (0, a.jsx)(c.m, {
                 ...t,
@@ -99,27 +99,27 @@ let x = () => {
                 },
                 premiumType: e,
                 churnDiscount: y,
-                planId: f,
-                renewalInvoice: C,
+                planId: g,
+                renewalInvoice: j,
                 renewalInvoiceDetails: {
                     intervalType: m.WT.MONTH,
                     intervalCount: 1
                 },
-                errorOnCancel: P,
-                errorOnRedeem: _,
+                errorOnCancel: A,
+                errorOnRedeem: R,
                 setActiveStep: e => {
-                    x(e), t.onClose()
+                    b(e), t.onClose()
                 },
                 activeStep: l,
                 premiumSubscription: {
                     id: "",
-                    planId: f,
+                    planId: g,
                     type: h.rz.PREMIUM,
                     items: [],
                     createdAt: new Date,
                     canceledAt: null,
                     currentPeriodStart: new Date,
-                    currentPeriodEnd: j,
+                    currentPeriodEnd: C,
                     status: d.Dmq.ACTIVE,
                     paymentSourceId: null,
                     paymentGateway: null,
@@ -134,7 +134,7 @@ let x = () => {
                     pauseReason: p.qf.UNKNOWN
                 }
             }))
-        }, [e, y, f, C, P, _, l, j]);
+        }, [e, y, g, j, A, R, l, C]);
         return (0, n.useEffect)(() => {
             I && M()
         }, [l, I, M]), (0, a.jsxs)(s.LB, {
@@ -160,7 +160,7 @@ let x = () => {
                     selectionMode: "single",
                     fullWidth: !0
                 })
-            }), E.length > 0 && (0, a.jsx)(s.MG, {
+            }), _.length > 0 && (0, a.jsx)(s.MG, {
                 children: (0, a.jsx)(r.l6P, {
                     label: "Subscription Interval",
                     placeholder: "Premium Type",
@@ -176,8 +176,8 @@ let x = () => {
                             value: l
                         }
                     },
-                    value: f,
-                    options: E,
+                    value: g,
+                    options: _,
                     selectionMode: "single",
                     fullWidth: !0
                 })
@@ -185,7 +185,7 @@ let x = () => {
                 children: (0, a.jsx)(r.l6P, {
                     label: "Modal Step",
                     placeholder: "Premium Type",
-                    onSelectionChange: x,
+                    onSelectionChange: b,
                     value: l,
                     options: [{
                         id: "whatYouLose",
@@ -215,23 +215,23 @@ let x = () => {
                 children: (0, a.jsx)(r.Checkbox, {
                     checked: null !== y,
                     onChange: () => {
-                        null === y ? g(b()) : g(null)
+                        null === y ? f(x()) : f(null)
                     },
                     label: "Churn Discount"
                 })
             }), (0, a.jsx)(s.MG, {
                 children: (0, a.jsx)(r.Checkbox, {
-                    checked: _,
+                    checked: R,
                     onChange: () => {
-                        k(!_)
+                        k(!R)
                     },
                     label: "Error on Redeem Offer"
                 })
             }), (0, a.jsx)(s.MG, {
                 children: (0, a.jsx)(r.Checkbox, {
-                    checked: P,
+                    checked: A,
                     onChange: () => {
-                        R(!P)
+                        P(!A)
                     },
                     label: "Error on Cancel"
                 })
@@ -245,7 +245,7 @@ let x = () => {
             })]
         })
     },
-    b = function() {
+    x = function() {
         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
             {
                 discount: t = {}

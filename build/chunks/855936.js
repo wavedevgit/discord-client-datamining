@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    s = n(503698),
+    l = n.n(s),
     r = n(397927),
     o = n(936388),
     d = n(195338),
@@ -15,7 +15,7 @@ function u() {
     let e = i.useRef(null);
     return (0, a.jsx)("div", {
         ref: e,
-        className: s()(c.nd, d.n),
+        className: l()(c.nd, d.n),
         children: (0, a.jsx)(r.Button, {
             variant: "primary",
             size: "sm",

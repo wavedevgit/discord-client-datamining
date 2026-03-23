@@ -1,6 +1,6 @@
 /** chunk id: 162097 params = (module,exports,require) **/
 l.d(t, {
-    b: () => f
+    b: () => g
 });
 var a = l(627968),
     n = l(64700),
@@ -14,24 +14,24 @@ var a = l(627968),
     p = l(652215),
     m = l(985018),
     h = l(186541),
-    x = l(266770),
-    b = l(268920),
+    b = l(266770),
+    x = l(268920),
     y = l(633217);
-let g = () => (0, a.jsx)("div", {
+let f = () => (0, a.jsx)("div", {
         className: h.s,
         children: (0, a.jsx)(u.A, {
             src: y.A,
-            fallbackImage: b.A,
+            fallbackImage: x.A,
             className: h.Cb
         })
     }),
-    f = e => {
+    g = e => {
         let {
             ctaText: t,
             ctaOnClick: l,
             analyticsPage: r,
             linkPreText: u = m.intl.string(m.t["5qZv9E"]),
-            linkText: b = m.intl.string(m.t.XRdyjz)
+            linkText: x = m.intl.string(m.t.XRdyjz)
         } = e, y = n.useCallback(() => {
             null != r && (0, d.Y)({
                 pageType: r,
@@ -40,8 +40,8 @@ let g = () => (0, a.jsx)("div", {
             })
         }, [r]);
         return (0, a.jsxs)("div", {
-            className: i()(h.kL, x.O),
-            children: [(0, a.jsx)(g, {}), (0, a.jsx)(o.$nd, {
+            className: i()(h.kL, b.O),
+            children: [(0, a.jsx)(f, {}), (0, a.jsx)(o.$nd, {
                 text: t,
                 variant: "primary",
                 size: "sm",
@@ -59,7 +59,7 @@ let g = () => (0, a.jsx)("div", {
                     href: c.A.getArticleURL(p.MVz.ORBS_FAQ),
                     className: h.CU,
                     onClick: y,
-                    children: b
+                    children: x
                 })]
             })]
         })

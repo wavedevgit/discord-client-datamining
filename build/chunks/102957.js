@@ -1,6 +1,6 @@
 /** chunk id: 102957 params = (module,exports,require) **/
 l.d(t, {
-    r: () => g
+    r: () => f
 });
 var a = l(627968),
     n = l(64700),
@@ -47,7 +47,7 @@ let p = {
             }
         }
     },
-    x = {
+    b = {
         buttonType: {
             googlePay: "pay",
             applePay: "book"
@@ -58,17 +58,17 @@ let p = {
         },
         buttonHeight: 40
     },
-    b = e => void 0 !== e ? JSON.stringify(e, null, 2) : "undefined";
+    x = e => void 0 !== e ? JSON.stringify(e, null, 2) : "undefined";
 
 function y() {
-    let [e, t] = n.useState(b(h)), [l, u] = n.useState(h), [m, y] = n.useState(b(x)), [g, f] = n.useState(x), [v, E] = n.useState(null), [S, j] = n.useState((0, a.jsx)(c.a8, {
+    let [e, t] = n.useState(x(h)), [l, u] = n.useState(h), [m, y] = n.useState(x(b)), [f, g] = n.useState(b), [v, _] = n.useState(null), [E, C] = n.useState((0, a.jsx)(c.a8, {
         errorLabel: p.CONFIGURABLE,
         elementOptions: h,
         children: (0, a.jsx)(r.ExpressCheckoutElement, {
             onConfirm: e => {
                 console.log("ExpressCheckoutElement onConfirm event: ", e)
             },
-            options: x
+            options: b
         })
     }));
     return (0, a.jsxs)("div", {
@@ -127,7 +127,7 @@ function y() {
                     try {
                         let t = JSON.parse(e),
                             l = JSON.parse(m);
-                        j(null), j((0, a.jsxs)(a.Fragment, {
+                        C(null), C((0, a.jsxs)(a.Fragment, {
                             children: [(0, a.jsxs)(o.Text, {
                                 variant: "text-md/normal",
                                 className: d.cW,
@@ -142,9 +142,9 @@ function y() {
                                     options: l
                                 })
                             })]
-                        })), u(t), f(l), E(null)
+                        })), u(t), g(l), _(null)
                     } catch (e) {
-                        console.error("ConfigurableStripeExpressCheckoutElement - error parsing JSON: ", e), E("Error parsing JSON. Check console for more information.")
+                        console.error("ConfigurableStripeExpressCheckoutElement - error parsing JSON: ", e), _("Error parsing JSON. Check console for more information.")
                     }
                 }
             })
@@ -156,7 +156,7 @@ function y() {
             variant: "text-md/normal",
             children: (0, a.jsx)(s.A, {
                 className: d.wD,
-                children: `\`\` ${b(l)} \`\``
+                children: `\`\` ${x(l)} \`\``
             })
         }), (0, a.jsx)(o.Text, {
             variant: "text-md/normal",
@@ -166,12 +166,12 @@ function y() {
             variant: "text-md/normal",
             children: (0, a.jsx)(s.A, {
                 className: d.wD,
-                children: `\`\` ${b(g)} \`\``
+                children: `\`\` ${x(f)} \`\``
             })
-        }), S]
+        }), E]
     })
 }
-let g = {
+let f = {
     name: "Stripe Components",
     id: "stripe-components",
     component: function() {
@@ -209,7 +209,7 @@ let g = {
                                 variant: "text-md/normal",
                                 children: (0, a.jsx)(s.A, {
                                     className: d.wD,
-                                    children: `\`\`${b(m[e])} \`\``
+                                    children: `\`\`${x(m[e])} \`\``
                                 })
                             }), (0, a.jsx)(c.a8, {
                                 errorLabel: t,

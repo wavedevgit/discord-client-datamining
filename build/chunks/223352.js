@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    s = n(503698),
+    l = n.n(s),
     r = n(497766),
     o = n(311907),
     d = n(397927),
@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(341915),
     m = n(646764),
     h = n(398025),
-    p = n(568329),
-    x = n(963713),
+    x = n(568329),
+    p = n(963713),
     g = n(772244);
 n(272111);
 var _ = n(985018),
@@ -23,11 +23,11 @@ let v = e => {
     let {
         isFullyExpanded: t,
         partnerBranding: n
-    } = e, l = (0, g.q)().label, v = (0, o.bG)([c.A], () => c.A.useReducedMotion), {
+    } = e, s = (0, g.q)().label, v = (0, o.bG)([c.A], () => c.A.useReducedMotion), {
         quest: b
-    } = i.useContext(x.T), {
+    } = i.useContext(p.T), {
         expansionSpring: j
-    } = i.useContext(p.PW), A = l ? -4 : 6;
+    } = i.useContext(x.PW), A = s ? -4 : 6;
     return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(r.animated.div, {
             className: f.tE,
@@ -58,8 +58,8 @@ let v = e => {
                 }
             })
         }), (0, a.jsxs)(r.animated.div, {
-            className: s()(f.pm, {
-                [f.nd]: l
+            className: l()(f.pm, {
+                [f.nd]: s
             }),
             style: {
                 transform: (0, r.to)([j.to({
@@ -71,18 +71,18 @@ let v = e => {
                 })], (e, t) => `translate(${e}px, ${t}px)`)
             },
             children: [(0, a.jsx)("div", {
-                className: s()({
-                    [f.Iu]: !l
+                className: l()({
+                    [f.Iu]: !s
                 }),
                 children: n
             }), (0, a.jsx)(r.animated.div, {
-                className: s()(f.ol, {
-                    [f.yZ]: l
+                className: l()(f.ol, {
+                    [f.yZ]: s
                 }),
                 style: {
                     opacity: (0, h.a)(j.to({
                         range: [0, 1],
-                        output: [l ? 1 : .7, 0]
+                        output: [s ? 1 : .7, 0]
                     }))
                 },
                 children: (0, a.jsx)(d.Text, {

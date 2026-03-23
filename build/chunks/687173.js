@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    s = n(503698),
+    l = n.n(s),
     r = n(497766),
     o = n(397927),
     d = n(915089),
@@ -17,19 +17,19 @@ function h(e) {
     let {
         markAsDismissed: t,
         heading: n,
-        subheading: l,
+        subheading: s,
         children: h,
-        height: p,
-        className: x,
+        height: x,
+        className: p,
         contentClassName: g
     } = e, _ = (0, d.GV)(), f = i.useRef(null), v = (0, o.zhh)({
         from: {
             transform: "translate3d(-110%, 0, 0)",
-            height: p
+            height: x
         },
         to: {
             transform: "translate3d(0, 0, 0)",
-            height: p
+            height: x
         },
         config: {
             mass: 1,
@@ -41,7 +41,7 @@ function h(e) {
         }
     });
     return (0, a.jsx)(r.animated.div, {
-        className: s()(m.kL, x),
+        className: l()(m.kL, p),
         style: v,
         children: (0, a.jsxs)("aside", {
             "aria-labelledby": _,
@@ -63,15 +63,15 @@ function h(e) {
                     variant: "heading-lg/semibold",
                     children: n
                 })]
-            }), null != l && (0, a.jsx)(o.Text, {
+            }), null != s && (0, a.jsx)(o.Text, {
                 variant: "text-md/normal",
                 color: "text-subtle",
-                children: l
+                children: s
             }), (0, a.jsx)(o.HOs, {
                 className: m.XG,
                 fade: !0,
                 children: (0, a.jsx)("div", {
-                    className: s()(m.gT, g),
+                    className: l()(m.gT, g),
                     children: h
                 })
             })]

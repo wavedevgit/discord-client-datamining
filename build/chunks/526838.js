@@ -26,31 +26,31 @@ let u = {
                     action1Text: p,
                     action1Variant: m,
                     action2Text: h,
-                    action2Variant: x,
-                    icon: b,
+                    action2Variant: b,
+                    icon: x,
                     iconPosition: y,
-                    index: g,
-                    size: f,
+                    index: f,
+                    size: g,
                     badgeText: v,
-                    badgeVariant: E,
-                    isReducedMotion: S,
-                    previewImageStyle: j
-                } = e, T = () => (0, n.showToast)((0, n.createToast)("CTA clicked!", n.ToastType.SUCCESS)), C = u[b], A = "descriptionCta" === c ? {
+                    badgeVariant: _,
+                    isReducedMotion: E,
+                    previewImageStyle: C
+                } = e, S = () => (0, n.showToast)((0, n.createToast)("CTA clicked!", n.ToastType.SUCCESS)), j = u[x], T = "descriptionCta" === c ? {
                     descriptionCta: d,
-                    onClick: T
+                    onClick: S
                 } : "actions" === c ? {
                     actions: [{
                         text: p,
                         variant: m,
-                        onClick: T,
-                        ...null != C ? {
-                            icon: C,
+                        onClick: S,
+                        ...null != j ? {
+                            icon: j,
                             iconPosition: y
                         } : {}
                     }, ...h.length > 0 ? [{
                         text: h,
-                        variant: x,
-                        onClick: T
+                        variant: b,
+                        onClick: S
                     }] : []]
                 } : {};
                 return (0, a.jsx)("div", {
@@ -61,13 +61,13 @@ let u = {
                         previewImage: o.A,
                         videoUrl: s.A,
                         shouldLoadVideo: !0,
-                        index: g,
-                        size: f,
+                        index: f,
+                        size: g,
                         badgeText: v.length > 0 ? v : void 0,
-                        badgeVariant: E,
-                        isReducedMotion: S,
-                        previewImageStyle: j,
-                        ...A
+                        badgeVariant: _,
+                        isReducedMotion: E,
+                        previewImageStyle: C,
+                        ...T
                     })
                 })
             },

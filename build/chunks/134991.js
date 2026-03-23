@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(342494),
-    s = n(780964),
+    s = n(342494),
+    l = n(780964),
     r = n(840065),
     o = n(88001),
     d = n(519412),
@@ -17,9 +17,9 @@ let m = e => {
         shouldShow: n,
         onDismiss: m
     } = e, h = i.useCallback(() => {
-        m(), (0, r.openUserSettings)(s.X.SUBSCRIPTIONS_PANEL)
+        m(), (0, r.openUserSettings)(l.X.SUBSCRIPTIONS_PANEL)
     }, [m]);
-    return (0, a.jsx)(l.AM, {
+    return (0, a.jsx)(s.AM, {
         targetElementRef: t,
         position: "top",
         caretConfig: {

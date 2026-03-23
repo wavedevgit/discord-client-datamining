@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    s = n(503698),
+    l = n.n(s),
     r = n(141931),
     o = n(562465),
     d = n(306173),
@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(73153),
     m = n(787880),
     h = n(142120),
-    p = n(69555),
-    x = n(237984),
+    x = n(69555),
+    p = n(237984),
     g = n(43203),
     _ = n(349435),
     f = n(674272),
@@ -35,13 +35,13 @@ function I() {
 
 function k() {
     let e = v.j0.useSetting(),
-        [t, l] = i.useState(!1);
+        [t, s] = i.useState(!1);
     return t ? {} : (0, a.jsxs)(c.HOs, {
         children: [(0, a.jsx)("div", {
-            className: s()(E.N, N.SX),
+            className: l()(E.N, N.SX),
             children: (0, a.jsx)(b.M, {})
         }), (0, a.jsx)("div", {
-            className: s()(E.N, N.QB),
+            className: l()(E.N, N.QB),
             children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
@@ -51,7 +51,7 @@ function k() {
                 })
             })
         }), (0, a.jsx)("div", {
-            className: s()(E.N, N.QB),
+            className: l()(E.N, N.QB),
             children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
@@ -75,7 +75,7 @@ function k() {
                 }
             })
         }), (0, a.jsx)("div", {
-            className: s()(E.N, N.QB),
+            className: l()(E.N, N.QB),
             children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
@@ -83,7 +83,7 @@ function k() {
                 onClick: () => (0, m.g)()
             })
         }), (0, a.jsx)("div", {
-            className: s()(E.N, N.QB),
+            className: l()(E.N, N.QB),
             children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
@@ -91,15 +91,15 @@ function k() {
                 onClick: () => (0, g.$)("fortnite", "DevTools Quick Actions")
             })
         }), (0, a.jsx)("div", {
-            className: s()(E.N, N.QB),
+            className: l()(E.N, N.QB),
             children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
                 text: "Reset Hang Status State",
-                onClick: p.B7
+                onClick: x.B7
             })
         }), (0, a.jsx)("div", {
-            className: s()(E.N, N.QB),
+            className: l()(E.N, N.QB),
             children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
@@ -107,7 +107,7 @@ function k() {
                 onClick: d.Oy
             })
         }), (0, a.jsx)("div", {
-            className: s()(E.N, N.QB),
+            className: l()(E.N, N.QB),
             children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
@@ -125,19 +125,19 @@ function k() {
                 }
             })
         }), (0, a.jsx)("div", {
-            className: s()(E.N, N.QB),
+            className: l()(E.N, N.QB),
             children: (0, a.jsx)(c.dOG, {
                 label: "Ignore profile speedbump disabled",
                 checked: e,
                 onChange: e => v.j0.updateSetting(e)
             })
         }), (0, a.jsxs)("div", {
-            className: s()(E.N, N.QB),
+            className: l()(E.N, N.QB),
             children: [(0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
                 text: "Open Overlay",
-                onClick: () => (0, x.o)()
+                onClick: () => (0, p.o)()
             }), (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
@@ -174,7 +174,7 @@ function k() {
                 }
             })]
         }), (0, a.jsxs)("div", {
-            className: s()(E.N, N.QB),
+            className: l()(E.N, N.QB),
             children: [(0, a.jsx)(c.l6P, {
                 label: "Trigger native crash",
                 hideLabel: !0,
@@ -233,7 +233,7 @@ function k() {
                 variant: "primary",
                 size: "sm",
                 text: "React Crash",
-                onClick: () => l(!0)
+                onClick: () => s(!0)
             }), (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",

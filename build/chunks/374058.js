@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    s = n(503698),
+    l = n.n(s),
     r = n(989349),
     o = n.n(r),
     d = n(311907),
@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(397927),
     m = n(297413),
     h = n(58736),
-    p = n(379078),
-    x = n(704554),
+    x = n(379078),
+    p = n(704554),
     g = n(287809),
     _ = n(957565),
     f = n(405269),
@@ -63,14 +63,14 @@ function k(e) {
     let {
         name: t,
         children: n,
-        copyValue: l
-    } = e, [s, r] = i.useState(!1);
+        copyValue: s
+    } = e, [l, r] = i.useState(!1);
     return i.useEffect(() => {
-        if (s) {
+        if (l) {
             let e = setTimeout(() => r(!1), 1e3);
             return () => clearTimeout(e)
         }
-    }, [s]), (0, a.jsxs)("div", {
+    }, [l]), (0, a.jsxs)("div", {
         className: S.fY,
         children: [(0, a.jsx)("dt", {
             className: S.m2,
@@ -80,8 +80,8 @@ function k(e) {
         }), (0, a.jsx)(u.DUT, {
             tag: "span",
             className: S.nH,
-            onClick: () => (0, _.C)(JSON.stringify(l), () => r(!0)),
-            children: s ? (0, a.jsx)(u.Uzd, {
+            onClick: () => (0, _.C)(JSON.stringify(s), () => r(!0)),
+            children: l ? (0, a.jsx)(u.Uzd, {
                 color: "currentColor",
                 size: "sm"
             }) : (0, a.jsx)(u.TdU, {
@@ -102,15 +102,15 @@ let O = new Set(["client_performance_cpu", "client_performance_memory"]),
                     event: t,
                     properties: n,
                     timestamp: i,
-                    fingerprint: l
+                    fingerprint: s
                 },
                 onClose: r,
                 filteredEvents: d
-            } = e, c = g.default.getUser(l), p = o()(i);
+            } = e, c = g.default.getUser(s), x = o()(i);
             return (0, a.jsxs)("div", {
                 "data-mtctest-ignore": "true",
                 children: [(0, a.jsxs)(h.Ay, {
-                    className: s()(E.jr, S.nZ),
+                    className: l()(E.jr, S.nZ),
                     children: [(0, a.jsx)(h.Ay.Icon, {
                         icon: u.Uy2,
                         tooltip: t
@@ -132,7 +132,7 @@ let O = new Set(["client_performance_cpu", "client_performance_memory"]),
                             (0, _.C)(JSON.stringify({
                                 event: t,
                                 timestamp: i,
-                                fingerprint: l,
+                                fingerprint: s,
                                 user: c?.id,
                                 ...n
                             }, (e, t) => void 0 === t ? null : t, 2))
@@ -149,8 +149,8 @@ let O = new Set(["client_performance_cpu", "client_performance_memory"]),
                         copyValue: i.toISOString(),
                         children: (0, a.jsxs)("time", {
                             dateTime: i.toISOString(),
-                            title: (0, f.i$)(p, "LLLL"),
-                            children: ["(", o().locale(), ") ", (0, f.mk)(p)]
+                            title: (0, f.i$)(x, "LLLL"),
+                            children: ["(", o().locale(), ") ", (0, f.mk)(x)]
                         })
                     }), null != c && (0, a.jsx)(j.mA, {
                         name: "User",
@@ -160,28 +160,28 @@ let O = new Set(["client_performance_cpu", "client_performance_memory"]),
                         })
                     }), (0, a.jsx)(j.mA, {
                         name: "Fingerprint",
-                        copyValue: l,
+                        copyValue: s,
                         children: (0, a.jsx)("code", {
-                            children: l
+                            children: s
                         })
                     })]
                 }), (0, a.jsx)(I, {
                     children: Object.entries(n).map(e => {
-                        let [n, i] = e, l = O.has(n) ? ((e, t, n) => {
+                        let [n, i] = e, s = O.has(n) ? ((e, t, n) => {
                             let a = e.filter(e => e.event === t);
                             if (0 === a.length) return {
                                 average: null,
                                 count: 0
                             };
                             let i = null,
-                                l = 0;
+                                s = 0;
                             for (let e of a) {
                                 let t = e.properties[n];
-                                "number" == typeof t && (l += 1, null == i ? i = t : i += t)
+                                "number" == typeof t && (s += 1, null == i ? i = t : i += t)
                             }
                             return {
                                 average: null !== i ? i / a.length : null,
-                                count: l
+                                count: s
                             }
                         })(d, t, n) : null;
                         return (0, a.jsxs)("div", {
@@ -196,13 +196,13 @@ let O = new Set(["client_performance_cpu", "client_performance_memory"]),
                                     className: S.HO,
                                     children: "null"
                                 })
-                            }, n), null !== l && null !== l.average && (0, a.jsx)(k, {
+                            }, n), null !== s && null !== s.average && (0, a.jsx)(k, {
                                 name: `${n}_avg:`,
                                 copyValue: {
                                     [n]: i || null
                                 },
                                 children: (0, a.jsxs)("code", {
-                                    children: [l.average.toFixed(3), " (", l.count, ")"]
+                                    children: [s.average.toFixed(3), " (", s.count, ")"]
                                 })
                             }, `${n}_avg`)]
                         }, `${n}_container`)
@@ -238,7 +238,7 @@ let O = new Set(["client_performance_cpu", "client_performance_memory"]),
         }
     },
     D = {
-        searchType: p.n.REGEX,
+        searchType: x.n.REGEX,
         searchStringGenerator: e => {
             let {
                 event: t,
@@ -252,13 +252,13 @@ let O = new Set(["client_performance_cpu", "client_performance_memory"]),
 function M() {
     let e = i.useRef(null),
         [t, n] = i.useState(""),
-        l = (0, d.bG)([v.A], () => v.A.loggedEventsVersion),
+        s = (0, d.bG)([v.A], () => v.A.loggedEventsVersion),
         [r, o] = i.useState(() => Object.keys(w)),
         [m, h] = i.useState(v.A.loggedEvents),
-        p = i.useCallback(e => {
+        x = i.useCallback(e => {
             h(e)
         }, []);
-    (0, x.RT)(t, v.A.loggedEvents, p, D, [l]);
+    (0, p.RT)(t, v.A.loggedEvents, x, D, [s]);
     let g = m.filter(e => {
             for (let t of r)
                 if (w[t].filter(e)) return !0;
@@ -274,7 +274,7 @@ function M() {
         }, []);
     return (0, a.jsxs)("div", {
         ref: e,
-        className: s()(E.nd, S.nd),
+        className: l()(E.nd, S.nd),
         children: [(0, a.jsxs)("div", {
             className: S.rh,
             children: [(0, a.jsx)(c.$n, {
@@ -297,7 +297,7 @@ function M() {
                 children: Object.entries(w).map(e => {
                     let [t, n] = e;
                     return (0, a.jsx)(u.DUT, {
-                        className: s()(S.pb, r.includes(t) && S.bx),
+                        className: l()(S.pb, r.includes(t) && S.bx),
                         onClick: () => {
                             o(e => e.includes(t) ? e.filter(e => e !== t) : [...e, t])
                         },

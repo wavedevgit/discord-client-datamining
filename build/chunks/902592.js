@@ -5,8 +5,8 @@ n.r(t), n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    s = n(503698),
+    l = n.n(s),
     r = n(110259),
     o = n(311907),
     d = n(397927),
@@ -14,8 +14,8 @@ var a = n(627968),
     u = n(139286),
     m = n(58736),
     h = n(923917),
-    p = n(574172),
-    x = n(147925),
+    x = n(574172),
+    p = n(147925),
     g = n(538064),
     _ = n(265059),
     f = n(867041),
@@ -31,7 +31,7 @@ function T(e) {
         resizableNode: t,
         onResize: n,
         onResizeEnd: i
-    } = e, l = (0, c.A)({
+    } = e, s = (0, c.A)({
         minDimension: _.q,
         resizableDomNodeRef: t,
         onElementResize: n,
@@ -39,13 +39,13 @@ function T(e) {
         orientation: c.R.HORIZONTAL_LEFT
     });
     return (0, a.jsx)("div", {
-        onMouseDown: l,
+        onMouseDown: s,
         className: C.Di
     })
 }
 
 function S() {
-    (0, p.open)(j.MLl.DEVTOOLS_POPOUT, () => (0, a.jsx)(h.A, {
+    (0, x.open)(j.MLl.DEVTOOLS_POPOUT, () => (0, a.jsx)(h.A, {
         windowKey: j.MLl.DEVTOOLS_POPOUT,
         title: "DevTools",
         withTitleBar: !0,
@@ -64,8 +64,8 @@ function E(e) {
         isPopout: t = !1
     } = e, n = (0, v.x)(), {
         TabBar: i,
-        renderSelectedTab: l,
-        selectedTabId: s
+        renderSelectedTab: s,
+        selectedTabId: l
     } = (0, b.Ay)({
         tabs: n,
         initialSelectedTabId: _.A.lastOpenTabId ?? void 0,
@@ -79,7 +79,7 @@ function E(e) {
         type: r.ImpressionTypes.PANE,
         name: r.ImpressionNames.VIEW_PANEL_DEVTOOLS,
         properties: {
-            panel: s
+            panel: l
         }
     }), (0, a.jsxs)(f.xG, {
         children: [(0, a.jsxs)(m.Ay, {
@@ -101,7 +101,7 @@ function E(e) {
             }), (0, a.jsx)(m.Ay.Title, {
                 children: "DevTools"
             })]
-        }), (0, a.jsx)(i, {}), l(), (0, a.jsx)(f.jY, {
+        }), (0, a.jsx)(i, {}), s(), (0, a.jsx)(f.jY, {
             className: C.n7
         })]
     })
@@ -110,12 +110,12 @@ function E(e) {
 function N() {
     let e = i.useRef(null),
         t = (0, o.bG)([_.A], () => _.A.sidebarWidth),
-        [n, l] = i.useState(null),
-        s = i.useCallback(e => (0, g.Jt)({
+        [n, s] = i.useState(null),
+        l = i.useCallback(e => (0, g.Jt)({
             sidebarWidth: e
         }), []);
     return (i.useEffect(() => {
-        null === n && null !== t && l(t)
+        null === n && null !== t && s(t)
     }, [t, n]), null === n) ? null : (0, a.jsxs)("div", {
         ref: e,
         className: C.kL,
@@ -126,8 +126,8 @@ function N() {
         "data-app-right-panel": !0,
         children: [(0, a.jsx)(T, {
             resizableNode: e,
-            onResize: l,
-            onResizeEnd: s
+            onResize: s,
+            onResizeEnd: l
         }), (0, a.jsx)("div", {
             className: C.wp,
             children: (0, a.jsx)(E, {})
@@ -137,7 +137,7 @@ function N() {
 
 function I() {
     return (0, o.bG)([_.A], () => _.A.displayTools) ? (0, a.jsx)("div", {
-        className: s()(C.kL, C.PQ),
+        className: l()(C.kL, C.PQ),
         children: (0, a.jsx)("div", {
             className: C.wp,
             children: (0, a.jsx)(E, {})
@@ -147,9 +147,9 @@ function I() {
         children: (0, a.jsx)(d.DUT, {
             onClick: g.pf,
             children: (0, a.jsxs)(m.Ay, {
-                className: s()(y.jr, C.J$),
-                toolbar: (0, a.jsx)(x.A, {
-                    direction: x.A.Directions.UP
+                className: l()(y.jr, C.J$),
+                toolbar: (0, a.jsx)(p.A, {
+                    direction: p.A.Directions.UP
                 }),
                 children: [(0, a.jsx)(m.Ay.Icon, {
                     icon: d.VaJ,

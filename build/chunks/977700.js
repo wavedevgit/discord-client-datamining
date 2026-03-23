@@ -5,8 +5,8 @@ n.d(t, {
 var a = n(627968);
 n(64700);
 var i = n(397927),
-    l = n(793574),
-    s = n(688810),
+    s = n(793574),
+    l = n(688810),
     r = n(826673),
     o = n(750506),
     d = n(780964),
@@ -14,8 +14,8 @@ var i = n(397927),
     u = n(223567),
     m = n(552122),
     h = n(41280),
-    p = n(49999),
-    x = n(985018),
+    x = n(49999),
+    p = n(985018),
     g = n(653246);
 
 function _(e) {
@@ -27,14 +27,14 @@ function _(e) {
         color: u
     } : void 0, {
         analyticsLocations: j
-    } = (0, s.Ay)(l.A.HOLIDAY_COACHMARK), A = e => {
+    } = (0, l.Ay)(s.A.HOLIDAY_COACHMARK), A = e => {
         (0, r.Dr)(t, {
             dismissAction: e
         })
     }, C = () => {
         (0, c.openUserSettings)(d.X.NOTIFICATIONS_PANEL, {
             analyticsLocations: j
-        }), A(p.i.TAKE_ACTION)
+        }), A(x.i.TAKE_ACTION)
     };
     return _ && !f ? (0, a.jsx)(o.Ay, {
         children: (0, a.jsxs)("div", {
@@ -59,11 +59,11 @@ function _(e) {
                         variant: "heading-md/bold",
                         color: null != b ? void 0 : "always-white",
                         style: b,
-                        children: x.intl.string(x.t["6CxPoB"])
+                        children: p.intl.string(p.t["6CxPoB"])
                     }), (0, a.jsx)(i.Text, {
                         variant: "text-xs/normal",
                         color: "always-white",
-                        children: x.intl.format(x.t.IVzJ8G, {
+                        children: p.intl.format(p.t.IVzJ8G, {
                             settingsHook: (e, t) => (0, a.jsx)(i.DUT, {
                                 tag: "span",
                                 className: g.nf,
@@ -75,7 +75,7 @@ function _(e) {
                     })]
                 }), (0, a.jsx)(i.DUT, {
                     className: g.l2,
-                    onClick: () => A(p.i.USER_DISMISS),
+                    onClick: () => A(x.i.USER_DISMISS),
                     children: (0, a.jsx)(i.PGe, {
                         color: "currentColor",
                         size: "xs"
