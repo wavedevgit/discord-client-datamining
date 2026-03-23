@@ -12,8 +12,8 @@ var i = n(627968),
     d = n(384904),
     c = n(395332),
     u = n(566605),
-    g = n(429913),
-    m = n(379848),
+    m = n(429913),
+    g = n(379848),
     x = n(840387),
     p = n(201718),
     f = n(961350),
@@ -27,13 +27,13 @@ var i = n(627968),
     T = n(357541),
     b = n(236599),
     N = n(192),
-    y = n(128988),
-    S = n(795755),
+    S = n(128988),
+    y = n(795755),
     C = n(53977),
     R = n(982599),
     k = n(515054),
-    L = n(266713),
-    w = n(985018),
+    w = n(266713),
+    L = n(985018),
     O = n(368379);
 
 function P(e) {
@@ -44,7 +44,7 @@ function P(e) {
     return t instanceof _.R ? (0, i.jsx)(E.A, {
         widget: t,
         ...n
-    }) : t instanceof A.Yy ? (0, i.jsx)(S.A, {
+    }) : t instanceof A.Yy ? (0, i.jsx)(y.A, {
         widget: t,
         ...n
     }) : null
@@ -56,10 +56,10 @@ function D() {
         children: [(0, i.jsx)(o.mir, {
             size: "xs"
         }), (0, i.jsx)(o.Text, {
-            "aria-label": w.intl.string(w.t["7blcz6"]),
+            "aria-label": L.intl.string(L.t["7blcz6"]),
             variant: "text-xs/normal",
             color: "text-muted",
-            children: w.intl.string(w.t["7blcz6"])
+            children: L.intl.string(L.t["7blcz6"])
         })]
     })
 }
@@ -72,7 +72,7 @@ function G() {
     } = (0, u.A)({
         location: "ApplicationWidgetUpsell"
     });
-    return e ? null : (0, i.jsx)(m.Ay, {
+    return e ? null : (0, i.jsx)(g.Ay, {
         contentTypes: t.map(e => e.dismissibleContent),
         bypassAutoDismiss: !0,
         children: e => {
@@ -99,12 +99,12 @@ function M(e) {
         return l.useEffect(() => {
             null == e && null == t && n && (0, d.xe)()
         }, [e, t, n]), "GB" === e && n
-    })(), m = (0, c.JY)({
+    })(), g = (0, c.JY)({
         location: "UserProfileModalV2Widgets"
     }), j = 0 === s.length && o, E = l.useMemo(() => s.filter(A.fu), [s]), T = l.useMemo(() => s.filter(e => e instanceof _.R), [s]);
     (0, I.Y)(o, E), ((e, t) => {
         let n = l.useMemo(() => t.map(e => e.applicationId), [t]);
-        (0, g.A)(n);
+        (0, m.A)(n);
         let {
             data: i,
             refetch: a
@@ -113,11 +113,11 @@ function M(e) {
             s.current && (s.current = !1, a())
         }, [a])
     })(t.id, T);
-    let y = () => (0, i.jsxs)(i.Fragment, {
+    let S = () => (0, i.jsxs)(i.Fragment, {
         children: [o && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(b.A, {
                 className: O.cG
-            }), u && (0, i.jsx)(D, {}), m && (0, i.jsx)(G, {})]
+            }), u && (0, i.jsx)(D, {}), g && (0, i.jsx)(G, {})]
         }), s.map((e, l) => (0, i.jsx)(P, {
             widget: e,
             user: t,
@@ -127,11 +127,11 @@ function M(e) {
         }, e.getUniqueKey()))]
     });
     if (j)
-        if (m) return (0, i.jsx)(C.A, {});
-        else return (0, i.jsx)(L.A, {});
+        if (g) return (0, i.jsx)(C.A, {});
+        else return (0, i.jsx)(w.A, {});
     return o ? (0, i.jsx)(N.D, {
-        children: y()
-    }) : y()
+        children: S()
+    }) : S()
 }
 
 function U(e) {
@@ -150,7 +150,7 @@ function U(e) {
             [O.az]: r
         }),
         fade: !0,
-        children: [(0, i.jsx)(y.A, {
+        children: [(0, i.jsx)(S.A, {
             scrollerRef: a
         }), (0, i.jsx)(M, {
             user: t,

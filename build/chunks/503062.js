@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(714114),
     c = n(729551),
     u = n(178418),
-    g = n(87664),
-    m = n(290863),
+    m = n(87664),
+    g = n(290863),
     x = n(939496),
     p = n(652215),
     f = n(996988),
@@ -31,12 +31,12 @@ function I(e) {
         theme: T,
         themeType: b
     } = (0, x.E)(), N = l.useMemo(() => t.isNonUserBot() || (0, u.c)(t, v), [t, v]), {
-        activities: y,
-        isMobileOnline: S
-    } = (0, a.cf)([m.A], () => ({
-        activities: m.A.getActivities(t.id),
-        isMobileOnline: m.A.isMobileOnline(t.id)
-    })), C = (0, g.A)(t.id), {
+        activities: S,
+        isMobileOnline: y
+    } = (0, a.cf)([g.A], () => ({
+        activities: g.A.getActivities(t.id),
+        isMobileOnline: g.A.isMobileOnline(t.id)
+    })), C = (0, m.A)(t.id), {
         voiceChannel: R
     } = (0, d.A)({
         userId: t.id,
@@ -73,7 +73,7 @@ function I(e) {
             size: _,
             status: N ? p.clD.UNKNOWN : I,
             statusBackdropColor: N ? void 0 : (0, s.C$5)(T),
-            isMobile: S,
+            isMobile: y,
             className: h.my
         }), (0, i.jsxs)("div", {
             className: h.zH,
@@ -83,7 +83,7 @@ function I(e) {
                 discriminatorClass: h.D2
             }), (0, i.jsx)(c.A, {
                 user: t,
-                activities: y,
+                activities: S,
                 applicationStream: C,
                 voiceChannel: R
             })]

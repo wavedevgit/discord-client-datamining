@@ -12,8 +12,8 @@ var l = n(827734),
     d = n(263063),
     c = n(562153),
     u = n(939496),
-    g = n(518477),
-    m = n(996988),
+    m = n(518477),
+    g = n(996988),
     x = n(7319);
 let p = (0, r.FT9)(r._3J.SIZE_16);
 
@@ -28,7 +28,7 @@ function f(e) {
         themeType: I
     } = (0, u.E)(), j = t.hasAvatarForGuild(f.id);
     return (0, i.jsxs)(r.DUT, {
-        focusProps: I === m.d.MODAL_V2 ? {
+        focusProps: I === g.d.MODAL_V2 ? {
             offset: {
                 top: 4,
                 right: 4,
@@ -59,7 +59,7 @@ function f(e) {
             className: null != f.icon ? x.Kk : x.lN,
             badgeStrokeColor: (0, s.Mw)(A) ? l.A.unsafe_rawColors.PRIMARY_600.css : l.A.unsafe_rawColors.WHITE.css,
             badgeTooltipColor: r.oMw.PRIMARY,
-            badgeTooltipDelay: g.In,
+            badgeTooltipDelay: m.In,
             size: d.Ay.Sizes.MEDIUM,
             active: !0
         }), (0, i.jsxs)("div", {
@@ -77,14 +77,14 @@ function f(e) {
                 }), (0, i.jsx)(r.Text, {
                     variant: "text-xs/medium",
                     children: (0, i.jsx)(a.A, {
-                        delay: g.In,
+                        delay: m.In,
                         children: h ?? c.Ay.getName(f.id, void 0, t)
                     })
                 })]
             }), !j && null != h && (0, i.jsx)(r.Text, {
                 variant: "text-xs/medium",
                 children: (0, i.jsx)(a.A, {
-                    delay: g.In,
+                    delay: m.In,
                     children: h
                 })
             })]

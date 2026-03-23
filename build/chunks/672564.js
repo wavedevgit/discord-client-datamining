@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(793574),
     c = n(688810),
     u = n(183555),
-    g = n(808247),
-    m = n(146423),
+    m = n(808247),
+    g = n(146423),
     x = n(460442),
     p = n(699976),
     f = n(652215),
@@ -30,7 +30,7 @@ function j(e) {
         setIsHoveringOrFocusing: o,
         onClick: d,
         wishlistId: c,
-        children: g
+        children: m
     } = e, {
         trackUserProfileWishlistAction: x
     } = (0, u.NJ)(), p = l.useCallback(() => {
@@ -41,7 +41,7 @@ function j(e) {
             productLines: new Set([t.productLine])
         }), d()
     }, [d, t.id, t.productLine, x, c]);
-    return (0, i.jsx)(m.A, {
+    return (0, i.jsx)(g.A, {
         sku: t,
         user: n,
         spec: I,
@@ -49,7 +49,7 @@ function j(e) {
         skuPreviewStyle: s()(A.ev, r),
         onHoverOrFocusChange: o,
         onClick: p,
-        children: g
+        children: m
     })
 }
 
@@ -62,11 +62,11 @@ function v(e) {
         skuPreviewStyle: d,
         wishlistOwner: c,
         ...u
-    } = e, [m, p] = l.useState(!1), f = l.useCallback(async () => {
-        if (!m) {
+    } = e, [g, p] = l.useState(!1), f = l.useCallback(async () => {
+        if (!g) {
             p(!0);
             try {
-                await g.A.addSkuToWishlist(t.id, n), r?.({
+                await m.A.addSkuToWishlist(t.id, n), r?.({
                     tabSection: h.RP.WISHLIST
                 })
             } catch (e) {
@@ -75,9 +75,9 @@ function v(e) {
                 p(!1)
             }
         }
-    }, [t, n, m, r]), I = l.useMemo(() => s()({
-        [A.zW]: a || m
-    }, d), [a, m, d]);
+    }, [t, n, g, r]), I = l.useMemo(() => s()({
+        [A.zW]: a || g
+    }, d), [a, g, d]);
     return (0, i.jsx)(o.sqX, {
         "aria-label": t.name,
         onClick: f,
@@ -90,7 +90,7 @@ function v(e) {
             ...u,
             children: (0, i.jsx)(x.oU, {
                 isHoveringOrFocusing: a,
-                loading: m
+                loading: g
             })
         })
     })

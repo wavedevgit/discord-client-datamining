@@ -22,8 +22,8 @@ var a = n(627968),
     x = n(328968),
     A = n(954571),
     T = n(580630),
-    E = n(371794),
-    I = n(871123),
+    I = n(371794),
+    E = n(871123),
     v = n(733391),
     N = n(832163),
     j = n(429635),
@@ -151,15 +151,15 @@ function H(e) {
                 let e = null != s.assetId ? n[s.assetId] : null;
                 null != e && (a.push(s), e.mime_type.startsWith("video/") ? l.push({
                     type: "video",
-                    src: (0, E.YE)(t, e, U.B, "mp4"),
-                    videoThumbnailSrc: (0, E.YE)(t, e, U.B, "webp"),
-                    thumbnailSrc: null != s.thumbnailAssetId ? (0, E.YE)(t, s.thumbnailAssetId, 112, "webp") : void 0,
-                    backgroundSrc: null != s.backgroundAssetId ? (0, E.YE)(t, s.backgroundAssetId, U.B, I.pV) : void 0
+                    src: (0, I.YE)(t, e, U.B, "mp4"),
+                    videoThumbnailSrc: (0, I.YE)(t, e, U.B, "webp"),
+                    thumbnailSrc: null != s.thumbnailAssetId ? (0, I.YE)(t, s.thumbnailAssetId, 112, "webp") : void 0,
+                    backgroundSrc: null != s.backgroundAssetId ? (0, I.YE)(t, s.backgroundAssetId, U.B, E.pV) : void 0
                 }) : l.push({
                     type: "image",
-                    src: (0, E.YE)(t, e, U.B, "webp"),
-                    thumbnailSrc: null != s.thumbnailAssetId ? (0, E.YE)(t, s.thumbnailAssetId, 112, "webp") : void 0,
-                    backgroundSrc: null != s.backgroundAssetId ? (0, E.YE)(t, s.backgroundAssetId, U.B, I.pV) : void 0
+                    src: (0, I.YE)(t, e, U.B, "webp"),
+                    thumbnailSrc: null != s.thumbnailAssetId ? (0, I.YE)(t, s.thumbnailAssetId, 112, "webp") : void 0,
+                    backgroundSrc: null != s.backgroundAssetId ? (0, I.YE)(t, s.backgroundAssetId, U.B, E.pV) : void 0
                 }))
             }
             return [a, l]
@@ -180,7 +180,7 @@ function G(e) {
         applicationId: n
     } = e;
     if (null == t) return null;
-    let l = null != t.labelIconAssetId ? (0, E.YE)(n, t.labelIconAssetId) : null;
+    let l = null != t.labelIconAssetId ? (0, I.YE)(n, t.labelIconAssetId) : null;
     return (0, a.jsxs)("div", {
         className: M.HI,
         children: [null != l && (0, a.jsx)("img", {
@@ -219,14 +219,14 @@ function Y(e) {
         guildId: u,
         isStorefront: h,
         analyticsLocations: T,
-        analyticsContext: I,
+        analyticsContext: E,
         onClose: N
     } = e, {
         analyticsLocations: S
     } = (0, p.Ay)(T ?? []), k = (0, j.A)({
         guildId: u
     }), R = (0, d.bG)([x.A], () => x.A.isFetchingForSKU(s)), U = (0, c.Mwr)((0, m.Ay)()), [D, Y] = l.useState(!0), q = (0, d.bG)([C.A], () => C.A.get(s)), [X, V] = l.useState(null), $ = function(e, t) {
-        let n = t?.labelIconAssetId != null ? (0, E.YE)(e, t?.labelIconAssetId) : null,
+        let n = t?.labelIconAssetId != null ? (0, I.YE)(e, t?.labelIconAssetId) : null,
             [a, s] = (0, b.rh)(n, "#000000"),
             i = l.useMemo(() => {
                 let e = r()(a).darken(1);
@@ -244,13 +244,13 @@ function Y(e) {
     });
     let z = l.useCallback(e => {
         A.default.track(P.HAw.SLAYER_STOREFRONT_PDP_ELEMENT_CLICKED, {
-            slayer_storefront_session_id: I?.sessionId,
+            slayer_storefront_session_id: E?.sessionId,
             sku_id: s,
-            guild_id: I?.guildId,
+            guild_id: E?.guildId,
             cta_type: e,
             location_stack: S
         })
-    }, [I, s, S]);
+    }, [E, s, S]);
     l.useEffect(() => {
         null == u || null == s || x.A.isFetchingForSKU(s) || (0, v.qf)(u, s)
     }, [u, s]);
@@ -260,9 +260,9 @@ function Y(e) {
                 guildId: u,
                 source: "social-layer-storefront-pdp",
                 analyticsLocations: S,
-                analyticsContext: I
+                analyticsContext: E
             }))
-        }, [q, u, z, S, I]),
+        }, [q, u, z, S, E]),
         K = l.useCallback(() => {
             z(w.Jq.WISHLIST_BUTTON)
         }, [z]),
@@ -270,8 +270,8 @@ function Y(e) {
             Y(!D), z(w.Jq.MUTE_BUTTON)
         }, [D, z]);
     if (null == q?.tenantMetadata?.socialLayer || k?.storefront == null) return R ? (0, a.jsx)(c.y$y, {}) : null;
-    let Z = null != k.storefront.logoAssetId ? (0, E.YE)(k.storefront.applicationId, k.storefront.logoAssetId, 75) : null,
-        ee = null != k.storefront.lightThemeLogoAssetId ? (0, E.YE)(k.storefront.applicationId, k.storefront.lightThemeLogoAssetId, 75) : null,
+    let Z = null != k.storefront.logoAssetId ? (0, I.YE)(k.storefront.applicationId, k.storefront.logoAssetId, 75) : null,
+        ee = null != k.storefront.lightThemeLogoAssetId ? (0, I.YE)(k.storefront.applicationId, k.storefront.lightThemeLogoAssetId, 75) : null,
         et = null;
     return et = U ? Z ?? ee : ee ?? Z, (0, a.jsx)(c.EOs, {
         transitionState: t,
@@ -321,7 +321,8 @@ function Y(e) {
                         isCardHovered: !0,
                         className: o()(M.jU, M.ij),
                         trackButtonClick: K,
-                        variant: "overlay-secondary"
+                        variant: "overlay-secondary",
+                        location: "social_layer_storefront_product_details_modal"
                     }), (0, a.jsx)(W, {
                         onClick: J,
                         ariaLabel: B.intl.string(B.t.Ej3B3Y),

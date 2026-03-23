@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(915089),
     c = n(961350),
     u = n(183555),
-    g = n(735321),
-    m = n(94343),
+    m = n(735321),
+    g = n(94343),
     x = n(789290),
     p = n(451395),
     f = n(716804),
@@ -30,7 +30,7 @@ function v(e) {
         children: r
     } = e, o = l.useRef(null), c = l.useRef(null), {
         registerManageWidgetButtonRef: u,
-        manageFocusOnReorder: m
+        manageFocusOnReorder: g
     } = (0, A.r)();
     l.useLayoutEffect(() => {
         let e = u(n.type);
@@ -50,8 +50,8 @@ function v(e) {
             itemPreviewProps: {
                 widget: n
             },
-            onReorder: g.R_,
-            onEnd: () => m(n.type)
+            onReorder: m.R_,
+            onEnd: () => g(n.type)
         }),
         v = null != _,
         E = v && t < _,
@@ -81,7 +81,7 @@ function E(e) {
         widget: n,
         children: l,
         disableInteraction: a,
-        className: g,
+        className: m,
         index: p,
         trailingContent: h,
         headerTitle: A,
@@ -89,16 +89,16 @@ function E(e) {
         headerActionButtons: E,
         headerClassName: T,
         additionalManageWidgetMenuItems: b
-    } = e, N = (0, d.GV)(), y = (0, o.bG)([c.default], () => c.default.getId() === t), S = (0, f.g)(), {
+    } = e, N = (0, d.GV)(), S = (0, o.bG)([c.default], () => c.default.getId() === t), y = (0, f.g)(), {
         trackUserProfileAction: C
     } = (0, u.NJ)(), R = (0, x.A)({
         widget: n,
         onAction: C
-    }), k = S === n.type;
-    (0, m.A)(R, k);
-    let L = y && null != p && !a,
-        w = () => (0, i.jsxs)("div", {
-            className: s()(j.kL, g),
+    }), k = y === n.type;
+    (0, g.A)(R, k);
+    let w = S && null != p && !a,
+        L = () => (0, i.jsxs)("div", {
+            className: s()(j.kL, m),
             children: [(0, i.jsx)(_.A, {
                 userId: t,
                 headingId: N,
@@ -115,11 +115,11 @@ function E(e) {
     return (0, i.jsx)("section", {
         ref: R,
         "aria-labelledby": N,
-        children: L ? (0, i.jsx)(v, {
+        children: w ? (0, i.jsx)(v, {
             index: p ?? 0,
             widget: n,
             additionalManageWidgetMenuItems: b,
-            children: w()
-        }) : w()
+            children: L()
+        }) : L()
     })
 }

@@ -12,8 +12,8 @@ var l = n(503698),
     d = n(735321),
     c = n(451395),
     u = n(823016),
-    g = n(788593),
-    m = n(858808),
+    m = n(788593),
+    g = n(858808),
     x = n(685049),
     p = n(617086),
     f = n(985018),
@@ -72,23 +72,23 @@ function I(e) {
         gameName: b,
         isLoading: N
     } = (0, r.A)(t.applicationId), {
-        registerDragHandleRef: y
-    } = (0, u.r)(), S = (0, p.A)(t.applicationId).length > 0, C = o.default.getCurrentUser(), R = C?.id === n, k = !I && R, {
-        isDragging: L
+        registerDragHandleRef: S
+    } = (0, u.r)(), y = (0, p.A)(t.applicationId).length > 0, C = o.default.getCurrentUser(), R = C?.id === n, k = !I && R, {
+        isDragging: w
     } = (0, s.V)(e => ({
         isDragging: e.isDragging()
-    })), w = () => (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(g.A, {
+    })), L = () => (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(m.A, {
             imageSrc: T,
             gameName: b,
             applicationId: t.applicationId,
             userId: n,
             disableInteraction: I,
-            className: a()(S ? _.kO : void 0, null == T || I ? void 0 : h.iL),
-            hideTooltip: L,
+            className: a()(y ? _.kO : void 0, null == T || I ? void 0 : h.iL),
+            hideTooltip: w,
             coverRef: E
         }), k && (0, i.jsx)(c.jV, {
-            buttonRef: y(t.applicationId),
+            buttonRef: S(t.applicationId),
             className: _.BU
         }), !I && (0, i.jsx)(x.d, {
             userId: n,
@@ -96,7 +96,7 @@ function I(e) {
             guildId: d,
             channelId: f,
             className: _.Ez
-        }), k && (0, i.jsx)(m.A, {
+        }), k && (0, i.jsx)(g.A, {
             game: t,
             widgetType: l,
             className: _.vS,
@@ -112,9 +112,9 @@ function I(e) {
         game: t,
         coverImageUrl: T,
         gameName: b,
-        children: w()
+        children: L()
     }) : (0, i.jsx)("div", {
         className: _.kL,
-        children: w()
+        children: L()
     })
 }

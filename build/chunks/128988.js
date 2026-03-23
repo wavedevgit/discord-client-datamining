@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(86638),
     c = n(287809),
     u = n(788593),
-    g = n(742710),
-    m = n(463259),
+    m = n(742710),
+    g = n(463259),
     x = n(18983),
     p = n(330966);
 
@@ -35,7 +35,7 @@ function f(e) {
         } = e;
         if ("WIDGET" === a && s?.widget != null) return (0, i.jsx)("div", {
             className: p.dt,
-            children: (0, i.jsx)(m.u, {
+            children: (0, i.jsx)(g.u, {
                 widget: s.widget,
                 user: t,
                 disableInteraction: !0
@@ -60,7 +60,7 @@ function f(e) {
                 game: e,
                 widgetType: n
             } = s;
-            return (0, i.jsx)(g.A, {
+            return (0, i.jsx)(m.A, {
                 className: p.xB,
                 user: t,
                 widgetType: n,
@@ -113,11 +113,11 @@ function f(e) {
     } = v.current ?? {
         x: 0,
         y: 0
-    }, N = _.x - T - 60 * !!I, y = _.y - b;
+    }, N = _.x - T - 60 * !!I, S = _.y - b;
     return (0, i.jsx)("div", {
         className: p.kL,
         style: {
-            transform: `translate3d(${N}px, ${y}px, 0)`
+            transform: `translate3d(${N}px, ${S}px, 0)`
         },
         children: j
     })

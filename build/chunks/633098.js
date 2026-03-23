@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(397927),
     c = n(775602),
     u = n(203982),
-    g = n(183555),
-    m = n(289173),
+    m = n(183555),
+    g = n(289173),
     x = n(958805),
     p = n(61881),
     f = n(606758),
@@ -27,7 +27,7 @@ function v(e) {
         className: t
     } = e, {
         trackUserProfileEditSaved: n
-    } = (0, g.NJ)(), [a, v] = l.useState(!1), E = (0, o.yK)([p.A], () => p.A.getSaveablePendingWidgets() ?? []), T = (0, o.yK)([p.A], () => p.A.getChangedWidgets()), b = (0, o.yK)([p.A], () => p.A.getRemovedWidgets()), N = (0, o.bG)([p.A], () => p.A.hasUnsavedChanges()), y = (0, o.bG)([p.A], () => p.A.canSaveChanges()), S = (0, o.bG)([p.A], () => p.A.isSubmitting), C = (0, o.bG)([c.A], () => c.A.useReducedMotion), R = (0, d.pnh)(N, {
+    } = (0, m.NJ)(), [a, v] = l.useState(!1), E = (0, o.yK)([p.A], () => p.A.getSaveablePendingWidgets() ?? []), T = (0, o.yK)([p.A], () => p.A.getChangedWidgets()), b = (0, o.yK)([p.A], () => p.A.getRemovedWidgets()), N = (0, o.bG)([p.A], () => p.A.hasUnsavedChanges()), S = (0, o.bG)([p.A], () => p.A.canSaveChanges()), y = (0, o.bG)([p.A], () => p.A.isSubmitting), C = (0, o.bG)([c.A], () => c.A.useReducedMotion), R = (0, d.pnh)(N, {
         from: {
             opacity: 0,
             y: 80 * !C
@@ -66,7 +66,7 @@ function v(e) {
                         widgetEdited: e.type,
                         isWidgetRemoved: !1
                     };
-                    (0, m.fu)(e) && (t.gameIds = e.games.map(e => e.applicationId), t.tags = e.games.flatMap(e => e.tags ?? []).map(e => e.toString()), t.numCharactersCommentary = e.games.reduce((e, t) => e + (t.comment?.length ?? 0), 0)), n(t)
+                    (0, g.fu)(e) && (t.gameIds = e.games.map(e => e.applicationId), t.tags = e.games.flatMap(e => e.tags ?? []).map(e => e.toString()), t.numCharactersCommentary = e.games.reduce((e, t) => e + (t.comment?.length ?? 0), 0)), n(t)
                 }
                 for (let e of b) n({
                     widgetEdited: e.type,
@@ -74,7 +74,7 @@ function v(e) {
                 })
             }
         }, [E, T, b, n]),
-        L = l.useCallback(() => {
+        w = l.useCallback(() => {
             x.A.clearPendingWidgets()
         }, []);
     return R((e, n) => n ? (0, i.jsx)(r.animated.div, {
@@ -97,15 +97,15 @@ function v(e) {
                     size: "sm",
                     variant: "secondary",
                     text: A.intl.string(A.t.yBZMsQ),
-                    onClick: L,
-                    disabled: !N || S
+                    onClick: w,
+                    disabled: !N || y
                 }), (0, i.jsx)(d.Button, {
                     size: "sm",
                     variant: "primary",
                     text: A.intl.string(A.t["R3BPH+"]),
                     onClick: k,
-                    loading: S,
-                    disabled: !y || !N || S
+                    loading: y,
+                    disabled: !S || !N || y
                 })]
             })]
         })

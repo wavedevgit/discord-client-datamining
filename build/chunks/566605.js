@@ -1,6 +1,6 @@
 /** chunk id: 566605 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => m
 });
 var i = n(64700),
     l = n(311907),
@@ -12,25 +12,25 @@ var i = n(64700),
     c = n(403362),
     u = n(395332);
 
-function g(e) {
+function m(e) {
     let t = (0, l.bG)([d.default], () => d.default.getCurrentUser()),
         n = (0, u.DB)({
             location: e.location
         }),
-        g = i.useMemo(() => n?.filter(e => e.isEligibleForSuggestions()), [n]),
-        m = i.useMemo(() => g?.map(e => e.applicationId) ?? [], [g]),
-        x = (0, s.A)(m),
+        m = i.useMemo(() => n?.filter(e => e.isEligibleForSuggestions()), [n]),
+        g = i.useMemo(() => m?.map(e => e.applicationId) ?? [], [m]),
+        x = (0, s.A)(g),
         {
             tokens: p,
             fetched: f
-        } = (0, a.j)(m),
+        } = (0, a.j)(g),
         h = (0, o.A)(t?.id),
-        _ = null == t || null == g || null == p || !f;
+        _ = null == t || null == m || null == p || !f;
     return i.useMemo(() => _ ? {
         isLoading: _
     } : {
         isLoading: _,
-        suggestions: g.map(e => {
+        suggestions: m.map(e => {
             let t = x.find(t => t?.id === e.applicationId);
             return null == t || null == p.find(t => t.application.id === e.applicationId) || null != h.find(t => t instanceof r.R && t.applicationId === e.applicationId) ? null : {
                 config: e,
@@ -39,5 +39,5 @@ function g(e) {
             }
         }).filter(c.Vq),
         currentUser: t
-    }, [_, g, t, x, p, h])
+    }, [_, m, t, x, p, h])
 }

@@ -12,9 +12,9 @@ var l = n(311907),
     d = n(622249),
     c = n(742710),
     u = n(192),
-    g = n(957382);
+    m = n(957382);
 
-function m(e) {
+function g(e) {
     let {
         games: t,
         user: n,
@@ -25,7 +25,7 @@ function m(e) {
         manageFocusOnDelete: o
     } = (0, s.r)();
     return (0, i.jsx)("ul", {
-        className: g.h,
+        className: m.h,
         children: t.map((e, t) => (0, i.jsx)("li", {
             children: (0, i.jsx)(c.A, {
                 index: t,
@@ -45,14 +45,14 @@ function x(e) {
         user: t,
         widgetType: n,
         disableInteraction: c,
-        games: g
+        games: m
     } = e, x = (0, l.bG)([a.default], () => a.default.getId() === t.id), {
         getManageButtonForWidget: p
     } = (0, u.r)(), f = p(n), {
         expanded: h,
         setExpanded: _
-    } = (0, o.B)(), A = h ? g : g.slice(0, 2), I = g.length > 2, j = (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(m, {
+    } = (0, o.B)(), A = h ? m : m.slice(0, 2), I = m.length > 2, j = (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(g, {
             ...e,
             games: A
         }), I && (0, i.jsx)(d.A, {
@@ -63,7 +63,7 @@ function x(e) {
     return x && !c ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(r.A, {
             widgetType: n,
-            gameCount: g.length
+            gameCount: m.length
         }), (0, i.jsx)(s.B, {
             emptyListFallbackRef: f,
             children: j

@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(87075),
     c = n(311907),
     u = n(397927),
-    g = n(155718),
-    m = n(793574),
+    m = n(155718),
+    g = n(793574),
     x = n(688810),
     p = n(362490),
     f = n(385771),
@@ -26,13 +26,13 @@ var i = n(627968),
     T = n(371068),
     b = n(61266),
     N = n(731068),
-    y = n(619517),
-    S = n(339580),
+    S = n(619517),
+    y = n(339580),
     C = n(961350),
     R = n(760751),
     k = n(403362),
-    L = n(183555),
-    w = n(622543),
+    w = n(183555),
+    L = n(622543),
     O = n(466853),
     P = n(985018),
     D = n(442716);
@@ -292,7 +292,7 @@ function H(e) {
             })]
         }), (0, h.c)(l) ? (0, i.jsx)("div", {
             className: D.Xr,
-            children: (0, i.jsx)(y.Ay, {
+            children: (0, i.jsx)(S.Ay, {
                 src: l.proxyUrl,
                 alt: "",
                 width: l.width,
@@ -338,7 +338,7 @@ function z(e) {
         content: t
     } = e, n = l.useId(), a = (0, E.X)();
     return null != t ? (0, i.jsx)(b.A, {
-        type: g.I5.TEXT_DISPLAY,
+        type: m.I5.TEXT_DISPLAY,
         id: n,
         content: t,
         className: D.Qq
@@ -355,7 +355,7 @@ function V(e) {
     } = e, a = (0, E.X)(), r = (0, h.c)(n) ? (0, i.jsx)("div", {
         className: s()(D.Sl, a.className),
         "data-position": l,
-        children: (0, i.jsx)(y.Ay, {
+        children: (0, i.jsx)(S.Ay, {
             src: n.proxyUrl,
             alt: "",
             width: n.width,
@@ -383,10 +383,10 @@ function Y(e) {
         divider: n = !1
     } = e, a = l.useId();
     return (0, i.jsx)(T.A, {
-        type: g.I5.SEPARATOR,
+        type: m.I5.SEPARATOR,
         id: a,
         divider: n,
-        spacing: "large" === t ? g.C8.LARGE : g.C8.SMALL
+        spacing: "large" === t ? m.C8.LARGE : m.C8.SMALL
     })
 }
 
@@ -471,14 +471,14 @@ function Z(e) {
 }
 let Q = Object.assign(function(e) {
     var t, n;
-    let a, r, g, h, j, {
+    let a, r, m, h, j, {
             trackUserProfileAction: v
-        } = (0, L.NJ)(),
+        } = (0, w.NJ)(),
         {
             user: E,
             widget: T,
             cta: b,
-            subtle: y = !1
+            subtle: S = !1
         } = e,
         G = (0, c.bG)([C.default], () => C.default.getId()) === E.id,
         F = (0, _.h)(T.applicationId),
@@ -500,7 +500,7 @@ let Q = Object.assign(function(e) {
         } = (0, p.RD)(F),
         {
             analyticsLocations: $
-        } = (0, x.Ay)(m.A.USER_PROFILE_APPLICATION_WIDGET),
+        } = (0, x.Ay)(g.A.USER_PROFILE_APPLICATION_WIDGET),
         ee = l.useCallback(() => {
             V && (v({
                 action: z ? "PRESS_APPLICATION_WIDGET_LINKED_RECONNECT" : "PRESS_APPLICATION_WIDGET_UNLINKED_CONNECT",
@@ -539,12 +539,12 @@ let Q = Object.assign(function(e) {
             isLoading: ea,
             hasData: es,
             components: er
-        } = (t = E.id, n = T.applicationId, a = (0, f.A)(), r = (0, c.bG)([S.A], () => S.A.getUserIdentityByApplication(t, n)), g = (0, c.bG)([w.A], () => w.A.getApplicationWidgetConfig(n)), h = (0, c.bG)([S.A, w.A], () => null == S.A.getUserIdentities(t) || null == w.A.applicationWidgetConfigs), j = l.useMemo(() => {
+        } = (t = E.id, n = T.applicationId, a = (0, f.A)(), r = (0, c.bG)([y.A], () => y.A.getUserIdentityByApplication(t, n)), m = (0, c.bG)([L.A], () => L.A.getApplicationWidgetConfig(n)), h = (0, c.bG)([y.A, L.A], () => null == y.A.getUserIdentities(t) || null == L.A.applicationWidgetConfigs), j = l.useMemo(() => {
             var e, t;
-            if (null == g) return null;
-            let n = M[g.widgetTemplateId];
+            if (null == m) return null;
+            let n = M[m.widgetTemplateId];
             if (null == n) return null;
-            let i = (e = r ?? null, t = g ?? null, null == e ? {
+            let i = (e = r ?? null, t = m ?? null, null == e ? {
                 mode: "skeleton",
                 config: t,
                 numberFormat: a
@@ -608,7 +608,7 @@ let Q = Object.assign(function(e) {
                         return t
                 }
             })
-        }, [g, r, a]), {
+        }, [m, r, a]), {
             isLoading: h,
             hasData: null != r,
             components: j
@@ -617,7 +617,7 @@ let Q = Object.assign(function(e) {
         ...e,
         userId: E.id,
         widget: T,
-        className: s()(D.Y5, y && D.aK),
+        className: s()(D.Y5, S && D.aK),
         headerTitle: el,
         headerClassName: D.wx,
         additionalManageWidgetMenuItems: null != H ? (0, i.jsx)(u.Drp, {

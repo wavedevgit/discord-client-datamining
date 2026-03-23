@@ -1,7 +1,7 @@
 /** chunk id: 953590 params = (module,exports,require) **/
 n.d(t, {
     A: () => k,
-    B: () => E
+    B: () => I
 });
 var a = n(627968),
     l = n(64700),
@@ -23,8 +23,8 @@ var a = n(627968),
     x = n(995393),
     A = n(652215),
     T = n(863876);
-let E = 747,
-    I = e => (0, g.$o)({
+let I = 747,
+    E = e => (0, g.$o)({
         ...e,
         className: T.tN,
         mediaPlayerClassName: T.yf
@@ -55,19 +55,19 @@ function j(e) {
         href: null,
         thumbnail: {
             url: t.videoThumbnailSrc,
-            width: E,
+            width: I,
             height: 560
         },
         video: {
             url: t.src,
             proxyURL: t.src,
-            width: E,
+            width: I,
             height: 560
         },
         provider: void 0,
         allowFullScreen: !0,
         maxHeight: 560,
-        maxWidth: E,
+        maxWidth: I,
         onPlay: n,
         onEnded: l,
         playable: r,
@@ -75,7 +75,7 @@ function j(e) {
         volume: 1,
         autoMute: i,
         autoPlay: r,
-        renderVideoComponent: I,
+        renderVideoComponent: E,
         renderImageComponent: v,
         renderLinkComponent: g.bU
     }, i ? "player-muted" : "player-unmuted"), u = {
@@ -133,7 +133,7 @@ let k = (0, u.A)(e => {
         onItemChange: i,
         isMuted: c = !0,
         onTrackClick: u
-    } = e, _ = (0, l.useRef)(0), [m, f] = (0, l.useState)(0), [g, I] = (0, l.useState)(0), v = (0, l.useRef)(0), N = (0, l.useRef)(t.length), [k, y] = (0, l.useState)(!0), [R, U] = (0, l.useState)(!1), [O, w] = (0, l.useState)(!1), [L, P] = (0, l.useState)(!1), [D, B] = (0, l.useState)(!1), M = (0, l.useCallback)((e, n) => {
+    } = e, _ = (0, l.useRef)(0), [m, f] = (0, l.useState)(0), [g, E] = (0, l.useState)(0), v = (0, l.useRef)(0), N = (0, l.useRef)(t.length), [k, y] = (0, l.useState)(!0), [R, U] = (0, l.useState)(!1), [O, w] = (0, l.useState)(!1), [L, P] = (0, l.useState)(!1), [D, B] = (0, l.useState)(!1), M = (0, l.useCallback)((e, n) => {
         let a = t[e]?.backgroundSrc,
             l = n.interpolate({
                 inputRange: [0, 1],
@@ -158,7 +158,7 @@ let k = (0, u.A)(e => {
         let n = N.current,
             a = (0, b.U3)(v.current, n),
             l = (0, b.U3)(e, n);
-        v.current = l, I(l), _.current++, f(_.current), y(1 === Math.abs(l - a) || l === n - 1 && 0 === a || 0 === l && a === n - 1)
+        v.current = l, E(l), _.current++, f(_.current), y(1 === Math.abs(l - a) || l === n - 1 && 0 === a || 0 === l && a === n - 1)
     }, []), H = (0, l.useCallback)(() => {
         F(v.current + 1, !1)
     }, [F]), G = (0, l.useCallback)(() => {
@@ -207,7 +207,7 @@ let k = (0, u.A)(e => {
             className: T.Dk,
             items: t,
             itemSize: {
-                width: E,
+                width: I,
                 margin: 0
             },
             renderItem: z,
