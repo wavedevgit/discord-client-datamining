@@ -25,8 +25,8 @@ var i = n(627968),
     E = n(450510),
     b = n(861410),
     T = n(433522),
-    C = n(287809),
-    I = n(203982),
+    I = n(287809),
+    C = n(203982),
     v = n(403362),
     S = n(997509),
     y = n(555337),
@@ -272,12 +272,12 @@ let ef = {
             case eh.BEX.DELETE:
                 return {
                     section: eh.BEX.DELETE, onClick() {
-                        let e = C.default.getCurrentUser();
+                        let e = I.default.getCurrentUser();
                         if (null == e) return;
                         let {
                             name: s
                         } = t.guild, l = () => {
-                            I._.subscribeOnce(eh.jej.LAYER_POP_COMPLETE, () => {
+                            C._.subscribeOnce(eh.jej.LAYER_POP_COMPLETE, () => {
                                 S.A.deleteGuild(t.guild.id)
                             }), (0, o.jH)()
                         };

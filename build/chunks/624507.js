@@ -23,8 +23,8 @@ function A(e) {
         editedWebhook: n,
         channelOptions: A,
         isExpanded: b,
-        errors: _,
-        onToggleExpand: f
+        errors: f,
+        onToggleExpand: _
     } = e, N = l.useMemo(() => {
         var e;
         return null != (e = t.avatar) && /^data:/.test(e) ? e : (0, m.ku)({
@@ -82,7 +82,7 @@ function A(e) {
                         })
                     },
                     maxLength: 80,
-                    error: _.name
+                    error: f.name
                 }), (0, i.jsx)(r.l6P, {
                     label: h.intl.string(h.t["4TuWfc"]),
                     value: n.channel_id,
@@ -111,7 +111,7 @@ function A(e) {
             children: [(0, i.jsx)(r.DUT, {
                 className: p.wx,
                 "aria-expanded": b,
-                onClick: f,
+                onClick: _,
                 children: (0, i.jsxs)(r.BJc, {
                     direction: "horizontal",
                     justify: "space-between",

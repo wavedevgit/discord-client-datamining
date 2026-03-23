@@ -31,7 +31,7 @@ function A(e) {
         E = j?.mfaEnabled,
         b = A === h.EkJ.ELEVATED,
         T = N && E,
-        C = (0, s.throttle)(async e => {
+        I = (0, s.throttle)(async e => {
             T && await g.A.updateMFALevel({
                 guildId: n.id,
                 level: e ? h.EkJ.ELEVATED : h.EkJ.NONE
@@ -41,7 +41,7 @@ function A(e) {
     T || (t = N ? _.intl.format(_.t.nFwNyR, {
         settingsHook: () => (0, d.openUserSettings)(o.X.ACCOUNT_PANEL)
     }) : _.intl.string(_.t["9Ghu40"]));
-    let I = n.features.has(h.GuildFeatures.DISCOVERABLE);
+    let C = n.features.has(h.GuildFeatures.DISCOVERABLE);
     return (0, i.jsxs)("div", {
         className: p.ph,
         children: [(0, i.jsxs)("div", {
@@ -55,17 +55,17 @@ function A(e) {
                 color: "text-default",
                 children: [_.intl.string(_.t["a/93J6"]), " ", t]
             })]
-        }), !T || b && I ? (0, i.jsx)(r.m, {
-            text: I ? _.intl.string(_.t["KG1V/E"]) : N ? _.intl.string(_.t.NmsheT) : _.intl.string(_.t.LieBta),
+        }), !T || b && C ? (0, i.jsx)(r.m, {
+            text: C ? _.intl.string(_.t["KG1V/E"]) : N ? _.intl.string(_.t.NmsheT) : _.intl.string(_.t.LieBta),
             children: (0, i.jsx)(x.A, {
                 checked: b,
                 disabled: !0,
-                onChange: C,
+                onChange: I,
                 className: p.R0
             })
         }) : (0, i.jsx)(x.A, {
             checked: b,
-            onChange: C,
+            onChange: I,
             className: p.R0
         })]
     })

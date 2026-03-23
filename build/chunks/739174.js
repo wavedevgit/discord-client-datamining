@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(201275),
     A = n(657048),
     b = n(734057),
-    _ = n(696451),
-    f = n(317525),
+    f = n(696451),
+    _ = n(317525),
     N = n(351906),
     j = n(287809),
     T = n(427262),
@@ -132,7 +132,7 @@ function y(e) {
         id: s,
         isLocked: r,
         lockTooltipText: o
-    } = e, c = (0, d.bG)([f.A], () => f.A.getRole(t.id, s)), g = (0, p.$7)({
+    } = e, c = (0, d.bG)([_.A], () => _.A.getRole(t.id, s)), g = (0, p.$7)({
         guildId: t.id,
         roleId: s,
         size: 24
@@ -178,7 +178,7 @@ function O(e) {
         isLocked: l,
         lockTooltipText: s,
         openEntryContextMenu: a
-    } = e, r = (0, d.bG)([j.default], () => j.default.getUser(n)), o = (0, d.bG)([_.Ay], () => _.Ay.getMember(t.id, n)?.nick, [t.id, n]), c = (0, d.bG)([N.A], () => N.A.hidePersonalInformation);
+    } = e, r = (0, d.bG)([j.default], () => j.default.getUser(n)), o = (0, d.bG)([f.Ay], () => f.Ay.getMember(t.id, n)?.nick, [t.id, n]), c = (0, d.bG)([N.A], () => N.A.hidePersonalInformation);
     return null == r ? null : (0, i.jsxs)("div", {
         onContextMenu: a,
         className: I.Cv,

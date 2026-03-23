@@ -1,7 +1,7 @@
 /** chunk id: 874026 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => T
+    A: () => b
 });
 var l = n(627968);
 n(64700);
@@ -23,25 +23,25 @@ var s = n(503698),
     v = n(262763),
     C = n(402216),
     N = n(985018),
-    b = n(417068);
-let T = function(e) {
+    T = n(417068);
+let b = function(e) {
     let {
         channel: t
-    } = e, n = (0, r.bG)([A.A], () => A.A.isInChannel(t.id)), s = (0, m.A)(t), T = (0, x.Ay)(t), E = s.map(e => p.Ay.getName(t.guild_id, t.id, e)), j = s.length <= 5, I = (0, r.bG)([g.A], () => g.A.getAllApplicationStreamsForChannel(t.id)[0]);
+    } = e, n = (0, r.bG)([A.A], () => A.A.isInChannel(t.id)), s = (0, m.A)(t), b = (0, x.Ay)(t), j = s.map(e => p.Ay.getName(t.guild_id, t.id, e)), E = s.length <= 5, I = (0, r.bG)([g.A], () => g.A.getAllApplicationStreamsForChannel(t.id)[0]);
     return (0, l.jsxs)(c.Uq, {
-        className: b.jC,
+        className: T.jC,
         children: [null != I && (0, l.jsxs)("div", {
-            className: b.yt,
+            className: T.yt,
             children: [(0, l.jsx)(u.A, {
                 stream: I,
-                className: b.Rh,
+                className: T.Rh,
                 noText: !0
             }), (0, l.jsx)(C.Ay, {
                 size: C.Ay.Sizes.SMALL,
-                className: b.wI
+                className: T.wI
             })]
         }), (0, l.jsxs)("div", {
-            className: b.HA,
+            className: T.HA,
             children: [(0, l.jsx)(h.A, {
                 size: "xs",
                 color: "currentColor",
@@ -53,16 +53,16 @@ let T = function(e) {
                 variant: "text-sm/semibold",
                 color: "text-status-online",
                 lineClamp: 1,
-                children: T
+                children: b
             })]
         }), (0, l.jsxs)("div", {
-            className: i()(b.fM, {
-                [b.Tj]: j
+            className: i()(T.fM, {
+                [T.Tj]: E
             }),
-            children: [j ? (0, l.jsx)(o.Heading, {
+            children: [E ? (0, l.jsx)(o.Heading, {
                 lineClamp: 1,
                 variant: "heading-md/semibold",
-                children: (0, f.X)(E)
+                children: (0, f.X)(j)
             }) : null, (0, l.jsx)(a.A, {
                 users: s,
                 guildId: t.guild_id,
@@ -74,7 +74,7 @@ let T = function(e) {
                 "aria-label": N.intl.string(N.t["jNqDh/"])
             })]
         }), (0, l.jsx)("div", {
-            className: b.UD,
+            className: T.UD,
             children: (0, l.jsx)(o.Button, {
                 variant: n ? "secondary" : "active",
                 size: "sm",

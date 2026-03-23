@@ -22,8 +22,8 @@ function p(e) {
     let n = (0, a.bG)([u.A], () => u.A.getHighestRole(t)),
         l = (0, a.yK)([o.Ay], () => o.Ay.getMembers(e), [e]),
         p = (0, a.cf)([m.default], () => m.default.getUsers()),
-        _ = (0, a.bG)([d.A], () => d.A.getSortedRoles(e), [e]),
-        f = i.useMemo(() => {
+        f = (0, a.bG)([d.A], () => d.A.getSortedRoles(e), [e]),
+        _ = i.useMemo(() => {
             let e = [];
             for (let n of l) {
                 let i = p[n.userId];
@@ -45,7 +45,7 @@ function p(e) {
         N = e => e.managed && e.tags?.bot_id != null,
         j = i.useMemo(() => {
             let e = [];
-            for (let i of _) {
+            for (let i of f) {
                 if (N(i)) continue;
                 let l = !(0, r._m)(i, h.xBc.ADMINISTRATOR) && u.A.isRoleHigher(t, n, i),
                     s = {
@@ -56,17 +56,17 @@ function p(e) {
                 (0, r.Oy)(i) ? e.unshift(s): e.push(s)
             }
             return e
-        }, [_, t, n]),
+        }, [f, t, n]),
         [T, v] = i.useState(""),
         C = i.useMemo(() => {
             var t;
             let n = (t = T).startsWith("@") ? t.substr(1) : t,
                 i = T.startsWith("@") ? j.filter(t => t.id === e) : j;
             return {
-                members: (0, x.I)(f, A, n),
+                members: (0, x.I)(_, A, n),
                 roles: (0, x.I)(i, b, n)
             }
-        }, [e, f, T, j]);
+        }, [e, _, T, j]);
     return {
         query: T,
         results: C,

@@ -25,8 +25,8 @@ var i = n(627968),
     E = n(396816),
     b = n(359837),
     T = n(533448),
-    C = n(316506),
-    I = n(927573),
+    I = n(316506),
+    C = n(927573),
     v = n(652215),
     S = n(985018),
     y = n(971525);
@@ -47,8 +47,8 @@ function O(e) {
         } = e,
         E = (0, b.c)(s, d, l),
         T = (0, f.Oy)(l),
-        C = null == E && !T,
-        I = l.tags?.guild_connections !== void 0,
+        I = null == E && !T,
+        C = l.tags?.guild_connections !== void 0,
         S = (0, A.X_)(s.id, l, l.colorStrings),
         [, O] = (0, a.i)({
             type: R,
@@ -56,7 +56,7 @@ function O(e) {
                 id: l.id,
                 position: x
             }),
-            canDrag: () => C,
+            canDrag: () => I,
             end: (e, t) => {
                 let n = t.getDropResult();
                 null == n ? p() : j(n.roleId)
@@ -66,7 +66,7 @@ function O(e) {
             dragSourcePosition: G
         }, L] = (0, o.H)({
             accept: R,
-            canDrop: () => C,
+            canDrop: () => I,
             collect: e => {
                 let t = e.getItem();
                 return null != t && e.isOver() && e.canDrop() ? {
@@ -80,7 +80,7 @@ function O(e) {
             })
         }),
         D = l.colorString ?? v.TpD;
-    return t = I ? (0, i.jsx)(_.A, {
+    return t = C ? (0, i.jsx)(_.A, {
         size: 12,
         color: l.colorString,
         className: y.Ev
@@ -138,7 +138,7 @@ function G(e) {
     } = e, o = (0, d.bG)([E.A], () => E.A.roles), m = (0, d.bG)([j.A], () => j.A.getHighestRole(t)), _ = (0, d.bG)([h.A], () => h.A.roleStyle), [A, f] = s.useState(o.length), {
         scrolledToTop: b,
         handleScroll: v
-    } = (0, C.u)(), {
+    } = (0, I.u)(), {
         handleDragStart: R,
         handleDragReset: G,
         handleDragComplete: L
@@ -182,7 +182,7 @@ function G(e) {
                     children: (0, i.jsx)(u.DUT, {
                         className: y.Cm,
                         onClick: () => {
-                            g.A.createRole(t.id), a(I.T$.DISPLAY)
+                            g.A.createRole(t.id), a(C.T$.DISPLAY)
                         },
                         children: (0, i.jsx)(u.j96, {
                             size: "custom",

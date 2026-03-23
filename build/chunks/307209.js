@@ -109,9 +109,9 @@ function b(e) {
         children: [(0, i.jsx)(T, {
             guildId: t,
             handlePreview: h
-        }), (0, i.jsx)(C, {}), (0, i.jsxs)("div", {
+        }), (0, i.jsx)(I, {}), (0, i.jsxs)("div", {
             className: E.Qs,
-            children: [(0, i.jsx)(I, {
+            children: [(0, i.jsx)(C, {
                 guildId: t,
                 handleOnboardingToggle: u
             }), A]
@@ -174,7 +174,7 @@ function T(e) {
     })
 }
 
-function C() {
+function I() {
     let e = "• ";
     return (0, i.jsxs)("div", {
         className: E.lm,
@@ -201,7 +201,7 @@ function C() {
     })
 }
 
-function I(e) {
+function C(e) {
     let {
         guildId: t,
         handleOnboardingToggle: n

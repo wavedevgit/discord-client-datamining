@@ -25,8 +25,8 @@ var i = n(627968),
     E = n(209932),
     b = n(102597),
     T = n(904054),
-    C = n(496502),
-    I = n(657331),
+    I = n(496502),
+    C = n(657331),
     v = n(71393),
     S = n(287809),
     y = n(358431),
@@ -274,7 +274,7 @@ function K(e) {
         analyticsLocations: b
     } = (0, A.Ay)(), T = (0, d.bG)([S.default], () => _ ?? S.default.getUser(p), [p, _]), {
         canManageGuildExpression: v
-    } = (0, j.nr)(o), y = s.useMemo(() => v(t), [t, v]), O = null != f || null != E, [G, D] = s.useState(!1), M = (0, C.v)(t, o.id);
+    } = (0, j.nr)(o), y = s.useMemo(() => v(t), [t, v]), O = null != f || null != E, [G, D] = s.useState(!1), M = (0, I.v)(t, o.id);
     async function k() {
         if (!G) {
             D(!0);
@@ -292,7 +292,7 @@ function K(e) {
         }
     }, [T, p]);
     let U = s.useCallback(() => {
-            null != T && (0, I.openUserProfileModal)({
+            null != T && (0, C.openUserProfileModal)({
                 userId: T.id,
                 guildId: o.id,
                 sourceAnalyticsLocations: b

@@ -1,7 +1,7 @@
 /** chunk id: 196169 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => C
+    A: () => I
 });
 var i = n(627968);
 n(64700);
@@ -183,7 +183,7 @@ function T() {
     })
 }
 
-function C() {
+function I() {
     return (0, i.jsxs)("div", {
         children: [(0, i.jsx)(l.Heading, {
             variant: "heading-lg/semibold",

@@ -7,7 +7,7 @@ var i = n(627968),
     l = n(311907),
     a = n(531260),
     r = n(459793),
-    o = n(836275),
+    o = n(527113),
     d = n(338548),
     c = n(859241),
     u = n(197305),
@@ -49,7 +49,7 @@ function b(e) {
             canAddBoosts: O && M,
             canApplyBoosts: R
         }), (0, i.jsx)(o.A, {
-            className: C.e4,
+            className: C.Q,
             hideHeading: !0,
             hideTier0: !0
         }), (0, i.jsx)(T.A, {}), (0, i.jsx)(E.A, {})]

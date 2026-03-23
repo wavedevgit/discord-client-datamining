@@ -43,7 +43,7 @@ function u(e) {
                 label: d.intl.string(d.t.oJ1Muw)
             })
         })
-    }, [g]), b = g.type === r.kc.CHAT ? s.kC9 : s.ueQ, _ = (0, o.p6)(g.type, g.displayName);
+    }, [g]), b = g.type === r.kc.CHAT ? s.kC9 : s.ueQ, f = (0, o.p6)(g.type, g.displayName);
     return (0, i.jsxs)(s.DUT, {
         onClick: p,
         className: c.AS,
@@ -56,7 +56,7 @@ function u(e) {
                 color: "currentColor"
             }), (0, i.jsx)(s.Text, {
                 variant: "text-md/normal",
-                children: _
+                children: f
             })]
         }), (0, i.jsx)("div", {
             className: c.II,

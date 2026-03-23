@@ -25,20 +25,20 @@ let g = function(e) {
             let i = n + t;
             return i < 0 ? i = e.length - 1 : i > e.length - 1 && (i = 0), i
         })
-    }, [f]), C = s.useCallback(() => {
+    }, [f]), I = s.useCallback(() => {
         E || T(t, 1)
-    }, [T, t, E]), I = s.useCallback(() => {
+    }, [T, t, E]), C = s.useCallback(() => {
         E || T(t, -1)
     }, [T, t, E]);
     return s.useEffect(() => {
-        null != g && (j ? j && h.stop() : h.start(g, C))
-    }, [j, h, g, C]), (0, i.jsxs)("div", {
+        null != g && (j ? j && h.stop() : h.start(g, I))
+    }, [j, h, g, I]), (0, i.jsxs)("div", {
         className: m.zr,
         onMouseEnter: () => N(!0),
         onMouseLeave: () => N(!1),
         children: [(0, i.jsx)(o.DUT, {
             className: r()(m.Sx, l),
-            onClick: I,
+            onClick: C,
             onMouseEnter: () => p(c.f.RIGHT),
             ignoreKeyPress: E,
             children: (0, i.jsx)(d.A, {
@@ -56,7 +56,7 @@ let g = function(e) {
             children: x(t[A])
         }), (0, i.jsx)(o.DUT, {
             className: r()(m.Sx, l),
-            onClick: C,
+            onClick: I,
             onMouseEnter: () => p(c.f.LEFT),
             ignoreKeyPress: E,
             children: (0, i.jsx)(d.A, {

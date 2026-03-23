@@ -11,13 +11,13 @@ n.d(t, {
     W5: () => y,
     WA: () => v,
     Wh: () => b,
-    XD: () => I,
+    XD: () => C,
     hL: () => _,
     kO: () => D,
     px: () => T,
     sd: () => N,
     sk: () => M,
-    z4: () => C
+    z4: () => I
 });
 var i = n(735438),
     s = n.n(i),
@@ -120,7 +120,7 @@ function T(e) {
     })
 }
 
-function C(e, t) {
+function I(e, t) {
     r.h.dispatch({
         type: "GUILD_SETTINGS_ONBOARDING_UPDATE_RESOURCE_CHANNEL",
         channelId: e,
@@ -128,7 +128,7 @@ function C(e, t) {
     })
 }
 
-function I(e) {
+function C(e) {
     r.h.dispatch({
         type: "GUILD_SETTINGS_ONBOARDING_DELETE_RESOURCE_CHANNEL",
         resourceChannelId: e

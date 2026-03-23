@@ -60,8 +60,8 @@ function A(e) {
         }, []),
         {
             handleDragStart: T,
-            handleDragReset: C,
-            handleDragComplete: I,
+            handleDragReset: I,
+            handleDragComplete: C,
             draggingId: v
         } = (0, o.A)(E, b);
     if (null == r) return null;
@@ -88,8 +88,8 @@ function A(e) {
                     connection: e,
                     index: t,
                     onDragStart: T,
-                    onDragReset: C,
-                    onDragComplete: I,
+                    onDragReset: I,
+                    onDragComplete: C,
                     draggingId: v
                 }, e.id))
             }), (0, i.jsxs)("button", {

@@ -25,8 +25,8 @@ var i = n(627968),
     E = n(975571),
     b = n(250627),
     T = n(808138),
-    C = n(271653),
-    I = n(371701),
+    I = n(271653),
+    C = n(371701),
     v = n(652215),
     S = n(746080),
     y = n(985018),
@@ -103,9 +103,9 @@ function O(e) {
         }),
         F = (0, l.YW)(k).with("basic_info", () => (0, i.jsx)(T.A, {
             guildId: t
-        })).with("manage_listings", () => (0, i.jsx)(C.A, {
+        })).with("manage_listings", () => (0, i.jsx)(I.A, {
             guildId: t
-        })).with("payment", () => (0, i.jsx)(I.A, {
+        })).with("payment", () => (0, i.jsx)(C.A, {
             guildId: t
         })).exhaustive(),
         H = O ? (0, i.jsx)(o.VQ0.Panel, {

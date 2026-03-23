@@ -27,23 +27,23 @@ function f(e) {
     } = (0, o.A)({
         userId: n.author.id,
         guildId: t.id
-    }), [v, C] = s.useState(!1), N = (0, i.bG)([d.A], () => d.A.getChannel(n.channel_id)?.isVocal()), b = s.useRef(new r.J_(50, () => {
+    }), [v, C] = s.useState(!1), N = (0, i.bG)([d.A], () => d.A.getChannel(n.channel_id)?.isVocal()), T = s.useRef(new r.J_(50, () => {
         C(!0)
-    })), T = s.useRef(new r.J_(175, () => {
+    })), b = s.useRef(new r.J_(175, () => {
         C(!1)
     }));
     s.useEffect(() => {
-        let e = b.current,
-            t = T.current;
+        let e = T.current,
+            t = b.current;
         return () => {
             e.cancel(), t.cancel()
         }
     }, []);
-    let E = s.useCallback(() => {
-            T.current.cancel(), b.current.delay()
-        }, []),
-        j = s.useCallback(() => {
+    let j = s.useCallback(() => {
             b.current.cancel(), T.current.delay()
+        }, []),
+        E = s.useCallback(() => {
+            T.current.cancel(), b.current.delay()
         }, []),
         I = (0, i.bG)([m.A], () => {
             if (null == x) return !1;
@@ -59,8 +59,8 @@ function f(e) {
         position: "right",
         shouldShow: v,
         renderPopout: () => (0, l.jsx)("div", {
-            onMouseEnter: E,
-            onMouseLeave: j,
+            onMouseEnter: j,
+            onMouseLeave: E,
             children: (0, l.jsx)(h.A, {
                 channel: x,
                 message: n
@@ -68,8 +68,8 @@ function f(e) {
         }),
         children: () => (0, l.jsx)("span", {
             className: A.B,
-            onMouseEnter: E,
-            onMouseLeave: j,
+            onMouseEnter: j,
+            onMouseLeave: E,
             ref: f,
             children: (0, l.jsx)(c.A, {
                 size: "custom",

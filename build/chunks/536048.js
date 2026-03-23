@@ -3,33 +3,27 @@
 n.d(t, {
     I: () => s
 });
-let l = (0, n(600975).C)({
-    id: "2025-04_native_markdown",
+let l = (0, n(945810).mj)({
+    name: "2025-04-native-markdown",
     kind: "user",
-    label: "Native Markdown",
     defaultConfig: {
         enabled: !1
     },
-    treatments: [{
-        id: 0,
-        label: "Disabled",
-        config: {
+    variations: {
+        0: {
             enabled: !1
-        }
-    }, {
-        id: 1,
-        label: "Enabled",
-        config: {
+        },
+        1: {
             enabled: !0
         }
-    }]
+    }
 });
 
 function s(e) {
     let {
         location: t
     } = e;
-    return l.useExperiment({
+    return l.useConfig({
         location: t
     })
 }

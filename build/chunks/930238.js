@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(882997),
     A = n(235986),
     b = n(837057),
-    _ = n(310419),
-    f = n(526132),
+    f = n(310419),
+    _ = n(526132),
     N = n(887501),
     j = n(962173),
     T = n(576705),
@@ -95,11 +95,11 @@ function W(e) {
             canManageWebhooks: null != Z && T.A.can(R.xBc.MANAGE_WEBHOOKS, Z) || null != X && T.A.can(R.xBc.MANAGE_WEBHOOKS, X),
             canManageGuild: null != Z && null == X && T.A.can(R.xBc.MANAGE_GUILD, Z)
         }), [Z, X]),
-        eA = (0, f.e)(X),
+        eA = (0, _.e)(X),
         eb = (0, h.h)(X?.linkedLobby?.application_id),
-        e_ = (0, N.A)(Z?.id),
+        ef = (0, N.A)(Z?.id),
         {
-            availableTwitchIntegrations: ef,
+            availableTwitchIntegrations: e_,
             availableYoutubeIntegrations: eN,
             guildTwitchIntegrations: ej,
             guildYoutubeIntegrations: eT
@@ -121,10 +121,10 @@ function W(e) {
                 t = ex.filter(e => e.type === R.fg2.TWITCH).length > 0,
                 n = ex.filter(e => e.type === R.fg2.YOUTUBE).length > 0;
             return {
-                showTwitchCard: ef > 0 || !t && e,
+                showTwitchCard: e_ > 0 || !t && e,
                 showYoutubeCard: eN > 0 || !n && e
             }
-        }, [eg, ep, Z, ex, ef, eN]),
+        }, [eg, ep, Z, ex, e_, eN]),
         eI = Object.values($).length,
         eE = l.useMemo(() => {
             let e = eI > 100 ? P : o();
@@ -235,7 +235,7 @@ function W(e) {
                                 tab: k.GlobalDiscoveryTab.APPS,
                                 newSessionState: {
                                     entrypoint: {
-                                        name: _.sW.GUILD_INTEGRATION_SETTINGS
+                                        name: f.sW.GUILD_INTEGRATION_SETTINGS
                                     },
                                     guildId: t
                                 }
@@ -282,7 +282,7 @@ function W(e) {
             }]
         }, "channels-followed")))
     }
-    null == X && e_.length > 0 && eP.push((r = e_.length, (0, i.jsx)(O.A, {
+    null == X && ef.length > 0 && eP.push((r = ef.length, (0, i.jsx)(O.A, {
         name: L.intl.string(L.t.tqtDXC),
         icon: u.fNY,
         trailing: (0, i.jsx)(u.uhT, {
@@ -295,7 +295,7 @@ function W(e) {
                 count: r
             })
         }]
-    }, "channels-syncing"))), ev && eP.push((F = x.A.get(R.fg2.TWITCH), ef > 0 ? (z = (0, i.jsx)(u.uhT, {
+    }, "channels-syncing"))), ev && eP.push((F = x.A.get(R.fg2.TWITCH), e_ > 0 ? (z = (0, i.jsx)(u.uhT, {
         size: "xs"
     }), H = L.intl.formatToPlainString(L.t.FFpnT8, {
         count: ej
@@ -310,7 +310,7 @@ function W(e) {
         buttonText: W,
         onButtonClick: V,
         trailing: z,
-        hasNextSection: ef > 0,
+        hasNextSection: e_ > 0,
         details: [{
             text: H
         }]

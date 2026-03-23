@@ -25,16 +25,16 @@ function A(e, t) {
         allowHeading: v = !1,
         allowList: C = !1,
         allowLinks: N = !1,
-        allowDevLinks: b = !1,
-        previewLinkTarget: T = !1,
-        viewingChannelId: E
-    } = t, j = (0, c.I)({
+        allowDevLinks: T = !1,
+        previewLinkTarget: b = !1,
+        viewingChannelId: j
+    } = t, E = (0, c.I)({
         location: "useMessageRenderedContent"
-    }), [I, _] = s.useState(!1), S = s.useCallback(e => {
-        e && _(!0)
+    }), [I, S] = s.useState(!1), _ = s.useCallback(e => {
+        e && S(!0)
     }, []);
     return s.useEffect(() => {
-        _(!1)
+        S(!1)
     }, [e.content]), s.useMemo(() => {
         if (null != e.customRenderedContent) return e.customRenderedContent;
         if (e.isUnsupported) return {
@@ -53,15 +53,15 @@ function A(e, t) {
                 }
             })
         }
-        return j.enabled ? {
+        return E.enabled ? {
             content: (0, l.jsx)(s.Suspense, {
                 children: (0, l.jsx)(u.O.Provider, {
                     value: {
                         messageId: e.id,
                         channelId: e.channel_id,
-                        viewingChannelId: E,
+                        viewingChannelId: j,
                         guildId: (0, r.U)(e),
-                        setHasSpoilerEmbeds: S
+                        setHasSpoilerEmbeds: _
                     },
                     children: (0, l.jsx)(g, {
                         content: e.content
@@ -78,9 +78,9 @@ function A(e, t) {
             allowHeading: v,
             allowList: C,
             allowLinks: N,
-            allowDevLinks: b,
-            previewLinkTarget: T,
-            viewingChannelId: E
+            allowDevLinks: T,
+            previewLinkTarget: b,
+            viewingChannelId: j
         })
-    }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, A, f, p, x, v, C, N, T, b, E, j.enabled, I])
+    }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, A, f, p, x, v, C, N, b, T, j, E.enabled, I])
 }

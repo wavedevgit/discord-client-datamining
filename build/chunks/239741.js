@@ -25,8 +25,8 @@ var i = n(627968),
     E = n(287479),
     b = n(400812),
     T = n(72533),
-    C = n(246282),
-    I = n(729984),
+    I = n(246282),
+    C = n(729984),
     v = n(692453),
     S = n(360827),
     y = n(133154),
@@ -83,7 +83,7 @@ function D(e) {
             output: [W, (0, c.rdh)(a.A.colors.BACKGROUND_FEEDBACK_CRITICAL).hex()]
         });
     if (D) {
-        if (L === b.Hy.DEFAULT_CHANNELS) return (0, i.jsx)(I.G, {});
+        if (L === b.Hy.DEFAULT_CHANNELS) return (0, i.jsx)(C.G, {});
         else if (L === b.Hy.CUSTOMIZATION_QUESTIONS) return (0, i.jsx)(S.fO, {});
         else if (L === b.Hy.HOME_SETTINGS) return (0, i.jsx)(y.A, {});
         else if (L === b.Hy.CONNECTIONS) return (0, i.jsx)(v.R, {});
@@ -122,7 +122,7 @@ function D(e) {
                 skip: !1
             }), await X() && (0, p.kP)(h, L)
         }, q = null;
-    P && (L === b.Hy.SAFETY_CHECK ? q = (0, i.jsx)(C.Et, {}) : L === b.Hy.DEFAULT_CHANNELS ? q = (0, i.jsx)(C.hz, {}) : L === b.Hy.CUSTOMIZATION_QUESTIONS ? q = (0, i.jsx)(C.yP, {}) : L === b.Hy.HOME_SETTINGS && (q = (0, i.jsx)(C.QS, {})));
+    P && (L === b.Hy.SAFETY_CHECK ? q = (0, i.jsx)(I.Et, {}) : L === b.Hy.DEFAULT_CHANNELS ? q = (0, i.jsx)(I.hz, {}) : L === b.Hy.CUSTOMIZATION_QUESTIONS ? q = (0, i.jsx)(I.yP, {}) : L === b.Hy.HOME_SETTINGS && (q = (0, i.jsx)(I.QS, {})));
     let Q = (0, i.jsx)("div", {
             className: P ? G.R : void 0,
             children: (0, i.jsx)(c.Button, {

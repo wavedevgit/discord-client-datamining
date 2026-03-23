@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(661191),
     A = n(427262),
     b = n(447066),
-    _ = n(998874),
-    f = n(657681),
+    f = n(998874),
+    _ = n(657681),
     N = n(267001),
     j = n(652215),
     T = n(985018),
@@ -84,7 +84,7 @@ function I(e) {
                 user: A.Ay.getUserTag(S.user)
             })
         }), e
-    }, [S.id, S.user]), M = l.useMemo(() => null != E.bot && S.scopes?.includes(s.F.BOT) ? (0, i.jsx)(f.A, {
+    }, [S.id, S.user]), M = l.useMemo(() => null != E.bot && S.scopes?.includes(s.F.BOT) ? (0, i.jsx)(_.A, {
         guild: t,
         applicationIntegration: n
     }) : (0, i.jsx)(o.ZpM, {
@@ -117,7 +117,7 @@ function I(e) {
             className: v.zN
         }), null != E.bot ? (0, i.jsxs)("div", {
             className: v.uW,
-            children: [(0, i.jsx)(_.A, {
+            children: [(0, i.jsx)(f.A, {
                 icon: (0, i.jsx)(o.CnV, {
                     size: "xs",
                     color: "currentColor"
@@ -126,7 +126,7 @@ function I(e) {
             }), M]
         }) : null, (0, i.jsxs)("div", {
             className: v.uW,
-            children: [(0, i.jsx)(_.A, {
+            children: [(0, i.jsx)(f.A, {
                 icon: (0, i.jsx)(o.XC7, {
                     size: "md",
                     color: "currentColor"

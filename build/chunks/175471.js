@@ -144,7 +144,7 @@ function E(e) {
         withCardBody: A = !0,
         guildId: f,
         showHeaderLockStatus: j = !0
-    } = e, E = (0, o.bG)([g.A], () => g.A.getGuild(f)?.premiumTier ?? h.TVA.NONE), b = h.M2T[l.tier], T = a && l.tier <= E, C = l.tier !== h.TVA.NONE && l.tier !== h.TVA.TIER_1;
+    } = e, E = (0, o.bG)([g.A], () => g.A.getGuild(f)?.premiumTier ?? h.TVA.NONE), b = h.M2T[l.tier], T = a && l.tier <= E, I = l.tier !== h.TVA.NONE && l.tier !== h.TVA.TIER_1;
     return (0, i.jsxs)("div", {
         className: r()(p.Zm, {
             [p.Ab]: c
@@ -168,7 +168,7 @@ function E(e) {
                 [p.J8]: A
             }),
             children: null != t ? t : (0, i.jsxs)(i.Fragment, {
-                children: [C ? (0, i.jsx)("div", {
+                children: [I ? (0, i.jsx)("div", {
                     className: p.p8,
                     children: _.intl.string(_.t.oKzyRQ)
                 }) : null, null != l.perks && (0, i.jsx)("div", {
@@ -214,7 +214,7 @@ let b = e => {
         } = e;
         return null !== s ? s : n ? (0, i.jsx)(T, {
             transform: t
-        }) : (0, i.jsx)(C, {
+        }) : (0, i.jsx)(I, {
             subscriptionsRequired: l
         })
     },
@@ -230,7 +230,7 @@ let b = e => {
             children: _.intl.string(_.t.dNGM0v)
         })
     },
-    C = e => {
+    I = e => {
         let {
             subscriptionsRequired: t
         } = e;

@@ -22,13 +22,13 @@ var l = n(627968),
     v = n(58149),
     C = n(688810),
     N = n(709066),
-    b = n(657331),
-    T = n(427157),
-    E = n(696451),
-    j = n(954571),
+    T = n(657331),
+    b = n(427157),
+    j = n(696451),
+    E = n(954571),
     I = n(370480),
-    _ = n(633452),
-    S = n(600260),
+    S = n(633452),
+    _ = n(600260),
     R = n(63104),
     y = n(355971),
     M = n(293260),
@@ -92,7 +92,7 @@ function P(e) {
                 u = a.find(e => null != e.application),
                 c = x.A.get(e),
                 d = u?.application,
-                h = d?.bot != null ? new T.A(d.bot) : null;
+                h = d?.bot != null ? new b.A(d.bot) : null;
             return I.iC.includes(d?.id ?? "") ? t = (0, l.jsx)(y.A, {
                 className: G.AO,
                 color: s,
@@ -149,14 +149,14 @@ function U(e) {
         guildId: d
     } = e;
     s.useEffect(() => {
-        j.default.track(w.HAw.PASSPORT_ROLE_POPOUT_VIEWED, {
+        E.default.track(w.HAw.PASSPORT_ROLE_POPOUT_VIEWED, {
             other_user_id: a,
             role_id: o,
             ...(0, v.Ou)(c),
             ...(0, v.H$)(d)
         })
     }, [a, o, c, d]);
-    let m = (0, u.bG)([E.Ay], () => E.Ay.getSelfMember(d)?.roles.includes(o) ?? !1, [d, o]);
+    let m = (0, u.bG)([j.Ay], () => j.Ay.getSelfMember(d)?.roles.includes(o) ?? !1, [d, o]);
     return t = 1 === r.length && 1 === r[0].length ? L.intl.string(L.t.jDym4E) : 1 === r.length ? L.intl.format(L.t["0eBj3x"], {}) : L.intl.format(L.t.D7uftB, {}), (0, l.jsxs)("div", {
         className: G.SW,
         children: [(0, l.jsx)("div", {
@@ -196,7 +196,7 @@ function H(e) {
         channel: a
     } = e, {
         analyticsLocations: o
-    } = (0, C.Ay)(), c = (0, S.A)(i, t, a.id, !0), m = (0, u.bG)([_.A], () => _.A.getGuildRoleConnectionEligibility(c?.id)), [h, f] = s.useState(null == m), p = s.useRef(null);
+    } = (0, C.Ay)(), c = (0, _.A)(i, t, a.id, !0), m = (0, u.bG)([S.A], () => S.A.getGuildRoleConnectionEligibility(c?.id)), [h, f] = s.useState(null == m), p = s.useRef(null);
     if (null == c) return null;
     async function x() {
         r()(null != c, "visibleConnectionsRole is null"), h && null == m && (await A.A.fetchGuildRoleConnectionsEligibility(i.id, c.id), f(!1))
@@ -219,7 +219,7 @@ function H(e) {
                         (0, M.c0)(i.id)
                     },
                     onOpenProfile: () => {
-                        (0, b.openUserProfileModal)({
+                        (0, T.openUserProfileModal)({
                             userId: t,
                             messageId: n,
                             guildId: i.id,

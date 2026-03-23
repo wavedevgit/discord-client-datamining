@@ -30,17 +30,17 @@ function f(e) {
         vanityURLUses: E,
         originalVanityURLCode: b,
         errorDetails: T,
-        fetched: C
+        fetched: I
     } = (0, l.cf)([g.A], () => ({
         vanityURLCode: g.A.vanityURLCode,
         vanityURLUses: g.A.vanityURLUses,
         originalVanityURLCode: g.A.originalVanityURLCode,
         errorDetails: g.A.errorDetails,
         fetched: g.A.fetchedVanityURL
-    })), I = t?.id;
+    })), C = t?.id;
     return (s.useEffect(() => {
-        null == I || C || (0, m.Je)(I)
-    }, [C, I]), null == t) ? null : j ? (0, i.jsx)(a.A, {}) : (0, i.jsxs)("div", {
+        null == C || I || (0, m.Je)(C)
+    }, [I, C]), null == t) ? null : j ? (0, i.jsx)(a.A, {}) : (0, i.jsxs)("div", {
         ref: n,
         children: [(0, i.jsxs)(r.Heading, {
             variant: "heading-md/medium",

@@ -60,16 +60,16 @@ function h(e) {
         section: g,
         label: u.intl.string(u.t.wF3KJy)
     }), T.push(m(c.BEX.INTEGRATIONS, b)), T.push(m(c.BEX.APP_DIRECTORY, b));
-    let C = !t.features.has(c.GuildFeatures.COMMUNITY) && ((0, l.hX)(t.id) || (0, l.i_)(t.id));
-    (n || d || _ || C) && (T.push({
+    let I = !t.features.has(c.GuildFeatures.COMMUNITY) && ((0, l.hX)(t.id) || (0, l.i_)(t.id));
+    (n || d || _ || I) && (T.push({
         section: x
     }), T.push({
         section: g,
         label: u.intl.string(u.t["5tbTdV"])
     }), T.push(m(c.BEX.SAFETY, b)), T.push(m(c.BEX.MODERATION, b)), T.push(m(c.BEX.AUDIT_LOG, b)), T.push(m(c.BEX.BANS, b)), T.push(m(c.BEX.GUILD_AUTOMOD, b)));
-    let I = t.features.has(c.GuildFeatures.COMMUNITY) && A,
+    let C = t.features.has(c.GuildFeatures.COMMUNITY) && A,
         v = E();
-    return (n || I || v) && (T.push({
+    return (n || C || v) && (T.push({
         section: x
     }), T.push(m(c.BEX.COMMUNITY, b)), T.push(m(c.BEX.ONBOARDING, b)), T.push(m(c.BEX.ANALYTICS, b)), T.push(m(c.BEX.COMMUNITY_WELCOME, b)), T.push(m(c.BEX.DISCOVERY_LANDING_PAGE, b)), T.push(m(c.BEX.ROLE_SUBSCRIPTIONS, b)), T.push(m(c.BEX.GUILD_PRODUCTS, b)), T.push(m(c.BEX.ROLE_SUBSCRIPTIONS_STORE_PAGE, b))), T.push({
         section: x

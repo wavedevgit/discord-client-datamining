@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(576705),
     A = n(203982),
     b = n(975571),
-    _ = n(971157),
-    f = n(12994),
+    f = n(971157),
+    _ = n(12994),
     N = n(460641),
     j = n(969756),
     T = n(930238),
@@ -111,7 +111,7 @@ let y = l.memo(function(e) {
     let $ = null;
     switch (t) {
         case C.wLn.TWITCH:
-            null != Q[C.fg2.TWITCH] && ($ = (0, i.jsx)(f.A, {
+            null != Q[C.fg2.TWITCH] && ($ = (0, i.jsx)(_.A, {
                 guild: s,
                 integrations: Q[C.fg2.TWITCH],
                 editedIntegration: w,
@@ -130,7 +130,7 @@ let y = l.memo(function(e) {
             }));
             break;
         case C.wLn.YOUTUBE:
-            null != Q[C.fg2.YOUTUBE] && ($ = (0, i.jsx)(f.A, {
+            null != Q[C.fg2.YOUTUBE] && ($ = (0, i.jsx)(_.A, {
                 guild: s,
                 integrations: Q[C.fg2.YOUTUBE],
                 editedIntegration: w,
@@ -149,7 +149,7 @@ let y = l.memo(function(e) {
             break;
         case C.wLn.APPLICATION:
             let ee = null != V ? q[J[V]] ?? q[V] : null;
-            null != ee && ($ = (0, i.jsx)(_.A, {
+            null != ee && ($ = (0, i.jsx)(f.A, {
                 guild: s,
                 applicationIntegration: ee,
                 editedWebhook: k,

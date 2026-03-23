@@ -31,7 +31,7 @@ function x(e) {
             ...l.config.stiff,
             clamp: !0
         }
-    }), C = (0, a.zhh)({
+    }), I = (0, a.zhh)({
         opacity: +!!N,
         pointerEvents: N ? "all" : "none",
         config: {
@@ -52,7 +52,7 @@ function x(e) {
         },
         children: [(0, i.jsx)(l.animated.div, {
             className: g.pT,
-            style: C,
+            style: I,
             children: (0, i.jsx)(u.A, {
                 rule: E,
                 persistEdit: _

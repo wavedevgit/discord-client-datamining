@@ -25,9 +25,9 @@ var i = n(627968),
     E = n(783419),
     b = n(985018),
     T = n(750730),
-    C = n(483604);
+    I = n(483604);
 
-function I(e, t) {
+function C(e, t) {
     return t !== m.jO.AND ? Object.values(o().groupBy(e, e => `${e.connectionType}:${e.applicationId}`)) : 0 === e.length ? [] : [
         [...e]
     ]
@@ -85,7 +85,7 @@ function S(e) {
             applicationId: t,
             operator: void 0,
             value: void 0
-        }), (0, h.pn)(n.id, I(i, D))
+        }), (0, h.pn)(n.id, C(i, D))
     }
 
     function P() {
@@ -135,7 +135,7 @@ function S(e) {
                         helpdeskArticleUrl: g.A.getArticleURL(N.MVz.CONNECTION_DETAILS_ADMIN)
                     })
                 })]
-            })), (n.id, F = (e, t) => (0, h.pn)(n.id, I(e, t)), e = I(M, m.jO.OR), (0, i.jsx)(c.z6M, {
+            })), (n.id, F = (e, t) => (0, h.pn)(n.id, C(e, t)), e = C(M, m.jO.OR), (0, i.jsx)(c.z6M, {
                 label: b.intl.string(b.t.Xs7PHX),
                 options: [{
                     name: b.intl.string(b.t.W3iY58),
@@ -200,7 +200,7 @@ function S(e) {
                         integrations: l
                     }, e[0].configuration.connectionType + ":" + e[0].index))
                 })
-            }(M, e => (0, h.pn)(n.id, I(e, D)), l, n.id, o), t]
+            }(M, e => (0, h.pn)(n.id, C(e, D)), l, n.id, o), t]
         })
     }
     return (0, i.jsx)(c.GtU, {
@@ -210,10 +210,10 @@ function S(e) {
         },
         onScroll: O,
         children: (0, i.jsxs)("div", {
-            className: C.Q,
+            className: I.Q,
             children: [(0, i.jsx)("div", {
-                className: r()(C.wx, C.ln, {
-                    [C.l6]: !R
+                className: r()(I.wx, I.ln, {
+                    [I.l6]: !R
                 }),
                 ref: y,
                 children: (0, i.jsx)(f.A, {

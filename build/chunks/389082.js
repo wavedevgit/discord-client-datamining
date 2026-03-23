@@ -60,7 +60,7 @@ function A(e) {
                 colorHex: g.TpD
             })
         }),
-        C = (0, d.Gx)({
+        I = (0, d.Gx)({
             isSelected: !f,
             label: x.intl.formatToPlainString(x.t["3kiLZZ"], {
                 colorHex: (0, a.Hl)(t)
@@ -102,7 +102,7 @@ function A(e) {
             children: [(0, i.jsxs)(c.DUT, {
                 onClick: l ? void 0 : _,
                 "aria-disabled": l,
-                ...C,
+                ...I,
                 children: [(0, i.jsx)("div", {
                     className: r()(h.yB, {
                         [h.MU]: j === g.TGz

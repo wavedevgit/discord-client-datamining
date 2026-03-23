@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(342298),
     A = n(427157),
     b = n(147925),
-    _ = n(486020),
-    f = n(957565),
+    f = n(486020),
+    _ = n(957565),
     N = n(661191),
     j = n(427262),
     T = n(447066),
@@ -28,7 +28,7 @@ var i = n(627968),
     I = n(416337);
 
 function E(e, t) {
-    return null != t && /^data:/.test(t) ? t : (0, _.ku)({
+    return null != t && /^data:/.test(t) ? t : (0, f.ku)({
         id: e.id,
         avatar: t,
         discriminator: v.h3J
@@ -40,7 +40,7 @@ function S(e) {
         id: t,
         webhook: n,
         editedWebhook: s,
-        channelOptions: _,
+        channelOptions: f,
         isExpanded: S,
         isNew: y,
         errors: O,
@@ -50,7 +50,7 @@ function S(e) {
     let M = l.useMemo(() => E(n, n.avatar), [n]),
         G = l.useCallback(() => {
             let e = `${(0,r.TP)(!1)}${v.Rsh.WEBHOOK_INTEGRATION(n.id,n.token)}`;
-            (0, f.C)(e)
+            (0, _.C)(e)
         }, [n]),
         U = l.useCallback(() => {
             (0, d.A)({
@@ -146,7 +146,7 @@ function S(e) {
                             children: (0, i.jsx)(u.ZiE, {
                                 label: C.intl.string(C.t.GK18KJ),
                                 value: s.channel_id,
-                                options: _,
+                                options: f,
                                 formatOption: e => {
                                     let {
                                         value: t,

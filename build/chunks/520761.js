@@ -29,9 +29,9 @@ let p = function(e) {
         title: N,
         channelId: E,
         description: b
-    } = l, T = u.A.getChannel(E), C = null;
-    null != T && (0, c.Yt)(T) || (C = h.intl.string(h.t.kTdL8X));
-    let I = null == b || 0 === b.length,
+    } = l, T = u.A.getChannel(E), I = null;
+    null != T && (0, c.Yt)(T) || (I = h.intl.string(h.t.kTdL8X));
+    let C = null == b || 0 === b.length,
         v = m.Ay.getResourceChannelIconURL({
             channelId: l.channelId,
             icon: l.icon
@@ -77,7 +77,7 @@ let p = function(e) {
             className: r()(_.Km, {
                 [_.A]: null != y && p < y,
                 [_.Ze]: null != y && p > y,
-                [_._t]: null != C
+                [_._t]: null != I
             }),
             ref: e => {
                 S(R(e))
@@ -108,7 +108,7 @@ let p = function(e) {
                     variant: "text-md/semibold",
                     color: "text-strong",
                     children: N
-                }), !I && (0, i.jsx)(o.Text, {
+                }), !C && (0, i.jsx)(o.Text, {
                     className: _.ur,
                     variant: "text-xs/medium",
                     color: "text-muted",
@@ -125,10 +125,10 @@ let p = function(e) {
                     "aria-label": h.intl.string(h.t.bt75uw)
                 })
             })]
-        }), null != C && (0, i.jsx)(o.Text, {
+        }), null != I && (0, i.jsx)(o.Text, {
             variant: "text-xs/medium",
             color: "text-feedback-critical",
-            children: C
+            children: I
         })]
     })
 }

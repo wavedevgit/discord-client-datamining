@@ -31,8 +31,8 @@ var i = n(627968),
     E = n(543767),
     N = n(874638),
     U = n(735164),
-    C = n(778307),
-    R = n(692440),
+    R = n(778307),
+    C = n(692440),
     _ = n(71393),
     D = n(351906),
     L = n(615405),
@@ -80,7 +80,7 @@ function H(e) {
         },
         paymentSourceType: d,
         immediateDelivery: f
-    }) : (0, i.jsx)(C.A, {
+    }) : (0, i.jsx)(R.A, {
         isActive: t,
         ref: n,
         children: null != a && (0, i.jsx)(m.A, {
@@ -163,7 +163,7 @@ function Z(e) {
     return "reverseTrial" === t.type ? (0, i.jsx)($, {
         text: t.text,
         className: K.jk
-    }) : (0, i.jsx)(R.wP, {
+    }) : (0, i.jsx)(C.wP, {
         proratedInvoice: t.proratedInvoicePreview,
         renewalInvoice: t.renewalInvoicePreview
     })
@@ -228,18 +228,16 @@ function z(e) {
         }), o) {
         let {
             lineItems: e,
-            hasSubscriptionCredit: t,
-            currency: n
+            currency: t
         } = (0, b.EA)({
             id: "main-line-item",
             amount: r,
             ...d
-        }), l = [...e, ...m];
+        }), n = [...e, ...m];
         return (0, i.jsx)(T.ID, {
             label: W.intl.string(q.default.eoXh7B),
-            lineItems: l,
-            currency: n,
-            hasSubscriptionCredit: t
+            lineItems: n,
+            currency: t
         })
     }
     return (0, i.jsxs)(U.Yx, {
@@ -248,7 +246,7 @@ function z(e) {
         }), (0, i.jsx)(U.f0, {
             ...d
         }), m.map(e => (0, i.jsx)(U.oR, {
-            label: (0, i.jsx)(R.sw, {
+            label: (0, i.jsx)(C.sw, {
                 label: e.label,
                 tooltipText: e.tooltip ?? void 0
             }),
@@ -270,7 +268,7 @@ function X(e) {
         priceOptions: s,
         shouldUseUnifiedCheckoutUI: u
     } = e;
-    return null != t ? (0, i.jsx)(R.m0, {
+    return null != t ? (0, i.jsx)(C.m0, {
         premiumSubscription: t,
         proratedInvoice: n,
         renewalInvoice: r,
@@ -279,7 +277,7 @@ function X(e) {
         isPrepaidPaymentSource: l,
         isTrial: a,
         shouldUseUnifiedCheckoutUI: u
-    }) : (0, i.jsx)(R.m0, {
+    }) : (0, i.jsx)(C.m0, {
         renewalInvoice: r,
         priceOptions: s,
         isPrepaidPaymentSource: l,
@@ -301,7 +299,7 @@ function Q(e) {
         onPaymentSourceAdd: T,
         onPurchaseTermsChange: b,
         legalTermsNodeRef: U,
-        hasLegalTermsFlash: C
+        hasLegalTermsFlash: R
     } = e, D = (0, v.D7)({
         location: "GuildBoostingReview"
     }), w = function(e) {
@@ -424,7 +422,7 @@ function Q(e) {
                 startDate: a.subscriptionPeriodEnd
             }
         }({
-            hasLegalTermsFlash: C,
+            hasLegalTermsFlash: R,
             legalTermsNodeRef: U,
             onPurchaseTermsChange: b,
             premiumSubscriptionPlan: m,
@@ -469,7 +467,7 @@ function Q(e) {
                 }),
                 j = b.find(e => e.type === p.iS.SUBSCRIPTION_PLAN),
                 U = b.find(e => e.type === p.iS.ENTITLEMENT),
-                C = I.subscriptionPlanPrice * x;
+                R = I.subscriptionPlanPrice * x;
             return {
                 addedQuantity: x,
                 guildBoostingSubscriptionPlan: u,
@@ -477,14 +475,14 @@ function Q(e) {
                 isReverseTrial: c,
                 formattedGuildBoostPrice: g,
                 formattedGuildBoostRate: h,
-                formattedOriginalAmountGuildBoostRate: (0, k.CE)((0, k.$g)(C, i.currency), d, m),
+                formattedOriginalAmountGuildBoostRate: (0, k.CE)((0, k.$g)(R, i.currency), d, m),
                 formattedTotal: P,
                 basePlanAdjustment: f,
                 basePlanInvoiceItems: S,
                 guildBoostingAdjustment: T,
                 subscriptionDiscount: j,
                 entitlementDiscount: U,
-                originalAmount: C,
+                originalAmount: R,
                 premiumSubscription: t,
                 proratedInvoicePreview: i,
                 renewalInvoicePreview: r,
@@ -518,7 +516,7 @@ function Q(e) {
                 text: J(i.currentPeriodEnd)
             };
             if (a) return null;
-            let s = (0, R.DK)({
+            let s = (0, C.DK)({
                 proratedInvoice: r,
                 renewalInvoice: l
             });

@@ -32,8 +32,8 @@ function b(e) {
         priceTiers: a,
         onDeleteEditState: b,
         groupListingId: T,
-        onBeforeDispatchNewListing: C,
-        onAfterDispatchNewListing: I
+        onBeforeDispatchNewListing: I,
+        onAfterDispatchNewListing: C
     } = e, [v, S] = s.useState(n), y = (0, d.bG)([h.A], () => h.A.getSubscriptionListing(v)), R = null == y, [O, G] = s.useState(R), L = y?.subscription_plans[0], D = y?.published ?? !1, M = y?.archived ?? !1, k = !M && !D && void 0 !== y, U = void 0 === y, P = (0, _.gN)(), [w] = A.tx(v), [B] = A.bL(v), [F] = A.I8(v), [H] = A.lK(v, 1024), V = "" !== w ? w : N.intl.string(N.t.QWhe9G), z = "" !== w && null != H && "" !== F && null != B && !P, W = A.rf(v), {
         loading: Y,
         error: K,
@@ -101,9 +101,9 @@ function b(e) {
                         guildId: t,
                         editStateId: v,
                         groupListingId: T,
-                        onBeforeDispatchNewListing: C,
+                        onBeforeDispatchNewListing: I,
                         onAfterDispatchNewListing: e => {
-                            S(e.id), I?.(e)
+                            S(e.id), C?.(e)
                         }
                     }),
                     disabled: !z || !W,

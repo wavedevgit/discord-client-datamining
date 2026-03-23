@@ -1,6 +1,6 @@
 /** chunk id: 485394 params = (module,exports,require) **/
 t.d(n, {
-    Ay: () => b,
+    Ay: () => m,
     K7: () => p
 });
 var a = t(311907),
@@ -19,9 +19,9 @@ function p(e) {
     let [n, t, a, p] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [l.Ay, o.A, s.A, r.A];
     if ((0, d.AZ)(e)) return !1;
     let {
-        guild_id: b,
-        channel_id: m
-    } = e, x = e.entity_type === u.Ps.EXTERNAL ? n.getDefaultChannel(e.guild_id) : t.getChannel(m), C = a.getGuild(b), g = p.getStageInstanceByChannel(m);
+        guild_id: m,
+        channel_id: b
+    } = e, x = e.entity_type === u.Ps.EXTERNAL ? n.getDefaultChannel(e.guild_id) : t.getChannel(b), C = a.getGuild(m), g = p.getStageInstanceByChannel(b);
     return !!(0, i.K)(c.A, C, x, g) && null != x && function(e) {
         let [n] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [o.A], {
             entityType: t,
@@ -36,6 +36,6 @@ function p(e) {
     }(e, [t])
 }
 
-function b(e) {
+function m(e) {
     return (0, a.bG)([l.Ay, o.A, s.A, r.A], () => p(e, [l.Ay, o.A, s.A, r.A]), [e])
 }

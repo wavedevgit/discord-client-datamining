@@ -60,8 +60,8 @@ let S = r.Ay.connectStores([g.A], () => ({
             maxAge: j,
             maxUses: R,
             networkError: G,
-            showVanityURL: V,
-            flags: U
+            showVanityURL: U,
+            flags: V
         } = u, w = i.useCallback(() => {
             h.default.track(x.HAw.COPY_INSTANT_INVITE, {
                 server: c.A.getGuildId(),
@@ -81,19 +81,19 @@ let S = r.Ay.connectStores([g.A], () => ({
                 onCopy: w,
                 disabled: b
             }), g && (0, l.jsx)(d.dOG, {
-                checked: (0, a.Lt)(U, s.Q.IS_APPLICATION_BYPASS),
-                onChange: e => y((0, a.lA)(U, s.Q.IS_APPLICATION_BYPASS, e)),
+                checked: (0, a.Lt)(V, s.Q.IS_APPLICATION_BYPASS),
+                onChange: e => y((0, a.lA)(V, s.Q.IS_APPLICATION_BYPASS, e)),
                 disabled: b,
                 label: m.intl.string(m.t["1i1bUl"]),
                 description: m.intl.string(m.t["jvd/LF"])
-            }), n || V ? null : (0, l.jsxs)(d.Text, {
+            }), n || U ? null : (0, l.jsxs)(d.Text, {
                 variant: "text-xs/normal",
                 className: v.PJ,
                 children: [(0, A.Be)(j, R), " ", r ? (0, l.jsx)(d.MzZ, {
                     onClick: () => f(I.QR.SETTINGS),
                     children: m.intl.string(m.t["VNe8P/"])
                 }) : null]
-            }), !n && r && V ? (0, l.jsxs)(d.Text, {
+            }), !n && r && U ? (0, l.jsxs)(d.Text, {
                 variant: "text-xs/normal",
                 className: v.PJ,
                 children: [m.intl.string(m.t["0M2U95"]), " "]

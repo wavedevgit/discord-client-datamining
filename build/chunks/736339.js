@@ -1,7 +1,7 @@
 /** chunk id: 736339 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => T
+    A: () => b
 }), n(321073);
 var l = n(311907),
     s = n(73153),
@@ -40,7 +40,7 @@ function N(e, t) {
     }
     return !n[n.length - 1].hasMoreAfter
 }
-class b extends l.Ay.Store {
+class T extends l.Ay.Store {
     static displayName = "ConversationsStore";
     initialize() {
         this.waitFor(a.A)
@@ -87,7 +87,7 @@ class b extends l.Ay.Store {
         return d.has(e)
     }
 }
-let T = new b(s.h, {
+let b = new T(s.h, {
     CONVERSATIONS_FETCH_START: function(e) {
         let {
             channelId: t

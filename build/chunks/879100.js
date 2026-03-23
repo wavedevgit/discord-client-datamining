@@ -30,8 +30,8 @@ var i = n(627968),
     E = n(72140),
     N = n(773669),
     U = n(287809),
-    C = n(97352),
-    R = n(166403),
+    R = n(97352),
+    C = n(166403),
     _ = n(473145),
     D = n(975571),
     L = n(252424),
@@ -58,7 +58,7 @@ function q(e) {
         priceOptions: q
     } = e, {
         setInvoicePreview: K
-    } = (0, S.P5)(), H = (0, h.A)(), F = t.interval, J = t.intervalCount, $ = (0, o.bG)([C.A], () => C.A.getForSkuAndInterval((0, w.mH)(B.pe.GUILD), F, J)), Z = (0, o.bG)([U.default], () => U.default.getCurrentUser()), z = (0, v.A)({
+    } = (0, S.P5)(), H = (0, h.A)(), F = t.interval, J = t.intervalCount, $ = (0, o.bG)([R.A], () => R.A.getForSkuAndInterval((0, w.mH)(B.pe.GUILD), F, J)), Z = (0, o.bG)([U.default], () => U.default.getCurrentUser()), z = (0, v.A)({
         forceFetch: !1
     });
     u()(null != $, "Missing guildBoostingSubscriptionPlan");
@@ -97,7 +97,7 @@ function q(e) {
             currency: q.currency
         } : w.Ay.getPrice($.id, es, !1, q),
         ec = n * eo.amount,
-        ed = (0, o.bG)([R.A], () => R.A.inReverseTrial() && w.Ay.hasBoostDiscount(Z) && null != P),
+        ed = (0, o.bG)([C.A], () => C.A.inReverseTrial() && w.Ay.hasBoostDiscount(Z) && null != P),
         em = w.Ay.hasBoostDiscount(Z) && null != P && w.Ay.isPremiumAtLeast(w.Ay.getPremiumType(P.planId), B.PremiumTypes.TIER_1) ? Y.intl.format(Y.t.hf6YOY, {
             planName: w.Ay.getTierDisplayNameByPlanId(P.planId)
         }) : Y.intl.format(ea ? Y.t.ba1L74 : Y.t.fkffDT, {

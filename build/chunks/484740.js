@@ -30,8 +30,8 @@ function x(e, t) {
     null != p && x.push(p);
     let A = t.tags?.guild_connections === null,
         b = t.managed && !A,
-        _ = null != t && (0, c.Oy)(t);
-    return n || b || _ || x.push((0, i.jsx)(s.rXV, {
+        f = null != t && (0, c.Oy)(t);
+    return n || b || f || x.push((0, i.jsx)(s.rXV, {
         children: (0, i.jsx)(s.Drp, {
             id: "delete-role",
             label: g.intl.string(g.t.oyYWHE),

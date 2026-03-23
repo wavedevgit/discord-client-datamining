@@ -25,8 +25,8 @@ var i = n(627968),
     E = n(576705),
     b = n(954571),
     T = n(545868),
-    C = n(642133),
-    I = n(856644),
+    I = n(642133),
+    C = n(856644),
     v = n(359837),
     S = n(533448),
     y = n(927573),
@@ -46,7 +46,7 @@ function M(e) {
         renderHeader: o,
         headerHeight: c,
         query: u
-    } = e, m = (0, d.bG)([C.A], () => C.A.getRoleMemberCount(n.id), [n.id]), g = (0, d.bG)([E.A], () => E.A.getHighestRole(n), [n]), h = u.trim();
+    } = e, m = (0, d.bG)([I.A], () => I.A.getRoleMemberCount(n.id), [n.id]), g = (0, d.bG)([E.A], () => E.A.getHighestRole(n), [n]), h = u.trim();
     s.useEffect(() => {
         (0, T.L)(n.id)
     }, [n.id]);
@@ -56,7 +56,7 @@ function M(e) {
             search_type: "Roles"
         }), _.current = !0)
     }, [u]);
-    let p = s.useMemo(() => r.filter(e => (0, I.Vh)(e, h)), [r, h]),
+    let p = s.useMemo(() => r.filter(e => (0, C.Vh)(e, h)), [r, h]),
         A = s.useMemo(() => [...r, l], [r, l]),
         {
             draggingId: f,
@@ -124,8 +124,8 @@ function U(e) {
         disableHover: E,
         disableDrag: b,
         setEditRoleId: T,
-        setSelectedSection: C
-    } = e, I = (0, v.c)(l, d, t), S = null != I, [R, M] = s.useState(!1), k = s.useMemo(() => ({
+        setSelectedSection: I
+    } = e, C = (0, v.c)(l, d, t), S = null != C, [R, M] = s.useState(!1), k = s.useMemo(() => ({
         type: D,
         item: () => (A(t.id), {
             id: t.id,
@@ -217,9 +217,9 @@ function U(e) {
                 size: 24,
                 className: G.UT,
                 defaultIconClassName: G.a
-            }), null != I ? (0, i.jsx)(v.A, {
+            }), null != C ? (0, i.jsx)(v.A, {
                 className: G.s2,
-                tooltipText: I
+                tooltipText: C
             }) : null, (0, i.jsx)(m.Text, {
                 className: G.S3,
                 color: "text-strong",
@@ -238,7 +238,7 @@ function U(e) {
             children: (0, i.jsxs)(m.DUT, {
                 className: r()(G.Tb, L.Hp),
                 onClick: function() {
-                    W(), C(y.T$.MEMBERS)
+                    W(), I(y.T$.MEMBERS)
                 },
                 children: [(0, i.jsx)(m.Text, {
                     variant: "text-md/normal",

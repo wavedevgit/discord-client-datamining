@@ -242,7 +242,7 @@ function d(e, t) {
                 }, 16)
             }), e.preventDefault(), e.stopPropagation())
         }, [l, s, u, d.length, o]),
-        C = i.useCallback(e => {
+        I = i.useCallback(e => {
             e.relatedTarget !== e.currentTarget && N(e, !1, !1)
         }, [N]);
     return {
@@ -262,6 +262,6 @@ function d(e, t) {
         handleSelectTag: p,
         handleUnselectTag: A,
         handleResetTagSelections: f,
-        handleInputBlurEvent: C
+        handleInputBlurEvent: I
     }
 }

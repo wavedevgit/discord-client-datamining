@@ -1,6 +1,6 @@
 /** chunk id: 969756 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => f
 });
 var i = n(627968),
     l = n(64700),
@@ -48,7 +48,7 @@ function b(e) {
     })
 }
 
-function _(e) {
+function f(e) {
     let {
         guild: t
     } = e, n = (0, m.A)(t.id), s = a().groupBy(n, e => e.linkedLobby?.application_id), d = Object.keys(s);

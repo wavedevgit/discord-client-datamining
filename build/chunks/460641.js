@@ -22,9 +22,9 @@ function h(e) {
             editedWebhook: p,
             selectableWebhookChannels: A,
             errors: b,
-            canNavigate: _
+            canNavigate: f
         } = e,
-        f = (0, a.Ay)();
+        _ = (0, a.Ay)();
     return (0, i.jsxs)("div", {
         children: [(0, i.jsx)(s.Text, {
             variant: "text-sm/normal",
@@ -38,8 +38,8 @@ function h(e) {
             editedWebhook: p,
             selectableWebhookChannels: A,
             errors: b,
-            canNavigate: _
-        }) : (t = () => open(o.A.getArticleURL(c.MVz.CHANNEL_FOLLOWING)), n = (0, l.Mw)(f) ? g : x, (0, i.jsxs)(r.A, {
+            canNavigate: f
+        }) : (t = () => open(o.A.getArticleURL(c.MVz.CHANNEL_FOLLOWING)), n = (0, l.Mw)(_) ? g : x, (0, i.jsxs)(r.A, {
             direction: r.A.Direction.VERTICAL,
             align: r.A.Align.CENTER,
             children: [(0, i.jsx)("img", {

@@ -55,7 +55,7 @@ let T = [{
         faded: !0,
         rightAlign: !0
     }],
-    C = e => {
+    I = e => {
         let {
             icon: t,
             color: n,
@@ -84,7 +84,7 @@ let T = [{
             })]
         })
     },
-    I = e => {
+    C = e => {
         let {
             iconSrc: t,
             name: n,
@@ -128,7 +128,7 @@ let T = [{
             children: [(0, i.jsxs)("div", {
                 className: A.vK,
                 ref: e => b(e),
-                children: [T.map(e => (0, i.jsx)(I, {
+                children: [T.map(e => (0, i.jsx)(C, {
                     ...e,
                     imageCoordinates: [n, r]
                 }, e.name)), (0, i.jsx)("img", {
@@ -215,7 +215,7 @@ let T = [{
                     color: o.A.unsafe_rawColors.RED_360.css,
                     header: p.intl.string(p.t.W2kLJC),
                     body: p.intl.string(p.t.hyNkHz)
-                }].map((e, t) => (0, i.jsx)(C, {
+                }].map((e, t) => (0, i.jsx)(I, {
                     ...e
                 }, t))
             })]

@@ -25,8 +25,8 @@ var i = n(627968),
     E = n(403362),
     b = n(427262),
     T = n(555337),
-    C = n(276373),
-    I = n(523599),
+    I = n(276373),
+    C = n(523599),
     v = n(438407),
     S = n(258665),
     y = n(652215),
@@ -288,7 +288,7 @@ class M extends s.PureComponent {
             moderators: s
         } = this.props;
         if (t) return null;
-        let l = C.ACTION_FILTER_ITEMS(),
+        let l = I.ACTION_FILTER_ITEMS(),
             r = l.find(t => {
                 let {
                     value: n
@@ -494,23 +494,23 @@ class M extends s.PureComponent {
         this._lastExpandedRef = e
     }
 }
-let k = d.Ay.connectStores([I.A, T.A, f.A, h.A, j.A, N.default], () => {
+let k = d.Ay.connectStores([C.A, T.A, f.A, h.A, j.A, N.default], () => {
     let e = T.A.getGuildId(),
         t = f.A.getGuild(e),
-        n = I.A.logs;
+        n = C.A.logs;
     return {
         guildId: e,
         guild: t,
-        moderators: I.A.userIds.map(e => N.default.getUser(e)).filter(E.Vq),
-        isInitialLoading: I.A.isInitialLoading,
-        isLoading: I.A.isLoading,
-        isLoadingNextPage: I.A.isLoadingNextPage,
-        showLoadMore: I.A.groupedFetchCount > 2,
-        hasError: I.A.hasError,
-        hasOlderLogs: I.A.hasOlderLogs,
-        logs: null != n && null != t ? C.transformLogs(n, t) : [],
-        actionFilter: I.A.actionFilter,
-        userIdFilter: I.A.userIdFilter,
+        moderators: C.A.userIds.map(e => N.default.getUser(e)).filter(E.Vq),
+        isInitialLoading: C.A.isInitialLoading,
+        isLoading: C.A.isLoading,
+        isLoadingNextPage: C.A.isLoadingNextPage,
+        showLoadMore: C.A.groupedFetchCount > 2,
+        hasError: C.A.hasError,
+        hasOlderLogs: C.A.hasOlderLogs,
+        logs: null != n && null != t ? I.transformLogs(n, t) : [],
+        actionFilter: C.A.actionFilter,
+        userIdFilter: C.A.userIdFilter,
         theme: h.A.theme,
         hide: j.A.enabled
     }

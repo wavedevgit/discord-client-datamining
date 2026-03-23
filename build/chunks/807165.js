@@ -1,8 +1,8 @@
 /** chunk id: 807165 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => I,
-    W: () => C
+    A: () => C,
+    W: () => I
 });
 var i = n(627968),
     s = n(64700),
@@ -29,7 +29,7 @@ var i = n(627968),
 function T(e) {
     x.A.selectRole(e)
 }
-let C = () => {
+let I = () => {
     let {
         guild: e
     } = (0, a.cf)([h.A], () => h.A.getProps()), t = (0, a.bG)([p.A], () => p.A.formState), n = (0, a.bG)([p.A], () => p.A.errorMessage);
@@ -47,7 +47,7 @@ let C = () => {
     })
 };
 
-function I(e) {
+function C(e) {
     let {
         refToScroller: t
     } = e, {
@@ -69,20 +69,20 @@ function I(e) {
         let e = m.A.getMemberCount(n.id);
         null != e && e <= A.gz && d.A.requestMembers(n.id, "", 0, !1)
     });
-    let [C, I] = s.useState(E.T$.DISPLAY);
+    let [I, C] = s.useState(E.T$.DISPLAY);
     return (s.useEffect(() => {
-        null == x && I(E.T$.DISPLAY)
+        null == x && C(E.T$.DISPLAY)
     }, [x]), null != x) ? (0, i.jsx)(f.A, {
         editRoleId: x,
         setEditRoleId: T,
-        selectedSection: C,
-        setSelectedSection: I
+        selectedSection: I,
+        setSelectedSection: C
     }) : _ ? (0, i.jsx)(N.A, {
         setEditRoleId: T,
         guild: n,
         everyoneRole: o,
         otherRoles: g,
-        setSelectedSection: I,
+        setSelectedSection: C,
         refToScroller: t
     }) : (0, i.jsx)(j.A, {
         guild: n,

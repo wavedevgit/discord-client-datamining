@@ -25,8 +25,8 @@ var i = n(627968),
     E = n(856644),
     b = n(785312),
     T = n(316506),
-    C = n(981634),
-    I = n(927573),
+    I = n(981634),
+    C = n(927573),
     v = n(652215),
     S = n(985018),
     y = n(727938),
@@ -123,7 +123,7 @@ function G(e) {
                 innerRef: x,
                 className: y.TL,
                 onContextMenu: f,
-                children: [(0, i.jsx)(C.A, {
+                children: [(0, i.jsx)(I.A, {
                     className: y.bu,
                     avatarURL: t.avatarURL,
                     name: t.name,
@@ -270,7 +270,7 @@ function k(e) {
     } = (0, b.A)(0), {
         scrolledToTop: h,
         handleScroll: _
-    } = (0, T.u)(), p = l.managed || a, j = (0, E.K5)(t.id, l.id), N = (0, o.bG)([f.A], () => f.A.getRoleMemberCount(t.id)?.[l.id] ?? 0) > j.length, C = () => {
+    } = (0, T.u)(), p = l.managed || a, j = (0, E.K5)(t.id, l.id), N = (0, o.bG)([f.A], () => f.A.getRoleMemberCount(t.id)?.[l.id] ?? 0) > j.length, I = () => {
         A.default.track(v.HAw.OPEN_MODAL, {
             type: "Add Role Members",
             location_page: "Role Settings",
@@ -300,13 +300,13 @@ function k(e) {
                     children: [(0, i.jsx)(T.A, {
                         guild: t,
                         role: l,
-                        selectedSection: I.T$.MEMBERS,
+                        selectedSection: C.T$.MEMBERS,
                         setSelectedSection: d
                     }), (0, i.jsx)(M, {
                         query: u,
                         setQuery: m,
                         locked: p,
-                        handleAddClick: C
+                        handleAddClick: I
                     }), N ? (0, i.jsx)(c.po8, {
                         className: y.v6,
                         messageType: c.YCn.INFO,
@@ -322,7 +322,7 @@ function k(e) {
             locked: p,
             onScroll: _,
             roleMembers: j,
-            handleAddClick: C
+            handleAddClick: I
         })]
     })
 }

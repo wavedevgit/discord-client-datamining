@@ -23,11 +23,11 @@ function h(e) {
         editedWebhook: p,
         errors: A,
         canNavigate: b
-    } = e, _ = l.useMemo(() => Object.values(n).map(e => ({
+    } = e, f = l.useMemo(() => Object.values(n).map(e => ({
         id: e.id,
         value: e.id,
         label: (0, r.m1)(e, d.default, o.A, !0)
-    })), [n]), f = l.useMemo(() => {
+    })), [n]), _ = l.useMemo(() => {
         let e = {};
         for (let i of t)
             if (i.channel_id in e) e[i.channel_id].webhooks.push(i);
@@ -43,7 +43,7 @@ function h(e) {
     }, [b, p]);
     return (0, i.jsx)("div", {
         className: x.__invalid_list,
-        children: f.map(e => {
+        children: _.map(e => {
             let {
                 channel: t,
                 webhooks: n
@@ -92,7 +92,7 @@ function h(e) {
             }({
                 channel: t,
                 webhooks: n,
-                channelOptions: _,
+                channelOptions: f,
                 lastCreatedWebhookId: h,
                 editedWebhook: p,
                 errors: A,

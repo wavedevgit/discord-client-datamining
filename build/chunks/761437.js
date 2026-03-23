@@ -1,6 +1,6 @@
 /** chunk id: 761437 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => f
 });
 var i = n(627968),
     l = n(64700),
@@ -19,10 +19,10 @@ var i = n(627968),
     A = n(734087),
     b = n(609621);
 
-function _(e) {
+function f(e) {
     let t, n, {
-            guild: _,
-            channel: f,
+            guild: f,
+            channel: _,
             customWebhooks: N,
             editedWebhook: j,
             selectableWebhookChannels: T,
@@ -33,14 +33,14 @@ function _(e) {
         E = (0, c.Ay)(),
         [S, y] = l.useState(null),
         [O, w] = l.useState(null);
-    if (null != f) n = f;
+    if (null != _) n = _;
     else {
         let e = Object.values(T);
         n = e.length > 0 ? e[0] : null
     }
     let R = l.useCallback(async () => {
         if (I() && null !== n) {
-            let e = await o.A.create(_.id, n.id).catch(e => {
+            let e = await o.A.create(f.id, n.id).catch(e => {
                 let {
                     body: t,
                     status: n
@@ -58,7 +58,7 @@ function _(e) {
             });
             null != e && (w(e.id), y(e))
         }
-    }, [I, n, _]);
+    }, [I, n, f]);
     (0, d.Ay)(() => {
         0 === N.length && R()
     });

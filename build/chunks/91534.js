@@ -1,7 +1,7 @@
 /** chunk id: 91534 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => C
+    A: () => I
 });
 var i = n(627968),
     s = n(311907),
@@ -115,7 +115,7 @@ let N = {
             }
         }))
     },
-    C = () => {
+    I = () => {
         let e = (0, s.bG)([p.A], () => p.A.getGuild()),
             t = (0, s.bG)([m.A], () => null != e ? m.A.getStickersByGuildId(e.id) ?? [] : [], [e]),
             {

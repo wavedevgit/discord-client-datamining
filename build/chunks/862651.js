@@ -33,7 +33,7 @@ function _() {
         let t = new Set(_);
         t.delete(e), p(t)
     }
-    let C = (0, a.gN)();
+    let I = (0, a.gN)();
     return (0, i.jsxs)(l.D0$, {
         label: h.intl.string(h.t["D0qeO+"]),
         description: h.intl.format(h.t.zuwely, {
@@ -42,7 +42,7 @@ function _() {
         helperText: h.intl.format(h.t.sEkgBk, {
             handleTransitionToManageEmoji: j
         }),
-        disabled: C,
+        disabled: I,
         children: [(0, i.jsx)(g.d, {
             tierEmojiIds: _,
             guildId: t,
@@ -78,7 +78,7 @@ function _() {
                     })
                 })
             },
-            disabled: C,
+            disabled: I,
             children: h.intl.string(h.t.ouOOVy)
         })]
     })

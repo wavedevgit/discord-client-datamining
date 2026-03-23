@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(576705),
     A = n(542580),
     b = n(803378),
-    _ = n(615723),
-    f = n(604870),
+    f = n(615723),
+    _ = n(604870),
     N = n(664675),
     j = n(541956),
     T = n(636547),
@@ -32,15 +32,15 @@ function S(e) {
     let {
         applicationId: t,
         commandId: s,
-        guildId: _,
-        inModal: f,
+        guildId: f,
+        inModal: _,
         editedTargetPermissions: S,
         originalApplicationPermissions: w,
         originalCommandPermissions: R,
         selectedPermissionCount: k
     } = e, L = (0, o.bG)([b.A], () => null == s ? null : b.A.getCommand(s), [s]), M = L?.defaultMemberPermissions != null, G = (0, o.bG)([h.A, g.Ay, p.A], () => {
-        let e = h.A.getGuild(_),
-            t = g.Ay.getSelfMember(_);
+        let e = h.A.getGuild(f),
+            t = g.Ay.getSelfMember(f);
         return null != e && null != t && (0, u.zl)({
             PermissionStore: p.A,
             guild: e,
@@ -49,14 +49,14 @@ function S(e) {
             commandLevelPermissions: R,
             defaultMemberPermissions: L?.defaultMemberPermissions
         })
-    }, [_, L, w, R]), U = s ?? t, [D, P] = l.useMemo(() => {
+    }, [f, L, w, R]), U = s ?? t, [D, P] = l.useMemo(() => {
         let e = {},
             t = {};
         for (let [n, i] of Object.entries(S)) i.type === c.RA.CHANNEL ? e[n] = i : t[n] = i;
         return [e, t]
     }, [S]), B = l.useCallback(e => {
-        let t = h.A.getGuild(_),
-            n = g.Ay.getSelfMember(_);
+        let t = h.A.getGuild(f),
+            n = g.Ay.getSelfMember(f);
         return null != t && null != n && (null != s ? (0, u.zl)({
             PermissionStore: p.A,
             guild: t,
@@ -70,28 +70,28 @@ function S(e) {
             selfMember: n,
             applicationLevelPermissions: e
         }))
-    }, [_, L, s, w]), W = l.useCallback((e, t) => {
+    }, [f, L, s, w]), W = l.useCallback((e, t) => {
         let n, i = null;
         if (0 !== t.length) {
             let e = S[t[0]];
             if (e.type === c.RA.USER) n = j.Q.REMOVE_SELF;
             else {
                 let t = e.id;
-                if (n = j.Q.REMOVE_ROLE, (0, m.N8)(_, t)) i = "@everyone";
+                if (n = j.Q.REMOVE_ROLE, (0, m.N8)(f, t)) i = "@everyone";
                 else {
-                    let e = x.A.getRole(_, t);
+                    let e = x.A.getRole(f, t);
                     i = null != e ? e.name : "role"
                 }
             }
         } else {
             let t = Object.values(e)[0].id;
-            if (n = j.Q.DENY_ROLE, (0, m.N8)(_, t)) i = "@everyone";
+            if (n = j.Q.DENY_ROLE, (0, m.N8)(f, t)) i = "@everyone";
             else {
-                let e = x.A.getRole(_, t);
+                let e = x.A.getRole(f, t);
                 i = null != e ? e.name : "role"
             }
         }(0, j.A)(n, i)
-    }, [_, S]), H = l.useCallback((e, n) => {
+    }, [f, S]), H = l.useCallback((e, n) => {
         let i = {};
         for (let [e, t] of Object.entries(S)) i[e] = {
             id: t.id,
@@ -107,7 +107,7 @@ function S(e) {
             } = await n.e("52532").then(n.bind(n, 192991));
             return n => (0, i.jsx)(t, {
                 editPermissions: H,
-                guildId: _,
+                guildId: f,
                 headerText: I.intl.string(I.t["i1c+kV"]),
                 hasMemberSearch: !1,
                 overwrittenKeys: e,
@@ -117,7 +117,7 @@ function S(e) {
                 ...n
             })
         })
-    }, [H, D, _, k]), z = l.useCallback(() => {
+    }, [H, D, f, k]), z = l.useCallback(() => {
         let e = Object.keys(P);
         return (0, d.mMO)(async () => {
             let {
@@ -125,7 +125,7 @@ function S(e) {
             } = await n.e("52532").then(n.bind(n, 192991));
             return n => (0, i.jsx)(t, {
                 editPermissions: H,
-                guildId: _,
+                guildId: f,
                 hasMemberSearch: !0,
                 headerText: I.intl.string(I.t["56jRn8"]),
                 overwrittenKeys: e,
@@ -135,7 +135,7 @@ function S(e) {
                 ...n
             })
         })
-    }, [H, _, P, k]), F = l.useCallback(() => (0, d.mMO)(async () => {
+    }, [H, f, P, k]), F = l.useCallback(() => (0, d.mMO)(async () => {
         let {
             default: e
         } = await n.e("29384").then(n.bind(n, 519387)), t = L.defaultMemberPermissions;
@@ -193,12 +193,12 @@ function S(e) {
                         text: e.buttonText
                     })
                 }),
-                inModal: f,
+                inModal: _,
                 title: e.title,
                 children: (0, i.jsx)("div", {
-                    className: f ? void 0 : E.qI,
+                    className: _ ? void 0 : E.qI,
                     children: (0, i.jsx)(N.A, {
-                        guildId: _,
+                        guildId: f,
                         commandId: s,
                         noneSelectedText: e.noneSelectedText,
                         overwrites: e.overwrites,
@@ -212,7 +212,7 @@ function S(e) {
 }
 
 function y(e) {
-    let t = (0, _.Q)(e);
+    let t = (0, f.Q)(e);
     return {
         ...t,
         results: t.results.map(e => ({
@@ -223,7 +223,7 @@ function y(e) {
 }
 
 function O(e) {
-    let t = (0, f.t)(e);
+    let t = (0, _.t)(e);
     return {
         ...t,
         results: t.results.roles.map(e => ({

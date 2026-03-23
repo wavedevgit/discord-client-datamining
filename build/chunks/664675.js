@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(381616),
     A = n(961350),
     b = n(317525),
-    _ = n(71393),
-    f = n(287809),
+    f = n(71393),
+    _ = n(287809),
     N = n(954571),
     j = n(562153),
     T = n(661191),
@@ -40,7 +40,7 @@ function R(e) {
         noneSelectedText: o,
         overwrites: d,
         hasAccessToMutatePermissions: m
-    } = e, h = (0, r.bG)([_.A], () => _.A.getGuild(s));
+    } = e, h = (0, r.bG)([f.A], () => f.A.getGuild(s));
     a()(null != h, "");
     let A = (0, r.bG)([b.A], () => b.A.getSortedRoles(s)),
         [N, E] = l.useState(new Set),
@@ -55,8 +55,8 @@ function R(e) {
                         return function(e, t, n) {
                             let i = Number(e.canWrite) - Number(t.canWrite);
                             if (0 !== i) return i;
-                            let l = f.default.getUser(e.id),
-                                s = f.default.getUser(t.id);
+                            let l = _.default.getUser(e.id),
+                                s = _.default.getUser(t.id);
                             if (null != l && null != s) {
                                 let e = j.Ay.getName(n, void 0, l),
                                     t = j.Ay.getName(n, void 0, s);
@@ -126,12 +126,12 @@ function k(e) {
             canShowMigrationTooltip: p,
             hasAccessToMutatePermissions: b
         } = e,
-        _ = c.id === n.id || c.id === (0, x.Ap)(n.id),
-        f = u?.application?.bot?.username,
+        f = c.id === n.id || c.id === (0, x.Ap)(n.id),
+        _ = u?.application?.bot?.username,
         j = !c.canWrite || !b,
         T = A.default.getId();
     b ? c.canWrite || (c.type === g.RA.USER ? t = c.id === T ? O.intl.string(O.t["1VF/0x"]) : O.intl.string(O.t.P1GnEd) : c.type === g.RA.ROLE && (t = O.intl.string(O.t.mcAijf))) : t = null != s ? O.intl.string(O.t.tybdas) : O.intl.string(O.t["z2hjk/"]);
-    let v = p && null != u && c.id === n.id && void 0 !== f && !c.permission;
+    let v = p && null != u && c.id === n.id && void 0 !== _ && !c.permission;
     l.useEffect(() => {
         v && N.default.track(y.HAw.COMMANDS_MIGRATION_TOOLTIP_VIEWED, {
             ...(0, m.H$)(n.id),
@@ -159,7 +159,7 @@ function k(e) {
             targetElementRef: C,
             title: O.intl.string(O.t.ufFDiC),
             body: O.intl.format(O.t.pW4Crz, {
-                botName: f,
+                botName: _,
                 link: "https://discord.com/blog/welcome-to-the-new-era-of-discord-apps/"
             }),
             position: "bottom",
@@ -185,7 +185,7 @@ function k(e) {
             className: w.ev,
             children: [(0, i.jsx)(L, {
                 commandId: s,
-                isSentinel: _,
+                isSentinel: f,
                 isDisabled: !b,
                 onRemove: r
             }), I, v && R]

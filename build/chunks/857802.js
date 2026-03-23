@@ -25,8 +25,8 @@ var i = n(627968),
     E = n(781289),
     b = n(652215),
     T = n(705751),
-    C = n(269927),
-    I = n(985018),
+    I = n(269927),
+    C = n(985018),
     v = n(486984);
 
 function S(e) {
@@ -37,7 +37,7 @@ function S(e) {
     return (0, i.jsx)("div", {
         className: v.xF,
         children: (0, i.jsx)(r.$nd, {
-            text: I.intl.string(I.t["5k6FfR"]),
+            text: C.intl.string(C.t["5k6FfR"]),
             disabled: !n,
             onClick: t,
             fullWidth: !0
@@ -62,8 +62,8 @@ function y(e) {
         value: e.id
     })), [n]), p = async () => {
         await u(t, o, T.S7.GUILD_ROLE_SUBSCRIPTIONS) && (x(t.id), (0, N.E)({
-            title: I.intl.string(I.t["AP/2qe"]),
-            body: I.intl.string(I.t.kHMgaK)
+            title: C.intl.string(C.t["AP/2qe"]),
+            body: C.intl.string(C.t.kHMgaK)
         }))
     };
     return (0, i.jsxs)(i.Fragment, {
@@ -72,14 +72,14 @@ function y(e) {
             children: [(0, i.jsx)(a.l6P, {
                 selectionMode: "single",
                 options: _,
-                placeholder: I.intl.string(I.t.QXf93A),
+                placeholder: C.intl.string(C.t.QXf93A),
                 value: o,
                 disabled: 0 === _.length || h || !l,
                 onSelectionChange: d,
-                label: I.intl.string(I.t.QXf93A),
+                label: C.intl.string(C.t.QXf93A),
                 hideLabel: !0
             }), (0, i.jsx)(r.$nd, {
-                text: I.intl.string(I.t["9HU3ZV"]),
+                text: C.intl.string(C.t["9HU3ZV"]),
                 onClick: p,
                 loading: m,
                 disabled: null == o || h || !l
@@ -99,7 +99,7 @@ let R = e => {
         loading: N
     } = (0, x.A)({
         refreshOnDepChange: f
-    }), T = s.useMemo(() => j.filter(e => e.payout_account_status !== C.y.BLOCKED && (0, g.y)(n?.id ?? b.dJq, e)), [j, n]), R = T.length > 0, O = s.useCallback(async () => {
+    }), T = s.useMemo(() => j.filter(e => e.payout_account_status !== I.y.BLOCKED && (0, g.y)(n?.id ?? b.dJq, e)), [j, n]), R = T.length > 0, O = s.useCallback(async () => {
         A.default.track(b.HAw.GUILD_ROLE_SUBSCRIPTION_TEAM_SETUP_CLICKED, {
             is_onboarding_v2: c,
             has_eligible_team: R,
@@ -118,12 +118,12 @@ let R = e => {
             className: v.b8,
             children: (0, i.jsx)(a.wx6, {
                 type: "warning",
-                children: I.intl.string(I.t.t56qWO)
+                children: C.intl.string(C.t.t56qWO)
             })
         }), (0, i.jsx)(a.D0$, {
-            label: I.intl.string(I.t["sYLCY/"]),
+            label: C.intl.string(C.t["sYLCY/"]),
             disabled: !r,
-            description: I.intl.format(I.t["5mfqpW"], {
+            description: C.intl.format(C.t["5mfqpW"], {
                 onCreateTeamHook: G
             }),
             children: R ? (0, i.jsx)(y, {
@@ -135,7 +135,7 @@ let R = e => {
                 isGuildOwner: r
             })
         }), (0, i.jsx)(a.D0$, {
-            label: I.intl.string(I.t["0n7R2X"]),
+            label: C.intl.string(C.t["0n7R2X"]),
             children: (0, i.jsx)(E.A, {
                 guildId: t.id,
                 allPeriods: []

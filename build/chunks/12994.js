@@ -23,7 +23,7 @@ function m(e) {
         helpText: p,
         errors: A,
         canNavigate: b
-    } = e, _ = r.A.get(g), f = l.useCallback(async e => {
+    } = e, f = r.A.get(g), _ = l.useCallback(async e => {
         b() && (await o.A.enableIntegration(m.id, e.type, e.id), a.A.startEditingIntegration(e.id))
     }, [b, m.id]), N = l.useCallback(e => {
         b() && (e.id === n?.id && a.A.stopEditingIntegration(), o.A.disableIntegration(m.id, e.id))
@@ -33,8 +33,8 @@ function m(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.A, {
             name: x,
-            icon: _?.icon.whiteSVG,
-            iconBackgroundColor: _?.color,
+            icon: f?.icon.whiteSVG,
+            iconBackgroundColor: f?.color,
             iconClassName: u.tV,
             description: h,
             isHeader: !0
@@ -50,7 +50,7 @@ function m(e) {
             editedIntegration: n,
             guild: m,
             isExpanded: n?.id === e.id,
-            onEnable: f,
+            onEnable: _,
             onDisable: N,
             onToggleExpand: () => j(e.id)
         }, e.id)), (0, i.jsx)(s.Text, {

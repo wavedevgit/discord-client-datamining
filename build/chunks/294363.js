@@ -26,8 +26,8 @@ var i = n(627968),
     E = n(997509),
     b = n(600955),
     T = n(652215),
-    C = n(985018),
-    I = n(690450);
+    I = n(985018),
+    C = n(690450);
 
 function v(e) {
     let {
@@ -51,25 +51,25 @@ function v(e) {
                 (0, c.zV)(T.HAw.GUILD_RAID_ALERTS_SETUP, n)
             }
         } catch (e) {
-            (0, d.showToast)((0, d.createToast)(C.intl.string(C.t["46Rs3v"]), d.ToastType.FAILURE)), j(!A)
+            (0, d.showToast)((0, d.createToast)(I.intl.string(I.t["46Rs3v"]), d.ToastType.FAILURE)), j(!A)
         }
     };
     return (0, i.jsxs)("div", {
-        className: r()(I.D5, a),
+        className: r()(C.D5, a),
         children: [(0, i.jsxs)("div", {
-            className: I.Ly,
+            className: C.Ly,
             children: [(0, i.jsx)(d.Heading, {
                 variant: "text-md/semibold",
                 color: "text-strong",
-                children: C.intl.string(C.t.Qp98s9)
+                children: I.intl.string(I.t.Qp98s9)
             }), (0, i.jsx)(d.Text, {
                 variant: "text-sm/medium",
                 color: "text-default",
-                children: C.intl.string(C.t.Mg843t)
+                children: I.intl.string(I.t.Mg843t)
             }), n || null == l ? null : (0, i.jsxs)(d.Text, {
                 color: "interactive-text-default",
                 variant: "text-xs/medium",
-                className: I.Lp,
+                className: C.Lp,
                 children: [(0, i.jsx)(d.N$i, {
                     size: "xxs",
                     color: "currentColor"
@@ -126,17 +126,17 @@ function S(e) {
                 (0, c.zV)(T.HAw.GUILD_RAID_ALERTS_SETUP, n)
             }
         } catch (e) {
-            (0, d.showToast)((0, d.createToast)(C.intl.string(C.t["46Rs3v"]), d.ToastType.FAILURE)), s(m)
+            (0, d.showToast)((0, d.createToast)(I.intl.string(I.t["46Rs3v"]), d.ToastType.FAILURE)), s(m)
         }
     };
     return (0, i.jsx)("div", {
-        className: r()(I.ho, l),
+        className: r()(C.ho, l),
         children: (0, i.jsx)("div", {
-            className: I.U,
+            className: C.U,
             children: (0, i.jsx)(d.ZiE, {
                 selectionMode: "single",
-                label: C.intl.string(C.t.sMkYE8),
-                helperText: C.intl.string(C.t["1QxN9N"]),
+                label: I.intl.string(I.t.sMkYE8),
+                helperText: I.intl.string(I.t["1QxN9N"]),
                 options: g,
                 onSelectionChange: _,
                 value: n,
@@ -175,12 +175,12 @@ function R(e) {
             isExpanded: !0,
             guild: t,
             selectedChannelId: l,
-            className: I.pN
+            className: C.pN
         }), (0, i.jsx)(S, {
             guild: t,
             selectedChannelId: l,
             setSelectedChannelId: r,
-            className: I.pN
+            className: C.pN
         })]
     })
 }

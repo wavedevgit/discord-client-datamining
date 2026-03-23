@@ -27,18 +27,18 @@ let A = function(e) {
         childrenExecutedCommand: v,
         childrenHeader: C,
         childrenSystemMessage: N,
-        childrenButtons: b,
-        childrenMessageContent: T,
-        childrenAccessories: E,
-        messageRef: j,
+        childrenButtons: T,
+        childrenMessageContent: b,
+        childrenAccessories: j,
+        messageRef: E,
         focusProps: I = {
             offset: {
                 left: 4,
                 right: 4
             }
         },
-        hasThread: _,
-        isSystemMessage: S,
+        hasThread: S,
+        isSystemMessage: _,
         hasReply: R,
         author: y,
         onMouseEnter: M,
@@ -67,21 +67,21 @@ let A = function(e) {
                     [g.VH]: f,
                     [g.E]: !n,
                     [g.GZ]: A,
-                    [g.pR]: _,
-                    [g.X4]: S,
+                    [g.pR]: S,
+                    [g.X4]: _,
                     [g.h8]: R
                 }),
-                ref: j,
+                ref: E,
                 ...w,
                 role: "article",
                 onMouseEnter: P,
                 onMouseLeave: U,
                 children: [x, v, (0, l.jsxs)("div", {
                     className: g.PG,
-                    children: [N, C, null == N && T]
-                }), E, null != b ? (0, l.jsx)("div", {
+                    children: [N, C, null == N && b]
+                }), j, null != T ? (0, l.jsx)("div", {
                     className: g.UD,
-                    children: b
+                    children: T
                 }) : null]
             })
         })

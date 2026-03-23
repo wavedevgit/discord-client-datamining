@@ -26,8 +26,8 @@ var i = n(627968),
     E = n(655943),
     b = n(82566),
     T = n(259866),
-    C = n(950358),
-    I = n(561108),
+    I = n(950358),
+    C = n(561108),
     v = n(191117),
     S = n(985018),
     y = n(894958),
@@ -177,7 +177,7 @@ function G(e) {
             }), g ? null : (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(O, {
                     guild: n
-                }), (0, i.jsx)(C.A, {
+                }), (0, i.jsx)(I.A, {
                     className: y.bE,
                     guild: n,
                     categories: d,
@@ -207,7 +207,7 @@ function G(e) {
                     })
                 })]
             })]
-        }), (0, i.jsx)(I.A, {
+        }), (0, i.jsx)(C.A, {
             guild: n,
             scrollToQuestions: () => {
                 null != m.current && m.current.scrollIntoView({

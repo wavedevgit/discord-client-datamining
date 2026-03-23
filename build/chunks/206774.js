@@ -25,8 +25,8 @@ var i = n(627968),
     E = n(541285),
     b = n(728713),
     T = n(927573),
-    C = n(652215),
-    I = n(326028);
+    I = n(652215),
+    C = n(326028);
 
 function v(e) {
     let t, {
@@ -63,7 +63,7 @@ function v(e) {
                 role: e,
                 editRoleId: t
             } = U.current, n = (0, A.L9)(v), i = h.A.getRoleMemberCount(y.id)?.[t] ?? 0;
-            g.default.track(C.HAw.ROLE_PAGE_VIEWED, {
+            g.default.track(I.HAw.ROLE_PAGE_VIEWED, {
                 tab_opened: n,
                 is_everyone: (0, c.N8)(y.id, t),
                 role_id: t,
@@ -116,14 +116,14 @@ function v(e) {
             (0, x.xb)(v)
     }
     return (0, i.jsxs)("div", {
-        className: I.MY,
+        className: C.MY,
         children: [(0, i.jsx)(b.A, {
             guild: y,
             currentRoleId: n,
             setCurrentRoleId: l,
             setSelectedSection: S
         }), (0, i.jsx)("div", {
-            className: I.hQ,
+            className: C.hQ,
             ref: D,
             children: (0, i.jsx)(o.xpW, {
                 containerRef: D,

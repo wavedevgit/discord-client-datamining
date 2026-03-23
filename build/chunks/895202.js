@@ -1,7 +1,7 @@
 /** chunk id: 895202 params = (module,exports,require) **/
 t.d(n, {
     A: () => E,
-    c: () => S
+    c: () => y
 });
 var a, i = t(627968),
     r = t(64700),
@@ -14,8 +14,8 @@ var a, i = t(627968),
     u = t(713654),
     h = t(931991),
     p = t(660110),
-    b = t(576705),
-    m = t(435328),
+    m = t(576705),
+    b = t(435328),
     x = t(530209),
     C = t(974930),
     g = t(428978),
@@ -27,15 +27,15 @@ var a, i = t(627968),
     j = t(652215),
     I = t(985018),
     U = t(340500),
-    S = ((a = {})[a.BANNER = 0] = "BANNER", a[a.THUMBNAIL = 1] = "THUMBNAIL", a);
+    y = ((a = {})[a.BANNER = 0] = "BANNER", a[a.THUMBNAIL = 1] = "THUMBNAIL", a);
 
-function y(e) {
+function S(e) {
     let {
         channel: n,
         onClick: t
     } = e, {
         canManageAllEvents: a
-    } = (0, h.nr)(n), o = (0, s.bG)([b.A], () => !n.isGuildVocal() || b.A.can(j.xBc.CONNECT, n), [n]), p = r.useMemo(() => (0, d.A)(n), [n]), m = r.useMemo(() => {
+    } = (0, h.nr)(n), o = (0, s.bG)([m.A], () => !n.isGuildVocal() || m.A.can(j.xBc.CONNECT, n), [n]), p = r.useMemo(() => (0, d.A)(n), [n]), b = r.useMemo(() => {
         let e = (0, u.gU)(n);
         return null != e ? r.createElement(e, {
             color: "currentColor",
@@ -57,7 +57,7 @@ function y(e) {
             children: [(0, i.jsx)(c.m_, {
                 text: I.intl.string(I.t["48WXaW"]),
                 shouldShow: a && p && o && null != t,
-                children: m
+                children: b
             }), (0, i.jsx)(_.Text, {
                 variant: "text-sm/normal",
                 color: "none",
@@ -76,7 +76,7 @@ function R(e) {
         location: r,
         isExternal: o
     } = e;
-    return null != n ? (0, i.jsx)(y, {
+    return null != n ? (0, i.jsx)(S, {
         channel: n,
         onClick: t
     }) : (0, i.jsxs)(_.DUT, {
@@ -91,7 +91,7 @@ function R(e) {
         }), (0, i.jsx)(_.Text, {
             className: o ? U.dC : U.h7,
             variant: "text-sm/normal",
-            children: (0, m.l)(r, !0)
+            children: (0, b.l)(r, !0)
         })]
     })
 }
@@ -110,8 +110,8 @@ function w(e) {
         onRsvpClick: u,
         onStartClick: h,
         onInviteClick: p,
-        onEndClick: b,
-        onJoinGuildClick: m
+        onEndClick: m,
+        onJoinGuildClick: b
     } = e, C = (0, x.D)(n, t), f = (0, g.Zq)({
         entityType: t,
         isJoined: a,
@@ -125,8 +125,8 @@ function w(e) {
         onRsvpClick: u,
         onStartClick: h,
         onInviteClick: p,
-        onEndClick: b,
-        onJoinGuildClick: m
+        onEndClick: m,
+        onJoinGuildClick: b
     });
     return (0, i.jsxs)(_.ButtonGroup, {
         fullWidth: !1,
@@ -151,14 +151,14 @@ function E(e) {
         imageLocation: d = 0,
         imageSource: u,
         isActive: h,
-        isUserLurking: b,
-        isJoined: m = !1,
+        isUserLurking: m,
+        isJoined: b = !1,
         isMember: x = !1,
         speakers: g,
         speakerCount: j,
         rsvped: I,
-        canInvite: S,
-        location: y,
+        canInvite: y,
+        location: S,
         truncate: E,
         onContextMenu: T,
         onJoinClick: B,
@@ -174,19 +174,19 @@ function E(e) {
         recurrenceRule: F,
         recurrenceId: J,
         hideAgeVerificationNotice: z
-    } = e, V = s === A.Ps.EXTERNAL, X = V ? e => e.stopPropagation() : void 0, Q = [];
+    } = e, X = s === A.Ps.EXTERNAL, Q = X ? e => e.stopPropagation() : void 0, V = [];
     if (null != F && null != event) {
         let e = (0, C.X7)(F);
-        Q = (0, C.er)(4, e, new Date(K.scheduled_start_time))
+        V = (0, C.er)(4, e, new Date(K.scheduled_start_time))
     }
-    let $ = Q.length > 0;
+    let $ = V.length > 0;
     return (0, i.jsxs)(_.sqX, {
         "aria-label": o,
         onClick: () => q?.(J),
         onContextMenu: T,
         className: l()(U.Nr, {
-            [U.oR]: m,
-            [U.hT]: b
+            [U.oR]: b,
+            [U.hT]: m
         }, n),
         children: [(0, i.jsxs)("div", {
             className: l()(U.Ms, {
@@ -222,20 +222,20 @@ function E(e) {
                 children: [(0, i.jsx)(R, {
                     channel: a,
                     onJoinClick: B,
-                    handleLocationClick: X,
-                    location: y,
-                    isExternal: V
+                    handleLocationClick: Q,
+                    location: S,
+                    isExternal: X
                 }), (0, i.jsx)("div", {
                     className: U.AQ,
                     children: (0, i.jsx)(w, {
                         channel: a,
                         entityType: s,
                         isActive: h,
-                        isJoined: m,
-                        isUserLurking: b,
+                        isJoined: b,
+                        isUserLurking: m,
                         isMember: x,
                         rsvped: I,
-                        canInvite: S,
+                        canInvite: y,
                         onContextMenu: T,
                         onRsvpClick: L,
                         onJoinGuildClick: D,

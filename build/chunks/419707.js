@@ -27,7 +27,7 @@ let m = s.memo(function(e) {
     } = (0, d.Ay)(), {
         ref: E,
         height: b = 0
-    } = (0, d.Ay)(), [T, C] = s.useState(l), I = (0, o.zhh)({
+    } = (0, d.Ay)(), [T, I] = s.useState(l), C = (0, o.zhh)({
         height: T ? b + N : N,
         config: {
             ...a.config.stiff,
@@ -41,7 +41,7 @@ let m = s.memo(function(e) {
         }
     }, _ || x ? "animate-never" : "respect-motion-settings");
     return s.useLayoutEffect(() => {
-        f(!1), C(l)
+        f(!1), I(l)
     }, [l]), s.useLayoutEffect(() => {
         let e = setTimeout(() => {
             p(!1)
@@ -56,7 +56,7 @@ let m = s.memo(function(e) {
             className: r()(u.N0, {
                 [u.Mm]: l && A
             }),
-            style: I,
+            style: C,
             children: [(0, i.jsx)(o.DUT, {
                 innerRef: j,
                 onClick: m ? void 0 : g,

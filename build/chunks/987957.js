@@ -29,8 +29,8 @@ let N = function(e) {
         onChange: E,
         onDelete: b,
         onDragStart: T,
-        onDragComplete: C,
-        onDragReset: I
+        onDragComplete: I,
+        onDragReset: C
     } = e, v = (0, a.bG)([h.A], () => h.A.getChannel(l.channelId)), S = (0, a.bG)([_.A], () => _.A.getGuild(t)), y = (0, a.bG)([A.A], () => A.A.getPendingData()[l.channelId]), {
         customEmoji: R,
         unicodeEmoji: O
@@ -49,8 +49,8 @@ let N = function(e) {
         index: N,
         optionId: l.channelId,
         onDragStart: T,
-        onDragComplete: C,
-        onDragReset: I
+        onDragComplete: I,
+        onDragReset: C
     }), B = s.useCallback(() => {
         if (null != t) return (0, d.mMO)(async () => {
             let {

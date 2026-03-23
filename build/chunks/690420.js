@@ -32,7 +32,7 @@ let m = s.memo(function(e) {
     s.useEffect(() => {
         m && _(t, !0)
     }, [m, t, _]);
-    let C = s.useCallback(() => {
+    let I = s.useCallback(() => {
         f ? g || _(null) : g ? E(() => {
             _(t)
         }) : _(t)
@@ -49,7 +49,7 @@ let m = s.memo(function(e) {
         }),
         isStuck: f && g,
         isExpanded: f,
-        onExpand: C,
+        onExpand: I,
         children: f && (0, i.jsx)(d.A, {
             rule: N,
             isLoading: p,

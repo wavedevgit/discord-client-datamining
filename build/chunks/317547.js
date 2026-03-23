@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     Ay: () => L,
-    Kh: () => C,
+    Kh: () => I,
     MD: () => y,
     fh: () => T
 }), n(321073);
@@ -37,7 +37,7 @@ let T = e => {
             children: t
         })
     },
-    C = e => {
+    I = e => {
         let {
             children: t
         } = e;
@@ -46,7 +46,7 @@ let T = e => {
             children: (0, x.$g)(t ?? 0, j.Yri.USD)
         })
     },
-    I = e => {
+    C = e => {
         let {
             children: t
         } = e;
@@ -156,13 +156,13 @@ let T = e => {
         render(e, t) {
             let {
                 expandedRows: n
-            } = t, s = [(0, i.jsx)(C, {
+            } = t, s = [(0, i.jsx)(I, {
                 children: e.amount
             }, e.key)];
             if (n.has(e.key))
                 for (let t in e.ppgs) {
                     let n = e.ppgs[t];
-                    s.push((0, i.jsx)(C, {
+                    s.push((0, i.jsx)(I, {
                         children: n?.amount
                     }, t))
                 }
@@ -179,7 +179,7 @@ let T = e => {
                 ppgDeferralReasons: s,
                 periodEndDate: l
             } = (0, g.Rs)(e);
-            return (0, i.jsx)(I, {
+            return (0, i.jsx)(C, {
                 children: ((e, t, n, s) => {
                     let l = null != s ? o()(s).add(15, "days").toISOString() : void 0,
                         r = (0, _.T4)(l, "MMM D");

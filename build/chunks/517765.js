@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(447066),
     A = n(320426),
     b = n(652215),
-    _ = n(985018),
-    f = n(979773);
+    f = n(985018),
+    _ = n(979773);
 
 function N(e) {
     let {
@@ -52,7 +52,7 @@ function N(e) {
             color: "currentColor",
             width: 10,
             height: 10,
-            className: f.OW
+            className: _.OW
         }) : null]
     }) : (0, i.jsx)(c.Button, {
         size: "sm",
@@ -70,8 +70,8 @@ function N(e) {
     }, [O, C?.application.id, G]);
     let B = G && (null != D.current || null != U.current) ? (0, i.jsx)(d.AM, {
             targetElementRef: S ? D : U,
-            title: _.intl.string(_.t.ufFDiC),
-            body: _.intl.string(_.t.TyMJwC),
+            title: f.intl.string(f.t.ufFDiC),
+            body: f.intl.string(f.t.TyMJwC),
             onRequestClose: () => {
                 M(!0), A.A.dismissOverviewTooltip(O, C.integration)
             },
@@ -106,23 +106,23 @@ function N(e) {
                         } = e;
                     return null != l.bot && s?.scopes?.includes(r.F.BOT) && n.push({
                         id: "bot",
-                        label: new x.A(l.bot).isVerifiedBot() ? _.intl.string(_.t.xxcTGy) : _.intl.string(_.t.AOdOYr),
+                        label: new x.A(l.bot).isVerifiedBot() ? f.intl.string(f.t.xxcTGy) : f.intl.string(f.t.AOdOYr),
                         icon: c.CnV
                     }), a.length > 0 && n.push({
                         id: "webhooks",
-                        label: _.intl.formatToPlainString(_.t["6HqDfT"], {
+                        label: f.intl.formatToPlainString(f.t["6HqDfT"], {
                             count: a.length
                         }),
                         icon: c.XC7
                     }), s?.scopes?.includes(r.F.APPLICATIONS_COMMANDS) === !0 && t && n.push({
                         id: "commands",
-                        label: _.intl.string(_.t["0hKkS+"]),
+                        label: f.intl.string(f.t["0hKkS+"]),
                         icon: c.kC9
                     }), (0, i.jsx)(c.BJc, {
                         direction: "horizontal",
                         gap: 4,
                         children: (0, i.jsx)(c.CR_, {
-                            label: _.intl.string(_.t.G8u3Jf),
+                            label: f.intl.string(f.t.G8u3Jf),
                             layout: "inline",
                             items: n
                         })
@@ -136,12 +136,12 @@ function N(e) {
         },
         children: (0, i.jsx)(c.ZpM, {
             editable: !0,
-            className: a()(f.Nr, f.vk),
+            className: a()(_.Nr, _.vk),
             children: z
         })
     }) : (0, i.jsx)(c.ZpM, {
         editable: !0,
-        className: f.Nr,
+        className: _.Nr,
         children: z
     })
 }

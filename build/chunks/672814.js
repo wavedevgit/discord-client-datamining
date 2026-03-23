@@ -1,7 +1,7 @@
 /** chunk id: 672814 params = (module,exports,require) **/
 n.d(t, {
     e: () => w,
-    r: () => V
+    r: () => U
 });
 var l = n(627968),
     i = n(64700),
@@ -33,9 +33,9 @@ var l = n(627968),
     j = n(806931),
     R = n(985018),
     G = n(912579);
-let V = 48;
+let U = 48;
 
-function U(e, t) {
+function V(e, t) {
     if (null != e) return {
         suggestionData: y.A.getSelectedInviteMetadata(e),
         source: t
@@ -46,7 +46,7 @@ let w = i.memo(function(e) {
             user: n,
             channel: s,
             inviteKey: y,
-            location: V,
+            location: U,
             row: w,
             source: O,
             ringingEnabled: D,
@@ -105,20 +105,20 @@ let w = i.memo(function(e) {
                 type: d.F.GROUP_DM,
                 channel: s,
                 inviteKey: y,
-                location: V,
-                inviteAnalyticsMetadata: U(w, O)
+                location: U,
+                inviteAnalyticsMetadata: V(w, O)
             }, e => {
                 F(!1), H(e)
             })) : null != n && (F(!0), d.A.enqueue({
                 type: d.F.USER,
                 user: n,
                 inviteKey: y,
-                location: V,
-                inviteAnalyticsMetadata: U(w, O)
+                location: U,
+                inviteAnalyticsMetadata: V(w, O)
             }, e => {
                 F(!1), H(e)
             })))
-        }, [y, s, n, V, w, O]),
+        }, [y, s, n, U, w, O]),
         el = N.Ay.getName(n),
         ei = null != n ? f.A.getNickname(n.id) : null,
         es = null != s ? (0, x.m1)(s, _.default, f.A) : null,

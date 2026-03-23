@@ -1,7 +1,7 @@
 /** chunk id: 360827 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => I,
+    Ay: () => C,
     fO: () => S
 });
 var i = n(627968),
@@ -27,7 +27,7 @@ var i = n(627968),
     b = n(985018),
     T = n(42483);
 
-function C(e) {
+function I(e) {
     let {
         guildId: t,
         prompts: n
@@ -109,7 +109,7 @@ function C(e) {
     })
 }
 
-function I(e) {
+function C(e) {
     let {
         saveOnClose: t
     } = e, n = (0, l.bG)([u.A], () => u.A.getGuild());
@@ -176,7 +176,7 @@ function v(e) {
             }), (0, i.jsx)(A.mU, {
                 guildId: t.id
             })]
-        }), (0, i.jsx)(C, {
+        }), (0, i.jsx)(I, {
             guildId: t.id,
             prompts: o
         }), n && (0, i.jsx)(f.A, {

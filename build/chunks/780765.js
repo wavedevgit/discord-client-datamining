@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(397927),
     A = n(282956),
     b = n(573648),
-    _ = n(235986),
-    f = n(508675),
+    f = n(235986),
+    _ = n(508675),
     N = n(997509),
     j = n(427157),
     T = n(317525),
@@ -122,7 +122,7 @@ function L(e) {
         }, [Z, F, s.revoked, s.synced_at, s.type, s.user]),
         ee = (0, m.bG)([T.A], () => T.A.getSortedRoles(n.id)),
         et = l.useMemo(() => {
-            let e = f.Ay.getGuildEmoji(n.id),
+            let e = _.Ay.getGuildEmoji(n.id),
                 t = ee.filter(e => null != e.tags && e.tags.integration_id === s.id).map(e => e.id);
             return s.enable_emoticons ? e.filter(e => null != s.role_id && e?.roles.some(e => t.includes(e))).sort((e, t) => e.name.localeCompare(t.name)) : []
         }, [n.id, ee, s.enable_emoticons, s.id, s.role_id]);
@@ -147,14 +147,14 @@ function L(e) {
             })
         }]
     }
-    let en = (0, i.jsxs)(_.A, {
+    let en = (0, i.jsxs)(f.A, {
             className: R.wx,
-            align: _.A.Align.CENTER,
+            align: f.A.Align.CENTER,
             children: [(0, i.jsx)(y.A, {
                 name: `${s.name}`,
                 detailsClassName: R.h_,
                 details: t
-            }), s.enabled ? (0, i.jsx)(_.A.Child, {
+            }), s.enabled ? (0, i.jsx)(f.A.Child, {
                 shrink: 0,
                 grow: 0,
                 children: (0, i.jsx)(I.A, {
@@ -162,7 +162,7 @@ function L(e) {
                     expanded: L && !D,
                     "aria-hidden": !0
                 })
-            }) : (0, i.jsx)(_.A.Child, {
+            }) : (0, i.jsx)(f.A.Child, {
                 shrink: 0,
                 grow: 0,
                 children: D ? (0, i.jsx)(p.K0, {
@@ -180,9 +180,9 @@ function L(e) {
             })]
         }),
         ei = null;
-    return L && !D && null != r && (ei = (0, i.jsxs)(_.A, {
+    return L && !D && null != r && (ei = (0, i.jsxs)(f.A, {
         className: R.rf,
-        direction: _.A.Direction.VERTICAL,
+        direction: f.A.Direction.VERTICAL,
         children: [(0, i.jsx)(p.cGx, {
             className: R.fV
         }), function(e) {
@@ -194,8 +194,8 @@ function L(e) {
                 roleLink: a,
                 onSync: r
             } = e;
-            return (0, i.jsxs)(_.A, {
-                children: [(0, i.jsxs)(_.A.Child, {
+            return (0, i.jsxs)(f.A, {
+                children: [(0, i.jsxs)(f.A.Child, {
                     basis: "50%",
                     children: [(0, i.jsx)(p.Heading, {
                         variant: "heading-md/semibold",
@@ -207,16 +207,16 @@ function L(e) {
                         variant: "text-sm/normal",
                         children: a
                     })]
-                }), (0, i.jsxs)(_.A.Child, {
+                }), (0, i.jsxs)(f.A.Child, {
                     basis: "50%",
                     children: [(0, i.jsx)(p.Heading, {
                         variant: "heading-sm/semibold",
                         className: k.QB,
                         children: n
-                    }), (0, i.jsxs)(_.A, {
-                        justify: _.A.Justify.BETWEEN,
-                        children: [(0, i.jsxs)(_.A, {
-                            direction: _.A.Direction.VERTICAL,
+                    }), (0, i.jsxs)(f.A, {
+                        justify: f.A.Justify.BETWEEN,
+                        children: [(0, i.jsxs)(f.A, {
+                            direction: f.A.Direction.VERTICAL,
                             children: [(0, i.jsx)(p.Text, {
                                 color: "text-strong",
                                 variant: "text-sm/normal",
@@ -258,8 +258,8 @@ function L(e) {
                 onBehaviorChange: l,
                 onGracePeriodChange: s
             } = e;
-            return (0, i.jsxs)(_.A, {
-                children: [(0, i.jsx)(_.A.Child, {
+            return (0, i.jsxs)(f.A, {
+                children: [(0, i.jsx)(f.A.Child, {
                     basis: "50%",
                     children: (0, i.jsx)(p.l6P, {
                         selectionMode: "single",
@@ -278,7 +278,7 @@ function L(e) {
                         disabled: t.syncing,
                         onSelectionChange: e => l(parseInt(e))
                     })
-                }), (0, i.jsx)(_.A.Child, {
+                }), (0, i.jsx)(f.A.Child, {
                     basis: "50%",
                     children: (0, i.jsx)(p.l6P, {
                         selectionMode: "single",
@@ -322,8 +322,8 @@ function L(e) {
                 emojis: n,
                 onToggle: l
             } = e;
-            return (0, i.jsxs)(_.A, {
-                direction: _.A.Direction.VERTICAL,
+            return (0, i.jsxs)(f.A, {
+                direction: f.A.Direction.VERTICAL,
                 children: [(0, i.jsx)("div", {
                     className: a()(k.QX, k.QB),
                     children: (0, i.jsx)(p.Checkbox, {
@@ -332,8 +332,8 @@ function L(e) {
                         onChange: e => l(e),
                         label: w.intl.string(w.t["7r4OKg"])
                     })
-                }), (0, i.jsx)(_.A, {
-                    wrap: _.A.Wrap.WRAP,
+                }), (0, i.jsx)(f.A, {
+                    wrap: f.A.Wrap.WRAP,
                     className: R.__invalid_twitchEmojis,
                     children: n.map((e, t) => (0, i.jsx)(h.m, {
                         text: e.name,
@@ -362,7 +362,7 @@ function L(e) {
             }
         }) : null, (0, i.jsx)(p.cGx, {
             className: R.Bd
-        }), (0, i.jsx)(_.A, {
+        }), (0, i.jsx)(f.A, {
             children: (0, i.jsx)(p.Button, {
                 size: "sm",
                 variant: "critical-secondary",
@@ -373,8 +373,8 @@ function L(e) {
     })), (0, i.jsx)(p.ZpM, {
         editable: !0,
         className: R.Nr,
-        children: (0, i.jsxs)(_.A, {
-            direction: _.A.Direction.VERTICAL,
+        children: (0, i.jsxs)(f.A, {
+            direction: f.A.Direction.VERTICAL,
             children: [s.enabled ? (0, i.jsx)(p.DUT, {
                 className: R._S,
                 "aria-expanded": L && !D,

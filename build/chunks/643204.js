@@ -24,13 +24,13 @@ var l = n(627968),
     v = n(908247),
     C = n(870136),
     N = n(200759),
-    b = n(919395),
-    T = n(9842),
-    E = n(657048),
-    j = n(93956),
+    T = n(919395),
+    b = n(9842),
+    j = n(657048),
+    E = n(93956),
     I = n(352413),
-    _ = n(854627),
-    S = n(342296),
+    S = n(854627),
+    _ = n(342296),
     R = n(964404),
     y = n(71393),
     M = n(576705),
@@ -101,11 +101,11 @@ let K = s.memo(function(e) {
         onClickUsername: h,
         onContextMenu: g,
         displayCompactAvatars: C = !1,
-        onPopoutRequestClose: b,
-        preview: T,
-        subscribeToGroupId: j,
+        onPopoutRequestClose: T,
+        preview: b,
+        subscribeToGroupId: E,
         hideGuildTag: I
-    } = e, _ = (0, L.Ay)(t, n), S = s.useMemo(() => (0, H.y)({
+    } = e, S = (0, L.Ay)(t, n), _ = s.useMemo(() => (0, H.y)({
         message: t,
         channel: i,
         user: t?.author,
@@ -127,14 +127,14 @@ let K = s.memo(function(e) {
             let {
                 onClick: t
             } = e;
-            return (0, l.jsx)(E.A, {
+            return (0, l.jsx)(j.A, {
                 ref: R,
                 ...o,
                 className: B.UT,
                 onClick: t
             })
         }
-    }, "role-icon-children") : 2 === O ? (0, l.jsx)(E.A, {
+    }, "role-icon-children") : 2 === O ? (0, l.jsx)(j.A, {
         ...o,
         className: B.UT
     }, "role-icon-children") : null, [O, o, M]), {
@@ -162,25 +162,25 @@ let K = s.memo(function(e) {
             messageId: t.id
         }, "moderation-label")), e
     }, [t, i, w, M, k, D]);
-    return null == _ ? null : (0, l.jsxs)(l.Fragment, {
+    return null == S ? null : (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)(G.A, {
             message: t,
             channel: i,
-            author: _,
+            author: S,
             compact: a,
             roleIcon: o,
             showPopout: c,
             renderPopout: m,
             onClick: h,
             onContextMenu: g,
-            onPopoutRequestClose: b,
+            onPopoutRequestClose: T,
             decorations: {
-                [G.w.SYSTEM_TAG]: S,
+                [G.w.SYSTEM_TAG]: _,
                 [G.w.BADGES]: P
             },
             previewGuildId: r,
-            preview: T,
-            subscribeToGroupId: j,
+            preview: b,
+            subscribeToGroupId: E,
             hideGuildTag: I
         }), a && (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)("i", {
@@ -287,7 +287,7 @@ let X = s.memo(function(e) {
         hideTimestamp: x,
         hideGuildTag: v,
         className: N,
-        channel: E,
+        channel: j,
         preview: L
     } = e, G = s.useMemo(() => null != g ? e => g(e, t) : void 0, [g, t]), [, P] = (0, C.Ay)(t.author.id, e.guildId), U = (0, u.bG)([M.A, y.A], () => {
         let n = y.A.getGuild(e.guildId);
@@ -309,13 +309,13 @@ let X = s.memo(function(e) {
             onClickAvatar: x,
             onPopoutRequestClose: v,
             showAvatarPopout: C
-        } = t, N = s.useRef(null), [T, E] = s.useState(!1), {
-            analyticsLocations: j
+        } = t, N = s.useRef(null), [b, j] = s.useState(!1), {
+            analyticsLocations: E
         } = (0, h.Ay)(m.A.AVATAR), y = (0, u.bG)([O.default], () => O.default.getCurrentUser()), M = (0, u.bG)([R.Ay], () => t.displayCompactAvatars ?? R.Ay.displayCompactAvatars), L = (0, V.A)(c), G = g ? 32 : 80, {
             pendingAvatarDecoration: D
         } = (0, I.A)({
             guildId: n
-        }), P = (0, b.lw)({
+        }), P = (0, T.lw)({
             pendingValue: c.author.id === y?.id ? D : void 0,
             userValue: c.author?.avatarDecoration,
             guildValue: d?.guildMemberAvatarDecoration,
@@ -324,11 +324,11 @@ let X = s.memo(function(e) {
             avatarSrc: U,
             avatarDecorationSrc: H,
             eventHandlers: $
-        } = (0, _.A)({
+        } = (0, S.A)({
             userId: c.author.id,
             guildId: n,
             size: G,
-            animateOnHover: null != A ? !T : !f,
+            animateOnHover: null != A ? !b : !f,
             avatarDecorationOverride: P,
             showPending: !0
         }), B = c.isInteractionPlaceholder(), K = s.useMemo(() => B && null == c.author.avatar && null == d.guildMemberAvatar && c.application?.icon != null ? w.Ay.getApplicationIconURL({
@@ -343,10 +343,10 @@ let X = s.memo(function(e) {
             bot: !0
         }, !1, G) : U, [B, c.author.avatar, c.author.id, c.author.discriminator, c.application?.icon, c.application?.id, c.webhookId, U, G, d.guildMemberAvatar]);
         if (s.useEffect(() => {
-                if (null != A) return k._.subscribeKeyed(F.zOV.ANIMATE_CHAT_AVATAR, `${A}:${c.author.id}`, E), () => void k._.unsubscribeKeyed(F.zOV.ANIMATE_CHAT_AVATAR, `${A}:${c.author.id}`, E)
+                if (null != A) return k._.subscribeKeyed(F.zOV.ANIMATE_CHAT_AVATAR, `${A}:${c.author.id}`, j), () => void k._.unsubscribeKeyed(F.zOV.ANIMATE_CHAT_AVATAR, `${A}:${c.author.id}`, j)
             }, [c.author.id, A]), !g || M) return null != i && null != C ? (0, l.jsx)(h.f5, {
-            value: j,
-            children: (0, l.jsx)(S.A, {
+            value: E,
+            children: (0, l.jsx)(_.A, {
                 targetElementRef: N,
                 user: c.author,
                 guildId: n,
@@ -374,7 +374,7 @@ let X = s.memo(function(e) {
                 })
             })
         }) : (0, l.jsx)(h.f5, {
-            value: j,
+            value: E,
             children: z({
                 ...$,
                 avatarSrc: K,
@@ -395,14 +395,14 @@ let X = s.memo(function(e) {
         showCommunicationDisabledStyles: J
     }), q = (0, u.bG)([R.Ay], () => e.displayCompactAvatars ?? R.Ay.displayCompactAvatars), Q = s.useMemo(() => (0, H.k)({
         message: t,
-        channel: E,
+        channel: j,
         user: t?.author,
         compact: i,
         isRepliedMessage: !1
-    }), [t, E, i]), Z = (0, u.bG)([y.A], () => W(i, q, f, y.A.getGuild(e.guildId)), [i, q, f, e.guildId]), ee = s.useMemo(() => {
+    }), [t, j, i]), Z = (0, u.bG)([y.A], () => W(i, q, f, y.A.getGuild(e.guildId)), [i, q, f, e.guildId]), ee = s.useMemo(() => {
         let e = [];
-        return (0, o.Lt)(t.flags, F.pr7.SUPPRESS_NOTIFICATIONS) && e.push((0, l.jsx)(j.A, {}, "suppress-notifications")), e
-    }, [t]), et = (0, D.d$)(t, p), en = (0, D.xl)(t), el = x ? `${et}` : `${et} ${en}`, es = n?.state === T.a.LOADED ? (0, D.nS)(t) : void 0;
+        return (0, o.Lt)(t.flags, F.pr7.SUPPRESS_NOTIFICATIONS) && e.push((0, l.jsx)(E.A, {}, "suppress-notifications")), e
+    }, [t]), et = (0, D.d$)(t, p), en = (0, D.xl)(t), el = x ? `${et}` : `${et} ${en}`, es = n?.state === b.a.LOADED ? (0, D.nS)(t) : void 0;
     return (0, l.jsx)(Y, {
         message: t,
         avatar: X,
@@ -421,7 +421,7 @@ let X = s.memo(function(e) {
             }), (0, l.jsx)(K, {
                 ...e,
                 message: t,
-                channel: E,
+                channel: j,
                 compact: i,
                 roleIconProps: f,
                 renderPopout: G,

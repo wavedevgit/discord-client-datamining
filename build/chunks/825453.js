@@ -18,8 +18,8 @@ var i = n(64700),
     p = n(287809),
     A = n(403362),
     b = n(803378),
-    _ = n(200662),
-    f = n(652215);
+    f = n(200662),
+    _ = n(652215);
 
 function N(e, t, n) {
     let l = (0, o.bG)([b.A], () => b.A.getApplicationPermissions()),
@@ -28,7 +28,7 @@ function N(e, t, n) {
             let n, i, s, a;
             return t = e, n = {
                 ...l ?? {}
-            }, i = (0, u.Ap)(t), s = (0, _.Eu)(i, c.RA.CHANNEL), (a = (0, _.Eu)(t, c.RA.ROLE)) in n || (n[a] = {
+            }, i = (0, u.Ap)(t), s = (0, f.Eu)(i, c.RA.CHANNEL), (a = (0, f.Eu)(t, c.RA.ROLE)) in n || (n[a] = {
                 id: t,
                 permission: !0,
                 type: c.RA.ROLE
@@ -66,7 +66,7 @@ function N(e, t, n) {
                 {
                     channelIds: d,
                     roleIds: b,
-                    userIds: _
+                    userIds: f
                 } = i.useMemo(() => {
                     let e = [],
                         n = [],
@@ -80,7 +80,7 @@ function N(e, t, n) {
                 }, [t]),
                 N = (0, o.cf)([m.A], () => Object.fromEntries(d.map(m.A.getChannel).filter(A.Vq).map(e => [e.id, e])), [d]),
                 j = (0, o.cf)([g.A], () => Object.fromEntries(b.map(t => g.A.getRole(e, t)).filter(A.Vq).map(e => [e.id, e])), [b, e]),
-                T = (0, o.cf)([p.default], () => Object.fromEntries(_.map(p.default.getUser).filter(A.Vq).map(e => [e.id, e])), [_]);
+                T = (0, o.cf)([p.default], () => Object.fromEntries(f.map(p.default.getUser).filter(A.Vq).map(e => [e.id, e])), [f]);
             return i.useMemo(() => {
                 let e = n.id,
                     i = (0, u.Ap)(n.id),
@@ -91,14 +91,14 @@ function N(e, t, n) {
                     if (o.type === c.RA.CHANNEL) {
                         let e = o.id === i,
                             n = N[o.id];
-                        t = e || h.A.can(f.xBc.VIEW_CHANNEL, n), d = !0
+                        t = e || h.A.can(_.xBc.VIEW_CHANNEL, n), d = !0
                     } else if (o.type === c.RA.ROLE) {
                         let i = o.id === e,
                             s = j[o.id];
                         t = i || null != s, d = r || i || h.A.isRoleHigher(n, l, s)
                     } else if (o.type === c.RA.USER) {
                         let e = T[o.id];
-                        t = null != e, d = null != e && (r || h.A.canManageUser(f.xBc.USE_APPLICATION_COMMANDS, e, n))
+                        t = null != e, d = null != e && (r || h.A.canManageUser(_.xBc.USE_APPLICATION_COMMANDS, e, n))
                     }
                     s[a] = {
                         ...o,

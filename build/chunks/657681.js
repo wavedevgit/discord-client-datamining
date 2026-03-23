@@ -1,6 +1,6 @@
 /** chunk id: 657681 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => _
 }), n(321073);
 var i = n(627968),
     l = n(64700),
@@ -18,30 +18,30 @@ var i = n(627968),
     p = n(317525),
     A = n(486020),
     b = n(985018),
-    _ = n(906809);
+    f = n(906809);
 
-function f(e) {
+function _(e) {
     let {
         guild: t,
         applicationIntegration: n
     } = e, {
-        application: f
-    } = n, N = null != f.bot ? new x.A(f.bot) : null, j = (0, a.bG)([h.Ay], () => null != N ? h.Ay.getMember(t.id, N.id) : null, [N, t]), T = (0, a.bG)([p.A], () => p.A.getEveryoneRole(t)), v = (0, a.yK)([p.A], () => p.A.getManyRoles(t.id, j?.roles ?? [])), C = N?.id;
+        application: _
+    } = n, N = null != _.bot ? new x.A(_.bot) : null, j = (0, a.bG)([h.Ay], () => null != N ? h.Ay.getMember(t.id, N.id) : null, [N, t]), T = (0, a.bG)([p.A], () => p.A.getEveryoneRole(t)), v = (0, a.yK)([p.A], () => p.A.getManyRoles(t.id, j?.roles ?? [])), C = N?.id;
     l.useEffect(() => {
         null != C && o.A.requestMembersById(t.id, C)
     }, [t.id, C]);
     let I = l.useMemo(() => s.kg(T.permissions, ...v.map(e => e.permissions)), [v, T]);
     if (null == N) return null;
     let E = A.Ay.getApplicationIconURL({
-        id: f.id,
+        id: _.id,
         guildMember: j,
-        bot: f.bot,
-        icon: f.icon,
+        bot: _.bot,
+        icon: _.icon,
         size: 32
     });
     return (0, i.jsx)(r.ZpM, {
         editable: !0,
-        className: _.Nr,
+        className: f.Nr,
         children: (0, i.jsxs)(m.A, {
             direction: m.A.Direction.VERTICAL,
             children: [(0, i.jsxs)(m.A, {
@@ -49,7 +49,7 @@ function f(e) {
                 children: [(0, i.jsx)("img", {
                     alt: "",
                     src: E,
-                    className: _.P0
+                    className: f.P0
                 }), (0, i.jsx)(r.Text, {
                     color: "text-strong",
                     variant: "text-sm/normal",
@@ -57,7 +57,7 @@ function f(e) {
                         user: N.toString()
                     })
                 }), (0, i.jsx)(u.A, {
-                    className: _.Tc,
+                    className: f.Tc,
                     verified: N.isVerifiedBot()
                 })]
             }), function(e, t, n, l) {
@@ -66,13 +66,13 @@ function f(e) {
                 for (let e of g.Q) s.zy(l, e) ? a.push(e) : o.push(e);
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(r.cGx, {
-                        className: _.yF
+                        className: f.yF
                     }), n.length > 0 ? (0, i.jsx)(r.D0$, {
                         label: b.intl.format(b.t.PCs0oo, {
                             numRoles: n.length
                         }),
                         children: (0, i.jsx)(d.Ay, {
-                            className: _.pf,
+                            className: f.pf,
                             user: e,
                             guild: t,
                             userRoleIds: n,

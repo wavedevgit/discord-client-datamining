@@ -27,8 +27,8 @@ var i = n(627968),
     E = n(262295),
     b = n(936555),
     T = n(725437),
-    C = n(952385),
-    I = n(810877),
+    I = n(952385),
+    C = n(810877),
     v = n(945086),
     S = n(824832),
     y = n(931991),
@@ -355,7 +355,7 @@ let z = c().throttle(p.dZ, 1e3),
                 totalStaticEmoji: M,
                 animatedEmoji: V,
                 totalAnimatedEmoji: W
-            } = (0, C.v)({
+            } = (0, I.v)({
                 guild: l
             }),
             [K, X] = s.useState(null);
@@ -386,7 +386,7 @@ let z = c().throttle(p.dZ, 1e3),
                 })
             }, [l]),
             Q = async (e, t, n) => {
-                let i = await (0, I.W)({
+                let i = await (0, C.W)({
                     data: e,
                     file: t,
                     image: n,

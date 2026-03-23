@@ -26,7 +26,7 @@ function p() {
     } = (0, x.A)(A?.active_trial ?? null), j = (0, g.A)(), N = null != t, E = s.useCallback(e => {
         let t = f.find(e => e.isDefault);
         r()(null != t, "Missing default trial duartion option"), n(e ? t.value : null)
-    }, [n, f]), b = (0, c.gN)(), T = (0, o.GV)(), C = (0, o.GV)();
+    }, [n, f]), b = (0, c.gN)(), T = (0, o.GV)(), I = (0, o.GV)();
     return (0, i.jsxs)(h.A, {
         title: _.intl.string(_.t["6anton"]),
         description: _.intl.string(_.t.urVijS),
@@ -63,7 +63,7 @@ function p() {
             selectionMode: "single",
             label: _.intl.string(_.t["/JD9oe"]),
             description: _.intl.string(_.t.Cg5eBm),
-            "aria-labelledby": C,
+            "aria-labelledby": I,
             options: j,
             formatOption: e => {
                 let {

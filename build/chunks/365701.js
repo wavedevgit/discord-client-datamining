@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     Ay: () => y,
-    Jx: () => I,
+    Jx: () => C,
     lz: () => v
 });
 var i = n(627968),
@@ -27,7 +27,7 @@ var i = n(627968),
     E = n(985018),
     b = n(776433),
     T = n(473169);
-class C extends d.Ay.Store {
+class I extends d.Ay.Store {
     initialize() {
         this.waitFor(j.A, A.A)
     }
@@ -62,17 +62,17 @@ class C extends d.Ay.Store {
         return null != e && null != this.name && (this.name.trim() !== e.name || this.description.trim() !== e.description)
     }
 }
-let I = new C(x.h);
+let C = new I(x.h);
 
 function v() {
     let [e, t] = s.useState(!1), n = async () => {
-        t(!0), await I.save(), t(!1)
+        t(!0), await C.save(), t(!1)
     };
     return (0, i.jsx)(u.A, {
         submitting: e,
-        onReset: I.reset,
+        onReset: C.reset,
         onSave: n,
-        disabled: !S(I.name)
+        disabled: !S(C.name)
     })
 }
 
@@ -104,7 +104,7 @@ function R() {
         guild: e
     } = j.A.getProps();
     o()(null != e, "guild cannot be null");
-    let t = (0, d.bG)([I], () => I.error),
+    let t = (0, d.bG)([C], () => C.error),
         [n, l] = s.useState(!0),
         {
             loading: r,
@@ -117,7 +117,7 @@ function R() {
                     try {
                         await p.A.loadTemplatesForGuild(e), n(!1)
                     } catch (e) {
-                        I.setError(new _.LG(e))
+                        C.setError(new _.LG(e))
                     }
                 }()
             }, [e]), {
@@ -126,9 +126,9 @@ function R() {
             }
         }(e.id);
     if (s.useEffect(() => {
-            n && !r && (null != a && (I.setName(a.name ?? ""), I.setDescription(a.description ?? "")), l(!1))
+            n && !r && (null != a && (C.setName(a.name ?? ""), C.setDescription(a.description ?? "")), l(!1))
         }, [n, a, r]), s.useEffect(() => () => {
-            I.reset(), I.setError(null)
+            C.reset(), C.setError(null)
         }, []), n) return null != t ? (0, i.jsx)(g.Text, {
         color: "text-feedback-critical",
         variant: "text-sm/normal",
@@ -239,9 +239,9 @@ function G(e) {
 }
 
 function L() {
-    let e = (0, d.bG)([I], () => I.name),
-        t = (0, d.bG)([I], () => I.description),
-        n = (0, d.bG)([I], () => I.error),
+    let e = (0, d.bG)([C], () => C.name),
+        t = (0, d.bG)([C], () => C.description),
+        n = (0, d.bG)([C], () => C.error),
         [l, r] = s.useState(!1),
         a = s.useCallback(() => {
             r(!1)
@@ -258,7 +258,7 @@ function L() {
             required: !0,
             error: c ?? n?.getFirstFieldErrorMessage("name"),
             value: e,
-            onChange: e => I.setName(e),
+            onChange: e => C.setName(e),
             placeholder: E.intl.string(E.t.bMlpvk),
             maxLength: 100,
             onBlur: a,
@@ -268,7 +268,7 @@ function L() {
             label: E.intl.string(E.t.GxirWa),
             error: n?.getFirstFieldErrorMessage("description"),
             value: t,
-            onChange: e => I.setDescription(e),
+            onChange: e => C.setDescription(e),
             placeholder: E.intl.string(E.t.n1FBXh),
             maxLength: 120
         })]
@@ -321,12 +321,12 @@ function D(e) {
 function M(e) {
     let {
         guild: t
-    } = e, n = (0, d.bG)([I], () => I.name), [l, r] = s.useState(!1), a = async () => {
-        I.setError(null), r(!0);
+    } = e, n = (0, d.bG)([C], () => C.name), [l, r] = s.useState(!1), a = async () => {
+        C.setError(null), r(!0);
         try {
-            await p.A.createGuildTemplate(t.id, I.name, I.description)
+            await p.A.createGuildTemplate(t.id, C.name, C.description)
         } catch (e) {
-            I.setError(new _.LG(e))
+            C.setError(new _.LG(e))
         }
         r(!1)
     };
@@ -344,11 +344,11 @@ function k(e) {
         guild: t,
         guildTemplate: n
     } = e, [l, r] = s.useState(!1), a = async () => {
-        I.setError(null), r(!0);
+        C.setError(null), r(!0);
         try {
             await p.A.syncGuildTemplate(t.id, n.code)
         } catch (e) {
-            I.setError(new _.LG(e))
+            C.setError(new _.LG(e))
         }
         r(!1)
     };
@@ -369,11 +369,11 @@ function U(e) {
         guild: t,
         guildTemplate: n
     } = e, [l, r] = s.useState(!1), a = async () => {
-        I.setError(null);
+        C.setError(null);
         try {
-            await p.A.deleteGuildTemplate(t.id, n.code), I.setName(""), I.setDescription("")
+            await p.A.deleteGuildTemplate(t.id, n.code), C.setName(""), C.setDescription("")
         } catch (e) {
-            I.setError(new _.LG(e))
+            C.setError(new _.LG(e))
         }
         r(!1)
     };

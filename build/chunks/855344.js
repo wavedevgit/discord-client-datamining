@@ -1,7 +1,7 @@
 /** chunk id: 855344 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => T
+    A: () => b
 });
 var l = n(627968);
 n(64700);
@@ -23,13 +23,13 @@ var s = n(311907),
     v = n(652215),
     C = n(746080),
     N = n(985018),
-    b = n(530358);
-let T = e => {
+    T = n(530358);
+let b = e => {
     let {
         roleIcon: t,
         guild: n
     } = e, {
-        name: T
+        name: b
     } = t;
     (0, a.Ay)(() => {
         p.default.track(v.HAw.OPEN_POPOUT, {
@@ -38,19 +38,19 @@ let T = e => {
             ...(0, o.dI)(g.A.getChannel(f.A.getChannelId(n.id)))
         })
     });
-    let E = (0, s.bG)([A.A], () => null != t.roleId ? A.A.getRole(n.id, t.roleId) : void 0),
-        j = (0, d.U)(E),
-        I = j ? N.intl.formatToPlainString(N.t.t0928V, {
-            name: T
+    let j = (0, s.bG)([A.A], () => null != t.roleId ? A.A.getRole(n.id, t.roleId) : void 0),
+        E = (0, d.U)(j),
+        I = E ? N.intl.formatToPlainString(N.t.t0928V, {
+            name: b
         }) : N.intl.formatToPlainString(N.t.UDDkGy, {
-            name: T
+            name: b
         }),
-        _ = {
+        S = {
             ...t,
             src: null == t.src ? t.src : (0, u.ux)(t.src, 40),
             size: 40
         },
-        S = j ? () => {
+        _ = E ? () => {
             (0, h.pX)(v.BVt.CHANNEL(n.id, C.VV.ROLE_SUBSCRIPTIONS))
         } : () => {
             (0, c.K)({
@@ -63,24 +63,24 @@ let T = e => {
     return (0, l.jsx)(r.lGe, {
         children: (0, l.jsx)(x.Uq, {
             children: (0, l.jsxs)("div", {
-                className: b.jC,
+                className: T.jC,
                 children: [(0, l.jsxs)("div", {
-                    className: b.rb,
+                    className: T.rb,
                     children: [(0, l.jsx)("div", {
-                        className: b.Xq,
+                        className: T.Xq,
                         children: (0, l.jsx)(m.A, {
-                            ..._,
+                            ...S,
                             enableTooltip: !1,
-                            className: b.__invalid_roleIcon,
+                            className: T.__invalid_roleIcon,
                             enableHeight: !1
                         })
                     }), (0, l.jsxs)("div", {
-                        className: b.bM,
+                        className: T.bM,
                         children: [(0, l.jsx)(r.Heading, {
                             variant: "heading-md/semibold",
-                            className: b.S3,
+                            className: T.S3,
                             children: (0, l.jsx)(i.A, {
-                                children: T
+                                children: b
                             })
                         }), (0, l.jsx)(r.Text, {
                             variant: "text-sm/normal",
@@ -91,7 +91,7 @@ let T = e => {
                     size: "sm",
                     variant: "secondary",
                     text: N.intl.string(N.t["H930+H"]),
-                    onClick: S,
+                    onClick: _,
                     icon: r._Jp,
                     fullWidth: !0,
                     autoFocus: !0

@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(397927),
     A = n(846293),
     b = n(579872),
-    _ = n(414079),
-    f = n(297413),
+    f = n(414079),
+    _ = n(297413),
     N = n(361739),
     j = n(966327),
     T = n(736653),
@@ -75,7 +75,7 @@ function K(e) {
                 size: p._3J.SIZE_24,
                 className: V.my
             }), (0, i.jsxs)("div", {
-                children: [null != n && (0, i.jsx)(f.A, {
+                children: [null != n && (0, i.jsx)(_.A, {
                     discriminatorClass: V.D2,
                     user: n
                 }), l && null != s && (0, i.jsx)(p.Text, {
@@ -123,7 +123,7 @@ function K(e) {
                 roles: u,
                 guildId: m
             })
-        }), (0, i.jsx)(_.A, {
+        }), (0, i.jsx)(f.A, {
             className: V.eb,
             onClick: x
         })]
@@ -240,8 +240,8 @@ function J(e) {
     o()(null != s, "guild is required");
     let A = (0, T.Ay)(),
         b = (0, P.Fi)(s),
-        _ = (0, P.Wr)(s),
-        f = (0, w.E)(s.id, "SettingsInvites").enabled,
+        f = (0, P.Wr)(s),
+        _ = (0, w.E)(s.id, "SettingsInvites").enabled,
         j = l.useMemo(() => null == t || h ? [] : c()(t).sortBy(e => (e.inviter?.username ?? "").toLowerCase()).value(), [t, h]),
         v = (0, g.yK)([M.A], () => M.A.getSortedLinkedChannelsForGuild(s.id).filter(e => null == u || e.id === u.id)),
         C = l.useMemo(() => h ? [] : [...j.map(e => ({
@@ -322,7 +322,7 @@ function J(e) {
                             variant: "text-md/medium",
                             children: H.intl.string(H.t["1aM27d"])
                         })
-                    }), f && (0, i.jsx)(E.A.Child, {
+                    }), _ && (0, i.jsx)(E.A.Child, {
                         grow: 2,
                         basis: 0,
                         children: (0, i.jsx)(p.Text, {
@@ -357,11 +357,11 @@ function J(e) {
                     className: V.N5,
                     children: [(0, i.jsx)(p.Button, {
                         size: "sm",
-                        variant: _ ? "primary" : "critical-primary",
-                        text: _ ? H.intl.string(H.t["/dbw3H"]) : H.intl.string(H.t.Uwsjn6),
+                        variant: f ? "primary" : "critical-primary",
+                        text: f ? H.intl.string(H.t["/dbw3H"]) : H.intl.string(H.t.Uwsjn6),
                         onClick: L,
                         disabled: !b
-                    }), _ && (0, i.jsxs)("div", {
+                    }), f && (0, i.jsxs)("div", {
                         className: V.TJ,
                         children: [(0, i.jsx)(p.EpV, {
                             size: "custom",
@@ -383,7 +383,7 @@ function J(e) {
                 onShowDisableInvites: L,
                 onShowInviteModal: I,
                 hasInviteDisabledPermission: b,
-                invitesDisabled: _,
+                invitesDisabled: f,
                 canCreateInvites: r
             }, "actions-v2");
             if (3 === t) {
@@ -398,16 +398,16 @@ function J(e) {
                             hide: a,
                             invite: e.data,
                             showChannel: m,
-                            inviteDisabled: _,
-                            showRolesColumn: f
+                            inviteDisabled: f,
+                            showRolesColumn: _
                         }, e.data.code);
                     case "channel":
                         return (0, i.jsx)(q, {
                             applicationId: e.data.linkedLobby?.application_id,
                             channel: e.data,
                             showChannel: m,
-                            inviteDisabled: _,
-                            showRolesColumn: f
+                            inviteDisabled: f,
+                            showRolesColumn: _
                         }, e.data.id);
                     default:
                         return null
