@@ -16,8 +16,8 @@ var i = n(627968),
     h = n(401843),
     A = n(793574),
     m = n(688810),
-    _ = n(139286),
-    p = n(313961),
+    p = n(139286),
+    _ = n(313961),
     g = n(480890),
     f = n(643501),
     x = n(652896),
@@ -52,8 +52,8 @@ let U = 16 / 9,
         } = e, A = s.useRef(null), {
             reducedMotion: m
         } = s.useContext(c.CZY), {
-            blocked: _,
-            ignored: p,
+            blocked: p,
+            ignored: _,
             id: g
         } = t;
         return (0, i.jsx)(b.A, {
@@ -69,8 +69,8 @@ let U = 16 / 9,
                 children: (0, i.jsx)(O.A, {
                     participant: n,
                     aspectRatio: U,
-                    blocked: _,
-                    ignored: p,
+                    blocked: p,
+                    ignored: _,
                     channel: l,
                     className: G.V,
                     inCall: !0,
@@ -95,15 +95,15 @@ let U = 16 / 9,
         } = e, {
             reducedMotion: m
         } = s.useContext(c.CZY), {
-            id: _,
+            id: p,
             blocked: g,
             ignored: E
         } = t, N = (0, o.yK)([S.A], () => S.A.getAllActiveStreams(), []), {
             selectedParticipant: b,
             largeStream: T
-        } = (0, o.cf)([p.A], () => ({
-            selectedParticipant: null != l ? p.A.getSelectedParticipant(l.id) : null,
-            largeStream: null != l && p.A.getStageStreamSize(l.id)
+        } = (0, o.cf)([_.A], () => ({
+            selectedParticipant: null != l ? _.A.getSelectedParticipant(l.id) : null,
+            largeStream: null != l && _.A.getStageStreamSize(l.id)
         })), R = s.useCallback((e, t) => {
             if (e.type === D.lp.STREAM && 0 === N.filter(t => (0, x._z)(t) === e.id && t.state !== M.XYD.ENDED).length) {
                 if (!(0, C.eo)(l, j.A, v.A, y.A, f.default)[0]) return;
@@ -128,7 +128,7 @@ let U = 16 / 9,
             pulseSpeakingIndicator: !m.enabled,
             width: a,
             children: r && n.type === D.lp.USER && (0, i.jsx)(L.A, {})
-        }, _)
+        }, p)
     },
     k = s.memo(function(e) {
         let {
@@ -142,10 +142,10 @@ let U = 16 / 9,
         a()(null != f, "Channel cannot be guildless");
         let {
             user: C
-        } = t, I = (0, o.bG)([p.A], () => p.A.getParticipant(s.id, t.id), [s.id, t.id]), b = (0, o.bG)([R.Ay], () => R.Ay.isModerator(C.id, s.id), [s.id, C.id]);
+        } = t, I = (0, o.bG)([_.A], () => _.A.getParticipant(s.id, t.id), [s.id, t.id]), b = (0, o.bG)([R.Ay], () => R.Ay.isModerator(C.id, s.id), [s.id, C.id]);
         if (null == I || I.type === D.lp.ACTIVITY) return null;
         let S = e => {
-                (0, _.x)({
+                (0, p.x)({
                     type: r.ImpressionTypes.MENU,
                     name: r.ImpressionNames.CALL_TILE_CONTEXT_MENU,
                     properties: {

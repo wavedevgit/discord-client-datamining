@@ -16,8 +16,8 @@ var s = n(205369),
     h = n(770376),
     A = n(395504),
     m = n(924985),
-    _ = n(734057),
-    p = n(769765),
+    p = n(734057),
+    _ = n(769765),
     g = n(808728),
     f = n(71393),
     x = n(576705),
@@ -29,7 +29,7 @@ let b = "DRAGGABLE_GUILD_CHANNEL";
 
 function S(e, t) {
     if (null == e || null == t) return null;
-    if (!(0, u.ai)(e)) return _.A.getChannel(t);
+    if (!(0, u.ai)(e)) return p.A.getChannel(t);
     let n = g.Ay.getChannels(e),
         i = n[g.I6].find(e => e.channel.id === t) ?? n[g.vM].find(e => e.channel.id === t) ?? n[N.rbe.GUILD_CATEGORY].find(e => e.channel.id === t);
     return i?.channel
@@ -44,7 +44,7 @@ function T(e) {
             if (null == o) return;
             let h = S(s, l.id);
             if (null == h) return;
-            let A = p.A.getCategories(s),
+            let A = _.A.getCategories(s),
                 m = f.A.getGuild(s);
             if (null == m) return;
             let g = (0, E.Zj)(h, S(s, o.referenceId), o.parentId, A);
@@ -53,19 +53,19 @@ function T(e) {
                 if (g = g.filter(e => {
                         let {
                             id: t
-                        } = e, n = _.A.getChannel(t);
+                        } = e, n = p.A.getChannel(t);
                         if (null == n) return !1;
-                        let i = _.A.getChannel(n.parent_id);
+                        let i = p.A.getChannel(n.parent_id);
                         return n.type === N.rbe.GUILD_CATEGORY || null == i ? x.A.can(N.xBc.MANAGE_CHANNELS, m) : x.A.can(N.xBc.MANAGE_CHANNELS, i)
                     }), h.parent_id !== o.parentId && g.find(e => {
                         if (e.id !== h.id) return !1;
-                        let t = _.A.getChannel(e.parent_id);
+                        let t = p.A.getChannel(e.parent_id);
                         if (!(null != t && x.A.can(N.xBc.MANAGE_ROLES, h) && x.A.can(N.xBc.MANAGE_ROLES, t))) return !0;
                         let i = I.r(h, t),
-                            s = I.r(h, _.A.getChannel(h.parent_id));
+                            s = I.r(h, p.A.getChannel(h.parent_id));
                         return (null != h.parent_id || i) && (!s || i) || (n = e), !0
                     }), null != n) {
-                    let e = _.A.getChannel(n.parent_id);
+                    let e = p.A.getChannel(n.parent_id);
                     null != e && (0, a.qfG)(t => (0, i.jsx)(c.default, {
                         ...t,
                         channel: h,
@@ -82,15 +82,15 @@ function T(e) {
         },
         canDrop(e, t) {
             let n = t.getItem(),
-                i = _.A.getChannel(n.id);
+                i = p.A.getChannel(n.id);
             if (null == i) return !1;
-            let s = (0, E.QO)(_.A.getChannel(n.id), n.position, e.channel, e.position, n.channelList);
+            let s = (0, E.QO)(p.A.getChannel(n.id), n.position, e.channel, e.position, n.channelList);
             if (null == s) return !1;
             if ((0, u.ai)(C.A.getGuildId())) return !0;
             let l = f.A.getGuild(n.guildId);
             if (null == l) return !1;
-            let a = _.A.getChannel(s.parentId),
-                r = _.A.getChannel(i.parent_id),
+            let a = p.A.getChannel(s.parentId),
+                r = p.A.getChannel(i.parent_id),
                 o = x.A.can(N.xBc.MANAGE_CHANNELS, l),
                 c = null != r ? x.A.can(N.xBc.MANAGE_CHANNELS, r) : o,
                 d = null != a ? x.A.can(N.xBc.MANAGE_CHANNELS, a) : o;
@@ -128,7 +128,7 @@ function T(e) {
                 })
             }), !1;
             if (t.type === N.rbe.GUILD_CATEGORY) return x.A.can(N.xBc.MANAGE_CHANNELS, s) && !(0, A.WW)(s.id);
-            let l = _.A.getChannel(t.parent_id);
+            let l = p.A.getChannel(t.parent_id);
             return null != l && x.A.can(N.xBc.MANAGE_CHANNELS, l) || null == l && x.A.can(N.xBc.MANAGE_CHANNELS, s)
         },
         beginDrag(e) {
@@ -140,7 +140,7 @@ function T(e) {
                     type: s
                 },
                 position: l
-            } = e, a = C.A.getGuildId(), r = p.A.getCategories(a);
+            } = e, a = C.A.getGuildId(), r = _.A.getCategories(a);
             return {
                 isChannelDrag: !0,
                 id: t,

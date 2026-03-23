@@ -1,7 +1,7 @@
 /** chunk id: 826050 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -18,7 +18,7 @@ let m = {
     friction: 15,
     tension: 100
 };
-class _ extends s.PureComponent {
+class p extends s.PureComponent {
     state = {
         shown: !1,
         translateY: new r.A.Value(0)
@@ -136,4 +136,4 @@ class _ extends s.PureComponent {
         }
     }
 }
-let p = _
+let _ = p

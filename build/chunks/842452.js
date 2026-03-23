@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(397927),
     A = n(817281),
     m = n(534409),
-    _ = n(711014),
-    p = n(240248),
+    p = n(711014),
+    _ = n(240248),
     g = n(263715),
     f = n(941971),
     x = n(447253),
@@ -28,13 +28,13 @@ var i = n(627968),
     S = n(985018),
     T = n(211170),
     v = n(837021);
-let y = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
+let y = (0, _.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
     j = (0, o.animated)(h.BJc),
     R = s.memo(function(e) {
         var t;
         let n, l, o, {
                 folderNode: u,
-                setNodeRef: p,
+                setNodeRef: _,
                 selected: R,
                 expanded: O,
                 mediaState: L,
@@ -75,7 +75,7 @@ let y = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                 nodeId: u.id
             }),
             end() {
-                V?.(), (0, A.um)(_.Ay.getCompatibleGuildFolders())
+                V?.(), (0, A.um)(p.Ay.getCompatibleGuildFolders())
             },
             collect: e => ({
                 dragging: e.isDragging()
@@ -97,7 +97,7 @@ let y = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
             config: {
                 duration: y
             }
-        }), eh = s.useCallback(e => p?.(q, e), [p, q]), eA = (0, i.jsxs)(I.c, {
+        }), eh = s.useCallback(e => _?.(q, e), [_, q]), eA = (0, i.jsxs)(I.c, {
             children: [(0, i.jsx)(f.A, {
                 disabled: ei || O,
                 hovered: Q,
@@ -144,7 +144,7 @@ let y = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                 targetNode: u,
                 onDragOverChanged: el
             }) : null]
-        }), em = null != u.color ? u.color : b.DO, e_ = em === b.DO ? void 0 : (0, d.Hl)(em);
+        }), em = null != u.color ? u.color : b.DO, ep = em === b.DO ? void 0 : (0, d.Hl)(em);
         return (0, i.jsxs)("div", {
             ref: eh,
             className: a()(T.qc, {
@@ -152,7 +152,7 @@ let y = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                 [T.Lg]: et
             }),
             style: {
-                "--custom-folder-color": e_ ?? ""
+                "--custom-folder-color": ep ?? ""
             },
             "data-drop-hovering": Z,
             children: [!ei && O && (0, i.jsx)("span", {

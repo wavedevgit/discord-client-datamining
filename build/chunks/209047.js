@@ -19,9 +19,9 @@ function A(e) {
         className: t
     } = e, {
         hasAccess: n
-    } = (0, o.TW)("FavoriteGuildHeaderActionButton"), A = s.useRef(null), m = n ? u.intl.string(d.default.G9fGlP) : u.intl.string(u.t.ojM1xJ), _ = s.useCallback(() => {
+    } = (0, o.TW)("FavoriteGuildHeaderActionButton"), A = s.useRef(null), m = n ? u.intl.string(d.default.G9fGlP) : u.intl.string(u.t.ojM1xJ), p = s.useCallback(() => {
         (0, r.pX)(c.BVt.ME)
-    }, []), p = s.useCallback(e => {
+    }, []), _ = s.useCallback(e => {
         let {
             closePopout: t
         } = e;
@@ -39,7 +39,7 @@ function A(e) {
         position: "bottom",
         align: "left",
         spacing: 4,
-        renderPopout: p,
+        renderPopout: _,
         children: (e, n) => {
             let {
                 isShown: s
@@ -68,7 +68,7 @@ function A(e) {
         children: (0, i.jsx)(a.DUT, {
             className: t,
             "aria-label": m,
-            onClick: _,
+            onClick: p,
             children: (0, i.jsx)(a.PGe, {
                 color: "currentColor",
                 size: "refresh_sm"

@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(442433),
     A = n(730134),
     m = n(964486),
-    _ = n(80682),
-    p = n(58736),
+    p = n(80682),
+    _ = n(58736),
     g = n(967144),
     f = n(342296),
     x = n(696451),
@@ -35,21 +35,21 @@ let O = s.memo(function(e) {
         let {
             toggleRequestToSpeakSidebar: t,
             chatOpen: n
-        } = e, s = (0, i.jsx)(p.Ay.Icon, {
+        } = e, s = (0, i.jsx)(_.Ay.Icon, {
             icon: u.PGe,
             tooltip: j.intl.string(j.t.cpT0Cq),
             onClick: t
         });
-        return (0, i.jsxs)(p.Ay, {
+        return (0, i.jsxs)(_.Ay, {
             toolbar: s,
             className: a()(R.N1, {
                 [R.X_]: n
             }),
-            children: [(0, i.jsx)(p.Ay.Icon, {
+            children: [(0, i.jsx)(_.Ay.Icon, {
                 icon: u.E7M,
                 disabled: !0,
                 "aria-label": j.intl.string(j.t.TYZgzW)
-            }), (0, i.jsx)(p.Ay.Title, {
+            }), (0, i.jsx)(_.Ay.Title, {
                 children: j.intl.string(j.t.TYZgzW)
             })]
         })
@@ -59,9 +59,9 @@ let O = s.memo(function(e) {
             channel: t,
             participant: l,
             tempDisableOnInit: a = !1
-        } = e, r = s.useRef(null), [p, C] = s.useState(a);
+        } = e, r = s.useRef(null), [_, C] = s.useState(a);
         (0, m.Ay)(() => {
-            if (!p) return;
+            if (!_) return;
             let e = setTimeout(() => C(!1), 1e3);
             return () => clearTimeout(e)
         });
@@ -76,7 +76,7 @@ let O = s.memo(function(e) {
         })), y = (0, c.bG)([x.Ay], () => x.Ay.getMember(N, l.user.id)), O = (0, g.gn)(t.guild_id, y?.userId, y?.colorStrings ?? null), L = s.useMemo(() => ({
             [N]: [l.user.id]
         }), [N, l.user.id]);
-        (0, _.Eq)(L, "RequestToSpeakSidebar");
+        (0, p.Eq)(L, "RequestToSpeakSidebar");
         let M = l.rtsState === S.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK,
             D = e => {
                 (0, h.L3)(e, async () => {
@@ -136,7 +136,7 @@ let O = s.memo(function(e) {
                         onClick: function() {
                             (0, I.lL)(t, l.user.id, !1)
                         },
-                        disabled: M || p,
+                        disabled: M || _,
                         icon: u.LvC,
                         variant: "secondary",
                         "aria-label": M ? j.intl.string(j.t.h9rsTd) : j.intl.string(j.t.f0T7hI)

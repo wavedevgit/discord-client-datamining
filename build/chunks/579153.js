@@ -20,9 +20,9 @@ let m = e => {
         remoteMode: n = !1
     } = e, {
         parentAnalyticsLocation: m
-    } = (0, a.Ay)(), _ = s.useRef(null);
+    } = (0, a.Ay)(), p = s.useRef(null);
     return (0, i.jsx)(l.YNO, {
-        targetElementRef: _,
+        targetElementRef: p,
         renderPopout: e => {
             let {
                 closePopout: s
@@ -49,7 +49,7 @@ let m = e => {
                 isShown: s
             } = t;
             return (0, i.jsx)(u.l, {
-                ref: _,
+                ref: p,
                 isTrayButton: !0,
                 onClick: e => {
                     (0, o.X)(m, o.O.MORE), n(e)

@@ -1,8 +1,8 @@
 /** chunk id: 204722 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    W: () => Y,
-    f: () => z
+    W: () => W,
+    f: () => Y
 });
 var i = n(627968),
     s = n(64700),
@@ -16,8 +16,8 @@ var i = n(627968),
     h = n(298990),
     A = n(942857),
     m = n(646865),
-    _ = n(833349),
-    p = n(869003),
+    p = n(833349),
+    _ = n(869003),
     g = n(521588),
     f = n(688810),
     x = n(362490),
@@ -43,29 +43,28 @@ var i = n(627968),
     k = n(42473),
     V = n(652215),
     B = n(49999),
-    H = n(654487),
-    F = n(985018),
-    K = n(294726),
-    W = n(275540);
+    H = n(985018),
+    F = n(294726),
+    K = n(275540);
 
-function Y(e, t, n) {
-    return null != e && (null != n ? n.applicationId === e.id : null != t && (t.application_id === e.id || e.linkedGames?.some(e => e.id === t.application_id)) && t.type === V.$pd.PLAYING && (0, _.A)(t, V.jUm.JOIN))
+function W(e, t, n) {
+    return null != e && (null != n ? n.applicationId === e.id : null != t && (t.application_id === e.id || e.linkedGames?.some(e => e.id === t.application_id)) && t.type === V.$pd.PLAYING && (0, p.A)(t, V.jUm.JOIN))
 }
-let z = s.memo(function(e) {
+let Y = s.memo(function(e) {
         let {
             stream: t,
             canGoLive: l,
             guildId: r,
             isStreaming: c,
             channel: A,
-            canStream: _,
+            canStream: p,
             runningGame: g,
             embeddedActivity: I,
             frame: O,
             activity: M,
             application: D,
-            analyticsContext: H,
-            inviteButtonRef: z,
+            analyticsContext: Y,
+            inviteButtonRef: J,
             accountLinkButtonRef: Q,
             startAuthorization: $,
             canStartAuthorization: Z,
@@ -74,7 +73,7 @@ let z = s.memo(function(e) {
         } = e, {
             parentAnalyticsLocation: en,
             analyticsLocations: ei
-        } = (0, f.Ay)(), es = (0, L.Ay)(D?.id), el = Y(D, M, I), {
+        } = (0, f.Ay)(), es = (0, L.Ay)(D?.id), el = W(D, M, I), {
             enabled: ea
         } = y._.useConfig({
             location: "activity-panel"
@@ -88,15 +87,15 @@ let z = s.memo(function(e) {
             }), (0, C.X)(en, C.O.INVITE), w.default.track(V.HAw.OPEN_MODAL, {
                 type: "Send Join Invite",
                 application_id: M.application_id,
-                location: H.location
+                location: Y.location
             }), (0, h.qf)(M, !1)
-        }, [M, H, en, g]), e_ = s.useCallback((e, t) => () => {
-            (0, C.X)(en, C.O.LEAVE_ACTIVITY), p.A.leaveActivity({
+        }, [M, Y, en, g]), ep = s.useCallback((e, t) => () => {
+            (0, C.X)(en, C.O.LEAVE_ACTIVITY), _.A.leaveActivity({
                 location: t,
                 applicationId: e,
                 showFeedback: !0
             })
-        }, [en]), ep = s.useCallback(e => () => {
+        }, [en]), e_ = s.useCallback(e => () => {
             (0, C.X)(en, C.O.LEAVE_ACTIVITY), N.A.stopFrame({
                 applicationId: e
             })
@@ -134,21 +133,21 @@ let z = s.memo(function(e) {
                 buttonVariant: "member"
             }), (0, S.A)({
                 analyticsLocations: ei,
-                analyticsLocation: H.location,
+                analyticsLocation: Y.location,
                 guildId: r
             })
-        }, [r, ei, H.location, g?.id]), eI = s.useRef(null), [eN, eb] = s.useState(!1);
+        }, [r, ei, Y.location, g?.id]), eI = s.useRef(null), [eN, eb] = s.useState(!1);
         s.useEffect(() => () => {
             null != eI.current && clearTimeout(eI.current)
         }, []), s.useEffect(() => {
             ee && (eb(!1), null != eI.current && (clearTimeout(eI.current), eI.current = null))
         }, [ee]);
-        let eS = es?.guildId == null || null == D ? null : (0, i.jsx)(J, {
+        let eS = es?.guildId == null || null == D ? null : (0, i.jsx)(X, {
                 guildId: es.guildId,
                 applicationId: es.id
             }),
-            eT = eh ? (0, i.jsx)(X, {
-                tooltipText: F.intl.formatToPlainString(K.default.YhnUVO, {
+            eT = eh ? (0, i.jsx)(q, {
+                tooltipText: H.intl.formatToPlainString(F.default.YhnUVO, {
                     gameName: ex
                 }),
                 onClick: eC,
@@ -172,8 +171,8 @@ let z = s.memo(function(e) {
                         onClose: () => n(B.i.USER_DISMISS)
                     })
                 }
-            }) : eA ? (0, i.jsx)(X, {
-                tooltipText: F.intl.formatToPlainString(K.default.lwwiHE, {
+            }) : eA ? (0, i.jsx)(q, {
+                tooltipText: H.intl.formatToPlainString(F.default.lwwiHE, {
                     gameName: ex
                 }),
                 onClick: eE,
@@ -204,12 +203,12 @@ let z = s.memo(function(e) {
                 let s = null;
                 return c ? (e = !1, t = () => {
                     eg(), (0, C.X)(en, C.O.STREAM, !1)
-                }, n = u.GT3, s = F.intl.string(F.t.S5anIc)) : _ ? (e = !1, t = () => {
+                }, n = u.GT3, s = H.intl.string(H.t.S5anIc)) : p ? (e = !1, t = () => {
                     ef(), (0, C.X)(en, C.O.STREAM, !0)
-                }, n = u.Fzq, s = null != g ? F.intl.formatToPlainString(F.t.AB5gTy, {
+                }, n = u.Fzq, s = null != g ? H.intl.formatToPlainString(H.t.AB5gTy, {
                     game: g.name
-                }) : F.intl.string(F.t.FeUKeA)) : (e = !0, t = null, n = u.Fzq, null != A && (0, G.gV)(A.type) && (s = F.intl.string(F.t.uQn9B8))), (0, i.jsx)("div", {
-                    className: W.IF,
+                }) : H.intl.string(H.t.FeUKeA)) : (e = !0, t = null, n = u.Fzq, null != A && (0, G.gV)(A.type) && (s = H.intl.string(H.t.uQn9B8))), (0, i.jsx)("div", {
+                    className: K.IF,
                     children: (0, i.jsx)(k.A, {
                         tooltipText: s,
                         disabled: e,
@@ -219,23 +218,23 @@ let z = s.memo(function(e) {
                 })
             }(),
             ey = el && null == I ? (0, i.jsx)(k.A, {
-                ref: z,
-                tooltipText: F.intl.string(F.t["hC/Zey"]),
+                ref: J,
+                tooltipText: H.intl.string(H.t["hC/Zey"]),
                 onClick: em,
                 icon: u.DpX
             }) : null,
             ej = null == I ? null : (0, i.jsx)(k.A, {
-                tooltipText: F.intl.string(F.t["R/FK4A"]),
-                onClick: e_(I.applicationId, I.location),
+                tooltipText: H.intl.string(H.t["R/FK4A"]),
+                onClick: ep(I.applicationId, I.location),
                 icon: u.oLl
             }),
             eR = null == O ? null : (0, i.jsx)(k.A, {
-                tooltipText: F.intl.string(F.t["R/FK4A"]),
-                onClick: ep(O.applicationId),
+                tooltipText: H.intl.string(H.t["R/FK4A"]),
+                onClick: e_(O.applicationId),
                 icon: u.oLl
             }),
             eO = null == t ? null : (0, i.jsx)(E.A, {}),
-            eL = !Z || ee ? null : (0, i.jsx)(q, {
+            eL = !Z || ee ? null : (0, i.jsx)(z, {
                 runningGame: g,
                 startAuthorization: () => {
                     $({
@@ -248,8 +247,8 @@ let z = s.memo(function(e) {
                 ref: Q
             }),
             eM = !Z || ee ? null : (0, i.jsx)(d.AM, {
-                title: F.intl.string(F.t.ULvRFd),
-                body: F.intl.string(F.t["HJJDr+"]),
+                title: H.intl.string(H.t.ULvRFd),
+                body: H.intl.string(H.t["HJJDr+"]),
                 targetElementRef: Q,
                 position: "top",
                 align: "center",
@@ -262,11 +261,11 @@ let z = s.memo(function(e) {
                 }
             });
         return null == ev && null == ey && null == ej && null == eR && null == eL && null == eS && null == eT ? null : (0, i.jsxs)("div", {
-            className: W.o1,
+            className: K.o1,
             children: [eS ?? eL ?? ey, eT, ev, ej ?? eR ?? eO, eM]
         })
     }),
-    q = s.forwardRef(function(e, t) {
+    z = s.forwardRef(function(e, t) {
         let {
             runningGame: n,
             startAuthorization: s,
@@ -282,11 +281,11 @@ let z = s.memo(function(e) {
                 }), s()
             },
             icon: r.A,
-            tooltipText: F.intl.string(F.t.sbdnpw)
+            tooltipText: H.intl.string(H.t.sbdnpw)
         })
     });
 
-function X(e) {
+function q(e) {
     let {
         tooltipText: t,
         onClick: n,
@@ -300,21 +299,19 @@ function X(e) {
         {
             isQuestBarEmpty: h,
             hasLoadedQuestBar: m
-        } = (0, O.c9)({
-            location: H.rE.CONFLICT_CHECKS
-        }),
-        [_, p] = (0, I.kn)(!d && h && m ? [c.M.GAME_DETECTION_CREATE_GAME_SERVER_COACHMARK] : [], void 0, !0),
+        } = (0, O.c9)(),
+        [p, _] = (0, I.kn)(!d && h && m ? [c.M.GAME_DETECTION_CREATE_GAME_SERVER_COACHMARK] : [], void 0, !0),
         [f, x] = (0, I.kn)([c.M.GAME_SERVER_GAME_DETECTION_UPSELL_NEW_BADGE], void 0, !0),
         C = s.useCallback(() => {
-            p(B.i.TAKE_ACTION), x(B.i.TAKE_ACTION), n()
-        }, [p, x, n]);
+            _(B.i.TAKE_ACTION), x(B.i.TAKE_ACTION), n()
+        }, [_, x, n]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
-            className: W.IF,
+            className: K.IF,
             children: [(0, i.jsx)("div", {
-                className: W.uD,
+                className: K.uD,
                 children: (0, i.jsx)("div", {
-                    className: W.Z9
+                    className: K.Z9
                 })
             }), (0, i.jsx)(k.A, {
                 ref: r,
@@ -326,15 +323,15 @@ function X(e) {
                 right: 2,
                 alert: !0
             })]
-        }), null != _ && a({
+        }), null != p && a({
             targetElementRef: r,
-            markAsDismissed: p,
+            markAsDismissed: _,
             markBadgeAsDismissed: x
         })]
     })
 }
 
-function J(e) {
+function X(e) {
     let {
         applicationId: t,
         guildId: n
@@ -361,7 +358,7 @@ function J(e) {
     }, [r]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(k.A, {
-            tooltipText: F.intl.string(F.t.vyaWs7),
+            tooltipText: H.intl.string(H.t.vyaWs7),
             onClick: h,
             onMouseDown: o,
             icon: u.U1X,

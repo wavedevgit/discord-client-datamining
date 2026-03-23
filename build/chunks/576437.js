@@ -1,7 +1,7 @@
 /** chunk id: 576437 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    M: () => f
+    M: () => g
 });
 var i = n(627968),
     s = n(64700),
@@ -15,43 +15,40 @@ var i = n(627968),
     h = n(461213),
     A = n(954571),
     m = n(130802),
-    _ = n(652215),
-    p = n(49999),
-    g = n(654487);
-let f = e => {
+    p = n(652215),
+    _ = n(49999);
+let g = e => {
     let {
         children: t,
         isForceShowSharingPopout: n,
-        setIsForceShowSharingPopout: f,
-        popoutTargetRef: x
-    } = e, C = function(e) {
+        setIsForceShowSharingPopout: g,
+        popoutTargetRef: f
+    } = e, x = function(e) {
         let {
             isForceShowSharingPopout: t
         } = e, {
             isQuestBarEmpty: n,
             hasLoadedQuestBar: i
-        } = (0, c.c9)({
-            location: g.rE.CONFLICT_CHECKS
-        }), s = d.tz.useSetting(), a = (0, u.G)(), r = (0, l.bG)([h.A], () => h.A.getStatus()), {
+        } = (0, c.c9)(), s = d.tz.useSetting(), a = (0, u.G)(), r = (0, l.bG)([h.A], () => h.A.getStatus()), {
             isOpen: A
         } = (0, o.A)();
         if ((n && i || t) && !a && !A && !__OVERLAY__) {
-            if (!s && r === _.clD.INVISIBLE) return t ? m.u5.ActivityAndStatus : m.u5.ActivityAndStatusNux;
+            if (!s && r === p.clD.INVISIBLE) return t ? m.u5.ActivityAndStatus : m.u5.ActivityAndStatusNux;
             if (!s) return t ? m.u5.Activity : m.u5.ActivityNux;
-            if (r === _.clD.INVISIBLE) return t ? m.u5.Status : m.u5.StatusNux
+            if (r === p.clD.INVISIBLE) return t ? m.u5.Status : m.u5.StatusNux
         }
         return null
     }({
         isForceShowSharingPopout: n
     });
     (0, s.useEffect)(() => {
-        n && A.default.track(_.HAw.OPEN_POPOUT, {
+        n && A.default.track(p.HAw.OPEN_POPOUT, {
             type: "SharingPrivacyPopout"
         })
     }, [n]);
-    let E = n ? [] : [a.M.SHARE_ACTIVITY_COACHMARK_V2];
+    let C = n ? [] : [a.M.SHARE_ACTIVITY_COACHMARK_V2];
     return (0, i.jsx)(r.Ay, {
-        contentTypes: E,
+        contentTypes: C,
         children: e => {
             let {
                 visibleContent: s,
@@ -59,11 +56,11 @@ let f = e => {
             } = e, r = s === a.M.SHARE_ACTIVITY_COACHMARK_V2 || n;
             return (0, i.jsx)(m.zd, {
                 showPopout: r,
-                popoutState: C,
+                popoutState: x,
                 handleClose: () => {
-                    l(p.i.USER_DISMISS), f(!1)
+                    l(_.i.USER_DISMISS), g(!1)
                 },
-                popoutTargetRef: x,
+                popoutTargetRef: f,
                 children: t
             })
         }

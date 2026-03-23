@@ -21,20 +21,20 @@ function h(e) {
         gameCommunityGuildId: A,
         markAsDismissed: m
     } = e, {
-        analyticsLocations: _
+        analyticsLocations: p
     } = (0, r.Ay)();
     return s.useEffect(() => {
         o.default.track(c.HAw.GAME_COMMUNITY_UPSELL_VIEWED, {
-            location_stack: _,
+            location_stack: p,
             application_id: n,
             guild_id: A
         })
-    }, [n, A, _]), (0, i.jsx)(l.AM, {
+    }, [n, A, p]), (0, i.jsx)(l.AM, {
         targetElementRef: t,
         position: "top",
         onRequestClose: () => {
             o.default.track(c.HAw.GAME_COMMUNITY_UPSELL_DISMISSED, {
-                location_stack: _,
+                location_stack: p,
                 application_id: n,
                 guild_id: A
             }), m(d.i.USER_DISMISS)
@@ -47,7 +47,7 @@ function h(e) {
             text: u.intl.string(u.t.RVfNGU),
             onClick: () => {
                 o.default.track(c.HAw.GAME_COMMUNITY_UPSELL_ACCEPTED, {
-                    location_stack: _,
+                    location_stack: p,
                     application_id: n,
                     guild_id: A
                 }), m(d.i.TAKE_ACTION), a.A.joinGuild(A, {

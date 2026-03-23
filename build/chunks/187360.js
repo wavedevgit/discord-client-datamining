@@ -1,7 +1,7 @@
 /** chunk id: 187360 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => p
 });
 var i = n(627968),
     s = n(64700),
@@ -16,10 +16,10 @@ var i = n(627968),
     A = n(652215),
     m = n(985018);
 
-function _(e) {
+function p(e) {
     let {
         channel: t
-    } = e, n = s.useRef(null), [_, p] = (0, l.yK)([o.Ay], () => [o.Ay.isChannelMuted(t.getGuildId(), t.id), o.Ay.resolvedMessageNotifications(t)], [t]), [g, f] = s.useState(!1);
+    } = e, n = s.useRef(null), [p, _] = (0, l.yK)([o.Ay], () => [o.Ay.isChannelMuted(t.getGuildId(), t.id), o.Ay.resolvedMessageNotifications(t)], [t]), [g, f] = s.useState(!1);
     s.useEffect(() => {
         let e = () => f(!0);
         return c._.subscribe(A.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
@@ -28,8 +28,8 @@ function _(e) {
     }, []);
     let x = e => {
             e.shiftKey ? r.A.updateChannelOverrideSettings(t.guild_id, t.id, {
-                muted: !_
-            }, d.G_.muted(!_)) : f(e => !e)
+                muted: !p
+            }, d.G_.muted(!p)) : f(e => !e)
         },
         C = m.intl.string(m.t.h850Ss);
     return (0, i.jsx)(a.YNO, {
@@ -56,7 +56,7 @@ function _(e) {
                 ref: n,
                 onClick: x,
                 tooltip: s ? null : C,
-                icon: _ || p !== A.orn.ALL_MESSAGES ? a.a_I : a.XFE,
+                icon: p || _ !== A.orn.ALL_MESSAGES ? a.a_I : a.XFE,
                 "aria-label": C,
                 selected: s
             })

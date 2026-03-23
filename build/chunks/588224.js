@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(429913),
     A = n(313961),
     m = n(532622),
-    _ = n(550946),
-    p = n(140547),
+    p = n(550946),
+    _ = n(140547),
     g = n(242919),
     f = n(7054),
     x = n(220995),
@@ -50,14 +50,14 @@ let k = s.memo(e => {
     } = e, x = s.id, C = (0, r.bG)([v.default], () => v.default.getId() === x, [x]), [S, j, R] = (0, r.yK)([y.Ay], () => C ? [!y.Ay.isSupported() || y.Ay.isSelfMute() || y.Ay.isSelfMutedTemporarily(), y.Ay.isSelfDeaf(), !1] : [!y.Ay.isSupported() || y.Ay.isLocalMute(x), !1, y.Ay.isLocalVideoDisabled(x)], [C, x]), w = (0, r.bG)([L.A], () => L.A.isPrioritySpeaker(x)), k = (0, c.A)({
         userId: x,
         checkSoundSharing: !0
-    }), V = (0, _.A)(l.guild_id, x), B = (0, r.bG)([A.A], () => A.A.getGuildRingingUsers(l.id).has(x)), H = (0, r.bG)([d.Ay], () => d.Ay.getEmbeddedActivitiesForChannel(l.id).find(e => {
+    }), V = (0, p.A)(l.guild_id, x), B = (0, r.bG)([A.A], () => A.A.getGuildRingingUsers(l.id).has(x)), H = (0, r.bG)([d.Ay], () => d.Ay.getEmbeddedActivitiesForChannel(l.id).find(e => {
         let {
             userIds: t
         } = e;
         return t.has(x)
     }), [x, l.id]), F = (0, h.A)(null != H ? [H.applicationId] : []), K = (0, N.Ay)(x, l.guild_id)[0], W = (0, u.YY)(K?.application_id).data ?? void 0, [Y, z] = (0, r.yK)([T.A], () => [T.A.getStreamForUser(x, l.getGuildId()), T.A.getActiveStreamForUser(x, l.getGuildId())], [l, x]), q = (0, r.bG)([O.A], () => O.A.getSessionById(a)), X = D.Ay.useName(s), J = (0, r.bG)([M.A], () => M.A.getVoicePlatformForChannel(l.id, x), [l.id, x]), {
         enableHangStatus: Q
-    } = (0, p.$j)({
+    } = (0, _.$j)({
         guildId: l.guild_id,
         location: "VoiceUsers"
     }), $ = (0, m.Ay)(l, !0, s), Z = (0, r.bG)([g.A], () => C ? g.A.getHangStatusActivity() : null, [C]), ee = (0, f.h)(x), et = (0, b.uy)(l.id, x), {
@@ -109,8 +109,8 @@ let V = [],
             collapsed: d,
             collapsedMax: u = 6,
             tabIndex: m,
-            location: _,
-            numAudience: p,
+            location: p,
+            numAudience: _,
             withGuildIcon: g = !1,
             className: f,
             children: E,
@@ -169,15 +169,15 @@ let V = [],
                         previewIsOpen: y,
                         shouldShowHoverPopout: N === s.id,
                         tabIndex: m,
-                        location: _
+                        location: p
                     }, `voice-user-${s.id}-${o}`)
                 });
             return D && s.unshift((0, i.jsx)(x.p, {
                 channel: l,
                 onClose: P
-            }, "voice-invite-suggestions-button")), null != p && p > 0 ? s.push((0, i.jsx)(G.aI, {
+            }, "voice-invite-suggestions-button")), null != _ && _ > 0 ? s.push((0, i.jsx)(G.aI, {
                 collapsed: d,
-                numAudience: p
+                numAudience: _
             })) : d && M.length > u + 1 && s.push((0, i.jsx)(G.LR, {
                 numUsers: M.length - u
             })), s

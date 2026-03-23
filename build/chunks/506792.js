@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(576705),
     A = n(557534),
     m = n(166444),
-    _ = n(652215),
-    p = n(790782),
+    p = n(652215),
+    _ = n(790782),
     g = n(728444);
 let f = (0, c.a)(function(e) {
     let {
@@ -33,7 +33,7 @@ let f = (0, c.a)(function(e) {
     } = e, S = (0, r.bG)([d.A, u.Ay], () => {
         let e = u.Ay.getDirectoryChannelIds(t.id);
         return 0 === e.length ? null : d.A.getChannel(e[0])
-    }), T = (0, r.bG)([d.A], () => d.A.getChannel(S?.parent_id)), v = l === S?.id, y = (0, r.bG)([h.A], () => null != T ? h.A.can(_.xBc.MANAGE_CHANNELS, T) : null != t && h.A.can(_.xBc.MANAGE_CHANNELS, t)), j = s.useCallback(e => {
+    }), T = (0, r.bG)([d.A], () => d.A.getChannel(S?.parent_id)), v = l === S?.id, y = (0, r.bG)([h.A], () => null != T ? h.A.can(p.xBc.MANAGE_CHANNELS, T) : null != t && h.A.can(p.xBc.MANAGE_CHANNELS, t)), j = s.useCallback(e => {
         null != S && (0, o.L3)(e, async () => {
             let {
                 default: e
@@ -60,7 +60,7 @@ let f = (0, c.a)(function(e) {
                 selected: v,
                 onContextMenu: j,
                 forceInteractable: !0,
-                resolvedUnreadSetting: p.e.ONLY_MENTIONS,
+                resolvedUnreadSetting: _.e.ONLY_MENTIONS,
                 children: [(0, i.jsx)(A.gQ, {
                     channel: S,
                     tabIndex: b

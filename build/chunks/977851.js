@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(384059),
     A = n(222823),
     m = n(309010),
-    _ = n(741961),
-    p = n(234320),
+    p = n(741961),
+    _ = n(234320),
     g = n(20465),
     f = n(108460),
     x = n(709562),
@@ -24,7 +24,7 @@ var i = n(627968),
     E = n(985018);
 
 function I(e) {
-    let t = (0, o.bG)([_.A], () => !(0, r.isEmpty)(_.A.getTypingUsers(e)), [e]),
+    let t = (0, o.bG)([p.A], () => !(0, r.isEmpty)(p.A.getTypingUsers(e)), [e]),
         n = (0, o.bG)([m.A], () => m.A.getVoiceChannelId() === e, [e]),
         {
             unreadCount: i,
@@ -67,7 +67,7 @@ function b(e) {
             showingClassName: r,
             onClick: A,
             inPopout: m,
-            showRequestToSpeakSidebar: _,
+            showRequestToSpeakSidebar: p,
             toggleRequestToSpeakSidebar: f,
             ...b
         } = e,
@@ -104,8 +104,8 @@ function b(e) {
             }
         }(n),
         L = s.useCallback(() => {
-            (0, h.X)(S, h.O.CHAT, !y), A?.(), !y && _ && f?.(), c.A.updateChatOpen(n, !y, "toggle chat button")
-        }, [n, y, A, _, f, S]),
+            (0, h.X)(S, h.O.CHAT, !y), A?.(), !y && p && f?.(), c.A.updateChatOpen(n, !y, "toggle chat button")
+        }, [n, y, A, p, f, S]),
         M = s.useCallback(e => {
             let {
                 className: t
@@ -118,14 +118,14 @@ function b(e) {
         D = s.useCallback(() => {
             v.current?.focus()
         }, []);
-    (0, p.Vo)({
+    (0, _.Vo)({
         event: C.jej.FOCUS_CHAT_BUTTON,
         handler: T ? null : D
     });
     let [G, U] = s.useState(!1), P = s.useCallback(() => {
         m && U(!0)
     }, [m]);
-    (0, p.Vo)({
+    (0, _.Vo)({
         event: C.jej.SHOW_TEXT_IN_VOICE_POPOUT_COMING_SOON_TIP,
         handler: P
     }), s.useEffect(() => {

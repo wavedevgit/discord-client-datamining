@@ -16,8 +16,8 @@ var s = n(934551),
     h = n(562153),
     A = n(622543),
     m = n(987112),
-    _ = n(31432),
-    p = n(389996),
+    p = n(31432),
+    _ = n(389996),
     g = n(559506),
     f = n(361311),
     x = n(886891),
@@ -61,7 +61,7 @@ function L(e) {
             nickname: h.Ay.getName(null, M.id, t),
             pronouns: L?.pronouns,
             onOpenProfile: G,
-            tags: (0, i.jsx)(_.A, {
+            tags: (0, i.jsx)(p.A, {
                 displayProfile: L,
                 themeType: j.d.SIDEBAR
             }),
@@ -110,7 +110,7 @@ function L(e) {
             children: [!V && L?.bio != null && L?.bio !== "" && (0, i.jsx)(N.A, {
                 heading: R.intl.string(R.t.ZzAR2Y),
                 headingColor: "text-strong",
-                children: (0, i.jsx)(p.A, {
+                children: (0, i.jsx)(_.A, {
                     userId: t.id,
                     userBio: L.bio,
                     isHoveringOrFocusing: D,

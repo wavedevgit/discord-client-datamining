@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(203982),
     A = n(484191),
     m = n(665450),
-    _ = n(526369),
-    p = n(699707),
+    p = n(526369),
+    _ = n(699707),
     g = n(713397),
     f = n(652215),
     x = n(806931),
@@ -81,7 +81,7 @@ let E = (0, a.A)(e => {
             className: C.HA,
             justify: d.A.Justify.CENTER,
             align: d.A.Align.CENTER,
-            children: (0, i.jsx)(_.A, {
+            children: (0, i.jsx)(p.A, {
                 channel: T,
                 className: C.g9,
                 participants: w,
@@ -94,7 +94,7 @@ let E = (0, a.A)(e => {
             })
         })
     }
-    return (0, i.jsx)(p.A, {
+    return (0, i.jsx)(_.A, {
         onFullscreenParticipant: S,
         onContextMenuParticipant: b,
         onSelectParticipant: N,

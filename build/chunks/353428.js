@@ -17,8 +17,8 @@ var i = n(627968),
     h = n(709066),
     A = n(47167),
     m = n(713654),
-    _ = n(932001),
-    p = n(263063),
+    p = n(932001),
+    _ = n(263063),
     g = n(394953),
     f = n(976860),
     x = n(622543),
@@ -42,7 +42,7 @@ function G(e) {
     let {
         channel: t,
         children: n
-    } = e, s = (0, u.h)(t.linkedLobby?.application_id), [l, a] = (0, _.kn)([o.M.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP], void 0, !0);
+    } = e, s = (0, u.h)(t.linkedLobby?.application_id), [l, a] = (0, p.kn)([o.M.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP], void 0, !0);
     if (null == s) return null;
     let r = b.Ay.getApplicationIconURL({
             id: s.id,
@@ -102,8 +102,8 @@ function U(e) {
         handleClick: c,
         handleContextMenu: u,
         handleParentClick: h,
-        handleParentContextMenu: _,
-        renderFollowButton: p
+        handleParentContextMenu: p,
+        renderFollowButton: _
     } = e, g = (0, m.gU)(t, r), {
         prefix: f,
         level: x
@@ -178,7 +178,7 @@ function U(e) {
                     onContextMenu: u,
                     onClick: c,
                     children: C
-                }), null != p ? p() : null]
+                }), null != _ ? _() : null]
             });
         case O.rbe.GUILD_VOICE:
             return (0, i.jsxs)(s.Fragment, {
@@ -207,7 +207,7 @@ function U(e) {
                 I = (0, i.jsxs)(s.Fragment, {
                     children: [k(e, M.intl.string(M.t.Pnajj0)), (0, i.jsx)(j.A.Title, {
                         level: x,
-                        onContextMenu: _,
+                        onContextMenu: p,
                         onClick: h,
                         className: a()(D.rg, D.or),
                         children: (0, A.m1)(l, N.default, E.A)
@@ -319,9 +319,9 @@ function V(e) {
                 direction: "left"
             }), (0, i.jsx)("div", {
                 ref: u,
-                children: (0, i.jsx)(p.Ay, {
+                children: (0, i.jsx)(_.Ay, {
                     guild: t,
-                    size: p.Ay.Sizes.SMALLER,
+                    size: _.Ay.Sizes.SMALLER,
                     className: D.gL,
                     active: !0
                 })

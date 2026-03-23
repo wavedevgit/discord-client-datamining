@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(164684),
     A = n(85109),
     m = n(914703),
-    _ = n(932883),
-    p = n(394953),
+    p = n(932883),
+    _ = n(394953),
     g = n(654795),
     f = n(849077),
     x = n(652215),
@@ -37,7 +37,7 @@ function N(e) {
         message: l,
         Icon: o,
         interactionType: c
-    } = e, [d, u] = (0, s.useState)(!1), h = (0, _.op)();
+    } = e, [d, u] = (0, s.useState)(!1), h = (0, p.op)();
     return (0, i.jsx)(a.m, {
         text: t,
         position: "top",
@@ -48,7 +48,7 @@ function N(e) {
         children: (0, i.jsx)(r.DUT, {
             className: E.XI,
             onClick: e => {
-                (0, _.Ml)({
+                (0, p.Ml)({
                     message: l,
                     interactionType: c,
                     viewId: h
@@ -71,12 +71,12 @@ function b(e) {
         Menu: c,
         interactionType: d,
         actionType: u
-    } = e, h = (0, _.op)(), [A, m] = (0, s.useState)(!1), [p, f] = (0, s.useState)(!1), x = (0, s.useRef)(null), {
+    } = e, h = (0, p.op)(), [A, m] = (0, s.useState)(!1), [_, f] = (0, s.useState)(!1), x = (0, s.useRef)(null), {
         openMenu: C,
         closeMenu: I
     } = (0, g.s)();
     return (0, i.jsx)(r.YNO, {
-        shouldShow: p,
+        shouldShow: _,
         animation: r.YNO.Animation.NONE,
         position: "right",
         align: "top",
@@ -107,11 +107,11 @@ function b(e) {
                 className: E.XI,
                 onClick: e => {
                     let t;
-                    (0, _.Ml)({
+                    (0, p.Ml)({
                         message: n,
                         interactionType: d,
                         viewId: h
-                    }), e.stopPropagation(), f(t = !p), t ? C(n.id, u) : I(n.id, u)
+                    }), e.stopPropagation(), f(t = !_), t ? C(n.id, u) : I(n.id, u)
                 },
                 children: (0, i.jsx)(o, {
                     ...e,
@@ -139,7 +139,7 @@ let S = {
                 objectType: x.AnalyticsObjectTypes.ACK_MANUAL
             }, !0, void 0, e.id)
         },
-        interactionType: _.X8.ACK
+        interactionType: p.X8.ACK
     },
     [f.kR.BOOKMARK]: {
         type: "menu",
@@ -149,7 +149,7 @@ let S = {
         }) : (0, i.jsx)(r.c$8, {
             ...e
         }),
-        interactionType: _.X8.BOOKMARK,
+        interactionType: p.X8.BOOKMARK,
         Menu: e => {
             let {
                 message: t,
@@ -200,7 +200,7 @@ let S = {
         type: "menu",
         Icon: r.XFE,
         label: C.intl.string(C.t.h850Ss),
-        interactionType: _.X8.SETTINGS,
+        interactionType: p.X8.SETTINGS,
         Menu: e => {
             let {
                 channel: t,
@@ -227,7 +227,7 @@ function T(e) {
             channel: l,
             isUnread: a
         } = e,
-        o = (t = (0, p.i3)(), (0, s.useMemo)(() => {
+        o = (t = (0, _.i3)(), (0, s.useMemo)(() => {
             let e = f.Th.MENTION,
                 n = new Set;
             return a && n.add(f.kR.ACK), t && n.add(f.kR.BOOKMARK), I[e].forEach(e => n.add(e)), Array.from(n)

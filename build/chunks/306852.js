@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(334463),
     A = n(175203),
     m = n(652215),
-    _ = n(806931),
-    p = n(697166),
+    p = n(806931),
+    _ = n(697166),
     g = n(976092);
 let f = "CameraPreviewPosition";
 
@@ -33,22 +33,22 @@ function x(e) {
         return [e, s.useCallback(e => {
             o.w.set(f, e), t(e)
         }, [])]
-    }(), b = s.useRef(null), S = null == x.getGuildId() ? 70 : 50, T = (0, r.bG)([h.A], () => h.A.pipWidth(_.R8.CAMERA_PREVIEW)), v = C.length, y = T * v + 8 * (v - 1), j = s.useMemo(() => ({
-        minWidth: _.mn[_.R8.CAMERA_PREVIEW] * v + 8 * (v - 1),
-        maxWidth: _.cF[_.R8.CAMERA_PREVIEW] * v + 8 * (v - 1)
+    }(), b = s.useRef(null), S = null == x.getGuildId() ? 70 : 50, T = (0, r.bG)([h.A], () => h.A.pipWidth(p.R8.CAMERA_PREVIEW)), v = C.length, y = T * v + 8 * (v - 1), j = s.useMemo(() => ({
+        minWidth: p.mn[p.R8.CAMERA_PREVIEW] * v + 8 * (v - 1),
+        maxWidth: p.cF[p.R8.CAMERA_PREVIEW] * v + 8 * (v - 1)
     }), [v]);
     s.useLayoutEffect(() => {
         b.current?.ensureIsInPosition()
     }, [C.length]);
     let R = s.useCallback(e => {
             let t = 0 === v ? e : (e - 8 * (v - 1)) / v;
-            c.EB(t, _.R8.CAMERA_PREVIEW)
+            c.EB(t, p.R8.CAMERA_PREVIEW)
         }, [v]),
         O = s.useCallback((e, t) => {
             N(t)
         }, [N]);
     return (0, i.jsx)("div", {
-        className: p.kL,
+        className: _.kL,
         children: (0, i.jsx)(u.S, {
             position: I,
             id: 0,
@@ -64,12 +64,12 @@ function x(e) {
             edgeOffsetRight: 16,
             resizeConfig: j,
             children: (0, i.jsx)("div", {
-                className: p.iA,
+                className: _.iA,
                 children: C.map(e => (0, i.jsx)(A.Ay, {
                     participant: e,
                     channel: x,
                     onContextMenu: n,
-                    className: a()(p.Vs, g.a8),
+                    className: a()(_.Vs, g.a8),
                     fit: A.Yl.COVER,
                     inCall: !0,
                     popoutType: d.N.NO_POPOUT,

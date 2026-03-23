@@ -22,8 +22,8 @@ function h(e) {
         renderIcon: h,
         text: A,
         selected: m,
-        trailing: _,
-        background: p,
+        trailing: p,
+        background: _,
         showUnread: g = !1,
         ref: f,
         ...x
@@ -52,7 +52,7 @@ function h(e) {
             className: l()(d.fx, u.iE, {
                 [u.J1]: m
             }, n),
-            children: [p, g ? (0, i.jsx)("div", {
+            children: [_, g ? (0, i.jsx)("div", {
                 className: l()(u.gy, u.WS)
             }) : null, (0, i.jsx)("div", {
                 className: l()([u.nf, u.ae, s]),
@@ -65,7 +65,7 @@ function h(e) {
                         className: u.UU,
                         "aria-hidden": !0,
                         children: A
-                    }), _]
+                    }), p]
                 })
             })]
         })

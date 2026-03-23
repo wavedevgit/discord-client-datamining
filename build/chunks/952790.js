@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(5180),
     A = n(209047),
     m = n(454938),
-    _ = n(855687),
-    p = n(731091),
+    p = n(855687),
+    _ = n(731091),
     g = n(544028),
     f = n(253932),
     x = n(576705),
@@ -140,7 +140,7 @@ function L(e) {
         ariaControls: o,
         ariaExpanded: m,
         children: g
-    } = e, f = (0, h.YC)(l), C = (0, c.bG)([x.A], () => (0, _.K)(x.A, l)), E = s.useCallback(() => {
+    } = e, f = (0, h.YC)(l), C = (0, c.bG)([x.A], () => (0, p.K)(x.A, l)), E = s.useCallback(() => {
         C ? (0, u.mMO)(async () => {
             let {
                 default: e
@@ -197,7 +197,7 @@ function L(e) {
                     color: "currentColor"
                 })
             })
-        }), l.id === N.gNP && (0, i.jsx)(p.g, {})]
+        }), l.id === N.gNP && (0, i.jsx)(_.g, {})]
     })
 }
 let M = s.memo(function(e) {
@@ -209,8 +209,8 @@ let M = s.memo(function(e) {
         onClick: d,
         onContextMenu: h,
         onMouseDown: A,
-        disableBannerAnimation: _,
-        "aria-expanded": p,
+        disableBannerAnimation: p,
+        "aria-expanded": _,
         "aria-controls": x,
         guild: I,
         guildBanner: b,
@@ -219,7 +219,7 @@ let M = s.memo(function(e) {
         headerClassName: R,
         communityInfoVisible: O,
         hasSubheader: M
-    } = e, G = I.features.has(N.GuildFeatures.ANIMATED_BANNER), U = (0, m.A)(I), P = !U && (0, E.A)(I), w = !U && O, k = (0, C.VI)(b) && G && !_, [V, B] = s.useState(!1), H = s.useRef(!1), F = s.useRef(null), K = t ?? F, W = s.useRef(void 0), Y = f.kt.getSetting(), z = (0, c.bG)([g.A], () => g.A.theme);
+    } = e, G = I.features.has(N.GuildFeatures.ANIMATED_BANNER), U = (0, m.A)(I), P = !U && (0, E.A)(I), w = !U && O, k = (0, C.VI)(b) && G && !p, [V, B] = s.useState(!1), H = s.useRef(!1), F = s.useRef(null), K = t ?? F, W = s.useRef(void 0), Y = f.kt.getSetting(), z = (0, c.bG)([g.A], () => g.A.theme);
     s.useEffect(() => {
         if (k && n && !H.current && Y) return B(!0), W.current = setTimeout(() => {
             B(!1)
@@ -264,7 +264,7 @@ let M = s.memo(function(e) {
                             onClick: d,
                             onContextMenu: h,
                             ariaControls: x,
-                            ariaExpanded: p,
+                            ariaExpanded: _,
                             children: j
                         })
                     }), P && (0, i.jsx)(y, {

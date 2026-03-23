@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(47167),
     A = n(598104),
     m = n(616356),
-    _ = n(383501),
-    p = n(222823),
+    p = n(383501),
+    _ = n(222823),
     g = n(309010),
     f = n(287809),
     x = n(607567),
@@ -168,8 +168,8 @@ class R extends s.PureComponent {
             treeItemProps: h
         } = this.props, {
             hovered: m,
-            animating: _
-        } = this.state, p = e.isMultiUserDM() && null == e.icon, g = () => (0, i.jsx)(o.jlP, {
+            animating: p
+        } = this.state, _ = e.isMultiUserDM() && null == e.icon, g = () => (0, i.jsx)(o.jlP, {
             to: S.BVt.CHANNEL(S.ME, e.id),
             onMouseEnter: () => this.setState({
                 hovered: !0
@@ -183,9 +183,9 @@ class R extends s.PureComponent {
                 name: t
             }) : "",
             onContextMenu: this.handleContextMenu,
-            icon: p ? void 0 : this.getChannelIcon(),
-            backgroundStyle: p ? "on-hover" : "always",
-            children: p ? (0, i.jsx)(A.A, {
+            icon: _ ? void 0 : this.getChannelIcon(),
+            backgroundStyle: _ ? "on-hover" : "always",
+            children: _ ? (0, i.jsx)(A.A, {
                 channel: e,
                 size: o._3J.SIZE_40,
                 facepileSizeOverride: o._3J.SIZE_32,
@@ -197,9 +197,9 @@ class R extends s.PureComponent {
             style: this.getAnimatedStyle(),
             children: (0, i.jsxs)(N.c, {
                 children: [(0, i.jsx)(E.A, {
-                    hovered: !_ && m,
-                    selected: !_ && n,
-                    unread: !_ && u,
+                    hovered: !p && m,
+                    selected: !p && n,
+                    unread: !p && u,
                     className: v.I
                 }), (0, i.jsx)(I.A, {
                     channel: e,
@@ -227,12 +227,12 @@ let O = s.forwardRef(function(e, t) {
     let n = e.channel.id,
         s = (0, h.Ay)(e.channel),
         l = (0, a.Vd)(n, 2),
-        c = (0, r.bG)([_.A], () => _.A.getChannelId(), []),
+        c = (0, r.bG)([p.A], () => p.A.getChannelId(), []),
         u = (0, r.bG)([d.A], () => d.A.getMode(n), [n]),
         A = (0, r.bG)([m.A], () => m.A.getAllApplicationStreamsForChannel(n).length > 0),
         f = (0, r.bG)([x.Ay], () => x.Ay.getVoiceStatesForChannel(e.channel).length > 0, [e.channel]),
         C = (0, r.bG)([g.A], () => g.A.getChannelId(), []),
-        E = (0, r.bG)([p.Ay], () => p.Ay.getMentionCount(n), [n]),
+        E = (0, r.bG)([_.Ay], () => _.Ay.getMentionCount(n), [n]),
         I = c === n,
         N = !1,
         b = !1;

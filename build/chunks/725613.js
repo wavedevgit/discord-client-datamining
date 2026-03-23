@@ -1,7 +1,7 @@
 /** chunk id: 725613 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => _
 });
 var i = n(478437),
     s = n(574381),
@@ -24,7 +24,7 @@ function A() {
 function m(e) {
     d.delete(e.guild.id)
 }
-class _ extends l.Ay.Store {
+class p extends l.Ay.Store {
     initialize() {
         this.waitFor(r.A)
     }
@@ -36,7 +36,7 @@ class _ extends l.Ay.Store {
         return d.has(e)
     }
 }
-let p = new _(a.h, {
+let _ = new p(a.h, {
     GUILD_CREATE: m,
     GUILD_DELETE: m,
     CONNECTION_RESUMED: A,

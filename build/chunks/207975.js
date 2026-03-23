@@ -1,19 +1,16 @@
 /** chunk id: 207975 params = (module,exports,require) **/
 s.d(t, {
-    A: () => o
+    A: () => a
 });
 var r = s(64700),
-    i = s(677402),
+    i = s(971276),
     n = s(639214),
-    l = s(830012),
-    a = s(654487);
+    l = s(830012);
 
-function o(e, t, s) {
-    let o = (0, i.H)({
-        location: a.rE.STREAM_SOURCE_SELECT
-    });
+function a(e, t, s) {
+    let a = (0, i.s)();
     return r.useMemo(() => {
-        if (null == s || !o) return null;
+        if (null == s || !a) return null;
         for (let r of s) {
             let s = t.find(e => (0, l.A)(r.id, e.windowHandle));
             if (s?.id == null) continue;
@@ -24,5 +21,5 @@ function o(e, t, s) {
             }
         }
         return null
-    }, [o, e, t, s])
+    }, [a, e, t, s])
 }

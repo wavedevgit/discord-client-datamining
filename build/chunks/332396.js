@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(933958),
     A = n(104171),
     m = n(63995),
-    _ = n(69407),
-    p = n(616356),
+    p = n(69407),
+    _ = n(616356),
     g = n(734057),
     f = n(287809),
     x = n(607567),
@@ -52,7 +52,7 @@ function v() {
             } = e;
             return t
         })), [n]),
-        a = (0, c.yK)([m.A], () => o().flatMap(s, e => m.A.getMutableParticipants(e, _.ip.SPEAKER).filter(e => e.type === _.wY.VOICE).map(e => {
+        a = (0, c.yK)([m.A], () => o().flatMap(s, e => m.A.getMutableParticipants(e, p.ip.SPEAKER).filter(e => e.type === p.wY.VOICE).map(e => {
             let {
                 user: t
             } = e;
@@ -60,10 +60,10 @@ function v() {
         }))),
         r = (0, c.bG)([m.A], () => {
             let e = 0;
-            for (let t of s) e += m.A.getParticipantCount(t, _.ip.AUDIENCE);
+            for (let t of s) e += m.A.getParticipantCount(t, p.ip.AUDIENCE);
             return e
         }),
-        d = (0, c.yK)([p.A], () => p.A.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
+        d = (0, c.yK)([_.A], () => _.A.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
         b = (0, c.yK)([h.Ay], () => {
             let e = h.Ay.getEmbeddedActivitiesByChannel(),
                 n = [];

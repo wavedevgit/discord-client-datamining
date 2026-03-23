@@ -1,7 +1,7 @@
 /** chunk id: 266069 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    u: () => _
+    u: () => p
 });
 var i = n(627968),
     s = n(64700),
@@ -16,16 +16,16 @@ var i = n(627968),
     A = n(519501),
     m = n(658122);
 
-function _(e) {
+function p(e) {
     let {
         label: t,
         icon: n,
         setStatus: l,
-        isFavorited: _,
-        onFavoriteClick: p
-    } = e, [g, f] = s.useState(!1), x = (0, r.bG)([u.A], () => u.A.getFavoritedStatuses().length >= u.x), C = null != p, E = s.useCallback(e => {
-        e.stopPropagation(), p?.()
-    }, [p]), I = _ ? d.Gg5 : d.yA2;
+        isFavorited: p,
+        onFavoriteClick: _
+    } = e, [g, f] = s.useState(!1), x = (0, r.bG)([u.A], () => u.A.getFavoritedStatuses().length >= u.x), C = null != _, E = s.useCallback(e => {
+        e.stopPropagation(), _?.()
+    }, [_]), I = p ? d.Gg5 : d.yA2;
     return (0, i.jsxs)(d.DUT, {
         onClick: l,
         onMouseEnter: () => {
@@ -43,13 +43,13 @@ function _(e) {
             className: A.rv,
             children: t
         }), g && C && (0, i.jsx)(c.m_, {
-            text: x && !_ ? h.intl.string(h.t.YSDH9n) : void 0,
+            text: x && !p ? h.intl.string(h.t.YSDH9n) : void 0,
             children: (0, i.jsx)(d.DUT, {
                 className: a()(A.ff, A.wB),
                 onClick: E,
                 children: (0, i.jsx)(I, {
                     className: A.ut,
-                    color: _ ? o.A.colors.ICON_FEEDBACK_WARNING : "currentColor"
+                    color: p ? o.A.colors.ICON_FEEDBACK_WARNING : "currentColor"
                 })
             })
         })]

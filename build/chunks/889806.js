@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(676002),
     A = n(811024),
     m = n(685399),
-    _ = n(323073),
-    p = n(963027),
+    p = n(323073),
+    _ = n(963027),
     g = n(5932),
     f = n(570622),
     x = n(414808),
@@ -188,7 +188,7 @@ class k extends L.Ay {
             connectChannelDragSource: h,
             connectDragPreview: A,
             canReorderChannel: m,
-            isSubscriptionGated: _,
+            isSubscriptionGated: p,
             isFavoriteSuggestion: f,
             subtitle: C,
             forceTopLevelThread: E,
@@ -231,11 +231,11 @@ class k extends L.Ay {
                     isFavoriteSuggestion: f,
                     channelTypeOverride: E ? U.rbe.GUILD_TEXT : void 0,
                     resolvedUnreadSetting: N,
-                    "aria-label": (0, p.Ay)({
+                    "aria-label": (0, _.Ay)({
                         channel: e,
                         unread: l,
                         mentionCount: d,
-                        isSubscriptionGated: _
+                        isSubscriptionGated: p
                     }),
                     children: [f && (0, i.jsxs)(i.Fragment, {
                         children: [this.renderAcceptSuggestionButton(), this.renderRemoveSuggestionButton()]
@@ -264,7 +264,7 @@ function B(e) {
     } = e, {
         hasActiveThreads: u,
         hasMoreActiveThreads: h
-    } = (0, I.NR)(t), p = (0, o.cf)([y.Ay], () => ({
+    } = (0, I.NR)(t), _ = (0, o.cf)([y.Ay], () => ({
         unread: y.Ay.hasUnread(t.id),
         ackMessageId: y.Ay.ackMessageId(t.id),
         isLowImportanceMention: y.Ay.getIsMentionLowImportance(t.id)
@@ -277,7 +277,7 @@ function B(e) {
     }), S = (0, o.bG)([E.A], () => E.A.shouldIndicateNewChannel(n.id, t.id)), {
         needSubscriptionToAccess: R,
         isSubscriptionGated: O
-    } = (0, C.A)(t.id), L = (0, o.bG)([j.Ay], () => j.Ay.isFavorite(n.id, t.id)), D = (0, _.vL)(t), G = (0, A.Gp)(t.id), w = (0, M.A)({
+    } = (0, C.A)(t.id), L = (0, o.bG)([j.Ay], () => j.Ay.isFavorite(n.id, t.id)), D = (0, p.vL)(t), G = (0, A.Gp)(t.id), w = (0, M.A)({
         channel: t,
         isChannelCollapsed: !1,
         isChannelSelected: d,
@@ -300,7 +300,7 @@ function B(e) {
         isPopoverAllowed: n.id !== P.Vc
     });
     return (0, o.bG)([v.A, b.Ay], () => v.A.getChannelId() !== t.id && b.Ay.isCurrentUserGuest(t.getGuildId())) ? null : (0, i.jsx)(V, {
-        ...p,
+        ..._,
         ...x,
         ...e,
         hasActiveThreads: u,

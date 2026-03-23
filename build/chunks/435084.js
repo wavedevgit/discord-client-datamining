@@ -1,7 +1,7 @@
 /** chunk id: 435084 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => p
 });
 var i = n(627968),
     s = n(64700),
@@ -22,7 +22,7 @@ function m(e) {
     } = e, s = (0, l.bG)([c.A, d.A], () => c.A.getChannel(d.A.getChannelId())), {
         everyoneFilter: a,
         roleFilter: m,
-        guildFilter: _
+        guildFilter: p
     } = (0, l.cf)([u.Ay], () => {
         let {
             everyoneFilter: e,
@@ -64,15 +64,15 @@ function m(e) {
             label: A.intl.string(A.t.GWMA6s),
             action: function() {
                 o.A.setGuildFilter({
-                    guildFilter: _ === h.KE7.THIS_SERVER ? h.KE7.ALL_SERVERS : h.KE7.THIS_SERVER
+                    guildFilter: p === h.KE7.THIS_SERVER ? h.KE7.ALL_SERVERS : h.KE7.THIS_SERVER
                 })
             },
-            checked: _ === h.KE7.ALL_SERVERS
+            checked: p === h.KE7.ALL_SERVERS
         })]
     })
 }
 
-function _() {
+function p() {
     let e = s.useRef(null);
     return (0, i.jsx)(r.YNO, {
         targetElementRef: e,

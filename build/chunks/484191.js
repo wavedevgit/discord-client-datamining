@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(175203),
     A = n(426660),
     m = n(806931),
-    _ = n(985018),
-    p = n(852887);
+    p = n(985018),
+    _ = n(852887);
 let g = function(e) {
     let {
         participants: t,
@@ -26,46 +26,46 @@ let g = function(e) {
         x ? (0, c.Ze)(n.guild_id, () => a.default.selectVoiceChannel(n.id)) : a.default.selectVoiceChannel(n.id)
     }, [n.id, n.guild_id, x]), E = 4 === f.length ? 2 : 3, I = (0, o.Ay)(n);
     return (0, i.jsxs)("div", {
-        className: p.kL,
+        className: _.kL,
         children: [(0, i.jsx)(A.A, {}), (0, i.jsx)("div", {
-            className: p.os,
+            className: _.os,
             style: {
                 maxWidth: 168 * E
             },
             children: f.slice(0, 5).map(e => (0, i.jsx)(h.Ay, {
                 participant: e,
                 channel: n,
-                className: p.Vs,
+                className: _.Vs,
                 inCall: !0,
                 noVideoRender: !0,
                 popoutType: r.N.NO_POPOUT,
                 width: 48
             }, e.id))
         }), (0, i.jsx)(l.Heading, {
-            className: p.HA,
+            className: _.HA,
             variant: "heading-xxl/semibold",
             children: I
         }), (0, i.jsx)("div", {
-            className: p.Nu,
+            className: _.Nu,
             children: (0, i.jsx)(l.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",
-                children: 0 === f.length ? _.intl.string(_.t.zSqdrS) : 1 === f.length ? _.intl.formatToPlainString(_.t.BUyJIG, {
+                children: 0 === f.length ? p.intl.string(p.t.zSqdrS) : 1 === f.length ? p.intl.formatToPlainString(p.t.BUyJIG, {
                     a: (0, u.A)(n, f[0])
-                }) : 2 === f.length ? _.intl.formatToPlainString(_.t["dcyZf/"], {
+                }) : 2 === f.length ? p.intl.formatToPlainString(p.t["dcyZf/"], {
                     a: (0, u.A)(n, f[0]),
                     b: (0, u.A)(n, f[1])
-                }) : f.length > 2 ? _.intl.formatToPlainString(_.t["44/Obu"], {
+                }) : f.length > 2 ? p.intl.formatToPlainString(p.t["44/Obu"], {
                     a: (0, u.A)(n, f[0]),
                     b: (0, u.A)(n, f[1]),
                     n: f.length - 2
                 }) : void 0
             })
         }), (0, i.jsx)("div", {
-            className: p.PD,
+            className: _.PD,
             children: (0, i.jsx)(l.Button, {
                 variant: "overlay-primary",
-                text: g ? _.intl.string(_.t["96ANUN"]) : _.intl.string(_.t.TVBCKZ),
+                text: g ? p.intl.string(p.t["96ANUN"]) : p.intl.string(p.t.TVBCKZ),
                 onClick: C,
                 disabled: !g
             })

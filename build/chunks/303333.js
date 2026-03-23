@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(493819),
     A = n(722884),
     m = n(148690),
-    _ = n(985018),
-    p = n(72057);
+    p = n(985018),
+    _ = n(72057);
 
 function g(e) {
     let {
@@ -30,19 +30,19 @@ function g(e) {
         (0, c.e)(t.id)
     }, [t.id]);
     return (0, i.jsxs)("div", {
-        className: p.rs,
+        className: _.rs,
         children: [(0, i.jsx)("div", {
-            className: p.ZS,
+            className: _.ZS,
             children: (0, i.jsx)(h.A, {
                 src: n,
-                className: p.Sl
+                className: _.Sl
             })
         }), (0, i.jsxs)("div", {
-            className: p.n_,
+            className: _.n_,
             children: [(0, i.jsx)(a.m, {
-                text: _.intl.string(m.default.XJ4UpB),
+                text: p.intl.string(m.default.XJ4UpB),
                 children: (0, i.jsx)(r.DUT, {
-                    className: p.HF,
+                    className: _.HF,
                     onClick: l,
                     children: (0, i.jsx)(r.R2l, {
                         size: "xs",
@@ -50,9 +50,9 @@ function g(e) {
                     })
                 })
             }), (0, i.jsx)(a.m, {
-                text: _.intl.string(m.default.XV4qT6),
+                text: p.intl.string(m.default.XV4qT6),
                 children: (0, i.jsx)(r.DUT, {
-                    className: p.HF,
+                    className: _.HF,
                     onClick: o,
                     children: (0, i.jsx)(r.ucK, {
                         size: "xs",
@@ -73,9 +73,9 @@ function f(e) {
         })
     }, [t]);
     return (0, i.jsx)("div", {
-        className: p._o,
+        className: _._o,
         children: (0, i.jsxs)(r.DUT, {
-            className: p.hH,
+            className: _.hH,
             onClick: n,
             children: [(0, i.jsx)(r.XGR, {
                 size: "xs",
@@ -83,7 +83,7 @@ function f(e) {
             }), (0, i.jsx)(r.Text, {
                 variant: "text-sm/medium",
                 color: "currentColor",
-                children: _.intl.string(m.default.NGcIOF)
+                children: p.intl.string(m.default.NGcIOF)
             })]
         })
     })

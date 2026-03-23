@@ -36,12 +36,12 @@ function A(e) {
 function m(e) {
     return -e.timestamp
 }
-let _ = new Map,
-    p = [];
+let p = new Map,
+    _ = [];
 
 function g(e, t) {
     let n = u(t),
-        i = _.get(e);
+        i = p.get(e);
     return null != i && (i.set(n, {
         userId: t,
         timestamp: Date.now(),
@@ -51,7 +51,7 @@ function g(e, t) {
 }
 
 function f(e) {
-    let t = _.get(e);
+    let t = p.get(e);
     null != t && t.clear()
 }
 class x extends i.Ay.Store {
@@ -59,30 +59,30 @@ class x extends i.Ay.Store {
         this.waitFor(a.A, r.A, o.A)
     }
     __getLocalVars = () => ({
-        channelEventMaps: _
+        channelEventMaps: p
     });
     getHistory(e) {
-        return _.get(e)?.values(h) ?? p
+        return p.get(e)?.values(h) ?? _
     }
     getHistoryVersion(e) {
-        return _.get(e)?.version ?? 0
+        return p.get(e)?.version ?? 0
     }
 }
 let C = new x(l.h, {
     VOICE_STATE_UPDATES: function(e) {
         let t = !1,
-            n = e.voiceStates.filter(e => null != e.oldChannelId && _.has(e.oldChannelId)),
-            i = e.voiceStates.filter(e => null != e.channelId && _.has(e.channelId));
+            n = e.voiceStates.filter(e => null != e.oldChannelId && p.has(e.oldChannelId)),
+            i = e.voiceStates.filter(e => null != e.channelId && p.has(e.channelId));
         return new Set(n.map(e => e.oldChannelId).filter(e => null != e)).forEach(e => {
             0 === Object.keys(o.A.getVoiceStatesForChannel(e)).length && f(e)
         }), n.forEach(e => {
             let {
                 userId: n,
                 oldChannelId: i
-            } = e, s = null != i ? _.get(i) : null;
+            } = e, s = null != i ? p.get(i) : null;
             null != i && null != s && s.values().length > 0 && (t = function(e, t) {
                 let n = u(t),
-                    i = _.get(e);
+                    i = p.get(e);
                 if (null == i) return !1;
                 let s = i.get(n);
                 return null != s && (i.set(n, {
@@ -98,20 +98,20 @@ let C = new x(l.h, {
                 userId: n,
                 channelId: i
             } = e;
-            !r.A.isBlockedOrIgnored(n) && null != i && _.has(i) && (t = g(i, n) || t)
+            !r.A.isBlockedOrIgnored(n) && null != i && p.has(i) && (t = g(i, n) || t)
         }), t
     },
     CHANNEL_DELETE: function(e) {
         let {
             channel: t
         } = e;
-        return !!_.has(t.id) && (f(t.id), !0)
+        return !!p.has(t.id) && (f(t.id), !0)
     },
     VOICE_CHANNEL_HISTORY_START_TRACKING: function(e) {
         let {
             channelId: t
         } = e;
-        if (!_.has(t)) return _.has(t) || _.set(t, new s.J(A, m)), Object.values(o.A.getVoiceStatesForChannel(t)).forEach(e => {
+        if (!p.has(t)) return p.has(t) || p.set(t, new s.J(A, m)), Object.values(o.A.getVoiceStatesForChannel(t)).forEach(e => {
             g(t, e.userId)
         }), !0;
         return !1

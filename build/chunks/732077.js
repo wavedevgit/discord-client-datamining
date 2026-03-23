@@ -1,7 +1,7 @@
 /** chunk id: 732077 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => p
 });
 var i = n(627968),
     s = n(64700),
@@ -15,15 +15,15 @@ var i = n(627968),
     h = n(108197),
     A = n(985018),
     m = n(316945);
-let _ = s.memo(function(e) {
+let p = s.memo(function(e) {
     let {
         channel: t,
         selectedChannel: n,
         selectedVoiceChannelId: s,
         sortedThreadIds: l,
-        withGuildIcon: _
+        withGuildIcon: p
     } = e, {
-        density: p
+        density: _
     } = (0, o.wRf)(), g = (0, r.yK)([c.A], () => l.map(e => c.A.getChannel(e)).filter(u.Vq), [l]), f = (0, r.bG)([d.Ay], () => {
         let e = g[g.length - 1];
         if (null == e) return 0;
@@ -39,17 +39,17 @@ let _ = s.memo(function(e) {
             }),
             children: [(0, i.jsx)("div", {
                 className: a()(m.eh, {
-                    [m.ET]: _
+                    [m.ET]: p
                 }),
                 style: {
-                    bottom: ("cozy" === p ? 28 : 24) + f
+                    bottom: ("cozy" === _ ? 28 : 24) + f
                 }
             }), g.map((e, t) => (0, i.jsx)(h.A, {
                 thread: e,
                 isSelectedChannel: n?.id === e.id,
                 isSelectedVoice: s === e.id,
                 isLast: t === g.length - 1,
-                withGuildIcon: _
+                withGuildIcon: p
             }, e.id))]
         })
     })

@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(986738),
     A = n(394412),
     m = n(859894),
-    _ = n(931991),
-    p = n(426660),
+    p = n(931991),
+    _ = n(426660),
     g = n(576705),
     f = n(233993),
     x = n(19844),
@@ -91,11 +91,11 @@ function S(e) {
         onContinueClick: n
     } = e, l = (0, r.bG)([g.A], () => g.A.can(f.QY, t), [t]), o = t.guild_id, {
         canCreateGuildEvent: d
-    } = (0, _.nr)(t), u = (0, C.A)(t.id), x = s.useRef(null);
+    } = (0, p.nr)(t), u = (0, C.A)(t.id), x = s.useRef(null);
     return (0, i.jsxs)("div", {
         className: I.kL,
         ref: x,
-        children: [(0, i.jsx)(p.A, {
+        children: [(0, i.jsx)(_.A, {
             eventTargetRef: x
         }), (0, i.jsxs)("div", {
             className: I.Qs,

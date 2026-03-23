@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     A: () => g,
-    Z: () => _
+    Z: () => p
 });
 var i = n(627968);
 n(64700);
@@ -18,14 +18,14 @@ var s = n(397927),
     A = n(407494),
     m = n(101616);
 
-function _(e, t) {
+function p(e, t) {
     let {
         moreCount: n,
         onViewWishlist: s,
         isSingleCard: a = !1,
         profileOwner: m,
-        wishlistId: _,
-        cardSize: p,
+        wishlistId: p,
+        cardSize: _,
         analyticsLocations: g
     } = t, f = null != n && n > 0, x = {
         title: f ? h.intl.string(h.t.TxBQzD) : h.intl.string(h.t["4yiU7x"]),
@@ -55,12 +55,12 @@ function _(e, t) {
         }),
         moreCount: n,
         isSingleCard: a,
-        wishlistId: _,
-        cardSize: p
+        wishlistId: p,
+        cardSize: _
     }, e.skuId)
 }
 
-function p(e) {
+function _(e) {
     let {
         item: t,
         card: n,
@@ -108,7 +108,7 @@ function g(e, t) {
         analyticsLocations: s,
         wishlistId: l,
         onViewWishlist: a
-    } = t, r = _(e, {
+    } = t, r = p(e, {
         index: 0,
         profileOwner: n,
         analyticsLocations: s,
@@ -116,7 +116,7 @@ function g(e, t) {
         isSingleCard: !0,
         wishlistId: l
     });
-    return (0, i.jsx)(p, {
+    return (0, i.jsx)(_, {
         item: e,
         card: r,
         profileOwner: n,

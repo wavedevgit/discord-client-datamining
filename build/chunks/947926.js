@@ -14,9 +14,9 @@ var a = n(627968),
     u = n(186111),
     m = n(859703),
     h = n(341915),
-    x = n(677402),
-    p = n(943849),
-    g = n(890687),
+    x = n(943849),
+    p = n(890687),
+    g = n(971276),
     _ = n(792620),
     f = n(241124),
     v = n(73473),
@@ -42,7 +42,7 @@ function M(e) {
         isExpanded: t,
         questId: n
     } = e;
-    return (0, g.H6)({
+    return (0, p.H6)({
         mode: t ? w.fP.EXPANDED : w.fP.COLLAPSED,
         questContent: h.uF.QUEST_BAR_V2,
         questId: n,
@@ -59,17 +59,14 @@ function P() {
 function U(e) {
     let {
         quest: t
-    } = e, n = (0, p.L)({
+    } = e, n = (0, x.L)({
         quest: t,
         location: w.rE.QUESTS_BAR
-    }), s = (0, x.H)({
-        location: w.rE.QUESTS_BAR
-    }), c = (0, o.bG)([m.A], () => null != m.A.questEnrollmentBlockedUntil), {
+    }), s = (0, g.s)(), c = (0, o.bG)([m.A], () => null != m.A.questEnrollmentBlockedUntil), {
         isQuestBarVisible: U,
         reason: L
     } = (0, b.TQ)({
-        quest: t,
-        location: w.rE.QUESTS_BAR
+        quest: t
     }), B = (0, o.bG)([u.A], () => u.A.hasLayers()), G = i.useRef(null), F = i.useMemo(() => (0, _.vv)(t), [t]), V = t.id, W = t.userStatus?.enrolledAt != null, H = (0, d.A)(W), K = t.userStatus?.completedAt != null, {
         hasError: z,
         isLoading: $
@@ -121,8 +118,8 @@ function U(e) {
     let em = i.useRef(null),
         eh = i.useRef(null),
         ex = i.useRef(null),
-        ep = (0, g.fc)(t),
-        eg = (0, g.UH)(V);
+        ep = (0, p.fc)(t),
+        eg = (0, p.UH)(V);
     if (i.useEffect(() => {
             F && (0, j.l9)()
         }, [F]), !s || !q && Z && !$ || z) return z ? n.log("Not rendered due to asset error") : s || n.log("Not rendered due to ineligibility"), null;

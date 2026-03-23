@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(976860),
     A = n(734057),
     m = n(71393),
-    _ = n(576705),
-    p = n(557534),
+    p = n(576705),
+    _ = n(557534),
     g = n(166444),
     f = n(652215),
     x = n(790782),
@@ -27,7 +27,7 @@ function E(e, t) {
     if (null == n) throw Error("TextChannel, preloadChannel: Channel does not have a guildId");
     o.A.preload(n, t.id)
 }
-class I extends p.Ay {
+class I extends _.Ay {
     handleContextMenu = e => {
         let {
             channel: t
@@ -93,11 +93,11 @@ let N = (0, d.a)(I),
             channel: t,
             guild: n,
             disableSorting: s
-        } = e, l = (0, r.cf)([A.A, _.A], () => {
+        } = e, l = (0, r.cf)([A.A, p.A], () => {
             let e = A.A.getChannel(t.parent_id);
             return {
-                canManageChannel: _.A.can(f.xBc.MANAGE_CHANNELS, t),
-                canReorderChannel: !0 !== s && null != e ? _.A.can(f.xBc.MANAGE_CHANNELS, e) : _.A.can(f.xBc.MANAGE_CHANNELS, n)
+                canManageChannel: p.A.can(f.xBc.MANAGE_CHANNELS, t),
+                canReorderChannel: !0 !== s && null != e ? p.A.can(f.xBc.MANAGE_CHANNELS, e) : p.A.can(f.xBc.MANAGE_CHANNELS, n)
             }
         });
         return (0, i.jsx)(N, {

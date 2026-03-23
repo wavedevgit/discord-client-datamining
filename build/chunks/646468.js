@@ -16,8 +16,8 @@ var i = n(627968),
     h = n(208667),
     A = n(253932),
     m = n(954571),
-    _ = n(661191),
-    p = n(652215),
+    p = n(661191),
+    _ = n(652215),
     g = n(985018);
 
 function f() {
@@ -36,7 +36,7 @@ function f() {
 }
 
 function x(e, t) {
-    return s.useMemo(() => [...[...e, ...t].sort((e, t) => -1 * _.default.compare(e.id, t.id))], [e, t])
+    return s.useMemo(() => [...[...e, ...t].sort((e, t) => -1 * p.default.compare(e.id, t.id))], [e, t])
 }
 
 function C() {
@@ -44,9 +44,9 @@ function C() {
         items: e
     } = (0, u.LF)(), t = e.length > 0 ? e[0] : null, n = x(e, (0, l.bG)([o.A], () => o.A.localItems)), h = A.ns.useSetting();
     return s.useMemo(() => {
-        if (null != t && 0 >= _.default.compare(t.id, h)) return !1;
+        if (null != t && 0 >= p.default.compare(t.id, h)) return !1;
         for (let e of n) {
-            if (0 >= _.default.compare(e.id, h)) break;
+            if (0 >= p.default.compare(e.id, h)) break;
             if (!(0, d.NW)(e, h)) return !0
         }
         return !1
@@ -58,7 +58,7 @@ function C() {
             variant: "secondary",
             size: "sm",
             onClick: () => {
-                null != t && (A.ns.updateSetting(t.id), m.default.track(p.HAw.NOTIFICATION_CENTER_ACTION, {
+                null != t && (A.ns.updateSetting(t.id), m.default.track(_.HAw.NOTIFICATION_CENTER_ACTION, {
                     action_type: c.e1.MARK_ALL_READ
                 }))
             }
