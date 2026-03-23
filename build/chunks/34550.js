@@ -2,8 +2,8 @@
 n.d(t, {
     $b: () => T,
     Cm: () => I,
-    JO: () => C,
-    dN: () => g,
+    JO: () => g,
+    dN: () => C,
     h6: () => f,
     mf: () => N
 });
@@ -63,8 +63,8 @@ let m = 3 * s.A.Millis.DAY,
             skipped: i
         })
     },
-    C = e => e === i.M.AGE_VERIFICATION_SURVEY_MODAL_CLOSE ? u.mg.KID_STARTED : u.mg.GET_STARTED,
-    g = (e, t, n, i, a) => {
+    g = e => e === i.M.AGE_VERIFICATION_SURVEY_MODAL_CLOSE ? u.mg.KID_STARTED : u.mg.GET_STARTED,
+    C = (e, t, n, i, a) => {
         r.default.track(_.HAw.AGE_VERIFICATION_FEEDBACK_SUBMITTED, {
             rating: e,
             feedback: t,

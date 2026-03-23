@@ -64,10 +64,10 @@ function G() {
         F = O.Ay.canUsePremiumProfileCustomization(e),
         {
             analyticsLocations: H,
-            newestAnalyticsLocation: Y
+            newestAnalyticsLocation: z
         } = (0, g.Ay)(_.A.USER_SETTINGS_USER_PROFILE);
     s.useEffect(() => () => c.h.wait(u.IM), []);
-    let [z, X] = s.useState(!1), W = !F, K = s.useRef(null);
+    let [Y, X] = s.useState(!1), W = !F, K = s.useRef(null);
     return t ? (0, i.jsx)(m.A, {}) : (0, i.jsxs)(g.f5, {
         value: H,
         children: [(0, i.jsx)(A.A, {}), (0, i.jsx)(E.A, {
@@ -97,15 +97,15 @@ function G() {
                 children: (0, i.jsx)(b.A, {
                     user: e,
                     shouldShow: W,
-                    isVisible: z
+                    isVisible: Y
                 })
             })
         }), W && !k && (0, i.jsx)(h.d, {
             className: M.EL,
-            showUpsell: !z,
+            showUpsell: !Y,
             text: D.intl.format(D.t.TmfgI2, {
                 onClick: () => (0, f.K)({
-                    analyticsSource: Y
+                    analyticsSource: z
                 })
             }),
             textVariant: "heading-md/medium",

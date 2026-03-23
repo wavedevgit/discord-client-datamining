@@ -59,9 +59,9 @@ function k() {
     }, [e]), H = (0, s.useCallback)(() => {
         let e = (0, p.Ci)("openCustomAppSettings") ? x.X.DISPLAY_IN_APP_ICON_CATEGORY : x.X.APPEARANCE_IN_APP_ICON;
         (0, h.openUserSettings)(e)
-    }, []), Y = () => {
+    }, []), z = () => {
         (0, o.A)(I.TE)
-    }, z = (0, s.useCallback)(() => {
+    }, Y = (0, s.useCallback)(() => {
         if (k) {
             if (V) return void(0, r.mMO)(async () => {
                 let {
@@ -105,7 +105,7 @@ function k() {
                     }), (0, i.jsx)("div", {
                         className: O.LF,
                         children: (0, i.jsx)(g.A, {
-                            onClick: Y,
+                            onClick: z,
                             children: y.intl.string(j.default.yYyGJH)
                         })
                     })]
@@ -117,7 +117,7 @@ function k() {
                     ctaIconPosition: "start"
                 } : {},
                 ctaText: y.intl.string(k ? y.t.IJI7yk : y.t.jVcuVY),
-                onCtaClick: z
+                onCtaClick: Y
             } : null, U ? {
                 id: C.RECURRING_3P_PROMOTIONS_CARD_ID,
                 title: y.intl.string(y.t.m7PucM),
@@ -175,5 +175,5 @@ function k() {
             s = (n = n.filter(e => null != e))[0].featured,
             a = s ? 5 : 6;
         return n.splice(+!!s, 0, X), n.length > a && n.splice(a, n.length - a), n
-    }, [X, t, k, U, K, W, e, B, H, F, z])
+    }, [X, t, k, U, K, W, e, B, H, F, Y])
 }

@@ -43,8 +43,8 @@ var i = n(627968),
     B = n(788868),
     F = n(652215),
     H = n(355097),
-    Y = n(985018),
-    z = n(547605);
+    z = n(985018),
+    Y = n(547605);
 let X = {
     [H.nR]: "role_subscriptions_panel",
     [H.PZ]: "application_subscriptions_panel"
@@ -52,17 +52,17 @@ let X = {
 
 function W() {
     return (0, i.jsx)(o.ZpM, {
-        className: z.wb,
+        className: Y.wb,
         type: o.ZpM.Types.CUSTOM,
         children: (0, i.jsxs)(h.A, {
             align: h.A.Align.CENTER,
             children: [(0, i.jsx)(f.A, {
                 game: null,
                 size: f.M.SMALL,
-                className: z.pV
+                className: Y.pV
             }), (0, i.jsx)("span", {
-                className: z.O,
-                children: Y.intl.string(Y.t["jy/hyj"])
+                className: Y.O,
+                children: z.intl.string(z.t["jy/hyj"])
             })]
         })
     })
@@ -73,10 +73,10 @@ function K() {
     return s.useEffect(() => {
         (0, m.LM)(B.tv)
     }, []), (0, i.jsx)(o.nVY, {
-        label: Y.intl.string(Y.t["2GKrvn"]),
-        description: Y.intl.string(Y.t.kNEjGm),
+        label: z.intl.string(z.t["2GKrvn"]),
+        description: z.intl.string(z.t.kNEjGm),
         children: null != e && D.Ay.hasAccountCredit(e) ? (0, i.jsx)(k.A, {
-            className: z.fX,
+            className: Y.fX,
             entitlements: e
         }) : (0, i.jsx)(W, {})
     })
@@ -84,7 +84,7 @@ function K() {
 
 function Z() {
     return (0, i.jsx)("hr", {
-        className: z.hr
+        className: Y.hr
     })
 }
 let q = function() {
@@ -124,9 +124,9 @@ let q = function() {
             subsection: null
         })
     }) : (0, i.jsx)("div", {
-        className: z.kL,
+        className: Y.kL,
         children: (0, i.jsxs)("div", {
-            className: z.Qs,
+            className: Y.Qs,
             children: [m ? (0, i.jsx)(w.Sb, {}) : null, null != t ? (0, i.jsx)(w.Ay, {
                 subscription: t,
                 paymentSource: h,
@@ -135,16 +135,16 @@ let q = function() {
             }) : (0, i.jsx)(w.TC, {}), ee && (e = !!l?.isPremiumWithPremiumGroup(), (0, i.jsxs)("section", {
                 children: [(0, i.jsx)(o.Heading, {
                     variant: "heading-md/bold",
-                    className: z.HL,
-                    children: Y.intl.string(Y.t.Obre8v)
+                    className: Y.HL,
+                    children: z.intl.string(z.t.Obre8v)
                 }), (0, i.jsx)(o.Text, {
                     variant: "text-md/normal",
-                    className: z.JU,
-                    children: Y.intl.format(Y.t["7Zi06b"], {
+                    className: Y.JU,
+                    children: z.intl.format(z.t["7Zi06b"], {
                         helpCenterLink: P.A.getArticleURL(F.MVz.FRACTIONAL_PREMIUM_ABOUT)
                     })
                 }), (0, i.jsx)(G.A, {
-                    className: z.fX,
+                    className: Y.fX,
                     fractionalPremiumInfo: J,
                     activationDate: $,
                     hasPremiumGroup: e
@@ -171,7 +171,7 @@ let q = function() {
             }) : null]
         })
     }) : (0, i.jsx)("div", {
-        className: a()(z.kL, z.Lq),
+        className: a()(Y.kL, Y.Lq),
         children: (0, i.jsx)(o.y$y, {})
     })
 }

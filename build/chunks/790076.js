@@ -53,8 +53,8 @@ var i = n(627968),
     B = n(682763),
     F = n(237984),
     H = n(897720),
-    Y = n(393172),
-    z = n(968898),
+    z = n(393172),
+    Y = n(968898),
     X = n(847521),
     W = n(942405),
     K = n(824189),
@@ -252,8 +252,8 @@ function eN() {
         B = l?.state === D.AR.OVERLAY_RENDERING && !w,
         F = l?.state != null && eb.has(l.state) && !w,
         H = l?.overlayMethod === D.Ue.OutOfProcess,
-        Y = l?.overlayMethod === D.Ue.OutOfProcessLimitedInteraction,
-        z = l?.overlayMethod === D.Ue.Hook,
+        z = l?.overlayMethod === D.Ue.OutOfProcessLimitedInteraction,
+        Y = l?.overlayMethod === D.Ue.Hook,
         X = l?.state === D.AR.OVERLAY_CRASHED || l?.state === D.AR.OVERLAY_CRASHED_DISABLED,
         W = !c && !m,
         [Z, q] = (() => {
@@ -270,7 +270,7 @@ function eN() {
                             }, t)
                         }
                     }), null];
-                case B && Y:
+                case B && z:
                     return [eg.intl.format(eg.t.hFVBIg, {
                         overlayMethod: eg.intl.string(eg.t["506Aba"]),
                         overlayMethodHook: function(e, t) {
@@ -282,7 +282,7 @@ function eN() {
                             }, t)
                         }
                     }), null];
-                case B && z:
+                case B && Y:
                     return [eg.intl.format(eg.t.hFVBIg, {
                         overlayMethod: eg.intl.string(eg.t.bvlpDR),
                         overlayMethodHook: function(e, t) {
@@ -322,8 +322,8 @@ function eN() {
                     return [eg.intl.string(eg.t.VWUn0a), null];
                 case F:
                     if (H) return [eg.intl.string(eg.t["s8+CFq"]), null];
-                    if (z) return [eg.intl.string(eg.t.JEEdqt), null];
-                    if (Y) return [eg.intl.string(eg.t.pzBMwY), null];
+                    if (Y) return [eg.intl.string(eg.t.JEEdqt), null];
+                    if (z) return [eg.intl.string(eg.t.pzBMwY), null];
                     return [eg.intl.string(eg.t["2Xhy9k"]), null];
                 case null == l:
                     return [eg.intl.string(eg.t.vwHPRi), null];
@@ -338,7 +338,7 @@ function eN() {
     (0, S.Ay)(() => {
         x.A.getDetectableGames()
     });
-    let [J, $] = s.useMemo(() => F ? ["text-muted", A.LU0.colors.TEXT_MUTED.css] : B && Y ? ["text-feedback-warning", A.LU0.colors.TEXT_FEEDBACK_WARNING.css] : B && H ? ["text-feedback-positive", A.LU0.colors.TEXT_FEEDBACK_POSITIVE.css] : B && z ? ["text-strong", A.LU0.colors.TEXT_STRONG.css] : ["interactive-text-default", A.LU0.colors.INTERACTIVE_TEXT_DEFAULT.css], [F, B, Y, H, z]);
+    let [J, $] = s.useMemo(() => F ? ["text-muted", A.LU0.colors.TEXT_MUTED.css] : B && z ? ["text-feedback-warning", A.LU0.colors.TEXT_FEEDBACK_WARNING.css] : B && H ? ["text-feedback-positive", A.LU0.colors.TEXT_FEEDBACK_POSITIVE.css] : B && Y ? ["text-strong", A.LU0.colors.TEXT_STRONG.css] : ["interactive-text-default", A.LU0.colors.INTERACTIVE_TEXT_DEFAULT.css], [F, B, z, H, Y]);
     return null == e ? null : (0, i.jsxs)(eS, {
         onExpand: T,
         className: h ? eA.tx : void 0,
@@ -865,7 +865,7 @@ function eM(e) {
                 className: a()(eA.Y5, e),
                 children: [(0, i.jsx)("div", {
                     className: eA.kJ,
-                    children: (0, i.jsx)(Y.DH, {
+                    children: (0, i.jsx)(z.DH, {
                         id: "voice-widget",
                         title: eg.intl.string(eg.t.KNJ6Vq),
                         channel: (0, Z.createChannelRecord)({
@@ -892,9 +892,9 @@ function eM(e) {
                     })
                 }), (0, i.jsxs)("div", {
                     className: eA.R$,
-                    children: [(0, i.jsx)(z.Pl, {
+                    children: [(0, i.jsx)(Y.Pl, {
                         children: eg.intl.string(eg.t.KNJ6Vq)
-                    }), (0, i.jsx)(z.CS, {}), (0, i.jsx)(z.O0, {
+                    }), (0, i.jsx)(Y.CS, {}), (0, i.jsx)(Y.O0, {
                         id: u?.id ?? "voice-widget",
                         pinned: u?.pinned ?? !1
                     })]

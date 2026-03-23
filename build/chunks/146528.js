@@ -130,14 +130,14 @@ let k = e => {
             shouldHideGuildPurchaseEntryPoints: F
         } = (0, p.MH)(r?.id), H = t?.isPurchasedViaAppleGeneric;
         if (null == l || null == n || null == f) return null;
-        let Y = async () => {
+        let z = async () => {
             try {
                 v(!0), await u.QP(t, B), (0, R.q)()
             } finally {
                 v(!1)
             }
         }, {
-            isCancelled: z,
+            isCancelled: Y,
             isPastDue: X,
             subscriptionPrice: W,
             memberSince: K,
@@ -172,7 +172,7 @@ let k = e => {
                                     variant: "text-sm/normal",
                                     className: G.KR,
                                     children: n.name
-                                }), z ? (0, i.jsx)(c.LpS, {
+                                }), Y ? (0, i.jsx)(c.LpS, {
                                     text: M.intl.string(M.t["7uFZGt"])
                                 }) : J ? (0, i.jsx)(c.LpS, {
                                     text: M.intl.string(M.t["6anton"]),
@@ -238,14 +238,14 @@ let k = e => {
                     })]
                 }), (0, i.jsx)(c.hKd, {
                     size: 16
-                }), !z && !H && (0, i.jsx)(c.D0$, {
+                }), !Y && !H && (0, i.jsx)(c.D0$, {
                     label: M.intl.string(M.t.wmMFvA),
                     children: (0, i.jsx)(U, {
                         subscription: t
                     })
                 }), !Q && (0, i.jsx)(w, {
                     isTrial: J,
-                    isCancelled: z,
+                    isCancelled: Y,
                     isResubscribing: T,
                     shouldHideRoleSubscriptionEntryPoints: F,
                     onCancelSubscriptionClick: () => {
@@ -262,7 +262,7 @@ let k = e => {
                             }), (0, N.openUserSettings)(b.X.SUBSCRIPTIONS_PANEL)
                         }))
                     },
-                    onResubscribeClick: Y
+                    onResubscribeClick: z
                 })]
             }) : null]
         })

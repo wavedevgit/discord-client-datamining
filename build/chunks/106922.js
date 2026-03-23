@@ -44,8 +44,8 @@ var i = n(627968),
     B = n(637073),
     F = n(810498),
     H = n(807098),
-    Y = n(412260),
-    z = n(103411),
+    z = n(412260),
+    Y = n(103411),
     X = n(190187),
     W = n(194509),
     K = n(65470),
@@ -323,15 +323,15 @@ let ex = function() {
         g = (0, N.A)({
             forceFetch: !0
         }),
-        A = (0, u.bG)([Y.A], () => {
-            let e = Y.A.getMarketingComponentByType(c.C.BILLING_SETTINGS_NITRO_GIFT_BANNER);
+        A = (0, u.bG)([z.A], () => {
+            let e = z.A.getMarketingComponentByType(c.C.BILLING_SETTINGS_NITRO_GIFT_BANNER);
             return null == e || "billingSettingsNitroGiftBanner" !== e.properties.properties.oneofKind ? null : e.properties.properties.billingSettingsNitroGiftBanner
         }),
         E = !(d.Fr || d.v1) && null != A,
         y = (0, u.bG)([P.A], () => P.A.enabled),
         O = s.useRef(null);
     (0, X.i)();
-    let R = (0, z.m)();
+    let R = (0, Y.m)();
     s.useEffect(() => {
         p.h.wait(async () => {
             y || e || await Promise.all([h.hP(), h.$o(), (0, f.zS)(null, null, ei.tF5.DISCOVERY)]), _(!1)

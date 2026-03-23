@@ -152,8 +152,8 @@ let k = () => {
             } = (0, _.Ay)(m.A.PREMIUM_MARKETING_PLAN_COMPARISON),
             F = (0, r.bG)([p.A], () => p.A.hasFetchedSubscriptions()),
             H = (0, A.Y)(O.T7),
-            Y = (0, u.Ay)(),
-            z = (0, o.qB)(Y),
+            z = (0, u.Ay)(),
+            Y = (0, o.qB)(z),
             X = (0, r.bG)([x.default], () => x.default.getCurrentUser()),
             W = null != X && X.isPremiumWithPremiumGroup(),
             K = (0, h.YE)(X, O.PremiumTypes.TIER_2),
@@ -201,7 +201,7 @@ let k = () => {
                     subscriptionTier: O.pe.TIER_0,
                     showIcon: !1,
                     look: d.pR.OUTLINED,
-                    color: z ? d.XD.BRAND : d.XD.WHITE
+                    color: Y ? d.XD.BRAND : d.XD.WHITE
                 }) : (0, i.jsx)(N.A, {
                     className: L.x6,
                     subscriptionTier: O.pe.TIER_0,
@@ -217,7 +217,7 @@ let k = () => {
                     subscriptionTier: O.pe.TIER_2,
                     showIcon: !1,
                     look: d.pR.OUTLINED,
-                    color: z ? d.XD.BRAND : d.XD.WHITE
+                    color: Y ? d.XD.BRAND : d.XD.WHITE
                 }) : (0, i.jsx)(N.A, {
                     className: L.x6,
                     subscriptionTier: O.pe.TIER_2,
@@ -234,7 +234,7 @@ let k = () => {
         }), t = P ? null : null != q || null != J ? (0, i.jsx)(j.ir, {
             text: null != q ? R.intl.string(R.t.IBYG5U) : R.intl.string(R.t.ce1v3V),
             className: L.ls,
-            colorOptions: q === O.pe.TIER_0 ? z ? j.at.PREMIUM_TIER_0_GRADIENT_FILL : j.at.PREMIUM_TIER_0_WHITE_FILL : z ? K ? j.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL : j.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL : j.at.PREMIUM_TIER_2_WHITE_FILL
+            colorOptions: q === O.pe.TIER_0 ? Y ? j.at.PREMIUM_TIER_0_GRADIENT_FILL : j.at.PREMIUM_TIER_0_WHITE_FILL : Y ? K ? j.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL : j.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL : j.at.PREMIUM_TIER_2_WHITE_FILL
         }) : ea ? (0, i.jsx)(k, {}) : (0, i.jsx)(U, {});
         let eo = q === O.pe.TIER_0 || J === O.PremiumTypes.TIER_0 || M === O.PremiumTypes.TIER_0;
         return (0, i.jsx)(_.f5, {

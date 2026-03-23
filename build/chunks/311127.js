@@ -19,8 +19,8 @@ var i = n(627968),
     T = n(529942),
     f = n(164956),
     N = n(209700),
-    C = n(652215),
-    g = n(985018),
+    g = n(652215),
+    C = n(985018),
     h = n(110927);
 
 function p(e) {
@@ -75,7 +75,7 @@ function p(e) {
     }), l.zy(E.aH({
         forceRoles: G,
         context: p
-    }), l.kg(C.xBc.MANAGE_GUILD, C.xBc.MANAGE_ROLES)) || (0, c.bM)(p, n)) ? (0, i.jsx)("div", {
+    }), l.kg(g.xBc.MANAGE_GUILD, g.xBc.MANAGE_ROLES)) || (0, c.bM)(p, n)) ? (0, i.jsx)("div", {
         className: h.kL,
         children: (0, i.jsxs)(o.iS7, {
             selectionMode: "multiple",
@@ -87,7 +87,7 @@ function p(e) {
             children: [(0, i.jsx)(o.a32, {
                 hideTags: !0,
                 autoFocus: !0,
-                placeholder: g.intl.string(g.t.Sojqsr)
+                placeholder: C.intl.string(C.t.Sojqsr)
             }), (0, i.jsx)(o.X2W, {
                 renderListItem: e => (0, i.jsx)(r.c$x, {
                     ...e
@@ -96,7 +96,7 @@ function p(e) {
         })
     }) : (0, i.jsx)(o.Text, {
         variant: "text-md/medium",
-        children: g.intl.string(g.t.MNSTbY)
+        children: C.intl.string(C.t.MNSTbY)
     })
 }
 

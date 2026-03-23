@@ -47,8 +47,8 @@ function U(e) {
         pendingAvatar: B,
         pendingThemeColors: F,
         tryItOutThemeColors: H,
-        tryItOutAvatar: Y,
-        tryItOutBanner: z
+        tryItOutAvatar: z,
+        tryItOutBanner: Y
     } = (0, l.cf)([T.A], () => {
         let e = T.A.getPendingChanges(),
             t = T.A.getErrors(),
@@ -68,25 +68,25 @@ function U(e) {
         newestAnalyticsLocation: q,
         sourceAnalyticsLocations: J
     } = (0, o.Ay)(r.A.USER_SETTINGS_TRY_OUT_PREMIUM), Q = e => {
-        e && (z?.startsWith("https:") === !0 ? fetch(z).then(e => e.blob()).then(e => (0, S.We)(e)).then(e => {
+        e && (Y?.startsWith("https:") === !0 ? fetch(Y).then(e => e.blob()).then(e => (0, S.We)(e)).then(e => {
             (0, f.p)({
-                avatar: Y,
+                avatar: z,
                 themeColors: H,
                 banner: e
             })
         }).catch(() => {
             (0, f.p)({
-                avatar: Y,
+                avatar: z,
                 themeColors: H
             })
-        }) : null != z ? (0, f.p)({
-            avatar: Y,
+        }) : null != Y ? (0, f.p)({
+            avatar: z,
             themeColors: H,
-            banner: z
+            banner: Y
         }) : (0, f.p)({
-            avatar: Y,
+            avatar: z,
             themeColors: H
-        }), (0, C.WU)(Y), E.default.track(P.HAw.TRY_IT_OUT_PRESET_SELECTED, {
+        }), (0, C.WU)(z), E.default.track(P.HAw.TRY_IT_OUT_PRESET_SELECTED, {
             preset: X
         }))
     };
@@ -144,7 +144,7 @@ function U(e) {
                         user: t,
                         pendingAvatarSrc: (0, p.V7)({
                             userId: t.id,
-                            image: Y ?? B
+                            image: z ?? B
                         }),
                         pendingColors: H ?? F,
                         onThemeColorsChange: h.a,
@@ -153,7 +153,7 @@ function U(e) {
                     }), (0, i.jsx)(O.A, {
                         className: k.fz,
                         isTryItOut: !0,
-                        showRemoveBannerButton: null != z,
+                        showRemoveBannerButton: null != Y,
                         onBannerChange: h.xe,
                         showPremiumIcon: !1
                     }), !V && (0, i.jsx)(I.A, {

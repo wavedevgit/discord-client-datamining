@@ -157,12 +157,12 @@ function D(e) {
         F = V || B ? w.total - k.total : -k.total,
         {
             interval: H,
-            intervalCount: Y
+            intervalCount: z
         } = D,
-        z = O.intl.format(O.t["0W23cu"], {
+        Y = O.intl.format(O.t["0W23cu"], {
             endDate: w.subscriptionPeriodStart
         });
-    return t.isPausedForFractionalPremium && l.fetched && (z = O.intl.format(O.t.eb0xgS, {
+    return t.isPausedForFractionalPremium && l.fetched && (Y = O.intl.format(O.t.eb0xgS, {
         expirationDate: l.endsAt.toDate()
     })), (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(I.A, {
@@ -178,7 +178,7 @@ function D(e) {
                     children: E
                 })
             }), (0, i.jsx)("div", {
-                children: z
+                children: Y
             }), (0, i.jsxs)(h.Yx, {
                 className: R.S,
                 children: [(0, i.jsx)(h.Xd, {
@@ -187,7 +187,7 @@ function D(e) {
                     label: O.intl.format(O.t["Vg+LRr"], {
                         subscriptionCount: 1
                     }),
-                    value: (0, v.CE)((0, v.$g)(F, t.currency), H, Y),
+                    value: (0, v.CE)((0, v.$g)(F, t.currency), H, z),
                     className: R.Au
                 }), null != U && U.length > 0 ? (0, i.jsxs)("div", {
                     children: [(0, i.jsx)(h.pK, {}), (0, i.jsx)(T.m0, {

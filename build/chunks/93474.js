@@ -1,6 +1,6 @@
 /** chunk id: 93474 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => C
 });
 var i = n(311907),
     a = n(73153),
@@ -48,7 +48,7 @@ function N(e) {
         }) ? null == e || -1 === c.default.compare(e, t.id) ? t.id : void 0 : e, a);
     return null != l && I[i] !== l && (I[i] = l, !0)
 }
-class C extends i.Ay.PersistedStore {
+class g extends i.Ay.PersistedStore {
     static displayName = "GuildAutomodMessageStore";
     static persistKey = "GuildAutomodMessages";
     initialize(e) {
@@ -74,7 +74,7 @@ class C extends i.Ay.PersistedStore {
         return I[e] ?? null
     }
 }
-let g = new C(a.h, {
+let C = new g(a.h, {
     CONNECTION_OPEN: function(e) {
         return 0 !== Object.keys(m).length && (m = {}, A++, !0)
     },

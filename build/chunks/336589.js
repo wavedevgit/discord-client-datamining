@@ -1,6 +1,6 @@
 /** chunk id: 336589 params = (module,exports,require) **/
 n.d(t, {
-    I: () => C
+    I: () => g
 });
 var i = n(627968),
     a = n(64700),
@@ -48,7 +48,7 @@ let N = e => {
             })
         })
     },
-    C = e => {
+    g = e => {
         let {
             message: t,
             channel: n

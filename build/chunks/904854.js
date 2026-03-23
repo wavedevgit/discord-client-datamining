@@ -19,7 +19,7 @@ var i = n(627968),
 
 function T(e) {
     var t;
-    let n, T, f, N, C, g, {
+    let n, T, f, N, g, C, {
             message: h,
             channel: p,
             compact: R
@@ -43,17 +43,17 @@ function T(e) {
             channelId: p.id,
             guildId: p.guild_id,
             messageId: h.id
-        }), N = (0, u.Ay)(h), C = (0, u.d8)(M[0], p), g = (0, u.d8)(M[1], p), null == x ? E.intl.format(E.t["eX6e/3"], {
+        }), N = (0, u.Ay)(h), g = (0, u.d8)(M[0], p), C = (0, u.d8)(M[1], p), null == x ? E.intl.format(E.t["eX6e/3"], {
             username: N.nick,
             usernameHook: n(N)
         }) : E.intl.format(E.t.YUbgR8, {
             userCount: M.length + 1,
             username: N.nick,
             usernameHook: n(N),
-            username2: C.nick,
-            username2Hook: T(C),
-            username3: g.nick,
-            username3Hook: f(g),
+            username2: g.nick,
+            username2Hook: T(g),
+            username3: C.nick,
+            username3Hook: f(C),
             otherCount: M.length - 1,
             duration: x
         }));

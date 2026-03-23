@@ -19,16 +19,16 @@ var i = n(735438),
 let T = "DetectedOffPlatformPremiumPerksStore",
     f = {},
     N = {},
-    C = [];
+    g = [];
 
-function g() {
+function C() {
     let e = !1;
     for (let {
             skuId: t,
             applicationId: n
         }
         of a().values(N)) {
-        if (C.includes(t)) continue;
+        if (g.includes(t)) continue;
         let i = u.A.getApplication(n);
         if (null == i) {
             u.A.isFetchingApplication(n) || u.A.didFetchingApplicationFail(n) || d.Ay.fetchApplication(n);
@@ -49,7 +49,7 @@ function g() {
 class h extends l.Ay.Store {
     static displayName = "DetectedOffPlatformPremiumPerksStore";
     initialize() {
-        this.waitFor(u.A, A.A, _.Ay, E.A, m.default), C = r.w.get(T) ?? C
+        this.waitFor(u.A, A.A, _.Ay, E.A, m.default), g = r.w.get(T) ?? g
     }
     getDetectedOffPlatformPremiumPerks() {
         return a().values(f)
@@ -59,16 +59,16 @@ let p = new h(s.h, {
     LOGOUT: function() {
         f = {}, N = {}
     },
-    SKU_FETCH_SUCCESS: g,
-    ENTITLEMENT_FETCH_APPLICATION_SUCCESS: g,
-    ENTITLEMENT_CREATE: g,
-    APPLICATION_FETCH_SUCCESS: g,
+    SKU_FETCH_SUCCESS: C,
+    ENTITLEMENT_FETCH_APPLICATION_SUCCESS: C,
+    ENTITLEMENT_CREATE: C,
+    APPLICATION_FETCH_SUCCESS: C,
     DETECTED_OFF_PLATFORM_PREMIUM_PERKS_DISMISS: function(e) {
         let {
             skuId: t
         } = e;
-        if (delete f[t], C.includes(t)) return !1;
-        C.push(t), r.w.set(T, C)
+        if (delete f[t], g.includes(t)) return !1;
+        g.push(t), r.w.set(T, g)
     },
     RUNNING_GAMES_CHANGE: function() {
         let e = !1;
@@ -82,10 +82,10 @@ let p = new h(s.h, {
                         skuId: n,
                         applicationId: i
                     }
-                    of I.m_i) i !== t || C.includes(n) || null == N[n] && (A.A.applicationIdsFetched.has(i) || A.A.applicationIdsFetching.has(i) || null != A.A.getForSku(n) || o.LM(i), N[n] = {
+                    of I.m_i) i !== t || g.includes(n) || null == N[n] && (A.A.applicationIdsFetched.has(i) || A.A.applicationIdsFetching.has(i) || null != A.A.getForSku(n) || o.LM(i), N[n] = {
                     skuId: n,
                     applicationId: i
                 }, e = !0);
-        return e && g(), e
+        return e && C(), e
     }
 })

@@ -18,8 +18,8 @@ var i, a = n(627968),
     T = n(567771),
     f = n(780964),
     N = n(840065),
-    C = n(473145),
-    g = n(763754),
+    g = n(473145),
+    C = n(763754),
     h = n(888675),
     p = n(921066),
     R = n(652215),
@@ -146,7 +146,7 @@ function F(e) {
     }()), {
         createMultipleConfettiAt: I,
         confettiCanvas: T
-    } = l.useContext(m.x), [f, N] = l.useState(null), C = (0, o.f9)(T, f), g = function(e, t) {
+    } = l.useContext(m.x), [f, N] = l.useState(null), g = (0, o.f9)(T, f), C = function(e, t) {
         if (null == e) return "enter";
         switch (e) {
             case "enter":
@@ -202,7 +202,7 @@ function F(e) {
     }, [I, E, u, r]), l.useEffect(() => {
         if (h && "leaf_fall" === u) {
             let e = v[E].leafRotationDirection;
-            C.createConfetti({
+            g.createConfetti({
                 id: `${L}-${(0,c.A)()}`,
                 position: {
                     type: "static",
@@ -250,7 +250,7 @@ function F(e) {
                 sprite: "TOP_LEFT" === E ? y : b
             })
         }
-    }, [h, C, E, u]), (0, a.jsxs)(a.Fragment, {
+    }, [h, g, E, u]), (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(o.K_, {
             ref: N,
             sprites: k,
@@ -270,7 +270,7 @@ function F(e) {
                 className: s()(S.oQ, {
                     [S.EG]: p
                 }),
-                nextScene: g,
+                nextScene: C,
                 sceneSegments: O,
                 onScenePlay: R,
                 onSceneComplete: x,
@@ -310,7 +310,7 @@ function B(e) {
         {
             reducedMotion: D
         } = l.useContext(_.CZY),
-        P = (0, g.Ay)(n),
+        P = (0, C.Ay)(n),
         U = P.nick,
         v = s(P);
     t = null == c || null == r ? d > 1 ? x.intl.format(x.t.yfC9ds, {
@@ -325,12 +325,12 @@ function B(e) {
         usernameHook: v,
         numSubscriptions: d,
         guildName: r.name,
-        newTierName: (0, C.gb)(c)
+        newTierName: (0, g.gb)(c)
     }) : x.intl.format(x.t.cUfTTE, {
         username: U,
         usernameHook: v,
         guildName: r.name,
-        newTierName: (0, C.gb)(c)
+        newTierName: (0, g.gb)(c)
     });
     let j = l.useCallback(() => {
             if (!D.enabled)

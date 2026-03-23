@@ -19,8 +19,8 @@ var i = n(627968),
     T = n(427262),
     f = n(573359),
     N = n(59784),
-    C = n(612669),
-    g = n(88001),
+    g = n(612669),
+    C = n(88001),
     h = n(652215),
     p = n(519412),
     R = n(985018),
@@ -178,7 +178,7 @@ let O = e => {
             currentUser: u,
             premiumSubscription: A
         } = (0, r.cf)([N.A, _.default, m.A], () => ({
-            inviteState: null != l ? N.A.getInviteState(l) : g.xI.NOT_FOUND,
+            inviteState: null != l ? N.A.getInviteState(l) : C.xI.NOT_FOUND,
             isFetching: null != l && N.A.isFetching(l),
             invite: null != l ? N.A.getInvite(l)?.invite : null,
             currentUser: _.default.getCurrentUser(),
@@ -187,23 +187,23 @@ let O = e => {
         if (null == u) return null;
         let E = t.author,
             I = u.id === E.id;
-        if (o || s === g.xI.FETCHING || s === g.xI.UNKNOWN) return (0, i.jsx)(c.Wb, {
+        if (o || s === C.xI.FETCHING || s === C.xI.UNKNOWN) return (0, i.jsx)(c.Wb, {
             isHorizontal: !0
         });
-        let T = (0, C.o1)({
+        let T = (0, g.o1)({
             sender: E,
             channel: n,
             isSender: I,
             inviteState: s
         });
         if (null == T) return null;
-        let f = s === g.xI.PENDING,
+        let f = s === C.xI.PENDING,
             h = null;
         return h = I ? f ? (0, i.jsx)(M, {
             disabled: !1,
             invite: d,
             channel: n
-        }) : s === g.xI.REMOVED ? (0, i.jsx)(M, {
+        }) : s === C.xI.REMOVED ? (0, i.jsx)(M, {
             disabled: !0,
             invite: d,
             channel: n

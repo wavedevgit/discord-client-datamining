@@ -1,7 +1,7 @@
 /** chunk id: 538511 params = (module,exports,require) **/
 n.d(t, {
     A: () => X,
-    i: () => z
+    i: () => Y
 });
 var i = n(627968);
 n(64700);
@@ -127,7 +127,7 @@ function H(e) {
     })
 }
 
-function Y() {
+function z() {
     return (0, i.jsxs)("div", {
         className: U.Up,
         children: [(0, i.jsx)(E.A, {
@@ -139,12 +139,12 @@ function Y() {
     })
 }
 
-function z() {
+function Y() {
     let {
         analyticsLocations: e
     } = (0, _.Ay)(m.A.ACCOUNT_CREDIT_BANNER);
     return (0, i.jsx)(F, {
-        wordMark: (0, i.jsx)(Y, {}),
+        wordMark: (0, i.jsx)(z, {}),
         subscriptionInfo: (0, i.jsx)("div", {
             className: U.MS,
             children: k.intl.string(k.t.R0GJL2)
@@ -170,7 +170,7 @@ let X = function(e) {
         renewalInvoicePreview: a,
         paymentSource: A,
         busy: R,
-        analyticsLocation: z
+        analyticsLocation: Y
     } = e, {
         analyticsLocations: X
     } = (0, _.Ay)(m.A.SUBSCRIPTION_HEADER), W = (0, g.A)({
@@ -189,7 +189,7 @@ let X = function(e) {
             return n => (0, i.jsx)(s, {
                 ...n,
                 premiumSubscription: t,
-                analyticsLocation: z,
+                analyticsLocation: Y,
                 analyticsLocations: X,
                 initialStep: e
             })
@@ -204,7 +204,7 @@ let X = function(e) {
             if (1 === l.length && A?.id === t.paymentSourceId && (0, N.jJ)(e.id, d, A?.id) && (u = !1), u)(0, p.A)({
                 initialPlanId: t.premiumPlanIdFromItems,
                 analyticsLocations: X,
-                analyticsLocation: z,
+                analyticsLocation: Y,
                 analyticsObject: V,
                 subscription: t
             });
@@ -241,7 +241,7 @@ let X = function(e) {
         B.includes(t.status) && null != t.pauseEndsAt ? t.status === M.Dmq.PAUSED && t.pauseReason !== G.qf.USER_TEMPORARY_BAN ? (0, p.A)({
             initialPlanId: t.premiumPlanIdFromItems,
             analyticsLocations: X,
-            analyticsLocation: z,
+            analyticsLocation: Y,
             analyticsObject: V,
             subscription: t,
             skipConfirm: !0
@@ -283,7 +283,7 @@ let X = function(e) {
             });
             break;
         case D.PremiumTypes.TIER_1:
-            em = (0, i.jsx)(Y, {});
+            em = (0, i.jsx)(z, {});
             break;
         case D.PremiumTypes.TIER_2:
             em = (0, i.jsx)(T.A, {
@@ -348,7 +348,7 @@ let X = function(e) {
                             onClick: () => {
                                 (0, p.A)({
                                     analyticsLocations: X,
-                                    analyticsLocation: z,
+                                    analyticsLocation: Y,
                                     analyticsObject: V,
                                     subscription: t
                                 })

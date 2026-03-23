@@ -19,8 +19,8 @@ var i = n(627968),
     T = n(785823),
     f = n(449585),
     N = n(137207),
-    C = n(997509),
-    g = n(916768),
+    g = n(997509),
+    C = n(916768),
     h = n(854627),
     p = n(342296),
     R = n(734057),
@@ -210,9 +210,9 @@ function B(e) {
         dmsSent: s,
         raidType: c,
         resolvedReason: A
-    } = (0, T.Bk)(t), N = (0, u.bG)([R.A], () => R.A.getChannel(t.channel_id), [t.channel_id]), C = N?.guild_id ?? null, {
-        shouldShowIncidentActions: g
-    } = (0, E.Li)(C), h = (0, M.Am)(t.author.id, t.channel_id), p = a.useCallback(() => {
+    } = (0, T.Bk)(t), N = (0, u.bG)([R.A], () => R.A.getChannel(t.channel_id), [t.channel_id]), g = N?.guild_id ?? null, {
+        shouldShowIncidentActions: C
+    } = (0, E.Li)(g), h = (0, M.Am)(t.author.id, t.channel_id), p = a.useCallback(() => {
         let e = N?.guild_id;
         null != e && (0, f.is)(t.id, e)
     }, [t.id, N]), x = c === d.p.DM_RAID, S = x ? m.EpV : m.EF8;
@@ -257,7 +257,7 @@ function B(e) {
                 dateTime: r.toLocaleString(L.intl.currentLocale, I.yc)
             })
         }) : null,
-        footerButtons: g ? (0, i.jsxs)("div", {
+        footerButtons: C ? (0, i.jsxs)("div", {
             className: j.OZ,
             children: [(0, i.jsxs)("div", {
                 className: j.AX,
@@ -333,7 +333,7 @@ function H(e) {
                     text: L.intl.string(L.t.oX14El),
                     onClick: function() {
                         null != l && null != s && (0, N.W5)(l, s, () => {
-                            (0, g.w)(c), (0, N.wu)(l)
+                            (0, C.w)(c), (0, N.wu)(l)
                         })
                     }
                 })
@@ -345,7 +345,7 @@ function H(e) {
                     size: "sm",
                     text: L.intl.string(L.t["1R7QIx"]),
                     onClick: function() {
-                        null != l && C.A.open(l, U.BEX.GUILD_AUTOMOD, void 0, U.nd0.AUTOMOD_MENTION_SPAM)
+                        null != l && g.A.open(l, U.BEX.GUILD_AUTOMOD, void 0, U.nd0.AUTOMOD_MENTION_SPAM)
                     }
                 })
             })]

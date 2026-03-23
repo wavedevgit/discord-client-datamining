@@ -23,8 +23,8 @@ var i = n(989349),
     T = n(367727),
     f = n(487329),
     N = n(161518),
-    C = n(49463),
-    g = n(15285),
+    g = n(49463),
+    C = n(15285),
     h = n(142120),
     p = n(652896),
     R = n(585510),
@@ -77,8 +77,8 @@ var i = n(989349),
     eT = n(147964),
     ef = n(723702),
     eN = n(927578),
-    eC = n(837921),
-    eg = n(755439),
+    eg = n(837921),
+    eC = n(755439),
     eh = n(422033),
     ep = n(966846),
     eR = n(652215);
@@ -278,9 +278,9 @@ let eX = {
         }).showPTTNoKeybindWarning
     },
     [eR.kqX.DISPATCH_ERROR]: {
-        predicate: () => null != eg.A.getLastError(),
+        predicate: () => null != eC.A.getLastError(),
         metadata: () => ({
-            error: eg.A.getLastError()
+            error: eC.A.getLastError()
         })
     },
     [eR.kqX.DISPATCH_INSTALL_SCRIPT_PROGRESS]: {
@@ -377,7 +377,7 @@ let eX = {
         }
     },
     [eR.kqX.CONNECT_SPOTIFY]: {
-        predicate: () => !G.A.hasConnectedAccount() && g.Ay.isObservedAppRunning(_.A.get(eR.fg2.SPOTIFY).name) && !ew(eR.kqX.CONNECT_SPOTIFY)
+        predicate: () => !G.A.hasConnectedAccount() && C.Ay.isObservedAppRunning(_.A.get(eR.fg2.SPOTIFY).name) && !ew(eR.kqX.CONNECT_SPOTIFY)
     },
     [eR.kqX.WIN32_DEPRECATED_MESSAGE]: {
         predicate: () => u.A?.os.arch === "ia32" && u.A?.process.platform === "win32",
@@ -618,8 +618,8 @@ let eX = {
             let {
                 voiceChannelId: t
             } = e;
-            if (ew(eR.kqX.SYSTEM_SERVICE_WARNING) || !(0, B.yA)(g.Ay) || null == t || ee.Ay.getMode() !== eR.TBI.PUSH_TO_TALK) return !1;
-            let n = g.Ay.getVisibleGame();
+            if (ew(eR.kqX.SYSTEM_SERVICE_WARNING) || !(0, B.yA)(C.Ay) || null == t || ee.Ay.getMode() !== eR.TBI.PUSH_TO_TALK) return !1;
+            let n = C.Ay.getVisibleGame();
             return null != n && !!n.elevated
         }
     },
@@ -634,7 +634,7 @@ let eX = {
         })
     },
     [eR.kqX.WINDOWS_MEDIA_PACK_REQUIRED]: {
-        predicate: () => !(!ef.isPlatformEmbedded || u.A?.process.platform !== "win32" || ew(eR.kqX.WINDOWS_MEDIA_PACK_REQUIRED) || eC.Ay.getEnableHardwareAcceleration()) && !1 === ee.Ay.isH264MfDecodeAvailable()
+        predicate: () => !(!ef.isPlatformEmbedded || u.A?.process.platform !== "win32" || ew(eR.kqX.WINDOWS_MEDIA_PACK_REQUIRED) || eg.Ay.getEnableHardwareAcceleration()) && !1 === ee.Ay.isH264MfDecodeAvailable()
     }
 };
 
@@ -679,7 +679,7 @@ function eY() {
 class ez extends r.Ay.Store {
     static displayName = "NoticeStore";
     initialize() {
-        this.syncWith([N.A, ec.Ay, ei.A, Q.A, er.A, j.A, eE.A, Y.default, W.A, V.A, x.A, b.A, X.A, g.Ay, q.A, N.A], eK), this.waitFor(N.A, m.A, X.A, K.default, Y.default, z.A, J.A, P.A, W.A, E.A, Q.A, eg.A, eh.A, ep.A, eI.A, C.A, h.A, O.A, x.A, Z.Ay, $.A, M.A, D.A, ee.Ay, et.A, em.A, en.A, ei.A, j.A, b.A, ea.A, g.Ay, el.A, er.A, G.A, es.A, eo.A, U.A, eA.A, ec.Ay, eT.A, H.Ay, eE.A, ed.A, V.A, eu.default, e_.A, q.A)
+        this.syncWith([N.A, ec.Ay, ei.A, Q.A, er.A, j.A, eE.A, Y.default, W.A, V.A, x.A, b.A, X.A, C.Ay, q.A, N.A], eK), this.waitFor(N.A, m.A, X.A, K.default, Y.default, z.A, J.A, P.A, W.A, E.A, Q.A, eC.A, eh.A, ep.A, eI.A, g.A, h.A, O.A, x.A, Z.Ay, $.A, M.A, D.A, ee.Ay, et.A, em.A, en.A, ei.A, j.A, b.A, ea.A, C.Ay, el.A, er.A, G.A, es.A, eo.A, U.A, eA.A, ec.Ay, eT.A, H.Ay, eE.A, ed.A, V.A, eu.default, e_.A, q.A)
     }
     hasNotice() {
         return null != eG && null != eG.type

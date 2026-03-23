@@ -52,7 +52,7 @@ let G = function(e) {
         B = (0, R.V)(),
         F = (0, O.O)(),
         H = (0, p.Y)(P.T7),
-        [Y, z] = s.useState(!0),
+        [z, Y] = s.useState(!0),
         X = s.useRef(0),
         W = (0, v.YE)(w, P.PremiumTypes.TIER_2),
         K = (0, r.bG)([I.A], () => I.A.hasFetched);
@@ -61,14 +61,14 @@ let G = function(e) {
     }, [K]), s.useEffect(() => {
         d.h.wait(async () => {
             let e = Date.now();
-            await Promise.all([c.hP(), c.$o(), (0, u.zS)(null, null, D.tF5.DISCOVERY)]), X.current = Date.now() - e, z(!1)
+            await Promise.all([c.hP(), c.$o(), (0, u.zS)(null, null, D.tF5.DISCOVERY)]), X.current = Date.now() - e, Y(!1)
         })
     }, []), s.useEffect(() => {
-        Y || N.default.track(D.HAw.PREMIUM_MARKETING_PAGE_VIEWED, {
+        z || N.default.track(D.HAw.PREMIUM_MARKETING_PAGE_VIEWED, {
             location_stack: l,
             load_duration_ms: X.current
         })
-    }, [l, Y]), s.useEffect(() => {
+    }, [l, z]), s.useEffect(() => {
         n && (null != B || null != F) && (0, j.u1)(B, F)
     }, [n, B, F]);
     let Z = (0, r.bG)([E.A], () => E.A.enabled),

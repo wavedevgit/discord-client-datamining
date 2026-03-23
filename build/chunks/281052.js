@@ -59,7 +59,7 @@ function G() {
     })), F = (0, E.V7)({
         userId: e.id,
         image: s
-    }), H = (0, d.EC)(n.id), Y = (0, a.bG)([N.Ay], () => null == n.id ? null : N.Ay.getMember(n.id, e.id)), z = (0, a.bG)([C.A], () => C.A.getGuildMemberProfile(e.id, n.id)), X = j.Ay.canUsePremiumProfileCustomization(e), W = (0, u.z5)(s, Y?.avatar), K = (0, u.Ac)(k, z?.banner), Z = (0, O.l)(V, z?.themeColors), q = z?.bio ?? "", J = z?.pronouns ?? "", Q = (e, t, n) => {
+    }), H = (0, d.EC)(n.id), z = (0, a.bG)([N.Ay], () => null == n.id ? null : N.Ay.getMember(n.id, e.id)), Y = (0, a.bG)([C.A], () => C.A.getGuildMemberProfile(e.id, n.id)), X = j.Ay.canUsePremiumProfileCustomization(e), W = (0, u.z5)(s, z?.avatar), K = (0, u.Ac)(k, Y?.banner), Z = (0, O.l)(V, Y?.themeColors), q = Y?.bio ?? "", J = Y?.pronouns ?? "", Q = (e, t, n) => {
         n(e ?? (null != t ? null : void 0))
     };
     return (0, i.jsxs)("div", {
@@ -68,7 +68,7 @@ function G() {
             errors: B?.nick ?? H?.nick,
             username: y.Ay.getName(e),
             pendingNick: G,
-            currentNick: Y?.nick,
+            currentNick: z?.nick,
             user: e,
             guild: n
         }, "nick"), (0, i.jsx)(T.A, {
@@ -95,7 +95,7 @@ function G() {
                     })]
                 }),
                 showRemoveAvatarButton: W,
-                onAvatarChange: e => Q(e, Y?.avatar, e => (0, S.p)({
+                onAvatarChange: e => Q(e, z?.avatar, e => (0, S.p)({
                     guildId: n.id,
                     avatar: e
                 })),
@@ -145,7 +145,7 @@ function G() {
             }, "effect"), (0, i.jsx)(p.A, {
                 showRemoveBannerButton: K,
                 errors: B?.banner,
-                onBannerChange: e => Q(e, z?.banner, e => (0, S.p)({
+                onBannerChange: e => Q(e, Y?.banner, e => (0, S.p)({
                     guildId: n.id,
                     banner: e
                 })),

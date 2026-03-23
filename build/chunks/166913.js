@@ -55,7 +55,7 @@ let w = e => {
             O = (0, c.Mw)(l),
             [V, B] = s.useState(!1),
             [F, H] = s.useState(!1),
-            [Y, z] = s.useState(!1),
+            [z, Y] = s.useState(!1),
             [X, W] = s.useState(!1),
             K = (0, o.bG)([p.A], () => p.A.getPremiumTypeSubscription()),
             Z = null != K ? (0, f.EL)(K) : null,
@@ -166,9 +166,9 @@ let w = e => {
             }), (0, i.jsx)(d.L, {
                 innerRef: n,
                 onChange: e => {
-                    e && !Y && (h.default.track(D.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                    e && !z && (h.default.track(D.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                         location_stack: es
-                    }), z(!0))
+                    }), Y(!0))
                 },
                 children: (0, i.jsx)("div", {
                     ref: n,

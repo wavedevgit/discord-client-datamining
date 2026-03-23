@@ -43,8 +43,8 @@ var i, s = n(627968),
     B = n(561852),
     F = n(522799),
     H = n(795710),
-    Y = n(484813),
-    z = n(659980),
+    z = n(484813),
+    Y = n(659980),
     X = n(881784),
     W = n(8330),
     K = n(554452),
@@ -107,7 +107,7 @@ let ex = () => {
                     analyticsLocations: e
                 })
             },
-            perkImage: z
+            perkImage: Y
         },
         clips: eh ? {
             name: "clips",
@@ -304,7 +304,7 @@ let ex = () => {
             name: "specialStickerAccess",
             title: U.intl.string(U.t.tzdIwI),
             subtitle: U.intl.string(U.t.hJG8ZN),
-            perkImage: (0, P.t4)(t, Y, ea),
+            perkImage: (0, P.t4)(t, z, ea),
             description: U.intl.string(U.t.e7FKCi)
         },
         largeUploads: {

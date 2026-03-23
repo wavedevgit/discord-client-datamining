@@ -57,9 +57,9 @@ let F = e => {
     }, []), (0, b.j)(), (0, A.P)(g.b);
     let F = s.useRef(null),
         H = s.useRef(null),
-        Y = (0, o.bG)([T.A], () => T.A.getPremiumTypeSubscription()),
+        z = (0, o.bG)([T.A], () => T.A.getPremiumTypeSubscription()),
         {
-            isReady: z,
+            isReady: Y,
             programReward: X,
             isEligible: W
         } = (0, p.F)({
@@ -85,10 +85,10 @@ let F = e => {
             } : {}
         }, [l.search]);
     (0, G.z)(K ?? "", null != K, q, J);
-    let [Q, $] = s.useState(!1), ee = (0, S.p)(), et = s.useRef(null), [en, ei] = s.useState(!1), [es, el] = s.useState(!1), ea = null != ee && null != Y && Y.status === U.Dmq.CANCELED, er = (0, C.iU)(k.gD.PREMIUM_MONTH_TIER_2, ee, Y), eo = !es && ea, {
+    let [Q, $] = s.useState(!1), ee = (0, S.p)(), et = s.useRef(null), [en, ei] = s.useState(!1), [es, el] = s.useState(!1), ea = null != ee && null != z && z.status === U.Dmq.CANCELED, er = (0, C.iU)(k.gD.PREMIUM_MONTH_TIER_2, ee, z), eo = !es && ea, {
         analyticsLocations: ed
     } = (0, _.Ay)(m.A.PREMIUM_SUBSCRIBER_NITRO_HOME), [ec, eu] = s.useState(!1);
-    return null != (0, o.bG)([h.A], () => null != t ? h.A.getUserProfile(t) : null) && (z || null != X) ? (0, i.jsxs)(i.Fragment, {
+    return null != (0, o.bG)([h.A], () => null != t ? h.A.getUserProfile(t) : null) && (Y || null != X) ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)(c.GtU, {
             className: a()(V.xW, {
                 [V.J4]: n
@@ -162,7 +162,7 @@ let F = e => {
                 })
             }), ea && null != er && (0, i.jsx)(y.A, {
                 isVisible: eo && Q,
-                premiumSubscription: Y,
+                premiumSubscription: z,
                 churnDiscountOffer: ee,
                 discountedPrice: er
             })]

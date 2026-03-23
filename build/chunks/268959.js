@@ -1,6 +1,6 @@
 /** chunk id: 268959 params = (module,exports,require) **/
 r.d(t, {
-    A: () => I
+    A: () => b
 });
 var n = r(627968);
 r(64700);
@@ -12,15 +12,15 @@ var l = r(503698),
     o = r(927578),
     c = r(590180),
     d = r(298072),
-    f = r(993408),
-    m = r(466459),
+    m = r(993408),
+    f = r(466459),
     h = r(623373),
-    A = r(561769),
-    x = r(525723),
-    p = r(57020),
+    x = r(561769),
+    p = r(525723),
+    g = r(57020),
     C = r(985018),
-    g = r(865687);
-let v = e => {
+    A = r(865687);
+let I = e => {
         let {
             product: t,
             badgeOverride: r,
@@ -28,50 +28,50 @@ let v = e => {
             className: d,
             prioritizedCurrency: h
         } = e, {
-            isPurchased: v,
-            isPartiallyOwnedBundle: I
-        } = (0, m.h)(t), b = (0, f.G0)(t), k = (0, s.bG)([c.A], () => c.A.getCategoryForProduct(t.skuId)), E = k?.unpublishedAt != null ? (0, f.WU)(k.unpublishedAt) : null, j = (0, s.bG)([u.default], () => u.default.getCurrentUser()), y = o.Ay.canUseCollectibles(j), T = (0, x.V_)(t), {
-            isOrbExclusive: R
-        } = (0, p.F)({
+            isPurchased: I,
+            isPartiallyOwnedBundle: b
+        } = (0, f.h)(t), v = (0, m.G0)(t), k = (0, s.bG)([c.A], () => c.A.getCategoryForProduct(t.skuId)), E = k?.unpublishedAt != null ? (0, m.WU)(k.unpublishedAt) : null, j = (0, s.bG)([u.default], () => u.default.getCurrentUser()), y = o.Ay.canUseCollectibles(j), R = (0, p.V_)(t), {
+            isOrbExclusive: T
+        } = (0, g.F)({
             product: t,
             isPremiumUser: y,
             prioritizedCurrency: h,
-            hasDiscountOffer: null != T
+            hasDiscountOffer: null != R
         }), _ = r;
-        if (null == _ && (!l && (0, f.HF)(k?.unpublishedAt) ? _ = A.AW.LIMITED_TIME : !I && !v && (0, f.aT)(t.skuId) ? _ = A.AW.NEW : R ? _ = A.AW.ORBS_EXCLUSIVE : b && (_ = A.AW.NITRO_EXCLUSIVE)), null == _ || _ === A.AW.NONE) return null;
+        if (null == _ && (!l && (0, m.HF)(k?.unpublishedAt) ? _ = x.AW.LIMITED_TIME : !b && !I && (0, m.aT)(t.skuId) ? _ = x.AW.NEW : T ? _ = x.AW.ORBS_EXCLUSIVE : v && (_ = x.AW.NITRO_EXCLUSIVE)), null == _ || _ === x.AW.NONE) return null;
         let L = null;
         switch (_) {
-            case A.AW.LIMITED_TIME:
+            case x.AW.LIMITED_TIME:
                 L = null != E ? E > 1 ? C.intl.formatToPlainString(C.t.Io7ozn, {
                     days: E
                 }) : C.intl.string(C.t.Bc13HF) : C.intl.string(C.t["h/uBCR"]);
                 break;
-            case A.AW.NEW:
+            case x.AW.NEW:
                 L = C.intl.string(C.t.y2b7CA);
                 break;
-            case A.AW.NITRO_EXCLUSIVE:
+            case x.AW.NITRO_EXCLUSIVE:
                 L = C.intl.string(C.t.X3Ekj8);
                 break;
-            case A.AW.ORBS_EXCLUSIVE:
+            case x.AW.ORBS_EXCLUSIVE:
                 L = C.intl.string(C.t["0TmQRG"])
         }
         return (0, n.jsx)(a.LpS, {
             text: L,
             disableColor: !0,
-            className: i()(d, g.$)
+            className: i()(d, A.$)
         })
     },
-    I = e => {
+    b = e => {
         let {
             skuId: t,
             badgeOverride: r,
             className: l,
             prioritizedCurrency: i,
             skipLimitedTimeCheck: s
-        } = e, a = (0, A.Vm)(t), u = (0, d.Q)(a);
+        } = e, a = (0, x.Vm)(t), u = (0, d.Q)(a);
         if (null == a) return null;
         let o = (0, h.rb)(a, u);
-        return (0, n.jsx)(v, {
+        return (0, n.jsx)(I, {
             product: o,
             badgeOverride: r,
             skipLimitedTimeCheck: s,

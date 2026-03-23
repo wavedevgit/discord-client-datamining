@@ -19,8 +19,8 @@ var i = n(627968),
     T = n(120120),
     f = n(379114),
     N = n(698441),
-    C = n(484724),
-    g = n(997509),
+    g = n(484724),
+    C = n(997509),
     h = n(850131),
     p = n(31051),
     R = n(659203),
@@ -73,8 +73,8 @@ var i = n(627968),
     eT = n(293657),
     ef = n(269802),
     eN = n(576471),
-    eC = n(808821),
-    eg = n(933762),
+    eg = n(808821),
+    eC = n(933762),
     eh = n(840233),
     ep = n(536030),
     eR = n(912746),
@@ -389,7 +389,7 @@ let eL = Object.freeze({
                 message: t,
                 compact: n,
                 onClick: () => {
-                    null != s && g.A.open(s, eM.BEX.ACCESS, eM.nd0.ACCESS_DISCOVERABLE)
+                    null != s && C.A.open(s, eM.BEX.ACCESS, eM.nd0.ACCESS_DISCOVERABLE)
                 }
             })
         },
@@ -435,7 +435,7 @@ let eL = Object.freeze({
                     })
                 })
             }, [t]);
-            return (0, i.jsx)(eg.A, {
+            return (0, i.jsx)(eC.A, {
                 message: t,
                 compact: o,
                 usernameHook: c,
@@ -526,7 +526,7 @@ let eL = Object.freeze({
                     message: t,
                     compact: a,
                     usernameHook: r
-                }), null != s && s.name === t.content ? (0, i.jsx)(C.A, {
+                }), null != s && s.name === t.content ? (0, i.jsx)(g.A, {
                     code: `${n.guild_id}-${s.id}`
                 }) : null]
             })
@@ -742,7 +742,7 @@ let eL = Object.freeze({
                 message: t,
                 compact: n
             } = e;
-            return (0, i.jsx)(eC.A, {
+            return (0, i.jsx)(eg.A, {
                 message: t,
                 compact: n
             })

@@ -19,8 +19,8 @@ var i = n(627968),
     T = n(860227),
     f = n(538355),
     N = n(522871),
-    C = n(699352),
-    g = n(715628),
+    g = n(699352),
+    C = n(715628),
     h = n(752636),
     p = n(675722),
     R = n(268719),
@@ -75,8 +75,8 @@ let M = a.memo(function(e) {
             author: K,
             roleIcon: z
         }),
-        childrenAccessories: e.hideAccessories ? void 0 : (0, C.J)(e, H, V),
-        childrenMessageContent: (0, g.A)(e, B),
+        childrenAccessories: e.hideAccessories ? void 0 : (0, g.J)(e, H, V),
+        childrenMessageContent: (0, C.A)(e, B),
         childrenSystemMessage: (0, p.A)({
             ...e,
             disableInteraction: k

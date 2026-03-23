@@ -65,9 +65,9 @@ function L() {
         B = (0, r.EC)(),
         F = y.Ay.canUsePremiumProfileCustomization(e),
         H = (0, c.z5)(n, e.avatar),
-        Y = (0, c.Ac)(L, t?.banner),
-        z = (0, I.Ay)(e.id),
-        X = z?.getLegacyUsername(),
+        z = (0, c.Ac)(L, t?.banner),
+        Y = (0, I.Ay)(e.id),
+        X = Y?.getLegacyUsername(),
         W = (w.global_name?.length ?? 0) > 0 ? w.global_name : B?.nick ?? [],
         K = (w.bio?.length ?? 0) > 0 ? w.bio : B?.bio ?? [],
         Z = (0, d.b)();
@@ -110,7 +110,7 @@ function L() {
             sectionTitle: O.intl.string(O.t.wR5wOo)
         }, "effect"), F ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(p.A, {
-                showRemoveBannerButton: Y,
+                showRemoveBannerButton: z,
                 errors: w.banner,
                 onBannerChange: e => (0, C.p)({
                     banner: e

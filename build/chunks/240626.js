@@ -151,7 +151,7 @@ let R = function(e) {
         B = G > w,
         F = w === d.length,
         H = F ? V : 1,
-        Y = s.useMemo(() => {
+        z = s.useMemo(() => {
             let e = [];
             for (let t = 0; t < H; t++) e.push((0, i.jsx)(E.A, {
                 className: I.YA,
@@ -159,7 +159,7 @@ let R = function(e) {
             }, t));
             return e
         }, [H, b]),
-        z = s.useMemo(() => M.find(e => e.isAvailable()), [M]);
+        Y = s.useMemo(() => M.find(e => e.isAvailable()), [M]);
     if (0 === M.length) return null;
     let X = M.length;
     if (t = F ? v.intl.formatToPlainString(U ? v.t["3DW6Dc"] : v.t["/u15Qc"], {
@@ -194,7 +194,7 @@ let R = function(e) {
                     className: I.RW,
                     children: [(0, i.jsx)("div", {
                         className: I.PS,
-                        children: Y
+                        children: z
                     }), (0, i.jsxs)("div", {
                         className: I.__invalid_headerCopy,
                         children: [(0, i.jsx)(c.Heading, {
@@ -211,18 +211,18 @@ let R = function(e) {
                 }), (0, i.jsx)("div", {
                     className: I.di,
                     children: (0, i.jsx)(o.A, {
-                        shouldShow: null == z || P,
+                        shouldShow: null == Y || P,
                         text: l,
                         "aria-label": l.toString(),
                         children: e => (0, i.jsx)(c.Button, {
                             variant: "primary",
                             text: v.intl.string(v.t.BMx1iy),
                             ...e,
-                            disabled: null == z || P,
-                            onClick: null != z ? () => {
+                            disabled: null == Y || P,
+                            onClick: null != Y ? () => {
                                 (0, c.mMO)(async () => e => (0, i.jsx)(_.default, {
                                     ...e,
-                                    guildBoostSlots: [z],
+                                    guildBoostSlots: [Y],
                                     locationSection: C.JJy.SETTINGS_PREMIUM
                                 }))
                             } : void 0

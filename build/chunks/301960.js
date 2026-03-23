@@ -19,8 +19,8 @@ var i = n(627968),
     T = n(688810),
     f = n(735991),
     N = n(975412),
-    C = n(168186),
-    g = n(597929),
+    g = n(168186),
+    C = n(597929),
     h = n(589022),
     p = n(427157),
     R = n(287809),
@@ -71,7 +71,7 @@ function b(e, t, n, a, l, s) {
         onUserContextMenu: T,
         onClickTargetAvatar: f,
         onTargetUserContextMenu: N,
-        onPopoutRequestClose: C
+        onPopoutRequestClose: g
     } = e;
     if (c && 1 === n) return null;
     if (c && null == o.activityInstance || u || m) return (0, i.jsx)("div", {
@@ -80,7 +80,7 @@ function b(e, t, n, a, l, s) {
             className: j.Jx
         })
     });
-    let g = x.Ay.getGuildMemberAvatarURL({
+    let C = x.Ay.getGuildMemberAvatarURL({
             avatar: a.guildMemberAvatar ?? void 0,
             userId: t.id,
             guildId: d?.guild_id ?? ""
@@ -110,7 +110,7 @@ function b(e, t, n, a, l, s) {
         })({
             user: t,
             guildId: d.guild_id,
-            guildAvatar: g,
+            guildAvatar: C,
             onClick: 1 === n ? f : I,
             onContextMenu: 1 === n ? N : T,
             ref: s
@@ -121,7 +121,7 @@ function b(e, t, n, a, l, s) {
         renderPopout: l,
         shouldShow: p,
         position: "right",
-        onRequestClose: C,
+        onRequestClose: g,
         children: h
     }) : h()
 }
@@ -185,7 +185,7 @@ function F(e) {
             messageId: n.id,
             interactionData: n.interactionData
         })), [l, n.id, n.interactionData]),
-        H = (0, C.Am)(n),
+        H = (0, g.Am)(n),
         V = H?.type === m.G4.APPLICATION_COMMAND && null != H.target_user ? new p.A(H.target_user) : null,
         w = H?.type === m.G4.APPLICATION_COMMAND && null != n.messageReference && null != e.renderTargetMessage,
         q = (0, M.d8)(n.interaction?.user, l),
@@ -201,7 +201,7 @@ function F(e) {
             children: [t, n]
         }, "user")
     };
-    if (n?.activityInstance === null || (0, g.V)(n)) t = L.intl.format(L.t["rg7U+C"], {
+    if (n?.activityInstance === null || (0, C.V)(n)) t = L.intl.format(L.t["rg7U+C"], {
         userHook: J,
         commandHook: () => {
             let t = function(e, t, n) {
@@ -241,7 +241,7 @@ function F(e) {
                                 }), c]
                             })
                         });
-                        if (!(0, g.V)(l)) return (0, i.jsx)("div", {
+                        if (!(0, C.V)(l)) return (0, i.jsx)("div", {
                             className: j.p6,
                             ref: n,
                             children: c

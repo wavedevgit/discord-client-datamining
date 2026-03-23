@@ -48,7 +48,7 @@ let w = () => {
         V = s.useRef(null),
         B = (0, o.bG)([u.A], () => u.A.useReducedMotion),
         [F, H] = s.useState(!1),
-        [Y, z] = s.useState(!1),
+        [z, Y] = s.useState(!1),
         [X, W] = s.useState(!1),
         [K, Z] = s.useState(!1),
         q = (0, o.bG)([h.A], () => h.A.getPremiumTypeSubscription()),
@@ -127,7 +127,7 @@ let w = () => {
                     ref: ec.ref,
                     children: (0, i.jsx)(d.L, {
                         innerRef: n,
-                        onChange: e => z(e),
+                        onChange: e => Y(e),
                         threshold: .1,
                         active: !0,
                         children: (0, i.jsx)(C.hy, {
@@ -153,7 +153,7 @@ let w = () => {
             }), (0, i.jsx)(I.A, {
                 ref: V
             }), (0, i.jsx)(j.A, {
-                isVisible: !F && !Y && K,
+                isVisible: !F && !z && K,
                 subscriptionTier: $,
                 isEligibleForBogoPromotion: ee
             }), (0, i.jsx)(N.A, {

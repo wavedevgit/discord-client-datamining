@@ -1,6 +1,6 @@
 /** chunk id: 807396 params = (module,exports,require) **/
 n.d(t, {
-    d: () => Y,
+    d: () => z,
     u: () => V
 }), n(321073);
 var i = n(627968),
@@ -102,7 +102,7 @@ function w(e) {
         [O, w] = s.useState(b.visibility),
         [V, B] = s.useState(b.metadataVisibility),
         [F, H] = s.useState(b.showActivity),
-        [Y, z] = s.useState(null),
+        [z, Y] = s.useState(null),
         [X, W] = s.useState(null),
         [K, Z] = s.useState(!1),
         [q, J] = s.useState([]),
@@ -112,7 +112,7 @@ function w(e) {
         j(b.friendSync), w(b.visibility), B(b.metadataVisibility), H(b.showActivity)
     }, [b]);
     let ee = {
-            inProgressVisibility: Y,
+            inProgressVisibility: z,
             inProgressMetadataVisibility: X
         },
         et = s.useRef(ee);
@@ -124,7 +124,7 @@ function w(e) {
             inProgressVisibility: e,
             inProgressMetadataVisibility: t
         } = et.current;
-        null != e && (w(e), g.A.setVisibility(b.type, b.id, e), z(null)), null != t && (B(t), g.A.setMetadataVisibility(b.type, b.id, t), W(null))
+        null != e && (w(e), g.A.setVisibility(b.type, b.id, e), Y(null)), null != t && (B(t), g.A.setMetadataVisibility(b.type, b.id, t), W(null))
     }, [b]), (0, i.jsxs)("div", {
         className: k.FI,
         children: [(t = p.A.get(b.type), n = p.A.get(Q), l = "1" === (b.metadata ?? {})[M.pK.TWITTER_VERIFIED], a = null, t.type === D.fg2.TWITTER && l && (a = (0, i.jsx)(c.m, {
@@ -312,7 +312,7 @@ function w(e) {
                         verified: t
                     } = b, n = +!!e;
                     if (e && !t) {
-                        z(n), (0, T.A)({
+                        Y(n), (0, T.A)({
                             platformType: b.type,
                             location: "User Settings"
                         });
@@ -430,7 +430,7 @@ function H(e) {
     })
 }
 
-function Y() {
+function z() {
     let e = (0, o.bG)([I.A], () => I.A.hidePersonalInformation),
         t = (0, o.bG)([N.A], () => N.A.isFetching()),
         n = (0, o.bG)([N.A], () => N.A.getAccounts()),

@@ -19,8 +19,8 @@ var i = n(627968),
     T = n(845625),
     f = n(785823),
     N = n(449585),
-    C = n(137207),
-    g = n(22007),
+    g = n(137207),
+    C = n(22007),
     h = n(378570),
     p = n(589022),
     R = n(576705),
@@ -278,7 +278,7 @@ function Z(e) {
     } = q(l, s), ec = a.useCallback(() => {
         (0, N.w2)(l.id, $, z, s)
     }, [l.id, $, z, s]), ed = a.useCallback(e => {
-        null != ee && null != X && (e.stopPropagation(), e.preventDefault(), (0, g.A)(F.BVt.CHANNEL(X?.guild_id, X?.id, ee)))
+        null != ee && null != X && (e.stopPropagation(), e.preventDefault(), (0, C.A)(F.BVt.CHANNEL(X?.guild_id, X?.id, ee)))
     }, [X, ee]), eu = a.useCallback(e => {
         null != X && (A.default.selectChannel({
             guildId: X.guild_id,
@@ -286,7 +286,7 @@ function Z(e) {
             messageId: l.id
         }), (0, h.iN)(e))
     }, [l, X]), e_ = a.useCallback(() => {
-        (0, C.E5)(l.id, s, T.G.DELETE_USER_MESSAGE)
+        (0, g.E5)(l.id, s, T.G.DELETE_USER_MESSAGE)
     }, [s, l.id]), em = (0, H.getFriendlyDurationString)(Number(et)), eA = null != en, eE = y && null != ee && (null == ei || !ei.actions.hasOwnProperty(T.G.DELETE_USER_MESSAGE)), eI = l.embeds.length > 0 ? l.embeds[0].fields.find(e => "channel_id" === e.rawName)?.rawValue : null, eT = null != eI;
     return (0, i.jsx)("div", {
         onMouseEnter: _,

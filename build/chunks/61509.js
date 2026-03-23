@@ -43,8 +43,8 @@ var i = n(627968),
     B = n(71393),
     F = n(287809),
     H = n(295405),
-    Y = n(97352),
-    z = n(90165),
+    z = n(97352),
+    Y = n(90165),
     X = n(147925),
     W = n(954571),
     K = n(957565),
@@ -788,8 +788,8 @@ function eA(e) {
         applicationStatistics: u,
         gameApplication: _,
         paymentSources: g
-    } = (0, m.cf)([H.A, z.A, T.A], () => ({
-        applicationStatistics: null != o ? z.A.getCurrentUserStatisticsForApplication(o) : null,
+    } = (0, m.cf)([H.A, Y.A, T.A], () => ({
+        applicationStatistics: null != o ? Y.A.getCurrentUserStatisticsForApplication(o) : null,
         gameApplication: T.A.getApplication(o ?? "") ?? t.sku?.application,
         paymentSources: H.A.paymentSources
     })), {
@@ -801,7 +801,7 @@ function eA(e) {
     let E = (0, m.bG)([B.A], () => B.A.getGuild(_?.guildId)),
         S = r ? _ : void 0,
         b = t.subscription,
-        C = (0, m.bG)([Y.A], () => null != b && b.type !== ee.rzx.PREMIUM ? Y.A.get(b.items[0].planId) : null),
+        C = (0, m.bG)([z.A], () => null != b && b.type !== ee.rzx.PREMIUM ? z.A.get(b.items[0].planId) : null),
         N = (0, m.bG)([F.default], () => {
             let e = t.isGift ? t.entitlements?.find(e => e.user?.id != null && null != e.gifterId) : null;
             return null == e ? null : F.default.getUser(e.user?.id ?? null) ?? e?.user

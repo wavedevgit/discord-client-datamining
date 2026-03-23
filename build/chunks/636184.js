@@ -19,8 +19,8 @@ var i = n(627968),
     T = n(326084),
     f = n(851746),
     N = n(652215),
-    C = n(985018),
-    g = n(185914),
+    g = n(985018),
+    C = n(185914),
     h = n(299148);
 let p = e => {
         let {
@@ -35,10 +35,10 @@ let p = e => {
             size: d._3J.SIZE_56
         }), o = I.Ay.getName(t), c = n === T.o.FAIL;
         return (0, i.jsxs)("div", {
-            className: g.w4,
+            className: C.w4,
             children: [(0, i.jsx)(d.euF, {
                 imageClassName: r()({
-                    [g.jN]: c
+                    [C.jN]: c
                 }),
                 src: l,
                 "aria-label": o,
@@ -46,27 +46,27 @@ let p = e => {
                 ...s
             }), c ? (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(d.Text, {
-                    className: g.E0,
+                    className: C.E0,
                     variant: "text-md/medium",
                     color: "text-strong",
                     children: o
                 }), (0, i.jsx)(d.Text, {
                     variant: "text-md/medium",
-                    className: g.nT,
+                    className: C.nT,
                     color: "text-strong",
-                    children: C.intl.format(C.t.RO3T4B, {
+                    children: g.intl.format(g.t.RO3T4B, {
                         userName: o
                     })
                 })]
             }) : (0, i.jsx)(d.Text, {
                 variant: "text-md/medium",
-                className: g.Pm,
+                className: C.Pm,
                 color: "text-strong",
                 children: o
             }), (0, i.jsx)(d.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: C.intl.string(C.t["g33r/P"]),
+                text: g.intl.string(g.t["g33r/P"]),
                 icon: d.oyn,
                 onClick: () => {
                     var e;
@@ -97,16 +97,16 @@ let p = e => {
                 type: "rive"
             },
             gradientColor: "nitro-pink",
-            title: 0 === n.filter(e => e.status === T.o.SUCCESS).length ? C.intl.string(C.t["7VBEue"]) : !0 === r ? C.intl.string(C.t.GP5lbq) : C.intl.string(C.t.tKCltd),
-            subtitle: !0 === r ? C.intl.format(C.t["4gJJfD"], {
+            title: 0 === n.filter(e => e.status === T.o.SUCCESS).length ? g.intl.string(g.t["7VBEue"]) : !0 === r ? g.intl.string(g.t.GP5lbq) : g.intl.string(g.t.tKCltd),
+            subtitle: !0 === r ? g.intl.format(g.t["4gJJfD"], {
                 helpdeskArticle: E.A.getArticleURL(N.MVz.REFERRAL_PROGRAM)
-            }) : C.intl.format(C.t.AwGSWl, {
+            }) : g.intl.format(g.t.AwGSWl, {
                 helpdeskArticle: E.A.getArticleURL(N.MVz.REFERRAL_PROGRAM)
             }),
             onClose: l,
             transitionState: t,
             children: (0, i.jsx)("div", {
-                className: g.Hz,
+                className: C.Hz,
                 children: n.map(e => (0, i.jsx)(p, {
                     recipient: e.recipient,
                     status: e.status,

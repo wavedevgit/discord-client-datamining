@@ -30,6 +30,7 @@ function g(e) {
         className: t,
         children: (0, i.jsx)(l.D0$, {
             label: m.intl.string(u.default.pb7lpK),
+            description: m.intl.string(u.default.X4LEbC),
             id: p,
             children: (0, i.jsx)(c.y, {
                 badgeCollection: _,

@@ -1,6 +1,6 @@
 /** chunk id: 901057 params = (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => g
 });
 var i = n(627968);
 n(64700);
@@ -21,12 +21,12 @@ var a = n(311907),
     f = n(449054),
     N = n(652215);
 
-function C(e) {
+function g(e) {
     let {
         channel: t,
         onClick: n,
-        beforeTransition: C,
-        className: g,
+        beforeTransition: g,
+        className: C,
         openChatWithoutConnecting: h
     } = e, p = (0, a.bG)([I.default, E.A], () => null == t ? "" : (0, c.m1)(t, I.default, E.A), [t]);
     return (0, i.jsx)(l.m, {
@@ -35,9 +35,9 @@ function C(e) {
         position: "top",
         children: (0, i.jsx)(d.A, {
             role: "link",
-            className: g,
+            className: C,
             onClick: e => {
-                e.stopPropagation(), null != n ? n() : (null != C && C(), (0, r.s7G)(), function(e, t) {
+                e.stopPropagation(), null != n ? n() : (null != g && g(), (0, r.s7G)(), function(e, t) {
                     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
                     if (null == e || null == t) return;
                     let i = A.A.getGuild(e);

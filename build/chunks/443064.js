@@ -47,7 +47,7 @@ function H() {
     (0, G.openUserSettings)(D.X.PROFILE_PANEL)
 }
 
-function Y(e) {
+function z(e) {
     let {
         className: t,
         user: l
@@ -120,7 +120,7 @@ function Y(e) {
     })
 }
 
-function z(e) {
+function Y(e) {
     let {
         user: t,
         className: n
@@ -510,10 +510,10 @@ function J(e) {
                 children: o
             }) : null, (0, i.jsxs)("div", {
                 className: B.FL,
-                children: [(0, i.jsx)(z, {
+                children: [(0, i.jsx)(Y, {
                     className: B.mS,
                     user: t
-                }), (0, i.jsx)(Y, {
+                }), (0, i.jsx)(z, {
                     user: t
                 }), (0, i.jsx)(W, {
                     className: B.Zr,
