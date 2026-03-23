@@ -11,17 +11,17 @@ var i = n(627968),
     d = n(397927),
     c = n(775602),
     u = n(725951),
-    _ = n(400492),
-    m = n(841329),
+    m = n(400492),
+    _ = n(841329),
     g = n(12901),
     A = n(115063),
     x = n(414736),
-    h = n(927018),
-    p = n(928830),
+    p = n(927018),
+    h = n(928830),
     T = n(3137),
     E = n(301656),
-    S = n(224964),
-    f = n(31408),
+    f = n(224964),
+    S = n(31408),
     C = n(985018),
     b = n(829054);
 let N = {
@@ -34,12 +34,12 @@ let N = {
     v = (0, l.range)(0, 2.25, .25),
     j = (0, l.range)(1, 11),
     y = (0, l.range)(1, 26),
-    R = {
+    O = {
         0: "poggermode_settings_panel",
         1: "poggermode_achievements_panel"
     };
 
-function O(e) {
+function R(e) {
     let {
         disabled: t,
         locations: n,
@@ -73,7 +73,7 @@ function L(e) {
     })
 }
 
-function D(e) {
+function P(e) {
     let {
         settings: {
             enabled: t,
@@ -86,7 +86,7 @@ function D(e) {
         description: C.intl.string(C.t.KuYbWN),
         checked: t,
         onChange: e => {
-            e || (0, x._)(h.sn.DISABLE_POGGERMODE), e && (!n || l) ? (0, o.A)({
+            e || (0, x._)(p.sn.DISABLE_POGGERMODE), e && (!n || l) ? (0, o.A)({
                 title: l ? C.intl.string(C.t["FxT+p0"]) : C.intl.string(C.t.TAZ4F9),
                 subtitle: l ? C.intl.string(C.t.gmixrx) : C.intl.string(C.t.jN3t3K),
                 confirmText: C.intl.string(C.t.JFfins),
@@ -101,7 +101,7 @@ function D(e) {
     })
 }
 
-function P(e) {
+function D(e) {
     let {
         settings: {
             enabled: t,
@@ -162,22 +162,22 @@ function P(e) {
                 }, 0),
                 onValueRender: e => `${e}`
             })]
-        }), (0, i.jsx)(O, {
+        }), (0, i.jsx)(R, {
             disabled: o,
             locations: [{
-                location: f.k.CHAT_INPUT,
+                location: S.k.CHAT_INPUT,
                 title: C.intl.string(C.t.elTtyz),
                 description: C.intl.string(C.t.HtKfMi)
             }, {
-                location: f.k.REACTION,
+                location: S.k.REACTION,
                 title: C.intl.string(C.t.Ik4VIa),
                 description: C.intl.string(C.t.y4rqK0)
             }, {
-                location: f.k.MEMBER_USER,
+                location: S.k.MEMBER_USER,
                 title: C.intl.string(C.t.ZXBlAn),
                 description: C.intl.string(C.t["m9RD+c"])
             }, {
-                location: f.k.CALL_TILE,
+                location: S.k.CALL_TILE,
                 title: C.intl.string(C.t.V66giQ),
                 description: C.intl.string(C.t.fiHV7u)
             }],
@@ -281,22 +281,22 @@ function G(e) {
                     var t;
                     null != (t = {
                         shakeIntensity: e
-                    }).shakeIntensity && t.shakeIntensity > s && (0, x._)(h.sn.MORE), r(t, 1)
+                    }).shakeIntensity && t.shakeIntensity > s && (0, x._)(p.sn.MORE), r(t, 1)
                 },
                 onMarkerRender: e => e === v[v.length - 1] ? C.intl.string(C.t["4rbMWc"]) : `${100*e}%`
             })]
-        }), (0, i.jsx)(O, {
+        }), (0, i.jsx)(R, {
             disabled: u,
             locations: [{
-                location: f.uD.CHAT_INPUT,
+                location: S.uD.CHAT_INPUT,
                 title: C.intl.string(C.t.vUcvPP),
                 description: C.intl.string(C.t.y00OrF)
             }, {
-                location: f.uD.VOICE_USER,
+                location: S.uD.VOICE_USER,
                 title: C.intl.string(C.t.TcRO54),
                 description: C.intl.string(C.t.YJCxVY)
             }, {
-                location: f.uD.MENTION,
+                location: S.uD.MENTION,
                 title: C.intl.string(C.t.oW4shO),
                 description: C.intl.string(C.t["mqfw/H"])
             }],
@@ -308,7 +308,7 @@ function G(e) {
     })
 }
 
-function U(e) {
+function k(e) {
     let {
         updateSettings: t
     } = e;
@@ -337,7 +337,7 @@ function U(e) {
     })
 }
 
-function k(e) {
+function U(e) {
     let {
         onChangePage: t
     } = e;
@@ -369,47 +369,47 @@ function k(e) {
         })]
     })
 }
-let V = () => n.e("4660").then(n.t.bind(n, 662336, 19)).then(e => {
+let w = () => n.e("4660").then(n.t.bind(n, 662336, 19)).then(e => {
     let {
         default: t
     } = e;
     return t
 });
 
-function w(e) {
+function V(e) {
     let {
         onChangePage: t,
         setShowEnableAnimation: n
     } = e, l = (0, a.cf)([T.A], () => T.A.getState()), [r, o] = s.useState({
         x: 0,
         y: 0
-    }), c = (0, S.A)(), u = (e, t) => {
-        var i, s, a, o, d, u, m, g;
-        if (e.enabled && !1 === l.enabled && (n(!0), (0, _.Ak)("poggermode_enabled"), (0, A.fO)({
+    }), c = (0, f.A)(), u = (e, t) => {
+        var i, s, a, o, d, u, _, g;
+        if (e.enabled && !1 === l.enabled && (n(!0), (0, m.Ak)("poggermode_enabled"), (0, A.fO)({
                 duration: 2e3,
                 intensity: e.shakeIntensity ?? l.shakeIntensity
-            })), (0, p.O9)(e), null == t) return;
+            })), (0, h.O9)(e), null == t) return;
         let x = (i = l.confettiEnabled, s = e.confettiEnabled, a = l.enabled, o = e.enabled, (s ?? i) && (o ?? a));
         0 === t && x && c.fire(r.x, r.y, {
             settings: e
         });
-        let h = (d = l.screenshakeEnabled, u = e.screenshakeEnabled, m = l.enabled, g = e.enabled, (u ?? d) && (g ?? m));
-        1 === t && h && (0, A.fO)({
+        let p = (d = l.screenshakeEnabled, u = e.screenshakeEnabled, _ = l.enabled, g = e.enabled, (u ?? d) && (g ?? _));
+        1 === t && p && (0, A.fO)({
             duration: 1e3,
             intensity: e.shakeIntensity ?? l.shakeIntensity
         })
-    }, m = e => {
+    }, _ = e => {
         o({
             x: e.clientX,
             y: e.clientY
         })
     };
-    return s.useEffect(() => (window.addEventListener("mousemove", m), () => window.removeEventListener("mousemove", m)), []), (0, i.jsxs)(d.BJc, {
+    return s.useEffect(() => (window.addEventListener("mousemove", _), () => window.removeEventListener("mousemove", _)), []), (0, i.jsxs)(d.BJc, {
         gap: 24,
-        children: [(0, i.jsx)(D, {
+        children: [(0, i.jsx)(P, {
             settings: l,
             updateSettings: u
-        }), (0, i.jsx)(k, {
+        }), (0, i.jsx)(U, {
             onChangePage: t
         }), (0, i.jsx)(M, {
             settings: l,
@@ -417,10 +417,10 @@ function w(e) {
         }), (0, i.jsx)(G, {
             settings: l,
             updateSettings: u
-        }), (0, i.jsx)(P, {
+        }), (0, i.jsx)(D, {
             settings: l,
             updateSettings: u
-        }), (0, i.jsx)(U, {
+        }), (0, i.jsx)(k, {
             updateSettings: u
         })]
     })
@@ -428,16 +428,16 @@ function w(e) {
 let B = e => 0 === e ? u.f.LEFT : u.f.RIGHT;
 
 function H() {
-    let [e, t] = s.useState(0), [n, l] = s.useState(B(e)), [r, o] = s.useState(!1), _ = (0, a.bG)([c.A], () => c.A.useReducedMotion), g = r && !_;
+    let [e, t] = s.useState(0), [n, l] = s.useState(B(e)), [r, o] = s.useState(!1), m = (0, a.bG)([c.A], () => c.A.useReducedMotion), g = r && !m;
     return s.useEffect(() => {
         let t = setTimeout(() => {
             l(B(e))
         }, 500);
         return () => clearTimeout(t)
     }, [e]), s.useEffect(() => {
-        (0, m._)(R[e])
+        (0, _._)(O[e])
     }, [e]), s.useEffect(() => {
-        Math.random() > .99 && (0, x._)(h.sn.VISITOR_100)
+        Math.random() > .99 && (0, x._)(p.sn.VISITOR_100)
     }, []), (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(u.A, {
             className: b.l3,
@@ -449,7 +449,7 @@ function H() {
                 };
                 switch (e) {
                     case 0:
-                        return (0, i.jsx)(w, {
+                        return (0, i.jsx)(V, {
                             onChangePage: s(1),
                             setShowEnableAnimation: n
                         });
@@ -465,7 +465,7 @@ function H() {
             className: g ? b.Sr : b.IP,
             children: (0, i.jsx)(d.akl, {
                 className: b.gT,
-                importData: V,
+                importData: w,
                 shouldAnimate: g,
                 autoplay: !1,
                 resetOnPlay: !0,

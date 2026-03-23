@@ -12,8 +12,8 @@ var s = n(397927),
     d = n(652215),
     c = n(985018),
     u = n(927961),
-    _ = n(562628);
-let m = e => {
+    m = n(562628);
+let _ = e => {
         let {
             text: t,
             badge: n,
@@ -44,7 +44,7 @@ let m = e => {
             children: [(0, i.jsx)(s.A9s, {
                 size: "md",
                 color: "currentColor",
-                className: _.$8,
+                className: m.$8,
                 "aria-hidden": !0
             }), (0, i.jsx)(s.AC4, {
                 children: c.intl.string(c.t["tq+6t/"])
@@ -53,17 +53,17 @@ let m = e => {
             children: [(0, i.jsx)(s.PGe, {
                 size: "md",
                 color: "currentColor",
-                className: _.ut,
+                className: m.ut,
                 "aria-hidden": !0
             }), (0, i.jsx)(s.AC4, {
                 children: c.intl.string(c.t.l4qZrp)
             })]
         })
     },
-    x = (e, t, n, x, h) => {
-        let p = {
+    x = (e, t, n, x, p) => {
+        let h = {
                 0: {
-                    label: (0, i.jsx)(m, {
+                    label: (0, i.jsx)(_, {
                         text: c.intl.string(c.t["09yRK3"])
                     }),
                     column1: (0, i.jsx)(g, {
@@ -75,7 +75,7 @@ let m = e => {
                     withBottomBorder: !0
                 },
                 1: {
-                    label: (0, i.jsx)(m, {
+                    label: (0, i.jsx)(_, {
                         text: c.intl.string(c.t.vaDeDV)
                     }),
                     column1: (0, i.jsx)(A, {
@@ -86,7 +86,7 @@ let m = e => {
                     })
                 },
                 2: {
-                    label: (0, i.jsx)(m, {
+                    label: (0, i.jsx)(_, {
                         text: c.intl.string(c.t.DmfiwT)
                     }),
                     column1: (0, i.jsx)(A, {
@@ -97,7 +97,7 @@ let m = e => {
                     })
                 },
                 3: {
-                    label: (0, i.jsx)(m, {
+                    label: (0, i.jsx)(_, {
                         text: c.intl.string(c.t.OuItFi)
                     }),
                     column1: (0, i.jsx)(A, {
@@ -108,7 +108,7 @@ let m = e => {
                     })
                 },
                 4: {
-                    label: (0, i.jsx)(m, {
+                    label: (0, i.jsx)(_, {
                         text: c.intl.string(c.t["9kRJS8"])
                     }),
                     column1: (0, i.jsx)(A, {
@@ -119,7 +119,7 @@ let m = e => {
                     })
                 },
                 5: {
-                    label: (0, i.jsx)(m, {
+                    label: (0, i.jsx)(_, {
                         text: c.intl.string(c.t["ufhQC+"])
                     }),
                     column1: (0, i.jsx)(g, {
@@ -130,7 +130,7 @@ let m = e => {
                     })
                 },
                 6: {
-                    label: (0, i.jsx)(m, {
+                    label: (0, i.jsx)(_, {
                         text: c.intl.string(c.t.VwxlMw)
                     }),
                     column1: (0, i.jsx)(A, {
@@ -141,7 +141,7 @@ let m = e => {
                     })
                 },
                 7: {
-                    label: (0, i.jsx)(m, {
+                    label: (0, i.jsx)(_, {
                         text: c.intl.formatToPlainString(c.t.nyhDpw, {
                             numBoosts: o.M4,
                             percentageOff: (0, r.l9)(l.default.locale, o.oX / 100)
@@ -155,7 +155,7 @@ let m = e => {
                     })
                 },
                 8: {
-                    label: (0, i.jsx)(m, {
+                    label: (0, i.jsx)(_, {
                         text: c.intl.string(c.t.tFbcuM)
                     }),
                     column1: (0, i.jsx)(A, {
@@ -166,7 +166,7 @@ let m = e => {
                     })
                 },
                 9: {
-                    label: (0, i.jsx)(m, {
+                    label: (0, i.jsx)(_, {
                         text: c.intl.string(u.default["86GtGH"])
                     }),
                     column1: (0, i.jsx)(A, {
@@ -177,7 +177,7 @@ let m = e => {
                     })
                 },
                 10: {
-                    label: (0, i.jsx)(m, {
+                    label: (0, i.jsx)(_, {
                         text: c.intl.string(c.t["aR/zTk"])
                     }),
                     column1: (0, i.jsx)(A, {
@@ -188,7 +188,7 @@ let m = e => {
                     })
                 },
                 11: {
-                    label: (0, i.jsx)(m, {
+                    label: (0, i.jsx)(_, {
                         text: c.intl.string(c.t.IzrZHz)
                     }),
                     column1: (0, i.jsx)(A, {
@@ -199,7 +199,7 @@ let m = e => {
                     })
                 },
                 12: {
-                    label: (0, i.jsx)(m, {
+                    label: (0, i.jsx)(_, {
                         text: c.intl.string(c.t["HwNg/Z"])
                     }),
                     column1: (0, i.jsx)(A, {
@@ -210,7 +210,7 @@ let m = e => {
                     })
                 },
                 13: {
-                    label: (0, i.jsx)(m, {
+                    label: (0, i.jsx)(_, {
                         text: c.intl.string(c.t["y+HHL9"])
                     }),
                     column1: (0, i.jsx)(A, {
@@ -221,7 +221,7 @@ let m = e => {
                     })
                 },
                 14: {
-                    label: (0, i.jsx)(m, {
+                    label: (0, i.jsx)(_, {
                         text: c.intl.string(c.t.qQxxVc)
                     }),
                     column1: (0, i.jsx)(A, {
@@ -232,7 +232,7 @@ let m = e => {
                     })
                 },
                 15: {
-                    label: (0, i.jsx)(m, {
+                    label: (0, i.jsx)(_, {
                         text: c.intl.string(c.t.xi0NBE)
                     }),
                     column1: (0, i.jsx)(A, {
@@ -244,7 +244,7 @@ let m = e => {
                     withBottomBorder: !0
                 },
                 16: {
-                    label: (0, i.jsx)(m, {
+                    label: (0, i.jsx)(_, {
                         text: c.intl.string(c.t.MfsUHm)
                     }),
                     column1: (0, i.jsx)(A, {
@@ -255,7 +255,7 @@ let m = e => {
                     })
                 },
                 22: {
-                    label: (0, i.jsx)(m, {
+                    label: (0, i.jsx)(_, {
                         text: c.intl.string(c.t["A+0H1f"])
                     }),
                     column1: (0, i.jsx)(A, {
@@ -266,7 +266,7 @@ let m = e => {
                     })
                 },
                 17: {
-                    label: (0, i.jsx)(m, {
+                    label: (0, i.jsx)(_, {
                         text: c.intl.string(c.t["il8+nC"])
                     }),
                     column1: (0, i.jsx)(A, {
@@ -277,7 +277,7 @@ let m = e => {
                     })
                 },
                 18: {
-                    label: (0, i.jsx)(m, {
+                    label: (0, i.jsx)(_, {
                         text: c.intl.formatToPlainString(c.t["8crdzJ"], {
                             maxChars: d.CS1
                         })
@@ -292,7 +292,7 @@ let m = e => {
                 },
                 19: {
                     label: (0, i.jsx)(s.Heading, {
-                        className: _.__invalid_textColor,
+                        className: m.__invalid_textColor,
                         variant: "display-sm",
                         children: "Make Discord Yours"
                     }),
@@ -302,7 +302,7 @@ let m = e => {
                 },
                 20: {
                     label: (0, i.jsx)(s.Heading, {
-                        className: _.__invalid_textColor,
+                        className: m.__invalid_textColor,
                         variant: "display-sm",
                         children: "Enjoy an Upgraded Discord"
                     }),
@@ -312,7 +312,7 @@ let m = e => {
                 },
                 21: {
                     label: (0, i.jsx)(s.Heading, {
-                        className: _.__invalid_textColor,
+                        className: m.__invalid_textColor,
                         variant: "display-sm",
                         children: "Show Up the Way You Want"
                     }),
@@ -321,7 +321,7 @@ let m = e => {
                     withBottomBorder: !1
                 },
                 23: {
-                    label: (0, i.jsx)(m, {
+                    label: (0, i.jsx)(_, {
                         text: c.intl.string(c.t["93xPy3"])
                     }),
                     column1: (0, i.jsx)(A, {
@@ -333,7 +333,7 @@ let m = e => {
                     withBottomBorder: !0
                 },
                 24: {
-                    label: (0, i.jsx)(m, {
+                    label: (0, i.jsx)(_, {
                         text: c.intl.string(c.t["5BJqNF"])
                     }),
                     column1: (0, i.jsx)(A, {
@@ -345,6 +345,6 @@ let m = e => {
                     withBottomBorder: !1
                 }
             },
-            T = h === o.xc.FP_ONLY;
-        return [p[0], p[1], p[2], p[3], p[4], p[5], p[6], ...T ? [] : [p[7]], p[8], p[9], p[10], p[11], p[12], ...T ? [] : [p[13]], p[14], p[15], p[16], p[17], p[18], p[23], p[24]]
+            T = p === o.xc.FP_ONLY;
+        return [h[0], h[1], h[2], h[3], h[4], h[5], h[6], ...T ? [] : [h[7]], h[8], h[9], h[10], h[11], h[12], ...T ? [] : [h[13]], h[14], h[15], h[16], h[17], h[18], h[23], h[24]]
     }

@@ -11,17 +11,17 @@ var i = n(64700),
     d = n(954571),
     c = n(461797),
     u = n(652215);
-let _ = Object.keys(c.jB),
-    m = e => {
-        let t = null == e ? _ : _.filter(t => t !== e);
+let m = Object.keys(c.jB),
+    _ = e => {
+        let t = null == e ? m : m.filter(t => t !== e);
         return t[Math.floor(Math.random() * t.length)]
     };
 
 function g() {
     let e = (0, s.bG)([l.A], () => l.A.useReducedMotion),
-        [t, n] = (0, i.useState)(m()),
+        [t, n] = (0, i.useState)(_()),
         {
-            banner: _,
+            banner: m,
             themeColors: g,
             avatarDecorationSkuId: A,
             displayNameStyles: x
@@ -34,26 +34,26 @@ function g() {
                 displayNameStyles: n.displayNameStyles
             }
         }, [t, e]),
-        h = (0, s.bG)([a.A], () => {
+        p = (0, s.bG)([a.A], () => {
             let e = a.A.getProduct(A);
             return (0, r.T)(e?.items[0]) ? e.items[0] : null
         });
     (0, i.useEffect)(() => {
         (0, o.w5)({
-            banner: _,
+            banner: m,
             themeColors: g,
-            avatarDecoration: h,
+            avatarDecoration: p,
             displayNameStyles: x
         })
-    }, [_, g, h, x]);
-    let p = (0, i.useCallback)(() => {
-        let e = m(t);
+    }, [m, g, p, x]);
+    let h = (0, i.useCallback)(() => {
+        let e = _(t);
         n(e), d.default.track(u.HAw.TRY_IT_OUT_PRESET_SHUFFLED, {
             preset: e
         })
     }, [t]);
     return {
         preset: t,
-        onShuffle: p
+        onShuffle: h
     }
 }

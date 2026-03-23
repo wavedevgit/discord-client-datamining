@@ -12,8 +12,8 @@ var i = n(627968),
     d = n(780964),
     c = n(767669),
     u = n(32096),
-    _ = n(545214),
-    m = n(985018);
+    m = n(545214),
+    _ = n(985018);
 
 function g() {
     return (0, s.bG)([o.default], () => {
@@ -24,12 +24,12 @@ function g() {
 let A = (0, l.E2)(d.X.ACCOUNT_AUTHENTICATOR_APP_SETTING, {
     useSearchTerms: function() {
         let e = (0, s.bG)([a.default], () => a.default.hasTOTPEnabled()),
-            t = [m.intl.string(m.t.m0FidJ), m.intl.string(m.t.xZEzbu)];
-        return e ? t.push(m.intl.string(m.t["D+aE7g"])) : t.push(m.intl.string(m.t.cDgKte)), t
+            t = [_.intl.string(_.t.m0FidJ), _.intl.string(_.t.xZEzbu)];
+        return e ? t.push(_.intl.string(_.t["D+aE7g"])) : t.push(_.intl.string(_.t.cDgKte)), t
     },
     usePredicate: function() {
         let e = (0, u.b)(),
-            t = (0, _.A)(),
+            t = (0, m.A)(),
             n = g();
         return !e && !t && n
     },

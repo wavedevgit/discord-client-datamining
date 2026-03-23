@@ -1,6 +1,6 @@
 /** chunk id: 326911 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => p
 });
 var i = n(627968),
     s = n(64700),
@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(99696),
     c = n(499454),
     u = n(351906),
-    _ = n(954571),
-    m = n(45938),
+    m = n(954571),
+    _ = n(45938),
     g = n(652215),
     A = n(985018);
 class x extends s.Component {
@@ -59,7 +59,7 @@ class x extends s.Component {
                 });
                 return
             } catch {}
-            let e = (0, m.Vd)(t);
+            let e = (0, _.Vd)(t);
             if (null == e) return void this.setState({
                 hasError: !0
             });
@@ -67,7 +67,7 @@ class x extends s.Component {
             if (null != i && null != i.giftCode.promotion) throw this.setState({
                 isPromoCode: !0
             }), Error("Cannnot redeem promotion code as gift");
-            _.default.track(g.HAw.OPEN_MODAL, {
+            m.default.track(g.HAw.OPEN_MODAL, {
                 type: "gift_accept",
                 location: {
                     ...this.analyticsLocation,
@@ -127,12 +127,12 @@ class x extends s.Component {
     }
 }
 
-function h() {
+function p() {
     let {
         enabled: e
     } = (0, o.c)({
         location: "UserSettingsBilling"
-    }), t = s.useContext(_.AnalyticsContext), n = (0, l.bG)([u.A], () => u.A.enabled);
+    }), t = s.useContext(m.AnalyticsContext), n = (0, l.bG)([u.A], () => u.A.enabled);
     return (0, i.jsx)(x, {
         analyticsContext: t,
         obscureInput: n,

@@ -1,6 +1,6 @@
 /** chunk id: 791460 params = (module,exports,require) **/
 n.d(t, {
-    U: () => p
+    U: () => h
 });
 var i = n(311907),
     s = n(419117),
@@ -11,15 +11,15 @@ var i = n(311907),
     d = n(464639),
     c = n(658522),
     u = n(466116),
-    _ = n(923159),
-    m = n(881318),
+    m = n(923159),
+    _ = n(881318),
     g = n(918873),
     A = n(985667),
     x = n(580997),
-    h = n(985018);
-let p = (0, l.bd)(r.X.INPUT_PROFILE_VOICE_ADVANCED_ACCORDION, {
+    p = n(985018);
+let h = (0, l.bd)(r.X.INPUT_PROFILE_VOICE_ADVANCED_ACCORDION, {
     useTitle: function(e) {
-        return e ? h.intl.string(h.t.KHsSWK) : h.intl.string(h.t.PPDo5V)
+        return e ? p.intl.string(p.t.KHsSWK) : p.intl.string(p.t.PPDo5V)
     },
     useCollapsedSubtitle: () => {
         var e;
@@ -28,5 +28,5 @@ let p = (0, l.bd)(r.X.INPUT_PROFILE_VOICE_ADVANCED_ACCORDION, {
             limit: t ? 3 : 2
         })
     },
-    buildLayout: () => [o.C, m.$, u.l, x.A, c.J, _.Q, d.e, g.W, A.i]
+    buildLayout: () => [o.C, _.$, u.l, x.A, c.J, m.Q, d.e, g.W, A.i]
 })

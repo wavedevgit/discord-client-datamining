@@ -1,6 +1,6 @@
 /** chunk id: 193660 params = (module,exports,require) **/
 n.d(t, {
-    w: () => m
+    w: () => _
 });
 var i = n(311907),
     s = n(955572),
@@ -11,14 +11,14 @@ var i = n(311907),
     d = n(780964),
     c = n(358776),
     u = n(985018),
-    _ = n(927961);
-let m = (0, o.zD)(d.X.DISPLAY_NAME_STYLES, {
-    useTitle: () => u.intl.string(_.default["2gFUEw"]),
+    m = n(927961);
+let _ = (0, o.zD)(d.X.DISPLAY_NAME_STYLES, {
+    useTitle: () => u.intl.string(m.default["2gFUEw"]),
     useSubtitle: () => {
         let {
             analyticsLocations: e
         } = (0, a.Ay)(), t = (0, c.bp)("DisplayNameStyles");
-        return u.intl.format(t ? _.default.aEax6P : _.default.L8U56h, {
+        return u.intl.format(t ? m.default.aEax6P : m.default.L8U56h, {
             onClickOpenModal() {
                 (0, r.L)({
                     analyticsLocations: e

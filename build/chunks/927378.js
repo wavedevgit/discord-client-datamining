@@ -11,13 +11,13 @@ var i = n(627968),
     d = n(157559),
     c = n(287809),
     u = n(975571),
-    _ = n(115063),
-    m = n(104954),
+    m = n(115063),
+    _ = n(104954),
     g = n(975648),
     A = n(106148),
     x = n(652215),
-    h = n(985018),
-    p = n(657204);
+    p = n(985018),
+    h = n(657204);
 
 function T() {
     let e = (0, r.bG)([c.default], () => c.default.getCurrentUser()),
@@ -30,44 +30,44 @@ function T() {
         })),
         [T, E] = s.useState(!1);
     if (null == e) return null;
-    let S = (0, _.Oj)(t, e) || l,
-        f = null != t && a()().diff(a()(t.created_at), "days") < x.n83,
-        C = S && f,
+    let f = (0, m.Oj)(t, e) || l,
+        S = null != t && a()().diff(a()(t.created_at), "days") < x.n83,
+        C = f && S,
         b = e.isStaff(),
         N = !e.verified;
     return (0, i.jsxs)(A.h, {
         children: [(0, i.jsx)(A._, {
-            header: h.intl.string(h.t.XAHCgJ),
-            description: h.intl.format(h.t.P3kNfr, {
+            header: p.intl.string(p.t.XAHCgJ),
+            description: p.intl.format(p.t.P3kNfr, {
                 helpdeskArticle: u.A.getArticleURL(x.MVz.GDPR_REQUEST_DATA)
             })
         }), C ? (0, i.jsx)(o.ZpM, {
-            className: p.N,
+            className: h.N,
             children: (0, i.jsx)(o.Text, {
                 variant: "text-md/normal",
-                children: h.intl.format(h.t.RNDlV9, {
+                children: p.intl.format(p.t.RNDlV9, {
                     date: a()(t.created_at).add(x.n83, "days").format("MMMM Do YYYY")
                 })
             })
         }) : b ? (0, i.jsx)(o.ZpM, {
-            className: p.N,
+            className: h.N,
             children: (0, i.jsx)(o.Text, {
                 variant: "text-md/normal",
-                children: h.intl.string(h.t.ZPQLH2)
+                children: p.intl.string(p.t.ZPQLH2)
             })
         }) : (0, i.jsxs)(i.Fragment, {
             children: [N ? (0, i.jsx)(o.ZpM, {
-                className: p.N,
+                className: h.N,
                 children: (0, i.jsx)(o.Text, {
                     variant: "text-md/normal",
-                    children: h.intl.string(h.t.c1f88z)
+                    children: p.intl.string(p.t.c1f88z)
                 })
             }) : null, (0, i.jsx)("div", {
-                className: p.x,
+                className: h.x,
                 children: (0, i.jsx)(o.Button, {
                     variant: "primary",
-                    text: h.intl.string(h.t.dmBSKo),
-                    disabled: S,
+                    text: p.intl.string(p.t.dmBSKo),
+                    disabled: f,
                     onClick: () => {
                         (e => {
                             let {
@@ -84,18 +84,18 @@ function T() {
                             })
                         })({
                             onConfirm: e => {
-                                E(!0), (0, m.$)(e).then(e => {
+                                E(!0), (0, _.$)(e).then(e => {
                                     null != e && null != e.body ? d.A.show({
-                                        title: h.intl.string(h.t.i2iul5),
-                                        body: h.intl.string(h.t["6Nmv4i"])
+                                        title: p.intl.string(p.t.i2iul5),
+                                        body: p.intl.string(p.t["6Nmv4i"])
                                     }) : d.A.show({
-                                        title: h.intl.string(h.t.OjbtDm),
-                                        body: h.intl.string(h.t["0F5Jyt"])
+                                        title: p.intl.string(p.t.OjbtDm),
+                                        body: p.intl.string(p.t["0F5Jyt"])
                                     })
                                 }, e => {
-                                    let t = e?.message || e?.body?.message || h.intl.string(h.t["0F5Jyt"]);
+                                    let t = e?.message || e?.body?.message || p.intl.string(p.t["0F5Jyt"]);
                                     d.A.show({
-                                        title: h.intl.string(h.t.OjbtDm),
+                                        title: p.intl.string(p.t.OjbtDm),
                                         body: t
                                     })
                                 }).finally(() => E(!1))

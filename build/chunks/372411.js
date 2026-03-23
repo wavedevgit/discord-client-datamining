@@ -16,11 +16,11 @@ let u = {
         useDisabled: l.kB,
         useDisabledMessage: () => (0, l.kB)() ? c.intl.string(c.t.cIRG0s) : void 0
     },
-    _ = {
+    m = {
         useTitle: () => c.intl.string(c.t.XBrJT6),
         sound: "call_ringing"
     },
-    m = (0, a.zD)(o.X.SELECTED_CHANNEL_NOTIFICATIONS, {
+    _ = (0, a.zD)(o.X.SELECTED_CHANNEL_NOTIFICATIONS, {
         useTitle: () => c.intl.string(c.t.TzjwV9),
         useSubtitle: () => c.intl.format(c.t.OOiGCM, {
             onClick: () => (0, d.Jz)("message3")
@@ -41,5 +41,5 @@ let u = {
                 (0, d.vd)()
             }
         },
-        buildLayout: () => [(0, d.i)(u), m, (0, d.i)(_), g]
+        buildLayout: () => [(0, d.i)(u), _, (0, d.i)(m), g]
     })

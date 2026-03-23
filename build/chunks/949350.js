@@ -11,17 +11,17 @@ var i = n(64700),
     d = n(525707),
     c = n(9653),
     u = n(473146),
-    _ = n(709747),
-    m = n(985018);
+    m = n(709747),
+    _ = n(985018);
 let g = (0, a.zZ)(o.X.GIFT_INVENTORY_CATEGORY, {
-        buildLayout: () => [d.V, u.E, c.R, _.Y]
+        buildLayout: () => [d.V, u.E, c.R, m.Y]
     }),
     A = (0, a.t_)(o.X.GIFT_PANEL, {
-        useTitle: () => m.intl.string(m.t["jcSP+g"]),
+        useTitle: () => _.intl.string(_.t["jcSP+g"]),
         buildLayout: () => [g]
     }),
     x = (0, a.i4)(o.X.GIFT_SIDEBAR_ITEM, {
-        useTitle: () => m.intl.string(m.t["jcSP+g"]),
+        useTitle: () => _.intl.string(_.t["jcSP+g"]),
         icon: s.GiftIcon,
         usePersistentBadge: function() {
             return i.useMemo(() => ({

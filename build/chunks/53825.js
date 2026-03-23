@@ -1,6 +1,6 @@
 /** chunk id: 53825 params = (module,exports,require) **/
 n.d(t, {
-    N: () => p
+    N: () => h
 });
 var i = n(627968),
     s = n(64700),
@@ -11,18 +11,18 @@ var i = n(627968),
     d = n(97260),
     c = n(117178),
     u = n(734066),
-    _ = n(419954),
-    m = n(532624),
+    m = n(419954),
+    _ = n(532624),
     g = n(780964),
     A = n(652215),
     x = n(985018),
-    h = n(280973);
-let p = (0, _.E2)(g.X.CLIPS_SCREENSHOT_KEYBIND, {
+    p = n(280973);
+let h = (0, m.E2)(g.X.CLIPS_SCREENSHOT_KEYBIND, {
     useSearchTerms: () => [x.intl.string(x.t["0U/hj7"]), x.intl.string(x.t["5zxkdo"])],
     usePredicate: u.BW,
     Component: () => {
-        let e = (0, r.bG)([m.Ay], () => m.Ay.getKeybindForAction(A.hCu.SAVE_CLIP, !0)),
-            t = (0, r.bG)([m.Ay], () => m.Ay.getKeybindForAction(A.hCu.SAVE_SCREENSHOT, !0));
+        let e = (0, r.bG)([_.Ay], () => _.Ay.getKeybindForAction(A.hCu.SAVE_CLIP, !0)),
+            t = (0, r.bG)([_.Ay], () => _.Ay.getKeybindForAction(A.hCu.SAVE_SCREENSHOT, !0));
         a()(null != e, "Save clip keybind unset"), a()(null != t, "Save screenshot keybind unset");
         let n = s.useCallback(e => {
             d.A.setKeybind({
@@ -35,7 +35,7 @@ let p = (0, _.E2)(g.X.CLIPS_SCREENSHOT_KEYBIND, {
             description: x.intl.string(x.t["5zxkdo"]),
             layout: "horizontal",
             children: (0, i.jsx)("div", {
-                className: h.g,
+                className: p.g,
                 children: (0, i.jsx)(c.A, {
                     defaultValue: t.shortcut,
                     onChange: n

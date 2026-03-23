@@ -1,38 +1,38 @@
 /** chunk id: 106148 params = (module,exports,require) **/
-n.d(e, {
+n.d(t, {
     _: () => s,
     h: () => a
 });
-var i = n(627968);
+var l = n(627968);
 n(64700);
-var l = n(503698),
-    r = n.n(l),
+var r = n(503698),
+    i = n.n(r),
     u = n(397927),
     d = n(716214);
 
-function s(t) {
+function s(e) {
     let {
-        header: e,
+        header: t,
         description: n,
-        relatedId: l,
+        relatedId: r,
         disabled: s
-    } = t;
-    return (0, i.jsxs)("div", {
+    } = e;
+    return (0, l.jsxs)("div", {
         className: d.wx,
-        children: [(0, i.jsx)(u.Heading, {
+        children: [(0, l.jsx)(u.Heading, {
             variant: "text-md/medium",
             color: "text-strong",
-            children: (0, i.jsx)("label", {
-                htmlFor: l,
-                className: r()(d.DD, {
+            children: (0, l.jsx)("label", {
+                htmlFor: r,
+                className: i()(d.DD, {
                     [d.r9]: s
                 }),
-                children: e
+                children: t
             })
-        }), (0, i.jsx)(u.Text, {
+        }), (0, l.jsx)(u.Text, {
             variant: "text-sm/normal",
             color: "text-default",
-            className: r()(d.h_, {
+            className: i()(d.h_, {
                 [d.r9]: s
             }),
             children: n
@@ -40,13 +40,13 @@ function s(t) {
     })
 }
 
-function a(t) {
+function a(e) {
     let {
-        className: e,
+        className: t,
         children: n
-    } = t;
-    return (0, i.jsx)("div", {
-        className: r()(d.kL, e),
+    } = e;
+    return (0, l.jsx)("div", {
+        className: i()(d.kL, t),
         children: n
     })
 }

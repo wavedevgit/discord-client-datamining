@@ -11,32 +11,32 @@ var i = n(627968),
     d = n(419954),
     c = n(253932),
     u = n(780964),
-    _ = n(985018),
-    m = n(536482);
+    m = n(985018),
+    _ = n(536482);
 let g = (0, d.Qx)(u.X.ACTIVITY_PRIVACY_PER_GUILD_DEFAULT_SETTING, {
-    useTitle: () => (0, r.i)("GuildActivitySharingDefaultSetting") ? _.intl.string(_.t.vpgck1) : _.intl.string(m.default["/LHVbt"]),
+    useTitle: () => (0, r.i)("GuildActivitySharingDefaultSetting") ? m.intl.string(m.t.vpgck1) : m.intl.string(_.default["/LHVbt"]),
     useOptions: function() {
         let e = (0, r.i)("GuildActivitySharingDefaultSetting");
         return s.useMemo(() => e ? [{
             value: l.Qd.ACTIVITY_STATUS_OFF,
-            name: _.intl.string(_.t.FzgQna),
-            desc: _.intl.string(_.t.SQxoyc)
+            name: m.intl.string(m.t.FzgQna),
+            desc: m.intl.string(m.t.SQxoyc)
         }, {
             value: l.Qd.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS,
-            name: _.intl.string(_.t["1hvuGH"]),
-            desc: _.intl.string(_.t.odUCPE)
+            name: m.intl.string(m.t["1hvuGH"]),
+            desc: m.intl.string(m.t.odUCPE)
         }, {
             value: l.Qd.ACTIVITY_STATUS_ON,
-            name: _.intl.string(_.t.fQc5la)
+            name: m.intl.string(m.t.fQc5la)
         }] : [{
             value: l.Qd.ACTIVITY_STATUS_ON,
-            name: _.intl.string(_.t.UzGMH9)
+            name: m.intl.string(m.t.UzGMH9)
         }, {
             value: l.Qd.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS,
-            name: _.intl.string(m.default["/sAeRY"])
+            name: m.intl.string(_.default["/sAeRY"])
         }, {
             value: l.Qd.ACTIVITY_STATUS_OFF,
-            name: _.intl.string(m.default.m3oL7Q)
+            name: m.intl.string(_.default.m3oL7Q)
         }], [e])
     },
     useValue: c._Z.useSetting,

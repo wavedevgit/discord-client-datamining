@@ -15,15 +15,15 @@ let u = e => {
         userId: t,
         dmsSent: n,
         callCount: u
-    } = e, _ = (0, s.bG)([r.default], () => r.default.getUser(t));
-    return void 0 === _ ? null : (0, i.jsx)(l.un, {
-        title: _.username,
+    } = e, m = (0, s.bG)([r.default], () => r.default.getUser(t));
+    return void 0 === m ? null : (0, i.jsx)(l.un, {
+        title: m.username,
         body: (0, o.fq)(n, u),
         asContainer: !0,
         children: (0, i.jsx)("div", {
             className: c.k,
             children: (0, i.jsx)(d.H, {
-                user: _,
+                user: m,
                 avatarSize: a._3J.SIZE_40
             })
         })

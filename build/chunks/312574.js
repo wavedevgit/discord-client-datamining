@@ -11,31 +11,31 @@ var i = n(627968),
     d = n(46373),
     c = n(419954),
     u = n(933297),
-    _ = n(780964),
-    m = n(682262),
+    m = n(780964),
+    _ = n(682262),
     g = n(694202),
     A = n(50847),
     x = n(606275),
-    h = n(879545),
-    p = n(49999),
+    p = n(879545),
+    h = n(49999),
     T = n(985018),
     E = n(696952),
-    S = n(130324),
-    f = n(966040);
-let C = (0, c.t_)(_.X.OVERLAY_PANEL, {
+    f = n(130324),
+    S = n(966040);
+let C = (0, c.t_)(m.X.OVERLAY_PANEL, {
         useTitle: () => T.intl.string(T.t["9cb1Uz"]),
         decoration: {
             type: u.t9.STRONGLY_DISCOURAGED_CUSTOM,
             component: function() {
                 let [e, t] = (0, o.kn)([r.M.OVERLAY_OOP_SETTINGS_NUX], void 0, !0);
                 return ((0, s.Ay)(() => () => {
-                    t(p.i.AUTO_DISMISS)
+                    t(h.i.AUTO_DISMISS)
                 }), e !== r.M.OVERLAY_OOP_SETTINGS_NUX) ? null : (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsxs)("div", {
                         className: E.xC,
                         children: [(0, i.jsx)("div", {
                             children: (0, i.jsx)("img", {
-                                src: S.A,
+                                src: f.A,
                                 alt: T.intl.string(T.t.mdXZh1),
                                 className: E.tl
                             })
@@ -54,7 +54,7 @@ let C = (0, c.t_)(_.X.OVERLAY_PANEL, {
                             })
                         }), (0, i.jsx)("div", {
                             children: (0, i.jsx)("img", {
-                                src: f.A,
+                                src: S.A,
                                 alt: T.intl.string(T.t.mdXZh1),
                                 className: E.lh
                             })
@@ -64,7 +64,7 @@ let C = (0, c.t_)(_.X.OVERLAY_PANEL, {
                             children: (0, i.jsx)(a.$nd, {
                                 variant: "primary",
                                 text: T.intl.string(T.t.Q26diF),
-                                onClick: () => void t(p.i.DISMISS)
+                                onClick: () => void t(h.i.DISMISS)
                             })
                         })]
                     }), (0, i.jsx)(d.A, {
@@ -73,11 +73,11 @@ let C = (0, c.t_)(_.X.OVERLAY_PANEL, {
                 })
             }
         },
-        buildLayout: () => [g.u, A.X, h.D, x.h]
+        buildLayout: () => [g.u, A.X, p.D, x.h]
     }),
-    b = (0, c.i4)(_.X.OVERLAY_SIDEBAR_ITEM, {
+    b = (0, c.i4)(m.X.OVERLAY_SIDEBAR_ITEM, {
         useTitle: () => T.intl.string(T.t["9cb1Uz"]),
         icon: l.WindowTopOutlineIcon,
-        usePredicate: m.b_,
+        usePredicate: _.b_,
         buildLayout: () => [C]
     })

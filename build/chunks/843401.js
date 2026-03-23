@@ -1,7 +1,7 @@
 /** chunk id: 843401 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p,
-    I: () => h
+    A: () => h,
+    I: () => p
 });
 var i = n(627968),
     s = n(503698),
@@ -12,8 +12,8 @@ var i = n(627968),
     d = n(769015),
     c = n(430452),
     u = n(975571),
-    _ = n(942405),
-    m = n(652215),
+    m = n(942405),
+    _ = n(652215),
     g = n(985018),
     A = n(726097);
 
@@ -44,15 +44,15 @@ function x(e) {
     })
 }
 
-function h(e) {
+function p(e) {
     let t = (0, a.bG)([c.Ay], () => c.Ay.getMode()),
         {
             runningGame: n,
             runningGameApplication: i
         } = (0, o.A)();
     null == n || n.elevated || (n = void 0, i = void 0);
-    let s = (0, _.NP)(),
-        l = s && null != n && t === m.TBI.PUSH_TO_TALK;
+    let s = (0, m.NP)(),
+        l = s && null != n && t === _.TBI.PUSH_TO_TALK;
     return {
         canPrompt: "voice" === e ? l : s,
         runningGame: n,
@@ -60,7 +60,7 @@ function h(e) {
     }
 }
 
-function p(e) {
+function h(e) {
     let {
         className: t,
         sourcePage: n
@@ -68,7 +68,7 @@ function p(e) {
         canPrompt: s,
         runningGame: a,
         runningGameApplication: o
-    } = h(n);
+    } = p(n);
     return s ? (0, i.jsxs)("div", {
         className: l()(A.kL, t),
         children: [(0, i.jsx)(x, {
@@ -84,7 +84,7 @@ function p(e) {
                 variant: "text-xs/medium",
                 color: "text-muted",
                 children: g.intl.format(g.t["/y6htt"], {
-                    helpCenterLink: u.A.getArticleURL(m.MVz.SYSTEM_SERVICE)
+                    helpCenterLink: u.A.getArticleURL(_.MVz.SYSTEM_SERVICE)
                 })
             })]
         }), (0, i.jsx)(r.Button, {
@@ -92,7 +92,7 @@ function p(e) {
             size: "sm",
             text: g.intl.string(g.t["1iI46O"]),
             onClick: function() {
-                (0, _.sL)(n + (null != a ? "-with-game" : "-no-game"))
+                (0, m.sL)(n + (null != a ? "-with-game" : "-no-game"))
             }
         })]
     }) : null

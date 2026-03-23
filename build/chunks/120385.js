@@ -1,6 +1,6 @@
 /** chunk id: 120385 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -11,7 +11,7 @@ var i = n(627968),
     d = n(818348),
     c = n(985018),
     u = n(124953);
-async function _(e) {
+async function m(e) {
     try {
         return (await l.Bo.get({
             url: o.Rsh.BILLING_INVOICE_BREAKDOWN,
@@ -26,19 +26,19 @@ async function _(e) {
     }
 }
 
-function m(e) {
+function _(e) {
     let {
         payment: t
-    } = e, [n, l] = s.useState(null), [o, m] = s.useState(null), g = async e => {
+    } = e, [n, l] = s.useState(null), [o, _] = s.useState(null), g = async e => {
         try {
-            let n = await _(t.id);
+            let n = await m(t.id);
             l(n);
             let i = e ? n.refundInvoiceLinks[0] : n.invoiceLink;
-            window.open(i, "_blank"), m(null)
+            window.open(i, "_blank"), _(null)
         } catch (e) {
-            m(e.body?.message)
+            _(e.body?.message)
         }
-    }, A = null != t.paymentSource && t.status === d.__.COMPLETED, x = n?.invoiceLink, h = n?.refundInvoiceLinks;
+    }, A = null != t.paymentSource && t.status === d.__.COMPLETED, x = n?.invoiceLink, p = n?.refundInvoiceLinks;
     return t.hasInvoiceURL && null == n ? (0, i.jsxs)("div", {
         className: u.It,
         children: [(0, i.jsx)(a.MzZ, {
@@ -57,7 +57,7 @@ function m(e) {
         children: [(0, i.jsx)(a.MzZ, {
             href: x,
             children: c.intl.formatToPlainString(c.t.R0xzCN, {})
-        }), null != h ? h.map((e, t) => (0, i.jsx)(a.MzZ, {
+        }), null != p ? p.map((e, t) => (0, i.jsx)(a.MzZ, {
             className: u.oe,
             href: e,
             children: c.intl.formatToPlainString(c.t["3x6NGw"], {})

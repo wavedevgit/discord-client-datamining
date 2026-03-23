@@ -1,6 +1,6 @@
 /** chunk id: 286237 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _,
+    A: () => m,
     b: () => u
 });
 var i = n(812729),
@@ -26,7 +26,7 @@ function u() {
     }
 }
 
-function _() {
+function m() {
     let e = (0, l.bG)([o.A], () => o.A.getStreamerActiveStreamMetadata()),
         t = (0, l.bG)([d.Ay], () => {
             let e = d.Ay.getVisibleGame();

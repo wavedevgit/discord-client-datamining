@@ -12,8 +12,8 @@ var s = n(503698),
     d = n(736653),
     c = n(573648),
     u = n(681819),
-    _ = n(882997),
-    m = n(954571),
+    m = n(882997),
+    _ = n(954571),
     g = n(652215),
     A = n(277816);
 let x = e => {
@@ -22,8 +22,8 @@ let x = e => {
         type: n,
         className: s,
         innerClassName: x,
-        onConnect: h
-    } = e, p = (0, d.Ay)(), T = c.A.get((0, u.ML)(n));
+        onConnect: p
+    } = e, h = (0, d.Ay)(), T = c.A.get((0, u.ML)(n));
     return (0, i.jsx)(a.m, {
         text: T.name,
         children: (0, i.jsx)("div", {
@@ -34,14 +34,14 @@ let x = e => {
                     type: "button",
                     disabled: t,
                     style: {
-                        backgroundImage: `url('${(0,r.Mw)(p)?T.icon.darkSVG:T.icon.lightSVG}')`
+                        backgroundImage: `url('${(0,r.Mw)(h)?T.icon.darkSVG:T.icon.lightSVG}')`
                     },
-                    onClick: null != h ? h : () => {
+                    onClick: null != p ? p : () => {
                         let e;
-                        return e = c.A.get(n), void((0, _.A)({
+                        return e = c.A.get(n), void((0, m.A)({
                             platformType: e.type,
                             location: "Friends List"
-                        }), m.default.track(g.HAw.ACCOUNT_LINK_STEP, {
+                        }), _.default.track(g.HAw.ACCOUNT_LINK_STEP, {
                             previous_step: "desktop connections",
                             current_step: "desktop oauth",
                             platform_type: e.type

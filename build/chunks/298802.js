@@ -1,6 +1,6 @@
 /** chunk id: 298802 params = (module,exports,require) **/
 n.d(t, {
-    G: () => m
+    G: () => _
 });
 var i = n(311907),
     s = n(775121),
@@ -11,13 +11,13 @@ var i = n(311907),
     d = n(780964),
     c = n(358776),
     u = n(652215),
-    _ = n(985018);
-let m = (0, r.sN)(d.X.APPEARANCE_ZOOM, {
+    m = n(985018);
+let _ = (0, r.sN)(d.X.APPEARANCE_ZOOM, {
     usePredicate: () => o.isPlatformEmbedded,
-    useTitle: () => _.intl.string(_.t.i19n5L),
-    useSubtitle: () => (0, c.bp)("Zoom") ? _.intl.format(_.t["x9PK/3"], {
+    useTitle: () => m.intl.string(m.t.i19n5L),
+    useSubtitle: () => (0, c.bp)("Zoom") ? m.intl.format(m.t["x9PK/3"], {
         modKey: s.A.modKey
-    }) : _.intl.string(_.t.ip0uSf),
+    }) : m.intl.string(m.t.ip0uSf),
     markers: u.hH7.ZOOM_SCALES,
     stickToMarkers: !0,
     minValue: u.hH7.ZOOM_SCALES["0"],
@@ -27,8 +27,8 @@ let m = (0, r.sN)(d.X.APPEARANCE_ZOOM, {
     useExternalValue: () => (0, i.bG)([a.A], () => a.A.zoom),
     onValueRender: e => `${e.toFixed(0)}%`,
     setValue: e => (0, l.Qp)(e),
-    useSearchTerms: () => [_.intl.string(_.t.ip0uSf)],
-    useHintText: () => (0, c.bp)("Zoom") ? null : _.intl.format(_.t.OMkSUo, {
+    useSearchTerms: () => [m.intl.string(m.t.ip0uSf)],
+    useHintText: () => (0, c.bp)("Zoom") ? null : m.intl.format(m.t.OMkSUo, {
         modKey: s.A.modKey
     })
 })

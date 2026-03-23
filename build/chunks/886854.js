@@ -1,7 +1,7 @@
 /** chunk id: 886854 params = (module,exports,require) **/
 n.d(t, {
     j0: () => T,
-    yj: () => S
+    yj: () => f
 });
 var i = n(934551),
     s = n(554146),
@@ -12,13 +12,13 @@ var i = n(934551),
     d = n(358776),
     c = n(227542),
     u = n(729770),
-    _ = n(859669),
-    m = n(662802),
+    m = n(859669),
+    _ = n(662802),
     g = n(988208),
     A = n(819070),
     x = n(352694),
-    h = n(136451),
-    p = n(985018);
+    p = n(136451),
+    h = n(985018);
 let T = [{
         badgeType: r.Xi.STRONGLY_DISCOURAGED_CUSTOM,
         dismissibleContent: s.M.CLIENT_THEMES_SETTINGS_BADGE,
@@ -32,14 +32,14 @@ let T = [{
         dismissibleContent: s.M.CLIENT_THEMES_APPEARANCE_SETTINGS_NEW_BADGE
     }],
     E = (0, a.t_)(o.X.APPEARANCE_PANEL, {
-        useTitle: () => p.intl.string(p.t["iHH+ky"]),
+        useTitle: () => h.intl.string(h.t["iHH+ky"]),
         initialize: () => {
             (0, l.v)()
         },
-        buildLayout: () => [x.S, m._, h.u, g.U, A.M, _.d]
+        buildLayout: () => [x.S, _._, p.u, g.U, A.M, m.d]
     }),
-    S = (0, a.i4)(o.X.APPEARANCE_SIDEBAR_ITEM, {
-        useTitle: () => p.intl.string(p.t["iHH+ky"]),
+    f = (0, a.i4)(o.X.APPEARANCE_SIDEBAR_ITEM, {
+        useTitle: () => h.intl.string(h.t["iHH+ky"]),
         icon: i.PaintPaletteIcon,
         usePredicate: () => !(0, d.bp)("AppearanceSidebarItem"),
         useMenu: c.A,

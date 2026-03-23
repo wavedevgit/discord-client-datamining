@@ -11,22 +11,22 @@ var i = n(627968),
     d = n(933297),
     c = n(780964),
     u = n(358776),
-    _ = n(227542),
-    m = n(264124),
+    m = n(227542),
+    _ = n(264124),
     g = n(850060),
     A = n(886854),
     x = n(729770),
-    h = n(274835),
-    p = n(505112),
+    p = n(274835),
+    h = n(505112),
     T = n(163944),
     E = n(41197),
-    S = n(28161),
-    f = n(114074),
+    f = n(28161),
+    S = n(114074),
     C = n(413336),
     b = n(985018);
 let N = (0, o.t_)(c.X.DISPLAY_PANEL, {
         useTitle: () => b.intl.string(b.t.DVatCa),
-        buildLayout: () => [f.K, T.S, E.X, p.S, S.f, (0, C.$)(!0), h.J]
+        buildLayout: () => [S.K, T.S, E.X, h.S, f.f, (0, C.$)(!0), p.J]
     }),
     I = [...A.j0, {
         badgeType: d.Xi.STRONGLY_DISCOURAGED_CUSTOM,
@@ -38,9 +38,9 @@ let N = (0, o.t_)(c.X.DISPLAY_PANEL, {
         icon: l.PaintPaletteIcon,
         usePredicate: () => (0, u.bp)("DisplaySidebarItem"),
         useMenu: function() {
-            let e = (0, _.A)(),
+            let e = (0, m.A)(),
                 t = (0, g.A)(),
-                n = (0, m.A)();
+                n = (0, _.A)();
             return s.useMemo(() => {
                 let s = [...e];
                 return null != t && s.push((0, i.jsx)(r.rXV, {

@@ -1,6 +1,6 @@
 /** chunk id: 509388 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => m
 });
 var i = n(627968),
     s = n(64700),
@@ -32,4 +32,4 @@ let u = s.forwardRef((e, t) => {
     })
 });
 u.displayName = "PremiumMarketingFooter";
-let _ = u
+let m = u

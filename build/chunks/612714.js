@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(615715),
     c = n(87707),
     u = n(652215),
-    _ = n(53516),
-    m = n(985018),
+    m = n(53516),
+    _ = n(985018),
     g = n(139674);
 
 function A(e) {
@@ -20,10 +20,10 @@ function A(e) {
             currentUser: A,
             togglingSMS: x
         } = e,
-        [h, p] = s.useState(!1),
+        [p, h] = s.useState(!1),
         T = s.useCallback(e => {
-            e.preventDefault(), p(!h)
-        }, [h]),
+            e.preventDefault(), h(!p)
+        }, [p]),
         E = s.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
             (0, l.qfG)(t => (0, i.jsx)(d.default, {
@@ -31,13 +31,13 @@ function A(e) {
                 ...t,
                 ...e
             }), {
-                modalKey: _.V
+                modalKey: m.V
             })
         }, []),
-        S = s.useCallback(() => {
+        f = s.useCallback(() => {
             E()
         }, [E]),
-        f = s.useCallback(() => {
+        S = s.useCallback(() => {
             null == A.phone ? E({
                 onAddedPhone: a.A.enableSMS
             }) : a.A.enableSMS()
@@ -46,30 +46,30 @@ function A(e) {
             (0, l.qfG)(e => (0, i.jsx)(o.default, {
                 ...e,
                 handleSubmit: a.A.disableSMS,
-                title: m.intl.string(m.t.KLWnit),
-                children: m.intl.string(m.t["W0/Duf"])
+                title: _.intl.string(_.t.KLWnit),
+                children: _.intl.string(_.t["W0/Duf"])
             }))
         }, []),
         b = s.useCallback(e => null == e ? "" : `${"*".repeat(e.length-4)}${e.slice(-4)}`, []),
         N = null != A.phone,
         I = A.hasFlag(u.nhx.MFA_SMS);
     if (N || I) {
-        let e = h ? A.phone : b(A.phone);
+        let e = p ? A.phone : b(A.phone);
         n = (0, i.jsxs)(l.Text, {
             variant: "text-sm/normal",
-            children: [m.intl.format(m.t.PXVoEO, {
+            children: [_.intl.format(_.t.PXVoEO, {
                 phoneNumber: e
             }), (0, i.jsx)(l.MzZ, {
                 onClick: T,
                 className: g.vN,
-                children: h ? m.intl.string(m.t.FfltIN) : m.intl.string(m.t.llArAg)
+                children: p ? _.intl.string(_.t.FfltIN) : _.intl.string(_.t.llArAg)
             })]
         })
     }
     if (I) t = (0, i.jsx)(l.Button, {
         variant: "critical-secondary",
         size: "sm",
-        text: m.intl.string(m.t.KLWnit),
+        text: _.intl.string(_.t.KLWnit),
         loading: x,
         onClick: C
     });
@@ -80,21 +80,21 @@ function A(e) {
             children: [(0, i.jsx)(l.Button, {
                 variant: "primary",
                 size: "sm",
-                text: e ?? m.intl.string(m.t.DZQe23),
-                onClick: f,
+                text: e ?? _.intl.string(_.t.DZQe23),
+                onClick: S,
                 loading: x,
                 disabled: null != e
             }), N ? (0, i.jsx)(l.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: m.intl.string(m.t.Ulqq6K),
-                onClick: S
+                text: _.intl.string(_.t.Ulqq6K),
+                onClick: f
             }) : null]
         })
     }
     return (0, i.jsxs)(l.D0$, {
-        label: m.intl.string(m.t.uHAJ5v),
-        description: m.intl.string(m.t.fspJ4H),
+        label: _.intl.string(_.t.uHAJ5v),
+        description: _.intl.string(_.t.fspJ4H),
         children: [n, t]
     })
 }

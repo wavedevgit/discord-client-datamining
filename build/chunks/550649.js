@@ -14,16 +14,16 @@ let u = [{
         badgeType: a.Xi.NEW,
         dismissibleContent: s.M.NEW_CRUNCHYROLL_CONNECTION
     }],
-    _ = (0, l.zZ)(r.X.CONNECTIONS_ADD_CONNECTIONS_CATEGORY, {
+    m = (0, l.zZ)(r.X.CONNECTIONS_ADD_CONNECTIONS_CATEGORY, {
         buildLayout: () => [o.l]
     }),
-    m = (0, l.zZ)(r.X.CONNECTIONS_CONNECTED_ACCOUNTS_CATEGORY, {
+    _ = (0, l.zZ)(r.X.CONNECTIONS_CONNECTED_ACCOUNTS_CATEGORY, {
         buildLayout: () => [d.W]
     }),
     g = (0, l.t_)(r.X.CONNECTIONS_PANEL, {
         useTitle: () => c.intl.string(c.t["3fe7U5"]),
         hideInStreamerMode: !0,
-        buildLayout: () => [_, m]
+        buildLayout: () => [m, _]
     }),
     A = (0, l.i4)(r.X.CONNECTIONS_SIDEBAR_ITEM, {
         useTitle: () => c.intl.string(c.t["3fe7U5"]),

@@ -11,17 +11,17 @@ var i = n(627968),
     d = n(780964),
     c = n(12901),
     u = n(840065),
-    _ = n(899847),
-    m = n(936926),
+    m = n(899847),
+    _ = n(936926),
     g = n(809697),
     A = n(153739),
     x = n(534654),
-    h = n(834981),
-    p = n(191627),
+    p = n(834981),
+    h = n(191627),
     T = n(842130),
     E = n(985018),
-    S = n(191248);
-let f = e => {
+    f = n(191248);
+let S = e => {
         let {
             title: t,
             buttonText: n,
@@ -48,7 +48,7 @@ let f = e => {
         })
     },
     C = () => {
-        let e = (0, h.vx)(),
+        let e = (0, p.vx)(),
             t = () => {
                 (0, u.openUserSettings)(d.X.CONTENT_AND_SOCIAL_PANEL)
             };
@@ -137,11 +137,11 @@ let f = e => {
             {
                 handleTabChange: n
             } = (0, g.A)(),
-            a = (0, m.Vh)({
+            a = (0, _.Vh)({
                 location: "TimeControlsRow"
             });
         s.useEffect(() => {
-            e?.id != null && t && _.Ay.fetchTeenSettingsAndConsents(e?.id)
+            e?.id != null && t && m.Ay.fetchTeenSettingsAndConsents(e?.id)
         }, [e?.id, t]);
         let r = e => {
             n(e)
@@ -158,19 +158,19 @@ let f = e => {
                     color: "text-muted",
                     children: E.intl.string(T.default.Sv236e)
                 })]
-            }), (0, i.jsx)(f, {
+            }), (0, i.jsx)(S, {
                 title: E.intl.string(E.t["+o1pDZ"]),
                 buttonText: E.intl.string(E.t.bt75uw),
-                onButtonPress: () => r(p.u9.CONTENT_AND_SOCIAL)
+                onButtonPress: () => r(h.u9.CONTENT_AND_SOCIAL)
             }), (0, i.jsx)(o.A, {
-                className: S.yF
-            }), (0, i.jsx)(f, {
+                className: f.yF
+            }), (0, i.jsx)(S, {
                 title: E.intl.string(E.t.OAuOHD),
                 buttonText: E.intl.string(E.t.bt75uw),
-                onButtonPress: () => r(p.u9.DATA_AND_PRIVACY)
+                onButtonPress: () => r(h.u9.DATA_AND_PRIVACY)
             }), a && e?.id != null && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(o.A, {
-                    className: S.yF
+                    className: f.yF
                 }), (0, i.jsx)(b, {
                     teenId: e.id
                 })]
@@ -179,8 +179,8 @@ let f = e => {
     },
     I = () => {
         let e = (0, x.A)();
-        return 0 === (0, h.vx)().length ? null : (0, i.jsx)("div", {
-            className: S.kL,
+        return 0 === (0, p.vx)().length ? null : (0, i.jsx)("div", {
+            className: f.kL,
             children: e ? (0, i.jsx)(C, {}) : (0, i.jsx)(N, {})
         })
     }

@@ -12,15 +12,15 @@ var s = n(503698),
     d = n(820284),
     c = n(490415),
     u = n(736653),
-    _ = n(742589),
-    m = n(287809),
+    m = n(742589),
+    _ = n(287809),
     g = n(927578),
     A = n(652215),
     x = n(788868),
-    h = n(985018),
-    p = n(187585);
-let T = a.Ay.connectStores([m.default], () => ({
-    user: m.default.getCurrentUser()
+    p = n(985018),
+    h = n(187585);
+let T = a.Ay.connectStores([_.default], () => ({
+    user: _.default.getCurrentUser()
 }))((0, c.A)(e => {
     let {
         isAuthenticated: t,
@@ -30,19 +30,19 @@ let T = a.Ay.connectStores([m.default], () => ({
         section: A.JJy.NAVIGATION,
         children: (0, i.jsx)(o.NPJ, {
             theme: a,
-            children: e => (0, i.jsxs)(_.A, {
+            children: e => (0, i.jsxs)(m.A, {
                 isAuthenticated: t,
                 className: l()(e, {
-                    [p.xD]: !s && !(0, r.Mw)(a),
-                    [p.lO]: !s && (0, r.Mw)(a)
+                    [h.xD]: !s && !(0, r.Mw)(a),
+                    [h.lO]: !s && (0, r.Mw)(a)
                 }),
                 role: "navigation",
-                children: [(0, i.jsx)(_.A.Icon, {
+                children: [(0, i.jsx)(m.A.Icon, {
                     icon: o.tvc,
                     "aria-hidden": !0,
                     color: s ? void 0 : o.LU0.unsafe_rawColors.PREMIUM_TIER_2_PINK.css
-                }), (0, i.jsx)(_.A.Title, {
-                    children: h.intl.string(h.t.Ipxkog)
+                }), (0, i.jsx)(m.A.Title, {
+                    children: p.intl.string(p.t.Ipxkog)
                 })]
             })
         })

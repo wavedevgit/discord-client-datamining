@@ -15,7 +15,7 @@ let o = s.forwardRef(function(e, t) {
         children: d,
         showPageCount: c = !0,
         ...u
-    } = e, _ = n >= s - 1, m = c ? a.intl.format(a.t.MtpIwg, {
+    } = e, m = n >= s - 1, _ = c ? a.intl.format(a.t.MtpIwg, {
         currentPage: n + 1,
         numPages: s
     }) : a.intl.format(a.t.bKI77c, {
@@ -36,11 +36,11 @@ let o = s.forwardRef(function(e, t) {
                     "aria-label": a.intl.string(a.t.vgfxaA)
                 }), (0, i.jsx)(l.Text, {
                     variant: "text-sm/medium",
-                    children: m
+                    children: _
                 }), (0, i.jsx)(l.K0, {
                     variant: "icon-only",
                     icon: l._BQ,
-                    disabled: _,
+                    disabled: m,
                     onClick: () => o(n + 1),
                     "aria-label": a.intl.string(a.t.XiOHRX)
                 })]

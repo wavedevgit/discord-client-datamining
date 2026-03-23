@@ -17,17 +17,17 @@ let d = s.memo(function(e) {
         useSubnavLabel: d,
         useSubtitle: c,
         layout: u,
-        useInlineNotice: _,
-        useHeaderDecoration: m
-    } = t, g = n?.(), A = c?.(), x = _?.(), h = m?.(), p = null != n || null != d;
+        useInlineNotice: m,
+        useHeaderDecoration: _
+    } = t, g = n?.(), A = c?.(), x = m?.(), p = _?.(), h = null != n || null != d;
     return (0, i.jsxs)(i.Fragment, {
         children: [null != g && (0, i.jsx)(r._, {
             title: g,
             icon: s,
             subtitle: A,
-            decoration: h
+            decoration: p
         }), (0, i.jsx)("div", {
-            "data-settings-category-key": p ? t.key : void 0,
+            "data-settings-category-key": h ? t.key : void 0,
             "aria-hidden": !0,
             style: {
                 height: 1

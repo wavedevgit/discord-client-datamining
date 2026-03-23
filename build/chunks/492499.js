@@ -1,6 +1,6 @@
 /** chunk id: 492499 params = (module,exports,require) **/
 n.d(t, {
-    M: () => m
+    M: () => _
 });
 var i = n(64700),
     s = n(379197),
@@ -11,13 +11,13 @@ var i = n(64700),
     d = n(559474),
     c = n(985018),
     u = n(795056),
-    _ = n(996613);
-let m = () => {
+    m = n(996613);
+let _ = () => {
     let e = (0, o.mb)(d.RN.UPSELL_BANNER),
         t = (0, o.mb)(d.RN.UPSELL_BANNER_POPOUT),
         n = (0, a.bG)([r.A], () => r.A.getMarketingBySurface(s.R.EDIT_PROFILE_SETTINGS)),
-        m = i.useMemo(() => null != n ? n : {
-            asset: _,
+        _ = i.useMemo(() => null != n ? n : {
+            asset: m,
             popoutAsset: u,
             title: c.intl.string(c.t.QZVVBh),
             body: c.intl.string(c.t.sajmAq),
@@ -25,9 +25,9 @@ let m = () => {
             revertTextColor: !1
         }, [n]);
     return i.useMemo(() => ({
-        ...m,
+        ..._,
         type: l.G.BANNER,
-        asset: e ?? m.asset,
-        popoutAsset: t ?? m.popoutAsset
-    }), [e, t, m])
+        asset: e ?? _.asset,
+        popoutAsset: t ?? _.popoutAsset
+    }), [e, t, _])
 }

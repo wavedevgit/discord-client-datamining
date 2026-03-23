@@ -17,7 +17,7 @@ function u(e) {
         purchaseState: t,
         currentStep: n,
         onClose: u
-    } = e, [_, m] = (0, o.f)({
+    } = e, [m, _] = (0, o.f)({
         purchaseState: t,
         currentStep: n,
         initialScene: d.V1.Scenes.ENTRY,
@@ -32,8 +32,8 @@ function u(e) {
         separator: !1,
         children: [(0, i.jsx)(d.V1, {
             className: c.lY,
-            nextScene: _,
-            onScenePlay: e => m(d.V1.getNextScene(e)),
+            nextScene: m,
+            onScenePlay: e => _(d.V1.getNextScene(e)),
             pauseWhileUnfocused: !1,
             pause: g
         }), (0, i.jsx)("div", {

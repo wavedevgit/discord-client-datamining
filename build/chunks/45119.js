@@ -1,5 +1,4 @@
 /** chunk id: 45119 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     Ix: "channel__972a0",
     Ij: "fullWidth__972a0",

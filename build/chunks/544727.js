@@ -1,6 +1,6 @@
 /** chunk id: 544727 params = (module,exports,require) **/
 n.d(t, {
-    $: () => _
+    $: () => m
 });
 var i = n(627968);
 n(64700);
@@ -12,7 +12,7 @@ var s = n(311907),
     d = n(419954),
     c = n(780964),
     u = n(985018);
-let _ = (0, d.E2)(c.X.CLIPS_STORAGE_LOCATION, {
+let m = (0, d.E2)(c.X.CLIPS_STORAGE_LOCATION, {
     useSearchTerms: () => [u.intl.string(u.t.s4773E), u.intl.string(u.t.svjwGh)],
     Component: () => {
         let e = (0, s.bG)([r.A], () => r.A.getSettings().storageLocation),

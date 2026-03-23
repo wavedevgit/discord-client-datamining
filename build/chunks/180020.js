@@ -11,13 +11,13 @@ var i = n(627968),
     d = n(259065),
     c = n(84540),
     u = n(954571),
-    _ = n(927578),
-    m = n(919395),
+    m = n(927578),
+    _ = n(919395),
     g = n(128450),
     A = n(652215),
     x = n(49999),
-    h = n(985018),
-    p = n(927961),
+    p = n(985018),
+    h = n(927961),
     T = n(109046);
 
 function E(e) {
@@ -25,19 +25,19 @@ function E(e) {
         user: t,
         guildId: n,
         className: E
-    } = e, S = _.Ay.canUsePremiumProfileCustomization(t), {
-        analyticsLocations: f
+    } = e, f = m.Ay.canUsePremiumProfileCustomization(t), {
+        analyticsLocations: S
     } = (0, r.Ay)(), {
         userDisplayNameStyles: C,
         guildDisplayNameStyles: b,
         pendingDisplayNameStyles: N,
         pendingErrors: I
-    } = (0, m.B0)(t, n), [v, j] = (0, o.kn)([l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), y = v === l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, R = (0, s.useCallback)(() => {
+    } = (0, _.B0)(t, n), [v, j] = (0, o.kn)([l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), y = v === l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, O = (0, s.useCallback)(() => {
         j(x.i.TAKE_ACTION), u.default.track(A.HAw.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.L)({
-            analyticsLocations: f,
+            analyticsLocations: S,
             guildId: n
         })
-    }, [f, j, n]), O = (0, s.useCallback)(() => {
+    }, [S, j, n]), R = (0, s.useCallback)(() => {
         (0, c.p)({
             displayNameStyles: null
         }), u.default.track(A.HAw.DISPLAY_NAME_STYLES_REMOVED)
@@ -46,32 +46,32 @@ function E(e) {
             guildId: n,
             displayNameStyles: null
         })
-    }, [n]), D = void 0 !== N || (null != n ? null != b : null != C);
+    }, [n]), P = void 0 !== N || (null != n ? null != b : null != C);
     return (0, i.jsx)(g.A, {
-        title: h.intl.string(p.default["86GtGH"]),
+        title: p.intl.string(h.default["86GtGH"]),
         titleIcon: y ? (0, i.jsx)(a.LpS, {
-            text: h.intl.string(h.t.y2b7CA),
+            text: p.intl.string(p.t.y2b7CA),
             className: T.A
         }) : void 0,
         className: E,
-        showPremiumIcon: S,
+        showPremiumIcon: f,
         errors: I,
         children: (0, i.jsxs)("div", {
             className: T.N,
             children: [(0, i.jsx)(a.Button, {
                 variant: "primary",
                 size: "sm",
-                text: h.intl.string(p.default.vJqrIg),
-                onClick: R
-            }), null == n && D && (0, i.jsx)(a.Button, {
+                text: p.intl.string(h.default.vJqrIg),
+                onClick: O
+            }), null == n && P && (0, i.jsx)(a.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: h.intl.string(p.default.ymq8WQ),
-                onClick: O
+                text: p.intl.string(h.default.ymq8WQ),
+                onClick: R
             }), null != n && null != (void 0 !== N ? N : b) && (0, i.jsx)(a.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: h.intl.string(p.default["j/KRxc"]),
+                text: p.intl.string(h.default["j/KRxc"]),
                 onClick: L
             })]
         })

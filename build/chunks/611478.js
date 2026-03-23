@@ -11,15 +11,15 @@ var i = n(627968),
     d = n(287809),
     c = n(780964),
     u = n(431832),
-    _ = n(443064),
-    m = n(985018),
+    m = n(443064),
+    _ = n(985018),
     g = n(536242);
 let A = (0, o.E2)(c.X.ACCOUNT_PROFILE_SETTING, {
         useSearchTerms: function() {
-            let e = [m.intl.string(m.t.LYju5J), m.intl.string(m.t["9AjdkD"]), m.intl.string(m.t["+JkHPw"]), m.intl.string(m.t.oP5zGA), m.intl.string(m.t.Ulqq6K)],
+            let e = [_.intl.string(_.t.LYju5J), _.intl.string(_.t["9AjdkD"]), _.intl.string(_.t["+JkHPw"]), _.intl.string(_.t.oP5zGA), _.intl.string(_.t.Ulqq6K)],
                 t = (0, r.fk)(),
                 n = (0, a.Y2)();
-            return t && (e.push(m.intl.string(m.t["/52UYy"])), e.push(m.intl.string(m.t.sK0dmH)), e.push(m.intl.string(m.t.XxRj7f)), e.push(m.intl.string(m.t.DVywUB)), e.push(m.intl.string(m.t["9KiIz6"])), n && (e.push(m.intl.string(g.default.FTawSP)), e.push(m.intl.string(g.default["bD//cU"])), e.push(m.intl.string(g.default.SH6Tcv)))), e
+            return t && (e.push(_.intl.string(_.t["/52UYy"])), e.push(_.intl.string(_.t.sK0dmH)), e.push(_.intl.string(_.t.XxRj7f)), e.push(_.intl.string(_.t.DVywUB)), e.push(_.intl.string(_.t["9KiIz6"])), n && (e.push(_.intl.string(g.default.FTawSP)), e.push(_.intl.string(g.default["bD//cU"])), e.push(_.intl.string(g.default.SH6Tcv)))), e
         },
         Component: function() {
             let e = (0, s.bG)([d.default], () => d.default.getCurrentUser());
@@ -27,7 +27,7 @@ let A = (0, o.E2)(c.X.ACCOUNT_PROFILE_SETTING, {
                 gap: "md",
                 children: [null != e && (0, i.jsx)(u.A, {
                     currentUser: e
-                }), null != e && (0, i.jsx)(_.A, {
+                }), null != e && (0, i.jsx)(m.A, {
                     currentUser: e
                 })]
             })

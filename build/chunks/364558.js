@@ -1,6 +1,6 @@
 /** chunk id: 364558 params = (module,exports,require) **/
 n.d(t, {
-    u: () => m
+    u: () => _
 });
 var i = n(627968),
     s = n(397927),
@@ -11,10 +11,10 @@ var i = n(627968),
     d = n(519412),
     c = n(985018),
     u = n(817577);
-let _ = () => {
+let m = () => {
         (0, l.A)(o.TE)
     },
-    m = () => ({
+    _ = () => ({
         name: r.U.PREMIUM_GROUP,
         title: c.intl.string(d.default.YkvksF),
         subtitle: c.intl.formatToPlainString(d.default.JlyGQj, {
@@ -22,7 +22,7 @@ let _ = () => {
             premiumGroupProductName: (0, o.DP)()
         }),
         description: (0, i.jsx)(a.A, {
-            onClick: _,
+            onClick: m,
             children: c.intl.string(d.default.yYyGJH)
         }),
         descriptionCta: c.intl.string(c.t.jVcuVY),

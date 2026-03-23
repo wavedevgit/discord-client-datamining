@@ -1,6 +1,6 @@
 /** chunk id: 380098 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => m
 }), n(938796);
 var i = n(122817),
     s = n(665260),
@@ -11,7 +11,7 @@ var i = n(122817),
     d = n(272207),
     c = n(652215),
     u = n(788868);
-class _ extends l.A {
+class m extends l.A {
     id;
     createdAt;
     currency;
@@ -38,7 +38,7 @@ class _ extends l.A {
         let t = null != e.payment_source ? o.Ay.createFromServer(e.payment_source) : null,
             n = null != e.sku ? a.A.createFromServer(e.sku) : null,
             i = null != e.subscription ? d.A.createFromServer(e.subscription) : null;
-        return new _({
+        return new m({
             id: e.id,
             createdAt: new Date(e.created_at),
             currency: e.currency,

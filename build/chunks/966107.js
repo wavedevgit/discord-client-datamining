@@ -5,7 +5,7 @@ i.d(e, {
     ST: () => m,
     Sk: () => u,
     UK: () => c,
-    xf: () => A
+    xf: () => p
 });
 var n = i(562465),
     l = i(73153),
@@ -62,6 +62,6 @@ function m(t) {
     })
 }
 
-function A() {
+function p() {
     r.A.getLocationMetadata()
 }

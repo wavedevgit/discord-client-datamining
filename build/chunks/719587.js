@@ -1,6 +1,6 @@
 /** chunk id: 719587 params = (module,exports,require) **/
 n.d(t, {
-    L: () => m
+    L: () => _
 });
 var i = n(311907),
     s = n(290595),
@@ -11,10 +11,10 @@ var i = n(311907),
     d = n(780964),
     c = n(137675),
     u = n(652215),
-    _ = n(985018);
-let m = (0, a.zD)(d.X.DATA_USAGE_STATISTICS_SETTING, {
-    useTitle: () => _.intl.string(_.t.XuADY2),
-    useSubtitle: () => _.intl.format(_.t["igTSG/"], {
+    m = n(985018);
+let _ = (0, a.zD)(d.X.DATA_USAGE_STATISTICS_SETTING, {
+    useTitle: () => m.intl.string(m.t.XuADY2),
+    useSubtitle: () => m.intl.format(m.t["igTSG/"], {
         helpdeskArticle: o.A.getArticleURL(u.MVz.DATA_PRIVACY_CONTROLS)
     }),
     useValue: function() {
@@ -22,13 +22,13 @@ let m = (0, a.zD)(d.X.DATA_USAGE_STATISTICS_SETTING, {
     },
     setValue: function(e) {
         e ? (0, s.U)([u.YAq.USAGE_STATISTICS], []).catch(c.i) : (0, c.O)({
-            header: _.intl.string(_.t.OdPCbN),
-            body: _.intl.string(_.t.MGWabA),
-            confirmText: _.intl.string(_.t["D3+rU4"]),
-            cancelText: _.intl.string(_.t.kYpG0u),
+            header: m.intl.string(m.t.OdPCbN),
+            body: m.intl.string(m.t.MGWabA),
+            confirmText: m.intl.string(m.t["D3+rU4"]),
+            cancelText: m.intl.string(m.t.kYpG0u),
             onConfirm: () => (0, s.U)([], [u.YAq.USAGE_STATISTICS]).catch(c.i)
         })
     },
-    useSearchTerms: () => [_.intl.string(_.t.XuADY2)],
+    useSearchTerms: () => [m.intl.string(m.t.XuADY2)],
     useDisabled: l.uM
 })

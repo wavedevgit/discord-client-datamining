@@ -17,20 +17,20 @@ let o = e => {
         subtitle: d,
         subtitleClassName: c,
         isOverlay: u
-    } = e, _ = null != d && !(u && n?.subtitle?.hideOnOverlay === !0), m = null != s;
+    } = e, m = null != d && !(u && n?.subtitle?.hideOnOverlay === !0), _ = null != s;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(a.Heading, {
             variant: "heading-xl/extrabold",
             className: l()(r.Jf, o),
             children: t
-        }), (_ || m) && (0, i.jsxs)("div", {
+        }), (m || _) && (0, i.jsxs)("div", {
             className: c,
-            children: [_ && (0, i.jsx)(a.Text, {
+            children: [m && (0, i.jsx)(a.Text, {
                 variant: n?.subtitle?.textVariant ?? "text-sm/normal",
                 children: d
-            }), m && (0, i.jsxs)(a.Text, {
+            }), _ && (0, i.jsxs)(a.Text, {
                 variant: n?.description?.textVariant ?? "text-sm/normal",
-                children: [_ && (0, i.jsx)("br", {}), s]
+                children: [m && (0, i.jsx)("br", {}), s]
             })]
         })]
     })

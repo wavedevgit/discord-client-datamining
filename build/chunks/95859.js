@@ -12,8 +12,8 @@ var s = n(503698),
     d = n(112848),
     c = n(627380),
     u = n(149757),
-    _ = n(985018),
-    m = n(706627);
+    m = n(985018),
+    _ = n(706627);
 let g = () => {
     let e = (0, d.$F)(),
         t = (0, d.Xb)() ?? new Date,
@@ -24,34 +24,34 @@ let g = () => {
         nameUnformatted: g,
         tenureReqNumMonths: A,
         hasWideArt: x
-    } = e, h = _.intl.string(g), p = (0, o.T)(s, A), T = {
+    } = e, p = m.intl.string(g), h = (0, o.T)(s, A), T = {
         "--custom-badge-glow-color": (0, r.KU)(e.glowColor, .5)
     };
     return (0, i.jsxs)("div", {
-        className: m.kL,
+        className: _.kL,
         style: T,
         children: [(0, i.jsx)("div", {}), " ", (0, i.jsx)("img", {
             src: n.standard,
-            alt: h,
-            className: l()(m.pq, {
-                [m.kQ]: e.status === d.Wo.UPCOMING,
-                [m.U]: x
+            alt: p,
+            className: l()(_.pq, {
+                [_.kQ]: e.status === d.Wo.UPCOMING,
+                [_.U]: x
             })
         }), (0, i.jsxs)("div", {
-            className: m._u,
+            className: _._u,
             children: [(0, i.jsx)(a.EYj, {
                 variant: "text-lg/semibold",
-                className: m.Vv,
-                children: h
-            }), (0, i.jsx)(a.EYj, {
-                variant: "text-md/normal",
-                className: m.Vv,
+                className: _.Vv,
                 children: p
             }), (0, i.jsx)(a.EYj, {
+                variant: "text-md/normal",
+                className: _.Vv,
+                children: h
+            }), (0, i.jsx)(a.EYj, {
                 variant: "text-xs/normal",
-                children: e?.status === d.Wo.EARNED ? _.intl.format(_.t.Hu4jfi, {
+                children: e?.status === d.Wo.EARNED ? m.intl.format(m.t.Hu4jfi, {
                     date: t
-                }) : e?.status === d.Wo.UPCOMING ? _.intl.format(_.t.E85fll, {
+                }) : e?.status === d.Wo.UPCOMING ? m.intl.format(m.t.E85fll, {
                     date: t,
                     days: (0, c.x)(t, e.tenureReqNumMonths)
                 }) : null

@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(531260),
     c = n(987144),
     u = n(473145),
-    _ = n(652215),
-    m = n(985018),
+    m = n(652215),
+    _ = n(985018),
     g = n(572523);
 let A = function() {
     let e = s.useRef(null),
@@ -26,16 +26,16 @@ let A = function() {
     function x(n) {
         null != e.current && (0, r.OoC)(e.current), (0, c.g)({
             analyticsLocation: {
-                page: _.liQ.GUILD_BOOSTING_USER_SETTINGS,
-                section: _.JJy.GUILD_BOOSTING_BOOST_ANY_GUILD_CTA,
-                object: _.ZSU.BUTTON_CTA,
-                objectType: _.AnalyticsObjectTypes.BUY
+                page: m.liQ.GUILD_BOOSTING_USER_SETTINGS,
+                section: m.JJy.GUILD_BOOSTING_BOOST_ANY_GUILD_CTA,
+                object: m.ZSU.BUTTON_CTA,
+                objectType: m.AnalyticsObjectTypes.BUY
             },
             analyticsLocations: t,
             guild: n
         })
     }
-    async function h() {
+    async function p() {
         e.current = await (0, r.mMO)(async () => {
             let {
                 default: e
@@ -50,7 +50,7 @@ let A = function() {
             }
         })
     }
-    let p = (0, u.Nc)({
+    let h = (0, u.Nc)({
         fractionalState: A
     });
     return (0, i.jsxs)("div", {
@@ -62,22 +62,22 @@ let A = function() {
             className: g.C,
             color: "text-default",
             variant: "text-sm/medium",
-            children: m.intl.format(m.t.kqC5vq, {
+            children: _.intl.format(_.t.kqC5vq, {
                 boostAnyGuildHook: (e, t) => {
-                    let n = null != p,
+                    let n = null != h,
                         s = (0, r.Oer)(e),
                         o = (0, i.jsx)("div", {
                             className: g.lO,
                             children: (0, i.jsx)(a.QWc, {
                                 variant: "primary",
-                                onClick: n ? void 0 : h,
+                                onClick: n ? void 0 : p,
                                 text: s,
                                 disabled: n
                             }, t)
                         });
                     return n ? (0, i.jsx)(l.A, {
-                        text: p,
-                        "aria-label": p.toString(),
+                        text: h,
+                        "aria-label": h.toString(),
                         children: e => (0, i.jsx)("span", {
                             ...e,
                             children: o

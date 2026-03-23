@@ -1,6 +1,6 @@
 /** chunk id: 614749 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => h
 });
 var i = n(627968),
     s = n(64700),
@@ -11,13 +11,13 @@ var i = n(627968),
     d = n(100406),
     c = n(878460),
     u = n(253932),
-    _ = n(12901),
-    m = n(652215),
+    m = n(12901),
+    _ = n(652215),
     g = n(431144),
     A = n(842130),
     x = n(985018),
-    h = n(753765);
-let p = () => {
+    p = n(753765);
+let h = () => {
     let e = u.dm.useSetting(),
         {
             categories: t,
@@ -26,7 +26,7 @@ let p = () => {
     return s.useEffect(() => {
         null == n && (0, d.cR)()
     }, [n]), (0, i.jsx)("div", {
-        className: h.kL,
+        className: p.kL,
         children: (0, i.jsxs)(o.nVY, {
             label: x.intl.string(A.default.USIXU7),
             children: [(0, i.jsx)(o.dOG, {
@@ -35,7 +35,7 @@ let p = () => {
                 onChange: u.dm.updateSetting,
                 label: x.intl.string(A.default.zkEceS)
             }), e ? (0, i.jsx)(o.ZpM, {
-                className: h.MT,
+                className: p.MT,
                 type: o.ZpM.Types.CUSTOM,
                 outline: !0,
                 children: (0, i.jsxs)(a.s, {
@@ -48,9 +48,9 @@ let p = () => {
                         })
                     }), (0, i.jsx)(o.DUT, {
                         children: (0, i.jsx)(l.N_, {
-                            onClick: _.default,
+                            onClick: m.default,
                             to: {
-                                pathname: m.BVt.FAMILY_CENTER,
+                                pathname: _.BVt.FAMILY_CENTER,
                                 state: {
                                     scrollRestoration: !1
                                 }
@@ -59,7 +59,7 @@ let p = () => {
                         })
                     }), (0, i.jsx)(o.fkz, {
                         icon: o.EdP,
-                        className: h.UE,
+                        className: p.UE,
                         disableColor: !0
                     })]
                 })

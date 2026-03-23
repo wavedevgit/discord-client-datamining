@@ -1,6 +1,6 @@
 /** chunk id: 660353 params = (module,exports,require) **/
 n.d(t, {
-    u: () => m
+    u: () => _
 });
 var i = n(935649),
     s = n(847599),
@@ -11,10 +11,10 @@ var i = n(935649),
     d = n(253932),
     c = n(780964),
     u = n(406274),
-    _ = n(985018);
-let m = (0, r.zD)(c.X.CONTENT_AND_SOCIAL_AGE_RESTRICTED_DM_SETTING, {
-    useTitle: () => _.intl.string(_.t.XahVjj),
-    useSubtitle: () => _.intl.string(_.t.R9fXyS),
+    m = n(985018);
+let _ = (0, r.zD)(c.X.CONTENT_AND_SOCIAL_AGE_RESTRICTED_DM_SETTING, {
+    useTitle: () => m.intl.string(m.t.XahVjj),
+    useSubtitle: () => m.intl.string(m.t.R9fXyS),
     useValue: o.hT,
     useDisabled: () => {
         let e = (0, u.A)() ?? !0,

@@ -12,24 +12,24 @@ var i = n(627968),
     d = n(631670),
     c = n(252452),
     u = n(103738),
-    _ = n(419954),
-    m = n(933297),
+    m = n(419954),
+    _ = n(933297),
     g = n(836602),
     A = n(591179),
     x = n(854627),
-    h = n(657331),
-    p = n(961350),
+    p = n(657331),
+    h = n(961350),
     T = n(287809),
     E = n(780964),
-    S = n(633817),
-    f = n(652215),
+    f = n(633817),
+    S = n(652215),
     C = n(985018),
     b = n(722125);
 let N = [{
-        badgeType: m.Xi.NEW,
+        badgeType: _.Xi.NEW,
         dismissibleContent: a.M.WIDGETS_USER_SETTINGS_NEW_BADGE
     }, {
-        badgeType: m.Xi.NEW,
+        badgeType: _.Xi.NEW,
         dismissibleContent: a.M.DISPLAY_NAME_STYLES_NEW_BADGE
     }],
     I = () => {
@@ -70,41 +70,41 @@ let N = [{
             })]
         })
     },
-    v = (0, _.t_)(E.X.PROFILE_PANEL, {
+    v = (0, m.t_)(E.X.PROFILE_PANEL, {
         useTitle: () => C.intl.string(C.t["vi7f+q"]),
         notice: {
             stores: [g.A],
             element: u.A
         },
         initialize: () => () => o.h.wait(() => {
-            (0, d.F7)(), c.A.clearSubsection(f.nc_.PROFILE_CUSTOMIZATION)
+            (0, d.F7)(), c.A.clearSubsection(S.nc_.PROFILE_CUSTOMIZATION)
         }),
-        buildLayout: () => [S.I]
+        buildLayout: () => [f.I]
     }),
-    j = (0, _.i4)(E.X.PROFILE_SIDEBAR_ITEM, {
+    j = (0, m.i4)(E.X.PROFILE_SIDEBAR_ITEM, {
         useTitle: () => C.intl.string(C.t["vi7f+q"]),
-        icon: R,
+        icon: O,
         StronglyDiscouragedCustomComponent: I,
         getDismissibleBadges: () => N,
         usePredicate: () => !(0, A.X)("user_settings_sidebar"),
         buildLayout: () => [v]
     }),
-    y = (0, _.i4)(E.X.PROFILE_SIDEBAR_ITEM_WYSIWYG, {
+    y = (0, m.i4)(E.X.PROFILE_SIDEBAR_ITEM_WYSIWYG, {
         useTitle: () => C.intl.string(C.t["vi7f+q"]),
-        icon: R,
+        icon: O,
         StronglyDiscouragedCustomComponent: I,
         getDismissibleBadges: () => N,
         usePredicate: () => (0, A.X)("user_settings_sidebar"),
         onClick: () => {
-            let e = p.default.getId();
-            (0, h.openUserProfileModal)({
+            let e = h.default.getId();
+            (0, p.openUserProfileModal)({
                 userId: e
             })
         },
         buildLayout: () => []
     });
 
-function R() {
+function O() {
     let e = (0, l.bG)([T.default], () => T.default.getCurrentUser()),
         {
             avatarSrc: t,

@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(20851),
     c = n(253932),
     u = n(652215),
-    _ = n(985018),
-    m = n(62049),
+    m = n(985018),
+    _ = n(62049),
     g = n(513653);
 
 function A() {
@@ -21,7 +21,7 @@ function A() {
             let e = (0, a.rh)({
                 ...(0, r.Ay)({
                     channelId: "1337",
-                    content: _.intl.formatToPlainString(_.t.bB80LC, {
+                    content: m.intl.formatToPlainString(m.t.bB80LC, {
                         previewLink: "https://discord.com/accessibility"
                     })
                 }),
@@ -32,25 +32,25 @@ function A() {
         });
     return (0, i.jsx)(l.M1G, {
         children: (0, i.jsxs)(l.ZpM, {
-            className: m.VH,
+            className: _.VH,
             "aria-hidden": !0,
             children: [(0, i.jsxs)("div", {
-                className: m.yl,
+                className: _.yl,
                 children: [(0, i.jsx)(l.Button, {
                     variant: "primary",
                     size: "sm",
-                    text: _.intl.string(_.t["2RHHgz"])
+                    text: m.intl.string(m.t["2RHHgz"])
                 }), (0, i.jsx)("div", {
-                    className: m.hD,
+                    className: _.hD,
                     children: [u.clD.ONLINE, u.clD.DND, u.clD.IDLE].map(e => (0, i.jsx)(l.JsQ, {
-                        "aria-label": _.intl.string(_.t.lqaIxI),
+                        "aria-label": m.intl.string(m.t.lqaIxI),
                         src: g,
                         size: l._3J.SIZE_32,
                         status: e
                     }, e))
                 })]
             }), (0, i.jsx)("div", {
-                className: m.QS,
+                className: _.QS,
                 children: (0, i.jsx)(d.A, {
                     compact: e,
                     author: {

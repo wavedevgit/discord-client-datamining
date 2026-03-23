@@ -1,6 +1,6 @@
 /** chunk id: 128450 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -12,7 +12,7 @@ var i = n(627968),
     c = n(212168),
     u = n(317448);
 
-function _(e) {
+function m(e) {
     let {
         errors: t
     } = e;
@@ -28,42 +28,42 @@ function _(e) {
         }, t))
     })
 }
-let m = s.forwardRef(function(e, t) {
+let _ = s.forwardRef(function(e, t) {
     let {
         title: n,
         titleIcon: s,
         titleId: l,
         description: o,
-        children: m,
+        children: _,
         className: g,
         errors: A,
         disabled: x = !1,
-        hideDivider: h = !1,
-        showBorder: p = !1,
+        hideDivider: p = !1,
+        showBorder: h = !1,
         borderType: T,
         hasBackground: E = !1,
-        forcedDivider: S = !1,
-        showPremiumIcon: f = !1
+        forcedDivider: f = !1,
+        showPremiumIcon: S = !1
     } = e;
     return (0, i.jsx)("div", {
         className: a()(u.fz, g, {
             [u.r9]: x,
-            [u.Ai]: h,
-            [u.Ac]: p,
-            [u.Cx]: S
+            [u.Ai]: p,
+            [u.Ac]: h,
+            [u.Cx]: f
         }),
         ref: t,
         children: (0, i.jsxs)(c.A, {
             className: u.D6,
             backgroundClassName: u.fr,
-            isShown: p,
+            isShown: h,
             type: T,
             hasBackground: E,
             children: [(0, i.jsxs)(r.zEo, {
                 className: u.DD,
                 id: l,
                 "data-migration-pending": !0,
-                children: [n, f && (0, i.jsx)(d.A, {
+                children: [n, S && (0, i.jsx)(d.A, {
                     size: "xs"
                 }), s]
             }), null != o ? (0, i.jsx)(r.ayl, {
@@ -71,7 +71,7 @@ let m = s.forwardRef(function(e, t) {
                 className: u.yV,
                 "data-migration-pending": !0,
                 children: o
-            }) : null, m, null != A && (0, i.jsx)(_, {
+            }) : null, _, null != A && (0, i.jsx)(m, {
                 errors: A
             })]
         })

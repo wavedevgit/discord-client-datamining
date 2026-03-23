@@ -11,8 +11,8 @@ var i = n(64700),
     d = n(599941),
     c = n(636194),
     u = n(624456),
-    _ = n(652215),
-    m = n(985018);
+    m = n(652215),
+    _ = n(985018);
 
 function g(e) {
     let t = (0, u.M)(e),
@@ -21,19 +21,19 @@ function g(e) {
         g = (0, a.bG)([r.A], () => r.A.getGuild(s?.guild_id)),
         [A, x] = i.useState(!1),
         {
-            fetchSubscriptionsSettings: h
+            fetchSubscriptionsSettings: p
         } = (0, d.XE)();
     i.useEffect(() => {
-        A && null != g && null == c.A.getSubscriptionSettings(g.id) && h(g.id)
-    }, [A, g, h]);
-    let p = null == n ? void 0 : function(e) {
+        A && null != g && null == c.A.getSubscriptionSettings(g.id) && p(g.id)
+    }, [A, g, p]);
+    let h = null == n ? void 0 : function(e) {
         let {
             subscription: t
-        } = e, n = l()(t.currentPeriodEnd).format("M/D/YY"), i = null != t.price ? (0, o.$g)(t.price, t.currency) : "", s = l()(t.createdAt).format("M/D/YY"), a = t.status === _.Dmq.CANCELED, r = t.status === _.Dmq.PAST_DUE, d = t.hasActiveTrial;
+        } = e, n = l()(t.currentPeriodEnd).format("M/D/YY"), i = null != t.price ? (0, o.$g)(t.price, t.currency) : "", s = l()(t.createdAt).format("M/D/YY"), a = t.status === m.Dmq.CANCELED, r = t.status === m.Dmq.PAST_DUE, d = t.hasActiveTrial;
         return {
             memberSince: s,
             nextRenewalDate: n,
-            nextRenewalLabel: a ? m.intl.string(m.t.UAfot2) : m.intl.string(m.t.CVjLcM),
+            nextRenewalLabel: a ? _.intl.string(_.t.UAfot2) : _.intl.string(_.t.CVjLcM),
             subscriptionPrice: i,
             isCancelled: a,
             isPastDue: r,
@@ -48,6 +48,6 @@ function g(e) {
         handleToggleExpanded: () => x(e => !e),
         listing: n,
         groupListing: s,
-        subscriptionInfo: p
+        subscriptionInfo: h
     }
 }

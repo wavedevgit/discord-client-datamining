@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(688810),
     c = n(893598),
     u = n(333354),
-    _ = n(985018),
-    m = n(575651),
+    m = n(985018),
+    _ = n(575651),
     g = n(519636);
 
 function A(e) {
@@ -21,8 +21,8 @@ function A(e) {
         variant: l = "admin",
         className: A,
         analyticsLocation: x,
-        videoPlacement: h = "sidebar",
-        onDismiss: p
+        videoPlacement: p = "sidebar",
+        onDismiss: h
     } = e, {
         analyticsLocations: T
     } = (0, d.Ay)(), E = s.useCallback(() => {
@@ -34,69 +34,69 @@ function A(e) {
                 ...n,
                 guildId: t,
                 analyticsLocation: x,
-                videoPlacement: h,
+                videoPlacement: p,
                 sourceAnalyticsLocations: T
             })
         })
-    }, [x, T, t, h]);
+    }, [x, T, t, p]);
     return "member" === l ? (0, i.jsxs)(o.DUT, {
-        className: a()(m.iR, A),
+        className: a()(_.iR, A),
         onClick: E,
-        "aria-label": _.intl.string(u.default["103aY+"]),
+        "aria-label": m.intl.string(u.default["103aY+"]),
         children: [(0, i.jsx)("img", {
             alt: "",
-            className: m.xn,
+            className: _.xn,
             src: g.A
         }), (0, i.jsx)("div", {
-            className: m.b1
+            className: _.b1
         }), (0, i.jsx)("div", {
-            className: m.i5,
+            className: _.i5,
             children: (0, i.jsx)(o.Text, {
                 variant: "text-xs/semibold",
                 color: "always-white",
-                children: _.intl.string(u.default.diMhWc)
+                children: m.intl.string(u.default.diMhWc)
             })
         }), (0, i.jsx)(c.A, {
-            className: m.Rr,
+            className: _.Rr,
             inactive: !0,
             renderLinkComponent: () => null
         })]
     }) : (0, i.jsxs)("div", {
-        className: m.kL,
+        className: _.kL,
         children: [(0, i.jsx)("div", {
-            className: a()(m.X8, "theme-dark"),
+            className: a()(_.X8, "theme-dark"),
             children: (0, i.jsx)(r.K0, {
                 variant: "icon-only",
                 size: "md",
-                "aria-label": _.intl.string(_.t.WAI6xu),
-                onClick: p,
+                "aria-label": m.intl.string(m.t.WAI6xu),
+                onClick: h,
                 icon: o.PGe
             })
         }), (0, i.jsxs)(o.DUT, {
-            className: m.iT,
+            className: _.iT,
             onClick: E,
-            "aria-label": _.intl.string(u.default["103aY+"]),
+            "aria-label": m.intl.string(u.default["103aY+"]),
             children: [(0, i.jsx)("img", {
                 alt: "",
-                className: m.xn,
+                className: _.xn,
                 src: g.A
             }), (0, i.jsx)("div", {
-                className: m.TQ
+                className: _.TQ
             }), (0, i.jsx)(c.A, {
-                className: m.Rr,
+                className: _.Rr,
                 inactive: !0,
                 renderLinkComponent: () => null
             })]
         }), (0, i.jsxs)("div", {
-            className: m.FS,
+            className: _.FS,
             children: [(0, i.jsx)(o.Text, {
                 variant: "text-md/semibold",
                 color: "text-strong",
-                children: _.intl.string(u.default.diMhWc)
+                children: m.intl.string(u.default.diMhWc)
             }), (0, i.jsx)(o.Text, {
                 variant: "text-sm/medium",
                 color: "text-muted",
-                children: _.intl.string(u.default.pycxTr)
+                children: m.intl.string(u.default.pycxTr)
             })]
         })]
     })

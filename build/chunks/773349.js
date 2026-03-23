@@ -11,21 +11,21 @@ var i = n(627968),
     d = n(287809),
     c = n(427262),
     u = n(283900),
-    _ = n(975977);
-let m = s.memo(e => {
+    m = n(975977);
+let _ = s.memo(e => {
     let {
         userId: t,
         subText: n,
         className: s
     } = e, l = (0, r.bG)([d.default], () => d.default.getUser(t));
     return void 0 === l ? null : (0, i.jsxs)("div", {
-        className: a()(_.k, s),
+        className: a()(m.k, s),
         children: [(0, i.jsx)(u.H, {
             user: l,
             avatarSize: o._3J.SIZE_40
         }), (0, i.jsx)("div", {
             children: (0, i.jsxs)("div", {
-                className: _.$,
+                className: m.$,
                 children: [(0, i.jsx)(o.Text, {
                     variant: "text-md/semibold",
                     color: "interactive-text-active",
@@ -39,5 +39,5 @@ let m = s.memo(e => {
         })]
     })
 });
-m.displayName = "FamilyCenterActivityUserRow";
-let g = m
+_.displayName = "FamilyCenterActivityUserRow";
+let g = _

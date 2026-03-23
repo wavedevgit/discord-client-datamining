@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(723702),
     c = n(837921),
     u = n(650583);
-let _ = d.isPlatformEmbedded && null != c.Ay.getDiscordUtils().inputCaptureRegisterElement;
-class m extends s.PureComponent {
+let m = d.isPlatformEmbedded && null != c.Ay.getDiscordUtils().inputCaptureRegisterElement;
+class _ extends s.PureComponent {
     _input;
     gs;
     _mounted = !1;
@@ -51,7 +51,7 @@ class m extends s.PureComponent {
         }))
     }
     recordStart = () => {
-        d.isPlatformEmbedded && !_ && (this.gs = new r.A, this.gs.on("change", this.handleGSChange)), this.setState({
+        d.isPlatformEmbedded && !m && (this.gs = new r.A, this.gs.on("change", this.handleGSChange)), this.setState({
             mode: o.E.RECORDING
         })
     };
@@ -91,15 +91,15 @@ class m extends s.PureComponent {
             {
                 disabled: l
             } = this.props;
-        return _ ? (t = c.Ay.getDiscordUtils().inputCaptureRegisterElement, e = this.handleNativeChange) : d.isPlatformEmbedded || (e = this.handleComboKeys), (0, i.jsx)(o.A, {
+        return m ? (t = c.Ay.getDiscordUtils().inputCaptureRegisterElement, e = this.handleNativeChange) : d.isPlatformEmbedded || (e = this.handleComboKeys), (0, i.jsx)(o.A, {
             disabled: l,
             value: n,
             mode: s,
             onClick: this.toggleRecordMode,
             onChange: e,
             registerNativeRecorder: t,
-            disableOnClickWhileRecording: _
+            disableOnClickWhileRecording: m
         })
     }
 }
-let g = m
+let g = _

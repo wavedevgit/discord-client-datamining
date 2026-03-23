@@ -1,6 +1,6 @@
 /** chunk id: 766667 params = (module,exports,require) **/
 n.d(t, {
-    p: () => _
+    p: () => m
 });
 var i = n(627968),
     s = n(64700),
@@ -11,7 +11,7 @@ var i = n(627968),
     d = n(419954),
     c = n(780964),
     u = n(985018);
-let _ = (0, d.E2)(c.X.CLIPS_PHRASES, {
+let m = (0, d.E2)(c.X.CLIPS_PHRASES, {
     useSearchTerms: () => [u.intl.string(u.t.JIze0o)],
     usePredicate: () => (0, l.bG)([r.A], () => r.A.getSettings().clipSignals).enablePhraseSignals,
     Component: function() {
@@ -24,7 +24,7 @@ let _ = (0, d.E2)(c.X.CLIPS_PHRASES, {
             c = s.useCallback(e => {
                 n(e)
             }, []),
-            _ = s.useCallback(i => {
+            m = s.useCallback(i => {
                 if ("Enter" === i.key || "," === i.key) {
                     i.preventDefault();
                     let s = t.trim().toLowerCase();
@@ -34,7 +34,7 @@ let _ = (0, d.E2)(c.X.CLIPS_PHRASES, {
                     o.pM(t)
                 }
             }, [t, e]),
-            m = s.useCallback(t => {
+            _ = s.useCallback(t => {
                 let n = Array.from(t)[0],
                     i = e.filter(e => e !== n);
                 o.pM(i)
@@ -42,12 +42,12 @@ let _ = (0, d.E2)(c.X.CLIPS_PHRASES, {
         return (0, i.jsx)(a.ksK, {
             value: t,
             onChange: c,
-            onKeyDown: _,
+            onKeyDown: m,
             placeholder: u.intl.string(u.t.zYUZpt),
             leading: d.length > 0 ? {
                 type: "tags",
                 items: d,
-                onRemove: m
+                onRemove: _
             } : void 0
         })
     }

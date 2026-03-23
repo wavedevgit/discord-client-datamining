@@ -11,8 +11,8 @@ var i = n(290595),
     d = n(165279),
     c = n(937966),
     u = n(788172),
-    _ = n(789643),
-    m = n(719587),
+    m = n(789643),
+    _ = n(719587),
     g = n(985018);
 let A = (0, s.zZ)(a.X.DATA_USAGE_CATEGORY, {
     useTitle: () => g.intl.string(g.t.bvw42E),
@@ -20,5 +20,5 @@ let A = (0, s.zZ)(a.X.DATA_USAGE_CATEGORY, {
     initialize: () => {
         l.A.fetchedConsents || (0, i.Q)()
     },
-    buildLayout: () => [m.L, _.X, u.m, c._, o.C, d.z]
+    buildLayout: () => [_.L, m.X, u.m, c._, o.C, d.z]
 })

@@ -1,6 +1,6 @@
 /** chunk id: 841532 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => m
 });
 var i = n(627968),
     s = n(397927),
@@ -12,7 +12,7 @@ var i = n(627968),
     c = n(723822),
     u = n(328673);
 
-function _() {
+function m() {
     let e = a.A.getArticleURL(r.MVz.GUILD_SUBSCRIPTIONS);
     return (0, i.jsxs)("div", {
         className: c.wx,

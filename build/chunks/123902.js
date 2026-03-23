@@ -12,11 +12,11 @@ var n, l = i(627968),
     u = i(371664),
     c = i(477412),
     m = ((n = {}).BLACK = "BLACK", n.GRAY = "GRAY", n);
-let A = {
+let p = {
         BLACK: c.Ql,
         GRAY: c.wm
     },
-    p = {
+    A = {
         sm: 20,
         md: 28
     };
@@ -35,7 +35,7 @@ function g(t) {
         className: g,
         notchClassName: f,
         children: T
-    } = t, S = p[n], {
+    } = t, S = A[n], {
         ref: E,
         width: C
     } = (0, d.Ay)(), v = r.useMemo(() => null != C ? h(C) : 0, [C]), _ = r.useMemo(() => {
@@ -62,7 +62,7 @@ function g(t) {
             }), 0 !== v && (0, l.jsx)(u.A, {
                 width: v,
                 height: S,
-                className: a()(c.DR, A[e], f)
+                className: a()(c.DR, p[e], f)
             })]
         }), T]
     })

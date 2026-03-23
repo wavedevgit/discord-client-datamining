@@ -11,17 +11,17 @@ var i = n(627968),
     d = n(421380),
     c = n(397927),
     u = n(793574),
-    _ = n(688810),
-    m = n(854627),
+    m = n(688810),
+    _ = n(854627),
     g = n(427157),
     A = n(954571),
     x = n(975571),
-    h = n(326084),
-    p = n(851746),
+    p = n(326084),
+    h = n(851746),
     T = n(664654),
     E = n(344904),
-    S = n(221688),
-    f = n(652215),
+    f = n(221688),
+    S = n(652215),
     C = n(985018),
     b = n(509117),
     N = n(6336);
@@ -32,7 +32,7 @@ let I = e => {
         } = e, {
             avatarSrc: s,
             eventHandlers: l
-        } = (0, m.A)({
+        } = (0, _.A)({
             userId: t?.id,
             size: c._3J.SIZE_32,
             animateOnHover: !0
@@ -99,24 +99,24 @@ let I = e => {
     y = e => {
         let {
             isInSettings: t = !1
-        } = e, l = (0, r.bG)([p.A], () => p.A.getRecipientStatus()), {
+        } = e, l = (0, r.bG)([h.A], () => h.A.getRecipientStatus()), {
             referralSentUsers: o
-        } = (0, T.J)(), m = s.useMemo(() => o.map(e => new g.A(e)), [o]), I = {
+        } = (0, T.J)(), _ = s.useMemo(() => o.map(e => new g.A(e)), [o]), I = {
             redeemed: 0,
             converted: 0,
             sent: l.size
         };
         l.forEach(e => {
-            e === h.aK.REDEEMED && I.redeemed++, e === h.aK.CONVERTED && (I.redeemed++, I.converted++)
+            e === p.aK.REDEEMED && I.redeemed++, e === p.aK.CONVERTED && (I.redeemed++, I.converted++)
         });
         let v = I.sent === T.Z,
-            y = x.A.getArticleURL(f.MVz.REFERRAL_PROGRAM),
+            y = x.A.getArticleURL(S.MVz.REFERRAL_PROGRAM),
             {
-                analyticsLocations: R
-            } = (0, _.Ay)(u.A.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
-            O = s.useRef(null),
+                analyticsLocations: O
+            } = (0, m.Ay)(u.A.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
+            R = s.useRef(null),
             L = I.sent / T.Z * 100,
-            D = (0, i.jsxs)("div", {
+            P = (0, i.jsxs)("div", {
                 className: b.hE,
                 children: [(0, i.jsx)(E.Ay, {
                     percentage: L,
@@ -130,14 +130,14 @@ let I = e => {
                     children: [(0, i.jsx)(c.Heading, {
                         variant: t ? "heading-xl/extrabold" : "heading-xxl/extrabold",
                         className: b.R0,
-                        children: (0, S.X8)({
+                        children: (0, f.X8)({
                             hasSentAll: v
                         })
                     }), (0, i.jsx)(j, {
-                        userRecords: m
+                        userRecords: _
                     }), (0, i.jsx)(c.Text, {
                         variant: t ? "text-sm/normal" : "text-lg/medium",
-                        children: (0, S.dB)({
+                        children: (0, f.dB)({
                             helpdeskArticle: y,
                             referralsStatuses: I
                         })
@@ -153,7 +153,7 @@ let I = e => {
                                 let {
                                     analyticsLocations: t
                                 } = e;
-                                A.default.track(f.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+                                A.default.track(S.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
                                     location_stack: t
                                 }), (0, c.mMO)(async () => {
                                     let {
@@ -165,7 +165,7 @@ let I = e => {
                                     })
                                 })
                             })({
-                                analyticsLocations: R
+                                analyticsLocations: O
                             }),
                             onlyShineOnHover: !0,
                             children: (0, i.jsxs)("div", {
@@ -180,24 +180,24 @@ let I = e => {
                     })]
                 })]
             }),
-            P = I.redeemed === T.Z;
-        return (0, i.jsx)(_.f5, {
-            value: R,
+            D = I.redeemed === T.Z;
+        return (0, i.jsx)(m.f5, {
+            value: O,
             children: (0, i.jsx)("div", {
                 className: a()({
-                    [b.f5]: P,
-                    [b.JY]: !P,
+                    [b.f5]: D,
+                    [b.JY]: !D,
                     [b.VX]: !t,
-                    [b.m$]: P && t
+                    [b.m$]: D && t
                 }),
                 children: (0, i.jsx)("div", {
-                    ref: O,
+                    ref: R,
                     className: a()({
                         [b.dn]: !t,
                         [b.d_]: t,
-                        [b.kS]: P
+                        [b.kS]: D
                     }),
-                    children: D
+                    children: P
                 })
             })
         })

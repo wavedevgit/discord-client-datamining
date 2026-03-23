@@ -12,12 +12,12 @@ var s = n(935649),
     d = n(650832),
     c = n(975571),
     u = n(171316),
-    _ = n(500470),
-    m = n(652215),
+    m = n(500470),
+    _ = n(652215),
     g = n(985018);
 
 function A() {
-    let e = (0, _.k)() ?? void 0,
+    let e = (0, m.k)() ?? void 0,
         t = (0, u.KK)(),
         n = r.ES.useControlledSetting(e);
     return (0, i.jsx)(o.h, {
@@ -31,7 +31,7 @@ function A() {
             },
             disabled: t,
             note: g.intl.format(g.t.IoztJ0, {
-                helpdeskArticle: c.A.getArticleURL(m.MVz.MESSAGE_REQUESTS)
+                helpdeskArticle: c.A.getArticleURL(_.MVz.MESSAGE_REQUESTS)
             })
         })
     })

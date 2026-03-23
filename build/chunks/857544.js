@@ -11,17 +11,17 @@ var i = n(627968),
     d = n(158954),
     c = n(435371),
     u = n(397927),
-    _ = n(414079),
-    m = n(416052),
+    m = n(414079),
+    _ = n(416052),
     g = n(148810),
     A = n(380610),
     x = n(235986),
-    h = n(544028),
-    p = n(652215),
+    p = n(544028),
+    h = n(652215),
     T = n(986238),
     E = n(138666),
-    S = n(506823),
-    f = n(473169);
+    f = n(506823),
+    S = n(473169);
 let C = ["discord_web", "discord_marketing", "discord_developers", "discord_ios", "discord_android"],
     b = [{
         id: "branch",
@@ -61,14 +61,14 @@ class I extends s.Component {
         } = this.props;
         return (0, i.jsxs)(x.A, {
             direction: x.A.Direction.VERTICAL,
-            className: a()(E.oS, f.SX, S.N, E.nM),
-            children: [(0, i.jsx)(_.A, {
+            className: a()(E.oS, S.SX, f.N, E.nM),
+            children: [(0, i.jsx)(m.A, {
                 className: a()(E.lL, {
                     [E.zi]: s
                 }),
                 onClick: s ? void 0 : this.handleRemoveBuildOverride
             }), (0, i.jsxs)(x.A, {
-                className: f.QB,
+                className: S.QB,
                 children: [(0, i.jsx)(x.A.Child, {
                     basis: "50%",
                     children: (0, i.jsx)(u.l6P, {
@@ -228,8 +228,8 @@ class v extends s.Component {
     };
     renderEmpty() {
         return (0, i.jsx)(u.ppr, {
-            theme: h.A.theme,
-            className: a()(f.eT, f.SX),
+            theme: p.A.theme,
+            className: a()(S.eT, S.SX),
             children: (0, i.jsx)(u.SGT, {
                 children: "You have no build overrides configured."
             })
@@ -300,7 +300,7 @@ class v extends s.Component {
             buildOverrides: s
         } = this.state;
         e = t ? (0, i.jsx)(u.y$y, {
-            className: f.QX
+            className: S.QX
         }) : null != s && 0 === Object.keys(s).length ? this.renderEmpty() : this.renderItems();
         let l = !n && !t && this.getAvailableProjects().length > 0,
             a = N(s ?? {}) && "stable" !== window.GLOBAL_ENV.RELEASE_CHANNEL ? (0, i.jsx)(u.Text, {
@@ -382,7 +382,7 @@ class j extends s.Component {
         })
     };
     handleAllowedVersionEnter = e => {
-        e.charCode === p.Ks6.ENTER && this.handleAddAllowedVersion()
+        e.charCode === h.Ks6.ENTER && this.handleAddAllowedVersion()
     };
     handleAddAllowedVersion = () => {
         let {
@@ -478,7 +478,7 @@ class j extends s.Component {
             allowLoggedOut: o,
             experiments: d,
             experimentsError: c
-        } = this.state, _ = T.fL.find(t => t.value === e), m = l.map(e => ({
+        } = this.state, m = T.fL.find(t => t.value === e), _ = l.map(e => ({
             id: e,
             label: e,
             value: e
@@ -488,7 +488,7 @@ class j extends s.Component {
             children: [(0, i.jsx)(u.l6P, {
                 selectionMode: "single",
                 label: "Expire After",
-                value: null != _ ? _.value : void 0,
+                value: null != m ? m.value : void 0,
                 options: T.fL,
                 onSelectionChange: this.handleExpirationChange
             }), this.isMobile() ? null : (0, i.jsx)(u.l6P, {
@@ -516,7 +516,7 @@ class j extends s.Component {
                     selectionMode: "single",
                     label: "Remove allowed app version",
                     value: void 0,
-                    options: m,
+                    options: _,
                     onSelectionChange: this.handleRemoveAllowedVersion,
                     disabled: 0 === l.length
                 })]
@@ -570,7 +570,7 @@ class j extends s.Component {
         return (0, i.jsx)(d.Modal, {
             title: "Generate Public Build Override Link",
             input: this.renderHelpMessage(),
-            actionBarInput: (0, i.jsx)(m.A, {
+            actionBarInput: (0, i.jsx)(_.A, {
                 value: n
             }),
             transitionState: t,

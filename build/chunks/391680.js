@@ -1,6 +1,6 @@
 /** chunk id: 391680 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var i = n(627968);
 n(64700);
@@ -12,19 +12,19 @@ var s = n(311907),
     d = n(111162),
     c = n(253932),
     u = n(780964),
-    _ = n(840065);
+    m = n(840065);
 
-function m() {
+function _() {
     let {
         layoutDebuggingEnabled: e,
         isDeveloper: t,
         isLoggingGatewayEvents: n,
-        isLoggingOverlayEvents: m,
+        isLoggingOverlayEvents: _,
         isLoggingAnalyticsEvents: g,
         isTracingRequests: A,
         isForcedCanary: x,
-        isAxeEnabled: h,
-        preventPopoutClose: p,
+        isAxeEnabled: p,
+        preventPopoutClose: h,
         onlyShowPreviewAppCollections: T,
         disableAppCollectionsCache: E
     } = (0, s.cf)([d.default, o.A], () => ({
@@ -41,8 +41,8 @@ function m() {
         onlyShowPreviewAppCollections: d.default.onlyShowPreviewAppCollections,
         disableAppCollectionsCache: d.default.disableAppCollectionsCache
     })), {
-        horizontalSpacing: S,
-        verticalSpacing: f
+        horizontalSpacing: f,
+        verticalSpacing: S
     } = (0, r.Or)(), {
         setHorizontalSpacing: C,
         setVerticalSpacing: b
@@ -51,7 +51,7 @@ function m() {
         id: "overrides",
         label: "Overrides",
         action: () => {
-            (0, _.openUserSettings)(u.X.DEV_OVERRIDES)
+            (0, m.openUserSettings)(u.X.DEV_OVERRIDES)
         },
         children: [(0, i.jsx)(l.sLh, {
             id: "always-deliver",
@@ -92,7 +92,7 @@ function m() {
         id: "logging",
         label: "Logging",
         action: () => {
-            (0, _.openUserSettings)(u.X.LOGGING)
+            (0, m.openUserSettings)(u.X.LOGGING)
         },
         children: [(0, i.jsx)(l.sLh, {
             id: "gateway-events",
@@ -106,10 +106,10 @@ function m() {
         }, "gateway-events"), (0, i.jsx)(l.sLh, {
             id: "overlay-events",
             label: "Overlay RPC Events",
-            checked: m,
+            checked: _,
             action: () => {
                 (0, a.x)({
-                    logOverlayEvents: !m
+                    logOverlayEvents: !_
                 })
             }
         }, "overlay-events"), (0, i.jsx)(l.sLh, {
@@ -133,10 +133,10 @@ function m() {
         }, "tracing-requests"), (0, i.jsx)(l.sLh, {
             id: "prevent-popout-close",
             label: "Prevent Popouts From Closing",
-            checked: p,
+            checked: h,
             action: () => {
                 (0, a.x)({
-                    preventPopoutClose: !p
+                    preventPopoutClose: !h
                 })
             }
         }, "prevent-popout-close")]
@@ -144,15 +144,15 @@ function m() {
         id: "design-tools",
         label: "Design/A11y Tools",
         action: () => {
-            (0, _.openUserSettings)(u.X.DESIGN_TOOLS)
+            (0, m.openUserSettings)(u.X.DESIGN_TOOLS)
         },
         children: [(0, i.jsx)(l.sLh, {
             id: "accessibility-auditing",
             label: "Accessibility Auditing",
-            checked: h,
+            checked: p,
             action: () => {
                 (0, a.x)({
-                    axeEnabled: !h
+                    axeEnabled: !p
                 })
             }
         }, "accessibility-auditing"), (0, i.jsx)(l.sLh, {
@@ -171,7 +171,7 @@ function m() {
                 control: (e, t) => (0, i.jsx)(l.i42, {
                     ...e,
                     ref: t,
-                    value: S,
+                    value: f,
                     minValue: 0,
                     maxValue: r.YR,
                     onChange: e => C(e),
@@ -184,7 +184,7 @@ function m() {
                 control: (e, t) => (0, i.jsx)(l.i42, {
                     ...e,
                     ref: t,
-                    value: f,
+                    value: S,
                     minValue: 0,
                     maxValue: r.YR,
                     onChange: e => b(e),

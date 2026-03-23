@@ -14,7 +14,7 @@ var i = n(627968),
 function u(e) {
     let {
         glowingPerkId: t = null
-    } = e, n = (0, o.Ay)(), u = null != t ? n.find(e => e?.id === t) : null, [_, m] = (0, s.useState)(u?.categories[0] ?? o.jW.BEST_OF_NITRO), g = (0, s.useMemo)(() => n.filter(e => null != e && e.categories.includes(_)), [n, _]);
+    } = e, n = (0, o.Ay)(), u = null != t ? n.find(e => e?.id === t) : null, [m, _] = (0, s.useState)(u?.categories[0] ?? o.jW.BEST_OF_NITRO), g = (0, s.useMemo)(() => n.filter(e => null != e && e.categories.includes(m)), [n, m]);
     return (0, i.jsxs)("div", {
         className: c.uW,
         children: [(0, i.jsx)(l.Heading, {
@@ -24,8 +24,8 @@ function u(e) {
         }), (0, i.jsx)(l.VQ0, {
             type: "top-pill",
             look: "custom",
-            selectedItem: _,
-            onItemSelect: m,
+            selectedItem: m,
+            onItemSelect: _,
             className: c.Lq,
             "aria-label": d.intl.string(d.t["Uh3+CA"]),
             children: o.w1.map(e => (0, i.jsx)(l.VQ0.Item, {
@@ -43,6 +43,6 @@ function u(e) {
                     containerClassName: c.Ui
                 }, e.id)
             })
-        }, _)]
+        }, m)]
     })
 }

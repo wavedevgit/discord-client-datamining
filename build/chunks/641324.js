@@ -12,17 +12,17 @@ var s = n(963935),
     d = n(44909),
     c = n(98254),
     u = n(915953),
-    _ = n(39216),
-    m = n(43146),
+    m = n(39216),
+    _ = n(43146),
     g = n(112715),
     A = n(39043),
     x = n(743961),
-    h = n(896005),
-    p = n(388773),
+    p = n(896005),
+    h = n(388773),
     T = n(691116),
     E = n(353667),
-    S = n(182884),
-    f = n(115617);
+    f = n(182884),
+    S = n(115617);
 
 function C(e) {
     let {
@@ -39,15 +39,15 @@ function C(e) {
                 node: t
             });
         case s.Z6.LIST:
-            return (0, i.jsx)(p.A, {
-                node: t
-            });
-        case s.Z6.FIELD_SET:
             return (0, i.jsx)(h.A, {
                 node: t
             });
+        case s.Z6.FIELD_SET:
+            return (0, i.jsx)(p.A, {
+                node: t
+            });
         case s.Z6.RELATED:
-            return (0, i.jsx)(S.A, {
+            return (0, i.jsx)(f.A, {
                 node: t
             });
         case s.Z6.CATEGORY:
@@ -59,15 +59,15 @@ function C(e) {
                 node: t
             });
         case s.Z6.SPLIT:
-            return (0, i.jsx)(f.A, {
+            return (0, i.jsx)(S.A, {
                 node: t
             });
         case s.Z6.TOGGLE:
-            return (0, i.jsx)(m.v, {
+            return (0, i.jsx)(_.v, {
                 node: t
             });
         case s.Z6.STATIC:
-            return (0, i.jsx)(_.A, {
+            return (0, i.jsx)(m.A, {
                 node: t
             });
         case s.Z6.BUTTON:

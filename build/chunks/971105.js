@@ -1,6 +1,6 @@
 /** chunk id: 971105 params = (module,exports,require) **/
 n.d(t, {
-    A: () => D
+    A: () => P
 });
 var i = n(627968),
     s = n(64700),
@@ -11,17 +11,17 @@ var i = n(627968),
     d = n(837381),
     c = n(311907),
     u = n(397927),
-    _ = n(73153),
-    m = n(384904),
+    m = n(73153),
+    _ = n(384904),
     g = n(661439),
     A = n(73825),
     x = n(928039),
-    h = n(235986),
-    p = n(39190),
+    p = n(235986),
+    h = n(39190),
     T = n(933392),
     E = n(97352),
-    S = n(166403),
-    f = n(927578),
+    f = n(166403),
+    S = n(927578),
     C = n(61509),
     b = n(652215),
     N = n(788868),
@@ -30,22 +30,22 @@ var i = n(627968),
     j = n(166789),
     y = n(124953);
 
-function R(e) {
+function O(e) {
     let {
         payments: t,
         locale: n,
         compactMode: l,
         numPages: r
-    } = e, o = s.useRef(null), [c, _] = s.useState(0), [g, A] = s.useState(null), h = t.slice(10 * c, (c + 1) * 10);
+    } = e, o = s.useRef(null), [c, m] = s.useState(0), [g, A] = s.useState(null), p = t.slice(10 * c, (c + 1) * 10);
     s.useEffect(() => {
         o.current?.scrollTo({
             to: 0
         })
     }, [c]);
     let T = s.useCallback(e => {
-            _(e);
+            m(e);
             let n = t[t.length - 1].id;
-            e >= r - 2 && g !== n && ((0, m.CK)(10, n), A(n))
+            e >= r - 2 && g !== n && ((0, _.CK)(10, n), A(n))
         }, [t, r, g]),
         E = (0, x.A)("billing-history", o);
     return (0, i.jsx)(d.hD, {
@@ -56,7 +56,7 @@ function R(e) {
                     ref: t,
                     ...s
                 } = e;
-                return (0, i.jsx)(p.A, {
+                return (0, i.jsx)(h.A, {
                     className: j.GD,
                     currentPageIndex: c,
                     onChangePage: T,
@@ -68,7 +68,7 @@ function R(e) {
                         className: j.Bd,
                         ref: o,
                         overflow: "auto",
-                        children: h.map((e, t) => (0, i.jsx)(C.A, {
+                        children: p.map((e, t) => (0, i.jsx)(C.A, {
                             className: a()(j.Nj, j.Bd),
                             payment: e,
                             locale: n,
@@ -80,7 +80,7 @@ function R(e) {
         })
     })
 }
-class O extends s.PureComponent {
+class R extends s.PureComponent {
     static defaultProps = {
         compactMode: !1
     };
@@ -89,8 +89,8 @@ class O extends s.PureComponent {
         return Math.max(Math.ceil(this.props.payments.length / 10), 1)
     }
     componentDidMount() {
-        _.h.wait(() => {
-            (0, g.X)(), (0, m.CK)(30)
+        m.h.wait(() => {
+            (0, g.X)(), (0, _.CK)(30)
         })
     }
     renderPremiumExternalSubscription(e) {
@@ -105,7 +105,7 @@ class O extends s.PureComponent {
                 className: j.Q2,
                 children: v.intl.format(v.t.eG0uZB, {
                     paymentGatewayName: I.qm[e.paymentGateway],
-                    billingHistoryLink: (0, f.tW)(e.paymentGateway, "BILLING_HISTORY")
+                    billingHistoryLink: (0, S.tW)(e.paymentGateway, "BILLING_HISTORY")
                 })
             })]
         })
@@ -123,7 +123,7 @@ class O extends s.PureComponent {
                 className: a()(j.PQ, j.GD),
                 children: [e ? null : (0, i.jsx)("div", {
                     className: a()(j.Nj, j.Bd),
-                    children: (0, i.jsxs)(h.A, {
+                    children: (0, i.jsxs)(p.A, {
                         className: j.Yi,
                         children: [(0, i.jsx)("div", {
                             className: y.p6,
@@ -136,7 +136,7 @@ class O extends s.PureComponent {
                             children: v.intl.string(v.t["6MqHXV"])
                         })]
                     })
-                }), (0, i.jsx)(R, {
+                }), (0, i.jsx)(O, {
                     compactMode: e,
                     locale: s,
                     payments: t,
@@ -150,12 +150,12 @@ class O extends s.PureComponent {
 function L(e) {
     let t = e.skuId,
         n = e.subscription?.items[0].planId;
-    return !(null == t || null == n || Object.values(N.pe).includes(t) || (0, f.ys)(n))
+    return !(null == t || null == n || Object.values(N.pe).includes(t) || (0, S.ys)(n))
 }
 
-function D(e) {
+function P(e) {
     let t = (0, c.bG)([T.A], () => T.A.getPayments()),
-        n = (0, c.bG)([S.A], () => S.A.getPremiumTypeSubscription()),
+        n = (0, c.bG)([f.A], () => f.A.getPremiumTypeSubscription()),
         l = s.useMemo(() => new Set(t.filter(L).map(e => {
             let {
                 subscription: t
@@ -172,10 +172,10 @@ function D(e) {
         o = s.useCallback(() => r.length === l.size, [r, l]),
         d = s.useMemo(() => t.filter(e => e.currency !== b.Yri.DISCORD_ORB), [t]);
     return s.useEffect(() => {
-        o() || _.h.wait(() => {
+        o() || m.h.wait(() => {
             a.forEach(e => (0, A.ur)(e, void 0, void 0, !0, void 0))
         })
-    }, [o, a]), (0, i.jsx)(O, {
+    }, [o, a]), (0, i.jsx)(R, {
         ...e,
         payments: d,
         subscription: n

@@ -11,13 +11,13 @@ var i = n(627968),
     d = n(430452),
     c = n(780964),
     u = n(840065),
-    _ = n(903427),
-    m = n(652215),
+    m = n(903427),
+    _ = n(652215),
     g = n(985018),
     A = n(755087);
 let x = (0, o.E2)(c.X.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
     useSearchTerms: () => [g.intl.string(g.t["pS+K2L"]), g.intl.string(g.t.nuFtHH)],
-    usePredicate: _.P,
+    usePredicate: m.P,
     Component: function() {
         let e = (0, l.bG)([d.Ay], () => {
                 let {
@@ -36,7 +36,7 @@ let x = (0, o.E2)(c.X.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
                 className: A.e,
                 children: (0, i.jsx)(r.A, {
                     defaultValue: e,
-                    onChange: e => a.A.setMode(m.TBI.PUSH_TO_TALK, {
+                    onChange: e => a.A.setMode(_.TBI.PUSH_TO_TALK, {
                         shortcut: e
                     })
                 })

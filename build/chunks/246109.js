@@ -1,6 +1,6 @@
 /** chunk id: 246109 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => m
 });
 var i = n(627968);
 n(64700);
@@ -12,7 +12,7 @@ var s = n(397927),
     d = n(696616),
     c = n(564752),
     u = n(985018);
-let _ = () => (0, i.jsxs)(s.BJc, {
+let m = () => (0, i.jsxs)(s.BJc, {
     gap: 32,
     children: [(0, i.jsx)(a.b, {}), (0, i.jsx)("div", {
         children: (0, i.jsxs)(l.G, {

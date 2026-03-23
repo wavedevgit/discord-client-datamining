@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(793574),
     c = n(688810),
     u = n(915089),
-    _ = n(264779),
-    m = n(985018),
+    m = n(264779),
+    _ = n(985018),
     g = n(424019);
 
 function A(e) {
@@ -28,7 +28,7 @@ function A(e) {
         }),
         onClose: async () => await t(),
         actions: [{
-            text: m.intl.string(m.t.cpT0Cq),
+            text: _.intl.string(_.t.cpT0Cq),
             variant: "primary",
             onClick: t
         }],
@@ -37,11 +37,11 @@ function A(e) {
             className: g.t4,
             children: [(0, i.jsx)(r.Heading, {
                 variant: "heading-xl/semibold",
-                children: m.intl.string(m.t.iufib1)
+                children: _.intl.string(_.t.iufib1)
             }), (0, i.jsx)(r.Text, {
                 variant: "text-md/normal",
                 className: g.G3,
-                children: m.intl.string(m.t.eAn6z2)
+                children: _.intl.string(_.t.eAn6z2)
             })]
         })
     })
@@ -51,19 +51,19 @@ let x = function(e) {
         onClose: t,
         onClaim: n,
         code: x,
-        outboundPromotion: h,
-        transitionState: p
-    } = e, [T, E] = s.useState(null), S = (0, u.GV)(), {
-        analyticsLocations: f
+        outboundPromotion: p,
+        transitionState: h
+    } = e, [T, E] = s.useState(null), f = (0, u.GV)(), {
+        analyticsLocations: S
     } = (0, c.Ay)(d.A.USER_SETTINGS_GIFT_INVENTORY);
     return (s.useEffect(() => {
-        null == x && (0, _.kd)({
-            promotionId: h.id,
-            analyticsLocations: f
+        null == x && (0, m.kd)({
+            promotionId: p.id,
+            analyticsLocations: S
         }).then(e => n(e)).catch(e => E(e?.body?.code))
-    }, [x, h.id, n, f]), null != T) ? (0, i.jsx)(A, {
+    }, [x, p.id, n, S]), null != T) ? (0, i.jsx)(A, {
         onClose: t,
-        transitionState: p
+        transitionState: h
     }) : null == x ? (0, i.jsx)(r.y$y, {
         className: g.Lq
     }) : (0, i.jsx)(l.Modal, {
@@ -76,33 +76,33 @@ let x = function(e) {
                 className: g.Qw
             }), (0, i.jsx)(r.Heading, {
                 variant: "heading-xl/semibold",
-                children: m.intl.string(m.t["23BfZh"])
+                children: _.intl.string(_.t["23BfZh"])
             }), (0, i.jsx)(r.Text, {
                 variant: "text-md/normal",
                 className: g.G3,
-                children: h.outboundRedemptionModalBody
+                children: p.outboundRedemptionModalBody
             })]
         }),
         actions: [{
-            text: m.intl.string(m.t.TulDPl),
+            text: _.intl.string(_.t.TulDPl),
             variant: "secondary",
             onClick: async () => await t()
         }, {
-            text: m.intl.string(m.t["+zx47d"]),
+            text: _.intl.string(_.t["+zx47d"]),
             variant: "primary",
             onClick: () => {
-                let e = (0, _.kc)(x, h);
+                let e = (0, m.kc)(x, p);
                 window.open(e, "_blank")
             }
         }],
-        transitionState: p,
-        "aria-label": S,
+        transitionState: h,
+        "aria-label": f,
         children: (0, i.jsxs)("div", {
             children: [(0, i.jsx)(r.cGx, {
                 className: g.M5
             }), (0, i.jsx)(l.D0$, {
-                label: m.intl.string(m.t.s9LFQh),
-                helperText: m.intl.string(m.t["F+nFTZ"]),
+                label: _.intl.string(_.t.s9LFQh),
+                helperText: _.intl.string(_.t["F+nFTZ"]),
                 children: (0, i.jsx)(o.A, {
                     value: x,
                     buttonColor: a.$n.Colors.BRAND,

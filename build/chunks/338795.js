@@ -1,6 +1,6 @@
 /** chunk id: 338795 params = (module,exports,require) **/
 n.d(t, {
-    J: () => S
+    J: () => f
 });
 var i = n(934551),
     s = n(98207),
@@ -11,14 +11,14 @@ var i = n(934551),
     d = n(954571),
     c = n(780964),
     u = n(828797),
-    _ = n(611478),
-    m = n(402089),
+    m = n(611478),
+    _ = n(402089),
     g = n(281225),
     A = n(935185),
     x = n(652215),
-    h = n(985018);
-let p = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
-        getTitle: () => h.intl.string(h.t["Vov/9o"]),
+    p = n(985018);
+let h = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
+        getTitle: () => p.intl.string(p.t["Vov/9o"]),
         onItemSelect: () => {
             d.default.track(x.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
                 target_tab_name: A.D.STANDING
@@ -27,16 +27,16 @@ let p = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
         buildLayout: () => [g.Q]
     }),
     T = (0, a.dT)(c.X.ACCOUNT_SECURITY_TAB, {
-        getTitle: () => h.intl.string(h.t.Am9YHi),
+        getTitle: () => p.intl.string(p.t.Am9YHi),
         onItemSelect: () => {
             d.default.track(x.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
                 target_tab_name: A.D.SECURITY
             })
         },
-        buildLayout: () => [_.P, u.o, m.s]
+        buildLayout: () => [m.P, u.o, _.s]
     }),
     E = (0, a.t_)(c.X.ACCOUNT_PANEL, {
-        useTitle: () => h.intl.string(h.t["JAIM/m"]),
+        useTitle: () => p.intl.string(p.t["JAIM/m"]),
         initialize: function() {
             let e = o.default.getCurrentUser();
             return null != e && (0, r.A)(e.id, e.getAvatarURL(void 0, 80)), () => {
@@ -44,10 +44,10 @@ let p = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
             }
         },
         hideInStreamerMode: !0,
-        buildLayout: () => [T, p]
+        buildLayout: () => [T, h]
     }),
-    S = (0, a.i4)(c.X.ACCOUNT_SIDEBAR_ITEM, {
-        useTitle: () => h.intl.string(h.t["JAIM/m"]),
+    f = (0, a.i4)(c.X.ACCOUNT_SIDEBAR_ITEM, {
+        useTitle: () => p.intl.string(p.t["JAIM/m"]),
         icon: i.UserIcon,
         buildLayout: () => [E]
     })

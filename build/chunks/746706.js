@@ -11,13 +11,13 @@ var i = n(627968),
     d = n(688810),
     c = n(465794),
     u = n(954571),
-    _ = n(927578),
-    m = n(652215),
+    m = n(927578),
+    _ = n(652215),
     g = n(788868),
     A = n(985018),
     x = n(547568),
-    h = n(896237),
-    p = n(448085);
+    p = n(896237),
+    h = n(448085);
 
 function T(e) {
     let {
@@ -25,14 +25,14 @@ function T(e) {
         showOverlay: n,
         children: T
     } = e, E = (0, r.Ay)(), {
-        analyticsLocations: S
+        analyticsLocations: f
     } = (0, d.Ay)(o.A.PREMIUM_UPSELL_OVERLAY);
     return (s.useEffect(() => {
-        n && u.default.track(m.HAw.PREMIUM_UPSELL_VIEWED, {
-            location_stack: S,
+        n && u.default.track(_.HAw.PREMIUM_UPSELL_VIEWED, {
+            location_stack: f,
             type: g.e.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_INLINE
         })
-    }, [n, S]), n) ? (0, i.jsxs)("div", {
+    }, [n, f]), n) ? (0, i.jsxs)("div", {
         className: x.ry,
         children: [(0, i.jsx)("div", {
             children: T
@@ -43,14 +43,14 @@ function T(e) {
                 alt: A.intl.string(A.t.LHFZQy),
                 src: function(e) {
                     switch (e) {
-                        case m.NJ8.DARK:
-                        case m.NJ8.DARKER:
-                        case m.NJ8.MIDNIGHT:
-                            return h;
-                        case m.NJ8.LIGHT:
+                        case _.NJ8.DARK:
+                        case _.NJ8.DARKER:
+                        case _.NJ8.MIDNIGHT:
                             return p;
+                        case _.NJ8.LIGHT:
+                            return h;
                         default:
-                            return h
+                            return p
                     }
                 }(E)
             }), (0, i.jsxs)("div", {
@@ -68,7 +68,7 @@ function T(e) {
                 size: l.$n.Sizes.LARGE,
                 color: l.$n.Colors.GREEN,
                 textOptions: {
-                    textOverride: _.Ay.isPremium(t) ? A.intl.string(A.t.AfRWI8) : A.intl.string(A.t.nkdUym)
+                    textOverride: m.Ay.isPremium(t) ? A.intl.string(A.t.AfRWI8) : A.intl.string(A.t.nkdUym)
                 },
                 subscriptionTier: g.pe.TIER_2
             })]

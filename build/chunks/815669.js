@@ -1,6 +1,6 @@
 /** chunk id: 815669 params = (module,exports,require) **/
 n.d(t, {
-    z: () => _
+    z: () => m
 });
 var i = n(311907),
     s = n(955572),
@@ -11,7 +11,7 @@ var i = n(311907),
     d = n(358776),
     c = n(652215),
     u = n(985018);
-let _ = (0, a.zD)(o.X.REDUCED_MOTION, {
+let m = (0, a.zD)(o.X.REDUCED_MOTION, {
     useTitle: () => u.intl.string(u.t.b3XBzg),
     useSubtitle: (0, d.Ci)("Motion") ? () => u.intl.format(u.t.XqvxJc, {
         helpdeskArticle: r.A.getArticleURL(c.MVz.REDUCED_MOTION)

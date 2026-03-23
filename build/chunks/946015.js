@@ -25,13 +25,13 @@ let d = {
         WRAP: r.aR,
         WRAP_REVERSE: r.KM
     },
-    _ = {
+    m = {
         START: r.j$,
         END: r.S_,
         CENTER: r.YO,
         STRETCH: r.ai
     },
-    m = {
+    _ = {
         SMALL: o.sf,
         LARGE: o.S6
     };
@@ -51,7 +51,7 @@ class g extends s.PureComponent {
             style: d,
             wrap: c,
             ...u
-        } = this.props, _ = {
+        } = this.props, m = {
             style: {
                 flexGrow: l,
                 flexShrink: n,
@@ -63,13 +63,13 @@ class g extends s.PureComponent {
         };
         if (!c && "string" != typeof e && 1 === s.Children.count(e)) {
             let n = s.Children.only(e);
-            return _.style = {
-                ..._.style,
+            return m.style = {
+                ...m.style,
                 ...n.props.style
-            }, _.className = a()(n.props.className, t), s.cloneElement(n, _)
+            }, m.className = a()(n.props.className, t), s.cloneElement(n, m)
         }
         return (0, i.jsx)("div", {
-            ..._,
+            ...m,
             children: e
         })
     }
@@ -77,14 +77,14 @@ class g extends s.PureComponent {
 class A extends s.PureComponent {
     static Child = g;
     static Direction = d;
-    static Align = _;
+    static Align = m;
     static Justify = c;
     static Wrap = u;
-    static Gutter = m;
+    static Gutter = _;
     static defaultProps = {
         direction: d.HORIZONTAL,
         justify: c.START,
-        align: _.STRETCH,
+        align: m.STRETCH,
         wrap: u.WRAP,
         shrink: 1,
         grow: 1,
@@ -102,18 +102,18 @@ class A extends s.PureComponent {
             shrink: d,
             grow: c,
             basis: u,
-            style: _,
-            gutter: m,
+            style: m,
+            gutter: _,
             ...g
         } = this.props, A = {
             flexShrink: d,
             flexGrow: c,
             flexBasis: u,
-            ..._
+            ...m
         };
         return (0, i.jsx)("div", {
             style: A,
-            className: a()(o.Uu, n, s, l, r, m, t),
+            className: a()(o.Uu, n, s, l, r, _, t),
             ...g,
             children: e
         })

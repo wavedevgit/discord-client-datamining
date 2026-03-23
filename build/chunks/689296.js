@@ -14,7 +14,7 @@ function d(e) {
         children: t,
         lineClamp: n = 2,
         ...d
-    } = e, [c, u] = s.useState(!1), [_, m] = s.useState(null), g = null != _ && (0, i.jsx)("button", {
+    } = e, [c, u] = s.useState(!1), [m, _] = s.useState(null), g = null != m && (0, i.jsx)("button", {
         className: o.x6,
         onClick: () => u(e => !e),
         children: (0, i.jsxs)(a.Text, {
@@ -29,29 +29,29 @@ function d(e) {
                 size: "xs"
             })]
         })
-    }), [A, x] = s.useState(null), h = s.useCallback(() => {
+    }), [A, x] = s.useState(null), p = s.useCallback(() => {
         if (null == A) return;
         let {
             scrollHeight: e,
             clientHeight: t
         } = A;
-        e > t && m({
+        e > t && _({
             truncatedHeight: t,
             expandedHeight: e
         })
     }, [A]);
     s.useEffect(() => {
-        requestAnimationFrame(h)
-    }, [h, t, n]);
-    let p = "auto";
-    return null != _ && (p = c ? `${_.expandedHeight}px` : `${_.truncatedHeight}px`), (0, i.jsxs)("div", {
+        requestAnimationFrame(p)
+    }, [p, t, n]);
+    let h = "auto";
+    return null != m && (h = c ? `${m.expandedHeight}px` : `${m.truncatedHeight}px`), (0, i.jsxs)("div", {
         children: [(0, i.jsx)(a.Text, {
             ...d,
             className: o.Qs,
             lineClamp: c ? void 0 : n,
             ref: x,
             style: {
-                height: p
+                height: h
             },
             children: t
         }), g]

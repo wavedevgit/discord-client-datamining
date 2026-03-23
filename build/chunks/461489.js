@@ -1,6 +1,6 @@
 /** chunk id: 461489 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => S
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -11,22 +11,22 @@ var i = n(627968),
     d = n(100392),
     c = n(102609),
     u = n(271478),
-    _ = n(49463),
-    m = n(386976),
+    m = n(49463),
+    _ = n(386976),
     g = n(257433),
     A = n(32523),
     x = n(961350),
-    h = n(71393),
-    p = n(957565),
+    p = n(71393),
+    h = n(957565),
     T = n(222735),
     E = n(688151),
-    S = n(775105);
+    f = n(775105);
 
-function f() {
+function S() {
     let {
         experiments: e,
         overridesInfo: t
-    } = (0, m.op)(), {
+    } = (0, _.op)(), {
         experiments: n,
         overridesInfo: l
     } = (0, A.hI)(), a = s.useMemo(() => ({
@@ -52,7 +52,7 @@ function f() {
                 defaultOpen: null != r[e.id]
             }, e.id)
         }) : (0, i.jsx)("div", {
-            className: S.p$,
+            className: f.p$,
             children: (0, i.jsx)(o.Heading, {
                 variant: "heading-md/semibold",
                 children: "No Experiments Found"
@@ -66,17 +66,17 @@ function C(e) {
         experiment: t,
         experimentId: n,
         overrideInfo: l,
-        defaultOpen: m
-    } = e, [A, h] = s.useState(m), [T, f] = s.useState(!1), C = s.useCallback(() => {
-        h(e => !e)
-    }, []), b = (0, r.bG)([x.default], () => x.default.getId()), N = (0, g.iN)(t, b), I = (0, g.Fm)(t, b), v = (0, r.yK)([_.A], () => a().sortBy(_.A.getRecentExposures(E.Vh.USER, n), e => {
+        defaultOpen: _
+    } = e, [A, p] = s.useState(_), [T, S] = s.useState(!1), C = s.useCallback(() => {
+        p(e => !e)
+    }, []), b = (0, r.bG)([x.default], () => x.default.getId()), N = (0, g.iN)(t, b), I = (0, g.Fm)(t, b), v = (0, r.yK)([m.A], () => a().sortBy(m.A.getRecentExposures(E.Vh.USER, n), e => {
         let [t, n] = e;
         return -n
     }).map(e => {
         let [t, n] = e;
         return `${new Date(n).toLocaleString()} (${t})`
     })), j = s.useCallback(e => {
-        (0, p.C)((0, d.yA)(n), () => {
+        (0, h.C)((0, d.yA)(n), () => {
             (0, o.showToast)({
                 id: "experiment-link-copied",
                 message: "Copied experiment link",
@@ -88,13 +88,13 @@ function C(e) {
         onClick: C,
         children: (0, i.jsxs)(o.Text, {
             variant: "text-md/medium",
-            className: S.DD,
+            className: f.DD,
             children: [(0, i.jsxs)("div", {
                 children: [(0, i.jsxs)(o.BJc, {
                     direction: "horizontal",
                     align: "center",
                     gap: 4,
-                    children: [t.title, " ", p.p5 && (0, i.jsx)(o.DUT, {
+                    children: [t.title, " ", h.p5 && (0, i.jsx)(o.DUT, {
                         onClick: j,
                         children: (0, i.jsx)(o.qYV, {
                             size: "xs"
@@ -106,28 +106,28 @@ function C(e) {
                     children: n
                 })]
             }), (0, i.jsx)("span", {
-                className: S.km,
+                className: f.km,
                 children: "User"
             })]
         })
     });
     if (!A) return (0, i.jsx)("div", {
-        className: S.Os,
+        className: f.Os,
         children: y
     });
-    let R = "";
-    return R = t.system === c.l5.LEGACY ? `Currently assigned to bucket ${N??E.RE.NOT_ELIGIBLE}` : null != N ? `Currently assigned to variant ${N}` : "Currently unassigned", (0, i.jsxs)("div", {
-        className: S.Os,
+    let O = "";
+    return O = t.system === c.l5.LEGACY ? `Currently assigned to bucket ${N??E.RE.NOT_ELIGIBLE}` : null != N ? `Currently assigned to variant ${N}` : "Currently unassigned", (0, i.jsxs)("div", {
+        className: f.Os,
         children: [y, (0, i.jsx)("div", {
             children: (0, i.jsx)(u.g, {
                 label: t.system === c.l5.LEGACY ? "Bucket Override" : "Variant Override",
-                description: R,
+                description: O,
                 experiment: t,
                 experimentId: n,
                 overrideInfo: l
             })
         }), (0, i.jsx)("div", {
-            className: S.h_,
+            className: f.h_,
             children: null == I ? (0, i.jsx)(o.Text, {
                 variant: "text-sm/normal",
                 color: "text-subtle",
@@ -136,38 +136,38 @@ function C(e) {
         }), T ? (0, i.jsxs)("div", {
             children: [(0, i.jsx)(o.Text, {
                 variant: "text-lg/medium",
-                className: S.id,
+                className: f.id,
                 children: "Server Descriptor"
             }), (0, i.jsx)(o.Text, {
                 variant: "code",
-                className: S.AS,
+                className: f.AS,
                 children: null == I ? "None" : JSON.stringify(I, void 0, 2)
             }), (0, i.jsx)(o.Text, {
                 variant: "text-lg/medium",
-                className: S.id,
+                className: f.id,
                 children: "Override Descriptor"
             }), (0, i.jsx)(o.Text, {
                 variant: "code",
-                className: S.AS,
+                className: f.AS,
                 children: l?.originalDescriptor == null ? "None" : JSON.stringify(l.originalDescriptor, void 0, 2)
             }), (0, i.jsx)(o.Text, {
                 variant: "text-lg/medium",
-                className: S.id,
+                className: f.id,
                 children: "Recent Exposures"
             }), (0, i.jsx)(o.Text, {
                 variant: "code",
-                className: S.AS,
+                className: f.AS,
                 children: 0 === v.length ? "None" : v.join("\n")
             })]
         }) : (0, i.jsx)("div", {
-            className: S.id,
+            className: f.id,
             children: (0, i.jsx)(o.QWc, {
                 variant: "secondary",
                 text: "More Details \xbb",
-                onClick: () => f(!0)
+                onClick: () => S(!0)
             })
         }), (0, i.jsx)(o.cGx, {
-            className: S.yF
+            className: f.yF
         })]
     })
 }
@@ -177,20 +177,20 @@ function b(e) {
         experiment: t,
         experimentId: n,
         overrideInfo: l
-    } = e, [d, c] = s.useState(null != l), [m, g] = s.useState(!1), A = s.useCallback(() => {
+    } = e, [d, c] = s.useState(null != l), [_, g] = s.useState(!1), A = s.useCallback(() => {
         c(e => !e)
-    }, []), x = (0, r.bG)([_.A], () => _.A.getLoadedGuildExperiment(n)), p = (0, r.yK)([_.A], () => a().sortBy(_.A.getRecentExposures(E.Vh.GUILD, n), e => {
+    }, []), x = (0, r.bG)([m.A], () => m.A.getLoadedGuildExperiment(n)), h = (0, r.yK)([m.A], () => a().sortBy(m.A.getRecentExposures(E.Vh.GUILD, n), e => {
         let [t, n] = e;
         return -n
     }).map(e => {
         let [t, n] = e;
         return `${new Date(n).toLocaleString()} (${t})`
-    })), [T, f] = (0, r.yK)([h.A, _.A], () => {
-        let e = a().sortBy(h.A.getGuildsArray(), e => e.name.toLowerCase()),
+    })), [T, S] = (0, r.yK)([p.A, m.A], () => {
+        let e = a().sortBy(p.A.getGuildsArray(), e => e.name.toLowerCase()),
             t = {},
             i = [];
         for (let s of e) {
-            let e = _.A.getGuildExperimentDescriptor(n, s.id),
+            let e = m.A.getGuildExperimentDescriptor(n, s.id),
                 l = e?.bucket ?? E.RE.NOT_ELIGIBLE;
             l in t || (t[l] = 0), t[l]++, i.push(`${s.name}: ${l}`)
         }
@@ -200,7 +200,7 @@ function b(e) {
         onClick: A,
         children: (0, i.jsxs)(o.Text, {
             variant: "text-md/medium",
-            className: S.DD,
+            className: f.DD,
             children: [(0, i.jsxs)("div", {
                 children: [(0, i.jsx)("span", {
                     children: t.title
@@ -210,72 +210,72 @@ function b(e) {
                     children: n
                 })]
             }), (0, i.jsx)("span", {
-                className: S.km,
+                className: f.km,
                 children: "Guild"
             })]
         })
     });
     return d ? (0, i.jsxs)("div", {
-        className: S.Os,
+        className: f.Os,
         children: [C, (0, i.jsx)(u.g, {
             label: "Bucket Override",
-            description: `Current Assignments: ${f}`,
+            description: `Current Assignments: ${S}`,
             experiment: t,
             experimentId: n,
             overrideInfo: l
         }), (0, i.jsx)("div", {
-            className: S.h_,
+            className: f.h_,
             children: null == x ? (0, i.jsx)(o.Text, {
                 variant: "text-sm/normal",
                 color: "text-subtle",
                 children: 'Warning: Server did not send any experiment config. You may need to check the "Send to Client" box in the admin UI.'
             }) : null
-        }), m ? (0, i.jsxs)("div", {
+        }), _ ? (0, i.jsxs)("div", {
             children: [(0, i.jsx)(o.Text, {
                 variant: "text-lg/medium",
-                className: S.id,
+                className: f.id,
                 children: "Guild Assignments"
             }), (0, i.jsx)(o.Text, {
                 variant: "code",
-                className: S.AS,
+                className: f.AS,
                 children: T
             }), (0, i.jsx)(o.Text, {
                 variant: "text-lg/medium",
-                className: S.id,
+                className: f.id,
                 children: "Server Descriptor"
             }), (0, i.jsx)(o.Text, {
                 variant: "code",
-                className: S.AS,
+                className: f.AS,
                 children: null == x ? "None" : JSON.stringify(x, void 0, 2)
             }), (0, i.jsx)(o.Text, {
                 variant: "text-lg/medium",
-                className: S.id,
+                className: f.id,
                 children: "Override Descriptor"
             }), (0, i.jsx)(o.Text, {
                 variant: "code",
-                className: S.AS,
+                className: f.AS,
                 children: l?.originalDescriptor == null ? "None" : JSON.stringify(l.originalDescriptor, void 0, 2)
             }), (0, i.jsx)(o.Text, {
                 variant: "text-lg/medium",
-                className: S.id,
+                className: f.id,
                 children: "Recent Exposures"
             }), (0, i.jsx)(o.Text, {
                 variant: "code",
-                className: S.AS,
-                children: 0 === p.length ? "None" : p.join("\n")
+                className: f.AS,
+                children: 0 === h.length ? "None" : h.join("\n")
             })]
         }) : (0, i.jsx)("div", {
-            className: S.id,
+            className: f.id,
             children: (0, i.jsx)(o.QWc, {
                 variant: "secondary",
                 text: "More Details \xbb",
                 onClick: () => g(!0)
             })
         }), (0, i.jsx)(o.cGx, {
-            className: S.yF
+            className: f.yF
         })]
     }) : (0, i.jsx)("div", {
-        className: S.Os,
+        className: f.Os,
         children: C
     })
 }

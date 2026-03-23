@@ -1,6 +1,6 @@
 /** chunk id: 603293 params = (module,exports,require) **/
 n.d(t, {
-    b: () => _
+    b: () => m
 });
 var i = n(627968),
     s = n(64700),
@@ -20,14 +20,14 @@ function u(e) {
         alt: "",
         className: c.b,
         src: (0, r.t)(t)
-    }), [t]), _ = null != n && null != t ? {
+    }), [t]), m = null != n && null != t ? {
         text: n,
         leadingIcon: u
     } : n ?? void 0;
     return (0, i.jsx)(l.Modal, {
         ...o,
         title: d.intl.string(d.t.EeFkoB),
-        subtitle: _,
+        subtitle: m,
         actions: [{
             text: d.intl.string(d.t.cpT0Cq),
             onClick: o.onClose,
@@ -52,7 +52,7 @@ function u(e) {
     })
 }
 
-function _(e) {
+function m(e) {
     let t = null != e ? (0, o.Gw)(e) : null;
     (0, a.qfG)(n => (0, i.jsx)(u, {
         ...n,

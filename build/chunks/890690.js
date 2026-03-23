@@ -1,46 +1,46 @@
 /** chunk id: 890690 params = (module,exports,require) **/
 "use strict";
-n.d(t, {
+r.d(t, {
     u: () => l
-}), n(321073);
-var r = n(64700),
-    i = n(894858),
-    a = n(397274);
+}), r(321073);
+var n = r(64700),
+    a = r(894858),
+    i = r(397274);
 
 function l(e) {
-    let t = r.useRef(null),
-        n = r.useRef(new Set);
-    r.useEffect(() => {
-        let e = a.A.getPanelScrollerNode();
+    let t = n.useRef(null),
+        r = n.useRef(new Set);
+    n.useEffect(() => {
+        let e = i.A.getPanelScrollerNode();
         if (null == e) return;
-        let r = Array.from(e.querySelectorAll("[data-settings-category-key]")).filter(e => null != e.getAttribute("data-settings-category-key")),
+        let n = Array.from(e.querySelectorAll("[data-settings-category-key]")).filter(e => null != e.getAttribute("data-settings-category-key")),
             l = new Map,
             s = [];
-        return r.forEach(e => {
+        return n.forEach(e => {
             let t = e.getAttribute("data-settings-category-key");
             null != t && (l.set(e, t), s.push(t))
         }), t.current = new IntersectionObserver(e => {
             if (e.forEach(e => {
                     let {
                         isIntersecting: t,
-                        target: r
-                    } = e, i = l.get(r);
-                    null != i && (t ? n.current.add(i) : n.current.delete(i))
-                }), !a.A.getIsSidebarCategoryAutoSelectEnabled()) return;
+                        target: n
+                    } = e, a = l.get(n);
+                    null != a && (t ? r.current.add(a) : r.current.delete(a))
+                }), !i.A.getIsSidebarCategoryAutoSelectEnabled()) return;
             let t = [];
             if (s.forEach(e => {
-                    n.current.has(e) && t.push(e)
+                    r.current.has(e) && t.push(e)
                 }), 0 === t.length) return;
-            let r = t[0];
-            i.A.getField("currentCategoryKey") !== r && i.A.setState({
-                currentCategoryKey: r
+            let n = t[0];
+            a.A.getField("currentCategoryKey") !== n && a.A.setState({
+                currentCategoryKey: n
             })
         }, {
             root: e,
             rootMargin: "0px 100000px 0px 100000px",
             threshold: 1
-        }), r.forEach(e => t.current?.observe(e)), () => {
-            r.forEach(e => t.current?.unobserve(e)), t.current?.disconnect(), t.current = null
+        }), n.forEach(e => t.current?.observe(e)), () => {
+            n.forEach(e => t.current?.unobserve(e)), t.current?.disconnect(), t.current = null
         }
     }, [e])
 }

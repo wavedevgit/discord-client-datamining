@@ -1,6 +1,6 @@
 /** chunk id: 88690 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var i = n(627968);
 n(64700);
@@ -12,21 +12,21 @@ var s = n(311907),
     d = n(430452),
     c = n(948641),
     u = n(985018),
-    _ = n(613844);
+    m = n(613844);
 
-function m() {
+function _() {
     let e = d.Ay.getCameraComponent(),
         t = (0, s.bG)([d.Ay], () => d.Ay.getVideoDeviceId()),
         n = c.A.useField("previewEnabled"),
-        m = (0, s.bG)([d.Ay], () => d.Ay.isVideoAvailable());
+        _ = (0, s.bG)([d.Ay], () => d.Ay.isVideoAvailable());
     return ((0, r.l0)(() => {
         c.A.setState({
             previewEnabled: !1
         })
     }), n) ? (0, i.jsx)("div", {
-        className: _.T,
+        className: m.T,
         children: (0, i.jsxs)("div", {
-            className: _.U,
+            className: m.U,
             children: [(0, i.jsx)(e, {
                 deviceId: t,
                 width: 387,
@@ -35,16 +35,16 @@ function m() {
             }), (0, i.jsx)(o.k, {})]
         })
     }) : (0, i.jsx)("div", {
-        className: _.T,
+        className: m.T,
         children: (0, i.jsx)(l.m, {
-            text: m ? null : u.intl.string(u.t["8jSzSe"]),
+            text: _ ? null : u.intl.string(u.t["8jSzSe"]),
             children: (0, i.jsx)(a.Button, {
                 variant: "primary",
                 text: u.intl.string(u.t.JIf4v7),
                 onClick: () => c.A.setState({
                     previewEnabled: !0
                 }),
-                disabled: !m
+                disabled: !_
             })
         })
     })

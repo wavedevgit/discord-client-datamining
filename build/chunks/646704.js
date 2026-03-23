@@ -11,14 +11,14 @@ var i = n(627968),
     d = n(419954),
     c = n(933297),
     u = n(780964),
-    _ = n(616415),
-    m = n(985018);
+    m = n(616415),
+    _ = n(985018);
 let g = (0, d.t_)(u.X.SUBSCRIPTIONS_PANEL, {
-        useTitle: () => m.intl.string(m.t.trSpHX),
-        buildLayout: () => [_.J]
+        useTitle: () => _.intl.string(_.t.trSpHX),
+        buildLayout: () => [m.J]
     }),
     A = (0, d.i4)(u.X.SUBSCRIPTIONS_SIDEBAR_ITEM, {
-        useTitle: () => m.intl.string(m.t.trSpHX),
+        useTitle: () => _.intl.string(_.t.trSpHX),
         icon: l.SubscriptionIcon,
         usePersistentBadge: function() {
             return s.useMemo(() => ({

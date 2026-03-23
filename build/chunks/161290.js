@@ -12,17 +12,17 @@ var s = n(284009),
     d = n(318785),
     c = n(919395),
     u = n(124064),
-    _ = n(200790),
-    m = n(230084),
+    m = n(200790),
+    _ = n(230084),
     g = n(339442),
     A = n(900254),
     x = n(431982),
-    h = n(730588),
-    p = n(593629),
+    p = n(730588),
+    h = n(593629),
     T = n(164599),
     E = n(63675),
-    S = n(617514),
-    f = n(546849),
+    f = n(617514),
+    S = n(546849),
     C = n(101058),
     b = n(84540),
     N = n(836602),
@@ -30,8 +30,8 @@ var s = n(284009),
     v = n(950191),
     j = n(287809),
     y = n(927578),
-    R = n(985018),
-    O = n(264671);
+    O = n(985018),
+    R = n(264671);
 
 function L() {
     let e = (0, a.bG)([j.default], () => {
@@ -43,13 +43,13 @@ function L() {
             pendingAvatar: n,
             pendingGlobalName: s,
             pendingBanner: L,
-            pendingBio: D,
-            pendingPronouns: P,
+            pendingBio: P,
+            pendingPronouns: D,
             pendingAccentColor: M,
             pendingThemeColors: G,
-            pendingLegacyUsernameDisabled: U,
-            pendingPrimaryGuildId: k,
-            errors: V
+            pendingLegacyUsernameDisabled: k,
+            pendingPrimaryGuildId: U,
+            errors: w
         } = (0, a.cf)([N.A], () => {
             let e = N.A.getPendingChanges(),
                 t = N.A.getErrors();
@@ -58,7 +58,7 @@ function L() {
                 errors: t
             }
         }),
-        w = (0, C.V7)({
+        V = (0, C.V7)({
             userId: e.id,
             image: n
         }),
@@ -68,11 +68,11 @@ function L() {
         Y = (0, c.Ac)(L, t?.banner),
         z = (0, v.Ay)(e.id),
         X = z?.getLegacyUsername(),
-        W = (V.global_name?.length ?? 0) > 0 ? V.global_name : B?.nick ?? [],
-        K = (V.bio?.length ?? 0) > 0 ? V.bio : B?.bio ?? [],
+        W = (w.global_name?.length ?? 0) > 0 ? w.global_name : B?.nick ?? [],
+        K = (w.bio?.length ?? 0) > 0 ? w.bio : B?.bio ?? [],
         Z = (0, d.b)();
     return (0, i.jsxs)("div", {
-        className: O.Q,
+        className: R.Q,
         children: [(0, i.jsx)(g.A, {
             placeholder: e.username,
             errors: W,
@@ -82,50 +82,50 @@ function L() {
                 globalName: e
             }),
             user: e
-        }), (0, i.jsx)(f.A, {
-            sectionTitle: R.intl.string(R.t["+T3RI/"]),
-            errors: V.pronouns,
+        }), (0, i.jsx)(S.A, {
+            sectionTitle: O.intl.string(O.t["+T3RI/"]),
+            errors: w.pronouns,
             onPronounsChange: e => (0, b.p)({
                 pronouns: e
             }),
-            pendingPronouns: P,
+            pendingPronouns: D,
             currentPronouns: t?.pronouns ?? ""
-        }, "pronouns"), (0, i.jsx)(S.A, {}), (0, i.jsx)(m.A, {
+        }, "pronouns"), (0, i.jsx)(f.A, {}), (0, i.jsx)(_.A, {
             onAvatarChange: e => {
                 (0, b.p)({
                     avatar: e
                 }), (0, c.WU)(e)
             },
             showRemoveAvatarButton: F,
-            errors: V.avatar,
-            sectionTitle: R.intl.string(R.t.lqaIxI),
+            errors: w.avatar,
+            sectionTitle: O.intl.string(O.t.lqaIxI),
             forcedDivider: !0
-        }, "avatar"), (0, i.jsx)(_.A, {
+        }, "avatar"), (0, i.jsx)(m.A, {
             user: e,
-            sectionTitle: R.intl.string(R.t["7v0T9P"])
+            sectionTitle: O.intl.string(O.t["7v0T9P"])
         }, "decoration"), (0, i.jsx)(x.A, {
             user: e
         }), (0, i.jsx)(T.A, {
             user: e,
-            sectionTitle: R.intl.string(R.t.wR5wOo)
+            sectionTitle: O.intl.string(O.t.wR5wOo)
         }, "effect"), H ? (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(h.A, {
+            children: [(0, i.jsx)(p.A, {
                 showRemoveBannerButton: Y,
-                errors: V.banner,
+                errors: w.banner,
                 onBannerChange: e => (0, b.p)({
                     banner: e
                 }),
                 forcedDivider: !0
             }, "banner"), (0, i.jsx)(E.A, {
                 user: e,
-                pendingAvatarSrc: w,
+                pendingAvatarSrc: V,
                 pendingColors: G,
                 onThemeColorsChange: e => (0, b.p)({
                     themeColors: e
                 }),
                 forcedDivider: !0
             })]
-        }) : (0, i.jsx)(p.A, {
+        }) : (0, i.jsx)(h.A, {
             user: e,
             savedUserColor: t?.accentColor,
             pendingColor: M,
@@ -133,22 +133,22 @@ function L() {
                 accentColor: e
             })
         }, "color"), (0, i.jsx)(u.A, {
-            sectionTitle: R.intl.string(R.t.ZzAR2Y),
+            sectionTitle: O.intl.string(O.t.ZzAR2Y),
             errors: K,
             onBioChange: e => (0, b.p)({
                 bio: e
             }),
-            pendingBio: D,
+            pendingBio: P,
             currentBio: t?.bio ?? ""
         }, "bio"), Z.length > 0 && (0, i.jsx)(o.A, {
             availablePrimaryGuilds: Z,
-            pendingPrimaryGuildId: k,
+            pendingPrimaryGuildId: U,
             onChange: e => (0, b.p)({
                 primaryGuildId: e
             })
         }), null != X && (0, i.jsx)(A.A, {
             legacyUsername: X,
-            pendingLegacyUsernameDisabled: U
+            pendingLegacyUsernameDisabled: k
         }, "legacy_username")]
     })
 }

@@ -15,9 +15,9 @@ let d = s.createContext(void 0);
 function c(e) {
     let {
         children: t
-    } = e, n = s.useRef(l.n3), [c, u] = s.useState(!1), _ = s.useCallback(e => {
+    } = e, n = s.useRef(l.n3), [c, u] = s.useState(!1), m = s.useCallback(e => {
         u(e?.some(e => e.showNotice() && !e.canCloseEarly?.()) ?? !1), n.current = l.n3
-    }, []), m = s.useCallback(e => {
+    }, []), _ = s.useCallback(e => {
         if (c) {
             (0, r.fO)({
                 duration: 300,
@@ -27,10 +27,10 @@ function c(e) {
         }
         e()
     }, [c]), g = s.useMemo(() => ({
-        navigateWithValidation: m,
+        navigateWithValidation: _,
         showNotice: c,
-        handleStoreUpdate: _
-    }), [m, c, _]);
+        handleStoreUpdate: m
+    }), [_, c, m]);
     return (0, i.jsx)(d.Provider, {
         value: g,
         children: t

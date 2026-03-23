@@ -1,6 +1,6 @@
 /** chunk id: 163944 params = (module,exports,require) **/
 n.d(t, {
-    S: () => _
+    S: () => m
 }), n(321073);
 var i = n(64700),
     s = n(311907),
@@ -11,7 +11,7 @@ var i = n(64700),
     d = n(601229),
     c = n(685896),
     u = n(985018);
-let _ = (0, a.zZ)(o.X.DISPLAY_IN_APP_ICON_CATEGORY, {
+let m = (0, a.zZ)(o.X.DISPLAY_IN_APP_ICON_CATEGORY, {
     useTitle: () => u.intl.string(u.t.RPh2ou),
     useSubtitle: () => u.intl.string(u.t.IgENJo),
     useHeaderDecoration: function() {

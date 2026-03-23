@@ -17,12 +17,12 @@ let d = t => {
         size: u = "sm",
         onAction: c,
         ...m
-    } = t, A = (0, l.bG)([a.A], () => a.A.isInChannel(i), [i]);
+    } = t, p = (0, l.bG)([a.A], () => a.A.isInChannel(i), [i]);
     return (0, n.jsx)(r.Button, {
         variant: d,
         size: u,
         text: o.intl.string(o.t.ZYO5OK),
-        disabled: A,
+        disabled: p,
         onClick: () => {
             c?.(), s.CH(e, i)
         },

@@ -1,6 +1,6 @@
 /** chunk id: 442671 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -11,21 +11,21 @@ var i = n(627968),
     d = n(158954),
     c = n(688810),
     u = n(657331),
-    _ = n(331011);
-let m = e => {
+    m = n(331011);
+let _ = e => {
     let {
         userId: t,
         children: n,
         isLast: l,
-        className: m
+        className: _
     } = e, [g, A] = s.useState(!1), {
         analyticsLocations: x
-    } = (0, c.Ay)(), h = s.useCallback(() => {
+    } = (0, c.Ay)(), p = s.useCallback(() => {
         (0, u.openUserProfileModal)({
             userId: t,
             sourceAnalyticsLocations: x
         })
-    }, [t, x]), p = () => {
+    }, [t, x]), h = () => {
         A(!0)
     }, T = () => {
         A(!1)
@@ -41,13 +41,13 @@ let m = e => {
                 style: {
                     opacity: 1
                 },
-                className: a()(_.KG, m, {
-                    [_.HV]: l,
-                    [_.vu]: g
+                className: a()(m.KG, _, {
+                    [m.HV]: l,
+                    [m.vu]: g
                 }),
-                onMouseEnter: p,
+                onMouseEnter: h,
                 onMouseLeave: T,
-                onClick: h,
+                onClick: p,
                 ...e,
                 children: n(g)
             })

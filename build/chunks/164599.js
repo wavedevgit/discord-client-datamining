@@ -1,6 +1,6 @@
 /** chunk id: 164599 params = (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => f
 });
 var i = n(627968),
     s = n(64700),
@@ -11,53 +11,53 @@ var i = n(627968),
     d = n(688810),
     c = n(309635),
     u = n(84540),
-    _ = n(954571),
-    m = n(927578),
+    m = n(954571),
+    _ = n(927578),
     g = n(919395),
     A = n(128450),
     x = n(212168),
-    h = n(652215),
-    p = n(788868),
+    p = n(652215),
+    h = n(788868),
     T = n(985018),
     E = n(97671);
 
-function S(e) {
+function f(e) {
     let {
         user: t,
         guild: n,
         initialSelectedEffect: l,
-        className: S,
-        sectionTitle: f,
+        className: f,
+        sectionTitle: S,
         forcedDivider: C = !1,
         withTutorial: b = !1,
         showBorder: N = !1
     } = e, {
         analyticsLocations: I
-    } = (0, d.Ay)(), v = m.Ay.canUsePremiumProfileCustomization(t), j = (0, g.N2)({
+    } = (0, d.Ay)(), v = _.Ay.canUsePremiumProfileCustomization(t), j = (0, g.N2)({
         user: t,
         guildId: n?.id
     }), {
         pendingProfileEffect: y,
-        errors: R
+        errors: O
     } = (0, g.nZ)(n?.id);
     s.useEffect(() => {
-        v && _.default.track(h.HAw.PREMIUM_UPSELL_VIEWED, {
-            type: p.e.PROFILE_EFFECTS_INLINE_SETTINGS,
+        v && m.default.track(p.HAw.PREMIUM_UPSELL_VIEWED, {
+            type: h.e.PROFILE_EFFECTS_INLINE_SETTINGS,
             location_stack: I
         })
     }, [v, I]);
-    let O = b ? o.wLn : r.$n;
+    let R = b ? o.wLn : r.$n;
     return (0, i.jsx)(A.A, {
         forcedDivider: C,
         borderType: x.i.PREMIUM,
         hasBackground: !0,
-        title: f,
+        title: S,
         showBorder: N,
-        errors: R,
-        className: S,
+        errors: O,
+        className: f,
         children: (0, i.jsxs)("div", {
             className: E.NC,
-            children: [(0, i.jsx)(O, {
+            children: [(0, i.jsx)(R, {
                 size: r.$n.Sizes.SMALL,
                 onClick: () => {
                     (0, c.W)({

@@ -31,12 +31,12 @@ function a(e, t, n, a) {
                     null == t || !(t.contentRect.height > 0) || d.current || s || (d.current = !0, c.disconnect(), t.target.scrollIntoView(n))
                 }),
                 u = performance.now(),
-                _ = () => {
+                m = () => {
                     if (s || performance.now() - u > 5e3) return;
                     let t = e();
-                    null != t ? t.offsetHeight > 0 ? (d.current = !0, t.scrollIntoView(n)) : c.observe(t) : l = requestAnimationFrame(_)
+                    null != t ? t.offsetHeight > 0 ? (d.current = !0, t.scrollIntoView(n)) : c.observe(t) : l = requestAnimationFrame(m)
                 };
-            return _(), () => {
+            return m(), () => {
                 s = !0, null != l && cancelAnimationFrame(l), c.disconnect()
             }
         }, [t, o, a, r, ...n]), i.useEffect(() => {

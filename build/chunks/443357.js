@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(873298),
-    l = n(86689),
-    a = n(639383),
+    l = n(562783),
+    a = n(290389),
     r = n(704724),
     o = n(171316),
     d = n(500470),
@@ -19,9 +19,9 @@ function u() {
     let {
         goreContentFriendDm: n,
         goreContentNonFriendDm: u
-    } = t, _ = t => {
+    } = t, m = t => {
         (0, r.qY)(e, t)
-    }, m = [{
+    }, _ = [{
         value: s.TO.BLUR,
         label: c.intl.string(c.t.S49Uad)
     }, {
@@ -33,17 +33,17 @@ function u() {
         children: [(0, i.jsx)(a.A, {
             title: c.intl.string(c.t["+uI23H"]),
             value: n,
-            onChange: e => _({
+            onChange: e => m({
                 goreContentFriendDm: e
             }),
-            options: m
+            options: _
         }), (0, i.jsx)(a.A, {
             title: c.intl.string(c.t["Yh+HX1"]),
             value: u,
-            onChange: e => _({
+            onChange: e => m({
                 goreContentNonFriendDm: e
             }),
-            options: m
+            options: _
         })]
     })
 }

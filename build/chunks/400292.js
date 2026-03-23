@@ -22,7 +22,7 @@ let c = function(e) {
             tension: 120,
             friction: 12
         }
-    }), _ = {
+    }), m = {
         section: o.JJy.MARKETING_FLOATING_CTA
     };
     return (0, i.jsx)(s.animated.div, {
@@ -36,7 +36,7 @@ let c = function(e) {
                 subscriptionTier: n,
                 hasActivePromotion: !!c,
                 isPersistentCTA: !0,
-                premiumModalAnalyticsLocation: _
+                premiumModalAnalyticsLocation: m
             }), (0, i.jsx)(a.A, {
                 variant: "secondary",
                 size: "md"

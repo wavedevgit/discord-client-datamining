@@ -1,6 +1,6 @@
 /** chunk id: 39218 params = (module,exports,require) **/
 n.d(t, {
-    x: () => _
+    x: () => m
 });
 var i = n(64700),
     s = n(419954),
@@ -11,7 +11,7 @@ var i = n(64700),
     d = n(84373),
     c = n(652215),
     u = n(985018);
-let _ = (0, s.Qx)(o.X.CONTENT_AND_SOCIAL_DM_SPAM_SETTING, {
+let m = (0, s.Qx)(o.X.CONTENT_AND_SOCIAL_DM_SPAM_SETTING, {
     useTitle: () => u.intl.string(u.t.tiCXaH),
     useSubtitle: () => u.intl.format(u.t.RvjRRI, {
         appealLink: l.A.getArticleURL(c.MVz.SAFE_DIRECT_MESSAGING)

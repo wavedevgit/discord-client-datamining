@@ -1,6 +1,6 @@
 /** chunk id: 434395 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => m
 });
 var i = n(627968);
 n(64700);
@@ -13,15 +13,15 @@ var s = n(503698),
     c = n(985018),
     u = n(416179);
 
-function _(e) {
+function m(e) {
     let {
         subscription: t,
         renewalMutations: s,
-        className: _,
-        analyticsLocation: m
+        className: m,
+        analyticsLocation: _
     } = e, g = (0, r.A)(), A = t.currentPeriodEnd;
     return g.fractionalState === d.xc.FP_SUB_PAUSED && (A = g.endsAt.toDate()), (0, i.jsxs)("div", {
-        className: l()(u.zr, _),
+        className: l()(u.zr, m),
         children: [(0, i.jsx)(a.EpV, {
             size: "custom",
             width: 20,
@@ -44,7 +44,7 @@ function _(e) {
                         ...n,
                         subscription: t,
                         renewalMutations: s,
-                        analyticsLocation: m
+                        analyticsLocation: _
                     })
                 })
             },

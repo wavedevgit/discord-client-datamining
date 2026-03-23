@@ -11,17 +11,17 @@ var i = n(627968),
     d = n(83257),
     c = n(159001),
     u = n(766569),
-    _ = n(836602),
-    m = n(576622),
+    m = n(836602),
+    _ = n(576622),
     g = n(740625),
     A = n(841329),
     x = n(955872),
-    h = n(71393),
-    p = n(967198),
+    p = n(71393),
+    h = n(967198),
     T = n(711014),
     E = n(287809),
-    S = n(203982),
-    f = n(115063),
+    f = n(203982),
+    S = n(115063),
     C = n(507553),
     b = n(652215),
     N = n(355097),
@@ -33,18 +33,18 @@ let j = {
 };
 
 function y() {
-    let e = (0, r.bG)([p.A, T.Ay, _.A], () => {
-            let e = _.A.selectedGuildId ?? p.A.getGuildId();
-            return null == e || _._.has(e) ? T.Ay.getFlattenedGuildIds().find(e => !_._.has(e)) : e
+    let e = (0, r.bG)([h.A, T.Ay, m.A], () => {
+            let e = m.A.selectedGuildId ?? h.A.getGuildId();
+            return null == e || m._.has(e) ? T.Ay.getFlattenedGuildIds().find(e => !m._.has(e)) : e
         }),
-        t = (0, r.bG)([h.A], () => h.A.getGuild(e)),
-        n = (0, r.bG)([_.A], () => _.A.showNotice()),
+        t = (0, r.bG)([p.A], () => p.A.getGuild(e)),
+        n = (0, r.bG)([m.A], () => m.A.showNotice()),
         l = (0, r.bG)([E.default], () => E.default.getCurrentUser()),
         y = C.A.useField("subsection");
     return s.useEffect(() => {
         (0, A._)(j[y])
     }, [y]), s.useEffect(() => {
-        null != l && t?.id != null && (0, m.A)(l.id, l.getAvatarURL(t?.id, 80), {
+        null != l && t?.id != null && (0, _.A)(l.id, l.getAvatarURL(t?.id, 80), {
             guildId: t?.id
         })
     }, [t?.id, l]), (0, i.jsxs)(g.R, {
@@ -57,10 +57,10 @@ function y() {
             onItemSelect: function(e) {
                 if (y !== e) {
                     if (n) {
-                        (0, f.fO)({
+                        (0, S.fO)({
                             duration: 300,
                             intensity: d.n3
-                        }), S._.dispatch(b.jej.EMPHASIZE_NOTICE);
+                        }), f._.dispatch(b.jej.EMPHASIZE_NOTICE);
                         return
                     }
                     e === N.Eq.GUILD && null != t && (0, c.V2)(t.id), C.A.setState({
@@ -82,10 +82,10 @@ function y() {
             selectedGuild: t,
             onGuildChange: function(e) {
                 if (n) {
-                    (0, f.fO)({
+                    (0, S.fO)({
                         duration: 300,
                         intensity: d.n3
-                    }), S._.dispatch(b.jej.EMPHASIZE_NOTICE);
+                    }), f._.dispatch(b.jej.EMPHASIZE_NOTICE);
                     return
                 }
                 null != e && (0, c.JJ)(e.id)

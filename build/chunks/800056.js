@@ -1,6 +1,6 @@
 /** chunk id: 800056 params = (module,exports,require) **/
 n.d(t, {
-    r: () => _
+    r: () => m
 });
 var i = n(574381),
     s = n(311907),
@@ -11,7 +11,7 @@ var i = n(574381),
     d = n(430452),
     c = n(780964),
     u = n(985018);
-let _ = (0, o.zD)(c.X.STREAMING_OS_MENU_SCREEN_CAPTURE, {
+let m = (0, o.zD)(c.X.STREAMING_OS_MENU_SCREEN_CAPTURE, {
     useTitle: () => u.intl.string(u.t.lt8rRx),
     useSubtitle: () => u.intl.string(u.t.ie1mgY),
     useValue: function() {

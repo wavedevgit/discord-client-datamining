@@ -12,8 +12,8 @@ var s = n(503698),
     d = n(842130),
     c = n(985018),
     u = n(705362),
-    _ = n(473169);
-let m = e => {
+    m = n(473169);
+let _ = e => {
         let {
             header: t,
             description: n,
@@ -21,7 +21,7 @@ let m = e => {
             inModal: a
         } = e;
         return (0, i.jsxs)("div", {
-            className: l()(u.nM, _.QB, {
+            className: l()(u.nM, m.QB, {
                 [u.zE]: a
             }),
             children: [(0, i.jsx)("div", {
@@ -44,10 +44,10 @@ let m = e => {
     g = e => {
         let {
             inModal: t
-        } = e, n = (0, o.y)(c.intl.string(d.default["TCzk/e"]), c.intl.string(d.default["2OqtJJ"])), s = (0, o.y)(c.intl.string(d.default.ASf7XN), c.intl.string(d.default["82y87X"])), l = (0, o.y)(c.intl.string(d.default["0QDVFN"]), c.intl.string(d.default["1xBHHV"])), _ = c.intl.string(d.default["JvJ3P/"]), g = (0, o.y)(c.intl.string(d.default.l0ChgF), c.intl.string(d.default.S2ss5X)), A = (0, o.y)(c.intl.string(d.default.LDu4Uk), c.intl.string(d.default.fEgtLV)), x = c.intl.string(d.default["4SCALu"]), h = c.intl.string(d.default.oYf9P7), p = (0, o.y)(c.intl.string(d.default["dES/2r"]), c.intl.string(d.default.ep6mdN)), T = (0, o.y)(c.intl.string(d.default["30+sih"]), c.intl.string(d.default["0cuLn1"])), E = (0, o.y)(c.intl.string(d.default.tHTyRh), c.intl.string(d.default.TeNlMb)), S = (0, o.y)(c.intl.string(d.default.wZejZr), c.intl.string(d.default.tdgcf1));
+        } = e, n = (0, o.y)(c.intl.string(d.default["TCzk/e"]), c.intl.string(d.default["2OqtJJ"])), s = (0, o.y)(c.intl.string(d.default.ASf7XN), c.intl.string(d.default["82y87X"])), l = (0, o.y)(c.intl.string(d.default["0QDVFN"]), c.intl.string(d.default["1xBHHV"])), m = c.intl.string(d.default["JvJ3P/"]), g = (0, o.y)(c.intl.string(d.default.l0ChgF), c.intl.string(d.default.S2ss5X)), A = (0, o.y)(c.intl.string(d.default.LDu4Uk), c.intl.string(d.default.fEgtLV)), x = c.intl.string(d.default["4SCALu"]), p = c.intl.string(d.default.oYf9P7), h = (0, o.y)(c.intl.string(d.default["dES/2r"]), c.intl.string(d.default.ep6mdN)), T = (0, o.y)(c.intl.string(d.default["30+sih"]), c.intl.string(d.default["0cuLn1"])), E = (0, o.y)(c.intl.string(d.default.tHTyRh), c.intl.string(d.default.TeNlMb)), f = (0, o.y)(c.intl.string(d.default.wZejZr), c.intl.string(d.default.tdgcf1));
         return (0, i.jsxs)("div", {
-            children: [(0, i.jsx)(m, {
-                header: _,
+            children: [(0, i.jsx)(_, {
+                header: m,
                 description: g,
                 icon: (0, i.jsx)(r.$yI, {
                     size: "custom",
@@ -56,7 +56,7 @@ let m = e => {
                     color: r.LU0.colors.TEXT_STRONG.css
                 }),
                 inModal: t
-            }), (0, i.jsx)(m, {
+            }), (0, i.jsx)(_, {
                 header: c.intl.string(d.default["44NEx6"]),
                 description: A,
                 icon: (0, i.jsx)(r.Bxc, {
@@ -66,37 +66,37 @@ let m = e => {
                     color: r.LU0.colors.TEXT_STRONG.css
                 }),
                 inModal: t
-            }), (0, i.jsx)(m, {
+            }), (0, i.jsx)(_, {
                 header: x,
-                description: h,
+                description: p,
                 icon: (0, i.jsx)(a.ChatIcon, {
                     size: "md"
                 }),
                 inModal: t
-            }), (0, i.jsx)(m, {
+            }), (0, i.jsx)(_, {
                 header: c.intl.string(d.default.GNs2ZH),
                 description: c.intl.string(d.default.Ief2xc),
                 icon: (0, i.jsx)(r._jp, {
                     size: "md"
                 }),
                 inModal: t
-            }), (0, i.jsx)(m, {
+            }), (0, i.jsx)(_, {
                 header: c.intl.string(d.default.PjM3r5),
-                description: p,
+                description: h,
                 icon: (0, i.jsx)(r.BFk, {
                     size: "md"
                 }),
                 inModal: t
-            }), (0, i.jsx)(m, {
+            }), (0, i.jsx)(_, {
                 header: T,
                 description: E,
                 icon: (0, i.jsx)(a.FlagIcon, {
                     size: "md"
                 }),
                 inModal: t
-            }), (0, i.jsx)(m, {
+            }), (0, i.jsx)(_, {
                 header: c.intl.string(d.default.UCuHM8),
-                description: S,
+                description: f,
                 icon: (0, i.jsx)(a.SettingsIcon, {
                     size: "md"
                 }),
@@ -106,7 +106,7 @@ let m = e => {
                 variant: "text-xxs/bold",
                 color: "text-default",
                 children: n
-            }), (0, i.jsx)(m, {
+            }), (0, i.jsx)(_, {
                 header: s,
                 description: l,
                 icon: (0, i.jsx)(r.PGe, {

@@ -1,6 +1,6 @@
 /** chunk id: 733188 params = (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => f
 });
 var i = n(627968),
     s = n(64700),
@@ -11,13 +11,13 @@ var i = n(627968),
     d = n(963852),
     c = n(763754),
     u = n(20851),
-    _ = n(95701),
-    m = n(486020),
+    m = n(95701),
+    _ = n(486020),
     g = n(253932),
     A = n(652215),
     x = n(985018),
-    h = n(709214);
-let p = new _.nA({
+    p = n(709214);
+let h = new m.nA({
         id: "1337",
         guild_id: "1337",
         type: A.rbe.GUILD_TEXT,
@@ -39,7 +39,7 @@ function E(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [];
     return (0, o.rh)({
         ...(0, d.Ay)({
-            channelId: p.id,
+            channelId: h.id,
             content: e
         }),
         state: A.cmJ.SENT,
@@ -47,7 +47,7 @@ function E(e) {
     })
 }
 
-function S() {
+function f() {
     let e = g.hH.useSetting(),
         t = g.jW.useSetting(),
         n = s.useMemo(() => [E(x.intl.formatToPlainString(x.t.BknJRT, {}), t ? [{
@@ -77,12 +77,12 @@ function S() {
             children: [(0, i.jsx)(a.Heading, {
                 variant: "text-md/medium",
                 color: "text-muted",
-                className: h.Vf,
+                className: p.Vf,
                 children: x.intl.string(x.t.RC22qg)
             }), (0, i.jsxs)(a.IpV, {
-                className: h.VH,
+                className: p.VH,
                 children: [(0, i.jsx)("ol", {
-                    className: h.DZ,
+                    className: p.DZ,
                     style: {
                         gap: o
                     },
@@ -90,7 +90,7 @@ function S() {
                     children: n.map(t => (0, i.jsx)("li", {
                         children: (0, i.jsx)(u.A, {
                             message: t,
-                            channel: p,
+                            channel: h,
                             compact: e,
                             author: {
                                 ...(0, c.p_)(t),
@@ -99,9 +99,9 @@ function S() {
                         })
                     }, t.id))
                 }), (0, i.jsxs)("div", {
-                    className: h.Jb,
+                    className: p.Jb,
                     children: [(0, i.jsx)("div", {
-                        className: h.HD,
+                        className: p.HD,
                         children: T.map(e => {
                             let {
                                 status: t,
@@ -112,7 +112,7 @@ function S() {
                                 status: t,
                                 isMobile: s,
                                 size: a._3J.SIZE_32,
-                                src: m.Ay.getDefaultAvatarURL(void 0, n),
+                                src: _.Ay.getDefaultAvatarURL(void 0, n),
                                 "aria-label": x.intl.string(x.t.VKE5TK)
                             }, t)
                         })

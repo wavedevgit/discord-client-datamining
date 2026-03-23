@@ -1,6 +1,6 @@
 /** chunk id: 127493 params = (module,exports,require) **/
 n.d(t, {
-    Ct: () => m,
+    Ct: () => _,
     oO: () => g
 });
 var i = n(627968),
@@ -13,14 +13,14 @@ var i = n(627968),
     c = n(985018),
     u = n(150605);
 
-function _(e) {
+function m(e) {
     let {
         className: t,
         boxLayout: n,
         title: s,
         shouldLoadVideo: l,
         isReducedMotion: c,
-        startLeftAligned: _ = !1
+        startLeftAligned: m = !1
     } = e;
     return (0, i.jsxs)("div", {
         className: a()(u.boxBackdrop, t),
@@ -45,7 +45,7 @@ function _(e) {
                 }
                 return (0, i.jsx)(i.Fragment, {
                     children: e.map(e => (0, i.jsx)(o.A, {
-                        index: t + +!!_,
+                        index: t + +!!m,
                         ...e,
                         size: n,
                         shouldLoadVideo: l,
@@ -56,11 +56,11 @@ function _(e) {
         })]
     })
 }
-let m = s.memo(function(e) {
+let _ = s.memo(function(e) {
         let {
             whatsNewBoxes: t
         } = (0, d.Ay)();
-        return (0, i.jsx)(_, {
+        return (0, i.jsx)(m, {
             boxLayout: t,
             title: c.intl.string(c.t.LRmNAl),
             startLeftAligned: !0,
@@ -71,7 +71,7 @@ let m = s.memo(function(e) {
         let {
             bestOfBoxes: t
         } = (0, d.Ay)();
-        return (0, i.jsx)(_, {
+        return (0, i.jsx)(m, {
             boxLayout: t,
             title: c.intl.string(c.t.EnzW2H),
             startLeftAligned: !0,

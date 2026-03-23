@@ -11,23 +11,23 @@ var i = n(627968),
     d = n(287809),
     c = n(927578),
     u = n(536432),
-    _ = n(792348),
-    m = n(674168),
+    m = n(792348),
+    _ = n(674168),
     g = n(989799),
     A = n(69217),
     x = n(985018),
-    h = n(443669);
+    p = n(443669);
 
-function p(e) {
+function h(e) {
     let {
         onSelect: t
-    } = e, [n, a] = s.useState(!1), o = (0, l.bG)([d.default], () => d.default.getCurrentUser()), u = c.Ay.canUseCustomCallSounds(o), _ = s.useRef(null);
+    } = e, [n, a] = s.useState(!1), o = (0, l.bG)([d.default], () => d.default.getCurrentUser()), u = c.Ay.canUseCustomCallSounds(o), m = s.useRef(null);
 
-    function p(e) {
+    function h(e) {
         u && (a(!1), t?.(e))
     }
     return (0, i.jsx)(r.YNO, {
-        targetElementRef: _,
+        targetElementRef: m,
         shouldShow: n,
         position: "left",
         onRequestClose: () => a(!1),
@@ -42,15 +42,15 @@ function p(e) {
                     guildId: null,
                     channel: null,
                     onClose: t,
-                    onSelect: p,
-                    gridNotice: u ? null : (0, i.jsx)(m.m, {}),
+                    onSelect: h,
+                    gridNotice: u ? null : (0, i.jsx)(_.m, {}),
                     analyticsSource: "call sounds edit setting"
                 })
             })
         },
         children: e => (0, i.jsx)(A.dT, {
             ...e,
-            ref: _,
+            ref: m,
             onClick: () => {
                 a(!n)
             },
@@ -58,7 +58,7 @@ function p(e) {
             children: (0, i.jsx)(r.R2l, {
                 size: "md",
                 color: "currentColor",
-                className: h.Wo
+                className: p.Wo
             })
         })
     })
@@ -69,7 +69,7 @@ function T(e) {
         sound: t
     } = e, {
         previewSound: n
-    } = (0, _.A)(t, null), s = 0 === (0, u.wH)() ? x.intl.string(x.t.OASXjt) : x.intl.formatToPlainString(x.t["/8fYO5"], {
+    } = (0, m.A)(t, null), s = 0 === (0, u.wH)() ? x.intl.string(x.t.OASXjt) : x.intl.formatToPlainString(x.t["/8fYO5"], {
         emojiName: t.emojiName,
         soundName: t.name
     });
@@ -79,7 +79,7 @@ function T(e) {
         children: (0, i.jsx)(r.HKD, {
             size: "md",
             color: "currentColor",
-            className: h.wg
+            className: p.wg
         })
     })
 }
@@ -91,17 +91,17 @@ function E(e) {
         onSelect: s
     } = e, l = null != t, d = t?.emojiId, c = t?.emojiName, u = l && (null != c || null != d);
     return (0, i.jsxs)("div", {
-        className: h.D6,
+        className: p.D6,
         children: [(0, i.jsxs)("div", {
-            className: h.kL,
+            className: p.kL,
             children: [u && (0, i.jsx)(o.A, {
                 emojiId: d,
                 emojiName: c,
-                className: h.Zg
+                className: p.Zg
             }), (0, i.jsx)(r.Text, {
                 variant: "text-md/normal",
                 color: "text-strong",
-                className: h.dj,
+                className: p.dj,
                 children: null == t ? x.intl.string(x.t.PoWNfe) : n ? x.intl.format(x.t.B6HU6O, {
                     soundName: t.name,
                     subtextHook: e => (0, i.jsx)(r.Text, {
@@ -116,11 +116,11 @@ function E(e) {
             }) : (0, i.jsx)(r.HKD, {
                 size: "md",
                 color: "currentColor",
-                className: h.Gk
+                className: p.Gk
             })]
         }), (0, i.jsxs)("div", {
-            className: h.kL,
-            children: [(0, i.jsx)(p, {
+            className: p.kL,
+            children: [(0, i.jsx)(h, {
                 onSelect: s
             }), l && !n && (0, i.jsx)(A.dT, {
                 onClick: () => s(null),
@@ -128,7 +128,7 @@ function E(e) {
                 children: (0, i.jsx)(r.ucK, {
                     size: "md",
                     color: a.A.unsafe_rawColors.RED_400.css,
-                    className: h.Wo
+                    className: p.Wo
                 })
             })]
         })]

@@ -11,9 +11,9 @@ var i = n(627968),
     d = n(711014),
     c = n(253932),
     u = n(780964),
-    _ = n(985018);
+    m = n(985018);
 
-function m() {
+function _() {
     let e = c.JG.useSetting();
     return (0, s.bG)([d.Ay, o.A], () => {
         let t = new Set(e);
@@ -23,7 +23,7 @@ function m() {
 let g = {
         type: r.wF.STACKED_ICONS,
         useIcons: function() {
-            let e = m(),
+            let e = _(),
                 t = (0, s.bG)([o.A], () => e.slice(0, 2).map(e => o.A.getGuild(e)).filter(e => null != e), [e]);
             return 0 === t.length ? null : t.length >= 2 ? {
                 frontIcon: {
@@ -53,14 +53,14 @@ let g = {
     },
     A = (0, a.AK)(u.X.PROFILE_PRIVACY_TO_ACTIVITY_PRIVACY_NAVIGATOR, {
         useSubtitle: function() {
-            let e = m();
-            if (0 === e.length) return _.intl.format(_.t.QJIJ5p, {});
+            let e = _();
+            if (0 === e.length) return m.intl.format(m.t.QJIJ5p, {});
             let t = o.A.getGuild(e[0]),
                 n = t?.name ?? "",
                 i = e.length - 1;
-            return 0 === i ? _.intl.format(_.t["T+8J4A"], {
+            return 0 === i ? m.intl.format(m.t["T+8J4A"], {
                 guildName: n
-            }) : _.intl.format(_.t["3JyODQ"], {
+            }) : m.intl.format(m.t["3JyODQ"], {
                 guildName: n,
                 count: i
             })

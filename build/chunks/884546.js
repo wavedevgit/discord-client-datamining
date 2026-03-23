@@ -32,14 +32,14 @@ function c(e) {
         profilePreview: a,
         profilePreviewTitle: c,
         nameplatePreview: u,
-        stickyPreview: _ = !0
+        stickyPreview: m = !0
     } = e;
     return (0, i.jsx)("div", {
         className: l()(o.UA, n),
         children: (0, i.jsxs)("div", {
             className: l()(o.yt, s),
             children: [(0, i.jsx)("div", {
-                className: l()(o.Fp, _ && o.Oz),
+                className: l()(o.Fp, m && o.Oz),
                 children: (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(d, {
                         title: c ?? r.intl.string(r.t.Zb06yP),

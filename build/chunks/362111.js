@@ -1,6 +1,6 @@
 /** chunk id: 362111 params = (module,exports,require) **/
 n.d(t, {
-    default: () => m
+    default: () => _
 });
 var i = n(627968);
 n(64700);
@@ -13,18 +13,18 @@ var s = n(284009),
     c = n(985018),
     u = n(893659);
 
-function _(e) {
+function m(e) {
     let {
         transitionState: t,
         analyticsLocation: n,
         onClose: s,
         onAddPaymentSource: r,
-        toastContent: _,
-        initialStep: m = o.pn.PAYMENT_TYPE,
+        toastContent: m,
+        initialStep: _ = o.pn.PAYMENT_TYPE,
         overwriteSubscriptionPaymentSource: g = !1
     } = e, A = (0, d.KP)(), x = (0, d.Y)({
         paymentModalArgs: A,
-        initialStep: m,
+        initialStep: _,
         prependSteps: [],
         appendSteps: [],
         onReturn: () => {
@@ -39,7 +39,7 @@ function _(e) {
         }),
         analyticsLocation: n,
         hideBreadcrumbs: !0,
-        toastContent: _,
+        toastContent: m,
         overwriteSubscriptionPaymentSource: g
     });
     return (0, i.jsx)(a.dWK, {
@@ -57,12 +57,12 @@ function _(e) {
     })
 }
 
-function m(e) {
+function _(e) {
     return (0, i.jsx)(r.PaymentContextProvider, {
         activeSubscription: null,
         stepConfigs: [],
         skuIDs: [],
-        children: (0, i.jsx)(_, {
+        children: (0, i.jsx)(m, {
             ...e
         })
     })

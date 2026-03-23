@@ -13,13 +13,13 @@ var s = n(503698),
     d = n(688810),
     c = n(139286),
     u = n(793943),
-    _ = n(996254),
-    m = n(12901),
+    m = n(996254),
+    _ = n(12901),
     g = n(738419),
     A = n(520650),
     x = n(985018),
-    h = n(996554),
-    p = n(114149);
+    p = n(996554),
+    h = n(114149);
 
 function T(e) {
     let {
@@ -34,21 +34,21 @@ function T(e) {
             location_stack: n
         }
     });
-    let s = (0, _.X)({
+    let s = (0, m.X)({
         "en-US": A.default["f/cLEi"],
         "en-GB": A.default["f/cLEi"]
     }, A.default.CARxAC);
     return (0, i.jsxs)("div", {
-        className: l()(h.kL, t),
+        className: l()(p.kL, t),
         children: [(0, i.jsx)("div", {
-            className: h.zc,
+            className: p.zc,
             children: (0, i.jsx)("img", {
-                src: p.A,
-                className: h._e,
+                src: h.A,
+                className: p._e,
                 alt: ""
             })
         }), (0, i.jsxs)("div", {
-            className: h.P_,
+            className: p.P_,
             children: [(0, i.jsx)(o.Heading, {
                 variant: "heading-lg/semibold",
                 color: "text-strong",
@@ -58,14 +58,14 @@ function T(e) {
                 children: x.intl.string(A.default.nla4RG)
             })]
         }), (0, i.jsx)("div", {
-            className: h.UD,
+            className: p.UD,
             children: (0, i.jsx)(r.$nd, {
                 variant: "primary",
                 text: x.intl.string(x.t.uw9zI7),
                 onClick: () => {
                     (0, g.b0)(g.G8.APPEARANCE_SETTINGS), (0, u.nf)(u.HP.CUSTOM_THEME, {
                         from: u.xv.SETTING
-                    }), (0, m.default)()
+                    }), (0, _.default)()
                 }
             })
         })]
@@ -74,6 +74,6 @@ function T(e) {
 
 function E() {
     return (0, i.jsx)(T, {
-        className: h.YH
+        className: p.YH
     })
 }

@@ -12,21 +12,21 @@ var s = n(110259),
     d = n(732955),
     c = n(397927),
     u = n(212245),
-    _ = n(688810),
-    m = n(139286),
+    m = n(688810),
+    _ = n(139286),
     g = n(975571),
     A = n(498470),
     x = n(637706),
-    h = n(985018),
-    p = n(122506);
+    p = n(985018),
+    h = n(122506);
 let T = e => {
     let {
         componentId: t,
         promotionBannerMarketingComponentFields: n
     } = e, {
         analyticsLocations: T
-    } = (0, _.Ay)(), E = (0, u.p)();
-    (0, m.A)({
+    } = (0, m.Ay)(), E = (0, u.p)();
+    (0, _.A)({
         type: s.ImpressionTypes.VIEW,
         name: s.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
         properties: {
@@ -34,23 +34,23 @@ let T = e => {
             component_id: t
         }
     });
-    let S = (0, A.h)({
+    let f = (0, A.h)({
             buttonAction: n.button?.buttonAction ?? o.dz.OPEN_TIER_2_PAYMENT_MODAL,
             analyticsLocations: T,
             analyticsLocation: E.location
         }),
-        f = (0, x.a)(n.body);
+        S = (0, x.a)(n.body);
     return (0, i.jsxs)("div", {
-        className: p.kL,
+        className: h.kL,
         children: [(0, i.jsx)("div", {
-            className: p.LY,
+            className: h.LY,
             children: (0, i.jsx)("img", {
                 src: n.assetUrl,
-                className: p.ot,
+                className: h.ot,
                 alt: ""
             })
         }), (0, i.jsxs)("div", {
-            className: p.IH,
+            className: h.IH,
             children: [(0, i.jsx)(r.DZT, {
                 variant: "heading-md/semibold",
                 color: "text-strong",
@@ -58,21 +58,21 @@ let T = e => {
             }), (0, i.jsxs)(r.EYj, {
                 variant: "text-md/medium",
                 color: "text-subtle",
-                className: p.tb,
-                children: [f, "" !== n.helpArticleId && (0, i.jsxs)(i.Fragment, {
+                className: h.tb,
+                children: [S, "" !== n.helpArticleId && (0, i.jsxs)(i.Fragment, {
                     children: ["\xa0", (0, i.jsx)(c.MzZ, {
-                        className: p.$T,
+                        className: h.$T,
                         href: g.A.getArticleURL(n.helpArticleId),
-                        children: h.intl.string(h.t["sBp+u0"])
+                        children: p.intl.string(p.t["sBp+u0"])
                     })]
                 })]
             })]
         }), null != n.button && (0, i.jsx)("div", {
-            className: p.UD,
+            className: h.UD,
             children: (0, i.jsx)(d.$nd, {
                 variant: "expressive",
                 size: "md",
-                onClick: S,
+                onClick: f,
                 text: n.button.copy,
                 icon: a.NitroWheelIcon
             })

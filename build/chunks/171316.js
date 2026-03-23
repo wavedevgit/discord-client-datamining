@@ -1,15 +1,15 @@
 /** chunk id: 171316 params = (module,exports,require) **/
-n.d(e, {
-    KK: () => f,
-    NZ: () => C,
-    gr: () => E,
-    lH: () => p,
-    uM: () => G,
-    xs: () => A
+n.d(t, {
+    KK: () => v,
+    NZ: () => x,
+    gr: () => f,
+    lH: () => G,
+    uM: () => T,
+    xs: () => _
 });
-var i = n(64700),
-    l = n(311907),
-    r = n(873298),
+var l = n(64700),
+    r = n(311907),
+    i = n(873298),
     u = n(444802),
     d = n(662502),
     s = n(93857),
@@ -17,72 +17,72 @@ var i = n(64700),
     o = n(899847),
     c = n(842144),
     g = n(704724),
-    S = n(500470),
-    _ = n(834981),
-    T = n(835002);
-let A = () => {
-        let t = (0, S.x)(),
-            e = s.p7.useControlledSetting(t?.id);
-        return null == t ? null : {
+    m = n(500470),
+    C = n(834981),
+    p = n(835002);
+let _ = () => {
+        let e = (0, m.x)(),
+            t = s.p7.useControlledSetting(e?.id);
+        return null == e ? null : {
             explicitContentNonFriendDm: (0, g.J6)({
-                teenId: t?.id,
-                setting: e?.explicitContentNonFriendDm
+                teenId: e?.id,
+                setting: t?.explicitContentNonFriendDm
             }),
             explicitContentFriendDm: (0, g.J6)({
-                teenId: t?.id,
-                setting: e?.explicitContentFriendDm,
+                teenId: e?.id,
+                setting: t?.explicitContentFriendDm,
                 isFriend: !0
             }),
-            explicitContentGuilds: r.TO.BLUR
+            explicitContentGuilds: i.TO.BLUR
         }
     },
-    E = () => {
-        let t = (0, S.x)(),
-            e = s.oQ.useControlledSetting(t?.id);
-        if (null == t) return null;
+    f = () => {
+        let e = (0, m.x)(),
+            t = s.oQ.useControlledSetting(e?.id);
+        if (null == e) return null;
         let {
             goreContentNonFriendDm: n,
-            goreContentFriendDm: i
-        } = e ?? {};
+            goreContentFriendDm: l
+        } = t ?? {};
         return {
             goreContentNonFriendDm: (0, g.ky)(n) ? n : (0, u.jj)({
                 isDm: !0
             }),
-            goreContentFriendDm: (0, g.ky)(i) ? i : (0, u.jj)({
+            goreContentFriendDm: (0, g.ky)(l) ? l : (0, u.jj)({
                 isDm: !0,
                 isFriend: !0
             }),
-            goreContentGuilds: r.TO.BLUR
+            goreContentGuilds: i.TO.BLUR
         }
     },
-    f = () => {
-        let t = (0, S.x)(),
-            e = s.qz.useControlledSetting(t?.id),
-            n = s.yr.useControlledSetting(t?.id);
-        return null != n ? n : !!e || e
+    v = () => {
+        let e = (0, m.x)(),
+            t = s.qz.useControlledSetting(e?.id),
+            n = s.yr.useControlledSetting(e?.id);
+        return null != n ? n : !!t || t
     };
 
-function C() {
-    let t = (0, S.x)(),
-        e = s.up.useControlledSetting(t?.id),
-        n = i.useMemo(() => (0, a.Lx)(e), [e]);
+function x() {
+    let e = (0, m.x)(),
+        t = s.up.useControlledSetting(e?.id),
+        n = l.useMemo(() => (0, a.Lx)(t), [t]);
     return n.mutualGuilds && !n.all
 }
 
-function G() {
-    return (0, _.Du)()
+function T() {
+    return (0, C.Du)()
 }
 
-function p(t) {
-    let e, n;
+function G(e) {
+    let t, n;
     return {
-        hasConsented: (e = (0, S.k)(), (0, l.bG)([c.A], () => c.A.hasConsented(e, t))),
-        updateConsent: (n = (0, S.k)(), i.useCallback(async e => {
+        hasConsented: (t = (0, m.k)(), (0, r.bG)([c.A], () => c.A.hasConsented(t, e))),
+        updateConsent: (n = (0, m.k)(), l.useCallback(async t => {
             if (null != n) try {
-                await o.Ay.updateTeenConsents(n, e ? [t] : [], e ? [] : [t])
-            } catch (t) {
-                d.A.showFailedToast(T.OB.GENERIC_ERROR)
+                await o.Ay.updateTeenConsents(n, t ? [e] : [], t ? [] : [e])
+            } catch (e) {
+                d.A.showFailedToast(p.OB.GENERIC_ERROR)
             }
-        }, [n, t]))
+        }, [n, e]))
     }
 }

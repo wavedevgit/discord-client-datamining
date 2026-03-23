@@ -11,31 +11,31 @@ var i = n(627968),
     d = n(421380),
     c = n(397927),
     u = n(827343),
-    _ = n(77729),
-    m = n(839214),
+    m = n(77729),
+    _ = n(839214),
     g = n(98919),
     A = n(487329),
     x = n(419954),
-    h = n(430452),
-    p = n(353835),
+    p = n(430452),
+    h = n(353835),
     T = n(780964),
     E = n(652215),
-    S = n(731854),
-    f = n(985018);
-let C = (0, m.D)(() => ({
+    f = n(731854),
+    S = n(985018);
+let C = (0, _.D)(() => ({
     isUploading: !1,
     isDisabled: !1
 }));
 async function b() {
-    let e = await _.A.fileManager.getLogPath();
-    _.A.fileManager.showItemInFolder(e)
+    let e = await m.A.fileManager.getLogPath();
+    m.A.fileManager.showItemInFolder(e)
 }
 
 function N(e) {
     (0, o.A)({
-        title: f.intl.string(f.t["7UXEF2"]),
-        subtitle: f.intl.string(f.t.IYPrRl),
-        confirmText: f.intl.string(f.t.BddRzS),
+        title: S.intl.string(S.t["7UXEF2"]),
+        subtitle: S.intl.string(S.t.IYPrRl),
+        confirmText: S.intl.string(S.t.BddRzS),
         onConfirm: () => u.A.setDebugLogging(e)
     })
 }
@@ -47,23 +47,23 @@ async function I(e) {
     t?.();
     try {
         let e, t;
-        await h.Ay.getMediaEngine().writeAudioDebugState(), await p.A.submitLiveCrashReport({
+        await p.Ay.getMediaEngine().writeAudioDebugState(), await h.A.submitLiveCrashReport({
             message: {
                 message: "User Live Dump"
             }
-        }), await (0, g.a)(E.Umv.RTC), e = f.intl.string(f.t["fKBB8+"]), t = f.intl.string(f.t.BvyxE7), (0, r.A)({
+        }), await (0, g.a)(E.Umv.RTC), e = S.intl.string(S.t["fKBB8+"]), t = S.intl.string(S.t.BvyxE7), (0, r.A)({
             title: e,
             subtitle: t
         })
     } catch (a) {
         var s;
         let e, t, n, l;
-        s = a.displayMessage, e = f.intl.string(f.t.QZg0J7), t = s ?? f.intl.string(f.t.VzHcSm), n = (0, A.B1)(A.iy.DEBUG_LOG_UPLOAD_FAILED)?.errorCode, l = f.intl.formatToPlainString(f.t.ejOT95, {
+        s = a.displayMessage, e = S.intl.string(S.t.QZg0J7), t = s ?? S.intl.string(S.t.VzHcSm), n = (0, A.B1)(A.iy.DEBUG_LOG_UPLOAD_FAILED)?.errorCode, l = S.intl.formatToPlainString(S.t.ejOT95, {
             errorCode: n
         }), (0, c.qfG)(n => (0, i.jsx)(c.VoidConfirmModal, {
             header: e,
             confirmButtonColor: d.$n.Colors.BRAND,
-            confirmText: f.intl.string(f.t.BddRzS),
+            confirmText: S.intl.string(S.t.BddRzS),
             ...n,
             children: (0, i.jsxs)("div", {
                 style: {
@@ -100,13 +100,13 @@ async function v() {
     })
 }
 let j = (0, x.E2)(T.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
-    useSearchTerms: () => [f.intl.string(f.t["726JHL"]), f.intl.string(f.t.EbwFfR), f.intl.string(f.t.nuPtYi)],
+    useSearchTerms: () => [S.intl.string(S.t["726JHL"]), S.intl.string(S.t.EbwFfR), S.intl.string(S.t.nuPtYi)],
     usePredicate: function() {
-        let e = (0, a.bG)([h.Ay], () => h.Ay.supports(S.O5.DEBUG_LOGGING));
-        return l.Av && e && null != _.A.fileManager.readLogFiles
+        let e = (0, a.bG)([p.Ay], () => p.Ay.supports(f.O5.DEBUG_LOGGING));
+        return l.Av && e && null != m.A.fileManager.readLogFiles
     },
     Component: function() {
-        let e = (0, a.bG)([h.Ay], () => h.Ay.getDebugLogging()),
+        let e = (0, a.bG)([p.Ay], () => p.Ay.getDebugLogging()),
             t = C.useField("isUploading"),
             n = C.useField("isDisabled"),
             l = s.useId();
@@ -114,13 +114,13 @@ let j = (0, x.E2)(T.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
             children: [(0, i.jsx)(c.AC4, {
                 tag: "legend",
                 id: l,
-                children: f.intl.string(f.t["FjN+et"])
+                children: S.intl.string(S.t["FjN+et"])
             }), (0, i.jsxs)(c.BJc, {
                 direction: "vertical",
                 gap: 4,
                 children: [(0, i.jsx)(c.dOG, {
-                    label: f.intl.string(f.t["726JHL"]),
-                    description: f.intl.string(f.t["/7ak9Q"]),
+                    label: S.intl.string(S.t["726JHL"]),
+                    description: S.intl.string(S.t["/7ak9Q"]),
                     checked: e,
                     onChange: N
                 }), (0, i.jsx)("div", {
@@ -129,16 +129,16 @@ let j = (0, x.E2)(T.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
                     children: (0, i.jsxs)(c.ButtonGroup, {
                         children: [(0, i.jsx)(c.Button, {
                             variant: "secondary",
-                            text: f.intl.string(f.t.EbwFfR),
+                            text: S.intl.string(S.t.EbwFfR),
                             onClick: v,
                             loading: t,
                             disabled: n,
-                            "aria-label": f.intl.string(f.t.aY1OH2)
+                            "aria-label": S.intl.string(S.t.aY1OH2)
                         }), (0, i.jsx)(c.Button, {
                             variant: "secondary",
-                            text: f.intl.string(f.t.nuPtYi),
+                            text: S.intl.string(S.t.nuPtYi),
                             onClick: b,
-                            "aria-label": f.intl.string(f.t["L/hFOe"])
+                            "aria-label": S.intl.string(S.t["L/hFOe"])
                         })]
                     })
                 })]

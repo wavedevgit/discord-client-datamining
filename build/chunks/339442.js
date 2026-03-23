@@ -1,6 +1,6 @@
 /** chunk id: 339442 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => m
 });
 var i = n(627968);
 n(64700);
@@ -13,7 +13,7 @@ var s = n(397927),
     c = n(985018),
     u = n(93448);
 
-function _(e) {
+function m(e) {
     let t = (0, l.L)(d.PremiumTypes.TIER_2);
     return (0, i.jsxs)(a.A, {
         errors: e.errors,

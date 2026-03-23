@@ -1,6 +1,6 @@
 /** chunk id: 116041 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => p
 });
 var i = n(627968),
     s = n(64700),
@@ -11,21 +11,21 @@ var i = n(627968),
     d = n(587600),
     c = n(207803),
     u = n(836602),
-    _ = n(624826),
-    m = n(253932),
+    m = n(624826),
+    _ = n(253932),
     g = n(127870),
     A = n(828578),
     x = n(985018);
 
-function h() {
+function p() {
     let {
         canSubmit: e,
         errors: t
     } = (0, l.cf)([u.A], () => ({
         canSubmit: u.A.canSubmit(),
         errors: u.A.getErrors()
-    })), [n, h] = s.useState(!1), p = s.useMemo(() => Object.keys(t ?? {}).length > 0 ? x.intl.string(x.t["84MExs"]) : null, [t]), T = s.useCallback(async () => {
-        h(!0);
+    })), [n, p] = s.useState(!1), h = s.useMemo(() => Object.keys(t ?? {}).length > 0 ? x.intl.string(x.t["84MExs"]) : null, [t]), T = s.useCallback(async () => {
+        p(!0);
         let e = u.A.getPendingChanges(),
             t = (0, d.Sk)(e),
             n = (0, d.yX)(e),
@@ -35,7 +35,7 @@ function h() {
             let n = await (0, r._L)(t);
             if (s = s && (n?.ok ?? !1), n?.ok) {
                 let i = n.body;
-                void 0 !== e.pendingAvatar && (0, _.t)({
+                void 0 !== e.pendingAvatar && (0, m.t)({
                     avatarHash: i.avatar,
                     avatarId: t.avatarId,
                     avatarAssetOrigin: e.pendingAvatar?.assetOrigin
@@ -47,7 +47,7 @@ function h() {
             s = s && (e?.ok ?? !1), e?.ok ? (0, c.RE)() : (0, g.m)()
         }
         if (void 0 !== e.pendingLegacyUsernameDisabled) try {
-            await m.m$.updateSetting(e.pendingLegacyUsernameDisabled), (0, r._e)()
+            await _.m$.updateSetting(e.pendingLegacyUsernameDisabled), (0, r._e)()
         } catch {
             (0, g.m)(), s = !1
         }
@@ -60,7 +60,7 @@ function h() {
                 s = s && (t?.ok ?? !1), t?.ok ? (0, r.fw)() : (0, g.m)()
             }
         }
-        s && (0, r.x8)(), h(!1)
+        s && (0, r.x8)(), p(!1)
     }, []), E = s.useCallback(() => {
         (0, r.IM)()
     }, []);
@@ -69,6 +69,6 @@ function h() {
         onSave: T,
         onReset: E,
         disabled: !e,
-        errorMessage: p ?? void 0
+        errorMessage: h ?? void 0
     })
 }

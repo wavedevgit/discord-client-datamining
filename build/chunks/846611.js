@@ -23,7 +23,7 @@ function u() {
             children: o.m.map((s, o) => {
                 let d = e === o,
                     u = n === o,
-                    _ = d || u ? "text-strong" : "text-muted";
+                    m = d || u ? "text-strong" : "text-muted";
                 return (0, i.jsxs)(r.DUT, {
                     tag: "li",
                     className: a()(c.Aw, {
@@ -36,7 +36,7 @@ function u() {
                         className: c.k7,
                         children: [(0, i.jsx)(r.Text, {
                             className: c.b1,
-                            color: _,
+                            color: m,
                             variant: "heading-md/semibold",
                             tag: "span",
                             children: s.getQuestion()

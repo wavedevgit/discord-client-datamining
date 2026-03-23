@@ -1,6 +1,6 @@
 /** chunk id: 568031 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => m
 });
 var i = n(627968);
 n(64700);
@@ -12,16 +12,16 @@ var s = n(503698),
     d = n(985018),
     c = n(571816),
     u = n(182645);
-let _ = e => {
+let m = e => {
     let {
         className: t,
         location: n,
         analyticsLocation: s
     } = e, {
-        analyticsLocations: _
+        analyticsLocations: m
     } = (0, r.Ay)(n);
     return (0, i.jsx)(r.f5, {
-        value: _,
+        value: m,
         children: (0, i.jsxs)(a.hLv, {
             className: l()(c.kL, c.pm, t),
             color: "purple",

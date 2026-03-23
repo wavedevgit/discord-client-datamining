@@ -23,7 +23,7 @@ let u = (0, a.zD)(o.X.STREAMER_MODE_HIDE_PERSONAL_INFORMATION, {
             hidePersonalInformation: e
         })
     }),
-    _ = (0, a.zD)(o.X.STREAMER_MODE_HIDE_INVITE_LINKS, {
+    m = (0, a.zD)(o.X.STREAMER_MODE_HIDE_INVITE_LINKS, {
         useTitle: () => c.intl.string(c.t.uWBOri),
         useValue: () => (0, i.bG)([r.A], () => {
             let {
@@ -35,7 +35,7 @@ let u = (0, a.zD)(o.X.STREAMER_MODE_HIDE_PERSONAL_INFORMATION, {
             hideInstantInvites: e
         })
     }),
-    m = (0, a.zD)(o.X.STREAMER_MODE_DISABLE_SOUNDS, {
+    _ = (0, a.zD)(o.X.STREAMER_MODE_DISABLE_SOUNDS, {
         useTitle: () => c.intl.string(c.t.OrqYDP),
         useValue: () => (0, i.bG)([r.A], () => {
             let {
@@ -76,5 +76,5 @@ let u = (0, a.zD)(o.X.STREAMER_MODE_HIDE_PERSONAL_INFORMATION, {
     x = (0, a.FW)(o.X.STREAMER_MODE_OPTIONS_LIST, {
         variant: "compact",
         useTitle: () => (0, d.bp)("StreamerModeOptions") ? c.intl.string(c.t.xYhOEh) : c.intl.string(c.t.UtW8R6),
-        buildLayout: () => [u, _, m, g, A]
+        buildLayout: () => [u, m, _, g, A]
     })

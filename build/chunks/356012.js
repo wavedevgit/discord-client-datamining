@@ -1,6 +1,6 @@
 /** chunk id: 356012 params = (module,exports,require) **/
 n.d(t, {
-    C: () => _
+    C: () => m
 });
 var i = n(419117),
     s = n(419954),
@@ -11,7 +11,7 @@ var i = n(419117),
     d = n(790337),
     c = n(800056),
     u = n(985018);
-let _ = (0, s.bd)(l.X.STREAMING_ADVANCED_ACCORDION, {
+let m = (0, s.bd)(l.X.STREAMING_ADVANCED_ACCORDION, {
     useTitle: e => e ? u.intl.string(u.t.qrMyvm) : u.intl.string(u.t.LEtTNl),
     useCollapsedSubtitle: () => (0, i.A)(l.X.STREAMING_ADVANCED_ACCORDION),
     buildLayout: () => [o.n, d.K, c.r, r.L, a.S]

@@ -1,6 +1,6 @@
 /** chunk id: 65884 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => m
 });
 var i = n(627968);
 n(64700);
@@ -82,7 +82,7 @@ function u(e) {
     })
 }
 
-function _(e) {
+function m(e) {
     let {
         shouldRenderOwnedTeamsModal: t,
         shouldRenderOwnedGuildsModal: n,
@@ -90,16 +90,16 @@ function _(e) {
         shouldRenderDisableAccountErrorModal: l,
         disableAccountErrorMessage: a,
         onOwnedTeamsWarningModalClose: r,
-        onOwnedGuildsWarningModalClose: _,
-        onDeleteAccountConfirmModalClose: m,
+        onOwnedGuildsWarningModalClose: m,
+        onDeleteAccountConfirmModalClose: _,
         onDisableAccountErrorModalClose: g
     } = e;
     return t ? (0, i.jsx)(o, {
         onClose: r
     }) : n ? (0, i.jsx)(d, {
-        onClose: _
-    }) : s ? (0, i.jsx)(c, {
         onClose: m
+    }) : s ? (0, i.jsx)(c, {
+        onClose: _
     }) : l ? (0, i.jsx)(u, {
         onClose: g,
         errorMessage: a

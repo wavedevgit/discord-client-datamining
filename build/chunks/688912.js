@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(873298),
-    l = n(86689),
-    a = n(639383),
+    l = n(562783),
+    a = n(290389),
     r = n(704724),
     o = n(171316),
     d = n(500470),
@@ -27,21 +27,21 @@ function u() {
             (0, r.Jz)(e, t)
         },
         {
-            explicitContentFriendDm: _,
-            explicitContentNonFriendDm: m
+            explicitContentFriendDm: m,
+            explicitContentNonFriendDm: _
         } = t;
     return (0, i.jsxs)(l.E, {
         description: c.intl.string(c.t.Wnojv1),
         children: [(0, i.jsx)(a.A, {
             title: c.intl.string(c.t["+uI23H"]),
-            value: _,
+            value: m,
             onChange: e => u({
                 explicitContentFriendDm: e
             }),
             options: n
         }), (0, i.jsx)(a.A, {
             title: c.intl.string(c.t["Yh+HX1"]),
-            value: m,
+            value: _,
             onChange: e => u({
                 explicitContentNonFriendDm: e
             }),

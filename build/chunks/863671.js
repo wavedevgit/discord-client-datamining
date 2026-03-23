@@ -1,6 +1,6 @@
 /** chunk id: 863671 params = (module,exports,require) **/
 n.d(t, {
-    $: () => h,
+    $: () => p,
     C: () => x
 });
 var i = n(64700),
@@ -12,11 +12,11 @@ var i = n(64700),
     d = n(780964),
     c = n(358776),
     u = n(102255),
-    _ = n(119695),
-    m = n(766761),
+    m = n(119695),
+    _ = n(766761),
     g = n(985018);
 let A = (0, r.zZ)(d.X.SESSIONS_CATEGORY, {
-        buildLayout: () => [_.I, m.A],
+        buildLayout: () => [m.I, _.A],
         initialize: () => ((0, a.GY)(), () => {
             (0, a.ZQ)()
         }),
@@ -32,7 +32,7 @@ let A = (0, r.zZ)(d.X.SESSIONS_CATEGORY, {
         hideInStreamerMode: !0,
         buildLayout: () => [A]
     }),
-    h = (0, r.i4)(d.X.SESSIONS_SIDEBAR_ITEM, {
+    p = (0, r.i4)(d.X.SESSIONS_SIDEBAR_ITEM, {
         useTitle: () => g.intl.string(g.t["+1h0k/"]),
         icon: s.LaptopPhoneIcon,
         getDismissibleBadges: function() {

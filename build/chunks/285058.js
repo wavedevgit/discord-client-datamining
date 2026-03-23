@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(743790),
     c = n(10077),
     u = n(652215),
-    _ = n(536482),
-    m = n(985018),
+    m = n(536482),
+    _ = n(985018),
     g = n(185316);
 
 function A(e) {
@@ -36,7 +36,7 @@ function A(e) {
             className: g.QH,
             children: (0, i.jsx)(a.dOG, {
                 label: t.name,
-                description: m.intl.format(m.t.zRl6XR, {
+                description: _.intl.format(_.t.zRl6XR, {
                     count: o ?? 0
                 }),
                 checked: !n,
@@ -57,11 +57,11 @@ let x = function() {
         setSortOrder: r,
         hasActivityRestrictedGuilds: d,
         onToggleAllActivityRestrictedGuilds: x,
-        onToggleActivityRestrictedGuild: h,
-        isActivityRestricted: p,
+        onToggleActivityRestrictedGuild: p,
+        isActivityRestricted: h,
         numActivityRestrictedGuilds: T,
         numTotalGuilds: E
-    } = (0, c.M)(), S = (0, s.useId)();
+    } = (0, c.M)(), f = (0, s.useId)();
     return (0, i.jsxs)("div", {
         className: g.iE,
         children: [(0, i.jsxs)("div", {
@@ -89,32 +89,32 @@ let x = function() {
                     activity_restricted_guild_count: T,
                     total_guild_count: E
                 }),
-                placeholder: m.intl.string(m.t["H+nRYw"]),
-                "aria-label": m.intl.string(m.t["5h0QOP"]),
+                placeholder: _.intl.string(_.t["H+nRYw"]),
+                "aria-label": _.intl.string(_.t["5h0QOP"]),
                 inputProps: {
-                    "aria-controls": S,
+                    "aria-controls": f,
                     "aria-expanded": !0
                 }
             }), e.length > 0 && (0, i.jsxs)("div", {
                 className: g.gO,
                 children: [(0, i.jsx)(a.l6P, {
-                    label: m.intl.string(m.t.LxVjvJ),
+                    label: _.intl.string(_.t.LxVjvJ),
                     hideLabel: !0,
                     options: [{
                         id: c.c.SERVER_ORDER,
-                        label: m.intl.string(m.t.STMPJ2),
+                        label: _.intl.string(_.t.STMPJ2),
                         value: c.c.SERVER_ORDER
                     }, {
                         id: c.c.RECENTLY_JOINED,
-                        label: m.intl.string(m.t.CbaapP),
+                        label: _.intl.string(_.t.CbaapP),
                         value: c.c.RECENTLY_JOINED
                     }, {
                         id: c.c.ACTIVITY_SHARING_ON,
-                        label: m.intl.string(_.default.ZI51JZ),
+                        label: _.intl.string(m.default.ZI51JZ),
                         value: c.c.ACTIVITY_SHARING_ON
                     }, {
                         id: c.c.ACTIVITY_SHARING_OFF,
-                        label: m.intl.string(_.default["+kxafn"]),
+                        label: _.intl.string(m.default["+kxafn"]),
                         value: c.c.ACTIVITY_SHARING_OFF
                     }],
                     onSelectionChange: e => {
@@ -130,30 +130,30 @@ let x = function() {
                 }), (0, i.jsx)(a.QWc, {
                     variant: "primary",
                     onClick: x,
-                    text: d ? m.intl.string(m.t["7lxcLO"]) : m.intl.string(m.t.zh6UEs)
+                    text: d ? _.intl.string(_.t["7lxcLO"]) : _.intl.string(_.t.zh6UEs)
                 })]
             })]
         }), (0, i.jsx)(a.AC4, {
             "aria-live": "polite",
             role: "region",
-            children: m.intl.format(_.default.EvzDff, {
+            children: _.intl.format(m.default.EvzDff, {
                 count: e.length
             })
         }), (0, i.jsxs)("ul", {
             className: g.X1,
-            id: S,
-            "aria-label": m.intl.string(m.t["7hB4kg"]),
+            id: f,
+            "aria-label": _.intl.string(_.t["7hB4kg"]),
             children: [0 === e.length && (0, i.jsx)("div", {
                 className: g.pb,
                 children: (0, i.jsx)(a.Text, {
                     className: g.R$,
                     variant: "text-lg/medium",
-                    children: m.intl.string(m.t["Xe+fJM"])
+                    children: _.intl.string(_.t["Xe+fJM"])
                 })
             }), e.map(e => (0, i.jsx)(A, {
                 guild: e,
-                isActivityRestricted: p(e.id),
-                onToggleActivityRestrictedGuild: h
+                isActivityRestricted: h(e.id),
+                onToggleActivityRestrictedGuild: p
             }, e.id))]
         })]
     })

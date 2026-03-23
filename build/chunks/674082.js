@@ -1,6 +1,6 @@
 /** chunk id: 674082 params = (module,exports,require) **/
 n.d(t, {
-    Y: () => _
+    Y: () => m
 });
 var i = n(311907),
     s = n(419954),
@@ -11,7 +11,7 @@ var i = n(311907),
     d = n(276221),
     c = n(652215),
     u = n(985018);
-let _ = (0, s.zZ)(r.X.CONTENT_AND_SOCIAL_RESTRICTED_USERS_CATEGORY, {
+let m = (0, s.zZ)(r.X.CONTENT_AND_SOCIAL_RESTRICTED_USERS_CATEGORY, {
     useTitle: () => u.intl.string(u.t.LVwR56),
     useSubtitle: () => u.intl.format(u.t["0aNQo9"], {
         helpArticle: a.A.getArticleURL(c.MVz.STEALTH_REMEDIATION_FEATURE_GUIDE)

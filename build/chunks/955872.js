@@ -11,17 +11,17 @@ var i = n(627968),
     d = n(397927),
     c = n(73153),
     u = n(631670),
-    _ = n(974544),
-    m = n(793574),
+    m = n(974544),
+    _ = n(793574),
     g = n(688810),
     A = n(429619),
     x = n(451909),
-    h = n(550111),
-    p = n(202639),
+    p = n(550111),
+    h = n(202639),
     T = n(407217),
     E = n(919395),
-    S = n(884546),
-    f = n(287070),
+    f = n(884546),
+    S = n(287070),
     C = n(196291),
     b = n(101058),
     N = n(836602),
@@ -29,11 +29,11 @@ var i = n(627968),
     v = n(351906),
     j = n(287809),
     y = n(954571),
-    R = n(927578),
-    O = n(606532),
+    O = n(927578),
+    R = n(606532),
     L = n(161290),
-    D = n(652215),
-    P = n(985018),
+    P = n(652215),
+    D = n(985018),
     M = n(166378);
 
 function G() {
@@ -46,44 +46,44 @@ function G() {
             pendingBio: n,
             pendingAvatar: l,
             pendingNameplate: G,
-            showNotice: U,
-            ...k
+            showNotice: k,
+            ...U
         } = (0, r.cf)([N.A], () => ({
             ...N.A.getPendingChanges(),
             showNotice: N.A.showNotice()
         })),
-        V = (0, b.V7)({
+        w = (0, b.V7)({
             userId: e.id,
             image: l
         }),
-        w = (0, E.lw)({
+        V = (0, E.lw)({
             pendingValue: G,
             userValue: e?.collectibles?.nameplate
         }),
         B = (0, I.A)() && null != n ? x.Ay.parse(void 0, n).content : n,
-        H = R.Ay.canUsePremiumProfileCustomization(e),
+        H = O.Ay.canUsePremiumProfileCustomization(e),
         {
             analyticsLocations: F,
             newestAnalyticsLocation: Y
-        } = (0, g.Ay)(m.A.USER_SETTINGS_USER_PROFILE);
+        } = (0, g.Ay)(_.A.USER_SETTINGS_USER_PROFILE);
     s.useEffect(() => () => c.h.wait(u.IM), []);
     let [z, X] = s.useState(!1), W = !H, K = s.useRef(null);
-    return t ? (0, i.jsx)(_.A, {}) : (0, i.jsxs)(g.f5, {
+    return t ? (0, i.jsx)(m.A, {}) : (0, i.jsxs)(g.f5, {
         value: F,
-        children: [(0, i.jsx)(A.A, {}), (0, i.jsx)(S.A, {
-            profilePreview: (0, i.jsx)(f.A, {
+        children: [(0, i.jsx)(A.A, {}), (0, i.jsx)(f.A, {
+            profilePreview: (0, i.jsx)(S.A, {
                 user: e,
                 canUsePremiumCustomization: H,
-                onUpsellClick: O.A,
+                onUpsellClick: R.A,
                 pendingBio: B,
-                ...k,
-                pendingAvatar: V
+                ...U,
+                pendingAvatar: w
             }),
-            nameplatePreview: (0, i.jsx)(h.A, {
+            nameplatePreview: (0, i.jsx)(p.A, {
                 user: e,
-                nameplate: w,
-                ...k,
-                className: null == w ? M.tJ : void 0,
+                nameplate: V,
+                ...U,
+                className: null == V ? M.tJ : void 0,
                 isHighlighted: !0
             }),
             children: (0, i.jsx)(L.A, {})
@@ -100,10 +100,10 @@ function G() {
                     isVisible: z
                 })
             })
-        }), W && !U && (0, i.jsx)(p.d, {
+        }), W && !k && (0, i.jsx)(h.d, {
             className: M.EL,
             showUpsell: !z,
-            text: P.intl.format(P.t.TmfgI2, {
+            text: D.intl.format(D.t.TmfgI2, {
                 onClick: () => (0, T.K)({
                     analyticsSource: Y
                 })
@@ -115,13 +115,13 @@ function G() {
                 children: (0, i.jsx)(d.Button, {
                     variant: "overlay-primary",
                     onClick: () => {
-                        y.default.track(D.HAw.TRY_IT_OUT_PRESET_CLICKED, {
+                        y.default.track(P.HAw.TRY_IT_OUT_PRESET_CLICKED, {
                             cta_variant: "floating_action_button"
                         }), K?.current?.scrollIntoView({
                             behavior: "smooth"
                         })
                     },
-                    text: P.intl.string(P.t.uw9zI7),
+                    text: D.intl.string(D.t.uw9zI7),
                     icon: d.tvc
                 })
             })

@@ -1,6 +1,6 @@
 /** chunk id: 612533 params = (module,exports,require) **/
 n.d(t, {
-    G: () => _
+    G: () => m
 });
 var i = n(419954),
     s = n(780964),
@@ -11,7 +11,7 @@ var i = n(419954),
     d = n(286480),
     c = n(749253),
     u = n(816226);
-let _ = (0, i.zZ)(s.X.DESIGN_TOOLS, {
+let m = (0, i.zZ)(s.X.DESIGN_TOOLS, {
     useTitle: () => "Design & A11y Tools",
     useSearchTerms: () => ["accessibility tools"],
     buildLayout: () => [a.g, c.V, d.q, u.u, r.g, o.H, l.K]

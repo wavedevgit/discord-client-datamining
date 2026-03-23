@@ -1,6 +1,6 @@
 /** chunk id: 692964 params = (module,exports,require) **/
 n.d(t, {
-    I: () => _
+    I: () => m
 });
 var i = n(627968),
     s = n(873298),
@@ -11,7 +11,7 @@ var i = n(627968),
     d = n(253932),
     c = n(780964),
     u = n(985018);
-let _ = (0, r.Qx)(c.X.PROFILE_PRIVACY_SETTING, {
+let m = (0, r.Qx)(c.X.PROFILE_PRIVACY_SETTING, {
     useTitle: () => u.intl.string(u.t.Qnf32C),
     useOptions: () => [{
         name: u.intl.string(u.t.Boxc8R),

@@ -1,6 +1,6 @@
 /** chunk id: 939724 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => m
 });
 var i = n(627968);
 n(64700);
@@ -12,7 +12,7 @@ var s = n(503698),
     d = n(496431),
     c = n(985018),
     u = n(338422);
-let _ = e => {
+let m = e => {
     let {
         expiresAt: t,
         className: n
@@ -20,17 +20,17 @@ let _ = e => {
     if (null == s) return null;
     let {
         days: a,
-        hours: _,
-        minutes: m,
+        hours: m,
+        minutes: _,
         seconds: g
     } = s, A = [{
         unitValue: a,
         unitType: "days"
     }, {
-        unitValue: _,
+        unitValue: m,
         unitType: "hours"
     }, {
-        unitValue: m,
+        unitValue: _,
         unitType: "minutes"
     }, {
         unitValue: g,

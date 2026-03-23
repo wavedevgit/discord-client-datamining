@@ -17,19 +17,19 @@ function c(t) {
         channel: i,
         onAction: c,
         variant: m = "primary"
-    } = t, A = (0, o.u)(e, i, "useRequestToStreamButton"), p = (0, r.bG)([a.A], () => a.A.getVoiceChannelId() === i.id, [i.id]);
-    if (null == A) return null;
+    } = t, p = (0, o.u)(e, i, "useRequestToStreamButton"), A = (0, r.bG)([a.A], () => a.A.getVoiceChannelId() === i.id, [i.id]);
+    if (null == p) return null;
     let h = (0, n.jsx)(l.$nd, {
         text: u.intl.string(d.default.DKHhec),
         variant: m,
         size: "sm",
         onClick: () => {
-            A.handleRequestToStream("request to stream button"), c?.()
+            p.handleRequestToStream("request to stream button"), c?.()
         },
         fullWidth: !0,
-        disabled: !p
+        disabled: !A
     });
-    return p ? h : (0, n.jsx)(s.m, {
+    return A ? h : (0, n.jsx)(s.m, {
         position: "top",
         text: u.intl.string(d.default.qRXats),
         asContainer: !0,

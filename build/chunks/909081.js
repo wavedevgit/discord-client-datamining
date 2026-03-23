@@ -11,14 +11,14 @@ var i = n(627968),
     d = n(780964),
     c = n(612714),
     u = n(548018),
-    _ = n(32096),
-    m = n(545214),
+    m = n(32096),
+    _ = n(545214),
     g = n(985018);
 let A = (0, l.E2)(d.X.ACCOUNT_SMS_BACKUP_AUTHENTICATION_SETTING, {
     useSearchTerms: () => [g.intl.string(g.t.uHAJ5v)],
     usePredicate: function() {
-        let e = (0, _.b)(),
-            t = (0, m.A)(),
+        let e = (0, m.b)(),
+            t = (0, _.A)(),
             n = (0, u.f)(),
             i = (0, s.bG)([a.default], () => a.default.hasTOTPEnabled());
         return !e && !t && n && i

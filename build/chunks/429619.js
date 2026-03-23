@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(954571),
     c = n(979286),
     u = n(492499),
-    _ = n(652215),
-    m = n(788868),
+    m = n(652215),
+    _ = n(788868),
     g = n(985018),
     A = n(844551);
 let x = () => {
@@ -21,14 +21,14 @@ let x = () => {
     } = (0, r.Ay)(a.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL), t = s.useRef(null), {
         asset: n,
         popoutAsset: x,
-        title: h,
-        body: p,
+        title: p,
+        body: h,
         version: T,
         revertTextColor: E
-    } = (0, u.M)(), S = s.useContext(o.gl), f = S?.navigateWithValidation ?? (e => e());
+    } = (0, u.M)(), f = s.useContext(o.gl), S = f?.navigateWithValidation ?? (e => e());
     return s.useEffect(() => {
-        d.default.track(_.HAw.PREMIUM_UPSELL_VIEWED, {
-            type: m.e.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
+        d.default.track(m.HAw.PREMIUM_UPSELL_VIEWED, {
+            type: _.e.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
             location_stack: e,
             version: T
         })
@@ -53,15 +53,15 @@ let x = () => {
                 variant: "heading-lg/extrabold",
                 color: E ? "text-overlay-dark" : "currentColor",
                 className: A.DD,
-                children: h
+                children: p
             }), (0, i.jsx)(l.Text, {
                 variant: "text-sm/normal",
                 color: E ? "text-overlay-dark" : "currentColor",
-                children: p
+                children: h
             })]
         }), (0, i.jsx)(l.Button, {
             onClick: () => {
-                f(() => (0, c.Cz)({
+                S(() => (0, c.Cz)({
                     analyticsLocations: e,
                     analyticsSource: a.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL
                 }))

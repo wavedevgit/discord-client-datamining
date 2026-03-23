@@ -17,24 +17,24 @@ function o(e) {
         useSubtitle: d,
         useVariant: c,
         useDisabled: u,
-        onClick: _
-    } = t, [m, g] = s.useState(!1), A = (0, a.q)(t), x = o(), h = d?.(), p = n(), T = c?.(), E = u?.();
+        onClick: m
+    } = t, [_, g] = s.useState(!1), A = (0, a.q)(t), x = o(), p = d?.(), h = n(), T = c?.(), E = u?.();
     return (0, i.jsx)(r.L, {
         children: (0, i.jsx)(l.D0$, {
             label: x,
-            description: h,
+            description: p,
             disabled: E,
             layout: "horizontal",
             children: (0, i.jsx)(l.Button, {
                 onClick: () => {
                     A();
-                    let e = _();
+                    let e = m();
                     e instanceof Promise && (g(!0), e.finally(() => g(!1)))
                 },
-                text: p,
+                text: h,
                 variant: T,
                 disabled: E,
-                loading: m
+                loading: _
             })
         })
     })

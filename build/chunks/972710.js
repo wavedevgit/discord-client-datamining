@@ -1,6 +1,6 @@
 /** chunk id: 972710 params = (module,exports,require) **/
 n.d(t, {
-    C: () => R
+    C: () => O
 });
 var i = n(627968),
     s = n(64700),
@@ -11,17 +11,17 @@ var i = n(627968),
     d = n(607399),
     c = n(158954),
     u = n(311907),
-    _ = n(397927),
-    m = n(384904),
+    m = n(397927),
+    _ = n(384904),
     g = n(793574),
     A = n(688810),
     x = n(701273),
-    h = n(780964),
-    p = n(840065),
+    p = n(780964),
+    h = n(840065),
     T = n(287809),
     E = n(954571),
-    S = n(927578),
-    f = n(866312),
+    f = n(927578),
+    S = n(866312),
     C = n(327479),
     b = n(652215),
     N = n(601107),
@@ -45,10 +45,10 @@ let j = [b.Dmq.PAST_DUE, b.Dmq.ACCOUNT_HOLD, b.Dmq.BILLING_RETRY],
         let A = async () => {
             d(!0), g(!1);
             try {
-                await (0, m.M2)(l.id, a, r), E.default.track(b.HAw.GUILD_BOOST_PAST_DUE_CANCELLATION_FLOW_COMPLETED, {
+                await (0, _.M2)(l.id, a, r), E.default.track(b.HAw.GUILD_BOOST_PAST_DUE_CANCELLATION_FLOW_COMPLETED, {
                     subscription_id: l.id,
                     location_stack: a
-                }), (0, m.hP)(), n()
+                }), (0, _.hP)(), n()
             } catch (e) {
                 g(!0), d(!1)
             }
@@ -70,36 +70,36 @@ let j = [b.Dmq.PAST_DUE, b.Dmq.ACCOUNT_HOLD, b.Dmq.BILLING_RETRY],
             subtitle: I.intl.string(I.t.FClXh9),
             actions: x,
             onClose: async () => n(),
-            children: u ? (0, i.jsx)(_.wx6, {
+            children: u ? (0, i.jsx)(m.wx6, {
                 type: "critical",
                 children: I.intl.string(I.t["5mlOCW"])
             }) : null
         })
     };
 
-function R(e) {
+function O(e) {
     let t, {
             subscription: n,
             renewalInvoicePreview: s,
             fractionalPremiumInfo: l,
             fromStandaloneBillingPage: r = !0,
-            analyticsLocation: m
+            analyticsLocation: _
         } = e,
         E = (0, u.bG)([T.default], () => {
             let e = T.default.getCurrentUser();
             return o()(null != e, "GuildBoostingHeader: currentUser cannot be undefined"), e
         }),
         {
-            analyticsLocations: R
+            analyticsLocations: O
         } = (0, A.Ay)(g.A.GUILD_BOOSTING_SUBSCRIPTION_HEADER),
-        O = (0, f.A)({
+        R = (0, S.A)({
             location: "GuildBoostingHeader"
         });
-    if (0 === (0, S.bx)(n.additionalPlans)) return null;
+    if (0 === (0, f.bx)(n.additionalPlans)) return null;
     let {
         status: L
-    } = n, D = (0, S.$k)(n), P = O && !D && n.isBoostOnly && j.includes(n.status);
-    if (D) t = v.v2;
+    } = n, P = (0, f.$k)(n), D = R && !P && n.isBoostOnly && j.includes(n.status);
+    if (P) t = v.v2;
     else switch (L) {
         case b.Dmq.PAST_DUE:
         case b.Dmq.ACCOUNT_HOLD:
@@ -124,10 +124,10 @@ function R(e) {
                 className: v.eC,
                 children: [(0, i.jsx)("div", {
                     className: a()(v.Ab, {
-                        [v.aD]: D
+                        [v.aD]: P
                     })
                 }), (0, i.jsx)("div", {
-                    children: (0, S.Uf)({
+                    children: (0, f.Uf)({
                         subscription: n,
                         renewalInvoicePreview: s,
                         user: E,
@@ -136,27 +136,27 @@ function R(e) {
                 })]
             }), r && (0, i.jsxs)("div", {
                 className: v.BQ,
-                children: [P && (0, i.jsx)("div", {
+                children: [D && (0, i.jsx)("div", {
                     className: v.x7,
                     children: (0, i.jsx)(c.QWc, {
                         variant: "always-white",
                         onClick: () => {
-                            j.includes(n.status) && (0, _.mMO)(async () => e => (0, i.jsx)(y, {
+                            j.includes(n.status) && (0, m.mMO)(async () => e => (0, i.jsx)(y, {
                                 ...e,
                                 subscription: n,
-                                analyticsLocations: R,
-                                analyticsLocation: m
+                                analyticsLocations: O,
+                                analyticsLocation: _
                             }))
                         },
                         size: "sm",
                         text: I.intl.string(I.t["ETE/oC"])
                     })
                 }), (0, i.jsx)(C.A, {
-                    onClick: () => (0, p.openUserSettings)(h.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL),
+                    onClick: () => (0, h.openUserSettings)(p.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL),
                     text: I.intl.string(I.t["NQ5g/U"])
                 })]
             })]
-        }), !r && (0, i.jsx)(_.Text, {
+        }), !r && (0, i.jsx)(m.Text, {
             className: v.yW,
             variant: "text-sm/normal",
             children: I.intl.format(d.Fr ? I.t.uxYBEa : I.t.k6haR9, {

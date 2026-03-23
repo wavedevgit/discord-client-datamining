@@ -1,7 +1,7 @@
 /** chunk id: 451802 params = (module,exports,require) **/
 n.d(t, {
     A: () => E,
-    E: () => h
+    E: () => p
 });
 var i, s = n(627968),
     l = n(64700),
@@ -11,13 +11,13 @@ var i, s = n(627968),
     d = n.n(o),
     c = n(735438),
     u = n.n(c),
-    _ = n(397927),
-    m = n(235986),
+    m = n(397927),
+    _ = n(235986),
     g = n(350535),
     A = n(985018),
     x = n(181204),
-    h = ((i = {}).DEFAULT = "DEFAULT", i.RECORDING = "RECORDING", i);
-let p = {
+    p = ((i = {}).DEFAULT = "DEFAULT", i.RECORDING = "RECORDING", i);
+let h = {
     DEFAULT: x.__invalid_default,
     RECORDING: x.oz
 };
@@ -76,19 +76,19 @@ class T extends l.PureComponent {
                 disabled: i
             } = this.props,
             l = (0, g.dI)(n, !0);
-        return e = "RECORDING" === t ? A.intl.string(A.t.bmOri0) : 0 === n.length ? A.intl.string(A.t.co3wt9) : A.intl.string(A.t.idFMvH), (0, s.jsx)(_.vN3, {
+        return e = "RECORDING" === t ? A.intl.string(A.t.bmOri0) : 0 === n.length ? A.intl.string(A.t.co3wt9) : A.intl.string(A.t.idFMvH), (0, s.jsx)(m.vN3, {
             focusTarget: this._inputRef,
             ringTarget: this._containerRef,
             children: (0, s.jsx)("div", {
                 onClick: this.handleClick,
                 onMouseDown: this.handleMouseDown,
                 ref: this._containerRef,
-                className: r()(x.Qm, p[t], {
+                className: r()(x.Qm, h[t], {
                     [x.Qz]: i
                 }),
-                children: (0, s.jsxs)(m.A, {
+                children: (0, s.jsxs)(_.A, {
                     className: x.Pp,
-                    children: [(0, s.jsx)(m.A.Child, {
+                    children: [(0, s.jsx)(_.A.Child, {
                         className: x.bZ,
                         children: (0, s.jsx)("input", {
                             id: this._inputId,
@@ -101,7 +101,7 @@ class T extends l.PureComponent {
                         })
                     }), (0, s.jsx)("div", {
                         className: x.UD,
-                        children: (0, s.jsx)(_.Button, {
+                        children: (0, s.jsx)(m.Button, {
                             size: "sm",
                             variant: "RECORDING" === this.props.mode ? "critical-secondary" : "secondary",
                             text: e,

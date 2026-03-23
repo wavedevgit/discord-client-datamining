@@ -17,20 +17,20 @@ function o(e) {
         useTitle: d,
         useSubtitle: c,
         useDisabled: u,
-        useDisabledMessage: _,
-        usePersistentBadge: m,
+        useDisabledMessage: m,
+        usePersistentBadge: _,
         hasIcon: g,
         getDismissibleBadges: A
-    } = t, x = d(), h = c?.(), p = n(), T = u?.() ?? !1, E = _?.(), S = m?.(), f = A?.(), C = (0, l.A)({
-        persistentBadge: S,
-        dismissibleBadges: f
+    } = t, x = d(), p = c?.(), h = n(), T = u?.() ?? !1, E = m?.(), f = _?.(), S = A?.(), C = (0, l.A)({
+        persistentBadge: f,
+        dismissibleBadges: S
     }), b = (0, a.q)(t);
     return (0, i.jsxs)(r.L, {
         children: [(0, i.jsx)(s.dOG, {
             label: x,
-            description: h,
+            description: p,
             badge: C,
-            checked: p,
+            checked: h,
             hasIcon: g,
             onChange: e => {
                 b(), o(e)

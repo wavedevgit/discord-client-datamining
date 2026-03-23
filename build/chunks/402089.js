@@ -1,6 +1,6 @@
 /** chunk id: 402089 params = (module,exports,require) **/
 n.d(t, {
-    s: () => _
+    s: () => m
 });
 var i = n(627968),
     s = n(311907),
@@ -27,6 +27,6 @@ let u = (0, l.E2)(o.X.ACCOUNT_REMOVAL_SETTING, {
             })
         }
     }),
-    _ = (0, l.zZ)(o.X.ACCOUNT_REMOVAL_CATEGORY, {
+    m = (0, l.zZ)(o.X.ACCOUNT_REMOVAL_CATEGORY, {
         buildLayout: () => [u]
     })

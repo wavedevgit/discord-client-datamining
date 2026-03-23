@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(827734),
     c = n(397927),
     u = n(919796),
-    _ = n(385612),
-    m = n(652215),
+    m = n(385612),
+    _ = n(652215),
     g = n(985018),
     A = n(567458);
 
@@ -22,17 +22,17 @@ function x(e) {
         onClose: n,
         color: l,
         suggestedColors: x,
-        disabled: h,
-        label: p,
+        disabled: p,
+        label: h,
         colorPickerMiddle: T,
         colorPickerFooter: E,
-        showEyeDropper: S
-    } = e, f = s.useRef(null), C = (0, c.rdh)(d.A.colors.BACKGROUND_BASE_LOW).hex(), b = d.A.colors.BACKGROUND_MOD_MUTED.css, N = (0, _.sN)(l), I = (0, o.Hl)(l), v = I === C ? b : I, j = N ? d.A.unsafe_rawColors.WHITE.css : d.A.unsafe_rawColors.PRIMARY_530.css, y = (0, u.A)(T), R = (0, u.A)(E), [O, L] = s.useState((0, r.A)());
+        showEyeDropper: f
+    } = e, S = s.useRef(null), C = (0, c.rdh)(d.A.colors.BACKGROUND_BASE_LOW).hex(), b = d.A.colors.BACKGROUND_MOD_MUTED.css, N = (0, m.sN)(l), I = (0, o.Hl)(l), v = I === C ? b : I, j = N ? d.A.unsafe_rawColors.WHITE.css : d.A.unsafe_rawColors.PRIMARY_530.css, y = (0, u.A)(T), O = (0, u.A)(E), [R, L] = s.useState((0, r.A)());
     return s.useEffect(() => {
-        (y !== T || R !== E) && L((0, r.A)())
-    }, [E, T, R, y]), (0, i.jsx)(c.YNO, {
-        targetElementRef: f,
-        positionKey: O,
+        (y !== T || O !== E) && L((0, r.A)())
+    }, [E, T, O, y]), (0, i.jsx)(c.YNO, {
+        targetElementRef: S,
+        positionKey: R,
         renderPopout: e => (0, i.jsx)(c.VNw, {
             ...e,
             value: l,
@@ -40,7 +40,7 @@ function x(e) {
             suggestedColors: x,
             middle: T,
             footer: E,
-            showEyeDropper: S
+            showEyeDropper: f
         }),
         onRequestClose: n,
         children: e => {
@@ -49,14 +49,14 @@ function x(e) {
                 ...n
             } = e;
             return (0, i.jsxs)("div", {
-                ref: f,
+                ref: S,
                 className: a()(A.oP, {
-                    [A.r9]: h
+                    [A.r9]: p
                 }),
                 children: [(0, i.jsx)(c.DUT, {
                     ...n,
-                    tabIndex: h ? -1 : 0,
-                    onClick: h ? m.tEg : t,
+                    tabIndex: p ? -1 : 0,
+                    onClick: p ? _.tEg : t,
                     style: {
                         backgroundColor: I,
                         borderColor: v
@@ -64,7 +64,7 @@ function x(e) {
                     className: A.nf,
                     "aria-label": g.intl.string(g.t.Qp04hK),
                     focusProps: {
-                        ringTarget: f
+                        ringTarget: S
                     },
                     children: (0, i.jsx)(c.R2l, {
                         size: "custom",
@@ -73,7 +73,7 @@ function x(e) {
                         height: 14,
                         color: j
                     })
-                }), p]
+                }), h]
             })
         }
     })

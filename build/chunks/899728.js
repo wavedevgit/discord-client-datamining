@@ -1,6 +1,6 @@
 /** chunk id: 899728 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var i = n(311907),
     s = n(988506),
@@ -11,12 +11,12 @@ var i = n(311907),
     d = n(231855),
     c = n(88001),
     u = n(519412),
-    _ = n(985018);
-let m = (e, t) => {
-    let n, m = e === s.qT.MEMBER,
+    m = n(985018);
+let _ = (e, t) => {
+    let n, _ = e === s.qT.MEMBER,
         g = (0, d.A)({
             useCachedData: !0,
-            fetch: m
+            fetch: _
         }),
         A = (0, i.bG)([a.A], () => a.A.getPremiumGroupSubscription());
     return e === s.qT.UNSPECIFIED ? null : {
@@ -31,14 +31,14 @@ let m = (e, t) => {
                 a = n.interval,
                 d = n.intervalCount;
             return (0, o.CE)(s, a, d)
-        })(A) : null == g ? null : _.intl.format(u.default.Nu9LNm, {
+        })(A) : null == g ? null : m.intl.format(u.default.Nu9LNm, {
             primaryName: g,
             premiumGroupProductName: (0, c.DP)()
         })) ? "..." : n,
-        bodyString: e === s.qT.PRIMARY ? _.intl.format(u.default["+R/K74"], {
+        bodyString: e === s.qT.PRIMARY ? m.intl.format(u.default["+R/K74"], {
             helpCenterLink: c.TE,
             premiumGroupProductName: (0, c.DP)()
-        }) : _.intl.format(t ? u.default["xF+upx"] : u.default.qqfnOm, {
+        }) : m.intl.format(t ? u.default["xF+upx"] : u.default.qqfnOm, {
             helpCenterLink: c.TE
         })
     }

@@ -1,8 +1,8 @@
 /** chunk id: 123857 params = (module,exports,require) **/
 n.d(t, {
-    Ix: () => k,
-    J3: () => D,
-    Q3: () => w,
+    Ix: () => U,
+    J3: () => P,
+    Q3: () => V,
     mx: () => B
 });
 var i = n(627968),
@@ -14,17 +14,17 @@ var i = n(627968),
     d = n(955572),
     c = n(775602),
     u = n(793574),
-    _ = n(688810),
-    m = n(47671),
+    m = n(688810),
+    _ = n(47671),
     g = n(959443),
     A = n(692798),
     x = n(793943),
-    h = n(826673),
-    p = n(422936),
+    p = n(826673),
+    h = n(422936),
     T = n(234419),
     E = n(792656),
-    S = n(511484),
-    f = n(811611),
+    f = n(511484),
+    S = n(811611),
     C = n(97469),
     b = n(954571),
     N = n(544028),
@@ -32,23 +32,23 @@ var i = n(627968),
     v = n(12901),
     j = n(652215),
     y = n(49999),
-    R = n(788868),
-    O = n(985018),
+    O = n(788868),
+    R = n(985018),
     L = n(594969);
-let D = () => {
-    (0, h.Dr)(a.M.CLIENT_THEMES_SPARKLE_PREVIEW, {
+let P = () => {
+    (0, p.Dr)(a.M.CLIENT_THEMES_SPARKLE_PREVIEW, {
         dismissAction: y.i.PRIMARY,
         forceTrack: !0
     }), (0, x.nf)(x.HP.CLIENT_THEMES), (0, v.default)()
 };
 
-function P() {
-    let e = (0, p.O)(),
-        t = (0, S.U9)(e, R.pe.TIER_2) ? O.intl.formatToPlainString(O.t.bkQ4bH, {
+function D() {
+    let e = (0, h.O)(),
+        t = (0, f.U9)(e, O.pe.TIER_2) ? R.intl.formatToPlainString(R.t.bkQ4bH, {
             percent: e?.discount.amount
-        }) : O.intl.string(O.t.mr4K7D);
+        }) : R.intl.string(R.t.mr4K7D);
     return (0, i.jsx)(E.A, {
-        subscriptionTier: R.pe.TIER_2,
+        subscriptionTier: O.pe.TIER_2,
         defaultTextOverride: t,
         premiumModalAnalyticsLocation: {
             object: j.ZSU.BUTTON_CTA,
@@ -59,27 +59,27 @@ function P() {
 }
 
 function M() {
-    let e = (0, l.bG)([m.A], () => m.A.isPreview),
-        t = (0, T.V)()?.subscription_trial?.sku_id === R.pe.TIER_2;
+    let e = (0, l.bG)([_.A], () => _.A.isPreview),
+        t = (0, T.V)()?.subscription_trial?.sku_id === O.pe.TIER_2;
     return !e || t ? null : (0, i.jsxs)("div", {
         className: L.gY,
         children: [(0, i.jsx)(o.Button, {
             variant: "secondary",
-            text: O.intl.string(O.t["E+COuA"]),
-            onClick: D
-        }), (0, i.jsx)(P, {})]
+            text: R.intl.string(R.t["E+COuA"]),
+            onClick: P
+        }), (0, i.jsx)(D, {})]
     })
 }
 
 function G(e) {
     let {
         children: t
-    } = e, n = (0, l.bG)([m.A], () => m.A.isPreview), {
+    } = e, n = (0, l.bG)([_.A], () => _.A.isPreview), {
         analyticsLocations: a
-    } = (0, _.Ay)(u.A.USER_SETTINGS);
+    } = (0, m.Ay)(u.A.USER_SETTINGS);
     return (s.useEffect(() => {
         n && b.default.track(j.HAw.PREMIUM_UPSELL_VIEWED, {
-            type: R.e.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
+            type: O.e.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
             location_stack: a
         })
     }, [n, a]), n) ? (0, i.jsx)("div", {
@@ -88,57 +88,57 @@ function G(e) {
     }) : t
 }
 
-function U() {
-    let e = (0, l.bG)([m.A], () => m.A.isPreview),
-        t = (0, T.V)()?.subscription_trial?.sku_id === R.pe.TIER_2;
+function k() {
+    let e = (0, l.bG)([_.A], () => _.A.isPreview),
+        t = (0, T.V)()?.subscription_trial?.sku_id === O.pe.TIER_2;
     return e && t ? (0, i.jsxs)("div", {
         children: [(0, i.jsx)("div", {
             className: L.c7,
             children: (0, i.jsx)(o.Button, {
                 variant: "secondary",
                 fullWidth: !0,
-                text: O.intl.string(O.t["E+COuA"]),
-                onClick: () => D()
+                text: R.intl.string(R.t["E+COuA"]),
+                onClick: () => P()
             })
         }), (0, i.jsx)("div", {
             className: L.BU
-        }), (0, i.jsx)(f.Ay, {
-            type: R.e.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL,
-            subscriptionTier: R.pe.TIER_2
+        }), (0, i.jsx)(S.Ay, {
+            type: O.e.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL,
+            subscriptionTier: O.pe.TIER_2
         })]
     }) : null
 }
-let k = () => (0, i.jsx)("div", {
+let U = () => (0, i.jsx)("div", {
     children: (0, i.jsxs)(A.Ay, {
         type: A.v0.SETTINGS,
         children: [(0, i.jsx)(A.Ay.Basic, {
             className: L.a6
-        }), (0, i.jsx)(V, {}), (0, i.jsx)(g.A, {}), (0, i.jsxs)(G, {
+        }), (0, i.jsx)(w, {}), (0, i.jsx)(g.A, {}), (0, i.jsxs)(G, {
             children: [(0, i.jsx)(A.Ay.Gradient, {
                 disabled: !1,
                 renderCTAButtons: () => (0, i.jsx)(M, {})
-            }), (0, i.jsx)(U, {})]
+            }), (0, i.jsx)(k, {})]
         })]
     })
 });
 
-function V() {
+function w() {
     let e = (0, C.qo)(),
         {
             theme: t,
             useForcedColors: n,
             gradientPreset: s
-        } = (0, l.cf)([N.A, c.A, m.A], () => ({
+        } = (0, l.cf)([N.A, c.A, _.A], () => ({
             theme: N.A.theme,
             useForcedColors: c.A.useForcedColors,
-            gradientPreset: m.A.gradientPreset
+            gradientPreset: _.A.gradientPreset
         })),
         a = null != I.eh.useSetting().customUserThemeSettings;
     return t !== j.NJ8.LIGHT ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(o.cGx, {
             gap: 24
         }), (0, i.jsx)(o.dOG, {
-            label: O.intl.string(O.t.yF54Ks),
+            label: R.intl.string(R.t.yF54Ks),
             checked: e && (0, r.qB)(t) && !n,
             disabled: t !== j.NJ8.LIGHT || n || null != s || a,
             onChange: d.LO
@@ -147,10 +147,10 @@ function V() {
         })]
     })
 }
-let w = () => (0, l.bG)([m.A], () => m.A.isPreview) ? null : (0, i.jsx)(o.Button, {
+let V = () => (0, l.bG)([_.A], () => _.A.isPreview) ? null : (0, i.jsx)(o.Button, {
     variant: "primary",
-    text: O.intl.string(O.t.qYXrkX),
-    onClick: D
+    text: R.intl.string(R.t.qYXrkX),
+    onClick: P
 });
 
 function B(e) {
@@ -178,7 +178,7 @@ function B(e) {
                     disabled: !1,
                     size: t
                 })
-            }), (0, i.jsx)(U, {})]
+            }), (0, i.jsx)(k, {})]
         })
     })
 }

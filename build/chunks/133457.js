@@ -1,50 +1,50 @@
 /** chunk id: 133457 params = (module,exports,require) **/
 "use strict";
-n.d(t, {
+r.d(t, {
     B: () => s
 });
-var r = n(64700),
-    i = n(826673),
-    a = n(894858),
-    l = n(49999);
+var n = r(64700),
+    a = r(826673),
+    i = r(894858),
+    l = r(49999);
 
 function s(e) {
     let {
         visibleContent: t,
-        dismissibleBadges: n,
+        dismissibleBadges: r,
         accessibleDirectory: s
     } = e, {
         dismissibleContentToNodeKeys: o,
         nodeKeyToDismissibleContents: c
-    } = n, u = r.useRef(!1);
-    r.useEffect(() => {
+    } = r, u = n.useRef(!1);
+    n.useEffect(() => {
         if (u.current = !1, null == t || !o.has(t)) return;
         let e = o.get(t);
         if (null == e) return;
-        let n = () => {
+        let r = () => {
                 u.current = !1;
                 let t = c.get(e.sidebarItemKey);
                 null != t && t.forEach(e => {
-                    (0, i.Dr)(e, {
+                    (0, a.Dr)(e, {
                         dismissAction: l.i.AUTO,
                         forceTrack: !0
                     })
                 })
             },
-            r = a.A.subscribe(e => {
+            n = i.A.subscribe(e => {
                 let {
                     currentPanelKey: t
                 } = e;
                 return t
             }, t => {
-                let r = null != t && null != s ? s.entry(t)?.parentSidebarItemKey : null;
-                null != r && (r === e.sidebarItemKey ? u.current = !0 : u.current && n())
+                let n = null != t && null != s ? s.entry(t)?.parentSidebarItemKey : null;
+                null != n && (n === e.sidebarItemKey ? u.current = !0 : u.current && r())
             }, {
                 equalityFn: (e, t) => e === t,
                 fireImmediately: !0
             });
         return () => {
-            r(), u.current && n()
+            n(), u.current && r()
         }
     }, [t, o, s, c])
 }

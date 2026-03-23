@@ -1,6 +1,6 @@
 /** chunk id: 874486 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => m
 });
 var i = n(311907),
     s = n(73153),
@@ -34,7 +34,7 @@ class u extends i.Ay.PersistedStore {
         return c.unlockedAchievements[e] ?? null
     }
 }
-let _ = new u(s.h, {
+let m = new u(s.h, {
     POGGERMODE_ACHIEVEMENT_UNLOCK: function(e) {
         let {
             achievementId: t

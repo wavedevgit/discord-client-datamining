@@ -12,8 +12,8 @@ var s = n(417597),
     d = n(397808),
     c = n(254847),
     u = n(773349),
-    _ = n(994987),
-    m = n(842130),
+    m = n(994987),
+    _ = n(842130),
     g = n(985018),
     A = n(721757);
 let x = () => {
@@ -26,14 +26,14 @@ let x = () => {
             children: [(0, i.jsx)(a.Heading, {
                 variant: "text-md/medium",
                 className: A.bV,
-                children: g.intl.string(m.default.BxbvS7)
+                children: g.intl.string(_.default.BxbvS7)
             }), (0, i.jsx)("div", {
                 className: A.Ce,
                 children: 1 === e.length ? (0, i.jsx)(u.A, {
                     userId: e[0].user_id,
                     subText: (0, o.fq)(e[0].dms_sent, e[0].call_count),
                     className: A.q3
-                }) : e.map(e => (0, i.jsx)(_.A, {
+                }) : e.map(e => (0, i.jsx)(m.A, {
                     userId: e.user_id,
                     dmsSent: e.dms_sent,
                     callCount: e.call_count
@@ -44,7 +44,7 @@ let x = () => {
             children: [(0, i.jsx)(a.Heading, {
                 variant: "text-md/medium",
                 className: A.bV,
-                children: g.intl.string(m.default.Lq9Set)
+                children: g.intl.string(_.default.Lq9Set)
             }), 1 === t.length ? (0, i.jsx)(c.A, {
                 guildId: t[0].guild_id,
                 customSubtext: (0, o.fq)(t[0].messages_sent, t[0].call_count),

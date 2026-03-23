@@ -1,6 +1,6 @@
 /** chunk id: 334219 params = (module,exports,require) **/
 n.d(t, {
-    z: () => _
+    z: () => m
 });
 var i = n(627968),
     s = n(311907),
@@ -14,7 +14,7 @@ let u = (0, a.t_)(r.X.POGGERMODE_PANEL, {
         useTitle: () => d.intl.string(d.t.AtCukI),
         buildLayout: () => [o.c]
     }),
-    _ = (0, a.i4)(r.X.POGGERMODE_SIDEBAR_ITEM, {
+    m = (0, a.i4)(r.X.POGGERMODE_SIDEBAR_ITEM, {
         useTitle: () => d.intl.string(d.t.AtCukI),
         icon: () => (0, i.jsx)("img", {
             alt: "",

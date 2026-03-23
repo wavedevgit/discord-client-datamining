@@ -13,21 +13,21 @@ n(936388), n(714763);
 var c = n(814278),
     u = n(699978);
 n(818143);
-var _ = n(657331),
-    m = n(287809),
+var m = n(657331),
+    _ = n(287809),
     g = n(427262),
     A = n(985018),
     x = n(32086);
 
-function h(e) {
+function p(e) {
     let {
         userId: t,
         count: n
     } = e, {
         analyticsLocations: u
-    } = (0, d.Ay)(), h = (0, l.bG)([m.default], () => m.default.getUser(t)), p = g.Ay.getFormattedName(h), T = s.useCallback(() => {
+    } = (0, d.Ay)(), p = (0, l.bG)([_.default], () => _.default.getUser(t)), h = g.Ay.getFormattedName(p), T = s.useCallback(() => {
         (0, c.kj)(t)
-    }, [t]), E = s.useCallback(() => (0, _.openUserProfileModal)({
+    }, [t]), E = s.useCallback(() => (0, m.openUserProfileModal)({
         userId: t,
         sourceAnalyticsLocations: u
     }), [t, u]);
@@ -35,9 +35,9 @@ function h(e) {
         (0, r.wz)(t)
     }, [t]), (0, i.jsxs)("div", {
         className: x.uW,
-        children: [null != h && (0, i.jsx)(o.A, {
+        children: [null != p && (0, i.jsx)(o.A, {
             className: x.my,
-            user: h,
+            user: p,
             size: a._3J.SIZE_40
         }), (0, i.jsxs)("div", {
             className: x.Qq,
@@ -47,7 +47,7 @@ function h(e) {
                 children: (0, i.jsx)(a.Text, {
                     variant: "text-md/semibold",
                     color: "interactive-text-active",
-                    children: p
+                    children: h
                 })
             }), (0, i.jsx)(a.Text, {
                 variant: "text-md/medium",
@@ -66,7 +66,7 @@ function h(e) {
     })
 }
 
-function p(e) {
+function h(e) {
     let {
         className: t,
         userId: n,
@@ -106,11 +106,11 @@ function T(e) {
         userId: t
     } = e, n = (0, u.k)(t);
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(h, {
+        children: [(0, i.jsx)(p, {
             userId: t,
             count: n.length
         }), n.map((e, l) => (0, i.jsxs)(s.Fragment, {
-            children: [(0, i.jsx)(p, {
+            children: [(0, i.jsx)(h, {
                 className: x.nM,
                 userId: t,
                 index: l,

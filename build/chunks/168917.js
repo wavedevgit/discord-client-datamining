@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(84540),
     c = n(576705),
     u = n(652215),
-    _ = n(788868),
-    m = n(985018),
+    m = n(788868),
+    _ = n(985018),
     g = n(131025);
 
 function A(e) {
@@ -21,11 +21,11 @@ function A(e) {
         pendingNick: n,
         currentNick: A,
         username: x,
-        user: h,
-        guild: p
-    } = e, T = (0, s.bG)([c.A], () => c.A.can(u.xBc.CHANGE_NICKNAME, p) || c.A.can(u.xBc.MANAGE_NICKNAMES, p)), E = (0, a.L)(_.PremiumTypes.TIER_2);
+        user: p,
+        guild: h
+    } = e, T = (0, s.bG)([c.A], () => c.A.can(u.xBc.CHANGE_NICKNAME, h) || c.A.can(u.xBc.MANAGE_NICKNAMES, h)), E = (0, a.L)(m.PremiumTypes.TIER_2);
     return (0, i.jsxs)(r.A, {
-        title: m.intl.string(m.t.me1lRk),
+        title: _.intl.string(_.t.me1lRk),
         errors: t,
         children: [(0, i.jsx)(l.ksK, {
             value: n ?? A ?? "",
@@ -33,15 +33,15 @@ function A(e) {
             maxLength: u.d0r,
             onChange: function(e) {
                 (0, d.p)({
-                    guildId: p.id,
+                    guildId: h.id,
                     nickname: e
                 })
             },
             disabled: !T,
-            helperText: T ? void 0 : m.intl.string(m.t.gzjxQi)
+            helperText: T ? void 0 : _.intl.string(_.t.gzjxQi)
         }), E && (0, i.jsx)(o.A, {
-            user: h,
-            guildId: p.id,
+            user: p,
+            guildId: h.id,
             className: g.F
         })]
     })

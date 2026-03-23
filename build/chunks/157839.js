@@ -1,6 +1,6 @@
 /** chunk id: 157839 params = (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => f
 });
 var i = n(627968),
     s = n(64700),
@@ -11,13 +11,13 @@ var i = n(627968),
     d = n(531260),
     c = n(287809),
     u = n(637073),
-    _ = n(398523),
-    m = n(612669),
+    m = n(398523),
+    _ = n(612669),
     g = n(180022),
     A = n(513570),
     x = n(975662),
-    h = n(322631),
-    p = n(17307),
+    p = n(322631),
+    h = n(17307),
     T = n(609195);
 let E = e => {
         let {
@@ -45,67 +45,67 @@ let E = e => {
             })
         })
     },
-    S = e => {
+    f = e => {
         let {
             className: t,
             variant: n,
             noBackground: l = !1,
-            leftAlignHeaders: S = !1,
-            showAllPerksButton: f,
+            leftAlignHeaders: f = !1,
+            showAllPerksButton: S,
             headerClassname: C
-        } = e, b = s.useRef(null), N = n === h.cJ.WHATS_NEW, I = (0, r.bG)([c.default], () => c.default.getCurrentUser()), v = (0, A.E)();
+        } = e, b = s.useRef(null), N = n === p.cJ.WHATS_NEW, I = (0, r.bG)([c.default], () => c.default.getCurrentUser()), v = (0, A.E)();
         s.useEffect(() => {
             N && v()
         }, [v, N]);
-        let j = (0, p.G4)(N),
+        let j = (0, h.G4)(N),
             y = (0, x.A)(),
-            R = (0, p.LQ)(),
+            O = (0, h.LQ)(),
             {
-                fractionalState: O
+                fractionalState: R
             } = (0, d.A)(),
             L = (0, u.d)(),
-            D = _.A.useExperiment({
+            P = m.A.useExperiment({
                 location: "PremiumPerks"
             }).enabled,
-            P = (0, m.O9)(),
-            M = (0, p.vx)({
+            D = (0, _.O9)(),
+            M = (0, h.vx)({
                 perksCards: y,
                 variant: n,
                 hideCardsOnNarrowScreen: !1,
-                isPremiumSubscriber: R,
-                fractionalState: O,
+                isPremiumSubscriber: O,
+                fractionalState: R,
                 isInReverseTrial: L,
-                recurring3PPromotionExperiment: D,
-                showPremiumGroup: P,
+                recurring3PPromotionExperiment: P,
+                showPremiumGroup: D,
                 isPremiumGroupMember: I?.isPremiumGroupMember()
             }),
             G = M.some(e => null != e.pillText);
         return (0, i.jsxs)("div", {
             ref: b,
             className: a()(T.uW, {
-                [T.qO]: !S,
-                [T.Uv]: S
+                [T.qO]: !f,
+                [T.Uv]: f
             }, t),
             children: [(0, i.jsx)(E, {
-                showAllPerksButton: f,
-                leftAlignHeaders: S,
+                showAllPerksButton: S,
+                leftAlignHeaders: f,
                 title: j.title,
                 headerClassname: C
             }), (0, i.jsx)(o.Text, {
                 variant: "text-lg/normal",
                 color: "text-strong",
                 className: a()(T.VA, {
-                    [T.VA]: null == f || S,
-                    [T.Xx]: null != f && !S,
-                    [T.Ij]: N || S,
+                    [T.VA]: null == S || f,
+                    [T.Xx]: null != S && !f,
+                    [T.Ij]: N || f,
                     [T.Ob]: G,
-                    [T.dO]: S,
-                    [T.br]: !S
+                    [T.dO]: f,
+                    [T.br]: !f
                 }),
                 children: j.subtitle
-            }), !S && null != f && (0, i.jsx)("div", {
+            }), !f && null != S && (0, i.jsx)("div", {
                 className: T.xk,
-                children: f
+                children: S
             }), (0, i.jsx)("div", {
                 className: T.Ui,
                 children: M.map((e, t) => (0, i.jsx)(g.A, {

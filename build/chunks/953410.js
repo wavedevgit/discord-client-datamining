@@ -1,6 +1,6 @@
 /** chunk id: 953410 params = (module,exports,require) **/
 n.d(t, {
-    g: () => m
+    g: () => _
 });
 var i = n(627968),
     s = n(311907),
@@ -11,9 +11,9 @@ var i = n(627968),
     d = n(548018),
     c = n(32096),
     u = n(545214),
-    _ = n(985018);
-let m = (0, l.E2)(r.X.ACCOUNT_BACKUP_CODES_SETTING, {
-    useSearchTerms: () => [_.intl.string(_.t.m0FidJ), _.intl.string(_.t.xZEzbu)],
+    m = n(985018);
+let _ = (0, l.E2)(r.X.ACCOUNT_BACKUP_CODES_SETTING, {
+    useSearchTerms: () => [m.intl.string(m.t.m0FidJ), m.intl.string(m.t.xZEzbu)],
     usePredicate: function() {
         let e = (0, c.b)(),
             t = (0, u.A)(),

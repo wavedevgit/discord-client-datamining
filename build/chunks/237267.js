@@ -12,8 +12,8 @@ var s = n(397927),
     d = n(840065),
     c = n(652215),
     u = n(788868),
-    _ = n(985018),
-    m = n(689507);
+    m = n(985018),
+    _ = n(689507);
 let g = function(e) {
     let {
         hasAppliedGuildBoosts: t,
@@ -22,7 +22,7 @@ let g = function(e) {
         subscriptionIsPausedOrPausePending: A
     } = e, {
         subtitle: x,
-        flavor: h
+        flavor: p
     } = function(e) {
         let {
             hasAppliedGuildBoosts: t,
@@ -31,25 +31,25 @@ let g = function(e) {
             subscriptionIsPausedOrPausePending: s
         } = e;
         if (s) return {
-            flavor: _.intl.format(_.t.doslJu, {
+            flavor: m.intl.format(m.t.doslJu, {
                 onClick: () => (0, d.openUserSettings)(o.X.SUBSCRIPTIONS_PANEL)
             })
         };
         if (!i) return {
-            subtitle: _.intl.string(_.t.oiWYAc)
+            subtitle: m.intl.string(m.t.oiWYAc)
         };
         if (t) return {
-            subtitle: _.intl.string(_.t.W5rDjW),
-            flavor: _.intl.format(_.t.cUHcaQ, {
+            subtitle: m.intl.string(m.t.W5rDjW),
+            flavor: m.intl.format(m.t.cUHcaQ, {
                 helpdeskArticle: l.A.getArticleURL(c.MVz.GUILD_SUBSCRIPTIONS)
             })
         };
-        let m = u.hd[u.gD.PREMIUM_MONTH_GUILD],
-            g = a.Ay.getDefaultPrice(m.id, n),
-            A = (0, r.CE)((0, r.$g)(g.amount, g.currency), m.interval, m.intervalCount);
+        let _ = u.hd[u.gD.PREMIUM_MONTH_GUILD],
+            g = a.Ay.getDefaultPrice(_.id, n),
+            A = (0, r.CE)((0, r.$g)(g.amount, g.currency), _.interval, _.intervalCount);
         return {
-            subtitle: n ? _.intl.string(_.t.bhPzXR) : _.intl.string(_.t.Zs9h9Z),
-            flavor: _.intl.formatToPlainString(_.t.PGgTdA, {
+            subtitle: n ? m.intl.string(m.t.bhPzXR) : m.intl.string(m.t.Zs9h9Z),
+            flavor: m.intl.formatToPlainString(m.t.PGgTdA, {
                 monthlyGuildBoostPrice: A
             })
         }
@@ -60,14 +60,14 @@ let g = function(e) {
         subscriptionIsPausedOrPausePending: A
     });
     return (0, i.jsxs)("div", {
-        className: m.i,
+        className: _.i,
         children: [(0, i.jsx)(s.Heading, {
             variant: "heading-lg/bold",
-            className: m.V,
+            className: _.V,
             children: x
-        }), null != h && (0, i.jsx)(s.Text, {
+        }), null != p && (0, i.jsx)(s.Text, {
             variant: "text-sm/normal",
-            children: h
+            children: p
         })]
     })
 }

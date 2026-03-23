@@ -11,13 +11,13 @@ var i = n(64700),
     d = n(780964),
     c = n(264474),
     u = n(985018),
-    _ = n(842130);
-let m = (0, r.t_)(d.X.FAMILY_CENTER_PANEL, {
-        useTitle: () => u.intl.string(_.default.RZqaJn),
+    m = n(842130);
+let _ = (0, r.t_)(d.X.FAMILY_CENTER_PANEL, {
+        useTitle: () => u.intl.string(m.default.RZqaJn),
         buildLayout: () => [c.g]
     }),
     g = (0, r.i4)(d.X.FAMILY_CENTER_SIDEBAR_ITEM, {
-        useTitle: () => u.intl.string(_.default.RZqaJn),
+        useTitle: () => u.intl.string(m.default.RZqaJn),
         icon: s.GroupIcon,
         usePersistentBadge: function() {
             return i.useMemo(() => ({
@@ -31,5 +31,5 @@ let m = (0, r.t_)(d.X.FAMILY_CENTER_PANEL, {
                 dismissibleContent: l.M.FAMILY_CENTER_NEW_BADGE
             }]
         },
-        buildLayout: () => [m]
+        buildLayout: () => [_]
     })

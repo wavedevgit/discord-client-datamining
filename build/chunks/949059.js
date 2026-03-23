@@ -11,8 +11,8 @@ var i = n(311907),
     d = n(287809),
     c = n(954571),
     u = n(780964),
-    _ = n(652215),
-    m = n(406535),
+    m = n(652215),
+    _ = n(406535),
     g = n(790782),
     A = n(985018);
 let x = (0, a.zD)(u.X.EXPERIMENTAL_UNREADS, {
@@ -20,7 +20,7 @@ let x = (0, a.zD)(u.X.EXPERIMENTAL_UNREADS, {
     useSubtitle: () => A.intl.string(A.t.LGynPs),
     useValue: () => (0, i.bG)([o.Ay], () => o.Ay.useNewNotifications),
     setValue: function(e) {
-        l.A.setAccountFlag(m.i.USE_NEW_NOTIFICATIONS, e), e || (s.w.set("turnedOffNewNotifications", !0), c.default.track(_.HAw.NOTIFICATION_MIGRATION_OPTOUT, {
+        l.A.setAccountFlag(_.i.USE_NEW_NOTIFICATIONS, e), e || (s.w.set("turnedOffNewNotifications", !0), c.default.track(m.HAw.NOTIFICATION_MIGRATION_OPTOUT, {
             num_guilds_with_new_setting: r.A.getGuildsArray().filter(e => o.Ay.resolveGuildUnreadSetting(e) === g.e.ONLY_MENTIONS).length
         }))
     },

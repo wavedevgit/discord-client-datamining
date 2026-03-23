@@ -1,6 +1,6 @@
 /** chunk id: 866945 params = (module,exports,require) **/
 n.d(t, {
-    e: () => _
+    e: () => m
 });
 var i = n(627968),
     s = n(64700),
@@ -12,26 +12,26 @@ var i = n(627968),
     c = n(985018),
     u = n(486529);
 
-function _(e) {
+function m(e) {
     let {
         label: t,
         labelHook: n,
         count: l,
-        dismissNotice: _,
-        className: m,
+        dismissNotice: m,
+        className: _,
         noticeType: g
-    } = e, A = null != _;
+    } = e, A = null != m;
     s.useEffect(() => {
         (0, o.N)(g, d.YX.VIEWED)
     }, [g]);
     let x = s.useCallback(() => {
-            null != _ && (_(), (0, o.N)(g, d.YX.DISMISS))
-        }, [g, _]),
-        h = s.useCallback(() => {
+            null != m && (m(), (0, o.N)(g, d.YX.DISMISS))
+        }, [g, m]),
+        p = s.useCallback(() => {
             n(), (0, o.N)(g, d.YX.LEARN_MORE)
         }, [g, n]);
     return (0, i.jsxs)("div", {
-        className: a()(u.I, m),
+        className: a()(u.I, _),
         children: [(0, i.jsx)(r.mir, {
             size: "md"
         }), (0, i.jsx)(r.Text, {
@@ -39,13 +39,13 @@ function _(e) {
             color: "interactive-text-active",
             children: null != l ? c.intl.format(t, {
                 hook: (e, t) => (0, i.jsx)(r.MzZ, {
-                    onClick: h,
+                    onClick: p,
                     children: e
                 }, t),
                 count: l
             }) : c.intl.format(t, {
                 hook: (e, t) => (0, i.jsx)(r.MzZ, {
-                    onClick: h,
+                    onClick: p,
                     children: e
                 }, t)
             })

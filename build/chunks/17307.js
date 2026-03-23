@@ -1,9 +1,9 @@
 /** chunk id: 17307 params = (module,exports,require) **/
 n.d(t, {
-    G4: () => m,
+    G4: () => _,
     LQ: () => g,
     t4: () => u,
-    vx: () => _
+    vx: () => m
 }), n(321073);
 var i = n(311907),
     s = n(582754),
@@ -14,7 +14,7 @@ var i = n(311907),
     d = n(788868),
     c = n(985018);
 let u = (e, t, n) => (0, s.Mw)(e) ? t : n,
-    _ = e => {
+    m = e => {
         let {
             perksCards: t,
             variant: n,
@@ -25,13 +25,13 @@ let u = (e, t, n) => (0, s.Mw)(e) ? t : n,
             recurring3PPromotionExperiment: r,
             showPremiumGroup: c,
             isPremiumGroupMember: u
-        } = e, _ = [];
+        } = e, m = [];
         switch (n) {
             case o.cJ.PERKS_DISCOVERABILITY:
-                _ = !1 === s ? [t.profiles, t.moreEmojiPower, t.largeUploads, t.hdVideo, t.clientThemes, t.customAppIcons] : l === d.xc.FP_ONLY || u ? [t.profiles, t.clientThemes, t.hdVideo] : [t.profiles, t.clientThemes, t.serverBoosts];
+                m = !1 === s ? [t.profiles, t.moreEmojiPower, t.largeUploads, t.hdVideo, t.clientThemes, t.customAppIcons] : l === d.xc.FP_ONLY || u ? [t.profiles, t.clientThemes, t.hdVideo] : [t.profiles, t.clientThemes, t.serverBoosts];
                 break;
             case o.cJ.WHATS_NEW:
-                _ = (e => {
+                m = (e => {
                     let {
                         cards: t,
                         perksCards: n,
@@ -57,24 +57,24 @@ let u = (e, t, n) => (0, s.Mw)(e) ? t : n,
                         card: n.newAppStylesUpdateJune2024
                     }), t.push(...l), t
                 })({
-                    cards: _,
+                    cards: m,
                     perksCards: t,
                     recurring3PPromotionExperiment: r,
                     showPremiumGroup: c
                 });
                 break;
             case o.cJ.CARD_CAROUSEL_FIRST_ROW:
-                _ = !1 === s ? [t.serverBoosts, t.superReactions, t.earlyAccessSeeAllVariant, t.specialShopPerks] : [t.customAppIcons, t.moreEmojiPower, t.customSoundsEverywhere, t.specialStickerAccess];
+                m = !1 === s ? [t.serverBoosts, t.superReactions, t.earlyAccessSeeAllVariant, t.specialShopPerks] : [t.customAppIcons, t.moreEmojiPower, t.customSoundsEverywhere, t.specialStickerAccess];
                 break;
             case o.cJ.CARD_CAROUSEL_SECOND_ROW:
-                _ = !1 === s ? [t.customSoundsEverywhere, t.specialStickerAccess] : l === d.xc.FP_ONLY ? a ? [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.greyServerBoosts, t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions];
+                m = !1 === s ? [t.customSoundsEverywhere, t.specialStickerAccess] : l === d.xc.FP_ONLY ? a ? [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.greyServerBoosts, t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions];
                 break;
             case o.cJ.CARD_CAROUSEL_THIRD_ROW:
-                _ = l === d.xc.FP_ONLY ? a ? [t.entranceSoundsSeeAllVariation] : [t.entranceSoundsSeeAllVariation, t.greyBadge] : [t.entranceSoundsSeeAllVariation, t.badge]
+                m = l === d.xc.FP_ONLY ? a ? [t.entranceSoundsSeeAllVariation] : [t.entranceSoundsSeeAllVariation, t.greyBadge] : [t.entranceSoundsSeeAllVariation, t.badge]
         }
-        return i && (_ = _.filter(e => !e.hideOnNarrowScreen)), _
+        return i && (m = m.filter(e => !e.hideOnNarrowScreen)), m
     },
-    m = e => {
+    _ = e => {
         let t = (0, i.bG)([a.A], () => a.A.getPremiumTypeSubscription()),
             n = null != t ? r.Ay.getPremiumPlanItem(t) : null,
             s = (null != n ? r.Ay.getSkuIdForPlan(n.planId) : null) === d.pe.TIER_2;

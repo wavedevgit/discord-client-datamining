@@ -11,8 +11,8 @@ var i = n(419954),
     d = n(379897),
     c = n(21117),
     u = n(617110),
-    _ = n(937551),
-    m = n(31118),
+    m = n(937551),
+    _ = n(31118),
     g = n(985018);
 let A = (0, i.zZ)(l.X.ACCESSIBILITY_OVERVIEW, {
     useSubnavLabel: () => g.intl.string(g.t.fTNxW7),
@@ -20,5 +20,5 @@ let A = (0, i.zZ)(l.X.ACCESSIBILITY_OVERVIEW, {
         type: s.lT.STRONGLY_DISCOURAGED_CUSTOM,
         notice: a.A
     }),
-    buildLayout: () => [_.V, r.E, m.k, d.j, u.G, c.b, o.w]
+    buildLayout: () => [m.V, r.E, _.k, d.j, u.G, c.b, o.w]
 })

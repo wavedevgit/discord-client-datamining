@@ -1,6 +1,6 @@
 /** chunk id: 696616 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => m
 });
 var i = n(627968);
 n(64700);
@@ -13,7 +13,7 @@ var s = n(93857),
     c = n(842130),
     u = n(985018);
 
-function _() {
+function m() {
     let e = (0, o.k)() ?? void 0,
         t = s.kf.useControlledSetting(e);
     return (0, i.jsx)(l.h, {

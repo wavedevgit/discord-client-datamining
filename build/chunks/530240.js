@@ -12,17 +12,17 @@ var i = n(627968),
     d = n(531260),
     c = n(39672),
     u = n(545934),
-    _ = n(71393),
-    m = n(473145),
+    m = n(71393),
+    _ = n(473145),
     g = n(927578),
     A = n(661191),
     x = n(101135),
-    h = n(708030),
-    p = n(358172),
+    p = n(708030),
+    h = n(358172),
     T = n(652215),
     E = n(788868),
-    S = n(985018),
-    f = n(325234);
+    f = n(985018),
+    S = n(325234);
 
 function C(e) {
     let {
@@ -35,38 +35,38 @@ function C(e) {
     } = e, u = s.useMemo(() => {
         if (o) {
             let e = d.currentPeriodEnd;
-            return d.isPausedForFractionalPremium && (e = c.endsAt.toDate()), S.intl.format(S.t.Z4ULRD, {
+            return d.isPausedForFractionalPremium && (e = c.endsAt.toDate()), f.intl.format(f.t.Z4ULRD, {
                 date: e
             })
         }
         let e = null != n.premiumGuildSubscription ? A.default.extractTimestamp(n.premiumGuildSubscription.id) : 0;
-        return S.intl.formatToPlainString(S.t.lY2Bur, {
+        return f.intl.formatToPlainString(f.t.lY2Bur, {
             date: new Date(e)
         })
-    }, [n, o, d, c]), _ = s.useMemo(() => (function(e) {
+    }, [n, o, d, c]), m = s.useMemo(() => (function(e) {
         if (null == e || e === T.TVA.NONE) return "";
-        let t = [S.intl.formatToPlainString(S.t["dLlKX/"], {
+        let t = [f.intl.formatToPlainString(f.t["dLlKX/"], {
             numEmojiSlots: E.TG[e].limits.emoji
-        }), S.intl.formatToPlainString(S.t["+ANIfv"], {
+        }), f.intl.formatToPlainString(f.t["+ANIfv"], {
             numStickerSlots: E.TG[e].limits.stickers
-        }), S.intl.formatToPlainString(S.t["4gt60b"], {
+        }), f.intl.formatToPlainString(f.t["4gt60b"], {
             numSoundboardSlots: E.TG[e].limits.soundboardSounds
-        }), S.intl.formatToPlainString(S.t.XahSjZ, {
+        }), f.intl.formatToPlainString(f.t.XahSjZ, {
             resolution: E.TG[e].limits.screenShareQualityResolution,
             framerate: E.TG[e].limits.screenShareQualityFramerate
-        }), S.intl.formatToPlainString(S.t.NbNs7S, {
+        }), f.intl.formatToPlainString(f.t.NbNs7S, {
             bitrate: E.TG[e].limits.bitrate / 1e3
-        }), S.intl.formatToPlainString(S.t.VVKcpn, {
+        }), f.intl.formatToPlainString(f.t.VVKcpn, {
             filesize: E.TG[e].limits.fileSize / 1024 / 1024
-        }), S.intl.formatToPlainString(S.t.TbpCvv, {
+        }), f.intl.formatToPlainString(f.t.TbpCvv, {
             numVideoStageSeats: E.TG[e].limits.stageVideoUsers
-        }), S.intl.string(S.t.LDyX3i), S.intl.string(S.t.YtGlPW)];
-        e >= T.TVA.TIER_2 && (t.push(S.intl.string(S.t.SztbtN)), t.push(S.intl.string(S.t["3GK91n"]))), e >= T.TVA.TIER_3 && t.push(S.intl.string(S.t["XUUJd+"]));
+        }), f.intl.string(f.t.LDyX3i), f.intl.string(f.t.YtGlPW)];
+        e >= T.TVA.TIER_2 && (t.push(f.intl.string(f.t.SztbtN)), t.push(f.intl.string(f.t["3GK91n"]))), e >= T.TVA.TIER_3 && t.push(f.intl.string(f.t["XUUJd+"]));
         let n = t[Math.floor(Math.random() * t.length)];
-        return S.intl.format(S.t["/dOAmQ"], {
+        return f.intl.format(f.t["/dOAmQ"], {
             perk: n
         })
-    })(t), [t]), m = (0, r.pnh)(a, {
+    })(t), [t]), _ = (0, r.pnh)(a, {
         from: {
             opacity: 0
         },
@@ -78,19 +78,19 @@ function C(e) {
         }
     }, "animate-always");
     return o || t === T.TVA.NONE ? (0, i.jsx)("div", {
-        className: f.xm,
+        className: S.xm,
         children: (0, i.jsx)(r.Text, {
             variant: "text-sm/medium",
             color: "text-muted",
             children: u
         })
-    }) : m((e, t) => (0, i.jsx)(l.animated.div, {
+    }) : _((e, t) => (0, i.jsx)(l.animated.div, {
         style: e,
-        className: f.xm,
+        className: S.xm,
         children: (0, i.jsx)(r.Text, {
             variant: "text-sm/medium",
             color: "text-muted",
-            children: t ? _ : u
+            children: t ? m : u
         })
     }))
 }
@@ -101,26 +101,26 @@ function b(e) {
         guildBoostSlot: n,
         premiumSubscription: l,
         hasCancelableGuildBoostSlot: u,
-        showAltText: _,
+        showAltText: m,
         isLastGuildBoostSlot: g
-    } = e, A = (0, a.bG)([o.A], () => o.A.useReducedMotion), p = s.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), T = s.useMemo(() => null != p && p > new Date, [p]), E = (0, m.I5)(n), b = (0, d.A)(), N = s.useRef(null);
+    } = e, A = (0, a.bG)([o.A], () => o.A.useReducedMotion), h = s.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), T = s.useMemo(() => null != h && h > new Date, [h]), E = (0, _.I5)(n), b = (0, d.A)(), N = s.useRef(null);
     return (0, i.jsxs)("div", {
-        className: f.PW,
+        className: S.PW,
         children: [(0, i.jsxs)("div", {
-            className: f.$U,
-            children: [(0, i.jsx)(h.A, {
+            className: S.$U,
+            children: [(0, i.jsx)(p.A, {
                 isCanceled: E,
                 hasCooldown: T,
                 useReducedMotion: A
             }), (0, i.jsx)("div", {
-                className: f.vh,
-                children: null != p && T && !E ? (0, i.jsx)(x.A, {
-                    className: f.xm,
-                    cooldown: p.getTime()
+                className: S.vh,
+                children: null != h && T && !E ? (0, i.jsx)(x.A, {
+                    className: S.xm,
+                    cooldown: h.getTime()
                 }) : (0, i.jsx)(C, {
                     guildTier: t,
                     guildBoostSlot: n,
-                    showAltText: _,
+                    showAltText: m,
                     isCanceled: E,
                     premiumSubscription: l,
                     fractionalPremiumInfo: b
@@ -144,8 +144,8 @@ function b(e) {
                 children: e => (0, i.jsx)(r.DUT, {
                     ...e,
                     innerRef: N,
-                    "aria-label": S.intl.string(S.t.PdRCRg),
-                    className: f.oU,
+                    "aria-label": f.intl.string(f.t.PdRCRg),
+                    className: S.oU,
                     children: (0, i.jsx)(r.FHP, {
                         size: "md",
                         color: "currentColor"
@@ -153,7 +153,7 @@ function b(e) {
                 })
             })]
         }), !g && (0, i.jsx)("div", {
-            className: f.eX
+            className: S.eX
         })]
     })
 }
@@ -165,10 +165,10 @@ function N(e) {
         premiumSubscription: s,
         hasCancelableGuildBoostSlot: l,
         showAltText: r
-    } = e, o = (0, a.bG)([_.A], () => _.A.getGuild(t), [t]);
+    } = e, o = (0, a.bG)([m.A], () => m.A.getGuild(t), [t]);
     return (0, i.jsxs)("div", {
-        className: f.ag,
-        children: [(0, i.jsx)(p.A, {
+        className: S.ag,
+        children: [(0, i.jsx)(h.A, {
             guildId: t,
             boostingVariant: !1
         }), n.map((e, t) => (0, i.jsx)(b, {
@@ -187,7 +187,7 @@ function I(e) {
         guildId: t,
         appliedGuildBoosts: n,
         premiumSubscription: s
-    } = e, l = (0, a.bG)([_.A], () => _.A.getGuild(t), [t]), r = A.default.fromTimestamp(Date.now());
+    } = e, l = (0, a.bG)([m.A], () => m.A.getGuild(t), [t]), r = A.default.fromTimestamp(Date.now());
     if (n.forEach(e => {
             (null == r || 0 > A.default.compare(e.id, r)) && (r = e.id)
         }), null == r) return null;
@@ -202,8 +202,8 @@ function I(e) {
         cooldown_ends_at: null
     }, s);
     return (0, i.jsxs)("div", {
-        className: f.ag,
-        children: [(0, i.jsx)(p.A, {
+        className: S.ag,
+        children: [(0, i.jsx)(h.A, {
             guildId: t,
             boostingVariant: !1
         }), n.map((e, t) => (0, i.jsx)(b, {
@@ -229,16 +229,16 @@ function v(e) {
         }), e
     }, [t]);
     return null == n || 0 === t.length ? null : (0, i.jsxs)("div", {
-        className: f.iE,
+        className: S.iE,
         children: [(0, i.jsx)("div", {
-            className: f.kL,
+            className: S.kL,
             children: A.default.keys(l).map(e => (0, i.jsx)(I, {
                 guildId: e,
                 premiumSubscription: n,
                 appliedGuildBoosts: l[e]
             }, e))
         }), (0, i.jsx)("div", {
-            className: f.vK
+            className: S.vK
         })]
     })
 }
@@ -264,7 +264,7 @@ function j(e) {
             n = {};
         return Object.keys(t).forEach(i => {
             let s = t[i];
-            if (!(0, m.I5)(s) && e++, null != s.premiumGuildSubscription) {
+            if (!(0, _.I5)(s) && e++, null != s.premiumGuildSubscription) {
                 let e = s.premiumGuildSubscription.guildId;
                 e in n || (n[e] = []), n[e].push(s)
             }
@@ -276,9 +276,9 @@ function j(e) {
     if (null == n || 0 === Object.keys(r).length) return null;
     let d = o > g.Ay.getNumIncludedPremiumGuildSubscriptionSlots(n.planId);
     return (0, i.jsxs)("div", {
-        className: f.iE,
+        className: S.iE,
         children: [(0, i.jsx)("div", {
-            className: f.kL,
+            className: S.kL,
             children: A.default.keys(r).map(e => (0, i.jsx)(N, {
                 guildId: e,
                 guildBoostSlotRecords: r[e],
@@ -287,7 +287,7 @@ function j(e) {
                 showAltText: l
             }, e))
         }), (0, i.jsx)("div", {
-            className: f.vK
+            className: S.vK
         })]
     })
 }

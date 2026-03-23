@@ -11,9 +11,9 @@ var i = n(627968),
     d = n(957565),
     c = n(985018),
     u = n(139674),
-    _ = n(473169);
+    m = n(473169);
 
-function m(e) {
+function _(e) {
     let {
         code: {
             code: t,
@@ -23,7 +23,7 @@ function m(e) {
         "c" === e.key && e.metaKey && d.p5 && (e.preventDefault(), e.stopPropagation(), (0, d.C)(a), r?.current?.focus())
     }, [a]);
     return (0, i.jsx)("li", {
-        className: _.SX,
+        className: m.SX,
         children: (0, i.jsxs)(l.DUT, {
             innerRef: r,
             className: u.Uc,
@@ -41,7 +41,7 @@ function m(e) {
 function g(e) {
     let {
         backupCodes: t
-    } = e, n = s.useCallback(e => e.map(e => (0, i.jsx)(m, {
+    } = e, n = s.useCallback(e => e.map(e => (0, i.jsx)(_, {
         code: e
     }, e.code)), []), d = s.useCallback(async () => {
         let e = o.A.getVerificationKey();

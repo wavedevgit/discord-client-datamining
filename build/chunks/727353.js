@@ -14,8 +14,8 @@ var l = i(503698),
     u = i(587895),
     c = i(402216),
     m = i(12351),
-    A = i(769015),
-    p = i(877315),
+    p = i(769015),
+    A = i(877315),
     h = i(607407),
     g = i(652215),
     f = i(985018),
@@ -48,7 +48,7 @@ function E(t) {
     }) : f.intl.string(f.t["Jpkr/q"]), P = (0, n.jsxs)(n.Fragment, {
         children: [N && (0, n.jsxs)("div", {
             className: T.WG,
-            children: [null != D && (0, n.jsx)(A.A, {
+            children: [null != D && (0, n.jsx)(p.A, {
                 game: D,
                 className: T.lK
             }), (0, n.jsx)(a.Text, {
@@ -68,7 +68,7 @@ function E(t) {
                     variant: "text-sm/normal",
                     color: "none",
                     className: T.ON,
-                    children: (0, p.A)(e, i, C, _)
+                    children: (0, A.A)(e, i, C, _)
                 })
             }) : null]
         }) : (0, n.jsxs)("div", {
@@ -82,7 +82,7 @@ function E(t) {
                     variant: "text-sm/normal",
                     color: "none",
                     className: T.ON,
-                    children: (0, p.A)(e, i, C, _)
+                    children: (0, A.A)(e, i, C, _)
                 })
             }) : null]
         }), (0, n.jsxs)("div", {
@@ -133,7 +133,7 @@ function C(t) {
         user: s,
         currentUserId: u,
         canWatch: m,
-        unavailableReason: A,
+        unavailableReason: p,
         onWatchStream: S,
         onAction: E,
         showHeader: C = !1,
@@ -162,7 +162,7 @@ function C(t) {
                     variant: "text-sm/normal",
                     color: "none",
                     className: T.ON,
-                    children: (0, p.A)(e, l, u, A)
+                    children: (0, A.A)(e, l, u, p)
                 })
             }) : null]
         }) : (0, n.jsxs)("div", {
@@ -176,7 +176,7 @@ function C(t) {
                     variant: "text-sm/normal",
                     color: "none",
                     className: T.ON,
-                    children: (0, p.A)(e, l, u, A)
+                    children: (0, A.A)(e, l, u, p)
                 })
             }) : null]
         }), (0, n.jsx)("div", {

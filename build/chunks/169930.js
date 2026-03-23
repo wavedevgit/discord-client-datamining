@@ -1,6 +1,6 @@
 /** chunk id: 169930 params = (module,exports,require) **/
 n.d(t, {
-    _: () => _
+    _: () => m
 });
 var i = n(793574),
     s = n(419954),
@@ -11,7 +11,7 @@ var i = n(793574),
     d = n(780964),
     c = n(652215),
     u = n(985018);
-let _ = (0, s.sN)(d.X.SOUNDBOARD_VOLUME_SETTING, {
+let m = (0, s.sN)(d.X.SOUNDBOARD_VOLUME_SETTING, {
     useTitle: () => u.intl.string(u.t.kbFsAD),
     useSubtitle: () => u.intl.format(u.t.BPbGq7, {
         helpCenterArticle: r.A.getArticleURL(c.MVz.SOUNDBOARD)

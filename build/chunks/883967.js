@@ -1,6 +1,6 @@
 /** chunk id: 883967 params = (module,exports,require) **/
 n.d(t, {
-    J: () => _
+    J: () => m
 });
 var i = n(934551),
     s = n(824552),
@@ -22,7 +22,7 @@ let c = (0, l.zZ)(a.X.AUTHORIZED_APPS_CATEGORY, {
         hideInStreamerMode: !0,
         buildLayout: () => [c]
     }),
-    _ = (0, l.i4)(a.X.AUTHORIZED_APPS_SIDEBAR_ITEM, {
+    m = (0, l.i4)(a.X.AUTHORIZED_APPS_SIDEBAR_ITEM, {
         useTitle: () => d.intl.string(d.t["f6kk+r"]),
         icon: i.AppsIcon,
         buildLayout: () => [u]

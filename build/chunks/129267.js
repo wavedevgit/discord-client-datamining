@@ -1,6 +1,6 @@
 /** chunk id: 129267 params = (module,exports,require) **/
 n.d(t, {
-    X: () => _
+    X: () => m
 });
 var i = n(419117),
     s = n(419954),
@@ -25,7 +25,7 @@ let c = l.X.NOTIFICATIONS_ADVANCED_ACCORDION,
         },
         buildLayout: () => [a.z, r.m, o.j]
     }),
-    _ = (0, s.zZ)(l.X.NOTIFICATIONS_ADVANCED_CATEGORY, {
+    m = (0, s.zZ)(l.X.NOTIFICATIONS_ADVANCED_CATEGORY, {
         useTitle: () => d.intl.string(d.t["31DySj"]),
         buildLayout: () => [u]
     })

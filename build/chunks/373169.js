@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(780964),
     c = n(840065),
     u = n(985018),
-    _ = n(58477),
-    m = n(72290);
+    m = n(58477),
+    _ = n(72290);
 
 function g() {
     let e = (0, l.bG)([o.default], () => o.default.locale),
@@ -29,22 +29,22 @@ function g() {
                 value: e.value,
                 label: e.name,
                 leading: (0, i.jsx)("div", {
-                    className: _.Jt,
+                    className: m.Jt,
                     "aria-hidden": !0,
                     children: (0, i.jsx)("img", {
                         alt: "",
                         src: t,
-                        className: _.Eb
+                        className: m.Eb
                     })
                 }),
                 trailing: (0, i.jsx)("span", {
-                    className: _.hI,
+                    className: m.hI,
                     children: u.intl.string(e.localizedName)
                 })
             }
         }), []),
         x = s.useCallback(e => {
-            g(e), m.nextTick(() => {
+            g(e), _.nextTick(() => {
                 r.Ay.updateLocale(e), (0, a.OoC)(c.USER_SETTINGS_MODAL_KEY) && (0, c.openUserSettings)(d.X.LANGUAGE_AND_TIME_PANEL)
             })
         }, []);

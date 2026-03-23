@@ -13,8 +13,8 @@ var l = i(503698),
     u = i(707606),
     c = i(573648),
     m = i(235986),
-    A = i(338234),
-    p = i(159426),
+    p = i(338234),
+    A = i(159426),
     h = i(25528),
     g = i(655724),
     f = i(82149),
@@ -32,8 +32,8 @@ var l = i(503698),
     D = i(462226),
     O = i(329151),
     P = i(738080),
-    U = i(648246),
-    L = i(305637),
+    L = i(648246),
+    U = i(305637),
     b = i(652215),
     M = i(620452);
 let R = (0, u.A)(t => {
@@ -54,12 +54,12 @@ let R = (0, u.A)(t => {
         return a()(null != t, "UserActivityActions: currentUser cannot be undefined"), t
     }), B = w === _.O.STREAM_PREVIEW || null != s, k = (0, C.A)(e), Y = k || B ? m.A.Direction.HORIZONTAL : m.A.Direction.VERTICAL, z = e?.type === b.$pd.HANG_STATUS, $ = (0, o.bG)([E.A, T.A], () => z ? T.A.getChannel(E.A.getVoiceStateForUser(l.id)?.channelId) : null), J = (0, o.bG)([T.A], () => null != G ? T.A.getChannel(G) : null, [G]), {
         enableUserHoverActivities: K
-    } = (0, A.fC)({
+    } = (0, p.fC)({
         guildId: R ?? J?.guild_id,
         location: "UserActivityActions"
     }), {
         enableRequestToStream: Z
-    } = p.m.useExperiment({
+    } = A.m.useExperiment({
         guildId: R ?? J?.guild_id,
         location: "UserActivityActions"
     }, {
@@ -114,7 +114,7 @@ let R = (0, u.A)(t => {
                     onAction: F
                 })
             }
-            return B ? (0, n.jsx)(L.A, {
+            return B ? (0, n.jsx)(U.A, {
                 isCurrentUser: W.id === l.id,
                 applicationStream: s,
                 onAction: F
@@ -128,7 +128,7 @@ let R = (0, u.A)(t => {
                     userId: l.id,
                     channel: J,
                     onAction: F
-                }), (0, n.jsx)(U.A, {
+                }), (0, n.jsx)(L.A, {
                     activity: e,
                     variant: q ? "secondary" : H,
                     onAction: F

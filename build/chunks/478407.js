@@ -15,7 +15,7 @@ function u(e) {
     let {
         onGoBack: t
     } = e, n = (0, l.yK)([r.A], () => r.A.getActiveApplicationSubscriptions()?.slice().sort((e, t) => (e.createdAt?.getTime() ?? e.currentPeriodStart.getTime()) - (t.createdAt?.getTime() ?? t.currentPeriodStart.getTime())) ?? []), [a, u] = s.useState();
-    return null == a && (a = (0, i.jsx)(_, {
+    return null == a && (a = (0, i.jsx)(m, {
         onBack: t,
         title: d.intl.string(d.t["DB/m9a"])
     })), (0, i.jsxs)("div", {
@@ -24,7 +24,7 @@ function u(e) {
             children: (0, i.jsx)(o.A, {
                 subscriptions: n,
                 updateHeader: (e, t) => {
-                    u((0, i.jsx)(_, {
+                    u((0, i.jsx)(m, {
                         title: e,
                         onBack: () => {
                             t(), u(void 0)
@@ -36,7 +36,7 @@ function u(e) {
     })
 }
 
-function _(e) {
+function m(e) {
     let {
         onBack: t,
         title: n

@@ -18,7 +18,7 @@ function d(e) {
         title: d,
         description: c,
         onClick: u,
-        style: _
+        style: m
     } = e;
     return (0, i.jsxs)(r.DUT, {
         className: l()(o.EA, {
@@ -26,7 +26,7 @@ function d(e) {
         }),
         onClick: u,
         innerRef: t,
-        style: _,
+        style: m,
         children: [null != n && (0, i.jsx)("div", {
             className: o._y,
             children: n

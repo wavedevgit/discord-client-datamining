@@ -1,6 +1,6 @@
 /** chunk id: 12508 params = (module,exports,require) **/
 n.d(t, {
-    n: () => _
+    n: () => m
 });
 var i = n(64700),
     s = n(665260),
@@ -11,7 +11,7 @@ var i = n(64700),
     d = n(780964),
     c = n(652215),
     u = n(985018);
-let _ = (0, a.zD)(d.X.CONTENT_AND_SOCIAL_FRIEND_REQUESTS_MUTUAL_GUILDS_SETTING, {
+let m = (0, a.zD)(d.X.CONTENT_AND_SOCIAL_FRIEND_REQUESTS_MUTUAL_GUILDS_SETTING, {
     useTitle: () => u.intl.string(u.t.qsMfsH),
     useValue: () => {
         let e = o.FA.useSetting(),

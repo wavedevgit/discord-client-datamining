@@ -12,17 +12,17 @@ var i = n(627968),
     d = n(607399),
     c = n(877624),
     u = n(311907),
-    _ = n(230109),
-    m = n(732955),
+    m = n(230109),
+    _ = n(732955),
     g = n(582754),
     A = n(421380),
     x = n(397927),
-    h = n(73153),
-    p = n(384904),
+    p = n(73153),
+    h = n(384904),
     T = n(73825),
     E = n(974544),
-    S = n(736653),
-    f = n(793574),
+    f = n(736653),
+    S = n(793574),
     C = n(688810),
     b = n(86379),
     N = n(531260),
@@ -30,17 +30,17 @@ var i = n(627968),
     v = n(459793),
     j = n(721668),
     y = n(976860),
-    R = n(780964),
-    O = n(12901),
+    O = n(780964),
+    R = n(12901),
     L = n(840065),
-    D = n(351906),
-    P = n(287809),
+    P = n(351906),
+    D = n(287809),
     M = n(166403),
     G = n(224016),
-    U = n(954571),
-    k = n(975571),
-    V = n(927578),
-    w = n(526292),
+    k = n(954571),
+    U = n(975571),
+    w = n(927578),
+    V = n(526292),
     B = n(637073),
     H = n(810498),
     F = n(807098),
@@ -67,13 +67,13 @@ let eo = "to_premium_home_button",
     ec = "gifting_button",
     eu = "payment modal";
 
-function e_(e) {
+function em(e) {
     let {
         premiumSubscription: t,
         isDiscountApplied: n,
         activeDiscountInfo: s,
         theme: l
-    } = e, a = t.hasActiveTrial, r = t.planIdFromItems === et.gD.PREMIUM_YEAR_TIER_2, d = n || a, c = null != t.trialEndsAt ? o()(t.trialEndsAt).diff(o()(), "d") : 0, u = et.hd[t.planIdFromItems], _ = V.Ay.formatPriceString(V.Ay.getDefaultPrice(u.id), u.interval);
+    } = e, a = t.hasActiveTrial, r = t.planIdFromItems === et.gD.PREMIUM_YEAR_TIER_2, d = n || a, c = null != t.trialEndsAt ? o()(t.trialEndsAt).diff(o()(), "d") : 0, u = et.hd[t.planIdFromItems], m = w.Ay.formatPriceString(w.Ay.getDefaultPrice(u.id), u.interval);
     return d ? (0, i.jsxs)(i.Fragment, {
         children: [(a || !r) && (0, i.jsx)(q.ir, {
             text: a ? es.intl.string(es.t.qYKftX) : es.intl.string(es.t.EyjDRE),
@@ -87,13 +87,13 @@ function e_(e) {
             className: el.KB,
             children: a ? es.intl.format(es.t["2CGBri"], {
                 remainingTime: c,
-                price: _
+                price: m
             }) : r ? es.intl.format(es.t["+qqh6g"], {
                 percent: s?.percentage ?? et.Cq,
-                regularPrice: _
+                regularPrice: m
             }) : es.intl.formatToPlainString(es.t["3ZiutU"], {
                 percent: s?.percentage ?? et._$,
-                regularPrice: _,
+                regularPrice: m,
                 numMonths: s?.duration ?? et.OJ
             })
         })]
@@ -104,18 +104,18 @@ function e_(e) {
     })
 }
 
-function em() {
-    let e = (0, w.k5)(),
-        t = (0, w.nf)(),
-        n = (0, S.Ay)(),
+function e_() {
+    let e = (0, V.k5)(),
+        t = (0, V.nf)(),
+        n = (0, f.Ay)(),
         s = (0, u.bG)([M.A], () => M.A.getPremiumTypeSubscription()),
-        l = (0, u.bG)([P.default], () => P.default.getCurrentUser()),
+        l = (0, u.bG)([D.default], () => D.default.getCurrentUser()),
         r = l?.isPremiumWithPremiumGroup(),
         o = (0, N.A)(),
         d = (0, B.d)(),
         c = null !== s && null !== s.planIdFromItems;
     if (!c && !o.isFractionalPremiumActive && !r) return null;
-    let _ = o.isFractionalPremiumActive,
+    let m = o.isFractionalPremiumActive,
         A = null !== s && s.hasActiveTrial;
     return (0, i.jsxs)("div", {
         className: a()(el.$Y, {
@@ -134,7 +134,7 @@ function em() {
                 style: {
                     marginBottom: "18px"
                 }
-            }) : _ && !d ? (0, i.jsxs)(i.Fragment, {
+            }) : m && !d ? (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(q.R, {
                     text: es.intl.string(es.t.uXF4c4),
                     className: el.rd,
@@ -144,10 +144,10 @@ function em() {
                     color: "always-white",
                     className: el.sQ,
                     children: es.intl.format(es.t.sK7fGl, {
-                        helpCenterLink: k.A.getArticleURL(ei.MVz.FRACTIONAL_PREMIUM_ABOUT)
+                        helpCenterLink: U.A.getArticleURL(ei.MVz.FRACTIONAL_PREMIUM_ABOUT)
                     })
                 })]
-            }) : c ? (0, i.jsx)(e_, {
+            }) : c ? (0, i.jsx)(em, {
                 premiumSubscription: s,
                 isDiscountApplied: e,
                 activeDiscountInfo: t,
@@ -166,45 +166,45 @@ function em() {
                     })
                 })]
             }) : null, (0, i.jsx)(J.ZP, {
-                featureSet: l?.isPremiumGroupPrimary() ? J.Nz.PREMIUM_GROUP_PRIMARY : l?.isPremiumGroupMember() ? J.Nz.PREMIUM_GROUP_MEMBER : _ ? J.Nz.FRACTIONAL_PREMIUM : J.Nz.DEFAULT
-            }), _ && !c ? (0, i.jsxs)(m.e2v, {
+                featureSet: l?.isPremiumGroupPrimary() ? J.Nz.PREMIUM_GROUP_PRIMARY : l?.isPremiumGroupMember() ? J.Nz.PREMIUM_GROUP_MEMBER : m ? J.Nz.FRACTIONAL_PREMIUM : J.Nz.DEFAULT
+            }), m && !c ? (0, i.jsxs)(_.e2v, {
                 fullWidth: !0,
                 direction: "vertical",
                 children: [(0, i.jsx)(Z.A, {
                     defaultTextOverride: d ? es.intl.string(es.t.YScQSF) : es.intl.string(es.t["0b3YRn"])
-                }), (0, i.jsx)(m.$nd, {
+                }), (0, i.jsx)(_.$nd, {
                     onClick: () => {
-                        U.default.track(ei.HAw.PREMIUM_SETTINGS_INTERACTED, {
+                        k.default.track(ei.HAw.PREMIUM_SETTINGS_INTERACTED, {
                             cta_type: eo,
                             target: ed
-                        }), (0, O.default)(), (0, y.pX)(ei.BVt.APPLICATION_STORE)
+                        }), (0, R.default)(), (0, y.pX)(ei.BVt.APPLICATION_STORE)
                     },
                     variant: "overlay-secondary",
                     fullWidth: !0,
                     size: "md",
                     text: d ? es.intl.string(es.t.VR2iVB) : es.intl.string(es.t.T1aUAX)
                 })]
-            }) : (0, i.jsxs)(m.e2v, {
+            }) : (0, i.jsxs)(_.e2v, {
                 fullWidth: !0,
                 direction: "vertical",
-                children: [(0, i.jsx)(m.$nd, {
+                children: [(0, i.jsx)(_.$nd, {
                     variant: "overlay-primary",
                     fullWidth: !0,
                     onClick: () => {
-                        U.default.track(ei.HAw.PREMIUM_SETTINGS_INTERACTED, {
+                        k.default.track(ei.HAw.PREMIUM_SETTINGS_INTERACTED, {
                             cta_type: eo,
                             target: ed
-                        }), (0, O.default)(), (0, y.pX)(ei.BVt.APPLICATION_STORE)
+                        }), (0, R.default)(), (0, y.pX)(ei.BVt.APPLICATION_STORE)
                     },
                     text: es.intl.string(es.t.VR2iVB),
                     size: "md"
-                }), (0, i.jsx)(m.$nd, {
+                }), (0, i.jsx)(_.$nd, {
                     variant: "overlay-secondary",
                     onClick: () => {
-                        U.default.track(ei.HAw.PREMIUM_SETTINGS_INTERACTED, {
+                        k.default.track(ei.HAw.PREMIUM_SETTINGS_INTERACTED, {
                             cta_type: "to_subscriptions_button",
                             target: "subscriptions settings"
-                        }), (0, L.openUserSettings)(R.X.SUBSCRIPTIONS_PANEL)
+                        }), (0, L.openUserSettings)(O.X.SUBSCRIPTIONS_PANEL)
                     },
                     text: es.intl.string(es.t["9uDy6C"]),
                     fullWidth: !0,
@@ -266,7 +266,7 @@ function eg(e) {
                 variant: "primary",
                 size: "md",
                 onClick: () => {
-                    U.default.track(ei.HAw.PREMIUM_SETTINGS_INTERACTED, {
+                    k.default.track(ei.HAw.PREMIUM_SETTINGS_INTERACTED, {
                         cta_type: ec,
                         target: eu
                     })
@@ -301,7 +301,7 @@ function eA() {
                 },
                 color: A.$n.Colors.CUSTOM,
                 onClick: () => {
-                    U.default.track(ei.HAw.PREMIUM_SETTINGS_INTERACTED, {
+                    k.default.track(ei.HAw.PREMIUM_SETTINGS_INTERACTED, {
                         cta_type: ec,
                         target: eu
                     })
@@ -314,12 +314,12 @@ let ex = function() {
     let e = (0, b.Hp)(),
         {
             analyticsLocations: t
-        } = (0, C.Ay)(f.A.PREMIUM_SETTINGS),
-        n = (0, u.bG)([P.default], () => P.default.getCurrentUser()),
+        } = (0, C.Ay)(S.A.PREMIUM_SETTINGS),
+        n = (0, u.bG)([D.default], () => D.default.getCurrentUser()),
         l = (0, u.bG)([M.A], () => M.A.getPremiumTypeSubscription()),
         a = (0, u.bG)([M.A], () => M.A.hasFetchedSubscriptions()),
         r = (0, I.Y)(et.T7),
-        [o, m] = s.useState(!0),
+        [o, _] = s.useState(!0),
         g = (0, N.A)({
             forceFetch: !0
         }),
@@ -327,52 +327,52 @@ let ex = function() {
             let e = Y.A.getMarketingComponentByType(c.C.BILLING_SETTINGS_NITRO_GIFT_BANNER);
             return null == e || "billingSettingsNitroGiftBanner" !== e.properties.properties.oneofKind ? null : e.properties.properties.billingSettingsNitroGiftBanner
         }),
-        S = !(d.Fr || d.v1) && null != A,
-        y = (0, u.bG)([D.A], () => D.A.enabled),
-        R = s.useRef(null);
+        f = !(d.Fr || d.v1) && null != A,
+        y = (0, u.bG)([P.A], () => P.A.enabled),
+        O = s.useRef(null);
     (0, X.i)();
-    let O = (0, z.m)();
+    let R = (0, z.m)();
     s.useEffect(() => {
-        h.h.wait(async () => {
-            y || e || await Promise.all([p.hP(), p.$o(), (0, T.zS)(null, null, ei.tF5.DISCOVERY)]), m(!1)
+        p.h.wait(async () => {
+            y || e || await Promise.all([h.hP(), h.$o(), (0, T.zS)(null, null, ei.tF5.DISCOVERY)]), _(!1)
         })
     }, [y, e]);
     let [L, G] = s.useState(!1);
     if (y) return (0, i.jsx)(E.A, {});
     if (e) return (0, i.jsx)(v.uK, {});
-    let k = a && null !== l && r,
-        V = g.fetched && g.isFractionalPremiumActive,
-        w = n?.isPremiumWithPremiumGroup();
-    if (!k && !V && !o && !w) return (0, i.jsx)(j.A, {
+    let U = a && null !== l && r,
+        w = g.fetched && g.isFractionalPremiumActive,
+        V = n?.isPremiumWithPremiumGroup();
+    if (!U && !w && !o && !V) return (0, i.jsx)(j.A, {
         title: es.intl.string(es.t.dyq9TR),
         note: null
     });
-    if (!k && !V && !w || o) return (0, i.jsx)(x.y$y, {});
+    if (!U && !w && !V || o) return (0, i.jsx)(x.y$y, {});
     let B = !!l?.hasActiveTrial;
     return (0, i.jsx)(C.f5, {
         value: t,
         children: (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)("div", {
-                children: [S && (0, i.jsx)(eg, {
+                children: [f && (0, i.jsx)(eg, {
                     config: A
-                }), (0, i.jsx)(em, {}), O && (0, i.jsx)(ee.A, {
+                }), (0, i.jsx)(e_, {}), R && (0, i.jsx)(ee.A, {
                     isInSettings: !0
-                }), !S && (0, i.jsx)(eA, {}), (0, i.jsx)($.A, {
+                }), !f && (0, i.jsx)(eA, {}), (0, i.jsx)($.A, {
                     hideCTAs: !0,
                     headingOverride: es.intl.string(es.t.dnVvQS),
                     hidePill: !B,
                     selectedPlanColumnClassName: el.JG,
                     selectedPlanTier: et.PremiumTypes.TIER_2
                 })]
-            }), (0, i.jsx)(_.L, {
-                innerRef: R,
+            }), (0, i.jsx)(m.L, {
+                innerRef: O,
                 onChange: e => {
-                    e && !L && (U.default.track(ei.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                    e && !L && (k.default.track(ei.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                         location_stack: t
                     }), G(!0))
                 },
                 children: (0, i.jsx)("div", {
-                    ref: R,
+                    ref: O,
                     className: el._Z
                 })
             })]

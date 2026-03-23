@@ -1,90 +1,90 @@
 /** chunk id: 362205 params = (module,exports,require) **/
 "use strict";
-n.d(t, {
-    A: () => S
+r.d(t, {
+    A: () => A
 });
-var r = n(627968),
-    i = n(64700),
-    a = n(503698),
-    l = n.n(a),
-    s = n(284009),
-    o = n.n(s),
-    c = n(497766),
-    u = n(942381),
-    d = n(837381),
-    h = n(319354),
-    _ = n(397927),
-    f = n(775602),
-    m = n(253932),
-    p = n(894858),
-    b = n(272053),
-    g = n(189857),
-    y = n(674085),
-    v = n(188180),
-    x = n(890690),
-    E = n(637577);
+var n = r(627968),
+    a = r(64700),
+    i = r(503698),
+    l = r.n(i),
+    s = r(284009),
+    o = r.n(s),
+    c = r(497766),
+    u = r(942381),
+    d = r(837381),
+    h = r(319354),
+    f = r(397927),
+    _ = r(775602),
+    m = r(253932),
+    p = r(894858),
+    g = r(272053),
+    b = r(189857),
+    y = r(674085),
+    v = r(188180),
+    x = r(890690),
+    E = r(637577);
 
-function A(e) {
+function S(e) {
     let {
         category: t,
-        onClick: n,
-        active: i,
-        dismissibleBadge: a
+        onClick: r,
+        active: a,
+        dismissibleBadge: i
     } = e, {
         useTitle: s,
         useSubnavLabel: c,
         key: u
-    } = t, h = s?.(), f = c?.() ?? h;
-    return o()(null != f, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(d.tG, {
+    } = t, h = s?.(), _ = c?.() ?? h;
+    return o()(null != _, "[SettingsSubnavigationCategory] Category must have a title"), (0, n.jsx)(d.tG, {
         id: u,
-        children: e => (0, r.jsxs)(_.DUT, {
-            onClick: n,
+        children: e => (0, n.jsxs)(f.DUT, {
+            onClick: r,
             className: l()(E.AS, {
-                [E.vu]: i
+                [E.vu]: a
             }),
             ...e,
-            children: [f, null != a && !i && (0, r.jsx)(y.A, {
-                badge: a
+            children: [_, null != i && !a && (0, n.jsx)(y.A, {
+                badge: i
             })]
         }, u)
     })
 }
 
-function S(e) {
+function A(e) {
     let {
         categories: t,
-        visibleContent: n,
-        dismissibleBadges: a
-    } = e, [l, s] = i.useState(() => {
+        visibleContent: r,
+        dismissibleBadges: i
+    } = e, [l, s] = a.useState(() => {
         let e = p.A.getField("currentCategoryKey"),
-            n = t.find(t => t.key === e);
-        return n?.key ?? t[0].key
+            r = t.find(t => t.key === e);
+        return r?.key ?? t[0].key
     });
-    i.useEffect(() => p.A.subscribe(e => {
+    a.useEffect(() => p.A.subscribe(e => {
         let {
             currentCategoryKey: t
         } = e;
         return t
     }, e => {
-        let n = t.find(t => t.key === e);
-        null != n && s(n.key)
+        let r = t.find(t => t.key === e);
+        null != r && s(r.key)
     }, {
         equalityFn: u.x
     }), [t]);
-    let o = i.useMemo(() => Math.max(t.findIndex(e => e.key === l), 0), [t, l]),
+    let o = a.useMemo(() => Math.max(t.findIndex(e => e.key === l), 0), [t, l]),
         {
             thumbRef: d,
             trackRef: y,
-            thumbAnchorRef: S,
+            thumbAnchorRef: A,
             springs: N
         } = function(e) {
             let t = m.Xi.useSetting(),
-                n = i.useRef(null),
-                r = i.useRef(null),
-                a = i.useRef(null),
-                l = i.useRef(!0),
-                s = i.useRef(t),
-                [o, c] = (0, _.zhh)(() => ({
+                r = a.useRef(null),
+                n = a.useRef(null),
+                i = a.useRef(null),
+                l = a.useRef(!0),
+                s = a.useRef(t),
+                [o, c] = (0, f.zhh)(() => ({
                     y: 0,
                     height: 0,
                     config: {
@@ -93,30 +93,30 @@ function S(e) {
                         tension: 300
                     }
                 }));
-            return i.useLayoutEffect(() => {
+            return a.useLayoutEffect(() => {
                 let e = s.current !== t,
-                    i = () => {
-                        if (null == n.current || null == r.current || null == a.current) return;
-                        let [i, u] = [n.current.getBoundingClientRect(), a.current.getBoundingClientRect()], d = i.width / 2, h = (u.y - i.y) / d, _ = u.height / d;
-                        l.current || e || f.A.useReducedMotion ? (o.y.set(h), o.height.set(_)) : c({
+                    a = () => {
+                        if (null == r.current || null == n.current || null == i.current) return;
+                        let [a, u] = [r.current.getBoundingClientRect(), i.current.getBoundingClientRect()], d = a.width / 2, h = (u.y - a.y) / d, f = u.height / d;
+                        l.current || e || _.A.useReducedMotion ? (o.y.set(h), o.height.set(f)) : c({
                             y: h,
-                            height: _
+                            height: f
                         }), l.current = !1, s.current = t
                     },
                     u = null;
                 return e ? u = requestAnimationFrame(() => {
-                    u = null, i()
-                }) : i(), () => {
+                    u = null, a()
+                }) : a(), () => {
                     null != u && cancelAnimationFrame(u)
                 }
             }, [e, c, o.y, o.height, t]), {
-                thumbRef: r,
-                trackRef: n,
-                thumbAnchorRef: a,
+                thumbRef: n,
+                trackRef: r,
+                thumbAnchorRef: i,
                 springs: o
             }
         }(o);
-    return (0, x.u)(t), (0, r.jsxs)("div", {
+    return (0, x.u)(t), (0, n.jsxs)("div", {
         className: E.o8,
         role: "list",
         style: {
@@ -125,25 +125,25 @@ function S(e) {
             "--custom-nav-width": "2px",
             "--custom-icon-size": `${h.E[v.V]}px`
         },
-        children: [(0, r.jsx)("div", {
+        children: [(0, n.jsx)("div", {
             className: E.u4,
             "aria-hidden": "true",
             ref: y,
-            children: (0, r.jsx)(c.animated.div, {
+            children: (0, n.jsx)(c.animated.div, {
                 className: E.FF,
                 style: N,
                 ref: d
             })
-        }), (0, r.jsx)("div", {
+        }), (0, n.jsx)("div", {
             className: E.gu,
             "aria-hidden": "true",
-            ref: S
+            ref: A
         }), t.map(e => {
-            let t = (0, g.H)(e.key, n, a);
-            return (0, r.jsx)(A, {
+            let t = (0, b.H)(e.key, r, i);
+            return (0, n.jsx)(S, {
                 onClick: () => {
                     var t;
-                    return t = e.key, void b.A.navigate(t, {
+                    return t = e.key, void g.A.navigate(t, {
                         showNavigationMobile: !1
                     })
                 },

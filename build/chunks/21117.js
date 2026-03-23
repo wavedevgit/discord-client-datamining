@@ -1,6 +1,6 @@
 /** chunk id: 21117 params = (module,exports,require) **/
 n.d(t, {
-    b: () => _
+    b: () => m
 });
 var i = n(64700),
     s = n(311907),
@@ -11,7 +11,7 @@ var i = n(64700),
     d = n(964404),
     c = n(780964),
     u = n(985018);
-let _ = (0, r.Qx)(c.X.HIGH_DYNAMIC_RANGE, {
+let m = (0, r.Qx)(c.X.HIGH_DYNAMIC_RANGE, {
     useTitle: () => u.intl.string(u.t.nemtgW),
     useSubtitle: () => u.intl.string(u.t["O/Gjvn"]),
     usePersistentBadge: () => ({

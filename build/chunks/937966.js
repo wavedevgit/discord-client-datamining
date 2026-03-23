@@ -1,6 +1,6 @@
 /** chunk id: 937966 params = (module,exports,require) **/
 n.d(t, {
-    _: () => m
+    _: () => _
 });
 var i = n(311907),
     s = n(290595),
@@ -11,10 +11,10 @@ var i = n(311907),
     d = n(780964),
     c = n(137675),
     u = n(652215),
-    _ = n(985018);
-let m = (0, a.zD)(d.X.DATA_USAGE_PERSONALIZATION_SETTING, {
-    useTitle: () => _.intl.string(_.t.MNKzyg),
-    useSubtitle: () => _.intl.format(_.t["eQL/Mr"], {
+    m = n(985018);
+let _ = (0, a.zD)(d.X.DATA_USAGE_PERSONALIZATION_SETTING, {
+    useTitle: () => m.intl.string(m.t.MNKzyg),
+    useSubtitle: () => m.intl.format(m.t["eQL/Mr"], {
         helpdeskArticle: o.A.getArticleURL(u.MVz.DATA_USED_FOR_RECOMMENDED)
     }),
     useValue: function() {
@@ -22,13 +22,13 @@ let m = (0, a.zD)(d.X.DATA_USAGE_PERSONALIZATION_SETTING, {
     },
     setValue: function(e) {
         e ? (0, s.U)([u.YAq.PERSONALIZATION], []).catch(c.i) : (0, c.O)({
-            header: _.intl.string(_.t["9SNpzv"]),
-            confirmText: _.intl.string(_.t["9g5UGw"]),
-            cancelText: _.intl.string(_.t["+ZLPw9"]),
+            header: m.intl.string(m.t["9SNpzv"]),
+            confirmText: m.intl.string(m.t["9g5UGw"]),
+            cancelText: m.intl.string(m.t["+ZLPw9"]),
             onConfirm: () => {
                 (0, s.U)([], [u.YAq.PERSONALIZATION]).catch(c.i)
             },
-            body: _.intl.string(_.t.gJvDDh)
+            body: m.intl.string(m.t.gJvDDh)
         })
     },
     useDisabled: l.uM

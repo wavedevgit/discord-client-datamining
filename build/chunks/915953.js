@@ -17,49 +17,49 @@ function d(e) {
         getInitialValue: d,
         minValue: c,
         maxValue: u,
-        useDefaultValue: _,
-        useTitle: m,
+        useDefaultValue: m,
+        useTitle: _,
         useSubtitle: g,
         useHintText: A,
         useDisabled: x,
-        useExternalValue: h,
-        onValueRender: p,
+        useExternalValue: p,
+        onValueRender: h,
         asValueChanges: T,
         markers: E,
-        onMarkerRender: S,
-        stickToMarkers: f,
+        onMarkerRender: f,
+        stickToMarkers: S,
         fieldLayout: C,
         usePersistentBadge: b,
         getDismissibleBadges: N
-    } = t, [I] = s.useState(() => d()), v = h?.(), j = m(), y = g?.(), R = A?.(), O = x?.(), L = _?.(), D = b?.(), P = N?.(), M = (0, a.A)({
-        persistentBadge: D,
-        dismissibleBadges: P
+    } = t, [I] = s.useState(() => d()), v = p?.(), j = _(), y = g?.(), O = A?.(), R = x?.(), L = m?.(), P = b?.(), D = N?.(), M = (0, a.A)({
+        persistentBadge: P,
+        dismissibleBadges: D
     }), G = (0, r.q)(t);
     return (0, i.jsxs)(o.L, {
         children: [(0, i.jsx)(l.Apm, {
             label: j,
             description: y,
-            disabled: O,
+            disabled: R,
             initialValue: I,
             value: v,
             minValue: c,
             maxValue: u,
             defaultValue: L,
-            onValueRender: p,
+            onValueRender: h,
             asValueChanges: T,
             onValueChange: e => {
                 G(), n?.(e)
             },
             orientation: "horizontal",
             markers: E,
-            onMarkerRender: S,
-            stickToMarkers: f,
+            onMarkerRender: f,
+            stickToMarkers: S,
             layout: C,
             badge: M
-        }), null != R && (0, i.jsx)(l.Text, {
+        }), null != O && (0, i.jsx)(l.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
-            children: R
+            children: O
         })]
     })
 }

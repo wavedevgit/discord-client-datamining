@@ -1,6 +1,6 @@
 /** chunk id: 452910 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => p
 });
 var i = n(627968);
 n(64700);
@@ -12,22 +12,22 @@ var s = n(503698),
     d = n(422936),
     c = n(234419),
     u = n(396375),
-    _ = n(543233),
-    m = n(76707),
+    m = n(543233),
+    _ = n(76707),
     g = n(788868),
     A = n(985018),
     x = n(296388);
-let h = e => {
+let p = e => {
     let {
         title: t,
         titleClassName: n,
         buttonClassName: s,
-        subtitle: h,
-        description: p,
+        subtitle: p,
+        description: h,
         descriptionCta: T,
         isPremiumGetCta: E,
-        onCtaClick: S,
-        cardVariant: f
+        onCtaClick: f,
+        cardVariant: S
     } = e, C = (0, c.V)(), b = C?.subscription_trial, N = (0, d.O)(), I = (0, r.FY)({
         intervalType: b?.interval,
         intervalCount: b?.interval_count
@@ -39,15 +39,15 @@ let h = e => {
         onDiscountOffer: A.intl.formatToPlainString(A.t.bkQ4bH, {
             percent: N?.discount.amount
         })
-    }), j = (0, _.Q)(f);
+    }), j = (0, m.Q)(S);
     return (0, i.jsxs)("div", {
         className: l()(x.L_, j?.overlayContainer?.className),
-        children: [(0, i.jsx)(m.A, {
+        children: [(0, i.jsx)(_.A, {
             title: t,
             cardVariantStyleInfo: j,
             titleClassName: n,
-            subtitle: h,
-            description: p,
+            subtitle: p,
+            description: h,
             isOverlay: !0
         }), E && (0, i.jsx)(u.A, {
             className: s,
@@ -58,10 +58,10 @@ let h = e => {
                 textOverride: v
             },
             showGradient: !0
-        }), null != T && null != S && (0, i.jsx)(a.$n, {
+        }), null != T && null != f && (0, i.jsx)(a.$n, {
             "data-migration-pending": !0,
             className: s,
-            onClick: S,
+            onClick: f,
             children: T
         })]
     })

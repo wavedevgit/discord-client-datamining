@@ -11,11 +11,11 @@ var i = n(419954),
     d = n(189540),
     c = n(534771),
     u = n(549093),
-    _ = n(334218),
-    m = n(803119),
+    m = n(334218),
+    _ = n(803119),
     g = n(985018);
 let A = (0, i.FW)(s.X.NOTIFICATION_SELECTION_FIELD_SET, {
     variant: "compact",
     useTitle: () => g.intl.string(g.t.FEVRDV),
-    buildLayout: () => [d.L, m.q, l.Z, a.E, _.N, r.M, c.q, u.q, o.q]
+    buildLayout: () => [d.L, _.q, l.Z, a.E, m.N, r.M, c.q, u.q, o.q]
 })

@@ -17,20 +17,20 @@ function u(e) {
     } = e, {
         destinationKey: n,
         useTrailingDecoration: u,
-        useTitle: _,
-        useSubtitle: m
-    } = t, g = u?.(), A = m?.(), {
+        useTitle: m,
+        useSubtitle: _
+    } = t, g = u?.(), A = _?.(), {
         parentPanelNode: x,
-        parentSidebarItemNode: h
-    } = (0, a.x)(n), p = _?.(), T = x?.useTitle?.(), E = p ?? T, S = (0, r.q)(t);
+        parentSidebarItemNode: p
+    } = (0, a.x)(n), h = m?.(), T = x?.useTitle?.(), E = h ?? T, f = (0, r.q)(t);
     if (null == x || null == E) return null;
-    let f = null != h ? h.icon : void 0;
+    let S = null != p ? p.icon : void 0;
     return (0, i.jsx)(o.U, {
         title: E,
         description: A,
-        leadingElement: null != f && (0, i.jsx)("div", {
+        leadingElement: null != S && (0, i.jsx)("div", {
             className: c.z,
-            children: (0, i.jsx)(f, {
+            children: (0, i.jsx)(S, {
                 color: "currentColor"
             })
         }),
@@ -43,7 +43,7 @@ function u(e) {
         onClick: () => {
             l.A.navigate(n, {
                 animateSidebarScroll: !1
-            }), S()
+            }), f()
         }
     })
 }

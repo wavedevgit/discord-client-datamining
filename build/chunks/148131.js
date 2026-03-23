@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(287809),
     c = n(53719),
     u = n(390370),
-    _ = n(191627),
-    m = n(842130),
+    m = n(191627),
+    _ = n(842130),
     g = n(985018),
     A = n(487693);
 
@@ -37,13 +37,13 @@ function x(e) {
             className: A.zH,
             children: (0, i.jsx)(u.A, {
                 otherUser: t,
-                status: _.Ef.ACTIVE
+                status: m.Ef.ACTIVE
             })
         }), (0, i.jsx)("div", {
             className: A.o1,
             children: (0, i.jsx)(c.A, {
                 icon: o.PGe,
-                tooltip: g.intl.string(m.default.l20ZZp),
+                tooltip: g.intl.string(_.default.l20ZZp),
                 onClick: x
             })
         })]

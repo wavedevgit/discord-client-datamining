@@ -1,7 +1,7 @@
 /** chunk id: 254847 params = (module,exports,require) **/
 n.d(t, {
     A: () => T,
-    Y: () => h
+    Y: () => p
 });
 var i = n(627968),
     s = n(64700),
@@ -12,25 +12,25 @@ var i = n(627968),
     d = n(714991),
     c = n(695515),
     u = n(397808),
-    _ = n(652215),
-    m = n(842130),
+    m = n(652215),
+    _ = n(842130),
     g = n(985018),
     A = n(957415);
 let x = [18, 18, 16, 16, 14, 12, 10];
 
-function h(e) {
+function p(e) {
     return x[e.length - 1] ?? x[x.length - 1]
 }
-let p = s.memo(e => {
+let h = s.memo(e => {
     let {
         guildId: t,
         className: n,
         customSubtext: s
     } = e, l = (0, r.bG)([c.A], () => c.A.getGuild(t));
     if (void 0 === l) return null;
-    let x = l.features.has(_.GuildFeatures.VERIFIED) || l.features.has(_.GuildFeatures.PARTNERED),
+    let x = l.features.has(m.GuildFeatures.VERIFIED) || l.features.has(m.GuildFeatures.PARTNERED),
         {
-            name: h
+            name: p
         } = l;
     return (0, i.jsxs)("div", {
         className: a()(A.kL, n),
@@ -47,17 +47,17 @@ let p = s.memo(e => {
                     className: A.n2
                 }) : null, (0, i.jsx)(o.Text, {
                     variant: "text-md/semibold",
-                    children: h
+                    children: p
                 })]
             }), (0, i.jsx)(o.Text, {
                 variant: "text-sm/medium",
                 color: "text-subtle",
-                children: null != s ? s : void 0 !== l.approximateMemberCount ? g.intl.format(m.default["5JmNgg"], {
+                children: null != s ? s : void 0 !== l.approximateMemberCount ? g.intl.format(_.default["5JmNgg"], {
                     members: l.approximateMemberCount
                 }) : null
             })]
         })]
     })
 });
-p.displayName = "FamilyCenterActivityGuildRow";
-let T = p
+h.displayName = "FamilyCenterActivityGuildRow";
+let T = h

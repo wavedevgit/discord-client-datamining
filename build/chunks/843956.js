@@ -11,11 +11,11 @@ var i = n(419954),
     d = n(550649),
     c = n(211639),
     u = n(657733),
-    _ = n(728699),
-    m = n(345648),
+    m = n(728699),
+    _ = n(345648),
     g = n(863671),
     A = n(985018);
 let x = (0, i.WI)(s.X.USER_SECTION, {
     useTitle: () => A.intl.string(A.t.cduTBL),
-    buildLayout: () => [a.J, c.T, u.v, _.T, r.J, ...(0, l.pC)("UserSection") ? [] : [g.$], d.z, m.e, o.r]
+    buildLayout: () => [a.J, c.T, u.v, m.T, r.J, ...(0, l.pC)("UserSection") ? [] : [g.$], d.z, _.e, o.r]
 })

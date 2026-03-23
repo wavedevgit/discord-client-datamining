@@ -11,13 +11,13 @@ var i = n(627968),
     d = n(397927),
     c = n(974544),
     u = n(351906),
-    _ = n(823092),
-    m = n(963935),
+    m = n(823092),
+    _ = n(963935),
     g = n(894858),
     A = n(272053),
     x = n(397274),
-    h = n(641324),
-    p = n(46373),
+    p = n(641324),
+    h = n(46373),
     T = n(872175);
 
 function E(e) {
@@ -27,7 +27,7 @@ function E(e) {
     } = e, {
         showNotice: l,
         handleStoreUpdate: a
-    } = (0, _.L_)(), c = t?.stores;
+    } = (0, m.L_)(), c = t?.stores;
     s.useEffect(() => {
         if (null != c) {
             let e = new r.ru(c, () => {
@@ -56,7 +56,7 @@ function E(e) {
     })
 }
 
-function S(e) {
+function f(e) {
     let {
         decoration: t
     } = e, n = t.component;
@@ -69,7 +69,7 @@ function S(e) {
     })
 }
 
-function f(e) {
+function S(e) {
     let {
         panelKey: t,
         notice: n,
@@ -101,12 +101,12 @@ function C(e) {
     } = e;
     return (0, i.jsxs)("div", {
         className: T.LZ,
-        children: [null != n && (0, i.jsx)(S, {
+        children: [null != n && (0, i.jsx)(f, {
             decoration: n
         }), t.map((e, n) => (0, i.jsxs)(s.Fragment, {
-            children: [(0, i.jsx)(h.A, {
+            children: [(0, i.jsx)(p.A, {
                 node: e
-            }), n !== t.length - 1 && (0, i.jsx)(p.A, {
+            }), n !== t.length - 1 && (0, i.jsx)(h.A, {
                 className: T.yF
             })]
         }, e.key))]
@@ -134,7 +134,7 @@ function b(e) {
         })
     }, [n, t]);
     let o = n.find(e => e.key === r) ?? n[0];
-    return (0, i.jsxs)(f, {
+    return (0, i.jsxs)(S, {
         panelKey: t,
         notice: l,
         children: [(0, i.jsx)(d.VQ0, {
@@ -178,7 +178,7 @@ function N(e) {
         decoration: s,
         layout: l
     } = e;
-    return (0, i.jsx)(f, {
+    return (0, i.jsx)(S, {
         panelKey: t,
         notice: n,
         children: (0, i.jsx)(C, {
@@ -195,13 +195,13 @@ function I(e) {
         layout: n
     } = t;
     if ((0, r.bG)([u.A], () => u.A.hidePersonalInformation) && t.hideInStreamerMode) return (0, i.jsx)(c.A, {});
-    if ((0, m.zY)(n)) return (0, i.jsx)(b, {
+    if ((0, _.zY)(n)) return (0, i.jsx)(b, {
         panelKey: t.key,
         notice: t.notice,
         decoration: t.decoration,
         layout: n
     });
-    if ((0, m.Iu)(n)) return (0, i.jsx)(N, {
+    if ((0, _.Iu)(n)) return (0, i.jsx)(N, {
         panelKey: t.key,
         notice: t.notice,
         decoration: t.decoration,

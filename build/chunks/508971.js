@@ -1,6 +1,6 @@
 /** chunk id: 508971 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var i = n(627968);
 n(64700);
@@ -12,9 +12,9 @@ var s = n(503698),
     d = n(405269),
     c = n(927018),
     u = n(906688),
-    _ = n(869295);
+    m = n(869295);
 
-function m(e) {
+function _(e) {
     let {
         achievementId: t,
         dateUnlocked: n
@@ -22,44 +22,44 @@ function m(e) {
     if (null == s) return null;
     let a = null != n,
         {
-            name: m,
+            name: _,
             description: g,
             hideDescriptionUntilUnlock: A,
             onAction: x
         } = s,
-        h = A && !a,
-        p = a ? "text-strong" : "text-muted",
+        p = A && !a,
+        h = a ? "text-strong" : "text-muted",
         T = a ? "text-default" : "text-muted",
         E = r()(n),
-        S = null != x && a,
-        f = S ? o.DUT : "div";
-    return (0, i.jsxs)(f, {
-        className: l()(_.kL, S && _.b),
+        f = null != x && a,
+        S = f ? o.DUT : "div";
+    return (0, i.jsxs)(S, {
+        className: l()(m.kL, f && m.b),
         onClick: () => {
-            S && x()
+            f && x()
         },
         children: [(0, i.jsx)("div", {
-            className: _.zc,
+            className: m.zc,
             children: (0, i.jsx)(u.A, {
                 achievementId: t,
                 size: u.A.Sizes.SIZE_40,
                 unlocked: a
             })
         }), (0, i.jsxs)("div", {
-            className: _.VW,
+            className: m.VW,
             children: [null != n && (0, i.jsx)(o.Text, {
                 variant: "text-xxs/semibold",
                 color: "text-muted",
-                className: _.YR,
+                className: m.YR,
                 children: (0, d.mk)(E)
             }), (0, i.jsx)(o.Text, {
                 variant: "text-md/medium",
-                color: p,
-                children: m()
+                color: h,
+                children: _()
             }), (0, i.jsx)(o.Text, {
                 variant: "text-xs/normal",
                 color: T,
-                children: h ? "?????" : g()
+                children: p ? "?????" : g()
             })]
         })]
     })

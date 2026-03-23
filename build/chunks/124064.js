@@ -11,16 +11,16 @@ var i = n(627968),
     d = n(915089),
     c = n(840065),
     u = n(95701),
-    _ = n(128450),
-    m = n(652215),
+    m = n(128450),
+    _ = n(652215),
     g = n(985018),
     A = n(973746);
 let x = (0, d.Ld)(),
-    h = (0, u.createChannelRecord)({
+    p = (0, u.createChannelRecord)({
         id: "1",
-        type: m.rbe.DM
+        type: _.rbe.DM
     }),
-    p = (0, d.Ld)();
+    h = (0, d.Ld)();
 
 function T(e) {
     let {
@@ -30,8 +30,8 @@ function T(e) {
         pendingBio: u,
         placeholder: T,
         currentBio: E,
-        disabled: S = !1
-    } = e, [f, C] = s.useState(u ?? E), [b, N] = s.useState((0, r.x7)(f)), I = s.useRef(E), v = s.useRef(!1);
+        disabled: f = !1
+    } = e, [S, C] = s.useState(u ?? E), [b, N] = s.useState((0, r.x7)(S)), I = s.useRef(E), v = s.useRef(!1);
     return s.useEffect(() => {
         if (I.current !== E) {
             let e = (0, r.x7)(E);
@@ -39,25 +39,25 @@ function T(e) {
         }
         I.current = E
     }, [E]), s.useEffect(() => {
-        void 0 !== u || f === E || v.current || (C(E), N((0, r.x7)(E)))
-    }, [u, E, f]), (0, i.jsxs)(_.A, {
+        void 0 !== u || S === E || v.current || (C(E), N((0, r.x7)(E)))
+    }, [u, E, S]), (0, i.jsxs)(m.A, {
         title: t,
         titleId: x,
         description: g.intl.string(g.t.Bbw6Ac),
         errors: n,
-        disabled: S,
+        disabled: f,
         children: [(0, i.jsx)(o.Ay, {
-            "aria-describedby": p,
+            "aria-describedby": h,
             "aria-labelledby": x,
             className: A.i,
             innerClassName: A.Z,
-            maxCharacterCount: m.NA2,
+            maxCharacterCount: _.NA2,
             onChange: function(e, t, n) {
-                t !== f && (C(t), N(n), d(t))
+                t !== S && (C(t), N(n), d(t))
             },
             placeholder: T,
-            channel: h,
-            textValue: f,
+            channel: p,
+            textValue: S,
             richValue: b,
             emojiPickerCloseOnModalOuterClick: !0,
             parentModalKey: c.USER_SETTINGS_MODAL_KEY,
@@ -78,9 +78,9 @@ function T(e) {
                 })
             }
         }), (0, i.jsx)(l.AC4, {
-            id: p,
+            id: h,
             children: g.intl.format(g.t["+DFxLc"], {
-                maxLength: m.NA2
+                maxLength: _.NA2
             })
         })]
     })

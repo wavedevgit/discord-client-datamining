@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(888848),
     c = n(331441),
     u = n(20770),
-    _ = n(985018);
-class m extends s.PureComponent {
+    m = n(985018);
+class _ extends s.PureComponent {
     state = {
         hasError: !1
     };
@@ -27,9 +27,9 @@ class m extends s.PureComponent {
             style: {
                 borderRadius: 0
             },
-            children: [_.intl.format(_.t.IIHUUF, {
+            children: [m.intl.format(m.t.IIHUUF, {
                 subscriptionId: this.props.subscription.id
-            }), " ", _.intl.format(_.t.fh65ES, {
+            }), " ", m.intl.format(m.t.fh65ES, {
                 helpLink: "https://support.discord.com/hc/en-us"
             })]
         }) : this.props.children
@@ -48,12 +48,12 @@ function g(e) {
         g({
             route: c.R.HOME
         })
-    }, h = e => {
+    }, p = e => {
         g({
             route: c.R.SWITCH_APP_PLANS,
             ...e
-        }), n(_.intl.string(_.t.VFqtkP), x)
-    }, [p, T] = s.useState({});
+        }), n(m.intl.string(m.t.VFqtkP), x)
+    }, [h, T] = s.useState({});
     s.useEffect(() => {
         for (let e of t) {
             let t = e.items[0]?.planId;
@@ -75,22 +75,22 @@ function g(e) {
     }, [t]);
     let {
         loadState: E
-    } = (0, o.E)(), S = E !== o.mJ.LOADED;
+    } = (0, o.E)(), f = E !== o.mJ.LOADED;
     switch (A) {
         case c.R.HOME:
             return (0, i.jsx)(i.Fragment, {
-                children: t.map(e => (0, i.jsx)(m, {
+                children: t.map(e => (0, i.jsx)(_, {
                     subscription: e,
                     children: (0, i.jsx)(d.A, {
                         subscription: e,
-                        navigateToSwitchPlan: h,
-                        loadingState: S ? d.G.LOADING : p[e.id] ?? d.G.LOADING
+                        navigateToSwitchPlan: p,
+                        loadingState: f ? d.G.LOADING : h[e.id] ?? d.G.LOADING
                     })
                 }, e.id))
             });
         case c.R.SWITCH_APP_PLANS:
             let {
-                route: f, ...C
+                route: S, ...C
             } = l;
             return (0, i.jsx)(u.A, {
                 ...C,

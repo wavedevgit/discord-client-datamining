@@ -12,7 +12,7 @@ function o(e) {
     let {
         onError: t,
         onSuccess: n
-    } = e ?? {}, [o, d] = i.useState(!1), [c, u] = i.useState(!1), [_, m] = i.useState(!1), [g, A] = i.useState(!1), [x, h] = i.useState(!1), [p, T] = i.useState(!1), [E, S] = i.useState(!1), [f, C] = i.useState(!1), b = o || c || _ || g || p || f, N = i.useCallback(async e => {
+    } = e ?? {}, [o, d] = i.useState(!1), [c, u] = i.useState(!1), [m, _] = i.useState(!1), [g, A] = i.useState(!1), [x, p] = i.useState(!1), [h, T] = i.useState(!1), [E, f] = i.useState(!1), [S, C] = i.useState(!1), b = o || c || m || g || h || S, N = i.useCallback(async e => {
         if (!b) {
             d(!0);
             try {
@@ -38,14 +38,14 @@ function o(e) {
         }
     }, [b, t, n]), v = i.useCallback(async e => {
         if (!b) {
-            m(!0);
+            _(!0);
             try {
                 await (0, l.nt)(e, r.Ef.INACTIVE), n?.()
             } catch (n) {
                 let e = new s.LG(n);
                 t?.(e)
             } finally {
-                m(!1)
+                _(!1)
             }
         }
     }, [b, t, n]), j = i.useCallback(async e => {
@@ -62,26 +62,26 @@ function o(e) {
         }
     }, [b, t, n]), y = i.useCallback(async () => {
         if (!x) {
-            h(!0);
+            p(!0);
             try {
                 await (0, l.HB)(), n?.()
             } catch (n) {
                 let e = new s.LG(n);
                 t?.(e)
             } finally {
-                h(!1)
+                p(!1)
             }
         }
-    }, [x, t, n]), R = i.useCallback(async e => {
+    }, [x, t, n]), O = i.useCallback(async e => {
         if (!E) {
-            S(!0);
+            f(!0);
             try {
                 await l.Ay.fetchTeenActivity(e), n?.()
             } catch (n) {
                 let e = new s.LG(n);
                 t?.(e)
             } finally {
-                S(!1)
+                f(!1)
             }
         }
     }, [E, t, n]);
@@ -90,10 +90,10 @@ function o(e) {
         declineLinkRequest: I,
         disconnectLinkRequest: v,
         cancelLinkRequest: j,
-        selectTeenUser: R,
+        selectTeenUser: O,
         getLinkCode: y,
         requestLink: i.useCallback(async (e, i) => {
-            if (!p) {
+            if (!h) {
                 T(!0);
                 try {
                     await l.Ay.requestLink(e, i), n?.()
@@ -104,13 +104,13 @@ function o(e) {
                     T(!1)
                 }
             }
-        }, [p, t, n]),
+        }, [h, t, n]),
         loadMore: i.useCallback(async e => {
             let n = a.A.getActionsForDisplayType(e),
                 i = n[n.length - 1],
                 r = a.A.getStartId(),
                 o = a.A.getSelectedTeenId();
-            if (!f && null != r && null != o) {
+            if (!S && null != r && null != o) {
                 C(!0);
                 try {
                     await l.Ay.fetchMoreTeenActivity(o, e, r, i.event_id)
@@ -121,14 +121,14 @@ function o(e) {
                     C(!1)
                 }
             }
-        }, [f, t]),
+        }, [S, t]),
         isAcceptLoading: o,
         isDeclineLoading: c,
-        isDisconnectLoading: _,
+        isDisconnectLoading: m,
         isCancelLoading: g,
         isGetLinkCodeLoading: x,
         isSelectTeenUserLoading: E,
-        isRequestingLink: p,
-        isMoreLoading: f
+        isRequestingLink: h,
+        isMoreLoading: S
     }
 }

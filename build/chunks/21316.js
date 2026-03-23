@@ -1,6 +1,6 @@
 /** chunk id: 21316 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => _
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -11,27 +11,27 @@ var i = n(627968),
     d = n(686423),
     c = n(358172),
     u = n(985018),
-    _ = n(853762);
-let m = function(e) {
+    m = n(853762);
+let _ = function(e) {
     let {
         canAddBoosts: t,
         canApplyBoosts: n
-    } = e, m = (0, l.bG)([r.A], () => r.A.affinities), g = (0, l.bG)([o.Ay], () => o.Ay.getFlattenedGuildIds()), A = s.useMemo(() => {
-        let e = m.slice(0, 3).map(e => e.guildId);
+    } = e, _ = (0, l.bG)([r.A], () => r.A.affinities), g = (0, l.bG)([o.Ay], () => o.Ay.getFlattenedGuildIds()), A = s.useMemo(() => {
+        let e = _.slice(0, 3).map(e => e.guildId);
         for (let t = 0; t < g.length && !(e.length >= 3); t++) {
             let n = g[t];
             e.includes(n) || e.push(n)
         }
         return e
-    }, [m, g]);
+    }, [_, g]);
     return 0 === A.length ? null : (0, i.jsxs)("div", {
-        className: _.iE,
+        className: m.iE,
         children: [t && (0, i.jsx)(a.Heading, {
             variant: "heading-lg/semibold",
-            className: _.wx,
+            className: m.wx,
             children: u.intl.string(u.t.r90Wgo)
         }), A.map(e => (0, i.jsx)(c.A, {
-            className: _.ZS,
+            className: m.ZS,
             guildId: e,
             boostingVariant: !0
         }, e)), g.length > 3 && n && (0, i.jsx)(d.A, {})]

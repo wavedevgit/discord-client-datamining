@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(688810),
     c = n(385612),
     u = n(128450),
-    _ = n(339984),
-    m = n(985018),
+    m = n(339984),
+    _ = n(985018),
     g = n(897570);
 let A = [{
     name: "gif",
@@ -25,30 +25,30 @@ function x(e) {
         errors: n,
         onAvatarChange: l,
         sectionTitle: x,
-        changeAvatarButtonText: h,
-        guildId: p,
+        changeAvatarButtonText: p,
+        guildId: h,
         className: T,
         disabled: E = !1,
-        isTryItOut: S = !1,
-        forcedDivider: f,
+        isTryItOut: f = !1,
+        forcedDivider: S,
         withHighlight: C = !1
     } = e, {
         newestAnalyticsLocation: b
     } = (0, d.Ay)(), N = C ? o.wLn : r.$n, I = s.useCallback(() => {
         (0, c.XD)({
-            uploadType: _.HL.AVATAR,
+            uploadType: m.HL.AVATAR,
             analyticsSource: b,
-            filters: S ? A : void 0,
-            guildId: p,
-            isTryItOut: S
+            filters: f ? A : void 0,
+            guildId: h,
+            isTryItOut: f
         })
-    }, [p, b, S]);
+    }, [h, b, f]);
     return (0, i.jsx)(u.A, {
         className: T,
         title: x,
         errors: n,
         disabled: E,
-        forcedDivider: f,
+        forcedDivider: S,
         children: (0, i.jsxs)("div", {
             className: g.NC,
             children: [(0, i.jsx)(N, {
@@ -57,14 +57,14 @@ function x(e) {
                 }),
                 size: r.$n.Sizes.SMALL,
                 onClick: I,
-                children: h ?? m.intl.string(m.t["4OynCD"])
+                children: p ?? _.intl.string(_.t["4OynCD"])
             }), t && (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: g.DT,
                 children: (0, i.jsx)(o.Button, {
                     variant: "secondary",
                     size: "sm",
-                    text: null != p ? m.intl.string(m.t.TDjKDm) : m.intl.string(m.t.twB3fz),
+                    text: null != h ? _.intl.string(_.t.TDjKDm) : _.intl.string(_.t.twB3fz),
                     onClick: () => l(null)
                 })
             })]

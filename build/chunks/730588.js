@@ -12,8 +12,8 @@ var s = n(503698),
     d = n(385612),
     c = n(128450),
     u = n(339984),
-    _ = n(985018),
-    m = n(52506);
+    m = n(985018),
+    _ = n(52506);
 
 function g(e) {
     let {
@@ -23,41 +23,41 @@ function g(e) {
         guildId: g,
         className: A,
         disabled: x = !1,
-        showPremiumIcon: h = !0,
-        isTryItOut: p = !1,
+        showPremiumIcon: p = !0,
+        isTryItOut: h = !1,
         forcedDivider: T,
         withHighlight: E = !1
     } = e, {
-        newestAnalyticsLocation: S
-    } = (0, o.Ay)(), f = E ? r.wLn : a.$n;
+        newestAnalyticsLocation: f
+    } = (0, o.Ay)(), S = E ? r.wLn : a.$n;
     return (0, i.jsx)(c.A, {
         className: A,
-        title: _.intl.string(_.t.Vgdusv),
-        showPremiumIcon: h,
+        title: m.intl.string(m.t.Vgdusv),
+        showPremiumIcon: p,
         errors: n,
         disabled: x,
         forcedDivider: T,
         children: (0, i.jsxs)("div", {
-            className: m.NC,
-            children: [(0, i.jsx)(f, {
+            className: _.NC,
+            children: [(0, i.jsx)(S, {
                 className: l()({
-                    [m.yj]: E
+                    [_.yj]: E
                 }),
                 size: a.$n.Sizes.SMALL,
                 onClick: () => (0, d.XD)({
                     uploadType: u.HL.BANNER,
-                    analyticsSource: S,
+                    analyticsSource: f,
                     guildId: g,
-                    isTryItOut: p
+                    isTryItOut: h
                 }),
-                children: _.intl.string(_.t.N0bC3P)
+                children: m.intl.string(m.t.N0bC3P)
             }), t && (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
-                className: m.DT,
+                className: _.DT,
                 children: (0, i.jsx)(r.Button, {
                     variant: "secondary",
                     size: "sm",
-                    text: null != g ? _.intl.string(_.t.jHlJNS) : _.intl.string(_.t.tT9n7D),
+                    text: null != g ? m.intl.string(m.t.jHlJNS) : m.intl.string(m.t.tT9n7D),
                     onClick: () => s(null)
                 })
             })]

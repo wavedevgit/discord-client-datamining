@@ -12,8 +12,8 @@ var s = n(503698),
     d = n(103733),
     c = n(258799),
     u = n(253558),
-    _ = n(985018),
-    m = n(392044);
+    m = n(985018),
+    _ = n(392044);
 let g = e => {
     let {
         className: t,
@@ -23,25 +23,25 @@ let g = e => {
         visibilityPercentage: A
     } = (0, d.U)(!s);
     return (0, i.jsxs)("div", {
-        className: l()(m.kL, t),
+        className: l()(_.kL, t),
         "data-testid": "all-perks-hero-header",
         ref: g,
         children: [(0, i.jsx)("div", {
-            className: m.FY,
+            className: _.FY,
             children: (0, i.jsx)(r.$nd, {
                 onClick: n,
-                text: _.intl.string(_.t["13/7kX"]),
+                text: m.intl.string(m.t["13/7kX"]),
                 variant: "overlay-secondary"
             })
         }), (0, i.jsx)("div", {
-            className: m.Qs,
+            className: _.Qs,
             children: (0, i.jsxs)("div", {
-                className: m.N1,
+                className: _.N1,
                 children: [(0, i.jsx)(c.A, {
                     containerVisibilityPercentage: A,
                     isMotionReduced: s
                 }), (0, i.jsx)(u.A, {
-                    children: _.intl.string(_.t["hqjDX/"])
+                    children: m.intl.string(m.t["hqjDX/"])
                 })]
             })
         })]

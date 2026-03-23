@@ -12,8 +12,8 @@ var s = n(503698),
     d = n(688810),
     c = n(927578),
     u = n(473702),
-    _ = n(985018),
-    m = n(312275),
+    m = n(985018),
+    _ = n(312275),
     g = n(67423);
 let A = function(e) {
     let {
@@ -22,8 +22,8 @@ let A = function(e) {
         churnDiscountOffer: A,
         discountedPrice: x
     } = e, {
-        analyticsLocations: h
-    } = (0, d.Ay)(o.A.CHURN_DISCOUNT_PERSISTENT_CTA), p = (0, r.zhh)({
+        analyticsLocations: p
+    } = (0, d.Ay)(o.A.CHURN_DISCOUNT_PERSISTENT_CTA), h = (0, r.zhh)({
         transform: t ? "translateY(-100%)" : "translateY(0%)",
         opacity: +!!t,
         config: {
@@ -32,28 +32,28 @@ let A = function(e) {
         }
     });
     return (0, i.jsx)(a.animated.div, {
-        className: l()(m.iE, {
-            [m.q4]: !t
+        className: l()(_.iE, {
+            [_.q4]: !t
         }),
-        style: p,
+        style: h,
         children: (0, i.jsxs)("div", {
-            className: m.iJ,
+            className: _.iJ,
             children: [(0, i.jsx)("img", {
                 alt: "",
                 src: g,
-                className: m.oU
+                className: _.oU
             }), (0, i.jsxs)("div", {
-                className: m.iQ,
+                className: _.iQ,
                 children: [(0, i.jsx)(r.Heading, {
                     variant: "heading-md/semibold",
                     color: "text-strong",
-                    children: _.intl.format(_.t["3yZP0G"], {
+                    children: m.intl.format(m.t["3yZP0G"], {
                         percent: A.discount.amount
                     })
                 }), (0, i.jsx)(r.Text, {
                     variant: "text-sm/medium",
                     color: "text-default",
-                    children: _.intl.format(_.t["3Q4wCy"], {
+                    children: m.intl.format(m.t["3Q4wCy"], {
                         numMonths: A.discount.user_usage_limit,
                         discountedPrice: x,
                         billingPeriod: (0, c.Ke)(A.discount.user_usage_limit_interval)
@@ -63,7 +63,7 @@ let A = function(e) {
                 variant: "expressive",
                 icon: r.tvc,
                 size: "md",
-                text: _.intl.string(_.t.zrCzVB),
+                text: m.intl.string(m.t.zrCzVB),
                 onClick: () => void(0, r.mMO)(async () => {
                     let {
                         PremiumBrandRefreshSubscriptionCancellationModal: e
@@ -71,7 +71,7 @@ let A = function(e) {
                     return t => (0, i.jsx)(e, {
                         ...t,
                         premiumSubscription: s,
-                        analyticsLocations: h,
+                        analyticsLocations: p,
                         initialStep: u.g.CONFIRM_DISCOUNT
                     })
                 })

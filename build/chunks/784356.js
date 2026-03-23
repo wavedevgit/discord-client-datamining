@@ -17,36 +17,36 @@ let u = e => {
         titleClassName: n,
         buttonClassName: s,
         perkImage: u,
-        isCarousel: _,
-        onCtaClick: m,
+        isCarousel: m,
+        onCtaClick: _,
         perkComponent: g,
         subtitle: A,
         descriptionCta: x,
-        customContent: h,
-        cardVariant: p,
+        customContent: p,
+        cardVariant: h,
         subtitleClassName: T,
         imageOverlayText: E
-    } = e, S = (0, o.Q)(p), f = null != E;
+    } = e, f = (0, o.Q)(h), S = null != E;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             className: l()(c.Iv, c.Gz)
         }), (0, i.jsx)(d.A, {
             title: t,
-            cardVariantStyleInfo: S,
+            cardVariantStyleInfo: f,
             titleClassName: n,
             subtitle: A,
             subtitleClassName: T,
             isOverlay: !1
         }), null != u && (0, i.jsxs)("div", {
             className: l()(c.V8, {
-                [c.wP]: !_,
-                [c.QN]: !_ && !S?.perkImage?.disableHoverAnimation
-            }, S?.perkImage?.className),
+                [c.wP]: !m,
+                [c.QN]: !m && !f?.perkImage?.disableHoverAnimation
+            }, f?.perkImage?.className),
             children: [(0, i.jsx)("img", {
                 src: u,
                 alt: "",
-                className: _ ? f ? c.ls : c.gu : ""
-            }), f ? (0, i.jsx)("div", {
+                className: m ? S ? c.ls : c.gu : ""
+            }), S ? (0, i.jsx)("div", {
                 className: c.Yh,
                 children: (0, i.jsx)(r.Text, {
                     className: c.nj,
@@ -56,16 +56,16 @@ let u = e => {
             }) : null]
         }), null != g && (0, i.jsxs)("div", {
             className: c.wX,
-            children: [g, null != x && null != m && (0, i.jsx)(a.$n, {
+            children: [g, null != x && null != _ && (0, i.jsx)(a.$n, {
                 "data-migration-pending": !0,
                 className: s,
                 fullWidth: !0,
-                onClick: m,
+                onClick: _,
                 children: (0, i.jsx)("div", {
-                    className: S?.descriptionCta?.className,
+                    className: f?.descriptionCta?.className,
                     children: x
                 })
             })]
-        }), h]
+        }), p]
     })
 }

@@ -11,10 +11,10 @@ var i = n(349941),
     d = n(97469),
     c = n(544028),
     u = n(253932),
-    _ = n(780964),
-    m = n(818348),
+    m = n(780964),
+    _ = n(818348),
     g = n(985018);
-let A = (0, o.zD)(_.X.DISPLAY_DARK_SIDEBAR, {
+let A = (0, o.zD)(m.X.DISPLAY_DARK_SIDEBAR, {
     useTitle: () => g.intl.string(g.t.EpSHAQ),
     useSearchTerms: () => [g.intl.string(g.t.Ksh3ik)],
     useValue: function() {
@@ -37,7 +37,7 @@ let A = (0, o.zD)(_.X.DISPLAY_DARK_SIDEBAR, {
         return (0, s.bG)([c.A, a.A], () => {
             let e = c.A.theme,
                 t = a.A.useForcedColors;
-            return e !== m.NJ.LIGHT || t
+            return e !== _.NJ.LIGHT || t
         })
     },
     setValue: l.LO

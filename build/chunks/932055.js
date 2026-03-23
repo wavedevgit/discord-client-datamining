@@ -1,8 +1,8 @@
 /** chunk id: 932055 params = (module,exports,require) **/
 n.d(t, {
-    Jz: () => m,
+    Jz: () => _,
     i: () => g,
-    vd: () => _
+    vd: () => m
 }), n(321073);
 var i = n(311907),
     s = n(264686),
@@ -16,14 +16,14 @@ let u = (0, l.D)(() => ({
     currentPlayingSound: null
 }));
 
-function _() {
+function m() {
     let e = u.getField("currentPlayingSound");
     e?.stop(), u.setState({
         currentPlayingSound: null
     })
 }
 
-function m(e) {
+function _(e) {
     let t = u.getField("currentPlayingSound");
     t?.stop();
     let n = (0, r.Ak)(e);
@@ -36,7 +36,7 @@ function g(e) {
     return (0, a.zD)(`${d.X.SOUNDS_LIST_ITEM_PREFIX}${e.sound}`, {
         useTitle: e.useTitle,
         useSubtitle: () => c.intl.format(c.t.OOiGCM, {
-            onClick: () => m(e.sound)
+            onClick: () => _(e.sound)
         }),
         useValue: () => {
             let t = (0, i.bG)([o.A], () => o.A.isSoundDisabled(e.sound)),

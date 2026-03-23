@@ -1,6 +1,6 @@
 /** chunk id: 586685 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => h,
+    Ay: () => p,
     SB: () => A,
     VD: () => g,
     b0: () => x
@@ -15,12 +15,12 @@ var s = n(820284),
     d = n(195043),
     c = n(326911),
     u = n(265729),
-    _ = n(531525),
-    m = n(652215);
+    m = n(531525),
+    _ = n(652215);
 
 function g() {
     return (0, i.jsx)(s.A, {
-        section: m.JJy.LIBRARY_INVENTORY_CODE_REDEMPTION,
+        section: _.JJy.LIBRARY_INVENTORY_CODE_REDEMPTION,
         children: (0, i.jsx)(c.A, {})
     })
 }
@@ -30,7 +30,7 @@ function A(e) {
         inOldSettings: t = !1
     } = e;
     return (0, i.jsx)(s.A, {
-        section: m.JJy.QUESTS,
+        section: _.JJy.QUESTS,
         children: (0, i.jsx)(o.A, {
             inOldSettings: t
         })
@@ -42,34 +42,34 @@ function x(e) {
         inOldSettings: t = !1
     } = e;
     return (0, i.jsx)(s.A, {
-        section: m.JJy.LIBRARY_INVENTORY_GIFTS_LIST,
+        section: _.JJy.LIBRARY_INVENTORY_GIFTS_LIST,
         children: (0, i.jsx)(u.A, {
             inOldSettings: t
         })
     })
 }
 
-function h() {
+function p() {
     let {
         analyticsLocations: e
     } = (0, a.Ay)(l.A.USER_SETTINGS_GIFT_INVENTORY);
     return (0, i.jsxs)(a.f5, {
         value: e,
         children: [(0, i.jsx)(d.x, {
-            setting: _.H.GIFT_CODE_REDEMPTION,
+            setting: m.H.GIFT_CODE_REDEMPTION,
             children: (0, i.jsx)(g, {})
         }), (0, i.jsx)(d.x, {
-            setting: _.H.GIFT_INVENTORY_QUESTS,
+            setting: m.H.GIFT_INVENTORY_QUESTS,
             children: (0, i.jsx)(A, {
                 inOldSettings: !0
             })
         }), (0, i.jsx)(d.x, {
-            setting: _.H.GIFT_INVENTORY_LIST,
+            setting: m.H.GIFT_INVENTORY_LIST,
             children: (0, i.jsx)(x, {
                 inOldSettings: !0
             })
         }), (0, i.jsx)(d.x, {
-            setting: _.H.GIFT_BLOCKED_PAYMENTS,
+            setting: m.H.GIFT_BLOCKED_PAYMENTS,
             children: (0, i.jsx)(r.uK, {})
         })]
     })

@@ -17,26 +17,26 @@ function o(e) {
         useSubtitle: d,
         useOptions: c,
         clearable: u,
-        usePersistentBadge: _,
-        getDismissibleBadges: m
-    } = t, g = t.setValue, A = o(), x = d?.(), h = n(), p = c(), T = _?.(), E = m?.(), S = (0, l.A)({
+        usePersistentBadge: m,
+        getDismissibleBadges: _
+    } = t, g = t.setValue, A = o(), x = d?.(), p = n(), h = c(), T = m?.(), E = _?.(), f = (0, l.A)({
         persistentBadge: T,
         dismissibleBadges: E
-    }), f = (0, a.q)(t);
+    }), S = (0, a.q)(t);
     return (0, i.jsx)(r.L, {
         children: (0, i.jsx)(s.l6P, {
             selectionMode: "single",
             label: A,
             description: x,
-            options: p,
-            value: h,
+            options: h,
+            value: p,
             clearable: u,
             onSelectionChange: e => {
-                f(), g(e)
+                S(), g(e)
             },
             layout: "horizontal-responsive",
             fullWidth: !0,
-            badge: S
+            badge: f
         })
     })
 }

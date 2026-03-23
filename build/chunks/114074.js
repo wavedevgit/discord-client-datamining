@@ -1,6 +1,6 @@
 /** chunk id: 114074 params = (module,exports,require) **/
 n.d(t, {
-    K: () => h
+    K: () => p
 });
 var i = n(311907),
     s = n(775602),
@@ -11,12 +11,12 @@ var i = n(311907),
     d = n(780964),
     c = n(123857),
     u = n(840065),
-    _ = n(506305),
-    m = n(69551),
+    m = n(506305),
+    _ = n(69551),
     g = n(225216),
     A = n(866352),
     x = n(985018);
-let h = (0, r.zZ)(d.X.DISPLAY_THEME_CATEGORY, {
+let p = (0, r.zZ)(d.X.DISPLAY_THEME_CATEGORY, {
     useTitle: () => x.intl.string(x.t.Ksh3ik),
     useInlineNotice: function() {
         return (0, i.bG)([s.A], () => s.A.useForcedColors) ? {
@@ -40,5 +40,5 @@ let h = (0, r.zZ)(d.X.DISPLAY_THEME_CATEGORY, {
             }]
         }
     },
-    buildLayout: () => [g.k, m.l, _.p, A.W]
+    buildLayout: () => [g.k, _.l, m.p, A.W]
 })

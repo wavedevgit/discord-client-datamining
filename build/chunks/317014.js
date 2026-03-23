@@ -1,6 +1,6 @@
 /** chunk id: 317014 params = (module,exports,require) **/
 n.d(t, {
-    t: () => m
+    t: () => _
 });
 var i = n(945276),
     s = n(639555),
@@ -11,10 +11,10 @@ var i = n(945276),
     d = n(975571),
     c = n(780964),
     u = n(652215),
-    _ = n(985018);
-let m = (0, o.zD)(c.X.CONTENT_AND_SOCIAL_DM_SAFETY_ALERTS_SETTING, {
-    useTitle: () => _.intl.string(_.t.qFsx5q),
-    useSubtitle: () => _.intl.format(_.t.lunaRv, {
+    m = n(985018);
+let _ = (0, o.zD)(c.X.CONTENT_AND_SOCIAL_DM_SAFETY_ALERTS_SETTING, {
+    useTitle: () => m.intl.string(m.t.qFsx5q),
+    useSubtitle: () => m.intl.format(m.t.lunaRv, {
         learnMoreLink: d.A.getArticleURL(u.MVz.SAFETY_ALERTS)
     }),
     useValue: a.L,
