@@ -61,12 +61,12 @@ let m = {
             minZoom: n = 1,
             maxZoom: o = 5,
             children: c
-        } = e, [d, u] = l.useState(n), [h, p] = l.useState(!1), [f, _] = l.useState(!1), [E, x] = l.useState(!1), [C, S] = l.useState(!1), [I, T] = l.useState(16 / 9), [N, y] = l.useState({
+        } = e, [d, u] = l.useState(n), [h, p] = l.useState(!1), [f, _] = l.useState(!1), [E, x] = l.useState(!1), [C, S] = l.useState(!1), [I, T] = l.useState(16 / 9), [N, v] = l.useState({
             x: 0,
             y: 0
-        }), b = l.useRef(null), v = l.useRef(null);
+        }), b = l.useRef(null), y = l.useRef(null);
         (0, r.l0)(() => {
-            v.current?.stop()
+            y.current?.stop()
         });
         let j = l.useCallback((e, t) => {
                 if (null == b.current) return m;
@@ -85,10 +85,10 @@ let m = {
                 if (null == i || r === d) return;
                 p(!0);
                 let c = r / d;
-                y(e => j({
+                v(e => j({
                     x: (e.x - i.x) * c + i.x,
                     y: (e.y - i.y) * c + i.y
-                }, r)), u(r), g(r, l, t), null == v.current && (v.current = new a.Ep), v.current.start(2e3, () => {
+                }, r)), u(r), g(r, l, t), null == y.current && (y.current = new a.Ep), y.current.start(2e3, () => {
                     p(!1)
                 })
             }, [j, o, n, t, d]),
@@ -110,7 +110,7 @@ let m = {
                 setVideoAspectRatio: T,
                 doZoom: R,
                 panOffset: N,
-                setPanOffset: y,
+                setPanOffset: v,
                 wrapperRef: b,
                 clampPanOffset: j
             }), [j, R, f, C, E, h, o, n, N, I, d]);

@@ -37,6 +37,6 @@ function x(e) {
             cooldownDurationMs: 0,
             numTimesToRecur: 3
         }),
-        y = N === s.M.FIRST_BOOSTER_UPSELL_OVERSEER;
-    return i.useMemo(() => !(!T || !y || !S || null == C || C <= 17.06 || e.type !== f.rbe.GUILD_TEXT || null == t || A.default.age(t.id) < _ || null == t.premiumSubscriberCount || 0 !== t.premiumSubscriberCount || n < 10 || m?.id == null || A.default.age(m.id) > E) && (x || I), [T, y, S, e.type, t, n, C, m?.id, x, I])
+        v = N === s.M.FIRST_BOOSTER_UPSELL_OVERSEER;
+    return i.useMemo(() => !(!T || !v || !S || null == C || C <= 17.06 || e.type !== f.rbe.GUILD_TEXT || null == t || A.default.age(t.id) < _ || null == t.premiumSubscriberCount || 0 !== t.premiumSubscriberCount || n < 10 || m?.id == null || A.default.age(m.id) > E) && (x || I), [T, v, S, e.type, t, n, C, m?.id, x, I])
 }

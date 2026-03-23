@@ -8,8 +8,8 @@ var a = l(627968),
     i = l(688810),
     o = l(95337),
     s = l(412314),
-    u = l(456459),
-    c = l(473702),
+    c = l(456459),
+    u = l(473702),
     d = l(916974),
     p = l(347378),
     m = l(606423),
@@ -20,8 +20,8 @@ let b = e => {
             onClose: l,
             premiumSubscription: o,
             premiumType: s,
-            churnDiscount: u,
-            planId: c,
+            churnDiscount: c,
+            planId: u,
             renewalInvoice: p,
             renewalInvoiceDetails: m,
             errorOnCancel: b,
@@ -43,11 +43,11 @@ let b = e => {
                 analyticsLocations: v,
                 analyticsLocation: h.ThZ.USER_SETTINGS,
                 confettiCanvas: null,
-                churnUserDiscountOffer: u,
+                churnUserDiscountOffer: c,
                 isFetchingChurnDiscountOffer: !1,
                 fullPrice: "$9.99",
                 discountedPrice: "$4.99",
-                planId: c,
+                planId: u,
                 paymentsBlocked: !1,
                 renewalInvoice: p,
                 renewalInvoiceDetails: m,
@@ -69,15 +69,15 @@ let b = e => {
     },
     x = e => {
         switch (e) {
-            case c.g.DISCOUNT_APPLIED:
-                return (0, a.jsx)(u.V, {});
-            case c.g.CONFIRM_DISCOUNT:
+            case u.g.DISCOUNT_APPLIED:
+                return (0, a.jsx)(c.V, {});
+            case u.g.CONFIRM_DISCOUNT:
                 return (0, a.jsx)(s.M, {});
-            case c.g.CONFIRM:
+            case u.g.CONFIRM:
                 return (0, a.jsx)(o.r, {});
-            case c.g.PREVIEW:
+            case u.g.PREVIEW:
                 return (0, a.jsx)(p.E, {});
-            case c.g.WHAT_YOU_LOSE:
+            case u.g.WHAT_YOU_LOSE:
             default:
                 return (0, a.jsx)(m.Z, {})
         }

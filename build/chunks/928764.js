@@ -25,9 +25,9 @@ var i = n(627968),
     I = n(226698),
     T = n(376708),
     N = n(715757),
-    y = n(390897),
+    v = n(390897),
     b = n(704860),
-    v = n(152007),
+    y = n(152007),
     j = n(867455),
     R = n(734057),
     M = n(147036),
@@ -55,7 +55,7 @@ function B(e) {
         variant: "secondary",
         text: s ? k.intl.string(U.default["2Y4vkk"]) : k.intl.string(U.default.YIbR4r),
         onClick: () => {
-            !0 === o.w.get(y.f) ? u() : (0, d.mMO)(async () => {
+            !0 === o.w.get(v.f) ? u() : (0, d.mMO)(async () => {
                 let {
                     default: e
                 } = await Promise.resolve().then(n.bind(n, 390897));
@@ -87,9 +87,9 @@ function V(e) {
     } = e, {
         ref: I,
         width: T
-    } = (0, m.Ay)(), [y, U] = l.useState(3), [V, K] = l.useState(!n), [z, W] = (0, A.A)(!1, 2e3), Y = (0, r.bG)([R.A], () => R.A.getChannel(t), [t]), {
+    } = (0, m.Ay)(), [v, U] = l.useState(3), [V, K] = l.useState(!n), [W, z] = (0, A.A)(!1, 2e3), Y = (0, r.bG)([R.A], () => R.A.getChannel(t), [t]), {
         firstMessage: q
-    } = (0, L.OA)(Y), J = (0, r.bG)([v.A], () => v.A.hasJoined(t)), {
+    } = (0, L.OA)(Y), J = (0, r.bG)([y.A], () => y.A.hasJoined(t)), {
         disableReactionUpdates: $,
         disableReactionCreates: Z,
         isLurking: X,
@@ -123,7 +123,7 @@ function V(e) {
                 location: {
                     section: w.JJy.CHANNEL_HEADER
                 }
-            }), (0, D.C)((0, M.af)(Y, et), () => W(!0))
+            }), (0, D.C)((0, M.af)(Y, et), () => z(!0))
         },
         ec = J ? d.A9s : d.XFE;
     return (0, i.jsxs)(i.Fragment, {
@@ -166,7 +166,7 @@ function V(e) {
                     disableReactionUpdates: $,
                     isLurking: X,
                     isPendingMember: Q,
-                    maxReactions: y,
+                    maxReactions: v,
                     className: G.Br,
                     useChatFontScaling: !1,
                     isForumToolbar: !0,
@@ -198,7 +198,7 @@ function V(e) {
                     })
                 }), (0, i.jsx)(c.m, {
                     text: k.intl.string(k.t.WqhZss),
-                    children: z ? (0, i.jsx)(d.Button, {
+                    children: W ? (0, i.jsx)(d.Button, {
                         icon: d.A9s,
                         size: "sm",
                         variant: "secondary",

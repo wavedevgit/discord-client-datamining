@@ -25,9 +25,9 @@ var i = n(627968),
     I = n(474090),
     T = n(927578),
     N = n(971778),
-    y = n(494783),
+    v = n(494783),
     b = n(342887),
-    v = n(606451),
+    y = n(606451),
     j = n(177392),
     R = n(185494),
     M = n(15910),
@@ -49,10 +49,10 @@ function F(e) {
     } = e, [H, B] = l.useState(""), {
         analyticsLocations: V,
         newestAnalyticsLocation: K
-    } = (0, m.Ay)(h.A.VOICE_FILTER_POPOUT), z = l.useRef(null), W = (0, u.A)({
+    } = (0, m.Ay)(h.A.VOICE_FILTER_POPOUT), W = l.useRef(null), z = (0, u.A)({
         minDimension: 400,
         maxDimension: 600,
-        resizableDomNodeRef: z,
+        resizableDomNodeRef: W,
         onElementResize: (e, t) => {},
         onElementResizeEnd: e => {},
         orientation: u.R.VERTICAL_TOP
@@ -64,7 +64,7 @@ function F(e) {
         [Z, X] = l.useState(!1),
         {
             activeVoice: Q
-        } = (0, y.f)(),
+        } = (0, v.f)(),
         ee = (0, c.zhh)({
             transform: J ? "translateY(-8px) scale(0.96)" : "translateY(0px) scale(1)",
             config: {
@@ -106,7 +106,7 @@ function F(e) {
     return (0, i.jsx)(m.f5, {
         value: V,
         children: (0, i.jsxs)("div", {
-            ref: z,
+            ref: W,
             className: a()(G.ZO, {
                 [G.U]: n,
                 [G.Fd]: !ea
@@ -116,7 +116,7 @@ function F(e) {
             },
             children: [ea && (0, i.jsx)("div", {
                 className: G.Di,
-                onMouseDown: W,
+                onMouseDown: z,
                 children: (0, i.jsx)("div", {
                     className: G.YC
                 })
@@ -173,7 +173,7 @@ function F(e) {
                         })
                     })
                 })]
-            }), (0, i.jsx)(j.H, {}), (0, i.jsx)(v.m, {}), (0, i.jsx)(R.l, {}), (0, i.jsxs)("div", {
+            }), (0, i.jsx)(j.H, {}), (0, i.jsx)(y.m, {}), (0, i.jsx)(R.l, {}), (0, i.jsxs)("div", {
                 className: a()(G.N$, {
                     [G.rd]: null != Q
                 }),

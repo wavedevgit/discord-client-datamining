@@ -31,9 +31,9 @@ function N(e) {
         onClose: t,
         renderOutputDevices: n = !1,
         renderInputDevices: N = !1,
-        renderInputProfiles: y = !1,
+        renderInputProfiles: v = !1,
         renderInputModes: b = !1,
-        renderInputVolume: v = !1,
+        renderInputVolume: y = !1,
         renderOutputVolume: j = !1,
         renderDeafen: R = !1,
         minimal: M = !1,
@@ -67,9 +67,9 @@ function N(e) {
         B = (0, A.A)(P),
         V = (0, p.A)(P),
         K = a.x.DEFAULT,
-        z = f.Ay.isSelfDeaf(K),
-        W = (0, s.bG)([f.Ay], () => f.Ay.getMode()),
-        Y = W === x.TBI.VOICE_ACTIVITY ? x.TBI.PUSH_TO_TALK : x.TBI.VOICE_ACTIVITY;
+        W = f.Ay.isSelfDeaf(K),
+        z = (0, s.bG)([f.Ay], () => f.Ay.getMode()),
+        Y = z === x.TBI.VOICE_ACTIVITY ? x.TBI.PUSH_TO_TALK : x.TBI.VOICE_ACTIVITY;
     return (0, i.jsx)(c.A, {
         object: x.ZSU.CONTEXT_MENU,
         children: (0, i.jsxs)(r.W1t, {
@@ -81,20 +81,20 @@ function N(e) {
             navId: "audio-device-context",
             variant: "fixed",
             "aria-label": I.intl.string(I.t.ZR1Ss6),
-            children: [N && k, n && U, y && F, !M && b && G !== C.m.STUDIO ? (0, i.jsx)(r.rXV, {
+            children: [N && k, n && U, v && F, !M && b && G !== C.m.STUDIO ? (0, i.jsx)(r.rXV, {
                 label: I.intl.string(I.t["pS+K2L"]),
                 children: H
             }) : null, (0, i.jsxs)(r.rXV, {
-                children: [v ? B : null, j ? V : null, M ? (0, i.jsx)(r.bXX, {}) : null, M && R ? (0, i.jsx)(r.sLh, {
+                children: [y ? B : null, j ? V : null, M ? (0, i.jsx)(r.bXX, {}) : null, M && R ? (0, i.jsx)(r.sLh, {
                     id: "deafen",
                     label: I.intl.string(I.t.wjcRFX),
                     action: () => o.A.toggleSelfDeaf({
                         context: K,
                         location: "AudioDeviceMenu"
                     }),
-                    checked: z
+                    checked: W
                 }, "self-deafen") : null, M && N && _.isPlatformEmbedded ? (0, i.jsx)(r.sLh, {
-                    checked: W === x.TBI.PUSH_TO_TALK,
+                    checked: z === x.TBI.PUSH_TO_TALK,
                     id: "input-mode",
                     label: I.intl.string(I.t.Q8gkVL),
                     action: () => o.A.setMode(Y, void 0, void 0, {

@@ -1,6 +1,6 @@
 /** chunk id: 920437 params = (module,exports,require) **/
 n.d(t, {
-    A: () => z
+    A: () => W
 });
 var i = n(627968),
     l = n(64700),
@@ -25,9 +25,9 @@ var i = n(627968),
     I = n(158476),
     T = n(857071),
     N = n(552227),
-    y = n(698405),
+    v = n(698405),
     b = n(557722),
-    v = n(976860),
+    y = n(976860),
     j = n(544028),
     R = n(560010),
     M = n(696451),
@@ -164,7 +164,7 @@ class K extends l.PureComponent {
     handleGoBack = () => {
         this.setState({
             submitting: !0
-        }), (0, v.JK)().goBack()
+        }), (0, y.JK)().goBack()
     };
     handleFollowAnnouncement = () => {
         let {
@@ -189,8 +189,8 @@ class K extends l.PureComponent {
         let {
             guild: e
         } = this.props;
-        return a()(null != e, "GuildVerification.renderLurkerModeUpsellPopout - guild cannot be undefined"), (0, i.jsx)(y.A, {
-            type: y.w.CHAT,
+        return a()(null != e, "GuildVerification.renderLurkerModeUpsellPopout - guild cannot be undefined"), (0, i.jsx)(v.A, {
+            type: v.w.CHAT,
             guild: e,
             closePopout: this.closeLurkerModeUpsellPopout
         })
@@ -301,14 +301,14 @@ class K extends l.PureComponent {
     }
 }
 
-function z(e) {
+function W(e) {
     let {
         channel: t,
         children: n
     } = e, l = t.getGuildId(), s = (0, r.bG)([D.A], () => D.A.getGuild(l)), a = (0, r.bG)([O.A], () => O.A.getCheck(l)), o = t.type === G.rbe.GUILD_ANNOUNCEMENT && null != s && s.features.has(G.GuildFeatures.NEWS), c = (0, r.bG)([R.A], () => o ? R.A.getFollowerStatsForChannel(t.id) : null), d = (0, r.bG)([T.A], () => T.A.isLurking(l)), u = (0, r.bG)([P.default], () => P.default.getCurrentUser()), h = u?.isStaff() ?? !1, m = (0, r.bG)([M.Ay], () => null != u && (M.Ay.getMember(l, u.id)?.isPending ?? !1)), g = !!(0, x.Qd)(s), p = (0, r.bG)([I.A], () => I.A.shouldShowPopout(l)), f = (0, r.bG)([L.A], () => L.A.can(G.xBc.SEND_MESSAGES, t)), _ = (0, r.bG)([C.A], () => C.A.getRequest(l)), {
         showLinkedLobbyApplicationLoadingIndicator: S,
         requiredLinkedLobbyApplication: N
-    } = (0, k.A)(t.linkedLobby), y = {
+    } = (0, k.A)(t.linkedLobby), v = {
         ...a,
         guild: s,
         isLurking: d,
@@ -328,7 +328,7 @@ function z(e) {
         isStaff: h
     };
     return (0, i.jsx)(K, {
-        ...y,
+        ...v,
         channel: t,
         children: n
     })

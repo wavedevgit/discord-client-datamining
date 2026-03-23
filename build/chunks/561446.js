@@ -39,29 +39,29 @@ function E(e) {
             guildId: t?.id,
             maxMembers: t?.maxMembers
         }
-    }), N = (0, l.bG)([c.A], () => null != I ? c.A.getMemberCount(I) : 0), y = null != T && (N ?? 0) >= T, {
+    }), N = (0, l.bG)([c.A], () => null != I ? c.A.getMemberCount(I) : 0), v = null != T && (N ?? 0) >= T, {
         approveRequest: b,
-        rejectRequest: v,
+        rejectRequest: y,
         submitting: j
     } = (0, g.W)(C?.guildId, C?.userId, C?.joinRequestId);
     return null != C && C.applicationStatus === A.B5.SUBMITTED && S ? (0, i.jsxs)("div", {
         className: _.U,
         children: [(0, i.jsx)(s.m, {
             text: f.intl.string(f.t.cdPGbE),
-            shouldShow: y,
+            shouldShow: v,
             children: (0, i.jsx)(a.Button, {
                 variant: "active",
                 size: "sm",
                 text: f.intl.string(f.t.BzjDQJ),
                 loading: j,
                 onClick: b,
-                disabled: y
+                disabled: v
             })
         }), (0, i.jsx)(a.Button, {
             variant: "critical-primary",
             size: "sm",
             text: f.intl.string(f.t.hDtbsz),
-            onClick: v,
+            onClick: y,
             disabled: j || C.applicationStatus !== A.B5.SUBMITTED
         }), n && (0, i.jsx)(a.Button, {
             onClick: () => {

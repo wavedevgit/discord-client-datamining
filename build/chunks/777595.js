@@ -8,12 +8,12 @@ var a = l(627968),
     i = l(793574),
     o = l(688810),
     s = l(166532),
-    u = l(735305),
-    c = l(412463),
+    c = l(735305),
+    u = l(412463),
     d = l(652215);
 let p = [{
         key: s.pn.ADD_PAYMENT_STEPS,
-        renderStep: e => (0, a.jsx)(u.x, {
+        renderStep: e => (0, a.jsx)(c.x, {
             ...e,
             breadcrumbSteps: [s.pn.ADD_PAYMENT_STEPS],
             onReturn: () => {}
@@ -23,7 +23,7 @@ let p = [{
         }
     }, {
         key: s.pn.REVIEW,
-        renderStep: e => (0, a.jsx)(c.eO, {
+        renderStep: e => (0, a.jsx)(u.eO, {
             ...e,
             originStep: s.pn.ADD_PAYMENT_STEPS,
             text: "Review Step Placeholder"
@@ -40,8 +40,8 @@ let p = [{
                     useStripeElements: t
                 } = e, {
                     analyticsLocations: l
-                } = (0, o.Ay)(i.A.PAYMENT_FLOW_TEST_PAGE), s = n.useMemo(() => (0, r.A)(), []), u = n.useCallback(() => {}, []);
-                return (0, a.jsx)(c.dL, {
+                } = (0, o.Ay)(i.A.PAYMENT_FLOW_TEST_PAGE), s = n.useMemo(() => (0, r.A)(), []), c = n.useCallback(() => {}, []);
+                return (0, a.jsx)(u.dL, {
                     stepConfigs: p,
                     analyticsLocations: l,
                     applicationId: d.FYj,
@@ -54,7 +54,7 @@ let p = [{
                     disablePurchases: !0,
                     excludeSubscriptionPlansBySKU: !0,
                     renderHeader: () => null,
-                    onClose: u,
+                    onClose: c,
                     onComplete: () => {},
                     paymentContextOverrides: {
                         paymentElementsEnabled: t

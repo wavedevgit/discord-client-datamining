@@ -38,9 +38,9 @@ let x = l.memo(function(e) {
         enabled: I,
         zoomLevel: T,
         minZoom: N,
-        maxZoom: y,
+        maxZoom: v,
         isDragging: b,
-        isWheeling: v,
+        isWheeling: y,
         isSlidering: j,
         setIsSlidering: R,
         doZoom: M,
@@ -60,7 +60,7 @@ let x = l.memo(function(e) {
             "--custom-zoom-minimap-width": `${e}px`,
             "--custom-zoom-minimap-height": "120px"
         }
-    }, [O]), z = l.useCallback(e => {
+    }, [O]), W = l.useCallback(e => {
         if (null == F.current || null == L.current) return;
         let t = F.current.getBoundingClientRect(),
             n = L.current.clientWidth,
@@ -71,17 +71,17 @@ let x = l.memo(function(e) {
             x: (.5 - l / t.width) * n * T,
             y: (.5 - s / t.height) * i * T
         }))
-    }, [k, T, L, w]), W = l.useCallback(e => {
-        E(e) && (e.preventDefault(), e.stopPropagation(), G(!0), z({
+    }, [k, T, L, w]), z = l.useCallback(e => {
+        E(e) && (e.preventDefault(), e.stopPropagation(), G(!0), W({
             x: e.clientX,
             y: e.clientY
         }))
-    }, [z]), Y = l.useCallback(e => {
-        U && (e.preventDefault(), e.stopPropagation(), z({
+    }, [W]), Y = l.useCallback(e => {
+        U && (e.preventDefault(), e.stopPropagation(), W({
             x: e.clientX,
             y: e.clientY
         }))
-    }, [U, z]), q = l.useCallback(e => {
+    }, [U, W]), q = l.useCallback(e => {
         !U || E(e) || (e.preventDefault(), e.stopPropagation(), G(!1))
     }, [U]), J = m.Ay.getVideoComponent(), $ = l.useMemo(() => {
         let e = null != L.current ? L.current.clientWidth : 1,
@@ -95,9 +95,9 @@ let x = l.memo(function(e) {
             "--custom-zoom-indicator-top": `${100*(0,r.clamp)(s-i/2,0,1-i)}%`,
             "--custom-zoom-indicator-width": `${100*n}%`,
             "--custom-zoom-indicator-height": `${100*i}%`,
-            "--custom-zoom-indicator-transition": b || U || v || j ? "none" : "top 0.1s ease-out, left 0.1s ease-out, width 0.1s ease-out, height 0.1s ease-out"
+            "--custom-zoom-indicator-transition": b || U || y || j ? "none" : "top 0.1s ease-out, left 0.1s ease-out, width 0.1s ease-out, height 0.1s ease-out"
         }
-    }, [b, U, v, j, P, T, L]), Z = l.useCallback(e => {
+    }, [b, U, y, j, P, T, L]), Z = l.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), M(T - .25, A.qd, "button")
     }, [M, T]), X = l.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), M(T + .25, A.qd, "button")
@@ -123,7 +123,7 @@ let x = l.memo(function(e) {
                 ref: F,
                 className: f.Wc,
                 style: K,
-                onMouseDown: W,
+                onMouseDown: z,
                 onMouseMove: Y,
                 onMouseUp: q,
                 children: [(0, i.jsx)(J, {
@@ -154,7 +154,7 @@ let x = l.memo(function(e) {
                     })
                 }), (0, i.jsx)(d.Apm, {
                     minValue: N,
-                    maxValue: y,
+                    maxValue: v,
                     initialValue: T,
                     value: T,
                     asValueChanges: ee,
@@ -167,7 +167,7 @@ let x = l.memo(function(e) {
                 children: (0, i.jsx)(d.K0, {
                     icon: d.r1u,
                     onClick: X,
-                    disabled: T >= y,
+                    disabled: T >= v,
                     variant: "overlay-secondary",
                     size: "sm",
                     "aria-label": g.intl.string(g.t["9hMafy"])

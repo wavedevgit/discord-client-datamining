@@ -27,9 +27,9 @@ var i = n(627968),
     I = n(688810),
     T = n(571694),
     N = n(47167),
-    y = n(915089),
+    v = n(915089),
     b = n(66442),
-    v = n(279208),
+    y = n(279208),
     j = n(267102),
     R = n(976860),
     M = n(219271),
@@ -46,8 +46,8 @@ var i = n(627968),
     B = n(287809),
     V = n(954571),
     K = n(957565),
-    z = n(203982),
-    W = n(403362),
+    W = n(203982),
+    z = n(403362),
     Y = n(695184),
     q = n(661191),
     J = n(427262),
@@ -59,7 +59,7 @@ var i = n(627968),
     et = n(650583),
     en = n(985018),
     ei = n(587360);
-let el = (0, y.Ld)(),
+let el = (0, v.Ld)(),
     es = e => {
         let {
             channel: t,
@@ -111,7 +111,7 @@ let el = (0, y.Ld)(),
                 children: en.intl.string(en.t.cjE7wH)
             }),
             ...l,
-            children: s.filter(W.Vq).sort((e, t) => {
+            children: s.filter(z.Vq).sort((e, t) => {
                 let n = e.lastMessageId ?? e.id,
                     i = t.lastMessageId ?? t.id;
                 return q.default.compare(i, n)
@@ -156,12 +156,12 @@ class er extends l.PureComponent {
             type: this._getAnalyticsEntryPoint().entryPointType,
             source: this._getAnalyticsEntryPoint().entryPointSource,
             is_friend: !this.isNotFriends()
-        }), z._.subscribe(ee.jej.SCROLL_PAGE_UP, this.scrollPageUp), z._.subscribe(ee.jej.SCROLL_PAGE_DOWN, this.scrollPageDown), setTimeout(() => {
+        }), W._.subscribe(ee.jej.SCROLL_PAGE_UP, this.scrollPageUp), W._.subscribe(ee.jej.SCROLL_PAGE_DOWN, this.scrollPageDown), setTimeout(() => {
             this.forceFocus()
         }, 0)
     }
     componentWillUnmount() {
-        z._.unsubscribe(ee.jej.SCROLL_PAGE_UP, this.scrollPageUp), z._.unsubscribe(ee.jej.SCROLL_PAGE_DOWN, this.scrollPageDown), null != this.copyTimeout && clearTimeout(this.copyTimeout), h.h.wait(() => f.A.close())
+        W._.unsubscribe(ee.jej.SCROLL_PAGE_UP, this.scrollPageUp), W._.unsubscribe(ee.jej.SCROLL_PAGE_DOWN, this.scrollPageDown), null != this.copyTimeout && clearTimeout(this.copyTimeout), h.h.wait(() => f.A.close())
     }
     scrollPageUp = () => {
         this.scrollerRef.current?.scrollPageUp({
@@ -577,7 +577,7 @@ class er extends l.PureComponent {
             copied: l
         } = this.state;
         if (null == e || !e.isMultiUserDM() || this.isPartyFull()) return null;
-        let s = null != t ? (0, v.A)(t.code) : "",
+        let s = null != t ? (0, y.A)(t.code) : "",
             a = s.length > 0;
         return (0, i.jsx)(u.D0$, {
             label: en.intl.string(en.t.t3O2BR),
@@ -586,7 +586,7 @@ class er extends l.PureComponent {
             }) : void 0,
             children: (0, i.jsx)(u.e2O, {
                 supportsCopy: K.p5,
-                placeholder: (0, v.A)(en.intl.string(en.t.lPVBqP)),
+                placeholder: (0, y.A)(en.intl.string(en.t.lPVBqP)),
                 value: a ? n ? en.intl.string(en.t["6HzNgZ"]) : s : "",
                 buttonColor: d.$n.Colors.BRAND,
                 text: a ? l ? en.intl.string(en.t.q30c5i) : en.intl.string(en.t.OpuAlK) : en.intl.string(en.t.qzxqUf),
@@ -976,8 +976,8 @@ function ed(e) {
     })), {
         modalKey: s
     }), [t, s]), o = l.useCallback(() => a ? (0, u.OoC)(s) : r(), [a, s, r]);
-    return l.useEffect(() => (n && z._.subscribe(ee.jej.TOGGLE_DM_CREATE, o), () => {
-        z._.unsubscribe(ee.jej.TOGGLE_DM_CREATE, o)
+    return l.useEffect(() => (n && W._.subscribe(ee.jej.TOGGLE_DM_CREATE, o), () => {
+        W._.unsubscribe(ee.jej.TOGGLE_DM_CREATE, o)
     }), [n, o]), (0, x.Ay)(() => {
         (0, M.u)()
     }), {

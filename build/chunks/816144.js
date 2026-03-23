@@ -25,9 +25,9 @@ var i = n(627968),
     I = n(427262),
     T = n(803622),
     N = n(314307),
-    y = n(393194),
+    v = n(393194),
     b = n(455067),
-    v = n(432817),
+    y = n(432817),
     j = n(324799),
     R = n(635157),
     M = n(379768),
@@ -46,7 +46,7 @@ function F(e) {
         channel: n
     } = e, l = t && (0, h.Ae)(n), a = (0, s.bG)([x.Ay], () => null != n.guild_id && n === x.Ay.getDefaultChannel(n.guild_id), [n]);
     if ((0, m.A)(n.id)) return null;
-    if (n.isForumPost()) return (0, i.jsx)(y.A, {
+    if (n.isForumPost()) return (0, i.jsx)(v.A, {
         channel: n
     });
     if (_.Le.has(n.type)) return (0, i.jsx)(O.A, {
@@ -70,7 +70,7 @@ function H(e) {
     } = e, h = (0, u.Ay)(t), {
         type: m
     } = t, _ = (0, s.bG)([S.default], () => t.isPrivate() ? S.default.getUser(t.getRecipientId()) : null), x = I.Ay.useUserTag(_), {
-        canManageRoles: y,
+        canManageRoles: v,
         canReadMessageHistory: M
     } = (0, s.cf)([C.A], () => ({
         canManageRoles: C.A.can(P.xBc.MANAGE_ROLES, t),
@@ -101,7 +101,7 @@ function H(e) {
             null != L && (n.push((0, i.jsx)(j.X, {
                 channel: t,
                 user: _
-            }, "mute")), n.push((0, i.jsx)(v.L, {
+            }, "mute")), n.push((0, i.jsx)(y.L, {
                 user: _,
                 application: O,
                 channel: t,
@@ -153,7 +153,7 @@ function H(e) {
     });
     return M ? (0, i.jsx)(F, {
         channel: t,
-        canManageRoles: y
+        canManageRoles: v
     }) : (0, i.jsx)(N.Ay, {
         channelId: t.id,
         children: (0, i.jsx)(N.j1, {

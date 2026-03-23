@@ -31,9 +31,9 @@ function S(e) {
         T = (0, s.bG)([o.A], () => o.A.useReducedMotion),
         N = (0, u.Ay)(n) ?? "",
         {
-            avatarDecorationSrc: y,
+            avatarDecorationSrc: v,
             eventHandlers: b,
-            isAnimating: v
+            isAnimating: y
         } = (0, _.A)({
             userId: I?.id,
             size: r._3J.SIZE_80,
@@ -51,7 +51,7 @@ function S(e) {
         channelId: n.id,
         onMouseEnter: M,
         onMouseLeave: D,
-        children: [(t = !T && v, n.isMultiUserDM() ? (0, i.jsx)(g.Q, {
+        children: [(t = !T && y, n.isMultiUserDM() ? (0, i.jsx)(g.Q, {
             channel: n,
             editable: !0,
             location: c.A.EMPTY_GROUP_DM,
@@ -65,7 +65,7 @@ function S(e) {
             "aria-label": N,
             size: r._3J.SIZE_80,
             src: (0, d.Y)(n, 80, t),
-            avatarDecoration: y
+            avatarDecoration: v
         })), (0, i.jsx)(E.cr, {
             children: O ? (0, i.jsx)(m.A, {
                 userName: N,

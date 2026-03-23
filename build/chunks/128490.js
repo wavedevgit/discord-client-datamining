@@ -29,8 +29,8 @@ function h(e) {
     return (0, i.jsxs)(r.IpV, {
         fade: !0,
         className: f.XG,
-        children: [t?.bio != null && t?.bio !== "" && (0, i.jsx)(c.A, {
-            userBio: t.bio,
+        children: [(0, i.jsx)(c.E, {
+            userBio: t?.bio,
             setLineClamp: !1
         }), I?.popularApplicationCommandIds != null && null != j && (0, i.jsx)(d.A, {
             applicationId: I.id,

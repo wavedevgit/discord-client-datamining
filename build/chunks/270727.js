@@ -1,6 +1,6 @@
 /** chunk id: 270727 params = (module,exports,require) **/
 l.d(t, {
-    h2: () => u
+    h2: () => c
 });
 var a = l(627968),
     n = l(64700),
@@ -41,7 +41,7 @@ let s = {
             defaultValue: !1
         }
     },
-    u = {
+    c = {
         title: "Balance Widget Pill",
         stories: [{
             name: "Balance Widget Pill",
@@ -51,17 +51,17 @@ let s = {
                     loading: t,
                     shouldUseTabularNums: l,
                     ...s
-                } = e, [u, c] = (0, n.useState)(s.balance);
+                } = e, [c, u] = (0, n.useState)(s.balance);
                 return (0, n.useEffect)(() => {
-                    null == u && null != s.balance && c(s.balance)
-                }, [s.balance, u]), (0, a.jsxs)("div", {
+                    null == c && null != s.balance && u(s.balance)
+                }, [s.balance, c]), (0, a.jsxs)("div", {
                     className: o.YG,
                     children: [(0, a.jsx)(i.Gy, {
                         ...s,
-                        balance: t ? null : u,
+                        balance: t ? null : c,
                         className: l ? o.jG : void 0
                     }), (0, a.jsx)(r.$nd, {
-                        onClick: () => c(s.balance),
+                        onClick: () => u(s.balance),
                         text: "Update Balance"
                     })]
                 })
@@ -82,19 +82,19 @@ let s = {
                     loadingDuration: t,
                     shouldUseTabularNums: l,
                     ...s
-                } = e, [u, c] = (0, n.useState)(s.balance);
+                } = e, [c, u] = (0, n.useState)(s.balance);
                 return (0, n.useEffect)(() => {
-                    c(s.balance)
+                    u(s.balance)
                 }, [s.balance]), (0, a.jsxs)("div", {
                     className: o.YG,
                     children: [(0, a.jsx)(i.Gy, {
                         ...s,
-                        balance: u,
+                        balance: c,
                         className: l ? o.jG : void 0
                     }), (0, a.jsx)(r.$nd, {
                         onClick: () => {
-                            c(null), setTimeout(() => {
-                                c(s.balance)
+                            u(null), setTimeout(() => {
+                                u(s.balance)
                             }, t)
                         },
                         text: "Simulate Loading State"

@@ -25,9 +25,9 @@ var i = n(627968),
     I = n(576705),
     T = n(287809),
     N = n(488926),
-    y = n(427262),
+    v = n(427262),
     b = n(314307),
-    v = n(234567),
+    y = n(234567),
     j = n(652215),
     R = n(985018),
     M = n(391514),
@@ -107,7 +107,7 @@ function O(e) {
                     users: U
                 });
                 let e = U[0],
-                    n = y.Ay.getName(e);
+                    n = v.Ay.getName(e);
                 return (0, i.jsxs)("div", {
                     className: M.HD,
                     children: [(0, i.jsx)(h.euF, {
@@ -129,7 +129,7 @@ function O(e) {
             }(), k.map((e, n) => {
                 let l = e.colorString ?? j.TpD,
                     s = e.tags?.guild_connections !== void 0;
-                return G ? (0, i.jsx)(v.A, {
+                return G ? (0, i.jsx)(y.A, {
                     className: a()(M.JC, {
                         [M.HV]: n === k.length - 1
                     }),

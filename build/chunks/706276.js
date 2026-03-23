@@ -8,8 +8,8 @@ var a = l(627968),
     i = l(73825),
     o = l(473702),
     s = l(252561),
-    u = l(654044),
-    c = l(931088),
+    c = l(654044),
+    u = l(931088),
     d = l(652215),
     p = l(601107),
     m = l(788868),
@@ -18,7 +18,7 @@ let b = () => {
         let [e, t] = n.useState(m.PremiumTypes.TIER_0), [l, b] = n.useState(o.g.WHAT_YOU_LOSE), [y, f] = n.useState(null), [g, v] = n.useState(m.gD.PREMIUM_MONTH_TIER_0), [_, E] = n.useState([]), [C, S] = n.useState(() => {
             let e = new Date;
             return e.setMonth(e.getMonth() + 1), e
-        }), [j, T] = n.useState(null), [A, P] = n.useState(!1), [R, k] = n.useState(!1), [I, N] = n.useState(!1);
+        }), [j, T] = n.useState(null), [A, P] = n.useState(!1), [k, R] = n.useState(!1), [I, N] = n.useState(!1);
         (0, n.useEffect)(() => {
             (0, i.zS)()
         }, []), (0, n.useEffect)(() => {
@@ -65,7 +65,7 @@ let b = () => {
                     }]), v(m.gD.PREMIUM_MONTH_TIER_2)
             }
         }, [e]), (0, n.useEffect)(() => {
-            [o.g.CONFIRM_DISCOUNT, o.g.DISCOUNT_APPLIED].includes(l) && null === y && f(x()), l === o.g.PREVIEW && null === j && T(new u.A({
+            [o.g.CONFIRM_DISCOUNT, o.g.DISCOUNT_APPLIED].includes(l) && null === y && f(x()), l === o.g.PREVIEW && null === j && T(new c.A({
                 id: "",
                 invoiceItems: [{
                     id: "",
@@ -92,7 +92,7 @@ let b = () => {
             })), l !== o.g.PREVIEW && null !== j && T(null)
         }, [l, y, C, g, j]);
         let M = n.useCallback(async () => {
-            N(!0), await (0, r.mMO)(async () => t => (0, a.jsx)(c.m, {
+            N(!0), await (0, r.mMO)(async () => t => (0, a.jsx)(u.m, {
                 ...t,
                 onClose: () => {
                     t.onClose(), N(!1)
@@ -106,7 +106,7 @@ let b = () => {
                     intervalCount: 1
                 },
                 errorOnCancel: A,
-                errorOnRedeem: R,
+                errorOnRedeem: k,
                 setActiveStep: e => {
                     b(e), t.onClose()
                 },
@@ -134,7 +134,7 @@ let b = () => {
                     pauseReason: p.qf.UNKNOWN
                 }
             }))
-        }, [e, y, g, j, A, R, l, C]);
+        }, [e, y, g, j, A, k, l, C]);
         return (0, n.useEffect)(() => {
             I && M()
         }, [l, I, M]), (0, a.jsxs)(s.LB, {
@@ -221,9 +221,9 @@ let b = () => {
                 })
             }), (0, a.jsx)(s.MG, {
                 children: (0, a.jsx)(r.Checkbox, {
-                    checked: R,
+                    checked: k,
                     onChange: () => {
-                        k(!R)
+                        R(!k)
                     },
                     label: "Error on Redeem Offer"
                 })

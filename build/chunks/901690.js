@@ -36,15 +36,15 @@ let p = l.memo(function(e) {
         setPanOffset: I,
         zoomLevel: T,
         isWheeling: N,
-        setIsWheeling: y,
+        setIsWheeling: v,
         isSlidering: b,
-        setVideoAspectRatio: v,
+        setVideoAspectRatio: y,
         wrapperRef: j,
         doZoom: R,
         clampPanOffset: M
-    } = l.useContext(m.e9), [D, O] = l.useState(null), [L, P] = l.useState(null), [w, k] = l.useState(0), [U, G] = l.useState(null), [F, H] = l.useState(null), [B, V] = l.useState(!1), K = l.useRef(new r.Ep), z = l.useRef(new r.Ep), W = l.useRef(null), Y = T > E, q = l.useCallback(e => {
-        e.width > 0 && e.height > 0 && v(e.width / e.height), s?.(e)
-    }, [s, v]), J = l.useCallback(e => {
+    } = l.useContext(m.e9), [D, O] = l.useState(null), [L, P] = l.useState(null), [w, k] = l.useState(0), [U, G] = l.useState(null), [F, H] = l.useState(null), [B, V] = l.useState(!1), K = l.useRef(new r.Ep), W = l.useRef(new r.Ep), z = l.useRef(null), Y = T > E, q = l.useCallback(e => {
+        e.width > 0 && e.height > 0 && y(e.width / e.height), s?.(e)
+    }, [s, y]), J = l.useCallback(e => {
         if (null == j.current) return m.qd;
         let t = j.current.getBoundingClientRect();
         return {
@@ -82,19 +82,19 @@ let p = l.memo(function(e) {
     }, [Y, L, w, D]), ee = l.useCallback(() => {
         C(!1), H(null), G(null)
     }, [C]), et = l.useCallback(e => {
-        _ && (y(!0), R(T - e.deltaY / 100, J(e), "wheel"), f(), K.current.start(100, () => {
-            y(!1)
+        _ && (v(!0), R(T - e.deltaY / 100, J(e), "wheel"), f(), K.current.start(100, () => {
+            v(!1)
         }))
-    }, [_, R, T, J, f, y]);
+    }, [_, R, T, J, f, v]);
     (0, o.i4)(j, l.useCallback(e => {
         let {
             width: t,
             height: n
         } = e;
         if (!Y || null == t || null == n) return;
-        let i = W.current;
+        let i = z.current;
         if (null == i) {
-            W.current = {
+            z.current = {
                 width: t,
                 height: n
             };
@@ -113,14 +113,14 @@ let p = l.memo(function(e) {
                 x: (0 !== i ? e.x / i : 0) * r,
                 y: (0 !== a ? e.y / a : 0) * o
             })
-        }), W.current = {
+        }), z.current = {
             width: t,
             height: n
-        }, z.current.start(100, () => {
+        }, W.current.start(100, () => {
             V(!1)
         }))
     }, [M, Y, T, I]), [Y, T]), (0, c.l0)(() => {
-        K.current.stop(), z.current.stop()
+        K.current.stop(), W.current.stop()
     }), l.useEffect(() => {
         null != n && (0, u.c)(n, void 0, _ && Y ? T : 1)
     }, [_, Y, n, T]);

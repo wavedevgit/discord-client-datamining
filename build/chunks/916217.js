@@ -131,7 +131,7 @@ function P(e) {
                                 }), (0, i.jsxs)(r.IpV, {
                                     fade: !0,
                                     className: L.XG,
-                                    children: [(0, i.jsx)(f.A, {
+                                    children: [(0, i.jsx)(f.E, {
                                         userId: n.id,
                                         userBio: D?.bio,
                                         setLineClamp: !1

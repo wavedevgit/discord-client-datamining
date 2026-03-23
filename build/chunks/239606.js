@@ -402,8 +402,8 @@ function eN(e) {
                                                         relationshipType: e9,
                                                         onClose: e_
                                                     })
-                                                }), eQ?.bio != null && eQ?.bio !== "" && !e6 && (0, i.jsx)(z.A, {
-                                                    userBio: eQ.bio,
+                                                }), !e6 && (0, i.jsx)(z.E, {
+                                                    userBio: eQ?.bio,
                                                     setLineClamp: !1
                                                 }), e5.length > 0 && (0, i.jsx)(ed.A, {
                                                     heading: eh.intl.string(eh.t["Uv/eTx"]),

@@ -11,8 +11,8 @@ var a = l(627968),
     i = l(635358),
     o = l(417597),
     s = l(397927),
-    u = l(73153),
-    c = l(830382),
+    c = l(73153),
+    u = l(830382),
     d = l(73825),
     p = l(793574),
     m = l(688810),
@@ -30,13 +30,13 @@ let _ = e => {
             applicationId: a
         } = e, {
             analyticsLocations: s
-        } = (0, m.Ay)(p.A.PAYMENT_FLOW_TEST_PAGE), u = n.useRef(null), d = n.useRef(null), [h, b] = n.useState(() => (0, r.A)());
+        } = (0, m.Ay)(p.A.PAYMENT_FLOW_TEST_PAGE), c = n.useRef(null), d = n.useRef(null), [h, b] = n.useState(() => (0, r.A)());
         n.useEffect(() => {
-            (u.current !== t || d.current !== l) && (b((0, r.A)()), u.current = t, d.current = l)
+            (c.current !== t || d.current !== l) && (b((0, r.A)()), c.current = t, d.current = l)
         }, [t, l]);
         let [x, y] = (0, o.yK)([g.A], () => [g.A.isFetching(t), g.A.get(t)]);
         return n.useEffect(() => {
-            null != y || x || (0, c.EX)(a, t, i.g.VARIANTS_GROUP).catch(e => {})
+            null != y || x || (0, u.EX)(a, t, i.g.VARIANTS_GROUP).catch(e => {})
         }, [a, t, y, x]), {
             loadId: h,
             analyticsLocations: s,
@@ -53,7 +53,7 @@ let _ = e => {
             subscriptionPlanId: t
         } = e;
         n.useEffect(() => {
-            f.A.isLoadedForPremiumSKUs() || u.h.wait(() => (0, d.zS)())
+            f.A.isLoadedForPremiumSKUs() || c.h.wait(() => (0, d.zS)())
         }, []);
         let l = (0, o.bG)([f.A], () => null != t ? f.A.get(t) : null);
         return {
@@ -86,8 +86,8 @@ let _ = e => {
             isGift: r,
             onClose: i,
             onComplete: o,
-            initialPlanId: u,
-            purchaseType: c,
+            initialPlanId: c,
+            purchaseType: u,
             stepConfigs: d,
             loadId: p,
             excludeSubscriptionPlansBySKU: m,
@@ -110,7 +110,7 @@ let _ = e => {
             skuIDs: null != n ? [n] : [],
             isGift: r,
             activeSubscription: null,
-            purchaseType: c,
+            purchaseType: u,
             excludeSubscriptionPlansBySKU: m,
             children: (0, a.jsx)(v.Y, {
                 ...C,
@@ -123,7 +123,7 @@ let _ = e => {
                             onComplete: o,
                             applicationId: l,
                             skuId: n,
-                            initialPlanId: u,
+                            initialPlanId: c,
                             analyticsLocations: t,
                             renderHeader: f
                         }, S)

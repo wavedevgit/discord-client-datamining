@@ -8,8 +8,8 @@ var a = l(627968),
     i = l(116833),
     o = l(397927),
     s = l(301679),
-    u = l(149757),
-    c = l(788868),
+    c = l(149757),
+    u = l(788868),
     d = l(985018);
 let p = {
         bronze: {
@@ -69,17 +69,17 @@ let p = {
             gradientColor: _,
             estimatedTooltipHeight: E
         } = e, C = n.useRef(null), S = n.useRef(null), j = n.useMemo(() => ({
-            bronze: c.Ac.PREMIUM_TENURE_1_MONTH,
-            silver: c.Ac.PREMIUM_TENURE_3_MONTH,
-            gold: c.Ac.PREMIUM_TENURE_6_MONTH,
-            platinum: c.Ac.PREMIUM_TENURE_12_MONTH,
-            diamond: c.Ac.PREMIUM_TENURE_24_MONTH,
-            emerald: c.Ac.PREMIUM_TENURE_36_MONTH,
-            ruby: c.Ac.PREMIUM_TENURE_60_MONTH,
-            opal: c.Ac.PREMIUM_TENURE_72_MONTH
-        })[h], [h]), T = null != j ? (0, u.I)(j).standard : null, A = n.useMemo(() => {
+            bronze: u.Ac.PREMIUM_TENURE_1_MONTH,
+            silver: u.Ac.PREMIUM_TENURE_3_MONTH,
+            gold: u.Ac.PREMIUM_TENURE_6_MONTH,
+            platinum: u.Ac.PREMIUM_TENURE_12_MONTH,
+            diamond: u.Ac.PREMIUM_TENURE_24_MONTH,
+            emerald: u.Ac.PREMIUM_TENURE_36_MONTH,
+            ruby: u.Ac.PREMIUM_TENURE_60_MONTH,
+            opal: u.Ac.PREMIUM_TENURE_72_MONTH
+        })[h], [h]), T = null != j ? (0, c.I)(j).standard : null, A = n.useMemo(() => {
             if (null == j) return "";
-            let e = c.VD[j];
+            let e = u.VD[j];
             return (d.intl.string(d.t.lG6a5x) + " " + d.intl.string(e.nameUnformatted)).toLocaleUpperCase()
         }, [j]), P = n.useMemo(() => {
             if (!r || null == T) return;
@@ -98,7 +98,7 @@ let p = {
                     ...e
                 }
             }
-        }, [r, T, A, b, x, y, f]), R = {
+        }, [r, T, A, b, x, y, f]), k = {
             title: t,
             body: l,
             graphic: P,
@@ -129,7 +129,7 @@ let p = {
                 },
                 children: [(0, a.jsx)(s.L, {
                     targetElementRef: C,
-                    ...R,
+                    ...k,
                     children: (0, a.jsx)(o.Button, {
                         buttonRef: C,
                         variant: "primary",
@@ -137,7 +137,7 @@ let p = {
                     })
                 }), (0, a.jsx)(s.L, {
                     targetElementRef: S,
-                    ...R,
+                    ...k,
                     children: (0, a.jsx)(o.Button, {
                         buttonRef: S,
                         variant: "primary",

@@ -23,11 +23,11 @@ function f(e) {
         onAcceptSuccess: n,
         onRejectSuccess: l,
         onError: f
-    } = e, _ = (0, A.A)(), [E, x] = i.useState(!1), [C, S] = i.useState(!1), [I, T] = i.useState(!1), [N, y] = i.useState(!1), [b, v] = i.useState(!1), j = E || C || I, R = i.useCallback(async e => {
+    } = e, _ = (0, A.A)(), [E, x] = i.useState(!1), [C, S] = i.useState(!1), [I, T] = i.useState(!1), [N, v] = i.useState(!1), [b, y] = i.useState(!1), j = E || C || I, R = i.useCallback(async e => {
         if (!j) {
             x(!0);
             try {
-                await (0, h.RK)(e), y(!0), n?.()
+                await (0, h.RK)(e), v(!0), n?.()
             } catch (t) {
                 let e = new a.LG(t);
                 f?.(e)
@@ -39,7 +39,7 @@ function f(e) {
         if (!j) {
             S(!0);
             try {
-                await (0, h.UK)(e), v(!0), l?.()
+                await (0, h.UK)(e), y(!0), l?.()
             } catch (t) {
                 let e = new a.LG(t);
                 f?.(e)
@@ -53,7 +53,7 @@ function f(e) {
         let t = s()(e, 50);
         try {
             for (let e of t) await (0, h.ST)(e);
-            v(!0), l?.()
+            y(!0), l?.()
         } catch (t) {
             let e = new a.LG(t);
             f?.(e)

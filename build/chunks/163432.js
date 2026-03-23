@@ -77,25 +77,25 @@ function f(e, t) {
                 I = Math.max(0, C - A.length),
                 T = A.slice(0, C),
                 N = m.slice(0, I),
-                y = Array(I);
+                v = Array(I);
             if (I > 0) {
                 let e = [];
                 for (let t of N) {
                     let n = E.current[t.id];
-                    null != n && n < I ? y[n] = t : e.push(t)
+                    null != n && n < I ? v[n] = t : e.push(t)
                 }
-                for (let t = 0; t < y.length; t++) {
-                    if (null != y[t]) continue;
+                for (let t = 0; t < v.length; t++) {
+                    if (null != v[t]) continue;
                     let n = e.shift();
                     if (null == n) break;
-                    y[t] = n
+                    v[t] = n
                 }
             }
-            let b = y.filter(c.Vq);
+            let b = v.filter(c.Vq);
             E.current = (0, s.keyBy)((0, s.range)(b.length), e => b[e].id);
-            let v = [...T, ...b];
-            return null != _ && (h && v.length >= C ? v[Math.max(0, v.length - 1)] = _ : v.push(_)), {
-                visibleParticipants: v,
+            let y = [...T, ...b];
+            return null != _ && (h && y.length >= C ? y[Math.max(0, y.length - 1)] = _ : y.push(_)), {
+                visibleParticipants: y,
                 participantTileWidth: S
             }
         }, [e, t, f, m, h, d, o, r, i]);

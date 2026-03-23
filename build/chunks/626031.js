@@ -8,13 +8,13 @@ var a = l(627968),
     i = l.n(r),
     o = l(497766),
     s = l(397927),
-    u = l(475743),
-    c = l(626584),
+    c = l(475743),
+    u = l(626584),
     d = l(572009),
     p = l(14115),
     m = l(115093),
     h = l(467043);
-let b = new c.A("BalanceCounter"),
+let b = new u.A("BalanceCounter"),
     x = (0, d._$)(void 0) === m.B.PRODUCTION,
     y = e => null == e ? 0 : `${e.toFixed(0)}`.length,
     f = e => {
@@ -23,8 +23,8 @@ let b = new c.A("BalanceCounter"),
             onSetDigitCount: l,
             onValueChange: r,
             onValueReached: i,
-            targetTotalCounterTime: u = 3e3
-        } = e, [c, d] = (0, n.useState)(0), m = (0, n.useRef)(null), h = (0, n.useRef)(null);
+            targetTotalCounterTime: c = 3e3
+        } = e, [u, d] = (0, n.useState)(0), m = (0, n.useRef)(null), h = (0, n.useRef)(null);
         (0, n.useEffect)(() => {
             if (null === t) return;
             if (null === m.current) {
@@ -42,7 +42,7 @@ let b = new c.A("BalanceCounter"),
             {
                 duration: v,
                 delay: _
-            } = (0, p.Y)(f - g, u),
+            } = (0, p.Y)(f - g, c),
             {
                 number: E
             } = (0, s.zhh)({
@@ -61,7 +61,7 @@ let b = new c.A("BalanceCounter"),
                     l(y(g))
                 },
                 onRest: () => {
-                    if (d(c + 1), i(), !x && null !== h.current && null !== m.current) {
+                    if (d(u + 1), i(), !x && null !== h.current && null !== m.current) {
                         let e = Date.now();
                         b.log("Balance Counter finished updating: ", {
                             time: e - h.current.lastChangedAt,
@@ -84,7 +84,7 @@ let b = new c.A("BalanceCounter"),
             value: t,
             className: l,
             ...r
-        } = e, o = null === t, [c, d] = (0, n.useState)(null), p = (0, n.useMemo)(() => y(t), [t]), m = (0, u.A)(p) ?? 0, b = (0, n.useMemo)(() => null === c ? Math.max(m, p) : Math.max(p, c), [m, p, c]), x = `${o?0:b}ch`;
+        } = e, o = null === t, [u, d] = (0, n.useState)(null), p = (0, n.useMemo)(() => y(t), [t]), m = (0, c.A)(p) ?? 0, b = (0, n.useMemo)(() => null === u ? Math.max(m, p) : Math.max(p, u), [m, p, u]), x = `${o?0:b}ch`;
         return (0, a.jsx)(s.Text, {
             variant: "text-md/semibold",
             className: i()(h.S, o ? void 0 : h.r, l),
@@ -94,7 +94,7 @@ let b = new c.A("BalanceCounter"),
             },
             children: o ? null : (0, a.jsx)(f, {
                 onSetDigitCount: e => {
-                    e !== c && d(e)
+                    e !== u && d(e)
                 },
                 value: t,
                 ...r

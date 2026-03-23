@@ -2,7 +2,7 @@
 let i;
 n.d(t, {
     A: () => S,
-    h: () => z
+    h: () => W
 }), n(321073);
 var l, s = n(311907),
     a = n(713402),
@@ -25,9 +25,9 @@ var l, s = n(311907),
 let I = !1,
     T = "",
     N = 0,
-    y = 0,
+    v = 0,
     b = [],
-    v = !1,
+    y = !1,
     j = new Set,
     R = null,
     M = new a.J(function(e) {
@@ -40,11 +40,11 @@ let I = !1,
     D = new Set;
 
 function O() {
-    T = "", N = 0, y = 0, b = [], j = new Set, I = !1, R = null, M.clear()
+    T = "", N = 0, v = 0, b = [], j = new Set, I = !1, R = null, M.clear()
 }
 
 function L(e) {
-    T = e, y = 0, P()
+    T = e, v = 0, P()
 }
 
 function P() {
@@ -110,8 +110,8 @@ function P() {
 
 function w() {
     if (!I) return !1;
-    let e = v;
-    return (v = E.A.getFriendCount() > 0) !== e
+    let e = y;
+    return (y = E.A.getFriendCount() > 0) !== e
 }
 
 function k(e, t) {
@@ -172,7 +172,7 @@ class V extends s.Ay.Store {
         return b
     }
     hasFriends() {
-        return v
+        return y
     }
     getSelectedUsers() {
         return j
@@ -183,11 +183,11 @@ class V extends s.Ay.Store {
     getState() {
         return {
             query: T,
-            selectedRow: y,
+            selectedRow: v,
             selectedSection: N,
             selectedUsers: j,
             results: b,
-            hasFriends: v
+            hasFriends: y
         }
     }
     getSections() {
@@ -220,7 +220,7 @@ let K = new V(r.h, {
             R = e.channelId, L(e.query)
         },
         PRIVATE_CHANNEL_RECIPIENTS_INVITE_SELECT: function(e) {
-            N = e.section, y = e.row
+            N = e.section, v = e.row
         },
         PRIVATE_CHANNEL_RECIPIENTS_ADD_USER: function(e) {
             let {
@@ -257,4 +257,4 @@ let K = new V(r.h, {
             return n
         }
     }),
-    z = K
+    W = K

@@ -25,9 +25,9 @@ var i = n(627968),
     I = n(617617),
     T = n(961350),
     N = n(72314),
-    y = n(580745),
+    v = n(580745),
     b = n(834942),
-    v = n(320501),
+    y = n(320501),
     j = n(576705),
     R = n(222823),
     M = n(399263),
@@ -44,8 +44,8 @@ var i = n(627968),
     B = n(652215),
     V = n(985018),
     K = n(478186);
-let z = (0, r.animated)(d.fKU),
-    W = l.memo(function(e) {
+let W = (0, r.animated)(d.fKU),
+    z = l.memo(function(e) {
         var t;
         let n, s, r, {
                 className: h,
@@ -57,16 +57,16 @@ let z = (0, r.animated)(d.fKU),
                 showNewMessagesBar: C,
                 messageDisplayCompact: S,
                 channelStream: T,
-                uploads: y,
+                uploads: v,
                 hasUnreads: b,
-                editingMessageId: v,
+                editingMessageId: y,
                 fontSize: R,
                 keyboardModeEnabled: M,
                 filterAfterTimestamp: D,
                 showingQuarantineBanner: L,
                 hideSummaries: P = !1,
                 jumpBarClassName: U,
-                typingGradient: W
+                typingGradient: z
             } = e,
             [Y, q] = l.useState(N.A.isAtBottom(f.id) ?? !1),
             J = (0, w.I)(S, R),
@@ -85,7 +85,7 @@ let z = (0, r.animated)(d.fKU),
                 channel: f,
                 compact: S,
                 hasUnreads: b,
-                focusId: v,
+                focusId: y,
                 placeholderHeight: X.totalHeight,
                 canLoadMore: null == D,
                 handleScrollToBottom: l.useCallback(() => q(!0), [q]),
@@ -94,7 +94,7 @@ let z = (0, r.animated)(d.fKU),
             }),
             ee = (0, G.A)({
                 scrollerRef: Q.ref,
-                isEditing: null != v,
+                isEditing: null != y,
                 keyboardModeEnabled: M,
                 hasMoreAfter: _.hasMoreAfter
             }),
@@ -112,7 +112,7 @@ let z = (0, r.animated)(d.fKU),
                 showNewMessagesBar: C,
                 messageDisplayCompact: S,
                 channelStream: T,
-                uploads: y,
+                uploads: v,
                 loadMore: Q.loadMore,
                 scrollManager: Q,
                 specs: X,
@@ -152,13 +152,13 @@ let z = (0, r.animated)(d.fKU),
                 let e = I.A.settings.appearance?.clientThemeSettings;
                 return e?.backgroundGradientPresetId != null || e?.customUserThemeSettings != null
             }),
-            eh = l.useMemo(() => W ? Y ? K.gA : K.ru : K.Zd, [W, Y]),
-            em = l.useMemo(() => W ? Y ? K.cz : K.XF : K.U6, [W, Y]);
+            eh = l.useMemo(() => z ? Y ? K.gA : K.ru : K.Zd, [z, Y]),
+            em = l.useMemo(() => z ? Y ? K.cz : K.XF : K.U6, [z, Y]);
         return (0, i.jsxs)(o.hD, {
             navigator: ee,
             children: [null != ea && ea, (0, i.jsxs)("div", {
                 className: a()(K.Og, h, `group-spacing-${g}`),
-                children: [null == ea && ei, (0, i.jsxs)(z, {
+                children: [null == ea && ei, (0, i.jsxs)(W, {
                     ref: ed,
                     customTheme: !0,
                     className: a()(p, K.XG, eu ? em : void 0),
@@ -264,7 +264,7 @@ let z = (0, r.animated)(d.fKU),
             editingMessageId: V
         } = function(e) {
             var t;
-            let n, i = (0, c.bG)([v.A], () => v.A.getMessages(e.id), [e.id]),
+            let n, i = (0, c.bG)([y.A], () => y.A.getMessages(e.id), [e.id]),
                 s = (0, c.bG)([R.Ay], () => R.Ay.getOldestUnreadMessageId(e.id) ?? null, [e.id]),
                 {
                     enabled: a
@@ -297,13 +297,13 @@ let z = (0, r.animated)(d.fKU),
                 messages: i,
                 channelStream: E,
                 oldestUnreadMessageId: s,
-                editingMessageId: (0, c.bG)([y.A], () => y.A.getEditingMessage(e.id)?.id)
+                editingMessageId: (0, c.bG)([v.A], () => v.A.getEditingMessage(e.id)?.id)
             }
         }(t);
         return (0, i.jsx)(x.Bs.Provider, {
             value: (0, L.A)(w, u),
             children: (0, i.jsx)(U.t, {
-                children: (0, i.jsx)(W, {
+                children: (0, i.jsx)(z, {
                     ...d,
                     messageGroupSpacing: I,
                     showNewMessagesBar: !0,

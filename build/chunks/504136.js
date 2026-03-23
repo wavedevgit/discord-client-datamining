@@ -50,10 +50,10 @@ function u(e) {
             content: N,
             contentKey: N
         }), t = N);
-        let y = _[_.length - 1],
+        let v = _[_.length - 1],
             b = null,
-            v = (0, o.kf)(e);
-        E = E || v;
+            y = (0, o.kf)(e);
+        E = E || y;
         let j = function(e, t, n) {
             if (i.M.NON_COLLAPSIBLE.has(t.type));
             else if (t.hasFlag(d.pr7.HIDDEN_SUSPENDED_USER)) return d.TZK.MESSAGE_GROUP_SUSPENDED_USER;
@@ -61,12 +61,12 @@ function u(e) {
             else if (t.ignored) return d.TZK.MESSAGE_GROUP_IGNORED;
             else if ((0, o.iJ)(e) && n) return d.TZK.MESSAGE_GROUP_SPAMMER;
             return null
-        }(h, e, v && g);
-        (null !== j && ([b, y] = (T = l = y, null == l || l.type !== j ? (I = {
+        }(h, e, y && g);
+        (null !== j && ([b, v] = (T = l = v, null == l || l.type !== j ? (I = {
             type: j,
             content: [],
             key: e.id
-        }, _.push(I)) : T = (I = l).content[I.content.length - 1], [I, T])), A === e.id && null != x) ? (null != y && y.type === d.TZK.DIVIDER ? y.unreadId = e.id : null !== b ? (S = b, e.isFirstMessageInForumPost(h) || S.content.push({
+        }, _.push(I)) : T = (I = l).content[I.content.length - 1], [I, T])), A === e.id && null != x) ? (null != v && v.type === d.TZK.DIVIDER ? v.unreadId = e.id : null !== b ? (S = b, e.isFirstMessageInForumPost(h) || S.content.push({
             type: d.TZK.DIVIDER,
             unreadId: e.id
         }), S.hasUnread = !0) : e.isFirstMessageInForumPost(h) || _.push({
@@ -82,7 +82,7 @@ function u(e) {
             content: R.message,
             groupId: R.message.id
         });
-        let M = y?.type === d.TZK.MESSAGE ? u : y;
+        let M = v?.type === d.TZK.MESSAGE ? u : v;
         (0, r.l)(h, M, e) && (n = e.id);
         let D = {
             type: e.type === d.lAJ.THREAD_STARTER_MESSAGE ? d.TZK.THREAD_STARTER_MESSAGE : d.TZK.MESSAGE,

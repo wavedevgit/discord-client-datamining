@@ -1,6 +1,6 @@
 /** chunk id: 38198 params = (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => v
 });
 var i = n(627968),
     l = n(64700),
@@ -26,12 +26,12 @@ var i = n(627968),
     T = n(985018);
 let N = /(.*)```(\w+)\n(.*)```(.*)/s;
 
-function y(e) {
+function v(e) {
     let {
         channel: t,
-        options: y,
+        options: v,
         onFileUpload: b,
-        onClose: v,
+        onClose: y,
         onSelect: j,
         draftType: R,
         editorTextContent: M,
@@ -92,9 +92,9 @@ function y(e) {
         "data-menu-migrated": !0,
         onSelect: j,
         navId: "channel-attach",
-        onClose: v,
+        onClose: y,
         "aria-label": T.intl.string(T.t.Xm41aV),
-        children: y.map(function(e) {
+        children: v.map(function(e) {
             switch (e.type) {
                 case x.v.UPLOAD_A_FILE:
                     return (0, i.jsx)(r.Drp, {

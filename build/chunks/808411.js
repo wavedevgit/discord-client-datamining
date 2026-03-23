@@ -1,6 +1,6 @@
 /** chunk id: 808411 params = (module,exports,require) **/
 l.d(t, {
-    A: () => u
+    A: () => c
 });
 var a = l(627968),
     n = l(64700),
@@ -8,8 +8,8 @@ var a = l(627968),
     i = l(397927),
     o = l(914410),
     s = l(252561);
-let u = () => {
-    let [e, t] = n.useState(0), [l, u] = n.useState(4), [c, d] = n.useState(2), [p, m] = n.useState(o.fh.LIGHT), [h, b] = n.useState(o.qP.BLUE), [x, y] = n.useState("darkslategray"), [f, g] = n.useState("blanchedalmond"), [v, _] = n.useState("pink"), [E, C] = n.useState(!0), S = n.useMemo(() => Object.entries(o.fh).map(e => {
+let c = () => {
+    let [e, t] = n.useState(0), [l, c] = n.useState(4), [u, d] = n.useState(2), [p, m] = n.useState(o.fh.LIGHT), [h, b] = n.useState(o.qP.BLUE), [x, y] = n.useState("darkslategray"), [f, g] = n.useState("blanchedalmond"), [v, _] = n.useState("pink"), [E, C] = n.useState(!0), S = n.useMemo(() => Object.entries(o.fh).map(e => {
         let [t, l] = e;
         return {
             id: l,
@@ -26,7 +26,7 @@ let u = () => {
     }), []);
     return (0, a.jsxs)(s.LB, {
         children: [(0, a.jsx)(o.Ay, {
-            progress: c,
+            progress: u,
             minimum: e,
             maximum: l,
             weight: p,
@@ -42,7 +42,7 @@ let u = () => {
         }), (0, a.jsx)(s.nB, {}), (0, a.jsx)(s.MG, {
             children: (0, a.jsx)(i.ksK, {
                 type: "number",
-                value: c.toString(),
+                value: u.toString(),
                 onChange: t => {
                     d((0, r.clamp)(+t, e, l))
                 },
@@ -53,7 +53,7 @@ let u = () => {
                 type: "number",
                 value: e.toString(),
                 onChange: e => {
-                    0 > +e || +e >= l || (c < +e && d(+e), t(+e))
+                    0 > +e || +e >= l || (u < +e && d(+e), t(+e))
                 },
                 label: "Minimum Value"
             })
@@ -62,7 +62,7 @@ let u = () => {
                 type: "number",
                 value: l.toString(),
                 onChange: t => {
-                    +t <= e || 1 > +t || (c > +t && d(+t), u(+t))
+                    +t <= e || 1 > +t || (u > +t && d(+t), c(+t))
                 },
                 label: "Maximum Value"
             })

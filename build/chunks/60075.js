@@ -20,8 +20,8 @@ var a = l(627968),
     i = l(397927),
     o = l(252561),
     s = l(287809),
-    u = l(652215),
-    c = l(339984),
+    c = l(652215),
+    u = l(339984),
     d = l(788868);
 
 function p() {
@@ -213,7 +213,7 @@ let v = [{
 }, {
     id: "at_limit",
     label: "At Limit (100 guilds)",
-    value: u.qlD
+    value: c.qlD
 }];
 
 function _() {
@@ -253,28 +253,28 @@ function _() {
 let E = [{
     id: "avatar",
     label: "Avatar",
-    value: c.HL.AVATAR
+    value: u.HL.AVATAR
 }, {
     id: "banner",
     label: "Banner",
-    value: c.HL.BANNER
+    value: u.HL.BANNER
 }];
 
 function C() {
-    let [e, t] = n.useState(c.HL.AVATAR), u = (0, r.bG)([s.default], () => s.default.getCurrentUser()), d = n.useCallback(() => {
-        null != u && (0, i.mMO)(async () => {
+    let [e, t] = n.useState(u.HL.AVATAR), c = (0, r.bG)([s.default], () => s.default.getCurrentUser()), d = n.useCallback(() => {
+        null != c && (0, i.mMO)(async () => {
             let {
                 default: t
             } = await Promise.all([l.e("59701"), l.e("79149")]).then(l.bind(l, 688796));
             return l => (0, a.jsx)(t, {
-                user: u,
+                user: c,
                 uploadType: e,
                 analyticsSource: {},
                 analyticsLocation: {},
                 ...l
             })
         })
-    }, [u, e]);
+    }, [c, e]);
     return (0, a.jsxs)(o.LB, {
         children: [(0, a.jsx)(o.MG, {
             children: (0, a.jsx)(i.l6P, {

@@ -65,7 +65,7 @@ function C(e) {
         isBlocked: h.A.isBlocked(S)
     }), [S]), T = l.useCallback(() => {
         (0, m.xi)(t, [C])
-    }, [t, C]), N = (0, f.eT)(), y = l.useCallback(e => () => {
+    }, [t, C]), N = (0, f.eT)(), v = l.useCallback(e => () => {
         o.A.blockUser(S, {
             location: f.Rx
         }).then(() => {
@@ -121,7 +121,7 @@ function C(e) {
                                 buttonText: E.intl.string(E.t["5QYPO2"]),
                                 buttonVariant: "critical-primary",
                                 onButtonPress: () => {
-                                    s(), v(g.Wm.USER_MODAL_BLOCK_CONFIRM, g.Wm.USER_MODAL_BLOCK_CANCEL, b)
+                                    s(), y(g.Wm.USER_MODAL_BLOCK_CONFIRM, g.Wm.USER_MODAL_BLOCK_CANCEL, b)
                                 }
                             }, "block-button")]
                         })
@@ -129,7 +129,7 @@ function C(e) {
                 }
             })
         },
-        v = (e, l, s) => {
+        y = (e, l, s) => {
             (0, r.mMO)(async () => {
                 let {
                     default: a
@@ -137,7 +137,7 @@ function C(e) {
                 return n => (0, i.jsx)(a, {
                     ...n,
                     userId: S,
-                    confirmBlock: y(e),
+                    confirmBlock: v(e),
                     onCancel: () => {
                         s?.(), (0, g._$)({
                             channelId: t,
@@ -173,7 +173,7 @@ function C(e) {
         }, ...I ? [] : [{
             text: E.intl.string(E.t.ie0QdN),
             variant: "critical-primary",
-            onClick: () => v(g.Wm.USER_BANNER_BLOCK_CONFIRM, g.Wm.USER_BANNER_BLOCK_CANCEL)
+            onClick: () => y(g.Wm.USER_BANNER_BLOCK_CONFIRM, g.Wm.USER_BANNER_BLOCK_CANCEL)
         }]]
     })
 }

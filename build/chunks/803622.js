@@ -25,9 +25,9 @@ var i = n(627968),
     I = n(994500),
     T = n(287809),
     N = n(486020),
-    y = n(302975),
+    v = n(302975),
     b = n(652215),
-    v = n(518477),
+    y = n(518477),
     j = n(985018),
     R = n(228288);
 let M = e => {
@@ -70,7 +70,7 @@ let M = e => {
                     (0, C.openUserProfileModal)({
                         userId: t,
                         channelId: n,
-                        tabSection: v.RP.MUTUAL_GUILDS,
+                        tabSection: y.RP.MUTUAL_GUILDS,
                         sourceAnalyticsLocations: [u.A.DM_CHANNEL]
                     })
                 },
@@ -240,7 +240,7 @@ let M = e => {
                 relationshipType: u,
                 userId: t,
                 showingBanner: l
-            }), !l && (0, i.jsx)(y.A, {
+            }), !l && (0, i.jsx)(v.A, {
                 otherUserId: t,
                 channel: n,
                 navigateAwayOnReportSuccess: m

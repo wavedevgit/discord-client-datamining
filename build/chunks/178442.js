@@ -58,11 +58,11 @@ function x(e) {
         childrenAsSubtitle: S,
         connectionStatusTextVariant: I,
         hasVideo: T
-    } = e, N = l.useRef(null), y = s === A.S7L.RTC_CONNECTED, b = l.useCallback(e => (0, i.jsx)(h.A, {
+    } = e, N = l.useRef(null), v = s === A.S7L.RTC_CONNECTED, b = l.useCallback(e => (0, i.jsx)(h.A, {
         ...e,
         channelId: C
     }), [C]), {
-        connectionStatus: v,
+        connectionStatus: y,
         connectionStatusText: j
     } = u.A.getStatus(s, T);
     return (0, i.jsxs)("div", {
@@ -79,7 +79,7 @@ function x(e) {
                         onClick: l
                     } = e;
                     return (0, i.jsxs)(i.Fragment, {
-                        children: [y && (0, i.jsx)(r.m, {
+                        children: [v && (0, i.jsx)(r.m, {
                             text: t !== A.bFR.UNKNOWN && null != n ? `${n.toFixed(0)} ms` : null,
                             children: (0, i.jsx)(o.DUT, {
                                 className: g.xr,
@@ -101,7 +101,7 @@ function x(e) {
                                     text: j,
                                     textVariant: I,
                                     hasVideo: T,
-                                    className: p[v],
+                                    className: p[y],
                                     hasConnectedChannel: null != C
                                 })
                             }), S ? x : null]

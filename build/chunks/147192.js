@@ -27,9 +27,9 @@ var i = n(627968),
     I = n(954571),
     T = n(403362),
     N = n(562153),
-    y = n(652215),
+    v = n(652215),
     b = n(985018),
-    v = n(612986);
+    y = n(612986);
 let j = [];
 class R extends l.PureComponent {
     state = {
@@ -48,7 +48,7 @@ class R extends l.PureComponent {
     }
     logShownEventIfNeeded() {
         let e = this.props.activity.application_id;
-        null != e && -1 === j.indexOf(e) && (I.default.track(y.HAw.SHOW_TUTORIAL, {
+        null != e && -1 === j.indexOf(e) && (I.default.track(v.HAw.SHOW_TUTORIAL, {
             tutorial: "activity-invite-nux-inline",
             application_id: e
         }), j.push(e))
@@ -67,11 +67,11 @@ class R extends l.PureComponent {
             activity: e
         } = this.props;
         return (0, i.jsxs)("div", {
-            className: a()(v.F4, {
-                [v.gV]: this.state.fadeIn
+            className: a()(y.F4, {
+                [y.gV]: this.state.fadeIn
             }),
             children: [(0, i.jsx)("div", {
-                className: v.GZ
+                className: y.GZ
             }), (0, i.jsx)("span", {
                 children: b.intl.format(b.t["i/MoCt"], {
                     game: e.name,
@@ -120,24 +120,24 @@ function M(e) {
     }) : s.length > 3 && (T = b.intl.format(b.t.Q8lUnE, {}));
     let N = _ && s.length > 0 && s.length <= 3 ? b.intl.format(b.t["qD/0qZ"], {}) : T;
     return (0, i.jsxs)("div", {
-        className: a()(v.IW, {
+        className: a()(y.IW, {
             "stop-animation": !n,
-            [v.Il]: h
+            [y.Il]: h
         }, r),
         children: [(0, i.jsxs)("div", {
-            className: v.y5,
+            className: y.y5,
             ref: g,
             children: [s.length > 0 && !1 !== d && (0, i.jsx)(u.nvX, {
-                className: v.gO,
+                className: y.gO,
                 dotRadius: 3.5,
                 themed: !0
             }), (0, i.jsx)("span", {
-                className: v.Qq,
+                className: y.Qq,
                 "aria-live": "polite",
                 "aria-atomic": !0,
                 children: N
             }), (0, i.jsx)("span", {
-                className: v.Qq,
+                className: y.Qq,
                 style: {
                     position: "absolute",
                     visibility: "hidden"

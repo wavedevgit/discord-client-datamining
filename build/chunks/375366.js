@@ -104,20 +104,20 @@ let g = l.memo(function(e) {
         interactive: C = !0,
         onClose: S,
         children: I
-    } = e, T = l.useRef(null), N = l.useRef([]), y = l.useRef(!1), b = l.useRef(null), [v, j] = l.useState(0), [R, M] = l.useState({
+    } = e, T = l.useRef(null), N = l.useRef([]), v = l.useRef(!1), b = l.useRef(null), [y, j] = l.useState(0), [R, M] = l.useState({
         x: 0,
         y: 0
     }), D = Math.abs(R.x) + Math.abs(R.y) > 0, O = l.useMemo(() => a().chunk(I, m), [I]), L = l.useCallback((e, t) => {
-        null == N.current[v] ? N.current[v] = [] : N.current[v][t] = e
-    }, [v]), P = l.useCallback((e, t) => {
+        null == N.current[y] ? N.current[y] = [] : N.current[y][t] = e
+    }, [y]), P = l.useCallback((e, t) => {
         b.current = t, E(m * e + t)
     }, [E]), w = l.useCallback(() => {
         b.current = null, E(null)
     }, [E]), k = l.useCallback(e => {
-        w(), y.current = e
+        w(), v.current = e
     }, [w]), U = l.useCallback((e, t, n) => {
         let i, l, s;
-        if (y.current) return void M({
+        if (v.current) return void M({
             x: 0,
             y: 0
         });
@@ -136,8 +136,8 @@ let g = l.memo(function(e) {
             y: (o ? Math.max(a.y, -c.y) : Math.min(a.y, c.y)) / 2
         })
     }, []), G = l.useCallback(e => {
-        null != b.current && (e.preventDefault(), e.stopPropagation(), x?.(m * v + b.current))
-    }, [x, v]), F = l.useMemo(() => (0, s.throttle)(e => {
+        null != b.current && (e.preventDefault(), e.stopPropagation(), x?.(m * y + b.current))
+    }, [x, y]), F = l.useMemo(() => (0, s.throttle)(e => {
         if (null == T.current) return;
         let i = T.current.getBoundingClientRect(),
             l = {
@@ -148,23 +148,23 @@ let g = l.memo(function(e) {
                 x: e.clientX,
                 y: e.clientY
             };
-        if (U(s, l, Math.max(t, n)), y.current) {
+        if (U(s, l, Math.max(t, n)), v.current) {
             null != _ && w();
             return
         }
         let a = (0, o.wf)(l, s, Math.max(t, n));
-        for (let e = 0; e < N.current[v].length; e++) {
-            let t = N.current[v][e];
+        for (let e = 0; e < N.current[y].length; e++) {
+            let t = N.current[y][e];
             if (null == t) continue;
             let n = t.getBoundingClientRect();
-            if ((0, o.lw)(l, a, n)) return void P(v, e)
+            if ((0, o.lw)(l, a, n)) return void P(y, e)
         }
         w()
-    }, 16), [_, U, w, P, v, n, t]), H = l.useCallback(e => {
+    }, 16), [_, U, w, P, y, n, t]), H = l.useCallback(e => {
         if (!C) return;
-        let t = v + (e.deltaY > 0 ? 1 : -1);
+        let t = y + (e.deltaY > 0 ? 1 : -1);
         t >= 0 && t < O.length && (null != b.current && (O[t].length > b.current ? P(t, b.current) : w()), j(t))
-    }, [C, v, O, P, w]), B = l.useMemo(() => O[v].map((e, l) => {
+    }, [C, y, O, P, w]), B = l.useMemo(() => O[y].map((e, l) => {
         let s = h[l];
         if (null == s) throw Error(`Too many items supplied ${I.length} expected max of ${h.length}`);
         let a = A(s.x, t, g),
@@ -180,7 +180,7 @@ let g = l.memo(function(e) {
             },
             children: e
         }, l)
-    }), [O, v, t, g, n, p, I.length, L]);
+    }), [O, y, t, g, n, p, I.length, L]);
     return (0, i.jsx)(r.DUT, {
         className: d.Pw,
         onMouseMove: F,

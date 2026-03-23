@@ -8,8 +8,8 @@ var a = l(627968),
     i = l(732955),
     o = l(397927),
     s = l(398590),
-    u = l(920050),
-    c = l(102815),
+    c = l(920050),
+    u = l(102815),
     d = l(976860),
     p = l(652215);
 let m = {
@@ -25,7 +25,7 @@ let m = {
                     maxWidth: "100%",
                     width: t.featured ? 752 : 364
                 },
-                children: [(0, a.jsx)(c.S, {
+                children: [(0, a.jsx)(u.S, {
                     ...t,
                     id: "test-id",
                     progress: null != t.progress && t.progress > 0 ? t.progress : void 0,
@@ -131,7 +131,7 @@ function h() {
                     columns: 3,
                     columnGap: 24
                 },
-                children: Object.values(u).map(e => (0, a.jsx)("li", {
+                children: Object.values(c).map(e => (0, a.jsx)("li", {
                     children: e
                 }, e))
             })]

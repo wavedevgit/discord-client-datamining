@@ -83,7 +83,7 @@ let I = function(e) {
         setHasPendingChanges: a,
         closeOrShowDiscardChangesAlert: A,
         location: I
-    } = e, T = (0, o.bG)([p.A], () => p.A.getChannel(t)), N = T?.name, y = (0, g.e5)(T), [b, v] = l.useState(N ?? ""), [j, R] = l.useState(void 0), M = void 0 !== j, {
+    } = e, T = (0, o.bG)([p.A], () => p.A.getChannel(t)), N = T?.name, v = (0, g.e5)(T), [b, y] = l.useState(N ?? ""), [j, R] = l.useState(void 0), M = void 0 !== j, {
         analyticsLocations: D
     } = (0, m.Ay)(I, h.A.GROUP_DM_EDIT_MODAL), O = {
         channel_id: t,
@@ -147,9 +147,9 @@ let I = function(e) {
                         analyticsLocations: D
                     }), (0, i.jsx)(c.ksK, {
                         "aria-label": x.intl.string(x.t.GEGW3P),
-                        placeholder: y ?? "",
+                        placeholder: v ?? "",
                         value: b,
-                        onChange: v,
+                        onChange: y,
                         autoFocus: !0
                     })]
                 })

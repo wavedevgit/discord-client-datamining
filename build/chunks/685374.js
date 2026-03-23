@@ -45,7 +45,7 @@ function S(e) {
         newChannel: u,
         inSettings: h,
         ...m
-    } = e, [_, C] = l.useState(""), [S, I] = l.useState({}), [T, N] = l.useState(!1), [y, b] = l.useState(null), v = l.useRef(null), {
+    } = e, [_, C] = l.useState(""), [S, I] = l.useState({}), [T, N] = l.useState(!1), [v, b] = l.useState(null), y = l.useRef(null), {
         roles: j,
         members: R,
         getRichTag: M
@@ -72,7 +72,7 @@ function S(e) {
     }
     let P = (0, d.ke)(n.type) ? r.I$d : r.trU;
     return (0, i.jsx)(g.A.Provider, {
-        listRef: v,
+        listRef: y,
         query: _,
         setQuery: C,
         pendingAdditions: S,
@@ -105,15 +105,15 @@ function S(e) {
                     className: x.W$,
                     variant: "text-xs/normal",
                     children: E.intl.string(E.t.rwFx85)
-                }), null != y ? (0, i.jsx)(r.Text, {
+                }), null != v ? (0, i.jsx)(r.Text, {
                     className: x.W$,
                     variant: "text-xs/normal",
                     color: "text-feedback-critical",
-                    children: y.getAnyErrorMessage()
+                    children: v.getAnyErrorMessage()
                 }) : null]
             }),
             listProps: {
-                ref: v,
+                ref: y,
                 sectionHeight: g.A.SECTION_HEIGHT,
                 renderSection: g.A.renderSection,
                 rowHeight: g.A.ROW_HEIGHT,

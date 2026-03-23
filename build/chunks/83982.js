@@ -26,9 +26,9 @@ var i = n(627968),
     I = n(961350),
     T = n(430452),
     N = n(531685),
-    y = n(562153),
+    v = n(562153),
     b = n(51082),
-    v = n(566566),
+    y = n(566566),
     j = n(289552),
     R = n(652215),
     M = n(731854),
@@ -73,9 +73,9 @@ function k(e) {
         paused: H = !1
     } = e, B = T.Ay.getVideoComponent(), V = (0, r.bG)([I.default], () => I.default.getId()), {
         user: K,
-        streamId: z,
-        speaking: W
-    } = t, Y = K.id === V, q = (0, b.Ay)(t), J = (0, r.bG)([N.A], () => N.A.isFocused()), $ = (0, r.bG)([x.A], () => x.A.getWindowFocused(R.MLl.CHANNEL_CALL_POPOUT)), Z = (0, r.bG)([T.Ay], () => null != K.id && T.Ay.isLocalVideoDisabled(K.id, (0, m.A)(t.type)), [K.id, t.type]), X = (0, f.A)(n.guild_id, K.id), Q = y.Ay.getName(n.getGuildId(), n.id, K) + (X ? ` ${D.intl.string(D.t["pFO/Ph"])}` : ""), ee = W && ($ || J), et = o < 124 ? P : L, {
+        streamId: W,
+        speaking: z
+    } = t, Y = K.id === V, q = (0, b.Ay)(t), J = (0, r.bG)([N.A], () => N.A.isFocused()), $ = (0, r.bG)([x.A], () => x.A.getWindowFocused(R.MLl.CHANNEL_CALL_POPOUT)), Z = (0, r.bG)([T.Ay], () => null != K.id && T.Ay.isLocalVideoDisabled(K.id, (0, m.A)(t.type)), [K.id, t.type]), X = (0, f.A)(n.guild_id, K.id), Q = v.Ay.getName(n.getGuildId(), n.id, K) + (X ? ` ${D.intl.string(D.t["pFO/Ph"])}` : ""), ee = z && ($ || J), et = o < 124 ? P : L, {
         avatarSrc: en,
         avatarDecorationSrc: ei
     } = (0, C.A)({
@@ -97,7 +97,7 @@ function k(e) {
             user: n
         } = eo.current;
         e.isGuildStageVoice() && !q && t?.id === n.id && d.A.selectParticipant(e.id, null)
-    }, [q]), s && !Z && !G && q && !c && null != B && T.Ay.supports(M.O5.VIDEO)) ? null != es && null == ea ? (0, i.jsx)(v.A, {
+    }, [q]), s && !Z && !G && q && !c && null != B && T.Ay.supports(M.O5.VIDEO)) ? null != es && null == ea ? (0, i.jsx)(y.A, {
         avError: es,
         userId: t.id,
         width: o,
@@ -107,13 +107,13 @@ function k(e) {
         wrapperClassName: S !== A.N.CALL_TILE ? O.tN : void 0,
         className: O.Qs,
         mirror: Y,
-        streamId: z,
+        streamId: W,
         videoComponent: B,
         fit: j,
         videoSpinnerContext: K.id === V ? u.u.SELF_VIDEO : u.u.REMOTE_VIDEO,
         paused: H,
         userId: K.id
-    }, z) : (0, i.jsx)("div", {
+    }, W) : (0, i.jsx)("div", {
         className: a()(O.Qs, {
             [O.Kx]: k || U
         }),
@@ -124,7 +124,7 @@ function k(e) {
             guildId: n.guild_id,
             pulseSpeakingIndicator: F,
             size: et,
-            speaking: W,
+            speaking: z,
             src: en,
             userId: K.id
         })

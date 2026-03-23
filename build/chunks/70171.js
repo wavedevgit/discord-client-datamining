@@ -38,14 +38,14 @@ function x(e) {
         popoutType: n
     } = e, {
         reducedMotion: x
-    } = l.useContext(r.CZ), C = (0, l.useRef)(null), S = h.K.getState().clipsButtonRef, I = (0, m._z)(t), T = (0, a.bG)([d.A], () => d.A.getActiveAnimation()), N = (0, a.yK)([d.A], () => d.A.getStreamClipAnimations(I)), y = (0, l.useRef)(void 0);
+    } = l.useContext(r.CZ), C = (0, l.useRef)(null), S = h.K.getState().clipsButtonRef, I = (0, m._z)(t), T = (0, a.bG)([d.A], () => d.A.getActiveAnimation()), N = (0, a.yK)([d.A], () => d.A.getStreamClipAnimations(I)), v = (0, l.useRef)(void 0);
     l.useEffect(() => () => {
         (0, u.MI)(I)
     }, [I]);
     let b = e => {
             if (n !== c.N.NO_POPOUT) return p;
             let t = S?.getBoundingClientRect();
-            if (y.current = t, e.timestamp !== T || null == t) return p;
+            if (v.current = t, e.timestamp !== T || null == t) return p;
             let {
                 top: i,
                 left: l
@@ -57,10 +57,10 @@ function x(e) {
                 width: 268
             }
         },
-        v = (0, l.useRef)(null),
+        y = (0, l.useRef)(null),
         j = (0, o.pnh)(N, {
             keys: e => e.timestamp,
-            ref: v,
+            ref: y,
             from: {
                 opacity: .2
             },
@@ -99,9 +99,9 @@ function x(e) {
                     height: 0,
                     width: 0,
                     ...(() => {
-                        if (null != y.current) return {
-                            top: y.current.top + 12,
-                            left: y.current.left + 12
+                        if (null != v.current) return {
+                            top: v.current.top + 12,
+                            left: v.current.left + 12
                         }
                     })()
                 }
@@ -111,7 +111,7 @@ function x(e) {
                 null != t.item && null != N.find(e => e.timestamp === t.item.timestamp) && (0, u.MI)(I, t.item.timestamp)
             }
         }, "animate-always");
-    return (0, s.useChain)([v, R], [0, .1], 3e3), (0, i.jsxs)(i.Fragment, {
+    return (0, s.useChain)([y, R], [0, .1], 3e3), (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             className: g.R,
             ref: C

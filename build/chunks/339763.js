@@ -8,8 +8,8 @@ var a = l(627968),
     i = l(534149),
     o = l(582754),
     s = l(736653),
-    u = l(796688);
-let c = {
+    c = l(796688);
+let u = {
         width: 60,
         height: 60
     },
@@ -40,9 +40,9 @@ let c = {
             ...l,
             ...r
         }), (0, a.jsx)(n, {
-            ...c,
+            ...u,
             size: "custom",
-            className: u.E$,
+            className: c.E$,
             useLottieDefaultColors: !0
         })
     },
@@ -59,9 +59,9 @@ let c = {
             ...l,
             ...i
         }), (0, a.jsx)(n, {
-            ...c,
+            ...u,
             size: "custom",
-            className: u.E$,
+            className: c.E$,
             useLottieDefaultColors: !0
         })
     },

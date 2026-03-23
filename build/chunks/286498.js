@@ -1,6 +1,6 @@
 /** chunk id: 286498 params = (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => v
 });
 var i = n(627968),
     l = n(64700),
@@ -93,7 +93,7 @@ let N = e => {
     }
 };
 
-function y(e) {
+function v(e) {
     let t, {
             user: n,
             section: l,
@@ -104,9 +104,9 @@ function y(e) {
             checked: f,
             disabled: x = !1,
             onClick: S,
-            onMessageClick: y,
+            onMessageClick: v,
             onMouseEnter: b,
-            "aria-setsize": v,
+            "aria-setsize": y,
             "aria-posinset": j,
             handleTrackAction: R,
             inImprovedDMExperiment: M,
@@ -128,7 +128,7 @@ function y(e) {
             variant: "secondary",
             icon: d.ggM,
             onClick: () => {
-                R(l, s, "message"), y?.(n.id)
+                R(l, s, "message"), v?.(n.id)
             },
             disabled: x
         })
@@ -153,7 +153,7 @@ function y(e) {
         role: "option",
         "aria-selected": f,
         "aria-disabled": x,
-        "aria-setsize": v,
+        "aria-setsize": y,
         "aria-posinset": j,
         children: (0, i.jsxs)(g.A, {
             align: g.A.Align.CENTER,

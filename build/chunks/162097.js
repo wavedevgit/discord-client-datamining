@@ -8,8 +8,8 @@ var a = l(627968),
     i = l.n(r),
     o = l(732955),
     s = l(397927),
-    u = l(303136),
-    c = l(975571),
+    c = l(303136),
+    u = l(975571),
     d = l(318346),
     p = l(652215),
     m = l(985018),
@@ -19,7 +19,7 @@ var a = l(627968),
     y = l(633217);
 let f = () => (0, a.jsx)("div", {
         className: h.s,
-        children: (0, a.jsx)(u.A, {
+        children: (0, a.jsx)(c.A, {
             src: y.A,
             fallbackImage: x.A,
             className: h.Cb
@@ -30,7 +30,7 @@ let f = () => (0, a.jsx)("div", {
             ctaText: t,
             ctaOnClick: l,
             analyticsPage: r,
-            linkPreText: u = m.intl.string(m.t["5qZv9E"]),
+            linkPreText: c = m.intl.string(m.t["5qZv9E"]),
             linkText: x = m.intl.string(m.t.XRdyjz)
         } = e, y = n.useCallback(() => {
             null != r && (0, d.Y)({
@@ -49,14 +49,14 @@ let f = () => (0, a.jsx)("div", {
                 fullWidth: !0
             }), (0, a.jsxs)("div", {
                 className: h.kx,
-                children: [void 0 !== u && (0, a.jsxs)(s.Text, {
+                children: [void 0 !== c && (0, a.jsxs)(s.Text, {
                     variant: "text-xs/normal",
                     className: h.D5,
-                    children: [u, "\xa0"]
+                    children: [c, "\xa0"]
                 }), (0, a.jsx)(s.MzZ, {
                     target: "_blank",
                     rel: "author",
-                    href: c.A.getArticleURL(p.MVz.ORBS_FAQ),
+                    href: u.A.getArticleURL(p.MVz.ORBS_FAQ),
                     className: h.CU,
                     onClick: y,
                     children: x

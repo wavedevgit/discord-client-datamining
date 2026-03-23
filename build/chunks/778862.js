@@ -1,20 +1,20 @@
-/** chunk id: 778862, original params: e,t,n (module,exports,require) **/
+/** chunk id: 778862 params = (module,exports,require) **/
 n.d(t, {
-    A: () => i
-}), n(896048);
-var l = n(64700),
-    r = n(684339);
+    A: () => s
+});
+var i = n(64700),
+    l = n(684339);
 
-function i(e) {
+function s(e) {
     let {
         location: t,
         videoSpinnerContext: n,
-        userId: i,
+        userId: s,
         streamId: a,
-        loading: s,
+        loading: r,
         paused: o = !1
-    } = e, [c] = l.useState(() => new r.M(t));
-    l.useEffect(() => {
-        o || (s ? c.onSpinnerStarted() : null != a && c.trackSpinnerDuration(n, i, a))
-    }, [s, o, a, c, n, i])
+    } = e, [c] = i.useState(() => new l.M(t));
+    i.useEffect(() => {
+        o || (r ? c.onSpinnerStarted() : null != a && c.trackSpinnerDuration(n, s, a))
+    }, [r, o, a, c, n, s])
 }

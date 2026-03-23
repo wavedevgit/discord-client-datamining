@@ -9,12 +9,12 @@ var n = l(503698),
     i = l(158954),
     o = l(990078),
     s = l(397927),
-    u = l(985018),
-    c = l(530949);
+    c = l(985018),
+    u = l(530949);
 
 function d() {
     return (0, a.jsx)("div", {
-        className: c.overlay
+        className: u.overlay
     })
 }
 
@@ -23,15 +23,15 @@ function p(e) {
         iconAlignment: t
     } = e;
     return (0, a.jsx)("div", {
-        className: r()(c.iconContainer, {
-            [c.iconAlignCenter]: "center" === t,
-            [c.iconAlignRight]: "right" === t
+        className: r()(u.iconContainer, {
+            [u.iconAlignCenter]: "center" === t,
+            [u.iconAlignRight]: "right" === t
         }),
         children: (0, a.jsx)(s.j96, {
             size: "sm",
             color: "white",
             "aria-hidden": !0,
-            className: c.overlayIcon
+            className: u.overlayIcon
         })
     })
 }
@@ -41,7 +41,7 @@ function m(e) {
         onClick: t,
         type: l,
         accessibleLabel: n
-    } = e, r = "remove" === l ? u.intl.string(u.t["2A+piL"]) : u.intl.string(u.t.GaEG4t);
+    } = e, r = "remove" === l ? c.intl.string(c.t["2A+piL"]) : c.intl.string(c.t.GaEG4t);
     return (0, a.jsx)(o.m, {
         text: r,
         ariaHidden: !0,
@@ -62,25 +62,25 @@ function h(e) {
         onClick: n,
         accessibleLabel: o,
         children: s,
-        deleteButtonConfig: u,
+        deleteButtonConfig: c,
         showOverlay: h
     } = e;
     return (0, a.jsxs)("div", {
-        className: c.tileWrapper,
+        className: u.tileWrapper,
         children: [(0, a.jsxs)(i.DUT, {
             "aria-label": o,
-            className: r()(c.base, c[l]),
+            className: r()(u.base, u[l]),
             onClick: n,
             children: [(0, a.jsx)("div", {
-                className: c.content,
+                className: u.content,
                 children: s
             }), h && (0, a.jsx)(d, {}), "add" === t && (0, a.jsx)(p, {
                 iconAlignment: "bar" === l ? "right" : "center"
             })]
-        }), null != u && (0, a.jsx)("div", {
-            className: c.deleteButtonWrapper,
+        }), null != c && (0, a.jsx)("div", {
+            className: u.deleteButtonWrapper,
             children: (0, a.jsx)(m, {
-                ...u
+                ...c
             })
         })]
     })

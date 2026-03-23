@@ -26,9 +26,9 @@ var i = n(627968),
     I = n(793574),
     T = n(688810),
     N = n(698141),
-    y = n(429913),
+    v = n(429913),
     b = n(87001),
-    v = n(961350),
+    y = n(961350),
     j = n(186111),
     R = n(287809),
     M = n(403362),
@@ -70,13 +70,13 @@ function k(e) {
         application: n,
         channel: s,
         width: o
-    } = e, A = o > 400 ? 2 : +(o > 300), [p] = o > 400 ? [c._3J.SIZE_56, 56] : o > 300 ? [c._3J.SIZE_32, 32] : [c._3J.SIZE_24, 24], f = (0, r.yK)([R.default, v.default], () => Array.from(t).map(e => (0, m.S)(e, v.default) ? null : R.default.getUser(e.userId)).filter(M.Vq)), _ = (0, r.bG)([u.Ay], () => u.Ay.getEmbeddedActivitiesForChannel(s.id).find(e => e.applicationId === n.id) ?? u.Ay.getEmbeddedActivitiesForStartingChannel(s.id).find(e => e.applicationId === n.id)), {
+    } = e, A = o > 400 ? 2 : +(o > 300), [p] = o > 400 ? [c._3J.SIZE_56, 56] : o > 300 ? [c._3J.SIZE_32, 32] : [c._3J.SIZE_24, 24], f = (0, r.yK)([R.default, y.default], () => Array.from(t).map(e => (0, m.S)(e, y.default) ? null : R.default.getUser(e.userId)).filter(M.Vq)), _ = (0, r.bG)([u.Ay], () => u.Ay.getEmbeddedActivitiesForChannel(s.id).find(e => e.applicationId === n.id) ?? u.Ay.getEmbeddedActivitiesForStartingChannel(s.id).find(e => e.applicationId === n.id)), {
         analyticsLocations: E
     } = (0, T.Ay)(), x = (0, d.p)(), C = D.Ay.getName(s.getGuildId(), s.id, f?.[0]), S = (0, g.vG)({
         userId: R.default.getCurrentUser()?.id,
         channelId: s.id,
         application: n
-    }) === g.Gy.CAN_JOIN, I = s.getGuildId() ?? void 0, y = l.useId(), b = n.id, j = l.useMemo(() => ({
+    }) === g.Gy.CAN_JOIN, I = s.getGuildId() ?? void 0, v = l.useId(), b = n.id, j = l.useMemo(() => ({
         channel: s,
         type: "channel"
     }), [s]), {
@@ -84,7 +84,7 @@ function k(e) {
     } = (0, N.A)({
         applicationId: b,
         context: j,
-        launchingComponentId: y
+        launchingComponentId: v
     });
     return (0, i.jsxs)("div", {
         className: L.Yi,
@@ -122,7 +122,7 @@ function k(e) {
                         activityChannelId: s.id,
                         locationObject: x.location,
                         analyticsLocations: E,
-                        componentId: y
+                        componentId: v
                     })
                 },
                 loading: P,
@@ -144,13 +144,13 @@ function U(e) {
         analyticsLocations: c
     } = (0, T.Ay)(I.A.ACTIVITY_TILE), {
         applicationId: d
-    } = t, u = (0, p.A)(), h = null != u && (0, A.H)(u.location) === o.id && u.applicationId === d, [m] = (0, y.A)([d]), {
+    } = t, u = (0, p.A)(), h = null != u && (0, A.H)(u.location) === o.id && u.applicationId === d, [m] = (0, v.A)([d]), {
         url: g
     } = (0, f.A)({
         applicationId: d,
         names: P,
         size: 1024
-    }), x = !s && h, N = !h, v = !h && !s, R = (0, r.bG)([j.A, b.A], () => (0, S.A)({
+    }), x = !s && h, N = !h, y = !h && !s, R = (0, r.bG)([j.A, b.A], () => (0, S.A)({
         LayerStore: j.A,
         PopoutWindowStore: b.A
     }));
@@ -170,7 +170,7 @@ function U(e) {
                 className: L.j0,
                 alt: m.name,
                 src: g
-            }) : null, v && null != m && (0, i.jsx)(k, {
+            }) : null, y && null != m && (0, i.jsx)(k, {
                 width: n,
                 channel: o,
                 participants: t.participants,

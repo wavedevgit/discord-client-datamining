@@ -26,7 +26,7 @@ function S(e) {
     x = [...x, e], C = C.map(e => ({
         ...e,
         sent: x.includes(e.data.record.id)
-    })), y.emitChange()
+    })), v.emitChange()
 }
 
 function I() {
@@ -52,7 +52,7 @@ class N extends l.Ay.Store {
         return C
     }
 }
-let y = new N(s.h, {
+let v = new N(s.h, {
         ACTIVITY_INVITE_MODAL_OPEN: function(e) {
             _ = e.activity, E = e.resolve, x = [], null == i && (i = new r.Ay((e, t) => {
                 let n;
@@ -110,7 +110,7 @@ let y = new N(s.h, {
                         default:
                             return null
                     }
-                }).filter(e => null != e), y.emitChange()
+                }).filter(e => null != e), v.emitChange()
             }, f, 100)), i.search("")
         },
         ACTIVITY_INVITE_MODAL_QUERY: function(e) {
@@ -145,4 +145,4 @@ let y = new N(s.h, {
         LOCAL_ACTIVITY_UPDATE: T,
         RPC_APP_DISCONNECTED: T
     }),
-    b = 21552 == n.j ? y : null
+    b = 21552 == n.j ? v : null

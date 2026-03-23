@@ -44,14 +44,14 @@ let f = [{
     T = 0;
 
 function N() {
-    if (null == S || !v(S)) return !1;
+    if (null == S || !y(S)) return !1;
     let e = b(S);
     if (e.lastActionTime > Date.now() - u.A.Millis.DAY && e.viewDuration > _) return !1;
     let t = Date.now();
     return e.lastActionTime = t, e.viewDuration += t - I, I = t, !0
 }
 
-function y() {
+function v() {
     return 0 !== T && (clearInterval(T), T = 0), d.Ay.useNewNotifications && (T = setInterval(() => {
         N() && M.emitChange()
     }, 15 * u.A.Millis.SECOND)), !1
@@ -65,7 +65,7 @@ function b(e) {
     }), x.channels[e]
 }
 
-function v(e) {
+function y(e) {
     if (!d.Ay.useNewNotifications || C.has(e)) return !1;
     let t = r.A.getBasicChannel(e);
     if (null == t || null == t.guild_id || d.Ay.isGuildOrCategoryOrChannelMuted(t.guild_id, t.id) || j(t.guild_id, t.id) || j(t.guild_id, t.parent_id)) return !1;
@@ -82,7 +82,7 @@ class R extends l.Ay.PersistedStore {
     static displayName = "UnreadSettingNoticeStore2";
     static persistKey = "UnreadSettingNoticeStore2";
     initialize(e) {
-        null != e && (x.channels = e.channels), this.syncWith([d.Ay], y), this.waitFor(a.default, r.A, o.A, c.A, d.Ay)
+        null != e && (x.channels = e.channels), this.syncWith([d.Ay], v), this.waitFor(a.default, r.A, o.A, c.A, d.Ay)
     }
     getState() {
         return x
@@ -91,7 +91,7 @@ class R extends l.Ay.PersistedStore {
         return x.channels[e]?.lastActionTime ?? 0
     }
     maybeAutoUpgradeChannel(e) {
-        if (!v(e)) return !1;
+        if (!y(e)) return !1;
         let t = r.A.getBasicChannel(e);
         return null != t && null != t.guild_id && !! function(e) {
             let t = o.A.getGuild(e.guild_id),
@@ -111,7 +111,7 @@ let M = new R(s.h, {
             return S = c.A.getChannelId(), I = Date.now(), e
         },
         CONNECTION_OPEN: function() {
-            S = c.A.getChannelId(), I = Date.now(), y();
+            S = c.A.getChannelId(), I = Date.now(), v();
             let e = Date.now() - E;
             h.default.forEach(x.channels, (t, n) => {
                 let {
@@ -121,7 +121,7 @@ let M = new R(s.h, {
             })
         },
         MESSAGE_CREATE: function(e) {
-            if (e.optimistic || e.isPushNotification || e.message.author?.id !== a.default.getId() || !v(e.channelId)) return !1;
+            if (e.optimistic || e.isPushNotification || e.message.author?.id !== a.default.getId() || !y(e.channelId)) return !1;
             let t = b(e.channelId);
             t.lastActionTime = Date.now(), t.numSends++
         }

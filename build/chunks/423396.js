@@ -8,8 +8,8 @@ var a = l(627968),
     i = l(166532),
     o = l(231018),
     s = l(685944),
-    u = l(623020),
-    c = l(927578),
+    c = l(623020),
+    u = l(927578),
     d = l(412463),
     p = l(492518),
     m = l(689614),
@@ -19,7 +19,7 @@ var a = l(627968),
     y = l(749226);
 let f = [{
         key: i.pn.REVIEW,
-        renderStep: e => (0, a.jsx)(u._, {
+        renderStep: e => (0, a.jsx)(c._, {
             ...e
         }),
         options: {
@@ -92,7 +92,7 @@ let f = [{
                 } = e, {
                     analyticsLocations: r,
                     loadId: i,
-                    handleClose: u,
+                    handleClose: c,
                     handleComplete: m,
                     isFetching: b,
                     sku: x
@@ -100,7 +100,7 @@ let f = [{
                     skuId: t,
                     isGift: l,
                     applicationId: h.FYj
-                }), v = c.Ay.isPremiumSku(t);
+                }), v = u.Ay.isPremiumSku(t);
                 return b || null == x || v ? (0, a.jsx)(p.k, {}) : (0, a.jsxs)("div", {
                     className: y.Cd,
                     children: [(0, a.jsx)(d.dL, {
@@ -121,7 +121,7 @@ let f = [{
                             step: n,
                             onClose: () => t(!1)
                         }),
-                        onClose: u,
+                        onClose: c,
                         onComplete: m
                     }), (0, a.jsx)(g, {})]
                 })
@@ -147,14 +147,14 @@ let f = [{
                     analyticsLocations: i,
                     loadId: o,
                     handleClose: s,
-                    handleComplete: u,
+                    handleComplete: c,
                     isFetching: m,
                     sku: x
                 } = (0, d.ud)({
                     skuId: t,
                     isGift: l,
                     applicationId: b.tv
-                }), v = c.Ay.isPremiumSku(t), _ = v ? b.zE[t] : void 0, [E, C] = n.useState(_), S = n.useRef(!1);
+                }), v = u.Ay.isPremiumSku(t), _ = v ? b.zE[t] : void 0, [E, C] = n.useState(_), S = n.useRef(!1);
                 n.useEffect(() => {
                     S.current || null == _ || (S.current = !0, C(_))
                 }, [_, E]);
@@ -178,7 +178,7 @@ let f = [{
                         purchaseType: h.VVm.SUBSCRIPTION,
                         disablePurchases: !0,
                         onClose: s,
-                        onComplete: u,
+                        onComplete: c,
                         paymentContextOverrides: {
                             selectedPlan: T,
                             setSelectedPlanId: C

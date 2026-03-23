@@ -9,8 +9,8 @@ var n = l(397927),
     i = l(808411),
     o = l(919470),
     s = l(624716),
-    u = l(872725),
-    c = l(985018);
+    c = l(872725),
+    u = l(985018);
 let d = {
         name: "Expressive Progress",
         component: i.A,
@@ -32,7 +32,7 @@ let d = {
                     style: {
                         maxWidth: 400
                     },
-                    children: (0, a.jsx)(u.A, {
+                    children: (0, a.jsx)(c.A, {
                         artboard: e.artboard,
                         fit: e.fit,
                         glowAmount: e.glowAmount,
@@ -154,7 +154,7 @@ let d = {
                 title: {
                     label: "Title",
                     type: "text",
-                    defaultValue: c.intl.string(c.t.lG6a5x).toUpperCase()
+                    defaultValue: u.intl.string(u.t.lG6a5x).toUpperCase()
                 },
                 body: {
                     label: "Body",

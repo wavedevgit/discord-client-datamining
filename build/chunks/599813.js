@@ -29,8 +29,8 @@ function S(e) {
         voiceListRef: l,
         showSectionHeaders: s = !1,
         query: a
-    } = e, r = T(), S = (0, o.bG)([h.default], () => (0, m.ki)(h.default.getCurrentUser())), y = N(a, S), b = Math.ceil(y.length / t), {
-        isNativeModuleLoaded: v,
+    } = e, r = T(), S = (0, o.bG)([h.default], () => (0, m.ki)(h.default.getCurrentUser())), v = N(a, S), b = Math.ceil(v.length / t), {
+        isNativeModuleLoaded: y,
         isNativeModuleLoading: j,
         catalogLastFetchTime: R
     } = (0, o.cf)([g.A], () => ({
@@ -38,7 +38,7 @@ function S(e) {
         isNativeModuleLoading: g.A.isNativeModuleLoading(),
         catalogLastFetchTime: g.A.getCatalogLastFetchTime()
     }));
-    return a && 0 === y.length ? (0, i.jsxs)("div", {
+    return a && 0 === v.length ? (0, i.jsxs)("div", {
         className: E.nm,
         children: [(0, i.jsx)(d.$p$, {
             width: 40,
@@ -65,7 +65,7 @@ function S(e) {
             variant: "text-sm/normal",
             color: "text-muted",
             children: _.intl.format(_.t["5afO9U"], {
-                onClick: v ? p.st : p.md
+                onClick: y ? p.st : p.md
             })
         })]
     }) : j || null == R ? (0, i.jsx)("div", {
@@ -79,7 +79,7 @@ function S(e) {
         className: E.kL,
         renderRow: e => {
             let n = e * t,
-                l = y.slice(n, n + t);
+                l = v.slice(n, n + t);
             return (0, i.jsx)(I, {
                 children: l.map((n, l) => (0, i.jsx)(f.I, {
                     voiceFilter: n,

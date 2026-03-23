@@ -26,9 +26,9 @@ var i = n(627968),
     I = n(919706),
     T = n(616356),
     N = n(961350),
-    y = n(734057),
+    v = n(734057),
     b = n(430452),
-    v = n(531685),
+    y = n(531685),
     j = n(200749),
     R = n(70171),
     M = n(566331),
@@ -77,18 +77,18 @@ function K(e) {
         width: C,
         wrapperClassName: P,
         paused: w = !1
-    } = e, V = b.Ay.getVideoComponent(), K = (0, r.bG)([N.default], () => N.default.getId()), z = (0, _.A)(), {
-        stream: W,
+    } = e, V = b.Ay.getVideoComponent(), K = (0, r.bG)([N.default], () => N.default.getId()), W = (0, _.A)(), {
+        stream: z,
         user: Y,
         streamId: q
-    } = t, J = (0, r.bG)([y.A], () => y.A.getChannel(W.channelId)), $ = (0, r.bG)([T.A], () => T.A.getActiveStreamForUser(Y.id, W.guildId), [Y.id, W.guildId]), Z = (0, r.bG)([T.A], () => T.A.getAllActiveStreams().length > 0), X = (0, r.bG)([v.A], () => v.A.isFocused()), Q = $?.ownerId === K, ee = Q && !X && p === A.N.NO_POPOUT, et = null != $ ? (0, E.A)($, Y, Y.id === K, ee) : null, en = C < 195;
+    } = t, J = (0, r.bG)([v.A], () => v.A.getChannel(z.channelId)), $ = (0, r.bG)([T.A], () => T.A.getActiveStreamForUser(Y.id, z.guildId), [Y.id, z.guildId]), Z = (0, r.bG)([T.A], () => T.A.getAllActiveStreams().length > 0), X = (0, r.bG)([y.A], () => y.A.isFocused()), Q = $?.ownerId === K, ee = Q && !X && p === A.N.NO_POPOUT, et = null != $ ? (0, E.A)($, Y, Y.id === K, ee) : null, en = C < 195;
     (0, h.Ay)(() => {
-        !Z && J?.isGuildStageVoice() && !Q && ((0, u.A9)(W), d.A.updateStageStreamSize(W.channelId, !1))
+        !Z && J?.isGuildStageVoice() && !Q && ((0, u.A9)(z), d.A.updateStageStreamSize(z.channelId, !1))
     });
     let ei = (0, f.u)(G.x.STREAM, t.user.id);
     if (l.useEffect(() => {
             B.info(`Stream Tile State - activeStream: ${null!=$} | selected: ${n} | Video: ${null!=V} | MediaEngine: ${b.Ay.supports(G.O5.VIDEO)}`)
-        }, [V, $, n]), z) return (0, i.jsx)(L.A, {
+        }, [V, $, n]), W) return (0, i.jsx)(L.A, {
         stream: t.stream,
         isSmall: en,
         selected: n,
@@ -127,7 +127,7 @@ function K(e) {
             size: (0, j.J)(C),
             ...et
         }) : null, (0, i.jsx)(R.A, {
-            stream: W,
+            stream: z,
             popoutType: p
         })]
     });

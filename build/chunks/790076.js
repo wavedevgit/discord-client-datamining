@@ -703,7 +703,7 @@ function eR(e) {
     })
 }
 
-function eL(e, t) {
+function eL(e) {
     return [{
         title: eg.t.eVE4LX,
         description: eg.t["72WNqk"],
@@ -729,7 +729,7 @@ function eL(e, t) {
         description: eg.t.wQ4ilB,
         disabledSetting: L.M.NOW_PLAYING,
         key: ec.X.OVERLAY_NOTIFICATIONS_NOW_PLAYING
-    }, t && {
+    }, e && {
         title: eg.t.giM9fA,
         description: eg.t.EhAfWj,
         disabledSetting: L.M.NOW_PLAYING_DIFFERENT_GAMES,
@@ -740,34 +740,21 @@ function eL(e, t) {
             } = (0, M.M8)("OverlayV3NowPlayingDifferentGamesNotificationSetting"), t = (0, _.bG)([U.A], () => U.A.isNotificationDisabledBySetting(L.M.NOW_PLAYING));
             return !!e && !t
         }
-    }, e && {
-        title: eg.t["5/21FT"],
-        description: eg.t.EIzwfA,
-        disabledSetting: L.M.FRIEND_STREAM_WATCH_NUDGE,
-        key: ec.X.OVERLAY_NOTIFICATIONS_FRIEND_STREAM_WATCH,
-        usePredicate: () => {
-            let {
-                enabled: e
-            } = (0, M.QC)("OverlayV3StreamWatchNudge");
-            return e
-        }
     }].filter(e => !1 !== e).filter(Boolean)
 }
 
 function eP() {
     let {
-        enabled: e
-    } = (0, M.QC)("OverlayV3StreamWatchNudge"), {
-        showNowPlayingForDifferentGames: t
-    } = (0, M.M8)("OverlayV3NowPlayingDifferentGamesNotificationSetting"), n = (0, _.bG)([U.A], () => U.A.getDisabledNotifications()), s = eL(e, t && !n.has(L.M.NOW_PLAYING));
+        showNowPlayingForDifferentGames: e
+    } = (0, M.M8)("OverlayV3NowPlayingDifferentGamesNotificationSetting"), t = (0, _.bG)([U.A], () => U.A.getDisabledNotifications()), n = eL(e && !t.has(L.M.NOW_PLAYING));
     return (0, i.jsxs)("div", {
         className: eA.AO,
         children: [(0, i.jsx)(A.Heading, {
             variant: "heading-md/semibold",
             color: "text-strong",
             children: eg.intl.string(eg.t.xOE5bA)
-        }), s.map(e => {
-            let t;
+        }), n.map(e => {
+            let n;
             return (0, i.jsxs)("div", {
                 className: eA.vx,
                 children: [(0, i.jsxs)("div", {
@@ -782,9 +769,9 @@ function eP() {
                         children: eg.intl.string(e.description)
                     })]
                 }), (0, i.jsx)(A.dOG, {
-                    checked: !n.has(e.disabledSetting),
-                    onChange: (t = e.disabledSetting, e => {
-                        f.A.setNotificationDisabledSetting(t, !e)
+                    checked: !t.has(e.disabledSetting),
+                    onChange: (n = e.disabledSetting, e => {
+                        f.A.setNotificationDisabledSetting(n, !e)
                     })
                 })]
             }, e.disabledSetting)
