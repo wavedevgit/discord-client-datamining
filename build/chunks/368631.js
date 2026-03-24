@@ -26,12 +26,12 @@ var a = n(627968),
     T = n(985018);
 let E = () => {
         let e = [];
-        return e.push(i.M.WIDGETS_USER_SETTINGS_NEW_BADGE), e.push(i.M.DISPLAY_NAME_STYLES_NEW_BADGE), e
+        return e.push(i.M.DISPLAY_NAME_STYLES_NEW_BADGE), e
     },
     S = () => {
         let e = E(),
             [t] = (0, d.kn)(e);
-        return t === i.M.DISPLAY_NAME_STYLES_NEW_BADGE || t === i.M.WIDGETS_USER_SETTINGS_NEW_BADGE ? (0, a.jsx)(s.LpS, {
+        return t === i.M.DISPLAY_NAME_STYLES_NEW_BADGE ? (0, a.jsx)(s.LpS, {
             text: T.intl.string(T.t.y2b7CA)
         }) : null
     },

@@ -27,9 +27,6 @@ var i = n(627968),
     C = n(722125);
 let N = [{
         badgeType: _.Xi.NEW,
-        dismissibleContent: a.M.WIDGETS_USER_SETTINGS_NEW_BADGE
-    }, {
-        badgeType: _.Xi.NEW,
         dismissibleContent: a.M.DISPLAY_NAME_STYLES_NEW_BADGE
     }],
     v = () => {
