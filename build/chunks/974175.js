@@ -1,6 +1,6 @@
 /** chunk id: 974175 params = (module,exports,require) **/
 r.d(t, {
-    R: () => F,
+    R: () => v,
     f8: () => u,
     q7: () => D
 }), r(321073), r(134528), r(947204);
@@ -160,11 +160,11 @@ function y(e) {
     return `${e.toFixed(0)}%`
 }
 
-function f(e) {
+function A(e) {
     return e ? "Yes" : "No"
 }
 
-function A(e) {
+function f(e) {
     return 20 * Math.log(e)
 }
 
@@ -175,10 +175,10 @@ function g(e) {
     return `${t} ms`
 }
 
-function v(e) {
+function F(e) {
     return e.toFixed(2)
 }
-let F = {
+let v = {
         audioJitterBuffer: !0,
         audioJitterDelay: !0,
         audioJitterTarget: !0,
@@ -213,15 +213,15 @@ let F = {
     },
     C = {
         accelerateRate: y,
-        audioDetected: f,
+        audioDetected: A,
         audioLevel: function(e) {
-            return e <= 0 ? "-∞ dB" : `${A(e).toFixed(2)} dB`
+            return e <= 0 ? "-∞ dB" : `${f(e).toFixed(2)} dB`
         },
         availableOutgoingBitrate: c,
         averageDecodeTime: h,
         averageEncodeTime: h,
-        bandwidthLimitedFrameRate: f,
-        bandwidthLimitedResolution: f,
+        bandwidthLimitedFrameRate: A,
+        bandwidthLimitedResolution: A,
         bitrate: c,
         bitrateTarget: c,
         bytesReceived: m,
@@ -233,7 +233,7 @@ let F = {
             } = e;
             return r = (r = "" === r ? "unknown" : r) ?? "unknown", `${r[0].toUpperCase()}${r.slice(1)} (${t})`
         },
-        cpuLimitedResolution: f,
+        cpuLimitedResolution: A,
         currentSampleRate: function(e) {
             return e % 100 == 0 ? `${e/1e3} kHz` : `${e} Hz`
         },
@@ -244,7 +244,7 @@ let F = {
         encoderQualityPsnr: function(e) {
             return `${Math.max(e,0).toFixed(2)} dB`
         },
-        encoderQualityVmaf: v,
+        encoderQualityVmaf: F,
         encodeUsage: y,
         expandRate: y,
         filter: p,
@@ -271,15 +271,15 @@ let F = {
             return `${t}x${r}`
         },
         sampleRateMismatchPercent: y,
-        screenshareCapturedFps: v,
-        screenshareCapturedFpsUnique: v,
+        screenshareCapturedFps: F,
+        screenshareCapturedFpsUnique: F,
         secondaryDecodedRate: y,
         secureFramesProtocolVersion: function(e) {
             return e > 0 ? `Version ${e}` : "Disabled"
         },
         speechExpandRate: y,
         targetDelay: h,
-        videoEntropy: v,
+        videoEntropy: F,
         videohookBackend: function(e) {
             let t = ["N/A", "Direct3D 9", "Direct3D 10", "Direct3D 11", "Direct3D 12", "OpenGL", "Vulkan"];
             return e < t.length ? t[e] : "Unknown"
@@ -287,7 +287,7 @@ let F = {
     },
     b = {
         audioLevel: function(e) {
-            return Math.max(A(e), -100) + 100
+            return Math.max(f(e), -100) + 100
         }
     },
     x = e => e,

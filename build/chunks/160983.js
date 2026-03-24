@@ -31,9 +31,9 @@ function x(e) {
         section: A.RP.ACTIVITY
     });
     let b = !1 === l.nsfwAllowed,
-        O = s.A.isFriend(l.id),
-        P = T?.visibility === i.a.PUBLIC;
-    return (N || !N && C && P && I && (!b || b && O)) && v.push({
+        P = s.A.isFriend(l.id),
+        O = T?.visibility === i.a.PUBLIC;
+    return (N || !N && C && O && I && (!b || b && P)) && v.push({
         text: p.intl.string(p.t["7lZ31J"]),
         section: A.RP.WISHLIST
     }), l.id !== t?.id && f && (v.push({

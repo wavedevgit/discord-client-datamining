@@ -15,11 +15,11 @@ var n = r(627968),
     p = r(568765),
     h = r(512513),
     y = r(795816),
-    f = r(933958),
-    A = r(47294),
+    A = r(933958),
+    f = r(47294),
     g = r(386467),
-    v = r(923917),
-    F = r(734057),
+    F = r(923917),
+    v = r(734057),
     C = r(31717),
     b = r(164617),
     x = r(540462),
@@ -30,10 +30,10 @@ function R(e) {
     let {
         windowKey: t,
         channelId: r
-    } = e, a = (0, o.bG)([F.A], () => F.A.getChannel(r));
+    } = e, a = (0, o.bG)([v.A], () => v.A.getChannel(r));
     l()(null != a, "channel cannot be null for popout");
-    let s = (0, o.bG)([f.Ay], () => f.Ay.getSelfEmbeddedActivityForChannel(a.id), [a]);
-    return (0, n.jsx)(v.A, {
+    let s = (0, o.bG)([A.Ay], () => A.Ay.getSelfEmbeddedActivityForChannel(a.id), [a]);
+    return (0, n.jsx)(F.A, {
         withTitleBar: !0,
         keybinds: D,
         windowKey: t,
@@ -46,7 +46,7 @@ function R(e) {
             } = e;
             if (null != s) {
                 let e = (0, y.od)(s.applicationId, a.id);
-                t.preventDefault(), (0, A.A)({
+                t.preventDefault(), (0, f.A)({
                     onConfirm: async () => {
                         await e, r()
                     },
