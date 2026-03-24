@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(713517),
     A = n(182592),
     m = n(594832),
-    _ = n(183555),
-    p = n(672385),
+    p = n(183555),
+    _ = n(672385),
     g = n(622543),
     f = n(950191),
     x = n(679492),
@@ -45,13 +45,13 @@ function V(e) {
     let {
         user: t,
         currentUser: n,
-        channel: p
+        channel: _
     } = e, V = __OVERLAY__, H = (0, f.Ay)(t.id), F = (0, c.Ay)(), {
         analyticsLocations: K
-    } = (0, u.Ay)(d.A.USER_PROFILE_SIDEBAR), W = (0, _.pb)({
+    } = (0, u.Ay)(d.A.USER_PROFILE_SIDEBAR), W = (0, p.pb)({
         layout: "SIDEBAR",
         userId: t.id,
-        channelId: p.id
+        channelId: _.id
     }), Y = s.useRef(null), {
         isHoveringOrFocusing: z,
         isHovering: q
@@ -79,7 +79,7 @@ function V(e) {
     }), et = s.useMemo(() => null == ee ? null : ee.items.filter(e => !e.isOwned), [ee]);
     return (0, i.jsx)(u.f5, {
         value: K,
-        children: (0, i.jsx)(_.of, {
+        children: (0, i.jsx)(p.of, {
             value: W,
             isLoaded: H?.isLoaded,
             children: (0, i.jsx)(x.Hl, {
@@ -120,12 +120,12 @@ function V(e) {
                             }), (0, i.jsx)(E.A, {
                                 user: t,
                                 displayProfile: H,
-                                channelId: p.id,
+                                channelId: _.id,
                                 themeType: P.d.SIDEBAR,
                                 onOpenProfile: V ? void 0 : Q
                             }), (0, i.jsx)(L.A, {
                                 user: t,
-                                channelId: p.id,
+                                channelId: _.id,
                                 themeType: P.d.SIDEBAR,
                                 disableToolbar: t.bot
                             })]
@@ -133,7 +133,7 @@ function V(e) {
                             user: t,
                             currentUser: n,
                             displayProfile: H,
-                            channel: p,
+                            channel: _,
                             isHoveringOrFocusing: null == X.interactionType && z,
                             onOpenProfile: V ? void 0 : Q
                         }), $ && (0, i.jsx)("div", {
@@ -158,7 +158,7 @@ function V(e) {
                             })
                         }), (0, i.jsx)(D.A, {
                             user: t,
-                            channelId: p.id
+                            channelId: _.id
                         })]
                     }), !V && (0, i.jsx)(B, {
                         handleOpenProfile: Q,
@@ -185,7 +185,7 @@ let B = e => {
             onMouseEnter: () => r("interactive-text-hover"),
             onMouseLeave: () => r("interactive-text-default"),
             onClick: () => {
-                t(), (0, p.Wn)({
+                t(), (0, _.Wn)({
                     action: "PRESS_VIEW_PROFILE",
                     analyticsLocations: n,
                     ...l

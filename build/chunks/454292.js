@@ -12,25 +12,25 @@ var i = n(627968),
     c = n(775602),
     u = n(725951),
     m = n(400492),
-    g = n(841329),
-    _ = n(12901),
+    _ = n(841329),
+    g = n(12901),
     x = n(115063),
     A = n(414736),
     h = n(927018),
     p = n(928830),
     f = n(3137),
     T = n(301656),
-    E = n(224964),
-    S = n(31408),
+    S = n(224964),
+    E = n(31408),
     b = n(985018),
     C = n(829054);
-let N = {
+let v = {
         enabled: !0,
         combosEnabled: !0,
         screenshakeEnabled: !1,
         confettiEnabled: !1
     },
-    v = (0, l.range)(0, 11),
+    N = (0, l.range)(0, 11),
     I = (0, l.range)(0, 2.25, .25),
     j = (0, l.range)(1, 11),
     y = (0, l.range)(1, 26),
@@ -90,7 +90,7 @@ function P(e) {
                 title: l ? b.intl.string(b.t["FxT+p0"]) : b.intl.string(b.t.TAZ4F9),
                 subtitle: l ? b.intl.string(b.t.gmixrx) : b.intl.string(b.t.jN3t3K),
                 confirmText: b.intl.string(b.t.JFfins),
-                onConfirm: () => s(l ? N : {
+                onConfirm: () => s(l ? v : {
                     enabled: !0,
                     warningSeen: !0
                 })
@@ -165,19 +165,19 @@ function D(e) {
         }), (0, i.jsx)(R, {
             disabled: o,
             locations: [{
-                location: S.k.CHAT_INPUT,
+                location: E.k.CHAT_INPUT,
                 title: b.intl.string(b.t.elTtyz),
                 description: b.intl.string(b.t.HtKfMi)
             }, {
-                location: S.k.REACTION,
+                location: E.k.REACTION,
                 title: b.intl.string(b.t.Ik4VIa),
                 description: b.intl.string(b.t.y4rqK0)
             }, {
-                location: S.k.MEMBER_USER,
+                location: E.k.MEMBER_USER,
                 title: b.intl.string(b.t.ZXBlAn),
                 description: b.intl.string(b.t["m9RD+c"])
             }, {
-                location: S.k.CALL_TILE,
+                location: E.k.CALL_TILE,
                 title: b.intl.string(b.t.V66giQ),
                 description: b.intl.string(b.t.fiHV7u)
             }],
@@ -227,10 +227,10 @@ function G(e) {
                 children: b.intl.string(b.t["/OOFpL"])
             }), (0, i.jsx)(d.Apm, {
                 disabled: r,
-                markers: v,
+                markers: N,
                 stickToMarkers: !0,
-                minValue: v[0],
-                maxValue: v[v.length - 1],
+                minValue: N[0],
+                maxValue: N[N.length - 1],
                 initialValue: l,
                 onValueChange: e => a({
                     combosRequiredCount: e
@@ -288,15 +288,15 @@ function M(e) {
         }), (0, i.jsx)(R, {
             disabled: u,
             locations: [{
-                location: S.uD.CHAT_INPUT,
+                location: E.uD.CHAT_INPUT,
                 title: b.intl.string(b.t.vUcvPP),
                 description: b.intl.string(b.t.y00OrF)
             }, {
-                location: S.uD.VOICE_USER,
+                location: E.uD.VOICE_USER,
                 title: b.intl.string(b.t.TcRO54),
                 description: b.intl.string(b.t.YJCxVY)
             }, {
-                location: S.uD.MENTION,
+                location: E.uD.MENTION,
                 title: b.intl.string(b.t.oW4shO),
                 description: b.intl.string(b.t["mqfw/H"])
             }],
@@ -329,7 +329,7 @@ function U(e) {
                         t({
                             enabled: !1,
                             settingsVisible: !1
-                        }), (0, _.default)()
+                        }), (0, g.default)()
                     }
                 })
             })]
@@ -383,8 +383,8 @@ function V(e) {
     } = e, l = (0, a.cf)([f.A], () => f.A.getState()), [r, o] = s.useState({
         x: 0,
         y: 0
-    }), c = (0, E.A)(), u = (e, t) => {
-        var i, s, a, o, d, u, g, _;
+    }), c = (0, S.A)(), u = (e, t) => {
+        var i, s, a, o, d, u, _, g;
         if (e.enabled && !1 === l.enabled && (n(!0), (0, m.Ak)("poggermode_enabled"), (0, x.fO)({
                 duration: 2e3,
                 intensity: e.shakeIntensity ?? l.shakeIntensity
@@ -393,18 +393,18 @@ function V(e) {
         0 === t && A && c.fire(r.x, r.y, {
             settings: e
         });
-        let h = (d = l.screenshakeEnabled, u = e.screenshakeEnabled, g = l.enabled, _ = e.enabled, (u ?? d) && (_ ?? g));
+        let h = (d = l.screenshakeEnabled, u = e.screenshakeEnabled, _ = l.enabled, g = e.enabled, (u ?? d) && (g ?? _));
         1 === t && h && (0, x.fO)({
             duration: 1e3,
             intensity: e.shakeIntensity ?? l.shakeIntensity
         })
-    }, g = e => {
+    }, _ = e => {
         o({
             x: e.clientX,
             y: e.clientY
         })
     };
-    return s.useEffect(() => (window.addEventListener("mousemove", g), () => window.removeEventListener("mousemove", g)), []), (0, i.jsxs)(d.BJc, {
+    return s.useEffect(() => (window.addEventListener("mousemove", _), () => window.removeEventListener("mousemove", _)), []), (0, i.jsxs)(d.BJc, {
         gap: 24,
         children: [(0, i.jsx)(P, {
             settings: l,
@@ -428,14 +428,14 @@ function V(e) {
 let B = e => 0 === e ? u.f.LEFT : u.f.RIGHT;
 
 function F() {
-    let [e, t] = s.useState(0), [n, l] = s.useState(B(e)), [r, o] = s.useState(!1), m = (0, a.bG)([c.A], () => c.A.useReducedMotion), _ = r && !m;
+    let [e, t] = s.useState(0), [n, l] = s.useState(B(e)), [r, o] = s.useState(!1), m = (0, a.bG)([c.A], () => c.A.useReducedMotion), g = r && !m;
     return s.useEffect(() => {
         let t = setTimeout(() => {
             l(B(e))
         }, 500);
         return () => clearTimeout(t)
     }, [e]), s.useEffect(() => {
-        (0, g._)(O[e])
+        (0, _._)(O[e])
     }, [e]), s.useEffect(() => {
         Math.random() > .99 && (0, A._)(h.sn.VISITOR_100)
     }, []), (0, i.jsxs)(i.Fragment, {
@@ -462,11 +462,11 @@ function F() {
                 }
             })(e, t, o)
         }), (0, i.jsx)("div", {
-            className: _ ? C.Sr : C.IP,
+            className: g ? C.Sr : C.IP,
             children: (0, i.jsx)(d.akl, {
                 className: C.gT,
                 importData: w,
-                shouldAnimate: _,
+                shouldAnimate: g,
                 autoplay: !1,
                 resetOnPlay: !0,
                 loop: !1,

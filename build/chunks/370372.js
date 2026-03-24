@@ -35,10 +35,10 @@ function G(n) {
     let {
         channel: t,
         onSelect: e
-    } = n, r = (0, m.A)(t), s = (0, g.A)(t), d = (0, h.m)(t), c = (0, h.y)(t), E = (0, A.A)(t), p = (0, f.A)(t), v = (0, _.A)(t), O = (0, I.A)(t), S = (0, T.A)(t), x = (0, C.A)(t), G = (0, u.A)({
+    } = n, r = (0, m.A)(t), s = (0, g.A)(t), d = (0, h.y)(t), c = (0, A.A)(t), E = (0, f.A)(t), p = (0, _.A)(t), v = (0, I.A)(t), C = (0, T.A)(t), O = (0, u.A)({
         id: t.id,
         label: N.intl.string(N.t.gFHI3k)
-    }), L = (0, o.A)(t), y = (0, R.Ay)(t), U = (0, b.os)("ChannelContextFavoritesMenu");
+    }), S = (0, o.A)(t), x = (0, R.Ay)(t), G = (0, b.os)("ChannelContextFavoritesMenu");
     return (0, i.jsxs)(l.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "channel-context",
@@ -48,23 +48,21 @@ function G(n) {
         children: [(0, i.jsx)(l.rXV, {
             children: r
         }), (0, i.jsx)(l.rXV, {
-            children: p
-        }), (0, i.jsxs)(l.rXV, {
-            children: [d, v]
-        }), (0, i.jsxs)(l.rXV, {
-            children: [O, U ? y : S]
-        }), (0, i.jsx)(l.rXV, {
             children: E
         }), (0, i.jsx)(l.rXV, {
-            children: x
-        }), (0, i.jsx)(l.rXV, {
-            children: L
+            children: p
+        }), (0, i.jsxs)(l.rXV, {
+            children: [v, G ? x : C]
         }), (0, i.jsx)(l.rXV, {
             children: c
         }), (0, i.jsx)(l.rXV, {
+            children: S
+        }), (0, i.jsx)(l.rXV, {
+            children: d
+        }), (0, i.jsx)(l.rXV, {
             children: s
         }), (0, i.jsx)(l.rXV, {
-            children: G
+            children: O
         })]
     })
 }
@@ -77,7 +75,7 @@ function L(n) {
     } = n, s = (0, m.A)(t), d = (0, g.A)(t), c = (0, h.m)(t), A = (0, h.y)(t), f = (0, S.A)(t), _ = (0, I.A)(t), x = (0, C.A)(t), G = (0, O.A)(t, e), L = (0, E.A)(t, e), y = (0, p.A)(t, e), U = (0, v.A)(t), D = (0, u.A)({
         id: t.id,
         label: N.intl.string(N.t.gFHI3k)
-    }), j = (0, o.A)(t), X = (0, T.A)(t), V = (0, R.Ay)(t), w = (0, b.os)("ChannelContextMenuNormal");
+    }), j = (0, o.A)(t), X = (0, T.A)(t), w = (0, R.Ay)(t), V = (0, b.os)("ChannelContextMenuNormal");
     return (0, i.jsxs)(l.W1t, {
         "data-menu-migrated": !0,
         navId: "channel-context",
@@ -91,7 +89,7 @@ function L(n) {
         }), (0, i.jsxs)(l.rXV, {
             children: [G, f, d]
         }, "channel-actions"), (0, i.jsxs)(l.rXV, {
-            children: [_, w ? V : X]
+            children: [_, V ? w : X]
         }, "notifications"), (0, i.jsxs)(l.rXV, {
             children: [x, L, y, U]
         }, "admin-actions"), (0, i.jsx)(l.rXV, {

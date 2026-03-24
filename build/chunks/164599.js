@@ -1,6 +1,6 @@
 /** chunk id: 164599 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => S
 });
 var i = n(627968),
     s = n(64700),
@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(309635),
     u = n(84540),
     m = n(954571),
-    g = n(927578),
-    _ = n(919395),
+    _ = n(927578),
+    g = n(919395),
     x = n(128450),
     A = n(212168),
     h = n(652215),
@@ -21,47 +21,47 @@ var i = n(627968),
     f = n(985018),
     T = n(97671);
 
-function E(e) {
+function S(e) {
     let {
         user: t,
         guild: n,
         initialSelectedEffect: l,
-        className: E,
-        sectionTitle: S,
+        className: S,
+        sectionTitle: E,
         forcedDivider: b = !1,
         withTutorial: C = !1,
-        showBorder: N = !1
+        showBorder: v = !1
     } = e, {
-        analyticsLocations: v
-    } = (0, d.Ay)(), I = g.Ay.canUsePremiumProfileCustomization(t), j = (0, _.N2)({
+        analyticsLocations: N
+    } = (0, d.Ay)(), I = _.Ay.canUsePremiumProfileCustomization(t), j = (0, g.N2)({
         user: t,
         guildId: n?.id
     }), {
         pendingProfileEffect: y,
         errors: O
-    } = (0, _.nZ)(n?.id);
+    } = (0, g.nZ)(n?.id);
     s.useEffect(() => {
         I && m.default.track(h.HAw.PREMIUM_UPSELL_VIEWED, {
             type: p.e.PROFILE_EFFECTS_INLINE_SETTINGS,
-            location_stack: v
+            location_stack: N
         })
-    }, [I, v]);
+    }, [I, N]);
     let R = C ? o.wLn : r.$n;
     return (0, i.jsx)(x.A, {
         forcedDivider: b,
         borderType: A.i.PREMIUM,
         hasBackground: !0,
-        title: S,
-        showBorder: N,
+        title: E,
+        showBorder: v,
         errors: O,
-        className: E,
+        className: S,
         children: (0, i.jsxs)("div", {
             className: T.NC,
             children: [(0, i.jsx)(R, {
                 size: r.$n.Sizes.SMALL,
                 onClick: () => {
                     (0, c.W)({
-                        analyticsLocations: v,
+                        analyticsLocations: N,
                         guild: n,
                         initialSelectedEffect: l
                     })

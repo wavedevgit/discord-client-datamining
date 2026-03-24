@@ -12,13 +12,13 @@ var i = n(627968),
     c = n(840065),
     u = n(95701),
     m = n(128450),
-    g = n(652215),
-    _ = n(985018),
+    _ = n(652215),
+    g = n(985018),
     x = n(973746);
 let A = (0, d.Ld)(),
     h = (0, u.createChannelRecord)({
         id: "1",
-        type: g.rbe.DM
+        type: _.rbe.DM
     }),
     p = (0, d.Ld)();
 
@@ -30,34 +30,34 @@ function f(e) {
         pendingBio: u,
         placeholder: f,
         currentBio: T,
-        disabled: E = !1
-    } = e, [S, b] = s.useState(u ?? T), [C, N] = s.useState((0, r.x7)(S)), v = s.useRef(T), I = s.useRef(!1);
+        disabled: S = !1
+    } = e, [E, b] = s.useState(u ?? T), [C, v] = s.useState((0, r.x7)(E)), N = s.useRef(T), I = s.useRef(!1);
     return s.useEffect(() => {
-        if (v.current !== T) {
+        if (N.current !== T) {
             let e = (0, r.x7)(T);
-            b(T), N(e)
+            b(T), v(e)
         }
-        v.current = T
+        N.current = T
     }, [T]), s.useEffect(() => {
-        void 0 !== u || S === T || I.current || (b(T), N((0, r.x7)(T)))
-    }, [u, T, S]), (0, i.jsxs)(m.A, {
+        void 0 !== u || E === T || I.current || (b(T), v((0, r.x7)(T)))
+    }, [u, T, E]), (0, i.jsxs)(m.A, {
         title: t,
         titleId: A,
-        description: _.intl.string(_.t.Bbw6Ac),
+        description: g.intl.string(g.t.Bbw6Ac),
         errors: n,
-        disabled: E,
+        disabled: S,
         children: [(0, i.jsx)(o.Ay, {
             "aria-describedby": p,
             "aria-labelledby": A,
             className: x.i,
             innerClassName: x.Z,
-            maxCharacterCount: g.NA2,
+            maxCharacterCount: _.NA2,
             onChange: function(e, t, n) {
-                t !== S && (b(t), N(n), d(t))
+                t !== E && (b(t), v(n), d(t))
             },
             placeholder: f,
             channel: h,
-            textValue: S,
+            textValue: E,
             richValue: C,
             emojiPickerCloseOnModalOuterClick: !0,
             parentModalKey: c.USER_SETTINGS_MODAL_KEY,
@@ -79,8 +79,8 @@ function f(e) {
             }
         }), (0, i.jsx)(l.AC4, {
             id: p,
-            children: _.intl.format(_.t["+DFxLc"], {
-                maxLength: g.NA2
+            children: g.intl.format(g.t["+DFxLc"], {
+                maxLength: _.NA2
             })
         })]
     })

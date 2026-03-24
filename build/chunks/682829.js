@@ -12,20 +12,20 @@ var i = n(627968),
     c = n(384904),
     u = n(923408),
     m = n(339048),
-    g = n(73825),
-    _ = n(974544),
+    _ = n(73825),
+    g = n(974544),
     x = n(531260),
     A = n(262077),
     h = n(160946),
     p = n(235986),
     f = n(769015),
     T = n(723588),
-    E = n(608699),
-    S = n(714308),
+    S = n(608699),
+    E = n(714308),
     b = n(478407),
     C = n(780964),
-    N = n(841329),
-    v = n(351906),
+    v = n(841329),
+    N = n(351906),
     I = n(287809),
     j = n(615405),
     y = n(295405),
@@ -101,7 +101,7 @@ let q = function() {
         D = (0, h.Y)(),
         U = V.A.useField("subsection");
     s.useEffect(() => {
-        (0, N._)(null != U ? X[U] : C.X.SUBSCRIPTIONS_PANEL)
+        (0, v._)(null != U ? X[U] : C.X.SUBSCRIPTIONS_PANEL)
     }, [U]);
     let K = (0, r.bG)([O.A], () => O.A.getActiveApplicationSubscriptions()?.length ?? 0),
         q = (0, r.bG)([O.A], () => Object.values(O.A.getSubscriptions() ?? {}).filter(e => e.type === F.rzx.GUILD).filter(e => e.status !== F.Dmq.ENDED).length),
@@ -112,10 +112,10 @@ let q = function() {
         $ = null !== t ? t.currentPeriodEnd : void 0,
         ee = !(J && !(Q.unactivatedUnits.length > 0)) && (Q.fractionalState !== B.xc.NONE || Q.unactivatedUnits.length > 0);
     return (s.useEffect(() => (d.h.wait(() => {
-        (0, g.zS)(), c.hP(), (0, u.CD)(), c.$o()
+        (0, _.zS)(), c.hP(), (0, u.CD)(), c.$o()
     }), function() {
         V.A.resetState()
-    }), []), v.A.enabled) ? (0, i.jsx)(_.A, {}) : f && D ? U === H.nR ? (0, i.jsx)(E.A, {
+    }), []), N.A.enabled) ? (0, i.jsx)(g.A, {}) : f && D ? U === H.nR ? (0, i.jsx)(S.A, {
         onGoBack: () => V.A.setState({
             subsection: null
         })
@@ -157,7 +157,7 @@ let q = function() {
                     })
                 })]
             }), K > 0 && (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(Z, {}), (0, i.jsx)(S.A, {
+                children: [(0, i.jsx)(Z, {}), (0, i.jsx)(E.A, {
                     count: K,
                     onClickManageSubscription: () => {
                         V.A.setState({

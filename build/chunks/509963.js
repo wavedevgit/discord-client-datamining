@@ -16,8 +16,8 @@ var i = n(627968),
     h = n(397927),
     A = n(587895),
     m = n(290987),
-    _ = n(976860),
-    p = n(194871),
+    p = n(976860),
+    _ = n(194871),
     g = n(966846),
     f = n(674378),
     x = n(505806),
@@ -111,7 +111,7 @@ class b extends s.PureComponent {
         if (e.type === C.WTw.UPDATING || e.type === C.WTw.REPAIRING || e.type === C.WTw.INSTALLING) {
             if (t) return E.intl.string(E.t["5oxtFS"]);
             else if (e.stage === C.OQC.PATCHING || e.stage === C.OQC.REPAIRING) return (0, i.jsx)(x.A, {
-                getHistoricalTotalBytes: p.A.getHistoricalTotalBytesWritten,
+                getHistoricalTotalBytes: _.A.getHistoricalTotalBytesWritten,
                 updateInterval: 5e3,
                 children: this.renderProgressBody
             })
@@ -149,7 +149,7 @@ class S extends s.PureComponent {
         let {
             onClick: t
         } = this.props;
-        e.preventDefault(), e.stopPropagation(), null != t && t(e), (0, _.pX)(C.BVt.APPLICATION_LIBRARY)
+        e.preventDefault(), e.stopPropagation(), null != t && t(e), (0, p.pX)(C.BVt.APPLICATION_LIBRARY)
     };
     getTooltipText() {
         let {
@@ -206,9 +206,9 @@ function T(e, t) {
         return null != l && e.push(l), e
     }, [])
 }
-let v = o.Ay.connectStores([g.A, p.A, A.A], () => {
+let v = o.Ay.connectStores([g.A, _.A, A.A], () => {
     let e = g.A.activeItems,
-        t = T(e, p.A),
+        t = T(e, _.A),
         {
             total: n,
             progress: i

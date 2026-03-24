@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(574172),
     A = n(423562),
     m = n(309010),
-    _ = n(954571),
-    p = n(203982),
+    p = n(954571),
+    _ = n(203982),
     g = n(723702),
     f = n(475815),
     x = n(652215);
@@ -62,7 +62,7 @@ function C(e) {
         L = C && !b,
         M = v === x._Of.VIDEO && y && !L,
         D = s.useCallback((e, i) => {
-            i !== e && (r.A.updateLayout(t.id, i, n), i === x.DUB.FULL_SCREEN && t.isPrivate() && p._.dispatch(x.jej.TEXTAREA_BLUR))
+            i !== e && (r.A.updateLayout(t.id, i, n), i === x.DUB.FULL_SCREEN && t.isPrivate() && _._.dispatch(x.jej.TEXTAREA_BLUR))
         }, [n, t]),
         G = s.useCallback(e => {
             null == O || e === x.DUB.FULL_SCREEN && (D(e, j.current), (0, f.sP)(e => {
@@ -92,7 +92,7 @@ function C(e) {
             channel: e,
             maybeLeaveFullScreen: t
         } = w.current;
-        return _.default.track(x.HAw.VIDEO_LAYOUT_TOGGLED, {
+        return p.default.track(x.HAw.VIDEO_LAYOUT_TOGGLED, {
             video_layout: b ? "popout" : T,
             ...(0, o.QS)(e.id)
         }), () => {

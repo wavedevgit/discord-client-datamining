@@ -13,20 +13,20 @@ var i = n(627968),
     c = n(944791),
     u = n(793574),
     m = n(688810),
-    g = n(726249),
-    _ = n(915089),
+    _ = n(726249),
+    g = n(915089),
     x = n(742589),
     A = n(544028),
     h = n(253932),
     p = n(841329),
     f = n(899847),
     T = n(695515),
-    E = n(438732),
-    S = n(809697),
+    S = n(438732),
+    E = n(809697),
     b = n(834981),
     C = n(102615),
-    N = n(246109),
-    v = n(452141),
+    v = n(246109),
+    N = n(452141),
     I = n(888772),
     j = n(614749),
     y = n(768985),
@@ -37,16 +37,16 @@ var i = n(627968),
     D = n(914280);
 let G = {
         [O.u9.REQUESTS]: I.A,
-        [O.u9.ACTIVITY]: v.A,
+        [O.u9.ACTIVITY]: N.A,
         [O.u9.SETTINGS]: j.A,
         [O.u9.CONTENT_AND_SOCIAL]: C.A,
-        [O.u9.DATA_AND_PRIVACY]: N.A
+        [O.u9.DATA_AND_PRIVACY]: v.A
     },
     M = {
         [O.u9.REQUESTS]: I.A,
-        [O.u9.ACTIVITY]: v.A,
+        [O.u9.ACTIVITY]: N.A,
         [O.u9.CONTENT_AND_SOCIAL]: C.A,
-        [O.u9.DATA_AND_PRIVACY]: N.A
+        [O.u9.DATA_AND_PRIVACY]: v.A
     };
 
 function U() {
@@ -62,7 +62,7 @@ function k(e) {
     let {
         section: t,
         handleItemSelect: n
-    } = e, s = (0, b.VT)(), l = (0, E.A)();
+    } = e, s = (0, b.VT)(), l = (0, S.A)();
     return t === O.u9.CONTENT_AND_SOCIAL || t === O.u9.DATA_AND_PRIVACY ? null : (0, i.jsxs)(d.VQ0, {
         className: D.c5,
         "aria-label": P.intl.string(L.default.RZqaJn),
@@ -95,7 +95,7 @@ function w(e) {
         theme: t,
         section: n,
         handleItemSelect: s
-    } = e, l = (0, _.GV)(), o = (0, b.VT)();
+    } = e, l = (0, g.GV)(), o = (0, b.VT)();
     return (0, i.jsx)(d.NPJ, {
         theme: t,
         children: e => (0, i.jsxs)(x.A, {
@@ -134,7 +134,7 @@ function w(e) {
 }
 
 function V() {
-    let e = (0, _.GV)(),
+    let e = (0, g.GV)(),
         {
             isLoading: t,
             selectedTab: n,
@@ -147,13 +147,13 @@ function V() {
             }
         });
     if (s.useEffect(() => {
-            (0, p._)(S.q[n])
+            (0, p._)(E.q[n])
         }, [n]), a) return null;
     let r = G[n];
     return (0, i.jsxs)("main", {
         className: D.kL,
         "aria-label": P.intl.string(L.default.RZqaJn),
-        children: [(0, i.jsx)(g.HI, {
+        children: [(0, i.jsx)(_.HI, {
             location: P.intl.string(L.default.RZqaJn)
         }), (0, i.jsx)(k, {
             section: n,
@@ -172,10 +172,10 @@ function V() {
 function B() {
     let {
         analyticsLocations: e
-    } = (0, m.Ay)(u.A.FAMILY_CENTER), t = (0, E.A)(), n = (0, o.bG)([T.A], () => T.A.getIsInitialized()), l = (0, o.bG)([A.A], () => A.A.theme), r = (0, _.GV)(), {
+    } = (0, m.Ay)(u.A.FAMILY_CENTER), t = (0, S.A)(), n = (0, o.bG)([T.A], () => T.A.getIsInitialized()), l = (0, o.bG)([A.A], () => A.A.theme), r = (0, g.GV)(), {
         isLoading: x,
         selectedTab: p,
-        handleTabChange: S,
+        handleTabChange: E,
         showAgeGateModal: b
     } = (0, y.j)({
         location: O.MH.SIDENAV,
@@ -188,19 +188,19 @@ function B() {
             n && t && void 0 === e && h.dm.updateSetting(!0)
         }, [n, t]), b) return null;
     let C = p !== O.u9.SETTINGS ? p : O.u9.ACTIVITY,
-        N = M[C];
+        v = M[C];
     return (0, i.jsx)(m.f5, {
         value: e,
         children: (0, i.jsxs)("main", {
             className: a()(D.kL, D.ei),
             "aria-label": P.intl.string(L.default.RZqaJn),
-            children: [(0, i.jsx)(g.HI, {
+            children: [(0, i.jsx)(_.HI, {
                 location: P.intl.string(L.default.RZqaJn)
             }), (0, i.jsx)(w, {
                 theme: l,
                 section: C,
                 handleItemSelect: e => {
-                    S(e)
+                    E(e)
                 }
             }), (0, i.jsx)(d.VQ0.Panel, {
                 id: C,
@@ -209,7 +209,7 @@ function B() {
                 children: (0, i.jsx)(d.HOs, {
                     children: (0, i.jsx)("div", {
                         className: D.O4,
-                        children: x ? (0, i.jsx)(U, {}) : (0, i.jsx)(N, {})
+                        children: x ? (0, i.jsx)(U, {}) : (0, i.jsx)(v, {})
                     })
                 })
             })]

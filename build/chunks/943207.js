@@ -1,6 +1,6 @@
 /** chunk id: 943207 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => g
 });
 var i = n(627968),
     s = n(64700),
@@ -13,7 +13,7 @@ var i = n(627968),
     u = n(139674),
     m = n(473169);
 
-function g(e) {
+function _(e) {
     let {
         code: {
             code: t,
@@ -38,10 +38,10 @@ function g(e) {
     })
 }
 
-function _(e) {
+function g(e) {
     let {
         backupCodes: t
-    } = e, n = s.useCallback(e => e.map(e => (0, i.jsx)(g, {
+    } = e, n = s.useCallback(e => e.map(e => (0, i.jsx)(_, {
         code: e
     }, e.code)), []), d = s.useCallback(async () => {
         let e = o.A.getVerificationKey();

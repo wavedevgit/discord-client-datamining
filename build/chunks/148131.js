@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(53719),
     u = n(390370),
     m = n(191627),
-    g = n(842130),
-    _ = n(985018),
+    _ = n(842130),
+    g = n(985018),
     x = n(487693);
 
 function A(e) {
@@ -43,7 +43,7 @@ function A(e) {
             className: x.o1,
             children: (0, i.jsx)(c.A, {
                 icon: o.PGe,
-                tooltip: _.intl.string(g.default.l20ZZp),
+                tooltip: g.intl.string(_.default.l20ZZp),
                 onClick: A
             })
         })]

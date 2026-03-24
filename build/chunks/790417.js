@@ -32,22 +32,22 @@ function T(e) {
         displayProfile: T,
         guildId: b,
         channelId: N,
-        onClose: y
+        onClose: S
     } = e, {
-        live: S,
+        live: y,
         recent: C,
         stream: R
     } = (0, u.A)(t.id), {
         voiceChannel: k,
-        voiceActivity: w
+        voiceActivity: L
     } = (0, g.A)({
         userId: t.id,
         guildId: b
-    }), L = (0, l.bG)([s.A], () => s.A.isFetchingUserOutbox(t.id)), O = t.id === n.id, D = (0, l.bG)([d.A, o.A], () => {
-        let e = O ? d.A.getStatus() : o.A.getStatus(t.id);
+    }), O = (0, l.bG)([s.A], () => s.A.isFetchingUserOutbox(t.id)), w = t.id === n.id, D = (0, l.bG)([d.A, o.A], () => {
+        let e = w ? d.A.getStatus() : o.A.getStatus(t.id);
         return e === a.clD.OFFLINE || e === a.clD.INVISIBLE
-    }), P = S.length > 0 || null != R, G = T?.private !== !0 && null == R && null == w && null != k, M = !D && (P || G), U = C.length > 0;
-    return M || U || !L ? M || U || L ? (0, i.jsxs)(A.K, {
+    }), P = y.length > 0 || null != R, G = T?.private !== !0 && null == R && null == L && null != k, M = !D && (P || G), U = C.length > 0;
+    return M || U || !O ? M || U || O ? (0, i.jsxs)(A.K, {
         className: E.XG,
         fade: !0,
         children: [M ? (0, i.jsx)(_.A, {
@@ -59,27 +59,27 @@ function T(e) {
                         user: t,
                         currentUser: n,
                         stream: R,
-                        onClose: y
+                        onClose: S
                     })
-                }), S.map((e, l) => (0, i.jsx)("li", {
+                }), y.map((e, l) => (0, i.jsx)("li", {
                     children: (0, i.jsx)(m.A, {
                         user: t,
                         currentUser: n,
                         activity: e,
-                        onClose: y
+                        onClose: S
                     })
                 }, `live-${l}`)), G && (0, i.jsx)("li", {
                     children: (0, i.jsx)(f.A, {
                         user: t,
                         currentUser: n,
                         voiceChannel: k,
-                        onClose: y
+                        onClose: S
                     })
                 })]
             })
         }) : null, U ? (0, i.jsx)(_.A, {
             heading: v.intl.string(v.t.jzgEoL),
-            introText: O ? v.intl.format(v.t["4bk9Ak"], {
+            introText: w ? v.intl.format(v.t["4bk9Ak"], {
                 learnMoreHook: (e, t) => (0, i.jsx)(a.MzZ, {
                     href: c.A.getArticleURL(j.MVz.ACTIVITY_STATUS_SETTINGS),
                     children: e
@@ -92,18 +92,18 @@ function T(e) {
                     children: (0, i.jsx)(x.A, {
                         user: t,
                         entry: e,
-                        onClose: y
+                        onClose: S
                     })
                 }, e.id))
             })
         }) : null]
-    }) : O ? (0, i.jsx)(h.qv, {
-        onClose: y
+    }) : w ? (0, i.jsx)(h.qv, {
+        onClose: S
     }) : (0, i.jsx)(h.zf, {
         user: t,
         guildId: T?.guildId ?? b,
         channelId: N,
-        onClose: y
+        onClose: S
     }) : (0, i.jsx)("div", {
         className: E.kR,
         children: Array.from({

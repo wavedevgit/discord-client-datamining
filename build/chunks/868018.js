@@ -13,17 +13,17 @@ var i = n(627968),
     u = n(780964),
     m = n(985018);
 
-function g() {
+function _() {
     let e = c.JG.useSetting();
     return (0, s.bG)([d.Ay, o.A], () => {
         let t = new Set(e);
         return d.Ay.getFlattenedGuildIds().filter(e => null != o.A.getGuild(e) && !t.has(e))
     }, [e])
 }
-let _ = {
+let g = {
         type: r.wF.STACKED_ICONS,
         useIcons: function() {
-            let e = g(),
+            let e = _(),
                 t = (0, s.bG)([o.A], () => e.slice(0, 2).map(e => o.A.getGuild(e)).filter(e => null != e), [e]);
             return 0 === t.length ? null : t.length >= 2 ? {
                 frontIcon: {
@@ -53,7 +53,7 @@ let _ = {
     },
     x = (0, a.AK)(u.X.PROFILE_PRIVACY_TO_ACTIVITY_PRIVACY_NAVIGATOR, {
         useSubtitle: function() {
-            let e = g();
+            let e = _();
             if (0 === e.length) return m.intl.format(m.t.QJIJ5p, {});
             let t = o.A.getGuild(e[0]),
                 n = t?.name ?? "",
@@ -66,7 +66,7 @@ let _ = {
             })
         },
         useTrailingDecoration: function() {
-            return _
+            return g
         },
         destinationKey: u.X.ACTIVITY_PRIVACY_PANEL
     }),

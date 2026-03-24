@@ -19,7 +19,7 @@ function u(e) {
     } = e, a = (0, r.XC)(t.id, n), {
         avatarSrc: u,
         avatarDecorationSrc: m,
-        eventHandlers: g
+        eventHandlers: _
     } = (0, l.A)({
         userId: t.id,
         size: s._3J.SIZE_40,
@@ -27,7 +27,7 @@ function u(e) {
     });
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
-            ...g,
+            ..._,
             children: (0, i.jsx)(c, {
                 className: d.my,
                 src: u,

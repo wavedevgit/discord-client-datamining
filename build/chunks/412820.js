@@ -1,6 +1,6 @@
 /** chunk id: 412820 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => g
 });
 var i = n(627968),
     s = n(64700),
@@ -12,9 +12,9 @@ var i = n(627968),
     c = n(624826),
     u = n(127870),
     m = n(159001),
-    g = n(985018);
+    _ = n(985018);
 
-function _() {
+function g() {
     let {
         selectedGuildId: e,
         canSubmit: t,
@@ -23,7 +23,7 @@ function _() {
         selectedGuildId: d.A.selectedGuildId,
         canSubmit: d.A.canSubmit(),
         errors: d.A.getErrors(d.A.selectedGuildId)
-    })), [_, x] = s.useState(!1), A = s.useMemo(() => n?.guild_tag !== void 0 && n.guild_tag.length > 0 ? n.guild_tag[0] : Object.keys(n ?? {}).length > 0 ? g.intl.string(g.t.s35OuK) : null, [n]), h = s.useCallback(async () => {
+    })), [g, x] = s.useState(!1), A = s.useMemo(() => n?.guild_tag !== void 0 && n.guild_tag.length > 0 ? n.guild_tag[0] : Object.keys(n ?? {}).length > 0 ? _.intl.string(_.t.s35OuK) : null, [n]), h = s.useCallback(async () => {
         x(!0);
         let t = d.A.getPendingChanges(e),
             n = (0, r.C5)(t),
@@ -50,7 +50,7 @@ function _() {
         (0, m.IM)()
     }, []);
     return (0, i.jsx)(a.A, {
-        submitting: _,
+        submitting: g,
         onSave: h,
         onReset: p,
         disabled: !t,

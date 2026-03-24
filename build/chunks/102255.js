@@ -1,6 +1,6 @@
 /** chunk id: 102255 params = (module,exports,require) **/
 n.d(t, {
-    AF: () => S,
+    AF: () => E,
     Im: () => T,
     jH: () => f
 });
@@ -14,8 +14,8 @@ var i = n(627968),
     c = n(200921),
     u = n(754333),
     m = n(287809),
-    g = n(791606),
-    _ = n(403362),
+    _ = n(791606),
+    g = n(403362),
     x = n(780964),
     A = n(840065),
     h = n(985018),
@@ -45,7 +45,7 @@ function T() {
     })
 }
 
-function E(e) {
+function S(e) {
     let {
         checked: t,
         otherSessions: n
@@ -70,7 +70,7 @@ function E(e) {
     })
 }
 
-function S() {
+function E() {
     let {
         currentSession: e,
         otherSessions: t
@@ -89,7 +89,7 @@ function S() {
             }, e.id_hash)), n?.mfaEnabled ? null : (0, i.jsx)(C, {})]
         }), t.length > 0 && (0, i.jsx)("div", {
             className: p.wq,
-            children: (0, i.jsx)(E, {
+            children: (0, i.jsx)(S, {
                 checked: l,
                 otherSessions: t
             })
@@ -105,7 +105,7 @@ function b(e) {
         checked: l,
         useChecks: r
     } = e, d = t.client_info?.location ?? t.client_info?.ip, m = t.client_info?.platform, {
-        text: g,
+        text: _,
         icon: x
     } = function(e) {
         switch (e?.toLowerCase().trim()) {
@@ -129,7 +129,7 @@ function b(e) {
                     text: e, icon: o.kN9
                 }
         }
-    }(t.client_info?.os), A = n ? null : (0, u.Y)(t.approx_last_used_time), f = [g, m].filter(_.Vq), T = [d, A].filter(_.Vq);
+    }(t.client_info?.os), A = n ? null : (0, u.Y)(t.approx_last_used_time), f = [_, m].filter(g.Vq), T = [d, A].filter(g.Vq);
     return (0, i.jsxs)("div", {
         className: a()(p.dZ, {
             [p.gg]: n
@@ -201,7 +201,7 @@ function C() {
             className: p.OC,
             children: [(0, i.jsx)("div", {
                 className: p.km,
-                children: (0, i.jsx)(g.A, {
+                children: (0, i.jsx)(_.A, {
                     width: "32",
                     height: "32"
                 })

@@ -12,17 +12,17 @@ var i = n(627968),
     c = n(117178),
     u = n(734066),
     m = n(419954),
-    g = n(532624),
-    _ = n(780964),
+    _ = n(532624),
+    g = n(780964),
     x = n(652215),
     A = n(985018),
     h = n(280973);
-let p = (0, m.E2)(_.X.CLIPS_SCREENSHOT_KEYBIND, {
+let p = (0, m.E2)(g.X.CLIPS_SCREENSHOT_KEYBIND, {
     useSearchTerms: () => [A.intl.string(A.t["0U/hj7"]), A.intl.string(A.t["5zxkdo"])],
     usePredicate: u.BW,
     Component: () => {
-        let e = (0, r.bG)([g.Ay], () => g.Ay.getKeybindForAction(x.hCu.SAVE_CLIP, !0)),
-            t = (0, r.bG)([g.Ay], () => g.Ay.getKeybindForAction(x.hCu.SAVE_SCREENSHOT, !0));
+        let e = (0, r.bG)([_.Ay], () => _.Ay.getKeybindForAction(x.hCu.SAVE_CLIP, !0)),
+            t = (0, r.bG)([_.Ay], () => _.Ay.getKeybindForAction(x.hCu.SAVE_SCREENSHOT, !0));
         a()(null != e, "Save clip keybind unset"), a()(null != t, "Save screenshot keybind unset");
         let n = s.useCallback(e => {
             d.A.setKeybind({

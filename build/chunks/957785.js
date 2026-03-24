@@ -20,8 +20,8 @@ let A = s.forwardRef(function(e, t) {
         shouldScalePreview: l = !0,
         renderPreview: A,
         moreCount: m,
-        isSingleCard: _ = !1,
-        wishlistId: p,
+        isSingleCard: p = !1,
+        wishlistId: _,
         wishlistItem: g,
         cardSize: f = u.Y.MEDIUM
     } = e, {
@@ -29,12 +29,12 @@ let A = s.forwardRef(function(e, t) {
         skuProductLine: C
     } = g, {
         trackUserProfileWishlistAction: E
-    } = (0, d.NJ)(), I = l ? h.ho : h.C8, N = _ ? h.pr : h.Nr, b = null != m && m > 0, S = (0, i.jsxs)(o.DUT, {
+    } = (0, d.NJ)(), I = l ? h.ho : h.C8, N = p ? h.pr : h.Nr, b = null != m && m > 0, S = (0, i.jsxs)(o.DUT, {
         onClick: () => {
             n(), E({
                 action: b ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
                 skuId: b ? null : x,
-                wishlistId: p,
+                wishlistId: _,
                 productLines: new Set([C])
             })
         },

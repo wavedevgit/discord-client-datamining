@@ -1,6 +1,6 @@
 /** chunk id: 725951 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _,
+    A: () => g,
     f: () => u
 });
 var i, s = n(627968),
@@ -16,7 +16,7 @@ let m = {
     tension: 40,
     clamp: !0
 };
-class g extends l.PureComponent {
+class _ extends l.PureComponent {
     _animated;
     constructor(e) {
         super(e), this._animated = new o.A.Value(-1 * e.direction)
@@ -58,7 +58,7 @@ class g extends l.PureComponent {
         })
     }
 }
-let _ = e => {
+let g = e => {
     let {
         children: t,
         step: n,
@@ -70,7 +70,7 @@ let _ = e => {
     return (0, s.jsx)(d.F, {
         component: "div",
         className: r()(c.Q, l),
-        children: (0, s.jsx)(g, {
+        children: (0, s.jsx)(_, {
             direction: i,
             springSettings: a,
             fadeInOut: o,

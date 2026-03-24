@@ -1,6 +1,6 @@
 /** chunk id: 120385 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -26,27 +26,27 @@ async function m(e) {
     }
 }
 
-function g(e) {
+function _(e) {
     let {
         payment: t
-    } = e, [n, l] = s.useState(null), [o, g] = s.useState(null), _ = async e => {
+    } = e, [n, l] = s.useState(null), [o, _] = s.useState(null), g = async e => {
         try {
             let n = await m(t.id);
             l(n);
             let i = e ? n.refundInvoiceLinks[0] : n.invoiceLink;
-            window.open(i, "_blank"), g(null)
+            window.open(i, "_blank"), _(null)
         } catch (e) {
-            g(e.body?.message)
+            _(e.body?.message)
         }
     }, x = null != t.paymentSource && t.status === d.__.COMPLETED, A = n?.invoiceLink, h = n?.refundInvoiceLinks;
     return t.hasInvoiceURL && null == n ? (0, i.jsxs)("div", {
         className: u.It,
         children: [(0, i.jsx)(a.MzZ, {
-            onClick: () => _(!1),
+            onClick: () => g(!1),
             children: c.intl.formatToPlainString(c.t.R0xzCN, {})
         }), t.hasRefundInvoiceURLs ? (0, i.jsx)(a.MzZ, {
             className: u.oe,
-            onClick: () => _(!0),
+            onClick: () => g(!0),
             children: c.intl.formatToPlainString(c.t["3x6NGw"], {})
         }) : null, null != o && "" !== o && (0, i.jsx)(a.wx6, {
             type: "critical",

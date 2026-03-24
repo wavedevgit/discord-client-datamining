@@ -1,6 +1,6 @@
 /** chunk id: 69551 params = (module,exports,require) **/
 n.d(t, {
-    l: () => _
+    l: () => g
 });
 var i = n(311907),
     s = n(890138),
@@ -12,10 +12,10 @@ var i = n(311907),
     c = n(253932),
     u = n(780964),
     m = n(652215),
-    g = n(985018);
-let _ = (0, r.zD)(u.X.DISPLAY_SYNC_THEME, {
-    useTitle: () => g.intl.string(g.t["/B+kEV"]),
-    useSearchTerms: () => [g.intl.string(g.t.Ksh3ik)],
+    _ = n(985018);
+let g = (0, r.zD)(u.X.DISPLAY_SYNC_THEME, {
+    useTitle: () => _.intl.string(_.t["/B+kEV"]),
+    useSearchTerms: () => [_.intl.string(_.t.Ksh3ik)],
     useValue: function() {
         return (0, i.bG)([o.A], () => !1 !== o.A.shouldSync("appearance"))
     },

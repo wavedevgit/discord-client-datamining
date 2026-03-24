@@ -4,11 +4,11 @@ n.d(t, {
     BA: () => g,
     FA: () => f,
     LH: () => C,
-    Se: () => p,
+    Se: () => _,
     WD: () => m,
     YS: () => A,
     Yc: () => h,
-    ZM: () => _,
+    ZM: () => p,
     uU: () => x
 });
 var i = n(111956),
@@ -81,7 +81,7 @@ async function m(e, t, n) {
     })
 }
 
-function _(e, t) {
+function p(e, t) {
     o.A.delete({
         url: u.Rsh.DIRECTORY_CHANNEL_ENTRY(e, t),
         trackedActionData: {
@@ -98,7 +98,7 @@ function _(e, t) {
         guildId: t
     })
 }
-let p = s()(async (e, t) => {
+let _ = s()(async (e, t) => {
         if (!c.A.shouldFetch(e, t)) return void r.h.dispatch({
             type: "GUILD_DIRECTORY_CACHED_SEARCH",
             channelId: e,

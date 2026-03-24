@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(465794),
     u = n(954571),
     m = n(927578),
-    g = n(652215),
-    _ = n(788868),
+    _ = n(652215),
+    g = n(788868),
     x = n(985018),
     A = n(547568),
     h = n(896237),
@@ -25,14 +25,14 @@ function f(e) {
         showOverlay: n,
         children: f
     } = e, T = (0, r.Ay)(), {
-        analyticsLocations: E
+        analyticsLocations: S
     } = (0, d.Ay)(o.A.PREMIUM_UPSELL_OVERLAY);
     return (s.useEffect(() => {
-        n && u.default.track(g.HAw.PREMIUM_UPSELL_VIEWED, {
-            location_stack: E,
-            type: _.e.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_INLINE
+        n && u.default.track(_.HAw.PREMIUM_UPSELL_VIEWED, {
+            location_stack: S,
+            type: g.e.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_INLINE
         })
-    }, [n, E]), n) ? (0, i.jsxs)("div", {
+    }, [n, S]), n) ? (0, i.jsxs)("div", {
         className: A.ry,
         children: [(0, i.jsx)("div", {
             children: f
@@ -43,11 +43,11 @@ function f(e) {
                 alt: x.intl.string(x.t.LHFZQy),
                 src: function(e) {
                     switch (e) {
-                        case g.NJ8.DARK:
-                        case g.NJ8.DARKER:
-                        case g.NJ8.MIDNIGHT:
+                        case _.NJ8.DARK:
+                        case _.NJ8.DARKER:
+                        case _.NJ8.MIDNIGHT:
                             return h;
-                        case g.NJ8.LIGHT:
+                        case _.NJ8.LIGHT:
                             return p;
                         default:
                             return h
@@ -70,7 +70,7 @@ function f(e) {
                 textOptions: {
                     textOverride: m.Ay.isPremium(t) ? x.intl.string(x.t.AfRWI8) : x.intl.string(x.t.nkdUym)
                 },
-                subscriptionTier: _.pe.TIER_2
+                subscriptionTier: g.pe.TIER_2
             })]
         })]
     }) : f

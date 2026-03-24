@@ -13,8 +13,8 @@ var i = n(627968),
     c = n(419954),
     u = n(430452),
     m = n(780964),
-    g = n(944993),
-    _ = n(509381),
+    _ = n(944993),
+    g = n(509381),
     x = n(731854),
     A = n(985018);
 let h = !l.Av;
@@ -30,12 +30,12 @@ let f = (0, c.zD)(m.X.VOICE_PUSH_TO_TALK_SETTING, {
         let e = (0, a.bG)([u.Ay], () => u.Ay.getMode());
         return s.useMemo(() => {
             if (!l.Av && e === x.TB.PUSH_TO_TALK) return A.intl.format(A.t["VHI4+Y"], {
-                onDownloadClick: () => (0, g._)("Help Text PTT")
+                onDownloadClick: () => (0, _._)("Help Text PTT")
             })
         }, [e])
     },
     usePredicate: function() {
-        return (0, a.bG)([u.Ay], () => u.Ay.getActiveInputProfile() !== _.m.STUDIO)
+        return (0, a.bG)([u.Ay], () => u.Ay.getActiveInputProfile() !== g.m.STUDIO)
     },
     useValue: function() {
         return (0, a.bG)([u.Ay], () => u.Ay.getMode() === x.TB.PUSH_TO_TALK)
@@ -50,7 +50,7 @@ let f = (0, c.zD)(m.X.VOICE_PUSH_TO_TALK_SETTING, {
                 title: A.intl.string(A.t.Kdt0Gb),
                 confirmText: A.intl.string(A.t["1WjMbC"]),
                 cancelText: A.intl.string(A.t.BddRzS),
-                onConfirm: () => (0, g._)("PTT Limited Modal"),
+                onConfirm: () => (0, _._)("PTT Limited Modal"),
                 body: A.intl.string(A.t.NIozvt),
                 ...t
             })

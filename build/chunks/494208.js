@@ -16,9 +16,9 @@ var i = n(627968),
 function h(e) {
     let {
         channel: t
-    } = e, [n, h] = s.useState(!1), A = s.useRef(null), m = (0, a.vL)(t), _ = s.useCallback(() => {
+    } = e, [n, h] = s.useState(!1), A = s.useRef(null), m = (0, a.vL)(t), p = s.useCallback(() => {
         h(!1)
-    }, []), p = s.useCallback(() => {
+    }, []), _ = s.useCallback(() => {
         n || (0, o.D3)("Popout"), h(!n)
     }, [n]);
     return (0, i.jsx)(l.YNO, {
@@ -28,13 +28,13 @@ function h(e) {
         align: "right",
         autoInvert: !1,
         shouldShow: n,
-        onRequestClose: _,
+        onRequestClose: p,
         renderPopout: function() {
             return (0, i.jsx)(l.lGe, {
                 children: (0, i.jsx)(c.A, {
                     className: u.T,
                     channel: t,
-                    onClose: _,
+                    onClose: p,
                     context: "popout"
                 })
             })
@@ -48,7 +48,7 @@ function h(e) {
                 ...e,
                 ref: A,
                 className: u.Kk,
-                onClick: p,
+                onClick: _,
                 icon: l.ysw,
                 "aria-label": d.intl.string(d.t.B2panI),
                 tooltip: n ? null : d.intl.string(d.t.B2panI),

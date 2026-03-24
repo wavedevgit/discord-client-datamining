@@ -1,6 +1,6 @@
 /** chunk id: 78837 params = (module,exports,require) **/
 n.d(t, {
-    f: () => _
+    f: () => g
 });
 var i = n(627968),
     s = n(64700),
@@ -12,23 +12,23 @@ var i = n(627968),
     c = n(827734),
     u = n(397927),
     m = n(590089),
-    g = n(747625);
+    _ = n(747625);
 
-function _(e) {
+function g(e) {
     let {
         ref: t,
         title: n,
         collapsedSubtitle: l,
-        isExpanded: _,
+        isExpanded: g,
         onExpandedChange: x,
         children: A,
         animate: h = !0
-    } = e, p = s.useRef(null), [f, T] = s.useState(null), E = _ && null != f;
+    } = e, p = s.useRef(null), [f, T] = s.useState(null), S = g && null != f;
     return s.useLayoutEffect(() => {
         null != p.current && null == f && T(p.current.clientHeight)
     }, [f]), (0, i.jsxs)(r.EN, {
         ref: t,
-        isExpanded: _,
+        isExpanded: g,
         onExpandedChange: x,
         children: [(0, i.jsx)(m.U, {
             ref: p,
@@ -36,23 +36,23 @@ function _(e) {
                 minHeight: f
             } : void 0,
             title: n,
-            description: E ? void 0 : l,
+            description: S ? void 0 : l,
             trailingElement: (0, i.jsx)(u.vN3, {
                 children: (0, i.jsx)(o.$, {
                     slot: "trigger",
-                    className: g.bW,
+                    className: _.bW,
                     children: (0, i.jsx)(d.ChevronLargeUpIcon, {
-                        className: a()(g.Kk, {
-                            [g.kX]: !_
+                        className: a()(_.Kk, {
+                            [_.kX]: !g
                         }),
                         color: c.A.colors.ICON_STRONG
                     })
                 })
             }),
-            onClick: () => x(!_)
+            onClick: () => x(!g)
         }), (0, i.jsx)(r.kS, {
-            className: a()(g.nd, {
-                [g.t5]: !h
+            className: a()(_.nd, {
+                [_.t5]: !h
             }),
             children: (0, i.jsx)(u.BJc, {
                 gap: 16,

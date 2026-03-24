@@ -2,7 +2,7 @@
 n.d(t, {
     U6: () => f,
     kp: () => T,
-    yG: () => E
+    yG: () => S
 });
 var i = n(627968);
 n(64700);
@@ -15,14 +15,14 @@ var s = n(311907),
     c = n(848971),
     u = n(793943),
     m = n(792656),
-    g = n(954571),
-    _ = n(12901),
+    _ = n(954571),
+    g = n(12901),
     x = n(652215),
     A = n(788868),
     h = n(985018),
     p = n(207645);
 let f = () => {
-    (0, u.nf)(u.HP.APP_ICON), (0, _.default)()
+    (0, u.nf)(u.HP.APP_ICON), (0, g.default)()
 };
 
 function T() {
@@ -36,12 +36,12 @@ function T() {
         fullWidth: !0
     })
 }
-let E = () => {
+let S = () => {
     let {
         analyticsLocations: e
     } = (0, o.Ay)(r.A.USER_SETTINGS), t = (0, s.bG)([d.A], () => d.A.isUpsellPreview);
     return (0, a.Ay)(() => {
-        t && g.default.track(x.HAw.PREMIUM_UPSELL_VIEWED, {
+        t && _.default.track(x.HAw.PREMIUM_UPSELL_VIEWED, {
             type: A.e.APP_ICON_UPSELL,
             location_stack: e
         })

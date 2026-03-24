@@ -21,8 +21,8 @@ let m = e => {
     let {
         days: a,
         hours: m,
-        minutes: g,
-        seconds: _
+        minutes: _,
+        seconds: g
     } = s, x = [{
         unitValue: a,
         unitType: "days"
@@ -30,10 +30,10 @@ let m = e => {
         unitValue: m,
         unitType: "hours"
     }, {
-        unitValue: g,
+        unitValue: _,
         unitType: "minutes"
     }, {
-        unitValue: _,
+        unitValue: g,
         unitType: "seconds"
     }];
     return (0, i.jsxs)("div", {

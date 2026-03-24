@@ -26,8 +26,8 @@ function u() {
 
 function m(e, t) {
     let n = i.useMemo(() => (0, l.hl)(e), [e]),
-        s = g(n, t ?? ""),
-        o = g(n, "");
+        s = _(n, t ?? ""),
+        o = _(n, "");
     return i.useMemo(() => {
         let e = new a.A,
             t = new a.A;
@@ -42,7 +42,7 @@ function m(e, t) {
     }, [s, o, n])
 }
 
-function g(e, t) {
+function _(e, t) {
     let n = u(),
         s = (0, o.A)(e, t, n),
         [l, a] = i.useState(s),

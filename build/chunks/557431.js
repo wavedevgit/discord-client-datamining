@@ -1,7 +1,7 @@
 /** chunk id: 557431 params = (module,exports,require) **/
-e.exports = function(e, t, n, i) {
+e.exports = function(e, t, i, n) {
     var s = -1,
-        l = null == e ? 0 : e.length;
-    for (i && l && (n = e[++s]); ++s < l;) n = t(n, e[s], s, e);
-    return n
+        a = null == e ? 0 : e.length;
+    for (n && a && (i = e[++s]); ++s < a;) i = t(i, e[s], s, e);
+    return i
 }

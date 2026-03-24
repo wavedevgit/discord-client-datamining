@@ -16,16 +16,16 @@ var i = n(627968),
     A = n(980017),
     m = n(206314);
 
-function _(e) {
+function p(e) {
     return e.matches("a") || "highlight" === e.className || e.className.includes("mention")
 }
-class p extends s.Component {
+class _ extends s.Component {
     handleOpenTopic = e => {
         let t = e.target;
         if ((0, r.vq)(t)) {
-            if (_(t)) return;
+            if (p(t)) return;
             let e = t.parentNode;
-            if ((0, r.vq)(e) && _(e)) return
+            if ((0, r.vq)(e) && p(e)) return
         }(0, o.mMO)(async () => {
             let {
                 default: e
@@ -44,7 +44,7 @@ class p extends s.Component {
         (0, c.L3)(e, async () => {
             let {
                 default: e
-            } = await n.e("17425").then(n.bind(n, 340968));
+            } = await Promise.all([n.e("70303"), n.e("17425"), n.e("40878")]).then(n.bind(n, 340968));
             return n => (0, i.jsx)(e, {
                 ...n,
                 channel: t,
@@ -75,4 +75,4 @@ class p extends s.Component {
         }) : null
     }
 }
-let g = p
+let g = _

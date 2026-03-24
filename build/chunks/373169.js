@@ -1,6 +1,6 @@
 /** chunk id: 373169 params = (module,exports,require) **/
 n.d(t, {
-    p: () => _
+    p: () => g
 });
 var i = n(627968),
     s = n(64700),
@@ -12,11 +12,11 @@ var i = n(627968),
     c = n(840065),
     u = n(985018),
     m = n(58477),
-    g = n(72290);
+    _ = n(72290);
 
-function _() {
+function g() {
     let e = (0, l.bG)([o.default], () => o.default.locale),
-        [t, _] = s.useState(e),
+        [t, g] = s.useState(e),
         x = s.useMemo(() => (0, u.getAvailableLocales)().map(e => {
             let t;
             try {
@@ -44,7 +44,7 @@ function _() {
             }
         }), []),
         A = s.useCallback(e => {
-            _(e), g.nextTick(() => {
+            g(e), _.nextTick(() => {
                 r.Ay.updateLocale(e), (0, a.OoC)(c.USER_SETTINGS_MODAL_KEY) && (0, c.openUserSettings)(d.X.LANGUAGE_AND_TIME_PANEL)
             })
         }, []);

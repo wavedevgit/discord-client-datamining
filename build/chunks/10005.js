@@ -12,7 +12,7 @@ function o(e) {
     let {
         onError: t,
         onSuccess: n
-    } = e ?? {}, [o, d] = i.useState(!1), [c, u] = i.useState(!1), [m, g] = i.useState(!1), [_, x] = i.useState(!1), [A, h] = i.useState(!1), [p, f] = i.useState(!1), [T, E] = i.useState(!1), [S, b] = i.useState(!1), C = o || c || m || _ || p || S, N = i.useCallback(async e => {
+    } = e ?? {}, [o, d] = i.useState(!1), [c, u] = i.useState(!1), [m, _] = i.useState(!1), [g, x] = i.useState(!1), [A, h] = i.useState(!1), [p, f] = i.useState(!1), [T, S] = i.useState(!1), [E, b] = i.useState(!1), C = o || c || m || g || p || E, v = i.useCallback(async e => {
         if (!C) {
             d(!0);
             try {
@@ -24,7 +24,7 @@ function o(e) {
                 d(!1)
             }
         }
-    }, [C, t, n]), v = i.useCallback(async e => {
+    }, [C, t, n]), N = i.useCallback(async e => {
         if (!C) {
             u(!0);
             try {
@@ -38,14 +38,14 @@ function o(e) {
         }
     }, [C, t, n]), I = i.useCallback(async e => {
         if (!C) {
-            g(!0);
+            _(!0);
             try {
                 await (0, l.nt)(e, r.Ef.INACTIVE), n?.()
             } catch (n) {
                 let e = new s.LG(n);
                 t?.(e)
             } finally {
-                g(!1)
+                _(!1)
             }
         }
     }, [C, t, n]), j = i.useCallback(async e => {
@@ -74,20 +74,20 @@ function o(e) {
         }
     }, [A, t, n]), O = i.useCallback(async e => {
         if (!T) {
-            E(!0);
+            S(!0);
             try {
                 await l.Ay.fetchTeenActivity(e), n?.()
             } catch (n) {
                 let e = new s.LG(n);
                 t?.(e)
             } finally {
-                E(!1)
+                S(!1)
             }
         }
     }, [T, t, n]);
     return {
-        acceptLinkRequest: N,
-        declineLinkRequest: v,
+        acceptLinkRequest: v,
+        declineLinkRequest: N,
         disconnectLinkRequest: I,
         cancelLinkRequest: j,
         selectTeenUser: O,
@@ -110,7 +110,7 @@ function o(e) {
                 i = n[n.length - 1],
                 r = a.A.getStartId(),
                 o = a.A.getSelectedTeenId();
-            if (!S && null != r && null != o) {
+            if (!E && null != r && null != o) {
                 b(!0);
                 try {
                     await l.Ay.fetchMoreTeenActivity(o, e, r, i.event_id)
@@ -121,14 +121,14 @@ function o(e) {
                     b(!1)
                 }
             }
-        }, [S, t]),
+        }, [E, t]),
         isAcceptLoading: o,
         isDeclineLoading: c,
         isDisconnectLoading: m,
-        isCancelLoading: _,
+        isCancelLoading: g,
         isGetLinkCodeLoading: A,
         isSelectTeenUserLoading: T,
         isRequestingLink: p,
-        isMoreLoading: S
+        isMoreLoading: E
     }
 }

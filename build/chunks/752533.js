@@ -16,8 +16,8 @@ var i = n(627968),
     c = n(427262),
     u = n(519412),
     m = n(985018),
-    g = n(75717);
-let _ = e => {
+    _ = n(75717);
+let g = e => {
         let {
             user: t,
             isOwnUser: n,
@@ -25,44 +25,44 @@ let _ = e => {
             removeButton: r,
             isFaded: u
         } = e, {
-            avatarSrc: _,
+            avatarSrc: g,
             eventHandlers: x
         } = (0, d.A)({
             userId: t?.id,
             size: o._3J.SIZE_24
         }), A = (0, c.$3)(t), [h, p] = s.useState(!1);
         return (0, i.jsxs)("div", {
-            className: a()(g.kL, {
-                [g.RE]: null != r
+            className: a()(_.kL, {
+                [_.RE]: null != r
             }),
             onMouseEnter: () => p(!0),
             onMouseLeave: () => p(!1),
             children: [(0, i.jsxs)("div", {
-                className: a()(g.TT, {
-                    [g.zj]: u
+                className: a()(_.TT, {
+                    [_.zj]: u
                 }),
                 children: [(0, i.jsx)(o.euF, {
-                    className: g.my,
-                    src: _,
+                    className: _.my,
+                    src: g,
                     "aria-label": A,
                     size: o._3J.SIZE_24,
                     ...x
                 }), (0, i.jsxs)(o.Text, {
-                    className: g.Xh,
+                    className: _.Xh,
                     variant: "text-sm/medium",
                     color: "text-strong",
                     children: [A, !!n && ` (${m.intl.string(m.t.LuZzxn)})`]
                 }), null != l && (0, i.jsxs)(o.Text, {
-                    className: g.Pf,
+                    className: _.Pf,
                     variant: "text-sm/medium",
                     color: "text-subtle",
                     children: [(0, i.jsx)("span", {
-                        className: g.me,
+                        className: _.me,
                         children: "\xb7"
                     }), l]
                 })]
             }), null != r && h && (0, i.jsx)("div", {
-                className: g.dM,
+                className: _.dM,
                 children: (0, i.jsx)(o.QWc, {
                     textVariant: "text-sm/medium",
                     variant: "secondary",
@@ -77,7 +77,7 @@ let _ = e => {
             user: t,
             isOwnUser: n
         } = e;
-        return (0, i.jsx)(_, {
+        return (0, i.jsx)(g, {
             user: t,
             isOwnUser: n,
             label: m.intl.string(u.default.vc2xys)
@@ -88,7 +88,7 @@ let _ = e => {
             user: t,
             onRemove: n
         } = e;
-        return (0, i.jsx)(_, {
+        return (0, i.jsx)(g, {
             user: t,
             label: m.intl.string(u.default.mnt50A),
             removeButton: {
@@ -102,7 +102,7 @@ let _ = e => {
             user: t,
             isOwnUser: n
         } = e;
-        return (0, i.jsx)(_, {
+        return (0, i.jsx)(g, {
             user: t,
             isOwnUser: n,
             label: m.intl.string(u.default.mnt50A)
@@ -113,7 +113,7 @@ let _ = e => {
             user: t,
             onRemove: n
         } = e;
-        return (0, i.jsx)(_, {
+        return (0, i.jsx)(g, {
             user: t,
             label: m.intl.string(u.default["1RH5t9"]),
             isFaded: !0,
@@ -129,27 +129,27 @@ let _ = e => {
             canInvite: n
         } = e, [l, d] = s.useState(!1);
         return (0, i.jsxs)("div", {
-            className: a()(g.kL, {
-                [g.RE]: n
+            className: a()(_.kL, {
+                [_.RE]: n
             }),
             onMouseEnter: () => d(!0),
             onMouseLeave: () => d(!1),
             children: [(0, i.jsxs)("div", {
-                className: g.TT,
+                className: _.TT,
                 children: [(0, i.jsx)("div", {
-                    className: a()(g.vG, g.my),
+                    className: a()(_.vG, _.my),
                     children: (0, i.jsx)(o.nys, {
                         size: "xxs",
                         color: r.A.colors.ICON_SUBTLE
                     })
                 }), (0, i.jsx)(o.Text, {
-                    className: g.Xh,
+                    className: _.Xh,
                     variant: "text-sm/medium",
                     color: "text-strong",
                     children: m.intl.string(u.default["/x7DVG"])
                 })]
             }), l && n && (0, i.jsx)("div", {
-                className: g.dM,
+                className: _.dM,
                 children: (0, i.jsx)(o.QWc, {
                     textVariant: "text-sm/medium",
                     variant: "secondary",

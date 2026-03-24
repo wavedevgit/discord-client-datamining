@@ -12,19 +12,19 @@ var i = n(627968),
     c = n(65470),
     u = n(400669),
     m = n(736455),
-    g = n(876587),
-    _ = n(985018),
+    _ = n(876587),
+    g = n(985018),
     x = n(731176);
 let A = e => {
     let {
         navBarSections: t,
         activeSectionId: n
     } = e, A = {
-        [m.k.HOME]: _.intl.string(_.t.uGRXjS),
-        [m.k.WHATS_NEW]: _.intl.string(_.t["mfcR/v"]),
-        [m.k.BEST_OF_NITRO]: _.intl.string(_.t.xQKkE8),
-        [m.k.PLANS]: _.intl.string(_.t.wyNMnm),
-        [m.k.COMPARE]: _.intl.string(_.t.pwD7If)
+        [m.k.HOME]: g.intl.string(g.t.uGRXjS),
+        [m.k.WHATS_NEW]: g.intl.string(g.t["mfcR/v"]),
+        [m.k.BEST_OF_NITRO]: g.intl.string(g.t.xQKkE8),
+        [m.k.PLANS]: g.intl.string(g.t.wyNMnm),
+        [m.k.COMPARE]: g.intl.string(g.t.pwD7If)
     }, h = (0, l.bG)([d.default], () => d.default.getCurrentUser()), p = (0, o.Gh)("premium_marketing_nav_bar") && null != h, f = s.useRef(null), T = Object.values(t).sort((e, t) => e.order - t.order);
     return (0, i.jsxs)(r.A, {
         className: x.TQ,
@@ -64,7 +64,7 @@ let A = e => {
                     variant: "overlay-secondary"
                 })]
             })]
-        }), p && (0, i.jsx)(g.O, {
+        }), p && (0, i.jsx)(_.O, {
             targetElementRef: f
         })]
     })

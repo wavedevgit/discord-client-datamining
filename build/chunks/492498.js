@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(323073),
     A = n(202803),
     m = n(636922),
-    _ = n(835835),
-    p = n(566908),
+    p = n(835835),
+    _ = n(566908),
     g = n(253932),
     f = n(734057),
     x = n(517019),
@@ -66,7 +66,7 @@ function R(e) {
         guildFilter: E.Ay.guildFilter,
         roleFilter: E.Ay.roleFilter,
         everyoneFilter: E.Ay.everyoneFilter
-    })), I = (0, p.Sc)({
+    })), I = (0, _.Sc)({
         location: "RecentMentions"
     }), N = (0, u.A)(m), b = (0, u.A)(g), y = (0, u.A)(x);
     s.useEffect(() => {
@@ -77,7 +77,7 @@ function R(e) {
         c.A.truncateMentions(S.Ue3)
     }, []);
     let R = s.useCallback(() => null, []);
-    return (0, i.jsx)(_.Ay, {
+    return (0, i.jsx)(p.Ay, {
         className: a()(v.sH, {
             [v.qC]: I
         }),

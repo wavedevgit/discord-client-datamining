@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(576705),
     A = n(994500),
     m = n(287809),
-    _ = n(203982),
-    p = n(518960),
+    p = n(203982),
+    _ = n(518960),
     g = n(65593),
     f = n(698638),
     x = n(652215),
@@ -38,10 +38,10 @@ let E = function(e) {
         icons: f.ir,
         onDrop: e => {
             if (v) return !1;
-            O && null != E && ((0, p.R)(e, E, I, {
+            O && null != E && ((0, _.R)(e, E, I, {
                 requireConfirm: N,
                 origin: "drag_drop"
-            }), _._.dispatchToLastSubscribed(x.jej.TEXTAREA_FOCUS))
+            }), p._.dispatchToLastSubscribed(x.jej.TEXTAREA_FOCUS))
         },
         onDragClear: () => b(!0),
         onDragOver: e => {

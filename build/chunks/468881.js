@@ -1,6 +1,6 @@
 /** chunk id: 468881 params = (module,exports,require) **/
 n.d(t, {
-    w: () => N
+    w: () => v
 });
 var i = n(934551),
     s = n(419954),
@@ -12,31 +12,31 @@ var i = n(934551),
     c = n(41598),
     u = n(640351),
     m = n(623049),
-    g = n(43119),
-    _ = n(661485),
+    _ = n(43119),
+    g = n(661485),
     x = n(411669),
     A = n(581837),
     h = n(666196),
     p = n(654757),
     f = n(556710),
     T = n(305290),
-    E = n(8187),
-    S = n(985018);
+    S = n(8187),
+    E = n(985018);
 let b = (0, s.t_)(a.X.ACCESSIBILITY_PANEL, {
-        useTitle: () => S.intl.string(S.t.G0neg7),
-        buildLayout: () => [c.s, f._, A.b, p.T, _.V, h.G, u.v, m.T]
+        useTitle: () => E.intl.string(E.t.G0neg7),
+        buildLayout: () => [c.s, f._, A.b, p.T, g.V, h.G, u.v, m.T]
     }),
     C = (0, s.t_)(a.X.ACCESSIBILITY_PANEL, {
-        useTitle: () => S.intl.string(S.t.G0neg7),
-        buildLayout: () => [T.U, E.P, x.l, p.T, g.X],
+        useTitle: () => E.intl.string(E.t.G0neg7),
+        buildLayout: () => [T.U, S.P, x.l, p.T, _.X],
         decoration: {
             type: l.t9.STRONGLY_DISCOURAGED_CUSTOM,
             component: o.A,
             sticky: !0
         }
     }),
-    N = (0, s.i4)(a.X.ACCESSIBILITY_SIDEBAR_ITEM, {
-        useTitle: () => S.intl.string(S.t.G0neg7),
+    v = (0, s.i4)(a.X.ACCESSIBILITY_SIDEBAR_ITEM, {
+        useTitle: () => E.intl.string(E.t.G0neg7),
         icon: i.AccessibilityIcon,
         useMenu: d.A,
         buildLayout: () => (0, r.Ci)("AccessibilityPanel") ? [C] : [b]

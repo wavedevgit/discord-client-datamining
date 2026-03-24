@@ -27,11 +27,11 @@ function f(e) {
         disableInteraction: d = !1
     } = e, f = t?.filter(e => null != (0, m.W3)(e)) ?? [], _ = f.length > 0, A = n && !d && (0, u.mS)(a) && f.length < 20, {
         trackUserProfileAction: v
-    } = (0, c.NJ)(), E = (0, l.useRef)(new Map), T = (0, l.useRef)(null), b = (0, l.useRef)(null), [N, y] = (0, l.useState)(0), [S, C] = (0, l.useState)(!1), R = j(T, b, f, E, y);
+    } = (0, c.NJ)(), E = (0, l.useRef)(new Map), T = (0, l.useRef)(null), b = (0, l.useRef)(null), [N, S] = (0, l.useState)(0), [y, C] = (0, l.useState)(!1), R = j(T, b, f, E, S);
     if ((0, l.useEffect)(() => (R(), window.addEventListener("resize", R), () => {
             window.removeEventListener("resize", R)
         }), [R, f?.join("")]), !_ && !A) return null;
-    let k = S ? f : f.slice(0, f.length - N);
+    let k = y ? f : f.slice(0, f.length - N);
     return (0, i.jsxs)("div", {
         className: s()(p.I4, o),
         children: [_ && (0, i.jsxs)(i.Fragment, {
@@ -50,7 +50,7 @@ function f(e) {
                 }, e))
             }), N > 0 && (0, i.jsx)(I, {
                 buttonRef: T,
-                isExpanded: S,
+                isExpanded: y,
                 numberOfOverflowingTags: N,
                 onExpandTags: () => {
                     C(!0), v({

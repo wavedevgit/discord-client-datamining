@@ -1,31 +1,31 @@
 /** chunk id: 504139 params = (module,exports,require) **/
 "use strict";
-n.d(t, {
+i.d(t, {
     A: () => c
 });
-var i = n(544420),
-    s = n(684013),
-    l = n(742984),
-    a = n(471024),
-    r = n(684748),
-    o = n(672396),
-    d = n(985018);
+var n = i(544420),
+    s = i(684013),
+    a = i(742984),
+    l = i(471024),
+    r = i(684748),
+    o = i(672396),
+    d = i(985018);
 
-function c(e, t, n, c, u) {
+function c(e, t, i, c, u) {
     if (null == t.activity) return null;
     let h = t.activity.type,
-        p = u.session_id;
-    if (null == p) return null;
+        _ = u.session_id;
+    if (null == _) return null;
     let {
-        icon: A,
+        icon: p,
         title: f,
-        body: g
-    } = (0, l.TB)(e, t, n), {
-        trackView: _,
-        trackClick: m
+        body: m
+    } = (0, a.TB)(e, t, i), {
+        trackView: g,
+        trackClick: A
     } = (0, r.Y)(o.KS.ActivityInvite, {
         notif_type: o.KS.ActivityInvite,
-        notif_user_id: n.id,
+        notif_user_id: i.id,
         message_id: t.id,
         message_type: t.type,
         guild_id: e.guild_id,
@@ -35,25 +35,25 @@ function c(e, t, n, c, u) {
         activity_name: u.name
     });
     return {
-        icon: A,
+        icon: p,
         title: f,
-        body: g,
-        hint: e => (0, a.sI)(e, (0, r.J)(), d.t.aB5xLy),
+        body: m,
+        hint: e => (0, l.sI)(e, (0, r.J)(), d.t.aB5xLy),
         onNotificationShow: () => {
-            _()
+            g()
         },
         confirmText: d.intl.string(d.t.VJlc0S),
-        onConfirmClick: (l, a) => {
-            i.A.join({
-                userId: n.id,
-                sessionId: p,
+        onConfirmClick: (a, l) => {
+            n.A.join({
+                userId: i.id,
+                sessionId: _,
                 applicationId: c.id,
                 channelId: e.id,
                 messageId: t.id
-            }), s.A.updateNotificationStatus(a), m("join")
+            }), s.A.updateNotificationStatus(l), A("join")
         },
         onDismissClick: () => {
-            m("dismiss")
+            A("dismiss")
         }
     }
 }

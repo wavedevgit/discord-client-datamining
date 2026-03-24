@@ -16,8 +16,8 @@ var s = n(503698),
     h = n(58149),
     A = n(289397),
     m = n(486418),
-    _ = n(575926),
-    p = n(826673),
+    p = n(575926),
+    _ = n(826673),
     g = n(440293),
     f = n(976860),
     x = n(808728),
@@ -43,7 +43,7 @@ function y(e) {
             [v.ST]: y
         }),
         innerClassName: v.LE,
-        renderIcon: e => (0, i.jsx)(_.h, {
+        renderIcon: e => (0, i.jsx)(p.h, {
             width: 20,
             height: 20,
             className: l()([e, v.sV])
@@ -64,7 +64,7 @@ function y(e) {
             }), n && (0, i.jsx)(c.DUT, {
                 className: v.b,
                 onClick: e => {
-                    e.stopPropagation(), (0, p.Dr)(r.M.SERVER_SHOP_PHANTOM_PREVIEW), E.default.track(N.HAw.GUILD_SHOP_PREVIEW_CLICK, {
+                    e.stopPropagation(), (0, _.Dr)(r.M.SERVER_SHOP_PHANTOM_PREVIEW), E.default.track(N.HAw.GUILD_SHOP_PREVIEW_CLICK, {
                         ...(0, h.H$)(t),
                         action_taken: S.hN.DISMISS_CHANNEL_ROW
                     }), d && b || (0, f.bG)(N.BVt.CHANNEL(t, x.Ay.getDefaultChannel(t)?.id))
@@ -92,7 +92,7 @@ function j(e) {
         handleClick: a
     }) : (0, i.jsx)(I.G, {
         id: `shop-${t.id}`,
-        renderIcon: e => (0, i.jsx)(_.h, {
+        renderIcon: e => (0, i.jsx)(p.h, {
             width: 20,
             height: 20,
             className: e

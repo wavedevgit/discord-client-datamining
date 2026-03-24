@@ -12,8 +12,8 @@ var i = n(419954),
     c = n(340186),
     u = n(85648),
     m = n(890801),
-    g = n(268272),
-    _ = n(832688),
+    _ = n(268272),
+    g = n(832688),
     x = n(334219),
     A = n(540576),
     h = n(773140),
@@ -23,6 +23,6 @@ let T = (0, i.WI)(l.X.APP_SECTION, {
     useTitle: () => f.intl.string(f.t.f2n1TP),
     buildLayout: function() {
         let e = (0, a.Ci)("AppSection_buildLayout");
-        return [e ? h.q : null, e ? null : d.yj, e ? u.S : null, r.w, e ? null : h.q, x.z, e ? null : c.g, m.$, g.w, p.$, _.a, e ? null : A.i, e ? null : o._].filter(s.Vq)
+        return [e ? h.q : null, e ? null : d.yj, e ? u.S : null, r.w, e ? null : h.q, x.z, e ? null : c.g, m.$, _.w, p.$, g.a, e ? null : A.i, e ? null : o._].filter(s.Vq)
     }
 })

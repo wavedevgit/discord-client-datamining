@@ -35,7 +35,7 @@ let u = (0, a.zD)(o.X.STREAMER_MODE_HIDE_PERSONAL_INFORMATION, {
             hideInstantInvites: e
         })
     }),
-    g = (0, a.zD)(o.X.STREAMER_MODE_DISABLE_SOUNDS, {
+    _ = (0, a.zD)(o.X.STREAMER_MODE_DISABLE_SOUNDS, {
         useTitle: () => c.intl.string(c.t.OrqYDP),
         useValue: () => (0, i.bG)([r.A], () => {
             let {
@@ -47,7 +47,7 @@ let u = (0, a.zD)(o.X.STREAMER_MODE_HIDE_PERSONAL_INFORMATION, {
             disableSounds: e
         })
     }),
-    _ = (0, a.zD)(o.X.STREAMER_MODE_DISABLE_NOTIFICATIONS, {
+    g = (0, a.zD)(o.X.STREAMER_MODE_DISABLE_NOTIFICATIONS, {
         useTitle: () => c.intl.string(c.t.sUAbLd),
         useValue: () => (0, i.bG)([r.A], () => {
             let {
@@ -76,5 +76,5 @@ let u = (0, a.zD)(o.X.STREAMER_MODE_HIDE_PERSONAL_INFORMATION, {
     A = (0, a.FW)(o.X.STREAMER_MODE_OPTIONS_LIST, {
         variant: "compact",
         useTitle: () => (0, d.bp)("StreamerModeOptions") ? c.intl.string(c.t.xYhOEh) : c.intl.string(c.t.UtW8R6),
-        buildLayout: () => [u, m, g, _, x]
+        buildLayout: () => [u, m, _, g, x]
     })

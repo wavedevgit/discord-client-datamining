@@ -23,33 +23,33 @@ function c(e) {
         useSubtitle: c,
         useValue: u,
         setValue: m,
-        useOptions: g,
-        clearable: _,
+        useOptions: _,
+        clearable: g,
         closeOnSelect: x,
         wrapTags: A,
         selectionMode: h,
         usePersistentBadge: p,
         getDismissibleBadges: f
-    } = t, T = n(), E = c?.(), S = u(), b = g(), C = p?.(), N = f?.(), v = (0, a.A)({
+    } = t, T = n(), S = c?.(), E = u(), b = _(), C = p?.(), v = f?.(), N = (0, a.A)({
         persistentBadge: C,
-        dismissibleBadges: N
+        dismissibleBadges: v
     }), I = (0, r.q)(t), j = s.useMemo(() => ({
         selectionMode: h,
-        value: S,
+        value: E,
         onSelectionChange: d(m, I)
-    }), [h, S, m, I]);
+    }), [h, E, m, I]);
     return (0, i.jsx)(o.L, {
         children: (0, i.jsx)(l.l6P, {
             ...j,
             label: T,
-            description: E,
+            description: S,
             options: b,
             wrapTags: A,
             closeOnSelect: x,
-            clearable: _,
+            clearable: g,
             layout: "horizontal-responsive",
             fullWidth: !0,
-            badge: v
+            badge: N
         })
     })
 }

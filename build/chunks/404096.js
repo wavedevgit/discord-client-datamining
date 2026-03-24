@@ -1,7 +1,7 @@
 /** chunk id: 404096 params = (module,exports,require) **/
 n.d(t, {
     K: () => C,
-    w: () => N
+    w: () => v
 });
 var i = n(421380),
     s = n(935649),
@@ -13,46 +13,46 @@ var i = n(421380),
     c = n(975571),
     u = n(115063),
     m = n(152076),
-    g = n(762183),
-    _ = n(253932),
+    _ = n(762183),
+    g = n(253932),
     x = n(780964),
     A = n(612025),
     h = n(112469),
     p = n(137675),
     f = n(542457),
     T = n(355097),
-    E = n(652215),
-    S = n(985018);
+    S = n(652215),
+    E = n(985018);
 let b = (e, t) => {
-    d.default.track(E.HAw.GUILD_DEFAULT_MESSAGE_REQUEST_UPDATED, {
+    d.default.track(S.HAw.GUILD_DEFAULT_MESSAGE_REQUEST_UPDATED, {
         default_guilds_restricted: e,
         applied_to_existing_guilds: t
     })
 };
 
 function C() {
-    return S.intl.string(S.t["3o2ojh"])
+    return E.intl.string(E.t["3o2ojh"])
 }
-let N = (0, r.zD)(x.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING, {
+let v = (0, r.zD)(x.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING, {
     useTitle: C,
-    useSubtitle: () => (0, h.q9)() ? S.intl.format(S.t.WpnWLc, {
-        helpdeskArticle: c.A.getArticleURL(E.MVz.MESSAGE_REQUESTS)
-    }) : S.intl.format(S.t.wkm9a3, {
-        helpdeskArticle: c.A.getArticleURL(E.MVz.MESSAGE_REQUESTS)
+    useSubtitle: () => (0, h.q9)() ? E.intl.format(E.t.WpnWLc, {
+        helpdeskArticle: c.A.getArticleURL(S.MVz.MESSAGE_REQUESTS)
+    }) : E.intl.format(E.t.wkm9a3, {
+        helpdeskArticle: c.A.getArticleURL(S.MVz.MESSAGE_REQUESTS)
     }),
     useValue: () => {
         let e = (0, h.Tx)(),
-            t = (0, g.K)(),
-            n = _.$s.useSetting().includes(e),
-            i = _.YX.useSetting(),
-            s = _.Zr.useSetting().includes(e);
+            t = (0, _.K)(),
+            n = g.$s.useSetting().includes(e),
+            i = g.YX.useSetting(),
+            s = g.Zr.useSetting().includes(e);
         return e === A.YG ? !t && !i : !n && !s
     },
     useDisabled: () => {
         let e = (0, h.Tx)(),
             t = (0, a.uM)(),
-            n = (0, g.K)(),
-            i = _.$s.useSetting().includes(e);
+            n = (0, _.K)(),
+            i = g.$s.useSetting().includes(e);
         return e === A.YG ? n || t : i
     },
     setValue: e => {
@@ -63,21 +63,21 @@ let N = (0, r.zD)(x.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING, {
         if (t === A.YG) {
             var n;
             n = !e, (0, p.O)({
-                header: S.intl.string(S.t.yAfu1p),
-                body: S.intl.string(S.t.Ry2z74),
-                confirmText: S.intl.string(S.t.gm1Vej),
-                cancelText: S.intl.string(S.t.p89ACt),
+                header: E.intl.string(E.t.yAfu1p),
+                body: E.intl.string(E.t.Ry2z74),
+                confirmText: E.intl.string(E.t.gm1Vej),
+                cancelText: E.intl.string(E.t.p89ACt),
                 confirmButtonColor: i.$n.Colors.BRAND,
                 onConfirm: () => {
-                    _.YX.updateSetting(n), b(n, !1)
+                    g.YX.updateSetting(n), b(n, !1)
                 },
                 onCancel: () => {
-                    _.YX.updateSetting(n), _.Zr.updateSetting(n ? o.A.getGuildIds() : []), b(n, !0)
+                    g.YX.updateSetting(n), g.Zr.updateSetting(n ? o.A.getGuildIds() : []), b(n, !0)
                 }
             })
         } else {
             let n = (0, u.xo)();
-            e ? n.delete(t) : n.add(t), _.Zr.updateSetting(Array.from(n)), d.default.track(E.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+            e ? n.delete(t) : n.add(t), g.Zr.updateSetting(Array.from(n)), d.default.track(S.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
                 action: f.m.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
                 ingress: T.bf.USER_SETTINGS_PRIVACY_SAFETY,
                 guild_id: t

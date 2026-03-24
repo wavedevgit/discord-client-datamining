@@ -1,13 +1,13 @@
 /** chunk id: 714983 params = (module,exports,require) **/
 "use strict";
-n.d(t, {
+i.d(t, {
     A: () => d
 });
-var i = n(627968),
-    s = n(64700),
-    l = n(684013),
-    a = n(471024),
-    r = n(652215);
+var n = i(627968),
+    s = i(64700),
+    a = i(684013),
+    l = i(471024),
+    r = i(652215);
 class o extends s.Component {
     handleNotificationShow = () => {
         let {
@@ -22,52 +22,52 @@ class o extends s.Component {
         let {
             id: t,
             props: {
-                onDismissClick: n
+                onDismissClick: i
             }
         } = this.props.notification;
-        l.A.updateNotificationStatus(t), n?.(e, t)
+        a.A.updateNotificationStatus(t), i?.(e, t)
     };
     handleNotificationClick = e => {
         let {
             id: t,
             props: {
-                onNotificationClick: n
+                onNotificationClick: i
             }
         } = this.props.notification;
-        null != n && n(e, t)
+        null != i && i(e, t)
     };
     handleConfirmClick = e => {
         let {
             id: t,
             props: {
-                onConfirmClick: n
+                onConfirmClick: i
             }
         } = this.props.notification;
-        null != n && n(e, t)
+        null != i && i(e, t)
     };
     handleCancelClick = e => {
         let {
             id: t,
             props: {
-                onCancelClick: n
+                onCancelClick: i
             }
         } = this.props.notification;
-        null != n && n(e, t)
+        null != i && i(e, t)
     };
     renderFooter = e => {
         let {
             id: t,
             props: {
-                renderFooter: n
+                renderFooter: i
             }
-        } = this.props.notification, i = this.props.locked;
-        return null != n ? n(e, t, i) : null
+        } = this.props.notification, n = this.props.locked;
+        return null != i ? i(e, t, n) : null
     };
     getStyle() {
-        let e, t, n, i, {
+        let e, t, i, n, {
             props: {
                 position: s,
-                zIndex: l
+                zIndex: a
             }
         } = this;
         switch (s) {
@@ -81,17 +81,17 @@ class o extends s.Component {
         switch (s) {
             case r.G6Q.BOTTOM_LEFT:
             case r.G6Q.BOTTOM_RIGHT:
-                n = 0;
+                i = 0;
                 break;
             default:
-                i = 0
+                n = 0
         }
         return {
             left: e,
             right: t,
-            bottom: n,
-            top: i,
-            zIndex: l
+            bottom: i,
+            top: n,
+            zIndex: a
         }
     }
     render() {
@@ -101,9 +101,9 @@ class o extends s.Component {
                 notification: {
                     props: {
                         renderFooter: t,
-                        onNotificationShow: n,
+                        onNotificationShow: i,
                         onDismissClick: s,
-                        onNotificationClick: l,
+                        onNotificationClick: a,
                         onConfirmClick: r,
                         onCancelClick: o,
                         ...d
@@ -111,12 +111,12 @@ class o extends s.Component {
                 }
             }
         } = this;
-        return (0, i.jsx)(a.Ay, {
+        return (0, n.jsx)(l.Ay, {
             ...d,
             locked: e,
             onNotificationShow: this.handleNotificationShow,
             onDismissClick: null != s ? this.handleDismissClick : void 0,
-            onNotificationClick: null != l ? this.handleNotificationClick : null,
+            onNotificationClick: null != a ? this.handleNotificationClick : null,
             onConfirmClick: null != r ? this.handleConfirmClick : null,
             onCancelClick: null != o ? this.handleCancelClick : null,
             renderFooter: this.renderFooter,

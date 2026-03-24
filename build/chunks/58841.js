@@ -3,13 +3,13 @@ n.d(t, {
     y: () => s
 });
 var i = n(397927),
-    r = n(674272),
-    a = n(431804);
+    l = n(674272),
+    r = n(431804);
 let s = {
     binds: ["mod+alt+shift+w"],
     comboKeysBindGlobal: !0,
-    action: () => ((0, r.A)({
-        source: a.y.KEYBIND,
+    action: () => ((0, l.A)({
+        source: r.y.KEYBIND,
         onClose: i.s7G
     }), !1)
 }

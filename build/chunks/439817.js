@@ -1,40 +1,40 @@
 /** chunk id: 439817 params = (module,exports,require) **/
 "use strict";
-n.d(t, {
+i.d(t, {
     A: () => h
 });
-var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    a = n.n(l),
-    r = n(397927),
-    o = n(855790),
-    d = n(652215),
-    c = n(985018),
-    u = n(694869);
+var n = i(627968),
+    s = i(64700),
+    a = i(503698),
+    l = i.n(a),
+    r = i(397927),
+    o = i(855790),
+    d = i(652215),
+    c = i(985018),
+    u = i(694869);
 let h = function(e) {
     let t, {
-            title: n,
-            header: l,
+            title: i,
+            header: a,
             children: h,
-            renderSettings: p,
-            onDragStart: A
+            renderSettings: _,
+            onDragStart: p
         } = e,
         f = s.useRef(null);
-    return t = null != n ? (0, i.jsxs)(o.Ay.Bar, {
-        className: a()(u.wx, u.bl),
-        onMouseDown: A,
-        children: [(0, i.jsx)(o.Ay.Content, {
-            className: a()(u.qd, u.bl),
+    return t = null != i ? (0, n.jsxs)(o.Ay.Bar, {
+        className: l()(u.wx, u.bl),
+        onMouseDown: p,
+        children: [(0, n.jsx)(o.Ay.Content, {
+            className: l()(u.qd, u.bl),
             dynamicSize: !0,
-            children: n
-        }), (0, i.jsx)(o.Ay.Content, {
-            children: (0, i.jsx)(r.YNO, {
+            children: i
+        }), (0, n.jsx)(o.Ay.Content, {
+            children: (0, n.jsx)(r.YNO, {
                 targetElementRef: f,
                 position: "right",
-                renderPopout: p ?? d.tEg,
+                renderPopout: _ ?? d.tEg,
                 autoInvert: !1,
-                children: e => (0, i.jsx)(o.Ay.Icon, {
+                children: e => (0, n.jsx)(o.Ay.Icon, {
                     ...e,
                     icon: r.Zes,
                     label: c.intl.string(c.t["3D5yo/"]),
@@ -42,9 +42,9 @@ let h = function(e) {
                 })
             })
         })]
-    }) : l, (0, i.jsxs)("div", {
+    }) : a, (0, n.jsxs)("div", {
         className: u.pz,
-        children: [t, (0, i.jsx)("div", {
+        children: [t, (0, n.jsx)("div", {
             className: u.Y_,
             children: h
         })]

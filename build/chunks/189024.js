@@ -12,20 +12,20 @@ var i = n(627968),
     c = n(688810),
     u = n(954921),
     m = n(793943),
-    g = n(259065),
-    _ = n(95035),
+    _ = n(259065),
+    g = n(95035),
     x = n(532794),
     A = n(780964),
     h = n(358776),
     p = n(840065),
     f = n(166403),
     T = n(730784),
-    E = n(398523),
-    S = n(612669),
+    S = n(398523),
+    E = n(612669),
     b = n(161319),
     C = n(920050),
-    N = n(9458),
-    v = n(788868),
+    v = n(9458),
+    N = n(788868),
     I = n(88001),
     j = n(519412),
     y = n(985018),
@@ -40,14 +40,14 @@ var i = n(627968),
 function U() {
     let {
         analyticsLocations: e
-    } = (0, c.Ay)(d.A.PREMIUM_MARKETING_PERK_CARD), t = (0, S.O9)(), U = (0, T.R)({
+    } = (0, c.Ay)(d.A.PREMIUM_MARKETING_PERK_CARD), t = (0, E.O9)(), U = (0, T.R)({
         location: "PremiumWhatsNewSection"
-    }), k = E.A.useExperiment({
+    }), k = S.A.useExperiment({
         location: "PremiumWhatsNewSection"
     }).enabled, w = (0, a.bG)([f.A], () => f.A.getPremiumTypeSubscription()), V = w?.hasActiveTrial ?? !1, B = (0, s.useCallback)(() => {
         (0, p.openUserSettings)(A.X.PROFILE_PANEL, {
             analyticsLocations: e
-        }, () => (0, g.L)({
+        }, () => (0, _.L)({
             analyticsLocations: e
         }))
     }, [e]), F = (0, s.useCallback)(() => {
@@ -72,8 +72,8 @@ function U() {
                 })
             });
             (0, x.A)({
-                subscriptionTier: v.pe.TIER_2,
-                initialPlanId: v.gD.PREMIUM_GROUP_MONTH,
+                subscriptionTier: N.pe.TIER_2,
+                initialPlanId: N.gD.PREMIUM_GROUP_MONTH,
                 analyticsLocations: e
             })
         } else(0, r.mMO)(async () => {
@@ -84,7 +84,7 @@ function U() {
                 ...t
             })
         })
-    }, [U, e, V]), X = (0, N.A)(e), {
+    }, [U, e, V]), X = (0, v.A)(e), {
         currentDate: K,
         nDaysInMonth: W
     } = (0, s.useMemo)(() => {
@@ -104,7 +104,7 @@ function U() {
                         premiumGroupProductName: (0, I.DP)()
                     }), (0, i.jsx)("div", {
                         className: O.LF,
-                        children: (0, i.jsx)(_.A, {
+                        children: (0, i.jsx)(g.A, {
                             onClick: z,
                             children: y.intl.string(j.default.yYyGJH)
                         })

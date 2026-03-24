@@ -12,16 +12,16 @@ var i = n(627968),
     c = n(419954),
     u = n(933297),
     m = n(780964),
-    g = n(682262),
-    _ = n(694202),
+    _ = n(682262),
+    g = n(694202),
     x = n(50847),
     A = n(606275),
     h = n(879545),
     p = n(49999),
     f = n(985018),
     T = n(696952),
-    E = n(130324),
-    S = n(966040);
+    S = n(130324),
+    E = n(966040);
 let b = (0, c.t_)(m.X.OVERLAY_PANEL, {
         useTitle: () => f.intl.string(f.t["9cb1Uz"]),
         decoration: {
@@ -35,7 +35,7 @@ let b = (0, c.t_)(m.X.OVERLAY_PANEL, {
                         className: T.xC,
                         children: [(0, i.jsx)("div", {
                             children: (0, i.jsx)("img", {
-                                src: E.A,
+                                src: S.A,
                                 alt: f.intl.string(f.t.mdXZh1),
                                 className: T.tl
                             })
@@ -54,7 +54,7 @@ let b = (0, c.t_)(m.X.OVERLAY_PANEL, {
                             })
                         }), (0, i.jsx)("div", {
                             children: (0, i.jsx)("img", {
-                                src: S.A,
+                                src: E.A,
                                 alt: f.intl.string(f.t.mdXZh1),
                                 className: T.lh
                             })
@@ -73,11 +73,11 @@ let b = (0, c.t_)(m.X.OVERLAY_PANEL, {
                 })
             }
         },
-        buildLayout: () => [_.u, x.X, h.D, A.h]
+        buildLayout: () => [g.u, x.X, h.D, A.h]
     }),
     C = (0, c.i4)(m.X.OVERLAY_SIDEBAR_ITEM, {
         useTitle: () => f.intl.string(f.t["9cb1Uz"]),
         icon: l.WindowTopOutlineIcon,
-        usePredicate: g.b_,
+        usePredicate: _.b_,
         buildLayout: () => [b]
     })

@@ -13,8 +13,8 @@ var i = n(627968),
     c = n(430452),
     u = n(975571),
     m = n(942405),
-    g = n(652215),
-    _ = n(985018),
+    _ = n(652215),
+    g = n(985018),
     x = n(726097);
 
 function A(e) {
@@ -52,7 +52,7 @@ function h(e) {
         } = (0, o.A)();
     null == n || n.elevated || (n = void 0, i = void 0);
     let s = (0, m.NP)(),
-        l = s && null != n && t === g.TBI.PUSH_TO_TALK;
+        l = s && null != n && t === _.TBI.PUSH_TO_TALK;
     return {
         canPrompt: "voice" === e ? l : s,
         runningGame: n,
@@ -79,18 +79,18 @@ function p(e) {
             children: [(0, i.jsx)(r.Text, {
                 variant: "text-sm/medium",
                 color: "text-strong",
-                children: "voice" === n ? _.intl.string(_.t.vxfv7v) : null != a ? _.intl.string(_.t.fAYU2G) : _.intl.string(_.t["9V4X/c"])
+                children: "voice" === n ? g.intl.string(g.t.vxfv7v) : null != a ? g.intl.string(g.t.fAYU2G) : g.intl.string(g.t["9V4X/c"])
             }), (0, i.jsx)(r.Text, {
                 variant: "text-xs/medium",
                 color: "text-muted",
-                children: _.intl.format(_.t["/y6htt"], {
-                    helpCenterLink: u.A.getArticleURL(g.MVz.SYSTEM_SERVICE)
+                children: g.intl.format(g.t["/y6htt"], {
+                    helpCenterLink: u.A.getArticleURL(_.MVz.SYSTEM_SERVICE)
                 })
             })]
         }), (0, i.jsx)(r.Button, {
             variant: "secondary",
             size: "sm",
-            text: _.intl.string(_.t["1iI46O"]),
+            text: g.intl.string(g.t["1iI46O"]),
             onClick: function() {
                 (0, m.sL)(n + (null != a ? "-with-game" : "-no-game"))
             }

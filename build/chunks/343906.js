@@ -13,20 +13,20 @@ var i = n(627968),
     c = n(843282),
     u = n(397927),
     m = n(954571),
-    g = n(661191),
-    _ = n(695515),
+    _ = n(661191),
+    g = n(695515),
     x = n(923531),
     A = n(294433),
     h = n(10005),
     p = n(400641),
     f = n(438732),
     T = n(500470),
-    E = n(153739),
-    S = n(834981),
+    S = n(153739),
+    E = n(834981),
     b = n(607822),
     C = n(254847),
-    N = n(436805),
-    v = n(773349),
+    v = n(436805),
+    N = n(773349),
     I = n(283900),
     j = n(475833),
     y = n(469696),
@@ -72,8 +72,8 @@ function k(e) {
         isMoreLoading: A
     } = (0, h.A)({
         onError: n
-    }), T = (0, x.kN)().get(t), [E, S] = s.useState(R.PH), b = s.useCallback(() => {
-        S(e => e + R.PH), m(t)
+    }), T = (0, x.kN)().get(t), [S, E] = s.useState(R.PH), b = s.useCallback(() => {
+        E(e => e + R.PH), m(t)
     }, [t, m]);
     o()(T, `No text for action type: ${t}`);
     let I = t === R.NV.PURCHASES && null != c ? T.sectionHeader(c) : T.sectionHeader(d),
@@ -82,9 +82,9 @@ function k(e) {
                 row: t
             } = e, n = r[t];
             if ((0, x.aq)(n)) {
-                let e = g.default.extractTimestamp(n.event_id),
+                let e = _.default.extractTimestamp(n.event_id),
                     t = (0, x.i6)(e, T.timestampFormatter);
-                return (0, i.jsx)(v.A, {
+                return (0, i.jsx)(N.A, {
                     userId: n.entity_id,
                     subText: t
                 }, n.event_id)
@@ -93,8 +93,8 @@ function k(e) {
                 guildId: n.entity_id
             }, n.event_id);
             if ((0, x.u7)(n)) {
-                let e = _.A.getPurchaseInfo(n.entity_id);
-                return null == e ? null : (0, i.jsx)(N.A, {
+                let e = g.A.getPurchaseInfo(n.entity_id);
+                return null == e ? null : (0, i.jsx)(v.A, {
                     skuId: e.sku_id,
                     subscriptionPlanId: e.subscription_plan_id,
                     total: e.total,
@@ -116,7 +116,7 @@ function k(e) {
             }) : null]
         }), [I, T, l]);
     if (0 === r.length) return null;
-    let O = r.slice(0, E);
+    let O = r.slice(0, S);
     return (0, i.jsxs)("div", {
         className: G.A2,
         children: [y(), (0, i.jsx)("div", {
@@ -149,12 +149,12 @@ function k(e) {
 }
 let w = () => {
         let e = (0, f.A)(),
-            t = (0, S.vx)(),
+            t = (0, E.vx)(),
             n = (0, A.y)(D.intl.formatToPlainString(P.default["7hqFl9"], {
                 activeLinks: t.length
             }), D.intl.string(P.default["Q/D/0Q"])),
             s = (0, x.cV)(!!e),
-            l = (0, S.v4)(s);
+            l = (0, E.v4)(s);
         return e && t.length > 1 ? (0, i.jsx)(u.Text, {
             variant: "eyebrow",
             children: l
@@ -175,7 +175,7 @@ let w = () => {
             subText: n,
             avatarSize: s = u._3J.SIZE_40,
             hideUserTag: l = !1
-        } = e, a = (0, E.F7)(t);
+        } = e, a = (0, S.F7)(t);
         return void 0 === a ? null : (0, i.jsxs)("div", {
             className: G.iO,
             children: [(0, i.jsx)(I.H, {
@@ -196,8 +196,8 @@ let w = () => {
     });
 V.displayName = "FamilyCenterActivityCardAccountRow";
 let B = () => {
-        let e = (0, S.GR)(),
-            t = (0, d.bG)([_.A], () => _.A.getSelectedTeenId()),
+        let e = (0, E.GR)(),
+            t = (0, d.bG)([g.A], () => g.A.getSelectedTeenId()),
             {
                 selectTeenUser: n
             } = (0, h.A)({}),
@@ -230,9 +230,9 @@ let B = () => {
     F = () => {
         let e = (0, T.k)(),
             t = (0, f.A)(),
-            n = (0, S.vx)(),
+            n = (0, E.vx)(),
             s = (0, x.cV)(!!t),
-            l = (0, S.v4)(s);
+            l = (0, E.v4)(s);
         return null === e ? null : t && 1 !== n.length ? (0, i.jsx)(B, {}) : (0, i.jsx)(V, {
             userId: e,
             subText: l
@@ -242,7 +242,7 @@ let B = () => {
         let e = (0, x.Mo)(),
             t = (0, p.lI)(),
             n = (0, x.jp)(),
-            s = (0, S.v4)(n);
+            s = (0, E.v4)(n);
         return (0, i.jsxs)("div", {
             className: G.kL,
             children: [(0, i.jsxs)("div", {

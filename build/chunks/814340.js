@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(390435),
     A = n(775121),
     m = n(629357),
-    _ = n(599677),
-    p = n(12351),
+    p = n(599677),
+    _ = n(12351),
     g = n(915089),
     f = n(734057),
     x = n(458294),
@@ -420,7 +420,7 @@ class F extends s.PureComponent {
             selectedIndex: s
         } = this.props, {
             showScores: l
-        } = _.A.getCurrentConfig({
+        } = p.A.getCurrentConfig({
             location: "62f4be_1"
         }, {
             autoTrackExposure: !1
@@ -522,11 +522,11 @@ class F extends s.PureComponent {
         }
     };
     renderProtip() {
-        return (0, i.jsx)(p.A, {
+        return (0, i.jsx)(_.A, {
             className: a()(D.PP, {
                 [D.ov]: this.state.query.length > 0
             }),
-            type: p.A.Types.INLINE,
+            type: _.A.Types.INLINE,
             children: M.intl.format(M.t.wukqXQ, {
                 userSymbolHook: (e, t) => H(t, m.AT.USER, M.intl.string(M.t.GQRCGn)),
                 textChannelSymbolHook: (e, t) => H(t, m.AT.TEXT_CHANNEL, M.intl.string(M.t.wrwhuZ)),

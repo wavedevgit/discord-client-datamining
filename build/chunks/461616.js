@@ -1,6 +1,6 @@
 /** chunk id: 461616 params = (module,exports,require) **/
 n.d(t, {
-    F: () => g
+    F: () => _
 });
 var i = n(627968),
     s = n(158954),
@@ -12,7 +12,7 @@ var i = n(627968),
     c = n(780964),
     u = n(840065),
     m = n(985018);
-let g = (0, r.zD)(c.X.APPEARANCE_DISPLAY_COMPACT_AVATARS, {
+let _ = (0, r.zD)(c.X.APPEARANCE_DISPLAY_COMPACT_AVATARS, {
     useTitle: () => m.intl.string(m.t.JgjNG3),
     useSubtitle: () => {
         if (!d.hH.useSetting()) return m.intl.format(m.t["31PRaj"], {

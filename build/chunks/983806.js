@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(809697),
     u = n(153739),
     m = n(834981),
-    g = n(343906),
-    _ = n(191627),
+    _ = n(343906),
+    g = n(191627),
     x = n(842130),
     A = n(985018),
     h = n(377148);
@@ -27,7 +27,7 @@ let p = () => {
                 label: e,
                 value: e
             })),
-            c = s.useCallback(e => (0, i.jsx)(g.O, {
+            c = s.useCallback(e => (0, i.jsx)(_.O, {
                 userId: e.value,
                 avatarSize: o._3J.SIZE_24,
                 hideUserTag: !0
@@ -49,7 +49,7 @@ let p = () => {
                 isSelected: e => e === t?.id,
                 options: l,
                 "data-migration-pending": !0
-            }) : (0, i.jsx)(g.O, {
+            }) : (0, i.jsx)(_.O, {
                 userId: e[0],
                 avatarSize: o._3J.SIZE_24,
                 hideUserTag: !0
@@ -61,7 +61,7 @@ let p = () => {
             selectedTab: e,
             handleTabChange: t
         } = (0, c.A)(), n = s.useCallback(() => {
-            t(_.u9.ACTIVITY)
+            t(g.u9.ACTIVITY)
         }, [t]);
         return (0, i.jsxs)(o.BJc, {
             gap: 32,
@@ -91,7 +91,7 @@ let p = () => {
                     }), (0, i.jsx)(o.Heading, {
                         variant: "heading-xl/semibold",
                         color: "text-strong",
-                        children: A.intl.string(e === _.u9.CONTENT_AND_SOCIAL ? A.t["+o1pDZ"] : A.t.OAuOHD)
+                        children: A.intl.string(e === g.u9.CONTENT_AND_SOCIAL ? A.t["+o1pDZ"] : A.t.OAuOHD)
                     })]
                 }), (0, i.jsx)(p, {})]
             })]

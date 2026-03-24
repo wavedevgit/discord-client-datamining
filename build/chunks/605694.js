@@ -26,14 +26,14 @@ var i = n(627968),
     T = n(371068),
     b = n(61266),
     N = n(731068),
-    y = n(619517),
-    S = n(339580),
+    S = n(619517),
+    y = n(339580),
     C = n(961350),
     R = n(760751),
     k = n(403362),
-    w = n(183555),
-    L = n(622543),
-    O = n(466853),
+    L = n(183555),
+    O = n(622543),
+    w = n(466853),
     D = n(985018),
     P = n(442716);
 let G = /{{(.*?)}}/g,
@@ -292,7 +292,7 @@ function H(e) {
             })]
         }), (0, h.c)(l) ? (0, i.jsx)("div", {
             className: P.Xr,
-            children: (0, i.jsx)(y.Ay, {
+            children: (0, i.jsx)(S.Ay, {
                 src: l.proxyUrl,
                 alt: "",
                 width: l.width,
@@ -355,7 +355,7 @@ function z(e) {
     } = e, a = (0, E.X)(), r = (0, h.c)(n) ? (0, i.jsx)("div", {
         className: s()(P.Sl, a.className),
         "data-position": l,
-        children: (0, i.jsx)(y.Ay, {
+        children: (0, i.jsx)(S.Ay, {
             src: n.proxyUrl,
             alt: "",
             width: n.width,
@@ -473,12 +473,12 @@ let Q = Object.assign(function(e) {
     var t, n;
     let a, r, g, h, j, {
             trackUserProfileAction: v
-        } = (0, w.NJ)(),
+        } = (0, L.NJ)(),
         {
             user: E,
             widget: T,
             cta: b,
-            subtle: y = !1
+            subtle: S = !1
         } = e,
         G = (0, c.bG)([C.default], () => C.default.getId()) === E.id,
         F = (0, _.h)(T.applicationId),
@@ -539,7 +539,7 @@ let Q = Object.assign(function(e) {
             isLoading: ea,
             hasData: es,
             components: er
-        } = (t = E.id, n = T.applicationId, a = (0, f.A)(), r = (0, c.bG)([S.A], () => S.A.getUserIdentityByApplication(t, n)), g = (0, c.bG)([L.A], () => L.A.getApplicationWidgetConfig(n)), h = (0, c.bG)([S.A, L.A], () => null == S.A.getUserIdentities(t) || null == L.A.applicationWidgetConfigs), j = l.useMemo(() => {
+        } = (t = E.id, n = T.applicationId, a = (0, f.A)(), r = (0, c.bG)([y.A], () => y.A.getUserIdentityByApplication(t, n)), g = (0, c.bG)([O.A], () => O.A.getApplicationWidgetConfig(n)), h = (0, c.bG)([y.A, O.A], () => null == y.A.getUserIdentities(t) || null == O.A.applicationWidgetConfigs), j = l.useMemo(() => {
             var e, t;
             if (null == g) return null;
             let n = M[g.widgetTemplateId];
@@ -613,11 +613,11 @@ let Q = Object.assign(function(e) {
             hasData: null != r,
             components: j
         });
-    return null == er ? null : (0, i.jsxs)(O.A, {
+    return null == er ? null : (0, i.jsxs)(w.A, {
         ...e,
         userId: E.id,
         widget: T,
-        className: s()(P.Y5, y && P.aK),
+        className: s()(P.Y5, S && P.aK),
         headerTitle: el,
         headerClassName: P.wx,
         additionalManageWidgetMenuItems: null != H ? (0, i.jsx)(u.Drp, {

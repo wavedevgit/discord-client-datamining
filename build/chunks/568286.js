@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(793574),
     u = n(688810),
     m = n(915089),
-    g = n(250253),
-    _ = n(2242),
+    _ = n(250253),
+    g = n(2242),
     x = n(985018),
     A = n(289324);
 let h = e => {
@@ -26,8 +26,8 @@ let h = e => {
         } = e, f = (0, m.GV)(), {
             analyticsLocations: T
         } = (0, u.Ay)(c.A.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL), {
-            cancelSubscription: E,
-            error: S,
+            cancelSubscription: S,
+            error: E,
             submitting: b
         } = (e => {
             let [t, n] = s.useState(!1), [i, l] = s.useState(null);
@@ -45,10 +45,10 @@ let h = e => {
                 submitting: t
             }
         })(T), C = async () => {
-            await E(h.id) && p()
-        }, N = l.role_benefits.benefits.filter(e => e.ref_type === _.bN.CHANNEL), v = l.role_benefits.benefits.filter(e => e.ref_type === _.bN.INTANGIBLE), I = a()(h.currentPeriodEnd).format("MMMM Do, YYYY"), j = x.intl.formatToPlainString(x.t.KsMRP5, {
-            numChannels: N.length,
-            numAdditionalBenefits: v.length,
+            await S(h.id) && p()
+        }, v = l.role_benefits.benefits.filter(e => e.ref_type === g.bN.CHANNEL), N = l.role_benefits.benefits.filter(e => e.ref_type === g.bN.INTANGIBLE), I = a()(h.currentPeriodEnd).format("MMMM Do, YYYY"), j = x.intl.formatToPlainString(x.t.KsMRP5, {
+            numChannels: v.length,
+            numAdditionalBenefits: N.length,
             subscriptionEndDate: I
         });
         return (0, i.jsx)(r.Modal, {
@@ -69,10 +69,10 @@ let h = e => {
             onClose: p,
             children: (0, i.jsxs)(o.BJc, {
                 gap: 8,
-                children: [null != S ? (0, i.jsx)(o.wx6, {
+                children: [null != E ? (0, i.jsx)(o.wx6, {
                     type: "critical",
-                    children: S.message
-                }) : null, (0, i.jsx)(g.x, {
+                    children: E.message
+                }) : null, (0, i.jsx)(_.x, {
                     listingId: l.id,
                     guildId: n.guild_id,
                     className: A.P

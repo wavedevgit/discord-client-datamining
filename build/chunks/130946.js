@@ -13,21 +13,21 @@ var l = n(503698),
     c = n(793574),
     u = n(311364),
     m = n(975571),
-    g = n(40185),
-    _ = n(396375),
+    _ = n(40185),
+    g = n(396375),
     x = n(788868),
     A = n(652215),
     h = n(985018),
     p = n(816128),
     f = n(137815),
     T = n(967521),
-    E = n(767032),
-    S = n(990521),
+    S = n(767032),
+    E = n(990521),
     b = ((i = {}).SUBSCRIBER_HOME = "SUBSCRIBER_HOME", i.NITRO_SETTINGS = "SETTINGS", i.APPLICATION_NITRO_HOME = "APPLICATION_NITRO_HOME", i);
 let C = function(e) {
     let {
         variant: t
-    } = e, n = (0, g.cg)(), i = (0, d.Ay)(), l = (0, o.Mwr)(i) ? r.XD.BRAND_INVERTED : r.XD.BRAND;
+    } = e, n = (0, _.cg)(), i = (0, d.Ay)(), l = (0, o.Mwr)(i) ? r.XD.BRAND_INVERTED : r.XD.BRAND;
     return n ? "APPLICATION_NITRO_HOME" === t ? (0, s.jsx)(() => (0, s.jsx)(u.Y, {
         newLocations: [c.A.PREMIUM_MARKETING_PAGE_BANNER],
         children: (0, s.jsxs)("div", {
@@ -58,7 +58,7 @@ let C = function(e) {
                     children: h.intl.format(h.t["lVOH/p"], {
                         helpCenterLink: m.A.getArticleURL(A.MVz.SUMMER_BOGO_2025)
                     })
-                }), (0, s.jsx)(_.A, {
+                }), (0, s.jsx)(g.A, {
                     textOptions: {
                         textOverride: h.intl.string(h.t.J61px0),
                         textClassName: p.cZ
@@ -85,7 +85,7 @@ let C = function(e) {
                 className: p.V9,
                 children: (0, s.jsx)("img", {
                     alt: "",
-                    src: E.A,
+                    src: S.A,
                     className: p.$V
                 })
             }), (0, s.jsxs)("div", {
@@ -102,7 +102,7 @@ let C = function(e) {
                     children: h.intl.format(h.t["lVOH/p"], {
                         helpCenterLink: m.A.getArticleURL(A.MVz.SUMMER_BOGO_2025)
                     })
-                }), (0, s.jsx)(_.A, {
+                }), (0, s.jsx)(g.A, {
                     textOptions: {
                         textOverride: h.intl.string(h.t.J61px0),
                         textClassName: p.cZ
@@ -116,7 +116,7 @@ let C = function(e) {
                 className: p.m0,
                 children: (0, s.jsx)("img", {
                     alt: "",
-                    src: S.A,
+                    src: E.A,
                     className: p.$V
                 })
             })]
@@ -145,7 +145,7 @@ let C = function(e) {
                     helpCenterLink: m.A.getArticleURL(A.MVz.SUMMER_BOGO_2025)
                 })
             })]
-        }), (0, s.jsx)(_.A, {
+        }), (0, s.jsx)(g.A, {
             subscriptionTier: x.pe.TIER_2,
             showIcon: !0,
             shinyButtonClassName: p.Xp,

@@ -1,36 +1,36 @@
 /** chunk id: 131575 params = (module,exports,require) **/
 "use strict";
-n.d(t, {
+i.d(t, {
     A: () => c
 });
-var i = n(627968);
-n(64700);
-var s = n(503698),
-    l = n.n(s),
-    a = n(328913),
-    r = n(407195),
-    o = n(855790),
-    d = n(594479);
+var n = i(627968);
+i(64700);
+var s = i(503698),
+    a = i.n(s),
+    l = i(328913),
+    r = i(407195),
+    o = i(855790),
+    d = i(594479);
 
 function c(e) {
     let {
         dragStart: t,
-        dragging: n,
+        dragging: i,
         pinned: s,
         locked: c,
         className: u
     } = e;
-    return (0, i.jsxs)(o.Ay, {
-        className: l()(d.i, u),
-        children: [(0, i.jsx)(a.A, {
+    return (0, n.jsxs)(o.Ay, {
+        className: a()(d.i, u),
+        children: [(0, n.jsx)(l.A, {
             contained: !0,
             dragStart: t,
             locked: c
-        }), (0, i.jsx)(r.A, {
+        }), (0, n.jsx)(r.A, {
             dragStart: t,
             locked: c,
             pinned: s,
-            dragging: n,
+            dragging: i,
             contained: !0
         })]
     })

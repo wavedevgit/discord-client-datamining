@@ -19,8 +19,8 @@ var i = n(627968),
     h = n(698441),
     A = n(855687),
     m = n(816662),
-    _ = n(446600),
-    p = n(728321),
+    p = n(446600),
+    _ = n(728321),
     g = n(95701),
     f = n(616356),
     x = n(71393),
@@ -74,7 +74,7 @@ function j(e) {
         tabIndex: u,
         forceShowButtons: m,
         hasChannelInfo: g = !1
-    } = e, E = (0, r.bG)([x.A], () => x.A.getGuild(t.getGuildId())), I = (0, r.bG)([_.A], () => _.A.getStageInstanceByChannel(t.id), [t.id]), T = (0, r.bG)([h.Ay], () => h.Ay.getActiveEventByChannel(t.id), [t.id]), v = (0, r.bG)([C.A], () => (0, A.K)(C.A, E, t, I)), y = (0, r.bG)([], () => t?.type === N.rbe.GUILD_VOICE ? b.intl.string(b.t["EE+P0H"]) : b.intl.string(b.t["0jeAXt"])), j = s.useRef(null);
+    } = e, E = (0, r.bG)([x.A], () => x.A.getGuild(t.getGuildId())), I = (0, r.bG)([p.A], () => p.A.getStageInstanceByChannel(t.id), [t.id]), T = (0, r.bG)([h.Ay], () => h.Ay.getActiveEventByChannel(t.id), [t.id]), v = (0, r.bG)([C.A], () => (0, A.K)(C.A, E, t, I)), y = (0, r.bG)([], () => t?.type === N.rbe.GUILD_VOICE ? b.intl.string(b.t["EE+P0H"]) : b.intl.string(b.t["0jeAXt"])), j = s.useRef(null);
     if (d || !v || t.isModeratorReportChannel() || t.isThread()) return null;
     let R = (0, i.jsx)(c.Rvf, {
         size: "xs",
@@ -82,7 +82,7 @@ function j(e) {
         "aria-hidden": !0,
         color: "currentColor"
     });
-    return l && (R = (0, i.jsx)(p.A, {
+    return l && (R = (0, i.jsx)(_.A, {
         childRef: j,
         tutorialId: "instant-invite",
         position: "left",

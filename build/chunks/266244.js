@@ -1,48 +1,48 @@
 /** chunk id: 266244 params = (module,exports,require) **/
 "use strict";
-n.d(t, {
-    A: () => g
+i.d(t, {
+    A: () => m
 });
-var i = n(627968),
-    s = n(64700),
-    l = n(311907),
-    a = n(828100),
-    r = n(355205),
-    o = n(793322),
-    d = n(366811),
-    c = n(256415),
-    u = n(9302),
-    h = n(652215),
-    p = n(985018),
-    A = n(165386);
+var n = i(627968),
+    s = i(64700),
+    a = i(311907),
+    l = i(828100),
+    r = i(355205),
+    o = i(793322),
+    d = i(366811),
+    c = i(256415),
+    u = i(9302),
+    h = i(652215),
+    _ = i(985018),
+    p = i(165386);
 let f = () => (0, o.WU)("DM_SEARCH"),
-    g = s.memo(function() {
-        let e = (0, l.bG)([c.default], () => c.default.isLocked((0, u.getPID)()) ? "true" : "false"),
+    m = s.memo(function() {
+        let e = (0, a.bG)([c.default], () => c.default.isLocked((0, u.getPID)()) ? "true" : "false"),
             t = (0, d.A)(e => {
                 let {
                     channelId: t
                 } = e;
                 return t
             });
-        return (0, i.jsxs)("div", {
-            className: A.AB,
-            children: [(0, i.jsx)("div", {
-                className: A.ON,
-                children: (0, i.jsx)("button", {
+        return (0, n.jsxs)("div", {
+            className: p.AB,
+            children: [(0, n.jsx)("div", {
+                className: p.ON,
+                children: (0, n.jsx)("button", {
                     type: "button",
-                    className: A.lU,
+                    className: p.lU,
                     onClick: f,
-                    children: p.intl.string(p.t.LzcpeZ)
+                    children: _.intl.string(_.t.LzcpeZ)
                 })
-            }), (0, i.jsx)(a.A, {
+            }), (0, n.jsx)(l.A, {
                 padding: 8,
                 theme: h.NJ8.DARK,
                 version: e,
                 selectedChannelId: t
-            }), (0, i.jsx)("section", {
-                className: A.C3,
-                "aria-label": p.intl.string(p.t.StREWK),
-                children: (0, i.jsx)(r.A, {
+            }), (0, n.jsx)("section", {
+                className: p.C3,
+                "aria-label": _.intl.string(_.t.StREWK),
+                children: (0, n.jsx)(r.A, {
                     guildId: null
                 })
             })]

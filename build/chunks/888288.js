@@ -1,162 +1,162 @@
 /** chunk id: 888288 params = (module,exports,require) **/
 "use strict";
-n.d(t, {
+i.d(t, {
     A: () => ee
-}), n(321073);
-var i = n(284009),
-    s = n.n(i),
-    l = n(835245),
-    a = n(311907),
-    r = n(118356),
-    o = n(73153),
-    d = n(684013),
-    c = n(504139),
-    u = n(175333),
-    h = n(242363),
-    p = n(729843),
-    A = n(996797),
-    f = n(942236),
-    g = n(102037),
-    _ = n(274372),
-    m = n(747189),
-    x = n(742984),
-    E = n(833551),
-    y = n(592598),
-    v = n(253932),
-    S = n(164891),
-    C = n(961350),
-    I = n(734057),
-    N = n(803224),
-    T = n(290863),
-    O = n(309010),
-    b = n(461213),
-    j = n(351906),
-    D = n(287809),
-    R = n(845618),
-    w = n(242286),
-    L = n(256415),
-    k = n(927813),
-    M = n(9302),
-    P = n(157257),
-    G = n(652215),
-    V = n(672396),
-    U = n(985018);
+}), i(321073);
+var n = i(284009),
+    s = i.n(n),
+    a = i(835245),
+    l = i(311907),
+    r = i(118356),
+    o = i(73153),
+    d = i(684013),
+    c = i(504139),
+    u = i(175333),
+    h = i(242363),
+    _ = i(729843),
+    p = i(996797),
+    f = i(942236),
+    m = i(102037),
+    g = i(274372),
+    A = i(747189),
+    x = i(742984),
+    v = i(833551),
+    y = i(592598),
+    E = i(253932),
+    I = i(164891),
+    S = i(961350),
+    C = i(734057),
+    N = i(803224),
+    b = i(290863),
+    T = i(309010),
+    O = i(461213),
+    L = i(351906),
+    j = i(287809),
+    w = i(845618),
+    D = i(242286),
+    R = i(256415),
+    k = i(927813),
+    M = i(9302),
+    P = i(157257),
+    G = i(652215),
+    V = i(672396),
+    U = i(985018);
 let z = new r.Vy("LegacyOverlayNotificationsStore"),
     H = 5 * k.A.Millis.SECOND,
     W = 8 * k.A.Millis.SECOND,
-    K = 30 * k.A.Millis.SECOND,
-    B = Object.freeze({
+    B = 30 * k.A.Millis.SECOND,
+    F = Object.freeze({
         priority: 0,
         duration: H,
         expirationExternallyManaged: !1,
         type: 0
     }),
-    F = [],
-    Y = (e, t, n) => {
-        let i = t ? G.yFH.TIMED_OUT : G.yFH.DISMISSED;
-        return setTimeout(() => d.A.updateNotificationStatus(e, i), null != n ? n : H)
+    K = [],
+    Y = (e, t, i) => {
+        let n = t ? G.yFH.TIMED_OUT : G.yFH.DISMISSED;
+        return setTimeout(() => d.A.updateNotificationStatus(e, n), null != i ? i : H)
     };
 
 function Z(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : G.yFH.DISMISSED;
     if (null == e) return !1;
-    let n = F.findIndex(t => t.id === e);
-    if (-1 === n) return !1;
-    let i = F[n];
-    clearTimeout(i.timerId), F = [...F], t === G.yFH.DISMISSED ? F.splice(n, 1) : F[n] = {
-        ...i,
+    let i = K.findIndex(t => t.id === e);
+    if (-1 === i) return !1;
+    let n = K[i];
+    clearTimeout(n.timerId), K = [...K], t === G.yFH.DISMISSED ? K.splice(i, 1) : K[i] = {
+        ...n,
         status: t
     }
 }
 
-function J(e) {
-    let t = F.length;
-    return (F = F.filter(t => 1 !== t.type || t.channelId !== e)).length !== t
+function X(e) {
+    let t = K.length;
+    return (K = K.filter(t => 1 !== t.type || t.channelId !== e)).length !== t
 }
 
-function X(e) {
-    let t = F.find(t => 2 === t.type && t.channelId === e);
+function J(e) {
+    let t = K.find(t => 2 === t.type && t.channelId === e);
     return null != t ? t.id : null
 }
 
 function Q(e, t) {
-    let n = {
-        ...B,
+    let i = {
+        ...F,
         ...t
     };
-    if (2 !== n.priority && !L.default.isInstanceFocused()) return null;
-    let i = (0, l.A)(),
+    if (2 !== i.priority && !R.default.isInstanceFocused()) return null;
+    let n = (0, a.A)(),
         s = {
-            id: i,
+            id: n,
             status: G.yFH.ACTIVE,
-            timerId: Y(i, n.expirationExternallyManaged, n.duration),
+            timerId: Y(n, i.expirationExternallyManaged, i.duration),
             props: e,
-            ...n
+            ...i
         },
-        a = (F = [...F]).findIndex(e => e.priority <= n.priority);
-    return -1 === a ? F.push(s) : F.splice(a, 0, s), F.length > 10 && clearTimeout(F.pop().timerId), i
+        l = (K = [...K]).findIndex(e => e.priority <= i.priority);
+    return -1 === l ? K.push(s) : K.splice(l, 0, s), K.length > 10 && clearTimeout(K.pop().timerId), n
 }
 
 function q(e) {
     let {
         channelId: t,
-        ongoingRings: n
-    } = e, i = X(t);
-    if (!Object.keys(n).includes(C.default.getId())) return Z(i);
-    if (null != i) return !1;
-    let s = I.A.getChannel(t);
-    if (null == s || !s.isRingable() || "GUILD_RING_START" === e.type && !S.A.getCurrentConfig({
+        ongoingRings: i
+    } = e, n = J(t);
+    if (!Object.keys(i).includes(S.default.getId())) return Z(n);
+    if (null != n) return !1;
+    let s = C.A.getChannel(t);
+    if (null == s || !s.isRingable() || "GUILD_RING_START" === e.type && !I.A.getCurrentConfig({
             guildId: e.guildId,
             location: "OverlayStartRinging"
-        }).enabled || b.A.getStatus() === G.clD.DND || v.NO.getSetting()) return !1;
-    let l = F.find(e => 1 === e.type && e.channelId === t && e.messageType === G.lAJ.CALL);
-    null != l && Z(l.id), Q((0, p.A)(s), {
+        }).enabled || O.A.getStatus() === G.clD.DND || E.NO.getSetting()) return !1;
+    let a = K.find(e => 1 === e.type && e.channelId === t && e.messageType === G.lAJ.CALL);
+    null != a && Z(a.id), Q((0, _.A)(s), {
         priority: 1,
         expirationExternallyManaged: !0,
         type: 2,
         channelId: s.id
     })
 }
-class $ extends a.Ay.Store {
+class $ extends l.Ay.Store {
     static displayName = "OverlayNotificationsStore";
     initialize() {
-        this.waitFor(C.default, I.A, _.A, N.A, w.default, E.default, P.A, y.A, L.default, T.A, O.A, b.A, j.A, D.default)
+        this.waitFor(S.default, C.A, g.A, N.A, D.default, v.default, P.A, y.A, R.default, b.A, T.A, O.A, L.A, j.default)
     }
     getNotifications() {
-        return F
+        return K
     }
 }
 let ee = new $(o.h, !__OVERLAY__ ? {} : {
     OVERLAY_UPDATE_NOTIFICATION_STATUS: function(e) {
         let {
             notificationId: t,
-            status: n
+            status: i
         } = e;
-        Z(t, n)
+        Z(t, i)
     },
     OVERLAY_MOUNTED: function(e) {
         let {
             nudges: t
         } = e;
-        if (E.default.hasChangedRenderMode(w.default.getFocusedPID() ?? (0, M.getPID)())) return void z.info("Overlay mounted, but render modes have changed", {
+        if (v.default.hasChangedRenderMode(D.default.getFocusedPID() ?? (0, M.getPID)())) return void z.info("Overlay mounted, but render modes have changed", {
             nudges: t
         });
-        let n = t[0];
+        let i = t[0];
         if (z.info("Overlay mounted", {
                 nudges: t,
-                selectedNudge: n
-            }), null == n) return;
-        let i = function(e) {
+                selectedNudge: i
+            }), null == i) return;
+        let n = function(e) {
             switch (e.type) {
                 case V.Jr.GO_LIVE_VOICE:
                 case V.Jr.GO_LIVE_NON_VOICE:
                     return (0, h.A)(e);
                 case V.Jr.NEWS:
                 default:
-                    return (0, g.A)(e)
+                    return (0, m.A)(e)
             }
-        }(n);
-        null != i && Q(i, {
+        }(i);
+        null != n && Q(n, {
             priority: 2,
             duration: W
         })
@@ -166,7 +166,7 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
             locked: t
         } = e;
         if (t) return !1;
-        F = F.map(e => e.status === G.yFH.ACTIVE ? (clearTimeout(e.timerId), {
+        K = K.map(e => e.status === G.yFH.ACTIVE ? (clearTimeout(e.timerId), {
             ...e,
             timerId: Y(e.id, e.expirationExternallyManaged)
         }) : e)
@@ -174,54 +174,54 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
     MESSAGE_CREATE: function(e) {
         let {
             channelId: t,
-            message: n
-        } = e, i = I.A.getChannel(t), l = D.default.getUser(n.author?.id);
-        if (null == i || null == l) return !1;
-        if (n.activity?.type === G.xL.JOIN || n.activity?.type === G.xL.JOIN_REQUEST) {
-            if (!(0, x.lx)(n, t, !0, !0)) return !1;
-            let e = function(e, t, n) {
-                let i, l;
-                if (s()(null != t.activity, "received null message activity"), n.id === C.default.getId()) return !1;
-                let a = P.A.getGame();
-                if (null == a) return !1;
+            message: i
+        } = e, n = C.A.getChannel(t), a = j.default.getUser(i.author?.id);
+        if (null == n || null == a) return !1;
+        if (i.activity?.type === G.xL.JOIN || i.activity?.type === G.xL.JOIN_REQUEST) {
+            if (!(0, x.lx)(i, t, !0, !0)) return !1;
+            let e = function(e, t, i) {
+                let n, a;
+                if (s()(null != t.activity, "received null message activity"), i.id === S.default.getId()) return !1;
+                let l = P.A.getGame();
+                if (null == l) return !1;
                 switch (t.activity.type) {
                     case G.xL.JOIN:
-                        if (null == (i = T.A.getApplicationActivity(n.id, a.id)) || null == i.party || i.party.id !== t.activity.party_id) return !1;
-                        l = (0, c.A)(e, t, n, a, i);
+                        if (null == (n = b.A.getApplicationActivity(i.id, l.id)) || null == n.party || n.party.id !== t.activity.party_id) return !1;
+                        a = (0, c.A)(e, t, i, l, n);
                         break;
                     case G.xL.JOIN_REQUEST:
-                        if (null == (i = b.A.getApplicationActivity(a.id)) || null == i.party || i.party.id !== t.activity.party_id) return !1;
-                        l = (0, A.A)(e, n, a, i)
+                        if (null == (n = O.A.getApplicationActivity(l.id)) || null == n.party || n.party.id !== t.activity.party_id) return !1;
+                        a = (0, p.A)(e, i, l, n)
                 }
-                if (null == l) return !1;
-                let r = Q(l, {
+                if (null == a) return !1;
+                let r = Q(a, {
                     priority: 2,
                     expirationExternallyManaged: !0,
                     channelId: e.id
                 });
-                return null != r && Y(r, !1, K), !0
-            }(i, n, l);
+                return null != r && Y(r, !1, B), !0
+            }(n, i, a);
             if (!1 !== e) return e
         }
-        if ((!L.default.isInstanceLocked() || L.default.isPinned(G.uss.TEXT)) && t === O.A.getChannelId() || y.A.isNotificationDisabled(V.KS.TextChat) || j.A.disableNotifications || !(0, x.lx)(n, t)) return !1;
-        let a = !N.A.isSoundDisabled(R.cH);
-        Q((0, f.A)(i, n, l, a), {
+        if ((!R.default.isInstanceLocked() || R.default.isPinned(G.uss.TEXT)) && t === T.A.getChannelId() || y.A.isNotificationDisabled(V.KS.TextChat) || L.A.disableNotifications || !(0, x.lx)(i, t)) return !1;
+        let l = !N.A.isSoundDisabled(w.cH);
+        Q((0, f.A)(n, i, a, l), {
             type: 1,
-            channelId: i.id,
-            messageType: n.type
+            channelId: n.id,
+            messageType: i.type
         })
     },
     CHANNEL_SELECT: function(e) {
         let {
             channelId: t
         } = e;
-        return null != t && J(t)
+        return null != t && X(t)
     },
     MESSAGE_ACK: function(e) {
         let {
             channelId: t
         } = e;
-        return J(t)
+        return X(t)
     },
     CALL_CREATE: q,
     CALL_UPDATE: q,
@@ -229,41 +229,41 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
         let {
             channelId: t
         } = e;
-        Z(X(t))
+        Z(J(t))
     },
     GUILD_RING_START: q,
     GUILD_RING_STOP: function(e) {
         let {
             channelId: t,
-            guildId: n,
-            ringing: i
+            guildId: i,
+            ringing: n
         } = e;
-        if (!S.A.getCurrentConfig({
-                guildId: n,
+        if (!I.A.getCurrentConfig({
+                guildId: i,
                 location: "OverlayStopRinging"
             }).enabled) return !1;
-        i.includes(C.default.getId()) && Z(X(t))
+        n.includes(S.default.getId()) && Z(J(t))
     },
     ACTIVITY_USER_ACTION: function(e) {
         let t, {
-                actionType: n,
-                user: i,
+                actionType: i,
+                user: n,
                 applicationId: s
             } = e,
-            l = P.A.getGame();
-        return null != l && l.id === s && (n === G.xL.JOIN && (t = (0, u.A)(i, l)), null != t && void Q(t, {
+            a = P.A.getGame();
+        return null != a && a.id === s && (i === G.xL.JOIN && (t = (0, u.A)(n, a)), null != t && void Q(t, {
             priority: 2,
             type: 0
         }))
     },
     CLIPS_SAVE_CLIP_START: function(e) {
-        "manual" === e.clipMethod && Q((0, m.V)(U.intl.string(U.t.NBMK9m)))
+        "manual" === e.clipMethod && Q((0, A.V)(U.intl.string(U.t.NBMK9m)))
     },
     CLIPS_SAVE_CLIP_ERROR: function() {
-        Q((0, m.V)(U.intl.string(U.t["1ZbZuh"])))
+        Q((0, A.V)(U.intl.string(U.t["1ZbZuh"])))
     },
     STREAM_START: function(e) {
-        let t = (0, m.t)();
+        let t = (0, A.t)();
         null != t && Q(t)
     }
 })

@@ -1,11 +1,11 @@
 /** chunk id: 71071 params = (module,exports,require) **/
 "use strict";
-var i = n(627968),
-    s = n(136722),
-    l = n(397927),
-    a = n(73153),
-    r = n(488926);
-__OVERLAY__ && a.h.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) {
+var n = i(627968),
+    s = i(136722),
+    a = i(397927),
+    l = i(73153),
+    r = i(488926);
+__OVERLAY__ && l.h.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) {
     let {
         clientId: t,
         authorizeProps: {
@@ -17,32 +17,32 @@ __OVERLAY__ && a.h.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) 
 
     function h(e) {
         let {
-            location: n
+            location: i
         } = e;
-        a.h.dispatch({
+        l.h.dispatch({
             type: "OVERLAY_OAUTH2_AUTHORIZE_MODAL_CLOSE",
             clientId: t,
-            location: n
+            location: i
         })
     }
-    let p = r.x3;
+    let _ = r.x3;
     try {
-        p = s.iu(d ?? 0)
-    } catch (e) {}(0, l.mMO)(async () => {
+        _ = s.iu(d ?? 0)
+    } catch (e) {}(0, a.mMO)(async () => {
         let {
             OAuth2AuthorizeModal: e
-        } = await Promise.resolve().then(n.bind(n, 200330));
-        return t => (0, i.jsx)(e, {
+        } = await Promise.resolve().then(i.bind(i, 200330));
+        return t => (0, n.jsx)(e, {
             ...t,
             ...c,
             authorizations: new Map(o),
-            permissions: p,
+            permissions: _,
             callback: h
         })
     }, {
         modalKey: u,
         onCloseRequest: () => {
-            (0, l.OoC)(u), h({})
+            (0, a.OoC)(u), h({})
         }
     })
 })

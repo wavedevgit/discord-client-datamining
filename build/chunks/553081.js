@@ -12,20 +12,20 @@ var i = n(627968),
     c = n(397927),
     u = n(73153),
     m = n(793574),
-    g = n(688810),
-    _ = n(726649),
+    _ = n(688810),
+    g = n(726649),
     x = n(611924),
     A = n(961250),
     h = n(320118),
     p = n(622543),
     f = n(576622),
     T = n(166403),
-    E = n(954571),
-    S = n(131168),
+    S = n(954571),
+    E = n(131168),
     b = n(482589),
     C = n(511484),
-    N = n(568031),
-    v = n(518491),
+    v = n(568031),
+    N = n(518491),
     I = n(965591),
     j = n(495022),
     y = n(382694),
@@ -47,7 +47,7 @@ let U = e => {
         })
     }, [t]), s.useEffect(() => {
         K(!0)
-    }, []), (0, b.j)(), (0, x.P)(_.b);
+    }, []), (0, b.j)(), (0, x.P)(g.b);
     let l = s.useRef(null),
         U = s.useRef(null),
         k = (0, o.bG)([T.A], () => T.A.getPremiumTypeSubscription()),
@@ -78,9 +78,9 @@ let U = e => {
             } : {}
         }, [n.search]);
     (0, R.z)(F ?? "", null != F, z, Y);
-    let [X, K] = s.useState(!1), W = (0, S.p)(), Z = s.useRef(null), [q, Q] = s.useState(!1), J = null != W && null != k && k.status === P.Dmq.CANCELED, $ = (0, C.iU)(L.gD.PREMIUM_MONTH_TIER_2, W, k), ee = !q && J, {
+    let [X, K] = s.useState(!1), W = (0, E.p)(), Z = s.useRef(null), [q, Q] = s.useState(!1), J = null != W && null != k && k.status === P.Dmq.CANCELED, $ = (0, C.iU)(L.gD.PREMIUM_MONTH_TIER_2, W, k), ee = !q && J, {
         analyticsLocations: et
-    } = (0, g.Ay)(m.A.PREMIUM_SUBSCRIBER_NITRO_HOME), [en, ei] = s.useState(!1);
+    } = (0, _.Ay)(m.A.PREMIUM_SUBSCRIBER_NITRO_HOME), [en, ei] = s.useState(!1);
     return null != (0, o.bG)([p.A], () => null != t ? p.A.getUserProfile(t) : null) && (w || null != V) ? (0, i.jsxs)(c.GtU, {
         className: G.xW,
         ref: l,
@@ -88,14 +88,14 @@ let U = e => {
             color: "nitro-pink",
             className: a()(G.kL, G.Gd),
             offsetBottom: .8,
-            children: (0, i.jsxs)(g.f5, {
+            children: (0, i.jsxs)(_.f5, {
                 value: et,
                 children: [(0, i.jsx)(d.L, {
                     innerRef: Z,
                     onChange: e => Q(e),
                     threshold: .1,
                     active: !0,
-                    children: (0, i.jsx)(v.A, {
+                    children: (0, i.jsx)(N.A, {
                         buttonVisibilityRef: Z,
                         className: G.v1,
                         enablePremiumBrandRefresh: !0,
@@ -108,7 +108,7 @@ let U = e => {
                     location: m.A.PREMIUM_MARKETING_NITRO_HOME_ORBS_SECTION
                 }), (0, i.jsx)(j.A, {
                     glowingPerkId: H
-                }), (0, i.jsx)(N.A, {
+                }), (0, i.jsx)(v.A, {
                     className: G.Zy,
                     location: m.A.PREMIUM_MARKETING_GIFT_SECTION,
                     analyticsLocation: {
@@ -120,7 +120,7 @@ let U = e => {
                 }), (0, i.jsx)(d.L, {
                     innerRef: U,
                     onChange: e => {
-                        e && !en && (E.default.track(P.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                        e && !en && (S.default.track(P.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                             location_stack: et
                         }), ei(!0))
                     },

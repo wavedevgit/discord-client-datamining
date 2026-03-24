@@ -1,6 +1,6 @@
 /** chunk id: 767669 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -13,12 +13,12 @@ var i = n(627968),
     u = n(179690),
     m = n(985018);
 
-function g(e) {
+function _(e) {
     let {
         backupCodes: t,
         hasTOTPEnabled: n,
-        currentUser: g
-    } = e, _ = s.useCallback(e => {
+        currentUser: _
+    } = e, g = s.useCallback(e => {
         (0, l.qfG)(t => (0, i.jsx)(d.A, {
             ...t,
             password: e
@@ -29,12 +29,12 @@ function g(e) {
         (0, l.qfG)(e => (0, i.jsx)(c.default, {
             ...e,
             handleSubmit: e => a.A.sendMFABackupCodesVerificationKeyEmail(e).then(() => {
-                _(e)
+                g(e)
             }),
             title: m.intl.string(m.t.PsQmzU),
             actionText: m.intl.string(m.t.ajkYcF)
         }))
-    }, [_]), A = s.useCallback(() => {
+    }, [g]), A = s.useCallback(() => {
         let e = t.map(e => {
                 let {
                     consumed: t,
@@ -43,12 +43,12 @@ function g(e) {
                 return `* ${n.substr(0,4)}-${n.substr(4)} ${t?"(used)":""}`
             }).join("\r\n"),
             n = m.intl.formatToPlainString(m.t["uYWwh/"], {
-                email: g.email
+                email: _.email
             });
         return `${n}\r
 \r
 ${e}`
-    }, [t, g.email]), h = s.useMemo(() => t.length > 0 ? (0, i.jsx)(o.A, {
+    }, [t, _.email]), h = s.useMemo(() => t.length > 0 ? (0, i.jsx)(o.A, {
         fileContents: A,
         contentType: "text/plain",
         fileName: "discord_backup_codes.txt",

@@ -1,19 +1,19 @@
 /** chunk id: 806964 params = (module,exports,require) **/
 n.d(t, {
-    u: () => o
+    u: () => a
 });
 var i = n(951001),
-    r = n(265422),
-    a = n(383501),
+    l = n(265422),
+    r = n(383501),
     s = n(309010),
-    l = n(652215);
-let o = {
+    o = n(652215);
+let a = {
     binds: ["mod+alt+left"],
     comboKeysBindGlobal: !0,
     action() {
-        if (!a.A.isConnected()) return !1;
-        let e = a.A.getGuildId() ?? l.ME,
+        if (!r.A.isConnected()) return !1;
+        let e = r.A.getGuildId() ?? o.ME,
             t = s.A.getChannelId(e);
-        return (0, r.i)(e, t), i.A.channelListScrollTo(e, a.A.getChannelId()), !1
+        return (0, l.i)(e, t), i.A.channelListScrollTo(e, r.A.getChannelId()), !1
     }
 }

@@ -17,7 +17,9 @@ let i = "collectibles shop product details modal",
             analyticsSource: c,
             analyticsLocations: u,
             returnRef: x,
-            tab: h
+            tab: h,
+            giftRecipient: m,
+            giftingOrigin: b
         } = e;
         if (t.isCategoryReward) {
             let {
@@ -36,7 +38,9 @@ let i = "collectibles shop product details modal",
                 analyticsSource: c,
                 analyticsLocations: u,
                 returnRef: x,
-                tab: h
+                tab: h,
+                giftRecipient: m,
+                giftingOrigin: b
             })
         }, {
             modalKey: i

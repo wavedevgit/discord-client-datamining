@@ -1,6 +1,6 @@
 /** chunk id: 219887 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => g
 });
 var i = n(627968),
     s = n(64700),
@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(739508),
     u = n(240248),
     m = n(985018),
-    g = n(789863);
-class _ extends s.PureComponent {
+    _ = n(789863);
+class g extends s.PureComponent {
     static defaultProps = {
         isForSubscription: !1,
         isDefault: !1,
@@ -80,7 +80,7 @@ class _ extends s.PureComponent {
             paymentSource: e
         } = this.props;
         return e instanceof d.LQ ? (0, i.jsx)("div", {
-            className: g.k7,
+            className: _.k7,
             children: (0, i.jsx)(l.pVd, {
                 size: "xs",
                 color: "currentColor"
@@ -101,23 +101,23 @@ class _ extends s.PureComponent {
         return (0, i.jsxs)(r.A, {
             children: [a && this.renderIcon(), (0, i.jsxs)(r.A, {
                 direction: r.A.Direction.VERTICAL,
-                className: g.Wi,
+                className: _.Wi,
                 children: [(0, i.jsxs)(r.A, {
                     align: r.A.Align.CENTER,
                     children: [this.renderDescription(), o && e ? (0, i.jsx)("div", {
-                        className: g.Zn,
+                        className: _.Zn,
                         children: m.intl.string(m.t.bBvAEH)
                     }) : null, s ? (0, i.jsx)("div", {
-                        className: g.NV,
+                        className: _.NV,
                         children: m.intl.string(m.t.YCrcPL)
                     }) : null, o && t.invalid ? (0, i.jsx)("div", {
-                        className: g.tG,
+                        className: _.tG,
                         children: m.intl.string(m.t["851k93"])
                     }) : null]
                 }), n && null != d ? (0, i.jsx)(l.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
-                    className: g.Sv,
+                    className: _.Sv,
                     children: d
                 }) : null]
             })]

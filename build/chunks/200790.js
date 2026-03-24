@@ -13,8 +13,8 @@ var s = n(503698),
     c = n(954921),
     u = n(84540),
     m = n(919395),
-    g = n(128450),
-    _ = n(985018),
+    _ = n(128450),
+    g = n(985018),
     x = n(223772);
 
 function A(e) {
@@ -31,15 +31,15 @@ function A(e) {
         user: t,
         guildId: n?.id
     }), {
-        pendingAvatarDecoration: E,
-        errors: S
+        pendingAvatarDecoration: S,
+        errors: E
     } = (0, m.CP)(n?.id), b = p ? r.wLn : a.$n;
-    return (0, i.jsx)(g.A, {
+    return (0, i.jsx)(_.A, {
         className: s,
         forcedDivider: h,
         hasBackground: !0,
         title: A,
-        errors: S,
+        errors: E,
         children: (0, i.jsxs)("div", {
             className: x.NC,
             children: [(0, i.jsx)(b, {
@@ -53,14 +53,14 @@ function A(e) {
                 className: l()({
                     [x.yj]: p
                 }),
-                children: _.intl.string(_.t.BVcYCx)
-            }), (void 0 === E ? null != T : null != E) && (0, i.jsx)("div", {
+                children: g.intl.string(g.t.BVcYCx)
+            }), (void 0 === S ? null != T : null != S) && (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: x.DT,
                 children: (0, i.jsx)(r.Button, {
                     variant: "secondary",
                     size: "sm",
-                    text: (0, d.uZ)(t, n) ? _.intl.string(_.t.CHf9iJ) : _.intl.string(_.t.OrokWm),
+                    text: (0, d.uZ)(t, n) ? g.intl.string(g.t.CHf9iJ) : g.intl.string(g.t.OrokWm),
                     onClick: () => {
                         (0, u.p)({
                             guildId: n?.id,

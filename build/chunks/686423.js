@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(987144),
     u = n(473145),
     m = n(652215),
-    g = n(985018),
-    _ = n(572523);
+    _ = n(985018),
+    g = n(572523);
 let x = function() {
     let e = s.useRef(null),
         {
@@ -54,20 +54,20 @@ let x = function() {
         fractionalState: x
     });
     return (0, i.jsxs)("div", {
-        className: _.iE,
+        className: g.iE,
         children: [(0, i.jsx)(r._Jp, {
             color: r.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
-            className: _.$J
+            className: g.$J
         }), (0, i.jsx)(r.Text, {
-            className: _.C,
+            className: g.C,
             color: "text-default",
             variant: "text-sm/medium",
-            children: g.intl.format(g.t.kqC5vq, {
+            children: _.intl.format(_.t.kqC5vq, {
                 boostAnyGuildHook: (e, t) => {
                     let n = null != p,
                         s = (0, r.Oer)(e),
                         o = (0, i.jsx)("div", {
-                            className: _.lO,
+                            className: g.lO,
                             children: (0, i.jsx)(a.QWc, {
                                 variant: "primary",
                                 onClick: n ? void 0 : h,

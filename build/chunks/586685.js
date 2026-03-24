@@ -2,7 +2,7 @@
 n.d(t, {
     Ay: () => h,
     SB: () => x,
-    VD: () => _,
+    VD: () => g,
     b0: () => A
 });
 var i = n(627968);
@@ -16,11 +16,11 @@ var s = n(820284),
     c = n(326911),
     u = n(265729),
     m = n(531525),
-    g = n(652215);
+    _ = n(652215);
 
-function _() {
+function g() {
     return (0, i.jsx)(s.A, {
-        section: g.JJy.LIBRARY_INVENTORY_CODE_REDEMPTION,
+        section: _.JJy.LIBRARY_INVENTORY_CODE_REDEMPTION,
         children: (0, i.jsx)(c.A, {})
     })
 }
@@ -30,7 +30,7 @@ function x(e) {
         inOldSettings: t = !1
     } = e;
     return (0, i.jsx)(s.A, {
-        section: g.JJy.QUESTS,
+        section: _.JJy.QUESTS,
         children: (0, i.jsx)(o.A, {
             inOldSettings: t
         })
@@ -42,7 +42,7 @@ function A(e) {
         inOldSettings: t = !1
     } = e;
     return (0, i.jsx)(s.A, {
-        section: g.JJy.LIBRARY_INVENTORY_GIFTS_LIST,
+        section: _.JJy.LIBRARY_INVENTORY_GIFTS_LIST,
         children: (0, i.jsx)(u.A, {
             inOldSettings: t
         })
@@ -57,7 +57,7 @@ function h() {
         value: e,
         children: [(0, i.jsx)(d.x, {
             setting: m.H.GIFT_CODE_REDEMPTION,
-            children: (0, i.jsx)(_, {})
+            children: (0, i.jsx)(g, {})
         }), (0, i.jsx)(d.x, {
             setting: m.H.GIFT_INVENTORY_QUESTS,
             children: (0, i.jsx)(x, {

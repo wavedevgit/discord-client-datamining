@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(874486),
     u = n(927018),
     m = n(508971),
-    g = n(985018),
-    _ = n(872722);
+    _ = n(985018),
+    g = n(872722);
 
 function x(e) {
     let {
@@ -22,30 +22,30 @@ function x(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)(r.DUT, {
             onClick: t,
-            className: _.vv,
+            className: g.vv,
             children: [(0, i.jsx)(o.A, {
                 direction: o.A.Directions.LEFT,
-                className: _.Kk
+                className: g.Kk
             }), (0, i.jsx)(r.Text, {
                 variant: "text-lg/normal",
                 color: "text-default",
-                children: g.intl.string(g.t["13/7kX"])
+                children: _.intl.string(_.t["13/7kX"])
             })]
         }), (0, i.jsxs)("div", {
-            className: _.N1,
+            className: g.N1,
             children: [(0, i.jsxs)("div", {
-                className: _.if,
+                className: g.if,
                 children: [(0, i.jsx)(r.Heading, {
                     variant: "heading-lg/extrabold",
                     color: "text-strong",
-                    children: g.intl.string(g.t["6jI0hd"])
+                    children: _.intl.string(_.t["6jI0hd"])
                 }), (0, i.jsx)(r.Text, {
                     variant: "text-md/normal",
                     color: "text-default",
-                    children: g.intl.string(g.t.GuUItX)
+                    children: _.intl.string(_.t.GuUItX)
                 })]
             }), (0, i.jsx)("div", {
-                className: _.nr,
+                className: g.nr,
                 children: (0, i.jsx)(r.OR, {
                     size: "custom",
                     color: a.A.unsafe_rawColors.ORANGE_345.css,
@@ -54,9 +54,9 @@ function x(e) {
                 })
             })]
         }), x.length > 0 && (0, i.jsx)("div", {
-            className: _.yF,
+            className: g.yF,
             children: (0, i.jsx)("div", {
-                className: _.Eh,
+                className: g.Eh,
                 children: x.map(e => {
                     let {
                         achievementId: t,
@@ -69,24 +69,24 @@ function x(e) {
                 })
             })
         }), A.length > 0 && (0, i.jsxs)("div", {
-            className: _.yF,
+            className: g.yF,
             children: [(0, i.jsx)("div", {
-                className: _.if,
+                className: g.if,
                 children: (0, i.jsx)(r.Text, {
                     variant: "text-md/bold",
                     color: "text-default",
-                    children: g.intl.string(g.t.GFyMg1)
+                    children: _.intl.string(_.t.GFyMg1)
                 })
             }), (0, i.jsx)("div", {
-                className: _.Eh,
+                className: g.Eh,
                 children: A.map(e => (0, i.jsx)(m.A, {
                     achievementId: e.id
                 }, e.id))
             })]
         }), (0, i.jsx)("div", {
-            className: _.yF,
+            className: g.yF,
             children: (0, i.jsx)("div", {
-                className: _.F3
+                className: g.F3
             })
         })]
     })

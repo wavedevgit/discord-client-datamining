@@ -16,8 +16,8 @@ var s = n(554146),
     h = n(757036),
     A = n(363487),
     m = n(828162),
-    _ = n(652215),
-    p = n(49999),
+    p = n(652215),
+    _ = n(49999),
     g = n(985018);
 
 function f(e) {
@@ -40,7 +40,7 @@ function f(e) {
             return r === s.M.BOOST_PROGRESS_BAR_ADMIN_COACHMARK ? (0, i.jsx)(a.A, {
                 targetElementRef: n,
                 onRequestClose: () => {
-                    c(p.i.USER_DISMISS)
+                    c(_.i.USER_DISMISS)
                 },
                 position: "right",
                 alignmentStrategy: "edge",
@@ -61,13 +61,13 @@ function f(e) {
                     text: g.intl.string(g.t["Xc9J+x"]),
                     variant: "primary",
                     onClick: () => {
-                        c(p.i.TAKE_ACTION), u.A.open(t.id, _.BEX.BOOST_PERKS, o.A.GUILD_BOOSTING_PROGRESS_BAR_ADMIN_COACHMARK)
+                        c(_.i.TAKE_ACTION), u.A.open(t.id, p.BEX.BOOST_PERKS, o.A.GUILD_BOOSTING_PROGRESS_BAR_ADMIN_COACHMARK)
                     }
                 }]
             }) : r === s.M.BOOST_PROGRESS_BAR_MEMBER_COACHMARK ? (0, i.jsx)(a.A, {
                 targetElementRef: n,
                 onRequestClose: () => {
-                    c(p.i.USER_DISMISS)
+                    c(_.i.USER_DISMISS)
                 },
                 position: "right",
                 alignmentStrategy: "edge",
@@ -88,7 +88,7 @@ function f(e) {
                     text: g.intl.string(g.t.cTJtBG),
                     variant: "primary",
                     onClick: () => {
-                        c(p.i.TAKE_ACTION), (0, m.A)(t.id, o.A.GUILD_BOOSTING_PROGRESS_BAR_MEMBER_COACHMARK)
+                        c(_.i.TAKE_ACTION), (0, m.A)(t.id, o.A.GUILD_BOOSTING_PROGRESS_BAR_MEMBER_COACHMARK)
                     }
                 }]
             }) : null

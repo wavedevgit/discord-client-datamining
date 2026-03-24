@@ -13,20 +13,20 @@ function r(e) {
         autocompleterResultTypes: n,
         autocompleterOptions: r,
         autocompleterBeforeCreateSearchContext: o
-    } = e, [d, c] = i.useState(""), [u, m] = i.useState(a), g = i.useCallback((e, t) => {
+    } = e, [d, c] = i.useState(""), [u, m] = i.useState(a), _ = i.useCallback((e, t) => {
         "" === (t = t.trim()).trim() ? m(a) : m(e)
     }, []);
     i.useEffect(() => s.A.addRouteChangeListener(() => {
         c("")
     }), []);
-    let [_] = i.useState(() => new l.A(g, n, void 0, r));
+    let [g] = i.useState(() => new l.A(_, n, void 0, r));
     return i.useEffect(() => {
-        t ? (o?.(_), _.createSearchContext()) : (_.clean(), c(""))
-    }, [t, _, o]), {
+        t ? (o?.(g), g.createSearchContext()) : (g.clean(), c(""))
+    }, [t, g, o]), {
         queryResults: u,
         query: d,
         updateQuery: i.useCallback(e => {
-            c(e), _.search(e)
-        }, [_])
+            c(e), g.search(e)
+        }, [g])
     }
 }

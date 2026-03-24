@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(499454),
     u = n(351906),
     m = n(954571),
-    g = n(45938),
-    _ = n(652215),
+    _ = n(45938),
+    g = n(652215),
     x = n(985018);
 class A extends s.Component {
     state = {
@@ -30,7 +30,7 @@ class A extends s.Component {
         } = this.props;
         return {
             ...e,
-            object: _.ZSU.BUTTON_CTA
+            object: g.ZSU.BUTTON_CTA
         }
     }
     handleChange = e => {
@@ -59,7 +59,7 @@ class A extends s.Component {
                 });
                 return
             } catch {}
-            let e = (0, g.Vd)(t);
+            let e = (0, _.Vd)(t);
             if (null == e) return void this.setState({
                 hasError: !0
             });
@@ -67,11 +67,11 @@ class A extends s.Component {
             if (null != i && null != i.giftCode.promotion) throw this.setState({
                 isPromoCode: !0
             }), Error("Cannnot redeem promotion code as gift");
-            m.default.track(_.HAw.OPEN_MODAL, {
+            m.default.track(g.HAw.OPEN_MODAL, {
                 type: "gift_accept",
                 location: {
                     ...this.analyticsLocation,
-                    object: _.ZSU.BUTTON_CTA
+                    object: g.ZSU.BUTTON_CTA
                 }
             }), (0, c.h)({
                 processedCode: e

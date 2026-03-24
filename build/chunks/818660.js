@@ -12,20 +12,20 @@ var i = n(627968),
     c = n(397927),
     u = n(97260),
     m = n(117178),
-    g = n(512513),
-    _ = n(915967),
+    _ = n(512513),
+    g = n(915967),
     x = n(775121),
     A = n(734066),
     h = n(880144),
     p = n(168943),
     f = n(680243),
     T = n(843401),
-    E = n(430452),
-    S = n(532624),
+    S = n(430452),
+    E = n(532624),
     b = n(975571),
     C = n(723702),
-    N = n(350535),
-    v = n(790174),
+    v = n(350535),
+    N = n(790174),
     I = n(331969),
     j = n(652215),
     y = n(650583),
@@ -37,7 +37,7 @@ function P(e) {
     let {
         children: t
     } = e;
-    return t([_.Q_.MESSAGE, _.Q_.NAVIGATION, _.Q_.DND, _.Q_.CHAT, _.Q_.VOICE_AND_VIDEO, _.Q_.MISCELLANEOUS])
+    return t([g.Q_.MESSAGE, g.Q_.NAVIGATION, g.Q_.DND, g.Q_.CHAT, g.Q_.VOICE_AND_VIDEO, g.Q_.MISCELLANEOUS])
 }
 class D extends s.PureComponent {
     handleActionChanged = e => {
@@ -67,7 +67,7 @@ class D extends s.PureComponent {
     renderMessage() {
         let {
             keybind: e
-        } = this.props, t = N.dI(e.shortcut);
+        } = this.props, t = v.dI(e.shortcut);
         return x.A.hasBind(t) ? (0, i.jsx)(c.po8, {
             messageType: c.YCn.ERROR,
             children: O.intl.string(O.t["7lQlw3"])
@@ -199,7 +199,7 @@ class G extends s.PureComponent {
             id: "activate-overlay-region-text-widget",
             value: j.hCu.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET,
             label: O.intl.string(O.t.hurHWo)
-        })), t && ((0, C.isWindows)() || E.Ay.getUseSystemScreensharePicker()) && l.push({
+        })), t && ((0, C.isWindows)() || S.Ay.getUseSystemScreensharePicker()) && l.push({
             id: "toggle-go-live-streaming",
             value: j.hCu.TOGGLE_GO_LIVE_STREAMING,
             label: O.intl.string(O.t.ybdjJD)
@@ -284,9 +284,9 @@ class G extends s.PureComponent {
         let {
             enableClips: e,
             enableScreenshotKeybind: t
-        } = this.props, n = a()(this.props.keybinds).reject(e => e.managed && ![j.hCu.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, j.hCu.SAVE_CLIP, j.hCu.SAVE_SCREENSHOT].includes(e.action)).reject(t => !e && (t.action === j.hCu.SAVE_CLIP || t.action === j.hCu.SAVE_SCREENSHOT)).reject(e => !t && e.action === j.hCu.SAVE_SCREENSHOT).reject(e => !this.props.allowSoundboard && (e.action === j.hCu.SOUNDBOARD || e.action === j.hCu.SOUNDBOARD_HOLD)).sortBy(e => e.id).sortBy(e => !0 === e.managed ? -1 : 0).value(), l = a()((0, _.Bx)()).filter(e => e.description !== O.intl.string(O.t.HnNtEI)).groupBy(e => e.group).value();
+        } = this.props, n = a()(this.props.keybinds).reject(e => e.managed && ![j.hCu.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, j.hCu.SAVE_CLIP, j.hCu.SAVE_SCREENSHOT].includes(e.action)).reject(t => !e && (t.action === j.hCu.SAVE_CLIP || t.action === j.hCu.SAVE_SCREENSHOT)).reject(e => !t && e.action === j.hCu.SAVE_SCREENSHOT).reject(e => !this.props.allowSoundboard && (e.action === j.hCu.SOUNDBOARD || e.action === j.hCu.SOUNDBOARD_HOLD)).sortBy(e => e.id).sortBy(e => !0 === e.managed ? -1 : 0).value(), l = a()((0, g.Bx)()).filter(e => e.description !== O.intl.string(O.t.HnNtEI)).groupBy(e => e.group).value();
         return (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(v.A, {
+            children: [(0, i.jsx)(N.A, {
                 title: O.intl.string(O.t.T9DA2K),
                 className: L.IE,
                 children: C.isPlatformEmbedded ? (0, i.jsxs)(i.Fragment, {
@@ -328,7 +328,7 @@ class G extends s.PureComponent {
                             }), (0, i.jsx)("div", {
                                 className: R.DM,
                                 children: (0, i.jsx)(c.e7I, {
-                                    shortcut: g.z.binds["0"],
+                                    shortcut: _.z.binds["0"],
                                     className: R.LE
                                 })
                             })]
@@ -337,8 +337,8 @@ class G extends s.PureComponent {
                 }), (0, i.jsx)(P, {
                     children: e => (0, i.jsx)(i.Fragment, {
                         children: e.map((e, t) => {
-                            let n = (0, _.Gm)(e),
-                                a = (0, _.zF)(e),
+                            let n = (0, g.Gm)(e),
+                                a = (0, g.zF)(e),
                                 r = l[e];
                             return (0, i.jsx)(c.nVY, {
                                 label: n,
@@ -374,8 +374,8 @@ function M() {
     s.useEffect(() => (u.A.enableAll(!1), () => {
         u.A.enableAll(!0)
     }), []);
-    let e = (0, r.bG)([S.Ay], () => S.Ay.getState()),
-        t = (0, r.bG)([E.Ay], () => (0, h.A)(E.Ay)),
+    let e = (0, r.bG)([E.Ay], () => E.Ay.getState()),
+        t = (0, r.bG)([S.Ay], () => (0, h.A)(S.Ay)),
         n = (0, r.bG)([f.A], () => f.A.isSupported),
         l = (0, A.sw)(),
         a = (0, A.BW)();

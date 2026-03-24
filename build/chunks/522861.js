@@ -1,7 +1,7 @@
 /** chunk id: 522861 params = (module,exports,require) **/
 n.d(t, {
     LP: () => T,
-    nK: () => E
+    nK: () => S
 });
 var i = n(627968),
     s = n(64700),
@@ -13,9 +13,9 @@ var i = n(627968),
     c = n(730134),
     u = n(793574),
     m = n(994500),
-    g = n(287809);
+    _ = n(287809);
 n(975571);
-var _ = n(106148);
+var g = n(106148);
 n(652215);
 var x = n(985018),
     A = n(762765);
@@ -53,32 +53,32 @@ function p(e) {
     let {
         userId: t,
         last: n
-    } = e, l = (0, r.bG)([m.A], () => m.A.isBlocked(t)), _ = (0, r.bG)([g.default], () => g.default.getUser(t)), [h, p] = s.useState(!1), f = s.useCallback(() => {
+    } = e, l = (0, r.bG)([m.A], () => m.A.isBlocked(t)), g = (0, r.bG)([_.default], () => _.default.getUser(t)), [h, p] = s.useState(!1), f = s.useCallback(() => {
         p(!0), l ? d.A.unblockUser(t).catch(() => {
             p(!1)
         }) : d.A.unignoreUser(t, u.A.USER_SETTINGS).catch(() => {
             p(!1)
         })
     }, [l, t]);
-    return null == _ ? null : (0, i.jsxs)("div", {
+    return null == g ? null : (0, i.jsxs)("div", {
         className: a()(A.nM, {
             [A.fW]: n
         }),
         children: [(0, i.jsxs)("div", {
             className: A.eF,
             children: [(0, i.jsx)(c.A, {
-                user: _,
+                user: g,
                 size: o._3J.SIZE_40
             }), (0, i.jsxs)("div", {
                 className: A.Qq,
                 children: [(0, i.jsx)(o.Text, {
                     variant: "text-md/semibold",
                     color: "text-strong",
-                    children: _.globalName ?? _.username
+                    children: g.globalName ?? g.username
                 }), (0, i.jsx)(o.Text, {
                     variant: "text-sm/medium",
                     color: "text-default",
-                    children: null != _.globalName ? _.username : null
+                    children: null != g.globalName ? g.username : null
                 })]
             })]
         }), (0, i.jsx)(o.Button, {
@@ -95,7 +95,7 @@ function f(e) {
         userIds: t,
         listType: n
     } = e, [l, a] = s.useState(5);
-    return (0, i.jsx)(_.h, {
+    return (0, i.jsx)(g.h, {
         children: (0, i.jsxs)("div", {
             className: A.Nr,
             children: [(0, i.jsx)(h, {
@@ -135,7 +135,7 @@ function T() {
     })
 }
 
-function E() {
+function S() {
     let e = (0, r.yK)([m.A], () => m.A.getIgnoredIDs());
     return (0, i.jsx)(f, {
         userIds: e,

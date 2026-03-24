@@ -33,7 +33,7 @@ u.Toggle = function(e) {
     } = e, {
         isOpen: l,
         toggleOpen: u
-    } = s.useContext(c), m = l ? r.tN5 : r.abt, g = null != n ? n : l ? o.intl.string(o.t.fgq1gs) : o.intl.string(o.t.XJuakA);
+    } = s.useContext(c), m = l ? r.tN5 : r.abt, _ = null != n ? n : l ? o.intl.string(o.t.fgq1gs) : o.intl.string(o.t.XJuakA);
     return (0, i.jsxs)(r.DUT, {
         className: a()(d.L, t),
         onClick: u,
@@ -41,7 +41,7 @@ u.Toggle = function(e) {
             variant: "heading-sm/semibold",
             tag: "div",
             color: "currentColor",
-            children: g
+            children: _
         }), (0, i.jsx)(m, {
             size: "sm",
             color: "currentColor"

@@ -13,8 +13,8 @@ var s = n(503698),
     c = n(573648),
     u = n(681819),
     m = n(882997),
-    g = n(954571),
-    _ = n(652215),
+    _ = n(954571),
+    g = n(652215),
     x = n(277816);
 let A = e => {
     let {
@@ -41,7 +41,7 @@ let A = e => {
                         return e = c.A.get(n), void((0, m.A)({
                             platformType: e.type,
                             location: "Friends List"
-                        }), g.default.track(_.HAw.ACCOUNT_LINK_STEP, {
+                        }), _.default.track(g.HAw.ACCOUNT_LINK_STEP, {
                             previous_step: "desktop connections",
                             current_step: "desktop oauth",
                             platform_type: e.type

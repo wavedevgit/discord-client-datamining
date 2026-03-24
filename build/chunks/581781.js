@@ -18,8 +18,8 @@ function m(e) {
         guildTag: n,
         guildBadge: l,
         guildId: m,
-        guildName: g,
-        guildIcon: _,
+        guildName: _,
+        guildIcon: g,
         guildIconSize: x
     } = e, A = s.useRef(null), [h, p] = s.useState(!1);
     return s.useEffect(() => {
@@ -31,20 +31,20 @@ function m(e) {
             className: u.v2,
             children: [(0, i.jsx)(o.j, {
                 guildId: m,
-                guildName: g,
-                guildIcon: _,
+                guildName: _,
+                guildIcon: g,
                 iconSize: x,
                 className: u.rr,
                 animate: !1
             }), (0, i.jsx)("div", {
                 className: u.zH,
                 children: (0, i.jsx)(r.m, {
-                    __unsupportedReactNodeAsText: g,
+                    __unsupportedReactNodeAsText: _,
                     shouldShow: h,
                     children: (0, i.jsx)("span", {
                         ref: A,
                         className: u.J5,
-                        children: g
+                        children: _
                     })
                 })
             })]

@@ -13,20 +13,20 @@ var i, s = n(627968),
     c = n(793574),
     u = n(688810),
     m = n(259065),
-    g = n(206835),
-    _ = n(976860),
+    _ = n(206835),
+    g = n(976860),
     x = n(780964),
     A = n(358776),
     h = n(840065),
     p = n(112848),
     f = n(149757),
     T = n(920050),
-    E = n(189024),
-    S = n(652215),
+    S = n(189024),
+    E = n(652215),
     b = n(355097),
     C = n(985018),
-    N = n(64514),
-    v = n(121818),
+    v = n(64514),
+    N = n(121818),
     I = n(419455),
     j = n(288604),
     y = n(163635),
@@ -54,7 +54,7 @@ function D() {
         {
             analyticsLocations: i
         } = (0, u.Ay)(c.A.PREMIUM_MARKETING_PERK_CARD),
-        L = (0, g.A)({
+        L = (0, _.A)({
             scrollPosition: b._F.TRY_IT_OUT,
             analyticsLocations: i
         }),
@@ -76,7 +76,7 @@ function D() {
             })
         }, [i]),
         M = (0, l.useCallback)(() => {
-            (0, _.pX)(S.BVt.COLLECTIBLES_SHOP)
+            (0, g.pX)(E.BVt.COLLECTIBLES_SHOP)
         }, []),
         U = (0, l.useCallback)(() => {
             (0, h.openUserSettings)(x.X.SOUNDBOARD_CATEGORY, {
@@ -90,7 +90,7 @@ function D() {
                 analyticsLocations: i
             }))
         }, [i]),
-        w = (0, E.A)(),
+        w = (0, S.A)(),
         V = (0, l.useMemo)(() => w.map(e => e?.id), [w]),
         B = (0, l.useMemo)(() => [{
             id: T.SERVER_BOOSTS_CARD_ID,
@@ -212,7 +212,7 @@ function D() {
             id: T.VIDEO_BACKGROUNDS_CARD_ID,
             title: C.intl.string(C.t.ssVDYQ),
             description: C.intl.string(C.t.aUSRMa),
-            primaryAsset: (0, o.Mw)(e) ? N : v,
+            primaryAsset: (0, o.Mw)(e) ? v : N,
             categories: ["upgrades"]
         }, {
             id: T.EARLY_ACCESS_CARD_ID,

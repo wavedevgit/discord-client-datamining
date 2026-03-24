@@ -1,6 +1,6 @@
 /** chunk id: 391680 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => _
 });
 var i = n(627968);
 n(64700);
@@ -14,13 +14,13 @@ var s = n(311907),
     u = n(780964),
     m = n(840065);
 
-function g() {
+function _() {
     let {
         layoutDebuggingEnabled: e,
         isDeveloper: t,
         isLoggingGatewayEvents: n,
-        isLoggingOverlayEvents: g,
-        isLoggingAnalyticsEvents: _,
+        isLoggingOverlayEvents: _,
+        isLoggingAnalyticsEvents: g,
         isTracingRequests: x,
         isForcedCanary: A,
         isAxeEnabled: h,
@@ -41,12 +41,12 @@ function g() {
         onlyShowPreviewAppCollections: d.default.onlyShowPreviewAppCollections,
         disableAppCollectionsCache: d.default.disableAppCollectionsCache
     })), {
-        horizontalSpacing: E,
-        verticalSpacing: S
+        horizontalSpacing: S,
+        verticalSpacing: E
     } = (0, r.Or)(), {
         setHorizontalSpacing: b,
         setVerticalSpacing: C
-    } = r.Or.getState(), N = c.HZ.useSetting();
+    } = r.Or.getState(), v = c.HZ.useSetting();
     return t ? [(0, i.jsxs)(l.Drp, {
         id: "overrides",
         label: "Overrides",
@@ -56,9 +56,9 @@ function g() {
         children: [(0, i.jsx)(l.sLh, {
             id: "always-deliver",
             label: "Always Deliver Ads",
-            checked: N,
+            checked: v,
             action: () => {
-                c.HZ.updateSetting(!N)
+                c.HZ.updateSetting(!v)
             }
         }, "always-deliver"), (0, i.jsx)(l.sLh, {
             id: "forced-canary",
@@ -106,19 +106,19 @@ function g() {
         }, "gateway-events"), (0, i.jsx)(l.sLh, {
             id: "overlay-events",
             label: "Overlay RPC Events",
-            checked: g,
+            checked: _,
             action: () => {
                 (0, a.x)({
-                    logOverlayEvents: !g
+                    logOverlayEvents: !_
                 })
             }
         }, "overlay-events"), (0, i.jsx)(l.sLh, {
             id: "analytics-events",
             label: "Analytics Events",
-            checked: _,
+            checked: g,
             action: () => {
                 (0, a.x)({
-                    logAnalyticsEvents: !_
+                    logAnalyticsEvents: !g
                 })
             }
         }, "analytics-events"), (0, i.jsx)(l.sLh, {
@@ -171,7 +171,7 @@ function g() {
                 control: (e, t) => (0, i.jsx)(l.i42, {
                     ...e,
                     ref: t,
-                    value: E,
+                    value: S,
                     minValue: 0,
                     maxValue: r.YR,
                     onChange: e => b(e),
@@ -184,7 +184,7 @@ function g() {
                 control: (e, t) => (0, i.jsx)(l.i42, {
                     ...e,
                     ref: t,
-                    value: S,
+                    value: E,
                     minValue: 0,
                     maxValue: r.YR,
                     onChange: e => C(e),

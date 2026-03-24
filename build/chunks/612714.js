@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(87707),
     u = n(652215),
     m = n(53516),
-    g = n(985018),
-    _ = n(139674);
+    _ = n(985018),
+    g = n(139674);
 
 function x(e) {
     let t, n, {
@@ -34,10 +34,10 @@ function x(e) {
                 modalKey: m.V
             })
         }, []),
-        E = s.useCallback(() => {
+        S = s.useCallback(() => {
             T()
         }, [T]),
-        S = s.useCallback(() => {
+        E = s.useCallback(() => {
             null == x.phone ? T({
                 onAddedPhone: a.A.enableSMS
             }) : a.A.enableSMS()
@@ -46,30 +46,30 @@ function x(e) {
             (0, l.qfG)(e => (0, i.jsx)(o.default, {
                 ...e,
                 handleSubmit: a.A.disableSMS,
-                title: g.intl.string(g.t.KLWnit),
-                children: g.intl.string(g.t["W0/Duf"])
+                title: _.intl.string(_.t.KLWnit),
+                children: _.intl.string(_.t["W0/Duf"])
             }))
         }, []),
         C = s.useCallback(e => null == e ? "" : `${"*".repeat(e.length-4)}${e.slice(-4)}`, []),
-        N = null != x.phone,
-        v = x.hasFlag(u.nhx.MFA_SMS);
-    if (N || v) {
+        v = null != x.phone,
+        N = x.hasFlag(u.nhx.MFA_SMS);
+    if (v || N) {
         let e = h ? x.phone : C(x.phone);
         n = (0, i.jsxs)(l.Text, {
             variant: "text-sm/normal",
-            children: [g.intl.format(g.t.PXVoEO, {
+            children: [_.intl.format(_.t.PXVoEO, {
                 phoneNumber: e
             }), (0, i.jsx)(l.MzZ, {
                 onClick: f,
-                className: _.vN,
-                children: h ? g.intl.string(g.t.FfltIN) : g.intl.string(g.t.llArAg)
+                className: g.vN,
+                children: h ? _.intl.string(_.t.FfltIN) : _.intl.string(_.t.llArAg)
             })]
         })
     }
-    if (v) t = (0, i.jsx)(l.Button, {
+    if (N) t = (0, i.jsx)(l.Button, {
         variant: "critical-secondary",
         size: "sm",
-        text: g.intl.string(g.t.KLWnit),
+        text: _.intl.string(_.t.KLWnit),
         loading: A,
         onClick: b
     });
@@ -80,21 +80,21 @@ function x(e) {
             children: [(0, i.jsx)(l.Button, {
                 variant: "primary",
                 size: "sm",
-                text: e ?? g.intl.string(g.t.DZQe23),
-                onClick: S,
+                text: e ?? _.intl.string(_.t.DZQe23),
+                onClick: E,
                 loading: A,
                 disabled: null != e
-            }), N ? (0, i.jsx)(l.Button, {
+            }), v ? (0, i.jsx)(l.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: g.intl.string(g.t.Ulqq6K),
-                onClick: E
+                text: _.intl.string(_.t.Ulqq6K),
+                onClick: S
             }) : null]
         })
     }
     return (0, i.jsxs)(l.D0$, {
-        label: g.intl.string(g.t.uHAJ5v),
-        description: g.intl.string(g.t.fspJ4H),
+        label: _.intl.string(_.t.uHAJ5v),
+        description: _.intl.string(_.t.fspJ4H),
         children: [n, t]
     })
 }

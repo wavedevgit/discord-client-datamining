@@ -16,8 +16,8 @@ var i = n(627968),
     h = n(573435),
     A = n(101555),
     m = n(263063),
-    _ = n(714991),
-    p = n(776231),
+    p = n(714991),
+    _ = n(776231),
     g = n(345942),
     f = n(71393),
     x = n(486020),
@@ -126,7 +126,7 @@ let j = s.memo(function(e) {
     }, E = x.Ay.getGuildSplashURL({
         id: t.guildId,
         splash: t.splash,
-        size: 300 * (0, p.mZ)()
+        size: 300 * (0, _.mZ)()
     }), I = x.Ay.getGuildIconURL({
         id: t.guildId,
         icon: t.icon,
@@ -176,7 +176,7 @@ let j = s.memo(function(e) {
             className: S.OA,
             children: [(0, i.jsxs)("div", {
                 className: S.DD,
-                children: [(0, i.jsx)(_.A, {
+                children: [(0, i.jsx)(p.A, {
                     className: S.n2,
                     guild: t
                 }), (0, i.jsx)(c.Text, {

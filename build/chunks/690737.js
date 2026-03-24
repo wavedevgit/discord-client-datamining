@@ -1,6 +1,6 @@
 /** chunk id: 690737 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => g
 });
 var i = n(627968);
 n(64700);
@@ -13,13 +13,13 @@ var s = n(503698),
     c = n(194509),
     u = n(396375),
     m = n(652215),
-    g = n(178501);
-let _ = function(e) {
+    _ = n(178501);
+let g = function(e) {
     let {
         isVisible: t,
         subscriptionTier: n,
         isApplicationHome: s,
-        isEligibleForBogoPromotion: _
+        isEligibleForBogoPromotion: g
     } = e, x = (0, o.zhh)({
         transform: t ? "translateY(-100%)" : "translateY(0%)",
         opacity: +!!t,
@@ -31,25 +31,25 @@ let _ = function(e) {
         section: m.JJy.MARKETING_FLOATING_CTA
     }, h = (0, d.Ay)(), p = (0, o.Mwr)(h);
     return (0, i.jsx)(a.animated.div, {
-        className: l()(g.iE, {
-            [g.H8]: s,
-            [g.q4]: !t
+        className: l()(_.iE, {
+            [_.H8]: s,
+            [_.q4]: !t
         }),
         style: x,
         children: (0, i.jsxs)("div", {
-            className: s ? g.zW : g.iJ,
+            className: s ? _.zW : _.iJ,
             children: [(0, i.jsx)(u.A, {
                 color: p ? r.XD.BRAND_INVERTED : void 0,
-                className: l()(g.x6, {
-                    [g.Ph]: p
+                className: l()(_.x6, {
+                    [_.Ph]: p
                 }),
                 subscriptionTier: n,
                 premiumModalAnalyticsLocation: A,
                 isPersistentCTA: !0,
-                hasActivePromotion: _,
-                shinyButtonClassName: p ? void 0 : g.PJ
+                hasActivePromotion: g,
+                shinyButtonClassName: p ? void 0 : _.PJ
             }), (0, i.jsx)(c.A, {
-                className: g.x6,
+                className: _.x6,
                 premiumModalAnalyticsLocation: A
             })]
         })

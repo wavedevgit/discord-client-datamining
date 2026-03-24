@@ -34,7 +34,7 @@ let m = (0, d.E2)(c.X.CLIPS_PHRASES, {
                     o.pM(t)
                 }
             }, [t, e]),
-            g = s.useCallback(t => {
+            _ = s.useCallback(t => {
                 let n = Array.from(t)[0],
                     i = e.filter(e => e !== n);
                 o.pM(i)
@@ -47,7 +47,7 @@ let m = (0, d.E2)(c.X.CLIPS_PHRASES, {
             leading: d.length > 0 ? {
                 type: "tags",
                 items: d,
-                onRemove: g
+                onRemove: _
             } : void 0
         })
     }

@@ -1,7 +1,7 @@
 /** chunk id: 116011 params = (module,exports,require) **/
 n.d(t, {
     o: () => T,
-    w: () => S
+    w: () => E
 });
 var i = n(627968),
     s = n(64700),
@@ -13,38 +13,38 @@ var i = n(627968),
     c = n(975571),
     u = n(728458),
     m = n(264779),
-    g = n(852218),
-    _ = n(699443),
+    _ = n(852218),
+    g = n(699443),
     x = n(652215),
     A = n(985018),
     h = n(342087),
     p = n(870378),
     f = n(8496);
 let T = {
-        [g.KS]: {
+        [_.KS]: {
             title: A.t.sfGgOG,
             body: A.t.igiSKe,
             bodyWithExpiration: A.t.w8CXUl,
             redemptionURL: "https://steelseries.com/",
             logos: {
-                dark: (0, i.jsx)(_.a1, {}),
-                light: (0, i.jsx)(_.Gn, {})
+                dark: (0, i.jsx)(g.a1, {}),
+                light: (0, i.jsx)(g.Gn, {})
             },
             asset: f.A
         },
-        [g.Cs]: {
+        [_.Cs]: {
             title: A.t["9N8obd"],
             body: A.t["34g+Z3"],
             bodyWithExpiration: A.t.rqmpXc,
             redemptionURL: "https://www.kontrolfreek.com/",
             logos: {
-                dark: (0, i.jsx)(_.WF, {}),
-                light: (0, i.jsx)(_.s, {})
+                dark: (0, i.jsx)(g.WF, {}),
+                light: (0, i.jsx)(g.s, {})
             },
             asset: p.A
         }
     },
-    E = e => {
+    S = e => {
         let {
             recurrence: t
         } = e, n = (0, i.jsx)(l.rOg, {
@@ -83,18 +83,18 @@ let T = {
             })
         })
     },
-    S = e => {
+    E = e => {
         var t;
         let n, d, {
-                recurrence: g,
-                titleClassName: _,
+                recurrence: _,
+                titleClassName: g,
                 showPartnerLogo: p = !1,
                 showPartnerImage: f = !1,
-                countdownBar: S
+                countdownBar: E
             } = e,
-            [b, C] = s.useState(g.code),
-            [N, v] = s.useState(!1),
-            I = (t = g.partnerId, n = (0, a.bG)([o.A], () => (0, l.Mwr)(o.A.theme)), null == (d = T[t]) ? null : n ? d.logos.dark : d.logos.light),
+            [b, C] = s.useState(_.code),
+            [v, N] = s.useState(!1),
+            I = (t = _.partnerId, n = (0, a.bG)([o.A], () => (0, l.Mwr)(o.A.theme)), null == (d = T[t]) ? null : n ? d.logos.dark : d.logos.light),
             j = null == b;
         return (0, i.jsxs)("div", {
             className: h.lA,
@@ -103,21 +103,21 @@ let T = {
                 children: [(0, i.jsxs)("div", {
                     className: h.JN,
                     children: [p && I, (0, i.jsxs)("div", {
-                        className: null != _ ? `${h.yO} ${_}` : h.yO,
+                        className: null != g ? `${h.yO} ${g}` : h.yO,
                         children: [(0, i.jsx)(l.DZT, {
                             variant: "heading-lg/semibold",
                             color: "text-strong",
-                            children: A.intl.string(g.title)
+                            children: A.intl.string(_.title)
                         }), (0, i.jsx)(l.DZT, {
                             variant: "heading-sm/medium",
                             color: "text-subtle",
-                            children: N ? A.intl.format(A.t.i2EuFO, {
+                            children: v ? A.intl.format(A.t.i2EuFO, {
                                 helpdeskArticle: c.A.getArticleURL(x.MVz.RECURRING_PROMOTION)
-                            }) : j ? A.intl.string(g.body) : A.intl.format(g.bodyWithExpiration, {
-                                date: g.endDate
+                            }) : j ? A.intl.string(_.body) : A.intl.format(_.bodyWithExpiration, {
+                                date: _.endDate
                             })
                         })]
-                    }), j && (N ? (0, i.jsx)(l.$nd, {
+                    }), j && (v ? (0, i.jsx)(l.$nd, {
                         icon: l.EpV,
                         variant: "critical-secondary",
                         size: "sm",
@@ -130,28 +130,28 @@ let T = {
                         text: A.intl.string(A.t.vwASIl),
                         onClick: () => {
                             (0, m.kd)({
-                                promotionId: g.id,
+                                promotionId: _.id,
                                 analyticsLocations: []
                             }).then(e => {
                                 C(e.code)
                             }).catch(e => {
-                                v(!0), u.A.captureException(e)
+                                N(!0), u.A.captureException(e)
                             })
                         }
                     }))]
                 }), f && (0, i.jsx)("div", {
                     className: h.R4,
                     children: (0, i.jsx)(r._V3, {
-                        src: g.asset,
+                        src: _.asset,
                         className: h.Ys,
                         width: 100,
                         height: 100,
                         zoomable: !1
                     })
                 })]
-            }), S, null != b && (0, i.jsx)(E, {
+            }), E, null != b && (0, i.jsx)(S, {
                 recurrence: {
-                    ...g,
+                    ..._,
                     code: b
                 }
             })]

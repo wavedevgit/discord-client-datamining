@@ -20,7 +20,7 @@ let u = {
         useTitle: () => c.intl.string(c.t.XBrJT6),
         sound: "call_ringing"
     },
-    g = (0, a.zD)(o.X.SELECTED_CHANNEL_NOTIFICATIONS, {
+    _ = (0, a.zD)(o.X.SELECTED_CHANNEL_NOTIFICATIONS, {
         useTitle: () => c.intl.string(c.t.TzjwV9),
         useSubtitle: () => c.intl.format(c.t.OOiGCM, {
             onClick: () => (0, d.Jz)("message3")
@@ -29,7 +29,7 @@ let u = {
         setValue: e => s.default.setNotifyMessagesInSelectedChannel(e),
         useDisabled: () => (0, i.bG)([r.A], () => r.A.getDisableAllSounds())
     }),
-    _ = (0, a.zD)(o.X.DISABLE_ALL_NOTIFICATION_SOUNDS, {
+    g = (0, a.zD)(o.X.DISABLE_ALL_NOTIFICATION_SOUNDS, {
         useTitle: () => c.intl.string(c.t["2ZhCOd"]),
         useSubtitle: () => c.intl.string(c.t.EAKdPr),
         useValue: () => (0, i.bG)([r.A], () => r.A.getDisableAllSounds()),
@@ -41,5 +41,5 @@ let u = {
                 (0, d.vd)()
             }
         },
-        buildLayout: () => [(0, d.i)(u), g, (0, d.i)(m), _]
+        buildLayout: () => [(0, d.i)(u), _, (0, d.i)(m), g]
     })

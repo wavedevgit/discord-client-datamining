@@ -18,8 +18,8 @@ function o(e) {
             onMouseEnter: h,
             onMouseLeave: A,
             renderNUXHighlight: m,
-            buttonRef: _,
-            ...p
+            buttonRef: p,
+            ..._
         } = e,
         g = u ? a.l : a.A;
     n = c ? d ? r.intl.string(r.t.S5anIc) : r.intl.string(r.t.q3O3J8) : o ? r.intl.string(r.t.fjBNo1) : r.intl.string(r.t.uQn9B8);
@@ -29,7 +29,7 @@ function o(e) {
         play: C
     } = (0, l.c)(c ? "disable" : "enable");
     return s.useEffect(() => () => C(), [c, C]), (0, i.jsx)(g, {
-        buttonRef: _,
+        buttonRef: p,
         isTrayButton: !0,
         label: n,
         disabled: !o,
@@ -42,6 +42,6 @@ function o(e) {
         onMouseLeave: e => {
             A?.(e), x.onMouseLeave()
         },
-        ...p
+        ..._
     })
 }

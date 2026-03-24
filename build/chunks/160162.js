@@ -1,17 +1,17 @@
 /** chunk id: 160162 params = (module,exports,require) **/
 "use strict";
-n.d(t, {
-    A: () => p
+i.d(t, {
+    A: () => _
 });
-var i = n(627968),
-    s = n(64700),
-    l = n(873263),
-    a = n(686956),
-    r = n(956793),
-    o = n(549711),
-    d = n(463347),
-    c = n(976860),
-    u = n(652215);
+var n = i(627968),
+    s = i(64700),
+    a = i(873263),
+    l = i(686956),
+    r = i(956793),
+    o = i(549711),
+    d = i(463347),
+    c = i(976860),
+    u = i(652215);
 class h extends s.Component {
     componentDidUpdate(e) {
         let {
@@ -26,37 +26,37 @@ class h extends s.Component {
         if (null == e) return;
         let {
             guildId: t,
-            channelId: n,
-            messageId: i
+            channelId: i,
+            messageId: n
         } = function(e) {
             let {
                 guildId: t,
-                channelId: n,
-                messageId: i
+                channelId: i,
+                messageId: n
             } = e.params;
             return {
                 guildId: null != t && "" !== t ? t : u.ME,
-                channelId: n,
-                messageId: i
+                channelId: i,
+                messageId: n
             }
         }(e);
-        (0, d.nn)(t) && (0, d.ts)(n) ? (a.A.selectGuild(t), r.default.selectChannel({
+        (0, d.nn)(t) && (0, d.ts)(i) ? (l.A.selectGuild(t), r.default.selectChannel({
             guildId: t,
-            channelId: n,
-            messageId: i
+            channelId: i,
+            messageId: n
         })) : (0, c.bG)(u.BVt.ME)
     }
     render() {
         return null
     }
 }
-let p = () => (0, i.jsxs)(l.dO, {
-    children: [(0, i.jsx)(o.A, {
+let _ = () => (0, n.jsxs)(a.dO, {
+    children: [(0, n.jsx)(o.A, {
         path: u.BVt.CHANNEL(d.pv.guildId(), d.pv.channelId({
             optional: !0
         }), ":messageId?"),
         component: h
-    }), (0, i.jsx)(o.A, {
+    }), (0, n.jsx)(o.A, {
         component: h
     })]
 })

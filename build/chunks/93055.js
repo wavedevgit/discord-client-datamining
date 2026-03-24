@@ -1,17 +1,17 @@
 /** chunk id: 93055 params = (module,exports,require) **/
-n.d(e, {
+n.d(t, {
     Af: () => v,
-    CJ: () => C,
-    DZ: () => p,
+    CJ: () => E,
+    DZ: () => g,
     Rm: () => b,
-    TW: () => A,
-    e4: () => E
+    TW: () => _,
+    e4: () => p
 }), n(321073);
 var i = n(478437),
-    a = n(311907);
+    r = n(311907);
 n(734057);
 var l = n(808728),
-    r = n(967198),
+    a = n(967198),
     d = n(287809),
     o = n(474090);
 n(661191);
@@ -19,53 +19,53 @@ var u = n(181079),
     s = n(379587),
     c = n(11531),
     f = n(5180),
-    h = n(652215),
-    _ = n(788868);
+    A = n(652215),
+    h = n(788868);
 
-function A(t) {
+function _(e) {
     let {
-        enabled: e,
+        enabled: t,
         hasHigherPrivileges: n
     } = (0, s.m)({
-        location: t
-    }), i = (0, a.bG)([d.default], () => d.default.getCurrentUser()), l = o.Ay.isPremiumExactly(i, _.PremiumTypes.TIER_2);
+        location: e
+    }), i = (0, r.bG)([d.default], () => d.default.getCurrentUser()), l = o.Ay.isPremiumExactly(i, h.PremiumTypes.TIER_2);
     return {
-        hasAccess: e && l,
-        isExperimentEnabled: e,
+        hasAccess: t && l,
+        isExperimentEnabled: t,
         hasHigherPrivileges: n
     }
 }
 
-function v(t) {
-    return (0, a.bG)([u.A], () => u.A.getFavorite(t))
+function v(e) {
+    return (0, r.bG)([u.A], () => u.A.getFavorite(e))
 }
 
 function b() {
-    return (0, a.bG)([l.Ay], () => l.Ay.getChannels(h.YYv))[i.r.GUILD_CATEGORY].map(t => ({
-        id: "null" === t.channel.id ? null : t.channel.id,
-        name: t.channel.name
+    return (0, r.bG)([l.Ay], () => l.Ay.getChannels(A.YYv))[i.r.GUILD_CATEGORY].map(e => ({
+        id: "null" === e.channel.id ? null : e.channel.id,
+        name: e.channel.name
     }))
 }
 
-function p() {
-    let t = (0, a.bG)([r.A], () => r.A.getGuildId());
-    return (0, f.ai)(t)
+function g() {
+    let e = (0, r.bG)([a.A], () => a.A.getGuildId());
+    return (0, f.ai)(e)
 }
 
-function E(t, e) {
-    let n = p(),
+function p(e, t) {
+    let n = g(),
         {
             hasAccess: i
-        } = A(e),
-        l = (0, a.bG)([u.A], () => null != t && (u.A.isFavorite(t.id) || t.isThread() && u.A.isFavorite(t.parent_id)), [t]);
-    return !n || i && l ? t ?? null : null
+        } = _(t),
+        l = (0, r.bG)([u.A], () => null != e && (u.A.isFavorite(e.id) || e.isThread() && u.A.isFavorite(e.parent_id)), [e]);
+    return !n || i && l ? e ?? null : null
 }
 
-function C() {
-    let t = (0, c.J)(t => t.favoriteAdded);
+function E() {
+    let e = (0, c.J)(e => e.favoriteAdded);
     return {
-        favoriteAdded: t,
-        notifyFavoriteAdded: (0, c.J)(t => t.notifyFavoriteAdded),
-        clearFavoriteAdded: (0, c.J)(t => t.clearFavoriteAdded)
+        favoriteAdded: e,
+        notifyFavoriteAdded: (0, c.J)(e => e.notifyFavoriteAdded),
+        clearFavoriteAdded: (0, c.J)(e => e.clearFavoriteAdded)
     }
 }

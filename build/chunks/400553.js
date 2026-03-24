@@ -13,8 +13,8 @@ var s = n(417597),
     c = n(254847),
     u = n(773349),
     m = n(994987),
-    g = n(842130),
-    _ = n(985018),
+    _ = n(842130),
+    g = n(985018),
     x = n(721757);
 let A = () => {
     let e = (0, s.bG)([r.A], () => r.A.getTopUserActivities()),
@@ -26,7 +26,7 @@ let A = () => {
             children: [(0, i.jsx)(a.Heading, {
                 variant: "text-md/medium",
                 className: x.bV,
-                children: _.intl.string(g.default.BxbvS7)
+                children: g.intl.string(_.default.BxbvS7)
             }), (0, i.jsx)("div", {
                 className: x.Ce,
                 children: 1 === e.length ? (0, i.jsx)(u.A, {
@@ -44,7 +44,7 @@ let A = () => {
             children: [(0, i.jsx)(a.Heading, {
                 variant: "text-md/medium",
                 className: x.bV,
-                children: _.intl.string(g.default.Lq9Set)
+                children: g.intl.string(_.default.Lq9Set)
             }), 1 === t.length ? (0, i.jsx)(c.A, {
                 guildId: t[0].guild_id,
                 customSubtext: (0, o.fq)(t[0].messages_sent, t[0].call_count),

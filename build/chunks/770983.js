@@ -1,6 +1,6 @@
 /** chunk id: 770983 params = (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => y
 });
 var i = n(627968),
     l = n(64700),
@@ -83,7 +83,7 @@ function N(e) {
     })
 }
 
-function y(e) {
+function S(e) {
     let {
         wishlist: t,
         handleOpenUserProfileModal: n,
@@ -115,7 +115,7 @@ function y(e) {
     })
 }
 
-function S(e) {
+function y(e) {
     let {
         userId: t,
         numWishlistItemsToRecommend: n,
@@ -128,7 +128,7 @@ function S(e) {
         numItems: n,
         source: I.B5.USER_PROFILE
     });
-    return (0, i.jsx)(y, {
+    return (0, i.jsx)(S, {
         isLoading: "loading" === s,
         recommendations: a,
         numWishlistItemsToRecommend: n,

@@ -31,8 +31,8 @@ function I(e) {
         theme: T,
         themeType: b
     } = (0, x.E)(), N = l.useMemo(() => t.isNonUserBot() || (0, u.c)(t, v), [t, v]), {
-        activities: y,
-        isMobileOnline: S
+        activities: S,
+        isMobileOnline: y
     } = (0, a.cf)([m.A], () => ({
         activities: m.A.getActivities(t.id),
         isMobileOnline: m.A.isMobileOnline(t.id)
@@ -73,7 +73,7 @@ function I(e) {
             size: _,
             status: N ? p.clD.UNKNOWN : I,
             statusBackdropColor: N ? void 0 : (0, s.C$5)(T),
-            isMobile: S,
+            isMobile: y,
             className: h.my
         }), (0, i.jsxs)("div", {
             className: h.zH,
@@ -83,7 +83,7 @@ function I(e) {
                 discriminatorClass: h.D2
             }), (0, i.jsx)(c.A, {
                 user: t,
-                activities: y,
+                activities: S,
                 applicationStream: C,
                 voiceChannel: R
             })]

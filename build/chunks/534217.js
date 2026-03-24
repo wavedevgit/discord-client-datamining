@@ -1,6 +1,6 @@
 /** chunk id: 534217 params = (module,exports,require) **/
 n.d(t, {
-    S: () => N
+    S: () => v
 }), n(321073);
 var i = n(627968);
 n(64700);
@@ -13,15 +13,15 @@ var s = n(503698),
     c = n(975571),
     u = n(427262),
     m = n(326084),
-    g = n(851746),
-    _ = n(617461),
+    _ = n(851746),
+    g = n(617461),
     x = n(664654),
     A = n(303682),
     h = n(652215),
     p = n(985018),
     f = n(146449),
     T = n(544879);
-let E = e => {
+let S = e => {
         let {
             user: t
         } = e, {
@@ -39,7 +39,7 @@ let E = e => {
             ...s
         }, t.id)
     },
-    S = e => {
+    E = e => {
         let {
             slotIndex: t
         } = e;
@@ -58,12 +58,12 @@ let E = e => {
                 let e = [];
                 for (let n = 0; n < x.Z; n++)
                     if (t?.[n] !== void 0) {
-                        let s = (0, i.jsx)(E, {
+                        let s = (0, i.jsx)(S, {
                             user: t[n]
                         }, t[n].id);
                         e.push(s)
                     } else {
-                        let t = (0, i.jsx)(S, {
+                        let t = (0, i.jsx)(E, {
                             slotIndex: n + 1
                         }, n);
                         e.push(t)
@@ -90,12 +90,12 @@ let E = e => {
             })
         })
     },
-    N = e => {
+    v = e => {
         let {
             className: t
         } = e, {
             referralSentUsers: s
-        } = (0, x.J)(), o = (0, a.bG)([g.A], () => g.A.getRecipientStatus()), u = (0, a.bG)([g.A], () => g.A.getHasEligibleFriends()), T = o.size === x.Z && [...o.values()].every(e => e === m.aK.REDEEMED), E = o.size === x.Z;
+        } = (0, x.J)(), o = (0, a.bG)([_.A], () => _.A.getRecipientStatus()), u = (0, a.bG)([_.A], () => _.A.getHasEligibleFriends()), T = o.size === x.Z && [...o.values()].every(e => e === m.aK.REDEEMED), S = o.size === x.Z;
         return (0, i.jsxs)("div", {
             className: l()(f.kL, t),
             children: [(0, i.jsx)("div", {
@@ -128,22 +128,22 @@ let E = e => {
                     })]
                 }), (0, i.jsx)(r.Button, {
                     variant: "primary",
-                    disabled: !1 === u || !0 === E,
+                    disabled: !1 === u || !0 === S,
                     text: (() => {
-                        switch (_.$.getConfig({
+                        switch (g.$.getConfig({
                                 location: "ReferralBanner"
                             }).variation) {
-                            case _.e.CONTROL:
+                            case g.e.CONTROL:
                                 return p.intl.string(p.t.Lm2nFc);
-                            case _.e.VARIANT_1:
+                            case g.e.VARIANT_1:
                                 return p.intl.string(p.t["8wL38m"]);
-                            case _.e.VARIANT_2:
+                            case g.e.VARIANT_2:
                                 return p.intl.string(p.t["Pr/W5F"]);
-                            case _.e.VARIANT_3:
+                            case g.e.VARIANT_3:
                                 return p.intl.string(p.t.ojpNKb);
-                            case _.e.VARIANT_4:
+                            case g.e.VARIANT_4:
                                 return p.intl.string(p.t["YL8/wJ"]);
-                            case _.e.VARIANT_5:
+                            case g.e.VARIANT_5:
                                 return p.intl.string(p.t.C7iByj)
                         }
                     })(),

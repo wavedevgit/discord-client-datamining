@@ -12,17 +12,17 @@ var i = n(627968),
     c = n(397927),
     u = n(827343),
     m = n(77729),
-    g = n(839214),
-    _ = n(98919),
+    _ = n(839214),
+    g = n(98919),
     x = n(487329),
     A = n(419954),
     h = n(430452),
     p = n(353835),
     f = n(780964),
     T = n(652215),
-    E = n(731854),
-    S = n(985018);
-let b = (0, g.D)(() => ({
+    S = n(731854),
+    E = n(985018);
+let b = (0, _.D)(() => ({
     isUploading: !1,
     isDisabled: !1
 }));
@@ -31,15 +31,15 @@ async function C() {
     m.A.fileManager.showItemInFolder(e)
 }
 
-function N(e) {
+function v(e) {
     (0, o.A)({
-        title: S.intl.string(S.t["7UXEF2"]),
-        subtitle: S.intl.string(S.t.IYPrRl),
-        confirmText: S.intl.string(S.t.BddRzS),
+        title: E.intl.string(E.t["7UXEF2"]),
+        subtitle: E.intl.string(E.t.IYPrRl),
+        confirmText: E.intl.string(E.t.BddRzS),
         onConfirm: () => u.A.setDebugLogging(e)
     })
 }
-async function v(e) {
+async function N(e) {
     let {
         onUploadStart: t,
         onUploadFinish: n
@@ -51,19 +51,19 @@ async function v(e) {
             message: {
                 message: "User Live Dump"
             }
-        }), await (0, _.a)(T.Umv.RTC), e = S.intl.string(S.t["fKBB8+"]), t = S.intl.string(S.t.BvyxE7), (0, r.A)({
+        }), await (0, g.a)(T.Umv.RTC), e = E.intl.string(E.t["fKBB8+"]), t = E.intl.string(E.t.BvyxE7), (0, r.A)({
             title: e,
             subtitle: t
         })
     } catch (a) {
         var s;
         let e, t, n, l;
-        s = a.displayMessage, e = S.intl.string(S.t.QZg0J7), t = s ?? S.intl.string(S.t.VzHcSm), n = (0, x.B1)(x.iy.DEBUG_LOG_UPLOAD_FAILED)?.errorCode, l = S.intl.formatToPlainString(S.t.ejOT95, {
+        s = a.displayMessage, e = E.intl.string(E.t.QZg0J7), t = s ?? E.intl.string(E.t.VzHcSm), n = (0, x.B1)(x.iy.DEBUG_LOG_UPLOAD_FAILED)?.errorCode, l = E.intl.formatToPlainString(E.t.ejOT95, {
             errorCode: n
         }), (0, c.qfG)(n => (0, i.jsx)(c.VoidConfirmModal, {
             header: e,
             confirmButtonColor: d.$n.Colors.BRAND,
-            confirmText: S.intl.string(S.t.BddRzS),
+            confirmText: E.intl.string(E.t.BddRzS),
             ...n,
             children: (0, i.jsxs)("div", {
                 style: {
@@ -89,7 +89,7 @@ async function v(e) {
     }
 }
 async function I() {
-    await v({
+    await N({
         onUploadStart: () => b.setState({
             isUploading: !0
         }),
@@ -100,9 +100,9 @@ async function I() {
     })
 }
 let j = (0, A.E2)(f.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
-    useSearchTerms: () => [S.intl.string(S.t["726JHL"]), S.intl.string(S.t.EbwFfR), S.intl.string(S.t.nuPtYi)],
+    useSearchTerms: () => [E.intl.string(E.t["726JHL"]), E.intl.string(E.t.EbwFfR), E.intl.string(E.t.nuPtYi)],
     usePredicate: function() {
-        let e = (0, a.bG)([h.Ay], () => h.Ay.supports(E.O5.DEBUG_LOGGING));
+        let e = (0, a.bG)([h.Ay], () => h.Ay.supports(S.O5.DEBUG_LOGGING));
         return l.Av && e && null != m.A.fileManager.readLogFiles
     },
     Component: function() {
@@ -114,31 +114,31 @@ let j = (0, A.E2)(f.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
             children: [(0, i.jsx)(c.AC4, {
                 tag: "legend",
                 id: l,
-                children: S.intl.string(S.t["FjN+et"])
+                children: E.intl.string(E.t["FjN+et"])
             }), (0, i.jsxs)(c.BJc, {
                 direction: "vertical",
                 gap: 4,
                 children: [(0, i.jsx)(c.dOG, {
-                    label: S.intl.string(S.t["726JHL"]),
-                    description: S.intl.string(S.t["/7ak9Q"]),
+                    label: E.intl.string(E.t["726JHL"]),
+                    description: E.intl.string(E.t["/7ak9Q"]),
                     checked: e,
-                    onChange: N
+                    onChange: v
                 }), (0, i.jsx)("div", {
                     role: "group",
                     "aria-labelledby": l,
                     children: (0, i.jsxs)(c.ButtonGroup, {
                         children: [(0, i.jsx)(c.Button, {
                             variant: "secondary",
-                            text: S.intl.string(S.t.EbwFfR),
+                            text: E.intl.string(E.t.EbwFfR),
                             onClick: I,
                             loading: t,
                             disabled: n,
-                            "aria-label": S.intl.string(S.t.aY1OH2)
+                            "aria-label": E.intl.string(E.t.aY1OH2)
                         }), (0, i.jsx)(c.Button, {
                             variant: "secondary",
-                            text: S.intl.string(S.t.nuPtYi),
+                            text: E.intl.string(E.t.nuPtYi),
                             onClick: C,
-                            "aria-label": S.intl.string(S.t["L/hFOe"])
+                            "aria-label": E.intl.string(E.t["L/hFOe"])
                         })]
                     })
                 })]

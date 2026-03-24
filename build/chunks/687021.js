@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(128450),
     u = n(836602),
     m = n(71393),
-    g = n(711014),
-    _ = n(403362),
+    _ = n(711014),
+    g = n(403362),
     x = n(985018),
     A = n(306505);
 
@@ -46,14 +46,14 @@ function p(e) {
         globalOption: n,
         onChange: l,
         renderOptionSuffix: a
-    } = e, c = (0, r.bG)([u.A], () => u.A.showNotice()), h = (0, r.bG)([g.Ay], () => g.Ay.getFlattenedGuildIds()), p = (0, r.bG)([m.A], () => m.A.getGuilds()), f = s.useMemo(() => {
+    } = e, c = (0, r.bG)([u.A], () => u.A.showNotice()), h = (0, r.bG)([_.Ay], () => _.Ay.getFlattenedGuildIds()), p = (0, r.bG)([m.A], () => m.A.getGuilds()), f = s.useMemo(() => {
         let e = h.map(e => {
             let t = p[e];
             return null == t ? null : {
                 label: t.name,
                 value: t.id
             }
-        }).filter(_.Vq);
+        }).filter(g.Vq);
         return null != n && e.unshift(n), e
     }, [h, p, n]), T = s.useCallback(e => {
         let t = e?.label === n?.label && e?.value === n?.value;

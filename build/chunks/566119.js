@@ -1,13 +1,13 @@
 /** chunk id: 566119 params = (module,exports,require) **/
 a.d(t, {
-    CC: () => i,
+    CC: () => d,
     Jv: () => o,
-    RQ: () => m,
-    WD: () => l,
-    b: () => p,
+    RQ: () => _,
+    WD: () => i,
+    b: () => m,
     gP: () => u,
     o8: () => c,
-    ue: () => d
+    ue: () => l
 });
 var n = a(954571),
     r = a(652215);
@@ -18,13 +18,13 @@ function s(e, t) {
         program_state: t
     })
 }
-let l = e => {
+let i = e => {
         s("shop_orbs", e)
     },
-    i = e => {
+    d = e => {
         s("view_billing", e)
     },
-    d = e => {
+    l = e => {
         s("update_billing", e)
     },
     o = e => {
@@ -36,9 +36,9 @@ let l = e => {
     u = () => {
         s("balance_popover_upsell")
     },
-    m = () => {
+    _ = () => {
         s("balance_popover_next_drop")
     },
-    p = () => {
+    m = () => {
         s("balance_popover_helpdesk")
     }

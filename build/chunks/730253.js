@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(793574),
     A = n(688810),
     m = n(941971),
-    _ = n(900848),
-    p = n(65611),
+    p = n(900848),
+    _ = n(65611),
     g = n(855725),
     f = n(532794),
     x = n(366811),
@@ -77,8 +77,8 @@ function F(e) {
         })),
         eA = (0, a.bG)([N.A], () => N.A.getChannelId(D.YYv)),
         em = (0, a.bG)([I.A], () => I.A.getChannel(eA)),
-        e_ = (0, x.A)(e => e.guildId),
-        ep = (0, R.ai)(e_),
+        ep = (0, x.A)(e => e.guildId),
+        e_ = (0, R.ai)(ep),
         {
             badge: eg,
             unread: ef
@@ -92,7 +92,7 @@ function F(e) {
                 location: t
             } = e, n = (0, u.H)(t);
             return null != n && null != eh[n]
-        })), X = z.length > 0, J = !1, Q = !1, $ = !1, Z = !1, F ? (J = !Y, Q = Y, $ = K, Z = q) : ($ = W, Z = X), (0, p.oi)({
+        })), X = z.length > 0, J = !1, Q = !1, $ = !1, Z = !1, F ? (J = !Y, Q = Y, $ = K, Z = q) : ($ = W, Z = X), (0, _.oi)({
             audio: J,
             video: Q,
             screenshare: $,
@@ -136,9 +136,9 @@ function F(e) {
                 es(), clearTimeout(t)
             }
         }
-    }, [ei, es]), (0, i.jsxs)(_.c, {
+    }, [ei, es]), (0, i.jsxs)(p.c, {
         children: [(0, i.jsx)(m.A, {
-            selected: ep,
+            selected: e_,
             hovered: er,
             unread: ef && !eu,
             className: V.I
@@ -155,12 +155,12 @@ function F(e) {
                             guildName: k.intl.string(k.t.wMWyci),
                             mentions: eg
                         }),
-                        "aria-selected": ep,
+                        "aria-selected": e_,
                         to: {
                             pathname: D.BVt.CHANNEL(D.YYv, eA),
                             state: H
                         },
-                        selected: ep || er,
+                        selected: e_ || er,
                         onClick: () => {
                             ee && eb(!1)
                         },

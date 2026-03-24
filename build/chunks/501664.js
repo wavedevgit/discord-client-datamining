@@ -20,33 +20,33 @@ function d(e) {
         className: d,
         discountOfferAmount: u,
         hideStrikethroughPrice: m = !1,
-        nitroIconType: h,
-        nitroIconSize: p = "md"
-    } = e, x = (0, a.WD)(t, {
+        nitroIconType: p,
+        nitroIconSize: f = "md"
+    } = e, h = (0, a.WD)(t, {
         isPremiumUser: r,
         discount: i
     });
-    if (null == x) return null;
+    if (null == h) return null;
     let {
-        defaultPrice: f,
+        defaultPrice: x,
         showDefaultPriceOnly: v
-    } = x;
+    } = h;
     if (v) return (0, n.jsx)("div", {
         className: s()(o.kG, d),
         children: (0, n.jsx)(c.x, {
-            priceAmount: f.amount,
-            priceCurrency: f.currency
+            priceAmount: x.amount,
+            priceCurrency: x.currency
         })
     });
     let {
-        showNitroPrice: _,
-        originalPrice: g,
+        showNitroPrice: g,
+        originalPrice: _,
         finalPrice: A
-    } = x;
+    } = h;
     return (0, n.jsxs)("div", {
         className: s()(o.kG, d),
         children: [m ? null : (0, n.jsx)(l.a, {
-            price: g,
+            price: _,
             className: o.q9
         }), (0, n.jsx)(c.x, {
             priceAmount: A.amount,
@@ -55,8 +55,8 @@ function d(e) {
             className: s()({
                 [o.q9]: null == u
             }),
-            nitroIconType: _ ? h : void 0,
-            nitroIconSize: p,
+            nitroIconType: g ? p : void 0,
+            nitroIconSize: f,
             discountOfferAmount: u
         })]
     })

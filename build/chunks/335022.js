@@ -1,41 +1,41 @@
 /** chunk id: 335022 params = (module,exports,require) **/
 "use strict";
-n.d(t, {
+i.d(t, {
     A: () => P
 });
-var i = n(627968),
-    s = n(64700),
-    l = n(497766),
-    a = n(311907),
-    r = n(397927),
-    o = n(685399),
-    d = n(508654),
-    c = n(885631),
-    u = n(487401),
-    h = n(952790),
-    p = n(846930),
-    A = n(355205),
-    f = n(366811),
-    g = n(924985),
-    _ = n(945886),
-    m = n(72314),
-    x = n(769765),
-    E = n(808728),
-    y = n(458294),
-    v = n(71393),
-    S = n(576705),
-    C = n(584569),
-    I = n(383501),
-    N = n(309010),
-    T = n(543465),
-    O = n(607567),
-    b = n(855790),
-    j = n(714977),
-    D = n(439817),
-    R = n(652215),
-    w = n(349828),
-    L = n(985018),
-    k = n(852388);
+var n = i(627968),
+    s = i(64700),
+    a = i(497766),
+    l = i(311907),
+    r = i(397927),
+    o = i(685399),
+    d = i(508654),
+    c = i(885631),
+    u = i(487401),
+    h = i(952790),
+    _ = i(846930),
+    p = i(355205),
+    f = i(366811),
+    m = i(924985),
+    g = i(945886),
+    A = i(72314),
+    x = i(769765),
+    v = i(808728),
+    y = i(458294),
+    E = i(71393),
+    I = i(576705),
+    S = i(584569),
+    C = i(383501),
+    N = i(309010),
+    b = i(543465),
+    T = i(607567),
+    O = i(855790),
+    L = i(714977),
+    j = i(439817),
+    w = i(652215),
+    D = i(349828),
+    R = i(985018),
+    k = i(852388);
 class M extends s.PureComponent {
     static getDerivedStateFromProps(e) {
         let {
@@ -48,7 +48,7 @@ class M extends s.PureComponent {
     }
     settingsIconRef = s.createRef();
     state = {
-        controller: new l.Controller({
+        controller: new a.Controller({
             value: 1,
             immediate: !0
         }),
@@ -61,18 +61,18 @@ class M extends s.PureComponent {
             guildId: e
         } = this.props, {
             scrollTop: t
-        } = m.A.getGuildDimensions(e);
+        } = A.A.getGuildDimensions(e);
         this.setAnimatedValue(t ?? 0)
     }
     componentDidUpdate(e) {
         let {
             guild: t,
-            guildId: n
+            guildId: i
         } = this.props;
         if (e.guild !== t) {
             let {
                 scrollTop: e
-            } = m.A.getGuildDimensions(n);
+            } = A.A.getGuildDimensions(i);
             this.setAnimatedValue(e ?? 0)
         }
     }
@@ -80,7 +80,7 @@ class M extends s.PureComponent {
         let {
             closePopout: t
         } = e;
-        return (0, i.jsx)(j.A, {
+        return (0, n.jsx)(L.A, {
             onClose: t
         })
     }
@@ -93,20 +93,20 @@ class M extends s.PureComponent {
     setAnimatedValue(e) {
         let {
             guild: t
-        } = this.props, n = null != t && (0, c.A)(t);
-        null != t && (null != t.banner || n) && (null != t.banner ? this.setAnimatedValueForBanner(e) : this.setAnimatedValueForCommunityInfo(e))
+        } = this.props, i = null != t && (0, c.A)(t);
+        null != t && (null != t.banner || i) && (null != t.banner ? this.setAnimatedValueForBanner(e) : this.setAnimatedValueForCommunityInfo(e))
     }
     setAnimatedValueForBanner(e) {
         let {
             renderBanner: t,
-            communityInfoVisible: n,
-            bannerVisible: i,
+            communityInfoVisible: i,
+            bannerVisible: n,
             controller: s
         } = this.state;
-        (e >= 54 && i || e < 54 && !i) && (i = !i), (e >= 78 && !t || e < 78 && t) && (t = !t), n = i, (t !== this.state.renderBanner || i !== this.state.bannerVisible || n !== this.state.communityInfoVisible) && this.setState({
+        (e >= 54 && n || e < 54 && !n) && (n = !n), (e >= 78 && !t || e < 78 && t) && (t = !t), i = n, (t !== this.state.renderBanner || n !== this.state.bannerVisible || i !== this.state.communityInfoVisible) && this.setState({
             renderBanner: t,
-            bannerVisible: i,
-            communityInfoVisible: n
+            bannerVisible: n,
+            communityInfoVisible: i
         }), s.update({
             value: Math.min(1, Math.max(0, 1 - e / 78)),
             immediate: !0
@@ -115,11 +115,11 @@ class M extends s.PureComponent {
     setAnimatedValueForCommunityInfo(e) {
         let {
             communityInfoVisible: t,
-            controller: n
+            controller: i
         } = this.state;
         (e >= 20 && t || e < 20 && !t) && this.setState({
             communityInfoVisible: !t
-        }), n.update({
+        }), i.update({
             value: Math.min(1, Math.max(0, 1 - e / 20)),
             immediate: !0
         }).start()
@@ -129,51 +129,51 @@ class M extends s.PureComponent {
             onDragStart: e,
             ...t
         } = this.props, {
-            guild: n
+            guild: i
         } = t, {
             controller: s,
-            renderBanner: l,
-            bannerVisible: a,
+            renderBanner: a,
+            bannerVisible: l,
             communityInfoVisible: o
-        } = this.state, d = n?.id === w.Vc ? u.T : u.B;
-        return (0, i.jsxs)(D.A, {
-            header: null != n ? (0, i.jsx)(h.Ay, {
-                guild: n,
+        } = this.state, d = i?.id === D.Vc ? u.T : u.B;
+        return (0, n.jsxs)(j.A, {
+            header: null != i ? (0, n.jsx)(h.Ay, {
+                guild: i,
                 controller: s,
-                renderBanner: l,
-                bannerVisible: a,
+                renderBanner: a,
+                bannerVisible: l,
                 className: k.F,
                 headerClassName: k.D8,
                 onMouseDown: e,
                 disableBannerAnimation: !1,
                 communityInfoVisible: o,
-                children: (0, i.jsx)(r.YNO, {
+                children: (0, n.jsx)(r.YNO, {
                     targetElementRef: this.settingsIconRef,
                     position: "right",
                     renderPopout: this.renderSettings,
-                    children: e => (0, i.jsx)(b.Ay.Icon, {
+                    children: e => (0, n.jsx)(O.Ay.Icon, {
                         ref: this.settingsIconRef,
                         icon: r.Zes,
-                        label: L.intl.string(L.t["3D5yo/"]),
+                        label: R.intl.string(R.t["3D5yo/"]),
                         ...e
                     })
                 })
             }) : null,
-            children: [(0, i.jsx)("div", {
+            children: [(0, n.jsx)("div", {
                 className: k.o5,
-                children: null != n ? (0, i.jsx)(d, {
+                children: null != i ? (0, n.jsx)(d, {
                     ...t,
-                    guild: n,
+                    guild: i,
                     disableManageChannels: !0,
-                    onScroll: null != n && null != n.banner ? this.handleScroll : null
-                }) : (0, i.jsx)(p.A, {
+                    onScroll: null != i && null != i.banner ? this.handleScroll : null
+                }) : (0, n.jsx)(_.A, {
                     withBannerPadding: !1
                 })
-            }), null != n && (0, i.jsx)("section", {
+            }), null != i && (0, n.jsx)("section", {
                 className: k.C3,
-                "aria-label": L.intl.string(L.t.StREWK),
-                children: (0, i.jsx)(A.A, {
-                    guildId: n.id
+                "aria-label": R.intl.string(R.t.StREWK),
+                children: (0, n.jsx)(p.A, {
+                    guildId: i.id
                 })
             })]
         })
@@ -183,38 +183,38 @@ class M extends s.PureComponent {
 function P(e) {
     let {
         guildId: t
-    } = e, n = (0, a.bG)([v.A], () => v.A.getGuild(t)), s = (0, a.bG)([E.Ay], () => E.Ay.getChannels(t)), l = (0, a.bG)([x.A], () => x.A.getCategories(t)), {
+    } = e, i = (0, l.bG)([E.A], () => E.A.getGuild(t)), s = (0, l.bG)([v.Ay], () => v.Ay.getChannels(t)), a = (0, l.bG)([x.A], () => x.A.getCategories(t)), {
         mutedChannels: r,
         collapseMuted: c
-    } = (0, a.cf)([T.Ay], () => ({
-        mutedChannels: T.Ay.getMutedChannels(t),
-        collapseMuted: T.Ay.isGuildCollapsed(t)
-    })), u = (0, a.bG)([O.Ay], () => O.Ay.getVoiceStates(t)), h = (0, a.bG)([_.A], () => _.A.getCollapsed()), {
-        scrollTo: p
-    } = (0, a.bG)([m.A], () => m.A.getGuildDimensions(t)), A = (0, f.A)(e => {
+    } = (0, l.cf)([b.Ay], () => ({
+        mutedChannels: b.Ay.getMutedChannels(t),
+        collapseMuted: b.Ay.isGuildCollapsed(t)
+    })), u = (0, l.bG)([T.Ay], () => T.Ay.getVoiceStates(t)), h = (0, l.bG)([g.A], () => g.A.getCollapsed()), {
+        scrollTo: _
+    } = (0, l.bG)([A.A], () => A.A.getGuildDimensions(t)), p = (0, f.A)(e => {
         let {
             channelId: t
         } = e;
         return t
-    }), b = (0, a.bG)([N.A], () => N.A.getVoiceChannelId()), j = (0, a.bG)([S.A], () => S.A.getGuildVersion(t)), D = (0, a.bG)([g.A], () => g.A.version), w = (0, a.bG)([y.default], () => y.default.getGuildChangeSentinel(t)), L = (0, o.a1)(n?.id), k = (0, d.vj)(n?.id), P = n?.features.has(R.GuildFeatures.COMMUNITY) ?? !1, G = (0, a.bG)([I.A], () => I.A.getChannelId()), V = (0, a.bG)([C.A], () => C.A.desyncedVoiceStatesCount);
-    return (0, i.jsx)(M, {
+    }), O = (0, l.bG)([N.A], () => N.A.getVoiceChannelId()), L = (0, l.bG)([I.A], () => I.A.getGuildVersion(t)), j = (0, l.bG)([m.A], () => m.A.version), D = (0, l.bG)([y.default], () => y.default.getGuildChangeSentinel(t)), R = (0, o.a1)(i?.id), k = (0, d.vj)(i?.id), P = i?.features.has(w.GuildFeatures.COMMUNITY) ?? !1, G = (0, l.bG)([C.A], () => C.A.getChannelId()), V = (0, l.bG)([S.A], () => S.A.desyncedVoiceStatesCount);
+    return (0, n.jsx)(M, {
         guildId: t,
-        guild: n,
+        guild: i,
         channels: s,
-        categories: l,
+        categories: a,
         mutedChannels: r,
-        scrollToChannel: p,
-        selectedChannelId: A,
-        selectedVoiceChannelId: b,
+        scrollToChannel: _,
+        selectedChannelId: p,
+        selectedVoiceChannelId: O,
         voiceStates: u,
         rtcConnectedChannelId: G,
         rtcDesyncedVoiceStatesCount: V,
         collapsedChannels: h,
         collapseMuted: c,
-        guildReadStateSentinel: w,
-        permissionVersion: j,
-        categoryCollapseVersion: D,
-        embeddedAppsByChannel: L,
+        guildReadStateSentinel: D,
+        permissionVersion: L,
+        categoryCollapseVersion: j,
+        embeddedAppsByChannel: R,
         activeEventsByChannel: k,
         showNewUnreadsBar: P,
         optInEnabled: !1

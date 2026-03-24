@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(397927),
     u = n(919796),
     m = n(385612),
-    g = n(652215),
-    _ = n(985018),
+    _ = n(652215),
+    g = n(985018),
     x = n(567458);
 
 function A(e) {
@@ -26,12 +26,12 @@ function A(e) {
         label: p,
         colorPickerMiddle: f,
         colorPickerFooter: T,
-        showEyeDropper: E
-    } = e, S = s.useRef(null), b = (0, c.rdh)(d.A.colors.BACKGROUND_BASE_LOW).hex(), C = d.A.colors.BACKGROUND_MOD_MUTED.css, N = (0, m.sN)(l), v = (0, o.Hl)(l), I = v === b ? C : v, j = N ? d.A.unsafe_rawColors.WHITE.css : d.A.unsafe_rawColors.PRIMARY_530.css, y = (0, u.A)(f), O = (0, u.A)(T), [R, L] = s.useState((0, r.A)());
+        showEyeDropper: S
+    } = e, E = s.useRef(null), b = (0, c.rdh)(d.A.colors.BACKGROUND_BASE_LOW).hex(), C = d.A.colors.BACKGROUND_MOD_MUTED.css, v = (0, m.sN)(l), N = (0, o.Hl)(l), I = N === b ? C : N, j = v ? d.A.unsafe_rawColors.WHITE.css : d.A.unsafe_rawColors.PRIMARY_530.css, y = (0, u.A)(f), O = (0, u.A)(T), [R, L] = s.useState((0, r.A)());
     return s.useEffect(() => {
         (y !== f || O !== T) && L((0, r.A)())
     }, [T, f, O, y]), (0, i.jsx)(c.YNO, {
-        targetElementRef: S,
+        targetElementRef: E,
         positionKey: R,
         renderPopout: e => (0, i.jsx)(c.VNw, {
             ...e,
@@ -40,7 +40,7 @@ function A(e) {
             suggestedColors: A,
             middle: f,
             footer: T,
-            showEyeDropper: E
+            showEyeDropper: S
         }),
         onRequestClose: n,
         children: e => {
@@ -49,22 +49,22 @@ function A(e) {
                 ...n
             } = e;
             return (0, i.jsxs)("div", {
-                ref: S,
+                ref: E,
                 className: a()(x.oP, {
                     [x.r9]: h
                 }),
                 children: [(0, i.jsx)(c.DUT, {
                     ...n,
                     tabIndex: h ? -1 : 0,
-                    onClick: h ? g.tEg : t,
+                    onClick: h ? _.tEg : t,
                     style: {
-                        backgroundColor: v,
+                        backgroundColor: N,
                         borderColor: I
                     },
                     className: x.nf,
-                    "aria-label": _.intl.string(_.t.Qp04hK),
+                    "aria-label": g.intl.string(g.t.Qp04hK),
                     focusProps: {
-                        ringTarget: S
+                        ringTarget: E
                     },
                     children: (0, i.jsx)(c.R2l, {
                         size: "custom",

@@ -1,6 +1,6 @@
 /** chunk id: 158583 params = (module,exports,require) **/
 n.d(t, {
-    T: () => N
+    T: () => v
 });
 var i = n(627968),
     s = n(64700),
@@ -12,17 +12,17 @@ var i = n(627968),
     c = n(976860),
     u = n(12901),
     m = n(287809),
-    g = n(975571),
-    _ = n(474090),
+    _ = n(975571),
+    g = n(474090),
     x = n(181079),
     A = n(422258),
     h = n(668267),
     p = n(93055),
     f = n(652215),
     T = n(788868),
-    E = n(665606),
-    S = n(985018);
-let b = g.A.getArticleURL(f.MVz.FAVORITES_GUILD);
+    S = n(665606),
+    E = n(985018);
+let b = _.A.getArticleURL(f.MVz.FAVORITES_GUILD);
 
 function C() {
     let {
@@ -33,8 +33,8 @@ function C() {
     return (0, i.jsx)(o.f5, {
         value: e,
         children: (0, i.jsx)(a.D0$, {
-            label: S.intl.string(E.default.OT1NK5),
-            description: S.intl.format(E.default.GR2KOG, {
+            label: E.intl.string(S.default.OT1NK5),
+            description: E.intl.format(S.default.GR2KOG, {
                 helpCenterLink: b
             }),
             layout: "horizontal-responsive",
@@ -45,22 +45,22 @@ function C() {
                 fullWidth: !1,
                 children: [(0, i.jsx)(a.Button, {
                     variant: "secondary",
-                    text: S.intl.string(E.default["7WwLnr"]),
+                    text: E.intl.string(S.default["7WwLnr"]),
                     onClick: t
                 }), (0, i.jsx)(d.A, {
                     subscriptionTier: T.pe.TIER_2,
-                    defaultTextOverride: S.intl.string(E.default["20sYUU"])
+                    defaultTextOverride: E.intl.string(S.default["20sYUU"])
                 })]
             })
         })
     })
 }
 
-function N() {
+function v() {
     let e = (0, l.bG)([x.A], () => x.A.favoriteGuildEnabled),
         t = (0, l.bG)([m.default], () => {
             let e = m.default.getCurrentUser();
-            return null != e && _.Ay.isPremiumExactly(e, T.PremiumTypes.TIER_2)
+            return null != e && g.Ay.isPremiumExactly(e, T.PremiumTypes.TIER_2)
         }),
         n = (0, p.DZ)(),
         r = s.useCallback(e => {
@@ -68,11 +68,11 @@ function N() {
         }, [n]);
     return t ? (0, i.jsx)(a.dOG, {
         checked: e,
-        description: S.intl.format(E.default.GR2KOG, {
+        description: E.intl.format(S.default.GR2KOG, {
             helpCenterLink: b
         }),
         onChange: r,
-        label: S.intl.string(E.default.OT1NK5),
+        label: E.intl.string(S.default.OT1NK5),
         badge: "beta"
     }) : (0, i.jsx)(C, {})
 }

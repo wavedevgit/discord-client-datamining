@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(253932),
     A = n(975571),
     m = n(822382),
-    _ = n(753806),
-    p = n(345859),
+    p = n(753806),
+    _ = n(345859),
     g = n(145331),
     f = n(121806),
     x = n(652215),
@@ -34,7 +34,7 @@ function N(e) {
         isSearching: h,
         documentsIndexed: A,
         selectedChannelId: g
-    } = e, N = (0, p.H)(t), {
+    } = e, N = (0, _.H)(t), {
         totalFilters: S
     } = (0, f.vj)(N, t), T = s.useMemo(() => {
         if (t.type === x.I4_.DMS) {
@@ -50,7 +50,7 @@ function N(e) {
     }, [D, M, y]), U = s.useCallback(e => {
         M("user:explicit" === e ? C.i.USER_DISMISS : C.i.AUTO_DISMISS)
     }, [M]), P = s.useCallback(() => {
-        G(null), _.A.openSearchFiltersModal(t)
+        G(null), p.A.openSearchFiltersModal(t)
     }, [G, t]), w = s.useMemo(() => S > 0 ? E.intl.format(E.t.uaR4sI, {
         filterCount: S
     }) : E.intl.string(E.t.UdhTtk), [S]), k = t.type === x.I4_.DMS || t.type === x.I4_.CHANNEL;
@@ -194,17 +194,17 @@ function j(e) {
                 let e = {
                     type: x.I4_.DMS
                 };
-                _.A.transitionStateToSearchContext(t, e, _.A.cleanUpPrivateChannelSearchState)
+                p.A.transitionStateToSearchContext(t, e, p.A.cleanUpPrivateChannelSearchState)
             } else {
                 let e = {
                     type: x.I4_.CHANNEL,
                     channelId: n
                 };
-                _.A.transitionStateToSearchContext(t, e)
+                p.A.transitionStateToSearchContext(t, e)
             }
             a(null), h.Hu.updateSetting(e)
         }
-    }, [A, a, t, n]), [p, f] = s.useMemo(() => [A ? E.intl.string(E.t["8lklch"]) : E.intl.string(E.t.ji3jTF), A ? E.intl.string(E.t.RMQZCa) : E.intl.string(E.t["v/PagC"])], [A]), C = s.useMemo(() => ({
+    }, [A, a, t, n]), [_, f] = s.useMemo(() => [A ? E.intl.string(E.t["8lklch"]) : E.intl.string(E.t.ji3jTF), A ? E.intl.string(E.t.RMQZCa) : E.intl.string(E.t["v/PagC"])], [A]), C = s.useMemo(() => ({
         align: "end"
     }), []);
     return (0, i.jsxs)(i.Fragment, {
@@ -258,7 +258,7 @@ function j(e) {
             targetElementRef: u,
             shouldShow: c,
             onRequestClose: r,
-            title: p,
+            title: _,
             body: f,
             caretConfig: C,
             badge: "new"

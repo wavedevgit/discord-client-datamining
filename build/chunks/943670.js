@@ -13,8 +13,8 @@ n(866945);
 var c = n(933297),
     u = n(12901),
     m = n(835002),
-    g = n(985018),
-    _ = n(842130);
+    _ = n(985018),
+    g = n(842130);
 
 function x() {
     let e = (0, r.uM)(),
@@ -32,7 +32,7 @@ function x() {
             type: c.lT.INLINE_NOTICE,
             noticeType: "info",
             trackView: x,
-            useText: () => g.intl.format(_.default.i284fU, {
+            useText: () => _.intl.format(g.default.i284fU, {
                 hook: (e, t) => (0, i.jsx)(l.MzZ, {
                     onClick: n,
                     children: e

@@ -18,7 +18,7 @@ function o(e) {
         useVariant: c,
         useDisabled: u,
         onClick: m
-    } = t, [g, _] = s.useState(!1), x = (0, a.q)(t), A = o(), h = d?.(), p = n(), f = c?.(), T = u?.();
+    } = t, [_, g] = s.useState(!1), x = (0, a.q)(t), A = o(), h = d?.(), p = n(), f = c?.(), T = u?.();
     return (0, i.jsx)(r.L, {
         children: (0, i.jsx)(l.D0$, {
             label: A,
@@ -29,12 +29,12 @@ function o(e) {
                 onClick: () => {
                     x();
                     let e = m();
-                    e instanceof Promise && (_(!0), e.finally(() => _(!1)))
+                    e instanceof Promise && (g(!0), e.finally(() => g(!1)))
                 },
                 text: p,
                 variant: f,
                 disabled: T,
-                loading: g
+                loading: _
             })
         })
     })

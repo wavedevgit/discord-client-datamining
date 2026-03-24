@@ -13,8 +13,8 @@ var s = n(503698),
     c = n(509536),
     u = n(721923),
     m = n(864310),
-    g = n(71393),
-    _ = n(473145),
+    _ = n(71393),
+    g = n(473145),
     x = n(652215),
     A = n(985018),
     h = n(246930);
@@ -23,7 +23,7 @@ let p = function(e) {
         className: t,
         guildId: n,
         boostingVariant: s
-    } = e, p = (0, a.bG)([g.A], () => g.A.getGuild(n), [n]), f = (0, m.A)(p?.id).total;
+    } = e, p = (0, a.bG)([_.A], () => _.A.getGuild(n), [n]), f = (0, m.A)(p?.id).total;
     return null == p ? (0, i.jsx)("div", {
         className: l()(t, h.bo),
         children: (0, i.jsx)("div", {
@@ -60,7 +60,7 @@ let p = function(e) {
                 }), (0, i.jsx)(o.Text, {
                     variant: "text-sm/bold",
                     color: "text-muted",
-                    children: (0, _.gb)(p.premiumTier, {
+                    children: (0, g.gb)(p.premiumTier, {
                         useLevels: !1
                     })
                 })]

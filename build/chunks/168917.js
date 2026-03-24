@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(576705),
     u = n(652215),
     m = n(788868),
-    g = n(985018),
-    _ = n(131025);
+    _ = n(985018),
+    g = n(131025);
 
 function x(e) {
     let {
@@ -25,7 +25,7 @@ function x(e) {
         guild: p
     } = e, f = (0, s.bG)([c.A], () => c.A.can(u.xBc.CHANGE_NICKNAME, p) || c.A.can(u.xBc.MANAGE_NICKNAMES, p)), T = (0, a.L)(m.PremiumTypes.TIER_2);
     return (0, i.jsxs)(r.A, {
-        title: g.intl.string(g.t.me1lRk),
+        title: _.intl.string(_.t.me1lRk),
         errors: t,
         children: [(0, i.jsx)(l.ksK, {
             value: n ?? x ?? "",
@@ -38,11 +38,11 @@ function x(e) {
                 })
             },
             disabled: !f,
-            helperText: f ? void 0 : g.intl.string(g.t.gzjxQi)
+            helperText: f ? void 0 : _.intl.string(_.t.gzjxQi)
         }), T && (0, i.jsx)(o.A, {
             user: h,
             guildId: p.id,
-            className: _.F
+            className: g.F
         })]
     })
 }

@@ -19,12 +19,12 @@ let d = e => {
             showSeconds: m = !1
         } = e,
         {
-            days: h,
-            hours: p,
-            minutes: x,
-            seconds: f
+            days: p,
+            hours: f,
+            minutes: h,
+            seconds: x
         } = (0, l.A)(i),
-        v = (r = [(t = e => `${e.toString().padStart(2,"0")}`)(h), t(p), t(x)], m && r.push(t(f)), r.join(":"));
+        v = (r = [(t = e => `${e.toString().padStart(2,"0")}`)(p), t(f), t(h)], m && r.push(t(x)), r.join(":"));
     return (0, n.jsxs)("div", {
         className: s()(o.kL, u),
         role: "timer",
@@ -44,9 +44,9 @@ let d = e => {
             children: e
         }, t)), (0, n.jsx)(a.AC4, {
             children: c.intl.format(c.t.j6IyVe, {
-                days: h,
-                hours: p,
-                minutes: x
+                days: p,
+                hours: f,
+                minutes: h
             })
         })]
     })

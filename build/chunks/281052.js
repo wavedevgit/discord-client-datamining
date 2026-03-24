@@ -13,20 +13,20 @@ var s = n(284009),
     c = n(757036),
     u = n(919395),
     m = n(124064),
-    g = n(200790),
-    _ = n(230084),
+    _ = n(200790),
+    g = n(230084),
     x = n(180020),
     A = n(431982),
     h = n(730588),
     p = n(164599),
     f = n(63675),
     T = n(546849),
-    E = n(101058),
-    S = n(84540),
+    S = n(101058),
+    E = n(84540),
     b = n(836602),
     C = n(622543),
-    N = n(696451),
-    v = n(71393),
+    v = n(696451),
+    N = n(71393),
     I = n(287809),
     j = n(927578),
     y = n(427262),
@@ -43,7 +43,7 @@ function M() {
             return l()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
         }),
         t = (0, c.L)(P.PremiumTypes.TIER_2),
-        n = (0, a.bG)([b.A, v.A], () => v.A.getGuild(b.A.selectedGuildId));
+        n = (0, a.bG)([b.A, N.A], () => N.A.getGuild(b.A.selectedGuildId));
     l()(null != n, "guild should not be null");
     let {
         pendingAvatar: s,
@@ -56,10 +56,10 @@ function M() {
     } = (0, a.cf)([b.A], () => ({
         ...b.A.getPendingChanges(n.id),
         errors: b.A.getErrors(n.id)
-    })), F = (0, E.V7)({
+    })), F = (0, S.V7)({
         userId: e.id,
         image: s
-    }), H = (0, d.EC)(n.id), z = (0, a.bG)([N.Ay], () => null == n.id ? null : N.Ay.getMember(n.id, e.id)), Y = (0, a.bG)([C.A], () => C.A.getGuildMemberProfile(e.id, n.id)), X = j.Ay.canUsePremiumProfileCustomization(e), K = (0, u.z5)(s, z?.avatar), W = (0, u.Ac)(U, Y?.banner), Z = (0, O.l)(V, Y?.themeColors), q = Y?.bio ?? "", Q = Y?.pronouns ?? "", J = (e, t, n) => {
+    }), H = (0, d.EC)(n.id), z = (0, a.bG)([v.Ay], () => null == n.id ? null : v.Ay.getMember(n.id, e.id)), Y = (0, a.bG)([C.A], () => C.A.getGuildMemberProfile(e.id, n.id)), X = j.Ay.canUsePremiumProfileCustomization(e), K = (0, u.z5)(s, z?.avatar), W = (0, u.Ac)(U, Y?.banner), Z = (0, O.l)(V, Y?.themeColors), q = Y?.bio ?? "", Q = Y?.pronouns ?? "", J = (e, t, n) => {
         n(e ?? (null != t ? null : void 0))
     };
     return (0, i.jsxs)("div", {
@@ -74,7 +74,7 @@ function M() {
         }, "nick"), (0, i.jsx)(T.A, {
             sectionTitle: D.intl.string(D.t["+T3RI/"]),
             errors: B?.pronouns,
-            onPronounsChange: e => (0, S.p)({
+            onPronounsChange: e => (0, E.p)({
                 guildId: n.id,
                 pronouns: e
             }),
@@ -83,7 +83,7 @@ function M() {
         }, "pronouns"), (0, i.jsxs)(L.A, {
             user: e,
             showOverlay: !X,
-            children: [(0, i.jsx)(_.A, {
+            children: [(0, i.jsx)(g.A, {
                 sectionTitle: (0, i.jsxs)(i.Fragment, {
                     children: [D.intl.string(D.t.lqaIxI), (0, i.jsx)(r.m, {
                         text: D.intl.string(D.t["5AFxuK"]),
@@ -95,14 +95,14 @@ function M() {
                     })]
                 }),
                 showRemoveAvatarButton: K,
-                onAvatarChange: e => J(e, z?.avatar, e => (0, S.p)({
+                onAvatarChange: e => J(e, z?.avatar, e => (0, E.p)({
                     guildId: n.id,
                     avatar: e
                 })),
                 errors: B?.avatar,
                 guildId: n.id,
                 disabled: !X
-            }, "avatar"), (0, i.jsx)(g.A, {
+            }, "avatar"), (0, i.jsx)(_.A, {
                 sectionTitle: (0, i.jsxs)(i.Fragment, {
                     children: [D.intl.string(D.t["7v0T9P"]), (0, i.jsx)(r.m, {
                         text: D.intl.string(D.t["5AFxuK"]),
@@ -145,7 +145,7 @@ function M() {
             }, "effect"), (0, i.jsx)(h.A, {
                 showRemoveBannerButton: W,
                 errors: B?.banner,
-                onBannerChange: e => J(e, Y?.banner, e => (0, S.p)({
+                onBannerChange: e => J(e, Y?.banner, e => (0, E.p)({
                     guildId: n.id,
                     banner: e
                 })),
@@ -155,7 +155,7 @@ function M() {
                 user: e,
                 pendingAvatarSrc: F,
                 pendingColors: V,
-                onThemeColorsChange: e => (0, S.p)({
+                onThemeColorsChange: e => (0, E.p)({
                     guildId: n.id,
                     themeColors: e
                 }),
@@ -173,7 +173,7 @@ function M() {
                         })
                     })]
                 }),
-                onBioChange: e => (0, S.p)({
+                onBioChange: e => (0, E.p)({
                     guildId: n.id,
                     bio: e
                 }),

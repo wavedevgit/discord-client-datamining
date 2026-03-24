@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var r = n(827734),
     l = n(582754),
-    s = n(397927),
-    a = n(736653),
+    a = n(397927),
+    s = n(736653),
     o = n(682174),
     c = n(927018),
     d = n(715438);
@@ -26,29 +26,29 @@ function _(t) {
     let {
         achievementId: e,
         unlocked: n,
-        size: r = s._3J.SIZE_40
-    } = t, _ = (0, a.Ay)(), C = (0, c.vM)(e);
-    if (null == C) return null;
-    let A = (0, s.KjH)(r),
+        size: r = a._3J.SIZE_40
+    } = t, _ = (0, s.Ay)(), A = (0, c.vM)(e);
+    if (null == A) return null;
+    let C = (0, a.KjH)(r),
         {
-            name: g,
-            rarity: E
-        } = C,
+            name: E,
+            rarity: g
+        } = A,
         {
             color: T
-        } = (0, c.ag)(E),
-        L = (0, l.Mw)(_) ? u : h,
-        I = (A.size - A.offset - 2 * A.stroke) * .8,
-        O = A.size - A.stroke,
-        S = {
-            width: .4 * I,
-            height: .4 * I
+        } = (0, c.ag)(g),
+        I = (0, l.Mw)(_) ? u : h,
+        f = (C.size - C.offset - 2 * C.stroke) * .8,
+        O = C.size - C.stroke,
+        L = {
+            width: .4 * f,
+            height: .4 * f
         },
         p = {
-            width: S.width + 1,
-            height: S.height + 1,
-            right: A.stroke + 1,
-            bottom: A.stroke + 1,
+            width: L.width + 1,
+            height: L.height + 1,
+            right: C.stroke + 1,
+            bottom: C.stroke + 1,
             padding: 0
         };
     return (0, i.jsxs)("div", {
@@ -56,33 +56,33 @@ function _(t) {
         style: {
             width: O,
             height: O,
-            padding: A.stroke
+            padding: C.stroke
         },
-        "aria-label": `${g()??""}`,
+        "aria-label": `${E()??""}`,
         children: [(0, i.jsx)("div", {
             className: d.r5,
-            children: (0, i.jsx)(s.OR, {
+            children: (0, i.jsx)(a.OR, {
                 size: "custom",
-                color: n ? T : L.trophy,
-                width: I,
-                height: I
+                color: n ? T : I.trophy,
+                width: f,
+                height: f
             })
         }), !n && (0, i.jsx)("div", {
             className: d.dq,
             style: p,
-            children: (0, i.jsx)(s.XAi, {
+            children: (0, i.jsx)(a.XAi, {
                 size: "custom",
-                color: L.locked,
-                ...S
+                color: I.locked,
+                ...L
             })
-        }), n && E === c.md.LEGENDARY && (0, i.jsx)("div", {
+        }), n && g === c.md.LEGENDARY && (0, i.jsx)("div", {
             className: d.dq,
             style: p,
             children: (0, i.jsx)(o.A, {
                 className: d.ox,
-                ...S
+                ...L
             })
         })]
     })
 }
-_.Sizes = s._3J
+_.Sizes = a._3J

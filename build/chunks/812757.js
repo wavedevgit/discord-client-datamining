@@ -12,14 +12,14 @@ var i = n(627968),
     c = n(117178),
     u = n(419954),
     m = n(532624),
-    g = n(780964),
-    _ = n(652215),
+    _ = n(780964),
+    g = n(652215),
     x = n(985018),
     A = n(280973);
-let h = (0, u.E2)(g.X.CLIPS_KEYBIND, {
+let h = (0, u.E2)(_.X.CLIPS_KEYBIND, {
     useSearchTerms: () => [x.intl.string(x.t.pf54EU), x.intl.string(x.t["QyB/jK"])],
     Component: () => {
-        let e = (0, r.bG)([m.Ay], () => m.Ay.getKeybindForAction(_.hCu.SAVE_CLIP, !0));
+        let e = (0, r.bG)([m.Ay], () => m.Ay.getKeybindForAction(g.hCu.SAVE_CLIP, !0));
         a()(null != e, "Save clip keybind unset");
         let t = s.useCallback(t => {
             d.A.setKeybind({

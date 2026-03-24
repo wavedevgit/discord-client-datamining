@@ -1,6 +1,6 @@
 /** chunk id: 887997 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => g
 });
 var i = n(627968);
 n(64700);
@@ -14,18 +14,18 @@ var s = n(503698),
     u = n(985018),
     m = n(802937);
 
-function g(e) {
+function _(e) {
     let t, n, {
         showChargingUpState: s,
         rowValueText: r,
         endsAt: o,
-        fractionalState: g,
-        activationDate: _,
+        fractionalState: _,
+        activationDate: g,
         hasPremiumGroup: x
     } = e;
-    x ? (t = u.intl.string(c.default["/S02sx"]), n = u.intl.string(c.default.OPJNST)) : s ? (t = u.intl.string(u.t["hT6i/0"]), n = null != _ ? u.intl.format(u.t["0Vwb/l"], {
-        activateDate: _
-    }) : null) : (t = u.intl.string(u.t["3G0CTC"]), n = g === d.xc.FP_SUB_PAUSED ? u.intl.format(u.t.MMvaIG, {
+    x ? (t = u.intl.string(c.default["/S02sx"]), n = u.intl.string(c.default.OPJNST)) : s ? (t = u.intl.string(u.t["hT6i/0"]), n = null != g ? u.intl.format(u.t["0Vwb/l"], {
+        activateDate: g
+    }) : null) : (t = u.intl.string(u.t["3G0CTC"]), n = _ === d.xc.FP_SUB_PAUSED ? u.intl.format(u.t.MMvaIG, {
         resumeDate: o.toDate()
     }) : null);
     let A = l()({
@@ -64,13 +64,13 @@ function g(e) {
         })]
     })
 }
-let _ = function(e) {
+let g = function(e) {
     let {
         fractionalPremiumInfo: t,
         className: n,
         activationDate: s,
         hasPremiumGroup: d
-    } = e, c = (0, o.kX)(t), _ = c.length > 0, x = (0, r.Ay)(t.endsAt, r.yE.SHORT_TIME), A = _ ? c : x;
+    } = e, c = (0, o.kX)(t), g = c.length > 0, x = (0, r.Ay)(t.endsAt, r.yE.SHORT_TIME), A = g ? c : x;
     return (0, i.jsx)("div", {
         children: (0, i.jsxs)("div", {
             className: l()(n, m.f8),
@@ -97,8 +97,8 @@ let _ = function(e) {
                         children: c.length > 0 ? c : u.intl.string(u.t["B66Z+f"])
                     })]
                 })
-            }), (0, i.jsx)(g, {
-                showChargingUpState: _,
+            }), (0, i.jsx)(_, {
+                showChargingUpState: g,
                 rowValueText: A,
                 endsAt: t.endsAt,
                 fractionalState: t.fractionalState,

@@ -1,23 +1,23 @@
 /** chunk id: 745891 params = (module,exports,require) **/
 "use strict";
-n.d(t, {
-    A: () => m
+i.d(t, {
+    A: () => A
 });
-var i = n(627968),
-    s = n(64700),
-    l = n(311907),
-    a = n(397927),
-    r = n(684013),
-    o = n(915089),
-    d = n(256415),
-    c = n(448296),
-    u = n(672396),
-    h = n(652215),
-    p = n(985018),
-    A = n(877911);
+var n = i(627968),
+    s = i(64700),
+    a = i(311907),
+    l = i(397927),
+    r = i(684013),
+    o = i(915089),
+    d = i(256415),
+    c = i(448296),
+    u = i(672396),
+    h = i(652215),
+    _ = i(985018),
+    p = i(877911);
 let f = Object.values(u.Li).map(e => 100 * e),
-    g = (0, o.Ld)();
-class _ extends s.PureComponent {
+    m = (0, o.Ld)();
+class g extends s.PureComponent {
     initialValue = 100 * this.props.opacity;
     handleUpdateBackgroundOpacity(e) {
         r.A.setTextWidgetOpacity((0, c.A)(e / 100)), r.A.track(h.HAw.OVERLAY_SETTINGS_UPDATED, {
@@ -28,12 +28,12 @@ class _ extends s.PureComponent {
         r.A.setTextWidgetOpacity((0, c.A)(e / 100))
     }
     render() {
-        return (0, i.jsx)("div", {
-            className: A.kL,
-            children: (0, i.jsx)("div", {
-                className: A.xJ,
-                children: (0, i.jsx)(a.Apm, {
-                    label: p.intl.string(p.t.OVovCb),
+        return (0, n.jsx)("div", {
+            className: p.kL,
+            children: (0, n.jsx)("div", {
+                className: p.xJ,
+                children: (0, n.jsx)(l.Apm, {
+                    label: _.intl.string(_.t.OVovCb),
                     mini: !0,
                     initialValue: this.initialValue,
                     defaultValue: this.initialValue,
@@ -46,12 +46,12 @@ class _ extends s.PureComponent {
                     onMarkerRender: h.tEg,
                     equidistant: !0,
                     stickToMarkers: !0,
-                    "aria-labelledby": g
+                    "aria-labelledby": m
                 })
             })
         })
     }
 }
-let m = l.Ay.connectStores([d.default], () => ({
+let A = a.Ay.connectStores([d.default], () => ({
     opacity: d.default.getTextWidgetOpacity()
-}))(_)
+}))(g)

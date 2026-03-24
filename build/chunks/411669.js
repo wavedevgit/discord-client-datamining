@@ -12,9 +12,9 @@ var i = n(419954),
     c = n(379897),
     u = n(21117),
     m = n(617110),
-    g = n(937551),
-    _ = n(985018);
+    _ = n(937551),
+    g = n(985018);
 let x = (0, i.zZ)(s.X.COLOR_AND_CONTRAST_CATEGORY, {
-    useTitle: () => _.intl.string(_.t.JqvyiY),
-    buildLayout: () => [g.V, d.E, r.Q, c.j, o.r, u.b, m.K, l.k, a.V]
+    useTitle: () => g.intl.string(g.t.JqvyiY),
+    buildLayout: () => [_.V, d.E, r.Q, c.j, o.r, u.b, m.K, l.k, a.V]
 })

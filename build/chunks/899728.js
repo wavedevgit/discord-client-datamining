@@ -1,6 +1,6 @@
 /** chunk id: 899728 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => _
 });
 var i = n(311907),
     s = n(988506),
@@ -12,11 +12,11 @@ var i = n(311907),
     c = n(88001),
     u = n(519412),
     m = n(985018);
-let g = (e, t) => {
-    let n, g = e === s.qT.MEMBER,
-        _ = (0, d.A)({
+let _ = (e, t) => {
+    let n, _ = e === s.qT.MEMBER,
+        g = (0, d.A)({
             useCachedData: !0,
-            fetch: g
+            fetch: _
         }),
         x = (0, i.bG)([a.A], () => a.A.getPremiumGroupSubscription());
     return e === s.qT.UNSPECIFIED ? null : {
@@ -31,8 +31,8 @@ let g = (e, t) => {
                 a = n.interval,
                 d = n.intervalCount;
             return (0, o.CE)(s, a, d)
-        })(x) : null == _ ? null : m.intl.format(u.default.Nu9LNm, {
-            primaryName: _,
+        })(x) : null == g ? null : m.intl.format(u.default.Nu9LNm, {
+            primaryName: g,
             premiumGroupProductName: (0, c.DP)()
         })) ? "..." : n,
         bodyString: e === s.qT.PRIMARY ? m.intl.format(u.default["+R/K74"], {

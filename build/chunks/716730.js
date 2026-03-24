@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(234320),
     A = n(795816),
     m = n(933958),
-    _ = n(5867),
-    p = n(652215),
+    p = n(5867),
+    _ = n(652215),
     g = n(985018),
     f = n(766924);
 
@@ -25,8 +25,8 @@ function x(e) {
         channelId: t,
         className: n,
         ...x
-    } = e, C = s.useRef(null), E = (0, a.bG)([m.Ay], () => m.Ay.getFocusedLayout() === _.E8.RESIZABLE), I = s.useCallback(() => {
-        let e = E ? _.E8.NO_CHAT : _.E8.RESIZABLE;
+    } = e, C = s.useRef(null), E = (0, a.bG)([m.Ay], () => m.Ay.getFocusedLayout() === p.E8.RESIZABLE), I = s.useCallback(() => {
+        let e = E ? p.E8.NO_CHAT : p.E8.RESIZABLE;
         (0, A.i5)(e)
     }, [E]), {
         unreadCount: N,
@@ -49,7 +49,7 @@ function x(e) {
         C.current?.focus()
     }, []);
     (0, h.Vo)({
-        event: p.jej.FOCUS_CHAT_BUTTON,
+        event: _.jej.FOCUS_CHAT_BUTTON,
         handler: S
     });
     let T = E ? g.intl.string(g.t["5MstTl"]) : g.intl.string(g.t.kkKapG),
@@ -69,7 +69,7 @@ function x(e) {
             label: T,
             "aria-label": v.join(", "),
             tooltipPosition: "top",
-            iconComponent: y === _.E8.NO_CHAT ? r.jQp : r.g8p,
+            iconComponent: y === p.E8.NO_CHAT ? r.jQp : r.g8p,
             themeable: !0,
             className: n,
             ...x

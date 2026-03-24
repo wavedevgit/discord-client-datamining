@@ -16,8 +16,8 @@ var s = n(311907),
     h = n(935159),
     A = n(508654),
     m = n(974930),
-    _ = n(47868),
-    p = n(985018),
+    p = n(47868),
+    _ = n(985018),
     g = n(242182);
 
 function f(e) {
@@ -28,7 +28,7 @@ function f(e) {
         canManageGuildEvent: I
     } = (0, r.nr)(x), N = (0, s.bG)([c.A], () => C.filter(e => !c.A.isEventDismissed(e.id)), [C]), b = (0, s.cf)([u.Ay], () => N.reduce((e, t) => (e[t.id] = u.Ay.getUserCount(t.id, (0, m.G3)(t)), e), {}), [N]);
     return N.length < 1 || E ? null : (0, i.jsx)(i.Fragment, {
-        children: N.map(e => (0, i.jsx)(_.A, {
+        children: N.map(e => (0, i.jsx)(p.A, {
             icon: (0, i.jsx)(a.CTc, {
                 size: "custom",
                 color: "currentColor",
@@ -36,10 +36,10 @@ function f(e) {
                 width: 20
             }),
             color: l.A.unsafe_rawColors.GREEN_360.css,
-            title: p.intl.formatToPlainString(I(e) ? p.t["1vGXqM"] : p.t.xMJyla, {
+            title: _.intl.formatToPlainString(I(e) ? _.t["1vGXqM"] : _.t.xMJyla, {
                 eventName: e.name
             }),
-            description: p.intl.formatToPlainString(p.t.PTebCR, {
+            description: _.intl.formatToPlainString(_.t.PTebCR, {
                 startTime: (0, m.CC)(e.scheduled_start_time).startDateTimeString
             }),
             onClick: () => {

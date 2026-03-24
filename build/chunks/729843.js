@@ -1,54 +1,54 @@
 /** chunk id: 729843 params = (module,exports,require) **/
 "use strict";
-n.d(t, {
-    A: () => g
+i.d(t, {
+    A: () => m
 });
-var i = n(387755),
-    s = n(684013),
-    l = n(956793),
-    a = n(571694),
-    r = n(47167),
-    o = n(471024),
-    d = n(621436),
-    c = n(994500),
-    u = n(287809),
-    h = n(684748),
-    p = n(652215),
-    A = n(672396),
-    f = n(985018);
+var n = i(387755),
+    s = i(684013),
+    a = i(956793),
+    l = i(571694),
+    r = i(47167),
+    o = i(471024),
+    d = i(621436),
+    c = i(994500),
+    u = i(287809),
+    h = i(684748),
+    _ = i(652215),
+    p = i(672396),
+    f = i(985018);
 
-function g(e) {
+function m(e) {
     let t = (0, r.m1)(e, u.default, c.A),
-        n = f.intl.string(f.t.ssrVzG),
-        g = (0, a.Y)(e),
-        _ = (0, d.A)(e),
+        i = f.intl.string(f.t.ssrVzG),
+        m = (0, l.Y)(e),
+        g = (0, d.A)(e),
         {
-            trackView: m,
+            trackView: A,
             trackClick: x
-        } = (0, h.Y)(A.KS.IncomingCall, {
-            notif_type: A.KS.IncomingCall,
-            notif_user_id: _,
+        } = (0, h.Y)(p.KS.IncomingCall, {
+            notif_type: p.KS.IncomingCall,
+            notif_user_id: g,
             guild_id: e.guild_id,
             channel_id: e.id,
             channel_type: e.type
         });
     return {
-        icon: g,
+        icon: m,
         title: t,
-        body: n,
+        body: i,
         hint: e => (0, o.sI)(e, (0, h.J)(), f.t.Odi54y),
         confirmText: f.intl.string(f.t["0D/6Rz"]),
         cancelText: f.intl.string(f.t.BVN4pL),
         onNotificationShow: () => {
-            m()
+            A()
         },
         onConfirmClick: () => {
-            if (p.kvI.CALLABLE.has(e.type)) s.A.callPrivateChannel(e.id);
+            if (_.kvI.CALLABLE.has(e.type)) s.A.callPrivateChannel(e.id);
             else {
-                if (e.type !== p.rbe.GUILD_VOICE) return;
-                l.default.selectVoiceChannel(e.id)
+                if (e.type !== _.rbe.GUILD_VOICE) return;
+                a.default.selectVoiceChannel(e.id)
             }
-            x("join"), s.A.track(p.HAw.VOICE_CHANNEL_SELECTED, {
+            x("join"), s.A.track(_.HAw.VOICE_CHANNEL_SELECTED, {
                 location: "Overlay Notificaiton",
                 guild_id: e.guild_id,
                 channel_id: e.id,
@@ -56,7 +56,7 @@ function g(e) {
             })
         },
         onCancelClick: () => {
-            i.A.stopRinging(e.id), x("decline")
+            n.A.stopRinging(e.id), x("decline")
         },
         onDismissClick: () => {
             x("dismiss")

@@ -1,17 +1,17 @@
 /** chunk id: 552049 params = (module,exports,require) **/
 n.d(t, {
-    U5: () => a,
+    U5: () => r,
     fz: () => s
 });
 var i = n(203982),
-    r = n(652215);
-let a = {
+    l = n(652215);
+let r = {
         binds: ["pageup"],
         comboKeysBindGlobal: !0,
-        action: () => (i._.dispatchToLastSubscribed(r.jej.SCROLL_PAGE_UP), !1)
+        action: () => (i._.dispatchToLastSubscribed(l.jej.SCROLL_PAGE_UP), !1)
     },
     s = {
         binds: ["pagedown"],
         comboKeysBindGlobal: !0,
-        action: () => (i._.dispatchToLastSubscribed(r.jej.SCROLL_PAGE_DOWN), !1)
+        action: () => (i._.dispatchToLastSubscribed(l.jej.SCROLL_PAGE_DOWN), !1)
     }

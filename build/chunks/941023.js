@@ -1,44 +1,44 @@
 /** chunk id: 941023 params = (module,exports,require) **/
 "use strict";
-n.d(t, {
-    A: () => E
+i.d(t, {
+    A: () => v
 });
-var i = n(64700),
-    s = n(735438),
-    l = n.n(s),
-    a = n(621466),
-    r = n(52133),
-    o = n(451988),
-    d = n(684013),
-    c = n(242286),
-    u = n(899699),
-    h = n(456797),
-    p = n(723702);
-let A = {
+var n = i(64700),
+    s = i(735438),
+    a = i.n(s),
+    l = i(621466),
+    r = i(52133),
+    o = i(451988),
+    d = i(684013),
+    c = i(242286),
+    u = i(899699),
+    h = i(456797),
+    _ = i(723702);
+let p = {
         x: 0,
         y: 0
     },
     f = !1;
 
-function g(e) {
+function m(e) {
     let {
         clientX: t,
-        clientY: n
+        clientY: i
     } = e;
-    f = !0, A.x = t, A.y = n
+    f = !0, p.x = t, p.y = i
 }
-let _ = new Map;
+let g = new Map;
 
-function m(e, t) {
-    if (null == t) _.delete(e), 0 === _.size && (window.removeEventListener("mousemove", g), f = !1);
+function A(e, t) {
+    if (null == t) g.delete(e), 0 === g.size && (window.removeEventListener("mousemove", m), f = !1);
     else {
-        let n = _.get(e);
-        if (null != n && (0, r.A)(n.zone, t.zone)) return;
-        0 === _.size && window.addEventListener("mousemove", g), _.set(e, t)
+        let i = g.get(e);
+        if (null != i && (0, r.A)(i.zone, t.zone)) return;
+        0 === g.size && window.addEventListener("mousemove", m), g.set(e, t)
     }
-    if (p.isPlatformEmbedded)
+    if (_.isPlatformEmbedded)
         if (c.default.isCurrentPidOutOfProcess()) {
-            let e = Array.from(_.values()).map(e => {
+            let e = Array.from(g.values()).map(e => {
                 let {
                     zone: t
                 } = e;
@@ -52,36 +52,36 @@ function m(e, t) {
             });
             d.A.setClickZones(e)
         } else {
-            var n;
+            var i;
             let e = (0, u.m)();
             if (null == e) return;
             e.broadcastCommand({
                 message: "set_click_zones",
-                zones: Array.from(_.values()).map(e => {
+                zones: Array.from(g.values()).map(e => {
                     let {
                         zone: t
                     } = e;
                     return t
                 })
-            }), n = e, x || (n.setClickZoneCallback((e, t, n) => {
-                let i = _.get(e);
-                null != i && (f || (A.x = t, A.y = n), i.instance.click())
+            }), i = e, x || (i.setClickZoneCallback((e, t, i) => {
+                let n = g.get(e);
+                null != n && (f || (p.x = t, p.y = i), n.instance.click())
             }), x = !0)
         }
 }
 let x = !1;
-class E extends i.PureComponent {
+class v extends n.PureComponent {
     static defaultProps = {
         observe: !0,
         observeInterval: 1e3
     };
-    zone = l().uniqueId("ClickArea");
+    zone = a().uniqueId("ClickArea");
     interval = new o.IX;
     componentDidMount() {
         this.props.observe ? this.observeZone() : this.updateZone()
     }
     componentWillUnmount() {
-        this.interval.stop(), m(this.zone, null)
+        this.interval.stop(), A(this.zone, null)
     }
     componentDidUpdate(e) {
         let {
@@ -90,34 +90,34 @@ class E extends i.PureComponent {
         t !== e.observe && (t ? this.observeZone() : this.interval.stop())
     }
     render() {
-        return i.Children.only(this.props.children)
+        return n.Children.only(this.props.children)
     }
     observeZone() {
         this.updateZone(), this.interval.start(this.props.observeInterval, this.updateZone)
     }
     updateZone = () => {
         let e = this.props.contentDomRef.current;
-        if ((0, a.vq)(e)) {
+        if ((0, l.vq)(e)) {
             let {
                 left: t,
-                top: n,
-                right: i,
+                top: i,
+                right: n,
                 bottom: s
             } = e.getBoundingClientRect();
-            m(this.zone, {
+            A(this.zone, {
                 instance: this,
                 zone: {
                     name: this.zone,
                     left: Math.floor(t),
-                    top: Math.floor(n),
-                    right: Math.ceil(i),
+                    top: Math.floor(i),
+                    right: Math.ceil(n),
                     bottom: Math.ceil(s)
                 }
             })
         }
     };
     click() {
-        let e = (0, h._)("click", A.x, A.y);
-        (0, h.K)(e, A.x, A.y)
+        let e = (0, h._)("click", p.x, p.y);
+        (0, h.K)(e, p.x, p.y)
     }
 }

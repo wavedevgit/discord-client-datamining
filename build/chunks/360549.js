@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(152056),
     u = n(612025),
     m = n(985018),
-    g = n(245425);
-let _ = {
+    _ = n(245425);
+let g = {
     label: () => m.intl.string(m.t["32u1Dx"]),
     value: u.YG
 };
@@ -37,16 +37,16 @@ function x() {
     let A = s.useMemo(() => {
         let e = [];
         return e.push({
-            ..._,
-            id: _.value,
-            label: _.label(),
+            ...g,
+            id: g.value,
+            label: g.label(),
             leading: (0, i.jsx)("div", {
-                className: g.KP,
+                className: _.KP,
                 children: (0, i.jsx)(a.pVd, {
                     size: "sm",
                     color: "white",
                     "aria-hidden": !0,
-                    className: g.cl
+                    className: _.cl
                 })
             })
         }), n.forEach(t => {
@@ -56,7 +56,7 @@ function x() {
                 label: n.name,
                 value: n.id,
                 leading: (0, i.jsx)(r.Ay, {
-                    className: g.cl,
+                    className: _.cl,
                     guild: n,
                     size: r.Ay.Sizes.SMALLER,
                     active: !0

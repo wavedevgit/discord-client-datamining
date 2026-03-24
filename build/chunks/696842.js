@@ -22,8 +22,8 @@ function m(e) {
         applicationId: n,
         channel: s,
         exitFullScreen: m,
-        appContext: _,
-        analyticsLocation: p,
+        appContext: p,
+        analyticsLocation: _,
         className: g,
         size: f = "sm"
     } = e, x = s?.getGuildId(), C = s?.id, E = (0, a.bG)([d.A], () => null != x ? d.A.getGuild(x) : null, [x]), I = (0, a.bG)([o.Ay], () => o.Ay.getActiveEventByChannel(C), [C]);
@@ -41,9 +41,9 @@ function m(e) {
                     channel: s,
                     streamUserId: t?.ownerId,
                     applicationId: n,
-                    appContext: _,
+                    appContext: p,
                     exitFullScreen: m,
-                    analyticsLocation: p,
+                    analyticsLocation: _,
                     guildScheduledEvent: I,
                     source: h.PE1.STAGE_CHANNEL
                 })

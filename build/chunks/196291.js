@@ -12,20 +12,20 @@ var i = n(627968),
     c = n(234419),
     u = n(10368),
     m = n(535646),
-    g = n(511484),
-    _ = n(202639),
+    _ = n(511484),
+    g = n(202639),
     x = n(811611),
     A = n(407217),
     h = n(101058),
     p = n(207803),
     f = n(84540),
     T = n(836602),
-    E = n(954571),
-    S = n(515718),
+    S = n(954571),
+    E = n(515718),
     b = n(927578),
     C = n(919395),
-    N = n(884546),
-    v = n(597551),
+    v = n(884546),
+    N = n(597551),
     I = n(230084),
     j = n(180020),
     y = n(212168),
@@ -62,13 +62,13 @@ function k(e) {
         preset: X,
         onShuffle: K
     } = (0, u.A)(), W = s.useRef(null);
-    (0, v.A)(W, G._F.TRY_IT_OUT);
+    (0, N.A)(W, G._F.TRY_IT_OUT);
     let {
         analyticsLocations: Z,
         newestAnalyticsLocation: q,
         sourceAnalyticsLocations: Q
     } = (0, o.Ay)(r.A.USER_SETTINGS_TRY_OUT_PREMIUM), J = e => {
-        e && (Y?.startsWith("https:") === !0 ? fetch(Y).then(e => e.blob()).then(e => (0, S.We)(e)).then(e => {
+        e && (Y?.startsWith("https:") === !0 ? fetch(Y).then(e => e.blob()).then(e => (0, E.We)(e)).then(e => {
             (0, f.p)({
                 avatar: z,
                 themeColors: H,
@@ -86,12 +86,12 @@ function k(e) {
         }) : (0, f.p)({
             avatar: z,
             themeColors: H
-        }), (0, C.WU)(z), E.default.track(P.HAw.TRY_IT_OUT_PRESET_SELECTED, {
+        }), (0, C.WU)(z), S.default.track(P.HAw.TRY_IT_OUT_PRESET_SELECTED, {
             preset: X
         }))
     };
     s.useEffect(() => {
-        n && E.default.track(P.HAw.PREMIUM_UPSELL_VIEWED, {
+        n && S.default.track(P.HAw.PREMIUM_UPSELL_VIEWED, {
             type: D.e.PREMIUM_PROFILE_TRY_IT_OUT,
             location: {
                 page: P.liQ.USER_SETTINGS
@@ -101,7 +101,7 @@ function k(e) {
     }, [Q, t, n]);
     let $ = (0, c.V)()?.subscription_trial?.sku_id === D.pe.TIER_2,
         ee = (0, d.O)(),
-        et = (0, g.U9)(ee, D.pe.TIER_2);
+        et = (0, _.U9)(ee, D.pe.TIER_2);
     return k ? (0, i.jsx)(o.f5, {
         value: Z,
         children: (0, i.jsxs)(y.A, {
@@ -110,7 +110,7 @@ function k(e) {
             type: y.i.PREMIUM,
             isShown: !0,
             hasBackground: !0,
-            children: [(0, i.jsx)(N.A, {
+            children: [(0, i.jsx)(v.A, {
                 stickyPreview: !1,
                 layoutClassName: U.th,
                 profilePreviewTitle: (0, i.jsxs)(i.Fragment, {
@@ -171,7 +171,7 @@ function k(e) {
                         children: M.intl.string(M.t["smo74/"])
                     })]
                 })
-            }), !$ && (0, i.jsx)(_.d, {
+            }), !$ && (0, i.jsx)(g.d, {
                 onSubscribeModalClose: J,
                 className: U.Kv,
                 showUpsell: !0,

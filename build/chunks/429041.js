@@ -13,8 +13,8 @@ var s = n(873298),
     c = n(771888),
     u = n(171316),
     m = n(945276),
-    g = n(562783),
-    _ = n(290389),
+    _ = n(562783),
+    g = n(290389),
     x = n(985018),
     A = n(842130);
 
@@ -33,14 +33,14 @@ function h() {
                 entryPoint: a.q1.SENSITIVE_MEDIA_FILTER_SETTINGS
             }) : (0, o.Jz)(e)
         },
-        E = [{
+        S = [{
             value: s.TO.BLUR,
             label: x.intl.string(x.t.S49Uad)
         }, {
             value: s.TO.BLOCK,
             label: x.intl.string(x.t["D/157Y"])
         }],
-        S = [{
+        E = [{
             value: s.TO.BLUR,
             label: x.intl.string(x.t.S49Uad)
         }],
@@ -48,30 +48,30 @@ function h() {
             value: s.TO.SHOW,
             label: x.intl.string(x.t["5k5OFp"])
         };
-    e && (E.unshift(b), S.unshift(b));
+    e && (S.unshift(b), E.unshift(b));
     let C = {
         isDisabled: n,
         tooltipText: t ? x.intl.string(A.default["6Af/cw"]) : void 0
     };
-    return (0, i.jsxs)(g.E, {
+    return (0, i.jsxs)(_.E, {
         description: x.intl.string(x.t.Wnojv1),
-        children: [(0, i.jsx)(_.A, {
+        children: [(0, i.jsx)(g.A, {
             title: x.intl.string(x.t["+uI23H"]),
             value: p,
             onChange: e => T({
                 explicitContentFriendDm: e
             }),
-            options: E,
+            options: S,
             ...C
-        }), (0, i.jsx)(_.A, {
+        }), (0, i.jsx)(g.A, {
             title: x.intl.string(x.t["Yh+HX1"]),
             value: f,
             onChange: e => T({
                 explicitContentNonFriendDm: e
             }),
-            options: E,
+            options: S,
             ...C
-        }), (0, i.jsx)(_.A, {
+        }), (0, i.jsx)(g.A, {
             title: x.intl.string(x.t["FP+a42"]),
             value: h,
             onChange: e => T({
@@ -79,7 +79,7 @@ function h() {
             }),
             isDisabled: !e || n,
             tooltipText: t ? x.intl.string(A.default["6Af/cw"]) : void 0,
-            options: S
+            options: E
         })]
     })
 }

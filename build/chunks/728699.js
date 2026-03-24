@@ -1,6 +1,6 @@
 /** chunk id: 728699 params = (module,exports,require) **/
 n.d(t, {
-    T: () => _
+    T: () => g
 });
 var i = n(64700),
     s = n(934551),
@@ -12,11 +12,11 @@ var i = n(64700),
     c = n(264474),
     u = n(985018),
     m = n(842130);
-let g = (0, r.t_)(d.X.FAMILY_CENTER_PANEL, {
+let _ = (0, r.t_)(d.X.FAMILY_CENTER_PANEL, {
         useTitle: () => u.intl.string(m.default.RZqaJn),
         buildLayout: () => [c.g]
     }),
-    _ = (0, r.i4)(d.X.FAMILY_CENTER_SIDEBAR_ITEM, {
+    g = (0, r.i4)(d.X.FAMILY_CENTER_SIDEBAR_ITEM, {
         useTitle: () => u.intl.string(m.default.RZqaJn),
         icon: s.GroupIcon,
         usePersistentBadge: function() {
@@ -31,5 +31,5 @@ let g = (0, r.t_)(d.X.FAMILY_CENTER_PANEL, {
                 dismissibleContent: l.M.FAMILY_CENTER_NEW_BADGE
             }]
         },
-        buildLayout: () => [g]
+        buildLayout: () => [_]
     })

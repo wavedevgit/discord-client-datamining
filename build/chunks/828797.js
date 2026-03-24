@@ -12,8 +12,8 @@ var i = n(311907),
     c = n(548018),
     u = n(953410),
     m = n(102277),
-    g = n(354093),
-    _ = n(909081),
+    _ = n(354093),
+    g = n(909081),
     x = n(25894),
     A = n(237948),
     h = n(32096),
@@ -27,5 +27,5 @@ let T = (0, s.zZ)(r.X.ACCOUNT_AUTHENTICATION_CATEGORY, {
             notice: d.A
         } : null
     },
-    buildLayout: () => [g.L, h.A, p.k, m.v, c.c, u.g, _.T, x.C, ...(0, o.pC)("AccountAuthenticationCategory") ? [A.w] : []]
+    buildLayout: () => [_.L, h.A, p.k, m.v, c.c, u.g, g.T, x.C, ...(0, o.pC)("AccountAuthenticationCategory") ? [A.w] : []]
 })

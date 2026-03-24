@@ -1,52 +1,52 @@
 /** chunk id: 223251 params = (module,exports,require) **/
 "use strict";
-n.d(t, {
-    A: () => S
+i.d(t, {
+    A: () => I
 });
-var i = n(64700),
-    s = n(136722),
-    l = n(311907),
-    a = n(58149),
-    r = n(332456),
-    o = n(237774),
-    d = n(973854),
-    c = n(815706),
-    u = n(734057),
-    h = n(808728),
-    p = n(696451),
-    A = n(71393),
-    f = n(576705),
-    g = n(309010),
-    _ = n(967198),
-    m = n(287809),
-    x = n(256415),
-    E = n(9302),
-    y = n(652215);
-class v extends i.Component {
+var n = i(64700),
+    s = i(136722),
+    a = i(311907),
+    l = i(58149),
+    r = i(332456),
+    o = i(237774),
+    d = i(973854),
+    c = i(815706),
+    u = i(734057),
+    h = i(808728),
+    _ = i(696451),
+    p = i(71393),
+    f = i(576705),
+    m = i(309010),
+    g = i(967198),
+    A = i(287809),
+    x = i(256415),
+    v = i(9302),
+    y = i(652215);
+class E extends n.Component {
     componentDidUpdate(e) {
         if (this.props.locked) return null;
         let {
             selectedGuild: t,
-            selectedChannel: n,
-            isMemberPending: i,
+            selectedChannel: i,
+            isMemberPending: n,
             hasPreviewEnabled: s,
-            postableChannelCount: l
+            postableChannelCount: a
         } = this.props;
-        if (null != t && (t !== e.selectedGuild || i && !e.isMemberPending) && ((0, c.z)(y.HAw.GUILD_VIEWED, {
-                ...i ? {
-                    is_pending: i,
+        if (null != t && (t !== e.selectedGuild || n && !e.isMemberPending) && ((0, c.z)(y.HAw.GUILD_VIEWED, {
+                ...n ? {
+                    is_pending: n,
                     preview_enabled: s
                 } : {},
-                postable_channels: l
+                postable_channels: a
             }), (0, o.k)(y.HAw.GUILD_VIEWED_CLICKSTREAM, {
                 guild_id: t
-            })), null != n && n !== e.selectedChannel) {
-            let e = (0, r.C)(u.A.getChannel(n), !0);
+            })), null != i && i !== e.selectedChannel) {
+            let e = (0, r.C)(u.A.getChannel(i), !0);
             (0, c.z)(y.HAw.CHANNEL_OPENED, {
                 ...e,
-                ...(0, a.qL)(n)
+                ...(0, l.qL)(i)
             }), (0, d.A)({
-                channelId: n
+                channelId: i
             })
         }
     }
@@ -54,25 +54,25 @@ class v extends i.Component {
         return null
     }
 }
-let S = l.Ay.connectStores([_.A, g.A, A.A, m.default, x.default, h.Ay, f.A, p.Ay], () => {
-    let e = _.A.getGuildId(),
-        t = g.A.getChannelId(e),
-        n = A.A.getGuild(e),
-        i = m.default.getCurrentUser(),
-        l = h.Ay.getChannels(n?.id)[h.I6] ?? [],
-        a = l.length > 0 ? l.filter(e => {
+let I = a.Ay.connectStores([g.A, m.A, p.A, A.default, x.default, h.Ay, f.A, _.Ay], () => {
+    let e = g.A.getGuildId(),
+        t = m.A.getChannelId(e),
+        i = p.A.getGuild(e),
+        n = A.default.getCurrentUser(),
+        a = h.Ay.getChannels(i?.id)[h.I6] ?? [],
+        l = a.length > 0 ? a.filter(e => {
             let {
                 channel: t
             } = e;
             return f.A.can(s.kg(y.xBc.SEND_MESSAGES, y.xBc.VIEW_CHANNEL), t)
         }).length : 0,
-        r = null != i && null != e && (p.Ay.getMember(e, i.id)?.isPending ?? !1);
+        r = null != n && null != e && (_.Ay.getMember(e, n.id)?.isPending ?? !1);
     return {
         selectedGuild: e,
         selectedChannel: t,
-        locked: x.default.isLocked((0, E.getPID)()),
-        hasPreviewEnabled: n?.features.has(y.GuildFeatures.PREVIEW_ENABLED),
+        locked: x.default.isLocked((0, v.getPID)()),
+        hasPreviewEnabled: i?.features.has(y.GuildFeatures.PREVIEW_ENABLED),
         isMemberPending: r,
-        postableChannelCount: a
+        postableChannelCount: l
     }
-})(v)
+})(E)

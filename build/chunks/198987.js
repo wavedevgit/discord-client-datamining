@@ -1,6 +1,6 @@
 /** chunk id: 198987 params = (module,exports,require) **/
 n.d(t, {
-    t: () => _
+    t: () => g
 });
 var i = n(64700),
     s = n(311907),
@@ -12,16 +12,16 @@ var i = n(64700),
     c = n(856134),
     u = n(662128),
     m = n(811231),
-    g = n(985018);
-let _ = (0, l.zZ)(o.X.SOUNDS_CATEGORY, {
-    useTitle: () => g.intl.string(g.t.MKWyKc),
+    _ = n(985018);
+let g = (0, l.zZ)(o.X.SOUNDS_CATEGORY, {
+    useTitle: () => _.intl.string(_.t.MKWyKc),
     useInlineNotice: function() {
         let e = (0, s.bG)([r.A], () => r.A.getDisableAllSounds());
         return i.useMemo(() => {
             if (e) return {
                 type: a.lT.INLINE_NOTICE,
                 noticeType: "warning",
-                useText: () => g.intl.format(g.t.fRvixS, {
+                useText: () => _.intl.format(_.t.fRvixS, {
                     onClick: () => (0, d.openUserSettings)(o.X.NOTIFICATIONS_SOUNDS_CATEGORY)
                 })
             }

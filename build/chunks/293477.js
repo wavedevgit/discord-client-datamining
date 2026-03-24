@@ -42,12 +42,12 @@ function m(e) {
         discount: i,
         product: o,
         hasSufficientOrbs: m,
-        isProductDisabled: h,
-        discountOfferAmount: p
-    } = e, x = null != p;
+        isProductDisabled: p,
+        discountOfferAmount: f
+    } = e, h = null != f;
     return 0 === t.length ? null : t[0].currency === c.Yr.DISCORD_ORB ? (0, n.jsx)(u, {
         orbPrice: t[0],
-        isProductDisabled: h,
+        isProductDisabled: p,
         hasSufficientOrbs: m
     }) : (0, n.jsxs)("div", {
         className: d.eg,
@@ -57,17 +57,17 @@ function m(e) {
                 product: o,
                 discount: i,
                 isPremiumUser: r,
-                hideStrikethroughPrice: !r || x,
+                hideStrikethroughPrice: !r || h,
                 nitroIconType: "tooltip",
                 nitroIconSize: "xs",
-                discountOfferAmount: p
-            }), r || x ? null : (0, n.jsx)(a.A, {
+                discountOfferAmount: f
+            }), r || h ? null : (0, n.jsx)(a.A, {
                 product: o
             })]
         }), t.length > 1 && t[1].currency === c.Yr.DISCORD_ORB && (0, n.jsx)(l.x, {
             priceAmount: t[1].amount,
             priceCurrency: t[1].currency,
-            className: h || !m ? d.r9 : void 0
+            className: p || !m ? d.r9 : void 0
         })]
     })
 }

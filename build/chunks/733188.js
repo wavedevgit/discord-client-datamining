@@ -1,6 +1,6 @@
 /** chunk id: 733188 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => S
 });
 var i = n(627968),
     s = n(64700),
@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(763754),
     u = n(20851),
     m = n(95701),
-    g = n(486020),
-    _ = n(253932),
+    _ = n(486020),
+    g = n(253932),
     x = n(652215),
     A = n(985018),
     h = n(709214);
@@ -47,9 +47,9 @@ function T(e) {
     })
 }
 
-function E() {
-    let e = _.hH.useSetting(),
-        t = _.jW.useSetting(),
+function S() {
+    let e = g.hH.useSetting(),
+        t = g.jW.useSetting(),
         n = s.useMemo(() => [T(A.intl.formatToPlainString(A.t.BknJRT, {}), t ? [{
             emoji: {
                 id: null,
@@ -112,7 +112,7 @@ function E() {
                                 status: t,
                                 isMobile: s,
                                 size: a._3J.SIZE_32,
-                                src: g.Ay.getDefaultAvatarURL(void 0, n),
+                                src: _.Ay.getDefaultAvatarURL(void 0, n),
                                 "aria-label": A.intl.string(A.t.VKE5TK)
                             }, t)
                         })

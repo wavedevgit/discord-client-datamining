@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(893598),
     u = n(333354),
     m = n(985018),
-    g = n(575651),
-    _ = n(519636);
+    _ = n(575651),
+    g = n(519636);
 
 function x(e) {
     let {
@@ -40,31 +40,31 @@ function x(e) {
         })
     }, [A, f, t, h]);
     return "member" === l ? (0, i.jsxs)(o.DUT, {
-        className: a()(g.iR, x),
+        className: a()(_.iR, x),
         onClick: T,
         "aria-label": m.intl.string(u.default["103aY+"]),
         children: [(0, i.jsx)("img", {
             alt: "",
-            className: g.xn,
-            src: _.A
+            className: _.xn,
+            src: g.A
         }), (0, i.jsx)("div", {
-            className: g.b1
+            className: _.b1
         }), (0, i.jsx)("div", {
-            className: g.i5,
+            className: _.i5,
             children: (0, i.jsx)(o.Text, {
                 variant: "text-xs/semibold",
                 color: "always-white",
                 children: m.intl.string(u.default.diMhWc)
             })
         }), (0, i.jsx)(c.A, {
-            className: g.Rr,
+            className: _.Rr,
             inactive: !0,
             renderLinkComponent: () => null
         })]
     }) : (0, i.jsxs)("div", {
-        className: g.kL,
+        className: _.kL,
         children: [(0, i.jsx)("div", {
-            className: a()(g.X8, "theme-dark"),
+            className: a()(_.X8, "theme-dark"),
             children: (0, i.jsx)(r.K0, {
                 variant: "icon-only",
                 size: "md",
@@ -73,22 +73,22 @@ function x(e) {
                 icon: o.PGe
             })
         }), (0, i.jsxs)(o.DUT, {
-            className: g.iT,
+            className: _.iT,
             onClick: T,
             "aria-label": m.intl.string(u.default["103aY+"]),
             children: [(0, i.jsx)("img", {
                 alt: "",
-                className: g.xn,
-                src: _.A
+                className: _.xn,
+                src: g.A
             }), (0, i.jsx)("div", {
-                className: g.TQ
+                className: _.TQ
             }), (0, i.jsx)(c.A, {
-                className: g.Rr,
+                className: _.Rr,
                 inactive: !0,
                 renderLinkComponent: () => null
             })]
         }), (0, i.jsxs)("div", {
-            className: g.FS,
+            className: _.FS,
             children: [(0, i.jsx)(o.Text, {
                 variant: "text-md/semibold",
                 color: "text-strong",

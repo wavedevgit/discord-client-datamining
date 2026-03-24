@@ -12,17 +12,17 @@ var i = n(627968),
     c = n(827734),
     u = n(397927),
     m = n(827343),
-    g = n(915089),
-    _ = n(419954),
+    _ = n(915089),
+    g = n(419954),
     x = n(430452),
     A = n(780964),
     h = n(731854),
     p = n(985018),
     f = n(15267),
     T = n(785294);
-let E = (0, g.Ld)();
+let S = (0, _.Ld)();
 
-function S(e) {
+function E(e) {
     let {
         isSpeaking: t,
         className: n,
@@ -54,11 +54,11 @@ function b(e) {
         disabled: o
     } = e, {
         threshold: d,
-        autoThreshold: g
+        autoThreshold: _
     } = (0, r.cf)([x.Ay], () => ({
         threshold: x.Ay.getModeOptions().threshold,
         autoThreshold: x.Ay.getModeOptions().autoThreshold
-    })), _ = (0, r.bG)([x.Ay], () => x.Ay.getMode());
+    })), g = (0, r.bG)([x.Ay], () => x.Ay.getMode());
     return (0, i.jsx)("section", {
         className: a()(f.Mo, f.jW),
         id: n,
@@ -69,9 +69,9 @@ function b(e) {
             onValueRender: e => `${(-((100-e)*1)).toFixed(0)}dB`,
             onValueChange: e => {
                 var t;
-                return t = -((100 - e) * 1), void m.A.setMode(_, {
+                return t = -((100 - e) * 1), void m.A.setMode(g, {
                     threshold: t,
-                    autoThreshold: g
+                    autoThreshold: _
                 })
             },
             barStyles: {
@@ -80,7 +80,7 @@ function b(e) {
             fillStyles: {
                 background: c.A.unsafe_rawColors.YELLOW_300.css
             },
-            "aria-labelledby": E,
+            "aria-labelledby": S,
             disabled: o,
             children: (0, i.jsxs)("div", {
                 className: a()(f.NU, f.TL, f.Jx, T.bar),
@@ -96,7 +96,7 @@ function b(e) {
         })
     })
 }
-let C = (0, _.E2)(A.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
+let C = (0, g.E2)(A.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
     useSearchTerms: () => [p.intl.string(p.t["sqUm+k"]), p.intl.string(p.t.I1Zuq0), p.intl.string(p.t.nuFtHH)],
     usePredicate: () => (0, r.bG)([x.Ay], () => x.Ay.isInputProfileCustom()),
     Component: function() {
@@ -135,7 +135,7 @@ let C = (0, _.E2)(A.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
                 volume: e,
                 isSpeaking: n
             }
-        }(), g = (0, r.bG)([x.Ay], () => x.Ay.isEnabled()), _ = s.useMemo(() => !g && (0, i.jsx)("div", {
+        }(), _ = (0, r.bG)([x.Ay], () => x.Ay.isEnabled()), g = s.useMemo(() => !_ && (0, i.jsx)("div", {
             className: f.B4,
             children: (0, i.jsx)(u.wx6, {
                 type: "warning",
@@ -143,15 +143,15 @@ let C = (0, _.E2)(A.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
                     onEnableClick: () => m.A.enable(!0)
                 })
             })
-        }), [g]), A = s.useMemo(() => e ? p.intl.string(p.t.JsbzjA) : p.intl.string(p.t.MLmyMY), [e]), T = s.useId(), E = s.useId();
+        }), [_]), A = s.useMemo(() => e ? p.intl.string(p.t.JsbzjA) : p.intl.string(p.t.MLmyMY), [e]), T = s.useId(), S = s.useId();
         return l ? (0, i.jsxs)("fieldset", {
-            "aria-describedby": E,
+            "aria-describedby": S,
             children: [(0, i.jsx)(u.AC4, {
                 tag: "legend",
                 id: T,
                 children: p.intl.string(p.t.GByLar)
             }), (0, i.jsx)(u.AC4, {
-                id: E,
+                id: S,
                 children: A
             }), (0, i.jsxs)(u.BJc, {
                 direction: "vertical",
@@ -162,18 +162,18 @@ let C = (0, _.E2)(A.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
                     description: A,
                     checked: e,
                     onChange: n
-                }), e ? (0, i.jsx)(S, {
+                }), e ? (0, i.jsx)(E, {
                     isSpeaking: c,
                     className: f.UJ,
-                    ariaDescribedBy: E,
+                    ariaDescribedBy: S,
                     ariaLabelledBy: T,
                     disabled: t
                 }) : (0, i.jsx)(b, {
                     volume: a,
-                    ariaDescribedBy: E,
+                    ariaDescribedBy: S,
                     ariaLabelledBy: T,
                     disabled: t
-                }), _]
+                }), g]
             })]
         }) : (0, i.jsxs)(u.BJc, {
             direction: "vertical",
@@ -182,7 +182,7 @@ let C = (0, _.E2)(A.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
                 label: p.intl.string(p.t["sqUm+k"]),
                 description: A,
                 layout: "vertical",
-                children: n => e ? (0, i.jsx)(S, {
+                children: n => e ? (0, i.jsx)(E, {
                     isSpeaking: c,
                     className: f.UJ,
                     id: n.controlId,
@@ -196,7 +196,7 @@ let C = (0, _.E2)(A.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
                     ariaLabelledBy: n.labelId,
                     disabled: t
                 })
-            }), _]
+            }), g]
         })
     }
 })

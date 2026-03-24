@@ -1,6 +1,6 @@
 /** chunk id: 237267 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => g
 });
 var i = n(627968);
 n(64700);
@@ -13,12 +13,12 @@ var s = n(397927),
     c = n(652215),
     u = n(788868),
     m = n(985018),
-    g = n(689507);
-let _ = function(e) {
+    _ = n(689507);
+let g = function(e) {
     let {
         hasAppliedGuildBoosts: t,
         hasBoostPerk: n,
-        hasGuildAffinitiesOrInGuild: _,
+        hasGuildAffinitiesOrInGuild: g,
         subscriptionIsPausedOrPausePending: x
     } = e, {
         subtitle: A,
@@ -44,9 +44,9 @@ let _ = function(e) {
                 helpdeskArticle: l.A.getArticleURL(c.MVz.GUILD_SUBSCRIPTIONS)
             })
         };
-        let g = u.hd[u.gD.PREMIUM_MONTH_GUILD],
-            _ = a.Ay.getDefaultPrice(g.id, n),
-            x = (0, r.CE)((0, r.$g)(_.amount, _.currency), g.interval, g.intervalCount);
+        let _ = u.hd[u.gD.PREMIUM_MONTH_GUILD],
+            g = a.Ay.getDefaultPrice(_.id, n),
+            x = (0, r.CE)((0, r.$g)(g.amount, g.currency), _.interval, _.intervalCount);
         return {
             subtitle: n ? m.intl.string(m.t.bhPzXR) : m.intl.string(m.t.Zs9h9Z),
             flavor: m.intl.formatToPlainString(m.t.PGgTdA, {
@@ -56,14 +56,14 @@ let _ = function(e) {
     }({
         hasAppliedGuildBoosts: t,
         hasBoostPerk: n,
-        hasGuildAffinitiesOrInGuild: _,
+        hasGuildAffinitiesOrInGuild: g,
         subscriptionIsPausedOrPausePending: x
     });
     return (0, i.jsxs)("div", {
-        className: g.i,
+        className: _.i,
         children: [(0, i.jsx)(s.Heading, {
             variant: "heading-lg/bold",
-            className: g.V,
+            className: _.V,
             children: A
         }), null != h && (0, i.jsx)(s.Text, {
             variant: "text-sm/normal",

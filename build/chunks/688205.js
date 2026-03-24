@@ -12,23 +12,23 @@ var i = n(627968),
     c = n(954571),
     u = n(248864),
     m = n(652215),
-    g = n(731854),
-    _ = n(985018);
+    _ = n(731854),
+    g = n(985018);
 
 function x() {
     let e = (0, s.bG)([d.Ay], () => d.Ay.isVideoAvailable()),
         {
             id: t
-        } = (0, r.x5)(g.oh.VIDEO_INPUT),
+        } = (0, r.x5)(_.oh.VIDEO_INPUT),
         {
             analyticsLocations: n
         } = (0, l.Ay)();
     return (0, i.jsx)(a.U, {
-        label: _.intl.string(_.t.FsQ3OR),
-        deviceType: g.oh.VIDEO_INPUT,
+        label: g.intl.string(g.t.FsQ3OR),
+        deviceType: _.oh.VIDEO_INPUT,
         location: "UserSettingsCameraSelect",
         isDisabled: !e,
-        helperText: (0, o.p)() ? _.intl.format(_.t.aJYgRt, {
+        helperText: (0, o.p)() ? g.intl.format(g.t.aJYgRt, {
             onCameraSettingsClick: () => {
                 u.A.setState({
                     previewEnabled: !1

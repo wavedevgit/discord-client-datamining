@@ -1,7 +1,7 @@
 /** chunk id: 689874 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => _
 });
 var i = n(627968),
     s = n(311907),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(572164),
     A = n(806931),
     m = n(985018),
-    _ = n(639291);
-let p = e => {
+    p = n(639291);
+let _ = e => {
     let {
         channelId: t
     } = e;
@@ -28,17 +28,17 @@ let p = e => {
     }) ? (0, i.jsx)(a.m, {
         text: m.intl.string(m.t.DJXW3G),
         children: (0, i.jsxs)("div", {
-            className: _.g0,
+            className: p.g0,
             children: [(0, i.jsx)(r.fkz, {
                 icon: r.xgA,
                 shape: r.EGs.ROUND_LEFT,
                 color: l.A.unsafe_rawColors.PRIMARY_500.css,
-                className: _.Z7
+                className: p.Z7
             }), (0, i.jsx)(r.LpS, {
                 text: m.intl.string(m.t.pCMkDb),
                 shape: r.EGs.ROUND_RIGHT,
                 color: l.A.unsafe_rawColors.PRIMARY_500.css,
-                className: _.lm
+                className: p.lm
             })]
         })
     }) : null

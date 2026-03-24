@@ -12,20 +12,20 @@ var i = n(627968),
     c = n(384904),
     u = n(73825),
     m = n(974544),
-    g = n(107834),
-    _ = n(793574),
+    _ = n(107834),
+    g = n(793574),
     x = n(688810),
     A = n(86379),
     h = n(160946),
     p = n(459793),
     f = n(726649),
     T = n(611924),
-    E = n(351906),
-    S = n(287809),
+    S = n(351906),
+    E = n(287809),
     b = n(295405),
     C = n(166403),
-    N = n(954571),
-    v = n(474090),
+    v = n(954571),
+    N = n(474090),
     I = n(560138),
     j = n(694080),
     y = n(553081),
@@ -44,17 +44,17 @@ let M = function(e) {
         {
             sourceAnalyticsLocations: l,
             analyticsLocations: M
-        } = (0, x.Ay)(_.A.PREMIUM_MARKETING),
+        } = (0, x.Ay)(g.A.PREMIUM_MARKETING),
         U = (0, r.bG)([C.A], () => C.A.hasFetchedSubscriptions()),
         k = (0, r.bG)([b.A], () => b.A.hasFetchedPaymentSources),
-        w = (0, r.bG)([S.default], () => S.default.getCurrentUser()),
+        w = (0, r.bG)([E.default], () => E.default.getCurrentUser()),
         V = w?.id,
         B = (0, R.V)(),
         F = (0, O.O)(),
         H = (0, h.Y)(P.T7),
         [z, Y] = s.useState(!0),
         X = s.useRef(0),
-        K = (0, v.YE)(w, P.PremiumTypes.TIER_2),
+        K = (0, N.YE)(w, P.PremiumTypes.TIER_2),
         W = (0, r.bG)([I.A], () => I.A.hasFetched);
     s.useEffect(() => {
         W || c.xG()
@@ -64,14 +64,14 @@ let M = function(e) {
             await Promise.all([c.hP(), c.$o(), (0, u.zS)(null, null, D.tF5.DISCOVERY)]), X.current = Date.now() - e, Y(!1)
         })
     }, []), s.useEffect(() => {
-        z || N.default.track(D.HAw.PREMIUM_MARKETING_PAGE_VIEWED, {
+        z || v.default.track(D.HAw.PREMIUM_MARKETING_PAGE_VIEWED, {
             location_stack: l,
             load_duration_ms: X.current
         })
     }, [l, z]), s.useEffect(() => {
         n && (null != B || null != F) && (0, j.u1)(B, F)
     }, [n, B, F]);
-    let Z = (0, r.bG)([E.A], () => E.A.enabled),
+    let Z = (0, r.bG)([S.A], () => S.A.enabled),
         q = t === P.Mf.ApplicationStoreHome,
         Q = Z ? (0, i.jsx)(m.A, {}) : n ? (0, i.jsx)(p.uK, {}) : q && K ? (0, i.jsx)(x.f5, {
             value: M,
@@ -83,7 +83,7 @@ let M = function(e) {
             children: (0, i.jsx)(o.y$y, {})
         });
     return null != Q ? (0, i.jsxs)(i.Fragment, {
-        children: [q && (0, i.jsx)(g.A, {}), Q]
+        children: [q && (0, i.jsx)(_.A, {}), Q]
     }) : (0, i.jsx)(x.f5, {
         value: M,
         children: (0, i.jsx)(L.A, {

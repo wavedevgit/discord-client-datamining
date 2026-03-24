@@ -12,15 +12,15 @@ var i = n(627968),
     c = n(615405),
     u = n(295405),
     m = n(166403),
-    g = n(773669),
-    _ = n(652215),
+    _ = n(773669),
+    g = n(652215),
     x = n(445391);
 
 function A(e) {
     let {
         showHeader: t = !1
-    } = e, n = (0, a.bG)([c.A], () => c.A.isSyncing), A = (0, a.bG)([u.A], () => u.A.paymentSources), h = (0, a.bG)([u.A], () => u.A.defaultPaymentSourceId), p = (0, a.bG)([g.default], () => g.default.locale), f = (0, a.bG)([m.A], () => m.A.getPremiumTypeSubscription()), T = (0, a.bG)([c.A], () => c.A.isRemovingPaymentSource), E = (0, a.bG)([c.A], () => c.A.isUpdatingPaymentSource), {
-        enabled: S
+    } = e, n = (0, a.bG)([c.A], () => c.A.isSyncing), A = (0, a.bG)([u.A], () => u.A.paymentSources), h = (0, a.bG)([u.A], () => u.A.defaultPaymentSourceId), p = (0, a.bG)([_.default], () => _.default.locale), f = (0, a.bG)([m.A], () => m.A.getPremiumTypeSubscription()), T = (0, a.bG)([c.A], () => c.A.isRemovingPaymentSource), S = (0, a.bG)([c.A], () => c.A.isUpdatingPaymentSource), {
+        enabled: E
     } = (0, d.c)({
         location: "UserSettingsBilling"
     });
@@ -33,10 +33,10 @@ function A(e) {
         showHeader: t,
         paymentSources: A,
         defaultPaymentSourceId: h,
-        premiumSubscriptionPaymentSourceId: null != f && f.status !== _.Dmq.CANCELED ? f.paymentSourceId : null,
+        premiumSubscriptionPaymentSourceId: null != f && f.status !== g.Dmq.CANCELED ? f.paymentSourceId : null,
         locale: p,
         removing: T,
-        submitting: E,
-        showGiftCards: S
+        submitting: S,
+        showGiftCards: E
     })
 }

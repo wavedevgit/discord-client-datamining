@@ -2,8 +2,8 @@
 n.d(t, {
     $I: () => S,
     Cw: () => u,
-    F7: () => A,
-    IM: () => g,
+    F7: () => g,
+    IM: () => A,
     KD: () => _,
     U_: () => c,
     Uo: () => p,
@@ -87,8 +87,8 @@ function E(e) {
         newPassword: S,
         globalName: h,
         legacyUsername: v,
-        nameplate: g,
-        primaryGuildId: A,
+        nameplate: A,
+        primaryGuildId: g,
         displayNameStyles: I
     } = e;
     l.h.dispatch({
@@ -107,7 +107,7 @@ function E(e) {
         legacy_username: v,
         new_password: S
     };
-    void 0 !== E && (T.avatar_decoration_sku_id = E?.skuId ?? null), void 0 !== g && (T.nameplate_sku_id = g?.skuId ?? null), void 0 !== A && (T.primary_guild_id = A), null != I ? (T.display_name_font_id = I.fontId, T.display_name_effect_id = I.effectId, T.display_name_colors = I.colors) : null === I && (T.display_name_font_id = null, T.display_name_effect_id = null, T.display_name_colors = null);
+    void 0 !== E && (T.avatar_decoration_sku_id = E?.skuId ?? null), void 0 !== A && (T.nameplate_sku_id = A?.skuId ?? null), void 0 !== g && (T.primary_guild_id = g), null != I ? (T.display_name_font_id = I.fontId, T.display_name_effect_id = I.effectId, T.display_name_colors = I.colors) : null === I && (T.display_name_font_id = null, T.display_name_effect_id = null, T.display_name_colors = null);
     let R = i.w.get(s.Xlh),
         y = (0, d.oH)();
     null != y && null != R && (T.push_provider = y, T.push_token = R);
@@ -145,13 +145,13 @@ function v() {
     })
 }
 
-function g() {
+function A() {
     l.h.dispatch({
         type: "USER_PROFILE_SETTINGS_RESET_PENDING_CHANGES"
     })
 }
 
-function A() {
+function g() {
     l.h.dispatch({
         type: "USER_PROFILE_SETTINGS_RESET_AND_CLOSE_FORM"
     })

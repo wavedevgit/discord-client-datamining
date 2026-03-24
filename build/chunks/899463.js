@@ -1,6 +1,6 @@
 /** chunk id: 899463 params = (module,exports,require) **/
 n.d(t, {
-    r: () => _
+    r: () => g
 });
 var i = n(627968),
     s = n(934551),
@@ -12,7 +12,7 @@ var i = n(627968),
     c = n(467758),
     u = n(269420),
     m = n(985018);
-let g = (0, r.t_)(d.X.CLIPS_PANEL, {
+let _ = (0, r.t_)(d.X.CLIPS_PANEL, {
         useTitle: () => m.intl.string(m.t.z2jK6X),
         usePersistentBadge: () => ({
             badgeType: o.Xi.STRONGLY_DISCOURAGED_CUSTOM,
@@ -21,8 +21,8 @@ let g = (0, r.t_)(d.X.CLIPS_PANEL, {
         usePredicate: l.sw,
         buildLayout: () => [u.K, c.W]
     }),
-    _ = (0, r.i4)(d.X.CLIPS_SIDEBAR_ITEM, {
+    g = (0, r.i4)(d.X.CLIPS_SIDEBAR_ITEM, {
         useTitle: () => m.intl.string(m.t.z2jK6X),
         icon: s.ClipsIcon,
-        buildLayout: () => [g]
+        buildLayout: () => [_]
     })

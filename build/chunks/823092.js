@@ -17,7 +17,7 @@ function c(e) {
         children: t
     } = e, n = s.useRef(l.n3), [c, u] = s.useState(!1), m = s.useCallback(e => {
         u(e?.some(e => e.showNotice() && !e.canCloseEarly?.()) ?? !1), n.current = l.n3
-    }, []), g = s.useCallback(e => {
+    }, []), _ = s.useCallback(e => {
         if (c) {
             (0, r.fO)({
                 duration: 300,
@@ -26,13 +26,13 @@ function c(e) {
             return
         }
         e()
-    }, [c]), _ = s.useMemo(() => ({
-        navigateWithValidation: g,
+    }, [c]), g = s.useMemo(() => ({
+        navigateWithValidation: _,
         showNotice: c,
         handleStoreUpdate: m
-    }), [g, c, m]);
+    }), [_, c, m]);
     return (0, i.jsx)(d.Provider, {
-        value: _,
+        value: g,
         children: t
     })
 }

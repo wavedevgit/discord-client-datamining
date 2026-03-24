@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(54570),
     u = n(8880),
     m = n(75804),
-    g = n(985018);
-let _ = a().debounce(e => {
+    _ = n(985018);
+let g = a().debounce(e => {
     (0, c.zU)(e)
 }, 250);
 
@@ -22,22 +22,22 @@ function x() {
     return (0, i.jsxs)(d.BJc, {
         gap: 16,
         children: [(0, i.jsx)(d.Apm, {
-            label: g.intl.string(g.t.lsW5Ev),
-            description: g.intl.string(g.t.Ci4wMS),
+            label: _.intl.string(_.t.lsW5Ev),
+            description: _.intl.string(_.t.Ci4wMS),
             markers: m.P,
             initialValue: e,
             defaultValue: 1,
             stickToMarkers: !0,
-            onValueChange: _,
+            onValueChange: g,
             onValueRender: e => `x${e.toFixed(2)}`,
             onMarkerRender: e => 0 === e ? (0, i.jsx)(d.Text, {
                 variant: "text-xs/medium",
                 color: "text-subtle",
-                children: g.intl.string(g.t["493lwX"])
+                children: _.intl.string(_.t["493lwX"])
             }) : 10 === e ? (0, i.jsx)(d.Text, {
                 variant: "text-xs/medium",
                 color: "text-subtle",
-                children: g.intl.string(g.t.ZSZEdS)
+                children: _.intl.string(_.t.ZSZEdS)
             }) : 1 === e ? (0, i.jsx)(d.Text, {
                 variant: "text-xs/medium",
                 color: "text-feedback-positive",
@@ -50,14 +50,14 @@ function x() {
 function A() {
     let [e, t] = s.useState(!1);
     return (0, r.l0)(() => (0, c.pr)()), (0, i.jsx)(d.Button, {
-        text: g.intl.string(g.t.SKNnqq),
+        text: _.intl.string(_.t.SKNnqq),
         icon: e ? d.E$n : d.udU,
         size: "sm",
         onClick: () => {
             if (e) {
                 (0, c.pr)(), t(!1);
                 return
-            }(0, c.AU)(g.intl.string(g.t.PKaNJL), !0, void 0, () => t(!0), () => t(!1)), t(!0)
+            }(0, c.AU)(_.intl.string(_.t.PKaNJL), !0, void 0, () => t(!0), () => t(!1)), t(!0)
         }
     })
 }

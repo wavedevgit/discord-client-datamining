@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(413339),
     u = n(952572),
     m = n(520999),
-    g = n(430452),
-    _ = n(287809),
+    _ = n(430452),
+    g = n(287809),
     x = n(780964),
     A = n(652215),
     h = n(985018);
@@ -23,8 +23,8 @@ let p = (0, r.E2)(x.X.CAMERA_BACKGROUND_SETTING, {
     Component: function() {
         let e = (0, a.p)(),
             t = s.useRef(!1),
-            n = (0, l.bG)([g.Ay], () => g.Ay.getVideoDeviceId()),
-            [r, u] = s.useState((0, o.i)(_.default.getCurrentUser())),
+            n = (0, l.bG)([_.Ay], () => _.Ay.getVideoDeviceId()),
+            [r, u] = s.useState((0, o.i)(g.default.getCurrentUser())),
             x = s.useRef(r);
         return s.useEffect(() => () => {
             t.current && (0, d._C)(x.current)

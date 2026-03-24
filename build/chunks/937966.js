@@ -1,6 +1,6 @@
 /** chunk id: 937966 params = (module,exports,require) **/
 n.d(t, {
-    _: () => g
+    _: () => _
 });
 var i = n(311907),
     s = n(290595),
@@ -12,7 +12,7 @@ var i = n(311907),
     c = n(137675),
     u = n(652215),
     m = n(985018);
-let g = (0, a.zD)(d.X.DATA_USAGE_PERSONALIZATION_SETTING, {
+let _ = (0, a.zD)(d.X.DATA_USAGE_PERSONALIZATION_SETTING, {
     useTitle: () => m.intl.string(m.t.MNKzyg),
     useSubtitle: () => m.intl.format(m.t["eQL/Mr"], {
         helpdeskArticle: o.A.getArticleURL(u.MVz.DATA_USED_FOR_RECOMMENDED)

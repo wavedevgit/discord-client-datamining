@@ -16,8 +16,8 @@ let d = "url(#gradient)",
             animationClassName: c,
             initialPercentage: u = 0,
             progressCircleStrokeSize: m = 2,
-            progressCircleVariation: g,
-            progressCircleStroke: _
+            progressCircleVariation: _,
+            progressCircleStroke: g
         } = e, x = 43 + m / 2, A = 2 * Math.PI * x, [h, p] = s.useState(u);
         s.useEffect(() => {
             let e = setTimeout(() => {
@@ -27,7 +27,7 @@ let d = "url(#gradient)",
         }, [t]);
         let f = (0, a.Ay)(),
             T = (0, l.qB)(f),
-            E = (e => {
+            S = (e => {
                 switch (e) {
                     case r.BN.NITRO_GEM:
                     case r.BN.AVATAR_DECO:
@@ -37,8 +37,8 @@ let d = "url(#gradient)",
                     default:
                         return
                 }
-            })(g),
-            S = ((e, t) => {
+            })(_),
+            E = ((e, t) => {
                 switch (e) {
                     case r.BN.NITRO_LOGO:
                         return t ? "0.3" : "0.2";
@@ -47,8 +47,8 @@ let d = "url(#gradient)",
                     default:
                         return
                 }
-            })(g, T),
-            b = _ ?? ((e, t) => {
+            })(_, T),
+            b = g ?? ((e, t) => {
                 switch (t) {
                     case r.BN.NITRO_GEM:
                     case r.BN.AVATAR_DECO:
@@ -58,21 +58,21 @@ let d = "url(#gradient)",
                     default:
                         return
                 }
-            })(T, g);
+            })(T, _);
         return (0, i.jsxs)("div", {
             className: o.Ap,
             children: [(0, i.jsxs)("svg", {
                 viewBox: "0 0 100 100",
                 className: o.fB,
                 children: [(0, i.jsx)("circle", {
-                    className: g === r.BN.NITRO_GEM || g === r.BN.AVATAR_DECO ? o.F3 : void 0,
+                    className: _ === r.BN.NITRO_GEM || _ === r.BN.AVATAR_DECO ? o.F3 : void 0,
                     fill: "transparent",
                     strokeWidth: m,
                     r: `${x}`,
                     cx: "50%",
                     cy: "50%",
-                    stroke: E,
-                    strokeOpacity: S
+                    stroke: S,
+                    strokeOpacity: E
                 }), (0, i.jsx)("circle", {
                     stroke: b,
                     strokeWidth: m,

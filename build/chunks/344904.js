@@ -12,8 +12,8 @@ var i, s = n(627968),
     c = n(775602),
     u = n(580314),
     m = n(251360),
-    g = n(468052),
-    _ = n(769411),
+    _ = n(468052),
+    g = n(769411),
     x = n(242142),
     A = ((i = {})[i.NITRO_GEM = 0] = "NITRO_GEM", i[i.NITRO_LOGO = 1] = "NITRO_LOGO", i[i.AVATAR_DECO = 2] = "AVATAR_DECO", i);
 let h = e => {
@@ -52,20 +52,20 @@ let h = e => {
             progressCircleVariation: p = 0,
             avatarDecorationLegacyAssetId: f,
             avatarDecorationSkuId: T,
-            avatarDecoAssetDescription: E,
-            ellipseOpacity: S,
+            avatarDecoAssetDescription: S,
+            ellipseOpacity: E,
             customAnimationClassName: b,
             circleColor: C,
-            circleStroke: N
-        } = e, v = (0, o.bG)([c.A], () => c.A.useReducedMotion), I = t && !v;
+            circleStroke: v
+        } = e, N = (0, o.bG)([c.A], () => c.A.useReducedMotion), I = t && !N;
         return (0, s.jsx)("div", {
             className: r()(x.G3, n),
-            children: (0, s.jsx)(_.A, {
+            children: (0, s.jsx)(g.A, {
                 animationClassName: r()(x._0, {
                     [x.uJ]: I,
                     [b ?? ""]: I
                 }),
-                progressCircleStroke: N,
+                progressCircleStroke: v,
                 progressCircleStrokeSize: a,
                 percentage: i ?? u,
                 initialPercentage: i ?? A,
@@ -79,15 +79,15 @@ let h = e => {
                                 backgroundCircleSize: d
                             });
                         case 1:
-                            return (0, s.jsx)(g.A, {
+                            return (0, s.jsx)(_.A, {
                                 circleColor: C,
-                                ellipseOpacity: S
+                                ellipseOpacity: E
                             });
                         case 2:
                             if (null != T) return (0, s.jsx)(h, {
                                 avatarDecorationLegacyAssetId: f,
                                 avatarDecorationSkuId: T,
-                                avatarDecoAssetDescription: E
+                                avatarDecoAssetDescription: S
                             });
                             return null;
                         default:

@@ -1,6 +1,6 @@
 /** chunk id: 431982 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -13,13 +13,13 @@ var i = n(627968),
     u = n(985018),
     m = n(888920);
 
-function g(e) {
+function _(e) {
     let {
         user: t,
         guild: n,
-        titleIcon: g
+        titleIcon: _
     } = e, {
-        analyticsLocations: _
+        analyticsLocations: g
     } = (0, a.Ay)(), x = null != n, {
         userNameplate: A,
         guildNameplate: h,
@@ -27,10 +27,10 @@ function g(e) {
         pendingErrors: f
     } = (0, d.rv)(t, n?.id), T = s.useCallback(() => {
         (0, r.p)({
-            analyticsLocations: _,
+            analyticsLocations: g,
             guildId: n?.id
         })
-    }, [_, n?.id]), E = s.useCallback(() => {
+    }, [g, n?.id]), S = s.useCallback(() => {
         (0, o.p)({
             guildId: n?.id,
             nameplate: null
@@ -38,7 +38,7 @@ function g(e) {
     }, [n?.id]);
     return (0, i.jsx)(c.A, {
         title: u.intl.string(u.t.x5CoXR),
-        titleIcon: g,
+        titleIcon: _,
         errors: f,
         children: (0, i.jsxs)("div", {
             className: m.u,
@@ -51,7 +51,7 @@ function g(e) {
                 variant: "secondary",
                 size: "sm",
                 text: x ? u.intl.string(u.t.CHf9iJ) : u.intl.string(u.t["9zwziY"]),
-                onClick: E
+                onClick: S
             })]
         })
     })

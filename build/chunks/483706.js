@@ -1,6 +1,6 @@
 /** chunk id: 483706 params = (module,exports,require) **/
 n.d(t, {
-    p: () => v
+    p: () => N
 });
 var i = n(627968),
     s = n(64700),
@@ -12,16 +12,16 @@ var i = n(627968),
     c = n(12901),
     u = n(840065),
     m = n(899847),
-    g = n(936926),
-    _ = n(809697),
+    _ = n(936926),
+    g = n(809697),
     x = n(153739),
     A = n(534654),
     h = n(834981),
     p = n(191627),
     f = n(842130),
     T = n(985018),
-    E = n(191248);
-let S = e => {
+    S = n(191248);
+let E = e => {
         let {
             title: t,
             buttonText: n,
@@ -131,13 +131,13 @@ let S = e => {
             })]
         })
     },
-    N = () => {
+    v = () => {
         let e = (0, x.y3)(),
             t = (0, x.tl)(),
             {
                 handleTabChange: n
-            } = (0, _.A)(),
-            a = (0, g.Vh)({
+            } = (0, g.A)(),
+            a = (0, _.Vh)({
                 location: "TimeControlsRow"
             });
         s.useEffect(() => {
@@ -158,29 +158,29 @@ let S = e => {
                     color: "text-muted",
                     children: T.intl.string(f.default.Sv236e)
                 })]
-            }), (0, i.jsx)(S, {
+            }), (0, i.jsx)(E, {
                 title: T.intl.string(T.t["+o1pDZ"]),
                 buttonText: T.intl.string(T.t.bt75uw),
                 onButtonPress: () => r(p.u9.CONTENT_AND_SOCIAL)
             }), (0, i.jsx)(o.A, {
-                className: E.yF
-            }), (0, i.jsx)(S, {
+                className: S.yF
+            }), (0, i.jsx)(E, {
                 title: T.intl.string(T.t.OAuOHD),
                 buttonText: T.intl.string(T.t.bt75uw),
                 onButtonPress: () => r(p.u9.DATA_AND_PRIVACY)
             }), a && e?.id != null && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(o.A, {
-                    className: E.yF
+                    className: S.yF
                 }), (0, i.jsx)(C, {
                     teenId: e.id
                 })]
             })]
         })
     },
-    v = () => {
+    N = () => {
         let e = (0, A.A)();
         return 0 === (0, h.vx)().length ? null : (0, i.jsx)("div", {
-            className: E.kL,
-            children: e ? (0, i.jsx)(b, {}) : (0, i.jsx)(N, {})
+            className: S.kL,
+            children: e ? (0, i.jsx)(b, {}) : (0, i.jsx)(v, {})
         })
     }

@@ -1,6 +1,6 @@
 /** chunk id: 998548 params = (module,exports,require) **/
 n.d(t, {
-    Xj: () => E,
+    Xj: () => S,
     aK: () => p,
     m3: () => f
 });
@@ -15,14 +15,14 @@ var i = n(627968),
     u = n(207560),
     m = n(558001);
 n(866945);
-var g = n(840387),
-    _ = n(933297),
+var _ = n(840387),
+    g = n(933297),
     x = n(975571),
     A = n(835002),
     h = n(985018);
 
 function p() {
-    let e = (0, g.Z)(),
+    let e = (0, _.Z)(),
         t = (0, c.WX)(),
         n = s.useCallback(() => {
             window.open(x.A.getArticleURL(t), "_blank"), (0, m.N)(A.YA.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE, A.YX.LEARN_MORE)
@@ -32,7 +32,7 @@ function p() {
         }, []);
     return s.useMemo(() => {
         if (e) return {
-            type: _.lT.INLINE_NOTICE,
+            type: g.lT.INLINE_NOTICE,
             noticeType: "info",
             trackView: l,
             useText: () => h.intl.format(h.t.EUo0yj, {
@@ -59,7 +59,7 @@ function f() {
         }, []);
     return s.useMemo(() => {
         if (n) return {
-            type: _.lT.INLINE_NOTICE,
+            type: g.lT.INLINE_NOTICE,
             noticeType: "info",
             trackView: c,
             useText: () => h.intl.format(h.t.OX4ybh, {
@@ -103,12 +103,12 @@ function T() {
     })
 }
 
-function E() {
+function S() {
     let e = (0, u.aX)(l.t.REACTIVE_CHECK),
         t = (0, d.b8)();
     return s.useMemo(() => {
         if (e && !t) return {
-            type: _.lT.STRONGLY_DISCOURAGED_CUSTOM,
+            type: g.lT.STRONGLY_DISCOURAGED_CUSTOM,
             notice: T
         }
     }, [e, t])

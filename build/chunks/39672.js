@@ -16,8 +16,8 @@ function m(e) {
     let {
         guildBoostSlot: t,
         onClose: m,
-        hasCancelableGuildBoostSlot: g,
-        premiumSubscription: _,
+        hasCancelableGuildBoostSlot: _,
+        premiumSubscription: g,
         onSelect: x,
         fractionalState: A
     } = e, h = {
@@ -28,8 +28,8 @@ function m(e) {
         },
         cancel: {
             label: u.intl.string(u.t.twFU3R),
-            subtext: g ? null : u.intl.string(u.t.oQ9lOh),
-            disabled: !g
+            subtext: _ ? null : u.intl.string(u.t.oQ9lOh),
+            disabled: !_
         },
         uncancel: {
             label: u.intl.string(u.t["2glQNp"]),
@@ -37,7 +37,7 @@ function m(e) {
             disabled: !1
         }
     };
-    switch (_.status) {
+    switch (g.status) {
         case d.Dmq.PAST_DUE:
             h.cancel.disabled = !0, h.cancel.subtext = u.intl.string(u.t.WnL6DV), h.uncancel.disabled = !0;
             break;
@@ -45,7 +45,7 @@ function m(e) {
         case d.Dmq.PAUSED:
             A === c.xc.NONE && (h.transfer.disabled = !0, h.transfer.subtext = u.intl.string(u.t.LiLRRT), h.cancel.subtext = u.intl.string(u.t["1ywaWL"]), h.cancel.disabled = !0, h.uncancel.disabled = !0)
     }
-    let p = s.useMemo(() => _.isPausedOrPausePending && A === c.xc.NONE ? (0, i.jsx)(l.Drp, {
+    let p = s.useMemo(() => g.isPausedOrPausePending && A === c.xc.NONE ? (0, i.jsx)(l.Drp, {
         id: "manage-subscription",
         label: u.intl.string(u.t.obRG6Y),
         action: () => (0, r.openUserSettings)(a.X.SUBSCRIPTIONS_PANEL),
@@ -54,7 +54,7 @@ function m(e) {
             type: "icon",
             icon: l.xmO
         }
-    }) : null, [A, _]);
+    }) : null, [A, g]);
     return (0, i.jsxs)(l.W1t, {
         "data-menu-migrated-auto": !0,
         onSelect: x,

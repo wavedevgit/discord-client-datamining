@@ -1,65 +1,65 @@
 /** chunk id: 227308 params = (module,exports,require) **/
 "use strict";
-n.d(t, {
-    A: () => _
+i.d(t, {
+    A: () => g
 });
-var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    a = n.n(l),
-    r = n(735438),
-    o = n(311907),
-    d = n(888288),
-    c = n(256415),
-    u = n(941023),
-    h = n(714983),
-    p = n(592598),
-    A = n(672396),
-    f = n(652215),
-    g = n(283446);
+var n = i(627968),
+    s = i(64700),
+    a = i(503698),
+    l = i.n(a),
+    r = i(735438),
+    o = i(311907),
+    d = i(888288),
+    c = i(256415),
+    u = i(941023),
+    h = i(714983),
+    _ = i(592598),
+    p = i(672396),
+    f = i(652215),
+    m = i(283446);
 
-function _(e) {
+function g(e) {
     let {
         locked: t,
-        keybind: n
-    } = e, l = s.useRef(null), h = (0, o.yK)([d.A], () => d.A.getNotifications()), _ = (0, o.bG)([c.default], () => c.default.getNotificationPositionMode());
-    if ((0, o.bG)([p.A], () => p.A.isNotificationDisabled(A.KS.TextChat)) || _ === f.G6Q.DISABLED) return null;
+        keybind: i
+    } = e, a = s.useRef(null), h = (0, o.yK)([d.A], () => d.A.getNotifications()), g = (0, o.bG)([c.default], () => c.default.getNotificationPositionMode());
+    if ((0, o.bG)([_.A], () => _.A.isNotificationDisabled(p.KS.TextChat)) || g === f.G6Q.DISABLED) return null;
     let x = h.filter(e => !t || e.status !== f.yFH.TIMED_OUT),
-        E = (0, r.groupBy)(x, e => e.type);
-    return (0, i.jsx)(u.A, {
-        contentDomRef: l,
+        v = (0, r.groupBy)(x, e => e.type);
+    return (0, n.jsx)(u.A, {
+        contentDomRef: a,
         observeInterval: 200,
-        children: (0, i.jsx)("div", {
-            ref: l,
-            className: a()(g.container, g[_]),
-            children: Object.entries(E).map(e => {
-                let [s, l] = e;
-                return 0 === l.length ? null : (0, i.jsx)(m, {
+        children: (0, n.jsx)("div", {
+            ref: a,
+            className: l()(m.container, m[g]),
+            children: Object.entries(v).map(e => {
+                let [s, a] = e;
+                return 0 === a.length ? null : (0, n.jsx)(A, {
                     locked: t,
-                    keybind: n,
-                    position: _,
-                    notification: l[0]
+                    keybind: i,
+                    position: g,
+                    notification: a[0]
                 }, s)
             })
         })
     })
 }
 
-function m(e) {
+function A(e) {
     let {
         notification: t,
-        position: n,
+        position: i,
         keybind: s,
-        locked: l
+        locked: a
     } = e;
-    return (0, i.jsx)("div", {
-        className: g.notificationGroup,
-        children: (0, i.jsx)(h.A, {
+    return (0, n.jsx)("div", {
+        className: m.notificationGroup,
+        children: (0, n.jsx)(h.A, {
             zIndex: 100,
-            position: n,
+            position: i,
             notification: t,
             keybind: s,
-            locked: l
+            locked: a
         }, t.id)
     })
 }

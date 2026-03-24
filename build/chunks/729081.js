@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(52133),
     A = n(568598),
     m = n(313961),
-    _ = n(246356),
-    p = n(178213),
+    p = n(246356),
+    _ = n(178213),
     g = n(332772),
     f = n(594832),
     x = n(631784),
@@ -56,7 +56,7 @@ function V(e) {
     s.useEffect(() => {
         t || n()
     }, [n, t]);
-    let V = (0, p.GG)("social_layer_storefront_gifting_mini_shelf");
+    let V = (0, _.GG)("social_layer_storefront_gifting_mini_shelf");
     (0, g.T)({
         location: "social_layer_storefront_gifting_mini_shelf"
     });
@@ -138,7 +138,7 @@ function V(e) {
             channel_id: h.id,
             sku_ids: Q.map(e => e.id)
         })
-    }, [h.id, h.guild_id, Q]), (0, i.jsx)(_.A, {
+    }, [h.id, h.guild_id, Q]), (0, i.jsx)(p.A, {
         children: (0, i.jsx)(d.lGe, {
             "aria-labelledby": P,
             modal: !1,

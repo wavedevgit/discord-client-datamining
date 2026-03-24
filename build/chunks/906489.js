@@ -1,4 +1,5 @@
 /** chunk id: 906489 params = (module,exports,require) **/
+"use strict";
 e.exports = {
     N1: "headerContainer__4dd8e",
     TP: "headerEmpty__4dd8e",

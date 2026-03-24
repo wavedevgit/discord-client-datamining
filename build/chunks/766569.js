@@ -12,20 +12,20 @@ var i = n(627968),
     c = n(974544),
     u = n(793574),
     m = n(688810),
-    g = n(550111),
-    _ = n(919395),
+    _ = n(550111),
+    g = n(919395),
     x = n(884546),
     A = n(287070),
     h = n(101058),
     p = n(836602),
     f = n(622543),
     T = n(696451),
-    E = n(351906),
-    S = n(287809),
+    S = n(351906),
+    E = n(287809),
     b = n(975571),
     C = n(927578),
-    N = n(159001),
-    v = n(65767),
+    v = n(159001),
+    N = n(65767),
     I = n(281052),
     j = n(687021),
     y = n(652215),
@@ -53,25 +53,25 @@ function P(e) {
         onGuildChange: n
     } = e, {
         analyticsLocations: l
-    } = (0, m.Ay)(u.A.USER_SETTINGS_GUILD_PROFILE), P = (0, r.bG)([S.default], () => {
-        let e = S.default.getCurrentUser();
+    } = (0, m.Ay)(u.A.USER_SETTINGS_GUILD_PROFILE), P = (0, r.bG)([E.default], () => {
+        let e = E.default.getCurrentUser();
         return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-    }), D = (0, r.bG)([T.Ay], () => null != t ? T.Ay.getMember(t.id, P.id) : null), G = (0, r.bG)([f.A], () => !f.A.isFetchingProfile(P.id, t?.id)), M = (0, r.bG)([E.A], () => E.A.hidePersonalInformation), {
+    }), D = (0, r.bG)([T.Ay], () => null != t ? T.Ay.getMember(t.id, P.id) : null), G = (0, r.bG)([f.A], () => !f.A.isFetchingProfile(P.id, t?.id)), M = (0, r.bG)([S.A], () => S.A.hidePersonalInformation), {
         pendingAvatar: U,
         pendingNameplate: k,
         ...w
     } = (0, r.cf)([p.A], () => p.A.getPendingChanges(t?.id)), V = (0, h.V7)({
         userId: P.id,
         image: U
-    }), B = (0, _.lw)({
+    }), B = (0, g.lw)({
         pendingValue: k,
         userValue: P?.collectibles?.nameplate,
         guildValue: D?.collectibles?.nameplate,
         guildId: t?.id
     }), {
         pendingDisplayNameStyles: F
-    } = (0, _.B0)(P, t?.id);
-    return (s.useEffect(() => () => d.h.wait(N.IM), []), M) ? (0, i.jsx)(c.A, {}) : G ? (0, i.jsxs)(m.f5, {
+    } = (0, g.B0)(P, t?.id);
+    return (s.useEffect(() => () => d.h.wait(v.IM), []), M) ? (0, i.jsx)(c.A, {}) : G ? (0, i.jsxs)(m.f5, {
         value: l,
         children: [(0, i.jsx)(o.Text, {
             variant: "text-sm/normal",
@@ -99,7 +99,7 @@ function P(e) {
                     canUsePremiumCustomization: C.Ay.canUsePremiumProfileCustomization(P),
                     onUpsellClick: L
                 }),
-                nameplatePreview: (0, i.jsx)(g.A, {
+                nameplatePreview: (0, i.jsx)(_.A, {
                     ...w,
                     pendingDisplayNameStyles: F,
                     user: P,
@@ -110,6 +110,6 @@ function P(e) {
                 }),
                 children: (0, i.jsx)(I.A, {})
             })]
-        }) : (0, i.jsx)(v.A, {})]
+        }) : (0, i.jsx)(N.A, {})]
     }) : (0, i.jsx)(o.y$y, {})
 }

@@ -1,6 +1,6 @@
 /** chunk id: 307973 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => _
 });
 var i = n(627968),
     s = n(503698),
@@ -12,21 +12,21 @@ var i = n(627968),
     c = n(737968),
     u = n(275869),
     m = n(979250);
-let g = e => {
+let _ = e => {
     let {
         isMotionReduced: t,
         containerVisibilityPercentage: n,
         boltContainerClassName: s,
-        carContainerClassName: g,
-        hammerContainerClassName: _,
+        carContainerClassName: _,
+        hammerContainerClassName: g,
         keyContainerClassName: x,
         starContainerClassName: A,
         boltAssetClassName: h,
         carAssetClassName: p,
         hammerAssetClassName: f,
         keyAssetClassName: T,
-        starAssetClassName: E,
-        animationSpeedScale: S = 1
+        starAssetClassName: S,
+        animationSpeedScale: E = 1
     } = e;
     return (0, i.jsxs)(i.Fragment, {
         children: [null != s && (0, i.jsx)("div", {
@@ -55,15 +55,15 @@ let g = e => {
                 } : void 0,
                 animateXAxisWiggle: !0,
                 isMotionReduced: t,
-                animationSpeedScale: S,
+                animationSpeedScale: E,
                 children: (0, i.jsx)("img", {
                     src: o.A,
                     className: h,
                     alt: ""
                 })
             })
-        }), null != g && (0, i.jsx)("div", {
-            className: l()(r.IN, g),
+        }), null != _ && (0, i.jsx)("div", {
+            className: l()(r.IN, _),
             children: (0, i.jsx)(a.Ay, {
                 yAxisAnimationData: {
                     range: 15,
@@ -78,15 +78,15 @@ let g = e => {
                 } : void 0,
                 animateXAxisWiggle: !0,
                 isMotionReduced: t,
-                animationSpeedScale: S,
+                animationSpeedScale: E,
                 children: (0, i.jsx)("img", {
                     src: d.A,
                     className: p,
                     alt: ""
                 })
             })
-        }), null != _ && (0, i.jsx)("div", {
-            className: l()(r.Gj, _),
+        }), null != g && (0, i.jsx)("div", {
+            className: l()(r.Gj, g),
             children: (0, i.jsx)(a.Ay, {
                 yAxisAnimationData: {
                     range: 15,
@@ -101,7 +101,7 @@ let g = e => {
                 } : void 0,
                 animateXAxisWiggle: !0,
                 isMotionReduced: t,
-                animationSpeedScale: S,
+                animationSpeedScale: E,
                 children: (0, i.jsx)("img", {
                     src: c.A,
                     className: f,
@@ -134,7 +134,7 @@ let g = e => {
                 } : void 0,
                 animateXAxisWiggle: !0,
                 isMotionReduced: t,
-                animationSpeedScale: S,
+                animationSpeedScale: E,
                 children: (0, i.jsx)("img", {
                     src: u.A,
                     className: T,
@@ -167,10 +167,10 @@ let g = e => {
                 } : void 0,
                 animateXAxisWiggle: !0,
                 isMotionReduced: t,
-                animationSpeedScale: S,
+                animationSpeedScale: E,
                 children: (0, i.jsx)("img", {
                     src: m.A,
-                    className: E,
+                    className: S,
                     alt: ""
                 })
             })

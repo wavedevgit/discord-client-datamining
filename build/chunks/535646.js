@@ -16,10 +16,10 @@ function m(e) {
     let {
         preset: t,
         onShuffle: n
-    } = e, m = (0, l.bG)([r.A], () => r.A.useReducedMotion), g = (0, o.Xf)({
+    } = e, m = (0, l.bG)([r.A], () => r.A.useReducedMotion), _ = (0, o.Xf)({
         useReducedMotion: m
     }), {
-        name: _,
+        name: g,
         header: x
     } = s.useMemo(() => {
         let e = (0, d.Wt)(t);
@@ -32,16 +32,16 @@ function m(e) {
         className: u.kL,
         children: [(0, i.jsx)(a.DUT, {
             onClick: () => {
-                n(), g.startAnimation(!1)
+                n(), _.startAnimation(!1)
             },
             className: u.x6,
             "aria-label": c.intl.string(c.t["44yJxh"]),
-            children: g.render()
+            children: _.render()
         }), (0, i.jsxs)(a.DUT, {
             onClick: () => {
-                n(), g.startAnimation(!1)
+                n(), _.startAnimation(!1)
             },
-            "aria-label": `${_}: ${c.intl.string(c.t["44yJxh"])}`,
+            "aria-label": `${g}: ${c.intl.string(c.t["44yJxh"])}`,
             className: u.Lt,
             children: [(0, i.jsx)("img", {
                 alt: "",
@@ -52,7 +52,7 @@ function m(e) {
                 className: u._e,
                 variant: "text-sm/bold",
                 color: "always-white",
-                children: _
+                children: g
             })]
         })]
     })

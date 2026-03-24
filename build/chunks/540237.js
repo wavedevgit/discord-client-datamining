@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(253932),
     u = n(652215),
     m = n(985018),
-    g = n(62049),
-    _ = n(513653);
+    _ = n(62049),
+    g = n(513653);
 
 function x() {
     let e = c.hH.useSetting(),
@@ -32,25 +32,25 @@ function x() {
         });
     return (0, i.jsx)(l.M1G, {
         children: (0, i.jsxs)(l.ZpM, {
-            className: g.VH,
+            className: _.VH,
             "aria-hidden": !0,
             children: [(0, i.jsxs)("div", {
-                className: g.yl,
+                className: _.yl,
                 children: [(0, i.jsx)(l.Button, {
                     variant: "primary",
                     size: "sm",
                     text: m.intl.string(m.t["2RHHgz"])
                 }), (0, i.jsx)("div", {
-                    className: g.hD,
+                    className: _.hD,
                     children: [u.clD.ONLINE, u.clD.DND, u.clD.IDLE].map(e => (0, i.jsx)(l.JsQ, {
                         "aria-label": m.intl.string(m.t.lqaIxI),
-                        src: _,
+                        src: g,
                         size: l._3J.SIZE_32,
                         status: e
                     }, e))
                 })]
             }), (0, i.jsx)("div", {
-                className: g.QS,
+                className: _.QS,
                 children: (0, i.jsx)(d.A, {
                     compact: e,
                     author: {

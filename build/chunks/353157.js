@@ -18,13 +18,13 @@ function d(e) {
         profileOwner: l,
         isHighlighted: d,
         cardSize: h = o.Y.MEDIUM
-    } = e, A = t.collectiblesItem;
-    switch (A.type) {
+    } = e, p = t.collectiblesItem;
+    switch (p.type) {
         case r.R.PROFILE_EFFECT:
             return (0, i.jsx)("div", {
                 className: c.xC,
                 children: (0, i.jsx)(u.A, {
-                    skuId: A.skuId,
+                    skuId: p.skuId,
                     isHighlighted: d,
                     removeSetHeight: !0,
                     hideBackground: !0
@@ -34,7 +34,7 @@ function d(e) {
             return (0, i.jsx)("div", {
                 className: c._P,
                 children: (0, i.jsx)(a.i, {
-                    item: A,
+                    item: p,
                     user: l,
                     isHighlighted: d,
                     avatarSize: h === o.Y.MEDIUM_SQUARE ? n._3J.SIZE_96 : n._3J.SIZE_80
@@ -47,7 +47,7 @@ function d(e) {
                     className: c.Qt,
                     children: (0, i.jsx)(s.A, {
                         user: l,
-                        nameplate: A,
+                        nameplate: p,
                         isHighlighted: d,
                         showPlaceholderUser: !0,
                         showStatus: !0,
@@ -59,7 +59,7 @@ function d(e) {
                     "aria-hidden": !0,
                     children: (0, i.jsx)(s.A, {
                         user: l,
-                        nameplate: A,
+                        nameplate: p,
                         isHighlighted: d,
                         showPlaceholderUser: !0,
                         showStatus: !0,

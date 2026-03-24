@@ -1,6 +1,6 @@
 /** chunk id: 324734 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => _
 });
 var i = n(627968);
 n(64700);
@@ -13,7 +13,7 @@ var s = n(311907),
     c = n(780964),
     u = n(912615),
     m = n(985018);
-let g = (0, r.zD)(c.X.ADVANCED_APPLICATION_TEST_MODE, {
+let _ = (0, r.zD)(c.X.ADVANCED_APPLICATION_TEST_MODE, {
     useTitle: () => m.intl.string(m.t.erOqlh),
     useSubtitle: () => m.intl.string(m.t["52hMnD"]),
     usePredicate: d.Q_.useSetting,

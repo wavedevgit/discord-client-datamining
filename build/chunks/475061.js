@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(723702),
     u = n(780964),
     m = n(801264),
-    g = n(902713),
-    _ = n(428961),
+    _ = n(902713),
+    g = n(428961),
     x = n(639500),
     A = n(731854),
     h = n(985018);
@@ -52,5 +52,5 @@ let T = (0, r.zZ)(u.X.VOICE_CATEGORY, {
             })
         } : null, [e.canPrompt, l])
     },
-    buildLayout: () => [g.a, _.d, x.L]
+    buildLayout: () => [_.a, g.d, x.L]
 })

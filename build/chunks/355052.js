@@ -1,43 +1,43 @@
 /** chunk id: 355052 params = (module,exports,require) **/
 "use strict";
-n.d(t, {
+i.d(t, {
     A: () => M
-}), n(142703);
-var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    a = n.n(l),
-    r = n(735438),
-    o = n.n(r),
-    d = n(258873),
-    c = n(622242),
-    u = n(731738),
-    h = n(118356),
-    p = n(397927),
-    A = n(684013),
-    f = n(996308),
-    g = n(831062),
-    _ = n(471024),
-    m = n(976860),
-    x = n(144400),
-    E = n(927813),
-    y = n(9302),
-    v = n(777334),
-    S = n(41984),
-    C = n(941023),
-    I = n(855790),
-    N = n(672396),
-    T = n(652215),
-    O = n(985018),
-    b = n(748498);
-let j = 10 * E.A.Millis.SECOND,
-    D = new h.Vy("LegacyOverlayErrorBoundary");
+}), i(142703);
+var n = i(627968),
+    s = i(64700),
+    a = i(503698),
+    l = i.n(a),
+    r = i(735438),
+    o = i.n(r),
+    d = i(258873),
+    c = i(622242),
+    u = i(731738),
+    h = i(118356),
+    _ = i(397927),
+    p = i(684013),
+    f = i(996308),
+    m = i(831062),
+    g = i(471024),
+    A = i(976860),
+    x = i(144400),
+    v = i(927813),
+    y = i(9302),
+    E = i(777334),
+    I = i(41984),
+    S = i(941023),
+    C = i(855790),
+    N = i(672396),
+    b = i(652215),
+    T = i(985018),
+    O = i(748498);
+let L = 10 * v.A.Millis.SECOND,
+    j = new h.Vy("LegacyOverlayErrorBoundary");
 
-function R() {
+function w() {
     let e = (0, y.getPID)(),
         t = (0, y.getRPCAuthToken)();
     (0, f.tN)({
-        type: T.kGV.DISPATCH,
+        type: b.kGV.DISPATCH,
         pid: e,
         token: t,
         payloads: [{
@@ -47,7 +47,7 @@ function R() {
         }]
     })
 }
-class w extends s.PureComponent {
+class D extends s.PureComponent {
     state = {
         showTrace: !1,
         busy: !1
@@ -55,7 +55,7 @@ class w extends s.PureComponent {
     notificationTimer;
     contentDomRef = s.createRef();
     componentDidMount() {
-        this.notificationTimer = setTimeout(this.hideNotification, j), A.A.track(T.HAw.NOTIFICATION_VIEWED, {
+        this.notificationTimer = setTimeout(this.hideNotification, L), p.A.track(b.HAw.NOTIFICATION_VIEWED, {
             notif_type: N.KS.OverlayCrashed
         })
     }
@@ -66,7 +66,7 @@ class w extends s.PureComponent {
         null != e && clearTimeout(e)
     }
     hideNotification = () => {
-        R();
+        w();
         let {
             notificationTimer: e
         } = this;
@@ -75,7 +75,7 @@ class w extends s.PureComponent {
     handleReload = e => {
         this.setState({
             busy: !0
-        }), R(), A.A.track(T.HAw.NOTIFICATION_CLICKED, {
+        }), w(), p.A.track(b.HAw.NOTIFICATION_CLICKED, {
             notif_type: N.KS.OverlayCrashed,
             action_type: "reload"
         }, !0), e.stopPropagation(), setTimeout(() => location.reload(!0), 200)
@@ -94,41 +94,41 @@ class w extends s.PureComponent {
             info: e,
             error: t
         } = this.props, {
-            showTrace: n
+            showTrace: i
         } = this.state, {
             notificationTimer: s
         } = this;
-        return null == s ? null : (0, i.jsx)(C.A, {
+        return null == s ? null : (0, n.jsx)(S.A, {
             contentDomRef: this.contentDomRef,
             observe: !1,
-            children: (0, i.jsx)(p.NPJ, {
-                theme: T.NJ8.DARK,
-                children: s => (0, i.jsxs)(p.DUT, {
+            children: (0, n.jsx)(_.NPJ, {
+                theme: b.NJ8.DARK,
+                children: s => (0, n.jsxs)(_.DUT, {
                     innerRef: this.contentDomRef,
-                    className: a()(s, b.kL),
+                    className: l()(s, O.kL),
                     onClick: e => e.stopPropagation(),
-                    children: [(0, i.jsx)(_.Ay, {
+                    children: [(0, n.jsx)(g.Ay, {
                         expand: !0,
-                        icon: (0, i.jsx)(x.A, {
+                        icon: (0, n.jsx)(x.A, {
                             width: 40,
                             height: 40,
-                            className: b.Lo
+                            className: O.Lo
                         }),
-                        title: O.intl.string(O.t.U38qZj),
-                        confirmText: O.intl.string(O.t.TzAl1a),
+                        title: T.intl.string(T.t.U38qZj),
+                        confirmText: T.intl.string(T.t.TzAl1a),
                         onNotificationClick: this.handleNotificationClick,
                         onConfirmClick: this.handleReload,
                         onDismissClick: this.hideNotification,
                         locked: !1
-                    }), n && null != e ? (0, i.jsxs)(I.Ay, {
-                        className: b.a2,
-                        children: [(0, i.jsx)(I.Ay.Bar, {
+                    }), i && null != e ? (0, n.jsxs)(C.Ay, {
+                        className: O.a2,
+                        children: [(0, n.jsx)(C.Ay.Bar, {
                             children: "Error Details"
-                        }), (0, i.jsx)(I.Ay.Content, {
-                            className: b.Xh,
-                            children: (0, i.jsx)("code", {
-                                className: b.aY,
-                                children: (0, i.jsx)("pre", {
+                        }), (0, n.jsx)(C.Ay.Content, {
+                            className: O.Xh,
+                            children: (0, n.jsx)("code", {
+                                className: O.aY,
+                                children: (0, n.jsx)("pre", {
                                     children: t.stack
                                 })
                             })
@@ -139,8 +139,8 @@ class w extends s.PureComponent {
         })
     }
 }
-let L = o().throttle(() => {
-    g.A.increment({
+let R = o().throttle(() => {
+    m.A.increment({
         name: u.K.APP_CRASHED,
         tags: [`reason:${d.J.UNHANDLED_JS_ERROR}`, `level:${c.k.FATAL}`]
     }, !0)
@@ -153,54 +153,54 @@ class k extends s.PureComponent {
         info: null
     };
     componentDidCatch(e, t) {
-        let n = (0, m.JK)().location;
+        let i = (0, A.JK)().location;
         this.setState({
             error: e,
             info: t
-        }), D.error(`ErrorBoundary caught error: ${e.message}`, {
+        }), j.error(`ErrorBoundary caught error: ${e.message}`, {
             error: e,
             info: t
         });
-        let i = (0, y.getPID)(),
+        let n = (0, y.getPID)(),
             s = (0, y.getRPCAuthToken)();
         (0, f.tN)({
-            type: T.kGV.DISPATCH,
+            type: b.kGV.DISPATCH,
             pid: (0, y.getPID)(),
             token: s,
             payloads: [{
                 type: "OVERLAY_CRASHED",
                 error: e.message,
-                pid: i
+                pid: n
             }, {
                 type: "OVERLAY_SET_INPUT_LOCKED",
                 locked: !0,
-                pid: i
+                pid: n
             }]
-        }), setImmediate(() => window.addEventListener("click", R));
-        let l = (0, v.St)(e, S.Ue.Hook, {
+        }), setImmediate(() => window.addEventListener("click", w));
+        let a = (0, E.St)(e, I.Ue.Hook, {
             extra: t
         });
-        A.A.track(T.HAw.APP_CRASHED, {
-            path: n.pathname,
+        p.A.track(b.HAw.APP_CRASHED, {
+            path: i.pathname,
             extra: t,
             error_message: e.message,
             error_stack: e.stack,
-            sentry_issue_id: l,
+            sentry_issue_id: a,
             error_level: "fatal"
-        }), L()
+        }), R()
     }
     render() {
         let {
             children: e,
             className: t
         } = this.props, {
-            error: n,
+            error: i,
             info: s
         } = this.state;
-        return null != n ? (0, i.jsx)(w, {
-            error: n,
+        return null != i ? (0, n.jsx)(D, {
+            error: i,
             info: s
-        }) : (0, i.jsx)("div", {
+        }) : (0, n.jsx)("div", {
             className: t,
             children: e
         })

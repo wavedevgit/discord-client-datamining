@@ -15,20 +15,20 @@ var i = n(627968),
     c = n(775602),
     u = n(793574),
     m = n(688810),
-    g = n(47671),
-    _ = n(959443),
+    _ = n(47671),
+    g = n(959443),
     x = n(692798),
     A = n(793943),
     h = n(826673),
     p = n(422936),
     f = n(234419),
     T = n(792656),
-    E = n(511484),
-    S = n(811611),
+    S = n(511484),
+    E = n(811611),
     b = n(97469),
     C = n(954571),
-    N = n(544028),
-    v = n(253932),
+    v = n(544028),
+    N = n(253932),
     I = n(12901),
     j = n(652215),
     y = n(49999),
@@ -44,7 +44,7 @@ let P = () => {
 
 function D() {
     let e = (0, p.O)(),
-        t = (0, E.U9)(e, O.pe.TIER_2) ? R.intl.formatToPlainString(R.t.bkQ4bH, {
+        t = (0, S.U9)(e, O.pe.TIER_2) ? R.intl.formatToPlainString(R.t.bkQ4bH, {
             percent: e?.discount.amount
         }) : R.intl.string(R.t.mr4K7D);
     return (0, i.jsx)(T.A, {
@@ -59,7 +59,7 @@ function D() {
 }
 
 function G() {
-    let e = (0, l.bG)([g.A], () => g.A.isPreview),
+    let e = (0, l.bG)([_.A], () => _.A.isPreview),
         t = (0, f.V)()?.subscription_trial?.sku_id === O.pe.TIER_2;
     return !e || t ? null : (0, i.jsxs)("div", {
         className: L.gY,
@@ -74,7 +74,7 @@ function G() {
 function M(e) {
     let {
         children: t
-    } = e, n = (0, l.bG)([g.A], () => g.A.isPreview), {
+    } = e, n = (0, l.bG)([_.A], () => _.A.isPreview), {
         analyticsLocations: a
     } = (0, m.Ay)(u.A.USER_SETTINGS);
     return (s.useEffect(() => {
@@ -89,7 +89,7 @@ function M(e) {
 }
 
 function U() {
-    let e = (0, l.bG)([g.A], () => g.A.isPreview),
+    let e = (0, l.bG)([_.A], () => _.A.isPreview),
         t = (0, f.V)()?.subscription_trial?.sku_id === O.pe.TIER_2;
     return e && t ? (0, i.jsxs)("div", {
         children: [(0, i.jsx)("div", {
@@ -102,7 +102,7 @@ function U() {
             })
         }), (0, i.jsx)("div", {
             className: L.BU
-        }), (0, i.jsx)(S.Ay, {
+        }), (0, i.jsx)(E.Ay, {
             type: O.e.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL,
             subscriptionTier: O.pe.TIER_2
         })]
@@ -113,7 +113,7 @@ let k = () => (0, i.jsx)("div", {
         type: x.v0.SETTINGS,
         children: [(0, i.jsx)(x.Ay.Basic, {
             className: L.a6
-        }), (0, i.jsx)(w, {}), (0, i.jsx)(_.A, {}), (0, i.jsxs)(M, {
+        }), (0, i.jsx)(w, {}), (0, i.jsx)(g.A, {}), (0, i.jsxs)(M, {
             children: [(0, i.jsx)(x.Ay.Gradient, {
                 disabled: !1,
                 renderCTAButtons: () => (0, i.jsx)(G, {})
@@ -128,12 +128,12 @@ function w() {
             theme: t,
             useForcedColors: n,
             gradientPreset: s
-        } = (0, l.cf)([N.A, c.A, g.A], () => ({
-            theme: N.A.theme,
+        } = (0, l.cf)([v.A, c.A, _.A], () => ({
+            theme: v.A.theme,
             useForcedColors: c.A.useForcedColors,
-            gradientPreset: g.A.gradientPreset
+            gradientPreset: _.A.gradientPreset
         })),
-        a = null != v.eh.useSetting().customUserThemeSettings;
+        a = null != N.eh.useSetting().customUserThemeSettings;
     return t !== j.NJ8.LIGHT ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(o.cGx, {
             gap: 24
@@ -147,7 +147,7 @@ function w() {
         })]
     })
 }
-let V = () => (0, l.bG)([g.A], () => g.A.isPreview) ? null : (0, i.jsx)(o.Button, {
+let V = () => (0, l.bG)([_.A], () => _.A.isPreview) ? null : (0, i.jsx)(o.Button, {
     variant: "primary",
     text: R.intl.string(R.t.qYXrkX),
     onClick: P

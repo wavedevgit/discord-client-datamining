@@ -15,34 +15,34 @@ var n = r(64700),
     d = r(870216),
     u = r(298072),
     m = r(238184),
-    h = r(572595),
-    p = r(159439),
-    x = r(57020),
-    f = r(652215);
+    p = r(572595),
+    f = r(159439),
+    h = r(57020),
+    x = r(652215);
 let v = "#itemSkuId=",
-    _ = RegExp(`^${v}(\\d+)$`),
-    g = [f.BVt.COLLECTIBLES_SHOP],
+    g = RegExp(`^${v}(\\d+)$`),
+    _ = [x.BVt.COLLECTIBLES_SHOP],
     A = e => {
         let t = (0, i.zy)();
         n.useEffect(() => {
-            if (null != e && g.includes(t.pathname)) return () => {
+            if (null != e && _.includes(t.pathname)) return () => {
                 window.location.hash.startsWith(v) && window.location.replace("#")
             }
         }, [e, t.pathname])
     },
     j = () => {
-        let e = (0, p.U)(),
+        let e = (0, f.U)(),
             t = n.useRef(null),
             r = (0, i.zy)(),
-            a = r.pathname === f.BVt.COLLECTIBLES_SHOP ? l.A.HOME_PAGE_SHOP_TAB : l.A.COLLECTIBLES_SHOP,
+            a = r.pathname === x.BVt.COLLECTIBLES_SHOP ? l.A.HOME_PAGE_SHOP_TAB : l.A.COLLECTIBLES_SHOP,
             {
                 analyticsLocations: v
             } = (0, c.Ay)(a),
-            g = (0, m.A)();
+            _ = (0, m.A)();
         n.useEffect(() => {
-            let e = _.exec(r.hash);
+            let e = g.exec(r.hash);
             null != e ? t.current = e[1] : t.current = null
-        }, [g, r.hash]);
+        }, [_, r.hash]);
         let A = (0, s.bG)([d.A], () => d.A.initialProductSkuId);
         n.useEffect(() => {
             if (e) return;
@@ -58,7 +58,7 @@ let v = "#itemSkuId=",
                         } = e, s = o.A.getProduct(t), a = o.A.getCategoryForProduct(t);
                         if (null != s && null != a) {
                             let e = s,
-                                l = (0, x.A)({
+                                l = (0, h.A)({
                                     product: s
                                 }),
                                 c = document.getElementById(`shop-item-${e.skuId}`);
@@ -69,7 +69,7 @@ let v = "#itemSkuId=",
                                     let n = r.variants?.findIndex(e => e.skuId === t);
                                     null != n && n > -1 && (0, u.n)(r, n)
                                 }
-                            }(0, h.t)({
+                            }(0, p.t)({
                                 product: e,
                                 category: a,
                                 analyticsSource: n,
@@ -82,12 +82,12 @@ let v = "#itemSkuId=",
                         productSkuId: r,
                         analyticsLocations: v,
                         analyticsSource: a,
-                        tab: g
+                        tab: _
                     })
                 }, 250);
                 return () => clearTimeout(e)
             }
-        }, [v, a, e, A, g])
+        }, [v, a, e, A, _])
     },
     N = e => {
         let t = n.useRef({}),

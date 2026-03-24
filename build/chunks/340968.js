@@ -1,56 +1,59 @@
 /** chunk id: 340968 params = (module,exports,require) **/
-e.d(t, {
-    default: () => D
+t.d(e, {
+    default: () => C
 });
-var i = e(627968);
-e(64700);
-var l = e(397927),
-    r = e(442433),
-    a = e(358367),
-    c = e(793574),
-    d = e(50268),
-    s = e(769591),
-    o = e(533957),
-    A = e(886393),
-    u = e(659566),
-    E = e(477190),
-    _ = e(307623),
-    p = e(317910),
-    g = e(475777),
-    h = e(995102),
-    b = e(288104),
-    x = e(661504),
-    y = e(969128),
-    N = e(652215),
-    C = e(985018);
-let D = (0, a.A)(function(n) {
+var i = t(627968);
+t(64700);
+var l = t(397927),
+    r = t(442433),
+    a = t(358367),
+    c = t(793574),
+    d = t(50268),
+    u = t(133238),
+    o = t(769591),
+    s = t(533957),
+    A = t(886393),
+    _ = t(659566),
+    h = t(477190),
+    E = t(307623),
+    p = t(317910),
+    g = t(475777),
+    b = t(995102),
+    f = t(288104),
+    x = t(661504),
+    v = t(969128),
+    y = t(652215),
+    G = t(985018);
+let C = (0, a.A)(function(n) {
     let {
-        channel: t,
-        guild: e,
+        channel: e,
+        guild: t,
         includeTopic: a = !1,
         onSelect: c
-    } = n, D = (0, y.A)(t), v = (0, h.A)(t), j = (0, b.A)(t), I = (0, A.A)(t), T = (0, u.A)(t), f = (0, p.A)(t), G = (0, g.A)(t, e), L = (0, o.A)(t, e), M = (0, E.A)(t, e, N.rbe.GUILD_TEXT), O = (0, E.A)(t, e, N.rbe.GUILD_VOICE), U = (0, _.A)(t), X = (0, d.A)({
-        id: t.id,
-        label: C.intl.string(C.t.gFHI3k)
-    }), H = (0, s.os)("ChannelTitleContextMenu"), P = (0, x.Ay)(t);
+    } = n, C = (0, v.A)(e), D = (0, b.A)(e), j = (0, f.A)(e), N = (0, A.A)(e), T = (0, _.A)(e), I = (0, u.m)(e), m = (0, u.y)(e), L = (0, p.A)(e), O = (0, g.A)(e, t), M = (0, s.A)(e, t), X = (0, h.A)(e, t, y.rbe.GUILD_TEXT), U = (0, h.A)(e, t, y.rbe.GUILD_VOICE), V = (0, E.A)(e), P = (0, d.A)({
+        id: e.id,
+        label: G.intl.string(G.t.gFHI3k)
+    }), R = (0, o.os)("ChannelTitleContextMenu"), H = (0, x.Ay)(e);
     return (0, i.jsxs)(l.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "channel-context",
         onClose: r.Z_,
-        "aria-label": C.intl.string(C.t.Xm41aV),
+        "aria-label": G.intl.string(G.t.Xm41aV),
         onSelect: c,
         children: [(0, i.jsx)(l.rXV, {
+            children: C
+        }), (0, i.jsx)(l.rXV, {
             children: D
         }), (0, i.jsx)(l.rXV, {
-            children: v
+            children: I
         }), (0, i.jsxs)(l.rXV, {
-            children: [a ? T : H ? P : j, f]
+            children: [a ? T : R ? H : j, L]
         }), (0, i.jsxs)(l.rXV, {
-            children: [G, I, L, M, O]
+            children: [O, N, M, X, U, V]
         }), (0, i.jsx)(l.rXV, {
-            children: U
+            children: m
         }), (0, i.jsx)(l.rXV, {
-            children: X
+            children: P
         })]
     })
 }, [c.A.CONTEXT_MENU, c.A.CHANNEL_TITLE_MENU])

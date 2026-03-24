@@ -13,8 +13,8 @@ var s = n(503698),
     c = n(927578),
     u = n(473702),
     m = n(985018),
-    g = n(312275),
-    _ = n(67423);
+    _ = n(312275),
+    g = n(67423);
 let x = function(e) {
     let {
         isVisible: t,
@@ -32,18 +32,18 @@ let x = function(e) {
         }
     });
     return (0, i.jsx)(a.animated.div, {
-        className: l()(g.iE, {
-            [g.q4]: !t
+        className: l()(_.iE, {
+            [_.q4]: !t
         }),
         style: p,
         children: (0, i.jsxs)("div", {
-            className: g.iJ,
+            className: _.iJ,
             children: [(0, i.jsx)("img", {
                 alt: "",
-                src: _,
-                className: g.oU
+                src: g,
+                className: _.oU
             }), (0, i.jsxs)("div", {
-                className: g.iQ,
+                className: _.iQ,
                 children: [(0, i.jsx)(r.Heading, {
                     variant: "heading-md/semibold",
                     color: "text-strong",

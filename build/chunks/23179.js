@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(932001),
     A = n(651649),
     m = n(253932),
-    _ = n(734057),
-    p = n(203982),
+    p = n(734057),
+    _ = n(203982),
     g = n(517381),
     f = n(822382),
     x = n(868974),
@@ -125,8 +125,8 @@ function k(e) {
         paginationTotalCount: h,
         renderPageWrapper: A,
         onBlockedResultsClick: m,
-        searchRequestAnalyticsId: _,
-        searchResultsQuery: p,
+        searchRequestAnalyticsId: p,
+        searchResultsQuery: _,
         isFavoritesSearch: g
     } = e, {
         totalResults: f,
@@ -164,8 +164,8 @@ function k(e) {
         paginationTotalCount: h,
         renderPageWrapper: A,
         onBlockedResultsClick: m,
-        searchRequestAnalyticsId: _,
-        searchResultsQuery: p,
+        searchRequestAnalyticsId: p,
+        searchResultsQuery: _,
         isFavoritesSearch: g
     });
     let {
@@ -206,8 +206,8 @@ let V = [],
         } = e, U = s.useRef(null), P = s.useCallback(() => {
             I.A.cleanUpSearchState(t)
         }, [t]);
-        s.useEffect(() => (p._.subscribe(L.jej.SEARCH_RESULTS_CLOSE, P), () => {
-            p._.unsubscribe(L.jej.SEARCH_RESULTS_CLOSE, P)
+        s.useEffect(() => (_._.subscribe(L.jej.SEARCH_RESULTS_CLOSE, P), () => {
+            _._.unsubscribe(L.jej.SEARCH_RESULTS_CLOSE, P)
         }), [P]);
         let B = s.useRef(n.showBlockedResults);
         s.useEffect(() => {
@@ -257,7 +257,7 @@ let V = [],
                 }), E(e))
             }, [E, n.isSearching, t, b, a]),
             q = s.useCallback((e, i) => {
-                let s = _.A.getChannel(e.channel_id),
+                let s = p.A.getChannel(e.channel_id),
                     l = null != s ? s.getGuildId() : null,
                     r = (0, f.bS)(t),
                     {
@@ -392,8 +392,8 @@ function H(e) {
         showNoResultsAlt: T.A.shouldShowNoResultsAlt(o)
     })), d = (0, r.bG)([g.A], () => g.A.getAnalyticsId(o)), {
         renderedMessages: h,
-        ignoreCount: _,
-        blockCount: p
+        ignoreCount: p,
+        blockCount: _
     } = (0, b.A)({
         searchContext: t
     }), C = (0, r.bG)([T.A], () => T.A.getSearchMode(o) ?? L.BBH.NEWEST), N = s.useCallback(e => {
@@ -423,8 +423,8 @@ function H(e) {
             search: O,
             searchRequestAnalyticsId: D,
             messages: R,
-            ignoreCount: _,
-            blockCount: p,
+            ignoreCount: p,
+            blockCount: _,
             renderEmbeds: m.rs.useSetting(),
             isFeedbackVisible: l,
             dismissFeedbackEntrypoint: a,

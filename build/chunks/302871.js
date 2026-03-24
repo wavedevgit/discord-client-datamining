@@ -1,6 +1,6 @@
 /** chunk id: 302871 params = (module,exports,require) **/
 n.d(t, {
-    u: () => _
+    u: () => g
 });
 var i = n(627968),
     s = n(311907),
@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(428130),
     u = n(123857),
     m = n(985018),
-    g = n(402699);
-let _ = (0, o.E2)(d.X.APPEARANCE_CLIENT_THEMES, {
+    _ = n(402699);
+let g = (0, o.E2)(d.X.APPEARANCE_CLIENT_THEMES, {
     useSearchTerms: () => [m.intl.string(m.t.Ksh3ik), m.intl.string(m.t["0EzVst"]), m.intl.string(m.t.OCOOiI)],
     Component: () => {
         let e = (0, s.bG)([a.A], () => a.A.useForcedColors);
@@ -22,7 +22,7 @@ let _ = (0, o.E2)(d.X.APPEARANCE_CLIENT_THEMES, {
                 tag: "legend",
                 variant: "heading-xl/normal",
                 color: "text-strong",
-                className: g.D,
+                className: _.D,
                 children: m.intl.string(m.t.Ksh3ik)
             }), e ? (0, i.jsx)(l.wx6, {
                 type: "info",

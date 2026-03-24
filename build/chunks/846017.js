@@ -1,6 +1,6 @@
 /** chunk id: 846017 params = (module,exports,require) **/
 n.d(t, {
-    default: () => g
+    default: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -13,15 +13,15 @@ var i = n(627968),
     u = n(652215),
     m = n(985018);
 
-function g(e) {
+function _(e) {
     let {
         transitionState: t,
         onSuccess: n,
-        onClose: g,
-        requirementsUpdated: _
-    } = e, [x, A] = s.useState(""), [h, p] = s.useState(""), [f, T] = s.useState(""), [E, S] = s.useState(null), [b, C] = s.useState(null), {
-        formState: N,
-        errors: v
+        onClose: _,
+        requirementsUpdated: g
+    } = e, [x, A] = s.useState(""), [h, p] = s.useState(""), [f, T] = s.useState(""), [S, E] = s.useState(null), [b, C] = s.useState(null), {
+        formState: v,
+        errors: N
     } = (0, a.cf)([d.A], () => ({
         formState: d.A.getFormState(),
         errors: d.A.getErrors()
@@ -29,7 +29,7 @@ function g(e) {
     async function j(e) {
         e.preventDefault(), (0, o.x8)();
         let t = !1;
-        if ("" === h ? (S(m.intl.string(m.t["/7/oPU"])), t = !0) : S(null), h !== f ? (C(m.intl.string(m.t["IEKYZ/"])), t = !0) : C(null), t) return;
+        if ("" === h ? (E(m.intl.string(m.t["/7/oPU"])), t = !0) : E(null), h !== f ? (C(m.intl.string(m.t["IEKYZ/"])), t = !0) : C(null), t) return;
         let i = await (0, o._L)({
             password: x,
             newPassword: h
@@ -42,24 +42,24 @@ function g(e) {
         onSubmit: j,
         children: (0, i.jsx)(l.Modal, {
             transitionState: t,
-            onClose: g,
+            onClose: _,
             title: m.intl.string(m.t.geta79),
-            subtitle: _ ? m.intl.string(m.t["37iHbZ"]) : m.intl.string(m.t.iOurYj),
+            subtitle: g ? m.intl.string(m.t["37iHbZ"]) : m.intl.string(m.t.iOurYj),
             actions: [{
                 variant: "secondary",
                 text: m.intl.string(m.t["ETE/oC"]),
-                onClick: g
+                onClick: _
             }, {
                 variant: "primary",
                 text: m.intl.string(m.t.i4jeWR),
-                loading: N === u.XlH.SUBMITTING,
+                loading: v === u.XlH.SUBMITTING,
                 type: "submit"
             }],
             children: (0, i.jsxs)(r.BJc, {
                 gap: 20,
                 children: [(0, i.jsx)(r.ksK, {
                     label: m.intl.string(m.t.WBqMRQ),
-                    error: v?.password?.[0],
+                    error: N?.password?.[0],
                     type: "password",
                     value: x,
                     onChange: A,
@@ -68,7 +68,7 @@ function g(e) {
                     required: !0
                 }), (0, i.jsx)(r.ksK, {
                     label: m.intl.string(m.t["8dM4FO"]),
-                    error: v?.new_password?.[0] ?? E ?? void 0,
+                    error: N?.new_password?.[0] ?? S ?? void 0,
                     type: "password",
                     value: h,
                     onChange: p,

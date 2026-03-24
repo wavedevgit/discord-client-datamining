@@ -1,6 +1,6 @@
 /** chunk id: 345648 params = (module,exports,require) **/
 n.d(t, {
-    e: () => g
+    e: () => _
 });
 var i = n(934551),
     s = n(419954),
@@ -15,7 +15,7 @@ let m = (0, s.t_)(l.X.NOTIFICATIONS_PANEL, {
         useTitle: () => u.intl.string(u.t.HcoRu0),
         buildLayout: () => [d.w, c.u, r.h, o.F, a.X]
     }),
-    g = (0, s.i4)(l.X.NOTIFICATIONS_SIDEBAR_ITEM, {
+    _ = (0, s.i4)(l.X.NOTIFICATIONS_SIDEBAR_ITEM, {
         useTitle: () => u.intl.string(u.t.HcoRu0),
         icon: i.BellIcon,
         buildLayout: () => [m]

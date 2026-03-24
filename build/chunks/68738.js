@@ -168,7 +168,7 @@ let h = {
         ChannelListThreadContextMenu: async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("94989"), n.e("57702")]).then(n.bind(n, 44536)), t = d.A.getGuilds(), i = null;
+            } = await Promise.all([n.e("94989"), n.e("1798")]).then(n.bind(n, 44536)), t = d.A.getGuilds(), i = null;
             for (let e of Object.values(t)) {
                 for (let t of Object.values(o.A.getMutableGuildChannelsForGuild(e.id))) {
                     let e = o.A.getAllThreadsForParent(t.id);

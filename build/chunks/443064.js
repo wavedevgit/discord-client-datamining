@@ -12,20 +12,20 @@ var i = n(627968),
     c = n(397927),
     u = n(297413),
     m = n(935649),
-    g = n(847599),
-    _ = n(36149),
+    _ = n(847599),
+    g = n(36149),
     x = n(521933),
     A = n(50268),
     h = n(922301),
     p = n(81400),
     f = n(557722),
     T = n(207560),
-    E = n(790114),
-    S = n(836602),
+    S = n(790114),
+    E = n(836602),
     b = n(262),
     C = n(950191),
-    N = n(854627),
-    v = n(542535),
+    v = n(854627),
+    N = n(542535),
     I = n(915614),
     j = n(662758),
     y = n(957565),
@@ -51,9 +51,9 @@ function z(e) {
     let {
         className: t,
         user: l
-    } = e, r = s.useRef(null), u = (0, p.EC)(), m = u?.nick?.[0] ?? null, [g, _] = s.useState(!1);
+    } = e, r = s.useRef(null), u = (0, p.EC)(), m = u?.nick?.[0] ?? null, [_, g] = s.useState(!1);
     s.useEffect(() => {
-        _(null != r.current && r.current.scrollWidth > r.current.clientWidth)
+        g(null != r.current && r.current.scrollWidth > r.current.clientWidth)
     }, [l.username]);
     let x = !l.isClaimed(),
         A = x ? w.intl.string(w.t["7Ngnyr"]) : void 0;
@@ -103,7 +103,7 @@ function z(e) {
                 children: (0, i.jsx)(c.Button, {
                     variant: "secondary",
                     size: "sm",
-                    text: g ? w.intl.string(w.t["16kTw/"]) : w.intl.string(w.t.bt75uw),
+                    text: _ ? w.intl.string(w.t["16kTw/"]) : w.intl.string(w.t.bt75uw),
                     disabled: x,
                     "aria-label": w.intl.string(w.t.JECa91),
                     onClick: () => (0, c.mMO)(async () => {
@@ -124,9 +124,9 @@ function Y(e) {
     let {
         user: t,
         className: n
-    } = e, l = (0, p.EC)(), r = l?.nick?.[0] ?? null, u = R.Ay.getGlobalName(t), m = s.useRef(null), [g, _] = s.useState(!1);
+    } = e, l = (0, p.EC)(), r = l?.nick?.[0] ?? null, u = R.Ay.getGlobalName(t), m = s.useRef(null), [_, g] = s.useState(!1);
     return s.useEffect(() => {
-        _(null != m.current && m.current.scrollWidth > m.current.clientWidth)
+        g(null != m.current && m.current.scrollWidth > m.current.clientWidth)
     }, [u]), (0, i.jsxs)("div", {
         className: a()(B.ZZ, n),
         children: [(0, i.jsx)("div", {
@@ -166,7 +166,7 @@ function Y(e) {
             children: (0, i.jsx)(c.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: g ? w.intl.string(w.t["16kTw/"]) : w.intl.string(w.t.bt75uw),
+                text: _ ? w.intl.string(w.t["16kTw/"]) : w.intl.string(w.t.bt75uw),
                 "aria-label": w.intl.string(w.t.YXeWYM),
                 onClick: H
             })
@@ -391,7 +391,7 @@ function Z(e) {
 function q(e) {
     let {
         className: t
-    } = e, l = (0, _.b8)(), r = (0, _.yM)(), o = (0, _.Y2)(), d = !l || r, u = w.intl.string(w.t["9KiIz6"]), x = w.intl.string(w.t.DVywUB), A = w.intl.string(w.t.lKDPGA), h = s.useCallback(() => {
+    } = e, l = (0, g.b8)(), r = (0, g.yM)(), o = (0, g.Y2)(), d = !l || r, u = w.intl.string(w.t["9KiIz6"]), x = w.intl.string(w.t.DVywUB), A = w.intl.string(w.t.lKDPGA), h = s.useCallback(() => {
         window.open(O.A.getArticleURL(U.MVz.TIGGER_PAWTECT_LEARN_MORE), "_blank")
     }, []), p = s.useCallback(() => {
         (0, c.mMO)(async () => {
@@ -442,7 +442,7 @@ function q(e) {
                 text: r ? u : x,
                 "aria-label": r ? u : x,
                 onClick: () => m.A.showAgeVerificationGetStartedModal({
-                    entryPoint: g.q1.ACCOUNT_AGE_GROUP
+                    entryPoint: _.q1.ACCOUNT_AGE_GROUP
                 })
             })
         })]
@@ -452,13 +452,13 @@ function q(e) {
 function Q(e) {
     let {
         currentUser: t
-    } = e, n = (0, C.Ay)(t.id), s = (0, b.A)(n), l = P.jP.useSetting(), a = (0, r.bG)([S.A], () => S.A.getErrors()), o = a?.avatar?.[0], {
+    } = e, n = (0, C.Ay)(t.id), s = (0, b.A)(n), l = P.jP.useSetting(), a = (0, r.bG)([E.A], () => E.A.getErrors()), o = a?.avatar?.[0], {
         avatarSrc: d,
         avatarDecorationSrc: m
-    } = (0, N.A)({
+    } = (0, v.A)({
         userId: t?.id,
         size: c._3J.SIZE_80
-    }), g = (0, E.A)(), _ = (0, T.fk)();
+    }), _ = (0, S.A)(), g = (0, T.fk)();
     return (0, i.jsxs)("div", {
         className: B.DM,
         children: [(0, i.jsx)(I.o, {
@@ -467,7 +467,7 @@ function Q(e) {
             avatarSize: c._3J.SIZE_80,
             avatarOffsetX: 16,
             avatarOffsetY: -22,
-            bannerWidth: g ? 696 : 660,
+            bannerWidth: _ ? 696 : 660,
             bannerHeight: 100,
             themePadding: 0
         }), (0, i.jsxs)("div", {
@@ -490,7 +490,7 @@ function Q(e) {
                     }), (0, i.jsx)(Z, {
                         user: t
                     })]
-                }), (0, i.jsx)(v.A, {
+                }), (0, i.jsx)(N.A, {
                     badges: s,
                     className: B.C_,
                     badgeClassName: B.qS
@@ -521,7 +521,7 @@ function Q(e) {
                 }), (0, i.jsx)(W, {
                     className: B.Zr,
                     user: t
-                }), _ && (0, i.jsx)(q, {
+                }), g && (0, i.jsx)(q, {
                     className: B.Zr
                 })]
             })]

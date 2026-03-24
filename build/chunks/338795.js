@@ -1,6 +1,6 @@
 /** chunk id: 338795 params = (module,exports,require) **/
 n.d(t, {
-    J: () => E
+    J: () => S
 });
 var i = n(934551),
     s = n(98207),
@@ -12,8 +12,8 @@ var i = n(934551),
     c = n(780964),
     u = n(828797),
     m = n(611478),
-    g = n(402089),
-    _ = n(281225),
+    _ = n(402089),
+    g = n(281225),
     x = n(935185),
     A = n(652215),
     h = n(985018);
@@ -24,7 +24,7 @@ let p = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
                 target_tab_name: x.D.STANDING
             })
         },
-        buildLayout: () => [_.Q]
+        buildLayout: () => [g.Q]
     }),
     f = (0, a.dT)(c.X.ACCOUNT_SECURITY_TAB, {
         getTitle: () => h.intl.string(h.t.Am9YHi),
@@ -33,7 +33,7 @@ let p = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
                 target_tab_name: x.D.SECURITY
             })
         },
-        buildLayout: () => [m.P, u.o, g.s]
+        buildLayout: () => [m.P, u.o, _.s]
     }),
     T = (0, a.t_)(c.X.ACCOUNT_PANEL, {
         useTitle: () => h.intl.string(h.t["JAIM/m"]),
@@ -46,7 +46,7 @@ let p = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
         hideInStreamerMode: !0,
         buildLayout: () => [f, p]
     }),
-    E = (0, a.i4)(c.X.ACCOUNT_SIDEBAR_ITEM, {
+    S = (0, a.i4)(c.X.ACCOUNT_SIDEBAR_ITEM, {
         useTitle: () => h.intl.string(h.t["JAIM/m"]),
         icon: i.UserIcon,
         buildLayout: () => [T]

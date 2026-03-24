@@ -13,8 +13,8 @@ var s = n(503698),
     c = n(834981),
     u = n(796497),
     m = n(191627),
-    g = n(842130),
-    _ = n(985018),
+    _ = n(842130),
+    g = n(985018),
     x = n(555064),
     A = n(896498),
     h = n(272673),
@@ -29,17 +29,17 @@ let f = () => {
             className: x.x6,
             children: t ? (0, i.jsx)(a.Button, {
                 variant: "primary",
-                text: _.intl.string(_.t.LhlgY9),
+                text: g.intl.string(g.t.LhlgY9),
                 onClick: () => n(m.u9.REQUESTS)
             }) : (0, i.jsx)(u.A, {})
         })
     },
     T = () => {
         let e = (0, o.A)(),
-            t = (0, r.y)(_.intl.string(g.default["T7GyW+"]), _.intl.string(g.default.goKE2b)),
-            n = (0, r.y)(_.intl.format(g.default.MXjDSv, {
+            t = (0, r.y)(g.intl.string(_.default["T7GyW+"]), g.intl.string(_.default.goKE2b)),
+            n = (0, r.y)(g.intl.format(_.default.MXjDSv, {
                 articleLink: "https://support.discord.com/hc/articles/14155060633623"
-            }), _.intl.format(g.default.EMCf6j, {
+            }), g.intl.format(_.default.EMCf6j, {
                 articleLink: "https://support.discord.com/hc/articles/14155043715735"
             }));
         return (0, i.jsxs)("div", {
@@ -64,7 +64,7 @@ let f = () => {
                 className: x.F0,
                 children: (0, i.jsx)("img", {
                     src: e ? h : p,
-                    alt: _.intl.string(g.default.ffg6xd)
+                    alt: g.intl.string(_.default.ffg6xd)
                 })
             })]
         })

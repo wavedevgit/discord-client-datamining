@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(878460),
     u = n(253932),
     m = n(12901),
-    g = n(652215),
-    _ = n(431144),
+    _ = n(652215),
+    g = n(431144),
     x = n(842130),
     A = n(985018),
     h = n(753765);
@@ -50,7 +50,7 @@ let p = () => {
                         children: (0, i.jsx)(l.N_, {
                             onClick: m.default,
                             to: {
-                                pathname: g.BVt.FAMILY_CENTER,
+                                pathname: _.BVt.FAMILY_CENTER,
                                 state: {
                                     scrollRestoration: !1
                                 }
@@ -64,10 +64,10 @@ let p = () => {
                     })]
                 })
             }) : null, (0, i.jsx)(o.dOG, {
-                checked: !!t[_.HO.FAMILY_CENTER_DIGEST],
+                checked: !!t[g.HO.FAMILY_CENTER_DIGEST],
                 description: A.intl.string(x.default.y34S46),
                 onChange: function(e) {
-                    (0, d.CA)(_.HO.FAMILY_CENTER_DIGEST, e)
+                    (0, d.CA)(g.HO.FAMILY_CENTER_DIGEST, e)
                 },
                 label: A.intl.string(x.default.irvJKR)
             })]

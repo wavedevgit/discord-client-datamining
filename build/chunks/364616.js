@@ -17,8 +17,8 @@ var a = n(627968),
     S = n(466459),
     h = n(623373),
     v = n(561769),
-    g = n(985018),
-    A = n(219974);
+    A = n(985018),
+    g = n(219974);
 let I = e => {
         let {
             product: t,
@@ -30,7 +30,7 @@ let I = e => {
         } = e, E = (0, _.Q)(t), {
             shownVariants: S,
             totalVariants: v,
-            hasOverflow: g
+            hasOverflow: A
         } = i.useMemo(() => {
             let e = p?.maxVariantsToShow;
             return (0, h.B1)(t) ? null == e || e >= t.variants.length ? {
@@ -59,10 +59,10 @@ let I = e => {
                     } = e;
                     return (0, a.jsxs)("div", {
                         className: r()({
-                            [A.yZ]: d,
-                            [A.sz]: !d,
-                            [A.LV]: u
-                        }, A.lO),
+                            [g.yZ]: d,
+                            [g.sz]: !d,
+                            [g.LV]: u
+                        }, g.lO),
                         ref: i,
                         ...o,
                         children: [S.map((e, t) => (0, a.jsx)(T, {
@@ -73,7 +73,7 @@ let I = e => {
                             onVariantExit: l,
                             zIndex: v - Math.abs(E - t),
                             onVariantClick: I
-                        }, e.variantValue)), null != p && g && (0, a.jsx)(y, {
+                        }, e.variantValue)), null != p && A && (0, a.jsx)(y, {
                             zIndex: E >= p.maxVariantsToShow - 1 ? v + 1 : 0,
                             isSelected: E >= p.maxVariantsToShow - 1,
                             onOverflowClick: p.onClick,
@@ -102,7 +102,7 @@ let I = e => {
             s(e, n), E()
         }, [s, E, n]);
         return (0, a.jsx)(p.m, {
-            text: g.intl.string(g.t["6cfuDj"]),
+            text: A.intl.string(A.t["6cfuDj"]),
             shouldShow: v,
             children: (0, a.jsx)(d.DUT, {
                 "aria-label": t.variantLabel,
@@ -111,8 +111,8 @@ let I = e => {
                 onMouseLeave: c,
                 onFocus: u,
                 onBlur: c,
-                className: r()(A.bP, {
-                    [A.wH]: l
+                className: r()(g.bP, {
+                    [g.wH]: l
                 }),
                 style: {
                     backgroundColor: t.variantValue,
@@ -130,7 +130,7 @@ let I = e => {
             variant: t
         } = e, n = (0, E.A)(t);
         return (0, a.jsx)(d.BNr, {
-            className: A.U,
+            className: g.U,
             color: n ? u.A.colors.BLACK.css : u.A.colors.WHITE.css
         })
     },
@@ -147,17 +147,17 @@ let I = e => {
             e.stopPropagation(), l(e), u()
         }, [l, u]);
         return (0, a.jsx)(d.DUT, {
-            "aria-label": g.intl.string(g.t["+0zcgs"]),
+            "aria-label": A.intl.string(A.t["+0zcgs"]),
             onClick: c,
-            className: r()(A.bP, A.V3, {
-                [A.wH]: n
+            className: r()(g.bP, g.V3, {
+                [g.wH]: n
             }),
             style: {
                 zIndex: t
             },
             ...p,
             children: (0, a.jsx)(d.j96, {
-                className: A.ab,
+                className: g.ab,
                 color: "white"
             })
         })

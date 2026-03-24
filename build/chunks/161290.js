@@ -13,20 +13,20 @@ var s = n(284009),
     c = n(919395),
     u = n(124064),
     m = n(200790),
-    g = n(230084),
-    _ = n(339442),
+    _ = n(230084),
+    g = n(339442),
     x = n(900254),
     A = n(431982),
     h = n(730588),
     p = n(593629),
     f = n(164599),
     T = n(63675),
-    E = n(617514),
-    S = n(546849),
+    S = n(617514),
+    E = n(546849),
     b = n(101058),
     C = n(84540),
-    N = n(836602),
-    v = n(622543),
+    v = n(836602),
+    N = n(622543),
     I = n(950191),
     j = n(287809),
     y = n(927578),
@@ -38,7 +38,7 @@ function L() {
             let e = j.default.getCurrentUser();
             return l()(null != e, "DefaultCustomizationSections: user cannot be undefined"), e
         }),
-        t = (0, a.bG)([v.A], () => v.A.getUserProfile(e.id)),
+        t = (0, a.bG)([N.A], () => N.A.getUserProfile(e.id)),
         {
             pendingAvatar: n,
             pendingGlobalName: s,
@@ -50,9 +50,9 @@ function L() {
             pendingLegacyUsernameDisabled: U,
             pendingPrimaryGuildId: k,
             errors: w
-        } = (0, a.cf)([N.A], () => {
-            let e = N.A.getPendingChanges(),
-                t = N.A.getErrors();
+        } = (0, a.cf)([v.A], () => {
+            let e = v.A.getPendingChanges(),
+                t = v.A.getErrors();
             return {
                 ...e,
                 errors: t
@@ -73,7 +73,7 @@ function L() {
         Z = (0, d.b)();
     return (0, i.jsxs)("div", {
         className: R.Q,
-        children: [(0, i.jsx)(_.A, {
+        children: [(0, i.jsx)(g.A, {
             placeholder: e.username,
             errors: K,
             currentGlobalName: e.globalName,
@@ -82,7 +82,7 @@ function L() {
                 globalName: e
             }),
             user: e
-        }), (0, i.jsx)(S.A, {
+        }), (0, i.jsx)(E.A, {
             sectionTitle: O.intl.string(O.t["+T3RI/"]),
             errors: w.pronouns,
             onPronounsChange: e => (0, C.p)({
@@ -90,7 +90,7 @@ function L() {
             }),
             pendingPronouns: D,
             currentPronouns: t?.pronouns ?? ""
-        }, "pronouns"), (0, i.jsx)(E.A, {}), (0, i.jsx)(g.A, {
+        }, "pronouns"), (0, i.jsx)(S.A, {}), (0, i.jsx)(_.A, {
             onAvatarChange: e => {
                 (0, C.p)({
                     avatar: e

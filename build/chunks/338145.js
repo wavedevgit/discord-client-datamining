@@ -12,14 +12,14 @@ var i = n(627968),
     c = n(430452),
     u = n(975571),
     m = n(544028),
-    g = n(780964),
-    _ = n(652215),
+    _ = n(780964),
+    g = n(652215),
     x = n(985018);
 let A = n(993830),
     h = n(413142),
     p = {
-        page: _.liQ.USER_SETTINGS,
-        section: _.JJy.SETTINGS_VOICE_AND_VIDEO
+        page: g.liQ.USER_SETTINGS,
+        section: g.JJy.SETTINGS_VOICE_AND_VIDEO
     };
 
 function f() {
@@ -31,7 +31,7 @@ function f() {
         alt: ""
     })
 }
-let T = (0, d.E2)(g.X.VOICE_NOISE_SUPPRESSION_SETTING, {
+let T = (0, d.E2)(_.X.VOICE_NOISE_SUPPRESSION_SETTING, {
     useSearchTerms: () => [x.intl.string(x.t.t8Qhib), x.intl.string(x.t.hmfkCi)],
     usePredicate: function() {
         return (0, a.bG)([c.Ay], () => c.Ay.isInputProfileCustom() && c.Ay.isNoiseSuppressionSupported())
@@ -51,7 +51,7 @@ let T = (0, d.E2)(g.X.VOICE_NOISE_SUPPRESSION_SETTING, {
                 isNoiseSuppressionSupported: c.Ay.isNoiseSuppressionSupported(),
                 isNoiseCancellationSupported: c.Ay.isNoiseCancellationSupported()
             })),
-            g = s.useMemo(() => {
+            _ = s.useMemo(() => {
                 let e = [];
                 return m && e.push({
                     id: "krisp",
@@ -68,7 +68,7 @@ let T = (0, d.E2)(g.X.VOICE_NOISE_SUPPRESSION_SETTING, {
                 }), e
             }, [m, d]),
             A = m ? x.intl.format(x.t["1q5aTp"], {
-                helpArticle: u.A.getArticleURL(_.MVz.NOISE_SUPPRESSION)
+                helpArticle: u.A.getArticleURL(g.MVz.NOISE_SUPPRESSION)
             }) : x.intl.string(x.t.OWKjw5);
         return (0, i.jsxs)(l.BJc, {
             direction: "vertical",
@@ -79,7 +79,7 @@ let T = (0, d.E2)(g.X.VOICE_NOISE_SUPPRESSION_SETTING, {
                 layout: "horizontal",
                 value: t ? "KRISP" : n ? "STANDARD" : "NONE",
                 onSelectionChange: e,
-                options: g,
+                options: _,
                 selectionMode: "single",
                 fullWidth: !0
             }), m && (0, i.jsx)(f, {})]

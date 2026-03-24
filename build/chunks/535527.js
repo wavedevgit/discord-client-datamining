@@ -3,8 +3,8 @@ n.d(t, {
     K: () => s
 });
 var i = n(966597),
-    r = n(203982),
-    a = n(652215);
+    l = n(203982),
+    r = n(652215);
 let s = {
     binds: ["mod+l"],
     comboKeysBindGlobal: !0,
@@ -15,6 +15,6 @@ let s = {
         } = i.A.getConfig({
             location: "keybinds"
         });
-        if (e && !t) return r._.dispatch(a.jej.TOGGLE_FOR_LATER), !1
+        if (e && !t) return l._.dispatch(r.jej.TOGGLE_FOR_LATER), !1
     }
 }

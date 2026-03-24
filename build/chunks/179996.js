@@ -1,6 +1,6 @@
 /** chunk id: 179996 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => g
 });
 var i = n(627968),
     s = n(311907),
@@ -12,45 +12,45 @@ var i = n(627968),
     c = n(473145),
     u = n(652215),
     m = n(985018),
-    g = n(655210);
+    _ = n(655210);
 
-function _(e) {
+function g(e) {
     let {
         guildId: t
     } = e, n = (0, s.bG)([d.A], () => d.A.getGuild(t), [t]), {
-        total: _
+        total: g
     } = (0, o.A)(n?.id);
     return null == n ? null : (0, i.jsxs)("div", {
-        className: g.Nr,
+        className: _.Nr,
         children: [(0, i.jsxs)("div", {
-            className: g.OA,
+            className: _.OA,
             children: [(0, i.jsx)(a.Ay, {
-                className: g.$f,
+                className: _.$f,
                 guild: n,
                 size: a.Ay.Sizes.LARGER
             }), (0, i.jsxs)("div", {
-                className: g.gI,
+                className: _.gI,
                 children: [(0, i.jsx)(l.Text, {
                     variant: "heading-md/semibold",
                     color: "text-default",
                     tag: "span",
                     children: n.name
                 }), (0, i.jsxs)("div", {
-                    className: g.ew,
+                    className: _.ew,
                     children: [(0, i.jsxs)("div", {
-                        className: g.QW,
+                        className: _.QW,
                         children: [(0, i.jsx)(l._Jp, {
-                            className: g.Wz,
+                            className: _.Wz,
                             color: l.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK_REFRESH
                         }), (0, i.jsx)(l.Text, {
                             variant: "text-xs/semibold",
                             color: "text-subtle",
                             children: m.intl.format(m.t["pob/cL"], {
-                                subscriptions: _
+                                subscriptions: g
                             })
                         })]
                     }), (0, i.jsx)("div", {
-                        className: g.zk
+                        className: _.zk
                     }), (0, i.jsx)(l.Text, {
                         variant: "text-xs/semibold",
                         color: "text-subtle",

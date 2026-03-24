@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(353428),
     A = n(976860),
     m = n(823471),
-    _ = n(734057),
-    p = n(31717),
+    p = n(734057),
+    _ = n(31717),
     g = n(71393),
     f = n(853742),
     x = n(985018),
@@ -25,7 +25,7 @@ var i = n(627968),
 function E(e) {
     let {
         channelId: t
-    } = e, E = (0, l.bG)([_.A], () => _.A.getChannel(t)), I = (0, l.bG)([_.A], () => _.A.getChannel(E?.parent_id)), N = (0, l.bG)([g.A], () => g.A.getGuild(E?.getGuildId())), b = (0, o.Ay)(E), S = s.useRef(!1);
+    } = e, E = (0, l.bG)([p.A], () => p.A.getChannel(t)), I = (0, l.bG)([p.A], () => p.A.getChannel(E?.parent_id)), N = (0, l.bG)([g.A], () => g.A.getGuild(E?.getGuildId())), b = (0, o.Ay)(E), S = s.useRef(!1);
     if (s.useEffect(() => {
             null == E || S.current || (S.current = !0, (0, f.rH)(E))
         }, [E]), null == E || null == N) return null;
@@ -35,7 +35,7 @@ function E(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(r.A, {
             channel: E,
-            draftType: p.C.ChannelMessage
+            draftType: _.C.ChannelMessage
         }), (0, i.jsx)(u.Ay, {
             toolbar: T,
             "aria-label": x.intl.string(x.t.Pwe8tN),

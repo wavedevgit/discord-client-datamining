@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(979286),
     u = n(492499),
     m = n(652215),
-    g = n(788868),
-    _ = n(985018),
+    _ = n(788868),
+    g = n(985018),
     x = n(844551);
 let A = () => {
     let {
@@ -25,10 +25,10 @@ let A = () => {
         body: p,
         version: f,
         revertTextColor: T
-    } = (0, u.M)(), E = s.useContext(o.gl), S = E?.navigateWithValidation ?? (e => e());
+    } = (0, u.M)(), S = s.useContext(o.gl), E = S?.navigateWithValidation ?? (e => e());
     return s.useEffect(() => {
         d.default.track(m.HAw.PREMIUM_UPSELL_VIEWED, {
-            type: g.e.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
+            type: _.e.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
             location_stack: e,
             version: f
         })
@@ -61,13 +61,13 @@ let A = () => {
             })]
         }), (0, i.jsx)(l.Button, {
             onClick: () => {
-                S(() => (0, c.Cz)({
+                E(() => (0, c.Cz)({
                     analyticsLocations: e,
                     analyticsSource: a.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL
                 }))
             },
             variant: "overlay-primary",
-            text: _.intl.string(_.t.fYfGgK)
+            text: g.intl.string(g.t.fYfGgK)
         })]
     })
 }

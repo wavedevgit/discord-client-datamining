@@ -1,6 +1,6 @@
 /** chunk id: 39043 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -15,13 +15,13 @@ var i = n(627968),
 function m(e) {
     return r.A.getField("requestAccordionOpenKey") === e.key
 }
-let g = s.memo(function(e) {
+let _ = s.memo(function(e) {
     let {
         node: t
     } = e, {
         useTitle: n,
-        layout: g,
-        useCollapsedSubtitle: _
+        layout: _,
+        useCollapsedSubtitle: g
     } = t, [x, A] = s.useState(!0), [h, p] = s.useState(() => m(t)), f = s.useRef(h), T = s.useRef(m(t) ? "navigation" : null);
     s.useEffect(() => r.A.subscribe(e => e.requestAccordionOpenKey, e => {
         e === t.key && (f.current ? o.A.notifyAccordionExpanded(t.key) : (T.current = "navigation", A(!1), p(!0)))
@@ -29,7 +29,7 @@ let g = s.memo(function(e) {
         equalityFn: (e, t) => e === t,
         fireImmediately: !0
     }), [t.key, h]);
-    let E = s.useCallback(e => {
+    let S = s.useCallback(e => {
             if (null != e.target && h !== f.current && (f.current = h, f.current)) switch (T.current) {
                 case "navigation":
                     A(!0), o.A.notifyAccordionExpanded(t.key);
@@ -41,21 +41,21 @@ let g = s.memo(function(e) {
                     })
             }
         }, [h, t.key]),
-        S = s.useMemo(() => (0, l.debounce)(E, 50), [E]),
-        b = (0, a.w)(S),
+        E = s.useMemo(() => (0, l.debounce)(S, 50), [S]),
+        b = (0, a.w)(E),
         C = n?.(h),
-        N = _?.(),
-        v = (0, c.q)(t);
+        v = g?.(),
+        N = (0, c.q)(t);
     return (0, i.jsx)(u.f, {
         ref: b,
         title: C,
-        collapsedSubtitle: N,
+        collapsedSubtitle: v,
         isExpanded: h,
         onExpandedChange: e => {
-            T.current = "user", v(), p(e)
+            T.current = "user", N(), p(e)
         },
         animate: x,
-        children: g.map(e => (0, i.jsx)(d.A, {
+        children: _.map(e => (0, i.jsx)(d.A, {
             node: e
         }, e.key))
     })

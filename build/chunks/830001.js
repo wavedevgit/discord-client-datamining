@@ -13,23 +13,23 @@ var i = n(627968),
     c = n(252452),
     u = n(103738),
     m = n(419954),
-    g = n(933297),
-    _ = n(836602),
+    _ = n(933297),
+    g = n(836602),
     x = n(591179),
     A = n(854627),
     h = n(657331),
     p = n(961350),
     f = n(287809),
     T = n(780964),
-    E = n(633817),
-    S = n(652215),
+    S = n(633817),
+    E = n(652215),
     b = n(985018),
     C = n(722125);
-let N = [{
-        badgeType: g.Xi.NEW,
+let v = [{
+        badgeType: _.Xi.NEW,
         dismissibleContent: a.M.DISPLAY_NAME_STYLES_NEW_BADGE
     }],
-    v = () => {
+    N = () => {
         let e = (0, l.bG)([f.default], () => f.default.getCurrentUser()),
             {
                 avatarSrc: t,
@@ -70,27 +70,27 @@ let N = [{
     I = (0, m.t_)(T.X.PROFILE_PANEL, {
         useTitle: () => b.intl.string(b.t["vi7f+q"]),
         notice: {
-            stores: [_.A],
+            stores: [g.A],
             element: u.A
         },
         initialize: () => () => o.h.wait(() => {
-            (0, d.F7)(), c.A.clearSubsection(S.nc_.PROFILE_CUSTOMIZATION)
+            (0, d.F7)(), c.A.clearSubsection(E.nc_.PROFILE_CUSTOMIZATION)
         }),
-        buildLayout: () => [E.I]
+        buildLayout: () => [S.I]
     }),
     j = (0, m.i4)(T.X.PROFILE_SIDEBAR_ITEM, {
         useTitle: () => b.intl.string(b.t["vi7f+q"]),
         icon: O,
-        StronglyDiscouragedCustomComponent: v,
-        getDismissibleBadges: () => N,
+        StronglyDiscouragedCustomComponent: N,
+        getDismissibleBadges: () => v,
         usePredicate: () => !(0, x.X)("user_settings_sidebar"),
         buildLayout: () => [I]
     }),
     y = (0, m.i4)(T.X.PROFILE_SIDEBAR_ITEM_WYSIWYG, {
         useTitle: () => b.intl.string(b.t["vi7f+q"]),
         icon: O,
-        StronglyDiscouragedCustomComponent: v,
-        getDismissibleBadges: () => N,
+        StronglyDiscouragedCustomComponent: N,
+        getDismissibleBadges: () => v,
         usePredicate: () => (0, x.X)("user_settings_sidebar"),
         onClick: () => {
             let e = p.default.getId();

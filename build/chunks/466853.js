@@ -91,20 +91,20 @@ function E(e) {
         headerActionButtons: T,
         headerClassName: b,
         additionalManageWidgetMenuItems: N
-    } = e, y = (0, d.GV)(), S = l.useRef(null), C = (0, o.bG)([c.default], () => c.default.getId() === t), R = (0, f.g)(), {
+    } = e, S = (0, d.GV)(), y = l.useRef(null), C = (0, o.bG)([c.default], () => c.default.getId() === t), R = (0, f.g)(), {
         trackUserProfileAction: k
-    } = (0, u.NJ)(), w = (0, x.A)({
+    } = (0, u.NJ)(), L = (0, x.A)({
         widget: n,
         onAction: k
-    }), L = R === n.type;
-    (0, m.A)(w, L);
-    let O = C && null != h && !g,
+    }), O = R === n.type;
+    (0, m.A)(L, O);
+    let w = C && null != h && !g,
         D = () => (0, i.jsxs)("div", {
-            ref: S,
+            ref: y,
             className: s()(j.kL, p),
             children: [(0, i.jsx)(_.A, {
                 userId: t,
-                headingId: y,
+                headingId: S,
                 title: I,
                 subtitle: E,
                 actionButtons: T,
@@ -116,12 +116,12 @@ function E(e) {
             })]
         });
     return (0, i.jsx)("section", {
-        ref: w,
-        "aria-labelledby": y,
-        children: O ? (0, i.jsx)(v, {
+        ref: L,
+        "aria-labelledby": S,
+        children: w ? (0, i.jsx)(v, {
             index: h ?? 0,
             widget: n,
-            getWidth: () => S.current?.offsetWidth,
+            getWidth: () => y.current?.offsetWidth,
             additionalManageWidgetMenuItems: N,
             children: D()
         }) : D()

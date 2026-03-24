@@ -12,8 +12,8 @@ var i, s = n(627968),
     c = n(735438),
     u = n.n(c),
     m = n(397927),
-    g = n(235986),
-    _ = n(350535),
+    _ = n(235986),
+    g = n(350535),
     x = n(985018),
     A = n(181204),
     h = ((i = {}).DEFAULT = "DEFAULT", i.RECORDING = "RECORDING", i);
@@ -75,7 +75,7 @@ class f extends l.PureComponent {
                 value: n,
                 disabled: i
             } = this.props,
-            l = (0, _.dI)(n, !0);
+            l = (0, g.dI)(n, !0);
         return e = "RECORDING" === t ? x.intl.string(x.t.bmOri0) : 0 === n.length ? x.intl.string(x.t.co3wt9) : x.intl.string(x.t.idFMvH), (0, s.jsx)(m.vN3, {
             focusTarget: this._inputRef,
             ringTarget: this._containerRef,
@@ -86,9 +86,9 @@ class f extends l.PureComponent {
                 className: r()(A.Qm, p[t], {
                     [A.Qz]: i
                 }),
-                children: (0, s.jsxs)(g.A, {
+                children: (0, s.jsxs)(_.A, {
                     className: A.Pp,
-                    children: [(0, s.jsx)(g.A.Child, {
+                    children: [(0, s.jsx)(_.A.Child, {
                         className: A.bZ,
                         children: (0, s.jsx)("input", {
                             id: this._inputId,

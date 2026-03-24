@@ -13,8 +13,8 @@ var s = n(503698),
     c = n(654107),
     u = n(950191),
     m = n(101928),
-    g = n(927578),
-    _ = n(911180),
+    _ = n(927578),
+    g = n(911180),
     x = n(128450),
     A = n(985018),
     h = n(114403);
@@ -28,19 +28,19 @@ function p(e) {
         preventDisabled: p,
         guildId: f,
         className: T,
-        showPremiumIcon: E = !0,
-        showResetThemeButton: S = !1,
+        showPremiumIcon: S = !0,
+        showResetThemeButton: E = !1,
         forcedDivider: b
     } = e, C = (0, u.Ay)(t.id, f), {
-        primaryColor: N,
-        secondaryColor: v
+        primaryColor: v,
+        secondaryColor: N
     } = (0, m.A)({
         user: t,
         displayProfile: C,
         pendingThemeColors: s,
         isPreview: !0
-    }), I = g.Ay.canUsePremiumProfileCustomization(t), j = null != n ? n : t.getAvatarURL(f, 80), y = (0, d.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), O = (0, c.rh)(j, y, !1);
-    if (null == N || null == v) return null;
+    }), I = _.Ay.canUsePremiumProfileCustomization(t), j = null != n ? n : t.getAvatarURL(f, 80), y = (0, d.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), O = (0, c.rh)(j, y, !1);
+    if (null == v || null == N) return null;
     let R = e => {
         a(r()(e, C?.themeColors) ? void 0 : e)
     };
@@ -48,15 +48,15 @@ function p(e) {
         title: A.intl.string(A.t.DMeO2X),
         disabled: !I && !p,
         className: l()(h.__invalid_profileThemesSection, T),
-        showPremiumIcon: E,
+        showPremiumIcon: S,
         forcedDivider: b,
         children: (0, i.jsxs)("div", {
             className: h.hd,
             children: [(0, i.jsx)("div", {
                 className: h.YX,
-                children: (0, i.jsx)(_.A, {
-                    onChange: e => R([e, v]),
-                    color: N,
+                children: (0, i.jsx)(g.A, {
+                    onChange: e => R([e, N]),
+                    color: v,
                     suggestedColors: O,
                     showEyeDropper: !0,
                     label: (0, i.jsx)(d.Text, {
@@ -69,9 +69,9 @@ function p(e) {
                 })
             }), (0, i.jsx)("div", {
                 className: h.YX,
-                children: (0, i.jsx)(_.A, {
-                    onChange: e => R([N, e]),
-                    color: v,
+                children: (0, i.jsx)(g.A, {
+                    onChange: e => R([v, e]),
+                    color: N,
                     suggestedColors: O,
                     showEyeDropper: !0,
                     label: (0, i.jsx)(d.Text, {
@@ -82,7 +82,7 @@ function p(e) {
                         children: A.intl.string(A.t["8elvy6"])
                     })
                 })
-            }), S && null != f && (0, i.jsx)("div", {
+            }), E && null != f && (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: h.WA,
                 children: (0, i.jsx)(d.Button, {

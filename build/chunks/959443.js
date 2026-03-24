@@ -14,8 +14,8 @@ var s = n(503698),
     c = n(139286),
     u = n(793943),
     m = n(996254),
-    g = n(12901),
-    _ = n(738419),
+    _ = n(12901),
+    g = n(738419),
     x = n(520650),
     A = n(985018),
     h = n(996554),
@@ -63,9 +63,9 @@ function f(e) {
                 variant: "primary",
                 text: A.intl.string(A.t.uw9zI7),
                 onClick: () => {
-                    (0, _.b0)(_.G8.APPEARANCE_SETTINGS), (0, u.nf)(u.HP.CUSTOM_THEME, {
+                    (0, g.b0)(g.G8.APPEARANCE_SETTINGS), (0, u.nf)(u.HP.CUSTOM_THEME, {
                         from: u.xv.SETTING
-                    }), (0, g.default)()
+                    }), (0, _.default)()
                 }
             })
         })]

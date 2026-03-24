@@ -1,33 +1,33 @@
 /** chunk id: 755029 params = (module,exports,require) **/
 "use strict";
-n.d(t, {
-    A: () => p
+i.d(t, {
+    A: () => _
 });
-var i = n(627968);
-n(64700);
-var s = n(311907),
-    l = n(528772),
-    a = n(944775),
-    r = n(927421),
-    o = n(734057),
-    d = n(309010),
-    c = n(427603),
-    u = n(980504),
-    h = n(761121);
+var n = i(627968);
+i(64700);
+var s = i(311907),
+    a = i(528772),
+    l = i(944775),
+    r = i(927421),
+    o = i(734057),
+    d = i(309010),
+    c = i(427603),
+    u = i(980504),
+    h = i(761121);
 
-function p() {
-    let [e, t] = (0, s.yK)([l.A], () => [l.A.enabled, l.A.keepOpen]), n = (0, s.bG)([d.A], () => d.A.getVoiceChannelId()), p = (0, s.bG)([o.A], () => o.A.getChannel(n), [n]), A = p?.getGuildId();
-    return e && null != p ? (0, i.jsx)("div", {
+function _() {
+    let [e, t] = (0, s.yK)([a.A], () => [a.A.enabled, a.A.keepOpen]), i = (0, s.bG)([d.A], () => d.A.getVoiceChannelId()), _ = (0, s.bG)([o.A], () => o.A.getChannel(i), [i]), p = _?.getGuildId();
+    return e && null != _ ? (0, n.jsx)("div", {
         className: h.H,
-        children: (0, i.jsx)(r.A, {
+        children: (0, n.jsx)(r.A, {
             width: u.ed.width,
             height: u.ed.height,
-            guildId: A,
-            channel: p,
+            guildId: p,
+            channel: _,
             keepOpen: t,
             onClose: function() {
                 let e = (0, c.A)();
-                null != e && (0, a.Lk)(e)
+                null != e && (0, l.Lk)(e)
             },
             analyticsSource: "overlay"
         })

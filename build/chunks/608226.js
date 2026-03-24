@@ -1,17 +1,17 @@
 /** chunk id: 608226 params = (module,exports,require) **/
 i.d(n, {
-    O: () => r
+    O: () => l
 });
 var e = i(627968);
 i(64700);
-var l = i(397927);
+var r = i(397927);
 
-function r(t, n) {
-    return (0, l.mMO)(async () => {
+function l(t, n) {
+    return (0, r.mMO)(async () => {
         let {
-            default: l
+            default: r
         } = await i.e("33372").then(i.bind(i, 58935));
-        return i => (0, e.jsx)(l, {
+        return i => (0, e.jsx)(r, {
             ...i,
             onConfirm: () => {
                 i.onClose(), n()

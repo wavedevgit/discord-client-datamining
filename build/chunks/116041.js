@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(207803),
     u = n(836602),
     m = n(624826),
-    g = n(253932),
-    _ = n(127870),
+    _ = n(253932),
+    g = n(127870),
     x = n(828578),
     A = n(985018);
 
@@ -44,12 +44,12 @@ function h() {
         }
         if (Object.keys(n).length > 0) {
             let e = await (0, c.gi)(n);
-            s = s && (e?.ok ?? !1), e?.ok ? (0, c.RE)() : (0, _.m)()
+            s = s && (e?.ok ?? !1), e?.ok ? (0, c.RE)() : (0, g.m)()
         }
         if (void 0 !== e.pendingLegacyUsernameDisabled) try {
-            await g.m$.updateSetting(e.pendingLegacyUsernameDisabled), (0, r._e)()
+            await _.m$.updateSetting(e.pendingLegacyUsernameDisabled), (0, r._e)()
         } catch {
-            (0, _.m)(), s = !1
+            (0, g.m)(), s = !1
         }
         if (Object.keys(i).length > 0) {
             let {
@@ -57,7 +57,7 @@ function h() {
             } = i;
             if (void 0 !== e) {
                 let t = await (0, o.m)(e, null !== e);
-                s = s && (t?.ok ?? !1), t?.ok ? (0, r.fw)() : (0, _.m)()
+                s = s && (t?.ok ?? !1), t?.ok ? (0, r.fw)() : (0, g.m)()
             }
         }
         s && (0, r.x8)(), h(!1)

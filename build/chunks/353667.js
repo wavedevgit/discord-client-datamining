@@ -1,6 +1,6 @@
 /** chunk id: 353667 params = (module,exports,require) **/
 n.d(t, {
-    j: () => v
+    j: () => N
 });
 var i = n(627968),
     s = n(64700),
@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(974544),
     u = n(351906),
     m = n(823092),
-    g = n(963935),
-    _ = n(894858),
+    _ = n(963935),
+    g = n(894858),
     x = n(272053),
     A = n(397274),
     h = n(641324),
@@ -56,7 +56,7 @@ function T(e) {
     })
 }
 
-function E(e) {
+function S(e) {
     let {
         decoration: t
     } = e, n = t.component;
@@ -69,7 +69,7 @@ function E(e) {
     })
 }
 
-function S(e) {
+function E(e) {
     let {
         panelKey: t,
         notice: n,
@@ -101,7 +101,7 @@ function b(e) {
     } = e;
     return (0, i.jsxs)("div", {
         className: f.LZ,
-        children: [null != n && (0, i.jsx)(E, {
+        children: [null != n && (0, i.jsx)(S, {
             decoration: n
         }), t.map((e, n) => (0, i.jsxs)(s.Fragment, {
             children: [(0, i.jsx)(h.A, {
@@ -119,22 +119,22 @@ function C(e) {
         layout: n,
         notice: l,
         decoration: a
-    } = e, r = _.A.useState(e => {
+    } = e, r = g.A.useState(e => {
         let {
             currentTabKeys: n
         } = e;
         return n.get(t)
     }) ?? n[0].key;
     s.useEffect(() => {
-        let e = _.A.getField("currentTabKeys");
+        let e = g.A.getField("currentTabKeys");
         if (n.some(n => n.key === e.get(t))) return;
         let i = new Map(e);
-        i.set(t, n[0].key), _.A.setState({
+        i.set(t, n[0].key), g.A.setState({
             currentTabKeys: i
         })
     }, [n, t]);
     let o = n.find(e => e.key === r) ?? n[0];
-    return (0, i.jsxs)(S, {
+    return (0, i.jsxs)(E, {
         panelKey: t,
         notice: l,
         children: [(0, i.jsx)(d.VQ0, {
@@ -171,14 +171,14 @@ function C(e) {
     })
 }
 
-function N(e) {
+function v(e) {
     let {
         panelKey: t,
         notice: n,
         decoration: s,
         layout: l
     } = e;
-    return (0, i.jsx)(S, {
+    return (0, i.jsx)(E, {
         panelKey: t,
         notice: n,
         children: (0, i.jsx)(b, {
@@ -188,20 +188,20 @@ function N(e) {
     })
 }
 
-function v(e) {
+function N(e) {
     let {
         node: t
     } = e, {
         layout: n
     } = t;
     if ((0, r.bG)([u.A], () => u.A.hidePersonalInformation) && t.hideInStreamerMode) return (0, i.jsx)(c.A, {});
-    if ((0, g.zY)(n)) return (0, i.jsx)(C, {
+    if ((0, _.zY)(n)) return (0, i.jsx)(C, {
         panelKey: t.key,
         notice: t.notice,
         decoration: t.decoration,
         layout: n
     });
-    if ((0, g.Iu)(n)) return (0, i.jsx)(N, {
+    if ((0, _.Iu)(n)) return (0, i.jsx)(v, {
         panelKey: t.key,
         notice: t.notice,
         decoration: t.decoration,

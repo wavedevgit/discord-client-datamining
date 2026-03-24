@@ -13,19 +13,19 @@ var s = n(503698),
     c = n(490415),
     u = n(736653),
     m = n(742589),
-    g = n(287809),
-    _ = n(927578),
+    _ = n(287809),
+    g = n(927578),
     x = n(652215),
     A = n(788868),
     h = n(985018),
     p = n(187585);
-let f = a.Ay.connectStores([g.default], () => ({
-    user: g.default.getCurrentUser()
+let f = a.Ay.connectStores([_.default], () => ({
+    user: _.default.getCurrentUser()
 }))((0, c.A)(e => {
     let {
         isAuthenticated: t,
         user: n
-    } = e, s = (0, _.TW)(n, A.PremiumTypes.TIER_2), a = (0, u.Ay)();
+    } = e, s = (0, g.TW)(n, A.PremiumTypes.TIER_2), a = (0, u.Ay)();
     return (0, i.jsx)(d.A, {
         section: x.JJy.NAVIGATION,
         children: (0, i.jsx)(o.NPJ, {

@@ -27,7 +27,7 @@ function v(e) {
         className: t
     } = e, {
         trackUserProfileEditSaved: n
-    } = (0, g.NJ)(), [a, v] = l.useState(!1), E = (0, o.yK)([p.A], () => p.A.getSaveablePendingWidgets() ?? []), T = (0, o.yK)([p.A], () => p.A.getChangedWidgets()), b = (0, o.yK)([p.A], () => p.A.getRemovedWidgets()), N = (0, o.bG)([p.A], () => p.A.hasUnsavedChanges()), y = (0, o.bG)([p.A], () => p.A.canSaveChanges()), S = (0, o.bG)([p.A], () => p.A.isSubmitting), C = (0, o.bG)([c.A], () => c.A.useReducedMotion), R = (0, d.pnh)(N, {
+    } = (0, g.NJ)(), [a, v] = l.useState(!1), E = (0, o.yK)([p.A], () => p.A.getSaveablePendingWidgets() ?? []), T = (0, o.yK)([p.A], () => p.A.getChangedWidgets()), b = (0, o.yK)([p.A], () => p.A.getRemovedWidgets()), N = (0, o.bG)([p.A], () => p.A.hasUnsavedChanges()), S = (0, o.bG)([p.A], () => p.A.canSaveChanges()), y = (0, o.bG)([p.A], () => p.A.isSubmitting), C = (0, o.bG)([c.A], () => c.A.useReducedMotion), R = (0, d.pnh)(N, {
         from: {
             opacity: 0,
             y: 80 * !C
@@ -74,7 +74,7 @@ function v(e) {
                 })
             }
         }, [E, T, b, n]),
-        w = l.useCallback(() => {
+        L = l.useCallback(() => {
             x.A.clearPendingWidgets()
         }, []);
     return R((e, n) => n ? (0, i.jsx)(r.animated.div, {
@@ -97,15 +97,15 @@ function v(e) {
                     size: "sm",
                     variant: "secondary",
                     text: A.intl.string(A.t.yBZMsQ),
-                    onClick: w,
-                    disabled: !N || S
+                    onClick: L,
+                    disabled: !N || y
                 }), (0, i.jsx)(d.Button, {
                     size: "sm",
                     variant: "primary",
                     text: A.intl.string(A.t["R3BPH+"]),
                     onClick: k,
-                    loading: S,
-                    disabled: !y || !N || S
+                    loading: y,
+                    disabled: !S || !N || y
                 })]
             })]
         })

@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(963342),
     u = n(3432),
     m = n(580630),
-    g = n(240248),
-    _ = n(237218),
+    _ = n(240248),
+    g = n(237218),
     x = n(689296),
     A = n(542858);
 
@@ -26,14 +26,14 @@ function h(e) {
         applicationId: h,
         benefits: p,
         description: f
-    } = n, T = s.useMemo(() => null == n.thumbnail ? null : (0, _.t)(h, n.thumbnail, 256), [h, n.thumbnail]), {
-        data: E
-    } = (0, c.j)(n.skuId), S = s.useMemo(() => {
-        if (null == E || 0 === E.length) return null;
-        let e = E[0];
+    } = n, T = s.useMemo(() => null == n.thumbnail ? null : (0, g.t)(h, n.thumbnail, 256), [h, n.thumbnail]), {
+        data: S
+    } = (0, c.j)(n.skuId), E = s.useMemo(() => {
+        if (null == S || 0 === S.length) return null;
+        let e = S[0];
         return (0, m._J)(e)
-    }, [E]);
-    return null == S ? null : (0, i.jsxs)(r.q, {
+    }, [S]);
+    return null == E ? null : (0, i.jsxs)(r.q, {
         className: a()(A.iE, l),
         header: (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)("div", {
@@ -49,12 +49,12 @@ function h(e) {
                         children: n.summary
                     }), (0, i.jsx)(d.Text, {
                         variant: "text-md/medium",
-                        children: S
+                        children: E
                     })]
                 })]
             }), t]
         }),
-        children: [!(0, g.uJ)(f) && (0, i.jsx)("div", {
+        children: [!(0, _.uJ)(f) && (0, i.jsx)("div", {
             className: A.h_,
             children: (0, i.jsx)(x.A, {
                 variant: "text-sm/medium",

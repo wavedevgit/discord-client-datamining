@@ -28,7 +28,7 @@ function u() {
         },
         {
             explicitContentFriendDm: m,
-            explicitContentNonFriendDm: g
+            explicitContentNonFriendDm: _
         } = t;
     return (0, i.jsxs)(l.E, {
         description: c.intl.string(c.t.Wnojv1),
@@ -41,7 +41,7 @@ function u() {
             options: n
         }), (0, i.jsx)(a.A, {
             title: c.intl.string(c.t["Yh+HX1"]),
-            value: g,
+            value: _,
             onChange: e => u({
                 explicitContentNonFriendDm: e
             }),

@@ -1,6 +1,6 @@
 /** chunk id: 283446 params = (module,exports,require) **/
 "use strict";
-n.r(e.exports = {
+i.r(e.exports = {
     container: "container__5c50b",
     topLeft: "topLeft__5c50b",
     topRight: "topRight__5c50b",

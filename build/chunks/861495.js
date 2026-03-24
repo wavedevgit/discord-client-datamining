@@ -1,7 +1,7 @@
 /** chunk id: 861495 params = (module,exports,require) **/
 a.d(t, {
     Q: () => s,
-    Y: () => l
+    Y: () => i
 });
 var n = a(892227),
     r = a(649032);
@@ -20,7 +20,7 @@ function s(e, t) {
     return !0
 }
 
-function l(e, t, a) {
+function i(e, t, a) {
     if (!a || null == e || null == t) return !1;
     let r = e.next_reward_date;
     if (null == r || "" === r) return !1;

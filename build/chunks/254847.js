@@ -13,8 +13,8 @@ var i = n(627968),
     c = n(695515),
     u = n(397808),
     m = n(652215),
-    g = n(842130),
-    _ = n(985018),
+    _ = n(842130),
+    g = n(985018),
     x = n(957415);
 let A = [18, 18, 16, 16, 14, 12, 10];
 
@@ -52,7 +52,7 @@ let p = s.memo(e => {
             }), (0, i.jsx)(o.Text, {
                 variant: "text-sm/medium",
                 color: "text-subtle",
-                children: null != s ? s : void 0 !== l.approximateMemberCount ? _.intl.format(g.default["5JmNgg"], {
+                children: null != s ? s : void 0 !== l.approximateMemberCount ? g.intl.format(_.default["5JmNgg"], {
                     members: l.approximateMemberCount
                 }) : null
             })]

@@ -17,7 +17,7 @@ let u = e => {
     } = e, r = c.Ay.canUsePremiumProfileCustomization(t), {
         pendingAvatar: u,
         ...m
-    } = (0, i.cf)([l.A], () => l.A.getPendingChanges()), h = (0, a.V7)({
+    } = (0, i.cf)([l.A], () => l.A.getPendingChanges()), p = (0, a.V7)({
         userId: t.id,
         image: u
     });
@@ -25,7 +25,7 @@ let u = e => {
         className: d.k,
         children: (0, n.jsx)(s.A, {
             ...m,
-            pendingAvatar: h,
+            pendingAvatar: p,
             user: t,
             pendingBadges: [(0, o._)()],
             canUsePremiumCustomization: r,

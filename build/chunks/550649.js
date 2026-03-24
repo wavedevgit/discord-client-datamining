@@ -17,17 +17,17 @@ let u = [{
     m = (0, l.zZ)(r.X.CONNECTIONS_ADD_CONNECTIONS_CATEGORY, {
         buildLayout: () => [o.l]
     }),
-    g = (0, l.zZ)(r.X.CONNECTIONS_CONNECTED_ACCOUNTS_CATEGORY, {
+    _ = (0, l.zZ)(r.X.CONNECTIONS_CONNECTED_ACCOUNTS_CATEGORY, {
         buildLayout: () => [d.W]
     }),
-    _ = (0, l.t_)(r.X.CONNECTIONS_PANEL, {
+    g = (0, l.t_)(r.X.CONNECTIONS_PANEL, {
         useTitle: () => c.intl.string(c.t["3fe7U5"]),
         hideInStreamerMode: !0,
-        buildLayout: () => [m, g]
+        buildLayout: () => [m, _]
     }),
     x = (0, l.i4)(r.X.CONNECTIONS_SIDEBAR_ITEM, {
         useTitle: () => c.intl.string(c.t["3fe7U5"]),
         icon: i.LinkIcon,
         getDismissibleBadges: () => u,
-        buildLayout: () => [_]
+        buildLayout: () => [g]
     })

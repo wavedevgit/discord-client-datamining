@@ -7,7 +7,7 @@ r.d(t, {
     bv: () => u,
     qY: () => m,
     s4: () => c,
-    w$: () => h
+    w$: () => p
 });
 var n = r(64700),
     i = r(488430),
@@ -73,7 +73,7 @@ let l = e => {
         bannerUrl: e.bannerUrl,
         bannerAnimatedUrl: e.bannerAnimatedUrl
     }),
-    h = e => ({
+    p = e => ({
         bannerURL: e.bannerURL,
         bannerAnimatedURL: e.bannerAnimatedURL
     })

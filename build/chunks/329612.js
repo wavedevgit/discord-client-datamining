@@ -1,10 +1,10 @@
 /** chunk id: 329612 params = (module,exports,require) **/
-var i = n(557431),
-    s = n(914549),
-    l = n(696472),
-    a = RegExp("['’]", "g");
+var n = i(557431),
+    s = i(914549),
+    a = i(696472),
+    l = RegExp("['’]", "g");
 e.exports = function(e) {
     return function(t) {
-        return i(l(s(t).replace(a, "")), e, "")
+        return n(a(s(t).replace(l, "")), e, "")
     }
 }

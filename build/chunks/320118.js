@@ -5,13 +5,13 @@ a.d(t, {
 var n = a(311907),
     r = a(895944),
     s = a(649032),
-    l = a(26508),
-    i = a(673608),
-    d = a(861495);
+    i = a(26508),
+    d = a(673608),
+    l = a(861495);
 
 function o(e) {
     let t = e?.location ?? "useNitroProgramReward",
-        a = (0, l.DK)(s.W.NITRO, t),
+        a = (0, i.DK)(s.W.NITRO, t),
         {
             isReady: o,
             programReward: c,
@@ -21,16 +21,16 @@ function o(e) {
             programReward: r.A.getRewardForProgram(s.W.NITRO),
             totalDays: r.A.getTotalDaysInDuration(s.W.NITRO)
         })),
-        m = (0, i.q)(),
-        p = (0, d.Q)(c, a),
-        f = (0, d.Y)(c, u, a);
+        _ = (0, d.q)(),
+        m = (0, l.Q)(c, a),
+        p = (0, l.Y)(c, u, a);
     return {
         isEligible: a,
         isReady: o,
-        passesGeneralUIInvariant: p,
-        passesProgressBarInvariant: f,
+        passesGeneralUIInvariant: m,
+        passesProgressBarInvariant: p,
         programReward: c,
-        shouldFetch: m,
+        shouldFetch: _,
         totalDays: u
     }
 }

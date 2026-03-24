@@ -13,20 +13,20 @@ var i = n(417597),
     u = n(788868);
 n(652215);
 var m = n(355097),
-    g = n(985018),
-    _ = n(420643),
+    _ = n(985018),
+    g = n(420643),
     x = n(755165),
     A = n(542838),
     h = n(9523),
     p = n(416999),
     f = n(338832),
     T = n(252373),
-    E = n(522799),
-    S = n(795710),
+    S = n(522799),
+    E = n(795710),
     b = n(484813),
     C = n(1748),
-    N = n(772473),
-    v = n(64514),
+    v = n(772473),
+    N = n(64514),
     I = n(121818),
     j = n(536851),
     y = n(992186),
@@ -49,38 +49,38 @@ let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
         });
         return {
             badge: {
-                title: g.intl.string(g.t.SS87rQ),
-                description: g.intl.string(g.t.oD6CRr),
+                title: _.intl.string(_.t.SS87rQ),
+                description: _.intl.string(_.t.oD6CRr),
                 imageSource: A,
                 imageClassName: t.badgeImage
             },
             badgeAlt: {
-                title: g.intl.string(g.t["5cYMu0"]),
-                description: g.intl.string(g.t.vxk9va),
-                imageSource: U(s, _, x),
+                title: _.intl.string(_.t["5cYMu0"]),
+                description: _.intl.string(_.t.vxk9va),
+                imageSource: U(s, g, x),
                 imageClassName: t.badgeNewImage
             },
             clientThemes: {
-                title: g.intl.string(g.t["/xvEMy"]),
-                description: g.intl.string(g.t.HKWdjj),
+                title: _.intl.string(_.t["/xvEMy"]),
+                description: _.intl.string(_.t.HKWdjj),
                 className: t.clientThemesCard,
                 imageSource: j,
                 imageClassName: t.clientThemesImage
             },
             customAppIcons: {
-                title: g.intl.string(g.t.OuItFi),
-                description: g.intl.string(g.t.mPyrE6),
+                title: _.intl.string(_.t.OuItFi),
+                description: _.intl.string(_.t.mPyrE6),
                 imageSource: y,
                 imageClassName: t.customAppIconImage
             },
             emoji: {
-                title: g.intl.string(g.t["R2IV/Q"]),
-                description: g.intl.string(g.t.R5Xag2),
+                title: _.intl.string(_.t["R2IV/Q"]),
+                description: _.intl.string(_.t.R5Xag2),
                 imageSource: O,
                 imageClassName: t.emojiImage
             },
             guildProfile: {
-                title: g.intl.string(g.t.lKDhhJ),
+                title: _.intl.string(_.t.lKDhhJ),
                 description: e => {
                     let t = () => {
                         {
@@ -94,9 +94,9 @@ let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
                             })
                         }
                     };
-                    return k ? g.intl.format(g.t.aj1pfZ, {
+                    return k ? _.intl.format(_.t.aj1pfZ, {
                         onCheckItOutClick: t
-                    }) : g.intl.format(g.t.d2oYS8, {
+                    }) : _.intl.format(_.t.d2oYS8, {
                         onTryItOutClick: t
                     })
                 },
@@ -104,73 +104,73 @@ let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
                 imageClassName: t.perGuildProfilesImage
             },
             longerMessages: {
-                title: g.intl.string(g.t.BUScid),
-                description: g.intl.string(g.t.vN6XpQ),
+                title: _.intl.string(_.t.BUScid),
+                description: _.intl.string(_.t.vN6XpQ),
                 imageSource: U(s, R, L),
                 imageClassName: t.longerMessagesImage
             },
             moreGuilds: {
-                title: g.intl.string(g.t.Bv8Pfk),
-                description: g.intl.string(g.t.JMfaTU),
+                title: _.intl.string(_.t.Bv8Pfk),
+                description: _.intl.string(_.t.JMfaTU),
                 imageSource: U(s, h, P),
                 imageClassName: t.moreGuildsImage
             },
             moreGuildsAlt: {
-                title: g.intl.string(g.t.Bv8Pfk),
-                description: g.intl.string(g.t.JMfaTU),
+                title: _.intl.string(_.t.Bv8Pfk),
+                description: _.intl.string(_.t.JMfaTU),
                 imageSource: U(s, f, T),
                 imageClassName: t.moreGuildsAltImage
             },
             soundboard: {
-                title: g.intl.string(g.t["lGcW+c"]),
-                description: g.intl.string(g.t["/fDyO+"]),
-                imageSource: U(s, E, S),
+                title: _.intl.string(_.t["lGcW+c"]),
+                description: _.intl.string(_.t["/fDyO+"]),
+                imageSource: U(s, S, E),
                 imageClassName: t.soundboardImage
             },
             stickers: {
-                title: g.intl.string(g.t["1c+xwT"]),
-                description: g.intl.string(g.t.hJG8ZN),
+                title: _.intl.string(_.t["1c+xwT"]),
+                description: _.intl.string(_.t.hJG8ZN),
                 imageSource: U(s, b, D),
                 imageClassName: t.stickersImage
             },
             stickersBurst: {
-                title: g.intl.string(g.t.tzdIwI),
-                description: g.intl.string(g.t.hJG8ZN),
+                title: _.intl.string(_.t.tzdIwI),
+                description: _.intl.string(_.t.hJG8ZN),
                 imageSource: U(s, b, D),
                 imageClassName: t.stickersImage
             },
             stickersPremiumPerk: {
-                title: g.intl.string(g.t.tzdIwI),
-                description: g.intl.string(g.t.hJG8ZN),
+                title: _.intl.string(_.t.tzdIwI),
+                description: _.intl.string(_.t.hJG8ZN),
                 imageSource: U(s, b, D),
                 imageClassName: t.stickersImage
             },
             streaming: {
-                title: g.intl.string(g.t.RSXQYO),
-                description: g.intl.string(g.t.ymCPxp),
+                title: _.intl.string(_.t.RSXQYO),
+                description: _.intl.string(_.t.ymCPxp),
                 imageSource: G,
                 imageClassName: t.streamingImage
             },
             superReactions: {
-                title: g.intl.string(g.t["uZt5q/"]),
-                description: g.intl.string(g.t.ZK3ZoX),
-                imageSource: U(s, C, N),
+                title: _.intl.string(_.t["uZt5q/"]),
+                description: _.intl.string(_.t.ZK3ZoX),
+                imageSource: U(s, C, v),
                 imageClassName: t.superReactionsImage
             },
             upload: {
-                title: g.intl.formatToPlainString(g.t.jqhAdL, {
+                title: _.intl.formatToPlainString(_.t.jqhAdL, {
                     premiumMaxSize: w
                 }),
-                description: g.intl.formatToPlainString(g.t["HI+cfm"], {
+                description: _.intl.formatToPlainString(_.t["HI+cfm"], {
                     premiumMaxSize: w
                 }),
                 imageSource: M,
                 imageClassName: t.uploadImage
             },
             videoBackground: {
-                title: g.intl.string(g.t.NaGpTf),
-                description: g.intl.string(g.t["A8O/Qw"]),
-                imageSource: U(s, v, I),
+                title: _.intl.string(_.t.NaGpTf),
+                description: _.intl.string(_.t["A8O/Qw"]),
+                imageSource: U(s, N, I),
                 imageClassName: t.videoBackgroundImage
             }
         }

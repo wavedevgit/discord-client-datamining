@@ -1,6 +1,6 @@
 /** chunk id: 816863 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => g
 });
 var i = n(627968);
 n(64700);
@@ -13,9 +13,9 @@ var s = n(417597),
     c = n(731854),
     u = n(985018),
     m = n(445139);
-let g = `${o.A.getArticleURL(d.MVz.VOICE_VIDEO_TROUBLESHOOTING)}?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm`;
+let _ = `${o.A.getArticleURL(d.MVz.VOICE_VIDEO_TROUBLESHOOTING)}?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm`;
 
-function _() {
+function g() {
     return (0, s.bG)([r.Ay], () => r.Ay.supports(c.O5.LOOPBACK)) ? (0, i.jsx)(a.A, {
         size: "md",
         notchBackground: a.V.GRAY,
@@ -32,7 +32,7 @@ function _() {
             })]
         }),
         helpText: u.intl.format(u.t["V+B3FH"], {
-            guideURL: g
+            guideURL: _
         }),
         buttonTest: u.intl.string(u.t.gyljWE),
         buttonStop: u.intl.string(u.t.I6OnJ3),

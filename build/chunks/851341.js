@@ -1,15 +1,15 @@
 /** chunk id: 851341 params = (module,exports,require) **/
 "use strict";
-var i = n(73153),
-    s = n(976860),
-    l = n(652215);
-__OVERLAY__ && i.h.subscribe("OVERLAY_OPEN_MESSAGE", function(e) {
+var n = i(73153),
+    s = i(976860),
+    a = i(652215);
+__OVERLAY__ && n.h.subscribe("OVERLAY_OPEN_MESSAGE", function(e) {
     let {
         guildId: t,
-        channelId: n,
-        messageId: i
+        channelId: i,
+        messageId: n
     } = e;
     (0, s.bG)({
-        pathname: l.BVt.CHANNEL(t, n, i)
+        pathname: a.BVt.CHANNEL(t, i, n)
     })
 })

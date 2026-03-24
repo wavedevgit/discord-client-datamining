@@ -12,8 +12,8 @@ var i = n(64700),
     c = n(627380),
     u = n(149757),
     m = n(30084),
-    g = n(920050),
-    _ = n(788868),
+    _ = n(920050),
+    g = n(788868),
     x = n(985018),
     A = n(160664),
     h = n(714206);
@@ -21,13 +21,13 @@ var i = n(64700),
 function p(e) {
     let {
         fractionalState: t
-    } = (0, a.A)(), n = t === _.xc.FP_ONLY, s = (0, d.$F)(), p = (0, d.Xb)(), f = s?.status === d.Wo.UPCOMING || n, T = (0, u.N)(s?.id), E = (0, r.z)(), S = (0, c.t)();
+    } = (0, a.A)(), n = t === g.xc.FP_ONLY, s = (0, d.$F)(), p = (0, d.Xb)(), f = s?.status === d.Wo.UPCOMING || n, T = (0, u.N)(s?.id), S = (0, r.z)(), E = (0, c.t)();
     return (0, i.useMemo)(() => {
-        let t, i = null != S && S.days <= 30;
+        let t, i = null != E && E.days <= 30;
         return null != s ? s.status === d.Wo.UPCOMING ? t = x.intl.formatToPlainString(x.t.a1eKDi, {
-            days: S?.days ?? 0
-        }) : t = (0, o.T)(s.id, s.tenureReqNumMonths) ?? void 0 : n && (t = (0, o.T)(_.Ac.PREMIUM_TENURE_1_MONTH, 1) ?? void 0), {
-            id: g.TENURE_BADGE_CARD_ID,
+            days: E?.days ?? 0
+        }) : t = (0, o.T)(s.id, s.tenureReqNumMonths) ?? void 0 : n && (t = (0, o.T)(g.Ac.PREMIUM_TENURE_1_MONTH, 1) ?? void 0), {
+            id: _.TENURE_BADGE_CARD_ID,
             title: null != s ? x.intl.string(s.nameUnformattedNitro) : n ? x.intl.string(x.t.tx9Fvw) : "",
             pillText: x.intl.string(x.t["jyYgZ+"]),
             primaryAsset: null != T ? f ? T.standard : T.ambientLarge : n ? h : null,
@@ -39,11 +39,11 @@ function p(e) {
             }) : void 0,
             description: t,
             subscriptionRequired: !0,
-            progress: E ?? void 0,
+            progress: S ?? void 0,
             ctaText: x.intl.string(x.t.jVcuVY),
             onCtaClick: () => (0, m.D)({
                 analyticsLocations: e
             })
         }
-    }, [s, T, f, p, E, n, S, e])
+    }, [s, T, f, p, S, n, E, e])
 }

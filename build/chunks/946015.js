@@ -31,11 +31,11 @@ let d = {
         CENTER: r.YO,
         STRETCH: r.ai
     },
-    g = {
+    _ = {
         SMALL: o.sf,
         LARGE: o.S6
     };
-class _ extends s.PureComponent {
+class g extends s.PureComponent {
     static defaultProps = {
         className: o.Gu,
         style: {},
@@ -75,12 +75,12 @@ class _ extends s.PureComponent {
     }
 }
 class x extends s.PureComponent {
-    static Child = _;
+    static Child = g;
     static Direction = d;
     static Align = m;
     static Justify = c;
     static Wrap = u;
-    static Gutter = g;
+    static Gutter = _;
     static defaultProps = {
         direction: d.HORIZONTAL,
         justify: c.START,
@@ -103,8 +103,8 @@ class x extends s.PureComponent {
             grow: c,
             basis: u,
             style: m,
-            gutter: g,
-            ..._
+            gutter: _,
+            ...g
         } = this.props, x = {
             flexShrink: d,
             flexGrow: c,
@@ -113,8 +113,8 @@ class x extends s.PureComponent {
         };
         return (0, i.jsx)("div", {
             style: x,
-            className: a()(o.Uu, n, s, l, r, g, t),
-            ..._,
+            className: a()(o.Uu, n, s, l, r, _, t),
+            ...g,
             children: e
         })
     }

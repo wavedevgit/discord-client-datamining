@@ -1,6 +1,6 @@
 /** chunk id: 193660 params = (module,exports,require) **/
 n.d(t, {
-    w: () => g
+    w: () => _
 });
 var i = n(311907),
     s = n(955572),
@@ -12,7 +12,7 @@ var i = n(311907),
     c = n(358776),
     u = n(985018),
     m = n(927961);
-let g = (0, o.zD)(d.X.DISPLAY_NAME_STYLES, {
+let _ = (0, o.zD)(d.X.DISPLAY_NAME_STYLES, {
     useTitle: () => u.intl.string(m.default["2gFUEw"]),
     useSubtitle: () => {
         let {

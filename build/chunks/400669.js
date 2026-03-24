@@ -15,20 +15,20 @@ let u = s.forwardRef(function(e, t) {
         className: n,
         disabled: s,
         size: u
-    } = e, m = d.pe.TIER_2, g = c.intl.string(c.t.lG6a5x), _ = (0, l.bG)([o.default], () => o.default.getId()), {
+    } = e, m = d.pe.TIER_2, _ = c.intl.string(c.t.lG6a5x), g = (0, l.bG)([o.default], () => o.default.getId()), {
         isWishlisted: x,
         isBusy: A,
         isFirstTimeWishlister: h,
         handleToggle: p
     } = (0, r.c)({
-        userId: _,
+        userId: g,
         skuId: m
     });
     return (0, i.jsx)("div", {
         ref: t,
         children: (0, i.jsx)(a._, {
             skuId: m,
-            productName: g,
+            productName: _,
             className: n,
             disabled: s,
             size: u,

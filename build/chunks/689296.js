@@ -14,7 +14,7 @@ function d(e) {
         children: t,
         lineClamp: n = 2,
         ...d
-    } = e, [c, u] = s.useState(!1), [m, g] = s.useState(null), _ = null != m && (0, i.jsx)("button", {
+    } = e, [c, u] = s.useState(!1), [m, _] = s.useState(null), g = null != m && (0, i.jsx)("button", {
         className: o.x6,
         onClick: () => u(e => !e),
         children: (0, i.jsxs)(a.Text, {
@@ -35,7 +35,7 @@ function d(e) {
             scrollHeight: e,
             clientHeight: t
         } = x;
-        e > t && g({
+        e > t && _({
             truncatedHeight: t,
             expandedHeight: e
         })
@@ -54,6 +54,6 @@ function d(e) {
                 height: p
             },
             children: t
-        }), _]
+        }), g]
     })
 }

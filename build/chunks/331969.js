@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(235986),
     u = n(586068),
     m = n(734057),
-    g = n(808728),
-    _ = n(71393),
+    _ = n(808728),
+    g = n(71393),
     x = n(967198),
     A = n(926140),
     h = n(985018),
@@ -22,13 +22,13 @@ var i = n(627968),
 function f() {}
 let T = [A.rD.VOICE_CHANNEL];
 
-function E(e) {
+function S(e) {
     e.setOptions({
         voiceChannelGuildFilter: null
     }), e.setLimit(1 / 0)
 }
 
-function S() {
+function E() {
     return (0, i.jsx)("div", {
         className: p.i1,
         children: (0, i.jsx)(r.Text, {
@@ -68,7 +68,7 @@ function b(e) {
                 align: c.A.Align.STRETCH,
                 children: [(0, i.jsx)("div", {
                     className: p.$X,
-                    children: (0, i.jsx)(N, {
+                    children: (0, i.jsx)(v, {
                         channelId: l
                     })
                 }), (0, i.jsx)(c.A.Child, {
@@ -94,19 +94,19 @@ function C(e) {
         b = s.useId(),
         C = s.useRef(null),
         {
-            query: N,
-            updateQuery: v,
+            query: v,
+            updateQuery: N,
             queryResults: I
         } = (0, d.A)({
             visible: !0,
             autocompleterResultTypes: T,
-            autocompleterBeforeCreateSearchContext: E
+            autocompleterBeforeCreateSearchContext: S
         }),
-        j = (t = "" !== N, n = (0, a.yK)([g.Ay, m.A, x.A], () => {
+        j = (t = "" !== v, n = (0, a.yK)([_.Ay, m.A, x.A], () => {
             let e = x.A.getGuildId();
             if (t || null == e) return [];
             let n = [];
-            for (let t of g.Ay.getVocalChannelIds(e)) {
+            for (let t of _.Ay.getVocalChannelIds(e)) {
                 let e = m.A.getChannel(t);
                 null != e && n.push(e)
             }
@@ -123,7 +123,7 @@ function C(e) {
                 focusedIndex: t,
                 setFocusedIndex: n
             }
-        }(N);
+        }(v);
     s.useEffect(() => {
         let {
             current: e
@@ -139,7 +139,7 @@ function C(e) {
             let e = I[y];
             if (e?.type === A.rD.VOICE_CHANNEL) return e.record.id
         })(),
-        P = R > 0 || "" === N ? {
+        P = R > 0 || "" === v ? {
             innerId: b,
             innerRole: "listbox",
             innerAriaLabel: h.intl.string(h.t["+N3fW7"]),
@@ -155,7 +155,7 @@ function C(e) {
                 })();
                 if (null == n) return null;
                 let s = null != n.parent_id ? m.A.getChannel(n.parent_id) : void 0,
-                    l = _.A.getGuild(n.guild_id);
+                    l = g.A.getGuild(n.guild_id);
                 return (0, i.jsx)(u.c3, {
                     id: n.id,
                     channel: n,
@@ -176,7 +176,7 @@ function C(e) {
             rowHeight: 34
         } : {
             sections: [1],
-            renderRow: () => (0, i.jsx)(S, {}),
+            renderRow: () => (0, i.jsx)(E, {}),
             sectionHeight: 0,
             rowHeight: 52
         };
@@ -187,8 +187,8 @@ function C(e) {
         subtitle: h.intl.string(h.t.q4JpM8),
         actions: void 0,
         input: (0, i.jsx)(r.ksK, {
-            value: N,
-            onChange: v,
+            value: v,
+            onChange: N,
             onKeyDown: function(e) {
                 let t = e.key.toLowerCase();
                 if ("arrowdown" === t || "arrowup" === t || "enter" === t || "escape" === t) switch (e.preventDefault(), t) {
@@ -224,19 +224,19 @@ function C(e) {
     })
 }
 
-function N(e) {
+function v(e) {
     let {
         channelId: t
     } = e, {
         channel: n,
         category: s,
         guild: l
-    } = (0, a.cf)([m.A, _.A], () => {
+    } = (0, a.cf)([m.A, g.A], () => {
         let e = null != t ? m.A.getChannel(t) : void 0;
         return null != e ? {
             channel: e,
             category: null != e.parent_id ? m.A.getChannel(e.parent_id) : void 0,
-            guild: null != e.guild_id ? _.A.getGuild(e.guild_id) : void 0
+            guild: null != e.guild_id ? g.A.getGuild(e.guild_id) : void 0
         } : {
             channel: void 0,
             category: void 0,

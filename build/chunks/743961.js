@@ -18,11 +18,11 @@ let d = s.memo(function(e) {
         useSubtitle: c,
         layout: u,
         useInlineNotice: m,
-        useHeaderDecoration: g
-    } = t, _ = n?.(), x = c?.(), A = m?.(), h = g?.(), p = null != n || null != d;
+        useHeaderDecoration: _
+    } = t, g = n?.(), x = c?.(), A = m?.(), h = _?.(), p = null != n || null != d;
     return (0, i.jsxs)(i.Fragment, {
-        children: [null != _ && (0, i.jsx)(r._, {
-            title: _,
+        children: [null != g && (0, i.jsx)(r._, {
+            title: g,
             icon: s,
             subtitle: x,
             decoration: h

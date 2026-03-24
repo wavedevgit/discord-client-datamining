@@ -15,8 +15,8 @@ var c = n(780964),
     u = n(978304),
     m = n(840065);
 n(505653), n(106148), n(650832);
-var g = n(652215),
-    _ = n(985018),
+var _ = n(652215),
+    g = n(985018),
     x = n(799391);
 
 function A(e) {
@@ -31,13 +31,13 @@ function A(e) {
         }
         let t = e.join(", "),
             s = n.length - 3;
-        return s > 0 ? _.intl.format(_.t.sHFdTg, {
+        return s > 0 ? g.intl.format(g.t.sHFdTg, {
             gameList: t,
             plusMoreHook: (e, t) => (0, i.jsx)(a.Text, {
                 tag: "span",
                 variant: "text-sm/medium",
                 color: "text-muted",
-                children: _.intl.format(_.t["EADv+4"], {
+                children: g.intl.format(g.t["EADv+4"], {
                     count: s
                 })
             }, t)
@@ -90,7 +90,7 @@ function A(e) {
                 children: [(0, i.jsx)(a.Text, {
                     variant: "text-xs/normal",
                     color: "interactive-text-default",
-                    children: _.intl.format(_.t.oYaYOe, {})
+                    children: g.intl.format(g.t.oYaYOe, {})
                 }), (0, i.jsx)(a._BQ, {
                     size: "xxs",
                     color: a.LU0.colors.INTERACTIVE_TEXT_DEFAULT,
@@ -113,12 +113,12 @@ function h() {
             variant: "text-md/medium",
             color: "text-strong",
             className: x.xV,
-            children: _.intl.string(_.t["+0U77d"])
+            children: g.intl.string(g.t["+0U77d"])
         }), (0, i.jsx)(a.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: _.intl.format(_.t.V8wClM, {
-                helpdeskArticle: o.A.getArticleURL(g.MVz.SOCIAL_LAYER_CONNECTIONS)
+            children: g.intl.format(g.t.V8wClM, {
+                helpdeskArticle: o.A.getArticleURL(_.MVz.SOCIAL_LAYER_CONNECTIONS)
             })
         })]
     })

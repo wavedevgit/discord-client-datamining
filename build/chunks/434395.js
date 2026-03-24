@@ -18,9 +18,9 @@ function m(e) {
         subscription: t,
         renewalMutations: s,
         className: m,
-        analyticsLocation: g
-    } = e, _ = (0, r.A)(), x = t.currentPeriodEnd;
-    return _.fractionalState === d.xc.FP_SUB_PAUSED && (x = _.endsAt.toDate()), (0, i.jsxs)("div", {
+        analyticsLocation: _
+    } = e, g = (0, r.A)(), x = t.currentPeriodEnd;
+    return g.fractionalState === d.xc.FP_SUB_PAUSED && (x = g.endsAt.toDate()), (0, i.jsxs)("div", {
         className: l()(u.zr, m),
         children: [(0, i.jsx)(a.EpV, {
             size: "custom",
@@ -44,7 +44,7 @@ function m(e) {
                         ...n,
                         subscription: t,
                         renewalMutations: s,
-                        analyticsLocation: g
+                        analyticsLocation: _
                     })
                 })
             },

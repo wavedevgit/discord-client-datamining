@@ -14,16 +14,16 @@ var i = n(419954),
     c = n(542457),
     u = n(355097),
     m = n(652215),
-    g = n(985018),
-    _ = n(536482);
+    _ = n(985018),
+    g = n(536482);
 let x = () => (0, d.Tx)() !== o.YG;
 
 function A() {
-    return g.intl.string(_.default.WhdCGP)
+    return _.intl.string(g.default.WhdCGP)
 }
 let h = (0, i.zD)(r.X.CONTENT_AND_SOCIAL_PERMISSIONS_ACTIVITY_SHARE_SETTING, {
     useTitle: A,
-    useSubtitle: () => g.intl.string(_.default.UQ9RHJ),
+    useSubtitle: () => _.intl.string(g.default.UQ9RHJ),
     useValue: () => {
         let e = (0, d.Tx)();
         return !a.JG.useSetting().includes(e)

@@ -12,17 +12,17 @@ var i = n(64700),
     c = n(430452),
     u = n(780964),
     m = n(77735),
-    g = n(791460),
-    _ = n(53386),
+    _ = n(791460),
+    g = n(53386),
     x = n(585175),
     A = n(338145),
     h = n(299752),
     p = n(180491),
     f = n(903427),
     T = n(509381),
-    E = n(985018);
-let S = (0, r.Qx)(u.X.VOICE_INPUT_PROFILE_SETTING, {
-        useTitle: () => E.intl.string(E.t.LM3U3k),
+    S = n(985018);
+let E = (0, r.Qx)(u.X.VOICE_INPUT_PROFILE_SETTING, {
+        useTitle: () => S.intl.string(S.t.LM3U3k),
         usePredicate: function() {
             let {
                 enabledInputProfiles: e
@@ -31,7 +31,7 @@ let S = (0, r.Qx)(u.X.VOICE_INPUT_PROFILE_SETTING, {
             });
             return e.length > 0
         },
-        useSearchTerms: () => [E.intl.string(E.t.nuFtHH), E.intl.string(E.t.VZPR0R), E.intl.string(E.t.cjPbpT)],
+        useSearchTerms: () => [S.intl.string(S.t.nuFtHH), S.intl.string(S.t.VZPR0R), S.intl.string(S.t.cjPbpT)],
         useValue: function() {
             return (0, s.bG)([c.Ay], () => c.Ay.getActiveInputProfile() ?? T.m.CUSTOM)
         },
@@ -49,16 +49,16 @@ let S = (0, r.Qx)(u.X.VOICE_INPUT_PROFILE_SETTING, {
             });
             return [{
                 value: T.m.VOICE_ISOLATION,
-                name: E.intl.string(E.t.cjPbpT),
-                desc: E.intl.string(E.t.CzhvnE)
+                name: S.intl.string(S.t.cjPbpT),
+                desc: S.intl.string(S.t.CzhvnE)
             }, {
                 value: T.m.STUDIO,
-                name: E.intl.string(E.t.VZPR0R),
-                desc: E.intl.string(E.t.ZaJksS)
+                name: S.intl.string(S.t.VZPR0R),
+                desc: S.intl.string(S.t.ZaJksS)
             }, {
                 value: T.m.CUSTOM,
-                name: E.intl.string(E.t["N/PQjv"]),
-                desc: E.intl.string(E.t.SnBmuY)
+                name: S.intl.string(S.t["N/PQjv"]),
+                desc: S.intl.string(S.t.SnBmuY)
             }].filter(t => {
                 let {
                     value: n
@@ -77,9 +77,9 @@ let S = (0, r.Qx)(u.X.VOICE_INPUT_PROFILE_SETTING, {
                 if (e) return {
                     type: o.lT.INLINE_NOTICE,
                     noticeType: "info",
-                    useText: () => E.intl.string(E.t["/Whuzi"])
+                    useText: () => S.intl.string(S.t["/Whuzi"])
                 }
             }, [e])
         },
-        buildLayout: () => [S, x.O, A.w, _.h, f.K, h.C, p.m, g.U]
+        buildLayout: () => [E, x.O, A.w, g.h, f.K, h.C, p.m, _.U]
     })

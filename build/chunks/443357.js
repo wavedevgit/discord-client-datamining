@@ -21,7 +21,7 @@ function u() {
         goreContentNonFriendDm: u
     } = t, m = t => {
         (0, r.qY)(e, t)
-    }, g = [{
+    }, _ = [{
         value: s.TO.BLUR,
         label: c.intl.string(c.t.S49Uad)
     }, {
@@ -36,14 +36,14 @@ function u() {
             onChange: e => m({
                 goreContentFriendDm: e
             }),
-            options: g
+            options: _
         }), (0, i.jsx)(a.A, {
             title: c.intl.string(c.t["Yh+HX1"]),
             value: u,
             onChange: e => m({
                 goreContentNonFriendDm: e
             }),
-            options: g
+            options: _
         })]
     })
 }

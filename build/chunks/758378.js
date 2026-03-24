@@ -1,6 +1,6 @@
 /** chunk id: 758378 params = (module,exports,require) **/
 n.d(t, {
-    J: () => _
+    J: () => g
 });
 var i = n(627968),
     s = n(64700),
@@ -12,22 +12,22 @@ var i = n(627968),
     c = n(975571),
     u = n(652215),
     m = n(985018),
-    g = n(79668);
+    _ = n(79668);
 
-function _() {
+function g() {
     let e = (0, o.XQ)(),
         [t, n] = s.useState(!1),
-        [_, x] = s.useState(() => (0, o.TC)()),
+        [g, x] = s.useState(() => (0, o.TC)()),
         A = (0, l.bG)([r.Ay], () => r.Ay.getSystemServiceStatus("input-service")),
         h = s.useCallback(async () => {
-            n(!0), _ ? await (0, o.z8)("windows-settings") : await (0, o.sL)("windows-settings"), n(!1), x((0, o.TC)())
-        }, [_]);
+            n(!0), g ? await (0, o.z8)("windows-settings") : await (0, o.sL)("windows-settings"), n(!1), x((0, o.TC)())
+        }, [g]);
     if (!e) return null;
     let p = "running" === A.state;
     return (0, i.jsxs)("div", {
-        className: g.q,
+        className: _.q,
         children: [(0, i.jsxs)("div", {
-            className: g.L,
+            className: _.L,
             children: [(0, i.jsx)(a.Text, {
                 variant: "text-md/medium",
                 color: "text-strong",
@@ -38,7 +38,7 @@ function _() {
                 children: m.intl.format(m.t["8CAL+D"], {
                     helpCenterLink: c.A.getArticleURL(u.MVz.SYSTEM_SERVICE)
                 })
-            }), _ ? (0, i.jsx)(a.Text, {
+            }), g ? (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
                 color: p ? "text-feedback-positive" : "text-feedback-warning",
                 children: p ? m.intl.string(m.t.KHVMkW) : m.intl.format(m.t["5Rlr0b"], {
@@ -69,10 +69,10 @@ function _() {
                 })
             }) : null]
         }), (0, i.jsx)(a.Button, {
-            variant: _ ? "critical-secondary" : "primary",
+            variant: g ? "critical-secondary" : "primary",
             loading: t,
             onClick: h,
-            text: _ ? m.intl.string(m.t.pAwbdL) : m.intl.string(m.t["1iI46O"])
+            text: g ? m.intl.string(m.t.pAwbdL) : m.intl.string(m.t["1iI46O"])
         })]
     })
 }

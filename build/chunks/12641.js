@@ -1,26 +1,26 @@
 /** chunk id: 12641 params = (module,exports,require) **/
 "use strict";
-n.d(t, {
+i.d(t, {
     A: () => o
 });
-var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    a = n.n(l),
-    r = n(690157);
+var n = i(627968),
+    s = i(64700),
+    a = i(503698),
+    l = i.n(a),
+    r = i(690157);
 
 function o(e) {
     let {
         keybind: t,
-        separator: n = "+",
-        className: l
+        separator: i = "+",
+        className: a
     } = e;
-    return (0, i.jsx)(i.Fragment, {
-        children: t.map((e, o) => (0, i.jsxs)(s.Fragment, {
-            children: [(0, i.jsx)("span", {
-                className: a()(r.E, l),
+    return (0, n.jsx)(n.Fragment, {
+        children: t.map((e, o) => (0, n.jsxs)(s.Fragment, {
+            children: [(0, n.jsx)("span", {
+                className: l()(r.E, a),
                 children: e
-            }), o === t.length - 1 ? void 0 : n]
+            }), o === t.length - 1 ? void 0 : i]
         }, o))
     })
 }

@@ -23,13 +23,13 @@ function m() {
     return A()
 }
 
-function _(e) {
+function p(e) {
     let {
         channelId: t
     } = e, n = r.A.getChannel(t);
     return null != n && !!(0, l.Gw)(n.type) && A()
 }
-class p extends i.Ay.Store {
+class _ extends i.Ay.Store {
     static displayName = "PrivateChannelReadStateStore";
     initialize() {
         this.waitFor(d.default, r.A, c.A, o.Ay)
@@ -38,11 +38,11 @@ class p extends i.Ay.Store {
         return u
     }
 }
-let g = new p(s.h, {
+let g = new _(s.h, {
     CONNECTION_OPEN: m,
     OVERLAY_INITIALIZE: m,
-    MESSAGE_CREATE: _,
-    MESSAGE_ACK: _,
+    MESSAGE_CREATE: p,
+    MESSAGE_ACK: p,
     CHANNEL_SELECT: function(e) {
         let {
             channelId: t

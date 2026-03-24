@@ -21,13 +21,13 @@ function m(e) {
         quest: t,
         questContent: n,
         sourceQuestContent: m,
-        onClose: _,
-        size: p = "md"
+        onClose: p,
+        size: _ = "md"
     } = e, g = (0, c.LS)(t), f = (0, s.bG)([o.A], () => o.A.useReducedMotion), x = null != (0, d._Z)(t.config), C = (0, u.vv)(t), E = (0, h.v)({
         quest: t,
         questContent: n,
         sourceQuestContent: m,
-        onCloseModal: _,
+        onCloseModal: p,
         shouldShowShopIfAlreadyClaimed: !0
     }), I = t.userStatus?.claimedAt != null ? x ? A.intl.string(A.t.WYchde) : A.intl.string(A.t.vTgCWx) : A.intl.string(A.t.cfY4PE), N = t.userStatus?.completedAt == null ? g ? A.intl.string(A.t.NJ6Bnm) : C ? A.intl.string(A.t.USNO1K) : void 0 : void 0;
     return (0, i.jsx)(a.m, {
@@ -53,7 +53,7 @@ function m(e) {
                 onClick: E,
                 text: I,
                 disabled: t.userStatus?.completedAt == null,
-                size: p
+                size: _
             })
         })
     })

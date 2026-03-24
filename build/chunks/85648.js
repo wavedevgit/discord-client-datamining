@@ -12,23 +12,23 @@ var i = n(627968),
     c = n(780964),
     u = n(358776),
     m = n(227542),
-    g = n(264124),
-    _ = n(850060),
+    _ = n(264124),
+    g = n(850060),
     x = n(886854),
     A = n(729770),
     h = n(274835),
     p = n(505112),
     f = n(163944),
     T = n(41197),
-    E = n(28161),
-    S = n(114074),
+    S = n(28161),
+    E = n(114074),
     b = n(413336),
     C = n(985018);
-let N = (0, o.t_)(c.X.DISPLAY_PANEL, {
+let v = (0, o.t_)(c.X.DISPLAY_PANEL, {
         useTitle: () => C.intl.string(C.t.DVatCa),
-        buildLayout: () => [S.K, f.S, T.X, p.S, E.f, (0, b.$)(!0), h.J]
+        buildLayout: () => [E.K, f.S, T.X, p.S, S.f, (0, b.$)(!0), h.J]
     }),
-    v = [...x.j0, {
+    N = [...x.j0, {
         badgeType: d.Xi.STRONGLY_DISCOURAGED_CUSTOM,
         dismissibleContent: a.M.FAVORITES_GUILD_NEW_BADGE,
         StronglyDiscouragedCustomComponent: A.L
@@ -39,8 +39,8 @@ let N = (0, o.t_)(c.X.DISPLAY_PANEL, {
         usePredicate: () => (0, u.bp)("DisplaySidebarItem"),
         useMenu: function() {
             let e = (0, m.A)(),
-                t = (0, _.A)(),
-                n = (0, g.A)();
+                t = (0, g.A)(),
+                n = (0, _.A)();
             return s.useMemo(() => {
                 let s = [...e];
                 return null != t && s.push((0, i.jsx)(r.rXV, {
@@ -51,6 +51,6 @@ let N = (0, o.t_)(c.X.DISPLAY_PANEL, {
                 }, "streamer-mode")), s
             }, [e, t, n])
         },
-        getDismissibleBadges: () => v,
-        buildLayout: () => [N]
+        getDismissibleBadges: () => N,
+        buildLayout: () => [v]
     })

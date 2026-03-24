@@ -1,6 +1,6 @@
 /** chunk id: 419117 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => g
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -45,11 +45,11 @@ function m(e) {
     }, t.key)
 }
 
-function g(e) {
+function _(e) {
     return e.type === o.Z6.LIST
 }
 
-function _(e, t) {
+function g(e, t) {
     let {
         limit: n = 2,
         formatter: i = c
@@ -58,10 +58,10 @@ function _(e, t) {
     let {
         visibleDirectory: l,
         accessibleDirectory: u
-    } = (0, r._)(), _ = l.get(e) ?? u.get(e);
-    a()(null != _ && (_.type === o.Z6.ACCORDION || g(_)), "[useSettingCollapsibleSubtitle] Node is not a collapsible settings node");
-    let x = g(_) ? _.collapseAfter ?? 0 : 0,
-        A = _.layout;
+    } = (0, r._)(), g = l.get(e) ?? u.get(e);
+    a()(null != g && (g.type === o.Z6.ACCORDION || _(g)), "[useSettingCollapsibleSubtitle] Node is not a collapsible settings node");
+    let x = _(g) ? g.collapseAfter ?? 0 : 0,
+        A = g.layout;
     return s.useMemo(() => {
         let e = x,
             t = [];

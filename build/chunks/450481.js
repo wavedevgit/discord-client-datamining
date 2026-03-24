@@ -19,7 +19,7 @@ let p = e => {
         firstAvatarDecoration: S,
         firstProfileEffect: h,
         firstNameplate: v
-    } = (0, d.f5)(t), g = (0, s.aw)(t) ? u.intl.string(u.t.tf1ZZ4) : t.type === i.R.AVATAR_DECORATION ? u.intl.string(u.t.zOA4ax) : t.type === i.R.NAMEPLATE ? u.intl.string(u.t.gOzMvx) : u.intl.string(u.t.SWm2ai);
+    } = (0, d.f5)(t), A = (0, s.aw)(t) ? u.intl.string(u.t.tf1ZZ4) : t.type === i.R.AVATAR_DECORATION ? u.intl.string(u.t.zOA4ax) : t.type === i.R.NAMEPLATE ? u.intl.string(u.t.gOzMvx) : u.intl.string(u.t.SWm2ai);
     return {
         handleUseNow: a.useCallback(async () => {
             E(!0);
@@ -40,7 +40,7 @@ let p = e => {
                         popToast: i,
                         showToast: l
                     } = await Promise.resolve().then(n.bind(n, 397927));
-                    i(), l(a(g, t.MESSAGE, {
+                    i(), l(a(A, t.MESSAGE, {
                         duration: 6e3,
                         position: e.TOP
                     }))
@@ -51,7 +51,7 @@ let p = e => {
             } finally {
                 E(!1)
             }
-        }, [S, h, v, p, g, c]),
+        }, [S, h, v, p, A, c]),
         isApplying: _
     }
 }

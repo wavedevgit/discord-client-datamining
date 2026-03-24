@@ -1,5 +1,5 @@
 /** chunk id: 360356 params = (module,exports,require) **/
-e.exports = n(84175)({
+e.exports = i(84175)({
     À: "A",
     Á: "A",
     Â: "A",
