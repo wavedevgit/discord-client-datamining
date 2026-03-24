@@ -3,8 +3,8 @@ n.d(t, {
     A: () => V
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(158954),
+    a = n(64700),
+    r = n(158954),
     l = n(311907),
     s = n(52133),
     o = n(827734),
@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(643204),
     f = n(535421),
     C = n(112758),
-    E = n(754459),
-    I = n(538355),
+    I = n(754459),
+    E = n(538355),
     v = n(699352),
     b = n(378570),
     T = n(138298),
@@ -32,8 +32,8 @@ var i = n(627968),
     L = n(71393),
     R = n(576705),
     P = n(994500),
-    M = n(309010),
-    w = n(287809),
+    w = n(309010),
+    M = n(287809),
     D = n(954571),
     k = n(709634),
     O = n(652215),
@@ -45,13 +45,13 @@ function G(e) {
         message: t,
         snapshot: n,
         index: c
-    } = e, _ = r.useMemo(() => new u.j(t, n, c), [t, n, c]), h = (0, l.bG)([N.A, w.default, P.A, R.A, L.A, m.A], () => _.getForwardInfo(N.A, w.default, P.A, R.A, L.A, m.A).footerInfo, [_], s.A), p = r.useCallback(() => {
+    } = e, _ = a.useMemo(() => new u.j(t, n, c), [t, n, c]), h = (0, l.bG)([N.A, M.default, P.A, R.A, L.A, m.A], () => _.getForwardInfo(N.A, M.default, P.A, R.A, L.A, m.A).footerInfo, [_], s.A), p = a.useCallback(() => {
         let e = N.A.getChannel(t.channel_id),
             n = L.A.getGuild(e?.guild_id),
             i = t.messageReference?.channel_id,
-            r = M.A.getCurrentlySelectedChannelId(),
-            a = S.Ay.getCurrentSidebarChannelId(t.messageReference?.channel_id),
-            l = r === i && a === e?.id;
+            a = w.A.getCurrentlySelectedChannelId(),
+            r = S.Ay.getCurrentSidebarChannelId(t.messageReference?.channel_id),
+            l = a === i && r === e?.id;
         null == e || null == n || l || null == i || (T.A.openModReportAsSidebar({
             channelId: e.id,
             baseChannelId: i,
@@ -70,7 +70,7 @@ function G(e) {
             className: B.yl,
             src: h.originIconUrl,
             alt: ""
-        }) : null, (0, i.jsx)(a.EYj, {
+        }) : null, (0, i.jsx)(r.EYj, {
             className: B.PJ,
             variant: "text-sm/medium",
             color: "none",
@@ -86,10 +86,10 @@ function F(e) {
     let {
         mergedMessageRecord: t,
         content: n,
-        channel: a,
+        channel: r,
         reportingUserId: l,
         reportedTimestamp: s
-    } = e, o = (0, p.m2)(t.author, a), {
+    } = e, o = (0, p.m2)(t.author, r), {
         onClickUsername: d,
         onClickAvatar: c,
         onPopoutRequestClose: u,
@@ -99,36 +99,36 @@ function F(e) {
         let {
             popouts: n,
             setPopout: i
-        } = (0, E.A)(e.id, U.Fd), {
-            usernameProfile: a,
+        } = (0, I.A)(e.id, U.Fd), {
+            usernameProfile: r,
             avatarProfile: l
-        } = n, s = (0, C.m)(e, t, a, i);
+        } = n, s = (0, C.m)(e, t, r, i);
         return {
             onClickUsername: s,
             onClickAvatar: (0, C.Jo)(l, i),
-            onPopoutRequestClose: r.useCallback(() => i({
+            onPopoutRequestClose: a.useCallback(() => i({
                 usernameProfile: !1,
                 avatarProfile: !1,
                 referencedUsernameProfile: !1
             }), [i]),
-            showUsernamePopout: a,
+            showUsernamePopout: r,
             showAvatarPopout: l
         }
-    }(t, a);
+    }(t, r);
     return (0, i.jsx)(g.A, {
         childrenExecutedCommand: (0, i.jsx)(k.A, {
             reportingUserId: l,
-            guildId: a.guild_id,
-            channel: a,
+            guildId: r.guild_id,
+            channel: r,
             messageId: t.id,
             reportedTimestamp: s,
             compact: !1
         }),
         childrenHeader: (0, i.jsx)(x.Ay, {
             message: t,
-            channel: a,
+            channel: r,
             author: o,
-            guildId: a.guild_id,
+            guildId: r.guild_id,
             hideTimestamp: !0,
             onClickUsername: d,
             onClickAvatar: c,
@@ -155,14 +155,14 @@ function H(e) {
     let {
         message: t,
         snapshot: n,
-        index: a
-    } = e, [s, o] = r.useState(void 0);
-    r.useEffect(() => {
+        index: r
+    } = e, [s, o] = a.useState(void 0);
+    a.useEffect(() => {
         n?.moderatorReport?.reported_user_id != null && (0, c.wz)(n.moderatorReport.reported_user_id).then(e => {
             o(e)
         }).catch(() => {})
     }, [n?.moderatorReport?.reported_user_id]);
-    let d = r.useMemo(() => {
+    let d = a.useMemo(() => {
             let e = (0, _.A)(t, n);
             return null != s && n?.moderatorReport?.reported_user_id != null ? e.set("author", s) : e
         }, [t, n, s]),
@@ -174,7 +174,7 @@ function H(e) {
             content: A,
             hasSpoilerEmbeds: x,
             hasBailedAst: f
-        } = (0, I.A)(d, {
+        } = (0, E.A)(d, {
             hideSimpleEmbedContent: u && m,
             isInteracting: !1,
             formatInline: !1,
@@ -210,10 +210,10 @@ function H(e) {
             }), (0, i.jsx)(G, {
                 message: t,
                 snapshot: n,
-                index: a
+                index: r
             })]
         })
-    }, a)
+    }, r)
 }
 
 function V(e) {

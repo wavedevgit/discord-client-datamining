@@ -1,10 +1,11 @@
 /** chunk id: 99712 params = (module,exports,require) **/
-n.d(e, {
-    i: () => r
+"use strict";
+n.d(t, {
+    i: () => a
 });
 var i = n(115328);
 
-function r() {
+function a() {
     return i.A.get("enable_recently_active")
 }
 n(239433)

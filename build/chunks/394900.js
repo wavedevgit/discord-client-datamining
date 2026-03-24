@@ -4,19 +4,19 @@ n.d(t, {
     s: () => d
 });
 var i = n(64700),
-    r = n(397927),
-    a = n(770178),
+    a = n(397927),
+    r = n(770178),
     l = n(765548),
     s = n(433745);
 
 function o() {
-    let [e, t] = i.useState("lg"), [n, r] = i.useState(void 0), o = (0, l.A)(e => {
+    let [e, t] = i.useState("lg"), [n, a] = i.useState(void 0), o = (0, l.A)(e => {
         let n = e.target,
             i = e.contentRect.width;
-        return (r(n.scrollHeight), null == i || i > s.Cf) ? t("lg") : i > s.tN ? t("sm") : t("xs")
+        return (a(n.scrollHeight), null == i || i > s.Cf) ? t("lg") : i > s.tN ? t("sm") : t("xs")
     });
     return {
-        containerRef: (0, a.w)(o),
+        containerRef: (0, r.w)(o),
         size: e,
         height: n
     }
@@ -25,11 +25,11 @@ function o() {
 function d(e) {
     let {
         initiallyExpanded: t
-    } = e, [n, a] = i.useState(t), [l, s] = i.useState(!1), o = i.useCallback(() => {
-        a(e => !e), s(!0)
+    } = e, [n, r] = i.useState(t), [l, s] = i.useState(!1), o = i.useCallback(() => {
+        r(e => !e), s(!0)
     }, []), {
         expansionSpring: d
-    } = (0, r.zhh)({
+    } = (0, a.zhh)({
         expansionSpring: +!!n,
         config: {
             tension: 450,

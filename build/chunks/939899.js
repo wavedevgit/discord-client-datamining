@@ -12,8 +12,8 @@ var i = n(627968),
     d = n(793574),
     c = n(688810),
     u = n(362490),
-    m = n(429913),
-    g = n(183555),
+    g = n(429913),
+    m = n(183555),
     x = n(622543),
     p = n(985018),
     f = n(413611);
@@ -68,7 +68,7 @@ function _(e) {
         size: n = "default"
     } = e, {
         trackUserProfileAction: a
-    } = (0, g.NJ)(), s = (0, m.h)(t), {
+    } = (0, m.NJ)(), s = (0, g.h)(t), {
         hasAlreadyLinked: o,
         canStartAuthorization: x,
         startAuthorization: h,

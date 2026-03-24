@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(86638),
     c = n(287809),
     u = n(788593),
-    m = n(742710),
-    g = n(463259),
+    g = n(742710),
+    m = n(463259),
     x = n(18983),
     p = n(330966);
 
@@ -33,39 +33,60 @@ function f(e) {
             itemType: a,
             itemPreviewProps: s
         } = e;
-        if ("WIDGET" === a && s?.widget != null) return (0, i.jsx)("div", {
-            className: p.dt,
-            children: (0, i.jsx)(g.u, {
-                widget: s.widget,
-                user: t,
-                disableInteraction: !0
+        if ("WIDGET" === a && s?.widget != null) {
+            let {
+                widget: e,
+                getWidth: n
+            } = s, l = n?.() ?? 432;
+            return (0, i.jsx)("div", {
+                className: p.dt,
+                style: {
+                    width: l
+                },
+                children: (0, i.jsx)(m.u, {
+                    widget: e,
+                    user: t,
+                    disableInteraction: !0
+                })
             })
-        });
+        }
         if ("GAME_COVER" === a && s?.gameName != null) {
             let {
                 imageSrc: e,
-                gameName: n
-            } = s;
-            return (0, i.jsx)(u.A, {
-                className: p.XJ,
-                imageSrc: e,
                 gameName: n,
-                applicationId: l,
-                userId: t?.id,
-                disableInteraction: !0
+                getWidth: a
+            } = s, r = a?.() ?? 90;
+            return (0, i.jsx)("div", {
+                style: {
+                    width: r
+                },
+                children: (0, i.jsx)(u.A, {
+                    className: p.XJ,
+                    imageSrc: e,
+                    gameName: n,
+                    applicationId: l,
+                    userId: t?.id,
+                    disableInteraction: !0
+                })
             })
         }
         if ("GAME_DETAILS_CARD" === a && s?.game != null && s?.widgetType != null) {
             let {
                 game: e,
-                widgetType: n
-            } = s;
-            return (0, i.jsx)(m.A, {
-                className: p.xB,
-                user: t,
                 widgetType: n,
-                game: e,
-                disableInteraction: !0
+                getWidth: l
+            } = s, a = l?.() ?? 400;
+            return (0, i.jsx)("div", {
+                className: p.xB,
+                style: {
+                    width: a
+                },
+                children: (0, i.jsx)(g.A, {
+                    user: t,
+                    widgetType: n,
+                    game: e,
+                    disableInteraction: !0
+                })
             })
         }
         if ("WISHLIST_ITEM" === a && s?.item != null) {
@@ -113,11 +134,11 @@ function f(e) {
     } = v.current ?? {
         x: 0,
         y: 0
-    }, N = _.x - T - 60 * !!I, S = _.y - b;
+    }, N = _.x - T - 60 * !!I, y = _.y - b;
     return (0, i.jsx)("div", {
         className: p.kL,
         style: {
-            transform: `translate3d(${N}px, ${S}px, 0)`
+            transform: `translate3d(${N}px, ${y}px, 0)`
         },
         children: j
     })

@@ -3,8 +3,8 @@ n.d(t, {
     A: () => R
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(311907),
+    a = n(64700),
+    r = n(311907),
     l = n(846293),
     s = n(820284),
     o = n(688810),
@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(860689),
     f = n(62350),
     C = n(882072),
-    E = n(58262),
-    I = n(309818),
+    I = n(58262),
+    E = n(309818),
     v = n(112007),
     b = n(877695),
     T = n(242907),
@@ -38,14 +38,14 @@ function R(e) {
         getAcceptInviteContext: R
     } = e, {
         invite: P,
-        inviteError: M
-    } = (0, a.cf)([A.A], () => ({
+        inviteError: w
+    } = (0, r.cf)([A.A], () => ({
         invite: A.A.getInvite(t),
         inviteError: A.A.getInviteError(t)
-    }), [t]), w = null == P;
-    r.useEffect(() => {
-        w && l.Ay.resolveInvite(t)
-    }, [t, w]);
+    }), [t]), M = null == P;
+    a.useEffect(() => {
+        M && l.Ay.resolveInvite(t)
+    }, [t, M]);
     let D = P ?? {
             state: L.elq.RESOLVING,
             code: ""
@@ -53,9 +53,9 @@ function R(e) {
         {
             analyticsLocations: k
         } = (0, o.Ay)(),
-        O = (0, a.bG)([g.A], () => P?.guild != null ? g.A.getGuild(P.guild.id) : null, [P]),
-        U = (0, a.bG)([p.default], () => p.default.getId()),
-        B = (0, a.bG)([c.Ay], () => c.Ay.getGuildScheduledEvent(D.guild_scheduled_event?.id), [D]),
+        O = (0, r.bG)([g.A], () => P?.guild != null ? g.A.getGuild(P.guild.id) : null, [P]),
+        U = (0, r.bG)([p.default], () => p.default.getId()),
+        B = (0, r.bG)([c.Ay], () => c.Ay.getGuildScheduledEvent(D.guild_scheduled_event?.id), [D]),
         G = () => {
             null != D.channel && l.Ay.transitionToInviteSync(D)
         },
@@ -96,13 +96,13 @@ function R(e) {
         case L.elq.ERROR:
             H = (0, i.jsx)(C.A, {
                 author: n.author,
-                inviteError: M
+                inviteError: w
             });
             break;
         default:
             switch ((0, _.On)(D)) {
                 case _.Xd.GROUP_DM:
-                    H = (0, i.jsx)(I.A, {
+                    H = (0, i.jsx)(E.A, {
                         onTransitionToInviteChannel: G,
                         onAcceptInstantInvite: F,
                         currentUserId: U,
@@ -111,7 +111,7 @@ function R(e) {
                     });
                     break;
                 case _.Xd.FRIEND:
-                    H = (0, i.jsx)(E.A, {
+                    H = (0, i.jsx)(I.A, {
                         invite: D,
                         message: n,
                         getAcceptInviteContext: R

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(311907),
-    a = n(397927),
+var a = n(311907),
+    r = n(397927),
     l = n(456060),
     s = n(793574),
     o = n(688810),
@@ -21,8 +21,8 @@ var r = n(311907),
     x = n(723702),
     f = n(661191),
     C = n(820672),
-    E = n(768349),
-    I = n(426127),
+    I = n(768349),
+    E = n(426127),
     v = n(985018);
 
 function b(e) {
@@ -40,20 +40,20 @@ function b(e) {
     } = (0, u.f)(T), P = A.Ay.getApplicationIconURL({
         id: T.id,
         icon: T.icon
-    }), M = (0, r.bG)([_.Ay, p.A], () => _.Ay.getVisibleRunningGames().find(e => {
+    }), w = (0, a.bG)([_.Ay, p.A], () => _.Ay.getVisibleRunningGames().find(e => {
         let {
             id: t
         } = e;
         if (t === T.id) return !0;
         let n = p.A.getGameByApplication(T);
         return null != n && t === n.id
-    })), w = (0, r.bG)([h.A], () => h.A.getCurrentUserActiveStream()), D = (0, r.bG)([g.A], () => g.A.getChannelId()), k = f.default.extractTimestamp(b.id) + C.M < Date.now(), O = (0, i.jsx)(i.Fragment, {
+    })), M = (0, a.bG)([h.A], () => h.A.getCurrentUserActiveStream()), D = (0, a.bG)([g.A], () => g.A.getChannelId()), k = f.default.extractTimestamp(b.id) + C.M < Date.now(), O = (0, i.jsx)(i.Fragment, {
         children: (0, l.Wf)(b, y, t)
     }), {
         analyticsLocations: U
-    } = (0, o.Ay)(S, s.A.REQUEST_TO_STREAM_INVITE_EMBED), B = v.intl.string(I.default["5+172e"]), G = !1;
-    return k ? (B = v.intl.string(I.default.u4QmWl), G = !0) : null != w ? (B = v.intl.string(I.default.P0wwmM), G = !0) : D !== y.id ? (B = v.intl.string(I.default.qRXats), G = !0) : null == M && (B = v.intl.string(I.default["43zohO"]), G = !0), (0, i.jsx)(d.h, {
-        header: v.intl.string(I.default.nAyuPp),
+    } = (0, o.Ay)(S, s.A.REQUEST_TO_STREAM_INVITE_EMBED), B = v.intl.string(E.default["5+172e"]), G = !1;
+    return k ? (B = v.intl.string(E.default.u4QmWl), G = !0) : null != M ? (B = v.intl.string(E.default.P0wwmM), G = !0) : D !== y.id ? (B = v.intl.string(E.default.qRXats), G = !0) : null == w && (B = v.intl.string(E.default["43zohO"]), G = !0), (0, i.jsx)(d.h, {
+        header: v.intl.string(E.default.nAyuPp),
         title: T.name,
         staticBannerSrc: j,
         videoBannerSrc: L,
@@ -65,7 +65,7 @@ function b(e) {
             trackingArea: c.kY.STREAM,
             disabled: G,
             onClick: () => {
-                null != M && ((0, x.isWindows)() ? (0, m.A)(M.pid) : (0, a.mMO)(async () => {
+                null != w && ((0, x.isWindows)() ? (0, m.A)(w.pid) : (0, r.mMO)(async () => {
                     let {
                         default: e
                     } = await Promise.all([n.e("96811"), n.e("48697")]).then(n.bind(n, 648230));
@@ -78,7 +78,7 @@ function b(e) {
         }],
         trackingConfig: {
             id: T.id,
-            linkType: E.J.REQUEST_TO_STREAM,
+            linkType: I.J.REQUEST_TO_STREAM,
             guildId: y.guild_id,
             channelId: y.id,
             messageId: b.id,

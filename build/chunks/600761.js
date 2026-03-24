@@ -16,7 +16,7 @@ function s(e) {
     } = e, d = (0, i.useRef)(null), c = (0, i.useRef)(0), u = (0, i.useRef)({
         top: 0,
         bottom: 0
-    }), m = (0, i.useRef)(null), g = (0, i.useCallback)(e => ({
+    }), g = (0, i.useRef)(null), m = (0, i.useCallback)(e => ({
         isDragging: e.isDragging(),
         clientOffset: e.getClientOffset(),
         item: e.getItem()
@@ -24,9 +24,9 @@ function s(e) {
         isDragging: x,
         clientOffset: p,
         item: f
-    } = (0, l.V)(g);
+    } = (0, l.V)(m);
     (0, i.useEffect)(() => {
-        m.current = p
+        g.current = p
     }, [p]);
     let h = (0, a.VUy)();
     (0, i.useEffect)(() => {
@@ -42,7 +42,7 @@ function s(e) {
             bottom: i.bottom
         }, e.style.overflowAnchor = "none", e.style.overscrollBehavior = "contain", d.current = requestAnimationFrame(function t(n) {
             d.current = requestAnimationFrame(t);
-            let i = m.current;
+            let i = g.current;
             if (null == e || null == i) {
                 c.current = n;
                 return
@@ -51,8 +51,8 @@ function s(e) {
             c.current = n;
             let {
                 top: a,
-                bottom: g
-            } = u.current, x = i.y, p = x - a, f = g - x, h = 0;
+                bottom: m
+            } = u.current, x = i.y, p = x - a, f = m - x, h = 0;
             if (p >= 0 && p < s ? h = -r * Math.pow(1 - p / s, o) : f >= 0 && f < s && (h = r * Math.pow(1 - f / s, o)), 0 !== h) {
                 let t = h * l;
                 Math.abs(t) >= 1 && (e.scrollTop += Math.round(t))

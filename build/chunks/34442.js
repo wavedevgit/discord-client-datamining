@@ -12,13 +12,13 @@ var i = n(627968),
     d = n(735321),
     c = n(958338),
     u = n(985018),
-    m = n(810824);
+    g = n(810824);
 
-function g(e) {
+function m(e) {
     let {
         widgetType: t,
         widget: n,
-        onAddGame: g,
+        onAddGame: m,
         children: x,
         ...p
     } = e, f = l.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
@@ -39,8 +39,8 @@ function g(e) {
             action: "GAME_ADDED",
             gameId: e,
             widgetEdited: t
-        }), E.includes(e) && T(e), g?.()
-    }, [t, h, g, E, T]), N = l.useMemo(() => {
+        }), E.includes(e) && T(e), m?.()
+    }, [t, h, m, E, T]), N = l.useMemo(() => {
         let e = new Map(j.map(e => [String(e.value), {
                 id: String(e.value),
                 value: String(e.value),
@@ -50,19 +50,19 @@ function g(e) {
             t = E.map(t => e.get(t)).filter(e => null != e && !e.disabled),
             n = [...e.values()].filter(e => !t.includes(e));
         return [...t, ...n]
-    }, [j, f, E]), S = l.useMemo(() => ({
+    }, [j, f, E]), y = l.useMemo(() => ({
         ...v,
         threshold: a.Ht.rankings.CONTAINS,
         keys: ["label"]
-    }), [v]), y = l.useCallback(e => "" === e.trim() ? N.length : (0, a.Ht)(N, e, S).length, [N, S]), C = l.useCallback(e => {
+    }), [v]), S = l.useCallback(e => "" === e.trim() ? N.length : (0, a.Ht)(N, e, y).length, [N, y]), C = l.useCallback(e => {
         let n = e.target.value;
         "" === _.trim() && "" !== n.trim() && h({
             action: "GAME_SEARCH_SESSION_STARTED",
             widgetEdited: t,
             numCharacters: n.trim().length,
-            numResults: y(n)
+            numResults: S(n)
         }), A(n), I.current = n
-    }, [_, h, t, y]);
+    }, [_, h, t, S]);
     return (0, i.jsx)(s.YNO, {
         ...p,
         onRequestOpen: () => {
@@ -76,7 +76,7 @@ function g(e) {
                 action: "GAME_SEARCH_SESSION_ENDED",
                 widgetEdited: t,
                 numCharacters: I.current.trim().length,
-                numResults: y(I.current)
+                numResults: S(I.current)
             })
         },
         renderPopout: e => {
@@ -84,7 +84,7 @@ function g(e) {
                 closePopout: t
             } = e;
             return (0, i.jsx)(s.lGe, {
-                className: m.C,
+                className: g.C,
                 "aria-label": u.intl.string(u.t.uqw8wK),
                 children: (0, i.jsxs)(s.iS7, {
                     selectionMode: "single",
@@ -93,7 +93,7 @@ function g(e) {
                         null != e && (b(e), t())
                     },
                     options: N,
-                    matchSorterOptions: S,
+                    matchSorterOptions: y,
                     children: [(0, i.jsx)(s.a32, {
                         label: u.intl.string(u.t["5h0QOP"]),
                         hideLabel: !0,
@@ -115,7 +115,7 @@ function x(e) {
         disabled: t,
         ...n
     } = e, a = l.useRef(null);
-    return (0, i.jsx)(g, {
+    return (0, i.jsx)(m, {
         targetElementRef: a,
         position: "bottom",
         align: "center",
@@ -134,14 +134,14 @@ function x(e) {
 
 function p(e) {
     let t = l.useRef(null);
-    return (0, i.jsx)(g, {
+    return (0, i.jsx)(m, {
         targetElementRef: t,
         position: "right",
         align: "top",
         ...e,
         children: e => (0, i.jsx)(s.DUT, {
             innerRef: t,
-            className: m.c,
+            className: g.c,
             "aria-label": u.intl.string(u.t.SgTOtX),
             ...e,
             children: (0, i.jsx)(s.pa$, {

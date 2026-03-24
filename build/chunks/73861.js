@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(311907),
-    a = n(189081),
+var a = n(311907),
+    r = n(189081),
     l = n(67480),
     s = n(674378),
     o = n(598429),
@@ -34,11 +34,11 @@ function c(e) {
         className: g,
         hover: x,
         innerClassName: f
-    }, E = (0, r.bG)([a.A], () => a.A.getActiveLibraryApplication(t.id)), I = null != E ? E.sku.id : null, v = null != I ? I : t.primarySkuId, b = (0, r.bG)([l.A], () => null != v && !l.A.didFetchingSkuFail(v));
-    return null != E && (0, s.XZ)(E) ? (0, i.jsx)(d.A, {
+    }, I = (0, a.bG)([r.A], () => r.A.getActiveLibraryApplication(t.id)), E = null != I ? I.sku.id : null, v = null != E ? E : t.primarySkuId, b = (0, a.bG)([l.A], () => null != v && !l.A.didFetchingSkuFail(v));
+    return null != I && (0, s.XZ)(I) ? (0, i.jsx)(d.A, {
         ...C,
         playButtonVariant: u,
-        libraryApplication: E,
+        libraryApplication: I,
         source: A
     }) : b ? (0, i.jsx)("div", {
         children: "deprecated!"

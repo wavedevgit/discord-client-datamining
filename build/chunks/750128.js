@@ -1,5 +1,5 @@
 /** chunk id: 750128 params = (module,exports,require) **/
-let i, r, a, l, s;
+let i, a, r, l, s;
 n.d(t, {
     A: () => f,
     Z: () => A
@@ -16,24 +16,24 @@ var o, d = n(284009),
 class x extends u.Ay.Store {
     static displayName = "InteractionModalStore";
     getModalState(e) {
-        return e !== i ? null : r
+        return e !== i ? null : a
     }
 }
 let f = new x(_.h, {
     LOGOUT: function() {
-        return i = null, r = null, a = null, l = null, s = null, !0
+        return i = null, a = null, r = null, l = null, s = null, !0
     },
     INTERACTION_MODAL_CREATE: function(e) {
         let {
             nonce: t
         } = e;
-        return t === s && (m.A.deleteMessage(l, a, !0), a = null, l = null, s = null), !1
+        return t === s && (m.A.deleteMessage(l, r, !0), r = null, l = null, s = null), !1
     },
     INTERACTION_IFRAME_MODAL_CREATE: function(e) {
         let {
             nonce: t
         } = e;
-        return t === s && (m.A.deleteMessage(l, a, !0), a = null, l = null, s = null), !1
+        return t === s && (m.A.deleteMessage(l, r, !0), r = null, l = null, s = null), !1
     },
     INTERACTION_QUEUE: function(e) {
         let {
@@ -44,12 +44,12 @@ let f = new x(_.h, {
         } = e;
         switch (o.interactionType) {
             case h.G4.APPLICATION_COMMAND:
-                return a = t, l = o.channelId, s = n, !1;
+                return r = t, l = o.channelId, s = n, !1;
             case h.G4.MODAL_SUBMIT:
-                c()(null == i || 1 === r || 2 === r, "cannot submit multiple modals at once"), i = n, r = 0;
+                c()(null == i || 1 === a || 2 === a, "cannot submit multiple modals at once"), i = n, a = 0;
                 let u = e => {
                     setTimeout(() => {
-                        i === n && 0 === r && (0, p.C1)(n)
+                        i === n && 0 === a && (0, p.C1)(n)
                     }, e)
                 };
                 return null != d ? (u(2 * g.A.Millis.MINUTE), d.then(() => u(10 * g.A.Millis.SECOND)).catch(() => (0, p.C1)(n))) : u(10 * g.A.Millis.SECOND), !0;
@@ -61,12 +61,12 @@ let f = new x(_.h, {
         let {
             nonce: t
         } = e;
-        return null != t && t === i && (r = 2, !0)
+        return null != t && t === i && (a = 2, !0)
     },
     INTERACTION_FAILURE: function(e) {
         let {
             nonce: t
         } = e;
-        return null != t && t === i && (r = 1, !0)
+        return null != t && t === i && (a = 1, !0)
     }
 })

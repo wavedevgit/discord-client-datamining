@@ -1,10 +1,10 @@
 /** chunk id: 795982 params = (module,exports,require) **/
 n.d(t, {
-    A: () => w
+    A: () => M
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(158954),
+    a = n(64700),
+    r = n(158954),
     l = n(311907),
     s = n(52133),
     o = n(827734),
@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(734057),
     f = n(540999),
     C = n(71393),
-    E = n(576705),
-    I = n(994500),
+    I = n(576705),
+    E = n(994500),
     v = n(287809),
     b = n(862804),
     T = n(627950),
@@ -37,7 +37,7 @@ function L() {
             size: "xs",
             className: j.nr,
             color: o.A.colors.TEXT_MUTED
-        }), (0, i.jsx)(a.EYj, {
+        }), (0, i.jsx)(r.EYj, {
             className: j.TK,
             variant: "text-sm/semibold",
             color: "text-muted",
@@ -51,7 +51,7 @@ function R(e) {
         message: t,
         snapshot: n,
         index: c
-    } = e, _ = r.useMemo(() => new b.j(t, n, c), [t, n, c]), m = (0, l.bG)([x.A, v.default, I.A, E.A, C.A, u.A], () => _.getForwardInfo(x.A, v.default, I.A, E.A, C.A, u.A).footerInfo, [_], s.A), h = (0, l.bG)([x.A], () => x.A.getChannel(t.messageReference?.channel_id)), p = r.useCallback(() => {
+    } = e, _ = a.useMemo(() => new b.j(t, n, c), [t, n, c]), m = (0, l.bG)([x.A, v.default, E.A, I.A, C.A, u.A], () => _.getForwardInfo(x.A, v.default, E.A, I.A, C.A, u.A).footerInfo, [_], s.A), h = (0, l.bG)([x.A], () => x.A.getChannel(t.messageReference?.channel_id)), p = a.useCallback(() => {
         (0, T.A)(t)
     }, [t]);
     return null == m ? null : (0, i.jsxs)(d.DUT, {
@@ -64,7 +64,7 @@ function R(e) {
             alt: ""
         }) : null, null == m.originIconUrl && h?.isThread() ? (0, i.jsx)(P, {
             channel: h
-        }) : null, (0, i.jsx)(a.EYj, {
+        }) : null, (0, i.jsx)(r.EYj, {
             className: j.PJ,
             variant: "text-sm/medium",
             color: "none",
@@ -81,23 +81,23 @@ function P(e) {
         channel: t
     } = e, n = (0, g.Vp)({
         location: "ForwardFooter"
-    }), a = r.useMemo(() => (0, c.gU)(t), [t]);
-    return n.enabled && null != a ? (0, i.jsx)(a, {
+    }), r = a.useMemo(() => (0, c.gU)(t), [t]);
+    return n.enabled && null != r ? (0, i.jsx)(r, {
         className: j.yl,
         size: "xs",
         color: "currentColor"
     }) : null
 }
 
-function M(e) {
+function w(e) {
     let {
         message: t,
         snapshot: n,
-        index: a
-    } = e, s = r.useMemo(() => (0, y.A)(t, n), [t, n]), o = A.hD.useSetting(), d = A.rs.useSetting(), c = (0, l.bG)([f.A], () => f.A.isDeveloper), u = (0, _.S)((s.editedTimestamp ?? s.timestamp).valueOf()), {
+        index: r
+    } = e, s = a.useMemo(() => (0, y.A)(t, n), [t, n]), o = A.hD.useSetting(), d = A.rs.useSetting(), c = (0, l.bG)([f.A], () => f.A.isDeveloper), u = (0, _.S)((s.editedTimestamp ?? s.timestamp).valueOf()), {
         content: g,
         hasSpoilerEmbeds: C,
-        hasBailedAst: E
+        hasBailedAst: I
     } = (0, h.A)(s, {
         hideSimpleEmbedContent: o && d,
         isInteracting: !1,
@@ -107,8 +107,8 @@ function M(e) {
         allowLinks: !0,
         allowDevLinks: c,
         previewLinkTarget: !0
-    }), I = (0, l.bG)([x.A], () => x.A.getChannel(t.channel_id)), v = A.hH.useSetting();
-    return null == I ? null : (0, i.jsxs)("div", {
+    }), E = (0, l.bG)([x.A], () => x.A.getChannel(t.channel_id)), v = A.hH.useSetting();
+    return null == E ? null : (0, i.jsxs)("div", {
         className: j.kL,
         children: [(0, i.jsx)("div", {
             className: j.hD
@@ -121,29 +121,29 @@ function M(e) {
             }), (0, p.A)({
                 channelMessageProps: {
                     message: s,
-                    channel: I,
+                    channel: E,
                     compact: v
                 },
                 hasSpoilerEmbeds: C,
-                hasBailedAst: E,
+                hasBailedAst: I,
                 isInteracting: !1,
                 isMessageSnapshot: !0,
                 renderThreadAccessory: !1
             }), (0, i.jsx)(R, {
                 message: t,
                 snapshot: n,
-                index: a
+                index: r
             })]
         })]
-    }, a)
+    }, r)
 }
 
-function w(e) {
+function M(e) {
     let {
         message: t
     } = e;
     return (0, i.jsx)(i.Fragment, {
-        children: t.messageSnapshots.map((e, n) => (0, i.jsx)(M, {
+        children: t.messageSnapshots.map((e, n) => (0, i.jsx)(w, {
             message: t,
             snapshot: e,
             index: n

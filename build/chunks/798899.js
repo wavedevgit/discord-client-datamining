@@ -3,8 +3,8 @@ n.d(t, {
     A: () => u
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(397927),
+    a = n(64700),
+    r = n(397927),
     l = n(572211),
     s = n(443795),
     o = n(768349),
@@ -19,7 +19,7 @@ function u(e) {
         onClickContent: _,
         onView: m,
         guildId: h
-    } = e, p = r.useMemo(() => (0, i.jsx)(a.Text, {
+    } = e, p = a.useMemo(() => (0, i.jsx)(r.Text, {
         variant: "text-xs/medium",
         className: c.h_,
         color: "none",

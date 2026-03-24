@@ -3,9 +3,9 @@ n.d(t, {
     A: () => f
 }), n(321073);
 var i = n(627968),
-    r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    a = n(64700),
+    r = n(503698),
+    l = n.n(r),
     s = n(73939),
     o = n(397927),
     d = n(505527),
@@ -17,7 +17,7 @@ var i = n(627968),
     p = n(233080),
     g = n(710504);
 let A = (e, t) => null == e && null == t || e === t;
-class x extends r.PureComponent {
+class x extends a.PureComponent {
     state = {
         disableTransitionAppear: !0,
         reactionsCount: this.props.message.reactions.length,
@@ -37,21 +37,21 @@ class x extends r.PureComponent {
             message: e,
             disableReactionCreates: t,
             disableReactionUpdates: n,
-            isLurking: r,
-            isPendingMember: a,
+            isLurking: a,
+            isPendingMember: r,
             isForumToolbar: d,
             channel: A,
             className: x,
             forceAddReactions: f,
             reactionClassName: C,
-            useChatFontScaling: E,
-            forceHideReactionCreates: I,
+            useChatFontScaling: I,
+            forceHideReactionCreates: E,
             remainingReactions: v,
             combinedReactions: b,
             visibleReactionsCount: T
         } = this.props, {
             disableTransitionAppear: y
-        } = this.state, S = E ? g : p, N = T > 0;
+        } = this.state, S = I ? g : p, N = T > 0;
         if (!N && !f) return null;
         let j = f || N;
         return (0, i.jsxs)(s.F, {
@@ -71,10 +71,10 @@ class x extends r.PureComponent {
                 reactions: b,
                 message: e,
                 readOnly: n,
-                isLurking: r,
-                isPendingMember: a,
+                isLurking: a,
+                isPendingMember: r,
                 isForumToolbar: d,
-                useChatFontScaling: E,
+                useChatFontScaling: I,
                 className: C
             }), v > 0 && (0, i.jsx)(o.DUT, {
                 onClick: t => {
@@ -87,11 +87,11 @@ class x extends r.PureComponent {
                     variant: "text-sm/normal",
                     children: ["+", v]
                 })
-            }), !t && !I && (0, i.jsx)(c.t, {
+            }), !t && !E && (0, i.jsx)(c.t, {
                 tabIndex: j || this.state.isHovered ? 0 : -1,
                 message: e,
                 channel: A,
-                useChatFontScaling: E,
+                useChatFontScaling: I,
                 isHovered: this.state.isHovered,
                 className: l()({
                     [S.forceShow]: j
@@ -104,22 +104,22 @@ let f = e => {
     let {
         message: t,
         maxReactions: n,
-        hoistReaction: a
+        hoistReaction: r
     } = e, {
         combinedReactions: l,
         remainingReactions: s,
         visibleReactionsCount: o
-    } = r.useMemo(() => {
+    } = a.useMemo(() => {
         let e = [],
             i = ((e, t) => {
                 if (null == t) return e;
                 let n = e.findIndex(e => A(e.emoji.id, t?.id) && A(e.emoji.name, t?.name));
                 return n < 0 ? e : [e[n], ...e.slice(0, n), ...e.slice(n + 1)]
-            })(t.reactions, a),
-            r = null != n && n < i.length ? i.slice(0, n) : i,
-            l = i.length - r.length,
+            })(t.reactions, r),
+            a = null != n && n < i.length ? i.slice(0, n) : i,
+            l = i.length - a.length,
             s = i.length;
-        return r.forEach(t => {
+        return a.forEach(t => {
             t.burst_count > 0 && e.push({
                 ...t,
                 type: d.v.BURST
@@ -132,7 +132,7 @@ let f = e => {
             visibleReactionsCount: s,
             remainingReactions: l
         }
-    }, [a, n, t.reactions]);
+    }, [r, n, t.reactions]);
     return (0, i.jsx)(x, {
         ...e,
         visibleReactionsCount: o,

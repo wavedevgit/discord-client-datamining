@@ -3,9 +3,9 @@ n.d(t, {
     A: () => T
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    a = n(64700),
+    r = n(503698),
+    l = n.n(r),
     s = n(311907),
     o = n(397927),
     d = n(846293),
@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(42780),
     f = n(860689),
     C = n(897288),
-    E = n(168428),
-    I = n(652215),
+    I = n(168428),
+    E = n(652215),
     v = n(985018),
     b = n(875871);
 
@@ -29,30 +29,30 @@ function T(e) {
     let {
         invite: t,
         isMemberOfGuild: n,
-        message: a,
+        message: r,
         onTransitionToInviteChannel: d,
         onAcceptInstantInvite: u
-    } = e, _ = r.useRef(null), [h, g] = r.useState(!0), [T, S] = r.useState(!1), N = t.state === I.elq.ACCEPTING, j = (0, s.bG)([c.A], () => c.A.useReducedMotion);
-    r.useLayoutEffect(() => {
+    } = e, _ = a.useRef(null), [h, g] = a.useState(!0), [T, S] = a.useState(!1), N = t.state === E.elq.ACCEPTING, j = (0, s.bG)([c.A], () => c.A.useReducedMotion);
+    a.useLayoutEffect(() => {
         S((_.current?.clientHeight ?? 0) > 292)
     }, [S]);
     let L = (0, m.oO)(t),
-        R = r.useCallback(() => {
+        R = a.useCallback(() => {
             !T || h && g(!1)
         }, [h, T]),
-        P = r.useCallback(() => {
+        P = a.useCallback(() => {
             !T || h || g(!0)
         }, [h, T]),
-        M = r.useMemo(() => T && _.current?.clientHeight != null ? {
+        w = a.useMemo(() => T && _.current?.clientHeight != null ? {
             height: h ? 292 : _.current.clientHeight + 36 + 48,
             transition: j ? void 0 : "height 0.2s ease"
         } : {}, [h, T, j]);
-    return null == L ? (0, i.jsx)(E.A, {}) : (0, i.jsxs)(o.sqX, {
+    return null == L ? (0, i.jsx)(I.A, {}) : (0, i.jsxs)(o.sqX, {
         className: l()(b.Gg, {
             [b.vk]: T && h
         }),
         onClick: R,
-        style: M,
+        style: w,
         "aria-label": v.intl.string(v.t.dcl9MQ),
         children: [(0, i.jsxs)("div", {
             className: b.uY,
@@ -97,7 +97,7 @@ function T(e) {
                         invite: t,
                         profile: L,
                         isMemberOfGuild: n,
-                        message: a,
+                        message: r,
                         submitting: N,
                         onTransitionToInviteChannel: d,
                         onAcceptInstantInvite: u
@@ -112,7 +112,7 @@ function y(e) {
     let {
         invite: t,
         profile: n,
-        isMemberOfGuild: a,
+        isMemberOfGuild: r,
         message: l,
         submitting: s,
         onTransitionToInviteChannel: o,
@@ -122,15 +122,15 @@ function y(e) {
         ctaType: p
     } = (0, h.Ay)(n, h.cn.INVITE, t.code), {
         analyticsLocations: A
-    } = (0, _.Ay)(u.A.INVITE_EMBED), x = r.useCallback(() => {
-        let e = a ? "transition" : "accept";
+    } = (0, _.Ay)(u.A.INVITE_EMBED), x = a.useCallback(() => {
+        let e = r ? "transition" : "accept";
         (0, d.he)({
             invite: t,
             action: e,
             inviter_id: l.author.id,
             invite_message_id: l.id
         }, A)
-    }, [t, l, A, a]);
+    }, [t, l, A, r]);
     return null == p ? null : (0, i.jsx)(g.Y, {
         guildId: m,
         ctaType: p,

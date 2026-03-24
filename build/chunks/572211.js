@@ -1,10 +1,10 @@
 /** chunk id: 572211 params = (module,exports,require) **/
 n.d(t, {
-    h: () => I,
+    h: () => E,
     u: () => C
 }), n(323874), n(14289), n(35956);
-var i, r = n(627968),
-    a = n(64700),
+var i, a = n(627968),
+    r = n(64700),
     l = n(503698),
     s = n.n(l),
     o = n(299619),
@@ -21,32 +21,32 @@ var i, r = n(627968),
     f = n(112247),
     C = ((i = {})[i.BOT = 0] = "BOT", i[i.ACTIVITY = 1] = "ACTIVITY", i);
 
-function E(e) {
+function I(e) {
     let {
         onClick: t,
         children: n,
         className: i
     } = e;
-    return null != t ? (0, r.jsx)(c.DUT, {
+    return null != t ? (0, a.jsx)(c.DUT, {
         onClick: t,
         className: s()({
             [f.or]: null != t
         }, i),
         children: n
-    }) : (0, r.jsx)("div", {
+    }) : (0, a.jsx)("div", {
         className: i,
         children: n
     })
 }
 
-function I(e) {
+function E(e) {
     var t;
     let {
         title: n,
         header: i,
         footer: l,
         info: C,
-        staticBannerSrc: I,
+        staticBannerSrc: E,
         videoBannerSrc: v,
         bannerAspectRatio: b = 0,
         iconSrc: T,
@@ -71,7 +71,7 @@ function I(e) {
     let {
         primaryColor: R,
         secondaryColor: P
-    } = (0, h.A)(T ?? I), M = `linear-gradient(45deg, ${R}, ${P})`, w = (0, u.bG)([m.A], () => m.A.useReducedMotion), D = a.useRef(!1), k = (0, d.K)(e => {
+    } = (0, h.A)(T ?? E), w = `linear-gradient(45deg, ${R}, ${P})`, M = (0, u.bG)([m.A], () => m.A.useReducedMotion), D = r.useRef(!1), k = (0, d.K)(e => {
         !1 === D.current && e && (N?.onView?.(), (0, g.wV)({
             appId: N.id,
             linkType: N.linkType,
@@ -81,10 +81,10 @@ function I(e) {
             channelId: N.channelId,
             messageId: N.messageId
         }), D.current = !0)
-    }, void 0), O = null != I, U = null != v && !1 === w, B = O || U, G = 0 === b ? f.pv : f.$g, F = a.useRef(null), H = a.useCallback(() => {
+    }, void 0), O = null != E, U = null != v && !1 === M, B = O || U, G = 0 === b ? f.pv : f.$g, F = r.useRef(null), H = r.useCallback(() => {
         let e = F.current;
         null == e || ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
-    }, []), V = a.useMemo(() => !!U && new URL(v).pathname.endsWith(".gif"), [U, v]), q = a.useMemo(() => {
+    }, []), V = r.useMemo(() => !!U && new URL(v).pathname.endsWith(".gif"), [U, v]), q = r.useMemo(() => {
         if (null != j) return e => {
             j(e), (0, g.gx)({
                 applicationId: N.id,
@@ -95,7 +95,7 @@ function I(e) {
                 isDeadEnd: N.isDeadEnd
             })
         }
-    }, [j, N]), W = a.useMemo(() => {
+    }, [j, N]), W = r.useMemo(() => {
         if (null != L) return e => {
             L(e), (0, g.gx)({
                 applicationId: N.id,
@@ -107,74 +107,74 @@ function I(e) {
             })
         }
     }, [L, N]);
-    return (0, r.jsxs)("div", {
+    return (0, a.jsxs)("div", {
         ref: k,
         className: f.E6,
-        children: [B && (0, r.jsxs)(E, {
+        children: [B && (0, a.jsxs)(I, {
             onClick: W,
             className: s()(f.cy, G, {
                 [f.wk]: U
             }),
-            children: [U && (V ? (0, r.jsx)("div", {
+            children: [U && (V ? (0, a.jsx)("div", {
                 className: f.O9,
                 style: {
                     backgroundImage: `url(${v})`
                 }
-            }) : (0, r.jsx)(o.A, {
+            }) : (0, a.jsx)(o.A, {
                 ref: F,
                 src: v,
                 mediaLayoutType: x.dG.MOSAIC,
                 loop: !0,
                 muted: !0,
                 className: f.O9
-            })), O && (0, r.jsx)("div", {
+            })), O && (0, a.jsx)("div", {
                 className: f.LR,
                 style: {
-                    backgroundImage: `url(${I})`
+                    backgroundImage: `url(${E})`
                 },
                 onTransitionEnd: H
             })]
-        }), (0, r.jsxs)("div", {
+        }), (0, a.jsxs)("div", {
             style: {
-                background: M
+                background: w
             },
-            children: [(0, r.jsxs)("div", {
+            children: [(0, a.jsxs)("div", {
                 className: f.hQ,
-                children: [null != i && (0, r.jsx)(c.EYj, {
+                children: [null != i && (0, a.jsx)(c.EYj, {
                     variant: "text-sm/semibold",
                     color: "none",
                     className: f.wx,
                     children: i
-                }), (0, r.jsxs)(E, {
+                }), (0, a.jsxs)(I, {
                     onClick: q,
                     className: s()(f.FG, {
                         [f.ry]: null != q
                     }),
-                    children: [null != T && (0, r.jsx)("div", {
+                    children: [null != T && (0, a.jsx)("div", {
                         className: f._8,
                         style: {
                             backgroundImage: `url(${T})`
                         }
-                    }), (0, r.jsxs)("div", {
+                    }), (0, a.jsxs)("div", {
                         className: f.Qs,
-                        children: [(0, r.jsx)(c.EYj, {
+                        children: [(0, a.jsx)(c.EYj, {
                             variant: "text-md/semibold",
                             color: "none",
                             lineClamp: 1,
                             className: f.eu,
                             children: n
-                        }), (0, r.jsx)("div", {
+                        }), (0, a.jsx)("div", {
                             className: f.rj,
                             children: C
                         })]
                     })]
-                }), y.length > 0 && (0, r.jsx)("div", {
+                }), y.length > 0 && (0, a.jsx)("div", {
                     className: s()(f.AC, S ? f.ad : null),
                     children: y.map((e, t) => {
                         let {
                             label: n,
                             icon: i,
-                            onClick: a,
+                            onClick: r,
                             disabled: l,
                             disabledReason: s,
                             submitting: o,
@@ -183,10 +183,10 @@ function I(e) {
                             iconButton: m,
                             buttonRef: h
                         } = e, p = 0 === t;
-                        return m ? (0, r.jsx)(_.m_, {
+                        return m ? (0, a.jsx)(_.m_, {
                             text: n,
                             targetElementRef: h,
-                            children: (0, r.jsx)(c.K0, {
+                            children: (0, a.jsx)(c.K0, {
                                 variant: p ? "overlay-primary" : "overlay-secondary",
                                 disabled: l || null != s,
                                 loading: o,
@@ -194,7 +194,7 @@ function I(e) {
                                 "aria-label": n,
                                 buttonRef: h,
                                 onClick: e => {
-                                    a(e), (0, g.gx)({
+                                    r(e), (0, g.gx)({
                                         applicationId: N.id,
                                         linkType: N.linkType,
                                         area: d,
@@ -204,9 +204,9 @@ function I(e) {
                                     })
                                 }
                             })
-                        }, n) : (0, r.jsxs)("div", {
+                        }, n) : (0, a.jsxs)("div", {
                             className: f.uc,
-                            children: [(0, r.jsx)(c.$nd, {
+                            children: [(0, a.jsx)(c.$nd, {
                                 variant: p ? "overlay-primary" : "overlay-secondary",
                                 disabled: l || null != s,
                                 loading: o,
@@ -214,7 +214,7 @@ function I(e) {
                                 text: n,
                                 buttonRef: h,
                                 onClick: e => {
-                                    a(e), (0, g.gx)({
+                                    r(e), (0, g.gx)({
                                         applicationId: N.id,
                                         linkType: N.linkType,
                                         area: d,
@@ -224,7 +224,7 @@ function I(e) {
                                     })
                                 },
                                 fullWidth: !0
-                            }), null != s && (0, r.jsx)(c.EYj, {
+                            }), null != s && (0, a.jsx)(c.EYj, {
                                 variant: "text-xs/medium",
                                 color: "none",
                                 className: f.H$,

@@ -1,23 +1,23 @@
 /** chunk id: 154297 params = (module,exports,require) **/
 n.d(t, {
-    C: () => a
+    C: () => r
 });
 var i = n(652215),
-    r = n(985018);
+    a = n(985018);
 
-function a(e) {
+function r(e) {
     switch (e) {
         case i.yTV.DESKTOP:
-            return r.intl.string(r.t.aqN8U9);
+            return a.intl.string(a.t.aqN8U9);
         case i.yTV.IOS:
-            return r.intl.string(r.t.CyQ5ia);
+            return a.intl.string(a.t.CyQ5ia);
         case i.yTV.ANDROID:
-            return r.intl.string(r.t.fMs6uW);
+            return a.intl.string(a.t.fMs6uW);
         case i.yTV.XBOX:
-            return r.intl.string(r.t.o0hjdt);
+            return a.intl.string(a.t.o0hjdt);
         case i.yTV.PS4:
         case i.yTV.PS5:
-            return r.intl.string(r.t["R/1GpG"]);
+            return a.intl.string(a.t["R/1GpG"]);
         default:
             return
     }

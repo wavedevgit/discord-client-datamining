@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(835245),
-    a = n(397927),
+var a = n(835245),
+    r = n(397927),
     l = n(391048),
     s = n(636099),
     o = n(608805),
@@ -18,10 +18,10 @@ function _(e) {
         guildProductListing: t,
         guildId: _,
         sourceAnalyticsLocations: m
-    } = e, h = !1, p = (0, r.A)(), g = t.id, A = () => {
+    } = e, h = !1, p = (0, a.A)(), g = t.id, A = () => {
         h = !0
     };
-    (0, a.mMO)(async () => {
+    (0, r.mMO)(async () => {
         let {
             default: e
         } = await n.e("41469").then(n.bind(n, 35052));

@@ -3,8 +3,8 @@ n.d(t, {
     f: () => y
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(735438),
+    a = n(64700),
+    r = n(735438),
     l = n(110259),
     s = n(239947),
     o = n(934551),
@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(467135),
     f = n(644235),
     C = n(153469),
-    E = n(652215),
-    I = n(520650),
+    I = n(652215),
+    E = n(520650),
     v = n(985018),
     b = n(294456);
 let T = e => e.map(e => `#${e}`),
@@ -31,7 +31,7 @@ let T = e => e.map(e => `#${e}`),
         } = e, {
             sharedClientTheme: n
         } = t, {
-            setAll: r
+            setAll: a
         } = (0, x.ko)();
         return void 0 === n ? null : (0, i.jsxs)("div", {
             className: b.kL,
@@ -42,9 +42,9 @@ let T = e => e.map(e => `#${e}`),
                 fullWidth: !0,
                 variant: "primary",
                 onClick: () => {
-                    A.default.track(E.HAw.CUSTOM_THEME_SHARE_PREVIEWED, {}), (0, h.nf)(h.HP.CUSTOM_THEME, {
+                    A.default.track(I.HAw.CUSTOM_THEME_SHARE_PREVIEWED, {}), (0, h.nf)(h.HP.CUSTOM_THEME, {
                         from: h.xv.SHARE_MESSAGE
-                    }), r({
+                    }), a({
                         colors: T(n.colors),
                         chassisMixAmount: n.base_mix,
                         gradientAngle: n.gradient_angle
@@ -61,7 +61,7 @@ let T = e => e.map(e => `#${e}`),
                 sharedClientTheme: g
             } = h,
             A = (0, p.Ay)(h),
-            x = r.useMemo(() => (0, a.once)(() => {
+            x = a.useMemo(() => (0, r.once)(() => {
                 (0, _.x)({
                     type: l.ImpressionTypes.VIEW,
                     name: s.I.CUSTOM_THEME_SHARE,
@@ -75,26 +75,26 @@ let T = e => e.map(e => `#${e}`),
                 threshold: 1,
                 minTimeVisibleMs: 200
             }),
-            E = r.useMemo(() => void 0 === g ? "" : (0, C.V9)(T(g.colors), g.gradient_angle ?? 0), [g]);
+            I = a.useMemo(() => void 0 === g ? "" : (0, C.V9)(T(g.colors), g.gradient_angle ?? 0), [g]);
         return void 0 === g ? null : (0, i.jsxs)("div", {
             className: b.pS,
             ref: f,
             children: [(0, i.jsx)("div", {
                 className: b.sl,
                 style: {
-                    background: `${E}`
+                    background: `${I}`
                 }
             }), (0, i.jsxs)("div", {
                 className: b.Ix,
                 children: [(0, i.jsxs)(u.Heading, {
                     variant: "heading-md/semibold",
                     className: b.qP,
-                    children: [v.intl.string(I.default.KSBBpC), " ", (0, i.jsx)(o.NitroWheelIcon, {})]
+                    children: [v.intl.string(E.default.KSBBpC), " ", (0, i.jsx)(o.NitroWheelIcon, {})]
                 }), (0, i.jsx)(u.Text, {
                     variant: "text-sm/medium",
                     color: "text-subtle",
                     className: b.Tb,
-                    children: (t = `${v.intl.format(I.default.fQPSEf,{username:"__USERNAME__"})}`, n = h.author, c = A.nick, t.split(" ").map((e, t) => "__USERNAME__" !== e ? (0, i.jsxs)(r.Fragment, {
+                    children: (t = `${v.intl.format(E.default.fQPSEf,{username:"__USERNAME__"})}`, n = h.author, c = A.nick, t.split(" ").map((e, t) => "__USERNAME__" !== e ? (0, i.jsxs)(a.Fragment, {
                         children: [e, " "]
                     }, t) : (0, i.jsxs)("span", {
                         className: b.H,

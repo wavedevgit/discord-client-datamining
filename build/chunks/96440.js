@@ -3,8 +3,8 @@ n.d(t, {
     W: () => b
 }), n(321073);
 var i = n(627968),
-    r = n(311907),
-    a = n(793574),
+    a = n(311907),
+    r = n(793574),
     l = n(688810),
     s = n(522305),
     o = n(735991),
@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(486020),
     f = n(795816),
     C = n(933958),
-    E = n(574152),
-    I = n(782091),
+    I = n(574152),
+    E = n(782091),
     v = n(985018);
 
 function b(e) {
@@ -39,11 +39,11 @@ function b(e) {
         botUserId: t?.bot?.id
     }), j = null != t && (0, o.Ag)(t), L = null != S && j && N, {
         analyticsLocations: R
-    } = (0, l.Ay)(a.A.ACTIVITY_CUSTOM_LINK), P = (0, r.bG)([A.A], () => A.A.getChannelId()), M = (0, I.et)(P), w = (0, r.bG)([C.Ay], () => {
+    } = (0, l.Ay)(r.A.ACTIVITY_CUSTOM_LINK), P = (0, a.bG)([A.A], () => A.A.getChannelId()), w = (0, E.et)(P), M = (0, a.bG)([C.Ay], () => {
         if (null == P) return;
         let e = C.Ay.getEmbeddedActivitiesForChannel(P).filter(e => e.applicationId === t.id);
         return e.length > 0 ? e[0].compositeInstanceId : void 0
-    }), D = (0, r.bG)([C.Ay], () => C.Ay.getCurrentEmbeddedActivity()), k = (0, E.A)(), O = M === I.xy.CAN_LAUNCH, U = null != w && D?.compositeInstanceId === w, B = null != n ? n : b.customId, G = (0, p.e)(t), F = [];
+    }), D = (0, a.bG)([C.Ay], () => C.Ay.getCurrentEmbeddedActivity()), k = (0, I.A)(), O = w === E.xy.CAN_LAUNCH, U = null != M && D?.compositeInstanceId === M, B = null != n ? n : b.customId, G = (0, p.e)(t), F = [];
     G ? F.push({
         label: v.intl.string(v.t.RscU7I),
         trackingArea: _.kY.PLAY,
@@ -53,13 +53,13 @@ function b(e) {
             })
         }
     }) : (O && F.push({
-        label: null == w ? v.intl.string(v.t.RscU7I) : U ? v.intl.string(v.t.DPfdsq) : v.intl.string(v.t.sqe0hj),
+        label: null == M ? v.intl.string(v.t.RscU7I) : U ? v.intl.string(v.t.DPfdsq) : v.intl.string(v.t.sqe0hj),
         trackingArea: _.kY.PLAY,
         onClick() {
             (0, f.su)({
                 channelId: P ?? void 0,
                 applicationId: t.id,
-                isStart: null == w,
+                isStart: null == M,
                 embeddedActivitiesManager: k,
                 customId: B,
                 referrerId: T,

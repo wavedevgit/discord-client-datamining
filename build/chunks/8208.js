@@ -1,7 +1,7 @@
 /** chunk id: 8208 params = (module,exports,require) **/
 e.exports = {
     hs: "text-sm/normal_e1364f",
-    Nr: "card_e1364f",
+    Nr: "card_e1364f " + n(768942).H,
     vS: "removeGameButton_e1364f",
     BU: "dragHandle_e1364f",
     Id: "isDragging_e1364f",

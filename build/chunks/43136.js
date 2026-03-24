@@ -4,9 +4,9 @@ n.d(t, {
     C: () => S
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(284009),
-    l = n.n(a),
+    a = n(64700),
+    r = n(284009),
+    l = n.n(r),
     s = n(311907),
     o = n(397927),
     d = n(241524),
@@ -21,8 +21,8 @@ var i = n(627968),
     x = n(427262),
     f = n(218394),
     C = n(386952),
-    E = n(381969),
-    I = n(920814),
+    I = n(381969),
+    E = n(920814),
     v = n(235665),
     b = n(985018),
     T = n(425666);
@@ -52,7 +52,7 @@ function S(e) {
     let {
         coverImageAsset: t,
         isPreview: n = !1
-    } = e, r = h.kt.useSetting(), a = (0, f.j)() && r, [l, s] = (0, m.A)(t, a), o = a ? (0, i.jsx)(u.A, {
+    } = e, a = h.kt.useSetting(), r = (0, f.j)() && a, [l, s] = (0, m.A)(t, r), o = r ? (0, i.jsx)(u.A, {
         autoPlay: !0,
         loop: !0,
         className: T.N4,
@@ -79,24 +79,24 @@ function N(e) {
     let {
         guild: t,
         subscriptionsSettings: n
-    } = e, a = t.id, {
+    } = e, r = t.id, {
         nickname: u,
         nickcolor: m
     } = (0, s.cf)([p.Ay, g.default], () => {
         let e = g.default.getCurrentUser();
         l()(null != e, "user cannot be null");
-        let t = p.Ay.getMember(a, e.id);
+        let t = p.Ay.getMember(r, e.id);
         return {
             nickname: t?.nick ?? x.Ay.getName(e),
             nickcolor: t?.colorString ?? void 0
         }
-    }, [a]), {
+    }, [r]), {
         isTruncated: h,
         ExpandableTextContainer: A
-    } = (0, C.e)(), f = (n?.description?.trim().length ?? 0) > 0, [N, j] = r.useState(1), L = (0, d.A)("(max-width: 1439px)"), {
+    } = (0, C.e)(), f = (n?.description?.trim().length ?? 0) > 0, [N, j] = a.useState(1), L = (0, d.A)("(max-width: 1439px)"), {
         selectedTab: R,
         isPhantomPreview: P
-    } = (0, E.k)(), M = R === I.B.GUILD_PRODUCTS_PREVIEW ? b.intl.string(b.t["LvXy/H"]) : b.intl.string(b.t.XyqKh8), w = f ? (0, i.jsxs)(i.Fragment, {
+    } = (0, I.k)(), w = R === E.B.GUILD_PRODUCTS_PREVIEW ? b.intl.string(b.t["LvXy/H"]) : b.intl.string(b.t.XyqKh8), M = f ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(A, {
             lineClamp: L || 2 === N ? 2 : 3,
             children: (0, i.jsx)(o.Text, {
@@ -109,14 +109,14 @@ function N(e) {
                 size: 4
             }), (0, i.jsx)(y, {
                 onClick: () => (0, v.A)({
-                    guildId: a
+                    guildId: r
                 })
             })]
         })]
     }) : (0, i.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        children: P ? M : b.intl.string(b.t["NY/FIW"])
+        children: P ? w : b.intl.string(b.t["NY/FIW"])
     });
     return (0, i.jsxs)("div", {
         className: T.kL,
@@ -162,7 +162,7 @@ function N(e) {
                     })
                 }), (0, i.jsx)(o.hKd, {
                     size: 9
-                }), w]
+                }), M]
             })]
         }), (0, i.jsx)(S, {
             coverImageAsset: n?.cover_image_asset,

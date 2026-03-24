@@ -14,8 +14,8 @@ var i = n(627968),
     d = n(573648),
     c = n(780964),
     u = n(840065),
-    m = n(562153),
-    g = n(993401),
+    g = n(562153),
+    m = n(993401),
     x = n(652215),
     p = n(985018),
     f = n(308497);
@@ -73,7 +73,7 @@ function T(e) {
         guildId: n,
         channelId: o,
         onClose: d
-    } = e, c = m.Ay.getName(n, o, t), u = p.intl.formatToPlainString(p.t.sjSitP, {
+    } = e, c = g.Ay.getName(n, o, t), u = p.intl.formatToPlainString(p.t.sjSitP, {
         name: c
     }), [x] = l.useState(() => ((0, a.sample)(A) ?? A[0])(c)), h = l.useCallback(() => {
         r.A.openPrivateChannel({
@@ -85,7 +85,7 @@ function T(e) {
         bodyText: x,
         children: (0, i.jsx)("div", {
             className: f.v0,
-            children: (0, i.jsx)(g.FD, {
+            children: (0, i.jsx)(m.FD, {
                 icon: s.oyn,
                 text: p.intl.string(p.t["g33r/P"]),
                 onClick: h
@@ -124,10 +124,10 @@ function N(e) {
         bodyText: p.intl.string(p.t.KpjsU9),
         children: [(0, i.jsx)(b, {}), (0, i.jsxs)("div", {
             className: f.v0,
-            children: [(0, i.jsx)(g.FD, {
+            children: [(0, i.jsx)(m.FD, {
                 text: p.intl.string(p.t["/Hl24U"]),
                 onClick: n
-            }), (0, i.jsx)(g.FD, {
+            }), (0, i.jsx)(m.FD, {
                 text: p.intl.string(p.t.GTCx0p),
                 onClick: a
             })]

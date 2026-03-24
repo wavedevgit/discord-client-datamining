@@ -3,8 +3,8 @@ n.d(t, {
     R: () => h
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(497766);
+    a = n(64700),
+    r = n(497766);
 n(311907), n(859703);
 var l = n(341915),
     s = n(890687),
@@ -27,8 +27,8 @@ function h(e) {
         size: f,
         height: C
     } = (0, u.L)(), {
-        expansionSpring: E,
-        isAnimating: I,
+        expansionSpring: I,
+        isAnimating: E,
         isExpanded: v,
         toggleExpanded: b
     } = (0, u.s)({
@@ -36,16 +36,16 @@ function h(e) {
             location: n,
             quest: t
         })
-    }), [T, y] = r.useState(!1), S = () => y(!0), N = () => y(!1), j = C ?? _._B;
+    }), [T, y] = a.useState(!1), S = () => y(!0), N = () => y(!1), j = C ?? _._B;
     return (0, i.jsx)(o.R, {
         questOrQuests: t,
         questContent: n,
         questContentPosition: p,
         trackGuildAndChannelMetadata: n === l.uF.QUESTS_EMBED,
         sourceQuestContent: g,
-        children: e => (0, i.jsx)(a.animated.div, {
+        children: e => (0, i.jsx)(r.animated.div, {
             style: {
-                maxHeight: n === l.uF.QUESTS_EMBED ? void 0 : E.to({
+                maxHeight: n === l.uF.QUESTS_EMBED ? void 0 : I.to({
                     range: [0, 1],
                     output: [_.es, j]
                 })
@@ -64,9 +64,9 @@ function h(e) {
                     location: n,
                     quest: t,
                     size: f,
-                    expansionSpring: E,
+                    expansionSpring: I,
                     isInteracting: T,
-                    isAnimating: I,
+                    isAnimating: E,
                     isExpanded: v,
                     contentPosition: p,
                     toggleExpanded: b,
@@ -78,7 +78,7 @@ function h(e) {
                     size: f,
                     isFocused: T,
                     isExpanded: v,
-                    isAnimating: I,
+                    isAnimating: E,
                     contentPosition: p,
                     sourceQuestContent: g
                 })]

@@ -97,17 +97,17 @@ t.exports = function(t) {
             if (!b) return y;
             var S = _.getPropsForKey(v),
                 w = a.encode(r, h, 0),
-                k = d.first().get("start"),
-                x = d.last().get("end"),
-                C = n.slice(k, x),
+                x = d.first().get("start"),
+                k = d.last().get("end"),
+                C = n.slice(x, k),
                 E = e.getEntityAt(p.get("start")),
                 O = f.getHTMLDirIfDifferent(l.getDirection(C), t.props.direction),
                 D = {
                     contentState: t.props.contentState,
                     decoratedText: C,
                     dir: O,
-                    start: k,
-                    end: x,
+                    start: x,
+                    end: k,
                     blockKey: r,
                     entityKey: E,
                     offsetKey: w

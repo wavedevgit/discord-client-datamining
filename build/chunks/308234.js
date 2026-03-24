@@ -3,9 +3,9 @@ n.d(t, {
     A: () => u
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    a = n(64700),
+    r = n(503698),
+    l = n.n(r),
     s = n(397927),
     o = n(415350),
     d = n(366468),
@@ -15,10 +15,10 @@ function u(e) {
     let {
         color: t,
         className: n,
-        variant: a,
+        variant: r,
         text: u,
         lineClamp: _
-    } = e, m = (0, s.$Il)(), h = r.useMemo(() => null == u ? null : (0, o.A)(u, !0, {
+    } = e, m = (0, s.$Il)(), h = a.useMemo(() => null == u ? null : (0, o.A)(u, !0, {
         allowHeading: null == _,
         allowList: null == _,
         initialHeaderLevel: m
@@ -29,7 +29,7 @@ function u(e) {
             [d.D]: 1 === _
         }),
         color: t,
-        variant: a,
+        variant: r,
         lineClamp: _,
         children: h
     })

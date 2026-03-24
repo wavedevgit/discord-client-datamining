@@ -4,8 +4,8 @@ n.d(t, {
     k: () => j
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(936504),
+    a = n(64700),
+    r = n(936504),
     l = n(158954),
     s = n(311907),
     o = n(800342),
@@ -21,12 +21,12 @@ var i = n(627968),
     x = n(189081),
     f = n(67480),
     C = n(328968),
-    E = n(652215),
-    I = n(985018),
+    I = n(652215),
+    E = n(985018),
     v = n(449880);
-class b extends r.Component {
+class b extends a.Component {
     static defaultProps = {
-        renderFallback: E.tEg
+        renderFallback: I.tEg
     };
     state = {
         playing: !1,
@@ -41,8 +41,8 @@ class b extends r.Component {
         } = this.props;
         return {
             ...e,
-            section: null != t ? t : E.JJy.APPLICATION_EMBED,
-            object: E.ZSU.CARD
+            section: null != t ? t : I.JJy.APPLICATION_EMBED,
+            object: I.ZSU.CARD
         }
     }
     componentDidMount() {
@@ -83,9 +83,9 @@ class b extends r.Component {
                 role: "link",
                 variant: "active",
                 size: "sm",
-                text: I.intl.string(I.t["W+NB90"]),
+                text: E.intl.string(E.t["W+NB90"]),
                 onClick: () => {
-                    (0, A.pX)(E.BVt.APPLICATION_STORE)
+                    (0, A.pX)(I.BVt.APPLICATION_STORE)
                 }
             })
         })
@@ -93,14 +93,14 @@ class b extends r.Component {
     renderApplicationTile = (e, t) => {
         let {
             inLibrary: n,
-            width: r,
-            renderCustomTitle: a,
+            width: a,
+            renderCustomTitle: r,
             renderCustomTagline: l,
             renderCustomMedia: s
         } = this.props, {
             playing: o,
             muted: d
-        } = this.state, c = r > m.Tm;
+        } = this.state, c = a > m.Tm;
         return (0, i.jsx)(_.A, {
             sku: e,
             storeListing: t,
@@ -109,7 +109,7 @@ class b extends r.Component {
             inLibrary: n,
             onToggleMute: this.handleToggleMute,
             renderCustomActions: () => this.renderActions(e),
-            renderCustomTitle: a,
+            renderCustomTitle: r,
             renderCustomTagline: l,
             renderCustomMedia: s,
             isHorizontal: c,
@@ -120,8 +120,8 @@ class b extends r.Component {
         let {
             inLibrary: t,
             application: n,
-            skuId: r,
-            libraryApplication: a,
+            skuId: a,
+            libraryApplication: r,
             renderCustomActions: l
         } = this.props;
         if (null != l) return (0, i.jsx)("div", {
@@ -129,8 +129,8 @@ class b extends r.Component {
             children: l()
         });
         if (null == n) return null;
-        let s = null != n && n.primarySkuId === r,
-            o = null != a && a.hasFlag(E.hM6.HIDDEN);
+        let s = null != n && n.primarySkuId === a,
+            o = null != r && r.hasFlag(I.hM6.HIDDEN);
         return (0, i.jsxs)("div", {
             className: v.i,
             children: [!s || o ? this.renderViewInStoreButton() : (0, i.jsx)(c.A, {
@@ -138,7 +138,7 @@ class b extends r.Component {
                 disabledVariant: "primary",
                 size: "sm",
                 className: v.h,
-                source: E.ThZ.MESSAGE_EMBED,
+                source: I.ThZ.MESSAGE_EMBED,
                 onClick: this.handleActionButtonClick
             }), t && !o || e.premium ? null : (0, i.jsx)(u.A, {
                 type: u.A.Types.EMBED,
@@ -152,19 +152,19 @@ class b extends r.Component {
             sku: e,
             storeListing: t,
             width: n,
-            fetchFailed: r,
+            fetchFailed: a,
             renderFallback: l
         } = this.props, s = n > m.Tm;
-        return null == e || null == t ? r ? l() : (0, i.jsx)(m.Wb, {
+        return null == e || null == t ? a ? l() : (0, i.jsx)(m.Wb, {
             isHorizontal: s
-        }) : e.productLine === E.EZt.COLLECTIBLES ? (0, i.jsx)(d.A, {
-            section: E.JJy.APPLICATION_EMBED,
+        }) : e.productLine === I.EZt.COLLECTIBLES ? (0, i.jsx)(d.A, {
+            section: I.JJy.APPLICATION_EMBED,
             children: this.renderApplicationTile(e, t)
         }) : (0, i.jsx)(d.A, {
-            section: E.JJy.APPLICATION_EMBED,
-            children: (0, i.jsx)(a.N_, {
+            section: I.JJy.APPLICATION_EMBED,
+            children: (0, i.jsx)(r.N_, {
                 onClick: this.handleLinkClick,
-                to: E.BVt.APPLICATION_STORE,
+                to: I.BVt.APPLICATION_STORE,
                 onMouseEnter: this.handleMouseEnter,
                 onMouseLeave: this.handleMouseLeave,
                 children: this.renderApplicationTile(e, t)

@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(587895),
     c = n(403362),
     u = n(635344),
-    m = n(735321),
-    g = n(606758),
+    g = n(735321),
+    m = n(606758),
     x = n(492280),
     p = n(939899),
     f = n(518477),
@@ -72,19 +72,18 @@ function I(e) {
             getAriaLabel: I,
             icon: j
         } = A[n.type],
-        v = "small" === r,
-        E = l.useCallback(() => {
-            d || ((0, m.Y5)(n), u({
+        v = l.useCallback(() => {
+            d || ((0, g.Y5)(n), u({
                 action: "WIDGET_ADDED",
                 ...n.getProfileEditAnalyticsOptions()
-            }), (0, g.XA)(f.jM.WIDGET_ADDED), a?.())
+            }), (0, m.XA)(f.jM.WIDGET_ADDED), a?.())
         }, [d, n, u, a]),
-        T = j?.(n);
+        E = j?.(n);
     return (0, i.jsxs)("div", {
         className: _.LG,
         children: [(0, i.jsxs)(o.DUT, {
-            className: s()(_.PH, v && _.PG, d && _.Lq),
-            onClick: E,
+            className: s()(_.PH, "small" === r && _.PG, d && _.Lq),
+            onClick: v,
             "aria-label": I(n),
             "aria-busy": d,
             children: [(() => {
@@ -92,15 +91,15 @@ function I(e) {
                 switch (e.variant) {
                     case "details":
                         return (0, i.jsx)(x.E, {
-                            className: _.xR,
-                            applicationId: e.applicationId,
-                            size: r
+                            className: _.l4,
+                            gridClassName: _.Qs,
+                            applicationId: e.applicationId
                         });
                     case "grid":
                         return (0, i.jsx)(x.l, {
-                            className: _.xR,
-                            applicationIds: e.applicationIds,
-                            size: r
+                            className: _.l4,
+                            gridClassName: _.Qs,
+                            applicationIds: e.applicationIds
                         });
                     case "application-widget":
                         return (0, i.jsx)(p.A, {
@@ -121,9 +120,9 @@ function I(e) {
                     children: [(0, i.jsx)(o.Text, {
                         variant: "text-md/medium",
                         color: "text-strong",
-                        children: (0, m.L)(n)
-                    }), null != T ? (0, i.jsx)("img", {
-                        src: T,
+                        children: (0, g.L)(n)
+                    }), null != E ? (0, i.jsx)("img", {
+                        src: E,
                         alt: "",
                         width: 16,
                         height: 16,

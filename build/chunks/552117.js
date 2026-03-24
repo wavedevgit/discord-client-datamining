@@ -3,9 +3,9 @@ n.d(t, {
     A: () => F
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    a = n(64700),
+    r = n(503698),
+    l = n.n(r),
     s = n(311907),
     o = n(3026),
     d = n(990078),
@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(767143),
     f = n(652176),
     C = n(87719),
-    E = n(465794),
-    I = n(71393),
+    I = n(465794),
+    E = n(71393),
     v = n(287809),
     b = n(954571),
     T = n(927578),
@@ -32,8 +32,8 @@ var i = n(627968),
     L = n(915488),
     R = n(652215),
     P = n(788868),
-    M = n(985018),
-    w = n(986785),
+    w = n(985018),
+    M = n(986785),
     D = n(767419);
 
 function k(e) {
@@ -73,33 +73,33 @@ let U = e => {
         let {
             closePopout: t,
             sticker: n,
-            channel: a,
+            channel: r,
             refreshPositionKey: l
         } = e, [o, d, c] = (0, s.yK)([S.A], () => [S.A.getStickerPack(n.pack_id), !S.A.hasLoadedStickerPacks, S.A.isPremiumPack(n.pack_id)], [n]), _ = (e => {
             let {
                 sticker: t,
                 stickerPack: n
             } = e;
-            return r.useMemo(() => null == n ? [] : n.stickers.slice(0, 4).reduce((e, n) => 3 !== e.length && n.id !== t.id ? e.concat(n) : e, []), [t, n])
+            return a.useMemo(() => null == n ? [] : n.stickers.slice(0, 4).reduce((e, n) => 3 !== e.length && n.id !== t.id ? e.concat(n) : e, []), [t, n])
         })({
             sticker: n,
             stickerPack: o
         });
         (0, y.Sr)(n.pack_id);
-        let m = (0, y.pD)(a),
+        let m = (0, y.pD)(r),
             p = {
                 refreshPositionKey: l,
-                channel: a
+                channel: r
             },
-            g = r.useRef(p);
-        return (r.useEffect(() => {
+            g = a.useRef(p);
+        return (a.useEffect(() => {
             g.current = p
-        }), r.useEffect(() => {
+        }), a.useEffect(() => {
             let {
                 refreshPositionKey: e
             } = g.current;
             e()
-        }, [d]), r.useEffect(() => {
+        }, [d]), a.useEffect(() => {
             let {
                 channel: e
             } = g.current;
@@ -110,32 +110,32 @@ let U = e => {
                 ...(0, h.dI)(e)
             })
         }, [n.pack_id]), d || null == o) ? (0, i.jsx)(f.Y0, {
-            className: w.v0
+            className: M.v0
         }) : (0, i.jsxs)(f.Uq, {
-            className: w.Bm,
+            className: M.Bm,
             children: [(0, i.jsx)(u.Heading, {
                 variant: "heading-md/semibold",
                 children: n.name
             }), (0, i.jsx)(u.Text, {
                 variant: "text-sm/normal",
-                children: c ? M.intl.format(M.t.auckXz, {
+                children: c ? w.intl.format(w.t.auckXz, {
                     stickerPackName: o.name
-                }) : M.intl.format(M.t.OzB6e3, {
+                }) : w.intl.format(w.t.OzB6e3, {
                     stickerPackName: o.name
                 })
             }), (0, i.jsx)("ul", {
-                className: w.pQ,
+                className: M.pQ,
                 children: _.map(e => (0, i.jsx)(j.A, {
                     isInteracting: !0,
                     size: 80,
                     sticker: e
                 }, e.id))
             }), c && (0, i.jsx)("div", {
-                className: w.j0,
+                className: M.j0,
                 children: (0, i.jsx)(u.Button, {
                     variant: "secondary",
                     size: "sm",
-                    text: M.intl.string(M.t.GPy3Ar),
+                    text: w.intl.string(w.t.GPy3Ar),
                     onClick: () => {
                         c && (0, L.a)({
                             stickerPack: o,
@@ -149,36 +149,36 @@ let U = e => {
     B = e => {
         let t, {
                 sticker: n,
-                channel: a,
+                channel: r,
                 closePopout: o,
                 refreshPositionKey: C
             } = e,
-            [y, S] = r.useState(null),
-            [N, L] = r.useState(!1),
+            [y, S] = a.useState(null),
+            [N, L] = a.useState(!1),
             U = v.default.getCurrentUser(),
             B = T.Ay.canUseCustomStickersEverywhere(U),
-            G = (0, s.bG)([I.A], () => I.A.getGuild(n.guild_id)),
+            G = (0, s.bG)([E.A], () => E.A.getGuild(n.guild_id)),
             F = null != G,
-            [H, V] = r.useState(!1),
-            [q, W] = r.useState(null),
-            Y = r.useMemo(() => ({
-                page: null != a.guild_id ? R.liQ.GUILD_CHANNEL : R.liQ.DM_CHANNEL,
+            [H, V] = a.useState(!1),
+            [q, W] = a.useState(null),
+            Y = a.useMemo(() => ({
+                page: null != r.guild_id ? R.liQ.GUILD_CHANNEL : R.liQ.DM_CHANNEL,
                 section: R.JJy.STICKER_POPOUT
-            }), [a.guild_id]),
+            }), [r.guild_id]),
             {
                 current: z
-            } = r.useRef({
-                guild_id: a.getGuildId(),
-                ...(0, h.dI)(a)
+            } = a.useRef({
+                guild_id: r.getGuildId(),
+                ...(0, h.dI)(r)
             }),
             Q = {
                 stickerSourceGuild: G,
                 refreshPositionKey: C
             },
-            K = r.useRef(Q);
-        r.useEffect(() => {
+            K = a.useRef(Q);
+        a.useEffect(() => {
             K.current = Q
-        }), r.useEffect(() => {
+        }), a.useEffect(() => {
             let {
                 stickerSourceGuild: e
             } = K.current;
@@ -186,17 +186,17 @@ let U = e => {
                 (null == e || e.features.has(R.GuildFeatures.DISCOVERABLE)) && S(await (0, A.A)(n.id)), L(!0)
             })()
         }, [n.id, F]);
-        let J = n.guild_id === a.getGuildId(),
+        let J = n.guild_id === r.getGuildId(),
             X = null != y,
             Z = !1,
             $ = "Custom Sticker Popout";
-        B ? t = F ? J ? M.intl.string(M.t.fZ0DiG) : M.intl.string(M.t["1f6D9m"]) : X ? M.intl.string(M.t.yHmoR9) : M.intl.string(M.t.vZaScH) : F ? (t = J ? M.intl.string(M.t.jNphpt) : M.intl.string(M.t.lyD5ZW), Z = !0, $ = "Custom Sticker Popout (Upsell)") : X ? (t = M.intl.string(M.t.IuXYch), Z = !0, $ = "Custom Sticker Popout (Upsell)") : (t = M.intl.format(M.t.hGWuxU, {
+        B ? t = F ? J ? w.intl.string(w.t.fZ0DiG) : w.intl.string(w.t["1f6D9m"]) : X ? w.intl.string(w.t.yHmoR9) : w.intl.string(w.t.vZaScH) : F ? (t = J ? w.intl.string(w.t.jNphpt) : w.intl.string(w.t.lyD5ZW), Z = !0, $ = "Custom Sticker Popout (Upsell)") : X ? (t = w.intl.string(w.t.IuXYch), Z = !0, $ = "Custom Sticker Popout (Upsell)") : (t = w.intl.format(w.t.hGWuxU, {
             openPremiumSettings: () => {
-                k(a), o()
+                k(r), o()
             }
         }), $ = "Custom Sticker Popout (Soft Upsell)");
         let ee = !Z && !F && X && B;
-        if (r.useEffect(() => {
+        if (a.useEffect(() => {
                 let {
                     refreshPositionKey: e
                 } = K.current;
@@ -207,7 +207,7 @@ let U = e => {
                     ...z
                 })
             }), !N) return (0, i.jsx)(f.Y0, {
-            className: w.v0
+            className: M.v0
         });
         {
             let e;
@@ -225,13 +225,13 @@ let U = e => {
                     children: [(0, i.jsx)(O, {
                         description: t,
                         sticker: n
-                    }), Z && (0, i.jsx)(E.A, {
+                    }), Z && (0, i.jsx)(I.A, {
                         className: D.lI,
                         subscriptionTier: P.pe.TIER_2,
                         size: c.$n.Sizes.SMALL,
                         fullWidth: !0,
                         textOptions: {
-                            textOverride: M.intl.string(M.t["gl/XHJ"])
+                            textOverride: w.intl.string(w.t["gl/XHJ"])
                         },
                         onSubscribeModalClose: t => t ? e() : o(),
                         postSuccessGuild: F || null == y ? void 0 : y,
@@ -242,7 +242,7 @@ let U = e => {
                         children: (0, i.jsx)(u.Button, {
                             variant: "primary",
                             size: "sm",
-                            text: M.intl.string(M.t.riu2R5),
+                            text: w.intl.string(w.t.riu2R5),
                             fullWidth: !0,
                             onClick: e
                         })
@@ -257,7 +257,7 @@ let U = e => {
                             variant: "text-sm/normal",
                             color: "text-subtle",
                             className: D.YW,
-                            children: F ? M.intl.string(M.t.kx6pEG) : M.intl.string(M.t.pDE7Gb)
+                            children: F ? w.intl.string(w.t.kx6pEG) : w.intl.string(w.t.pDE7Gb)
                         }), (0, i.jsx)(x.G7, {
                             expressionSourceGuild: t,
                             hasJoinedExpressionSourceGuild: F,
@@ -273,7 +273,7 @@ let U = e => {
                                         className: D.__invalid_showMoreEmojisLabel,
                                         variant: "text-xs/normal",
                                         color: "none",
-                                        children: M.intl.string(M.t.vtH5hn)
+                                        children: w.intl.string(w.t.vtH5hn)
                                     }), (0, i.jsx)(u.abt, {
                                         size: "md",
                                         color: "currentColor",
@@ -292,7 +292,7 @@ let U = e => {
                                     ...f.Uk,
                                     children: (0, i.jsx)("div", {
                                         className: l()(D.Th, {
-                                            [w.vT]: null != q && q !== e.id
+                                            [M.vT]: null != q && q !== e.id
                                         }),
                                         onMouseEnter: () => {
                                             W(e.id)
@@ -322,13 +322,13 @@ function G(e) {
     let {
         channel: t,
         closePopout: n,
-        sticker: r
+        sticker: a
     } = e;
     return (0, i.jsx)(f.Uq, {
-        className: w.Bm,
+        className: M.Bm,
         children: (0, i.jsx)(O, {
-            sticker: r,
-            description: M.intl.format(M.t.hGWuxU, {
+            sticker: a,
+            description: w.intl.format(w.t.hGWuxU, {
                 openPremiumSettings: () => {
                     n(), k(t)
                 }
@@ -340,22 +340,22 @@ let F = e => {
     let {
         renderableSticker: t,
         channel: n,
-        closePopout: r,
-        refreshPositionKey: a
+        closePopout: a,
+        refreshPositionKey: r
     } = e, [l, s] = (0, y.Zq)(t, !0);
     return null != l && (0, N.FD)(l) ? (0, i.jsx)(U, {
         sticker: l,
-        closePopout: r,
+        closePopout: a,
         channel: n,
-        refreshPositionKey: a
+        refreshPositionKey: r
     }) : null != l && (0, N.Xw)(l) ? (0, i.jsx)(B, {
         sticker: l,
         channel: n,
-        closePopout: r,
-        refreshPositionKey: a
+        closePopout: a,
+        refreshPositionKey: r
     }) : s ? s && null == l ? (0, i.jsx)(G, {
         channel: n,
-        closePopout: r,
+        closePopout: a,
         sticker: t
-    }) : (r(), null) : (0, i.jsx)(f.Y0, {})
+    }) : (a(), null) : (0, i.jsx)(f.Y0, {})
 }

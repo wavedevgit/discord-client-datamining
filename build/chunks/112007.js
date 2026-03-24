@@ -3,8 +3,8 @@ n.d(t, {
     A: () => T
 }), n(938796);
 var i = n(627968),
-    r = n(64700),
-    a = n(821418),
+    a = n(64700),
+    r = n(821418),
     l = n(665260),
     s = n(311907),
     o = n(990078),
@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(696451),
     f = n(860689),
     C = n(505417),
-    E = n(168428),
-    I = n(652215),
+    I = n(168428),
+    E = n(652215),
     v = n(985018),
     b = n(563111);
 
@@ -34,32 +34,32 @@ function T(e) {
             message: R,
             currentUserId: P
         } = e,
-        M = P === R.author.id,
+        w = P === R.author.id,
         {
-            channel: w,
+            channel: M,
             approximate_member_count: D,
             approximate_presence_count: k
         } = L,
-        O = L.state === I.elq.ACCEPTING,
-        U = null != w ? (0, A.OY)(w) : null,
+        O = L.state === E.elq.ACCEPTING,
+        U = null != M ? (0, A.OY)(M) : null,
         B = null != j,
         G = null != U,
         F = null != U && U.isGuildStageVoice(),
-        H = (0, l.Lt)(L.flags ?? 0, a.Q.IS_GUEST_INVITE),
+        H = (0, l.Lt)(L.flags ?? 0, r.Q.IS_GUEST_INVITE),
         V = U?.isGuildVoiceOrThread() ?? !1,
-        q = j?.features.has(I.GuildFeatures.HUB) ?? !1,
+        q = j?.features.has(E.GuildFeatures.HUB) ?? !1,
         W = j?.id,
         {
             analyticsLocations: Y
         } = (0, _.Ay)(u.A.INVITE_EMBED),
-        [z, Q] = r.useState(!1),
-        K = r.useCallback(() => Q(!1), []),
-        J = r.useRef(null),
+        [z, Q] = a.useState(!1),
+        K = a.useCallback(() => Q(!1), []),
+        J = a.useRef(null),
         X = (0, s.bG)([x.Ay], () => m.A.canAcceptInvite([x.Ay], L)),
-        Z = r.useCallback(() => {
+        Z = a.useCallback(() => {
             Q(!0), (0, c.Pq)(W, "show profile", Y)
         }, [W, Y]),
-        $ = r.useCallback(() => {
+        $ = a.useCallback(() => {
             let e = "noop";
             B ? (S(), e = "transition") : (N(), e = "accept"), (0, c.he)({
                 invite: L,
@@ -69,12 +69,12 @@ function T(e) {
             }, Y)
         }, [L, R, Y, B, S, N]);
     if (null == j) {
-        if (null == L.guild) return (0, i.jsx)(E.A, {});
-        (j = f.DY(L.guild)).premiumTier = L.guild.premium_tier ?? I.TVA.NONE
+        if (null == L.guild) return (0, i.jsx)(I.A, {});
+        (j = f.DY(L.guild)).premiumTier = L.guild.premium_tier ?? E.TVA.NONE
     }
     let ee = (0, C.l)({
         isVoiceChannel: V,
-        isOwnInvite: M,
+        isOwnInvite: w,
         isGuest: H,
         isHubGuild: q,
         isStage: F,
@@ -154,7 +154,7 @@ function T(e) {
                     text: V ? F ? v.intl.string(v.t["7vb2cc"]) : v.intl.string(v.t.gpqgah) : B ? v.intl.string(v.t.cEnaWx) : v.intl.string(v.t.XpeFYr)
                 })
             })]
-        }), j.features.has(I.GuildFeatures.HUB) && (0, i.jsxs)(i.Fragment, {
+        }), j.features.has(E.GuildFeatures.HUB) && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
                 className: b.me
             }), (0, i.jsx)(d.Text, {

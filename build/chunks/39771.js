@@ -1,26 +1,27 @@
 /** chunk id: 39771 params = (module,exports,require) **/
-n.d(t, {
+"use strict";
+r.d(t, {
     j: () => x
 });
-var r = n(627968);
-n(64700);
-var a = n(284009),
-    o = n.n(a),
-    i = n(397927),
-    _ = n(800342),
-    d = n(73825),
-    c = n(851907),
-    s = n(160946),
-    l = n(589078),
-    u = n(869146),
-    f = n(143582),
-    m = n(490744),
-    p = n(67480),
-    b = n(342098),
-    h = n(216678),
-    g = n(652215);
+var n = r(627968);
+r(64700);
+var a = r(284009),
+    i = r.n(a),
+    o = r(397927),
+    s = r(800342),
+    c = r(73825),
+    _ = r(851907),
+    d = r(160946),
+    l = r(589078),
+    u = r(869146),
+    f = r(143582),
+    m = r(490744),
+    p = r(67480),
+    b = r(342098),
+    h = r(216678),
+    g = r(652215);
 async function x(e) {
-    var t, n, a, x, C;
+    var t, r, a, x, C;
     let v, y, {
             applicationId: j,
             skuId: w,
@@ -30,13 +31,13 @@ async function x(e) {
         } = e,
         P = p.A.get(w);
     if (null == P) {
-        let e = (await (0, _.JI)(j)).find(e => e.sku.id === w);
-        o()(null != e, "Could not find store listing for sku"), e.sku.type === g.Puh.SUBSCRIPTION_GROUP && await (0, f.vz)(j, e.id)
+        let e = (await (0, s.JI)(j)).find(e => e.sku.id === w);
+        i()(null != e, "Could not find store listing for sku"), e.sku.type === g.Puh.SUBSCRIPTION_GROUP && await (0, f.vz)(j, e.id)
     }
-    P = P ?? p.A.get(w), o()(null != P && P.applicationId === j, "SKU must belong to application"), P.type !== g.Puh.SUBSCRIPTION || (0, s.B)([P.id]) || await (0, d.ur)(P.id);
-    let N = null == (y = null != (v = (0, c.LU)({
+    P = P ?? p.A.get(w), i()(null != P && P.applicationId === j, "SKU must belong to application"), P.type !== g.Puh.SUBSCRIPTION || (0, d.B)([P.id]) || await (0, c.ur)(P.id);
+    let N = null == (y = null != (v = (0, _.LU)({
         applicationId: j
-    })) ? u.A.getWindow(v) : void 0) || y.closed ? i.SYi : i.KX8;
+    })) ? u.A.getWindow(v) : void 0) || y.closed ? o.SYi : o.KX8;
     if (P.type !== g.Puh.SUBSCRIPTION) return new Promise((e, t) => {
         (0, h.A)({
             applicationId: j,
@@ -53,14 +54,14 @@ async function x(e) {
             checkoutFlow: l.CL.PREMIUM_APPS_OTP_CHECKOUT
         })
     });
-    await (t = j, n = w, a = I, x = A, C = k, (0, b.l)({
+    await (t = j, r = w, a = I, x = A, C = k, (0, b.l)({
         applicationId: t,
-        skuId: n,
+        skuId: r,
         initialPlanId: a,
         analyticsLocationObject: x,
         analyticsLocations: C,
-        renderHeader: (e, t, n) => (0, r.jsx)(m.fs, {
-            step: n,
+        renderHeader: (e, t, r) => (0, n.jsx)(m.fs, {
+            step: r,
             onClose: () => t(!1)
         })
     }))

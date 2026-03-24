@@ -32,7 +32,7 @@ t.exports = function() {
     }
 
     function m(t) {
-        return !!(t && t[k])
+        return !!(t && t[x])
     }
 
     function _(t) {
@@ -40,13 +40,13 @@ t.exports = function() {
     }
 
     function b(t) {
-        return !!(t && t[x])
+        return !!(t && t[k])
     }
     f(h, p), f(d, p), f(g, p), p.isIterable = y, p.isKeyed = v, p.isIndexed = m, p.isAssociative = _, p.isOrdered = b, p.Keyed = h, p.Indexed = d, p.Set = g;
     var S = "@@__IMMUTABLE_ITERABLE__@@",
         w = "@@__IMMUTABLE_KEYED__@@",
-        k = "@@__IMMUTABLE_INDEXED__@@",
-        x = "@@__IMMUTABLE_ORDERED__@@",
+        x = "@@__IMMUTABLE_INDEXED__@@",
+        k = "@@__IMMUTABLE_ORDERED__@@",
         C = "delete",
         E = {},
         O = {
@@ -374,7 +374,7 @@ t.exports = function() {
             var a = n[e ? i - o : o];
             return o++ > i ? q() : U(t, a, r[a])
         })
-    }, tt.prototype[x] = !0, f(te, Y), te.prototype.__iterateUncached = function(t, e) {
+    }, tt.prototype[k] = !0, f(te, Y), te.prototype.__iterateUncached = function(t, e) {
         if (e) return this.cacheResult().__iterate(t, e);
         var r, n = W(this._iterable),
             i = 0;
@@ -486,7 +486,7 @@ t.exports = function() {
         return t >>> 1 & 0x40000000 | 0xbfffffff & t
     }
 
-    function tk(t) {
+    function tx(t) {
         if (!1 === t || null == t || "function" == typeof t.valueOf && (!1 === (t = t.valueOf()) || null == t)) return 0;
         if (!0 === t) return 1;
         var e = typeof t;
@@ -496,7 +496,7 @@ t.exports = function() {
             return tw(r)
         }
         if ("string" === e) {
-            return t.length > tT ? (void 0 === (o = tI[i = t]) && (o = tx(i), tA === tM && (tA = 0, tI = {}), tA++, tI[i] = o), o) : tx(t)
+            return t.length > tT ? (void 0 === (o = tI[i = t]) && (o = tk(i), tA === tM && (tA = 0, tI = {}), tA++, tI[i] = o), o) : tk(t)
         }
         if ("function" == typeof t.hashCode) return t.hashCode();
         if ("object" === e) {
@@ -524,11 +524,11 @@ t.exports = function() {
             else throw Error("Unable to set a non-enumerable property on object.");
             return a
         }
-        if ("function" == typeof t.toString) return tx(t.toString());
+        if ("function" == typeof t.toString) return tk(t.toString());
         throw Error("Value type " + e + " cannot be hashed.")
     }
 
-    function tx(t) {
+    function tk(t) {
         for (var e = 0, r = 0; r < t.length; r++) e = 31 * e + t.charCodeAt(r) | 0;
         return tw(e)
     }
@@ -786,7 +786,7 @@ t.exports = function() {
                     d = n,
                     g = i;
                 p || (p = new M);
-                for (var y = new tq(p, tk(d), [d, g]), v = 0; v < h.length; v++) {
+                for (var y = new tq(p, tx(d), [d, g]), v = 0; v < h.length; v++) {
                     var m = h[v];
                     y = y.update(p, 0, void 0, m[0], m[1])
                 }
@@ -797,12 +797,12 @@ t.exports = function() {
             return (f ? s ? c === l - 1 ? b.pop() : b[c] = b.pop() : b[c] = [n, i] : b.push([n, i]), _) ? (this.entries = b, this) : new tz(t, b)
         }
     }, tP.prototype.get = function(t, e, r, n) {
-        void 0 === e && (e = tk(r));
+        void 0 === e && (e = tx(r));
         var i = 1 << ((0 === t ? e : e >>> t) & 31),
             o = this.bitmap;
         return (o & i) == 0 ? n : this.nodes[t5(o & i - 1)].get(t + 5, e, r, n)
     }, tP.prototype.update = function(t, e, r, n, i, o, a) {
-        void 0 === r && (r = tk(n));
+        void 0 === r && (r = tx(n));
         var s = (0 === e ? r : r >>> e) & 31,
             u = 1 << s,
             c = this.bitmap,
@@ -813,33 +813,33 @@ t.exports = function() {
             h = l ? p[f] : void 0,
             d = tY(h, t, e + 5, r, n, i, o, a);
         if (d === h) return this;
-        if (!l && d && p.length >= t9) {
+        if (!l && d && p.length >= t2) {
             for (var g = t, y = p, v = c, m = s, _ = d, b = 0, S = Array(32), w = 0; 0 !== v; w++, v >>>= 1) S[w] = 1 & v ? y[b++] : void 0;
             return S[m] = _, new tj(g, b + 1, S)
         }
         if (l && !d && 2 === p.length && t$(p[1 ^ f])) return p[1 ^ f];
         if (l && d && 1 === p.length && t$(d)) return d;
-        var k = t && t === this.ownerID,
-            x = l ? d ? c : c ^ u : c | u,
-            C = l ? d ? t7(p, f, d, k) : function(t, e, r) {
+        var x = t && t === this.ownerID,
+            k = l ? d ? c : c ^ u : c | u,
+            C = l ? d ? t7(p, f, d, x) : function(t, e, r) {
                 var n = t.length - 1;
                 if (r && e === n) return t.pop(), t;
                 for (var i = Array(n), o = 0, a = 0; a < n; a++) a === e && (o = 1), i[a] = t[a + o];
                 return i
-            }(p, f, k) : function(t, e, r, n) {
+            }(p, f, x) : function(t, e, r, n) {
                 var i = t.length + 1;
                 if (n && e + 1 === i) return t[e] = r, t;
                 for (var o = Array(i), a = 0, s = 0; s < i; s++) s === e ? (o[s] = r, a = -1) : o[s] = t[s + a];
                 return o
-            }(p, f, d, k);
-        return k ? (this.bitmap = x, this.nodes = C, this) : new tP(t, x, C)
+            }(p, f, d, x);
+        return x ? (this.bitmap = k, this.nodes = C, this) : new tP(t, k, C)
     }, tj.prototype.get = function(t, e, r, n) {
-        void 0 === e && (e = tk(r));
+        void 0 === e && (e = tx(r));
         var i = (0 === t ? e : e >>> t) & 31,
             o = this.nodes[i];
         return o ? o.get(t + 5, e, r, n) : n
     }, tj.prototype.update = function(t, e, r, n, i, o, a) {
-        void 0 === r && (r = tk(n));
+        void 0 === r && (r = tx(n));
         var s = (0 === e ? r : r >>> e) & 31,
             u = i === E,
             c = this.nodes,
@@ -849,7 +849,7 @@ t.exports = function() {
         if (f === l) return this;
         var p = this.count;
         if (l) {
-            if (!f && --p < t2) return function(t, e, r, n) {
+            if (!f && --p < t9) return function(t, e, r, n) {
                 for (var i = 0, o = 0, a = Array(r), s = 0, u = 1, c = e.length; s < c; s++, u <<= 1) {
                     var l = e[s];
                     void 0 !== l && s !== n && (i |= u, a[o++] = l)
@@ -865,7 +865,7 @@ t.exports = function() {
             if (tp(r, i[o][0])) return i[o][1];
         return n
     }, tU.prototype.update = function(t, e, r, n, i, o, a) {
-        void 0 === r && (r = tk(n));
+        void 0 === r && (r = tx(n));
         var s = i === E;
         if (r !== this.keyHash) return s ? this : (T(a), T(o), tZ(this, t, e, r, [n, i]));
         for (var u = this.entries, c = 0, l = u.length; c < l && !tp(n, u[c][0]); c++);
@@ -880,7 +880,7 @@ t.exports = function() {
     }, tq.prototype.update = function(t, e, r, n, i, o, a) {
         var s = i === E,
             u = tp(n, this.entry[0]);
-        return (u ? i === this.entry[1] : s) ? this : (T(a), s) ? void T(o) : u ? t && t === this.ownerID ? (this.entry[1] = i, this) : new tq(t, this.keyHash, [n, i]) : (T(o), tZ(this, t, e, tk(n), [n, i]))
+        return (u ? i === this.entry[1] : s) ? this : (T(a), s) ? void T(o) : u ? t && t === this.ownerID ? (this.entry[1] = i, this) : new tq(t, this.keyHash, [n, i]) : (T(o), tZ(this, t, e, tx(n), [n, i]))
     }, tz.prototype.iterate = tU.prototype.iterate = function(t, e) {
         for (var r = this.entries, n = 0, i = r.length - 1; n <= i; n++)
             if (!1 === t(r[e ? i - n : n])) return !1
@@ -912,8 +912,8 @@ t.exports = function() {
         return q()
     };
     var t3 = 8,
-        t9 = 16,
-        t2 = 8;
+        t2 = 16,
+        t9 = 8;
 
     function t4(t) {
         var e = ea();
@@ -1236,7 +1236,7 @@ t.exports = function() {
         }, e
     }
 
-    function ek(t, e, r) {
+    function ex(t, e, r) {
         var n = eN(t);
         return n.size = t.size, n.has = function(e) {
             return t.has(e)
@@ -1260,7 +1260,7 @@ t.exports = function() {
         }, n
     }
 
-    function ex(t, e) {
+    function ek(t, e) {
         var r = eN(t);
         return r._iter = t, r.size = t.size, r.reverse = function() {
             return t
@@ -1553,7 +1553,7 @@ t.exports = function() {
         var e = this._map.__ensureOwner(t),
             r = this._list.__ensureOwner(t);
         return t ? eg(e, r, t, this.__hash) : (this.__ownerID = t, this._map = e, this._list = r, this)
-    }, eh.isOrderedMap = ed, eh.prototype[x] = !0, eh.prototype[C] = eh.prototype.remove, f(em, X), em.prototype.get = function(t, e) {
+    }, eh.isOrderedMap = ed, eh.prototype[k] = !0, eh.prototype[C] = eh.prototype.remove, f(em, X), em.prototype.get = function(t, e) {
         return this._iter.get(t, e)
     }, em.prototype.has = function(t) {
         return this._iter.has(t)
@@ -1561,13 +1561,13 @@ t.exports = function() {
         return this._iter.valueSeq()
     }, em.prototype.reverse = function() {
         var t = this,
-            e = ex(this, !0);
+            e = ek(this, !0);
         return this._useKeys || (e.valueSeq = function() {
             return t._iter.toSeq().reverse()
         }), e
     }, em.prototype.map = function(t, e) {
         var r = this,
-            n = ek(this, t, e);
+            n = ex(this, t, e);
         return this._useKeys || (n.valueSeq = function() {
             return r._iter.toSeq().map(t, e)
         }), n
@@ -1586,7 +1586,7 @@ t.exports = function() {
             var i = r.next();
             return i.done ? i : U(t, e ? --n : n++, i.value, i)
         })
-    }, em.prototype[x] = !0, f(e_, Y), e_.prototype.includes = function(t) {
+    }, em.prototype[k] = !0, f(e_, Y), e_.prototype.includes = function(t) {
         return this._iter.includes(t)
     }, e_.prototype.__iterate = function(t, e) {
         var r = this,
@@ -1837,9 +1837,9 @@ t.exports = function() {
     }
 
     function e3(t) {
-        return !!(t && t[e9])
+        return !!(t && t[e2])
     }
-    e1[x] = !0, e1.__empty = e5, e1.__make = e6, f(e7, t_), e7.of = function() {
+    e1[k] = !0, e1.__empty = e5, e1.__make = e6, f(e7, t_), e7.of = function() {
         return this(arguments)
     }, e7.prototype.toString = function() {
         return this.__toString("Stack [", "]")
@@ -1901,11 +1901,11 @@ t.exports = function() {
             return q()
         })
     }, e7.isStack = e3;
-    var e9 = "@@__IMMUTABLE_STACK__@@",
-        e2 = e7.prototype;
+    var e2 = "@@__IMMUTABLE_STACK__@@",
+        e9 = e7.prototype;
 
     function e4(t, e, r, n) {
-        var i = Object.create(e2);
+        var i = Object.create(e9);
         return i.size = t, i._head = e, i.__ownerID = r, i.__hash = n, i.__altered = !1, i
     }
 
@@ -1919,7 +1919,7 @@ t.exports = function() {
         };
         return Object.keys(e).forEach(r), Object.getOwnPropertySymbols && Object.getOwnPropertySymbols(e).forEach(r), t
     }
-    e2[e9] = !0, e2.withMutations = tF.withMutations, e2.asMutable = tF.asMutable, e2.asImmutable = tF.asImmutable, e2.wasAltered = tF.wasAltered, p.Iterator = j, rt(p, {
+    e9[e2] = !0, e9.withMutations = tF.withMutations, e9.asMutable = tF.asMutable, e9.asImmutable = tF.asImmutable, e9.wasAltered = tF.wasAltered, p.Iterator = j, rt(p, {
         toArray: function() {
             tB(this.size);
             var t = Array(this.size || 0);
@@ -2049,7 +2049,7 @@ t.exports = function() {
             return this.__iterator(0)
         },
         map: function(t, e) {
-            return eI(this, ek(this, t, e))
+            return eI(this, ex(this, t, e))
         },
         reduce: function(t, e, r) {
             var n, i;
@@ -2062,7 +2062,7 @@ t.exports = function() {
             return n.reduce.apply(n, arguments)
         },
         reverse: function() {
-            return eI(this, ex(this, !0))
+            return eI(this, ek(this, !0))
         },
         slice: function(t, e) {
             return eI(this, eE(this, t, e, !0))
@@ -2243,13 +2243,13 @@ t.exports = function() {
                     i = v(t),
                     o = +!!n;
                 return e = t.__iterate(i ? n ? function(t, e) {
-                    o = 31 * o + rl(tk(t), tk(e)) | 0
+                    o = 31 * o + rl(tx(t), tx(e)) | 0
                 } : function(t, e) {
-                    o = o + rl(tk(t), tk(e)) | 0
+                    o = o + rl(tx(t), tx(e)) | 0
                 } : n ? function(t) {
-                    o = 31 * o + tk(t) | 0
+                    o = 31 * o + tx(t) | 0
                 } : function(t) {
-                    o = o + tk(t) | 0
+                    o = o + tx(t) | 0
                 }), r = tS(r = o, 0xcc9e2d51), r = tS(r << 15 | r >>> -15, 0x1b873593), r = (r = tS(r << 13 | r >>> -13, 5)) + 0xe6546b64 ^ e, r = tS(r ^ r >>> 16, 0x85ebca6b), r = tw((r = tS(r ^ r >>> 13, 0xc2b2ae35)) ^ r >>> 16)
             }(this))
         }
@@ -2367,7 +2367,7 @@ t.exports = function() {
             return void 0 === e ? -1 : e
         },
         reverse: function() {
-            return eI(this, ex(this, !1))
+            return eI(this, ek(this, !1))
         },
         slice: function(t, e) {
             return eI(this, eE(this, t, e, !1))
@@ -2433,7 +2433,7 @@ t.exports = function() {
             var e = A(arguments);
             return e[0] = this, eI(this, eA(this, t, e))
         }
-    }), d.prototype[k] = !0, d.prototype[x] = !0, rt(g, {
+    }), d.prototype[x] = !0, d.prototype[k] = !0, rt(g, {
         get: function(t, e) {
             return this.has(t) ? t : e
         },

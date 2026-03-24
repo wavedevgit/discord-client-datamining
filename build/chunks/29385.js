@@ -48,19 +48,19 @@ t.exports = function(t, e) {
         b = t._latestEditorState;
     if (!(t.props.handlePastedText && p(t.props.handlePastedText(m, _, b)))) {
         if (m && (v = h(m)), !t.props.stripPastedStyles) {
-            var S, w, k = t.getClipboard();
-            if (r.isRichText() && k) {
-                if (-1 !== _.indexOf(t.getEditorKey()) || 1 === v.length && 1 === k.size && k.first().getText() === m) return void t.update(d(t._latestEditorState, k))
+            var S, w, x = t.getClipboard();
+            if (r.isRichText() && x) {
+                if (-1 !== _.indexOf(t.getEditorKey()) || 1 === v.length && 1 === x.size && x.first().getText() === m) return void t.update(d(t._latestEditorState, x))
             } else {
-                if (k && r.types.includes("com.apple.webarchive") && !r.types.includes("text/html") && (S = v, w = k, S.length === w.size && w.valueSeq().every(function(t, e) {
+                if (x && r.types.includes("com.apple.webarchive") && !r.types.includes("text/html") && (S = v, w = x, S.length === w.size && w.valueSeq().every(function(t, e) {
                         return t.getText() === S[e]
-                    }))) return void t.update(d(t._latestEditorState, k))
+                    }))) return void t.update(d(t._latestEditorState, x))
             }
             if (_) {
-                var x = s.processHTML(_, t.props.blockRenderMap);
-                if (x) {
-                    var C = x.contentBlocks,
-                        E = x.entityMap;
+                var k = s.processHTML(_, t.props.blockRenderMap);
+                if (k) {
+                    var C = k.contentBlocks,
+                        E = k.entityMap;
                     if (C) {
                         var O = n.createFromArray(C);
                         t.update(d(t._latestEditorState, O, E));

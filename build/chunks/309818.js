@@ -1,11 +1,11 @@
 /** chunk id: 309818 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => I
 }), n(321073);
 var i = n(627968),
-    r = n(64700),
-    a = n(284009),
-    l = n.n(a),
+    a = n(64700),
+    r = n(284009),
+    l = n.n(r),
     s = n(158954),
     o = n(311907),
     d = n(846293),
@@ -21,29 +21,29 @@ var i = n(627968),
     f = n(985018),
     C = n(563111);
 
-function E(e) {
+function I(e) {
     let t, {
             invite: n,
-            message: a,
-            currentUserId: E,
-            onTransitionToInviteChannel: I,
+            message: r,
+            currentUserId: I,
+            onTransitionToInviteChannel: E,
             onAcceptInstantInvite: v
         } = e,
-        b = E === a.author.id,
+        b = I === r.author.id,
         T = n.state === x.elq.ACCEPTING,
         y = (0, o.bG)([h.A], () => null != n.channel ? h.A.getChannel(n.channel.id) : null, [n]);
     l()(null == y || y.isPrivate(), "must be a private channel");
     let {
         analyticsLocations: S
-    } = (0, u.Ay)(c.A.INVITE_EMBED), N = null != y, j = r.useCallback(() => {
+    } = (0, u.Ay)(c.A.INVITE_EMBED), N = null != y, j = a.useCallback(() => {
         let e = "noop";
-        N ? (I(), e = "transition") : (v(), e = "accept"), (0, d.he)({
+        N ? (E(), e = "transition") : (v(), e = "accept"), (0, d.he)({
             invite: n,
             action: e,
-            inviter_id: a.author.id,
-            invite_message_id: a.id
+            inviter_id: r.author.id,
+            invite_message_id: r.id
         }, S)
-    }, [n, a, S, N, I, v]);
+    }, [n, r, S, N, E, v]);
     if (null == y) {
         if (null == n.channel) return (0, i.jsx)(A.A, {});
         y = (0, m.OY)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
@@ -60,10 +60,10 @@ function E(e) {
     let R = f.intl.string(f.t.XpeFYr),
         P = "active";
     N && (R = f.intl.string(f.t.cEnaWx), P = "secondary");
-    let M = f.intl.string(f.t["3p3/BK"]);
-    return b && (M = f.intl.string(f.t.qmtuXE)), (0, i.jsxs)(_.A, {
+    let w = f.intl.string(f.t["3p3/BK"]);
+    return b && (w = f.intl.string(f.t.qmtuXE)), (0, i.jsxs)(_.A, {
         children: [(0, i.jsx)(_.A.Header, {
-            text: M
+            text: w
         }), (0, i.jsxs)(_.A.Body, {
             children: [(0, i.jsxs)("div", {
                 className: C.iH,

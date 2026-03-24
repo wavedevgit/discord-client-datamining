@@ -1,11 +1,11 @@
 /** chunk id: 284605 params = (module,exports,require) **/
 n.d(t, {
-    i: () => E
+    i: () => I
 });
 var i = n(627968);
 n(64700);
-var r = n(417597),
-    a = n(732955),
+var a = n(417597),
+    r = n(732955),
     l = n(492749),
     s = n(827186),
     o = n(465932),
@@ -22,12 +22,12 @@ var r = n(417597),
     f = n(10979),
     C = n(652215);
 
-function E(e) {
+function I(e) {
     let {
         guildProductListing: t,
         guildId: n,
-        location: E,
-        shouldShowFullDescriptionButton: I = !0,
+        location: I,
+        shouldShowFullDescriptionButton: E = !0,
         hideRoleTag: v = !1,
         lineClamp: b = 1,
         cardWidth: T,
@@ -35,29 +35,29 @@ function E(e) {
         thumbnailHeight: S,
         descriptionTextVariant: N = "text-sm/normal",
         showOpaqueBackground: j = !1
-    } = e, L = (0, r.bG)([c.A], () => c.A.getGuild(n), [n]), R = (0, r.bG)([d.A], () => d.A.getRole(n, t?.role_id ?? C.dJq)), P = (0, l.R)(t, 600), M = (0, g.z)(t), w = (0, _.BB)(L), {
+    } = e, L = (0, a.bG)([c.A], () => c.A.getGuild(n), [n]), R = (0, a.bG)([d.A], () => d.A.getRole(n, t?.role_id ?? C.dJq)), P = (0, l.R)(t, 600), w = (0, g.z)(t), M = (0, _.BB)(L), {
         shouldHideGuildPurchaseEntryPoints: D
     } = (0, o.MH)(n), k = (0, g.X)(t), O = (0, x.A)({
         guildId: n,
         guildProductListingId: t.id,
-        sourceAnalyticsLocations: E
+        sourceAnalyticsLocations: I
     });
     if (null == L || D) return null;
     let U = () => (0, f.M)({
             guildId: n,
             guildProductListingId: t.id,
-            analyticsLocation: E
+            analyticsLocation: I
         }),
         B = (0, i.jsx)(A.i, {
             product: t,
             guildId: n,
-            showEditProduct: w,
+            showEditProduct: M,
             showUnpublishProduct: !1,
             showCopyLink: !0,
             showTestDownload: !1,
             showDeleteProduct: !1,
             showReportProduct: !0,
-            onEditProduct: w ? () => {
+            onEditProduct: M ? () => {
                 h.q(L.id, t.id)
             } : () => {},
             onUnpublishProduct: () => {},
@@ -78,11 +78,11 @@ function E(e) {
         description: t.description,
         formattedPrice: k,
         role: R,
-        ctaComponent: (0, i.jsx)(a.$nd, {
+        ctaComponent: (0, i.jsx)(r.$nd, {
             ...O
         }),
-        productType: M,
-        shouldShowFullDescriptionButton: I,
+        productType: w,
+        shouldShowFullDescriptionButton: E,
         onShowFullDescription: U,
         onTapCard: U,
         actionMenu: B,

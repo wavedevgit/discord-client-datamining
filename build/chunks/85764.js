@@ -37,7 +37,7 @@ t.exports = function(t) {
             c = r.getDecorator();
         return i !== o || a !== s || u !== c || r.mustForceSelection()
     }, r.render = function() {
-        for (var t = this.props, e = t.blockRenderMap, r = t.blockRendererFn, n = t.blockStyleFn, f = t.customStyleMap, p = t.customStyleFn, h = t.editorState, d = t.editorKey, g = t.preventScroll, y = t.textDirectionality, v = h.getCurrentContent(), m = h.getSelection(), _ = h.mustForceSelection(), b = h.getDecorator(), S = l(h.getDirectionMap()), w = v.getBlocksAsArray(), k = [], x = null, C = null, E = 0; E < w.length; E++) {
+        for (var t = this.props, e = t.blockRenderMap, r = t.blockRendererFn, n = t.blockStyleFn, f = t.customStyleMap, p = t.customStyleFn, h = t.editorState, d = t.editorKey, g = t.preventScroll, y = t.textDirectionality, v = h.getCurrentContent(), m = h.getSelection(), _ = h.mustForceSelection(), b = h.getDecorator(), S = l(h.getDirectionMap()), w = v.getBlocksAsArray(), x = [], k = null, C = null, E = 0; E < w.length; E++) {
             var O = w[E],
                 D = O.getKey(),
                 K = O.getType(),
@@ -71,7 +71,7 @@ t.exports = function(t) {
             (n && (j = n(O)), "li" === z) && (j = c(j, u({
                 "public/DraftStyleDefault/unorderedListItem": "unordered-list-item" === K,
                 "public/DraftStyleDefault/orderedListItem": "ordered-list-item" === K,
-                "public/DraftStyleDefault/reset": C !== F || null === x || P > x,
+                "public/DraftStyleDefault/reset": C !== F || null === k || P > k,
                 "public/DraftStyleDefault/depth0": 0 === P,
                 "public/DraftStyleDefault/depth1": 1 === P,
                 "public/DraftStyleDefault/depth2": 2 === P,
@@ -112,18 +112,18 @@ t.exports = function(t) {
             var H = s.createElement(z, q, s.createElement(U, i({}, R, {
                 key: D
             })));
-            k.push({
+            x.push({
                 block: H,
                 wrapperTemplate: F,
                 key: D,
                 offsetKey: L
-            }), x = F ? O.getDepth() : null, C = F
+            }), k = F ? O.getDepth() : null, C = F
         }
-        for (var W = [], V = 0; V < k.length;) {
-            var G = k[V];
+        for (var W = [], V = 0; V < x.length;) {
+            var G = x[V];
             if (G.wrapperTemplate) {
                 var J = [];
-                do J.push(k[V].block), V++; while (V < k.length && k[V].wrapperTemplate === G.wrapperTemplate);
+                do J.push(x[V].block), V++; while (V < x.length && x[V].wrapperTemplate === G.wrapperTemplate);
                 var X = s.cloneElement(G.wrapperTemplate, {
                     key: G.key + "-wrap",
                     "data-offset-key": G.offsetKey

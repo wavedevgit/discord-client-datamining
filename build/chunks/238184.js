@@ -1,14 +1,15 @@
 /** chunk id: 238184 params = (module,exports,require) **/
-a.d(t, {
-    A: () => s
+"use strict";
+r.d(t, {
+    A: () => a
 });
-var l = a(492462),
-    n = a(873263),
-    r = a(758836);
-let s = () => {
-    let e = (0, n.zy)(),
+var n = r(492462),
+    i = r(873263),
+    s = r(758836);
+let a = () => {
+    let e = (0, i.zy)(),
         {
             tab: t
-        } = (0, l.parse)(e.search);
-    if (Object.values(r.G2).includes(t)) return t
+        } = (0, n.parse)(e.search);
+    if (Object.values(s.G2).includes(t)) return t
 }

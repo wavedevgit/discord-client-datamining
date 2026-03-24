@@ -3,8 +3,8 @@ n.d(t, {
     A: () => h
 });
 var i = n(627968),
-    r = n(503698),
-    a = n.n(r),
+    a = n(503698),
+    r = n.n(a),
     l = n(311907),
     s = n(397927),
     o = n(402216),
@@ -18,7 +18,7 @@ function h(e) {
     let {
         stream: t,
         currentUserId: n,
-        className: r,
+        className: a,
         onClick: h
     } = e, p = (0, l.bG)([_.A], () => _.A.getActiveStreamForApplicationStream(t), [t]), {
         previewUrl: g,
@@ -26,9 +26,9 @@ function h(e) {
     } = (0, d.A)(t.guildId, t.channelId, t.ownerId);
     return (0, i.jsxs)(s.DUT, {
         onClick: h,
-        className: a()(m.Um, {
+        className: r()(m.Um, {
             [m.qf]: null == g && !A
-        }, r),
+        }, a),
         children: [(0, i.jsx)("div", {
             className: m.rB,
             children: (0, i.jsx)(u.A, {

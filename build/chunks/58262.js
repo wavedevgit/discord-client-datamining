@@ -3,8 +3,8 @@ n.d(t, {
     A: () => C
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(158954),
+    a = n(64700),
+    r = n(158954),
     l = n(311907),
     s = n(308528),
     o = n(846293),
@@ -25,9 +25,9 @@ function C(e) {
         invite: t,
         message: n,
         getAcceptInviteContext: C
-    } = e, E = (0, l.bG)([m.default], () => m.default.getId()), I = t.inviter?.id === E, v = t.state === A.elq.ACCEPTING, {
+    } = e, I = (0, l.bG)([m.default], () => m.default.getId()), E = t.inviter?.id === I, v = t.state === A.elq.ACCEPTING, {
         analyticsLocations: b
-    } = (0, c.Ay)(d.A.INVITE_EMBED), T = (0, l.bG)([p.A], () => null != t.inviter && p.A.isFriend(t.inviter?.id)), y = r.useCallback(() => {
+    } = (0, c.Ay)(d.A.INVITE_EMBED), T = (0, l.bG)([p.A], () => null != t.inviter && p.A.isFriend(t.inviter?.id)), y = a.useCallback(() => {
         let e = "noop";
         null != t.inviter && null != h.A.getDMFromUserId(t.inviter.id) && (e = "transition", s.A.openPrivateChannel({
             recipientIds: [t.inviter.id]
@@ -37,7 +37,7 @@ function C(e) {
             inviter_id: n.author.id,
             invite_message_id: n.id
         }, b)
-    }, [t, n, b]), S = r.useCallback(() => {
+    }, [t, n, b]), S = a.useCallback(() => {
         (0, o.he)({
             invite: t,
             action: "accept",
@@ -54,10 +54,10 @@ function C(e) {
     let N = T ? y : S,
         j = x.intl.string(x.t.ib7Ng1),
         L = "active";
-    T ? (j = x.intl.string(x.t.xhxnPn), L = "secondary") : I && (j = x.intl.string(x.t.ib7Ng1), L = "secondary");
-    let R = I ? x.intl.string(x.t.eQyu1F) : x.intl.string(x.t.PYJHW6),
+    T ? (j = x.intl.string(x.t.xhxnPn), L = "secondary") : E && (j = x.intl.string(x.t.ib7Ng1), L = "secondary");
+    let R = E ? x.intl.string(x.t.eQyu1F) : x.intl.string(x.t.PYJHW6),
         P = null != t.inviter ? `${t.inviter.username}` : "",
-        M = null != t.inviter ? g.Ay.getUserTag(t.inviter) : "";
+        w = null != t.inviter ? g.Ay.getUserTag(t.inviter) : "";
     return (0, i.jsxs)(u.A, {
         children: [(0, i.jsx)(u.A.Header, {
             text: R
@@ -70,13 +70,13 @@ function C(e) {
                 }), (0, i.jsx)(u.A.Info, {
                     title: P,
                     onClick: T ? N : void 0,
-                    children: M
+                    children: w
                 })]
-            }), (0, i.jsx)(a.$nd, {
+            }), (0, i.jsx)(r.$nd, {
                 onClick: N,
                 text: j,
                 loading: v,
-                disabled: I,
+                disabled: E,
                 variant: L
             })]
         })]

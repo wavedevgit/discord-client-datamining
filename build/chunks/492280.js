@@ -1,7 +1,7 @@
 /** chunk id: 492280 params = (module,exports,require) **/
 n.d(t, {
     E: () => u,
-    l: () => m
+    l: () => g
 });
 var i = n(627968);
 n(64700);
@@ -31,44 +31,44 @@ function c(e) {
 function u(e) {
     let {
         applicationId: t,
-        size: n = "default",
-        className: l
+        className: n,
+        gridClassName: l
     } = e;
-    return (0, i.jsxs)("div", {
-        className: a()(d.kL, d.Yi, {
-            [d.PG]: "small" === n,
-            [d.$g]: "medium" === n
-        }, l),
+    return (0, i.jsx)("div", {
+        className: a()(d.kL, n),
         "aria-hidden": !0,
-        children: [null != t ? (0, i.jsx)(c, {
-            applicationId: t
-        }) : (0, i.jsx)("div", {
-            className: o.mD
-        }), (0, i.jsxs)("div", {
-            className: d.RC,
-            children: [(0, i.jsx)("div", {
-                className: d.h$
-            }), (0, i.jsx)("div", {
-                className: d.h$
+        children: (0, i.jsxs)("div", {
+            className: a()(d.Yi, l),
+            children: [null != t ? (0, i.jsx)(c, {
+                applicationId: t
+            }) : (0, i.jsx)("div", {
+                className: o.mD
+            }), (0, i.jsxs)("div", {
+                className: d.RC,
+                children: [(0, i.jsx)("div", {
+                    className: d.h$
+                }), (0, i.jsx)("div", {
+                    className: d.h$
+                })]
             })]
-        })]
+        })
     })
 }
 
-function m(e) {
+function g(e) {
     let {
         applicationIds: t,
-        size: n = "default",
-        className: l
-    } = e, s = "small" === n ? t.slice(0, 3) : t.slice(0, 4);
+        className: n,
+        gridClassName: l
+    } = e;
     return (0, i.jsx)("div", {
-        className: a()(d.kL, d.Nu, {
-            [d.PG]: "small" === n,
-            [d.$g]: "medium" === n
-        }, l),
+        className: a()(d.kL, n),
         "aria-hidden": !0,
-        children: s.map((e, t) => (0, i.jsx)(c, {
-            applicationId: e
-        }, t))
+        children: (0, i.jsx)("div", {
+            className: a()(d.Nu, l),
+            children: t.slice(0, 4).map((e, t) => (0, i.jsx)(c, {
+                applicationId: e
+            }, t))
+        })
     })
 }

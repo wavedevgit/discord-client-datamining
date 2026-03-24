@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(990078),
-    a = n(397927),
+var a = n(990078),
+    r = n(397927),
     l = n(235986),
     s = n(455207),
     o = n(985018),
@@ -23,22 +23,22 @@ let c = () => (0, i.jsxs)(l.A, {
         align: l.A.Align.CENTER,
         justify: l.A.Justify.CENTER,
         className: d.Bm,
-        children: [(0, i.jsx)(r.m, {
+        children: [(0, i.jsx)(a.m, {
             text: o.intl.string(o.t.oMx98L),
             children: (0, i.jsx)("div", {
                 className: d.io
             })
-        }), (0, i.jsx)(a.Heading, {
+        }), (0, i.jsx)(r.Heading, {
             className: d.wx,
             variant: "heading-md/semibold",
             children: o.intl.string(o.t.xfAlNx)
         })]
-    }), (0, i.jsx)(a.Text, {
+    }), (0, i.jsx)(r.Text, {
         className: d.h_,
         color: "text-default",
         variant: "text-sm/normal",
         children: o.intl.string(o.t.BUZ0sl)
-    }), (0, i.jsx)(a.Text, {
+    }), (0, i.jsx)(r.Text, {
         className: d.h_,
         color: "text-default",
         variant: "text-sm/normal",

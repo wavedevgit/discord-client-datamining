@@ -16,8 +16,8 @@ function u(e) {
         title: t,
         variant: n = "secondary",
         handleOpenCollectiblesShop: u,
-        handleOpenGameShop: m,
-        handleAddNitroToWishlist: g,
+        handleOpenGameShop: g,
+        handleAddNitroToWishlist: m,
         socialLayerStorefrontApplicationIds: x
     } = e, p = l.useRef(null), [f, h] = l.useState(!1), _ = function(e) {
         let {
@@ -52,7 +52,7 @@ function u(e) {
         }), [t, n])
     }({
         applications: (0, s.A)(x),
-        handleOpenGameShop: m
+        handleOpenGameShop: g
     }), A = l.useMemo(() => (0, i.jsxs)(a.rXV, {
         children: [null != u && (0, i.jsx)(a.Drp, {
             id: "browse-collectibles-shop",
@@ -63,7 +63,7 @@ function u(e) {
                 icon: a.U1X
             },
             action: u
-        }), null != m && _.map(e => {
+        }), null != g && _.map(e => {
             let {
                 id: t,
                 label: n,
@@ -78,7 +78,7 @@ function u(e) {
                 leadingAccessory: s,
                 action: r
             }, t)
-        }), null != g && (0, i.jsx)(a.Drp, {
+        }), null != m && (0, i.jsx)(a.Drp, {
             id: "add-nitro-to-wishlist",
             label: d.intl.string(d.t.lG6a5x),
             iconLeft: a.tvc,
@@ -86,9 +86,9 @@ function u(e) {
                 type: "icon",
                 icon: a.tvc
             },
-            action: g
+            action: m
         })]
-    }), [u, m, g, _]);
+    }), [u, g, m, _]);
     return (0, i.jsx)(a.YNO, {
         targetElementRef: p,
         position: "bottom",

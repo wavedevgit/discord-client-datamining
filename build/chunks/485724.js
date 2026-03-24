@@ -4,8 +4,8 @@ n.d(t, {
     W: () => U
 }), n(321073), n(134528), n(947204);
 var i = n(627968),
-    r = n(64700),
-    a = n(485845),
+    a = n(64700),
+    r = n(485845),
     l = n(379834),
     s = n(311907),
     o = n(397927),
@@ -21,8 +21,8 @@ var i = n(627968),
     x = n(207371),
     f = n(205184),
     C = n(773669),
-    E = n(961350),
-    I = n(734057),
+    I = n(961350),
+    E = n(734057),
     v = n(994500),
     b = n(967198),
     T = n(287809),
@@ -33,8 +33,8 @@ var i = n(627968),
     L = n(178910),
     R = n(354287),
     P = n(138175),
-    M = n(112150),
-    w = n(574660),
+    w = n(112150),
+    M = n(574660),
     D = n(768349),
     k = n(985018),
     O = n(22658);
@@ -43,7 +43,7 @@ function U(e) {
     let {
         app: t,
         linkType: n,
-        activityCustomId: a,
+        activityCustomId: r,
         activityReferrerId: l,
         message: o,
         onView: g
@@ -58,7 +58,7 @@ function U(e) {
         staticBannerSrc: S,
         videoBannerSrc: L,
         bannerAspectRatio: D
-    } = (0, M.f)(t), O = (0, s.bG)([E.default], () => l ?? E.default.getId(), [l]), {
+    } = (0, w.f)(t), O = (0, s.bG)([I.default], () => l ?? I.default.getId(), [l]), {
         analyticsLocations: U
     } = (0, _.Ay)(u.A.APP_MESSAGE_EMBED), {
         currentChannelId: F,
@@ -71,7 +71,7 @@ function U(e) {
         },
         applicationId: t.id,
         botUserId: C?.id
-    }), z = null != v && b && Y, Q = q && b, K = (0, x.e)(t), J = (0, w.F)(t), X = (0, w.t)(t), Z = r.useMemo(() => {
+    }), z = null != v && b && Y, Q = q && b, K = (0, x.e)(t), J = (0, M.F)(t), X = (0, M.t)(t), Z = a.useMemo(() => {
         let e = [];
         return b ? K ? e.push({
             label: k.intl.string(k.t.RscU7I),
@@ -90,7 +90,7 @@ function U(e) {
                     applicationId: t.id,
                     isStart: null == H,
                     embeddedActivitiesManager: W,
-                    customId: a,
+                    customId: r,
                     referrerId: O,
                     analyticsLocations: U
                 })
@@ -104,12 +104,12 @@ function U(e) {
                     appId: t.id,
                     botId: v,
                     analyticsLocations: U,
-                    customId: a,
+                    customId: r,
                     referrerId: O
                 })
             }
         })) : null != X && e.push(X), e
-    }, [b, X, K, t.id, Q, z, H, V, F, W, a, O, U, v]), $ = b ? (0, i.jsx)(G, {
+    }, [b, X, K, t.id, Q, z, H, V, F, W, r, O, U, v]), $ = b ? (0, i.jsx)(G, {
         app: t
     }) : (0, i.jsx)(B, {
         app: t
@@ -128,9 +128,9 @@ function U(e) {
             id: t.id,
             linkType: n,
             referrerId: O,
-            activityCustomId: a,
+            activityCustomId: r,
             onView: g,
-            guildId: I.A.getChannel(o.channel_id)?.guild_id,
+            guildId: E.A.getChannel(o.channel_id)?.guild_id,
             channelId: o.channel_id,
             messageId: o.id
         }
@@ -144,7 +144,7 @@ function B(e) {
         customInstallUrl: t.customInstallUrl,
         installParams: t.installParams,
         integrationTypesConfig: t.integrationTypesConfig
-    }) && null != t.integrationTypesConfig && a.b.GUILD_INSTALL in t.integrationTypesConfig, l = (0, s.bG)([C.default], () => C.default.locale, []), d = r.useMemo(() => {
+    }) && null != t.integrationTypesConfig && r.b.GUILD_INSTALL in t.integrationTypesConfig, l = (0, s.bG)([C.default], () => C.default.locale, []), d = a.useMemo(() => {
         if (!n) return null;
         let e = new Intl.NumberFormat(l, {
                 notation: "compact",
@@ -179,17 +179,17 @@ function G(e) {
         app: t
     } = e, {
         tags: n,
-        maxParticipants: a = 0
+        maxParticipants: r = 0
     } = t, d = (0, s.bG)([b.A], () => b.A.getGuildId() ?? void 0, []), c = (0, f.s)(t.id), u = (0, s.yK)([T.default, v.A], () => {
         let e = [];
         for (let [t, n] of c.entries()) {
             if (t >= 5) break;
             let i = T.default.getUser(n.author_id),
-                r = v.A.isFriend(n.author_id);
-            null != i && r && e.push(i)
+                a = v.A.isFriend(n.author_id);
+            null != i && a && e.push(i)
         }
         return e
-    }, [c]), _ = r.useMemo(() => {
+    }, [c]), _ = a.useMemo(() => {
         if (u.length > 0) return (0, i.jsx)(L.$, {
             activityUsers: u,
             guildId: d,
@@ -203,8 +203,8 @@ function G(e) {
                 color: "currentColor"
             }), k.intl.string(k.t.TsWCdW)]
         });
-        let e = a > 0 ? k.intl.format(k.t.z8EAJW, {
-            count: a
+        let e = r > 0 ? k.intl.format(k.t.z8EAJW, {
+            count: r
         }) : k.intl.string(k.t.RjceQU);
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.nys, {
@@ -212,7 +212,7 @@ function G(e) {
                 color: "currentColor"
             }), e]
         })
-    }, [c, u, d, a]);
+    }, [c, u, d, r]);
     return (0, i.jsxs)(i.Fragment, {
         children: [n.length > 0 && (0, i.jsx)(o.Text, {
             variant: "text-xs/medium",

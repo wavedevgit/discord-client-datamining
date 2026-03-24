@@ -10,7 +10,7 @@ var i = n(378729),
     o = n(985018),
     d = n(79220);
 let c = (0, l.zD)(r.X.GAME_UPDATE_NOTIFICATIONS, {
-    useTitle: () => o.intl.string(d.default["3TO4/r"]),
+    useTitle: () => o.intl.string(d.default["ZZIP+o"]),
     useValue: a.JV.useSetting,
     setValue: s.l,
     usePredicate: () => (0, i.e)("SettingsRendererConfig").showToggle

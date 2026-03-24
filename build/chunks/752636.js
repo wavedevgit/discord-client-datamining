@@ -3,16 +3,16 @@ n.d(t, {
     A: () => o
 });
 var i = n(627968),
-    r = n(64700),
-    a = n(143413),
+    a = n(64700),
+    r = n(143413),
     l = n(643204);
-let s = r.memo(l.Ay);
+let s = a.memo(l.Ay);
 
 function o(e) {
     let {
         message: t,
         channel: n,
-        author: r,
+        author: a,
         compact: l,
         animateAvatar: o,
         guildId: d,
@@ -22,10 +22,10 @@ function o(e) {
         hideGuildTag: m,
         preview: h
     } = e;
-    return !(0, a.A)(t) && (c || l) ? (0, i.jsx)(s, {
+    return !(0, r.A)(t) && (c || l) ? (0, i.jsx)(s, {
         message: t,
         channel: n,
-        author: r,
+        author: a,
         guildId: d,
         compact: l,
         animate: o,

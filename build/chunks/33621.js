@@ -1,10 +1,10 @@
 /** chunk id: 33621 params = (module,exports,require) **/
 n.d(t, {
-    t: () => a
+    t: () => r
 });
 var i = n(945810),
-    r = n(79545);
-let a = (0, i.mj)({
+    a = n(79545);
+let r = (0, i.mj)({
     name: "2025-12-quest-cta-refactor-rollout",
     kind: "user",
     defaultConfig: {
@@ -14,11 +14,11 @@ let a = (0, i.mj)({
     variations: {
         1: {
             enabled: !0,
-            enabledQuestStates: new Set([r.UA.UNENROLLED])
+            enabledQuestStates: new Set([a.UA.UNENROLLED])
         },
         2: {
             enabled: !0,
-            enabledQuestStates: new Set([r.UA.UNENROLLED, r.UA.ENROLLED])
+            enabledQuestStates: new Set([a.UA.UNENROLLED, a.UA.ENROLLED])
         }
     }
 })

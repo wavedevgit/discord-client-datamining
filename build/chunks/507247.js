@@ -12,7 +12,7 @@ function a(e) {
         renderGame: n
     } = e;
     return (0, i.jsx)("ul", {
-        className: l.G,
+        className: l.V,
         children: t.map((e, t) => (0, i.jsx)("li", {
             children: n(e, t)
         }, e.applicationId))

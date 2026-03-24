@@ -12,9 +12,9 @@ var l = n(311907),
     d = n(253798),
     c = n(622249),
     u = n(676526),
-    m = n(192);
+    g = n(192);
 
-function g(e) {
+function m(e) {
     let {
         games: t,
         ...n
@@ -42,11 +42,11 @@ function x(e) {
         games: u
     } = e, x = (0, l.bG)([a.default], () => a.default.getId() === t), {
         getManageButtonForWidget: p
-    } = (0, m.r)(), f = p(n), {
+    } = (0, g.r)(), f = p(n), {
         expanded: h,
         setExpanded: _
     } = (0, d.B)(), A = h ? u : u.slice(0, 8), I = u.length > 8, j = (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(g, {
+        children: [(0, i.jsx)(m, {
             ...e,
             games: A
         }), I && (0, i.jsx)(c.A, {

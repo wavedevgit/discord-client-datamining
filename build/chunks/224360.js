@@ -1,6 +1,6 @@
 /** chunk id: 224360 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => h
 });
 var i = n(627968);
 n(64700);
@@ -12,13 +12,12 @@ var l = n(503698),
     d = n(915089),
     c = n(152621),
     u = n(61881),
-    m = n(788593),
-    g = n(507247),
-    x = n(985018),
-    p = n(461349),
-    f = n(105778);
+    g = n(788593),
+    m = n(985018),
+    x = n(461349),
+    p = n(105778);
 
-function h(e) {
+function f(e) {
     let {
         applicationId: t,
         userId: n,
@@ -26,21 +25,21 @@ function h(e) {
     } = e, {
         coverImageUrl: a,
         gameName: d,
-        isLoading: g
-    } = (0, c.A)(t), h = (0, s.bG)([u.A], () => u.A.suggestedFetchIsLoading), _ = x.intl.formatToPlainString(x.t["3mb1s5"], {
+        isLoading: f
+    } = (0, c.A)(t), h = (0, s.bG)([u.A], () => u.A.suggestedFetchIsLoading), _ = m.intl.formatToPlainString(m.t["3mb1s5"], {
         game: d
     });
-    return g || h ? (0, i.jsx)("div", {
-        className: p.mD
+    return f || h ? (0, i.jsx)("div", {
+        className: x.mD
     }) : (0, i.jsx)(r.m, {
         text: _,
         ariaHidden: !0,
         children: (0, i.jsxs)(o.DUT, {
-            className: f.c9,
+            className: p.c9,
             onClick: l,
             "aria-label": _,
-            children: [(0, i.jsx)(m.A, {
-                className: f.Iv,
+            children: [(0, i.jsx)(g.A, {
+                className: p.Iv,
                 imageSrc: a,
                 gameName: d,
                 applicationId: t,
@@ -48,14 +47,14 @@ function h(e) {
                 disableInteraction: !0
             }), (0, i.jsx)(o.pa$, {
                 size: "md",
-                className: f.Xv,
+                className: p.Xv,
                 color: o.LU0.colors.WHITE
             })]
         })
     })
 }
 
-function _(e) {
+function h(e) {
     let {
         userId: t,
         games: n,
@@ -64,13 +63,13 @@ function _(e) {
         className: r
     } = e, c = (0, d.GV)();
     return (0, i.jsxs)("aside", {
-        className: a()(f.kL, r),
+        className: a()(p.kL, r),
         "aria-labelledby": c,
         children: [(0, i.jsxs)("div", {
-            className: f.wx,
+            className: p.wx,
             children: [(0, i.jsx)(o.DUT, {
-                className: f.r,
-                "aria-label": x.intl.string(x.t["pUR+3g"]),
+                className: p.r,
+                "aria-label": m.intl.string(m.t["pUR+3g"]),
                 onClick: l,
                 children: (0, i.jsx)(o.PGe, {
                     size: "sm",
@@ -80,20 +79,22 @@ function _(e) {
                 id: c,
                 variant: "text-xs/medium",
                 color: "text-subtle",
-                children: x.intl.string(x.t.zMUr6Z)
+                children: m.intl.string(m.t.zMUr6Z)
             })]
-        }), (0, i.jsx)(g.A, {
-            games: n,
-            renderGame: e => {
+        }), (0, i.jsx)("ul", {
+            className: p.Vg,
+            children: n.map(e => {
                 let {
                     applicationId: n
                 } = e;
-                return (0, i.jsx)(h, {
-                    onClick: () => s(n),
-                    userId: t,
-                    applicationId: n
-                })
-            }
+                return (0, i.jsx)("li", {
+                    children: (0, i.jsx)(f, {
+                        onClick: () => s(n),
+                        userId: t,
+                        applicationId: n
+                    })
+                }, n)
+            })
         })]
     })
 }

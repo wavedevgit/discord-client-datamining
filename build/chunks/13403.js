@@ -1,10 +1,10 @@
 /** chunk id: 13403 params = (module,exports,require) **/
 n.d(t, {
-    A: () => M
+    A: () => w
 }), n(321073);
 var i = n(627968),
-    r = n(64700),
-    a = n(311907),
+    a = n(64700),
+    r = n(311907),
     l = n(554146),
     s = n(342494),
     o = n(397927),
@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(692969),
     f = n(928550),
     C = n(760751),
-    E = n(320501),
-    I = n(139675),
+    I = n(320501),
+    E = n(139675),
     v = n(486020),
     b = n(456060),
     T = n(659051),
@@ -33,9 +33,9 @@ var i = n(627968),
     R = n(49999),
     P = n(985018);
 
-function M(e) {
+function w(e) {
     var t, n;
-    let M, w, {
+    let w, M, {
             analyticsLocations: D,
             application: k,
             channel: O,
@@ -56,7 +56,7 @@ function M(e) {
                 bot: n
             } = t;
             return {
-                iconSrc: (e.activity?.icon_override != null ? (0, I.uD)(t.id, e.activity?.icon_override) : null) ?? v.Ay.getApplicationIconURL({
+                iconSrc: (e.activity?.icon_override != null ? (0, E.uD)(t.id, e.activity?.icon_override) : null) ?? v.Ay.getApplicationIconURL({
                     id: t.id,
                     icon: t.icon,
                     bot: n
@@ -72,24 +72,24 @@ function M(e) {
         {
             openGameProfileModal: K,
             launchableAppId: J
-        } = (t = k.id, n = F.author.id, M = (0, f.d)(t), w = (0, a.bG)([m.A, C.A], () => {
+        } = (t = k.id, n = F.author.id, w = (0, f.d)(t), M = (0, r.bG)([m.A, C.A], () => {
             let e = m.A.getApplication(t);
             return null != e ? C.A.getGameByApplication(e) : null
         }, [t]), {
             openGameProfileModal: (0, x.A)({
                 location: "Rich Presence Activity Invite Embed",
-                applicationId: w?.id ?? void 0,
+                applicationId: M?.id ?? void 0,
                 source: A.Ob.Embed,
                 trackEntryPointImpression: !0,
                 sourceUserId: n
             }),
-            launchableAppId: M
+            launchableAppId: w
         }),
         X = (0, S.A)({
             application: k,
             analyticsLocations: D
         }),
-        Z = r.useMemo(() => {
+        Z = a.useMemo(() => {
             if (null != X) return {
                 label: P.intl.string(P.t["jaYS/h"]),
                 icon: o.hpF,
@@ -98,20 +98,20 @@ function M(e) {
             }
         }, [X]),
         $ = (0, p.F)(k),
-        ee = r.useMemo(() => null != K ? K : null != $ && W ? $ : void 0, [W, K, $]),
+        ee = a.useMemo(() => null != K ? K : null != $ && W ? $ : void 0, [W, K, $]),
         et = c.A.useConfig({
             location: "RichPresenceGameActivityInviteEmbed"
         }),
         {
             canStartAuthorization: en,
             hasAlreadyLinked: ei,
-            startAuthorization: er
+            startAuthorization: ea
         } = (0, _.RD)(k),
-        ea = (0, u.z)(er, ei),
+        er = (0, u.z)(ea, ei),
         el = !(0, T.A)(q, F, k.id),
         es = (0, b.n$)(z, F.activity?.type, el),
-        eo = r.useRef(null),
-        ed = (0, a.bG)([E.A], () => E.A.getMessages(O.id)),
+        eo = a.useRef(null),
+        ed = (0, r.bG)([I.A], () => I.A.getMessages(O.id)),
         ec = () => {
             let e = [];
             return (0, y.G)(F.id, ed) && en && !ei && et.enabled && e.push(l.M.GAME_INVITE_ACCOUNT_LINK_UPSELL), (0, i.jsx)(g.Ay, {
@@ -161,7 +161,7 @@ function M(e) {
         presenceActivity: q,
         analyticsLocations: D,
         showAuthButton: en && !ei && et.enabled,
-        startAuthorization: ea,
+        startAuthorization: er,
         accountLinkButtonRef: eo,
         renderAccountLinkUpsell: ec
     }) : (0, i.jsx)(L.A, {
@@ -185,7 +185,7 @@ function M(e) {
         analyticsLocations: D,
         showAuthButton: en && !ei && et.enabled,
         canPromptAuth: en && !ei,
-        startAuthorization: ea,
+        startAuthorization: er,
         accountLinkButtonRef: eo,
         renderAccountLinkUpsell: ec
     })

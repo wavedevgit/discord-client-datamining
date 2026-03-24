@@ -1,6 +1,7 @@
 /** chunk id: 212407 params = (module,exports,require) **/
-n.d(t, {
-    Kk: () => s,
+"use strict";
+r.d(t, {
+    Kk: () => l,
     MV: () => o,
     U1: () => d,
     bv: () => u,
@@ -8,65 +9,65 @@ n.d(t, {
     s4: () => c,
     w$: () => h
 });
-var r = n(64700),
-    a = n(488430),
-    i = n(940622),
-    l = n(559474);
-let s = e => {
-        let t = (0, i.mb)(l.RN.HERO_LOGO),
-            n = (0, i.mb)(l.RN.HERO_BANNER_STATIC),
-            a = (0, i.mb)(l.RN.HERO_BANNER_ANIMATED),
-            s = (0, i.mb)(l.RN.HERO_BANNER_RIVE);
-        return r.useMemo(() => {
-            let r = null != n || null != a || null != s || null != t,
-                i = null != n && null == a;
+var n = r(64700),
+    i = r(488430),
+    s = r(940622),
+    a = r(559474);
+let l = e => {
+        let t = (0, s.mb)(a.RN.HERO_LOGO),
+            r = (0, s.mb)(a.RN.HERO_BANNER_STATIC),
+            i = (0, s.mb)(a.RN.HERO_BANNER_ANIMATED),
+            l = (0, s.mb)(a.RN.HERO_BANNER_RIVE);
+        return n.useMemo(() => {
+            let n = null != r || null != i || null != l || null != t,
+                s = null != r && null == i;
             return {
-                bannerDisplayConfig: r ? void 0 : e.bannerDisplayConfig,
-                logoDisplayConfig: r ? void 0 : e.logoDisplayConfig,
+                bannerDisplayConfig: n ? void 0 : e.bannerDisplayConfig,
+                logoDisplayConfig: n ? void 0 : e.logoDisplayConfig,
                 heroLogo: t ?? e.heroLogoUrl,
-                heroBannerStatic: n ?? e.heroBannerUrl,
-                heroBannerAnimated: i ? void 0 : a ?? e.heroBannerAnimatedUrl,
-                heroBannerRive: s ?? e.heroRiveUrl
+                heroBannerStatic: r ?? e.heroBannerUrl,
+                heroBannerAnimated: s ? void 0 : i ?? e.heroBannerAnimatedUrl,
+                heroBannerRive: l ?? e.heroRiveUrl
             }
-        }, [t, n, a, s, e])
+        }, [t, r, i, l, e])
     },
-    c = (e, t) => (0, i.mb)(l.RN.FEATURED_BLOCK) ?? t?.assetUrl ?? e?.featuredBlockUrl,
+    c = (e, t) => (0, s.mb)(a.RN.FEATURED_BLOCK) ?? t?.assetUrl ?? e?.featuredBlockUrl,
     o = e => {
-        let t = (0, i.mb)(l.RN.CATALOG_BANNER_STATIC),
-            n = (0, i.mb)(l.RN.CATALOG_BANNER_ANIMATED),
-            r = (0, i.mb)(l.RN.CATALOG_BANNER_RIVE);
+        let t = (0, s.mb)(a.RN.CATALOG_BANNER_STATIC),
+            r = (0, s.mb)(a.RN.CATALOG_BANNER_ANIMATED),
+            n = (0, s.mb)(a.RN.CATALOG_BANNER_RIVE);
         return {
             catalogBannerStatic: t ?? e.catalogBannerUrl,
-            catalogBannerAnimated: n ?? e.catalogBannerAnimatedUrl,
-            catalogBannerRive: r ?? e.catalogBannerRiveUrl
+            catalogBannerAnimated: r ?? e.catalogBannerAnimatedUrl,
+            catalogBannerRive: n ?? e.catalogBannerRiveUrl
         }
     },
-    d = e => (0, i.mb)(l.RN.PDP_BACKGROUND) ?? e.pdpBgUrl,
+    d = e => (0, s.mb)(a.RN.PDP_BACKGROUND) ?? e.pdpBgUrl,
     u = e => {
-        let t = (0, i.mb)(l.RN.SHOP_BUTTON_BG_HOVER),
-            n = (0, i.mb)(l.RN.SHOP_BUTTON_BG_HOVER_DARK),
-            s = (0, i.mb)(l.RN.SHOP_BUTTON_BG_HOVER_LIGHT),
-            c = (0, i.mb)(l.RN.SHOP_BUTTON_BG_RESTING),
-            o = (0, i.mb)(l.RN.SHOP_BUTTON_BG_RESTING_DARK),
-            d = (0, i.mb)(l.RN.SHOP_BUTTON_BG_RESTING_LIGHT),
-            u = (0, i.mb)(l.RN.COACHTIP_AVATAR);
-        return r.useMemo(() => {
-            let r = [t, n, s, c, o, d, u].some(e => null != e);
-            if (e?.type === a.G.COACHMARK) return {
+        let t = (0, s.mb)(a.RN.SHOP_BUTTON_BG_HOVER),
+            r = (0, s.mb)(a.RN.SHOP_BUTTON_BG_HOVER_DARK),
+            l = (0, s.mb)(a.RN.SHOP_BUTTON_BG_HOVER_LIGHT),
+            c = (0, s.mb)(a.RN.SHOP_BUTTON_BG_RESTING),
+            o = (0, s.mb)(a.RN.SHOP_BUTTON_BG_RESTING_DARK),
+            d = (0, s.mb)(a.RN.SHOP_BUTTON_BG_RESTING_LIGHT),
+            u = (0, s.mb)(a.RN.COACHTIP_AVATAR);
+        return n.useMemo(() => {
+            let n = [t, r, l, c, o, d, u].some(e => null != e);
+            if (e?.type === i.G.COACHMARK) return {
                 hasPreviewAssets: !1
             };
-            let i = e?.refTargetBackground?.asset,
-                l = i?.resting,
-                m = i?.hovered;
+            let s = e?.refTargetBackground?.asset,
+                a = s?.resting,
+                m = s?.hovered;
             return {
-                hasPreviewAssets: r,
-                buttonBGHoverDark: n ?? t ?? m?.dark,
-                buttonBGHoverLight: s ?? t ?? m?.light,
-                buttonBGRestingDark: o ?? c ?? l?.dark,
-                buttonBGRestingLight: d ?? c ?? l?.light,
-                coachtipAvatar: u ?? (e?.type === a.G.COACHTIP ? e.avatar : void 0)
+                hasPreviewAssets: n,
+                buttonBGHoverDark: r ?? t ?? m?.dark,
+                buttonBGHoverLight: l ?? t ?? m?.light,
+                buttonBGRestingDark: o ?? c ?? a?.dark,
+                buttonBGRestingLight: d ?? c ?? a?.light,
+                coachtipAvatar: u ?? (e?.type === i.G.COACHTIP ? e.avatar : void 0)
             }
-        }, [t, n, s, c, o, d, u, e])
+        }, [t, r, l, c, o, d, u, e])
     },
     m = e => ({
         bannerUrl: e.bannerUrl,
