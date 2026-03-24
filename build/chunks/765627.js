@@ -1,7 +1,7 @@
 /** chunk id: 765627 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => f
+    A: () => g
 });
 var i = n(627968);
 n(64700);
@@ -9,103 +9,102 @@ var s = n(417597),
     l = n(873298),
     a = n(827734),
     r = n(397927),
-    o = n(835835),
-    c = n(966597),
-    d = n(85109),
-    u = n(566908),
-    h = n(646468),
-    A = n(790368),
-    m = n(435084),
-    _ = n(412484),
-    p = n(985018),
-    g = n(655967);
+    o = n(966597),
+    c = n(85109),
+    d = n(566908),
+    u = n(646468),
+    h = n(790368),
+    A = n(435084),
+    m = n(412484),
+    _ = n(985018),
+    p = n(655967);
 
-function f(e) {
+function g(e) {
     let {
         tab: t,
         setTab: n,
-        badgeState: h,
-        closePopout: m
+        badgeState: u,
+        closePopout: A
     } = e, {
-        enabled: _,
-        inInbox: f
-    } = c.A.useConfig({
+        enabled: m,
+        inInbox: g
+    } = o.A.useConfig({
         location: "RecentsPopout"
-    }), C = (0, u.Sc)({
+    }), x = (0, d.Sc)({
         location: "RecentsHeader"
-    }), E = (0, s.bG)([d.A], () => d.A.getOverdueMessageReminderCount());
-    return (0, i.jsxs)(o.Y9, {
-        className: g.wx,
+    }), C = (0, s.bG)([c.A], () => c.A.getOverdueMessageReminderCount());
+    return (0, i.jsxs)("div", {
+        className: p.wx,
         children: [(0, i.jsxs)("div", {
-            className: g.qd,
+            className: p.qd,
             children: [(0, i.jsx)(r.K$s, {
                 size: "md",
                 color: "currentColor",
-                className: g.yH
+                className: p.yH
             }), (0, i.jsx)(r.Heading, {
-                className: g.Hi,
+                className: p.Hi,
                 variant: "text-lg/semibold",
                 color: "interactive-text-active",
-                children: p.intl.string(p.t.GSmTKJ)
+                children: _.intl.string(_.t.GSmTKJ)
             }), (0, i.jsxs)(r.sqX, {
-                className: g.ne,
+                className: p.ne,
                 onClick: e => e.stopPropagation(),
                 focusProps: {
                     enabled: !1
                 },
-                "aria-label": p.intl.string(p.t["8k+6QY"]),
-                children: [(0, i.jsx)(x, {
+                "aria-label": _.intl.string(_.t["8k+6QY"]),
+                children: [(0, i.jsx)(f, {
                     tab: t
-                }), (0, i.jsx)(A.A, {
-                    closePopout: m
+                }), (0, i.jsx)(h.A, {
+                    closePopout: A
                 })]
             })]
         }), (0, i.jsx)("div", {
-            className: g.YF,
+            className: p.YF,
             children: (0, i.jsxs)(r.VQ0, {
                 selectedItem: t,
                 type: "top",
                 look: "brand",
                 onItemSelect: n,
-                className: g.$H,
+                className: p.$H,
                 children: [(0, i.jsxs)(r.VQ0.Item, {
                     id: l.Y2.FOR_YOU,
-                    "aria-label": p.intl.string(p.t["En+D+u"]),
-                    className: g.Mf,
-                    children: [p.intl.string(p.t["En+D+u"]), h?.badgeForYou ? (0, i.jsx)(r.SC0, {
+                    "aria-label": _.intl.string(_.t["En+D+u"]),
+                    className: p.Mf,
+                    children: [_.intl.string(_.t["En+D+u"]), u?.badgeForYou ? (0, i.jsx)(r.SC0, {
                         color: a.A.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css,
-                        className: g.bG
+                        className: p.bG
                     }) : null]
                 }), (0, i.jsx)(r.VQ0.Item, {
                     id: l.Y2.UNREADS,
-                    className: g.Mf,
-                    children: p.intl.string(p.t.sRUdB8)
+                    className: p.Mf,
+                    children: _.intl.string(_.t.sRUdB8)
                 }), (0, i.jsx)(r.VQ0.Item, {
-                    "aria-label": p.intl.string(p.t.GRZF96),
+                    "aria-label": _.intl.string(_.t.GRZF96),
                     id: l.Y2.MENTIONS,
-                    className: g.Mf,
-                    children: p.intl.string(p.t.GRZF96)
-                }), _ && f ? (0, i.jsx)(r.VQ0.Item, {
-                    "aria-label": p.intl.string(p.t["2pAkDA"]),
+                    className: p.Mf,
+                    children: _.intl.string(_.t.GRZF96)
+                }), m && g ? (0, i.jsx)(r.VQ0.Item, {
+                    "aria-label": _.intl.string(_.t["2pAkDA"]),
                     id: l.Y2.BOOKMARKS,
-                    className: g.Mf,
-                    children: 0 === E ? p.intl.string(p.t["2pAkDA"]) : p.intl.formatToPlainString(p.t.I4fryG, {
-                        count: E
+                    className: p.Mf,
+                    children: 0 === C ? _.intl.string(_.t["2pAkDA"]) : _.intl.formatToPlainString(_.t.I4fryG, {
+                        count: C
                     })
-                }) : null, C ? (0, i.jsx)(r.VQ0.Item, {
+                }) : null, x ? (0, i.jsx)(r.VQ0.Item, {
                     "aria-label": "scheduled",
                     id: l.Y2.SCHEDULED,
-                    className: g.Mf,
-                    children: p.intl.string(p.t.Fn6Odn)
+                    className: p.Mf,
+                    children: _.intl.string(_.t.Fn6Odn)
                 }) : null]
             })
         })]
     })
 }
 
-function x(e) {
+function f(e) {
     let {
         tab: t
     } = e;
-    return t === l.Y2.FOR_YOU ? (0, i.jsx)(h.xc, {}) : t === l.Y2.UNREADS ? (0, i.jsx)(_.NH, {}) : t === l.Y2.MENTIONS ? (0, i.jsx)(m.A, {}) : null
+    return t === l.Y2.FOR_YOU ? (0, i.jsx)(u.xc, {}) : t === l.Y2.UNREADS ? (0, i.jsx)(m.NH, {}) : t === l.Y2.MENTIONS ? (0, i.jsx)(A.A, {}) : null
 }

@@ -1473,12 +1473,14 @@ function N(e) {
 }
 
 function I() {
-    return (0, a.jsx)(r.BJc, {
+    return (0, a.jsxs)(r.BJc, {
         direction: "vertical",
         gap: 8,
-        children: (0, a.jsx)(N, {
+        children: [(0, a.jsx)(N, {
             experimentName: c.W2.definition.name
-        })
+        }), (0, a.jsx)(N, {
+            experimentName: c.uD.definition.name
+        })]
     })
 }
 let O = [{

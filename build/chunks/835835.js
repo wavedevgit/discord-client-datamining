@@ -46,11 +46,11 @@ let R = e => {
                 className: L.gn,
                 children: [null != n ? (0, l.jsx)(n, {
                     color: u.LU0.colors.INTERACTIVE_TEXT_DEFAULT
-                }) : null, null == t ? null : (0, l.jsx)(u.Text, {
+                }) : null, null != t ? (0, l.jsx)(u.Text, {
                     variant: "text-lg/semibold",
                     color: "interactive-text-active",
                     children: t
-                })]
+                }) : null]
             }), s]
         })
     },
@@ -221,7 +221,7 @@ function P(e) {
     I && (H.maxHeight -= 40);
     let z = null != h && a;
     return (0, l.jsx)("div", {
-        className: r()(y, L.KQ),
+        className: r()(L.KQ, y ?? L.G6),
         style: H,
         onClick: O,
         onDoubleClick: O,
@@ -229,7 +229,7 @@ function P(e) {
         children: (0, l.jsxs)(u.Fmo, {
             component: g(),
             children: [(0, l.jsxs)(u.T7Y, {
-                className: r()(L.m4, T),
+                className: T ?? L.m4,
                 onScroll: z ? S : void 0,
                 ref: E,
                 children: [(0, l.jsx)(c.hD, {
