@@ -16,8 +16,8 @@ var n = r(627968),
     p = r(401901),
     h = r(696451),
     y = r(430452),
-    A = r(383501),
-    f = r(412780),
+    f = r(383501),
+    A = r(412780),
     g = r(287809),
     v = r(427262),
     F = r(974175),
@@ -58,7 +58,7 @@ function S(e) {
         title: N,
         showUserInfo: I = !1,
         showSimulcastOverride: P = !1
-    } = e, [k, B] = a.useState("0"), w = (0, o.bG)([A.A], () => I ? A.A.getGuildId() : null), G = (0, o.bG)([g.default], () => I && null != S ? g.default.getUser(S) : null), T = (0, o.bG)([h.Ay], () => I && null != w && null != S ? h.Ay.getNick(w, S) : null);
+    } = e, [k, B] = a.useState("0"), w = (0, o.bG)([f.A], () => I ? f.A.getGuildId() : null), G = (0, o.bG)([g.default], () => I && null != S ? g.default.getUser(S) : null), T = (0, o.bG)([h.Ay], () => I && null != w && null != S ? h.Ay.getNick(w, S) : null);
     if (null == t || I && null == S || 0 === t.length) return (0, n.jsx)(d.y$y, {
         type: d.y$y.Type.SPINNING_CIRCLE
     });
@@ -78,7 +78,7 @@ function S(e) {
             for (let t of Object.keys(e).sort((e, t) => {
                     let r = R[e],
                         n = R[t];
-                    return r !== n ? void 0 === r ? 1 : void 0 === n ? -1 : r - n : f.iA[e] !== f.iA[t] ? f.iA[e] ? 1 : -1 : e > t ? 1 : -1
+                    return r !== n ? void 0 === r ? 1 : void 0 === n ? -1 : r - n : A.iA[e] !== A.iA[t] ? A.iA[e] ? 1 : -1 : e > t ? 1 : -1
                 })) {
                 let r = e[t];
                 F.R[t] || void 0 === r || o.push((0, n.jsx)(F.q7, {
@@ -107,7 +107,7 @@ function S(e) {
                 basis: "100%",
                 children: (0, n.jsx)(d.l6P, {
                     label: "Simulcast Override",
-                    value: f.Ay.getSimulcastDebugOverride(S, r),
+                    value: A.Ay.getSimulcastDebugOverride(S, r),
                     onSelectionChange: e => {
                         u.z0(S, r, e)
                     },

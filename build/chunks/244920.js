@@ -15,8 +15,8 @@ var n = r(627968),
     p = r(162605),
     h = r(351906),
     y = r(287809),
-    A = r(562153),
-    f = r(917592),
+    f = r(562153),
+    A = r(917592),
     g = r(828904),
     v = r(522278),
     F = r(974175),
@@ -48,7 +48,7 @@ class D extends a.PureComponent {
             u = s().map(i.receiverReports, e => {
                 let t = Array.isArray(e.bitrate) ? e.bitrate.at(-1)?.value : e.bitrate,
                     r = y.default.getUser(e.id);
-                var n = A.Ay.getNickname(m.A.getGuildId(), void 0, r);
+                var n = f.Ay.getNickname(m.A.getGuildId(), void 0, r);
                 return null == n && (n = null != r ? r.username : e.id), {
                     displayName: n,
                     bitrate: t / 1e3,
@@ -101,6 +101,6 @@ let R = l.Ay.connectStores([c.Ay, u.A, h.A, p.A], e => {
         hidePersonalInformation: h.A.hidePersonalInformation,
         transport: null != n ? n.transport : null,
         mediaSessionId: u.A.getMediaSessionId(),
-        hostname: f.A.getShortHostname(i)
+        hostname: A.A.getShortHostname(i)
     }
 })(D)

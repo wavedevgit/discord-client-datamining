@@ -15,8 +15,8 @@ var n = r(627968),
     p = r(97469),
     h = r(544028),
     y = r(734057),
-    A = r(696451),
-    f = r(383501),
+    f = r(696451),
+    A = r(383501),
     g = r(412780),
     v = r(287809),
     F = r(427262),
@@ -76,7 +76,7 @@ function P(e, t, r, a, i) {
         let t = [];
         Object.keys(p).forEach(s => {
             let l, u = v.default.getUser(s),
-                c = A.Ay.getNick(i, s),
+                c = f.Ay.getNick(i, s),
                 h = (0, g.Xi)(e, s, r);
             null != p[s] && p[s].length > 0 && t.push({
                 section: h,
@@ -134,7 +134,7 @@ function k() {
     } = (0, l.bG)([g.Ay], () => ({
         defaultStats: g.Ay.getAllStats(j.x.DEFAULT),
         streamStats: g.Ay.getAllStats(j.x.STREAM)
-    }), [], l.My), r = (0, l.bG)([f.A, y.A], () => y.A.getChannel(f.A.getChannelId())), i = e.concat(t).find(e => null != e.screenshare)?.screenshare, s = t.find(e => null != e.clips)?.clips, m = (0, l.bG)([h.A], () => h.A.theme), A = (0, p.NC)(), v = (0, l.bG)([g.Ay], () => g.Ay.getSection()), F = function(e) {
+    }), [], l.My), r = (0, l.bG)([A.A, y.A], () => y.A.getChannel(A.A.getChannelId())), i = e.concat(t).find(e => null != e.screenshare)?.screenshare, s = t.find(e => null != e.clips)?.clips, m = (0, l.bG)([h.A], () => h.A.theme), f = (0, p.NC)(), v = (0, l.bG)([g.Ay], () => g.Ay.getSection()), F = function(e) {
         let {
             defaultStats: t,
             streamStats: r,
@@ -184,13 +184,15 @@ function k() {
         screenshare: i,
         clips: s,
         channel: r,
-        connectionState: (0, l.bG)([f.A], () => f.A.getState())
+        connectionState: (0, l.bG)([A.A], () => A.A.getState())
     });
     return a.useEffect(() => () => {
         d.VN()
-    }, []), (0, n.jsx)(u.Ay, {
+    }, []), a.useEffect(() => {
+        F.some(e => e.section === v) || v === g.EM || d.c4(g.EM)
+    }, [F, v]), (0, n.jsx)(u.Ay, {
         theme: m,
-        sidebarTheme: A,
+        sidebarTheme: f,
         section: v,
         onSetSection: d.c4,
         sections: F

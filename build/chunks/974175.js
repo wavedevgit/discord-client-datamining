@@ -160,11 +160,11 @@ function y(e) {
     return `${e.toFixed(0)}%`
 }
 
-function A(e) {
+function f(e) {
     return e ? "Yes" : "No"
 }
 
-function f(e) {
+function A(e) {
     return 20 * Math.log(e)
 }
 
@@ -213,15 +213,15 @@ let F = {
     },
     C = {
         accelerateRate: y,
-        audioDetected: A,
+        audioDetected: f,
         audioLevel: function(e) {
-            return e <= 0 ? "-∞ dB" : `${f(e).toFixed(2)} dB`
+            return e <= 0 ? "-∞ dB" : `${A(e).toFixed(2)} dB`
         },
         availableOutgoingBitrate: c,
         averageDecodeTime: h,
         averageEncodeTime: h,
-        bandwidthLimitedFrameRate: A,
-        bandwidthLimitedResolution: A,
+        bandwidthLimitedFrameRate: f,
+        bandwidthLimitedResolution: f,
         bitrate: c,
         bitrateTarget: c,
         bytesReceived: m,
@@ -233,7 +233,7 @@ let F = {
             } = e;
             return r = (r = "" === r ? "unknown" : r) ?? "unknown", `${r[0].toUpperCase()}${r.slice(1)} (${t})`
         },
-        cpuLimitedResolution: A,
+        cpuLimitedResolution: f,
         currentSampleRate: function(e) {
             return e % 100 == 0 ? `${e/1e3} kHz` : `${e} Hz`
         },
@@ -287,7 +287,7 @@ let F = {
     },
     b = {
         audioLevel: function(e) {
-            return Math.max(f(e), -100) + 100
+            return Math.max(A(e), -100) + 100
         }
     },
     x = e => e,
