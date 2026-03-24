@@ -1,5 +1,5 @@
 /** chunk id: 631637 params = (module,exports,require) **/
-t.d(e, {
+t.d(n, {
     A: () => A
 });
 var i = t(627968);
@@ -13,10 +13,10 @@ var r = t(311907),
     c = t(87746),
     o = t(287809);
 
-function A(n) {
+function A(e) {
     let {
-        channel: e
-    } = n, t = (0, r.bG)([o.default], () => o.default.getCurrentUser()), A = (0, s.P)(e), h = (0, a.y)(e), f = (0, c.Q)(e), g = (0, u.m)(e), x = (0, d.B)(e);
+        channel: n
+    } = e, t = (0, r.bG)([o.default], () => o.default.getCurrentUser()), A = (0, s.P)(n), h = (0, a.y)(n), f = (0, c.Q)(n), g = (0, u.m)(n), x = (0, d.B)(n);
     return t?.isStaff() !== !0 ? null : (0, i.jsxs)(l.Drp, {
         id: "dev tools",
         label: "Dev Tools",

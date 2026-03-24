@@ -1,5 +1,5 @@
 /** chunk id: 884569 params = (module,exports,require) **/
-t.d(e, {
+t.d(n, {
     B: () => c
 });
 var i = t(627968);
@@ -11,12 +11,12 @@ var r = t(311907),
     s = t(287809),
     u = t(985018);
 
-function c(n) {
-    let e = (0, r.bG)([s.default], () => s.default.getCurrentUser()),
-        t = (0, d.E)(n.id);
-    return e?.isStaff() === !0 && n.isDM() && null == t ? (0, i.jsx)(l.Drp, {
+function c(e) {
+    let n = (0, r.bG)([s.default], () => s.default.getCurrentUser()),
+        t = (0, d.E)(e.id);
+    return n?.isStaff() === !0 && e.isDM() && null == t ? (0, i.jsx)(l.Drp, {
         id: "mark-as-likely-ato",
         label: u.intl.string(u.t.AWKKgc),
-        action: () => (0, a.a)(n.id)
+        action: () => (0, a.a)(e.id)
     }) : null
 }

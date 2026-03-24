@@ -1,7 +1,7 @@
 /** chunk id: 133580 params = (module,exports,require) **/
 n.d(t, {
     GE: () => d,
-    a: () => c,
+    a: () => o,
     ff: () => u
 });
 var a = n(530493),
@@ -9,9 +9,9 @@ var a = n(530493),
     i = n(833450),
     r = n(5678),
     s = n(623915),
-    o = n(616276);
+    c = n(616276);
 
-function c(e) {
+function o(e) {
     switch (e) {
         case a.h.MIGHTY:
             return l.intl.string(l.t.aZej2g);
@@ -33,7 +33,7 @@ function d(e) {
         case a.h.FAIR:
             return i.A;
         case a.h.WEAK:
-            return o.A
+            return c.A
     }
 }
 

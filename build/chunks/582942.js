@@ -8,35 +8,35 @@ var l = n(503698),
     i = n.n(l),
     r = n(735438),
     s = n.n(r),
-    o = n(311907),
-    c = n(990078),
+    c = n(311907),
+    o = n(990078),
     d = n(397927),
     u = n(587895),
     m = n(136086),
     x = n(885151),
-    h = n(409626),
-    f = n(422069),
+    f = n(409626),
+    h = n(422069),
     g = n(611656),
     _ = n(459746),
     p = n(225732),
-    v = n(985018),
-    A = n(851822),
+    A = n(985018),
+    v = n(851822),
     j = n(799864);
 let E = e => {
     let {
         game: t,
         onClose: n,
         trackClick: l
-    } = e, i = (0, o.bG)([u.A], () => u.A.getApplication(t.applicationId));
-    return (0, a.jsx)(c.m, {
+    } = e, i = (0, c.bG)([u.A], () => u.A.getApplication(t.applicationId));
+    return (0, a.jsx)(o.m, {
         asContainer: !0,
         text: t.name,
         children: (0, a.jsx)(d.DUT, {
             className: j.fS,
             onClick: async () => {
-                l(h.Ws.ClickSimilarGame, t.applicationId), (0, d.mMO)(() => Promise.resolve(e => (0, a.jsx)(p.default, {
+                l(f.Ws.ClickSimilarGame, t.applicationId), (0, d.mMO)(() => Promise.resolve(e => (0, a.jsx)(p.default, {
                     applicationId: t.applicationId,
-                    source: h.Ob.SimilarGames,
+                    source: f.Ob.SimilarGames,
                     ...e
                 }))), await new Promise(e => setTimeout(e, 10)), n()
             },
@@ -56,30 +56,30 @@ function I(e) {
         onClose: n,
         trackAction: l,
         similarGames: r,
-        similarGamesError: c
-    } = e, u = (0, o.bG)([f.A, m.A], () => {
-        let e = void 0 === f.A.getSimilarGames(t) && null == f.A.getSimilarGamesError(t),
+        similarGamesError: o
+    } = e, u = (0, c.bG)([h.A, m.A], () => {
+        let e = void 0 === h.A.getSimilarGames(t) && null == h.A.getSimilarGamesError(t),
             n = r.some(e => m.A.isFetching(e));
         return e || n
-    }), h = (0, o.yK)([m.A], () => r.map(e => m.A.getGame(e)).filter(e => null != e).filter(e => (0, g.oS)(e.applicationId)).slice(0, 5));
-    return ((0, x.k)(t), (0, x.W)(r), u && null == c) ? (0, a.jsxs)("div", {
+    }), f = (0, c.yK)([m.A], () => r.map(e => m.A.getGame(e)).filter(e => null != e).filter(e => (0, g.oS)(e.applicationId)).slice(0, 5));
+    return ((0, x.k)(t), (0, x.W)(r), u && null == o) ? (0, a.jsxs)("div", {
         children: [(0, a.jsx)("div", {
-            className: i()(j.vM, A.bV)
+            className: i()(j.vM, v.bV)
         }), (0, a.jsx)("div", {
-            className: i()(A.nM, A.iH),
+            className: i()(v.nM, v.iH),
             children: s().range(0, 5).map(e => (0, a.jsx)("div", {
                 className: j.nn
             }, e))
         })]
-    }) : (u || 0 !== h.length) && null == c ? (0, a.jsxs)("div", {
+    }) : (u || 0 !== f.length) && null == o ? (0, a.jsxs)("div", {
         children: [(0, a.jsx)(d.Heading, {
-            className: A.bV,
+            className: v.bV,
             variant: "text-md/semibold",
             color: "text-strong",
-            children: v.intl.string(v.t["6rLyQB"])
+            children: A.intl.string(A.t["6rLyQB"])
         }), (0, a.jsx)("div", {
             className: j.D$,
-            children: h.map(e => null != e.supplementalData ? (0, a.jsx)(E, {
+            children: f.map(e => null != e.supplementalData ? (0, a.jsx)(E, {
                 game: e.supplementalData,
                 onClose: n,
                 trackClick: l

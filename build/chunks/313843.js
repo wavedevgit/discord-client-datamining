@@ -1,15 +1,15 @@
 /** chunk id: 313843 params = (module,exports,require) **/
 n.d(t, {
     A: () => _,
-    Q: () => f
+    Q: () => h
 });
 var a = n(627968),
     l = n(64700),
     i = n(158954),
     r = n(541830),
     s = n(240248),
-    o = n(459746),
-    c = n(503364),
+    c = n(459746),
+    o = n(503364),
     d = n(305080),
     u = n(985018),
     m = n(611731);
@@ -41,27 +41,27 @@ function x(e) {
     })
 }
 
-function h(e) {
+function f(e) {
     let {
         game: t,
         application: n
-    } = e, l = t.supplementalData, o = l?.name ?? t.name ?? n?.name, c = (l?.genres ?? t.genres ?? []).map(r.du).join(", ");
+    } = e, l = t.supplementalData, c = l?.name ?? t.name ?? n?.name, o = (l?.genres ?? t.genres ?? []).map(r.du).join(", ");
     return (0, a.jsxs)("div", {
         className: m.wt,
         children: [null != t.l30Rank && (0, a.jsx)(g, {
             rank: t.l30Rank
         }), (0, a.jsx)(i.DZT, {
             variant: "heading-xxl/semibold",
-            children: o
-        }), (0, s.uJ)(c) ? null : (0, a.jsx)(i.EYj, {
+            children: c
+        }), (0, s.uJ)(o) ? null : (0, a.jsx)(i.EYj, {
             variant: "text-md/normal",
             color: "text-default",
-            children: c
+            children: o
         })]
     })
 }
 
-function f(e) {
+function h(e) {
     let {
         game: t,
         application: n,
@@ -69,11 +69,11 @@ function f(e) {
     } = e, i = t.supplementalData;
     return null == i ? null : (0, a.jsx)("div", {
         className: l ? m.n8 : m.FS,
-        children: (0, a.jsx)(o.A, {
+        children: (0, a.jsx)(c.A, {
             game: i,
             application: n,
             className: m.xe,
-            size: o.w.LARGE
+            size: c.w.LARGE
         })
     })
 }
@@ -100,44 +100,47 @@ let g = e => {
         let {
             game: t,
             application: n,
-            onClose: l
+            onClose: l,
+            trackAction: i
         } = e, {
-            isTwoColumn: i
+            isTwoColumn: r
         } = (0, d.c)();
-        return i ? (0, a.jsxs)(a.Fragment, {
+        return r ? (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsx)(x, {
                 game: t
             }), (0, a.jsx)("div", {
                 className: m.kL,
                 children: (0, a.jsxs)("div", {
                     className: m.cb,
-                    children: [(0, a.jsx)(f, {
+                    children: [(0, a.jsx)(h, {
                         game: t,
                         application: n,
                         isTwoColumn: !0
-                    }), (0, a.jsx)(h, {
+                    }), (0, a.jsx)(f, {
                         game: t,
                         application: n
                     })]
                 })
-            }), (0, a.jsx)(c.N, {
+            }), (0, a.jsx)(o.N, {
                 applicationId: n.id,
                 onClose: l,
-                className: m.HK
+                className: m.HK,
+                trackAction: i
             })]
         }) : (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsx)(x, {
                 game: t
             }), (0, a.jsx)("div", {
                 className: m.kL,
-                children: (0, a.jsx)(h, {
+                children: (0, a.jsx)(f, {
                     game: t,
                     application: n
                 })
-            }), (0, a.jsx)(c.N, {
+            }), (0, a.jsx)(o.N, {
                 applicationId: n.id,
                 onClose: l,
-                className: m.HK
+                className: m.HK,
+                trackAction: i
             })]
         })
     }

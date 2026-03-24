@@ -8,95 +8,97 @@ var a = n(627968),
     i = n(503698),
     r = n.n(i),
     s = n(505779),
-    o = n(311907),
-    c = n(397927),
+    c = n(311907),
+    o = n(397927),
     d = n(73153),
     u = n(714991),
     m = n(970163),
     x = n(184989),
-    h = n(486020),
-    f = n(240248),
+    f = n(486020),
+    h = n(240248),
     g = n(409626),
     _ = n(305080),
     p = n(652215),
-    v = n(985018),
-    A = n(851822),
+    A = n(985018),
+    v = n(851822),
     j = n(921380),
     E = n(20440);
 
 function I(e) {
     let {
         detectedGame: t,
-        trackClick: n,
+        trackAction: n,
         onInviteResolved: i,
-        closeModal: f
-    } = e, [_, E] = l.useState(), I = (0, o.bG)([x.A], () => _?.guild?.id != null && x.A.isMember(_?.guild?.id)), C = l.useMemo(() => t.websites?.find(e => {
+        closeModal: h
+    } = e, [_, E] = l.useState(), I = (0, c.bG)([x.A], () => _?.guild?.id != null && x.A.isMember(_?.guild?.id)), C = l.useMemo(() => t.websites?.find(e => {
         let {
             category: t
         } = e;
         return t === s.V.DISCORD
     }), [t.websites]);
-    if (l.useEffect(() => {
-            let e = async e => {
-                let t = e.split("/").pop();
-                if (null != t) {
-                    if (null != _ && _.code.toLowerCase() === t.toLowerCase()) return;
-                    let e = await (0, m.A)(t);
-                    !0 !== e.banned && (E(e.invite), null != e.invite && i?.(e.invite))
-                }
-            };
-            null != C && e(C.url)
-        }, [C, i, _]), null == _ || null == _.guild || !_.guild.features.includes(p.GuildFeatures.VERIFIED)) return null;
-    let b = h.Ay.getGuildIconURL({
+    l.useEffect(() => {
+        let e = async e => {
+            let t = e.split("/").pop();
+            if (null != t) {
+                if (null != _ && _.code.toLowerCase() === t.toLowerCase()) return;
+                let e = await (0, m.A)(t);
+                !0 !== e.banned && (E(e.invite), null != e.invite && i?.(e.invite))
+            }
+        };
+        null != C && e(C.url)
+    }, [C, i, _]);
+    let b = l.useCallback(() => {
+        null != _ && (n(g.Ws.JoinOfficialServer), h(), d.h.dispatch({
+            type: "INVITE_MODAL_OPEN",
+            invite: _,
+            code: _.code,
+            context: p.BRT.APP
+        }))
+    }, [_, n, h]);
+    if (null == _ || null == _.guild || !_.guild.features.includes(p.GuildFeatures.VERIFIED)) return null;
+    let N = f.Ay.getGuildIconURL({
         id: _.guild.id,
         icon: _.guild.icon,
         size: 32
     });
     return (0, a.jsxs)("div", {
-        className: A.fi,
-        children: [(0, a.jsx)(c.Heading, {
-            className: A.bV,
+        className: v.fi,
+        children: [(0, a.jsx)(o.Heading, {
+            className: v.bV,
             variant: "text-xs/semibold",
             color: "text-default",
-            children: v.intl.string(v.t.kBDZSL)
+            children: A.intl.string(A.t.kBDZSL)
         }), (0, a.jsxs)("div", {
-            className: r()(A.nM, A.mX),
+            className: r()(v.nM, v.mX),
             children: [(0, a.jsx)("img", {
                 className: j.$f,
-                src: b,
-                alt: v.intl.formatToPlainString(v.t.xm6W9D, {
+                src: N,
+                alt: A.intl.formatToPlainString(A.t.xm6W9D, {
                     guildName: _.guild.name
                 })
             }), (0, a.jsxs)("div", {
                 className: j.U5,
                 children: [(0, a.jsxs)("div", {
                     className: j.YS,
-                    children: [(0, a.jsx)(c.Text, {
+                    children: [(0, a.jsx)(o.Text, {
                         variant: "text-sm/semibold",
                         children: _.guild.name
                     }), (0, a.jsx)(u.A, {
                         guild: _.guild,
                         size: 16
                     })]
-                }), null != _.approximate_member_count && (0, a.jsx)(c.Text, {
+                }), null != _.approximate_member_count && (0, a.jsx)(o.Text, {
                     variant: "text-xxs/normal",
                     color: "text-muted",
-                    children: v.intl.format(v.t.zRl6XR, {
+                    children: A.intl.format(A.t.zRl6XR, {
                         count: _.approximate_member_count
                     })
                 })]
             })]
-        }), (0, a.jsx)(c.Button, {
+        }), (0, a.jsx)(o.Button, {
             variant: "secondary",
-            text: I ? v.intl.string(v.t.cEnaWx) : v.intl.string(v.t.XpeFYr),
-            onClick: () => {
-                f(), n(g.Ws.JoinOfficialServer), d.h.dispatch({
-                    type: "INVITE_MODAL_OPEN",
-                    invite: _,
-                    code: _.code,
-                    context: p.BRT.APP
-                })
-            },
+            text: I ? A.intl.string(A.t.cEnaWx) : A.intl.string(A.t.XpeFYr),
+            onClick: b,
             fullWidth: !0
         })]
     })
@@ -104,111 +106,111 @@ function I(e) {
 
 function C(e) {
     let {
-        trackClick: t,
+        trackAction: t,
         closeModal: n
     } = e, {
-        canStartAuthorization: l,
-        hasAlreadyLinked: i,
-        officialInvite: r,
-        isMember: s
-    } = (0, _.c)();
-    if (null == r || null == r.guild || !r.guild.features.includes(p.GuildFeatures.VERIFIED)) return null;
-    let o = h.Ay.getGuildIconURL({
-            id: r.guild.id,
-            icon: r.guild.icon,
+        canStartAuthorization: i,
+        hasAlreadyLinked: r,
+        officialInvite: s,
+        isMember: c
+    } = (0, _.c)(), m = l.useCallback(() => {
+        null != s && (t(g.Ws.JoinOfficialServer), n(), d.h.dispatch({
+            type: "INVITE_MODAL_OPEN",
+            invite: s,
+            code: s.code,
+            context: p.BRT.APP
+        }))
+    }, [s, t, n]);
+    if (null == s || null == s.guild || !s.guild.features.includes(p.GuildFeatures.VERIFIED)) return null;
+    let x = f.Ay.getGuildIconURL({
+            id: s.guild.id,
+            icon: s.guild.icon,
             size: 48
         }),
-        m = h.Ay.getGuildSplashURL({
-            id: r.guild.id,
-            splash: r.guild.splash
+        v = f.Ay.getGuildSplashURL({
+            id: s.guild.id,
+            splash: s.guild.splash
         }),
-        x = l && !i || null == m,
-        A = (0, a.jsx)("img", {
+        j = i && !r || null == v,
+        I = (0, a.jsx)("img", {
             className: E.$f,
-            src: o,
-            alt: v.intl.formatToPlainString(v.t.xm6W9D, {
-                guildName: r.guild.name
+            src: x,
+            alt: A.intl.formatToPlainString(A.t.xm6W9D, {
+                guildName: s.guild.name
             })
         }),
-        j = x ? E.To : E.Kt,
-        I = x ? E.yj : E.FS;
+        C = j ? E.To : E.Kt,
+        b = j ? E.yj : E.FS;
     return (0, a.jsxs)("div", {
         className: E.uW,
-        children: [(0, a.jsx)(c.Heading, {
+        children: [(0, a.jsx)(o.Heading, {
             className: E.Gf,
             variant: "heading-sm/semibold",
             color: "text-strong",
-            children: v.intl.string(v.t["U2N+ci"])
+            children: A.intl.string(A.t["U2N+ci"])
         }), (0, a.jsxs)("div", {
             className: E.kL,
-            children: [!x && null != m && (0, a.jsx)("img", {
+            children: [!j && null != v && (0, a.jsx)("img", {
                 className: E.ll,
-                src: m,
+                src: v,
                 alt: ""
             }), (0, a.jsxs)("div", {
                 className: E.hQ,
                 children: [(0, a.jsxs)("div", {
-                    className: j,
-                    children: [x ? A : (0, a.jsx)("div", {
+                    className: C,
+                    children: [j ? I : (0, a.jsx)("div", {
                         className: E._C,
                         children: (0, a.jsx)("div", {
                             className: E.kW,
-                            children: A
+                            children: I
                         })
                     }), (0, a.jsxs)("div", {
-                        className: I,
+                        className: b,
                         children: [(0, a.jsxs)("div", {
                             className: E.YS,
                             children: [(0, a.jsx)(u.A, {
-                                guild: r.guild,
+                                guild: s.guild,
                                 size: 16
-                            }), (0, a.jsx)(c.Heading, {
+                            }), (0, a.jsx)(o.Heading, {
                                 variant: "heading-md/semibold",
                                 color: "text-default",
-                                children: r.guild.name
+                                children: s.guild.name
                             })]
-                        }), !(0, f.uJ)(r.guild?.description) && (0, a.jsx)(c.Text, {
+                        }), !(0, h.uJ)(s.guild?.description) && (0, a.jsx)(o.Text, {
                             variant: "text-sm/medium",
                             color: "text-muted",
-                            children: r.guild?.description
-                        }), null != r.approximate_member_count || null != r.approximate_presence_count ? (0, a.jsxs)("div", {
+                            children: s.guild?.description
+                        }), null != s.approximate_member_count || null != s.approximate_presence_count ? (0, a.jsxs)("div", {
                             className: E.iR,
-                            children: [null != r.approximate_presence_count && (0, a.jsxs)("div", {
+                            children: [null != s.approximate_presence_count && (0, a.jsxs)("div", {
                                 className: E.Tb,
                                 children: [(0, a.jsx)("i", {
                                     className: E._o
-                                }), (0, a.jsx)(c.Text, {
+                                }), (0, a.jsx)(o.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-muted",
-                                    children: v.intl.format(v.t["LC+S+m"], {
-                                        membersOnline: r.approximate_presence_count
+                                    children: A.intl.format(A.t["LC+S+m"], {
+                                        membersOnline: s.approximate_presence_count
                                     })
                                 })]
-                            }), null != r.approximate_member_count && (0, a.jsxs)("div", {
+                            }), null != s.approximate_member_count && (0, a.jsxs)("div", {
                                 className: E.Tb,
                                 children: [(0, a.jsx)("i", {
                                     className: E.jk
-                                }), (0, a.jsx)(c.Text, {
+                                }), (0, a.jsx)(o.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-muted",
-                                    children: v.intl.format(v.t.zRl6XR, {
-                                        count: r.approximate_member_count
+                                    children: A.intl.format(A.t.zRl6XR, {
+                                        count: s.approximate_member_count
                                     })
                                 })]
                             })]
                         }) : null]
                     })]
-                }), (0, a.jsx)(c.Button, {
+                }), (0, a.jsx)(o.Button, {
                     variant: "secondary",
-                    text: s ? v.intl.string(v.t.cEnaWx) : v.intl.string(v.t.XpeFYr),
-                    onClick: () => {
-                        n(), t(g.Ws.JoinOfficialServer), d.h.dispatch({
-                            type: "INVITE_MODAL_OPEN",
-                            invite: r,
-                            code: r.code,
-                            context: p.BRT.APP
-                        })
-                    },
+                    text: c ? A.intl.string(A.t.cEnaWx) : A.intl.string(A.t.XpeFYr),
+                    onClick: m,
                     fullWidth: !0
                 })]
             })]

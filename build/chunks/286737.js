@@ -1,36 +1,36 @@
 /** chunk id: 286737 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => f
 });
 var a = n(627968),
     l = n(64700),
     i = n(311907),
     r = n(397927),
     s = n(289363),
-    o = n(287809),
-    c = n(486020),
+    c = n(287809),
+    o = n(486020),
     d = n(409626),
     u = n(305080),
     m = n(985018),
     x = n(409861);
 
-function h(e) {
+function f(e) {
     let {
         trackAction: t
     } = e, {
         fetchedAuthorization: n,
-        hasAlreadyLinked: h,
-        canStartAuthorization: f,
+        hasAlreadyLinked: f,
+        canStartAuthorization: h,
         startAuthorization: g,
         connectionApp: _,
         officialInvite: p
-    } = (0, u.c)(), v = (0, i.bG)([o.default], () => o.default.getCurrentUser()), A = l.useCallback(() => {
+    } = (0, u.c)(), A = (0, i.bG)([c.default], () => c.default.getCurrentUser()), v = l.useCallback(() => {
         t(d.Ws.LinkAccount), g({
             analyticsLocations: ["game_profile"]
         })
     }, [t, g]);
-    if (!n || null == _ || !f || h || null == v) return null;
-    let j = p?.guild != null ? c.Ay.getGuildSplashURL({
+    if (!n || null == _ || !h || f || null == A) return null;
+    let j = p?.guild != null ? o.Ay.getGuildSplashURL({
         id: p.guild.id,
         splash: p.guild.splash
     }) : null;
@@ -71,7 +71,7 @@ function h(e) {
                     variant: "secondary",
                     icon: r.A5T,
                     text: m.intl.string(m.t.jynBQ5),
-                    onClick: A,
+                    onClick: v,
                     fullWidth: !0
                 })]
             })]
