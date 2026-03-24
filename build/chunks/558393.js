@@ -23,7 +23,7 @@ function M(t) {
     let i = (0, A.Y)(t),
         r = N.A.getGuild(t),
         E = null != r && (0, e.w)(r),
-        s = (0, S.K5)({
+        s = (0, S.K)({
             location: "getPermissionOptions"
         });
     return {

@@ -25,7 +25,7 @@ let d = (0, s.sN)(r.X.SOUNDMOJI_VOLUME_SETTING, {
         return `${e.toFixed(0)}%`
     },
     usePredicate: function() {
-        return (0, i.X9)({
+        return (0, i.X)({
             location: "SoundmojiVolumeSetting"
         })
     }
