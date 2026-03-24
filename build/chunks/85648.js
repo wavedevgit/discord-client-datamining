@@ -12,12 +12,12 @@ var i = n(627968),
     c = n(780964),
     u = n(358776),
     m = n(227542),
-    _ = n(264124),
-    g = n(850060),
-    A = n(886854),
-    x = n(729770),
-    p = n(274835),
-    h = n(505112),
+    g = n(264124),
+    _ = n(850060),
+    x = n(886854),
+    A = n(729770),
+    h = n(274835),
+    p = n(505112),
     f = n(163944),
     T = n(41197),
     E = n(28161),
@@ -26,12 +26,12 @@ var i = n(627968),
     C = n(985018);
 let N = (0, o.t_)(c.X.DISPLAY_PANEL, {
         useTitle: () => C.intl.string(C.t.DVatCa),
-        buildLayout: () => [S.K, f.S, T.X, h.S, E.f, (0, b.$)(!0), p.J]
+        buildLayout: () => [S.K, f.S, T.X, p.S, E.f, (0, b.$)(!0), h.J]
     }),
-    v = [...A.j0, {
+    v = [...x.j0, {
         badgeType: d.Xi.STRONGLY_DISCOURAGED_CUSTOM,
         dismissibleContent: a.M.FAVORITES_GUILD_NEW_BADGE,
-        StronglyDiscouragedCustomComponent: x.L
+        StronglyDiscouragedCustomComponent: A.L
     }],
     I = (0, o.i4)(c.X.DISPLAY_SIDEBAR_ITEM, {
         useTitle: () => C.intl.string(C.t.DVatCa),
@@ -39,8 +39,8 @@ let N = (0, o.t_)(c.X.DISPLAY_PANEL, {
         usePredicate: () => (0, u.bp)("DisplaySidebarItem"),
         useMenu: function() {
             let e = (0, m.A)(),
-                t = (0, g.A)(),
-                n = (0, _.A)();
+                t = (0, _.A)(),
+                n = (0, g.A)();
             return s.useMemo(() => {
                 let s = [...e];
                 return null != t && s.push((0, i.jsx)(r.rXV, {

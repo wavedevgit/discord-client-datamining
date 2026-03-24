@@ -18,23 +18,23 @@ function o(e) {
         useVariant: c,
         useDisabled: u,
         onClick: m
-    } = t, [_, g] = s.useState(!1), A = (0, a.q)(t), x = o(), p = d?.(), h = n(), f = c?.(), T = u?.();
+    } = t, [g, _] = s.useState(!1), x = (0, a.q)(t), A = o(), h = d?.(), p = n(), f = c?.(), T = u?.();
     return (0, i.jsx)(r.L, {
         children: (0, i.jsx)(l.D0$, {
-            label: x,
-            description: p,
+            label: A,
+            description: h,
             disabled: T,
             layout: "horizontal",
             children: (0, i.jsx)(l.Button, {
                 onClick: () => {
-                    A();
+                    x();
                     let e = m();
-                    e instanceof Promise && (g(!0), e.finally(() => g(!1)))
+                    e instanceof Promise && (_(!0), e.finally(() => _(!1)))
                 },
-                text: h,
+                text: p,
                 variant: f,
                 disabled: T,
-                loading: _
+                loading: g
             })
         })
     })

@@ -13,12 +13,12 @@ var s = n(284009),
     c = n(757036),
     u = n(919395),
     m = n(124064),
-    _ = n(200790),
-    g = n(230084),
-    A = n(180020),
-    x = n(431982),
-    p = n(730588),
-    h = n(164599),
+    g = n(200790),
+    _ = n(230084),
+    x = n(180020),
+    A = n(431982),
+    h = n(730588),
+    p = n(164599),
     f = n(63675),
     T = n(546849),
     E = n(101058),
@@ -48,8 +48,8 @@ function M() {
     let {
         pendingAvatar: s,
         pendingNickname: M,
-        pendingBanner: k,
-        pendingBio: U,
+        pendingBanner: U,
+        pendingBio: k,
         pendingPronouns: w,
         pendingThemeColors: V,
         errors: B
@@ -59,7 +59,7 @@ function M() {
     })), F = (0, E.V7)({
         userId: e.id,
         image: s
-    }), H = (0, d.EC)(n.id), z = (0, a.bG)([N.Ay], () => null == n.id ? null : N.Ay.getMember(n.id, e.id)), Y = (0, a.bG)([C.A], () => C.A.getGuildMemberProfile(e.id, n.id)), X = j.Ay.canUsePremiumProfileCustomization(e), W = (0, u.z5)(s, z?.avatar), K = (0, u.Ac)(k, Y?.banner), Z = (0, O.l)(V, Y?.themeColors), q = Y?.bio ?? "", J = Y?.pronouns ?? "", Q = (e, t, n) => {
+    }), H = (0, d.EC)(n.id), z = (0, a.bG)([N.Ay], () => null == n.id ? null : N.Ay.getMember(n.id, e.id)), Y = (0, a.bG)([C.A], () => C.A.getGuildMemberProfile(e.id, n.id)), X = j.Ay.canUsePremiumProfileCustomization(e), K = (0, u.z5)(s, z?.avatar), W = (0, u.Ac)(U, Y?.banner), Z = (0, O.l)(V, Y?.themeColors), q = Y?.bio ?? "", Q = Y?.pronouns ?? "", J = (e, t, n) => {
         n(e ?? (null != t ? null : void 0))
     };
     return (0, i.jsxs)("div", {
@@ -79,11 +79,11 @@ function M() {
                 pronouns: e
             }),
             pendingPronouns: w,
-            currentPronouns: J
+            currentPronouns: Q
         }, "pronouns"), (0, i.jsxs)(L.A, {
             user: e,
             showOverlay: !X,
-            children: [(0, i.jsx)(g.A, {
+            children: [(0, i.jsx)(_.A, {
                 sectionTitle: (0, i.jsxs)(i.Fragment, {
                     children: [D.intl.string(D.t.lqaIxI), (0, i.jsx)(r.m, {
                         text: D.intl.string(D.t["5AFxuK"]),
@@ -94,15 +94,15 @@ function M() {
                         })
                     })]
                 }),
-                showRemoveAvatarButton: W,
-                onAvatarChange: e => Q(e, z?.avatar, e => (0, S.p)({
+                showRemoveAvatarButton: K,
+                onAvatarChange: e => J(e, z?.avatar, e => (0, S.p)({
                     guildId: n.id,
                     avatar: e
                 })),
                 errors: B?.avatar,
                 guildId: n.id,
                 disabled: !X
-            }, "avatar"), (0, i.jsx)(_.A, {
+            }, "avatar"), (0, i.jsx)(g.A, {
                 sectionTitle: (0, i.jsxs)(i.Fragment, {
                     children: [D.intl.string(D.t["7v0T9P"]), (0, i.jsx)(r.m, {
                         text: D.intl.string(D.t["5AFxuK"]),
@@ -115,10 +115,10 @@ function M() {
                 }),
                 user: e,
                 guild: n
-            }, "decoration"), !t && (0, i.jsx)(A.A, {
+            }, "decoration"), !t && (0, i.jsx)(x.A, {
                 user: e,
                 guildId: n.id
-            }), (0, i.jsx)(x.A, {
+            }), (0, i.jsx)(A.A, {
                 user: e,
                 guild: n,
                 titleIcon: (0, i.jsx)(r.m, {
@@ -129,7 +129,7 @@ function M() {
                         className: G.a
                     })
                 })
-            }, "nameplate"), (0, i.jsx)(h.A, {
+            }, "nameplate"), (0, i.jsx)(p.A, {
                 sectionTitle: (0, i.jsxs)(i.Fragment, {
                     children: [D.intl.string(D.t.wR5wOo), (0, i.jsx)(r.m, {
                         text: D.intl.string(D.t["5AFxuK"]),
@@ -142,10 +142,10 @@ function M() {
                 }),
                 user: e,
                 guild: n
-            }, "effect"), (0, i.jsx)(p.A, {
-                showRemoveBannerButton: K,
+            }, "effect"), (0, i.jsx)(h.A, {
+                showRemoveBannerButton: W,
                 errors: B?.banner,
-                onBannerChange: e => Q(e, Y?.banner, e => (0, S.p)({
+                onBannerChange: e => J(e, Y?.banner, e => (0, S.p)({
                     guildId: n.id,
                     banner: e
                 })),
@@ -178,7 +178,7 @@ function M() {
                     bio: e
                 }),
                 errors: B?.bio ?? H?.bio,
-                pendingBio: U,
+                pendingBio: k,
                 currentBio: q,
                 disabled: !X
             }, "about")]

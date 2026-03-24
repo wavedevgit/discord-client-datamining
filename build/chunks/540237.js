@@ -1,6 +1,6 @@
 /** chunk id: 540237 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => x
 });
 var i = n(627968),
     s = n(64700),
@@ -12,10 +12,10 @@ var i = n(627968),
     c = n(253932),
     u = n(652215),
     m = n(985018),
-    _ = n(62049),
-    g = n(513653);
+    g = n(62049),
+    _ = n(513653);
 
-function A() {
+function x() {
     let e = c.hH.useSetting(),
         [t] = s.useState(() => {
             let e = (0, a.rh)({
@@ -32,25 +32,25 @@ function A() {
         });
     return (0, i.jsx)(l.M1G, {
         children: (0, i.jsxs)(l.ZpM, {
-            className: _.VH,
+            className: g.VH,
             "aria-hidden": !0,
             children: [(0, i.jsxs)("div", {
-                className: _.yl,
+                className: g.yl,
                 children: [(0, i.jsx)(l.Button, {
                     variant: "primary",
                     size: "sm",
                     text: m.intl.string(m.t["2RHHgz"])
                 }), (0, i.jsx)("div", {
-                    className: _.hD,
+                    className: g.hD,
                     children: [u.clD.ONLINE, u.clD.DND, u.clD.IDLE].map(e => (0, i.jsx)(l.JsQ, {
                         "aria-label": m.intl.string(m.t.lqaIxI),
-                        src: g,
+                        src: _,
                         size: l._3J.SIZE_32,
                         status: e
                     }, e))
                 })]
             }), (0, i.jsx)("div", {
-                className: _.QS,
+                className: g.QS,
                 children: (0, i.jsx)(d.A, {
                     compact: e,
                     author: {

@@ -1,6 +1,6 @@
 /** chunk id: 416426 params = (module,exports,require) **/
 n.d(t, {
-    V: () => g
+    V: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -12,32 +12,32 @@ var i = n(627968),
     c = n(780964),
     u = n(358776),
     m = n(801264),
-    _ = n(985018);
-let g = (0, o.E2)(c.X.ADVANCED_HARDWARE_ACCELERATION, {
+    g = n(985018);
+let _ = (0, o.E2)(c.X.ADVANCED_HARDWARE_ACCELERATION, {
     usePredicate: () => l.Av && !(0, l.cX)(),
-    useSearchTerms: () => [_.intl.string(_.t["/HIxyY"]), _.intl.string(_.t.B0hqpb)],
+    useSearchTerms: () => [g.intl.string(g.t["/HIxyY"]), g.intl.string(g.t.B0hqpb)],
     Component: function() {
-        let [e] = s.useState(() => d.Ay.getEnableHardwareAcceleration()), t = (0, u.bp)("HardwareAccelerationSetting"), n = t ? _.intl.string(_.t["/HIxyY"]) : _.intl.string(_.t["eOC/F2"]), l = t ? _.intl.string(_.t.B0hqpb) : _.intl.string(_.t.Afc7l6);
+        let [e] = s.useState(() => d.Ay.getEnableHardwareAcceleration()), t = (0, u.bp)("HardwareAccelerationSetting"), n = t ? g.intl.string(g.t["/HIxyY"]) : g.intl.string(g.t["eOC/F2"]), l = t ? g.intl.string(g.t.B0hqpb) : g.intl.string(g.t.Afc7l6);
         return (0, i.jsxs)(a.BJc, {
             children: [(0, i.jsx)(a.dOG, {
                 label: n,
                 description: l,
                 checked: e,
-                onChange: A
+                onChange: x
             }), !e && (0, i.jsx)(m.A, {
                 look: m.k.WARNING,
-                children: _.intl.string(_.t.j7S6IX)
+                children: g.intl.string(g.t.j7S6IX)
             })]
         })
     }
 });
 
-function A(e) {
-    let t = e ? _.intl.format(_.t.LYXRxL, {}) : _.intl.format(_.t.uDP3Kz, {});
+function x(e) {
+    let t = e ? g.intl.format(g.t.LYXRxL, {}) : g.intl.format(g.t.uDP3Kz, {});
     (0, r.A)({
-        title: _.intl.string(_.t.aqpAvn),
+        title: g.intl.string(g.t.aqpAvn),
         subtitle: t,
-        confirmText: _.intl.string(_.t.vT7ckk),
+        confirmText: g.intl.string(g.t.vT7ckk),
         onConfirm: () => {
             d.Ay.setEnableHardwareAcceleration(e)
         }

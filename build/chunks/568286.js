@@ -1,6 +1,6 @@
 /** chunk id: 568286 params = (module,exports,require) **/
 n.d(t, {
-    q: () => h
+    q: () => p
 });
 var i = n(627968),
     s = n(64700),
@@ -12,17 +12,17 @@ var i = n(627968),
     c = n(793574),
     u = n(688810),
     m = n(915089),
-    _ = n(250253),
-    g = n(2242),
-    A = n(985018),
-    x = n(289324);
-let p = e => {
+    g = n(250253),
+    _ = n(2242),
+    x = n(985018),
+    A = n(289324);
+let h = e => {
         let {
             transitionState: t,
             groupListing: n,
             listing: l,
-            subscription: p,
-            onClose: h
+            subscription: h,
+            onClose: p
         } = e, f = (0, m.GV)(), {
             analyticsLocations: T
         } = (0, u.Ay)(c.A.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL), {
@@ -45,8 +45,8 @@ let p = e => {
                 submitting: t
             }
         })(T), C = async () => {
-            await E(p.id) && h()
-        }, N = l.role_benefits.benefits.filter(e => e.ref_type === g.bN.CHANNEL), v = l.role_benefits.benefits.filter(e => e.ref_type === g.bN.INTANGIBLE), I = a()(p.currentPeriodEnd).format("MMMM Do, YYYY"), j = A.intl.formatToPlainString(A.t.KsMRP5, {
+            await E(h.id) && p()
+        }, N = l.role_benefits.benefits.filter(e => e.ref_type === _.bN.CHANNEL), v = l.role_benefits.benefits.filter(e => e.ref_type === _.bN.INTANGIBLE), I = a()(h.currentPeriodEnd).format("MMMM Do, YYYY"), j = x.intl.formatToPlainString(x.t.KsMRP5, {
             numChannels: N.length,
             numAdditionalBenefits: v.length,
             subscriptionEndDate: I
@@ -55,33 +55,33 @@ let p = e => {
             transitionState: t,
             "aria-labelledby": f,
             actions: [{
-                text: A.intl.string(A.t.EP6EPb),
+                text: x.intl.string(x.t.EP6EPb),
                 variant: "secondary",
-                onClick: h
+                onClick: p
             }, {
                 variant: "critical-primary",
-                text: A.intl.string(A.t.F6lUDF),
+                text: x.intl.string(x.t.F6lUDF),
                 onClick: C,
                 loading: b
             }],
-            title: A.intl.string(A.t.O6l5tM),
+            title: x.intl.string(x.t.O6l5tM),
             subtitle: j,
-            onClose: h,
+            onClose: p,
             children: (0, i.jsxs)(o.BJc, {
                 gap: 8,
                 children: [null != S ? (0, i.jsx)(o.wx6, {
                     type: "critical",
                     children: S.message
-                }) : null, (0, i.jsx)(_.x, {
+                }) : null, (0, i.jsx)(g.x, {
                     listingId: l.id,
                     guildId: n.guild_id,
-                    className: x.P
+                    className: A.P
                 })]
             })
         })
     },
-    h = e => {
-        (0, o.qfG)(t => (0, i.jsx)(p, {
+    p = e => {
+        (0, o.qfG)(t => (0, i.jsx)(h, {
             ...t,
             ...e
         }))

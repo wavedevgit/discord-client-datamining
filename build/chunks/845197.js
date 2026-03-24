@@ -1,6 +1,6 @@
 /** chunk id: 845197 params = (module,exports,require) **/
 n.d(t, {
-    M: () => h
+    M: () => p
 });
 var i = n(627968),
     s = n(64700),
@@ -12,16 +12,16 @@ var i = n(627968),
     c = n(438732),
     u = n(834981),
     m = n(53719),
-    _ = n(390370),
-    g = n(191627),
-    A = n(842130),
-    x = n(985018),
-    p = n(487693);
+    g = n(390370),
+    _ = n(191627),
+    x = n(842130),
+    A = n(985018),
+    h = n(487693);
 
-function h(e) {
+function p(e) {
     let {
         user: t
-    } = e, l = (0, c.A)(), h = (0, u.xr)(), f = (0, r.bG)([d.default], () => d.default.getCurrentUser()), T = s.useCallback(() => {
+    } = e, l = (0, c.A)(), p = (0, u.xr)(), f = (0, r.bG)([d.default], () => d.default.getCurrentUser()), T = s.useCallback(() => {
         a()(void 0 !== f, "User must be logged in to accept a link request"), (0, o.mMO)(async () => {
             let {
                 default: e
@@ -56,27 +56,27 @@ function h(e) {
         })
     }, [f, t]);
     return (0, i.jsxs)("div", {
-        className: p.kL,
+        className: h.kL,
         children: [(0, i.jsx)("div", {
-            className: p.zH,
-            children: (0, i.jsx)(_.A, {
+            className: h.zH,
+            children: (0, i.jsx)(g.A, {
                 otherUser: t,
-                status: g.Ef.PENDING
+                status: _.Ef.PENDING
             })
         }), (0, i.jsx)("div", {
-            className: p.o1,
+            className: h.o1,
             children: l ? (0, i.jsx)(m.A, {
                 icon: o.PGe,
-                tooltip: x.intl.string(A.default.e5iHmZ),
+                tooltip: A.intl.string(x.default.e5iHmZ),
                 onClick: S
             }) : (0, i.jsxs)(i.Fragment, {
-                children: [h ? null : (0, i.jsx)(m.A, {
+                children: [p ? null : (0, i.jsx)(m.A, {
                     icon: o.A9s,
-                    tooltip: x.intl.string(A.default.krWQZK),
+                    tooltip: A.intl.string(x.default.krWQZK),
                     onClick: T
                 }), (0, i.jsx)(m.A, {
                     icon: o.PGe,
-                    tooltip: x.intl.string(A.default.bBDeNI),
+                    tooltip: A.intl.string(x.default.bBDeNI),
                     onClick: E
                 })]
             })

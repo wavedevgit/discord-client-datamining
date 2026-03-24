@@ -12,12 +12,12 @@ var i = n(627968),
     c = n(73153),
     u = n(631670),
     m = n(974544),
-    _ = n(793574),
-    g = n(688810),
-    A = n(429619),
-    x = n(451909),
-    p = n(550111),
-    h = n(202639),
+    g = n(793574),
+    _ = n(688810),
+    x = n(429619),
+    A = n(451909),
+    h = n(550111),
+    p = n(202639),
     f = n(407217),
     T = n(919395),
     E = n(884546),
@@ -46,8 +46,8 @@ function M() {
             pendingBio: n,
             pendingAvatar: l,
             pendingNameplate: M,
-            showNotice: k,
-            ...U
+            showNotice: U,
+            ...k
         } = (0, r.cf)([N.A], () => ({
             ...N.A.getPendingChanges(),
             showNotice: N.A.showNotice()
@@ -60,47 +60,47 @@ function M() {
             pendingValue: M,
             userValue: e?.collectibles?.nameplate
         }),
-        B = (0, v.A)() && null != n ? x.Ay.parse(void 0, n).content : n,
+        B = (0, v.A)() && null != n ? A.Ay.parse(void 0, n).content : n,
         F = O.Ay.canUsePremiumProfileCustomization(e),
         {
             analyticsLocations: H,
             newestAnalyticsLocation: z
-        } = (0, g.Ay)(_.A.USER_SETTINGS_USER_PROFILE);
+        } = (0, _.Ay)(g.A.USER_SETTINGS_USER_PROFILE);
     s.useEffect(() => () => c.h.wait(u.IM), []);
-    let [Y, X] = s.useState(!1), W = !F, K = s.useRef(null);
-    return t ? (0, i.jsx)(m.A, {}) : (0, i.jsxs)(g.f5, {
+    let [Y, X] = s.useState(!1), K = !F, W = s.useRef(null);
+    return t ? (0, i.jsx)(m.A, {}) : (0, i.jsxs)(_.f5, {
         value: H,
-        children: [(0, i.jsx)(A.A, {}), (0, i.jsx)(E.A, {
+        children: [(0, i.jsx)(x.A, {}), (0, i.jsx)(E.A, {
             profilePreview: (0, i.jsx)(S.A, {
                 user: e,
                 canUsePremiumCustomization: F,
                 onUpsellClick: R.A,
                 pendingBio: B,
-                ...U,
+                ...k,
                 pendingAvatar: w
             }),
-            nameplatePreview: (0, i.jsx)(p.A, {
+            nameplatePreview: (0, i.jsx)(h.A, {
                 user: e,
                 nameplate: V,
-                ...U,
+                ...k,
                 className: null == V ? G.tJ : void 0,
                 isHighlighted: !0
             }),
             children: (0, i.jsx)(L.A, {})
         }), (0, i.jsx)(o.L, {
-            innerRef: K,
+            innerRef: W,
             onChange: e => X(e),
             threshold: .25,
-            active: W,
+            active: K,
             children: (0, i.jsx)("div", {
-                ref: K,
+                ref: W,
                 children: (0, i.jsx)(b.A, {
                     user: e,
-                    shouldShow: W,
+                    shouldShow: K,
                     isVisible: Y
                 })
             })
-        }), W && !k && (0, i.jsx)(h.d, {
+        }), K && !U && (0, i.jsx)(p.d, {
             className: G.EL,
             showUpsell: !Y,
             text: D.intl.format(D.t.TmfgI2, {
@@ -117,7 +117,7 @@ function M() {
                     onClick: () => {
                         y.default.track(P.HAw.TRY_IT_OUT_PRESET_CLICKED, {
                             cta_variant: "floating_action_button"
-                        }), K?.current?.scrollIntoView({
+                        }), W?.current?.scrollIntoView({
                             behavior: "smooth"
                         })
                     },

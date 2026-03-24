@@ -12,12 +12,12 @@ var i = n(627968),
     c = n(723702),
     u = n(780964),
     m = n(801264),
-    _ = n(902713),
-    g = n(428961),
-    A = n(639500),
-    x = n(731854),
-    p = n(985018);
-let h = c.isWindows() ? ["BTHENUM", "BTHHFENUM"] : [];
+    g = n(902713),
+    _ = n(428961),
+    x = n(639500),
+    A = n(731854),
+    h = n(985018);
+let p = c.isWindows() ? ["BTHENUM", "BTHHFENUM"] : [];
 
 function f(e) {
     let {
@@ -29,19 +29,19 @@ function f(e) {
             sourcePage: "voice"
         }), t && (0, i.jsx)(m.A, {
             look: m.k.WARNING,
-            children: p.intl.string(p.t.Ioz3gx)
+            children: h.intl.string(h.t.Ioz3gx)
         })]
     })
 }
 let T = (0, r.zZ)(u.X.VOICE_CATEGORY, {
-    useTitle: () => p.intl.string(p.t.K3lovD),
+    useTitle: () => h.intl.string(h.t.K3lovD),
     useInlineNotice: function() {
         let e = (0, d.I)("voice"),
-            t = (0, a.x5)(x.oh.AUDIO_INPUT),
-            n = (0, a.x5)(x.oh.AUDIO_OUTPUT),
+            t = (0, a.x5)(A.oh.AUDIO_INPUT),
+            n = (0, a.x5)(A.oh.AUDIO_OUTPUT),
             l = s.useMemo(() => {
-                let e = h.some(e => t?.hardwareId?.startsWith(e)),
-                    i = h.some(e => n?.hardwareId?.startsWith(e));
+                let e = p.some(e => t?.hardwareId?.startsWith(e)),
+                    i = p.some(e => n?.hardwareId?.startsWith(e));
                 return e && i && t?.containerId != null && t.containerId === n?.containerId
             }, [t, n]);
         return s.useMemo(() => e.canPrompt || l ? {
@@ -52,5 +52,5 @@ let T = (0, r.zZ)(u.X.VOICE_CATEGORY, {
             })
         } : null, [e.canPrompt, l])
     },
-    buildLayout: () => [_.a, g.d, A.L]
+    buildLayout: () => [g.a, _.d, x.L]
 })

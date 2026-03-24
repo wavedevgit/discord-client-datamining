@@ -12,12 +12,12 @@ var i = n(627968),
     c = n(397927),
     u = n(97260),
     m = n(117178),
-    _ = n(512513),
-    g = n(915967),
-    A = n(775121),
-    x = n(734066),
-    p = n(880144),
-    h = n(168943),
+    g = n(512513),
+    _ = n(915967),
+    x = n(775121),
+    A = n(734066),
+    h = n(880144),
+    p = n(168943),
     f = n(680243),
     T = n(843401),
     E = n(430452),
@@ -37,7 +37,7 @@ function P(e) {
     let {
         children: t
     } = e;
-    return t([g.Q_.MESSAGE, g.Q_.NAVIGATION, g.Q_.DND, g.Q_.CHAT, g.Q_.VOICE_AND_VIDEO, g.Q_.MISCELLANEOUS])
+    return t([_.Q_.MESSAGE, _.Q_.NAVIGATION, _.Q_.DND, _.Q_.CHAT, _.Q_.VOICE_AND_VIDEO, _.Q_.MISCELLANEOUS])
 }
 class D extends s.PureComponent {
     handleActionChanged = e => {
@@ -68,7 +68,7 @@ class D extends s.PureComponent {
         let {
             keybind: e
         } = this.props, t = N.dI(e.shortcut);
-        return A.A.hasBind(t) ? (0, i.jsx)(c.po8, {
+        return x.A.hasBind(t) ? (0, i.jsx)(c.po8, {
             messageType: c.YCn.ERROR,
             children: O.intl.string(O.t["7lQlw3"])
         }) : y.Yy.has(t) ? (0, i.jsx)(c.po8, {
@@ -187,7 +187,7 @@ class G extends s.PureComponent {
             value: j.hCu.TOGGLE_STREAMER_MODE,
             label: O.intl.string(O.t.BK0Ncc)
         }];
-        return (0, h.L)() && l.push({
+        return (0, p.L)() && l.push({
             id: "toggle-camera",
             value: j.hCu.TOGGLE_CAMERA,
             label: O.intl.string(O.t.hf8JVT)
@@ -254,7 +254,7 @@ class G extends s.PureComponent {
             [j.hCu.TOGGLE_STREAMER_MODE]: O.intl.string(O.t.YszLLx),
             [j.hCu.VAD_PRIORITY]: O.intl.string(O.t.rSe8IZ)
         };
-        return (0, h.L)() && (s[j.hCu.TOGGLE_CAMERA] = O.intl.string(O.t.v1JBtL)), e && (s[j.hCu.TOGGLE_OVERLAY_INPUT_LOCK] = O.intl.string(O.t.IoP5vc)), t && (0, C.isWindows)() && (s[j.hCu.TOGGLE_GO_LIVE_STREAMING] = O.intl.string(O.t.s4C238)), (0, C.isDesktop)() && (s[j.hCu.NAVIGATE_BACK] = O.intl.string(O.t.nKDlEt), s[j.hCu.NAVIGATE_FORWARD] = O.intl.string(O.t.DK0FFk), s[j.hCu.SOUNDBOARD] = (0, C.isWindows)() ? O.intl.string(O.t["5wJefL"]) : O.intl.string(O.t.gzjsSP), s[j.hCu.SOUNDBOARD_HOLD] = (0, C.isWindows)() ? O.intl.string(O.t.RRkZc9) : O.intl.string(O.t.laNlTl), n && (s[j.hCu.SAVE_CLIP] = O.intl.string(O.t.z3Wbam), i && (s[j.hCu.SAVE_SCREENSHOT] = O.intl.string(O.t.m0zd57)))), s
+        return (0, p.L)() && (s[j.hCu.TOGGLE_CAMERA] = O.intl.string(O.t.v1JBtL)), e && (s[j.hCu.TOGGLE_OVERLAY_INPUT_LOCK] = O.intl.string(O.t.IoP5vc)), t && (0, C.isWindows)() && (s[j.hCu.TOGGLE_GO_LIVE_STREAMING] = O.intl.string(O.t.s4C238)), (0, C.isDesktop)() && (s[j.hCu.NAVIGATE_BACK] = O.intl.string(O.t.nKDlEt), s[j.hCu.NAVIGATE_FORWARD] = O.intl.string(O.t.DK0FFk), s[j.hCu.SOUNDBOARD] = (0, C.isWindows)() ? O.intl.string(O.t["5wJefL"]) : O.intl.string(O.t.gzjsSP), s[j.hCu.SOUNDBOARD_HOLD] = (0, C.isWindows)() ? O.intl.string(O.t.RRkZc9) : O.intl.string(O.t.laNlTl), n && (s[j.hCu.SAVE_CLIP] = O.intl.string(O.t.z3Wbam), i && (s[j.hCu.SAVE_SCREENSHOT] = O.intl.string(O.t.m0zd57)))), s
     }
     handleAddKeybind = () => {
         u.A.addKeybind()
@@ -284,7 +284,7 @@ class G extends s.PureComponent {
         let {
             enableClips: e,
             enableScreenshotKeybind: t
-        } = this.props, n = a()(this.props.keybinds).reject(e => e.managed && ![j.hCu.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, j.hCu.SAVE_CLIP, j.hCu.SAVE_SCREENSHOT].includes(e.action)).reject(t => !e && (t.action === j.hCu.SAVE_CLIP || t.action === j.hCu.SAVE_SCREENSHOT)).reject(e => !t && e.action === j.hCu.SAVE_SCREENSHOT).reject(e => !this.props.allowSoundboard && (e.action === j.hCu.SOUNDBOARD || e.action === j.hCu.SOUNDBOARD_HOLD)).sortBy(e => e.id).sortBy(e => !0 === e.managed ? -1 : 0).value(), l = a()((0, g.Bx)()).filter(e => e.description !== O.intl.string(O.t.HnNtEI)).groupBy(e => e.group).value();
+        } = this.props, n = a()(this.props.keybinds).reject(e => e.managed && ![j.hCu.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, j.hCu.SAVE_CLIP, j.hCu.SAVE_SCREENSHOT].includes(e.action)).reject(t => !e && (t.action === j.hCu.SAVE_CLIP || t.action === j.hCu.SAVE_SCREENSHOT)).reject(e => !t && e.action === j.hCu.SAVE_SCREENSHOT).reject(e => !this.props.allowSoundboard && (e.action === j.hCu.SOUNDBOARD || e.action === j.hCu.SOUNDBOARD_HOLD)).sortBy(e => e.id).sortBy(e => !0 === e.managed ? -1 : 0).value(), l = a()((0, _.Bx)()).filter(e => e.description !== O.intl.string(O.t.HnNtEI)).groupBy(e => e.group).value();
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(v.A, {
                 title: O.intl.string(O.t.T9DA2K),
@@ -328,7 +328,7 @@ class G extends s.PureComponent {
                             }), (0, i.jsx)("div", {
                                 className: R.DM,
                                 children: (0, i.jsx)(c.e7I, {
-                                    shortcut: _.z.binds["0"],
+                                    shortcut: g.z.binds["0"],
                                     className: R.LE
                                 })
                             })]
@@ -337,8 +337,8 @@ class G extends s.PureComponent {
                 }), (0, i.jsx)(P, {
                     children: e => (0, i.jsx)(i.Fragment, {
                         children: e.map((e, t) => {
-                            let n = (0, g.Gm)(e),
-                                a = (0, g.zF)(e),
+                            let n = (0, _.Gm)(e),
+                                a = (0, _.zF)(e),
                                 r = l[e];
                             return (0, i.jsx)(c.nVY, {
                                 label: n,
@@ -375,10 +375,10 @@ function M() {
         u.A.enableAll(!0)
     }), []);
     let e = (0, r.bG)([S.Ay], () => S.Ay.getState()),
-        t = (0, r.bG)([E.Ay], () => (0, p.A)(E.Ay)),
+        t = (0, r.bG)([E.Ay], () => (0, h.A)(E.Ay)),
         n = (0, r.bG)([f.A], () => f.A.isSupported),
-        l = (0, x.sw)(),
-        a = (0, x.BW)();
+        l = (0, A.sw)(),
+        a = (0, A.BW)();
     return (0, i.jsx)(G, {
         keybinds: e,
         canGoLive: t,

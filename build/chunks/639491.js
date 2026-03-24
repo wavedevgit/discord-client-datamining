@@ -1,6 +1,6 @@
 /** chunk id: 639491 params = (module,exports,require) **/
 n.d(t, {
-    q: () => p
+    q: () => h
 }), n(667532);
 var i = n(627968);
 n(64700);
@@ -13,18 +13,18 @@ var s = n(873298),
     c = n(771888),
     u = n(171316),
     m = n(945276),
-    _ = n(562783),
-    g = n(290389),
-    A = n(985018),
-    x = n(842130);
+    g = n(562783),
+    _ = n(290389),
+    x = n(985018),
+    A = n(842130);
 
-function p() {
+function h() {
     let e = (0, m.A)() ?? !0,
         t = (0, u.uM)(),
         n = (0, c.G)(),
         {
-            goreContentGuilds: p,
-            goreContentFriendDm: h,
+            goreContentGuilds: h,
+            goreContentFriendDm: p,
             goreContentNonFriendDm: f
         } = (0, d.g)(),
         T = e => {
@@ -35,51 +35,51 @@ function p() {
         },
         E = [{
             value: s.TO.BLUR,
-            label: A.intl.string(A.t.S49Uad)
+            label: x.intl.string(x.t.S49Uad)
         }, {
             value: s.TO.BLOCK,
-            label: A.intl.string(A.t["D/157Y"])
+            label: x.intl.string(x.t["D/157Y"])
         }],
         S = [{
             value: s.TO.BLUR,
-            label: A.intl.string(A.t.S49Uad)
+            label: x.intl.string(x.t.S49Uad)
         }],
         b = {
             value: s.TO.SHOW,
-            label: A.intl.string(A.t["5k5OFp"])
+            label: x.intl.string(x.t["5k5OFp"])
         };
     e && (E.unshift(b), S.unshift(b));
     let C = {
         isDisabled: n,
-        tooltipText: t ? A.intl.string(x.default["6Af/cw"]) : void 0
+        tooltipText: t ? x.intl.string(A.default["6Af/cw"]) : void 0
     };
-    return (0, i.jsxs)(_.E, {
-        description: A.intl.string(A.t.XgH9eh),
-        children: [(0, i.jsx)(g.A, {
-            title: A.intl.string(A.t["+uI23H"]),
-            value: h,
+    return (0, i.jsxs)(g.E, {
+        description: x.intl.string(x.t.XgH9eh),
+        children: [(0, i.jsx)(_.A, {
+            title: x.intl.string(x.t["+uI23H"]),
+            value: p,
             onChange: e => T({
                 goreContentFriendDm: e
             }),
             options: E,
             ...C
-        }), (0, i.jsx)(g.A, {
-            title: A.intl.string(A.t["Yh+HX1"]),
+        }), (0, i.jsx)(_.A, {
+            title: x.intl.string(x.t["Yh+HX1"]),
             value: f,
             onChange: e => T({
                 goreContentNonFriendDm: e
             }),
             options: E,
             ...C
-        }), (0, i.jsx)(g.A, {
-            title: A.intl.string(A.t["FP+a42"]),
-            value: p,
+        }), (0, i.jsx)(_.A, {
+            title: x.intl.string(x.t["FP+a42"]),
+            value: h,
             onChange: e => T({
                 goreContentGuilds: e
             }),
             isDisabled: !e || n,
             options: S,
-            tooltipText: t ? A.intl.string(x.default["6Af/cw"]) : void 0
+            tooltipText: t ? x.intl.string(A.default["6Af/cw"]) : void 0
         })]
     })
 }

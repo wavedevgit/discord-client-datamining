@@ -1,6 +1,6 @@
 /** chunk id: 373169 params = (module,exports,require) **/
 n.d(t, {
-    p: () => g
+    p: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -12,12 +12,12 @@ var i = n(627968),
     c = n(840065),
     u = n(985018),
     m = n(58477),
-    _ = n(72290);
+    g = n(72290);
 
-function g() {
+function _() {
     let e = (0, l.bG)([o.default], () => o.default.locale),
-        [t, g] = s.useState(e),
-        A = s.useMemo(() => (0, u.getAvailableLocales)().map(e => {
+        [t, _] = s.useState(e),
+        x = s.useMemo(() => (0, u.getAvailableLocales)().map(e => {
             let t;
             try {
                 t = n(579832)(`./${e.value}.png`)
@@ -43,8 +43,8 @@ function g() {
                 })
             }
         }), []),
-        x = s.useCallback(e => {
-            g(e), _.nextTick(() => {
+        A = s.useCallback(e => {
+            _(e), g.nextTick(() => {
                 r.Ay.updateLocale(e), (0, a.OoC)(c.USER_SETTINGS_MODAL_KEY) && (0, c.openUserSettings)(d.X.LANGUAGE_AND_TIME_PANEL)
             })
         }, []);
@@ -53,7 +53,7 @@ function g() {
         label: u.intl.string(u.t["mx+sp7"]),
         description: u.intl.string(u.t.rTPlcq),
         value: t,
-        options: A,
-        onSelectionChange: x
+        options: x,
+        onSelectionChange: A
     })
 }

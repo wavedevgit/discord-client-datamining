@@ -18,20 +18,20 @@ function m(e) {
         labelHook: n,
         count: l,
         dismissNotice: m,
-        className: _,
-        noticeType: g
-    } = e, A = null != m;
+        className: g,
+        noticeType: _
+    } = e, x = null != m;
     s.useEffect(() => {
-        (0, o.N)(g, d.YX.VIEWED)
-    }, [g]);
-    let x = s.useCallback(() => {
-            null != m && (m(), (0, o.N)(g, d.YX.DISMISS))
-        }, [g, m]),
-        p = s.useCallback(() => {
-            n(), (0, o.N)(g, d.YX.LEARN_MORE)
-        }, [g, n]);
+        (0, o.N)(_, d.YX.VIEWED)
+    }, [_]);
+    let A = s.useCallback(() => {
+            null != m && (m(), (0, o.N)(_, d.YX.DISMISS))
+        }, [_, m]),
+        h = s.useCallback(() => {
+            n(), (0, o.N)(_, d.YX.LEARN_MORE)
+        }, [_, n]);
     return (0, i.jsxs)("div", {
-        className: a()(u.I, _),
+        className: a()(u.I, g),
         children: [(0, i.jsx)(r.mir, {
             size: "md"
         }), (0, i.jsx)(r.Text, {
@@ -39,19 +39,19 @@ function m(e) {
             color: "interactive-text-active",
             children: null != l ? c.intl.format(t, {
                 hook: (e, t) => (0, i.jsx)(r.MzZ, {
-                    onClick: p,
+                    onClick: h,
                     children: e
                 }, t),
                 count: l
             }) : c.intl.format(t, {
                 hook: (e, t) => (0, i.jsx)(r.MzZ, {
-                    onClick: p,
+                    onClick: h,
                     children: e
                 }, t)
             })
-        }), A && (0, i.jsx)(r.DUT, {
+        }), x && (0, i.jsx)(r.DUT, {
             className: u.b,
-            onClick: x,
+            onClick: A,
             children: (0, i.jsx)(r.PGe, {})
         })]
     })

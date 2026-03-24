@@ -1,6 +1,6 @@
 /** chunk id: 362111 params = (module,exports,require) **/
 n.d(t, {
-    default: () => _
+    default: () => g
 });
 var i = n(627968);
 n(64700);
@@ -20,11 +20,11 @@ function m(e) {
         onClose: s,
         onAddPaymentSource: r,
         toastContent: m,
-        initialStep: _ = o.pn.PAYMENT_TYPE,
-        overwriteSubscriptionPaymentSource: g = !1
-    } = e, A = (0, d.KP)(), x = (0, d.Y)({
-        paymentModalArgs: A,
-        initialStep: _,
+        initialStep: g = o.pn.PAYMENT_TYPE,
+        overwriteSubscriptionPaymentSource: _ = !1
+    } = e, x = (0, d.KP)(), A = (0, d.Y)({
+        paymentModalArgs: x,
+        initialStep: g,
         prependSteps: [],
         appendSteps: [],
         onReturn: () => {
@@ -40,7 +40,7 @@ function m(e) {
         analyticsLocation: n,
         hideBreadcrumbs: !0,
         toastContent: m,
-        overwriteSubscriptionPaymentSource: g
+        overwriteSubscriptionPaymentSource: _
     });
     return (0, i.jsx)(a.dWK, {
         transitionState: t,
@@ -52,12 +52,12 @@ function m(e) {
             onSubmit: function(e) {
                 e.preventDefault()
             },
-            children: x
+            children: A
         })
     })
 }
 
-function _(e) {
+function g(e) {
     return (0, i.jsx)(r.PaymentContextProvider, {
         activeSubscription: null,
         stepConfigs: [],

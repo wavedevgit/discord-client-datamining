@@ -18,17 +18,17 @@ function o(e) {
         useSubtitle: c,
         useOptions: u,
         usePersistentBadge: m,
-        getDismissibleBadges: _
-    } = t, g = d(), A = c?.(), x = n(), p = u(), h = m?.(), f = _?.(), T = (0, l.A)({
-        persistentBadge: h,
+        getDismissibleBadges: g
+    } = t, _ = d(), x = c?.(), A = n(), h = u(), p = m?.(), f = g?.(), T = (0, l.A)({
+        persistentBadge: p,
         dismissibleBadges: f
     }), E = (0, a.q)(t);
     return (0, i.jsx)(r.L, {
         children: (0, i.jsx)(s.z6M, {
-            label: g,
-            description: A,
-            options: p,
-            value: x,
+            label: _,
+            description: x,
+            options: h,
+            value: A,
             badge: T,
             onChange: e => {
                 E(), o(e)

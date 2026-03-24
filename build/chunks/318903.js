@@ -18,16 +18,16 @@ function u(e) {
         destinationKey: n,
         useTrailingDecoration: u,
         useTitle: m,
-        useSubtitle: _
-    } = t, g = u?.(), A = _?.(), {
-        parentPanelNode: x,
-        parentSidebarItemNode: p
-    } = (0, a.x)(n), h = m?.(), f = x?.useTitle?.(), T = h ?? f, E = (0, r.q)(t);
-    if (null == x || null == T) return null;
-    let S = null != p ? p.icon : void 0;
+        useSubtitle: g
+    } = t, _ = u?.(), x = g?.(), {
+        parentPanelNode: A,
+        parentSidebarItemNode: h
+    } = (0, a.x)(n), p = m?.(), f = A?.useTitle?.(), T = p ?? f, E = (0, r.q)(t);
+    if (null == A || null == T) return null;
+    let S = null != h ? h.icon : void 0;
     return (0, i.jsx)(o.U, {
         title: T,
-        description: A,
+        description: x,
         leadingElement: null != S && (0, i.jsx)("div", {
             className: c.z,
             children: (0, i.jsx)(S, {
@@ -36,8 +36,8 @@ function u(e) {
         }),
         trailingElement: (0, i.jsxs)("div", {
             className: c.M,
-            children: [null != g && (0, i.jsx)(d.Q, {
-                decoration: g
+            children: [null != _ && (0, i.jsx)(d.Q, {
+                decoration: _
             }), (0, i.jsx)(s.uhT, {})]
         }),
         onClick: () => {

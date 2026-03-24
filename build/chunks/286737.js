@@ -1,6 +1,6 @@
 /** chunk id: 286737 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => h
 });
 var a = n(627968),
     l = n(64700),
@@ -14,22 +14,22 @@ var a = n(627968),
     m = n(985018),
     x = n(409861);
 
-function _(e) {
+function h(e) {
     let {
         trackAction: t
     } = e, {
         fetchedAuthorization: n,
-        hasAlreadyLinked: _,
+        hasAlreadyLinked: h,
         canStartAuthorization: f,
         startAuthorization: g,
-        connectionApp: h,
+        connectionApp: _,
         officialInvite: p
     } = (0, u.c)(), v = (0, i.bG)([o.default], () => o.default.getCurrentUser()), A = l.useCallback(() => {
         t(d.Ws.LinkAccount), g({
             analyticsLocations: ["game_profile"]
         })
     }, [t, g]);
-    if (!n || null == h || !f || _ || null == v) return null;
+    if (!n || null == _ || !f || h || null == v) return null;
     let j = p?.guild != null ? c.Ay.getGuildSplashURL({
         id: p.guild.id,
         splash: p.guild.splash
@@ -50,7 +50,7 @@ function _(e) {
             }) : (0, a.jsx)("div", {
                 className: x.sB,
                 children: (0, a.jsx)(s.default, {
-                    application: h
+                    application: _
                 })
             }), (0, a.jsxs)("div", {
                 className: x.hQ,
@@ -60,7 +60,7 @@ function _(e) {
                         variant: "heading-md/semibold",
                         color: "text-default",
                         children: m.intl.formatToPlainString(m.t.hUbQT2, {
-                            gameName: h.name
+                            gameName: _.name
                         })
                     }), (0, a.jsx)(r.Text, {
                         variant: "text-sm/medium",

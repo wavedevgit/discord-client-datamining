@@ -18,7 +18,7 @@ function d(e) {
         m = a.useMemo(() => null != d ? [d] : [], [d]),
         {
             recommendations: x,
-            status: _
+            status: h
         } = (0, o.XQ)({
             applicationIds: m,
             userIds: n,
@@ -26,10 +26,10 @@ function d(e) {
             source: s.B5.USER_PROFILE
         });
     return {
-        socialLayerStorefrontRecommendationsData: a.useMemo(() => null == u || null == u.guildId || "success" !== _ || 0 === x.length ? null : {
+        socialLayerStorefrontRecommendationsData: a.useMemo(() => null == u || null == u.guildId || "success" !== h || 0 === x.length ? null : {
             application: u,
             skuIds: x.map(e => e.id),
             guildId: u.guildId
-        }, [u, _, x])
+        }, [u, h, x])
     }
 }

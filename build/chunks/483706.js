@@ -12,12 +12,12 @@ var i = n(627968),
     c = n(12901),
     u = n(840065),
     m = n(899847),
-    _ = n(936926),
-    g = n(809697),
-    A = n(153739),
-    x = n(534654),
-    p = n(834981),
-    h = n(191627),
+    g = n(936926),
+    _ = n(809697),
+    x = n(153739),
+    A = n(534654),
+    h = n(834981),
+    p = n(191627),
     f = n(842130),
     T = n(985018),
     E = n(191248);
@@ -48,7 +48,7 @@ let S = e => {
         })
     },
     b = () => {
-        let e = (0, p.vx)(),
+        let e = (0, h.vx)(),
             t = () => {
                 (0, u.openUserSettings)(d.X.CONTENT_AND_SOCIAL_PANEL)
             };
@@ -90,7 +90,7 @@ let S = e => {
     C = e => {
         let {
             teenId: t
-        } = e, s = (0, A.y3)(), r = s?.restrictedSchedule?.rules.length ?? 0;
+        } = e, s = (0, x.y3)(), r = s?.restrictedSchedule?.rules.length ?? 0;
         return (0, i.jsxs)(l.BJc, {
             padding: {
                 top: 12,
@@ -132,12 +132,12 @@ let S = e => {
         })
     },
     N = () => {
-        let e = (0, A.y3)(),
-            t = (0, A.tl)(),
+        let e = (0, x.y3)(),
+            t = (0, x.tl)(),
             {
                 handleTabChange: n
-            } = (0, g.A)(),
-            a = (0, _.Vh)({
+            } = (0, _.A)(),
+            a = (0, g.Vh)({
                 location: "TimeControlsRow"
             });
         s.useEffect(() => {
@@ -161,13 +161,13 @@ let S = e => {
             }), (0, i.jsx)(S, {
                 title: T.intl.string(T.t["+o1pDZ"]),
                 buttonText: T.intl.string(T.t.bt75uw),
-                onButtonPress: () => r(h.u9.CONTENT_AND_SOCIAL)
+                onButtonPress: () => r(p.u9.CONTENT_AND_SOCIAL)
             }), (0, i.jsx)(o.A, {
                 className: E.yF
             }), (0, i.jsx)(S, {
                 title: T.intl.string(T.t.OAuOHD),
                 buttonText: T.intl.string(T.t.bt75uw),
-                onButtonPress: () => r(h.u9.DATA_AND_PRIVACY)
+                onButtonPress: () => r(p.u9.DATA_AND_PRIVACY)
             }), a && e?.id != null && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(o.A, {
                     className: E.yF
@@ -178,8 +178,8 @@ let S = e => {
         })
     },
     v = () => {
-        let e = (0, x.A)();
-        return 0 === (0, p.vx)().length ? null : (0, i.jsx)("div", {
+        let e = (0, A.A)();
+        return 0 === (0, h.vx)().length ? null : (0, i.jsx)("div", {
             className: E.kL,
             children: e ? (0, i.jsx)(b, {}) : (0, i.jsx)(N, {})
         })

@@ -12,28 +12,28 @@ var i = n(64700),
     c = n(287809),
     u = n(954571),
     m = n(695515),
-    _ = n(809697),
-    g = n(500470),
-    A = n(33666),
-    x = n(834981),
-    p = n(191627),
-    h = n(652215),
+    g = n(809697),
+    _ = n(500470),
+    x = n(33666),
+    A = n(834981),
+    h = n(191627),
+    p = n(652215),
     f = n(204925);
 
 function T(e) {
     let {
         location: t,
         onMountEffect: n
-    } = e, T = (0, A.A)(), E = (0, x.W1)(), {
+    } = e, T = (0, x.A)(), E = (0, A.W1)(), {
         familyCenterInitialized: S,
         isLoading: b
     } = (0, l.cf)([m.A], () => ({
         familyCenterInitialized: m.A.getIsInitialized(),
         isLoading: m.A.isLoading()
-    })), C = (0, g.k)(), {
+    })), C = (0, _.k)(), {
         selectedTab: N,
         handleTabChange: v
-    } = (0, _.A)(), I = c.default.getCurrentUser(), j = null != T, y = S && null != I && !j;
+    } = (0, g.A)(), I = c.default.getCurrentUser(), j = null != T, y = S && null != I && !j;
     (0, a.Ay)(() => {
         (0, d.d)("family-center"), null != n && n()
     });
@@ -54,12 +54,12 @@ function T(e) {
                 selectedTab: i,
                 selectedTeenId: l
             } = R.current;
-            u.default.track(h.HAw.FAMILY_CENTER_VIEWED, {
+            u.default.track(p.HAw.FAMILY_CENTER_VIEWED, {
                 is_considered_adult: e,
                 num_of_accepted_links: n,
                 selected_teen_id: l,
-                initial_page: p.zu[i],
-                source: p.iN[t]
+                initial_page: h.zu[i],
+                source: h.iN[t]
             }), o.A.increment({
                 name: s.K.FAMILY_CENTER_VIEW
             })

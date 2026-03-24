@@ -27,8 +27,8 @@ let R = e => {
         descriptionCta: R,
         previewImage: x,
         videoUrl: E,
-        shouldLoadVideo: C,
-        index: v,
+        shouldLoadVideo: v,
+        index: C,
         customVideoStyle: N,
         isReducedMotion: I,
         onClick: S,
@@ -36,25 +36,25 @@ let R = e => {
         badgeVariant: P = "gradient",
         size: y,
         backgroundVideoUrl: D,
-        previewImageStyle: O = A.Tb.CONTAINED,
-        actions: j
-    } = e, U = (0, b.TM)(), M = r.useRef(null), w = r.useRef(0), L = r.useRef(null), B = r.useRef(!1), k = (0, u.A)("(min-width: 1140px)"), G = O === A.Tb.OVERLAY && (y !== A.A0.LARGE || !k), V = y === A.A0.LARGE && k && O === A.Tb.OVERLAY, Y = null != D && k && y === A.A0.LARGE, W = r.useMemo(() => (0, i.debounce)(() => {
+        previewImageStyle: j = A.Tb.CONTAINED,
+        actions: O
+    } = e, U = (0, b.TM)(), M = r.useRef(null), L = r.useRef(0), w = r.useRef(null), B = r.useRef(!1), k = (0, u.A)("(min-width: 1140px)"), G = j === A.Tb.OVERLAY && (y !== A.A0.LARGE || !k), V = y === A.A0.LARGE && k && j === A.Tb.OVERLAY, Y = null != D && k && y === A.A0.LARGE, W = r.useMemo(() => (0, i.debounce)(() => {
         f.default.track(h.HAw.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED, {
             box_type: (0, i.snakeCase)(t)
         })
     }, 800), [t]), H = () => {
-        null == M.current || I || (M.current.currentTime = w.current, M.current.play())
+        null == M.current || I || (M.current.currentTime = L.current, M.current.play())
     }, F = () => {
-        null == M.current || I || (w.current = M.current.currentTime, M.current.pause())
+        null == M.current || I || (L.current = M.current.currentTime, M.current.pause())
     }, K = y === A.A0.LARGE ? "heading-xxl/bold" : "heading-xl/bold", X = () => {
         let e = null != R && null != S,
-            t = null != j && j.length > 0;
+            t = null != O && O.length > 0;
         if (!e && !t) return null;
         let a = e ? [{
             variant: "secondary",
             onClick: S,
             text: R
-        }] : j;
+        }] : O;
         return (0, n.jsx)("div", {
             className: g.bentoBoxButton,
             children: (0, n.jsx)(c.ButtonGroup, {
@@ -109,7 +109,7 @@ let R = e => {
         className: l()(g.boxArtContainer, g[`${y}`]),
         children: (0, n.jsx)(p.A, {
             playsInline: !0,
-            preload: C ? "auto" : "none",
+            preload: v ? "auto" : "none",
             muted: !0,
             poster: x,
             loop: !0,
@@ -122,9 +122,9 @@ let R = e => {
                 type: U ? _.a.MP4 : _.a.WEBM
             })
         }, E)
-    }), J = v % 2 != 0;
+    }), q = C % 2 != 0;
     return (0, n.jsx)(d.L, {
-        innerRef: L,
+        innerRef: w,
         onChange: e => {
             e && !B.current && (B.current = !0, f.default.track(h.HAw.PREMIUM_MARKETING_BENTO_BOX_IMPRESSION, {
                 box_type: (0, i.snakeCase)(t)
@@ -132,7 +132,7 @@ let R = e => {
         },
         threshold: .5,
         children: (0, n.jsxs)(c.hLv, {
-            ref: L,
+            ref: w,
             id: t,
             className: l()(g.backgroundColor, g.boxContainer, g[`${y}`], g.gradientBackground, G && g.overlayImageMode, V && g.overlayMode),
             onMouseEnter: H,
@@ -143,11 +143,11 @@ let R = e => {
             children: [Y && (0, n.jsx)("div", {
                 className: g.backgroundVideoContainer,
                 children: (0, n.jsx)(m.A, {
-                    preload: C ? "auto" : "none",
+                    preload: v ? "auto" : "none",
                     className: g.backgroundVideo,
                     src: D
                 })
-            }), (0, n.jsx)(() => J ? (0, n.jsxs)(n.Fragment, {
+            }), (0, n.jsx)(() => q ? (0, n.jsxs)(n.Fragment, {
                 children: [(0, n.jsx)($, {}), (0, n.jsx)(z, {})]
             }) : (0, n.jsxs)(n.Fragment, {
                 children: [(0, n.jsx)(z, {}), (0, n.jsx)($, {})]

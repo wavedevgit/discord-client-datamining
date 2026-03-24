@@ -33,13 +33,13 @@ function x() {
     }, [e, t]);
     if (null == e) return null;
     let {
-        skuIds: _
+        skuIds: h
     } = e;
     return (0, a.jsx)(u.A, {
         title: m.intl.string(m.t.WDdlUb),
         onClickViewAll: n,
         children: (0, a.jsx)(c.R, {
-            skuIds: _,
+            skuIds: h,
             analyticsLocations: t,
             onCardClick: x
         })

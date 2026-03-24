@@ -1,6 +1,6 @@
 /** chunk id: 464639 params = (module,exports,require) **/
 n.d(t, {
-    e: () => _
+    e: () => g
 });
 var i = n(311907),
     s = n(827343),
@@ -26,7 +26,7 @@ let c = (0, l.sN)(r.X.VOICE_GLOBAL_ATTENUATION_SLIDER, {
         useValue: () => (0, i.bG)([a.Ay], () => a.Ay.getAttenuateWhileSpeakingOthers()),
         setValue: e => s.A.setAttenuation(a.Ay.getAttenuation(), a.Ay.getAttenuateWhileSpeakingSelf(), e)
     }),
-    _ = (0, l.FW)(r.X.VOICE_GLOBAL_ATTENUATION_FIELD_SET, {
+    g = (0, l.FW)(r.X.VOICE_GLOBAL_ATTENUATION_FIELD_SET, {
         variant: "compact",
         useTitle: () => d.intl.string(d.t.oSdBvW),
         useSubtitle: () => d.intl.string(d.t["0A/8Rt"]),

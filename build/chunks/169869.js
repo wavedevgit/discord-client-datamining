@@ -1,12 +1,12 @@
 /** chunk id: 169869 params = (module,exports,require) **/
 n.d(t, {
-    ED: () => x,
+    ED: () => A,
     HU: () => T,
     VW: () => E,
-    dy: () => p,
-    gZ: () => h,
+    dy: () => h,
+    gZ: () => p,
     ub: () => f,
-    xE: () => A
+    xE: () => x
 }), n(321073);
 var i = n(627968);
 n(64700);
@@ -19,10 +19,10 @@ var s = n(503698),
     c = n(252424),
     u = n(370480),
     m = n(783419),
-    _ = n(985018),
-    g = n(115057);
+    g = n(985018),
+    _ = n(115057);
 
-function A(e) {
+function x(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : void 0,
         n = [],
         s = Number(e[m.pK.REDDIT_TOTAL_KARMA] ?? -1),
@@ -31,17 +31,17 @@ function A(e) {
     return s > -1 && n.push((0, i.jsx)(S, {
         className: t,
         count: s,
-        label: _.t.SbCNox
+        label: g.t.SbCNox
     }, m.pK.REDDIT_TOTAL_KARMA)), l && n.push((0, i.jsx)(N, {
         className: t,
-        label: _.intl.string(_.t["06rDHU"])
+        label: g.intl.string(g.t["06rDHU"])
     }, m.pK.REDDIT_GOLD)), a && n.push((0, i.jsx)(N, {
         className: t,
-        label: _.intl.string(_.t.oWM95M)
+        label: g.intl.string(g.t.oWM95M)
     }, m.pK.REDDIT_MOD)), n
 }
 
-function x(e) {
+function A(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : void 0,
         n = [],
         s = Number(e[m.pK.TWITTER_STATUSES_COUNT] ?? -1),
@@ -49,15 +49,15 @@ function x(e) {
     return s > -1 && n.push((0, i.jsx)(S, {
         className: t,
         count: s,
-        label: _.t.llwqqe
+        label: g.t.llwqqe
     }, m.pK.TWITTER_STATUSES_COUNT)), l > -1 && n.push((0, i.jsx)(S, {
         className: t,
         count: l,
-        label: _.t.LMNOUQ
+        label: g.t.LMNOUQ
     }, m.pK.TWITTER_FOLLOWERS_COUNT)), n
 }
 
-function p(e) {
+function h(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : void 0,
         s = [],
         l = Number(e[m.pK.STEAM_GAME_COUNT] ?? -1),
@@ -66,30 +66,30 @@ function p(e) {
     return l > -1 && s.push((0, i.jsx)(S, {
         className: t,
         count: l,
-        label: _.t["ppXMu/"]
+        label: g.t["ppXMu/"]
     }, m.pK.STEAM_GAME_COUNT)), a > -1 && s.push((0, i.jsx)(C, {
         className: t,
-        label: _.intl.format(_.t.Y88M5x, {
+        label: g.intl.format(g.t.Y88M5x, {
             count: a
         }),
         imageSrc: n(455070),
-        imageAlt: _.intl.string(_.t.HKUEZo)
+        imageAlt: g.intl.string(g.t.HKUEZo)
     }, m.pK.STEAM_ITEM_COUNT_DOTA2)), r > -1 && s.push((0, i.jsx)(C, {
         className: t,
-        label: _.intl.format(_.t.Y88M5x, {
+        label: g.intl.format(g.t.Y88M5x, {
             count: r
         }),
         imageSrc: n(101554),
-        imageAlt: _.intl.string(_.t.C8p1Sh)
+        imageAlt: g.intl.string(g.t.C8p1Sh)
     }, m.pK.STEAM_ITEM_COUNT_TF2)), s
 }
 
-function h(e) {
+function p(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : void 0,
         n = [];
     return "1" === e[m.pK.PAYPAL_VERIFIED] && n.push((0, i.jsx)(N, {
-        className: l()(t, g.wI),
-        label: _.intl.string(_.t.IhXLyx)
+        className: l()(t, _.wI),
+        label: g.intl.string(g.t.IhXLyx)
     }, m.pK.PAYPAL_VERIFIED)), n
 }
 
@@ -101,11 +101,11 @@ function f(e) {
     return s > 0 && n.push((0, i.jsx)(S, {
         className: t,
         count: s,
-        label: _.t.YmL22d,
+        label: g.t.YmL22d,
         percent: !0
     }, m.pK.EBAY_POSITIVE_FEEDBACK_PERCENTAGE)), l && n.push((0, i.jsx)(N, {
         className: t,
-        label: _.intl.string(_.t.TEEYwa)
+        label: g.intl.string(g.t.TEEYwa)
     }, m.pK.EBAY_TOP_RATED_SELLER)), n
 }
 
@@ -119,18 +119,18 @@ function T(e) {
     return l > -1 && n.push((0, i.jsx)(S, {
         className: t,
         count: l,
-        label: _.t["Mpm/Bc"]
+        label: g.t["Mpm/Bc"]
     }, m.pK.TIKTOK_FOLLOWER_COUNT)), a > -1 && n.push((0, i.jsx)(S, {
         className: t,
         count: a,
-        label: _.t.ftf12v
+        label: g.t.ftf12v
     }, m.pK.TIKTOK_FOLLOWING_COUNT)), r > -1 && n.push((0, i.jsx)(S, {
         className: t,
         count: r,
-        label: _.t.Qwhe5j
+        label: g.t.Qwhe5j
     }, m.pK.TIKTOK_LIKES_COUNT)), s && n.push((0, i.jsx)(N, {
         className: t,
-        label: _.intl.string(_.t.QHHwRR)
+        label: g.intl.string(g.t.QHHwRR)
     }, m.pK.TIKTOK_VERIFIED)), n
 }
 
@@ -181,13 +181,13 @@ function S(e) {
             percent: r
         } = e,
         o = (0, c.$h)(n) + (r ? "%" : "");
-    return t = "string" == typeof s ? _.intl.format(_.t.HLoinF, {
+    return t = "string" == typeof s ? g.intl.format(g.t.HLoinF, {
         name: s,
         value: o
-    }) : _.intl.format(s, {
+    }) : g.intl.format(s, {
         value: o
     }), (0, i.jsx)(d.Text, {
-        className: l()(g.pQ, a),
+        className: l()(_.pQ, a),
         variant: "text-xxs/normal",
         color: "text-default",
         children: t
@@ -202,10 +202,10 @@ function b(e) {
         className: a
     } = e;
     return (0, i.jsx)(d.Text, {
-        className: l()(g.pQ, a),
+        className: l()(_.pQ, a),
         variant: "text-xxs/normal",
         color: "text-default",
-        children: _.intl.format(_.t.HLoinF, {
+        children: g.intl.format(g.t.HLoinF, {
             value: (0, u.An)(t, n),
             name: s
         })
@@ -220,13 +220,13 @@ function C(e) {
         className: a
     } = e;
     return (0, i.jsxs)("div", {
-        className: l()(g.pQ, g.uR, a),
+        className: l()(_.pQ, _.uR, a),
         children: [(0, i.jsx)(o.m, {
             __unsupportedReactNodeAsText: s,
             children: (0, i.jsx)("img", {
                 src: n,
                 alt: s,
-                className: g.pv
+                className: _.pv
             })
         }), (0, i.jsx)(d.Text, {
             variant: "text-xxs/normal",
@@ -244,7 +244,7 @@ function N(e) {
     return (0, i.jsx)(d.Text, {
         variant: "text-xxs/normal",
         color: "text-default",
-        className: l()(g.pQ, g.RB, n),
+        className: l()(_.pQ, _.RB, n),
         children: t
     })
 }

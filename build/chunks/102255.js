@@ -14,18 +14,18 @@ var i = n(627968),
     c = n(200921),
     u = n(754333),
     m = n(287809),
-    _ = n(791606),
-    g = n(403362),
-    A = n(780964),
-    x = n(840065),
-    p = n(985018),
-    h = n(123547);
+    g = n(791606),
+    _ = n(403362),
+    x = n(780964),
+    A = n(840065),
+    h = n(985018),
+    p = n(123547);
 
 function f() {
     return (0, i.jsx)(o.Text, {
         variant: "text-sm/normal",
-        className: h.h_,
-        children: p.intl.string(p.t.zZp618)
+        className: p.h_,
+        children: h.intl.string(h.t.zZp618)
     })
 }
 
@@ -34,10 +34,10 @@ function T() {
         currentSession: e
     } = (0, u.r)();
     return null == e ? (0, i.jsx)("div", {
-        className: h.Lq,
+        className: p.Lq,
         children: (0, i.jsx)(o.y$y, {})
     }) : (0, i.jsx)(o.nVY, {
-        label: p.intl.string(p.t.LLS19o),
+        label: h.intl.string(h.t.LLS19o),
         children: (0, i.jsx)(b, {
             session: e,
             current: !0
@@ -51,17 +51,17 @@ function E(e) {
         otherSessions: n
     } = e;
     return (0, i.jsx)(o.D0$, {
-        label: t.size > 0 ? p.intl.string(p.t.mMEmRO) : p.intl.string(p.t.Vij32M),
-        description: p.intl.string(p.t.OTXyaf),
+        label: t.size > 0 ? h.intl.string(h.t.mMEmRO) : h.intl.string(h.t.Vij32M),
+        description: h.intl.string(h.t.OTXyaf),
         children: (0, i.jsx)("div", {
             "data-button-hoisted-classname-wrapper": !0,
-            className: h.Cn,
+            className: p.Cn,
             children: (0, i.jsx)(o.Button, {
                 variant: "critical-secondary",
                 size: "sm",
-                text: t.size > 0 ? p.intl.formatToPlainString(p.t["83CPLj"], {
+                text: t.size > 0 ? h.intl.formatToPlainString(h.t["83CPLj"], {
                     count: t.size
-                }) : p.intl.string(p.t.cLmmeY),
+                }) : h.intl.string(h.t.cLmmeY),
                 onClick: () => {
                     t.size > 0 ? (0, c.U0)(Array.from(t)) : (0, c.U0)(n.map(e => e.id_hash))
                 }
@@ -77,7 +77,7 @@ function S() {
     } = (0, u.r)(), n = (0, r.bG)([m.default], () => m.default.getCurrentUser()), [l, a] = s.useState(new Set);
     return null == e && 0 === t.length || 0 === t.length && n?.mfaEnabled ? null : t.length > 0 || !n?.mfaEnabled ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)(o.nVY, {
-            label: p.intl.string(p.t.xx1MWc),
+            label: h.intl.string(h.t.xx1MWc),
             children: [t.map(e => (0, i.jsx)(b, {
                 session: e,
                 useChecks: l.size > 0,
@@ -88,7 +88,7 @@ function S() {
                 }
             }, e.id_hash)), n?.mfaEnabled ? null : (0, i.jsx)(C, {})]
         }), t.length > 0 && (0, i.jsx)("div", {
-            className: h.wq,
+            className: p.wq,
             children: (0, i.jsx)(E, {
                 checked: l,
                 otherSessions: t
@@ -105,15 +105,15 @@ function b(e) {
         checked: l,
         useChecks: r
     } = e, d = t.client_info?.location ?? t.client_info?.ip, m = t.client_info?.platform, {
-        text: _,
-        icon: A
+        text: g,
+        icon: x
     } = function(e) {
         switch (e?.toLowerCase().trim()) {
             case null:
             case void 0:
             case "":
                 return {
-                    text: p.intl.string(p.t.cDHCNY), icon: o.kN9
+                    text: h.intl.string(h.t.cDHCNY), icon: o.kN9
                 };
             case "ios":
             case "android":
@@ -129,24 +129,24 @@ function b(e) {
                     text: e, icon: o.kN9
                 }
         }
-    }(t.client_info?.os), x = n ? null : (0, u.Y)(t.approx_last_used_time), f = [_, m].filter(g.Vq), T = [d, x].filter(g.Vq);
+    }(t.client_info?.os), A = n ? null : (0, u.Y)(t.approx_last_used_time), f = [g, m].filter(_.Vq), T = [d, A].filter(_.Vq);
     return (0, i.jsxs)("div", {
-        className: a()(h.dZ, {
-            [h.gg]: n
+        className: a()(p.dZ, {
+            [p.gg]: n
         }),
         children: [(0, i.jsxs)("div", {
-            className: h.OC,
+            className: p.OC,
             children: [(0, i.jsx)("div", {
-                className: h.km,
-                children: (0, i.jsx)(A, {
+                className: p.km,
+                children: (0, i.jsx)(x, {
                     size: "md",
                     color: "currentColor"
                 })
             }), (0, i.jsxs)("div", {
-                className: h.F3,
+                className: p.F3,
                 children: [(0, i.jsxs)(o.Text, {
                     variant: "eyebrow",
-                    className: h.nT,
+                    className: p.nT,
                     children: [(0, i.jsx)("span", {
                         children: f[0]
                     }), f.length > 1 && (0, i.jsxs)(i.Fragment, {
@@ -158,7 +158,7 @@ function b(e) {
                     })]
                 }), (0, i.jsxs)(o.Text, {
                     variant: "text-sm/medium",
-                    className: h.nT,
+                    className: p.nT,
                     children: [(0, i.jsx)("span", {
                         children: T[0]
                     }), T.length > 1 && (0, i.jsxs)(i.Fragment, {
@@ -170,7 +170,7 @@ function b(e) {
                     })]
                 })]
             }), n ? null : r ? (0, i.jsx)("div", {
-                className: h.GR,
+                className: p.GR,
                 children: (0, i.jsx)(o.JuY, {
                     onChange: e => {
                         s?.(e)
@@ -178,49 +178,49 @@ function b(e) {
                     checked: l
                 })
             }) : (0, i.jsx)(o.DUT, {
-                className: h.ux,
+                className: p.ux,
                 onClick: e => {
                     e.shiftKey ? s?.(!0) : (0, c.U0)(t.id_hash)
                 },
-                "aria-label": p.intl.string(p.t.E4MJNt),
+                "aria-label": h.intl.string(h.t.E4MJNt),
                 children: (0, i.jsx)(o.PGe, {
                     size: "md",
                     color: "currentColor"
                 })
             })]
         }), !n && (0, i.jsx)(o.cGx, {
-            className: h.O9
+            className: p.O9
         })]
     }, t.id_hash)
 }
 
 function C() {
     return (0, i.jsxs)("div", {
-        className: a()(h.dZ, h.EC),
+        className: a()(p.dZ, p.EC),
         children: [(0, i.jsxs)("div", {
-            className: h.OC,
+            className: p.OC,
             children: [(0, i.jsx)("div", {
-                className: h.km,
-                children: (0, i.jsx)(_.A, {
+                className: p.km,
+                children: (0, i.jsx)(g.A, {
                     width: "32",
                     height: "32"
                 })
             }), (0, i.jsxs)("div", {
-                className: h.F3,
+                className: p.F3,
                 children: [(0, i.jsx)(o.Text, {
                     variant: "eyebrow",
-                    className: h.nT,
+                    className: p.nT,
                     color: "text-muted",
                     children: (0, i.jsx)("span", {
-                        children: p.intl.string(p.t.iUa0sn)
+                        children: h.intl.string(h.t.iUa0sn)
                     })
                 }), (0, i.jsx)(o.Text, {
                     variant: "text-sm/medium",
-                    className: h.nT,
+                    className: p.nT,
                     color: "text-muted",
                     children: (0, i.jsx)("span", {
-                        children: p.intl.format(p.t["044+8i"], {
-                            onClick: () => (0, x.openUserSettings)(A.X.ACCOUNT_PANEL, {
+                        children: h.intl.format(h.t["044+8i"], {
+                            onClick: () => (0, A.openUserSettings)(x.X.ACCOUNT_PANEL, {
                                 analyticsLocations: [d.A.USER_SETTINGS_SESSIONS]
                             })
                         })
@@ -228,7 +228,7 @@ function C() {
                 })]
             })]
         }), (0, i.jsx)("div", {
-            className: h.O9
+            className: p.O9
         })]
     })
 }

@@ -1,6 +1,6 @@
 /** chunk id: 301656 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => x
 });
 var i = n(627968),
     s = n(64700),
@@ -12,40 +12,40 @@ var i = n(627968),
     c = n(874486),
     u = n(927018),
     m = n(508971),
-    _ = n(985018),
-    g = n(872722);
+    g = n(985018),
+    _ = n(872722);
 
-function A(e) {
+function x(e) {
     let {
         onBackClick: t
-    } = e, n = (0, l.bG)([c.A], () => c.A.getAllUnlockedAchievements()), A = s.useMemo(() => Object.values(n).sort((e, t) => t.dateUnlocked - e.dateUnlocked), [n]), x = s.useMemo(() => Object.values(u.l0).filter(d.Vq).filter(e => null == n[e.id]).sort((e, t) => e.rarity - t.rarity), [n]);
+    } = e, n = (0, l.bG)([c.A], () => c.A.getAllUnlockedAchievements()), x = s.useMemo(() => Object.values(n).sort((e, t) => t.dateUnlocked - e.dateUnlocked), [n]), A = s.useMemo(() => Object.values(u.l0).filter(d.Vq).filter(e => null == n[e.id]).sort((e, t) => e.rarity - t.rarity), [n]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)(r.DUT, {
             onClick: t,
-            className: g.vv,
+            className: _.vv,
             children: [(0, i.jsx)(o.A, {
                 direction: o.A.Directions.LEFT,
-                className: g.Kk
+                className: _.Kk
             }), (0, i.jsx)(r.Text, {
                 variant: "text-lg/normal",
                 color: "text-default",
-                children: _.intl.string(_.t["13/7kX"])
+                children: g.intl.string(g.t["13/7kX"])
             })]
         }), (0, i.jsxs)("div", {
-            className: g.N1,
+            className: _.N1,
             children: [(0, i.jsxs)("div", {
-                className: g.if,
+                className: _.if,
                 children: [(0, i.jsx)(r.Heading, {
                     variant: "heading-lg/extrabold",
                     color: "text-strong",
-                    children: _.intl.string(_.t["6jI0hd"])
+                    children: g.intl.string(g.t["6jI0hd"])
                 }), (0, i.jsx)(r.Text, {
                     variant: "text-md/normal",
                     color: "text-default",
-                    children: _.intl.string(_.t.GuUItX)
+                    children: g.intl.string(g.t.GuUItX)
                 })]
             }), (0, i.jsx)("div", {
-                className: g.nr,
+                className: _.nr,
                 children: (0, i.jsx)(r.OR, {
                     size: "custom",
                     color: a.A.unsafe_rawColors.ORANGE_345.css,
@@ -53,11 +53,11 @@ function A(e) {
                     height: 40
                 })
             })]
-        }), A.length > 0 && (0, i.jsx)("div", {
-            className: g.yF,
+        }), x.length > 0 && (0, i.jsx)("div", {
+            className: _.yF,
             children: (0, i.jsx)("div", {
-                className: g.Eh,
-                children: A.map(e => {
+                className: _.Eh,
+                children: x.map(e => {
                     let {
                         achievementId: t,
                         dateUnlocked: n
@@ -68,25 +68,25 @@ function A(e) {
                     }, t)
                 })
             })
-        }), x.length > 0 && (0, i.jsxs)("div", {
-            className: g.yF,
+        }), A.length > 0 && (0, i.jsxs)("div", {
+            className: _.yF,
             children: [(0, i.jsx)("div", {
-                className: g.if,
+                className: _.if,
                 children: (0, i.jsx)(r.Text, {
                     variant: "text-md/bold",
                     color: "text-default",
-                    children: _.intl.string(_.t.GFyMg1)
+                    children: g.intl.string(g.t.GFyMg1)
                 })
             }), (0, i.jsx)("div", {
-                className: g.Eh,
-                children: x.map(e => (0, i.jsx)(m.A, {
+                className: _.Eh,
+                children: A.map(e => (0, i.jsx)(m.A, {
                     achievementId: e.id
                 }, e.id))
             })]
         }), (0, i.jsx)("div", {
-            className: g.yF,
+            className: _.yF,
             children: (0, i.jsx)("div", {
-                className: g.F3
+                className: _.F3
             })
         })]
     })

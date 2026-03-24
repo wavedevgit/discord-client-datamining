@@ -13,12 +13,12 @@ var i, s = n(627968),
     c = n(793574),
     u = n(688810),
     m = n(259065),
-    _ = n(206835),
-    g = n(976860),
-    A = n(780964),
-    x = n(358776),
-    p = n(840065),
-    h = n(112848),
+    g = n(206835),
+    _ = n(976860),
+    x = n(780964),
+    A = n(358776),
+    h = n(840065),
+    p = n(112848),
     f = n(149757),
     T = n(920050),
     E = n(189024),
@@ -49,42 +49,42 @@ let P = [{
 
 function D() {
     let e = (0, d.DP)(),
-        t = (0, h.Lh)(),
+        t = (0, p.Lh)(),
         n = (0, f.N)(t)?.standard ?? null,
         {
             analyticsLocations: i
         } = (0, u.Ay)(c.A.PREMIUM_MARKETING_PERK_CARD),
-        L = (0, _.A)({
+        L = (0, g.A)({
             scrollPosition: b._F.TRY_IT_OUT,
             analyticsLocations: i
         }),
         P = (0, l.useCallback)(() => {
-            let e = (0, x.Ci)("openClientThemes");
-            (0, p.openUserSettings)(e ? A.X.DISPLAY_THEME_CATEGORY : A.X.APPEARANCE_PANEL, {
+            let e = (0, A.Ci)("openClientThemes");
+            (0, h.openUserSettings)(e ? x.X.DISPLAY_THEME_CATEGORY : x.X.APPEARANCE_PANEL, {
                 analyticsLocations: i
             })
         }, [i]),
         D = (0, l.useCallback)(() => {
-            (0, p.openUserSettings)(A.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
+            (0, h.openUserSettings)(x.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
                 analyticsLocations: i
             })
         }, [i]),
         G = (0, l.useCallback)(() => {
-            let e = (0, x.Ci)("openCustomAppSettings") ? A.X.DISPLAY_IN_APP_ICON_CATEGORY : A.X.APPEARANCE_IN_APP_ICON;
-            (0, p.openUserSettings)(e, {
+            let e = (0, A.Ci)("openCustomAppSettings") ? x.X.DISPLAY_IN_APP_ICON_CATEGORY : x.X.APPEARANCE_IN_APP_ICON;
+            (0, h.openUserSettings)(e, {
                 analyticsLocations: i
             })
         }, [i]),
         M = (0, l.useCallback)(() => {
-            (0, g.pX)(S.BVt.COLLECTIBLES_SHOP)
+            (0, _.pX)(S.BVt.COLLECTIBLES_SHOP)
         }, []),
-        k = (0, l.useCallback)(() => {
-            (0, p.openUserSettings)(A.X.SOUNDBOARD_CATEGORY, {
+        U = (0, l.useCallback)(() => {
+            (0, h.openUserSettings)(x.X.SOUNDBOARD_CATEGORY, {
                 analyticsLocations: i
             })
         }, [i]),
-        U = (0, l.useCallback)(() => {
-            (0, p.openUserSettings)(A.X.PROFILE_PANEL, {
+        k = (0, l.useCallback)(() => {
+            (0, h.openUserSettings)(x.X.PROFILE_PANEL, {
                 analyticsLocations: i
             }, () => (0, m.L)({
                 analyticsLocations: i
@@ -173,14 +173,14 @@ function D() {
             title: C.intl.string(C.t.WJfCPi),
             description: C.intl.string(C.t.liQKJR),
             ctaText: C.intl.string(C.t.jVcuVY),
-            onCtaClick: k,
+            onCtaClick: U,
             primaryAsset: y.A,
             categories: ["appearance"]
         }, {
             id: T.DISPLAY_NAME_STYLES_CARD_ID,
             title: C.intl.string(C.t.OLtTrt),
             description: C.intl.string(C.t["di/pXR"]),
-            onCtaClick: U,
+            onCtaClick: k,
             primaryAsset: I.A,
             ctaText: C.intl.string(C.t.jVcuVY),
             categories: ["appearance"]
@@ -258,6 +258,6 @@ function D() {
                 ariaHidden: !0
             }),
             categories: ["vip"]
-        }], [e, n, L, P, D, G, M, k, U]);
+        }], [e, n, L, P, D, G, M, U, k]);
     return (0, l.useMemo)(() => B.filter(e => null != e && !V.includes(e.id)), [B, V])
 }

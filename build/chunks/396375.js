@@ -21,8 +21,8 @@ let m = e => {
         showGradient: _,
         confirmationFooter: p,
         color: N,
-        ...x
-    } = e, T = (0, i.Ay)(), {
+        ...T
+    } = e, x = (0, i.Ay)(), {
         buttonText: g,
         marketingSubscriptionTierSkuId: A
     } = (0, d.s)({
@@ -30,7 +30,7 @@ let m = e => {
         subscriptionTier: n,
         useShorterCTA: E,
         isPersistentCTA: o
-    }), h = (0, s.V)(), f = h?.subscription_trial, b = null != f && A === f.sku_id, M = N ?? ((0, a.Mw)(T) ? l.XD.BRAND_INVERTED : l.XD.BRAND);
+    }), h = (0, s.V)(), f = h?.subscription_trial, b = null != f && A === f.sku_id, M = N ?? ((0, a.Mw)(x) ? l.XD.BRAND_INVERTED : l.XD.BRAND);
     return (0, r.jsx)(u.A, {
         color: M,
         textOptions: {
@@ -42,6 +42,6 @@ let m = e => {
         subscriptionTier: A,
         showGradient: _,
         confirmationFooter: p,
-        ...x
+        ...T
     })
 }

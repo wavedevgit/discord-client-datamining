@@ -13,12 +13,12 @@ var s = n(110259),
     c = n(397927),
     u = n(212245),
     m = n(688810),
-    _ = n(139286),
-    g = n(975571),
-    A = n(498470),
-    x = n(637706),
-    p = n(985018),
-    h = n(122506);
+    g = n(139286),
+    _ = n(975571),
+    x = n(498470),
+    A = n(637706),
+    h = n(985018),
+    p = n(122506);
 let f = e => {
     let {
         componentId: t,
@@ -26,7 +26,7 @@ let f = e => {
     } = e, {
         analyticsLocations: f
     } = (0, m.Ay)(), T = (0, u.p)();
-    (0, _.A)({
+    (0, g.A)({
         type: s.ImpressionTypes.VIEW,
         name: s.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
         properties: {
@@ -34,23 +34,23 @@ let f = e => {
             component_id: t
         }
     });
-    let E = (0, A.h)({
+    let E = (0, x.h)({
             buttonAction: n.button?.buttonAction ?? o.dz.OPEN_TIER_2_PAYMENT_MODAL,
             analyticsLocations: f,
             analyticsLocation: T.location
         }),
-        S = (0, x.a)(n.body);
+        S = (0, A.a)(n.body);
     return (0, i.jsxs)("div", {
-        className: h.kL,
+        className: p.kL,
         children: [(0, i.jsx)("div", {
-            className: h.LY,
+            className: p.LY,
             children: (0, i.jsx)("img", {
                 src: n.assetUrl,
-                className: h.ot,
+                className: p.ot,
                 alt: ""
             })
         }), (0, i.jsxs)("div", {
-            className: h.IH,
+            className: p.IH,
             children: [(0, i.jsx)(r.DZT, {
                 variant: "heading-md/semibold",
                 color: "text-strong",
@@ -58,17 +58,17 @@ let f = e => {
             }), (0, i.jsxs)(r.EYj, {
                 variant: "text-md/medium",
                 color: "text-subtle",
-                className: h.tb,
+                className: p.tb,
                 children: [S, "" !== n.helpArticleId && (0, i.jsxs)(i.Fragment, {
                     children: ["\xa0", (0, i.jsx)(c.MzZ, {
-                        className: h.$T,
-                        href: g.A.getArticleURL(n.helpArticleId),
-                        children: p.intl.string(p.t["sBp+u0"])
+                        className: p.$T,
+                        href: _.A.getArticleURL(n.helpArticleId),
+                        children: h.intl.string(h.t["sBp+u0"])
                     })]
                 })]
             })]
         }), null != n.button && (0, i.jsx)("div", {
-            className: h.UD,
+            className: p.UD,
             children: (0, i.jsx)(d.$nd, {
                 variant: "expressive",
                 size: "md",

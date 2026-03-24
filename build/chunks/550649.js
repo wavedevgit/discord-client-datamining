@@ -1,6 +1,6 @@
 /** chunk id: 550649 params = (module,exports,require) **/
 n.d(t, {
-    z: () => A
+    z: () => x
 });
 var i = n(934551),
     s = n(554146),
@@ -17,17 +17,17 @@ let u = [{
     m = (0, l.zZ)(r.X.CONNECTIONS_ADD_CONNECTIONS_CATEGORY, {
         buildLayout: () => [o.l]
     }),
-    _ = (0, l.zZ)(r.X.CONNECTIONS_CONNECTED_ACCOUNTS_CATEGORY, {
+    g = (0, l.zZ)(r.X.CONNECTIONS_CONNECTED_ACCOUNTS_CATEGORY, {
         buildLayout: () => [d.W]
     }),
-    g = (0, l.t_)(r.X.CONNECTIONS_PANEL, {
+    _ = (0, l.t_)(r.X.CONNECTIONS_PANEL, {
         useTitle: () => c.intl.string(c.t["3fe7U5"]),
         hideInStreamerMode: !0,
-        buildLayout: () => [m, _]
+        buildLayout: () => [m, g]
     }),
-    A = (0, l.i4)(r.X.CONNECTIONS_SIDEBAR_ITEM, {
+    x = (0, l.i4)(r.X.CONNECTIONS_SIDEBAR_ITEM, {
         useTitle: () => c.intl.string(c.t["3fe7U5"]),
         icon: i.LinkIcon,
         getDismissibleBadges: () => u,
-        buildLayout: () => [g]
+        buildLayout: () => [_]
     })

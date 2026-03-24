@@ -12,31 +12,31 @@ var i = n(934551),
     c = n(780964),
     u = n(828797),
     m = n(611478),
-    _ = n(402089),
-    g = n(281225),
-    A = n(935185),
-    x = n(652215),
-    p = n(985018);
-let h = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
-        getTitle: () => p.intl.string(p.t["Vov/9o"]),
+    g = n(402089),
+    _ = n(281225),
+    x = n(935185),
+    A = n(652215),
+    h = n(985018);
+let p = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
+        getTitle: () => h.intl.string(h.t["Vov/9o"]),
         onItemSelect: () => {
-            d.default.track(x.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
-                target_tab_name: A.D.STANDING
+            d.default.track(A.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
+                target_tab_name: x.D.STANDING
             })
         },
-        buildLayout: () => [g.Q]
+        buildLayout: () => [_.Q]
     }),
     f = (0, a.dT)(c.X.ACCOUNT_SECURITY_TAB, {
-        getTitle: () => p.intl.string(p.t.Am9YHi),
+        getTitle: () => h.intl.string(h.t.Am9YHi),
         onItemSelect: () => {
-            d.default.track(x.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
-                target_tab_name: A.D.SECURITY
+            d.default.track(A.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
+                target_tab_name: x.D.SECURITY
             })
         },
-        buildLayout: () => [m.P, u.o, _.s]
+        buildLayout: () => [m.P, u.o, g.s]
     }),
     T = (0, a.t_)(c.X.ACCOUNT_PANEL, {
-        useTitle: () => p.intl.string(p.t["JAIM/m"]),
+        useTitle: () => h.intl.string(h.t["JAIM/m"]),
         initialize: function() {
             let e = o.default.getCurrentUser();
             return null != e && (0, r.A)(e.id, e.getAvatarURL(void 0, 80)), () => {
@@ -44,10 +44,10 @@ let h = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
             }
         },
         hideInStreamerMode: !0,
-        buildLayout: () => [f, h]
+        buildLayout: () => [f, p]
     }),
     E = (0, a.i4)(c.X.ACCOUNT_SIDEBAR_ITEM, {
-        useTitle: () => p.intl.string(p.t["JAIM/m"]),
+        useTitle: () => h.intl.string(h.t["JAIM/m"]),
         icon: i.UserIcon,
         buildLayout: () => [T]
     })

@@ -24,9 +24,9 @@ var r = n(627968),
     g = n(580630),
     S = n(83617),
     P = n(615396),
-    x = n(543767),
-    T = n(96304),
-    v = n(380083),
+    T = n(543767),
+    v = n(96304),
+    x = n(380083),
     U = n(788868),
     L = n(652215),
     E = n(985018);
@@ -50,7 +50,7 @@ let M = e => {
         skuIDs: [j],
         paymentSourceId: l?.paymentSourceId,
         isGift: !1
-    }), [q] = (0, x.Kq)({
+    }), [q] = (0, T.Kq)({
         subscriptionId: l.id,
         items: [{
             planId: k,
@@ -79,7 +79,7 @@ let M = e => {
             activeSubscription: l,
             stepConfigs: [],
             skuIDs: [],
-            children: (0, r.jsx)(v.Ay, {
+            children: (0, r.jsx)(x.Ay, {
                 planId: k,
                 onClose: N,
                 paymentSourceType: O?.type
@@ -146,7 +146,7 @@ let M = e => {
             }
         }],
         transitionState: G,
-        children: (0, r.jsx)(T.l, {
+        children: (0, r.jsx)(v.l, {
             currentUser: F,
             premiumType: n,
             onClose: N,

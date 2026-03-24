@@ -1,6 +1,6 @@
 /** chunk id: 863612 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -12,9 +12,9 @@ var i = n(627968),
     c = n(287809),
     u = n(603293),
     m = n(985018),
-    _ = n(359498);
+    g = n(359498);
 
-function g() {
+function _() {
     let e = (0, l.bG)([c.default], () => c.default.getCurrentUser()?.storeCountry),
         t = e?.setAt != null ? m.intl.format(m.t.ZkWzXG, {
             date: new Date(e.setAt)
@@ -23,7 +23,7 @@ function g() {
             (0, u.b)(e?.country ?? null)
         }, [e?.country]);
     if (null == e) return (0, i.jsxs)("div", {
-        className: _.OO,
+        className: g.OO,
         children: [(0, i.jsx)(r.Text, {
             variant: "text-sm/normal",
             color: "text-subtle",
@@ -35,23 +35,23 @@ function g() {
             onClick: n
         })]
     });
-    let g = (0, d.Gw)(e.country);
+    let _ = (0, d.Gw)(e.country);
     return (0, i.jsxs)("div", {
-        className: _.OO,
+        className: g.OO,
         children: [(0, i.jsxs)("div", {
-            className: _.wI,
+            className: g.wI,
             children: [(0, i.jsx)("div", {
-                className: _.Gh,
+                className: g.Gh,
                 children: (0, i.jsx)("img", {
                     alt: "",
-                    className: _.MY,
+                    className: g.MY,
                     src: (0, o.t)(e.country)
                 })
             }), (0, i.jsxs)("div", {
-                className: _.d0,
+                className: g.d0,
                 children: [(0, i.jsx)(r.Text, {
                     variant: "text-md/semibold",
-                    children: g
+                    children: _
                 }), null != t ? (0, i.jsx)(r.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",

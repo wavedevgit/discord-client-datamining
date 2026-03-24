@@ -15,7 +15,7 @@ let m = function(e) {
     let {
         detectedGame: t,
         trackAction: n
-    } = e, m = (0, r.y)("GameProfileStoreLinks"), x = (0, s._)(t), _ = (0, o.A)(), f = l.useMemo(() => x.map(c.A).filter(e => null != e), [x]);
+    } = e, m = (0, r.y)("GameProfileStoreLinks"), x = (0, s._)(t), h = (0, o.A)(), f = l.useMemo(() => x.map(c.A).filter(e => null != e), [x]);
     if (!m || 0 === f.length || null == t) return null;
     if (1 === f.length) {
         let [e] = f;
@@ -24,7 +24,7 @@ let m = function(e) {
             text: e.text,
             "aria-label": e.ariaLabel,
             onClick: () => {
-                n(e.action), _(e.url)
+                n(e.action), h(e.url)
             }
         })
     }

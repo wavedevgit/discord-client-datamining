@@ -16,12 +16,12 @@ let d = "url(#gradient)",
             animationClassName: c,
             initialPercentage: u = 0,
             progressCircleStrokeSize: m = 2,
-            progressCircleVariation: _,
-            progressCircleStroke: g
-        } = e, A = 43 + m / 2, x = 2 * Math.PI * A, [p, h] = s.useState(u);
+            progressCircleVariation: g,
+            progressCircleStroke: _
+        } = e, x = 43 + m / 2, A = 2 * Math.PI * x, [h, p] = s.useState(u);
         s.useEffect(() => {
             let e = setTimeout(() => {
-                h(t)
+                p(t)
             }, 200);
             return () => clearTimeout(e)
         }, [t]);
@@ -37,7 +37,7 @@ let d = "url(#gradient)",
                     default:
                         return
                 }
-            })(_),
+            })(g),
             S = ((e, t) => {
                 switch (e) {
                     case r.BN.NITRO_LOGO:
@@ -47,8 +47,8 @@ let d = "url(#gradient)",
                     default:
                         return
                 }
-            })(_, T),
-            b = g ?? ((e, t) => {
+            })(g, T),
+            b = _ ?? ((e, t) => {
                 switch (t) {
                     case r.BN.NITRO_GEM:
                     case r.BN.AVATAR_DECO:
@@ -58,17 +58,17 @@ let d = "url(#gradient)",
                     default:
                         return
                 }
-            })(T, _);
+            })(T, g);
         return (0, i.jsxs)("div", {
             className: o.Ap,
             children: [(0, i.jsxs)("svg", {
                 viewBox: "0 0 100 100",
                 className: o.fB,
                 children: [(0, i.jsx)("circle", {
-                    className: _ === r.BN.NITRO_GEM || _ === r.BN.AVATAR_DECO ? o.F3 : void 0,
+                    className: g === r.BN.NITRO_GEM || g === r.BN.AVATAR_DECO ? o.F3 : void 0,
                     fill: "transparent",
                     strokeWidth: m,
-                    r: `${A}`,
+                    r: `${x}`,
                     cx: "50%",
                     cy: "50%",
                     stroke: E,
@@ -77,12 +77,12 @@ let d = "url(#gradient)",
                     stroke: b,
                     strokeWidth: m,
                     strokeLinecap: "round",
-                    strokeDasharray: `${x} ${x}`,
+                    strokeDasharray: `${A} ${A}`,
                     className: c,
                     style: {
-                        strokeDashoffset: (1 - p / 100) * x
+                        strokeDashoffset: (1 - h / 100) * A
                     },
-                    r: `${A}`,
+                    r: `${x}`,
                     cx: "50%",
                     cy: "50%"
                 })]

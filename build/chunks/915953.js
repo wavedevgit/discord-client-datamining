@@ -18,12 +18,12 @@ function d(e) {
         minValue: c,
         maxValue: u,
         useDefaultValue: m,
-        useTitle: _,
-        useSubtitle: g,
-        useHintText: A,
-        useDisabled: x,
-        useExternalValue: p,
-        onValueRender: h,
+        useTitle: g,
+        useSubtitle: _,
+        useHintText: x,
+        useDisabled: A,
+        useExternalValue: h,
+        onValueRender: p,
         asValueChanges: f,
         markers: T,
         onMarkerRender: E,
@@ -31,7 +31,7 @@ function d(e) {
         fieldLayout: b,
         usePersistentBadge: C,
         getDismissibleBadges: N
-    } = t, [v] = s.useState(() => d()), I = p?.(), j = _(), y = g?.(), O = A?.(), R = x?.(), L = m?.(), P = C?.(), D = N?.(), G = (0, a.A)({
+    } = t, [v] = s.useState(() => d()), I = h?.(), j = g(), y = _?.(), O = x?.(), R = A?.(), L = m?.(), P = C?.(), D = N?.(), G = (0, a.A)({
         persistentBadge: P,
         dismissibleBadges: D
     }), M = (0, r.q)(t);
@@ -45,7 +45,7 @@ function d(e) {
             minValue: c,
             maxValue: u,
             defaultValue: L,
-            onValueRender: h,
+            onValueRender: p,
             asValueChanges: f,
             onValueChange: e => {
                 M(), n?.(e)

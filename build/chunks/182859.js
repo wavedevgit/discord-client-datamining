@@ -1,6 +1,6 @@
 /** chunk id: 182859 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => x
 });
 var i = n(627968),
     s = n(64700),
@@ -12,17 +12,17 @@ var i = n(627968),
     c = n(893598),
     u = n(333354),
     m = n(985018),
-    _ = n(575651),
-    g = n(519636);
+    g = n(575651),
+    _ = n(519636);
 
-function A(e) {
+function x(e) {
     let {
         guildId: t,
         variant: l = "admin",
-        className: A,
-        analyticsLocation: x,
-        videoPlacement: p = "sidebar",
-        onDismiss: h
+        className: x,
+        analyticsLocation: A,
+        videoPlacement: h = "sidebar",
+        onDismiss: p
     } = e, {
         analyticsLocations: f
     } = (0, d.Ay)(), T = s.useCallback(() => {
@@ -33,62 +33,62 @@ function A(e) {
             return n => (0, i.jsx)(e, {
                 ...n,
                 guildId: t,
-                analyticsLocation: x,
-                videoPlacement: p,
+                analyticsLocation: A,
+                videoPlacement: h,
                 sourceAnalyticsLocations: f
             })
         })
-    }, [x, f, t, p]);
+    }, [A, f, t, h]);
     return "member" === l ? (0, i.jsxs)(o.DUT, {
-        className: a()(_.iR, A),
+        className: a()(g.iR, x),
         onClick: T,
         "aria-label": m.intl.string(u.default["103aY+"]),
         children: [(0, i.jsx)("img", {
             alt: "",
-            className: _.xn,
-            src: g.A
+            className: g.xn,
+            src: _.A
         }), (0, i.jsx)("div", {
-            className: _.b1
+            className: g.b1
         }), (0, i.jsx)("div", {
-            className: _.i5,
+            className: g.i5,
             children: (0, i.jsx)(o.Text, {
                 variant: "text-xs/semibold",
                 color: "always-white",
                 children: m.intl.string(u.default.diMhWc)
             })
         }), (0, i.jsx)(c.A, {
-            className: _.Rr,
+            className: g.Rr,
             inactive: !0,
             renderLinkComponent: () => null
         })]
     }) : (0, i.jsxs)("div", {
-        className: _.kL,
+        className: g.kL,
         children: [(0, i.jsx)("div", {
-            className: a()(_.X8, "theme-dark"),
+            className: a()(g.X8, "theme-dark"),
             children: (0, i.jsx)(r.K0, {
                 variant: "icon-only",
                 size: "md",
                 "aria-label": m.intl.string(m.t.WAI6xu),
-                onClick: h,
+                onClick: p,
                 icon: o.PGe
             })
         }), (0, i.jsxs)(o.DUT, {
-            className: _.iT,
+            className: g.iT,
             onClick: T,
             "aria-label": m.intl.string(u.default["103aY+"]),
             children: [(0, i.jsx)("img", {
                 alt: "",
-                className: _.xn,
-                src: g.A
+                className: g.xn,
+                src: _.A
             }), (0, i.jsx)("div", {
-                className: _.TQ
+                className: g.TQ
             }), (0, i.jsx)(c.A, {
-                className: _.Rr,
+                className: g.Rr,
                 inactive: !0,
                 renderLinkComponent: () => null
             })]
         }), (0, i.jsxs)("div", {
-            className: _.FS,
+            className: g.FS,
             children: [(0, i.jsx)(o.Text, {
                 variant: "text-md/semibold",
                 color: "text-strong",

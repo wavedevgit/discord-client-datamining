@@ -1,6 +1,6 @@
 /** chunk id: 911180 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -12,18 +12,18 @@ var i = n(627968),
     c = n(397927),
     u = n(919796),
     m = n(385612),
-    _ = n(652215),
-    g = n(985018),
-    A = n(567458);
+    g = n(652215),
+    _ = n(985018),
+    x = n(567458);
 
-function x(e) {
+function A(e) {
     let {
         onChange: t,
         onClose: n,
         color: l,
-        suggestedColors: x,
-        disabled: p,
-        label: h,
+        suggestedColors: A,
+        disabled: h,
+        label: p,
         colorPickerMiddle: f,
         colorPickerFooter: T,
         showEyeDropper: E
@@ -37,7 +37,7 @@ function x(e) {
             ...e,
             value: l,
             onChange: t,
-            suggestedColors: x,
+            suggestedColors: A,
             middle: f,
             footer: T,
             showEyeDropper: E
@@ -50,30 +50,30 @@ function x(e) {
             } = e;
             return (0, i.jsxs)("div", {
                 ref: S,
-                className: a()(A.oP, {
-                    [A.r9]: p
+                className: a()(x.oP, {
+                    [x.r9]: h
                 }),
                 children: [(0, i.jsx)(c.DUT, {
                     ...n,
-                    tabIndex: p ? -1 : 0,
-                    onClick: p ? _.tEg : t,
+                    tabIndex: h ? -1 : 0,
+                    onClick: h ? g.tEg : t,
                     style: {
                         backgroundColor: v,
                         borderColor: I
                     },
-                    className: A.nf,
-                    "aria-label": g.intl.string(g.t.Qp04hK),
+                    className: x.nf,
+                    "aria-label": _.intl.string(_.t.Qp04hK),
                     focusProps: {
                         ringTarget: S
                     },
                     children: (0, i.jsx)(c.R2l, {
                         size: "custom",
-                        className: A.BW,
+                        className: x.BW,
                         width: 14,
                         height: 14,
                         color: j
                     })
-                }), h]
+                }), p]
             })
         }
     })

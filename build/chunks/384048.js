@@ -17,8 +17,8 @@ var a = n(503698),
     _ = n(474090),
     p = n(396375),
     N = n(764231),
-    x = n(112848),
-    T = n(627380),
+    T = n(112848),
+    x = n(627380),
     g = n(149757),
     A = n(788868),
     h = n(652215),
@@ -31,15 +31,15 @@ let M = e => {
         displayProfile: a
     } = e, {
         analyticsLocations: M
-    } = (0, c.Ay)(d.A.TIERED_TENURE_BADGES_MODAL), R = (0, m.GV)(), j = Object.values(A.VD), v = (0, x.p3)(a?.userId), I = (0, x.$F)(), U = (0, T.t)(), P = E.default.getCurrentUser(), S = (0, x.rG)(a?.userId ?? P?.id) ?? new Date, O = (0, _.CC)(P?.premiumType, A.PremiumTypes.TIER_2), D = j.map(e => {
+    } = (0, c.Ay)(d.A.TIERED_TENURE_BADGES_MODAL), R = (0, m.GV)(), j = Object.values(A.VD), v = (0, T.p3)(a?.userId), I = (0, T.$F)(), U = (0, x.t)(), P = E.default.getCurrentUser(), S = (0, T.rG)(a?.userId ?? P?.id) ?? new Date, O = (0, _.CC)(P?.premiumType, A.PremiumTypes.TIER_2), D = j.map(e => {
         let {
             id: t,
             nameUnformatted: n,
             tenureReqNumMonths: s
-        } = e, u = f.intl.string(n), d = (0, g.I)(t).standard, c = (0, N.T)(t, s), m = null == a, o = m && I?.id === t, E = !m && v?.id === t, _ = o && I?.status === x.Wo.EARNED, p = o && I?.status === x.Wo.UPCOMING, T = E || _;
+        } = e, u = f.intl.string(n), d = (0, g.I)(t).standard, c = (0, N.T)(t, s), m = null == a, o = m && I?.id === t, E = !m && v?.id === t, _ = o && I?.status === T.Wo.EARNED, p = o && I?.status === T.Wo.UPCOMING, x = E || _;
         return (0, r.jsxs)("div", {
             className: l()(b.qS, {
-                [b.Ny]: T || p
+                [b.Ny]: x || p
             }),
             children: [(0, r.jsx)("img", {
                 src: d,
@@ -54,7 +54,7 @@ let M = e => {
                 }), (0, r.jsx)(i.EYj, {
                     variant: "text-xs/normal",
                     children: c
-                }), T && (0, r.jsx)(i.EYj, {
+                }), x && (0, r.jsx)(i.EYj, {
                     variant: "text-xs/normal",
                     color: "text-muted",
                     className: b.h8,

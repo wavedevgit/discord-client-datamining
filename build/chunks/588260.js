@@ -13,10 +13,10 @@ var a = n(627968),
     u = n(409626),
     m = n(84904),
     x = n(954506),
-    _ = n(758836),
+    h = n(758836),
     f = n(985018),
     g = n(497234);
-let h = l.createContext({
+let _ = l.createContext({
         closeModal: () => {},
         trackAction: () => {}
     }),
@@ -29,12 +29,12 @@ let h = l.createContext({
         } = (0, s.q)(t, !0), m = l.useContext(c.v3), {
             closeModal: x,
             trackAction: f
-        } = l.useContext(h), p = l.useCallback(() => {
+        } = l.useContext(_), p = l.useCallback(() => {
             f(u.Ws.DiscordCollectiblesShop), x(), (0, r.Cz)({
                 analyticsLocations: [i.A.GAME_PROFILE],
                 analyticsSource: i.A.GAME_PROFILE,
                 initialProductSkuId: t,
-                tab: _.G2.CATALOG
+                tab: h.G2.CATALOG
             })
         }, [f, x, t]);
         if (null == d) return null;
@@ -69,13 +69,13 @@ function v(e) {
         s(u.Ws.DiscordCollectiblesShop), n(), (0, r.Cz)({
             analyticsLocations: [i.A.GAME_PROFILE],
             analyticsSource: i.A.GAME_PROFILE,
-            tab: _.G2.CATALOG
+            tab: h.G2.CATALOG
         })
     }, [s, n]), v = l.useMemo(() => ({
         closeModal: n,
         trackAction: s
     }), [n, s]);
-    return 0 === c.length ? null : (0, a.jsx)(h.Provider, {
+    return 0 === c.length ? null : (0, a.jsx)(_.Provider, {
         value: v,
         children: (0, a.jsx)(x.A, {
             title: f.intl.string(f.t["5DYPT8"]),

@@ -12,12 +12,12 @@ var i = n(627968),
     c = n(974544),
     u = n(793574),
     m = n(688810),
-    _ = n(550111),
-    g = n(919395),
-    A = n(884546),
-    x = n(287070),
-    p = n(101058),
-    h = n(836602),
+    g = n(550111),
+    _ = n(919395),
+    x = n(884546),
+    A = n(287070),
+    h = n(101058),
+    p = n(836602),
     f = n(622543),
     T = n(696451),
     E = n(351906),
@@ -57,20 +57,20 @@ function P(e) {
         let e = S.default.getCurrentUser();
         return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
     }), D = (0, r.bG)([T.Ay], () => null != t ? T.Ay.getMember(t.id, P.id) : null), G = (0, r.bG)([f.A], () => !f.A.isFetchingProfile(P.id, t?.id)), M = (0, r.bG)([E.A], () => E.A.hidePersonalInformation), {
-        pendingAvatar: k,
-        pendingNameplate: U,
+        pendingAvatar: U,
+        pendingNameplate: k,
         ...w
-    } = (0, r.cf)([h.A], () => h.A.getPendingChanges(t?.id)), V = (0, p.V7)({
+    } = (0, r.cf)([p.A], () => p.A.getPendingChanges(t?.id)), V = (0, h.V7)({
         userId: P.id,
-        image: k
-    }), B = (0, g.lw)({
-        pendingValue: U,
+        image: U
+    }), B = (0, _.lw)({
+        pendingValue: k,
         userValue: P?.collectibles?.nameplate,
         guildValue: D?.collectibles?.nameplate,
         guildId: t?.id
     }), {
         pendingDisplayNameStyles: F
-    } = (0, g.B0)(P, t?.id);
+    } = (0, _.B0)(P, t?.id);
     return (s.useEffect(() => () => d.h.wait(N.IM), []), M) ? (0, i.jsx)(c.A, {}) : G ? (0, i.jsxs)(m.f5, {
         value: l,
         children: [(0, i.jsx)(o.Text, {
@@ -82,7 +82,7 @@ function P(e) {
             children: [(0, i.jsx)(j.A, {
                 guildId: t.id,
                 onChange: n
-            }), (0, i.jsx)(A.A, {
+            }), (0, i.jsx)(x.A, {
                 profilePreviewTitle: (0, i.jsx)(o.Heading, {
                     variant: "heading-md/medium",
                     className: R.Y,
@@ -90,7 +90,7 @@ function P(e) {
                         guildName: t?.name
                     })
                 }),
-                profilePreview: (0, i.jsx)(x.A, {
+                profilePreview: (0, i.jsx)(A.A, {
                     ...w,
                     pendingAvatar: V,
                     pendingDisplayNameStyles: F,
@@ -99,7 +99,7 @@ function P(e) {
                     canUsePremiumCustomization: C.Ay.canUsePremiumProfileCustomization(P),
                     onUpsellClick: L
                 }),
-                nameplatePreview: (0, i.jsx)(_.A, {
+                nameplatePreview: (0, i.jsx)(g.A, {
                     ...w,
                     pendingDisplayNameStyles: F,
                     user: P,

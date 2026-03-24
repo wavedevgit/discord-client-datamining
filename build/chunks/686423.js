@@ -1,6 +1,6 @@
 /** chunk id: 686423 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => x
 });
 var i = n(627968),
     s = n(64700),
@@ -12,18 +12,18 @@ var i = n(627968),
     c = n(987144),
     u = n(473145),
     m = n(652215),
-    _ = n(985018),
-    g = n(572523);
-let A = function() {
+    g = n(985018),
+    _ = n(572523);
+let x = function() {
     let e = s.useRef(null),
         {
             analyticsLocations: t
         } = (0, o.Ay)(),
         {
-            fractionalState: A
+            fractionalState: x
         } = (0, d.A)();
 
-    function x(n) {
+    function A(n) {
         null != e.current && (0, r.OoC)(e.current), (0, c.g)({
             analyticsLocation: {
                 page: m.liQ.GUILD_BOOSTING_USER_SETTINGS,
@@ -35,14 +35,14 @@ let A = function() {
             guild: n
         })
     }
-    async function p() {
+    async function h() {
         e.current = await (0, r.mMO)(async () => {
             let {
                 default: e
             } = await Promise.resolve().then(n.bind(n, 770101));
             return t => (0, i.jsx)(e, {
                 ...t,
-                onSelectGuild: x
+                onSelectGuild: A
             })
         }, {
             onCloseRequest: () => {
@@ -50,34 +50,34 @@ let A = function() {
             }
         })
     }
-    let h = (0, u.Nc)({
-        fractionalState: A
+    let p = (0, u.Nc)({
+        fractionalState: x
     });
     return (0, i.jsxs)("div", {
-        className: g.iE,
+        className: _.iE,
         children: [(0, i.jsx)(r._Jp, {
             color: r.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
-            className: g.$J
+            className: _.$J
         }), (0, i.jsx)(r.Text, {
-            className: g.C,
+            className: _.C,
             color: "text-default",
             variant: "text-sm/medium",
-            children: _.intl.format(_.t.kqC5vq, {
+            children: g.intl.format(g.t.kqC5vq, {
                 boostAnyGuildHook: (e, t) => {
-                    let n = null != h,
+                    let n = null != p,
                         s = (0, r.Oer)(e),
                         o = (0, i.jsx)("div", {
-                            className: g.lO,
+                            className: _.lO,
                             children: (0, i.jsx)(a.QWc, {
                                 variant: "primary",
-                                onClick: n ? void 0 : p,
+                                onClick: n ? void 0 : h,
                                 text: s,
                                 disabled: n
                             }, t)
                         });
                     return n ? (0, i.jsx)(l.A, {
-                        text: h,
-                        "aria-label": h.toString(),
+                        text: p,
+                        "aria-label": p.toString(),
                         children: e => (0, i.jsx)("span", {
                             ...e,
                             children: o

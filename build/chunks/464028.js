@@ -1,6 +1,6 @@
 /** chunk id: 464028 params = (module,exports,require) **/
 n.d(t, {
-    f: () => A
+    f: () => x
 });
 var i = n(627968),
     s = n(64700),
@@ -12,19 +12,19 @@ var i = n(627968),
     c = n(106148),
     u = n(397620),
     m = n(652215),
-    _ = n(985018),
-    g = n(113958);
+    g = n(985018),
+    _ = n(113958);
 
-function A() {
+function x() {
     let e = (0, a.WX)(),
         t = s.useMemo(() => [{
             id: "explicit-media-redaction",
-            title: _.intl.string(_.t.GYpoAq),
+            title: g.intl.string(g.t.GYpoAq),
             component: o.Z,
             orientation: "vertical"
         }, {
             id: "gore-media-redaction",
-            title: _.intl.string(_.t["16/3Bi"]),
+            title: g.intl.string(g.t["16/3Bi"]),
             component: d.q,
             orientation: "vertical"
         }], []),
@@ -33,15 +33,15 @@ function A() {
         }, []);
     return (0, i.jsxs)(c.h, {
         children: [(0, i.jsx)(c._, {
-            header: _.intl.string(_.t["Hj/But"]),
-            description: _.intl.format(_.t.dliU4j, {
+            header: g.intl.string(g.t["Hj/But"]),
+            description: g.intl.format(g.t.dliU4j, {
                 learnMoreLink: r.A.getArticleURL(e)
             })
         }), (0, i.jsx)(u.A, {
             tabs: t,
             onTabChange: n,
             orientation: "vertical",
-            tabsClassName: g.v
+            tabsClassName: _.v
         })]
     })
 }

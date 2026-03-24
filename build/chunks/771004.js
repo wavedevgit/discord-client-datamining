@@ -14,10 +14,10 @@ var a = n(627968),
     u = n(981355),
     m = n(409626),
     x = n(305080),
-    _ = n(936636),
+    h = n(936636),
     f = n(985018),
     g = n(851822),
-    h = n(812254);
+    _ = n(812254);
 
 function p(e) {
     let {
@@ -60,8 +60,8 @@ function p(e) {
                 variant: "text-sm/semibold",
                 children: p ? f.intl.string(f.t.lBeKY2) : f.intl.string(f.t["6MwJo/"])
             })
-        }), (0, a.jsx)(_.A, {
-            className: h.B,
+        }), (0, a.jsx)(h.A, {
+            className: _.B,
             detectedGame: t
         })]
     })
@@ -71,19 +71,19 @@ function v(e) {
     let {
         detectedGame: t,
         trackAction: n
-    } = e, [i, s] = l.useState(!0), [c, _] = l.useState(!1), h = l.useRef(null), {
+    } = e, [i, s] = l.useState(!0), [c, h] = l.useState(!1), _ = l.useRef(null), {
         width: p,
         height: v
     } = (0, u.A)(), {
         isTwoColumn: A
     } = (0, x.c)();
     return (l.useEffect(() => {
-        let e = h.current;
-        null != e && _(e.scrollHeight - e.clientHeight > 1 || !i)
-    }, [h, p, v, i, A]), null == t.summary) ? null : (0, a.jsxs)("div", {
+        let e = _.current;
+        null != e && h(e.scrollHeight - e.clientHeight > 1 || !i)
+    }, [_, p, v, i, A]), null == t.summary) ? null : (0, a.jsxs)("div", {
         className: r()(g.fi, g.mX),
         children: [(0, a.jsx)(o.EYj, {
-            ref: h,
+            ref: _,
             lineClamp: i ? A ? 8 : 5 : void 0,
             variant: "text-sm/normal",
             children: t.summary

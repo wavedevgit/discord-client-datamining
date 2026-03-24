@@ -1,7 +1,6 @@
 /** chunk id: 627380 params = (module,exports,require) **/
 n.d(t, {
-    t: () => s,
-    x: () => a
+    t: () => _
 });
 var r = n(64700),
     i = n(989349),
@@ -10,14 +9,10 @@ var r = n(64700),
     u = n(788868);
 
 function a(e, t) {
-    return Math.max(0, _(e, t).diff(l()(), "days"))
-}
-
-function _(e, t) {
     return l()(e).add(t, "months").add(1, "day")
 }
 
-function s() {
+function _() {
     let e = (0, o.$F)(),
         t = (0, o.Xb)();
     return (0, r.useMemo)(() => {
@@ -30,9 +25,9 @@ function s() {
             if (null == r || -1 === t) return null;
             n = u.VD[r].tenureReqNumMonths
         }
-        let r = _(t, n);
+        let r = a(t, n);
         return {
-            days: a(t, n),
+            days: Math.max(0, a(t, n).diff(l()(), "days")),
             months: Math.max(0, Math.round(r.diff(l()(), "months", !0)))
         }
     }, [e, t])

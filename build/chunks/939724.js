@@ -21,19 +21,19 @@ let m = e => {
     let {
         days: a,
         hours: m,
-        minutes: _,
-        seconds: g
-    } = s, A = [{
+        minutes: g,
+        seconds: _
+    } = s, x = [{
         unitValue: a,
         unitType: "days"
     }, {
         unitValue: m,
         unitType: "hours"
     }, {
-        unitValue: _,
+        unitValue: g,
         unitType: "minutes"
     }, {
-        unitValue: g,
+        unitValue: _,
         unitType: "seconds"
     }];
     return (0, i.jsxs)("div", {
@@ -44,7 +44,7 @@ let m = e => {
             children: c.intl.string(c.t["/ARFVE"])
         }), (0, i.jsx)("div", {
             className: u.$R,
-            children: A.map((e, t) => (function(e, t) {
+            children: x.map((e, t) => (function(e, t) {
                 let n, [s, l] = 1 === (n = e.unitValue.toString()).length ? ["0", n[0]] : [n[0], n[1]];
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsxs)("div", {
@@ -91,7 +91,7 @@ let m = e => {
                         children: ":"
                     })]
                 })
-            })(e, t === A.length - 1))
+            })(e, t === x.length - 1))
         })]
     })
 }

@@ -12,12 +12,12 @@ var i = n(627968),
     c = n(397927),
     u = n(793574),
     m = n(688810),
-    _ = n(854627),
-    g = n(427157),
-    A = n(954571),
-    x = n(975571),
-    p = n(326084),
-    h = n(851746),
+    g = n(854627),
+    _ = n(427157),
+    x = n(954571),
+    A = n(975571),
+    h = n(326084),
+    p = n(851746),
     f = n(664654),
     T = n(344904),
     E = n(221688),
@@ -32,7 +32,7 @@ let v = e => {
         } = e, {
             avatarSrc: s,
             eventHandlers: l
-        } = (0, _.A)({
+        } = (0, g.A)({
             userId: t?.id,
             size: c._3J.SIZE_32,
             animateOnHover: !0
@@ -99,18 +99,18 @@ let v = e => {
     y = e => {
         let {
             isInSettings: t = !1
-        } = e, l = (0, r.bG)([h.A], () => h.A.getRecipientStatus()), {
+        } = e, l = (0, r.bG)([p.A], () => p.A.getRecipientStatus()), {
             referralSentUsers: o
-        } = (0, f.J)(), _ = s.useMemo(() => o.map(e => new g.A(e)), [o]), v = {
+        } = (0, f.J)(), g = s.useMemo(() => o.map(e => new _.A(e)), [o]), v = {
             redeemed: 0,
             converted: 0,
             sent: l.size
         };
         l.forEach(e => {
-            e === p.aK.REDEEMED && v.redeemed++, e === p.aK.CONVERTED && (v.redeemed++, v.converted++)
+            e === h.aK.REDEEMED && v.redeemed++, e === h.aK.CONVERTED && (v.redeemed++, v.converted++)
         });
         let I = v.sent === f.Z,
-            y = x.A.getArticleURL(S.MVz.REFERRAL_PROGRAM),
+            y = A.A.getArticleURL(S.MVz.REFERRAL_PROGRAM),
             {
                 analyticsLocations: O
             } = (0, m.Ay)(u.A.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
@@ -134,7 +134,7 @@ let v = e => {
                             hasSentAll: I
                         })
                     }), (0, i.jsx)(j, {
-                        userRecords: _
+                        userRecords: g
                     }), (0, i.jsx)(c.Text, {
                         variant: t ? "text-sm/normal" : "text-lg/medium",
                         children: (0, E.dB)({
@@ -153,7 +153,7 @@ let v = e => {
                                 let {
                                     analyticsLocations: t
                                 } = e;
-                                A.default.track(S.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+                                x.default.track(S.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
                                     location_stack: t
                                 }), (0, c.mMO)(async () => {
                                     let {

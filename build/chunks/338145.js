@@ -12,33 +12,33 @@ var i = n(627968),
     c = n(430452),
     u = n(975571),
     m = n(544028),
-    _ = n(780964),
-    g = n(652215),
-    A = n(985018);
-let x = n(993830),
-    p = n(413142),
-    h = {
-        page: g.liQ.USER_SETTINGS,
-        section: g.JJy.SETTINGS_VOICE_AND_VIDEO
+    g = n(780964),
+    _ = n(652215),
+    x = n(985018);
+let A = n(993830),
+    h = n(413142),
+    p = {
+        page: _.liQ.USER_SETTINGS,
+        section: _.JJy.SETTINGS_VOICE_AND_VIDEO
     };
 
 function f() {
     let e = (0, a.bG)([m.A], () => (0, l.qB1)(m.A.theme));
     return (0, i.jsx)("img", {
-        src: e ? x : p,
+        src: e ? A : h,
         width: 48,
         height: 32,
         alt: ""
     })
 }
-let T = (0, d.E2)(_.X.VOICE_NOISE_SUPPRESSION_SETTING, {
-    useSearchTerms: () => [A.intl.string(A.t.t8Qhib), A.intl.string(A.t.hmfkCi)],
+let T = (0, d.E2)(g.X.VOICE_NOISE_SUPPRESSION_SETTING, {
+    useSearchTerms: () => [x.intl.string(x.t.t8Qhib), x.intl.string(x.t.hmfkCi)],
     usePredicate: function() {
         return (0, a.bG)([c.Ay], () => c.Ay.isInputProfileCustom() && c.Ay.isNoiseSuppressionSupported())
     },
     Component: function() {
         let e = s.useCallback(e => {
-                o.A.setNoiseCancellation("KRISP" === e, h), o.A.setNoiseSuppression("STANDARD" === e, h)
+                o.A.setNoiseCancellation("KRISP" === e, p), o.A.setNoiseSuppression("STANDARD" === e, p)
             }, []),
             {
                 noiseCancellation: t,
@@ -51,35 +51,35 @@ let T = (0, d.E2)(_.X.VOICE_NOISE_SUPPRESSION_SETTING, {
                 isNoiseSuppressionSupported: c.Ay.isNoiseSuppressionSupported(),
                 isNoiseCancellationSupported: c.Ay.isNoiseCancellationSupported()
             })),
-            _ = s.useMemo(() => {
+            g = s.useMemo(() => {
                 let e = [];
                 return m && e.push({
                     id: "krisp",
-                    label: A.intl.string(A.t.rdoNzt),
+                    label: x.intl.string(x.t.rdoNzt),
                     value: "KRISP"
                 }), d && e.push({
                     id: "standard",
-                    label: A.intl.string(A.t.qXeYHw),
+                    label: x.intl.string(x.t.qXeYHw),
                     value: "STANDARD"
                 }), e.push({
                     id: "disabled",
-                    label: A.intl.string(A.t.wkYAlz),
+                    label: x.intl.string(x.t.wkYAlz),
                     value: "NONE"
                 }), e
             }, [m, d]),
-            x = m ? A.intl.format(A.t["1q5aTp"], {
-                helpArticle: u.A.getArticleURL(g.MVz.NOISE_SUPPRESSION)
-            }) : A.intl.string(A.t.OWKjw5);
+            A = m ? x.intl.format(x.t["1q5aTp"], {
+                helpArticle: u.A.getArticleURL(_.MVz.NOISE_SUPPRESSION)
+            }) : x.intl.string(x.t.OWKjw5);
         return (0, i.jsxs)(l.BJc, {
             direction: "vertical",
             gap: 0,
             children: [(0, i.jsx)(r.l6P, {
-                label: A.intl.string(A.t.t8Qhib),
-                description: x,
+                label: x.intl.string(x.t.t8Qhib),
+                description: A,
                 layout: "horizontal",
                 value: t ? "KRISP" : n ? "STANDARD" : "NONE",
                 onSelectionChange: e,
-                options: _,
+                options: g,
                 selectionMode: "single",
                 fullWidth: !0
             }), m && (0, i.jsx)(f, {})]

@@ -1,6 +1,6 @@
 /** chunk id: 508971 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => g
 });
 var i = n(627968);
 n(64700);
@@ -14,7 +14,7 @@ var s = n(503698),
     u = n(906688),
     m = n(869295);
 
-function _(e) {
+function g(e) {
     let {
         achievementId: t,
         dateUnlocked: n
@@ -22,21 +22,21 @@ function _(e) {
     if (null == s) return null;
     let a = null != n,
         {
-            name: _,
-            description: g,
-            hideDescriptionUntilUnlock: A,
-            onAction: x
+            name: g,
+            description: _,
+            hideDescriptionUntilUnlock: x,
+            onAction: A
         } = s,
-        p = A && !a,
-        h = a ? "text-strong" : "text-muted",
+        h = x && !a,
+        p = a ? "text-strong" : "text-muted",
         f = a ? "text-default" : "text-muted",
         T = r()(n),
-        E = null != x && a,
+        E = null != A && a,
         S = E ? o.DUT : "div";
     return (0, i.jsxs)(S, {
         className: l()(m.kL, E && m.b),
         onClick: () => {
-            E && x()
+            E && A()
         },
         children: [(0, i.jsx)("div", {
             className: m.zc,
@@ -54,12 +54,12 @@ function _(e) {
                 children: (0, d.mk)(T)
             }), (0, i.jsx)(o.Text, {
                 variant: "text-md/medium",
-                color: h,
-                children: _()
+                color: p,
+                children: g()
             }), (0, i.jsx)(o.Text, {
                 variant: "text-xs/normal",
                 color: f,
-                children: p ? "?????" : g()
+                children: h ? "?????" : _()
             })]
         })]
     })

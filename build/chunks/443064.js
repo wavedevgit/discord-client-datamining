@@ -1,6 +1,6 @@
 /** chunk id: 443064 params = (module,exports,require) **/
 n.d(t, {
-    A: () => J
+    A: () => Q
 });
 var i = n(627968),
     s = n(64700),
@@ -12,12 +12,12 @@ var i = n(627968),
     c = n(397927),
     u = n(297413),
     m = n(935649),
-    _ = n(847599),
-    g = n(36149),
-    A = n(521933),
-    x = n(50268),
-    p = n(922301),
-    h = n(81400),
+    g = n(847599),
+    _ = n(36149),
+    x = n(521933),
+    A = n(50268),
+    h = n(922301),
+    p = n(81400),
     f = n(557722),
     T = n(207560),
     E = n(790114),
@@ -36,8 +36,8 @@ var i = n(627968),
     D = n(780964),
     G = n(192501),
     M = n(840065),
-    k = n(652215),
-    U = n(53516),
+    U = n(652215),
+    k = n(53516),
     w = n(985018),
     V = n(536242),
     B = n(609290);
@@ -51,12 +51,12 @@ function z(e) {
     let {
         className: t,
         user: l
-    } = e, r = s.useRef(null), u = (0, h.EC)(), m = u?.nick?.[0] ?? null, [_, g] = s.useState(!1);
+    } = e, r = s.useRef(null), u = (0, p.EC)(), m = u?.nick?.[0] ?? null, [g, _] = s.useState(!1);
     s.useEffect(() => {
-        g(null != r.current && r.current.scrollWidth > r.current.clientWidth)
+        _(null != r.current && r.current.scrollWidth > r.current.clientWidth)
     }, [l.username]);
-    let A = !l.isClaimed(),
-        x = A ? w.intl.string(w.t["7Ngnyr"]) : void 0;
+    let x = !l.isClaimed(),
+        A = x ? w.intl.string(w.t["7Ngnyr"]) : void 0;
     return (0, i.jsxs)("div", {
         className: a()(B.ZZ, t),
         children: [(0, i.jsx)("div", {
@@ -96,15 +96,15 @@ function z(e) {
                 })
             })
         }), (0, i.jsx)(d.m, {
-            text: x,
+            text: A,
             children: (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: B.pr,
                 children: (0, i.jsx)(c.Button, {
                     variant: "secondary",
                     size: "sm",
-                    text: _ ? w.intl.string(w.t["16kTw/"]) : w.intl.string(w.t.bt75uw),
-                    disabled: A,
+                    text: g ? w.intl.string(w.t["16kTw/"]) : w.intl.string(w.t.bt75uw),
+                    disabled: x,
                     "aria-label": w.intl.string(w.t.JECa91),
                     onClick: () => (0, c.mMO)(async () => {
                         let {
@@ -124,9 +124,9 @@ function Y(e) {
     let {
         user: t,
         className: n
-    } = e, l = (0, h.EC)(), r = l?.nick?.[0] ?? null, u = R.Ay.getGlobalName(t), m = s.useRef(null), [_, g] = s.useState(!1);
+    } = e, l = (0, p.EC)(), r = l?.nick?.[0] ?? null, u = R.Ay.getGlobalName(t), m = s.useRef(null), [g, _] = s.useState(!1);
     return s.useEffect(() => {
-        g(null != m.current && m.current.scrollWidth > m.current.clientWidth)
+        _(null != m.current && m.current.scrollWidth > m.current.clientWidth)
     }, [u]), (0, i.jsxs)("div", {
         className: a()(B.ZZ, n),
         children: [(0, i.jsx)("div", {
@@ -166,7 +166,7 @@ function Y(e) {
             children: (0, i.jsx)(c.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: _ ? w.intl.string(w.t["16kTw/"]) : w.intl.string(w.t.bt75uw),
+                text: g ? w.intl.string(w.t["16kTw/"]) : w.intl.string(w.t.bt75uw),
                 "aria-label": w.intl.string(w.t.YXeWYM),
                 onClick: H
             })
@@ -193,7 +193,7 @@ function X(e) {
     })
 }
 
-function W(e) {
+function K(e) {
     let t, {
         className: s,
         user: l
@@ -239,7 +239,7 @@ function W(e) {
         buttonText: w.intl.string(w.t.BleMPB),
         buttonAriaLabel: w.intl.string(w.t.BleMPB),
         valueMessage: w.intl.string(w.t.qxk9zo),
-        handleClick: () => A.A.openClaimAccountModal()
+        handleClick: () => x.A.openClaimAccountModal()
     };
     return (0, i.jsxs)("div", {
         className: a()(B.ZZ, s),
@@ -273,7 +273,7 @@ function W(e) {
     })
 }
 
-function K(e) {
+function W(e) {
     let t, {
         className: s,
         user: l
@@ -319,7 +319,7 @@ function K(e) {
                         (0, c.qfG)(e => (0, i.jsx)(j.default, {
                             ...e,
                             title: w.intl.string(w.t["3CTiKi"]),
-                            children: l.hasFlag(k.nhx.MFA_SMS) ? w.intl.string(w.t.jrhJyo) : void 0,
+                            children: l.hasFlag(U.nhx.MFA_SMS) ? w.intl.string(w.t.jrhJyo) : void 0,
                             actionText: w.intl.string(w.t.N86XcP),
                             handleSubmit: e => f.A.removePhone(e, f.d.USER_SETTINGS_UPDATE)
                         }))
@@ -343,7 +343,7 @@ function K(e) {
                                 ...t
                             })
                         }, {
-                            modalKey: U.V
+                            modalKey: k.V
                         })
                     }
                 })
@@ -355,7 +355,7 @@ function K(e) {
 function Z(e) {
     let {
         user: t
-    } = e, n = (0, x.A)({
+    } = e, n = (0, A.A)({
         id: t.id,
         label: w.intl.string(w.t["/AXYnE"])
     }), l = P.Q_.useSetting(), a = s.useRef(null);
@@ -391,9 +391,9 @@ function Z(e) {
 function q(e) {
     let {
         className: t
-    } = e, l = (0, g.b8)(), r = (0, g.yM)(), o = (0, g.Y2)(), d = !l || r, u = w.intl.string(w.t["9KiIz6"]), A = w.intl.string(w.t.DVywUB), x = w.intl.string(w.t.lKDPGA), p = s.useCallback(() => {
-        window.open(O.A.getArticleURL(k.MVz.TIGGER_PAWTECT_LEARN_MORE), "_blank")
-    }, []), h = s.useCallback(() => {
+    } = e, l = (0, _.b8)(), r = (0, _.yM)(), o = (0, _.Y2)(), d = !l || r, u = w.intl.string(w.t["9KiIz6"]), x = w.intl.string(w.t.DVywUB), A = w.intl.string(w.t.lKDPGA), h = s.useCallback(() => {
+        window.open(O.A.getArticleURL(U.MVz.TIGGER_PAWTECT_LEARN_MORE), "_blank")
+    }, []), p = s.useCallback(() => {
         (0, c.mMO)(async () => {
             let {
                 default: e
@@ -403,8 +403,8 @@ function q(e) {
             })
         })
     }, []), f = s.useMemo(() => l ? r ? w.intl.string(w.t.sK0dmH) : o ? w.intl.format(V.default.WM5adV, {
-        handleOnHelpUrlHook: p
-    }) : w.intl.string(w.t.XxRj7f) : x, [l, r, o, x, p]), T = l && !r && o;
+        handleOnHelpUrlHook: h
+    }) : w.intl.string(w.t.XxRj7f) : A, [l, r, o, A, h]), T = l && !r && o;
     return (0, i.jsxs)("div", {
         className: a()(B.ZZ, t),
         children: [(0, i.jsx)("div", {
@@ -431,7 +431,7 @@ function q(e) {
                 size: "sm",
                 text: w.intl.string(w.t.bt75uw),
                 "aria-label": w.intl.string(w.t.bt75uw),
-                onClick: h
+                onClick: p
             })
         }), d && !T && (0, i.jsx)("div", {
             "data-button-hoisted-classname-wrapper": !0,
@@ -439,17 +439,17 @@ function q(e) {
             children: (0, i.jsx)(c.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: r ? u : A,
-                "aria-label": r ? u : A,
+                text: r ? u : x,
+                "aria-label": r ? u : x,
                 onClick: () => m.A.showAgeVerificationGetStartedModal({
-                    entryPoint: _.q1.ACCOUNT_AGE_GROUP
+                    entryPoint: g.q1.ACCOUNT_AGE_GROUP
                 })
             })
         })]
     })
 }
 
-function J(e) {
+function Q(e) {
     let {
         currentUser: t
     } = e, n = (0, C.Ay)(t.id), s = (0, b.A)(n), l = P.jP.useSetting(), a = (0, r.bG)([S.A], () => S.A.getErrors()), o = a?.avatar?.[0], {
@@ -458,7 +458,7 @@ function J(e) {
     } = (0, N.A)({
         userId: t?.id,
         size: c._3J.SIZE_80
-    }), _ = (0, E.A)(), g = (0, T.fk)();
+    }), g = (0, E.A)(), _ = (0, T.fk)();
     return (0, i.jsxs)("div", {
         className: B.DM,
         children: [(0, i.jsx)(I.o, {
@@ -467,7 +467,7 @@ function J(e) {
             avatarSize: c._3J.SIZE_80,
             avatarOffsetX: 16,
             avatarOffsetY: -22,
-            bannerWidth: _ ? 696 : 660,
+            bannerWidth: g ? 696 : 660,
             bannerHeight: 100,
             themePadding: 0
         }), (0, i.jsxs)("div", {
@@ -486,7 +486,7 @@ function J(e) {
                         user: t,
                         className: B.a1,
                         discriminatorClass: B.D2,
-                        displayNameStylesType: p.G.STATIC
+                        displayNameStylesType: h.G.STATIC
                     }), (0, i.jsx)(Z, {
                         user: t
                     })]
@@ -515,13 +515,13 @@ function J(e) {
                     user: t
                 }), (0, i.jsx)(z, {
                     user: t
-                }), (0, i.jsx)(W, {
-                    className: B.Zr,
-                    user: t
                 }), (0, i.jsx)(K, {
                     className: B.Zr,
                     user: t
-                }), g && (0, i.jsx)(q, {
+                }), (0, i.jsx)(W, {
+                    className: B.Zr,
+                    user: t
+                }), _ && (0, i.jsx)(q, {
                     className: B.Zr
                 })]
             })]

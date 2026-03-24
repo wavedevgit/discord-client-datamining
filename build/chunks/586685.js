@@ -1,9 +1,9 @@
 /** chunk id: 586685 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => p,
-    SB: () => A,
-    VD: () => g,
-    b0: () => x
+    Ay: () => h,
+    SB: () => x,
+    VD: () => _,
+    b0: () => A
 });
 var i = n(627968);
 n(64700);
@@ -16,24 +16,12 @@ var s = n(820284),
     c = n(326911),
     u = n(265729),
     m = n(531525),
-    _ = n(652215);
+    g = n(652215);
 
-function g() {
+function _() {
     return (0, i.jsx)(s.A, {
-        section: _.JJy.LIBRARY_INVENTORY_CODE_REDEMPTION,
+        section: g.JJy.LIBRARY_INVENTORY_CODE_REDEMPTION,
         children: (0, i.jsx)(c.A, {})
-    })
-}
-
-function A(e) {
-    let {
-        inOldSettings: t = !1
-    } = e;
-    return (0, i.jsx)(s.A, {
-        section: _.JJy.QUESTS,
-        children: (0, i.jsx)(o.A, {
-            inOldSettings: t
-        })
     })
 }
 
@@ -42,14 +30,26 @@ function x(e) {
         inOldSettings: t = !1
     } = e;
     return (0, i.jsx)(s.A, {
-        section: _.JJy.LIBRARY_INVENTORY_GIFTS_LIST,
+        section: g.JJy.QUESTS,
+        children: (0, i.jsx)(o.A, {
+            inOldSettings: t
+        })
+    })
+}
+
+function A(e) {
+    let {
+        inOldSettings: t = !1
+    } = e;
+    return (0, i.jsx)(s.A, {
+        section: g.JJy.LIBRARY_INVENTORY_GIFTS_LIST,
         children: (0, i.jsx)(u.A, {
             inOldSettings: t
         })
     })
 }
 
-function p() {
+function h() {
     let {
         analyticsLocations: e
     } = (0, a.Ay)(l.A.USER_SETTINGS_GIFT_INVENTORY);
@@ -57,15 +57,15 @@ function p() {
         value: e,
         children: [(0, i.jsx)(d.x, {
             setting: m.H.GIFT_CODE_REDEMPTION,
-            children: (0, i.jsx)(g, {})
+            children: (0, i.jsx)(_, {})
         }), (0, i.jsx)(d.x, {
             setting: m.H.GIFT_INVENTORY_QUESTS,
-            children: (0, i.jsx)(A, {
+            children: (0, i.jsx)(x, {
                 inOldSettings: !0
             })
         }), (0, i.jsx)(d.x, {
             setting: m.H.GIFT_INVENTORY_LIST,
-            children: (0, i.jsx)(x, {
+            children: (0, i.jsx)(A, {
                 inOldSettings: !0
             })
         }), (0, i.jsx)(d.x, {

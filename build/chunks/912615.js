@@ -1,6 +1,6 @@
 /** chunk id: 912615 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => h
 });
 var i = n(627968),
     s = n(64700),
@@ -12,24 +12,24 @@ var i = n(627968),
     c = n(956518),
     u = n(235986),
     m = n(147964),
-    _ = n(985018),
-    g = n(361151),
-    A = n(473169);
-let x = /^\d+$|^$/;
+    g = n(985018),
+    _ = n(361151),
+    x = n(473169);
+let A = /^\d+$|^$/;
 
-function p(e) {
+function h(e) {
     let {
         onClose: t,
         transitionState: n
     } = e, {
-        authorizedApplicationId: p,
-        authorizationError: h,
+        authorizedApplicationId: h,
+        authorizationError: p,
         authorizing: f
     } = (0, a.cf)([m.A], () => ({
         authorizedApplicationId: m.A.testModeApplicationId,
         authorizationError: m.A.error,
         authorizing: m.A.isFetchingAuthorization
-    })), [T, E] = s.useState(p ?? ""), [S, b] = s.useState("8080"), [C, N] = s.useState("localhost"), v = x.test(T);
+    })), [T, E] = s.useState(h ?? ""), [S, b] = s.useState("8080"), [C, N] = s.useState("localhost"), v = A.test(T);
     async function I() {
         d.SH();
         let e = function(e, t, n) {
@@ -44,7 +44,7 @@ function p(e) {
         null != await d.q1(T, e) && t()
     }
     s.useEffect(() => () => o.h.wait(() => d.SH()), []);
-    let j = null != p && p === T,
+    let j = null != h && h === T,
         y = j ? function() {
             d.cL(), E(""), N(null)
         } : I,
@@ -52,51 +52,51 @@ function p(e) {
             loading: f,
             disabled: !v || 0 === T.length || "localhost" === C && 0 === S.length,
             variant: j ? "critical-primary" : "active",
-            text: j ? _.intl.string(_.t.d6TR3I) : _.intl.string(_.t.qwuK5I),
+            text: j ? g.intl.string(g.t.d6TR3I) : g.intl.string(g.t.qwuK5I),
             onClick: y
         }], [T.length, f, j, v, S.length, y, C]);
     return (0, i.jsxs)(l.Modal, {
-        title: _.intl.string(_.t.f8fzky),
-        subtitle: _.intl.string(_.t.a6Vill),
+        title: g.intl.string(g.t.f8fzky),
+        subtitle: g.intl.string(g.t.a6Vill),
         actions: O,
         onClose: t,
         transitionState: n,
-        children: [null == h ? null : (0, i.jsx)("div", {
-            className: A.SX,
+        children: [null == p ? null : (0, i.jsx)("div", {
+            className: x.SX,
             children: (0, i.jsx)(r.wx6, {
                 type: "critical",
-                children: h
+                children: p
             })
         }), (0, i.jsxs)(u.A, {
             direction: u.A.Direction.VERTICAL,
             align: u.A.Align.START,
             children: [(0, i.jsx)("div", {
-                className: g.I,
+                className: _.I,
                 children: (0, i.jsx)(r.ksK, {
-                    label: _.intl.string(_.t.P6TzgI),
+                    label: g.intl.string(g.t.P6TzgI),
                     required: !0,
                     value: T,
                     maxLength: 19,
-                    error: v ? null : _.intl.string(_.t.gPNgKO),
+                    error: v ? null : g.intl.string(g.t.gPNgKO),
                     onChange: function(e) {
                         E(e)
                     },
                     disabled: f
                 })
             }), (0, i.jsx)("div", {
-                className: g.I,
+                className: _.I,
                 children: (0, i.jsx)(r.l6P, {
                     selectionMode: "single",
-                    label: _.intl.string(_.t["/GTqXG"]),
+                    label: g.intl.string(g.t["/GTqXG"]),
                     disabled: !v || "" === T,
                     value: C,
                     options: [{
                         value: "localhost",
-                        label: _.intl.string(_.t["+Y9Y6r"]),
+                        label: g.intl.string(g.t["+Y9Y6r"]),
                         id: "localhost"
                     }, {
                         value: "proxy",
-                        label: _.intl.string(_.t.uaksyW),
+                        label: g.intl.string(g.t.uaksyW),
                         id: "proxy"
                     }],
                     onSelectionChange: function(e) {
@@ -105,10 +105,10 @@ function p(e) {
                     placeholder: "URL Origin Type"
                 })
             }), "localhost" !== C ? null : (0, i.jsx)("div", {
-                className: g.I,
+                className: _.I,
                 children: (0, i.jsx)(r.ksK, {
                     required: !0,
-                    label: _.intl.string(_.t.fF4zxq),
+                    label: g.intl.string(g.t.fF4zxq),
                     value: S,
                     maxLength: 5,
                     onChange: e => b(e),

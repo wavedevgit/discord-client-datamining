@@ -13,10 +13,10 @@ var a = n(627968),
     u = n(287809),
     m = n(562153),
     x = n(420706),
-    _ = n(322789),
+    h = n(322789),
     f = n(506326),
     g = n(985018),
-    h = n(505502),
+    _ = n(505502),
     p = n(851822);
 let v = e => {
     let {
@@ -28,17 +28,17 @@ let v = e => {
         customCTA: j,
         popoutClassname: E,
         popoutPosition: I = "right"
-    } = e, C = l.useRef(null), N = (0, s.bG)([d.A, c.A], () => c.A.getChannel(d.A.getChannelId())), b = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
+    } = e, C = l.useRef(null), b = (0, s.bG)([d.A, c.A], () => c.A.getChannel(d.A.getChannelId())), N = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
         nick: T,
         avatar: S
     } = l.useMemo(() => {
-        let e = b?.getAvatarURL(N?.guild_id, 48, !1);
+        let e = N?.getAvatarURL(b?.guild_id, 48, !1);
         return {
-            nick: m.Ay.getName(N?.guild_id, N?.id, b),
+            nick: m.Ay.getName(b?.guild_id, b?.id, N),
             avatar: e
         }
-    }, [b, N]);
-    return null == b ? null : (0, a.jsx)(o.YNO, {
+    }, [N, b]);
+    return null == N ? null : (0, a.jsx)(o.YNO, {
         targetElementRef: C,
         position: I,
         renderPopout: e => {
@@ -68,7 +68,7 @@ let v = e => {
         children: e => (0, a.jsx)(o.DUT, {
             innerRef: C,
             ...e,
-            className: h.GA,
+            className: _.GA,
             children: (0, a.jsx)(o.vN3, {
                 offset: {
                     top: 4,
@@ -78,13 +78,13 @@ let v = e => {
                 },
                 children: (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)("img", {
-                        className: h.my,
+                        className: _.my,
                         src: S,
                         alt: g.intl.formatToPlainString(g.t.IzVXxY, {
                             userName: T
                         })
                     }), (0, a.jsx)("div", {
-                        className: h.Su,
+                        className: _.Su,
                         children: (0, a.jsxs)("div", {
                             className: r()(p.fi, p.Kt),
                             children: [(0, a.jsx)(o.Text, {
@@ -94,13 +94,13 @@ let v = e => {
                                 children: T
                             }), (0, a.jsx)(f.mG, {
                                 location: f.N5.APP_LAUNCHER,
-                                children: _.n.map((e, n) => (0, a.jsx)(e, {
+                                children: h.n.map((e, n) => (0, a.jsx)(e, {
                                     entry: t
                                 }, n))
                             })]
                         })
                     }), null != j ? j : (0, a.jsx)("div", {
-                        className: h.Br,
+                        className: _.Br,
                         children: (0, a.jsx)(o.W4J, {
                             size: "sm"
                         })

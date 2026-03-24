@@ -14,10 +14,10 @@ var a = n(627968),
     u = n(714991),
     m = n(970163),
     x = n(184989),
-    _ = n(486020),
+    h = n(486020),
     f = n(240248),
     g = n(409626),
-    h = n(305080),
+    _ = n(305080),
     p = n(652215),
     v = n(985018),
     A = n(851822),
@@ -30,7 +30,7 @@ function I(e) {
         trackClick: n,
         onInviteResolved: i,
         closeModal: f
-    } = e, [h, E] = l.useState(), I = (0, o.bG)([x.A], () => h?.guild?.id != null && x.A.isMember(h?.guild?.id)), C = l.useMemo(() => t.websites?.find(e => {
+    } = e, [_, E] = l.useState(), I = (0, o.bG)([x.A], () => _?.guild?.id != null && x.A.isMember(_?.guild?.id)), C = l.useMemo(() => t.websites?.find(e => {
         let {
             category: t
         } = e;
@@ -40,16 +40,16 @@ function I(e) {
             let e = async e => {
                 let t = e.split("/").pop();
                 if (null != t) {
-                    if (null != h && h.code.toLowerCase() === t.toLowerCase()) return;
+                    if (null != _ && _.code.toLowerCase() === t.toLowerCase()) return;
                     let e = await (0, m.A)(t);
                     !0 !== e.banned && (E(e.invite), null != e.invite && i?.(e.invite))
                 }
             };
             null != C && e(C.url)
-        }, [C, i, h]), null == h || null == h.guild || !h.guild.features.includes(p.GuildFeatures.VERIFIED)) return null;
-    let N = _.Ay.getGuildIconURL({
-        id: h.guild.id,
-        icon: h.guild.icon,
+        }, [C, i, _]), null == _ || null == _.guild || !_.guild.features.includes(p.GuildFeatures.VERIFIED)) return null;
+    let b = h.Ay.getGuildIconURL({
+        id: _.guild.id,
+        icon: _.guild.icon,
         size: 32
     });
     return (0, a.jsxs)("div", {
@@ -63,9 +63,9 @@ function I(e) {
             className: r()(A.nM, A.mX),
             children: [(0, a.jsx)("img", {
                 className: j.$f,
-                src: N,
+                src: b,
                 alt: v.intl.formatToPlainString(v.t.xm6W9D, {
-                    guildName: h.guild.name
+                    guildName: _.guild.name
                 })
             }), (0, a.jsxs)("div", {
                 className: j.U5,
@@ -73,16 +73,16 @@ function I(e) {
                     className: j.YS,
                     children: [(0, a.jsx)(c.Text, {
                         variant: "text-sm/semibold",
-                        children: h.guild.name
+                        children: _.guild.name
                     }), (0, a.jsx)(u.A, {
-                        guild: h.guild,
+                        guild: _.guild,
                         size: 16
                     })]
-                }), null != h.approximate_member_count && (0, a.jsx)(c.Text, {
+                }), null != _.approximate_member_count && (0, a.jsx)(c.Text, {
                     variant: "text-xxs/normal",
                     color: "text-muted",
                     children: v.intl.format(v.t.zRl6XR, {
-                        count: h.approximate_member_count
+                        count: _.approximate_member_count
                     })
                 })]
             })]
@@ -92,8 +92,8 @@ function I(e) {
             onClick: () => {
                 f(), n(g.Ws.JoinOfficialServer), d.h.dispatch({
                     type: "INVITE_MODAL_OPEN",
-                    invite: h,
-                    code: h.code,
+                    invite: _,
+                    code: _.code,
                     context: p.BRT.APP
                 })
             },
@@ -111,14 +111,14 @@ function C(e) {
         hasAlreadyLinked: i,
         officialInvite: r,
         isMember: s
-    } = (0, h.c)();
+    } = (0, _.c)();
     if (null == r || null == r.guild || !r.guild.features.includes(p.GuildFeatures.VERIFIED)) return null;
-    let o = _.Ay.getGuildIconURL({
+    let o = h.Ay.getGuildIconURL({
             id: r.guild.id,
             icon: r.guild.icon,
             size: 48
         }),
-        m = _.Ay.getGuildSplashURL({
+        m = h.Ay.getGuildSplashURL({
             id: r.guild.id,
             splash: r.guild.splash
         }),

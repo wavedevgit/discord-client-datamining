@@ -12,20 +12,20 @@ var i = n(627968),
     c = n(302086),
     u = n(369496),
     m = n(580630),
-    _ = n(349439),
-    g = n(959349);
-let A = e => {
+    g = n(349439),
+    _ = n(959349);
+let x = e => {
         let {
             displayName: t,
             product: n
-        } = e, s = (0, _.nF)(n);
+        } = e, s = (0, g.nF)(n);
         return null == s ? null : (0, i.jsx)("img", {
             src: s,
             alt: t,
-            className: g._P
+            className: _._P
         })
     },
-    x = e => {
+    A = e => {
         let {
             displayName: t,
             nameplateData: n
@@ -35,31 +35,31 @@ let A = e => {
         return null == s ? null : (0, i.jsx)("img", {
             src: s,
             alt: t,
-            className: g.M4
-        })
-    },
-    p = e => {
-        let {
-            displayName: t,
-            product: n
-        } = e, s = (0, _.GQ)(n);
-        return null == s ? null : (0, i.jsx)("img", {
-            src: s,
-            alt: t,
-            className: g._P
+            className: _.M4
         })
     },
     h = e => {
         let {
+            displayName: t,
+            product: n
+        } = e, s = (0, g.GQ)(n);
+        return null == s ? null : (0, i.jsx)("img", {
+            src: s,
+            alt: t,
+            className: _._P
+        })
+    },
+    p = e => {
+        let {
             subscriptionPlanId: t
         } = e;
         if (null == t) return (0, i.jsx)("div", {
-            className: g.T8,
+            className: _.T8,
             children: (0, i.jsx)(o.U1X, {})
         });
-        let n = (0, _.il)(t);
+        let n = (0, g.il)(t);
         return (0, i.jsx)("div", {
-            className: g.T8,
+            className: _.T8,
             children: n ? (0, i.jsx)(o._Jp, {
                 size: "custom",
                 width: 20,
@@ -77,29 +77,29 @@ let A = e => {
             product: n
         } = e;
         if (null == n) return (0, i.jsx)("div", {
-            className: g.T8,
+            className: _.T8,
             children: (0, i.jsx)(o.U1X, {})
         });
         switch (n.type) {
             case r.R.AVATAR_DECORATION:
-                return (0, i.jsx)(A, {
+                return (0, i.jsx)(x, {
                     displayName: t,
                     product: n
                 });
             case r.R.NAMEPLATE:
                 let s = (0, u.EQ)(n);
-                return null != s ? (0, i.jsx)(x, {
+                return null != s ? (0, i.jsx)(A, {
                     displayName: t,
                     nameplateData: s
                 }) : null;
             case r.R.PROFILE_EFFECT:
-                return (0, i.jsx)(p, {
+                return (0, i.jsx)(h, {
                     displayName: t,
                     product: n
                 });
             default:
                 return (0, i.jsx)("div", {
-                    className: g.T8,
+                    className: _.T8,
                     children: (0, i.jsx)(o.U1X, {})
                 })
         }
@@ -115,14 +115,14 @@ let A = e => {
             product: c
         } = (0, d.A)(t), {
             displayName: u,
-            typeName: A,
-            isSubscription: x
-        } = (0, _.GZ)(c ?? null, n);
-        if (null != t && !x && null == c || null == u) return null;
-        let p = (0, m.$g)(s, l);
+            typeName: x,
+            isSubscription: A
+        } = (0, g.GZ)(c ?? null, n);
+        if (null != t && !A && null == c || null == u) return null;
+        let h = (0, m.$g)(s, l);
         return (0, i.jsxs)("div", {
-            className: a()(g.kL, r),
-            children: [x ? (0, i.jsx)(h, {
+            className: a()(_.kL, r),
+            children: [A ? (0, i.jsx)(p, {
                 subscriptionPlanId: n
             }) : (0, i.jsx)(f, {
                 displayName: u,
@@ -130,11 +130,11 @@ let A = e => {
             }), (0, i.jsxs)("div", {
                 children: [(0, i.jsx)(o.Text, {
                     variant: "text-md/semibold",
-                    children: null != A ? `${u} • ${A}` : u
+                    children: null != x ? `${u} • ${x}` : u
                 }), (0, i.jsx)(o.Text, {
                     variant: "text-sm/medium",
                     color: "text-subtle",
-                    children: p
+                    children: h
                 })]
             })]
         })

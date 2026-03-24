@@ -12,15 +12,15 @@ var i = n(627968),
     c = n(840065),
     u = n(95701),
     m = n(128450),
-    _ = n(652215),
-    g = n(985018),
-    A = n(973746);
-let x = (0, d.Ld)(),
-    p = (0, u.createChannelRecord)({
+    g = n(652215),
+    _ = n(985018),
+    x = n(973746);
+let A = (0, d.Ld)(),
+    h = (0, u.createChannelRecord)({
         id: "1",
-        type: _.rbe.DM
+        type: g.rbe.DM
     }),
-    h = (0, d.Ld)();
+    p = (0, d.Ld)();
 
 function f(e) {
     let {
@@ -42,21 +42,21 @@ function f(e) {
         void 0 !== u || S === T || I.current || (b(T), N((0, r.x7)(T)))
     }, [u, T, S]), (0, i.jsxs)(m.A, {
         title: t,
-        titleId: x,
-        description: g.intl.string(g.t.Bbw6Ac),
+        titleId: A,
+        description: _.intl.string(_.t.Bbw6Ac),
         errors: n,
         disabled: E,
         children: [(0, i.jsx)(o.Ay, {
-            "aria-describedby": h,
-            "aria-labelledby": x,
-            className: A.i,
-            innerClassName: A.Z,
-            maxCharacterCount: _.NA2,
+            "aria-describedby": p,
+            "aria-labelledby": A,
+            className: x.i,
+            innerClassName: x.Z,
+            maxCharacterCount: g.NA2,
             onChange: function(e, t, n) {
                 t !== S && (b(t), N(n), d(t))
             },
             placeholder: f,
-            channel: p,
+            channel: h,
             textValue: S,
             richValue: C,
             emojiPickerCloseOnModalOuterClick: !0,
@@ -78,9 +78,9 @@ function f(e) {
                 })
             }
         }), (0, i.jsx)(l.AC4, {
-            id: h,
-            children: g.intl.format(g.t["+DFxLc"], {
-                maxLength: _.NA2
+            id: p,
+            children: _.intl.format(_.t["+DFxLc"], {
+                maxLength: g.NA2
             })
         })]
     })

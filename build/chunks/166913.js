@@ -1,6 +1,6 @@
 /** chunk id: 166913 params = (module,exports,require) **/
 n.d(t, {
-    A: () => V
+    A: () => F
 });
 var i = n(627968),
     s = n(64700),
@@ -12,174 +12,185 @@ var i = n(627968),
     c = n(582754),
     u = n(421380),
     m = n(736653),
-    _ = n(793574),
-    g = n(688810),
-    A = n(726649),
-    x = n(611924),
+    g = n(793574),
+    _ = n(688810),
+    x = n(726649),
+    A = n(611924),
+    h = n(909536),
     p = n(166403),
-    h = n(954571),
-    f = n(927578),
-    T = n(40185),
-    E = n(526292),
-    S = n(234419),
-    b = n(690737),
-    C = n(320908),
-    N = n(412260),
-    v = n(396375),
-    I = n(106922),
-    j = n(501007),
-    y = n(901125),
-    O = n(729230),
-    R = n(227273),
-    L = n(244778),
-    P = n(788868),
-    D = n(652215),
-    G = n(985018),
-    M = n(639179),
-    k = n(432221),
-    U = n(288894);
-let w = e => {
+    f = n(954571),
+    T = n(927578),
+    E = n(40185),
+    S = n(526292),
+    b = n(234419),
+    C = n(690737),
+    N = n(320908),
+    v = n(412260),
+    I = n(396375),
+    j = n(106922),
+    y = n(501007),
+    O = n(400669),
+    R = n(901125),
+    L = n(729230),
+    P = n(227273),
+    D = n(244778),
+    G = n(788868),
+    M = n(652215),
+    U = n(985018),
+    k = n(639179),
+    w = n(432221),
+    V = n(288894);
+let B = e => {
         let {
             inOfferExperience: t
         } = e;
-        return t ? (0, i.jsx)(O.A, {
+        return t ? (0, i.jsx)(L.A, {
             lifted: t
         }) : null
     },
-    V = () => {
-        (0, x.P)(A.b);
+    F = () => {
+        (0, A.P)(x.b);
         let e = s.useRef(null),
             t = s.useRef(null),
             n = s.useRef(null),
             l = (0, m.Ay)(),
-            O = (0, c.Mw)(l),
-            [V, B] = s.useState(!1),
+            L = (0, c.Mw)(l),
             [F, H] = s.useState(!1),
             [z, Y] = s.useState(!1),
-            [X, W] = s.useState(!1),
-            K = (0, o.bG)([p.A], () => p.A.getPremiumTypeSubscription()),
-            Z = null != K ? (0, f.EL)(K) : null,
-            q = null != Z ? f.Ay.getSkuIdForPlan(Z.planId) : null,
-            J = null !== q && q !== P.pe.TIER_2 ? P.pe.TIER_2 : null,
-            Q = (0, S.V)(),
-            $ = Q?.subscription_trial?.sku_id,
-            ee = (0, E.ar)(),
-            et = (0, T.cg)(),
-            en = et ?? !1,
-            ei = (0, o.bG)([N.A], () => {
-                let e = N.A.getMarketingComponentByType(r.C.BILLING_SETTINGS_NITRO_GIFT_BANNER);
+            [X, K] = s.useState(!1),
+            [W, Z] = s.useState(!1),
+            q = (0, o.bG)([p.A], () => p.A.getPremiumTypeSubscription()),
+            Q = null != q ? (0, T.EL)(q) : null,
+            J = null != Q ? T.Ay.getSkuIdForPlan(Q.planId) : null,
+            $ = null !== J && J !== G.pe.TIER_2 ? G.pe.TIER_2 : null,
+            ee = (0, b.V)(),
+            et = ee?.subscription_trial?.sku_id,
+            en = (0, S.ar)(),
+            ei = (0, E.cg)(),
+            es = (0, h.Gh)("premium-marketing-settings-page"),
+            el = ei ?? !1,
+            ea = (0, o.bG)([v.A], () => {
+                let e = v.A.getMarketingComponentByType(r.C.BILLING_SETTINGS_NITRO_GIFT_BANNER);
                 return null == e || "billingSettingsNitroGiftBanner" !== e.properties.properties.oneofKind ? null : e.properties.properties.billingSettingsNitroGiftBanner
             }),
             {
-                analyticsLocations: es
-            } = (0, g.Ay)(_.A.PREMIUM_MARKETING);
+                analyticsLocations: er
+            } = (0, _.Ay)(g.A.PREMIUM_MARKETING);
         s.useEffect(() => {
-            W(!0)
+            Z(!0)
         }, []);
-        let el = (0, i.jsx)("div", {
-            className: k.dY,
+        let eo = (0, i.jsx)("div", {
+            className: w.dY,
             children: (0, i.jsx)(d.L, {
                 innerRef: e,
-                onChange: e => H(e),
+                onChange: e => Y(e),
                 threshold: .1,
                 active: !0,
-                children: (0, i.jsx)(j.NB, {
+                children: (0, i.jsx)(y.NB, {
                     innerRef: e,
-                    tier0CTAButton: (0, i.jsx)(v.A, {
+                    tier0CTAButton: (0, i.jsx)(I.A, {
                         showIcon: !1,
-                        subscriptionTier: P.pe.TIER_0,
-                        className: M.Ph,
+                        subscriptionTier: G.pe.TIER_0,
+                        className: k.Ph,
                         look: u.pR.OUTLINED,
                         color: u.XD.WHITE,
-                        buttonShineClassName: M.Qr
+                        buttonShineClassName: k.Qr
                     }),
-                    tier2CTAButton: $ === P.pe.TIER_0 ? (0, i.jsx)(v.A, {
+                    tier2CTAButton: et === G.pe.TIER_0 ? (0, i.jsx)(I.A, {
                         showIcon: !1,
-                        subscriptionTier: P.pe.TIER_2,
-                        className: M.Ph,
+                        subscriptionTier: G.pe.TIER_2,
+                        className: k.Ph,
                         look: u.pR.OUTLINED,
                         color: u.XD.WHITE,
-                        buttonShineClassName: M.Qr
-                    }) : (0, i.jsx)(v.A, {
+                        buttonShineClassName: k.Qr
+                    }) : (0, i.jsx)(I.A, {
                         color: u.XD.BRAND_INVERTED,
                         showIcon: !1,
-                        subscriptionTier: P.pe.TIER_2,
-                        className: M.Ph,
-                        hasActivePromotion: en,
+                        subscriptionTier: G.pe.TIER_2,
+                        className: k.Ph,
+                        hasActivePromotion: el,
                         textOptions: {
-                            textClassName: M.Ac
+                            textClassName: k.Ac
                         },
-                        buttonShineClassName: M.Qr
+                        buttonShineClassName: k.Qr
                     })
                 })
             })
         });
         return (0, i.jsxs)("div", {
-            className: k.kL,
+            className: w.kL,
             "data-cy": "tier-0-marketing-page",
-            children: [(0, i.jsx)(y.A, {
-                premiumSubscription: K,
-                className: a()(k.R3, {
-                    [k.aZ]: ee
+            children: [(0, i.jsx)(R.A, {
+                premiumSubscription: q,
+                className: a()(w.R3, {
+                    [w.aZ]: en
                 })
-            }), (0, i.jsx)(w, {
-                inOfferExperience: ee
             }), (0, i.jsxs)("div", {
                 className: a()({
-                    [k.V1]: !ee
+                    [w.n1]: en
                 }),
-                children: [null != ei && (0, i.jsx)(I.c, {
-                    className: k.w$,
-                    config: ei
+                children: [(0, i.jsx)(B, {
+                    inOfferExperience: en
+                }), es && (0, i.jsx)(O.l, {
+                    className: w.ij,
+                    size: "md"
+                })]
+            }), (0, i.jsxs)("div", {
+                className: a()({
+                    [w.V1]: !en
+                }),
+                children: [null != ea && (0, i.jsx)(j.c, {
+                    className: w.w$,
+                    config: ea
                 }), (0, i.jsx)(d.L, {
                     innerRef: t,
-                    onChange: e => B(e),
+                    onChange: e => H(e),
                     threshold: 0,
                     active: !0,
-                    children: (0, i.jsx)(C.Ay, {
+                    children: (0, i.jsx)(N.Ay, {
                         ref: t,
-                        subscriptionTier: J,
+                        subscriptionTier: $,
                         className: a()({
-                            [k.p7]: ee,
-                            [k.Pw]: ee,
-                            [k.AG]: et,
-                            [k.Cv]: null != K
+                            [w.p7]: en,
+                            [w.Pw]: en,
+                            [w.AG]: ei,
+                            [w.Cv]: null != q
                         }),
-                        isDarkMode: O
+                        isDarkMode: L
                     })
                 })]
-            }), el, (0, i.jsx)(R.A, {
-                className: k.B_
+            }), eo, (0, i.jsx)(P.A, {
+                className: w.B_
             }), (0, i.jsx)("div", {
-                className: k.aC,
-                children: (0, i.jsx)(L.A, {
-                    className: k.JQ,
+                className: w.aC,
+                children: (0, i.jsx)(D.A, {
+                    className: w.JQ,
                     hideCTAs: !0
                 })
             }), (0, i.jsx)("div", {
-                className: k.hz
-            }), (0, i.jsx)(b.A, {
-                isVisible: !V && !F && X,
-                subscriptionTier: J,
+                className: w.hz
+            }), (0, i.jsx)(C.A, {
+                isVisible: !F && !z && W,
+                subscriptionTier: $,
                 isApplicationHome: !1,
-                isEligibleForBogoPromotion: et
+                isEligibleForBogoPromotion: ei
             }), (0, i.jsx)(d.L, {
                 innerRef: n,
                 onChange: e => {
-                    e && !z && (h.default.track(D.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
-                        location_stack: es
-                    }), Y(!0))
+                    e && !X && (f.default.track(M.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                        location_stack: er
+                    }), K(!0))
                 },
                 children: (0, i.jsx)("div", {
                     ref: n,
-                    className: k._Z
+                    className: w._Z
                 })
             }), (0, i.jsx)("img", {
-                src: U,
-                className: k.Kw,
+                src: V,
+                className: w.Kw,
                 width: 112,
                 height: 85,
-                alt: G.intl.string(G.t.X4IxWL)
+                alt: U.intl.string(U.t.X4IxWL)
             })]
         })
     }

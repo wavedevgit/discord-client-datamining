@@ -13,12 +13,12 @@ var i = n(627968),
     c = n(944791),
     u = n(793574),
     m = n(688810),
-    _ = n(726249),
-    g = n(915089),
-    A = n(742589),
-    x = n(544028),
-    p = n(253932),
-    h = n(841329),
+    g = n(726249),
+    _ = n(915089),
+    x = n(742589),
+    A = n(544028),
+    h = n(253932),
+    p = n(841329),
     f = n(899847),
     T = n(695515),
     E = n(438732),
@@ -49,7 +49,7 @@ let G = {
         [O.u9.DATA_AND_PRIVACY]: N.A
     };
 
-function k() {
+function U() {
     return (0, i.jsx)(d.BJc, {
         justify: "center",
         align: "center",
@@ -58,7 +58,7 @@ function k() {
     })
 }
 
-function U(e) {
+function k(e) {
     let {
         section: t,
         handleItemSelect: n
@@ -95,22 +95,22 @@ function w(e) {
         theme: t,
         section: n,
         handleItemSelect: s
-    } = e, l = (0, g.GV)(), o = (0, b.VT)();
+    } = e, l = (0, _.GV)(), o = (0, b.VT)();
     return (0, i.jsx)(d.NPJ, {
         theme: t,
-        children: e => (0, i.jsxs)(A.A, {
+        children: e => (0, i.jsxs)(x.A, {
             className: a()(e, D.ZB),
             scrollable: r.Fr,
             role: "navigation",
             "aria-labelledby": l,
             toolbar: !0,
-            children: [(0, i.jsx)(A.A.Icon, {
+            children: [(0, i.jsx)(x.A.Icon, {
                 icon: d.nFg,
                 "aria-hidden": !0
-            }), (0, i.jsx)(A.A.Title, {
+            }), (0, i.jsx)(x.A.Title, {
                 id: l,
                 children: P.intl.string(L.default.RZqaJn)
-            }), (0, i.jsx)(A.A.Divider, {}), (0, i.jsxs)(d.VQ0, {
+            }), (0, i.jsx)(x.A.Divider, {}), (0, i.jsxs)(d.VQ0, {
                 "aria-label": P.intl.string(L.default.RZqaJn),
                 selectedItem: n,
                 type: "top-pill",
@@ -134,7 +134,7 @@ function w(e) {
 }
 
 function V() {
-    let e = (0, g.GV)(),
+    let e = (0, _.GV)(),
         {
             isLoading: t,
             selectedTab: n,
@@ -147,15 +147,15 @@ function V() {
             }
         });
     if (s.useEffect(() => {
-            (0, h._)(S.q[n])
+            (0, p._)(S.q[n])
         }, [n]), a) return null;
     let r = G[n];
     return (0, i.jsxs)("main", {
         className: D.kL,
         "aria-label": P.intl.string(L.default.RZqaJn),
-        children: [(0, i.jsx)(_.HI, {
+        children: [(0, i.jsx)(g.HI, {
             location: P.intl.string(L.default.RZqaJn)
-        }), (0, i.jsx)(U, {
+        }), (0, i.jsx)(k, {
             section: n,
             handleItemSelect: e => {
                 l(e)
@@ -164,7 +164,7 @@ function V() {
             id: n,
             "aria-labelledby": e,
             className: D.Us,
-            children: t ? (0, i.jsx)(k, {}) : (0, i.jsx)(r, {})
+            children: t ? (0, i.jsx)(U, {}) : (0, i.jsx)(r, {})
         })]
     })
 }
@@ -172,9 +172,9 @@ function V() {
 function B() {
     let {
         analyticsLocations: e
-    } = (0, m.Ay)(u.A.FAMILY_CENTER), t = (0, E.A)(), n = (0, o.bG)([T.A], () => T.A.getIsInitialized()), l = (0, o.bG)([x.A], () => x.A.theme), r = (0, g.GV)(), {
-        isLoading: A,
-        selectedTab: h,
+    } = (0, m.Ay)(u.A.FAMILY_CENTER), t = (0, E.A)(), n = (0, o.bG)([T.A], () => T.A.getIsInitialized()), l = (0, o.bG)([A.A], () => A.A.theme), r = (0, _.GV)(), {
+        isLoading: x,
+        selectedTab: p,
         handleTabChange: S,
         showAgeGateModal: b
     } = (0, y.j)({
@@ -184,17 +184,17 @@ function B() {
         }
     });
     if (s.useEffect(() => {
-            let e = p.dm.getSetting();
-            n && t && void 0 === e && p.dm.updateSetting(!0)
+            let e = h.dm.getSetting();
+            n && t && void 0 === e && h.dm.updateSetting(!0)
         }, [n, t]), b) return null;
-    let C = h !== O.u9.SETTINGS ? h : O.u9.ACTIVITY,
+    let C = p !== O.u9.SETTINGS ? p : O.u9.ACTIVITY,
         N = M[C];
     return (0, i.jsx)(m.f5, {
         value: e,
         children: (0, i.jsxs)("main", {
             className: a()(D.kL, D.ei),
             "aria-label": P.intl.string(L.default.RZqaJn),
-            children: [(0, i.jsx)(_.HI, {
+            children: [(0, i.jsx)(g.HI, {
                 location: P.intl.string(L.default.RZqaJn)
             }), (0, i.jsx)(w, {
                 theme: l,
@@ -209,7 +209,7 @@ function B() {
                 children: (0, i.jsx)(d.HOs, {
                     children: (0, i.jsx)("div", {
                         className: D.O4,
-                        children: A ? (0, i.jsx)(k, {}) : (0, i.jsx)(N, {})
+                        children: x ? (0, i.jsx)(U, {}) : (0, i.jsx)(N, {})
                     })
                 })
             })]

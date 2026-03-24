@@ -1,6 +1,6 @@
 /** chunk id: 219887 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(739508),
     u = n(240248),
     m = n(985018),
-    _ = n(789863);
-class g extends s.PureComponent {
+    g = n(789863);
+class _ extends s.PureComponent {
     static defaultProps = {
         isForSubscription: !1,
         isDefault: !1,
@@ -80,7 +80,7 @@ class g extends s.PureComponent {
             paymentSource: e
         } = this.props;
         return e instanceof d.LQ ? (0, i.jsx)("div", {
-            className: _.k7,
+            className: g.k7,
             children: (0, i.jsx)(l.pVd, {
                 size: "xs",
                 color: "currentColor"
@@ -101,23 +101,23 @@ class g extends s.PureComponent {
         return (0, i.jsxs)(r.A, {
             children: [a && this.renderIcon(), (0, i.jsxs)(r.A, {
                 direction: r.A.Direction.VERTICAL,
-                className: _.Wi,
+                className: g.Wi,
                 children: [(0, i.jsxs)(r.A, {
                     align: r.A.Align.CENTER,
                     children: [this.renderDescription(), o && e ? (0, i.jsx)("div", {
-                        className: _.Zn,
+                        className: g.Zn,
                         children: m.intl.string(m.t.bBvAEH)
                     }) : null, s ? (0, i.jsx)("div", {
-                        className: _.NV,
+                        className: g.NV,
                         children: m.intl.string(m.t.YCrcPL)
                     }) : null, o && t.invalid ? (0, i.jsx)("div", {
-                        className: _.tG,
+                        className: g.tG,
                         children: m.intl.string(m.t["851k93"])
                     }) : null]
                 }), n && null != d ? (0, i.jsx)(l.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
-                    className: _.Sv,
+                    className: g.Sv,
                     children: d
                 }) : null]
             })]

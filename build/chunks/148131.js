@@ -1,6 +1,6 @@
 /** chunk id: 148131 params = (module,exports,require) **/
 n.d(t, {
-    w: () => x
+    w: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -12,14 +12,14 @@ var i = n(627968),
     c = n(53719),
     u = n(390370),
     m = n(191627),
-    _ = n(842130),
-    g = n(985018),
-    A = n(487693);
+    g = n(842130),
+    _ = n(985018),
+    x = n(487693);
 
-function x(e) {
+function A(e) {
     let {
         user: t
-    } = e, l = (0, r.bG)([d.default], () => d.default.getCurrentUser()), x = s.useCallback(() => {
+    } = e, l = (0, r.bG)([d.default], () => d.default.getCurrentUser()), A = s.useCallback(() => {
         a()(void 0 !== l, "User must be logged in to accept a link request"), (0, o.mMO)(async () => {
             let {
                 default: e
@@ -32,19 +32,19 @@ function x(e) {
         })
     }, [l, t]);
     return (0, i.jsxs)("div", {
-        className: A.kL,
+        className: x.kL,
         children: [(0, i.jsx)("div", {
-            className: A.zH,
+            className: x.zH,
             children: (0, i.jsx)(u.A, {
                 otherUser: t,
                 status: m.Ef.ACTIVE
             })
         }), (0, i.jsx)("div", {
-            className: A.o1,
+            className: x.o1,
             children: (0, i.jsx)(c.A, {
                 icon: o.PGe,
-                tooltip: g.intl.string(_.default.l20ZZp),
-                onClick: x
+                tooltip: _.intl.string(g.default.l20ZZp),
+                onClick: A
             })
         })]
     })

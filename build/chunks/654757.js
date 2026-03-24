@@ -1,6 +1,6 @@
 /** chunk id: 654757 params = (module,exports,require) **/
 n.d(t, {
-    T: () => g
+    T: () => _
 });
 var i = n(419954),
     s = n(975571),
@@ -12,10 +12,10 @@ var i = n(419954),
     c = n(815669),
     u = n(246743),
     m = n(652215),
-    _ = n(985018);
-let g = (0, i.zZ)(l.X.MOTION_CATEGORY, {
-    useTitle: () => _.intl.string(_.t.e3TR1b),
-    useSubtitle: (0, a.Ci)("Motion") ? void 0 : () => _.intl.format(_.t["2l9U2j"], {
+    g = n(985018);
+let _ = (0, i.zZ)(l.X.MOTION_CATEGORY, {
+    useTitle: () => g.intl.string(g.t.e3TR1b),
+    useSubtitle: (0, a.Ci)("Motion") ? void 0 : () => g.intl.format(g.t["2l9U2j"], {
         helpdeskArticle: s.A.getArticleURL(m.MVz.REDUCED_MOTION)
     }),
     buildLayout: () => (0, a.Ci)("Motion") ? [c.z, u.W, o.R, r.b, d.S] : [u.W, c.z, o.R, r.b, d.S]

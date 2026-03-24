@@ -85,7 +85,7 @@ let y = {
             initialTimeSec: M,
             onError: eq,
             onHlsInstance: Z
-        }), [eJ, eZ] = l.useState(!1), [e0, e1] = l.useState(null), e6 = O ?? e$.current?.duration ?? 0, [e7, e2] = l.useState(u.oA.MD), e4 = {
+        }), [eJ, eZ] = l.useState(!1), [e0, e1] = l.useState(null), e6 = O ?? e$.current?.duration ?? 0, [e2, e7] = l.useState(u.oA.MD), e4 = {
             [u.oA.MD]: 50,
             [u.oA.LG]: 58
         };
@@ -142,7 +142,7 @@ let y = {
         let tr = !e8 && (ed || eu || ea === u.Q6.ENDED),
             tl = l.useCallback(() => {
                 let e = (0, f.qf)(e$.current?.parentNode, e$.current);
-                null == e || (0, f._U)(e) || (e.removeEventListener(f.Wb, tl), eG(!1), F?.(!1), e2(u.oA.MD))
+                null == e || (0, f._U)(e) || (e.removeEventListener(f.Wb, tl), eG(!1), F?.(!1), e7(u.oA.MD))
             }, [F]),
             ts = () => {
                 null == e$.current || (ta(Math.max(e$.current.currentTime - 10, 0)), ea === u.Q6.ENDED && e9(u.Q6.PAUSED, "seek"))
@@ -399,7 +399,7 @@ let y = {
                         }),
                         "data-testid": "discord-web-video-player-transcript",
                         style: {
-                            marginBottom: (0, a.to)([tp, th], (e, t) => `${e*e4[e7]+t}px`)
+                            marginBottom: (0, a.to)([tp, th], (e, t) => `${e*e4[e2]+t}px`)
                         },
                         children: (0, r.jsx)(v.X, {
                             text: U,
@@ -436,7 +436,7 @@ let y = {
                     style: {
                         translateY: (0, a.to)([tp.to({
                             range: [0, 1],
-                            output: [-20, -e4[e7]]
+                            output: [-20, -e4[e2]]
                         })], e => `${e}px`)
                     },
                     children: (0, r.jsx)(c.Text, {
@@ -450,7 +450,7 @@ let y = {
                     style: {
                         height: (0, a.to)([tp.to({
                             range: [0, 1],
-                            output: [0, e4[e7]]
+                            output: [0, e4[e2]]
                         })], e => `${e}px`)
                     },
                     children: [(0, r.jsx)(a.animated.div, {
@@ -505,7 +505,7 @@ let y = {
                             hideCaptionBtn: null == Q,
                             hideTranscriptBtn: null == U,
                             hideSkipButtons: "portrait" === D,
-                            size: e7,
+                            size: e2,
                             volume: ew,
                             muted: eO,
                             transcriptEnabled: eQ,
@@ -521,7 +521,7 @@ let y = {
                             handleFullScreenBtnClick: () => {
                                 let e = !eF,
                                     t = (0, f.qf)(e$.current?.parentNode, e$.current);
-                                e && null != t ? ((0, f.tl)(t), t.addEventListener(f.Wb, tl), F?.(!0), e2(u.oA.LG)) : e || null == t || (t.removeEventListener(f.Wb, tl), F?.(!1), (0, f.sP)(t), e2(u.oA.MD)), eG(e)
+                                e && null != t ? ((0, f.tl)(t), t.addEventListener(f.Wb, tl), F?.(!0), e7(u.oA.LG)) : e || null == t || (t.removeEventListener(f.Wb, tl), F?.(!1), (0, f.sP)(t), e7(u.oA.MD)), eG(e)
                             },
                             handleSeekBackBtnClick: ts,
                             handleSeekForwardBtnClick: ti,

@@ -13,12 +13,12 @@ var i = n(627968),
     c = n(252452),
     u = n(103738),
     m = n(419954),
-    _ = n(933297),
-    g = n(836602),
-    A = n(591179),
-    x = n(854627),
-    p = n(657331),
-    h = n(961350),
+    g = n(933297),
+    _ = n(836602),
+    x = n(591179),
+    A = n(854627),
+    h = n(657331),
+    p = n(961350),
     f = n(287809),
     T = n(780964),
     E = n(633817),
@@ -26,7 +26,7 @@ var i = n(627968),
     b = n(985018),
     C = n(722125);
 let N = [{
-        badgeType: _.Xi.NEW,
+        badgeType: g.Xi.NEW,
         dismissibleContent: a.M.DISPLAY_NAME_STYLES_NEW_BADGE
     }],
     v = () => {
@@ -34,7 +34,7 @@ let N = [{
             {
                 avatarSrc: t,
                 avatarDecorationSrc: n
-            } = (0, x.A)({
+            } = (0, A.A)({
                 userId: e?.id,
                 size: r._3J.SIZE_48
             });
@@ -70,7 +70,7 @@ let N = [{
     I = (0, m.t_)(T.X.PROFILE_PANEL, {
         useTitle: () => b.intl.string(b.t["vi7f+q"]),
         notice: {
-            stores: [g.A],
+            stores: [_.A],
             element: u.A
         },
         initialize: () => () => o.h.wait(() => {
@@ -83,7 +83,7 @@ let N = [{
         icon: O,
         StronglyDiscouragedCustomComponent: v,
         getDismissibleBadges: () => N,
-        usePredicate: () => !(0, A.X)("user_settings_sidebar"),
+        usePredicate: () => !(0, x.X)("user_settings_sidebar"),
         buildLayout: () => [I]
     }),
     y = (0, m.i4)(T.X.PROFILE_SIDEBAR_ITEM_WYSIWYG, {
@@ -91,10 +91,10 @@ let N = [{
         icon: O,
         StronglyDiscouragedCustomComponent: v,
         getDismissibleBadges: () => N,
-        usePredicate: () => (0, A.X)("user_settings_sidebar"),
+        usePredicate: () => (0, x.X)("user_settings_sidebar"),
         onClick: () => {
-            let e = h.default.getId();
-            (0, p.openUserProfileModal)({
+            let e = p.default.getId();
+            (0, h.openUserProfileModal)({
                 userId: e
             })
         },
@@ -106,7 +106,7 @@ function O() {
         {
             avatarSrc: t,
             avatarDecorationSrc: n
-        } = (0, x.A)({
+        } = (0, A.A)({
             userId: e?.id,
             size: r._3J.SIZE_48
         });

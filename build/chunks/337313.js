@@ -1,7 +1,7 @@
 /** chunk id: 337313 params = (module,exports,require) **/
 n.d(t, {
-    S: () => _,
-    T: () => g
+    S: () => g,
+    T: () => _
 });
 var i = n(311907),
     s = n(233545),
@@ -14,7 +14,7 @@ var i = n(311907),
     u = n(731854),
     m = n(985018);
 
-function _() {
+function g() {
     return (0, i.bG)([o.default, a.Ay], () => {
         let e = o.default.getCurrentUser(),
             t = e?.isStaff() ?? !1,
@@ -23,12 +23,12 @@ function _() {
         return t && n && i
     })
 }
-let g = (0, l.zD)(c.X.VOICE_AND_VIDEO_RECORD_CONNECTION_REPLAY, {
+let _ = (0, l.zD)(c.X.VOICE_AND_VIDEO_RECORD_CONNECTION_REPLAY, {
     useTitle: () => m.intl.string(m.t.U4FgFK),
     useSubtitle: () => m.intl.string(m.t.Lm72RU),
     useValue: function() {
         return (0, i.bG)([r.Ay], () => r.Ay.shouldRecordNextConnection())
     },
     setValue: s.Et,
-    usePredicate: _
+    usePredicate: g
 })

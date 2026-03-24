@@ -1,6 +1,6 @@
 /** chunk id: 946015 params = (module,exports,require) **/
 n.d(t, {
-    s: () => A
+    s: () => x
 });
 var i = n(627968),
     s = n(64700),
@@ -31,11 +31,11 @@ let d = {
         CENTER: r.YO,
         STRETCH: r.ai
     },
-    _ = {
+    g = {
         SMALL: o.sf,
         LARGE: o.S6
     };
-class g extends s.PureComponent {
+class _ extends s.PureComponent {
     static defaultProps = {
         className: o.Gu,
         style: {},
@@ -74,13 +74,13 @@ class g extends s.PureComponent {
         })
     }
 }
-class A extends s.PureComponent {
-    static Child = g;
+class x extends s.PureComponent {
+    static Child = _;
     static Direction = d;
     static Align = m;
     static Justify = c;
     static Wrap = u;
-    static Gutter = _;
+    static Gutter = g;
     static defaultProps = {
         direction: d.HORIZONTAL,
         justify: c.START,
@@ -103,18 +103,18 @@ class A extends s.PureComponent {
             grow: c,
             basis: u,
             style: m,
-            gutter: _,
-            ...g
-        } = this.props, A = {
+            gutter: g,
+            ..._
+        } = this.props, x = {
             flexShrink: d,
             flexGrow: c,
             flexBasis: u,
             ...m
         };
         return (0, i.jsx)("div", {
-            style: A,
-            className: a()(o.Uu, n, s, l, r, _, t),
-            ...g,
+            style: x,
+            className: a()(o.Uu, n, s, l, r, g, t),
+            ..._,
             children: e
         })
     }

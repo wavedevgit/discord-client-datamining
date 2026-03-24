@@ -13,28 +13,28 @@ var s = n(503698),
     c = n(490415),
     u = n(736653),
     m = n(742589),
-    _ = n(287809),
-    g = n(927578),
-    A = n(652215),
-    x = n(788868),
-    p = n(985018),
-    h = n(187585);
-let f = a.Ay.connectStores([_.default], () => ({
-    user: _.default.getCurrentUser()
+    g = n(287809),
+    _ = n(927578),
+    x = n(652215),
+    A = n(788868),
+    h = n(985018),
+    p = n(187585);
+let f = a.Ay.connectStores([g.default], () => ({
+    user: g.default.getCurrentUser()
 }))((0, c.A)(e => {
     let {
         isAuthenticated: t,
         user: n
-    } = e, s = (0, g.TW)(n, x.PremiumTypes.TIER_2), a = (0, u.Ay)();
+    } = e, s = (0, _.TW)(n, A.PremiumTypes.TIER_2), a = (0, u.Ay)();
     return (0, i.jsx)(d.A, {
-        section: A.JJy.NAVIGATION,
+        section: x.JJy.NAVIGATION,
         children: (0, i.jsx)(o.NPJ, {
             theme: a,
             children: e => (0, i.jsxs)(m.A, {
                 isAuthenticated: t,
                 className: l()(e, {
-                    [h.xD]: !s && !(0, r.Mw)(a),
-                    [h.lO]: !s && (0, r.Mw)(a)
+                    [p.xD]: !s && !(0, r.Mw)(a),
+                    [p.lO]: !s && (0, r.Mw)(a)
                 }),
                 role: "navigation",
                 children: [(0, i.jsx)(m.A.Icon, {
@@ -42,7 +42,7 @@ let f = a.Ay.connectStores([_.default], () => ({
                     "aria-hidden": !0,
                     color: s ? void 0 : o.LU0.unsafe_rawColors.PREMIUM_TIER_2_PINK.css
                 }), (0, i.jsx)(m.A.Title, {
-                    children: p.intl.string(p.t.Ipxkog)
+                    children: h.intl.string(h.t.Ipxkog)
                 })]
             })
         })

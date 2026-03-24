@@ -13,10 +13,10 @@ var a = n(627968),
     u = n(46054),
     m = n(378570),
     x = n(597676),
-    _ = n(305080),
+    h = n(305080),
     f = n(954506),
     g = n(652215),
-    h = n(985018),
+    _ = n(985018),
     p = n(809222),
     v = n(206314);
 
@@ -35,12 +35,12 @@ function j(e) {
         message: n,
         channelId: i,
         onCardClick: o
-    } = e, [d, u] = l.useState(!1), m = null != n.mediaUrl, x = "video" === n.mediaType, _ = "main" === t, f = l.useCallback(() => u(!0), []), g = l.useCallback(() => o(n.id), [o, n.id]);
+    } = e, [d, u] = l.useState(!1), m = null != n.mediaUrl, x = "video" === n.mediaType, h = "main" === t, f = l.useCallback(() => u(!0), []), g = l.useCallback(() => o(n.id), [o, n.id]);
     return (0, a.jsxs)(s.DUT, {
-        className: _ ? p.cG : p.IU,
+        className: h ? p.cG : p.IU,
         onClick: g,
         children: [m && (0, a.jsxs)("div", {
-            className: _ ? p._v : p.eZ,
+            className: h ? p._v : p.eZ,
             children: [x ? (0, a.jsx)(c.A, {
                 src: n.mediaUrl,
                 poster: function(e) {
@@ -51,14 +51,14 @@ function j(e) {
                         return
                     }
                 }(n.mediaUrl),
-                className: r()(_ ? p.fk : p.v, d ? p.RT : p.YC),
+                className: r()(h ? p.fk : p.v, d ? p.RT : p.YC),
                 muted: !0,
                 preload: "metadata",
                 playsInline: !0,
                 onLoadedData: f
             }) : (0, a.jsx)("img", {
                 src: n.mediaUrl,
-                className: r()(_ ? p.fk : p.v, d ? p.RT : p.YC),
+                className: r()(h ? p.fk : p.v, d ? p.RT : p.YC),
                 alt: "",
                 onLoad: f
             }), !d && (0, a.jsx)("div", {
@@ -69,14 +69,14 @@ function j(e) {
                 })
             })]
         }), (0, a.jsxs)("div", {
-            className: _ ? p.GT : p.s4,
+            className: h ? p.GT : p.s4,
             children: [null != n.title && (0, a.jsx)(s.Heading, {
-                variant: _ ? "heading-md/bold" : "heading-sm/bold",
+                variant: h ? "heading-md/bold" : "heading-sm/bold",
                 color: "text-strong",
-                className: _ ? p.KX : p._N,
+                className: h ? p.KX : p._N,
                 children: A(n.title, i)
             }), n.body.length > 0 && (0, a.jsx)("div", {
-                className: r()(p.h_, _ ? p.My : p.Gd, v.PT),
+                className: r()(p.h_, h ? p.My : p.Gd, v.PT),
                 children: A(n.body, i)
             })]
         })]
@@ -90,7 +90,7 @@ function E(e) {
         officialInvite: i,
         isMember: r,
         closeModal: c
-    } = (0, _.c)(), {
+    } = (0, h.c)(), {
         messages: u,
         loading: v
     } = (0, x.A)(n), A = l.useCallback(() => {
@@ -106,7 +106,7 @@ function E(e) {
         r && null != n ? (c(), (0, m.ci)(n, e)) : A()
     }, [c, r, A, n]);
     if (null == n || 0 === u.length) return v ? (0, a.jsx)(f.A, {
-        title: h.intl.string(h.t.B0BV3Y),
+        title: _.intl.string(_.t.B0BV3Y),
         children: (0, a.jsx)("div", {
             className: p.g4,
             children: (0, a.jsx)(s.y$y, {
@@ -116,22 +116,22 @@ function E(e) {
         })
     }) : null;
     let C = 2 !== u.length,
-        N = C ? u[0] : null,
-        b = C ? u.slice(1) : u;
+        b = C ? u[0] : null,
+        N = C ? u.slice(1) : u;
     return (0, a.jsx)(f.A, {
-        title: h.intl.string(h.t.B0BV3Y),
+        title: _.intl.string(_.t.B0BV3Y),
         onClickViewAll: E,
         children: (0, a.jsxs)("div", {
             className: p.f3,
-            children: [null != N && (0, a.jsx)(j, {
+            children: [null != b && (0, a.jsx)(j, {
                 variant: "main",
-                message: N,
+                message: b,
                 channelId: n,
                 onCardClick: I
-            }), b.length > 0 && (0, a.jsx)(d.A, {
+            }), N.length > 0 && (0, a.jsx)(d.A, {
                 gap: "sm",
                 className: p.jG,
-                children: b.map(e => (0, a.jsx)(j, {
+                children: N.map(e => (0, a.jsx)(j, {
                     variant: "small",
                     message: e,
                     channelId: n,

@@ -12,18 +12,18 @@ var i = n(627968),
     c = n(927578),
     u = n(536432),
     m = n(792348),
-    _ = n(674168),
-    g = n(989799),
-    A = n(69217),
-    x = n(985018),
-    p = n(443669);
+    g = n(674168),
+    _ = n(989799),
+    x = n(69217),
+    A = n(985018),
+    h = n(443669);
 
-function h(e) {
+function p(e) {
     let {
         onSelect: t
     } = e, [n, a] = s.useState(!1), o = (0, l.bG)([d.default], () => d.default.getCurrentUser()), u = c.Ay.canUseCustomCallSounds(o), m = s.useRef(null);
 
-    function h(e) {
+    function p(e) {
         u && (a(!1), t?.(e))
     }
     return (0, i.jsx)(r.YNO, {
@@ -36,29 +36,29 @@ function h(e) {
                 closePopout: t
             } = e;
             return (0, i.jsx)(r.lGe, {
-                children: (0, i.jsx)(g.A, {
+                children: (0, i.jsx)(_.A, {
                     suppressPlaySound: !0,
                     shouldShowLockedSounds: !1,
                     guildId: null,
                     channel: null,
                     onClose: t,
-                    onSelect: h,
-                    gridNotice: u ? null : (0, i.jsx)(_.m, {}),
+                    onSelect: p,
+                    gridNotice: u ? null : (0, i.jsx)(g.m, {}),
                     analyticsSource: "call sounds edit setting"
                 })
             })
         },
-        children: e => (0, i.jsx)(A.dT, {
+        children: e => (0, i.jsx)(x.dT, {
             ...e,
             ref: m,
             onClick: () => {
                 a(!n)
             },
-            text: x.intl.string(x.t.uOe0Az),
+            text: A.intl.string(A.t.uOe0Az),
             children: (0, i.jsx)(r.R2l, {
                 size: "md",
                 color: "currentColor",
-                className: p.Wo
+                className: h.Wo
             })
         })
     })
@@ -69,17 +69,17 @@ function f(e) {
         sound: t
     } = e, {
         previewSound: n
-    } = (0, m.A)(t, null), s = 0 === (0, u.wH)() ? x.intl.string(x.t.OASXjt) : x.intl.formatToPlainString(x.t["/8fYO5"], {
+    } = (0, m.A)(t, null), s = 0 === (0, u.wH)() ? A.intl.string(A.t.OASXjt) : A.intl.formatToPlainString(A.t["/8fYO5"], {
         emojiName: t.emojiName,
         soundName: t.name
     });
-    return (0, i.jsx)(A.dT, {
+    return (0, i.jsx)(x.dT, {
         onClick: n,
         text: s,
         children: (0, i.jsx)(r.HKD, {
             size: "md",
             color: "currentColor",
-            className: p.wg
+            className: h.wg
         })
     })
 }
@@ -91,18 +91,18 @@ function T(e) {
         onSelect: s
     } = e, l = null != t, d = t?.emojiId, c = t?.emojiName, u = l && (null != c || null != d);
     return (0, i.jsxs)("div", {
-        className: p.D6,
+        className: h.D6,
         children: [(0, i.jsxs)("div", {
-            className: p.kL,
+            className: h.kL,
             children: [u && (0, i.jsx)(o.A, {
                 emojiId: d,
                 emojiName: c,
-                className: p.Zg
+                className: h.Zg
             }), (0, i.jsx)(r.Text, {
                 variant: "text-md/normal",
                 color: "text-strong",
-                className: p.dj,
-                children: null == t ? x.intl.string(x.t.PoWNfe) : n ? x.intl.format(x.t.B6HU6O, {
+                className: h.dj,
+                children: null == t ? A.intl.string(A.t.PoWNfe) : n ? A.intl.format(A.t.B6HU6O, {
                     soundName: t.name,
                     subtextHook: e => (0, i.jsx)(r.Text, {
                         variant: "text-xs/medium",
@@ -116,19 +116,19 @@ function T(e) {
             }) : (0, i.jsx)(r.HKD, {
                 size: "md",
                 color: "currentColor",
-                className: p.Gk
+                className: h.Gk
             })]
         }), (0, i.jsxs)("div", {
-            className: p.kL,
-            children: [(0, i.jsx)(h, {
+            className: h.kL,
+            children: [(0, i.jsx)(p, {
                 onSelect: s
-            }), l && !n && (0, i.jsx)(A.dT, {
+            }), l && !n && (0, i.jsx)(x.dT, {
                 onClick: () => s(null),
-                text: x.intl.string(x.t.jmtcGA),
+                text: A.intl.string(A.t.jmtcGA),
                 children: (0, i.jsx)(r.ucK, {
                     size: "md",
                     color: a.A.unsafe_rawColors.RED_400.css,
-                    className: p.Wo
+                    className: h.Wo
                 })
             })]
         })]

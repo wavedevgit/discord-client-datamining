@@ -40,17 +40,17 @@ let p = {
             fit: R = "layout",
             glowing: x = !1,
             glowAmount: E = 8,
-            blurAmount: C = 30,
-            hueRotate: v = 0,
+            blurAmount: v = 30,
+            hueRotate: C = 0,
             isReducedMotion: N,
             onMouseEnter: I
         } = e, S = r.useRef(null), T = r.useRef(null), {
             status: P,
             buffer: y
-        } = (0, c.CE)(x ? i.A : null), D = r.useContext(d.C), O = N ?? D.reducedMotion.enabled, j = {
+        } = (0, c.CE)(x ? i.A : null), D = r.useContext(d.C), j = N ?? D.reducedMotion.enabled, O = {
             "--custom-glow-amount": `${E}px`,
-            "--custom-blur-amount": `${C}px`,
-            "--custom-hue-rotate": `${v}deg`,
+            "--custom-blur-amount": `${v}px`,
+            "--custom-hue-rotate": `${C}deg`,
             "--custom-glow-opacity": +(0 !== E)
         };
         return (0, n.jsxs)("div", {
@@ -58,7 +58,7 @@ let p = {
             ref: S,
             tabIndex: s,
             className: l()(m.k, b),
-            style: j,
+            style: O,
             onMouseEnter: I,
             children: [x && P !== c.BW.Loading && (0, n.jsx)(o.w, {
                 buffer: y,
@@ -68,7 +68,7 @@ let p = {
                 className: m.Q,
                 ref: T,
                 fit: R,
-                withReducedMotion: O ? "halt" : "play"
+                withReducedMotion: j ? "halt" : "play"
             }), (0, n.jsx)(u.ZpM, {
                 type: _ ?? u.sl2.CUSTOM,
                 className: A,

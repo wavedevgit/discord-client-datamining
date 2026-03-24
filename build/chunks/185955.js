@@ -12,12 +12,12 @@ var i = n(627968),
     c = n(685073),
     u = n(534400),
     m = n(128450),
-    _ = n(597551),
-    g = n(287809),
-    A = n(581781),
-    x = n(743981),
-    p = n(355097),
-    h = n(985018),
+    g = n(597551),
+    _ = n(287809),
+    x = n(581781),
+    A = n(743981),
+    h = n(355097),
+    p = n(985018),
     f = n(86267);
 let T = (0, o.Ld)(),
     E = s.memo(function(e) {
@@ -25,7 +25,7 @@ let T = (0, o.Ld)(),
             availablePrimaryGuilds: t,
             pendingPrimaryGuildId: n,
             onChange: o
-        } = e, E = s.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), S = (0, l.bG)([g.default], () => (0, c.Zo)(g.default.getCurrentUser()?.primaryGuild).guildId), b = void 0 !== n ? n : S, C = s.useMemo(() => t.reduce((e, t) => (t.profile?.tag != null && e.push({
+        } = e, E = s.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), S = (0, l.bG)([_.default], () => (0, c.Zo)(_.default.getCurrentUser()?.primaryGuild).guildId), b = void 0 !== n ? n : S, C = s.useMemo(() => t.reduce((e, t) => (t.profile?.tag != null && e.push({
             label: t.name,
             value: t.id
         }), e), []), [t]), N = s.useCallback(e => {
@@ -33,7 +33,7 @@ let T = (0, o.Ld)(),
             let t = E.get(e.value);
             if (null == t) return null;
             let n = t.profile?.tag;
-            return null == n ? null : (0, i.jsx)(A.A, {
+            return null == n ? null : (0, i.jsx)(x.A, {
                 guildTag: n,
                 guildBadge: t.profile?.badge ?? void 0,
                 guildId: t.id,
@@ -60,7 +60,7 @@ let T = (0, o.Ld)(),
                 guildId: t.id,
                 guildTag: n,
                 guildBadge: t.profile?.badge ?? void 0,
-                badgeSize: x.Sl.SIZE_16,
+                badgeSize: A.Sl.SIZE_16,
                 textColor: "interactive-text-default",
                 textVariant: "text-sm/semibold"
             })
@@ -74,14 +74,14 @@ let T = (0, o.Ld)(),
         }, [o]), O = s.useCallback(e => e === b, [b]), R = s.useCallback(e => e, []), L = s.useCallback(() => {
             o?.(null)
         }, [o]), P = s.useRef(null);
-        return (0, _.A)(P, p._F.GUILD_TAG), (0, i.jsxs)(m.A, {
-            title: h.intl.string(h.t.Pdd1nd),
+        return (0, g.A)(P, h._F.GUILD_TAG), (0, i.jsxs)(m.A, {
+            title: p.intl.string(p.t.Pdd1nd),
             titleId: T,
             ref: P,
             children: [(0, i.jsx)(r.Text, {
                 className: f.VA,
                 variant: "text-sm/normal",
-                children: h.intl.string(h.t.mlZ6Jx)
+                children: p.intl.string(p.t.mlZ6Jx)
             }), (0, i.jsx)(a.Pw, {
                 className: f.Lt,
                 optionClassName: f.S0,

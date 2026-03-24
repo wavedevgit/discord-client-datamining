@@ -12,12 +12,12 @@ var i = n(627968),
     c = n(419954),
     u = n(933297),
     m = n(780964),
-    _ = n(682262),
-    g = n(694202),
-    A = n(50847),
-    x = n(606275),
-    p = n(879545),
-    h = n(49999),
+    g = n(682262),
+    _ = n(694202),
+    x = n(50847),
+    A = n(606275),
+    h = n(879545),
+    p = n(49999),
     f = n(985018),
     T = n(696952),
     E = n(130324),
@@ -29,7 +29,7 @@ let b = (0, c.t_)(m.X.OVERLAY_PANEL, {
             component: function() {
                 let [e, t] = (0, o.kn)([r.M.OVERLAY_OOP_SETTINGS_NUX], void 0, !0);
                 return ((0, s.Ay)(() => () => {
-                    t(h.i.AUTO_DISMISS)
+                    t(p.i.AUTO_DISMISS)
                 }), e !== r.M.OVERLAY_OOP_SETTINGS_NUX) ? null : (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsxs)("div", {
                         className: T.xC,
@@ -64,7 +64,7 @@ let b = (0, c.t_)(m.X.OVERLAY_PANEL, {
                             children: (0, i.jsx)(a.$nd, {
                                 variant: "primary",
                                 text: f.intl.string(f.t.Q26diF),
-                                onClick: () => void t(h.i.DISMISS)
+                                onClick: () => void t(p.i.DISMISS)
                             })
                         })]
                     }), (0, i.jsx)(d.A, {
@@ -73,11 +73,11 @@ let b = (0, c.t_)(m.X.OVERLAY_PANEL, {
                 })
             }
         },
-        buildLayout: () => [g.u, A.X, p.D, x.h]
+        buildLayout: () => [_.u, x.X, h.D, A.h]
     }),
     C = (0, c.i4)(m.X.OVERLAY_SIDEBAR_ITEM, {
         useTitle: () => f.intl.string(f.t["9cb1Uz"]),
         icon: l.WindowTopOutlineIcon,
-        usePredicate: _.b_,
+        usePredicate: g.b_,
         buildLayout: () => [b]
     })

@@ -1,6 +1,6 @@
 /** chunk id: 120385 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => g
 });
 var i = n(627968),
     s = n(64700),
@@ -26,27 +26,27 @@ async function m(e) {
     }
 }
 
-function _(e) {
+function g(e) {
     let {
         payment: t
-    } = e, [n, l] = s.useState(null), [o, _] = s.useState(null), g = async e => {
+    } = e, [n, l] = s.useState(null), [o, g] = s.useState(null), _ = async e => {
         try {
             let n = await m(t.id);
             l(n);
             let i = e ? n.refundInvoiceLinks[0] : n.invoiceLink;
-            window.open(i, "_blank"), _(null)
+            window.open(i, "_blank"), g(null)
         } catch (e) {
-            _(e.body?.message)
+            g(e.body?.message)
         }
-    }, A = null != t.paymentSource && t.status === d.__.COMPLETED, x = n?.invoiceLink, p = n?.refundInvoiceLinks;
+    }, x = null != t.paymentSource && t.status === d.__.COMPLETED, A = n?.invoiceLink, h = n?.refundInvoiceLinks;
     return t.hasInvoiceURL && null == n ? (0, i.jsxs)("div", {
         className: u.It,
         children: [(0, i.jsx)(a.MzZ, {
-            onClick: () => g(!1),
+            onClick: () => _(!1),
             children: c.intl.formatToPlainString(c.t.R0xzCN, {})
         }), t.hasRefundInvoiceURLs ? (0, i.jsx)(a.MzZ, {
             className: u.oe,
-            onClick: () => g(!0),
+            onClick: () => _(!0),
             children: c.intl.formatToPlainString(c.t["3x6NGw"], {})
         }) : null, null != o && "" !== o && (0, i.jsx)(a.wx6, {
             type: "critical",
@@ -55,9 +55,9 @@ function _(e) {
     }) : t.hasInvoiceURL && null != n ? (0, i.jsxs)("div", {
         className: u.It,
         children: [(0, i.jsx)(a.MzZ, {
-            href: x,
+            href: A,
             children: c.intl.formatToPlainString(c.t.R0xzCN, {})
-        }), null != p ? p.map((e, t) => (0, i.jsx)(a.MzZ, {
+        }), null != h ? h.map((e, t) => (0, i.jsx)(a.MzZ, {
             className: u.oe,
             href: e,
             children: c.intl.formatToPlainString(c.t["3x6NGw"], {})
@@ -65,7 +65,7 @@ function _(e) {
             type: "critical",
             children: o
         })]
-    }) : A ? (0, i.jsx)("div", {
+    }) : x ? (0, i.jsx)("div", {
         className: u.It,
         children: (0, i.jsx)(a.MzZ, {
             onClick: () => {

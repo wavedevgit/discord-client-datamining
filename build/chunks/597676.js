@@ -1,6 +1,6 @@
 /** chunk id: 597676 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => h
 });
 var a = n(64700),
     l = n(311907),
@@ -69,7 +69,7 @@ function x(e, t) {
     return !0
 }
 
-function _(e) {
+function h(e) {
     let t = a.useRef([]),
         n = (0, l.bG)([d.A], () => {
             let n = null != e ? d.A.getMessages(e) : void 0;

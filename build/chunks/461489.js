@@ -12,12 +12,12 @@ var i = n(627968),
     c = n(102609),
     u = n(271478),
     m = n(49463),
-    _ = n(386976),
-    g = n(257433),
-    A = n(32523),
-    x = n(961350),
-    p = n(71393),
-    h = n(957565),
+    g = n(386976),
+    _ = n(257433),
+    x = n(32523),
+    A = n(961350),
+    h = n(71393),
+    p = n(957565),
     f = n(222735),
     T = n(688151),
     E = n(775105);
@@ -26,10 +26,10 @@ function S() {
     let {
         experiments: e,
         overridesInfo: t
-    } = (0, _.op)(), {
+    } = (0, g.op)(), {
         experiments: n,
         overridesInfo: l
-    } = (0, A.hI)(), a = s.useMemo(() => ({
+    } = (0, x.hI)(), a = s.useMemo(() => ({
         ...n,
         ...e
     }), [n, e]), r = s.useMemo(() => ({
@@ -66,17 +66,17 @@ function b(e) {
         experiment: t,
         experimentId: n,
         overrideInfo: l,
-        defaultOpen: _
-    } = e, [A, p] = s.useState(_), [f, S] = s.useState(!1), b = s.useCallback(() => {
-        p(e => !e)
-    }, []), C = (0, r.bG)([x.default], () => x.default.getId()), N = (0, g.iN)(t, C), v = (0, g.Fm)(t, C), I = (0, r.yK)([m.A], () => a().sortBy(m.A.getRecentExposures(T.Vh.USER, n), e => {
+        defaultOpen: g
+    } = e, [x, h] = s.useState(g), [f, S] = s.useState(!1), b = s.useCallback(() => {
+        h(e => !e)
+    }, []), C = (0, r.bG)([A.default], () => A.default.getId()), N = (0, _.iN)(t, C), v = (0, _.Fm)(t, C), I = (0, r.yK)([m.A], () => a().sortBy(m.A.getRecentExposures(T.Vh.USER, n), e => {
         let [t, n] = e;
         return -n
     }).map(e => {
         let [t, n] = e;
         return `${new Date(n).toLocaleString()} (${t})`
     })), j = s.useCallback(e => {
-        (0, h.C)((0, d.yA)(n), () => {
+        (0, p.C)((0, d.yA)(n), () => {
             (0, o.showToast)({
                 id: "experiment-link-copied",
                 message: "Copied experiment link",
@@ -94,7 +94,7 @@ function b(e) {
                     direction: "horizontal",
                     align: "center",
                     gap: 4,
-                    children: [t.title, " ", h.p5 && (0, i.jsx)(o.DUT, {
+                    children: [t.title, " ", p.p5 && (0, i.jsx)(o.DUT, {
                         onClick: j,
                         children: (0, i.jsx)(o.qYV, {
                             size: "xs"
@@ -111,7 +111,7 @@ function b(e) {
             })]
         })
     });
-    if (!A) return (0, i.jsx)("div", {
+    if (!x) return (0, i.jsx)("div", {
         className: E.Os,
         children: y
     });
@@ -177,16 +177,16 @@ function C(e) {
         experiment: t,
         experimentId: n,
         overrideInfo: l
-    } = e, [d, c] = s.useState(null != l), [_, g] = s.useState(!1), A = s.useCallback(() => {
+    } = e, [d, c] = s.useState(null != l), [g, _] = s.useState(!1), x = s.useCallback(() => {
         c(e => !e)
-    }, []), x = (0, r.bG)([m.A], () => m.A.getLoadedGuildExperiment(n)), h = (0, r.yK)([m.A], () => a().sortBy(m.A.getRecentExposures(T.Vh.GUILD, n), e => {
+    }, []), A = (0, r.bG)([m.A], () => m.A.getLoadedGuildExperiment(n)), p = (0, r.yK)([m.A], () => a().sortBy(m.A.getRecentExposures(T.Vh.GUILD, n), e => {
         let [t, n] = e;
         return -n
     }).map(e => {
         let [t, n] = e;
         return `${new Date(n).toLocaleString()} (${t})`
-    })), [f, S] = (0, r.yK)([p.A, m.A], () => {
-        let e = a().sortBy(p.A.getGuildsArray(), e => e.name.toLowerCase()),
+    })), [f, S] = (0, r.yK)([h.A, m.A], () => {
+        let e = a().sortBy(h.A.getGuildsArray(), e => e.name.toLowerCase()),
             t = {},
             i = [];
         for (let s of e) {
@@ -197,7 +197,7 @@ function C(e) {
         let s = a()(t).keys().map(Number).sort().map(e => `${t[e]} guilds in bucket ${e}`).join(", ");
         return [i.join("\n"), s]
     }), b = (0, i.jsx)(o.DUT, {
-        onClick: A,
+        onClick: x,
         children: (0, i.jsxs)(o.Text, {
             variant: "text-md/medium",
             className: E.DD,
@@ -225,12 +225,12 @@ function C(e) {
             overrideInfo: l
         }), (0, i.jsx)("div", {
             className: E.h_,
-            children: null == x ? (0, i.jsx)(o.Text, {
+            children: null == A ? (0, i.jsx)(o.Text, {
                 variant: "text-sm/normal",
                 color: "text-subtle",
                 children: 'Warning: Server did not send any experiment config. You may need to check the "Send to Client" box in the admin UI.'
             }) : null
-        }), _ ? (0, i.jsxs)("div", {
+        }), g ? (0, i.jsxs)("div", {
             children: [(0, i.jsx)(o.Text, {
                 variant: "text-lg/medium",
                 className: E.id,
@@ -246,7 +246,7 @@ function C(e) {
             }), (0, i.jsx)(o.Text, {
                 variant: "code",
                 className: E.AS,
-                children: null == x ? "None" : JSON.stringify(x, void 0, 2)
+                children: null == A ? "None" : JSON.stringify(A, void 0, 2)
             }), (0, i.jsx)(o.Text, {
                 variant: "text-lg/medium",
                 className: E.id,
@@ -262,14 +262,14 @@ function C(e) {
             }), (0, i.jsx)(o.Text, {
                 variant: "code",
                 className: E.AS,
-                children: 0 === h.length ? "None" : h.join("\n")
+                children: 0 === p.length ? "None" : p.join("\n")
             })]
         }) : (0, i.jsx)("div", {
             className: E.id,
             children: (0, i.jsx)(o.QWc, {
                 variant: "secondary",
                 text: "More Details \xbb",
-                onClick: () => g(!0)
+                onClick: () => _(!0)
             })
         }), (0, i.jsx)(o.cGx, {
             className: E.yF

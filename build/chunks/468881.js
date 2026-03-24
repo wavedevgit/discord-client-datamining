@@ -12,23 +12,23 @@ var i = n(934551),
     c = n(41598),
     u = n(640351),
     m = n(623049),
-    _ = n(43119),
-    g = n(661485),
-    A = n(411669),
-    x = n(581837),
-    p = n(666196),
-    h = n(654757),
+    g = n(43119),
+    _ = n(661485),
+    x = n(411669),
+    A = n(581837),
+    h = n(666196),
+    p = n(654757),
     f = n(556710),
     T = n(305290),
     E = n(8187),
     S = n(985018);
 let b = (0, s.t_)(a.X.ACCESSIBILITY_PANEL, {
         useTitle: () => S.intl.string(S.t.G0neg7),
-        buildLayout: () => [c.s, f._, x.b, h.T, g.V, p.G, u.v, m.T]
+        buildLayout: () => [c.s, f._, A.b, p.T, _.V, h.G, u.v, m.T]
     }),
     C = (0, s.t_)(a.X.ACCESSIBILITY_PANEL, {
         useTitle: () => S.intl.string(S.t.G0neg7),
-        buildLayout: () => [T.U, E.P, A.l, h.T, _.X],
+        buildLayout: () => [T.U, E.P, x.l, p.T, g.X],
         decoration: {
             type: l.t9.STRONGLY_DISCOURAGED_CUSTOM,
             component: o.A,

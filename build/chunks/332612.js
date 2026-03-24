@@ -14,18 +14,18 @@ var c = n(814278),
     u = n(699978);
 n(818143);
 var m = n(657331),
-    _ = n(287809),
-    g = n(427262),
-    A = n(985018),
-    x = n(32086);
+    g = n(287809),
+    _ = n(427262),
+    x = n(985018),
+    A = n(32086);
 
-function p(e) {
+function h(e) {
     let {
         userId: t,
         count: n
     } = e, {
         analyticsLocations: u
-    } = (0, d.Ay)(), p = (0, l.bG)([_.default], () => _.default.getUser(t)), h = g.Ay.getFormattedName(p), f = s.useCallback(() => {
+    } = (0, d.Ay)(), h = (0, l.bG)([g.default], () => g.default.getUser(t)), p = _.Ay.getFormattedName(h), f = s.useCallback(() => {
         (0, c.kj)(t)
     }, [t]), T = s.useCallback(() => (0, m.openUserProfileModal)({
         userId: t,
@@ -34,31 +34,31 @@ function p(e) {
     return s.useEffect(() => {
         (0, r.wz)(t)
     }, [t]), (0, i.jsxs)("div", {
-        className: x.uW,
-        children: [null != p && (0, i.jsx)(o.A, {
-            className: x.my,
-            user: p,
+        className: A.uW,
+        children: [null != h && (0, i.jsx)(o.A, {
+            className: A.my,
+            user: h,
             size: a._3J.SIZE_40
         }), (0, i.jsxs)("div", {
-            className: x.Qq,
+            className: A.Qq,
             children: [(0, i.jsx)(a.DUT, {
-                className: x.Xh,
+                className: A.Xh,
                 onClick: T,
                 children: (0, i.jsx)(a.Text, {
                     variant: "text-md/semibold",
                     color: "interactive-text-active",
-                    children: h
+                    children: p
                 })
             }), (0, i.jsx)(a.Text, {
                 variant: "text-md/medium",
                 color: "text-default",
-                children: A.intl.format(A.t["/MBjYF"], {
+                children: x.intl.format(x.t["/MBjYF"], {
                     count: n
                 })
             })]
         }), (0, i.jsx)(a.DUT, {
             onClick: f,
-            className: x.Qz,
+            className: A.Qz,
             children: (0, i.jsx)(a.ucK, {
                 size: "xs"
             })
@@ -66,7 +66,7 @@ function p(e) {
     })
 }
 
-function h(e) {
+function p(e) {
     let {
         className: t,
         userId: n,
@@ -78,11 +78,11 @@ function h(e) {
     return (0, i.jsxs)("div", {
         className: t,
         children: [(0, i.jsxs)("div", {
-            className: x.Qq,
+            className: A.Qq,
             children: [(0, i.jsx)(a.Text, {
                 variant: "text-sm/semibold",
                 color: "interactive-text-active",
-                children: A.intl.format(A.t.N4qBBO, {
+                children: x.intl.format(x.t.N4qBBO, {
                     index: r + 1
                 })
             }), (0, i.jsx)(a.Text, {
@@ -91,7 +91,7 @@ function h(e) {
                 children: o
             })]
         }), (0, i.jsx)(a.DUT, {
-            className: x.Kk,
+            className: A.Kk,
             onClick: d,
             children: (0, i.jsx)(a.PGe, {
                 size: "md",
@@ -106,17 +106,17 @@ function f(e) {
         userId: t
     } = e, n = (0, u.k)(t);
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(p, {
+        children: [(0, i.jsx)(h, {
             userId: t,
             count: n.length
         }), n.map((e, l) => (0, i.jsxs)(s.Fragment, {
-            children: [(0, i.jsx)(h, {
-                className: x.nM,
+            children: [(0, i.jsx)(p, {
+                className: A.nM,
                 userId: t,
                 index: l,
                 verification: e
             }), l !== n.length - 1 && (0, i.jsx)("div", {
-                className: x.yF
+                className: A.yF
             })]
         }, `${l}-${e.timestamp}`))]
     })

@@ -19,8 +19,8 @@ function x(e) {
         viewId: n,
         officialGuildId: i,
         onClose: x,
-        source: _
-    } = e, f = t.length > 7, [g, h] = l.useState(!1), p = l.useMemo(() => t.slice(0, f && !g ? 6 : void 0), [t, f, g]);
+        source: h
+    } = e, f = t.length > 7, [g, _] = l.useState(!1), p = l.useMemo(() => t.slice(0, f && !g ? 6 : void 0), [t, f, g]);
     return (0, a.jsxs)("div", {
         children: [(0, a.jsx)(s.DZT, {
             className: u.bV,
@@ -44,12 +44,12 @@ function x(e) {
                         viewId: n,
                         onClose: x,
                         officialGuildId: i,
-                        source: _
+                        source: h
                     }, e.id))
                 })
             }), f && !g && (0, a.jsxs)(o.DUT, {
                 className: m.ND,
-                onClick: () => h(!0),
+                onClick: () => _(!0),
                 children: [(0, a.jsx)(s.EYj, {
                     variant: "text-xs/semibold",
                     color: "interactive-text-default",

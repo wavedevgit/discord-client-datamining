@@ -2,8 +2,8 @@
 r.d(t, {
     zH: () => A
 });
-var n = r(575593),
-    a = r(517950),
+var a = r(575593),
+    n = r(517950),
     i = r(793574),
     o = r(810498),
     _ = r(652215),
@@ -17,24 +17,24 @@ var m = r(320306),
     p = r(516738),
     f = r(604156);
 let g = {
-        skuId: a.a.SEASONAL_GIFTING_2025_HEAD_IN_THE_CLOUDS_SKU_ID,
+        skuId: n.a.SEASONAL_GIFTING_2025_HEAD_IN_THE_CLOUDS_SKU_ID,
         assetId: "a_670b722e56740d11d1e6fe55b8094013",
-        type: n.R.AVATAR_DECORATION,
+        type: a.R.AVATAR_DECORATION,
         name: () => l.intl.string(l.t["R4q5+y"]),
         a11yLabel: () => l.intl.string(l.t.s1HWnQ)
     },
     b = {
-        skuId: a.a.SEASONAL_GIFTING_2025_STARFALL_TIDES_SKU_ID,
+        skuId: n.a.SEASONAL_GIFTING_2025_STARFALL_TIDES_SKU_ID,
         assetId: "nameplates/nameplates_v2/starfall_tides/",
-        type: n.R.NAMEPLATE,
+        type: a.R.NAMEPLATE,
         palette: "sky",
         name: () => l.intl.string(l.t.OzB7sI),
         a11yLabel: () => l.intl.string(l.t.WX49A3)
     },
     C = {
-        skuId: a.a.SEASONAL_GIFTING_2025_MIRAGE_SKU_ID,
+        skuId: n.a.SEASONAL_GIFTING_2025_MIRAGE_SKU_ID,
         assetId: "a_6d99f670de3fcee669660fe262e896ea",
-        type: n.R.AVATAR_DECORATION,
+        type: a.R.AVATAR_DECORATION,
         name: () => l.intl.string(l.t.ZK9IyY),
         a11yLabel: () => l.intl.string(l.t["m/y43M"])
     },

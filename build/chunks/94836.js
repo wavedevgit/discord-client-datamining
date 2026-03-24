@@ -14,10 +14,10 @@ var a = n(627968),
     u = n(607470),
     m = n(720462),
     x = n(256905),
-    _ = n(409626),
+    h = n(409626),
     f = n(368546),
     g = n(985018),
-    h = n(851822),
+    _ = n(851822),
     p = n(351886),
     v = n(947570),
     A = n(1309);
@@ -47,7 +47,7 @@ function j(e) {
     }
     return 0 === r.length ? null : (0, a.jsxs)("div", {
         children: [(0, a.jsx)(o.Heading, {
-            className: h.bV,
+            className: _.bV,
             variant: "text-md/semibold",
             color: "text-strong",
             children: g.intl.string(g.t.bNdK5x)
@@ -64,7 +64,7 @@ function j(e) {
                         ringClassName: p.jR
                     },
                     onClick: () => {
-                        n(_.Ws.ClickImage), (0, x.R)({
+                        n(h.Ws.ClickImage), (0, x.R)({
                             items: r,
                             startingIndex: t,
                             shouldHideMediaOptions: !0,
@@ -108,9 +108,9 @@ function j(e) {
 function E(e) {
     let {
         detectedGame: t
-    } = e, [n, i] = l.useState(0), [_, h] = l.useState(t.artwork), [p, j] = l.useState(t.screenshots), E = l.useRef(null), I = l.useRef(null), C = (0, s.bG)([c.A], () => c.A.useReducedMotion);
-    (_ !== t.artwork || p !== t.screenshots) && (h(t.artwork), j(t.screenshots), i(0));
-    let N = l.useMemo(() => {
+    } = e, [n, i] = l.useState(0), [h, _] = l.useState(t.artwork), [p, j] = l.useState(t.screenshots), E = l.useRef(null), I = l.useRef(null), C = (0, s.bG)([c.A], () => c.A.useReducedMotion);
+    (h !== t.artwork || p !== t.screenshots) && (_(t.artwork), j(t.screenshots), i(0));
+    let b = l.useMemo(() => {
             let e = (t.trailers ?? []).map(e => ({
                     url: (0, d.A)(e.application_id, e.id),
                     type: "VIDEO"
@@ -124,14 +124,14 @@ function E(e) {
                 type: "IMAGE"
             })), ...n]
         }, [t.trailers, t.artwork, t.screenshots]),
-        b = N.length > 0 ? Math.min(n, N.length - 1) : 0,
-        T = N[b],
+        N = b.length > 0 ? Math.min(n, b.length - 1) : 0,
+        T = b[N],
         S = T?.type === "VIDEO";
     return ((0, f.A)({
         videoRef: E,
         canvasRef: I,
         enabled: S && !C
-    }), 0 === N.length) ? null : (0, a.jsxs)("div", {
+    }), 0 === b.length) ? null : (0, a.jsxs)("div", {
         className: v.kL,
         children: [S ? (0, a.jsxs)("div", {
             className: A.ND,
@@ -149,7 +149,7 @@ function E(e) {
         }) : (0, a.jsx)(o.DUT, {
             className: v.gv,
             onClick: () => {
-                let e = N.filter(e => "IMAGE" === e.type),
+                let e = b.filter(e => "IMAGE" === e.type),
                     t = e.indexOf(T);
                 (0, x.R)({
                     items: e,
@@ -167,8 +167,8 @@ function E(e) {
             })
         }), (0, a.jsx)(m.A, {
             gap: "xs",
-            children: N.map((e, n) => (0, a.jsx)(o.DUT, {
-                className: r()(v.JS, n === b && v.Y4),
+            children: b.map((e, n) => (0, a.jsx)(o.DUT, {
+                className: r()(v.JS, n === N && v.Y4),
                 onClick: () => i(n),
                 children: (0, a.jsx)("img", {
                     src: e.url,

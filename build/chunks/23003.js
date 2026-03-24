@@ -22,8 +22,8 @@ var n, r, s, l = a(627968),
     R = a(840065),
     x = a(676279),
     E = a(975571),
-    C = a(457569),
-    v = a(612669),
+    v = a(457569),
+    C = a(612669),
     N = a(788868),
     I = a(88001),
     S = a(652215),
@@ -31,12 +31,12 @@ var n, r, s, l = a(627968),
     P = a(519412),
     y = a(49370),
     D = a(985018),
-    O = a(520650),
-    j = a(927961),
+    j = a(520650),
+    O = a(927961),
     U = a(817577),
     M = a(748222),
-    w = a(743501),
-    L = a(652700),
+    L = a(743501),
+    w = a(652700),
     B = a(282818),
     k = a(965132),
     G = a(576765),
@@ -49,8 +49,8 @@ var n, r, s, l = a(627968),
     X = a(871891),
     $ = a(116427),
     z = a(281146),
-    J = a(324108),
-    q = a(158178),
+    q = a(324108),
+    J = a(158178),
     Z = a(199579),
     Q = a(170467),
     ee = a(909340),
@@ -69,7 +69,7 @@ let ec = () => {
     } = (0, u.Ay)(c.A.PREMIUM_MARKETING_BENTO_BOX), t = (0, b.A)({
         scrollPosition: T._F.TRY_IT_OUT,
         analyticsLocations: e
-    }), n = (0, v.O9)(), r = (0, C.A)({
+    }), n = (0, C.O9)(), r = (0, v.A)({
         location: "bento_box"
     }), s = (0, i.useCallback)(() => {
         (0, R.openUserSettings)(_.X.PROFILE_PANEL, {
@@ -97,8 +97,8 @@ let ec = () => {
             assetUrl: ed ? ea.A : er.A
         },
         displayNameStyles: {
-            thumbnail: L.A,
-            assetUrl: ed ? w.A : B.A
+            thumbnail: w.A,
+            assetUrl: ed ? L.A : B.A
         },
         referralProgram: {
             thumbnail: K.A,
@@ -106,11 +106,11 @@ let ec = () => {
         },
         showYourStyle: {
             thumbnail: z.A,
-            assetUrl: ed ? $.A : J.A
+            assetUrl: ed ? $.A : q.A
         },
         yourSpace: {
             thumbnail: Z.A,
-            assetUrl: ed ? q.A : Q.A
+            assetUrl: ed ? J.A : Q.A
         },
         emojis: {
             thumbnail: G.A,
@@ -142,8 +142,8 @@ let ec = () => {
         videoUrl: ec.referralProgram.assetUrl
     }, ep = {
         name: "customThemes",
-        title: D.intl.string(O.default.XokIHM),
-        description: D.intl.string(O.default["7esQMC"]),
+        title: D.intl.string(j.default.XokIHM),
+        description: D.intl.string(j.default["7esQMC"]),
         descriptionCta: D.intl.string(D.t.jVcuVY),
         previewImage: ec.customThemes.thumbnail,
         onClick: () => {
@@ -152,8 +152,8 @@ let ec = () => {
         videoUrl: ec.customThemes.assetUrl
     }, ef = {
         name: "displayNameStyles",
-        title: D.intl.string(j.default.ABtBDQ),
-        description: D.intl.string(j.default.MFNXZh),
+        title: D.intl.string(O.default.ABtBDQ),
+        description: D.intl.string(O.default.MFNXZh),
         descriptionCta: D.intl.string(D.t.jVcuVY),
         previewImage: ec.displayNameStyles.thumbnail,
         onClick: s,

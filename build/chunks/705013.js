@@ -1,8 +1,8 @@
 /** chunk id: 705013 params = (module,exports,require) **/
 n.d(t, {
-    Ho: () => p,
-    K7: () => x,
-    f7: () => A
+    Ho: () => h,
+    K7: () => A,
+    f7: () => x
 });
 var i = n(419954),
     s = n(954571),
@@ -14,16 +14,16 @@ var i = n(419954),
     c = n(542457),
     u = n(355097),
     m = n(652215),
-    _ = n(985018),
-    g = n(536482);
-let A = () => (0, d.Tx)() !== o.YG;
+    g = n(985018),
+    _ = n(536482);
+let x = () => (0, d.Tx)() !== o.YG;
 
-function x() {
-    return _.intl.string(g.default.WhdCGP)
+function A() {
+    return g.intl.string(_.default.WhdCGP)
 }
-let p = (0, i.zD)(r.X.CONTENT_AND_SOCIAL_PERMISSIONS_ACTIVITY_SHARE_SETTING, {
-    useTitle: x,
-    useSubtitle: () => _.intl.string(g.default.UQ9RHJ),
+let h = (0, i.zD)(r.X.CONTENT_AND_SOCIAL_PERMISSIONS_ACTIVITY_SHARE_SETTING, {
+    useTitle: A,
+    useSubtitle: () => g.intl.string(_.default.UQ9RHJ),
     useValue: () => {
         let e = (0, d.Tx)();
         return !a.JG.useSetting().includes(e)
@@ -37,5 +37,5 @@ let p = (0, i.zD)(r.X.CONTENT_AND_SOCIAL_PERMISSIONS_ACTIVITY_SHARE_SETTING, {
             guild_id: t
         })
     },
-    usePredicate: A
+    usePredicate: x
 })

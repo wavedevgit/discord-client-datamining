@@ -60,7 +60,7 @@ function x(e) {
     }
 }
 
-function _(e) {
+function h(e) {
     let {
         platforms: t
     } = e;
@@ -97,7 +97,7 @@ function g(e) {
     } = e, l = (0, c.A)(t);
     return 0 === l.length ? null : (0, a.jsx)("div", {
         className: i()(u.fi, u.iH, n),
-        children: l.length > 0 && (0, a.jsx)(_, {
+        children: l.length > 0 && (0, a.jsx)(h, {
             platforms: l
         })
     })

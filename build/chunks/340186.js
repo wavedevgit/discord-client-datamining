@@ -12,18 +12,18 @@ var i = n(934551),
     c = n(729770),
     u = n(176817),
     m = n(297354),
-    _ = n(256464),
-    g = n(982770),
-    A = n(461158),
-    x = n(81453),
-    p = n(289882),
-    h = n(427887),
+    g = n(256464),
+    _ = n(982770),
+    x = n(461158),
+    A = n(81453),
+    h = n(289882),
+    p = n(427887),
     f = n(222323),
     T = n(411476),
     E = n(985018);
 let S = (0, l.t_)(r.X.CHAT_PANEL, {
         useTitle: () => E.intl.string(E.t["/VQax8"]),
-        buildLayout: () => [g.M, u.f, m.z, h.J, x.n, f.p, T.U, A.W, p.o, _.c]
+        buildLayout: () => [_.M, u.f, m.z, p.J, A.n, f.p, T.U, x.W, h.o, g.c]
     }),
     b = [{
         badgeType: a.Xi.STRONGLY_DISCOURAGED_CUSTOM,

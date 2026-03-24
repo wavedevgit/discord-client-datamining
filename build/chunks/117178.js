@@ -1,6 +1,6 @@
 /** chunk id: 117178 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => _
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -12,7 +12,7 @@ var i = n(627968),
     c = n(837921),
     u = n(650583);
 let m = d.isPlatformEmbedded && null != c.Ay.getDiscordUtils().inputCaptureRegisterElement;
-class _ extends s.PureComponent {
+class g extends s.PureComponent {
     _input;
     gs;
     _mounted = !1;
@@ -102,4 +102,4 @@ class _ extends s.PureComponent {
         })
     }
 }
-let g = _
+let _ = g

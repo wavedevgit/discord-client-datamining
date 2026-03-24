@@ -69,10 +69,10 @@ function m(e) {
     } = e, m = l.useRef(null), x = (0, o.A)({
         id: t,
         label: d.intl.string(d.t["FfCL+6"])
-    }), _ = (0, c.n)(t);
+    }), h = (0, c.n)(t);
     return (0, a.jsxs)("div", {
         className: u,
-        children: [(null != x || null != _) && (0, a.jsx)(r.YNO, {
+        children: [(null != x || null != h) && (0, a.jsx)(r.YNO, {
             targetElementRef: m,
             align: "top",
             position: "right",
@@ -90,7 +90,7 @@ function m(e) {
                     onSelect: () => {},
                     children: (0, a.jsxs)(a.Fragment, {
                         children: [(0, a.jsx)(r.rXV, {
-                            children: _
+                            children: h
                         }), (0, a.jsx)(r.rXV, {
                             children: x
                         })]

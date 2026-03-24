@@ -1,6 +1,6 @@
 /** chunk id: 888772 params = (module,exports,require) **/
 n.d(t, {
-    A: () => k
+    A: () => U
 }), n(801541);
 var i = n(627968),
     s = n(64700),
@@ -12,12 +12,12 @@ var i = n(627968),
     c = n(260762),
     u = n(485947),
     m = n(294433),
-    _ = n(426190),
-    g = n(438732),
-    A = n(834981),
-    x = n(469696),
-    p = n(796497),
-    h = n(148131),
+    g = n(426190),
+    _ = n(438732),
+    x = n(834981),
+    A = n(469696),
+    h = n(796497),
+    p = n(148131),
     f = n(845197),
     T = n(442671),
     E = n(191627),
@@ -104,7 +104,7 @@ function O() {
 }
 
 function R() {
-    let e = (0, A.xr)();
+    let e = (0, x.xr)();
     return (0, i.jsxs)("div", {
         className: a()(v.aP, N.a, v.dO),
         children: [(0, i.jsxs)("div", {
@@ -121,7 +121,7 @@ function R() {
                 children: C.intl.format(b.default.yMnoDl, {
                     link: "https://support.discord.com/hc/articles/14155060633623"
                 })
-            }), e ? null : (0, i.jsx)(p.A, {})]
+            }), e ? null : (0, i.jsx)(h.A, {})]
         }), (0, i.jsx)("img", {
             className: v._u,
             src: j,
@@ -135,7 +135,7 @@ function L(e) {
         sectionType: t,
         sectionTitle: n,
         requests: l
-    } = e, a = s.useRef(null), r = `${t}-list`, m = (0, c.A)(r), _ = s.useCallback(e => {
+    } = e, a = s.useRef(null), r = `${t}-list`, m = (0, c.A)(r), g = s.useCallback(e => {
         let {
             row: n,
             listIndex: s
@@ -143,13 +143,13 @@ function L(e) {
         return null == a ? null : (0, i.jsx)(T.A, {
             userId: a.id,
             isLast: r,
-            children: () => t === E.Ef.ACTIVE ? (0, i.jsx)(h.w, {
+            children: () => t === E.Ef.ACTIVE ? (0, i.jsx)(p.w, {
                 user: a
             }) : (0, i.jsx)(f.M, {
                 user: a
             })
         }, a.id)
-    }, [l, t]), g = s.useCallback(() => (0, i.jsx)(u.A, {
+    }, [l, t]), _ = s.useCallback(() => (0, i.jsx)(u.A, {
         children: (0, i.jsx)(d.Text, {
             className: I.QB,
             variant: "eyebrow",
@@ -176,8 +176,8 @@ function L(e) {
                         },
                         sectionHeight: E.h4,
                         rowHeight: E.Gg,
-                        renderSection: g,
-                        renderRow: _,
+                        renderSection: _,
+                        renderRow: g,
                         sections: [l.length],
                         chunkSize: 30,
                         fade: !0,
@@ -189,8 +189,8 @@ function L(e) {
     })
 }
 let P = () => {
-        let e = (0, g.A)(),
-            t = (0, A.GR)(),
+        let e = (0, _.A)(),
+            t = (0, x.GR)(),
             n = e ? E.Y7 : E.kp,
             s = {
                 count: t.length,
@@ -210,15 +210,15 @@ let P = () => {
                 children: l
             }), (0, i.jsx)("div", {
                 className: v.aP,
-                children: (0, i.jsx)(x.A, {
+                children: (0, i.jsx)(A.A, {
                     text: C.intl.string(b.default.C4ScLD)
                 })
             })]
         })
     },
     D = () => {
-        let e = (0, A.xr)(),
-            t = (0, g.A)() ? E.Y7 : E.kp,
+        let e = (0, x.xr)(),
+            t = (0, _.A)() ? E.Y7 : E.kp,
             n = (0, m.y)(C.intl.formatToPlainString(b.default["1/PzIj"], {
                 maxConnections: t
             }), C.intl.formatToPlainString(b.default.RcTgiE, {
@@ -234,8 +234,8 @@ let P = () => {
         }) : null
     },
     G = () => {
-        let e = (0, _.N)(),
-            t = (0, _.z)(),
+        let e = (0, g.N)(),
+            t = (0, g.z)(),
             n = (0, r.YW)({
                 helpline: e,
                 throughline: t
@@ -264,7 +264,7 @@ let P = () => {
         })
     },
     M = () => {
-        let e = (0, A.xk)(E.Ef.PENDING),
+        let e = (0, x.xk)(E.Ef.PENDING),
             t = (0, m.y)(C.intl.formatToPlainString(b.default.IkAgkG, {
                 count: e.length
             }), C.intl.formatToPlainString(b.default.Q8XnAa, {
@@ -276,8 +276,8 @@ let P = () => {
             requests: e
         })
     },
-    k = () => {
-        let e = (0, g.A)();
+    U = () => {
+        let e = (0, _.A)();
         return (0, i.jsxs)("div", {
             className: v.kL,
             children: [e ? (0, i.jsx)(O, {}) : (0, i.jsx)(R, {}), (0, i.jsx)(P, {}), (0, i.jsx)(M, {}), (0, i.jsx)(D, {}), (0, i.jsx)(G, {})]

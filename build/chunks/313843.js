@@ -1,6 +1,6 @@
 /** chunk id: 313843 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h,
+    A: () => _,
     Q: () => f
 });
 var a = n(627968),
@@ -41,7 +41,7 @@ function x(e) {
     })
 }
 
-function _(e) {
+function h(e) {
     let {
         game: t,
         application: n
@@ -96,7 +96,7 @@ let g = e => {
             })]
         })
     },
-    h = function(e) {
+    _ = function(e) {
         let {
             game: t,
             application: n,
@@ -115,7 +115,7 @@ let g = e => {
                         game: t,
                         application: n,
                         isTwoColumn: !0
-                    }), (0, a.jsx)(_, {
+                    }), (0, a.jsx)(h, {
                         game: t,
                         application: n
                     })]
@@ -130,7 +130,7 @@ let g = e => {
                 game: t
             }), (0, a.jsx)("div", {
                 className: m.kL,
-                children: (0, a.jsx)(_, {
+                children: (0, a.jsx)(h, {
                     game: t,
                     application: n
                 })

@@ -25,39 +25,39 @@ let c = {
 };
 
 function u() {
-    let [e, t] = (0, s.useState)(""), [n, i] = (0, s.useState)("server-order"), d = (0, l.bG)([o.Ay], () => o.Ay.getFlattenedGuildIds()), u = (0, l.bG)([r.A], () => r.A.getGuilds()), m = d.map(e => u[e]), _ = a.Pw.useSetting(), [g, A] = (0, s.useState)(_);
+    let [e, t] = (0, s.useState)(""), [n, i] = (0, s.useState)("server-order"), d = (0, l.bG)([o.Ay], () => o.Ay.getFlattenedGuildIds()), u = (0, l.bG)([r.A], () => r.A.getGuilds()), m = d.map(e => u[e]), g = a.Pw.useSetting(), [_, x] = (0, s.useState)(g);
     (0, s.useEffect)(() => {
-        A(_)
-    }, [_]);
-    let x = async e => {
-        A(e);
+        x(g)
+    }, [g]);
+    let A = async e => {
+        x(e);
         try {
             await a.Pw.updateSetting(e)
         } catch (e) {
-            A(_)
+            x(g)
         }
-    }, p = 0 !== g.length, [h, f] = (0, s.useState)(() => c[n](m, _)), T = h.map(e => u[e.id]).filter(Boolean);
+    }, h = 0 !== _.length, [p, f] = (0, s.useState)(() => c[n](m, g)), T = p.map(e => u[e.id]).filter(Boolean);
     return {
         guilds: "" === e ? T : T.filter(t => t.name.toLowerCase().includes(e.toLowerCase())),
         sortOrder: n,
         searchQuery: e,
         setSortOrder: e => {
-            f(c[e](m, _)), i(e)
+            f(c[e](m, g)), i(e)
         },
         setSearchQuery: t,
         onToggleActivityRestrictedGuild: e => {
             let {
                 checked: t,
                 guildId: n
-            } = e, i = new Set(g);
-            t ? i.delete(n) : i.add(n), x([...i])
+            } = e, i = new Set(_);
+            t ? i.delete(n) : i.add(n), A([...i])
         },
-        isActivityRestricted: e => g.includes(e),
-        hasActivityRestrictedGuilds: p,
+        isActivityRestricted: e => _.includes(e),
+        hasActivityRestrictedGuilds: h,
         onToggleAllActivityRestrictedGuilds: () => {
-            p ? x([]) : x(d)
+            h ? A([]) : A(d)
         },
         numTotalGuilds: d.length,
-        numActivityRestrictedGuilds: g.length
+        numActivityRestrictedGuilds: _.length
     }
 }

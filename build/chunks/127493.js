@@ -1,7 +1,7 @@
 /** chunk id: 127493 params = (module,exports,require) **/
 n.d(t, {
-    Ct: () => _,
-    oO: () => g
+    Ct: () => g,
+    oO: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -56,7 +56,7 @@ function m(e) {
         })]
     })
 }
-let _ = s.memo(function(e) {
+let g = s.memo(function(e) {
         let {
             whatsNewBoxes: t
         } = (0, d.Ay)();
@@ -67,7 +67,7 @@ let _ = s.memo(function(e) {
             ...e
         })
     }),
-    g = s.memo(function(e) {
+    _ = s.memo(function(e) {
         let {
             bestOfBoxes: t
         } = (0, d.Ay)();

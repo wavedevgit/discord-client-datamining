@@ -12,12 +12,12 @@ var i = n(627968),
     c = n(128450),
     u = n(419954),
     m = n(796774),
-    _ = n(209932),
-    g = n(536432),
-    A = n(984813),
-    x = n(595953),
-    p = n(975571),
-    h = n(780964),
+    g = n(209932),
+    _ = n(536432),
+    x = n(984813),
+    A = n(595953),
+    h = n(975571),
+    p = n(780964),
     f = n(617617),
     T = n(652215);
 n(980504);
@@ -25,13 +25,13 @@ var E = n(985018),
     S = n(17786);
 
 function b(e) {
-    return (0, l.bG)([_.A], () => {
+    return (0, l.bG)([g.A], () => {
         if (null == e) return null;
         let {
             guildId: t,
             soundId: n
         } = e;
-        return _.A.getSound("0" === t ? "0" : t, n)
+        return g.A.getSound("0" === t ? "0" : t, n)
     })
 }
 
@@ -61,14 +61,14 @@ function C(e) {
         })]
     })
 }
-let N = (0, u.E2)(h.X.ENTRANCE_SOUNDS_SETTING, {
+let N = (0, u.E2)(p.X.ENTRANCE_SOUNDS_SETTING, {
     useSearchTerms: () => [E.intl.string(E.t.nzUc3B)],
     Component: function() {
         let {
             analyticsLocations: e
-        } = (0, o.Ay)(), [t, n] = s.useState("0"), r = (0, A.mz)(t), u = b(r), h = r?.type === A.PP.GLOBAL, f = (0, l.bG)([_.A], () => _.A.hasFetchedAllSounds()) && null != r && null == u;
+        } = (0, o.Ay)(), [t, n] = s.useState("0"), r = (0, x.mz)(t), u = b(r), p = r?.type === x.PP.GLOBAL, f = (0, l.bG)([g.A], () => g.A.hasFetchedAllSounds()) && null != r && null == u;
         s.useEffect(() => {
-            f && (0, g.ND)({
+            f && (0, _.ND)({
                 location: e
             })
         }, [f, e]), s.useEffect(() => {
@@ -85,7 +85,7 @@ let N = (0, u.E2)(h.X.ENTRANCE_SOUNDS_SETTING, {
         return (0, i.jsxs)(a.nVY, {
             label: E.intl.string(E.t.nzUc3B),
             description: E.intl.format(E.t.u9RWmv, {
-                helpdeskArticle: p.A.getArticleURL(T.MVz.SOUNDBOARD)
+                helpdeskArticle: h.A.getArticleURL(T.MVz.SOUNDBOARD)
             }),
             children: [(0, i.jsx)(d.A, {
                 guildId: t,
@@ -107,11 +107,11 @@ let N = (0, u.E2)(h.X.ENTRANCE_SOUNDS_SETTING, {
                         className: S.ax
                     })
                 }),
-                children: [(0, i.jsx)(x.A, {
+                children: [(0, i.jsx)(A.A, {
                     sound: u,
-                    isGlobal: h,
+                    isGlobal: p,
                     onSelect: n => {
-                        null == n ? (0, g.Dv)(t, e) : (0, g.un)(t, n, e)
+                        null == n ? (0, _.Dv)(t, e) : (0, _.un)(t, n, e)
                     }
                 }), f && (0, i.jsx)(a.po8, {
                     className: S.lm,

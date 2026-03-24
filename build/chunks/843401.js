@@ -1,7 +1,7 @@
 /** chunk id: 843401 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h,
-    I: () => p
+    A: () => p,
+    I: () => h
 });
 var i = n(627968),
     s = n(503698),
@@ -13,29 +13,29 @@ var i = n(627968),
     c = n(430452),
     u = n(975571),
     m = n(942405),
-    _ = n(652215),
-    g = n(985018),
-    A = n(726097);
+    g = n(652215),
+    _ = n(985018),
+    x = n(726097);
 
-function x(e) {
+function A(e) {
     let {
         game: t,
         application: n
     } = e;
     return null == t || null == n ? (0, i.jsx)("div", {
-        className: A.zc,
+        className: x.zc,
         children: (0, i.jsx)(r.EpV, {
             size: "sm",
             color: r.LU0.colors.TEXT_FEEDBACK_WARNING
         })
     }) : (0, i.jsxs)("div", {
-        className: A.nt,
+        className: x.nt,
         children: [(0, i.jsx)(d.A, {
             game: n,
             pid: t.pid,
             size: d.M.MEDIUM
         }), (0, i.jsx)("div", {
-            className: A.Am,
+            className: x.Am,
             children: (0, i.jsx)(r.EpV, {
                 size: "sm",
                 color: r.LU0.colors.TEXT_FEEDBACK_WARNING
@@ -44,7 +44,7 @@ function x(e) {
     })
 }
 
-function p(e) {
+function h(e) {
     let t = (0, a.bG)([c.Ay], () => c.Ay.getMode()),
         {
             runningGame: n,
@@ -52,7 +52,7 @@ function p(e) {
         } = (0, o.A)();
     null == n || n.elevated || (n = void 0, i = void 0);
     let s = (0, m.NP)(),
-        l = s && null != n && t === _.TBI.PUSH_TO_TALK;
+        l = s && null != n && t === g.TBI.PUSH_TO_TALK;
     return {
         canPrompt: "voice" === e ? l : s,
         runningGame: n,
@@ -60,7 +60,7 @@ function p(e) {
     }
 }
 
-function h(e) {
+function p(e) {
     let {
         className: t,
         sourcePage: n
@@ -68,29 +68,29 @@ function h(e) {
         canPrompt: s,
         runningGame: a,
         runningGameApplication: o
-    } = p(n);
+    } = h(n);
     return s ? (0, i.jsxs)("div", {
-        className: l()(A.kL, t),
-        children: [(0, i.jsx)(x, {
+        className: l()(x.kL, t),
+        children: [(0, i.jsx)(A, {
             game: a,
             application: o
         }), (0, i.jsxs)("div", {
-            className: A.FS,
+            className: x.FS,
             children: [(0, i.jsx)(r.Text, {
                 variant: "text-sm/medium",
                 color: "text-strong",
-                children: "voice" === n ? g.intl.string(g.t.vxfv7v) : null != a ? g.intl.string(g.t.fAYU2G) : g.intl.string(g.t["9V4X/c"])
+                children: "voice" === n ? _.intl.string(_.t.vxfv7v) : null != a ? _.intl.string(_.t.fAYU2G) : _.intl.string(_.t["9V4X/c"])
             }), (0, i.jsx)(r.Text, {
                 variant: "text-xs/medium",
                 color: "text-muted",
-                children: g.intl.format(g.t["/y6htt"], {
-                    helpCenterLink: u.A.getArticleURL(_.MVz.SYSTEM_SERVICE)
+                children: _.intl.format(_.t["/y6htt"], {
+                    helpCenterLink: u.A.getArticleURL(g.MVz.SYSTEM_SERVICE)
                 })
             })]
         }), (0, i.jsx)(r.Button, {
             variant: "secondary",
             size: "sm",
-            text: g.intl.string(g.t["1iI46O"]),
+            text: _.intl.string(_.t["1iI46O"]),
             onClick: function() {
                 (0, m.sL)(n + (null != a ? "-with-game" : "-no-game"))
             }

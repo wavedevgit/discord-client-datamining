@@ -1,6 +1,6 @@
 /** chunk id: 237267 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => _
 });
 var i = n(627968);
 n(64700);
@@ -13,16 +13,16 @@ var s = n(397927),
     c = n(652215),
     u = n(788868),
     m = n(985018),
-    _ = n(689507);
-let g = function(e) {
+    g = n(689507);
+let _ = function(e) {
     let {
         hasAppliedGuildBoosts: t,
         hasBoostPerk: n,
-        hasGuildAffinitiesOrInGuild: g,
-        subscriptionIsPausedOrPausePending: A
+        hasGuildAffinitiesOrInGuild: _,
+        subscriptionIsPausedOrPausePending: x
     } = e, {
-        subtitle: x,
-        flavor: p
+        subtitle: A,
+        flavor: h
     } = function(e) {
         let {
             hasAppliedGuildBoosts: t,
@@ -44,30 +44,30 @@ let g = function(e) {
                 helpdeskArticle: l.A.getArticleURL(c.MVz.GUILD_SUBSCRIPTIONS)
             })
         };
-        let _ = u.hd[u.gD.PREMIUM_MONTH_GUILD],
-            g = a.Ay.getDefaultPrice(_.id, n),
-            A = (0, r.CE)((0, r.$g)(g.amount, g.currency), _.interval, _.intervalCount);
+        let g = u.hd[u.gD.PREMIUM_MONTH_GUILD],
+            _ = a.Ay.getDefaultPrice(g.id, n),
+            x = (0, r.CE)((0, r.$g)(_.amount, _.currency), g.interval, g.intervalCount);
         return {
             subtitle: n ? m.intl.string(m.t.bhPzXR) : m.intl.string(m.t.Zs9h9Z),
             flavor: m.intl.formatToPlainString(m.t.PGgTdA, {
-                monthlyGuildBoostPrice: A
+                monthlyGuildBoostPrice: x
             })
         }
     }({
         hasAppliedGuildBoosts: t,
         hasBoostPerk: n,
-        hasGuildAffinitiesOrInGuild: g,
-        subscriptionIsPausedOrPausePending: A
+        hasGuildAffinitiesOrInGuild: _,
+        subscriptionIsPausedOrPausePending: x
     });
     return (0, i.jsxs)("div", {
-        className: _.i,
+        className: g.i,
         children: [(0, i.jsx)(s.Heading, {
             variant: "heading-lg/bold",
-            className: _.V,
-            children: x
-        }), null != p && (0, i.jsx)(s.Text, {
+            className: g.V,
+            children: A
+        }), null != h && (0, i.jsx)(s.Text, {
             variant: "text-sm/normal",
-            children: p
+            children: h
         })]
     })
 }

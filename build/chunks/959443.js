@@ -14,12 +14,12 @@ var s = n(503698),
     c = n(139286),
     u = n(793943),
     m = n(996254),
-    _ = n(12901),
-    g = n(738419),
-    A = n(520650),
-    x = n(985018),
-    p = n(996554),
-    h = n(114149);
+    g = n(12901),
+    _ = n(738419),
+    x = n(520650),
+    A = n(985018),
+    h = n(996554),
+    p = n(114149);
 
 function f(e) {
     let {
@@ -35,37 +35,37 @@ function f(e) {
         }
     });
     let s = (0, m.X)({
-        "en-US": A.default["f/cLEi"],
-        "en-GB": A.default["f/cLEi"]
-    }, A.default.CARxAC);
+        "en-US": x.default["f/cLEi"],
+        "en-GB": x.default["f/cLEi"]
+    }, x.default.CARxAC);
     return (0, i.jsxs)("div", {
-        className: l()(p.kL, t),
+        className: l()(h.kL, t),
         children: [(0, i.jsx)("div", {
-            className: p.zc,
+            className: h.zc,
             children: (0, i.jsx)("img", {
-                src: h.A,
-                className: p._e,
+                src: p.A,
+                className: h._e,
                 alt: ""
             })
         }), (0, i.jsxs)("div", {
-            className: p.P_,
+            className: h.P_,
             children: [(0, i.jsx)(o.Heading, {
                 variant: "heading-lg/semibold",
                 color: "text-strong",
                 children: s
             }), (0, i.jsx)(o.Text, {
                 variant: "text-sm/normal",
-                children: x.intl.string(A.default.nla4RG)
+                children: A.intl.string(x.default.nla4RG)
             })]
         }), (0, i.jsx)("div", {
-            className: p.UD,
+            className: h.UD,
             children: (0, i.jsx)(r.$nd, {
                 variant: "primary",
-                text: x.intl.string(x.t.uw9zI7),
+                text: A.intl.string(A.t.uw9zI7),
                 onClick: () => {
-                    (0, g.b0)(g.G8.APPEARANCE_SETTINGS), (0, u.nf)(u.HP.CUSTOM_THEME, {
+                    (0, _.b0)(_.G8.APPEARANCE_SETTINGS), (0, u.nf)(u.HP.CUSTOM_THEME, {
                         from: u.xv.SETTING
-                    }), (0, _.default)()
+                    }), (0, g.default)()
                 }
             })
         })]
@@ -74,6 +74,6 @@ function f(e) {
 
 function T() {
     return (0, i.jsx)(f, {
-        className: p.YH
+        className: h.YH
     })
 }

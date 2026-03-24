@@ -1,6 +1,6 @@
 /** chunk id: 608699 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => g
 });
 var i = n(627968),
     s = n(607399),
@@ -12,13 +12,13 @@ var i = n(627968),
     c = n(146528),
     u = n(985018),
     m = n(405564);
-let _ = e => {
+let g = e => {
     let {
         onGoBack: t
     } = e, n = (0, d.A)(), {
-        loading: _
+        loading: g
     } = (0, o.eb)(n);
-    return ((0, r.A)(s.Fr ? "role-subscriptions-user-setting" : void 0), _) ? (0, i.jsx)(a.y$y, {}) : 0 === n.length ? null : (0, i.jsxs)("div", {
+    return ((0, r.A)(s.Fr ? "role-subscriptions-user-setting" : void 0), g) ? (0, i.jsx)(a.y$y, {}) : 0 === n.length ? null : (0, i.jsxs)("div", {
         children: [(0, i.jsx)(l.$nd, {
             text: u.intl.string(u.t.hqyhKQ),
             icon: a.z$m,

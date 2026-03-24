@@ -12,12 +12,12 @@ var i = n(627968),
     c = n(309635),
     u = n(84540),
     m = n(954571),
-    _ = n(927578),
-    g = n(919395),
-    A = n(128450),
-    x = n(212168),
-    p = n(652215),
-    h = n(788868),
+    g = n(927578),
+    _ = n(919395),
+    x = n(128450),
+    A = n(212168),
+    h = n(652215),
+    p = n(788868),
     f = n(985018),
     T = n(97671);
 
@@ -33,23 +33,23 @@ function E(e) {
         showBorder: N = !1
     } = e, {
         analyticsLocations: v
-    } = (0, d.Ay)(), I = _.Ay.canUsePremiumProfileCustomization(t), j = (0, g.N2)({
+    } = (0, d.Ay)(), I = g.Ay.canUsePremiumProfileCustomization(t), j = (0, _.N2)({
         user: t,
         guildId: n?.id
     }), {
         pendingProfileEffect: y,
         errors: O
-    } = (0, g.nZ)(n?.id);
+    } = (0, _.nZ)(n?.id);
     s.useEffect(() => {
-        I && m.default.track(p.HAw.PREMIUM_UPSELL_VIEWED, {
-            type: h.e.PROFILE_EFFECTS_INLINE_SETTINGS,
+        I && m.default.track(h.HAw.PREMIUM_UPSELL_VIEWED, {
+            type: p.e.PROFILE_EFFECTS_INLINE_SETTINGS,
             location_stack: v
         })
     }, [I, v]);
     let R = C ? o.wLn : r.$n;
-    return (0, i.jsx)(A.A, {
+    return (0, i.jsx)(x.A, {
         forcedDivider: b,
-        borderType: x.i.PREMIUM,
+        borderType: A.i.PREMIUM,
         hasBackground: !0,
         title: S,
         showBorder: N,

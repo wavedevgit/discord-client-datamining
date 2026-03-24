@@ -1,6 +1,6 @@
 /** chunk id: 758378 params = (module,exports,require) **/
 n.d(t, {
-    J: () => g
+    J: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -12,22 +12,22 @@ var i = n(627968),
     c = n(975571),
     u = n(652215),
     m = n(985018),
-    _ = n(79668);
+    g = n(79668);
 
-function g() {
+function _() {
     let e = (0, o.XQ)(),
         [t, n] = s.useState(!1),
-        [g, A] = s.useState(() => (0, o.TC)()),
-        x = (0, l.bG)([r.Ay], () => r.Ay.getSystemServiceStatus("input-service")),
-        p = s.useCallback(async () => {
-            n(!0), g ? await (0, o.z8)("windows-settings") : await (0, o.sL)("windows-settings"), n(!1), A((0, o.TC)())
-        }, [g]);
+        [_, x] = s.useState(() => (0, o.TC)()),
+        A = (0, l.bG)([r.Ay], () => r.Ay.getSystemServiceStatus("input-service")),
+        h = s.useCallback(async () => {
+            n(!0), _ ? await (0, o.z8)("windows-settings") : await (0, o.sL)("windows-settings"), n(!1), x((0, o.TC)())
+        }, [_]);
     if (!e) return null;
-    let h = "running" === x.state;
+    let p = "running" === A.state;
     return (0, i.jsxs)("div", {
-        className: _.q,
+        className: g.q,
         children: [(0, i.jsxs)("div", {
-            className: _.L,
+            className: g.L,
             children: [(0, i.jsx)(a.Text, {
                 variant: "text-md/medium",
                 color: "text-strong",
@@ -38,10 +38,10 @@ function g() {
                 children: m.intl.format(m.t["8CAL+D"], {
                     helpCenterLink: c.A.getArticleURL(u.MVz.SYSTEM_SERVICE)
                 })
-            }), g ? (0, i.jsx)(a.Text, {
+            }), _ ? (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
-                color: h ? "text-feedback-positive" : "text-feedback-warning",
-                children: h ? m.intl.string(m.t.KHVMkW) : m.intl.format(m.t["5Rlr0b"], {
+                color: p ? "text-feedback-positive" : "text-feedback-warning",
+                children: p ? m.intl.string(m.t.KHVMkW) : m.intl.format(m.t["5Rlr0b"], {
                     status: function(e) {
                         switch (e.state) {
                             case "unknown":
@@ -65,14 +65,14 @@ function g() {
                             default:
                                 (0, d.xb)(e.state)
                         }
-                    }(x)
+                    }(A)
                 })
             }) : null]
         }), (0, i.jsx)(a.Button, {
-            variant: g ? "critical-secondary" : "primary",
+            variant: _ ? "critical-secondary" : "primary",
             loading: t,
-            onClick: p,
-            text: g ? m.intl.string(m.t.pAwbdL) : m.intl.string(m.t["1iI46O"])
+            onClick: h,
+            text: _ ? m.intl.string(m.t.pAwbdL) : m.intl.string(m.t["1iI46O"])
         })]
     })
 }

@@ -17,14 +17,14 @@ function u(e) {
         purchaseState: t,
         currentStep: n,
         onClose: u
-    } = e, [m, _] = (0, o.f)({
+    } = e, [m, g] = (0, o.f)({
         purchaseState: t,
         currentStep: n,
         initialScene: d.V1.Scenes.ENTRY,
         purchaseScene: d.V1.Scenes.STARS,
         errorScene: d.V1.Scenes.ERROR,
         successScene: d.V1.Scenes.SUCCESS
-    }), g = (0, s.bG)([a.A], () => a.A.useReducedMotion);
+    }), _ = (0, s.bG)([a.A], () => a.A.useReducedMotion);
     return (0, i.jsxs)(l.rQ0, {
         "data-migration-pending": !0,
         align: r.A.Align.START,
@@ -33,9 +33,9 @@ function u(e) {
         children: [(0, i.jsx)(d.V1, {
             className: c.lY,
             nextScene: m,
-            onScenePlay: e => _(d.V1.getNextScene(e)),
+            onScenePlay: e => g(d.V1.getNextScene(e)),
             pauseWhileUnfocused: !1,
-            pause: g
+            pause: _
         }), (0, i.jsx)("div", {
             className: c.qd
         }), (0, i.jsx)(l.s_y, {

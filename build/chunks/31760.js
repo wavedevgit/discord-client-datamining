@@ -13,12 +13,12 @@ var i = n(627968),
     c = n(350017),
     u = n(819188),
     m = n(231137),
-    _ = n(151098),
-    g = n(716005),
-    A = n(144010),
-    x = n(175631),
-    p = n(430443),
-    h = n(997442),
+    g = n(151098),
+    _ = n(716005),
+    x = n(144010),
+    A = n(175631),
+    h = n(430443),
+    p = n(997442),
     f = n(985018);
 
 function T(e) {
@@ -29,27 +29,27 @@ function T(e) {
         overrideId: r,
         setOverride: o,
         fetchOverride: d
-    } = e, [c, u] = s.useState(r ?? ""), m = s.useRef(null), [_, g] = s.useState(0), A = () => {
+    } = e, [c, u] = s.useState(r ?? ""), m = s.useRef(null), [g, _] = s.useState(0), x = () => {
         null != m.current && (clearTimeout(m.current), m.current = null)
     };
-    return s.useEffect(() => A, []), (0, i.jsx)(l.D0$, {
+    return s.useEffect(() => x, []), (0, i.jsx)(l.D0$, {
         layout: "horizontal-responsive",
         label: t,
         description: n,
         children: (0, i.jsx)(l.ksK, {
             placeholder: a,
-            error: 2 === _ ? "Failed to fetch override" : void 0,
-            successMessage: 3 === _ ? "Override applied" : void 0,
+            error: 2 === g ? "Failed to fetch override" : void 0,
+            successMessage: 3 === g ? "Override applied" : void 0,
             value: c,
             onChange: e => {
                 if (!(e.length > 0) || /^[0-9]+$/.test(e)) {
-                    if (u(e), A(), 0 === e.length) {
-                        g(0), o(null);
+                    if (u(e), x(), 0 === e.length) {
+                        _(0), o(null);
                         return
                     }
                     m.current = setTimeout(() => {
-                        g(1), d(e).then(t => {
-                            g(null == t ? 2 : 3), null != t && o(e)
+                        _(1), d(e).then(t => {
+                            _(null == t ? 2 : 3), null != t && o(e)
                         })
                     }, 500)
                 }
@@ -60,7 +60,7 @@ function T(e) {
 }
 let E = (0, a.zZ)(o.X.DEV_OVERRIDES, {
     useTitle: () => "Overrides",
-    buildLayout: () => [p.U, h.l, u.B, m.q, g.g, d.Y, x.s, _.t, A.T, c.s],
+    buildLayout: () => [h.U, p.l, u.B, m.q, _.g, d.Y, A.s, g.t, x.T, c.s],
     useInlineNotice: () => ({
         type: r.lT.INLINE_NOTICE,
         noticeType: "info",

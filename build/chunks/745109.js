@@ -12,12 +12,12 @@ var i = n(627968),
     c = n(159001),
     u = n(766569),
     m = n(836602),
-    _ = n(576622),
-    g = n(740625),
-    A = n(841329),
-    x = n(955872),
-    p = n(71393),
-    h = n(967198),
+    g = n(576622),
+    _ = n(740625),
+    x = n(841329),
+    A = n(955872),
+    h = n(71393),
+    p = n(967198),
     f = n(711014),
     T = n(287809),
     E = n(203982),
@@ -33,21 +33,21 @@ let j = {
 };
 
 function y() {
-    let e = (0, r.bG)([h.A, f.Ay, m.A], () => {
-            let e = m.A.selectedGuildId ?? h.A.getGuildId();
+    let e = (0, r.bG)([p.A, f.Ay, m.A], () => {
+            let e = m.A.selectedGuildId ?? p.A.getGuildId();
             return null == e || m._.has(e) ? f.Ay.getFlattenedGuildIds().find(e => !m._.has(e)) : e
         }),
-        t = (0, r.bG)([p.A], () => p.A.getGuild(e)),
+        t = (0, r.bG)([h.A], () => h.A.getGuild(e)),
         n = (0, r.bG)([m.A], () => m.A.showNotice()),
         l = (0, r.bG)([T.default], () => T.default.getCurrentUser()),
         y = b.A.useField("subsection");
     return s.useEffect(() => {
-        (0, A._)(j[y])
+        (0, x._)(j[y])
     }, [y]), s.useEffect(() => {
-        null != l && t?.id != null && (0, _.A)(l.id, l.getAvatarURL(t?.id, 80), {
+        null != l && t?.id != null && (0, g.A)(l.id, l.getAvatarURL(t?.id, 80), {
             guildId: t?.id
         })
-    }, [t?.id, l]), (0, i.jsxs)(g.R, {
+    }, [t?.id, l]), (0, i.jsxs)(_.R, {
         header: v.intl.string(v.t["vi7f+q"]),
         children: [(0, i.jsxs)(o.VQ0, {
             className: I.$H,
@@ -90,6 +90,6 @@ function y() {
                 }
                 null != e && (0, c.JJ)(e.id)
             }
-        }) : (0, i.jsx)(x.A, {})]
+        }) : (0, i.jsx)(A.A, {})]
     })
 }

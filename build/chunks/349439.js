@@ -1,7 +1,7 @@
 /** chunk id: 349439 params = (module,exports,require) **/
 n.d(t, {
     GQ: () => u,
-    GZ: () => _,
+    GZ: () => g,
     il: () => m,
     nF: () => c
 });
@@ -33,7 +33,7 @@ let c = e => {
         let t = r.hd[e];
         return t?.skuId === r.pe.GUILD
     },
-    _ = (e, t) => {
+    g = (e, t) => {
         let n, s, l = null != t;
         if (null != e) n = e.name, s = (e => {
             switch (e) {

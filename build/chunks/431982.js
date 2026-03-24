@@ -1,6 +1,6 @@
 /** chunk id: 431982 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => g
 });
 var i = n(627968),
     s = n(64700),
@@ -13,24 +13,24 @@ var i = n(627968),
     u = n(985018),
     m = n(888920);
 
-function _(e) {
+function g(e) {
     let {
         user: t,
         guild: n,
-        titleIcon: _
+        titleIcon: g
     } = e, {
-        analyticsLocations: g
-    } = (0, a.Ay)(), A = null != n, {
-        userNameplate: x,
-        guildNameplate: p,
-        pendingNameplate: h,
+        analyticsLocations: _
+    } = (0, a.Ay)(), x = null != n, {
+        userNameplate: A,
+        guildNameplate: h,
+        pendingNameplate: p,
         pendingErrors: f
     } = (0, d.rv)(t, n?.id), T = s.useCallback(() => {
         (0, r.p)({
-            analyticsLocations: g,
+            analyticsLocations: _,
             guildId: n?.id
         })
-    }, [g, n?.id]), E = s.useCallback(() => {
+    }, [_, n?.id]), E = s.useCallback(() => {
         (0, o.p)({
             guildId: n?.id,
             nameplate: null
@@ -38,7 +38,7 @@ function _(e) {
     }, [n?.id]);
     return (0, i.jsx)(c.A, {
         title: u.intl.string(u.t.x5CoXR),
-        titleIcon: _,
+        titleIcon: g,
         errors: f,
         children: (0, i.jsxs)("div", {
             className: m.u,
@@ -47,10 +47,10 @@ function _(e) {
                 size: "sm",
                 text: u.intl.string(u.t.BwdeM1),
                 onClick: T
-            }), (void 0 === h ? (A ? p : x) != null : null != h) && (0, i.jsx)(l.Button, {
+            }), (void 0 === p ? (x ? h : A) != null : null != p) && (0, i.jsx)(l.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: A ? u.intl.string(u.t.CHf9iJ) : u.intl.string(u.t["9zwziY"]),
+                text: x ? u.intl.string(u.t.CHf9iJ) : u.intl.string(u.t["9zwziY"]),
                 onClick: E
             })]
         })

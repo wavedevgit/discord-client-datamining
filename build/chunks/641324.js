@@ -13,12 +13,12 @@ var s = n(963935),
     c = n(98254),
     u = n(915953),
     m = n(39216),
-    _ = n(43146),
-    g = n(112715),
-    A = n(39043),
-    x = n(743961),
-    p = n(896005),
-    h = n(388773),
+    g = n(43146),
+    _ = n(112715),
+    x = n(39043),
+    A = n(743961),
+    h = n(896005),
+    p = n(388773),
     f = n(691116),
     T = n(353667),
     E = n(182884),
@@ -28,7 +28,7 @@ function b(e) {
     let {
         node: t
     } = e;
-    switch ((0, g.Z)(t.initialize), t.type) {
+    switch ((0, _.Z)(t.initialize), t.type) {
         case s.Z6.ROOT:
         case s.Z6.SECTION:
         case s.Z6.SIDEBAR_ITEM:
@@ -39,11 +39,11 @@ function b(e) {
                 node: t
             });
         case s.Z6.LIST:
-            return (0, i.jsx)(h.A, {
+            return (0, i.jsx)(p.A, {
                 node: t
             });
         case s.Z6.FIELD_SET:
-            return (0, i.jsx)(p.A, {
+            return (0, i.jsx)(h.A, {
                 node: t
             });
         case s.Z6.RELATED:
@@ -51,11 +51,11 @@ function b(e) {
                 node: t
             });
         case s.Z6.CATEGORY:
-            return (0, i.jsx)(x.A, {
+            return (0, i.jsx)(A.A, {
                 node: t
             });
         case s.Z6.ACCORDION:
-            return (0, i.jsx)(A.A, {
+            return (0, i.jsx)(x.A, {
                 node: t
             });
         case s.Z6.SPLIT:
@@ -63,7 +63,7 @@ function b(e) {
                 node: t
             });
         case s.Z6.TOGGLE:
-            return (0, i.jsx)(_.v, {
+            return (0, i.jsx)(g.v, {
                 node: t
             });
         case s.Z6.STATIC:

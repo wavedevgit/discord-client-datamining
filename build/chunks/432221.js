@@ -15,5 +15,7 @@ e.exports = {
     hz: "footerSpacing__94da4",
     aZ: "zIndex1__94da4",
     Pw: "trialMarketingMargin__94da4",
-    _Z: "bottomOfPageVisibilitySensor__94da4"
+    _Z: "bottomOfPageVisibilitySensor__94da4",
+    ij: "wishlistButton__94da4",
+    n1: "offerSplashWrapper__94da4"
 }

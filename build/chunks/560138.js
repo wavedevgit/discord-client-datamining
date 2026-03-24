@@ -2,13 +2,13 @@
 r.d(t, {
     A: () => _
 });
-var n = r(311907),
-    a = r(73153);
+var a = r(311907),
+    n = r(73153);
 let i = {
     fetched: !1,
     affinities: []
 };
-class o extends n.Ay.Store {
+class o extends a.Ay.Store {
     get hasFetched() {
         return i.fetched
     }
@@ -16,7 +16,7 @@ class o extends n.Ay.Store {
         return i.affinities
     }
 }
-let _ = new o(a.h, {
+let _ = new o(n.h, {
     BILLING_NITRO_AFFINITY_FETCHED: function(e) {
         let {} = e;
         i.fetched = !0

@@ -1,6 +1,6 @@
 /** chunk id: 391680 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => g
 });
 var i = n(627968);
 n(64700);
@@ -14,17 +14,17 @@ var s = n(311907),
     u = n(780964),
     m = n(840065);
 
-function _() {
+function g() {
     let {
         layoutDebuggingEnabled: e,
         isDeveloper: t,
         isLoggingGatewayEvents: n,
-        isLoggingOverlayEvents: _,
-        isLoggingAnalyticsEvents: g,
-        isTracingRequests: A,
-        isForcedCanary: x,
-        isAxeEnabled: p,
-        preventPopoutClose: h,
+        isLoggingOverlayEvents: g,
+        isLoggingAnalyticsEvents: _,
+        isTracingRequests: x,
+        isForcedCanary: A,
+        isAxeEnabled: h,
+        preventPopoutClose: p,
         onlyShowPreviewAppCollections: f,
         disableAppCollectionsCache: T
     } = (0, s.cf)([d.default, o.A], () => ({
@@ -63,10 +63,10 @@ function _() {
         }, "always-deliver"), (0, i.jsx)(l.sLh, {
             id: "forced-canary",
             label: "Forced Canary",
-            checked: x,
+            checked: A,
             action: () => {
                 (0, a.x)({
-                    canary: !x
+                    canary: !A
                 })
             }
         }, "forced-canary"), (0, i.jsx)(l.sLh, {
@@ -106,37 +106,37 @@ function _() {
         }, "gateway-events"), (0, i.jsx)(l.sLh, {
             id: "overlay-events",
             label: "Overlay RPC Events",
-            checked: _,
+            checked: g,
             action: () => {
                 (0, a.x)({
-                    logOverlayEvents: !_
+                    logOverlayEvents: !g
                 })
             }
         }, "overlay-events"), (0, i.jsx)(l.sLh, {
             id: "analytics-events",
             label: "Analytics Events",
-            checked: g,
+            checked: _,
             action: () => {
                 (0, a.x)({
-                    logAnalyticsEvents: !g
+                    logAnalyticsEvents: !_
                 })
             }
         }, "analytics-events"), (0, i.jsx)(l.sLh, {
             id: "tracing-requests",
             label: "Tracing Requests",
-            checked: A,
+            checked: x,
             action: () => {
                 (0, a.x)({
-                    trace: !A
+                    trace: !x
                 })
             }
         }, "tracing-requests"), (0, i.jsx)(l.sLh, {
             id: "prevent-popout-close",
             label: "Prevent Popouts From Closing",
-            checked: h,
+            checked: p,
             action: () => {
                 (0, a.x)({
-                    preventPopoutClose: !h
+                    preventPopoutClose: !p
                 })
             }
         }, "prevent-popout-close")]
@@ -149,10 +149,10 @@ function _() {
         children: [(0, i.jsx)(l.sLh, {
             id: "accessibility-auditing",
             label: "Accessibility Auditing",
-            checked: p,
+            checked: h,
             action: () => {
                 (0, a.x)({
-                    axeEnabled: !p
+                    axeEnabled: !h
                 })
             }
         }, "accessibility-auditing"), (0, i.jsx)(l.sLh, {

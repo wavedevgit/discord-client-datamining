@@ -1,6 +1,6 @@
 /** chunk id: 814698 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => h
 });
 var a = n(627968),
     l = n(64700),
@@ -14,11 +14,11 @@ var a = n(627968),
     m = n(652215),
     x = n(985018);
 
-function _(e) {
+function h(e) {
     let {
         application: t,
         trackAction: n
-    } = e, _ = (0, o.s)("GameProfile"), f = l.useCallback(async () => {
+    } = e, h = (0, o.s)("GameProfile"), f = l.useCallback(async () => {
         n(u.Ws.ClaimGame);
         let e = await (0, c.a)(m.dSh.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY);
         (0, s.A)(e)
@@ -26,7 +26,7 @@ function _(e) {
         onClick: f,
         children: e
     }), [f]);
-    return !_ || t.linkedGames?.some(e => e.type === r.Mh.OFFICIAL) ? null : (0, a.jsx)(i.Text, {
+    return !h || t.linkedGames?.some(e => e.type === r.Mh.OFFICIAL) ? null : (0, a.jsx)(i.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         children: x.intl.format(x.t.KAjfKl, {

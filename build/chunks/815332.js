@@ -1,6 +1,6 @@
 /** chunk id: 815332 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => g
 });
 var i = n(627968),
     s = n(64700),
@@ -13,17 +13,17 @@ var i = n(627968),
     u = n(322092),
     m = n(985018);
 
-function _(e) {
+function g(e) {
     let {
         groupListingId: t,
         subscription: n,
         className: l
     } = e, {
-        analyticsLocations: _
+        analyticsLocations: g
     } = (0, d.Ay)(o.A.PENDING_PLAN_CHANGE_NOTICE), {
-        resetRenewalMutation: g,
-        submitting: A,
-        error: x
+        resetRenewalMutation: _,
+        submitting: x,
+        error: A
     } = (e => {
         let [t, n] = s.useState(!1), [i, l] = s.useState(null);
         return {
@@ -40,10 +40,10 @@ function _(e) {
             submitting: t,
             error: i
         }
-    })(_), p = (0, c.cY)(t, {
+    })(g), h = (0, c.cY)(t, {
         includeSoftDeleted: !0
     }), {
-        currentListing: h,
+        currentListing: p,
         nextListing: f
     } = s.useMemo(() => {
         if (n?.renewalMutations == null) return {
@@ -53,21 +53,21 @@ function _(e) {
         let e = n.items[0].planId,
             t = n.renewalMutations.items[0].planId;
         return {
-            currentListing: p.find(t => t.subscription_plans[0].id === e),
-            nextListing: p.find(e => e.subscription_plans[0].id === t)
+            currentListing: h.find(t => t.subscription_plans[0].id === e),
+            nextListing: h.find(e => e.subscription_plans[0].id === t)
         }
-    }, [n, p]);
-    if (null == n || null == h || null == f) return null;
+    }, [n, h]);
+    if (null == n || null == p || null == f) return null;
     let T = a()(n.currentPeriodEnd).format("MMM DD, YYYY");
     return (0, i.jsx)(u.A, {
         message: m.intl.format(m.t.chw89X, {
-            currentListing: h.name,
+            currentListing: p.name,
             nextListing: f.name,
             changeDate: T
         }),
-        error: x?.message,
-        onClick: () => g(n),
-        submitting: A,
+        error: A?.message,
+        onClick: () => _(n),
+        submitting: x,
         ctaMessage: m.intl.string(m.t.De4wI8),
         className: l
     })

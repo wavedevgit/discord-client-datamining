@@ -16,11 +16,11 @@ function m(e) {
     let {
         guildBoostSlot: t,
         onClose: m,
-        hasCancelableGuildBoostSlot: _,
-        premiumSubscription: g,
-        onSelect: A,
-        fractionalState: x
-    } = e, p = {
+        hasCancelableGuildBoostSlot: g,
+        premiumSubscription: _,
+        onSelect: x,
+        fractionalState: A
+    } = e, h = {
         transfer: {
             label: null != t.premiumGuildSubscription ? u.intl.string(u.t["PR0n//"]) : u.intl.string(u.t["+fmEYG"]),
             subtext: t.isOnCooldown() ? u.intl.string(u.t.XnB8M0) : null,
@@ -28,8 +28,8 @@ function m(e) {
         },
         cancel: {
             label: u.intl.string(u.t.twFU3R),
-            subtext: _ ? null : u.intl.string(u.t.oQ9lOh),
-            disabled: !_
+            subtext: g ? null : u.intl.string(u.t.oQ9lOh),
+            disabled: !g
         },
         uncancel: {
             label: u.intl.string(u.t["2glQNp"]),
@@ -37,15 +37,15 @@ function m(e) {
             disabled: !1
         }
     };
-    switch (g.status) {
+    switch (_.status) {
         case d.Dmq.PAST_DUE:
-            p.cancel.disabled = !0, p.cancel.subtext = u.intl.string(u.t.WnL6DV), p.uncancel.disabled = !0;
+            h.cancel.disabled = !0, h.cancel.subtext = u.intl.string(u.t.WnL6DV), h.uncancel.disabled = !0;
             break;
         case d.Dmq.PAUSE_PENDING:
         case d.Dmq.PAUSED:
-            x === c.xc.NONE && (p.transfer.disabled = !0, p.transfer.subtext = u.intl.string(u.t.LiLRRT), p.cancel.subtext = u.intl.string(u.t["1ywaWL"]), p.cancel.disabled = !0, p.uncancel.disabled = !0)
+            A === c.xc.NONE && (h.transfer.disabled = !0, h.transfer.subtext = u.intl.string(u.t.LiLRRT), h.cancel.subtext = u.intl.string(u.t["1ywaWL"]), h.cancel.disabled = !0, h.uncancel.disabled = !0)
     }
-    let h = s.useMemo(() => g.isPausedOrPausePending && x === c.xc.NONE ? (0, i.jsx)(l.Drp, {
+    let p = s.useMemo(() => _.isPausedOrPausePending && A === c.xc.NONE ? (0, i.jsx)(l.Drp, {
         id: "manage-subscription",
         label: u.intl.string(u.t.obRG6Y),
         action: () => (0, r.openUserSettings)(a.X.SUBSCRIPTIONS_PANEL),
@@ -54,18 +54,18 @@ function m(e) {
             type: "icon",
             icon: l.xmO
         }
-    }) : null, [x, g]);
+    }) : null, [A, _]);
     return (0, i.jsxs)(l.W1t, {
         "data-menu-migrated-auto": !0,
-        onSelect: A,
+        onSelect: x,
         navId: "subscription-context",
         variant: "fixed",
         "aria-label": u.intl.string(u.t.ogxXGq),
         onClose: m,
         children: [(0, i.jsx)(l.Drp, {
             id: "apply",
-            label: p.transfer.label,
-            subtext: p.transfer.subtext,
+            label: h.transfer.label,
+            subtext: h.transfer.subtext,
             action: function() {
                 (0, l.mMO)(async () => {
                     let {
@@ -78,11 +78,11 @@ function m(e) {
                     })
                 })
             },
-            disabled: p.transfer.disabled
+            disabled: h.transfer.disabled
         }), (0, o.I5)(t) ? (0, i.jsx)(l.Drp, {
             id: "uncancel",
-            label: p.uncancel.label,
-            subtext: p.uncancel.subtext,
+            label: h.uncancel.label,
+            subtext: h.uncancel.subtext,
             action: function() {
                 (0, l.mMO)(async () => {
                     let {
@@ -94,11 +94,11 @@ function m(e) {
                     })
                 })
             },
-            disabled: p.uncancel.disabled
+            disabled: h.uncancel.disabled
         }) : (0, i.jsx)(l.Drp, {
             id: "cancel",
-            label: p.cancel.label,
-            subtext: p.cancel.subtext,
+            label: h.cancel.label,
+            subtext: h.cancel.subtext,
             action: function() {
                 (0, l.mMO)(async () => {
                     let {
@@ -110,8 +110,8 @@ function m(e) {
                     })
                 })
             },
-            disabled: p.cancel.disabled,
+            disabled: h.cancel.disabled,
             color: "danger"
-        }), h]
+        }), p]
     })
 }

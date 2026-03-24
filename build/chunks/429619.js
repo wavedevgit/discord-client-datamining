@@ -1,6 +1,6 @@
 /** chunk id: 429619 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -12,52 +12,52 @@ var i = n(627968),
     c = n(979286),
     u = n(492499),
     m = n(652215),
-    _ = n(788868),
-    g = n(985018),
-    A = n(844551);
-let x = () => {
+    g = n(788868),
+    _ = n(985018),
+    x = n(844551);
+let A = () => {
     let {
         analyticsLocations: e
     } = (0, r.Ay)(a.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL), t = s.useRef(null), {
         asset: n,
-        popoutAsset: x,
-        title: p,
-        body: h,
+        popoutAsset: A,
+        title: h,
+        body: p,
         version: f,
         revertTextColor: T
     } = (0, u.M)(), E = s.useContext(o.gl), S = E?.navigateWithValidation ?? (e => e());
     return s.useEffect(() => {
         d.default.track(m.HAw.PREMIUM_UPSELL_VIEWED, {
-            type: _.e.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
+            type: g.e.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
             location_stack: e,
             version: f
         })
     }, [e, f]), (0, i.jsxs)("div", {
         ref: t,
-        className: A.kL,
+        className: x.kL,
         style: {
             backgroundImage: `url(${n})`
         },
         children: [(0, i.jsx)("div", {
-            className: A.JS,
+            className: x.JS,
             "aria-hidden": !0,
             role: "presentation",
             children: (0, i.jsx)("img", {
-                src: x,
-                className: A.Qw,
+                src: A,
+                className: x.Qw,
                 alt: ""
             })
         }), (0, i.jsxs)("div", {
-            className: A.Em,
+            className: x.Em,
             children: [(0, i.jsx)(l.Heading, {
                 variant: "heading-lg/extrabold",
                 color: T ? "text-overlay-dark" : "currentColor",
-                className: A.DD,
-                children: p
+                className: x.DD,
+                children: h
             }), (0, i.jsx)(l.Text, {
                 variant: "text-sm/normal",
                 color: T ? "text-overlay-dark" : "currentColor",
-                children: h
+                children: p
             })]
         }), (0, i.jsx)(l.Button, {
             onClick: () => {
@@ -67,7 +67,7 @@ let x = () => {
                 }))
             },
             variant: "overlay-primary",
-            text: g.intl.string(g.t.fYfGgK)
+            text: _.intl.string(_.t.fYfGgK)
         })]
     })
 }

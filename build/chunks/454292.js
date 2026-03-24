@@ -12,12 +12,12 @@ var i = n(627968),
     c = n(775602),
     u = n(725951),
     m = n(400492),
-    _ = n(841329),
-    g = n(12901),
-    A = n(115063),
-    x = n(414736),
-    p = n(927018),
-    h = n(928830),
+    g = n(841329),
+    _ = n(12901),
+    x = n(115063),
+    A = n(414736),
+    h = n(927018),
+    p = n(928830),
     f = n(3137),
     T = n(301656),
     E = n(224964),
@@ -86,7 +86,7 @@ function P(e) {
         description: b.intl.string(b.t.KuYbWN),
         checked: t,
         onChange: e => {
-            e || (0, x._)(p.sn.DISABLE_POGGERMODE), e && (!n || l) ? (0, o.A)({
+            e || (0, A._)(h.sn.DISABLE_POGGERMODE), e && (!n || l) ? (0, o.A)({
                 title: l ? b.intl.string(b.t["FxT+p0"]) : b.intl.string(b.t.TAZ4F9),
                 subtitle: l ? b.intl.string(b.t.gmixrx) : b.intl.string(b.t.jN3t3K),
                 confirmText: b.intl.string(b.t.JFfins),
@@ -281,7 +281,7 @@ function M(e) {
                     var t;
                     null != (t = {
                         shakeIntensity: e
-                    }).shakeIntensity && t.shakeIntensity > s && (0, x._)(p.sn.MORE), r(t, 1)
+                    }).shakeIntensity && t.shakeIntensity > s && (0, A._)(h.sn.MORE), r(t, 1)
                 },
                 onMarkerRender: e => e === I[I.length - 1] ? b.intl.string(b.t["4rbMWc"]) : `${100*e}%`
             })]
@@ -308,7 +308,7 @@ function M(e) {
     })
 }
 
-function k(e) {
+function U(e) {
     let {
         updateSettings: t
     } = e;
@@ -329,7 +329,7 @@ function k(e) {
                         t({
                             enabled: !1,
                             settingsVisible: !1
-                        }), (0, g.default)()
+                        }), (0, _.default)()
                     }
                 })
             })]
@@ -337,7 +337,7 @@ function k(e) {
     })
 }
 
-function U(e) {
+function k(e) {
     let {
         onChangePage: t
     } = e;
@@ -384,32 +384,32 @@ function V(e) {
         x: 0,
         y: 0
     }), c = (0, E.A)(), u = (e, t) => {
-        var i, s, a, o, d, u, _, g;
-        if (e.enabled && !1 === l.enabled && (n(!0), (0, m.Ak)("poggermode_enabled"), (0, A.fO)({
+        var i, s, a, o, d, u, g, _;
+        if (e.enabled && !1 === l.enabled && (n(!0), (0, m.Ak)("poggermode_enabled"), (0, x.fO)({
                 duration: 2e3,
                 intensity: e.shakeIntensity ?? l.shakeIntensity
-            })), (0, h.O9)(e), null == t) return;
-        let x = (i = l.confettiEnabled, s = e.confettiEnabled, a = l.enabled, o = e.enabled, (s ?? i) && (o ?? a));
-        0 === t && x && c.fire(r.x, r.y, {
+            })), (0, p.O9)(e), null == t) return;
+        let A = (i = l.confettiEnabled, s = e.confettiEnabled, a = l.enabled, o = e.enabled, (s ?? i) && (o ?? a));
+        0 === t && A && c.fire(r.x, r.y, {
             settings: e
         });
-        let p = (d = l.screenshakeEnabled, u = e.screenshakeEnabled, _ = l.enabled, g = e.enabled, (u ?? d) && (g ?? _));
-        1 === t && p && (0, A.fO)({
+        let h = (d = l.screenshakeEnabled, u = e.screenshakeEnabled, g = l.enabled, _ = e.enabled, (u ?? d) && (_ ?? g));
+        1 === t && h && (0, x.fO)({
             duration: 1e3,
             intensity: e.shakeIntensity ?? l.shakeIntensity
         })
-    }, _ = e => {
+    }, g = e => {
         o({
             x: e.clientX,
             y: e.clientY
         })
     };
-    return s.useEffect(() => (window.addEventListener("mousemove", _), () => window.removeEventListener("mousemove", _)), []), (0, i.jsxs)(d.BJc, {
+    return s.useEffect(() => (window.addEventListener("mousemove", g), () => window.removeEventListener("mousemove", g)), []), (0, i.jsxs)(d.BJc, {
         gap: 24,
         children: [(0, i.jsx)(P, {
             settings: l,
             updateSettings: u
-        }), (0, i.jsx)(U, {
+        }), (0, i.jsx)(k, {
             onChangePage: t
         }), (0, i.jsx)(G, {
             settings: l,
@@ -420,7 +420,7 @@ function V(e) {
         }), (0, i.jsx)(D, {
             settings: l,
             updateSettings: u
-        }), (0, i.jsx)(k, {
+        }), (0, i.jsx)(U, {
             updateSettings: u
         })]
     })
@@ -428,16 +428,16 @@ function V(e) {
 let B = e => 0 === e ? u.f.LEFT : u.f.RIGHT;
 
 function F() {
-    let [e, t] = s.useState(0), [n, l] = s.useState(B(e)), [r, o] = s.useState(!1), m = (0, a.bG)([c.A], () => c.A.useReducedMotion), g = r && !m;
+    let [e, t] = s.useState(0), [n, l] = s.useState(B(e)), [r, o] = s.useState(!1), m = (0, a.bG)([c.A], () => c.A.useReducedMotion), _ = r && !m;
     return s.useEffect(() => {
         let t = setTimeout(() => {
             l(B(e))
         }, 500);
         return () => clearTimeout(t)
     }, [e]), s.useEffect(() => {
-        (0, _._)(O[e])
+        (0, g._)(O[e])
     }, [e]), s.useEffect(() => {
-        Math.random() > .99 && (0, x._)(p.sn.VISITOR_100)
+        Math.random() > .99 && (0, A._)(h.sn.VISITOR_100)
     }, []), (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(u.A, {
             className: C.l3,
@@ -462,11 +462,11 @@ function F() {
                 }
             })(e, t, o)
         }), (0, i.jsx)("div", {
-            className: g ? C.Sr : C.IP,
+            className: _ ? C.Sr : C.IP,
             children: (0, i.jsx)(d.akl, {
                 className: C.gT,
                 importData: w,
-                shouldAnimate: g,
+                shouldAnimate: _,
                 autoplay: !1,
                 resetOnPlay: !0,
                 loop: !1,

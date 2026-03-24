@@ -12,12 +12,12 @@ var i = n(627968),
     c = n(688810),
     u = n(927578),
     m = n(580630),
-    _ = n(422936),
-    g = n(234419),
-    A = n(511484),
-    x = n(356309),
-    p = n(121304),
-    h = n(788868),
+    g = n(422936),
+    _ = n(234419),
+    x = n(511484),
+    A = n(356309),
+    h = n(121304),
+    p = n(788868),
     f = n(985018),
     T = n(870143),
     E = n(115292),
@@ -103,7 +103,7 @@ let b = e => {
         let {
             premiumType: t,
             priceString: n
-        } = e, s = t === h.PremiumTypes.TIER_0 ? f.intl.string(f.t.tUbSDK) : f.intl.string(f.t.Ipxkog);
+        } = e, s = t === p.PremiumTypes.TIER_0 ? f.intl.string(f.t.tUbSDK) : f.intl.string(f.t.Ipxkog);
         return (0, i.jsxs)("div", {
             className: T.nn,
             children: [(0, i.jsxs)("div", {
@@ -141,14 +141,14 @@ let b = e => {
                     scope: "col",
                     className: T.Hn,
                     children: (0, i.jsx)(v, {
-                        premiumType: h.PremiumTypes.TIER_0,
+                        premiumType: p.PremiumTypes.TIER_0,
                         priceString: (0, m.$g)(t.amount, t.currency)
                     })
                 }), (0, i.jsx)("th", {
                     scope: "col",
                     className: T.Hn,
                     children: (0, i.jsx)(v, {
-                        premiumType: h.PremiumTypes.TIER_2,
+                        premiumType: p.PremiumTypes.TIER_2,
                         priceString: a
                     })
                 })]
@@ -159,29 +159,29 @@ let b = e => {
         let t, {
                 className: n,
                 hidePill: l = !1,
-                selectedPlanTier: r = h.PremiumTypes.TIER_2
+                selectedPlanTier: r = p.PremiumTypes.TIER_2
             } = e,
             {
                 analyticsLocations: m
             } = (0, c.Ay)(d.A.PREMIUM_MARKETING_PLAN_COMPARISON),
-            b = (0, g.V)(),
+            b = (0, _.V)(),
             C = b?.subscription_trial?.sku_id,
-            v = (0, _.O)(),
-            j = null != v && (0, A.U9)(v, h.pe.TIER_2),
-            y = (0, A.N1)(h.gD.PREMIUM_MONTH_TIER_2),
-            O = `${y}/${(0,u.FJ)(h.WT.MONTH)}`,
-            R = (0, u.JM)(h.gD.PREMIUM_MONTH_TIER_0),
-            L = (0, u.JM)(h.gD.PREMIUM_MONTH_TIER_2),
-            P = (0, p.g)();
+            v = (0, g.O)(),
+            j = null != v && (0, x.U9)(v, p.pe.TIER_2),
+            y = (0, x.N1)(p.gD.PREMIUM_MONTH_TIER_2),
+            O = `${y}/${(0,u.FJ)(p.WT.MONTH)}`,
+            R = (0, u.JM)(p.gD.PREMIUM_MONTH_TIER_0),
+            L = (0, u.JM)(p.gD.PREMIUM_MONTH_TIER_2),
+            P = (0, h.g)();
         if (l) t = null;
         else {
             let e = null != b ? f.intl.string(f.t.IBYG5U) : f.intl.string(f.t.TR2B4T);
-            t = (0, i.jsx)(x.D, {
+            t = (0, i.jsx)(A.D, {
                 className: a()(T.Io, T.SP),
                 text: e
             })
         }
-        let D = C === h.pe.TIER_0 || r === h.PremiumTypes.TIER_0;
+        let D = C === p.pe.TIER_0 || r === p.PremiumTypes.TIER_0;
         return (0, i.jsx)(c.f5, {
             value: m,
             children: (0, i.jsxs)("div", {

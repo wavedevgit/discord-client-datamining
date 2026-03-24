@@ -12,12 +12,12 @@ var i = n(627968),
     c = n(974544),
     u = n(351906),
     m = n(823092),
-    _ = n(963935),
-    g = n(894858),
-    A = n(272053),
-    x = n(397274),
-    p = n(641324),
-    h = n(46373),
+    g = n(963935),
+    _ = n(894858),
+    x = n(272053),
+    A = n(397274),
+    h = n(641324),
+    p = n(46373),
     f = n(872175);
 
 function T(e) {
@@ -80,7 +80,7 @@ function S(e) {
         children: (0, i.jsx)(d.GtU, {
             className: f.XG,
             ref: e => {
-                x.A.setPanelScrollerRef(e)
+                A.A.setPanelScrollerRef(e)
             },
             children: (0, i.jsx)("div", {
                 className: f.nd,
@@ -104,9 +104,9 @@ function b(e) {
         children: [null != n && (0, i.jsx)(E, {
             decoration: n
         }), t.map((e, n) => (0, i.jsxs)(s.Fragment, {
-            children: [(0, i.jsx)(p.A, {
+            children: [(0, i.jsx)(h.A, {
                 node: e
-            }), n !== t.length - 1 && (0, i.jsx)(h.A, {
+            }), n !== t.length - 1 && (0, i.jsx)(p.A, {
                 className: f.yF
             })]
         }, e.key))]
@@ -119,17 +119,17 @@ function C(e) {
         layout: n,
         notice: l,
         decoration: a
-    } = e, r = g.A.useState(e => {
+    } = e, r = _.A.useState(e => {
         let {
             currentTabKeys: n
         } = e;
         return n.get(t)
     }) ?? n[0].key;
     s.useEffect(() => {
-        let e = g.A.getField("currentTabKeys");
+        let e = _.A.getField("currentTabKeys");
         if (n.some(n => n.key === e.get(t))) return;
         let i = new Map(e);
-        i.set(t, n[0].key), g.A.setState({
+        i.set(t, n[0].key), _.A.setState({
             currentTabKeys: i
         })
     }, [n, t]);
@@ -141,7 +141,7 @@ function C(e) {
             className: f.$H,
             selectedItem: r,
             onItemSelect: e => {
-                A.A.navigate(e, {
+                x.A.navigate(e, {
                     onTransitionStart: () => {
                         let t = n.find(t => t.key === e);
                         t?.onItemSelect?.()
@@ -195,13 +195,13 @@ function v(e) {
         layout: n
     } = t;
     if ((0, r.bG)([u.A], () => u.A.hidePersonalInformation) && t.hideInStreamerMode) return (0, i.jsx)(c.A, {});
-    if ((0, _.zY)(n)) return (0, i.jsx)(C, {
+    if ((0, g.zY)(n)) return (0, i.jsx)(C, {
         panelKey: t.key,
         notice: t.notice,
         decoration: t.decoration,
         layout: n
     });
-    if ((0, _.Iu)(n)) return (0, i.jsx)(N, {
+    if ((0, g.Iu)(n)) return (0, i.jsx)(N, {
         panelKey: t.key,
         notice: t.notice,
         decoration: t.decoration,

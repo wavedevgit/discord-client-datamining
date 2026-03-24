@@ -12,18 +12,18 @@ var i = n(627968),
     c = n(384904),
     u = n(923408),
     m = n(73825),
-    _ = n(160946),
-    g = n(178929),
-    A = n(859241),
-    x = n(295405),
-    p = n(166403),
-    h = n(653183),
+    g = n(160946),
+    _ = n(178929),
+    x = n(859241),
+    A = n(295405),
+    h = n(166403),
+    p = n(653183),
     f = n(843838),
     T = n(652215),
     E = n(417711);
 
 function S() {
-    let e = (0, g.j)("UserSettingsPremiumGuildSubscriptions");
+    let e = (0, _.j)("UserSettingsPremiumGuildSubscriptions");
     s.useEffect(() => {
         d.h.wait(() => {
             c.hP(), c.$o(), (0, u.CD)(), (0, m.zS)(null, null, T.tF5.DISCOVERY), (0, u.tO)(!0)
@@ -32,10 +32,10 @@ function S() {
     let {
         hasFetchedSubscriptions: t,
         premiumSubscription: n
-    } = (0, r.cf)([p.A], () => ({
-        hasFetchedSubscriptions: p.A.hasFetchedSubscriptions(),
-        premiumSubscription: p.A.getPremiumTypeSubscription()
-    })), l = (0, _.Y)(), S = (0, r.bG)([x.A], () => x.A.hasFetchedPaymentSources), b = (0, r.bG)([A.A], () => A.A.isFetchingCurrentUserAppliedBoosts);
+    } = (0, r.cf)([h.A], () => ({
+        hasFetchedSubscriptions: h.A.hasFetchedSubscriptions(),
+        premiumSubscription: h.A.getPremiumTypeSubscription()
+    })), l = (0, g.Y)(), S = (0, r.bG)([A.A], () => A.A.hasFetchedPaymentSources), b = (0, r.bG)([x.A], () => x.A.isFetchingCurrentUserAppliedBoosts);
     return t && l && S && !b ? (0, i.jsxs)("div", {
         className: E.kL,
         children: [(0, i.jsx)("div", {
@@ -44,7 +44,7 @@ function S() {
             className: E.Qs,
             children: e ? (0, i.jsx)(f.A, {
                 premiumSubscription: n
-            }) : (0, i.jsx)(h.A, {
+            }) : (0, i.jsx)(p.A, {
                 premiumSubscription: n
             })
         })]

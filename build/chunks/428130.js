@@ -16,12 +16,12 @@ var i = n(627968),
     c = n(775602),
     u = n(141468),
     m = n(963852),
-    _ = n(763754),
-    g = n(20851),
-    A = n(544028),
-    x = n(253932),
-    p = n(780964),
-    h = n(840065),
+    g = n(763754),
+    _ = n(20851),
+    x = n(544028),
+    A = n(253932),
+    h = n(780964),
+    p = n(840065),
     f = n(123857),
     T = n(652215),
     E = n(381941),
@@ -88,41 +88,41 @@ let N = {
     }),
     y = () => S.intl.format(S.t.Jae48E, {
         onClick: () => {
-            (0, h.openUserSettings)(p.X.SYNC_FORCED_COLORS)
+            (0, p.openUserSettings)(h.X.SYNC_FORCED_COLORS)
         }
     }),
     O = () => S.intl.format(S.t["5LEQdc"], {
         onAccessibilityClick: () => {
-            (0, h.openUserSettings)(p.X.ACCESSIBILITY_PANEL)
+            (0, p.openUserSettings)(h.X.ACCESSIBILITY_PANEL)
         }
     }),
     R = () => {
-        let e = x.hH.useSetting(),
-            t = x.hD.useSetting(),
-            n = x.rs.useSetting(),
+        let e = A.hH.useSetting(),
+            t = A.hD.useSetting(),
+            n = A.rs.useSetting(),
             {
                 theme: l,
                 messageGroupSpacing: u
-            } = (0, r.cf)([A.A, c.A], () => ({
-                theme: A.A.theme,
+            } = (0, r.cf)([x.A, c.A], () => ({
+                theme: x.A.theme,
                 messageGroupSpacing: c.A.messageGroupSpacing
             })),
             [m] = s.useState(() => I(T.NJ8.DARK)),
-            [p] = s.useState(() => I(T.NJ8.LIGHT)),
-            h = t && n,
-            f = (0, o.Mw)(l) ? m : p;
+            [h] = s.useState(() => I(T.NJ8.LIGHT)),
+            p = t && n,
+            f = (0, o.Mw)(l) ? m : h;
         return (0, i.jsx)(d.M1G, {
             children: (0, i.jsx)(d.ZpM, {
                 className: a()(b.VH, C.C2, e ? b.Me : void 0, `group-spacing-${null!=u?u:e?E.y5:E.ES}`),
                 outline: !0,
                 "aria-hidden": !0,
-                children: f.map((t, n) => (0, i.jsx)(g.A, {
-                    author: (0, _.p_)(t),
+                children: f.map((t, n) => (0, i.jsx)(_.A, {
+                    author: (0, g.p_)(t),
                     message: t,
                     compact: e,
                     isGroupStart: n % 2 == 0,
                     className: 0 === n ? b.Ck : void 0,
-                    hideSimpleEmbedContent: h
+                    hideSimpleEmbedContent: p
                 }, t.id))
             })
         })

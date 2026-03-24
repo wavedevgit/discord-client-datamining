@@ -12,15 +12,15 @@ var i = n(627968),
     c = n(763754),
     u = n(20851),
     m = n(95701),
-    _ = n(486020),
-    g = n(253932),
-    A = n(652215),
-    x = n(985018),
-    p = n(709214);
-let h = new m.nA({
+    g = n(486020),
+    _ = n(253932),
+    x = n(652215),
+    A = n(985018),
+    h = n(709214);
+let p = new m.nA({
         id: "1337",
         guild_id: "1337",
-        type: A.rbe.GUILD_TEXT,
+        type: x.rbe.GUILD_TEXT,
         name: "preview"
     }),
     f = [{
@@ -39,18 +39,18 @@ function T(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [];
     return (0, o.rh)({
         ...(0, d.Ay)({
-            channelId: h.id,
+            channelId: p.id,
             content: e
         }),
-        state: A.cmJ.SENT,
+        state: x.cmJ.SENT,
         reactions: t
     })
 }
 
 function E() {
-    let e = g.hH.useSetting(),
-        t = g.jW.useSetting(),
-        n = s.useMemo(() => [T(x.intl.formatToPlainString(x.t.BknJRT, {}), t ? [{
+    let e = _.hH.useSetting(),
+        t = _.jW.useSetting(),
+        n = s.useMemo(() => [T(A.intl.formatToPlainString(A.t.BknJRT, {}), t ? [{
             emoji: {
                 id: null,
                 name: "\uD83E\uDD40",
@@ -70,27 +70,27 @@ function E() {
             count: 1,
             me_burst: !1,
             burst_count: 0
-        }] : []), T(x.intl.formatToPlainString(x.t["4rDfgM"], {}))], [t]),
+        }] : []), T(A.intl.formatToPlainString(A.t["4rDfgM"], {}))], [t]),
         o = (0, l.bG)([r.A], () => r.A.messageGroupSpacing);
     return (0, i.jsx)(a.M1G, {
         children: (0, i.jsxs)("section", {
             children: [(0, i.jsx)(a.Heading, {
                 variant: "text-md/medium",
                 color: "text-muted",
-                className: p.Vf,
-                children: x.intl.string(x.t.RC22qg)
+                className: h.Vf,
+                children: A.intl.string(A.t.RC22qg)
             }), (0, i.jsxs)(a.IpV, {
-                className: p.VH,
+                className: h.VH,
                 children: [(0, i.jsx)("ol", {
-                    className: p.DZ,
+                    className: h.DZ,
                     style: {
                         gap: o
                     },
-                    "aria-label": x.intl.string(x.t.xfjsEV),
+                    "aria-label": A.intl.string(A.t.xfjsEV),
                     children: n.map(t => (0, i.jsx)("li", {
                         children: (0, i.jsx)(u.A, {
                             message: t,
-                            channel: h,
+                            channel: p,
                             compact: e,
                             author: {
                                 ...(0, c.p_)(t),
@@ -99,9 +99,9 @@ function E() {
                         })
                     }, t.id))
                 }), (0, i.jsxs)("div", {
-                    className: p.Jb,
+                    className: h.Jb,
                     children: [(0, i.jsx)("div", {
-                        className: p.HD,
+                        className: h.HD,
                         children: f.map(e => {
                             let {
                                 status: t,
@@ -112,12 +112,12 @@ function E() {
                                 status: t,
                                 isMobile: s,
                                 size: a._3J.SIZE_32,
-                                src: _.Ay.getDefaultAvatarURL(void 0, n),
-                                "aria-label": x.intl.string(x.t.VKE5TK)
+                                src: g.Ay.getDefaultAvatarURL(void 0, n),
+                                "aria-label": A.intl.string(A.t.VKE5TK)
                             }, t)
                         })
                     }), (0, i.jsx)(a.Button, {
-                        text: x.intl.string(x.t["2RHHgz"]),
+                        text: A.intl.string(A.t["2RHHgz"]),
                         size: "sm",
                         variant: "primary"
                     })]

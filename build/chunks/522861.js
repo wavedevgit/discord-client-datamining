@@ -13,35 +13,35 @@ var i = n(627968),
     c = n(730134),
     u = n(793574),
     m = n(994500),
-    _ = n(287809);
+    g = n(287809);
 n(975571);
-var g = n(106148);
+var _ = n(106148);
 n(652215);
-var A = n(985018),
-    x = n(762765);
+var x = n(985018),
+    A = n(762765);
 
-function p(e) {
+function h(e) {
     let {
         listType: t,
         numberOfUsers: n
     } = e, s = "blocked" === t;
     return (0, i.jsxs)("div", {
-        className: x.wx,
+        className: A.wx,
         children: [(0, i.jsx)("div", {
-            className: x.zc,
+            className: A.zc,
             children: s ? (0, i.jsx)(o.KTN, {}) : (0, i.jsx)(o.G3N, {})
         }), (0, i.jsxs)("div", {
-            className: x.Qq,
+            className: A.Qq,
             children: [(0, i.jsx)(o.Text, {
                 variant: "text-md/semibold",
                 color: "interactive-text-active",
-                children: A.intl.string(s ? A.t.PFOUKW : A.t["93ZDWE"])
+                children: x.intl.string(s ? x.t.PFOUKW : x.t["93ZDWE"])
             }), (0, i.jsx)(o.Text, {
                 variant: "text-md/medium",
                 color: "text-default",
-                children: s ? A.intl.format(A.t["r91W/h"], {
+                children: s ? x.intl.format(x.t["r91W/h"], {
                     numberOfBlockedUsers: n
-                }) : A.intl.format(A.t.rXUeOl, {
+                }) : x.intl.format(x.t.rXUeOl, {
                     numberOfIgnoredUsers: n
                 })
             })]
@@ -49,43 +49,43 @@ function p(e) {
     })
 }
 
-function h(e) {
+function p(e) {
     let {
         userId: t,
         last: n
-    } = e, l = (0, r.bG)([m.A], () => m.A.isBlocked(t)), g = (0, r.bG)([_.default], () => _.default.getUser(t)), [p, h] = s.useState(!1), f = s.useCallback(() => {
-        h(!0), l ? d.A.unblockUser(t).catch(() => {
-            h(!1)
+    } = e, l = (0, r.bG)([m.A], () => m.A.isBlocked(t)), _ = (0, r.bG)([g.default], () => g.default.getUser(t)), [h, p] = s.useState(!1), f = s.useCallback(() => {
+        p(!0), l ? d.A.unblockUser(t).catch(() => {
+            p(!1)
         }) : d.A.unignoreUser(t, u.A.USER_SETTINGS).catch(() => {
-            h(!1)
+            p(!1)
         })
     }, [l, t]);
-    return null == g ? null : (0, i.jsxs)("div", {
-        className: a()(x.nM, {
-            [x.fW]: n
+    return null == _ ? null : (0, i.jsxs)("div", {
+        className: a()(A.nM, {
+            [A.fW]: n
         }),
         children: [(0, i.jsxs)("div", {
-            className: x.eF,
+            className: A.eF,
             children: [(0, i.jsx)(c.A, {
-                user: g,
+                user: _,
                 size: o._3J.SIZE_40
             }), (0, i.jsxs)("div", {
-                className: x.Qq,
+                className: A.Qq,
                 children: [(0, i.jsx)(o.Text, {
                     variant: "text-md/semibold",
                     color: "text-strong",
-                    children: g.globalName ?? g.username
+                    children: _.globalName ?? _.username
                 }), (0, i.jsx)(o.Text, {
                     variant: "text-sm/medium",
                     color: "text-default",
-                    children: null != g.globalName ? g.username : null
+                    children: null != _.globalName ? _.username : null
                 })]
             })]
         }), (0, i.jsx)(o.Button, {
             variant: "secondary",
-            text: A.intl.string(l ? A.t.XyHpKH : A.t["8wXU9B"]),
+            text: x.intl.string(l ? x.t.XyHpKH : x.t["8wXU9B"]),
             onClick: f,
-            loading: p
+            loading: h
         })]
     })
 }
@@ -95,29 +95,29 @@ function f(e) {
         userIds: t,
         listType: n
     } = e, [l, a] = s.useState(5);
-    return (0, i.jsx)(g.h, {
+    return (0, i.jsx)(_.h, {
         children: (0, i.jsxs)("div", {
-            className: x.Nr,
-            children: [(0, i.jsx)(p, {
+            className: A.Nr,
+            children: [(0, i.jsx)(h, {
                 listType: n,
                 numberOfUsers: t.length
             }), (0, i.jsx)("div", {
-                className: x.jS,
-                children: t.slice(0, l).map((e, n) => (0, i.jsx)(h, {
+                className: A.jS,
+                children: t.slice(0, l).map((e, n) => (0, i.jsx)(p, {
                     userId: e,
                     last: n === t.length - 1
                 }, e))
             }), l < t.length ? (0, i.jsx)("div", {
-                className: x.vM,
+                className: A.vM,
                 children: (0, i.jsx)(o.DUT, {
                     onClick: () => {
                         a(e => e + 5)
                     },
-                    className: x.Qf,
+                    className: A.Qf,
                     children: (0, i.jsx)(o.Text, {
                         variant: "text-sm/semibold",
                         color: "text-default",
-                        children: A.intl.format(A.t.jULEDr, {
+                        children: x.intl.format(x.t.jULEDr, {
                             numberOfUsers: l + 5 < t.length ? 5 : t.length - l
                         })
                     })

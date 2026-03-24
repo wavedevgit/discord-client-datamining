@@ -14,14 +14,14 @@ var a = n(627968),
     u = n(37948),
     m = n(985018),
     x = n(851822),
-    _ = n(307291);
+    h = n(307291);
 let f = [s.V.OFFICIAL, s.V.TWITTER, s.V.YOUTUBE],
     g = {
-        colorClass: _.wP
+        colorClass: h.wP
     },
-    h = {
+    _ = {
         size: "xs",
-        colorClass: _.wP
+        colorClass: h.wP
     };
 
 function p(e, t) {
@@ -94,7 +94,7 @@ function v(e) {
             onClick: () => {
                 n(l)
             },
-            className: _.yO,
+            className: h.yO,
             href: t.url,
             target: "_blank",
             "aria-label": r,
@@ -138,14 +138,14 @@ function j(e) {
         action: r,
         icon: s,
         title: d
-    } = p(t, h), m = l.useCallback(() => {
+    } = p(t, _), m = l.useCallback(() => {
         n(r), i(t.url)
     }, [r, i, n, t.url]);
     return (0, a.jsx)(o.m, {
         text: d,
         children: (0, a.jsx)(c.DUT, {
             onClick: m,
-            className: _.yO,
+            className: h.yO,
             title: d,
             children: s
         })

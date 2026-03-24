@@ -1,6 +1,6 @@
 /** chunk id: 189024 params = (module,exports,require) **/
 n.d(t, {
-    A: () => k
+    A: () => U
 });
 var i = n(627968),
     s = n(64700),
@@ -12,12 +12,12 @@ var i = n(627968),
     c = n(688810),
     u = n(954921),
     m = n(793943),
-    _ = n(259065),
-    g = n(95035),
-    A = n(532794),
-    x = n(780964),
-    p = n(358776),
-    h = n(840065),
+    g = n(259065),
+    _ = n(95035),
+    x = n(532794),
+    A = n(780964),
+    h = n(358776),
+    p = n(840065),
     f = n(166403),
     T = n(730784),
     E = n(398523),
@@ -37,32 +37,32 @@ var i = n(627968),
     G = n(893160),
     M = n(509442);
 
-function k() {
+function U() {
     let {
         analyticsLocations: e
-    } = (0, c.Ay)(d.A.PREMIUM_MARKETING_PERK_CARD), t = (0, S.O9)(), k = (0, T.R)({
+    } = (0, c.Ay)(d.A.PREMIUM_MARKETING_PERK_CARD), t = (0, S.O9)(), U = (0, T.R)({
         location: "PremiumWhatsNewSection"
-    }), U = E.A.useExperiment({
+    }), k = E.A.useExperiment({
         location: "PremiumWhatsNewSection"
     }).enabled, w = (0, a.bG)([f.A], () => f.A.getPremiumTypeSubscription()), V = w?.hasActiveTrial ?? !1, B = (0, s.useCallback)(() => {
-        (0, h.openUserSettings)(x.X.PROFILE_PANEL, {
+        (0, p.openUserSettings)(A.X.PROFILE_PANEL, {
             analyticsLocations: e
-        }, () => (0, _.L)({
+        }, () => (0, g.L)({
             analyticsLocations: e
         }))
     }, [e]), F = (0, s.useCallback)(() => {
-        (0, h.openUserSettings)(x.X.PROFILE_PANEL, {
+        (0, p.openUserSettings)(A.X.PROFILE_PANEL, {
             analyticsLocations: e
         }, () => (0, u.L)({
             analyticsLocations: e
         }))
     }, [e]), H = (0, s.useCallback)(() => {
-        let e = (0, p.Ci)("openCustomAppSettings") ? x.X.DISPLAY_IN_APP_ICON_CATEGORY : x.X.APPEARANCE_IN_APP_ICON;
-        (0, h.openUserSettings)(e)
+        let e = (0, h.Ci)("openCustomAppSettings") ? A.X.DISPLAY_IN_APP_ICON_CATEGORY : A.X.APPEARANCE_IN_APP_ICON;
+        (0, p.openUserSettings)(e)
     }, []), z = () => {
         (0, o.A)(I.TE)
     }, Y = (0, s.useCallback)(() => {
-        if (k) {
+        if (U) {
             if (V) return void(0, r.mMO)(async () => {
                 let {
                     default: e
@@ -71,7 +71,7 @@ function k() {
                     ...t
                 })
             });
-            (0, A.A)({
+            (0, x.A)({
                 subscriptionTier: v.pe.TIER_2,
                 initialPlanId: v.gD.PREMIUM_GROUP_MONTH,
                 analyticsLocations: e
@@ -84,9 +84,9 @@ function k() {
                 ...t
             })
         })
-    }, [k, e, V]), X = (0, N.A)(e), {
-        currentDate: W,
-        nDaysInMonth: K
+    }, [U, e, V]), X = (0, N.A)(e), {
+        currentDate: K,
+        nDaysInMonth: W
     } = (0, s.useMemo)(() => {
         let e = new Date;
         return {
@@ -104,7 +104,7 @@ function k() {
                         premiumGroupProductName: (0, I.DP)()
                     }), (0, i.jsx)("div", {
                         className: O.LF,
-                        children: (0, i.jsx)(g.A, {
+                        children: (0, i.jsx)(_.A, {
                             onClick: z,
                             children: y.intl.string(j.default.yYyGJH)
                         })
@@ -112,13 +112,13 @@ function k() {
                 }),
                 pillText: y.intl.string(y.t.oW0eUd),
                 primaryAsset: L,
-                ...k ? {
+                ...U ? {
                     ctaIcon: r.tvc,
                     ctaIconPosition: "start"
                 } : {},
-                ctaText: y.intl.string(k ? y.t.IJI7yk : y.t.jVcuVY),
+                ctaText: y.intl.string(U ? y.t.IJI7yk : y.t.jVcuVY),
                 onCtaClick: Y
-            } : null, U ? {
+            } : null, k ? {
                 id: C.RECURRING_3P_PROMOTIONS_CARD_ID,
                 title: y.intl.string(y.t.m7PucM),
                 description: y.intl.format(y.t.zh1X7u, {}),
@@ -129,7 +129,7 @@ function k() {
                     alt: "SteelSeries"
                 }),
                 backgroundAssetUrl: G.A,
-                progress: W.getDate() / K,
+                progress: K.getDate() / W,
                 ctaText: y.intl.string(y.t.w7s5Qr),
                 onCtaClick: () => (0, b.uE)({
                     analyticsLocations: e
@@ -175,5 +175,5 @@ function k() {
             s = (n = n.filter(e => null != e))[0].featured,
             a = s ? 5 : 6;
         return n.splice(+!!s, 0, X), n.length > a && n.splice(a, n.length - a), n
-    }, [X, t, k, U, K, W, e, B, H, F, Y])
+    }, [X, t, U, k, W, K, e, B, H, F, Y])
 }

@@ -1,7 +1,7 @@
 /** chunk id: 451802 params = (module,exports,require) **/
 n.d(t, {
     A: () => T,
-    E: () => p
+    E: () => h
 });
 var i, s = n(627968),
     l = n(64700),
@@ -12,14 +12,14 @@ var i, s = n(627968),
     c = n(735438),
     u = n.n(c),
     m = n(397927),
-    _ = n(235986),
-    g = n(350535),
-    A = n(985018),
-    x = n(181204),
-    p = ((i = {}).DEFAULT = "DEFAULT", i.RECORDING = "RECORDING", i);
-let h = {
-    DEFAULT: x.__invalid_default,
-    RECORDING: x.oz
+    g = n(235986),
+    _ = n(350535),
+    x = n(985018),
+    A = n(181204),
+    h = ((i = {}).DEFAULT = "DEFAULT", i.RECORDING = "RECORDING", i);
+let p = {
+    DEFAULT: A.__invalid_default,
+    RECORDING: A.oz
 };
 class f extends l.PureComponent {
     _inputId = u().uniqueId("key-recorder-");
@@ -75,24 +75,24 @@ class f extends l.PureComponent {
                 value: n,
                 disabled: i
             } = this.props,
-            l = (0, g.dI)(n, !0);
-        return e = "RECORDING" === t ? A.intl.string(A.t.bmOri0) : 0 === n.length ? A.intl.string(A.t.co3wt9) : A.intl.string(A.t.idFMvH), (0, s.jsx)(m.vN3, {
+            l = (0, _.dI)(n, !0);
+        return e = "RECORDING" === t ? x.intl.string(x.t.bmOri0) : 0 === n.length ? x.intl.string(x.t.co3wt9) : x.intl.string(x.t.idFMvH), (0, s.jsx)(m.vN3, {
             focusTarget: this._inputRef,
             ringTarget: this._containerRef,
             children: (0, s.jsx)("div", {
                 onClick: this.handleClick,
                 onMouseDown: this.handleMouseDown,
                 ref: this._containerRef,
-                className: r()(x.Qm, h[t], {
-                    [x.Qz]: i
+                className: r()(A.Qm, p[t], {
+                    [A.Qz]: i
                 }),
-                children: (0, s.jsxs)(_.A, {
-                    className: x.Pp,
-                    children: [(0, s.jsx)(_.A.Child, {
-                        className: x.bZ,
+                children: (0, s.jsxs)(g.A, {
+                    className: A.Pp,
+                    children: [(0, s.jsx)(g.A.Child, {
+                        className: A.bZ,
                         children: (0, s.jsx)("input", {
                             id: this._inputId,
-                            placeholder: A.intl.string(A.t.nWRdnl),
+                            placeholder: x.intl.string(x.t.nWRdnl),
                             type: "text",
                             ref: this.setInputRef,
                             readOnly: !0,
@@ -100,7 +100,7 @@ class f extends l.PureComponent {
                             disabled: "RECORDING" !== this.props.mode || i
                         })
                     }), (0, s.jsx)("div", {
-                        className: x.UD,
+                        className: A.UD,
                         children: (0, s.jsx)(m.Button, {
                             size: "sm",
                             variant: "RECORDING" === this.props.mode ? "critical-secondary" : "secondary",

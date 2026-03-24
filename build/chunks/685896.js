@@ -1,6 +1,6 @@
 /** chunk id: 685896 params = (module,exports,require) **/
 n.d(t, {
-    C: () => h
+    C: () => p
 });
 var i = n(627968),
     s = n(935399),
@@ -12,13 +12,13 @@ var i = n(627968),
     c = n(915089),
     u = n(419954),
     m = n(954571),
-    _ = n(780964),
-    g = n(652215),
-    A = n(635917),
-    x = n(788868),
-    p = n(985018);
-let h = (0, u.E2)(_.X.DISPLAY_IN_APP_ICON, {
-    useSearchTerms: () => [p.intl.string(p.t.gnwxvT)],
+    g = n(780964),
+    _ = n(652215),
+    x = n(635917),
+    A = n(788868),
+    h = n(985018);
+let p = (0, u.E2)(g.X.DISPLAY_IN_APP_ICON, {
+    useSearchTerms: () => [h.intl.string(h.t.gnwxvT)],
     Component: function() {
         let e = (0, c.GV)(),
             {
@@ -30,8 +30,8 @@ let h = (0, u.E2)(_.X.DISPLAY_IN_APP_ICON, {
             }),
             u = (0, a.bG)([o.A], () => o.A.isUpsellPreview);
         return (0, s.Ay)(() => {
-            u && m.default.track(g.HAw.PREMIUM_UPSELL_VIEWED, {
-                type: x.e.APP_ICON_UPSELL,
+            u && m.default.track(_.HAw.PREMIUM_UPSELL_VIEWED, {
+                type: A.e.APP_ICON_UPSELL,
                 location_stack: [r.A.USER_SETTINGS]
             })
         }), (0, i.jsx)("div", {
@@ -43,7 +43,7 @@ let h = (0, u.E2)(_.X.DISPLAY_IN_APP_ICON, {
                 gap: 8,
                 children: (0, i.jsx)(d.m, {
                     disabled: u,
-                    size: A.N8.SIZE_48
+                    size: x.N8.SIZE_48
                 })
             })
         })
