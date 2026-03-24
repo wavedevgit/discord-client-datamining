@@ -6,7 +6,7 @@ n.d(t, {
     Fk: () => j,
     IK: () => T,
     PX: () => v,
-    TZ: () => b,
+    TZ: () => R,
     ji: () => y,
     zN: () => C
 });
@@ -110,7 +110,7 @@ function y(e) {
     })
 }
 
-function b(e) {
+function R(e) {
     let t, n, s, {
         user: r,
         guild: l,

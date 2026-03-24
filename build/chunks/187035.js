@@ -29,8 +29,8 @@ var i = n(627968),
     C = n(229),
     T = n(652215),
     y = n(401755),
-    b = n(771016),
-    R = n(315290),
+    R = n(771016),
+    b = n(315290),
     O = n(396574),
     L = n(985018),
     w = n(256651),
@@ -135,7 +135,7 @@ class D extends s.PureComponent {
                     transitionTo: s,
                     location: r,
                     onRegister: () => {
-                        (0, A.C)(b.zY.ORGANIC_REGISTERED_GUILD_TEMPLATE), E.A.flowStart(R.do.ORGANIC_GUILD_TEMPLATES, R.ju.NUF_STARTED)
+                        (0, A.C)(R.zY.ORGANIC_REGISTERED_GUILD_TEMPLATE), E.A.flowStart(b.do.ORGANIC_GUILD_TEMPLATES, b.ju.NUF_STARTED)
                     }
                 });
             case y.QB.EXPIRED:
@@ -166,7 +166,7 @@ function B(e) {
         form: n,
         handleSubmit: s
     } = (0, p.A)(t, !1);
-    E.A.flowStep(R.do.ORGANIC_GUILD_TEMPLATES, R.jC.GUILD_CREATE);
+    E.A.flowStep(b.do.ORGANIC_GUILD_TEMPLATES, b.jC.GUILD_CREATE);
     let r = (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(u.hE, {
             className: w.wx,

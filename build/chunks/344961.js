@@ -29,9 +29,9 @@ var i = n(627968),
     C = n(947089),
     T = n(473169);
 let y = n(906118),
-    b = new g.A("LoginQRSocket");
+    R = new g.A("LoginQRSocket");
 
-function R(e) {
+function b(e) {
     let {
         text: t = ""
     } = e, [n, r] = s.useState(!1);
@@ -91,7 +91,7 @@ function L(e) {
         case 0:
         case 1:
             return (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(R, {
+                children: [(0, i.jsx)(b, {
                     text: 1 === t.step ? `https://discord.com/ra/${t.fingerprint}` : ""
                 }), (0, i.jsx)(_.hE, {
                     className: T.QB,
@@ -169,21 +169,21 @@ function w(e) {
         }), [d, c] = s.useState(null), _ = (0, u.A)(), p = s.useMemo(() => new r.A(1500, 3e4), []), g = (0, h.A)(() => {
             o({
                 step: 0
-            }), _ ? n(e => e + 1) : (b.info("document is not visible, will defer reconnection when document becomes visible."), l(!0))
+            }), _ ? n(e => e + 1) : (R.info("document is not visible, will defer reconnection when document becomes visible."), l(!0))
         }), m = s.useCallback(() => {
-            b.error("Could not complete QR code login, trying to restart with a new QR code."), o({
+            R.error("Could not complete QR code login, trying to restart with a new QR code."), o({
                 step: 0
             }), p.pending || p.fail(g)
         }, [g, p]);
         return s.useEffect(() => {
-            _ && i && 0 === a.step && (b.info("reconnecting, now that document is visible"), l(!1), n(e => e + 1))
+            _ && i && 0 === a.step && (R.info("reconnecting, now that document is visible"), l(!1), n(e => e + 1))
         }, [a, _, i, l]), s.useEffect(() => {
             let t = Date.now(),
                 n = `${window.GLOBAL_ENV.REMOTE_AUTH_ENDPOINT}/?v=2`;
             n.startsWith("//") && (n = `wss:${n}`);
             let i = new WebSocket(n);
-            b.info(`[0ms] connecting to ${n}`);
-            let s = e => b.info(`[${Date.now()-t}ms] ${e}`),
+            R.info(`[0ms] connecting to ${n}`);
+            let s = e => R.info(`[${Date.now()-t}ms] ${e}`),
                 r = null,
                 l = null,
                 a = null,

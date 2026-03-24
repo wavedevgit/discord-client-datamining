@@ -42,24 +42,24 @@ let E = "mweb_handoff_nonce",
                 fingerprint: g
             })
         }, [g, e]);
-        let [T, y] = s.useState(null), b = s.useCallback(e => {
+        let [T, y] = s.useState(null), R = s.useCallback(e => {
             y(e), p.default.track(f.HAw.MOBILE_WEB_HANDOFF_FAILURE, {
                 reason: e,
                 fingerprint: (0, l.v)(C)
             }, {
                 fingerprint: C
             })
-        }, [y, C]), R = d.w.get(E);
-        if ("null" === n && null === T && b("deep_link_failed"), null != n && "null" !== n && null == R && null === T && b("nonce_missing"), s.useEffect(() => {
-                if (null != R) {
+        }, [y, C]), b = d.w.get(E);
+        if ("null" === n && null === T && R("deep_link_failed"), null != n && "null" !== n && null == b && null === T && R("nonce_missing"), s.useEffect(() => {
+                if (null != b) {
                     let e = d.w.get(I);
-                    (null == e || Date.now() >= e) && (b("nonce_expired"), S())
+                    (null == e || Date.now() >= e) && (R("nonce_expired"), S())
                 }
-            }, [R, b]), s.useEffect(() => {
-                null != n && "null" !== n && null != R && null == T && o.Bo.post({
+            }, [b, R]), s.useEffect(() => {
+                null != n && "null" !== n && null != b && null == T && o.Bo.post({
                     url: f.Rsh.HANDOFF_EXCHANGE,
                     body: {
-                        key: R,
+                        key: b,
                         handoff_token: n
                     },
                     rejectWithError: !0
@@ -73,11 +73,11 @@ let E = "mweb_handoff_nonce",
                         t = new URLSearchParams(e.search);
                     t.delete("handoff_token"), t.delete("fingerprint"), e.search = t.toString(), window.history.pushState(null, "", e)
                 }).catch(() => {
-                    b("handoff_exchange")
+                    R("handoff_exchange")
                 }).finally(() => {
                     S()
                 })
-            }, [n, R, T, C, b]), null == C) return null;
+            }, [n, b, T, C, R]), null == C) return null;
         let O = null == T ? (0, i.jsxs)(i.Fragment, {
             children: [A.intl.string(A.t.uJ1JsY), (0, i.jsx)("br", {}), A.intl.string(A.t.GHVWAs)]
         }) : j.has(T) ? A.intl.string(A.t.EPt55r) : N.has(T) ? A.intl.string(A.t.g87kTp) : void 0;

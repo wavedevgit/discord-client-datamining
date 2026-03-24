@@ -30,8 +30,8 @@ var i = n(627968),
 n(829926);
 var T = n(491509),
     y = n(895600),
-    b = n(274303),
-    R = n(942614),
+    R = n(274303),
+    b = n(942614),
     O = n(148864),
     L = n(976860),
     w = n(210714),
@@ -163,7 +163,7 @@ class ei extends s.PureComponent {
             this.setState({
                 isRateLimited: !1
             })
-        }))), n && !e.authenticated && ((0, R.C)(X.zY.ORGANIC_REGISTERED), this.redirectIfAuthenticated());
+        }))), n && !e.authenticated && ((0, b.C)(X.zY.ORGANIC_REGISTERED), this.redirectIfAuthenticated());
         let a = J.ju.FULL;
         i || this.hasError("date_of_birth") ? a = J.ju.AGE_GATE : this.inGuildOrChannelInviteFlow() && (a = J.ju.INVITE), s(a)
     }
@@ -542,8 +542,8 @@ class ei extends s.PureComponent {
         } = this.state, {
             consentRequired: T,
             authBoxClassName: y,
-            hasLoggedInAccounts: b
-        } = this.props, R = this.renderErrorMessage(), O = (0, i.jsx)(h.m, {
+            hasLoggedInAccounts: R
+        } = this.props, b = this.renderErrorMessage(), O = (0, i.jsx)(h.m, {
             text: !d && T ? $.intl.string($.t.AY4IVA) : null,
             children: (0, i.jsx)("div", {
                 className: ee.QX,
@@ -672,7 +672,7 @@ class ei extends s.PureComponent {
                 required: !0,
                 onFocus: this.trackInputFocus,
                 onBlur: this.trackInputBlur
-            }), (0, i.jsx)(S.A, {}), this.renderConsentComponent(), O, R, (0, i.jsx)("div", {
+            }), (0, i.jsx)(S.A, {}), this.renderConsentComponent(), O, b, (0, i.jsx)("div", {
                 className: ee.QX,
                 children: (0, i.jsx)(_.QWc, {
                     text: $.intl.string($.t["1lWxux"]),
@@ -696,7 +696,7 @@ class ei extends s.PureComponent {
             onSubmit: this.handleSubmit,
             tag: "form",
             className: y,
-            children: [b ? (0, i.jsx)("div", {
+            children: [R ? (0, i.jsx)("div", {
                 className: Z.AX,
                 children: (0, i.jsx)(_.Button, {
                     onClick: this.handleGotoLogin,
@@ -733,12 +733,12 @@ class ei extends s.PureComponent {
 }
 
 function es(e) {
-    let t = (0, c.cf)([F.A, G.default, m.A, O.A, b.A], () => ({
+    let t = (0, c.cf)([F.A, G.default, m.A, O.A, R.A], () => ({
             consentRequired: F.A.getAuthenticationConsentRequired(),
             authenticated: G.default.isAuthenticated(),
             isUnderage: m.A.isUnderageAnonymous(),
             country: O.A.getCountryCode(),
-            hasLoggedInAccounts: b.A.getHasLoggedInAccounts()
+            hasLoggedInAccounts: R.A.getHasLoggedInAccounts()
         })),
         n = (0, c.bG)([D.A], () => D.A.registrationUsernameSuggestion()),
         [r, l] = s.useState(J.ju.FULL);

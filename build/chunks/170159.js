@@ -29,8 +29,8 @@ var i = n(627968),
     C = n(161928),
     T = n(129851),
     y = n(229),
-    b = n(652215),
-    R = n(985018),
+    R = n(652215),
+    b = n(985018),
     O = n(473169);
 a.Ay.initialize();
 class L extends s.PureComponent {
@@ -98,13 +98,13 @@ class L extends s.PureComponent {
         } = this.props, {
             error: i
         } = this.state, s = null != i ? i.code : null;
-        return s === b.t02.INVALID_GIFT_SELF_REDEMPTION ? R.intl.string(R.t.wa9h7F) : s === b.t02.INVALID_GIFT_REDEMPTION_OWNED && n?.productLine === b.EZt.COLLECTIBLES ? R.intl.string(R.t.mdLtb5) : null != t || s === b.t02.INVALID_GIFT_REDEMPTION_OWNED ? R.intl.format(R.t.PIdmg3, {
-            libraryLink: b.BVt.APPLICATION_LIBRARY
-        }) : e.isClaimed || s === b.t02.INVALID_GIFT_REDEMPTION_EXHAUSTED ? R.intl.string(R.t.ilcBeX) : s === b.t02.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED ? R.intl.string(R.t.ypuSd8) : void 0
+        return s === R.t02.INVALID_GIFT_SELF_REDEMPTION ? b.intl.string(b.t.wa9h7F) : s === R.t02.INVALID_GIFT_REDEMPTION_OWNED && n?.productLine === R.EZt.COLLECTIBLES ? b.intl.string(b.t.mdLtb5) : null != t || s === R.t02.INVALID_GIFT_REDEMPTION_OWNED ? b.intl.format(b.t.PIdmg3, {
+            libraryLink: R.BVt.APPLICATION_LIBRARY
+        }) : e.isClaimed || s === R.t02.INVALID_GIFT_REDEMPTION_EXHAUSTED ? b.intl.string(b.t.ilcBeX) : s === R.t02.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED ? b.intl.string(b.t.ypuSd8) : void 0
     }
     handleLogout = () => {
         let e = this.props.match.params.giftCode;
-        c.A.logout("gift_code", b.BVt.GIFT_CODE_LOGIN(e))
+        c.A.logout("gift_code", R.BVt.GIFT_CODE_LOGIN(e))
     };
     handleResendVerification = () => {
         c.A.verifyResend(), this.setState({
@@ -123,7 +123,7 @@ class L extends s.PureComponent {
                 error: null
             }), await u.A.redeemGiftCode({
                 code: n
-            }), e(b.BVt.APP)
+            }), e(R.BVt.APP)
         } catch (e) {
             this.setState({
                 error: e
@@ -135,7 +135,7 @@ class L extends s.PureComponent {
             transitionTo: e
         } = this.props, t = this.getCode();
         u.A.resolveGiftCode(t, !0, !0).then(n => {
-            null != n && null != n.giftCode.promotion && e(b.BVt.BILLING_PROMOTION_REDEMPTION(t))
+            null != n && null != n.giftCode.promotion && e(R.BVt.BILLING_PROMOTION_REDEMPTION(t))
         })
     };
     renderSpinner(e) {
@@ -153,20 +153,20 @@ class L extends s.PureComponent {
         return (0, i.jsxs)(p.Ay, {
             children: [(0, i.jsx)(p.hE, {
                 className: l()(O.Ot, O.QB),
-                children: R.intl.string(R.t.KPowgn)
+                children: b.intl.string(b.t.KPowgn)
             }), (0, i.jsx)(p.tK, {
-                children: R.intl.string(R.t.j8734b)
+                children: b.intl.string(b.t.j8734b)
             }), (0, i.jsx)("div", {
                 className: l()(O.eT, O.QB),
                 children: (0, i.jsx)(o.Button, {
-                    text: R.intl.string(R.t.fIv16B),
+                    text: b.intl.string(b.t.fIv16B),
                     fullWidth: !0,
                     onClick: () => t(e)
                 })
             }), (0, i.jsx)(o.QWc, {
-                text: R.intl.string(R.t["/CjuXF"]),
+                text: b.intl.string(b.t["/CjuXF"]),
                 textVariant: "text-sm/normal",
-                onClick: () => window.open(j.A.getArticleURL(b.MVz.GIFTING), "_blank")
+                onClick: () => window.open(j.A.getArticleURL(R.MVz.GIFTING), "_blank")
             })]
         })
     }
@@ -174,13 +174,13 @@ class L extends s.PureComponent {
         return (0, i.jsxs)(p.Ay, {
             children: [(0, i.jsx)(p.hE, {
                 className: O.QB,
-                children: R.intl.string(R.t.csrAMJ)
+                children: b.intl.string(b.t.csrAMJ)
             }), (0, i.jsx)(p.tK, {
-                children: R.intl.string(R.t["m1+IBn"])
+                children: b.intl.string(b.t["m1+IBn"])
             }), (0, i.jsx)("div", {
                 className: O.eT,
                 children: (0, i.jsx)(o.Button, {
-                    text: R.intl.string(R.t["qsI+EH"]),
+                    text: b.intl.string(b.t["qsI+EH"]),
                     fullWidth: !0,
                     onClick: () => this.setState({
                         continueOnWeb: !0
@@ -198,16 +198,16 @@ class L extends s.PureComponent {
                 src: n(792525),
                 className: O.QB
             }), (0, i.jsx)(p.hE, {
-                children: R.intl.format(R.t["ivLUf/"], {
+                children: b.intl.format(b.t["ivLUf/"], {
                     username: e.username
                 })
             }), (0, i.jsx)(p.tK, {
                 className: O.QX,
-                children: R.intl.string(R.t["8Su18+"])
+                children: b.intl.string(b.t["8Su18+"])
             }), (0, i.jsx)("div", {
                 className: O.eT,
                 children: (0, i.jsx)(o.Button, {
-                    text: t ? R.intl.string(R.t.CMa9Rv) : R.intl.string(R.t.lm1UKt),
+                    text: t ? b.intl.string(b.t.CMa9Rv) : b.intl.string(b.t.lm1UKt),
                     fullWidth: !0,
                     disabled: t,
                     onClick: this.handleResendVerification
@@ -215,7 +215,7 @@ class L extends s.PureComponent {
             }), (0, i.jsx)("div", {
                 className: O.Ot,
                 children: (0, i.jsx)(o.QWc, {
-                    text: R.intl.string(R.t.Po9eBQ),
+                    text: b.intl.string(b.t.Po9eBQ),
                     textVariant: "text-sm/normal",
                     onClick: this.refreshUser
                 })
@@ -236,7 +236,7 @@ class L extends s.PureComponent {
                 }), (0, i.jsx)("div", {
                     className: O.eT,
                     children: (0, i.jsx)(o.Button, {
-                        text: R.intl.string(R.t.n6I6k4),
+                        text: b.intl.string(b.t.n6I6k4),
                         fullWidth: !0,
                         disabled: null != r,
                         onClick: this.handleAccept
@@ -246,7 +246,7 @@ class L extends s.PureComponent {
                     children: r
                 }) : (0, i.jsx)(p.ME, {
                     className: O.QX,
-                    children: R.intl.format(R.t.NYM08s, {
+                    children: b.intl.format(b.t.NYM08s, {
                         userTag: S.Ay.getUserTag(t),
                         onLogoutClick: this.handleLogout
                     })
@@ -268,14 +268,14 @@ class L extends s.PureComponent {
             fetchingUser: d,
             continueOnWeb: c
         } = this.state;
-        if (e === b.fAW.OPEN && !c) return this.renderAppOpened();
-        if (e === b.fAW.OPENING) return this.renderSpinner(R.intl.string(R.t["Z+hCVU"]));
-        if (l) return this.renderSpinner(R.intl.string(R.t.bhJseN));
-        if (null == s) return r ? this.renderExpiredInvite() : this.renderSpinner(R.intl.string(R.t.b3lf1c));
+        if (e === R.fAW.OPEN && !c) return this.renderAppOpened();
+        if (e === R.fAW.OPENING) return this.renderSpinner(b.intl.string(b.t["Z+hCVU"]));
+        if (l) return this.renderSpinner(b.intl.string(b.t.bhJseN));
+        if (null == s) return r ? this.renderExpiredInvite() : this.renderSpinner(b.intl.string(b.t.b3lf1c));
         if (r) {
             if (n) {
                 let e = this.state.currentUser;
-                return d || null == e ? this.renderSpinner(R.intl.string(R.t.bYb2nS)) : this.requiresVerification && null != e ? this.renderVerification(e) : this.renderAuthenticated(s, e, t)
+                return d || null == e ? this.renderSpinner(b.intl.string(b.t.bYb2nS)) : this.requiresVerification && null != e ? this.renderVerification(e) : this.renderAuthenticated(s, e, t)
             }
             return "login" === this.getMode() ? (0, i.jsx)(T.A, {
                 giftCodeSKU: t,
@@ -316,10 +316,10 @@ let w = a.Ay.connectStores([E.A, I.A, A.default, v.A, x.A, g.A], e => {
             transitionTo: l
         } = e, a = (0, m.bF)(t);
         return (s.useEffect(() => {
-            null != r && a && l(b.BVt.APP_WITH_GIFT_CODE(r))
+            null != r && a && l(R.BVt.APP_WITH_GIFT_CODE(r))
         }, [a, r, l]), a) ? (0, i.jsxs)(p.Ay, {
             children: [(0, i.jsx)(p.hE, {
-                children: R.intl.string(R.t.b3lf1c)
+                children: b.intl.string(b.t.b3lf1c)
             }), (0, i.jsx)(p.CK, {})]
         }) : n
     }
