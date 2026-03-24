@@ -13,9 +13,9 @@ var i = n(627968),
     u = n(766569),
     m = n(836602),
     _ = n(576622),
-    g = n(740625),
-    x = n(841329),
-    A = n(955872),
+    g = n(841329),
+    x = n(183476),
+    A = n(338318),
     h = n(71393),
     p = n(967198),
     f = n(711014),
@@ -42,13 +42,12 @@ function y() {
         l = (0, r.bG)([T.default], () => T.default.getCurrentUser()),
         y = b.A.useField("subsection");
     return s.useEffect(() => {
-        (0, x._)(j[y])
+        (0, g._)(j[y])
     }, [y]), s.useEffect(() => {
         null != l && t?.id != null && (0, _.A)(l.id, l.getAvatarURL(t?.id, 80), {
             guildId: t?.id
         })
-    }, [t?.id, l]), (0, i.jsxs)(g.R, {
-        header: N.intl.string(N.t["vi7f+q"]),
+    }, [t?.id, l]), (0, i.jsxs)(x.R, {
         children: [(0, i.jsxs)(o.VQ0, {
             className: I.$H,
             type: "top",

@@ -16,16 +16,16 @@ var i = n(627968),
     A = n(980017),
     m = n(206314);
 
-function p(e) {
+function _(e) {
     return e.matches("a") || "highlight" === e.className || e.className.includes("mention")
 }
-class _ extends s.Component {
+class p extends s.Component {
     handleOpenTopic = e => {
         let t = e.target;
         if ((0, r.vq)(t)) {
-            if (p(t)) return;
+            if (_(t)) return;
             let e = t.parentNode;
-            if ((0, r.vq)(e) && p(e)) return
+            if ((0, r.vq)(e) && _(e)) return
         }(0, o.mMO)(async () => {
             let {
                 default: e
@@ -75,4 +75,4 @@ class _ extends s.Component {
         }) : null
     }
 }
-let g = _
+let g = p

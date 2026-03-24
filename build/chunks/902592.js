@@ -24,9 +24,9 @@ var a = n(627968),
     j = n(652215),
     A = n(985018),
     C = n(346858),
-    T = n(661251);
+    y = n(661251);
 
-function y(e) {
+function T(e) {
     let {
         resizableNode: t,
         onResize: n,
@@ -83,7 +83,7 @@ function E(e) {
         }
     }), (0, a.jsxs)(f.xG, {
         children: [(0, a.jsxs)(m.Ay, {
-            className: T.jr,
+            className: y.jr,
             toolbar: t ? null : (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsx)(m.Ay.Icon, {
                     icon: d.tfB,
@@ -124,7 +124,7 @@ function N() {
             width: n
         },
         "data-app-right-panel": !0,
-        children: [(0, a.jsx)(y, {
+        children: [(0, a.jsx)(T, {
             resizableNode: e,
             onResize: s,
             onResizeEnd: l
@@ -147,7 +147,7 @@ function I() {
         children: (0, a.jsx)(d.DUT, {
             onClick: g.pf,
             children: (0, a.jsxs)(m.Ay, {
-                className: l()(T.jr, C.J$),
+                className: l()(y.jr, C.J$),
                 toolbar: (0, a.jsx)(p.A, {
                     direction: p.A.Directions.UP
                 }),

@@ -1,6 +1,6 @@
 /** chunk id: 966739 params = (module,exports,require) **/
 a.d(t, {
-    V: () => o
+    V: () => d
 });
 var l = a(627968);
 a(64700);
@@ -8,15 +8,15 @@ var n = a(397927),
     r = a(261225),
     s = a(673277),
     i = a(458306),
-    d = a(753825);
-let o = {
+    o = a(753825);
+let d = {
     name: "FeaturedProduct",
     id: "featured-product",
     component: e => {
         let {
             backgroundImage: t,
             ...a
-        } = e, o = {
+        } = e, d = {
             backgroundImage: {
                 src: t
             },
@@ -27,8 +27,8 @@ let o = {
                 variant: "text-lg/semibold",
                 children: "PLACEHOLDER"
             }), (0, l.jsx)(s.A, {
-                children: (0, l.jsx)(d.A, {
-                    ...o
+                children: (0, l.jsx)(o.A, {
+                    ...d
                 })
             }), (0, l.jsxs)(s.A, {
                 children: [(0, l.jsx)(n.Text, {
@@ -36,18 +36,18 @@ let o = {
                     children: "Grid (3):"
                 }), (0, l.jsxs)(r.A, {
                     columns: 3,
-                    children: [(0, l.jsx)(d.A, {
-                        ...o
-                    }), (0, l.jsx)(d.A, {
-                        ...o
-                    }), (0, l.jsx)(d.A, {
-                        ...o
-                    }), (0, l.jsx)(d.A, {
-                        ...o
-                    }), (0, l.jsx)(d.A, {
-                        ...o
-                    }), (0, l.jsx)(d.A, {
-                        ...o
+                    children: [(0, l.jsx)(o.A, {
+                        ...d
+                    }), (0, l.jsx)(o.A, {
+                        ...d
+                    }), (0, l.jsx)(o.A, {
+                        ...d
+                    }), (0, l.jsx)(o.A, {
+                        ...d
+                    }), (0, l.jsx)(o.A, {
+                        ...d
+                    }), (0, l.jsx)(o.A, {
+                        ...d
                     })]
                 })]
             }), (0, l.jsxs)(s.A, {
@@ -56,14 +56,14 @@ let o = {
                     children: "Stack:"
                 }), (0, l.jsxs)(i.Kp, {
                     direction: "horizontal",
-                    children: [(0, l.jsx)(d.A, {
-                        ...o
-                    }), (0, l.jsx)(d.A, {
-                        ...o
-                    }), (0, l.jsx)(d.A, {
-                        ...o
-                    }), (0, l.jsx)(d.A, {
-                        ...o
+                    children: [(0, l.jsx)(o.A, {
+                        ...d
+                    }), (0, l.jsx)(o.A, {
+                        ...d
+                    }), (0, l.jsx)(o.A, {
+                        ...d
+                    }), (0, l.jsx)(o.A, {
+                        ...d
                     })]
                 })]
             })]

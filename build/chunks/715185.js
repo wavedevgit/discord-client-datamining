@@ -1,7 +1,7 @@
 /** chunk id: 715185 params = (module,exports,require) **/
 a.d(t, {
-    H: () => o,
-    M: () => d
+    H: () => d,
+    M: () => o
 });
 var l = a(627968);
 a(64700);
@@ -78,7 +78,7 @@ let i = {
             }]
         }]
     },
-    d = {
+    o = {
         name: "SubLayout",
         id: "sub-layout-basic",
         component: () => (0, l.jsxs)("div", {
@@ -97,7 +97,7 @@ let i = {
         }),
         controls: {}
     },
-    o = {
+    d = {
         name: "SubLayout - Loading State",
         id: "sub-layout-skeleton",
         component: () => (0, l.jsxs)("div", {

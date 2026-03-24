@@ -7,8 +7,8 @@ var l = a(627968),
     r = a(18769),
     s = a(954644),
     i = a(261225),
-    d = a(673277),
-    o = a(700263);
+    o = a(673277),
+    d = a(700263);
 let c = {
     name: "Skeleton",
     id: "skeleton",
@@ -22,11 +22,11 @@ let c = {
         }), (0, l.jsx)(n.Text, {
             variant: "text-lg/normal",
             children: "Skeleton always puts a border radius on the shimmer. It might not match the child's radius."
-        }), (0, l.jsxs)(d.A, {
+        }), (0, l.jsxs)(o.A, {
             children: [(0, l.jsx)(n.Text, {
                 variant: "text-md/normal",
                 children: "Basic rectangular skeleton"
-            }), (0, l.jsx)(o.A, {
+            }), (0, l.jsx)(d.A, {
                 children: (0, l.jsx)("div", {
                     style: {
                         height: 120,
@@ -38,18 +38,18 @@ let c = {
         }), (0, l.jsx)(n.Text, {
             variant: "text-lg/normal",
             children: "Here we have a Grid with three Skeleton children that are wrapping three ShopProductCard to simulate a shop loading state"
-        }), (0, l.jsx)(d.A, {
+        }), (0, l.jsx)(o.A, {
             children: (0, l.jsxs)(i.A, {
                 columns: 3,
-                children: [(0, l.jsx)(o.A, {
+                children: [(0, l.jsx)(d.A, {
                     children: (0, l.jsx)(s.A, {
                         skuId: "1458472704192811088"
                     })
-                }), (0, l.jsx)(o.A, {
+                }), (0, l.jsx)(d.A, {
                     children: (0, l.jsx)(s.A, {
                         skuId: "1458472704192811088"
                     })
-                }), (0, l.jsx)(o.A, {
+                }), (0, l.jsx)(d.A, {
                     children: (0, l.jsx)(s.A, {
                         skuId: "1458472704192811088"
                     })
@@ -58,10 +58,10 @@ let c = {
         }), (0, l.jsx)(n.Text, {
             variant: "text-lg/normal",
             children: "Here we have a Grid with two Skeleton children that are wrapping two FeaturedCollection to simulate a shop loading state"
-        }), (0, l.jsx)(d.A, {
+        }), (0, l.jsx)(o.A, {
             children: (0, l.jsxs)(i.A, {
                 columns: 2,
-                children: [(0, l.jsx)(o.A, {
+                children: [(0, l.jsx)(d.A, {
                     children: (0, l.jsx)(r.A, {
                         backgroundImage: {
                             src: "https://cdn.discordapp.com/assets/content/cd657aa88cb5c636a97dd3a5d68debfb009515cdc1c541296c1ac4e3ad5fc63e"
@@ -75,7 +75,7 @@ let c = {
                         href: "",
                         ctaText: "Take Me There"
                     })
-                }), (0, l.jsx)(o.A, {
+                }), (0, l.jsx)(d.A, {
                     children: (0, l.jsx)(r.A, {
                         backgroundImage: {
                             src: "https://cdn.discordapp.com/assets/content/cd657aa88cb5c636a97dd3a5d68debfb009515cdc1c541296c1ac4e3ad5fc63e"

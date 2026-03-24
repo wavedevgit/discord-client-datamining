@@ -23,15 +23,15 @@ var a = n(627968),
     j = n(438038),
     A = n(439075),
     C = n(223344),
-    T = n(589939),
-    y = n(443960),
+    y = n(589939),
+    T = n(443960),
     S = n(899860),
     E = n(633581),
     N = n(508575),
     I = n(847807),
     O = n(364329),
-    R = n(545986),
-    k = n(927813),
+    k = n(545986),
+    R = n(927813),
     w = n(350246);
 let D = ["png", "gif", "webp"],
     P = [...D, "jpg", "jpeg"],
@@ -207,7 +207,7 @@ function G() {
         })
     }
 
-    function Y(e, n) {
+    function Q(e, n) {
         if ("questName" === e || "gameTitle" === e || "gamePublisher" === e) {
             var a, i;
             c({
@@ -227,7 +227,7 @@ function G() {
         }
     }
 
-    function Q(e, n, a) {
+    function Y(e, n, a) {
         if ("name" === e || "nameWithArticle" === e) {
             var i, s;
             c({
@@ -267,12 +267,12 @@ function G() {
     }
 
     function X() {
-        (0, x.tU)(t.config) && (0, R.hJ)(t, h.uF.GIFT_INVENTORY_FOR_YOU, h.uF.INTERNAL_PREVIEW_TOOL, !0)
+        (0, x.tU)(t.config) && (0, k.hJ)(t, h.uF.GIFT_INVENTORY_FOR_YOU, h.uF.INTERNAL_PREVIEW_TOOL, !0)
     }
     let Z = i.useMemo(() => {
             for (let [e, n] of Object.entries(t.config.taskConfigV2.tasks))
                 if (null != n.target) return n.target;
-            return 10 * k.A.Seconds.MINUTE
+            return 10 * R.A.Seconds.MINUTE
         }, [t.config.taskConfigV2.tasks]),
         ee = i.useMemo(() => o.n.WATCH_VIDEO in t.config.taskConfigV2.tasks, [t.config.taskConfigV2.tasks]);
     l()(!1 !== t.preview && null != t.preview, "Preview config must have property preview: true");
@@ -327,17 +327,17 @@ function G() {
             children: [(0, a.jsx)(S.A, {
                 title: "Quest Name",
                 assetKey: "questName",
-                onMessageChange: Y,
+                onMessageChange: Q,
                 initialValue: t.config.messages.questName
             }), (0, a.jsx)(S.A, {
                 title: "Game Title",
                 assetKey: "gameTitle",
-                onMessageChange: Y,
+                onMessageChange: Q,
                 initialValue: t.config.messages.gameTitle
             }), (0, a.jsx)(S.A, {
                 title: "Game Publisher",
                 assetKey: "gamePublisher",
-                onMessageChange: Y,
+                onMessageChange: Q,
                 initialValue: t.config.messages.gamePublisher
             }), ee && (0, a.jsx)(S.A, {
                 title: "Video Title",
@@ -375,56 +375,56 @@ function G() {
             children: "Assets"
         }), (0, a.jsxs)("div", {
             className: w.OA,
-            children: [(0, a.jsx)(y.A, {
+            children: [(0, a.jsx)(T.A, {
                 title: "Hero",
                 assetKey: "hero",
                 onFileChange: $,
                 filters: M,
                 initialValue: t.config.assets.hero
-            }), (0, a.jsx)(y.A, {
+            }), (0, a.jsx)(T.A, {
                 title: "Hero Video (optional)",
                 assetKey: "heroVideo",
                 onFileChange: $,
                 filters: M,
                 initialValue: t.config.assets.heroVideo ?? void 0
-            }), (0, a.jsx)(y.A, {
+            }), (0, a.jsx)(T.A, {
                 title: "Quest Bar Hero",
                 assetKey: "questBarHero",
                 onFileChange: $,
                 filters: M,
                 initialValue: t.config.assets.questBarHero
-            }), (0, a.jsx)(y.A, {
+            }), (0, a.jsx)(T.A, {
                 title: "Quest Bar Hero Video (optional)",
                 assetKey: "questBarHeroVideo",
                 onFileChange: $,
                 filters: M,
                 initialValue: t.config.assets.questBarHeroVideo ?? void 0
-            }), (0, a.jsx)(y.A, {
+            }), (0, a.jsx)(T.A, {
                 title: "Game Tile",
                 assetKey: "gameTile",
                 onFileChange: $,
                 filters: [...P, "svg"],
                 initialValue: t.config.assets.gameTile
-            }), (0, a.jsx)(y.A, {
+            }), (0, a.jsx)(T.A, {
                 title: "Logotype",
                 assetKey: "logotype",
                 onFileChange: $,
                 filters: [...D, "svg"],
                 initialValue: t.config.assets.logotype
             }), ee && (0, a.jsxs)(a.Fragment, {
-                children: [(0, a.jsx)(y.A, {
+                children: [(0, a.jsx)(T.A, {
                     title: "Quest Video",
                     assetKey: "videoPlayerVideo",
                     onFileChange: q,
                     filters: M,
                     initialValue: et?.assets.video.url
-                }), (0, a.jsx)(y.A, {
+                }), (0, a.jsx)(T.A, {
                     title: "Quest Video (Low Resolution)",
                     assetKey: "videoPlayerVideoLowRes",
                     onFileChange: q,
                     filters: M,
                     initialValue: et?.assets.videoLowRes?.url
-                }), (0, a.jsx)(y.A, {
+                }), (0, a.jsx)(T.A, {
                     title: "Video Player Thumbnail (optional)",
                     assetKey: "videoPlayerThumbnail",
                     onFileChange: q,
@@ -442,14 +442,14 @@ function G() {
                 children: [(0, a.jsx)(S.A, {
                     title: "Name",
                     assetKey: "name",
-                    onMessageChange: (e, t) => Q(e, t, n),
+                    onMessageChange: (e, t) => Y(e, t, n),
                     initialValue: e.messages.name
                 }), (0, a.jsx)(S.A, {
                     title: "Name With Article",
                     assetKey: "nameWithArticle",
-                    onMessageChange: (e, t) => Q(e, t, n),
+                    onMessageChange: (e, t) => Y(e, t, n),
                     initialValue: e.messages.nameWithArticle
-                }), e.type !== d.l.VIRTUAL_CURRENCY && (0, a.jsx)(y.A, {
+                }), e.type !== d.l.VIRTUAL_CURRENCY && (0, a.jsx)(T.A, {
                     title: "Asset",
                     assetKey: "asset",
                     onFileChange: (e, a) => (function(e, n, a) {
@@ -587,7 +587,7 @@ function G() {
             children: "Component Previews"
         }), (0, a.jsxs)("div", {
             className: w.$$,
-            children: [(0, a.jsxs)(T.A, {
+            children: [(0, a.jsxs)(y.A, {
                 withBorder: !0,
                 children: [(0, a.jsx)(m.Heading, {
                     variant: "heading-sm/semibold",
@@ -612,7 +612,7 @@ function G() {
                         })
                     })]
                 })]
-            }), (0, a.jsxs)(T.A, {
+            }), (0, a.jsxs)(y.A, {
                 withBorder: !0,
                 children: [(0, a.jsx)(m.Heading, {
                     variant: "heading-sm/semibold",
@@ -630,7 +630,7 @@ function G() {
                         sourceQuestContent: h.uF.INTERNAL_PREVIEW_TOOL
                     })
                 })]
-            }), (0, a.jsxs)(T.A, {
+            }), (0, a.jsxs)(y.A, {
                 withBorder: !0,
                 children: [(0, a.jsx)(m.Heading, {
                     variant: "heading-sm/semibold",
@@ -664,7 +664,7 @@ function G() {
                         F(e)
                     }
                 })
-            }), (0, a.jsxs)(T.A, {
+            }), (0, a.jsxs)(y.A, {
                 withBorder: !0,
                 children: [(0, a.jsx)(m.Heading, {
                     variant: "heading-sm/semibold",
@@ -683,7 +683,7 @@ function G() {
                     checked: V,
                     onChange: W
                 })
-            }), ee && (0, a.jsxs)(T.A, {
+            }), ee && (0, a.jsxs)(y.A, {
                 withBorder: !0,
                 allowClicks: !0,
                 children: [(0, a.jsx)(m.Heading, {

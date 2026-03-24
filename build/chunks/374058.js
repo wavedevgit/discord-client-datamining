@@ -23,8 +23,8 @@ var a = n(627968),
     j = n(708403),
     A = n(260880),
     C = n(303054),
-    T = n(231643),
-    y = n(985018),
+    y = n(231643),
+    T = n(985018),
     S = n(76584),
     E = n(661251);
 let N = [{
@@ -91,11 +91,11 @@ function O(e) {
         })]
     })
 }
-let R = new Set(["client_performance_cpu", "client_performance_memory"]),
-    k = [{
+let k = new Set(["client_performance_cpu", "client_performance_memory"]),
+    R = [{
         id: "details",
         name: "Details",
-        group: T.fu.NONE,
+        group: y.fu.NONE,
         render: e => {
             let {
                 loggedEvent: {
@@ -167,7 +167,7 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
                     })]
                 }), (0, a.jsx)(I, {
                     children: Object.entries(n).map(e => {
-                        let [n, i] = e, s = R.has(n) ? ((e, t, n) => {
+                        let [n, i] = e, s = k.has(n) ? ((e, t, n) => {
                             let a = e.filter(e => e.event === t);
                             if (0 === a.length) return {
                                 average: null,
@@ -269,8 +269,8 @@ function P() {
         {
             TabBar: I,
             renderSelectedTab: O
-        } = (0, T.Ay)({
-            tabs: k
+        } = (0, y.Ay)({
+            tabs: R
         }, []);
     return (0, a.jsxs)("div", {
         ref: e,
@@ -283,11 +283,11 @@ function P() {
                 size: c.$n.Sizes.ICON,
                 onClick: b.eY,
                 children: (0, a.jsx)("span", {
-                    title: y.intl.string(y.t.VkKicb),
+                    title: T.intl.string(T.t.VkKicb),
                     children: (0, a.jsx)(u.ucK, {
                         size: "md",
                         color: "currentColor",
-                        "aria-label": y.intl.string(y.t.VkKicb)
+                        "aria-label": T.intl.string(T.t.VkKicb)
                     })
                 })
             }), (0, a.jsx)("div", {

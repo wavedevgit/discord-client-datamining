@@ -141,13 +141,13 @@ let E = function(e) {
         badge: l,
         primaryColor: r,
         secondaryColor: a
-    } = e, [o, u] = s.useState(!1), m = s.useRef(null), g = s.useId(), E = s.useId(), b = null == r && null == a, T = s.useMemo(() => !b && h.Ub.every(e => e.primary !== r || e.secondary !== a), [b, r, a]), I = (0, d._u)({
+    } = e, [o, u] = s.useState(!1), m = s.useRef(null), g = s.useId(), E = s.useId(), b = null == r && null == a, T = s.useMemo(() => !b && h.Ub.every(e => e.primary !== r || e.secondary !== a), [b, r, a]), C = (0, d._u)({
         orientation: "horizontal",
         isDisabled: !1,
         labelledBy: g
     });
 
-    function C(e) {
+    function I(e) {
         let t = {};
         void 0 !== e.primary && (t.badgeColorPrimary = e.primary), void 0 !== e.secondary && (t.badgeColorSecondary = e.secondary), x.A.updateGuildProfile(n, t)
     }
@@ -157,7 +157,7 @@ let E = function(e) {
             label: p.intl.string(_.default.zSbMdX),
             id: g,
             children: e => (0, i.jsxs)("div", {
-                ...I,
+                ...C,
                 id: e.controlId,
                 "aria-describedby": E,
                 className: A.p3,
@@ -165,12 +165,12 @@ let E = function(e) {
                     palette: e,
                     badge: l,
                     isSelected: e.primary === r && e.secondary === a,
-                    onClick: () => C(e)
+                    onClick: () => I(e)
                 }, `${e.primary}${e.secondary}`)), (0, i.jsx)(N, {
                     badge: l,
                     isSelected: b,
                     onClick: () => {
-                        C({
+                        I({
                             primary: null,
                             secondary: null
                         })
@@ -183,7 +183,7 @@ let E = function(e) {
                     showColorPopout: o,
                     setShowColorPopout: u,
                     palettePopoutTargetRef: m,
-                    handleChange: C
+                    handleChange: I
                 })]
             })
         }), (0, i.jsx)(c.AC4, {

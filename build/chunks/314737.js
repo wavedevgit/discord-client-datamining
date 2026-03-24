@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     Ay: () => Z,
-    Bt: () => K,
+    Bt: () => Y,
     zI: () => X
 });
 var i = n(627968),
@@ -27,8 +27,8 @@ var i = n(627968),
     E = n(262295),
     b = n(936555),
     T = n(725437),
-    I = n(952385),
-    C = n(810877),
+    C = n(952385),
+    I = n(810877),
     v = n(945086),
     S = n(824832),
     y = n(931991),
@@ -178,7 +178,7 @@ let z = c().throttle(p.dZ, 1e3),
             })]
         })
     },
-    Y = e => {
+    K = e => {
         let {
             isLoading: t,
             staticEmoji: s,
@@ -204,7 +204,7 @@ let z = c().throttle(p.dZ, 1e3),
                 children: F.intl.string(F.t.lxsmBd)
             })]
         }) : (0, i.jsxs)("div", {
-            children: [(0, i.jsx)(K, {
+            children: [(0, i.jsx)(Y, {
                 title: F.intl.string(F.t.sMOuuS),
                 maxSlots: (0, D.sN)(a),
                 emojiCount: s.length,
@@ -214,7 +214,7 @@ let z = c().throttle(p.dZ, 1e3),
                     onEdit: o,
                     newlyAddedEmojiIds: d
                 })
-            }), (0, i.jsx)(K, {
+            }), (0, i.jsx)(Y, {
                 title: F.intl.string(F.t.wWjQye),
                 maxSlots: (0, D.sN)(a),
                 emojiCount: l.length,
@@ -227,7 +227,7 @@ let z = c().throttle(p.dZ, 1e3),
             })]
         })
     },
-    K = e => {
+    Y = e => {
         let {
             title: t,
             maxSlots: n,
@@ -355,10 +355,10 @@ let z = c().throttle(p.dZ, 1e3),
                 totalStaticEmoji: M,
                 animatedEmoji: V,
                 totalAnimatedEmoji: W
-            } = (0, I.v)({
+            } = (0, C.v)({
                 guild: l
             }),
-            [K, X] = s.useState(null);
+            [Y, X] = s.useState(null);
         s.useEffect(() => {
             p && ee()
         }, [p]), s.useEffect(() => {
@@ -366,9 +366,9 @@ let z = c().throttle(p.dZ, 1e3),
         }, [l.id]), s.useEffect(() => {
             null != _ && _ < u && z(l.id)
         }, [u, _, l.id]), s.useEffect(() => {
-            if (null != x && null == K) return void X(x)
-        }, [x, K]);
-        let Z = s.useMemo(() => null == K ? new Set : new Set(c().differenceBy(x, K, "id").map(e => e.id)), [x, K]),
+            if (null != x && null == Y) return void X(x)
+        }, [x, Y]);
+        let Z = s.useMemo(() => null == Y ? new Set : new Set(c().differenceBy(x, Y, "id").map(e => e.id)), [x, Y]),
             q = s.useCallback(function() {
                 let {
                     emoji: e
@@ -386,7 +386,7 @@ let z = c().throttle(p.dZ, 1e3),
                 })
             }, [l]),
             Q = async (e, t, n) => {
-                let i = await (0, C.W)({
+                let i = await (0, I.W)({
                     data: e,
                     file: t,
                     image: n,
@@ -484,7 +484,7 @@ let z = c().throttle(p.dZ, 1e3),
                         variant: "text-xs/normal",
                         children: F.intl.string(F.t.EgNCTi)
                     })]
-                }), (0, i.jsx)(Y, {
+                }), (0, i.jsx)(K, {
                     isLoading: null == x,
                     staticEmoji: D,
                     animatedEmoji: V,

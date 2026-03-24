@@ -1,7 +1,7 @@
 /** chunk id: 572595 params = (module,exports,require) **/
 a.d(t, {
-    M: () => o,
-    t: () => d
+    M: () => d,
+    t: () => o
 });
 var l = a(627968);
 a(64700);
@@ -9,11 +9,11 @@ var n = a(397927),
     r = a(4227),
     s = a(466459);
 let i = "collectibles shop product details modal",
-    d = e => {
+    o = e => {
         let {
             product: t,
-            category: d,
-            shouldCheckoutWithOrbs: o,
+            category: o,
+            shouldCheckoutWithOrbs: d,
             analyticsSource: c,
             analyticsLocations: u,
             returnRef: x,
@@ -33,8 +33,8 @@ let i = "collectibles shop product details modal",
             return a => (0, l.jsx)(e, {
                 ...a,
                 product: t,
-                category: d,
-                shouldCheckoutWithOrbs: o,
+                category: o,
+                shouldCheckoutWithOrbs: d,
                 analyticsSource: c,
                 analyticsLocations: u,
                 returnRef: x,
@@ -46,6 +46,6 @@ let i = "collectibles shop product details modal",
             modalKey: i
         })
     },
-    o = () => {
+    d = () => {
         (0, n.OoC)(i)
     }

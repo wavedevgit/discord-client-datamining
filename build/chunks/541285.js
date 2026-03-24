@@ -25,8 +25,8 @@ var i = n(627968),
     E = n(927573),
     b = n(652215),
     T = n(985018),
-    I = n(276317),
-    C = n(483604);
+    C = n(276317),
+    I = n(483604);
 
 function v(e) {
     let {
@@ -50,7 +50,7 @@ function v(e) {
         text: h ? T.intl.string(T.t["IQ/6Sg"]) : null,
         position: "top",
         children: (0, i.jsx)("div", {
-            className: I.FS,
+            className: C.FS,
             children: (0, i.jsx)(c.QWc, {
                 variant: "primary",
                 textVariant: "text-sm/semibold",
@@ -70,9 +70,9 @@ function S(e) {
         locked: l
     } = e;
     if (0 === s.length) return (0, i.jsxs)("div", {
-        className: I.pb,
+        className: C.pb,
         children: [(0, i.jsx)(A.A, {
-            className: I.wV
+            className: C.wV
         }), (0, i.jsx)(c.Text, {
             variant: "text-sm/normal",
             children: T.intl.string(T.t.DEBGqA)
@@ -88,13 +88,13 @@ function S(e) {
         }) && T.intl.string(T.t["K+D+GF"]) : T.intl.string(T.t.nOtPMM)
     }
     return (0, i.jsxs)("div", {
-        className: I.eZ,
+        className: C.eZ,
         children: [(0, i.jsx)(v, {
             guild: t,
             role: n,
             locked: l
         }), s.map((e, s) => (0, i.jsx)(u.A, {
-            className: I.p2,
+            className: C.p2,
             spec: e,
             permissions: n.permissions,
             locked: l,
@@ -133,16 +133,16 @@ function y(e) {
             search_type: "Permissions"
         }), v.current = !0)
     }, [d]), (0, i.jsx)(c.GtU, {
-        className: I.XG,
+        className: C.XG,
         style: {
             scrollPaddingTop: g
         },
         onScroll: A,
         children: (0, i.jsxs)("div", {
-            className: C.Q,
+            className: I.Q,
             children: [(0, i.jsxs)("div", {
-                className: r()(C.wx, C.ln, {
-                    [C.l6]: !p
+                className: r()(I.wx, I.ln, {
+                    [I.l6]: !p
                 }),
                 ref: _,
                 children: [(0, i.jsx)(j.A, {
@@ -151,12 +151,12 @@ function y(e) {
                     selectedSection: E.T$.PERMISSIONS,
                     setSelectedSection: a
                 }), (0, i.jsx)("div", {
-                    className: I.U9,
+                    className: C.U9,
                     children: (0, i.jsx)(N.A, {
                         role: n
                     })
                 }), (0, i.jsx)("div", {
-                    className: I.MT,
+                    className: C.MT,
                     children: (0, i.jsx)(c.IWV, {
                         query: d,
                         onChange: u,

@@ -27,14 +27,14 @@ function A(e) {
         guildId: A
     } = (0, a.O)(), [f, j] = o.lZ(n), [N, E] = o.$O(n), b = s.useMemo(() => t.filter(e => e.id !== n), [t, n]), {
         isFullServerGating: T
-    } = (0, d.A)(A), I = (0, r.gN)();
+    } = (0, d.A)(A), C = (0, r.gN)();
     return (0, i.jsx)(c.A, {
         title: p.intl.string(p.t.YNw2Sm),
         description: p.intl.string(p.t.zMW5r0),
         children: (0, i.jsxs)(l.BJc, {
             gap: 24,
             children: [(0, i.jsxs)(l.D0$, {
-                disabled: I,
+                disabled: C,
                 label: p.intl.string(p.t.DFlDaE),
                 description: p.intl.string(p.t.kHalVA),
                 children: [(0, i.jsx)(u.A, {
@@ -60,17 +60,17 @@ function A(e) {
                             }))]
                         })
                     },
-                    disabled: I
+                    disabled: C
                 })]
             }), (0, i.jsx)(l.D0$, {
                 label: p.intl.string(p.t.S2kKzP),
                 description: p.intl.string(p.t["5a4AxV"]),
-                disabled: I,
+                disabled: C,
                 children: e => (0, i.jsxs)(i.Fragment, {
                     children: [T && (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)(m.A, {
                             "aria-labelledby": e.labelId,
-                            disabled: I
+                            disabled: C
                         }), (0, i.jsx)(l.hKd, {
                             size: 8
                         })]
@@ -79,7 +79,7 @@ function A(e) {
             }), (0, i.jsx)(l.D0$, {
                 label: p.intl.string(p.t.RdwKw7),
                 description: p.intl.string(p.t.zAww7V),
-                disabled: I,
+                disabled: C,
                 children: (0, i.jsx)(h.A, {})
             }), (0, i.jsx)(x.A, {})]
         })

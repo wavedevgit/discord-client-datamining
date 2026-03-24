@@ -12,7 +12,7 @@ let i = e => {
         errorLabel: t,
         children: a,
         elementOptions: i
-    } = e, d = Date.now();
+    } = e, o = Date.now();
     return (0, l.jsx)(s.W, {
         label: t,
         children: (0, l.jsx)(n.Elements, {
@@ -25,5 +25,5 @@ let i = e => {
             },
             children: a
         })
-    }, d)
+    }, o)
 }

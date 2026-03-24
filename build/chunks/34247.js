@@ -1,7 +1,7 @@
 /** chunk id: 34247 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => p
 });
 var i = n(627968),
     s = n(64700),
@@ -15,11 +15,11 @@ var i = n(627968),
     h = n(488995),
     A = n(324580),
     m = n(654487),
-    p = n(985018);
-let _ = s.forwardRef(function(e, t) {
+    _ = n(985018);
+let p = s.forwardRef(function(e, t) {
     let {
         selected: n,
-        onClick: _,
+        onClick: p,
         questId: g,
         className: f
     } = e, x = s.useCallback(() => {
@@ -61,10 +61,10 @@ let _ = s.forwardRef(function(e, t) {
         ref: t,
         className: f,
         onClick: () => {
-            x(), void 0 !== _ && _()
+            x(), void 0 !== p && p()
         },
         selected: n,
-        tooltip: p.intl.string(p.t["4nEZLk"]),
+        tooltip: _.intl.string(_.t["4nEZLk"]),
         icon: a.QGJ
     })
 })

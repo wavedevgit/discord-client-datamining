@@ -23,8 +23,8 @@ var a = n(627968),
     j = n(201805),
     A = n(545986),
     C = n(194267),
-    T = n(963713),
-    y = n(758836),
+    y = n(963713),
+    T = n(758836),
     S = n(985018),
     E = n(703653);
 
@@ -86,7 +86,7 @@ let I = e => {
             text: S.intl.string(S.t.csptqV)
         })
     },
-    R = e => {
+    k = e => {
         let {
             quest: t
         } = e, n = (0, u.NA)({
@@ -103,7 +103,7 @@ let I = e => {
             text: n
         }) : null
     },
-    k = e => {
+    R = e => {
         let {
             quest: t,
             sourceQuestContent: n,
@@ -144,7 +144,7 @@ let I = e => {
             sourceQuestContent: m
         }), p = i.useCallback(e => {
             r?.(e), (0, _.ks)(t.config) && t.userStatus?.claimedAt != null ? (0, d.Cz)({
-                tab: y.G2.ORBS,
+                tab: T.G2.ORBS,
                 analyticsLocations: [],
                 analyticsSource: o.A.QUEST_HOME_PAGE
             }) : x()
@@ -170,7 +170,7 @@ let I = e => {
             onGameSheetOpen: u,
             onGameSheetClose: m,
             taskDetails: h
-        } = i.useContext(T.T), x = d.userStatus?.completedAt != null, p = (0, f.vv)(d), g = r !== c.X0.SELECT && !s && !l, _ = null;
+        } = i.useContext(y.T), x = d.userStatus?.completedAt != null, p = (0, f.vv)(d), g = r !== c.X0.SELECT && !s && !l, _ = null;
         return x ? _ = (0, a.jsx)(w, {
             quest: d,
             sourceQuestContent: t
@@ -178,12 +178,12 @@ let I = e => {
             quest: d,
             sourceQuestContent: t,
             taskDetails: h
-        }) : (0, v.vA)(d) ? _ = (0, a.jsx)(R, {
+        }) : (0, v.vA)(d) ? _ = (0, a.jsx)(k, {
             quest: d
         }) : r === c.X0.CONSOLE && n ? _ = (0, a.jsx)(O, {
             quest: d,
             sourceQuestContent: t
-        }) : g && (0, v.ui)(d) ? _ = (0, a.jsx)(k, {
+        }) : g && (0, v.ui)(d) ? _ = (0, a.jsx)(R, {
             quest: d,
             sourceQuestContent: t,
             taskDetails: h,

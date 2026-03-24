@@ -16,8 +16,8 @@ var i, s, l = n(64700),
     h = n(843472),
     A = n(334738),
     m = n(775602),
-    p = n(323073),
-    _ = n(181079),
+    _ = n(323073),
+    p = n(181079),
     g = n(567035),
     f = n(455234),
     x = n(863005),
@@ -319,7 +319,7 @@ function W(e, t, n, i) {
     if (s.isPrivate()) {
         if (0 === O.Ay.getMentionCount(i)) return
     } else if (!(0, f.Y)(s) && 0 === O.Ay.getMentionCount(i)) return;
-    if (!s.isPrivate() && !R.A.can(P.xBc.READ_MESSAGE_HISTORY, s) || (0, p.qR)(s)) return;
+    if (!s.isPrivate() && !R.A.can(P.xBc.READ_MESSAGE_HISTORY, s) || (0, _.qR)(s)) return;
     let l = O.Ay.ackMessageId(i);
     if (null == l) {
         let e = y.A.getGuild(s.guild_id);
@@ -346,7 +346,7 @@ function W(e, t, n, i) {
         mentionCount: o,
         sortOrder: function(e, t, n) {
             let i = T.A.getChannel(t);
-            if (_.A.isFavorite(t)) return 0;
+            if (p.A.isFavorite(t)) return 0;
             if (i.isPrivate()) return 1;
             if (O.Ay.getMentionCount(t) > 0) return O.Ay.getIsMentionLowImportance(t) ? 3 : 2;
             if (null != n) {
@@ -365,7 +365,7 @@ function W(e, t, n, i) {
         }(n, i, r),
         order: 0
     };
-    (0, p.qR)(s) ? t.push({
+    (0, _.qR)(s) ? t.push({
         ...d,
         type: "nsfw"
     }): s.isForumLikeChannel() ? t.push({

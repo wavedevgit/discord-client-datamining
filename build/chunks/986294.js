@@ -23,14 +23,14 @@ var a = n(627968),
     j = n(403362),
     A = n(603047),
     C = n(435738),
-    T = n(99753),
-    y = n(868068),
+    y = n(99753),
+    T = n(868068),
     S = n(476398),
     E = n(405311),
     N = n(424994),
     I = n(750100),
     O = n(661251);
-let R = [{
+let k = [{
     key: "type",
     cellClassName: l()(I.Hn, I.T$),
     render(e) {
@@ -63,16 +63,16 @@ let R = [{
         let {
             type: t
         } = e;
-        return (0, a.jsx)(k, {
+        return (0, a.jsx)(R, {
             type: t
         })
     }
 }];
 
-function k(e) {
+function R(e) {
     let {
         type: t
-    } = e, n = (0, u.bG)([T.A], () => T.A.getFilters()), i = n?.types?.has(t) ?? !1;
+    } = e, n = (0, u.bG)([y.A], () => y.A.getFilters()), i = n?.types?.has(t) ?? !1;
     return (0, a.jsx)(h.dOG, {
         checked: i,
         onChange: function() {
@@ -91,8 +91,8 @@ function k(e) {
 
 function w() {
     var e;
-    let t, n = (0, u.bG)([T.A], () => T.A.getFeed(N.X1.GLOBAL_FEED)),
-        s = (0, u.bG)([T.A], () => T.A.getDebugImpressionCappingDisabled()),
+    let t, n = (0, u.bG)([y.A], () => y.A.getFeed(N.X1.GLOBAL_FEED)),
+        s = (0, u.bG)([y.A], () => y.A.getDebugImpressionCappingDisabled()),
         l = (0, u.bG)([C.A], () => C.A.getDebugFastImpressionCappingEnabled()),
         r = (e = n?.entries?.map(e => e.content), Object.keys(t = o().groupBy(e, e => e.content_type)).map(e => {
             let n = t[e];
@@ -102,9 +102,9 @@ function w() {
                 entries: n
             }
         })),
-        d = (0, u.bG)([T.A], () => T.A.getFeedState(N.X1.GLOBAL_FEED)?.loading === !0),
-        [k, w] = i.useState(""),
-        P = (0, u.bG)([b.A, p.A], () => parseInt(k) > 0 ? k : b.A.searchGamesByName(k)[0] ?? p.A.getApplicationByName(k)?.id, [k]),
+        d = (0, u.bG)([y.A], () => y.A.getFeedState(N.X1.GLOBAL_FEED)?.loading === !0),
+        [R, w] = i.useState(""),
+        P = (0, u.bG)([b.A, p.A], () => parseInt(R) > 0 ? R : b.A.searchGamesByName(R)[0] ?? p.A.getApplicationByName(R)?.id, [R]),
         M = (0, v.A)({
             applicationId: P,
             location: "DevToolsContentInventory",
@@ -129,7 +129,7 @@ function w() {
                     variant: "text-md/semibold",
                     children: "Inventory"
                 }), r.length > 0 && (0, a.jsx)(_.A, {
-                    columns: R,
+                    columns: k,
                     data: r
                 }), (0, a.jsx)(E.A, {}), (0, a.jsx)(h.Button, {
                     variant: "primary",
@@ -195,9 +195,9 @@ function w() {
                     placeholder: "App ID or full name",
                     onChange: e => (0 === e.length || e.length >= 18) && w(e),
                     onKeyDown: e => {
-                        "Enter" === e.key && (k === e.currentTarget.value ? M?.(e) : w(e.currentTarget.value))
+                        "Enter" === e.key && (R === e.currentTarget.value ? M?.(e) : w(e.currentTarget.value))
                     },
-                    error: k.length > 0 && null == M ? `No game profile for ${P??k+" - try by id"}.` : void 0,
+                    error: R.length > 0 && null == M ? `No game profile for ${P??R+" - try by id"}.` : void 0,
                     helperText: null != M ? "Game profile found" : void 0
                 }), (0, a.jsx)("ul", {
                     children: U.map(e => (0, a.jsx)("li", {
@@ -213,7 +213,7 @@ function w() {
                     children: "Activity Sharing"
                 }), (0, a.jsx)(h.l6P, {
                     label: "Force show game",
-                    options: y.K.map(e => ({
+                    options: T.K.map(e => ({
                         label: e,
                         value: e,
                         id: e

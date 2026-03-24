@@ -32,8 +32,8 @@ function b() {
         C = i.useCallback(e => {
             g(e), n && t(e)
         }, [n, t]),
-        T = (0, x.i)(e => e.showSelfActivity),
-        y = (0, x.i)(e => e.setShowSelfActivity),
+        y = (0, x.i)(e => e.showSelfActivity),
+        T = (0, x.i)(e => e.setShowSelfActivity),
         S = (0, x.i)(e => e.recommendationApplicationIds),
         E = (0, x.i)(e => e.setRecommendationApplicationIds),
         N = i.useCallback(e => {
@@ -45,15 +45,15 @@ function b() {
                 ...e
             })) : d.cL()
         }, []),
-        R = (0, u.A)({
+        k = (0, u.A)({
             location: "DevToolsSlayerStorefrontPanel",
             applicationId: s,
             source: c.Ob.Embed,
             trackEntryPointImpression: !0
         }),
-        k = i.useCallback(e => {
-            R?.(e)
-        }, [R]);
+        R = i.useCallback(e => {
+            k?.(e)
+        }, [k]);
     return (0, a.jsx)("div", {
         className: l()(_.nd, f.n),
         children: (0, a.jsxs)("div", {
@@ -71,15 +71,15 @@ function b() {
                 onChange: A
             }), (0, a.jsx)(o.dOG, {
                 label: "Show own voice activity (bypass self check)",
-                checked: T,
-                onChange: y
+                checked: y,
+                onChange: T
             }), (0, a.jsx)(o.dOG, {
                 label: "Enable application test mode",
                 checked: I,
                 onChange: O
             }), (0, a.jsx)(o.Button, {
                 text: "Open Game Profile Modal",
-                onClick: k
+                onClick: R
             }), (0, a.jsx)(o.Heading, {
                 variant: "heading-lg/normal",
                 children: "Wishlists"

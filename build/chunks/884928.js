@@ -4,14 +4,14 @@ n.d(t, {
 });
 var r = n(64700),
     i = n(665171),
-    l = n(488803),
-    s = n(942975);
+    s = n(488803),
+    l = n(942975);
 
 function o(e) {
-    let t = (0, l.C$)(e, "useLoadGuildPowerups");
+    let t = (0, s.C$)(e, "useLoadGuildPowerups");
     r.useEffect(() => {
         t && (0, i.z9)(e)
     }, [e, t]), r.useEffect(() => {
-        (0, s.AK)(e), (0, s.Xd)(e)
+        (0, l.AK)(e), (0, l.Xd)(e)
     }, [e])
 }

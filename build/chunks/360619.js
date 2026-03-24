@@ -14,7 +14,7 @@ function d() {
         t = (0, o.b_)(),
         n = (0, i.Hp)(),
         d = (0, l.s)();
-    return a.useMemo(() => (0, r.zj)({
+    return a.useMemo(() => (0, r.z)({
         unseenGiftCount: e,
         isOverlaySupported: t,
         paymentsBlocked: n,

@@ -138,8 +138,8 @@ function N(e) {
         j = c?.configuration != null,
         N = c?.index ?? -1,
         [E, b] = (t = c?.configuration?.value, n = f ?? _.so.GREATER_THAN, l = Math.round(Number(t ?? 0)), n === _.so.GREATER_THAN ? l = Math.max(1, l + 1) : n === _.so.LESS_THAN && (l = Math.max(0, l - 1)), [l.toString(), n]),
-        [T, I] = s.useState(E),
-        C = null != o ? p.intl.format(o, {
+        [T, C] = s.useState(E),
+        I = null != o ? p.intl.format(o, {
             count: T,
             metadataHook: () => T
         }) : (0, i.jsx)("span", {
@@ -167,7 +167,7 @@ function N(e) {
                 className: A.bM,
                 children: (0, i.jsx)(u.Text, {
                     variant: "text-md/normal",
-                    children: C
+                    children: I
                 })
             })]
         }), (0, i.jsx)("td", {
@@ -179,7 +179,7 @@ function N(e) {
                     value: T,
                     onChange: e => {
                         let t, n;
-                        if (I(e), null == c) return;
+                        if (C(e), null == c) return;
                         let [i, s] = (t = f ?? _.so.GREATER_THAN, n = Math.round(Number(e ?? 0)), t === _.so.GREATER_THAN ? n = Math.max(0, n - 1) : t === _.so.LESS_THAN && (n = Math.max(1, n + 1)), [n.toString(), t]);
                         "" !== e && x({
                             connectionType: m?.type ?? _.zR,
@@ -327,7 +327,7 @@ function T(e) {
     })
 }
 
-function I(e) {
+function C(e) {
     let {
         configMetadataMap: t,
         onConfigurationChange: n,
@@ -370,7 +370,7 @@ function I(e) {
     })
 }
 
-function C(e) {
+function I(e) {
     let {
         configMetadataMap: t,
         onConfigurationChange: n,
@@ -632,12 +632,12 @@ function O(e) {
             });
             break;
         case h.fg2.TWITTER:
-            _ = (0, i.jsx)(I, {
+            _ = (0, i.jsx)(C, {
                 ...m
             });
             break;
         case h.fg2.REDDIT:
-            _ = (0, i.jsx)(C, {
+            _ = (0, i.jsx)(I, {
                 ...m
             });
             break;

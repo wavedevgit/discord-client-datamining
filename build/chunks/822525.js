@@ -32,17 +32,17 @@ function b(e) {
         priceTiers: a,
         onDeleteEditState: b,
         groupListingId: T,
-        onBeforeDispatchNewListing: I,
-        onAfterDispatchNewListing: C
+        onBeforeDispatchNewListing: C,
+        onAfterDispatchNewListing: I
     } = e, [v, S] = s.useState(n), y = (0, d.bG)([h.A], () => h.A.getSubscriptionListing(v)), R = null == y, [O, G] = s.useState(R), L = y?.subscription_plans[0], D = y?.published ?? !1, M = y?.archived ?? !1, k = !M && !D && void 0 !== y, U = void 0 === y, P = (0, _.gN)(), [w] = A.tx(v), [B] = A.bL(v), [F] = A.I8(v), [H] = A.lK(v, 1024), V = "" !== w ? w : N.intl.string(N.t.QWhe9G), z = "" !== w && null != H && "" !== F && null != B && !P, W = A.rf(v), {
-        loading: Y,
-        error: K,
+        loading: K,
+        error: Y,
         handleCreateOrUpdateFromEditState: X
     } = A.j1(), {
         submitting: J,
         error: Z,
         publishSubscriptionListing: q
-    } = (0, x.Yc)(), Q = Y || J;
+    } = (0, x.Yc)(), Q = K || J;
     return (0, i.jsxs)("div", {
         className: E.kL,
         children: [(0, i.jsxs)("div", {
@@ -101,9 +101,9 @@ function b(e) {
                         guildId: t,
                         editStateId: v,
                         groupListingId: T,
-                        onBeforeDispatchNewListing: I,
+                        onBeforeDispatchNewListing: C,
                         onAfterDispatchNewListing: e => {
-                            S(e.id), C?.(e)
+                            S(e.id), I?.(e)
                         }
                     }),
                     disabled: !z || !W,
@@ -127,7 +127,7 @@ function b(e) {
                 allSubscriptionListings: l,
                 priceTiers: a,
                 loading: Q,
-                error: K ?? Z,
+                error: Y ?? Z,
                 handlePublishTier: () => {
                     o()(null != T, "group listing doesnt exist"), o()(null != y, "subscription listing doesnt exist"), q({
                         guildId: t,

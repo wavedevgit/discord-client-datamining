@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(627968),
     i = n(158954),
-    l = n(732955),
-    s = n(397927),
+    s = n(732955),
+    l = n(397927),
     o = n(49999),
     a = n(333354),
     u = n(985018),
@@ -32,14 +32,14 @@ function p(e) {
             children: u.intl.string(a.default.pycxTr)
         }), (0, r.jsx)("div", {
             className: d.VN,
-            children: (0, r.jsx)(l.K0, {
+            children: (0, r.jsx)(s.K0, {
                 variant: "icon-only",
                 size: "md",
                 "aria-label": u.intl.string(u.t.cpT0Cq),
                 onClick: () => {
                     t(o.i.USER_DISMISS)
                 },
-                icon: s.PGe
+                icon: l.PGe
             })
         })]
     })

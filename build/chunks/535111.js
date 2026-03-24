@@ -16,9 +16,9 @@ var s = n(503698),
     h = n(692969),
     A = n(485599),
     m = n(985018),
-    p = n(237235);
+    _ = n(237235);
 
-function _(e) {
+function p(e) {
     let {
         name: t,
         applicationId: n
@@ -30,9 +30,9 @@ function _(e) {
     });
     return (0, i.jsx)(a.DUT, {
         onClick: s,
-        className: l()(null != s && p.On),
+        className: l()(null != s && _.On),
         children: (0, i.jsx)(A.A, {
-            className: p.mO,
+            className: _.mO,
             children: t
         })
     })
@@ -50,26 +50,26 @@ function g(e) {
         popoutTargetRef: g
     } = e, f = null != n ? n.name : null != s ? s.name : m.intl.string(m.t["UQMV/E"]);
     return (0, c.z)(), (0, i.jsxs)("div", {
-        className: p.cm,
+        className: _.cm,
         children: [(0, i.jsxs)("div", {
-            className: p.f9,
+            className: _.f9,
             children: [(0, i.jsx)(d.A, {
-                className: p.Gt,
+                className: _.Gt,
                 game: n,
                 pid: s?.pid,
                 ref: A
             }), t ? (0, i.jsx)(a.npA, {
                 size: "md",
                 color: "currentColor",
-                className: p.it
+                className: _.it
             }) : null]
         }), (0, i.jsx)(o.M, {
             popoutTargetRef: g,
             isForceShowSharingPopout: u,
             setIsForceShowSharingPopout: h,
             children: (0, i.jsxs)("div", {
-                className: p.pq,
-                children: [null != f ? (0, i.jsx)(_, {
+                className: _.pq,
+                children: [null != f ? (0, i.jsx)(p, {
                     name: f,
                     applicationId: n?.id
                 }) : null, (0, i.jsx)(r.G, {

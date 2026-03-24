@@ -8,8 +8,8 @@ var n = a(835245),
     r = a(397927),
     s = a(73153),
     i = a(391048),
-    d = a(636099),
-    o = a(608805),
+    o = a(636099),
+    d = a(608805),
     c = a(120700),
     u = a(589078),
     x = a(979286),
@@ -57,7 +57,7 @@ function j(e) {
             if ((0, p.S)({
                     checkoutSucceeded: I
                 }), !I) {
-                let e = (0, o.q1)({
+                let e = (0, d.q1)({
                     location: "CollectiblesPaymentModal",
                     unifiedCheckoutFlow: c.C.COLLECTIBLES_CHECKOUT
                 });
@@ -68,9 +68,9 @@ function j(e) {
                     is_gift: y,
                     sku_id: u,
                     location_stack: b,
-                    checkout_design: e ? o.rS.UNIFIED : o.rS.LEGACY
+                    checkout_design: e ? d.rS.UNIFIED : d.rS.LEGACY
                 })
-            }(0, i.ET)(), (0, d.z)(), S?.(I), I && (0, x.gB)()
+            }(0, i.ET)(), (0, o.z)(), S?.(I), I && (0, x.gB)()
         },
         onCloseRequest: () => {
             null != t && f.has(t) && (0, r.OoC)(w)
@@ -105,8 +105,8 @@ let v = e => {
         modalKey: r,
         isGift: s = !1,
         giftMessage: i,
-        giftingOrigin: d,
-        giftRecipient: o,
+        giftingOrigin: o,
+        giftRecipient: d,
         onClose: c,
         onCloseCallback: x,
         onCloseRequest: h,
@@ -119,8 +119,8 @@ let v = e => {
         giftContextProps: {
             isGift: s,
             giftMessage: i,
-            giftingOrigin: d,
-            giftRecipient: o
+            giftingOrigin: o,
+            giftRecipient: d
         },
         onClose: c,
         onComplete: m,

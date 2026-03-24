@@ -1,7 +1,7 @@
 /** chunk id: 241499 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    _: () => C
+    _: () => I
 });
 var i = n(627968),
     s = n(64700),
@@ -26,7 +26,7 @@ var i = n(627968),
     b = n(828771);
 let T = "RULE";
 
-function I(e) {
+function C(e) {
     let {
         rule: t,
         rulesChannel: n,
@@ -39,8 +39,8 @@ function I(e) {
         focused: A,
         onFocus: f,
         previewEnabled: N,
-        isDragEnabled: I,
-        disabled: C
+        isDragEnabled: C,
+        disabled: I
     } = e, v = s.useRef(null), S = s.useRef(null), [{
         textValue: y,
         richValue: R
@@ -93,7 +93,7 @@ function I(e) {
                     placeholder: E.intl.string(E.t.BRkD41),
                     focused: A,
                     onChange: (e, n, i) => {
-                        let s = C ? t.value : n;
+                        let s = I ? t.value : n;
                         s.length > j.pc && (s = s.slice(0, j.pc)), n !== s && (n = s, i = (0, x.x7)(s)), a(n), O({
                             textValue: n,
                             richValue: i
@@ -121,7 +121,7 @@ function I(e) {
                 ref: S,
                 className: b.cK,
                 "data-dnd-name": M,
-                children: I && (0, i.jsx)(m.WP0, {
+                children: C && (0, i.jsx)(m.WP0, {
                     size: "xs",
                     color: "currentColor",
                     className: b.co
@@ -131,24 +131,24 @@ function I(e) {
     })
 }
 
-function C(e) {
+function I(e) {
     let {
         rules: t,
         setRules: n,
         guild: l,
         disabled: r
-    } = e, a = l.rulesChannelId, d = l.features.has(N.GuildFeatures.PREVIEW_ENABLED), c = (0, u.bG)([_.A], () => null != a ? _.A.getChannel(a) : null), g = (0, u.bG)([p.Ay], () => p.Ay.getDefaultChannel(l.id)), [x, h] = s.useState(null), [T, C] = s.useState(null), v = s.useCallback(e => {
+    } = e, a = l.rulesChannelId, d = l.features.has(N.GuildFeatures.PREVIEW_ENABLED), c = (0, u.bG)([_.A], () => null != a ? _.A.getChannel(a) : null), g = (0, u.bG)([p.Ay], () => p.Ay.getDefaultChannel(l.id)), [x, h] = s.useState(null), [T, I] = s.useState(null), v = s.useCallback(e => {
         if (!r && t.length !== j.yN)
             if (null != e && "" === t[t.length - 1].value) {
                 let i = [...t];
                 i[t.length - 1] = {
                     ...i[t.length - 1],
                     value: e
-                }, n(i), C(i.length - 1)
+                }, n(i), I(i.length - 1)
             } else n([...t, {
                 id: o()(),
                 value: e ?? ""
-            }]), C(t.length)
+            }]), I(t.length)
     }, [r, t, n]), S = s.useCallback(() => {
         r || v(void 0)
     }, [v, r]), y = s.useCallback((e, i) => {
@@ -195,7 +195,7 @@ function C(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             className: b.$W,
-            children: t.map((e, s) => (0, i.jsx)(I, {
+            children: t.map((e, s) => (0, i.jsx)(C, {
                 rulesChannel: c ?? g,
                 rule: e,
                 index: s,
@@ -211,7 +211,7 @@ function C(e) {
                 onRuleReorder: R,
                 isDropHovered: s === x,
                 focused: s === T,
-                onFocus: C,
+                onFocus: I,
                 previewEnabled: d ?? !0,
                 isDragEnabled: !r && t.length > 1,
                 disabled: r

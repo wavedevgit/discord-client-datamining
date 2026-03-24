@@ -27,8 +27,8 @@ let A = {
         [_.qH.REDUCED_MOTION]: null
     },
     C = "debug",
-    T = "reduced-motion-preview-modal",
-    y = e => {
+    y = "reduced-motion-preview-modal",
+    T = e => {
         let {
             transitionState: t,
             onClose: n,
@@ -99,13 +99,13 @@ let A = {
             }), r ? (0, a.jsx)(c.DUT, {
                 className: l()(v.zd, v.eB),
                 onClick: () => {
-                    (0, c.kBI)(T) ? (0, c.OoC)(T) : (0, c.mMO)(() => Promise.resolve(e => (0, a.jsx)(y, {
+                    (0, c.kBI)(y) ? (0, c.OoC)(y) : (0, c.mMO)(() => Promise.resolve(e => (0, a.jsx)(T, {
                         ...e,
                         frameSrc: n?.src ?? null,
                         theme: i
                     })), {
-                        modalKey: T,
-                        onCloseRequest: () => (0, c.OoC)(T)
+                        modalKey: y,
+                        onCloseRequest: () => (0, c.OoC)(y)
                     })
                 },
                 children: d
@@ -125,7 +125,7 @@ let A = {
             effect: t
         } = e, {
             upsertConfig: n
-        } = (0, g.wu)(), s = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [d, j] = i.useState(!0), T = i.useRef({}), [y, E] = i.useState(!1), [N, I] = i.useState(!1), [O, R] = i.useState(8), [k, w] = i.useState([]), [D, P] = i.useState(A), M = i.useRef([]), [L, U] = i.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), G = i.useMemo(() => ({
+        } = (0, g.wu)(), s = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [d, j] = i.useState(!0), y = i.useRef({}), [T, E] = i.useState(!1), [N, I] = i.useState(!1), [O, k] = i.useState(8), [R, w] = i.useState([]), [D, P] = i.useState(A), M = i.useRef([]), [L, U] = i.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), G = i.useMemo(() => ({
             id: C,
             skuId: C,
             title: C,
@@ -133,9 +133,9 @@ let A = {
             accessibilityLabel: C,
             reducedMotionSrc: "",
             thumbnailPreviewSrc: "",
-            effects: k,
+            effects: R,
             animationType: r.l.ANIMATION_TYPE_UNSPECIFIED
-        }), [k]), F = y ? c.LU0.themes.DARKER : c.LU0.themes.LIGHT, V = e => {
+        }), [R]), F = T ? c.LU0.themes.DARKER : c.LU0.themes.LIGHT, V = e => {
             let t = e.currentTarget.files;
             return null == t ? null : t[0]
         }, W = (e, t) => {
@@ -185,11 +185,11 @@ let A = {
                 skuId: e.skuId,
                 name: L,
                 config: {
-                    effects: k,
+                    effects: R,
                     stillFrames: D
                 }
             })
-        }, [k, D, L]), i.useEffect(() => () => {
+        }, [R, D, L]), i.useEffect(() => () => {
             M.current.forEach(e => {
                 URL.revokeObjectURL(e)
             }), M.current = []
@@ -201,31 +201,31 @@ let A = {
                 },
                 children: [(0, a.jsx)(m.A, {
                     ref: e => {
-                        T.current.animated = e
+                        y.current.animated = e
                     },
                     onChange: e => {
                         let t = V(e);
                         null != t && (0, _.Mz)(t, async e => {
-                            let n = await (0, _.Ay)(e, t, k.length);
+                            let n = await (0, _.Ay)(e, t, R.length);
                             w(e => [...e, n])
                         })
                     },
                     multiple: !1
                 }), (0, a.jsx)(m.A, {
                     ref: e => {
-                        T.current.thumbnail = e
+                        y.current.thumbnail = e
                     },
                     onChange: e => W(_.qH.THUMBNAIL, e),
                     multiple: !1
                 }), (0, a.jsx)(m.A, {
                     ref: e => {
-                        T.current.static = e
+                        y.current.static = e
                     },
                     onChange: e => W(_.qH.STATIC, e),
                     multiple: !1
                 }), (0, a.jsx)(m.A, {
                     ref: e => {
-                        T.current.reducedMotion = e
+                        y.current.reducedMotion = e
                     },
                     onChange: e => W(_.qH.REDUCED_MOTION, e),
                     multiple: !1
@@ -252,10 +252,10 @@ let A = {
                         children: "Dark Theme"
                     }), (0, a.jsx)("input", {
                         type: "checkbox",
-                        checked: y,
+                        checked: T,
                         className: v.OO,
                         onChange: () => {
-                            E(!y)
+                            E(!T)
                         }
                     }), (0, a.jsx)(c.Text, {
                         variant: "text-md/normal",
@@ -279,7 +279,7 @@ let A = {
                         max: 24,
                         step: 2,
                         value: O,
-                        onChange: e => R(+e.target.value)
+                        onChange: e => k(+e.target.value)
                     }), (0, a.jsxs)(c.Text, {
                         variant: "text-sm/normal",
                         children: [O, "px"]
@@ -337,7 +337,7 @@ let A = {
                         children: [(0, a.jsx)(c.Button, {
                             variant: "active",
                             text: "Upload Animated Layer",
-                            onClick: () => T.current.animated?.activateUploadDialogue()
+                            onClick: () => y.current.animated?.activateUploadDialogue()
                         }), (0, a.jsx)(c.Text, {
                             variant: "text-sm/semibold",
                             children: "Make sure to upload the bottommost layer first!"
@@ -347,15 +347,15 @@ let A = {
                         children: [(0, a.jsx)(c.Button, {
                             variant: "active",
                             text: "Upload thumbnail.png",
-                            onClick: () => T.current.thumbnail?.activateUploadDialogue()
+                            onClick: () => y.current.thumbnail?.activateUploadDialogue()
                         }), (0, a.jsx)(c.Button, {
                             variant: "active",
                             text: "Upload static.png",
-                            onClick: () => T.current.static?.activateUploadDialogue()
+                            onClick: () => y.current.static?.activateUploadDialogue()
                         }), (0, a.jsx)(c.Button, {
                             variant: "active",
                             text: "Upload reduced_motion.png",
-                            onClick: () => T.current.reducedMotion?.activateUploadDialogue()
+                            onClick: () => y.current.reducedMotion?.activateUploadDialogue()
                         })]
                     }), (0, a.jsx)("div", {
                         className: v.q6,
@@ -381,7 +381,7 @@ let A = {
                         }), (0, a.jsxs)("div", {
                             className: v.nM,
                             children: [(0, a.jsx)(u.A, {
-                                fileContents: () => (0, _.rs)(k),
+                                fileContents: () => (0, _.rs)(R),
                                 contentType: "text/plain",
                                 fileName: `${B}_timing_config.txt`,
                                 children: (0, a.jsx)(c.Button, {
@@ -396,7 +396,7 @@ let A = {
                                     readonly: !1,
                                     config: {
                                         ...t.config,
-                                        effects: k,
+                                        effects: R,
                                         stillFrames: D
                                     }
                                 }),
@@ -431,7 +431,7 @@ let A = {
                                 }, t)
                             })
                         })]
-                    }), k.some(e => (e.randomizedSources ?? []).length > 0) && (0, a.jsxs)("div", {
+                    }), R.some(e => (e.randomizedSources ?? []).length > 0) && (0, a.jsxs)("div", {
                         className: l()(v.uW, v.l7),
                         children: [(0, a.jsx)(c.Text, {
                             variant: "text-md/bold",
@@ -459,7 +459,7 @@ let A = {
                                 w([]), P(A)
                             }
                         })
-                    }), k.map((e, t) => (0, a.jsxs)("div", {
+                    }), R.map((e, t) => (0, a.jsxs)("div", {
                         className: v.ec,
                         children: [(0, a.jsxs)("div", {
                             className: v.D1,
@@ -570,7 +570,7 @@ let A = {
                             },
                             children: (0, a.jsx)(m.A, {
                                 ref: e => {
-                                    T.current[`randomized-${t}`] = e
+                                    y.current[`randomized-${t}`] = e
                                 },
                                 onChange: e => {
                                     let n;
@@ -596,7 +596,7 @@ let A = {
                             children: [(0, a.jsx)(c.Button, {
                                 variant: "secondary",
                                 text: "Add Alternative",
-                                onClick: () => T.current[`randomized-${t}`]?.activateUploadDialogue()
+                                onClick: () => y.current[`randomized-${t}`]?.activateUploadDialogue()
                             }), (0, a.jsx)(c.Button, {
                                 variant: "critical-secondary",
                                 text: "Remove Layer",

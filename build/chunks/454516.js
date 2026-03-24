@@ -83,7 +83,7 @@ class T extends s.PureComponent {
         })
     }
 }
-let I = s.forwardRef(function(e, t) {
+let C = s.forwardRef(function(e, t) {
     let {
         guild: n,
         sortedBans: l,
@@ -116,7 +116,7 @@ let I = s.forwardRef(function(e, t) {
     })
 });
 
-function C(e) {
+function I(e) {
     let {
         guildId: t,
         storedSearchQuery: n
@@ -223,12 +223,12 @@ function v() {
     let F = s.useMemo(() => P[M.currentPage - 1] ?? [], [P, M.currentPage]);
     return null == e ? null : (0, i.jsxs)("div", {
         className: b.kL,
-        children: [(0, i.jsx)(C, {
+        children: [(0, i.jsx)(I, {
             guildId: v,
             storedSearchQuery: t
         }), (0, i.jsxs)("div", {
             className: b.gs,
-            children: [!D && (0, i.jsx)(I, {
+            children: [!D && (0, i.jsx)(C, {
                 guild: e,
                 bans: f,
                 sortedBans: F,

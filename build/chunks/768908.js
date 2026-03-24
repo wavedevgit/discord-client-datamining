@@ -417,11 +417,9 @@ let w = (0, E.L_)(function() {
     },
     H = function(e) {
         let {
-            className: t,
-            showHeader: n = !0
+            className: t
         } = e;
         return (0, i.jsxs)(v.A, {
-            title: n ? j.intl.string(j.t.AVDyEj) : null,
             className: t,
             children: [(0, i.jsx)(V, {}), (0, i.jsx)(B, {}), (0, i.jsx)(c.cGx, {
                 gap: 20

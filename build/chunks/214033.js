@@ -8,8 +8,8 @@ var n = a(397927),
     r = a(206845),
     s = a(604238),
     i = a(261225),
-    d = a(282203),
-    o = a(985018);
+    o = a(282203),
+    d = a(985018);
 let c = {
     name: "SkuList",
     id: "skulist",
@@ -32,7 +32,7 @@ let c = {
                 children: "This will be useful when wanting to get a dynamic list of sku ids from the server (like popular picks) and push them into a product grid"
             }), (0, l.jsx)("br", {}), (0, l.jsx)(i.A, {
                 columns: 3,
-                children: (0, l.jsx)(d.A, {
+                children: (0, l.jsx)(o.A, {
                     skuIds: t?.split(","),
                     skuBlock: "ShopProductCard",
                     sortPurchased: a,
@@ -49,7 +49,7 @@ let c = {
                     variant: "text-sm/bold",
                     children: "Avatar Decoration"
                 }), (0, l.jsx)(r.A, {
-                    text: o.intl.string(o.t.OpuAlK),
+                    text: d.intl.string(d.t.OpuAlK),
                     delay: 0,
                     "aria-label": !1,
                     copyValue: "1458472704192811088",
@@ -70,7 +70,7 @@ let c = {
                     variant: "text-sm/bold",
                     children: "Profile Effect"
                 }), (0, l.jsx)(r.A, {
-                    text: o.intl.string(o.t.OpuAlK),
+                    text: d.intl.string(d.t.OpuAlK),
                     delay: 0,
                     "aria-label": !1,
                     copyValue: "1458479739110166560",
@@ -91,7 +91,7 @@ let c = {
                     variant: "text-sm/bold",
                     children: "Nameplate"
                 }), (0, l.jsx)(r.A, {
-                    text: o.intl.string(o.t.OpuAlK),
+                    text: d.intl.string(d.t.OpuAlK),
                     delay: 0,
                     "aria-label": !1,
                     copyValue: "1458472704524156959",

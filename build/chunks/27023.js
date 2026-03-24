@@ -48,23 +48,23 @@ function C(e) {
         } = (0, i.Ay)(G),
         [U, O] = l.useState(k.initialStep ?? Object.keys(k.steps)[0]),
         {
-            available: E
+            available: w
         } = (0, m.A)(o),
-        w = k.steps[U],
-        [B, D] = l.useState(C?.id);
+        E = k.steps[U],
+        [D, B] = l.useState(C?.id);
     l.useEffect(() => {
-        if (null != B || S?.entitlementId == null) return;
+        if (null != D || S?.entitlementId == null) return;
         let e = L?.entitlements?.[S.entitlementId]?.sku?.product_id;
-        null != e && D(e)
-    }, [L?.entitlements, S?.entitlementId, B]);
+        null != e && B(e)
+    }, [L?.entitlements, S?.entitlementId, D]);
     let [H, M] = l.useState(void 0), R = l.useMemo(() => {
-        if (null != B) return Object.values(L?.catalog ?? {}).find(e => e.id === B)
-    }, [L?.catalog, B]), [z, W] = l.useState(S), [q, K] = l.useState(I(C) ?? S?.planId), $ = (t = (0, s.bG)([f.A], () => f.A.getStateForGuild(o)?.entitlements), n = R?.plans.find(e => e.id === q)?.cost ?? 0, null == z ? n : n - ((0, x.A)(t?.[z.entitlementId]) ?? 0)), F = l.useCallback(e => {
+        if (null != D) return Object.values(L?.catalog ?? {}).find(e => e.id === D)
+    }, [L?.catalog, D]), [z, W] = l.useState(S), [q, K] = l.useState(I(C) ?? S?.planId), $ = (t = (0, s.bG)([f.A], () => f.A.getStateForGuild(o)?.entitlements), n = R?.plans.find(e => e.id === q)?.cost ?? 0, null == z ? n : n - ((0, x.A)(t?.[z.entitlementId]) ?? 0)), F = l.useCallback(e => {
         W(e);
         let t = L?.entitlements?.[e?.entitlementId ?? ""]?.sku?.product_id;
-        null != t && D(t), K(e?.planId), Z(e?.name ?? ""), ee(e?.regionId ?? "")
+        null != t && B(t), K(e?.planId), Z(e?.name ?? ""), ee(e?.regionId ?? "")
     }, [L?.entitlements]), J = l.useCallback((e, t) => {
-        F(void 0), D(e?.id), K(t ?? I(e))
+        F(void 0), B(e?.id), K(t ?? I(e))
     }, [F]), [V, X] = l.useState(), [Y, Z] = l.useState(S?.name ?? ""), [Q, ee] = l.useState(S?.regionId ?? ""), [et, en] = l.useState(!1), ea = l.useRef(!1), el = l.useCallback(() => {
         if (M(void 0), null == P || null == R || "" === Y || "" === Q || null == q) return;
         let e = R.plans.find(e => e.id === q);
@@ -93,9 +93,9 @@ function C(e) {
                 en(!1)
             })
         };
-        E < $ ? (0, r.g)({
+        w < $ ? (0, r.g)({
             analyticsLocation: G,
-            numberOfBoostsToAdd: $ - E,
+            numberOfBoostsToAdd: $ - w,
             analyticsLocations: _,
             guild: P,
             intent: j.Pn.PERK,
@@ -109,7 +109,7 @@ function C(e) {
                 e && t()
             }
         }) : t()
-    }, [_, P, E, q, G, R, Y, Q, y, $, z]), es = l.useCallback(e => {
+    }, [_, P, w, q, G, R, Y, Q, y, $, z]), es = l.useCallback(e => {
         switch (e.type) {
             case "close":
                 y();
@@ -121,15 +121,15 @@ function C(e) {
                 el()
         }
     }, [y, el]), ei = l.useCallback(() => {
-        null != w && es(w.onBack)
-    }, [w, es]), er = l.useCallback(() => {
-        null != w && es(w.onNext)
-    }, [w, es]), ed = l.useMemo(() => new Set(Object.values(L?.catalog ?? {}).map(e => e.provider).filter(c.Vq)), [L?.catalog]);
+        null != E && es(E.onBack)
+    }, [E, es]), er = l.useCallback(() => {
+        null != E && es(E.onNext)
+    }, [E, es]), ed = l.useMemo(() => new Set(Object.values(L?.catalog ?? {}).map(e => e.provider).filter(c.Vq)), [L?.catalog]);
     return (0, a.jsx)(A.Provider, {
         value: {
             guildId: o,
             step: U,
-            stepAction: w,
+            stepAction: E,
             stepLoading: et,
             onBack: ei,
             onNext: er,
@@ -148,7 +148,7 @@ function C(e) {
             setPlanId: K,
             footerNode: V,
             setFooterNode: X,
-            availableBoostCount: E,
+            availableBoostCount: w,
             error: H,
             gameProvider: ed.size > 0 ? Array.from(ed)[0] : null
         },

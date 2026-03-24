@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(461213),
     A = n(954571),
     m = n(130802),
-    p = n(652215),
-    _ = n(49999);
+    _ = n(652215),
+    p = n(49999);
 let g = e => {
     let {
         children: t,
@@ -33,16 +33,16 @@ let g = e => {
             isOpen: A
         } = (0, o.A)();
         if ((n && i || t) && !a && !A && !__OVERLAY__) {
-            if (!s && r === p.clD.INVISIBLE) return t ? m.u5.ActivityAndStatus : m.u5.ActivityAndStatusNux;
+            if (!s && r === _.clD.INVISIBLE) return t ? m.u5.ActivityAndStatus : m.u5.ActivityAndStatusNux;
             if (!s) return t ? m.u5.Activity : m.u5.ActivityNux;
-            if (r === p.clD.INVISIBLE) return t ? m.u5.Status : m.u5.StatusNux
+            if (r === _.clD.INVISIBLE) return t ? m.u5.Status : m.u5.StatusNux
         }
         return null
     }({
         isForceShowSharingPopout: n
     });
     (0, s.useEffect)(() => {
-        n && A.default.track(p.HAw.OPEN_POPOUT, {
+        n && A.default.track(_.HAw.OPEN_POPOUT, {
             type: "SharingPrivacyPopout"
         })
     }, [n]);
@@ -58,7 +58,7 @@ let g = e => {
                 showPopout: r,
                 popoutState: x,
                 handleClose: () => {
-                    l(_.i.USER_DISMISS), g(!1)
+                    l(p.i.USER_DISMISS), g(!1)
                 },
                 popoutTargetRef: f,
                 children: t

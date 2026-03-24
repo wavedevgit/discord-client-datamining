@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(627968);
 n(64700);
 var i = n(934551),
-    l = n(158954),
-    s = n(827734),
+    s = n(158954),
+    l = n(827734),
     o = n(49999),
     a = n(985018),
     u = n(538409);
@@ -20,7 +20,7 @@ function d(e) {
         className: u.kL,
         children: [(0, r.jsx)("div", {
             className: u.VN,
-            children: (0, r.jsx)(l.K0, {
+            children: (0, r.jsx)(s.K0, {
                 variant: "icon-only",
                 size: "md",
                 "aria-label": a.intl.string(a.t.cpT0Cq),
@@ -30,13 +30,13 @@ function d(e) {
                 icon: i.XLargeIcon
             })
         }), (0, r.jsx)(i.CircleErrorIcon, {
-            color: s.A.colors.TEXT_FEEDBACK_WARNING,
+            color: l.A.colors.TEXT_FEEDBACK_WARNING,
             className: u.Kk
-        }), (0, r.jsx)(l.EYj, {
+        }), (0, r.jsx)(s.EYj, {
             variant: "text-md/semibold",
             color: "text-feedback-warning",
             children: t.title
-        }), (0, r.jsx)(l.EYj, {
+        }), (0, r.jsx)(s.EYj, {
             variant: "text-sm/medium",
             children: t.description
         })]

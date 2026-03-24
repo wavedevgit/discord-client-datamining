@@ -25,8 +25,8 @@ var i = n(627968),
     E = n(474215),
     b = n(561923),
     T = n(652215),
-    I = n(985018),
-    C = n(754136);
+    C = n(985018),
+    I = n(754136);
 let v = function() {
     let {
         analyticsLocations: e
@@ -55,67 +55,67 @@ let v = function() {
     }, []), S === c.X.FETCHED && null == y) ? (0, i.jsx)(N.g, {
         forceFetchGuildProfile: L
     }) : S === c.X.NOT_FETCHED || S === c.X.FETCHING ? (0, i.jsx)("main", {
-        className: C.u1,
+        className: I.u1,
         children: (0, i.jsx)(r.y$y, {})
     }) : null == t || null == y ? null : (0, i.jsx)(d.f5, {
         value: e,
         children: (0, i.jsxs)("main", {
-            className: C.Qs,
+            className: I.Qs,
             children: [(0, i.jsxs)("div", {
-                className: C.Cd,
+                className: I.Cd,
                 children: [(0, i.jsxs)("div", {
                     children: [(0, i.jsx)(r.Heading, {
                         variant: "heading-lg/semibold",
                         color: "text-strong",
-                        children: I.intl.string(I.t.txdaxf)
+                        children: C.intl.string(C.t.txdaxf)
                     }), (0, i.jsx)(r.Text, {
                         variant: "text-sm/medium",
                         color: "text-default",
-                        className: C.h_,
-                        children: I.intl.string(I.t["5PGZWS"])
+                        className: I.h_,
+                        children: C.intl.string(C.t["5PGZWS"])
                     })]
                 }), (0, i.jsx)(j.A, {
                     profile: y,
                     canManageGuild: R
                 }), (0, i.jsx)("div", {
-                    className: C.yF
+                    className: I.yF
                 }), (0, i.jsx)(f.A, {
                     profile: y,
                     canManageGuild: R,
                     onIconChange: O
                 }), (0, i.jsx)("div", {
-                    className: C.yF
+                    className: I.yF
                 }), (0, i.jsx)(_.A, {
                     profile: y,
                     onCustomBannerChange: G,
                     canManageGuild: R
                 }), (0, i.jsx)("div", {
-                    className: C.yF
+                    className: I.yF
                 }), (0, i.jsx)(E.A, {
                     profile: y,
                     canManageGuild: R
                 }), (0, i.jsx)("div", {
-                    className: C.yF
+                    className: I.yF
                 }), (0, i.jsx)(p.A, {
                     profile: y,
                     canManageGuild: R
                 }), (0, i.jsx)("div", {
-                    className: C.yF
+                    className: I.yF
                 }), (0, i.jsx)(A.A, {
                     profile: y,
                     canManageGuild: R
                 }), (0, i.jsx)("div", {
-                    className: C.yF
+                    className: I.yF
                 }), (0, i.jsx)(b.A, {
                     profile: y,
                     canManageGuild: R
                 })]
             }), (0, i.jsx)("div", {
-                className: C.DK,
+                className: I.DK,
                 children: (0, i.jsx)(r.HOs, {
-                    className: C.ti,
+                    className: I.ti,
                     children: (0, i.jsx)(m.Ay, {
-                        className: C.q5,
+                        className: I.q5,
                         profile: y,
                         disableCTA: !0,
                         onIconChange: R ? O : void 0,

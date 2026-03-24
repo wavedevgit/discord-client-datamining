@@ -97,13 +97,13 @@ function b(e) {
 function j() {
     let {
         name: e
-    } = (0, x.x5)(g.oh.AUDIO_INPUT), [t, n] = i.useState(!1), [s, l] = i.useState([]), v = (0, r.bG)([p.Ay], () => p.Ay.getKrispSuppressionLevel()), [j, A] = i.useState(null), C = i.useRef(null), T = i.useRef(null), [y, S] = i.useState(.5), {
+    } = (0, x.x5)(g.oh.AUDIO_INPUT), [t, n] = i.useState(!1), [s, l] = i.useState([]), v = (0, r.bG)([p.Ay], () => p.Ay.getKrispSuppressionLevel()), [j, A] = i.useState(null), C = i.useRef(null), y = i.useRef(null), [T, S] = i.useState(.5), {
         krispModels: E,
         krispModelOverride: N,
         inputMode: I,
         echoCancellation: O,
-        autoThreshold: R,
-        vadUseKrisp: k,
+        autoThreshold: k,
+        vadUseKrisp: R,
         vadKrispActivationThreshold: w,
         noiseCancellation: D,
         noiseSuppression: P,
@@ -136,7 +136,7 @@ function j() {
     function H(e) {
         if (t && W(), V(), null == F) return;
         let n = F.createBufferSource();
-        n.buffer = e.audioBuffer, T.current = F.createGain(), T.current.gain.value = y, n.connect(T.current), T.current.connect(F.destination), n.loop = !0, n.start(), C.current = n, A(e)
+        n.buffer = e.audioBuffer, y.current = F.createGain(), y.current.gain.value = T, n.connect(y.current), y.current.connect(F.destination), n.loop = !0, n.start(), C.current = n, A(e)
     }
     i.useEffect(() => {
         V()
@@ -208,18 +208,18 @@ function j() {
             }), I === g.TB.VOICE_ACTIVITY && (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsx)(d.dOG, {
                     label: "Auto Threshold",
-                    checked: R,
+                    checked: k,
                     onChange: e => c.A.setMode(g.TB.VOICE_ACTIVITY, {
                         autoThreshold: e
                     })
-                }), R && (0, a.jsxs)(a.Fragment, {
+                }), k && (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)(d.dOG, {
                         label: "Use Krisp VAD",
-                        checked: k,
+                        checked: R,
                         onChange: e => c.A.setMode(g.TB.VOICE_ACTIVITY, {
                             vadUseKrisp: e
                         })
-                    }), k && (0, a.jsx)(d.Apm, {
+                    }), R && (0, a.jsx)(d.Apm, {
                         label: "Krisp VAD Activation Threshold",
                         initialValue: w,
                         onValueChange: e => c.A.setMode(g.TB.VOICE_ACTIVITY, {
@@ -273,9 +273,9 @@ function j() {
                 })]
             }), (0, a.jsx)(d.Apm, {
                 label: "Volume",
-                initialValue: y,
+                initialValue: T,
                 asValueChanges: function(e) {
-                    null != T.current && (T.current.gain.value = e, S(e))
+                    null != y.current && (y.current.gain.value = e, S(e))
                 },
                 minValue: 0,
                 maxValue: 1

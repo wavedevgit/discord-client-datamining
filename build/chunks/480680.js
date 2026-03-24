@@ -17,8 +17,8 @@ var d = n(397927),
     A = n(964486);
 n(793574), n(688810);
 var m = n(952790),
-    p = n(85109),
-    _ = n(734057),
+    _ = n(85109),
+    p = n(734057),
     g = n(71393),
     f = n(320501),
     x = n(222823),
@@ -102,7 +102,7 @@ function P(e) {
                 })
             }, [e, t])
         }(M ? y : null);
-    let w = (0, o.yK)([p.A], () => p.A.getSavedMessages()),
+    let w = (0, o.yK)([_.A], () => _.A.getSavedMessages()),
         F = s.useMemo(() => w.flatMap(e => {
             let {
                 message: t
@@ -110,7 +110,7 @@ function P(e) {
             return null == t ? G : [{
                 id: t.id,
                 channelId: t.channel_id,
-                guildId: _.A.getBasicChannel(t.channel_id)?.guild_id,
+                guildId: p.A.getBasicChannel(t.channel_id)?.guild_id,
                 kind: O.yL.BOOKMARK,
                 message: t
             }]

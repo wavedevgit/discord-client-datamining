@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(998418),
     A = n(220628),
     m = n(933337),
-    p = n(568065),
-    _ = n(333354),
+    _ = n(568065),
+    p = n(333354),
     g = n(985018),
     f = n(294590);
 
@@ -38,20 +38,20 @@ function x(e) {
     } = (0, A.A)(t, n), {
         isLoading: y,
         error: j
-    } = (0, u.A)(t, n), R = (0, m.A)(t, n), O = (0, h.Ay)(t, n), L = O.type !== p.b_.INACTIVE, {
+    } = (0, u.A)(t, n), R = (0, m.A)(t, n), O = (0, h.Ay)(t, n), L = O.type !== _.b_.INACTIVE, {
         disabled: M,
         reason: D
     } = (0, d.A)(t, n, L), G = null != D ? {
         title: null,
         body: D
-    } : O.type === p.b_.LEVEL_ACTIVATED ? {
-        title: g.intl.string(_.default["9oYuvb"]),
-        body: g.intl.formatToPlainString(_.default.WRRYUT, {
+    } : O.type === _.b_.LEVEL_ACTIVATED ? {
+        title: g.intl.string(p.default["9oYuvb"]),
+        body: g.intl.formatToPlainString(p.default.WRRYUT, {
             perkName: O.sourcePowerup?.title ?? g.intl.string(g.t.BfF6ED)
         })
-    } : O.type === p.b_.POWERUP_ACTIVATED ? {
-        title: g.intl.string(_.default.TZsu1U),
-        body: g.intl.formatToPlainString(_.default["5HQUzD"], {
+    } : O.type === _.b_.POWERUP_ACTIVATED ? {
+        title: g.intl.string(p.default.TZsu1U),
+        body: g.intl.formatToPlainString(p.default["5HQUzD"], {
             boostCount: n.cost
         })
     } : null;
@@ -62,7 +62,7 @@ function x(e) {
         title: G?.title ?? void 0,
         shouldShow: null != G,
         delay: 100,
-        "aria-label": null != D ? D : L ? g.intl.string(_.default.TZsu1U) : void 0,
+        "aria-label": null != D ? D : L ? g.intl.string(p.default.TZsu1U) : void 0,
         children: (0, i.jsx)("div", {
             className: a()(f.zr, {
                 [f._o]: E,
@@ -83,7 +83,7 @@ function x(e) {
                         text: t.toString(),
                         icon: r
                     } : {
-                        text: g.intl.format(n ? _.default.uzQpQd : _.default.ad2Mfj, {
+                        text: g.intl.format(n ? p.default.uzQpQd : p.default.ad2Mfj, {
                             boostCount: t,
                             dotHook: () => (0, i.jsx)("span", {
                                 className: f.Om,
@@ -104,7 +104,7 @@ function x(e) {
                 });
                 return (0, i.jsx)(o.$nd, {
                     variant: L ? "secondary" : N ? "expressive" : "primary",
-                    "aria-label": g.intl.string(L ? _.default.TZsu1U : _.default.gSxlHf),
+                    "aria-label": g.intl.string(L ? p.default.TZsu1U : p.default.gSxlHf),
                     disabled: M,
                     onClick: e => {
                         e.stopPropagation(), L ? R() : S()

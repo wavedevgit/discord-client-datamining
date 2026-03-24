@@ -8,13 +8,13 @@ var l = a(814904),
     r = a(799200),
     s = a(920324),
     i = a(876333),
-    d = a(653006),
-    o = a(251301),
+    o = a(653006),
+    d = a(251301),
     c = a(436174);
 let u = {
         id: "cms",
         name: "CMS",
-        groups: [s.t, i.F, n.z, r.U, l.D, d.K, o.j, c.Y]
+        groups: [s.t, i.F, n.z, r.U, l.D, o.K, d.j, c.Y]
     },
     x = {
         collections: [u]

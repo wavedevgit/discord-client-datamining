@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(928039),
     A = n(793574),
     m = n(688810),
-    p = n(222823),
-    _ = n(203982),
+    _ = n(222823),
+    p = n(203982),
     g = n(661191),
     f = n(851109),
     x = n(932883),
@@ -134,11 +134,11 @@ function D(e) {
             messageCategoryOpenStates: W,
             toggleOpenState: Y
         } = (0, C.A)(),
-        z = (t = (0, d.yK)([E.A], () => E.A.getNotifyingChannelIds() ?? []), (0, d.bG)([E.A, p.Ay], () => {
+        z = (t = (0, d.yK)([E.A], () => E.A.getNotifyingChannelIds() ?? []), (0, d.bG)([E.A, _.Ay], () => {
             let e = E.A.getChannelInfoMap();
             for (let n of t) {
                 let t = e[n];
-                if ((null == t || t.loadState === S.Ve.UNLOADED) && p.Ay.hasUnread(n)) return !0
+                if ((null == t || t.loadState === S.Ve.UNLOADED) && _.Ay.hasUnread(n)) return !0
             }
             return !1
         }, [t]));
@@ -154,8 +154,8 @@ function D(e) {
                 animate: !0
             })
         }
-        return _._.subscribe(T.jej.SCROLL_PAGE_DOWN, t), _._.subscribe(T.jej.SCROLL_PAGE_UP, e), () => {
-            _._.unsubscribe(T.jej.SCROLL_PAGE_DOWN, t), _._.unsubscribe(T.jej.SCROLL_PAGE_UP, e)
+        return p._.subscribe(T.jej.SCROLL_PAGE_DOWN, t), p._.subscribe(T.jej.SCROLL_PAGE_UP, e), () => {
+            p._.unsubscribe(T.jej.SCROLL_PAGE_DOWN, t), p._.unsubscribe(T.jej.SCROLL_PAGE_UP, e)
         }
     }, []);
     let q = s.useCallback(() => {

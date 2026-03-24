@@ -1,6 +1,6 @@
 /** chunk id: 184247 params = (module,exports,require) **/
 a.d(t, {
-    x: () => o
+    x: () => d
 });
 var l = a(627968);
 a(64700);
@@ -8,8 +8,8 @@ var n = a(397927),
     r = a(458306),
     s = a(261225),
     i = a(673277),
-    d = a(427941);
-let o = {
+    o = a(427941);
+let d = {
     name: "BackgroundImage",
     id: "background-image",
     component: e => {
@@ -21,7 +21,7 @@ let o = {
             children: [(0, l.jsx)(n.Text, {
                 variant: "text-lg/semibold",
                 children: "Background Image just takes children and displays them in with a background image behind them, and some padding to add inset"
-            }), (0, l.jsx)(d.A, {
+            }), (0, l.jsx)(o.A, {
                 backgroundImage: {
                     src: t
                 },
@@ -45,7 +45,7 @@ let o = {
                     variant: "text-lg/semibold",
                     children: "It also automatically handles animated asset urls"
                 })
-            }), (0, l.jsx)(d.A, {
+            }), (0, l.jsx)(o.A, {
                 backgroundImage: {
                     src: a
                 },

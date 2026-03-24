@@ -1,6 +1,6 @@
 /** chunk id: 204094 params = (module,exports,require) **/
 a.d(t, {
-    r: () => d
+    r: () => o
 });
 var l = a(627968);
 a(64700);
@@ -8,7 +8,7 @@ var n = a(397927),
     r = a(206845),
     s = a(453854),
     i = a(985018);
-let d = {
+let o = {
     name: "SkuPreview",
     id: "skupreview",
     component: e => {

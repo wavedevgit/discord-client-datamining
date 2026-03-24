@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(951001),
     A = n(775602),
     m = n(793574),
-    p = n(58149),
-    _ = n(688810),
+    _ = n(58149),
+    p = n(688810),
     g = n(660387),
     f = n(343328),
     x = n(485947),
@@ -244,7 +244,7 @@ class U extends s.Component {
                 num_users_visible: a.length,
                 num_users_visible_with_mobile_indicator: r.filter(e => null != e && j.A.isMobileOnline(e)).length
             };
-        this.hasReportedAnalytics = !0, p.Ay.trackWithMetadata(L.HAw.DM_LIST_VIEWED, {
+        this.hasReportedAnalytics = !0, _.Ay.trackWithMetadata(L.HAw.DM_LIST_VIEWED, {
             ...c,
             ...(0, g.F)(),
             visible_user_ids: r.filter(e => null != e),
@@ -374,14 +374,14 @@ let P = e => {
         theme: l,
         children: a,
         listScrollerRef: d
-    } = e, h = s.Children.count(a), p = y.A.getMutablePrivateChannels(), g = (0, S.uX)(p), f = (0, c.yK)([R.default, b.A, T.A], () => {
+    } = e, h = s.Children.count(a), _ = y.A.getMutablePrivateChannels(), g = (0, S.uX)(_), f = (0, c.yK)([R.default, b.A, T.A], () => {
         let e = R.default.getPrivateChannelIds();
         return (0, S.eh)(e, [b.A, T.A])
     });
     (0, I.P)(E._);
     let {
         analyticsLocations: x
-    } = (0, _.Ay)(m.A.CONTACTS_LIST), N = (0, v.NC)(), {
+    } = (0, p.Ay)(m.A.CONTACTS_LIST), N = (0, v.NC)(), {
         keyboardModeEnabled: j,
         version: O
     } = (0, c.cf)([A.A, y.A], () => ({
@@ -420,7 +420,7 @@ let P = e => {
         defaultFocused: (h + 1).toString(),
         setFocus: D
     });
-    return (0, i.jsx)(_.f5, {
+    return (0, i.jsx)(p.f5, {
         value: x,
         children: (0, i.jsx)(r.hD, {
             navigator: k,

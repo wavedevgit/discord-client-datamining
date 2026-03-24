@@ -4,14 +4,14 @@ n.d(t, {
 });
 var r = n(64700),
     i = n(311907),
-    l = n(522055),
-    s = n(6316),
+    s = n(522055),
+    l = n(6316),
     o = n(333354),
     a = n(985018);
 
 function u(e) {
-    let t = (0, i.bG)([l.A], () => l.A.getStateForGuild(e)?.entitlements, [e]),
-        n = (0, s.A)(e);
+    let t = (0, i.bG)([s.A], () => s.A.getStateForGuild(e)?.entitlements, [e]),
+        n = (0, l.A)(e);
     return r.useMemo(() => {
         if (0 !== Object.values(t ?? {}).length) return n.length > 0 ? {
             type: "expiring",

@@ -50,18 +50,18 @@ function j(e) {
         guildProfile: g.A.getGuildProfile()
     })), N = n?.id, E = (0, a.bG)([d.A], () => d.A.get(N)), {
         fetchGuildProfile: b
-    } = (0, c.u)(N), T = j?.visibility == null || !l.i.VISIBLE.has(j?.visibility), I = j?.visibility === l.n.PUBLIC_WITH_RECRUITMENT;
+    } = (0, c.u)(N), T = j?.visibility == null || !l.i.VISIBLE.has(j?.visibility), C = j?.visibility === l.n.PUBLIC_WITH_RECRUITMENT;
     s.useEffect(() => {
         null != N && b()
     }, [N, b]);
-    let C = s.useMemo(() => null == n || null == j ? f : j, [n, j]),
+    let I = s.useMemo(() => null == n || null == j ? f : j, [n, j]),
         v = s.useCallback(() => {
-            n?.id != null && (I ? m.A.updateGuildProfile(n.id, {
+            n?.id != null && (C ? m.A.updateGuildProfile(n.id, {
                 visibility: l.n.PUBLIC
             }) : m.A.updateGuildProfile(n.id, {
                 visibility: l.n.PUBLIC_WITH_RECRUITMENT
             }))
-        }, [n?.id, I]),
+        }, [n?.id, C]),
         S = s.useCallback(() => {
             m.A.setSection(_.BEX.PROFILE)
         }, []);
@@ -94,7 +94,7 @@ function j(e) {
                 className: A.fi,
                 children: [(0, i.jsx)(o.dOG, {
                     label: p.intl.string(p.t["N/0232"]),
-                    checked: I,
+                    checked: C,
                     onChange: v,
                     disabled: T
                 }), (0, i.jsx)(r.EYj, {
@@ -119,7 +119,7 @@ function j(e) {
                         className: A.D7
                     }), (0, i.jsx)(u.Ay, {
                         className: A.VH,
-                        profile: C,
+                        profile: I,
                         CTAOverride: (0, i.jsx)(r.$nd, {
                             variant: "active",
                             size: "sm",

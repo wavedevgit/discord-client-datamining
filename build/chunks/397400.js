@@ -1,9 +1,9 @@
 /** chunk id: 397400 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ai: () => _,
+    Ai: () => p,
     ET: () => x,
-    Jh: () => p,
+    Jh: () => _,
     SX: () => h,
     ed: () => g,
     f7: () => f,
@@ -79,7 +79,7 @@ function m(e, t, n, i) {
     })
 }
 
-function p(e) {
+function _(e) {
     let {
         guildId: t,
         productId: n,
@@ -104,7 +104,7 @@ function p(e) {
     })
 }
 
-function _(e, t, n, i) {
+function p(e, t, n, i) {
     a.default.track(c.HAw.GAME_SERVER_JOIN_CLICKED, {
         guild_id: e,
         game_id: t,

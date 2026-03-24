@@ -7,8 +7,8 @@ var l = t(627968),
     r = t(64700),
     a = t(311907),
     s = t(397927),
-    i = t(442433),
-    c = t(721592),
+    c = t(442433),
+    i = t(721592),
     d = t(376943),
     u = t(987877),
     o = t(990474),
@@ -70,7 +70,7 @@ function w(e) {
         channelId: n,
         guildId: r,
         messageId: o
-    } = e, m = (0, c.A)(n), {
+    } = e, m = (0, i.A)(n), {
         name: g,
         iconType: f,
         isForumPost: v,
@@ -110,7 +110,7 @@ function w(e) {
         },
         onContextMenu: e => {
             let r = I.A.getChannel(n);
-            (0, i.L3)(e, async () => {
+            (0, c.L3)(e, async () => {
                 let {
                     default: e
                 } = await t.e("99041").then(t.bind(t, 612856));
@@ -184,7 +184,7 @@ function z(e) {
     } = e, a = (0, p.p)(), s = r.useMemo(() => {
         let [, ...e] = t.split(" ");
         return `${n}${[...e].map(e=>`${b.v4}${e}`).join("")}`
-    }, [n, t]), i = r.useMemo(() => ({
+    }, [n, t]), c = r.useMemo(() => ({
         type: "commandMention",
         channelId: a?.channelId,
         commandId: n,
@@ -192,7 +192,7 @@ function z(e) {
         commandKey: s
     }), [a?.channelId, s, n, t]);
     return (0, l.jsx)(o.gn, {
-        node: i,
+        node: c,
         children: t
     })
 }

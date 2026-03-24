@@ -19,8 +19,8 @@ var i = n(627968),
     h = n(397927),
     A = n(914430),
     m = n(442433),
-    p = n(676002),
-    _ = n(485947),
+    _ = n(676002),
+    p = n(485947),
     g = n(924985),
     f = n(71393),
     x = n(576705),
@@ -38,7 +38,7 @@ let v = s.memo(function(e) {
         let t, {
                 channel: l,
                 connectChannelDragSource: u,
-                connectChannelDropTarget: p,
+                connectChannelDropTarget: _,
                 disableManageChannels: E,
                 position: I,
                 sortingPosition: v,
@@ -120,7 +120,7 @@ let v = s.memo(function(e) {
                             focusProps: {
                                 enabled: !1
                             },
-                            children: [(0, i.jsx)(_.A, {
+                            children: [(0, i.jsx)(p.A, {
                                 className: S.UU,
                                 children: (0, i.jsx)(c.A, {
                                     children: l.name
@@ -152,9 +152,9 @@ let v = s.memo(function(e) {
                     })
                 }), j]
             });
-        return null != p && null != u ? p(u(B)) : B
+        return null != _ && null != u ? _(u(B)) : B
     }),
-    y = (0, p.a)(v),
+    y = (0, _.a)(v),
     j = s.memo(function(e) {
         let {
             name: t,
@@ -167,7 +167,7 @@ let v = s.memo(function(e) {
                 className: a()(S.Ki, S._V),
                 children: [(0, i.jsx)("div", {
                     className: S.rb,
-                    children: (0, i.jsx)(_.A, {
+                    children: (0, i.jsx)(p.A, {
                         className: S.UU,
                         children: (0, i.jsx)(c.A, {
                             children: t
@@ -215,7 +215,7 @@ let v = s.memo(function(e) {
             className: S.fx,
             children: (0, i.jsx)("div", {
                 className: a()(S.Ki, S._V),
-                children: (0, i.jsx)(_.A, {
+                children: (0, i.jsx)(p.A, {
                     className: S.UU,
                     children: (0, i.jsx)(c.A, {
                         children: b.intl.string(b.t["V/u9Dy"])
@@ -236,7 +236,7 @@ let v = s.memo(function(e) {
             className: S.fx,
             children: (0, i.jsx)("div", {
                 className: a()(S.Ki, S._V),
-                children: (0, i.jsx)(_.A, {
+                children: (0, i.jsx)(p.A, {
                     className: S.UU,
                     children: (0, i.jsx)(c.A, {
                         children: t.name

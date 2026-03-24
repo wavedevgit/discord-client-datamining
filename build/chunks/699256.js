@@ -46,16 +46,16 @@ function p(e) {
         handleDragStart: E,
         handleDragReset: b,
         handleDragComplete: T,
-        draggingId: I
+        draggingId: C
     } = (0, a.A)(j, N), {
-        enabled: C
+        enabled: I
     } = u.A.useExperiment({
         guildId: t,
         location: "guild_settings"
     }, {
         autoTrackExposure: !0
     });
-    if (!C) return null;
+    if (!I) return null;
     let v = p.length < x.pA;
     return (0, i.jsxs)("div", {
         className: _.jx,
@@ -85,7 +85,7 @@ function p(e) {
                 onDragStart: E,
                 onDragReset: b,
                 onDragComplete: T,
-                draggingId: I
+                draggingId: C
             }, e.id))
         }), (0, i.jsxs)("button", {
             className: _.qG,

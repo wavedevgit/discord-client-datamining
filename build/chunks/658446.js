@@ -1,7 +1,7 @@
 /** chunk id: 658446 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => I
+    A: () => C
 });
 var i = n(627968),
     s = n(64700),
@@ -77,7 +77,7 @@ function T(e, t) {
         return t?.id
     }))
 }
-let I = e => {
+let C = e => {
     let t, {
             guild: l,
             guildId: a,
@@ -85,10 +85,10 @@ let I = e => {
             headerContent: d,
             failedItemsOnly: m = !1
         } = e,
-        [I, C] = (0, u.yK)([f.Ay], () => [f.Ay.getDiscoveryChecklist(a), f.Ay.isLoading()], [a]),
+        [C, I] = (0, u.yK)([f.Ay], () => [f.Ay.getDiscoveryChecklist(a), f.Ay.isLoading()], [a]),
         {
             nsfwProperties: v
-        } = I ?? {},
+        } = C ?? {},
         S = l?.features.has(j.GuildFeatures.PARTNERED),
         y = v?.channels_banned_keywords,
         R = (0, u.bG)([h.Ay], () => {
@@ -103,7 +103,7 @@ let I = e => {
                 return [t[n], i]
             })
         }, [l.id, y], T);
-    if (C || null == I) return (0, i.jsxs)("div", {
+    if (I || null == C) return (0, i.jsxs)("div", {
         className: r()(E.kL, E.NQ, o),
         children: [(0, i.jsx)(x.Heading, {
             className: E.KQ,
@@ -123,32 +123,32 @@ let I = e => {
                 termsURL: j.X7G.TERMS,
                 guidelinesURL: _.A.getArticleURL(j.MVz.PUBLIC_GUILD_GUILDLINES)
             }),
-            checked: I?.safeEnvironment
+            checked: C?.safeEnvironment
         }, {
             name: N.intl.formatToPlainString(N.t.NYovA2, {
-                minMembers: I.minimumGuildSize
+                minMembers: C.minimumGuildSize
             }),
             failingName: N.intl.formatToPlainString(N.t.wvJwYs, {
-                minMembers: I.minimumGuildSize.toLocaleString()
+                minMembers: C.minimumGuildSize.toLocaleString()
             }),
             description: null,
             failingDescription: N.intl.format(O, {
-                minMembers: I.minimumGuildSize.toLocaleString()
+                minMembers: C.minimumGuildSize.toLocaleString()
             }),
-            checked: I?.size
+            checked: C?.size
         }, {
             name: N.intl.string(N.t.PtxOCK),
             failingName: N.intl.string(N.t.JPF5IL),
             description: N.intl.formatToPlainString(N.t.VT0bQJ, {
-                minimumGuildAge: Math.ceil(I.minimumGuildAge / 7)
+                minimumGuildAge: Math.ceil(C.minimumGuildAge / 7)
             }),
             failingDescription: N.intl.formatToPlainString(N.t.jYwM1Y, {
-                minimumGuildAge: Math.ceil(I.minimumGuildAge / 7),
-                passDate: c()(p.default.extractTimestamp(a)).add(I.minimumGuildAge, "days").format("LL")
+                minimumGuildAge: Math.ceil(C.minimumGuildAge / 7),
+                passDate: c()(p.default.extractTimestamp(a)).add(C.minimumGuildAge, "days").format("LL")
             }),
-            checked: I?.age
+            checked: C?.age
         }, {
-            name: I?.healthScorePending ? N.intl.string(N.t.G77ud0) : N.intl.string(N.t["95nW0H"]),
+            name: C?.healthScorePending ? N.intl.string(N.t.G77ud0) : N.intl.string(N.t["95nW0H"]),
             failingName: N.intl.string(N.t["+GHxPy"]),
             description: N.intl.string(N.t.rTWJwX),
             failingDescription: (0, i.jsxs)(i.Fragment, {
@@ -157,21 +157,21 @@ let I = e => {
                     className: E.t,
                     variant: "text-sm/normal",
                     children: N.intl.string(N.t.LjqS0G)
-                }), I?.engagementHealthy ? null : (0, i.jsx)(x.Text, {
+                }), C?.engagementHealthy ? null : (0, i.jsx)(x.Text, {
                     color: "text-feedback-critical",
                     variant: "text-sm/normal",
                     children: N.intl.string(N.t.X8Lt77)
-                }), I?.retentionHealthy ? null : (0, i.jsx)(x.Text, {
+                }), C?.retentionHealthy ? null : (0, i.jsx)(x.Text, {
                     color: "text-feedback-critical",
                     variant: "text-sm/normal",
                     children: N.intl.string(N.t.esdy89)
                 }), (() => {
-                    if (null == I || null == I.healthScore) return !1;
+                    if (null == C || null == C.healthScore) return !1;
                     let {
                         retentionHealthy: e,
                         engagementHealthy: t,
                         healthScore: n
-                    } = I, {
+                    } = C, {
                         avg_nonnew_participators: i,
                         avg_nonnew_communicators: s,
                         perc_ret_w1_intentful: l
@@ -188,13 +188,13 @@ let I = e => {
                         } = await n.e("63401").then(n.bind(n, 247920));
                         return t => (0, i.jsx)(e, {
                             ...t,
-                            guildChecklist: I
+                            guildChecklist: C
                         })
                     }),
                     children: N.intl.string(N.t.qyiTH8)
                 })]
             }),
-            pendingDescription: I?.size ? N.intl.format(N.t.ALtXIF, {
+            pendingDescription: C?.size ? N.intl.format(N.t.ALtXIF, {
                 checkBackHook: (e, t) => (0, i.jsx)("strong", {
                     className: E.eb,
                     children: e
@@ -202,8 +202,8 @@ let I = e => {
             }) : N.intl.formatToPlainString(N.t["6S/96D"], {
                 minMembers: 200
             }),
-            checked: I?.healthy,
-            pending: I?.healthScorePending
+            checked: C?.healthy,
+            pending: C?.healthScorePending
         }, {
             name: N.intl.string(N.t["AUUV/x"]),
             failingName: N.intl.string(N.t["jURyO+"]),
@@ -260,11 +260,11 @@ let I = e => {
             failingDescription: N.intl.format(N.t.kBXInb, {
                 onClick: () => A.A.setSection(j.BEX.SAFETY, j.nd0.SAFETY_PERMISSIONS)
             }),
-            checked: I?.protected
+            checked: C?.protected
         }];
     return (0, i.jsxs)("div", {
         className: r()(E.kL, o),
-        children: [(t = I?.sufficient ? n(617416) : n(848887), null == d ? null : (0, i.jsxs)("div", {
+        children: [(t = C?.sufficient ? n(617416) : n(848887), null == d ? null : (0, i.jsxs)("div", {
             className: E.wx,
             children: [(0, i.jsx)("img", {
                 alt: "",

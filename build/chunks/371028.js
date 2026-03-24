@@ -4,15 +4,15 @@ n.d(t, {
 });
 var r = n(64700),
     i = n(311907),
-    l = n(859241),
-    s = n(864310),
+    s = n(859241),
+    l = n(864310),
     o = n(333354),
     a = n(985018);
 
 function u(e, t) {
     let {
         spent: n
-    } = (0, s.A)(e), u = (0, i.bG)([l.A], () => l.A.getAppliedGuildBoostsForGuild(e), [e]), d = n - r.useMemo(() => u?.filter?.(e => !e.ended && null == e.endsAt)?.length ?? 0, [u]);
+    } = (0, l.A)(e), u = (0, i.bG)([s.A], () => s.A.getAppliedGuildBoostsForGuild(e), [e]), d = n - r.useMemo(() => u?.filter?.(e => !e.ended && null == e.endsAt)?.length ?? 0, [u]);
     return r.useMemo(() => d <= 0 ? {
         shouldShow: !1,
         title: "",

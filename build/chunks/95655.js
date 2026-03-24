@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(665691),
     A = n(954571),
     m = n(652215),
-    p = n(985018),
-    _ = n(202115);
+    _ = n(985018),
+    p = n(202115);
 let g = e => {
         let {
             channel: t
@@ -24,10 +24,10 @@ let g = e => {
         return (0, h.bG)({
             channelId: t.id
         }) ? (0, i.jsx)(l.m, {
-            text: p.intl.string(p.t.QyZ4Td),
+            text: _.intl.string(_.t.QyZ4Td),
             children: (0, i.jsx)(a.m5V, {
                 size: "xs",
-                "aria-label": p.intl.string(p.t.VHXh8a),
+                "aria-label": _.intl.string(_.t.VHXh8a),
                 color: a.LU0.colors.INTERACTIVE_TEXT_DEFAULT
             })
         }) : null
@@ -39,10 +39,10 @@ let g = e => {
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(l.m, {
                 asContainer: !0,
-                text: p.intl.string(p.t["5Q9+/L"]),
+                text: _.intl.string(_.t["5Q9+/L"]),
                 position: "bottom",
                 children: (0, i.jsxs)(a.DUT, {
-                    className: _.cD,
+                    className: p.cD,
                     onClick: () => {
                         (0, u.U)(s, o.A.HEADER_BAR)
                     },
@@ -66,9 +66,9 @@ let g = e => {
                             location: o.A.HEADER_BAR
                         })
                     },
-                    "aria-label": p.intl.string(p.t["5Q9+/L"]),
+                    "aria-label": _.intl.string(_.t["5Q9+/L"]),
                     children: [(0, i.jsx)(d.A, {
-                        className: _.gn,
+                        className: p.gn,
                         "aria-hidden": !0,
                         channel: t,
                         size: a._3J.SIZE_20,
@@ -78,7 +78,7 @@ let g = e => {
                         color: "text-strong",
                         children: h ?? ""
                     }), (0, i.jsx)(a.R2l, {
-                        className: _.IZ,
+                        className: p.IZ,
                         size: "xs",
                         color: "currentColor"
                     })]

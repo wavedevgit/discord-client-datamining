@@ -20,9 +20,9 @@ function m(e) {
         channel: t,
         themeable: n,
         whichPopoutIsOpen: m,
-        setWhichPopoutIsOpen: p
+        setWhichPopoutIsOpen: _
     } = e, {
-        parentAnalyticsLocation: _
+        parentAnalyticsLocation: p
     } = (0, r.Ay)(), g = s.useRef(null), {
         isHovered: f,
         setIsHovered: x,
@@ -40,8 +40,8 @@ function m(e) {
     }, [C, b]), v = s.useCallback(() => {
         null == m && (E(), S())
     }, [E, S, m]), y = s.useCallback(() => {
-        (0, o.X)(_, o.O.GIFTING), m === h.P.GIFTING ? (p?.(void 0), E()) : (null != m ? (N(), C()) : N(), p?.(h.P.GIFTING))
-    }, [C, E, _, N, p, m]);
+        (0, o.X)(p, o.O.GIFTING), m === h.P.GIFTING ? (_?.(void 0), E()) : (null != m ? (N(), C()) : N(), _?.(h.P.GIFTING))
+    }, [C, E, p, N, _, m]);
     return (0, i.jsx)(a.Y, {
         targetElementRef: g,
         shouldShow: f && (m === h.P.GIFTING || null == m) || m === h.P.GIFTING,
@@ -51,7 +51,7 @@ function m(e) {
         align: "center",
         spacing: 16,
         onRequestClose: () => {
-            x(!1), p?.(void 0)
+            x(!1), _?.(void 0)
         },
         renderPopout: e => {
             let {

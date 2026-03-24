@@ -25,8 +25,8 @@ var i = n(627968),
     E = n(209932),
     b = n(102597),
     T = n(904054),
-    I = n(496502),
-    C = n(657331),
+    C = n(496502),
+    I = n(657331),
     v = n(71393),
     S = n(287809),
     y = n(358431),
@@ -54,7 +54,7 @@ function F() {
             children: [(0, i.jsx)(g.Heading, {
                 variant: "heading-lg/semibold",
                 children: P.intl.string(P.t.OWQNYr)
-            }), (0, i.jsx)(Y, {
+            }), (0, i.jsx)(K, {
                 guild: e
             })]
         })
@@ -159,7 +159,7 @@ let z = e => {
         })
     };
 
-function Y(e) {
+function K(e) {
     let {
         guild: t
     } = e, [l, r] = (0, d.yK)([E.A], () => [E.A.getSoundsForGuild(t.id) ?? U.pD, E.A.isFetchingSounds() || E.A.isFetchingDefaultSounds()]), {
@@ -246,7 +246,7 @@ function Y(e) {
                     }), (0, i.jsx)(H, {
                         children: P.intl.string(P.t["85qMS/"])
                     })]
-                }), l.map(e => (0, i.jsx)(K, {
+                }), l.map(e => (0, i.jsx)(Y, {
                     sound: e,
                     isPlaying: !1,
                     guild: t,
@@ -257,7 +257,7 @@ function Y(e) {
     })
 }
 
-function K(e) {
+function Y(e) {
     let {
         sound: t,
         isPlaying: l,
@@ -274,7 +274,7 @@ function K(e) {
         analyticsLocations: b
     } = (0, A.Ay)(), T = (0, d.bG)([S.default], () => _ ?? S.default.getUser(p), [p, _]), {
         canManageGuildExpression: v
-    } = (0, j.nr)(o), y = s.useMemo(() => v(t), [t, v]), O = null != f || null != E, [G, D] = s.useState(!1), M = (0, I.v)(t, o.id);
+    } = (0, j.nr)(o), y = s.useMemo(() => v(t), [t, v]), O = null != f || null != E, [G, D] = s.useState(!1), M = (0, C.v)(t, o.id);
     async function k() {
         if (!G) {
             D(!0);
@@ -292,7 +292,7 @@ function K(e) {
         }
     }, [T, p]);
     let U = s.useCallback(() => {
-            null != T && (0, C.openUserProfileModal)({
+            null != T && (0, I.openUserProfileModal)({
                 userId: T.id,
                 guildId: o.id,
                 sourceAnalyticsLocations: b

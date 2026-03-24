@@ -102,7 +102,7 @@ function _() {
     }), A = (0, l.cf)([c.A], () => t.reduce((e, t) => {
         let n = c.A.getChannel(t);
         return e[t] = n ?? null, e
-    }, {})), C = (0, l.bG)([u.A], () => u.A.getInboxMessages()), T = (0, l.bG)([u.A], () => u.A.getDevOverrides().navOnClick);
+    }, {})), C = (0, l.bG)([u.A], () => u.A.getInboxMessages()), y = (0, l.bG)([u.A], () => u.A.getDevOverrides().navOnClick);
     return (0, a.jsx)("div", {
         className: x.nd,
         children: (0, a.jsxs)(r.IpV, {
@@ -126,7 +126,7 @@ function _() {
                     },
                     children: (0, a.jsx)(r.dOG, {
                         label: "Nav On Click",
-                        checked: !!T,
+                        checked: !!y,
                         onChange: e => {
                             o.h.dispatch({
                                 type: "NOTIFICATIONS_INBOX_SET_DEV_OVERRIDES",

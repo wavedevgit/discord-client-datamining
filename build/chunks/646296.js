@@ -1,7 +1,7 @@
 /** chunk id: 646296 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => C
+    A: () => I
 });
 var i = n(627968),
     s = n(64700),
@@ -26,22 +26,22 @@ var i = n(627968),
     b = n(862238);
 let T = "guild-role-subscription-tier-template-selector";
 
-function I(e) {
+function C(e) {
     let {
         guildId: t,
         priceTiers: l,
         groupListingId: _
     } = e, j = (0, h.cY)(_), {
-        editStateIds: I,
-        addNewEditStateId: C,
+        editStateIds: C,
+        addNewEditStateId: I,
         addNewEditStateFromTemplate: v,
         removeEditStateId: S
     } = A.d0(_, t, {
         includeSoftDeleted: !0
     }), [y, R] = s.useState({}), O = s.useMemo(() => {
-        let e = I.map(e => y[e] ?? e);
+        let e = C.map(e => y[e] ?? e);
         return (0, a.uniq)(e)
-    }, [I, y]), G = (0, x._Y)(t), L = (0, x.a0)(), D = s.useCallback(() => {
+    }, [C, y]), G = (0, x._Y)(t), L = (0, x.a0)(), D = s.useCallback(() => {
         L && g.ok.trackExposure({
             guildId: t,
             location: "b2d9de_1"
@@ -53,13 +53,13 @@ function I(e) {
                 ...n,
                 guildId: t,
                 addNewEditStateFromTemplate: v,
-                addNewEditStateFromScratch: C,
+                addNewEditStateFromScratch: I,
                 priceTiers: l
             })
         }, {
             modalKey: T
-        }) : C()
-    }, [t, v, C, l, L, G]), M = A.Zw(O), k = s.useCallback(() => O.forEach(A.Ts), [O]), U = (0, p.gN)(), P = (0, o.bG)([m.A], () => m.A.getProps().subsection);
+        }) : I()
+    }, [t, v, I, l, L, G]), M = A.Zw(O), k = s.useCallback(() => O.forEach(A.Ts), [O]), U = (0, p.gN)(), P = (0, o.bG)([m.A], () => m.A.getProps().subsection);
     return s.useEffect(() => (P === N.nd0.ROLE_SUBSCRIPTION_TIER_TEMPLATE && D(), () => {
         (0, u.OoC)(T)
     }), [P, D]), (0, i.jsxs)(i.Fragment, {
@@ -108,7 +108,7 @@ function I(e) {
     })
 }
 
-function C(e) {
+function I(e) {
     let {
         guildId: t
     } = e, {
@@ -129,7 +129,7 @@ function C(e) {
         description: E.intl.format(E.t.nHRSvM, {
             maxTiers: r
         }),
-        children: (0, i.jsx)(I, {
+        children: (0, i.jsx)(C, {
             priceTiers: n,
             guildId: t,
             groupListingId: a[0]

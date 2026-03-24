@@ -24,8 +24,8 @@ var a = n(627968),
     j = n(792620),
     A = n(73473),
     C = n(201805),
-    T = n(818348),
-    y = n(985018),
+    y = n(818348),
+    T = n(985018),
     S = n(868566);
 
 function E(e) {
@@ -35,16 +35,16 @@ function E(e) {
         transitionState: s,
         onClose: A,
         sourceQuestContent: E
-    } = e, [I, O] = (0, i.useState)(n), R = (0, p.UX)(), k = (0, _.Ut)(), w = (0, v.vU)()?.getId(), D = (0, o.bG)([m.A], () => m.A.useReducedMotion), P = (0, C.Xf)({
+    } = e, [I, O] = (0, i.useState)(n), k = (0, p.UX)(), R = (0, _.Ut)(), w = (0, v.vU)()?.getId(), D = (0, o.bG)([m.A], () => m.A.useReducedMotion), P = (0, C.Xf)({
         useReducedMotion: D,
         className: S.Zf
-    }), M = I.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), L = (0, j.YL)(t), U = (0, o.bG)([h.A], () => h.A.getState().theme), B = (0, c.Mw)(U) ? T.NJ.DARK : T.NJ.LIGHT, {
+    }), M = I.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), L = (0, j.YL)(t), U = (0, o.bG)([h.A], () => h.A.getState().theme), B = (0, c.Mw)(U) ? y.NJ.DARK : y.NJ.LIGHT, {
         startConsoleQuest: G,
         startingConsoleQuest: F
     } = (0, p.Wj)({
         questId: t.id,
         beforeRequest: () => {
-            P.startAnimation(), k({
+            P.startAnimation(), R({
                 questId: t.id,
                 questContent: x.uF.CONNECTIONS_MODAL,
                 questContentCTA: f.Cy.DEFIBRILLATOR,
@@ -58,8 +58,8 @@ function E(e) {
     return (0, a.jsx)(r.Modal, {
         transitionState: s,
         onClose: A,
-        title: y.intl.string(y.t.W5lmKt),
-        subtitle: R.message,
+        title: T.intl.string(T.t.W5lmKt),
+        subtitle: k.message,
         actions: [{
             variant: "secondary",
             onClick: () => void(A(), (0, b.b6)({
@@ -70,11 +70,11 @@ function E(e) {
                 impressionId: w,
                 sourceQuestContent: E
             })),
-            text: y.intl.string(y.t["qiS+xj"])
+            text: T.intl.string(T.t["qiS+xj"])
         }, {
             variant: "primary",
             onClick: () => A(),
-            text: y.intl.string(y.t.cpT0Cq)
+            text: T.intl.string(T.t.cpT0Cq)
         }],
         children: (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsxs)("div", {
@@ -82,7 +82,7 @@ function E(e) {
                 children: [(0, a.jsx)(u.Text, {
                     variant: "eyebrow",
                     color: "text-default",
-                    children: y.intl.string(y.t["+/hZM/"])
+                    children: T.intl.string(T.t["+/hZM/"])
                 }), (0, a.jsxs)(u.DUT, {
                     className: l()(S.Tm, {
                         [S.r9]: F
@@ -92,7 +92,7 @@ function E(e) {
                         variant: "text-sm/medium",
                         color: "currentColor",
                         className: S.Zf,
-                        children: y.intl.string(y.t.wzzjk9)
+                        children: T.intl.string(T.t.wzzjk9)
                     })]
                 })]
             }), (0, a.jsxs)("div", {
@@ -101,12 +101,12 @@ function E(e) {
                     icon: (0, a.jsx)(u.kN9, {
                         size: "sm"
                     }),
-                    text: y.intl.string(y.t.br3uIi)
+                    text: T.intl.string(T.t.br3uIi)
                 }), (0, a.jsx)(N, {
                     icon: (0, a.jsx)(u._xR, {
                         size: "sm"
                     }),
-                    text: y.intl.string(y.t.XF4wuA),
+                    text: T.intl.string(T.t.XF4wuA),
                     errors: L ? void 0 : M.map(e => e.message),
                     gameTile: L ? (0, a.jsx)(d.m, {
                         "aria-label": t.config.messages.gameTitle,
@@ -118,7 +118,7 @@ function E(e) {
                             }), (0, a.jsx)(u.Text, {
                                 variant: "text-xs/normal",
                                 color: "text-muted",
-                                children: y.intl.string(y.t.STpNEC)
+                                children: T.intl.string(T.t.STpNEC)
                             })]
                         }),
                         children: (0, a.jsx)("img", {

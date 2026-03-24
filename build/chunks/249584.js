@@ -25,8 +25,8 @@ var i = n(627968),
     h = n(775602),
     A = n(793574),
     m = n(688810),
-    p = n(509536),
-    _ = n(987144),
+    _ = n(509536),
+    p = n(987144),
     g = n(976860),
     f = n(71393),
     x = n(204017),
@@ -134,7 +134,7 @@ function z(e) {
         }) : P.intl.formatToPlainString(U.default.ZF8NT6, {
             perk: n[0].title
         }),
-        p = 1 === n.length;
+        _ = 1 === n.length;
     return (0, i.jsx)(en, {
         size: 1 === n.length ? "video" : "lg",
         asset: n.length > 1 ? (0, i.jsx)(T.b, {
@@ -149,10 +149,10 @@ function z(e) {
         }),
         body: m,
         actions: [{
-            text: p ? P.intl.string(U.default.gSxlHf) : P.intl.string(P.t.RzWDqY),
+            text: _ ? P.intl.string(U.default.gSxlHf) : P.intl.string(P.t.RzWDqY),
             variant: "primary",
             onClick: e => {
-                e.stopPropagation(), p ? o() : (0, S.A)(t, A.A.GUILD_POWERUPS_COACHMARK_PURCHASEABLE_PERKS)
+                e.stopPropagation(), _ ? o() : (0, S.A)(t, A.A.GUILD_POWERUPS_COACHMARK_PURCHASEABLE_PERKS)
             },
             loading: d
         }],
@@ -341,7 +341,7 @@ function Q(e) {
             text: P.intl.string(G.default.k0Y0BE),
             variant: "primary",
             onClick: () => {
-                n(D.i.TAKE_ACTION), (0, p.K)({
+                n(D.i.TAKE_ACTION), (0, _.K)({
                     guildId: t,
                     location: {
                         section: L.JJy.GUILD_HEADER,
@@ -380,7 +380,7 @@ function $(e) {
             text: P.intl.string(G.default.k0Y0BE),
             variant: "primary",
             onClick: () => {
-                n(D.i.TAKE_ACTION), r ? (0, S.A)(t, A.A.GUILD_POWERUPS_COACHMARK_GAME_SERVER_NEW_GAMES, R.W5) : (0, p.K)({
+                n(D.i.TAKE_ACTION), r ? (0, S.A)(t, A.A.GUILD_POWERUPS_COACHMARK_GAME_SERVER_NEW_GAMES, R.W5) : (0, _.K)({
                     guildId: t,
                     location: {
                         section: L.JJy.GUILD_HEADER,
@@ -417,7 +417,7 @@ function Z(e) {
             text: P.intl.string(P.t.RzWDqY),
             variant: "primary",
             onClick: () => {
-                a ? (0, S.A)(t, A.A.GUILD_POWERUPS_COACHMARK_GAME_SERVER_PRICING_CHANGE, R.W5) : (n(D.i.TAKE_ACTION), (0, p.K)({
+                a ? (0, S.A)(t, A.A.GUILD_POWERUPS_COACHMARK_GAME_SERVER_PRICING_CHANGE, R.W5) : (n(D.i.TAKE_ACTION), (0, _.K)({
                     guildId: t,
                     location: {
                         section: L.JJy.GUILD_HEADER,
@@ -442,11 +442,11 @@ function ee(e) {
         available: o
     } = (0, N.A)(t), c = n.cost - o, d = (0, I.A)(n, !0), {
         analyticsLocations: u
-    } = (0, m.Ay)(A.A.GUILD_POWERUPS_COACHMARK_BOOST_TO_UNLOCK), h = (0, b.A)(t), p = s.useRef(null);
+    } = (0, m.Ay)(A.A.GUILD_POWERUPS_COACHMARK_BOOST_TO_UNLOCK), h = (0, b.A)(t), _ = s.useRef(null);
     return (0, i.jsx)(en, {
         asset: n.type === O.o9.LEVEL ? (0, i.jsx)(v.n, {
             powerup: n,
-            eventTargetRef: p,
+            eventTargetRef: _,
             className: w.Lj
         }) : (0, i.jsx)("img", {
             alt: "",
@@ -468,7 +468,7 @@ function ee(e) {
                     page: L.liQ.GUILD_CHANNEL,
                     section: L.JJy.GUILD_HEADER
                 };
-                await (0, _.g)({
+                await (0, p.g)({
                     guild: e,
                     numberOfBoostsToAdd: c,
                     analyticsLocation: i,
@@ -492,8 +492,8 @@ function et(e) {
         ...r
     } = e, d = (0, c.bG)([C.A], () => C.A.getStateForGuild(t)), {
         analyticsLocations: u
-    } = (0, m.Ay)(A.A.GUILD_POWERUPS_COACHMARK_EXPIRING_PERK), p = d?.allPowerups[n.skuId], g = (0, I.A)(p, !0), x = s.useRef(null), E = (0, c.bG)([h.A], () => h.A.useReducedMotion);
-    if (null == p && !n.isGameServer) return null;
+    } = (0, m.Ay)(A.A.GUILD_POWERUPS_COACHMARK_EXPIRING_PERK), _ = d?.allPowerups[n.skuId], g = (0, I.A)(_, !0), x = s.useRef(null), E = (0, c.bG)([h.A], () => h.A.useReducedMotion);
+    if (null == _ && !n.isGameServer) return null;
     let N = n.isGameServer ? P.intl.string(U.default["9L0pAN"]) : P.intl.formatToPlainString(U.default.gG8bI8, {
             perkName: n.name
         }),
@@ -509,8 +509,8 @@ function et(e) {
             fit: "contain",
             className: w.Sl,
             stateMachine: E ? "SM_Main_Int" : "SM_Auto"
-        }) : p?.type === O.o9.LEVEL ? (0, i.jsx)(v.n, {
-            powerup: p,
+        }) : _?.type === O.o9.LEVEL ? (0, i.jsx)(v.n, {
+            powerup: _,
             eventTargetRef: x,
             className: w.Lj
         }) : (0, i.jsx)("img", {
@@ -530,12 +530,12 @@ function et(e) {
                     page: L.liQ.GUILD_CHANNEL,
                     section: L.JJy.GUILD_HEADER
                 };
-                await (0, _.g)({
+                await (0, p.g)({
                     guild: e,
                     numberOfBoostsToAdd: n.numExpiringBoosts,
                     analyticsLocation: i,
                     analyticsLocations: u,
-                    intent: p?.type === O.o9.PERK || n.isGameServer ? O.Pn.PERK : void 0
+                    intent: _?.type === O.o9.PERK || n.isGameServer ? O.Pn.PERK : void 0
                 }), a(D.i.TAKE_ACTION)
             }
         }],

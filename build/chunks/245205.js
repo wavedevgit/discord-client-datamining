@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     BZ: () => h,
-    R7: () => p,
+    R7: () => _,
     S3: () => A,
     VP: () => g,
     ni: () => m
@@ -67,7 +67,7 @@ async function m(e, t) {
     }
 }
 
-function p(e) {
+function _(e) {
     var t, n;
     null != e.local_id ? (t = [e.local_id], a.h.dispatch({
         type: "NOTIFICATION_CENTER_ITEMS_LOCAL_ACK",
@@ -76,9 +76,9 @@ function p(e) {
         type: "NOTIFICATION_CENTER_ITEMS_ACK",
         optimistic: !0,
         ids: [n]
-    })) : _(e.id)
+    })) : p(e.id)
 }
-async function _(e) {
+async function p(e) {
     try {
         a.h.dispatch({
             type: "NOTIFICATION_CENTER_ITEMS_ACK",

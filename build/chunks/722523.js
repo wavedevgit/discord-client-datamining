@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     Ay: () => x,
-    GU: () => _
+    GU: () => p
 });
 var i = n(627968);
 n(64700);
@@ -17,23 +17,23 @@ var s = n(503698),
     h = n(568065),
     A = n(333354),
     m = n(985018),
-    p = n(993747);
+    _ = n(993747);
 
-function _(e) {
+function p(e) {
     let {
         className: t,
         guildId: n,
         powerup: s,
         onClick: r
-    } = e, o = (0, d.A)(n, s), c = (0, u.A)(n, s), _ = h.HO.has(s.skuId);
+    } = e, o = (0, d.A)(n, s), c = (0, u.A)(n, s), p = h.HO.has(s.skuId);
     return (0, i.jsx)("div", {
-        className: l()(p.FS, t),
+        className: l()(_.FS, t),
         children: (0, i.jsx)(a.$nd, {
             variant: "primary",
             fullWidth: !0,
-            text: _ ? m.intl.string(A.default.g5Ds69) : m.intl.string(m.t["0Q61kF"]),
+            text: p ? m.intl.string(A.default.g5Ds69) : m.intl.string(m.t["0Q61kF"]),
             onClick: e => {
-                r?.(e), _ ? o?.(e) : c?.()
+                r?.(e), p ? o?.(e) : c?.()
             }
         })
     })
@@ -46,9 +46,9 @@ function g(e) {
         powerup: s
     } = e, r = (0, u.A)(n, s);
     return (0, i.jsx)("div", {
-        className: l()(p.kL, t),
+        className: l()(_.kL, t),
         children: (0, i.jsx)("div", {
-            className: p.FS,
+            className: _.FS,
             children: (0, i.jsx)(a.$nd, {
                 variant: "primary",
                 fullWidth: !0,
@@ -71,7 +71,7 @@ function f(e) {
         isPowerupActive: u
     } = (0, r.A)(n, s), h = !u;
     return (0, i.jsxs)("div", {
-        className: l()(p.kL, t),
+        className: l()(_.kL, t),
         children: [d && (0, i.jsx)(c.A, {
             guildId: n,
             powerup: s,
@@ -79,7 +79,7 @@ function f(e) {
             grow: h,
             compact: !h,
             expressiveCta: a
-        }), u && (0, i.jsx)(_, {
+        }), u && (0, i.jsx)(p, {
             guildId: n,
             powerup: s
         })]

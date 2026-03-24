@@ -24,15 +24,15 @@ var a = n(627968),
     j = n(545986),
     A = n(139210),
     C = n(568329),
-    T = n(818276),
-    y = n(742860),
+    y = n(818276),
+    T = n(742860),
     S = n(783569),
     E = n(963713),
     N = n(717695),
     I = n(899592),
     O = n(546350),
-    R = n(922532),
-    k = n(20732),
+    k = n(922532),
+    R = n(20732),
     w = n(654487);
 n(272111);
 var D = n(419548);
@@ -71,8 +71,8 @@ function L(e) {
         hasError: z,
         isLoading: $
     } = (0, f.Gk)(), q = i.useContext(N.Z) || s && L && !$ && !c, {
-        isExpanded: Y,
-        setIsExpanded: Q,
+        isExpanded: Q,
+        setIsExpanded: Y,
         expandQuestBar: J,
         isExpansionAnimationComplete: X,
         isVisibilityAnimationAtRest: Z,
@@ -93,17 +93,17 @@ function L(e) {
         handleBlur: ed,
         handleMouseEnter: ec,
         handleMouseLeave: eu
-    } = (0, R.m)({
+    } = (0, k.m)({
         quest: t,
-        isExpanded: Y,
-        setIsExpanded: Q,
+        isExpanded: Q,
+        setIsExpanded: Y,
         expandQuestBar: J,
         isQuestCompleted: K,
         isQuestAccepted: W,
         prevIsQuestAccepted: H,
         impressionRef: G
     });
-    (0, k.S)({
+    (0, R.S)({
         quest: t,
         hasAssetsError: z,
         isEligibleForQuests: s,
@@ -135,7 +135,7 @@ function L(e) {
             children: [q && (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsx)(P, {
                     questId: V,
-                    isExpanded: Y
+                    isExpanded: Q
                 }), (0, a.jsx)(M, {})]
             }), (0, a.jsx)(r.animated.div, {
                 "aria-hidden": !q,
@@ -155,12 +155,12 @@ function L(e) {
                 },
                 children: (0, a.jsx)(r.animated.div, {
                     className: l()(D.FG, {
-                        [D.E$]: Y,
+                        [D.E$]: Q,
                         [D.KA]: W
                     }),
                     children: (0, a.jsx)(S.R, {
                         springConfig: en,
-                        isExpanded: Y,
+                        isExpanded: Q,
                         children: (0, a.jsx)(C.oK, {
                             expandedContentRef: em,
                             collapsedContentRef: eh,
@@ -168,7 +168,7 @@ function L(e) {
                             children: (0, a.jsxs)(E.C, {
                                 quest: t,
                                 taskDetails: ep,
-                                isExpanded: Y,
+                                isExpanded: Q,
                                 isExpansionAnimationComplete: X,
                                 onCtxMenuClose: ei,
                                 onCtxMenuOpen: ea,
@@ -176,11 +176,11 @@ function L(e) {
                                 onGameSheetOpen: el,
                                 onGameSheetClose: er,
                                 collapsedHeight: e_,
-                                children: [(0, a.jsx)(T.A, {
+                                children: [(0, a.jsx)(y.A, {
                                     ref: eh,
                                     className: D.Qs,
                                     overlayRef: ex
-                                }, K ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, a.jsx)(y.A, {
+                                }, K ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, a.jsx)(T.A, {
                                     className: D.Qs,
                                     overlayRef: ex,
                                     ref: em,

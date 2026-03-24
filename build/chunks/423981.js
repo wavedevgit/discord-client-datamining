@@ -25,7 +25,7 @@ var i = n(627968),
     E = n(897513),
     b = n(985018),
     T = n(381929);
-let I = function(e, t, n) {
+let C = function(e, t, n) {
         let i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
             s = null;
         return null == t || Number.isNaN(t) ? (null == t || Number.isNaN(t)) && null != e && (s = b.intl.string(b.t.xO2msf)) : s = b.intl.formatToPlainString(b.t.nskeMw, {
@@ -37,7 +37,7 @@ let I = function(e, t, n) {
             isTrendingDown: t < 0
         }
     },
-    C = function(e) {
+    I = function(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
         return t || e === N.t02.NOT_ENOUGH_GUILD_MEMBERS ? (0, i.jsx)("div", {
             className: T.NA,
@@ -108,18 +108,18 @@ let I = function(e, t, n) {
                 children: [(0, i.jsx)(j.A, {
                     title: b.intl.string(b.t.i0NorT),
                     tooltipText: b.intl.string(b.t.KiRbLJ),
-                    ...I(r.visitors, r.visitorsChange, l)
+                    ...C(r.visitors, r.visitorsChange, l)
                 }), (0, i.jsx)(j.A, {
                     title: b.intl.string(b.t.DDAHdQ),
                     tooltipText: b.intl.string(b.t.HxWUkU),
-                    ...I(r.communicators, r.communicatorsChange, l)
+                    ...C(r.communicators, r.communicatorsChange, l)
                 }), (0, i.jsx)(j.A, {
                     title: b.intl.string(b.t.hYeOqC),
-                    ...I(r.newMembers, r.newMembersChange, l)
+                    ...C(r.newMembers, r.newMembersChange, l)
                 }), (0, i.jsx)(j.A, {
                     title: b.intl.string(b.t.jj7OPw),
                     tooltipText: b.intl.string(b.t.MQCslz),
-                    ...I(r.pctRetained, r.pctRetainedChange, l, !0)
+                    ...C(r.pctRetained, r.pctRetainedChange, l, !0)
                 })]
             })
         }) : null;
@@ -130,7 +130,7 @@ let I = function(e, t, n) {
             }), (0, i.jsx)(d.Text, {
                 variant: "text-sm/normal",
                 children: b.intl.format(b.t.NIZ60a, {})
-            }), C(o, S), (0, i.jsxs)("div", {
+            }), I(o, S), (0, i.jsxs)("div", {
                 className: T.Pg,
                 children: [(0, i.jsx)("div", {
                     className: T.jM

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(64700),
     i = n(311907),
-    l = n(923408),
-    s = n(80682),
+    s = n(923408),
+    l = n(80682),
     o = n(859241),
     a = n(256587),
     u = n(696451),
@@ -26,16 +26,16 @@ function p(e, t) {
         m.length > 0 && m.forEach(t => a.A.requestMember(e, t))
     }, [e, m]);
     let _ = r.useMemo(() => {
-        let t = m.slice(0, s.JM / 2);
+        let t = m.slice(0, l.JM / 2);
         return t.length > 0 ? {
             [e]: t
         } : {}
     }, [e, m]);
-    (0, s.Eq)(_, "GuildPowerupsRecentActivity");
-    let A = (0, i.bG)([d.A], () => d.A.getGuild(e)?.premiumSubscriberCount);
+    (0, l.Eq)(_, "GuildPowerupsRecentActivity");
+    let f = (0, i.bG)([d.A], () => d.A.getGuild(e)?.premiumSubscriberCount);
     return r.useEffect(() => {
-        A !== n.length && (0, l.VU)(e)
-    }, [e, A, n.length]), p
+        f !== n.length && (0, s.VU)(e)
+    }, [e, f, n.length]), p
 }
 
 function m(e) {
@@ -43,7 +43,7 @@ function m(e) {
         {
             username: n,
             roleColor: r,
-            roleColorStrings: l
+            roleColorStrings: s
         } = (0, i.cf)([u.Ay], () => {
             let t = u.Ay.getMember(e.guildId, e.userId);
             return {
@@ -56,6 +56,6 @@ function m(e) {
         timestamp: t,
         username: n,
         roleColor: r,
-        roleColorStrings: l
+        roleColorStrings: s
     }
 }

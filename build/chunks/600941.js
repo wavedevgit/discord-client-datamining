@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(998418),
     i = n(568065),
-    l = n(333354),
-    s = n(985018);
+    s = n(333354),
+    l = n(985018);
 
 function o(e) {
     let t, {
@@ -26,7 +26,7 @@ function o(e) {
         expiringAt: d
     } : u && (t = {
         type: "active",
-        statusText: s.intl.string(l.default.FFLkmx)
+        statusText: l.intl.string(s.default.FFLkmx)
     });
     let c = a.reduce((e, t) => {
             let {

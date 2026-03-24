@@ -1,7 +1,7 @@
 /** chunk id: 815213 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => p
 });
 var i = n(627968),
     s = n(64700),
@@ -20,7 +20,7 @@ function m(e) {
     return null != t && null != t.getGuildId() && !(t.isThread() ? c.A.isMuted(t.id) : h.Ay.isChannelMuted(t.getGuildId(), t.id)) && (0, o.Y)(t)
 }
 
-function p(e) {
+function _(e) {
     let t = d.A.getChannel(e);
     if (null == t) return !1;
     let n = t.getGuildId();
@@ -29,7 +29,7 @@ function p(e) {
         s = h.Ay.isChannelMuted(n, t.id);
     return (!i || !s) && u.Ay.getMentionCount(e) > 0
 }
-let _ = s.forwardRef(function(e, t) {
+let p = s.forwardRef(function(e, t) {
     let {
         guildId: n,
         guildChannels: s,
@@ -44,7 +44,7 @@ let _ = s.forwardRef(function(e, t) {
         ref: t,
         ...c,
         isUnread: m,
-        isMentioned: p,
+        isMentioned: _,
         items: d,
         animate: u
     })

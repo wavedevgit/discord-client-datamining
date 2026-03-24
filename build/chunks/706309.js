@@ -8,8 +8,8 @@ var n = a(397927),
     r = a(18769),
     s = a(653793),
     i = a(673277),
-    d = a(118713);
-let o = () => (0, l.jsx)("div", {
+    o = a(118713);
+let d = () => (0, l.jsx)("div", {
         style: {
             display: "flex",
             justifyContent: "center",
@@ -44,7 +44,7 @@ let o = () => (0, l.jsx)("div", {
                 variant: "text-md/normal",
                 children: "The carousel will pause slidding when the mouse hovers it, and resume on mouse leave."
             }), (0, l.jsx)(i.A, {
-                children: (0, l.jsxs)(d.A, {
+                children: (0, l.jsxs)(o.A, {
                     ...e,
                     children: [(0, l.jsx)("div", {
                         style: {
@@ -93,9 +93,9 @@ let o = () => (0, l.jsx)("div", {
                             display: "flex",
                             overflow: "hidden"
                         },
-                        children: (0, l.jsxs)(d.A, {
+                        children: (0, l.jsxs)(o.A, {
                             ...e,
-                            children: [(0, l.jsx)(o, {}), (0, l.jsx)(o, {}), (0, l.jsx)(o, {}), (0, l.jsx)(o, {}), (0, l.jsx)(o, {})]
+                            children: [(0, l.jsx)(d, {}), (0, l.jsx)(d, {}), (0, l.jsx)(d, {}), (0, l.jsx)(d, {}), (0, l.jsx)(d, {})]
                         })
                     })
                 })]
@@ -103,7 +103,7 @@ let o = () => (0, l.jsx)("div", {
                 children: [(0, l.jsx)(n.Text, {
                     variant: "text-md/normal",
                     children: "And here is an example of a FeaturedBlock Carousel"
-                }), (0, l.jsx)("br", {}), (0, l.jsxs)(d.A, {
+                }), (0, l.jsx)("br", {}), (0, l.jsxs)(o.A, {
                     ...e,
                     children: [(0, l.jsx)(r.A, {
                         href: "",

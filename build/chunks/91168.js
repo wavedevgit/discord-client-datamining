@@ -25,8 +25,8 @@ var i = n(627968),
     E = n(450510),
     b = n(861410),
     T = n(433522),
-    I = n(287809),
-    C = n(203982),
+    C = n(287809),
+    I = n(203982),
     v = n(403362),
     S = n(997509),
     y = n(555337),
@@ -46,8 +46,8 @@ var i = n(627968),
     V = n(291444),
     z = n(239741),
     W = n(396816),
-    Y = n(807165),
-    K = n(454516),
+    K = n(807165),
+    Y = n(454516),
     X = n(155008),
     J = n(965033),
     Z = n(737331),
@@ -126,9 +126,9 @@ let ef = {
                 };
             case eh.BEX.ROLES:
                 return {
-                    section: eh.BEX.ROLES, impressionName: s.ImpressionNames.GUILD_SETTINGS_ROLES, label: ep.intl.string(ep.t["LPJmL/"]), element: Y.A, type: d.Py.MINIMAL, ariaLabel: ep.intl.string(ep.t.KXcEC9), notice: {
+                    section: eh.BEX.ROLES, impressionName: s.ImpressionNames.GUILD_SETTINGS_ROLES, label: ep.intl.string(ep.t["LPJmL/"]), element: K.A, type: d.Py.MINIMAL, ariaLabel: ep.intl.string(ep.t.KXcEC9), notice: {
                         stores: [W.A],
-                        element: Y.W
+                        element: K.W
                     }, predicate: () => t.canManageRoles, icon: t.permissionMigrationAvailable ? (0, i.jsx)("div", {
                         className: eA.Vx
                     }) : void 0
@@ -198,7 +198,7 @@ let ef = {
                 };
             case eh.BEX.BANS:
                 return {
-                    section: eh.BEX.BANS, impressionName: s.ImpressionNames.GUILD_SETTINGS_BANS, label: ep.intl.string(ep.t.ZbeITS), element: K.A, predicate: () => t.canManageBans
+                    section: eh.BEX.BANS, impressionName: s.ImpressionNames.GUILD_SETTINGS_BANS, label: ep.intl.string(ep.t.ZbeITS), element: Y.A, predicate: () => t.canManageBans
                 };
             case eh.BEX.COMMUNITY:
                 let eb = ep.intl.string(ep.t.ElKTeb);
@@ -272,12 +272,12 @@ let ef = {
             case eh.BEX.DELETE:
                 return {
                     section: eh.BEX.DELETE, onClick() {
-                        let e = I.default.getCurrentUser();
+                        let e = C.default.getCurrentUser();
                         if (null == e) return;
                         let {
                             name: s
                         } = t.guild, l = () => {
-                            C._.subscribeOnce(eh.jej.LAYER_POP_COMPLETE, () => {
+                            I._.subscribeOnce(eh.jej.LAYER_POP_COMPLETE, () => {
                                 S.A.deleteGuild(t.guild.id)
                             }), (0, o.jH)()
                         };

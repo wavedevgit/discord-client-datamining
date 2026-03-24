@@ -133,7 +133,7 @@ function T(e) {
                     })
                 }), (0, i.jsx)("div", {
                     className: b.yF
-                }), (0, i.jsx)(I, {
+                }), (0, i.jsx)(C, {
                     guild: t
                 })]
             })
@@ -141,7 +141,7 @@ function T(e) {
     })
 }
 
-function I(e) {
+function C(e) {
     let {
         guild: t
     } = e, n = (0, u.bG)([p.A], () => p.A.can(j.xBc.ADMINISTRATOR, t)), l = t.features.has(j.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE), r = t.features.has(j.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE), [a, o] = s.useState(!0), [d, m] = s.useState(!0);
@@ -150,13 +150,13 @@ function I(e) {
         children: [(0, i.jsxs)("fieldset", {
             children: [(0, i.jsx)("legend", {
                 children: E.intl.string(E.t["/SSzPD"])
-            }), (0, i.jsx)(C, {
+            }), (0, i.jsx)(I, {
                 label: E.intl.string(E.t.KMbKTt),
                 migratedLabel: E.intl.string(E.t.IJKefK),
                 migrated: l,
                 enabled: a,
                 onChange: o
-            }), (0, i.jsx)(C, {
+            }), (0, i.jsx)(I, {
                 label: E.intl.string(E.t["7ltOG9"]),
                 migratedLabel: E.intl.string(E.t.gVKQNA),
                 migrated: r,
@@ -189,7 +189,7 @@ function I(e) {
     })
 }
 
-function C(e) {
+function I(e) {
     let {
         label: t,
         migratedLabel: n,

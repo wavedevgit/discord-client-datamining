@@ -40,7 +40,7 @@ let A = {
         [f.qf.DEFERRED_START]: "Deferred Start",
         [f.qf.USER_TEMPORARY_BAN]: "User Temp Ban"
     },
-    T = [{
+    y = [{
         id: "unpaid",
         label: "Unpaid",
         value: _.Dmq.UNPAID
@@ -78,7 +78,7 @@ let A = {
         value: _.Dmq.PAUSE_PENDING
     }];
 
-function y(e) {
+function T(e) {
     let {
         subscription: t,
         onClose: n,
@@ -170,8 +170,8 @@ function S(e) {
         [d, f] = i.useState(!1),
         [S, E] = i.useState(!1),
         [N, I] = i.useState(!1),
-        [O, R] = i.useState(!1),
-        [k, w] = i.useState(null),
+        [O, k] = i.useState(!1),
+        [R, w] = i.useState(null),
         D = e => {
             let t = new Date(e);
             return x.default.fromTimestamp(t.getTime())
@@ -281,7 +281,7 @@ function S(e) {
                 className: j.VK,
                 children: [(0, a.jsxs)(u.DUT, {
                     onClick: () => {
-                        R(!O)
+                        k(!O)
                     },
                     className: j.Eh,
                     children: [(0, a.jsx)("div", {
@@ -362,7 +362,7 @@ function S(e) {
                     children: [(0, a.jsx)(u.l6P, {
                         label: "Status",
                         value: s.status,
-                        options: T,
+                        options: y,
                         onSelectionChange: e => {
                             P({
                                 status: e
@@ -383,18 +383,18 @@ function S(e) {
                                 size: "sm",
                                 text: "Time Travel",
                                 onClick: () => {
-                                    (0, u.mMO)(() => Promise.resolve(e => (0, a.jsx)(y, {
+                                    (0, u.mMO)(() => Promise.resolve(e => (0, a.jsx)(T, {
                                         subscription: s,
                                         onUpdated: r,
                                         ...e
                                     })))
                                 }
                             })]
-                        }), null !== k && (0, a.jsx)("div", {
+                        }), null !== R && (0, a.jsx)("div", {
                             className: j.z3,
                             children: (0, a.jsx)(u.wx6, {
                                 type: "critical",
-                                children: k
+                                children: R
                             })
                         })]
                     }), (0, a.jsxs)(u.BJc, {

@@ -3,7 +3,7 @@ n.d(t, {
     DB: () => N,
     ZL: () => S,
     ln: () => E,
-    t0: () => y
+    t0: () => T
 });
 var a = n(64700),
     i = n(873298),
@@ -27,27 +27,27 @@ var a = n(64700),
 let A = [v.NJ8.DARK, v.NJ8.LIGHT, v.NJ8.DARKER, v.NJ8.MIDNIGHT],
     C = [i.NS.COMPACT, i.NS.COZY, i.NS.DEFAULT];
 
-function T(e) {
+function y(e) {
     return e[Math.floor(Math.random() * e.length)]
 }
-async function y() {
+async function T() {
     let e, t = (e = _.default.getCurrentUser(), f.Ay.canUseClientThemes(e) ? Object.keys(b.ag).map(e => Number(e)) : []),
         n = t.length > 0 && Math.random() > .7;
     try {
         if (n) {
             let e, n = [...t, null],
-                a = T(n);
+                a = y(n);
             if (null != a) {
                 let t = b.ag[a];
                 e = t?.theme ?? v.NJ8.DARK
-            } else e = T([v.NJ8.DARK, v.NJ8.DARKER, v.NJ8.MIDNIGHT]);
+            } else e = y([v.NJ8.DARK, v.NJ8.DARKER, v.NJ8.MIDNIGHT]);
             await l.u_({
                 theme: e,
                 backgroundGradientPresetId: a ?? void 0,
                 customUserThemeSettings: void 0
             }, g.Sb.INFREQUENT_USER_ACTION)
         } else {
-            let e = T(A);
+            let e = y(A);
             await l.u_({
                 theme: e,
                 backgroundGradientPresetId: void 0,
@@ -64,7 +64,7 @@ async function S() {
         i = n.length > 0;
     if (a || i) try {
         let e = {};
-        a && (e.avatarDecoration = T([...t, null])), i && (e.nameplate = T([...n, null])), (0, m.p)(e);
+        a && (e.avatarDecoration = y([...t, null])), i && (e.nameplate = y([...n, null])), (0, m.p)(e);
         let l = h.A.getPendingChanges(),
             r = (0, u.Sk)(l);
         await (0, s._L)(r).finally(s.pZ)
@@ -73,11 +73,11 @@ async function S() {
 
 function E() {
     try {
-        let e = T(v.hH7.FONT_SIZES);
+        let e = y(v.hH7.FONT_SIZES);
         (0, r.XS)(e);
-        let t = T(j.qh);
+        let t = y(j.qh);
         (0, r.AC)(t);
-        let n = T(C);
+        let n = y(C);
         p.Xi.updateSetting(n)
     } catch (e) {}
 }
@@ -95,8 +95,8 @@ function N() {
             j = e?.collectibles?.nameplate?.skuId,
             A = null != b ? a.find(e => e.skuId === b) ?? null : null,
             C = null != j ? i.find(e => e.skuId === j) ?? null : null,
-            T = o.A.fontSize,
-            y = o.A.messageGroupSpacing,
+            y = o.A.fontSize,
+            T = o.A.messageGroupSpacing,
             S = p.Xi.getSetting();
         return () => {
             try {
@@ -110,7 +110,7 @@ function N() {
                 });
                 let e = h.A.getPendingChanges(),
                     t = (0, u.Sk)(e);
-                (0, s._L)(t).finally(s.pZ), (0, r.XS)(T), (0, r.AC)(y), p.Xi.updateSetting(S)
+                (0, s._L)(t).finally(s.pZ), (0, r.XS)(y), (0, r.AC)(T), p.Xi.updateSetting(S)
             } catch (e) {}
         }
     }, [])

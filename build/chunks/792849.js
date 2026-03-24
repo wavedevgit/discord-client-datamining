@@ -1,6 +1,6 @@
 /** chunk id: 792849 params = (module,exports,require) **/
 a.d(t, {
-    g: () => d
+    g: () => o
 });
 var l = a(627968);
 a(64700);
@@ -27,15 +27,15 @@ let i = e => {
             children: a
         })
     },
-    d = {
+    o = {
         name: "Grid",
         id: "grid",
         component: e => {
             let {
                 columns: t,
                 perPage: a,
-                paginationPosition: d,
-                gridItemColumns: o,
+                paginationPosition: o,
+                gridItemColumns: d,
                 gridItemRows: c
             } = e;
             return (0, l.jsxs)(l.Fragment, {
@@ -52,11 +52,11 @@ let i = e => {
                     children: (0, l.jsxs)(r.A, {
                         perPage: a,
                         columns: t,
-                        paginationPosition: d,
+                        paginationPosition: o,
                         children: [(0, l.jsx)(i, {
                             color: "red"
                         }), (0, l.jsx)(s.A, {
-                            columns: o,
+                            columns: d,
                             rows: c,
                             children: (0, l.jsx)(i, {
                                 color: "orange",

@@ -1,37 +1,44 @@
 /** chunk id: 148702 params = (module,exports,require) **/
 a.d(t, {
-    A: () => o
+    A: () => c
 });
 var l = a(627968),
     n = a(64700),
     r = a(503698),
     s = a.n(r),
-    i = a(752238),
+    i = a(157941),
+    o = a(752238),
     d = a(781992);
 
-function o(e) {
+function c(e) {
     let {
         value: t,
         onChange: a
-    } = e, r = "json", o = n.useRef(null), [c, u] = n.useState("");
+    } = e, r = "json", c = n.useRef(null), [u, x] = n.useState("");
     return n.useEffect(() => {
-        if (null != t && i.default.hasLanguage(r)) {
-            let e = i.default.highlight(r, t, !0);
-            null != e ? u(e.value + "\n") : u(t + "\n")
-        } else u(t + "\n")
+        if (null != t && o.default.hasLanguage(r)) {
+            let e = o.default.highlight(r, t, !0);
+            null != e ? x(e.value + "\n") : x(t + "\n")
+        } else x(t + "\n")
     }, [t, r]), (0, l.jsxs)("div", {
         className: d.t,
         children: [(0, l.jsx)("pre", {
             className: d.c5,
             "aria-hidden": "true",
-            children: (0, l.jsx)("code", {
-                className: s()("hljs", r),
-                dangerouslySetInnerHTML: {
-                    __html: c ?? ""
-                }
+            children: (0, l.jsx)(i.l, {
+                location: "LayoutEditor",
+                code: t,
+                lang: "json",
+                className: "hljs",
+                children: (0, l.jsx)("code", {
+                    className: s()("hljs", r),
+                    dangerouslySetInnerHTML: {
+                        __html: u ?? ""
+                    }
+                })
             })
         }), (0, l.jsx)("textarea", {
-            ref: o,
+            ref: c,
             className: d.mW,
             value: t,
             onChange: e => {
@@ -57,13 +64,13 @@ function o(e) {
                             if (" " === r[e]) s++;
                             else break;
                         s > 0 && (a(t.substring(0, e) + t.substring(e + s)), setTimeout(() => {
-                            if (null != o.current) {
+                            if (null != c.current) {
                                 let t = Math.max(e, n - s);
-                                o.current.selectionStart = o.current.selectionEnd = t
+                                c.current.selectionStart = c.current.selectionEnd = t
                             }
                         }, 0))
                     } else a(t.substring(0, n) + "  " + t.substring(r)), setTimeout(() => {
-                        null != o.current && (o.current.selectionStart = o.current.selectionEnd = n + 2)
+                        null != c.current && (c.current.selectionStart = c.current.selectionEnd = n + 2)
                     }, 0)
                 }
             },

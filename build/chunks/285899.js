@@ -1,7 +1,7 @@
 /** chunk id: 285899 params = (module,exports,require) **/
 a.d(t, {
     O: () => I,
-    default: () => T
+    default: () => _
 });
 var r = a(627968),
     n = a(64700),
@@ -29,7 +29,7 @@ function I(e) {
         isLoading: u,
         onDeactivate: k,
         ...m
-    } = e, [I, T] = n.useState(!1);
+    } = e, [I, _] = n.useState(!1);
     return (0, r.jsxs)(i.Modal, {
         ...m,
         size: t,
@@ -71,7 +71,7 @@ function I(e) {
             className: p.ud,
             children: (0, r.jsx)(l.Checkbox, {
                 checked: I,
-                onChange: T,
+                onChange: _,
                 label: c,
                 labelType: "secondary"
             })
@@ -79,7 +79,7 @@ function I(e) {
     })
 }
 
-function T(e) {
+function _(e) {
     let {
         guildId: t,
         powerup: a,
@@ -87,14 +87,14 @@ function T(e) {
     } = e, {
         onDeactivate: b,
         error: f,
-        isLoading: T
+        isLoading: _
     } = (0, d.A)(t, a), {
-        onClose: _
+        onClose: T
     } = l, x = n.useCallback(e => {
         e.stopPropagation(), b().then(() => {
-            _?.()
+            T?.()
         })
-    }, [_, b]), E = function(e, t) {
+    }, [T, b]), E = function(e, t) {
         let {
             warningText: a,
             vanityUrlWarning: l
@@ -129,7 +129,7 @@ function T(e) {
         })(),
         warningText: E,
         error: f,
-        isLoading: T,
+        isLoading: _,
         onDeactivate: x,
         ...l
     })

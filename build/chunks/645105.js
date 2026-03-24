@@ -107,7 +107,7 @@ function T(e) {
     })
 }
 
-function I(e) {
+function C(e) {
     return (0, g.ub)(e, g.H2.ALPHA) ? (0, i.jsx)(d.A, {
         className: j.n0
     }) : (0, g.ub)(e, g.H2.BETA) ? (0, i.jsx)(c.A, {
@@ -115,7 +115,7 @@ function I(e) {
     }) : null
 }
 
-function C(e) {
+function I(e) {
     let {
         rule: t,
         isDefaultRule: n,
@@ -138,7 +138,7 @@ function C(e) {
     }, 300);
     if (null == d) return null;
     let {
-        headerText: C,
+        headerText: I,
         headerSubtext: v,
         descriptionText: S,
         icon: y
@@ -159,7 +159,7 @@ function C(e) {
                 className: j.aY,
                 children: [(0, i.jsxs)("div", {
                     className: j.bR,
-                    children: [C, I(t.triggerType)]
+                    children: [I, C(t.triggerType)]
                 }), (0, i.jsx)(a.Text, {
                     className: j.bL,
                     variant: "text-sm/normal",
@@ -225,7 +225,7 @@ function v(e) {
                 color: "text-strong",
                 children: (0, i.jsxs)("div", {
                     className: j.bR,
-                    children: [r, I(t)]
+                    children: [r, C(t)]
                 })
             }), (0, i.jsx)(a.Text, {
                 className: j.mT,
@@ -273,7 +273,7 @@ function S(e) {
         rule: t,
         onChangeRule: u,
         onContextMenu: m
-    }) : (0, i.jsx)(C, {
+    }) : (0, i.jsx)(I, {
         rule: t,
         isDefaultRule: r,
         onContextMenu: m

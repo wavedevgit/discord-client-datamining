@@ -7,8 +7,8 @@ var l = a(627968),
     r = a(674658),
     s = a(226540),
     i = a(369496),
-    d = a(227),
-    o = a(486020);
+    o = a(227),
+    d = a(486020);
 let c = e => {
     let {
         skuId: t,
@@ -19,7 +19,7 @@ let c = e => {
     } = (0, r.q)(t, !0), x = u?.items[0];
     if (null == x) return null;
     if (x.type === n.R.AVATAR_DECORATION) {
-        let e = o.Ay.getAvatarDecorationURL({
+        let e = d.Ay.getAvatarDecorationURL({
             avatarDecoration: x,
             size: a,
             canAnimate: c
@@ -38,7 +38,7 @@ let c = e => {
     }
     if (x.type === n.R.NAMEPLATE) {
         let e = (0, i.WK)(x);
-        return (0, l.jsx)(d.A, {
+        return (0, l.jsx)(o.A, {
             nameplate: e,
             placement: s.u.PREVIEW
         })

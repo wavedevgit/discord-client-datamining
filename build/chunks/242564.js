@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     A3: () => N,
-    Ay: () => I,
+    Ay: () => C,
     CU: () => A,
     HA: () => h,
     IE: () => j,
@@ -196,7 +196,7 @@ let N = e => {
         })
     };
 
-function I(e) {
+function C(e) {
     let {
         className: t,
         headerClassName: n,

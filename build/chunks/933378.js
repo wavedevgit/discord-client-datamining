@@ -23,11 +23,11 @@ var a = n(627968),
     j = n(495242),
     A = n(52093),
     C = n(985018),
-    T = n(883476);
+    y = n(883476);
 
-function y(e) {
+function T(e) {
     return (0, a.jsx)(d.Text, {
-        className: T.eW,
+        className: y.eW,
         color: "text-muted",
         variant: "text-xxs/normal",
         children: e.children
@@ -73,7 +73,7 @@ function S(e) {
                         let i = u.A.getAccount(e.connected_account_id, e.connected_account_type),
                             s = (0, _.IG)(e),
                             l = (0, _.$J)(e);
-                        return (0, a.jsx)(y, {
+                        return (0, a.jsx)(T, {
                             children: C.intl.format(s, {
                                 account_name: i?.name,
                                 onClick: () => {
@@ -90,12 +90,12 @@ function S(e) {
                             })
                         }, n)
                     }
-                    return (0, a.jsx)(y, {
+                    return (0, a.jsx)(T, {
                         children: e.message
                     }, n)
                 })
             }) : () => (0, a.jsx)(d.Text, {
-                className: T.eW,
+                className: y.eW,
                 color: "text-muted",
                 variant: "text-xxs/normal",
                 children: (0, v.ui)(t) ? C.intl.string(C.t.bUyEZZ) : C.intl.format(C.t.GXqvC1, {
@@ -105,30 +105,30 @@ function S(e) {
         }
     }, [j, t, f]);
     return (0, a.jsxs)("div", {
-        className: T.XK,
+        className: y.XK,
         children: [(0, a.jsxs)("div", {
-            className: T.oK,
+            className: y.oK,
             children: [(0, a.jsx)(d.EpV, {
                 size: "custom",
                 color: "currentColor",
-                className: 0 === j.length ? T.pH : T.JA,
+                className: 0 === j.length ? y.pH : y.JA,
                 width: 16,
                 height: 16
             }), (0, a.jsx)(d.Text, {
                 variant: "text-xs/medium",
                 children: E
             }), (0, a.jsx)(d.DUT, {
-                className: l()(T.w, {
-                    [T.r9]: A
+                className: l()(y.w, {
+                    [y.r9]: A
                 }),
                 onClick: () => S(),
                 children: o.render()
             })]
         }), (0, a.jsxs)("div", {
             className: l()({
-                [T.Iu]: A
+                [y.Iu]: A
             }),
-            children: [N(), 0 === j.length ? null : (0, a.jsx)(y, {
+            children: [N(), 0 === j.length ? null : (0, a.jsx)(T, {
                 children: s
             })]
         })]

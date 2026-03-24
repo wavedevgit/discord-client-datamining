@@ -25,8 +25,8 @@ var i = n(627968),
     E = n(655943),
     b = n(287479),
     T = n(400812),
-    I = n(72533),
-    C = n(729984),
+    C = n(72533),
+    I = n(729984),
     v = n(193477),
     S = n(692453),
     y = n(307209),
@@ -52,7 +52,7 @@ function k(e) {
             let e = (0, T.ql)(l);
             return null != e && !b.A.isEducationUpsellDismissed(e)
         }),
-        E = (0, I.A)(n),
+        E = (0, C.A)(n),
         M = !E && h;
     switch (s.useEffect(() => {
             (0, m.Dr)(o.M.COMMUNITY_ONBOARDING_NEW_BADGE)
@@ -67,7 +67,7 @@ function k(e) {
             t = (0, i.jsx)(_.A, {});
             break;
         case T.Hy.DEFAULT_CHANNELS:
-            t = (0, i.jsx)(C.A, {
+            t = (0, i.jsx)(I.A, {
                 saveOnClose: !E
             });
             break;

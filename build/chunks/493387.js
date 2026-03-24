@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(736653),
     A = n(531685),
     m = n(85448),
-    p = n(806931),
-    _ = n(254187),
+    _ = n(806931),
+    p = n(254187),
     g = n(20976),
     f = n(162253);
 let x = {
@@ -115,16 +115,16 @@ class C extends s.PureComponent {
             theme: e,
             children: t,
             className: n
-        } = this.props, s = (0, d.Mw)(e), l = a()(_._y, {
+        } = this.props, s = (0, d.Mw)(e), l = a()(p._y, {
             [f.cp]: s,
             [f.QB]: !s
         });
         return (0, i.jsxs)(r.A.div, {
             role: "listitem",
-            className: a()(_.kY, n),
+            className: a()(p.kY, n),
             style: this.getWidthStyle(),
             children: [(0, i.jsx)("div", {
-                className: a()(_.XY, g.xM, g.wq, g.Hu),
+                className: a()(p.XY, g.xM, g.wq, g.Hu),
                 children: (0, i.jsx)(r.A.div, {
                     className: l,
                     style: this.getSpriteStyle()
@@ -147,7 +147,7 @@ function E(e) {
         width: d,
         guildId: g
     } = e, f = (0, h.Ay)(), x = (t = n.length, ((0, u.FT9)(u._3J.SIZE_80) + 16) * t > d ? u._3J.SIZE_40 : u._3J.SIZE_80), E = (0, o.bG)([A.A], () => A.A.isFocused()), I = n.map(e => {
-        if (e.type !== p.lp.USER) return null;
+        if (e.type !== _.lp.USER) return null;
         let {
             user: t,
             voiceState: n,
@@ -155,7 +155,7 @@ function E(e) {
             ringing: a
         } = e;
         return (0, i.jsx)(C, {
-            className: _.Wp,
+            className: p.Wp,
             width: (0, u.FT9)(x),
             theme: f,
             children: (0, i.jsx)(u.sqX, {
@@ -177,7 +177,7 @@ function E(e) {
     return (0, i.jsx)(c.F, {
         component: "div",
         role: "list",
-        className: a()(_.zr, l),
+        className: a()(p.zr, l),
         children: I
     })
 }

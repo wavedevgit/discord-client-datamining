@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(58149),
     A = n(976860),
     m = n(734057),
-    p = n(510560),
-    _ = n(572448),
+    _ = n(510560),
+    p = n(572448),
     g = n(955454),
     f = n(502754),
     x = n(652215),
@@ -92,7 +92,7 @@ let I = s.memo(function(e) {
         return (0, i.jsx)("div", {
             className: E.Ix,
             children: (0, i.jsx)(c.Fmo, {
-                component: (0, i.jsx)(_.A, {
+                component: (0, i.jsx)(p.A, {
                     channel: o,
                     gotoChannel: C,
                     mentionCount: t.mentionCount,
@@ -103,7 +103,7 @@ let I = s.memo(function(e) {
                     children: (0, i.jsxs)(c.ButtonGroup, {
                         size: "sm",
                         className: E.GC,
-                        children: [(0, i.jsx)(p.A, {
+                        children: [(0, i.jsx)(_.A, {
                             channel: o
                         }), (0, i.jsx)(b, {
                             ...e

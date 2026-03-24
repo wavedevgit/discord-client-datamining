@@ -37,12 +37,12 @@ function A(e) {
         drag: E,
         dragPreview: b,
         drop: T,
-        isDragging: I
+        isDragging: C
     } = (0, h.A)(j, c, u, A);
     return E(N), b(T(j)), (0, i.jsxs)("div", {
         ref: j,
         className: r()(p.Nr, {
-            [p.wy]: I,
+            [p.wy]: C,
             [p.r9]: f
         }),
         children: [(0, i.jsxs)("div", {

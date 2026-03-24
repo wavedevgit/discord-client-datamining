@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(627968),
     i = n(64700),
-    l = n(512750),
-    s = n(311907),
+    s = n(512750),
+    l = n(311907),
     o = n(397927),
     a = n(997509),
     u = n(645619),
@@ -15,44 +15,44 @@ var r = n(627968),
     p = n(915667),
     m = n(568065),
     _ = n(652215),
-    A = n(333354),
-    f = n(985018),
-    g = n(870166),
-    x = n(849630);
+    f = n(333354),
+    g = n(985018),
+    x = n(870166),
+    A = n(849630);
 
 function v(e, t) {
     let v = (0, c.A)(t) ?? !1,
-        h = (0, s.bG)([u.A], () => u.A.getStateForGuild(t)?.allPowerups),
-        E = (0, s.bG)([u.A], () => u.A.getStateForGuild(t)?.unlockedPowerups),
-        b = (0, d.RA)(t, "usePowerupGroupConfig");
+        h = (0, l.bG)([u.A], () => u.A.getStateForGuild(t)?.allPowerups),
+        E = (0, l.bG)([u.A], () => u.A.getStateForGuild(t)?.unlockedPowerups),
+        j = (0, d.RA)(t, "usePowerupGroupConfig");
     return i.useMemo(() => {
         let i = e => "guildTagsBadgePacks" === e ? function(e) {
                 let {
                     guildId: t,
                     canUseBoosts: i,
-                    allPowerups: s,
+                    allPowerups: l,
                     unlockedPowerups: u,
                     isWaveTwoEnabled: d
-                } = e, c = f.intl.string(A.default.KC9HRW), v = f.intl.string(A.default.GJiSmP), h = s?.[l.SL], E = u?.[l.SL] != null, b = f.intl.string(A.default["/egwJA"]), I = E ? void 0 : f.intl.string(A.default.W6Vwn3), j = E ? void 0 : f.intl.string(A.default.lvk1Gc), S = E ? f.intl.string(A.default["9CfkLO"]) : f.intl.string(f.t["+7XY31"]), C = E ? "secondary" : "expressive", w = i ? () => {
+                } = e, c = g.intl.string(f.default.KC9HRW), v = g.intl.string(f.default.GJiSmP), h = l?.[s.SL], E = u?.[s.SL] != null, j = g.intl.string(f.default["/egwJA"]), b = E ? void 0 : g.intl.string(f.default.W6Vwn3), I = E ? void 0 : g.intl.string(f.default.lvk1Gc), S = E ? g.intl.string(f.default["9CfkLO"]) : g.intl.string(g.t["+7XY31"]), C = E ? "secondary" : "expressive", w = i ? () => {
                     E ? a.A.open(t, _.BEX.TAG, _.JJy.GUILD_POWERUPS_OVERVIEW_CARD) : null != h && (0, p.A)(t, h), (0, o.s7G)()
                 } : void 0, N = d ? m.m_ : void 0;
                 return {
                     title: c,
                     description: v,
                     openModal: function(e) {
-                        let l = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+                        let s = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
                         (0, o.mMO)(async () => {
                             let {
-                                default: l
+                                default: s
                             } = await n.e("56065").then(n.bind(n, 534904));
-                            return n => (0, r.jsx)(l, {
+                            return n => (0, r.jsx)(s, {
                                 guildId: t,
                                 title: c,
-                                description: f.intl.string(A.default.BBRFRd),
+                                description: g.intl.string(f.default.BBRFRd),
                                 powerups: e,
                                 newPowerupSkuIdSet: N,
                                 forceStaticImages: d,
-                                footerInfoText: j,
+                                footerInfoText: I,
                                 footerAction: i && null != w && null != S ? {
                                     variant: C,
                                     text: S,
@@ -62,16 +62,16 @@ function v(e, t) {
                                 ...n
                             })
                         }, {
-                            onCloseCallback: l?.onModalClose
+                            onCloseCallback: s?.onModalClose
                         })
                     },
-                    viewCta: b,
-                    viewCtaTooltip: I,
+                    viewCta: j,
+                    viewCtaTooltip: b,
                     badge: d ? "new" : void 0,
                     newPowerupSkuIdSet: N,
                     image: {
-                        staticUrl: x.A,
-                        animatedUrl: g.A
+                        staticUrl: A.A,
+                        animatedUrl: x.A
                     },
                     forceStaticImages: d
                 }
@@ -80,15 +80,15 @@ function v(e, t) {
                 canUseBoosts: v,
                 allPowerups: h,
                 unlockedPowerups: E,
-                isWaveTwoEnabled: b
+                isWaveTwoEnabled: j
             }) : void 0,
-            s = {};
+            l = {};
         for (let t of e) {
             let e = i(t);
-            null != e && (s[t] = e)
+            null != e && (l[t] = e)
         }
-        return s
-    }, [e, t, v, h, E, b])
+        return l
+    }, [e, t, v, h, E, j])
 }
 
 function h(e, t) {

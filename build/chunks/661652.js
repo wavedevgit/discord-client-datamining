@@ -23,8 +23,8 @@ var a = n(627968),
     j = n(546183),
     A = n(134861),
     C = n(157257),
-    T = n(985018),
-    y = n(271469),
+    y = n(985018),
+    T = n(271469),
     S = n(661251),
     E = n(508474);
 let N = [{
@@ -52,8 +52,8 @@ function I() {
             analyticsLocations: o
         } = (0, m.Ay)(u.A.DEV_TOOLS),
         I = b.TA.useSetting(),
-        [O, R] = i.useState(""),
-        k = (0, r.bG)([f.Ay, C.A], () => (0, v.A)(f.Ay, C.A)),
+        [O, k] = i.useState(""),
+        R = (0, r.bG)([f.Ay, C.A], () => (0, v.A)(f.Ay, C.A)),
         w = (0, _.h)(O),
         D = (0, h.g)(w),
         P = (0, r.yK)([g.A], () => w?.linkedGames?.map(e => g.A.getApplication(e.id)).filter(e => null != e) ?? []),
@@ -102,11 +102,11 @@ function I() {
             }), (0, a.jsx)(d.ksK, {
                 label: "Application ID",
                 value: O,
-                onChange: R
-            }), null != k && null != k.id ? (0, a.jsx)(d.Button, {
-                onClick: () => R(k.id),
+                onChange: k
+            }), null != R && null != R.id ? (0, a.jsx)(d.Button, {
+                onClick: () => k(R.id),
                 variant: "primary",
-                text: `Use detected game: ${k.name} (${k.id})`
+                text: `Use detected game: ${R.name} (${R.id})`
             }) : null, (0, a.jsxs)(d.Text, {
                 variant: "text-md/normal",
                 children: ["Application Name: ", null != w ? w.name : "N/A"]
@@ -121,40 +121,40 @@ function I() {
                 children: "Authorization"
             }), (0, a.jsx)(p.VT, {
                 overallStatus: M.debug.isSubscribedToAuthorizeRequest ? p.nW.OVERALL_GOOD : U ? p.nW.WARN : p.nW.OVERALL_BAD,
-                name: T.intl.string(y.default.AGLx00),
+                name: y.intl.string(T.default.AGLx00),
                 steps: [{
                     status: U ? p.nW.GOOD : p.nW.BAD,
-                    text: T.intl.string(y.default.kxF9br),
-                    description: U ? null : T.intl.string(y.default.PFxxJa),
+                    text: y.intl.string(T.default.kxF9br),
+                    description: U ? null : y.intl.string(T.default.PFxxJa),
                     learnMoreLink: U ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
                 }, {
                     status: M.debug.isSubscribedToAuthorizeRequest ? p.nW.GOOD : U ? p.nW.WARN : p.nW.BAD,
-                    text: T.intl.string(y.default.S94dzs),
-                    description: M.debug.isSubscribedToAuthorizeRequest || !U ? null : T.intl.string(y.default.aTULMB),
+                    text: y.intl.string(T.default.S94dzs),
+                    description: M.debug.isSubscribedToAuthorizeRequest || !U ? null : y.intl.string(T.default.aTULMB),
                     learnMoreLink: M.debug.isSubscribedToAuthorizeRequest || !U ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
                 }],
                 isChosen: B.chosenFlow === x._M.RPC
             }), (0, a.jsx)(p.VT, {
                 overallStatus: L.debug.hasConnectionEntrypointUrl ? p.nW.OVERALL_GOOD : p.nW.OVERALL_BAD,
-                name: T.intl.string(y.default.K3ObrU),
+                name: y.intl.string(T.default.K3ObrU),
                 steps: [{
                     status: L.debug.hasConnectionEntrypointUrl ? p.nW.GOOD : p.nW.BAD,
-                    text: T.intl.string(y.default["8a7IrV"]),
-                    description: L.debug.hasConnectionEntrypointUrl ? T.intl.formatToPlainString(y.default["9iLeL2"], {
+                    text: y.intl.string(T.default["8a7IrV"]),
+                    description: L.debug.hasConnectionEntrypointUrl ? y.intl.formatToPlainString(T.default["9iLeL2"], {
                         url: L.connectionApp?.connectionEntrypointUrl
                     }) : null
                 }],
                 isChosen: B.chosenFlow === x._M.WEB
             }), (0, a.jsx)(p.Sy, {
                 status: B.hasAlreadyLinked ? p.nW.OVERALL_GOOD : p.nW.OVERALL_BAD,
-                text: T.intl.string(T.t["Vu/zmQ"])
+                text: y.intl.string(y.t["Vu/zmQ"])
             }), 0 === B.debug.validFlows.length && (0, a.jsx)(d.Text, {
                 style: {
                     minWidth: 0,
                     overflow: "hidden"
                 },
                 variant: "text-md/medium",
-                children: T.intl.string(y.default.eg0mNa)
+                children: y.intl.string(T.default.eg0mNa)
             }), (0, a.jsx)(d.Button, {
                 disabled: !B.canStartAuthorization,
                 onClick: () => B.startAuthorization({

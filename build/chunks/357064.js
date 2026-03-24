@@ -30,13 +30,13 @@ function A(e, t) {
 function m(e) {
     let {
         guildNode: t
-    } = e, n = t.id, l = (0, s.bG)([r.A], () => r.A.getRequest(n)), m = (0, s.bG)([r.A], () => r.A.getJoinRequestGuild(n), [n]), p = (0, s.bG)([c.A], () => c.A.isFocused()), _ = (0, s.bG)([o.A], () => o.A.getGuildId());
+    } = e, n = t.id, l = (0, s.bG)([r.A], () => r.A.getRequest(n)), m = (0, s.bG)([r.A], () => r.A.getJoinRequestGuild(n), [n]), _ = (0, s.bG)([c.A], () => c.A.isFocused()), p = (0, s.bG)([o.A], () => o.A.getGuildId());
     return null == m ? null : (0, i.jsx)(d.A, {
         guildNode: t,
         guild: m,
-        animatable: p,
+        animatable: _,
         draggable: !1,
-        selected: n === _,
+        selected: n === p,
         preloadOnClick: !1,
         contextMenu: A,
         lowerBadge: l?.applicationStatus === a.B5.REJECTED ? (0, u.eW)({

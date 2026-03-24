@@ -8,8 +8,8 @@ var l = a(855104),
     r = a(287809),
     s = a(927578),
     i = a(623373),
-    d = a(561769),
-    o = a(652215);
+    o = a(561769),
+    d = a(652215);
 let c = e => {
         let {
             product: t,
@@ -39,9 +39,9 @@ let c = e => {
             isOrbExclusive: n,
             hasDiscountOffer: r = !1,
             prioritizedCurrency: s = null
-        } = e, i = [], c = s === d.Hi.ORBS, u = s === d.Hi.FIAT;
+        } = e, i = [], c = s === o.Hi.ORBS, u = s === o.Hi.FIAT;
         null != a && null != l ? c || !u && t && !r ? i.push(a, l) : i.push(l, a) : null != a ? i.push(a) : null != l && i.push(l);
-        let x = i.length > 0 && i[0]?.currency === o.Yri.DISCORD_ORB;
+        let x = i.length > 0 && i[0]?.currency === d.Yri.DISCORD_ORB;
         return {
             checkoutEligiblePrices: i,
             isOrbExclusive: n,
@@ -54,17 +54,17 @@ let c = e => {
             product: t,
             prioritizedCurrency: a
         } = e, n = (0, l.r_)(), i = r.default.getCurrentUser(), {
-            orbPrice: d,
-            fiatPrice: o,
+            orbPrice: o,
+            fiatPrice: d,
             isOrbExclusive: x
         } = c({
             product: t,
             isPremiumUser: s.Ay.canUseCollectibles(i)
-        }), h = null != d && null != n && n >= d.amount, {
+        }), h = null != o && null != n && n >= o.amount, {
             shouldCheckoutWithOrbs: m
         } = u({
-            orbPrice: d,
-            fiatPrice: o,
+            orbPrice: o,
+            fiatPrice: d,
             isOrbExclusive: x,
             hasSufficientOrbs: h,
             prioritizedCurrency: a ?? null
@@ -81,16 +81,16 @@ function h(e) {
     } = e, {
         orbPrice: s,
         fiatPrice: i,
-        isOrbExclusive: d
+        isOrbExclusive: o
     } = c({
         product: t,
         isPremiumUser: a
-    }), o = (0, l.kj)(null != s ? s.amount : null);
+    }), d = (0, l.kj)(null != s ? s.amount : null);
     return u({
         orbPrice: s,
         fiatPrice: i,
-        isOrbExclusive: d,
-        hasSufficientOrbs: o,
+        isOrbExclusive: o,
+        hasSufficientOrbs: d,
         hasDiscountOffer: r,
         prioritizedCurrency: n
     })

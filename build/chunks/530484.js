@@ -1,7 +1,7 @@
 /** chunk id: 530484 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => p
 });
 var i = n(627968);
 n(64700);
@@ -16,12 +16,12 @@ var s = n(311907),
     h = n(652793),
     A = n(790782),
     m = n(985018),
-    p = n(811094);
+    _ = n(811094);
 
-function _(e) {
+function p(e) {
     let {
         guild: t,
-        selected: _
+        selected: p
     } = e, {
         hasUnread: g,
         mentionCount: f
@@ -52,7 +52,7 @@ function _(e) {
             className: e
         }),
         text: I,
-        selected: _,
+        selected: p,
         onClick: C,
         onContextMenu: e => {
             (0, r.L3)(e, async () => {
@@ -67,7 +67,7 @@ function _(e) {
         },
         showUnread: g && !x,
         trailing: !x && f > 0 ? (0, i.jsx)(a.hVq, {
-            className: p.Do,
+            className: _.Do,
             disableColor: !0,
             count: f
         }) : null

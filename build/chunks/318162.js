@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(562153),
     A = n(183555),
     m = n(672385),
-    p = n(950191),
-    _ = n(249790),
+    _ = n(950191),
+    p = n(249790),
     g = n(946356),
     f = n(254828),
     x = n(783123),
@@ -30,7 +30,7 @@ function b(e) {
         user: t,
         channel: n,
         onHide: b
-    } = e, S = (0, p.Ay)(t.id), T = (0, o.Ay)(), v = (0, a.bG)([u.A], () => u.A.isBlocked(t.id)), {
+    } = e, S = (0, _.Ay)(t.id), T = (0, o.Ay)(), v = (0, a.bG)([u.A], () => u.A.isBlocked(t.id)), {
         analyticsLocations: y
     } = (0, d.Ay)(v ? c.A.BLOCKED_PROFILE_PANEL : c.A.IGNORED_PROFILE_PANEL), j = (0, A.pb)({
         layout: "SIDEBAR",
@@ -60,7 +60,7 @@ function b(e) {
                             className: I.rf,
                             children: [(0, i.jsxs)("div", {
                                 className: I.N1,
-                                children: [(0, i.jsx)(_.A, {
+                                children: [(0, i.jsx)(p.A, {
                                     user: t
                                 }), (0, i.jsx)(r.Heading, {
                                     variant: "heading-lg/bold",

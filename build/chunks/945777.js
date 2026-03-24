@@ -16,8 +16,8 @@ var i = n(627968),
     h = n(397927),
     A = n(442433),
     m = n(793574),
-    p = n(688810),
-    _ = n(139286),
+    _ = n(688810),
+    p = n(139286),
     g = n(480890),
     f = n(267102),
     x = n(342296),
@@ -107,10 +107,10 @@ let T = s.memo(function(e) {
             blocked: u
         } = t, I = l.getGuildId(), N = C.default.getId(), {
             newestAnalyticsLocation: T
-        } = (0, p.Ay)(m.A.AUDIENCE_TILE), y = (0, f.Us)(), j = (0, d.bG)([E.Ay], () => null != I && E.Ay.getMember(I, r.id)?.premiumSince != null, [I, r.id]), R = s.useRef(null);
+        } = (0, _.Ay)(m.A.AUDIENCE_TILE), y = (0, f.Us)(), j = (0, d.bG)([E.Ay], () => null != I && E.Ay.getMember(I, r.id)?.premiumSince != null, [I, r.id]), R = s.useRef(null);
         o()(null != I, "Channel cannot be guildless");
         let O = s.useCallback(e => {
-            (0, _.x)({
+            (0, p.x)({
                 type: c.ImpressionTypes.MENU,
                 name: c.ImpressionNames.CALL_TILE_CONTEXT_MENU,
                 properties: {

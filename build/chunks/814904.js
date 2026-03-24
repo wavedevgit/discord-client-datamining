@@ -24,8 +24,8 @@ let s = () => (0, l.jsx)("div", {
                     containerHeight: t,
                     showChildren: a,
                     bannerSrc: i,
-                    animatedBannerSrc: d,
-                    logoSrc: o,
+                    animatedBannerSrc: o,
+                    logoSrc: d,
                     href: c,
                     backgroundColor: u
                 } = e, x = () => a ? (0, l.jsxs)(n.A, {
@@ -41,7 +41,7 @@ let s = () => (0, l.jsx)("div", {
                                 src: i
                             },
                             logoSrc: {
-                                src: o
+                                src: d
                             },
                             href: c,
                             backgroundColor: u,
@@ -53,10 +53,10 @@ let s = () => (0, l.jsx)("div", {
                         },
                         children: (0, l.jsx)(r.A, {
                             bannerSrc: {
-                                src: d
+                                src: o
                             },
                             logoSrc: {
-                                src: o
+                                src: d
                             },
                             href: c,
                             backgroundColor: u,

@@ -1,26 +1,20 @@
 /** chunk id: 790174 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => l
 });
 var i = n(627968),
-    s = n(397927),
-    l = n(790114);
+    s = n(397927);
 
-function a(e) {
+function l(e) {
     let {
-        title: t,
-        className: n,
-        children: a
-    } = e, r = (0, l.A)();
+        className: t,
+        children: n
+    } = e;
     return (0, i.jsx)("div", {
-        className: n,
-        children: (0, i.jsxs)(s.BJc, {
+        className: t,
+        children: (0, i.jsx)(s.BJc, {
             gap: 16,
-            children: [(0, i.jsx)(s.Heading, {
-                variant: "heading-lg/semibold",
-                color: "text-strong",
-                children: r ? void 0 : t
-            }), a]
+            children: n
         })
     })
 }

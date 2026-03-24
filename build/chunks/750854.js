@@ -1,6 +1,6 @@
 /** chunk id: 750854 params = (module,exports,require) **/
 t.d(n, {
-    Gk: () => i,
+    Gk: () => c,
     J2: () => r,
     yN: () => a,
     z2: () => s
@@ -34,7 +34,7 @@ function s(e) {
     })
 }
 
-function i(e) {
+function c(e) {
     let {
         children: n
     } = e;

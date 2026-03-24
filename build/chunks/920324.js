@@ -7,8 +7,8 @@ var l = a(627968),
     r = a(397927),
     s = a(561769),
     i = a(41770),
-    d = a(53566),
-    o = a(148702),
+    o = a(53566),
+    d = a(148702),
     c = a(785330),
     u = a(652215),
     x = a(985018),
@@ -25,7 +25,7 @@ let m = {
                     (0, c.F2)(JSON.parse(e)) && r(e)
                 } catch {}
             }, [e]), (0, l.jsxs)("div", {
-                children: [(0, l.jsx)(o.A, {
+                children: [(0, l.jsx)(d.A, {
                     value: e,
                     onChange: e => t(e)
                 }), (0, l.jsx)("hr", {}), (0, l.jsx)(c.Ay, {
@@ -263,7 +263,7 @@ let m = {
                 text: t
             } = e;
             (0, x.useSyncMessages)(h.c);
-            let a = (0, d.S)(t);
+            let a = (0, o.S)(t);
             return (0, l.jsxs)("div", {
                 children: [(0, l.jsxs)(r.Text, {
                     variant: "text-lg/bold",

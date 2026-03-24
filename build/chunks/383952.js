@@ -23,15 +23,15 @@ var a = n(627968),
     j = n(77735),
     A = n(340913),
     C = n(277342),
-    T = n(430452),
-    y = n(383501),
+    y = n(430452),
+    T = n(383501),
     S = n(350535),
     E = n(42473),
     N = n(731854),
     I = n(985018),
     O = n(807880),
-    R = n(368149),
-    k = n(709502),
+    k = n(368149),
+    R = n(709502),
     w = n(973324);
 
 function D(e) {
@@ -57,10 +57,10 @@ function D(e) {
         } = A.A.useConfig({
             location: "MicrophoneButton"
         }),
-        q = (0, o.bG)([T.Ay], () => T.Ay.getMode() === N.TB.PUSH_TO_TALK),
-        Y = (0, o.bG)([T.Ay], () => T.Ay.getSettings().modeOptions.shortcut),
-        Q = (0, o.bG)([p.A], () => p.A.getIsTutorialActive(g.v.MUTE_TUTORIAL)),
-        J = (0, o.bG)([y.A], () => null != y.A.getChannelId()),
+        q = (0, o.bG)([y.Ay], () => y.Ay.getMode() === N.TB.PUSH_TO_TALK),
+        Q = (0, o.bG)([y.Ay], () => y.Ay.getSettings().modeOptions.shortcut),
+        Y = (0, o.bG)([p.A], () => p.A.getIsTutorialActive(g.v.MUTE_TUTORIAL)),
+        J = (0, o.bG)([T.A], () => null != T.A.getChannelId()),
         {
             name: X
         } = (0, b.x5)(N.oh.AUDIO_INPUT),
@@ -90,7 +90,7 @@ function D(e) {
     } : H || V ? {
         tooltipType: "green_void_do_not_use",
         tooltipText: I.intl.format(I.t.c1qUOQ, {
-            keybind: S.dI(Y).toLocaleUpperCase()
+            keybind: S.dI(Q).toLocaleUpperCase()
         }),
         tooltipForceOpen: !0
     } : {
@@ -99,8 +99,8 @@ function D(e) {
     let ed = $ && q && J,
         ec = et ? d.A.colors.ICON_VOICE_MUTED : "currentColor",
         eu = i.useCallback(() => {
-            B(), Q && x.N(g.v.MUTE_TUTORIAL)
-        }, [B, Q]);
+            B(), Y && x.N(g.v.MUTE_TUTORIAL)
+        }, [B, Y]);
     return (0, a.jsxs)(h.f5, {
         value: ea,
         children: [(0, a.jsx)(u.YNO, {
@@ -135,14 +135,14 @@ function D(e) {
                 } = n, o = s ? r.tN5 : r.abt;
                 return (0, a.jsxs)("div", {
                     ref: ee,
-                    className: l()(R.Lh, {
-                        [R.v8]: et,
-                        [R.q6]: s
+                    className: l()(k.Lh, {
+                        [k.v8]: et,
+                        [k.q6]: s
                     }),
                     children: [(0, a.jsx)(E.A, {
                         "aria-checked": et,
                         "aria-label": I.intl.string(I.t.w4m945),
-                        className: R.eT,
+                        className: k.eT,
                         disabled: P,
                         icon: (0, a.jsx)(er, {
                             size: "custom",
@@ -164,20 +164,20 @@ function D(e) {
                         role: "switch",
                         ...t,
                         children: ed ? (0, a.jsx)("div", {
-                            className: l()(k.U, {
-                                [k.z]: z
+                            className: l()(R.U, {
+                                [R.z]: z
                             })
                         }) : null
                     }), (0, a.jsx)(E.A, {
                         "aria-label": W ? I.intl.formatToPlainString(I.t["18wnuD"], {
                             inputDeviceName: X
                         }) : I.intl.string(I.t.fRzCbB),
-                        className: l()(R.UT, {
-                            [R.q6]: s
+                        className: l()(k.UT, {
+                            [k.q6]: s
                         }),
                         disabled: P,
                         icon: (0, a.jsx)(o, {
-                            className: R.$$,
+                            className: k.$$,
                             size: "custom",
                             width: 12,
                             height: 12,
@@ -203,7 +203,7 @@ function D(e) {
             }
         }), (0, a.jsx)(c.AM, {
             targetElementRef: ee,
-            shouldShow: Q,
+            shouldShow: Y,
             graphic: {
                 type: "image",
                 src: w.A

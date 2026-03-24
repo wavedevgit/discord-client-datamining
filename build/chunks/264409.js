@@ -22,9 +22,9 @@ function u(e) {
         onAnimationRest: h
     } = e, A = {}, m = {};
     A.transform = "translate3d(10px, 10px, 0) scale3d(3, 3, 1)", m.transform = "translate3d(0, 0, 0) scale3d(1, 1, 1)";
-    let p = (0, o.rdh)(r.A.unsafe_rawColors.BRAND_500).hex(),
-        _ = (0, o.rdh)(r.A.unsafe_rawColors.PRIMARY_630).hex();
-    s && null == t.icon && (A.backgroundColor = p, m.backgroundColor = _);
+    let _ = (0, o.rdh)(r.A.unsafe_rawColors.BRAND_500).hex(),
+        p = (0, o.rdh)(r.A.unsafe_rawColors.PRIMARY_630).hex();
+    s && null == t.icon && (A.backgroundColor = _, m.backgroundColor = p);
     let g = (0, o.pnh)(n, {
         from: A,
         enter: m,

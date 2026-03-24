@@ -1,0 +1,707 @@
+:root {
+    --arb-bg-light: #fff;
+    --arb-fg-light: #1f2328;
+    --arb-at-light: #0550ae;
+    --arb-co-light: #0550ae;
+    --arb-cb-light: #0550ae;
+    --arb-fb-light: #8250df;
+    --arb-f-light: #8250df;
+    --arb-fm-light: #8250df;
+    --arb-k-light: #cf222e;
+    --arb-kc-light: #cf222e;
+    --arb-ko-light: #cf222e;
+    --arb-kd-light: #cf222e;
+    --arb-ke-light: #cf222e;
+    --arb-kf-light: #cf222e;
+    --arb-ki-light: #cf222e;
+    --arb-kp-light: #cf222e;
+    --arb-kr-light: #cf222e;
+    --arb-kt-light: #cf222e;
+    --arb-ky-light: #cf222e;
+    --arb-o-light: #cf222e;
+    --arb-pr-light: #0550ae;
+    --arb-p-light: #1f2328;
+    --arb-pb-light: #1f2328;
+    --arb-pd-light: #1f2328;
+    --arb-ps-light: #0550ae;
+    --arb-s-light: #0a3069;
+    --arb-ss-light: #cf222e;
+    --arb-tg-light: #116329;
+    --arb-td-light: #116329;
+    --arb-te-light: #116329;
+    --arb-t-light: #953800;
+    --arb-tb-light: #953800;
+    --arb-tq-light: #953800;
+    --arb-v-light: #1f2328;
+    --arb-vb-light: #953800;
+    --arb-vp-light: #953800;
+    --arb-c-light: #6e7781;
+    --arb-cd-light: #6e7781;
+    --arb-m-light: #0550ae;
+    --arb-l-light: #8250df;
+    --arb-n-light: #0550ae;
+    --arb-tl-light: #1f2328;
+    --arb-em-light-style: italic;
+    --arb-st-light-weight: bold;
+    --arb-tu-light: #0969da;
+    --arb-tu-light-decoration: underline;
+    --arb-tr-light: #8250df;
+    --arb-se-light: #0550ae;
+    --arb-tt-light: #8250df;
+    --arb-tt-light-weight: bold;
+    --arb-tx-light-decoration: line-through;
+    --arb-sp-light: #1f2328;
+    --arb-in-light: #cf222e;
+    --arb-sc-light: #cf222e;
+    --arb-rp-light: #cf222e;
+    --arb-cn-light: #cf222e;
+    --arb-ex-light: #cf222e;
+    --arb-pp-light: #cf222e;
+    --arb-ch-light: #0a3069;
+    --arb-cs-light: #0a3069;
+    --arb-vm-light: #1f2328;
+    --arb-fd-light: #8250df;
+    --arb-tf-light: #953800;
+    --arb-fc-light: #8250df;
+    --arb-km-light: #cf222e;
+    --arb-dr-light: #cf222e;
+    --arb-rx-light: #0a3069
+}
+
+:root {
+    --arb-bg-dark: #0d1117;
+    --arb-fg-dark: #e6edf3;
+    --arb-at-dark: #79c0ff;
+    --arb-co-dark: #79c0ff;
+    --arb-cb-dark: #79c0ff;
+    --arb-fb-dark: #d2a8ff;
+    --arb-f-dark: #d2a8ff;
+    --arb-fm-dark: #d2a8ff;
+    --arb-k-dark: #ff7b72;
+    --arb-kc-dark: #ff7b72;
+    --arb-ko-dark: #ff7b72;
+    --arb-kd-dark: #ff7b72;
+    --arb-ke-dark: #ff7b72;
+    --arb-kf-dark: #ff7b72;
+    --arb-ki-dark: #ff7b72;
+    --arb-kp-dark: #ff7b72;
+    --arb-kr-dark: #ff7b72;
+    --arb-kt-dark: #ff7b72;
+    --arb-ky-dark: #ff7b72;
+    --arb-o-dark: #ff7b72;
+    --arb-pr-dark: #79c0ff;
+    --arb-p-dark: #e6edf3;
+    --arb-pb-dark: #e6edf3;
+    --arb-pd-dark: #e6edf3;
+    --arb-ps-dark: #79c0ff;
+    --arb-s-dark: #a5d6ff;
+    --arb-ss-dark: #ff7b72;
+    --arb-tg-dark: #7ee787;
+    --arb-td-dark: #7ee787;
+    --arb-te-dark: #7ee787;
+    --arb-t-dark: #ffa657;
+    --arb-tb-dark: #ffa657;
+    --arb-tq-dark: #ffa657;
+    --arb-v-dark: #e6edf3;
+    --arb-vb-dark: #ffa657;
+    --arb-vp-dark: #ffa657;
+    --arb-c-dark: #8b949e;
+    --arb-cd-dark: #8b949e;
+    --arb-m-dark: #79c0ff;
+    --arb-l-dark: #d2a8ff;
+    --arb-n-dark: #79c0ff;
+    --arb-tl-dark: #e6edf3;
+    --arb-em-dark-style: italic;
+    --arb-st-dark-weight: bold;
+    --arb-tu-dark: #58a6ff;
+    --arb-tu-dark-decoration: underline;
+    --arb-tr-dark: #d2a8ff;
+    --arb-se-dark: #79c0ff;
+    --arb-tt-dark: #d2a8ff;
+    --arb-tt-dark-weight: bold;
+    --arb-tx-dark-decoration: line-through;
+    --arb-sp-dark: #e6edf3;
+    --arb-in-dark: #ff7b72;
+    --arb-sc-dark: #ff7b72;
+    --arb-rp-dark: #ff7b72;
+    --arb-cn-dark: #ff7b72;
+    --arb-ex-dark: #ff7b72;
+    --arb-pp-dark: #ff7b72;
+    --arb-ch-dark: #a5d6ff;
+    --arb-cs-dark: #a5d6ff;
+    --arb-vm-dark: #e6edf3;
+    --arb-fd-dark: #d2a8ff;
+    --arb-tf-dark: #ffa657;
+    --arb-fc-dark: #d2a8ff;
+    --arb-km-dark: #ff7b72;
+    --arb-dr-dark: #ff7b72;
+    --arb-rx-dark: #a5d6ff
+}
+
+a-at {
+    color: var(--arb-at-light)
+}
+
+a-c {
+    color: var(--arb-c-light)
+}
+
+a-cb {
+    color: var(--arb-cb-light)
+}
+
+a-cd {
+    color: var(--arb-cd-light)
+}
+
+a-ch {
+    color: var(--arb-ch-light)
+}
+
+a-cn {
+    color: var(--arb-cn-light)
+}
+
+a-co {
+    color: var(--arb-co-light)
+}
+
+a-cr {
+    color: var(--arb-cr-light)
+}
+
+a-cs {
+    color: var(--arb-cs-light)
+}
+
+a-da {
+    color: var(--arb-da-light)
+}
+
+a-dd {
+    color: var(--arb-dd-light)
+}
+
+a-dr {
+    color: var(--arb-dr-light)
+}
+
+a-eb {
+    color: var(--arb-eb-light)
+}
+
+a-em {
+    color: var(--arb-em-light);
+    font-style: var(--arb-em-light-style, normal)
+}
+
+a-er {
+    color: var(--arb-er-light)
+}
+
+a-ex {
+    color: var(--arb-ex-light)
+}
+
+a-f {
+    color: var(--arb-f-light)
+}
+
+a-fb {
+    color: var(--arb-fb-light)
+}
+
+a-fc {
+    color: var(--arb-fc-light)
+}
+
+a-fd {
+    color: var(--arb-fd-light)
+}
+
+a-fm {
+    color: var(--arb-fm-light)
+}
+
+a-in {
+    color: var(--arb-in-light)
+}
+
+a-k {
+    color: var(--arb-k-light)
+}
+
+a-kc {
+    color: var(--arb-kc-light)
+}
+
+a-kd {
+    color: var(--arb-kd-light)
+}
+
+a-ke {
+    color: var(--arb-ke-light)
+}
+
+a-kf {
+    color: var(--arb-kf-light)
+}
+
+a-ki {
+    color: var(--arb-ki-light)
+}
+
+a-km {
+    color: var(--arb-km-light)
+}
+
+a-ko {
+    color: var(--arb-ko-light)
+}
+
+a-kp {
+    color: var(--arb-kp-light)
+}
+
+a-kr {
+    color: var(--arb-kr-light)
+}
+
+a-kt {
+    color: var(--arb-kt-light)
+}
+
+a-ky {
+    color: var(--arb-ky-light)
+}
+
+a-l {
+    color: var(--arb-l-light)
+}
+
+a-m {
+    color: var(--arb-m-light)
+}
+
+a-n {
+    color: var(--arb-n-light)
+}
+
+a-ns {
+    color: var(--arb-ns-light)
+}
+
+a-o {
+    color: var(--arb-o-light)
+}
+
+a-p {
+    color: var(--arb-p-light)
+}
+
+a-pb {
+    color: var(--arb-pb-light)
+}
+
+a-pd {
+    color: var(--arb-pd-light)
+}
+
+a-pp {
+    color: var(--arb-pp-light)
+}
+
+a-pr {
+    color: var(--arb-pr-light)
+}
+
+a-ps {
+    color: var(--arb-ps-light)
+}
+
+a-rp {
+    color: var(--arb-rp-light)
+}
+
+a-rx {
+    color: var(--arb-rx-light)
+}
+
+a-s {
+    color: var(--arb-s-light)
+}
+
+a-sc {
+    color: var(--arb-sc-light)
+}
+
+a-se {
+    color: var(--arb-se-light)
+}
+
+a-sp {
+    color: var(--arb-sp-light)
+}
+
+a-ss {
+    color: var(--arb-ss-light)
+}
+
+a-st {
+    color: var(--arb-st-light);
+    font-weight: var(--arb-st-light-weight, normal)
+}
+
+a-t {
+    color: var(--arb-t-light)
+}
+
+a-tb {
+    color: var(--arb-tb-light)
+}
+
+a-td {
+    color: var(--arb-td-light)
+}
+
+a-te {
+    color: var(--arb-te-light)
+}
+
+a-tf {
+    color: var(--arb-tf-light)
+}
+
+a-tg {
+    color: var(--arb-tg-light)
+}
+
+a-tl {
+    color: var(--arb-tl-light)
+}
+
+a-tq {
+    color: var(--arb-tq-light)
+}
+
+a-tr {
+    color: var(--arb-tr-light)
+}
+
+a-tt {
+    color: var(--arb-tt-light);
+    font-weight: var(--arb-tt-light-weight, normal)
+}
+
+a-tu {
+    color: var(--arb-tu-light);
+    -webkit-text-decoration: var(--arb-tu-light-decoration, none);
+    text-decoration: var(--arb-tu-light-decoration, none)
+}
+
+a-tx {
+    color: var(--arb-tx-light);
+    -webkit-text-decoration: var(--arb-tx-light-decoration, none);
+    text-decoration: var(--arb-tx-light-decoration, none)
+}
+
+a-v {
+    color: var(--arb-v-light)
+}
+
+a-vb {
+    color: var(--arb-vb-light)
+}
+
+a-vm {
+    color: var(--arb-vm-light)
+}
+
+a-vp {
+    color: var(--arb-vp-light)
+}
+
+.theme-dark a-at {
+    color: var(--arb-at-dark)
+}
+
+.theme-dark a-c {
+    color: var(--arb-c-dark)
+}
+
+.theme-dark a-cb {
+    color: var(--arb-cb-dark)
+}
+
+.theme-dark a-cd {
+    color: var(--arb-cd-dark)
+}
+
+.theme-dark a-ch {
+    color: var(--arb-ch-dark)
+}
+
+.theme-dark a-cn {
+    color: var(--arb-cn-dark)
+}
+
+.theme-dark a-co {
+    color: var(--arb-co-dark)
+}
+
+.theme-dark a-cr {
+    color: var(--arb-cr-dark)
+}
+
+.theme-dark a-cs {
+    color: var(--arb-cs-dark)
+}
+
+.theme-dark a-da {
+    color: var(--arb-da-dark)
+}
+
+.theme-dark a-dd {
+    color: var(--arb-dd-dark)
+}
+
+.theme-dark a-dr {
+    color: var(--arb-dr-dark)
+}
+
+.theme-dark a-eb {
+    color: var(--arb-eb-dark)
+}
+
+.theme-dark a-em {
+    color: var(--arb-em-dark);
+    font-style: var(--arb-em-dark-style, normal)
+}
+
+.theme-dark a-er {
+    color: var(--arb-er-dark)
+}
+
+.theme-dark a-ex {
+    color: var(--arb-ex-dark)
+}
+
+.theme-dark a-f {
+    color: var(--arb-f-dark)
+}
+
+.theme-dark a-fb {
+    color: var(--arb-fb-dark)
+}
+
+.theme-dark a-fc {
+    color: var(--arb-fc-dark)
+}
+
+.theme-dark a-fd {
+    color: var(--arb-fd-dark)
+}
+
+.theme-dark a-fm {
+    color: var(--arb-fm-dark)
+}
+
+.theme-dark a-in {
+    color: var(--arb-in-dark)
+}
+
+.theme-dark a-k {
+    color: var(--arb-k-dark)
+}
+
+.theme-dark a-kc {
+    color: var(--arb-kc-dark)
+}
+
+.theme-dark a-kd {
+    color: var(--arb-kd-dark)
+}
+
+.theme-dark a-ke {
+    color: var(--arb-ke-dark)
+}
+
+.theme-dark a-kf {
+    color: var(--arb-kf-dark)
+}
+
+.theme-dark a-ki {
+    color: var(--arb-ki-dark)
+}
+
+.theme-dark a-km {
+    color: var(--arb-km-dark)
+}
+
+.theme-dark a-ko {
+    color: var(--arb-ko-dark)
+}
+
+.theme-dark a-kp {
+    color: var(--arb-kp-dark)
+}
+
+.theme-dark a-kr {
+    color: var(--arb-kr-dark)
+}
+
+.theme-dark a-kt {
+    color: var(--arb-kt-dark)
+}
+
+.theme-dark a-ky {
+    color: var(--arb-ky-dark)
+}
+
+.theme-dark a-l {
+    color: var(--arb-l-dark)
+}
+
+.theme-dark a-m {
+    color: var(--arb-m-dark)
+}
+
+.theme-dark a-n {
+    color: var(--arb-n-dark)
+}
+
+.theme-dark a-ns {
+    color: var(--arb-ns-dark)
+}
+
+.theme-dark a-o {
+    color: var(--arb-o-dark)
+}
+
+.theme-dark a-p {
+    color: var(--arb-p-dark)
+}
+
+.theme-dark a-pb {
+    color: var(--arb-pb-dark)
+}
+
+.theme-dark a-pd {
+    color: var(--arb-pd-dark)
+}
+
+.theme-dark a-pp {
+    color: var(--arb-pp-dark)
+}
+
+.theme-dark a-pr {
+    color: var(--arb-pr-dark)
+}
+
+.theme-dark a-ps {
+    color: var(--arb-ps-dark)
+}
+
+.theme-dark a-rp {
+    color: var(--arb-rp-dark)
+}
+
+.theme-dark a-rx {
+    color: var(--arb-rx-dark)
+}
+
+.theme-dark a-s {
+    color: var(--arb-s-dark)
+}
+
+.theme-dark a-sc {
+    color: var(--arb-sc-dark)
+}
+
+.theme-dark a-se {
+    color: var(--arb-se-dark)
+}
+
+.theme-dark a-sp {
+    color: var(--arb-sp-dark)
+}
+
+.theme-dark a-ss {
+    color: var(--arb-ss-dark)
+}
+
+.theme-dark a-st {
+    color: var(--arb-st-dark);
+    font-weight: var(--arb-st-dark-weight, normal)
+}
+
+.theme-dark a-t {
+    color: var(--arb-t-dark)
+}
+
+.theme-dark a-tb {
+    color: var(--arb-tb-dark)
+}
+
+.theme-dark a-td {
+    color: var(--arb-td-dark)
+}
+
+.theme-dark a-te {
+    color: var(--arb-te-dark)
+}
+
+.theme-dark a-tf {
+    color: var(--arb-tf-dark)
+}
+
+.theme-dark a-tg {
+    color: var(--arb-tg-dark)
+}
+
+.theme-dark a-tl {
+    color: var(--arb-tl-dark)
+}
+
+.theme-dark a-tq {
+    color: var(--arb-tq-dark)
+}
+
+.theme-dark a-tr {
+    color: var(--arb-tr-dark)
+}
+
+.theme-dark a-tt {
+    color: var(--arb-tt-dark);
+    font-weight: var(--arb-tt-dark-weight, normal)
+}
+
+.theme-dark a-tu {
+    color: var(--arb-tu-dark);
+    -webkit-text-decoration: var(--arb-tu-dark-decoration, none);
+    text-decoration: var(--arb-tu-dark-decoration, none)
+}
+
+.theme-dark a-tx {
+    color: var(--arb-tx-dark);
+    -webkit-text-decoration: var(--arb-tx-dark-decoration, none);
+    text-decoration: var(--arb-tx-dark-decoration, none)
+}
+
+.theme-dark a-v {
+    color: var(--arb-v-dark)
+}
+
+.theme-dark a-vb {
+    color: var(--arb-vb-dark)
+}
+
+.theme-dark a-vm {
+    color: var(--arb-vm-dark)
+}
+
+.theme-dark a-vp {
+    color: var(--arb-vp-dark)
+}
+
+/*# sourceMappingURL=50f3701e585ee5ee.css.map*/

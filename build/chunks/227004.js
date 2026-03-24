@@ -15,24 +15,24 @@ var i = n(627968),
     h = n(663997),
     A = n(652793),
     m = n(576705),
-    p = n(221950),
-    _ = n(652215),
+    _ = n(221950),
+    p = n(652215),
     g = n(985018);
 
 function f(e) {
     let {
         guild: t,
         selected: n
-    } = e, f = (0, l.bG)([m.A], () => m.A.can(_.xBc.KICK_MEMBERS, t)), x = (0, l.bG)([d.A], () => d.A.getSubmittedGuildJoinRequestTotal(t.id)), C = f ? x ?? 0 : 0;
+    } = e, f = (0, l.bG)([m.A], () => m.A.can(p.xBc.KICK_MEMBERS, t)), x = (0, l.bG)([d.A], () => d.A.getSubmittedGuildJoinRequestTotal(t.id)), C = f ? x ?? 0 : 0;
     s.useEffect(() => {
-        f && t.features.has(_.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && t.features.has(_.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.A.fetchGuildJoinRequests({
+        f && t.features.has(p.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && t.features.has(p.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.A.fetchGuildJoinRequests({
             guildId: t.id,
             status: u.B5.SUBMITTED,
             limit: h.L
         })
     }, [f, t]);
     let E = s.useCallback(() => {
-            (0, p.aZ)(t.id)
+            (0, _.aZ)(t.id)
         }, [t.id]),
         I = (0, o.q8)(t.id, a.M.MEMBERS_LAUNCH_UPSELL);
     return (0, i.jsx)("div", {

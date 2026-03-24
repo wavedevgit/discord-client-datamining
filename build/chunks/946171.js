@@ -27,7 +27,7 @@ var l = n(311907),
     b = n(985018),
     T = n(409203);
 
-function I() {
+function C() {
     return (0, i.jsx)(r.Text, {
         tag: "span",
         variant: "text-xs/bold",
@@ -37,7 +37,7 @@ function I() {
     })
 }
 
-function C(e) {
+function I(e) {
     let {
         guild: t,
         requireDescription: n
@@ -111,7 +111,7 @@ function C(e) {
                     variant: "text-xs/bold",
                     color: "text-muted",
                     className: T.uI,
-                    children: [b.intl.string(b.t["1Ts7QP"]), n ? (0, i.jsx)(I, {}) : null]
+                    children: [b.intl.string(b.t["1Ts7QP"]), n ? (0, i.jsx)(C, {}) : null]
                 }), (0, i.jsx)(r.Text, {
                     variant: "text-sm/medium",
                     color: "text-subtle",
@@ -160,7 +160,7 @@ function v(e) {
                 variant: "text-xs/bold",
                 color: "text-muted",
                 className: T.uI,
-                children: [b.intl.string(b.t.Rv9Anz), s ? (0, i.jsx)(I, {}) : null]
+                children: [b.intl.string(b.t.Rv9Anz), s ? (0, i.jsx)(C, {}) : null]
             }), (0, i.jsx)(r.Text, {
                 variant: "text-sm/medium",
                 color: "text-subtle",
@@ -352,7 +352,7 @@ function G(e) {
     let d = s === j.v.ELIGIBLE_DISABLED;
     return (0, i.jsxs)("div", {
         className: T.W0,
-        children: [(0, i.jsx)(C, {
+        children: [(0, i.jsx)(I, {
             guild: o,
             requireDescription: d
         }), (0, i.jsx)(O, {}), (0, i.jsx)(v, {

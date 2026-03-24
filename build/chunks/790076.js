@@ -1050,7 +1050,6 @@ function ek() {
         if (er.isPlatformEmbedded) return (0, j.a2)(), j.e0
     }), (e = eT(eA), m().isEqual(e, eA) || (el.default.track(em.HAw.OVERLAY_SETTINGS_UPDATED, e), eA = e), null == s) ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)(eu.A, {
-            title: eg.intl.string(eg.t["9cb1Uz"]),
             children: [(0, i.jsxs)("div", {
                 className: ex.U$,
                 children: [(0, i.jsx)(ev, {}), (0, i.jsx)(ey, {}), (0, i.jsx)(ej, {}), (0, i.jsx)(eO, {})]

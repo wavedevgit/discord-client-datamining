@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(587895),
     A = n(44120),
     m = n(317560),
-    p = n(533406),
-    _ = n(183555),
+    _ = n(533406),
+    p = n(183555),
     g = n(146423),
     f = n(662349),
     x = n(216020),
@@ -42,7 +42,7 @@ function y(e) {
         singleCardInfo: A
     } = e, {
         trackUserProfileWishlistAction: m
-    } = (0, _.NJ)(), p = s.useCallback(() => {
+    } = (0, p.NJ)(), _ = s.useCallback(() => {
         m({
             action: b.Mq.PRESS_WISHLIST_BREADCRUMB_CARD,
             skuId: t.id,
@@ -81,11 +81,11 @@ function y(e) {
                 spec: v,
                 cardStyle: a()(T.Nr, T.Q1, c),
                 skuPreviewStyle: a()(T.ho, d),
-                onClick: p,
+                onClick: _,
                 onHoverOrFocusChange: y,
                 children: (0, i.jsx)(f.A, {
                     spec: v,
-                    onClick: N ? C : p,
+                    onClick: N ? C : _,
                     isHoveringOrFocusing: S,
                     label: E,
                     icon: I
@@ -94,7 +94,7 @@ function y(e) {
         }), r && (0, i.jsx)(x.A, {
             title: A.title,
             description: A.description,
-            onClick: p
+            onClick: _
         })]
     })
 }
@@ -108,14 +108,14 @@ function j(e) {
     } = e, r = (0, c.bG)([h.A], () => h.A.getApplication(t.applicationId)), {
         analyticsLocations: o
     } = (0, u.Ay)(...l ?? [], d.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON), A = s.useCallback(() => {
-        (0, p.a)(t, {
+        (0, _.a)(t, {
             isGift: !0,
             giftRecipient: n,
             giftingOrigin: N.vQ.USER_PROFILE_WISHLIST
         }, {
             analyticsLocations: o
         })
-    }, [t, n, o]), _ = s.useCallback(() => {
+    }, [t, n, o]), p = s.useCallback(() => {
         r?.guildId != null && (0, m.R)({
             skuId: t.id,
             applicationId: t.applicationId,
@@ -135,7 +135,7 @@ function j(e) {
         sku: t,
         analyticsLocations: o,
         wishlistOwner: n,
-        onDetailsClick: _,
+        onDetailsClick: p,
         onPurchaseClick: A,
         singleCardInfo: g,
         ...a

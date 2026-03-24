@@ -95,21 +95,21 @@ let N = s.memo(function() {
             isFirstChannel: g,
             isLastChannel: j,
             tooltipDirection: b = "right"
-        } = e, T = (0, h.Rg)(t.id, s.id), I = (0, h.eK)(t.id, s.id), C = (0, h.v)(t.id, s.id), v = (0, h.fS)(l.id, s.id), S = null != (0, _.A)(l).find(e => e.id === t.id);
+        } = e, T = (0, h.Rg)(t.id, s.id), C = (0, h.eK)(t.id, s.id), I = (0, h.v)(t.id, s.id), v = (0, h.fS)(l.id, s.id), S = null != (0, _.A)(l).find(e => e.id === t.id);
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.m, {
                 asContainer: !0,
-                __unsupportedReactNodeAsText: C ?? v,
+                __unsupportedReactNodeAsText: I ?? v,
                 delay: 500,
                 position: b,
                 children: (0, i.jsxs)(d.DUT, {
                     className: r()(f.WG, {
                         [f.Qn]: g,
                         [f.wp]: j,
-                        [f.r9]: I
+                        [f.r9]: C
                     }),
                     onClick: e => {
-                        if (!I) return e.stopPropagation(), (0, u.S)(l.id, t.id) ? (0, x.bN)(t.id) : (0, d.mMO)(async () => {
+                        if (!C) return e.stopPropagation(), (0, u.S)(l.id, t.id) ? (0, x.bN)(t.id) : (0, d.mMO)(async () => {
                             let {
                                 default: e
                             } = await n.e("54857").then(n.bind(n, 147696));
@@ -154,7 +154,7 @@ let N = s.memo(function() {
                                     className: f.be,
                                     variant: "text-md/medium",
                                     lineClamp: 1,
-                                    color: I ? "text-muted" : "text-default",
+                                    color: C ? "text-muted" : "text-default",
                                     children: t.name
                                 })
                             }), S ? (0, i.jsxs)(i.Fragment, {
@@ -172,7 +172,7 @@ let N = s.memo(function() {
                         className: f.tN,
                         children: (0, u.S)(t.guild_id, t.id) ? (0, i.jsx)(d.P7L, {
                             checked: T,
-                            disabled: I
+                            disabled: C
                         }) : (0, i.jsx)(d.Button, {
                             size: "sm",
                             variant: "secondary",

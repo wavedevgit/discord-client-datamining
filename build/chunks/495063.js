@@ -1,7 +1,7 @@
 /** chunk id: 495063 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => I
+    A: () => C
 });
 var i = n(627968),
     s = n(64700),
@@ -176,7 +176,7 @@ let b = (0, _.CU)({
         expandableToggleColumnKey: "DROPDOWN"
     });
 
-function I(e) {
+function C(e) {
     let {
         ListingIdLabel: t,
         payoutsByPeriod: n

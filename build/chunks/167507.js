@@ -6,8 +6,8 @@ var l = t(627968),
     r = t(64700),
     a = t(397927),
     s = t(442433),
-    i = t(9578),
-    c = t(975807),
+    c = t(9578),
+    i = t(975807),
     d = t(235393),
     u = t(332173),
     o = t(202803),
@@ -23,7 +23,7 @@ function j(e) {
     } = e;
     switch (n) {
         case "normal":
-            return (0, l.jsx)(i.A, {
+            return (0, l.jsx)(c.A, {
                 title: t.title,
                 href: t.url,
                 children: (0, l.jsx)("span", {
@@ -39,11 +39,11 @@ function j(e) {
                             guild_id: a,
                             channel_id: s
                         }
-                    } = t, c = "message_id" in t.value ? t.value.message_id : void 0;
+                    } = t, i = "message_id" in t.value ? t.value.message_id : void 0;
                     return (0, l.jsx)(m.A, {
                         channelId: s,
                         guildId: a,
-                        messageId: c
+                        messageId: i
                     });
                 case "attachment":
                     let {
@@ -74,13 +74,13 @@ function j(e) {
 function g(e) {
     let {
         domain: n,
-        ephemeral: i,
+        ephemeral: c,
         channelId: h,
         attachmentId: m,
         name: j
-    } = e, g = `https://${n}/${i?"ephemeral-attachments":"attachments"}/${h}/${m}/${j}`, f = r.useCallback(async () => {
+    } = e, g = `https://${n}/${c?"ephemeral-attachments":"attachments"}/${h}/${m}/${j}`, f = r.useCallback(async () => {
         let e = await (0, o.AN)(g);
-        d.A.trackLinkClicked(e), (0, c.A)(e)
+        d.A.trackLinkClicked(e), (0, i.A)(e)
     }, [g]), p = r.useCallback(e => {
         (0, s.L3)(e, async () => {
             let {

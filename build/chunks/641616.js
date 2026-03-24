@@ -24,15 +24,15 @@ var x = n(173628),
     j = n(648514),
     A = n(866001),
     C = n(855936),
-    T = n(489967),
-    y = n(2915),
+    y = n(489967),
+    T = n(2915),
     S = n(986789),
     E = n(821306),
     N = n(226936),
     I = n(27126),
     O = n(498336),
-    R = n(615112),
-    k = n(501379),
+    k = n(615112),
+    R = n(501379),
     w = n(517538),
     D = n(211162),
     P = n(436102),
@@ -49,8 +49,8 @@ var x = n(173628),
     z = n(329482),
     $ = n(189244),
     q = n(982078),
-    Y = n(547798),
-    Q = n(253804),
+    Q = n(547798),
+    Y = n(253804),
     J = n(515124),
     X = n(661652),
     Z = n(953414),
@@ -113,7 +113,7 @@ function ec() {
             name: "Quick Actions",
             group: er.fu.DEVELOPMENT,
             tags: ["captcha", "safety", "vibe", "vibing", "override", "premium type"],
-            render: () => (0, a.jsx)(Y.A, {})
+            render: () => (0, a.jsx)(Q.A, {})
         }), e.push({
             id: "end_to_end_encryption",
             name: "E2EE",
@@ -136,7 +136,7 @@ function ec() {
             name: "Feedback",
             group: er.fu.USERS,
             tags: ["surveys"],
-            render: () => (0, a.jsx)(T.A, {})
+            render: () => (0, a.jsx)(y.A, {})
         }), e.push({
             id: "overlay",
             name: "Overlay v3",
@@ -172,7 +172,7 @@ function ec() {
             name: "Rive",
             group: er.fu.UI,
             tags: ["animation"],
-            render: () => (0, a.jsx)(Q.A, {})
+            render: () => (0, a.jsx)(Y.A, {})
         }), e.push({
             id: "lottie",
             name: "Lottie",
@@ -184,7 +184,7 @@ function ec() {
             name: "Intl",
             group: er.fu.UI,
             tags: ["i18n", "localization", "messages"],
-            render: () => (0, a.jsx)(k.A, {})
+            render: () => (0, a.jsx)(R.A, {})
         }), e.push({
             id: "colors",
             name: "Colors",
@@ -275,7 +275,7 @@ function ec() {
             name: "Hotspots",
             group: er.fu.EXPERIMENTS,
             tags: ["coachmarks", "nux", "onboarding"],
-            render: () => (0, a.jsx)(R.A, {})
+            render: () => (0, a.jsx)(k.A, {})
         }), e.push({
             id: "perks",
             name: "Perks",
@@ -305,7 +305,7 @@ function ec() {
             name: "Fractional Nitro",
             group: er.fu.PREMIUM,
             tags: ["entitlements", "quests"],
-            render: () => (0, a.jsx)(y.A, {})
+            render: () => (0, a.jsx)(T.A, {})
         })), e.push({
             id: "gifting_intent",
             name: "Gifting Intent",

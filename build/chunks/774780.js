@@ -32,10 +32,10 @@ function E(e) {
         setEditingRule: b
     } = (0, x.U)(), {
         guild: T,
-        subsection: I
-    } = (0, l.cf)([a.A], () => a.A.getProps()), C = T?.id ?? t ?? f.dJq, v = null != E, [S] = (0, u.qv)(C), {
+        subsection: C
+    } = (0, l.cf)([a.A], () => a.A.getProps()), I = T?.id ?? t ?? f.dJq, v = null != E, [S] = (0, u.qv)(I), {
         rulesByTriggerType: y
-    } = (0, u.wP)(C), R = {
+    } = (0, u.wP)(I), R = {
         [m.yT.MEMBERS]: j.intl.string(j.t.sx4E5v),
         [m.yT.CONTENT]: j.intl.string(j.t.fphZb0)
     }, O = s.useMemo(() => Object.values(y ?? {}).flat().filter(d.Vq), [y]), G = {
@@ -50,7 +50,7 @@ function E(e) {
             setEditingRule: t
         } = L.current;
         e && t(null)
-    }, [C]);
+    }, [I]);
     let D = s.useCallback((e, t) => null != e ? O.find(t => {
             let {
                 id: n
@@ -61,7 +61,7 @@ function E(e) {
     s.useEffect(() => {
         n(v, (0, p.cT)(M))
     }, [n, v, M]);
-    let k = (0, m.ws)(C);
+    let k = (0, m.ws)(I);
     return (0, i.jsxs)("div", {
         children: [(0, i.jsx)(r.Heading, {
             variant: "heading-lg/semibold",
@@ -98,10 +98,10 @@ function E(e) {
                 className: N.Wk,
                 children: [l, (0, i.jsx)(i.Fragment, {
                     children: n.map(e => (0, i.jsx)(_.A, {
-                        guildId: C,
+                        guildId: I,
                         triggerType: e,
                         rules: y[e] ?? [],
-                        initWithEdit: I === f.nd0.AUTOMOD_MENTION_SPAM && e === A.uh.MENTION_SPAM
+                        initWithEdit: C === f.nd0.AUTOMOD_MENTION_SPAM && e === A.uh.MENTION_SPAM
                     }, e))
                 })]
             }, t)
@@ -110,7 +110,7 @@ function E(e) {
             withDivider: !1,
             className: N.Vf
         }), (0, i.jsx)(h.A, {
-            guildId: C,
+            guildId: I,
             existingRules: O
         }), v && (0, i.jsx)("div", {
             className: N.OL

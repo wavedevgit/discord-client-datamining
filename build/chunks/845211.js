@@ -31,10 +31,10 @@ function A() {
                 channel: n
             }, n.id)
         }),
-        p = null == n && null != A ? e[A] : null;
-    return null != p && m.unshift((0, i.jsx)(u.A, {
-        channel: p
-    }, p.id)), (0, i.jsx)(r.BJc, {
+        _ = null == n && null != A ? e[A] : null;
+    return null != _ && m.unshift((0, i.jsx)(u.A, {
+        channel: _
+    }, _.id)), (0, i.jsx)(r.BJc, {
         id: "guild-list-unread-dms",
         role: "group",
         "aria-label": h.intl.string(h.t.YUU0RF),

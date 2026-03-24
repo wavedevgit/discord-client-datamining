@@ -98,11 +98,11 @@ function h(e) {
         forceShowErrorTooltip: f
     } = e, j = s.useRef(null), N = s.useRef(null), [E, b] = s.useState(!1), {
         ref: T,
-        width: I = 0
+        width: C = 0
     } = (0, c.Ay)(E), {
-        ref: C,
+        ref: I,
         width: v = 0
-    } = (0, c.Ay)(E), S = (0, a.bG)([u.A], () => u.A.useReducedMotion), [y, R] = s.useState(f), O = s.useRef(null), G = I > v ? I : v;
+    } = (0, c.Ay)(E), S = (0, a.bG)([u.A], () => u.A.useReducedMotion), [y, R] = s.useState(f), O = s.useRef(null), G = C > v ? C : v;
     s.useEffect(() => {
         f ? (R(!0), O.current = setTimeout(() => {
             R(!1), O.current = null
@@ -131,7 +131,7 @@ function h(e) {
     return (0, i.jsx)("div", {
         className: g.G1,
         children: (0, i.jsxs)("div", {
-            ref: C,
+            ref: I,
             className: r()(g.Tm, {
                 [g.JN]: E,
                 [g.mV]: !E && !S,

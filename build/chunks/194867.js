@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(627968),
     i = n(64700),
-    l = n(311907),
-    s = n(990078),
+    s = n(311907),
+    l = n(990078),
     o = n(397927),
     a = n(775602),
     u = n(600941),
@@ -19,55 +19,55 @@ function _(e) {
         guildId: t,
         group: n,
         powerups: _
-    } = e, [A, f] = i.useState(!1), g = (0, l.bG)([a.A], () => a.A.useReducedMotion), x = (0, p.A)(n, t), v = !g && A ? x?.image?.animatedUrl : x?.image?.staticUrl, h = (0, u.A)({
+    } = e, [f, g] = i.useState(!1), x = (0, s.bG)([a.A], () => a.A.useReducedMotion), A = (0, p.A)(n, t), v = !x && f ? A?.image?.animatedUrl : A?.image?.staticUrl, h = (0, u.A)({
         guildId: t,
         powerups: _
     }), {
         textColor: E
     } = (0, c.A)(h?.isActive ?? !1);
-    if (null == h || null == x) return null;
+    if (null == h || null == A) return null;
     let {
-        status: b,
-        cost: I,
-        costDecorator: j
+        status: j,
+        cost: b,
+        costDecorator: I
     } = h;
     return (0, r.jsxs)(d.NI, {
-        label: x.title,
-        isActive: b?.type === "active",
-        isWarning: b?.type === "expiring",
-        badge: x.badge,
-        onClick: () => x.openModal(_),
-        onMouseOver: () => f(!0),
-        onMouseLeave: () => f(!1),
+        label: A.title,
+        isActive: j?.type === "active",
+        isWarning: j?.type === "expiring",
+        badge: A.badge,
+        onClick: () => A.openModal(_),
+        onMouseOver: () => g(!0),
+        onMouseLeave: () => g(!1),
         children: [(0, r.jsx)("img", {
             alt: "",
             src: v,
             className: m.S
         }), (0, r.jsx)(d.Ft, {
-            title: x.title,
+            title: A.title,
             textColor: E,
             footer: (0, r.jsx)(d.$L, {
-                status: b,
-                cost: I,
-                costDecorator: j
+                status: j,
+                cost: b,
+                costDecorator: I
             }),
             children: (0, r.jsx)(o.Text, {
                 className: m.h,
                 color: E,
                 variant: "text-sm/medium",
-                children: x.description
+                children: A.description
             })
         }), (0, r.jsx)(d.kd, {
-            children: x?.viewCtaTooltip != null ? (0, r.jsx)(s.m, {
+            children: A?.viewCtaTooltip != null ? (0, r.jsx)(l.m, {
                 asContainer: !0,
-                text: x.viewCtaTooltip,
+                text: A.viewCtaTooltip,
                 delay: 100,
                 children: (0, r.jsx)(o.Button, {
-                    text: x.viewCta,
+                    text: A.viewCta,
                     fullWidth: !0
                 })
             }) : (0, r.jsx)(o.Button, {
-                text: x.viewCta,
+                text: A.viewCta,
                 fullWidth: !0
             })
         })]

@@ -7,8 +7,8 @@ var l = a(627968),
     r = a(735438),
     s = a(397927),
     i = a(252561),
-    d = a(720462),
-    o = a(309587);
+    o = a(720462),
+    d = a(309587);
 let c = [{
         id: "xxs",
         label: "xxs",
@@ -83,7 +83,7 @@ let c = [{
         id: "interactive-h-scroll",
         component: () => {
             let [e, t] = n.useState(15), [a, u] = n.useState(8), [x, h] = n.useState("xl"), [m, b] = n.useState(!0), p = n.useMemo(() => [...Array(e)].map((e, t) => (0, l.jsx)(s.DUT, {
-                className: o.j,
+                className: d.j,
                 onClick: () => console.log(t),
                 children: (0, l.jsxs)(s.BJc, {
                     direction: "vertical",
@@ -98,7 +98,7 @@ let c = [{
                 })
             }, t)), [e]);
             return (0, l.jsxs)("div", {
-                children: [(0, l.jsx)(d.A, {
+                children: [(0, l.jsx)(o.A, {
                     gap: a,
                     edgeFade: x,
                     hideActionsWhenDisabled: m,

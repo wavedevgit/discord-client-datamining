@@ -3,7 +3,7 @@
 n.d(t, {
     Ln: () => f,
     Z0: () => g,
-    kt: () => _
+    kt: () => p
 }), n(321073);
 var i = n(64700),
     s = n(311907),
@@ -17,9 +17,9 @@ var i = n(64700),
     h = n(488926),
     A = n(605431),
     m = n(366251),
-    p = n(652215);
+    _ = n(652215);
 
-function _(e) {
+function p(e) {
     let {
         channel: t
     } = e, n = t?.guild_id, {
@@ -73,6 +73,6 @@ function f(e) {
             collapsed: n = !1
         } = t,
         i = m.A.getShouldShowPopover(e.id),
-        s = c.A.can(p.xBc.CREATE_INSTANT_INVITE, e);
+        s = c.A.can(_.xBc.CREATE_INSTANT_INVITE, e);
     return i && s && !n
 }

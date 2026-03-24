@@ -23,8 +23,8 @@ var a = n(627968),
     j = n(231545),
     A = n(708403),
     C = n(260880),
-    T = n(303054),
-    y = n(231643),
+    y = n(303054),
+    T = n(231643),
     S = n(652215),
     E = n(84113),
     N = n(661251);
@@ -52,7 +52,7 @@ let O = [{
     }
 }];
 
-function R(e) {
+function k(e) {
     let {
         actionLog: t
     } = e, n = i.useMemo(() => t.traces.map(e => ({
@@ -60,16 +60,16 @@ function R(e) {
         trace: e
     })), [t]);
     return (0, a.jsx)(h.IpV, {
-        children: (0, a.jsx)(T.A, {
+        children: (0, a.jsx)(y.A, {
             columns: O,
             data: n
         })
     })
 }
-let k = [{
+let R = [{
     id: "action",
     name: "Action",
-    group: y.fu.NONE,
+    group: T.fu.NONE,
     render(e) {
         let {
             actionLog: t
@@ -99,12 +99,12 @@ let k = [{
 }, {
     id: "traces",
     name: "Store Handlers",
-    group: y.fu.NONE,
+    group: T.fu.NONE,
     render(e) {
         let {
             actionLog: t
         } = e;
-        return (0, a.jsx)(R, {
+        return (0, a.jsx)(k, {
             actionLog: t
         })
     }
@@ -114,14 +114,14 @@ function w(e) {
     let {
         actionLog: t,
         initialHeight: n
-    } = e, s = i.useMemo(() => t.error ? [...k, {
+    } = e, s = i.useMemo(() => t.error ? [...R, {
         id: "error",
         name: (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsx)(f.A, {
                 className: E.ik
             }), "Error"]
         }),
-        group: y.fu.NONE,
+        group: T.fu.NONE,
         render(e) {
             let {
                 actionLog: t
@@ -146,10 +146,10 @@ function w(e) {
                 })]
             })
         }
-    }] : k, [t]), {
+    }] : R, [t]), {
         TabBar: r,
         renderSelectedTab: o
-    } = (0, y.Ay)({
+    } = (0, T.Ay)({
         tabs: s
     }, [s]);
     return (0, a.jsxs)(C.A, {
@@ -259,7 +259,7 @@ function M() {
             c(r), f(e)
         }, [r]),
         C = t.trim().length > 0,
-        y = i.useMemo(() => C ? m : g ? d : r, [r, m, C, g, d]),
+        T = i.useMemo(() => C ? m : g ? d : r, [r, m, C, g, d]),
         S = g ? "Enable Event Tracking" : "Pause Event Tracking";
     return (0, a.jsxs)("div", {
         ref: e,
@@ -282,9 +282,9 @@ function M() {
                 onClear: () => n(""),
                 placeholder: "Search by action name"
             })]
-        }), (0, a.jsx)(T.A, {
+        }), (0, a.jsx)(y.A, {
             columns: D,
-            data: y,
+            data: T,
             selectedRowKey: v?.id.toString(),
             onClickRow: e => b(e.actionLog)
         }), null != v && (0, a.jsx)(w, {

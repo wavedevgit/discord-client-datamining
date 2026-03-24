@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(266626),
     A = n(998740),
     m = n(732777),
-    p = n(709382),
-    _ = n(287245),
+    _ = n(709382),
+    p = n(287245),
     g = n(615658),
     f = n(592044),
     x = n(100449),
@@ -52,7 +52,7 @@ let N = e => {
             let {
                 contentRect: t,
                 target: n
-            } = e, i = n.getBoundingClientRect(), s = t.width, l = t.height, a = s / p.i.width * 1.5, r = l / p.i.height * 1.5, o = s / p.i.width * 1.1, c = l / p.i.height * 1.1;
+            } = e, i = n.getBoundingClientRect(), s = t.width, l = t.height, a = s / _.i.width * 1.5, r = l / _.i.height * 1.5, o = s / _.i.width * 1.1, c = l / _.i.height * 1.1;
             V({
                 x: s / 2 + i.x,
                 y: l / 2 + i.y
@@ -142,7 +142,7 @@ let N = e => {
                     style: {
                         transform: `translate(${M.x}px, ${M.y}px) scale(${j}) `
                     },
-                    children: (0, i.jsx)(p.A, {
+                    children: (0, i.jsx)(_.A, {
                         roomSeats: h.seats,
                         roomParticipants: h.participants,
                         participants: r,
@@ -177,7 +177,7 @@ let N = e => {
                                 e.preventDefault(), e.stopPropagation(), T(!S)
                             }
                         })]
-                    }), (0, i.jsx)(_.A, {
+                    }), (0, i.jsx)(p.A, {
                         channel: t,
                         idle: n,
                         showChat: S ?? !1

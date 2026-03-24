@@ -25,8 +25,8 @@ var i = n(627968),
     E = n(176201),
     b = n(676608),
     T = n(828162),
-    I = n(801264),
-    C = n(34457),
+    C = n(801264),
+    I = n(34457),
     v = n(576705),
     S = n(636042),
     y = n(396816),
@@ -46,11 +46,11 @@ var i = n(627968),
     V = n(483604),
     z = n(598227),
     W = n(406853);
-let Y = (0, A.Fe)({
+let K = (0, A.Fe)({
         createPromise: () => n.e("66147").then(n.bind(n, 48736)),
         webpackId: 48736
     }),
-    K = o().debounce((e, t) => (0, S.nK)(e, t), 200);
+    Y = o().debounce((e, t) => (0, S.nK)(e, t), 200);
 
 function X(e) {
     let {
@@ -66,7 +66,7 @@ function X(e) {
         value: l,
         maxLength: P.fHV,
         onChange: function(e) {
-            r(e), K(t.id, e)
+            r(e), Y(t.id, e)
         },
         disabled: n
     })
@@ -206,7 +206,7 @@ function q(e) {
             label: B.intl.string(B.t["1F6FzL"]),
             description: B.intl.string(B.t["9UCxlf"]),
             required: !0,
-            children: (0, i.jsx)(Y, {
+            children: (0, i.jsx)(K, {
                 defaultColor: P.TGz,
                 colors: s === y.y.GRADIENT && l ? w.Oz : P._tK,
                 value: t.color,
@@ -311,7 +311,7 @@ function ee(e) {
         role: n,
         locked: s,
         setSelectedSection: l
-    } = e, a = (0, b.jV)(t.id, n), o = (0, c.bG)([y.A], () => y.A.getRoleStyleData(n.id)), d = !a, u = null != o && a ? o.currentStyle : y.y.SOLID, m = (0, C.Oy)(n), x = s || m, h = (0, c.bG)([v.A], () => v.A.canImpersonateRole(t, n)), {
+    } = e, a = (0, b.jV)(t.id, n), o = (0, c.bG)([y.A], () => y.A.getRoleStyleData(n.id)), d = !a, u = null != o && a ? o.currentStyle : y.y.SOLID, m = (0, I.Oy)(n), x = s || m, h = (0, c.bG)([v.A], () => v.A.canImpersonateRole(t, n)), {
         headerHeight: _,
         headerRef: p
     } = (0, O.A)(0), {
@@ -358,7 +358,7 @@ function ee(e) {
                 disabled: x,
                 currentStyle: u,
                 hasEnhancedRoleColors: a
-            }), u === y.y.HOLOGRAPHIC && (0, i.jsx)(I.A, {
+            }), u === y.y.HOLOGRAPHIC && (0, i.jsx)(C.A, {
                 className: H.u,
                 children: (0, i.jsx)(g.Text, {
                     variant: "text-xs/medium",

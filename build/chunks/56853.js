@@ -23,15 +23,15 @@ var a = n(627968),
     j = n(710969),
     A = n(792620),
     C = n(814793),
-    T = n(988436),
-    y = n(918338),
+    y = n(988436),
+    T = n(918338),
     S = n(270045),
     E = n(57718),
     N = n(398025),
     I = n(545986),
     O = n(516226),
-    R = n(720875),
-    k = n(654487),
+    k = n(720875),
+    R = n(654487),
     w = n(419367),
     D = n(652215),
     P = n(985018),
@@ -106,7 +106,7 @@ function U(e) {
                 })]
             }), 0 === p && (0, a.jsx)(u.QWc, {
                 text: P.intl.string(P.t["yKJi+/"]),
-                onClick: () => (0, T.i)({
+                onClick: () => (0, y.i)({
                     quest: t,
                     errorHints: n,
                     sourceQuestContent: o
@@ -126,15 +126,15 @@ function B(e) {
         warningHints: l,
         isVisibleInViewport: r,
         onCtxMenuClose: m,
-        onCtxMenuOpen: T,
+        onCtxMenuOpen: y,
         onCtxMenuSelect: N,
         sourceQuestContent: w
     } = e, B = (0, p.O)(e => e.getErrorHints(t.id)), G = B.length > 0 ? B : s, F = (0, A.IO)(t), V = (0, h.Ay)(), W = ((0, c.Mw)(V) ? D.NJ8.DARK : D.NJ8.LIGHT) === D.NJ8.DARK, H = (0, v.LS)(t), K = t.userStatus?.claimedAt != null, z = (0, v.S5)(t.config.expiresAt, {
         month: "numeric",
         day: "numeric"
     }), $ = t.userStatus?.enrolledAt != null, q = t.userStatus?.completedAt != null, {
-        onAssetLoadComplete: Y
-    } = i.useContext(O.M), Q = W ? "text-muted" : "always-white", J = i.useCallback(() => {
+        onAssetLoadComplete: Q
+    } = i.useContext(O.M), Y = W ? "text-muted" : "always-white", J = i.useCallback(() => {
         F && (0, I.d5)({
             quest: t,
             questContent: _.uF.QUEST_HOME_DESKTOP,
@@ -142,7 +142,7 @@ function B(e) {
             sourceQuestContentCTA: b.Cy.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
         })
     }, [F, t, w]), X = (0, o.bG)([g.A], () => g.A.getQuestHomeHeroConfig()), Z = i.useMemo(() => null != X && (0, C.I0)(X, t.id), [X, t.id]), ee = f.s5.useConfig({
-        location: k.rE.QUESTS_CARD
+        location: R.rE.QUESTS_CARD
     }), et = ee.enabled && ee.variant === f.tL.INFO_ICON, en = (0, v.do)({
         quest: t,
         content: _.uF.QUEST_HOME_DESKTOP,
@@ -153,7 +153,7 @@ function B(e) {
         className: M.kL,
         children: [(0, a.jsx)("div", {
             className: M.IC,
-            children: (0, a.jsx)(y.A, {
+            children: (0, a.jsx)(T.A, {
                 quest: t,
                 isInteracting: n,
                 hideAssets: !r,
@@ -205,7 +205,7 @@ function B(e) {
                             })
                         })
                     }), (0, a.jsx)(S.C, {
-                        onOpen: T,
+                        onOpen: y,
                         onClose: m,
                         onSelect: N,
                         questContent: _.uF.QUEST_HOME_DESKTOP,
@@ -225,7 +225,7 @@ function B(e) {
                             })
                         })
                     })]
-                }), (0, a.jsx)(R.A, {
+                }), (0, a.jsx)(k.A, {
                     showPlaceholder: !r,
                     width: 100,
                     height: 30,
@@ -236,7 +236,7 @@ function B(e) {
                         quest: t,
                         separatorSpacing: E.C8.MEDIUM,
                         withGameTile: !1,
-                        onLoadComplete: Y
+                        onLoadComplete: Q
                     })
                 }), (0, a.jsxs)("div", {
                     className: M.E_,
@@ -244,7 +244,7 @@ function B(e) {
                         className: M.O,
                         children: [(0, a.jsx)(u.Text, {
                             variant: "text-sm/medium",
-                            color: Q,
+                            color: Y,
                             children: P.intl.string(P.t.VAbKhK)
                         }), (0, a.jsx)(x.A, {
                             className: M.w$,
@@ -264,7 +264,7 @@ function B(e) {
                         })]
                     }), H || K ? null : (0, a.jsx)(u.Text, {
                         variant: "text-sm/medium",
-                        color: Q,
+                        color: Y,
                         children: P.intl.format(P.t["7D8r4F"], {
                             expiryDate: z
                         })

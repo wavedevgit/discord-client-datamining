@@ -25,8 +25,8 @@ var i = n(627968),
     E = n(287479),
     b = n(400812),
     T = n(72533),
-    I = n(246282),
-    C = n(729984),
+    C = n(246282),
+    I = n(729984),
     v = n(692453),
     S = n(360827),
     y = n(133154),
@@ -78,18 +78,18 @@ function D(e) {
     let V = (0, c.rdh)(a.A.colors.BACKGROUND_SURFACE_HIGH).hex(),
         z = (0, c.rdh)(a.A.unsafe_rawColors.PRIMARY_160).hex(),
         W = (0, d.Mw)(w) ? V : z,
-        Y = F.to({
+        K = F.to({
             range: [0, 1],
             output: [W, (0, c.rdh)(a.A.colors.BACKGROUND_FEEDBACK_CRITICAL).hex()]
         });
     if (D) {
-        if (L === b.Hy.DEFAULT_CHANNELS) return (0, i.jsx)(C.G, {});
+        if (L === b.Hy.DEFAULT_CHANNELS) return (0, i.jsx)(I.G, {});
         else if (L === b.Hy.CUSTOMIZATION_QUESTIONS) return (0, i.jsx)(S.fO, {});
         else if (L === b.Hy.HOME_SETTINGS) return (0, i.jsx)(y.A, {});
         else if (L === b.Hy.CONNECTIONS) return (0, i.jsx)(v.R, {});
         else if ((L === b.Hy.LANDING || L === b.Hy.REVIEW) && f.A.hasChanges()) return (0, i.jsx)(y.A, {})
     }
-    let K = L === b.kd[b.kd.length - 1],
+    let Y = L === b.kd[b.kd.length - 1],
         X = async () => {
             let e = N.A.advancedMode;
             if (M) try {
@@ -122,7 +122,7 @@ function D(e) {
                 skip: !1
             }), await X() && (0, p.kP)(h, L)
         }, q = null;
-    P && (L === b.Hy.SAFETY_CHECK ? q = (0, i.jsx)(I.Et, {}) : L === b.Hy.DEFAULT_CHANNELS ? q = (0, i.jsx)(I.hz, {}) : L === b.Hy.CUSTOMIZATION_QUESTIONS ? q = (0, i.jsx)(I.yP, {}) : L === b.Hy.HOME_SETTINGS && (q = (0, i.jsx)(I.QS, {})));
+    P && (L === b.Hy.SAFETY_CHECK ? q = (0, i.jsx)(C.Et, {}) : L === b.Hy.DEFAULT_CHANNELS ? q = (0, i.jsx)(C.hz, {}) : L === b.Hy.CUSTOMIZATION_QUESTIONS ? q = (0, i.jsx)(C.yP, {}) : L === b.Hy.HOME_SETTINGS && (q = (0, i.jsx)(C.QS, {})));
     let Q = (0, i.jsx)("div", {
             className: P ? G.R : void 0,
             children: (0, i.jsx)(c.Button, {
@@ -151,7 +151,7 @@ function D(e) {
             children: (0, i.jsx)(l.animated.div, {
                 className: G.kL,
                 style: {
-                    backgroundColor: Y
+                    backgroundColor: K
                 },
                 children: (0, i.jsxs)("div", {
                     className: G.nP,
@@ -178,7 +178,7 @@ function D(e) {
                                     variant: "text-sm/normal",
                                     color: "status-warning",
                                     children: O.intl.string(O.t.DhYsPL)
-                                }) : null, K ? null : $]
+                                }) : null, Y ? null : $]
                             })]
                         })
                     })]

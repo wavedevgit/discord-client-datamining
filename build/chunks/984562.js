@@ -25,10 +25,10 @@ var i = n(627968),
     E = n(652215),
     b = n(743981),
     T = n(583970),
-    I = n(985018),
-    C = n(175820);
+    C = n(985018),
+    I = n(175820);
 let v = function() {
-    (0, I.useSyncMessages)(T.messagesLoader);
+    (0, C.useSyncMessages)(T.messagesLoader);
     let e = (0, r.bG)([h.A], () => h.A.getGuild()),
         t = (0, r.bG)([h.A], () => h.A.getGuildProfile()),
         {
@@ -38,7 +38,7 @@ let v = function() {
     if (s.useEffect(() => {
             v === d.X.NOT_FETCHED && n()
         }, [n, v]), v !== d.X.FETCHED) return (0, i.jsx)("div", {
-        className: C.dc,
+        className: I.dc,
         children: (0, i.jsx)(a.y$y, {})
     });
     if (null == e || null == t) return null;
@@ -50,7 +50,7 @@ let v = function() {
         L = t.badgeColorSecondary ?? null,
         D = (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(A.A, {
-                className: C.uW,
+                className: I.uW,
                 guildId: e.id,
                 isDisabled: R,
                 tag: t.tag ?? "",
@@ -58,11 +58,11 @@ let v = function() {
                 primaryColor: G,
                 secondaryColor: L
             }), (0, i.jsx)(p.A, {
-                className: C.uW,
+                className: I.uW,
                 selectedBadge: O,
                 guildId: e.id
             }), (0, i.jsx)(f.A, {
-                className: C.uW,
+                className: I.uW,
                 guildId: e.id,
                 badge: O,
                 primaryColor: G,
@@ -71,19 +71,19 @@ let v = function() {
         });
     return (0, i.jsxs)("div", {
         children: [(0, i.jsx)(a.Heading, {
-            className: C.DD,
+            className: I.DD,
             variant: "heading-lg/semibold",
-            children: I.intl.string(T.default.mf2OwH)
+            children: C.intl.string(T.default.mf2OwH)
         }), (0, i.jsxs)("div", {
-            className: C.kL,
+            className: I.kL,
             children: [(0, i.jsxs)("div", {
-                className: C.hu,
+                className: I.hu,
                 children: [(0, i.jsxs)("div", {
-                    className: C.iQ,
+                    className: I.iQ,
                     children: [(0, i.jsx)(a.Text, {
                         variant: "text-sm/medium",
                         color: "text-subtle",
-                        children: I.intl.format(T.default["655Uny"], {
+                        children: C.intl.format(T.default["655Uny"], {
                             onClickServerProfile: () => {
                                 x.A.setSection(E.BEX.PROFILE)
                             },
@@ -92,22 +92,22 @@ let v = function() {
                             }
                         })
                     }), !S && (0, i.jsx)(g.A, {
-                        className: C.pB,
+                        className: I.pB,
                         children: (0, i.jsx)(a.Text, {
                             variant: "text-xs/medium",
-                            children: I.intl.format(T.default.CRbkIz, {
+                            children: C.intl.format(T.default.CRbkIz, {
                                 onClickEditSetting: () => x.A.setSection(E.BEX.PROFILE, E.nd0.PROFILE_VISIBILITY)
                             })
                         })
                     })]
                 }), y ? (0, i.jsxs)("div", {
-                    className: C.DZ,
+                    className: I.DZ,
                     children: [(0, i.jsx)("label", {
                         htmlFor: "enable-server-tag",
                         children: (0, i.jsx)(a.Text, {
                             variant: "text-md/semibold",
                             color: "text-strong",
-                            children: I.intl.string(T.default["1zams8"])
+                            children: C.intl.string(T.default["1zams8"])
                         })
                     }), (0, i.jsx)(a.dOG, {
                         id: "enable-server-tag",
@@ -124,7 +124,7 @@ let v = function() {
                         }
                     })]
                 }) : (0, i.jsx)("div", {
-                    className: C.vw,
+                    className: I.vw,
                     children: (0, i.jsx)(_.u, {
                         onClick: () => {
                             (0, m.A)(e.id, o.A.GUILD_POWERUPS_GUILD_SETTINGS_TAGS), x.A.close()
@@ -132,12 +132,12 @@ let v = function() {
                     })
                 }), R ? (0, i.jsx)(a.RDc, {
                     children: (0, i.jsx)("div", {
-                        className: C.n8,
+                        className: I.n8,
                         children: D
                     })
                 }) : D]
             }), (0, i.jsxs)("div", {
-                className: C.so,
+                className: I.so,
                 children: [(0, i.jsx)(N.A, {
                     guildId: e.id,
                     tag: t.tag,

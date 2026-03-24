@@ -5,8 +5,8 @@ n.r(t), n.d(t, {
 var r = n(627968);
 n(64700);
 var i = n(110259),
-    l = n(311907),
-    s = n(688810),
+    s = n(311907),
+    l = n(688810),
     o = n(139286),
     a = n(49463),
     u = n(976860),
@@ -18,16 +18,16 @@ function m(e) {
     let {
         guildId: t,
         powerupListingId: n
-    } = e, m = (0, l.bG)([d.A], () => d.A.getGuild(t)), _ = (0, l.bG)([a.A], () => a.A.hasLoadedExperiments), A = (0, c.A)(t), f = (0, u.PR)(), g = !_ || null == A || null == m, x = (0, s.Ay)(null != f ? f : []);
+    } = e, m = (0, s.bG)([d.A], () => d.A.getGuild(t)), _ = (0, s.bG)([a.A], () => a.A.hasLoadedExperiments), f = (0, c.A)(t), g = (0, u.PR)(), x = !_ || null == f || null == m, A = (0, l.Ay)(null != g ? g : []);
     return ((0, o.A)({
         type: i.ImpressionTypes.VIEW,
         name: i.ImpressionNames.BOOST_SHOP_OPENED,
         properties: {
-            location_stack: x.analyticsLocations
+            location_stack: A.analyticsLocations
         }
     }, {
-        disableTrack: g
-    }), g) ? null : (0, r.jsx)(p.A, {
+        disableTrack: x
+    }), x) ? null : (0, r.jsx)(p.A, {
         guildId: t,
         powerupListingId: n
     })

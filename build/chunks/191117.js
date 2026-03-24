@@ -96,8 +96,8 @@ function j(e) {
         data: e
     }))], {
         handleDragStart: T,
-        handleDragReset: I,
-        handleDragComplete: C
+        handleDragReset: C,
+        handleDragComplete: I
     } = (0, u.A)(b, e => {
         let t = e.findIndex(e => "separator" === e.id),
             n = e.slice(0, t).map(e => ({
@@ -137,8 +137,8 @@ function j(e) {
                 promptIndex: t,
                 dragIndex: t,
                 onPromptDragStart: T,
-                onPromptDragReset: I,
-                onPromptDragComplete: C
+                onPromptDragReset: C,
+                onPromptDragComplete: I
             }, e.id))]
         }), (0, i.jsx)(f, {
             guild: c,
@@ -151,8 +151,8 @@ function j(e) {
                 promptIndex: t + N.length,
                 dragIndex: t + N.length + 1,
                 onPromptDragStart: T,
-                onPromptDragReset: I,
-                onPromptDragComplete: C
+                onPromptDragReset: C,
+                onPromptDragComplete: I
             }, e.id)), j.length < _.iD ? (0, i.jsxs)(o.DUT, {
                 className: A.Wz,
                 onClick: () => (0, g.WC)(c, [...j, (0, _.a5)(!1)], !1),

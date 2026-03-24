@@ -9,7 +9,7 @@ var s = a(64700),
 
 function i(e, t, a) {
     let i = (0, n.bG)([r.A], () => r.A.keyboardModeEnabled),
-        A = s.useCallback(e => {
+        d = s.useCallback(e => {
             let a = document.querySelector(e),
                 s = t.current;
             null != a && null != s && (a.focus(), s.scrollIntoViewNode({
@@ -17,7 +17,7 @@ function i(e, t, a) {
                 padding: 80
             }))
         }, [t]),
-        d = s.useCallback(() => new Promise(e => {
+        A = s.useCallback(() => new Promise(e => {
             let a = t.current;
             if (null == a) return e();
             a.scrollTo({
@@ -36,8 +36,8 @@ function i(e, t, a) {
     return (0, l.Ay)({
         id: e,
         isEnabled: i,
-        setFocus: A,
-        scrollToStart: d,
+        setFocus: d,
+        scrollToStart: A,
         scrollToEnd: o,
         orientation: a?.orientation
     })

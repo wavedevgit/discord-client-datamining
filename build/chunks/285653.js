@@ -1,6 +1,6 @@
 /** chunk id: 285653 params = (module,exports,require) **/
 a.d(t, {
-    s: () => o
+    s: () => d
 });
 var l = a(627968);
 a(64700);
@@ -8,14 +8,14 @@ var n = a(397927),
     r = a(458306),
     s = a(673277),
     i = a(653793);
-let d = () => (0, l.jsx)("div", {
+let o = () => (0, l.jsx)("div", {
         style: {
             background: "rgba(255, 255, 255, 0.6)",
             height: 120,
             minWidth: 120
         }
     }),
-    o = {
+    d = {
         name: "Card",
         id: "card",
         component: () => (0, l.jsxs)(l.Fragment, {
@@ -31,42 +31,42 @@ let d = () => (0, l.jsx)("div", {
                         style: {
                             background: "red"
                         },
-                        children: (0, l.jsx)(d, {})
+                        children: (0, l.jsx)(o, {})
                     })
                 }), (0, l.jsx)(i.A, {
                     children: (0, l.jsx)("div", {
                         style: {
                             background: "orange"
                         },
-                        children: (0, l.jsx)(d, {})
+                        children: (0, l.jsx)(o, {})
                     })
                 }), (0, l.jsx)(i.A, {
                     children: (0, l.jsx)("div", {
                         style: {
                             background: "yellow"
                         },
-                        children: (0, l.jsx)(d, {})
+                        children: (0, l.jsx)(o, {})
                     })
                 }), (0, l.jsx)(i.A, {
                     children: (0, l.jsx)("div", {
                         style: {
                             background: "green"
                         },
-                        children: (0, l.jsx)(d, {})
+                        children: (0, l.jsx)(o, {})
                     })
                 }), (0, l.jsx)(i.A, {
                     children: (0, l.jsx)("div", {
                         style: {
                             background: "blue"
                         },
-                        children: (0, l.jsx)(d, {})
+                        children: (0, l.jsx)(o, {})
                     })
                 }), (0, l.jsx)(i.A, {
                     children: (0, l.jsx)("div", {
                         style: {
                             background: "violet"
                         },
-                        children: (0, l.jsx)(d, {})
+                        children: (0, l.jsx)(o, {})
                     })
                 })]
             }), (0, l.jsxs)(s.A, {
@@ -80,42 +80,42 @@ let d = () => (0, l.jsx)("div", {
                             style: {
                                 background: "red"
                             },
-                            children: (0, l.jsx)(d, {})
+                            children: (0, l.jsx)(o, {})
                         })
                     }), (0, l.jsx)(i.A, {
                         children: (0, l.jsx)("div", {
                             style: {
                                 background: "orange"
                             },
-                            children: (0, l.jsx)(d, {})
+                            children: (0, l.jsx)(o, {})
                         })
                     }), (0, l.jsx)(i.A, {
                         children: (0, l.jsx)("div", {
                             style: {
                                 background: "yellow"
                             },
-                            children: (0, l.jsx)(d, {})
+                            children: (0, l.jsx)(o, {})
                         })
                     }), (0, l.jsx)(i.A, {
                         children: (0, l.jsx)("div", {
                             style: {
                                 background: "green"
                             },
-                            children: (0, l.jsx)(d, {})
+                            children: (0, l.jsx)(o, {})
                         })
                     }), (0, l.jsx)(i.A, {
                         children: (0, l.jsx)("div", {
                             style: {
                                 background: "blue"
                             },
-                            children: (0, l.jsx)(d, {})
+                            children: (0, l.jsx)(o, {})
                         })
                     }), (0, l.jsx)(i.A, {
                         children: (0, l.jsx)("div", {
                             style: {
                                 background: "violet"
                             },
-                            children: (0, l.jsx)(d, {})
+                            children: (0, l.jsx)(o, {})
                         })
                     })]
                 })]

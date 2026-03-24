@@ -2,7 +2,7 @@
 "use strict";
 let i, s, l;
 n.d(t, {
-    A: () => Y,
+    A: () => K,
     y: () => T
 });
 var r, a = n(735438),
@@ -23,8 +23,8 @@ var r, a = n(735438),
     E = n(652215),
     b = n(178758),
     T = ((r = {}).SOLID = "solid", r.GRADIENT = "gradient", r.HOLOGRAPHIC = "holographic", r);
-let I = new Set,
-    C = E.XlH.CLOSED,
+let C = new Set,
+    I = E.XlH.CLOSED,
     v = !1,
     S = !1,
     y = [],
@@ -55,7 +55,7 @@ function U(e) {
 
 function P() {
     let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-    i = N.A.getProps().guild, v = !1, S = !1, l = void 0, I.clear(), M.clear(), C = E.XlH.OPEN, R = [...y = null != i ? [...p.A.getSortedRoles(i.id)] : []], w(i?.id, R), O = !1, e && (D.clear(), L.forEach((e, t) => {
+    i = N.A.getProps().guild, v = !1, S = !1, l = void 0, C.clear(), M.clear(), I = E.XlH.OPEN, R = [...y = null != i ? [...p.A.getSortedRoles(i.id)] : []], w(i?.id, R), O = !1, e && (D.clear(), L.forEach((e, t) => {
         D.set(t, [...e])
     }))
 }
@@ -94,15 +94,15 @@ function w(e, t) {
 }
 let B = o().debounce(() => {
     let e = !1;
-    S && ((S = k().length > 0) || (e = !0)), [...I].forEach(t => {
+    S && ((S = k().length > 0) || (e = !0)), [...C].forEach(t => {
         var n;
         o().isEqual(H(t), (n = t, R.find(e => {
             let {
                 id: t
             } = e;
             return t === n
-        }))) && (I.delete(t), e = !0)
-    }), 0 === I.size && (v = !1), O && o().isEqual(L, D) && (e = !0, O = !1), e && W.emitChange()
+        }))) && (C.delete(t), e = !0)
+    }), 0 === C.size && (v = !1), O && o().isEqual(L, D) && (e = !0, O = !1), e && W.emitChange()
 }, 500);
 
 function F(e, t) {
@@ -113,7 +113,7 @@ function F(e, t) {
             ...t
         },
         s = [...y];
-    s[n] = i, y = s, v = !0, I.add(i.id), B()
+    s[n] = i, y = s, v = !0, C.add(i.id), B()
 }
 
 function H(e) {
@@ -129,9 +129,9 @@ function V(e) {
     let {
         guildId: t
     } = e;
-    if (null == (i = N.A.getProps().guild) || t !== i.id || C === E.XlH.SUBMITTING) return !1;
+    if (null == (i = N.A.getProps().guild) || t !== i.id || I === E.XlH.SUBMITTING) return !1;
     let n = [...p.A.getSortedRoles(i.id)];
-    I.forEach(e => {
+    C.forEach(e => {
         let t = H(e),
             i = -1;
         null == n.find((t, n) => {
@@ -139,10 +139,10 @@ function V(e) {
                 id: s
             } = t;
             if (s === e) return i = n, !0
-        }) || null == t ? I.delete(e) : n[i] = t
-    }), 0 === I.size && (v = !1);
+        }) || null == t ? C.delete(e) : n[i] = t
+    }), 0 === C.size && (v = !1);
     let s = new Map;
-    I.forEach(e => {
+    C.forEach(e => {
         let t = M.get(e);
         null != t && s.set(e, t)
     }), M.clear(), w(t, n), s.forEach((e, t) => {
@@ -173,7 +173,7 @@ class z extends u.Ay.Store {
         return i
     }
     get editedRoleIds() {
-        return Array.from(I)
+        return Array.from(C)
     }
     get editedRoleIdsForConfigurations() {
         return G
@@ -182,7 +182,7 @@ class z extends u.Ay.Store {
         return y
     }
     get formState() {
-        return C
+        return I
     }
     getSortDeltas() {
         return k()
@@ -378,7 +378,7 @@ let W = new z(m.h, __OVERLAY__ ? {} : {
             O = !0, G.add(i.id), D.set(i.id, n), B()
         },
         GUILD_SETTINGS_CLOSE: function() {
-            i = null, R = y = [], L.clear(), I.clear(), M.clear(), D.clear(), G = new Set, v = !1, S = !1, O = !1, C = E.XlH.CLOSED
+            i = null, R = y = [], L.clear(), C.clear(), M.clear(), D.clear(), G = new Set, v = !1, S = !1, O = !1, I = E.XlH.CLOSED
         },
         GUILD_ROLE_CREATE: V,
         GUILD_ROLE_UPDATE: V,
@@ -386,13 +386,13 @@ let W = new z(m.h, __OVERLAY__ ? {} : {
             return G.has(e.roleId) && (G.delete(e.roleId), L.delete(e.roleId), D.delete(e.roleId), O = !1), V(e)
         },
         GUILD_SETTINGS_ROLES_SUBMITTING: function() {
-            C = E.XlH.SUBMITTING
+            I = E.XlH.SUBMITTING
         },
         GUILD_SETTINGS_ROLES_SAVE_FAIL: function(e) {
             let {
                 message: t
             } = e;
-            C = E.XlH.OPEN, l = t
+            I = E.XlH.OPEN, l = t
         },
         GUILD_SETTINGS_ROLES_SAVE_SUCCESS: function() {
             P(!1)
@@ -412,4 +412,4 @@ let W = new z(m.h, __OVERLAY__ ? {} : {
             i = (0, g.hZ)(i, "features", new Set([...i.features, E.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE]))
         }
     }),
-    Y = W
+    K = W

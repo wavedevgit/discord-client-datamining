@@ -34,7 +34,7 @@ function b(e) {
         promptIndex: u,
         dragIndex: A,
         includeCount: b,
-        singleColumn: C,
+        singleColumn: I,
         onPromptDragComplete: v,
         onPromptDragStart: S,
         onPromptDragReset: y
@@ -161,12 +161,12 @@ function b(e) {
                         count: n.options.length,
                         total: f.fs
                     }),
-                    children: (0, i.jsx)(I, {
+                    children: (0, i.jsx)(C, {
                         guild: t,
                         prompt: n,
                         promptIndex: u,
                         errors: M,
-                        singleColumn: C
+                        singleColumn: I
                     })
                 })]
             }), (0, i.jsxs)("div", {
@@ -252,7 +252,7 @@ function T(e) {
     })
 }
 
-function I(e) {
+function C(e) {
     let {
         guild: t,
         prompt: n,

@@ -19,8 +19,8 @@ let u = e => {
         mostRecentQuery: h,
         handleClearSearch: A,
         handleSearchKeyPress: m,
-        handleCreateOrAddGuild: p,
-        searchResults: _,
+        handleCreateOrAddGuild: _,
+        searchResults: p,
         searchFetching: g
     } = e;
     if (g) t = (0, i.jsx)("div", {
@@ -29,11 +29,11 @@ let u = e => {
             className: o.u1
         })
     });
-    else if (0 === _.length) {
-        let e = null != p ? r.intl.format(r.t.qWFupn, {
+    else if (0 === p.length) {
+        let e = null != _ ? r.intl.format(r.t.qWFupn, {
             addServerHook: function(e, t) {
                 return (0, i.jsx)(s.MzZ, {
-                    onClick: p,
+                    onClick: _,
                     children: e
                 }, t)
             }
@@ -58,7 +58,7 @@ let u = e => {
         })
     } else t = (0, i.jsx)("div", {
         className: o.vY,
-        children: _.map(e => (0, i.jsx)(a.A, {
+        children: p.map(e => (0, i.jsx)(a.A, {
             entry: e
         }, e.guildId))
     });
@@ -80,7 +80,7 @@ let u = e => {
                         variant: "heading-xl/semibold",
                         className: c.s7,
                         children: r.intl.format(r.t.UkOHRd, {
-                            numResults: _.length,
+                            numResults: p.length,
                             query: h
                         })
                     })]

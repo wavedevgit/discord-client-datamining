@@ -1,22 +1,22 @@
 /** chunk id: 379512 params = (module,exports,require) **/
 n.d(t, {
-    F: () => s
+    F: () => l
 });
 var r = n(568065),
     i = n(333354),
-    l = n(985018);
+    s = n(985018);
 
-function s(e, t) {
+function l(e, t) {
     switch (t) {
         case r.yG.AVAILABLE:
-            return l.intl.formatToPlainString(i.default.BdRXZA, {
+            return s.intl.formatToPlainString(i.default.BdRXZA, {
                 boostCount: e
             });
         case r.yG.SPENT:
-            return l.intl.formatToPlainString(i.default.xvgIVG, {
+            return s.intl.formatToPlainString(i.default.xvgIVG, {
                 boostCount: e
             });
         case r.yG.TOTAL:
-            return l.intl.string(i.default["/F7Z2y"])
+            return s.intl.string(i.default["/F7Z2y"])
     }
 }

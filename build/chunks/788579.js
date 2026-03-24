@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(406704),
     A = n(576705),
     m = n(977997),
-    p = n(203982),
-    _ = n(58736),
+    _ = n(203982),
+    p = n(58736),
     g = n(652215),
     f = n(985018);
 let x = s.memo(function(e) {
@@ -32,14 +32,14 @@ let x = s.memo(function(e) {
             locked: !1
         })
     }, [t, l, E]);
-    return (s.useEffect(() => (p._.subscribe(g.jej.CALL_START, N), () => {
-        p._.unsubscribe(g.jej.CALL_START, N)
+    return (s.useEffect(() => (_._.subscribe(g.jej.CALL_START, N), () => {
+        _._.unsubscribe(g.jej.CALL_START, N)
     }), [N]), h.io.useExperiment({
         guildId: t.guild_id,
         location: "63250c_1"
     }, {
         autoTrackExposure: !1
-    }).enabled && !n && !l && C && I && t.isVocalThread()) ? (0, i.jsx)(_.Ay.Icon, {
+    }).enabled && !n && !l && C && I && t.isVocalThread()) ? (0, i.jsx)(p.Ay.Icon, {
         icon: o._jp,
         onClick: N,
         tooltip: x ? f.intl.string(f.t.fdEeb5) : f.intl.string(f.t.focH1t)

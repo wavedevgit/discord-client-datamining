@@ -1,6 +1,6 @@
 /** chunk id: 524134 params = (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => T
 });
 var a = n(627968),
     i = n(64700),
@@ -23,24 +23,24 @@ var a = n(627968),
     j = n(87404),
     A = n(652215),
     C = n(53516),
-    T = n(985018);
+    y = n(985018);
 
-function y() {
+function T() {
     let {
         action: e,
         theme: t
     } = (0, l.cf)([f.A, _.A], () => ({
         action: f.A.getAction(),
         theme: _.A.theme
-    })), y = v.A.getVerificationTypes(e), [S, E] = i.useState(0), N = (0, m.A)(y);
+    })), T = v.A.getVerificationTypes(e), [S, E] = i.useState(0), N = (0, m.A)(T);
     (0, x.A)({
         type: s.ImpressionTypes.MODAL,
         name: s.ImpressionNames.USER_ACTION_REQUIRED,
         properties: {
-            verification_type: y[0],
-            verification_types: y
+            verification_type: T[0],
+            verification_types: T
         }
-    }, {}, [y.toString()]);
+    }, {}, [T.toString()]);
     let I = () => {
         (0, u.Cw)(), (0, o.mMO)(async () => {
             let {
@@ -57,23 +57,23 @@ function y() {
     return i.useEffect(() => (h.A.disable(), () => {
         h.A.enable()
     }), []), i.useEffect(() => {
-        N?.[0] === A.Fz7.PHONE && y?.[0] === A.Fz7.EMAIL && (0, o.mMO)(async () => {
+        N?.[0] === A.Fz7.PHONE && T?.[0] === A.Fz7.EMAIL && (0, o.mMO)(async () => {
             let {
                 default: e
             } = await n.e("10919").then(n.bind(n, 556506));
             return t => (0, a.jsx)(e, {
                 ...t,
-                title: T.intl.string(T.t.KLnLIP),
-                body: T.intl.string(T.t.XGbCq3),
-                confirmText: T.intl.string(T.t["3oK4qw"])
+                title: y.intl.string(y.t.KLnLIP),
+                body: y.intl.string(y.t.XGbCq3),
+                confirmText: y.intl.string(y.t["3oK4qw"])
             })
         }, {
             modalKey: j.Pr,
             Layer: p.Ay,
             onCloseCallback: I
         })
-    }, [y, N]), (0, a.jsx)(b.A, {
-        types: y,
+    }, [T, N]), (0, a.jsx)(b.A, {
+        types: T,
         captchaKey: S,
         onCaptchaVerify: e => {
             r.Bo.post({
@@ -109,10 +109,10 @@ function y() {
                     ConfirmModal: e
                 } = await Promise.resolve().then(n.bind(n, 732159));
                 return t => (0, a.jsx)(e, {
-                    title: T.intl.string(T.t["2jxGer"]),
-                    subtitle: T.intl.string(T.t.SUnWBB),
-                    confirmText: T.intl.string(T.t["2jxGer"]),
-                    cancelText: T.intl.string(T.t["ETE/oC"]),
+                    title: y.intl.string(y.t["2jxGer"]),
+                    subtitle: y.intl.string(y.t.SUnWBB),
+                    confirmText: y.intl.string(y.t["2jxGer"]),
+                    cancelText: y.intl.string(y.t["ETE/oC"]),
                     onConfirm: () => d.A.logout("verification"),
                     ...t
                 })

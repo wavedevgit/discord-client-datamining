@@ -17,8 +17,8 @@ var i = n(627968),
     h = n(543465),
     A = n(147036),
     m = n(32603),
-    p = n(85808),
-    _ = n(823142);
+    _ = n(85808),
+    p = n(823142);
 n(83766);
 var g = n(728444),
     f = n(495401);
@@ -27,7 +27,7 @@ let x = s.memo(function(e) {
         guildChannels: t,
         guildChannelsVersion: n
     } = e, l = s.useMemo(() => t.getCategoryFromSection(t.voiceChannelsSectionNumber), [t, n]);
-    return null == l ? null : (0, i.jsx)(_.AV, {
+    return null == l ? null : (0, i.jsx)(p.AV, {
         category: l
     })
 });
@@ -47,10 +47,10 @@ function C(e) {
     let {
         hasDivider: c,
         canHaveVoiceSummary: d
-    } = (0, p.B3)(n, a, t), u = c ? r ? 9 : 12 : 0;
+    } = (0, _.B3)(n, a, t), u = c ? r ? 9 : 12 : 0;
     if (!d || t === m.PU) return u;
     let h = n.getNamedCategoryFromSection(t);
-    return null == h ? u : (0, p.Bo)({
+    return null == h ? u : (0, _.Bo)({
         category: h,
         selectedChannelId: s,
         selectedVoiceChannelId: l,
@@ -63,7 +63,7 @@ function E(e, t, n) {
     let {
         hasDivider: i,
         canHaveVoiceSummary: s
-    } = (0, p.B3)(t, n, e);
+    } = (0, _.B3)(t, n, e);
     return `section-footer-${e}${i?"-divider":""}${s?"-voice-summary":""}`
 }
 let I = s.memo(function(e) {
@@ -71,7 +71,7 @@ let I = s.memo(function(e) {
         sectionIndex: t,
         guildChannels: n,
         guildChannelsVersion: l,
-        voiceStates: _,
+        voiceStates: p,
         guildId: C,
         selectedChannelId: E,
         selectedVoiceChannelId: I,
@@ -79,7 +79,7 @@ let I = s.memo(function(e) {
     } = e, {
         hasDivider: b,
         canHaveVoiceSummary: S
-    } = s.useMemo(() => (0, p.B3)(n, N, t), [n, N, t, l]), T = s.useMemo(() => t === m.PU ? null : n.getCategoryFromSection(t), [n, t, l]), v = (0, u.jN)(C), {
+    } = s.useMemo(() => (0, _.B3)(n, N, t), [n, N, t, l]), T = s.useMemo(() => t === m.PU ? null : n.getCategoryFromSection(t), [n, t, l]), v = (0, u.jN)(C), {
         enableWaveformIcon: y
     } = (0, c.b)(C, "ChannelListSectionFooter"), j = (0, r.yK)([h.Ay], () => {
         if (null == T || !T.isCollapsed || !S) return [];
@@ -95,8 +95,8 @@ let I = s.memo(function(e) {
         channels: j,
         selectedChannelId: E,
         selectedVoiceChannelId: I,
-        voiceStates: _
-    }), [j, E, I, _]);
+        voiceStates: p
+    }), [j, E, I, p]);
     if (t === n.voiceChannelsSectionNumber) return (0, i.jsx)(x, {
         guildChannels: n,
         guildChannelsVersion: l

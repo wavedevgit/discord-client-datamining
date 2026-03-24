@@ -25,8 +25,8 @@ var i = n(627968),
     E = n(985018),
     b = n(218251);
 let T = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 2196594, 4752414, 0xc75a38, 0xc74138, 12401e3, 0xc5579d, 5659039, 4092591, 5868359, 6586142, 8876063, 8484432, 9979976, 5269106, 3421236],
-    I = /^(https?:\/\/)?(?:m\.|www\.)?(youtu\.be|youtube\.com)\/(embed\/|v\/|watch\?v=|watch\?.+&v=)?((\w|-){11})(?:\S+)?$/,
-    C = T[4],
+    C = /^(https?:\/\/)?(?:m\.|www\.)?(youtu\.be|youtube\.com)\/(embed\/|v\/|watch\?v=|watch\?.+&v=)?((\w|-){11})(?:\S+)?$/,
+    I = T[4],
     v = e => {
         let {
             guild: t,
@@ -34,10 +34,10 @@ let T = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
         } = e, l = (0, j.Tq)(t.id), {
             loading: a,
             updateSubscriptionsSettings: d
-        } = (0, j.KE)(), [p, f] = s.useState(t.features.has(N.GuildFeatures.CREATOR_STORE_PAGE)), [v, S] = s.useState(l?.store_page_primary_color ?? C), [y, R] = s.useState(l?.store_page_trailer_url), O = null == y || null != y.match(I), [G, L] = s.useState(l?.store_page_show_subscriber_count ?? !1), D = s.useRef(l?.store_page_slug).current, M = p !== t.features.has(N.GuildFeatures.CREATOR_STORE_PAGE) || l?.store_page_primary_color == null && v !== C || l?.store_page_primary_color != null && v !== l?.store_page_primary_color || y !== l?.store_page_trailer_url || null != G && G !== l?.store_page_show_subscriber_count, k = async () => {
+        } = (0, j.KE)(), [p, f] = s.useState(t.features.has(N.GuildFeatures.CREATOR_STORE_PAGE)), [v, S] = s.useState(l?.store_page_primary_color ?? I), [y, R] = s.useState(l?.store_page_trailer_url), O = null == y || null != y.match(C), [G, L] = s.useState(l?.store_page_show_subscriber_count ?? !1), D = s.useRef(l?.store_page_slug).current, M = p !== t.features.has(N.GuildFeatures.CREATOR_STORE_PAGE) || l?.store_page_primary_color == null && v !== I || l?.store_page_primary_color != null && v !== l?.store_page_primary_color || y !== l?.store_page_trailer_url || null != G && G !== l?.store_page_show_subscriber_count, k = async () => {
             o()(null != l, "Settings must be defined");
             let e = {};
-            p !== t.features.has(N.GuildFeatures.CREATOR_STORE_PAGE) && (e.store_page_enabled = p), (l?.store_page_primary_color == null && v !== C || l?.store_page_primary_color != null && v !== l?.store_page_primary_color) && (e.store_page_primary_color = v), y !== l?.store_page_trailer_url && (e.store_page_trailer_url = y), G !== l?.store_page_show_subscriber_count && (e.store_page_show_subscriber_count = G), Object.keys(e).length > 0 && (await d(t.id, e), "store_page_enabled" in e && A.default.track(N.HAw.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_TOGGLED, {
+            p !== t.features.has(N.GuildFeatures.CREATOR_STORE_PAGE) && (e.store_page_enabled = p), (l?.store_page_primary_color == null && v !== I || l?.store_page_primary_color != null && v !== l?.store_page_primary_color) && (e.store_page_primary_color = v), y !== l?.store_page_trailer_url && (e.store_page_trailer_url = y), G !== l?.store_page_show_subscriber_count && (e.store_page_show_subscriber_count = G), Object.keys(e).length > 0 && (await d(t.id, e), "store_page_enabled" in e && A.default.track(N.HAw.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_TOGGLED, {
                 enabled: p,
                 ...(0, h.H$)(t.id)
             }))
@@ -94,7 +94,7 @@ let T = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
                     }), (0, i.jsx)(m.skP, {
                         colors: T,
                         customColor: null,
-                        defaultColor: C,
+                        defaultColor: I,
                         value: v,
                         onChange: e => S(e),
                         renderDefaultButton: () => null,
@@ -130,7 +130,7 @@ let T = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
                     children: (0, i.jsx)(u.A, {
                         submitting: a,
                         onReset: () => {
-                            f(t.features.has(N.GuildFeatures.CREATOR_STORE_PAGE)), S(l?.store_page_primary_color ?? C), R(l?.store_page_trailer_url), L(l?.store_page_show_subscriber_count ?? !1)
+                            f(t.features.has(N.GuildFeatures.CREATOR_STORE_PAGE)), S(l?.store_page_primary_color ?? I), R(l?.store_page_trailer_url), L(l?.store_page_show_subscriber_count ?? !1)
                         },
                         onSave: k,
                         disabled: B

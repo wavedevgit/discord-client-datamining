@@ -7,8 +7,8 @@ t.a(e, async function(e, l) {
         var r = t(627968),
             a = t(64700),
             s = t(223535),
-            i = t(484030),
-            c = t(397927),
+            c = t(484030),
+            i = t(397927),
             d = t(791606),
             u = t(728458),
             o = t(715764),
@@ -53,7 +53,7 @@ t.a(e, async function(e, l) {
             let {
                 content: n
             } = e;
-            return (0, r.jsx)(i.tH, {
+            return (0, r.jsx)(c.tH, {
                 fallbackRender: e => {
                     let {
                         error: t
@@ -80,7 +80,7 @@ t.a(e, async function(e, l) {
             }, [t]), (0, r.jsxs)(r.Fragment, {
                 children: [(0, r.jsx)("span", {
                     children: n
-                }), (0, r.jsxs)(c.Text, {
+                }), (0, r.jsxs)(i.Text, {
                     variant: "text-md/normal",
                     color: "text-feedback-critical",
                     className: b.g,

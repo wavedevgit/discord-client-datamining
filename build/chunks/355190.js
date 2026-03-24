@@ -1,6 +1,6 @@
 /** chunk id: 355190 params = (module,exports,require) **/
 r.d(t, {
-    A: () => i
+    A: () => d
 });
 var a = r(311907),
     n = r(73153);
@@ -11,7 +11,7 @@ class s extends a.Ay.Store {
         return l[e]
     }
 }
-let i = new s(n.h, {
+let d = new s(n.h, {
     EULA_FETCH_SUCCESS: function(e) {
         let {
             eula: t

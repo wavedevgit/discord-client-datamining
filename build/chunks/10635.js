@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(182592),
     A = n(562153),
     m = n(183555),
-    p = n(672385),
-    _ = n(950191),
+    _ = n(672385),
+    p = n(950191),
     g = n(657331),
     f = n(718019),
     x = n(31432),
@@ -37,7 +37,7 @@ function L(e) {
     let {
         user: t,
         channel: n
-    } = e, L = __OVERLAY__ || !(0, d.A)(t.id), M = (0, _.Ay)(t.id), D = (0, r.Ay)(), {
+    } = e, L = __OVERLAY__ || !(0, d.A)(t.id), M = (0, p.Ay)(t.id), D = (0, r.Ay)(), {
         analyticsLocations: G
     } = (0, c.Ay)(o.A.USER_PROFILE_SIDEBAR), U = (0, m.pb)({
         layout: "SIDEBAR",
@@ -119,7 +119,7 @@ function L(e) {
                     className: R.qr,
                     children: (0, i.jsx)(a.DUT, {
                         onClick: () => {
-                            V(), (0, p.Wn)({
+                            V(), (0, _.Wn)({
                                 action: "PRESS_VIEW_PROFILE",
                                 analyticsLocations: G,
                                 ...U

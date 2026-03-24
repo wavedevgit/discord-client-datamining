@@ -29,13 +29,13 @@ function h(e) {
     let {
         headerText: b,
         descriptionText: T,
-        icon: I
+        icon: C
     } = f;
     return (0, i.jsxs)("div", {
         className: x.Ik,
         children: [(0, i.jsx)("div", {
             className: x.TV,
-            children: (0, i.jsx)(I, {
+            children: (0, i.jsx)(C, {
                 size: "md",
                 color: "currentColor",
                 className: x.gE
