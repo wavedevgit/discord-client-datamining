@@ -18,15 +18,21 @@ function u(e) {
         path: a,
         paramsBuilder: u,
         search: A
-    } = e, h = (0, l.bG)([o.default], () => o.default.getFingerprint() ?? o.default.getId()), _ = (0, l.bG)([s.A], () => s.A.getState(a), [a]), m = i.useMemo(() => null == u ? {
+    } = e, h = (0, l.bG)([o.default], () => o.default.getFingerprint() ?? o.default.getId()), _ = (0, l.bG)([o.default], () => o.default.getInstallationForTracking()), m = (0, l.bG)([s.A], () => s.A.getState(a), [a]), g = i.useMemo(() => null == u ? {
         path: a,
         fingerprint: h,
+        installationId: _,
         search: A
-    } : u(a, h, A), [a, u, h, A]);
+    } : u({
+        path: a,
+        fingerprint: h,
+        search: A,
+        installationId: _
+    }), [a, u, h, _, A]);
     return i.useEffect(() => {
-        c || null == _ && r.A.openNativeAppModal(a, d.e$_.DEEP_LINK, {
+        c || null == m && r.A.openNativeAppModal(a, d.e$_.DEEP_LINK, {
             type: n,
-            params: m
+            params: g
         })
-    }, [_, a, m, n]), t
+    }, [m, a, g, n]), t
 }

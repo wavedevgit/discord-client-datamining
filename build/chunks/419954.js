@@ -123,7 +123,13 @@ function S(e, t) {
 }
 
 function b(e, t) {
-    return h(e, i.Z6.SELECT, t)
+    let n = t.selectionMode ?? "single";
+    return {
+        ...t,
+        selectionMode: n,
+        key: e,
+        type: i.Z6.SELECT
+    }
 }
 
 function C(e, t) {

@@ -18,6 +18,7 @@ let o = l.isPlatformEmbedded ? a.tEg : (e, t) => {
     d = l.isPlatformEmbedded ? a.tEg : (e, t) => {
         if (!r.default.isAuthenticated()) return o(e, {
             ...t || {},
-            fingerprint: r.default.getFingerprint()
+            fingerprint: r.default.getFingerprint(),
+            installationId: r.default.getInstallationForTracking()
         })
     }

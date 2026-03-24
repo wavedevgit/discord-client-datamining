@@ -23,9 +23,9 @@ var a = n(627968),
 function A(e) {
     let {
         guildId: t
-    } = e, A = (0, u.A)(t), C = s.useRef(null), {
-        analyticsLocations: p
-    } = (0, d.Ay)(r.A.GAME_SERVER_PAGE), I = s.useCallback(() => {
+    } = e, A = (0, u.A)(t), p = s.useRef(null), {
+        analyticsLocations: C
+    } = (0, d.Ay)(r.A.GAME_SERVER_PAGE), b = s.useCallback(() => {
         let e = o.A.getGuild(t);
         null != e && (0, c.g)({
             analyticsLocation: {
@@ -33,12 +33,12 @@ function A(e) {
                 section: f.JJy.GAME_SERVERS_EMPTY_STATE
             },
             numberOfBoostsToAdd: 1,
-            analyticsLocations: p,
+            analyticsLocations: C,
             guild: e
         })
-    }, [t, p]), N = s.useCallback(() => {
+    }, [t, C]), I = s.useCallback(() => {
         (0, _.A)(t, r.A.GAME_SERVER_PAGE, g.W5)
-    }, [t]), E = s.useCallback(() => {
+    }, [t]), N = s.useCallback(() => {
         (0, l.mMO)(async () => {
             let {
                 default: e
@@ -56,10 +56,10 @@ function A(e) {
         }), (0, a.jsxs)("div", {
             className: h.Qs,
             children: [(0, a.jsx)("div", {
-                ref: C,
+                ref: p,
                 className: h._q,
                 children: (0, a.jsx)(i.E_w, {
-                    eventTargetRef: C,
+                    eventTargetRef: p,
                     fit: "contain",
                     stateMachine: "SM_Main_Int"
                 })
@@ -78,22 +78,22 @@ function A(e) {
                     children: [(0, a.jsx)(l.Button, {
                         variant: "expressive",
                         text: j.intl.string(j.t.LhlgY9),
-                        onClick: N
+                        onClick: I
                     }), (0, a.jsx)(l.Button, {
                         variant: "secondary",
                         text: j.intl.string(v.default.fxIXv4),
-                        onClick: E
+                        onClick: N
                     })]
                 }) : (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)(l.Button, {
                         variant: "expressive",
                         icon: l._Jp,
                         text: j.intl.string(v.default["968/QC"]),
-                        onClick: I
+                        onClick: b
                     }), (0, a.jsx)(l.Button, {
                         variant: "secondary",
                         text: j.intl.string(v.default.fxIXv4),
-                        onClick: E
+                        onClick: N
                     })]
                 })
             })]

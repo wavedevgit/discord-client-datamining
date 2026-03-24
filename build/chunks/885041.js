@@ -153,14 +153,20 @@ let ta = (0, g.z)(e => {
             deepLinkType: tn.XK.USER_SETTINGS,
             path: t.pathname,
             search: t.search,
-            paramsBuilder: function(e, t, n) {
-                let [, , i, a] = e.split("/");
+            paramsBuilder: function(e) {
+                let {
+                    path: t,
+                    fingerprint: n,
+                    search: i,
+                    installationId: a
+                } = e, [, , l, r] = t.split("/");
                 return {
-                    path: e,
-                    section: i,
-                    subsection: a,
-                    fingerprint: t,
-                    search: n
+                    path: t,
+                    section: l,
+                    subsection: r,
+                    fingerprint: n,
+                    installationId: a,
+                    search: i
                 }
             },
             children: (0, i.jsx)(r.rd, {
@@ -182,16 +188,21 @@ let ta = (0, g.z)(e => {
         }), (0, i.jsx)(m.A, {
             deepLinkType: tn.XK.PLAYGROUND,
             path: t.pathname,
-            paramsBuilder: function(e, t) {
+            paramsBuilder: function(e) {
                 let {
-                    collection: n,
-                    story: i
-                } = (0, eh.parsePlaygroundUrl)(e);
+                    path: t,
+                    fingerprint: n,
+                    installationId: i
+                } = e, {
+                    collection: a,
+                    story: l
+                } = (0, eh.parsePlaygroundUrl)(t);
                 return {
-                    path: e,
-                    collection: n,
-                    story: i,
-                    fingerprint: t
+                    path: t,
+                    collection: a,
+                    story: l,
+                    fingerprint: n,
+                    installationId: i
                 }
             },
             children: (0, i.jsx)(r.rd, {

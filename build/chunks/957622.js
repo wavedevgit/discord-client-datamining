@@ -79,16 +79,18 @@ function v(e) {
             }), v("app_launched")) : v("app_launch_not_supported")
         })
     }, []), C = s.useCallback(e => {
-        let t = _.default.getFingerprint() ?? _.default.getId();
+        let t = _.default.getFingerprint() ?? _.default.getId(),
+            i = _.default.getInstallationForTracking();
         Promise.resolve().then(n.bind(n, 129014)).then(n => {
             let {
-                default: i
+                default: s
             } = n;
-            i.request(A.e$_.DEEP_LINK, {
+            s.request(A.e$_.DEEP_LINK, {
                 type: x.XK.ONE_TIME_LOGIN,
                 params: {
                     token: e,
-                    fingerprint: t
+                    fingerprint: t,
+                    installationId: i
                 }
             }).then(n => {
                 n ? (p.default.track(A.HAw.DEEP_LINK_CLICKED, {
@@ -99,7 +101,7 @@ function v(e) {
                 }), v("app_launched")) : S(e)
             }).catch(() => {
                 S(e)
-            }).then(() => i.disconnect())
+            }).then(() => s.disconnect())
         })
     }, [S]);
     if (s.useEffect(() => {
