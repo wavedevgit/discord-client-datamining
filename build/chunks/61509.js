@@ -34,8 +34,8 @@ var i = n(627968),
     L = n(871123),
     P = n(510022),
     D = n(378058),
-    M = n(148355),
-    G = n(780964),
+    G = n(148355),
+    M = n(780964),
     k = n(12901),
     U = n(840065),
     w = n(202613),
@@ -483,7 +483,7 @@ class eg extends s.PureComponent {
                 children: (0, i.jsx)(g.$nd, {
                     variant: "primary",
                     text: ei.intl.string(ei.t["jcSP+g"]),
-                    onClick: () => (0, U.openUserSettings)(G.X.GIFT_PANEL)
+                    onClick: () => (0, U.openUserSettings)(M.X.GIFT_PANEL)
                 })
             })]
         }) : o ? null : (0, i.jsxs)(s.Fragment, {
@@ -653,7 +653,7 @@ class eg extends s.PureComponent {
         } else if (null != m)
             if (t = l.isGuildProductPurchase && l.isSoftDeletedProduct ? ei.intl.string(ei.t.O7uLmw) : m.name, null != d) {
                 let t = (0, D.Id)(d);
-                e = (0, i.jsx)(M.A, {
+                e = (0, i.jsx)(G.A, {
                     disableAnimation: !u,
                     isInteracting: u,
                     sticker: t,

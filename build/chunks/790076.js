@@ -7,7 +7,7 @@ n.d(t, {
     Gj: () => ey,
     Gk: () => eR,
     PP: () => eh,
-    VQ: () => eM,
+    VQ: () => eG,
     fE: () => ej,
     nR: () => eN,
     ze: () => eL
@@ -44,8 +44,8 @@ var i = n(627968),
     L = n(93465),
     P = n(206885),
     D = n(41984),
-    M = n(589051),
-    G = n(833551),
+    G = n(589051),
+    M = n(833551),
     k = n(515183),
     U = n(592598),
     w = n(395011),
@@ -207,7 +207,7 @@ function eN() {
     let {
         runningGame: e,
         runningGameApplication: t
-    } = (0, I.A)(), n = e?.pid, l = (0, _.bG)([G.default], () => null == e || null == n ? null : G.default.getTrackedGameByPid(n), [e, n], o()), {
+    } = (0, I.A)(), n = e?.pid, l = (0, _.bG)([M.default], () => null == e || null == n ? null : M.default.getTrackedGameByPid(n), [e, n], o()), {
         enabledLegacy: a,
         enabledOOP: r
     } = (0, _.cf)([Q.A, ee.A], () => null == e && null == l ? {
@@ -225,7 +225,7 @@ function eN() {
         {
             legacyEnabled: N,
             oopEnabled: j
-        } = (0, _.cf)([G.default], () => G.default.getGlobalEnabledStatus()),
+        } = (0, _.cf)([M.default], () => M.default.getGlobalEnabledStatus()),
         L = (t, n) => {
             if (null == e) return;
             let i = !1,
@@ -245,7 +245,7 @@ function eN() {
             }(i || s) && (0, V.L)(i ? R.OverlayToggledClientSettingType.LEGACY_GAME : R.OverlayToggledClientSettingType.OOP_GAME, e.id ?? null)
         },
         P = b && C,
-        M = !N && !j,
+        G = !N && !j,
         k = !c && !N && m && !b,
         U = !m && !j && c && !C,
         w = l?.overlayMethod === D.Ue.Disabled,
@@ -313,7 +313,7 @@ function eN() {
                     return [eg.intl.string(eg.t.OFC2aw), null];
                 case P:
                     return [eg.intl.string(eg.t.m7X4az), null];
-                case M:
+                case G:
                     return [eg.intl.string(eg.t["9DUS5l"]), null];
                 case W:
                     return [eg.intl.string(eg.t.nQ9EdJ), null];
@@ -507,7 +507,7 @@ function ej() {
     let [e, t] = s.useState(!1), {
         legacyEnabled: n,
         oopEnabled: l
-    } = (0, _.cf)([G.default], () => G.default.getGlobalEnabledStatus()), a = (0, _.yK)([v.Ay], () => v.Ay.getGamesSeen(!0)).filter(e => !(0, X.n1)(e)), r = (0, N.A)(a.map(e => e.id)), o = !(0, ed.supportsLegacy)(), d = e => {
+    } = (0, _.cf)([M.default], () => M.default.getGlobalEnabledStatus()), a = (0, _.yK)([v.Ay], () => v.Ay.getGamesSeen(!0)).filter(e => !(0, X.n1)(e)), r = (0, N.A)(a.map(e => e.id)), o = !(0, ed.supportsLegacy)(), d = e => {
         f.A.setEnabled(e, l);
         let t = v.Ay.getCurrentGameForAnalytics()?.id ?? null;
         (0, R.Q3)(e, R.OverlayToggledClientSettingType.LEGACY, t), !e && n && (0, V.L)(R.OverlayToggledClientSettingType.LEGACY, t)
@@ -578,7 +578,7 @@ function ey() {
     let [e, t] = s.useState(!1), {
         oopEnabled: n,
         legacyEnabled: l
-    } = (0, _.cf)([G.default], () => G.default.getGlobalEnabledStatus()), a = !(0, ed.supportsOutOfProcess)(), r = (0, _.yK)([v.Ay], () => v.Ay.getGamesSeen(!0)).filter(e => !(0, X.n1)(e)), o = (0, N.A)(r.map(e => e.id)), d = e => {
+    } = (0, _.cf)([M.default], () => M.default.getGlobalEnabledStatus()), a = !(0, ed.supportsOutOfProcess)(), r = (0, _.yK)([v.Ay], () => v.Ay.getGamesSeen(!0)).filter(e => !(0, X.n1)(e)), o = (0, N.A)(r.map(e => e.id)), d = e => {
         let t = !e && n;
         f.A.setEnabled(l, e);
         let i = v.Ay.getCurrentGameForAnalytics()?.id ?? null;
@@ -647,7 +647,7 @@ function ey() {
 }
 
 function eO() {
-    return (0, M.X4)(b.A.USER_SETTINGS) ? (0, i.jsx)(eE, {
+    return (0, G.X4)(b.A.USER_SETTINGS) ? (0, i.jsx)(eE, {
         title: eg.intl.string(eg.t["z4/l+V"]),
         description: eg.intl.string(eg.t["3aZq/0"]),
         action: (0, i.jsx)(A.Button, {
@@ -737,7 +737,7 @@ function eL(e) {
         usePredicate: () => {
             let {
                 showNowPlayingForDifferentGames: e
-            } = (0, M.M8)("OverlayV3NowPlayingDifferentGamesNotificationSetting"), t = (0, _.bG)([U.A], () => U.A.isNotificationDisabledBySetting(L.M.NOW_PLAYING));
+            } = (0, G.M8)("OverlayV3NowPlayingDifferentGamesNotificationSetting"), t = (0, _.bG)([U.A], () => U.A.isNotificationDisabledBySetting(L.M.NOW_PLAYING));
             return !!e && !t
         }
     }].filter(e => !1 !== e).filter(Boolean)
@@ -746,7 +746,7 @@ function eL(e) {
 function eP() {
     let {
         showNowPlayingForDifferentGames: e
-    } = (0, M.M8)("OverlayV3NowPlayingDifferentGamesNotificationSetting"), t = (0, _.bG)([U.A], () => U.A.getDisabledNotifications()), n = eL(e && !t.has(L.M.NOW_PLAYING));
+    } = (0, G.M8)("OverlayV3NowPlayingDifferentGamesNotificationSetting"), t = (0, _.bG)([U.A], () => U.A.getDisabledNotifications()), n = eL(e && !t.has(L.M.NOW_PLAYING));
     return (0, i.jsxs)("div", {
         className: eA.AO,
         children: [(0, i.jsx)(A.Heading, {
@@ -822,7 +822,7 @@ function eD(e) {
     }
 }
 
-function eM(e) {
+function eG(e) {
     let t, {
             isLegacySettings: n = !1
         } = e,
@@ -894,7 +894,7 @@ function eM(e) {
     })
 }
 
-function eG() {
+function eM() {
     let {
         avatarSizeMode: e,
         displayNameMode: t,
@@ -945,7 +945,7 @@ function eG() {
             value: t,
             selectionMode: "single",
             fullWidth: !0
-        }), (0, i.jsx)(eM, {
+        }), (0, i.jsx)(eG, {
             isLegacySettings: !0
         }), (0, i.jsx)(A.l6P, {
             label: eg.intl.string(eg.t.swsWWC),
@@ -1066,7 +1066,7 @@ function eU() {
             })]
         }), (0, i.jsxs)(A.D0$, {
             label: eg.intl.string(eg.t.r1TZfh),
-            children: [(0, i.jsx)(eG, {}), (0, i.jsx)("div", {
+            children: [(0, i.jsx)(eM, {}), (0, i.jsx)("div", {
                 className: eA.Ri
             })]
         }), (0, i.jsx)(eP, {})]

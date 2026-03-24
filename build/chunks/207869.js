@@ -1,6 +1,6 @@
 /** chunk id: 207869 params = (module,exports,require) **/
 n.d(t, {
-    f: () => M
+    f: () => P
 });
 var a = n(627968),
     i = n(64700),
@@ -24,9 +24,9 @@ var a = n(627968),
     A = n(545986),
     C = n(194267),
     T = n(963713),
-    E = n(758836),
+    y = n(758836),
     S = n(985018),
-    y = n(703653);
+    E = n(703653);
 
 function N(e) {
     let {
@@ -144,7 +144,7 @@ let I = e => {
             sourceQuestContent: m
         }), p = i.useCallback(e => {
             r?.(e), (0, _.ks)(t.config) && t.userStatus?.claimedAt != null ? (0, d.Cz)({
-                tab: E.G2.ORBS,
+                tab: y.G2.ORBS,
                 analyticsLocations: [],
                 analyticsSource: o.A.QUEST_HOME_PAGE
             }) : x()
@@ -194,15 +194,15 @@ let I = e => {
             quest: d,
             sourceQuestContent: t
         })), null == _ ? null : (0, a.jsx)("div", {
-            className: y.lO,
+            className: E.lO,
             children: _
         })
     };
 
-function M(e) {
+function P(e) {
     let t = i.useRef(null);
     return (0, a.jsxs)("div", {
-        className: y.oG,
+        className: E.oG,
         ref: t,
         children: [e.showBackButton && (0, a.jsx)(s.K0, {
             size: "sm",

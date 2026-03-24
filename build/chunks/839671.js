@@ -15,16 +15,16 @@ var a = n(627968),
     m = n(985018),
     x = n(851822),
     _ = n(307291);
-let g = [s.V.OFFICIAL, s.V.TWITTER, s.V.YOUTUBE],
-    f = {
+let f = [s.V.OFFICIAL, s.V.TWITTER, s.V.YOUTUBE],
+    g = {
         colorClass: _.wP
     },
-    p = {
+    h = {
         size: "xs",
         colorClass: _.wP
     };
 
-function h(e, t) {
+function p(e, t) {
     switch (e.category) {
         case s.V.OFFICIAL:
             return {
@@ -87,7 +87,7 @@ function v(e) {
         action: l,
         icon: i,
         title: r
-    } = h(t, f);
+    } = p(t, g);
     return (0, a.jsx)(o.m, {
         text: r,
         children: (0, a.jsx)(c.MzZ, {
@@ -112,7 +112,7 @@ let A = function(e) {
         let {
             category: t
         } = e;
-        return g.includes(t)
+        return f.includes(t)
     }).sort((e, t) => e.category - t.category);
     return 0 === l.length ? null : (0, a.jsxs)("div", {
         children: [(0, a.jsx)(c.Heading, {
@@ -138,7 +138,7 @@ function j(e) {
         action: r,
         icon: s,
         title: d
-    } = h(t, p), m = l.useCallback(() => {
+    } = p(t, h), m = l.useCallback(() => {
         n(r), i(t.url)
     }, [r, i, n, t.url]);
     return (0, a.jsx)(o.m, {

@@ -26,16 +26,17 @@ function I(e) {
         wishlist: n,
         hasFetchedWishlist: a = !1,
         analyticsLocations: m,
-        className: I
-    } = e, j = (0, u.GG)("social_layer_wishlist_recommendations_on_profile"), v = (n?.items.length ?? 0) > 0, [E, T] = l.useState(!1);
-    !a || v || E || T(!0);
-    let b = (0, o.bG)([x.A], () => null != n ? new Date(x.A.getWishlistSettings(t.id, n.id)?.updated_at ?? 0).valueOf() : 0),
-        [N, y] = (0, c.Wl)(d.M.USER_PROFILE_WISHLIST_RECOMMENDATIONS, {
-            showAfterTimestamp: b + A,
+        className: I,
+        applicationIds: j
+    } = e, v = (0, u.GG)("social_layer_wishlist_recommendations_on_profile"), E = (n?.items.length ?? 0) > 0, [T, b] = l.useState(!1);
+    !a || E || T || b(!0);
+    let N = (0, o.bG)([x.A], () => null != n ? new Date(x.A.getWishlistSettings(t.id, n.id)?.updated_at ?? 0).valueOf() : 0),
+        [y, S] = (0, c.Wl)(d.M.USER_PROFILE_WISHLIST_RECOMMENDATIONS, {
+            showAfterTimestamp: N + A,
             cooldownDurationMs: _
         }, void 0, !0),
-        S = N === d.M.USER_PROFILE_WISHLIST_RECOMMENDATIONS;
-    return a && (!v || S || E) ? (0, i.jsxs)("div", {
+        C = y === d.M.USER_PROFILE_WISHLIST_RECOMMENDATIONS;
+    return a && (!E || C || T) ? (0, i.jsxs)("div", {
         className: s()(h.kL, I),
         children: [(0, i.jsxs)("div", {
             className: h.wx,
@@ -43,21 +44,22 @@ function I(e) {
                 variant: "text-xs/normal",
                 color: "text-subtle",
                 children: f.intl.string(f.t["+GB8Kt"])
-            }), v && (0, i.jsx)(r.JnF, {
+            }), E && (0, i.jsx)(r.JnF, {
                 size: "xs",
                 onClick: () => {
-                    T(!1), y(p.i.USER_DISMISS)
+                    b(!1), S(p.i.USER_DISMISS)
                 }
             })]
         }), (0, i.jsx)(g.A, {
             userId: t.id,
+            applicationIds: j,
             wishlist: n,
             className: s()(h.Vg, {
-                [h.e6]: j
+                [h.e6]: v
             }),
             analyticsLocations: m,
             numWishlistItemsToRecommend: 15,
-            maxWishlistItemsToShow: j ? 8 : 6
+            maxWishlistItemsToShow: v ? 8 : 6
         })]
     }) : null
 }

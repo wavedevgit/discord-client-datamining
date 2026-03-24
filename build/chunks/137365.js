@@ -1,11 +1,11 @@
 /** chunk id: 137365 params = (module,exports,require) **/
 n.d(t, {
-    D7: () => E,
+    D7: () => y,
     Md: () => b,
     _S: () => T,
     a1: () => C,
     g_: () => S,
-    h2: () => y,
+    h2: () => E,
     it: () => A,
     pD: () => j
 }), n(321073);
@@ -157,7 +157,7 @@ function T() {
         f.info(`frecency score: ${o.A.getScoreWithoutFetchingLatest(e.record.id)}`), v()
     }), f.info("END Quick Switcher State\n")
 }
-async function E() {
+async function y() {
     f.info("START User Search Worker State");
     let e = await a.A.requestDebugState();
     null == e ? f.info("Unable to get debug state from User Search Worker") : (Object.entries(JSON.parse(e.users)).forEach(e => {
@@ -180,7 +180,7 @@ async function S() {
         i.has(e) || l.push(e)
     }), l
 }
-async function y(e) {
+async function E(e) {
     let t = await a.A.requestDebugState(),
         n = null != t ? JSON.parse(t.users)[e] : null,
         i = u.A.getGuildIds(),

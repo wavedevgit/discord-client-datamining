@@ -31,8 +31,8 @@ let N = s.memo(e => {
         dismissibleContentType: l,
         forceShadow: A,
         cardType: f
-    } = e, T = e?.onCtaClick, I = (0, d.bG)([u.A], () => u.A.useReducedMotion), [j, y] = s.useState(!1), [O, R] = s.useState(!1), L = f === h.cJ.CARD_CAROUSEL_FIRST_ROW || f === h.cJ.CARD_CAROUSEL_SECOND_ROW || f === h.cJ.CARD_CAROUSEL_THIRD_ROW, P = (0, p.A)(), [D, M] = (0, _.DP)(null != l && n ? [l] : []), {
-        easterEggLevel: G,
+    } = e, T = e?.onCtaClick, I = (0, d.bG)([u.A], () => u.A.useReducedMotion), [j, y] = s.useState(!1), [O, R] = s.useState(!1), L = f === h.cJ.CARD_CAROUSEL_FIRST_ROW || f === h.cJ.CARD_CAROUSEL_SECOND_ROW || f === h.cJ.CARD_CAROUSEL_THIRD_ROW, P = (0, p.A)(), [D, G] = (0, _.DP)(null != l && n ? [l] : []), {
+        easterEggLevel: M,
         isEasterEggTriggered: k,
         onHover: U,
         onUnhover: w
@@ -57,8 +57,8 @@ let N = s.memo(e => {
     return (s.useEffect(() => {
         I && j && (R(!0), g.default.track(E.HAw.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
             card_type: t
-        }), null != l && M(S.i.TAKE_ACTION))
-    }, [I, j, l, t, M]), (0, m.A)({
+        }), null != l && G(S.i.TAKE_ACTION))
+    }, [I, j, l, t, G]), (0, m.A)({
         type: o.ImpressionTypes.VIEW,
         name: o.ImpressionNames.PERK_DISCOVERABILITY_CARD,
         properties: {
@@ -78,7 +78,7 @@ let N = s.memo(e => {
                 className: a()(C.Ci, {
                     [C.BX]: !k,
                     [C.yg]: k,
-                    [C.Ud]: k && 3 === G,
+                    [C.Ud]: k && 3 === M,
                     [C.VN]: I
                 }),
                 children: [(0, i.jsx)("div", {
@@ -125,7 +125,7 @@ let N = s.memo(e => {
                 onTransitionEnd: e => {
                     j && "transform" === e.propertyName && e.target.classList.contains(C.Ci) && (R(!0), g.default.track(E.HAw.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
                         card_type: t
-                    }), null != l && M(S.i.TAKE_ACTION))
+                    }), null != l && G(S.i.TAKE_ACTION))
                 },
                 children: [(0, i.jsx)("div", {
                     className: C.UF,

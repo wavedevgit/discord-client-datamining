@@ -35,8 +35,8 @@ var i = n(627968),
     L = n(652215),
     P = n(842130),
     D = n(985018),
-    M = n(976744),
-    G = n(896498);
+    G = n(976744),
+    M = n(896498);
 
 function k() {
     let e = s.useCallback(() => {
@@ -50,12 +50,12 @@ function k() {
         })
     }, []);
     return (0, i.jsx)(u.DUT, {
-        className: M.YL,
+        className: G.YL,
         onClick: e,
         children: (0, i.jsx)(u.mir, {
             size: "custom",
             color: "currentColor",
-            className: M.Kk,
+            className: G.Kk,
             width: 15,
             height: 15
         })
@@ -105,11 +105,11 @@ function U(e) {
         }, [r, T.timestampFormatter]),
         y = s.useCallback(() => (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(u.Text, {
-                className: M.bV,
+                className: G.bV,
                 variant: "text-md/semibold",
                 children: I
             }), void 0 !== T.sectionDescription ? (0, i.jsx)(u.Text, {
-                className: M.yV,
+                className: G.yV,
                 variant: "text-md/medium",
                 color: "text-muted",
                 children: T.sectionDescription(l ?? !1)
@@ -118,9 +118,9 @@ function U(e) {
     if (0 === r.length) return null;
     let O = r.slice(0, E);
     return (0, i.jsxs)("div", {
-        className: M.A2,
+        className: G.A2,
         children: [y(), (0, i.jsx)("div", {
-            className: M.o1,
+            className: G.o1,
             style: {
                 maxHeight: 65 * O.length
             },
@@ -128,17 +128,17 @@ function U(e) {
                 row: t
             }))
         }), O.length < d ? (0, i.jsx)(u.DUT, {
-            className: a()(M.FQ, {
-                [M.r9]: x
+            className: a()(G.FQ, {
+                [G.r9]: x
             }),
             onClick: b,
             role: "button",
             "aria-disabled": x,
             children: x ? (0, i.jsx)(u.y$y, {
                 type: u.y$y.Type.PULSING_ELLIPSIS,
-                className: M.u1
+                className: G.u1
             }) : (0, i.jsx)(u.Text, {
-                className: M.UX,
+                className: G.UX,
                 variant: "text-sm/bold",
                 children: D.intl.format(P.default["7dMmJY"], {
                     pageSize: Math.max(1, Math.min(d - O.length, R.PH))
@@ -162,7 +162,7 @@ let w = () => {
             children: [e ? null : (0, i.jsx)(u.bMW, {
                 size: "xs",
                 color: "currentColor",
-                className: M.Kk
+                className: G.Kk
             }), (0, i.jsx)(u.Text, {
                 variant: "eyebrow",
                 children: n
@@ -177,12 +177,12 @@ let w = () => {
             hideUserTag: l = !1
         } = e, a = (0, E.F7)(t);
         return void 0 === a ? null : (0, i.jsxs)("div", {
-            className: M.iO,
+            className: G.iO,
             children: [(0, i.jsx)(I.H, {
                 user: a,
                 avatarSize: s
             }), (0, i.jsxs)("div", {
-                className: M.TK,
+                className: G.TK,
                 children: [(0, i.jsx)(j.A, {
                     user: a,
                     hideUserTag: l
@@ -210,7 +210,7 @@ let B = () => {
                 avatarSize: u._3J.SIZE_24
             }), []);
         return (0, i.jsx)(c.Pw, {
-            className: M.Lt,
+            className: G.Lt,
             renderOptionLabel: a,
             renderOptionValue: e => {
                 let [t] = e;
@@ -244,21 +244,21 @@ let B = () => {
             n = (0, A.jp)(),
             s = (0, S.v4)(n);
         return (0, i.jsxs)("div", {
-            className: M.kL,
+            className: G.kL,
             children: [(0, i.jsxs)("div", {
-                className: M.vF,
+                className: G.vF,
                 children: [(0, i.jsx)(w, {}), (0, i.jsx)(k, {})]
             }), (0, i.jsxs)("div", {
-                className: G.a,
+                className: M.a,
                 children: [(0, i.jsx)("div", {
-                    className: M.wx,
+                    className: G.wx,
                     children: (0, i.jsx)(F, {})
                 }), (0, i.jsxs)(u.BJc, {
                     gap: 32,
                     padding: 32,
                     fullWidth: !1,
                     children: [(0, i.jsx)("div", {
-                        className: M.O2,
+                        className: G.O2,
                         children: e.map(e => {
                             let [t, n] = e;
                             return (0, i.jsx)(b.A, {
@@ -267,14 +267,14 @@ let B = () => {
                             }, `counter-${t}`)
                         })
                     }), (0, i.jsxs)("div", {
-                        className: M.RJ,
+                        className: G.RJ,
                         children: [(0, i.jsx)(O.A, {}), t ? e.map(e => {
                             let [t] = e;
                             return (0, i.jsx)(U, {
                                 displayType: t
                             }, `${t}-list`)
                         }) : (0, i.jsx)(y.A, {
-                            className: M.RL,
+                            className: G.RL,
                             text: s ?? ""
                         })]
                     })]

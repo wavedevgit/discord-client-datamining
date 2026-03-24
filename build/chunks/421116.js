@@ -34,8 +34,8 @@ var i = n(627968),
     L = n(23003),
     P = n(16019),
     D = n(768229),
-    M = n(788868),
-    G = n(652215),
+    G = n(788868),
+    M = n(652215),
     k = n(818348),
     U = n(511030);
 let w = () => {
@@ -54,7 +54,7 @@ let w = () => {
         q = (0, o.bG)([h.A], () => h.A.getPremiumTypeSubscription()),
         J = null != q ? (0, T.EL)(q) : null,
         Q = null != J ? T.Ay.getSkuIdForPlan(J.planId) : null,
-        $ = null !== Q && Q !== M.pe.TIER_2 ? M.pe.TIER_2 : null,
+        $ = null !== Q && Q !== G.pe.TIER_2 ? G.pe.TIER_2 : null,
         ee = (0, E.cg)(),
         {
             analyticsLocations: et
@@ -142,7 +142,7 @@ let w = () => {
             }), (0, i.jsx)(d.L, {
                 innerRef: w,
                 onChange: e => {
-                    e && !X && (f.default.track(G.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                    e && !X && (f.default.track(M.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                         location_stack: et
                     }), W(!0))
                 },

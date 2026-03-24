@@ -2,8 +2,8 @@
 n.d(t, {
     DB: () => N,
     ZL: () => S,
-    ln: () => y,
-    t0: () => E
+    ln: () => E,
+    t0: () => y
 });
 var a = n(64700),
     i = n(873298),
@@ -30,7 +30,7 @@ let A = [v.NJ8.DARK, v.NJ8.LIGHT, v.NJ8.DARKER, v.NJ8.MIDNIGHT],
 function T(e) {
     return e[Math.floor(Math.random() * e.length)]
 }
-async function E() {
+async function y() {
     let e, t = (e = _.default.getCurrentUser(), f.Ay.canUseClientThemes(e) ? Object.keys(b.ag).map(e => Number(e)) : []),
         n = t.length > 0 && Math.random() > .7;
     try {
@@ -71,7 +71,7 @@ async function S() {
     } catch (e) {}
 }
 
-function y() {
+function E() {
     try {
         let e = T(v.hH7.FONT_SIZES);
         (0, r.XS)(e);
@@ -96,7 +96,7 @@ function N() {
             A = null != b ? a.find(e => e.skuId === b) ?? null : null,
             C = null != j ? i.find(e => e.skuId === j) ?? null : null,
             T = o.A.fontSize,
-            E = o.A.messageGroupSpacing,
+            y = o.A.messageGroupSpacing,
             S = p.Xi.getSetting();
         return () => {
             try {
@@ -110,7 +110,7 @@ function N() {
                 });
                 let e = h.A.getPendingChanges(),
                     t = (0, u.Sk)(e);
-                (0, s._L)(t).finally(s.pZ), (0, r.XS)(T), (0, r.AC)(E), p.Xi.updateSetting(S)
+                (0, s._L)(t).finally(s.pZ), (0, r.XS)(T), (0, r.AC)(y), p.Xi.updateSetting(S)
             } catch (e) {}
         }
     }, [])

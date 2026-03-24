@@ -1,6 +1,6 @@
 /** chunk id: 103748 params = (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => E
 }), n(321073), n(323874), n(14289), n(35956);
 var a = n(627968),
     i = n(64700),
@@ -28,7 +28,7 @@ let A = {
     },
     C = "debug",
     T = "reduced-motion-preview-modal",
-    E = e => {
+    y = e => {
         let {
             transitionState: t,
             onClose: n,
@@ -99,7 +99,7 @@ let A = {
             }), r ? (0, a.jsx)(c.DUT, {
                 className: l()(v.zd, v.eB),
                 onClick: () => {
-                    (0, c.kBI)(T) ? (0, c.OoC)(T) : (0, c.mMO)(() => Promise.resolve(e => (0, a.jsx)(E, {
+                    (0, c.kBI)(T) ? (0, c.OoC)(T) : (0, c.mMO)(() => Promise.resolve(e => (0, a.jsx)(y, {
                         ...e,
                         frameSrc: n?.src ?? null,
                         theme: i
@@ -120,12 +120,12 @@ let A = {
             })]
         })
     },
-    y = e => {
+    E = e => {
         let {
             effect: t
         } = e, {
             upsertConfig: n
-        } = (0, g.wu)(), s = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [d, j] = i.useState(!0), T = i.useRef({}), [E, y] = i.useState(!1), [N, I] = i.useState(!1), [O, R] = i.useState(8), [k, w] = i.useState([]), [D, M] = i.useState(A), P = i.useRef([]), [L, U] = i.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), G = i.useMemo(() => ({
+        } = (0, g.wu)(), s = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [d, j] = i.useState(!0), T = i.useRef({}), [y, E] = i.useState(!1), [N, I] = i.useState(!1), [O, R] = i.useState(8), [k, w] = i.useState([]), [D, P] = i.useState(A), M = i.useRef([]), [L, U] = i.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), G = i.useMemo(() => ({
             id: C,
             skuId: C,
             title: C,
@@ -135,13 +135,13 @@ let A = {
             thumbnailPreviewSrc: "",
             effects: k,
             animationType: r.l.ANIMATION_TYPE_UNSPECIFIED
-        }), [k]), F = E ? c.LU0.themes.DARKER : c.LU0.themes.LIGHT, V = e => {
+        }), [k]), F = y ? c.LU0.themes.DARKER : c.LU0.themes.LIGHT, V = e => {
             let t = e.currentTarget.files;
             return null == t ? null : t[0]
-        }, H = (e, t) => {
+        }, W = (e, t) => {
             let n = V(t);
             null != n && (0, _.Mz)(n, t => {
-                M(a => ({
+                P(a => ({
                     ...a,
                     [e]: (0, _.GT)(t, n)
                 }))
@@ -155,13 +155,13 @@ let A = {
             null != e && Object.entries(e).forEach(e => {
                 let [t, n] = e;
                 if (null != n) {
-                    if ("" !== n.src && null != n.src && ("" === n.base64 || null == n.base64)) M(e => ({
+                    if ("" !== n.src && null != n.src && ("" === n.base64 || null == n.base64)) P(e => ({
                         ...e,
                         [t]: n
                     }));
                     else if ("" !== n.base64 && null != n.base64) {
                         let e = (0, _.fB)(n.base64);
-                        n.src = e, P.current.push(e), M(e => ({
+                        n.src = e, M.current.push(e), P(e => ({
                             ...e,
                             [t]: n
                         }))
@@ -169,13 +169,13 @@ let A = {
                 }
             })
         }, [t.config.stillFrames]);
-        let W = {
+        let H = {
                 effect: t,
                 upsertConfig: n
             },
-            K = i.useRef(W);
+            K = i.useRef(H);
         return (i.useEffect(() => {
-            K.current = W
+            K.current = H
         }), i.useEffect(() => {
             let {
                 effect: e,
@@ -190,9 +190,9 @@ let A = {
                 }
             })
         }, [k, D, L]), i.useEffect(() => () => {
-            P.current.forEach(e => {
+            M.current.forEach(e => {
                 URL.revokeObjectURL(e)
-            }), P.current = []
+            }), M.current = []
         }, []), null == s) ? (0, a.jsx)("div", {}) : (0, a.jsxs)("div", {
             className: v.zr,
             children: [(0, a.jsxs)("div", {
@@ -215,19 +215,19 @@ let A = {
                     ref: e => {
                         T.current.thumbnail = e
                     },
-                    onChange: e => H(_.qH.THUMBNAIL, e),
+                    onChange: e => W(_.qH.THUMBNAIL, e),
                     multiple: !1
                 }), (0, a.jsx)(m.A, {
                     ref: e => {
                         T.current.static = e
                     },
-                    onChange: e => H(_.qH.STATIC, e),
+                    onChange: e => W(_.qH.STATIC, e),
                     multiple: !1
                 }), (0, a.jsx)(m.A, {
                     ref: e => {
                         T.current.reducedMotion = e
                     },
-                    onChange: e => H(_.qH.REDUCED_MOTION, e),
+                    onChange: e => W(_.qH.REDUCED_MOTION, e),
                     multiple: !1
                 })]
             }), (0, a.jsxs)("div", {
@@ -252,10 +252,10 @@ let A = {
                         children: "Dark Theme"
                     }), (0, a.jsx)("input", {
                         type: "checkbox",
-                        checked: E,
+                        checked: y,
                         className: v.OO,
                         onChange: () => {
-                            y(!E)
+                            E(!y)
                         }
                     }), (0, a.jsx)(c.Text, {
                         variant: "text-md/normal",
@@ -423,7 +423,7 @@ let A = {
                                     frame: n,
                                     theme: F,
                                     onClear: () => {
-                                        M(e => ({
+                                        P(e => ({
                                             ...e,
                                             [t]: null
                                         }))
@@ -456,7 +456,7 @@ let A = {
                             variant: "critical-secondary",
                             text: "Clear Assets",
                             onClick: () => {
-                                w([]), M(A)
+                                w([]), P(A)
                             }
                         })
                     }), k.map((e, t) => (0, a.jsxs)("div", {

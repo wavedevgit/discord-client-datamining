@@ -19,13 +19,13 @@ let _ = function(e) {
     } = e, {
         reviews: n,
         applicationId: _
-    } = t, g = n?.steam ?? {
+    } = t, f = n?.steam ?? {
         rating: void 0,
         ratingCount: void 0
-    }, f = (0, u.I)(_), p = (0, d.A)(), h = (0, o.j)(g.rating, g.ratingCount), v = (0, c.y)(h), A = l.useCallback(() => {
-        p(f)
-    }, [p, f]);
-    return null == f ? null : (0, a.jsxs)("div", {
+    }, g = (0, u.I)(_), h = (0, d.A)(), p = (0, o.j)(f.rating, f.ratingCount), v = (0, c.y)(p), A = l.useCallback(() => {
+        h(g)
+    }, [h, g]);
+    return null == g ? null : (0, a.jsxs)("div", {
         className: x.uW,
         children: [(0, a.jsx)("div", {
             className: x.Gf,
@@ -56,21 +56,21 @@ let _ = function(e) {
                                 children: m.intl.string(m.t.whmopT)
                             })]
                         }), (0, a.jsx)(i.m, {
-                            text: h === s.vI.NO_USER_REVIEWS ? m.intl.string(m.t.CLMt8J) : m.intl.format(m.t["lzANJ/"], {
-                                rating: g.rating,
-                                rating_count: g.ratingCount?.toLocaleString()
+                            text: p === s.vI.NO_USER_REVIEWS ? m.intl.string(m.t.CLMt8J) : m.intl.format(m.t["lzANJ/"], {
+                                rating: f.rating,
+                                rating_count: f.ratingCount?.toLocaleString()
                             }).toString(),
                             children: (0, a.jsxs)("div", {
                                 className: x.Z0,
                                 children: [(0, a.jsx)(r.Text, {
                                     variant: "text-xs/medium",
                                     color: v,
-                                    children: (0, c.a)(h)
-                                }), null != g.ratingCount && h !== s.vI.NO_USER_REVIEWS && (0, a.jsx)(r.Text, {
+                                    children: (0, c.a)(p)
+                                }), null != f.ratingCount && p !== s.vI.NO_USER_REVIEWS && (0, a.jsx)(r.Text, {
                                     variant: "text-xs/medium",
                                     color: "text-subtle",
                                     children: m.intl.format(m.t.sgIoin, {
-                                        rating_count: g.ratingCount?.toLocaleString()
+                                        rating_count: f.ratingCount?.toLocaleString()
                                     }).toString()
                                 })]
                             })

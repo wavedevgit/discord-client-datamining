@@ -34,8 +34,8 @@ var i = n(627968),
     L = n(954571),
     P = n(975571),
     D = n(927578),
-    M = n(637073),
-    G = n(887997),
+    G = n(637073),
+    M = n(887997),
     k = n(177653),
     U = n(159906),
     w = n(758400),
@@ -108,7 +108,7 @@ let q = function() {
         J = (0, A.A)({
             forceFetch: !0
         }),
-        Q = (0, M.d)(),
+        Q = (0, G.d)(),
         $ = null !== t ? t.currentPeriodEnd : void 0,
         ee = !(Q && !(J.unactivatedUnits.length > 0)) && (J.fractionalState !== B.xc.NONE || J.unactivatedUnits.length > 0);
     return (s.useEffect(() => (d.h.wait(() => {
@@ -143,7 +143,7 @@ let q = function() {
                     children: z.intl.format(z.t["7Zi06b"], {
                         helpCenterLink: P.A.getArticleURL(F.MVz.FRACTIONAL_PREMIUM_ABOUT)
                     })
-                }), (0, i.jsx)(G.A, {
+                }), (0, i.jsx)(M.A, {
                     className: Y.fX,
                     fractionalPremiumInfo: J,
                     activationDate: $,

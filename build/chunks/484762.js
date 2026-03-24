@@ -24,9 +24,9 @@ var a = n(627968),
     A = n(41984),
     C = n(181435),
     T = n(435736),
-    E = n(833551),
+    y = n(833551),
     S = n(515183),
-    y = n(395011),
+    E = n(395011),
     N = n(127242),
     I = n(869014),
     O = n(379078),
@@ -34,16 +34,16 @@ var a = n(627968),
     k = n(528772),
     w = n(555528),
     D = n(157257),
-    M = n(532624),
-    P = n(242286),
+    P = n(532624),
+    M = n(242286),
     L = n(957565),
     U = n(405269),
     B = n(927813),
     G = n(996439),
     F = n(350535),
     V = n(9302),
-    H = n(708403),
-    W = n(260880),
+    W = n(708403),
+    H = n(260880),
     K = n(303054),
     z = n(231643),
     $ = n(652215),
@@ -212,7 +212,7 @@ let et = i.memo(function(e) {
     en = i.memo(function(e) {
         let {
             pid: t
-        } = e, n = (0, c.cf)([P.default], () => P.default.getOverlayPIDStatuses()), i = (0, c.cf)([E.default], () => E.default.getTrackedGames()), s = (0, c.bG)([P.default], () => P.default.isInputLocked(t), [t]), l = (0, c.bG)([P.default], () => P.default.DEV_isInputLockedV3(t), [t]), r = (0, c.bG)([P.default], () => P.default.DEV_isInputLocked(t), [t]), o = (0, c.bG)([P.default], () => P.default.isReady(t), [t]);
+        } = e, n = (0, c.cf)([M.default], () => M.default.getOverlayPIDStatuses()), i = (0, c.cf)([y.default], () => y.default.getTrackedGames()), s = (0, c.bG)([M.default], () => M.default.isInputLocked(t), [t]), l = (0, c.bG)([M.default], () => M.default.DEV_isInputLockedV3(t), [t]), r = (0, c.bG)([M.default], () => M.default.DEV_isInputLocked(t), [t]), o = (0, c.bG)([M.default], () => M.default.isReady(t), [t]);
         return (0, a.jsxs)("div", {
             className: Q.st,
             children: [(0, a.jsx)(h.Text, {
@@ -291,9 +291,9 @@ let es = i.memo(function(e) {
     let {
         pid: t,
         ...n
-    } = e, i = (0, c.bG)([E.default], () => {
+    } = e, i = (0, c.bG)([y.default], () => {
         if (null == t) return "Unknown";
-        let e = E.default.getTrackedGameByPid(t)?.gameName;
+        let e = y.default.getTrackedGameByPid(t)?.gameName;
         return null != e ? (Z[t] = e, e) : Z[t] ?? "Unknown"
     }, [t]);
     return (0, a.jsx)(h.Text, {
@@ -306,7 +306,7 @@ let es = i.memo(function(e) {
 
 function el() {
     let e = (0, c.bG)([N.A], () => N.A.hasRenderDebugMode(A.x7.TrackFocusPIDs)),
-        t = (0, c.yK)([E.default], () => E.default.getDevToolsFocusedPidsWithTimestamp());
+        t = (0, c.yK)([y.default], () => y.default.getDevToolsFocusedPidsWithTimestamp());
     return (0, a.jsxs)("div", {
         className: Q.st,
         children: [(0, a.jsxs)("div", {
@@ -354,9 +354,9 @@ function el() {
 let er = i.memo(function(e) {
         let {
             pid: t
-        } = e, n = (0, c.bG)([E.default, b.Ay], () => {
+        } = e, n = (0, c.bG)([y.default, b.Ay], () => {
             if (null == t) return null;
-            let e = E.default.getTrackedGameByPid(t)?.fullscreenType;
+            let e = y.default.getTrackedGameByPid(t)?.fullscreenType;
             if (null != e) return e;
             let n = b.Ay.getGameOrTransformedSubgameForPID(t);
             return n?.fullscreenType ?? _.aI.UNKNOWN
@@ -369,7 +369,7 @@ let er = i.memo(function(e) {
         })
     }),
     eo = i.memo(function() {
-        let e = (0, c.cf)([E.default], () => E.default.getTrackedGames()),
+        let e = (0, c.cf)([y.default], () => y.default.getTrackedGames()),
             [t, n] = i.useState({}),
             s = i.useRef(null);
         return i.useEffect(() => (s.current = setInterval(async () => {
@@ -424,12 +424,12 @@ let er = i.memo(function(e) {
         })
     }),
     ed = i.memo(function() {
-        let e = (0, c.cf)([E.default], () => E.default.getTrackedGames()),
+        let e = (0, c.cf)([y.default], () => y.default.getTrackedGames()),
             t = (0, V.getPID)(),
-            n = (0, c.bG)([E.default], () => E.default.isOverlayOOPEnabledForPid(t), [t]),
+            n = (0, c.bG)([y.default], () => y.default.isOverlayOOPEnabledForPid(t), [t]),
             [i, s] = (0, c.yK)([k.A], () => [k.A.enabled, k.A.keepOpen]),
-            l = (0, c.bG)([P.default], () => P.default.getFocusedPID()),
-            r = (0, c.bG)([P.default], () => P.default.isFocusedPidOutOfProcess());
+            l = (0, c.bG)([M.default], () => M.default.getFocusedPID()),
+            r = (0, c.bG)([M.default], () => M.default.isFocusedPidOutOfProcess());
         return (0, a.jsxs)("div", {
             className: Q.st,
             children: [0 === Object.keys(e).length && (0, a.jsx)(h.Text, {
@@ -524,7 +524,7 @@ let er = i.memo(function(e) {
         })
     }),
     em = i.memo(function() {
-        let e = (0, c.cf)([E.default], () => E.default.getTrackedGames()),
+        let e = (0, c.cf)([y.default], () => y.default.getTrackedGames()),
             t = (0, c.bG)([b.Ay], () => b.Ay.getRunningGames()).filter(t => null == e[t.pid]);
         return (0, a.jsxs)(a.Fragment, {
             children: [t.length > 0 && (0, a.jsx)(u.m_, {
@@ -567,7 +567,7 @@ let er = i.memo(function(e) {
         })
     }),
     eh = i.memo(function() {
-        let e = (0, c.bG)([E.default], () => E.default.getForcedRenderMode()),
+        let e = (0, c.bG)([y.default], () => y.default.getForcedRenderMode()),
             [t, n] = i.useState(e),
             s = [{
                 label: A.V6.UNSET,
@@ -832,9 +832,9 @@ let eb = ["__webpack_require__", "fn"],
                         tooltip: "Close",
                         onClick: n
                     })]
-                }), (0, a.jsxs)(H.OA, {
+                }), (0, a.jsxs)(W.OA, {
                     className: Q.ZK,
-                    children: [(0, a.jsx)(H.mA, {
+                    children: [(0, a.jsx)(W.mA, {
                         name: "Timestamp",
                         copyValue: p.toISOString(),
                         children: (0, a.jsx)("time", {
@@ -842,31 +842,31 @@ let eb = ["__webpack_require__", "fn"],
                             title: (0, U.i$)(p, "LLLL"),
                             children: (0, U.i$)(p, "L h:mm:ss.SSS")
                         })
-                    }), (0, a.jsx)(H.mA, {
+                    }), (0, a.jsx)(W.mA, {
                         name: "Log Type",
                         copyValue: r,
                         children: (0, a.jsx)("code", {
                             children: r
                         })
-                    }), (0, a.jsx)(H.mA, {
+                    }), (0, a.jsx)(W.mA, {
                         name: "PID",
                         copyValue: x?.toString() ?? "null",
                         children: (0, a.jsx)("code", {
                             children: x?.toString() ?? "null"
                         })
-                    }), (0, a.jsx)(H.mA, {
+                    }), (0, a.jsx)(W.mA, {
                         name: "Native ID",
                         copyValue: d?.toString() ?? "null",
                         children: (0, a.jsx)("code", {
                             children: d?.toString() ?? "null"
                         })
-                    }), (0, a.jsx)(H.mA, {
+                    }), (0, a.jsx)(W.mA, {
                         name: "Data",
                         copyValue: ev(u),
                         children: (0, a.jsx)("code", {
                             children: ev(u)
                         })
-                    }), null != c && (0, a.jsx)(H.mA, {
+                    }), null != c && (0, a.jsx)(W.mA, {
                         name: "Stack Trace",
                         copyValue: c,
                         children: (0, a.jsx)("code", {
@@ -919,7 +919,7 @@ function eT() {
     i.useEffect(() => {
         0 !== C && (o ? m(A.reduce((e, t) => "game_tracking_starting" === t.name ? Math.max(e, t.timestamp) : e, 0)) : m(null))
     }, [o, A, C]);
-    let [T, E] = i.useState(""), S = i.useMemo(() => 0 === C ? [] : A.filter(e => {
+    let [T, y] = i.useState(""), S = i.useMemo(() => 0 === C ? [] : A.filter(e => {
         if (o && null != u && e.timestamp < u) return !1;
         for (let t of x) {
             let {
@@ -928,15 +928,15 @@ function eT() {
             if (n(e)) return !0
         }
         return !1
-    }), [A, x, u, o, C]), [y, I] = i.useState(S), [O, k] = i.useState(null), w = i.useMemo(() => A.find(e => e.key === O), [A, O]), D = i.useCallback(e => {
+    }), [A, x, u, o, C]), [E, I] = i.useState(S), [O, k] = i.useState(null), w = i.useMemo(() => A.find(e => e.key === O), [A, O]), D = i.useCallback(e => {
         I(e)
     }, []), {
-        renderSelectedTab: M
+        renderSelectedTab: P
     } = (0, z.Ay)({
         tabs: eA
     }, []);
     (0, R.RT)(T, S, D, eC, [A]);
-    let P = i.useCallback(e => {
+    let M = i.useCallback(e => {
             r(e), g.A.setModuleLogging(e)
         }, []),
         [U, B] = i.useState(!1),
@@ -951,7 +951,7 @@ function eT() {
             null != F.current && clearTimeout(F.current)
         }
     }, [U]);
-    let H = i.useCallback(e => {
+    let W = i.useCallback(e => {
             j(null != e ? JSON.parse(e) : null)
         }, []),
         $ = i.useCallback(e => {
@@ -959,12 +959,12 @@ function eT() {
             (0, h.qfG)(e => (0, a.jsx)(ex, {
                 modalProps: e,
                 onClose: t => {
-                    H(t), e.onClose()
+                    W(t), e.onClose()
                 }
             }), {
                 modalKey: "breadcrumb-import-panel"
             }, h.SYi)
-        }, [H]);
+        }, [W]);
     return (0, a.jsxs)("div", {
         ref: e,
         className: Q.rh,
@@ -978,7 +978,7 @@ function eT() {
                     children: (0, a.jsx)(h.Checkbox, {
                         label: "Poll Native",
                         checked: s,
-                        onChange: e => P(e)
+                        onChange: e => M(e)
                     })
                 }), (0, a.jsx)("div", {
                     title: "Only show breadcrumbs for active games",
@@ -1031,8 +1031,8 @@ function eT() {
                 className: Q._V,
                 children: (0, a.jsx)(h.IWV, {
                     query: T,
-                    onChange: E,
-                    onClear: () => E(""),
+                    onChange: y,
+                    onClear: () => y(""),
                     placeholder: "Regex search by breadcrumb name and data"
                 })
             })]
@@ -1040,23 +1040,23 @@ function eT() {
             className: l()(Q.st, Q.CZ),
             children: (0, a.jsx)(K.A, {
                 columns: e_,
-                data: y,
+                data: E,
                 selectedRowKey: O ?? void 0,
                 onClickRow: e => k(e.key)
             })
-        }), null != w && (0, a.jsx)(W.A, {
+        }), null != w && (0, a.jsx)(H.A, {
             className: l()(Q.st, Q.rf),
             minHeight: 100,
             initialHeight: null != t ? t / 3 : 300,
-            children: M({
+            children: P({
                 breadcrumb: w,
                 onClose: () => k(null)
             })
         })]
     })
 }
-let eE = i.memo(function() {
-        let e = (0, c.bG)([y.A], () => y.A.getPopoutInitializationStages());
+let ey = i.memo(function() {
+        let e = (0, c.bG)([E.A], () => E.A.getPopoutInitializationStages());
         return (0, a.jsxs)("div", {
             className: Q.st,
             children: [(0, a.jsx)("div", {
@@ -1099,11 +1099,11 @@ let eE = i.memo(function() {
         })
     });
 
-function ey() {
+function eE() {
     return (0, a.jsx)(h.ArX, {
         children: (0, a.jsxs)("div", {
             className: l()(J.nd, Q.rf),
-            children: [(0, a.jsx)(eu, {}), (0, a.jsx)(eh, {}), (0, a.jsx)(em, {}), (0, a.jsx)(ed, {}), (0, a.jsx)(el, {}), (0, a.jsx)(eo, {}), (0, a.jsx)(eE, {}), (0, a.jsx)(eS, {})]
+            children: [(0, a.jsx)(eu, {}), (0, a.jsx)(eh, {}), (0, a.jsx)(em, {}), (0, a.jsx)(ed, {}), (0, a.jsx)(el, {}), (0, a.jsx)(eo, {}), (0, a.jsx)(ey, {}), (0, a.jsx)(eS, {})]
         })
     })
 }
@@ -1120,7 +1120,7 @@ let eN = e => {
     eI = e => null == e ? "Disabled" : e ? "True" : "False",
     eO = i.memo(function() {
         let e = (0, T.wW)(),
-            t = (0, c.bG)([M.Ay], () => M.Ay.getOverlayKeybind());
+            t = (0, c.bG)([P.Ay], () => P.Ay.getOverlayKeybind());
         return (0, a.jsxs)("div", {
             className: Q.st,
             children: [(0, a.jsx)(h.Heading, {
@@ -1248,6 +1248,6 @@ function ek() {
                     children: "Experiments"
                 })
             })]
-        }), "state" === e && (0, a.jsx)(ey, {}), "logging" === e && (0, a.jsx)(eT, {}), "experiments" === e && (0, a.jsx)(eR, {})]
+        }), "state" === e && (0, a.jsx)(eE, {}), "logging" === e && (0, a.jsx)(eT, {}), "experiments" === e && (0, a.jsx)(eR, {})]
     })
 }

@@ -1,6 +1,6 @@
 /** chunk id: 374058 params = (module,exports,require) **/
 n.d(t, {
-    A: () => M
+    A: () => P
 });
 var a = n(627968),
     i = n(64700),
@@ -24,9 +24,9 @@ var a = n(627968),
     A = n(260880),
     C = n(303054),
     T = n(231643),
-    E = n(985018),
+    y = n(985018),
     S = n(76584),
-    y = n(661251);
+    E = n(661251);
 let N = [{
     key: "event",
     cellClassName: S.Hz,
@@ -110,7 +110,7 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
             return (0, a.jsxs)("div", {
                 "data-mtctest-ignore": "true",
                 children: [(0, a.jsxs)(h.Ay, {
-                    className: l()(y.jr, S.nZ),
+                    className: l()(E.jr, S.nZ),
                     children: [(0, a.jsx)(h.Ay.Icon, {
                         icon: u.Uy2,
                         tooltip: t
@@ -249,7 +249,7 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
         throttleMs: 100
     };
 
-function M() {
+function P() {
     let e = i.useRef(null),
         [t, n] = i.useState(""),
         s = (0, d.bG)([v.A], () => v.A.loggedEventsVersion),
@@ -274,7 +274,7 @@ function M() {
         }, []);
     return (0, a.jsxs)("div", {
         ref: e,
-        className: l()(y.nd, S.nd),
+        className: l()(E.nd, S.nd),
         children: [(0, a.jsxs)("div", {
             className: S.rh,
             children: [(0, a.jsx)(c.$n, {
@@ -283,11 +283,11 @@ function M() {
                 size: c.$n.Sizes.ICON,
                 onClick: b.eY,
                 children: (0, a.jsx)("span", {
-                    title: E.intl.string(E.t.VkKicb),
+                    title: y.intl.string(y.t.VkKicb),
                     children: (0, a.jsx)(u.ucK, {
                         size: "md",
                         color: "currentColor",
-                        "aria-label": E.intl.string(E.t.VkKicb)
+                        "aria-label": y.intl.string(y.t.VkKicb)
                     })
                 })
             }), (0, a.jsx)("div", {

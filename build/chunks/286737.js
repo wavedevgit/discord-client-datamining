@@ -20,19 +20,19 @@ function _(e) {
     } = e, {
         fetchedAuthorization: n,
         hasAlreadyLinked: _,
-        canStartAuthorization: g,
-        startAuthorization: f,
-        connectionApp: p,
-        officialInvite: h
+        canStartAuthorization: f,
+        startAuthorization: g,
+        connectionApp: h,
+        officialInvite: p
     } = (0, u.c)(), v = (0, i.bG)([o.default], () => o.default.getCurrentUser()), A = l.useCallback(() => {
-        t(d.Ws.LinkAccount), f({
+        t(d.Ws.LinkAccount), g({
             analyticsLocations: ["game_profile"]
         })
-    }, [t, f]);
-    if (!n || null == p || !g || _ || null == v) return null;
-    let j = h?.guild != null ? c.Ay.getGuildSplashURL({
-        id: h.guild.id,
-        splash: h.guild.splash
+    }, [t, g]);
+    if (!n || null == h || !f || _ || null == v) return null;
+    let j = p?.guild != null ? c.Ay.getGuildSplashURL({
+        id: p.guild.id,
+        splash: p.guild.splash
     }) : null;
     return (0, a.jsxs)("div", {
         className: x.uW,
@@ -50,7 +50,7 @@ function _(e) {
             }) : (0, a.jsx)("div", {
                 className: x.sB,
                 children: (0, a.jsx)(s.default, {
-                    application: p
+                    application: h
                 })
             }), (0, a.jsxs)("div", {
                 className: x.hQ,
@@ -60,7 +60,7 @@ function _(e) {
                         variant: "heading-md/semibold",
                         color: "text-default",
                         children: m.intl.formatToPlainString(m.t.hUbQT2, {
-                            gameName: p.name
+                            gameName: h.name
                         })
                     }), (0, a.jsx)(r.Text, {
                         variant: "text-sm/medium",

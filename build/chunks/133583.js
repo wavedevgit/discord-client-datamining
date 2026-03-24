@@ -335,6 +335,7 @@ function B(e) {
         }), B && (0, i.jsx)(k.A, {
             user: t,
             wishlist: y,
+            applicationIds: O,
             hasFetchedWishlist: w,
             analyticsLocations: m,
             className: K ? G._E : G.HZ

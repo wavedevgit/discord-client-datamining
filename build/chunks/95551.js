@@ -45,11 +45,11 @@ function u(e) {
             right: -8,
             bottom: -8
         }
-    }, E = i.useCallback(() => {
+    }, y = i.useCallback(() => {
         v(!0)
     }, []), S = i.useCallback(() => {
         v(!1)
-    }, []), y = () => (0, a.jsxs)(a.Fragment, {
+    }, []), E = () => (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)("div", {
             className: d.iA,
             children: (0, a.jsx)(c, {
@@ -83,12 +83,12 @@ function u(e) {
                         right: 0
                     }
                 },
-                children: y()
+                children: E()
             }), (0, a.jsx)(l.DUT, {
                 className: d.ap,
                 "aria-label": o.intl.string(o.t.PdRCRg),
                 ...e,
-                onClick: E,
+                onClick: y,
                 focusProps: T,
                 children: (0, a.jsx)(s.ChevronSmallRightIcon, {
                     size: "xs",
@@ -98,9 +98,9 @@ function u(e) {
         }) : A ? (0, a.jsxs)(l.DUT, {
             className: d.ef,
             ...e,
-            onClick: E,
+            onClick: y,
             focusProps: T,
-            children: [y(), (0, a.jsx)("div", {
+            children: [E(), (0, a.jsx)("div", {
                 className: d.ap,
                 children: (0, a.jsx)(s.ChevronSmallRightIcon, {
                     size: "xs",
@@ -111,7 +111,7 @@ function u(e) {
             className: d.ef,
             onClick: _,
             focusProps: T,
-            children: y()
+            children: E()
         }), (0, a.jsx)("div", {
             ref: j,
             className: d.jG,
@@ -120,7 +120,7 @@ function u(e) {
     };
     return A ? (0, a.jsx)("li", {
         className: d.j$,
-        onMouseEnter: E,
+        onMouseEnter: y,
         onMouseLeave: S,
         children: (0, a.jsx)(l.YNO, {
             targetElementRef: j,

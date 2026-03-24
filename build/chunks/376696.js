@@ -79,7 +79,7 @@ function w(e) {
         el = (0, C.m)({
             location: "voice_channel_activities"
         }),
-        ea = (0, r.bG)([x.A], () => x.A.getStorefrontDetectableGameAndApplicationIds()),
+        ea = (0, r.bG)([x.A], () => x.A.getDetectableIdsToApplicationIds()),
         er = (0, h.r9)() && (0, h.UK)(t.id),
         eo = null != q && !er,
         ec = ee.length + W.length > 0,
@@ -133,7 +133,7 @@ function w(e) {
             enableUserHoverActivities: ei
         }, e.application.id)), ee.map(e => {
             let a = e.application_id;
-            return (null != Y && (a = Y), el && null != a && ea.has(a)) ? (0, i.jsxs)(s.Fragment, {
+            return (null != Y && (a = Y), el && null != a && null != ea[a]) ? (0, i.jsxs)(s.Fragment, {
                 children: [(0, i.jsx)(M.A, {
                     presenceActivity: e,
                     channel: t,

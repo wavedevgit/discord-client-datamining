@@ -69,13 +69,13 @@ function D() {
                 analyticsLocations: i
             })
         }, [i]),
-        M = (0, l.useCallback)(() => {
+        G = (0, l.useCallback)(() => {
             let e = (0, x.Ci)("openCustomAppSettings") ? A.X.DISPLAY_IN_APP_ICON_CATEGORY : A.X.APPEARANCE_IN_APP_ICON;
             (0, p.openUserSettings)(e, {
                 analyticsLocations: i
             })
         }, [i]),
-        G = (0, l.useCallback)(() => {
+        M = (0, l.useCallback)(() => {
             (0, g.pX)(S.BVt.COLLECTIBLES_SHOP)
         }, []),
         k = (0, l.useCallback)(() => {
@@ -165,7 +165,7 @@ function D() {
             title: C.intl.string(C.t["GU+wqh"]),
             description: C.intl.string(C.t["1uPk1Z"]),
             ctaText: C.intl.string(C.t.jVcuVY),
-            onCtaClick: M,
+            onCtaClick: G,
             primaryAsset: j.A,
             categories: ["appearance"]
         }, {
@@ -243,7 +243,7 @@ function D() {
             title: C.intl.string(C.t["MTD+7w"]),
             description: C.intl.string(C.t.Bhs0s6),
             ctaText: C.intl.string(C.t.dBJVnZ),
-            onCtaClick: G,
+            onCtaClick: M,
             primaryAsset: (0, s.jsx)(a.D8b, {
                 alt: "",
                 ariaHidden: !0
@@ -258,6 +258,6 @@ function D() {
                 ariaHidden: !0
             }),
             categories: ["vip"]
-        }], [e, n, L, P, D, M, G, k, U]);
+        }], [e, n, L, P, D, G, M, k, U]);
     return (0, l.useMemo)(() => B.filter(e => null != e && !V.includes(e.id)), [B, V])
 }

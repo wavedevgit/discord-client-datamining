@@ -45,8 +45,8 @@ function L() {
             pendingBanner: L,
             pendingBio: P,
             pendingPronouns: D,
-            pendingAccentColor: M,
-            pendingThemeColors: G,
+            pendingAccentColor: G,
+            pendingThemeColors: M,
             pendingLegacyUsernameDisabled: k,
             pendingPrimaryGuildId: U,
             errors: w
@@ -119,7 +119,7 @@ function L() {
             }, "banner"), (0, i.jsx)(T.A, {
                 user: e,
                 pendingAvatarSrc: V,
-                pendingColors: G,
+                pendingColors: M,
                 onThemeColorsChange: e => (0, C.p)({
                     themeColors: e
                 }),
@@ -128,7 +128,7 @@ function L() {
         }) : (0, i.jsx)(h.A, {
             user: e,
             savedUserColor: t?.accentColor,
-            pendingColor: M,
+            pendingColor: G,
             setPendingAccentColor: e => (0, C.p)({
                 accentColor: e
             })

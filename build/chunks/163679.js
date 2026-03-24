@@ -45,8 +45,8 @@ let C = function(e) {
     let {
         transitionState: t,
         onClose: n
-    } = e, [u, x] = i.useState(null), [p, C] = i.useState(!0), [T, E] = i.useState(null), [S, y] = i.useState(!1), N = i.useCallback(async () => {
-        C(!0), E(null);
+    } = e, [u, x] = i.useState(null), [p, C] = i.useState(!0), [T, y] = i.useState(null), [S, E] = i.useState(!1), N = i.useCallback(async () => {
+        C(!0), y(null);
         try {
             let e = await (0, c.$R)();
             if (null == e) return void n();
@@ -66,13 +66,13 @@ let C = function(e) {
                 }
             })
         } catch {
-            E(v.intl.string(f.default["/f++3g"]))
+            y(v.intl.string(f.default["/f++3g"]))
         } finally {
             C(!1)
         }
     }, [n]), I = i.useCallback(async e => {
         if (null !== u) {
-            y(!0);
+            E(!0);
             try {
                 let t = {
                     task_id: u.task_id,
@@ -81,9 +81,9 @@ let C = function(e) {
                 };
                 await (0, c.Rt)(t), N()
             } catch (e) {
-                E(v.intl.string(f.default["+QRSxc"]))
+                y(v.intl.string(f.default["+QRSxc"]))
             } finally {
-                y(!1)
+                E(!1)
             }
         }
     }, [u, N]);

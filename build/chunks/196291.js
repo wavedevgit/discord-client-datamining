@@ -34,8 +34,8 @@ var i = n(627968),
     L = n(253604),
     P = n(652215),
     D = n(788868),
-    M = n(355097),
-    G = n(985018),
+    G = n(355097),
+    M = n(985018),
     k = n(567567);
 
 function U(e) {
@@ -62,7 +62,7 @@ function U(e) {
         preset: X,
         onShuffle: W
     } = (0, u.A)(), K = s.useRef(null);
-    (0, v.A)(K, M._F.TRY_IT_OUT);
+    (0, v.A)(K, G._F.TRY_IT_OUT);
     let {
         analyticsLocations: Z,
         newestAnalyticsLocation: q,
@@ -118,7 +118,7 @@ function U(e) {
                         size: "md",
                         color: "currentColor",
                         className: k.PC
-                    }), G.intl.string(G.t.gMlDNd)]
+                    }), M.intl.string(M.t.gMlDNd)]
                 }),
                 profilePreview: (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(m.A, {
@@ -133,11 +133,11 @@ function U(e) {
                     children: [(0, i.jsxs)("div", {
                         children: [(0, i.jsx)(a.Heading, {
                             variant: "heading-xl/extrabold",
-                            children: G.intl.string(G.t["2zGdAW"])
+                            children: M.intl.string(M.t["2zGdAW"])
                         }), (0, i.jsx)(a.Text, {
                             className: k.h_,
                             variant: "text-sm/normal",
-                            children: G.intl.string(G.t.xeEC20)
+                            children: M.intl.string(M.t.xeEC20)
                         })]
                     }), (0, i.jsx)(R.A, {
                         className: k.fz,
@@ -161,21 +161,21 @@ function U(e) {
                         isTryItOut: !0,
                         onAvatarChange: h.e$,
                         showRemoveAvatarButton: !1,
-                        changeAvatarButtonText: G.intl.string(G.t["7z0D1c"]),
-                        sectionTitle: G.intl.string(G.t.vtFfPX)
+                        changeAvatarButtonText: M.intl.string(M.t["7z0D1c"]),
+                        sectionTitle: M.intl.string(M.t.vtFfPX)
                     }), (0, i.jsx)(j.A, {
                         user: t,
                         className: k.fz
                     }), !$ && (0, i.jsx)(a.Text, {
                         variant: "text-sm/normal",
-                        children: G.intl.string(G.t["smo74/"])
+                        children: M.intl.string(M.t["smo74/"])
                     })]
                 })
             }), !$ && (0, i.jsx)(g.d, {
                 onSubscribeModalClose: Q,
                 className: k.Kv,
                 showUpsell: !0,
-                text: G.intl.format(G.t.TmfgI2, {
+                text: M.intl.format(M.t.TmfgI2, {
                     onClick: () => {
                         (0, x.K)({
                             analyticsSource: q,
@@ -183,9 +183,9 @@ function U(e) {
                         })
                     }
                 }),
-                button: w ? G.intl.string(G.t.AfRWI8) : et ? G.intl.formatToPlainString(G.t.bkQ4bH, {
+                button: w ? M.intl.string(M.t.AfRWI8) : et ? M.intl.formatToPlainString(M.t.bkQ4bH, {
                     percent: ee?.discount.amount
-                }) : G.intl.string(G.t.pj0XBN),
+                }) : M.intl.string(M.t.pj0XBN),
                 position: "inline"
             }), $ && (0, i.jsxs)("div", {
                 children: [(0, i.jsx)("div", {

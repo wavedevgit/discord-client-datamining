@@ -35,8 +35,8 @@ var i = n(627968),
     L = n(840065),
     P = n(351906),
     D = n(287809),
-    M = n(166403),
-    G = n(224016),
+    G = n(166403),
+    M = n(224016),
     k = n(954571),
     U = n(975571),
     w = n(927578),
@@ -108,7 +108,7 @@ function e_() {
     let e = (0, V.k5)(),
         t = (0, V.nf)(),
         n = (0, E.Ay)(),
-        s = (0, u.bG)([M.A], () => M.A.getPremiumTypeSubscription()),
+        s = (0, u.bG)([G.A], () => G.A.getPremiumTypeSubscription()),
         l = (0, u.bG)([D.default], () => D.default.getCurrentUser()),
         r = l?.isPremiumWithPremiumGroup(),
         o = (0, N.A)(),
@@ -128,7 +128,7 @@ function e_() {
                 color: "always-white",
                 className: el._K,
                 children: (0, en.DP)()
-            }) : (0, i.jsx)(G.A, {
+            }) : (0, i.jsx)(M.A, {
                 className: el.TJ
             }), r ? (0, i.jsx)("div", {
                 style: {
@@ -316,8 +316,8 @@ let ex = function() {
             analyticsLocations: t
         } = (0, b.Ay)(S.A.PREMIUM_SETTINGS),
         n = (0, u.bG)([D.default], () => D.default.getCurrentUser()),
-        l = (0, u.bG)([M.A], () => M.A.getPremiumTypeSubscription()),
-        a = (0, u.bG)([M.A], () => M.A.hasFetchedSubscriptions()),
+        l = (0, u.bG)([G.A], () => G.A.getPremiumTypeSubscription()),
+        a = (0, u.bG)([G.A], () => G.A.hasFetchedSubscriptions()),
         r = (0, v.Y)(et.T7),
         [o, _] = s.useState(!0),
         g = (0, N.A)({
@@ -337,7 +337,7 @@ let ex = function() {
             y || e || await Promise.all([h.hP(), h.$o(), (0, f.zS)(null, null, ei.tF5.DISCOVERY)]), _(!1)
         })
     }, [y, e]);
-    let [L, G] = s.useState(!1);
+    let [L, M] = s.useState(!1);
     if (y) return (0, i.jsx)(T.A, {});
     if (e) return (0, i.jsx)(I.uK, {});
     let U = a && null !== l && r,
@@ -369,7 +369,7 @@ let ex = function() {
                 onChange: e => {
                     e && !L && (k.default.track(ei.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                         location_stack: t
-                    }), G(!0))
+                    }), M(!0))
                 },
                 children: (0, i.jsx)("div", {
                     ref: O,

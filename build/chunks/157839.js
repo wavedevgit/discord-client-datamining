@@ -68,7 +68,7 @@ let T = e => {
                 location: "PremiumPerks"
             }).enabled,
             D = (0, _.O9)(),
-            M = (0, h.vx)({
+            G = (0, h.vx)({
                 perksCards: y,
                 variant: n,
                 hideCardsOnNarrowScreen: !1,
@@ -79,7 +79,7 @@ let T = e => {
                 showPremiumGroup: D,
                 isPremiumGroupMember: v?.isPremiumGroupMember()
             }),
-            G = M.some(e => null != e.pillText);
+            M = G.some(e => null != e.pillText);
         return (0, i.jsxs)("div", {
             ref: C,
             className: a()(f.uW, {
@@ -98,7 +98,7 @@ let T = e => {
                     [f.VA]: null == S || E,
                     [f.Xx]: null != S && !E,
                     [f.Ij]: N || E,
-                    [f.Ob]: G,
+                    [f.Ob]: M,
                     [f.dO]: E,
                     [f.br]: !E
                 }),
@@ -108,7 +108,7 @@ let T = e => {
                 children: S
             }), (0, i.jsx)("div", {
                 className: f.Ui,
-                children: M.map((e, t) => (0, i.jsx)(g.A, {
+                children: G.map((e, t) => (0, i.jsx)(g.A, {
                     ...e,
                     forceShadow: l
                 }, `${e.name}_${t}`))

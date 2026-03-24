@@ -46,7 +46,7 @@ let p = e => {
             b = g || !_ && v.size > 0,
             [j, A] = i.useState(""),
             [C, T] = i.useState(null),
-            [E, S] = i.useState(null);
+            [y, S] = i.useState(null);
         return (i.useEffect(() => {
             if ("" === j.trim() || !b) {
                 T(null), S(null);
@@ -97,7 +97,7 @@ let p = e => {
                 children: [(0, a.jsx)(l.Heading, {
                     variant: "heading-lg/semibold",
                     children: "Product Preview"
-                }), null != C && null != E ? (0, a.jsxs)("div", {
+                }), null != C && null != y ? (0, a.jsxs)("div", {
                     className: x.i1,
                     children: [(0, a.jsx)(p, {
                         skuId: C.skuId

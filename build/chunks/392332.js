@@ -20,7 +20,7 @@ function x(e) {
         officialGuildId: i,
         onClose: x,
         source: _
-    } = e, g = t.length > 7, [f, p] = l.useState(!1), h = l.useMemo(() => t.slice(0, g && !f ? 6 : void 0), [t, g, f]);
+    } = e, f = t.length > 7, [g, h] = l.useState(!1), p = l.useMemo(() => t.slice(0, f && !g ? 6 : void 0), [t, f, g]);
     return (0, a.jsxs)("div", {
         children: [(0, a.jsx)(s.DZT, {
             className: u.bV,
@@ -35,11 +35,11 @@ function x(e) {
         }) : (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsx)("div", {
                 className: r()(m.yz, {
-                    [m.T6]: g && !f
+                    [m.T6]: f && !g
                 }),
                 children: (0, a.jsx)("div", {
                     className: u.fi,
-                    children: h.map(e => (0, a.jsx)(c.A, {
+                    children: p.map(e => (0, a.jsx)(c.A, {
                         entry: e,
                         viewId: n,
                         onClose: x,
@@ -47,9 +47,9 @@ function x(e) {
                         source: _
                     }, e.id))
                 })
-            }), g && !f && (0, a.jsxs)(o.DUT, {
+            }), f && !g && (0, a.jsxs)(o.DUT, {
                 className: m.ND,
-                onClick: () => p(!0),
+                onClick: () => h(!0),
                 children: [(0, a.jsx)(s.EYj, {
                     variant: "text-xs/semibold",
                     color: "interactive-text-default",

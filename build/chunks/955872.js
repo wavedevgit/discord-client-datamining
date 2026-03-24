@@ -1,6 +1,6 @@
 /** chunk id: 955872 params = (module,exports,require) **/
 n.d(t, {
-    A: () => G
+    A: () => M
 });
 var i = n(627968),
     s = n(64700),
@@ -34,9 +34,9 @@ var i = n(627968),
     L = n(161290),
     P = n(652215),
     D = n(985018),
-    M = n(166378);
+    G = n(166378);
 
-function G() {
+function M() {
     let e = (0, r.bG)([j.default], () => {
             let e = j.default.getCurrentUser();
             return a()(null != e, "UserSettingsProfileCustomization: user cannot be undefined"), e
@@ -45,7 +45,7 @@ function G() {
         {
             pendingBio: n,
             pendingAvatar: l,
-            pendingNameplate: G,
+            pendingNameplate: M,
             showNotice: k,
             ...U
         } = (0, r.cf)([N.A], () => ({
@@ -57,7 +57,7 @@ function G() {
             image: l
         }),
         V = (0, T.lw)({
-            pendingValue: G,
+            pendingValue: M,
             userValue: e?.collectibles?.nameplate
         }),
         B = (0, v.A)() && null != n ? x.Ay.parse(void 0, n).content : n,
@@ -83,7 +83,7 @@ function G() {
                 user: e,
                 nameplate: V,
                 ...U,
-                className: null == V ? M.tJ : void 0,
+                className: null == V ? G.tJ : void 0,
                 isHighlighted: !0
             }),
             children: (0, i.jsx)(L.A, {})
@@ -101,7 +101,7 @@ function G() {
                 })
             })
         }), W && !k && (0, i.jsx)(h.d, {
-            className: M.EL,
+            className: G.EL,
             showUpsell: !Y,
             text: D.intl.format(D.t.TmfgI2, {
                 onClick: () => (0, f.K)({
@@ -111,7 +111,7 @@ function G() {
             textVariant: "heading-md/medium",
             useUpdatedStyling: !0,
             button: (0, i.jsx)("div", {
-                className: M.Xl,
+                className: G.Xl,
                 children: (0, i.jsx)(d.Button, {
                     variant: "overlay-primary",
                     onClick: () => {

@@ -34,8 +34,8 @@ var i = n(627968),
     L = n(837921),
     P = n(253932),
     D = n(780964),
-    M = n(192501),
-    G = n(840065),
+    G = n(192501),
+    M = n(840065),
     k = n(652215),
     U = n(53516),
     w = n(985018),
@@ -44,7 +44,7 @@ var i = n(627968),
 let F = L.Ay.getEnableHardwareAcceleration() ? c.JsQ : c.euF;
 
 function H() {
-    (0, G.openUserSettings)(D.X.PROFILE_PANEL)
+    (0, M.openUserSettings)(D.X.PROFILE_PANEL)
 }
 
 function z(e) {
@@ -221,7 +221,7 @@ function W(e) {
                 buttonAriaLabel: w.intl.string(w.t["8peUT0"]),
                 valueMessage: (0, i.jsx)(X, {
                     text: e,
-                    censor: M.B,
+                    censor: G.B,
                     revealLabel: w.intl.string(w.t["Zvx+yV"]),
                     hideLabel: w.intl.string(w.t.nqTD4d)
                 }),
@@ -285,7 +285,7 @@ function K(e) {
     } = l, d = null != r;
     return t = d ? (0, i.jsx)(X, {
         text: r,
-        censor: M.D,
+        censor: G.D,
         revealLabel: w.intl.string(w.t.eY3xlT),
         hideLabel: w.intl.string(w.t["jllbv+"])
     }) : w.intl.string(w.t.I5kDqj), (0, i.jsxs)("div", {

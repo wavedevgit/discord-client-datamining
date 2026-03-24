@@ -1,7 +1,7 @@
 /** chunk id: 313843 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p,
-    Q: () => g
+    A: () => h,
+    Q: () => f
 });
 var a = n(627968),
     l = n(64700),
@@ -48,7 +48,7 @@ function _(e) {
     } = e, l = t.supplementalData, o = l?.name ?? t.name ?? n?.name, c = (l?.genres ?? t.genres ?? []).map(r.du).join(", ");
     return (0, a.jsxs)("div", {
         className: m.wt,
-        children: [null != t.l30Rank && (0, a.jsx)(f, {
+        children: [null != t.l30Rank && (0, a.jsx)(g, {
             rank: t.l30Rank
         }), (0, a.jsx)(i.DZT, {
             variant: "heading-xxl/semibold",
@@ -61,7 +61,7 @@ function _(e) {
     })
 }
 
-function g(e) {
+function f(e) {
     let {
         game: t,
         application: n,
@@ -77,7 +77,7 @@ function g(e) {
         })
     })
 }
-let f = e => {
+let g = e => {
         let {
             rank: t
         } = e;
@@ -96,7 +96,7 @@ let f = e => {
             })]
         })
     },
-    p = function(e) {
+    h = function(e) {
         let {
             game: t,
             application: n,
@@ -111,7 +111,7 @@ let f = e => {
                 className: m.kL,
                 children: (0, a.jsxs)("div", {
                     className: m.cb,
-                    children: [(0, a.jsx)(g, {
+                    children: [(0, a.jsx)(f, {
                         game: t,
                         application: n,
                         isTwoColumn: !0

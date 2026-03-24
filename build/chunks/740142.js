@@ -6,7 +6,7 @@ var a = n(627968),
     i = n(64700),
     s = n(554146),
     l = n(379848),
-    r = n(948011),
+    r = n(209137),
     o = n(364504);
 
 function d(e) {
@@ -18,7 +18,7 @@ function d(e) {
         location: "AccountProfilePopoutUpsell"
     }), u = i.useMemo(() => {
         let e = [];
-        return c && e.push(s.M.WISHLIST_USER_PROFILE_ACCOUNT_POPOUT_UPSELL), e
+        return c.length > 0 && e.push(s.M.WISHLIST_USER_PROFILE_ACCOUNT_POPOUT_UPSELL), e
     }, [c]);
     return (0, a.jsx)(l.Ay, {
         contentTypes: u,
@@ -31,7 +31,8 @@ function d(e) {
             return null == d ? null : i === s.M.WISHLIST_USER_PROFILE_ACCOUNT_POPOUT_UPSELL ? (0, a.jsx)(o.A, {
                 profileUserId: t?.userId,
                 handleOpenUserProfileModal: n,
-                markAsDismissed: l
+                markAsDismissed: l,
+                applicationIds: c
             }) : null
         }
     })

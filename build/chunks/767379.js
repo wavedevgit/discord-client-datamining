@@ -1,6 +1,6 @@
 /** chunk id: 767379 params = (module,exports,require) **/
 n.d(t, {
-    default: () => y
+    default: () => E
 });
 var a = n(627968),
     i = n(64700),
@@ -24,7 +24,7 @@ var a = n(627968),
     A = n(536242),
     C = n(985018),
     T = n(62959),
-    E = n(700129);
+    y = n(700129);
 
 function S(e) {
     let {
@@ -47,15 +47,15 @@ function S(e) {
         }
     }) : null
 }
-let y = function(e) {
+let E = function(e) {
     let {
         transitionState: t,
         entryPoint: n,
         onClose: u,
         onComplete: j,
-        dismissable: y,
+        dismissable: E,
         classificationId: N
-    } = e, [I, O] = i.useState(r.M.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), R = i.useRef(I), [k, w] = (0, d.kn)([I], void 0, !0), D = i.useMemo(() => (0, s.A)(), []), M = i.useRef(!1), P = (0, m.W$)();
+    } = e, [I, O] = i.useState(r.M.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), R = i.useRef(I), [k, w] = (0, d.kn)([I], void 0, !0), D = i.useMemo(() => (0, s.A)(), []), P = i.useRef(!1), M = (0, m.W$)();
     i.useEffect(() => {
         R.current = k
     }, [k]);
@@ -72,9 +72,9 @@ let y = function(e) {
         classificationId: N
     });
     return i.useLayoutEffect(() => () => {
-        if (M.current) return;
+        if (P.current) return;
         let e = R.current;
-        null != e && (M.current = !0, h.A.maybeOpenAgeVerificationUserFeedback({
+        null != e && (P.current = !0, h.A.maybeOpenAgeVerificationUserFeedback({
             location: "age_verification_get_started_modal",
             visibleContent: e
         }))
@@ -84,15 +84,15 @@ let y = function(e) {
         transitionState: t,
         onClose: u,
         gradientColor: "blue",
-        dismissable: y,
+        dismissable: E,
         graphic: {
             type: "image",
-            src: E.A
+            src: y.A
         },
         title: (0, f.ST)(n),
         subtitle: (0, f.mK)(n, () => {
             p.A.openUrl(x.A.getArticleURL(b.MVz.TIGGER_PAWTECT_LEARN_MORE)), (0, g.St)(D, g.WU.EXPRESSIVE_PRIMARY, g._7.LEARN_MORE)
-        }, P),
+        }, M),
         actionBarInput: (0, a.jsx)(S, {
             modalSessionId: D,
             entryPoint: n

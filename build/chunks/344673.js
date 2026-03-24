@@ -24,7 +24,7 @@ var a = n(627968),
     A = n(231643),
     C = n(985018),
     T = n(76584),
-    E = n(661251);
+    y = n(661251);
 let S = [{
         key: "id",
         cellClassName: T.Hz,
@@ -53,7 +53,7 @@ let S = [{
             return t.toLocaleString()
         }
     }],
-    y = [{
+    E = [{
         id: "details",
         name: "Details",
         group: A.fu.NONE,
@@ -71,7 +71,7 @@ let S = [{
             } = e, u = c()(r);
             return (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsxs)(p.Ay, {
-                    className: l()(E.jr, T.nZ),
+                    className: l()(y.jr, T.nZ),
                     children: [(0, a.jsx)(p.Ay.Icon, {
                         icon: h.Uy2,
                         tooltip: t
@@ -138,7 +138,7 @@ function N() {
         TabBar: g,
         renderSelectedTab: v
     } = (0, A.Ay)({
-        tabs: y
+        tabs: E
     }, []), N = (0, u.bG)([_.A], () => _.A.trackTriggers), I = i.useCallback(e => {
         x.h.dispatch({
             type: "SET_TRACK_TRIGGERS",
@@ -147,7 +147,7 @@ function N() {
     }, []), O = N ? "Stop Tracking" : "Start Tracking";
     return (0, a.jsxs)("div", {
         ref: n,
-        className: l()(E.nd, T.nd),
+        className: l()(y.nd, T.nd),
         children: [(0, a.jsxs)("div", {
             className: T.rh,
             children: [(0, a.jsx)(m.m_, {

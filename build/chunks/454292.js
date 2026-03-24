@@ -189,7 +189,7 @@ function D(e) {
     })
 }
 
-function M(e) {
+function G(e) {
     let {
         settings: {
             enabled: t,
@@ -241,7 +241,7 @@ function M(e) {
     })
 }
 
-function G(e) {
+function M(e) {
     let {
         settings: {
             enabled: t,
@@ -411,10 +411,10 @@ function V(e) {
             updateSettings: u
         }), (0, i.jsx)(U, {
             onChangePage: t
-        }), (0, i.jsx)(M, {
+        }), (0, i.jsx)(G, {
             settings: l,
             updateSettings: u
-        }), (0, i.jsx)(G, {
+        }), (0, i.jsx)(M, {
             settings: l,
             updateSettings: u
         }), (0, i.jsx)(D, {

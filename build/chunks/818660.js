@@ -1,6 +1,6 @@
 /** chunk id: 818660 params = (module,exports,require) **/
 n.d(t, {
-    A: () => G
+    A: () => M
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -142,7 +142,7 @@ class D extends s.PureComponent {
         }) : void 0
     }
 }
-class M extends s.PureComponent {
+class G extends s.PureComponent {
     get keybindActionTypes() {
         let {
             overlaySupported: e,
@@ -370,7 +370,7 @@ class M extends s.PureComponent {
     }
 }
 
-function G() {
+function M() {
     s.useEffect(() => (u.A.enableAll(!1), () => {
         u.A.enableAll(!0)
     }), []);
@@ -379,7 +379,7 @@ function G() {
         n = (0, r.bG)([f.A], () => f.A.isSupported),
         l = (0, x.sw)(),
         a = (0, x.BW)();
-    return (0, i.jsx)(M, {
+    return (0, i.jsx)(G, {
         keybinds: e,
         canGoLive: t,
         overlaySupported: n,

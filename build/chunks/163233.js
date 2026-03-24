@@ -28,9 +28,9 @@ function T(e) {
     let {
         targetElementRef: t,
         onClose: n
-    } = e, [T, E] = i.useState(!1), {
+    } = e, [T, y] = i.useState(!1), {
         trackUserProfileEditAction: S
-    } = (0, h.NJ)(), y = (0, s.bG)([v.default], () => v.default.getId()), N = function() {
+    } = (0, h.NJ)(), E = (0, s.bG)([v.default], () => v.default.getId()), N = function() {
         let e, t, n = (0, s.bG)([v.default], () => v.default.getId()),
             a = (0, g.A)(n),
             l = i.useMemo(() => a.filter(e => e instanceof x.R), [a]),
@@ -82,7 +82,7 @@ function T(e) {
             if (null == r) return null;
             let o = "linked" === r.type,
                 d = () => (0, _.openUserProfileModal)({
-                    userId: y,
+                    userId: E,
                     tabSection: A.RP.WIDGETS
                 }).then(() => {
                     s(j.i.TAKE_ACTION), n()
@@ -103,7 +103,7 @@ function T(e) {
                 actions: [o ? {
                     text: C.intl.string(C.t.VSLDly),
                     onClick: () => {
-                        E(!0), d().then(() => {
+                        y(!0), d().then(() => {
                             let e;
                             return e = new x.R({
                                 applicationId: r.application.id
@@ -111,7 +111,7 @@ function T(e) {
                                 action: "WIDGET_ADDED",
                                 ...e.getProfileEditAnalyticsOptions()
                             }), (0, f.XA)(A.jM.WIDGET_ADDED))
-                        }).finally(() => E(!1))
+                        }).finally(() => y(!1))
                     },
                     loading: T
                 } : {
@@ -119,7 +119,7 @@ function T(e) {
                     onClick: () => {
                         r.authFlow.initiate({
                             onConfirm: () => {
-                                E(!0), d().finally(() => E(!1))
+                                y(!0), d().finally(() => y(!1))
                             },
                             analyticsLocations: I
                         })

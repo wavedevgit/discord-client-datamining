@@ -34,8 +34,8 @@ var i = n(627968),
     L = n(562628),
     P = n(196093),
     D = n(979653),
-    M = n(255631),
-    G = n(193023);
+    G = n(255631),
+    M = n(193023);
 let k = () => {
         let e = (0, I._)();
         return (0, i.jsx)(j.ir, {
@@ -69,7 +69,7 @@ let k = () => {
                 className: L.dW,
                 children: R.intl.string(R.t.Ipxkog)
             });
-        t = n === O.PremiumTypes.TIER_0 ? (0, o.Mw)(l) ? P : D : (0, o.Mw)(l) ? M : G;
+        t = n === O.PremiumTypes.TIER_0 ? (0, o.Mw)(l) ? P : D : (0, o.Mw)(l) ? G : M;
         let a = (0, h.Dd)(n);
         return (0, i.jsx)("img", {
             src: t,
@@ -145,10 +145,10 @@ let k = () => {
                 headingOverride: I,
                 hidePill: P = !1,
                 selectedPlanColumnClassName: D,
-                selectedPlanTier: M = O.PremiumTypes.TIER_2
+                selectedPlanTier: G = O.PremiumTypes.TIER_2
             } = e,
             {
-                analyticsLocations: G
+                analyticsLocations: M
             } = (0, _.Ay)(m.A.PREMIUM_MARKETING_PLAN_COMPARISON),
             F = (0, r.bG)([p.A], () => p.A.hasFetchedSubscriptions()),
             H = (0, A.Y)(O.T7),
@@ -236,9 +236,9 @@ let k = () => {
             className: L.ls,
             colorOptions: q === O.pe.TIER_0 ? Y ? j.at.PREMIUM_TIER_0_GRADIENT_FILL : j.at.PREMIUM_TIER_0_WHITE_FILL : Y ? K ? j.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL : j.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL : j.at.PREMIUM_TIER_2_WHITE_FILL
         }) : ea ? (0, i.jsx)(k, {}) : (0, i.jsx)(U, {});
-        let eo = q === O.pe.TIER_0 || J === O.PremiumTypes.TIER_0 || M === O.PremiumTypes.TIER_0;
+        let eo = q === O.pe.TIER_0 || J === O.PremiumTypes.TIER_0 || G === O.PremiumTypes.TIER_0;
         return (0, i.jsx)(_.f5, {
-            value: G,
+            value: M,
             children: (0, i.jsxs)("div", {
                 className: a()(L.zr, n),
                 "data-testid": "v2-marketing-page-comparison-table",

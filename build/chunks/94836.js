@@ -1,7 +1,7 @@
 /** chunk id: 94836 params = (module,exports,require) **/
 n.d(t, {
     A: () => j,
-    a: () => I
+    a: () => E
 });
 var a = n(627968),
     l = n(64700),
@@ -15,10 +15,10 @@ var a = n(627968),
     m = n(720462),
     x = n(256905),
     _ = n(409626),
-    g = n(368546),
-    f = n(985018),
-    p = n(851822),
-    h = n(351886),
+    f = n(368546),
+    g = n(985018),
+    h = n(851822),
+    p = n(351886),
     v = n(947570),
     A = n(1309);
 
@@ -47,21 +47,21 @@ function j(e) {
     }
     return 0 === r.length ? null : (0, a.jsxs)("div", {
         children: [(0, a.jsx)(o.Heading, {
-            className: p.bV,
+            className: h.bV,
             variant: "text-md/semibold",
             color: "text-strong",
-            children: f.intl.string(f.t.bNdK5x)
+            children: g.intl.string(g.t.bNdK5x)
         }), (0, a.jsxs)("div", {
-            className: s ? h.DA : h.pZ,
+            className: s ? p.DA : p.pZ,
             children: [(0, a.jsx)(o.zCo, {
                 ref: i,
-                className: h.ec,
+                className: p.ec,
                 orientation: "horizontal",
                 children: r.map((e, t) => (0, a.jsx)(o.DUT, {
-                    className: h.gw,
+                    className: p.gw,
                     focusProps: {
                         offset: 4,
-                        ringClassName: h.jR
+                        ringClassName: p.jR
                     },
                     onClick: () => {
                         n(_.Ws.ClickImage), (0, x.R)({
@@ -73,30 +73,30 @@ function j(e) {
                     },
                     children: (0, a.jsx)("img", {
                         src: e.url,
-                        className: h.Zm,
-                        alt: f.intl.formatToPlainString(f.t.COYYrn, {
+                        className: p.Zm,
+                        alt: g.intl.formatToPlainString(g.t.COYYrn, {
                             game: name
                         })
                     })
                 }, t))
             }), s && (0, a.jsxs)("div", {
-                className: h.NA,
+                className: p.NA,
                 children: [(0, a.jsx)("div", {
-                    className: h.EJ
+                    className: p.EJ
                 }), (0, a.jsx)(o.DUT, {
-                    className: h.G9,
+                    className: p.G9,
                     onClick: () => c(-1),
                     children: (0, a.jsx)(o.rJJ, {
-                        className: h.UE,
+                        className: p.UE,
                         color: "currentColor"
                     })
                 }), (0, a.jsx)("div", {
-                    className: h.Pj
+                    className: p.Pj
                 }), (0, a.jsx)(o.DUT, {
-                    className: h.G9,
+                    className: p.G9,
                     onClick: () => c(1),
                     children: (0, a.jsx)(o.EdP, {
-                        className: h.UE,
+                        className: p.UE,
                         color: "currentColor"
                     })
                 })]
@@ -105,12 +105,12 @@ function j(e) {
     })
 }
 
-function I(e) {
+function E(e) {
     let {
         detectedGame: t
-    } = e, [n, i] = l.useState(0), [_, p] = l.useState(t.artwork), [h, j] = l.useState(t.screenshots), I = l.useRef(null), b = l.useRef(null), C = (0, s.bG)([c.A], () => c.A.useReducedMotion);
-    (_ !== t.artwork || h !== t.screenshots) && (p(t.artwork), j(t.screenshots), i(0));
-    let E = l.useMemo(() => {
+    } = e, [n, i] = l.useState(0), [_, h] = l.useState(t.artwork), [p, j] = l.useState(t.screenshots), E = l.useRef(null), I = l.useRef(null), C = (0, s.bG)([c.A], () => c.A.useReducedMotion);
+    (_ !== t.artwork || p !== t.screenshots) && (h(t.artwork), j(t.screenshots), i(0));
+    let N = l.useMemo(() => {
             let e = (t.trailers ?? []).map(e => ({
                     url: (0, d.A)(e.application_id, e.id),
                     type: "VIDEO"
@@ -124,23 +124,23 @@ function I(e) {
                 type: "IMAGE"
             })), ...n]
         }, [t.trailers, t.artwork, t.screenshots]),
-        N = E.length > 0 ? Math.min(n, E.length - 1) : 0,
-        T = E[N],
+        b = N.length > 0 ? Math.min(n, N.length - 1) : 0,
+        T = N[b],
         S = T?.type === "VIDEO";
-    return ((0, g.A)({
-        videoRef: I,
-        canvasRef: b,
+    return ((0, f.A)({
+        videoRef: E,
+        canvasRef: I,
         enabled: S && !C
-    }), 0 === E.length) ? null : (0, a.jsxs)("div", {
+    }), 0 === N.length) ? null : (0, a.jsxs)("div", {
         className: v.kL,
         children: [S ? (0, a.jsxs)("div", {
             className: A.ND,
             children: [!C && (0, a.jsx)("canvas", {
-                ref: b,
+                ref: I,
                 className: A.HW,
                 "aria-hidden": "true"
             }), (0, a.jsx)(u.A, {
-                ref: I,
+                ref: E,
                 className: A.dj,
                 src: T.url,
                 controls: !0,
@@ -149,7 +149,7 @@ function I(e) {
         }) : (0, a.jsx)(o.DUT, {
             className: v.gv,
             onClick: () => {
-                let e = E.filter(e => "IMAGE" === e.type),
+                let e = N.filter(e => "IMAGE" === e.type),
                     t = e.indexOf(T);
                 (0, x.R)({
                     items: e,
@@ -161,19 +161,19 @@ function I(e) {
             children: (0, a.jsx)("img", {
                 src: T.url,
                 className: v.c8,
-                alt: f.intl.formatToPlainString(f.t.COYYrn, {
+                alt: g.intl.formatToPlainString(g.t.COYYrn, {
                     game: t.name
                 })
             })
         }), (0, a.jsx)(m.A, {
             gap: "xs",
-            children: E.map((e, n) => (0, a.jsx)(o.DUT, {
-                className: r()(v.JS, n === N && v.Y4),
+            children: N.map((e, n) => (0, a.jsx)(o.DUT, {
+                className: r()(v.JS, n === b && v.Y4),
                 onClick: () => i(n),
                 children: (0, a.jsx)("img", {
                     src: e.url,
                     className: v.xn,
-                    alt: f.intl.formatToPlainString(f.t.COYYrn, {
+                    alt: g.intl.formatToPlainString(g.t.COYYrn, {
                         game: t.name
                     })
                 })

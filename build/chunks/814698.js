@@ -18,19 +18,19 @@ function _(e) {
     let {
         application: t,
         trackAction: n
-    } = e, _ = (0, o.s)("GameProfile"), g = l.useCallback(async () => {
+    } = e, _ = (0, o.s)("GameProfile"), f = l.useCallback(async () => {
         n(u.Ws.ClaimGame);
         let e = await (0, c.a)(m.dSh.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY);
         (0, s.A)(e)
-    }, [n]), f = l.useCallback(e => (0, a.jsx)(d.A, {
-        onClick: g,
+    }, [n]), g = l.useCallback(e => (0, a.jsx)(d.A, {
+        onClick: f,
         children: e
-    }), [g]);
+    }), [f]);
     return !_ || t.linkedGames?.some(e => e.type === r.Mh.OFFICIAL) ? null : (0, a.jsx)(i.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         children: x.intl.format(x.t.KAjfKl, {
-            claimLink: f
+            claimLink: g
         })
     })
 }

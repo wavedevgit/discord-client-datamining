@@ -1,6 +1,6 @@
 /** chunk id: 582942 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => I
 });
 var a = n(627968);
 n(64700);
@@ -15,14 +15,14 @@ var l = n(503698),
     m = n(136086),
     x = n(885151),
     _ = n(409626),
-    g = n(422069),
-    f = n(611656),
-    p = n(459746),
-    h = n(225732),
+    f = n(422069),
+    g = n(611656),
+    h = n(459746),
+    p = n(225732),
     v = n(985018),
     A = n(851822),
     j = n(799864);
-let I = e => {
+let E = e => {
     let {
         game: t,
         onClose: n,
@@ -34,34 +34,34 @@ let I = e => {
         children: (0, a.jsx)(d.DUT, {
             className: j.fS,
             onClick: async () => {
-                l(_.Ws.ClickSimilarGame, t.applicationId), (0, d.mMO)(() => Promise.resolve(e => (0, a.jsx)(h.default, {
+                l(_.Ws.ClickSimilarGame, t.applicationId), (0, d.mMO)(() => Promise.resolve(e => (0, a.jsx)(p.default, {
                     applicationId: t.applicationId,
                     source: _.Ob.SimilarGames,
                     ...e
                 }))), await new Promise(e => setTimeout(e, 10)), n()
             },
-            children: (0, a.jsx)(p.A, {
+            children: (0, a.jsx)(h.A, {
                 game: t,
                 application: i,
                 className: j.n1,
-                size: p.w.SMALL
+                size: h.w.SMALL
             })
         })
     })
 };
 
-function b(e) {
+function I(e) {
     let {
         applicationId: t,
         onClose: n,
         trackAction: l,
         similarGames: r,
         similarGamesError: c
-    } = e, u = (0, o.bG)([g.A, m.A], () => {
-        let e = void 0 === g.A.getSimilarGames(t) && null == g.A.getSimilarGamesError(t),
+    } = e, u = (0, o.bG)([f.A, m.A], () => {
+        let e = void 0 === f.A.getSimilarGames(t) && null == f.A.getSimilarGamesError(t),
             n = r.some(e => m.A.isFetching(e));
         return e || n
-    }), _ = (0, o.yK)([m.A], () => r.map(e => m.A.getGame(e)).filter(e => null != e).filter(e => (0, f.oS)(e.applicationId)).slice(0, 5));
+    }), _ = (0, o.yK)([m.A], () => r.map(e => m.A.getGame(e)).filter(e => null != e).filter(e => (0, g.oS)(e.applicationId)).slice(0, 5));
     return ((0, x.k)(t), (0, x.W)(r), u && null == c) ? (0, a.jsxs)("div", {
         children: [(0, a.jsx)("div", {
             className: i()(j.vM, A.bV)
@@ -79,7 +79,7 @@ function b(e) {
             children: v.intl.string(v.t["6rLyQB"])
         }), (0, a.jsx)("div", {
             className: j.D$,
-            children: _.map(e => null != e.supplementalData ? (0, a.jsx)(I, {
+            children: _.map(e => null != e.supplementalData ? (0, a.jsx)(E, {
                 game: e.supplementalData,
                 onClose: n,
                 trackClick: l

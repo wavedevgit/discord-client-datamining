@@ -81,9 +81,9 @@ function b() {
         refreshEntitlementList: A,
         grantFractionalPremium: C,
         deleteFractionalPremium: T,
-        triggerNextEntitlementFulfillment: E,
+        triggerNextEntitlementFulfillment: y,
         entitlements: S,
-        loading: y
+        loading: E
     } = (0, m.o)();
     return i.useEffect(() => {
         A()
@@ -165,21 +165,21 @@ function b() {
                     }), (0, a.jsxs)("div", {
                         className: x.GC,
                         children: [(0, a.jsx)(o.$n, {
-                            disabled: y,
+                            disabled: E,
                             size: o.$n.Sizes.TINY,
                             color: o.$n.Colors.PRIMARY,
                             look: o.$n.Looks.OUTLINED,
-                            onClick: () => E(),
+                            onClick: () => y(),
                             children: "Run fulfillment"
                         }), (0, a.jsx)(o.$n, {
-                            disabled: y,
+                            disabled: E,
                             size: o.$n.Sizes.TINY,
                             color: o.$n.Colors.RED,
                             look: o.$n.Looks.OUTLINED,
                             onClick: () => T(),
                             children: "Delete all"
                         }), (0, a.jsx)(o.$n, {
-                            disabled: y,
+                            disabled: E,
                             look: o.$n.Looks.BLANK,
                             size: o.$n.Sizes.ICON,
                             onClick: A,

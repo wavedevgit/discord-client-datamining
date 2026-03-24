@@ -33,7 +33,7 @@ async function T(e, t, n) {
         rejectWithError: !0
     }), (0, c.VU)(e), (0, p.Xd)(e, !0)
 }
-async function E(e) {
+async function y(e) {
     await r.Bo.post({
         url: A.Rsh.SEND_POWERUPS_SYSTEM_MESSAGE(e),
         rejectWithError: !0
@@ -154,7 +154,7 @@ function S() {
                 variant: "primary",
                 text: "Send System Message",
                 onClick: () => {
-                    E(e)
+                    y(e)
                 }
             })]
         }), (0, a.jsx)(d.Button, {

@@ -1,6 +1,6 @@
 /** chunk id: 498400 params = (module,exports,require) **/
 n.d(t, {
-    A: () => G
+    A: () => M
 });
 var i = n(627968),
     s = n(64700),
@@ -34,8 +34,8 @@ var i = n(627968),
     L = n(558533),
     P = n(788868),
     D = n(652215),
-    M = n(615434);
-let G = function(e) {
+    G = n(615434);
+let M = function(e) {
     let {
         entrypoint: t = P.Mf.UserSettings
     } = e;
@@ -43,7 +43,7 @@ let G = function(e) {
     let n = (0, x.Hp)(),
         {
             sourceAnalyticsLocations: l,
-            analyticsLocations: G
+            analyticsLocations: M
         } = (0, A.Ay)(g.A.PREMIUM_MARKETING),
         k = (0, r.bG)([C.A], () => C.A.hasFetchedSubscriptions()),
         U = (0, r.bG)([b.A], () => b.A.hasFetchedPaymentSources),
@@ -74,18 +74,18 @@ let G = function(e) {
     let Z = (0, r.bG)([E.A], () => E.A.enabled),
         q = t === P.Mf.ApplicationStoreHome,
         J = Z ? (0, i.jsx)(m.A, {}) : n ? (0, i.jsx)(h.uK, {}) : q && W ? (0, i.jsx)(A.f5, {
-            value: G,
+            value: M,
             children: (0, i.jsx)(y.A, {
                 userId: V
             })
         }) : k && H && U ? null : (0, i.jsx)("div", {
-            className: a()(M.kL, M.Lq),
+            className: a()(G.kL, G.Lq),
             children: (0, i.jsx)(o.y$y, {})
         });
     return null != J ? (0, i.jsxs)(i.Fragment, {
         children: [q && (0, i.jsx)(_.A, {}), J]
     }) : (0, i.jsx)(A.f5, {
-        value: G,
+        value: M,
         children: (0, i.jsx)(L.A, {
             entrypoint: t
         })

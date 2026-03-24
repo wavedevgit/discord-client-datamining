@@ -35,8 +35,8 @@ var m = n(355097),
     L = n(584378),
     P = n(747918),
     D = n(330290),
-    M = n(252261),
-    G = n(106731);
+    G = n(252261),
+    M = n(106731);
 let k = (e, t, n) => (0, s.Mw)(e) ? t : n,
     U = e => {
         let {
@@ -148,7 +148,7 @@ let k = (e, t, n) => (0, s.Mw)(e) ? t : n,
             streaming: {
                 title: _.intl.string(_.t.RSXQYO),
                 description: _.intl.string(_.t.ymCPxp),
-                imageSource: M,
+                imageSource: G,
                 imageClassName: t.streamingImage
             },
             superReactions: {
@@ -164,7 +164,7 @@ let k = (e, t, n) => (0, s.Mw)(e) ? t : n,
                 description: _.intl.formatToPlainString(_.t["HI+cfm"], {
                     premiumMaxSize: w
                 }),
-                imageSource: G,
+                imageSource: M,
                 imageClassName: t.uploadImage
             },
             videoBackground: {

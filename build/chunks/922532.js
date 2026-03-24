@@ -28,7 +28,7 @@ function o(e) {
         v(!0)
     }, []), T = a.useCallback(() => {
         v(!1), o(!1)
-    }, [o]), E = a.useCallback(function() {
+    }, [o]), y = a.useCallback(function() {
         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
         if (n) return;
         let {
@@ -36,8 +36,8 @@ function o(e) {
         } = e;
         t ? x.current = window.setTimeout(d, 75) : d()
     }, [d, n]), S = a.useCallback(() => {
-        E()
-    }, [E]), y = a.useCallback(() => {
+        y()
+    }, [y]), E = a.useCallback(() => {
         window.clearTimeout(x.current), g || f || p.current || o(!1)
     }, [g, f, o]), N = a.useCallback(() => {
         (0, s.av)({
@@ -50,10 +50,10 @@ function o(e) {
             },
             shouldExtendSession: !0,
             sourceQuestContent: i.uF.QUEST_BAR_V2
-        }), p.current = !0, E({
+        }), p.current = !0, y({
             withDelay: !0
         })
-    }, [E, h, t.id]), I = a.useCallback(() => {
+    }, [y, h, t.id]), I = a.useCallback(() => {
         (0, s.av)({
             questId: t.id,
             event: r.HAw.QUEST_HOVER_OFF,
@@ -63,8 +63,8 @@ function o(e) {
                 impression_id: h.current?.getId()
             },
             sourceQuestContent: i.uF.QUEST_BAR_V2
-        }), p.current = !1, y()
-    }, [y, h, t.id]);
+        }), p.current = !1, E()
+    }, [E, h, t.id]);
     return a.useEffect(() => {
         f && I()
     }, [f, I]), a.useLayoutEffect(() => {
@@ -79,9 +79,9 @@ function o(e) {
         handleCtxMenuSelection: A,
         handleGameSheetOpened: C,
         handleGameSheetClosed: T,
-        handleFocus: E,
+        handleFocus: y,
         handleFocusWithoutDelay: S,
-        handleBlur: y,
+        handleBlur: E,
         handleMouseEnter: N,
         handleMouseLeave: I
     }

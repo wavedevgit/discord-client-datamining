@@ -59,20 +59,20 @@ function j() {
         clearAll: n
     } = (0, p.wu)(), [s, j] = i.useState(), A = i.useRef(null), C = (0, o.yK)([x.A], () => x.A.getAllProfileEffects());
     (0, m.A)();
-    let [T, E] = i.useState(""), S = i.useMemo(() => "" === T ? C : C.filter(e => {
+    let [T, y] = i.useState(""), S = i.useMemo(() => "" === T ? C : C.filter(e => {
         let t = T.toLowerCase(),
             n = e.config.title?.toLowerCase() ?? "",
             a = e.config.description?.toLowerCase() ?? "";
         return n.includes(t) || a.includes(t)
-    }), [T, C]), y = i.useCallback((e, n) => {
+    }), [T, C]), E = i.useCallback((e, n) => {
         if (null == n || !e.type.startsWith("text/")) return (0, h.Ni)(v);
         let [a, i] = n.split(",");
         if (!a.includes("text/plain")) return (0, h.Ni)(v);
         let s = JSON.parse(atob(i));
         s.skuId = (0, r.A)(), t(s), (0, h.GF)("Profile Effect (maybe??) imported!")
     }, [t]), N = i.useCallback(e => {
-        e.currentTarget?.files == null ? (0, h.Ni)("Error uploading file. Try again!") : (0, h.KE)(e.currentTarget.files, y, h.Ni)
-    }, [y]);
+        e.currentTarget?.files == null ? (0, h.Ni)("Error uploading file. Try again!") : (0, h.KE)(e.currentTarget.files, E, h.Ni)
+    }, [E]);
     return (0, a.jsxs)("div", {
         className: f.zr,
         children: [null == s && (0, a.jsxs)(a.Fragment, {
@@ -138,7 +138,7 @@ function j() {
                 }), (0, a.jsx)(d.ksK, {
                     value: T,
                     onChange: e => {
-                        E(e)
+                        y(e)
                     }
                 }), (0, a.jsx)("div", {
                     className: f.xm,

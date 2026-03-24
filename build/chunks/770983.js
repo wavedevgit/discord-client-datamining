@@ -1,6 +1,6 @@
 /** chunk id: 770983 params = (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => S
 });
 var i = n(627968),
     l = n(64700),
@@ -22,12 +22,11 @@ var i = n(627968),
     I = n(594832),
     j = n(631784),
     v = n(672564),
-    E = n(188275),
-    T = n(518477),
-    b = n(985018),
-    N = n(79711);
+    E = n(518477),
+    T = n(985018),
+    b = n(79711);
 
-function y(e) {
+function N(e) {
     let {
         application: t,
         sku: n,
@@ -42,38 +41,38 @@ function y(e) {
             j(!0);
             try {
                 await _.A.addSkuToWishlist(n.id, g), a?.({
-                    tabSection: T.RP.WISHLIST
+                    tabSection: E.RP.WISHLIST
                 })
             } catch (e) {
-                (0, c.showToast)((0, c.createToast)(b.intl.string(b.t.F8FvUy), c.ToastType.FAILURE)), r.ORC.announce(b.intl.string(b.t.F8FvUy))
+                (0, c.showToast)((0, c.createToast)(T.intl.string(T.t.F8FvUy), c.ToastType.FAILURE)), r.ORC.announce(T.intl.string(T.t.F8FvUy))
             } finally {
                 j(!1)
             }
         }
     }, [n.id, g, a, A]);
     return (0, i.jsx)(d.un, {
-        title: b.intl.string(b.t["8DkMEQ"]),
+        title: T.intl.string(T.t["8DkMEQ"]),
         body: n.name,
         asset: (0, i.jsx)(m.mW, {
             application: t
         }),
         assetSize: I.Q8,
         children: (0, i.jsxs)(r.sqX, {
-            className: N.Nr,
+            className: b.Nr,
             ref: o,
             "aria-label": n.name,
             onClick: v,
             children: [(0, i.jsx)(f.e, {
                 shape: "custom",
-                containerClassName: N.Nr,
-                foregroundImageClassName: N.wP,
-                backgroundImageClassName: N.GC,
+                containerClassName: b.Nr,
+                foregroundImageClassName: b.wP,
+                backgroundImageClassName: b.GC,
                 sku: n
             }, n.id), (h || A) && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)("div", {
-                    className: N.p0
+                    className: b.p0
                 }), (0, i.jsx)("div", {
-                    className: N.R$,
+                    className: b.R$,
                     children: A ? (0, i.jsx)(p.k, {}) : (0, i.jsx)(r.pa$, {
                         size: "lg",
                         color: c.LU0.unsafe_rawColors.WHITE_500
@@ -84,7 +83,7 @@ function y(e) {
     })
 }
 
-function S(e) {
+function y(e) {
     let {
         wishlist: t,
         handleOpenUserProfileModal: n,
@@ -93,21 +92,22 @@ function S(e) {
         maxWishlistItemsToShow: d = r,
         className: c,
         isLoading: u,
-        recommendations: m
-    } = e, x = (0, g.h)(E.XR), f = (0, o.bG)([h.default], () => h.default.getUser(t?.userId)), _ = (0, A.GG)("add_to_wishlist_grid"), I = l.useMemo(() => new Set(t?.items.map(e => e.skuId) ?? []), [t]), j = m.filter(e => !I.has(e.id)).slice(0, d);
+        recommendations: m,
+        applicationIds: x
+    } = e, f = (0, g.A)(x), _ = (0, o.bG)([h.default], () => h.default.getUser(t?.userId)), I = (0, A.GG)("add_to_wishlist_grid"), j = l.useMemo(() => f.reduce((e, t) => (null == t || (e[t.id] = t), e), {}), [f]), E = l.useMemo(() => new Set(t?.items.map(e => e.skuId) ?? []), [t]), T = m.filter(e => !E.has(e.id)).slice(0, d);
     return u ? (0, i.jsx)("div", {
-        className: N.g4,
+        className: b.g4,
         children: (0, i.jsx)(p.k, {})
-    }) : 0 === j.length ? null : (0, i.jsx)("ul", {
-        className: s()(N.Vg, c),
-        children: j.map(e => _ ? (0, i.jsx)(v.J, {
+    }) : 0 === T.length ? null : (0, i.jsx)("ul", {
+        className: s()(b.Vg, c),
+        children: T.map(e => I ? (0, i.jsx)(v.J, {
             sku: e,
             wishlistId: t?.id,
-            wishlistOwner: f,
+            wishlistOwner: _,
             handleOpenUserProfileModal: n,
             analyticsLocations: a
-        }, e.id) : (0, i.jsx)(y, {
-            application: x,
+        }, e.id) : null == e.applicationId || null == j[e.applicationId] ? null : (0, i.jsx)(N, {
+            application: j[e.applicationId],
             sku: e,
             handleOpenUserProfileModal: n,
             analyticsLocations: a
@@ -115,7 +115,7 @@ function S(e) {
     })
 }
 
-function C(e) {
+function S(e) {
     let {
         userId: t,
         numWishlistItemsToRecommend: n,
@@ -128,7 +128,7 @@ function C(e) {
         numItems: n,
         source: I.B5.USER_PROFILE
     });
-    return (0, i.jsx)(S, {
+    return (0, i.jsx)(y, {
         isLoading: "loading" === s,
         recommendations: a,
         numWishlistItemsToRecommend: n,

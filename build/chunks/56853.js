@@ -24,9 +24,9 @@ var a = n(627968),
     A = n(792620),
     C = n(814793),
     T = n(988436),
-    E = n(918338),
+    y = n(918338),
     S = n(270045),
-    y = n(57718),
+    E = n(57718),
     N = n(398025),
     I = n(545986),
     O = n(516226),
@@ -34,8 +34,8 @@ var a = n(627968),
     k = n(654487),
     w = n(419367),
     D = n(652215),
-    M = n(985018),
-    P = n(627669);
+    P = n(985018),
+    M = n(627669);
 
 function L(e) {
     let {
@@ -43,14 +43,14 @@ function L(e) {
         variant: n = "default"
     } = e;
     return (0, a.jsx)("div", {
-        className: l()(P.Io, {
-            [P.tV]: "brand" === n,
+        className: l()(M.Io, {
+            [M.tV]: "brand" === n,
             "theme-light": "default" === n
         }),
         children: (0, a.jsx)(u.Text, {
             variant: "eyebrow",
             color: "brand" === n ? "always-white" : "text-default",
-            className: P.Xi,
+            className: M.Xi,
             children: t
         })
     })
@@ -93,9 +93,9 @@ function U(e) {
         },
         children: (0, a.jsxs)("div", {
             ref: d,
-            className: P.XZ,
+            className: M.XZ,
             children: [(0, a.jsxs)("div", {
-                className: P.M5,
+                className: M.M5,
                 children: [(0, a.jsx)(b, {
                     size: "xs",
                     color: A
@@ -105,7 +105,7 @@ function U(e) {
                     children: g.at(0)
                 })]
             }), 0 === p && (0, a.jsx)(u.QWc, {
-                text: M.intl.string(M.t["yKJi+/"]),
+                text: P.intl.string(P.t["yKJi+/"]),
                 onClick: () => (0, T.i)({
                     quest: t,
                     errorHints: n,
@@ -129,12 +129,12 @@ function B(e) {
         onCtxMenuOpen: T,
         onCtxMenuSelect: N,
         sourceQuestContent: w
-    } = e, B = (0, p.O)(e => e.getErrorHints(t.id)), G = B.length > 0 ? B : s, F = (0, A.IO)(t), V = (0, h.Ay)(), H = ((0, c.Mw)(V) ? D.NJ8.DARK : D.NJ8.LIGHT) === D.NJ8.DARK, W = (0, v.LS)(t), K = t.userStatus?.claimedAt != null, z = (0, v.S5)(t.config.expiresAt, {
+    } = e, B = (0, p.O)(e => e.getErrorHints(t.id)), G = B.length > 0 ? B : s, F = (0, A.IO)(t), V = (0, h.Ay)(), W = ((0, c.Mw)(V) ? D.NJ8.DARK : D.NJ8.LIGHT) === D.NJ8.DARK, H = (0, v.LS)(t), K = t.userStatus?.claimedAt != null, z = (0, v.S5)(t.config.expiresAt, {
         month: "numeric",
         day: "numeric"
     }), $ = t.userStatus?.enrolledAt != null, q = t.userStatus?.completedAt != null, {
         onAssetLoadComplete: Y
-    } = i.useContext(O.M), Q = H ? "text-muted" : "always-white", J = i.useCallback(() => {
+    } = i.useContext(O.M), Q = W ? "text-muted" : "always-white", J = i.useCallback(() => {
         F && (0, I.d5)({
             quest: t,
             questContent: _.uF.QUEST_HOME_DESKTOP,
@@ -150,10 +150,10 @@ function B(e) {
         sourceQuestContent: w
     });
     return (0, a.jsxs)("div", {
-        className: P.kL,
+        className: M.kL,
         children: [(0, a.jsx)("div", {
-            className: P.IC,
-            children: (0, a.jsx)(E.A, {
+            className: M.IC,
+            children: (0, a.jsx)(y.A, {
                 quest: t,
                 isInteracting: n,
                 hideAssets: !r,
@@ -161,47 +161,47 @@ function B(e) {
                     width: 1320,
                     height: 370
                 },
-                containerClassName: P.l1,
-                imageClassName: P.c8
+                containerClassName: M.l1,
+                imageClassName: M.c8
             })
         }), (0, a.jsx)("div", {
-            className: P.Lw
+            className: M.Lw
         }), (0, a.jsxs)("div", {
-            className: P.nX,
+            className: M.nX,
             children: [(0, a.jsxs)("div", {
-                className: P.PG,
+                className: M.PG,
                 children: [(0, a.jsxs)("div", {
-                    className: P.mY,
+                    className: M.mY,
                     children: [(Z || t.preview) && (0, a.jsxs)(u.BJc, {
-                        className: P.Bv,
+                        className: M.Bv,
                         direction: "horizontal",
                         fullWidth: !1,
                         gap: 8,
                         children: [Z && !(0, j.Ic)(t) && (0, a.jsx)(L, {
-                            children: M.intl.string(M.t.Jt6u7B)
+                            children: P.intl.string(P.t.Jt6u7B)
                         }), t.preview && (0, a.jsx)(L, {
                             variant: "brand",
-                            children: M.intl.string(M.t.SKNnqq)
+                            children: P.intl.string(P.t.SKNnqq)
                         })]
                     }), et && (0, a.jsx)(u.DUT, {
-                        className: P.iI,
+                        className: M.iI,
                         onClick: en,
-                        "aria-label": M.intl.string(M.t.wuRE8M),
+                        "aria-label": P.intl.string(P.t.wuRE8M),
                         children: (0, a.jsx)(u.mir, {
                             color: "currentColor",
-                            className: P.WB
+                            className: M.WB
                         })
                     }), F && !et && (0, a.jsx)(d.m, {
-                        text: q ? M.intl.string(M.t.YsCuyF) : $ ? M.intl.string(M.t["74KqrR"]) : (0, j.Ic)(t) ? M.intl.string(M.t.I6JG46) : M.intl.string(M.t.umdNin),
+                        text: q ? P.intl.string(P.t.YsCuyF) : $ ? P.intl.string(P.t["74KqrR"]) : (0, j.Ic)(t) ? P.intl.string(P.t.I6JG46) : P.intl.string(P.t.umdNin),
                         asContainer: !0,
                         tag: "span",
                         children: (0, a.jsx)(u.DUT, {
-                            className: P.iI,
-                            "aria-label": M.intl.string(M.t.RscU7I),
+                            className: M.iI,
+                            "aria-label": P.intl.string(P.t.RscU7I),
                             onClick: J,
                             children: (0, a.jsx)(u.udU, {
                                 color: "currentColor",
-                                className: P.A9
+                                className: M.A9
                             })
                         })
                     }), (0, a.jsx)(S.C, {
@@ -216,12 +216,12 @@ function B(e) {
                         sourceQuestContent: w,
                         children: e => (0, a.jsx)(u.DUT, {
                             ...e,
-                            className: P.iI,
-                            "aria-label": M.intl.string(M.t.DEoVWZ),
+                            className: M.iI,
+                            "aria-label": P.intl.string(P.t.DEoVWZ),
                             children: (0, a.jsx)(u.jNK, {
                                 size: "md",
                                 color: "currentColor",
-                                className: P.A9
+                                className: M.A9
                             })
                         })
                     })]
@@ -229,25 +229,25 @@ function B(e) {
                     showPlaceholder: !r,
                     width: 100,
                     height: 30,
-                    className: P.Iu,
-                    children: (0, a.jsx)(y.Ay, {
-                        className: P.Iu,
-                        logotypeClassName: P.ND,
+                    className: M.Iu,
+                    children: (0, a.jsx)(E.Ay, {
+                        className: M.Iu,
+                        logotypeClassName: M.ND,
                         quest: t,
-                        separatorSpacing: y.C8.MEDIUM,
+                        separatorSpacing: E.C8.MEDIUM,
                         withGameTile: !1,
                         onLoadComplete: Y
                     })
                 }), (0, a.jsxs)("div", {
-                    className: P.E_,
+                    className: M.E_,
                     children: [(0, a.jsxs)("span", {
-                        className: P.O,
+                        className: M.O,
                         children: [(0, a.jsx)(u.Text, {
                             variant: "text-sm/medium",
                             color: Q,
-                            children: M.intl.string(M.t.VAbKhK)
+                            children: P.intl.string(P.t.VAbKhK)
                         }), (0, a.jsx)(x.A, {
-                            className: P.w$,
+                            className: M.w$,
                             size: 16,
                             color: u.LU0.unsafe_rawColors.GREEN_360.css,
                             allowFullSizedIcon: !0,
@@ -262,10 +262,10 @@ function B(e) {
                             color: "always-white",
                             children: t.config.cosponsorMetadata?.name ?? t.config.messages.gamePublisher
                         })]
-                    }), W || K ? null : (0, a.jsx)(u.Text, {
+                    }), H || K ? null : (0, a.jsx)(u.Text, {
                         variant: "text-sm/medium",
                         color: Q,
-                        children: M.intl.format(M.t["7D8r4F"], {
+                        children: P.intl.format(P.t["7D8r4F"], {
                             expiryDate: z
                         })
                     })]
@@ -274,7 +274,7 @@ function B(e) {
                 quest: t,
                 errorHints: G,
                 warningHints: l,
-                isDarkTheme: H,
+                isDarkTheme: W,
                 sourceQuestContent: w
             })]
         })]

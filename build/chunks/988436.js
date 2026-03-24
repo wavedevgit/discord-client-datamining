@@ -1,6 +1,6 @@
 /** chunk id: 988436 params = (module,exports,require) **/
 n.d(t, {
-    default: () => y,
+    default: () => E,
     i: () => I
 });
 var a = n(627968),
@@ -25,40 +25,40 @@ var a = n(627968),
     A = n(73473),
     C = n(201805),
     T = n(818348),
-    E = n(985018),
+    y = n(985018),
     S = n(868566);
 
-function y(e) {
+function E(e) {
     let {
         quest: t,
         errorHints: n,
         transitionState: s,
         onClose: A,
-        sourceQuestContent: y
-    } = e, [I, O] = (0, i.useState)(n), R = (0, p.UX)(), k = (0, _.Ut)(), w = (0, v.vU)()?.getId(), D = (0, o.bG)([m.A], () => m.A.useReducedMotion), M = (0, C.Xf)({
+        sourceQuestContent: E
+    } = e, [I, O] = (0, i.useState)(n), R = (0, p.UX)(), k = (0, _.Ut)(), w = (0, v.vU)()?.getId(), D = (0, o.bG)([m.A], () => m.A.useReducedMotion), P = (0, C.Xf)({
         useReducedMotion: D,
         className: S.Zf
-    }), P = I.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), L = (0, j.YL)(t), U = (0, o.bG)([h.A], () => h.A.getState().theme), B = (0, c.Mw)(U) ? T.NJ.DARK : T.NJ.LIGHT, {
+    }), M = I.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), L = (0, j.YL)(t), U = (0, o.bG)([h.A], () => h.A.getState().theme), B = (0, c.Mw)(U) ? T.NJ.DARK : T.NJ.LIGHT, {
         startConsoleQuest: G,
         startingConsoleQuest: F
     } = (0, p.Wj)({
         questId: t.id,
         beforeRequest: () => {
-            M.startAnimation(), k({
+            P.startAnimation(), k({
                 questId: t.id,
                 questContent: x.uF.CONNECTIONS_MODAL,
                 questContentCTA: f.Cy.DEFIBRILLATOR,
-                sourceQuestContent: y
+                sourceQuestContent: E
             })
         },
         afterRequest: e => {
-            M.stopAnimation(), O(e)
+            P.stopAnimation(), O(e)
         }
     });
     return (0, a.jsx)(r.Modal, {
         transitionState: s,
         onClose: A,
-        title: E.intl.string(E.t.W5lmKt),
+        title: y.intl.string(y.t.W5lmKt),
         subtitle: R.message,
         actions: [{
             variant: "secondary",
@@ -68,13 +68,13 @@ function y(e) {
                 content: x.uF.CONNECTIONS_MODAL,
                 ctaContent: f.Cy.VIEW_CONSOLE_CONNECTIONS_LINK,
                 impressionId: w,
-                sourceQuestContent: y
+                sourceQuestContent: E
             })),
-            text: E.intl.string(E.t["qiS+xj"])
+            text: y.intl.string(y.t["qiS+xj"])
         }, {
             variant: "primary",
             onClick: () => A(),
-            text: E.intl.string(E.t.cpT0Cq)
+            text: y.intl.string(y.t.cpT0Cq)
         }],
         children: (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsxs)("div", {
@@ -82,17 +82,17 @@ function y(e) {
                 children: [(0, a.jsx)(u.Text, {
                     variant: "eyebrow",
                     color: "text-default",
-                    children: E.intl.string(E.t["+/hZM/"])
+                    children: y.intl.string(y.t["+/hZM/"])
                 }), (0, a.jsxs)(u.DUT, {
                     className: l()(S.Tm, {
                         [S.r9]: F
                     }),
                     onClick: G,
-                    children: [M.render(), (0, a.jsx)(u.Text, {
+                    children: [P.render(), (0, a.jsx)(u.Text, {
                         variant: "text-sm/medium",
                         color: "currentColor",
                         className: S.Zf,
-                        children: E.intl.string(E.t.wzzjk9)
+                        children: y.intl.string(y.t.wzzjk9)
                     })]
                 })]
             }), (0, a.jsxs)("div", {
@@ -101,13 +101,13 @@ function y(e) {
                     icon: (0, a.jsx)(u.kN9, {
                         size: "sm"
                     }),
-                    text: E.intl.string(E.t.br3uIi)
+                    text: y.intl.string(y.t.br3uIi)
                 }), (0, a.jsx)(N, {
                     icon: (0, a.jsx)(u._xR, {
                         size: "sm"
                     }),
-                    text: E.intl.string(E.t.XF4wuA),
-                    errors: L ? void 0 : P.map(e => e.message),
+                    text: y.intl.string(y.t.XF4wuA),
+                    errors: L ? void 0 : M.map(e => e.message),
                     gameTile: L ? (0, a.jsx)(d.m, {
                         "aria-label": t.config.messages.gameTitle,
                         __unsupportedReactNodeAsText: (0, a.jsxs)("div", {
@@ -118,7 +118,7 @@ function y(e) {
                             }), (0, a.jsx)(u.Text, {
                                 variant: "text-xs/normal",
                                 color: "text-muted",
-                                children: E.intl.string(E.t.STpNEC)
+                                children: y.intl.string(y.t.STpNEC)
                             })]
                         }),
                         children: (0, a.jsx)("img", {

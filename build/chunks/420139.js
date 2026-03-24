@@ -38,7 +38,7 @@ function y(e) {
         analyticsLocation: y,
         currentInvoicePreview: R,
         disabled: L = !1
-    } = e, P = (0, d.bG)([h.A], () => h.A.hidePersonalInformation), [D, M] = (0, d.yK)([f.A], () => [f.A.paymentSources, f.A.hasFetchedPaymentSources]), G = (0, p.Y)((0, b.MP)(t)), {
+    } = e, P = (0, d.bG)([h.A], () => h.A.hidePersonalInformation), [D, G] = (0, d.yK)([f.A], () => [f.A.paymentSources, f.A.hasFetchedPaymentSources]), M = (0, p.Y)((0, b.MP)(t)), {
         analyticsLocations: k
     } = (0, x.Ay)(), U = s.useMemo(() => Object.values(D).filter(e => !e.invalid), [D]), [w, V] = s.useState(!1), [B, F] = s.useState(t.currency), H = async (e, n, i) => {
         if (null == t) throw Error("missing subscription and paymentSource");
@@ -96,7 +96,7 @@ function y(e) {
             })
         })
     }
-    if (!M || !G) return (0, i.jsx)(c.y$y, {});
+    if (!G || !M) return (0, i.jsx)(c.y$y, {});
     if (!(U.length > 0)) return (0, i.jsx)(c.Button, {
         fullWidth: !0,
         variant: l ? "primary" : "secondary",

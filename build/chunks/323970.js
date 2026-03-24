@@ -57,7 +57,7 @@ let T = {
             light: " #6881D4, #956CB8, #5491A0"
         }
     },
-    E = {
+    y = {
         [r.Ac.PREMIUM_TENURE_1_MONTH]: {
             dark: o.A,
             light: g.A
@@ -97,7 +97,7 @@ function S() {
         t = (0, a.Mw)((0, i.Ay)());
     if (!e) return null;
     let n = T[e],
-        o = E[e],
+        o = y[e],
         d = {
             currentBadge: (0, s.e0)(e),
             currentBadgeTextGradient: t ? n?.dark : n?.light,

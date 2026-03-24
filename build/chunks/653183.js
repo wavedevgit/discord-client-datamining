@@ -29,7 +29,7 @@ var i = n(627968),
 function v(e) {
     let {
         premiumSubscription: t
-    } = e, n = (0, l.bG)([x.A], () => x.A.boostSlots), v = s.useMemo(() => Object.values(n), [n]), I = (0, l.bG)([A.default], () => A.default.getCurrentUser()), j = p.Ay.isPremium(I, C.PremiumTypes.TIER_2), y = (0, l.bG)([_.A], () => _.A.affinities), O = (0, l.bG)([g.Ay], () => g.Ay.getFlattenedGuildIds()), R = y.length > 0 || O.length > 0, L = v.length > 0, P = s.useMemo(() => v.filter(e => null != e.premiumGuildSubscription), [v]), D = P.length > 0, M = v.length > P.length, G = (0, l.bG)([m.A], () => m.A.getCurrentUserAppliedBoosts()), {
+    } = e, n = (0, l.bG)([x.A], () => x.A.boostSlots), v = s.useMemo(() => Object.values(n), [n]), I = (0, l.bG)([A.default], () => A.default.getCurrentUser()), j = p.Ay.isPremium(I, C.PremiumTypes.TIER_2), y = (0, l.bG)([_.A], () => _.A.affinities), O = (0, l.bG)([g.Ay], () => g.Ay.getFlattenedGuildIds()), R = y.length > 0 || O.length > 0, L = v.length > 0, P = s.useMemo(() => v.filter(e => null != e.premiumGuildSubscription), [v]), D = P.length > 0, G = v.length > P.length, M = (0, l.bG)([m.A], () => m.A.getCurrentUserAppliedBoosts()), {
         fractionalState: k
     } = (0, a.A)({
         forceFetch: !0
@@ -49,7 +49,7 @@ function v(e) {
             hasGuildAffinitiesOrInGuild: R,
             subscriptionIsPausedOrPausePending: w
         }), U && (0, i.jsx)(u.A, {}), !R && (0, i.jsx)(T.A, {}), t?.isPaused && k !== C.xc.FP_SUB_PAUSED ? (0, i.jsx)(h.N, {
-            appliedGuildBoosts: G,
+            appliedGuildBoosts: M,
             premiumSubscription: t
         }) : (0, i.jsx)(h.A, {
             guildBoostSlots: n,
@@ -59,7 +59,7 @@ function v(e) {
             fractionalPremiumState: k
         }), (0, i.jsx)(E.A, {
             canAddBoosts: D && V,
-            canApplyBoosts: M
+            canApplyBoosts: G
         }), (0, i.jsx)(c.A, {
             className: N.e4,
             hideHeading: !0,

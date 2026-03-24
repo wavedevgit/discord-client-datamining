@@ -24,9 +24,9 @@ var a = n(627968),
     A = n(971649),
     C = n(651892),
     T = n(710969),
-    E = n(901406),
+    y = n(901406),
     S = n(792620),
-    y = n(814793),
+    E = n(814793),
     N = n(201805),
     I = n(212614),
     O = n(79545),
@@ -34,7 +34,7 @@ var a = n(627968),
     k = n(654487),
     w = n(985018),
     D = n(421193);
-let M = [{
+let P = [{
     value: k.fO.DESKTOP,
     get label() {
         return w.intl.string(w.t["QXc01+"])
@@ -46,7 +46,7 @@ let M = [{
     }
 }];
 
-function P(e) {
+function M(e) {
     let t, n, {
         value: i
     } = e;
@@ -92,7 +92,7 @@ function U(e) {
     return {
         externalLinkCta: (0, C.wr)(t),
         handleOpenExternalLink: i.useCallback(() => {
-            (0, E.pu)(t, {
+            (0, y.pu)(t, {
                 content: x.uF.QUEST_HOME_DESKTOP,
                 ctaContent: j.Cy.OPEN_GAME_LINK,
                 impressionId: a,
@@ -209,11 +209,11 @@ function F(e) {
         questContent: n,
         onReceiveErrorHints: _,
         contentPosition: A,
-        rowIndex: E,
+        rowIndex: y,
         sourceQuestContent: U
     } = e, F = (0, s.bG)([c.A], () => c.A.useReducedMotion), V = (0, N.Xf)({
         useReducedMotion: F
-    }), H = (0, b.Ut)(), W = (0, v.RR)({
+    }), W = (0, b.Ut)(), H = (0, v.RR)({
         quest: t
     }), K = (0, v.Vn)(t), z = (0, v.S5)(t.config.expiresAt, {
         month: "numeric",
@@ -238,7 +238,7 @@ function F(e) {
         quest: t,
         questContent: n,
         questContentPosition: A,
-        questContentRowIndex: E,
+        questContentRowIndex: y,
         inGiftInventory: !0,
         isVideoQuest: en,
         inGameQuest: ei,
@@ -249,12 +249,12 @@ function F(e) {
     } = (0, v.Wj)({
         questId: t.id,
         beforeRequest: () => {
-            V.startAnimation(), H({
+            V.startAnimation(), W({
                 questId: t.id,
                 questContent: n,
                 questContentCTA: j.Cy.DEFIBRILLATOR,
                 questContentPosition: A,
-                questContentRowIndex: E,
+                questContentRowIndex: y,
                 sourceQuestContent: U
             })
         },
@@ -268,7 +268,7 @@ function F(e) {
         shortText: !0
     }), eC = p.s5.useConfig({
         location: k.rE.QUESTS_CARD
-    }), eT = eC.enabled && (eC.variant === p.tL.LEARN_MORE_CTA_ONLY || eC.variant === p.tL.COMBINE_LEARN_MORE_CTA_AND_EXPRESSIVE_BUTTON), eE = (0, v.do)({
+    }), eT = eC.enabled && (eC.variant === p.tL.LEARN_MORE_CTA_ONLY || eC.variant === p.tL.COMBINE_LEARN_MORE_CTA_AND_EXPRESSIVE_BUTTON), ey = (0, v.do)({
         quest: t,
         content: n,
         ctaContent: eC.variant === p.tL.LEARN_MORE_CTA_ONLY ? j.Cy.LEARN_MORE_CTA_AND_EXPRESSIVE_BUTTON_TREATMENT_TWO_OPEN_GAME_LINK : j.Cy.LEARN_MORE_CTA_AND_EXPRESSIVE_BUTTON_TREATMENT_THREE_OPEN_GAME_LINK,
@@ -279,11 +279,11 @@ function F(e) {
         eS = (0, a.jsx)(r.$nd, {
             variant: "secondary",
             text: e,
-            onClick: eE
+            onClick: ey
         })
     }
-    let ey = null;
-    return (Z && X ? ey = (0, a.jsx)("div", {
+    let eE = null;
+    return (Z && X ? eE = (0, a.jsx)("div", {
         className: D.x6,
         children: (0, a.jsx)(r.$nd, {
             variant: "primary",
@@ -292,13 +292,13 @@ function F(e) {
             text: eg,
             fullWidth: !0
         })
-    }) : J ? ey = en ? (0, a.jsx)(B, {
+    }) : J ? eE = en ? (0, a.jsx)(B, {
         quest: t,
         questContent: n,
         sourceQuestContent: U,
         onClick: e_,
         text: eg
-    }) : (0, y.vA)(t) ? (0, a.jsxs)(r.e2v, {
+    }) : (0, E.vA)(t) ? (0, a.jsxs)(r.e2v, {
         direction: "horizontal",
         fullWidth: !0,
         wrap: !1,
@@ -322,7 +322,7 @@ function F(e) {
             text: eg,
             fullWidth: !0
         })
-    }) : ee ? X ? ey = (0, a.jsx)("div", {
+    }) : ee ? X ? eE = (0, a.jsx)("div", {
         className: D.x6,
         children: (0, a.jsx)(r.$nd, {
             variant: "primary",
@@ -331,7 +331,7 @@ function F(e) {
             text: eg,
             fullWidth: !0
         })
-    }) : ea ? ey = (0, a.jsx)("div", {
+    }) : ea ? eE = (0, a.jsx)("div", {
         className: D.x6,
         children: em.enabled && (eh === O.UA.UNENROLLED || eh === O.UA.ENROLLED) && em.enabledQuestStates.has(eh) ? (0, a.jsxs)(r.e2v, {
             direction: "horizontal",
@@ -356,12 +356,12 @@ function F(e) {
                 fullWidth: !0
             })
         })
-    }) : Q && !eb ? ey = ec ? (0, a.jsx)(l.Pw, {
+    }) : Q && !eb ? eE = ec ? (0, a.jsx)(l.Pw, {
         className: D.dd,
         isSelected: () => !1,
-        options: M,
+        options: P,
         placeholder: w.intl.string(w.t.drVw4T),
-        renderOptionLabel: P,
+        renderOptionLabel: M,
         renderOptionValue: L,
         select: ep,
         serialize: e => {
@@ -385,7 +385,7 @@ function F(e) {
             analyticsCtxSourceQuestContent: U,
             analyticsCtxQuestContentPosition: A
         })
-    }) : (0, S.g5)(t) && !K && el !== x.X0.DESKTOP ? W ? (0, a.jsx)("div", {
+    }) : (0, S.g5)(t) && !K && el !== x.X0.DESKTOP ? H ? (0, a.jsx)("div", {
         className: D.x6,
         children: (0, a.jsx)(r.$nd, {
             variant: "secondary",
@@ -411,7 +411,7 @@ function F(e) {
             text: eg,
             fullWidth: !0
         })
-    }) : (0, y.vA)(t) ? (0, a.jsx)("div", {
+    }) : (0, E.vA)(t) ? (0, a.jsx)("div", {
         className: D.x6,
         children: (0, a.jsx)(r.$nd, {
             variant: "primary",
@@ -428,7 +428,7 @@ function F(e) {
             text: w.intl.string(w.t["9KoPyB"]),
             fullWidth: !0
         })
-    }) : Q || (ey = Y ? (0, a.jsxs)(r.e2v, {
+    }) : Q || (eE = Y ? (0, a.jsxs)(r.e2v, {
         direction: "horizontal",
         fullWidth: !0,
         wrap: !1,
@@ -462,15 +462,15 @@ function F(e) {
                 fullWidth: !0
             })]
         })
-    })) : ey = (0, a.jsx)(G, {
+    })) : eE = (0, a.jsx)(G, {
         quest: t,
         sourceQuestContent: U,
         formattedExpirationDate: z
-    }), null == ey) ? null : (0, a.jsxs)("div", {
+    }), null == eE) ? null : (0, a.jsxs)("div", {
         className: D.kL,
         children: [(0, a.jsx)("div", {
             className: D.qz,
-            children: ey
+            children: eE
         }), eu && (0, a.jsx)("div", {
             className: D.qz,
             children: (0, a.jsx)(l.Pw, {
@@ -485,9 +485,9 @@ function F(e) {
                             return !1
                     }
                 },
-                options: M,
+                options: P,
                 placeholder: w.intl.string(w.t.drVw4T),
-                renderOptionLabel: P,
+                renderOptionLabel: M,
                 renderOptionValue: L,
                 select: ep,
                 serialize: e => {

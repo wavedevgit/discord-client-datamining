@@ -1,6 +1,6 @@
 /** chunk id: 24268 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => b
 });
 var a = n(627968),
     i = n(64700),
@@ -14,30 +14,31 @@ var a = n(627968),
     m = n(912615),
     h = n(147964),
     x = n(760716),
-    p = n(188275),
-    g = n(652215),
+    p = n(652215),
+    g = n(115093),
     _ = n(661251),
     f = n(508474);
+let v = window.GLOBAL_ENV.RELEASE_CHANNEL === g.B.STAGING ? "1438571444891025408" : "1346069614634864772";
 
-function v() {
+function b() {
     let e = (0, x.i)(e => e.overrideApplicationId),
         t = (0, x.i)(e => e.setOverrideApplicationId),
         n = null != e,
-        [s, v] = i.useState(p.XR),
-        [b, j] = i.useState(g.FYj),
+        [s, g] = i.useState(v),
+        [b, j] = i.useState(p.FYj),
         A = i.useCallback(e => {
             e ? t(s) : t(null)
         }, [s, t]),
         C = i.useCallback(e => {
-            v(e), n && t(e)
+            g(e), n && t(e)
         }, [n, t]),
         T = (0, x.i)(e => e.showSelfActivity),
-        E = (0, x.i)(e => e.setShowSelfActivity),
+        y = (0, x.i)(e => e.setShowSelfActivity),
         S = (0, x.i)(e => e.recommendationApplicationIds),
-        y = (0, x.i)(e => e.setRecommendationApplicationIds),
+        E = (0, x.i)(e => e.setRecommendationApplicationIds),
         N = i.useCallback(e => {
-            e ? y(b) : y(null)
-        }, [b, y]),
+            e ? E(b) : E(null)
+        }, [b, E]),
         I = (0, r.bG)([h.A], () => null != h.A.testModeApplicationId),
         O = i.useCallback(e => {
             e ? (0, o.qfG)(e => (0, a.jsx)(m.A, {
@@ -71,7 +72,7 @@ function v() {
             }), (0, a.jsx)(o.dOG, {
                 label: "Show own voice activity (bypass self check)",
                 checked: T,
-                onChange: E
+                onChange: y
             }), (0, a.jsx)(o.dOG, {
                 label: "Enable application test mode",
                 checked: I,

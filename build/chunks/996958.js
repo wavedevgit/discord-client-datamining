@@ -25,7 +25,7 @@ function v() {
         removeToolsCache: v
     } = (0, u.DE)(), {
         setImgCache: T
-    } = (0, u.TW)(), E = (0, i.useCallback)(e => {
+    } = (0, u.TW)(), y = (0, i.useCallback)(e => {
         let t = x[e];
         null != t ? c({
             previewToolKey: t.url,
@@ -44,7 +44,7 @@ function v() {
             ...t,
             palette: e
         })
-    }, []), y = (0, i.useCallback)(e => {
+    }, []), E = (0, i.useCallback)(e => {
         v(e)
     }, [v]);
     return (0, a.jsxs)(a.Fragment, {
@@ -103,8 +103,8 @@ function v() {
                         } = e;
                         return (0, a.jsx)(j, {
                             src: t,
-                            onSetStatic: E,
-                            removeAsset: y
+                            onSetStatic: y,
+                            removeAsset: E
                         }, t)
                     })
                 }), (0, a.jsx)(C, {
@@ -162,7 +162,7 @@ function b(e) {
             }), (0, a.jsx)(l.Text, {
                 variant: "text-sm/semibold",
                 children: "DMs"
-            }), (0, a.jsx)(E, {
+            }), (0, a.jsx)(y, {
                 nameplate: t
             }), (0, a.jsx)(l.Text, {
                 variant: "text-sm/semibold",
@@ -286,7 +286,7 @@ function T(e) {
     })
 }
 
-function E(e) {
+function y(e) {
     let {
         nameplate: t
     } = e;

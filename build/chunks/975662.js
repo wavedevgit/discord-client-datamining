@@ -34,8 +34,8 @@ var i, s = n(627968),
     L = n(322631),
     P = n(17307),
     D = n(788868),
-    M = n(652215),
-    G = n(49999),
+    G = n(652215),
+    M = n(49999),
     k = n(355097),
     U = n(985018),
     w = n(520650),
@@ -84,7 +84,7 @@ let ex = () => {
             analyticsLocations: e
         })
     }, ev = () => {
-        (0, p.pX)(M.BVt.COLLECTIBLES_SHOP)
+        (0, p.pX)(G.BVt.COLLECTIBLES_SHOP)
     }, eI = () => {
         let e = (0, f.Ci)("openCustomAppSettings") ? h.X.DISPLAY_IN_APP_ICON_CATEGORY : h.X.APPEARANCE_IN_APP_ICON;
         (0, T.openUserSettings)(e)
@@ -121,7 +121,7 @@ let ex = () => {
                     analyticsLocations: e
                 })
             } : () => {
-                window.open(N.A.getArticleURL(M.MVz.CLIPS), "_blank")
+                window.open(N.A.getArticleURL(G.MVz.CLIPS), "_blank")
             },
             perkImage: K
         } : {
@@ -340,7 +340,7 @@ let ex = () => {
             title: U.intl.string(U.t.tPY4o9),
             subtitle: U.intl.string(U.t.JY0grC),
             description: U.intl.format(U.t["2JqTF6"], {
-                helpdeskArticle: N.A.getArticleURL(M.MVz.REFERRAL_PROGRAM)
+                helpdeskArticle: N.A.getArticleURL(G.MVz.REFERRAL_PROGRAM)
             }),
             descriptionCta: U.intl.string(U.t.JST6jl),
             isPremiumGetCta: !ex || void 0,
@@ -360,13 +360,13 @@ let ex = () => {
             title: U.intl.string(U.t["57ngoo"]),
             subtitle: U.intl.string(U.t.piFFjd),
             description: U.intl.format(U.t.Pd7olh, {
-                learnMoreLink: N.A.getArticleURL(M.MVz.PERMADECOS)
+                learnMoreLink: N.A.getArticleURL(G.MVz.PERMADECOS)
             }),
             descriptionCta: eh ? U.intl.string(U.t.jVcuVY) : U.intl.string(U.t.JST6jl),
             isPremiumGetCta: !eh,
             onCtaClick: eh ? () => {
                 eb || (0, g.Dr)(r.M.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE, {
-                    dismissAction: G.i.TAKE_ACTION
+                    dismissAction: M.i.TAKE_ACTION
                 }), eC()
             } : void 0,
             pillText: eb || !eh ? void 0 : U.intl.string(U.t.y2b7CA).toLocaleUpperCase(),

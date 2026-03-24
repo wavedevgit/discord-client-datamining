@@ -34,8 +34,8 @@ var i = n(627968),
     L = n(817577),
     P = n(419455),
     D = n(288604),
-    M = n(893160),
-    G = n(509442);
+    G = n(893160),
+    M = n(509442);
 
 function k() {
     let {
@@ -128,7 +128,7 @@ function k() {
                     src: R,
                     alt: "SteelSeries"
                 }),
-                backgroundAssetUrl: M.A,
+                backgroundAssetUrl: G.A,
                 progress: W.getDate() / K,
                 ctaText: y.intl.string(y.t.w7s5Qr),
                 onCtaClick: () => (0, b.uE)({
@@ -149,7 +149,7 @@ function k() {
                 description: y.intl.formatToPlainString(y.t.WQazjs, {
                     themeCount: 20
                 }),
-                primaryAsset: G.A,
+                primaryAsset: M.A,
                 ctaText: y.intl.string(y.t.jVcuVY),
                 onCtaClick: () => {
                     (0, m.nf)(m.HP.CUSTOM_THEME)

@@ -1,6 +1,6 @@
 /** chunk id: 265729 params = (module,exports,require) **/
 n.d(t, {
-    A: () => G
+    A: () => M
 });
 var i = n(627968),
     s = n(64700),
@@ -35,7 +35,7 @@ var i = n(627968),
     P = n(985018),
     D = n(492489);
 
-function M(e) {
+function G(e) {
     let t, {
             outboundPromotion: n,
             code: l,
@@ -119,7 +119,7 @@ function M(e) {
         })]
     })
 }
-let G = function(e) {
+let M = function(e) {
     let {
         inOldSettings: t = !1
     } = e, n = (0, d.yK)([C.A], () => C.A.getGiftable()), [l, r] = o().partition(n, e => {
@@ -135,11 +135,11 @@ let G = function(e) {
     }, []);
     let {
         promotionsLoaded: f,
-        activeOutboundPromotions: G,
+        activeOutboundPromotions: M,
         claimedEndedOutboundPromotions: k,
         claimedOutboundPromotionCodeMap: U,
         addClaimedOutboundPromotionCode: w
-    } = (0, h.y7)(), V = G.length + k.length > 0, B = A.m.useExperiment({
+    } = (0, h.y7)(), V = M.length + k.length > 0, B = A.m.useExperiment({
         location: "EntitlementGifts"
     }, {
         autoTrackExposure: !1,
@@ -200,13 +200,13 @@ let G = function(e) {
                                 code: t,
                                 promotion: n
                             } = e;
-                            return (0, i.jsx)(M, {
+                            return (0, i.jsx)(G, {
                                 outboundPromotion: n,
                                 code: t,
                                 addClaimedOutboundPromotionCode: w,
                                 disabled: !_
                             }, n.id)
-                        }), G.map(e => (0, i.jsx)(M, {
+                        }), M.map(e => (0, i.jsx)(G, {
                             outboundPromotion: e,
                             code: U[e.id],
                             addClaimedOutboundPromotionCode: w,

@@ -1,6 +1,6 @@
 /** chunk id: 524134 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => y
 });
 var a = n(627968),
     i = n(64700),
@@ -25,22 +25,22 @@ var a = n(627968),
     C = n(53516),
     T = n(985018);
 
-function E() {
+function y() {
     let {
         action: e,
         theme: t
     } = (0, l.cf)([f.A, _.A], () => ({
         action: f.A.getAction(),
         theme: _.A.theme
-    })), E = v.A.getVerificationTypes(e), [S, y] = i.useState(0), N = (0, m.A)(E);
+    })), y = v.A.getVerificationTypes(e), [S, E] = i.useState(0), N = (0, m.A)(y);
     (0, x.A)({
         type: s.ImpressionTypes.MODAL,
         name: s.ImpressionNames.USER_ACTION_REQUIRED,
         properties: {
-            verification_type: E[0],
-            verification_types: E
+            verification_type: y[0],
+            verification_types: y
         }
-    }, {}, [E.toString()]);
+    }, {}, [y.toString()]);
     let I = () => {
         (0, u.Cw)(), (0, o.mMO)(async () => {
             let {
@@ -57,7 +57,7 @@ function E() {
     return i.useEffect(() => (h.A.disable(), () => {
         h.A.enable()
     }), []), i.useEffect(() => {
-        N?.[0] === A.Fz7.PHONE && E?.[0] === A.Fz7.EMAIL && (0, o.mMO)(async () => {
+        N?.[0] === A.Fz7.PHONE && y?.[0] === A.Fz7.EMAIL && (0, o.mMO)(async () => {
             let {
                 default: e
             } = await n.e("10919").then(n.bind(n, 556506));
@@ -72,8 +72,8 @@ function E() {
             Layer: p.Ay,
             onCloseCallback: I
         })
-    }, [E, N]), (0, a.jsx)(b.A, {
-        types: E,
+    }, [y, N]), (0, a.jsx)(b.A, {
+        types: y,
         captchaKey: S,
         onCaptchaVerify: e => {
             r.Bo.post({
@@ -84,7 +84,7 @@ function E() {
                 oldFormErrors: !0,
                 rejectWithError: !0
             }).then(c.jH, () => {
-                y(e => e + 1)
+                E(e => e + 1)
             })
         },
         theme: t,

@@ -35,14 +35,14 @@ var i = n(627968),
     L = n(842130),
     P = n(985018),
     D = n(914280);
-let M = {
+let G = {
         [O.u9.REQUESTS]: I.A,
         [O.u9.ACTIVITY]: v.A,
         [O.u9.SETTINGS]: j.A,
         [O.u9.CONTENT_AND_SOCIAL]: C.A,
         [O.u9.DATA_AND_PRIVACY]: N.A
     },
-    G = {
+    M = {
         [O.u9.REQUESTS]: I.A,
         [O.u9.ACTIVITY]: v.A,
         [O.u9.CONTENT_AND_SOCIAL]: C.A,
@@ -149,7 +149,7 @@ function V() {
     if (s.useEffect(() => {
             (0, h._)(S.q[n])
         }, [n]), a) return null;
-    let r = M[n];
+    let r = G[n];
     return (0, i.jsxs)("main", {
         className: D.kL,
         "aria-label": P.intl.string(L.default.RZqaJn),
@@ -188,7 +188,7 @@ function B() {
             n && t && void 0 === e && p.dm.updateSetting(!0)
         }, [n, t]), b) return null;
     let C = h !== O.u9.SETTINGS ? h : O.u9.ACTIVITY,
-        N = G[C];
+        N = M[C];
     return (0, i.jsx)(m.f5, {
         value: e,
         children: (0, i.jsxs)("main", {

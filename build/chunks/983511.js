@@ -1,6 +1,6 @@
 /** chunk id: 983511 params = (module,exports,require) **/
 n.d(t, {
-    default: () => G
+    default: () => M
 });
 var i = n(627968),
     s = n(64700),
@@ -113,7 +113,7 @@ function D(e) {
     }, [y]);
     let {
         premiumSubscriptionPlan: D,
-        premiumGuildPlan: M
+        premiumGuildPlan: G
     } = (0, o.cf)([S.A], () => {
         let e = S.A.get(t.planId);
         return {
@@ -121,22 +121,22 @@ function D(e) {
             premiumGuildPlan: null != e ? S.A.getForSkuAndInterval((0, N.mH)(j.pe.GUILD), e.interval, e.intervalCount) : null
         }
     }), {
-        analyticsLocations: G
+        analyticsLocations: M
     } = (0, _.Ay)(), [k] = (0, x.Kq)({
         subscriptionId: t.id,
         renewal: !0,
         currency: t.currency,
         paymentSourceId: t.paymentSourceId,
-        analyticsLocations: G,
+        analyticsLocations: M,
         analyticsLocation: m.A.GUILD_BOOST_SLOT_CANCELLATION_MODAL_CURRENT_INVOICE_PREVIEW
-    }), U = null != M ? (0, N.Om)(t, C[0]?.quantity ?? 0, M.id) : null, [w] = (0, x.Kq)({
+    }), U = null != G ? (0, N.Om)(t, C[0]?.quantity ?? 0, G.id) : null, [w] = (0, x.Kq)({
         subscriptionId: t.id,
         items: U,
         renewal: !0,
-        analyticsLocations: G,
+        analyticsLocations: M,
         analyticsLocation: m.A.GUILD_BOOST_SLOT_CANCELLATION_MODAL_RENEWAL_INVOICE_PREVIEW
     });
-    if (null == w || null == D || null == M || null == k) return (0, i.jsx)(d.y$y, {});
+    if (null == w || null == D || null == G || null == k) return (0, i.jsx)(d.y$y, {});
     let V = t.items.some(e => {
             let {
                 planId: t
@@ -207,7 +207,7 @@ function D(e) {
                 disabled: u,
                 onClick: async () => {
                     try {
-                        g(!0), b(null), await P(t, C, G, n), r()
+                        g(!0), b(null), await P(t, C, M, n), r()
                     } catch (e) {
                         b(O.intl.string(O.t["5mlOCW"])), g(!1)
                     }
@@ -219,7 +219,7 @@ function D(e) {
     })
 }
 
-function M(e) {
+function G(e) {
     let {
         premiumSubscription: t,
         fractionalPremiumInfo: n,
@@ -251,7 +251,7 @@ function M(e) {
     })
 }
 
-function G(e) {
+function M(e) {
     let t, {
         guildBoostSlot: n,
         transitionState: l,
@@ -297,7 +297,7 @@ function G(e) {
             });
             break;
         case 3:
-            t = (0, i.jsx)(M, {
+            t = (0, i.jsx)(G, {
                 premiumSubscription: r,
                 fractionalPremiumInfo: u,
                 onClose: a,

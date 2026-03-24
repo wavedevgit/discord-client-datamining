@@ -43,7 +43,7 @@ let C = async () => {
     } catch {} finally {
         await (0, u._D)()
     }
-}, E = async (e, t) => {
+}, y = async (e, t) => {
     try {
         await r.Bo.del({
             url: v.Rsh.UPDATE_USER_OFFER(e, t),
@@ -67,7 +67,7 @@ let C = async () => {
             discount: []
         }
     }
-}, y = async () => {
+}, E = async () => {
     try {
         await r.Bo.del({
             url: v.Rsh.USER_OFFERS,
@@ -103,7 +103,7 @@ function I(e) {
     }, [f]);
     let {
         id: S,
-        expires_at: y,
+        expires_at: E,
         redeemed_at: N,
         trial_id: I,
         subscription_trial: O,
@@ -115,10 +115,10 @@ function I(e) {
         return t === I
     })?.label ?? "Unknown";
     null != R && (k = `${k} from @${R.username}`);
-    let w = null != y,
-        D = null != y && new Date(y).getTime() < Date.now(),
-        M = O?.sku_id === b.pe.TIER_0,
-        P = async () => {
+    let w = null != E,
+        D = null != E && new Date(E).getTime() < Date.now(),
+        P = O?.sku_id === b.pe.TIER_0,
+        M = async () => {
             A(!0), w ? await L({
                 expiresAt: null
             }) : await (0, u.u1)(t), s(), A(!1)
@@ -161,7 +161,7 @@ function I(e) {
     }, [o, h]);
     let U = "Active";
     return w && (U = "Acked"), D && (U = "Expired"), (0, a.jsxs)("div", {
-        className: l()(j.Nr, M ? j.Qf : j.C1),
+        className: l()(j.Nr, P ? j.Qf : j.C1),
         children: [(0, a.jsx)("div", {
             className: l()(j.nM, j.S7),
             children: (0, a.jsx)(d.Heading, {
@@ -224,7 +224,7 @@ function I(e) {
                 children: ["Expires (", (0, c.A)(), "):"]
             }), (0, a.jsx)("input", {
                 type: "datetime-local",
-                value: (0, p.Xm)(y),
+                value: (0, p.Xm)(E),
                 onChange: e => {
                     L({
                         expiresAt: "" !== e.target.value ? new Date(e.target.value).toISOString() : null
@@ -247,7 +247,7 @@ function I(e) {
         }), (0, a.jsxs)("div", {
             className: j.fC,
             children: [(0, a.jsx)(d.DUT, {
-                onClick: P,
+                onClick: M,
                 className: l()(j.qS, j.vk, {
                     [j.R1]: w,
                     [j._7]: D
@@ -267,7 +267,7 @@ function I(e) {
             })]
         }), (0, a.jsx)(d.DUT, {
             onClick: async () => {
-                A(!0), await E(S, "trial"), s(), A(!1)
+                A(!0), await y(S, "trial"), s(), A(!1)
             },
             children: (0, a.jsx)(d.ucK, {
                 size: "md",
@@ -302,13 +302,13 @@ function O(e) {
         id: C,
         expires_at: T,
         applied_at: S,
-        discount_id: y,
+        discount_id: E,
         discount: N
     } = t, I = n.find(e => {
         let {
             value: t
         } = e;
-        return t === y
+        return t === E
     })?.label ?? "Unknown", O = null != T, R = null != T && new Date(T).getTime() < Date.now(), k = async () => {
         f(!0), O ? await w({
             expiresAt: null
@@ -379,12 +379,12 @@ function O(e) {
         }), (0, a.jsxs)(d.DUT, {
             className: l()(j.nM, j.QB),
             onClick: () => {
-                (0, x.C)(y, () => g(!0))
+                (0, x.C)(E, () => g(!0))
             },
             children: [(0, a.jsxs)(d.Text, {
                 variant: "eyebrow",
                 color: "text-default",
-                children: ["Discount: ", y]
+                children: ["Discount: ", E]
             }), h ? (0, a.jsx)(d.A9s, {
                 size: "md",
                 color: "currentColor",
@@ -437,7 +437,7 @@ function O(e) {
         }), (0, a.jsx)(d.DUT, {
             className: j.aR,
             onClick: async () => {
-                f(!0), await E(C, "discount"), s(), f(!1)
+                f(!0), await y(C, "discount"), s(), f(!1)
             },
             children: (0, a.jsx)(d.ucK, {
                 size: "md",
@@ -454,7 +454,7 @@ function O(e) {
 }
 
 function R() {
-    let [e, t] = i.useState([]), [n, s] = i.useState([]), [l, r] = i.useState(), [c, x] = i.useState(), [p, g] = i.useState([]), [b, E] = i.useState([]), [R, k] = i.useState(!0), [w, D] = i.useState(10080), [M, P] = i.useState([]), {
+    let [e, t] = i.useState([]), [n, s] = i.useState([]), [l, r] = i.useState(), [c, x] = i.useState(), [p, g] = i.useState([]), [b, y] = i.useState([]), [R, k] = i.useState(!0), [w, D] = i.useState(10080), [P, M] = i.useState([]), {
         entitlements: L,
         deleteFractionalPremium: U,
         refreshEntitlementList: B
@@ -462,7 +462,7 @@ function R() {
     i.useEffect(() => {
         B()
     }, [B]), i.useEffect(() => {
-        P(L.filter(e => e.sourceType === v.GD.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date))
+        M(L.filter(e => e.sourceType === v.GD.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date))
     }, [L]), i.useEffect(() => {
         (0 === e.length || 0 === n.length || R) && C().then(e => {
             let n = Object.keys(e.trial).map(t => ({
@@ -477,7 +477,7 @@ function R() {
         })
     }, [e, n, l, c, R]), i.useEffect(() => {
         R && (k(!1), h.A.forceReset(), (0, u._D)(), S().then(e => {
-            g(e.trial.sort((e, t) => e.id.localeCompare(t.id))), E(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
+            g(e.trial.sort((e, t) => e.id.localeCompare(t.id))), y(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
         }))
     }, [R]);
     let G = async () => {
@@ -485,8 +485,8 @@ function R() {
     }, F = async () => {
         null != c && (await T(c, "discount"), k(!0))
     }, V = async () => {
-        await y(), k(!0)
-    }, H = async () => {
+        await E(), k(!0)
+    }, W = async () => {
         let e = new Date(Date.now() + 60 * w * 1e3).toISOString();
         await N(e), B()
     };
@@ -632,10 +632,10 @@ function R() {
                     }), (0, a.jsx)(d.Button, {
                         variant: "primary",
                         text: "Create",
-                        onClick: H
+                        onClick: W
                     })]
                 })
-            }), M.length > 0 && (0, a.jsxs)("div", {
+            }), P.length > 0 && (0, a.jsxs)("div", {
                 children: [(0, a.jsx)(d.Text, {
                     style: {
                         marginTop: "15px"
@@ -643,7 +643,7 @@ function R() {
                     variant: "text-md/bold",
                     children: "Active reverse trial"
                 }), (0, a.jsx)("div", {
-                    children: M.map(e => (0, a.jsx)(_.I, {
+                    children: P.map(e => (0, a.jsx)(_.I, {
                         entitlement: e,
                         active: !0,
                         onDelete: () => U(e.id)

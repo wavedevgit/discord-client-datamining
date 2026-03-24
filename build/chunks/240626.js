@@ -126,8 +126,8 @@ let R = function(e) {
         P = A && !L,
         {
             appliedGuildBoostSlots: D,
-            unappliedGuildBoostSlots: M,
-            numActiveGuildBoostSlots: G,
+            unappliedGuildBoostSlots: G,
+            numActiveGuildBoostSlots: M,
             hasCooldownBoosts: k,
             allGuildBoostsAreOnCooldown: U
         } = s.useMemo(() => {
@@ -148,7 +148,7 @@ let R = function(e) {
         }, [d]),
         w = null != g ? T.Ay.getNumIncludedPremiumGuildSubscriptionSlots(g.planId) : 0,
         V = Math.max(0, w - D.length),
-        B = G > w,
+        B = M > w,
         F = w === d.length,
         H = F ? V : 1,
         z = s.useMemo(() => {
@@ -159,9 +159,9 @@ let R = function(e) {
             }, t));
             return e
         }, [H, b]),
-        Y = s.useMemo(() => M.find(e => e.isAvailable()), [M]);
-    if (0 === M.length) return null;
-    let X = M.length;
+        Y = s.useMemo(() => G.find(e => e.isAvailable()), [G]);
+    if (0 === G.length) return null;
+    let X = G.length;
     if (t = F ? v.intl.formatToPlainString(U ? v.t["3DW6Dc"] : v.t["/u15Qc"], {
             numUnappliedGuildBoostSlots: X
         }) : v.intl.formatToPlainString(U ? v.t["3DW6Dc"] : v.t.BPadnO, {
@@ -231,7 +231,7 @@ let R = function(e) {
                 })]
             }), (!F || k) && (0, i.jsx)("ul", {
                 className: I.LU,
-                children: M.map(e => (0, i.jsx)(j, {
+                children: G.map(e => (0, i.jsx)(j, {
                     guildBoostSlot: e,
                     isCancellable: B,
                     onCancel: y,

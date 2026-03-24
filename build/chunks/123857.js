@@ -58,7 +58,7 @@ function D() {
     })
 }
 
-function M() {
+function G() {
     let e = (0, l.bG)([_.A], () => _.A.isPreview),
         t = (0, f.V)()?.subscription_trial?.sku_id === O.pe.TIER_2;
     return !e || t ? null : (0, i.jsxs)("div", {
@@ -71,7 +71,7 @@ function M() {
     })
 }
 
-function G(e) {
+function M(e) {
     let {
         children: t
     } = e, n = (0, l.bG)([_.A], () => _.A.isPreview), {
@@ -113,10 +113,10 @@ let U = () => (0, i.jsx)("div", {
         type: A.v0.SETTINGS,
         children: [(0, i.jsx)(A.Ay.Basic, {
             className: L.a6
-        }), (0, i.jsx)(w, {}), (0, i.jsx)(g.A, {}), (0, i.jsxs)(G, {
+        }), (0, i.jsx)(w, {}), (0, i.jsx)(g.A, {}), (0, i.jsxs)(M, {
             children: [(0, i.jsx)(A.Ay.Gradient, {
                 disabled: !1,
-                renderCTAButtons: () => (0, i.jsx)(M, {})
+                renderCTAButtons: () => (0, i.jsx)(G, {})
             }), (0, i.jsx)(k, {})]
         })]
     })
@@ -159,10 +159,10 @@ function B(e) {
     } = e;
     return (0, i.jsx)(A.Ay, {
         type: A.v0.SETTINGS,
-        children: (0, i.jsxs)(G, {
+        children: (0, i.jsxs)(M, {
             children: [(0, i.jsx)(A.ew, {
                 isCoachmark: !1,
-                renderCTAButtons: () => (0, i.jsx)(M, {}),
+                renderCTAButtons: () => (0, i.jsx)(G, {}),
                 headingClassName: L.EK,
                 titleTextVariant: "text-md/semibold",
                 titleClassName: L.cI,

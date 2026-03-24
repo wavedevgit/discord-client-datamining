@@ -37,8 +37,8 @@ let y = s.memo(s.forwardRef((e, t) => {
         analyticsLocations: y
     } = (0, m.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), O = (0, E.N)(), R = (0, A.A)(), L = null != R, P = (0, o.bG)([c.A], () => c.A.useReducedMotion), {
         visibilityPercentageRef: D,
-        visibilityPercentage: M
-    } = (0, C.U)(!P), G = (0, o.bG)([_.A], () => _.A.affinities), k = !L && G.length > 0, U = (0, x.c)(r.C.MARKETING_PAGE_BANNER), w = null != U && "marketingPageBanner" === U.properties.properties.oneofKind, V = (0, g.ar)() && !w;
+        visibilityPercentage: G
+    } = (0, C.U)(!P), M = (0, o.bG)([_.A], () => _.A.affinities), k = !L && M.length > 0, U = (0, x.c)(r.C.MARKETING_PAGE_BANNER), w = null != U && "marketingPageBanner" === U.properties.properties.oneofKind, V = (0, g.ar)() && !w;
     return (0, i.jsx)(m.f5, {
         value: y,
         children: (0, i.jsx)("div", {
@@ -50,7 +50,7 @@ let y = s.memo(s.forwardRef((e, t) => {
                 children: (0, i.jsxs)("div", {
                     className: j.hQ,
                     children: [(0, i.jsx)(N.A, {
-                        containerVisibilityPercentage: M
+                        containerVisibilityPercentage: G
                     }), V && (0, i.jsx)("div", {
                         className: j.XN,
                         children: (0, i.jsx)(b.A, {

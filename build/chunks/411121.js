@@ -1,6 +1,6 @@
 /** chunk id: 411121 params = (module,exports,require) **/
 n.d(t, {
-    A: () => M
+    A: () => G
 });
 var i = n(627968),
     s = n(64700),
@@ -269,7 +269,7 @@ class D extends s.PureComponent {
         })
     }
 }
-let M = d.Ay.connectStores([N.A, b.A, S.A, A.A, C.A, E.default], e => {
+let G = d.Ay.connectStores([N.A, b.A, S.A, A.A, C.A, E.default], e => {
     let {
         skuId: t,
         subscriptionPlanId: n,

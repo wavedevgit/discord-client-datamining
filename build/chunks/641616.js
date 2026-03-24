@@ -25,9 +25,9 @@ var x = n(173628),
     A = n(866001),
     C = n(855936),
     T = n(489967),
-    E = n(2915),
+    y = n(2915),
     S = n(986789),
-    y = n(821306),
+    E = n(821306),
     N = n(226936),
     I = n(27126),
     O = n(498336),
@@ -35,16 +35,16 @@ var x = n(173628),
     k = n(501379),
     w = n(517538),
     D = n(211162),
-    M = n(436102),
-    P = n(435459),
+    P = n(436102),
+    M = n(435459),
     L = n(68738),
     U = n(912878),
     B = n(477102),
     G = n(465895),
     F = n(484762),
     V = n(231207),
-    H = n(12171),
-    W = n(706712),
+    W = n(12171),
+    H = n(706712),
     K = n(4807),
     z = n(329482),
     $ = n(189244),
@@ -125,7 +125,7 @@ function ec() {
             name: "Performance",
             group: er.fu.DEVELOPMENT,
             tags: ["fps", "frames", "gateway", "telemetry"],
-            render: () => (0, a.jsx)(W.Ay, {})
+            render: () => (0, a.jsx)(H.Ay, {})
         }), e.push({
             id: "age_verification",
             name: "Age Verification",
@@ -178,7 +178,7 @@ function ec() {
             name: "Lottie",
             group: er.fu.UI,
             tags: ["animation"],
-            render: () => (0, a.jsx)(P.A, {})
+            render: () => (0, a.jsx)(M.A, {})
         }), e.push({
             id: "intl",
             name: "Intl",
@@ -205,7 +205,7 @@ function ec() {
             id: "overlays",
             name: "Dev Overlays",
             group: er.fu.DEVELOPMENT,
-            render: () => (0, a.jsx)(y.A, {
+            render: () => (0, a.jsx)(E.A, {
                 devSettingsCategory: h.xW.OVERLAYS
             })
         }), e.push({
@@ -218,7 +218,7 @@ function ec() {
             id: "reporting",
             name: "Reporting",
             group: er.fu.EXPERIMENTS,
-            render: () => (0, a.jsx)(y.A, {
+            render: () => (0, a.jsx)(E.A, {
                 devSettingsCategory: h.xW.REPORTING
             })
         }), e.push({
@@ -243,7 +243,7 @@ function ec() {
             name: "Layers",
             group: er.fu.UI,
             tags: ["verification", "safety flow"],
-            render: () => (0, a.jsx)(M.A, {})
+            render: () => (0, a.jsx)(P.A, {})
         }), e.push({
             id: "affinity",
             name: "Affinity",
@@ -293,7 +293,7 @@ function ec() {
             name: "Payments",
             group: er.fu.BILLING,
             tags: ["stripe", "cards", "test cards"],
-            render: () => (0, a.jsx)(H.A, {})
+            render: () => (0, a.jsx)(W.A, {})
         }), e.push({
             id: "subscriptions",
             name: "Subscriptions",
@@ -305,7 +305,7 @@ function ec() {
             name: "Fractional Nitro",
             group: er.fu.PREMIUM,
             tags: ["entitlements", "quests"],
-            render: () => (0, a.jsx)(E.A, {})
+            render: () => (0, a.jsx)(y.A, {})
         })), e.push({
             id: "gifting_intent",
             name: "Gifting Intent",

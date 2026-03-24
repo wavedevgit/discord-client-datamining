@@ -26,7 +26,7 @@ var a = n(627968),
     C = n(346858),
     T = n(661251);
 
-function E(e) {
+function y(e) {
     let {
         resizableNode: t,
         onResize: n,
@@ -59,7 +59,7 @@ function S() {
     })
 }
 
-function y(e) {
+function E(e) {
     let {
         isPopout: t = !1
     } = e, n = (0, v.x)(), {
@@ -124,13 +124,13 @@ function N() {
             width: n
         },
         "data-app-right-panel": !0,
-        children: [(0, a.jsx)(E, {
+        children: [(0, a.jsx)(y, {
             resizableNode: e,
             onResize: s,
             onResizeEnd: l
         }), (0, a.jsx)("div", {
             className: C.wp,
-            children: (0, a.jsx)(y, {})
+            children: (0, a.jsx)(E, {})
         })]
     })
 }
@@ -140,7 +140,7 @@ function I() {
         className: l()(C.kL, C.PQ),
         children: (0, a.jsx)("div", {
             className: C.wp,
-            children: (0, a.jsx)(y, {})
+            children: (0, a.jsx)(E, {})
         })
     }) : (0, a.jsx)("div", {
         className: C.kL,
@@ -169,7 +169,7 @@ function O(e) {
     } = e;
     return t ? (0, a.jsx)(I, {}) : n ? (0, a.jsx)("div", {
         className: C.jC,
-        children: (0, a.jsx)(y, {
+        children: (0, a.jsx)(E, {
             isPopout: !0
         })
     }) : (0, a.jsx)(N, {})

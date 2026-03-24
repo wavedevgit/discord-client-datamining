@@ -24,9 +24,9 @@ var a = n(627968),
     A = n(603047),
     C = n(435738),
     T = n(99753),
-    E = n(868068),
+    y = n(868068),
     S = n(476398),
-    y = n(405311),
+    E = n(405311),
     N = n(424994),
     I = n(750100),
     O = n(661251);
@@ -104,9 +104,9 @@ function w() {
         })),
         d = (0, u.bG)([T.A], () => T.A.getFeedState(N.X1.GLOBAL_FEED)?.loading === !0),
         [k, w] = i.useState(""),
-        M = (0, u.bG)([b.A, p.A], () => parseInt(k) > 0 ? k : b.A.searchGamesByName(k)[0] ?? p.A.getApplicationByName(k)?.id, [k]),
-        P = (0, v.A)({
-            applicationId: M,
+        P = (0, u.bG)([b.A, p.A], () => parseInt(k) > 0 ? k : b.A.searchGamesByName(k)[0] ?? p.A.getApplicationByName(k)?.id, [k]),
+        M = (0, v.A)({
+            applicationId: P,
             location: "DevToolsContentInventory",
             source: f.Ob.DevTools
         }),
@@ -131,7 +131,7 @@ function w() {
                 }), r.length > 0 && (0, a.jsx)(_.A, {
                     columns: R,
                     data: r
-                }), (0, a.jsx)(y.A, {}), (0, a.jsx)(h.Button, {
+                }), (0, a.jsx)(E.A, {}), (0, a.jsx)(h.Button, {
                     variant: "primary",
                     text: "Refresh Now",
                     fullWidth: !0,
@@ -195,10 +195,10 @@ function w() {
                     placeholder: "App ID or full name",
                     onChange: e => (0 === e.length || e.length >= 18) && w(e),
                     onKeyDown: e => {
-                        "Enter" === e.key && (k === e.currentTarget.value ? P?.(e) : w(e.currentTarget.value))
+                        "Enter" === e.key && (k === e.currentTarget.value ? M?.(e) : w(e.currentTarget.value))
                     },
-                    error: k.length > 0 && null == P ? `No game profile for ${M??k+" - try by id"}.` : void 0,
-                    helperText: null != P ? "Game profile found" : void 0
+                    error: k.length > 0 && null == M ? `No game profile for ${P??k+" - try by id"}.` : void 0,
+                    helperText: null != M ? "Game profile found" : void 0
                 }), (0, a.jsx)("ul", {
                     children: U.map(e => (0, a.jsx)("li", {
                         children: (0, a.jsx)(D, {
@@ -213,7 +213,7 @@ function w() {
                     children: "Activity Sharing"
                 }), (0, a.jsx)(h.l6P, {
                     label: "Force show game",
-                    options: E.K.map(e => ({
+                    options: y.K.map(e => ({
                         label: e,
                         value: e,
                         id: e

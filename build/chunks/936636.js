@@ -1,7 +1,7 @@
 /** chunk id: 936636 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f,
-    s: () => g
+    A: () => g,
+    s: () => f
 });
 var a = n(627968);
 n(64700);
@@ -78,7 +78,7 @@ function _(e) {
     })
 }
 
-function g(e) {
+function f(e) {
     let {
         platform: t
     } = e;
@@ -90,7 +90,7 @@ function g(e) {
     }, t)
 }
 
-function f(e) {
+function g(e) {
     let {
         detectedGame: t,
         className: n

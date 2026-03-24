@@ -14,10 +14,10 @@ var a = n(627968),
     m = n(562153),
     x = n(420706),
     _ = n(322789),
-    g = n(506326),
-    f = n(985018),
-    p = n(505502),
-    h = n(851822);
+    f = n(506326),
+    g = n(985018),
+    h = n(505502),
+    p = n(851822);
 let v = e => {
     let {
         entry: t,
@@ -26,28 +26,28 @@ let v = e => {
         onRequestOpen: v,
         disableActivityProfileLinks: A,
         customCTA: j,
-        popoutClassname: I,
-        popoutPosition: b = "right"
-    } = e, C = l.useRef(null), E = (0, s.bG)([d.A, c.A], () => c.A.getChannel(d.A.getChannelId())), N = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
+        popoutClassname: E,
+        popoutPosition: I = "right"
+    } = e, C = l.useRef(null), N = (0, s.bG)([d.A, c.A], () => c.A.getChannel(d.A.getChannelId())), b = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
         nick: T,
         avatar: S
     } = l.useMemo(() => {
-        let e = N?.getAvatarURL(E?.guild_id, 48, !1);
+        let e = b?.getAvatarURL(N?.guild_id, 48, !1);
         return {
-            nick: m.Ay.getName(E?.guild_id, E?.id, N),
+            nick: m.Ay.getName(N?.guild_id, N?.id, b),
             avatar: e
         }
-    }, [N, E]);
-    return null == N ? null : (0, a.jsx)(o.YNO, {
+    }, [b, N]);
+    return null == b ? null : (0, a.jsx)(o.YNO, {
         targetElementRef: C,
-        position: b,
+        position: I,
         renderPopout: e => {
             let {
                 closePopout: l,
                 updatePosition: r
             } = e;
             return (0, a.jsx)("div", {
-                className: I,
+                className: E,
                 children: (0, a.jsx)(x.Oo, {
                     entry: t,
                     closePopout: l,
@@ -68,7 +68,7 @@ let v = e => {
         children: e => (0, a.jsx)(o.DUT, {
             innerRef: C,
             ...e,
-            className: p.GA,
+            className: h.GA,
             children: (0, a.jsx)(o.vN3, {
                 offset: {
                     top: 4,
@@ -78,29 +78,29 @@ let v = e => {
                 },
                 children: (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)("img", {
-                        className: p.my,
+                        className: h.my,
                         src: S,
-                        alt: f.intl.formatToPlainString(f.t.IzVXxY, {
+                        alt: g.intl.formatToPlainString(g.t.IzVXxY, {
                             userName: T
                         })
                     }), (0, a.jsx)("div", {
-                        className: p.Su,
+                        className: h.Su,
                         children: (0, a.jsxs)("div", {
-                            className: r()(h.fi, h.Kt),
+                            className: r()(p.fi, p.Kt),
                             children: [(0, a.jsx)(o.Text, {
                                 variant: "text-md/medium",
                                 color: "text-strong",
                                 lineClamp: 1,
                                 children: T
-                            }), (0, a.jsx)(g.mG, {
-                                location: g.N5.APP_LAUNCHER,
+                            }), (0, a.jsx)(f.mG, {
+                                location: f.N5.APP_LAUNCHER,
                                 children: _.n.map((e, n) => (0, a.jsx)(e, {
                                     entry: t
                                 }, n))
                             })]
                         })
                     }), null != j ? j : (0, a.jsx)("div", {
-                        className: p.Br,
+                        className: h.Br,
                         children: (0, a.jsx)(o.W4J, {
                             size: "sm"
                         })

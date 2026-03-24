@@ -32,12 +32,12 @@ let A = e => {
     } = i.useContext(g.T), {
         expansionSpring: T
     } = i.useContext(p.PW), {
-        completionSpring: E,
+        completionSpring: y,
         startCompletionAnimation: S
-    } = (0, _.R)(), y = A.userStatus?.completedAt != null, N = i.useRef(!1), I = (0, c.bG)([m.A], () => m.A.useReducedMotion), O = i.useRef(null), R = (0, c.bG)([h.A], () => h.A.hasLayers()), k = (0, u.A)(R), [w, D] = i.useState(null), [M, P] = i.useState(null), L = i.useRef(new r.OH({
+    } = (0, _.R)(), E = A.userStatus?.completedAt != null, N = i.useRef(!1), I = (0, c.bG)([m.A], () => m.A.useReducedMotion), O = i.useRef(null), R = (0, c.bG)([h.A], () => h.A.hasLayers()), k = (0, u.A)(R), [w, D] = i.useState(null), [P, M] = i.useState(null), L = i.useRef(new r.OH({
         gravity: 0,
         wind: 0
-    })), U = (0, r.f9)(w, M), B = i.useMemo(() => [f.r3], []), G = i.useCallback(() => {
+    })), U = (0, r.f9)(w, P), B = i.useMemo(() => [f.r3], []), G = i.useCallback(() => {
         if (I) return;
         let e = n.current,
             t = O.current;
@@ -92,28 +92,28 @@ let A = e => {
         }
     }, [n, O, U, I]), F = (0, u.A)(C);
     return (i.useEffect(() => {
-        y && C && !F && (S(), G())
-    }, [C, y, S, G, F]), i.useEffect(() => {
-        y && !R && k && setTimeout(() => {
+        E && C && !F && (S(), G())
+    }, [C, E, S, G, F]), i.useEffect(() => {
+        E && !R && k && setTimeout(() => {
             S(), G()
         }, 200)
-    }, [y, k, R, S, G]), i.useEffect(() => {
-        U.isReady && (!N.current && y && (S(), G()), N.current = y)
-    }, [y, N, G, S, U]), i.useEffect(() => {
-        s && y && (S(), G())
-    }, [s, y, S, G]), I) ? null : (0, a.jsxs)("div", {
+    }, [E, k, R, S, G]), i.useEffect(() => {
+        U.isReady && (!N.current && E && (S(), G()), N.current = E)
+    }, [E, N, G, S, U]), i.useEffect(() => {
+        s && E && (S(), G())
+    }, [s, E, S, G]), I) ? null : (0, a.jsxs)("div", {
         className: b.iE,
         "aria-hidden": "true",
         ref: O,
         children: [(0, a.jsx)(d.animated.div, {
             className: b.Tp,
             style: {
-                opacity: (0, x.a)(E)
+                opacity: (0, x.a)(y)
             }
         }), (0, a.jsx)(d.animated.div, {
             className: l()(b.sJ, b.ix),
             style: {
-                opacity: (0, x.a)(E)
+                opacity: (0, x.a)(y)
             }
         }), (0, a.jsxs)(d.animated.div, {
             className: b.KG,
@@ -128,7 +128,7 @@ let A = e => {
                 className: b.t_,
                 environment: L.current
             }), (0, a.jsx)(r.K_, {
-                ref: P,
+                ref: M,
                 sprites: [j],
                 colors: B,
                 spriteWidth: v.wn,
@@ -136,7 +136,7 @@ let A = e => {
             }), null != t.current && (0, o.createPortal)((0, a.jsx)(d.animated.div, {
                 className: l()(b.sJ, b.d7),
                 style: {
-                    opacity: (0, x.a)(E)
+                    opacity: (0, x.a)(y)
                 }
             }), t.current)]
         })]

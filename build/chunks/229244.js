@@ -24,9 +24,9 @@ var a = n(627968),
     A = n(439075),
     C = n(223344),
     T = n(589939),
-    E = n(443960),
+    y = n(443960),
     S = n(899860),
-    y = n(633581),
+    E = n(633581),
     N = n(508575),
     I = n(847807),
     O = n(364329),
@@ -34,8 +34,8 @@ var a = n(627968),
     k = n(927813),
     w = n(350246);
 let D = ["png", "gif", "webp"],
-    M = [...D, "jpg", "jpeg"],
-    P = Array.from(new Set([...M, "gif", "mp4", "webm"]));
+    P = [...D, "jpg", "jpeg"],
+    M = Array.from(new Set([...P, "gif", "mp4", "webm"]));
 
 function L() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
@@ -138,7 +138,7 @@ function G() {
             ...e,
             preview: !0
         })
-    }, []), [u, U] = i.useState(O.b.UNENROLLED), [G, F] = i.useState(!1), [V, H] = i.useState(!1), [W, K] = i.useState(null), z = (e = t.config, (0, r.YW)(e).with({
+    }, []), [u, U] = i.useState(O.b.UNENROLLED), [G, F] = i.useState(!1), [V, W] = i.useState(!1), [H, K] = i.useState(null), z = (e = t.config, (0, r.YW)(e).with({
         configVersion: 2
     }, e => e.rewardsConfig.rewards).exhaustive());
 
@@ -285,7 +285,7 @@ function G() {
             children: "Quest Preview Tool"
         }), (0, a.jsx)("div", {
             className: w.OA,
-            children: (0, a.jsx)(y.A, {
+            children: (0, a.jsx)(E.A, {
                 onSelect: function(e) {
                     K(e), null == e || (U(function(e) {
                         if (null == e.userStatus) return O.b.UNENROLLED;
@@ -297,7 +297,7 @@ function G() {
                         return n / a >= 1 ? O.b.COMPLETED_100 : n / a >= .75 ? O.b.COMPLETED_75 : n / a >= .5 ? O.b.COMPLETED_50 : n / a >= .25 ? O.b.COMPLETED_25 : O.b.ENROLLED
                     }(e)), c(e))
                 },
-                quest: W
+                quest: H
             })
         }), (0, a.jsx)(m.Heading, {
             variant: "heading-md/semibold",
@@ -375,60 +375,60 @@ function G() {
             children: "Assets"
         }), (0, a.jsxs)("div", {
             className: w.OA,
-            children: [(0, a.jsx)(E.A, {
+            children: [(0, a.jsx)(y.A, {
                 title: "Hero",
                 assetKey: "hero",
                 onFileChange: $,
-                filters: P,
+                filters: M,
                 initialValue: t.config.assets.hero
-            }), (0, a.jsx)(E.A, {
+            }), (0, a.jsx)(y.A, {
                 title: "Hero Video (optional)",
                 assetKey: "heroVideo",
                 onFileChange: $,
-                filters: P,
+                filters: M,
                 initialValue: t.config.assets.heroVideo ?? void 0
-            }), (0, a.jsx)(E.A, {
+            }), (0, a.jsx)(y.A, {
                 title: "Quest Bar Hero",
                 assetKey: "questBarHero",
                 onFileChange: $,
-                filters: P,
+                filters: M,
                 initialValue: t.config.assets.questBarHero
-            }), (0, a.jsx)(E.A, {
+            }), (0, a.jsx)(y.A, {
                 title: "Quest Bar Hero Video (optional)",
                 assetKey: "questBarHeroVideo",
                 onFileChange: $,
-                filters: P,
+                filters: M,
                 initialValue: t.config.assets.questBarHeroVideo ?? void 0
-            }), (0, a.jsx)(E.A, {
+            }), (0, a.jsx)(y.A, {
                 title: "Game Tile",
                 assetKey: "gameTile",
                 onFileChange: $,
-                filters: [...M, "svg"],
+                filters: [...P, "svg"],
                 initialValue: t.config.assets.gameTile
-            }), (0, a.jsx)(E.A, {
+            }), (0, a.jsx)(y.A, {
                 title: "Logotype",
                 assetKey: "logotype",
                 onFileChange: $,
                 filters: [...D, "svg"],
                 initialValue: t.config.assets.logotype
             }), ee && (0, a.jsxs)(a.Fragment, {
-                children: [(0, a.jsx)(E.A, {
+                children: [(0, a.jsx)(y.A, {
                     title: "Quest Video",
                     assetKey: "videoPlayerVideo",
                     onFileChange: q,
-                    filters: P,
+                    filters: M,
                     initialValue: et?.assets.video.url
-                }), (0, a.jsx)(E.A, {
+                }), (0, a.jsx)(y.A, {
                     title: "Quest Video (Low Resolution)",
                     assetKey: "videoPlayerVideoLowRes",
                     onFileChange: q,
-                    filters: P,
+                    filters: M,
                     initialValue: et?.assets.videoLowRes?.url
-                }), (0, a.jsx)(E.A, {
+                }), (0, a.jsx)(y.A, {
                     title: "Video Player Thumbnail (optional)",
                     assetKey: "videoPlayerThumbnail",
                     onFileChange: q,
-                    filters: M,
+                    filters: P,
                     initialValue: et?.assets.video.thumbnail
                 })]
             })]
@@ -449,7 +449,7 @@ function G() {
                     assetKey: "nameWithArticle",
                     onMessageChange: (e, t) => Q(e, t, n),
                     initialValue: e.messages.nameWithArticle
-                }), e.type !== d.l.VIRTUAL_CURRENCY && (0, a.jsx)(E.A, {
+                }), e.type !== d.l.VIRTUAL_CURRENCY && (0, a.jsx)(y.A, {
                     title: "Asset",
                     assetKey: "asset",
                     onFileChange: (e, a) => (function(e, n, a) {
@@ -473,7 +473,7 @@ function G() {
                             })
                         }
                     })(e, a, n),
-                    filters: P,
+                    filters: M,
                     initialValue: e.asset
                 }), (0, a.jsxs)(m.BJc, {
                     direction: "vertical",
@@ -681,7 +681,7 @@ function G() {
                 children: (0, a.jsx)(m.dOG, {
                     label: "Invalid Quests Embed:",
                     checked: V,
-                    onChange: H
+                    onChange: W
                 })
             }), ee && (0, a.jsxs)(T.A, {
                 withBorder: !0,

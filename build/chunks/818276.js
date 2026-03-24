@@ -29,7 +29,7 @@ let v = i.forwardRef(function(e, t) {
         taskDetails: j,
         isExpanded: A,
         isExpansionAnimationComplete: C
-    } = i.useContext(x.T), T = b.userStatus?.completedAt != null, E = (0, d.I3)(b), S = i.useRef(null), y = b.userStatus?.enrolledAt != null, N = null != E ? E.percentComplete : j.percentComplete, [I, O] = i.useState(!1);
+    } = i.useContext(x.T), T = b.userStatus?.completedAt != null, y = (0, d.I3)(b), S = i.useRef(null), E = b.userStatus?.enrolledAt != null, N = null != y ? y.percentComplete : j.percentComplete, [I, O] = i.useState(!1);
     return (0, a.jsxs)(a.Fragment, {
         children: [T && (0, a.jsx)(h.A, {
             overlayRef: s,
@@ -40,7 +40,7 @@ let v = i.forwardRef(function(e, t) {
             "aria-hidden": A && C,
             className: l()(n, f.hR, {
                 [f.Ag]: A,
-                [f.s]: y
+                [f.s]: E
             }),
             style: {
                 opacity: (0, c.a)(v.to({
@@ -57,7 +57,7 @@ let v = i.forwardRef(function(e, t) {
                     children: [(0, a.jsx)(g.A, {}), (0, a.jsx)("div", {
                         className: f.yF
                     })]
-                }), y ? (0, a.jsx)(p.A, {
+                }), E ? (0, a.jsx)(p.A, {
                     contentLocation: "collapsed",
                     progressBarRef: S,
                     isExpanded: !1,

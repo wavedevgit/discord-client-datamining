@@ -56,7 +56,7 @@ function P(e) {
     } = (0, m.Ay)(u.A.USER_SETTINGS_GUILD_PROFILE), P = (0, r.bG)([S.default], () => {
         let e = S.default.getCurrentUser();
         return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-    }), D = (0, r.bG)([T.Ay], () => null != t ? T.Ay.getMember(t.id, P.id) : null), M = (0, r.bG)([f.A], () => !f.A.isFetchingProfile(P.id, t?.id)), G = (0, r.bG)([E.A], () => E.A.hidePersonalInformation), {
+    }), D = (0, r.bG)([T.Ay], () => null != t ? T.Ay.getMember(t.id, P.id) : null), G = (0, r.bG)([f.A], () => !f.A.isFetchingProfile(P.id, t?.id)), M = (0, r.bG)([E.A], () => E.A.hidePersonalInformation), {
         pendingAvatar: k,
         pendingNameplate: U,
         ...w
@@ -71,7 +71,7 @@ function P(e) {
     }), {
         pendingDisplayNameStyles: F
     } = (0, g.B0)(P, t?.id);
-    return (s.useEffect(() => () => d.h.wait(N.IM), []), G) ? (0, i.jsx)(c.A, {}) : M ? (0, i.jsxs)(m.f5, {
+    return (s.useEffect(() => () => d.h.wait(N.IM), []), M) ? (0, i.jsx)(c.A, {}) : G ? (0, i.jsxs)(m.f5, {
         value: l,
         children: [(0, i.jsx)(o.Text, {
             variant: "text-sm/normal",

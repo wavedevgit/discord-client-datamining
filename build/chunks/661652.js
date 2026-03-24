@@ -24,9 +24,9 @@ var a = n(627968),
     A = n(134861),
     C = n(157257),
     T = n(985018),
-    E = n(271469),
+    y = n(271469),
     S = n(661251),
-    y = n(508474);
+    E = n(508474);
 let N = [{
     id: "unset",
     label: "Unset",
@@ -56,8 +56,8 @@ function I() {
         k = (0, r.bG)([f.Ay, C.A], () => (0, v.A)(f.Ay, C.A)),
         w = (0, _.h)(O),
         D = (0, h.g)(w),
-        M = (0, r.yK)([g.A], () => w?.linkedGames?.map(e => g.A.getApplication(e.id)).filter(e => null != e) ?? []),
-        P = (0, x.RD)(w, {
+        P = (0, r.yK)([g.A], () => w?.linkedGames?.map(e => g.A.getApplication(e.id)).filter(e => null != e) ?? []),
+        M = (0, x.RD)(w, {
             allowedFlows: [x._M.RPC],
             debug: !0
         }),
@@ -80,9 +80,9 @@ function I() {
         });
     return (0, a.jsxs)("div", {
         ref: s,
-        className: l()(S.nd, y.n),
+        className: l()(S.nd, E.n),
         children: [(0, a.jsxs)("div", {
-            className: y.k,
+            className: E.k,
             children: [(0, a.jsx)(d.Heading, {
                 variant: "heading-lg/normal",
                 children: "Settings"
@@ -95,7 +95,7 @@ function I() {
                 fullWidth: !0
             })]
         }), (0, a.jsxs)("div", {
-            className: y.k,
+            className: E.k,
             children: [(0, a.jsx)(d.Heading, {
                 variant: "heading-lg/normal",
                 children: "Application"
@@ -112,35 +112,35 @@ function I() {
                 children: ["Application Name: ", null != w ? w.name : "N/A"]
             }), (0, a.jsxs)(d.Text, {
                 variant: "text-md/normal",
-                children: ["Linked Games:", " ", M.length > 0 ? M.map(e => (0, h.t)(w)?.id === e.id ? `${e.name}*` : e.name).join(", ") : "N/A"]
+                children: ["Linked Games:", " ", P.length > 0 ? P.map(e => (0, h.t)(w)?.id === e.id ? `${e.name}*` : e.name).join(", ") : "N/A"]
             })]
         }), (0, a.jsxs)("div", {
-            className: y.k,
+            className: E.k,
             children: [(0, a.jsx)(d.Heading, {
                 variant: "heading-lg/normal",
                 children: "Authorization"
             }), (0, a.jsx)(p.VT, {
-                overallStatus: P.debug.isSubscribedToAuthorizeRequest ? p.nW.OVERALL_GOOD : U ? p.nW.WARN : p.nW.OVERALL_BAD,
-                name: T.intl.string(E.default.AGLx00),
+                overallStatus: M.debug.isSubscribedToAuthorizeRequest ? p.nW.OVERALL_GOOD : U ? p.nW.WARN : p.nW.OVERALL_BAD,
+                name: T.intl.string(y.default.AGLx00),
                 steps: [{
                     status: U ? p.nW.GOOD : p.nW.BAD,
-                    text: T.intl.string(E.default.kxF9br),
-                    description: U ? null : T.intl.string(E.default.PFxxJa),
+                    text: T.intl.string(y.default.kxF9br),
+                    description: U ? null : T.intl.string(y.default.PFxxJa),
                     learnMoreLink: U ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
                 }, {
-                    status: P.debug.isSubscribedToAuthorizeRequest ? p.nW.GOOD : U ? p.nW.WARN : p.nW.BAD,
-                    text: T.intl.string(E.default.S94dzs),
-                    description: P.debug.isSubscribedToAuthorizeRequest || !U ? null : T.intl.string(E.default.aTULMB),
-                    learnMoreLink: P.debug.isSubscribedToAuthorizeRequest || !U ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
+                    status: M.debug.isSubscribedToAuthorizeRequest ? p.nW.GOOD : U ? p.nW.WARN : p.nW.BAD,
+                    text: T.intl.string(y.default.S94dzs),
+                    description: M.debug.isSubscribedToAuthorizeRequest || !U ? null : T.intl.string(y.default.aTULMB),
+                    learnMoreLink: M.debug.isSubscribedToAuthorizeRequest || !U ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
                 }],
                 isChosen: B.chosenFlow === x._M.RPC
             }), (0, a.jsx)(p.VT, {
                 overallStatus: L.debug.hasConnectionEntrypointUrl ? p.nW.OVERALL_GOOD : p.nW.OVERALL_BAD,
-                name: T.intl.string(E.default.K3ObrU),
+                name: T.intl.string(y.default.K3ObrU),
                 steps: [{
                     status: L.debug.hasConnectionEntrypointUrl ? p.nW.GOOD : p.nW.BAD,
-                    text: T.intl.string(E.default["8a7IrV"]),
-                    description: L.debug.hasConnectionEntrypointUrl ? T.intl.formatToPlainString(E.default["9iLeL2"], {
+                    text: T.intl.string(y.default["8a7IrV"]),
+                    description: L.debug.hasConnectionEntrypointUrl ? T.intl.formatToPlainString(y.default["9iLeL2"], {
                         url: L.connectionApp?.connectionEntrypointUrl
                     }) : null
                 }],
@@ -154,7 +154,7 @@ function I() {
                     overflow: "hidden"
                 },
                 variant: "text-md/medium",
-                children: T.intl.string(E.default.eg0mNa)
+                children: T.intl.string(y.default.eg0mNa)
             }), (0, a.jsx)(d.Button, {
                 disabled: !B.canStartAuthorization,
                 onClick: () => B.startAuthorization({
@@ -167,8 +167,8 @@ function I() {
                 color: "text-subtle",
                 children: "This will start whichever authorization flow is available. RPC authorization takes precedence over web."
             }), (0, a.jsx)(d.Button, {
-                disabled: !P.canStartAuthorization,
-                onClick: () => P.startAuthorization({
+                disabled: !M.canStartAuthorization,
+                onClick: () => M.startAuthorization({
                     analyticsLocations: o
                 }),
                 variant: "secondary",

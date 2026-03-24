@@ -57,7 +57,7 @@ function L(e) {
         L = (0, m.m)({
             location: "voice_channel_activities"
         }),
-        D = (0, r.bG)([A.A], () => A.A.getStorefrontDetectableGameAndApplicationIds()),
+        D = (0, r.bG)([A.A], () => A.A.getDetectableIdsToApplicationIds()),
         G = R.length + b.length > 0;
     return (s.useEffect(() => {
         G && C.default.track(T.HAw.OPEN_POPOUT, {
@@ -82,7 +82,7 @@ function L(e) {
                 members: n,
                 activity: a
             } = e, r = a.application_id;
-            return (null != S && (r = S), L && null != r && D.has(r)) ? (0, i.jsxs)(s.Fragment, {
+            return (null != S && (r = S), L && null != r && null != D[r]) ? (0, i.jsxs)(s.Fragment, {
                 children: [(0, i.jsx)(I.A, {
                     presenceActivity: a,
                     channel: l,

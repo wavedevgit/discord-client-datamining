@@ -15,9 +15,9 @@ function c(e) {
         wishlist: t,
         profileOwner: n,
         currentUser: c
-    } = e, u = n.id === c?.id, g = i.useMemo(() => t?.userId != null ? [t.userId] : [], [t]), m = (0, a.bG)([o.A], () => o.A.getStorefrontDetectableGameAndApplicationIds()), x = i.useMemo(() => {
+    } = e, u = n.id === c?.id, g = i.useMemo(() => t?.userId != null ? [t.userId] : [], [t]), m = (0, a.bG)([o.A], () => o.A.getDetectableIdsToApplicationIds()), x = i.useMemo(() => {
         let e = [];
-        for (let n of t?.items ?? [])(0, s.$)(n) && m.has(n.sku.applicationId) && e.push(n.sku.applicationId);
+        for (let n of t?.items ?? [])(0, s.$)(n) && null != m[n.sku.applicationId] && e.push(n.sku.applicationId);
         return e
     }, [t, m]), p = (0, d.w)({
         userIds: g

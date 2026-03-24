@@ -233,7 +233,7 @@ let P = () => {
             })
         }) : null
     },
-    M = () => {
+    G = () => {
         let e = (0, _.N)(),
             t = (0, _.z)(),
             n = (0, r.YW)({
@@ -263,7 +263,7 @@ let P = () => {
             })]
         })
     },
-    G = () => {
+    M = () => {
         let e = (0, A.xk)(E.Ef.PENDING),
             t = (0, m.y)(C.intl.formatToPlainString(b.default.IkAgkG, {
                 count: e.length
@@ -280,6 +280,6 @@ let P = () => {
         let e = (0, g.A)();
         return (0, i.jsxs)("div", {
             className: v.kL,
-            children: [e ? (0, i.jsx)(O, {}) : (0, i.jsx)(R, {}), (0, i.jsx)(P, {}), (0, i.jsx)(G, {}), (0, i.jsx)(D, {}), (0, i.jsx)(M, {})]
+            children: [e ? (0, i.jsx)(O, {}) : (0, i.jsx)(R, {}), (0, i.jsx)(P, {}), (0, i.jsx)(M, {}), (0, i.jsx)(D, {}), (0, i.jsx)(G, {})]
         })
     }

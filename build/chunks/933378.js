@@ -1,6 +1,6 @@
 /** chunk id: 933378 params = (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => E
 });
 var a = n(627968),
     i = n(64700),
@@ -25,7 +25,7 @@ var a = n(627968),
     C = n(985018),
     T = n(883476);
 
-function E(e) {
+function y(e) {
     return (0, a.jsx)(d.Text, {
         className: T.eW,
         color: "text-muted",
@@ -56,7 +56,7 @@ function S(e) {
         },
         afterRequest: o.stopAnimation
     }), {
-        header: y,
+        header: E,
         renderBody: N
     } = i.useMemo(() => {
         let e = j.length > 0,
@@ -73,7 +73,7 @@ function S(e) {
                         let i = u.A.getAccount(e.connected_account_id, e.connected_account_type),
                             s = (0, _.IG)(e),
                             l = (0, _.$J)(e);
-                        return (0, a.jsx)(E, {
+                        return (0, a.jsx)(y, {
                             children: C.intl.format(s, {
                                 account_name: i?.name,
                                 onClick: () => {
@@ -90,7 +90,7 @@ function S(e) {
                             })
                         }, n)
                     }
-                    return (0, a.jsx)(E, {
+                    return (0, a.jsx)(y, {
                         children: e.message
                     }, n)
                 })
@@ -116,7 +116,7 @@ function S(e) {
                 height: 16
             }), (0, a.jsx)(d.Text, {
                 variant: "text-xs/medium",
-                children: y
+                children: E
             }), (0, a.jsx)(d.DUT, {
                 className: l()(T.w, {
                     [T.r9]: A
@@ -128,13 +128,13 @@ function S(e) {
             className: l()({
                 [T.Iu]: A
             }),
-            children: [N(), 0 === j.length ? null : (0, a.jsx)(E, {
+            children: [N(), 0 === j.length ? null : (0, a.jsx)(y, {
                 children: s
             })]
         })]
     })
 }
-let y = function(e) {
+let E = function(e) {
     let {
         quest: t,
         taskDetails: n

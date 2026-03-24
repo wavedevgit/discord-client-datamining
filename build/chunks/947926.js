@@ -25,9 +25,9 @@ var a = n(627968),
     A = n(139210),
     C = n(568329),
     T = n(818276),
-    E = n(742860),
+    y = n(742860),
     S = n(783569),
-    y = n(963713),
+    E = n(963713),
     N = n(717695),
     I = n(899592),
     O = n(546350),
@@ -37,7 +37,7 @@ var a = n(627968),
 n(272111);
 var D = n(419548);
 
-function M(e) {
+function P(e) {
     let {
         isExpanded: t,
         questId: n
@@ -50,7 +50,7 @@ function M(e) {
     }), null
 }
 
-function P() {
+function M() {
     return i.useEffect(() => {
         c.l.trigger()
     }, []), null
@@ -67,7 +67,7 @@ function L(e) {
         reason: U
     } = (0, b.TQ)({
         quest: t
-    }), B = (0, o.bG)([u.A], () => u.A.hasLayers()), G = i.useRef(null), F = i.useMemo(() => (0, _.vv)(t), [t]), V = t.id, H = t.userStatus?.enrolledAt != null, W = (0, d.A)(H), K = t.userStatus?.completedAt != null, {
+    }), B = (0, o.bG)([u.A], () => u.A.hasLayers()), G = i.useRef(null), F = i.useMemo(() => (0, _.vv)(t), [t]), V = t.id, W = t.userStatus?.enrolledAt != null, H = (0, d.A)(W), K = t.userStatus?.completedAt != null, {
         hasError: z,
         isLoading: $
     } = (0, f.Gk)(), q = i.useContext(N.Z) || s && L && !$ && !c, {
@@ -80,7 +80,7 @@ function L(e) {
         visibilitySpring: et,
         springConfig: en
     } = (0, O.w)({
-        isQuestAccepted: H,
+        isQuestAccepted: W,
         isQuestCompleted: K,
         isQuestBarVisible: q
     }), {
@@ -99,8 +99,8 @@ function L(e) {
         setIsExpanded: Q,
         expandQuestBar: J,
         isQuestCompleted: K,
-        isQuestAccepted: H,
-        prevIsQuestAccepted: W,
+        isQuestAccepted: W,
+        prevIsQuestAccepted: H,
         impressionRef: G
     });
     (0, k.S)({
@@ -133,10 +133,10 @@ function L(e) {
         children: (e, n) => (G.current = n.current, (0, a.jsxs)("div", {
             className: D.dK,
             children: [q && (0, a.jsxs)(a.Fragment, {
-                children: [(0, a.jsx)(M, {
+                children: [(0, a.jsx)(P, {
                     questId: V,
                     isExpanded: Y
-                }), (0, a.jsx)(P, {})]
+                }), (0, a.jsx)(M, {})]
             }), (0, a.jsx)(r.animated.div, {
                 "aria-hidden": !q,
                 onMouseLeave: eu,
@@ -156,7 +156,7 @@ function L(e) {
                 children: (0, a.jsx)(r.animated.div, {
                     className: l()(D.FG, {
                         [D.E$]: Y,
-                        [D.KA]: H
+                        [D.KA]: W
                     }),
                     children: (0, a.jsx)(S.R, {
                         springConfig: en,
@@ -165,7 +165,7 @@ function L(e) {
                             expandedContentRef: em,
                             collapsedContentRef: eh,
                             expansionSpring: ee,
-                            children: (0, a.jsxs)(y.C, {
+                            children: (0, a.jsxs)(E.C, {
                                 quest: t,
                                 taskDetails: ep,
                                 isExpanded: Y,
@@ -180,12 +180,12 @@ function L(e) {
                                     ref: eh,
                                     className: D.Qs,
                                     overlayRef: ex
-                                }, K ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, a.jsx)(E.A, {
+                                }, K ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, a.jsx)(y.A, {
                                     className: D.Qs,
                                     overlayRef: ex,
                                     ref: em,
                                     children: (0, a.jsxs)(a.Fragment, {
-                                        children: [(0, a.jsx)(I.A, {}), !H && (0, a.jsx)(A.A, {})]
+                                        children: [(0, a.jsx)(I.A, {}), !W && (0, a.jsx)(A.A, {})]
                                     })
                                 }), (0, a.jsx)("div", {
                                     ref: ex,

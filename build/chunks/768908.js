@@ -40,7 +40,7 @@ let P = r.Ay.connectStores([C.A], () => ({
     }))(c.ppr),
     D = (0, b.isWindows)();
 
-function M(e) {
+function G(e) {
     let {
         onClose: t
     } = e, n = (0, r.bG)([g.Ay], () => g.Ay.getCandidateGames()), [l, o] = s.useState(null), d = n.map(e => ({
@@ -79,7 +79,7 @@ function M(e) {
     })
 }
 
-function G(e) {
+function M(e) {
     let {
         rawGame: t,
         nowPlaying: l = !1,
@@ -93,7 +93,7 @@ function G(e) {
     } = (0, r.cf)([g.Ay], () => ({
         canToggleDetection: null == b || g.Ay.isDetectionEnabled(b),
         isCurrentGameDetectionEnabled: g.Ay.isDetectionEnabled(C)
-    })), L = (0, r.bG)([g.Ay], () => g.Ay.getVisibleGame()), [P, M] = s.useState(!1), k = s.useMemo(() => (0, h.n1)(C) ? S ? C.gameName : j.intl.formatToPlainString(j.t.G6BGdx, {
+    })), L = (0, r.bG)([g.Ay], () => g.Ay.getVisibleGame()), [P, G] = s.useState(!1), k = s.useMemo(() => (0, h.n1)(C) ? S ? C.gameName : j.intl.formatToPlainString(j.t.G6BGdx, {
         subgameName: C.gameName
     }) : C.name, [C, S]), [U, w] = s.useState(k ?? "???"), V = a()(R.tR, {
         [y.LO]: !l,
@@ -196,7 +196,7 @@ function G(e) {
                             E.default.track(v.HAw.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
                                 application_id: e?.id,
                                 game_name: (0, h.n1)(C) ? C.gameName : C.name
-                            }), M(!0), (0, c.mMO)(async () => {
+                            }), G(!0), (0, c.mMO)(async () => {
                                 let {
                                     default: t
                                 } = await n.e("27495").then(n.bind(n, 651930));
@@ -292,7 +292,7 @@ function G(e) {
         }), null != p && p.length > 0 && !l && (0, i.jsx)("div", {
             className: y.AQ,
             children: p.map((e, t) => (0, i.jsxs)(s.Fragment, {
-                children: [(0, i.jsx)(G, {
+                children: [(0, i.jsx)(M, {
                     rawGame: e,
                     isOverride: !1,
                     isSubgame: !0,
@@ -350,7 +350,7 @@ let w = (0, S.L_)(function() {
             }));
         s.useEffect(() => ((0, A.a2)(), A.e0), []);
         let l = s.useMemo(() => e.reduce((e, t) => ((0, h.n1)(t) && e.push(t), e), []), [e]);
-        return null != t ? (0, i.jsx)(G, {
+        return null != t ? (0, i.jsx)(M, {
             rawGame: t,
             isOverride: n.has(t.exePath),
             nowPlaying: !0,
@@ -369,7 +369,7 @@ let w = (0, S.L_)(function() {
                     let {
                         closePopout: t
                     } = e;
-                    return (0, i.jsx)(M, {
+                    return (0, i.jsx)(G, {
                         onClose: t
                     })
                 },
@@ -407,7 +407,7 @@ let w = (0, S.L_)(function() {
                 igdbLink: "https://www.igdb.com/about"
             }),
             children: (0, i.jsx)("div", {
-                children: a.map(e => (0, i.jsx)(G, {
+                children: a.map(e => (0, i.jsx)(M, {
                     rawGame: e,
                     isOverride: l.has(e.exePath),
                     subgames: e.id === p.a7 ? o : void 0

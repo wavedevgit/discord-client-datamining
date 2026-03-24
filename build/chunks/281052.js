@@ -1,6 +1,6 @@
 /** chunk id: 281052 params = (module,exports,require) **/
 n.d(t, {
-    A: () => G
+    A: () => M
 });
 var i = n(627968);
 n(64700);
@@ -35,9 +35,9 @@ var s = n(284009),
     L = n(746706),
     P = n(788868),
     D = n(985018),
-    M = n(453814);
+    G = n(453814);
 
-function G() {
+function M() {
     let e = (0, a.bG)([I.default], () => {
             let e = I.default.getCurrentUser();
             return l()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
@@ -47,7 +47,7 @@ function G() {
     l()(null != n, "guild should not be null");
     let {
         pendingAvatar: s,
-        pendingNickname: G,
+        pendingNickname: M,
         pendingBanner: k,
         pendingBio: U,
         pendingPronouns: w,
@@ -63,11 +63,11 @@ function G() {
         n(e ?? (null != t ? null : void 0))
     };
     return (0, i.jsxs)("div", {
-        className: M.Q,
+        className: G.Q,
         children: [(0, i.jsx)(R.A, {
             errors: B?.nick ?? H?.nick,
             username: y.Ay.getName(e),
-            pendingNick: G,
+            pendingNick: M,
             currentNick: z?.nick,
             user: e,
             guild: n
@@ -90,7 +90,7 @@ function G() {
                         children: (0, i.jsx)(o.tvc, {
                             size: "md",
                             color: "currentColor",
-                            className: M.a
+                            className: G.a
                         })
                     })]
                 }),
@@ -109,7 +109,7 @@ function G() {
                         children: (0, i.jsx)(o.tvc, {
                             size: "md",
                             color: "currentColor",
-                            className: M.a
+                            className: G.a
                         })
                     })]
                 }),
@@ -126,7 +126,7 @@ function G() {
                     children: (0, i.jsx)(o.tvc, {
                         size: "md",
                         color: "currentColor",
-                        className: M.a
+                        className: G.a
                     })
                 })
             }, "nameplate"), (0, i.jsx)(h.A, {
@@ -136,7 +136,7 @@ function G() {
                         children: (0, i.jsx)(o.tvc, {
                             size: "md",
                             color: "currentColor",
-                            className: M.a
+                            className: G.a
                         })
                     })]
                 }),
@@ -169,7 +169,7 @@ function G() {
                         children: (0, i.jsx)(o.tvc, {
                             size: "md",
                             color: "currentColor",
-                            className: M.a
+                            className: G.a
                         })
                     })]
                 }),

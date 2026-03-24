@@ -31,10 +31,10 @@ function d(e) {
         fieldLayout: b,
         usePersistentBadge: C,
         getDismissibleBadges: N
-    } = t, [v] = s.useState(() => d()), I = p?.(), j = _(), y = g?.(), O = A?.(), R = x?.(), L = m?.(), P = C?.(), D = N?.(), M = (0, a.A)({
+    } = t, [v] = s.useState(() => d()), I = p?.(), j = _(), y = g?.(), O = A?.(), R = x?.(), L = m?.(), P = C?.(), D = N?.(), G = (0, a.A)({
         persistentBadge: P,
         dismissibleBadges: D
-    }), G = (0, r.q)(t);
+    }), M = (0, r.q)(t);
     return (0, i.jsxs)(o.L, {
         children: [(0, i.jsx)(l.Apm, {
             label: j,
@@ -48,14 +48,14 @@ function d(e) {
             onValueRender: h,
             asValueChanges: f,
             onValueChange: e => {
-                G(), n?.(e)
+                M(), n?.(e)
             },
             orientation: "horizontal",
             markers: T,
             onMarkerRender: E,
             stickToMarkers: S,
             layout: b,
-            badge: M
+            badge: G
         }), null != O && (0, i.jsx)(l.Text, {
             variant: "text-xs/normal",
             color: "text-muted",

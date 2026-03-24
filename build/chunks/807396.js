@@ -35,8 +35,8 @@ var i = n(627968),
     L = n(523104),
     P = n(856220),
     D = n(652215),
-    M = n(783419),
-    G = n(985018),
+    G = n(783419),
+    M = n(985018),
     k = n(431070);
 let U = e => {
     let t, {
@@ -48,7 +48,7 @@ let U = e => {
             showJoinErrorMessage: a
         } = (0, o.cf)([N.A], () => ({
             isJoining: N.A.isJoining(n.id),
-            joinErrorMessage: "" === N.A.joinErrorMessage(n.id) ? G.intl.string(G.t.j2d6Km) : N.A.joinErrorMessage(n.id),
+            joinErrorMessage: "" === N.A.joinErrorMessage(n.id) ? M.intl.string(M.t.j2d6Km) : N.A.joinErrorMessage(n.id),
             showJoinErrorMessage: void 0 !== N.A.joinErrorMessage(n.id)
         }), [n.id]);
     return null != (0, o.bG)([v.A], () => v.A.getGuild(n.guild.id), [n.guild.id]) || (t = (0, i.jsx)(m.Button, {
@@ -58,7 +58,7 @@ let U = e => {
         },
         disabled: s,
         variant: "primary",
-        text: s ? G.intl.string(G.t.RXvQQu) : G.intl.string(G.t.XpeFYr)
+        text: s ? M.intl.string(M.t.RXvQQu) : M.intl.string(M.t.XpeFYr)
     })), (0, i.jsxs)("div", {
         className: k.iA,
         children: [(0, i.jsxs)("div", {
@@ -127,8 +127,8 @@ function w(e) {
         null != e && (w(e), g.A.setVisibility(b.type, b.id, e), Y(null)), null != t && (B(t), g.A.setMetadataVisibility(b.type, b.id, t), W(null))
     }, [b]), (0, i.jsxs)("div", {
         className: k.FI,
-        children: [(t = p.A.get(b.type), n = p.A.get(Q), l = "1" === (b.metadata ?? {})[M.pK.TWITTER_VERIFIED], a = null, t.type === D.fg2.TWITTER && l && (a = (0, i.jsx)(c.m, {
-            text: G.intl.string(G.t.Jebrww),
+        children: [(t = p.A.get(b.type), n = p.A.get(Q), l = "1" === (b.metadata ?? {})[G.pK.TWITTER_VERIFIED], a = null, t.type === D.fg2.TWITTER && l && (a = (0, i.jsx)(c.m, {
+            text: M.intl.string(M.t.Jebrww),
             children: (0, i.jsx)(C.A, {
                 color: d.A.unsafe_rawColors.TWITTER.css,
                 children: (0, i.jsx)(m.Uzd, {
@@ -165,18 +165,18 @@ function w(e) {
                 onClick: function() {
                     let e = p.A.get(b.type);
                     (0, m.qfG)(t => (0, i.jsx)(r.Modal, {
-                        title: G.intl.formatToPlainString(G.t.U5x12f, {
+                        title: M.intl.formatToPlainString(M.t.U5x12f, {
                             name: e.name
                         }),
-                        subtitle: G.intl.format(G.t.VgqIPj, {
+                        subtitle: M.intl.format(M.t.VgqIPj, {
                             provider: e.name
                         }),
                         actions: [{
-                            text: G.intl.string(G.t["ETE/oC"]),
+                            text: M.intl.string(M.t["ETE/oC"]),
                             onClick: t.onClose,
                             variant: "secondary"
                         }, {
-                            text: G.intl.string(G.t.bsbMVz),
+                            text: M.intl.string(M.t.bsbMVz),
                             onClick: () => {
                                 x(), t.onClose()
                             },
@@ -184,13 +184,13 @@ function w(e) {
                         }],
                         ...t,
                         children: (0, E.A)(b) && (0, i.jsx)(R.A, {
-                            children: G.intl.format(G.t.COW3Xn, {
+                            children: M.intl.format(M.t.COW3Xn, {
                                 platformName: e.name
                             })
                         })
                     }))
                 },
-                "aria-label": G.intl.string(G.t.ppppRJ),
+                "aria-label": M.intl.string(M.t.ppppRJ),
                 focusProps: {
                     offset: {
                         top: -4,
@@ -206,7 +206,7 @@ function w(e) {
         })), b.twoWayLink ? null : b.type === D.fg2.XBOX ? (0, i.jsx)(P._, {}) : b.type === D.fg2.PLAYSTATION ? (0, i.jsx)(L.j, {}) : null, function(e) {
             let t = e.metadata ?? {},
                 n = null,
-                s = (0, f.An)(t[M.pK.CREATED_AT], v);
+                s = (0, f.An)(t[G.pK.CREATED_AT], v);
             switch (e.type) {
                 case D.fg2.REDDIT:
                     n = (0, S.xE)(t, k.Nz);
@@ -232,25 +232,25 @@ function w(e) {
                 variant: "text-xs/normal",
                 color: "text-subtle",
                 className: k.M4,
-                children: G.intl.format(G.t["9rfonh"], {
+                children: M.intl.format(M.t["9rfonh"], {
                     date: s
                 })
             }, "member-since")));
             let l = q.includes(e.id),
-                a = G.intl.string(G.t.wzzjk9);
+                a = M.intl.string(M.t.wzzjk9);
             if (null == n || 0 === n.length)
                 if (!0 !== p.A.get(e.type).hasMetadata) return null;
                 else n = [(0, i.jsx)(m.LpS, {
                     className: k.Z3,
-                    text: G.intl.string(G.t.y2b7CA)
+                    text: M.intl.string(M.t.y2b7CA)
                 }, "badge"), (0, i.jsx)(m.Text, {
                     variant: "text-xs/normal",
                     className: k.vt,
-                    children: G.intl.format(G.t.Up2ni7, {
+                    children: M.intl.format(M.t.Up2ni7, {
                         helpdeskUrl: y.A.getArticleURL(D.MVz.CONNECTION_DETAILS)
                     })
-                }, "label")], a = G.intl.string(G.t["LVh3/5"]);
-            return l && (a = G.intl.string(G.t.i4jeWR)), n.push((0, i.jsx)("div", {
+                }, "label")], a = M.intl.string(M.t["LVh3/5"]);
+            return l && (a = M.intl.string(M.t.i4jeWR)), n.push((0, i.jsx)("div", {
                 className: k.jy,
                 children: (0, i.jsx)(m.Button, {
                     text: a,
@@ -258,7 +258,7 @@ function w(e) {
                     size: "sm",
                     loading: K,
                     disabled: l,
-                    "aria-label": G.intl.string(G.t.sCkLYH),
+                    "aria-label": M.intl.string(M.t.sCkLYH),
                     onClick: l ? void 0 : () => {
                         Z(!0), g.A.refresh(e.type, e.id).finally(() => {
                             setTimeout(() => {
@@ -272,13 +272,13 @@ function w(e) {
                 children: n
             })
         }(b), (D.txh.has(b.type) && (o = (0, i.jsx)(m.dOG, {
-            label: G.intl.string(G.t["+KCMSi"]),
+            label: M.intl.string(M.t["+KCMSi"]),
             checked: I,
             onChange: function(e) {
                 j(e), g.A.setFriendSync(b.type, b.id, e)
             }
         })), D.ewM.has(b.type) && (_ = (0, i.jsx)(m.dOG, {
-            label: G.intl.format(G.t["6u6J0q"], {
+            label: M.intl.format(M.t["6u6J0q"], {
                 platform: $.name
             }),
             checked: F,
@@ -286,7 +286,7 @@ function w(e) {
                 H(e), g.A.setShowActivity(b.type, b.id, e)
             }
         })), p.A.get(b.type)?.hasMetadata === !0 && (A = (0, i.jsx)(m.dOG, {
-            label: G.intl.string(G.t.FYKGsL),
+            label: M.intl.string(M.t.FYKGsL),
             checked: 1 === V,
             onChange: function(e) {
                 let {
@@ -305,7 +305,7 @@ function w(e) {
         })), (0, i.jsxs)("div", {
             className: k.HZ,
             children: [(0, i.jsx)(m.dOG, {
-                label: G.intl.string(G.t.f7yOAX),
+                label: M.intl.string(M.t.f7yOAX),
                 checked: 1 === O,
                 onChange: function(e) {
                     let {
@@ -325,7 +325,7 @@ function w(e) {
             if (b.revoked || b.integrations.length > 0) return (0, i.jsx)(m.cGx, {})
         }(), b.revoked ? (0, i.jsx)(r.po8, {
             messageType: r.YCn.INFO,
-            children: G.intl.format(G.t["6C4lgA"], {
+            children: M.intl.format(M.t["6C4lgA"], {
                 onReconnect: function() {
                     (0, T.A)({
                         platformType: b.type,
@@ -334,7 +334,7 @@ function w(e) {
                 }
             })
         }) : b.integrations.length > 0 ? (0, i.jsx)(m.D0$, {
-            label: G.intl.string(G.t.fOe3fZ),
+            label: M.intl.string(M.t.fOe3fZ),
             children: b.integrations.map(e => (0, i.jsx)(U, {
                 integration: e
             }, e.id))
@@ -344,8 +344,8 @@ function w(e) {
 
 function V() {
     return (0, i.jsx)(m.D0$, {
-        label: G.intl.string(G.t.ZeDrUf),
-        description: G.intl.format(G.t["oYc+Gz"], {
+        label: M.intl.string(M.t.ZeDrUf),
+        description: M.intl.format(M.t["oYc+Gz"], {
             privacyPolicyUrl: D.X7G.PRIVACY
         }),
         children: (0, i.jsx)(F, {})
@@ -372,7 +372,7 @@ function F() {
             className: k.__invalid_accountButton,
             innerClassName: k.U$
         }, e.type)), (0, i.jsx)(c.m, {
-            text: G.intl.string(G.t.QqTz8b),
+            text: M.intl.string(M.t.QqTz8b),
             children: (0, i.jsx)("div", {
                 className: a()(k.ej, k.__invalid_accountButton),
                 children: (0, i.jsx)(m.vN3, {
@@ -385,11 +385,11 @@ function F() {
                                 onComplete: B
                             })
                         },
-                        "aria-label": G.intl.string(G.t.Zhcj9X),
+                        "aria-label": M.intl.string(M.t.Zhcj9X),
                         children: (0, i.jsx)(m._BQ, {
                             color: "currentColor",
                             size: "md",
-                            "aria-label": G.intl.string(G.t.QqTz8b)
+                            "aria-label": M.intl.string(M.t.QqTz8b)
                         })
                     })
                 })
@@ -410,8 +410,8 @@ function H(e) {
     }) : 0 === s.length ? (0, i.jsx)(m.ppr, {
         theme: l,
         children: (0, i.jsx)(m.SGT, {
-            note: G.intl.string(G.t.WenGZ2),
-            children: G.intl.string(G.t.aoLS84)
+            note: M.intl.string(M.t.WenGZ2),
+            children: M.intl.string(M.t.aoLS84)
         })
     }) : s.filter(e => p.A.isSupported(e.type)).map((e, t) => (0, i.jsx)(w, {
         theme: l,

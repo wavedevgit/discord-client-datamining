@@ -30,30 +30,30 @@ function A(e) {
         onClick: A,
         iconForeground: C,
         nameplate: T,
-        shouldShowOutputDeviceChangedTooltip: E,
+        shouldShowOutputDeviceChangedTooltip: y,
         dismissTooltips: S
-    } = e, y = t || n, {
+    } = e, E = t || n, {
         Component: N,
         play: I,
         events: {
             onMouseEnter: O,
             onMouseLeave: R
         }
-    } = (0, d.I)(y ? "undeafen" : "deafen"), k = n ? r.TJE : N, {
+    } = (0, d.I)(E ? "undeafen" : "deafen"), k = n ? r.TJE : N, {
         name: w
     } = (0, g.x5)(f.oh.AUDIO_OUTPUT), D = (0, h.A)(t, n, s), {
-        analyticsLocations: M
-    } = (0, m.Ay)(u.A.AUDIO_OUTPUT_BUTTON), P = i.useRef(null);
-    return i.useEffect(() => () => I(), [y, I]), (0, a.jsx)(m.f5, {
-        value: M,
+        analyticsLocations: P
+    } = (0, m.Ay)(u.A.AUDIO_OUTPUT_BUTTON), M = i.useRef(null);
+    return i.useEffect(() => () => I(), [E, I]), (0, a.jsx)(m.f5, {
+        value: P,
         children: (0, a.jsx)(c.YNO, {
-            targetElementRef: P,
+            targetElementRef: M,
             renderPopout: e => {
                 let {
                     closePopout: t
                 } = e;
                 return S(), (0, a.jsx)(m.f5, {
-                    value: M,
+                    value: P,
                     children: (0, a.jsx)(x.A, {
                         onInteraction: (0, p.s)("AudioDeviceMenu", u.A.ACCOUNT),
                         onClose: t,
@@ -74,13 +74,13 @@ function A(e) {
                     isShown: d
                 } = t, c = d ? r.tN5 : r.abt;
                 return (0, a.jsxs)("div", {
-                    ref: P,
+                    ref: M,
                     className: l()(b.Lh, {
-                        [b.v8]: y,
+                        [b.v8]: E,
                         [b.q6]: d
                     }),
                     children: [(0, a.jsx)(_.A, {
-                        "aria-checked": y,
+                        "aria-checked": E,
                         "aria-label": v.intl.string(v.t.wjcRFX),
                         className: b.eT,
                         disabled: s,
@@ -88,10 +88,10 @@ function A(e) {
                             size: "custom",
                             width: 20,
                             height: 20,
-                            color: y ? o.A.colors.ICON_VOICE_MUTED : "currentColor",
+                            color: E ? o.A.colors.ICON_VOICE_MUTED : "currentColor",
                             className: C
                         }),
-                        iconForeground: y ? j.o : void 0,
+                        iconForeground: E ? j.o : void 0,
                         innerClassName: l()({
                             [j.T]: n
                         }),
@@ -100,7 +100,7 @@ function A(e) {
                         onMouseEnter: O,
                         onMouseLeave: R,
                         plated: null != T,
-                        redGlow: y,
+                        redGlow: E,
                         role: "switch",
                         tooltipText: D
                     }), (0, a.jsx)(_.A, {
@@ -113,22 +113,22 @@ function A(e) {
                             size: "custom",
                             width: 12,
                             height: 12,
-                            color: y ? o.A.colors.ICON_VOICE_MUTED : "currentColor"
+                            color: E ? o.A.colors.ICON_VOICE_MUTED : "currentColor"
                         }),
                         onClick: i,
                         onContextMenu: i,
                         plated: null != T,
-                        redGlow: y,
-                        tooltipType: E ? "green_void_do_not_use" : void 0,
-                        tooltipForceOpen: E,
-                        tooltipPositionKey: E ? v.intl.formatToPlainString(v.t["f+DDY/"], {
+                        redGlow: E,
+                        tooltipType: y ? "green_void_do_not_use" : void 0,
+                        tooltipForceOpen: y,
+                        tooltipPositionKey: y ? v.intl.formatToPlainString(v.t["f+DDY/"], {
                             outputDeviceName: w
                         }) : void 0,
                         tooltipShouldShow: !d,
-                        tooltipText: E ? v.intl.format(v.t["f+DDY/"], {
+                        tooltipText: y ? v.intl.format(v.t["f+DDY/"], {
                             outputDeviceName: w
                         }) : v.intl.string(v.t.aA4Vce),
-                        "aria-label": E ? v.intl.formatToPlainString(v.t["f+DDY/"], {
+                        "aria-label": y ? v.intl.formatToPlainString(v.t["f+DDY/"], {
                             outputDeviceName: w
                         }) : v.intl.string(v.t.aA4Vce)
                     })]

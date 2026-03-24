@@ -71,7 +71,7 @@ function T() {
     })
 }
 
-function E() {
+function y() {
     let e = i.useCallback(() => {
         u.A.openPrivateChannel({
             recipientIds: [j.K]
@@ -103,6 +103,6 @@ function S() {
             className: A.yF
         }), (0, a.jsx)(T, {}), (0, a.jsx)("div", {
             className: A.yF
-        }), (0, a.jsx)(E, {})]
+        }), (0, a.jsx)(y, {})]
     })
 }
