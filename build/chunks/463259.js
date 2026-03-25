@@ -1,7 +1,7 @@
 /** chunk id: 463259 params = (module,exports,require) **/
 n.d(t, {
     A: () => U,
-    u: () => D
+    u: () => P
 });
 var i = n(627968),
     l = n(64700),
@@ -23,8 +23,8 @@ var i = n(627968),
     I = n(958338),
     j = n(600761),
     v = n(667049),
-    E = n(605694),
-    T = n(357541),
+    T = n(605694),
+    E = n(357541),
     b = n(236599),
     N = n(192),
     S = n(128988),
@@ -36,12 +36,12 @@ var i = n(627968),
     O = n(985018),
     w = n(368379);
 
-function D(e) {
+function P(e) {
     let {
         widget: t,
         ...n
     } = e;
-    return t instanceof _.R ? (0, i.jsx)(E.A, {
+    return t instanceof _.R ? (0, i.jsx)(T.A, {
         widget: t,
         ...n
     }) : t instanceof A.Yy ? (0, i.jsx)(y.A, {
@@ -50,7 +50,7 @@ function D(e) {
     }) : null
 }
 
-function P() {
+function D() {
     return (0, i.jsxs)("div", {
         className: w.mJ,
         children: [(0, i.jsx)(o.mir, {
@@ -80,7 +80,7 @@ function G() {
                 visibleContent: l,
                 markAsDismissed: a
             } = e, s = t.find(e => e.dismissibleContent === l);
-            return null == s ? null : (0, i.jsx)(T.A, {
+            return null == s ? null : (0, i.jsx)(E.A, {
                 user: n,
                 application: s.application,
                 onDismiss: a
@@ -101,8 +101,8 @@ function M(e) {
         }, [e, t, n]), "GB" === e && n
     })(), m = (0, c.JY)({
         location: "UserProfileModalV2Widgets"
-    }), j = 0 === s.length && o, E = l.useMemo(() => s.filter(A.fu), [s]), T = l.useMemo(() => s.filter(e => e instanceof _.R), [s]);
-    (0, I.Y)(o, E), ((e, t) => {
+    }), j = 0 === s.length && o, T = l.useMemo(() => s.filter(A.fu), [s]), E = l.useMemo(() => s.filter(e => e instanceof _.R), [s]);
+    (0, I.Y)(o, T), ((e, t) => {
         let n = l.useMemo(() => t.map(e => e.applicationId), [t]);
         (0, g.A)(n);
         let {
@@ -112,13 +112,13 @@ function M(e) {
         l.useEffect(() => {
             s.current && (s.current = !1, a())
         }, [a])
-    })(t.id, T);
+    })(t.id, E);
     let S = () => (0, i.jsxs)(i.Fragment, {
         children: [o && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(b.A, {
                 className: w.cG
-            }), u && (0, i.jsx)(P, {}), m && (0, i.jsx)(G, {})]
-        }), s.map((e, l) => (0, i.jsx)(D, {
+            }), u && (0, i.jsx)(D, {}), m && (0, i.jsx)(G, {})]
+        }), s.map((e, l) => (0, i.jsx)(P, {
             widget: e,
             user: t,
             guildId: n,

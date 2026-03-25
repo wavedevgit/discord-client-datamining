@@ -22,8 +22,8 @@ var i = n(627968),
     I = n(178213),
     j = n(909536),
     v = n(594832),
-    E = n(287809),
-    T = n(183555),
+    T = n(287809),
+    E = n(183555),
     b = n(622543),
     N = n(600761),
     S = n(535089),
@@ -34,8 +34,8 @@ var i = n(627968),
     L = n(383430),
     O = n(300131),
     w = n(518477),
-    D = n(788868),
-    P = n(985018),
+    P = n(788868),
+    D = n(985018),
     G = n(39427);
 
 function M(e) {
@@ -45,7 +45,7 @@ function M(e) {
         handleOpenGameShop: l
     } = e;
     return t.length > 0 ? (0, i.jsx)(L.A, {
-        title: P.intl.string(P.t["i/yzHs"]),
+        title: D.intl.string(D.t["i/yzHs"]),
         handleOpenCollectiblesShop: n,
         handleOpenGameShop: l,
         socialLayerStorefrontApplicationIds: t
@@ -53,7 +53,7 @@ function M(e) {
         variant: "secondary",
         size: "sm",
         icon: c.U1X,
-        text: P.intl.string(P.t["i/yzHs"]),
+        text: D.intl.string(D.t["i/yzHs"]),
         onClick: n
     })
 }
@@ -70,7 +70,7 @@ function U(e) {
     return (0, i.jsxs)("div", {
         className: G.$s,
         children: [t.length > 0 || null != s ? (0, i.jsx)(L.A, {
-            title: P.intl.string(P.t.SDUwM0),
+            title: D.intl.string(D.t.SDUwM0),
             handleOpenCollectiblesShop: l,
             handleOpenGameShop: t.length > 0 ? a : void 0,
             handleAddNitroToWishlist: s,
@@ -79,7 +79,7 @@ function U(e) {
             variant: "secondary",
             size: "sm",
             icon: c.j96,
-            text: P.intl.string(P.t.SDUwM0),
+            text: D.intl.string(D.t.SDUwM0),
             onClick: l
         }), (0, i.jsx)(O.A, {
             isOwner: !0,
@@ -103,7 +103,7 @@ function F(e) {
         variant: "primary",
         size: "sm",
         icon: c.U1X,
-        text: P.intl.formatToPlainString(P.t["HDT/rg"], {
+        text: D.intl.formatToPlainString(D.t["HDT/rg"], {
             applicationName: t.name
         }),
         onClick: s,
@@ -130,7 +130,7 @@ function W(e) {
             })
         }
         return (0, i.jsx)(L.A, {
-            title: P.intl.string(P.t.FkjcWY),
+            title: D.intl.string(D.t.FkjcWY),
             variant: "primary",
             handleOpenGameShop: s,
             socialLayerStorefrontApplicationIds: n
@@ -143,11 +143,11 @@ function W(e) {
             children: [(0, i.jsx)(c.Heading, {
                 variant: "heading-md/medium",
                 color: "text-strong",
-                children: P.intl.string(P.t.HGnLLT)
+                children: D.intl.string(D.t.HGnLLT)
             }), (0, i.jsx)(c.Text, {
                 variant: "text-sm/normal",
                 color: "text-default",
-                children: P.intl.string(P.t["/X1ny6"])
+                children: D.intl.string(D.t["/X1ny6"])
             })]
         }), (0, i.jsxs)(c.ButtonGroup, {
             size: "sm",
@@ -155,7 +155,7 @@ function W(e) {
                 variant: "primary",
                 size: "sm",
                 icon: c.U1X,
-                text: P.intl.string(P.t.ZbS4QB),
+                text: D.intl.string(D.t.ZbS4QB),
                 onClick: a
             }), d]
         })]
@@ -173,7 +173,7 @@ function H(e) {
         handleAddNitroToWishlist: g
     } = e, m = a.id, x = (0, o.bG)([b.A], () => b.A.getWishlistSettings(n.id, m)), {
         trackUserProfileWishlistAction: p
-    } = (0, T.NJ)(), f = !1 === n.nsfwAllowed, [h, _] = l.useState(!0);
+    } = (0, E.NJ)(), f = !1 === n.nsfwAllowed, [h, _] = l.useState(!0);
     l.useEffect(() => {
         x?.visibility != null && _(x.visibility === r.a.PUBLIC)
     }, [x?.visibility]);
@@ -213,7 +213,7 @@ function H(e) {
             }), (0, i.jsx)(c.Text, {
                 variant: "text-xs/normal",
                 color: "text-subtle",
-                children: P.intl.string(P.t.RX7D9h)
+                children: D.intl.string(D.t.RX7D9h)
             })]
         }), h && f && (0, i.jsxs)("div", {
             className: G.lm,
@@ -224,7 +224,7 @@ function H(e) {
             }), (0, i.jsx)(c.Text, {
                 variant: "text-xs/normal",
                 color: "text-subtle",
-                children: P.intl.string(P.t.d78ChW)
+                children: D.intl.string(D.t.d78ChW)
             })]
         }), (0, i.jsxs)("div", {
             ref: j,
@@ -232,7 +232,7 @@ function H(e) {
             children: [(0, i.jsx)(c.Text, {
                 variant: "text-xs/semibold",
                 color: "text-subtle",
-                children: P.intl.format(P.t.r6Y1Lg, {
+                children: D.intl.format(D.t.r6Y1Lg, {
                     count: a.items.length
                 })
             }), t ? (0, i.jsx)(U, {
@@ -262,12 +262,12 @@ function B(e) {
     let {
         wishlistId: a,
         currentUser: r
-    } = (0, o.cf)([b.A, E.default], () => ({
+    } = (0, o.cf)([b.A, T.default], () => ({
         wishlistId: b.A.getFirstWishlistId(t.id),
-        currentUser: E.default.getCurrentUser()
+        currentUser: T.default.getCurrentUser()
     })), {
         analyticsLocations: m
-    } = (0, g.Ay)(), T = r?.id === t.id, {
+    } = (0, g.Ay)(), E = r?.id === t.id, {
         wishlist: S,
         wasFetched: L,
         error: O
@@ -280,7 +280,7 @@ function B(e) {
         currentUser: r
     }), M = (0, f.X)({
         location: "user-profile-modal-v2-wishlist"
-    }), U = (0, I.GG)("user-profile-modal-v2-wishlist"), F = (0, j.Gh)("user-profile-modal-v2-wishlist"), B = T && (M && w.length > 0 || U), X = l.useCallback(() => {
+    }), U = (0, I.GG)("user-profile-modal-v2-wishlist"), F = (0, j.Gh)("user-profile-modal-v2-wishlist"), B = E && (M && w.length > 0 || U), X = l.useCallback(() => {
         (0, d.closeAllModals)(), (0, x.Cz)({
             analyticsLocations: m,
             analyticsSource: u.A.USER_PROFILE_WISHLIST
@@ -297,9 +297,9 @@ function B(e) {
         }))
     }, []), Y = l.useCallback(async () => {
         try {
-            await A.A.addSkuToWishlist(D.pe.TIER_2, m)
+            await A.A.addSkuToWishlist(P.pe.TIER_2, m)
         } catch {
-            (0, c.showToast)((0, c.createToast)(P.intl.string(P.t.F8FvUy), c.ToastType.FAILURE)), c.ORC.announce(P.intl.string(P.t.F8FvUy))
+            (0, c.showToast)((0, c.createToast)(D.intl.string(D.t.F8FvUy), c.ToastType.FAILURE)), c.ORC.announce(D.intl.string(D.t.F8FvUy))
         }
     }, [m]);
     if (null != O) return null;
@@ -311,7 +311,7 @@ function B(e) {
         }),
         fade: !0,
         children: [K ? (0, i.jsx)(W, {
-            isOwner: T,
+            isOwner: E,
             socialLayerStorefrontApplicationIds: w,
             handleOpenShop: X,
             handleOpenGameShop: z,
@@ -320,17 +320,17 @@ function B(e) {
             children: [(0, i.jsx)(y.A, {
                 scrollerRef: n
             }), (0, i.jsx)(H, {
-                isOwner: T,
+                isOwner: E,
                 profileOwner: t,
                 wishlist: S,
                 socialLayerStorefrontApplicationIds: w,
                 handleOpenShop: X,
                 handleOpenGameShop: z,
-                handleAddNitroToWishlist: F && !S.hasSkuId(D.pe.TIER_2) ? Y : void 0
+                handleAddNitroToWishlist: F && !S.hasSkuId(P.pe.TIER_2) ? Y : void 0
             }), (0, i.jsx)(R.A, {
                 items: S.items,
                 profileOwner: t,
-                isOwner: T
+                isOwner: E
             })]
         }), B && (0, i.jsx)(k.A, {
             user: t,

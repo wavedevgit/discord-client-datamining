@@ -126,7 +126,7 @@ function T(e) {
         analyticsLocations: P
     } = (0, a.Ay)(...R ?? []), H = (0, u.zy)(), Y = n.useRef(null), {
         isHoveringOrFocusing: F
-    } = (0, g.A)(Y), [z] = (0, o.yK)([A.A], () => [A.A.hasSentGift(b.skuId, t.id)], [b.skuId, t.id]), D = z || !0 === b.isOwned, G = null != b.bundleItems && b.bundleItems.length > 0, W = (0, x.x)(b), B = N || D ? k.intl.string(k.t.FdGl5A) : k.intl.string(k.t.ilhtIa), Z = N || D ? void 0 : d.okO, q = n.useCallback(() => {
+    } = (0, g.A)(Y), [z] = (0, o.yK)([A.A], () => [A.A.hasSentGift(b.skuId, t.id)], [b.skuId, t.id]), D = z || !0 === b.isOwned, G = null != b.bundleItems && b.bundleItems.length > 0, W = (0, x.x2)(b), B = N || D ? k.intl.string(k.t.FdGl5A) : k.intl.string(k.t.ilhtIa), Z = N || D ? void 0 : d.okO, q = n.useCallback(() => {
         let e = H.pathname.startsWith(v.BVt.COLLECTIBLES_SHOP);
         if (N || D) {
             let t = !N && D;

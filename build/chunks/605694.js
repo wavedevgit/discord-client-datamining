@@ -22,8 +22,8 @@ var i = n(627968),
     I = n(692969),
     j = n(207963),
     v = n(953756),
-    E = n(647901),
-    T = n(371068),
+    T = n(647901),
+    E = n(371068),
     b = n(61266),
     N = n(731068),
     S = n(619517),
@@ -34,8 +34,8 @@ var i = n(627968),
     L = n(183555),
     O = n(622543),
     w = n(466853),
-    D = n(985018),
-    P = n(442716);
+    P = n(985018),
+    D = n(442716);
 let G = /{{(.*?)}}/g,
     M = {
         [r.A.MARVEL_RIVALS]: [{
@@ -277,38 +277,38 @@ function H(e) {
         imagePlaceholder: a
     } = e;
     return (0, i.jsxs)("div", {
-        className: P.mY,
+        className: D.mY,
         children: [(0, i.jsxs)("div", {
-            className: P.TL,
+            className: D.TL,
             children: [(0, i.jsx)(u.Text, {
                 variant: "text-lg/medium",
-                className: P.ZY,
+                className: D.ZY,
                 children: null != t ? t : (0, i.jsx)("div", {
-                    className: P.jC
+                    className: D.jC
                 })
-            }), (0, i.jsx)(E.x, {
+            }), (0, i.jsx)(T.x, {
                 color: "muted",
                 children: n
             })]
         }), (0, h.c)(l) ? (0, i.jsx)("div", {
-            className: P.Xr,
+            className: D.Xr,
             children: (0, i.jsx)(S.Ay, {
                 src: l.proxyUrl,
                 alt: "",
                 width: l.width,
                 height: l.height,
                 responsive: !0,
-                className: P.c8
+                className: D.c8
             })
         }) : null != a ? (0, i.jsx)("div", {
-            className: P.Xr,
+            className: D.Xr,
             children: (0, i.jsx)("img", {
                 src: a,
                 alt: "",
-                className: P.c8
+                className: D.c8
             })
         }) : (0, i.jsx)("div", {
-            className: P.Hi
+            className: D.Hi
         })]
     })
 }
@@ -318,7 +318,7 @@ function B(e) {
         children: t
     } = e;
     return (0, i.jsx)("div", {
-        className: P.Vg,
+        className: D.Vg,
         children: t
     })
 }
@@ -336,14 +336,14 @@ function X(e) {
 function V(e) {
     let {
         content: t
-    } = e, n = l.useId(), a = (0, E.X)();
+    } = e, n = l.useId(), a = (0, T.X)();
     return null != t ? (0, i.jsx)(b.A, {
         type: g.I5.TEXT_DISPLAY,
         id: n,
         content: t,
-        className: P.Qq
+        className: D.Qq
     }) : (0, i.jsx)("div", {
-        className: s()(P.jC, a.className)
+        className: s()(D.jC, a.className)
     })
 }
 
@@ -352,8 +352,8 @@ function z(e) {
         content: t,
         image: n,
         imagePosition: l
-    } = e, a = (0, E.X)(), r = (0, h.c)(n) ? (0, i.jsx)("div", {
-        className: s()(P.Sl, a.className),
+    } = e, a = (0, T.X)(), r = (0, h.c)(n) ? (0, i.jsx)("div", {
+        className: s()(D.Sl, a.className),
         "data-position": l,
         children: (0, i.jsx)(S.Ay, {
             src: n.proxyUrl,
@@ -363,10 +363,10 @@ function z(e) {
             responsive: !0
         })
     }) : null == t ? (0, i.jsx)("div", {
-        className: s()(P.bc, a.className)
+        className: s()(D.bc, a.className)
     }) : null;
     return (0, i.jsxs)("div", {
-        className: P.rQ,
+        className: D.rQ,
         children: [null != r && "left" === l ? (0, i.jsxs)(i.Fragment, {
             children: [r, " "]
         }) : null, (0, i.jsx)(V, {
@@ -382,7 +382,7 @@ function Y(e) {
         size: t = "small",
         divider: n = !1
     } = e, a = l.useId();
-    return (0, i.jsx)(T.A, {
+    return (0, i.jsx)(E.A, {
         type: g.I5.SEPARATOR,
         id: a,
         divider: n,
@@ -425,11 +425,11 @@ function J(e) {
         containerInnerWidth: 396,
         children: (0, i.jsx)(j.f5, {
             applicationWidget: n,
-            children: (0, i.jsx)(E.x, {
+            children: (0, i.jsx)(T.x, {
                 size: "reduced",
                 weight: "reduced",
                 children: (0, i.jsx)("div", {
-                    className: P.kL,
+                    className: D.kL,
                     children: t
                 })
             })
@@ -443,13 +443,13 @@ function Z(e) {
         gap: 24,
         padding: 12,
         fullWidth: !1,
-        className: P.lO,
+        className: D.lO,
         children: [(0, i.jsxs)(u.BJc, {
             gap: 4,
             children: [e.showSuggestedForYou && (0, i.jsx)(u.Text, {
                 variant: "text-xs/medium",
                 color: "text-default",
-                children: D.intl.string(D.t.zMUr6Z)
+                children: P.intl.string(P.t.zMUr6Z)
             }), (0, i.jsx)(u.Heading, {
                 variant: "heading-sm/medium",
                 color: "text-default",
@@ -475,20 +475,20 @@ let Q = Object.assign(function(e) {
             trackUserProfileAction: v
         } = (0, L.NJ)(),
         {
-            user: E,
-            widget: T,
+            user: T,
+            widget: E,
             cta: b,
             subtle: S = !1
         } = e,
-        G = (0, c.bG)([C.default], () => C.default.getId()) === E.id,
-        F = (0, _.h)(T.applicationId),
+        G = (0, c.bG)([C.default], () => C.default.getId()) === T.id,
+        F = (0, _.h)(E.applicationId),
         W = F?.getIconURL(16),
         H = (0, c.bG)([R.A], () => null != F ? R.A.getGameByApplication(F) : null),
         B = (0, I.A)({
             location: "UserProfileApplicationWidget",
             applicationId: H?.id,
             source: A.Ob.UserProfile,
-            sourceUserId: E.id,
+            sourceUserId: T.id,
             trackEntryPointImpression: !0
         }),
         {
@@ -504,34 +504,34 @@ let Q = Object.assign(function(e) {
         ee = l.useCallback(() => {
             z && (v({
                 action: V ? "PRESS_APPLICATION_WIDGET_LINKED_RECONNECT" : "PRESS_APPLICATION_WIDGET_UNLINKED_CONNECT",
-                applicationId: T.applicationId
+                applicationId: E.applicationId
             }), Y({
                 analyticsLocations: $
             }))
-        }, [z, V, Y, v, T.applicationId, $]),
+        }, [z, V, Y, v, E.applicationId, $]),
         et = null == b && X && !V && z,
         en = null == b && X && V && z && null != Q && !Q.scopes.includes(o.F.APPLICATION_IDENTITIES_WRITE) && !Q.scopes.includes(o.F.SDK_SOCIAL_LAYER) && !Q.scopes.includes(o.F.SDK_SOCIAL_LAYER_PRESENCE),
         ei = (0, i.jsxs)(i.Fragment, {
             children: [null != W ? (0, i.jsx)("img", {
-                className: P.Z2,
+                className: D.Z2,
                 src: W,
                 width: 16,
                 height: 16,
                 alt: ""
             }) : (0, i.jsx)("span", {
-                className: P.qP
+                className: D.qP
             }), (0, i.jsx)(u.Text, {
                 variant: "text-sm/medium",
                 children: F?.name != null ? F.name : (0, i.jsx)("div", {
-                    className: P.jC
+                    className: D.jC
                 })
             })]
         }),
         el = null == H ? (0, i.jsx)("div", {
-            className: P.qd,
+            className: D.qd,
             children: ei
         }) : (0, i.jsx)(u.DUT, {
-            className: s()(P.qd, P.vk),
+            className: s()(D.qd, D.vk),
             onClick: B,
             children: ei
         }),
@@ -539,7 +539,7 @@ let Q = Object.assign(function(e) {
             isLoading: ea,
             hasData: es,
             components: er
-        } = (t = E.id, n = T.applicationId, a = (0, f.A)(), r = (0, c.bG)([y.A], () => y.A.getUserIdentityByApplication(t, n)), g = (0, c.bG)([O.A], () => O.A.getApplicationWidgetConfig(n)), h = (0, c.bG)([y.A, O.A], () => null == y.A.getUserIdentities(t) || null == O.A.applicationWidgetConfigs), j = l.useMemo(() => {
+        } = (t = T.id, n = E.applicationId, a = (0, f.A)(), r = (0, c.bG)([y.A], () => y.A.getUserIdentityByApplication(t, n)), g = (0, c.bG)([O.A], () => O.A.getApplicationWidgetConfig(n)), h = (0, c.bG)([y.A, O.A], () => null == y.A.getUserIdentities(t) || null == O.A.applicationWidgetConfigs), j = l.useMemo(() => {
             var e, t;
             if (null == g) return null;
             let n = M[g.widgetTemplateId];
@@ -615,11 +615,11 @@ let Q = Object.assign(function(e) {
         });
     return null == er ? null : (0, i.jsxs)(w.A, {
         ...e,
-        userId: E.id,
-        widget: T,
-        className: s()(P.Y5, S && P.aK),
+        userId: T.id,
+        widget: E,
+        className: s()(D.Y5, S && D.aK),
         headerTitle: el,
-        headerClassName: P.wx,
+        headerClassName: D.wx,
         additionalManageWidgetMenuItems: null != H ? (0, i.jsx)(u.Drp, {
             id: "view-game-profile",
             label: "View Game Profile",
@@ -627,33 +627,33 @@ let Q = Object.assign(function(e) {
             action: B
         }) : null,
         children: [(0, i.jsx)(J, {
-            widget: T,
+            widget: E,
             children: (0, i.jsx)(U, {
                 component: er
             })
         }), G && (0, i.jsxs)("div", {
-            className: P.qr,
+            className: D.qr,
             children: [ea || es || et || en ? null : (0, i.jsxs)("div", {
-                className: P.o8,
+                className: D.o8,
                 children: [(0, i.jsx)(u.Qfk, {
                     size: "xxs"
                 }), (0, i.jsx)(u.Text, {
                     variant: "text-sm/medium",
                     color: "text-subtle",
-                    children: D.intl.string(D.t.z5K4Uv)
+                    children: P.intl.string(P.t.z5K4Uv)
                 })]
             }), et ? (0, i.jsx)(Z, {
-                heading: D.intl.string(D.t.UDPRLO),
-                content: D.intl.string(D.t["OW/2al"]),
+                heading: P.intl.string(P.t.UDPRLO),
+                content: P.intl.string(P.t["OW/2al"]),
                 buttons: (0, i.jsx)(u.Button, {
-                    text: D.intl.string(D.t.S0W8Z5),
+                    text: P.intl.string(P.t.S0W8Z5),
                     onClick: ee
                 })
             }) : en ? (0, i.jsx)(Z, {
-                heading: D.intl.string(D.t["9WarGY"]),
-                content: D.intl.string(D.t.qgxnKe),
+                heading: P.intl.string(P.t["9WarGY"]),
+                content: P.intl.string(P.t.qgxnKe),
                 buttons: (0, i.jsx)(u.Button, {
-                    text: D.intl.string(D.t.vD60Pv),
+                    text: P.intl.string(P.t.vD60Pv),
                     onClick: ee
                 })
             }) : b]

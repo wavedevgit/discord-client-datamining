@@ -9,8 +9,8 @@ var n = i(627968);
 i(64700);
 var r = i(503698),
     a = i.n(r),
-    s = i(397927),
-    l = i(407775),
+    l = i(397927),
+    s = i(407775),
     o = i(788868),
     c = i(271057);
 
@@ -24,12 +24,12 @@ function u(t) {
         wumpusPosition: d,
         className: g
     } = t;
-    return (0, n.jsx)(s.DUT, {
+    return (0, n.jsx)(l.DUT, {
         onClick: e,
         style: {
             cursor: "pointer"
         },
-        children: (0, n.jsx)(l.KV, {
+        children: (0, n.jsx)(s.KV, {
             ctaButton: null,
             showPromotionalGiftBanner: o,
             showYearlyPrice: !0,
@@ -55,12 +55,12 @@ function d(t) {
         narrowLayout: u,
         className: d
     } = t;
-    return (0, n.jsx)(s.DUT, {
+    return (0, n.jsx)(l.DUT, {
         onClick: e,
         style: {
             cursor: "pointer"
         },
-        children: (0, n.jsx)(l.AP, {
+        children: (0, n.jsx)(s.AP, {
             className: a()(d, {
                 [c.ym]: !o,
                 [c.gH]: u
@@ -94,12 +94,12 @@ function g(t) {
             priceOptions: r,
             showPromotionalGiftBanner: a,
             narrowLayout: !0
-        }), (0, n.jsx)(s.DUT, {
+        }), (0, n.jsx)(l.DUT, {
             onClick: i,
             style: {
                 cursor: "pointer"
             },
-            children: (0, n.jsx)(l.r6, {
+            children: (0, n.jsx)(s.r6, {
                 priceOptions: r,
                 className: c.gH
             })

@@ -84,7 +84,6 @@ function p(e) {
                     })
                 },
                 className: m.Hh,
-                "aria-label": h.intl.string(h.t.pLPjsb),
                 children: [(0, i.jsx)(s.Text, {
                     variant: "text-sm/semibold",
                     color: "text-default",
