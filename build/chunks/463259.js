@@ -1,7 +1,7 @@
 /** chunk id: 463259 params = (module,exports,require) **/
 n.d(t, {
     A: () => U,
-    u: () => P
+    u: () => D
 });
 var i = n(627968),
     l = n(64700),
@@ -32,11 +32,11 @@ var i = n(627968),
     C = n(53977),
     R = n(982599),
     k = n(515054),
-    L = n(266713),
-    O = n(985018),
+    O = n(266713),
+    L = n(985018),
     w = n(368379);
 
-function P(e) {
+function D(e) {
     let {
         widget: t,
         ...n
@@ -50,16 +50,16 @@ function P(e) {
     }) : null
 }
 
-function D() {
+function P() {
     return (0, i.jsxs)("div", {
         className: w.mJ,
         children: [(0, i.jsx)(o.mir, {
             size: "xs"
         }), (0, i.jsx)(o.Text, {
-            "aria-label": O.intl.string(O.t["7blcz6"]),
+            "aria-label": L.intl.string(L.t["7blcz6"]),
             variant: "text-xs/normal",
             color: "text-muted",
-            children: O.intl.string(O.t["7blcz6"])
+            children: L.intl.string(L.t["7blcz6"])
         })]
     })
 }
@@ -117,8 +117,8 @@ function M(e) {
         children: [o && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(b.A, {
                 className: w.cG
-            }), u && (0, i.jsx)(D, {}), m && (0, i.jsx)(G, {})]
-        }), s.map((e, l) => (0, i.jsx)(P, {
+            }), u && (0, i.jsx)(P, {}), m && (0, i.jsx)(G, {})]
+        }), s.map((e, l) => (0, i.jsx)(D, {
             widget: e,
             user: t,
             guildId: n,
@@ -128,7 +128,7 @@ function M(e) {
     });
     if (j)
         if (m) return (0, i.jsx)(C.A, {});
-        else return (0, i.jsx)(L.A, {});
+        else return (0, i.jsx)(O.A, {});
     return o ? (0, i.jsx)(N.D, {
         children: S()
     }) : S()

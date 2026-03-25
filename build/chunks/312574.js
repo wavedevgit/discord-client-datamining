@@ -18,8 +18,8 @@ var i = n(627968),
     A = n(256415),
     h = n(723702),
     p = n(780964),
-    f = n(790076),
-    T = n(682262),
+    f = n(682262),
+    T = n(401977),
     S = n(694202),
     E = n(50847),
     b = n(606275),
@@ -31,8 +31,8 @@ var i = n(627968),
     y = n(966040);
 let O = (0, m.t_)(p.X.OVERLAY_PANEL, {
         initialize: function() {
-            return (0, f.Ql)(), g.Ay.addChangeListener(f.Ql), c.A.addChangeListener(f.Ql), A.default.addChangeListener(f.Ql), x.default.addChangeListener(f.Ql), h.isPlatformEmbedded && (0, d.a2)(), () => {
-                g.Ay.removeChangeListener(f.Ql), c.A.removeChangeListener(f.Ql), A.default.removeChangeListener(f.Ql), x.default.removeChangeListener(f.Ql), h.isPlatformEmbedded && (0, d.e0)()
+            return (0, T.Ql)(), g.Ay.addChangeListener(T.Ql), c.A.addChangeListener(T.Ql), A.default.addChangeListener(T.Ql), x.default.addChangeListener(T.Ql), h.isPlatformEmbedded && (0, d.a2)(), () => {
+                g.Ay.removeChangeListener(T.Ql), c.A.removeChangeListener(T.Ql), A.default.removeChangeListener(T.Ql), x.default.removeChangeListener(T.Ql), h.isPlatformEmbedded && (0, d.e0)()
             }
         },
         useTitle: () => N.intl.string(N.t["9cb1Uz"]),
@@ -90,6 +90,6 @@ let O = (0, m.t_)(p.X.OVERLAY_PANEL, {
     R = (0, m.i4)(p.X.OVERLAY_SIDEBAR_ITEM, {
         useTitle: () => N.intl.string(N.t["9cb1Uz"]),
         icon: l.WindowTopOutlineIcon,
-        usePredicate: T.b_,
+        usePredicate: f.b_,
         buildLayout: () => [O]
     })

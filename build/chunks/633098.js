@@ -74,7 +74,7 @@ function v(e) {
                 })
             }
         }, [T, E, b, n]),
-        L = l.useCallback(() => {
+        O = l.useCallback(() => {
             x.A.clearPendingWidgets()
         }, []);
     return R((e, n) => n ? (0, i.jsx)(r.animated.div, {
@@ -97,7 +97,7 @@ function v(e) {
                     size: "sm",
                     variant: "secondary",
                     text: A.intl.string(A.t.yBZMsQ),
-                    onClick: L,
+                    onClick: O,
                     disabled: !N || y
                 }), (0, i.jsx)(d.Button, {
                     size: "sm",

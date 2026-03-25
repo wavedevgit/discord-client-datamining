@@ -93,13 +93,13 @@ function T(e) {
         additionalManageWidgetMenuItems: N
     } = e, S = (0, d.GV)(), y = l.useRef(null), C = (0, o.bG)([c.default], () => c.default.getId() === t), R = (0, f.g)(), {
         trackUserProfileAction: k
-    } = (0, u.NJ)(), L = (0, x.A)({
+    } = (0, u.NJ)(), O = (0, x.A)({
         widget: n,
         onAction: k
-    }), O = R === n.type;
-    (0, m.A)(L, O);
+    }), L = R === n.type;
+    (0, m.A)(O, L);
     let w = C && null != h && !g,
-        P = () => (0, i.jsxs)("div", {
+        D = () => (0, i.jsxs)("div", {
             ref: y,
             className: s()(j.kL, p),
             children: [(0, i.jsx)(_.A, {
@@ -116,14 +116,14 @@ function T(e) {
             })]
         });
     return (0, i.jsx)("section", {
-        ref: L,
+        ref: O,
         "aria-labelledby": S,
         children: w ? (0, i.jsx)(v, {
             index: h ?? 0,
             widget: n,
             getWidth: () => y.current?.offsetWidth,
             additionalManageWidgetMenuItems: N,
-            children: P()
-        }) : P()
+            children: D()
+        }) : D()
     })
 }

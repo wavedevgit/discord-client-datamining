@@ -23,8 +23,8 @@ var n = a(627968),
     A = a(777334),
     v = a(41984),
     I = a(200042),
-    x = a(833551),
-    y = a(395011),
+    y = a(833551),
+    x = a(395011),
     C = a(682763),
     S = a(222506),
     T = a(203322),
@@ -100,19 +100,19 @@ let M = i.memo(function(e) {
         }
     });
     let b = function(e, t) {
-            let a, n, l = (0, r.bG)([y.A], () => !p.isPlatformEmbedded || y.A.isWindowHandleInitialized()),
+            let a, n, l = (0, r.bG)([x.A], () => !p.isPlatformEmbedded || x.A.isWindowHandleInitialized()),
                 c = (0, r.bG)([_.A], () => _.A.getWindow(e)),
-                d = (0, r.bG)([y.A], () => y.A.getFocusedPID()),
+                d = (0, r.bG)([x.A], () => x.A.getFocusedPID()),
                 b = i.useMemo(() => !p.isPlatformEmbedded || null != d && d !== g.UNSET_PID, [d]),
                 [A, I] = i.useState(!1),
                 S = i.useRef(!1),
                 w = i.useCallback(() => {
-                    let e = y.A.getTargetPID(),
+                    let e = x.A.getTargetPID(),
                         a = null != f.A.getVoiceChannelId();
                     s.A.track(E.HAw.OVERLAY_INITIALIZED, {
                         voice_widget_connected: a,
-                        text_widget_connected: y.A.isPinned(E.uss.TEXT),
-                        overlay_render_method: v.Ue[x.default.getOverlayMethod(e)],
+                        text_widget_connected: x.A.isPinned(E.uss.TEXT),
+                        overlay_render_method: v.Ue[y.default.getOverlayMethod(e)],
                         unpinned_widget_types: u.A.getAllUnpinnedPinnedWidgets(t)
                     }), (0, C.Fd)()
                 }, [t]),
@@ -123,14 +123,14 @@ let M = i.memo(function(e) {
                         if (await P(e, R), N.current) return;
                         (0, T.A)("cssLoaded", !0)
                     } catch (e) {
-                        L.error("Timed out waiting for CSS to load", e), s.A.setOverlayCrashed(y.A.getTargetPID(), e), (0, T.A)("errorMessage", "CSS failed load");
+                        L.error("Timed out waiting for CSS to load", e), s.A.setOverlayCrashed(x.A.getTargetPID(), e), (0, T.A)("errorMessage", "CSS failed load");
                         return
                     }
                     try {
                         if (await k(e, t), N.current) return;
                         (0, C.Mq)()
                     } catch (e) {
-                        s.A.setOverlayCrashed(y.A.getTargetPID(), e), (0, T.A)("errorMessage", "showInactive failed");
+                        s.A.setOverlayCrashed(x.A.getTargetPID(), e), (0, T.A)("errorMessage", "showInactive failed");
                         return
                     }
                     await new Promise(t => {
@@ -142,14 +142,14 @@ let M = i.memo(function(e) {
                 if (!S.current && ((0, T.A)("hasUseEffectFired", !0), (0, T.A)("trackedPidFocused", b), l)) {
                     if (null == c) return void(0, T.A)("errorMessage", "No targetOverlayWindow");
                     if (!b) {
-                        M.current || (s.A.updateOverlayState(y.A.getTargetPID(), v.AR.WAITING_FOR_PID_FOCUS, "AppOverlay - not focused"), M.current = !0);
+                        M.current || (s.A.updateOverlayState(x.A.getTargetPID(), v.AR.WAITING_FOR_PID_FOCUS, "AppOverlay - not focused"), M.current = !0);
                         return
                     }
                     S.current = !0, (0, T.A)("reactInitializationStarted", !0), O(c, e)
                 }
             }, [O, b, e, c, l]), (0, o.l0)(() => {
                 clearInterval(R.current), N.current = !0
-            }), a = (0, r.bG)([m.A], () => m.A.windowSize(null != c ? (0, h.Q2)(c) : void 0)), n = (0, r.bG)([y.A], () => y.A.getFocusedWindowHandle()), i.useEffect(() => {
+            }), a = (0, r.bG)([m.A], () => m.A.windowSize(null != c ? (0, h.Q2)(c) : void 0)), n = (0, r.bG)([x.A], () => x.A.getFocusedWindowHandle()), i.useEffect(() => {
                 let e, t;
                 if (null != c && A && c.innerHeight === a.height && c.innerWidth === a.width) return e = c.requestAnimationFrame(() => {
                     e = c.requestAnimationFrame(() => {
@@ -162,7 +162,7 @@ let M = i.memo(function(e) {
                 }
             }, [A, c, d, n, a]), A
         }(c, w.G),
-        A = (0, r.bG)([y.A], () => y.A.getFocusedPID()),
+        A = (0, r.bG)([x.A], () => x.A.getFocusedPID()),
         M = (0, r.bG)([S.A], () => S.A.isInputLocked(A), [A]);
     return b ? (0, n.jsxs)(d.A, {
         themeOverride: E.NJ8.MIDNIGHT,

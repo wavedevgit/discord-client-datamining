@@ -1,5 +1,6 @@
 /** chunk id: 798521 params = (module,exports,require) **/
 e.exports = {
-    w: "header_d55719",
-    L: "loading_d55719"
+    wx: "header_d55719",
+    Lq: "loading_d55719",
+    Zj: "upsellContainer_d55719"
 }

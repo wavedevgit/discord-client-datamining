@@ -5,7 +5,7 @@ n.d(t, {
 var i = n(286237),
     s = n(419954),
     l = n(780964),
-    a = n(790076),
+    a = n(401977),
     r = n(985018);
 let o = (0, s.E2)(l.X.OVERLAY_CURRENT_GAME, {
     Component: a.nR,

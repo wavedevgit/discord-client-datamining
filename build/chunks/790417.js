@@ -39,15 +39,15 @@ function E(e) {
         stream: R
     } = (0, u.A)(t.id), {
         voiceChannel: k,
-        voiceActivity: L
+        voiceActivity: O
     } = (0, g.A)({
         userId: t.id,
         guildId: b
-    }), O = (0, l.bG)([s.A], () => s.A.isFetchingUserOutbox(t.id)), w = t.id === n.id, P = (0, l.bG)([d.A, o.A], () => {
+    }), L = (0, l.bG)([s.A], () => s.A.isFetchingUserOutbox(t.id)), w = t.id === n.id, D = (0, l.bG)([d.A, o.A], () => {
         let e = w ? d.A.getStatus() : o.A.getStatus(t.id);
         return e === a.clD.OFFLINE || e === a.clD.INVISIBLE
-    }), D = y.length > 0 || null != R, G = E?.private !== !0 && null == R && null == L && null != k, M = !P && (D || G), U = C.length > 0;
-    return M || U || !O ? M || U || O ? (0, i.jsxs)(A.K, {
+    }), P = y.length > 0 || null != R, G = E?.private !== !0 && null == R && null == O && null != k, M = !D && (P || G), U = C.length > 0;
+    return M || U || !L ? M || U || L ? (0, i.jsxs)(A.K, {
         className: T.XG,
         fade: !0,
         children: [M ? (0, i.jsx)(_.A, {

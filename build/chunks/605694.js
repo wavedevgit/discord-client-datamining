@@ -31,11 +31,11 @@ var i = n(627968),
     C = n(961350),
     R = n(760751),
     k = n(403362),
-    L = n(183555),
-    O = n(622543),
+    O = n(183555),
+    L = n(622543),
     w = n(466853),
-    P = n(985018),
-    D = n(442716);
+    D = n(985018),
+    P = n(442716);
 let G = /{{(.*?)}}/g,
     M = {
         [r.A.MARVEL_RIVALS]: [{
@@ -277,38 +277,38 @@ function H(e) {
         imagePlaceholder: a
     } = e;
     return (0, i.jsxs)("div", {
-        className: D.mY,
+        className: P.mY,
         children: [(0, i.jsxs)("div", {
-            className: D.TL,
+            className: P.TL,
             children: [(0, i.jsx)(u.Text, {
                 variant: "text-lg/medium",
-                className: D.ZY,
+                className: P.ZY,
                 children: null != t ? t : (0, i.jsx)("div", {
-                    className: D.jC
+                    className: P.jC
                 })
             }), (0, i.jsx)(T.x, {
                 color: "muted",
                 children: n
             })]
         }), (0, h.c)(l) ? (0, i.jsx)("div", {
-            className: D.Xr,
+            className: P.Xr,
             children: (0, i.jsx)(S.Ay, {
                 src: l.proxyUrl,
                 alt: "",
                 width: l.width,
                 height: l.height,
                 responsive: !0,
-                className: D.c8
+                className: P.c8
             })
         }) : null != a ? (0, i.jsx)("div", {
-            className: D.Xr,
+            className: P.Xr,
             children: (0, i.jsx)("img", {
                 src: a,
                 alt: "",
-                className: D.c8
+                className: P.c8
             })
         }) : (0, i.jsx)("div", {
-            className: D.Hi
+            className: P.Hi
         })]
     })
 }
@@ -318,7 +318,7 @@ function B(e) {
         children: t
     } = e;
     return (0, i.jsx)("div", {
-        className: D.Vg,
+        className: P.Vg,
         children: t
     })
 }
@@ -341,9 +341,9 @@ function V(e) {
         type: g.I5.TEXT_DISPLAY,
         id: n,
         content: t,
-        className: D.Qq
+        className: P.Qq
     }) : (0, i.jsx)("div", {
-        className: s()(D.jC, a.className)
+        className: s()(P.jC, a.className)
     })
 }
 
@@ -353,7 +353,7 @@ function z(e) {
         image: n,
         imagePosition: l
     } = e, a = (0, T.X)(), r = (0, h.c)(n) ? (0, i.jsx)("div", {
-        className: s()(D.Sl, a.className),
+        className: s()(P.Sl, a.className),
         "data-position": l,
         children: (0, i.jsx)(S.Ay, {
             src: n.proxyUrl,
@@ -363,10 +363,10 @@ function z(e) {
             responsive: !0
         })
     }) : null == t ? (0, i.jsx)("div", {
-        className: s()(D.bc, a.className)
+        className: s()(P.bc, a.className)
     }) : null;
     return (0, i.jsxs)("div", {
-        className: D.rQ,
+        className: P.rQ,
         children: [null != r && "left" === l ? (0, i.jsxs)(i.Fragment, {
             children: [r, " "]
         }) : null, (0, i.jsx)(V, {
@@ -429,7 +429,7 @@ function J(e) {
                 size: "reduced",
                 weight: "reduced",
                 children: (0, i.jsx)("div", {
-                    className: D.kL,
+                    className: P.kL,
                     children: t
                 })
             })
@@ -443,13 +443,13 @@ function Z(e) {
         gap: 24,
         padding: 12,
         fullWidth: !1,
-        className: D.lO,
+        className: P.lO,
         children: [(0, i.jsxs)(u.BJc, {
             gap: 4,
             children: [e.showSuggestedForYou && (0, i.jsx)(u.Text, {
                 variant: "text-xs/medium",
                 color: "text-default",
-                children: P.intl.string(P.t.zMUr6Z)
+                children: D.intl.string(D.t.zMUr6Z)
             }), (0, i.jsx)(u.Heading, {
                 variant: "heading-sm/medium",
                 color: "text-default",
@@ -473,7 +473,7 @@ let Q = Object.assign(function(e) {
     var t, n;
     let a, r, g, h, j, {
             trackUserProfileAction: v
-        } = (0, L.NJ)(),
+        } = (0, O.NJ)(),
         {
             user: T,
             widget: E,
@@ -513,25 +513,25 @@ let Q = Object.assign(function(e) {
         en = null == b && X && V && z && null != Q && !Q.scopes.includes(o.F.APPLICATION_IDENTITIES_WRITE) && !Q.scopes.includes(o.F.SDK_SOCIAL_LAYER) && !Q.scopes.includes(o.F.SDK_SOCIAL_LAYER_PRESENCE),
         ei = (0, i.jsxs)(i.Fragment, {
             children: [null != W ? (0, i.jsx)("img", {
-                className: D.Z2,
+                className: P.Z2,
                 src: W,
                 width: 16,
                 height: 16,
                 alt: ""
             }) : (0, i.jsx)("span", {
-                className: D.qP
+                className: P.qP
             }), (0, i.jsx)(u.Text, {
                 variant: "text-sm/medium",
                 children: F?.name != null ? F.name : (0, i.jsx)("div", {
-                    className: D.jC
+                    className: P.jC
                 })
             })]
         }),
         el = null == H ? (0, i.jsx)("div", {
-            className: D.qd,
+            className: P.qd,
             children: ei
         }) : (0, i.jsx)(u.DUT, {
-            className: s()(D.qd, D.vk),
+            className: s()(P.qd, P.vk),
             onClick: B,
             children: ei
         }),
@@ -539,7 +539,7 @@ let Q = Object.assign(function(e) {
             isLoading: ea,
             hasData: es,
             components: er
-        } = (t = T.id, n = E.applicationId, a = (0, f.A)(), r = (0, c.bG)([y.A], () => y.A.getUserIdentityByApplication(t, n)), g = (0, c.bG)([O.A], () => O.A.getApplicationWidgetConfig(n)), h = (0, c.bG)([y.A, O.A], () => null == y.A.getUserIdentities(t) || null == O.A.applicationWidgetConfigs), j = l.useMemo(() => {
+        } = (t = T.id, n = E.applicationId, a = (0, f.A)(), r = (0, c.bG)([y.A], () => y.A.getUserIdentityByApplication(t, n)), g = (0, c.bG)([L.A], () => L.A.getApplicationWidgetConfig(n)), h = (0, c.bG)([y.A, L.A], () => null == y.A.getUserIdentities(t) || null == L.A.applicationWidgetConfigs), j = l.useMemo(() => {
             var e, t;
             if (null == g) return null;
             let n = M[g.widgetTemplateId];
@@ -617,9 +617,9 @@ let Q = Object.assign(function(e) {
         ...e,
         userId: T.id,
         widget: E,
-        className: s()(D.Y5, S && D.aK),
+        className: s()(P.Y5, S && P.aK),
         headerTitle: el,
-        headerClassName: D.wx,
+        headerClassName: P.wx,
         additionalManageWidgetMenuItems: null != H ? (0, i.jsx)(u.Drp, {
             id: "view-game-profile",
             label: "View Game Profile",
@@ -632,28 +632,28 @@ let Q = Object.assign(function(e) {
                 component: er
             })
         }), G && (0, i.jsxs)("div", {
-            className: D.qr,
+            className: P.qr,
             children: [ea || es || et || en ? null : (0, i.jsxs)("div", {
-                className: D.o8,
+                className: P.o8,
                 children: [(0, i.jsx)(u.Qfk, {
                     size: "xxs"
                 }), (0, i.jsx)(u.Text, {
                     variant: "text-sm/medium",
                     color: "text-subtle",
-                    children: P.intl.string(P.t.z5K4Uv)
+                    children: D.intl.string(D.t.z5K4Uv)
                 })]
             }), et ? (0, i.jsx)(Z, {
-                heading: P.intl.string(P.t.UDPRLO),
-                content: P.intl.string(P.t["OW/2al"]),
+                heading: D.intl.string(D.t.UDPRLO),
+                content: D.intl.string(D.t["OW/2al"]),
                 buttons: (0, i.jsx)(u.Button, {
-                    text: P.intl.string(P.t.S0W8Z5),
+                    text: D.intl.string(D.t.S0W8Z5),
                     onClick: ee
                 })
             }) : en ? (0, i.jsx)(Z, {
-                heading: P.intl.string(P.t["9WarGY"]),
-                content: P.intl.string(P.t.qgxnKe),
+                heading: D.intl.string(D.t["9WarGY"]),
+                content: D.intl.string(D.t.qgxnKe),
                 buttons: (0, i.jsx)(u.Button, {
-                    text: P.intl.string(P.t.vD60Pv),
+                    text: D.intl.string(D.t.vD60Pv),
                     onClick: ee
                 })
             }) : b]

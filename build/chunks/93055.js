@@ -70,7 +70,7 @@ function g(e, t) {
             hasAccess: r
         } = A(t),
         l = (0, i.bG)([o.A], () => null != e && (o.A.isFavorite(e.id) || e.isThread() && o.A.isFavorite(e.parent_id)), [e]);
-    return !n || r && l ? e ?? null : null
+    return n && (!r || !l || e?.isCategory()) ? null : e ?? null
 }
 
 function p() {

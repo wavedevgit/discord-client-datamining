@@ -45,13 +45,13 @@ function x() {
                 applicationId: _.application.id
             }), x.current = !0)
         }, [h, e, _]), h) return (0, i.jsx)("div", {
-        className: m.L,
+        className: m.Lq,
         children: (0, i.jsx)(a.y$y, {})
     });
     if (null == _) return (0, i.jsx)(u.A, {});
     let I = (0, i.jsxs)(a.BJc, {
         gap: 4,
-        className: m.w,
+        className: m.wx,
         children: [(0, i.jsx)(a.Heading, {
             variant: "heading-md/medium",
             color: "text-strong",
@@ -77,10 +77,13 @@ function x() {
                 align: "center",
                 children: [(0, i.jsx)(a.hKd, {
                     size: 32
-                }), I, (0, i.jsx)(d.A, {
-                    user: f,
-                    application: _.application,
-                    onDismiss: n
+                }), I, (0, i.jsx)("div", {
+                    className: m.Zj,
+                    children: (0, i.jsx)(d.A, {
+                        user: f,
+                        application: _.application,
+                        onDismiss: n
+                    })
                 }), (0, i.jsx)(c.A, {})]
             }) : (0, i.jsxs)(a.BJc, {
                 gap: 32,

@@ -1,6 +1,6 @@
 /** chunk id: 742710 params = (module,exports,require) **/
 n.d(t, {
-    A: () => L
+    A: () => O
 });
 var i = n(627968),
     l = n(64700),
@@ -219,7 +219,7 @@ function k(e) {
     })
 }
 
-function L(e) {
+function O(e) {
     let {
         user: t,
         guildId: n,
@@ -232,14 +232,14 @@ function L(e) {
         coverRef: T,
         className: y
     } = e, C = l.useRef(null), {
-        applicationId: L,
-        comment: O,
+        applicationId: O,
+        comment: L,
         tags: w
     } = o, {
-        coverImageUrl: P,
-        gameName: D,
+        coverImageUrl: D,
+        gameName: P,
         isLoading: G
-    } = (0, d.A)(L), M = {
+    } = (0, d.A)(O), M = {
         variant: "heading-sm/medium",
         color: "text-default"
     }, U = g.default.getCurrentUser(), F = U?.id === t.id, W = 1 === (0, p.cv)(c), H = !u && F, B = H && (0, p.y9)(c), X = H && !W, {
@@ -248,10 +248,10 @@ function L(e) {
     if (G) return (0, i.jsx)(A.E, {});
     let z = () => (0, i.jsx)(_.A, {
             coverRef: T,
-            className: null == P || u ? void 0 : E.iL,
-            imageSrc: P,
-            gameName: D,
-            applicationId: L,
+            className: null == D || u ? void 0 : E.iL,
+            imageSrc: D,
+            gameName: P,
+            applicationId: O,
             userId: t.id,
             disableInteraction: u,
             hideTooltip: !0
@@ -269,21 +269,21 @@ function L(e) {
                 className: b.zH,
                 children: [u ? (0, i.jsx)(r.Heading, {
                     ...M,
-                    children: D
+                    children: P
                 }) : (0, i.jsx)(S, {
-                    applicationId: L,
+                    applicationId: O,
                     userId: t.id,
-                    gameName: D,
+                    gameName: P,
                     ...M
                 }), B ? (0, i.jsx)(k, {
-                    text: O,
+                    text: L,
                     user: t,
                     guildId: n,
                     channelId: a,
                     widgetType: c,
-                    applicationId: L
+                    applicationId: O
                 }) : (0, i.jsx)(R, {
-                    text: O,
+                    text: L,
                     user: t,
                     guildId: n,
                     channelId: a
@@ -291,12 +291,12 @@ function L(e) {
                     tags: w,
                     isCurrentUser: F,
                     widgetType: c,
-                    applicationId: L,
+                    applicationId: O,
                     disableInteraction: u,
                     className: b._A
                 }), !u && (0, i.jsx)(v.o, {
                     className: b.Ez,
-                    applicationId: L,
+                    applicationId: O,
                     guildId: n,
                     channelId: a
                 })]
