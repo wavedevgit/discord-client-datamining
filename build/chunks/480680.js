@@ -1,7 +1,7 @@
 /** chunk id: 480680 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => w
+    A: () => k
 });
 var i = n(627968),
     s = n(64700),
@@ -102,8 +102,8 @@ function P(e) {
                 })
             }, [e, t])
         }(M ? y : null);
-    let w = (0, o.yK)([_.A], () => _.A.getSavedMessages()),
-        F = s.useMemo(() => w.flatMap(e => {
+    let k = (0, o.yK)([_.A], () => _.A.getSavedMessages()),
+        F = s.useMemo(() => k.flatMap(e => {
             let {
                 message: t
             } = e;
@@ -114,9 +114,9 @@ function P(e) {
                 kind: O.yL.BOOKMARK,
                 message: t
             }]
-        }), [w]),
-        K = k(v, l, r),
-        W = k(y, l, null);
+        }), [k]),
+        K = w(v, l, r),
+        W = w(y, l, null);
     (0, A.Ay)(() => {
         u.h.dispatch({
             type: "NOTIFICATIONS_INBOX_OPEN"
@@ -205,7 +205,7 @@ function P(e) {
     })
 }
 
-function w(e) {
+function k(e) {
     return (0, i.jsx)(N.GM, {
         children: (0, i.jsx)(P, {
             ...e
@@ -213,7 +213,7 @@ function w(e) {
     })
 }
 
-function k(e, t, n) {
+function w(e, t, n) {
     return s.useMemo(() => 0 === e.length || t === O.Io.BOOKMARKS ? G : e.filter(e => {
         let {
             id: i

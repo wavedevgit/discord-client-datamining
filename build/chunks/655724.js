@@ -17,22 +17,22 @@ function c(e) {
         channel: i,
         onAction: c,
         variant: A = "primary"
-    } = e, m = (0, o.u)(t, i, "useRequestToStreamButton"), p = (0, r.bG)([a.A], () => a.A.getVoiceChannelId() === i.id, [i.id]);
-    if (null == m) return null;
-    let h = (0, n.jsx)(l.$nd, {
+    } = e, h = (0, o.u)(t, i, "useRequestToStreamButton"), m = (0, r.bG)([a.A], () => a.A.getVoiceChannelId() === i.id, [i.id]);
+    if (null == h) return null;
+    let p = (0, n.jsx)(l.$nd, {
         text: u.intl.string(d.default.DKHhec),
         variant: A,
         size: "sm",
         onClick: () => {
-            m.handleRequestToStream("request to stream button"), c?.()
+            h.handleRequestToStream("request to stream button"), c?.()
         },
         fullWidth: !0,
-        disabled: !p
+        disabled: !m
     });
-    return p ? h : (0, n.jsx)(s.m, {
+    return m ? p : (0, n.jsx)(s.m, {
         position: "top",
         text: u.intl.string(d.default.qRXats),
         asContainer: !0,
-        children: h
+        children: p
     })
 }

@@ -43,9 +43,9 @@ function T(e) {
             width: G,
             height: U,
             layout: P,
-            idle: w
+            idle: k
         } = e,
-        k = A.Ay.getVideoComponent(),
+        w = A.Ay.getVideoComponent(),
         V = h.default.getId(),
         [B, H] = s.useState(null),
         F = (0, c.A)(B),
@@ -173,7 +173,7 @@ function T(e) {
                                     noBorder: er >= G || ea >= U,
                                     channel: O,
                                     className: I.JS,
-                                    videoComponent: k,
+                                    videoComponent: w,
                                     width: G,
                                     participant: t,
                                     onClick: n,
@@ -189,7 +189,7 @@ function T(e) {
                     })
                 }), et ? (0, i.jsx)(r.animated.div, {
                     className: a()(N.$l, {
-                        [N.N7]: w
+                        [N.N7]: k
                     }),
                     style: {
                         bottom: ep.value

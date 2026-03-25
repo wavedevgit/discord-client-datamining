@@ -47,8 +47,8 @@ let E = (0, a.A)(e => {
     s.useEffect(() => {
         h._.dispatch(f.jej.REMEASURE_TARGET)
     }, [O, L, P.width, P.height]);
-    let w = s.useMemo(() => n.filter(e => e.type !== x.lp.ACTIVITY || !e.participants.some(e => (0, r.S)(e))), [n, E]),
-        k = (0, l.bG)([o.A], () => o.A.getVoiceParticipantsHidden(T.id), [T.id]);
+    let k = s.useMemo(() => n.filter(e => e.type !== x.lp.ACTIVITY || !e.participants.some(e => (0, r.S)(e))), [n, E]),
+        w = (0, l.bG)([o.A], () => o.A.getVoiceParticipantsHidden(T.id), [T.id]);
     if (U?.channelId === T.id) return (0, i.jsx)(m.A, {
         height: L
     });
@@ -71,7 +71,7 @@ let E = (0, a.A)(e => {
     });
     if (null == a) {
         if (0 === n.length) {
-            let e = t.length > 0 && !k;
+            let e = t.length > 0 && !w;
             return (0, i.jsx)(g.A, {
                 channelId: T.id,
                 allPoppedOut: e
@@ -84,7 +84,7 @@ let E = (0, a.A)(e => {
             children: (0, i.jsx)(_.A, {
                 channel: T,
                 className: C.g9,
-                participants: w,
+                participants: k,
                 totalNumberOfParticipants: t.length,
                 onClick: N,
                 onDoubleClick: S,
@@ -99,7 +99,7 @@ let E = (0, a.A)(e => {
         onContextMenuParticipant: b,
         onSelectParticipant: N,
         selectedParticipant: a,
-        filteredParticipants: w,
+        filteredParticipants: k,
         participants: t,
         popoutType: G,
         className: y,

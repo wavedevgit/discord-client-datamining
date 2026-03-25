@@ -43,8 +43,8 @@ let y = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                 unread: G = !1,
                 defaultFolderName: U,
                 draggable: P = !1,
-                sorting: w = !1,
-                onDragStart: k,
+                sorting: k = !1,
+                onDragStart: w,
                 onDragEnd: V,
                 onExpandCollapse: B,
                 onContextMenu: H,
@@ -64,13 +64,13 @@ let y = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
             et = Q || Z,
             en = (0, m.qK)("FolderItem");
         s.useEffect(() => {
-            w && $(!1)
-        }, [w]);
+            k && $(!1)
+        }, [k]);
         let [{
             dragging: ei
         }, es] = (0, r.i)({
             type: g.PJ.FOLDER,
-            item: () => (k?.(), {
+            item: () => (w?.(), {
                 type: g.PJ.FOLDER,
                 nodeId: u.id
             }),
@@ -106,7 +106,7 @@ let y = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                 className: v.Io
             }), (0, i.jsx)(N.A, {
                 text: er,
-                disabled: w,
+                disabled: k,
                 selected: R,
                 disableWrapper: !0,
                 children: (0, i.jsx)("div", {
@@ -123,7 +123,7 @@ let y = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                     }) : (0, i.jsx)(x.A, {
                         folderNode: u,
                         expanded: O,
-                        sorting: w,
+                        sorting: k,
                         mediaState: L,
                         mentionCount: M,
                         isMentionLowImportance: D,

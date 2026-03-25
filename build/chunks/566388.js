@@ -39,8 +39,8 @@ var i = n(627968),
     G = n(309010),
     U = n(723702),
     P = n(837921),
-    w = n(323443),
-    k = n(113783),
+    k = n(323443),
+    w = n(113783),
     V = n(69407),
     B = n(446600),
     H = n(571909),
@@ -134,7 +134,7 @@ function ea(e) {
         I = (0, E.Us)(),
         N = (0, o.bG)([G.A], () => G.A.getVoiceChannelId() === n.id, [n.id]),
         b = (0, o.bG)([D.A], () => D.A.can($.xBc.CONNECT, n)),
-        S = (0, k.E5)(n.id, V.ip.SPEAKER),
+        S = (0, w.E5)(n.id, V.ip.SPEAKER),
         y = (0, o.bG)([p.A], () => p.A.getSelectedParticipant(n.id)),
         j = h && I !== $.BRT.POPOUT,
         [R, O] = s.useState(0),
@@ -155,7 +155,7 @@ function ea(e) {
     return U && (B = "0px"), t = U ? (0, i.jsx)(X.A, {
         channel: n,
         onContinueClick: () => {
-            (0, H.ek)(!1), N || (0, w.cy)(n)
+            (0, H.ek)(!1), N || (0, k.cy)(n)
         }
     }) : N ? (0, i.jsx)(Y.A, {
         channel: n,

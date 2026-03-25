@@ -84,14 +84,14 @@ function C(e) {
             channel: t,
             maybeLeaveFullScreen: G
         },
-        w = s.useRef(P);
+        k = s.useRef(P);
     return (s.useEffect(() => {
-        w.current = P
+        k.current = P
     }), s.useEffect(() => {
         let {
             channel: e,
             maybeLeaveFullScreen: t
-        } = w.current;
+        } = k.current;
         return _.default.track(x.HAw.VIDEO_LAYOUT_TOGGLED, {
             video_layout: b ? "popout" : T,
             ...(0, o.QS)(e.id)

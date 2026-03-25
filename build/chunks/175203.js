@@ -39,8 +39,8 @@ var i = n(627968),
     G = n(209932),
     U = n(253932),
     P = n(461782),
-    w = n(614518),
-    k = n(706787),
+    k = n(614518),
+    w = n(706787),
     V = n(961350),
     B = n(760751),
     H = n(111162),
@@ -111,8 +111,8 @@ let eh = [er.lp.ACTIVITY],
             eU = eG === ea.bb8.AUTO_PROBING,
             {
                 speaking: eP,
-                ringing: ew,
-                hasVideo: ek
+                ringing: ek,
+                hasVideo: ew
             } = (0, el.A)(u, eR),
             eV = (0, c.bG)([G.A], () => null !== eL && G.A.isUserPlayingSounds(eL), [eL]),
             eB = (t = eR, n = u, l = z.getGuildId(), r = n.type !== er.lp.ACTIVITY ? n.user.id : n.applicationId, o = (0, c.cf)([Y.A], () => {
@@ -142,7 +142,7 @@ let eh = [er.lp.ACTIVITY],
                 deafened: (n.type === er.lp.USER && n.voiceState?.isVoiceDeafened()) ?? !1
             }),
             eH = u.type === er.lp.STREAM && eL === eR,
-            eF = (0, c.bG)([w.A], () => u.type === er.lp.USER && null != eL ? w.A.getEffectForUserId(eL) : null),
+            eF = (0, c.bG)([k.A], () => u.type === er.lp.USER && null != eL ? k.A.getEffectForUserId(eL) : null),
             eK = (0, c.bG)([Y.A], () => Y.A.getVoicePlatformForChannel(z.id, eL ?? ea.dJq)),
             {
                 showGameIcon: eW
@@ -254,7 +254,7 @@ let eh = [er.lp.ACTIVITY],
                 spreadDirection: x.O.INSET_ONLY,
                 maxInnerSpreadRadius: 4
             }),
-            e8 = (0, er.Ay)(u) ? h.kN9 : ek ? h.npA : h.EsG,
+            e8 = (0, er.Ay)(u) ? h.kN9 : ew ? h.npA : h.EsG,
             e4 = u.type === er.lp.STREAM && em;
         return (0, i.jsx)(m.A, {
             section: ea.JJy.VOICE_CHANNEL_TILE,
@@ -263,7 +263,7 @@ let eh = [er.lp.ACTIVITY],
                 enableZoom: e4,
                 children: (0, i.jsx)("div", {
                     className: a()(eu.iE, {
-                        [eu.DF]: ew
+                        [eu.DF]: ek
                     }, j),
                     style: M,
                     onMouseEnter: () => {
@@ -297,9 +297,9 @@ let eh = [er.lp.ACTIVITY],
                                 focusProps: {
                                     offset: 1
                                 },
-                                children: [null != eF && null != eL ? (0, i.jsx)(k.A, {
+                                children: [null != eF && null != eL ? (0, i.jsx)(w.A, {
                                     voiceChannelEffect: eF,
-                                    onComplete: () => (0, w.a)(eL),
+                                    onComplete: () => (0, k.a)(eL),
                                     userId: eL
                                 }) : null, u.type === er.lp.USER ? (0, i.jsx)("div", {
                                     className: eu.nl,
@@ -328,7 +328,7 @@ let eh = [er.lp.ACTIVITY],
                                     inCall: J,
                                     participantId: u.id,
                                     participantType: u.type,
-                                    hasVideo: ek ?? !1,
+                                    hasVideo: ew ?? !1,
                                     ...eB,
                                     idle: eN,
                                     platform: eK,
@@ -475,8 +475,8 @@ let eg = s.memo(e => {
         localMuted: G,
         serverMuted: U,
         serverDeafened: P,
-        hasVideo: w,
-        hideAudioIcon: k,
+        hasVideo: k,
+        hideAudioIcon: w,
         onToggleMute: V,
         popoutType: B,
         paused: H,
@@ -495,7 +495,7 @@ let eg = s.memo(e => {
             };
         return z.A.addChangeListener(t), () => z.A.removeChangeListener(t)
     }, []);
-    let ee = !k && E === er.lp.STREAM && w && (!Q || G),
+    let ee = !w && E === er.lp.STREAM && k && (!Q || G),
         et = function(e) {
             let {
                 localMuted: t,

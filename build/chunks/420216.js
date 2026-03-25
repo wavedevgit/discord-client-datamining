@@ -17,8 +17,8 @@ var l = n(554146),
     T = n(976860),
     A = n(780964),
     I = n(840065),
-    N = n(879945),
-    p = n(954571),
+    p = n(879945),
+    N = n(954571),
     m = n(379848),
     R = n(49999),
     h = n(652215),
@@ -90,7 +90,7 @@ let O = e => {
                         children: [(0, i.jsx)(r.PMB, {
                             onClick: () => m(R.i.UNKNOWN),
                             noticeType: O
-                        }), (0, i.jsx)(N.A, {
+                        }), (0, i.jsx)(p.A, {
                             className: C.tV
                         }), g.intl.string(g.t["5NUVHH"]), (0, i.jsx)(r.Z_L, {
                             onClick: () => (0, u.A)({
@@ -166,7 +166,7 @@ let O = e => {
                             className: C.CO,
                             noticeType: O,
                             onClick: () => {
-                                p.default.track(h.HAw.PREMIUM_PROMOTION_OPENED, {
+                                N.default.track(h.HAw.PREMIUM_PROMOTION_OPENED, {
                                     location_section: h.JJy.NOTIFICATION_BAR,
                                     location_object: h.ZSU.BUTTON_CTA
                                 }), (0, I.openUserSettings)(A.X.NITRO_PANEL)

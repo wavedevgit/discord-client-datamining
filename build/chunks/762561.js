@@ -38,8 +38,8 @@ var i = n(627968),
     G = n(968975),
     U = n(518477),
     P = n(996988),
-    w = n(985018),
-    k = n(743789);
+    k = n(985018),
+    w = n(743789);
 
 function V(e) {
     let {
@@ -93,7 +93,7 @@ function V(e) {
                     privateBanner: H?.private === !0 ? (0, i.jsx)(b.A, {}) : void 0,
                     children: [null != X.interactionType && (0, i.jsx)(l.animated.div, {
                         style: J,
-                        className: k.tB
+                        className: w.tB
                     }), (0, i.jsxs)(a.d_W, {
                         children: [(0, i.jsxs)(y.A, {
                             children: [(0, i.jsx)(j.A, {
@@ -107,16 +107,16 @@ function V(e) {
                                 user: t
                             })]
                         }), (0, i.jsxs)("div", {
-                            className: k.wx,
+                            className: w.wx,
                             children: [(0, i.jsx)(I.A, {
                                 user: t,
                                 displayProfile: H,
                                 themeType: P.d.SIDEBAR,
                                 animateOnHoverOrFocusOnly: !z,
-                                className: k.vK
+                                className: w.vK
                             }), (0, i.jsx)(N.A, {
                                 userId: t.id,
-                                className: k.oR
+                                className: w.oR
                             }), (0, i.jsx)(E.A, {
                                 user: t,
                                 displayProfile: H,
@@ -137,19 +137,19 @@ function V(e) {
                             isHoveringOrFocusing: null == X.interactionType && z,
                             onOpenProfile: V ? void 0 : Q
                         }), $ && (0, i.jsx)("div", {
-                            className: k.sJ,
+                            className: w.sJ,
                             children: (0, i.jsx)(S.A, {
                                 user: t,
                                 widgets: H.widgets,
                                 onOpenUserProfileModal: Q
                             })
                         }), null != et && et.length > 0 && (0, i.jsx)("div", {
-                            className: k.vS,
+                            className: w.vS,
                             children: (0, i.jsx)(G.A, {
                                 profileOwner: t,
                                 unownedWishlistItems: et,
                                 wishlistId: Z,
-                                title: w.intl.string(w.t["7lZ31J"]),
+                                title: k.intl.string(k.t["7lZ31J"]),
                                 onClick: () => {
                                     Q?.({
                                         tabSection: U.RP.WISHLIST
@@ -180,7 +180,7 @@ let B = e => {
         context: l
     } = e, [a, r] = s.useState("interactive-text-default");
     return (0, i.jsx)("div", {
-        className: k.qr,
+        className: w.qr,
         children: (0, i.jsx)(o.DUT, {
             onMouseEnter: () => r("interactive-text-hover"),
             onMouseLeave: () => r("interactive-text-default"),
@@ -191,11 +191,11 @@ let B = e => {
                     ...l
                 })
             },
-            className: k.wC,
+            className: w.wC,
             children: (0, i.jsx)(o.Text, {
                 color: a,
                 variant: "text-sm/normal",
-                children: w.intl.string(w.t["+Xp3hq"])
+                children: k.intl.string(k.t["+Xp3hq"])
             })
         })
     })

@@ -22,10 +22,10 @@ function m(e) {
         target: n,
         defaultTarget: m,
         onClose: p,
-        sidebarFooter: b,
-        searchBar: g,
-        onViewChange: y,
-        emptyState: v,
+        sidebarFooter: y,
+        searchBar: b,
+        onViewChange: v,
+        emptyState: g,
         searchQuery: x,
         clearSearchQuery: E
     } = e, A = d.A.useField("currentPanelKey"), {
@@ -36,18 +36,18 @@ function m(e) {
         let e = C.entry(A ?? j)?.parentPanelKey;
         if (null != e) return C.getPanelOrThrow(e)
     }, [A, C, j]), {
-        navigateWithValidation: R
+        navigateWithValidation: T
     } = (0, o.L_)();
     i.useEffect(() => {
         h.A.init({
             accessibleDirectory: C,
-            onViewChange: y,
+            onViewChange: v,
             navigateWithValidation: (e, t) => {
-                null == N.entry(e) && E?.(), R(t)
+                null == N.entry(e) && E?.(), T(t)
             }
         })
-    }, [C, R, y, E, N]);
-    let [T, k] = i.useState(!0);
+    }, [C, T, v, E, N]);
+    let [R, k] = i.useState(!0);
     (0, a.Ay)(() => (h.A.navigate(j, {
         animatePanelScroll: !1,
         animateSidebarScroll: !1,
@@ -59,7 +59,7 @@ function m(e) {
             visibleDirectory: N,
             accessibleDirectory: C
         }), [N, C]),
-        L = i.useMemo(() => () => R(p), [R, p]),
+        L = i.useMemo(() => () => T(p), [T, p]),
         D = null != A ? N.get(A) : void 0;
     return (0, r.jsx)(c.x.Provider, {
         value: w,
@@ -68,12 +68,12 @@ function m(e) {
             children: [(0, r.jsx)(s.L, {
                 root: S,
                 onClose: L,
-                footer: b,
-                emptyState: v,
-                searchBar: g
+                footer: y,
+                emptyState: g,
+                searchBar: b
             }), (0, r.jsx)(l.A, {
                 onClose: L,
-                setting: T ? void 0 : D ?? I
+                setting: R ? void 0 : D ?? I
             })]
         })
     })

@@ -45,24 +45,24 @@ function P(e) {
         setIsHangStatusInputFocused: n,
         setIsEmojiPickerOpen: l,
         setPopoutRef: r
-    } = e, P = s.useRef(null), w = (0, d.bG)([C.A], () => C.A.getCustomHangStatus()), k = (0, S.A)(), V = (0, d.bG)([C.A], () => C.A.getFavoritedStatuses()), {
+    } = e, P = s.useRef(null), k = (0, d.bG)([C.A], () => C.A.getCustomHangStatus()), w = (0, S.A)(), V = (0, d.bG)([C.A], () => C.A.getFavoritedStatuses()), {
         defaultStatusVariant: B,
         allowPermanentClear: H
     } = (0, x.$j)({
         guildId: t.guild_id,
         location: "HangStatusPicker"
-    }), F = (0, E.hy)(B), K = s.useRef(null), [W, Y] = s.useState(w?.status ?? ""), [z, q] = s.useState(w?.emoji ?? null), [X, J] = s.useState(!1), Q = (0, d.bG)([C.A], () => C.A.getCurrentHangStatus()), $ = F[Q], Z = V.length > 0, ee = null == W || "" === W.trim(), et = (0, b.A)(t), en = W.trim().length > 0 && W.trim() !== w?.status?.trim() || null != z && !o()(z, w?.emoji), [ei, es] = s.useState(!1), el = (0, d.bG)([C.A], () => C.A.getFavoritedStatuses().length >= C.x), ea = W.length > 0 || null != z, [er, eo] = (0, _.kn)([u.M.HANG_STATUS_POPOVER_NUX]);
+    }), F = (0, E.hy)(B), K = s.useRef(null), [W, Y] = s.useState(k?.status ?? ""), [z, q] = s.useState(k?.emoji ?? null), [X, J] = s.useState(!1), Q = (0, d.bG)([C.A], () => C.A.getCurrentHangStatus()), $ = F[Q], Z = V.length > 0, ee = null == W || "" === W.trim(), et = (0, b.A)(t), en = W.trim().length > 0 && W.trim() !== k?.status?.trim() || null != z && !o()(z, k?.emoji), [ei, es] = s.useState(!1), el = (0, d.bG)([C.A], () => C.A.getFavoritedStatuses().length >= C.x), ea = W.length > 0 || null != z, [er, eo] = (0, _.kn)([u.M.HANG_STATUS_POPOVER_NUX]);
     s.useEffect(() => {
         g.default.track(O.HAw.HANG_STATUS_PICKER_OPENED, {
             ...(0, I.A)(t.id),
             num_favorites: V.length,
-            num_recents: k.length
+            num_recents: w.length
         })
     }, []), s.useEffect(() => {
         W.trim().length > 0 && ei && es(!1), null == z && ei && es(!1)
     }, [W, z, ei]), s.useEffect(() => {
-        X || W !== (w?.status ?? "") && "" !== W.trim() ? n(!0) : n(!1)
-    }, [W, w?.status, z, w?.emoji, n, X]), s.useEffect(() => {
+        X || W !== (k?.status ?? "") && "" !== W.trim() ? n(!0) : n(!1)
+    }, [W, k?.status, z, k?.emoji, n, X]), s.useEffect(() => {
         r?.(K?.current)
     }, [K, r]);
     let ec = s.useCallback(e => {
@@ -76,8 +76,8 @@ function P(e) {
                 emoji: t,
                 status: n
             } = e;
-            o()(t, w?.emoji) && n === w?.status || ((0, f.hS)(e.status, e.emoji, !0), q(e.emoji), Y(e.status))
-        }, [w?.emoji, w?.status]),
+            o()(t, k?.emoji) && n === k?.status || ((0, f.hS)(e.status, e.emoji, !0), q(e.emoji), Y(e.status))
+        }, [k?.emoji, k?.status]),
         eh = s.useCallback(e => {
             e?.preventDefault?.(), null != z && 0 === W.trim().length && es(!0), ee || (eu({
                 status: W,
@@ -192,7 +192,7 @@ function P(e) {
                                 setIsEmojiPickerOpen: l
                             })
                         },
-                        trailing: null == w && null == Q || en ? en ? {
+                        trailing: null == k && null == Q || en ? en ? {
                             icon: A.KS6,
                             onClick: eh,
                             "aria-label": M.intl.string(M.t["R3BPH+"]),
@@ -233,7 +233,7 @@ function P(e) {
                         size: "xxs"
                     })]
                 }), V.map((e, t) => eg(e, t, "favorite"))]
-            }), k.length > 0 && Z && (0, i.jsxs)(i.Fragment, {
+            }), w.length > 0 && Z && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)("div", {
                     role: "separator",
                     className: D.me
@@ -247,7 +247,7 @@ function P(e) {
                         size: "xxs"
                     })]
                 })]
-            }), k.map((e, t) => eg(e, t, "recent"))]
+            }), w.map((e, t) => eg(e, t, "recent"))]
         })]
     })
 }

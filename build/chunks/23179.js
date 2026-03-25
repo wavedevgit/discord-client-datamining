@@ -99,7 +99,7 @@ function P(e) {
     })
 }
 
-function w(e) {
+function k(e) {
     let {
         searchContext: t,
         isFeedbackVisible: n,
@@ -111,7 +111,7 @@ function w(e) {
     }) : null
 }
 
-function k(e) {
+function w(e) {
     let {
         messages: t,
         blockCount: n,
@@ -333,7 +333,7 @@ let V = [],
                     children: D.intl.format(D.t["gQeg/R"], {
                         handleClick: en
                     })
-                }), (0, i.jsx)(k, {
+                }), (0, i.jsx)(w, {
                     messages: u,
                     blockCount: A,
                     ignoreCount: m,
@@ -349,7 +349,7 @@ let V = [],
                     searchRequestAnalyticsId: a,
                     searchResultsQuery: R
                 })]
-            }), (0, i.jsx)(w, {
+            }), (0, i.jsx)(k, {
                 searchContext: t,
                 isFeedbackVisible: g,
                 dismissFeedbackEntrypoint: x

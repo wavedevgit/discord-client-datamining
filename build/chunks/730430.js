@@ -1,6 +1,6 @@
 /** chunk id: 730430 params = (module,exports,require) **/
 i.d(t, {
-    A: () => m
+    A: () => h
 });
 var n = i(627968);
 i(64700);
@@ -14,22 +14,22 @@ var l = i(311907),
     c = i(652215),
     A = i(985018);
 
-function m(e) {
+function h(e) {
     let {
         variant: t = "active",
         size: i = "sm",
-        hangStatusChannel: m,
-        onAction: p,
-        userId: h,
+        hangStatusChannel: h,
+        onAction: m,
+        userId: p,
         ...g
-    } = e, f = (0, l.bG)([d.A], () => d.A.getChannelId() === m.id);
+    } = e, f = (0, l.bG)([d.A], () => d.A.getChannelId() === h.id);
     return (0, n.jsx)(r.Button, {
         text: f ? A.intl.string(A.t.BXxdl7) : A.intl.string(A.t["9C444m"]),
         onClick: () => {
-            p?.(), s.default.selectVoiceChannel(m.id), (0, o.iN)(m.id), u.default.track(c.HAw.HANG_STATUS_CTA_CLICKED, {
+            m?.(), s.default.selectVoiceChannel(h.id), (0, o.iN)(h.id), u.default.track(c.HAw.HANG_STATUS_CTA_CLICKED, {
                 source: "UserProfilePopout",
-                ...(0, a.A)(m.id),
-                other_user_id: h,
+                ...(0, a.A)(h.id),
+                other_user_id: p,
                 cta_type: f ? "open" : "join"
             })
         },

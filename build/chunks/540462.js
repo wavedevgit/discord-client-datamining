@@ -38,8 +38,8 @@ var i = n(627968),
     G = n(643501),
     U = n(857253),
     P = n(652896),
-    w = n(279250),
-    k = n(418126),
+    k = n(279250),
+    w = n(418126),
     V = n(266626),
     B = n(267102),
     H = n(574172),
@@ -104,7 +104,7 @@ let eU = {
         [eM.BRT.CALL_TILE_POPOUT]: null
     };
 
-function ew(e) {
+function ek(e) {
     let {
         layout: t,
         channel: n,
@@ -137,7 +137,7 @@ function ew(e) {
         }) : null]
     })
 }
-class ek extends s.PureComponent {
+class ew extends s.PureComponent {
     _prevLayout = eM.DUB.MINIMUM;
     _wrapperRef = s.createRef();
     _callContainerRef = s.createRef();
@@ -254,7 +254,7 @@ class ek extends s.PureComponent {
         this.handleChangeLayout(this.props.layout === eM.DUB.NORMAL ? eM.DUB.NO_CHAT : eM.DUB.NORMAL)
     };
     handleHaven = () => {
-        this.props.layout === eM.DUB.HAVEN ? (this.handleChangeLayout(eM.DUB.NO_CHAT), k.Ay.disconnect(this.props.channel.id)) : this.handleChangeLayout(eM.DUB.HAVEN)
+        this.props.layout === eM.DUB.HAVEN ? (this.handleChangeLayout(eM.DUB.NO_CHAT), w.Ay.disconnect(this.props.channel.id)) : this.handleChangeLayout(eM.DUB.HAVEN)
     };
     handleChangeLayout = e => {
         let {
@@ -393,7 +393,7 @@ class ek extends s.PureComponent {
             inCall: l,
             mode: a
         } = this.props;
-        (0, eL.Ay)(e) && (0, w.eo)(n, e_.A, eu.A, eh.A, G.default)[0] && (g.default.selectVoiceChannel(n.id), 0 === s.filter(t => (0, P._z)(t) === e.id && t.state !== eM.XYD.ENDED).length && (0, f.A9)((0, P.Iy)(e.id), {
+        (0, eL.Ay)(e) && (0, k.eo)(n, e_.A, eu.A, eh.A, G.default)[0] && (g.default.selectVoiceChannel(n.id), 0 === s.filter(t => (0, P._z)(t) === e.id && t.state !== eM.XYD.ENDED).length && (0, f.A9)((0, P.Iy)(e.id), {
             forceMultiple: t.shiftKey
         })), l && a === eM._Of.VIDEO && (i?.id === e.id ? _.A.selectParticipant(n.id, null) : _.A.selectParticipant(n.id, e.id))
     };
@@ -448,7 +448,7 @@ class ek extends s.PureComponent {
         } = this.viewProperties, r = e === eM.DUB.FULL_SCREEN ? () => {
             this._prevLayout = eM.DUB.NORMAL, this.handleFullScreen()
         } : this.handleToggleLayout;
-        return s ? (0, i.jsx)(ew, {
+        return s ? (0, i.jsx)(ek, {
             layout: e,
             channel: t,
             selectedParticipant: n,
@@ -697,8 +697,8 @@ let eV = function(e) {
         mode: L,
         layout: M,
         participantsOpen: P,
-        chatOpen: w,
-        selectedParticipant: k
+        chatOpen: k,
+        selectedParticipant: w
     } = (0, d.cf)([eN.A], () => {
         let e = f === eM.BRT.POPOUT,
             n = eN.A.getMode(t.id),
@@ -718,8 +718,8 @@ let eV = function(e) {
     }, [f, t.id]), H = (0, d.yK)([er.A], () => er.A.getAllActiveStreams()), {
         selectedStream: K
     } = (0, d.cf)([er.A], () => ({
-        selectedStream: null != k ? er.A.getActiveStreamForStreamKey(k.id) : null
-    }), [k]), W = (0, d.bG)([eu.A], () => eu.A.getGuild(t.getGuildId())), z = (0, d.bG)([eo.default], () => eo.default.getId()), {
+        selectedStream: null != w ? er.A.getActiveStreamForStreamKey(w.id) : null
+    }), [w]), W = (0, d.bG)([eu.A], () => eu.A.getGuild(t.getGuildId())), z = (0, d.bG)([eo.default], () => eo.default.getId()), {
         popoutWindow: q,
         popoutWindowAlwaysOnTop: X
     } = (0, d.cf)([F.A], () => ({
@@ -770,7 +770,7 @@ let eV = function(e) {
             page: eM.liQ.CHANNEL_CALL,
             children: (0, i.jsx)(eS.qh, {
                 children: (0, i.jsxs)(ej.CB, {
-                    children: [(0, i.jsx)(ek, {
+                    children: [(0, i.jsx)(ew, {
                         channel: t,
                         guild: W,
                         hasConnectPermission: J,
@@ -786,10 +786,10 @@ let eV = function(e) {
                         filteredParticipants: j,
                         participantsVersion: O,
                         layout: M,
-                        chatOpen: w,
+                        chatOpen: k,
                         maxSidebarWidth: ea,
                         currentUserId: z,
-                        selectedParticipant: k,
+                        selectedParticipant: w,
                         allActiveStreams: H,
                         connectedEmbeddedActivity: ei ?? void 0,
                         showChatToasts: Q,

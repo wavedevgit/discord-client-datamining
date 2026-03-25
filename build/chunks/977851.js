@@ -136,14 +136,14 @@ function b(e) {
             clearTimeout(e)
         }
     }, [G]);
-    let w = [t = m && T ? E.intl.string(E.t.DPgc5h) : y ? E.intl.string(E.t.nthdxB) : E.intl.string(E.t["5KxXrK"])];
-    return O > 0 && w.push(E.intl.formatToPlainString(E.t["3l1GOx"], {
+    let k = [t = m && T ? E.intl.string(E.t.DPgc5h) : y ? E.intl.string(E.t.nthdxB) : E.intl.string(E.t["5KxXrK"])];
+    return O > 0 && k.push(E.intl.formatToPlainString(E.t["3l1GOx"], {
         mentionCount: O
-    })), R > 0 && w.push(E.intl.string(E.t.x5zAGZ)), (0, i.jsx)(x.A, {
+    })), R > 0 && k.push(E.intl.string(E.t.x5zAGZ)), (0, i.jsx)(x.A, {
         buttonRef: v,
         onClick: L,
         label: t,
-        "aria-label": w.join(", "),
+        "aria-label": k.join(", "),
         iconComponent: M,
         tooltipPosition: "bottom",
         wrapperClassName: a()(l, null != r && {

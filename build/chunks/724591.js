@@ -42,11 +42,11 @@ let L = s.memo(function(e) {
     s.useEffect(() => {
         (0, p.Kh)(t.id)
     }, [t.id]);
-    let w = (0, r.bG)([g.A], () => g.A.getAnnouncement(t.id)),
-        k = w?.state === "success" ? w.announcement : void 0,
-        [V, B] = (0, A.x_)(o.M.GAME_SHOP_NEW_BADGE, t.id, k?.id ?? ""),
-        H = V === o.M.GAME_SHOP_NEW_BADGE && null != k,
-        F = null == w || "loading" === w.state || H || !t.features.has(v.GuildFeatures.SOCIAL_LAYER_STOREFRONT) || !P,
+    let k = (0, r.bG)([g.A], () => g.A.getAnnouncement(t.id)),
+        w = k?.state === "success" ? k.announcement : void 0,
+        [V, B] = (0, A.x_)(o.M.GAME_SHOP_NEW_BADGE, t.id, w?.id ?? ""),
+        H = V === o.M.GAME_SHOP_NEW_BADGE && null != w,
+        F = null == k || "loading" === k.state || H || !t.features.has(v.GuildFeatures.SOCIAL_LAYER_STOREFRONT) || !P,
         [K, W] = (0, A.RF)(F ? null : o.M.SLAYER_STOREFRONT_ORBS_REWARDS_ANNOUNCEMENT, 1),
         Y = K === o.M.SLAYER_STOREFRONT_ORBS_REWARDS_ANNOUNCEMENT,
         z = H || Y,
@@ -110,18 +110,18 @@ let L = s.memo(function(e) {
             })
         }), [t.id, l, J, X, $, H]),
         et = s.useMemo(() => {
-            if (null == k) return;
-            let e = null != k.assetId ? S.A.toURLSafe((0, b.YE)(k.applicationId, k.assetId, 128, "webp")) : void 0,
-                t = null != k.backgroundImageAssetId ? S.A.toURLSafe((0, b.YE)(k.applicationId, k.backgroundImageAssetId, 128, "webp")) : void 0;
+            if (null == w) return;
+            let e = null != w.assetId ? S.A.toURLSafe((0, b.YE)(w.applicationId, w.assetId, 128, "webp")) : void 0,
+                t = null != w.backgroundImageAssetId ? S.A.toURLSafe((0, b.YE)(w.applicationId, w.backgroundImageAssetId, 128, "webp")) : void 0;
             if (null != e) return {
                 imageUrl: e,
                 backgroundImageUrl: t
             }
-        }, [k]),
+        }, [w]),
         en = s.useCallback(() => {
             if (H) {
                 let e = P ? j.intl.string(j.t["z/QEIP"]) : j.intl.formatToPlainString(j.t["9J4h1a"], {
-                    applicationName: k.applicationName
+                    applicationName: w.applicationName
                 });
                 return (0, i.jsx)(E.A, {
                     onActionClick: X,
@@ -143,7 +143,7 @@ let L = s.memo(function(e) {
                 targetElementRef: M,
                 applicationName: j.intl.string(j.t.Uu8hke)
             }) : null
-        }, [H, P, k, X, J, Z, Q, et, Y]);
+        }, [H, P, w, X, J, Z, Q, et, Y]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(I.A, {
             ref: L,

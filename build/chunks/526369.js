@@ -53,8 +53,8 @@ function S(e) {
             })
         })
     }, [v.id, D]);
-    let w = (0, r.bG)([x.A], () => v.isPrivate() || (0, m.K)(x.A, M, v), [M, v]),
-        k = M?.afkChannelId === v.id,
+    let k = (0, r.bG)([x.A], () => v.isPrivate() || (0, m.K)(x.A, M, v), [M, v]),
+        w = M?.afkChannelId === v.id,
         V = v.userLimit <= 0 || v.userLimit > 1,
         B = (0, r.bG)([c.Ay], () => c.Ay.getEmbeddedActivitiesForChannel(v.id).length <= 0),
         H = (0, A.JZ)(o.M.VC_TILE_ACTIVITIES_ENTRY_POINT),
@@ -76,22 +76,22 @@ function S(e) {
         name: l.ImpressionNames.CHANNEL_CALL_VIDEO_GRID_VIEW,
         properties: {
             total_participants: R,
-            can_invite: w,
-            is_afk_channel: k,
+            can_invite: k,
+            is_afk_channel: w,
             channel_user_limit: v.userLimit
         }
     }, {
         trackOnInitialLoad: !0
     }, []);
     let Y = B && !F;
-    null != M && !k && (G >= 2 && Y && !H && !K ? W.push(e => (0, i.jsx)(C.y, {
+    null != M && !w && (G >= 2 && Y && !H && !K ? W.push(e => (0, i.jsx)(C.y, {
         channel: v,
         guild: M,
         width: e,
         inPopout: L,
         handleClose: P,
         userParticipantCount: G
-    })) : V && 1 === G && w && W.push(e => (0, i.jsx)(C.y, {
+    })) : V && 1 === G && k && W.push(e => (0, i.jsx)(C.y, {
         channel: v,
         guild: M,
         width: e,

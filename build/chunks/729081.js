@@ -38,9 +38,9 @@ var i = n(627968),
     G = n(985018),
     U = n(877409);
 let P = `vc-gifting-${(0,o.A)()}`,
-    w = Object.freeze([]);
+    k = Object.freeze([]);
 
-function k(e, t) {
+function w(e, t) {
     let [n, i] = e, [s, l] = t;
     return (0, h.v)(n, s) && (0, h.v)(i, l)
 }
@@ -76,7 +76,7 @@ function V(e) {
                             break
                         }
                 } return [Array.from(e).sort(), Array.from(t).sort()]
-        }, [K, H, F], k),
+        }, [K, H, F], w),
         z = (0, u.bG)([I.default], () => I.default.getId()),
         q = s.useMemo(() => {
             let e = K.map(e => (0, D.Xw)(e) || (0, D.Ay)(e) ? e.user.id : null).filter(S.Vq);
@@ -94,7 +94,7 @@ function V(e) {
         }),
         Z = "loading" === J || 0 === Q.length,
         ee = s.useMemo(() => Q.map(e => C.A.fromSKU(e)).filter(S.Vq), [Q]),
-        et = (0, c.A)(Z ? w : ee, B),
+        et = (0, c.A)(Z ? k : ee, B),
         en = s.useMemo(() => {
             let e = new Set(q),
                 {

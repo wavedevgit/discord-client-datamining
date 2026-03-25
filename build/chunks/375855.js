@@ -91,19 +91,19 @@ function T(e) {
             icon: c.Fzq,
             users: D
         }),
-        w = (0, i.jsx)(b, {
+        k = (0, i.jsx)(b, {
             icon: c.k9F,
             users: M
         }),
         {
-            isMuted: k,
+            isMuted: w,
             muteConfig: V
         } = (0, r.cf)([f.Ay], () => ({
             isMuted: f.Ay.isChannelMuted(null, L),
             muteConfig: f.Ay.getChannelMuteConfig(null, L)
         }), [L]);
     return (0, i.jsxs)(i.Fragment, {
-        children: [U, P, w, k ? (0, i.jsx)(S, {
+        children: [U, P, k, w ? (0, i.jsx)(S, {
             muteConfig: V,
             className: a()(N.LM, {
                 [N.Sx]: null != U || null != P

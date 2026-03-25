@@ -23,7 +23,7 @@ var i = n(627968),
     j = n(985018),
     v = n(935915);
 
-function E(e) {
+function T(e) {
     let {
         item: t,
         index: n,
@@ -56,7 +56,7 @@ function E(e) {
         })
     })
 }
-let T = l.memo(function(e) {
+let E = l.memo(function(e) {
     let {
         item: t,
         index: n,
@@ -68,7 +68,7 @@ let T = l.memo(function(e) {
         onReorder: f
     } = e, {
         registerDragHandleRef: h
-    } = (0, A.r)(), j = (0, g.GG)("user_profile_wishlist_grid"), T = l.useMemo(() => s ? (0, i.jsx)(_.jV, {
+    } = (0, A.r)(), j = (0, g.GG)("user_profile_wishlist_grid"), E = l.useMemo(() => s ? (0, i.jsx)(_.jV, {
         buttonRef: h(String(t.skuId)),
         className: v.BU,
         onFocus: e => e.stopPropagation()
@@ -78,7 +78,7 @@ let T = l.memo(function(e) {
             wishlistOwner: a,
             wishlistId: d,
             isDragging: u,
-            dragHandle: T
+            dragHandle: E
         });
         let e = (0, i.jsx)(I.A, {
                 item: t,
@@ -86,7 +86,7 @@ let T = l.memo(function(e) {
                 wishlistId: d,
                 isOwner: s,
                 isDragging: u,
-                dragHandle: T
+                dragHandle: E
             }),
             n = e;
         return c.shouldShow && !u && (n = (0, p.Qc)(c) ? (0, i.jsx)(o.m, {
@@ -105,9 +105,9 @@ let T = l.memo(function(e) {
             delay: m.Zh,
             children: e
         })), n
-    }, [j, t, a, u, T, c, s, d]);
+    }, [j, t, a, u, E, c, s, d]);
     return s ? (0, i.jsx)("li", {
-        children: (0, i.jsx)(E, {
+        children: (0, i.jsx)(T, {
             item: t,
             index: n,
             wishlistId: d,
@@ -151,7 +151,7 @@ function b(e) {
     if (null == o || null == g) return null;
     let I = (0, i.jsx)("ul", {
         className: v.Vg,
-        children: t.map((e, t) => (0, i.jsx)(T, {
+        children: t.map((e, t) => (0, i.jsx)(E, {
             item: e,
             index: t,
             profileOwner: n,

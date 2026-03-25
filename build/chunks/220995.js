@@ -47,12 +47,12 @@ function T(e) {
     let D = (0, c.bG)([f.A], () => f.A.can(E.xBc.CREATE_INSTANT_INVITE, t), [t]),
         G = (0, c.bG)([g.A], () => g.A.getGuild(t.guild_id)),
         [U, P] = s.useState(!1),
-        w = s.useRef(null),
+        k = s.useRef(null),
         {
-            isHoveringOrFocusing: k
-        } = (0, p.A)(D ? T : w),
+            isHoveringOrFocusing: w
+        } = (0, p.A)(D ? T : k),
         [V, B] = s.useState(!1),
-        H = k || V,
+        H = w || V,
         F = s.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "unknown";
             x.default.track(E.HAw.VOICE_INVITE_SUGGESTIONS_ENTRYPOINT_CLOSED, {
@@ -184,7 +184,7 @@ function T(e) {
                                 lineClamp: 1,
                                 children: I.intl.string(I.t["EE+P0H"])
                             })
-                        }), k ? (0, i.jsx)(u.DUT, {
+                        }), w ? (0, i.jsx)(u.DUT, {
                             className: N.VN,
                             onClick: e => {
                                 e.stopPropagation(), z("user_explicit")

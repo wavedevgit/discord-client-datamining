@@ -44,8 +44,8 @@ function y(e) {
         {
             analyticsLocations: U
         } = (0, h.Ay)(u.A.NOTIFICATION_CENTER),
-        [P, w] = s.useState(!1),
-        [k, V] = [(0, o.bG)([f.A], () => f.A.settings.inbox?.currentTab ?? c.Y2.UNREADS), s.useCallback(e => {
+        [P, k] = s.useState(!1),
+        [w, V] = [(0, o.bG)([f.A], () => f.A.settings.inbox?.currentTab ?? c.Y2.UNREADS), s.useCallback(e => {
             g.wc.updateAsync("inbox", t => {
                 if (t.currentTab === e) return !1;
                 t.currentTab = e
@@ -59,14 +59,14 @@ function y(e) {
                 e.viewedTutorial = !0
             }, g.Sb.INFREQUENT_USER_ACTION)
         }, []), {
-            showTutorial: !t && k === c.Y2.UNREADS,
+            showTutorial: !t && w === c.Y2.UNREADS,
             setSeenTutorial: n
         }),
         F = s.useCallback(() => {
-            w(!1), P && y?.()
+            k(!1), P && y?.()
         }, [y, P]),
         K = s.useCallback(() => {
-            w(!P), P ? y?.() : l?.()
+            k(!P), P ? y?.() : l?.()
         }, [y, l, P]);
     s.useEffect(() => (x._.subscribe(S.jej.TOGGLE_INBOX, K), () => void x._.unsubscribe(S.jej.TOGGLE_INBOX, K)), [K]);
     let {
@@ -76,7 +76,7 @@ function y(e) {
         location: "RecentsPopout"
     }), z = (0, o.bG)([m.A], () => m.A.hasOverdueReminder(), []) && W && Y;
     s.useEffect(() => {
-        k !== c.Y2.BOOKMARKS || W || Y || V(c.Y2.MENTIONS), k === c.Y2.GAME_INVITES && V(c.Y2.MENTIONS)
+        w !== c.Y2.BOOKMARKS || W || Y || V(c.Y2.MENTIONS), w === c.Y2.GAME_INVITES && V(c.Y2.MENTIONS)
     });
     let q = s.useCallback(e => {
             e.shiftKey || F()
@@ -104,16 +104,16 @@ function y(e) {
                         }),
                         children: (0, i.jsx)(d.Fmo, {
                             component: (0, i.jsx)(I.A, {
-                                tab: k,
+                                tab: w,
                                 setTab: V,
                                 badgeState: R,
                                 closePopout: F
                             }),
-                            children: k === c.Y2.FOR_YOU ? (0, i.jsx)(C.Ay, {}) : k === c.Y2.MENTIONS ? (0, i.jsx)(E.A, {
+                            children: w === c.Y2.FOR_YOU ? (0, i.jsx)(C.Ay, {}) : w === c.Y2.MENTIONS ? (0, i.jsx)(E.A, {
                                 onJump: q
-                            }) : W && Y && k === c.Y2.BOOKMARKS ? (0, i.jsx)(_.J, {
+                            }) : W && Y && w === c.Y2.BOOKMARKS ? (0, i.jsx)(_.J, {
                                 closePopout: F
-                            }) : k === c.Y2.SCHEDULED ? (0, i.jsx)(N.w, {}) : (0, i.jsx)(r.tH, {
+                            }) : w === c.Y2.SCHEDULED ? (0, i.jsx)(N.w, {}) : (0, i.jsx)(r.tH, {
                                 fallback: (0, i.jsx)(b.T, {}),
                                 children: (0, i.jsx)(b.Ay, {
                                     onJump: q,

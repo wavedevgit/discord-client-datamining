@@ -42,7 +42,7 @@ let N = e => {
         let [v, y] = s.useState(.65), [j, R] = s.useState(.65), [O, L] = s.useState(.65), [M, D] = s.useState({
             x: 0,
             y: 0
-        }), [G, U] = s.useState(!1), [P, w] = s.useState(0), [k, V] = s.useState({
+        }), [G, U] = s.useState(!1), [P, k] = s.useState(0), [w, V] = s.useState({
             x: 0,
             y: 0
         }), [B, H] = s.useState({
@@ -109,7 +109,7 @@ let N = e => {
                 ref: q,
                 className: a()(I.km, l),
                 onClick: () => {
-                    w(0)
+                    k(0)
                 },
                 onMouseDown: () => U(Date.now()),
                 onMouseUp: e => {
@@ -129,7 +129,7 @@ let N = e => {
                     }
                 },
                 onMouseMove: e => {
-                    !1 !== G && (w(P + Math.abs(e.movementX) + Math.abs(e.movementY)), J({
+                    !1 !== G && (k(P + Math.abs(e.movementX) + Math.abs(e.movementY)), J({
                         x: M.x + e.movementX,
                         y: M.y + e.movementY
                     })), H({

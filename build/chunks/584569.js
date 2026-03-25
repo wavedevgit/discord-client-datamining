@@ -1,6 +1,6 @@
 /** chunk id: 584569 params = (module,exports,require) **/
 i.d(t, {
-    A: () => y
+    A: () => x
 });
 var n = i(311907),
     l = i(205693),
@@ -12,9 +12,9 @@ var n = i(311907),
     u = i(734057),
     c = i(383501),
     A = i(287809),
-    m = i(977997),
-    p = i(607567),
-    h = i(652215),
+    h = i(977997),
+    m = i(607567),
+    p = i(652215),
     g = i(806931);
 let f = new s.A,
     T = new s.A,
@@ -25,7 +25,7 @@ function E(e, t, i) {
             userId: e.id,
             channelId: i
         }),
-        l = (0, p.RQ)(n, t ?? h.ME, e.id);
+        l = (0, m.RQ)(n, t ?? p.ME, e.id);
     f.set(e.id, l);
     let r = {
         type: g.lp.USER,
@@ -59,7 +59,7 @@ function v() {
     let t = u.A.getChannel(e)?.getGuildId(),
         i = !1;
     return S.forEach(n => {
-        if (null != m.A.getVoiceStateForChannel(e, n)) return void S.delete(n);
+        if (null != h.A.getVoiceStateForChannel(e, n)) return void S.delete(n);
         let l = A.default.getUser(n);
         null != l && (i = !0, S.delete(n), E(l, t, e))
     }), i
@@ -68,10 +68,10 @@ function v() {
 function _() {
     f.clear(), T.clear(), S.clear()
 }
-class x extends n.Ay.Store {
+class y extends n.Ay.Store {
     static displayName = "RTCConnectionDesyncStore";
     initialize() {
-        this.waitFor(m.A, A.default, u.A, c.A), this.syncWith([A.default], v)
+        this.waitFor(h.A, A.default, u.A, c.A), this.syncWith([A.default], v)
     }
     get desyncedVoiceStatesCount() {
         return f.size()
@@ -86,7 +86,7 @@ class x extends n.Ay.Store {
         return T.values()
     }
 }
-let y = new x(r.h, {
+let x = new y(r.h, {
     CONNECTION_OPEN: function() {
         _()
     },
@@ -96,7 +96,7 @@ let y = new x(r.h, {
             state: t,
             context: i
         } = e;
-        if (i !== l.x.DEFAULT || t !== h.S7L.DISCONNECTED) return !1;
+        if (i !== l.x.DEFAULT || t !== p.S7L.DISCONNECTED) return !1;
         _()
     },
     VOICE_STATE_UPDATES: function(e) {
@@ -119,7 +119,7 @@ let y = new x(r.h, {
             context: r
         } = e;
         return r === l.x.DEFAULT && t.reduce((e, t) => {
-            if (null != m.A.getVoiceStateForChannel(n, t)) return e;
+            if (null != h.A.getVoiceStateForChannel(n, t)) return e;
             let l = A.default.getUser(t);
             return null == l ? (S.add(t), e) : (E(l, i, n), !0)
         }, !1)

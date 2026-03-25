@@ -1,8 +1,8 @@
 /** chunk id: 591179 params = (module,exports,require) **/
-n.d(t, {
-    X: () => s
+i.d(e, {
+    X: () => l
 });
-let i = (0, n(945810).mj)({
+let n = (0, i(945810).mj)({
     name: "2026-03-wysiwyg-user-profile-editing",
     kind: "user",
     defaultConfig: {
@@ -15,11 +15,11 @@ let i = (0, n(945810).mj)({
     }
 });
 
-function s(e) {
+function l(t) {
     let {
-        enabled: t
-    } = i.useConfig({
-        location: e
+        enabled: e
+    } = n.useConfig({
+        location: t
     });
-    return t
+    return e
 }

@@ -1,7 +1,8 @@
 /** chunk id: 886854 params = (module,exports,require) **/
 n.d(t, {
-    j0: () => f,
-    yj: () => S
+    du: () => f,
+    j0: () => T,
+    yj: () => E
 });
 var i = n(934551),
     s = n(554146),
@@ -19,7 +20,11 @@ var i = n(934551),
     A = n(352694),
     h = n(136451),
     p = n(985018);
-let f = [{
+
+function f() {
+    (0, l.v)()
+}
+let T = [{
         badgeType: r.Xi.STRONGLY_DISCOURAGED_CUSTOM,
         dismissibleContent: s.M.CLIENT_THEMES_SETTINGS_BADGE,
         StronglyDiscouragedCustomComponent: u.L
@@ -31,18 +36,16 @@ let f = [{
         badgeType: r.Xi.NEW,
         dismissibleContent: s.M.CLIENT_THEMES_APPEARANCE_SETTINGS_NEW_BADGE
     }],
-    T = (0, a.t_)(o.X.APPEARANCE_PANEL, {
+    S = (0, a.t_)(o.X.APPEARANCE_PANEL, {
         useTitle: () => p.intl.string(p.t["iHH+ky"]),
-        initialize: () => {
-            (0, l.v)()
-        },
+        initialize: f,
         buildLayout: () => [A.S, _._, h.u, g.U, x.M, m.d]
     }),
-    S = (0, a.i4)(o.X.APPEARANCE_SIDEBAR_ITEM, {
+    E = (0, a.i4)(o.X.APPEARANCE_SIDEBAR_ITEM, {
         useTitle: () => p.intl.string(p.t["iHH+ky"]),
         icon: i.PaintPaletteIcon,
         usePredicate: () => !(0, d.bp)("AppearanceSidebarItem"),
         useMenu: c.A,
-        getDismissibleBadges: () => f,
-        buildLayout: () => [T]
+        getDismissibleBadges: () => T,
+        buildLayout: () => [S]
     })

@@ -41,7 +41,7 @@ function T(e) {
         channels: U
     } = M, {
         maybeLoadMore: P
-    } = D, w = (0, d.bG)([m.A], () => m.A.messageGroupSpacing);
+    } = D, k = (0, d.bG)([m.A], () => m.A.messageGroupSpacing);
     t = L, n = M, l = D, s.useLayoutEffect(() => {
         let {
             scrollToChannelIndex: e
@@ -86,13 +86,13 @@ function T(e) {
     }), [O]), (0, A.Ay)(() => (g._.subscribe(N.jej.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
         g._.unsubscribe(N.jej.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
     }));
-    let k = (0, _.A)("unreads", L);
+    let w = (0, _.A)("unreads", L);
     return 0 === U.length ? (0, i.jsx)(C.A, {
         Icon: u.K$s,
         header: b.intl.string(b.t["6XMM+D"]),
         tip: o().os?.family === "OS X" ? b.intl.string(b.t.w9uDOW) : b.intl.string(b.t.BiUJC6)
     }) : (0, i.jsx)(c.hD, {
-        navigator: k,
+        navigator: w,
         children: (0, i.jsx)(c.PR, {
             children: e => {
                 let {
@@ -105,7 +105,7 @@ function T(e) {
                     },
                     ...n,
                     onScroll: G === I.mJ.Done ? void 0 : P,
-                    className: a()(S.XG, `group-spacing-${w}`),
+                    className: a()(S.XG, `group-spacing-${k}`),
                     children: [j ? (0, i.jsx)(v, {
                         setSeenTutorial: R
                     }) : null, (0, E.A)(U, D, y), G === I.mJ.Done ? null : (0, i.jsx)(u.y$y, {

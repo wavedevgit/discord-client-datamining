@@ -39,8 +39,8 @@ var i = n(627968),
     G = n(95701),
     U = n(153488),
     P = n(309010),
-    w = n(954571),
-    k = n(42473),
+    k = n(954571),
+    w = n(42473),
     V = n(652215),
     B = n(49999),
     H = n(985018),
@@ -80,11 +80,11 @@ let Y = s.memo(function(e) {
         }), er = (0, j.Bp)("activity-panel"), eo = (0, v.C$)(r ?? void 0, "activity-panel"), ec = (0, o.bG)([U.A], () => U.A.hasConsented(V.YAq.PERSONALIZATION)), ed = (0, j.TF)(g?.id, {
             shouldFetch: er || eo
         }), eu = ea && ec && ed, eh = eu && er, eA = eu && eo, em = s.useCallback(() => {
-            a()(null != M, "Received null activity"), w.default.track(V.HAw.ACTIVITY_PANEL_BUTTON_CLICKED, {
+            a()(null != M, "Received null activity"), k.default.track(V.HAw.ACTIVITY_PANEL_BUTTON_CLICKED, {
                 action_type: "invite_to_game",
                 game_id: g?.id ?? null,
                 application_id: M.application_id
-            }), (0, C.X)(en, C.O.INVITE), w.default.track(V.HAw.OPEN_MODAL, {
+            }), (0, C.X)(en, C.O.INVITE), k.default.track(V.HAw.OPEN_MODAL, {
                 type: "Send Join Invite",
                 application_id: M.application_id,
                 location: Y.location
@@ -105,7 +105,7 @@ let Y = s.memo(function(e) {
             (0, u.mMO)(async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("96811"), n.e("12140")]).then(n.bind(n, 648230));
+                } = await Promise.all([n.e("96811"), n.e("53612")]).then(n.bind(n, 648230));
                 return t => (0, i.jsx)(e, {
                     ...t,
                     sourcePID: g?.pid,
@@ -209,7 +209,7 @@ let Y = s.memo(function(e) {
                     game: g.name
                 }) : H.intl.string(H.t.FeUKeA)) : (e = !0, t = null, n = u.Fzq, null != A && (0, G.gV)(A.type) && (s = H.intl.string(H.t.uQn9B8))), (0, i.jsx)("div", {
                     className: K.IF,
-                    children: (0, i.jsx)(k.A, {
+                    children: (0, i.jsx)(w.A, {
                         tooltipText: s,
                         disabled: e,
                         onClick: t,
@@ -217,18 +217,18 @@ let Y = s.memo(function(e) {
                     })
                 })
             }(),
-            ey = el && null == I ? (0, i.jsx)(k.A, {
+            ey = el && null == I ? (0, i.jsx)(w.A, {
                 ref: J,
                 tooltipText: H.intl.string(H.t["hC/Zey"]),
                 onClick: em,
                 icon: u.DpX
             }) : null,
-            ej = null == I ? null : (0, i.jsx)(k.A, {
+            ej = null == I ? null : (0, i.jsx)(w.A, {
                 tooltipText: H.intl.string(H.t["R/FK4A"]),
                 onClick: e_(I.applicationId, I.location),
                 icon: u.oLl
             }),
-            eR = null == O ? null : (0, i.jsx)(k.A, {
+            eR = null == O ? null : (0, i.jsx)(w.A, {
                 tooltipText: H.intl.string(H.t["R/FK4A"]),
                 onClick: ep(O.applicationId),
                 icon: u.oLl
@@ -271,10 +271,10 @@ let Y = s.memo(function(e) {
             startAuthorization: s,
             connectionApp: l
         } = e;
-        return (0, i.jsx)(k.A, {
+        return (0, i.jsx)(w.A, {
             ref: t,
             onClick: () => {
-                w.default.track(V.HAw.ACTIVITY_PANEL_BUTTON_CLICKED, {
+                k.default.track(V.HAw.ACTIVITY_PANEL_BUTTON_CLICKED, {
                     action_type: "link_account",
                     game_id: n?.id ?? null,
                     application_id: l?.id ?? null
@@ -313,7 +313,7 @@ function q(e) {
                 children: (0, i.jsx)("div", {
                     className: K.Z9
                 })
-            }), (0, i.jsx)(k.A, {
+            }), (0, i.jsx)(w.A, {
                 ref: r,
                 tooltipText: t,
                 onClick: C,
@@ -337,7 +337,7 @@ function X(e) {
         guildId: n
     } = e, l = s.useRef(null);
     s.useEffect(() => {
-        w.default.track(V.HAw.RTC_GAME_SHOP_BUTTON_VIEWED, {
+        k.default.track(V.HAw.RTC_GAME_SHOP_BUTTON_VIEWED, {
             application_id: t
         })
     }, [t]);
@@ -350,14 +350,14 @@ function X(e) {
             guildId: n
         }), r(B.i.USER_DISMISS)
     }, [n, r]), h = s.useCallback(() => {
-        w.default.track(V.HAw.RTC_GAME_SHOP_BUTTON_CLICKED, {
+        k.default.track(V.HAw.RTC_GAME_SHOP_BUTTON_CLICKED, {
             application_id: t
         }), d()
     }, [t, d]), A = s.useCallback(() => {
         r(B.i.USER_DISMISS)
     }, [r]);
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(k.A, {
+        children: [(0, i.jsx)(w.A, {
             tooltipText: H.intl.string(H.t.vyaWs7),
             onClick: h,
             onMouseDown: o,

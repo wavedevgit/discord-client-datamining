@@ -79,21 +79,21 @@ function U(e) {
         channel: t,
         toggleRequestToSpeakSidebar: n,
         showRequestToSpeakSidebar: l
-    } = e, u = (0, _.Ay)(t), h = (0, r.bG)([y.A], () => y.A.getStageInstanceByChannel(t.id)), A = (0, b.uy)(t.id), m = (0, b.zy)(t.id, S.ip.AUDIENCE), p = (0, r.bG)([E.A], () => E.A.getGuild(t.guild_id), [t.guild_id]), C = p?.maxStageVideoChannelUsers ?? 0, T = null != p && p.features.has(O.GuildFeatures.COMMUNITY) ? C < O.p2C : p?.premiumTier !== O.TVA.TIER_3 && C <= O.nyz, j = (0, R.A)(t), U = (0, r.bG)([I.A], () => I.A.can(v.QY, t)), w = () => {
+    } = e, u = (0, _.Ay)(t), h = (0, r.bG)([y.A], () => y.A.getStageInstanceByChannel(t.id)), A = (0, b.uy)(t.id), m = (0, b.zy)(t.id, S.ip.AUDIENCE), p = (0, r.bG)([E.A], () => E.A.getGuild(t.guild_id), [t.guild_id]), C = p?.maxStageVideoChannelUsers ?? 0, T = null != p && p.features.has(O.GuildFeatures.COMMUNITY) ? C < O.p2C : p?.premiumTier !== O.TVA.TIER_3 && C <= O.nyz, j = (0, R.A)(t), U = (0, r.bG)([I.A], () => I.A.can(v.QY, t)), k = () => {
         d.A.updateStageVideoLimitBoostUpsellDismissed(t.id, !0), N.default.track(O.HAw.BOOSTING_UPSELL_CLICKED, {
             guild_id: t.guild_id,
             type: L.e.VIDEO_STAGE_LIMIT,
             is_moderator: U,
             action: L.pd.DISMISS
         })
-    }, k = {
+    }, w = {
         canModerate: U,
         audienceCount: m,
         channel: t,
         speakerCount: A
-    }, V = s.useRef(k);
+    }, V = s.useRef(w);
     s.useEffect(() => {
-        V.current = k
+        V.current = w
     }), s.useEffect(() => {
         let {
             canModerate: e,
@@ -175,7 +175,7 @@ function U(e) {
                 className: D.Uo,
                 children: T ? (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(c.Button, {
-                        onClick: w,
+                        onClick: k,
                         size: "sm",
                         variant: "secondary",
                         text: M.intl.string(M.t.L5eIZ2)
@@ -199,7 +199,7 @@ function U(e) {
                     })]
                 }) : (0, i.jsx)(c.Button, {
                     variant: "primary",
-                    onClick: w,
+                    onClick: k,
                     size: "sm",
                     text: M.intl.string(M.t.WAI6xu)
                 })

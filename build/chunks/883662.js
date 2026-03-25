@@ -22,10 +22,10 @@ function _(e) {
         onViewChange: f,
         sidebarFooter: m,
         emptyState: p,
-        searchQuery: b,
-        clearSearchQuery: g,
-        searchBar: y,
-        ...v
+        searchQuery: y,
+        clearSearchQuery: b,
+        searchBar: v,
+        ...g
     } = e, [x, E] = i.useState(!1), [A, S] = i.useState(1.4), N = i.useRef(null), C = (0, a.bG)([o.A], () => o.A.useReducedMotion), j = (0, a.bG)([c.A], () => c.A.isFocused());
     return i.useEffect(() => {
         let e = e => {
@@ -42,18 +42,18 @@ function _(e) {
         isShaking: x,
         intensity: A,
         children: (0, r.jsx)(l.N, {
-            ...v,
+            ...g,
             children: (0, r.jsx)(d.A, {
-                onClose: v.onClose,
+                onClose: g.onClose,
                 partialRoot: t,
                 target: n,
                 defaultTarget: _,
                 onViewChange: f,
                 emptyState: p,
                 sidebarFooter: m,
-                searchQuery: b,
-                clearSearchQuery: g,
-                searchBar: y
+                searchQuery: y,
+                clearSearchQuery: b,
+                searchBar: v
             })
         })
     })

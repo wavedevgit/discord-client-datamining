@@ -22,8 +22,8 @@ var i = n(627968),
     I = n(178213),
     j = n(909536),
     v = n(594832),
-    E = n(287809),
-    T = n(183555),
+    T = n(287809),
+    E = n(183555),
     b = n(622543),
     N = n(600761),
     S = n(535089),
@@ -173,7 +173,7 @@ function H(e) {
         handleAddNitroToWishlist: g
     } = e, m = a.id, x = (0, o.bG)([b.A], () => b.A.getWishlistSettings(n.id, m)), {
         trackUserProfileWishlistAction: p
-    } = (0, T.NJ)(), f = !1 === n.nsfwAllowed, [h, _] = l.useState(!0);
+    } = (0, E.NJ)(), f = !1 === n.nsfwAllowed, [h, _] = l.useState(!0);
     l.useEffect(() => {
         x?.visibility != null && _(x.visibility === r.a.PUBLIC)
     }, [x?.visibility]);
@@ -262,12 +262,12 @@ function B(e) {
     let {
         wishlistId: a,
         currentUser: r
-    } = (0, o.cf)([b.A, E.default], () => ({
+    } = (0, o.cf)([b.A, T.default], () => ({
         wishlistId: b.A.getFirstWishlistId(t.id),
-        currentUser: E.default.getCurrentUser()
+        currentUser: T.default.getCurrentUser()
     })), {
         analyticsLocations: m
-    } = (0, g.Ay)(), T = r?.id === t.id, {
+    } = (0, g.Ay)(), E = r?.id === t.id, {
         wishlist: S,
         wasFetched: L,
         error: O
@@ -280,7 +280,7 @@ function B(e) {
         currentUser: r
     }), M = (0, f.X)({
         location: "user-profile-modal-v2-wishlist"
-    }), U = (0, I.GG)("user-profile-modal-v2-wishlist"), F = (0, j.Gh)("user-profile-modal-v2-wishlist"), B = T && (M && w.length > 0 || U), X = l.useCallback(() => {
+    }), U = (0, I.GG)("user-profile-modal-v2-wishlist"), F = (0, j.Gh)("user-profile-modal-v2-wishlist"), B = E && (M && w.length > 0 || U), X = l.useCallback(() => {
         (0, d.closeAllModals)(), (0, x.Cz)({
             analyticsLocations: m,
             analyticsSource: u.A.USER_PROFILE_WISHLIST
@@ -311,7 +311,7 @@ function B(e) {
         }),
         fade: !0,
         children: [K ? (0, i.jsx)(W, {
-            isOwner: T,
+            isOwner: E,
             socialLayerStorefrontApplicationIds: w,
             handleOpenShop: X,
             handleOpenGameShop: z,
@@ -320,7 +320,7 @@ function B(e) {
             children: [(0, i.jsx)(y.A, {
                 scrollerRef: n
             }), (0, i.jsx)(H, {
-                isOwner: T,
+                isOwner: E,
                 profileOwner: t,
                 wishlist: S,
                 socialLayerStorefrontApplicationIds: w,
@@ -330,7 +330,7 @@ function B(e) {
             }), (0, i.jsx)(R.A, {
                 items: S.items,
                 profileOwner: t,
-                isOwner: T
+                isOwner: E
             })]
         }), B && (0, i.jsx)(k.A, {
             user: t,

@@ -78,7 +78,7 @@ function I(e) {
                 ...n.getProfileEditAnalyticsOptions()
             }), (0, m.XA)(f.jM.WIDGET_ADDED), a?.())
         }, [d, n, u, a]),
-        E = j?.(n);
+        T = j?.(n);
     return (0, i.jsxs)("div", {
         className: _.LG,
         children: [(0, i.jsxs)(o.DUT, {
@@ -121,8 +121,8 @@ function I(e) {
                         variant: "text-md/medium",
                         color: "text-strong",
                         children: (0, g.L)(n)
-                    }), null != E ? (0, i.jsx)("img", {
-                        src: E,
+                    }), null != T ? (0, i.jsx)("img", {
+                        src: T,
                         alt: "",
                         width: 16,
                         height: 16,

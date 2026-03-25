@@ -38,8 +38,8 @@ var i = n(627968),
     G = n(97483),
     U = n(49999),
     P = n(788868),
-    w = n(665606),
-    k = n(985018),
+    k = n(665606),
+    w = n(985018),
     V = n(299446),
     B = n(988572);
 let H = {
@@ -129,7 +129,7 @@ function F(e) {
         ee && !eE.current && eN(U.i.AUTO_DISMISS, !0)
     }, [eN, ee]), s.useEffect(() => {
         if (ei) {
-            let e = (0, o.createToast)(k.intl.string(k.t["4tSWQg"]), G.Ck.FAVORITE);
+            let e = (0, o.createToast)(w.intl.string(w.t["4tSWQg"]), G.Ck.FAVORITE);
             (0, o.showToast)(e);
             let t = setTimeout(es, e.options?.duration ?? G.jg.duration);
             return () => {
@@ -151,8 +151,8 @@ function F(e) {
                     ref: el,
                     children: (0, i.jsx)(o.jlP, {
                         ...en,
-                        ariaLabel: k.intl.formatToPlainString(k.t["/uzRss"], {
-                            guildName: k.intl.string(k.t.wMWyci),
+                        ariaLabel: w.intl.formatToPlainString(w.t["/uzRss"], {
+                            guildName: w.intl.string(w.t.wMWyci),
                             mentions: eg
                         }),
                         "aria-selected": ep,
@@ -198,12 +198,12 @@ function F(e) {
                 type: "image",
                 aspectRatio: "16/9"
             },
-            title: k.intl.string(w.default["bu/mLv"]),
-            body: k.intl.string(w.default["/x2jT7"]),
+            title: w.intl.string(k.default["bu/mLv"]),
+            body: w.intl.string(k.default["/x2jT7"]),
             onRequestClose: () => eN(U.i.USER_DISMISS),
             actions: [{
                 icon: o.tvc,
-                text: eI ? k.intl.string(w.default["0lHa0Z"]) : k.intl.string(w.default["0nZZEk"]),
+                text: eI ? w.intl.string(k.default["0lHa0Z"]) : w.intl.string(k.default["0nZZEk"]),
                 onClick: () => eb(!0),
                 variant: eI ? void 0 : "expressive"
             }]

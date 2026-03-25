@@ -65,8 +65,8 @@ function G(e) {
         className: M.Cp,
         determineOwnVisibility: !1
     }));
-    let w = t || m || R,
-        k = (0, i.jsx)(o.Qk9, {
+    let k = t || m || R,
+        w = (0, i.jsx)(o.Qk9, {
             selected: !0,
             lowerBadge: a > 0 ? (0, y.wN)(a) : null,
             upperBadge: P,
@@ -85,7 +85,7 @@ function G(e) {
                         }, 1e3)
                     }
                 },
-                selected: w,
+                selected: k,
                 ariaLabel: L.intl.string(L.t.YUU0RF),
                 "aria-owns": "guild-list-unread-dms",
                 "aria-selected": t,
@@ -118,7 +118,7 @@ function G(e) {
                     hideOnClick: !0,
                     text: U,
                     selected: t,
-                    children: k
+                    children: w
                 })]
             })
         })

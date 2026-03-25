@@ -38,8 +38,8 @@ var i = n(627968),
     G = n(72314),
     U = n(543897),
     P = n(696451),
-    w = n(71393),
-    k = n(309010),
+    k = n(71393),
+    w = n(309010),
     V = n(711014),
     B = n(723702),
     H = n(757780),
@@ -180,11 +180,11 @@ function ed(e) {
         lurkingGuildIds: l
     } = e, a = (0, y.A)("TopSection"), {
         isExperimentEnabled: r
-    } = (0, v.TW)("TopSection"), o = (0, h.bG)([k.A], () => null != k.A.getVoiceChannelId()), c = (0, g.useHasAnyModalOpen)(), d = (0, S.Ay)(e => e.postConnectionOpen), [u, m] = (0, T.kn)(d && r && !o && !c ? [A.M.FAVORITES_SERVER_ONBOARDING_INTRO] : []), _ = u === A.M.FAVORITES_SERVER_ONBOARDING_INTRO, [p] = (0, T.kn)(_ ? [A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM] : [], void 0, !0), f = p === A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM, x = s.useRef(!1), C = f && a;
+    } = (0, v.TW)("TopSection"), o = (0, h.bG)([w.A], () => null != w.A.getVoiceChannelId()), c = (0, g.useHasAnyModalOpen)(), d = (0, S.Ay)(e => e.postConnectionOpen), [u, m] = (0, T.kn)(d && r && !o && !c ? [A.M.FAVORITES_SERVER_ONBOARDING_INTRO] : []), _ = u === A.M.FAVORITES_SERVER_ONBOARDING_INTRO, [p] = (0, T.kn)(_ ? [A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM] : [], void 0, !0), f = p === A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM, x = s.useRef(!1), C = f && a;
     s.useEffect(() => {
         C && !x.current && n(), x.current = C
     }, [n, C]);
-    let E = (0, h.yK)([w.A, P.Ay], () => w.A.getGuildIds().filter(e => P.Ay.isCurrentUserGuest(e))),
+    let E = (0, h.yK)([k.A, P.Ay], () => k.A.getGuildIds().filter(e => P.Ay.isCurrentUserGuest(e))),
         I = l.concat(E),
         {
             entrypoint: N
@@ -247,7 +247,7 @@ function eh(e) {
     } = (0, H.A)(), S = s.useRef(!1), [T] = s.useState(() => new _.Ep), v = s.useRef(null), j = s.useRef(null), {
         ref: R,
         ...U
-    } = (0, d.$y)(), P = (0, f.R7z)(), [w, k] = s.useState(!1), Y = (0, f.rdh)(p.A.modules.guildbar.AVATAR_SIZE), z = (0, f.rdh)(p.A.space.SPACE_XS), q = (0, y.A)("GuildsBar"), {
+    } = (0, d.$y)(), P = (0, f.R7z)(), [k, w] = s.useState(!1), Y = (0, f.rdh)(p.A.modules.guildbar.AVATAR_SIZE), z = (0, f.rdh)(p.A.space.SPACE_XS), q = (0, y.A)("GuildsBar"), {
         pathname: X
     } = (0, c.zy)(), {
         entrypoint: Q
@@ -262,7 +262,7 @@ function eh(e) {
             heightBeforeGuilds: er + t + Z * e,
             bottomInset: 16
         });
-        return new ec(o, k, es.tEg, () => {
+        return new ec(o, w, es.tEg, () => {
             v.current?.calculateState(), j.current?.calculateState()
         }, n)
     }, [Y, z, o, Z]);
@@ -364,7 +364,7 @@ function eh(e) {
                         children: [(0, i.jsxs)(f.zCo, {
                             className: a()({
                                 [ea.XG]: !0,
-                                [ea.qw]: w
+                                [ea.qw]: k
                             }),
                             experimental_useStack: !0,
                             gap: "xs",

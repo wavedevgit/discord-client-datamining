@@ -88,18 +88,18 @@ function R(e) {
                 D = L === a.M.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK,
                 G = (0, I.A)(e),
                 [U, P] = (0, E.ww)(null != t && !C && !D && null != G, e),
-                w = U === a.M.BOOST_TO_UNLOCK_COACHMARK,
-                k = (0, N.A)(e),
-                [V, B] = (0, E.W2)(null != t && !C && !D && !w && null != k, e),
+                k = U === a.M.BOOST_TO_UNLOCK_COACHMARK,
+                w = (0, N.A)(e),
+                [V, B] = (0, E.W2)(null != t && !C && !D && !k && null != w, e),
                 H = V === a.M.EXPIRING_POWERUP_COACHMARK,
                 F = (0, h.TS)(e, "useGuildPowerupsChannelListPopout"),
-                [K, W] = (0, E.rd)(null != t && !C && !D && !w && !H && F),
+                [K, W] = (0, E.rd)(null != t && !C && !D && !k && !H && F),
                 Y = K === a.M.GAME_SERVER_HOSTING_BATCH_RELEASE_V2_COACHMARK,
                 z = (0, m.S)(e, "useGuildPowerupsChannelListPopout"),
                 [q, X] = (0, E.vn)(null != t && !j && F && z),
                 J = q === a.M.GAME_SERVER_PRICING_CHANGE_COACHMARK,
                 Q = i.useMemo(() => {
-                    if (null == t || C || D || Y || J || w || H) return;
+                    if (null == t || C || D || Y || J || k || H) return;
                     let n = function(e, t) {
                         let n = u.fi.find(e => {
                             let n = v.a8[e],
@@ -157,7 +157,7 @@ function R(e) {
                         }
                     }(e, j, S, R);
                     if (null != s) return s
-                }, [e, t, C, D, Y, J, w, H, S, j, R]),
+                }, [e, t, C, D, Y, J, k, H, S, j, R]),
                 [$, Z] = (0, E.ru)(null != Q);
             return i.useMemo(() => {
                 if (null != t) {
@@ -179,14 +179,14 @@ function R(e) {
                             markAsDismissed: M
                         }
                     }
-                    if (w && null != G) return {
+                    if (k && null != G) return {
                         type: f.o.BOOST_TO_UNLOCK,
                         powerup: G,
                         markAsDismissed: P
                     };
-                    if (H && null != k) return {
+                    if (H && null != w) return {
                         type: f.o.EXPIRING_PERK,
-                        featuredExpiringPowerup: k,
+                        featuredExpiringPowerup: w,
                         markAsDismissed: B
                     };
                     if (Y) return {
@@ -204,7 +204,7 @@ function R(e) {
                         }
                     }
                 }
-            }, [t, C, g, Q, $, Z, D, M, O, w, G, P, H, k, B, Y, W, J, X])
+            }, [t, C, g, Q, $, Z, D, M, O, k, G, P, H, w, B, Y, W, J, X])
         }(e, n ?? void 0);
     if (null !== n && (null != _ || j || null != R)) return {
         indicator: _,

@@ -90,8 +90,8 @@ let N = e => {
             primary_category_id: b
         })
     }, [t.id, N.id, b]);
-    let w = (0, m.b)(t),
-        k = s.useMemo(() => w ? () => {
+    let k = (0, m.b)(t),
+        w = s.useMemo(() => k ? () => {
             (0, a.mMO)(async () => {
                 let {
                     default: e
@@ -104,7 +104,7 @@ let N = e => {
                     currentCategoryId: b === x.mU.ALL ? null : b
                 })
             })
-        } : void 0, [w, N.name, N.id, t.id, b]),
+        } : void 0, [k, N.name, N.id, t.id, b]),
         V = e => {
             0 !== M.trim().length && e.key === E.dh.ENTER && (u.Se(t.id, M), d.default.track(C.HAw.GUILD_DIRECTORY_SEARCH, {
                 directory_channel_id: t.id,
@@ -120,7 +120,7 @@ let N = e => {
         mostRecentQuery: R,
         handleSearchKeyPress: V,
         handleClearSearch: B,
-        handleCreateOrAddGuild: k,
+        handleCreateOrAddGuild: w,
         searchResults: L,
         searchFetching: O
     }) : null == j && null == b ? (0, i.jsx)("div", {
@@ -132,7 +132,7 @@ let N = e => {
         className: I.$$,
         children: (0, i.jsx)(_.A, {
             guild: N,
-            onAddGuild: k
+            onAddGuild: w
         })
     }) : (0, i.jsx)(p.A, {
         channel: t,
@@ -140,7 +140,7 @@ let N = e => {
         setSearchQuery: D,
         handleSearchKeyPress: V,
         handleClearSearch: B,
-        handleCreateOrAddGuild: k,
+        handleCreateOrAddGuild: w,
         currentCategoryId: b,
         handleSelectCategory: e => {
             u.uU(t.id, e)

@@ -50,9 +50,9 @@ function b(e) {
         null != e && G && D(E.i.USER_DISMISS), j(e)
     }, [G, D, j]), P = s.useCallback(e => {
         D("user:explicit" === e ? E.i.USER_DISMISS : E.i.AUTO_DISMISS)
-    }, [D]), w = s.useCallback(() => {
+    }, [D]), k = s.useCallback(() => {
         U(null), p.A.openSearchFiltersModal(t)
-    }, [U, t]), k = s.useMemo(() => T > 0 ? I.intl.format(I.t.uaR4sI, {
+    }, [U, t]), w = s.useMemo(() => T > 0 ? I.intl.format(I.t.uaR4sI, {
         filterCount: T
     }) : I.intl.string(I.t.UdhTtk), [T]), V = !(0, h.DZ)() && (t.type === C.I4_.DMS || t.type === C.I4_.CHANNEL);
     return (0, i.jsxs)("header", {
@@ -73,8 +73,8 @@ function b(e) {
             className: N.vd,
             children: [(0, i.jsx)(d.Button, {
                 variant: "secondary",
-                onClick: w,
-                text: k,
+                onClick: k,
+                text: w,
                 icon: d.RgP,
                 size: "sm"
             }), (0, i.jsx)(O, {

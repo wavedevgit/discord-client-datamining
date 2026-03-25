@@ -6,6 +6,5 @@ e.exports = {
     VV: "users__260e1",
     Ki: "video__260e1",
     $G: "extraLong__260e1",
-    LB: "videoIcon__260e1",
-    oT: "popoutHeaderContainer__260e1"
+    LB: "videoIcon__260e1"
 }

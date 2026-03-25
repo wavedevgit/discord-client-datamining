@@ -1,6 +1,6 @@
 /** chunk id: 790417 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => E
 });
 var i = n(627968);
 n(64700);
@@ -23,13 +23,13 @@ var l = n(311907),
     I = n(518477),
     j = n(652215),
     v = n(985018),
-    E = n(897757);
+    T = n(897757);
 
-function T(e) {
+function E(e) {
     let {
         user: t,
         currentUser: n,
-        displayProfile: T,
+        displayProfile: E,
         guildId: b,
         channelId: N,
         onClose: S
@@ -46,14 +46,14 @@ function T(e) {
     }), O = (0, l.bG)([s.A], () => s.A.isFetchingUserOutbox(t.id)), w = t.id === n.id, P = (0, l.bG)([d.A, o.A], () => {
         let e = w ? d.A.getStatus() : o.A.getStatus(t.id);
         return e === a.clD.OFFLINE || e === a.clD.INVISIBLE
-    }), D = y.length > 0 || null != R, G = T?.private !== !0 && null == R && null == L && null != k, M = !P && (D || G), U = C.length > 0;
+    }), D = y.length > 0 || null != R, G = E?.private !== !0 && null == R && null == L && null != k, M = !P && (D || G), U = C.length > 0;
     return M || U || !O ? M || U || O ? (0, i.jsxs)(A.K, {
-        className: E.XG,
+        className: T.XG,
         fade: !0,
         children: [M ? (0, i.jsx)(_.A, {
             heading: v.intl.string(v.t.J6STd9),
             children: (0, i.jsxs)("ul", {
-                className: E.kR,
+                className: T.kR,
                 children: [null != R && (0, i.jsx)("li", {
                     children: (0, i.jsx)(p.A, {
                         user: t,
@@ -87,7 +87,7 @@ function T(e) {
             }) : void 0,
             scrollTargetId: I.bk.RECENT_ACTIVITY,
             children: (0, i.jsx)("ul", {
-                className: E.kR,
+                className: T.kR,
                 children: C.map(e => (0, i.jsx)("li", {
                     children: (0, i.jsx)(x.A, {
                         user: t,
@@ -101,15 +101,15 @@ function T(e) {
         onClose: S
     }) : (0, i.jsx)(h.zf, {
         user: t,
-        guildId: T?.guildId ?? b,
+        guildId: E?.guildId ?? b,
         channelId: N,
         onClose: S
     }) : (0, i.jsx)("div", {
-        className: E.kR,
+        className: T.kR,
         children: Array.from({
             length: 8
         }).map((e, t) => (0, i.jsxs)("div", {
-            className: E.kr,
+            className: T.kr,
             children: [(0, i.jsx)(r.FQ, {
                 width: 60,
                 opacity: .08

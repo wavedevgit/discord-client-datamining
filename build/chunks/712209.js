@@ -4,7 +4,7 @@ n.d(t, {
     Ay: () => q,
     mJ: () => V,
     sz: () => B,
-    xB: () => k
+    xB: () => w
 }), n(321073);
 var i, s, l = n(64700),
     a = n(143236),
@@ -39,8 +39,8 @@ var i, s, l = n(64700),
     G = n(403362),
     U = n(661191),
     P = n(652215),
-    w = n(37411),
-    k = ((i = {})[i.Favorite = 0] = "Favorite", i[i.PrivateChannel = 1] = "PrivateChannel", i[i.HighImportanceMentioned = 2] = "HighImportanceMentioned", i[i.LowImportanceMentioned = 3] = "LowImportanceMentioned", i[i.AllMessagesNotifications = 4] = "AllMessagesNotifications", i[i.GuildChannel = 5] = "GuildChannel", i[i.OldChannel = 6] = "OldChannel", i[i.NoNotifications = 7] = "NoNotifications", i[i.ReallyOldChannel = 8] = "ReallyOldChannel", i),
+    k = n(37411),
+    w = ((i = {})[i.Favorite = 0] = "Favorite", i[i.PrivateChannel = 1] = "PrivateChannel", i[i.HighImportanceMentioned = 2] = "HighImportanceMentioned", i[i.LowImportanceMentioned = 3] = "LowImportanceMentioned", i[i.AllMessagesNotifications = 4] = "AllMessagesNotifications", i[i.GuildChannel = 5] = "GuildChannel", i[i.OldChannel = 6] = "OldChannel", i[i.NoNotifications = 7] = "NoNotifications", i[i.ReallyOldChannel = 8] = "ReallyOldChannel", i),
     V = ((s = {}).Loading = "loading", s.Loaded = "loaded", s.Done = "done", s);
 let B = 25;
 class H extends a.EventEmitter {
@@ -356,7 +356,7 @@ function W(e, t, n, i) {
             }
             if (i.isThread()) {
                 let e = (0, I.l)(i);
-                return e === w.CP.ALL_MESSAGES ? 4 : e === w.CP.NO_MESSAGES ? 7 : 5
+                return e === k.CP.ALL_MESSAGES ? 4 : e === k.CP.NO_MESSAGES ? 7 : 5
             } {
                 let n = M.Ay.getChannelMessageNotifications(e, t),
                     i = n === P.orn.NULL ? M.Ay.getMessageNotifications(e) : n;

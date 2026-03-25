@@ -13,9 +13,9 @@ var n = i(627968),
     u = i(806246),
     c = i(890330),
     A = i(172710),
-    m = i(616356),
-    p = i(734057),
-    h = i(71393),
+    h = i(616356),
+    m = i(734057),
+    p = i(71393),
     g = i(977997),
     f = i(954571),
     T = i(821589),
@@ -56,27 +56,27 @@ let v = a.A.Types,
             hideHeader: E = !1,
             showChannelDetails: v = !1,
             ..._
-        } = e, x = (0, r.bG)([g.A, p.A], () => p.A.getChannel(g.A.getVoiceStateForUser(i.id)?.channelId)), y = (0, c.v)("UserActivityContainer", x), I = (0, r.bG)([m.A], () => o ? m.A.getAnyStreamForUser(i.id) : null), N = t?.type === S.$pd.HANG_STATUS && y ? x : null, j = (0, r.bG)([h.A, g.A, p.A], () => (0, s.A)(t, S.jUm.EMBEDDED) ? h.A.getGuild(p.A.getChannel(g.A.getVoiceStateForSession(i.id, t?.session_id)?.channelId)?.getGuildId()) : null != N ? h.A.getGuild(N.getGuildId()) : null), D = (0, r.bG)([h.A], () => null != I ? h.A.getGuild(I.guildId) : null), P = (0, r.bG)([d.A], () => {
+        } = e, y = (0, r.bG)([g.A, m.A], () => m.A.getChannel(g.A.getVoiceStateForUser(i.id)?.channelId)), x = (0, c.v)("UserActivityContainer", y), I = (0, r.bG)([h.A], () => o ? h.A.getAnyStreamForUser(i.id) : null), N = t?.type === S.$pd.HANG_STATUS && x ? y : null, j = (0, r.bG)([p.A, g.A, m.A], () => (0, s.A)(t, S.jUm.EMBEDDED) ? p.A.getGuild(m.A.getChannel(g.A.getVoiceStateForSession(i.id, t?.session_id)?.channelId)?.getGuildId()) : null != N ? p.A.getGuild(N.getGuildId()) : null), D = (0, r.bG)([p.A], () => null != I ? p.A.getGuild(I.guildId) : null), O = (0, r.bG)([d.A], () => {
             if (null != t)
                 if (null != t.application_id) return d.A.getApplication(t.application_id);
                 else return d.A.getApplicationByName(t.name);
             return null
         });
         return (l.useEffect(() => {
-            t?.type === S.$pd.HANG_STATUS && y && f.default.track(S.HAw.VIEW_HANG_STATUS, {
+            t?.type === S.$pd.HANG_STATUS && x && f.default.track(S.HAw.VIEW_HANG_STATUS, {
                 source: "UserActivity",
                 other_user_id: i.id,
                 ...(0, u.A)(N?.id)
             })
-        }, [t?.type, y, N, i.id]), t?.type !== S.$pd.HANG_STATUS || y) ? (0, n.jsx)(a.A, {
+        }, [t?.type, x, N, i.id]), t?.type !== S.$pd.HANG_STATUS || x) ? (0, n.jsx)(a.A, {
             ..._,
             activity: t,
             user: i,
-            application: P,
+            application: O,
             hideHeader: E,
             activityGuild: j ?? D,
             showChannelDetails: v,
-            channel: v ? x : void 0,
+            channel: v ? y : void 0,
             enableUserHoverActivities: _.enableUserHoverActivities,
             renderActions: T ? () => (0, n.jsx)(C, {
                 ..._,

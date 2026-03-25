@@ -38,14 +38,14 @@ var i = n(627968),
     G = n(954571),
     U = n(203982),
     P = n(488926),
-    w = n(427262),
-    k = n(837921),
+    k = n(427262),
+    w = n(837921),
     V = n(110574),
     B = n(652215),
     H = n(985018),
     F = n(767952),
     K = n(701939);
-let W = k.Ay.getEnableHardwareAcceleration(),
+let W = w.Ay.getEnableHardwareAcceleration(),
     Y = 44 + V.b,
     z = s.memo(function(e) {
         let {
@@ -53,7 +53,7 @@ let W = k.Ay.getEnableHardwareAcceleration(),
             sectionId: l,
             userId: a,
             guildOwnerId: r
-        } = e, o = s.useRef(null), d = (0, h.bG)([L.A], () => L.A.isTyping(t.id, a)), A = (0, h.bG)([y.Ay], () => y.Ay.getMember(t.guild_id, a)), p = (0, h.bG)([j.A], () => A?.colorRoleId != null ? j.A.getRole(t.guild_id, A.colorRoleId)?.name : void 0, [t.guild_id, A]), g = (0, h.bG)([M.default], () => M.default.getUser(a)), f = (0, h.bG)([M.default], () => M.default.getCurrentUser()), x = g?.id === f?.id, E = (0, h.bG)([R.A, O.A], () => x ? O.A.getStatus() : R.A.getStatus(a, t.guild_id)), N = (0, h.bG)([R.A], () => R.A.isMobileOnline(a)), b = (0, h.bG)([R.A, O.A], () => x ? O.A.getActivities() : R.A.getActivities(a, t.guild_id)), D = (0, h.bG)([v.A], () => v.A.getAnyStreamForUser(a)), G = (0, c.rm)(a), P = (0, h.bG)([S.A], () => S.A.canUserViewChannel(t.id, l, a)), k = g?.id != null && g.id === r, F = s.useCallback(e => {
+        } = e, o = s.useRef(null), d = (0, h.bG)([L.A], () => L.A.isTyping(t.id, a)), A = (0, h.bG)([y.Ay], () => y.Ay.getMember(t.guild_id, a)), p = (0, h.bG)([j.A], () => A?.colorRoleId != null ? j.A.getRole(t.guild_id, A.colorRoleId)?.name : void 0, [t.guild_id, A]), g = (0, h.bG)([M.default], () => M.default.getUser(a)), f = (0, h.bG)([M.default], () => M.default.getCurrentUser()), x = g?.id === f?.id, E = (0, h.bG)([R.A, O.A], () => x ? O.A.getStatus() : R.A.getStatus(a, t.guild_id)), N = (0, h.bG)([R.A], () => R.A.isMobileOnline(a)), b = (0, h.bG)([R.A, O.A], () => x ? O.A.getActivities() : R.A.getActivities(a, t.guild_id)), D = (0, h.bG)([v.A], () => v.A.getAnyStreamForUser(a)), G = (0, c.rm)(a), P = (0, h.bG)([S.A], () => S.A.canUserViewChannel(t.id, l, a)), w = g?.id != null && g.id === r, F = s.useCallback(e => {
             null != g && (0, m.L3)(e, async () => {
                 let {
                     default: e
@@ -67,7 +67,7 @@ let W = k.Ay.getEnableHardwareAcceleration(),
             })
         }, [g, t]), K = s.useCallback(() => {
             if (null == g) return;
-            let e = `@${w.Ay.getUserTag(g,{decoration:"never"})}`,
+            let e = `@${k.Ay.getUserTag(g,{decoration:"never"})}`,
                 n = `<@${g.id}>`;
             U._.dispatch(B.jej.TEXTAREA_FOCUS, {
                 channelId: t.id
@@ -127,7 +127,7 @@ let W = k.Ay.getEnableHardwareAcceleration(),
                     onClickPremiumGuildIcon: Y,
                     itemProps: G,
                     lostPermissionTooltipText: P ? void 0 : H.intl.string(H.t["/QcoTz"]),
-                    isOwner: k,
+                    isOwner: w,
                     nameplate: z,
                     onClick: e => {
                         e.shiftKey ? K?.() : X(e => !e)

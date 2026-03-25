@@ -1,73 +1,82 @@
 /** chunk id: 81400 params = (module,exports,require) **/
-e.d(n, {
-    EC: () => O,
+i.d(e, {
+    EC: () => b,
     j8: () => M,
-    uZ: () => N
-}), e(938796);
-var i = e(64700),
-    l = e(417597),
-    r = e(159001),
-    u = e(507553),
-    A = e(780964),
-    a = e(961350),
-    d = e(696451),
-    o = e(71393),
-    s = e(576705),
-    E = e(967198),
-    _ = e(229527),
-    f = e(652215),
-    g = e(340837),
-    c = e(355097),
-    I = e(985018);
+    uZ: () => O
+}), i(938796);
+var n = i(64700),
+    l = i(417597),
+    u = i(159001),
+    r = i(507553),
+    a = i(591179),
+    d = i(780964),
+    A = i(961350),
+    o = i(696451),
+    s = i(71393),
+    f = i(576705),
+    g = i(967198),
+    c = i(229527),
+    E = i(652215),
+    _ = i(340837),
+    I = i(355097),
+    N = i(985018);
 
-function N(t) {
-    return (0, l.bG)([a.default, d.Ay], () => {
+function O(t) {
+    return (0, l.bG)([A.default, o.Ay], () => {
         if (null == t) return !1;
-        let n = a.default.getId();
-        return (0, _.TR)(d.Ay.getMember(t, n))
+        let e = A.default.getId();
+        return (0, c.TR)(o.Ay.getMember(t, e))
     }, [t])
 }
 
-function O(t) {
-    return (0, l.cf)([a.default, d.Ay, E.A, o.A], () => {
-        let n = {
+function b(t) {
+    return (0, l.cf)([A.default, o.Ay, g.A, s.A], () => {
+        let e = {
                 nick: void 0,
                 bio: void 0
             },
-            e = E.A.getGuildId(),
-            i = t ?? e,
-            l = o.A.getGuild(i);
-        if (null == l || null == i) return n;
-        let r = a.default.getId(),
-            u = d.Ay.getMember(i, r),
-            A = (0, _.wR)(u?.flags);
-        return 0 === A.size || (A.has(g.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) && (null == t ? n.nick = [I.intl.formatToPlainString(I.t.WBUh3O, {
+            i = g.A.getGuildId(),
+            n = t ?? i,
+            l = s.A.getGuild(n);
+        if (null == l || null == n) return e;
+        let u = A.default.getId(),
+            r = o.Ay.getMember(n, u),
+            a = (0, c.wR)(r?.flags);
+        return 0 === a.size || (a.has(_.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) && (null == t ? e.nick = [N.intl.formatToPlainString(N.t.WBUh3O, {
             guildName: l.name ?? ""
-        })] : n.nick = [I.intl.string(I.t.EPZCrM)]), A.has(g.D.AUTOMOD_QUARANTINED_BIO) && (n.bio = [I.intl.string(I.t.dZh1vz)])), n
+        })] : e.nick = [N.intl.string(N.t.EPZCrM)]), a.has(_.D.AUTOMOD_QUARANTINED_BIO) && (e.bio = [N.intl.string(N.t.dZh1vz)])), e
     }, [t])
 }
 
 function M(t) {
     let {
-        guildId: n,
-        scrollPosition: a,
-        analyticsLocations: d
-    } = t, E = (0, l.bG)([o.A], () => o.A.getGuild(n), [n]), _ = (0, l.bG)([s.A], () => null != E && s.A.can(f.xBc.CHANGE_NICKNAME, E), [E]);
-    return [i.useCallback(() => {
-        if (null == E) return;
-        f.nc_.PROFILE_CUSTOMIZATION;
-        let t = c.Eq.GUILD;
-        _ ? (0, r.V2)(E.id) : t = c.Eq.USER_PROFILE;
-        {
+        guildId: e,
+        scrollPosition: o,
+        analyticsLocations: g
+    } = t, c = (0, l.bG)([s.A], () => s.A.getGuild(e), [e]), _ = (0, l.bG)([f.A], () => null != c && f.A.can(E.xBc.CHANGE_NICKNAME, c), [c]), N = (0, a.X)("AutomodQuarantineUtils");
+    return [n.useCallback(() => {
+        if (null == c) return;
+        E.nc_.PROFILE_CUSTOMIZATION;
+        let t = I.Eq.GUILD;
+        if (_ ? (0, u.V2)(c.id) : t = I.Eq.USER_PROFILE, N) {
             let {
-                openUserSettings: n
-            } = e(840065);
-            u.A.setState({
+                openUserProfileModal: t
+            } = i(657331);
+            t({
+                userId: A.default.getId(),
+                guildId: c.id,
+                sourceAnalyticsLocations: g
+            })
+        } else {
+            let {
+                openUserSettings: e
+            } = i(840065);
+            r.A.setState({
                 subsection: t,
-                scrollPosition: a
-            }), n(A.X.PROFILE_PANEL, {
-                analyticsLocations: d
+                scrollPosition: o
+            }), e(d.X.PROFILE_PANEL, {
+                analyticsLocations: g
             })
         }
-    }, [_, a, d, E]), _]
+    }, [_, o, g, c, N]), _]
 }

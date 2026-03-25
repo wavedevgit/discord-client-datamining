@@ -38,8 +38,8 @@ var i = n(627968),
     G = n(147036),
     U = n(557534),
     P = n(68437),
-    w = n(166444),
-    k = n(588224);
+    k = n(166444),
+    w = n(588224);
 n(281405);
 var V = n(652215),
     B = n(349828),
@@ -121,12 +121,11 @@ class W extends U.Ay {
             speakerVoiceStates: s,
             numAudience: l
         } = this.props;
-        return (0, i.jsx)(k.A, {
+        return (0, i.jsx)(w.A, {
             channel: e,
             voiceStates: s,
             collapsed: t,
             tabIndex: n,
-            location: V.ThZ.GUILD_CHANNEL_LIST,
             numAudience: l
         })
     }
@@ -216,7 +215,7 @@ class W extends U.Ay {
                 shouldShow: I,
                 children: () => (0, i.jsx)(c.m, {
                     text: this.getTooltipText(),
-                    children: (0, i.jsxs)(w.Ay, {
+                    children: (0, i.jsxs)(k.Ay, {
                         ref: this.channelItemRef,
                         className: F.Ki,
                         iconClassName: a()({

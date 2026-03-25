@@ -85,15 +85,15 @@ let v = s.memo(function(e) {
             {
                 role: U,
                 tabIndex: P,
-                ...w
+                ...k
             } = (0, r.rm)(l.id),
-            k = s.useRef(null),
+            w = s.useRef(null),
             V = s.useRef(null),
             B = (0, i.jsxs)("li", {
                 className: t,
                 "data-dnd-name": l.name,
                 children: [(0, i.jsx)(h.vN3, {
-                    focusTarget: k,
+                    focusTarget: w,
                     ringTarget: V,
                     offset: {
                         left: 4,
@@ -108,10 +108,10 @@ let v = s.memo(function(e) {
                         }),
                         onContextMenu: D,
                         children: [(0, i.jsxs)(h.DUT, {
-                            innerRef: k,
+                            innerRef: w,
                             className: S.rb,
                             tabIndex: P,
-                            ...w,
+                            ...k,
                             onClick: M,
                             "aria-label": b.intl.formatToPlainString(b.t.y5l3J2, {
                                 categoryName: l.name

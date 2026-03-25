@@ -39,7 +39,7 @@ var i = n(627968),
     U = n(985018),
     P = n(653750);
 
-function w(e, t, n) {
+function k(e, t, n) {
     return 0 === t.length ? null : (0, i.jsxs)("div", {
         className: P.nM,
         children: [(0, i.jsx)(e, {
@@ -53,7 +53,7 @@ function w(e, t, n) {
     })
 }
 
-function k(e) {
+function w(e) {
     let {
         muteConfig: t,
         className: n
@@ -129,7 +129,7 @@ function V(e) {
             embeddedActivitiesUsers: s.useMemo(() => (0, v.L)(E, H, "GuildTooltip - embeddedActivitiesUsers"), [E, H]),
             hasActivity: g.length > 0 || U.length > 0 || B.length > 0 || E.length > 0
         }),
-        Z = w(u.HKD, q, z),
+        Z = k(u.HKD, q, z),
         ee = 0 === X.length ? null : (0, i.jsxs)("div", {
             className: P.nM,
             children: [(0, i.jsx)(u.qux, {
@@ -153,8 +153,8 @@ function V(e) {
                 })]
             })]
         }),
-        et = w(u.Fzq, Q, z),
-        en = w(u.k9F, $, z),
+        et = k(u.Fzq, Q, z),
+        en = k(u.k9F, $, z),
         {
             isMuted: ei,
             muteConfig: es
@@ -163,7 +163,7 @@ function V(e) {
             muteConfig: O.Ay.getMuteConfig(z)
         }), [z]);
     return (0, i.jsxs)(i.Fragment, {
-        children: [ee, Z, et, en, ei ? (0, i.jsx)(k, {
+        children: [ee, Z, et, en, ei ? (0, i.jsx)(w, {
             muteConfig: es,
             className: a()(P.LM, {
                 [P.Sx]: null != Z || null != et

@@ -48,7 +48,7 @@ function L(e) {
     } = (0, l.cf)([d.A], () => ({
         relationshipType: d.A.getRelationshipType(t.id),
         originApplicationId: d.A.getOriginApplicationId(t.id)
-    })), w = (0, r.fi)(t.id), k = (0, o.q)({
+    })), k = (0, r.fi)(t.id), w = (0, o.q)({
         userId: t.id
     }), V = (0, l.bG)([u.A], () => u.A.hidePersonalInformation), B = (0, l.bG)([A.A], () => A.A.getUserProfile(t.id)?.application);
     return (0, i.jsxs)("div", {
@@ -76,7 +76,7 @@ function L(e) {
                 channelId: M.id,
                 applicationId: P
             })
-        }), w.map(e => (0, i.jsx)(S.A.Overlay, {
+        }), k.map(e => (0, i.jsx)(S.A.Overlay, {
             children: (0, i.jsx)(x.A, {
                 user: t,
                 isGameRelationship: !0,
@@ -120,11 +120,11 @@ function L(e) {
                 applicationId: B.id,
                 commandIds: B.popularApplicationCommandIds,
                 channel: M
-            }), k.length > 0 && (0, i.jsx)(N.A, {
+            }), w.length > 0 && (0, i.jsx)(N.A, {
                 heading: R.intl.string(R.t["Uv/eTx"]),
                 headingColor: "text-strong",
                 children: (0, i.jsx)(f.A, {
-                    applicationIds: k
+                    applicationIds: w
                 })
             }), (0, i.jsx)(N.A, {
                 heading: t.bot ? R.intl.string(R.t["A//N4k"]) : R.intl.string(R.t.a6XYD9),

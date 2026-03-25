@@ -1,16 +1,17 @@
 /** chunk id: 562519 params = (module,exports,require) **/
-r.d(t, {
-    A: () => a
+"use strict";
+n.d(t, {
+    A: () => i
 });
-var n = r(362474);
-class a {
+var r = n(362474);
+class i {
     _key;
     _set;
     constructor(e) {
         this._key = `$persisted-set-${e}`, this._set = new Set, this._load()
     }
     _load() {
-        let e = n.u.get(this._key);
+        let e = r.u.get(this._key);
         null != e && (this._set = new Set(e))
     }
     values() {
@@ -26,7 +27,7 @@ class a {
     }
     _persist() {
         let e = Array.from(this._set.values());
-        n.u.set(this._key, e)
+        r.u.set(this._key, e)
     }
     add(e) {
         this._set.add(e), requestIdleCallback(() => {

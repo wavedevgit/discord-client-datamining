@@ -1,7 +1,7 @@
 /** chunk id: 763793 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => k,
+    A: () => w,
     i: () => U
 });
 var i = n(627968),
@@ -83,7 +83,7 @@ let U = 16 / 9,
             })
         })
     },
-    w = e => {
+    k = e => {
         let {
             stageParticipant: t,
             rtcParticipant: n,
@@ -130,7 +130,7 @@ let U = 16 / 9,
             children: r && n.type === D.lp.USER && (0, i.jsx)(L.A, {})
         }, _)
     },
-    k = s.memo(function(e) {
+    w = s.memo(function(e) {
         let {
             participant: t,
             channel: s,
@@ -212,7 +212,7 @@ let U = 16 / 9,
                         })
                 }
             };
-        return I.type !== D.lp.USER || I.voiceState?.selfVideo ? (0, i.jsx)(w, {
+        return I.type !== D.lp.USER || I.voiceState?.selfVideo ? (0, i.jsx)(k, {
             stageParticipant: t,
             rtcParticipant: I,
             channel: s,

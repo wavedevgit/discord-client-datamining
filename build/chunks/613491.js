@@ -18,7 +18,7 @@ var l = n(503698),
     A = n(985018),
     I = n(496447);
 
-function N(e) {
+function p(e) {
     if (!e && (0, T.Cf)()) return void a.A.showAgeVerificationGetStartedModal({
         entryPoint: o.q1.STAGE_CHANNEL_RAISE_HAND
     });
@@ -28,7 +28,7 @@ function N(e) {
     null != n && (0, d.e7)(n, e)
 }
 
-function p(e) {
+function N(e) {
     let {
         channelId: t
     } = e, n = (0, E.D3)(t) ?? 0, l = (0, E.Xk)(t) ?? 0;
@@ -58,7 +58,7 @@ function m() {
     return null == e ? null : (0, i.jsxs)(s.$Td, {
         className: I.kL,
         color: s.Hv$.DEFAULT,
-        children: [A.intl.string(A.t.Ul1RJQ), (0, i.jsx)(p, {
+        children: [A.intl.string(A.t.Ul1RJQ), (0, i.jsx)(N, {
             channelId: e.id
         }), (0, i.jsxs)(s.ButtonGroup, {
             size: "sm",
@@ -66,10 +66,10 @@ function m() {
             children: [(0, i.jsx)(s.Button, {
                 variant: "overlay-primary",
                 text: A.intl.string(A.t.MpO0px),
-                onClick: () => N(!1)
+                onClick: () => p(!1)
             }), (0, i.jsx)(s.Button, {
                 variant: "secondary",
-                onClick: () => N(!0),
+                onClick: () => p(!0),
                 text: A.intl.string(A.t["1YDv7a"])
             })]
         })]

@@ -38,8 +38,8 @@ var i = n(627968),
     G = n(559873),
     U = n(346061),
     P = n(652215),
-    w = n(228160),
-    k = n(985018),
+    k = n(228160),
+    w = n(985018),
     V = n(471135);
 
 function B(e) {
@@ -217,7 +217,7 @@ function H(e) {
         }), (0, i.jsx)(u.Text, {
             variant: "text-sm/medium",
             className: V.gD,
-            children: k.intl.formatToPlainString(w.default.NzUuLD, {
+            children: w.intl.formatToPlainString(k.default.NzUuLD, {
                 count: t.length
             })
         })]
@@ -276,11 +276,11 @@ function K(e) {
             1 === c ? C = u.xfq : c > 1 ? C = u.sYc : d ? C = g.A : A || m ? C = u.YRe : h ? C = u.tEP : _ && (C = u.HKD);
             let E = !0,
                 I = null;
-            return s ? d ? I = k.intl.string(k.t["9ddYKt"]) : A ? (E = !1, I = t.poll?.question.text) : I = m ? k.intl.string(k.t.sad2PH) : o ? k.intl.string(k.t.p0oZmy) : c > 1 ? k.intl.formatToPlainString(k.t.rtfTKp, {
+            return s ? d ? I = w.intl.string(w.t["9ddYKt"]) : A ? (E = !1, I = t.poll?.question.text) : I = m ? w.intl.string(w.t.sad2PH) : o ? w.intl.string(w.t.p0oZmy) : c > 1 ? w.intl.formatToPlainString(w.t.rtfTKp, {
                 count: c
-            }) : 1 === c ? k.intl.string(k.t.tCcq5p) : h ? k.intl.format(k.t.zY4v1B, {
+            }) : 1 === c ? w.intl.string(w.t.tCcq5p) : h ? w.intl.format(w.t.zY4v1B, {
                 stickerName: t.stickerItems[0].name
-            }) : _ ? k.intl.string(k.t.slFYgi) : f ? k.intl.string(k.t.Yvvfw9) : k.intl.string(k.t.sDqZHL) : (E = !1, I = (0, i.jsx)(x.Ay, {
+            }) : _ ? w.intl.string(w.t.slFYgi) : f ? w.intl.string(w.t.Yvvfw9) : w.intl.string(w.t.sDqZHL) : (E = !1, I = (0, i.jsx)(x.Ay, {
                 content: r,
                 message: t,
                 compact: !1,
@@ -336,7 +336,7 @@ let W = (0, s.memo)(function(e) {
             id: t.channelId,
             guild_id: t.guildId,
             type: P.rbe.UNKNOWN,
-            name: k.intl.string(k.t.J90oLW)
+            name: w.intl.string(w.t.J90oLW)
         })
     }), p = (0, D.s)(e => e.isMenuOpenForMessage(d?.id ?? null)), {
         notificationCenterVariant: g

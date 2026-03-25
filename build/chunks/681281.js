@@ -39,8 +39,8 @@ var s = n(503698),
     G = n(652215),
     U = n(818348),
     P = n(985018),
-    w = n(597217),
-    k = n(206314);
+    k = n(597217),
+    w = n(206314);
 
 function V(e) {
     let {
@@ -67,12 +67,12 @@ function B(e) {
     } = e, a = (0, v.A)(n, t, s);
     return null == t || null == s ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(c.A, {
-            className: w.my,
+            className: k.my,
             size: o._3J.SIZE_24,
             user: t,
             animate: !1
         }), (0, i.jsx)(o.Text, {
-            className: w.W$,
+            className: k.W$,
             variant: "text-md/medium",
             color: l,
             children: a
@@ -92,12 +92,12 @@ function H(e) {
         u = null != r;
     if (s?.type === D.lp.ACTIVITY) null != n && (t = (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(x.Ay.Divider, {
-            className: w.yF
+            className: k.yF
         }), (0, i.jsx)(_.A, {
             game: n,
-            className: w.RI
+            className: k.RI
         }), (0, i.jsx)(o.Text, {
-            className: w.W$,
+            className: k.W$,
             variant: "text-md/normal",
             color: "none",
             children: (0, d.A)(n.name)
@@ -111,7 +111,7 @@ function H(e) {
             n = s.stream;
         t = (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(x.Ay.Divider, {
-                className: w.yF
+                className: k.yF
             }), (0, i.jsx)(B, {
                 user: e,
                 channel: l,
@@ -127,7 +127,7 @@ function H(e) {
         recurrenceId: c
     }));
     return (0, i.jsx)("div", {
-        className: w.kL,
+        className: k.kL,
         children: t
     })
 }
@@ -157,8 +157,8 @@ function F(e) {
             position: "bottom",
             shouldShow: G,
             children: (0, i.jsxs)(o.DUT, {
-                className: l()(w.WH, {
-                    [w.BI]: G
+                className: l()(k.WH, {
+                    [k.BI]: G
                 }),
                 onClick: G ? function() {
                     (0, o.mMO)(async () => {
@@ -175,8 +175,8 @@ function F(e) {
                 } : void 0,
                 children: [(0, i.jsx)(o.Text, {
                     variant: "text-xs/normal",
-                    className: l()(w.Gh, k.PT, {
-                        [w.BI]: G
+                    className: l()(k.Gh, w.PT, {
+                        [k.BI]: G
                     }),
                     children: N.A.parseVoiceChannelStatus(y, !0, {
                         channelId: t.id
@@ -184,7 +184,7 @@ function F(e) {
                 }), G && (0, i.jsx)(o.R2l, {
                     size: "custom",
                     color: "currentColor",
-                    className: l()(w.rD, w.BI),
+                    className: l()(k.rD, k.BI),
                     width: 14,
                     height: 14
                 })]
@@ -194,15 +194,15 @@ function F(e) {
             channelId: t.id
         });
     return (0, i.jsxs)("div", {
-        className: w.SC,
+        className: k.SC,
         children: [(0, i.jsx)(o.NPJ, {
             theme: U.NJ.DARK,
             children: e => (0, i.jsxs)(x.Ay, {
                 onDoubleClick: C.I,
                 transparent: !0,
-                className: l()(e, w.jr),
-                innerClassName: w.gi,
-                toolbarClassName: w.KE,
+                className: l()(e, k.jr),
+                innerClassName: k.gi,
+                toolbarClassName: k.KE,
                 childrenBottom: V,
                 toolbar: (0, i.jsx)(O.A, {
                     channel: t,
@@ -212,7 +212,7 @@ function F(e) {
                     exitFullScreen: p
                 }),
                 children: [(0, i.jsx)(x.Ay.Title, {
-                    wrapperClassName: w.DD,
+                    wrapperClassName: k.DD,
                     children: (0, i.jsxs)(i.Fragment, {
                         children: [null != I ? (0, i.jsx)(x.Ay.ChannelIcon, {
                             icon: I,
@@ -223,7 +223,7 @@ function F(e) {
                                 size: "xs",
                                 "aria-label": P.intl.string(P.t.VHXh8a),
                                 color: o.LU0.colors.INTERACTIVE_TEXT_DEFAULT,
-                                className: w.vW
+                                className: k.vW
                             })
                         })]
                     })

@@ -1,6 +1,6 @@
 /** chunk id: 439447 params = (module,exports,require) **/
 i.d(t, {
-    A: () => p
+    A: () => m
 });
 var n, l, r = i(627968),
     s = i(64700),
@@ -13,7 +13,7 @@ let A = e => (t, i) => null == i ? "" : d.intl.format(e(), {
         time: t,
         ...i
     }),
-    m = {
+    h = {
         ACTIVITY_FEED: {
             START: {
                 [a.pJ.SECONDS]: () => d.intl.string(d.t["ahzZr+"]),
@@ -165,7 +165,7 @@ let A = e => (t, i) => null == i ? "" : d.intl.format(e(), {
         }
     };
 
-function p(e) {
+function m(e) {
     return class extends s.PureComponent {
         static Locations = u;
         static Types = c;
@@ -205,7 +205,7 @@ function p(e) {
         };
         getTimeUnit(e, t, i) {
             let n = (0, a.Ul)(e, e => (function(e, t, i) {
-                let n = m[i];
+                let n = h[i];
                 if (null != n) {
                     let i = n[t];
                     if (null != i) return null != i[e]
@@ -235,13 +235,13 @@ function p(e) {
             } = this.state, d = this.getType();
             if (null == d) return null;
             let u = this.getTimeUnit(o, t, d),
-                c = m[t][d];
+                c = h[t][d];
             if (null == c) return null;
             let A = c[u],
-                p = Math.floor((0, a.eZ)(o, u));
+                m = Math.floor((0, a.eZ)(o, u));
             return (0, r.jsx)(e, {
                 ...s,
-                children: A?.(p, i, n, l)
+                children: A?.(m, i, n, l)
             })
         }
     }

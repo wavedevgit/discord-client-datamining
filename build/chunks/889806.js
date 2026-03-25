@@ -39,8 +39,8 @@ var i = n(627968),
 n(281405);
 var U = n(652215),
     P = n(349828),
-    w = n(728444);
-class k extends L.Ay {
+    k = n(728444);
+class w extends L.Ay {
     state = {
         shouldShowThreadsPopout: !1,
         shouldShowActivities: !1
@@ -170,7 +170,7 @@ class k extends L.Ay {
             channelInfo: e
         } = this.props;
         return null == e ? null : (0, i.jsx)("div", {
-            className: w.yW,
+            className: k.yW,
             children: e
         })
     }
@@ -200,8 +200,8 @@ class k extends L.Ay {
             channelItemRef: v
         } = this.props, y = v ?? this.channelItemRef, j = !S && o, R = !S && b && null != I && I.length > 0, O = (0, g.M)(C), L = (0, i.jsxs)("li", {
             className: a()(this.getClassName(), {
-                [w.r9]: this.isDisabled(),
-                [w.wH]: n
+                [k.r9]: this.isDisabled(),
+                [k.wH]: n
             }),
             "data-dnd-name": e.name,
             onMouseEnter: j || R ? this.handleMouseEnter : void 0,
@@ -215,7 +215,7 @@ class k extends L.Ay {
                 shouldShow: j && this.state.shouldShowThreadsPopout || R && this.state.shouldShowActivities,
                 children: () => (0, i.jsxs)(D.Ay, {
                     ref: this.setChannelItemRef,
-                    className: w.Ki,
+                    className: k.Ki,
                     channel: e,
                     guild: t,
                     selected: !f && n,
@@ -251,7 +251,7 @@ class k extends L.Ay {
         return m ? u(h(L)) : L
     }
 }
-let V = (0, h.a)(k);
+let V = (0, h.a)(w);
 
 function B(e) {
     let {
@@ -277,7 +277,7 @@ function B(e) {
     }), S = (0, o.bG)([E.A], () => E.A.shouldIndicateNewChannel(n.id, t.id)), {
         needSubscriptionToAccess: R,
         isSubscriptionGated: O
-    } = (0, C.A)(t.id), L = (0, o.bG)([j.Ay], () => j.Ay.isFavorite(n.id, t.id)), D = (0, _.vL)(t), G = (0, A.Gp)(t.id), w = (0, M.A)({
+    } = (0, C.A)(t.id), L = (0, o.bG)([j.Ay], () => j.Ay.isFavorite(n.id, t.id)), D = (0, _.vL)(t), G = (0, A.Gp)(t.id), k = (0, M.A)({
         channel: t,
         isChannelCollapsed: !1,
         isChannelSelected: d,
@@ -287,7 +287,7 @@ function B(e) {
         muted: c,
         enableActivities: G,
         resolvedUnreadSetting: g
-    }), k = (0, m.Ay)(t), [B, H] = s.useState(!1), F = (0, r.K)(s.useCallback(e => {
+    }), w = (0, m.Ay)(t), [B, H] = s.useState(!1), F = (0, r.K)(s.useCallback(e => {
         H(e)
     }, [])), {
         showMenuItemPopover: K,
@@ -310,10 +310,10 @@ function B(e) {
         isNewChannel: S && e.canBeNewChannel,
         isFavoriteSuggestion: a && !L,
         channelIsContentGated: D,
-        channelInfo: w,
-        embeddedApps: k,
+        channelInfo: k,
+        embeddedApps: w,
         resolvedUnreadSetting: g,
-        hasChannelInfo: null != w,
+        hasChannelInfo: null != k,
         enableActivities: G,
         showMenuItemPopover: K,
         markMenuItemPopoverAsDismissed: W,

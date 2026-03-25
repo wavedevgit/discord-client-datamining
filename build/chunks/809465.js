@@ -21,23 +21,23 @@ var i = n(503698),
 function p() {
     let e = (0, d.GV)(),
         t = window.GLOBAL_ENV.RELEASE_CHANNEL,
-        n = "516299",
-        i = "c12d5bc4b8f4d60ec5aa1b97dc29e67a748fce33".substring(0, 7),
+        n = "516337",
+        i = "f4c727da9b8508b29d09d29ee1a68d9f48300c12".substring(0, 7),
         l = c.A?.app.getVersion(),
         p = c.A?.app.getBuildNumber(),
-        b = c.A?.app.getAppArch(),
-        g = u.A.getCurrentBuildOverride().overrides?.discord_web,
-        y = function() {
+        y = c.A?.app.getAppArch(),
+        b = u.A.getCurrentBuildOverride().overrides?.discord_web,
+        v = function() {
             let e = s()?.os?.toString();
             if (null == e || null == c.A) return null;
             let t = c.A.os.release,
                 [n, r, i] = _.Ay.parsedOSRelease;
             return e.includes("Windows 10") && void 0 !== i && i >= 22e3 && (e = e.replace("Windows 10", "Windows 11")), e.includes("OS X 10.15.7") && void 0 !== n && n >= 20 && (e = `macOS ${n>=25?n+1:n-9}`), `${e} (${t})`
         }(),
-        v = [t, n, `(${i})`];
-    return null != l && (v.push(`Host ${l}`), null != b && v.push(b.toLowerCase()), null != p && v.push(`(${p})`)), v.push(`Build Override: ${null!=g?g.id:"N/A"}`), null != y && v.push(y), (0, r.jsxs)(r.Fragment, {
+        g = [t, n, `(${i})`];
+    return null != l && (g.push(`Host ${l}`), null != y && g.push(y.toLowerCase()), null != p && g.push(`(${p})`)), g.push(`Build Override: ${null!=b?b.id:"N/A"}`), null != v && g.push(v), (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(h.A, {
-            copyValue: v.join(" "),
+            copyValue: g.join(" "),
             text: f.intl.string(f.t["9Al4Qd"]),
             "aria-label": !1,
             dataMeticulousIgnore: "true",
@@ -60,20 +60,20 @@ function p() {
                         tag: "span",
                         variant: "text-xxs/normal",
                         color: "text-muted",
-                        children: [l, null != b && (0, r.jsxs)("span", {
+                        children: [l, null != y && (0, r.jsxs)("span", {
                             className: m.GI,
-                            children: [" ", b.toLowerCase()]
+                            children: [" ", y.toLowerCase()]
                         }), null != p && (0, r.jsxs)("span", {
                             children: [" (", p, ")"]
                         })]
                     })]
-                }), null != g && (0, r.jsx)(o.Text, {
+                }), null != b && (0, r.jsx)(o.Text, {
                     tag: "span",
                     variant: "text-xxs/normal",
                     color: "text-muted",
                     children: (0, r.jsxs)("span", {
                         className: m.Pc,
-                        children: ["Build Override: ", g.id]
+                        children: ["Build Override: ", b.id]
                     })
                 })]
             })

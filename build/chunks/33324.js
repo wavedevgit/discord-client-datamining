@@ -42,9 +42,9 @@ function I(e) {
         G = (0, p.C$)(e.id, "useGuildActionRows"),
         U = e.features.has(E.GuildFeatures.GAME_SERVERS),
         P = (0, g.N)("useGuildActionRows"),
-        [w] = (0, a.kn)(G && P && !U ? [s.M.EMPTY_GAME_SERVER_TAB] : [], void 0, !0),
-        k = (0, r.ws)(e, {
+        [k] = (0, a.kn)(G && P && !U ? [s.M.EMPTY_GAME_SERVER_TAB] : [], void 0, !0),
+        w = (0, r.ws)(e, {
             location: "guild-action-rows"
         });
-    return O && R.push(C.n.GUILD_HUB_HEADER_OPTIONS), !y && S && v && null != T && T.length > 0 ? R.push(C.n.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : k && R.push(C.n.GUILD_PREMIUM_PROGRESS_BAR), !O && S && R.push(C.n.GUILD_HOME), t && R.push(C.n.GUILD_SCHEDULED_EVENTS), !O && L && R.push(C.n.CHANNELS_AND_ROLES), I && R.push(C.n.GUILD_ROLE_SUBSCRIPTIONS), N && R.push(C.n.GUILD_SHOP), b && R.push(C.n.GUILD_GAME_SHOP), (j && (L || M) || n && e.features.has(E.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && R.push(C.n.GUILD_MOD_DASH_MEMBER_SAFETY), D && R.push(C.n.GUILD_BOOSTS), G && (U ? R.push(C.n.GAME_SERVERS) : null != w && R.push(C.n.GAME_SERVERS_EMPTY)), R
+    return O && R.push(C.n.GUILD_HUB_HEADER_OPTIONS), !y && S && v && null != T && T.length > 0 ? R.push(C.n.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : w && R.push(C.n.GUILD_PREMIUM_PROGRESS_BAR), !O && S && R.push(C.n.GUILD_HOME), t && R.push(C.n.GUILD_SCHEDULED_EVENTS), !O && L && R.push(C.n.CHANNELS_AND_ROLES), I && R.push(C.n.GUILD_ROLE_SUBSCRIPTIONS), N && R.push(C.n.GUILD_SHOP), b && R.push(C.n.GUILD_GAME_SHOP), (j && (L || M) || n && e.features.has(E.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && R.push(C.n.GUILD_MOD_DASH_MEMBER_SAFETY), D && R.push(C.n.GUILD_BOOSTS), G && (U ? R.push(C.n.GAME_SERVERS) : null != k && R.push(C.n.GAME_SERVERS_EMPTY)), R
 }

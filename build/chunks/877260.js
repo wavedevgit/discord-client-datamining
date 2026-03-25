@@ -17,27 +17,27 @@ var r = n(627968),
     f = n(894858),
     m = n(397274),
     p = n(189857),
-    b = n(188180),
-    g = n(133457),
-    y = n(985018),
-    v = n(658646);
+    y = n(188180),
+    b = n(133457),
+    v = n(985018),
+    g = n(658646);
 
 function x(e) {
     let {
         root: t,
         onClose: n,
         footer: a,
-        emptyState: b,
+        emptyState: y,
         searchBar: x
     } = e, A = f.A.useField("showNavigationMobile"), S = i.useRef(null), [N] = i.useState(t), {
         accessibleDirectory: C
     } = (0, _._)(), j = i.useMemo(() => (0, p.Z)(N, C), [N, C]), [I] = (0, d.kn)(j.allDismissibleContents);
-    (0, g.B)({
+    (0, b.B)({
         visibleContent: I,
         dismissibleBadges: j,
         accessibleDirectory: C
     });
-    let [R, T] = i.useMemo(() => {
+    let [T, R] = i.useMemo(() => {
         let e = [],
             n = [];
         return t.layout.forEach(t => {
@@ -47,29 +47,29 @@ function x(e) {
     return (0, r.jsx)(c.NPJ, {
         theme: k,
         children: e => (0, r.jsxs)("div", {
-            className: l()(v.pz, e, {
-                [v.Hw]: o.Fr,
-                [v.n7]: A
+            className: l()(g.pz, e, {
+                [g.Hw]: o.Fr,
+                [g.n7]: A
             }),
             children: [(0, r.jsxs)("div", {
-                className: v.gM,
+                className: g.gM,
                 children: [o.Fr && (0, r.jsx)("div", {
-                    className: v.hg,
+                    className: g.hg,
                     children: (0, r.jsx)(c.K0, {
                         icon: c.d$L,
                         onClick: n,
                         variant: "icon-only",
                         size: "sm",
-                        "aria-label": y.intl.string(y.t.cpT0Cq)
+                        "aria-label": v.intl.string(v.t.cpT0Cq)
                     })
                 }), (0, r.jsx)("div", {
-                    children: R.map(e => (0, r.jsx)(E, {
+                    children: T.map(e => (0, r.jsx)(E, {
                         section: e,
                         visibleContent: I,
                         dismissibleBadges: j,
                         hoisted: !0
                     }, e.key))
-                }), null != x && (0, r.jsx)(x, {}), null != b && 0 === T.length && (0, r.jsx)(b, {})]
+                }), null != x && (0, r.jsx)(x, {}), null != y && 0 === R.length && (0, r.jsx)(y, {})]
             }), (0, r.jsx)(s.hD, {
                 navigator: w,
                 children: (0, r.jsx)(s.PR, {
@@ -82,12 +82,12 @@ function x(e) {
                             ref: e => {
                                 S.current = e, m.A.setSidebarScrollerRef(e), t.current = e?.getScrollerNode() ?? null
                             },
-                            className: v.Mt,
+                            className: g.Mt,
                             fade: !0,
                             ...n,
                             children: [(0, r.jsx)("nav", {
-                                className: v.C$,
-                                children: T.map(e => (0, r.jsx)(E, {
+                                className: g.C$,
+                                children: R.map(e => (0, r.jsx)(E, {
                                     section: e,
                                     visibleContent: I,
                                     dismissibleBadges: j
@@ -109,17 +109,17 @@ function E(e) {
         hoisted: a = !1
     } = e, l = t.useTitle?.();
     return (0, r.jsxs)("ul", {
-        className: v.uW,
+        className: g.uW,
         "aria-label": l,
         children: [null != l && (0, r.jsx)("div", {
-            className: v.a9,
+            className: g.a9,
             children: (0, r.jsx)(c.Heading, {
-                className: v.Pf,
+                className: g.Pf,
                 variant: "heading-sm/medium",
                 color: "text-muted",
                 children: l
             })
-        }), t.layout.map(e => (0, r.jsx)(b.X, {
+        }), t.layout.map(e => (0, r.jsx)(y.X, {
             node: e,
             visibleContent: n,
             dismissibleBadges: i,

@@ -38,8 +38,8 @@ var i = n(627968),
     G = n(246356),
     U = n(709562),
     P = n(404355),
-    w = n(577062),
-    k = n(970636),
+    k = n(577062),
+    w = n(970636),
     V = n(961350),
     B = n(430452),
     H = n(576705),
@@ -316,7 +316,7 @@ let eg = s.memo(function(e) {
             } = e, {
                 isShown: s
             } = t;
-            return (0, i.jsx)(k.A, {
+            return (0, i.jsx)(w.A, {
                 ref: Y,
                 centerButton: !0,
                 hasPermission: I,
@@ -365,7 +365,7 @@ let eg = s.memo(function(e) {
                     } = e, {
                         isShown: s
                     } = t;
-                    return (0, i.jsx)(w.A, {
+                    return (0, i.jsx)(k.A, {
                         ref: q,
                         centerButton: !0,
                         onPopoutClick: n,

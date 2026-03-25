@@ -38,8 +38,8 @@ var i = n(627968),
     G = n(518960),
     U = n(710640),
     P = n(393309),
-    w = n(474078),
-    k = n(747926),
+    k = n(474078),
+    w = n(747926),
     V = n(965601),
     B = n(55294),
     H = n(652215),
@@ -91,9 +91,9 @@ function q(e) {
             confirmVariant: "critical-primary",
             cancelText: F.intl.string(F.t["olcKd/"]),
             onConfirm: () => {
-                (0, k.bA)(t)
+                (0, w.bA)(t)
             }
-        }) : (0, k.bA)(t)
+        }) : (0, w.bA)(t)
     }, [t]);
     return (0, i.jsxs)(N.Ay, {
         toolbar: (0, i.jsx)(N.Ay.Icon, {
@@ -193,7 +193,7 @@ function X(e) {
                 threadSettings: i,
                 privateThreadMode: l,
                 location: r,
-                onThreadCreated: k.JA,
+                onThreadCreated: w.JA,
                 useDefaultThreadName: !0
             });
             return {
@@ -249,7 +249,7 @@ function X(e) {
             location: d,
             enableAIFeatures: b
         }),
-        w = (0, P.Iy)(_, E) ? o.tn0 : o.ysw;
+        k = (0, P.Iy)(_, E) ? o.tn0 : o.ysw;
     return (0, i.jsx)("div", {
         className: K.TE,
         onMouseDown: A,
@@ -270,7 +270,7 @@ function X(e) {
                             channelId: "create-thread-null",
                             children: [(0, i.jsx)("div", {
                                 className: a()(W.P0, K.P0),
-                                children: (0, i.jsx)(w, {
+                                children: (0, i.jsx)(k, {
                                     className: W.Kk
                                 })
                             }), (0, i.jsxs)(o.nVY, {
@@ -360,11 +360,11 @@ function Q(e) {
         maxLength: H.Ign,
         onChange: e => {
             l({
-                name: (0, w.A)(e, !1)
+                name: (0, k.A)(e, !1)
             }), "" !== e ? d.A.startTyping(t.id) : d.A.stopTyping(t.id)
         },
         onBlur: () => {
-            let e = (0, w.A)(A, !0);
+            let e = (0, k.A)(A, !0);
             e !== A && l({
                 name: e
             })

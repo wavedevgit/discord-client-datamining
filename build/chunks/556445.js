@@ -18,27 +18,27 @@ function o(e) {
         source: u,
         size: c = "sm",
         variant: A = "secondary",
-        onAction: m,
-        ...p
+        onAction: h,
+        ...m
     } = e, {
-        tooltip: h,
+        tooltip: p,
         loading: g,
         disabled: f,
         onClick: T
     } = (0, a.J$)(t, i, u, s.Ay.getNickname(d, o, i));
     return (0, n.jsx)(l.m, {
-        text: h,
+        text: p,
         children: (0, n.jsx)(r.K0, {
             icon: r.J2m,
             size: c,
             variant: A,
             onClick: () => {
-                m?.(), T()
+                h?.(), T()
             },
             disabled: f,
             loading: g,
-            "aria-label": h ?? t.name,
-            ...p
+            "aria-label": p ?? t.name,
+            ...m
         })
     })
 }

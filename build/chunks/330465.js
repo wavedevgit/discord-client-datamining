@@ -61,8 +61,8 @@ let P = s.memo(function(e) {
         onDragStart: l,
         onDragEnd: _,
         route: P,
-        guild: w,
-        animatable: k,
+        guild: k,
+        animatable: w,
         selected: V = !1,
         unread: B = !1,
         mediaState: H,
@@ -120,14 +120,14 @@ let P = s.memo(function(e) {
             })
         }, [ee, P]),
         ef = s.useCallback(() => {
-            if (null != P || null == w || F || !X) return;
-            let e = (0, g.W)(w.id);
-            null != e && m.A.preload(w.id, e)
-        }, [P, w, F, X]),
+            if (null != P || null == k || F || !X) return;
+            let e = (0, g.W)(k.id);
+            null != e && m.A.preload(k.id, e)
+        }, [P, k, F, X]),
         ex = (0, u.bG)([E.Ay], () => E.Ay.isCurrentUserGuest(ee)),
         eC = s.useCallback(e => {
-            null == w || ex || Y(e, w)
-        }, [w, Y, ex]),
+            null == k || ex || Y(e, k)
+        }, [k, Y, ex]),
         eE = s.useCallback(e => {
             "ArrowLeft" === e.key && null != et && document.querySelector(`[aria-owns=folder-items-${et}]`)?.focus()
         }, [et]),
@@ -146,9 +146,9 @@ let P = s.memo(function(e) {
             n?.(ee, e)
         }, [ee, n]),
         eT = (0, A.rdh)(A.LU0.modules.guildbar.AVATAR_SIZE);
-    if (null == w) return null;
+    if (null == k) return null;
     let ev = (0, i.jsx)(T.A, {
-            guild: w,
+            guild: k,
             show: eA,
             active: V,
             onAnimationStart: function() {
@@ -160,17 +160,17 @@ let P = s.memo(function(e) {
         }),
         ey = ep ? (0, i.jsx)(A.jlP, {
             ariaLabel: M.intl.formatToPlainString(M.t["/uzRss"], {
-                guildName: w.name,
+                guildName: k.name,
                 mentions: K
             }),
-            name: w.name,
+            name: k.name,
             onClick: eg,
             onMouseEnter: eN,
             onMouseLeave: eb,
             onMouseDown: ef,
             onContextMenu: eC,
             onKeyDown: eE,
-            icon: (0, C.Iv)(w, 2 * eT, ed && k, !0),
+            icon: (0, C.Iv)(k, 2 * eT, ed && w, !0),
             selected: V || ed,
             ...er,
             "aria-setsize": $,
@@ -182,21 +182,21 @@ let P = s.memo(function(e) {
                 ref: z ? e => {
                     ea(e)
                 } : void 0,
-                "data-dnd-name": w.name,
+                "data-dnd-name": k.name,
                 "data-drop-hovering": eA,
                 children: (0, i.jsx)(A.jlP, {
                     ariaLabel: M.intl.formatToPlainString(M.t["/uzRss"], {
-                        guildName: w.name,
+                        guildName: k.name,
                         mentions: K
                     }),
-                    name: w.name,
+                    name: k.name,
                     onClick: eg,
                     onMouseEnter: eN,
                     onMouseLeave: eb,
                     onMouseDown: ef,
                     onContextMenu: eC,
                     onKeyDown: eE,
-                    icon: (0, C.Iv)(w, 2 * eT, ed && k, !0),
+                    icon: (0, C.Iv)(k, 2 * eT, ed && w, !0),
                     selected: V || ed,
                     ...er,
                     "aria-setsize": $,
@@ -213,7 +213,7 @@ let P = s.memo(function(e) {
             ref: z ? e => {
                 ea(e)
             } : void 0,
-            "data-dnd-name": w.name,
+            "data-dnd-name": k.name,
             style: {
                 scale: null == Q ? 1 : Q
             },
@@ -256,12 +256,12 @@ let P = s.memo(function(e) {
             unread: !el && B,
             className: D.Io
         }), (0, i.jsx)(y.A, {
-            guild: w,
+            guild: k,
             disabled: q,
             isDragging: el,
             children: el ? eR : eO
         }), z ? (0, i.jsx)(v.Ay, {
-            name: w.name,
+            name: k.name,
             targetNode: t,
             onDragOverChanged: eI
         }) : null]

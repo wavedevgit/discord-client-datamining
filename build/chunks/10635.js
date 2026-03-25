@@ -44,8 +44,8 @@ function L(e) {
         userId: t.id,
         channelId: n.id
     }), P = s.useRef(null), {
-        isHoveringOrFocusing: w,
-        isHovering: k
+        isHoveringOrFocusing: k,
+        isHovering: w
     } = (0, u.A)(P), V = () => {
         (0, g.openUserProfileModal)({
             sourceAnalyticsLocations: G,
@@ -75,7 +75,7 @@ function L(e) {
                             user: t,
                             displayProfile: M,
                             themeType: y.d.SIDEBAR,
-                            animateOnHoverOrFocusOnly: !w
+                            animateOnHoverOrFocusOnly: !k
                         }), (0, i.jsx)(f.A, {
                             user: t,
                             displayProfile: M,
@@ -104,7 +104,7 @@ function L(e) {
                                     userBio: M?.bio,
                                     userId: t.id,
                                     animateOnHoverOrFocusOnly: !0,
-                                    isHoveringOrFocusing: w
+                                    isHoveringOrFocusing: k
                                 })
                             }), (0, i.jsx)(N.A, {
                                 heading: j.intl.string(j.t["A//N4k"]),
@@ -130,7 +130,7 @@ function L(e) {
                     })
                 }), M?.profileEffect != null && (0, i.jsx)(h.A, {
                     skuId: M?.profileEffect?.skuId,
-                    isHovering: k
+                    isHovering: w
                 })]
             })
         })

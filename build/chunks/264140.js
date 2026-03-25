@@ -39,8 +39,8 @@ var f = n(483270),
     G = n(17447),
     U = n(453738),
     P = n(268218),
-    w = n(726249),
-    k = n(274146),
+    k = n(726249),
+    w = n(274146),
     V = n(826673),
     B = n(93055),
     H = n(713842),
@@ -93,8 +93,8 @@ var f = n(483270),
     eG = n(447696),
     eU = n(684407),
     eP = n(709544),
-    ew = n(761640),
-    ek = n(734057),
+    ek = n(761640),
+    ew = n(734057),
     eV = n(31717),
     eB = n(919638),
     eH = n(71393),
@@ -548,7 +548,7 @@ class tn extends s.PureComponent {
             channelId: e.id
         });
         if (e.isGuildVocal() || l && e.isVocalThread()) return null;
-        if (e.isDirectory()) return o()(null != t, "directory channels must exist within a guild"), (0, i.jsx)(k.A, {
+        if (e.isDirectory()) return o()(null != t, "directory channels must exist within a guild"), (0, i.jsx)(w.A, {
             channel: e,
             guild: t
         });
@@ -749,7 +749,7 @@ class tn extends s.PureComponent {
             p = !e.isForumLikeChannel() && !o,
             g = t?.name;
         return (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(w.HI, {
+            children: [(0, i.jsx)(k.HI, {
                 location: g,
                 subsection: n ?? void 0
             }), (0, i.jsxs)("div", {
@@ -779,7 +779,7 @@ let ti = (0, C.A)(tn),
     ts = s.memo(function(e) {
         let {
             providedChannel: t
-        } = e, [n, l] = s.useState(null), a = (0, h.bG)([eW.A], () => eW.A.getChannelId()), r = (0, h.bG)([eW.A], () => eW.A.getVoiceChannelId()), o = (0, h.bG)([ek.A], () => t ?? ek.A.getChannel(a), [a, t]), c = (0, B.DZ)(), _ = (0, B.e4)(o, "ConnectedChannel"), g = (0, h.bG)([ek.A], () => ek.A.getChannel(r), [r]), f = _?.parent_id, x = (0, h.bG)([ek.A], () => ek.A.getChannel(f), [f]), C = (0, h.bG)([eH.A], () => eH.A.getGuild(_?.guild_id), [_]), {
+        } = e, [n, l] = s.useState(null), a = (0, h.bG)([eW.A], () => eW.A.getChannelId()), r = (0, h.bG)([eW.A], () => eW.A.getVoiceChannelId()), o = (0, h.bG)([ew.A], () => t ?? ew.A.getChannel(a), [a, t]), c = (0, B.DZ)(), _ = (0, B.e4)(o, "ConnectedChannel"), g = (0, h.bG)([ew.A], () => ew.A.getChannel(r), [r]), f = _?.parent_id, x = (0, h.bG)([ew.A], () => ew.A.getChannel(f), [f]), C = (0, h.bG)([eH.A], () => eH.A.getGuild(_?.guild_id), [_]), {
             needSubscriptionToAccess: b
         } = (0, J.A)(_?.id ?? void 0), y = (0, h.bG)([R.A], () => {
             let e = null != a ? R.A.getParticipants(a) : [],
@@ -793,10 +793,10 @@ let ti = (0, C.A)(tn),
             }))
         }, [U, _, L, M]);
         let P = (0, h.bG)([N.Ay], () => N.Ay.getCurrentEmbeddedActivity()),
-            w = (0, h.bG)([N.Ay], () => N.Ay.getActivityPanelMode()),
-            k = null != P && !(0, S.A)(_?.id) && w === e7.Gd.PANEL,
+            k = (0, h.bG)([N.Ay], () => N.Ay.getActivityPanelMode()),
+            w = null != P && !(0, S.A)(_?.id) && k === e7.Gd.PANEL,
             H = (0, h.bG)([ez.A], () => null != _ && _.isVocalThread() && !d().isEmpty(ez.A.getVoiceStatesForChannel(_.id)), [_]),
-            W = null != _ && _.isPrivate() && !k && y,
+            W = null != _ && _.isPrivate() && !w && y,
             Y = _?.isGuildVocal() || W || H,
             z = (0, h.bG)([F.A], () => F.A.getFrameLayoutMode() === e3.y.FOCUSED),
             {
@@ -810,12 +810,12 @@ let ti = (0, C.A)(tn),
             {
                 section: et,
                 channelSidebarState: en
-            } = (0, h.cf)([ew.Ay], () => ({
-                section: ew.Ay.getSection(a, _?.isDM()),
-                channelSidebarState: ew.Ay.getSidebarState(a)
+            } = (0, h.cf)([ek.Ay], () => ({
+                section: ek.Ay.getSection(a, _?.isDM()),
+                channelSidebarState: ek.Ay.getSidebarState(a)
             }), [a, _]),
             ei = C?.id,
-            es = (0, h.bG)([ew.Ay], () => ew.Ay.getGuildSidebarState(ei), [ei]),
+            es = (0, h.bG)([ek.Ay], () => ek.Ay.getGuildSidebarState(ei), [ei]),
             el = (0, e_.lI)(),
             ea = (0, eq.Ay)(_),
             er = (0, eq.Ay)(_, !0),
@@ -877,7 +877,7 @@ let ti = (0, C.A)(tn),
             guildSidebarState: es,
             guild: C,
             showCall: !b && Y,
-            showActivityPanel: k,
+            showActivityPanel: w,
             showFramePanel: z,
             channelIsContentGated: ec,
             isMobile: (0, h.bG)([eF.A], () => _?.type === e9.rbe.DM && eF.A.isMobileOnline(_.getRecipientId()), [_]),
@@ -893,7 +893,7 @@ let ti = (0, C.A)(tn),
             showChannelSummaries: ex,
             showHeaderGuildBreadcrumb: c || el,
             premiumIndicatorEnabled: !1,
-            hasTextActivityInPanelMode: k,
+            hasTextActivityInPanelMode: w,
             embeddedActivity: P
         })
     })

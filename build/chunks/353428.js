@@ -1,7 +1,7 @@
 /** chunk id: 353428 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    EP: () => w,
+    EP: () => k,
     i$: () => V,
     zF: () => U
 });
@@ -166,14 +166,14 @@ function U(e) {
         case O.rbe.GUILD_MEDIA:
             return null != t.linkedLobby ? (0, i.jsxs)(G, {
                 channel: t,
-                children: [k(g, t.type === O.rbe.GUILD_ANNOUNCEMENT ? M.intl.string(M.t.l1dkSD) : M.intl.string(M.t.Pnajj0)), (0, i.jsx)(j.A.Title, {
+                children: [w(g, t.type === O.rbe.GUILD_ANNOUNCEMENT ? M.intl.string(M.t.l1dkSD) : M.intl.string(M.t.Pnajj0)), (0, i.jsx)(j.A.Title, {
                     level: x,
                     onContextMenu: u,
                     onClick: c,
                     children: C
                 })]
             }) : (0, i.jsxs)(s.Fragment, {
-                children: [k(g, t.type === O.rbe.GUILD_ANNOUNCEMENT ? M.intl.string(M.t.l1dkSD) : M.intl.string(M.t.Pnajj0)), (0, i.jsx)(j.A.Title, {
+                children: [w(g, t.type === O.rbe.GUILD_ANNOUNCEMENT ? M.intl.string(M.t.l1dkSD) : M.intl.string(M.t.Pnajj0)), (0, i.jsx)(j.A.Title, {
                     level: x,
                     onContextMenu: u,
                     onClick: c,
@@ -182,7 +182,7 @@ function U(e) {
             });
         case O.rbe.GUILD_VOICE:
             return (0, i.jsxs)(s.Fragment, {
-                children: [k(g, M.intl.string(M.t.BVZqJl)), (0, i.jsx)(j.A.Title, {
+                children: [w(g, M.intl.string(M.t.BVZqJl)), (0, i.jsx)(j.A.Title, {
                     level: x,
                     onContextMenu: u,
                     onClick: c,
@@ -191,7 +191,7 @@ function U(e) {
             });
         case O.rbe.GUILD_STAGE_VOICE:
             return (0, i.jsxs)(s.Fragment, {
-                children: [k(g, M.intl.string(M.t.EErMzA)), (0, i.jsx)(j.A.Title, {
+                children: [w(g, M.intl.string(M.t.EErMzA)), (0, i.jsx)(j.A.Title, {
                     level: x,
                     onContextMenu: u,
                     onClick: c,
@@ -205,7 +205,7 @@ function U(e) {
             if (!o && null != l) {
                 let e = (0, m.gU)(l, r);
                 I = (0, i.jsxs)(s.Fragment, {
-                    children: [k(e, M.intl.string(M.t.Pnajj0)), (0, i.jsx)(j.A.Title, {
+                    children: [w(e, M.intl.string(M.t.Pnajj0)), (0, i.jsx)(j.A.Title, {
                         level: x,
                         onContextMenu: _,
                         onClick: h,
@@ -216,7 +216,7 @@ function U(e) {
             }
             let b = l?.type != null && O.kvI.GUILD_THREADS_ONLY.has(l.type);
             return (0, i.jsxs)(s.Fragment, {
-                children: [I, k(b ? null : g, M.intl.string(M.t["7Xm5QI"])), (0, i.jsx)(j.A.Title, {
+                children: [I, w(b ? null : g, M.intl.string(M.t["7Xm5QI"])), (0, i.jsx)(j.A.Title, {
                     level: x,
                     onContextMenu: u,
                     onClick: c,
@@ -264,7 +264,7 @@ let P = e => {
     }) : null : null
 };
 
-function w(e, t) {
+function k(e, t) {
     switch (e.type) {
         case O.rbe.DM:
             return (0, i.jsxs)(i.Fragment, {
@@ -288,7 +288,7 @@ function w(e, t) {
     }
 }
 
-function k(e, t) {
+function w(e, t) {
     return (0, i.jsxs)(i.Fragment, {
         children: [null !== e && (0, i.jsx)(j.A.ChannelIcon, {
             icon: e,

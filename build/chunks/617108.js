@@ -21,15 +21,15 @@ let A = function(e) {
         subscriptionTier: n
     } = e, {
         analyticsLocations: A
-    } = (0, s.Ay)(r.A.PREMIUM_TIER_2_DISCOUNT_ENDING_NOTICE), I = (0, c.O)(), N = (0, l.A)(null != I && null != I.expires_at ? Date.parse(I.expires_at) : 0);
-    return null == I || I.discount?.plan_ids.some(e => _.hd[e].skuId !== n) || null == I.expires_at || Object.values(N).every(e => 0 === e) ? null : (0, i.jsxs)(u.T0, {
+    } = (0, s.Ay)(r.A.PREMIUM_TIER_2_DISCOUNT_ENDING_NOTICE), I = (0, c.O)(), p = (0, l.A)(null != I && null != I.expires_at ? Date.parse(I.expires_at) : 0);
+    return null == I || I.discount?.plan_ids.some(e => _.hd[e].skuId !== n) || null == I.expires_at || Object.values(p).every(e => 0 === e) ? null : (0, i.jsxs)(u.T0, {
         onClick: () => {
             t(), o.default.track(E.HAw.APP_NOTICE_CLOSED, {
                 notice_type: E.kqX.PREMIUM_TIER_2_DISCOUNT_ENDING
             })
         },
         children: [(0, i.jsx)(u.In, {
-            children: (0, d.rn)(N, Number(I.discount.amount))
+            children: (0, d.rn)(p, Number(I.discount.amount))
         }), (0, i.jsx)(u.fY, {
             onClick: () => {
                 (0, a.A)({

@@ -1,7 +1,7 @@
 /** chunk id: 906141 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => k
+    A: () => w
 });
 var i = n(627968),
     s = n(64700),
@@ -38,15 +38,15 @@ var i = n(627968),
     G = n(652215),
     U = n(985018),
     P = n(410132),
-    w = n(119907);
-let k = s.memo(function e(t) {
+    k = n(119907);
+let w = s.memo(function e(t) {
     let n, {
             channel: s,
             message: l,
             compact: o = !1,
             className: D,
             onContextMenu: P,
-            onClick: k,
+            onClick: w,
             disableInteraction: B = !1,
             hasThread: H,
             treatSpam: F
@@ -100,9 +100,9 @@ let k = s.memo(function e(t) {
     }) : (0, i.jsx)(b.A, {
         compact: o,
         className: a()(D, {
-            [w.M1]: (0, x.ec)(l),
-            [w.XN]: B,
-            [w._A]: t.isGroupStart
+            [k.M1]: (0, x.ec)(l),
+            [k.XN]: B,
+            [k._A]: t.isGroupStart
         }),
         childrenRepliedMessage: (0, M.A)(l, s, K, W, o),
         childrenHeader: (0, R.A)({
@@ -138,7 +138,7 @@ let k = s.memo(function e(t) {
         childrenMessageContent: (0, j.A)(t, ee),
         childrenSystemMessage: (0, O.A)(t),
         onContextMenu: P,
-        onClick: k,
+        onClick: w,
         hasThread: !1 !== H && null != es && l.hasFlag(G.pr7.HAS_THREAD),
         hasReply: l.type === G.lAJ.REPLY,
         isSystemMessage: (0, E.A)(l),

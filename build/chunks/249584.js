@@ -48,8 +48,8 @@ var i = n(627968),
     G = n(294726),
     U = n(333354),
     P = n(985018),
-    w = n(7946),
-    k = n(570890),
+    k = n(7946),
+    w = n(570890),
     V = n(75962),
     B = n(108432),
     H = n(581665),
@@ -65,7 +65,7 @@ function W(e) {
     } = e;
     return (0, i.jsx)(en, {
         asset: (0, i.jsx)(T.b, {
-            className: a()(w.Sl, w.SV)
+            className: a()(k.Sl, k.SV)
         }),
         title: P.intl.formatToPlainString(U.default["Zg/m9K"], {
             perkName: n.title
@@ -138,11 +138,11 @@ function z(e) {
     return (0, i.jsx)(en, {
         size: 1 === n.length ? "video" : "lg",
         asset: n.length > 1 ? (0, i.jsx)(T.b, {
-            className: a()(w.Sl, w.SV)
+            className: a()(k.Sl, k.SV)
         }) : (0, i.jsx)("img", {
             alt: "",
             src: h,
-            className: w.Sl
+            className: k.Sl
         }),
         title: P.intl.formatToPlainString(U.default.LmpChE, {
             guildName: r
@@ -191,7 +191,7 @@ function q(e) {
         asset: (0, i.jsx)("img", {
             alt: "",
             src: F.A,
-            className: w.Sl
+            className: k.Sl
         }),
         actions: [{
             text: P.intl.string(P.t.RzWDqY),
@@ -210,7 +210,7 @@ function q(e) {
         asset: (0, i.jsx)("img", {
             alt: "",
             src: H.A,
-            className: w.Sl
+            className: k.Sl
         }),
         actions: [{
             text: P.intl.string(P.t.RzWDqY),
@@ -229,8 +229,8 @@ function q(e) {
         size: "video",
         asset: (0, i.jsx)("img", {
             alt: "",
-            src: k.A,
-            className: w.Sl
+            src: w.A,
+            className: k.Sl
         }),
         actions: [{
             text: P.intl.string(P.t.RzWDqY),
@@ -261,7 +261,7 @@ function X(e) {
         asset: (0, i.jsx)(o.E_w, {
             withReducedMotion: "halt",
             fit: "contain",
-            className: w.Sl,
+            className: k.Sl,
             stateMachine: u ? "SM_Main_Int" : "SM_Auto"
         }),
         title: P.intl.string(n === E.o.GAME_SERVER_HOSTING_AVAILABLE ? G.default.wXLChx : G.default["8z8RpY"]),
@@ -292,7 +292,7 @@ function J(e) {
         asset: (0, i.jsx)(o.E_w, {
             withReducedMotion: "halt",
             fit: "contain",
-            className: w.Sl,
+            className: k.Sl,
             stateMachine: l ? "SM_Main_Int" : "SM_Auto"
         }),
         title: P.intl.string(G.default["eX64+z"]),
@@ -329,7 +329,7 @@ function Q(e) {
         asset: (0, i.jsx)(o.E_w, {
             withReducedMotion: "halt",
             fit: "contain",
-            className: w.Sl,
+            className: k.Sl,
             stateMachine: r ? "SM_Main_Int" : "SM_Auto"
         }),
         title: P.intl.string(G.default.t3LNW1),
@@ -368,7 +368,7 @@ function $(e) {
         asset: (0, i.jsx)("img", {
             alt: "",
             src: V.A,
-            className: a()(w.Sl, w.RV)
+            className: a()(k.Sl, k.RV)
         }),
         title: P.intl.string(G.default["wy+j5s"]),
         body: P.intl.formatToPlainString(G.default["7OETrT"], {
@@ -408,7 +408,7 @@ function Z(e) {
         asset: (0, i.jsx)(o.E_w, {
             withReducedMotion: "halt",
             fit: "contain",
-            className: w.Sl,
+            className: k.Sl,
             stateMachine: r ? "SM_Main_Int" : "SM_Auto"
         }),
         title: P.intl.string(G.default.Jkx0sf),
@@ -447,11 +447,11 @@ function ee(e) {
         asset: n.type === O.o9.LEVEL ? (0, i.jsx)(v.n, {
             powerup: n,
             eventTargetRef: _,
-            className: w.Lj
+            className: k.Lj
         }) : (0, i.jsx)("img", {
             alt: "",
             src: d,
-            className: w.Sl
+            className: k.Sl
         }),
         title: P.intl.string(U.default.n37JhA),
         body: P.intl.formatToPlainString(h || n.type === O.o9.LEVEL ? U.default.Yr1ogl : U.default["7MZ2tu"], {
@@ -507,16 +507,16 @@ function et(e) {
         asset: n.isGameServer ? (0, i.jsx)(o.E_w, {
             withReducedMotion: "halt",
             fit: "contain",
-            className: w.Sl,
+            className: k.Sl,
             stateMachine: E ? "SM_Main_Int" : "SM_Auto"
         }) : _?.type === O.o9.LEVEL ? (0, i.jsx)(v.n, {
             powerup: _,
             eventTargetRef: x,
-            className: w.Lj
+            className: k.Lj
         }) : (0, i.jsx)("img", {
             alt: "",
             src: g,
-            className: w.Sl
+            className: k.Sl
         }),
         title: N,
         body: S,

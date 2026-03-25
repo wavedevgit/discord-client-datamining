@@ -68,7 +68,7 @@ function b(e) {
                 null != w && ((0, x.isWindows)() ? (0, m.A)(w.pid) : (0, r.mMO)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("96811"), n.e("58868")]).then(n.bind(n, 648230));
+                    } = await Promise.all([n.e("96811"), n.e("48697")]).then(n.bind(n, 648230));
                     return t => (0, i.jsx)(e, {
                         ...t,
                         analyticsLocations: U

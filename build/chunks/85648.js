@@ -25,6 +25,7 @@ var i = n(627968),
     b = n(413336),
     C = n(985018);
 let v = (0, o.t_)(c.X.DISPLAY_PANEL, {
+        initialize: x.du,
         useTitle: () => C.intl.string(C.t.DVatCa),
         buildLayout: () => [E.K, f.S, T.X, p.S, S.f, (0, b.$)(!0), h.J]
     }),

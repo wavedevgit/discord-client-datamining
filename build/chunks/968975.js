@@ -58,7 +58,7 @@ function v(e) {
         }, [L]),
         {
             visibleItems: P,
-            showTypeTooltip: w
+            showTypeTooltip: k
         } = (0, s.useMemo)(() => {
             let e = [],
                 n = !1,
@@ -73,7 +73,7 @@ function v(e) {
             }
         }, [D, t]),
         {
-            cards: k,
+            cards: w,
             singleItem: V,
             productLines: B
         } = (0, s.useMemo)(() => {
@@ -90,7 +90,7 @@ function v(e) {
                     analyticsLocations: O,
                     onViewWishlist: v,
                     wishlistId: y,
-                    showTypeTooltip: w,
+                    showTypeTooltip: k,
                     cardSize: j
                 }))) : (0, p.$)(l) && (s.add(l.skuProductLine), e.push((0, h.Z)(l, {
                     index: i,
@@ -99,7 +99,7 @@ function v(e) {
                     analyticsLocations: O,
                     onViewWishlist: v,
                     wishlistId: y,
-                    showTypeTooltip: w,
+                    showTypeTooltip: k,
                     cardSize: j
                 })))
             }
@@ -108,7 +108,7 @@ function v(e) {
                 singleItem: i,
                 productLines: s
             }
-        }, [t, n, O, v, y, j, P, w, D]),
+        }, [t, n, O, v, y, j, P, k, D]),
         H = (0, x.A)({
             wishlistId: y ?? null,
             onAction: U,
@@ -125,8 +125,8 @@ function v(e) {
         }, e.skuId)) : null, [O, M, v, n, t.length, P, y]),
         [K, W] = (0, c.RF)(l.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL, (0, o.c)(l.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL), void 0, !0),
         Y = K !== l.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL;
-    if (0 === k.length) return null;
-    let z = k;
+    if (0 === w.length) return null;
+    let z = w;
     return null != V && ((0, _.L)(V) ? z = (0, E.z)(V, {
         profileOwner: n,
         analyticsLocations: O,

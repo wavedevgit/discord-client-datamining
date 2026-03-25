@@ -39,8 +39,8 @@ var i = n(627968),
     G = n(72314),
     U = n(808728),
     P = n(967198),
-    w = n(32603),
-    k = n(960755),
+    k = n(32603),
+    w = n(960755),
     V = n(866842),
     B = n(633965),
     H = n(33324),
@@ -255,7 +255,7 @@ class em extends s.PureComponent {
                 section: i,
                 row: s
             } = n;
-            if (i < w.bK || e.isPlaceholderRow(i, s)) return !1;
+            if (i < k.bK || e.isPlaceholderRow(i, s)) return !1;
             let l = e.getChannelFromSectionRow(i, s);
             if (null == l) return !1;
             let {
@@ -304,7 +304,7 @@ class em extends s.PureComponent {
             selectedVoiceChannelId: l,
             density: a = "default"
         } = this.props, r = eA(a);
-        if (e === w.PU) {
+        if (e === k.PU) {
             let e = n.getGuildActionSection();
             return e.isEmpty() ? 0 : e.getRow(t) === er.n.GUILD_PREMIUM_PROGRESS_BAR ? e.getRows().length > 1 ? 69 : 57 : r
         }
@@ -401,7 +401,7 @@ class em extends s.PureComponent {
             optInEnabled: m,
             withGuildIcon: _
         } = this.props;
-        if (t === w.PU) {
+        if (t === k.PU) {
             let e = d.getGuildActionSection(),
                 t = e.getRow(n);
             if (null == t) return null;
@@ -487,7 +487,7 @@ class em extends s.PureComponent {
         let {
             category: g,
             channel: x
-        } = p, C = g instanceof w.xu, I = x.record, N = `${t}${x.id}`;
+        } = p, C = g instanceof k.xu, I = x.record, N = `${t}${x.id}`;
         switch (I.type) {
             case eo.rbe.GUILD_ANNOUNCEMENT:
             case eo.rbe.GUILD_TEXT:
@@ -654,8 +654,8 @@ class em extends s.PureComponent {
         let {
             guildChannels: n
         } = this.props;
-        if (e !== w.PU) {
-            if (null == t) return e === w.HP ? "favorites-header" : e === n.recentsSectionNumber ? "recents-header" : e === n.voiceChannelsSectionNumber ? "voice-channels" : e === w.bK ? "uncategorized-header" : n.getNamedCategoryFromSection(e)?.id;
+        if (e !== k.PU) {
+            if (null == t) return e === k.HP ? "favorites-header" : e === n.recentsSectionNumber ? "recents-header" : e === n.voiceChannelsSectionNumber ? "voice-channels" : e === k.bK ? "uncategorized-header" : n.getNamedCategoryFromSection(e)?.id;
             if (!n.isPlaceholderRow(e, t)) return n.getChannelFromSectionRow(e, t)?.channel?.id
         }
     };
@@ -875,7 +875,7 @@ function ep(e) {
 
 function eg(e) {
     let t = (0, H.A)(e.guild),
-        n = (0, o.cf)([k.A], () => k.A.getGuild(e.guildId, {
+        n = (0, o.cf)([w.A], () => w.A.getGuild(e.guildId, {
             guildActionRows: t
         })),
         {

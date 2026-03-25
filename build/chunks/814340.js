@@ -74,7 +74,7 @@ let P = o.Ay.connectStores([I.Ay, f.A], e => {
             category: f.A.getChannel(t.parent_id)
         }
     })(U),
-    w = o.Ay.connectStores([b.Ay], e => {
+    k = o.Ay.connectStores([b.Ay], e => {
         let {
             channel: t
         } = e;
@@ -83,7 +83,7 @@ let P = o.Ay.connectStores([I.Ay, f.A], e => {
             voiceStates: b.Ay.getVoiceStates(t.guild_id)[t.id]
         }
     })(U),
-    k = o.Ay.connectStores([x.default], e => {
+    w = o.Ay.connectStores([x.default], e => {
         let {
             guild: t
         } = e;
@@ -442,7 +442,7 @@ class F extends s.PureComponent {
                     score: l ? n.score : void 0
                 }, `${n.type}-${n.record.id}`);
             case m.rD.VOICE_CHANNEL:
-                return (0, i.jsx)(w, {
+                return (0, i.jsx)(k, {
                     id: this.getRowId(t),
                     focused: s >= 0 && t === s,
                     onClick: () => this.selectResult(n),
@@ -453,7 +453,7 @@ class F extends s.PureComponent {
                     score: l ? n.score : void 0
                 }, `${n.type}-${n.record.id}`);
             case m.rD.GUILD:
-                return (0, i.jsx)(k, {
+                return (0, i.jsx)(w, {
                     id: this.getRowId(t),
                     focused: s >= 0 && t === s,
                     onClick: () => this.selectResult(n),

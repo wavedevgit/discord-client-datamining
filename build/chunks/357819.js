@@ -54,20 +54,20 @@ let C = (0, a.A)(e => {
         },
         G = (0, u.Uo)(a.id),
         [U, P] = (0, u.RG)(a.id, D, G),
-        w = [Math.max(U[0] ?? 1, 1), Math.max(U[1] ?? 1, 1), U[2]],
+        k = [Math.max(U[0] ?? 1, 1), Math.max(U[1] ?? 1, 1), U[2]],
         {
-            speakerTileWidth: k,
+            speakerTileWidth: w,
             speakerTileHeight: V
         } = (n = Math.floor((t = Math.floor(C / M - 8)) / p.i), {
             speakerTileWidth: t,
             speakerTileHeight: n
         }),
-        B = b ? C - 32 : Math.min(C - 64, 3 * k + 8),
+        B = b ? C - 32 : Math.min(C - 64, 3 * w + 8),
         H = e => e === U.length - 1 || 0 === v && 1 === e,
         [F, K] = s.useState(!1),
         [W, Y] = s.useState(!1);
     return (0, i.jsx)(A.A, {
-        sections: w,
+        sections: k,
         renderSection: e => {
             let {
                 section: t
@@ -113,7 +113,7 @@ let C = (0, a.A)(e => {
                     if (F) return null;
                     return (0, i.jsx)(s.Fragment, {
                         children: (0, i.jsx)(m.A, {
-                            tileWidth: k,
+                            tileWidth: w,
                             channel: a,
                             participants: l,
                             selectedParticipant: y,

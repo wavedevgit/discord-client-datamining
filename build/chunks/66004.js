@@ -1,6 +1,6 @@
 /** chunk id: 66004 params = (module,exports,require) **/
 i.d(t, {
-    A: () => p
+    A: () => m
 });
 var n = i(627968),
     l = i(64700),
@@ -12,14 +12,14 @@ var n = i(627968),
     u = i(667050),
     c = i(407781),
     A = i(652215),
-    m = i(6694);
+    h = i(6694);
 
-function p(e) {
+function m(e) {
     let {
         channelId: t,
         guildId: i,
-        userId: p,
-        containerDimensions: h
+        userId: m,
+        containerDimensions: p
     } = e, g = (0, s.bG)([o.A], () => o.A.useReducedMotion), [f, T] = l.useState([]), S = f.length < 50;
     l.useEffect(() => {
         function e(e) {
@@ -30,7 +30,7 @@ function p(e) {
                 animationType: a,
                 animationId: o
             } = e;
-            if (null != p && p !== l) return;
+            if (null != m && m !== l) return;
             let c = null != s && null != a && null != o;
             if (n === t && !g && S && c) {
                 let e = (0, u.Br)(s),
@@ -52,7 +52,7 @@ function p(e) {
         return a.h.subscribe("VOICE_CHANNEL_EFFECT_SEND", e), () => {
             a.h.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", e)
         }
-    }, [t, i, p, g, S]);
+    }, [t, i, m, g, S]);
     let E = l.useCallback(e => {
         T(t => {
             let i = [...t],
@@ -61,14 +61,14 @@ function p(e) {
         })
     }, []);
     return g ? null : (0, n.jsx)("div", {
-        className: m.Y,
+        className: h.Y,
         style: {
-            width: h.width
+            width: p.width
         },
         children: (0, n.jsx)("div", {
-            className: m.z,
+            className: h.z,
             children: f.map(e => (0, n.jsx)(c.A, {
-                containerDimensions: h,
+                containerDimensions: p,
                 effect: e,
                 onComplete: E
             }, e.id))

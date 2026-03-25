@@ -1,6 +1,6 @@
 /** chunk id: 432166 params = (module,exports,require) **/
 i.d(t, {
-    A: () => p
+    A: () => m
 });
 var n = i(627968),
     l = i(64700),
@@ -40,7 +40,7 @@ function A(e) {
     } = e, n = Math.floor(t) % 60, l = Math.floor(t / 60) % 60, r = Math.floor(t / 3600);
     return 0 === r ? i ? `${c(l)}:${c(n)}` : `${l}:${c(n)}` : i ? `${c(r)}:${c(l)}:${c(n)}` : `${r}:${c(l)}:${c(n)}`
 }
-class m extends l.PureComponent {
+class h extends l.PureComponent {
     static defaultProps = {
         themed: !1
     };
@@ -67,7 +67,7 @@ class m extends l.PureComponent {
             singleLine: r = !1
         } = this.props, {
             now: a
-        } = this.state, c = (t - e) / 1e3, m = Math.max(Math.min((a - e) / 1e3, c), 0);
+        } = this.state, c = (t - e) / 1e3, h = Math.max(Math.min((a - e) / 1e3, c), 0);
         return r ? (0, n.jsxs)("div", {
             className: s()(i, {
                 [d.Sp]: l
@@ -75,13 +75,13 @@ class m extends l.PureComponent {
             children: [(0, n.jsx)("div", {
                 className: d.Iq,
                 children: A({
-                    time: m,
+                    time: h,
                     padLargestUnit: !0
                 })
             }), (0, n.jsx)("div", {
                 className: d.h7,
                 children: (0, n.jsx)(u, {
-                    percentage: m / c,
+                    percentage: h / c,
                     isSingleLine: !0
                 })
             }), (0, n.jsx)("div", {
@@ -96,14 +96,14 @@ class m extends l.PureComponent {
                 [d.Sp]: l
             }),
             children: [(0, n.jsx)(u, {
-                percentage: m / c,
+                percentage: h / c,
                 isSingleLine: !1
             }), (0, n.jsxs)(o.A, {
                 children: [(0, n.jsx)(o.A.Child, {
                     grow: 1,
                     className: d.n_,
                     children: A({
-                        time: m,
+                        time: h,
                         padLargestUnit: !1
                     })
                 }), (0, n.jsx)(o.A.Child, {
@@ -118,4 +118,4 @@ class m extends l.PureComponent {
         })
     }
 }
-let p = m
+let m = h

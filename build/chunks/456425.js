@@ -94,7 +94,7 @@ function P(e) {
     })
 }
 
-function w(e) {
+function k(e) {
     let {
         applicationId: t
     } = e, n = (0, l.bG)([d.A], () => d.A.getApplication(t));
@@ -102,7 +102,7 @@ function w(e) {
         application: n
     }, n.id)
 }
-let k = s.memo(function(e) {
+let w = s.memo(function(e) {
         let {
             item: t,
             ackedBeforeId: l
@@ -151,7 +151,7 @@ let k = s.memo(function(e) {
         let p = null != t.local_id,
             g = (0, b.A)({
                 item: t,
-                renderApplication: e => (0, i.jsx)(w, {
+                renderApplication: e => (0, i.jsx)(k, {
                     applicationId: e
                 })
             }),
@@ -205,7 +205,7 @@ let k = s.memo(function(e) {
             items: t
         } = e, n = _.ns.useSetting();
         return (0, S.q)(t), (0, i.jsx)(i.Fragment, {
-            children: t.map(e => (0, i.jsx)(k, {
+            children: t.map(e => (0, i.jsx)(w, {
                 item: e,
                 ackedBeforeId: n
             }, e.id))

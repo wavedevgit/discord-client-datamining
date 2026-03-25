@@ -38,15 +38,15 @@ var i = n(627968),
     G = n(47294),
     U = n(594007),
     P = n(16961),
-    w = n(716730),
-    k = n(5867),
+    k = n(716730),
+    w = n(5867),
     V = n(652215),
     B = n(985018),
     H = n(907585);
 let F = D.DN.SIZE_32,
     K = {
-        [k.E8.NO_CHAT]: H.Oo,
-        [k.E8.RESIZABLE]: H.Ig
+        [w.E8.NO_CHAT]: H.Oo,
+        [w.E8.RESIZABLE]: H.Ig
     };
 
 function W(e) {
@@ -55,8 +55,8 @@ function W(e) {
         connectedLocation: n,
         renderExternalHeader: l
     } = e, W = (0, L.A)(), Y = (0, r.yK)([y.Ay], () => y.Ay.getEmbeddedActivitiesForLocation(n), [n]), z = (0, O.H)(n), q = (0, r.bG)([E.A], () => E.A.getChannel(z)), X = (0, j.IQ)(Y), J = (0, j.Rz)(X), Q = s.useCallback(() => {
-        (0, v.gk)(k.Gd.PIP)
-    }, []), $ = s.useRef(null), Z = (0, r.bG)([y.Ay], () => y.Ay.getFocusedLayout()), ee = Z !== k.E8.NO_CHAT, [et, en] = s.useState(g.Ay.activityPanelHeight ?? t ?? null), ei = s.useCallback(e => {
+        (0, v.gk)(w.Gd.PIP)
+    }, []), $ = s.useRef(null), Z = (0, r.bG)([y.Ay], () => y.Ay.getFocusedLayout()), ee = Z !== w.E8.NO_CHAT, [et, en] = s.useState(g.Ay.activityPanelHeight ?? t ?? null), ei = s.useCallback(e => {
         u.Ay.updatedUnsyncedSettings({
             activityPanelHeight: e
         })
@@ -74,14 +74,14 @@ function W(e) {
         });
         return e.observe(es.current), () => e.disconnect()
     }, []);
-    let er = el.width / Math.max(el.height, 1) < k.B5,
+    let er = el.width / Math.max(el.height, 1) < w.B5,
         eo = 0,
         ec = 0,
         ed = (0, R.A)(W?.id);
     if (!ed) {
         let e = el.width,
             t = el.height;
-        er ? ((t = el.width / k.B5) > el.height && (e = (t = el.height) * k.B5), ec = (el.height - t) / 2) : ((e = Math.min(el.height * k.B5)) > el.width && (t = (e = el.width) / k.B5), eo = (el.width - e) / 2)
+        er ? ((t = el.width / w.B5) > el.height && (e = (t = el.height) * w.B5), ec = (el.height - t) / 2) : ((e = Math.min(el.height * w.B5)) > el.width && (t = (e = el.width) / w.B5), eo = (el.width - e) / 2)
     }
     let eu = J.get(W?.id ?? ""),
         eh = (0, r.bG)([N.A], () => N.A.getChannelId()),
@@ -180,7 +180,7 @@ function W(e) {
                         className: H.Hq,
                         children: [(0, i.jsxs)("div", {
                             className: H.qi,
-                            children: [(0, i.jsx)(w.A, {
+                            children: [(0, i.jsx)(k.A, {
                                 channelId: eh
                             }), (0, i.jsx)(f.l, {
                                 isTrayButton: !0,
