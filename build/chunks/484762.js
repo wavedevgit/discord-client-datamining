@@ -34,8 +34,8 @@ var a = n(627968),
     R = n(528772),
     w = n(555528),
     D = n(157257),
-    P = n(532624),
-    M = n(242286),
+    M = n(532624),
+    P = n(242286),
     L = n(957565),
     U = n(405269),
     B = n(927813),
@@ -212,7 +212,7 @@ let et = i.memo(function(e) {
     en = i.memo(function(e) {
         let {
             pid: t
-        } = e, n = (0, c.cf)([M.default], () => M.default.getOverlayPIDStatuses()), i = (0, c.cf)([T.default], () => T.default.getTrackedGames()), s = (0, c.bG)([M.default], () => M.default.isInputLocked(t), [t]), l = (0, c.bG)([M.default], () => M.default.DEV_isInputLockedV3(t), [t]), r = (0, c.bG)([M.default], () => M.default.DEV_isInputLocked(t), [t]), o = (0, c.bG)([M.default], () => M.default.isReady(t), [t]);
+        } = e, n = (0, c.cf)([P.default], () => P.default.getOverlayPIDStatuses()), i = (0, c.cf)([T.default], () => T.default.getTrackedGames()), s = (0, c.bG)([P.default], () => P.default.isInputLocked(t), [t]), l = (0, c.bG)([P.default], () => P.default.DEV_isInputLockedV3(t), [t]), r = (0, c.bG)([P.default], () => P.default.DEV_isInputLocked(t), [t]), o = (0, c.bG)([P.default], () => P.default.isReady(t), [t]);
         return (0, a.jsxs)("div", {
             className: Y.st,
             children: [(0, a.jsx)(h.Text, {
@@ -428,8 +428,8 @@ let er = i.memo(function(e) {
             t = (0, V.getPID)(),
             n = (0, c.bG)([T.default], () => T.default.isOverlayOOPEnabledForPid(t), [t]),
             [i, s] = (0, c.yK)([R.A], () => [R.A.enabled, R.A.keepOpen]),
-            l = (0, c.bG)([M.default], () => M.default.getFocusedPID()),
-            r = (0, c.bG)([M.default], () => M.default.isFocusedPidOutOfProcess());
+            l = (0, c.bG)([P.default], () => P.default.getFocusedPID()),
+            r = (0, c.bG)([P.default], () => P.default.isFocusedPidOutOfProcess());
         return (0, a.jsxs)("div", {
             className: Y.st,
             children: [0 === Object.keys(e).length && (0, a.jsx)(h.Text, {
@@ -931,12 +931,12 @@ function ey() {
     }), [A, x, u, o, C]), [E, I] = i.useState(S), [O, R] = i.useState(null), w = i.useMemo(() => A.find(e => e.key === O), [A, O]), D = i.useCallback(e => {
         I(e)
     }, []), {
-        renderSelectedTab: P
+        renderSelectedTab: M
     } = (0, z.Ay)({
         tabs: eA
     }, []);
     (0, k.RT)(y, S, D, eC, [A]);
-    let M = i.useCallback(e => {
+    let P = i.useCallback(e => {
             r(e), g.A.setModuleLogging(e)
         }, []),
         [U, B] = i.useState(!1),
@@ -978,7 +978,7 @@ function ey() {
                     children: (0, a.jsx)(h.Checkbox, {
                         label: "Poll Native",
                         checked: s,
-                        onChange: e => M(e)
+                        onChange: e => P(e)
                     })
                 }), (0, a.jsx)("div", {
                     title: "Only show breadcrumbs for active games",
@@ -1048,7 +1048,7 @@ function ey() {
             className: l()(Y.st, Y.rf),
             minHeight: 100,
             initialHeight: null != t ? t / 3 : 300,
-            children: P({
+            children: M({
                 breadcrumb: w,
                 onClose: () => R(null)
             })
@@ -1120,7 +1120,7 @@ let eN = e => {
     eI = e => null == e ? "Disabled" : e ? "True" : "False",
     eO = i.memo(function() {
         let e = (0, y.wW)(),
-            t = (0, c.bG)([P.Ay], () => P.Ay.getOverlayKeybind());
+            t = (0, c.bG)([M.Ay], () => M.Ay.getOverlayKeybind());
         return (0, a.jsxs)("div", {
             className: Y.st,
             children: [(0, a.jsx)(h.Heading, {

@@ -1,70 +1,66 @@
 /** chunk id: 980545 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => p
 });
 var i = n(627968),
     s = n(64700),
-    l = n(503698),
-    a = n.n(l),
-    r = n(835245),
-    o = n(582754),
-    d = n(397927),
-    c = n(736653),
-    u = n(12901),
-    m = n(954571),
-    _ = n(341915),
-    g = n(590202),
-    x = n(545986),
-    A = n(652215),
-    h = n(985018),
-    p = n(608821),
-    f = n(641701);
+    l = n(835245),
+    a = n(582754),
+    r = n(397927),
+    o = n(736653),
+    d = n(12901),
+    c = n(954571),
+    u = n(341915),
+    m = n(590202),
+    _ = n(545986),
+    g = n(652215),
+    x = n(985018),
+    A = n(608821),
+    h = n(641701);
 
-function T(e) {
-    let {
-        inOldSettings: t = !1
-    } = e, n = (0, o.Mw)((0, c.Ay)()), l = s.useMemo(() => ({
-        backgroundImage: "url(https://cdn.discordapp.com/assets/discovery/quests-wumpus-hikes-mountain-transparent-background.png)"
-    }), []), T = s.useCallback(() => {
-        (0, u.default)(), (0, x.navigateToQuestHome)({
-            fromContent: _.uF.QUEST_HOME_MOVE_CALLOUT
-        }), m.default.track(A.HAw.QUEST_CONTENT_CLICKED, {
-            cta_name: g.Cy.VIEW_QUESTS,
-            click_id: (0, r.A)(),
-            is_targeted: !1,
-            ...(0, g.fF)(_.uF.QUEST_HOME_MOVE_CALLOUT)
-        })
-    }, []);
+function p() {
+    let e = (0, a.Mw)((0, o.Ay)()),
+        t = s.useMemo(() => ({
+            backgroundImage: "url(https://cdn.discordapp.com/assets/discovery/quests-wumpus-hikes-mountain-transparent-background.png)"
+        }), []),
+        n = s.useCallback(() => {
+            (0, d.default)(), (0, _.navigateToQuestHome)({
+                fromContent: u.uF.QUEST_HOME_MOVE_CALLOUT
+            }), c.default.track(g.HAw.QUEST_CONTENT_CLICKED, {
+                cta_name: m.Cy.VIEW_QUESTS,
+                click_id: (0, l.A)(),
+                is_targeted: !1,
+                ...(0, m.fF)(u.uF.QUEST_HOME_MOVE_CALLOUT)
+            })
+        }, []);
     return (0, i.jsx)("div", {
-        className: a()(p.kL, {
-            [p.Zd]: t
-        }),
-        style: l,
-        children: (0, i.jsxs)(d.BJc, {
-            className: p.FS,
+        className: A.kL,
+        style: t,
+        children: (0, i.jsxs)(r.BJc, {
+            className: A.FS,
             justify: "space-between",
-            children: [(0, i.jsxs)(d.BJc, {
+            children: [(0, i.jsxs)(r.BJc, {
                 gap: 4,
                 children: [(0, i.jsxs)("div", {
-                    className: p.N1,
+                    className: A.N1,
                     children: [(0, i.jsx)("img", {
                         alt: "",
-                        src: f,
-                        className: p.Kk
-                    }), (0, i.jsx)(d.Heading, {
+                        src: h,
+                        className: A.Kk
+                    }), (0, i.jsx)(r.Heading, {
                         variant: "heading-lg/bold",
                         color: "always-white",
-                        children: h.intl.string(h.t.z8YP2A)
+                        children: x.intl.string(x.t.z8YP2A)
                     })]
-                }), (0, i.jsx)(d.Text, {
+                }), (0, i.jsx)(r.Text, {
                     variant: "text-md/medium",
                     color: "text-subtle",
-                    children: h.intl.string(h.t.HdKh65)
+                    children: x.intl.string(x.t.HdKh65)
                 })]
-            }), (0, i.jsx)(d.Button, {
-                variant: n ? "primary" : "overlay-primary",
-                text: h.intl.string(h.t.GURBQl),
-                onClick: T
+            }), (0, i.jsx)(r.Button, {
+                variant: e ? "primary" : "overlay-primary",
+                text: x.intl.string(x.t.GURBQl),
+                onClick: n
             })]
         })
     })

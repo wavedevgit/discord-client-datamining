@@ -46,14 +46,14 @@ function w(e) {
     }) : null
 }
 let D = function() {
-    let [e, t] = i.useState(k.pe.TIER_2), [n, v] = i.useState(null), b = (0, r.yK)([N.A], () => N.A.getGuildsArray()), [D] = (0, r.yK)([I.A], () => [I.A.getPremiumSubscription()]), P = b.map(e => ({
+    let [e, t] = i.useState(k.pe.TIER_2), [n, v] = i.useState(null), b = (0, r.yK)([N.A], () => N.A.getGuildsArray()), [D] = (0, r.yK)([I.A], () => [I.A.getPremiumSubscription()]), M = b.map(e => ({
         id: e.id,
         value: e,
         label: e.name
-    })), [M, L] = i.useState(P.length > 0 ? P[0].value : null), [U, B] = i.useState(""), [G, F] = i.useState({
+    })), [P, L] = i.useState(M.length > 0 ? M[0].value : null), [U, B] = i.useState(""), [G, F] = i.useState({
         plan_id: k.gD.PREMIUM_MONTH_TIER_2,
         gift: "true"
-    }), V = "true" !== G.gift && null != D, [W, H] = i.useState(P.length > 0 ? P[0].value : null), {
+    }), V = "true" !== G.gift && null != D, [W, H] = i.useState(M.length > 0 ? M[0].value : null), {
         analyticsLocations: K
     } = (0, x.Ay)(h.A.PAYMENT_FLOW_TEST_PAGE), [z, $] = i.useState(""), [q, Q] = i.useState(O.dJq), {
         balance: Y,
@@ -144,13 +144,13 @@ let D = function() {
                     gap: 8,
                     children: [(0, a.jsx)(c.l6P, {
                         label: "Boost",
-                        value: M,
-                        options: P,
+                        value: P,
+                        options: M,
                         onSelectionChange: e => L(e),
                         selectionMode: "single",
                         fullWidth: !0
-                    }), null != M ? (0, a.jsx)(_.A, {
-                        guild: M,
+                    }), null != P ? (0, a.jsx)(_.A, {
+                        guild: P,
                         analyticsLocation: {}
                     }) : (0, a.jsx)("div", {
                         children: "No Guild to boost"
@@ -286,7 +286,7 @@ let D = function() {
                     children: [(0, a.jsx)(c.l6P, {
                         label: "Premium Server Subscription For",
                         value: W,
-                        options: P,
+                        options: M,
                         onSelectionChange: e => H(e),
                         selectionMode: "single",
                         fullWidth: !0

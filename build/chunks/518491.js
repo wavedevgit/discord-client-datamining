@@ -37,8 +37,8 @@ var s = n(503698),
     D = n(511484),
     G = n(939724),
     M = n(795269),
-    U = n(473702),
-    k = n(505559),
+    k = n(473702),
+    U = n(505559),
     w = n(722274),
     V = n(103733),
     B = n(229289),
@@ -87,7 +87,7 @@ let q = (e, t, s) => {
         }) : s ? O = (0, i.jsx)(w.A, {}) : o && (O = (0, i.jsx)(y.S, {}));
         let R = (0, r.bG)([A.A], () => A.A.getPremiumTypeSubscription()),
             M = null != R && R.status === z.Dmq.CANCELED && null != p,
-            k = (0, C.V)(),
+            U = (0, C.V)(),
             W = (0, b.O)(),
             Z = (0, D.U9)(W, H.pe.TIER_2) ? H.pe.TIER_2 : void 0,
             Q = null != R && R.status !== z.Dmq.ACCOUNT_HOLD && R.hasAnyPremiumNitro,
@@ -130,13 +130,13 @@ let q = (e, t, s) => {
                     children: [J && (0, i.jsx)(P.A, {
                         size: "md",
                         hasActivePromotion: !!n,
-                        subscriptionTier: k?.subscription_trial?.sku_id ?? Z
+                        subscriptionTier: U?.subscription_trial?.sku_id ?? Z
                     }), M && (0, i.jsx)(c.Button, {
                         variant: "expressive",
                         icon: c.tvc,
                         size: "md",
                         text: Y.intl.string(Y.t.zrCzVB),
-                        onClick: () => q(E, R, U.g.CONFIRM_DISCOUNT)
+                        onClick: () => q(E, R, k.g.CONFIRM_DISCOUNT)
                     }), (0, i.jsx)(L.A, {
                         variant: J || M ? "secondary" : "expressive",
                         size: "md",
@@ -200,7 +200,7 @@ let q = (e, t, s) => {
                             icon: c.tvc,
                             size: "md",
                             text: Y.intl.string(Y.t.zrCzVB),
-                            onClick: () => q(g, h, U.g.CONFIRM_DISCOUNT),
+                            onClick: () => q(g, h, k.g.CONFIRM_DISCOUNT),
                             fullWidth: !0
                         }), (0, i.jsx)(L.A, {
                             variant: "overlay-secondary",
@@ -319,7 +319,7 @@ let q = (e, t, s) => {
             isEligibleForBogoPromotion: A
         }) : b && (f = Y.intl.string(Y.t.qYKftX), C = (0, i.jsx)($, {}));
         let O = null;
-        if (N === H.xc.NONE || u) O = n ? (0, i.jsx)(k.A, {
+        if (N === H.xc.NONE || u) O = n ? (0, i.jsx)(U.A, {
             enablePremiumBrandRefresh: !0,
             text: f
         }) : (0, i.jsx)(M.ir, {
@@ -351,7 +351,7 @@ let q = (e, t, s) => {
                     className: X.V_,
                     children: (0, i.jsx)("div", {
                         className: X.eL,
-                        children: n ? (0, i.jsx)(k.A, {
+                        children: n ? (0, i.jsx)(U.A, {
                             enablePremiumBrandRefresh: !0,
                             text: y
                         }) : (0, i.jsx)(M.R, {

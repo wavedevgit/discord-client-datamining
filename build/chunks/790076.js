@@ -1,6 +1,6 @@
 /** chunk id: 790076 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => ek,
+    Ay: () => eU,
     DA: () => ef,
     F1: () => eO,
     G6: () => eh,
@@ -46,8 +46,8 @@ var i = n(627968),
     D = n(41984),
     G = n(589051),
     M = n(833551),
-    U = n(515183),
-    k = n(592598),
+    k = n(515183),
+    U = n(592598),
     w = n(395011),
     V = n(663677),
     B = n(682763),
@@ -94,7 +94,7 @@ function eT(e) {
         enabled: ei.default.enabled,
         notifications_enabled: n,
         notifications_position: n ? t : null,
-        text_notifications_mode: k.A.isNotificationDisabled(e_.KS.TextChat) ? "DISABLED" : "ENABLED",
+        text_notifications_mode: U.A.isNotificationDisabled(e_.KS.TextChat) ? "DISABLED" : "ENABLED",
         hotkey: null != i ? (0, eo.dI)(i.shortcut) : null,
         text_activation_hotkey: null != s ? (0, eo.dI)(s.shortcut) : null,
         text_opacity_slider: es.default.getTextWidgetOpacity(),
@@ -246,8 +246,8 @@ function ev() {
         },
         P = b && C,
         G = !v && !j,
-        U = !c && !v && m && !b,
-        k = !m && !j && c && !C,
+        k = !c && !v && m && !b,
+        U = !m && !j && c && !C,
         w = l?.overlayMethod === D.Ue.Disabled,
         B = l?.state === D.AR.OVERLAY_RENDERING && !w,
         F = l?.state != null && eb.has(l.state) && !w,
@@ -317,8 +317,8 @@ function ev() {
                     return [eg.intl.string(eg.t["9DUS5l"]), null];
                 case K:
                     return [eg.intl.string(eg.t.nQ9EdJ), null];
-                case U:
                 case k:
+                case U:
                     return [eg.intl.string(eg.t.VWUn0a), null];
                 case F:
                     if (H) return [eg.intl.string(eg.t["s8+CFq"]), null];
@@ -737,7 +737,7 @@ function eL(e) {
         usePredicate: () => {
             let {
                 showNowPlayingForDifferentGames: e
-            } = (0, G.M8)("OverlayV3NowPlayingDifferentGamesNotificationSetting"), t = (0, _.bG)([k.A], () => k.A.isNotificationDisabledBySetting(L.M.NOW_PLAYING));
+            } = (0, G.M8)("OverlayV3NowPlayingDifferentGamesNotificationSetting"), t = (0, _.bG)([U.A], () => U.A.isNotificationDisabledBySetting(L.M.NOW_PLAYING));
             return !!e && !t
         }
     }].filter(e => !1 !== e).filter(Boolean)
@@ -746,7 +746,7 @@ function eL(e) {
 function eP() {
     let {
         showNowPlayingForDifferentGames: e
-    } = (0, G.M8)("OverlayV3NowPlayingDifferentGamesNotificationSetting"), t = (0, _.bG)([k.A], () => k.A.getDisabledNotifications()), n = eL(e && !t.has(L.M.NOW_PLAYING));
+    } = (0, G.M8)("OverlayV3NowPlayingDifferentGamesNotificationSetting"), t = (0, _.bG)([U.A], () => U.A.getDisabledNotifications()), n = eL(e && !t.has(L.M.NOW_PLAYING));
     return (0, i.jsxs)("div", {
         className: ex.AO,
         children: [(0, i.jsx)(x.Heading, {
@@ -990,11 +990,11 @@ function eM() {
     })
 }
 
-function eU(e) {
+function ek(e) {
     let {
         runningGame: t,
         runningGameApplication: n
-    } = e, l = n?.id, a = (0, _.bG)([k.A], () => k.A.isLimitedInteractionOverrideEnabled(l), [l]), r = s.useMemo(() => null != t && (0, U.qJ)(t.pid), [t]), o = (0, _.bG)([es.default], () => es.default.disableClickableRegions);
+    } = e, l = n?.id, a = (0, _.bG)([U.A], () => U.A.isLimitedInteractionOverrideEnabled(l), [l]), r = s.useMemo(() => null != t && (0, k.qJ)(t.pid), [t]), o = (0, _.bG)([es.default], () => es.default.disableClickableRegions);
     return (0, i.jsxs)("div", {
         className: ex.U$,
         children: [(0, i.jsx)(eR, {
@@ -1040,7 +1040,7 @@ function eU(e) {
     })
 }
 
-function ek() {
+function eU() {
     let e, {
             runningGame: t,
             runningGameApplication: n
@@ -1057,7 +1057,7 @@ function ek() {
                 className: ex.Ri
             })]
         }), (0, i.jsxs)("div", {
-            children: [(0, i.jsx)(eU, {
+            children: [(0, i.jsx)(ek, {
                 runningGame: t,
                 runningGameApplication: n
             }), (0, i.jsx)("div", {

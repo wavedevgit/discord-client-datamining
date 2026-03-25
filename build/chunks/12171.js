@@ -1282,7 +1282,7 @@ let b = [{
     };
 
 function S() {
-    let [e, t] = i.useState("US"), [n, d] = i.useState(null), [c, m] = i.useState(null), [h, x] = i.useState(null), [g, S] = i.useState(null), [E, N] = i.useState("pm_card_us"), [O, k] = i.useState(!1), D = Object.values((0, s.bG)([p.A], () => p.A.paymentSources)), P = j[e], M = async () => {
+    let [e, t] = i.useState("US"), [n, d] = i.useState(null), [c, m] = i.useState(null), [h, x] = i.useState(null), [g, S] = i.useState(null), [E, N] = i.useState("pm_card_us"), [O, k] = i.useState(!1), D = Object.values((0, s.bG)([p.A], () => p.A.paymentSources)), M = j[e], P = async () => {
         let t = E;
         "" === t && (t = "pm_card_us"), await l.Bo.post({
             url: "/debug/payment-source",
@@ -1383,7 +1383,7 @@ function S() {
                     label: "Card Token",
                     hideLabel: !0,
                     value: E,
-                    options: P.map(e => {
+                    options: M.map(e => {
                         let {
                             value: t,
                             label: n
@@ -1400,7 +1400,7 @@ function S() {
                     variant: "primary",
                     size: "sm",
                     text: "Create Stripe Credit Card",
-                    onClick: M
+                    onClick: P
                 }), D.length > 0 && (0, a.jsx)(r.Button, {
                     variant: "primary",
                     size: "sm",

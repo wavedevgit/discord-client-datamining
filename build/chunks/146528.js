@@ -36,7 +36,7 @@ var i = n(627968),
     D = n(355097),
     G = n(985018),
     M = n(185814);
-let U = e => {
+let k = e => {
         let {
             label: t,
             value: n,
@@ -66,7 +66,7 @@ let U = e => {
             })]
         })
     },
-    k = e => {
+    U = e => {
         let {
             subscription: t
         } = e, {
@@ -224,15 +224,15 @@ let U = e => {
                     className: M.kE
                 }), (0, i.jsxs)("div", {
                     className: M.Zx,
-                    children: [(0, i.jsx)(U, {
+                    children: [(0, i.jsx)(k, {
                         label: q,
                         value: Z
-                    }), (0, i.jsx)(U, {
+                    }), (0, i.jsx)(k, {
                         label: G.intl.string(G.t.dltUMH),
                         value: K,
                         showInfoIcon: Q,
                         infoIconTooltipText: Q ? G.intl.string(G.t["/q6fpa"]) : void 0
-                    }), (0, i.jsx)(U, {
+                    }), (0, i.jsx)(k, {
                         label: G.intl.string(G.t.AOcwWB),
                         value: W
                     })]
@@ -240,7 +240,7 @@ let U = e => {
                     size: 16
                 }), !Y && !H && (0, i.jsx)(c.D0$, {
                     label: G.intl.string(G.t.wmMFvA),
-                    children: (0, i.jsx)(k, {
+                    children: (0, i.jsx)(U, {
                         subscription: t
                     })
                 }), !J && (0, i.jsx)(w, {

@@ -34,8 +34,8 @@ var a = n(627968),
     R = n(927813),
     w = n(350246);
 let D = ["png", "gif", "webp"],
-    P = [...D, "jpg", "jpeg"],
-    M = Array.from(new Set([...P, "gif", "mp4", "webm"]));
+    M = [...D, "jpg", "jpeg"],
+    P = Array.from(new Set([...M, "gif", "mp4", "webm"]));
 
 function L() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
@@ -379,31 +379,31 @@ function G() {
                 title: "Hero",
                 assetKey: "hero",
                 onFileChange: $,
-                filters: M,
+                filters: P,
                 initialValue: t.config.assets.hero
             }), (0, a.jsx)(T.A, {
                 title: "Hero Video (optional)",
                 assetKey: "heroVideo",
                 onFileChange: $,
-                filters: M,
+                filters: P,
                 initialValue: t.config.assets.heroVideo ?? void 0
             }), (0, a.jsx)(T.A, {
                 title: "Quest Bar Hero",
                 assetKey: "questBarHero",
                 onFileChange: $,
-                filters: M,
+                filters: P,
                 initialValue: t.config.assets.questBarHero
             }), (0, a.jsx)(T.A, {
                 title: "Quest Bar Hero Video (optional)",
                 assetKey: "questBarHeroVideo",
                 onFileChange: $,
-                filters: M,
+                filters: P,
                 initialValue: t.config.assets.questBarHeroVideo ?? void 0
             }), (0, a.jsx)(T.A, {
                 title: "Game Tile",
                 assetKey: "gameTile",
                 onFileChange: $,
-                filters: [...P, "svg"],
+                filters: [...M, "svg"],
                 initialValue: t.config.assets.gameTile
             }), (0, a.jsx)(T.A, {
                 title: "Logotype",
@@ -416,19 +416,19 @@ function G() {
                     title: "Quest Video",
                     assetKey: "videoPlayerVideo",
                     onFileChange: q,
-                    filters: M,
+                    filters: P,
                     initialValue: et?.assets.video.url
                 }), (0, a.jsx)(T.A, {
                     title: "Quest Video (Low Resolution)",
                     assetKey: "videoPlayerVideoLowRes",
                     onFileChange: q,
-                    filters: M,
+                    filters: P,
                     initialValue: et?.assets.videoLowRes?.url
                 }), (0, a.jsx)(T.A, {
                     title: "Video Player Thumbnail (optional)",
                     assetKey: "videoPlayerThumbnail",
                     onFileChange: q,
-                    filters: P,
+                    filters: M,
                     initialValue: et?.assets.video.thumbnail
                 })]
             })]
@@ -473,7 +473,7 @@ function G() {
                             })
                         }
                     })(e, a, n),
-                    filters: M,
+                    filters: P,
                     initialValue: e.asset
                 }), (0, a.jsxs)(m.BJc, {
                     direction: "vertical",

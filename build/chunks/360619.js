@@ -1,23 +1,14 @@
 /** chunk id: 360619 params = (module,exports,require) **/
 n.d(t, {
-    P: () => d
+    P: () => l
 });
 var a = n(64700),
-    i = n(86379),
-    s = n(35587),
-    l = n(971276),
-    r = n(368631),
-    o = n(682262);
+    i = n(368631),
+    s = n(682262);
 
-function d() {
-    let e = (0, s.IO)().length,
-        t = (0, o.b_)(),
-        n = (0, i.Hp)(),
-        d = (0, l.s)();
-    return a.useMemo(() => (0, r.z)({
-        unseenGiftCount: e,
-        isOverlaySupported: t,
-        paymentsBlocked: n,
-        isEligibleForQuests: d
-    }), [d, t, n, e])
+function l() {
+    let e = (0, s.b_)();
+    return a.useMemo(() => (0, i.z)({
+        isOverlaySupported: e
+    }), [e])
 }

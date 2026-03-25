@@ -128,8 +128,8 @@ let R = function(e) {
             appliedGuildBoostSlots: D,
             unappliedGuildBoostSlots: G,
             numActiveGuildBoostSlots: M,
-            hasCooldownBoosts: U,
-            allGuildBoostsAreOnCooldown: k
+            hasCooldownBoosts: k,
+            allGuildBoostsAreOnCooldown: U
         } = s.useMemo(() => {
             let e = [],
                 t = [],
@@ -162,9 +162,9 @@ let R = function(e) {
         Y = s.useMemo(() => G.find(e => e.isAvailable()), [G]);
     if (0 === G.length) return null;
     let X = G.length;
-    if (t = F ? N.intl.formatToPlainString(k ? N.t["3DW6Dc"] : N.t["/u15Qc"], {
+    if (t = F ? N.intl.formatToPlainString(U ? N.t["3DW6Dc"] : N.t["/u15Qc"], {
             numUnappliedGuildBoostSlots: X
-        }) : N.intl.formatToPlainString(k ? N.t["3DW6Dc"] : N.t.BPadnO, {
+        }) : N.intl.formatToPlainString(U ? N.t["3DW6Dc"] : N.t.BPadnO, {
             numUnappliedGuildBoostSlots: X
         }), T.Ay.isPremium(R)) {
         let e = (e, t) => (0, i.jsx)(c.DUT, {
@@ -175,13 +175,13 @@ let R = function(e) {
             },
             children: e
         }, t);
-        n = k ? N.intl.format(N.t.omcpSE, {
+        n = U ? N.intl.format(N.t.omcpSE, {
             learnMoreHook: e
         }) : N.intl.format(N.t["5mAkVi"], {
             numUnappliedGuildBoostSlots: X,
             learnMoreHook: e
         })
-    } else n = k ? N.intl.string(N.t["8pcUZi"]) : N.intl.formatToPlainString(N.t.Kaw82o, {
+    } else n = U ? N.intl.string(N.t["8pcUZi"]) : N.intl.formatToPlainString(N.t.Kaw82o, {
         numUnappliedGuildBoostSlots: X
     });
     return l = x && E === v.xc.NONE ? N.intl.string(N.t.mOWsF1) : N.intl.string(N.t.xr4m5B), (0, i.jsx)("div", {
@@ -229,7 +229,7 @@ let R = function(e) {
                         })
                     })
                 })]
-            }), (!F || U) && (0, i.jsx)("ul", {
+            }), (!F || k) && (0, i.jsx)("ul", {
                 className: I.LU,
                 children: G.map(e => (0, i.jsx)(j, {
                     guildBoostSlot: e,

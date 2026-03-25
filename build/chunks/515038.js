@@ -38,7 +38,7 @@ function N(e) {
         isVisibleInViewport: k,
         onReceiveErrorHints: R,
         sourceQuestContent: w
-    } = e, D = i.useRef(null), P = (0, _.mq)(t.config), M = (0, _.mH)(t.config), L = t.userStatus?.enrolledAt != null, {
+    } = e, D = i.useRef(null), M = (0, _.mq)(t.config), P = (0, _.mH)(t.config), L = t.userStatus?.enrolledAt != null, {
         ref: U,
         scrollHeight: B
     } = (0, c.wR)(), G = 104 !== B, {
@@ -65,7 +65,7 @@ function N(e) {
         }, t.id)
     }) : H ? (0, a.jsx)(I, {
         questId: t.id,
-        children: P
+        children: M
     }) : K ? T.intl.format(T.t.ro1sze, {
         balanceHook: () => (0, a.jsxs)(I, {
             questId: t.id,
@@ -78,9 +78,9 @@ function N(e) {
     }) : T.intl.format(T.t["0IUT4Y"], {
         rewardWithArticleHook: () => (0, a.jsx)(I, {
             questId: t.id,
-            children: M
+            children: P
         }, t.id)
-    }), [P, H, M, t.id, z, K]), J = i.useMemo(() => {
+    }), [M, H, P, t.id, z, K]), J = i.useMemo(() => {
         if (null != Q) return (0, a.jsx)(d.Text, {
             variant: "text-sm/medium",
             color: "text-muted",

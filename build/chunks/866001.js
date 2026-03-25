@@ -1,6 +1,6 @@
 /** chunk id: 866001 params = (module,exports,require) **/
 n.d(t, {
-    A: () => M
+    A: () => P
 }), n(172879);
 var a = n(627968),
     i = n(64700),
@@ -218,7 +218,7 @@ let D = [{
             return c()(t.createdAt).format("HH:mm:ss.SSS")
         }
     }],
-    P = {
+    M = {
         searchType: g.n.REGEX,
         searchStringGenerator: e => {
             let {
@@ -229,7 +229,7 @@ let D = [{
         throttleMs: 100
     };
 
-function M() {
+function P() {
     let e = i.useRef(null),
         [t, n] = i.useState(""),
         s = function(e) {
@@ -254,7 +254,7 @@ function M() {
         j = i.useCallback(e => {
             p(e)
         }, []);
-    (0, _.RT)(t, g ? d : r, j, P);
+    (0, _.RT)(t, g ? d : r, j, M);
     let A = i.useCallback(e => {
             c(r), f(e)
         }, [r]),

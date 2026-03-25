@@ -38,7 +38,7 @@ var i = n(627968),
     G = n(976744),
     M = n(896498);
 
-function U() {
+function k() {
     let e = s.useCallback(() => {
         (0, u.mMO)(async () => {
             let {
@@ -62,7 +62,7 @@ function U() {
     })
 }
 
-function k(e) {
+function U(e) {
     let {
         displayType: t
     } = e, n = s.useCallback(() => {
@@ -247,7 +247,7 @@ let B = () => {
             className: G.kL,
             children: [(0, i.jsxs)("div", {
                 className: G.vF,
-                children: [(0, i.jsx)(w, {}), (0, i.jsx)(U, {})]
+                children: [(0, i.jsx)(w, {}), (0, i.jsx)(k, {})]
             }), (0, i.jsxs)("div", {
                 className: M.a,
                 children: [(0, i.jsx)("div", {
@@ -270,7 +270,7 @@ let B = () => {
                         className: G.RJ,
                         children: [(0, i.jsx)(O.A, {}), t ? e.map(e => {
                             let [t] = e;
-                            return (0, i.jsx)(k, {
+                            return (0, i.jsx)(U, {
                                 displayType: t
                             }, `${t}-list`)
                         }) : (0, i.jsx)(y.A, {

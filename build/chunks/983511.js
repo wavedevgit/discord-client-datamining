@@ -122,21 +122,21 @@ function D(e) {
         }
     }), {
         analyticsLocations: M
-    } = (0, _.Ay)(), [U] = (0, A.Kq)({
+    } = (0, _.Ay)(), [k] = (0, A.Kq)({
         subscriptionId: t.id,
         renewal: !0,
         currency: t.currency,
         paymentSourceId: t.paymentSourceId,
         analyticsLocations: M,
         analyticsLocation: m.A.GUILD_BOOST_SLOT_CANCELLATION_MODAL_CURRENT_INVOICE_PREVIEW
-    }), k = null != G ? (0, v.Om)(t, C[0]?.quantity ?? 0, G.id) : null, [w] = (0, A.Kq)({
+    }), U = null != G ? (0, v.Om)(t, C[0]?.quantity ?? 0, G.id) : null, [w] = (0, A.Kq)({
         subscriptionId: t.id,
-        items: k,
+        items: U,
         renewal: !0,
         analyticsLocations: M,
         analyticsLocation: m.A.GUILD_BOOST_SLOT_CANCELLATION_MODAL_RENEWAL_INVOICE_PREVIEW
     });
-    if (null == w || null == D || null == G || null == U) return (0, i.jsx)(d.y$y, {});
+    if (null == w || null == D || null == G || null == k) return (0, i.jsx)(d.y$y, {});
     let V = t.items.some(e => {
             let {
                 planId: t
@@ -154,7 +154,7 @@ function D(e) {
             } = e;
             return j.pW.has(t)
         }),
-        F = V || B ? w.total - U.total : -U.total,
+        F = V || B ? w.total - k.total : -k.total,
         {
             interval: H,
             intervalCount: z
@@ -189,7 +189,7 @@ function D(e) {
                     }),
                     value: (0, N.CE)((0, N.$g)(F, t.currency), H, z),
                     className: R.Au
-                }), null != k && k.length > 0 ? (0, i.jsxs)("div", {
+                }), null != U && U.length > 0 ? (0, i.jsxs)("div", {
                     children: [(0, i.jsx)(p.pK, {}), (0, i.jsx)(T.m0, {
                         premiumSubscription: t,
                         renewalInvoice: w,

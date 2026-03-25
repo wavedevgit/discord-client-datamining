@@ -39,10 +39,10 @@ function y(e) {
         currentInvoicePreview: R,
         disabled: L = !1
     } = e, P = (0, d.bG)([p.A], () => p.A.hidePersonalInformation), [D, G] = (0, d.yK)([f.A], () => [f.A.paymentSources, f.A.hasFetchedPaymentSources]), M = (0, h.Y)((0, b.MP)(t)), {
-        analyticsLocations: U
-    } = (0, A.Ay)(), k = s.useMemo(() => Object.values(D).filter(e => !e.invalid), [D]), [w, V] = s.useState(!1), [B, F] = s.useState(t.currency), H = async (e, n, i) => {
+        analyticsLocations: k
+    } = (0, A.Ay)(), U = s.useMemo(() => Object.values(D).filter(e => !e.invalid), [D]), [w, V] = s.useState(!1), [B, F] = s.useState(t.currency), H = async (e, n, i) => {
         if (null == t) throw Error("missing subscription and paymentSource");
-        null == e ? await m.r6(t, n, i, U, y) : await m.uK(t, e, n, i, U, y), V(!1), F(n)
+        null == e ? await m.r6(t, n, i, k, y) : await m.uK(t, e, n, i, k, y), V(!1), F(n)
     }, z = async (e, n, i) => {
         V(!0);
         let s = await (0, C.OQ)({
@@ -50,7 +50,7 @@ function y(e) {
                 paymentSourceId: e?.id,
                 renewal: !0,
                 currency: n,
-                analyticsLocations: U,
+                analyticsLocations: k,
                 analyticsLocation: y
             }),
             l = {
@@ -97,7 +97,7 @@ function y(e) {
         })
     }
     if (!G || !M) return (0, i.jsx)(c.y$y, {});
-    if (!(k.length > 0)) return (0, i.jsx)(c.Button, {
+    if (!(U.length > 0)) return (0, i.jsx)(c.Button, {
         fullWidth: !0,
         variant: l ? "primary" : "secondary",
         onClick: K,
@@ -114,7 +114,7 @@ function y(e) {
                     value: null
                 } : null,
                 className: r,
-                paymentSources: k,
+                paymentSources: U,
                 hidePersonalInformation: P,
                 selectedPaymentSourceId: e,
                 onChange: e => {

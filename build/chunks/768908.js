@@ -93,9 +93,9 @@ function M(e) {
     } = (0, r.cf)([g.Ay], () => ({
         canToggleDetection: null == b || g.Ay.isDetectionEnabled(b),
         isCurrentGameDetectionEnabled: g.Ay.isDetectionEnabled(C)
-    })), L = (0, r.bG)([g.Ay], () => g.Ay.getVisibleGame()), [P, G] = s.useState(!1), U = s.useMemo(() => (0, p.n1)(C) ? E ? C.gameName : j.intl.formatToPlainString(j.t.G6BGdx, {
+    })), L = (0, r.bG)([g.Ay], () => g.Ay.getVisibleGame()), [P, G] = s.useState(!1), k = s.useMemo(() => (0, p.n1)(C) ? E ? C.gameName : j.intl.formatToPlainString(j.t.G6BGdx, {
         subgameName: C.gameName
-    }) : C.name, [C, E]), [k, w] = s.useState(U ?? "???"), V = a()(R.tR, {
+    }) : C.name, [C, E]), [U, w] = s.useState(k ?? "???"), V = a()(R.tR, {
         [y.LO]: !l,
         [y.Rw]: l,
         [y.FB]: null != C && l,
@@ -111,10 +111,10 @@ function M(e) {
             return t => (0, i.jsx)(e, {
                 ...t,
                 title: j.intl.formatToPlainString(j.t.PZ4fKc, {
-                    platform: U
+                    platform: k
                 }),
                 subtitle: j.intl.formatToPlainString(j.t.ZIQbfb, {
-                    platform: U
+                    platform: k
                 }),
                 actions: [{
                     text: j.intl.string(j.t["ETE/oC"]),
@@ -141,7 +141,7 @@ function M(e) {
                     className: y.HS,
                     children: [(0, i.jsx)("div", {
                         className: y.mO,
-                        children: U
+                        children: k
                     }), (0, i.jsx)(d.m_, {
                         text: j.intl.string(j.t["4PJP5p"]),
                         children: (0, i.jsx)(A.A, {
@@ -160,9 +160,9 @@ function M(e) {
                     className: a()(y.mO, y.sr),
                     type: "text",
                     maxLength: 128,
-                    value: k,
+                    value: U,
                     onBlur: function() {
-                        C.name !== k && u.A.editName(C, k)
+                        C.name !== U && u.A.editName(C, U)
                     },
                     onKeyDown: function(e) {
                         e.key === I.dh.ENTER && (e.currentTarget.blur(), e.preventDefault())
@@ -305,7 +305,7 @@ function M(e) {
     })
 }
 
-function U() {
+function k() {
     return (0, i.jsx)("div", {
         className: a()(R.tR, y.eS, y.Rw),
         children: (0, i.jsxs)("div", {
@@ -321,7 +321,7 @@ function U() {
     })
 }
 
-function k(e) {
+function U(e) {
     let {
         children: t
     } = e;
@@ -355,7 +355,7 @@ let w = (0, E.L_)(function() {
             isOverride: n.has(t.exePath),
             nowPlaying: !0,
             subgames: t.id === h.a7 ? l : void 0
-        }, (0, g.Es)(t)) : (0, i.jsx)(U, {})
+        }, (0, g.Es)(t)) : (0, i.jsx)(k, {})
     },
     B = () => {
         let e = s.useRef(null);
@@ -397,7 +397,7 @@ let w = (0, E.L_)(function() {
             gameHistory: [],
             robloxSubgameHistory: []
         }), [n]);
-        return 0 === a.length ? (0, i.jsx)(k, {
+        return 0 === a.length ? (0, i.jsx)(U, {
             children: (0, i.jsx)(c.SGT, {
                 children: j.intl.string(j.t["1yiJwn"])
             })

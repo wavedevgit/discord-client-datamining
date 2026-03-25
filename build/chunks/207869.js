@@ -1,6 +1,6 @@
 /** chunk id: 207869 params = (module,exports,require) **/
 n.d(t, {
-    f: () => P
+    f: () => M
 });
 var a = n(627968),
     i = n(64700),
@@ -199,7 +199,7 @@ let I = e => {
         })
     };
 
-function P(e) {
+function M(e) {
     let t = i.useRef(null);
     return (0, a.jsxs)("div", {
         className: E.oG,

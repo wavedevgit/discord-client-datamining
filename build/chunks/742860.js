@@ -34,8 +34,8 @@ var a = n(627968),
     R = n(646764),
     w = n(398025),
     D = n(545986),
-    P = n(139384),
-    M = n(568329),
+    M = n(139384),
+    P = n(568329),
     L = n(207869),
     U = n(158265),
     B = n(933378),
@@ -61,7 +61,7 @@ let Y = i.forwardRef(function(e, t) {
     } = i.useContext(F.T), u = (0, d.bG)([m.A], () => m.A.useReducedMotion), x = i.useRef(null);
     return i.useEffect(() => {
         null != x.current && (c && (!u || n) ? (x.current.currentTime = 0, x.current.play()) : x.current.pause())
-    }, [x, c, n, u]), (0, P.A)(x, z.rE.QUESTS_BAR), (0, a.jsx)(h.A, {
+    }, [x, c, n, u]), (0, M.A)(x, z.rE.QUESTS_BAR), (0, a.jsx)(h.A, {
         ref: e => {
             x.current = e, null != t && ("function" == typeof t ? t(e) : t.current = e)
         },
@@ -152,9 +152,9 @@ function Z(e) {
         taskDetails: h
     } = i.useContext(F.T), {
         expansionSpring: p
-    } = i.useContext(M.PW), f = i.useRef(null), S = (0, d.bG)([g.A], () => g.A.isEnrolling(o.id), [o]), E = i.useMemo(() => (0, C.tW)(o, C.fY.QUEST_BAR_HERO), [o]), N = (0, j.NA)({
+    } = i.useContext(P.PW), f = i.useRef(null), S = (0, d.bG)([g.A], () => g.A.isEnrolling(o.id), [o]), E = i.useMemo(() => (0, C.tW)(o, C.fY.QUEST_BAR_HERO), [o]), N = (0, j.NA)({
         quest: o
-    }), R = i.useMemo(() => (0, C.tW)(o, C.fY.HERO_IMAGE), [o]), P = i.useMemo(() => null == R ? {} : {
+    }), R = i.useMemo(() => (0, C.tW)(o, C.fY.HERO_IMAGE), [o]), M = i.useMemo(() => null == R ? {} : {
         backgroundImage: `url(${R.url})`
     }, [R]), L = b.t.useConfig({
         location: z.rE.QUESTS_BAR
@@ -237,7 +237,7 @@ function Z(e) {
             },
             children: (0, a.jsx)("div", {
                 className: l()(Q.LC, Q.Ge),
-                style: P
+                style: M
             })
         }), (0, a.jsxs)(r.animated.div, {
             className: Q.IC,
@@ -277,7 +277,7 @@ function ee(e) {
         taskDetails: d
     } = i.useContext(F.T), {
         expansionSpring: c
-    } = i.useContext(M.PW), u = s.userStatus?.completedAt != null, m = d.percentComplete > 0, h = (0, A.Vn)(s), [x, p, g] = (0, A.Qo)(s, d), f = i.useRef(null), v = i.useRef(null), b = (0, A.RR)({
+    } = i.useContext(P.PW), u = s.userStatus?.completedAt != null, m = d.percentComplete > 0, h = (0, A.Vn)(s), [x, p, g] = (0, A.Qo)(s, d), f = i.useRef(null), v = i.useRef(null), b = (0, A.RR)({
         quest: s
     }), j = (0, E.vv)(s), C = (0, A.I3)(s), T = i.useCallback(() => {
         (0, D.d5)({
@@ -374,7 +374,7 @@ let en = i.forwardRef(function(e, t) {
         quest: m
     } = i.useContext(F.T), {
         expansionSpring: h
-    } = i.useContext(M.PW), {
+    } = i.useContext(P.PW), {
         launchInGameActivity: x
     } = (0, A.zW)(m), p = (0, N.vA)(m), g = i.useCallback(async () => {
         let e = p ? y.Cy.START_QUEST : y.Cy.ACCEPT_QUEST;

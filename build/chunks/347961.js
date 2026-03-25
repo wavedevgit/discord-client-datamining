@@ -31,31 +31,22 @@ function T(e) {
             device: n,
             certifiedDeviceMetadata: T,
             onClose: U,
-            transitionState: f
+            transitionState: p
         } = e,
-        [p, E] = (0, i.useState)(null != n ? m(n.type) : null),
-        [D, P] = (0, i.useState)(!1),
-        _ = (0, i.useRef)(!1);
+        [f, E] = (0, i.useState)(null != n ? m(n.type) : null),
+        D = (0, i.useRef)(!1);
 
-    function y() {
-        _.current = !0, c.mk(n.displayName), D && v()
-    }
-
-    function v() {
-        c.BG(n.displayName), u.default.track(o.HAw.MODAL_DISMISSED, {
-            type: null != T ? "New Audio Device Detected - Certified" : "New Audio Device Detected - Not Certified",
-            location_object: n.displayName,
-            dismiss_type: "permanent"
-        })
+    function P() {
+        D.current = !0, c.mk(n.displayName)
     }(0, d.l0)(() => {
-        _.current || y()
+        D.current || P()
     }), (0, i.useEffect)(() => {
         u.default.track(o.HAw.OPEN_MODAL, {
             type: null != T ? "New Audio Device Detected - Certified" : "New Audio Device Detected - Not Certified",
             device_name: null != T ? `${T.vendor.name} ${T.model.name}` : n.displayName
         })
     }, [n.displayName, T]);
-    let I = null != T ? N.intl.string(N.t.kiqvHd) : N.intl.string(N.t.AbnGI5);
+    let _ = null != T ? N.intl.string(N.t.kiqvHd) : N.intl.string(N.t.AbnGI5);
     switch (n.type) {
         case s.E.INPUT:
             t = null != T ? N.intl.format(N.t.NqNqy2, {
@@ -82,30 +73,35 @@ function T(e) {
             })
     }
     return (0, a.jsx)(l.aFV, {
-        title: I,
+        title: _,
         subtitle: t,
         actions: [{
             text: N.intl.string(N.t.vPBgq7),
             variant: "secondary",
             onClick: () => {
-                y(), U()
+                P(), U()
             }
         }, {
             text: N.intl.string(N.t.ydkoDT),
             variant: "primary",
             onClick: () => {
-                _.current = !0, null != p && (c.TO(n.displayName, p, "New Audio Device Detected Modal"), D && v()), U()
+                D.current = !0, null != f && c.TO(n.displayName, f, "New Audio Device Detected Modal"), U()
             }
         }],
-        actionBarInput: (0, a.jsx)(l.eCc, {
-            checked: D,
-            label: N.intl.format(N.t.cwS3E6, {
+        actionBarInput: (0, a.jsx)(l.QWc, {
+            text: N.intl.format(N.t.cwS3E6, {
                 device: n.displayName
             }),
-            onChange: e => P(e)
+            onClick: () => {
+                D.current = !0, c.BG(n.displayName), u.default.track(o.HAw.MODAL_DISMISSED, {
+                    type: null != T ? "New Audio Device Detected - Certified" : "New Audio Device Detected - Not Certified",
+                    location_object: n.displayName,
+                    dismiss_type: "permanent"
+                }), U()
+            }
         }),
         onClose: U,
-        transitionState: f,
+        transitionState: p,
         children: n.type === s.E.INPUT_AND_OUTPUT && (0, a.jsx)(r.z6M, {
             value: function(e) {
                 if (null == e) return null;
@@ -119,7 +115,7 @@ function T(e) {
                     default:
                         return null
                 }
-            }(p),
+            }(f),
             onChange: e => E(m(e)),
             options: [{
                 name: N.intl.string(N.t.vhxqwT),

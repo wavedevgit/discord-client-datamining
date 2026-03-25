@@ -55,7 +55,7 @@ let E = function(e) {
         onComplete: j,
         dismissable: E,
         classificationId: N
-    } = e, [I, O] = i.useState(r.M.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), k = i.useRef(I), [R, w] = (0, d.kn)([I], void 0, !0), D = i.useMemo(() => (0, s.A)(), []), P = i.useRef(!1), M = (0, m.W$)();
+    } = e, [I, O] = i.useState(r.M.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), k = i.useRef(I), [R, w] = (0, d.kn)([I], void 0, !0), D = i.useMemo(() => (0, s.A)(), []), M = i.useRef(!1), P = (0, m.W$)();
     i.useEffect(() => {
         k.current = R
     }, [R]);
@@ -72,9 +72,9 @@ let E = function(e) {
         classificationId: N
     });
     return i.useLayoutEffect(() => () => {
-        if (P.current) return;
+        if (M.current) return;
         let e = k.current;
-        null != e && (P.current = !0, h.A.maybeOpenAgeVerificationUserFeedback({
+        null != e && (M.current = !0, h.A.maybeOpenAgeVerificationUserFeedback({
             location: "age_verification_get_started_modal",
             visibleContent: e
         }))
@@ -92,7 +92,7 @@ let E = function(e) {
         title: (0, f.ST)(n),
         subtitle: (0, f.mK)(n, () => {
             p.A.openUrl(x.A.getArticleURL(b.MVz.TIGGER_PAWTECT_LEARN_MORE)), (0, g.St)(D, g.WU.EXPRESSIVE_PRIMARY, g._7.LEARN_MORE)
-        }, M),
+        }, P),
         actionBarInput: (0, a.jsx)(S, {
             modalSessionId: D,
             entryPoint: n
