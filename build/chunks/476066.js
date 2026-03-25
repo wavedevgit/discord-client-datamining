@@ -85,14 +85,14 @@ let y = {
             initialTimeSec: M,
             onError: eq,
             onHlsInstance: Z
-        }), [eJ, eZ] = l.useState(!1), [e0, e1] = l.useState(null), e6 = O ?? e$.current?.duration ?? 0, [e7, e2] = l.useState(u.oA.MD), e9 = {
+        }), [eJ, eZ] = l.useState(!1), [e0, e1] = l.useState(null), e6 = O ?? e$.current?.duration ?? 0, [e7, e2] = l.useState(u.oA.MD), e4 = {
             [u.oA.MD]: 50,
             [u.oA.LG]: 58
         };
         (0, d.u5)(() => {
             eH.current && (eH.current = !1)
         });
-        let e4 = l.useCallback(function(e) {
+        let e9 = l.useCallback(function(e) {
             let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
             if (eo(e), B?.(e, t), null != e$.current) switch (e) {
                 case u.Q6.PLAYING:
@@ -111,9 +111,9 @@ let y = {
                 n = er && !en;
             if ((e || t || n) && null != e$.current && ea === u.Q6.PLAYING) {
                 let n = e || t ? "visibility" : "focus";
-                eW(n), e4(u.Q6.PAUSED, n)
+                eW(n), e9(u.Q6.PAUSED, n)
             }
-        }, [s, en, er, el, es, ea, e4]), l.useEffect(() => {
+        }, [s, en, er, el, es, ea, e9]), l.useEffect(() => {
             er && W?.(en, ea)
         }, [en, er, ea, W]), l.useEffect(() => {
             es && q?.(el, ea)
@@ -145,12 +145,12 @@ let y = {
                 null == e || (0, f._U)(e) || (e.removeEventListener(f.Wb, tl), eG(!1), F?.(!1), e2(u.oA.MD))
             }, [F]),
             ts = () => {
-                null == e$.current || (ta(Math.max(e$.current.currentTime - 10, 0)), ea === u.Q6.ENDED && e4(u.Q6.PAUSED, "seek"))
+                null == e$.current || (ta(Math.max(e$.current.currentTime - 10, 0)), ea === u.Q6.ENDED && e9(u.Q6.PAUSED, "seek"))
             },
             ti = () => {
                 if (null == e$.current || P) return;
                 let e = Math.min(e$.current.currentTime + 10, e6);
-                ta(e), ea !== u.Q6.ENDED && e >= e$.current.duration && e4(u.Q6.ENDED, "seek")
+                ta(e), ea !== u.Q6.ENDED && e >= e$.current.duration && e9(u.Q6.ENDED, "seek")
             };
         l.useEffect(() => {
             let e = e$.current;
@@ -168,13 +168,13 @@ let y = {
             to = () => {
                 if (null != e$.current) switch (ea) {
                     case u.Q6.ENDED:
-                        ta(0), e4(u.Q6.PLAYING, "user");
+                        ta(0), e9(u.Q6.PLAYING, "user");
                         break;
                     case u.Q6.PLAYING:
-                        eW("user"), e4(u.Q6.PAUSED, "user");
+                        eW("user"), e9(u.Q6.PAUSED, "user");
                         break;
                     default:
-                        e4(u.Q6.PLAYING, "user")
+                        e9(u.Q6.PLAYING, "user")
                 }
             },
             tu = e => {
@@ -205,7 +205,7 @@ let y = {
                     let e = null != eM.current ? performance.now() - eM.current : null;
                     z?.(e), e_(!1)
                 }
-                e4(u.Q6.PLAYING, "buffering_recovery")
+                e9(u.Q6.PLAYING, "buffering_recovery")
             }
         };
         l.useEffect(() => {
@@ -250,8 +250,8 @@ let y = {
         let tx = ea === u.Q6.ENDED,
             tg = l.useCallback(function() {
                 let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "user";
-                null != e$.current && (ta(0), e4(u.Q6.PLAYING, e))
-            }, [ta, e4]);
+                null != e$.current && (ta(0), e9(u.Q6.PLAYING, e))
+            }, [ta, e9]);
         return (0, r.jsx)(c.DUT, {
             className: b.W6,
             "data-fullscreen": eF,
@@ -296,7 +296,7 @@ let y = {
                         null != e$.current && (I?.(e$.current.currentTime, e$.current.duration), ev(e$.current.currentTime / e$.current.duration * 100))
                     },
                     onEnded: e => {
-                        e4(u.Q6.ENDED, "playback_complete"), e_(!1), w?.()
+                        e9(u.Q6.ENDED, "playback_complete"), e_(!1), w?.()
                     },
                     onLoadedData: e => {
                         if (eS) {
@@ -387,7 +387,7 @@ let y = {
                 }), eQ && ea !== u.Q6.ENDED && null != U && (0, r.jsxs)(r.Fragment, {
                     children: [(0, r.jsx)(c.DUT, {
                         onClick: () => {
-                            ea === u.Q6.PAUSED && e4(u.Q6.PLAYING, "user"), eU(!1)
+                            ea === u.Q6.PAUSED && e9(u.Q6.PLAYING, "user"), eU(!1)
                         },
                         tabIndex: -1,
                         children: (0, r.jsx)("div", {
@@ -399,7 +399,7 @@ let y = {
                         }),
                         "data-testid": "discord-web-video-player-transcript",
                         style: {
-                            marginBottom: (0, a.to)([tp, th], (e, t) => `${e*e9[e7]+t}px`)
+                            marginBottom: (0, a.to)([tp, th], (e, t) => `${e*e4[e7]+t}px`)
                         },
                         children: (0, r.jsx)(v.X, {
                             text: U,
@@ -436,7 +436,7 @@ let y = {
                     style: {
                         translateY: (0, a.to)([tp.to({
                             range: [0, 1],
-                            output: [-20, -e9[e7]]
+                            output: [-20, -e4[e7]]
                         })], e => `${e}px`)
                     },
                     children: (0, r.jsx)(c.Text, {
@@ -450,7 +450,7 @@ let y = {
                     style: {
                         height: (0, a.to)([tp.to({
                             range: [0, 1],
-                            output: [0, e9[e7]]
+                            output: [0, e4[e7]]
                         })], e => `${e}px`)
                     },
                     children: [(0, r.jsx)(a.animated.div, {
@@ -471,7 +471,7 @@ let y = {
                             isFullyVisible: tr && eD,
                             maxSeekableTime: tr && eD ? e6 : void 0,
                             onClick: e => {
-                                ta(e), ea === u.Q6.ENDED && e4(u.Q6.PLAYING, "user")
+                                ta(e), ea === u.Q6.ENDED && e9(u.Q6.PLAYING, "user")
                             },
                             onScrubBack: ts,
                             onScrubForward: ti,
