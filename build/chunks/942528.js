@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(287809),
     m = n(562153),
     x = n(420706),
-    f = n(322789),
-    h = n(506326),
+    h = n(322789),
+    f = n(506326),
     g = n(985018),
     p = n(505502),
     _ = n(851822);
@@ -27,8 +27,8 @@ let v = e => {
         disableActivityProfileLinks: j,
         customCTA: A,
         popoutClassname: C,
-        popoutPosition: I = "right"
-    } = e, b = l.useRef(null), E = (0, s.bG)([d.A, o.A], () => o.A.getChannel(d.A.getChannelId())), N = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
+        popoutPosition: b = "right"
+    } = e, I = l.useRef(null), E = (0, s.bG)([d.A, o.A], () => o.A.getChannel(d.A.getChannelId())), N = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
         nick: S,
         avatar: k
     } = l.useMemo(() => {
@@ -39,8 +39,8 @@ let v = e => {
         }
     }, [N, E]);
     return null == N ? null : (0, a.jsx)(c.YNO, {
-        targetElementRef: b,
-        position: I,
+        targetElementRef: I,
+        position: b,
         renderPopout: e => {
             let {
                 closePopout: l,
@@ -66,7 +66,7 @@ let v = e => {
             v?.()
         },
         children: e => (0, a.jsx)(c.DUT, {
-            innerRef: b,
+            innerRef: I,
             ...e,
             className: p.GA,
             children: (0, a.jsx)(c.vN3, {
@@ -92,9 +92,9 @@ let v = e => {
                                 color: "text-strong",
                                 lineClamp: 1,
                                 children: S
-                            }), (0, a.jsx)(h.mG, {
-                                location: h.N5.APP_LAUNCHER,
-                                children: f.n.map((e, n) => (0, a.jsx)(e, {
+                            }), (0, a.jsx)(f.mG, {
+                                location: f.N5.APP_LAUNCHER,
+                                children: h.n.map((e, n) => (0, a.jsx)(e, {
                                     entry: t
                                 }, n))
                             })]

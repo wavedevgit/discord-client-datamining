@@ -1,7 +1,7 @@
 /** chunk id: 409934 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => A
+    A: () => f
 });
 var i = n(627968),
     s = n(64700),
@@ -18,7 +18,7 @@ var i = n(627968),
     g = n(985018),
     m = n(473169);
 l.Ay.initialize();
-class f extends s.PureComponent {
+class A extends s.PureComponent {
     static defaultProps = {
         transitionTo: e => n.g.location.assign(e)
     };
@@ -125,6 +125,6 @@ class f extends s.PureComponent {
         return e ? this.renderBusy() : t ? this.renderSuccess() : this.renderError()
     }
 }
-let A = l.Ay.connectStores([c.A], () => ({
+let f = l.Ay.connectStores([c.A], () => ({
     defaultRoute: c.A.defaultRoute
-}))(f)
+}))(A)

@@ -22,7 +22,7 @@ function u(e) {
     let {
         IconComponent: g,
         locationName: m
-    } = p, f = (0, i.jsxs)(i.Fragment, {
+    } = p, A = (0, i.jsxs)(i.Fragment, {
         children: [null != g && (0, i.jsx)(g, {
             size: "custom",
             color: "currentColor",
@@ -41,7 +41,7 @@ function u(e) {
         children: null != _ ? (0, i.jsx)(r.DUT, {
             className: h ? c.dC : c.h7,
             onClick: _,
-            children: f
-        }) : f
+            children: A
+        }) : A
     })
 }

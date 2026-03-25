@@ -14,14 +14,14 @@ var a = n(627968),
     u = n(37948),
     m = n(985018),
     x = n(851822),
-    f = n(307291);
-let h = [s.V.OFFICIAL, s.V.TWITTER, s.V.YOUTUBE],
+    h = n(307291);
+let f = [s.V.OFFICIAL, s.V.TWITTER, s.V.YOUTUBE],
     g = {
-        colorClass: f.wP
+        colorClass: h.wP
     },
     p = {
         size: "xs",
-        colorClass: f.wP
+        colorClass: h.wP
     };
 
 function _(e, t) {
@@ -94,7 +94,7 @@ function v(e) {
         text: s,
         children: (0, a.jsx)(o.MzZ, {
             onClick: d,
-            className: f.yO,
+            className: h.yO,
             href: t.url,
             target: "_blank",
             "aria-label": s,
@@ -112,7 +112,7 @@ let j = function(e) {
         let {
             category: t
         } = e;
-        return h.includes(t)
+        return f.includes(t)
     }).sort((e, t) => e.category - t.category);
     return 0 === l.length ? null : (0, a.jsxs)("div", {
         children: [(0, a.jsx)(o.Heading, {
@@ -145,7 +145,7 @@ function A(e) {
         text: d,
         children: (0, a.jsx)(o.DUT, {
             onClick: m,
-            className: f.yO,
+            className: h.yO,
             title: d,
             children: s
         })

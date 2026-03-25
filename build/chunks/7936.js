@@ -1,7 +1,7 @@
 /** chunk id: 7936 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => f
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -18,24 +18,24 @@ n(53516);
 var p = n(985018),
     g = n(20976),
     m = n(473169);
-let f = () => {
-    let [e, t] = s.useState(""), [r, f] = s.useState(""), [A, x] = s.useState(!1), [E, I] = s.useState(!1), [v, N] = s.useState(null), [j, S] = s.useState(null), C = (0, a.bG)([u.A], () => u.A.getCountryCode()), T = C.code.split(" ")[0], y = async () => {
+let A = () => {
+    let [e, t] = s.useState(""), [r, A] = s.useState(""), [f, E] = s.useState(!1), [x, I] = s.useState(!1), [N, v] = s.useState(null), [j, S] = s.useState(null), T = (0, a.bG)([u.A], () => u.A.getCountryCode()), C = T.code.split(" ")[0], y = async () => {
         try {
             await d.A.resendCode(e)
         } catch (e) {
             S(e.body.message)
         }
     }, b = async () => {
-        x(!0);
+        E(!0);
         try {
             let {
                 token: t
-            } = await d.A.verifyPhone(T + e, r);
-            N(null), S(null), I(!0), d.A.validatePhoneForSupport(t)
+            } = await d.A.verifyPhone(C + e, r);
+            v(null), S(null), I(!0), d.A.validatePhoneForSupport(t)
         } catch (e) {
-            e.body.message ? (N(null), S(e.body.message)) : (N(e.body.phone), S(e.body.code))
+            e.body.message ? (v(null), S(e.body.message)) : (v(e.body.phone), S(e.body.code))
         } finally {
-            x(!1)
+            E(!1)
         }
     }, R = (0, i.jsxs)(_.Ay, {
         children: [(0, i.jsx)(_._V, {
@@ -49,7 +49,7 @@ let f = () => {
             })]
         })]
     });
-    return E ? R : (0, i.jsxs)(_.Ay, {
+    return x ? R : (0, i.jsxs)(_.Ay, {
         children: [(0, i.jsx)(_.hE, {
             children: p.intl.string(p.t.o4JNrO)
         }), (0, i.jsx)(_.tK, {
@@ -59,19 +59,19 @@ let f = () => {
             className: m.QX,
             children: [(0, i.jsx)(h.A, {
                 label: p.intl.string(p.t["eJnn0+"]),
-                alpha2: C.alpha2,
-                countryCode: T,
+                alpha2: T.alpha2,
+                countryCode: C,
                 value: e,
                 autoComplete: "off",
                 spellCheck: "false",
                 onChange: t,
                 forceMode: c.Pd.PHONE,
-                error: v
+                error: N
             }), (0, i.jsx)(_.pd, {
                 className: m.QX,
                 label: p.intl.string(p.t.OdzNbm),
                 value: r,
-                onChange: f,
+                onChange: A,
                 maxLength: 6,
                 error: j
             }), (0, i.jsx)(o.QWc, {
@@ -83,7 +83,7 @@ let f = () => {
                     text: p.intl.string(p.t.i4jeWR),
                     fullWidth: !0,
                     onClick: b,
-                    loading: A
+                    loading: f
                 })
             })]
         })]

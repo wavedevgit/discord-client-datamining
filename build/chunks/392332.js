@@ -19,8 +19,8 @@ function x(e) {
         viewId: n,
         officialGuildId: i,
         onClose: x,
-        source: f
-    } = e, h = t.length > 7, [g, p] = l.useState(!1), _ = l.useMemo(() => t.slice(0, h && !g ? 6 : void 0), [t, h, g]);
+        source: h
+    } = e, f = t.length > 7, [g, p] = l.useState(!1), _ = l.useMemo(() => t.slice(0, f && !g ? 6 : void 0), [t, f, g]);
     return (0, a.jsxs)("div", {
         children: [(0, a.jsx)(s.DZT, {
             className: u.bV,
@@ -35,7 +35,7 @@ function x(e) {
         }) : (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsx)("div", {
                 className: r()(m.yz, {
-                    [m.T6]: h && !g
+                    [m.T6]: f && !g
                 }),
                 children: (0, a.jsx)("div", {
                     className: u.fi,
@@ -44,10 +44,10 @@ function x(e) {
                         viewId: n,
                         onClose: x,
                         officialGuildId: i,
-                        source: f
+                        source: h
                     }, e.id))
                 })
-            }), h && !g && (0, a.jsxs)(c.DUT, {
+            }), f && !g && (0, a.jsxs)(c.DUT, {
                 className: m.ND,
                 onClick: () => p(!0),
                 children: [(0, a.jsx)(s.EYj, {

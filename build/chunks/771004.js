@@ -14,8 +14,8 @@ var a = n(627968),
     u = n(981355),
     m = n(409626),
     x = n(305080),
-    f = n(936636),
-    h = n(985018),
+    h = n(936636),
+    f = n(985018),
     g = n(851822),
     p = n(812254);
 
@@ -24,13 +24,13 @@ function _(e) {
         detectedGame: t,
         trackAction: n
     } = e, [i, x] = l.useState(t?.summaryLocalized != null), [_, v] = l.useState(!0), [j, A] = l.useState(!1), C = l.useRef(null), {
-        width: I,
-        height: b
+        width: b,
+        height: I
     } = (0, u.A)();
     return (l.useEffect(() => {
         let e = C.current;
         null != e && A(e.scrollHeight - e.clientHeight > 1 || !_)
-    }, [C, I, b, _]), null == t.summary) ? null : (0, a.jsxs)("div", {
+    }, [C, b, I, _]), null == t.summary) ? null : (0, a.jsxs)("div", {
         className: r()(g.fi, g.mX),
         children: [null != t.summaryLocalized && (0, a.jsxs)("div", {
             className: r()(g.nM, g.Lc),
@@ -40,9 +40,9 @@ function _(e) {
             }), (0, a.jsx)(c.EYj, {
                 variant: "text-xs/medium",
                 color: "text-default",
-                children: i ? h.intl.format(h.t.aZ2iIp, {
+                children: i ? f.intl.format(f.t.aZ2iIp, {
                     onShowOriginal: () => x(!1)
-                }) : h.intl.format(h.t["/2ylF4"], {
+                }) : f.intl.format(f.t["/2ylF4"], {
                     onShowTranslated: () => x(!0)
                 })
             })]
@@ -58,9 +58,9 @@ function _(e) {
             },
             children: (0, a.jsx)(c.EYj, {
                 variant: "text-sm/semibold",
-                children: _ ? h.intl.string(h.t.lBeKY2) : h.intl.string(h.t["6MwJo/"])
+                children: _ ? f.intl.string(f.t.lBeKY2) : f.intl.string(f.t["6MwJo/"])
             })
-        }), (0, a.jsx)(f.A, {
+        }), (0, a.jsx)(h.A, {
             className: p.B,
             detectedGame: t
         })]
@@ -71,7 +71,7 @@ function v(e) {
     let {
         detectedGame: t,
         trackAction: n
-    } = e, [i, s] = l.useState(!1), [o, d] = l.useState(null), f = l.useRef(null), {
+    } = e, [i, s] = l.useState(!1), [o, d] = l.useState(null), h = l.useRef(null), {
         width: p,
         height: _
     } = (0, u.A)(), {
@@ -80,27 +80,27 @@ function v(e) {
     l.useEffect(() => {
         d(null)
     }, [t.summary, j, p, _]), l.useEffect(() => {
-        let e = f.current;
+        let e = h.current;
         if (null == e || null != o) return;
         let t = parseInt(window.getComputedStyle(e).lineHeight, 10);
         isNaN(t) || A(Math.floor(e.offsetHeight / t))
-    }, [f, o, A]);
+    }, [h, o, A]);
     let C = l.useCallback(() => {
         let e = !i;
         n(e ? m.Ws.ShowMore : m.Ws.ShowLess), s(e)
     }, [i, n]);
     if (null == t.summary) return null;
-    let I = i ? h.intl.string(h.t["6MwJo/"]) : h.intl.string(h.t.lBeKY2);
+    let b = i ? f.intl.string(f.t["6MwJo/"]) : f.intl.string(f.t.lBeKY2);
     return (0, a.jsxs)("div", {
         className: r()(g.fi, g.mX),
         children: [(0, a.jsx)(c.EYj, {
-            ref: f,
+            ref: h,
             lineClamp: i || null == o ? void 0 : j,
             variant: "text-sm/normal",
             children: t.summary
         }), o && (0, a.jsx)(c.QWc, {
             onClick: C,
-            text: I
+            text: b
         })]
     })
 }

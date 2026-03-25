@@ -1,6 +1,6 @@
 /** chunk id: 941568 params = (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => b
 }), n(323874), n(14289), n(35956);
 var a = n(627968),
     l = n(64700),
@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(46054),
     m = n(378570),
     x = n(409626),
-    f = n(597676),
-    h = n(305080),
+    h = n(597676),
+    f = n(305080),
     g = n(954506),
     p = n(652215),
     _ = n(985018),
@@ -36,12 +36,12 @@ function C(e) {
         message: n,
         channelId: i,
         onCardClick: c
-    } = e, [d, u] = l.useState(!1), m = null != n.mediaUrl, x = "video" === n.mediaType, f = "main" === t, h = l.useCallback(() => u(!0), []), g = l.useCallback(() => c(n.id), [c, n.id]);
+    } = e, [d, u] = l.useState(!1), m = null != n.mediaUrl, x = "video" === n.mediaType, h = "main" === t, f = l.useCallback(() => u(!0), []), g = l.useCallback(() => c(n.id), [c, n.id]);
     return (0, a.jsxs)(s.DUT, {
-        className: f ? v.cG : v.IU,
+        className: h ? v.cG : v.IU,
         onClick: g,
         children: [m && (0, a.jsxs)("div", {
-            className: f ? v._v : v.eZ,
+            className: h ? v._v : v.eZ,
             children: [x ? (0, a.jsx)(o.A, {
                 src: n.mediaUrl,
                 poster: function(e) {
@@ -52,16 +52,16 @@ function C(e) {
                         return
                     }
                 }(n.mediaUrl),
-                className: r()(f ? v.fk : v.v, d ? v.RT : v.YC),
+                className: r()(h ? v.fk : v.v, d ? v.RT : v.YC),
                 muted: !0,
                 preload: "metadata",
                 playsInline: !0,
-                onLoadedData: h
+                onLoadedData: f
             }) : (0, a.jsx)("img", {
                 src: n.mediaUrl,
-                className: r()(f ? v.fk : v.v, d ? v.RT : v.YC),
+                className: r()(h ? v.fk : v.v, d ? v.RT : v.YC),
                 alt: "",
-                onLoad: h
+                onLoad: f
             }), !d && (0, a.jsx)("div", {
                 className: v.ns,
                 children: (0, a.jsx)(s.y$y, {
@@ -70,21 +70,21 @@ function C(e) {
                 })
             })]
         }), (0, a.jsxs)("div", {
-            className: f ? v.GT : v.s4,
+            className: h ? v.GT : v.s4,
             children: [null != n.title && (0, a.jsx)(s.Heading, {
-                variant: f ? "heading-md/bold" : "heading-sm/bold",
+                variant: h ? "heading-md/bold" : "heading-sm/bold",
                 color: "text-strong",
-                className: f ? v.KX : v._N,
+                className: h ? v.KX : v._N,
                 children: A(n.title, i)
             }), n.body.length > 0 && (0, a.jsx)("div", {
-                className: r()(v.h_, f ? v.My : v.Gd, j.PT),
+                className: r()(v.h_, h ? v.My : v.Gd, j.PT),
                 children: A(n.body, i)
             })]
         })]
     })
 }
 
-function I(e) {
+function b(e) {
     let {
         detectedGame: t,
         trackAction: n
@@ -92,21 +92,21 @@ function I(e) {
         officialInvite: r,
         isMember: o,
         closeModal: u
-    } = (0, h.c)(), {
+    } = (0, f.c)(), {
         messages: j,
         loading: A
-    } = (0, f.A)(i), I = l.useCallback(() => {
+    } = (0, h.A)(i), b = l.useCallback(() => {
         null != r && (u(), c.h.dispatch({
             type: "INVITE_MODAL_OPEN",
             invite: r,
             code: r.code,
             context: p.BRT.APP
         }))
-    }, [u, r]), b = l.useCallback(() => {
-        n(x.Ws.Announcements), o && null != i ? (u(), (0, m.iN)(i)) : I()
-    }, [u, o, I, i, n]), E = l.useCallback(e => {
-        n(x.Ws.AnnouncementsItem), o && null != i ? (u(), (0, m.ci)(i, e)) : I()
-    }, [u, o, I, i, n]);
+    }, [u, r]), I = l.useCallback(() => {
+        n(x.Ws.Announcements), o && null != i ? (u(), (0, m.iN)(i)) : b()
+    }, [u, o, b, i, n]), E = l.useCallback(e => {
+        n(x.Ws.AnnouncementsItem), o && null != i ? (u(), (0, m.ci)(i, e)) : b()
+    }, [u, o, b, i, n]);
     if (null == i || 0 === j.length) return A ? (0, a.jsx)(g.A, {
         title: _.intl.string(_.t.B0BV3Y),
         children: (0, a.jsx)("div", {
@@ -122,7 +122,7 @@ function I(e) {
         k = N ? j.slice(1) : j;
     return (0, a.jsx)(g.A, {
         title: _.intl.string(_.t.B0BV3Y),
-        onClickViewAll: b,
+        onClickViewAll: I,
         children: (0, a.jsxs)("div", {
             className: v.f3,
             children: [null != S && (0, a.jsx)(C, {

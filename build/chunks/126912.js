@@ -1,7 +1,7 @@
 /** chunk id: 126912 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => x
+    A: () => E
 });
 var i = n(627968),
     s = n(64700),
@@ -17,9 +17,9 @@ var i = n(627968),
     p = n(652215),
     g = n(431144),
     m = n(985018),
-    f = n(473169);
+    A = n(473169);
 l.Ay.initialize();
-class A extends s.PureComponent {
+class f extends s.PureComponent {
     static defaultProps = {
         transitionTo: e => n.g.location.assign(e)
     };
@@ -73,19 +73,19 @@ class A extends s.PureComponent {
         });
         return (0, i.jsxs)(c.Ay, {
             children: [(0, i.jsx)(c.hE, {
-                className: f.QB,
+                className: A.QB,
                 children: m.intl.string(m.t.f6rdLg)
             }), (0, i.jsx)(c.tK, {
                 children: r
             }), (0, i.jsx)("div", {
-                className: f.QX,
+                className: A.QX,
                 children: (0, i.jsx)(o.Button, {
                     text: m.intl.string(m.t.fIv16B),
                     fullWidth: !0,
                     onClick: () => s(n)
                 })
             }), (0, i.jsx)("div", {
-                className: f.Ot,
+                className: A.Ot,
                 children: (0, i.jsx)(o.QWc, {
                     text: m.intl.string(m.t.YYTirT),
                     textVariant: "text-sm/normal",
@@ -110,14 +110,14 @@ class A extends s.PureComponent {
             children: [(0, i.jsx)(c.eu, {
                 src: n?.getAvatarURL(void 0, 100),
                 size: o._3J.DEPRECATED_SIZE_100,
-                className: f.SX
+                className: A.SX
             }), (0, i.jsx)(c.hE, {
-                className: f.QB,
+                className: A.QB,
                 children: m.intl.string(m.t["6U6OMQ"])
             }), (0, i.jsx)(c.tK, {
                 children: m.intl.string(m.t["yaDJ4/"])
             }), (0, i.jsx)("div", {
-                className: f.eT,
+                className: A.eT,
                 children: (0, i.jsx)(o.Button, {
                     text: m.intl.string(m.t.fIv16B),
                     fullWidth: !0,
@@ -134,14 +134,14 @@ class A extends s.PureComponent {
         return (0, i.jsxs)(c.Ay, {
             children: [(0, i.jsx)(c._V, {
                 src: n(37772),
-                className: f.SX
+                className: A.SX
             }), (0, i.jsx)(c.hE, {
-                className: f.QB,
+                className: A.QB,
                 children: m.intl.string(m.t.ox9hIS)
             }), (0, i.jsx)(c.tK, {
                 children: m.intl.string(m.t["/dcuR5"])
             }), (0, i.jsx)("div", {
-                className: f.eT,
+                className: A.eT,
                 children: (0, i.jsx)(o.Button, {
                     text: m.intl.string(m.t.fIv16B),
                     fullWidth: !0,
@@ -158,6 +158,6 @@ class A extends s.PureComponent {
         return e ? this.renderBusy() : t ? this.renderSuccess() : this.renderError()
     }
 }
-let x = l.Ay.connectStores([_.A], () => ({
+let E = l.Ay.connectStores([_.A], () => ({
     defaultRoute: _.A.defaultRoute
-}))(A)
+}))(f)

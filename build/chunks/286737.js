@@ -1,6 +1,6 @@
 /** chunk id: 286737 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => h
 });
 var a = n(627968),
     l = n(64700),
@@ -14,13 +14,13 @@ var a = n(627968),
     m = n(985018),
     x = n(409861);
 
-function f(e) {
+function h(e) {
     let {
         trackAction: t
     } = e, {
         fetchedAuthorization: n,
-        hasAlreadyLinked: f,
-        canStartAuthorization: h,
+        hasAlreadyLinked: h,
+        canStartAuthorization: f,
         startAuthorization: g,
         connectionApp: p,
         officialInvite: _
@@ -29,7 +29,7 @@ function f(e) {
             analyticsLocations: ["game_profile"]
         })
     }, [t, g]);
-    if (!n || null == p || !h || f || null == v) return null;
+    if (!n || null == p || !f || h || null == v) return null;
     let A = _?.guild != null ? o.Ay.getGuildSplashURL({
         id: _.guild.id,
         splash: _.guild.splash

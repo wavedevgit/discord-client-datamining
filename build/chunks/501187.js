@@ -1,7 +1,7 @@
 /** chunk id: 501187 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    W: () => f
+    W: () => A
 });
 var i = n(627968);
 n(64700);
@@ -19,11 +19,11 @@ var s = n(607399),
     g = n(886083),
     m = n(604880);
 
-function f(e) {
+function A(e) {
     let {
         token: t,
         hasError: n,
-        errorReason: f
+        errorReason: A
     } = e;
     return n ? (0, i.jsxs)("div", {
         className: g.MY,
@@ -51,7 +51,7 @@ function f(e) {
                 fullWidth: !0,
                 onClick: () => {
                     u.default.track(_.HAw.ONE_TIME_LOGIN_BACK_TO_LOGIN_CLICKED, {
-                        error_reason: f
+                        error_reason: A
                     }), (0, d.pX)(_.BVt.LOGIN)
                 }
             })]

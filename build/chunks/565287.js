@@ -1,8 +1,8 @@
 /** chunk id: 565287 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Kz: () => E,
-    rP: () => A
+    Kz: () => x,
+    rP: () => f
 });
 var i, s = n(627968),
     r = n(64700),
@@ -17,58 +17,58 @@ var i, s = n(627968),
     p = n(974783),
     g = n(795101),
     m = n(309829),
-    f = n(136643);
+    A = n(136643);
 l.Ay.initialize();
-var A = ((i = {}).SELECTION = "selection", i.DSA = "dsa", i.TIDA = "tida", i);
-let x = e => {
+var f = ((i = {}).SELECTION = "selection", i.DSA = "dsa", i.TIDA = "tida", i);
+let E = e => {
         let {
             transitionState: t,
             onClose: n
-        } = e, [i, A] = r.useState(!0), [E, I] = r.useState([]), [v, N] = r.useState("selection"), j = (0, l.bG)([_.default], () => _.default.isAuthenticated()), S = (0, l.bG)([c.A], () => c.A.hasLoadedExperiments), C = r.useCallback(() => {
+        } = e, [i, f] = r.useState(!0), [x, I] = r.useState([]), [N, v] = r.useState("selection"), j = (0, l.bG)([_.default], () => _.default.isAuthenticated()), S = (0, l.bG)([c.A], () => c.A.hasLoadedExperiments), T = r.useCallback(() => {
             (0, h.OY)().then(e => {
                 let {
                     body: {
                         capabilities: t
                     }
                 } = e;
-                A(!1), I(t)
+                f(!1), I(t)
             }).catch(() => {
-                A(!1), I([])
+                f(!1), I([])
             })
         }, []);
         r.useEffect(() => {
-            j ? (A(!0), d.rQ({
+            j ? (f(!0), d.rQ({
                 withAnalyticsToken: !0
-            }).then(() => C()).catch(() => A(!1))) : C()
-        }, [j, C]), r.useEffect(() => {
+            }).then(() => T()).catch(() => f(!1))) : T()
+        }, [j, T]), r.useEffect(() => {
             (async () => {
                 S || (await o.A.getLocationMetadata(), o.A.getExperiments())
             })()
         }, [S]);
-        let T = E.filter(e => e !== u.tY.MEDIA_TAKEDOWN),
-            y = E.includes(u.tY.MEDIA_TAKEDOWN),
-            b = T.length > 0,
+        let C = x.filter(e => e !== u.tY.MEDIA_TAKEDOWN),
+            y = x.includes(u.tY.MEDIA_TAKEDOWN),
+            b = C.length > 0,
             R = b && y;
         r.useEffect(() => {
-            !i && S && !R && (b ? N("dsa") : y && N("tida"))
+            !i && S && !R && (b ? v("dsa") : y && v("tida"))
         }, [i, S, R, b, y]), r.useEffect(() => {
             i || !S || b || y || n()
         }, [i, S, b, y, n]);
         let O = r.useCallback(e => {
-                N(e)
+                v(e)
             }, []),
             L = r.useCallback(() => {
-                N("selection")
+                v("selection")
             }, []),
             w = r.useCallback(() => {
-                (0, a.mMO)(() => Promise.resolve(e => (0, s.jsx)(x, {
+                (0, a.mMO)(() => Promise.resolve(e => (0, s.jsx)(E, {
                     ...e
                 })), {
                     dismissable: !1
                 })
             }, []),
             k = r.useCallback(e => null != e ? (0, s.jsx)(a.jlY, {
-                className: f.q,
+                className: A.q,
                 "data-migration-pending": !0,
                 children: e
             }) : null, []);
@@ -77,11 +77,11 @@ let x = e => {
             parentComponent: "UnauthenticatedReportForm",
             "data-migration-pending": !0,
             children: (0, s.jsx)(a.$mQ, {
-                className: f.k,
+                className: A.k,
                 "data-migration-pending": !0,
                 children: !i && S && (b || y) ? (0, s.jsxs)(a.tN_, {
                     width: "100%",
-                    activeSlide: v,
+                    activeSlide: N,
                     centered: !1,
                     children: [(0, s.jsx)(a.q7S, {
                         id: "selection",
@@ -93,7 +93,7 @@ let x = e => {
                         children: (0, s.jsx)(p.c, {
                             showBackButton: R,
                             onBack: R ? L : void 0,
-                            dsaCapabilities: T,
+                            dsaCapabilities: C,
                             renderFooter: k,
                             onClose: n,
                             onReopen: w
@@ -120,8 +120,8 @@ let x = e => {
             })
         })
     },
-    E = () => (r.useEffect(() => {
-        (0, a.mMO)(() => Promise.resolve(e => (0, s.jsx)(x, {
+    x = () => (r.useEffect(() => {
+        (0, a.mMO)(() => Promise.resolve(e => (0, s.jsx)(E, {
             ...e
         })), {
             dismissable: !1

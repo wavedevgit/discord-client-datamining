@@ -1,7 +1,7 @@
 /** chunk id: 313843 params = (module,exports,require) **/
 n.d(t, {
     A: () => p,
-    Q: () => h
+    Q: () => f
 });
 var a = n(627968),
     l = n(64700),
@@ -41,7 +41,7 @@ function x(e) {
     })
 }
 
-function f(e) {
+function h(e) {
     let {
         game: t,
         application: n
@@ -61,7 +61,7 @@ function f(e) {
     })
 }
 
-function h(e) {
+function f(e) {
     let {
         game: t,
         application: n,
@@ -112,11 +112,11 @@ let g = e => {
                 className: m.kL,
                 children: (0, a.jsxs)("div", {
                     className: m.cb,
-                    children: [(0, a.jsx)(h, {
+                    children: [(0, a.jsx)(f, {
                         game: t,
                         application: n,
                         isTwoColumn: !0
-                    }), (0, a.jsx)(f, {
+                    }), (0, a.jsx)(h, {
                         game: t,
                         application: n
                     })]
@@ -132,7 +132,7 @@ let g = e => {
                 game: t
             }), (0, a.jsx)("div", {
                 className: m.kL,
-                children: (0, a.jsx)(f, {
+                children: (0, a.jsx)(h, {
                     game: t,
                     application: n
                 })

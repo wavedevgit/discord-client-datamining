@@ -18,17 +18,17 @@ var i = n(627968),
     p = n(830215),
     g = n(6981),
     m = n(351671),
-    f = n(15552),
-    A = n(212640),
-    x = n(854378),
-    E = n(952116),
+    A = n(15552),
+    f = n(212640),
+    E = n(854378),
+    x = n(952116),
     I = n(235986),
-    v = n(491509),
-    N = n(895600),
+    N = n(491509),
+    v = n(895600),
     j = n(720353),
     S = n(559568),
-    C = n(274303),
-    T = n(13437),
+    T = n(274303),
+    C = n(13437),
     y = n(557722),
     b = n(148864),
     R = n(146571),
@@ -37,9 +37,9 @@ var i = n(627968),
     w = n(210714),
     k = n(933924),
     D = n(961350),
-    U = n(115036),
-    B = n(650048),
-    P = n(954571),
+    P = n(115036),
+    U = n(650048),
+    B = n(954571),
     G = n(203982),
     F = n(723702),
     M = n(161928),
@@ -53,7 +53,7 @@ var i = n(627968),
     Y = n(473169);
 
 function J() {
-    return (0, i.jsx)(x.Ay, {
+    return (0, i.jsx)(E.Ay, {
         children: (0, i.jsx)(h.y$y, {})
     })
 }
@@ -99,11 +99,11 @@ class X extends s.PureComponent {
             invite: i,
             location: s
         } = this.props;
-        e && !t ? (0, g.ST)() : t && this.loginOrSSO(t, s, !0), P.default.track(K.HAw.LOGIN_VIEWED, {
+        e && !t ? (0, g.ST)() : t && this.loginOrSSO(t, s, !0), B.default.track(K.HAw.LOGIN_VIEWED, {
             location: null != i ? "Invite Login Page" : "Non-Invite Login Page",
             login_source: this.loginSource,
             authenticated: t,
-            ...null != n ? (0, v.A)(n, !1, !1) : {},
+            ...null != n ? (0, N.A)(n, !1, !1) : {},
             source: (0, O.PR)()
         }, {
             flush: !0
@@ -157,18 +157,18 @@ class X extends s.PureComponent {
             redirecting: !0
         }), n ? p.A.verifySSOToken("login").then(() => this.transitionSSO(t)) : this.transitionSSO(t))
     }
-    handleAuthToken = async (e, t) => {
+    handleAuthSuccess(e) {
         this.setState({
             errors: {}
-        }), await p.A.loginToken(e, !1), P.default.track(K.HAw.LOGIN_SUCCESSFUL, {
+        }), B.default.track(K.HAw.LOGIN_SUCCESSFUL, {
             source: K.mdB.QR_CODE,
             login_source: this.loginSource,
             gift_code_sku_id: this.giftCodeSKUId,
             is_new_user: !1,
             login_method: "remote_auth",
-            login_instance_id: t ?? null
+            login_instance_id: e ?? null
         })
-    };
+    }
     transitionSSO(e) {
         let {
             transitionTo: t,
@@ -176,7 +176,7 @@ class X extends s.PureComponent {
             replaceWith: i
         } = this.props, s = null != e ? (0, a.parse)(e.search) : {};
         if (delete s.redirect_to, null != n) {
-            if ((0, A.RZ)(n)) return void(0, A.NY)(n);
+            if ((0, f.RZ)(n)) return void(0, f.NY)(n);
             null != i ? i(n) : t(n)
         } else if (null == s.service) t(K.BVt.APP);
         else {
@@ -226,12 +226,12 @@ class X extends s.PureComponent {
         let {
             authBoxClassName: e
         } = this.props;
-        return (0, i.jsxs)(x.Ay, {
+        return (0, i.jsxs)(E.Ay, {
             className: e,
-            children: [(0, i.jsx)(x.CK, {}), (0, i.jsx)(x.hE, {
+            children: [(0, i.jsx)(E.CK, {}), (0, i.jsx)(E.hE, {
                 className: Y.QB,
                 children: Q.intl.string(Q.t.S6RMNA)
-            }), (0, i.jsx)(x.tK, {
+            }), (0, i.jsx)(E.tK, {
                 children: Q.intl.string(Q.t.YZiJbh)
             })]
         })
@@ -240,19 +240,19 @@ class X extends s.PureComponent {
         let {
             authBoxClassName: e
         } = this.props, t = this.props.loginStatus === K.aUe.ACCOUNT_DISABLED, n = t ? Q.intl.string(Q.t["j3rC+U"]) : Q.intl.string(Q.t.ZFWofo), s = t ? Q.intl.string(Q.t["6eNTWe"]) : Q.intl.string(Q.t["pCBti+"]);
-        return (0, i.jsx)(x.Ay, {
+        return (0, i.jsx)(E.Ay, {
             tag: "form",
             onSubmit: this.handleReset,
             className: e,
             children: (0, i.jsxs)(h.Fmo, {
-                component: (0, i.jsx)(x.hE, {
+                component: (0, i.jsx)(E.hE, {
                     className: Y.QB,
                     children: n
                 }),
-                children: [(0, i.jsx)(x.tK, {
+                children: [(0, i.jsx)(E.tK, {
                     className: Y.SX,
                     children: s
-                }), (0, i.jsxs)(x.eB, {
+                }), (0, i.jsxs)(E.eB, {
                     children: [(0, i.jsx)(h.Button, {
                         text: Q.intl.string(Q.t.JhDw5o),
                         fullWidth: !0,
@@ -272,9 +272,9 @@ class X extends s.PureComponent {
             authBoxClassName: e,
             country: t
         } = this.props;
-        return (0, i.jsxs)(x.Ay, {
+        return (0, i.jsxs)(E.Ay, {
             className: e,
-            children: [(0, i.jsx)(V.M, {}), (0, i.jsxs)(x.eB, {
+            children: [(0, i.jsx)(V.M, {}), (0, i.jsxs)(E.eB, {
                 className: Y.QX,
                 children: [(0, i.jsx)(R.A, {
                     className: Y.SX,
@@ -293,7 +293,7 @@ class X extends s.PureComponent {
                     value: this.state.login,
                     autoFocus: !0,
                     required: !0
-                }), (0, i.jsx)(x.pd, {
+                }), (0, i.jsx)(E.pd, {
                     className: Y.SX,
                     label: Q.intl.string(Q.t["CIGa+7"]),
                     onChange: e => this.setState({
@@ -347,10 +347,10 @@ class X extends s.PureComponent {
             giftCode: s
         }) : (0, i.jsxs)("div", {
             className: q.wx,
-            children: [(0, i.jsx)(x.hE, {
+            children: [(0, i.jsx)(E.hE, {
                 className: Y.QB,
                 children: Q.intl.string(Q.t["7fNJgA"])
-            }, "title"), !1 === (0, F.isAndroidWeb)() ? (0, i.jsx)(x.tK, {
+            }, "title"), !1 === (0, F.isAndroidWeb)() ? (0, i.jsx)(E.tK, {
                 children: Q.intl.string(Q.t.euS7r4)
             }, "subtitle") : null]
         }), (0, i.jsxs)(I.A, {
@@ -372,7 +372,7 @@ class X extends s.PureComponent {
                         icon: h.n2b
                     })
                 }), t, (0, i.jsx)(h.Fmo, {
-                    children: (0, i.jsxs)(x.eB, {
+                    children: (0, i.jsxs)(E.eB, {
                         className: Y.QX,
                         children: [(0, i.jsx)(R.A, {
                             alpha2: a.alpha2,
@@ -392,7 +392,7 @@ class X extends s.PureComponent {
                             value: this.state.login,
                             autoFocus: !c && !o && !d,
                             required: !0
-                        }), (0, i.jsx)(x.pd, {
+                        }), (0, i.jsx)(E.pd, {
                             label: Q.intl.string(Q.t["CIGa+7"]),
                             error: this.renderError("password"),
                             onChange: e => this.setState({
@@ -439,7 +439,7 @@ class X extends s.PureComponent {
                 })]
             }), (0, i.jsx)(h.Fmo, {
                 children: e ? (0, i.jsx)(W.A, {
-                    authTokenCallback: this.handleAuthToken,
+                    onAuthenticateSuccess: this.handleAuthSuccess,
                     conditionalMediationAbortController: this.state.conditionalMediationAbortController
                 }) : null
             })]
@@ -452,7 +452,7 @@ class X extends s.PureComponent {
         } = this.props;
         return (0, i.jsxs)("div", {
             className: q.__invalid_pageContainer,
-            children: [(0, i.jsx)(x.Ay, {
+            children: [(0, i.jsx)(E.Ay, {
                 onSubmit: this.handleLogin,
                 tag: "form",
                 className: e,
@@ -466,7 +466,7 @@ class X extends s.PureComponent {
             onSubmit: this.handleLogin,
             tag: "form",
             className: l()(this.props.authBoxClassName, q.Sy),
-            children: () => [(0, i.jsx)(N.A, {
+            children: () => [(0, i.jsx)(v.A, {
                 guildTemplate: e
             }, "template"), this.renderDefaultForm(!1)]
         })
@@ -476,7 +476,7 @@ class X extends s.PureComponent {
             ticket: this.props.mfaTicket,
             methods: this.props.mfaMethods
         };
-        return (0, i.jsx)(x.Ay, {
+        return (0, i.jsx)(E.Ay, {
             style: {
                 padding: 0
             },
@@ -498,10 +498,10 @@ class X extends s.PureComponent {
         } = this.props, {
             phoneVerifyError: t
         } = this.state;
-        return (0, i.jsx)(x.Ay, {
+        return (0, i.jsx)(E.Ay, {
             tag: "form",
             className: e,
-            children: (0, i.jsx)(E.A, {
+            children: (0, i.jsx)(x.A, {
                 title: Q.intl.string(Q.t.w55Oco),
                 subtitle: Q.intl.format(Q.t.CfRZBj, {
                     onResendClick: this.handleResendCode
@@ -518,10 +518,10 @@ class X extends s.PureComponent {
         } = this.props, {
             phoneVerifyError: t
         } = this.state;
-        return (0, i.jsx)(x.Ay, {
+        return (0, i.jsx)(E.Ay, {
             tag: "form",
             className: e,
-            children: (0, i.jsx)(E.A, {
+            children: (0, i.jsx)(x.A, {
                 title: Q.intl.string(Q.t["+xqy3d"]),
                 subtitle: Q.intl.format(Q.t.ef4uZ7, {
                     onResendClick: this.handleResendCode
@@ -539,7 +539,7 @@ class X extends s.PureComponent {
                 dismissedChooseAccount: !0
             }))
         };
-        return (0, i.jsx)(T.A, {
+        return (0, i.jsx)(C.A, {
             onDismiss: e
         })
     }
@@ -598,7 +598,7 @@ class X extends s.PureComponent {
                 invite: this.props.invite
             })
         } catch (t) {
-            let e = (0, f.p)(t);
+            let e = (0, A.p)(t);
             this.setState({
                 errors: e
             })
@@ -690,7 +690,7 @@ class X extends s.PureComponent {
                 })
             })
         } catch (t) {
-            let e = (0, f.p)(t);
+            let e = (0, A.p)(t);
             this.setState({
                 errors: e
             })
@@ -737,16 +737,16 @@ class X extends s.PureComponent {
 }
 let $ = function(e) {
     (0, L.K)();
-    let t = (0, c.cf)([U.A, B.A, D.default, C.A, b.A], () => ({
+    let t = (0, c.cf)([P.A, U.A, D.default, T.A, b.A], () => ({
         authenticated: D.default.isAuthenticated(),
-        handoffAvailable: U.A.isHandoffAvailable(),
-        user: U.A.user,
+        handoffAvailable: P.A.isHandoffAvailable(),
+        user: P.A.user,
         loginStatus: D.default.getLoginStatus(),
         mfaTicket: D.default.getMFATicket(),
         mfaMethods: D.default.getMFAMethods(),
-        defaultRoute: B.A.defaultRoute,
+        defaultRoute: U.A.defaultRoute,
         country: b.A.getCountryCode(),
-        hasLoggedInAccounts: C.A.getHasLoggedInAccounts()
+        hasLoggedInAccounts: T.A.getHasLoggedInAccounts()
     }));
     return (0, i.jsx)(X, {
         ...e,

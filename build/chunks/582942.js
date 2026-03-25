@@ -1,6 +1,6 @@
 /** chunk id: 582942 params = (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => b
 });
 var a = n(627968);
 n(64700);
@@ -14,8 +14,8 @@ var l = n(503698),
     u = n(587895),
     m = n(136086),
     x = n(885151),
-    f = n(409626),
-    h = n(422069),
+    h = n(409626),
+    f = n(422069),
     g = n(611656),
     p = n(459746),
     _ = n(225732),
@@ -34,9 +34,9 @@ let C = e => {
         children: (0, a.jsx)(d.DUT, {
             className: A.fS,
             onClick: async () => {
-                l(f.Ws.ClickSimilarGame, t.applicationId), (0, d.mMO)(() => Promise.resolve(e => (0, a.jsx)(_.default, {
+                l(h.Ws.ClickSimilarGame, t.applicationId), (0, d.mMO)(() => Promise.resolve(e => (0, a.jsx)(_.default, {
                     applicationId: t.applicationId,
-                    source: f.Ob.SimilarGames,
+                    source: h.Ob.SimilarGames,
                     ...e
                 }))), await new Promise(e => setTimeout(e, 10)), n()
             },
@@ -50,18 +50,18 @@ let C = e => {
     })
 };
 
-function I(e) {
+function b(e) {
     let {
         applicationId: t,
         onClose: n,
         trackAction: l,
         similarGames: r,
         similarGamesError: o
-    } = e, u = (0, c.bG)([h.A, m.A], () => {
-        let e = void 0 === h.A.getSimilarGames(t) && null == h.A.getSimilarGamesError(t),
+    } = e, u = (0, c.bG)([f.A, m.A], () => {
+        let e = void 0 === f.A.getSimilarGames(t) && null == f.A.getSimilarGamesError(t),
             n = r.some(e => m.A.isFetching(e));
         return e || n
-    }), f = (0, c.yK)([m.A], () => r.map(e => m.A.getGame(e)).filter(e => null != e).filter(e => (0, g.oS)(e.applicationId)).slice(0, 5));
+    }), h = (0, c.yK)([m.A], () => r.map(e => m.A.getGame(e)).filter(e => null != e).filter(e => (0, g.oS)(e.applicationId)).slice(0, 5));
     return ((0, x.k)(t), (0, x.W)(r), u && null == o) ? (0, a.jsxs)("div", {
         children: [(0, a.jsx)("div", {
             className: i()(A.vM, j.bV)
@@ -71,7 +71,7 @@ function I(e) {
                 className: A.nn
             }, e))
         })]
-    }) : (u || 0 !== f.length) && null == o ? (0, a.jsxs)("div", {
+    }) : (u || 0 !== h.length) && null == o ? (0, a.jsxs)("div", {
         children: [(0, a.jsx)(d.Heading, {
             className: j.bV,
             variant: "text-md/semibold",
@@ -79,7 +79,7 @@ function I(e) {
             children: v.intl.string(v.t["6rLyQB"])
         }), (0, a.jsx)("div", {
             className: A.D$,
-            children: f.map(e => null != e.supplementalData ? (0, a.jsx)(C, {
+            children: h.map(e => null != e.supplementalData ? (0, a.jsx)(C, {
                 game: e.supplementalData,
                 onClose: n,
                 trackClick: l

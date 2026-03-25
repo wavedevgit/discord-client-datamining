@@ -20,8 +20,8 @@ function u(e) {
     } = e, m = l.useRef(null), x = (0, c.A)({
         id: t,
         label: d.intl.string(d.t["FfCL+6"])
-    }), f = (0, o.n)(t, u);
-    return null == x && null == f ? null : (0, a.jsx)(r.YNO, {
+    }), h = (0, o.n)(t, u);
+    return null == x && null == h ? null : (0, a.jsx)(r.YNO, {
         targetElementRef: m,
         align: "top",
         position: "right",
@@ -42,7 +42,7 @@ function u(e) {
                     children: [(0, a.jsx)(r.rXV, {
                         children: x
                     }), (0, a.jsx)(r.rXV, {
-                        children: f
+                        children: h
                     })]
                 })
             })
@@ -68,13 +68,13 @@ function m(e) {
         onClose: n,
         className: u,
         trackAction: m
-    } = e, x = l.useRef(null), f = (0, c.A)({
+    } = e, x = l.useRef(null), h = (0, c.A)({
         id: t,
         label: d.intl.string(d.t["FfCL+6"])
-    }), h = (0, o.n)(t, m);
+    }), f = (0, o.n)(t, m);
     return (0, a.jsxs)("div", {
         className: u,
-        children: [(null != f || null != h) && (0, a.jsx)(r.YNO, {
+        children: [(null != h || null != f) && (0, a.jsx)(r.YNO, {
             targetElementRef: x,
             align: "top",
             position: "right",
@@ -92,9 +92,9 @@ function m(e) {
                     onSelect: () => {},
                     children: (0, a.jsxs)(a.Fragment, {
                         children: [(0, a.jsx)(r.rXV, {
-                            children: h
-                        }), (0, a.jsx)(r.rXV, {
                             children: f
+                        }), (0, a.jsx)(r.rXV, {
+                            children: h
                         })]
                     })
                 })

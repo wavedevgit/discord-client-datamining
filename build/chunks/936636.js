@@ -1,7 +1,7 @@
 /** chunk id: 936636 params = (module,exports,require) **/
 n.d(t, {
     A: () => g,
-    s: () => h
+    s: () => f
 });
 var a = n(627968);
 n(64700);
@@ -60,7 +60,7 @@ function x(e) {
     }
 }
 
-function f(e) {
+function h(e) {
     let {
         platforms: t
     } = e;
@@ -78,7 +78,7 @@ function f(e) {
     })
 }
 
-function h(e) {
+function f(e) {
     let {
         platform: t
     } = e;
@@ -97,7 +97,7 @@ function g(e) {
     } = e, l = (0, o.A)(t);
     return 0 === l.length ? null : (0, a.jsx)("div", {
         className: i()(u.fi, u.iH, n),
-        children: l.length > 0 && (0, a.jsx)(f, {
+        children: l.length > 0 && (0, a.jsx)(h, {
             platforms: l
         })
     })

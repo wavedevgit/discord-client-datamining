@@ -1,7 +1,7 @@
 /** chunk id: 459893 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => A
+    A: () => f
 });
 var i = n(627968),
     s = n(64700),
@@ -17,29 +17,29 @@ var i = n(627968),
     p = n(961350),
     g = n(129851),
     m = n(652215),
-    f = n(746080);
+    A = n(746080);
 
-function A(e) {
+function f(e) {
     let t = s.useCallback(t => {
             let n;
             (n = (0, h.B)(t, {
                 path: m.BVt.CHANNEL(u.pv.guildId(), u.pv.channelId())
-            }), +(n?.params?.channelId !== f.VV.ROLE_SUBSCRIPTIONS)) ? (e.transitionTo ?? _.pX)(t) : _.bG(t)
+            }), +(n?.params?.channelId !== A.VV.ROLE_SUBSCRIPTIONS)) ? (e.transitionTo ?? _.pX)(t) : _.bG(t)
         }, [e.transitionTo]),
         {
             isAuthenticated: n,
-            loginStatus: A
+            loginStatus: f
         } = (0, l.cf)([p.default], () => ({
             isAuthenticated: p.default.isAuthenticated(),
             loginStatus: p.default.getLoginStatus()
         })),
         {
-            location: x,
-            redirectTo: E
+            location: E,
+            redirectTo: x
         } = e,
-        [I, v] = s.useState(n);
+        [I, N] = s.useState(n);
 
-    function N(e) {
+    function v(e) {
         let {
             handoffKey: t,
             handoffToken: n,
@@ -49,30 +49,30 @@ function A(e) {
             handoffKey: t,
             handoffToken: n,
             handoffSource: i
-        }), v(!1)
+        }), N(!1)
     }
     return ((0, d.Ay)(() => {
-        if (null != x) {
+        if (null != E) {
             let {
                 handoff_key: e,
                 handoff_token: t
-            } = (0, r.parse)(x.search);
+            } = (0, r.parse)(E.search);
             if (null != e && null != t) {
-                let n = null != E ? (0, c.Q)(E) : void 0;
+                let n = null != x ? (0, c.Q)(x) : void 0;
                 I ? a.A.logout("handoff", null).finally(() => {
-                    N({
+                    v({
                         handoffKey: e,
                         handoffToken: t,
                         handoffSource: n
                     })
-                }) : N({
+                }) : v({
                     handoffKey: e,
                     handoffToken: t,
                     handoffSource: n
                 })
             }
         }
-    }), I || A === m.aUe.LOGGING_IN) ? (0, i.jsx)(g.Z, {}) : (0, i.jsx)(g.A, {
+    }), I || f === m.aUe.LOGGING_IN) ? (0, i.jsx)(g.Z, {}) : (0, i.jsx)(g.A, {
         ...e,
         transitionTo: t
     })

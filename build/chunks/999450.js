@@ -1,6 +1,6 @@
 /** chunk id: 999450 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => h
 });
 var a = n(627968),
     l = n(64700),
@@ -14,14 +14,14 @@ var a = n(627968),
     m = n(954506),
     x = n(985018);
 
-function f(e) {
+function h(e) {
     let {
         trackAction: t
     } = e, {
         socialLayerStorefrontRecommendationsData: n
     } = (0, u.c)(), {
-        analyticsLocations: f
-    } = (0, r.Ay)([i.A.GAME_PROFILE]), h = l.useCallback(() => {
+        analyticsLocations: h
+    } = (0, r.Ay)([i.A.GAME_PROFILE]), f = l.useCallback(() => {
         n?.guildId != null && (t(d.Ws.GameShop), (0, s.default)({
             guildId: n.guildId
         }))
@@ -31,19 +31,19 @@ function f(e) {
             applicationId: n.application.id,
             guildId: n.guildId,
             isStorefront: !1,
-            analyticsLocations: f
+            analyticsLocations: h
         }))
-    }, [n, t, f]);
+    }, [n, t, h]);
     if (null == n) return null;
     let {
         skuIds: p
     } = n;
     return (0, a.jsx)(m.A, {
         title: x.intl.string(x.t.WDdlUb),
-        onClickViewAll: h,
+        onClickViewAll: f,
         children: (0, a.jsx)(o.R, {
             skuIds: p,
-            analyticsLocations: f,
+            analyticsLocations: h,
             onCardClick: g
         })
     })

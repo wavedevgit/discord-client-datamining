@@ -1,14 +1,15 @@
 /** chunk id: 177164 params = (module,exports,require) **/
 n.d(t, {
-    w: () => d
+    w: () => c
 });
 var i = n(419954),
     s = n(780964),
     l = n(385465),
     a = n(949059),
     r = n(897027),
-    o = n(985018);
-let d = (0, i.zZ)(s.X.NOTIFICATIONS_OVERVIEW_CATEGORY, {
-    useTitle: () => o.intl.string(o.t["/dp6yY"]),
-    buildLayout: () => [l.d, r.H, a.p]
+    o = n(288905),
+    d = n(985018);
+let c = (0, i.zZ)(s.X.NOTIFICATIONS_OVERVIEW_CATEGORY, {
+    useTitle: () => d.intl.string(d.t["/dp6yY"]),
+    buildLayout: () => [l.d, o.N, r.H, a.p]
 })

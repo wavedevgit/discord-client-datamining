@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(676937),
     m = n(133580),
     x = n(37948),
-    f = n(778591),
-    h = n(465736),
+    h = n(778591),
+    f = n(465736),
     g = n(985018),
     p = n(719187);
 
@@ -25,12 +25,12 @@ function _(e) {
         trackAction: i
     } = e, {
         reviews: m
-    } = t, f = m?.steam ?? {
+    } = t, h = m?.steam ?? {
         rating: void 0,
         ratingCount: void 0
-    }, h = (0, x.A)(), _ = (0, o.j)(f.rating, f.ratingCount), v = (0, u.y)(_), j = l.useCallback(() => {
-        i(d.Ws.SteamReviews), h(n)
-    }, [h, i, n]);
+    }, f = (0, x.A)(), _ = (0, o.j)(h.rating, h.ratingCount), v = (0, u.y)(_), j = l.useCallback(() => {
+        i(d.Ws.SteamReviews), f(n)
+    }, [f, i, n]);
     return (0, a.jsx)(s.DUT, {
         onClick: j,
         className: p.nf,
@@ -50,8 +50,8 @@ function _(e) {
                 })]
             }), (0, a.jsx)(r.m, {
                 text: _ === c.vI.NO_USER_REVIEWS ? g.intl.string(g.t.CLMt8J) : g.intl.format(g.t["lzANJ/"], {
-                    rating: f.rating,
-                    rating_count: f.ratingCount?.toLocaleString()
+                    rating: h.rating,
+                    rating_count: h.ratingCount?.toLocaleString()
                 }).toString(),
                 children: (0, a.jsxs)("div", {
                     className: p.Z0,
@@ -59,11 +59,11 @@ function _(e) {
                         variant: "text-xs/medium",
                         color: v,
                         children: (0, u.a)(_)
-                    }), null != f.ratingCount && _ !== c.vI.NO_USER_REVIEWS && (0, a.jsx)(s.Text, {
+                    }), null != h.ratingCount && _ !== c.vI.NO_USER_REVIEWS && (0, a.jsx)(s.Text, {
                         variant: "text-xs/medium",
                         color: "text-subtle",
                         children: g.intl.format(g.t.sgIoin, {
-                            rating_count: f.ratingCount?.toLocaleString()
+                            rating_count: h.ratingCount?.toLocaleString()
                         }).toString()
                     })]
                 })
@@ -83,7 +83,7 @@ function v(e) {
         topCriticRating: void 0,
         topCriticRatingCount: void 0,
         tier: void 0
-    }, m = o.tier, f = o.topCriticRating ?? -1, h = o.topCriticRatingCount ?? -1, _ = (f <= 0 || h <= 0) && null == m, v = (0, x.A)(), C = l.useCallback(() => {
+    }, m = o.tier, h = o.topCriticRating ?? -1, f = o.topCriticRatingCount ?? -1, _ = (h <= 0 || f <= 0) && null == m, v = (0, x.A)(), C = l.useCallback(() => {
         i(d.Ws.OpenCriticReviews), v(n)
     }, [v, i, n]);
     return (0, a.jsx)(s.DUT, {
@@ -101,8 +101,8 @@ function v(e) {
                 className: p.WA,
                 children: [null != m ? (0, a.jsx)(j, {
                     tier: m
-                }) : null, null != m && f > 0 && h > 0 ? (0, a.jsx)(A, {
-                    rating: f,
+                }) : null, null != m && h > 0 && f > 0 ? (0, a.jsx)(A, {
+                    rating: h,
                     tier: m
                 }) : null, _ ? (0, a.jsx)(s.Text, {
                     variant: "text-xs/medium",
@@ -147,7 +147,7 @@ function A(e) {
             style: {
                 backgroundColor: i
             },
-            children: [(0, a.jsx)(h.A, {
+            children: [(0, a.jsx)(f.A, {
                 rating: t,
                 strokeColor: l
             }), (0, a.jsx)(s.Text, {
@@ -165,7 +165,7 @@ let C = function(e) {
         trackAction: n
     } = e, {
         applicationId: l
-    } = t, r = (0, f.I)(l), c = t.opencriticUrl, o = t.steamReleaseStatus !== i.Y.RETIRED_ABANDONED && null != r, d = t.reviews?.opencritic != null && null != c;
+    } = t, r = (0, h.I)(l), c = t.opencriticUrl, o = t.steamReleaseStatus !== i.Y.RETIRED_ABANDONED && null != r, d = t.reviews?.opencritic != null && null != c;
     return o || d ? (0, a.jsxs)("div", {
         className: p.uW,
         children: [(0, a.jsx)("div", {

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     Ay: () => m,
-    pG: () => f
+    pG: () => A
 });
 var i = n(989349),
     s = n.n(i),
@@ -24,36 +24,36 @@ function m(e) {
         giftCodeSKUId: n = null,
         ...i
     } = e;
-    return f({
+    return A({
         ...i,
         invite: t,
         giftCodeSKUId: n
     })
 }
 
-function f(e) {
+function A(e) {
     let {
         email: t,
         phoneToken: n,
         username: i,
         globalName: m,
-        consent: f,
-        password: A,
-        guildTemplateCode: x,
-        birthday: E,
+        consent: A,
+        password: f,
+        guildTemplateCode: E,
+        birthday: x,
         invite: I = null,
-        giftCodeSKUId: v = null,
-        promoEmailConsent: N = null,
+        giftCodeSKUId: N = null,
+        promoEmailConsent: v = null,
         usedUsernameSuggestion: j = null
     } = e;
     if (l.h.dispatch({
             type: "REGISTER"
-        }), null != E) {
+        }), null != x) {
         let e;
-        (0, _.A)(E, p.JJy.REGISTER), u.default.track(p.HAw.AGE_GATE_ACTION, {
+        (0, _.A)(x, p.JJy.REGISTER), u.default.track(p.HAw.AGE_GATE_ACTION, {
             source: g.w_.REGISTER,
             action: g.AM.AGE_GATE_SUBMITTED
-        }), (e = s()().diff(E, "years")) < 13 || u.default.track(p.HAw.USER_AGE_SUBMITTED, {
+        }), (e = s()().diff(x, "years")) < 13 || u.default.track(p.HAw.USER_AGE_SUBMITTED, {
             age_bucket: e >= 13 && e <= 17 ? "13-17" : e >= 18 && e <= 22 ? "18-22" : "23+"
         })
     }
@@ -64,22 +64,22 @@ function f(e) {
             email: t,
             username: i,
             global_name: m,
-            password: A,
+            password: f,
             invite: I,
-            consent: f,
+            consent: A,
             phone_token: n,
-            date_of_birth: E?.format("YYYY-MM-DD"),
-            gift_code_sku_id: v,
-            guild_template_code: x,
-            promotional_email_opt_in: N?.checked
+            date_of_birth: x?.format("YYYY-MM-DD"),
+            gift_code_sku_id: N,
+            guild_template_code: E,
+            promotional_email_opt_in: v?.checked
         },
         trackedActionData: {
             event: r.NetworkActionNames.USER_REGISTER,
             properties: {
                 invite_code: I,
                 used_username_suggestion: j,
-                promotional_email_opt_in: N?.checked,
-                promotional_email_pre_checked: N?.preChecked,
+                promotional_email_opt_in: v?.checked,
+                promotional_email_pre_checked: v?.preChecked,
                 was_unique_username: !0
             }
         },

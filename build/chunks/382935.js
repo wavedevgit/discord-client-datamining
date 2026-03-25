@@ -1,59 +1,59 @@
 /** chunk id: 382935 params = (module,exports,require) **/
-l.d(a, {
+a.d(l, {
     A: () => S
 });
-var t = l(627968),
-    n = l(64700),
-    i = l(503698),
-    r = l.n(i),
-    d = l(735438),
-    s = l.n(d),
-    u = l(397927),
-    E = l(964486),
-    O = l(475743),
-    b = l(235986),
-    v = l(915089),
-    o = l(124480),
-    f = l(975571),
-    c = l(321563),
-    g = l(670455),
-    N = l(985018),
-    h = l(520783);
+var t = a(627968),
+    n = a(64700),
+    i = a(503698),
+    r = a.n(i),
+    d = a(735438),
+    s = a.n(d),
+    u = a(397927),
+    E = a(964486),
+    O = a(475743),
+    b = a(235986),
+    v = a(915089),
+    o = a(124480),
+    f = a(975571),
+    c = a(321563),
+    N = a(670455),
+    g = a(985018),
+    h = a(520783);
 let U = e => s().shuffle(e.map(e => ({
     ...e,
     problemOptions: s().shuffle(e.problemOptions).concat(e.freeformConfig ?? [])
 })));
 
 function S(e) {
-    let a, l, {
+    let l, a, {
             onMount: i,
             onSubmit: d,
             onClose: S,
             ratingHeader: m,
-            ratingBody: _,
-            ratingOptions: A,
-            ratingEmojiKind: j,
-            initialRating: C = null,
-            categoriesHeader: D,
+            ratingBody: A,
+            ratingOptions: _,
+            ratingEmojiKind: D,
+            initialRating: j = null,
+            categoriesHeader: C,
             optionsTree: L,
             hideDontShowAgainCheckbox: I,
             impression: T,
             transitionState: V
         } = e,
-        p = (0, O.A)(L),
-        [R, x] = n.useState(U(L));
+        R = (0, O.A)(L),
+        [p, x] = n.useState(U(L));
     n.useEffect(() => {
-        s().isEqual(p, L) || x(U(L))
-    }, [L, p]);
+        s().isEqual(R, L) || x(U(L))
+    }, [L, R]);
     let H = (0, v.GV)(),
-        [k, F] = n.useState(!1),
-        [G, P] = n.useState(C),
-        [B, M] = n.useState(1 === R.length ? R[0] : null),
+        [k, P] = n.useState(!1),
+        [F, G] = n.useState(j),
+        [B, M] = n.useState(1 === p.length ? p[0] : null),
         [X, y] = n.useState(null),
         [Y, K] = n.useState("");
     (0, E.Ay)(() => i?.()), (0, E.l0)(() => {
         d({
-            rating: G,
+            rating: F,
             category: B?.value ?? null,
             problem: X,
             dontShowAgain: k,
@@ -62,15 +62,15 @@ function S(e) {
     });
     let q = !0,
         Q = !1;
-    return null == G ? (a = (0, t.jsxs)(t.Fragment, {
+    return null == F ? (l = (0, t.jsxs)(t.Fragment, {
         children: [(0, t.jsx)("div", {
             className: r()(h.OS, h.Ko),
             children: (0, t.jsx)(c.A, {
-                ratingOptions: A,
-                emojiKind: j,
-                selectedRating: G,
+                ratingOptions: _,
+                emojiKind: D,
+                selectedRating: F,
                 onChangeRating: function(e) {
-                    P(e), e === g.P0.GOOD && S()
+                    G(e), e === N.P0.GOOD && S()
                 }
             })
         }), !I && (0, t.jsx)(u.jlY, {
@@ -79,22 +79,22 @@ function S(e) {
             direction: b.A.Direction.HORIZONTAL,
             children: (0, t.jsx)(u.Checkbox, {
                 checked: k,
-                onChange: () => F(!k),
-                label: N.intl.string(N.t["5E9SB9"]),
+                onChange: () => P(!k),
+                label: g.intl.string(g.t["5E9SB9"]),
                 labelType: "secondary"
             })
         })]
-    }), q = !1) : G !== g.P0.GOOD && null == B ? (a = (0, t.jsx)(u.$mQ, {
+    }), q = !1) : F !== N.P0.GOOD && null == B ? (l = (0, t.jsx)(u.$mQ, {
         "data-migration-pending": !0,
         children: (0, t.jsx)(u.D0$, {
-            label: D,
+            label: C,
             children: (0, t.jsx)(o.A, {
-                options: R,
+                options: p,
                 onClick: M,
                 hideCaret: () => !0
             })
         })
-    }), l = () => P(null)) : null != B && null == X ? (a = (0, t.jsx)(u.$mQ, {
+    }), a = () => G(null)) : null != B && null == X ? (l = (0, t.jsx)(u.$mQ, {
         children: (0, t.jsx)(u.D0$, {
             label: B.problemsHeader,
             children: (0, t.jsx)(o.A, {
@@ -104,24 +104,24 @@ function S(e) {
                 },
                 hideCaret: e => {
                     let {
-                        value: a
+                        value: l
                     } = e;
-                    return B.freeformConfig?.value !== a
+                    return B.freeformConfig?.value !== l
                 }
             })
         })
-    }), l = () => 1 === R.length ? P(null) : M(null)) : null != B && null != X && B.freeformConfig?.value === X.value && (a = (0, t.jsx)(u.$mQ, {
+    }), a = () => 1 === p.length ? G(null) : M(null)) : null != B && null != X && B.freeformConfig?.value === X.value && (l = (0, t.jsx)(u.$mQ, {
         "data-migration-pending": !0,
         children: (0, t.jsx)(u.fs1, {
-            label: N.intl.string(N.t.h95hcn),
-            helperText: B.freeformConfig.hideHelpdeskLink ? void 0 : N.intl.format(N.t.ybi2tD, {
+            label: g.intl.string(g.t.h95hcn),
+            helperText: B.freeformConfig.hideHelpdeskLink ? void 0 : g.intl.format(g.t.ybi2tD, {
                 helpdeskURL: f.A.getSubmitRequestURL()
             }),
             value: Y,
-            maxLength: g.u0,
+            maxLength: N.u0,
             onChange: K
         })
-    }), l = () => {
+    }), a = () => {
         K(""), y(null)
     }, Q = !0), (0, t.jsxs)(u.EOs, {
         "data-migration-pending": !0,
@@ -143,21 +143,21 @@ function S(e) {
                 variant: "text-md/normal",
                 color: "none",
                 className: h.sB,
-                children: _
+                children: A
             })]
-        }), a, q && (0, t.jsxs)(u.jlY, {
+        }), l, q && (0, t.jsxs)(u.jlY, {
             "data-migration-pending": !0,
             className: h.qr,
             direction: b.A.Direction.HORIZONTAL,
             children: [(0, t.jsx)(u.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: N.intl.string(N.t["13/7kX"]),
-                onClick: l
+                text: g.intl.string(g.t["13/7kX"]),
+                onClick: a
             }), Q && (0, t.jsx)(u.Button, {
                 variant: "primary",
                 size: "sm",
-                text: N.intl.string(N.t.geKm7t),
+                text: g.intl.string(g.t.geKm7t),
                 onClick: S
             })]
         })]

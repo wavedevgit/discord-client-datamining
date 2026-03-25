@@ -15,16 +15,16 @@ let m = function(e) {
     let {
         detectedGame: t,
         trackAction: n
-    } = e, m = (0, r.y)("GameProfileStoreLinks"), x = (0, s._)(t), f = (0, c.A)(), h = l.useMemo(() => x.map(o.A).filter(e => null != e), [x]);
-    if (!m || 0 === h.length || null == t) return null;
-    if (1 === h.length) {
-        let [e] = h;
+    } = e, m = (0, r.y)("GameProfileStoreLinks"), x = (0, s._)(t), h = (0, c.A)(), f = l.useMemo(() => x.map(o.A).filter(e => null != e), [x]);
+    if (!m || 0 === f.length || null == t) return null;
+    if (1 === f.length) {
+        let [e] = f;
         return (0, a.jsx)(d.u, {
             icon: e.icon,
             text: e.text,
             "aria-label": e.ariaLabel,
             onClick: () => {
-                n(e.action), f(e.url)
+                n(e.action), h(e.url)
             }
         })
     }
@@ -33,7 +33,7 @@ let m = function(e) {
         "aria-label": u.intl.string(u.t.nK60cc),
         onClick: () => i.A.openGameProfileStoreLinksModal({
             detectedGame: t,
-            websiteButtons: h,
+            websiteButtons: f,
             trackAction: n
         })
     })

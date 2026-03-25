@@ -1,7 +1,7 @@
 /** chunk id: 565505 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => E
+    A: () => x
 });
 var i = n(627968),
     s = n(64700),
@@ -17,10 +17,10 @@ var i = n(627968),
     p = n(900662),
     g = n(652215),
     m = n(401755),
-    f = n(985018),
-    A = n(473169);
+    A = n(985018),
+    f = n(473169);
 
-function x(e, t, n) {
+function E(e, t, n) {
     e.preventDefault(), _.default.track(g.HAw.GUILD_TEMPLATE_APP_OPENED, {
         guild_template_code: t,
         guild_template_name: n.name,
@@ -32,7 +32,7 @@ function x(e, t, n) {
     d.A.openMobileApp(n.state === m.QB.RESOLVED ? t : void 0, s)
 }
 
-function E(e) {
+function x(e) {
     let {
         code: t
     } = e, n = (0, r.bG)([o.A], () => o.A.getGuildTemplate(t));
@@ -45,17 +45,17 @@ function E(e) {
             guildTemplate: n,
             tall: !0
         }), (0, i.jsx)("div", {
-            className: A.QX,
+            className: f.QX,
             children: (0, i.jsx)(l.Button, {
-                text: f.intl.string(f.t["a3Gl+e"]),
+                text: A.intl.string(A.t["a3Gl+e"]),
                 fullWidth: !0,
-                onClick: e => x(e, t, n)
+                onClick: e => E(e, t, n)
             })
         })]
     }) : (0, i.jsx)(p.A, {
-        text: f.intl.string(f.t["e/rZ2n"]),
-        buttonCta: f.intl.string(f.t.HAvYn0),
-        onClick: e => x(e, t, n)
+        text: A.intl.string(A.t["e/rZ2n"]),
+        buttonCta: A.intl.string(A.t.HAvYn0),
+        onClick: e => E(e, t, n)
     })
 }
 r.Ay.initialize()

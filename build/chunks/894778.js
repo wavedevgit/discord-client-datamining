@@ -1,7 +1,7 @@
 /** chunk id: 894778 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => A
+    A: () => f
 });
 var i = n(353640),
     s = n(499867),
@@ -85,7 +85,7 @@ function m(e, t) {
     })
 }
 
-function f() {
+function A() {
     return null != p.getState().activeFlow()
 }
 p.subscribe(e => null != e.currentFlow ? e.flows[e.currentFlow] : void 0, e => {
@@ -115,11 +115,11 @@ p.subscribe(e => null != e.currentFlow ? e.flows[e.currentFlow] : void 0, e => {
         })
     }
 });
-let A = {
+let f = {
     flowStart: g,
     flowStepOrStart: function(e, t) {
-        f() ? m(e, t) : g(e, t)
+        A() ? m(e, t) : g(e, t)
     },
     flowStep: m,
-    hasActiveFlow: f
+    hasActiveFlow: A
 }

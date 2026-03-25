@@ -1,7 +1,7 @@
 /** chunk id: 969492 params = (module,exports,require) **/
 n.d(t, {
-    H: () => m,
-    L: () => _
+    H: () => g,
+    L: () => m
 });
 var i, a = n(627968);
 n(64700);
@@ -13,36 +13,39 @@ var l = n(192308),
     c = n(909255),
     u = n(374079),
     A = n(328717),
-    h = n(796878),
-    _ = ((i = {}).NONE = "none", i.CHURN_DISCOUNT = "churn_discount", i.PREMIUM_GROUP = "premium_group", i.PREMIUM_GROUP_TOOLTIP = "premium_group_tooltip", i.ORBS_UPSELL = "orbs_upsell", i.ORBS_INTRO = "orbs_intro", i.ORBS_DROP = "orbs_drop", i.TOOLTIP = "tooltip", i);
+    h = n(52416),
+    _ = n(796878),
+    m = ((i = {}).NONE = "none", i.CHURN_DISCOUNT = "churn_discount", i.PREMIUM_GROUP = "premium_group", i.PREMIUM_GROUP_TOOLTIP = "premium_group_tooltip", i.ORBS_UPSELL = "orbs_upsell", i.ORBS_INTRO = "orbs_intro", i.ORBS_DROP = "orbs_drop", i.TOOLTIP = "tooltip", i.MARKETING_MOMENT_POPOVER = "marketing_moment_popover", i);
 
-function m(e) {
+function g(e) {
     let {
         children: t,
         popoverType: n,
         targetElementRef: i,
-        churnDiscountOffer: _,
-        premiumSubscription: m,
-        receivesUpdatedUpsellPopover: g,
-        orbsRewardAmount: p,
-        lastGrantedRewardAmount: E,
-        dismissCoachMark: I,
-        dismissOrbsDropPopover: f
-    } = e, C = (0, l.useHasAnyModalOpen)();
+        churnDiscountOffer: m,
+        premiumSubscription: g,
+        receivesUpdatedUpsellPopover: p,
+        orbsRewardAmount: E,
+        lastGrantedRewardAmount: I,
+        dismissCoachMark: f,
+        dismissOrbsDropPopover: C,
+        dismissMarketingPopover: T
+    } = e;
+    if ((0, l.useHasAnyModalOpen)()) return t;
     switch (n) {
         case "churn_discount":
-            if (null != _ && null != m) return (0, a.jsx)(A.A, {
+            if (null != m && null != g) return (0, a.jsx)(A.A, {
                 targetElementRef: i,
-                discountOffer: _,
-                premiumSubscription: m,
-                dismissCoachmark: I,
+                discountOffer: m,
+                premiumSubscription: g,
+                dismissCoachmark: f,
                 children: t
             });
             break;
         case "premium_group":
             return (0, a.jsx)(r.p, {
                 targetElementRef: i,
-                dismissPopover: I,
+                dismissPopover: f,
                 children: t
             });
         case "premium_group_tooltip":
@@ -51,33 +54,39 @@ function m(e) {
                 children: t
             });
         case "orbs_upsell":
-            if (g) return (0, a.jsx)(u.A, {
+            if (p) return (0, a.jsx)(u.A, {
                 targetElementRef: i,
-                dismissPopover: I,
-                numOrbs: p,
+                dismissPopover: f,
+                numOrbs: E,
                 children: t
             });
             return (0, a.jsx)(c.A, {
                 targetElementRef: i,
-                dismissPopover: I,
+                dismissPopover: f,
                 children: t
             });
         case "orbs_intro":
             return (0, a.jsx)(o.A, {
                 targetElementRef: i,
-                dismissPopover: I,
+                dismissPopover: f,
                 children: t
             });
         case "orbs_drop":
-            if (null != E && !C) return (0, a.jsx)(d.A, {
+            if (null != I) return (0, a.jsx)(d.A, {
                 targetElementRef: i,
-                dismissPopover: f,
-                lastGrantedRewardAmount: E,
+                dismissPopover: C,
+                lastGrantedRewardAmount: I,
                 children: t
             });
             break;
         case "tooltip":
+            return (0, a.jsx)(_.A, {
+                children: t
+            });
+        case "marketing_moment_popover":
             return (0, a.jsx)(h.A, {
+                targetElementRef: i,
+                dismissPopover: T,
                 children: t
             })
     }

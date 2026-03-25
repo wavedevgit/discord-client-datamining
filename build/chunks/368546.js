@@ -52,11 +52,11 @@ function i(e) {
                 t = requestAnimationFrame(m)
             }
 
-            function f() {
+            function h() {
                 cancelAnimationFrame(t)
             }
-            return e.addEventListener("play", x), e.addEventListener("pause", f), e.addEventListener("ended", f), e.addEventListener("seeked", c), e.addEventListener("loadeddata", c), e.paused ? e.readyState >= 2 && c() : t = requestAnimationFrame(m), () => {
-                s = !0, cancelAnimationFrame(t), e.removeEventListener("play", x), e.removeEventListener("pause", f), e.removeEventListener("ended", f), e.removeEventListener("seeked", c), e.removeEventListener("loadeddata", c)
+            return e.addEventListener("play", x), e.addEventListener("pause", h), e.addEventListener("ended", h), e.addEventListener("seeked", c), e.addEventListener("loadeddata", c), e.paused ? e.readyState >= 2 && c() : t = requestAnimationFrame(m), () => {
+                s = !0, cancelAnimationFrame(t), e.removeEventListener("play", x), e.removeEventListener("pause", h), e.removeEventListener("ended", h), e.removeEventListener("seeked", c), e.removeEventListener("loadeddata", c)
             }
         }
     }, [t, n, i])

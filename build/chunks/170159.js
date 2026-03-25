@@ -17,17 +17,17 @@ var i = n(627968),
     p = n(854378),
     g = n(10088),
     m = n(871123),
-    f = n(210714),
-    A = n(961350),
-    x = n(650048),
-    E = n(30793),
+    A = n(210714),
+    f = n(961350),
+    E = n(650048),
+    x = n(30793),
     I = n(189081),
-    v = n(67480),
-    N = n(45938),
+    N = n(67480),
+    v = n(45938),
     j = n(975571),
     S = n(427262),
-    C = n(161928),
-    T = n(129851),
+    T = n(161928),
+    C = n(129851),
     y = n(229),
     b = n(652215),
     R = n(985018),
@@ -46,7 +46,7 @@ class L extends s.PureComponent {
             authenticated: e,
             isResolved: t
         } = this.props;
-        e && this.handleAuthenticated(), t || this.resolveGiftCode(), (0, f.d)("gift_code")
+        e && this.handleAuthenticated(), t || this.resolveGiftCode(), (0, A.d)("gift_code")
     }
     componentDidUpdate(e) {
         let {
@@ -231,7 +231,7 @@ class L extends s.PureComponent {
             giftCodeCode: e.code,
             transitionTo: s,
             children: (0, i.jsxs)(p.Ay, {
-                children: [(0, i.jsx)(C.A, {
+                children: [(0, i.jsx)(T.A, {
                     giftCode: e
                 }), (0, i.jsx)("div", {
                     className: O.eT,
@@ -277,7 +277,7 @@ class L extends s.PureComponent {
                 let e = this.state.currentUser;
                 return d || null == e ? this.renderSpinner(R.intl.string(R.t.bYb2nS)) : this.requiresVerification && null != e ? this.renderVerification(e) : this.renderAuthenticated(s, e, t)
             }
-            return "login" === this.getMode() ? (0, i.jsx)(T.A, {
+            return "login" === this.getMode() ? (0, i.jsx)(C.A, {
                 giftCodeSKU: t,
                 giftCode: s,
                 transitionTo: a,
@@ -292,18 +292,18 @@ class L extends s.PureComponent {
         return null
     }
 }
-let w = a.Ay.connectStores([E.A, I.A, A.default, v.A, x.A, g.A], e => {
+let w = a.Ay.connectStores([x.A, I.A, f.default, N.A, E.A, g.A], e => {
         let t = e.match.params.giftCode,
-            n = E.A.get(t),
-            i = null != n ? v.A.get(n.skuId) : null;
+            n = x.A.get(t),
+            i = null != n ? N.A.get(n.skuId) : null;
         return {
             giftCode: n,
             sku: i,
-            libraryApplication: null != i && n?.entitlementBranches != null ? N.YI(n.entitlementBranches, i, I.A) : null,
-            authenticated: A.default.isAuthenticated(),
-            defaultRoute: x.A.defaultRoute,
-            isResolved: E.A.getIsResolved(t),
-            isAccepting: E.A.getIsAccepting(t),
+            libraryApplication: null != i && n?.entitlementBranches != null ? v.YI(n.entitlementBranches, i, I.A) : null,
+            authenticated: f.default.isAuthenticated(),
+            defaultRoute: E.A.defaultRoute,
+            isResolved: x.A.getIsResolved(t),
+            isAccepting: x.A.getIsAccepting(t),
             libraryApplicationsFetched: I.A.fetched,
             nativeAppState: g.A.getState(t)
         }

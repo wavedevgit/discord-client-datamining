@@ -1,7 +1,7 @@
 /** chunk id: 24215 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    L: () => A
+    L: () => f
 });
 var i = n(627968),
     s = n(64700),
@@ -35,7 +35,7 @@ function m(e) {
     })
 }
 
-function f(e) {
+function A(e) {
     let {
         label: t,
         checked: n,
@@ -56,34 +56,34 @@ function f(e) {
         })]
     })
 }
-let A = () => {
+let f = () => {
     let e = o.tz.useSetting(),
         {
             nickname: t,
             dmsAllowed: n,
             showActivity: d,
             setNickname: p,
-            setDmsAllowed: A,
-            setShowActivity: x,
-            guildId: E,
+            setDmsAllowed: f,
+            setShowActivity: E,
+            guildId: x,
             inviteCode: I
         } = (0, u.lD)(),
-        v = l.A.getProps().invite?.is_nickname_changeable,
-        N = s.useCallback(() => {
+        N = l.A.getProps().invite?.is_nickname_changeable,
+        v = s.useCallback(() => {
             c.default.track(h.HAw.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED, {
-                guild_id: E,
+                guild_id: x,
                 invite_code: I
             })
-        }, [E, I]);
+        }, [x, I]);
     return (0, i.jsxs)(a.A, {
         icon: (0, i.jsx)(r.Zes, {
             size: "refresh_sm"
         }),
         title: _.intl.string(_.t["A5wHQ/"]),
         subtitle: _.intl.string(_.t.UKCSEd),
-        onOpen: N,
-        maxHeight: v ? 220 : 130,
-        children: [v && (0, i.jsxs)(i.Fragment, {
+        onOpen: v,
+        maxHeight: N ? 220 : 130,
+        children: [N && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(m, {
                 label: _.intl.string(_.t.me1lRk),
                 children: (0, i.jsx)(r.ksK, {
@@ -93,14 +93,14 @@ let A = () => {
                     onChange: p
                 })
             }), (0, i.jsx)(g, {})]
-        }), (0, i.jsx)(f, {
+        }), (0, i.jsx)(A, {
             label: _.intl.string(_.t["/2ed37"]),
             checked: n,
-            onChange: A
-        }), (0, i.jsx)(g, {}), e && (0, i.jsx)(f, {
+            onChange: f
+        }), (0, i.jsx)(g, {}), e && (0, i.jsx)(A, {
             label: _.intl.string(_.t.bN4m1G),
             checked: d,
-            onChange: x
+            onChange: E
         })]
     })
 }
