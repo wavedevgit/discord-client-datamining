@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(323073),
     A = n(506164),
     m = n(204925),
-    _ = n(985018),
-    p = n(635510);
+    p = n(985018),
+    _ = n(635510);
 
 function g(e) {
     let {
@@ -27,7 +27,7 @@ function g(e) {
         ...r
     } = (0, h.k$)(t), a = s.useCallback(() => {
         null != t && o.A.nsfwReturnToSafety(t.id)
-    }, [t]), p = s.useCallback(() => {
+    }, [t]), _ = s.useCallback(() => {
         null != t && o.A.nsfwAgree(t.id)
     }, [t]), g = s.useCallback(() => {
         c.A.showAgeVerificationGetStartedModal({
@@ -39,7 +39,7 @@ function g(e) {
         ...r,
         guildId: t?.id,
         channelId: n,
-        disagreement: _.intl.string(_.t["/g10LC"])
+        disagreement: p.intl.string(p.t["/g10LC"])
     };
     switch (l) {
         case d.A5.NSFW_CHANNEL_AGE_VERIFY:
@@ -52,7 +52,7 @@ function g(e) {
             });
         default:
             return (0, i.jsx)(A.A, {
-                onAgree: p,
+                onAgree: _,
                 onDisagree: a,
                 modalType: l,
                 ...f
@@ -72,9 +72,9 @@ let f = function(e) {
         e?.scrollToBottom()
     }, []), (0, i.jsx)(a.T7Y, {
         ref: o,
-        className: p.X,
+        className: _.X,
         children: (0, i.jsx)("div", {
-            className: r()(l, p.i),
+            className: r()(l, _.i),
             children: (0, i.jsx)(g, {
                 guild: t,
                 channelId: n

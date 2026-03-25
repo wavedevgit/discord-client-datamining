@@ -16,7 +16,7 @@ var s = n(311907),
     h = n(635917);
 
 function A() {
-    let [e, t] = (0, s.yK)([a.default, u.A], () => [u.A.getCurrentDesktopIcon(), o.Ay.isPremium(a.default.getCurrentUser())]), n = (0, r.fy)().activePanel === r.HP.APP_ICON, A = (0, h.gG)(e), m = A.id !== c.LW.DEFAULT && (t || n), _ = (0, i.jsx)(l.pVd, {
+    let [e, t] = (0, s.yK)([a.default, u.A], () => [u.A.getCurrentDesktopIcon(), o.Ay.isPremium(a.default.getCurrentUser())]), n = (0, r.fy)().activePanel === r.HP.APP_ICON, A = (0, h.gG)(e), m = A.id !== c.LW.DEFAULT && (t || n), p = (0, i.jsx)(l.pVd, {
         size: "custom",
         color: "currentColor",
         width: 24,
@@ -25,5 +25,5 @@ function A() {
     return null != A && m ? (0, i.jsx)(d.A, {
         id: A.id,
         size: h.N8.SIZE_48
-    }) : _
+    }) : p
 }

@@ -1,27 +1,27 @@
 /** chunk id: 177569 params = (module,exports,require) **/
-i.d(t, {
-    A: () => o
+t.d(i, {
+    A: () => l
 });
-var r = i(627968),
-    a = i(158954),
-    s = i(262427),
-    n = i(697359),
-    l = i(985018);
+var a = t(627968),
+    r = t(158954),
+    n = t(262427),
+    s = t(697359),
+    o = t(985018);
 
-function o(e) {
+function l(e) {
     let {
-        location: t
+        location: i
     } = e, {
-        shouldRender: i,
-        limitedOfferTimeLeft: o
-    } = (0, n.A)({
-        location: t
+        shouldRender: t,
+        limitedOfferTimeLeft: l
+    } = (0, s.A)({
+        location: i
     });
-    return i ? (0, r.jsx)(s.J, {
-        text: l.intl.format(l.t["/bHQ84"], {
-            numDays: Math.max(o, 1),
-            applicationName: l.intl.string(l.t.Uu8hke)
+    return t ? (0, a.jsx)(n.J, {
+        text: o.intl.format(o.t["/bHQ84"], {
+            numDays: Math.max(l, 1),
+            applicationName: o.intl.string(o.t.Uu8hke)
         }),
-        Icon: a.Cp8
+        Icon: r.Cp8
     }) : null
 }

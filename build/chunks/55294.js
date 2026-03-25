@@ -16,8 +16,8 @@ var i = n(64700),
     h = n(31717),
     A = n(522602),
     m = n(393309),
-    _ = n(381941),
-    p = n(985018);
+    p = n(381941),
+    _ = n(985018);
 
 function g(e) {
     let {
@@ -31,13 +31,13 @@ function g(e) {
     } = e, x = i.useCallback((e, t, n, i) => {
         r.A.sendMessage(e.id, u.Ay.parse(e, n), void 0, {
             eagerDispatch: !1,
-            location: _.Hx.THREAD_CREATION,
+            location: p.Hx.THREAD_CREATION,
             stickerIds: i,
             attachmentsToUpload: t,
             onAttachmentUploadError: (i, s, r, c) => {
                 (0, o.openUploadError)({
-                    title: p.intl.string(p.t.B3vFdU),
-                    help: c?.message ?? p.intl.string(p.t.zMEjJg)
+                    title: _.intl.string(_.t.B3vFdU),
+                    help: c?.message ?? _.intl.string(_.t.zMEjJg)
                 }), "" !== n && "" === h.A.getDraft(e.id, h.C.FirstThreadMessage) && l.A.saveDraft(e.id, n, h.C.FirstThreadMessage), 0 === A.A.getUploadCount(e.id, h.C.FirstThreadMessage) && a.A.setUploads({
                     channelId: e.id,
                     uploads: t,

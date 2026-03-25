@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(46054),
     A = n(102876),
     m = n(657331),
-    _ = n(253932),
-    p = n(427157),
+    p = n(253932),
+    _ = n(427157),
     g = n(287809),
     f = n(954571),
     x = n(661191),
@@ -41,7 +41,7 @@ function G(e) {
         item: t
     } = e, n = t.message?.content;
     if (null == n) return (0, i.jsx)("div", {});
-    let s = g.default.getUser(t.message?.author?.id) ?? new p.A(t.message?.author),
+    let s = g.default.getUser(t.message?.author?.id) ?? new _.A(t.message?.author),
         l = h.A.parse(n);
     return (0, i.jsxs)("div", {
         className: L.PI,
@@ -139,16 +139,16 @@ let w = s.memo(function(e) {
                     acked: d
                 })
             }
-        }, [t, d, o]), _ = null;
-        t.type === I.Uo.INCOMING_FRIEND_REQUESTS && null != t.other_user ? _ = (0, i.jsx)(y.A, {
+        }, [t, d, o]), p = null;
+        t.type === I.Uo.INCOMING_FRIEND_REQUESTS && null != t.other_user ? p = (0, i.jsx)(y.A, {
             userId: t.other_user.id
-        }) : t.type === I.Uo.INCOMING_GAME_FRIEND_REQUESTS && null != t.other_user ? _ = (0, i.jsx)(y.A, {
+        }) : t.type === I.Uo.INCOMING_GAME_FRIEND_REQUESTS && null != t.other_user ? p = (0, i.jsx)(y.A, {
             userId: t.other_user.id,
             applicationId: t.applicationId
-        }) : (t.type === I.hW.FRIEND_REQUEST_ACCEPTED || t.type === I.hW.GAME_FRIEND_REQUEST_ACCEPTED) && null != t.other_user && (_ = (0, i.jsx)(y.R, {
+        }) : (t.type === I.hW.FRIEND_REQUEST_ACCEPTED || t.type === I.hW.GAME_FRIEND_REQUEST_ACCEPTED) && null != t.other_user && (p = (0, i.jsx)(y.R, {
             userId: t.other_user.id
         }));
-        let p = null != t.local_id,
+        let _ = null != t.local_id,
             g = (0, b.A)({
                 item: t,
                 renderApplication: e => (0, i.jsx)(k, {
@@ -193,9 +193,9 @@ let w = s.memo(function(e) {
                         variant: "text-xs/medium",
                         color: d ? "text-muted" : "text-default",
                         children: (0, N.jb)(x.default.extractTimestamp(t.id))
-                    }), _]
+                    }), p]
                 })]
-            }), p ? null : (0, i.jsx)(j.e, {
+            }), _ ? null : (0, i.jsx)(j.e, {
                 item: t
             })]
         })
@@ -203,7 +203,7 @@ let w = s.memo(function(e) {
     V = s.memo(function(e) {
         let {
             items: t
-        } = e, n = _.ns.useSetting();
+        } = e, n = p.ns.useSetting();
         return (0, S.q)(t), (0, i.jsx)(i.Fragment, {
             children: t.map(e => (0, i.jsx)(w, {
                 item: e,

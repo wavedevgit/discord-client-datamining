@@ -21,8 +21,8 @@ var i = n(627968),
     N = n(954571),
     g = n(405269),
     C = n(975571),
-    p = n(927578),
-    h = n(580630),
+    h = n(927578),
+    p = n(580630),
     x = n(851746),
     R = n(259297),
     S = n(727949),
@@ -80,7 +80,7 @@ class b extends a.Component {
         }) : this.offerExpired ? null : L.intl.string(L.t.lQLlOb)
     }
     renderActions() {
-        let e = this.currentUser.id !== this.trialOffer.user_id || (0, p.TW)(this.currentUser) || !this.currentUser.verified || (0, P.P)(this.trialOffer),
+        let e = this.currentUser.id !== this.trialOffer.user_id || (0, h.TW)(this.currentUser) || !this.currentUser.verified || (0, P.P)(this.trialOffer),
             t = this.renderExpirationDate();
         return (0, i.jsxs)("div", {
             className: j.UD,
@@ -172,7 +172,7 @@ class b extends a.Component {
                             case R.Y.VARIANT_2: {
                                 let e = (0, o.TW)(L.intl.currentLocale);
                                 return L.intl.format(L.t["+KbxV6"], {
-                                    fixedTrialCost: (0, h.$g)(0, e)
+                                    fixedTrialCost: (0, p.$g)(0, e)
                                 })
                             }
                             case R.Y.VARIANT_3:
@@ -284,7 +284,7 @@ function k(e) {
         trialOffer: n ? x.A.getRelevantUserTrialOffer(t) : null,
         isResolving: !!n && x.A.isResolving(t),
         referralsSent: x.A.getRecipientStatus()
-    }), [n, t]), d = T.default.getCurrentUser(), u = (0, c.bG)([T.default], () => null != l && (0, p.TW)(void 0 !== d && l.user_id === d.id ? d : T.default.getUser(l.user_id))), E = (0, c.bG)([f.A], () => u ? f.A.getPremiumTypeSubscription()?.trialEndsAt : null), {
+    }), [n, t]), d = T.default.getCurrentUser(), u = (0, c.bG)([T.default], () => null != l && (0, h.TW)(void 0 !== d && l.user_id === d.id ? d : T.default.getUser(l.user_id))), E = (0, c.bG)([f.A], () => u ? f.A.getPremiumTypeSubscription()?.trialEndsAt : null), {
         analyticsLocations: I
     } = (0, A.Ay)(m.A.SHARE_NITRO_EMBED);
     return r ? (0, i.jsx)(_.Wb, {

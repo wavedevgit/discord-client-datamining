@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(813516),
     A = n(906141),
     m = n(253932),
-    _ = n(961350),
-    p = n(287809),
+    p = n(961350),
+    _ = n(287809),
     g = n(405269),
     f = n(576456),
     x = n(712209),
@@ -75,7 +75,7 @@ function T(e) {
         location: "20e3b0_1"
     }, {
         autoTrackExposure: !1
-    }), a = m.hH.useSetting(), A = (0, u.iJ)(n), f = !1, N = 0 === t.messages.length || r()(t.messages[0].timestamp).isSame(r()(), "day"), b = p.default.getUser(_.default.getId())?.hasFlag(C.nhx.SPAMMER) ?? !1, T = [];
+    }), a = m.hH.useSetting(), A = (0, u.iJ)(n), f = !1, N = 0 === t.messages.length || r()(t.messages[0].timestamp).isSame(r()(), "day"), b = _.default.getUser(p.default.getId())?.hasFlag(C.nhx.SPAMMER) ?? !1, T = [];
     if (!t.collapsed) {
         let e = null,
             c = null,

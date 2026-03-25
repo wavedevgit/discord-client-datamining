@@ -14,8 +14,8 @@ var i, s = n(627968),
     h = n(849269),
     A = n(881343),
     m = n(697675),
-    _ = n(869003),
-    p = n(652215),
+    p = n(869003),
+    _ = n(652215),
     g = n(985018),
     f = n(279240);
 let x = ["embedded_cover"],
@@ -44,7 +44,7 @@ function I(e) {
         guildId: t.channel.getGuildId() ?? void 0,
         locationObject: {},
         onActivityItemSelected: i,
-        embeddedActivitiesManager: _.A,
+        embeddedActivitiesManager: p.A,
         assetNames: x,
         commandOrigin: I
     }), [v, y] = l.useState(!1), j = l.useCallback(() => {
@@ -110,7 +110,7 @@ function I(e) {
                     value: t
                 } = e;
                 return (0, s.jsx)(d.NPJ, {
-                    theme: p.NJ8.DARK,
+                    theme: _.NJ8.DARK,
                     children: e => (0, s.jsx)(u.A, {
                         applicationId: n.application.id,
                         questContent: c.u.ACTIVITY_SUGGESTION,

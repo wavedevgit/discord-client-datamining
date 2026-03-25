@@ -4,30 +4,30 @@ n.d(t, {
     A: () => a
 });
 var l = n(311907),
-    s = n(73153);
-let i = !0;
+    i = n(73153);
+let s = !0;
 class r extends l.Ay.DeviceSettingsStore {
     static displayName = "ConversationVisibilityStore";
     static persistKey = "ConversationVisibilityStore";
     initialize(e) {
-        i = e?.highlightingEnabled ?? !0
+        s = e?.highlightingEnabled ?? !0
     }
     isHighlightingEnabled() {
-        return i
+        return s
     }
     getState() {
         return {
-            highlightingEnabled: i
+            highlightingEnabled: s
         }
     }
     getUserAgnosticState() {
         return {
-            highlightingEnabled: i
+            highlightingEnabled: s
         }
     }
 }
-let a = new r(s.h, {
+let a = new r(i.h, {
     CONVERSATIONS_TOGGLE_HIGHLIGHTING: function() {
-        i = !i
+        s = !s
     }
 })

@@ -35,7 +35,7 @@ function y() {
         children: (0, i.jsx)(a.y$y, {})
     })
 }
-let R = e => {
+let b = e => {
     let t = e?.state == null && e?.channel == null;
     if (null == e || null == e.state || t) return 0;
     let n = e.state;
@@ -58,7 +58,7 @@ let R = e => {
     }
 };
 
-function b(e) {
+function R(e) {
     let {
         invite: t,
         onAcceptInvite: n
@@ -83,7 +83,7 @@ function O(e) {
         ...d
     } = e, {
         invite: c
-    } = d, [h, _] = s.useState(R(c)), {
+    } = d, [h, _] = s.useState(b(c)), {
         ref: p,
         height: g
     } = (0, u.Ay)(), m = (0, a.zhh)({
@@ -91,7 +91,7 @@ function O(e) {
         config: r.config.stiff
     });
     return s.useEffect(() => {
-        let e = R(c);
+        let e = b(c);
         e !== h && _(e)
     }, [c, h]), (0, i.jsxs)(r.animated.div, {
         className: T.qF,
@@ -143,7 +143,7 @@ function w(e) {
                         invite: t
                     });
                 case 2:
-                    return (0, i.jsx)(b, {
+                    return (0, i.jsx)(R, {
                         ...e,
                         invite: t
                     });

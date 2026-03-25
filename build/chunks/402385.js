@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(641703),
     A = n(313961),
     m = n(826673),
-    _ = n(379848),
-    p = n(753727),
+    p = n(379848),
+    _ = n(753727),
     g = n(267102),
     f = n(222692),
     x = n(442353),
@@ -84,7 +84,7 @@ class M extends s.PureComponent {
             tooltip: e
         });
         return (0, i.jsxs)(i.Fragment, {
-            children: [m, (0, i.jsx)(_.Ay, {
+            children: [m, (0, i.jsx)(p.Ay, {
                 contentTypes: d,
                 children: e => {
                     let {
@@ -153,14 +153,14 @@ class M extends s.PureComponent {
 function D(e) {
     let {
         channel: t
-    } = e, n = (0, p.A)(), s = (0, l.bG)([A.A], () => A.A.getMode(t.id)), a = (0, l.bG)([S.A], () => S.A.isInChannel(t.id)), o = (0, l.bG)([u.A], () => u.A.useReducedMotion), {
+    } = e, n = (0, _.A)(), s = (0, l.bG)([A.A], () => A.A.getMode(t.id)), a = (0, l.bG)([S.A], () => S.A.isInChannel(t.id)), o = (0, l.bG)([u.A], () => u.A.useReducedMotion), {
         callActive: c,
         callUnavailable: d
     } = (0, l.cf)([C.A], () => ({
         callActive: C.A.isCallActive(t.id),
         callUnavailable: C.A.isCallUnavailable(t.id)
     })), m = t.getRecipientId(), {
-        notFriend: _,
+        notFriend: p,
         isBlocked: f
     } = (0, l.cf)([N.A], () => ({
         notFriend: t.type === y.rbe.DM && null != m && !N.A.isFriend(m),
@@ -173,7 +173,7 @@ function D(e) {
         callActive: c,
         isProvisional: x?.isProvisional ?? !1,
         callUnavailable: d,
-        notFriend: _,
+        notFriend: p,
         isBlocked: f,
         appContext: I,
         dismissibleContentTypes: T,

@@ -22,15 +22,15 @@ var i = n(627968),
     g = n(287809),
     C = n(763754);
 n(827669);
-var p = n(985018),
-    h = n(998815);
+var h = n(985018),
+    p = n(998815);
 let x = {
         tag: "span",
         variant: "text-md/normal",
         color: "text-default"
     },
     R = {
-        className: r()("mention", h.lE)
+        className: r()("mention", p.lE)
     };
 
 function S(e) {
@@ -58,7 +58,7 @@ let O = a.memo(function(e) {
             (null == r || r.type === c.kc.CHAT && void 0 === r.application_command) && m.S7(n.id, l)
         }, [n.id, l, r]), null == r) t = (0, i.jsx)(o.y$y, {
         type: o.y$y.Type.SPINNING_CIRCLE,
-        className: h.u1
+        className: p.u1
     });
     else {
         let e = [],
@@ -73,21 +73,21 @@ let O = a.memo(function(e) {
                     commandOptionSpec: m,
                     sourceAnalyticsLocations: f
                 } = t,
-                h = null != _ ? _ + " " + l.name : l.name;
+                p = null != _ ? _ + " " + l.name : l.name;
             if (l.type === c.n4.SUB_COMMAND || l.type === c.n4.SUB_COMMAND_GROUP) {
                 let t = [(0, i.jsxs)(a.Fragment, {
                         children: [" ", (0, i.jsx)(o.Text, {
                             ...x,
                             children: m?.name_localized ?? l.name
                         })]
-                    }, h)],
+                    }, p)],
                     n = Object.fromEntries((m?.options ?? [])?.map(e => [e.name, e]));
                 for (let i of l.options ?? []) t = t.concat(e({
                     option: i,
                     channel: r,
                     guild: s,
                     messageId: d,
-                    parentOptionKey: h,
+                    parentOptionKey: p,
                     commandOptionSpec: n[i.name],
                     sourceAnalyticsLocations: f
                 }));
@@ -156,7 +156,7 @@ let O = a.memo(function(e) {
                     break
                 }
                 case c.n4.ATTACHMENT:
-                    n = S(p.intl.string(p.t.nONJVc));
+                    n = S(h.intl.string(h.t.nONJVc));
                     break;
                 default: {
                     let e = m?.choices?.find(e => e.value === l.value);
@@ -168,7 +168,7 @@ let O = a.memo(function(e) {
                     ...x,
                     children: [" ", m?.name_localized ?? l.name, ": "]
                 }), n]
-            }, h)]
+            }, p)]
         }({
             option: t,
             channel: n,
@@ -186,17 +186,17 @@ let O = a.memo(function(e) {
         })
     }
     return (0, i.jsxs)("div", {
-        className: h.kL,
+        className: p.kL,
         onCopy: e => {
             let t = window?.getSelection()?.toString() ?? "";
             t.startsWith("/") && t.endsWith("\n") && M(e, r)
         },
         children: [(0, i.jsx)("div", {
-            className: h.YL,
+            className: p.YL,
             ref: D,
             children: t
         }), (0, i.jsx)("div", {
-            className: h.xQ
+            className: p.xQ
         })]
     })
 })

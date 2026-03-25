@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(688810),
     A = n(966597),
     m = n(85109),
-    _ = n(44022),
-    p = n(566908),
+    p = n(44022),
+    _ = n(566908),
     g = n(594061),
     f = n(617617),
     x = n(203982),
@@ -81,7 +81,7 @@ function y(e) {
     let q = s.useCallback(e => {
             e.shiftKey || F()
         }, [F]),
-        X = (0, p.Sc)();
+        X = (0, _.Sc)();
     return (0, i.jsx)(h.f5, {
         value: U,
         children: (0, i.jsx)(d.YNO, {
@@ -109,7 +109,7 @@ function y(e) {
                             }),
                             children: w === c.Y2.FOR_YOU ? (0, i.jsx)(C.Ay, {}) : w === c.Y2.MENTIONS ? (0, i.jsx)(E.A, {
                                 onJump: q
-                            }) : W && Y && w === c.Y2.BOOKMARKS ? (0, i.jsx)(_.J, {
+                            }) : W && Y && w === c.Y2.BOOKMARKS ? (0, i.jsx)(p.J, {
                                 closePopout: F
                             }) : w === c.Y2.SCHEDULED ? (0, i.jsx)(N.w, {}) : (0, i.jsx)(a.tH, {
                                 fallback: (0, i.jsx)(b.T, {}),

@@ -30,7 +30,7 @@ let g = e => {
         root_node_id: T,
         success_node_id: N,
         fail_node_id: I
-    } = n, [S, y] = a.useState(T), [k, E] = a.useState(void 0), [w, R] = a.useState(void 0), [M, L] = a.useState([]), [O, G] = a.useState(void 0), [D, U] = a.useState(void 0), [P, B] = a.useState(void 0);
+    } = n, [S, y] = a.useState(T), [k, E] = a.useState(void 0), [w, R] = a.useState(void 0), [M, L] = a.useState([]), [O, G] = a.useState(void 0), [D, P] = a.useState(void 0), [U, B] = a.useState(void 0);
     (0, s.Ay)(() => {
         (0, u.VE)()
     });
@@ -60,7 +60,7 @@ let g = e => {
         V = async e => {
             let l = b ? await (0, m.zC)(n, t, [...M, e]) : await (0, m.bo)(n, t, [...M, e], f),
                 a = l?.body?.report_id;
-            null != a && G(a), U(j[e.nodeRef].report_type), A?.(a)
+            null != a && G(a), P(j[e.nodeRef].report_type), A?.(a)
         }, F = () => {
             if (M.length < 1) return;
             let e = [...M],
@@ -96,8 +96,8 @@ let g = e => {
             B(t), y(n.id)
         }, [j, M]);
     a.useEffect(() => {
-        null != P && B(void 0)
-    }, [P]);
+        null != U && B(void 0)
+    }, [U]);
     let z = a.useMemo(() => {
         let e = [],
             t = [];
@@ -145,7 +145,7 @@ let g = e => {
                         onSubmit: V,
                         reportId: O,
                         nodeMap: j,
-                        initialErrorMessage: e.id === S ? P : void 0
+                        initialErrorMessage: e.id === S ? U : void 0
                     })
                 })
             }, e.id))

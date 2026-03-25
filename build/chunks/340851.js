@@ -17,8 +17,8 @@ var i = n(627968),
     h = n(401843),
     A = n(296216),
     m = n(793574),
-    _ = n(480890),
-    p = n(643501),
+    p = n(480890),
+    _ = n(643501),
     g = n(916641),
     f = n(652896),
     x = n(279250),
@@ -112,11 +112,11 @@ let P = (0, A.J)(function(e) {
         application: ea,
         hangStatusActivity: eo,
         showHangStatus: ec
-    } = e, ed = s.useRef(null), [eu, eh] = s.useState(!1), eA = s.useRef(null), [em, e_] = s.useState(!1), [ep, eg] = s.useState(!1), [ef, ex] = s.useState(!1), eC = em || ef || ep, eE = () => {
+    } = e, ed = s.useRef(null), [eu, eh] = s.useState(!1), eA = s.useRef(null), [em, ep] = s.useState(!1), [e_, eg] = s.useState(!1), [ef, ex] = s.useState(!1), eC = em || ef || e_, eE = () => {
         eh(!eu)
     }, eI = (e, t) => {
         let n = new Set(["system:click_outside", "user:escape", "user:explicit"]);
-        null != t && n.has(t) && (ep && eg(!1), em && e_(!1)), eN()
+        null != t && n.has(t) && (e_ && eg(!1), em && ep(!1)), eN()
     }, eN = () => {
         clearTimeout(eA.current), ee?.(l.id)
     };
@@ -124,7 +124,7 @@ let P = (0, A.J)(function(e) {
         clearTimeout(eA.current)
     }, []);
     let eb = () => {
-            if (!X || !(0, x.eo)(A, j.A, T.A, v.A, p.default)[0]) return;
+            if (!X || !(0, x.eo)(A, j.A, T.A, v.A, _.default)[0]) return;
             let e = {
                 streamType: L.U4.GUILD,
                 ownerId: l.id,
@@ -145,7 +145,7 @@ let P = (0, A.J)(function(e) {
                     channel: A,
                     showMediaItems: !0,
                     showStageChannelItems: A.isGuildStageVoice(),
-                    onInteraction: (0, _.s)("GuildChannelUserContextMenu", m.A.VOICE_USER, {
+                    onInteraction: (0, p.s)("GuildChannelUserContextMenu", m.A.VOICE_USER, {
                         targetUserId: l.id
                     })
                 })
@@ -154,7 +154,7 @@ let P = (0, A.J)(function(e) {
         eT = e => er ? (0, i.jsx)(E.h, {
             ...e,
             channel: A,
-            setIsHangStatusInputFocused: e_,
+            setIsHangStatusInputFocused: ep,
             setIsEmojiPickerOpen: ex
         }) : null != eo ? (0, i.jsx)(I.E, {
             ...e,

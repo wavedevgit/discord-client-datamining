@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(93055),
     A = n(253932),
     m = n(975571),
-    _ = n(822382),
-    p = n(753806),
+    p = n(822382),
+    _ = n(753806),
     g = n(345859),
     f = n(145331),
     x = n(121806),
@@ -39,7 +39,7 @@ function b(e) {
         totalFilters: T
     } = (0, x.vj)(b, t), v = s.useMemo(() => {
         if (t.type === C.I4_.DMS) {
-            let e = (0, _.Zf)(b),
+            let e = (0, p.Zf)(b),
                 t = e.channel_id?.length ?? 0;
             return t > 0 ? I.intl.format(I.t.A2dqWG, {
                 filterCount: t
@@ -51,7 +51,7 @@ function b(e) {
     }, [G, D, j]), P = s.useCallback(e => {
         D("user:explicit" === e ? E.i.USER_DISMISS : E.i.AUTO_DISMISS)
     }, [D]), k = s.useCallback(() => {
-        U(null), p.A.openSearchFiltersModal(t)
+        U(null), _.A.openSearchFiltersModal(t)
     }, [U, t]), w = s.useMemo(() => T > 0 ? I.intl.format(I.t.uaR4sI, {
         filterCount: T
     }) : I.intl.string(I.t.UdhTtk), [T]), V = !(0, h.DZ)() && (t.type === C.I4_.DMS || t.type === C.I4_.CHANNEL);
@@ -195,17 +195,17 @@ function R(e) {
                 let e = {
                     type: C.I4_.DMS
                 };
-                p.A.transitionStateToSearchContext(t, e, p.A.cleanUpPrivateChannelSearchState)
+                _.A.transitionStateToSearchContext(t, e, _.A.cleanUpPrivateChannelSearchState)
             } else {
                 let e = {
                     type: C.I4_.CHANNEL,
                     channelId: n
                 };
-                p.A.transitionStateToSearchContext(t, e)
+                _.A.transitionStateToSearchContext(t, e)
             }
             r(null), A.Hu.updateSetting(e)
         }
-    }, [h, r, t, n]), [_, g] = s.useMemo(() => [h ? I.intl.string(I.t["8lklch"]) : I.intl.string(I.t.ji3jTF), h ? I.intl.string(I.t.RMQZCa) : I.intl.string(I.t["v/PagC"])], [h]), x = s.useMemo(() => ({
+    }, [h, r, t, n]), [p, g] = s.useMemo(() => [h ? I.intl.string(I.t["8lklch"]) : I.intl.string(I.t.ji3jTF), h ? I.intl.string(I.t.RMQZCa) : I.intl.string(I.t["v/PagC"])], [h]), x = s.useMemo(() => ({
         align: "end"
     }), []);
     return (0, i.jsxs)(i.Fragment, {
@@ -259,7 +259,7 @@ function R(e) {
             targetElementRef: u,
             shouldShow: c,
             onRequestClose: a,
-            title: _,
+            title: p,
             body: g,
             caretConfig: x,
             badge: "new"

@@ -21,8 +21,8 @@ var i = n(627968),
     N = n(788868),
     g = n(652215),
     C = n(778712),
-    p = n(985018),
-    h = n(989712);
+    h = n(985018),
+    p = n(989712);
 let x = (0, s.FT9)(C._3.SIZE_56),
     R = (0, s.FT9)(C._3.SIZE_24);
 
@@ -36,7 +36,7 @@ function S(e) {
         width: x,
         height: x,
         viewBox: `0 0 ${x} ${x}`,
-        className: h.XH,
+        className: p.XH,
         children: [l && (0, i.jsxs)("mask", {
             id: r,
             maskUnits: "userSpaceOnUse",
@@ -59,7 +59,7 @@ function S(e) {
             height: x,
             mask: l ? `url(#${r})` : void 0,
             children: (0, i.jsx)(o.A, {
-                className: h.A6,
+                className: p.A6,
                 user: t,
                 "aria-label": n,
                 size: C._3.SIZE_56
@@ -101,55 +101,55 @@ function O(e) {
             }
         })
     }, [t]);
-    let j = () => t === N.np.FRIEND_ANNIVERSARY ? p.intl.string(p.t.ilhtIa) : (0, E.yE)(t);
+    let j = () => t === N.np.FRIEND_ANNIVERSARY ? h.intl.string(h.t.ilhtIa) : (0, E.yE)(t);
     return (0, i.jsx)("div", {
         ref: M,
-        className: h.Qs,
+        className: p.Qs,
         children: (0, i.jsxs)("div", {
-            className: h.gx,
+            className: p.gx,
             children: [(0, i.jsxs)("div", {
-                className: h.ou,
+                className: p.ou,
                 children: [(0, i.jsxs)("div", {
-                    className: h.HD,
+                    className: p.HD,
                     children: [(0, i.jsx)(S, {
                         user: x,
                         ariaLabel: x.username,
                         showCutout: null != D
                     }), null != D && (0, i.jsx)(o.A, {
-                        className: h.GM,
+                        className: p.GM,
                         user: D,
                         "aria-label": x.username,
                         size: C._3.SIZE_24
                     })]
                 }), (0, i.jsxs)("div", {
-                    className: h.FS,
+                    className: p.FS,
                     children: [(0, i.jsx)(s.Text, {
                         variant: "text-md/medium",
                         color: "text-strong",
                         lineClamp: 3,
-                        children: t === N.np.FRIEND_ANNIVERSARY ? p.intl.string(p.t.CeQIwZ) : (0, E.yE)(t)
+                        children: t === N.np.FRIEND_ANNIVERSARY ? h.intl.string(h.t.CeQIwZ) : (0, E.yE)(t)
                     }), (0, i.jsxs)("div", {
-                        className: h.jA,
+                        className: p.jA,
                         children: [(0, i.jsx)(s.$yI, {
                             size: "xs"
                         }), (0, i.jsx)(s.Text, {
-                            className: h.Tm,
+                            className: p.Tm,
                             variant: "text-md/normal",
                             color: "text-subtle",
                             lineClamp: 1,
-                            children: t === N.np.FRIEND_ANNIVERSARY ? p.intl.formatToPlainString(p.t.PpG27s, {
+                            children: t === N.np.FRIEND_ANNIVERSARY ? h.intl.formatToPlainString(h.t.PpG27s, {
                                 numberOfYears: U
                             }) : (0, E.yE)(t)
                         })]
                     })]
                 })]
             }), (0, i.jsxs)("div", {
-                className: h.UD,
+                className: p.UD,
                 children: [(0, i.jsx)(s.Button, {
                     size: "sm",
                     variant: "secondary",
-                    text: p.intl.string(p.t.nffuyb),
-                    "aria-label": p.intl.string(p.t.nffuyb),
+                    text: h.intl.string(h.t.nffuyb),
+                    "aria-label": h.intl.string(h.t.nffuyb),
                     onClick: e => {
                         e.stopPropagation(), A.default.track(g.HAw.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
                             gift_intent_type: t,

@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(442433),
     A = n(152007),
     m = n(747926),
-    _ = n(734057),
-    p = n(222823),
+    p = n(734057),
+    _ = n(222823),
     g = n(977997),
     f = n(607567),
     x = n(892896),
@@ -106,16 +106,16 @@ let j = s.memo(function(e) {
         unread: M,
         mentionCount: D,
         isMentionLowImportance: G
-    } = (0, o.cf)([p.Ay], () => ({
-        unread: p.Ay.hasUnread(t.id),
-        mentionCount: p.Ay.getMentionCount(t.id),
-        isMentionLowImportance: p.Ay.getIsMentionLowImportance(t.id)
+    } = (0, o.cf)([_.Ay], () => ({
+        unread: _.Ay.hasUnread(t.id),
+        mentionCount: _.Ay.getMentionCount(t.id),
+        isMentionLowImportance: _.Ay.getIsMentionLowImportance(t.id)
     })), U = (0, o.bG)([A.A], () => A.A.isMuted(t.id)), P = s.useCallback(e => {
         (0, m.JA)(t, !e.shiftKey, N.H9.CHANNEL_LIST)
     }, [t]), k = s.useCallback(() => {
         u.A.preload(t.guild_id, t.id)
     }, [t.guild_id, t.id]), w = s.useCallback(e => {
-        let s = _.A.getChannel(t.id);
+        let s = p.A.getChannel(t.id);
         null != s && (0, h.L3)(e, async () => {
             let {
                 default: e

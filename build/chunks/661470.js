@@ -1,10 +1,10 @@
 /** chunk id: 661470 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    L: () => i,
-    a: () => s
+    L: () => l,
+    a: () => i
 });
-let i = (0, n(600975).C)({
+let l = (0, n(600975).C)({
     kind: "guild",
     id: "2026-01_voice_channel_duration_mobile",
     label: "Voice Channel Duration (Mobile)",
@@ -20,8 +20,8 @@ let i = (0, n(600975).C)({
     }]
 });
 
-function s(e, t) {
-    return i.useExperiment({
+function i(e, t) {
+    return l.useExperiment({
         guildId: e,
         location: t
     }).enabled

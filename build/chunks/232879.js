@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(71393),
     A = n(531685),
     m = n(131494),
-    _ = n(330465),
-    p = n(605611);
+    p = n(330465),
+    _ = n(605611);
 let g = s.memo(function(e) {
     let {
         guildNode: t,
@@ -30,16 +30,16 @@ let g = s.memo(function(e) {
         isMentionLowImportance: u.default.getIsMentionLowImportance(g),
         unread: u.default.hasUnread(g)
     })), v = (0, o.Ig)(f) && 0 === b, y = s.useMemo(() => null != n ? n : v ? (0, i.jsx)("div", {
-        className: p.j,
+        className: _.j,
         children: (0, i.jsx)(r.E$n, {
             size: "custom",
             color: "currentColor",
-            className: p.v,
+            className: _.v,
             width: 10,
             height: 10
         })
     }) : null, [n, v]);
-    return (0, i.jsx)(_.A, {
+    return (0, i.jsx)(p.A, {
         ...e,
         guild: f,
         unavailable: E,

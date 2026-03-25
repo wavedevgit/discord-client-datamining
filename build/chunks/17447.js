@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     L: () => l,
-    f: () => s
+    f: () => i
 });
 let l = (0, n(945810).mj)({
         kind: "user",
@@ -19,6 +19,6 @@ let l = (0, n(945810).mj)({
             }
         }
     }),
-    s = e => l.getConfig({
+    i = e => l.getConfig({
         location: e
     }).enabled

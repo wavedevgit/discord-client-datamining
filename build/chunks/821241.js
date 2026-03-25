@@ -27,13 +27,13 @@ function T(e) {
     } = e, f = (0, r.bG)([c.A], () => c.A.getGuild(T.guild_id)), N = (0, d.Ay)(t), g = a(N), {
         avatarSrc: C,
         eventHandlers: {
-            onMouseEnter: p,
-            onMouseLeave: h
+            onMouseEnter: h,
+            onMouseLeave: p
         }
     } = (0, _.a)(!0);
     return (0, i.jsx)("div", {
-        onMouseEnter: p,
-        onMouseLeave: h,
+        onMouseEnter: h,
+        onMouseLeave: p,
         children: (0, i.jsx)(m.A, {
             className: l()(I.rs, {
                 [I.oE]: n

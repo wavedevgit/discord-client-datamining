@@ -22,7 +22,7 @@ function A(e) {
     } = e, {
         connectedChannelId: A,
         connectedActivity: m,
-        activityPanelMode: _
+        activityPanelMode: p
     } = (0, s.cf)([a.Ay], () => {
         let e = a.Ay.getConnectedActivityLocation(),
             t = a.Ay.getSelfEmbeddedActivityForLocation(e);
@@ -31,10 +31,10 @@ function A(e) {
             connectedActivity: t,
             activityPanelMode: a.Ay.getActivityPanelMode()
         }
-    }), p = (0, s.bG)([l.A], () => l.A.getWindowOpen(h.MLl.ACTIVITY_POPOUT));
+    }), _ = (0, s.bG)([l.A], () => l.A.getWindowOpen(h.MLl.ACTIVITY_POPOUT));
     if (!(0, r.Gp)(A)) return null;
     let g = m?.applicationId;
-    return _ !== u.Gd.PANEL || null == g || p || null == A || null == m || (0, c.A)(A) ? null : (0, i.jsx)(d.A, {
+    return p !== u.Gd.PANEL || null == g || _ || null == A || null == m || (0, c.A)(A) ? null : (0, i.jsx)(d.A, {
         maxHeight: t,
         connectedLocation: m.location,
         renderExternalHeader: n

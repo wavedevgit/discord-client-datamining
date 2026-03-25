@@ -1,7 +1,7 @@
 /** chunk id: 377045 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => p
 });
 var i = n(627968),
     s = n(64700),
@@ -16,23 +16,23 @@ var i = n(627968),
     A = n(985018),
     m = n(70461);
 
-function _(e) {
+function p(e) {
     let t, {
-        channelId: _
+        channelId: p
     } = e;
     s.useEffect(() => {
-        u.A.loadThread(_)
+        u.A.loadThread(p)
     });
-    let p = (0, o.DZ)(),
+    let _ = (0, o.DZ)(),
         g = (0, r.bG)([h.A], () => h.A.theme);
-    return p ? (0, i.jsxs)("div", {
+    return _ ? (0, i.jsxs)("div", {
         className: m.A,
         children: [l.Fr && (0, i.jsx)(d.Ay, {
             children: null
         }), (0, i.jsx)(c.A, {
             theme: g
         })]
-    }) : (t = null != _ ? (0, i.jsx)(a.y$y, {
+    }) : (t = null != p ? (0, i.jsx)(a.y$y, {
         type: a.y$y.Type.SPINNING_CIRCLE
     }) : (0, i.jsx)(a.SGT, {
         note: A.intl.string(A.t["LTr+x9"]),

@@ -29,8 +29,8 @@ var i = n(627968),
     C = n(614986),
     T = n(957622),
     y = n(463347),
-    R = n(210714),
-    b = n(565287),
+    b = n(210714),
+    R = n(565287),
     O = n(961350),
     L = n(30793),
     w = n(299091),
@@ -124,7 +124,7 @@ class eC extends s.PureComponent {
             load_time: P.A.getTimeSinceNavigationStart()
         }, {
             flush: !0
-        })), t && this.resolveInvite(), this.resolveGiftCode(), this.resolveGuildTemplate(), p.A.initialize(), (0, R.D)()
+        })), t && this.resolveInvite(), this.resolveGiftCode(), this.resolveGuildTemplate(), p.A.initialize(), (0, b.D)()
     }
     componentDidUpdate(e) {
         !e.hasLoadedExperiments && this.props.hasLoadedExperiments && this.resolveInvite(), e.invite?.state !== this.props.invite?.state && this.maybeFetchApplicationSplash()
@@ -339,7 +339,7 @@ class eC extends s.PureComponent {
                 })
             }), (0, i.jsx)(m.A, {
                 path: ei.BVt.REPORT,
-                render: () => (0, i.jsx)(b.Kz, {})
+                render: () => (0, i.jsx)(R.Kz, {})
             }), (0, i.jsx)(m.A, {
                 path: ei.BVt.REPORT_SECOND_LOOK,
                 render: e => (0, i.jsx)(eN, {

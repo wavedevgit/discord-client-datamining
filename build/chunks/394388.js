@@ -21,8 +21,8 @@ var i = n(627968),
     N = n(49999),
     g = n(985018),
     C = n(333354),
-    p = n(468406),
-    h = n(274993),
+    h = n(468406),
+    p = n(274993),
     x = n(218924);
 
 function R(e) {
@@ -33,16 +33,16 @@ function R(e) {
         analyticsLocations: r
     } = e, o = (0, l.bG)([c.A], () => c.A.useReducedMotion);
     return (0, i.jsxs)("div", {
-        className: p.kL,
+        className: h.kL,
         children: [(0, i.jsx)("div", {
-            className: p.ZS,
+            className: h.ZS,
             children: (0, i.jsx)("img", {
-                className: p.Sl,
-                src: o ? x.A : h.A,
+                className: h.Sl,
+                src: o ? x.A : p.A,
                 alt: "Boost gem"
             })
         }), (0, i.jsxs)("div", {
-            className: p.Qs,
+            className: h.Qs,
             children: [(0, i.jsx)(s.Heading, {
                 variant: "heading-md/semibold",
                 style: {
@@ -52,7 +52,7 @@ function R(e) {
                 children: t
             }), (0, i.jsx)(s.Text, {
                 color: "text-muted",
-                className: p.rf,
+                className: h.rf,
                 variant: "text-sm/medium",
                 children: n
             })]
@@ -119,10 +119,10 @@ function M(e) {
         channel: n
     } = e, a = n.guild_id, r = (0, l.bG)([I.A], () => I.A.getGuild(a), [a]);
     return null == r ? null : (0, i.jsx)(T.A, {
-        contentClassName: p.FG,
-        iconContainerClassName: p.zc,
+        contentClassName: h.FG,
+        iconContainerClassName: h.zc,
         iconNode: (0, i.jsx)(s.XFE, {
-            colorClass: p.Kk
+            colorClass: h.Kk
         }),
         children: (0, i.jsx)(O, {
             boostingPrompt: t,

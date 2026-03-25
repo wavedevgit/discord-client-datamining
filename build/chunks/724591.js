@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(442433),
     A = n(932001),
     m = n(361158),
-    _ = n(976860),
-    p = n(733391),
+    p = n(976860),
+    _ = n(733391),
     g = n(832163),
     f = n(133015),
     x = n(44724),
@@ -40,7 +40,7 @@ let L = s.memo(function(e) {
         location: "GameShopChannelRow"
     });
     s.useEffect(() => {
-        (0, p.Kh)(t.id)
+        (0, _.Kh)(t.id)
     }, [t.id]);
     let k = (0, a.bG)([g.A], () => g.A.getAnnouncement(t.id)),
         w = k?.state === "success" ? k.announcement : void 0,
@@ -57,7 +57,7 @@ let L = s.memo(function(e) {
     let X = s.useCallback(() => {
             q(y.i.TAKE_ACTION);
             let e = g.A.getStorefrontState(t.id)?.activePage ?? 0;
-            (0, _.pX)(v.BVt.CHANNELS_GAME_SHOP(t.id, e))
+            (0, p.pX)(v.BVt.CHANNELS_GAME_SHOP(t.id, e))
         }, [t.id, q]),
         J = s.useCallback(() => {
             (0, x.X)({

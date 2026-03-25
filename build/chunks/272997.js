@@ -18,17 +18,17 @@ function A(e) {
     let {
         guildId: t,
         onSetActivityStatus: n
-    } = e, A = (0, l.bG)([c.default], () => c.default.getId()), m = (0, o.Ay)(A, t)[0], _ = (0, r.YY)(m?.application_id).data ?? void 0, p = s.useCallback(() => {
-        null != _ && ((0, d.xA)(_.id, !0), n())
-    }, [_, n]);
-    return null == _ ? null : (0, i.jsxs)(i.Fragment, {
+    } = e, A = (0, l.bG)([c.default], () => c.default.getId()), m = (0, o.Ay)(A, t)[0], p = (0, r.YY)(m?.application_id).data ?? void 0, _ = s.useCallback(() => {
+        null != p && ((0, d.xA)(p.id, !0), n())
+    }, [p, n]);
+    return null == p ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(u.u, {
-            label: _.name,
+            label: p.name,
             icon: (0, i.jsx)(a.A, {
-                game: _,
+                game: p,
                 className: h.K
             }),
-            setStatus: p
+            setStatus: _
         }), (0, i.jsx)("div", {
             role: "separator",
             className: h.m

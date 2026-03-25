@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(793943),
     A = n(411976),
     m = n(912309),
-    _ = n(400492),
-    p = n(728321),
+    p = n(400492),
+    _ = n(728321),
     g = n(309010),
     f = n(287809),
     x = n(816733),
@@ -80,7 +80,7 @@ function G(e) {
                     if (!__OVERLAY__ && (null != C && clearTimeout(C), E(setTimeout(G, 500)), N(I + 1), 15 === I)) {
                         G();
                         let e = !a.w.get(j.wqg);
-                        a.w.set(j.wqg, e), e && a.w.set(O.L, !0), e ? (0, _.Ak)("discodo") : (0, _.Ak)("user_leave"), x(!0), setTimeout(() => {
+                        a.w.set(j.wqg, e), e && a.w.set(O.L, !0), e ? (0, p.Ak)("discodo") : (0, p.Ak)("user_leave"), x(!0), setTimeout(() => {
                             x(!1)
                         }, 1e3)
                     }
@@ -105,7 +105,7 @@ function G(e) {
         });
     return (0, i.jsx)("div", {
         className: M.Uq,
-        children: (0, i.jsx)(p.A, {
+        children: (0, i.jsx)(_.A, {
             inlineSpecs: D,
             tutorialId: "friends-list",
             position: "right",
@@ -148,15 +148,15 @@ function U() {
         })),
         d = l.fractionalState === R.xc.NONE ? a + o : 0,
         h = (0, r.bG)([f.default], () => f.default.getCurrentUser()),
-        _ = (0, A.W)(),
-        p = n + d + _,
-        S = p === d && d > 0 && n + _ === 0,
+        p = (0, A.W)(),
+        _ = n + d + p,
+        S = _ === d && d > 0 && n + p === 0,
         T = C.A.getHomeLink();
     return S && (T = j.BVt.APPLICATION_STORE), (0, i.jsx)(G, {
         selected: e,
         user: h,
         selectedChannelId: g.A.getChannelId(j.ME),
-        badge: p,
+        badge: _,
         link: T,
         showProgressBadge: t
     })

@@ -7,15 +7,15 @@ n.d(t, {
 });
 var l = n(627968);
 n(64700);
-var s = n(311907),
-    i = n(397927),
+var i = n(311907),
+    s = n(397927),
     r = n(317525),
     a = n(370480),
     o = n(985018);
 let u = "guild-connection-roles";
 
 function c(e) {
-    (0, i.mMO)(async () => {
+    (0, s.mMO)(async () => {
         let {
             default: t
         } = await n.e("92837").then(n.bind(n, 480900));
@@ -25,21 +25,21 @@ function c(e) {
         })
     }, {
         modalKey: u,
-        contextKey: i.SYi,
+        contextKey: s.SYi,
         onCloseRequest: () => {
-            (0, i.OoC)(u, i.SYi)
+            (0, s.OoC)(u, s.SYi)
         }
     })
 }
 
 function d(e) {
-    return (0, s.bG)([r.A], () => (0, a.N8)(r.A.getSortedRoles(e.id)), [e]) ? (0, l.jsx)(i.Drp, {
+    return (0, i.bG)([r.A], () => (0, a.N8)(r.A.getSortedRoles(e.id)), [e]) ? (0, l.jsx)(s.Drp, {
         id: "guild-connection-roles",
         label: o.intl.string(o.t.ghtnss),
-        icon: i.qYV,
+        icon: s.qYV,
         leadingAccessory: {
             type: "icon",
-            icon: i.qYV
+            icon: s.qYV
         },
         action: () => c(e.id)
     }) : null

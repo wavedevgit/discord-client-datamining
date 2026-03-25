@@ -20,8 +20,8 @@ var i, a = n(627968),
     N = n(840065),
     g = n(473145),
     C = n(763754),
-    p = n(888675),
-    h = n(921066),
+    h = n(888675),
+    p = n(921066),
     x = n(652215),
     R = n(985018),
     S = n(811336);
@@ -161,7 +161,7 @@ function F(e) {
             case "exit":
                 return "enter"
         }
-    }(u, E), p = D.includes(E), h = p && "exit" === u, x = l.useCallback(e => {
+    }(u, E), h = D.includes(E), p = h && "exit" === u, x = l.useCallback(e => {
         A(e)
     }, []), R = l.useCallback(() => {
         "exit" === u && t?.()
@@ -200,7 +200,7 @@ function F(e) {
             })
         }
     }, [I, E, u, r]), l.useEffect(() => {
-        if (p && "leaf_fall" === u) {
+        if (h && "leaf_fall" === u) {
             let e = v[E].leafRotationDirection;
             g.createConfetti({
                 id: `${L}-${(0,c.A)()}`,
@@ -250,7 +250,7 @@ function F(e) {
                 sprite: "TOP_LEFT" === E ? y : b
             })
         }
-    }, [p, g, E, u]), (0, a.jsxs)(a.Fragment, {
+    }, [h, g, E, u]), (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(o.K_, {
             ref: N,
             sprites: k,
@@ -268,7 +268,7 @@ function F(e) {
             children: (0, a.jsx)(_.tvC, {
                 animationRef: U,
                 className: s()(S.oQ, {
-                    [S.EG]: h
+                    [S.EG]: p
                 }),
                 nextScene: C,
                 sceneSegments: O,
@@ -305,7 +305,7 @@ function B(e) {
             createMultipleConfettiAt: u,
             addClickListener: A
         } = l.useContext(m.x),
-        [h, O] = l.useState(!1),
+        [p, O] = l.useState(!1),
         M = l.useRef(null),
         {
             reducedMotion: D
@@ -334,12 +334,12 @@ function B(e) {
     });
     let j = l.useCallback(() => {
             if (!D.enabled)
-                if (h || 0 !== Math.floor(50 * Math.random())) {
+                if (p || 0 !== Math.floor(50 * Math.random())) {
                     let e = M.current?.getBoundingClientRect();
                     if (null == e) return;
                     u(e.left + e.width / 2, e.top + e.height / 2)
                 } else O(!0)
-        }, [u, D, h]),
+        }, [u, D, p]),
         y = l.useCallback(() => {
             O(!1)
         }, []),
@@ -365,7 +365,7 @@ function B(e) {
                 onMouseEnter: j
             })
         });
-    return (0, a.jsxs)(p.A, {
+    return (0, a.jsxs)(h.A, {
         iconNode: B,
         timestamp: n.timestamp,
         compact: i,
@@ -373,7 +373,7 @@ function B(e) {
             onClick: G,
             className: S.iU,
             children: t
-        }), h ? (0, a.jsx)(E.Ay, {
+        }), p ? (0, a.jsx)(E.Ay, {
             children: (0, a.jsx)("div", {
                 className: S.LK,
                 children: (0, a.jsx)(F, {
@@ -396,7 +396,7 @@ function H(e) {
     } = A.X.useConfig({
         location: "UserPremiumGuildSubscription"
     });
-    return l ? (0, a.jsx)(h.A, {
+    return l ? (0, a.jsx)(p.A, {
         message: t,
         guild: n,
         usernameHook: i,

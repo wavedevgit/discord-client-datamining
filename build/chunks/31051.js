@@ -21,8 +21,8 @@ var i = n(627968),
     N = n(59784),
     g = n(612669),
     C = n(88001),
-    p = n(652215),
-    h = n(519412),
+    h = n(652215),
+    p = n(519412),
     x = n(985018),
     R = n(260171),
     S = n(421438);
@@ -35,7 +35,7 @@ let O = e => {
         return (0, i.jsx)(o.Button, {
             variant: "expressive",
             size: "md",
-            text: x.intl.string(h.default.rjuKse),
+            text: x.intl.string(p.default.rjuKse),
             icon: l.tvc,
             onClick: () => {
                 if (null == r) return;
@@ -44,7 +44,7 @@ let O = e => {
                     l = _.default.getUser(r.primary_user);
                 if (null == l) return;
                 let c = (0, T.$3)(l);
-                A.default.track(p.HAw.PREMIUM_GROUP_INVITE_EMBED_ACCEPT_CLICKED, {
+                A.default.track(h.HAw.PREMIUM_GROUP_INVITE_EMBED_ACCEPT_CLICKED, {
                     invite_id: t,
                     subscription_id: e
                 });
@@ -61,14 +61,14 @@ let O = e => {
                         premiumGroupPrimaryName: c,
                         isExistingSub: s,
                         onClose: async () => {
-                            m || (m = !0, E._.dispatch(p.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), f.A.isDisplayingWowMomentConfirmation && f.A.isAnimated ? setTimeout(() => {
+                            m || (m = !0, E._.dispatch(h.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), f.A.isDisplayingWowMomentConfirmation && f.A.isAnimated ? setTimeout(() => {
                                 n.onClose()
                             }, u.K) : await n.onClose())
                         }
                     })
                 }, {
                     onCloseRequest: () => {
-                        m || (m = !0, E._.dispatch(p.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), f.A.isDisplayingWowMomentConfirmation && f.A.isAnimated ? setTimeout(() => {
+                        m || (m = !0, E._.dispatch(h.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), f.A.isDisplayingWowMomentConfirmation && f.A.isAnimated ? setTimeout(() => {
                             (0, o.OoC)(d)
                         }, u.K) : (0, o.OoC)(d))
                     },
@@ -87,7 +87,7 @@ let O = e => {
         return (0, i.jsx)(o.Button, {
             variant: "secondary",
             size: "md",
-            text: x.intl.string(h.default["eYHh+z"]),
+            text: x.intl.string(p.default["eYHh+z"]),
             onClick: () => {
                 if (null == a || !l.isDM()) return void I.A.captureMessage("CancelInviteButton onClick: unexpected state", {
                     extra: {
@@ -101,7 +101,7 @@ let O = e => {
                 });
                 let e = l.getRecipientId(),
                     t = _.default.getUser(e);
-                null != t && (A.default.track(p.HAw.PREMIUM_GROUP_INVITE_EMBED_CANCEL_CLICKED, {
+                null != t && (A.default.track(h.HAw.PREMIUM_GROUP_INVITE_EMBED_CANCEL_CLICKED, {
                     invite_id: a.id,
                     subscription_id: a.subscription,
                     invited_user_id: e
@@ -198,8 +198,8 @@ let O = e => {
         });
         if (null == T) return null;
         let f = s === C.xI.PENDING,
-            p = null;
-        return p = I ? f ? (0, i.jsx)(M, {
+            h = null;
+        return h = I ? f ? (0, i.jsx)(M, {
             disabled: !1,
             invite: d,
             channel: n
@@ -216,6 +216,6 @@ let O = e => {
             header: T.header,
             body: T.body,
             compact: a,
-            actionButton: p
+            actionButton: h
         })
     }

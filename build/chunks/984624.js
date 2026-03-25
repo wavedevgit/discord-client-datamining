@@ -15,14 +15,14 @@ var i = n(627968),
     h = n(707592),
     A = n(496092),
     m = n(132860),
-    _ = n(508654),
-    p = n(985018);
+    p = n(508654),
+    _ = n(985018);
 
 function g(e) {
     let {
         channelId: t,
         onClick: n
-    } = e, g = (0, a.Us)(), f = (0, _.Qs)(t), x = (0, l.bG)([u.A], () => u.A.getChannel(t), [t]), {
+    } = e, g = (0, a.Us)(), f = (0, p.Qs)(t), x = (0, l.bG)([u.A], () => u.A.getChannel(t), [t]), {
         canManageGuildEvent: C
     } = (0, o.nr)(x), E = C(f), I = s.useRef(null);
     if (null == f) return null;
@@ -43,13 +43,13 @@ function g(e) {
                     "data-menu-migrated": !0,
                     navId: "exit-options",
                     onSelect: () => {},
-                    "aria-label": p.intl.string(p.t["K6/mk3"]),
+                    "aria-label": _.intl.string(_.t["K6/mk3"]),
                     onClose: t,
                     children: (0, i.jsx)(r.Drp, {
                         id: "end-voice-event",
                         color: "danger",
                         action: b,
-                        label: p.intl.string(p.t.qaYzPA),
+                        label: _.intl.string(_.t.qaYzPA),
                         leadingAccessory: {
                             type: "icon",
                             icon: r.aXh
@@ -68,13 +68,13 @@ function g(e) {
             } = e;
             return (0, i.jsx)(d.A, {
                 buttonRef: I,
-                label: p.intl.string(p.t["6vrfgt"]),
+                label: _.intl.string(_.t["6vrfgt"]),
                 onClick: N,
                 onPopoutClick: t
             })
         }
     }) : (0, i.jsx)(d.A, {
-        label: p.intl.string(p.t["6vrfgt"]),
+        label: _.intl.string(_.t["6vrfgt"]),
         onClick: n
     })
 }

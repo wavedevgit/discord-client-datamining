@@ -46,7 +46,8 @@ let u = e => {
             children: [(0, l.jsxs)("div", {
                 className: c.QB,
                 children: [null != t && (0, l.jsxs)(r.Text, {
-                    variant: "text-sm/bold",
+                    variant: "text-md/medium",
+                    color: "text-strong",
                     children: [t, A && (0, l.jsx)("span", {
                         className: o.m,
                         children: "*"

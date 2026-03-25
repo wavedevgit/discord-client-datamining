@@ -16,8 +16,8 @@ var s = n(503698),
     h = n(309698),
     A = n(47167),
     m = n(713654),
-    _ = n(769015),
-    p = n(508654),
+    p = n(769015),
+    _ = n(508654),
     g = n(974930),
     f = n(961314),
     x = n(58736),
@@ -87,13 +87,13 @@ function H(e) {
             channel: l
         } = e,
         r = (0, T.$F)(l),
-        a = (0, p.Qs)(l.id),
+        a = (0, _.Qs)(l.id),
         c = null != a ? (0, g.G3)(a) : null,
         u = null != a;
     if (s?.type === D.lp.ACTIVITY) null != n && (t = (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(x.Ay.Divider, {
             className: k.yF
-        }), (0, i.jsx)(_.A, {
+        }), (0, i.jsx)(p.A, {
             game: n,
             className: k.RI
         }), (0, i.jsx)(o.Text, {
@@ -138,8 +138,8 @@ function F(e) {
         guild: s,
         appContext: c,
         inCall: d,
-        isChatOpen: _,
-        exitFullScreen: p
+        isChatOpen: p,
+        exitFullScreen: _
     } = e, {
         focusedParticipant: g
     } = (0, r.cf)([j.A], () => ({
@@ -208,8 +208,8 @@ function F(e) {
                     channel: t,
                     appContext: c,
                     inCall: d,
-                    isChatOpen: _,
-                    exitFullScreen: p
+                    isChatOpen: p,
+                    exitFullScreen: _
                 }),
                 children: [(0, i.jsx)(x.Ay.Title, {
                     wrapperClassName: k.DD,

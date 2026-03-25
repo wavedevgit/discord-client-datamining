@@ -1,7 +1,7 @@
 /** chunk id: 481045 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    L7: () => p,
+    L7: () => _,
     qA: () => f
 });
 var i = n(627968),
@@ -16,8 +16,8 @@ var i = n(627968),
     h = n(704037),
     A = n(536482),
     m = n(985018),
-    _ = n(259533);
-let p = () => {
+    p = n(259533);
+let _ = () => {
     (0, o.openUserSettings)(a.X.ACTIVITY_PRIVACY_PANEL)
 };
 
@@ -27,10 +27,10 @@ function g(e) {
         onClick: n
     } = e;
     return (0, i.jsxs)(l.DUT, {
-        className: _.E1,
+        className: p.E1,
         onClick: n,
         children: [(0, i.jsx)("div", {
-            className: _.j3,
+            className: p.j3,
             children: t
         }), (0, i.jsx)(l._BQ, {
             color: l.LU0.colors.TEXT_SUBTLE,
@@ -42,10 +42,10 @@ function g(e) {
 function f(e) {
     let {
         onClosePopout: t
-    } = e, n = r.tz.useSetting(), a = (0, s.bG)([c.Ay], () => c.Ay.getFlattenedGuildIds()), o = (0, d.Kk)(), _ = a.filter(e => !o.has(e)), f = (0, u.AB)(_);
+    } = e, n = r.tz.useSetting(), a = (0, s.bG)([c.Ay], () => c.Ay.getFlattenedGuildIds()), o = (0, d.Kk)(), p = a.filter(e => !o.has(e)), f = (0, u.AB)(p);
     return 0 === a.length ? null : (0, i.jsxs)(g, {
         onClick: () => {
-            t(), p()
+            t(), _()
         },
         children: [(0, i.jsx)(l.Text, {
             variant: "text-sm/semibold",

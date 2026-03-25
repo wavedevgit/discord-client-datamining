@@ -4,9 +4,9 @@ n.d(t, {
     A: () => A
 });
 var l = n(627968),
-    s = n(64700),
-    i = n(503698),
-    r = n.n(i),
+    i = n(64700),
+    s = n(503698),
+    r = n.n(s),
     a = n(311907),
     o = n(473193),
     u = n(397927),
@@ -19,34 +19,34 @@ let A = function(e) {
     let {
         className: t,
         compact: n = !1,
-        contentOnly: i = !1,
+        contentOnly: s = !1,
         zalgo: A = !0,
         preview: f = !1,
         disableInteraction: p = !1,
         childrenRepliedMessage: x,
-        childrenExecutedCommand: v,
-        childrenHeader: C,
-        childrenSystemMessage: N,
-        childrenButtons: T,
-        childrenMessageContent: b,
-        childrenAccessories: j,
-        messageRef: E,
-        focusProps: I = {
+        childrenExecutedCommand: C,
+        childrenHeader: N,
+        childrenSystemMessage: v,
+        childrenButtons: E,
+        childrenMessageContent: T,
+        childrenAccessories: b,
+        messageRef: _,
+        focusProps: j = {
             offset: {
                 left: 4,
                 right: 4
             }
         },
-        hasThread: S,
-        isSystemMessage: _,
+        hasThread: I,
+        isSystemMessage: S,
         hasReply: R,
         author: y,
         onMouseEnter: M,
         onMouseLeave: O,
         ...w
-    } = e, k = (0, a.bG)([h.A], () => y?.guildId == null || y?.colorRoleId == null ? null : h.A.getRole(y.guildId, y.colorRoleId)), L = (0, m.jV)(y?.guildId, k) && (0, d.kz)(y), [G, D] = s.useState(!1), P = s.useCallback(e => {
+    } = e, L = (0, a.bG)([h.A], () => y?.guildId == null || y?.colorRoleId == null ? null : h.A.getRole(y.guildId, y.colorRoleId)), k = (0, m.jV)(y?.guildId, L) && (0, d.kz)(y), [G, D] = i.useState(!1), U = i.useCallback(e => {
         D(!0), M?.(e)
-    }, [M]), U = s.useCallback(e => {
+    }, [M]), P = i.useCallback(e => {
         D(!1), O?.(e)
     }, [O]), H = (0, c.W)({
         location: "BaseMessage"
@@ -56,32 +56,32 @@ let A = function(e) {
             setAnimate: D
         },
         children: (0, l.jsx)(u.vN3, {
-            ...I,
+            ...j,
             children: (0, l.jsxs)("div", {
                 className: r()(t, {
-                    [g.D7]: L,
+                    [g.D7]: k,
                     [g.e8]: H && y?.displayNameStyles != null && y?.guildId == null,
                     [g.iE]: !0,
-                    [g.kl]: i,
+                    [g.kl]: s,
                     [g.oE]: n,
                     [g.VH]: f,
                     [g.E]: !n,
                     [g.GZ]: A,
-                    [g.pR]: S,
-                    [g.X4]: _,
+                    [g.pR]: I,
+                    [g.X4]: S,
                     [g.h8]: R
                 }),
-                ref: E,
+                ref: _,
                 ...w,
                 role: "article",
-                onMouseEnter: P,
-                onMouseLeave: U,
-                children: [x, v, (0, l.jsxs)("div", {
+                onMouseEnter: U,
+                onMouseLeave: P,
+                children: [x, C, (0, l.jsxs)("div", {
                     className: g.PG,
-                    children: [N, C, null == N && b]
-                }), j, null != T ? (0, l.jsx)("div", {
+                    children: [v, N, null == v && T]
+                }), b, null != E ? (0, l.jsx)("div", {
                     className: g.UD,
-                    children: T
+                    children: E
                 }) : null]
             })
         })

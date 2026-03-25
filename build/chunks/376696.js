@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(323073),
     A = n(643501),
     m = n(279250),
-    _ = n(834757),
-    p = n(727353),
+    p = n(834757),
+    _ = n(727353),
     g = n(140547),
     f = n(636920),
     x = n(832163),
@@ -59,7 +59,7 @@ function P(e) {
         [z, q] = (0, a.yK)([b.A], () => [b.A.getStreamForUser(n.id, t.getGuildId()), b.A.getActiveStreamForUser(n.id, t.getGuildId())], [t, n.id]),
         [X, J] = (0, a.yK)([j.A, T.A, v.A, A.default], () => (0, m.eo)(t, j.A, T.A, v.A, A.default)),
         Q = (0, a.bG)([S.default], () => S.default.getId()),
-        $ = (0, a.bG)([y.A], () => (0, _.nr)(z, y.A), [z]),
+        $ = (0, a.bG)([y.A], () => (0, p.nr)(z, y.A), [z]),
         Z = (0, d.m)(n, P ?? $),
         ee = (0, a.bG)([R.Ay], () => R.Ay.getVoiceStatesForChannel(t).find(e => e.user.id === n.id) ?? null, [t, n.id]),
         et = s.useMemo(() => null != ee ? [ee] : [], [ee]),
@@ -107,7 +107,7 @@ function P(e) {
             className: G.AF,
             iconClassName: G.W9,
             textClassName: G.YJ
-        }) : null, null == z || null == k || el ? null : (0, i.jsx)(p.P, {
+        }) : null, null == z || null == k || el ? null : (0, i.jsx)(_.P, {
             stream: z,
             activeStream: q,
             streamActivity: $,

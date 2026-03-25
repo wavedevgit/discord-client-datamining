@@ -21,8 +21,8 @@ var i = n(627968),
     N = n(975412),
     g = n(168186),
     C = n(597929),
-    p = n(589022),
-    h = n(427157),
+    h = n(589022),
+    p = n(427157),
     x = n(287809),
     R = n(486020),
     S = n(203982),
@@ -85,7 +85,7 @@ function b(e, t, n, a, l, s) {
             userId: t.id,
             guildId: d?.guild_id ?? ""
         }) ?? void 0,
-        p = () => (function(e) {
+        h = () => (function(e) {
             let {
                 user: t,
                 guildId: n,
@@ -115,15 +115,15 @@ function b(e, t, n, a, l, s) {
             onContextMenu: 1 === n ? N : T,
             ref: s
         }),
-        h = 1 === n ? E : A;
-    return null != l && null != h && null != s ? (0, i.jsx)(_.YNO, {
+        p = 1 === n ? E : A;
+    return null != l && null != p && null != s ? (0, i.jsx)(_.YNO, {
         targetElementRef: s,
         renderPopout: l,
-        shouldShow: h,
+        shouldShow: p,
         position: "right",
         onRequestClose: g,
-        children: p
-    }) : p()
+        children: h
+    }) : h()
 }
 
 function k(e, t, n, a, l) {
@@ -170,7 +170,7 @@ function F(e) {
         R = (0, u.bG)([x.default], () => x.default.getCurrentUser()),
         D = a.useRef(null),
         y = a.useRef(null),
-        F = a.useMemo(() => (e, t, a) => (o()(null != t, "ExecutedCommand: user cannot be undefined"), o()(null != R, "ExecutedCommand: currentUser cannot be undefined"), o()(null != l, "ExecutedCommand: channel cannot be undefined"), (0, i.jsx)(p.A, {
+        F = a.useMemo(() => (e, t, a) => (o()(null != t, "ExecutedCommand: user cannot be undefined"), o()(null != R, "ExecutedCommand: currentUser cannot be undefined"), o()(null != l, "ExecutedCommand: channel cannot be undefined"), (0, i.jsx)(h.A, {
             ...e,
             user: t,
             currentUser: R,
@@ -186,23 +186,23 @@ function F(e) {
             interactionData: n.interactionData
         })), [l, n.id, n.interactionData]),
         H = (0, g.Am)(n),
-        w = H?.type === m.G4.APPLICATION_COMMAND && null != H.target_user ? new h.A(H.target_user) : null,
+        w = H?.type === m.G4.APPLICATION_COMMAND && null != H.target_user ? new p.A(H.target_user) : null,
         V = H?.type === m.G4.APPLICATION_COMMAND && null != n.messageReference && null != e.renderTargetMessage,
-        q = (0, M.d8)(n.interaction?.user, l),
-        X = (0, M.d8)(w, l),
+        X = (0, M.d8)(n.interaction?.user, l),
+        q = (0, M.d8)(w, l),
         K = a.useMemo(() => e.compact ? (0, U.A)((0, O.i$)(d()(), "LT")) : null, [e.compact]),
         Y = (0, A.Gp)(l.id),
         z = n.interaction;
-    if (null == z || null == q) return null;
-    let J = () => {
-        let t = b(e, z.user, 0, q, e => F(e, z.user, [I.A.AVATAR]), D),
-            n = k(e, z.user, 0, q, e => F(e, z.user));
+    if (null == z || null == X) return null;
+    let W = () => {
+        let t = b(e, z.user, 0, X, e => F(e, z.user, [I.A.AVATAR]), D),
+            n = k(e, z.user, 0, X, e => F(e, z.user));
         return (0, i.jsxs)(a.Fragment, {
             children: [t, n]
         }, "user")
     };
     if (n?.activityInstance === null || (0, C.V)(n)) t = L.intl.format(L.t["rg7U+C"], {
-        userHook: J,
+        userHook: W,
         commandHook: () => {
             let t = function(e, t, n) {
                 let {
@@ -281,8 +281,8 @@ function F(e) {
     }) : null != w && (t = (0, i.jsxs)(i.Fragment, {
         children: [t, (0, i.jsx)(G, {}), (0, i.jsx)(() => {
             if (null == w) return null;
-            let t = b(e, w, 1, X, e => F(e, w, [I.A.AVATAR]), D),
-                n = k(e, w, 1, X, e => F(e, w));
+            let t = b(e, w, 1, q, e => F(e, w, [I.A.AVATAR]), D),
+                n = k(e, w, 1, q, e => F(e, w));
             return (0, i.jsxs)(a.Fragment, {
                 children: [t, n]
             }, "target")
@@ -304,7 +304,7 @@ function F(e) {
             })
         };
         t = Y ? L.intl.format(L.t.kfV8WM, {
-            userHook: J,
+            userHook: W,
             activityHook: () => (0, i.jsx)(_.DUT, {
                 tag: "span",
                 onClick: e,
@@ -314,7 +314,7 @@ function F(e) {
                 })
             })
         }) : L.intl.format(L.t["6FeSyT"], {
-            userHook: J
+            userHook: W
         })
     }
     return (0, i.jsx)(T.f5, {

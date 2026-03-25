@@ -19,9 +19,9 @@ function A(e) {
         entry: t,
         onSelect: A,
         closePopout: m,
-        hideEditButton: _ = !1
+        hideEditButton: p = !1
     } = e, {
-        isEntryAdmin: p,
+        isEntryAdmin: _,
         canEdit: g,
         canRemove: f
     } = (0, u.A)(t), x = (0, o.A)({
@@ -46,7 +46,7 @@ function A(e) {
         "aria-label": h.intl.string(h.t.HpQykc),
         onSelect: A,
         children: [(0, i.jsxs)(r.rXV, {
-            children: [g && !_ ? (0, i.jsx)(r.Drp, {
+            children: [g && !p ? (0, i.jsx)(r.Drp, {
                 id: "update-entry",
                 label: h.intl.string(h.t.XnuOvN),
                 action: function() {
@@ -82,7 +82,7 @@ function A(e) {
                     type: "icon",
                     icon: r.ucK
                 }
-            }) : null, p ? null : (0, i.jsx)(r.Drp, {
+            }) : null, _ ? null : (0, i.jsx)(r.Drp, {
                 id: "report-server-listing",
                 label: h.intl.string(h.t.Aen9eh),
                 action: function() {

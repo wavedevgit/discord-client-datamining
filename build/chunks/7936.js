@@ -25,7 +25,7 @@ let f = () => {
         } catch (e) {
             S(e.body.message)
         }
-    }, R = async () => {
+    }, b = async () => {
         x(!0);
         try {
             let {
@@ -37,7 +37,7 @@ let f = () => {
         } finally {
             x(!1)
         }
-    }, b = (0, i.jsxs)(_.Ay, {
+    }, R = (0, i.jsxs)(_.Ay, {
         children: [(0, i.jsx)(_._V, {
             src: n(142041)
         }), (0, i.jsxs)(_.hE, {
@@ -49,7 +49,7 @@ let f = () => {
             })]
         })]
     });
-    return E ? b : (0, i.jsxs)(_.Ay, {
+    return E ? R : (0, i.jsxs)(_.Ay, {
         children: [(0, i.jsx)(_.hE, {
             children: p.intl.string(p.t.o4JNrO)
         }), (0, i.jsx)(_.tK, {
@@ -82,7 +82,7 @@ let f = () => {
                 children: (0, i.jsx)(o.Button, {
                     text: p.intl.string(p.t.i4jeWR),
                     fullWidth: !0,
-                    onClick: R,
+                    onClick: b,
                     loading: A
                 })
             })]

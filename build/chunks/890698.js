@@ -1,7 +1,7 @@
 /** chunk id: 890698 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b,
+    A: () => R,
     M: () => y
 }), n(938796);
 var i = n(627968),
@@ -41,7 +41,7 @@ let y = () => (0, i.jsxs)(s.Fragment, {
             children: C.intl.string(C.t.ZTNur7)
         })]
     }),
-    R = e => {
+    b = e => {
         let {
             guild: t,
             user: n,
@@ -68,13 +68,13 @@ let y = () => (0, i.jsxs)(s.Fragment, {
             })
         }) : null
     },
-    b = e => {
+    R = e => {
         let t, n, s, {
                 invite: r,
                 disableUser: h = !1,
                 error: _,
                 flatActivityCount: y = !1,
-                isRegister: b = !1,
+                isRegister: R = !1,
                 inUnclaimedFlow: O = !1,
                 showInvitedByHeader: L = !0,
                 className: w
@@ -136,7 +136,7 @@ let y = () => (0, i.jsxs)(s.Fragment, {
                 username: e
             }), V = !0, s = null != _ ? null : (0, i.jsx)(u.tK, {
                 className: T.b$,
-                children: b ? C.intl.format(C.t["6r4JiR"], {
+                children: R ? C.intl.format(C.t["6r4JiR"], {
                     username: e
                 }) : C.intl.format(C.t.Quj7HX, {
                     username: e
@@ -149,7 +149,7 @@ let y = () => (0, i.jsxs)(s.Fragment, {
             className: l()(T.kL, w),
             justify: "center",
             align: "center",
-            children: [(0, i.jsx)(R, {
+            children: [(0, i.jsx)(b, {
                 application: B,
                 guild: D,
                 user: G ? P : null,

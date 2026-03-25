@@ -45,8 +45,8 @@ function w(e) {
         className: O,
         onClick: G,
         onContextMenu: D,
-        onPopoutRequestClose: U,
-        renderPopout: P,
+        onPopoutRequestClose: P,
+        renderPopout: U,
         decorations: B,
         previewGuildId: H,
         subscribeToGroupId: V
@@ -54,8 +54,8 @@ function w(e) {
         analyticsLocations: K
     } = (0, p.Ay)(x.A.USERNAME), $ = w ? "@" : "", {
         nick: Q,
-        colorString: Y,
-        colorStrings: q,
+        colorString: q,
+        colorStrings: Y,
         colorRoleName: Z,
         displayNameStyles: J
     } = t, X = (0, o.bG)([m.A], () => m.A.roleStyle), ee = "username" === X, et = (0, A.a)({
@@ -70,21 +70,21 @@ function w(e) {
         gradientStyle: ec,
         gradientClassname: eu
     } = (0, _.v5K)({
-        colorStrings: q,
+        colorStrings: Y,
         roleStyle: "username",
         includeConvenienceGlow: !0,
         animateGradient: ei
     }), e_ = (0, u.CR)($ + Q), em = {
         className: s()(k.oF, et, {
             [eu]: ed,
-            [k.IW]: "username" === X && null != Y
+            [k.IW]: "username" === X && null != q
         }),
         style: (() => {
-            if (ee) return ed && null != q ? {
+            if (ee) return ed && null != Y ? {
                 ...ec,
-                textDecorationColor: q?.primaryColor ?? void 0
-            } : null != Y ? {
-                color: Y
+                textDecorationColor: Y?.primaryColor ?? void 0
+            } : null != q ? {
+                color: q
             } : void 0
         })(),
         onClick: G,
@@ -105,10 +105,10 @@ function w(e) {
         contextGuildId: z,
         className: k.s4,
         badgeSize: E ? y.Sl.SIZE_12 : void 0
-    }), [E, t.primaryGuild, z, n.author.id, M]), ep = i ?? n.author, eh = null != P && null != R ? (0, a.jsx)(j.A, {
+    }), [E, t.primaryGuild, z, n.author.id, M]), ep = i ?? n.author, eh = null != U && null != R ? (0, a.jsx)(j.A, {
         targetElementRef: F,
         user: ep,
-        renderPopout: P,
+        renderPopout: U,
         shouldShow: R,
         shouldPreload: ea,
         position: d.Fr ? "window_center" : "right",
@@ -118,7 +118,7 @@ function w(e) {
             avatar: t.guildMemberAvatar,
             size: 80
         }) : void 0,
-        onRequestClose: U,
+        onRequestClose: P,
         clickTrap: R,
         children: e => {
             let {
@@ -146,8 +146,8 @@ function w(e) {
         children: [null != eg && !L && E ? (0, a.jsxs)(a.Fragment, {
             children: [" ", eg, " "]
         }) : null, "dot" === X ? (0, a.jsx)(_.WYI, {
-            color: Y,
-            colors: es ? q : null,
+            color: q,
+            colors: es ? Y : null,
             name: Z,
             className: k.m4,
             hoverOverride: ei

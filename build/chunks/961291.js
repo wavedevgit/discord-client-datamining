@@ -19,8 +19,8 @@ var i = n(827734),
     h = n(478772),
     A = n(846500),
     m = n(784297),
-    _ = n(51213),
-    p = n(194066),
+    p = n(51213),
+    _ = n(194066),
     g = n(211643);
 let f = {
         MISSED_MESSAGES: m,
@@ -31,7 +31,7 @@ let f = {
         UPDATE_PROFILE: n(566213),
         FIND_FRIENDS: r,
         ADD_FRIEND: r,
-        FIRST_MESSAGE: p
+        FIRST_MESSAGE: _
     },
     x = e => {
         switch (e.type) {
@@ -80,7 +80,7 @@ let f = {
                 };
             case s.hW.DM_FRIEND_NUDGE:
                 return {
-                    icon: _, color: i.A.colors.BACKGROUND_MOD_STRONG
+                    icon: p, color: i.A.colors.BACKGROUND_MOD_STRONG
                 };
             case s.Uo.INCOMING_FRIEND_REQUESTS:
             case s.Uo.INCOMING_FRIEND_REQUESTS_ACCEPTED:

@@ -1,15 +1,15 @@
 /** chunk id: 380512 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => i
+    A: () => s
 });
 var l = n(627968);
 n(64700);
-var s = n(594808);
+var i = n(594808);
 
-function i(e) {
+function s(e) {
     return {
-        content: (0, l.jsx)(s.Ay, {
+        content: (0, l.jsx)(i.Ay, {
             message: e
         }),
         hasSpoilerEmbeds: !1,

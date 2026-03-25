@@ -117,7 +117,8 @@ let g = e => {
                     children: [null != t && (0, l.jsx)("div", {
                         className: u.QB,
                         children: (0, l.jsxs)(r.Text, {
-                            variant: "text-sm/bold",
+                            variant: "text-md/medium",
+                            color: "text-strong",
                             children: [t, f && (0, l.jsx)("span", {
                                 className: c.m,
                                 children: "*"
@@ -135,7 +136,8 @@ let g = e => {
                     children: [(0, l.jsx)("div", {
                         className: u.QB,
                         children: (0, l.jsxs)(r.Text, {
-                            variant: "text-sm/bold",
+                            variant: "text-md/medium",
+                            color: "text-strong",
                             children: [_, f && (0, l.jsx)("span", {
                                 className: c.m,
                                 children: "*"

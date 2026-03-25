@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(256331),
     A = n(141850),
     m = n(736339),
-    _ = n(701952),
-    p = n(652215),
+    p = n(701952),
+    _ = n(652215),
     g = n(430627);
 
 function f(e, t) {
@@ -135,18 +135,18 @@ let C = ["high", "medium", "low"],
                 block: "center"
             })
         }, [a]);
-        let p = u.default.extractTimestamp(t.start_message_id),
+        let _ = u.default.extractTimestamp(t.start_message_id),
             f = u.default.extractTimestamp(t.end_message_id),
             x = (0, c.e)({
-                timestamp: p
+                timestamp: _
             }),
-            C = Math.max(1, Math.round((f - p) / 1e3)),
+            C = Math.max(1, Math.round((f - _) / 1e3)),
             I = (0, o.WR)({
                 seconds: C,
                 getFormatter: o.i
             }),
             N = t.summary_map?.entries.find(e => "TOPIC_EXTRACTION_SUMMARY" === e.summary_type),
-            b = null != N ? (0, _.i)(N.content_json) : null;
+            b = null != N ? (0, p.i)(N.content_json) : null;
         return (0, i.jsxs)(r.DUT, {
             innerRef: m,
             className: `${g.Nm}${l?` ${g.Sk}`:""}`,
@@ -244,12 +244,12 @@ let C = ["high", "medium", "low"],
 function N(e) {
     let {
         channel: t
-    } = e, n = (0, l.bG)([m.A], () => m.A.getChannelConversations(t.id), [t.id], f), o = (0, l.bG)([m.A], () => m.A.getVisibleConversationIds(t.id), [t.id], x), c = (0, l.bG)([m.A], () => m.A.hasMoreConversations(t.id, "before"), [t.id]), u = (0, l.bG)([m.A], () => m.A.hasMoreConversations(t.id, "after"), [t.id]), _ = (0, l.bG)([m.A], () => m.A.isPendingFetch(t.id), [t.id]), C = (0, l.bG)([h.A], () => h.A.isHighlightingEnabled(), []), E = (0, l.bG)([m.A], () => m.A.getScrollToConversation(t.id), [t.id]), N = s.useCallback(e => {
+    } = e, n = (0, l.bG)([m.A], () => m.A.getChannelConversations(t.id), [t.id], f), o = (0, l.bG)([m.A], () => m.A.getVisibleConversationIds(t.id), [t.id], x), c = (0, l.bG)([m.A], () => m.A.hasMoreConversations(t.id, "before"), [t.id]), u = (0, l.bG)([m.A], () => m.A.hasMoreConversations(t.id, "after"), [t.id]), p = (0, l.bG)([m.A], () => m.A.isPendingFetch(t.id), [t.id]), C = (0, l.bG)([h.A], () => h.A.isHighlightingEnabled(), []), E = (0, l.bG)([m.A], () => m.A.getScrollToConversation(t.id), [t.id]), N = s.useCallback(e => {
         (0, A.UA)(t.id, e)
     }, [t.id]), b = s.useCallback(() => {
         (0, A.UA)(null, null)
     }, []), S = s.useCallback(e => {
-        (0, d.pX)(p.BVt.CHANNEL(e.guild_id, e.channel_id, e.start_message_id))
+        (0, d.pX)(_.BVt.CHANNEL(e.guild_id, e.channel_id, e.start_message_id))
     }, []);
     return (0, i.jsxs)("aside", {
         "aria-label": "Conversations",
@@ -274,7 +274,7 @@ function N(e) {
                 children: (0, i.jsx)(r.DUT, {
                     className: g.Qf,
                     onClick: function() {
-                        if (0 === n.length || _) return;
+                        if (0 === n.length || p) return;
                         let e = n[0].conversation;
                         (0, A.WF)({
                             channelId: t.id,
@@ -284,10 +284,10 @@ function N(e) {
                     children: (0, i.jsx)(r.Text, {
                         variant: "text-sm/medium",
                         color: "text-link",
-                        children: _ ? "Loading..." : "Load previous conversations"
+                        children: p ? "Loading..." : "Load previous conversations"
                     })
                 })
-            }), 0 !== n.length || _ ? n.map(e => {
+            }), 0 !== n.length || p ? n.map(e => {
                 let {
                     conversation: t,
                     color: n
@@ -311,7 +311,7 @@ function N(e) {
                 children: (0, i.jsx)(r.DUT, {
                     className: g.Qf,
                     onClick: function() {
-                        if (0 === n.length || _) return;
+                        if (0 === n.length || p) return;
                         let e = n[n.length - 1].conversation;
                         (0, A.WF)({
                             channelId: t.id,
@@ -321,7 +321,7 @@ function N(e) {
                     children: (0, i.jsx)(r.Text, {
                         variant: "text-sm/medium",
                         color: "text-link",
-                        children: _ ? "Loading..." : "Load newer conversations"
+                        children: p ? "Loading..." : "Load newer conversations"
                     })
                 })
             })]

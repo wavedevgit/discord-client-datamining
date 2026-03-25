@@ -32,14 +32,14 @@ function A(e) {
         guildIds: t,
         iconSize: n = 20,
         prioritizeSelectedGuild: a = !1
-    } = e, A = (0, l.bG)([c.A], () => a ? c.A.getGuildId() : null, [a]), m = (0, l.yK)([o.A], () => t.map(e => o.A.getGuild(e)), [t]), _ = (0, s.useMemo)(() => m.filter(e => null != e), [m]), {
-        visibleGuilds: p,
+    } = e, A = (0, l.bG)([c.A], () => a ? c.A.getGuildId() : null, [a]), m = (0, l.yK)([o.A], () => t.map(e => o.A.getGuild(e)), [t]), p = (0, s.useMemo)(() => m.filter(e => null != e), [m]), {
+        visibleGuilds: _,
         numTruncated: g
     } = (0, s.useMemo)(() => {
-        let e = [..._];
+        let e = [...p];
         if (null != A) {
             let t = e.findIndex(e => e.id === A);
-            t > 0 && (e.splice(t, 1), e.unshift(_[t]))
+            t > 0 && (e.splice(t, 1), e.unshift(p[t]))
         }
         return 4 === e.length ? {
             visibleGuilds: e,
@@ -48,10 +48,10 @@ function A(e) {
             visibleGuilds: e.slice(0, 3),
             numTruncated: e.length - 3
         }
-    }, [_, A]);
+    }, [p, A]);
     return (0, i.jsxs)("div", {
         className: u.WM,
-        children: [p.map(e => (0, i.jsx)(h, {
+        children: [_.map(e => (0, i.jsx)(h, {
             iconSize: n,
             children: (0, i.jsx)(d.$, {
                 guild: e,

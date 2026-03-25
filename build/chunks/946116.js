@@ -3,10 +3,10 @@
 n.d(t, {
     Y1: () => A,
     fx: () => u,
-    g2: () => _,
+    g2: () => p,
     m8: () => h,
     mU: () => m,
-    ul: () => p
+    ul: () => _
 });
 var i, s, l, r, a = n(136722),
     o = n(488926),
@@ -17,7 +17,7 @@ var i, s, l, r, a = n(136722),
     A = ((l = {}).CREATE = "CREATE", l.HUB_SCHOOL_CLUB = "HUB_SCHOOL_CLUB", l.HUB_STUDY = "HUB_STUDY", l.HUB_CLASS = "HUB_CLASS", l.HUB_SOCIAL = "HUB_SOCIAL", l.HUB_MAJOR = "HUB_MAJOR", l.HUB_DORM = "HUB_DORM", l),
     m = ((r = {})[r.ALL = -1] = "ALL", r[r.UNCATEGORIZED = 0] = "UNCATEGORIZED", r[r.SCHOOL_CLUB = 1] = "SCHOOL_CLUB", r[r.CLASS = 2] = "CLASS", r[r.STUDY_SOCIAL = 3] = "STUDY_SOCIAL", r[r.MISC = 5] = "MISC", r);
 
-function _(e) {
+function p(e) {
     return "883060064561299456" === e ? [{
         id: "club",
         value: 1,
@@ -55,7 +55,7 @@ function _(e) {
     }]
 }
 
-function p() {
+function _() {
     return {
         CREATE: {
             id: "CREATE",

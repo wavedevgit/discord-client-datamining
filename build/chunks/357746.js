@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(186111),
     A = n(942975),
     m = n(379229),
-    _ = n(489306),
-    p = n(828162),
+    p = n(489306),
+    _ = n(828162),
     g = n(249584),
     f = n(49999),
     x = n(333354),
@@ -57,8 +57,8 @@ let N = {
         let {
             guildId: t,
             selected: l
-        } = e, b = (0, _.Ay)(t), S = s.useCallback(() => {
-            (0, A.Zm)(t), (0, p.A)(t, c.A.GUILD_POWERUPS_CHANNEL_LIST_ROW), b?.popout?.markAsDismissed(f.i.INDIRECT_ACTION)
+        } = e, b = (0, p.Ay)(t), S = s.useCallback(() => {
+            (0, A.Zm)(t), (0, _.A)(t, c.A.GUILD_POWERUPS_CHANNEL_LIST_ROW), b?.popout?.markAsDismissed(f.i.INDIRECT_ACTION)
         }, [t, b]), T = s.useRef(null), v = (0, o.red)(o.DXt), y = (0, a.bG)([h.A], () => h.A.hasLayers()), j = (0, u.xr)(e => e.fullScreenLayers.length > 0), R = v || y || j, O = s.useCallback(() => {
             if (b?.popout == null || R) return null;
             switch (b?.popout?.type) {

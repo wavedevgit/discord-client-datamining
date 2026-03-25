@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(732777),
     A = n(806931),
     m = n(731854),
-    _ = n(334609);
-let p = s.memo(function(e) {
+    p = n(334609);
+let _ = s.memo(function(e) {
     let {
         channel: t,
         participant: n
@@ -25,20 +25,20 @@ let p = s.memo(function(e) {
         context: m.x.DEFAULT
     });
     if (null == l) return null;
-    let p = o._3J.SIZE_32,
-        g = o.vCh[p].size,
+    let _ = o._3J.SIZE_32,
+        g = o.vCh[_].size,
         f = l.getAvatarURL(t.guild_id, g);
     return (0, i.jsxs)("div", {
-        className: r()(_.vB, {
-            [_.zY]: A
+        className: r()(p.vB, {
+            [p.zY]: A
         }),
         children: [(0, i.jsx)(o.euF, {
-            className: _.my,
-            size: p,
+            className: p.my,
+            size: _,
             src: f,
             "aria-hidden": !0
         }), (0, i.jsx)("div", {
-            className: _.Xh,
+            className: p.Xh,
             children: (0, i.jsx)(o.Text, {
                 variant: "text-xs/medium",
                 color: "text-default",
@@ -58,8 +58,8 @@ function g(e) {
         return n.filter(t => !(!(0, A.Xw)(t) || e.has(t.user.id)))
     }, [n, l]);
     return 0 === r.length ? null : (0, i.jsx)("div", {
-        className: _.kL,
-        children: r.map(e => (0, A.Xw)(e) ? (0, i.jsx)(p, {
+        className: p.kL,
+        children: r.map(e => (0, A.Xw)(e) ? (0, i.jsx)(_, {
             channel: t,
             participant: e
         }, e.user.id) : null)

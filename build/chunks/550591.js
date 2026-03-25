@@ -23,7 +23,7 @@ function c(e) {
     } = e, m = s.useMemo(() => null == n || c ? null : (0, i.jsx)("div", {
         className: o.SH,
         children: n
-    }), [n, c]), _ = l ? t : (0, i.jsx)("div", {
+    }), [n, c]), p = l ? t : (0, i.jsx)("div", {
         className: r()(o.pm, {
             [o.wH]: A
         }),
@@ -38,6 +38,6 @@ function c(e) {
         forceOpen: h,
         ariaHidden: !0,
         asContainer: !l,
-        children: _
+        children: p
     })
 }

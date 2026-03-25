@@ -1,7 +1,7 @@
 /** chunk id: 898375 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => p
 });
 var i = n(627968),
     s = n(64700),
@@ -16,12 +16,12 @@ var i = n(627968),
     A = n(985018),
     m = n(554703);
 
-function _(e) {
+function p(e) {
     let {
         quest: t,
         questDescription: n,
-        completedRatio: _,
-        minimizeFrame: p,
+        completedRatio: p,
+        minimizeFrame: _,
         onClose: g
     } = e, f = (0, o.Ut)(), x = s.useCallback(() => {
         f({
@@ -32,8 +32,8 @@ function _(e) {
         }), (0, h.navigateToQuestHome)({
             fromContent: a.uF.RUNNING_ACTIVITY,
             questId: t.id
-        }), p(), g()
-    }, [t.id, f, p, g]);
+        }), _(), g()
+    }, [t.id, f, _, g]);
     return (0, i.jsxs)("div", {
         className: m.kL,
         children: [(0, i.jsxs)("div", {
@@ -58,7 +58,7 @@ function _(e) {
             children: [(0, i.jsx)("div", {
                 children: (0, i.jsx)(d.A, {
                     size: 48,
-                    percentComplete: _,
+                    percentComplete: p,
                     children: (0, i.jsx)(u.A, {
                         fullWidth: !0,
                         quest: t,

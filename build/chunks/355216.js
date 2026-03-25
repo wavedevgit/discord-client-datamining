@@ -1,7 +1,7 @@
 /** chunk id: 355216 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    HN: () => p,
+    HN: () => _,
     ux: () => g
 });
 var i = n(627968),
@@ -17,9 +17,9 @@ var i = n(627968),
     A = n(628325),
     m = n(849077);
 n(445368);
-var _ = n(626600);
+var p = n(626600);
 
-function p() {
+function _() {
     let {
         setSelectedFilter: e
     } = (0, u.A)(), t = (0, A.S)(e => e.setInboxReadState);
@@ -36,7 +36,7 @@ function g(e) {
             unreadRecentMentionsCount: A,
             unreadChannelIds: m
         } = (0, h.U4)(),
-        p = (t = function() {
+        _ = (t = function() {
             let {
                 unreadRecentMentionsCount: e
             } = (0, h.U4)(), {
@@ -62,7 +62,7 @@ function g(e) {
                 style: {
                     width: s
                 },
-                className: _.xF
+                className: p.xF
             })
         })(t, n), [t, n]), s.useMemo(() => ({
             badge: l,
@@ -78,7 +78,7 @@ function g(e) {
             location: "useInboxBadgeInfo"
         });
     return s.useMemo(() => {
-        if (A > 0) return p;
+        if (A > 0) return _;
         let e = m.length;
         if (0 === e) return {
             badge: null,
@@ -96,8 +96,8 @@ function g(e) {
                         minHeight: 13,
                         minWidth: 13
                     },
-                    className: r()(_.xF, _.pw, {
-                        [_.wH]: u
+                    className: r()(p.xF, p.pw, {
+                        [p.wH]: u
                     })
                 })),
                 badgeType: "unread",
@@ -117,5 +117,5 @@ function g(e) {
             badge: null,
             badgeType: null
         }
-    }, [A, p, m.length, g, u])
+    }, [A, _, m.length, g, u])
 }

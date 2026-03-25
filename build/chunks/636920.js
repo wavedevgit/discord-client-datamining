@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(954571),
     A = n(69555),
     m = n(886019),
-    _ = n(846218),
-    p = n(806246),
+    p = n(846218),
+    _ = n(806246),
     g = n(358957),
     f = n(559405),
     x = n(708455),
@@ -35,18 +35,18 @@ function N(e) {
         className: v,
         iconClassName: y,
         textClassName: j
-    } = e, R = (0, l.bG)([u.A], () => u.A.getVoiceChannelId() === n.id, [n]), O = (0, l.bG)([d.A], () => d.A.can(C.xBc.CONNECT, n), [n]), L = null == t.emoji || (0, _.n)(t.emoji, n);
+    } = e, R = (0, l.bG)([u.A], () => u.A.getVoiceChannelId() === n.id, [n]), O = (0, l.bG)([d.A], () => d.A.can(C.xBc.CONNECT, n), [n]), L = null == t.emoji || (0, p.n)(t.emoji, n);
     s.useEffect(() => {
         h.default.track(C.HAw.VIEW_HANG_STATUS, {
             source: S,
             other_user_id: N,
-            ...(0, p.A)(n.id)
+            ...(0, _.A)(n.id)
         })
     }, [S, n.id, N]);
     let M = s.useCallback(() => {
             !R && O && (c.default.selectVoiceChannel(n.id), T?.(), h.default.track(C.HAw.HANG_STATUS_CTA_CLICKED, {
                 source: S,
-                ...(0, p.A)(n.id),
+                ...(0, _.A)(n.id),
                 other_user_id: N,
                 cta_type: "join"
             }))
@@ -61,7 +61,7 @@ function N(e) {
                 } else(0, A.Iq)(e, !0);
                 T?.(), h.default.track(C.HAw.HANG_STATUS_CTA_CLICKED, {
                     source: S,
-                    ...(0, p.A)(n.id),
+                    ...(0, _.A)(n.id),
                     other_user_id: N,
                     cta_type: "swipe"
                 })

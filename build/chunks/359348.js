@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(186111),
     A = n(532624),
     m = n(350535),
-    _ = n(274372),
-    p = n(572164),
+    p = n(274372),
+    _ = n(572164),
     g = n(399925),
     f = n(652215),
     x = n(985018),
@@ -72,8 +72,8 @@ let N = e => {
                 parentAnalyticsLocation: t
             } = (0, c.Ay)(),
             n = (0, l.bG)([h.A], () => h.A.hasLayers()),
-            r = (0, p.Et)(),
-            o = (0, l.bG)([_.A], () => _.A.getIsAtMaxSaveClipOperations()),
+            r = (0, _.Et)(),
+            o = (0, l.bG)([p.A], () => p.A.getIsAtMaxSaveClipOperations()),
             C = (0, l.bG)([A.Ay], () => A.Ay.getKeybindForAction(f.hCu.SAVE_CLIP));
         if (!r || null == C || n) return null;
         let E = m.dI(C.shortcut, !0);

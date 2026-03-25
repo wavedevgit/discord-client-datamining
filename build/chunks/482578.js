@@ -16,34 +16,36 @@ let o = e => {
             onClick: u,
             canNavigateBack: _,
             onBackClicked: m,
-            isModeratorReport: x
+            isModeratorReport: x,
+            className: p
         } = e,
-        p = a.useRef(null),
-        h = null != n && "cancel" !== n.type,
-        g = _ && n?.type !== "done",
-        A = h || g;
+        h = a.useRef(null),
+        g = null != n && "cancel" !== n.type,
+        A = _ && n?.type !== "done",
+        v = g || A;
     if (a.useEffect(() => {
-            (n?.type === "submit" || n?.type === "done") && p.current?.focus()
-        }, [n?.type]), !A) return null;
-    let v = s.intl.string(s.t.i4jeWR);
-    return n?.type === "submit" ? (t = "critical-primary", v = x ? s.intl.string(d.default.ZUyreS) : s.intl.string(s.t["G+vU89"])) : n?.type === "next" ? v = s.intl.string(s.t.PDTjLN) : n?.type === "cancel" && (v = s.intl.string(s.t["ETE/oC"]), t = "secondary"), (0, l.jsx)(r.jlY, {
+            (n?.type === "submit" || n?.type === "done") && h.current?.focus()
+        }, [n?.type]), !v) return null;
+    let f = s.intl.string(s.t.i4jeWR);
+    return n?.type === "submit" ? (t = "critical-primary", f = x ? s.intl.string(d.default.ZUyreS) : s.intl.string(s.t["G+vU89"])) : n?.type === "next" ? f = s.intl.string(s.t.PDTjLN) : n?.type === "cancel" && (f = s.intl.string(s.t["ETE/oC"]), t = "secondary"), (0, l.jsx)(r.jlY, {
         "data-migration-pending": !0,
         direction: i.A.Direction.HORIZONTAL,
+        className: p,
         children: (0, l.jsxs)(r.ButtonGroup, {
             fullWidth: !0,
-            children: [g && (0, l.jsx)(r.Button, {
+            children: [A && (0, l.jsx)(r.Button, {
                 onClick: m,
                 variant: "secondary",
                 disabled: o,
                 text: s.intl.string(s.t["13/7kX"])
-            }), h && (0, l.jsx)(r.Button, {
+            }), g && (0, l.jsx)(r.Button, {
                 onClick: () => {
                     null != n && u(n)
                 },
                 variant: t,
                 disabled: o || c,
-                buttonRef: p,
-                text: v
+                buttonRef: h,
+                text: f
             })]
         })
     })

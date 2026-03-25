@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(332456),
     A = n(973854),
     m = n(47167),
-    _ = n(698718),
-    p = n(355622),
+    p = n(698718),
+    _ = n(355622),
     g = n(58736),
     f = n(353428),
     x = n(378570),
@@ -94,10 +94,10 @@ function j(e) {
             })
         }), (0, i.jsx)("div", {
             className: y.T,
-            children: (0, i.jsx)(_.A, {
+            children: (0, i.jsx)(p.A, {
                 channel: L,
                 guild: M,
-                chatInputType: p.oU.SIDEBAR
+                chatInputType: _.oU.SIDEBAR
             }, j)
         })]
     })

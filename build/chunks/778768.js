@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(397927),
     A = n(846293),
     m = n(774300),
-    _ = n(566903),
-    p = n(714114),
+    p = n(566903),
+    _ = n(714114),
     g = n(864436),
     f = n(835072),
     x = n(793574),
@@ -52,12 +52,12 @@ function H(e) {
     } = e, u = s.useRef(null), A = (0, N.A)(u), m = (0, G.kt)({
         channel: t
     }), {
-        enabled: _
+        enabled: p
     } = T.A.useExperiment({
         guildId: t.guild_id,
         location: "VoiceInviteSuggestionsPopover"
     }), {
-        analyticsLocations: p
+        analyticsLocations: _
     } = (0, C.Ay)(x.A.VOICE_INVITE_SUGGESTIONS_POPOVER);
     (0, E.A)({
         name: c.ImpressionNames.VOICE_INVITE_SUGGESTIONS_POPOVER,
@@ -65,7 +65,7 @@ function H(e) {
         properties: {
             voice_channel_id: t.id,
             voice_guild_id: t.guild_id,
-            location_stack: p
+            location_stack: _
         }
     }), s.useEffect(() => {
         a?.(u.current)
@@ -92,7 +92,7 @@ function H(e) {
         className: r()(w.popover, k.oO),
         children: (0, i.jsxs)("div", {
             className: k.vW,
-            children: [_ && (0, i.jsx)(h.Text, {
+            children: [p && (0, i.jsx)(h.Text, {
                 variant: "text-sm/medium",
                 color: "text-muted",
                 className: k.DD,
@@ -102,7 +102,7 @@ function H(e) {
                 children: [m.map(e => (0, i.jsx)(F, {
                     channel: t,
                     user: e,
-                    ringingEnabled: _
+                    ringingEnabled: p
                 }, e.id)), (0, i.jsxs)(h.DUT, {
                     tag: "li",
                     onClick: g,
@@ -168,12 +168,12 @@ function F(e) {
         };
         let e = z.find(e => e.type !== U.$pd.CUSTOM_STATUS && e.type !== U.$pd.HANG_STATUS);
         return {
-            activityStatusText: (0, _.A)(e, !1),
+            activityStatusText: (0, p.A)(e, !1),
             activityStatusIcon: null == e ? void 0 : (0, f.f)(e)
         }
     }, [K, z]), {
         voiceChannel: J
-    } = (0, p.A)({
+    } = (0, _.A)({
         userId: n.id
     }), Q = (0, I.Ay)(J), $ = (0, h.S31)(h.clD.ONLINE), Z = "success" === C || "sending" === C, ee = s.useCallback(e => {
         e.stopPropagation(), w || F()

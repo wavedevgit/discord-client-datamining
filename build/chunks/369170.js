@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(788868),
     A = n(665606),
     m = n(985018),
-    _ = n(210276),
-    p = n(988572);
+    p = n(210276),
+    _ = n(988572);
 
 function g(e) {
     let {
@@ -46,12 +46,12 @@ function g(e) {
                 gap: "md",
                 children: [(0, i.jsx)(r._V3, {
                     zoomable: !1,
-                    src: p.A,
+                    src: _.A,
                     width: 197,
                     height: 107
                 }), (0, i.jsx)(r.SGT, {
-                    className: _.Y,
-                    noteClassName: _.A,
+                    className: p.Y,
+                    noteClassName: p.A,
                     note: m.intl.string(A.default["+SuGKb"]),
                     children: m.intl.string(A.default["wh+Rz1"])
                 }), g ? (0, i.jsx)(r.Button, {

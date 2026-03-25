@@ -1,7 +1,7 @@
 /** chunk id: 596540 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => p
 });
 var i = n(627968),
     s = n(64700),
@@ -16,13 +16,13 @@ var i = n(627968),
     A = n(985018),
     m = n(782462);
 
-function _(e) {
+function p(e) {
     let {
         children: t,
         popoutPosition: n,
         popoutAlign: u,
         targetElementRef: m,
-        spacing: _ = 0
+        spacing: p = 0
     } = e, {
         isOpen: g,
         setIsOpen: f
@@ -50,10 +50,10 @@ function _(e) {
         animationPosition: E === c.RK.TITLE_BAR_LEFT ? "bottom" : "left",
         position: n,
         onRequestClose: x,
-        spacing: _,
+        spacing: p,
         renderPopout: () => (0, i.jsx)(l.lGe, {
             "aria-label": A.intl.string(A.t.GSmTKJ),
-            children: (0, i.jsx)(p, {})
+            children: (0, i.jsx)(_, {})
         }),
         children: (e, n) => {
             let {
@@ -64,7 +64,7 @@ function _(e) {
     })
 }
 
-function p() {
+function _() {
     return (0, i.jsxs)("div", {
         className: m.kL,
         children: [(0, i.jsx)("div", {

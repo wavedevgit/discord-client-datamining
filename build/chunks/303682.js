@@ -21,8 +21,8 @@ var i, a = n(627968),
     N = n(326084),
     g = n(851746),
     C = n(761546),
-    p = n(972007),
-    h = n(636184),
+    h = n(972007),
+    p = n(636184),
     x = n(652215),
     R = n(985018),
     S = n(683912);
@@ -32,15 +32,15 @@ let O = e => {
             onClose: n,
             onShare: i
         } = e, r = (0, c.bG)([g.A], () => g.A.getReferralsRemaining()), u = (0, c.bG)([g.A], () => g.A.getHasEligibleFriends()), [m, A] = l.useState(new Map), [E, I] = l.useState(""), N = (0, _.A)(E, 400), {
-            eligibleUsers: h,
+            eligibleUsers: p,
             fetchUsers: O,
             hasError: M,
             isFetching: D,
             resendUsers: P
-        } = (0, p.i)({
+        } = (0, h.i)({
             searchQuery: N,
             selectedUsers: m
-        }), [U, v] = l.useState(!1), L = h.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map);
+        }), [U, v] = l.useState(!1), L = p.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map);
         return null === r ? (0, a.jsx)(d.y$y, {}) : M ? (0, a.jsx)(o.Modal, {
             transitionState: t,
             size: "sm",
@@ -150,7 +150,7 @@ let O = e => {
             _ = (0, c.bG)([g.A], () => g.A.getRecipientStatus()),
             [m, A] = l.useState(new Map),
             [I, T] = l.useState(new Map),
-            [f, p] = l.useState(!1);
+            [f, h] = l.useState(!1);
         return l.useEffect(() => {
             (async () => {
                 let e = new Map;
@@ -179,7 +179,7 @@ let O = e => {
                     size: "md",
                     fullWidth: !0,
                     onClick: async () => {
-                        p(!0), await r([...I.values()]), p(!1)
+                        h(!0), await r([...I.values()]), h(!1)
                     }
                 })
             })),
@@ -215,7 +215,7 @@ let P = e => {
             status: t.get(e.id)
         }))), o(2)
     };
-    return null === r ? (0, a.jsx)(d.y$y, {}) : 2 === s ? (0, a.jsx)(h.h, {
+    return null === r ? (0, a.jsx)(d.y$y, {}) : 2 === s ? (0, a.jsx)(p.h, {
         transitionState: t,
         isReminderConfirmation: 3 === i,
         results: u,

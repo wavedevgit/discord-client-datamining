@@ -15,13 +15,13 @@ var i = n(627968),
     h = n(954571),
     A = n(652215),
     m = n(486974),
-    _ = n(985018),
-    p = n(641131);
+    p = n(985018),
+    _ = n(641131);
 
 function g(e) {
     let {
         channel: t
-    } = e, n = s.useContext(h.AnalyticsContext), g = (0, c.aL)(), f = _.intl.string(p.default["Beo/7v"]), {
+    } = e, n = s.useContext(h.AnalyticsContext), g = (0, c.aL)(), f = p.intl.string(_.default["Beo/7v"]), {
         firstMessage: x
     } = (0, r.OA)(t), C = x?.messageSnapshots?.[0], E = C?.moderatorReport?.reported_user_id;
     return t.isModeratorReportChannel() && null != E ? (0, i.jsx)(o.Ay.Icon, {

@@ -1,7 +1,7 @@
 /** chunk id: 125248 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -15,7 +15,7 @@ var i = n(627968),
     h = n(775602),
     A = n(213966);
 let m = [A.u8, A.n$, A.uN, A.no],
-    _ = s.memo(function(e) {
+    p = s.memo(function(e) {
         let {
             emoji: t,
             onAnimationEnd: n
@@ -33,7 +33,7 @@ let m = [A.u8, A.n$, A.uN, A.no],
         })
     });
 
-function p(e) {
+function _(e) {
     let {
         channelId: t,
         callHeight: n
@@ -63,7 +63,7 @@ function p(e) {
             left: "52%"
         },
         "aria-hidden": !0,
-        children: r.map(e => (0, i.jsx)(_, {
+        children: r.map(e => (0, i.jsx)(p, {
             emoji: e,
             onAnimationEnd: u
         }, e.key))

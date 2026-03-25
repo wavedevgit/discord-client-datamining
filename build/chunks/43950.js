@@ -16,8 +16,8 @@ var i = n(627968),
     h = n(104171),
     A = n(763758),
     m = n(287809),
-    _ = n(139675),
-    p = n(486020),
+    p = n(139675),
+    _ = n(486020),
     g = n(403362),
     f = n(427262),
     x = n(652215),
@@ -37,7 +37,7 @@ function N(e) {
         if (null == s) return null;
         else {
             let e, t, n;
-            return e = p.Ay.getApplicationIconURL({
+            return e = _.Ay.getApplicationIconURL({
                 id: s.application.id,
                 icon: s.application.icon
             }), t = s.application.name, n = r ? E.p_ : E.P3, (0, i.jsx)(o.m, {
@@ -55,7 +55,7 @@ function N(e) {
         m = r ? E.p_ : A ? E.RC : E.P3,
         g = null != h ? (0, i.jsx)("img", {
             alt: a.large_text ?? "",
-            src: (0, _.uD)(u, h, [128, 128]),
+            src: (0, p.uD)(u, h, [128, 128]),
             className: m
         }) : null;
     return A && null != l ? (g = (0, i.jsx)(c.DUT, {
@@ -158,10 +158,10 @@ function y(e) {
         sortedVoiceStates: c,
         onOpenSpotifyTrack: u,
         onOpenSpotifyArtist: A,
-        onOpenSpotifyAlbum: _
-    } = e, p = [];
-    null != n ? p = Array.from(n.embeddedActivity.userIds) : (0, d.A)(t) && null != c && (p = c.map(e => e.user.id));
-    let x = (0, a.yK)([m.default], () => p.map(e => m.default.getUser(e)).filter(g.Vq)),
+        onOpenSpotifyAlbum: p
+    } = e, _ = [];
+    null != n ? _ = Array.from(n.embeddedActivity.userIds) : (0, d.A)(t) && null != c && (_ = c.map(e => e.user.id));
+    let x = (0, a.yK)([m.default], () => _.map(e => m.default.getUser(e)).filter(g.Vq)),
         C = null != n || (0, d.A)(t),
         y = s.useMemo(() => {
             let e = new Map;
@@ -178,7 +178,7 @@ function y(e) {
                 activity: t,
                 user: l,
                 embeddedApp: n,
-                onOpenSpotifyAlbum: _
+                onOpenSpotifyAlbum: p
             }), (0, i.jsxs)("div", {
                 className: E.X0,
                 children: [(0, i.jsx)(b, {
@@ -191,7 +191,7 @@ function y(e) {
                     onOpenSpotifyArtist: A
                 }), (0, i.jsx)(T, {
                     activity: t
-                }), p.length > 0 && (0, i.jsx)(h.Ay, {
+                }), _.length > 0 && (0, i.jsx)(h.Ay, {
                     className: E.TN,
                     guildId: r.guild_id,
                     users: x,

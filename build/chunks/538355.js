@@ -4,8 +4,8 @@ n.d(t, {
     A: () => A
 });
 var l = n(627968),
-    s = n(64700),
-    i = n(954571),
+    i = n(64700),
+    s = n(954571),
     r = n(903369),
     a = n(465364),
     o = n(380512),
@@ -14,7 +14,7 @@ var l = n(627968),
     d = n(652215),
     m = n(985018),
     h = n(903957);
-let g = s.lazy(() => Promise.all([n.e("369"), n.e("72756")]).then(n.bind(n, 532255)));
+let g = i.lazy(() => Promise.all([n.e("369"), n.e("72756")]).then(n.bind(n, 532255)));
 
 function A(e, t) {
     let {
@@ -22,20 +22,20 @@ function A(e, t) {
         formatInline: f = !1,
         noStyleAndInteraction: p = !1,
         isInteracting: x = !1,
-        allowHeading: v = !1,
-        allowList: C = !1,
-        allowLinks: N = !1,
-        allowDevLinks: T = !1,
-        previewLinkTarget: b = !1,
-        viewingChannelId: j
-    } = t, E = (0, c.I)({
+        allowHeading: C = !1,
+        allowList: N = !1,
+        allowLinks: v = !1,
+        allowDevLinks: E = !1,
+        previewLinkTarget: T = !1,
+        viewingChannelId: b
+    } = t, _ = (0, c.I)({
         location: "useMessageRenderedContent"
-    }), [I, S] = s.useState(!1), _ = s.useCallback(e => {
-        e && S(!0)
+    }), [j, I] = i.useState(!1), S = i.useCallback(e => {
+        e && I(!0)
     }, []);
-    return s.useEffect(() => {
-        S(!1)
-    }, [e.content]), s.useMemo(() => {
+    return i.useEffect(() => {
+        I(!1)
+    }, [e.content]), i.useMemo(() => {
         if (null != e.customRenderedContent) return e.customRenderedContent;
         if (e.isUnsupported) return {
             content: m.intl.string(m.t.sWi5EU),
@@ -49,38 +49,38 @@ function A(e, t) {
             } = n(550997);
             return t(e, h, {
                 track: (e, t) => {
-                    i.default.track(e, t)
+                    s.default.track(e, t)
                 }
             })
         }
-        return E.enabled ? {
-            content: (0, l.jsx)(s.Suspense, {
+        return _.enabled ? {
+            content: (0, l.jsx)(i.Suspense, {
                 children: (0, l.jsx)(u.O.Provider, {
                     value: {
                         messageId: e.id,
                         channelId: e.channel_id,
-                        viewingChannelId: j,
+                        viewingChannelId: b,
                         guildId: (0, r.U)(e),
-                        setHasSpoilerEmbeds: _
+                        setHasSpoilerEmbeds: S
                     },
                     children: (0, l.jsx)(g, {
                         content: e.content
                     })
                 })
             }),
-            hasSpoilerEmbeds: I,
+            hasSpoilerEmbeds: j,
             hasBailedAst: !1
         } : (0, a.Ay)(e, {
             hideSimpleEmbedContent: A,
             formatInline: f,
             noStyleAndInteraction: p,
             isInteracting: x,
-            allowHeading: v,
-            allowList: C,
-            allowLinks: N,
-            allowDevLinks: T,
-            previewLinkTarget: b,
-            viewingChannelId: j
+            allowHeading: C,
+            allowList: N,
+            allowLinks: v,
+            allowDevLinks: E,
+            previewLinkTarget: T,
+            viewingChannelId: b
         })
-    }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, A, f, p, x, v, C, N, b, T, j, E.enabled, I])
+    }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, A, f, p, x, C, N, v, T, E, b, _.enabled, j])
 }

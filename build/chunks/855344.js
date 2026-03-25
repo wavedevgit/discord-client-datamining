@@ -1,12 +1,12 @@
 /** chunk id: 855344 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => T
 });
 var l = n(627968);
 n(64700);
-var s = n(311907),
-    i = n(3026),
+var i = n(311907),
+    s = n(3026),
     r = n(397927),
     a = n(964486),
     o = n(58149),
@@ -20,78 +20,78 @@ var s = n(311907),
     f = n(309010),
     p = n(954571),
     x = n(652176),
-    v = n(652215),
-    C = n(746080),
-    N = n(985018),
-    T = n(530358);
-let b = e => {
+    C = n(652215),
+    N = n(746080),
+    v = n(985018),
+    E = n(530358);
+let T = e => {
     let {
         roleIcon: t,
         guild: n
     } = e, {
-        name: b
+        name: T
     } = t;
     (0, a.Ay)(() => {
-        p.default.track(v.HAw.OPEN_POPOUT, {
+        p.default.track(C.HAw.OPEN_POPOUT, {
             type: "Role Icon Popout",
             guild_id: n.id,
             ...(0, o.dI)(g.A.getChannel(f.A.getChannelId(n.id)))
         })
     });
-    let j = (0, s.bG)([A.A], () => null != t.roleId ? A.A.getRole(n.id, t.roleId) : void 0),
-        E = (0, d.U)(j),
-        I = E ? N.intl.formatToPlainString(N.t.t0928V, {
-            name: b
-        }) : N.intl.formatToPlainString(N.t.UDDkGy, {
-            name: b
+    let b = (0, i.bG)([A.A], () => null != t.roleId ? A.A.getRole(n.id, t.roleId) : void 0),
+        _ = (0, d.U)(b),
+        j = _ ? v.intl.formatToPlainString(v.t.t0928V, {
+            name: T
+        }) : v.intl.formatToPlainString(v.t.UDDkGy, {
+            name: T
         }),
-        S = {
+        I = {
             ...t,
             src: null == t.src ? t.src : (0, u.ux)(t.src, 40),
             size: 40
         },
-        _ = E ? () => {
-            (0, h.pX)(v.BVt.CHANNEL(n.id, C.VV.ROLE_SUBSCRIPTIONS))
+        S = _ ? () => {
+            (0, h.pX)(C.BVt.CHANNEL(n.id, N.VV.ROLE_SUBSCRIPTIONS))
         } : () => {
             (0, c.K)({
                 guildId: n.id,
                 location: {
-                    section: v.JJy.ROLE_ICON_POPOUT
+                    section: C.JJy.ROLE_ICON_POPOUT
                 }
             })
         };
     return (0, l.jsx)(r.lGe, {
         children: (0, l.jsx)(x.Uq, {
             children: (0, l.jsxs)("div", {
-                className: T.jC,
+                className: E.jC,
                 children: [(0, l.jsxs)("div", {
-                    className: T.rb,
+                    className: E.rb,
                     children: [(0, l.jsx)("div", {
-                        className: T.Xq,
+                        className: E.Xq,
                         children: (0, l.jsx)(m.A, {
-                            ...S,
+                            ...I,
                             enableTooltip: !1,
-                            className: T.__invalid_roleIcon,
+                            className: E.__invalid_roleIcon,
                             enableHeight: !1
                         })
                     }), (0, l.jsxs)("div", {
-                        className: T.bM,
+                        className: E.bM,
                         children: [(0, l.jsx)(r.Heading, {
                             variant: "heading-md/semibold",
-                            className: T.S3,
-                            children: (0, l.jsx)(i.A, {
-                                children: b
+                            className: E.S3,
+                            children: (0, l.jsx)(s.A, {
+                                children: T
                             })
                         }), (0, l.jsx)(r.Text, {
                             variant: "text-sm/normal",
-                            children: I
+                            children: j
                         })]
                     })]
                 }), (0, l.jsx)(r.Button, {
                     size: "sm",
                     variant: "secondary",
-                    text: N.intl.string(N.t["H930+H"]),
-                    onClick: _,
+                    text: v.intl.string(v.t["H930+H"]),
+                    onClick: S,
                     icon: r._Jp,
                     fullWidth: !0,
                     autoFocus: !0

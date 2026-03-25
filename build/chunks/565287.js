@@ -47,13 +47,13 @@ let x = e => {
         }, [S]);
         let T = E.filter(e => e !== u.tY.MEDIA_TAKEDOWN),
             y = E.includes(u.tY.MEDIA_TAKEDOWN),
-            R = T.length > 0,
-            b = R && y;
+            b = T.length > 0,
+            R = b && y;
         r.useEffect(() => {
-            !i && S && !b && (R ? N("dsa") : y && N("tida"))
-        }, [i, S, b, R, y]), r.useEffect(() => {
-            i || !S || R || y || n()
-        }, [i, S, R, y, n]);
+            !i && S && !R && (b ? N("dsa") : y && N("tida"))
+        }, [i, S, R, b, y]), r.useEffect(() => {
+            i || !S || b || y || n()
+        }, [i, S, b, y, n]);
         let O = r.useCallback(e => {
                 N(e)
             }, []),
@@ -79,7 +79,7 @@ let x = e => {
             children: (0, s.jsx)(a.$mQ, {
                 className: f.k,
                 "data-migration-pending": !0,
-                children: !i && S && (R || y) ? (0, s.jsxs)(a.tN_, {
+                children: !i && S && (b || y) ? (0, s.jsxs)(a.tN_, {
                     width: "100%",
                     activeSlide: v,
                     centered: !1,
@@ -91,8 +91,8 @@ let x = e => {
                     }), (0, s.jsx)(a.q7S, {
                         id: "dsa",
                         children: (0, s.jsx)(p.c, {
-                            showBackButton: b,
-                            onBack: b ? L : void 0,
+                            showBackButton: R,
+                            onBack: R ? L : void 0,
                             dsaCapabilities: T,
                             renderFooter: k,
                             onClose: n,
@@ -101,8 +101,8 @@ let x = e => {
                     }), (0, s.jsx)(a.q7S, {
                         id: "tida",
                         children: (0, s.jsx)(m.K, {
-                            showBackButton: b,
-                            onBack: b ? L : void 0,
+                            showBackButton: R,
+                            onBack: R ? L : void 0,
                             renderFooter: k,
                             onClose: n,
                             onReopen: w

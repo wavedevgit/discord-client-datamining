@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(793574),
     A = n(688810),
     m = n(313961),
-    _ = n(385318),
-    p = n(750765),
+    p = n(385318),
+    _ = n(750765),
     g = n(183184),
     f = n(384059),
     x = n(480890),
@@ -71,9 +71,9 @@ function eu(e) {
         channel: t
     } = e, {
         parentAnalyticsLocation: n
-    } = (0, A.Ay)(), l = (0, ei.A)(t.id), [o, h] = (0, er.A)(t), m = (0, en.L)(t), _ = (0, es.Vv)(), p = (0, es.tp)(), g = s.useRef(null), [x, C] = (0, c.V)("age-verification-stage-popover-dismissed", !1), E = s.useContext(D.vG);
+    } = (0, A.Ay)(), l = (0, ei.A)(t.id), [o, h] = (0, er.A)(t), m = (0, en.L)(t), p = (0, es.Vv)(), _ = (0, es.tp)(), g = s.useRef(null), [x, C] = (0, c.V)("age-verification-stage-popover-dismissed", !1), E = s.useContext(D.vG);
     if (l) return null;
-    let I = p && !x;
+    let I = _ && !x;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(U.l, {
             ref: g,
@@ -82,10 +82,10 @@ function eu(e) {
             label: function(e, t, n, i) {
                 let s = !(arguments.length > 4) || void 0 === arguments[4] || arguments[4];
                 return !s && i ? null : n ? eo.intl.string(eo.t.NzITVo) : e ? eo.intl.string(eo.t.GCimTk) : t ? eo.intl.string(eo.t.hLbG5N) : eo.intl.string(eo.t.e4WMvx)
-            }(o, m, _, p, x),
-            iconComponent: _ ? a._xi : a.E7M,
+            }(o, m, p, _, x),
+            iconComponent: p ? a._xi : a.E7M,
             onClick: () => {
-                (0, f.X)(n, f.O.REQUEST_TO_SPEAK, !o), C(!0), _ ? d.A.showAgeVerificationGetStartedModal({
+                (0, f.X)(n, f.O.REQUEST_TO_SPEAK, !o), C(!0), p ? d.A.showAgeVerificationGetStartedModal({
                     entryPoint: u.q1.STAGE_CHANNEL_RAISE_HAND
                 }) : h()
             },
@@ -121,7 +121,7 @@ let eh = s.memo(function(e) {
         className: ec.kL,
         children: [(0, i.jsxs)("div", {
             className: ec.qi,
-            children: [(0, i.jsx)(ep, {
+            children: [(0, i.jsx)(e_, {
                 channelId: t.id
             }), n ? (0, i.jsx)(eu, {
                 channel: t
@@ -160,7 +160,7 @@ function em(e) {
         canManageGuildEvent: c
     } = (0, T.nr)(t), d = (0, l.bG)([J.A], () => J.A.getStageInstanceByChannel(t.id), [t.id]), u = (0, l.bG)([I.Ay], () => I.Ay.getGuildScheduledEvent(d?.guild_scheduled_event_id)), {
         suppress: m
-    } = (0, R.A)(t), _ = V.default.getId(), [p] = (0, er.A)(t), g = X.Ay.isModerator(_, t.id), C = (0, z.Ni)(t.id), E = c(u), {
+    } = (0, R.A)(t), p = V.default.getId(), [_] = (0, er.A)(t), g = X.Ay.isModerator(p, t.id), C = (0, z.Ni)(t.id), E = c(u), {
         parentAnalyticsLocation: N
     } = (0, A.Ay)(), b = s.useRef(null), v = () => (function(e) {
         let {
@@ -220,7 +220,7 @@ function em(e) {
                 popoutOpen: s
             })
         }
-    }) : m && !C || p ? (0, i.jsx)(P.A, {
+    }) : m && !C || _ ? (0, i.jsx)(P.A, {
         label: eo.intl.string(eo.t.SMKyih),
         onClick: v
     }) : (0, i.jsx)(P.A, {
@@ -229,7 +229,7 @@ function em(e) {
     })
 }
 
-function e_(e) {
+function ep(e) {
     let {
         channel: t
     } = e, {
@@ -245,7 +245,7 @@ function e_(e) {
     })
 }
 
-function ep(e) {
+function e_(e) {
     let {
         channelId: t
     } = e, {
@@ -297,7 +297,7 @@ let eg = s.memo(function(e) {
                 closePopout: t
             } = e;
             return (0, i.jsx)(G.A, {
-                children: (0, i.jsx)(p.A, {
+                children: (0, i.jsx)(_.A, {
                     onClose: t,
                     minimal: !0,
                     onInteraction: (0, x.s)("VideoDeviceMenu", n, {
@@ -342,7 +342,7 @@ let eg = s.memo(function(e) {
                         closePopout: t
                     } = e;
                     return (0, i.jsx)(G.A, {
-                        children: (0, i.jsx)(_.default, {
+                        children: (0, i.jsx)(p.default, {
                             onClose: t,
                             renderInputDevices: !0,
                             renderInputModes: !0,
@@ -387,13 +387,13 @@ let eg = s.memo(function(e) {
                 canGoLive: T,
                 hasPermission: I,
                 disabled: H
-            }) : null, (0, i.jsx)(ep, {
+            }) : null, (0, i.jsx)(e_, {
                 channelId: t.id
             }), D && (0, i.jsx)(eu, {
                 channel: t
             }), D && d && r && (0, i.jsx)(eA, {
                 channel: t
-            }), D && !r && (0, i.jsx)(e_, {
+            }), D && !r && (0, i.jsx)(ep, {
                 channel: t
             }), (0, i.jsx)(L.A, {
                 channel: t
@@ -412,7 +412,7 @@ function ef(e) {
         className: ec.iE,
         children: [(0, i.jsx)("div", {
             className: ec.qi,
-            children: (0, i.jsx)(ep, {
+            children: (0, i.jsx)(e_, {
                 channelId: t.id
             })
         }), (0, i.jsx)(em, {

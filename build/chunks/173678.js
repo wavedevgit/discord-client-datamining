@@ -1,7 +1,7 @@
 /** chunk id: 173678 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    M: () => p,
+    M: () => _,
     z: () => g
 });
 var i = n(627968),
@@ -17,7 +17,7 @@ var i = n(627968),
     A = n(733557),
     m = n(101616);
 
-function _(e, t, n) {
+function p(e, t, n) {
     (0, o.A)({
         skuId: e.skuId,
         isGift: !0,
@@ -27,14 +27,14 @@ function _(e, t, n) {
     })
 }
 
-function p(e, t) {
+function _(e, t) {
     let {
         moreCount: n,
         profileOwner: l,
         analyticsLocations: o,
         onViewWishlist: u,
         isSingleCard: m = !1,
-        wishlistId: p,
+        wishlistId: _,
         showTypeTooltip: g = !1,
         cardSize: f
     } = t, x = null != e.bundleItems && e.bundleItems.length > 0, C = null != n && n > 0, E = g && !C, I = C ? h.intl.string(h.t.TxBQzD) : h.intl.string(h.t.pLPjsb), N = {
@@ -45,7 +45,7 @@ function p(e, t) {
     }, b = !x && e.collectiblesItem.type === s.R.PROFILE_EFFECT;
     return (0, i.jsx)(d.A, {
         onCardClick: () => {
-            C ? u() : _(e, l, o)
+            C ? u() : p(e, l, o)
         },
         tooltipConfig: N,
         shouldScalePreview: x || !b,
@@ -72,7 +72,7 @@ function p(e, t) {
         moreCount: n,
         isSingleCard: m,
         wishlistItem: e,
-        wishlistId: p,
+        wishlistId: _,
         cardSize: f
     }, e.skuId)
 }
@@ -83,7 +83,7 @@ function g(e, t) {
         analyticsLocations: r,
         wishlistId: a,
         onViewWishlist: o
-    } = t, c = null != e.bundleItems && e.bundleItems.length > 0, d = p(e, {
+    } = t, c = null != e.bundleItems && e.bundleItems.length > 0, d = _(e, {
         profileOwner: n,
         analyticsLocations: r,
         onViewWishlist: o,
@@ -108,7 +108,7 @@ function g(e, t) {
             className: m.S7,
             children: [(0, i.jsx)(l.DUT, {
                 onClick: () => {
-                    _(e, n, r)
+                    p(e, n, r)
                 },
                 className: m.Hh,
                 children: (0, i.jsx)(l.Text, {

@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(704413),
     A = n(9842),
     m = n(253932),
-    _ = n(734057),
-    p = n(994500),
+    p = n(734057),
+    _ = n(994500),
     g = n(661191),
     f = n(988012),
     x = n(141468),
@@ -53,7 +53,7 @@ let w = s.memo(function e(t) {
         } = t,
         K = G.sl8.has(l.type) ? l.messageReference : void 0,
         W = (0, a.bG)([A.A], () => A.A.getMessageByReference(K)),
-        Y = (0, a.bG)([_.A], () => l.type === G.lAJ.THREAD_STARTER_MESSAGE && W.state === A.a.LOADED ? _.A.getChannel(W.message.channel_id) : null),
+        Y = (0, a.bG)([p.A], () => l.type === G.lAJ.THREAD_STARTER_MESSAGE && W.state === A.a.LOADED ? p.A.getChannel(W.message.channel_id) : null),
         z = m.X6.useSetting(),
         q = m.hD.useSetting(),
         X = m.rs.useSetting(),
@@ -75,7 +75,7 @@ let w = s.memo(function e(t) {
             previewLinkTarget: !0
         }),
         ei = (0, I.Ay)(l),
-        es = (0, a.bG)([_.A], () => l.hasFlag(G.pr7.HAS_THREAD) && _.A.getChannel(g.default.castMessageIdAsChannelId(l.id))),
+        es = (0, a.bG)([p.A], () => l.hasFlag(G.pr7.HAS_THREAD) && p.A.getChannel(g.default.castMessageIdAsChannelId(l.id))),
         el = l.type === G.lAJ.THREAD_STARTER_MESSAGE && W.state === A.a.LOADED && null != Y,
         er = !el && void 0 === n,
         ea = (0, y.A)({
@@ -92,7 +92,7 @@ let w = s.memo(function e(t) {
         message: W.message,
         channel: Y,
         hasThread: !1
-    }) : (p.A.isBlockedForMessage(l) ? n = U.t["+FcYM/"] : p.A.isIgnoredForMessage(l) ? n = U.t["VFWjc+"] : (0, C.kf)(l) && F && (n = U.t.xfkfTK), void 0 !== n) ? (0, i.jsx)(V, {
+    }) : (_.A.isBlockedForMessage(l) ? n = U.t["+FcYM/"] : _.A.isIgnoredForMessage(l) ? n = U.t["VFWjc+"] : (0, C.kf)(l) && F && (n = U.t.xfkfTK), void 0 !== n) ? (0, i.jsx)(V, {
         className: D,
         compact: o,
         count: 1,

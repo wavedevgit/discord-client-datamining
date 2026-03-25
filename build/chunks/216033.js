@@ -29,7 +29,8 @@ function o(e) {
             className: d.w,
             children: t
         }), null != n && (0, l.jsx)(r.Text, {
-            variant: "text-sm/normal",
+            variant: "text-md/normal",
+            color: "text-subtle",
             className: d.r,
             children: c(n)
         })]

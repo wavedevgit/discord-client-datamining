@@ -5,8 +5,8 @@ n.d(t, {
 });
 var l = n(627968);
 n(64700);
-var s = n(397927),
-    i = n(964486),
+var i = n(397927),
+    s = n(964486),
     r = n(58149),
     a = n(652176),
     o = n(448290),
@@ -22,7 +22,7 @@ let A = function(e) {
         message: n,
         onClose: A
     } = e, f = u.A.getChannel(c.A.getChannelId(t.id));
-    return ((0, i.Ay)(() => {
+    return ((0, s.Ay)(() => {
         d.default.track(m.HAw.OPEN_POPOUT, {
             type: "New Member Badge Popout",
             guild_id: t.id,
@@ -36,18 +36,18 @@ let A = function(e) {
                 className: g.rb,
                 children: [(0, l.jsx)("div", {
                     className: g.zc,
-                    children: (0, l.jsx)(s.NVf, {
+                    children: (0, l.jsx)(i.NVf, {
                         size: "custom",
                         color: "currentColor",
                         width: 40,
                         height: 40
                     })
                 }), (0, l.jsxs)("div", {
-                    children: [(0, l.jsx)(s.Heading, {
+                    children: [(0, l.jsx)(i.Heading, {
                         variant: "heading-md/semibold",
                         className: g.wx,
                         children: h.intl.string(h.t["v/OYd2"])
-                    }), (0, l.jsx)(s.Text, {
+                    }), (0, l.jsx)(i.Text, {
                         variant: "text-sm/normal",
                         children: h.intl.string(h.t.Z85MlD)
                     })]
@@ -55,7 +55,7 @@ let A = function(e) {
             }), (0, l.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: g.lI,
-                children: (0, l.jsx)(s.Button, {
+                children: (0, l.jsx)(i.Button, {
                     variant: "primary",
                     size: "sm",
                     text: h.intl.format(h.t["+xsVS6"], {

@@ -1,7 +1,7 @@
 /** chunk id: 156652 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _,
+    A: () => p,
     x: () => A
 });
 var i, s = n(627968),
@@ -25,8 +25,8 @@ function m(e) {
         renderCenter: u
     } = e, A = l.useRef(null), {
         width: m,
-        ref: _
-    } = (0, c.Ay)(), p = (0, d.bf)(m);
+        ref: p
+    } = (0, c.Ay)(), _ = (0, d.bf)(m);
     return (0, s.jsx)(o.xpW, {
         containerRef: A,
         children: (0, s.jsxs)("div", {
@@ -40,10 +40,10 @@ function m(e) {
                 className: h.K1,
                 children: n?.()
             }), u?.(), (0, s.jsx)(d.Ay.Provider, {
-                value: p,
+                value: _,
                 children: (0, s.jsxs)("div", {
                     className: h.q6,
-                    ref: _,
+                    ref: p,
                     children: [(0, s.jsx)("div", {
                         className: h.i$,
                         children: i?.()
@@ -60,7 +60,7 @@ function m(e) {
     })
 }
 
-function _(e) {
+function p(e) {
     let {
         screenMessage: t,
         onDoubleClick: n,
@@ -71,7 +71,7 @@ function _(e) {
         renderChatToasts: c,
         renderVoiceChannelEffects: d,
         style: A,
-        ..._
+        ...p
     } = e;
     return (0, s.jsxs)("div", {
         className: a()(h.zr, {
@@ -86,7 +86,7 @@ function _(e) {
             size: "large",
             ...t
         }) : null, (0, s.jsx)(m, {
-            ..._
+            ...p
         }), c?.(), d?.()]
     })
 }

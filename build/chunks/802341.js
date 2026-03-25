@@ -1,11 +1,12 @@
 /** chunk id: 802341 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => f
+    A: () => p,
+    T: () => f
 });
 var l = n(627968),
-    s = n(64700),
-    i = n(311907),
+    i = n(64700),
+    s = n(311907),
     r = n(451988),
     a = n(397927),
     o = n(714114),
@@ -19,65 +20,77 @@ var l = n(627968),
 
 function f(e) {
     let {
-        guild: t,
-        message: n
-    } = e, f = s.useRef(null), {
-        voiceState: p,
-        voiceChannel: x
-    } = (0, o.A)({
-        userId: n.author.id,
-        guildId: t.id
-    }), [v, C] = s.useState(!1), N = (0, i.bG)([d.A], () => d.A.getChannel(n.channel_id)?.isVocal()), T = s.useRef(new r.J_(50, () => {
-        C(!0)
-    })), b = s.useRef(new r.J_(175, () => {
-        C(!1)
+        channel: t,
+        children: n,
+        childWrapperClassName: s
+    } = e, o = i.useRef(null), [u, c] = i.useState(!1), d = i.useRef(new r.J_(50, () => {
+        c(!0)
+    })), m = i.useRef(new r.J_(175, () => {
+        c(!1)
     }));
-    s.useEffect(() => {
-        let e = T.current,
-            t = b.current;
+    i.useEffect(() => {
+        let e = d.current,
+            t = m.current;
         return () => {
             e.cancel(), t.cancel()
         }
     }, []);
-    let j = s.useCallback(() => {
-            b.current.cancel(), T.current.delay()
+    let g = i.useCallback(() => {
+            m.current.cancel(), d.current.delay()
         }, []),
-        E = s.useCallback(() => {
-            T.current.cancel(), b.current.delay()
-        }, []),
-        I = (0, i.bG)([m.A], () => {
-            if (null == x) return !1;
-            let e = (0, u.r9)() && (0, u.UK)(x.id);
-            return (x.isPrivate() || m.A.can(g.xBc.CONNECT, x)) && !e
-        });
-    return null != p && null != x && x.isGuildVocal() && I && !N ? (0, l.jsx)(a.YNO, {
-        targetElementRef: f,
+        A = i.useCallback(() => {
+            d.current.cancel(), m.current.delay()
+        }, []);
+    return (0, l.jsx)(a.YNO, {
+        targetElementRef: o,
         animation: a.YNO.Animation.TRANSLATE,
         align: "center",
         autoInvert: !0,
         nudgeAlignIntoViewport: !0,
         position: "right",
-        shouldShow: v,
+        shouldShow: u,
         renderPopout: () => (0, l.jsx)("div", {
-            onMouseEnter: j,
-            onMouseLeave: E,
+            onMouseEnter: g,
+            onMouseLeave: A,
             children: (0, l.jsx)(h.A, {
-                channel: x,
-                message: n
+                channel: t
             })
         }),
-        children: () => (0, l.jsx)("span", {
+        children: () => (0, l.jsx)("div", {
+            className: s,
+            ref: o,
+            onMouseEnter: g,
+            onMouseLeave: A,
+            children: n
+        })
+    })
+}
+
+function p(e) {
+    let {
+        guild: t,
+        message: n
+    } = e, {
+        voiceState: i,
+        voiceChannel: r
+    } = (0, o.A)({
+        userId: n.author.id,
+        guildId: t.id
+    }), a = (0, s.bG)([d.A], () => d.A.getChannel(n.channel_id)?.isVocal()), h = (0, s.bG)([m.A], () => {
+        if (null == r) return !1;
+        let e = (0, u.r9)() && (0, u.UK)(r.id);
+        return (r.isPrivate() || m.A.can(g.xBc.CONNECT, r)) && !e
+    });
+    return null != i && null != r && r.isGuildVocal() && h && !a ? (0, l.jsx)(f, {
+        channel: r,
+        childWrapperClassName: A.y,
+        children: (0, l.jsx)(c.A, {
             className: A.B,
-            onMouseEnter: j,
-            onMouseLeave: E,
-            ref: f,
-            children: (0, l.jsx)(c.A, {
-                size: "custom",
-                color: "currentColor",
-                width: 20,
-                height: 20,
-                channel: x
-            })
+            size: "custom",
+            color: "currentColor",
+            width: 20,
+            height: 20,
+            channel: r
         })
     }) : null
 }

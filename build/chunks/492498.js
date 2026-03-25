@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(323073),
     A = n(202803),
     m = n(636922),
-    _ = n(835835),
-    p = n(566908),
+    p = n(835835),
+    _ = n(566908),
     g = n(253932),
     f = n(734057),
     x = n(517019),
@@ -66,7 +66,7 @@ function R(e) {
         guildFilter: E.Ay.guildFilter,
         roleFilter: E.Ay.roleFilter,
         everyoneFilter: E.Ay.everyoneFilter
-    })), I = (0, p.Sc)(), N = (0, u.A)(m), b = (0, u.A)(g), y = (0, u.A)(x);
+    })), I = (0, _.Sc)(), N = (0, u.A)(m), b = (0, u.A)(g), y = (0, u.A)(x);
     s.useEffect(() => {
         E.Ay.hasLoadedEver ? (null != N && m !== N || null != b && g !== b || null != y && x !== y) && j(n, !0) : j(n, !0)
     }, [N, m, b, g, y, x, n, !0]), (0, d.Ay)(() => {
@@ -75,7 +75,7 @@ function R(e) {
         c.A.truncateMentions(S.Ue3)
     }, []);
     let R = s.useCallback(() => null, []);
-    return (0, i.jsx)(_.Ay, {
+    return (0, i.jsx)(p.Ay, {
         className: r()(v.sH, {
             [v.qC]: I
         }),

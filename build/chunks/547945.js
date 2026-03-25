@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(397927),
     A = n(928039),
     m = n(636922),
-    _ = n(976860),
-    p = n(151282),
+    p = n(976860),
+    _ = n(151282),
     g = n(199160),
     f = n(551640),
     x = n(970244),
@@ -39,7 +39,7 @@ let R = {
 
 function O() {
     return s.useEffect(() => {
-        (0, p.sy)()
+        (0, _.sy)()
     }, []), (0, i.jsx)(L, {})
 }
 
@@ -97,7 +97,7 @@ function M(e) {
                 className: j.WG,
                 children: [(0, i.jsx)(S.A, {
                     channel: n,
-                    gotoChannel: () => (0, _.pX)(v.BVt.CHANNEL(n.getGuildId(), n.id)),
+                    gotoChannel: () => (0, p.pX)(v.BVt.CHANNEL(n.getGuildId(), n.id)),
                     children: null
                 }), s.map(e => {
                     let t = l.has(e.scheduledMessageId);
@@ -155,12 +155,12 @@ let D = s.memo(function(e) {
                 (0, b.xb)(e)
         }
     }(t.state), A = s.useCallback(() => {
-        (0, p.mk)(t.scheduledMessageId).then(() => {
+        (0, _.mk)(t.scheduledMessageId).then(() => {
             (0, x.Re)()
         }).catch(e => {
             (0, x.kM)(e.message)
         })
-    }, [t.scheduledMessageId]), _ = s.useCallback(() => {
+    }, [t.scheduledMessageId]), p = s.useCallback(() => {
         (0, x.CI)({
             scheduledMessage: t
         })
@@ -191,7 +191,7 @@ let D = s.memo(function(e) {
                     size: "sm",
                     children: [(0, i.jsx)(d.K0, {
                         icon: h.O4,
-                        onClick: _,
+                        onClick: p,
                         variant: "icon-only",
                         "aria-label": y.intl.string(y.t.SBcdAN)
                     }), (0, i.jsx)(d.K0, {

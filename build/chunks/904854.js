@@ -1,70 +1,146 @@
 /** chunk id: 904854 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => h
 });
 var i = n(627968),
     a = n(64700),
     l = n(158954),
     r = n(311907),
     s = n(397927),
-    o = n(21119),
-    c = n(907459),
-    d = n(287809),
-    u = n(763754),
-    _ = n(447215),
-    m = n(888675),
-    A = n(502197),
-    E = n(985018),
-    I = n(443300);
+    o = n(802341),
+    c = n(538451),
+    d = n(21119),
+    u = n(907459),
+    _ = n(734057),
+    m = n(287809),
+    A = n(562153),
+    E = n(763754),
+    I = n(447215),
+    T = n(888675),
+    f = n(502197),
+    N = n(985018),
+    g = n(443300);
 
-function T(e) {
-    var t;
-    let n, T, f, N, g, C, {
-            message: p,
-            channel: h,
-            compact: x
-        } = e,
-        R = (0, A.K)(p),
-        S = (0, r.yK)([d.default], () => p.call?.participants != null ? p.call.participants.map(e => d.default.getUser(e)).filter(e => null != e).filter(e => e.id !== p.author.id) : [], [p.author.id, p.call]),
-        O = (0, r.bG)([o.A], () => o.A.getUserAffinitiesMap(), []),
-        M = a.useMemo(() => (0, c.L)(S, O, "VoiceSession - participants"), [S, O]),
-        D = (t = p.author, n = (0, _.P)({
-            user: t,
-            channelId: h.id,
-            guildId: h.guild_id,
-            messageId: p.id
-        }), T = (0, _.P)({
-            user: M[0],
-            channelId: h.id,
-            guildId: h.guild_id,
-            messageId: p.id
-        }), f = (0, _.P)({
-            user: M[1],
-            channelId: h.id,
-            guildId: h.guild_id,
-            messageId: p.id
-        }), N = (0, u.Ay)(p), g = (0, u.d8)(M[0], h), C = (0, u.d8)(M[1], h), null == R ? E.intl.format(E.t["eX6e/3"], {
-            username: N.nick,
-            usernameHook: n(N)
-        }) : E.intl.format(E.t.YUbgR8, {
-            userCount: M.length + 1,
-            username: N.nick,
-            usernameHook: n(N),
-            username2: g.nick,
-            username2Hook: T(g),
-            username3: C.nick,
-            username3Hook: f(C),
-            otherCount: M.length - 1,
-            duration: R
-        }));
-    return (0, i.jsx)(m.A, {
-        iconNode: (0, i.jsx)(l.HKD, {
+function C(e) {
+    let {
+        users: t,
+        guildId: n,
+        channelId: a
+    } = e;
+    return (0, i.jsx)(s.lGe, {
+        className: g.XM,
+        children: (0, i.jsx)(s.HOs, {
+            className: g.XG,
+            children: (0, i.jsx)("div", {
+                children: t.map(e => (0, i.jsx)(c.A, {
+                    user: e,
+                    guildId: n ?? void 0,
+                    channelId: a,
+                    nick: A.Ay.getNickname(n, a, e)
+                }, e.id))
+            })
+        })
+    })
+}
+
+function h(e) {
+    let {
+        message: t,
+        channel: n,
+        compact: c
+    } = e, A = (0, f.K)(t), h = (0, r.yK)([m.default], () => t.call?.participants != null ? t.call.participants.map(e => m.default.getUser(e)).filter(e => null != e).filter(e => e.id !== t.author.id) : [], [t.author.id, t.call]), p = (0, r.bG)([d.A], () => d.A.getUserAffinitiesMap(), []), x = a.useMemo(() => (0, u.L)(h, p, "VoiceSession - participants"), [h, p]), R = t.messageReference?.channel_id, S = (0, r.bG)([_.A], () => _.A.getChannel(R)), O = function(e, t, n, l, r, c) {
+        let d = (0, I.P)({
+                user: n,
+                channelId: t.id,
+                guildId: t.guild_id,
+                messageId: e.id
+            }),
+            u = (0, I.P)({
+                user: l[0],
+                channelId: t.id,
+                guildId: t.guild_id,
+                messageId: e.id
+            }),
+            _ = (0, I.P)({
+                user: l[1],
+                channelId: t.id,
+                guildId: t.guild_id,
+                messageId: e.id
+            }),
+            m = (0, E.Ay)(e),
+            [A, T] = l,
+            f = (0, E.d8)(A, t),
+            h = (0, E.d8)(T, t),
+            p = function(e, t) {
+                let n = a.useRef(null),
+                    [l, r] = a.useState(!1),
+                    o = a.useCallback(n => (0, i.jsx)(C, {
+                        users: n,
+                        guildId: e,
+                        channelId: t
+                    }), [e, t]);
+                return a.useCallback(e => (t, a) => (0, i.jsx)(s.YNO, {
+                    targetElementRef: n,
+                    renderPopout: () => o(e),
+                    shouldShow: l,
+                    position: "bottom",
+                    onRequestClose: () => r(!1),
+                    children: e => (0, i.jsx)(s.DUT, {
+                        ...e,
+                        tag: "a",
+                        style: {
+                            display: "inline"
+                        },
+                        innerRef: n,
+                        onClick: () => {
+                            r(e => !e)
+                        },
+                        children: t
+                    })
+                }, a), [l, o])
+            }(t.guild_id, t.id),
+            x = a.useCallback((e, t) => null == c ? e : (0, i.jsx)(o.T, {
+                channel: c,
+                childWrapperClassName: g.c6,
+                children: (0, i.jsx)(s.DUT, {
+                    tag: "a",
+                    children: e
+                })
+            }, t), [c]);
+        return null == r ? N.intl.format(N.t["eX6e/3"], {
+            username: m.nick,
+            usernameHook: d(m),
+            channelHook: x
+        }) : N.intl.format(N.t.YUbgR8, {
+            userCount: l.length + 1,
+            username: m.nick,
+            usernameHook: d(m),
+            username2: f.nick,
+            username2Hook: u(f),
+            username3: h.nick,
+            username3Hook: _(h),
+            otherCount: l.length - 1,
+            othersHook: p([n, ...l]),
+            duration: r
+        })
+    }(t, n, t.author, x, A, S), M = a.useMemo(() => {
+        let e = (0, i.jsx)(l.HKD, {
             size: "md",
             color: s.LU0.colors.STATUS_POSITIVE
-        }),
-        iconContainerClassName: I.z,
-        timestamp: p.timestamp,
-        compact: x,
-        children: D
+        });
+        return null == S || null != A ? e : (0, i.jsx)(o.T, {
+            channel: S,
+            children: (0, i.jsx)(l.HKD, {
+                size: "md",
+                color: s.LU0.colors.STATUS_POSITIVE
+            })
+        })
+    }, [S, A]);
+    return (0, i.jsx)(T.A, {
+        iconNode: M,
+        iconContainerClassName: g.zc,
+        timestamp: t.timestamp,
+        compact: c,
+        children: O
     })
 }

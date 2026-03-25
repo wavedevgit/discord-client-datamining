@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(581007),
     A = n(522435),
     m = n(46054),
-    _ = n(954571),
-    p = n(652215),
+    p = n(954571),
+    _ = n(652215),
     g = n(985018),
     f = n(499711),
     x = n(206314);
@@ -36,7 +36,7 @@ function C(e) {
         location: "VoiceChannelStatus"
     }), S = b && (0, A.TP)(N), T = null != N && N.length > 0 && !S, v = (0, d.Ay)(t, !0), y = null != C && C.length > 0;
     if (s.useEffect(() => {
-            T && _.default.track(p.HAw.VOICE_CHANNEL_TOPIC_VIEWED, {
+            T && p.default.track(_.HAw.VOICE_CHANNEL_TOPIC_VIEWED, {
                 channel_id: t.id,
                 guild_id: t.guild_id
             })

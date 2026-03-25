@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(587895),
     A = n(44120),
     m = n(317560),
-    _ = n(533406),
-    p = n(183555),
+    p = n(533406),
+    _ = n(183555),
     g = n(661492),
     f = n(146423),
     x = n(662349),
@@ -43,7 +43,7 @@ function j(e) {
         singleCardInfo: A
     } = e, {
         trackUserProfileWishlistAction: m
-    } = (0, p.NJ)(), _ = s.useCallback(() => {
+    } = (0, _.NJ)(), p = s.useCallback(() => {
         m({
             action: S.Mq.PRESS_WISHLIST_BREADCRUMB_CARD,
             skuId: t.id,
@@ -82,14 +82,14 @@ function j(e) {
                 spec: y,
                 cardStyle: r()(v.Nr, v.Q1, c),
                 skuPreviewStyle: r()(v.ho, d),
-                onClick: _,
+                onClick: p,
                 "aria-label": T.intl.formatToPlainString(T.t.ZBB4Ty, {
                     productName: (0, g.TC)(t)
                 }),
                 onHoverOrFocusChange: R,
                 children: (0, i.jsx)(x.A, {
                     spec: y,
-                    onClick: b ? E : _,
+                    onClick: b ? E : p,
                     isHoveringOrFocusing: j,
                     label: I,
                     icon: N
@@ -98,7 +98,7 @@ function j(e) {
         }), a && (0, i.jsx)(C.A, {
             title: A.title,
             description: A.description,
-            onClick: _
+            onClick: p
         })]
     })
 }
@@ -112,14 +112,14 @@ function R(e) {
     } = e, a = (0, c.bG)([h.A], () => h.A.getApplication(t.applicationId)), {
         analyticsLocations: o
     } = (0, u.Ay)(...l ?? [], d.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON), A = s.useCallback(() => {
-        (0, _.a)(t, {
+        (0, p.a)(t, {
             isGift: !0,
             giftRecipient: n,
             giftingOrigin: b.vQ.USER_PROFILE_WISHLIST
         }, {
             analyticsLocations: o
         })
-    }, [t, n, o]), p = s.useCallback(() => {
+    }, [t, n, o]), _ = s.useCallback(() => {
         a?.guildId != null && (0, m.R)({
             skuId: t.id,
             applicationId: t.applicationId,
@@ -139,7 +139,7 @@ function R(e) {
         sku: t,
         analyticsLocations: o,
         wishlistOwner: n,
-        onDetailsClick: p,
+        onDetailsClick: _,
         onPurchaseClick: A,
         singleCardInfo: g,
         ...r

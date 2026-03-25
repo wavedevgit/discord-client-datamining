@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(652215),
     A = n(746080),
     m = n(49999),
-    _ = n(294726),
-    p = n(985018),
+    p = n(294726),
+    _ = n(985018),
     g = n(959853),
     f = n(728444);
 let x = s.memo(function(e) {
@@ -40,11 +40,11 @@ let x = s.memo(function(e) {
         children: [(0, i.jsx)("div", {
             className: f.Xs,
             children: (0, i.jsx)(a.m, {
-                text: p.intl.string(p.t.fgq1gs),
+                text: _.intl.string(_.t.fgq1gs),
                 position: "top",
                 children: (0, i.jsx)(o.DUT, {
                     onClick: b,
-                    "aria-label": p.intl.string(p.t.fgq1gs),
+                    "aria-label": _.intl.string(_.t.fgq1gs),
                     children: (0, i.jsx)(o.PGe, {
                         size: "xs",
                         color: "currentColor",
@@ -56,7 +56,7 @@ let x = s.memo(function(e) {
             className: f.yW,
             children: (0, i.jsx)(o.LpS, {
                 disableColor: !0,
-                text: p.intl.string(p.t.y2b7CA),
+                text: _.intl.string(_.t.y2b7CA),
                 className: g.q
             })
         })]
@@ -69,7 +69,7 @@ let x = s.memo(function(e) {
             className: e,
             color: "currentColor"
         }),
-        text: p.intl.string(_.default.vCzwM7),
+        text: _.intl.string(p.default.vCzwM7),
         selected: x,
         onClick: N,
         trailing: S

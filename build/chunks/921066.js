@@ -20,8 +20,8 @@ var i, a = n(627968),
     N = n(168350),
     g = n(649963),
     C = n(763754),
-    p = n(652215),
-    h = n(985018),
+    h = n(652215),
+    p = n(985018),
     x = n(625780),
     R = n(810309),
     S = n(274993),
@@ -93,15 +93,15 @@ function v(e) {
         children: [(0, a.jsx)(E.A, {
             guild: t,
             analyticsLocation: {
-                page: p.liQ.GUILD_CHANNEL,
-                section: p.JJy.CHANNEL_TEXT_AREA,
-                object: p.ZSU.BOOST_ANNOUNCEMENT_UPSELL
+                page: h.liQ.GUILD_CHANNEL,
+                section: h.JJy.CHANNEL_TEXT_AREA,
+                object: h.ZSU.BOOST_ANNOUNCEMENT_UPSELL
             }
         }), i && (0, a.jsx)(d.vN3, {
             children: (0, a.jsx)("button", {
                 className: x.Zf,
                 onClick: r,
-                "aria-label": h.intl.string(h.t.eaRpLR),
+                "aria-label": p.intl.string(p.t.eaRpLR),
                 children: (0, a.jsx)("span", {
                     role: "img",
                     "aria-hidden": "true",
@@ -141,9 +141,9 @@ function j(e) {
             guild: t,
             variant: "secondary",
             analyticsLocation: {
-                page: p.liQ.GUILD_CHANNEL,
-                section: p.JJy.CHANNEL_TEXT_AREA,
-                object: p.ZSU.BOOST_ANNOUNCEMENT_UPSELL
+                page: h.liQ.GUILD_CHANNEL,
+                section: h.JJy.CHANNEL_TEXT_AREA,
+                object: h.ZSU.BOOST_ANNOUNCEMENT_UPSELL
             }
         })
     })
@@ -165,12 +165,12 @@ function y(e) {
             showProgressBar: !0,
             animate: l
         }), (0, a.jsx)(L, {
-            title: h.intl.format(h.t.SbSWvY, {
+            title: p.intl.format(p.t.SbSWvY, {
                 username: r.nick,
                 usernameHook: s,
                 numSubscriptions: o
             }),
-            body: h.intl.format(h.t.dWm8Iu, {
+            body: p.intl.format(p.t.dWm8Iu, {
                 learnMoreHook: e => (0, a.jsx)(d.DUT, {
                     tag: "a",
                     role: "link",
@@ -178,8 +178,8 @@ function y(e) {
                         null != n && (c ? (0, f.A)(n.id, _.A.GUILD_BOOSTING_SYSTEM_MESSAGE) : (0, m.K)({
                             guildId: n.id,
                             location: {
-                                section: p.JJy.CHANNEL_TEXT_AREA,
-                                object: p.ZSU.BOOST_ANNOUNCEMENT_UPSELL
+                                section: h.JJy.CHANNEL_TEXT_AREA,
+                                object: h.ZSU.BOOST_ANNOUNCEMENT_UPSELL
                             }
                         }))
                     },
@@ -213,12 +213,12 @@ function b(e) {
             showProgressBar: !0,
             animate: r
         }), (0, a.jsx)(U, {
-            title: h.intl.format(h.t["7t1Ecm"], {
+            title: p.intl.format(p.t["7t1Ecm"], {
                 username: s.nick,
                 usernameHook: o,
                 numSubscriptions: c
             }),
-            body: h.intl.string(h.t.nybLqy)
+            body: p.intl.string(p.t.nybLqy)
         }), null != n && (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsx)(A.A, {
                 className: x.WM,
@@ -247,11 +247,11 @@ function k(e) {
             animate: l
         }), (0, a.jsx)(U, {
             className: x.sf,
-            title: h.intl.format(h.t["/1IQGD"], {
+            title: p.intl.format(p.t["/1IQGD"], {
                 username: r.nick,
                 usernameHook: s
             }),
-            body: h.intl.string(h.t.nIEjuk)
+            body: p.intl.string(p.t.nIEjuk)
         }), null != n && (0, a.jsx)(v, {
             guild: n,
             message: t,
@@ -267,7 +267,7 @@ function G(e) {
         usernameHook: i,
         compact: l
     } = e;
-    return t.hasFlag(p.pr7.IS_FIRST_BOOSTER) ? (0, a.jsx)(k, {
+    return t.hasFlag(h.pr7.IS_FIRST_BOOSTER) ? (0, a.jsx)(k, {
         message: t,
         guild: n,
         usernameHook: i

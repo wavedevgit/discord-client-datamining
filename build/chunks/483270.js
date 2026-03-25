@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(311907),
     A = n(397927),
     m = n(442433),
-    _ = n(414798),
-    p = n(775602),
+    p = n(414798),
+    _ = n(775602),
     g = n(793574),
     f = n(688810),
     x = n(485947),
@@ -53,7 +53,7 @@ let W = w.Ay.getEnableHardwareAcceleration(),
             sectionId: l,
             userId: r,
             guildOwnerId: a
-        } = e, o = s.useRef(null), d = (0, h.bG)([L.A], () => L.A.isTyping(t.id, r)), A = (0, h.bG)([y.Ay], () => y.Ay.getMember(t.guild_id, r)), p = (0, h.bG)([j.A], () => A?.colorRoleId != null ? j.A.getRole(t.guild_id, A.colorRoleId)?.name : void 0, [t.guild_id, A]), g = (0, h.bG)([M.default], () => M.default.getUser(r)), f = (0, h.bG)([M.default], () => M.default.getCurrentUser()), x = g?.id === f?.id, E = (0, h.bG)([R.A, O.A], () => x ? O.A.getStatus() : R.A.getStatus(r, t.guild_id)), N = (0, h.bG)([R.A], () => R.A.isMobileOnline(r)), b = (0, h.bG)([R.A, O.A], () => x ? O.A.getActivities() : R.A.getActivities(r, t.guild_id)), D = (0, h.bG)([v.A], () => v.A.getAnyStreamForUser(r)), G = (0, c.rm)(r), P = (0, h.bG)([S.A], () => S.A.canUserViewChannel(t.id, l, r)), w = g?.id != null && g.id === a, F = s.useCallback(e => {
+        } = e, o = s.useRef(null), d = (0, h.bG)([L.A], () => L.A.isTyping(t.id, r)), A = (0, h.bG)([y.Ay], () => y.Ay.getMember(t.guild_id, r)), _ = (0, h.bG)([j.A], () => A?.colorRoleId != null ? j.A.getRole(t.guild_id, A.colorRoleId)?.name : void 0, [t.guild_id, A]), g = (0, h.bG)([M.default], () => M.default.getUser(r)), f = (0, h.bG)([M.default], () => M.default.getCurrentUser()), x = g?.id === f?.id, E = (0, h.bG)([R.A, O.A], () => x ? O.A.getStatus() : R.A.getStatus(r, t.guild_id)), N = (0, h.bG)([R.A], () => R.A.isMobileOnline(r)), b = (0, h.bG)([R.A, O.A], () => x ? O.A.getActivities() : R.A.getActivities(r, t.guild_id)), D = (0, h.bG)([v.A], () => v.A.getAnyStreamForUser(r)), G = (0, c.rm)(r), P = (0, h.bG)([S.A], () => S.A.canUserViewChannel(t.id, l, r)), w = g?.id != null && g.id === a, F = s.useCallback(e => {
             null != g && (0, m.L3)(e, async () => {
                 let {
                     default: e
@@ -74,7 +74,7 @@ let W = w.Ay.getEnableHardwareAcceleration(),
             }), U._.dispatchToLastSubscribed(B.jej.INSERT_TEXT, {
                 plainText: e,
                 rawText: n
-            }), _.A.startTyping(t.id)
+            }), p.A.startTyping(t.id)
         }, [g, t]), Y = s.useCallback(e => {
             e.stopPropagation(), (0, C.K)({
                 guildId: t.guild_id,
@@ -116,7 +116,7 @@ let W = w.Ay.getEnableHardwareAcceleration(),
                     activities: b,
                     colorString: A?.colorString,
                     colorStrings: A?.colorStrings,
-                    colorRoleName: p,
+                    colorRoleName: _,
                     isTyping: d,
                     channel: t,
                     guildId: t.guild_id,
@@ -197,7 +197,7 @@ let W = w.Ay.getEnableHardwareAcceleration(),
 
 function J(e) {
     var t, n;
-    let l, a, u, m, _, {
+    let l, a, u, m, p, {
             channel: x,
             guild: C
         } = e,
@@ -210,7 +210,7 @@ function J(e) {
         {
             navigator: T,
             listRef: v
-        } = (t = E, n = Y, l = (0, h.bG)([p.A], () => p.A.keyboardModeEnabled), a = s.useRef(null), u = s.useCallback((e, t) => {
+        } = (t = E, n = Y, l = (0, h.bG)([_.A], () => _.A.keyboardModeEnabled), a = s.useRef(null), u = s.useCallback((e, t) => {
             let i = a.current;
             if (null == i) return;
             let s = parseInt(t, 10),
@@ -232,7 +232,7 @@ function J(e) {
             t.scrollToTop({
                 callback: () => requestAnimationFrame(() => e())
             })
-        }), []), _ = s.useCallback(() => new Promise(e => {
+        }), []), p = s.useCallback(() => new Promise(e => {
             let t = a.current;
             if (null == t) return e();
             t.scrollToBottom({
@@ -246,7 +246,7 @@ function J(e) {
                 setFocus: u,
                 isEnabled: l,
                 scrollToStart: m,
-                scrollToEnd: _
+                scrollToEnd: p
             }),
             listRef: a
         }),

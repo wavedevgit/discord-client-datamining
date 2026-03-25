@@ -29,8 +29,8 @@ var i = n(627968),
     C = n(976860),
     T = n(210714),
     y = n(961350),
-    R = n(650048),
-    b = n(71393),
+    b = n(650048),
+    R = n(71393),
     O = n(299091),
     L = n(954571),
     w = n(975571),
@@ -121,7 +121,7 @@ class q extends s.PureComponent {
                 guild_id: t.guild?.id,
                 channel_id: t.channel?.id,
                 inviter_id: t.inviter?.id,
-                user_is_member: null != t.guild && null != b.A.getGuild(t.guild.id),
+                user_is_member: null != t.guild && null != R.A.getGuild(t.guild.id),
                 size_total: t.approximate_member_count,
                 invite_type: null != t.type ? F.Xd[t.type] : void 0
             }), this.getMode() === K && i && !e.authenticated) {
@@ -403,7 +403,7 @@ class q extends s.PureComponent {
         }
     }
 }
-let Y = c.Ay.connectStores([O.A, R.A, y.default, v.A, m.A], e => {
+let Y = c.Ay.connectStores([O.A, b.A, y.default, v.A, m.A], e => {
     let {
         inviteKey: t
     } = e;
@@ -411,7 +411,7 @@ let Y = c.Ay.connectStores([O.A, R.A, y.default, v.A, m.A], e => {
         invite: O.A.getInvite(t) ?? {},
         nativeAppState: v.A.getState(t),
         authenticated: y.default.isAuthenticated(),
-        defaultRoute: R.A.defaultRoute,
+        defaultRoute: b.A.defaultRoute,
         isUnderage: m.A.isUnderageAnonymous()
     }
 })(q)

@@ -1,7 +1,7 @@
 /** chunk id: 957785 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => p
 });
 var i = n(627968),
     s = n(64700),
@@ -15,13 +15,13 @@ var i = n(627968),
     h = n(524380),
     A = n(985018),
     m = n(733557);
-let _ = s.forwardRef(function(e, t) {
+let p = s.forwardRef(function(e, t) {
     let {
         onCardClick: n,
         tooltipConfig: s,
         shouldScalePreview: l = !0,
-        renderPreview: _,
-        moreCount: p,
+        renderPreview: p,
+        moreCount: _,
         isSingleCard: g = !1,
         wishlistId: f,
         wishlistItem: x,
@@ -31,7 +31,7 @@ let _ = s.forwardRef(function(e, t) {
         skuProductLine: I
     } = x, {
         trackUserProfileWishlistAction: N
-    } = (0, u.NJ)(), b = l ? m.ho : m.C8, S = g ? m.pr : m.Nr, T = null != p && p > 0, v = T ? A.intl.string(A.t.TxBQzD) : (0, c.x2)(x), y = (0, i.jsxs)(o.DUT, {
+    } = (0, u.NJ)(), b = l ? m.ho : m.C8, S = g ? m.pr : m.Nr, T = null != _ && _ > 0, v = T ? A.intl.string(A.t.TxBQzD) : (0, c.x2)(x), y = (0, i.jsxs)(o.DUT, {
         onClick: () => {
             n(), N({
                 action: T ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
@@ -47,13 +47,13 @@ let _ = s.forwardRef(function(e, t) {
         innerRef: t,
         children: [(0, i.jsx)("div", {
             className: b,
-            children: _()
+            children: p()
         }), T && (0, i.jsx)("div", {
             className: m.sv,
             children: (0, i.jsxs)(o.Text, {
                 variant: "text-xs/medium",
                 color: "always-white",
-                children: ["+", p]
+                children: ["+", _]
             })
         })]
     });

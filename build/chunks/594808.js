@@ -1,14 +1,14 @@
 /** chunk id: 594808 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => v,
+    Ay: () => C,
     PS: () => p,
     S0: () => x
 });
 var l = n(627968),
-    s = n(64700),
-    i = n(503698),
-    r = n.n(i),
+    i = n(64700),
+    s = n(503698),
+    r = n.n(s),
     a = n(27867),
     o = n(311907),
     u = n(397927),
@@ -46,26 +46,26 @@ function x(e) {
     let {
         className: t,
         icon: n,
-        text: s,
-        color: i
+        text: i,
+        color: s
     } = e;
     return (0, l.jsxs)("div", {
         className: r()(A.iE, t),
         children: [n, (0, l.jsx)(u.Text, {
             variant: "text-md/normal",
-            color: i,
+            color: s,
             scaleFontToUserSetting: !0,
-            children: s
+            children: i
         })]
     })
 }
-let v = s.memo(function(e) {
+let C = i.memo(function(e) {
     let {
         message: t,
         className: n,
-        component: i
+        component: s
     } = e, r = (0, a.A)(), u = (0, o.bG)([d.Ay], () => d.Ay.getInteraction(t), [t]);
-    s.useEffect(() => {
+    i.useEffect(() => {
         let e = null;
         if (t.hasFlag(h.pr7.LOADING) && null != u) {
             let n = (0, m.I5)(t.id) - Date.now();
@@ -76,7 +76,7 @@ let v = s.memo(function(e) {
         }
     }, [r, u, t]);
     let A = null;
-    if (null == i) A = function(e, t) {
+    if (null == s) A = function(e, t) {
         switch ((0, m.fK)(t, e)) {
             case m.h0.SENDING:
                 return f(g.intl.string(g.t.RiLfBY));
@@ -91,19 +91,19 @@ let v = s.memo(function(e) {
         }
     }(u, t);
     else {
-        let e = (0, c.zv)(u, t, i);
+        let e = (0, c.zv)(u, t, s);
         null != e && (A = p(e))
     }
     if (null == A) return null;
     let {
-        text: v,
-        icon: C,
-        color: N
+        text: C,
+        icon: N,
+        color: v
     } = A;
     return (0, l.jsx)(x, {
-        icon: C,
-        text: v,
+        icon: N,
+        text: C,
         className: n,
-        color: N
+        color: v
     })
 })

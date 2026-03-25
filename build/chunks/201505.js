@@ -82,8 +82,8 @@ let x = s.forwardRef(function(e, t) {
             day: C,
             setDay: T,
             month: y,
-            setMonth: R,
-            year: b,
+            setMonth: b,
+            year: R,
             setYear: O
         } = function(e) {
             let t = null,
@@ -100,7 +100,7 @@ let x = s.forwardRef(function(e, t) {
                 setYear: c
             }
         }(a),
-        L = s.useMemo(() => null != C && null != y && null != b ? o()(`${C}/${y}/${b}`, "DD/MM/YYYY") : null, [C, y, b]);
+        L = s.useMemo(() => null != C && null != y && null != R ? o()(`${C}/${y}/${R}`, "DD/MM/YYYY") : null, [C, y, R]);
     s.useEffect(() => {
         m(L?.isValid() ? L : null)
     }, [L, m]);
@@ -166,7 +166,7 @@ let x = s.forwardRef(function(e, t) {
                     key: "month",
                     input: (0, i.jsx)(f, {
                         options: g,
-                        selectOption: R,
+                        selectOption: b,
                         children: (0, i.jsx)(d.Te, {
                             "aria-label": u.intl.string(u.t.UDlN8W),
                             popoutPosition: "top",
@@ -174,7 +174,7 @@ let x = s.forwardRef(function(e, t) {
                             options: g,
                             value: y,
                             onChange: t => {
-                                R(t), U(e + 1)
+                                b(t), U(e + 1)
                             },
                             maxVisibleItems: 6,
                             autoFocus: D === e,
@@ -196,7 +196,7 @@ let x = s.forwardRef(function(e, t) {
                             popoutPosition: "top",
                             placeholder: u.intl.string(u.t.ZWr5WA),
                             options: k,
-                            value: b,
+                            value: R,
                             onChange: t => {
                                 O(t), U(e + 1)
                             },

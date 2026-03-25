@@ -21,8 +21,8 @@ var i = n(627968),
     N = n(449585),
     g = n(137207),
     C = n(22007),
-    p = n(378570),
-    h = n(589022),
+    h = n(378570),
+    p = n(589022),
     x = n(576705),
     R = n(287809),
     S = n(562153),
@@ -44,7 +44,7 @@ var i = n(627968),
     w = n(985018),
     V = n(906135);
 
-function q(e, t) {
+function X(e, t) {
     let {
         popouts: n,
         selected: i,
@@ -70,9 +70,9 @@ function q(e, t) {
     }
 }
 
-function X(e, t, n) {
+function q(e, t, n) {
     return a.useMemo(() => {
-        if (null != t && null != n) return a => (0, i.jsx)(h.A, {
+        if (null != t && null != n) return a => (0, i.jsx)(p.A, {
             ...a,
             user: t,
             currentUser: n,
@@ -132,7 +132,7 @@ function z(e) {
     }
 }
 
-function J(e) {
+function W(e) {
     let {
         alertAction: t,
         guildId: n
@@ -177,14 +177,14 @@ function J(e) {
     }
 }
 
-function W(e) {
+function J(e) {
     let {
         alertActionsExecution: t,
         guildId: n
     } = e, a = Object.values(t.actions).sort((e, t) => e.actionType < t.actionType ? 1 : -1);
     return (0, i.jsx)("div", {
         className: V.q_,
-        children: a.map(e => (0, i.jsx)(J, {
+        children: a.map(e => (0, i.jsx)(W, {
             alertAction: e,
             guildId: n
         }, e.actionType))
@@ -198,8 +198,8 @@ let Q = a.memo(function(e) {
             compact: r,
             interactionUserId: s
         } = e,
-        o = q(n, a),
-        c = X(a, n.author),
+        o = X(n, a),
+        c = q(a, n.author),
         d = (0, D.Ay)(n),
         u = (0, v.tO)({
             message: n,
@@ -210,8 +210,8 @@ let Q = a.memo(function(e) {
             ...o
         }, c),
         _ = R.default.getUser(s),
-        A = q(n, a),
-        E = X(a, _, R.default.getCurrentUser());
+        A = X(n, a),
+        E = q(a, _, R.default.getCurrentUser());
     if (null != _) {
         let e = (0, D.FT)(_, a),
             i = (0, v.tO)({
@@ -250,7 +250,7 @@ function Z(e) {
         avatarSrc: o,
         eventHandlers: {
             onMouseEnter: _,
-            onMouseLeave: h
+            onMouseLeave: p
         }
     } = (0, b.a)(!0), {
         onFocus: R,
@@ -261,9 +261,9 @@ function Z(e) {
         handleBlur: P
     } = (0, j.G8)(R), L = (0, d.bG)([E.A], () => E.A.keyboardModeEnabled), y = (0, d.bG)([x.A], () => x.A.can(F.xBc.MANAGE_MESSAGES, s), [s]), {
         ruleName: G,
-        embedChannel: X,
+        embedChannel: q,
         decisionId: z,
-        keywordMatchedContent: J,
+        keywordMatchedContent: W,
         keyword: Z,
         content: $,
         flaggedMessageId: ee,
@@ -272,25 +272,25 @@ function Z(e) {
         alertActionsExecution: ei,
         quarantineType: ea,
         interactionUserId: el
-    } = (0, f.Ay)(l), er = a.useMemo(() => (0, M.Tz)($, J, s.id), [$, J, s]), {
+    } = (0, f.Ay)(l), er = a.useMemo(() => (0, M.Tz)($, W, s.id), [$, W, s]), {
         selected: es,
         ...eo
-    } = q(l, s), ec = a.useCallback(() => {
+    } = X(l, s), ec = a.useCallback(() => {
         (0, N.w2)(l.id, $, z, s)
     }, [l.id, $, z, s]), ed = a.useCallback(e => {
-        null != ee && null != X && (e.stopPropagation(), e.preventDefault(), (0, C.A)(F.BVt.CHANNEL(X?.guild_id, X?.id, ee)))
-    }, [X, ee]), eu = a.useCallback(e => {
-        null != X && (A.default.selectChannel({
-            guildId: X.guild_id,
+        null != ee && null != q && (e.stopPropagation(), e.preventDefault(), (0, C.A)(F.BVt.CHANNEL(q?.guild_id, q?.id, ee)))
+    }, [q, ee]), eu = a.useCallback(e => {
+        null != q && (A.default.selectChannel({
+            guildId: q.guild_id,
             channelId: e,
             messageId: l.id
-        }), (0, p.iN)(e))
-    }, [l, X]), e_ = a.useCallback(() => {
+        }), (0, h.iN)(e))
+    }, [l, q]), e_ = a.useCallback(() => {
         (0, g.E5)(l.id, s, T.G.DELETE_USER_MESSAGE)
     }, [s, l.id]), em = (0, H.getFriendlyDurationString)(Number(et)), eA = null != en, eE = y && null != ee && (null == ei || !ei.actions.hasOwnProperty(T.G.DELETE_USER_MESSAGE)), eI = l.embeds.length > 0 ? l.embeds[0].fields.find(e => "channel_id" === e.rawName)?.rawValue : null, eT = null != eI;
     return (0, i.jsx)("div", {
         onMouseEnter: _,
-        onMouseLeave: h,
+        onMouseLeave: p,
         children: (0, i.jsx)(k.A, {
             className: r()(V.rs, {
                 [V.oE]: n
@@ -324,7 +324,7 @@ function Z(e) {
                         }), (0, i.jsx)(Q, {
                             message: l,
                             channel: s,
-                            embedChannel: X,
+                            embedChannel: q,
                             compact: n,
                             interactionUserId: el
                         })]
@@ -338,7 +338,7 @@ function Z(e) {
                     children: (0, i.jsx)(U.A, {
                         ...S,
                         message: l,
-                        channel: X,
+                        channel: q,
                         content: er,
                         compact: n,
                         withFooter: !0,
@@ -346,7 +346,7 @@ function Z(e) {
                         className: r()(V.gD, {
                             [V.oE]: n,
                             [V.wH]: es || L && O,
-                            [V.JD]: null != ee && null != X
+                            [V.JD]: null != ee && null != q
                         }),
                         childrenAccessories: (0, i.jsxs)(i.Fragment, {
                             children: [(0, i.jsxs)("div", {
@@ -467,7 +467,7 @@ function Z(e) {
                                     text: w.intl.string(w.t["3A52tY"])
                                 })
                             })]
-                        }) : null, null != ei ? (0, i.jsx)(W, {
+                        }) : null, null != ei ? (0, i.jsx)(J, {
                             alertActionsExecution: ei,
                             guildId: s.guild_id
                         }) : null]

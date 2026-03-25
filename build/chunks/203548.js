@@ -19,8 +19,8 @@ let c = Math.ceil(Math.sqrt(115200)),
         }, []), m = (0, a.w)(A, [], {
             fireOnMount: !0
         }), [{
-            shineSpring: _
-        }, p] = (0, r.zhh)(() => ({
+            shineSpring: p
+        }, _] = (0, r.zhh)(() => ({
             from: {
                 shineSpring: 0
             },
@@ -31,24 +31,24 @@ let c = Math.ceil(Math.sqrt(115200)),
                 friction: 38
             }
         })), g = s.useCallback((e, t) => {
-            p({
+            _({
                 shineSpring: 1,
                 delay: t
             })
-        }, [p]), f = s.useCallback(() => {
-            p({
+        }, [_]), f = s.useCallback(() => {
+            _({
                 shineSpring: 0,
                 immediate: !0
             })
-        }, [p]), x = s.useMemo(() => {
+        }, [_]), x = s.useMemo(() => {
             let e = (0, i.jsx)(l.animated.div, {
                 className: o.q2,
                 style: {
-                    transform: _.to(e => `translateX(calc(${e*u}px + ${e*c}px)) translateY(-50%) rotate(45deg)`)
+                    transform: p.to(e => `translateX(calc(${e*u}px + ${e*c}px)) translateY(-50%) rotate(45deg)`)
                 }
             });
             return n(o.VU, o.Qq, o.Kk, e)
-        }, [n, u, _]);
+        }, [n, u, p]);
         return s.useImperativeHandle(t, () => ({
             onMouseEnter: g,
             onMouseLeave: f

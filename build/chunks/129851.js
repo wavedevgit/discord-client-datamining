@@ -30,8 +30,8 @@ var i = n(627968),
     C = n(274303),
     T = n(13437),
     y = n(557722),
-    R = n(148864),
-    b = n(146571),
+    b = n(148864),
+    R = n(146571),
     O = n(976860),
     L = n(913612),
     w = n(210714),
@@ -276,7 +276,7 @@ class X extends s.PureComponent {
             className: e,
             children: [(0, i.jsx)(V.M, {}), (0, i.jsxs)(x.eB, {
                 className: Y.QX,
-                children: [(0, i.jsx)(b.A, {
+                children: [(0, i.jsx)(R.A, {
                     className: Y.SX,
                     alpha2: t.alpha2,
                     countryCode: t.code.split(" ")[0],
@@ -374,7 +374,7 @@ class X extends s.PureComponent {
                 }), t, (0, i.jsx)(h.Fmo, {
                     children: (0, i.jsxs)(x.eB, {
                         className: Y.QX,
-                        children: [(0, i.jsx)(b.A, {
+                        children: [(0, i.jsx)(R.A, {
                             alpha2: a.alpha2,
                             countryCode: a.code.split(" ")[0],
                             className: Y.SX,
@@ -737,7 +737,7 @@ class X extends s.PureComponent {
 }
 let $ = function(e) {
     (0, L.K)();
-    let t = (0, c.cf)([U.A, B.A, D.default, C.A, R.A], () => ({
+    let t = (0, c.cf)([U.A, B.A, D.default, C.A, b.A], () => ({
         authenticated: D.default.isAuthenticated(),
         handoffAvailable: U.A.isHandoffAvailable(),
         user: U.A.user,
@@ -745,7 +745,7 @@ let $ = function(e) {
         mfaTicket: D.default.getMFATicket(),
         mfaMethods: D.default.getMFAMethods(),
         defaultRoute: B.A.defaultRoute,
-        country: R.A.getCountryCode(),
+        country: b.A.getCountryCode(),
         hasLoggedInAccounts: C.A.getHasLoggedInAccounts()
     }));
     return (0, i.jsx)(X, {
