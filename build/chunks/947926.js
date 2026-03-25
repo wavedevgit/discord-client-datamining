@@ -14,9 +14,9 @@ var a = n(627968),
     u = n(186111),
     m = n(859703),
     h = n(341915),
-    x = n(943849),
-    p = n(890687),
-    g = n(971276),
+    x = n(890687),
+    p = n(971276),
+    g = n(851936),
     _ = n(792620),
     f = n(241124),
     v = n(73473),
@@ -42,7 +42,7 @@ function P(e) {
         isExpanded: t,
         questId: n
     } = e;
-    return (0, p.H6)({
+    return (0, x.H6)({
         mode: t ? w.fP.EXPANDED : w.fP.COLLAPSED,
         questContent: h.uF.QUEST_BAR_V2,
         questId: n,
@@ -59,10 +59,10 @@ function M() {
 function L(e) {
     let {
         quest: t
-    } = e, n = (0, x.L)({
+    } = e, n = (0, g.L)({
         quest: t,
         location: w.rE.QUESTS_BAR
-    }), s = (0, g.s)(), c = (0, o.bG)([m.A], () => null != m.A.questEnrollmentBlockedUntil), {
+    }), s = (0, p.s)(), c = (0, o.bG)([m.A], () => null != m.A.questEnrollmentBlockedUntil), {
         isQuestBarVisible: L,
         reason: U
     } = (0, b.TQ)({
@@ -118,8 +118,8 @@ function L(e) {
     let em = i.useRef(null),
         eh = i.useRef(null),
         ex = i.useRef(null),
-        ep = (0, p.fc)(t),
-        eg = (0, p.UH)(V);
+        ep = (0, x.fc)(t),
+        eg = (0, x.UH)(V);
     if (i.useEffect(() => {
             F && (0, j.l9)()
         }, [F]), !s || !q && Z && !$ || z) return z ? n.log("Not rendered due to asset error") : s || n.log("Not rendered due to ineligibility"), null;

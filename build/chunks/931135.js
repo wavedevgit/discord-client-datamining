@@ -12,8 +12,8 @@ var a = r(627968),
     c = r(829219),
     u = r(341915),
     _ = r(405670),
-    p = r(943849),
-    f = r(579473),
+    p = r(579473),
+    f = r(851936),
     b = r(792620),
     m = r(753386),
     g = r(752231),
@@ -43,7 +43,7 @@ function T(e) {
         videoAssetType: Q
     } = (0, S.A)(D, N, j, k, !1), q = (0, o.useRef)(null), G = o.useCallback(e => {
         q.current = e
-    }, []), H = o.useMemo(() => (0, p.L)({
+    }, []), H = o.useMemo(() => (0, f.L)({
         quest: R,
         location: y.rE.VIDEO_MODAL
     }), [R]), K = (0, o.useRef)(0), Y = (0, o.useRef)(!1), {
@@ -136,7 +136,7 @@ function T(e) {
         }
     }, [R, O, F, em]), eA = o.useCallback((e, t) => {
         eo(e, t)
-    }, [eo]), eE = o.useMemo(() => (0, f.tW)(R, f.fY.VIDEO_PLAYER_CAPTION, void 0, !1), [R]), ek = o.useCallback(() => (0, a.jsx)(C.A, {}), []), eV = o.useCallback(() => (0, a.jsx)(v.A, {
+    }, [eo]), eE = o.useMemo(() => (0, p.tW)(R, p.fY.VIDEO_PLAYER_CAPTION, void 0, !1), [R]), ek = o.useCallback(() => (0, a.jsx)(C.A, {}), []), eV = o.useCallback(() => (0, a.jsx)(v.A, {
         videoRef: D,
         onTrackQuestContentClick: ei,
         orientation: E

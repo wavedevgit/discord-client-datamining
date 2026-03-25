@@ -24,15 +24,15 @@ let m = e => {
         location: "nitro_tab_popover"
     }) === o.xb.POPOVER, {
         analyticsLocations: E
-    } = (0, r.Ay)(), I = (0, i.jsx)(a.AM, {
+    } = (0, r.Ay)(), I = p ? h.intl.string(A.default.oOSj1l) : h.intl.format(A.default["c+NBSl"], {
+        premiumGroupProductName: (0, c.DP)()
+    }), f = p ? h.intl.string(A.default.nCLJQn) : h.intl.format(A.default.MuUV5u, {
+        premiumGroupProductName: (0, c.DP)(),
+        totalSeats: c.aw
+    }), C = (0, i.jsx)(a.AM, {
         targetElementRef: t,
-        title: h.intl.format(A.default["c+NBSl"], {
-            premiumGroupProductName: (0, c.DP)()
-        }),
-        body: h.intl.format(A.default.MuUV5u, {
-            premiumGroupProductName: (0, c.DP)(),
-            totalSeats: c.aw
-        }),
+        title: I,
+        body: f,
         graphic: {
             type: "image",
             src: _
@@ -41,6 +41,7 @@ let m = e => {
             type: "beta",
             variant: "expressive"
         },
+        gradientColor: "nitro-pink",
         size: "md",
         align: "top",
         position: "right",
@@ -76,6 +77,6 @@ let m = e => {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             children: g
-        }), I]
+        }), C]
     })
 }

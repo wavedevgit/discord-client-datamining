@@ -333,17 +333,17 @@ function eA(e) {
         })]
     }) : e9, e7 = s.useRef(null), e3 = (0, w.W)({
         location: "PrivateChannel"
-    }) && r?.displayNameStyles != null, e4 = [(0, y.Ay)({
+    }) && r?.displayNameStyles != null, e5 = [(0, y.Ay)({
         channel: t,
         unread: eq
     }), (0, y.r2)({
         channel: t,
         muted: eG,
         userStatus: B
-    })].filter(Boolean).join(", "), e5 = (0, S.bG)([$.Ay], () => $.Ay.lastMessageId(t.id)), {
+    })].filter(Boolean).join(", "), e4 = (0, S.bG)([$.Ay], () => $.Ay.lastMessageId(t.id)), {
         waveShouldShow: e8,
         wavePressed: te
-    } = (0, D.A)(t, e5), {
+    } = (0, D.A)(t, e4), {
         showClose: tt
     } = R.A.useConfig({
         location: "PrivateChannel"
@@ -409,7 +409,7 @@ function eA(e) {
                         innerRef: eh,
                         to: el.BVt.CHANNEL(el.ME, t.id),
                         className: ei.nf,
-                        "aria-label": e4,
+                        "aria-label": e5,
                         ...s,
                         children: (0, l.jsx)(b.A, {
                             ref: e7,
