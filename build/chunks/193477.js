@@ -24,13 +24,13 @@ var i = n(627968),
     N = n(87906),
     E = n(467069),
     b = n(544351),
-    T = n(361776);
+    C = n(361776);
 
-function C(e) {
+function T(e) {
     let {
         guild: t,
         saveOnClose: n
-    } = e, [d, c] = s.useState("new"), C = s.useMemo(() => [{
+    } = e, [d, c] = s.useState("new"), T = s.useMemo(() => [{
         value: "new",
         name: f.intl.string(f.t["4e5u3l"])
     }, {
@@ -41,7 +41,7 @@ function C(e) {
         let e = m.A.getSettings();
         (0, u.W5)(t.id, e)
     }, [n, t.id]);
-    let v = s.useMemo(() => (0, r.qB)(I) ? "existing" === d ? E : T : "existing" === d ? N : b, [d, I]);
+    let v = s.useMemo(() => (0, r.qB)(I) ? "existing" === d ? E : C : "existing" === d ? N : b, [d, I]);
     return (0, i.jsxs)("div", {
         className: j.MY,
         children: [(0, i.jsxs)("div", {
@@ -143,7 +143,7 @@ function C(e) {
                 src: v,
                 alt: f.intl.string(f.t.ST4UOy)
             }), (0, i.jsx)(a.IzF, {
-                options: C,
+                options: T,
                 value: d,
                 onChange: e => c(e.value),
                 look: "pill"
@@ -159,7 +159,7 @@ function I(e) {
         let e = c.A.getGuildId();
         return d.A.getGuild(e)
     });
-    return null == n ? null : (0, i.jsx)(C, {
+    return null == n ? null : (0, i.jsx)(T, {
         guild: n,
         saveOnClose: t
     })

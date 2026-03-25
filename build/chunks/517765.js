@@ -28,8 +28,8 @@ function N(e) {
         imageSrc: s,
         iconBackgroundColor: N,
         iconClassName: j,
-        iconWrapperClassName: T,
-        details: v,
+        iconWrapperClassName: v,
+        details: T,
         integration: C,
         buttonText: I,
         buttonDisabled: E,
@@ -93,8 +93,8 @@ function N(e) {
                 imageSrc: s,
                 iconBackgroundColor: N,
                 iconClassName: j,
-                iconWrapperClassName: T,
-                details: v,
+                iconWrapperClassName: v,
+                details: T,
                 isPremium: W.length > 0,
                 children: function(e, t) {
                     if (null == e) return null;

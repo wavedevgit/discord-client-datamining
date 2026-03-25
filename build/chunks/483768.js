@@ -19,12 +19,12 @@ var l = n(311907),
 function p(e, t) {
     let n = (0, l.bG)([d.default], () => d.default.getCurrentUser()),
         p = (0, o.Id)(t),
-        g = (0, l.bG)([c.A], () => c.A.can(A.xBc.MANAGE_MESSAGES, t), [t]),
+        f = (0, l.bG)([c.A], () => c.A.can(A.xBc.MANAGE_MESSAGES, t), [t]),
         {
-            firstMessage: f
+            firstMessage: D
         } = (0, l.bG)([a.A], () => a.A.getMessage(t.id), [t.id]),
-        D = g || null != n && e.canDeleteOwnMessage(n.id);
-    return e.state === A.cmJ.SENDING || !D || A.MRS.UNDELETABLE.has(e.type) || !p || t.isModeratorReportChannel() && (e.id === f?.id || (0, u.A)(e)) ? null : (0, i.jsx)(s.Drp, {
+        g = f || null != n && e.canDeleteOwnMessage(n.id);
+    return e.state === A.cmJ.SENDING || !g || A.MRS.UNDELETABLE.has(e.type) || !p || t.isModeratorReportChannel() && (e.id === D?.id || (0, u.A)(e)) ? null : (0, i.jsx)(s.Drp, {
         id: "delete",
         label: m.intl.string(m.t.xwMqD7),
         action: function(n) {

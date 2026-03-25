@@ -42,18 +42,18 @@ function A(e) {
     } = (0, d.I)(E ? "undeafen" : "deafen"), R = n ? r.TJE : N, {
         name: w
     } = (0, g.x5)(f.oh.AUDIO_OUTPUT), D = (0, h.A)(t, n, s), {
-        analyticsLocations: M
-    } = (0, m.Ay)(u.A.AUDIO_OUTPUT_BUTTON), P = i.useRef(null);
+        analyticsLocations: P
+    } = (0, m.Ay)(u.A.AUDIO_OUTPUT_BUTTON), M = i.useRef(null);
     return i.useEffect(() => () => I(), [E, I]), (0, a.jsx)(m.f5, {
-        value: M,
+        value: P,
         children: (0, a.jsx)(c.YNO, {
-            targetElementRef: P,
+            targetElementRef: M,
             renderPopout: e => {
                 let {
                     closePopout: t
                 } = e;
                 return S(), (0, a.jsx)(m.f5, {
-                    value: M,
+                    value: P,
                     children: (0, a.jsx)(x.A, {
                         onInteraction: (0, p.s)("AudioDeviceMenu", u.A.ACCOUNT),
                         onClose: t,
@@ -74,7 +74,7 @@ function A(e) {
                     isShown: d
                 } = t, c = d ? r.tN5 : r.abt;
                 return (0, a.jsxs)("div", {
-                    ref: P,
+                    ref: M,
                     className: l()(b.Lh, {
                         [b.v8]: E,
                         [b.q6]: d

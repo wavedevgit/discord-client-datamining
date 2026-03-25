@@ -20,8 +20,8 @@ var l = n(627968),
     p = n(97469),
     f = n(406704),
     b = n(544028),
-    C = n(95701),
-    j = n(291731),
+    j = n(95701),
+    C = n(291731),
     N = n(176360),
     v = n(863036),
     _ = n(734057),
@@ -99,7 +99,7 @@ class B extends i.PureComponent {
                     canUnlinkChannel: h
                 } = e, A = (0, m.gU)(t), {
                     GUILD_CATEGORY: p
-                } = O.rbe, f = C.Le.has(t.type), b = t.type === p ? G.intl.string(G.t.ifbXnL) : f ? t.isForumPost() ? G.intl.string(G.t.nEOg1N) : G.intl.string(G.t.H7vTe2) : G.intl.string(G.t["8D8Rsb"]);
+                } = O.rbe, f = j.Le.has(t.type), b = t.type === p ? G.intl.string(G.t.ifbXnL) : f ? t.isForumPost() ? G.intl.string(G.t.nEOg1N) : G.intl.string(G.t.H7vTe2) : G.intl.string(G.t["8D8Rsb"]);
                 return [{
                     section: u.Fq.HEADER,
                     label: null != t ? (0, l.jsxs)(l.Fragment, {
@@ -147,10 +147,10 @@ class B extends i.PureComponent {
                     ariaLabel: G.intl.string(G.t.s69NLF),
                     element: I.A,
                     notice: {
-                        stores: [j.A],
+                        stores: [C.A],
                         element: I.q
                     },
-                    predicate: () => !(!c && !h || t.isModeratorReportChannel()) && C.oH.has(t.type)
+                    predicate: () => !(!c && !h || t.isModeratorReportChannel()) && j.oH.has(t.type)
                 }, {
                     section: u.Fq.DIVIDER
                 }, {

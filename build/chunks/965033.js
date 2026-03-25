@@ -26,15 +26,15 @@ var i = n(627968),
     N = n(555337),
     E = n(512122),
     b = n(111771),
-    T = n(294363),
-    C = n(652215),
+    C = n(294363),
+    T = n(652215),
     I = n(985018),
     v = n(841541);
 
 function S(e) {
     let {
         guild: t
-    } = e, n = (0, o.bG)([h.A], () => null != t && h.A.can(C.xBc.MANAGE_GUILD, t), [t]), l = s.useCallback(async e => {
+    } = e, n = (0, o.bG)([h.A], () => null != t && h.A.can(T.xBc.MANAGE_GUILD, t), [t]), l = s.useCallback(async e => {
         let {
             value: n
         } = e;
@@ -48,7 +48,7 @@ function S(e) {
             (0, d.showToast)((0, d.createToast)(I.intl.string(I.t["46Rs3v"]), d.ToastType.FAILURE))
         }
     }, [t]), r = s.useMemo(() => {
-        let e = (0, f.vd)(t?.features.has(C.GuildFeatures.COMMUNITY)).map(e => ({
+        let e = (0, f.vd)(t?.features.has(T.GuildFeatures.COMMUNITY)).map(e => ({
             ...e,
             tooltipPosition: "left"
         }));
@@ -82,7 +82,7 @@ function y(e) {
         guild: t,
         className: n,
         withDivider: l = !0
-    } = e, a = (0, o.bG)([h.A], () => null != t && h.A.can(C.xBc.MANAGE_GUILD, t), [t]), c = s.useCallback(async e => {
+    } = e, a = (0, o.bG)([h.A], () => null != t && h.A.can(T.xBc.MANAGE_GUILD, t), [t]), c = s.useCallback(async e => {
         let {
             value: n
         } = e;
@@ -96,7 +96,7 @@ function y(e) {
             (0, d.showToast)((0, d.createToast)(I.intl.string(I.t["46Rs3v"]), d.ToastType.FAILURE))
         }
     }, [t.id]), u = s.useMemo(() => {
-        let e = (0, f.QL)(t?.features.has(C.GuildFeatures.COMMUNITY)).map(e => ({
+        let e = (0, f.QL)(t?.features.has(T.GuildFeatures.COMMUNITY)).map(e => ({
             ...e,
             tooltipPosition: "left"
         }));
@@ -117,7 +117,7 @@ function y(e) {
                     color: "text-default",
                     variant: "text-sm/normal",
                     children: I.intl.format(I.t.BI4ukC, {
-                        helpdeskArticle: A.A.getArticleURL(C.MVz.SAFE_DIRECT_MESSAGING)
+                        helpdeskArticle: A.A.getArticleURL(T.MVz.SAFE_DIRECT_MESSAGING)
                     })
                 })]
             }), (0, i.jsx)(b.A, {
@@ -131,9 +131,9 @@ function y(e) {
     })
 }
 async function R(e, t) {
-    if (e.features.has(C.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) === t) return;
+    if (e.features.has(T.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) === t) return;
     let n = e.features;
-    return t ? n.add(C.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) : n.delete(C.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY), await j.A.saveGuild(e.id, {
+    return t ? n.add(T.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) : n.delete(T.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY), await j.A.saveGuild(e.id, {
         features: n
     })
 }
@@ -141,7 +141,7 @@ async function R(e, t) {
 function O(e) {
     let {
         guild: t
-    } = e, n = (0, o.bG)([h.A], () => null != t && h.A.can(C.xBc.MANAGE_GUILD, t), [t]), l = t.features.has(C.GuildFeatures.COMMUNITY), r = (0, u.fw)(t.id), [a, c] = s.useState(t.features.has(C.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), m = s.useCallback(async e => {
+    } = e, n = (0, o.bG)([h.A], () => null != t && h.A.can(T.xBc.MANAGE_GUILD, t), [t]), l = t.features.has(T.GuildFeatures.COMMUNITY), r = (0, u.fw)(t.id), [a, c] = s.useState(t.features.has(T.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), m = s.useCallback(async e => {
         c(e), await R(t, e)
     }, [t]);
     return l || !r ? null : (0, i.jsxs)(i.Fragment, {
@@ -169,7 +169,7 @@ function G(e) {
     let {
         guild: t,
         mfaLevel: n
-    } = e, l = (0, o.bG)([h.A], () => null != t && h.A.can(C.xBc.MANAGE_GUILD, t), [t]), r = (0, o.bG)([p.default], () => p.default.getCurrentUser()), {
+    } = e, l = (0, o.bG)([h.A], () => null != t && h.A.can(T.xBc.MANAGE_GUILD, t), [t]), r = (0, o.bG)([p.default], () => p.default.getCurrentUser()), {
         isGuildOwnerWithMFA: c,
         showMFAUserTooltip: u
     } = s.useMemo(() => null == r ? {
@@ -178,10 +178,10 @@ function G(e) {
     } : {
         isGuildOwnerWithMFA: (0, x.ok)(t, r),
         showMFAUserTooltip: !r.mfaEnabled && (0, x.bM)(t, r)
-    }, [r, t]), _ = n === C.EkJ.ELEVATED, A = (0, a.throttle)(async e => {
+    }, [r, t]), _ = n === T.EkJ.ELEVATED, A = (0, a.throttle)(async e => {
         !c || u || await j.A.updateMFALevel({
             guildId: t.id,
-            level: e ? C.EkJ.ELEVATED : C.EkJ.NONE
+            level: e ? T.EkJ.ELEVATED : T.EkJ.NONE
         })
     }, 1e3);
     return l ? (0, i.jsxs)(i.Fragment, {
@@ -233,7 +233,7 @@ function L() {
             className: v.yF
         }), (0, i.jsx)("div", {
             className: v.hu,
-            children: (0, i.jsx)(T.b, {
+            children: (0, i.jsx)(C.b, {
                 guild: e
             })
         })]

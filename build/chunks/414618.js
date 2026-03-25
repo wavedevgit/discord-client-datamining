@@ -21,8 +21,8 @@ var i = n(503698),
     p = n(894328),
     f = n(997509),
     b = n(776781),
-    C = n(233993),
-    j = n(110618),
+    j = n(233993),
+    C = n(110618),
     N = n(176360),
     v = n(696451),
     _ = n(317525),
@@ -54,13 +54,13 @@ function P(e) {
         sections: [n.length, i.length],
         renderRow: function(e) {
             let A, p, f, {
-                    section: C,
-                    row: j
+                    section: j,
+                    row: C
                 } = e,
                 N = !1;
-            switch (C) {
+            switch (j) {
                 case O.oO.ROLES:
-                    f = (p = n[j]).rowType === O.T6.ROLE && p.tags?.guild_connections === null ? (0, l.jsx)(x.A, {
+                    f = (p = n[C]).rowType === O.T6.ROLE && p.tags?.guild_connections === null ? (0, l.jsx)(x.A, {
                         className: B.a,
                         color: p.colorString,
                         size: 20
@@ -78,7 +78,7 @@ function P(e) {
                     }), N = p.disabled;
                     break;
                 case O.oO.MEMBERS:
-                    p = i[j], A = (0, l.jsxs)(l.Fragment, {
+                    p = i[C], A = (0, l.jsxs)(l.Fragment, {
                         children: [(0, l.jsx)(o.euF, {
                             src: p.avatarURL,
                             size: o._3J.SIZE_20,
@@ -174,7 +174,7 @@ function U(e) {
         guild: t,
         channel: i,
         permissionUpdates: d
-    } = e, c = (0, a.bG)([_.A], () => _.A.getSortedRoles(t.id)), u = I.C$(t, c, i, C.QY, d), h = (0, a.bG)([v.Ay], () => I.Wi(v.Ay.getMemberIds(t.id), i, t, C.QY, d)), g = (0, b.qd)(i.id);
+    } = e, c = (0, a.bG)([_.A], () => _.A.getSortedRoles(t.id)), u = I.C$(t, c, i, j.QY, d), h = (0, a.bG)([v.Ay], () => I.Wi(v.Ay.getMemberIds(t.id), i, t, j.QY, d)), g = (0, b.qd)(i.id);
     return (0, l.jsxs)("div", {
         className: s()(B.j1, B.vu),
         children: [(0, l.jsx)(L.A, {
@@ -221,7 +221,7 @@ function U(e) {
                 roles: u,
                 members: h,
                 disabledReason: g ? null : k.intl.string(k.t.arRuES),
-                getRemoveTooltipHint: j.Mt
+                getRemoveTooltipHint: C.Mt
             })]
         })]
     })

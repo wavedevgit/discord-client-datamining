@@ -29,7 +29,7 @@ function A(e) {
         onDeleteEditState: N
     } = e, {
         editStateId: E
-    } = (0, c.O)(), b = (0, l.bG)([o.A], () => o.A.getSubscriptionListing(E)), T = (0, d.gN)(), C = s.useMemo(() => {
+    } = (0, c.O)(), b = (0, l.bG)([o.A], () => o.A.getSubscriptionListing(E)), C = (0, d.gN)(), T = s.useMemo(() => {
         let e = t.filter(e => e.id !== E).map(e => e.subscription_plans[0]?.price);
         return n?.filter(t => !e.includes(t))
     }, [t, E, n]), I = null == b, v = b?.published ?? !1, S = b?.archived ?? !1;
@@ -38,7 +38,7 @@ function A(e) {
         children: [null != f && (0, i.jsx)(a.wx6, {
             type: "critical",
             children: f.getAnyErrorMessage()
-        }), !v && !T && !S && (0, i.jsxs)("div", {
+        }), !v && !C && !S && (0, i.jsxs)("div", {
             className: p.Oy,
             children: [(0, i.jsxs)("div", {
                 children: [(0, i.jsx)(a.Heading, {
@@ -63,7 +63,7 @@ function A(e) {
                 })
             })]
         }), (0, i.jsx)(m.A, {
-            priceTiers: C
+            priceTiers: T
         }), (0, i.jsx)(g.A, {
             allSubscriptionListings: t
         }), (0, i.jsx)(x.A, {}), (0, i.jsx)(h.A, {}), (0, i.jsx)(u.A, {

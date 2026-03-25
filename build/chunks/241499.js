@@ -24,9 +24,9 @@ var i = n(627968),
     N = n(652215),
     E = n(985018),
     b = n(828771);
-let T = "RULE";
+let C = "RULE";
 
-function C(e) {
+function T(e) {
     let {
         rule: t,
         rulesChannel: n,
@@ -39,13 +39,13 @@ function C(e) {
         focused: A,
         onFocus: f,
         previewEnabled: N,
-        isDragEnabled: C,
+        isDragEnabled: T,
         disabled: I
     } = e, v = s.useRef(null), S = s.useRef(null), [{
         textValue: y,
         richValue: R
     }, O] = s.useState((0, x.ur)(t.value)), [, G, L] = (0, d.i)({
-        type: T,
+        type: C,
         item: {
             rule: t,
             index: l
@@ -54,7 +54,7 @@ function C(e) {
             null == e || t.didDrop() || _(e.rule, null, !0)
         }
     }), [, D] = (0, c.H)({
-        accept: T,
+        accept: C,
         hover: (e, t) => {
             let {
                 index: n
@@ -121,7 +121,7 @@ function C(e) {
                 ref: S,
                 className: b.cK,
                 "data-dnd-name": M,
-                children: C && (0, i.jsx)(m.WP0, {
+                children: T && (0, i.jsx)(m.WP0, {
                     size: "xs",
                     color: "currentColor",
                     className: b.co
@@ -137,7 +137,7 @@ function I(e) {
         setRules: n,
         guild: l,
         disabled: r
-    } = e, a = l.rulesChannelId, d = l.features.has(N.GuildFeatures.PREVIEW_ENABLED), c = (0, u.bG)([_.A], () => null != a ? _.A.getChannel(a) : null), g = (0, u.bG)([p.Ay], () => p.Ay.getDefaultChannel(l.id)), [x, h] = s.useState(null), [T, I] = s.useState(null), v = s.useCallback(e => {
+    } = e, a = l.rulesChannelId, d = l.features.has(N.GuildFeatures.PREVIEW_ENABLED), c = (0, u.bG)([_.A], () => null != a ? _.A.getChannel(a) : null), g = (0, u.bG)([p.Ay], () => p.Ay.getDefaultChannel(l.id)), [x, h] = s.useState(null), [C, I] = s.useState(null), v = s.useCallback(e => {
         if (!r && t.length !== j.yN)
             if (null != e && "" === t[t.length - 1].value) {
                 let i = [...t];
@@ -195,7 +195,7 @@ function I(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             className: b.$W,
-            children: t.map((e, s) => (0, i.jsx)(C, {
+            children: t.map((e, s) => (0, i.jsx)(T, {
                 rulesChannel: c ?? g,
                 rule: e,
                 index: s,
@@ -210,7 +210,7 @@ function I(e) {
                 })(s),
                 onRuleReorder: R,
                 isDropHovered: s === x,
-                focused: s === T,
+                focused: s === C,
                 onFocus: I,
                 previewEnabled: d ?? !0,
                 isDragEnabled: !r && t.length > 1,

@@ -1,7 +1,7 @@
 /** chunk id: 234721 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    G: () => C
+    G: () => T
 });
 var i = n(627968),
     s = n(64700),
@@ -25,14 +25,14 @@ var i = n(627968),
     E = n(324580),
     b = n(985018);
 
-function T(e) {
+function C(e) {
     let {
         pendingState: t,
         dirtyState: l,
         originalGuild: _,
         settingsGuild: A,
-        settingsMetadata: T,
-        settingsProfile: C
+        settingsMetadata: C,
+        settingsProfile: T
     } = e, I = A.id, [v, S] = s.useState(!1), [y, R] = s.useState(null), O = A.features.has(N.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL), G = (0, g.H)({
         guildId: A.id
     }) ?? 0, L = s.useCallback(() => {
@@ -99,8 +99,8 @@ function T(e) {
                         features: e
                     })
                 }
-                l.verificationDirty && await k([...n], !0, e), l.profileDirty && null != C && await (0, x._C)(A.id, {
-                    visibility: C.visibility
+                l.verificationDirty && await k([...n], !0, e), l.profileDirty && null != T && await (0, x._C)(A.id, {
+                    visibility: T.visibility
                 })
             })
         } else if (t.joinType === f.J.DISCOVERABLE) {
@@ -121,7 +121,7 @@ function T(e) {
                     try {
                         await (0, d.Oh)({
                             guildId: A.id,
-                            ...T
+                            ...C
                         })
                     } catch (e) {
                         throw R(new o.LG(e).getAnyErrorMessage()), e
@@ -129,7 +129,7 @@ function T(e) {
                 }
             })
         }
-    }, [t, D, A, l, M, U, C, k, _, T]), w = s.useCallback(() => (e => {
+    }, [t, D, A, l, M, U, T, k, _, C]), w = s.useCallback(() => (e => {
         if (t.joinType === f.J.INVITE || t.joinType === f.J.DISCOVERABLE) {
             let {
                 requireTerms: e,
@@ -163,7 +163,7 @@ function T(e) {
                 onConfirm: e
             })
         }) : e())
-    }), [O, P, t, I, G]), B = t.joinType === f.J.DISCOVERABLE && t.settingsView === j.v.ELIGIBLE_DISABLED, F = null != A.description && T.primaryCategoryId !== E.ig && T.keywords.length > 0;
+    }), [O, P, t, I, G]), B = t.joinType === f.J.DISCOVERABLE && t.settingsView === j.v.ELIGIBLE_DISABLED, F = null != A.description && C.primaryCategoryId !== E.ig && C.keywords.length > 0;
     return (0, i.jsx)(r.A, {
         message: B ? b.intl.string(b.t.V2G2Yr) : void 0,
         onSaveText: B ? b.intl.string(b.t["qjtt/p"]) : void 0,
@@ -175,7 +175,7 @@ function T(e) {
     })
 }
 
-function C() {
+function T() {
     let {
         pendingState: e,
         dirtyState: t
@@ -204,7 +204,7 @@ function C() {
     return null == e || null == n ? null : e.joinType === f.J.DISCOVERABLE && e.settingsView === j.v.INELIGIBLE ? (0, i.jsx)(r.A, {
         message: b.intl.string(b.t.TEXwRt),
         onReset: () => h.A.init(n.id, N.BEX.ACCESS)
-    }) : (0, i.jsx)(T, {
+    }) : (0, i.jsx)(C, {
         pendingState: e,
         dirtyState: t,
         originalGuild: a,

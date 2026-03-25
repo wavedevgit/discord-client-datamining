@@ -50,33 +50,29 @@ class m extends l.PureComponent {
         } = e, {
             permissions: a,
             locked: d,
-            permissionRender: u,
-            guildId: m
-        } = this.props, g = u?.(s), x = !!(d || g), h = "string" == typeof g && "" !== g ? r.KTN : void 0, p = null == a ? (0, i.jsx)(c.A, {
+            permissionRender: u
+        } = this.props, m = u?.(s), g = !!(d || m), x = "string" == typeof m && "" !== m ? r.KTN : void 0, h = null == a ? (0, i.jsx)(c.A, {
             label: n,
             description: (0, o.Nk)(l),
-            icon: h,
-            disabled: x,
+            icon: x,
+            disabled: g,
             value: this.getOverwriteValue(s),
             onChange: e => this.handleChange(s, e)
         }, String(s)) : (0, i.jsx)(r.dOG, {
             label: n,
             description: (0, o.Nk)(l),
-            icon: h,
-            disabled: x,
+            icon: x,
+            disabled: g,
             checked: this.getPermissionValue(s, a),
             onChange: e => this.handleChange(s, e)
-        }, String(s)), A = (0, o.x3)(s, m);
+        }, String(s));
         return (0, i.jsxs)(i.Fragment, {
             children: [t > 0 && (0, i.jsx)(r.cGx, {}), (0, i.jsxs)(r.BJc, {
                 gap: 8,
-                children: [p, null != A && (0, i.jsx)(r.po8, {
-                    messageType: r.YCn.WARNING,
-                    children: A
-                }), "string" == typeof g && "" !== g && (0, i.jsx)(r.Text, {
+                children: [h, "string" == typeof m && "" !== m && (0, i.jsx)(r.Text, {
                     variant: "text-xs/medium",
                     color: "text-feedback-critical",
-                    children: g
+                    children: m
                 })]
             })]
         })

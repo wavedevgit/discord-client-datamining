@@ -32,8 +32,8 @@ function p(e) {
         onDragComplete: j,
         onDragReset: N
     } = e, E = null, b = a().findIndex(s.options, e => e.id === p.id), {
-        drag: T,
-        dragSourcePosition: C,
+        drag: C,
+        dragSourcePosition: T,
         drop: I,
         setIsDraggable: v
     } = (0, c.A)({
@@ -50,8 +50,8 @@ function p(e) {
     return (0, x.hv)(p.emoji) || null != S || null != y || (E = h.intl.string(h.t["61wfmh"])), (0, i.jsxs)(o.DUT, {
         className: l()(_.we, {
             [_.JD]: A || null != E,
-            [_.A]: null != C && b < C,
-            [_.Ze]: null != C && b > C,
+            [_.A]: null != T && b < T,
+            [_.Ze]: null != T && b > T,
             [_.h7]: r
         }),
         onClick: () => (0, o.mMO)(async () => {
@@ -79,7 +79,7 @@ function p(e) {
         onMouseEnter: () => v(!0),
         onMouseLeave: () => v(!1),
         innerRef: e => {
-            T(I(e))
+            C(I(e))
         },
         children: [(0, i.jsx)("div", {
             className: _.cK,

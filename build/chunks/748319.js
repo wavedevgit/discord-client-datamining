@@ -35,8 +35,8 @@ var a = n(627968),
     R = n(384059),
     w = n(480890),
     D = n(302223),
-    M = n(609425),
-    P = n(922301),
+    P = n(609425),
+    M = n(922301),
     L = n(750112),
     U = n(643501),
     B = n(977700),
@@ -89,9 +89,9 @@ let ek = eb.Ay.getEnableHardwareAcceleration() ? h.JsQ : h.euF,
     eR = 2.5 * eg.A.Millis.SECOND,
     ew = 2 * eg.A.Millis.MINUTE,
     eD = 2 * eg.A.Millis.MINUTE,
-    eM = 5 * eg.A.Millis.SECOND;
+    eP = 5 * eg.A.Millis.SECOND;
 
-function eP(e) {
+function eM(e) {
     let {
         ref: t,
         speaking: n,
@@ -108,7 +108,7 @@ function eP(e) {
     } = e, v = i.useRef(null), b = t ?? v, j = (0, ex.F_)({
         avatarDecoration: g,
         size: (0, S.Te)(h._3J.SIZE_32)
-    }), A = (0, M.A)(), {
+    }), A = (0, P.A)(), {
         updateOpenPopoutRef: C,
         highlightBadge: y,
         setHighlightBadge: T
@@ -485,7 +485,7 @@ class eL extends i.PureComponent {
                     children: (0, a.jsx)(L.A, {
                         userName: n,
                         displayNameStyles: e,
-                        effectDisplayType: this.state.hovered ? P.G.ANIMATED : P.G.STATIC,
+                        effectDisplayType: this.state.hovered ? M.G.ANIMATED : M.G.STATIC,
                         loop: !0,
                         inProfile: !0
                     })
@@ -508,7 +508,7 @@ class eL extends i.PureComponent {
             currentUser: t,
             targetElementRef: this.avatarWithPopoutRef,
             additionalDCs: n.avatar,
-            children: (0, a.jsx)(eP, {
+            children: (0, a.jsx)(eM, {
                 ...this.props,
                 ref: this.avatarWithPopoutRef,
                 handleMouseLeave: this.handleMouseLeave,
@@ -635,7 +635,7 @@ function eB(e) {
         a = i.useRef(new m.Ep),
         [s, l] = i.useState(!1);
     i.useEffect(() => {
-        t && n && (l(!0), a.current.start(eM, () => {
+        t && n && (l(!0), a.current.start(eP, () => {
             l(!1)
         }))
     }, [t, n]);
@@ -698,8 +698,8 @@ function eG() {
         R = (0, h.red)(h.DXt) || k || ef.P.isDisallowPopupsSet() || O,
         w = (0, c.bG)([U.default], () => null != U.default.getAwaitingRemoteSessionInfo()),
         D = (0, c.bG)([ec.A], () => ec.A.getGuildId()),
-        M = e?.avatarDecoration,
-        P = (0, T.A)(M),
+        P = e?.avatarDecoration,
+        M = (0, T.A)(P),
         L = ev.Ay.useName(e) ?? "",
         {
             analyticsLocations: B
@@ -766,7 +766,7 @@ function eG() {
             awaitingRemote: w,
             nameplate: G,
             selectedGuildId: D,
-            avatarDecoration: P,
+            avatarDecoration: M,
             isQuestBarEmpty: F,
             isListenAlongVisible: W,
             deviceChangedTooltipType: ep,

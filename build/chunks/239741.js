@@ -24,8 +24,8 @@ var i = n(627968),
     N = n(655943),
     E = n(287479),
     b = n(400812),
-    T = n(72533),
-    C = n(246282),
+    C = n(72533),
+    T = n(246282),
     I = n(729984),
     v = n(692453),
     S = n(360827),
@@ -44,7 +44,7 @@ function L() {
 function D(e) {
     let {
         guild: t
-    } = e, h = t.id, L = (0, r.bG)([E.A], () => E.A.getCurrentPage()), D = (0, T.A)(h), {
+    } = e, h = t.id, L = (0, r.bG)([E.A], () => E.A.getCurrentPage()), D = (0, C.A)(h), {
         hasChanges: M,
         hasConfiguredAnythingForCurrentStep: k,
         hasErrors: U
@@ -122,7 +122,7 @@ function D(e) {
                 skip: !1
             }), await X() && (0, p.kP)(h, L)
         }, q = null;
-    P && (L === b.Hy.SAFETY_CHECK ? q = (0, i.jsx)(C.Et, {}) : L === b.Hy.DEFAULT_CHANNELS ? q = (0, i.jsx)(C.hz, {}) : L === b.Hy.CUSTOMIZATION_QUESTIONS ? q = (0, i.jsx)(C.yP, {}) : L === b.Hy.HOME_SETTINGS && (q = (0, i.jsx)(C.QS, {})));
+    P && (L === b.Hy.SAFETY_CHECK ? q = (0, i.jsx)(T.Et, {}) : L === b.Hy.DEFAULT_CHANNELS ? q = (0, i.jsx)(T.hz, {}) : L === b.Hy.CUSTOMIZATION_QUESTIONS ? q = (0, i.jsx)(T.yP, {}) : L === b.Hy.HOME_SETTINGS && (q = (0, i.jsx)(T.QS, {})));
     let Q = (0, i.jsx)("div", {
             className: P ? G.R : void 0,
             children: (0, i.jsx)(c.Button, {

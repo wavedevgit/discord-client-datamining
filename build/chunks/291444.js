@@ -24,8 +24,8 @@ var i = n(627968),
     N = n(107795),
     E = n(655943),
     b = n(287479),
-    T = n(400812),
-    C = n(72533),
+    C = n(400812),
+    T = n(72533),
     I = n(729984),
     v = n(193477),
     S = n(692453),
@@ -49,44 +49,44 @@ function k(e) {
         } = e,
         l = (0, a.bG)([b.A], () => b.A.getCurrentPage()),
         h = (0, a.bG)([b.A], () => {
-            let e = (0, T.ql)(l);
+            let e = (0, C.ql)(l);
             return null != e && !b.A.isEducationUpsellDismissed(e)
         }),
-        E = (0, C.A)(n),
+        E = (0, T.A)(n),
         M = !E && h;
     switch (s.useEffect(() => {
             (0, m.Dr)(o.M.COMMUNITY_ONBOARDING_NEW_BADGE)
         }, []), l) {
-        case T.Hy.LANDING:
+        case C.Hy.LANDING:
             t = E ? (0, i.jsx)(y.A, {
                 completed: !0,
                 guildId: n
             }) : (0, i.jsx)(O.A, {});
             break;
-        case T.Hy.SAFETY_CHECK:
+        case C.Hy.SAFETY_CHECK:
             t = (0, i.jsx)(_.A, {});
             break;
-        case T.Hy.DEFAULT_CHANNELS:
+        case C.Hy.DEFAULT_CHANNELS:
             t = (0, i.jsx)(I.A, {
                 saveOnClose: !E
             });
             break;
-        case T.Hy.CUSTOMIZATION_QUESTIONS:
+        case C.Hy.CUSTOMIZATION_QUESTIONS:
             t = (0, i.jsx)(R.Ay, {
                 saveOnClose: !E
             });
             break;
-        case T.Hy.HOME_SETTINGS:
+        case C.Hy.HOME_SETTINGS:
             t = (0, i.jsx)(v.A, {
                 saveOnClose: !E
             });
             break;
-        case T.Hy.CONNECTIONS:
+        case C.Hy.CONNECTIONS:
             t = (0, i.jsx)(S.A, {
                 saveOnClose: !E
             });
             break;
-        case T.Hy.REVIEW:
+        case C.Hy.REVIEW:
             t = (0, i.jsx)(y.A, {
                 completed: E,
                 guildId: n
@@ -96,11 +96,11 @@ function k(e) {
         className: r()(D.Jp, {
             [D.Q3]: M
         }),
-        children: [!E && l !== T.Hy.LANDING && (0, i.jsx)(U, {
+        children: [!E && l !== C.Hy.LANDING && (0, i.jsx)(U, {
             setOnboardingStep: A.e_,
             page: l,
             homeSettingsEnabled: !0
-        }), E && l !== T.Hy.LANDING && (0, i.jsx)("div", {
+        }), E && l !== C.Hy.LANDING && (0, i.jsx)("div", {
             children: (0, i.jsxs)(d.$n, {
                 innerClassName: D.Gv,
                 look: d.$n.Looks.BLANK,
@@ -112,7 +112,7 @@ function k(e) {
                             intensity: u.n3
                         }), x._.dispatch(G.jej.EMPHASIZE_NOTICE);
                         return
-                    }(0, N.P3)(), (0, p.nx)(), (0, j.sk)(), (0, f.p2)(), (0, A.e_)(T.Hy.LANDING)
+                    }(0, N.P3)(), (0, p.nx)(), (0, j.sk)(), (0, f.p2)(), (0, A.e_)(C.Hy.LANDING)
                 },
                 children: [(0, i.jsx)(g.A, {
                     className: D.UE,
@@ -141,13 +141,13 @@ function U(e) {
         className: D.L$,
         children: [(0, i.jsxs)(c.DUT, {
             className: r()(D.G9, D.zp),
-            onClick: o(T.Hy.SAFETY_CHECK),
+            onClick: o(C.Hy.SAFETY_CHECK),
             children: [(0, i.jsx)("div", {
                 className: r()(D.hr, {
-                    [D.Ou]: t === T.Hy.SAFETY_CHECK
+                    [D.Ou]: t === C.Hy.SAFETY_CHECK
                 })
             }), (0, i.jsx)(c.Text, {
-                color: t === T.Hy.SAFETY_CHECK ? "text-brand" : "text-muted",
+                color: t === C.Hy.SAFETY_CHECK ? "text-brand" : "text-muted",
                 variant: "text-xs/medium",
                 children: L.intl.format(L.t.Me5Mma, {
                     stepNumber: 1
@@ -155,13 +155,13 @@ function U(e) {
             })]
         }), (0, i.jsxs)(c.DUT, {
             className: r()(D.G9, D.zp),
-            onClick: o(T.Hy.DEFAULT_CHANNELS),
+            onClick: o(C.Hy.DEFAULT_CHANNELS),
             children: [(0, i.jsx)("div", {
                 className: r()(D.hr, {
-                    [D.Ou]: t === T.Hy.DEFAULT_CHANNELS
+                    [D.Ou]: t === C.Hy.DEFAULT_CHANNELS
                 })
             }), (0, i.jsx)(c.Text, {
-                color: t === T.Hy.DEFAULT_CHANNELS ? "text-brand" : "text-muted",
+                color: t === C.Hy.DEFAULT_CHANNELS ? "text-brand" : "text-muted",
                 variant: "text-xs/medium",
                 children: d ? L.intl.formatToPlainString(L.t["8mGhOy"], {
                     stepNumber: 2
@@ -171,13 +171,13 @@ function U(e) {
             })]
         }), (0, i.jsxs)(c.DUT, {
             className: r()(D.G9, D.zp),
-            onClick: o(T.Hy.CUSTOMIZATION_QUESTIONS),
+            onClick: o(C.Hy.CUSTOMIZATION_QUESTIONS),
             children: [(0, i.jsx)("div", {
                 className: r()(D.hr, {
-                    [D.Ou]: t === T.Hy.CUSTOMIZATION_QUESTIONS
+                    [D.Ou]: t === C.Hy.CUSTOMIZATION_QUESTIONS
                 })
             }), (0, i.jsx)(c.Text, {
-                color: t === T.Hy.CUSTOMIZATION_QUESTIONS ? "text-brand" : "text-muted",
+                color: t === C.Hy.CUSTOMIZATION_QUESTIONS ? "text-brand" : "text-muted",
                 variant: "text-xs/medium",
                 children: d ? L.intl.formatToPlainString(L.t.vb6J5g, {
                     stepNumber: 3
@@ -187,13 +187,13 @@ function U(e) {
             })]
         }), s && (0, i.jsxs)(c.DUT, {
             className: r()(D.G9, D.zp),
-            onClick: o(T.Hy.HOME_SETTINGS),
+            onClick: o(C.Hy.HOME_SETTINGS),
             children: [(0, i.jsx)("div", {
                 className: r()(D.hr, {
-                    [D.Ou]: t === T.Hy.HOME_SETTINGS
+                    [D.Ou]: t === C.Hy.HOME_SETTINGS
                 })
             }), (0, i.jsx)(c.Text, {
-                color: t === T.Hy.HOME_SETTINGS ? "text-brand" : "text-muted",
+                color: t === C.Hy.HOME_SETTINGS ? "text-brand" : "text-muted",
                 variant: "text-xs/medium",
                 children: L.intl.format(L.t.KVOukh, {
                     stepNumber: 4
@@ -203,10 +203,10 @@ function U(e) {
             className: D.G9,
             children: [(0, i.jsx)("div", {
                 className: r()(D.hr, {
-                    [D.Ou]: t === T.Hy.REVIEW
+                    [D.Ou]: t === C.Hy.REVIEW
                 })
             }), (0, i.jsx)(c.Text, {
-                color: t === T.Hy.REVIEW ? "text-brand" : "text-muted",
+                color: t === C.Hy.REVIEW ? "text-brand" : "text-muted",
                 variant: "text-xs/medium",
                 children: L.intl.format(L.t.oVzkiA, {
                     stepNumber: 3 + +!!s + 1

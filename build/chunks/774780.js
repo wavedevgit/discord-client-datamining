@@ -31,9 +31,9 @@ function E(e) {
         editingRule: E,
         setEditingRule: b
     } = (0, x.U)(), {
-        guild: T,
-        subsection: C
-    } = (0, l.cf)([a.A], () => a.A.getProps()), I = T?.id ?? t ?? f.dJq, v = null != E, [S] = (0, u.qv)(I), {
+        guild: C,
+        subsection: T
+    } = (0, l.cf)([a.A], () => a.A.getProps()), I = C?.id ?? t ?? f.dJq, v = null != E, [S] = (0, u.qv)(I), {
         rulesByTriggerType: y
     } = (0, u.wP)(I), R = {
         [m.yT.MEMBERS]: j.intl.string(j.t.sx4E5v),
@@ -101,12 +101,12 @@ function E(e) {
                         guildId: I,
                         triggerType: e,
                         rules: y[e] ?? [],
-                        initWithEdit: C === f.nd0.AUTOMOD_MENTION_SPAM && e === A.uh.MENTION_SPAM
+                        initWithEdit: T === f.nd0.AUTOMOD_MENTION_SPAM && e === A.uh.MENTION_SPAM
                     }, e))
                 })]
             }, t)
-        }), null != T && (0, i.jsx)(o.t9, {
-            guild: T,
+        }), null != C && (0, i.jsx)(o.t9, {
+            guild: C,
             withDivider: !1,
             className: N.Vf
         }), (0, i.jsx)(h.A, {

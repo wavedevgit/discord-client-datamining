@@ -24,8 +24,8 @@ var i = n(627968),
     N = n(657048),
     E = n(576705),
     b = n(954571),
-    T = n(545868),
-    C = n(642133),
+    C = n(545868),
+    T = n(642133),
     I = n(856644),
     v = n(359837),
     S = n(533448),
@@ -46,9 +46,9 @@ function M(e) {
         renderHeader: o,
         headerHeight: c,
         query: u
-    } = e, m = (0, d.bG)([C.A], () => C.A.getRoleMemberCount(n.id), [n.id]), g = (0, d.bG)([E.A], () => E.A.getHighestRole(n), [n]), h = u.trim();
+    } = e, m = (0, d.bG)([T.A], () => T.A.getRoleMemberCount(n.id), [n.id]), g = (0, d.bG)([E.A], () => E.A.getHighestRole(n), [n]), h = u.trim();
     s.useEffect(() => {
-        (0, T.L)(n.id)
+        (0, C.L)(n.id)
     }, [n.id]);
     let _ = s.useRef(!1);
     s.useEffect(() => {
@@ -123,8 +123,8 @@ function U(e) {
         onDragComplete: N,
         disableHover: E,
         disableDrag: b,
-        setEditRoleId: T,
-        setSelectedSection: C
+        setEditRoleId: C,
+        setSelectedSection: T
     } = e, I = (0, v.c)(l, d, t), S = null != I, [R, M] = s.useState(!1), k = s.useMemo(() => ({
         type: D,
         item: () => (A(t.id), {
@@ -177,7 +177,7 @@ function U(e) {
     });
 
     function W() {
-        T(t.id)
+        C(t.id)
     }
     return (0, i.jsxs)(m.DUT, {
         className: r()(G.xf, {
@@ -238,7 +238,7 @@ function U(e) {
             children: (0, i.jsxs)(m.DUT, {
                 className: r()(G.Tb, L.Hp),
                 onClick: function() {
-                    W(), C(y.T$.MEMBERS)
+                    W(), T(y.T$.MEMBERS)
                 },
                 children: [(0, i.jsx)(m.Text, {
                     variant: "text-md/normal",

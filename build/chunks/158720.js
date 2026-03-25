@@ -138,10 +138,10 @@ function N(e) {
         j = c?.configuration != null,
         N = c?.index ?? -1,
         [E, b] = (t = c?.configuration?.value, n = f ?? _.so.GREATER_THAN, l = Math.round(Number(t ?? 0)), n === _.so.GREATER_THAN ? l = Math.max(1, l + 1) : n === _.so.LESS_THAN && (l = Math.max(0, l - 1)), [l.toString(), n]),
-        [T, C] = s.useState(E),
+        [C, T] = s.useState(E),
         I = null != o ? p.intl.format(o, {
-            count: T,
-            metadataHook: () => T
+            count: C,
+            metadataHook: () => C
         }) : (0, i.jsx)("span", {
             className: A.gF,
             children: a
@@ -176,10 +176,10 @@ function N(e) {
                 children: (0, i.jsx)(u.ksK, {
                     "aria-label": p.intl.string(p.t.FTmi9y),
                     type: "number",
-                    value: T,
+                    value: C,
                     onChange: e => {
                         let t, n;
-                        if (C(e), null == c) return;
+                        if (T(e), null == c) return;
                         let [i, s] = (t = f ?? _.so.GREATER_THAN, n = Math.round(Number(e ?? 0)), t === _.so.GREATER_THAN ? n = Math.max(0, n - 1) : t === _.so.LESS_THAN && (n = Math.max(1, n + 1)), [n.toString(), t]);
                         "" !== e && x({
                             connectionType: m?.type ?? _.zR,
@@ -203,7 +203,7 @@ function N(e) {
                         applicationId: g,
                         connectionMetadataField: d,
                         operator: b,
-                        value: T
+                        value: C
                     }), x(t, c?.index ?? -1)
                 },
                 disabled: h
@@ -280,7 +280,7 @@ function b(e) {
     })
 }
 
-function T(e) {
+function C(e) {
     let {
         configMetadataMap: t,
         onConfigurationChange: n,
@@ -327,7 +327,7 @@ function T(e) {
     })
 }
 
-function C(e) {
+function T(e) {
     let {
         configMetadataMap: t,
         onConfigurationChange: n,
@@ -627,12 +627,12 @@ function O(e) {
         _ = null;
     switch (c?.type) {
         case h.fg2.STEAM:
-            _ = (0, i.jsx)(T, {
+            _ = (0, i.jsx)(C, {
                 ...m
             });
             break;
         case h.fg2.TWITTER:
-            _ = (0, i.jsx)(C, {
+            _ = (0, i.jsx)(T, {
                 ...m
             });
             break;

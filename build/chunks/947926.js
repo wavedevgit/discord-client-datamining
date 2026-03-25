@@ -37,7 +37,7 @@ var a = n(627968),
 n(272111);
 var D = n(419548);
 
-function M(e) {
+function P(e) {
     let {
         isExpanded: t,
         questId: n
@@ -50,7 +50,7 @@ function M(e) {
     }), null
 }
 
-function P() {
+function M() {
     return i.useEffect(() => {
         c.l.trigger()
     }, []), null
@@ -133,10 +133,10 @@ function L(e) {
         children: (e, n) => (G.current = n.current, (0, a.jsxs)("div", {
             className: D.dK,
             children: [q && (0, a.jsxs)(a.Fragment, {
-                children: [(0, a.jsx)(M, {
+                children: [(0, a.jsx)(P, {
                     questId: V,
                     isExpanded: Q
-                }), (0, a.jsx)(P, {})]
+                }), (0, a.jsx)(M, {})]
             }), (0, a.jsx)(r.animated.div, {
                 "aria-hidden": !q,
                 onMouseLeave: eu,

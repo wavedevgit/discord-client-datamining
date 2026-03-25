@@ -22,8 +22,8 @@ var i = n(627968),
     _ = n(604870),
     N = n(664675),
     j = n(541956),
-    T = n(636547),
-    v = n(652215),
+    v = n(636547),
+    T = n(652215),
     C = n(73510),
     I = n(985018),
     E = n(183395);
@@ -139,7 +139,7 @@ function S(e) {
         let {
             default: e
         } = await n.e("29384").then(n.bind(n, 519387)), t = L.defaultMemberPermissions;
-        return r.aI(t, u.Cq) && (t = v.xBc.ADMINISTRATOR), n => (0, i.jsx)(e, {
+        return r.aI(t, u.Cq) && (t = T.xBc.ADMINISTRATOR), n => (0, i.jsx)(e, {
             ...n,
             defaultMemberPermissions: t
         })
@@ -179,7 +179,7 @@ function S(e) {
             })]
         }) : null, q.map((e, t) => {
             let n = null;
-            return G ? Y && (n = I.intl.string(I.t["XTwtW/"])) : n = null != s ? I.intl.string(I.t.tybdas) : I.intl.string(I.t["z2hjk/"]), (0, i.jsx)(T.A, {
+            return G ? Y && (n = I.intl.string(I.t["XTwtW/"])) : n = null != s ? I.intl.string(I.t.tybdas) : I.intl.string(I.t["z2hjk/"]), (0, i.jsx)(v.A, {
                 bar: (0, i.jsx)(d.STz, {
                     tooltipClassName: E.YL,
                     text: n,

@@ -81,7 +81,7 @@ function p(e) {
         N = j[u.C.CAPTCHA_AND_RAID_PROTECTION],
         E = j[u.C.DM_AND_SPAM_PROTECTION],
         b = j[u.C.PERMISSIONS],
-        T = (0, o.iI)(t.id);
+        C = (0, o.iI)(t.id);
     return (0, i.jsxs)("div", {
         children: [(0, i.jsx)(l.Heading, {
             variant: "heading-lg/semibold",
@@ -112,7 +112,7 @@ function p(e) {
                 page: u.C.DM_AND_SPAM_PROTECTION
             }), (0, i.jsx)("div", {
                 className: h.yF
-            }), T && (0, i.jsxs)(i.Fragment, {
+            }), C && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(_, {
                     icon: n(34853),
                     title: x.intl.string(x.t.uRelgx),

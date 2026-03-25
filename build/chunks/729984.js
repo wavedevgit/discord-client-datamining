@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(107795),
     E = n(655943),
     b = n(82566),
-    T = n(259866),
-    C = n(950358),
+    C = n(259866),
+    T = n(950358),
     I = n(561108),
     v = n(191117),
     S = n(985018),
@@ -171,13 +171,13 @@ function G(e) {
                 variant: "text-sm/normal",
                 color: "text-default",
                 children: S.intl.string(S.t.Kq7FAS)
-            }), (0, i.jsx)(T.mU, {
+            }), (0, i.jsx)(C.mU, {
                 className: y.kr,
                 guildId: n.id
             }), g ? null : (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(O, {
                     guild: n
-                }), (0, i.jsx)(C.A, {
+                }), (0, i.jsx)(T.A, {
                     className: y.bE,
                     guild: n,
                     categories: d,

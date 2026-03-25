@@ -24,8 +24,8 @@ var i = n(627968),
     N = n(287809),
     E = n(403362),
     b = n(427262),
-    T = n(555337),
-    C = n(276373),
+    C = n(555337),
+    T = n(276373),
     I = n(523599),
     v = n(438407),
     S = n(258665),
@@ -288,7 +288,7 @@ class M extends s.PureComponent {
             moderators: s
         } = this.props;
         if (t) return null;
-        let l = C.ACTION_FILTER_ITEMS(),
+        let l = T.ACTION_FILTER_ITEMS(),
             r = l.find(t => {
                 let {
                     value: n
@@ -494,8 +494,8 @@ class M extends s.PureComponent {
         this._lastExpandedRef = e
     }
 }
-let k = d.Ay.connectStores([I.A, T.A, f.A, h.A, j.A, N.default], () => {
-    let e = T.A.getGuildId(),
+let k = d.Ay.connectStores([I.A, C.A, f.A, h.A, j.A, N.default], () => {
+    let e = C.A.getGuildId(),
         t = f.A.getGuild(e),
         n = I.A.logs;
     return {
@@ -508,7 +508,7 @@ let k = d.Ay.connectStores([I.A, T.A, f.A, h.A, j.A, N.default], () => {
         showLoadMore: I.A.groupedFetchCount > 2,
         hasError: I.A.hasError,
         hasOlderLogs: I.A.hasOlderLogs,
-        logs: null != n && null != t ? C.transformLogs(n, t) : [],
+        logs: null != n && null != t ? T.transformLogs(n, t) : [],
         actionFilter: I.A.actionFilter,
         userIdFilter: I.A.userIdFilter,
         theme: h.A.theme,

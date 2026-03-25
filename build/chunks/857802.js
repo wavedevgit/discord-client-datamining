@@ -24,8 +24,8 @@ var i = n(627968),
     N = n(319225),
     E = n(781289),
     b = n(652215),
-    T = n(705751),
-    C = n(269927),
+    C = n(705751),
+    T = n(269927),
     I = n(985018),
     v = n(486984);
 
@@ -61,7 +61,7 @@ function y(e) {
         label: e.name,
         value: e.id
     })), [n]), p = async () => {
-        await u(t, o, T.S7.GUILD_ROLE_SUBSCRIPTIONS) && (x(t.id), (0, N.E)({
+        await u(t, o, C.S7.GUILD_ROLE_SUBSCRIPTIONS) && (x(t.id), (0, N.E)({
             title: I.intl.string(I.t["AP/2qe"]),
             body: I.intl.string(I.t.kHMgaK)
         }))
@@ -99,7 +99,7 @@ let R = e => {
         loading: N
     } = (0, x.A)({
         refreshOnDepChange: f
-    }), T = s.useMemo(() => j.filter(e => e.payout_account_status !== C.y.BLOCKED && (0, g.y)(n?.id ?? b.dJq, e)), [j, n]), R = T.length > 0, O = s.useCallback(async () => {
+    }), C = s.useMemo(() => j.filter(e => e.payout_account_status !== T.y.BLOCKED && (0, g.y)(n?.id ?? b.dJq, e)), [j, n]), R = C.length > 0, O = s.useCallback(async () => {
         A.default.track(b.HAw.GUILD_ROLE_SUBSCRIPTION_TEAM_SETUP_CLICKED, {
             is_onboarding_v2: c,
             has_eligible_team: R,
@@ -128,7 +128,7 @@ let R = e => {
             }),
             children: R ? (0, i.jsx)(y, {
                 guild: t,
-                eligibleTeams: T,
+                eligibleTeams: C,
                 isGuildOwner: r
             }) : (0, i.jsx)(S, {
                 onCreateTeamClick: O,

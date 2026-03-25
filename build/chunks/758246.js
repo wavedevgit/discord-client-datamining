@@ -26,8 +26,8 @@ var l = n(311907),
     N = n(458907),
     E = n(719175),
     b = n(643674),
-    T = n(156057),
-    C = n(652215),
+    C = n(156057),
+    T = n(652215),
     I = n(985018),
     v = n(628080);
 let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
@@ -75,7 +75,7 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
         let {
             canManageGuild: R
         } = (0, l.cf)([_.A], () => ({
-            canManageGuild: _.A.can(C.xBc.MANAGE_GUILD, t)
+            canManageGuild: _.A.can(T.xBc.MANAGE_GUILD, t)
         })), O = (0, l.bG)([j.A], () => j.A.isGuildMetadataLoaded()), G = (0, l.bG)([j.A], () => null != t ? j.A.getMetadata() : null), L = (0, l.bG)([j.A], () => null != t && G?.isPublished ? j.A.getSlug() : null), [D, M] = s.useState([!0]), [k, U] = s.useState(!0), [P, w] = s.useState([!1]), [B, F] = s.useState([""]);
         s.useEffect(() => {
             if (null !== G) {
@@ -86,9 +86,9 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         let s = (e => {
                             try {
                                 let t = new URL(e).hostname.split(".");
-                                if (3 === t.length && "bandcamp" === t[1].toLowerCase()) return T.x.bandcamp.presentation;
+                                if (3 === t.length && "bandcamp" === t[1].toLowerCase()) return C.x.bandcamp.presentation;
                                 let n = t.shift()?.toLowerCase() ?? "";
-                                if ("www" === n && (n = t.shift()?.toLowerCase() ?? ""), n in T.x) return T.x[n].presentation;
+                                if ("www" === n && (n = t.shift()?.toLowerCase() ?? ""), n in C.x) return C.x[n].presentation;
                                 return null
                             } catch {
                                 return null
@@ -198,7 +198,7 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                                         children: [I.intl.format(I.t["+ScrMf"], {
                                             discordURL: window.GLOBAL_ENV.MARKETING_ENDPOINT
                                         }), " ", I.intl.format(I.t.T6WtKw, {
-                                            learnMoreURL: A.A.getArticleURL(C.MVz.SERVER_WEB_PAGES)
+                                            learnMoreURL: A.A.getArticleURL(T.MVz.SERVER_WEB_PAGES)
                                         })]
                                     }), (0, i.jsxs)(o.BJc, {
                                         gap: 40,
@@ -320,7 +320,7 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                                             children: [G.socialLinks.map((e, n) => {
                                                 var s;
                                                 let l, r = B[n],
-                                                    a = Object.values(T.x).find(e => e.presentation === r),
+                                                    a = Object.values(C.x).find(e => e.presentation === r),
                                                     d = null != a ? `${a.baseUrl}` : void 0;
                                                 return (0, i.jsxs)("div", {
                                                     className: v.Au,
@@ -330,7 +330,7 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                                                     onBlur: () => Y(n, !1),
                                                     children: [(0, i.jsx)(o.l6P, {
                                                         selectionMode: "single",
-                                                        options: (s = B[n], l = Object.entries(T.x).filter(e => !B.includes(e[1].presentation)).map(e => ({
+                                                        options: (s = B[n], l = Object.entries(C.x).filter(e => !B.includes(e[1].presentation)).map(e => ({
                                                             id: e[0],
                                                             label: e[1].presentation,
                                                             value: e[0]
@@ -345,7 +345,7 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                                                         value: B[n],
                                                         onSelectionChange: e => {
                                                             let i, s, l;
-                                                            return i = [...G.socialLinks], s = [...B], l = [...D], void(s[n] = e, i[n] = T.x[e].baseUrl, l[n] = !0, M(l), F(s), U(l.every(e => !0 === e)), (0, m.uh)(t.id, i))
+                                                            return i = [...G.socialLinks], s = [...B], l = [...D], void(s[n] = e, i[n] = C.x[e].baseUrl, l[n] = !0, M(l), F(s), U(l.every(e => !0 === e)), (0, m.uh)(t.id, i))
                                                         },
                                                         disabled: !R
                                                     }), (0, i.jsx)(o.ksK, {

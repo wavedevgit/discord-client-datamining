@@ -24,24 +24,24 @@ var i = n(627968),
     N = n(652215),
     E = n(985018),
     b = n(862238);
-let T = "guild-role-subscription-tier-template-selector";
+let C = "guild-role-subscription-tier-template-selector";
 
-function C(e) {
+function T(e) {
     let {
         guildId: t,
         priceTiers: l,
         groupListingId: _
     } = e, j = (0, h.cY)(_), {
-        editStateIds: C,
+        editStateIds: T,
         addNewEditStateId: I,
         addNewEditStateFromTemplate: v,
         removeEditStateId: S
     } = A.d0(_, t, {
         includeSoftDeleted: !0
     }), [y, R] = s.useState({}), O = s.useMemo(() => {
-        let e = C.map(e => y[e] ?? e);
+        let e = T.map(e => y[e] ?? e);
         return (0, a.uniq)(e)
-    }, [C, y]), G = (0, x._Y)(t), L = (0, x.a0)(), D = s.useCallback(() => {
+    }, [T, y]), G = (0, x._Y)(t), L = (0, x.a0)(), D = s.useCallback(() => {
         L && g.ok.trackExposure({
             guildId: t,
             location: "b2d9de_1"
@@ -57,11 +57,11 @@ function C(e) {
                 priceTiers: l
             })
         }, {
-            modalKey: T
+            modalKey: C
         }) : I()
     }, [t, v, I, l, L, G]), M = A.Zw(O), k = s.useCallback(() => O.forEach(A.Ts), [O]), U = (0, p.gN)(), P = (0, o.bG)([m.A], () => m.A.getProps().subsection);
     return s.useEffect(() => (P === N.nd0.ROLE_SUBSCRIPTION_TIER_TEMPLATE && D(), () => {
-        (0, u.OoC)(T)
+        (0, u.OoC)(C)
     }), [P, D]), (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
             className: b.B2,
@@ -129,7 +129,7 @@ function I(e) {
         description: E.intl.format(E.t.nHRSvM, {
             maxTiers: r
         }),
-        children: (0, i.jsx)(C, {
+        children: (0, i.jsx)(T, {
             priceTiers: n,
             guildId: t,
             groupListingId: a[0]

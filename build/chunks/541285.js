@@ -24,8 +24,8 @@ var i = n(627968),
     N = n(631103),
     E = n(927573),
     b = n(652215),
-    T = n(985018),
-    C = n(276317),
+    C = n(985018),
+    T = n(276317),
     I = n(483604);
 
 function v(e) {
@@ -47,16 +47,16 @@ function v(e) {
         roles: m
     }), [r, t, m]), h = !a.aI(u, x);
     return (0, i.jsx)(d.m, {
-        text: h ? T.intl.string(T.t["IQ/6Sg"]) : null,
+        text: h ? C.intl.string(C.t["IQ/6Sg"]) : null,
         position: "top",
         children: (0, i.jsx)("div", {
-            className: C.FS,
+            className: T.FS,
             children: (0, i.jsx)(c.QWc, {
                 variant: "primary",
                 textVariant: "text-sm/semibold",
                 onClick: () => (0, p.Y_)(n.id),
                 disabled: a.aI(n.permissions, _.x3) || h || l,
-                text: T.intl.string(T.t["UYq7+O"])
+                text: C.intl.string(C.t["UYq7+O"])
             })
         })
     })
@@ -70,12 +70,12 @@ function S(e) {
         locked: l
     } = e;
     if (0 === s.length) return (0, i.jsxs)("div", {
-        className: C.pb,
+        className: T.pb,
         children: [(0, i.jsx)(A.A, {
-            className: C.wV
+            className: T.wV
         }), (0, i.jsx)(c.Text, {
             variant: "text-sm/normal",
-            children: T.intl.string(T.t.DEBGqA)
+            children: C.intl.string(C.t.DEBGqA)
         })]
     });
 
@@ -85,16 +85,16 @@ function S(e) {
                 ...n,
                 permissions: a.TF(n.permissions, e)
             }
-        }) && T.intl.string(T.t["K+D+GF"]) : T.intl.string(T.t.nOtPMM)
+        }) && C.intl.string(C.t["K+D+GF"]) : C.intl.string(C.t.nOtPMM)
     }
     return (0, i.jsxs)("div", {
-        className: C.eZ,
+        className: T.eZ,
         children: [(0, i.jsx)(v, {
             guild: t,
             role: n,
             locked: l
-        }), s.map((e, s) => (0, i.jsx)(u.A, {
-            className: C.p2,
+        }), s.map((e, t) => (0, i.jsx)(u.A, {
+            className: T.p2,
             spec: e,
             permissions: n.permissions,
             locked: l,
@@ -102,9 +102,8 @@ function S(e) {
                 if ("string" == typeof t) throw Error("Unexpected string `allow`");
                 (0, p.Ul)(n.id, e, t)
             },
-            permissionRender: r,
-            guildId: t.id
-        }, s))]
+            permissionRender: r
+        }, t))]
     })
 }
 
@@ -133,7 +132,7 @@ function y(e) {
             search_type: "Permissions"
         }), v.current = !0)
     }, [d]), (0, i.jsx)(c.GtU, {
-        className: C.XG,
+        className: T.XG,
         style: {
             scrollPaddingTop: g
         },
@@ -151,18 +150,18 @@ function y(e) {
                     selectedSection: E.T$.PERMISSIONS,
                     setSelectedSection: a
                 }), (0, i.jsx)("div", {
-                    className: C.U9,
+                    className: T.U9,
                     children: (0, i.jsx)(N.A, {
                         role: n
                     })
                 }), (0, i.jsx)("div", {
-                    className: C.MT,
+                    className: T.MT,
                     children: (0, i.jsx)(c.IWV, {
                         query: d,
                         onChange: u,
                         onClear: () => u(""),
-                        placeholder: T.intl.string(T.t.OLJAk3),
-                        "aria-label": T.intl.string(T.t.OLJAk3)
+                        placeholder: C.intl.string(C.t.OLJAk3),
+                        "aria-label": C.intl.string(C.t.OLJAk3)
                     })
                 })]
             }), (0, i.jsx)(S, {

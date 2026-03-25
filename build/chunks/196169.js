@@ -1,7 +1,7 @@
 /** chunk id: 196169 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => C
+    A: () => T
 });
 var i = n(627968);
 n(64700);
@@ -157,7 +157,7 @@ function b() {
     })
 }
 
-function T() {
+function C() {
     let e = (0, r.Ay)();
     return (0, i.jsxs)("div", {
         className: d.FN,
@@ -183,7 +183,7 @@ function T() {
     })
 }
 
-function C() {
+function T() {
     return (0, i.jsxs)("div", {
         children: [(0, i.jsx)(l.Heading, {
             variant: "heading-lg/semibold",
@@ -193,7 +193,7 @@ function C() {
             size: 24
         }), (0, i.jsxs)("div", {
             className: d._$,
-            children: [(0, i.jsx)(E, {}), (0, i.jsx)(b, {}), (0, i.jsx)(T, {})]
+            children: [(0, i.jsx)(E, {}), (0, i.jsx)(b, {}), (0, i.jsx)(C, {})]
         })]
     })
 }

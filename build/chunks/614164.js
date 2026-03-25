@@ -24,8 +24,8 @@ var i = n(627968),
     N = n(652215),
     E = n(783419),
     b = n(985018),
-    T = n(750730),
-    C = n(483604);
+    C = n(750730),
+    T = n(483604);
 
 function I(e, t) {
     return t !== m.jO.AND ? Object.values(o().groupBy(e, e => `${e.connectionType}:${e.applicationId}`)) : 0 === e.length ? [] : [
@@ -39,15 +39,15 @@ function v(e) {
         locked: n
     } = e;
     return (0, i.jsxs)("div", {
-        className: T.Gq,
+        className: C.Gq,
         children: [(0, i.jsx)(c.Heading, {
-            className: T.gg,
+            className: C.gg,
             variant: "eyebrow",
             children: b.intl.string(b.t.nMir27)
         }), (0, i.jsx)(c.Text, {
             variant: "text-sm/normal",
             color: "text-default",
-            className: T.$L,
+            className: C.$L,
             children: b.intl.format(b.t.q5f7tK, {
                 helpdeskArticleUrl: g.A.getArticleURL(N.MVz.CONNECTION_DETAILS_ADMIN)
             })
@@ -115,9 +115,9 @@ function S(e) {
         })), w = (0, i.jsxs)(i.Fragment, {
             children: [(B = () => (0, h.pn)(n.id, []), (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsxs)("div", {
-                    className: T.$$,
+                    className: C.$$,
                     children: [(0, i.jsx)("div", {
-                        className: T.Ir,
+                        className: C.Ir,
                         children: (0, i.jsx)(c.Heading, {
                             variant: "eyebrow",
                             children: b.intl.string(b.t.nMir27)
@@ -192,7 +192,7 @@ function S(e) {
                     })
                 }
                 return (0, i.jsx)("div", {
-                    className: T.rr,
+                    className: C.rr,
                     children: Array.from(a.values()).map(e => (0, i.jsx)(A.A, {
                         configurationItems: e,
                         onConfigurationChange: r,
@@ -204,16 +204,16 @@ function S(e) {
         })
     }
     return (0, i.jsx)(c.GtU, {
-        className: T.XG,
+        className: C.XG,
         style: {
             scrollPaddingTop: S
         },
         onScroll: O,
         children: (0, i.jsxs)("div", {
-            className: C.Q,
+            className: T.Q,
             children: [(0, i.jsx)("div", {
-                className: r()(C.wx, C.ln, {
-                    [C.l6]: !R
+                className: r()(T.wx, T.ln, {
+                    [T.l6]: !R
                 }),
                 ref: y,
                 children: (0, i.jsx)(f.A, {
@@ -223,13 +223,13 @@ function S(e) {
                     setSelectedSection: a
                 })
             }), (G ?? 0) > 0 ? (0, i.jsxs)("div", {
-                className: T.UW,
+                className: C.UW,
                 children: [(0, i.jsx)(c.EpV, {
                     size: "custom",
                     width: 20,
                     height: 20,
                     color: "currentColor",
-                    className: T.QW
+                    className: C.QW
                 }), (0, i.jsx)(c.Text, {
                     variant: "text-sm/normal",
                     color: "text-default",

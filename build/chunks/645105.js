@@ -66,7 +66,7 @@ let E = e => {
         })
     };
 
-function T(e) {
+function C(e) {
     let {
         rule: t,
         onChangeRule: n,
@@ -107,7 +107,7 @@ function T(e) {
     })
 }
 
-function C(e) {
+function T(e) {
     return (0, g.ub)(e, g.H2.ALPHA) ? (0, i.jsx)(d.A, {
         className: j.n0
     }) : (0, g.ub)(e, g.H2.BETA) ? (0, i.jsx)(c.A, {
@@ -125,7 +125,7 @@ function I(e) {
         saveRule: g
     } = (0, x.S)(), {
         updateRule: _
-    } = (0, m.wP)(t.guildId), [p, A] = s.useState(t.enabled), T = (0, l.throttle)(async () => {
+    } = (0, m.wP)(t.guildId), [p, A] = s.useState(t.enabled), C = (0, l.throttle)(async () => {
         if (!c) {
             let e = {
                 ...t,
@@ -159,7 +159,7 @@ function I(e) {
                 className: j.aY,
                 children: [(0, i.jsxs)("div", {
                     className: j.bR,
-                    children: [I, C(t.triggerType)]
+                    children: [I, T(t.triggerType)]
                 }), (0, i.jsx)(a.Text, {
                     className: j.bL,
                     variant: "text-sm/normal",
@@ -176,7 +176,7 @@ function I(e) {
         }), (0, i.jsxs)(b, {
             className: j.Ik,
             children: [(0, i.jsx)(a.dOG, {
-                onChange: T,
+                onChange: C,
                 checked: p ?? !1
             }), !n && (0, i.jsx)(r.m, {
                 text: f.intl.string(f.t["UKOtz+"]),
@@ -225,7 +225,7 @@ function v(e) {
                 color: "text-strong",
                 children: (0, i.jsxs)("div", {
                     className: j.bR,
-                    children: [r, C(t)]
+                    children: [r, T(t)]
                 })
             }), (0, i.jsx)(a.Text, {
                 className: j.mT,
@@ -269,7 +269,7 @@ function S(e) {
         triggerType: s,
         onSetupRule: c
     });
-    return null == t || d || (g = l ? (0, i.jsx)(T, {
+    return null == t || d || (g = l ? (0, i.jsx)(C, {
         rule: t,
         onChangeRule: u,
         onContextMenu: m

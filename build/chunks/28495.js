@@ -24,8 +24,8 @@ var i = n(627968),
     N = n(20851),
     E = n(176201),
     b = n(676608),
-    T = n(828162),
-    C = n(801264),
+    C = n(828162),
+    T = n(801264),
     I = n(34457),
     v = n(576705),
     S = n(636042),
@@ -91,7 +91,7 @@ function J(e) {
     };
 
     function b() {
-        (0, T.A)(n, p.A.GUILD_POWERUPS_GUILD_SETTINGS_ROLE_EDIT), (0, x.jH)()
+        (0, C.A)(n, p.A.GUILD_POWERUPS_GUILD_SETTINGS_ROLE_EDIT), (0, x.jH)()
     }
     return (0, i.jsx)(f.Ay, {
         contentTypes: [u.M.GUILD_SETTINGS_ROLE_STYLES_NEW_BADGE],
@@ -358,7 +358,7 @@ function ee(e) {
                 disabled: x,
                 currentStyle: u,
                 hasEnhancedRoleColors: a
-            }), u === y.y.HOLOGRAPHIC && (0, i.jsx)(C.A, {
+            }), u === y.y.HOLOGRAPHIC && (0, i.jsx)(T.A, {
                 className: H.u,
                 children: (0, i.jsx)(g.Text, {
                     variant: "text-xs/medium",

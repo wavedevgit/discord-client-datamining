@@ -1,6 +1,6 @@
 /** chunk id: 553081 params = (module,exports,require) **/
 n.d(t, {
-    A: () => k
+    A: () => U
 }), n(321073), n(323874), n(14289), n(35956);
 var i = n(627968),
     s = n(64700),
@@ -36,7 +36,7 @@ var i = n(627968),
     D = n(985018),
     G = n(520089),
     M = n(288894);
-let k = e => {
+let U = e => {
     let {
         userId: t
     } = e, n = (0, r.zy)();
@@ -49,8 +49,8 @@ let k = e => {
         K(!0)
     }, []), (0, b.j)(), (0, x.P)(g.b);
     let l = s.useRef(null),
-        k = s.useRef(null),
-        U = (0, o.bG)([T.A], () => T.A.getPremiumTypeSubscription()),
+        U = s.useRef(null),
+        k = (0, o.bG)([T.A], () => T.A.getPremiumTypeSubscription()),
         {
             isReady: w,
             programReward: V,
@@ -78,7 +78,7 @@ let k = e => {
             } : {}
         }, [n.search]);
     (0, R.z)(F ?? "", null != F, z, Y);
-    let [X, K] = s.useState(!1), W = (0, E.p)(), Z = s.useRef(null), [q, Q] = s.useState(!1), J = null != W && null != U && U.status === P.Dmq.CANCELED, $ = (0, C.iU)(L.gD.PREMIUM_MONTH_TIER_2, W, U), ee = !q && J, {
+    let [X, K] = s.useState(!1), W = (0, E.p)(), Z = s.useRef(null), [q, Q] = s.useState(!1), J = null != W && null != k && k.status === P.Dmq.CANCELED, $ = (0, C.iU)(L.gD.PREMIUM_MONTH_TIER_2, W, k), ee = !q && J, {
         analyticsLocations: et
     } = (0, _.Ay)(m.A.PREMIUM_SUBSCRIBER_NITRO_HOME), [en, ei] = s.useState(!1);
     return null != (0, o.bG)([p.A], () => null != t ? p.A.getUserProfile(t) : null) && (w || null != V) ? (0, i.jsxs)(c.GtU, {
@@ -118,14 +118,14 @@ let k = e => {
                 }), (0, i.jsx)("div", {
                     className: G.hz
                 }), (0, i.jsx)(d.L, {
-                    innerRef: k,
+                    innerRef: U,
                     onChange: e => {
                         e && !en && (S.default.track(P.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                             location_stack: et
                         }), ei(!0))
                     },
                     children: (0, i.jsx)("div", {
-                        ref: k,
+                        ref: U,
                         className: G._Z
                     })
                 }), (0, i.jsx)("img", {
@@ -138,7 +138,7 @@ let k = e => {
             })
         }), J && null != $ && (0, i.jsx)(I.A, {
             isVisible: ee && X,
-            premiumSubscription: U,
+            premiumSubscription: k,
             churnDiscountOffer: W,
             discountedPrice: $
         })]

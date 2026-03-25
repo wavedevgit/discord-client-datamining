@@ -24,11 +24,11 @@ var i = n(627968),
     N = n(29086),
     E = n(652215),
     b = n(743981),
-    T = n(583970),
-    C = n(985018),
+    C = n(583970),
+    T = n(985018),
     I = n(175820);
 let v = function() {
-    (0, C.useSyncMessages)(T.messagesLoader);
+    (0, T.useSyncMessages)(C.messagesLoader);
     let e = (0, r.bG)([h.A], () => h.A.getGuild()),
         t = (0, r.bG)([h.A], () => h.A.getGuildProfile()),
         {
@@ -73,7 +73,7 @@ let v = function() {
         children: [(0, i.jsx)(a.Heading, {
             className: I.DD,
             variant: "heading-lg/semibold",
-            children: C.intl.string(T.default.mf2OwH)
+            children: T.intl.string(C.default.mf2OwH)
         }), (0, i.jsxs)("div", {
             className: I.kL,
             children: [(0, i.jsxs)("div", {
@@ -83,7 +83,7 @@ let v = function() {
                     children: [(0, i.jsx)(a.Text, {
                         variant: "text-sm/medium",
                         color: "text-subtle",
-                        children: C.intl.format(T.default["655Uny"], {
+                        children: T.intl.format(C.default["655Uny"], {
                             onClickServerProfile: () => {
                                 x.A.setSection(E.BEX.PROFILE)
                             },
@@ -95,7 +95,7 @@ let v = function() {
                         className: I.pB,
                         children: (0, i.jsx)(a.Text, {
                             variant: "text-xs/medium",
-                            children: C.intl.format(T.default.CRbkIz, {
+                            children: T.intl.format(C.default.CRbkIz, {
                                 onClickEditSetting: () => x.A.setSection(E.BEX.PROFILE, E.nd0.PROFILE_VISIBILITY)
                             })
                         })
@@ -107,7 +107,7 @@ let v = function() {
                         children: (0, i.jsx)(a.Text, {
                             variant: "text-md/semibold",
                             color: "text-strong",
-                            children: C.intl.string(T.default["1zams8"])
+                            children: T.intl.string(C.default["1zams8"])
                         })
                     }), (0, i.jsx)(a.dOG, {
                         id: "enable-server-tag",

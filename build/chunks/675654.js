@@ -31,8 +31,8 @@ function N(e) {
         fetchStatus: N
     } = (0, m.u)(t), E = N !== u.X.FETCHED, {
         fetchedEmbed: b,
-        embedEnabled: T,
-        embedChannelId: C
+        embedEnabled: C,
+        embedChannelId: T
     } = (0, a.cf)([h.A], () => {
         let {
             fetchedEmbed: e,
@@ -44,19 +44,19 @@ function N(e) {
             embedEnabled: t,
             embedChannelId: n
         }
-    }), I = s.useMemo(() => (0, p.k)(t), [t]), v = s.useMemo(() => (0, p.Z)(t), [t]), [S, y] = s.useState(!1), R = null != d && l.i.VISIBLE.has(d.visibility), O = !E && !R && !T;
+    }), I = s.useMemo(() => (0, p.k)(t), [t]), v = s.useMemo(() => (0, p.Z)(t), [t]), [S, y] = s.useState(!1), R = null != d && l.i.VISIBLE.has(d.visibility), O = !E && !R && !C;
     s.useEffect(() => {
         b || (0, x.D)(t)
     }, [b, t]), s.useEffect(() => {
         g()
     }, [t, g]);
     let G = s.useCallback(async e => {
-        y(!0), await (0, _.E)(t, e, C), y(!1)
-    }, [C, t]);
+        y(!0), await (0, _.E)(t, e, T), y(!1)
+    }, [T, t]);
     return b ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(o.dOG, {
             label: f.intl.string(f.t.NR6huS),
-            checked: T,
+            checked: C,
             onChange: G,
             disabled: S
         }), O ? (0, i.jsx)(r.EYj, {
@@ -64,13 +64,13 @@ function N(e) {
             color: "text-subtle",
             className: j.W$,
             children: f.intl.string(f.t["zCGuJ+"])
-        }) : null, T ? (0, i.jsxs)(i.Fragment, {
+        }) : null, C ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(A.s, {
                 label: f.intl.string(f.t.LUo0Q8),
                 description: f.intl.string(f.t.LxVR9A),
                 guildId: t,
-                widgetEnabled: T,
-                widgetChannelId: C,
+                widgetEnabled: C,
+                widgetChannelId: T,
                 enableLocalUpdate: !0
             }), (0, i.jsxs)("div", {
                 className: j.cL,

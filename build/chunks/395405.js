@@ -24,12 +24,12 @@ var i = n(627968),
     N = n(696451),
     E = n(71393),
     b = n(287809),
-    T = n(473145),
-    C = n(240248),
+    C = n(473145),
+    T = n(240248),
     I = n(652215),
     v = n(985018),
     S = n(306769);
-let y = (0, C.xI)(u.A.GUILD_SETTINGS_PREMIUM_TIER_STATUS_PROGRESS_WITH_SUBSCRIPTIONS_MARGIN_TOP);
+let y = (0, T.xI)(u.A.GUILD_SETTINGS_PREMIUM_TIER_STATUS_PROGRESS_WITH_SUBSCRIPTIONS_MARGIN_TOP);
 class R extends s.Component {
     tierRefs = {};
     defaultTierRef = s.createRef();
@@ -94,7 +94,7 @@ class R extends s.Component {
             },
             a = e.map(e => ({
                 numRequired: I.M2T[e.tier],
-                name: (0, T.gb)(e.tier),
+                name: (0, C.gb)(e.tier),
                 y: t[e.tier] ?? 0,
                 key: e.tier
             }));

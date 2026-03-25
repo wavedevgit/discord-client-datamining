@@ -24,8 +24,8 @@ var i = n(627968),
     N = n(792831),
     E = n(396816),
     b = n(359837),
-    T = n(533448),
-    C = n(316506),
+    C = n(533448),
+    T = n(316506),
     I = n(927573),
     v = n(652215),
     S = n(985018),
@@ -46,8 +46,8 @@ function O(e) {
             roleStyle: N
         } = e,
         E = (0, b.c)(s, d, l),
-        T = (0, f.Oy)(l),
-        C = null == E && !T,
+        C = (0, f.Oy)(l),
+        T = null == E && !C,
         I = l.tags?.guild_connections !== void 0,
         S = (0, A.X_)(s.id, l, l.colorStrings),
         [, O] = (0, a.i)({
@@ -56,7 +56,7 @@ function O(e) {
                 id: l.id,
                 position: x
             }),
-            canDrag: () => C,
+            canDrag: () => T,
             end: (e, t) => {
                 let n = t.getDropResult();
                 null == n ? p() : j(n.roleId)
@@ -66,7 +66,7 @@ function O(e) {
             dragSourcePosition: G
         }, L] = (0, o.H)({
             accept: R,
-            canDrop: () => C,
+            canDrop: () => T,
             collect: e => {
                 let t = e.getItem();
                 return null != t && e.isOver() && e.canDrop() ? {
@@ -122,7 +122,7 @@ function O(e) {
             tooltipText: E
         }) : null, (0, i.jsx)(u.Text, {
             variant: "text-sm/medium",
-            color: T ? "text-strong" : "interactive-text-active",
+            color: C ? "text-strong" : "interactive-text-active",
             lineClamp: 1,
             children: l.name
         })]
@@ -138,11 +138,11 @@ function G(e) {
     } = e, o = (0, d.bG)([E.A], () => E.A.roles), m = (0, d.bG)([j.A], () => j.A.getHighestRole(t)), _ = (0, d.bG)([h.A], () => h.A.roleStyle), [A, f] = s.useState(o.length), {
         scrolledToTop: b,
         handleScroll: v
-    } = (0, C.u)(), {
+    } = (0, T.u)(), {
         handleDragStart: R,
         handleDragReset: G,
         handleDragComplete: L
-    } = (0, T.A)(o), D = s.useRef(null), M = s.useCallback(e => {
+    } = (0, C.A)(o), D = s.useRef(null), M = s.useCallback(e => {
         let t = o.findIndex(t => t.id === e);
         D.current?.getScrollerNode()?.scrollTo({
             top: Math.max((t - 2) * 34, 0)

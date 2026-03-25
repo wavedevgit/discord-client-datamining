@@ -29,11 +29,11 @@ function h(e) {
     }, [n]), s.useEffect(() => () => {
         clearTimeout(b.current)
     }, []);
-    let T = l.find(e => e.value === p);
+    let C = l.find(e => e.value === p);
     return (0, i.jsx)(u.A, {
-        title: f ? t : T?.title ?? t,
-        description: f ? `(${T?.title??g.intl.string(g.t.PoWNfe)})` : T?.description ?? "",
-        highlightColor: f ? c.t.NONE : T?.highlightColor,
+        title: f ? t : C?.title ?? t,
+        description: f ? `(${C?.title??g.intl.string(g.t.PoWNfe)})` : C?.description ?? "",
+        highlightColor: f ? c.t.NONE : C?.highlightColor,
         action: (0, i.jsx)(a.QWc, {
             text: g.intl.string(g.t.GEgsA4),
             textVariant: "text-sm/medium"

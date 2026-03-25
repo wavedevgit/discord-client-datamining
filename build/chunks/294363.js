@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(287809),
     E = n(997509),
     b = n(600955),
-    T = n(652215),
-    C = n(985018),
+    C = n(652215),
+    T = n(985018),
     I = n(690450);
 
 function v(e) {
@@ -48,10 +48,10 @@ function v(e) {
                     guild_id: t.id,
                     channel_id: e
                 };
-                (0, c.zV)(T.HAw.GUILD_RAID_ALERTS_SETUP, n)
+                (0, c.zV)(C.HAw.GUILD_RAID_ALERTS_SETUP, n)
             }
         } catch (e) {
-            (0, d.showToast)((0, d.createToast)(C.intl.string(C.t["46Rs3v"]), d.ToastType.FAILURE)), j(!A)
+            (0, d.showToast)((0, d.createToast)(T.intl.string(T.t["46Rs3v"]), d.ToastType.FAILURE)), j(!A)
         }
     };
     return (0, i.jsxs)("div", {
@@ -61,11 +61,11 @@ function v(e) {
             children: [(0, i.jsx)(d.Heading, {
                 variant: "text-md/semibold",
                 color: "text-strong",
-                children: C.intl.string(C.t.Qp98s9)
+                children: T.intl.string(T.t.Qp98s9)
             }), (0, i.jsx)(d.Text, {
                 variant: "text-sm/medium",
                 color: "text-default",
-                children: C.intl.string(C.t.Mg843t)
+                children: T.intl.string(T.t.Mg843t)
             }), n || null == l ? null : (0, i.jsxs)(d.Text, {
                 color: "interactive-text-default",
                 variant: "text-xs/medium",
@@ -94,7 +94,7 @@ function S(e) {
             let {
                 channel: t
             } = e;
-            return t.type === a.r.GUILD_TEXT && f.A.can(T.xBc.SEND_MESSAGES, t)
+            return t.type === a.r.GUILD_TEXT && f.A.can(C.xBc.SEND_MESSAGES, t)
         }).map(e => {
             let {
                 channel: t
@@ -123,10 +123,10 @@ function S(e) {
                     guild_id: t.id,
                     channel_id: e
                 };
-                (0, c.zV)(T.HAw.GUILD_RAID_ALERTS_SETUP, n)
+                (0, c.zV)(C.HAw.GUILD_RAID_ALERTS_SETUP, n)
             }
         } catch (e) {
-            (0, d.showToast)((0, d.createToast)(C.intl.string(C.t["46Rs3v"]), d.ToastType.FAILURE)), s(m)
+            (0, d.showToast)((0, d.createToast)(T.intl.string(T.t["46Rs3v"]), d.ToastType.FAILURE)), s(m)
         }
     };
     return (0, i.jsx)("div", {
@@ -135,8 +135,8 @@ function S(e) {
             className: I.U,
             children: (0, i.jsx)(d.ZiE, {
                 selectionMode: "single",
-                label: C.intl.string(C.t.sMkYE8),
-                helperText: C.intl.string(C.t["1QxN9N"]),
+                label: T.intl.string(T.t.sMkYE8),
+                helperText: T.intl.string(T.t["1QxN9N"]),
                 options: g,
                 onSelectionChange: _,
                 value: n,

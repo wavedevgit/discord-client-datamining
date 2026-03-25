@@ -149,7 +149,7 @@ function b(e) {
                     placeholder: j.intl.string(j.t.QMCuCo),
                     maxLength: f.kq,
                     error: M.title
-                }), (0, i.jsx)(T, {
+                }), (0, i.jsx)(C, {
                     prompt: n,
                     guild: t
                 }), (0, i.jsx)(d.D0$, {
@@ -161,7 +161,7 @@ function b(e) {
                         count: n.options.length,
                         total: f.fs
                     }),
-                    children: (0, i.jsx)(C, {
+                    children: (0, i.jsx)(T, {
                         guild: t,
                         prompt: n,
                         promptIndex: u,
@@ -218,7 +218,7 @@ function b(e) {
     })
 }
 
-function T(e) {
+function C(e) {
     let {
         prompt: t,
         guild: n
@@ -252,7 +252,7 @@ function T(e) {
     })
 }
 
-function C(e) {
+function T(e) {
     let {
         guild: t,
         prompt: n,

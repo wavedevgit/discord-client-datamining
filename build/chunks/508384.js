@@ -60,8 +60,8 @@ function A(e) {
         onItemSelect: p,
         itemType: f,
         locked: b,
-        lockTooltip: C,
-        showContextMenu: j,
+        lockTooltip: j,
+        showContextMenu: C,
         theme: N,
         roleStyle: v,
         onContextMenu: _,
@@ -75,7 +75,7 @@ function A(e) {
         selectedItem: A,
         onItemSelect: p,
         itemType: f,
-        "aria-label": null != C ? `${y}, ${C}` : y,
+        "aria-label": null != j ? `${y}, ${j}` : y,
         onContextMenu: _,
         children: (0, l.jsxs)("div", {
             className: m.yl,
@@ -93,7 +93,7 @@ function A(e) {
                 if (!b) return null;
                 let e = (0, o.Mw)(N) ? n(454554) : n(470474);
                 return (0, l.jsx)(r.m, {
-                    text: C,
+                    text: j,
                     children: (0, l.jsx)(h.A, {
                         className: m.s2,
                         src: e
@@ -102,7 +102,7 @@ function A(e) {
             }(), (0, l.jsx)("div", {
                 className: m.dD,
                 children: c
-            }), j && null != s ? (0, l.jsx)(x, {
+            }), C && null != s ? (0, l.jsx)(x, {
                 guild: a,
                 role: s
             }) : null]

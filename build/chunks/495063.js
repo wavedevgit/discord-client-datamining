@@ -1,7 +1,7 @@
 /** chunk id: 495063 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => C
+    A: () => T
 });
 var i = n(627968),
     s = n(64700),
@@ -128,7 +128,7 @@ let b = (0, _.CU)({
         },
         getAmount: e => e.amount
     }),
-    T = (0, p.gE)([(0, p.N7)({
+    C = (0, p.gE)([(0, p.N7)({
         key: "PERIOD",
         cellClassName: j.Ii,
         renderHeader: () => (0, i.jsx)(_.A3, {
@@ -176,7 +176,7 @@ let b = (0, _.CU)({
         expandableToggleColumnKey: "DROPDOWN"
     });
 
-function C(e) {
+function T(e) {
     let {
         ListingIdLabel: t,
         payoutsByPeriod: n
@@ -194,7 +194,7 @@ function C(e) {
         ...l
     }), [l, t]);
     return (0, i.jsx)(_.Ay, {
-        columns: T,
+        columns: C,
         data: r,
         cellProps: a
     })

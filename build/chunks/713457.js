@@ -34,7 +34,7 @@ var a = n(627968),
     R = n(654487),
     w = n(985018),
     D = n(421193);
-let M = [{
+let P = [{
     value: R.fO.DESKTOP,
     get label() {
         return w.intl.string(w.t["QXc01+"])
@@ -46,7 +46,7 @@ let M = [{
     }
 }];
 
-function P(e) {
+function M(e) {
     let t, n, {
         value: i
     } = e;
@@ -359,9 +359,9 @@ function F(e) {
     }) : Y && !eb ? eE = ec ? (0, a.jsx)(l.Pw, {
         className: D.dd,
         isSelected: () => !1,
-        options: M,
+        options: P,
         placeholder: w.intl.string(w.t.drVw4T),
-        renderOptionLabel: P,
+        renderOptionLabel: M,
         renderOptionValue: L,
         select: ep,
         serialize: e => {
@@ -485,9 +485,9 @@ function F(e) {
                             return !1
                     }
                 },
-                options: M,
+                options: P,
                 placeholder: w.intl.string(w.t.drVw4T),
-                renderOptionLabel: P,
+                renderOptionLabel: M,
                 renderOptionValue: L,
                 select: ep,
                 serialize: e => {

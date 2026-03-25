@@ -22,8 +22,8 @@ var i = n(627968),
     _ = n(317525),
     N = n(351906),
     j = n(287809),
-    T = n(427262),
-    v = n(652215),
+    v = n(427262),
+    T = n(652215),
     C = n(985018),
     I = n(393800);
 
@@ -159,7 +159,7 @@ function y(e) {
             width: 23,
             height: 23,
             className: a()(I.a, I.Sl),
-            color: c.colorString ?? v.TpD
+            color: c.colorString ?? T.TpD
         }), (0, i.jsx)(u.Text, {
             className: I.S3,
             color: "text-strong",
@@ -195,7 +195,7 @@ function O(e) {
         }), c ? null : (0, i.jsx)(u.Text, {
             className: I.Tc,
             variant: "text-sm/normal",
-            children: T.Ay.getUserTag(r)
+            children: v.Ay.getUserTag(r)
         }), l ? (0, i.jsx)(w, {
             tooltipText: s
         }) : null]

@@ -34,10 +34,10 @@ function h(e) {
         b = s.useCallback(e => {
             E([...d, e])
         }, [d, E]),
-        T = s.useCallback(e => {
+        C = s.useCallback(e => {
             E([...d.slice(0, e), ...d.slice(e + 1)])
         }, [d, E]),
-        C = s.useCallback((e, t) => {
+        T = s.useCallback((e, t) => {
             if (d[e] === t) return;
             let n = [...d];
             n[e] = t, E(n)
@@ -63,8 +63,8 @@ function h(e) {
             index: d.indexOf(e),
             isDragEnabled: d.length > 1,
             submittedGuildJoinRequestsCount: p,
-            removeFormField: T,
-            updateFormField: C,
+            removeFormField: C,
+            updateFormField: T,
             updateFormFieldOrder: I,
             canRemove: d.length > 1,
             actionsLocation: "side",

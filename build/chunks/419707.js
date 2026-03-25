@@ -27,8 +27,8 @@ let m = s.memo(function(e) {
     } = (0, d.Ay)(), {
         ref: E,
         height: b = 0
-    } = (0, d.Ay)(), [T, C] = s.useState(l), I = (0, o.zhh)({
-        height: T ? b + N : N,
+    } = (0, d.Ay)(), [C, T] = s.useState(l), I = (0, o.zhh)({
+        height: C ? b + N : N,
         config: {
             ...a.config.stiff,
             clamp: !0
@@ -41,7 +41,7 @@ let m = s.memo(function(e) {
         }
     }, _ || x ? "animate-never" : "respect-motion-settings");
     return s.useLayoutEffect(() => {
-        f(!1), C(l)
+        f(!1), T(l)
     }, [l]), s.useLayoutEffect(() => {
         let e = setTimeout(() => {
             p(!1)

@@ -20,19 +20,19 @@ let g = function(e) {
         paginationCaretClassName: l,
         intervalBetweenAutomaticItemRotations: g,
         renderItem: x
-    } = e, h = s.useMemo(() => new a.IX, []), [_, p] = s.useState(c.f.LEFT), [A, f] = s.useState(0), [j, N] = s.useState(!1), [E, b] = s.useState(!1), T = s.useCallback((e, t) => {
+    } = e, h = s.useMemo(() => new a.IX, []), [_, p] = s.useState(c.f.LEFT), [A, f] = s.useState(0), [j, N] = s.useState(!1), [E, b] = s.useState(!1), C = s.useCallback((e, t) => {
         f(n => {
             let i = n + t;
             return i < 0 ? i = e.length - 1 : i > e.length - 1 && (i = 0), i
         })
-    }, [f]), C = s.useCallback(() => {
-        E || T(t, 1)
-    }, [T, t, E]), I = s.useCallback(() => {
-        E || T(t, -1)
-    }, [T, t, E]);
+    }, [f]), T = s.useCallback(() => {
+        E || C(t, 1)
+    }, [C, t, E]), I = s.useCallback(() => {
+        E || C(t, -1)
+    }, [C, t, E]);
     return s.useEffect(() => {
-        null != g && (j ? j && h.stop() : h.start(g, C))
-    }, [j, h, g, C]), (0, i.jsxs)("div", {
+        null != g && (j ? j && h.stop() : h.start(g, T))
+    }, [j, h, g, T]), (0, i.jsxs)("div", {
         className: m.zr,
         onMouseEnter: () => N(!0),
         onMouseLeave: () => N(!1),
@@ -56,7 +56,7 @@ let g = function(e) {
             children: x(t[A])
         }), (0, i.jsx)(o.DUT, {
             className: r()(m.Sx, l),
-            onClick: C,
+            onClick: T,
             onMouseEnter: () => p(c.f.LEFT),
             ignoreKeyPress: E,
             children: (0, i.jsx)(d.A, {

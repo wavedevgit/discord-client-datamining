@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
     Ay: () => L,
-    Kh: () => C,
+    Kh: () => T,
     MD: () => y,
-    fh: () => T
+    fh: () => C
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -27,7 +27,7 @@ var i = n(627968),
     N = n(311750),
     E = n(985018),
     b = n(921503);
-let T = e => {
+let C = e => {
         let {
             children: t,
             className: n
@@ -37,7 +37,7 @@ let T = e => {
             children: t
         })
     },
-    C = e => {
+    T = e => {
         let {
             children: t
         } = e;
@@ -50,7 +50,7 @@ let T = e => {
         let {
             children: t
         } = e;
-        return (0, i.jsx)(T, {
+        return (0, i.jsx)(C, {
             className: b.fo,
             children: null != t ? t : "-"
         })
@@ -59,7 +59,7 @@ let T = e => {
         let {
             children: t
         } = e;
-        return (0, i.jsx)(T, {
+        return (0, i.jsx)(C, {
             className: b.wJ,
             children: o()(t).utc().format("MMMM YYYY")
         })
@@ -68,7 +68,7 @@ let T = e => {
         let {
             listingId: t
         } = e, n = (0, d.bG)([h.A], () => h.A.getSubscriptionListing(t)), s = n?.name ?? `[${E.intl.string(E.t["4tEmXR"])}]`;
-        return (0, i.jsx)(T, {
+        return (0, i.jsx)(C, {
             children: s
         })
     },
@@ -76,7 +76,7 @@ let T = e => {
         let {
             children: t
         } = e;
-        return (0, i.jsxs)(T, {
+        return (0, i.jsxs)(C, {
             className: b.u4,
             children: [t ?? "-", " ", (0, i.jsx)(u.nys, {
                 size: "md",
@@ -156,13 +156,13 @@ let T = e => {
         render(e, t) {
             let {
                 expandedRows: n
-            } = t, s = [(0, i.jsx)(C, {
+            } = t, s = [(0, i.jsx)(T, {
                 children: e.amount
             }, e.key)];
             if (n.has(e.key))
                 for (let t in e.ppgs) {
                     let n = e.ppgs[t];
-                    s.push((0, i.jsx)(C, {
+                    s.push((0, i.jsx)(T, {
                         children: n?.amount
                     }, t))
                 }

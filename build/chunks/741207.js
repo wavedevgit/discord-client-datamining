@@ -28,14 +28,14 @@ function h(e) {
     if (null == f) return null;
     let {
         headerText: b,
-        descriptionText: T,
-        icon: C
+        descriptionText: C,
+        icon: T
     } = f;
     return (0, i.jsxs)("div", {
         className: x.Ik,
         children: [(0, i.jsx)("div", {
             className: x.TV,
-            children: (0, i.jsx)(C, {
+            children: (0, i.jsx)(T, {
                 size: "md",
                 color: "currentColor",
                 className: x.gE
@@ -48,7 +48,7 @@ function h(e) {
             }), (0, i.jsx)(r.Text, {
                 color: "interactive-text-default",
                 variant: "text-xs/medium",
-                children: T
+                children: C
             }), _ && (0, i.jsxs)(r.Text, {
                 color: "interactive-text-default",
                 variant: "text-xs/medium",

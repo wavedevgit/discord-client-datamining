@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     A: () => I,
-    W: () => C
+    W: () => T
 });
 var i = n(627968),
     s = n(64700),
@@ -26,10 +26,10 @@ var i = n(627968),
     E = n(927573),
     b = n(652215);
 
-function T(e) {
+function C(e) {
     x.A.selectRole(e)
 }
-let C = () => {
+let T = () => {
     let {
         guild: e
     } = (0, a.cf)([h.A], () => h.A.getProps()), t = (0, a.bG)([p.A], () => p.A.formState), n = (0, a.bG)([p.A], () => p.A.errorMessage);
@@ -69,16 +69,16 @@ function I(e) {
         let e = m.A.getMemberCount(n.id);
         null != e && e <= A.gz && d.A.requestMembers(n.id, "", 0, !1)
     });
-    let [C, I] = s.useState(E.T$.DISPLAY);
+    let [T, I] = s.useState(E.T$.DISPLAY);
     return (s.useEffect(() => {
         null == x && I(E.T$.DISPLAY)
     }, [x]), null != x) ? (0, i.jsx)(f.A, {
         editRoleId: x,
-        setEditRoleId: T,
-        selectedSection: C,
+        setEditRoleId: C,
+        selectedSection: T,
         setSelectedSection: I
     }) : _ ? (0, i.jsx)(N.A, {
-        setEditRoleId: T,
+        setEditRoleId: C,
         guild: n,
         everyoneRole: o,
         otherRoles: g,
@@ -87,6 +87,6 @@ function I(e) {
     }) : (0, i.jsx)(j.A, {
         guild: n,
         everyoneRole: o,
-        setEditRoleId: T
+        setEditRoleId: C
     })
 }

@@ -29,8 +29,8 @@ let p = function(e) {
         title: N,
         channelId: E,
         description: b
-    } = l, T = u.A.getChannel(E), C = null;
-    null != T && (0, c.Yt)(T) || (C = h.intl.string(h.t.kTdL8X));
+    } = l, C = u.A.getChannel(E), T = null;
+    null != C && (0, c.Yt)(C) || (T = h.intl.string(h.t.kTdL8X));
     let I = null == b || 0 === b.length,
         v = m.Ay.getResourceChannelIconURL({
             channelId: l.channelId,
@@ -71,13 +71,13 @@ let p = function(e) {
                 onIconUpload: L
             })
         }), [t, l, G, L]);
-    return null == T ? null : (0, i.jsxs)("div", {
+    return null == C ? null : (0, i.jsxs)("div", {
         className: _.l5,
         children: [(0, i.jsxs)("div", {
             className: r()(_.Km, {
                 [_.A]: null != y && p < y,
                 [_.Ze]: null != y && p > y,
-                [_._t]: null != C
+                [_._t]: null != T
             }),
             ref: e => {
                 S(R(e))
@@ -125,10 +125,10 @@ let p = function(e) {
                     "aria-label": h.intl.string(h.t.bt75uw)
                 })
             })]
-        }), null != C && (0, i.jsx)(o.Text, {
+        }), null != T && (0, i.jsx)(o.Text, {
             variant: "text-xs/medium",
             color: "text-feedback-critical",
-            children: C
+            children: T
         })]
     })
 }

@@ -29,8 +29,8 @@ function A(e) {
         draggingId: N
     } = e, E = (0, c.Ay)(), {
         drag: b,
-        drop: T,
-        dragSourcePosition: C,
+        drop: C,
+        dragSourcePosition: T,
         setIsDraggable: I
     } = (0, g.A)({
         type: "ONBOARDING_CONNECTION_CARD",
@@ -75,13 +75,13 @@ function A(e) {
     })(t, E, O), [t, E, O]);
     return (0, i.jsxs)("div", {
         className: r()(p.Nr, {
-            [p.A]: null != C && l < C,
-            [p.Ze]: null != C && l > C
+            [p.A]: null != T && l < T,
+            [p.Ze]: null != T && l > T
         }),
         onMouseEnter: () => I(!0),
         onMouseLeave: () => I(!1),
         ref: e => {
-            b(T(e))
+            b(C(e))
         },
         children: [(0, i.jsx)("div", {
             className: p.BU,

@@ -59,8 +59,8 @@ function A(e) {
             (0, u.Bq)(t)
         }, []),
         {
-            handleDragStart: T,
-            handleDragReset: C,
+            handleDragStart: C,
+            handleDragReset: T,
             handleDragComplete: I,
             draggingId: v
         } = (0, o.A)(E, b);
@@ -87,8 +87,8 @@ function A(e) {
                 children: E.map((e, t) => (0, i.jsx)(g.A, {
                     connection: e,
                     index: t,
-                    onDragStart: T,
-                    onDragReset: C,
+                    onDragStart: C,
+                    onDragReset: T,
                     onDragComplete: I,
                     draggingId: v
                 }, e.id))

@@ -1,6 +1,6 @@
 /** chunk id: 374058 params = (module,exports,require) **/
 n.d(t, {
-    A: () => M
+    A: () => P
 });
 var a = n(627968),
     i = n(64700),
@@ -249,7 +249,7 @@ let k = new Set(["client_performance_cpu", "client_performance_memory"]),
         throttleMs: 100
     };
 
-function M() {
+function P() {
     let e = i.useRef(null),
         [t, n] = i.useState(""),
         s = (0, d.bG)([v.A], () => v.A.loggedEventsVersion),

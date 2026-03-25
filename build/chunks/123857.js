@@ -1,6 +1,6 @@
 /** chunk id: 123857 params = (module,exports,require) **/
 n.d(t, {
-    Ix: () => U,
+    Ix: () => k,
     J3: () => P,
     Q3: () => V,
     mx: () => B
@@ -88,7 +88,7 @@ function M(e) {
     }) : t
 }
 
-function k() {
+function U() {
     let e = (0, l.bG)([_.A], () => _.A.isPreview),
         t = (0, f.V)()?.subscription_trial?.sku_id === O.pe.TIER_2;
     return e && t ? (0, i.jsxs)("div", {
@@ -108,7 +108,7 @@ function k() {
         })]
     }) : null
 }
-let U = () => (0, i.jsx)("div", {
+let k = () => (0, i.jsx)("div", {
     children: (0, i.jsxs)(x.Ay, {
         type: x.v0.SETTINGS,
         children: [(0, i.jsx)(x.Ay.Basic, {
@@ -117,7 +117,7 @@ let U = () => (0, i.jsx)("div", {
             children: [(0, i.jsx)(x.Ay.Gradient, {
                 disabled: !1,
                 renderCTAButtons: () => (0, i.jsx)(G, {})
-            }), (0, i.jsx)(k, {})]
+            }), (0, i.jsx)(U, {})]
         })]
     })
 });
@@ -178,7 +178,7 @@ function B(e) {
                     disabled: !1,
                     size: t
                 })
-            }), (0, i.jsx)(k, {})]
+            }), (0, i.jsx)(U, {})]
         })
     })
 }

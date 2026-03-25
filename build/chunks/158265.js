@@ -34,10 +34,10 @@ let A = e => {
     } = i.useContext(p.PW), {
         completionSpring: T,
         startCompletionAnimation: S
-    } = (0, _.R)(), E = A.userStatus?.completedAt != null, N = i.useRef(!1), I = (0, c.bG)([m.A], () => m.A.useReducedMotion), O = i.useRef(null), k = (0, c.bG)([h.A], () => h.A.hasLayers()), R = (0, u.A)(k), [w, D] = i.useState(null), [M, P] = i.useState(null), L = i.useRef(new r.OH({
+    } = (0, _.R)(), E = A.userStatus?.completedAt != null, N = i.useRef(!1), I = (0, c.bG)([m.A], () => m.A.useReducedMotion), O = i.useRef(null), k = (0, c.bG)([h.A], () => h.A.hasLayers()), R = (0, u.A)(k), [w, D] = i.useState(null), [P, M] = i.useState(null), L = i.useRef(new r.OH({
         gravity: 0,
         wind: 0
-    })), U = (0, r.f9)(w, M), B = i.useMemo(() => [f.r3], []), G = i.useCallback(() => {
+    })), U = (0, r.f9)(w, P), B = i.useMemo(() => [f.r3], []), G = i.useCallback(() => {
         if (I) return;
         let e = n.current,
             t = O.current;
@@ -128,7 +128,7 @@ let A = e => {
                 className: b.t_,
                 environment: L.current
             }), (0, a.jsx)(r.K_, {
-                ref: P,
+                ref: M,
                 sprites: [j],
                 colors: B,
                 spriteWidth: v.wn,

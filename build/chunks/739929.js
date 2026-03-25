@@ -33,8 +33,8 @@ function _(e) {
         } = (0, c.A)(e?.id),
         {
             loading: b,
-            error: T,
-            refresh: C,
+            error: C,
+            refresh: T,
             eligibility: I
         } = (0, u.A)(e?.id),
         {
@@ -63,16 +63,16 @@ function _(e) {
         k = (0, g.r)(),
         U = v && G && A ? h.intl.format(h.t.wbVIUB, {}) : void 0;
     return i.useEffect(() => {
-        D && C()
-    }, [C, D]), {
+        D && T()
+    }, [T, D]), {
         resubmittingEnableRequest: j,
         resubmissionError: f,
         isGuildOwner: A,
         createEnableRequest: N,
         resubmittedRequest: E,
         eligibilityLoading: b,
-        eligibilityError: T,
-        refreshEligibility: C,
+        eligibilityError: C,
+        refreshEligibility: T,
         eligibility: I,
         eligibleForMonetization: G,
         isApplicationPending: O,

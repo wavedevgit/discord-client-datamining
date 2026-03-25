@@ -24,8 +24,8 @@ var i = n(627968),
     N = n(796774),
     E = n(209932),
     b = n(102597),
-    T = n(904054),
-    C = n(496502),
+    C = n(904054),
+    T = n(496502),
     I = n(657331),
     v = n(71393),
     S = n(287809),
@@ -174,7 +174,7 @@ function K(e) {
     function p(e) {
         o.current?.pause();
         let t = x[e.soundId];
-        null != t && (o.current = t, t.currentTime = 0, t.volume = (0, T.A)(e.volume), t.play())
+        null != t && (o.current = t, t.currentTime = 0, t.volume = (0, C.A)(e.volume), t.play())
     }
     if (s.useEffect(() => () => {
             o.current?.pause()
@@ -272,9 +272,9 @@ function Y(e) {
         emojiName: E
     } = t, {
         analyticsLocations: b
-    } = (0, A.Ay)(), T = (0, d.bG)([S.default], () => _ ?? S.default.getUser(p), [p, _]), {
+    } = (0, A.Ay)(), C = (0, d.bG)([S.default], () => _ ?? S.default.getUser(p), [p, _]), {
         canManageGuildExpression: v
-    } = (0, j.nr)(o), y = s.useMemo(() => v(t), [t, v]), O = null != f || null != E, [G, D] = s.useState(!1), M = (0, C.v)(t, o.id);
+    } = (0, j.nr)(o), y = s.useMemo(() => v(t), [t, v]), O = null != f || null != E, [G, D] = s.useState(!1), M = (0, T.v)(t, o.id);
     async function k() {
         if (!G) {
             D(!0);
@@ -286,19 +286,19 @@ function Y(e) {
         }
     }
     s.useEffect(() => {
-        null == T && e();
+        null == C && e();
         async function e() {
             await (0, x.wz)(p)
         }
-    }, [T, p]);
+    }, [C, p]);
     let U = s.useCallback(() => {
-            null != T && (0, I.openUserProfileModal)({
-                userId: T.id,
+            null != C && (0, I.openUserProfileModal)({
+                userId: C.id,
                 guildId: o.id,
                 sourceAnalyticsLocations: b
             })
-        }, [T, o.id, b]),
-        B = L.Ay.useUserTag(T);
+        }, [C, o.id, b]),
+        B = L.Ay.useUserTag(C);
     return (0, i.jsxs)("div", {
         className: r()(w.nM, {
             [w.vu]: l
@@ -326,14 +326,14 @@ function Y(e) {
                     className: w.Ns
                 })]
             })
-        }), null != T && (0, i.jsxs)(g.DUT, {
+        }), null != C && (0, i.jsxs)(g.DUT, {
             className: w.xp,
             onClick: U,
             children: [(0, i.jsx)(g.euF, {
                 "aria-label": B,
                 size: g._3J.SIZE_24,
                 className: w.Cp,
-                src: (0, R.ku)(T, !1, 24)
+                src: (0, R.ku)(C, !1, 24)
             }), (0, i.jsx)(g.Text, {
                 variant: "text-sm/normal",
                 lineClamp: 1,

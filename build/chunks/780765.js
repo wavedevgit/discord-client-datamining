@@ -22,8 +22,8 @@ var i = n(627968),
     _ = n(508675),
     N = n(997509),
     j = n(427157),
-    T = n(317525),
-    v = n(576705),
+    v = n(317525),
+    T = n(576705),
     C = n(351906),
     I = n(147925),
     E = n(486020),
@@ -46,7 +46,7 @@ function L(e) {
         } = e,
         [D, P] = l.useState(!1),
         B = (0, m.bG)([C.A], () => C.A.hidePersonalInformation),
-        W = (0, m.bG)([v.A], () => v.A.can(O.xBc.KICK_MEMBERS, n)),
+        W = (0, m.bG)([T.A], () => T.A.can(O.xBc.KICK_MEMBERS, n)),
         H = l.useCallback(() => {
             P(!0), U(s)
         }, [s, U]),
@@ -99,7 +99,7 @@ function L(e) {
                     }
             }
         }, [s.account, s.subscriber_count, s.type]),
-        Z = (0, m.bG)([T.A], () => null != s.role_id ? T.A.getRole(n.id, s.role_id) : void 0),
+        Z = (0, m.bG)([v.A], () => null != s.role_id ? v.A.getRole(n.id, s.role_id) : void 0),
         {
             roleLink: X,
             syncDescriptionText: $
@@ -120,7 +120,7 @@ function L(e) {
                 })
             }
         }, [Z, F, s.revoked, s.synced_at, s.type, s.user]),
-        ee = (0, m.bG)([T.A], () => T.A.getSortedRoles(n.id)),
+        ee = (0, m.bG)([v.A], () => v.A.getSortedRoles(n.id)),
         et = l.useMemo(() => {
             let e = _.Ay.getGuildEmoji(n.id),
                 t = ee.filter(e => null != e.tags && e.tags.integration_id === s.id).map(e => e.id);

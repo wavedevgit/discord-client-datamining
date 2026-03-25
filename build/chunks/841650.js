@@ -1,7 +1,7 @@
 /** chunk id: 841650 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => C
+    A: () => T
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -80,7 +80,7 @@ function b(e) {
     })
 }
 
-function T(e) {
+function C(e) {
     let {
         value: t
     } = e;
@@ -89,7 +89,7 @@ function T(e) {
     }) : (0, i.jsx)(E, {})
 }
 
-function C(e) {
+function T(e) {
     let {
         label: t,
         guildId: l,
@@ -98,17 +98,17 @@ function C(e) {
         omitChannelIds: f,
         "aria-labelledby": N,
         onChange: E
-    } = e, b = A.intl.string(A.t.d7YJMK), C = (0, a.bG)([g.A], () => g.A.getCategories(l), [l]), I = (0, _.fE)(r ?? p.dJq), v = s.useMemo(() => {
+    } = e, b = A.intl.string(A.t.d7YJMK), T = (0, a.bG)([g.A], () => g.A.getCategories(l), [l]), I = (0, _.fE)(r ?? p.dJq), v = s.useMemo(() => {
         let e = [{
                 value: null,
                 label: b
             }],
             t = !1;
-        for (let n of C._categories)
+        for (let n of T._categories)
             for (let {
                     channel: i
                 }
-                of C[n.channel.id])((0, m.tr)(i.type) || (0, m.ay)(i.type)) && (i.id !== r && f?.has(i.id) && (i.id !== u || r === u) || (r === i.id && (t = !0), e.push({
+                of T[n.channel.id])((0, m.tr)(i.type) || (0, m.ay)(i.type)) && (i.id !== r && f?.has(i.id) && (i.id !== u || r === u) || (r === i.id && (t = !0), e.push({
                 value: i.id,
                 label: (0, c.m1)(i, h.default, x.A)
             })));
@@ -116,7 +116,7 @@ function C(e) {
             value: r,
             label: I.name
         }), e
-    }, [b, r, I, C, f, u]);
+    }, [b, r, I, T, f, u]);
     return (0, i.jsx)(o.Pw, {
         label: t,
         placeholder: A.intl.string(A.t.r2ptsz),
@@ -135,10 +135,10 @@ function C(e) {
         },
         isSelected: e => null != r && j(e) === j(r),
         serialize: j,
-        renderOptionLabel: T,
+        renderOptionLabel: C,
         renderOptionValue: e => {
             let [t] = e;
-            return T(t)
+            return C(t)
         },
         "aria-labelledby": N,
         "data-migration-pending": !0

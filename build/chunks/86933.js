@@ -42,10 +42,10 @@ function m(e) {
         } catch (t) {
             null != e && A(e)
         }
-    }, b = c.intl.string(c.t["ETE/oC"]), T = !x && f ? c.intl.formatToPlainString(c.t.nula34, {
+    }, b = c.intl.string(c.t["ETE/oC"]), C = !x && f ? c.intl.formatToPlainString(c.t.nula34, {
         ruleName: h?.name
     }) : void 0;
-    return null != _ && (T = (0, i.jsx)(r.Text, {
+    return null != _ && (C = (0, i.jsx)(r.Text, {
         variant: "text-md/normal",
         color: "text-feedback-critical",
         className: u.i,
@@ -60,7 +60,7 @@ function m(e) {
                 onSave: E,
                 onReset: m,
                 onResetText: b,
-                message: T
+                message: C
             })
         })
     })

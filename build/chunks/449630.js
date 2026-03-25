@@ -34,8 +34,8 @@ var a = n(627968),
     R = n(810396),
     w = n(376285),
     D = n(159218),
-    M = n(442228),
-    P = n(253932),
+    P = n(442228),
+    M = n(253932),
     L = n(290863),
     U = n(351906),
     B = n(957565),
@@ -83,11 +83,11 @@ function et(e) {
         isOpen: !1
     })), []);
     let eu = (0, d.bG)([L.A], () => L.A.getStatus(t.id)),
-        em = P.CY.useSetting(),
+        em = M.CY.useSetting(),
         eh = (0, q.Q)(em),
         ex = (0, d.bG)([U.A], () => U.A.hidePersonalInformation),
         ep = (0, _.kB)(),
-        eg = P.Q_.useSetting(),
+        eg = M.Q_.useSetting(),
         e_ = (0, q.T)(eu),
         ef = (0, W.j)(n),
         ev = (0, v.A)({
@@ -193,7 +193,7 @@ function et(e) {
                                     user: t,
                                     isVisible: ed
                                 })
-                            }), (0, a.jsx)(M.A, {
+                            }), (0, a.jsx)(P.A, {
                                 user: t,
                                 bio: ei?.bio,
                                 hidePersonalInformation: ex,

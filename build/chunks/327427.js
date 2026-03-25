@@ -66,7 +66,7 @@ let E = e => {
         currentPeriod: m,
         allPeriods: g,
         metrics: E
-    } = (0, c.A)(t, n), b = (0, u.w)(t), T = (0, d.gN)();
+    } = (0, c.A)(t, n), b = (0, u.w)(t), C = (0, d.gN)();
     return a ? (0, i.jsx)(s.y$y, {}) : (0, i.jsxs)(i.Fragment, {
         children: [b && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(l.A, {
@@ -118,7 +118,7 @@ let E = e => {
         }), (0, i.jsx)(s.nVY, {
             label: A.intl.string(A.t.O8cDAJ),
             className: f.gy,
-            disabled: T,
+            disabled: C,
             children: (0, i.jsx)(h.A, {
                 guildId: t,
                 application: n

@@ -22,8 +22,8 @@ var i = n(627968),
     _ = n(297413),
     N = n(361739),
     j = n(966327),
-    T = n(736653),
-    v = n(429913),
+    v = n(736653),
+    T = n(429913),
     C = n(47167),
     I = n(576470),
     E = n(235986),
@@ -188,7 +188,7 @@ function J(e) {
         showChannel: s = !1,
         inviteDisabled: a = !1,
         showRolesColumn: r
-    } = e, o = (0, v.h)(t), d = (0, g.bG)([P.default], () => P.default.getUser(l.linkedLobby?.linked_by)), c = (0, L.e)(l);
+    } = e, o = (0, T.h)(t), d = (0, g.bG)([P.default], () => P.default.getUser(l.linkedLobby?.linked_by)), c = (0, L.e)(l);
     return (0, i.jsx)(Y, {
         isDisabled: a,
         inviter: d,
@@ -240,19 +240,19 @@ function Q(e) {
         loading: h = !1
     } = e;
     o()(null != s, "guild is required");
-    let A = (0, T.Ay)(),
+    let A = (0, v.Ay)(),
         b = (0, B.Fi)(s),
         f = (0, B.Wr)(s),
         _ = (0, w.E)(s.id, "SettingsInvites").enabled,
         j = l.useMemo(() => null == t || h ? [] : c()(t).sortBy(e => (e.inviter?.username ?? "").toLowerCase()).value(), [t, h]),
-        v = (0, g.yK)([G.A], () => G.A.getSortedLinkedChannelsForGuild(s.id).filter(e => null == u || e.id === u.id)),
+        T = (0, g.yK)([G.A], () => G.A.getSortedLinkedChannelsForGuild(s.id).filter(e => null == u || e.id === u.id)),
         C = l.useMemo(() => h ? [] : [...j.map(e => ({
             type: "invite",
             data: e
-        })), ...v.map(e => ({
+        })), ...T.map(e => ({
             type: "channel",
             data: e
-        }))], [j, v, h]),
+        }))], [j, T, h]),
         I = () => {
             (0, p.mMO)(async () => e => (0, i.jsx)(R.default, {
                 ...e,
@@ -308,7 +308,7 @@ function Q(e) {
                         className: K.Gf,
                         children: (0, i.jsx)(p.Text, {
                             variant: "text-md/medium",
-                            children: v.length > 0 ? V.intl.string(V.t.l7VISQ) : V.intl.string(V.t.LBlFEN)
+                            children: T.length > 0 ? V.intl.string(V.t.l7VISQ) : V.intl.string(V.t.LBlFEN)
                         })
                     }), (0, i.jsx)(E.A.Child, {
                         grow: 1,

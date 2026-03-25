@@ -20,12 +20,12 @@ function x(e) {
     let {
         guildId: t,
         scrollToQuestions: n
-    } = e, x = (0, s.bG)([a.A], () => a.A.isAdvancedMode(t)), h = (0, s.bG)([d.A], () => d.A.editedDefaultChannelIds), [_, p] = (0, o.tb)(t, h), [A, f] = (0, c.tB)(t, [...h]), j = x ? f.length : p.length, N = x ? A.length : _.length, E = N >= u.Kd, b = f.length - p.length, T = (0, i.jsx)(r.yr3, {
+    } = e, x = (0, s.bG)([a.A], () => a.A.isAdvancedMode(t)), h = (0, s.bG)([d.A], () => d.A.editedDefaultChannelIds), [_, p] = (0, o.tb)(t, h), [A, f] = (0, c.tB)(t, [...h]), j = x ? f.length : p.length, N = x ? A.length : _.length, E = N >= u.Kd, b = f.length - p.length, C = (0, i.jsx)(r.yr3, {
         size: "sm",
         color: l.A.unsafe_rawColors.BRAND_500.css,
         secondaryColor: l.A.unsafe_rawColors.WHITE.css,
         className: g.Kk
-    }), C = (0, i.jsx)(r.aXh, {
+    }), T = (0, i.jsx)(r.aXh, {
         size: "sm",
         className: g.Kk,
         color: l.A.colors.WHITE.css,
@@ -54,7 +54,7 @@ function x(e) {
             size: r.LvI.Sizes.XSMALL
         }), (0, i.jsxs)("div", {
             className: g.n,
-            children: [E ? T : C, (0, i.jsx)(r.Text, {
+            children: [E ? C : T, (0, i.jsx)(r.Text, {
                 variant: "text-xs/normal",
                 color: "text-muted",
                 children: m.intl.format(m.t.PwXgSy, {

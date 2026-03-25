@@ -36,8 +36,8 @@ var i = n(627968),
     D = n(244778),
     G = n(788868),
     M = n(652215),
-    k = n(985018),
-    U = n(639179),
+    U = n(985018),
+    k = n(639179),
     w = n(432221),
     V = n(288894);
 let B = e => {
@@ -91,28 +91,28 @@ let B = e => {
                     tier0CTAButton: (0, i.jsx)(I.A, {
                         showIcon: !1,
                         subscriptionTier: G.pe.TIER_0,
-                        className: U.Ph,
+                        className: k.Ph,
                         look: u.pR.OUTLINED,
                         color: u.XD.WHITE,
-                        buttonShineClassName: U.Qr
+                        buttonShineClassName: k.Qr
                     }),
                     tier2CTAButton: et === G.pe.TIER_0 ? (0, i.jsx)(I.A, {
                         showIcon: !1,
                         subscriptionTier: G.pe.TIER_2,
-                        className: U.Ph,
+                        className: k.Ph,
                         look: u.pR.OUTLINED,
                         color: u.XD.WHITE,
-                        buttonShineClassName: U.Qr
+                        buttonShineClassName: k.Qr
                     }) : (0, i.jsx)(I.A, {
                         color: u.XD.BRAND_INVERTED,
                         showIcon: !1,
                         subscriptionTier: G.pe.TIER_2,
-                        className: U.Ph,
+                        className: k.Ph,
                         hasActivePromotion: el,
                         textOptions: {
-                            textClassName: U.Ac
+                            textClassName: k.Ac
                         },
-                        buttonShineClassName: U.Qr
+                        buttonShineClassName: k.Qr
                     })
                 })
             })
@@ -190,7 +190,7 @@ let B = e => {
                 className: w.Kw,
                 width: 112,
                 height: 85,
-                alt: k.intl.string(k.t.X4IxWL)
+                alt: U.intl.string(U.t.X4IxWL)
             })]
         })
     }

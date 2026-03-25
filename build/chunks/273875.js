@@ -97,12 +97,12 @@ function h(e) {
         error: A,
         forceShowErrorTooltip: f
     } = e, j = s.useRef(null), N = s.useRef(null), [E, b] = s.useState(!1), {
-        ref: T,
-        width: C = 0
+        ref: C,
+        width: T = 0
     } = (0, c.Ay)(E), {
         ref: I,
         width: v = 0
-    } = (0, c.Ay)(E), S = (0, a.bG)([u.A], () => u.A.useReducedMotion), [y, R] = s.useState(f), O = s.useRef(null), G = C > v ? C : v;
+    } = (0, c.Ay)(E), S = (0, a.bG)([u.A], () => u.A.useReducedMotion), [y, R] = s.useState(f), O = s.useRef(null), G = T > v ? T : v;
     s.useEffect(() => {
         f ? (R(!0), O.current = setTimeout(() => {
             R(!1), O.current = null
@@ -115,8 +115,8 @@ function h(e) {
         }, [n]),
         D = s.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-            t.trim().length <= 0 && h(), null != j.current && null != T.current && null != N.current && (j.current.scrollTo(0, 0), j.current.setSelectionRange(0, 0), j.current.scrollLeft = 0, T.current.scrollLeft = 0, N.current?.ref != null && (N.current.ref.scrollLeft = 0)), b(!1), l(e)
-        }, [t, T, l, h]),
+            t.trim().length <= 0 && h(), null != j.current && null != C.current && null != N.current && (j.current.scrollTo(0, 0), j.current.setSelectionRange(0, 0), j.current.scrollLeft = 0, C.current.scrollLeft = 0, N.current?.ref != null && (N.current.ref.scrollLeft = 0)), b(!1), l(e)
+        }, [t, C, l, h]),
         M = s.useCallback(e => {
             let n = t.trim().length <= 0;
             m.Wu.has(e.key) ? (e.preventDefault(), e.stopPropagation(), D(!0)) : "Backspace" === e.key && n && (e.preventDefault(), e.stopPropagation(), D(!0))
@@ -164,7 +164,7 @@ function h(e) {
                         width: G > 0 ? G : `calc(${t.length}ch + 10px)`
                     }
                 }), (0, i.jsx)(x, {
-                    ref: T,
+                    ref: C,
                     value: t,
                     isEditing: E,
                     isSelected: _,

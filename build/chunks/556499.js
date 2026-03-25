@@ -176,7 +176,7 @@ function S(e) {
             let t = new Date(e);
             return x.default.fromTimestamp(t.getTime())
         },
-        M = async e => {
+        P = async e => {
             let {
                 status: t = s.status,
                 premiumStreakStart: n,
@@ -195,7 +195,7 @@ function S(e) {
                 body: i,
                 rejectWithError: !1
             }), r()
-        }, P = async () => {
+        }, M = async () => {
             try {
                 await g.tB(s.id, g.H7.RENEW, {
                     targetDate: o()(new Date),
@@ -364,7 +364,7 @@ function S(e) {
                         value: s.status,
                         options: y,
                         onSelectionChange: e => {
-                            M({
+                            P({
                                 status: e
                             })
                         },
@@ -377,7 +377,7 @@ function S(e) {
                                 variant: "primary",
                                 size: "sm",
                                 text: "Renew Subscription",
-                                onClick: e => P()
+                                onClick: e => M()
                             }), (0, a.jsx)(u.Button, {
                                 variant: "secondary",
                                 size: "sm",
@@ -402,14 +402,14 @@ function S(e) {
                         children: [(0, a.jsx)(u.J3s, {
                             label: "Premium Streak Start Date",
                             value: o()(s.premiumSince?.toISOString().substring(0, 10)),
-                            onSelect: e => M({
+                            onSelect: e => P({
                                 premiumStreakStart: e.toISOString()
                             })
                         }), (0, a.jsx)(p.A, {})]
                     }), (0, a.jsx)(u.J3s, {
                         label: "Metadata Ended At Date",
                         value: o()(B),
-                        onSelect: e => M({
+                        onSelect: e => P({
                             endedAt: e.toISOString()
                         })
                     })]

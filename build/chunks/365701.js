@@ -26,8 +26,8 @@ var i = n(627968),
     N = n(401755),
     E = n(985018),
     b = n(776433),
-    T = n(473169);
-class C extends d.Ay.Store {
+    C = n(473169);
+class T extends d.Ay.Store {
     initialize() {
         this.waitFor(j.A, A.A)
     }
@@ -62,7 +62,7 @@ class C extends d.Ay.Store {
         return null != e && null != this.name && (this.name.trim() !== e.name || this.description.trim() !== e.description)
     }
 }
-let I = new C(x.h);
+let I = new T(x.h);
 
 function v() {
     let [e, t] = s.useState(!1), n = async () => {
@@ -82,14 +82,14 @@ function S(e) {
 
 function y() {
     return (0, i.jsx)("div", {
-        className: T.Q5,
+        className: C.Q5,
         children: (0, i.jsxs)(g.Fmo, {
             component: (0, i.jsx)(g.Heading, {
                 variant: "heading-lg/semibold",
                 children: E.intl.string(E.t.KUw7Ss)
             }),
             children: [(0, i.jsx)(g.Text, {
-                className: T.SX,
+                className: C.SX,
                 variant: "text-sm/normal",
                 children: E.intl.format(E.t.c0m8bK, {})
             }), (0, i.jsx)(O, {}), (0, i.jsx)(g.cGx, {
@@ -134,7 +134,7 @@ function R() {
         variant: "text-sm/normal",
         children: t.message
     }) : (0, i.jsx)(g.y$y, {
-        className: T.eT
+        className: C.eT
     });
     let c = null != t && null == t.getFirstFieldErrorMessage("name") && null == t.getFirstFieldErrorMessage("description");
     return (0, i.jsxs)(g.BJc, {
@@ -143,7 +143,7 @@ function R() {
             guild: e,
             guildTemplate: a
         }), c ? (0, i.jsx)(g.Text, {
-            className: T.Ot,
+            className: C.Ot,
             color: "text-feedback-critical",
             variant: "text-sm/normal",
             children: t.getAnyErrorMessage()
@@ -292,11 +292,11 @@ function D(e) {
             })
         }), n.isDirty && (0, i.jsx)(g.Text, {
             color: "text-feedback-warning",
-            className: T.Ot,
+            className: C.Ot,
             variant: "text-sm/normal",
             children: E.intl.string(E.t.aWsjtD)
         }), (0, i.jsxs)("div", {
-            className: r()(T.QX, b.UD),
+            className: r()(C.QX, b.UD),
             children: [n.isDirty && (0, i.jsx)(k, {
                 guild: t,
                 guildTemplate: n

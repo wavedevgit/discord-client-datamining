@@ -26,8 +26,8 @@ var i = n(627968),
     N = n(793574),
     E = n(262295),
     b = n(936555),
-    T = n(725437),
-    C = n(952385),
+    C = n(725437),
+    T = n(952385),
     I = n(810877),
     v = n(945086),
     S = n(824832),
@@ -355,7 +355,7 @@ let z = c().throttle(p.dZ, 1e3),
                 totalStaticEmoji: M,
                 animatedEmoji: V,
                 totalAnimatedEmoji: W
-            } = (0, C.v)({
+            } = (0, T.v)({
                 guild: l
             }),
             [Y, X] = s.useState(null);
@@ -373,11 +373,11 @@ let z = c().throttle(p.dZ, 1e3),
                 let {
                     emoji: e
                 } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                null != e ? (0, T.f)({
+                null != e ? (0, C.f)({
                     guildId: l.id,
                     emoji: e,
                     analyticsLocation: N.A.GUILD_SETTINGS_EMOJI_EDIT_BUTTON
-                }) : (0, T.f)({
+                }) : (0, C.f)({
                     guildId: l.id,
                     analyticsLocation: {
                         page: B.liQ.GUILD_SETTINGS,
@@ -424,7 +424,7 @@ let z = c().throttle(p.dZ, 1e3),
                     })
                 })
             }, en = s.useCallback(async (e, n, i) => {
-                await (0, T.f)({
+                await (0, C.f)({
                     userImage: {
                         data: e,
                         file: n,

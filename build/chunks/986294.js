@@ -104,9 +104,9 @@ function w() {
         })),
         d = (0, u.bG)([y.A], () => y.A.getFeedState(N.X1.GLOBAL_FEED)?.loading === !0),
         [R, w] = i.useState(""),
-        M = (0, u.bG)([b.A, p.A], () => parseInt(R) > 0 ? R : b.A.searchGamesByName(R)[0] ?? p.A.getApplicationByName(R)?.id, [R]),
-        P = (0, v.A)({
-            applicationId: M,
+        P = (0, u.bG)([b.A, p.A], () => parseInt(R) > 0 ? R : b.A.searchGamesByName(R)[0] ?? p.A.getApplicationByName(R)?.id, [R]),
+        M = (0, v.A)({
+            applicationId: P,
             location: "DevToolsContentInventory",
             source: f.Ob.DevTools
         }),
@@ -195,10 +195,10 @@ function w() {
                     placeholder: "App ID or full name",
                     onChange: e => (0 === e.length || e.length >= 18) && w(e),
                     onKeyDown: e => {
-                        "Enter" === e.key && (R === e.currentTarget.value ? P?.(e) : w(e.currentTarget.value))
+                        "Enter" === e.key && (R === e.currentTarget.value ? M?.(e) : w(e.currentTarget.value))
                     },
-                    error: R.length > 0 && null == P ? `No game profile for ${M??R+" - try by id"}.` : void 0,
-                    helperText: null != P ? "Game profile found" : void 0
+                    error: R.length > 0 && null == M ? `No game profile for ${P??R+" - try by id"}.` : void 0,
+                    helperText: null != M ? "Game profile found" : void 0
                 }), (0, a.jsx)("ul", {
                     children: U.map(e => (0, a.jsx)("li", {
                         children: (0, a.jsx)(D, {

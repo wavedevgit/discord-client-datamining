@@ -106,10 +106,10 @@ function b(e) {
         })]
     });
     return n ? (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(T, {
+        children: [(0, i.jsx)(C, {
             guildId: t,
             handlePreview: h
-        }), (0, i.jsx)(C, {}), (0, i.jsxs)("div", {
+        }), (0, i.jsx)(T, {}), (0, i.jsxs)("div", {
             className: E.Qs,
             children: [(0, i.jsx)(I, {
                 guildId: t,
@@ -130,7 +130,7 @@ function b(e) {
     })
 }
 
-function T(e) {
+function C(e) {
     let {
         guildId: t,
         handlePreview: n
@@ -174,7 +174,7 @@ function T(e) {
     })
 }
 
-function C() {
+function T() {
     let e = "• ";
     return (0, i.jsxs)("div", {
         className: E.lm,

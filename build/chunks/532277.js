@@ -38,7 +38,7 @@ function u(e) {
         l <= o.WA1 && t.push(l);
         let i = n * a.A.Seconds.HOUR;
         i <= o.WA1 && t.push(i), x(t)
-    }, []), C = i.useCallback(() => {
+    }, []), j = i.useCallback(() => {
         x(null)
     }, []);
     return (0, l.jsx)("div", {
@@ -52,7 +52,7 @@ function u(e) {
             onSelectionChange: f,
             onQueryChange: e => b(e.target.value),
             options: p,
-            onBlur: C,
+            onBlur: j,
             placeholder: d.intl.string(d.t.dBqQu4)
         })
     })

@@ -24,8 +24,8 @@ var i = n(627968),
     N = n(652215),
     E = n(897513),
     b = n(985018),
-    T = n(381929);
-let C = function(e, t, n) {
+    C = n(381929);
+let T = function(e, t, n) {
         let i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
             s = null;
         return null == t || Number.isNaN(t) ? (null == t || Number.isNaN(t)) && null != e && (s = b.intl.string(b.t.xO2msf)) : s = b.intl.formatToPlainString(b.t.nskeMw, {
@@ -40,7 +40,7 @@ let C = function(e, t, n) {
     I = function(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
         return t || e === N.t02.NOT_ENOUGH_GUILD_MEMBERS ? (0, i.jsx)("div", {
-            className: T.NA,
+            className: C.NA,
             children: (0, i.jsx)(d.wx6, {
                 type: "info",
                 children: b.intl.string(b.t["FsgE/B"])
@@ -54,7 +54,7 @@ let C = function(e, t, n) {
         let [e, t] = s.useState(!1), n = (0, a.bG)([p.A], () => p.A.getGuildId());
         return (0, i.jsx)("div", {
             "data-button-hoisted-classname-wrapper": !0,
-            className: T.XU,
+            className: C.XU,
             children: (0, i.jsx)(d.Button, {
                 variant: "primary",
                 text: b.intl.string(b.t.Uskgxx),
@@ -102,24 +102,24 @@ let C = function(e, t, n) {
             (0, u.sF)(E._.GUILD_ANALYTICS_GUILD_SETTINGS_MENU)
         }, []);
         let y = null != r ? (0, i.jsx)("div", {
-            className: T.__invalid_guildAnalyticsOverviewWrapper,
+            className: C.__invalid_guildAnalyticsOverviewWrapper,
             children: (0, i.jsxs)("div", {
-                className: T.SJ,
+                className: C.SJ,
                 children: [(0, i.jsx)(j.A, {
                     title: b.intl.string(b.t.i0NorT),
                     tooltipText: b.intl.string(b.t.KiRbLJ),
-                    ...C(r.visitors, r.visitorsChange, l)
+                    ...T(r.visitors, r.visitorsChange, l)
                 }), (0, i.jsx)(j.A, {
                     title: b.intl.string(b.t.DDAHdQ),
                     tooltipText: b.intl.string(b.t.HxWUkU),
-                    ...C(r.communicators, r.communicatorsChange, l)
+                    ...T(r.communicators, r.communicatorsChange, l)
                 }), (0, i.jsx)(j.A, {
                     title: b.intl.string(b.t.hYeOqC),
-                    ...C(r.newMembers, r.newMembersChange, l)
+                    ...T(r.newMembers, r.newMembersChange, l)
                 }), (0, i.jsx)(j.A, {
                     title: b.intl.string(b.t.jj7OPw),
                     tooltipText: b.intl.string(b.t.MQCslz),
-                    ...C(r.pctRetained, r.pctRetainedChange, l, !0)
+                    ...T(r.pctRetained, r.pctRetainedChange, l, !0)
                 })]
             })
         }) : null;
@@ -131,16 +131,16 @@ let C = function(e, t, n) {
                 variant: "text-sm/normal",
                 children: b.intl.format(b.t.NIZ60a, {})
             }), I(o, S), (0, i.jsxs)("div", {
-                className: T.Pg,
+                className: C.Pg,
                 children: [(0, i.jsx)("div", {
-                    className: T.jM
+                    className: C.jM
                 }), (0, i.jsx)(d.Text, {
-                    className: T.WO,
+                    className: C.WO,
                     variant: "text-sm/normal",
                     children: b.intl.string(b.t.A5vswv)
                 }), (0, i.jsx)(v, {})]
             }), _ ? (0, i.jsx)("div", {
-                className: T.Rc,
+                className: C.Rc,
                 children: (0, i.jsx)(c.A, {})
             }) : y]
         })

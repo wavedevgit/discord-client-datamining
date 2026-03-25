@@ -26,8 +26,8 @@ var l = n(311907),
     N = n(287809),
     E = n(997509),
     b = n(555337),
-    T = n(224394),
-    C = n(814758),
+    C = n(224394),
+    T = n(814758),
     I = n(652215),
     v = n(985018),
     S = n(944620),
@@ -179,7 +179,7 @@ let R = "dismissedCommunityFeaturesUpsell",
                 isGuildAdmin: f.A.can(I.xBc.ADMINISTRATOR, e)
             })),
             r = (0, l.bG)([_.Ay], () => null != e ? _.Ay.getChannels(e.id) : null),
-            o = s.useMemo(C.fr, []),
+            o = s.useMemo(T.fr, []),
             u = !0 !== a.w.get(R);
         if (null == e) return null;
         let g = [];
@@ -318,7 +318,7 @@ let R = "dismissedCommunityFeaturesUpsell",
     },
     D = () => {
         let e = (0, l.bG)([b.A], () => b.A.getGuild());
-        return null == e ? null : e.features.has(I.GuildFeatures.COMMUNITY) ? (0, i.jsx)(L, {}) : (0, i.jsx)(T.A, {
+        return null == e ? null : e.features.has(I.GuildFeatures.COMMUNITY) ? (0, i.jsx)(L, {}) : (0, i.jsx)(C.A, {
             guild: e
         })
     }

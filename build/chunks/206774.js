@@ -24,8 +24,8 @@ var i = n(627968),
     N = n(869568),
     E = n(541285),
     b = n(728713),
-    T = n(927573),
-    C = n(652215),
+    C = n(927573),
+    T = n(652215),
     I = n(326028);
 
 function v(e) {
@@ -63,7 +63,7 @@ function v(e) {
                 role: e,
                 editRoleId: t
             } = U.current, n = (0, A.L9)(v), i = h.A.getRoleMemberCount(y.id)?.[t] ?? 0;
-            g.default.track(C.HAw.ROLE_PAGE_VIEWED, {
+            g.default.track(T.HAw.ROLE_PAGE_VIEWED, {
                 tab_opened: n,
                 is_everyone: (0, c.N8)(y.id, t),
                 role_id: t,
@@ -77,7 +77,7 @@ function v(e) {
             R?.id != null && (0, u.os)(y.id, R.id)
         }, [y.id, R?.id]), null == R) return null;
     switch (v) {
-        case T.T$.DISPLAY:
+        case C.T$.DISPLAY:
             t = (0, i.jsx)(j.Ay, {
                 guild: y,
                 role: R,
@@ -86,7 +86,7 @@ function v(e) {
                 setSelectedSection: S
             });
             break;
-        case T.T$.PERMISSIONS:
+        case C.T$.PERMISSIONS:
             t = (0, i.jsx)(E.Ay, {
                 guild: y,
                 role: R,
@@ -95,7 +95,7 @@ function v(e) {
                 initialSearchQuery: O
             });
             break;
-        case T.T$.VERIFICATIONS:
+        case C.T$.VERIFICATIONS:
             t = (0, i.jsx)(f.A, {
                 guild: y,
                 role: R,
@@ -104,7 +104,7 @@ function v(e) {
                 integrations: M ?? void 0
             });
             break;
-        case T.T$.MEMBERS:
+        case C.T$.MEMBERS:
             t = (0, i.jsx)(N.Ay, {
                 guild: y,
                 role: R,

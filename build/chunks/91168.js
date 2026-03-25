@@ -24,8 +24,8 @@ var i = n(627968),
     N = n(7891),
     E = n(450510),
     b = n(861410),
-    T = n(433522),
-    C = n(287809),
+    C = n(433522),
+    T = n(287809),
     I = n(203982),
     v = n(403362),
     S = n(997509),
@@ -129,9 +129,7 @@ let ef = {
                     section: eh.BEX.ROLES, impressionName: s.ImpressionNames.GUILD_SETTINGS_ROLES, label: ep.intl.string(ep.t["LPJmL/"]), element: K.A, type: d.Py.MINIMAL, ariaLabel: ep.intl.string(ep.t.KXcEC9), notice: {
                         stores: [W.A],
                         element: K.W
-                    }, predicate: () => t.canManageRoles, icon: t.permissionMigrationAvailable ? (0, i.jsx)("div", {
-                        className: eA.Vx
-                    }) : void 0
+                    }, predicate: () => t.canManageRoles
                 };
             case eh.BEX.EMOJI:
                 return {
@@ -248,7 +246,7 @@ let ef = {
                 return {
                     section: eh.BEX.COMMUNITY_WELCOME, impressionName: s.ImpressionNames.GUILD_SETTINGS_COMMUNITY_WELCOME, label: ep.intl.string(ep.t["2rkmDr"]), ariaLabel: ep.intl.string(ep.t["2rkmDr"]), element: D.A, notice: {
                         stores: [b.A],
-                        element: T.A
+                        element: C.A
                     }, predicate: () => t.canManageGuild && t.guild.features.has(eh.GuildFeatures.COMMUNITY) && !t.welcomeScreenEmpty && !t.guild.features.has(eh.GuildFeatures.GUILD_SERVER_GUIDE)
                 };
             case eh.BEX.ROLE_SUBSCRIPTIONS:
@@ -272,7 +270,7 @@ let ef = {
             case eh.BEX.DELETE:
                 return {
                     section: eh.BEX.DELETE, onClick() {
-                        let e = C.default.getCurrentUser();
+                        let e = T.default.getCurrentUser();
                         if (null == e) return;
                         let {
                             name: s

@@ -39,8 +39,8 @@ function D(e) {
             selfMute: n,
             serverMute: s,
             suppress: D,
-            awaitingRemote: M,
-            iconForeground: P,
+            awaitingRemote: P,
+            iconForeground: M,
             onMouseEnter: L,
             onMouseLeave: U,
             onClick: B,
@@ -82,7 +82,7 @@ function D(e) {
         } = en,
         er = s || D ? r.O1p : ei;
     i.useEffect(() => () => el(), [et, el]);
-    let eo = (0, _.A)(n, s, D, M);
+    let eo = (0, _.A)(n, s, D, P);
     t = F ? {
         tooltipType: "green_void_do_not_use",
         tooltipText: I.intl.string(I.t["29gnR4"]),
@@ -143,13 +143,13 @@ function D(e) {
                         "aria-checked": et,
                         "aria-label": I.intl.string(I.t.w4m945),
                         className: k.eT,
-                        disabled: M,
+                        disabled: P,
                         icon: (0, a.jsx)(er, {
                             size: "custom",
                             width: 20,
                             height: 20,
                             color: ec,
-                            className: P
+                            className: M
                         }),
                         onClick: eu,
                         onContextMenu: i,
@@ -175,7 +175,7 @@ function D(e) {
                         className: l()(k.UT, {
                             [k.q6]: s
                         }),
-                        disabled: M,
+                        disabled: P,
                         icon: (0, a.jsx)(o, {
                             className: k.$$,
                             size: "custom",

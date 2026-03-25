@@ -35,16 +35,16 @@ function E(e) {
         transitionState: s,
         onClose: A,
         sourceQuestContent: E
-    } = e, [I, O] = (0, i.useState)(n), k = (0, p.UX)(), R = (0, _.Ut)(), w = (0, v.vU)()?.getId(), D = (0, o.bG)([m.A], () => m.A.useReducedMotion), M = (0, C.Xf)({
+    } = e, [I, O] = (0, i.useState)(n), k = (0, p.UX)(), R = (0, _.Ut)(), w = (0, v.vU)()?.getId(), D = (0, o.bG)([m.A], () => m.A.useReducedMotion), P = (0, C.Xf)({
         useReducedMotion: D,
         className: S.Zf
-    }), P = I.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), L = (0, j.YL)(t), U = (0, o.bG)([h.A], () => h.A.getState().theme), B = (0, c.Mw)(U) ? y.NJ.DARK : y.NJ.LIGHT, {
+    }), M = I.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), L = (0, j.YL)(t), U = (0, o.bG)([h.A], () => h.A.getState().theme), B = (0, c.Mw)(U) ? y.NJ.DARK : y.NJ.LIGHT, {
         startConsoleQuest: G,
         startingConsoleQuest: F
     } = (0, p.Wj)({
         questId: t.id,
         beforeRequest: () => {
-            M.startAnimation(), R({
+            P.startAnimation(), R({
                 questId: t.id,
                 questContent: x.uF.CONNECTIONS_MODAL,
                 questContentCTA: f.Cy.DEFIBRILLATOR,
@@ -52,7 +52,7 @@ function E(e) {
             })
         },
         afterRequest: e => {
-            M.stopAnimation(), O(e)
+            P.stopAnimation(), O(e)
         }
     });
     return (0, a.jsx)(r.Modal, {
@@ -88,7 +88,7 @@ function E(e) {
                         [S.r9]: F
                     }),
                     onClick: G,
-                    children: [M.render(), (0, a.jsx)(u.Text, {
+                    children: [P.render(), (0, a.jsx)(u.Text, {
                         variant: "text-sm/medium",
                         color: "currentColor",
                         className: S.Zf,
@@ -107,7 +107,7 @@ function E(e) {
                         size: "sm"
                     }),
                     text: T.intl.string(T.t.XF4wuA),
-                    errors: L ? void 0 : P.map(e => e.message),
+                    errors: L ? void 0 : M.map(e => e.message),
                     gameTile: L ? (0, a.jsx)(d.m, {
                         "aria-label": t.config.messages.gameTitle,
                         __unsupportedReactNodeAsText: (0, a.jsxs)("div", {

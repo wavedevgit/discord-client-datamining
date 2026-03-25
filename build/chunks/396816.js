@@ -3,7 +3,7 @@
 let i, s, l;
 n.d(t, {
     A: () => K,
-    y: () => T
+    y: () => C
 });
 var r, a = n(735438),
     o = n.n(a),
@@ -22,8 +22,8 @@ var r, a = n(735438),
     N = n(555337),
     E = n(652215),
     b = n(178758),
-    T = ((r = {}).SOLID = "solid", r.GRADIENT = "gradient", r.HOLOGRAPHIC = "holographic", r);
-let C = new Set,
+    C = ((r = {}).SOLID = "solid", r.GRADIENT = "gradient", r.HOLOGRAPHIC = "holographic", r);
+let T = new Set,
     I = E.XlH.CLOSED,
     v = !1,
     S = !1,
@@ -55,7 +55,7 @@ function U(e) {
 
 function P() {
     let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-    i = N.A.getProps().guild, v = !1, S = !1, l = void 0, C.clear(), M.clear(), I = E.XlH.OPEN, R = [...y = null != i ? [...p.A.getSortedRoles(i.id)] : []], w(i?.id, R), O = !1, e && (D.clear(), L.forEach((e, t) => {
+    i = N.A.getProps().guild, v = !1, S = !1, l = void 0, T.clear(), M.clear(), I = E.XlH.OPEN, R = [...y = null != i ? [...p.A.getSortedRoles(i.id)] : []], w(i?.id, R), O = !1, e && (D.clear(), L.forEach((e, t) => {
         D.set(t, [...e])
     }))
 }
@@ -94,15 +94,15 @@ function w(e, t) {
 }
 let B = o().debounce(() => {
     let e = !1;
-    S && ((S = k().length > 0) || (e = !0)), [...C].forEach(t => {
+    S && ((S = k().length > 0) || (e = !0)), [...T].forEach(t => {
         var n;
         o().isEqual(H(t), (n = t, R.find(e => {
             let {
                 id: t
             } = e;
             return t === n
-        }))) && (C.delete(t), e = !0)
-    }), 0 === C.size && (v = !1), O && o().isEqual(L, D) && (e = !0, O = !1), e && W.emitChange()
+        }))) && (T.delete(t), e = !0)
+    }), 0 === T.size && (v = !1), O && o().isEqual(L, D) && (e = !0, O = !1), e && W.emitChange()
 }, 500);
 
 function F(e, t) {
@@ -113,7 +113,7 @@ function F(e, t) {
             ...t
         },
         s = [...y];
-    s[n] = i, y = s, v = !0, C.add(i.id), B()
+    s[n] = i, y = s, v = !0, T.add(i.id), B()
 }
 
 function H(e) {
@@ -131,7 +131,7 @@ function V(e) {
     } = e;
     if (null == (i = N.A.getProps().guild) || t !== i.id || I === E.XlH.SUBMITTING) return !1;
     let n = [...p.A.getSortedRoles(i.id)];
-    C.forEach(e => {
+    T.forEach(e => {
         let t = H(e),
             i = -1;
         null == n.find((t, n) => {
@@ -139,10 +139,10 @@ function V(e) {
                 id: s
             } = t;
             if (s === e) return i = n, !0
-        }) || null == t ? C.delete(e) : n[i] = t
-    }), 0 === C.size && (v = !1);
+        }) || null == t ? T.delete(e) : n[i] = t
+    }), 0 === T.size && (v = !1);
     let s = new Map;
-    C.forEach(e => {
+    T.forEach(e => {
         let t = M.get(e);
         null != t && s.set(e, t)
     }), M.clear(), w(t, n), s.forEach((e, t) => {
@@ -173,7 +173,7 @@ class z extends u.Ay.Store {
         return i
     }
     get editedRoleIds() {
-        return Array.from(C)
+        return Array.from(T)
     }
     get editedRoleIdsForConfigurations() {
         return G
@@ -378,7 +378,7 @@ let W = new z(m.h, __OVERLAY__ ? {} : {
             O = !0, G.add(i.id), D.set(i.id, n), B()
         },
         GUILD_SETTINGS_CLOSE: function() {
-            i = null, R = y = [], L.clear(), C.clear(), M.clear(), D.clear(), G = new Set, v = !1, S = !1, O = !1, I = E.XlH.CLOSED
+            i = null, R = y = [], L.clear(), T.clear(), M.clear(), D.clear(), G = new Set, v = !1, S = !1, O = !1, I = E.XlH.CLOSED
         },
         GUILD_ROLE_CREATE: V,
         GUILD_ROLE_UPDATE: V,

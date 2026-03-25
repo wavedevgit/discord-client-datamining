@@ -24,7 +24,7 @@ var i = n(627968),
     N = n(652215),
     E = n(985018),
     b = n(220906);
-class T extends s.PureComponent {
+class C extends s.PureComponent {
     render() {
         let {
             user: e,
@@ -83,7 +83,7 @@ class T extends s.PureComponent {
         })
     }
 }
-let C = s.forwardRef(function(e, t) {
+let T = s.forwardRef(function(e, t) {
     let {
         guild: n,
         sortedBans: l,
@@ -100,7 +100,7 @@ let C = s.forwardRef(function(e, t) {
         }, "spinner");
         let t = l[e],
             s = r?.get(t?.id ?? "");
-        if (null != t && null != s) return (0, i.jsx)(T, {
+        if (null != t && null != s) return (0, i.jsx)(C, {
             user: t,
             ban: s,
             guild: n
@@ -182,7 +182,7 @@ function v() {
     let {
         guild: e,
         searchQuery: t
-    } = (0, a.bG)([A.A], () => A.A.getProps(), [], l.isEqual), d = null != t && t.trim().length > 0, g = (0, u.A)(d), p = d !== g, [f] = (0, a.bG)([A.A], () => A.A.getBans(), [], _.D), j = f?.size ?? 0, T = (0, m.Ay)(), v = e?.id ?? N.dJq, S = s.useRef(null), y = s.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
+    } = (0, a.bG)([A.A], () => A.A.getProps(), [], l.isEqual), d = null != t && t.trim().length > 0, g = (0, u.A)(d), p = d !== g, [f] = (0, a.bG)([A.A], () => A.A.getBans(), [], _.D), j = f?.size ?? 0, C = (0, m.Ay)(), v = e?.id ?? N.dJq, S = s.useRef(null), y = s.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
         if (null == t || 0 === e.trim().length) return !1;
         let [
             [n], i
@@ -228,13 +228,13 @@ function v() {
             storedSearchQuery: t
         }), (0, i.jsxs)("div", {
             className: b.gs,
-            children: [!D && (0, i.jsx)(C, {
+            children: [!D && (0, i.jsx)(T, {
                 guild: e,
                 bans: f,
                 sortedBans: F,
                 ref: S
             }), !L && D && (0, i.jsxs)(o.ppr, {
-                theme: T,
+                theme: C,
                 className: b.p$,
                 children: [(0, i.jsx)(o.G8R, {
                     darkSrc: n(29093),

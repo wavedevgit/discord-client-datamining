@@ -24,8 +24,8 @@ var i = n(627968),
     N = n(427262),
     E = n(820883),
     b = n(276373),
-    T = n(438407),
-    C = n(652215),
+    C = n(438407),
+    T = n(652215),
     I = n(985018),
     v = n(159529);
 class S extends s.PureComponent {
@@ -79,7 +79,7 @@ let y = s.forwardRef((e, t) => {
         variant: "text-sm/normal",
         children: [w, "—", B]
     });
-    let F = U ? G : C.tEg;
+    let F = U ? G : T.tEg;
     return (0, i.jsx)(a.tG, {
         id: l.id,
         children: e => (0, i.jsxs)("div", {
@@ -90,7 +90,7 @@ let y = s.forwardRef((e, t) => {
                 "aria-expanded": h,
                 onClick: F,
                 ...e,
-                children: [(0, i.jsx)(T.H, {
+                children: [(0, i.jsx)(C.H, {
                     action: l.action,
                     actionType: l.actionType,
                     targetType: l.targetType
@@ -114,7 +114,7 @@ let y = s.forwardRef((e, t) => {
                                 t.stopPropagation(), e.onClick(t)
                             },
                             className: v.avatar,
-                            src: l.action === C.F_X.AUTO_MODERATION_BLOCK_MESSAGE || l.action === C.F_X.AUTO_MODERATION_FLAG_TO_CHANNEL || l.action === C.F_X.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || l.action === C.F_X.AUTO_MODERATION_QUARANTINE_USER ? (0, E.q)() : l.user?.getAvatarURL(N, 40),
+                            src: l.action === T.F_X.AUTO_MODERATION_BLOCK_MESSAGE || l.action === T.F_X.AUTO_MODERATION_FLAG_TO_CHANNEL || l.action === T.F_X.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || l.action === T.F_X.AUTO_MODERATION_QUARANTINE_USER ? (0, E.q)() : l.user?.getAvatarURL(N, 40),
                             "aria-hidden": !0,
                             size: c._3J.SIZE_40
                         })
@@ -160,7 +160,7 @@ let y = s.forwardRef((e, t) => {
                                         }
                                         return I.intl.string(I.t["30mdIx"])
                                     },
-                                    targetHook: (e, t) => l.targetType === C.GaG.USER && l.target instanceof _.A ? (0, i.jsx)(S, {
+                                    targetHook: (e, t) => l.targetType === T.GaG.USER && l.target instanceof _.A ? (0, i.jsx)(S, {
                                         user: l.target,
                                         onContextMenu: L
                                     }, t) : (0, i.jsx)("span", {
@@ -186,7 +186,7 @@ let y = s.forwardRef((e, t) => {
                 }) : null]
             }), h ? (0, i.jsx)("div", {
                 className: v.divider
-            }) : null, h && null != y ? (0, i.jsx)(T.r, {
+            }) : null, h && null != y ? (0, i.jsx)(C.r, {
                 log: l,
                 guild: y,
                 onContentClick: O

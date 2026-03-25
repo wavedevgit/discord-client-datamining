@@ -45,8 +45,8 @@ function p(e) {
     }, []), {
         handleDragStart: E,
         handleDragReset: b,
-        handleDragComplete: T,
-        draggingId: C
+        handleDragComplete: C,
+        draggingId: T
     } = (0, a.A)(j, N), {
         enabled: I
     } = u.A.useExperiment({
@@ -84,8 +84,8 @@ function p(e) {
                 index: t,
                 onDragStart: E,
                 onDragReset: b,
-                onDragComplete: T,
-                draggingId: C
+                onDragComplete: C,
+                draggingId: T
             }, e.id))
         }), (0, i.jsxs)("button", {
             className: _.qG,

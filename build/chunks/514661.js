@@ -10,12 +10,12 @@ var i = n(64700),
 function s(e, t) {
     let [n, s] = i.useState(!1), o = i.useCallback(async () => {
         null != e && (s(!0), await (0, a.m)(e, !0), s(!1)), t?.()
-    }, [e, t]), l = (0, r.A)(e);
+    }, [e, t]), c = (0, r.A)(e);
     return {
         isAdopting: n,
         onAdoptTag: o,
         onEditProfile: i.useCallback(() => {
-            t?.(), l()
-        }, [l, t])
+            t?.(), c()
+        }, [c, t])
     }
 }

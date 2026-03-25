@@ -125,7 +125,7 @@ let A = {
             effect: t
         } = e, {
             upsertConfig: n
-        } = (0, g.wu)(), s = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [d, j] = i.useState(!0), y = i.useRef({}), [T, E] = i.useState(!1), [N, I] = i.useState(!1), [O, k] = i.useState(8), [R, w] = i.useState([]), [D, M] = i.useState(A), P = i.useRef([]), [L, U] = i.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), G = i.useMemo(() => ({
+        } = (0, g.wu)(), s = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [d, j] = i.useState(!0), y = i.useRef({}), [T, E] = i.useState(!1), [N, I] = i.useState(!1), [O, k] = i.useState(8), [R, w] = i.useState([]), [D, P] = i.useState(A), M = i.useRef([]), [L, U] = i.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), G = i.useMemo(() => ({
             id: C,
             skuId: C,
             title: C,
@@ -141,7 +141,7 @@ let A = {
         }, W = (e, t) => {
             let n = V(t);
             null != n && (0, _.Mz)(n, t => {
-                M(a => ({
+                P(a => ({
                     ...a,
                     [e]: (0, _.GT)(t, n)
                 }))
@@ -155,13 +155,13 @@ let A = {
             null != e && Object.entries(e).forEach(e => {
                 let [t, n] = e;
                 if (null != n) {
-                    if ("" !== n.src && null != n.src && ("" === n.base64 || null == n.base64)) M(e => ({
+                    if ("" !== n.src && null != n.src && ("" === n.base64 || null == n.base64)) P(e => ({
                         ...e,
                         [t]: n
                     }));
                     else if ("" !== n.base64 && null != n.base64) {
                         let e = (0, _.fB)(n.base64);
-                        n.src = e, P.current.push(e), M(e => ({
+                        n.src = e, M.current.push(e), P(e => ({
                             ...e,
                             [t]: n
                         }))
@@ -190,9 +190,9 @@ let A = {
                 }
             })
         }, [R, D, L]), i.useEffect(() => () => {
-            P.current.forEach(e => {
+            M.current.forEach(e => {
                 URL.revokeObjectURL(e)
-            }), P.current = []
+            }), M.current = []
         }, []), null == s) ? (0, a.jsx)("div", {}) : (0, a.jsxs)("div", {
             className: v.zr,
             children: [(0, a.jsxs)("div", {
@@ -423,7 +423,7 @@ let A = {
                                     frame: n,
                                     theme: F,
                                     onClear: () => {
-                                        M(e => ({
+                                        P(e => ({
                                             ...e,
                                             [t]: null
                                         }))
@@ -456,7 +456,7 @@ let A = {
                             variant: "critical-secondary",
                             text: "Clear Assets",
                             onClick: () => {
-                                w([]), M(A)
+                                w([]), P(A)
                             }
                         })
                     }), R.map((e, t) => (0, a.jsxs)("div", {

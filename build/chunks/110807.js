@@ -40,40 +40,40 @@ function h(e) {
     }), b = {
         ...e,
         monetizationPredicate: E
-    }, T = [];
-    T.push({
+    }, C = [];
+    C.push({
         section: g,
         label: "" !== t.name ? t.name : u.intl.string(u.t["154/bL"])
-    }), T.push(m(c.BEX.PROFILE, b)), T.push(m(c.BEX.TAG, b)), T.push(m(c.BEX.ENGAGEMENT, b)), T.push(m(c.BEX.BOOST_PERKS, b)), N && (T.push({
+    }), C.push(m(c.BEX.PROFILE, b)), C.push(m(c.BEX.TAG, b)), C.push(m(c.BEX.ENGAGEMENT, b)), C.push(m(c.BEX.BOOST_PERKS, b)), N && (C.push({
         section: x
-    }), T.push({
+    }), C.push({
         section: g,
         label: u.intl.string(u.t.m6lkGy)
-    }), T.push(m(c.BEX.EMOJI, b)), T.push(m(c.BEX.STICKERS, b)), T.push(m(c.BEX.SOUNDBOARD, b))), (n || h || p || j) && (T.push({
+    }), C.push(m(c.BEX.EMOJI, b)), C.push(m(c.BEX.STICKERS, b)), C.push(m(c.BEX.SOUNDBOARD, b))), (n || h || p || j) && (C.push({
         section: x
-    }), T.push({
+    }), C.push({
         section: g,
         label: u.intl.string(u.t.bMAKMK)
-    }), T.push(m(c.BEX.MEMBERS, b)), T.push(m(c.BEX.ROLES, b)), T.push(m(c.BEX.INVITES, b)), T.push(m(c.BEX.ACCESS, b))), T.push({
+    }), C.push(m(c.BEX.MEMBERS, b)), C.push(m(c.BEX.ROLES, b)), C.push(m(c.BEX.INVITES, b)), C.push(m(c.BEX.ACCESS, b))), C.push({
         section: x
-    }), T.push({
+    }), C.push({
         section: g,
         label: u.intl.string(u.t.wF3KJy)
-    }), T.push(m(c.BEX.INTEGRATIONS, b)), T.push(m(c.BEX.APP_DIRECTORY, b));
-    let C = !t.features.has(c.GuildFeatures.COMMUNITY) && ((0, l.hX)(t.id) || (0, l.i_)(t.id));
-    (n || d || _ || C) && (T.push({
+    }), C.push(m(c.BEX.INTEGRATIONS, b)), C.push(m(c.BEX.APP_DIRECTORY, b));
+    let T = !t.features.has(c.GuildFeatures.COMMUNITY) && ((0, l.hX)(t.id) || (0, l.i_)(t.id));
+    (n || d || _ || T) && (C.push({
         section: x
-    }), T.push({
+    }), C.push({
         section: g,
         label: u.intl.string(u.t["5tbTdV"])
-    }), T.push(m(c.BEX.SAFETY, b)), T.push(m(c.BEX.MODERATION, b)), T.push(m(c.BEX.AUDIT_LOG, b)), T.push(m(c.BEX.BANS, b)), T.push(m(c.BEX.GUILD_AUTOMOD, b)));
+    }), C.push(m(c.BEX.SAFETY, b)), C.push(m(c.BEX.MODERATION, b)), C.push(m(c.BEX.AUDIT_LOG, b)), C.push(m(c.BEX.BANS, b)), C.push(m(c.BEX.GUILD_AUTOMOD, b)));
     let I = t.features.has(c.GuildFeatures.COMMUNITY) && A,
         v = E();
-    return (n || I || v) && (T.push({
+    return (n || I || v) && (C.push({
         section: x
-    }), T.push(m(c.BEX.COMMUNITY, b)), T.push(m(c.BEX.ONBOARDING, b)), T.push(m(c.BEX.ANALYTICS, b)), T.push(m(c.BEX.COMMUNITY_WELCOME, b)), T.push(m(c.BEX.DISCOVERY_LANDING_PAGE, b)), T.push(m(c.BEX.ROLE_SUBSCRIPTIONS, b)), T.push(m(c.BEX.GUILD_PRODUCTS, b)), T.push(m(c.BEX.ROLE_SUBSCRIPTIONS_STORE_PAGE, b))), T.push({
+    }), C.push(m(c.BEX.COMMUNITY, b)), C.push(m(c.BEX.ONBOARDING, b)), C.push(m(c.BEX.ANALYTICS, b)), C.push(m(c.BEX.COMMUNITY_WELCOME, b)), C.push(m(c.BEX.DISCOVERY_LANDING_PAGE, b)), C.push(m(c.BEX.ROLE_SUBSCRIPTIONS, b)), C.push(m(c.BEX.GUILD_PRODUCTS, b)), C.push(m(c.BEX.ROLE_SUBSCRIPTIONS_STORE_PAGE, b))), C.push({
         section: x
-    }), T.push(m(c.BEX.GUILD_TEMPLATES, b)), T.push(m(c.BEX.DELETE, b)), T.filter(o.Vq)
+    }), C.push(m(c.BEX.GUILD_TEMPLATES, b)), C.push(m(c.BEX.DELETE, b)), C.filter(o.Vq)
 }
 let _ = {
     generateSections: h

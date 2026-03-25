@@ -35,8 +35,8 @@ var x = n(173628),
     R = n(501379),
     w = n(517538),
     D = n(211162),
-    M = n(436102),
-    P = n(435459),
+    P = n(436102),
+    M = n(435459),
     L = n(68738),
     U = n(912878),
     B = n(477102),
@@ -178,7 +178,7 @@ function ec() {
             name: "Lottie",
             group: er.fu.UI,
             tags: ["animation"],
-            render: () => (0, a.jsx)(P.A, {})
+            render: () => (0, a.jsx)(M.A, {})
         }), e.push({
             id: "intl",
             name: "Intl",
@@ -243,7 +243,7 @@ function ec() {
             name: "Layers",
             group: er.fu.UI,
             tags: ["verification", "safety flow"],
-            render: () => (0, a.jsx)(M.A, {})
+            render: () => (0, a.jsx)(P.A, {})
         }), e.push({
             id: "affinity",
             name: "Affinity",

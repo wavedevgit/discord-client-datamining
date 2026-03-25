@@ -1,21 +1,14 @@
 /** chunk id: 492841 params = (module,exports,require) **/
 n.d(t, {
-    A: () => o
+    A: () => a
 });
-var i = n(937161),
-    l = n(406704),
-    s = n(576705),
-    r = n(143413),
-    a = n(652215);
+var i = n(406704),
+    l = n(576705),
+    s = n(143413),
+    r = n(652215);
 
-function o(e, t) {
-    let n = !t.isSystemDM() && !(0, r.A)(e),
-        {
-            enabled: o
-        } = i.A.getCurrentConfig({
-            guildId: t.guild_id,
-            location: "isMessagePinnable"
-        }),
-        c = (s.A.can(a.xBc.MANAGE_MESSAGES, t) && !o || s.A.can(a.xBc.PIN_MESSAGES, t)) && s.A.can(a.xBc.READ_MESSAGE_HISTORY, t);
-    return n && (c || t.isPrivate()) && (0, l.jr)(t) && t.type !== a.rbe.GUILD_VOICE && t.type !== a.rbe.GUILD_STAGE_VOICE
+function a(e, t) {
+    let n = !t.isSystemDM() && !(0, s.A)(e),
+        a = l.A.can(r.xBc.PIN_MESSAGES, t) && l.A.can(r.xBc.READ_MESSAGE_HISTORY, t);
+    return n && (a || t.isPrivate()) && (0, i.jr)(t) && t.type !== r.rbe.GUILD_VOICE && t.type !== r.rbe.GUILD_STAGE_VOICE
 }

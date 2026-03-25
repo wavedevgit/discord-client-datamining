@@ -57,20 +57,20 @@ function p(e) {
             }
             return e
         }, [f, t, n]),
-        [T, v] = i.useState(""),
+        [v, T] = i.useState(""),
         C = i.useMemo(() => {
             var t;
-            let n = (t = T).startsWith("@") ? t.substr(1) : t,
-                i = T.startsWith("@") ? j.filter(t => t.id === e) : j;
+            let n = (t = v).startsWith("@") ? t.substr(1) : t,
+                i = v.startsWith("@") ? j.filter(t => t.id === e) : j;
             return {
                 members: (0, x.I)(_, A, n),
                 roles: (0, x.I)(i, b, n)
             }
-        }, [e, _, T, j]);
+        }, [e, _, v, j]);
     return {
-        query: T,
+        query: v,
         results: C,
-        setQuery: v,
+        setQuery: T,
         unfilteredCount: C.members.length + C.roles.length
     }
 }
