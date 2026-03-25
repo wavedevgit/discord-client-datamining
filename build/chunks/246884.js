@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    a = n(397927),
-    r = n(442433),
+    r = n(397927),
+    a = n(442433),
     o = n(688810),
     c = n(272613),
     d = n(398884),
@@ -36,7 +36,7 @@ let I = {
 };
 
 function N(e) {
-    (0, r.L3)(e, async () => {
+    (0, a.L3)(e, async () => {
         let {
             default: e
         } = await n.e("17288").then(n.bind(n, 4571));
@@ -50,7 +50,7 @@ function b(e) {
     let {
         disableTooltip: t,
         lastTargetNode: n
-    } = e, r = (0, l.yK)([m.A], () => m.A.getGuildsArray()), b = (0, l.bG)([_.default], () => _.default.getCurrentUser()), S = s.useMemo(() => r.some(e => (0, A.bM)(e, b)), [r, b]), T = (0, a.red)(e => (0, a.fDT)(e, x.fc)), {
+    } = e, a = (0, l.yK)([m.A], () => m.A.getGuildsArray()), b = (0, l.bG)([_.default], () => _.default.getCurrentUser()), S = s.useMemo(() => a.some(e => (0, A.bM)(e, b)), [a, b]), T = (0, r.red)(e => (0, r.fDT)(e, x.fc)), {
         analyticsLocations: v
     } = (0, o.Ay)(), y = (0, i.jsx)(g.A, {
         showPill: !1,
@@ -72,7 +72,7 @@ function b(e) {
         selected: T,
         onContextMenu: N,
         tooltip: C.intl.string(C.t.l5WIbf),
-        icon: a.U1e
+        icon: r.U1e
     });
     return t ? y : (0, i.jsx)("div", {
         className: E.Uq,

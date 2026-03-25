@@ -26,9 +26,9 @@ var i = n(989349),
     S = n(287809),
     x = n(427262),
     v = n(54570),
-    y = n(8880);
+    b = n(8880);
 n(75804);
-var b = n(652215),
+var y = n(652215),
     O = n(985018);
 let L = [],
     R = null,
@@ -100,7 +100,7 @@ function B(e) {
     let {
         message: t,
         channel: n
-    } = e, i = t.type === b.lAJ.REPLY ? c.A.getMessageByReference(t.messageReference) : null, a = i?.state === c.a.LOADED ? i?.message?.author : null, l = null != a ? g.Ay.getNick(n.guild_id, a?.id) ?? x.Ay.getName(a) : null, r = n.getGuildId(), s = g.Ay.getNick(r, t.author.id) ?? x.Ay.getName(t.author);
+    } = e, i = t.type === y.lAJ.REPLY ? c.A.getMessageByReference(t.messageReference) : null, a = i?.state === c.a.LOADED ? i?.message?.author : null, l = null != a ? g.Ay.getNick(n.guild_id, a?.id) ?? x.Ay.getName(a) : null, r = n.getGuildId(), s = g.Ay.getNick(r, t.author.id) ?? x.Ay.getName(t.author);
     return G(j(t.content, s, r, l), !0, n.id, t.id), !0
 }
 
@@ -118,14 +118,14 @@ function H(e) {
         s = t === l || t === r,
         o = A.on.getSetting() && n.tts && s,
         d = f.A.getTTSType(),
-        c = n.author?.id !== h.default.getId() && (d === b.aVn.ALL_CHANNELS || d === b.aVn.SELECTED_CHANNEL && s);
+        c = n.author?.id !== h.default.getId() && (d === y.aVn.ALL_CHANNELS || d === y.aVn.SELECTED_CHANNEL && s);
     if ((o || c) && !C.A.isBlockedOrIgnoredForMessage(n)) {
         if (L.indexOf(n.id) >= 0) return !1;
         L.unshift(n.id) > 10 && L.pop();
         let e = a.getGuildId();
         if (null != e && N.Ay.getMutedChannels(e).has(t)) return !1;
         let i = g.Ay.getNick(e, n.author?.id) ?? x.Ay.getName(n.author) ?? "",
-            l = n.type === b.lAJ.REPLY ? n.referenced_message?.author : null,
+            l = n.type === y.lAJ.REPLY ? n.referenced_message?.author : null,
             r = null != l ? g.Ay.getNick(e, l?.id) ?? x.Ay.getName(l) : null;
         G(j(n.content, i, e, r), !1, a.id, n.id, 200)
     }
@@ -136,7 +136,7 @@ function F(e) {
     let {
         id: t,
         channelId: n
-    } = e, i = y.A.currentMessage;
+    } = e, i = b.A.currentMessage;
     return null != i && t === i.messageId && n === i.channelId && ((0, v.pr)(), !0)
 }
 
@@ -147,7 +147,7 @@ function Y() {
 function W(e) {
     let {
         channelId: t
-    } = e, n = y.A.currentMessage;
+    } = e, n = b.A.currentMessage;
     null != n && n.channelId !== t && (0, v.pr)()
 }
 let K = {

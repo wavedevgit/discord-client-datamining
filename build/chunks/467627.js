@@ -6,9 +6,9 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(735438),
-    o = n.n(r),
+    r = n.n(l),
+    a = n(735438),
+    o = n.n(a),
     c = n(873263),
     d = n(837381),
     u = n(621466),
@@ -60,8 +60,8 @@ var i = n(627968),
     ei = n(343170),
     es = n(652215),
     el = n(985018),
-    ea = n(216788);
-let er = (0, B.isWindows)() ? 4 : 12 * !(0, B.isMac)();
+    er = n(216788);
+let ea = (0, B.isWindows)() ? 4 : 12 * !(0, B.isMac)();
 
 function eo(e) {
     return e.startsWith(es.BVt.GUILD_DISCOVERY) || e.startsWith(es.BVt.GLOBAL_DISCOVERY)
@@ -125,14 +125,14 @@ class ec {
             iconTotalSize: i,
             badgeVisibleBuffer: s,
             heightBeforeGuilds: l,
-            bottomInset: a
-        } = this.sizes, r = this.scrollerRef.current;
-        if (null == r) return !1;
+            bottomInset: r
+        } = this.sizes, a = this.scrollerRef.current;
+        if (null == a) return !1;
         let o = n.findIndex(t => "string" == typeof t || null == t ? t === e : t.includes(e));
         if (o < 0) return !1;
         let c = i * o + l,
-            d = r.getScrollerState();
-        return !t && !!(c >= d.scrollTop) || !!t && !!(c + i + s <= d.scrollTop + d.offsetHeight - a)
+            d = a.getScrollerState();
+        return !t && !!(c >= d.scrollTop) || !!t && !!(c + i + s <= d.scrollTop + d.offsetHeight - r)
     };
     getVisibleGuildIds = () => {
         let e = this.scrollerRef.current;
@@ -144,8 +144,8 @@ class ec {
                 s = this.nodeRefs[i];
             if (null == s) return !1;
             let l = s.getBoundingClientRect(),
-                a = l.top - n;
-            return a + l.height > 0 && a < t
+                r = l.top - n;
+            return r + l.height > 0 && r < t
         }).map(e => {
             let {
                 id: t
@@ -178,9 +178,9 @@ function ed(e) {
         hideDms: t,
         scrollToTop: n,
         lurkingGuildIds: l
-    } = e, a = (0, y.A)("TopSection"), {
-        isExperimentEnabled: r
-    } = (0, v.TW)("TopSection"), o = (0, h.bG)([w.A], () => null != w.A.getVoiceChannelId()), c = (0, g.useHasAnyModalOpen)(), d = (0, S.Ay)(e => e.postConnectionOpen), [u, m] = (0, T.kn)(d && r && !o && !c ? [A.M.FAVORITES_SERVER_ONBOARDING_INTRO] : []), _ = u === A.M.FAVORITES_SERVER_ONBOARDING_INTRO, [p] = (0, T.kn)(_ ? [A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM] : [], void 0, !0), f = p === A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM, x = s.useRef(!1), C = f && a;
+    } = e, r = (0, y.A)("TopSection"), {
+        isExperimentEnabled: a
+    } = (0, v.TW)("TopSection"), o = (0, h.bG)([w.A], () => null != w.A.getVoiceChannelId()), c = (0, g.useHasAnyModalOpen)(), d = (0, S.Ay)(e => e.postConnectionOpen), [u, m] = (0, T.kn)(d && a && !o && !c ? [A.M.FAVORITES_SERVER_ONBOARDING_INTRO] : []), _ = u === A.M.FAVORITES_SERVER_ONBOARDING_INTRO, [p] = (0, T.kn)(_ ? [A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM] : [], void 0, !0), f = p === A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM, x = s.useRef(!1), C = f && r;
     s.useEffect(() => {
         C && !x.current && n(), x.current = C
     }, [n, C]);
@@ -192,7 +192,7 @@ function ed(e) {
             location: "GuildsBar"
         });
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(Q.C, {}), N === L.RK.SERVER_RAIL_TOP && (0, i.jsx)(M.A, {}), a ? (0, i.jsx)(j.A, {
+        children: [(0, i.jsx)(Q.C, {}), N === L.RK.SERVER_RAIL_TOP && (0, i.jsx)(M.A, {}), r ? (0, i.jsx)(j.A, {
             shouldShowIntroPopover: f,
             markIntroPopoverAsDismissed: m
         }) : null, !t && (0, i.jsx)(Y.A, {}), I.map(e => (0, i.jsx)(ei.A, {
@@ -209,11 +209,11 @@ function eu(e) {
         disableAppDownload: n,
         isOverlay: s,
         renderTreeNode: l,
-        lurkingGuildIds: a
-    } = e, [r] = (0, h.yK)([V.Ay], () => {
+        lurkingGuildIds: r
+    } = e, [a] = (0, h.yK)([V.Ay], () => {
         let e = V.Ay.getGuildsTree();
         return [e, e.version]
-    }), o = r.getRoots(), c = (0, h.yK)([U.A], () => U.A.getGeoRestrictedGuilds()).map(e => (0, i.jsx)(X.A, {
+    }), o = a.getRoots(), c = (0, h.yK)([U.A], () => U.A.getGeoRestrictedGuilds()).map(e => (0, i.jsx)(X.A, {
         id: e.id,
         name: e.name,
         icon: e.icon
@@ -225,7 +225,7 @@ function eu(e) {
             gap: "xs",
             children: o.map((e, t) => l(e, t, o.length))
         }), c, (0, i.jsx)(Z.A, {}), s ? null : (0, i.jsx)(q.A, {
-            disableTooltip: a.length > 0,
+            disableTooltip: r.length > 0,
             lastTargetNode: o[o.length - 1]
         }), s ? null : t, n ? null : (0, i.jsx)(z.A, {})]
     })
@@ -236,7 +236,7 @@ function eh(e) {
         disableAppDownload: t = B.isPlatformEmbedded,
         isOverlay: n = !1,
         className: l,
-        themeOverride: r
+        themeOverride: a
     } = e, [o] = (0, h.yK)([V.Ay], () => {
         let e = V.Ay.getGuildsTree();
         return [e, e.version]
@@ -259,7 +259,7 @@ function eh(e) {
             iconTotalSize: e,
             badgeVisibleBuffer: e - 16,
             separatorSize: t = 2 + z,
-            heightBeforeGuilds: er + t + Z * e,
+            heightBeforeGuilds: ea + t + Z * e,
             bottomInset: 16
         });
         return new ec(o, w, es.tEg, () => {
@@ -335,36 +335,36 @@ function eh(e) {
         }, [x, E, g, en.setNodeRef]),
         e_ = (0, i.jsx)(J.A, {
             selected: eh,
-            className: ea.ai
+            className: er.ai
         }),
         ep = Q === L.RK.SERVER_RAIL_BOTTOM;
     return (0, i.jsx)(N.f5, {
         value: ei,
         children: (0, i.jsx)(f.NPJ, {
-            theme: r,
+            theme: a,
             children: e => (0, i.jsxs)("nav", {
-                className: a()(ea.iE, l, e, {
-                    [ea.R]: m
+                className: r()(er.iE, l, e, {
+                    [er.R]: m
                 }),
                 "aria-label": el.intl.string(el.t.PjnF2t),
                 children: [(0, i.jsx)(W.A, {
                     ref: v,
                     isVisible: en.isItemVisible,
                     onJumpTo: en.handleJumpToGuild,
-                    className: ea.Xl,
-                    barClassName: ea.Sh
+                    className: er.Xl,
+                    barClassName: er.Sh
                 }), (0, i.jsx)("ul", {
                     ref: R,
                     ...U,
                     ...P,
                     role: "tree",
-                    className: ea.B2,
+                    className: er.B2,
                     children: (0, i.jsxs)("div", {
-                        className: ea.qD,
+                        className: er.qD,
                         children: [(0, i.jsxs)(f.zCo, {
-                            className: a()({
-                                [ea.XG]: !0,
-                                [ea.qw]: k
+                            className: r()({
+                                [er.XG]: !0,
+                                [er.qw]: k
                             }),
                             experimental_useStack: !0,
                             gap: "xs",
@@ -384,7 +384,7 @@ function eh(e) {
                             children: [(0, i.jsx)($.A, {
                                 fullWidth: !0
                             }), (0, i.jsx)("div", {
-                                className: ea.JU,
+                                className: er.JU,
                                 children: (0, i.jsx)(M.A, {})
                             })]
                         })]
@@ -394,11 +394,11 @@ function eh(e) {
                     ref: j,
                     isVisible: en.isItemVisible,
                     onJumpTo: en.handleJumpToGuild,
-                    className: a()(ea.LZ, {
-                        [ea.CH]: !n && !ep,
-                        [ea.c0]: !n && ep
+                    className: r()(er.LZ, {
+                        [er.CH]: !n && !ep,
+                        [er.c0]: !n && ep
                     }),
-                    barClassName: ea.Sh
+                    barClassName: er.Sh
                 })]
             })
         })

@@ -6,19 +6,19 @@ n.d(t, {
 var i = n(311907),
     s = n(73153),
     l = n(383501);
-let a = {},
-    r = !1,
+let r = {},
+    a = !1,
     o = null;
 
 function c(e) {
-    e in a && delete a[e]
+    e in r && delete r[e]
 }
 
 function d() {
-    if (!r && l.A.isConnected()) {
+    if (!a && l.A.isConnected()) {
         let e = l.A.getChannelId();
-        if (null != e) return c(e), o = e, r = !0, !0
-    } else if (r && !l.A.isConnected() && null != o) return c(o), o = null, r = !1, !0;
+        if (null != e) return c(e), o = e, a = !0, !0
+    } else if (a && !l.A.isConnected() && null != o) return c(o), o = null, a = !1, !0;
     return !1
 }
 class u extends i.Ay.Store {
@@ -27,7 +27,7 @@ class u extends i.Ay.Store {
         this.waitFor(l.A), this.syncWith([l.A], d)
     }
     getIsPopoverDismissed(e) {
-        return null != e && (a[e] ?? !1)
+        return null != e && (r[e] ?? !1)
     }
     getShouldShowPopover(e) {
         return null != e && l.A.isConnected() && l.A.getChannelId() === e && !this.getIsPopoverDismissed(e)
@@ -38,6 +38,6 @@ let h = new u(s.h, {
         let {
             channelId: t
         } = e;
-        return !a[t] && (a[t] = !0, !0)
+        return !r[t] && (r[t] = !0, !0)
     }
 })

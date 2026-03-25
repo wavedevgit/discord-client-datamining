@@ -27,8 +27,8 @@ var a = n(835245),
     S = n(849823),
     x = n(840065),
     v = n(962173),
-    y = n(287809),
-    b = n(954571),
+    b = n(287809),
+    y = n(954571),
     O = n(203982),
     L = n(998218),
     R = n(837921),
@@ -43,7 +43,7 @@ function U(e, t) {
         fingerprint: n,
         installationId: i
     } = e;
-    (null != n || null != i) && b.default.track(j.HAw.EXTERNAL_DYNAMIC_LINK_RECEIVED, {
+    (null != n || null != i) && y.default.track(j.HAw.EXTERNAL_DYNAMIC_LINK_RECEIVED, {
         invite_code: null,
         has_auth_token: null,
         is_backgrounded: null,
@@ -73,7 +73,7 @@ let G = {
                     code: t
                 }
             } = e;
-            if (null == y.default.getCurrentUser()) return;
+            if (null == b.default.getCurrentUser()) return;
             let {
                 guildTemplate: a
             } = await E.A.resolveGuildTemplate(t);
@@ -108,7 +108,7 @@ let G = {
                         let {
                             giftCode: l
                         } = a;
-                        R.Ay.focus(), b.default.track(j.HAw.OPEN_MODAL, {
+                        R.Ay.focus(), y.default.track(j.HAw.OPEN_MODAL, {
                             type: "gift_accept",
                             location: j.$OG
                         }), (0, r.mMO)(async () => {
@@ -227,7 +227,7 @@ let G = {
                         return async function(e, t, n) {
                             try {
                                 let i = h.Ay.getCurrentEmbeddedActivity();
-                                if (i?.applicationId === e) return void b.default.track(j.HAw.ACTIVITY_DEEP_LINK_RECEIVED, {
+                                if (i?.applicationId === e) return void y.default.track(j.HAw.ACTIVITY_DEEP_LINK_RECEIVED, {
                                     application_id: e,
                                     success: !1,
                                     failure_reason: "activity_already_running",
@@ -235,7 +235,7 @@ let G = {
                                 });
                                 let a = await p.Ay.fetchApplication(e),
                                     l = a?.bot?.id;
-                                if (null == l) return void b.default.track(j.HAw.ACTIVITY_DEEP_LINK_RECEIVED, {
+                                if (null == l) return void y.default.track(j.HAw.ACTIVITY_DEEP_LINK_RECEIVED, {
                                     application_id: e,
                                     success: !1,
                                     failure_reason: "no_bot_user",
@@ -255,14 +255,14 @@ let G = {
                                     analyticsLocations: [g.A.DEEPLINK],
                                     customId: d,
                                     referrerId: o
-                                }), b.default.track(j.HAw.ACTIVITY_DEEP_LINK_RECEIVED, {
+                                }), y.default.track(j.HAw.ACTIVITY_DEEP_LINK_RECEIVED, {
                                     application_id: e,
                                     success: !0,
                                     failure_reason: null,
                                     attempt_id: n
                                 })
                             } catch (t) {
-                                b.default.track(j.HAw.ACTIVITY_DEEP_LINK_RECEIVED, {
+                                y.default.track(j.HAw.ACTIVITY_DEEP_LINK_RECEIVED, {
                                     application_id: e,
                                     success: !1,
                                     failure_reason: "launch_failed",

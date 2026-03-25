@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(311907),
     l = n(397927),
-    a = n(947094),
-    r = n(919577),
+    r = n(947094),
+    a = n(919577),
     o = n(207777),
     c = n(200463),
     d = n(435470),
@@ -20,7 +20,7 @@ var s = n(311907),
 function _(e) {
     let {
         channel: t
-    } = e, n = (0, d.S4)(t), _ = (0, s.bG)([a.A], () => a.A.hasHidden(t.id)), p = (0, u.l)(t.id), {
+    } = e, n = (0, d.S4)(t), _ = (0, s.bG)([r.A], () => r.A.hasHidden(t.id)), p = (0, u.l)(t.id), {
         sortOrder: g,
         tagFilter: f,
         tagSetting: x
@@ -30,7 +30,7 @@ function _(e) {
     return (0, i.jsx)(A.In, {
         tooltip: I,
         icon: l.mir,
-        onClick: () => r.A.hideAdminOnboarding(t.id, !_),
+        onClick: () => a.A.hideAdminOnboarding(t.id, !_),
         selected: !_
     })
 }

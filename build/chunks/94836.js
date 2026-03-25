@@ -1,7 +1,7 @@
 /** chunk id: 94836 params = (module,exports,require) **/
 n.d(t, {
-    A: () => j,
-    a: () => E
+    A: () => A,
+    a: () => C
 });
 var a = n(627968),
     l = n(64700),
@@ -17,12 +17,12 @@ var a = n(627968),
     f = n(409626),
     h = n(368546),
     g = n(985018),
-    _ = n(851822),
-    p = n(351886),
-    A = n(947570),
-    v = n(1309);
+    p = n(851822),
+    _ = n(351886),
+    v = n(947570),
+    j = n(1309);
 
-function j(e) {
+function A(e) {
     let {
         detectedGame: t,
         trackAction: n
@@ -47,21 +47,21 @@ function j(e) {
     }
     return 0 === r.length ? null : (0, a.jsxs)("div", {
         children: [(0, a.jsx)(c.Heading, {
-            className: _.bV,
+            className: p.bV,
             variant: "text-md/semibold",
             color: "text-strong",
             children: g.intl.string(g.t.bNdK5x)
         }), (0, a.jsxs)("div", {
-            className: s ? p.DA : p.pZ,
+            className: s ? _.DA : _.pZ,
             children: [(0, a.jsx)(c.zCo, {
                 ref: i,
-                className: p.ec,
+                className: _.ec,
                 orientation: "horizontal",
                 children: r.map((e, t) => (0, a.jsx)(c.DUT, {
-                    className: p.gw,
+                    className: _.gw,
                     focusProps: {
                         offset: 4,
-                        ringClassName: p.jR
+                        ringClassName: _.jR
                     },
                     onClick: () => {
                         n(f.Ws.ClickImage), (0, x.R)({
@@ -73,30 +73,30 @@ function j(e) {
                     },
                     children: (0, a.jsx)("img", {
                         src: e.url,
-                        className: p.Zm,
+                        className: _.Zm,
                         alt: g.intl.formatToPlainString(g.t.COYYrn, {
                             game: name
                         })
                     })
                 }, t))
             }), s && (0, a.jsxs)("div", {
-                className: p.NA,
+                className: _.NA,
                 children: [(0, a.jsx)("div", {
-                    className: p.EJ
+                    className: _.EJ
                 }), (0, a.jsx)(c.DUT, {
-                    className: p.G9,
+                    className: _.G9,
                     onClick: () => o(-1),
                     children: (0, a.jsx)(c.rJJ, {
-                        className: p.UE,
+                        className: _.UE,
                         color: "currentColor"
                     })
                 }), (0, a.jsx)("div", {
-                    className: p.Pj
+                    className: _.Pj
                 }), (0, a.jsx)(c.DUT, {
-                    className: p.G9,
+                    className: _.G9,
                     onClick: () => o(1),
                     children: (0, a.jsx)(c.EdP, {
-                        className: p.UE,
+                        className: _.UE,
                         color: "currentColor"
                     })
                 })]
@@ -105,12 +105,12 @@ function j(e) {
     })
 }
 
-function E(e) {
+function C(e) {
     let {
         detectedGame: t
-    } = e, [n, i] = l.useState(0), [f, _] = l.useState(t.artwork), [p, j] = l.useState(t.screenshots), E = l.useRef(null), I = l.useRef(null), C = (0, s.bG)([o.A], () => o.A.useReducedMotion);
-    (f !== t.artwork || p !== t.screenshots) && (_(t.artwork), j(t.screenshots), i(0));
-    let b = l.useMemo(() => {
+    } = e, [n, i] = l.useState(0), [f, p] = l.useState(t.artwork), [_, A] = l.useState(t.screenshots), C = l.useRef(null), I = l.useRef(null), b = (0, s.bG)([o.A], () => o.A.useReducedMotion);
+    (f !== t.artwork || _ !== t.screenshots) && (p(t.artwork), A(t.screenshots), i(0));
+    let E = l.useMemo(() => {
             let e = (t.trailers ?? []).map(e => ({
                     url: (0, d.A)(e.application_id, e.id),
                     type: "VIDEO"
@@ -124,33 +124,33 @@ function E(e) {
                 type: "IMAGE"
             })), ...n]
         }, [t.trailers, t.artwork, t.screenshots]),
-        N = b.length > 0 ? Math.min(n, b.length - 1) : 0,
-        T = b[N],
-        S = T?.type === "VIDEO";
+        N = E.length > 0 ? Math.min(n, E.length - 1) : 0,
+        S = E[N],
+        k = S?.type === "VIDEO";
     return ((0, h.A)({
-        videoRef: E,
+        videoRef: C,
         canvasRef: I,
-        enabled: S && !C
-    }), 0 === b.length) ? null : (0, a.jsxs)("div", {
-        className: A.kL,
-        children: [S ? (0, a.jsxs)("div", {
-            className: v.ND,
-            children: [!C && (0, a.jsx)("canvas", {
+        enabled: k && !b
+    }), 0 === E.length) ? null : (0, a.jsxs)("div", {
+        className: v.kL,
+        children: [k ? (0, a.jsxs)("div", {
+            className: j.ND,
+            children: [!b && (0, a.jsx)("canvas", {
                 ref: I,
-                className: v.HW,
+                className: j.HW,
                 "aria-hidden": "true"
             }), (0, a.jsx)(u.A, {
-                ref: E,
-                className: v.dj,
-                src: T.url,
+                ref: C,
+                className: j.dj,
+                src: S.url,
                 controls: !0,
                 playsInline: !0
             })]
         }) : (0, a.jsx)(c.DUT, {
-            className: A.gv,
+            className: v.gv,
             onClick: () => {
-                let e = b.filter(e => "IMAGE" === e.type),
-                    t = e.indexOf(T);
+                let e = E.filter(e => "IMAGE" === e.type),
+                    t = e.indexOf(S);
                 (0, x.R)({
                     items: e,
                     startingIndex: Math.max(0, t),
@@ -159,20 +159,20 @@ function E(e) {
                 })
             },
             children: (0, a.jsx)("img", {
-                src: T.url,
-                className: A.c8,
+                src: S.url,
+                className: v.c8,
                 alt: g.intl.formatToPlainString(g.t.COYYrn, {
                     game: t.name
                 })
             })
         }), (0, a.jsx)(m.A, {
             gap: "xs",
-            children: b.map((e, n) => (0, a.jsx)(c.DUT, {
-                className: r()(A.JS, n === N && A.Y4),
+            children: E.map((e, n) => (0, a.jsx)(c.DUT, {
+                className: r()(v.JS, n === N && v.Y4),
                 onClick: () => i(n),
                 children: (0, a.jsx)("img", {
                     src: e.url,
-                    className: A.xn,
+                    className: v.xn,
                     alt: g.intl.formatToPlainString(g.t.COYYrn, {
                         game: t.name
                     })

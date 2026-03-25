@@ -1,7 +1,7 @@
 /** chunk id: 271866 params = (module,exports,require) **/
 n.d(t, {
-    SH: () => A,
-    cL: () => T,
+    SH: () => T,
+    cL: () => A,
     q1: () => E
 });
 var i = n(73153),
@@ -39,13 +39,13 @@ async function E(e, t) {
     }
 }
 
-function T() {
+function A() {
     o.fy.getState().activePanel === o.HP.APPLICATION_TEST_MODE_DEBUG && (0, o.Jp)(), i.h.dispatch({
         type: "DEVELOPER_TEST_MODE_RESET"
     })
 }
 
-function A() {
+function T() {
     o.fy.getState().activePanel === o.HP.APPLICATION_TEST_MODE_DEBUG && (0, o.Jp)(), i.h.dispatch({
         type: "DEVELOPER_TEST_MODE_RESET_ERROR"
     })

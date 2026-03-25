@@ -1,6 +1,6 @@
 /** chunk id: 77509 params = (module,exports,require) **/
 n.d(e, {
-    A: () => d
+    A: () => c
 });
 var i = n(984083),
     r = n(142120),
@@ -8,7 +8,7 @@ var i = n(984083),
     a = n(612716),
     s = n(976860),
     o = n(652215);
-class c {
+class d {
     unlistenHistory;
     unlistenKeyboardChange;
     rewrites = new Set;
@@ -89,4 +89,4 @@ class c {
         return (0, s.JK)()
     }
 }
-let d = new c
+let c = new d

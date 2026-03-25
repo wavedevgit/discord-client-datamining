@@ -1,5 +1,5 @@
 /** chunk id: 197305 params = (module,exports,require) **/
-i.d(t, {
+i.d(e, {
     A: () => u
 }), i(321073);
 var n = i(311907),
@@ -18,14 +18,14 @@ o();
 class d extends n.Ay.PersistedStore {
     static displayName = "GuildAffinitiesStore";
     static persistKey = "GuildAffinitiesStore";
-    initialize(e) {
-        null != e && (a = e), this.waitFor(s.A)
+    initialize(t) {
+        null != t && (a = t), this.waitFor(s.A)
     }
     getState() {
         return a
     }
-    getGuildAffinity(e) {
-        return a.guildAffinitiesByGuildId[e]
+    getGuildAffinity(t) {
+        return a.guildAffinitiesByGuildId[t]
     }
     get affinities() {
         return a.guildAffinities
@@ -38,18 +38,18 @@ let u = new d(l.h, {
     CONNECTION_OPEN: function() {
         return Date.now() - a.lastFetched > 864e5 && (0, r.I)(), !1
     },
-    LOAD_GUILD_AFFINITIES_SUCCESS: function(e) {
+    LOAD_GUILD_AFFINITIES_SUCCESS: function(t) {
         let {
-            guildAffinities: t
-        } = e;
-        a.guildAffinities = [], a.guildAffinitiesByGuildId = {}, a.lastFetched = Date.now(), t.forEach((e, t) => {
+            guildAffinities: e
+        } = t;
+        a.guildAffinities = [], a.guildAffinitiesByGuildId = {}, a.lastFetched = Date.now(), e.forEach((t, e) => {
             let {
                 affinity: i,
                 guild_id: n
-            } = e, l = {
+            } = t, l = {
                 score: i,
                 guildId: n,
-                index: t
+                index: e
             };
             a.guildAffinitiesByGuildId[n] = l, a.guildAffinities.push(l)
         })

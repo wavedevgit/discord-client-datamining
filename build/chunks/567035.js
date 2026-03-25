@@ -1,24 +1,23 @@
 /** chunk id: 567035 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => b
+    A: () => _
 }), n(321073);
 var i = n(735438),
-    r = n.n(i),
-    a = n(334738),
-    l = n(591552),
+    l = n.n(i),
+    r = n(334738),
+    s = n(591552),
     o = n(863005),
-    s = n(808728),
-    _ = n(222823),
+    a = n(808728),
+    d = n(222823),
     c = n(954571),
-    d = n(661191),
-    u = n(652215),
-    g = n(790782);
+    u = n(661191),
+    A = n(652215),
+    E = n(790782);
 
-function b(e, t, n) {
-    let i = r().flatMap(e, e => {
-        let t = s.Ay.getSelectableChannelIds(e),
-            n = [...t, ...s.Ay.getVocalChannelIds(e)],
+function _(e, t, n) {
+    let i = l().flatMap(e, e => {
+        let t = a.Ay.getSelectableChannelIds(e),
+            n = [...t, ...a.Ay.getVocalChannelIds(e)],
             i = o.A.getActiveJoinedThreadsForGuild(e);
         for (let e of t) {
             let t = i[e] ?? {};
@@ -27,21 +26,21 @@ function b(e, t, n) {
         return n
     }).map(e => ({
         channelId: e,
-        readStateType: g.P.CHANNEL,
-        messageId: _.Ay.lastMessageId(e)
+        readStateType: E.P.CHANNEL,
+        messageId: d.Ay.lastMessageId(e)
     }));
     return e.forEach(e => {
         i.push({
-            channelId: d.default.cast(e),
-            readStateType: g.P.GUILD_EVENT,
-            messageId: _.Ay.lastMessageId(e, g.P.GUILD_EVENT)
+            channelId: u.default.cast(e),
+            readStateType: E.P.GUILD_EVENT,
+            messageId: d.Ay.lastMessageId(e, E.P.GUILD_EVENT)
         }), i.push({
-            channelId: d.default.cast(e),
-            readStateType: g.P.GUILD_ONBOARDING_QUESTION,
-            messageId: l.A.ackIdForGuild(e)
+            channelId: u.default.cast(e),
+            readStateType: E.P.GUILD_ONBOARDING_QUESTION,
+            messageId: s.A.ackIdForGuild(e)
         })
-    }), c.default.track(u.HAw.MARK_AS_READ, {
+    }), c.default.track(A.HAw.MARK_AS_READ, {
         source: t,
         type: "guild"
-    }), (0, a.Uq)(i, n)
+    }), (0, r.Uq)(i, n)
 }

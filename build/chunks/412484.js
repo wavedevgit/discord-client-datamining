@@ -8,9 +8,9 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(481613),
-    o = n.n(r),
+    r = n.n(l),
+    a = n(481613),
+    o = n.n(a),
     c = n(837381),
     d = n(311907),
     u = n(397927),
@@ -30,7 +30,7 @@ var i = n(627968),
     S = n(852570);
 
 function T(e) {
-    var t, n, l, r, x, T;
+    var t, n, l, a, x, T;
     let {
         onJump: y,
         showTutorial: j,
@@ -53,24 +53,24 @@ function T(e) {
         if (null == i || null == e) return;
         let s = i.getScrollerNode()?.children;
         if (null == s) return;
-        let a = s[e];
-        if (null == a) return;
+        let r = s[e];
+        if (null == r) return;
         let {
-            scrollTop: r,
+            scrollTop: a,
             offsetHeight: o
         } = i.getScrollerState();
-        (a.offsetTop < r || a.offsetTop > r + o) && i.scrollTo({
-            to: a.offsetTop
+        (r.offsetTop < a || r.offsetTop > a + o) && i.scrollTo({
+            to: r.offsetTop
         })
-    }), r = M, x = D, s.useEffect(() => {
+    }), a = M, x = D, s.useEffect(() => {
         let e = () => {
-            let e = r.channels.find(e => !e.collapsed);
+            let e = a.channels.find(e => !e.collapsed);
             null != e && x.markChannelRead(e)
         };
         return g._.subscribe(N.jej.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
             g._.unsubscribe(N.jej.MARK_TOP_INBOX_CHANNEL_READ, e)
         }
-    }, [x, r.channels]), T = D, s.useEffect(() => {
+    }, [x, a.channels]), T = D, s.useEffect(() => {
         let e = e => {
             ((0, f.isMac)() || (0, f.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && T.undoMarkChannelRead()
         };
@@ -105,7 +105,7 @@ function T(e) {
                     },
                     ...n,
                     onScroll: G === I.mJ.Done ? void 0 : P,
-                    className: a()(S.XG, `group-spacing-${k}`),
+                    className: r()(S.XG, `group-spacing-${k}`),
                     children: [j ? (0, i.jsx)(v, {
                         setSeenTutorial: R
                     }) : null, (0, E.A)(U, D, y), G === I.mJ.Done ? null : (0, i.jsx)(u.y$y, {

@@ -26,8 +26,8 @@ var i = n(627968),
     S = n(902811),
     x = n(652215),
     v = n(985018),
-    y = n(281733);
-class b extends a.PureComponent {
+    b = n(281733);
+class y extends a.PureComponent {
     videoRef = null;
     _noProblemsTimeout = null;
     _problemsTimeout = null;
@@ -36,62 +36,62 @@ class b extends a.PureComponent {
         let e = [v.intl.string(v.t.Ex79K6), v.intl.string(v.t["+v5zsT"]), v.intl.string(v.t["RLx6+Y"]), v.intl.string(v.t.Q1PZkN), v.intl.string(v.t.x7sfVg), v.intl.format(v.t.PHuQsQ, {
             tabHook: (e, t) => (0, i.jsx)(u.e7I, {
                 shortcut: "tab",
-                className: y.P
+                className: b.P
             }, t)
         }), v.intl.string(v.t.UorX4T), v.intl.string(v.t["il/GZt"]), v.intl.string(v.t.HKBJvw), v.intl.format(v.t.FVVp79, {
             F6Hook: (e, t) => (0, i.jsx)(u.e7I, {
                 shortcut: "f6",
-                className: y.P
+                className: b.P
             }, t),
             tabHook: (e, t) => (0, i.jsx)(u.e7I, {
                 shortcut: "tab",
-                className: y.P
+                className: b.P
             }, t)
         }), v.intl.string(v.t["7Y1hFH"]), v.intl.string(v.t.UcCW71), v.intl.string(v.t.E5Ghfc), v.intl.string(v.t.bANqo8), v.intl.string(v.t.yOEVDr), v.intl.string(v.t["u0Ra/G"]), v.intl.string(v.t.un4cQ7), v.intl.string(v.t["2cyYx1"]), v.intl.string(v.t.KCmze1), v.intl.string(v.t.I98MEE), v.intl.format(v.t.c0YCIx, {}), v.intl.string(v.t.z8AvIN), v.intl.string(v.t.IjX3P1), v.intl.string(v.t.lg3Ckc), v.intl.string(v.t["4GaLhY"]), v.intl.string(v.t.qHKbUw), v.intl.string(v.t.mJxKDw), v.intl.string(v.t.iiQBXF), v.intl.string(v.t.YPD46Q), v.intl.string(v.t.O8Bpga), v.intl.string(v.t.xzFwfi), v.intl.string(v.t["4G3fsX"]), v.intl.string(v.t["/jPyKC"]), v.intl.string(v.t["8x7D5c"]), v.intl.string(v.t.G6Q8H3), v.intl.string(v.t["9Cx+xL"]), v.intl.string(v.t.WsZ8dW), v.intl.string(v.t.btoe7M), v.intl.string(v.t.E6Y0j7), v.intl.string(v.t["7KZ81/"]), v.intl.string(v.t.hm7OKu), v.intl.string(v.t["H535i+"]), v.intl.string(v.t["08WJUR"]), v.intl.string(v.t.hhtfyi), v.intl.string(v.t.on980U), v.intl.string(v.t.AL6c01), v.intl.string(v.t.iLTeF6), v.intl.string(v.t.b3vSu7), v.intl.string(v.t.f8ao58), v.intl.format(v.t["1v1h8o"], {
             asterisks: "**"
         }), v.intl.format(v.t.MUlAVW, {
             quickSwitcherHook: (e, t) => (0, i.jsx)(u.e7I, {
                 shortcut: "mod+k",
-                className: y.P
+                className: b.P
             }, t)
         }), v.intl.format(v.t.aes5VI, {
             markUnreadHook: (e, t) => (0, i.jsx)(u.e7I, {
                 shortcut: "alt+click",
-                className: y.P
+                className: b.P
             }, t)
         }), v.intl.format(v.t.md9Svv, {
             markServerUnreadHook: (e, t) => (0, i.jsx)(u.e7I, {
                 shortcut: "shift+esc",
-                className: y.P
+                className: b.P
             }, t)
         }), v.intl.format(v.t["X0Tu+u"], {
             navigateUnreadHook: (e, t) => (0, i.jsx)(u.e7I, {
                 shortcut: "shift+alt+up",
-                className: y.P
+                className: b.P
             }, t),
             downHook: (e, t) => (0, i.jsx)(u.e7I, {
                 shortcut: "down",
-                className: y.P
+                className: b.P
             }, t)
         }), v.intl.format(v.t.AkoeIY, {
             keyboardShortcutsHook: (e, t) => (0, i.jsx)(u.e7I, {
                 shortcut: "mod+/",
-                className: y.P
+                className: b.P
             }, t)
         }), v.intl.format(v.t.P9sfAH, {
             messageNewlineHook: (e, t) => (0, i.jsx)(u.e7I, {
                 shortcut: "shift+return",
-                className: y.P
+                className: b.P
             }, t)
         }), v.intl.format(v.t["3Ox33f"], {
             shiftHook: (e, t) => (0, i.jsx)(u.e7I, {
                 shortcut: "shift",
-                className: y.P
+                className: b.P
             }, t)
         }), v.intl.format(v.t.enCV6b, {
             upHook: (e, t) => (0, i.jsx)(u.e7I, {
                 shortcut: "up",
-                className: y.P
+                className: b.P
             }, t)
         })];
         return I.default.locale.startsWith("en-") && e.push(v.intl.string(v.t.dQ9Wqk)), e[o().random(e.length - 1)]
@@ -170,56 +170,56 @@ class b extends a.PureComponent {
             let a = this._loadingText,
                 l = null;
             return null != this._eventLoadingText && (a = this._eventLoadingText), null != t && (a = t.name, l = t.incident_updates[0].body), (0, i.jsxs)("div", {
-                className: y.kL,
+                className: b.kL,
                 "data-fade": n,
                 style: {
                     "--connecting-container-fade-duration": "200ms",
                     "--connecting-content-fade-duration": "150ms"
                 },
                 children: [(0, i.jsxs)("div", {
-                    className: y.Qs,
+                    className: b.Qs,
                     children: [(0, i.jsx)(S.A, {
                         autoPlay: !0,
                         loop: !e,
                         setRef: this.setVideoRef,
                         onReady: this.handleReady,
-                        className: r()(y.bE, this.state.ready ? y.Gc : "")
+                        className: r()(b.bE, this.state.ready ? b.Gc : "")
                     }), (0, i.jsxs)("div", {
-                        className: y.Qq,
+                        className: b.Qq,
                         children: [null != t ? null : (0, i.jsx)("div", {
-                            className: y.mu,
+                            className: b.mu,
                             children: v.intl.string(v.t.v0R1Lh)
                         }), (0, i.jsx)("div", {
-                            className: null != t ? y.DD : y.uN,
+                            className: null != t ? b.DD : b.uN,
                             children: a
                         }), (0, i.jsx)("div", {
-                            className: y.rf,
+                            className: b.rf,
                             children: l
                         })]
                     })]
                 }), (0, i.jsxs)("div", {
-                    className: r()(y.Bk, {
-                        [y.ly]: this.state.problems
+                    className: r()(b.Bk, {
+                        [b.ly]: this.state.problems
                     }),
                     children: [(0, i.jsx)("div", {
-                        className: y.u1,
+                        className: b.u1,
                         children: v.intl.string(v.t.AG2zPM)
                     }), (0, i.jsxs)("div", {
                         children: [(0, i.jsxs)(u.MzZ, {
-                            className: y.AR,
+                            className: b.AR,
                             href: x.qF7.TWITTER_SUPPORT,
                             target: "_blank",
                             children: [(0, i.jsx)(u.p3p, {
                                 size: "xs",
                                 color: "currentColor",
-                                className: y.Kk
+                                className: b.Kk
                             }), v.intl.string(v.t.KlyTbj)]
                         }), (0, i.jsxs)(u.MzZ, {
-                            className: y.gy,
+                            className: b.gy,
                             href: x.qF7.STATUS,
                             target: "_blank",
                             children: [(0, i.jsx)(C.A, {
-                                className: y.Kk
+                                className: b.Kk
                             }), v.intl.string(v.t.AgXXyy)]
                         })]
                     })]
@@ -242,7 +242,7 @@ let O = d.Ay.connectStores([_.A, f.A, p.A, h.A], () => ({
         soundpack: l,
         reducedMotion: r
     } = e;
-    return t ? (0, i.jsx)(b, {
+    return t ? (0, i.jsx)(y, {
         reducedMotion: r,
         soundpack: l,
         connected: n,

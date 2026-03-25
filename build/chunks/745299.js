@@ -1,6 +1,6 @@
 /** chunk id: 745299 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => h
 });
 var i = n(627968);
 n(64700);
@@ -14,17 +14,17 @@ var l = n(110259),
     d = n(975571),
     _ = n(927578),
     E = n(234419),
-    T = n(635995),
-    A = n(915516),
+    A = n(635995),
+    T = n(915516),
     I = n(788868),
-    p = n(652215),
-    N = n(985018);
-let m = function(e) {
+    N = n(652215),
+    p = n(985018);
+let h = function(e) {
     let {
         dismissCurrentNotice: t,
         subscriptionTier: n
     } = e, {
-        analyticsLocations: m
+        analyticsLocations: h
     } = (0, a.Ay)(function(e) {
         switch (e) {
             case I.pe.TIER_0:
@@ -34,53 +34,53 @@ let m = function(e) {
             default:
                 throw Error(`Unsupported subscription tier: ${e}`)
         }
-    }(n)), R = (0, E.V)(), h = (0, r.A)(null != R && null != R.expires_at ? Date.parse(R.expires_at) : 0), S = null == R || R.subscription_trial?.sku_id !== n || null == R.expires_at || Object.values(h).every(e => 0 === e);
+    }(n)), m = (0, E.V)(), S = (0, r.A)(null != m && null != m.expires_at ? Date.parse(m.expires_at) : 0), C = null == m || m.subscription_trial?.sku_id !== n || null == m.expires_at || Object.values(S).every(e => 0 === e);
     if ((0, o.A)({
             type: l.ImpressionTypes.VIEW,
             name: l.ImpressionNames.TRIAL_NOTICE,
             properties: {
-                trial_id: R?.trial_id
+                trial_id: m?.trial_id
             }
         }, {
-            disableTrack: S
-        }), S) return null;
-    let g = n === I.pe.TIER_2 ? p.kqX.PREMIUM_TIER_2_TRIAL_ENDING : p.kqX.PREMIUM_TIER_0_TRIAL_ENDING,
-        C = (0, _.re)({
-            intervalType: R.subscription_trial?.interval,
-            intervalCount: R.subscription_trial?.interval_count
+            disableTrack: C
+        }), C) return null;
+    let R = n === I.pe.TIER_2 ? N.kqX.PREMIUM_TIER_2_TRIAL_ENDING : N.kqX.PREMIUM_TIER_0_TRIAL_ENDING,
+        g = (0, _.re)({
+            intervalType: m.subscription_trial?.interval,
+            intervalCount: m.subscription_trial?.interval_count
         }),
-        O = d.A.getArticleURL(R.trial_id === I.yo ? p.MVz.NITRO_TRIAL_FOR_ALL : p.MVz.PREMIUM_TRIAL);
-    return (0, i.jsxs)(T.T0, {
+        O = d.A.getArticleURL(m.trial_id === I.yo ? N.MVz.NITRO_TRIAL_FOR_ALL : N.MVz.PREMIUM_TRIAL);
+    return (0, i.jsxs)(A.T0, {
         onClick: () => {
-            t(), u.default.track(p.HAw.APP_NOTICE_CLOSED, {
-                notice_type: g,
-                trial_id: R.trial_id
+            t(), u.default.track(N.HAw.APP_NOTICE_CLOSED, {
+                notice_type: R,
+                trial_id: m.trial_id
             })
         },
-        children: [(0, i.jsx)(T.In, {
-            children: (0, A.GZ)(n, h, C, O)
-        }), (0, i.jsx)(T.fY, {
+        children: [(0, i.jsx)(A.In, {
+            children: (0, T.GZ)(n, S, g, O)
+        }), (0, i.jsx)(A.fY, {
             onClick: () => {
                 (0, c.A)({
-                    trialId: R.trial_id,
+                    trialId: m.trial_id,
                     subscriptionTier: n,
-                    analyticsLocations: m,
+                    analyticsLocations: h,
                     analyticsObject: {
-                        page: p.liQ.IN_APP,
-                        section: p.JJy.NOTIFICATION_BAR,
-                        object: p.ZSU.BUTTON_CTA
+                        page: N.liQ.IN_APP,
+                        section: N.JJy.NOTIFICATION_BAR,
+                        object: N.ZSU.BUTTON_CTA
                     }
-                }), u.default.track(p.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
-                    notice_type: g,
-                    trial_id: R.trial_id
+                }), u.default.track(N.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
+                    notice_type: R,
+                    trial_id: m.trial_id
                 })
             },
             text: function(e) {
                 switch (e) {
                     case I.pe.TIER_0:
-                        return N.intl.string(N.t.mCG023);
+                        return p.intl.string(p.t.mCG023);
                     case I.pe.TIER_2:
-                        return N.intl.string(N.t.J61px0);
+                        return p.intl.string(p.t.J61px0);
                     default:
                         throw Error(`Unsupported subscription tier: ${e}`)
                 }

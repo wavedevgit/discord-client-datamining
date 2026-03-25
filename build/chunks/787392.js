@@ -1,61 +1,61 @@
 /** chunk id: 787392 params = (module,exports,require) **/
-r.d(t, {
-    A: () => c
-}), r(393431), r(532706), r(42231), r(232424), r(949626), r(767709), r(65162);
-var n = r(311907),
-    l = r(149597),
-    u = r(73153),
-    s = r(661191);
-let i = {};
-class a extends n.Ay.PersistedStore {
+i.d(e, {
+    A: () => d
+}), i(393431), i(532706), i(42231), i(232424), i(949626), i(767709), i(65162);
+var n = i(311907),
+    l = i(149597),
+    r = i(73153),
+    s = i(661191);
+let a = {};
+class o extends n.Ay.PersistedStore {
     static displayName = "VerifiedKeyStore";
     static persistKey = "VerifiedKeyStore";
-    initialize(e) {
-        i = e?.users ?? {}
+    initialize(t) {
+        a = t?.users ?? {}
     }
     getState() {
         return {
-            users: i
+            users: a
         }
     }
-    getKeyTrustedAt(e, t) {
-        let r = (0, l.uo)(t);
-        return i[e]?.[r]
+    getKeyTrustedAt(t, e) {
+        let i = (0, l.uo)(e);
+        return a[t]?.[i]
     }
-    isKeyVerified(e, t) {
-        return null != this.getKeyTrustedAt(e, t)
+    isKeyVerified(t, e) {
+        return null != this.getKeyTrustedAt(t, e)
     }
     getUserIds() {
-        return s.default.keys(i)
+        return s.default.keys(a)
     }
-    getUserVerifiedKeys(e) {
-        return i[e]
+    getUserVerifiedKeys(t) {
+        return a[t]
     }
 }
-let c = new a(u.h, {
-    SECURE_FRAMES_VERIFIED_KEY_CREATE: function(e) {
-        let t, {
-                userId: r,
+let d = new o(r.h, {
+    SECURE_FRAMES_VERIFIED_KEY_CREATE: function(t) {
+        let e, {
+                userId: i,
                 key: n
-            } = e,
-            u = (t = i[r] ?? {}, i[r] = t, t),
+            } = t,
+            r = (e = a[i] ?? {}, a[i] = e, e),
             s = new Uint8Array(n);
-        u[(0, l.uo)(s)] = Date.now()
+        r[(0, l.uo)(s)] = Date.now()
     },
-    SECURE_FRAMES_VERIFIED_KEY_DELETE: function(e) {
+    SECURE_FRAMES_VERIFIED_KEY_DELETE: function(t) {
         let {
-            userId: t,
-            serializedKey: r
-        } = e, n = i[t];
+            userId: e,
+            serializedKey: i
+        } = t, n = a[e];
         if (null == n) return !1;
-        let l = delete n[r],
-            u = !1;
-        return 0 === Object.keys(n).length && (delete i[t], u = !0), l || u
+        let l = delete n[i],
+            r = !1;
+        return 0 === Object.keys(n).length && (delete a[e], r = !0), l || r
     },
-    SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: function(e) {
+    SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: function(t) {
         let {
-            userId: t
-        } = e;
-        return null != i[t] && delete i[t]
+            userId: e
+        } = t;
+        return null != a[e] && delete a[e]
     }
 })

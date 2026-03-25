@@ -1,5 +1,5 @@
 /** chunk id: 29160 params = (module,exports,require) **/
-i.d(t, {
+i.d(e, {
     A: () => d
 });
 var n = i(627968),
@@ -14,8 +14,8 @@ class o extends l.PureComponent {
     };
     render() {
         let {
-            tag: e,
-            children: t,
+            tag: t,
+            children: e,
             hoverText: i,
             className: l,
             forceHover: r,
@@ -27,12 +27,12 @@ class o extends l.PureComponent {
                 [a.r9]: null == i,
                 [a.EE]: r
             }),
-            children: [(0, n.jsx)(e, {
+            children: [(0, n.jsx)(t, {
                 className: a.yo,
                 children: i
-            }), (0, n.jsx)(e, {
+            }), (0, n.jsx)(t, {
                 className: a.Ay,
-                children: t
+                children: e
             })]
         })
     }

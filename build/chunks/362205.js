@@ -1,66 +1,66 @@
 /** chunk id: 362205 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => S
+    A: () => A
 });
 var r = n(627968),
-    i = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    a = n(64700),
+    i = n(503698),
+    l = n.n(i),
     s = n(284009),
     o = n.n(s),
     c = n(497766),
     u = n(942381),
     d = n(837381),
-    h = n(319354),
-    _ = n(397927),
+    _ = n(319354),
+    h = n(397927),
     f = n(775602),
-    m = n(253932),
-    p = n(894858),
-    y = n(272053),
-    b = n(189857),
-    v = n(674085),
-    g = n(188180),
+    p = n(253932),
+    m = n(894858),
+    b = n(272053),
+    g = n(189857),
+    y = n(674085),
+    v = n(188180),
     x = n(890690),
     E = n(637577);
 
-function A(e) {
+function S(e) {
     let {
         category: t,
         onClick: n,
-        active: i,
-        dismissibleBadge: a
+        active: a,
+        dismissibleBadge: i
     } = e, {
         useTitle: s,
         useSubnavLabel: c,
         key: u
-    } = t, h = s?.(), f = c?.() ?? h;
+    } = t, _ = s?.(), f = c?.() ?? _;
     return o()(null != f, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(d.tG, {
         id: u,
-        children: e => (0, r.jsxs)(_.DUT, {
+        children: e => (0, r.jsxs)(h.DUT, {
             onClick: n,
             className: l()(E.AS, {
-                [E.vu]: i
+                [E.vu]: a
             }),
             ...e,
-            children: [f, null != a && !i && (0, r.jsx)(v.A, {
-                badge: a
+            children: [f, null != i && !a && (0, r.jsx)(y.A, {
+                badge: i
             })]
         }, u)
     })
 }
 
-function S(e) {
+function A(e) {
     let {
         categories: t,
         visibleContent: n,
-        dismissibleBadges: a
-    } = e, [l, s] = i.useState(() => {
-        let e = p.A.getField("currentCategoryKey"),
+        dismissibleBadges: i
+    } = e, [l, s] = a.useState(() => {
+        let e = m.A.getField("currentCategoryKey"),
             n = t.find(t => t.key === e);
         return n?.key ?? t[0].key
     });
-    i.useEffect(() => p.A.subscribe(e => {
+    a.useEffect(() => m.A.subscribe(e => {
         let {
             currentCategoryKey: t
         } = e;
@@ -71,20 +71,20 @@ function S(e) {
     }, {
         equalityFn: u.x
     }), [t]);
-    let o = i.useMemo(() => Math.max(t.findIndex(e => e.key === l), 0), [t, l]),
+    let o = a.useMemo(() => Math.max(t.findIndex(e => e.key === l), 0), [t, l]),
         {
             thumbRef: d,
-            trackRef: v,
-            thumbAnchorRef: S,
+            trackRef: y,
+            thumbAnchorRef: A,
             springs: N
         } = function(e) {
-            let t = m.Xi.useSetting(),
-                n = i.useRef(null),
-                r = i.useRef(null),
-                a = i.useRef(null),
-                l = i.useRef(!0),
-                s = i.useRef(t),
-                [o, c] = (0, _.zhh)(() => ({
+            let t = p.Xi.useSetting(),
+                n = a.useRef(null),
+                r = a.useRef(null),
+                i = a.useRef(null),
+                l = a.useRef(!0),
+                s = a.useRef(t),
+                [o, c] = (0, h.zhh)(() => ({
                     y: 0,
                     height: 0,
                     config: {
@@ -93,26 +93,26 @@ function S(e) {
                         tension: 300
                     }
                 }));
-            return i.useLayoutEffect(() => {
+            return a.useLayoutEffect(() => {
                 let e = s.current !== t,
-                    i = () => {
-                        if (null == n.current || null == r.current || null == a.current) return;
-                        let [i, u] = [n.current.getBoundingClientRect(), a.current.getBoundingClientRect()], d = i.width / 2, h = (u.y - i.y) / d, _ = u.height / d;
-                        l.current || e || f.A.useReducedMotion ? (o.y.set(h), o.height.set(_)) : c({
-                            y: h,
-                            height: _
+                    a = () => {
+                        if (null == n.current || null == r.current || null == i.current) return;
+                        let [a, u] = [n.current.getBoundingClientRect(), i.current.getBoundingClientRect()], d = a.width / 2, _ = (u.y - a.y) / d, h = u.height / d;
+                        l.current || e || f.A.useReducedMotion ? (o.y.set(_), o.height.set(h)) : c({
+                            y: _,
+                            height: h
                         }), l.current = !1, s.current = t
                     },
                     u = null;
                 return e ? u = requestAnimationFrame(() => {
-                    u = null, i()
-                }) : i(), () => {
+                    u = null, a()
+                }) : a(), () => {
                     null != u && cancelAnimationFrame(u)
                 }
             }, [e, c, o.y, o.height, t]), {
                 thumbRef: r,
                 trackRef: n,
-                thumbAnchorRef: a,
+                thumbAnchorRef: i,
                 springs: o
             }
         }(o);
@@ -123,12 +123,12 @@ function S(e) {
             "--custom-nav-count": t.length,
             "--custom-nav-index": o,
             "--custom-nav-width": "2px",
-            "--custom-icon-size": `${h.E[g.V]}px`
+            "--custom-icon-size": `${_.E[v.V]}px`
         },
         children: [(0, r.jsx)("div", {
             className: E.u4,
             "aria-hidden": "true",
-            ref: v,
+            ref: y,
             children: (0, r.jsx)(c.animated.div, {
                 className: E.FF,
                 style: N,
@@ -137,13 +137,13 @@ function S(e) {
         }), (0, r.jsx)("div", {
             className: E.gu,
             "aria-hidden": "true",
-            ref: S
+            ref: A
         }), t.map(e => {
-            let t = (0, b.H)(e.key, n, a);
-            return (0, r.jsx)(A, {
+            let t = (0, g.H)(e.key, n, i);
+            return (0, r.jsx)(S, {
                 onClick: () => {
                     var t;
-                    return t = e.key, void y.A.navigate(t, {
+                    return t = e.key, void b.A.navigate(t, {
                         showNavigationMobile: !1
                     })
                 },

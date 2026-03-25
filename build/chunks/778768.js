@@ -6,9 +6,9 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(284009),
-    o = n.n(r),
+    r = n.n(l),
+    a = n(284009),
+    o = n.n(a),
     c = n(110259),
     d = n(311907),
     u = n(435371),
@@ -47,7 +47,7 @@ function H(e) {
     let {
         channel: t,
         onHoverOrFocus: l,
-        setPopoutRef: r,
+        setPopoutRef: a,
         closePopout: d
     } = e, u = s.useRef(null), A = (0, N.A)(u), m = (0, G.kt)({
         channel: t
@@ -68,8 +68,8 @@ function H(e) {
             location_stack: p
         }
     }), s.useEffect(() => {
-        r?.(u.current)
-    }, [r]), s.useEffect(() => {
+        a?.(u.current)
+    }, [a]), s.useEffect(() => {
         l?.(A.isHoveringOrFocusing)
     }, [l, A]);
     let g = s.useCallback(() => {
@@ -89,7 +89,7 @@ function H(e) {
     return (0, i.jsx)("div", {
         ref: u,
         "aria-label": P.intl.string(P.t.o53CL2),
-        className: a()(w.popover, k.oO),
+        className: r()(w.popover, k.oO),
         children: (0, i.jsxs)("div", {
             className: k.vW,
             children: [_ && (0, i.jsx)(h.Text, {
@@ -106,7 +106,7 @@ function H(e) {
                 }, e.id)), (0, i.jsxs)(h.DUT, {
                     tag: "li",
                     onClick: g,
-                    className: a()(k.nM, k.vk),
+                    className: r()(k.nM, k.vk),
                     children: [(0, i.jsx)("div", {
                         className: k.R4,
                         children: (0, i.jsx)(h.nFg, {
@@ -130,7 +130,7 @@ function F(e) {
         channel: t,
         user: n,
         ringingEnabled: l
-    } = e, r = t.guild_id, o = s.useRef(null), c = (0, d.bG)([y.Ay], () => y.Ay.getMember(r, n.id), [r, n.id]), {
+    } = e, a = t.guild_id, o = s.useRef(null), c = (0, d.bG)([y.Ay], () => y.Ay.getMember(a, n.id), [a, n.id]), {
         isHoveringOrFocusing: x
     } = (0, N.A)(o), [C, E] = s.useState(null), {
         icon: T,
@@ -146,7 +146,7 @@ function F(e) {
     }), {
         showActivityStatus: K
     } = D.o.useExperiment({
-        guildId: r,
+        guildId: a,
         location: "VoiceInviteSuggestionsPopover.InviteRow"
     }, {
         autoTrackExposure: !1
@@ -155,10 +155,10 @@ function F(e) {
         isMobileOnline: Y,
         activities: z
     } = (0, d.cf)([L.A], () => ({
-        status: L.A.getStatus(n.id, r),
+        status: L.A.getStatus(n.id, a),
         isMobileOnline: L.A.isMobileOnline(n.id),
-        activities: L.A.getActivities(n.id, r)
-    }), [n.id, r]), {
+        activities: L.A.getActivities(n.id, a)
+    }), [n.id, a]), {
         activityStatusText: q,
         activityStatusIcon: X
     } = s.useMemo(() => {
@@ -213,30 +213,30 @@ function F(e) {
         userId: n.id,
         size: h._3J.SIZE_24,
         animateOnHover: !x,
-        guildId: r
+        guildId: a
     });
     if (null == c) return null;
     let el = M.Ay.getName(n),
-        ea = P.intl.string(P.t.jYnGPG),
-        er = W !== h.clD.OFFLINE ? W : void 0,
+        er = P.intl.string(P.t.jYnGPG),
+        ea = W !== h.clD.OFFLINE ? W : void 0,
         eo = K && null != q.text,
         ec = K && null != J && null != Q;
     return (0, i.jsxs)(h.DUT, {
         innerRef: o,
         tag: "li",
-        className: a()(k.nM, {
+        className: r()(k.nM, {
             [k.vk]: !Z
         }),
         "aria-disabled": Z,
         onClick: et,
-        "aria-label": ea,
+        "aria-label": er,
         children: [(0, i.jsx)(h.euF, {
             className: k.my,
             "aria-label": el,
             size: h._3J.SIZE_24,
             src: ei,
             avatarDecoration: en,
-            status: K ? er : void 0,
+            status: K ? ea : void 0,
             isMobile: K ? Y : void 0,
             ...es
         }), (0, i.jsxs)("div", {
@@ -285,7 +285,7 @@ function F(e) {
         }), l && !H && (0, i.jsx)(u.m_, {
             text: G,
             children: (0, i.jsx)(h.DUT, {
-                className: a()(k.D9, V.button, V.secondary, {
+                className: r()(k.D9, V.button, V.secondary, {
                     [k.r9]: w
                 }),
                 onClick: ee,

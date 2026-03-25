@@ -34,12 +34,12 @@ function m(e) {
         [S, x] = i.useState([]),
         {
             loadId: v,
-            lastScrollEventTimestamp: y
+            lastScrollEventTimestamp: b
         } = (0, a.cf)([d.A], () => ({
             loadId: d.A.getLoadId(),
             lastScrollEventTimestamp: d.A.lastScrollEvent()
         })),
-        b = S.filter(e => {
+        y = S.filter(e => {
             let {
                 item: t
             } = e;
@@ -50,12 +50,12 @@ function m(e) {
             } = e;
             return t.id
         }).pop(),
-        O = (0, l.A)(b);
+        O = (0, l.A)(y);
     i.useEffect(() => {
-        if (T || C || null == O || null == b || b === O) return;
+        if (T || C || null == O || null == y || y === O) return;
         let e = Date.now();
-        e - y > _.N && (r.A.gravityScrollEvent(e), s.k.trackFeedFirstScrollStarted())
-    }, [T, y, O, b, v, C]);
+        e - b > _.N && (r.A.gravityScrollEvent(e), s.k.trackFeedFirstScrollStarted())
+    }, [T, b, O, y, v, C]);
     let L = i.useCallback(e => {
             let {
                 viewableItems: t

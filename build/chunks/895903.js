@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(827734),
     c = n(397927),
     d = n(104171),
@@ -30,7 +30,7 @@ function N(e) {
         className: n
     } = e, s = c.cNw;
     return (0, i.jsx)(u.A, {
-        iconContainerClassName: a()({
+        iconContainerClassName: r()({
             [I.q8]: !1
         }),
         icon: (0, i.jsx)(s, {
@@ -89,7 +89,7 @@ function S(e) {
     let {
         channel: t,
         onContinueClick: n
-    } = e, l = (0, r.bG)([g.A], () => g.A.can(f.QY, t), [t]), o = t.guild_id, {
+    } = e, l = (0, a.bG)([g.A], () => g.A.can(f.QY, t), [t]), o = t.guild_id, {
         canCreateGuildEvent: d
     } = (0, _.nr)(t), u = (0, C.A)(t.id), x = s.useRef(null);
     return (0, i.jsxs)("div", {
@@ -121,7 +121,7 @@ function S(e) {
                 className: I.fN,
                 guildId: o
             }) : null, l ? (0, i.jsx)(N, {
-                className: a()({
+                className: r()({
                     [I.fN]: !0
                 }),
                 onClick: n

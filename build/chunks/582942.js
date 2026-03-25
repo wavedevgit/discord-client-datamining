@@ -17,12 +17,12 @@ var l = n(503698),
     f = n(409626),
     h = n(422069),
     g = n(611656),
-    _ = n(459746),
-    p = n(225732),
-    A = n(985018),
-    v = n(851822),
-    j = n(799864);
-let E = e => {
+    p = n(459746),
+    _ = n(225732),
+    v = n(985018),
+    j = n(851822),
+    A = n(799864);
+let C = e => {
     let {
         game: t,
         onClose: n,
@@ -32,19 +32,19 @@ let E = e => {
         asContainer: !0,
         text: t.name,
         children: (0, a.jsx)(d.DUT, {
-            className: j.fS,
+            className: A.fS,
             onClick: async () => {
-                l(f.Ws.ClickSimilarGame, t.applicationId), (0, d.mMO)(() => Promise.resolve(e => (0, a.jsx)(p.default, {
+                l(f.Ws.ClickSimilarGame, t.applicationId), (0, d.mMO)(() => Promise.resolve(e => (0, a.jsx)(_.default, {
                     applicationId: t.applicationId,
                     source: f.Ob.SimilarGames,
                     ...e
                 }))), await new Promise(e => setTimeout(e, 10)), n()
             },
-            children: (0, a.jsx)(_.A, {
+            children: (0, a.jsx)(p.A, {
                 game: t,
                 application: i,
-                className: j.n1,
-                size: _.w.SMALL
+                className: A.n1,
+                size: p.w.SMALL
             })
         })
     })
@@ -64,22 +64,22 @@ function I(e) {
     }), f = (0, c.yK)([m.A], () => r.map(e => m.A.getGame(e)).filter(e => null != e).filter(e => (0, g.oS)(e.applicationId)).slice(0, 5));
     return ((0, x.k)(t), (0, x.W)(r), u && null == o) ? (0, a.jsxs)("div", {
         children: [(0, a.jsx)("div", {
-            className: i()(j.vM, v.bV)
+            className: i()(A.vM, j.bV)
         }), (0, a.jsx)("div", {
-            className: i()(v.nM, v.iH),
+            className: i()(j.nM, j.iH),
             children: s().range(0, 5).map(e => (0, a.jsx)("div", {
-                className: j.nn
+                className: A.nn
             }, e))
         })]
     }) : (u || 0 !== f.length) && null == o ? (0, a.jsxs)("div", {
         children: [(0, a.jsx)(d.Heading, {
-            className: v.bV,
+            className: j.bV,
             variant: "text-md/semibold",
             color: "text-strong",
-            children: A.intl.string(A.t["6rLyQB"])
+            children: v.intl.string(v.t["6rLyQB"])
         }), (0, a.jsx)("div", {
-            className: j.D$,
-            children: f.map(e => null != e.supplementalData ? (0, a.jsx)(E, {
+            className: A.D$,
+            children: f.map(e => null != e.supplementalData ? (0, a.jsx)(C, {
                 game: e.supplementalData,
                 onClose: n,
                 trackClick: l

@@ -1,6 +1,6 @@
 /** chunk id: 313843 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _,
+    A: () => p,
     Q: () => h
 });
 var a = n(627968),
@@ -96,7 +96,7 @@ let g = e => {
             })]
         })
     },
-    _ = function(e) {
+    p = function(e) {
         let {
             game: t,
             application: n,

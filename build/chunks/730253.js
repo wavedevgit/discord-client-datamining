@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(837381),
-    a = n(311907),
-    r = n(342494),
+    r = n(311907),
+    a = n(342494),
     o = n(397927),
     c = n(308528),
     d = n(933958),
@@ -62,32 +62,32 @@ function F(e) {
         } = (0, j.CJ)(),
         el = s.useRef(null),
         {
-            analyticsLocations: ea
+            analyticsLocations: er
         } = (0, A.Ay)(h.A.FAVORITES_GUILD_BUTTON),
-        [er, eo] = s.useState(!1),
+        [ea, eo] = s.useState(!1),
         ec = (0, L.$)("favorite-server-context"),
         {
             favoriteGuildEnabled: ed,
             favoriteGuildMuted: eu,
             favoriteChannels: eh
-        } = (0, a.cf)([T.A], () => ({
+        } = (0, r.cf)([T.A], () => ({
             favoriteGuildEnabled: T.A.favoriteGuildEnabled,
             favoriteChannels: T.A.getFavoriteChannels(),
             favoriteGuildMuted: T.A.favoriteGuildMuted
         })),
-        eA = (0, a.bG)([N.A], () => N.A.getChannelId(D.YYv)),
-        em = (0, a.bG)([I.A], () => I.A.getChannel(eA)),
+        eA = (0, r.bG)([N.A], () => N.A.getChannelId(D.YYv)),
+        em = (0, r.bG)([I.A], () => I.A.getChannel(eA)),
         e_ = (0, x.A)(e => e.guildId),
         ep = (0, R.ai)(e_),
         {
             badge: eg,
             unread: ef
         } = (0, O.A)(eh),
-        ex = (F = null != (t = (0, a.bG)([N.A], () => N.A.getVoiceChannelId())) && null != eh[t], K = (0, a.bG)([E.A], () => {
+        ex = (F = null != (t = (0, r.bG)([N.A], () => N.A.getVoiceChannelId())) && null != eh[t], K = (0, r.bG)([E.A], () => {
             if (!F) return !1;
             let e = E.A.getCurrentUserActiveStream();
             return null != e && null != eh[e.channelId]
-        }), W = (0, a.bG)([E.A], () => E.A.getAllApplicationStreams().some(e => null != eh[e.channelId])), Y = (0, a.bG)([b.A], () => F && null != t && b.A.hasVideo(t), [F, t]), z = (0, a.yK)([d.Ay], () => S.default.keys(eh).reduce((e, t) => (e.push(...d.Ay.getEmbeddedActivitiesForChannel(t)), e), [])), q = (0, a.bG)([d.Ay], () => Array.from(d.Ay.getSelfEmbeddedActivities().values()).some(e => {
+        }), W = (0, r.bG)([E.A], () => E.A.getAllApplicationStreams().some(e => null != eh[e.channelId])), Y = (0, r.bG)([b.A], () => F && null != t && b.A.hasVideo(t), [F, t]), z = (0, r.yK)([d.Ay], () => S.default.keys(eh).reduce((e, t) => (e.push(...d.Ay.getEmbeddedActivitiesForChannel(t)), e), [])), q = (0, r.bG)([d.Ay], () => Array.from(d.Ay.getSelfEmbeddedActivities().values()).some(e => {
             let {
                 location: t
             } = e, n = (0, u.H)(t);
@@ -120,9 +120,9 @@ function F(e) {
                 })
             })) : e && (0, f.A)({
                 subscriptionTier: P.pe.TIER_2,
-                analyticsLocations: ea
+                analyticsLocations: er
             }), eN(U.i.TAKE_ACTION)
-        }, [eN, ed, eI, ea]);
+        }, [eN, ed, eI, er]);
     return s.useEffect(() => {
         ee && (eE.current = !1)
     }, [ee]), s.useEffect(() => () => {
@@ -139,7 +139,7 @@ function F(e) {
     }, [ei, es]), (0, i.jsxs)(_.c, {
         children: [(0, i.jsx)(m.A, {
             selected: ep,
-            hovered: er,
+            hovered: ea,
             unread: ef && !eu,
             className: V.I
         }), (0, i.jsx)(M.A, {
@@ -160,7 +160,7 @@ function F(e) {
                             pathname: D.BVt.CHANNEL(D.YYv, eA),
                             state: H
                         },
-                        selected: ep || er,
+                        selected: ep || ea,
                         onClick: () => {
                             ee && eb(!1)
                         },
@@ -180,7 +180,7 @@ function F(e) {
                     })
                 })
             })
-        }), ee && (0, i.jsx)(r.AM, {
+        }), ee && (0, i.jsx)(a.AM, {
             targetElementRef: el,
             gradientColor: "nitro-pink",
             position: "right",

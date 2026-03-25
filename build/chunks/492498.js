@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(397927),
     c = n(378939),
     d = n(964486),
@@ -39,11 +39,11 @@ function j(e, t, n) {
     let i = t ? E.Ay.guildFilter : null,
         s = t ? E.Ay.roleFilter : null,
         l = t ? E.Ay.everyoneFilter : null,
-        a = null;
-    null != e && null != i && (a = i === S.KE7.ALL_SERVERS ? null : e.getGuildId()), c.A.fetchRecentMentions({
+        r = null;
+    null != e && null != i && (r = i === S.KE7.ALL_SERVERS ? null : e.getGuildId()), c.A.fetchRecentMentions({
         before: n,
         limit: S.Ue3,
-        guildId: a,
+        guildId: r,
         roles: s,
         everyone: l
     })
@@ -52,23 +52,21 @@ function j(e, t, n) {
 function R(e) {
     let {
         onJump: t
-    } = e, n = (0, r.bG)([f.A, C.A], () => f.A.getChannel(C.A.getChannelId())), {
+    } = e, n = (0, a.bG)([f.A, C.A], () => f.A.getChannel(C.A.getChannelId())), {
         messages: l,
         hasMore: o,
         loading: h,
         guildFilter: m,
         roleFilter: g,
         everyoneFilter: x
-    } = (0, r.cf)([E.Ay], () => ({
+    } = (0, a.cf)([E.Ay], () => ({
         messages: E.Ay.getMentions(),
         hasMore: E.Ay.hasMore,
         loading: E.Ay.loading,
         guildFilter: E.Ay.guildFilter,
         roleFilter: E.Ay.roleFilter,
         everyoneFilter: E.Ay.everyoneFilter
-    })), I = (0, p.Sc)({
-        location: "RecentMentions"
-    }), N = (0, u.A)(m), b = (0, u.A)(g), y = (0, u.A)(x);
+    })), I = (0, p.Sc)(), N = (0, u.A)(m), b = (0, u.A)(g), y = (0, u.A)(x);
     s.useEffect(() => {
         E.Ay.hasLoadedEver ? (null != N && m !== N || null != b && g !== b || null != y && x !== y) && j(n, !0) : j(n, !0)
     }, [N, m, b, g, y, x, n, !0]), (0, d.Ay)(() => {
@@ -78,7 +76,7 @@ function R(e) {
     }, []);
     let R = s.useCallback(() => null, []);
     return (0, i.jsx)(_.Ay, {
-        className: a()(v.sH, {
+        className: r()(v.sH, {
             [v.qC]: I
         }),
         scrollerClassName: v.XG,
@@ -121,8 +119,8 @@ function L(e) {
     if (null == t) return null;
     let l = f.A.getChannel(t.channel_id);
     if (null == l || (0, h.Jm)(l) || (0, h.$v)(l)) return null;
-    let a = x.A.didAgree(l.getGuildId()),
-        r = !!(0, h.Gc)(l) && !a;
+    let r = x.A.didAgree(l.getGuildId()),
+        a = !!(0, h.Gc)(l) && !r;
     return (0, i.jsxs)("div", {
         className: v.kL,
         children: [(0, i.jsx)(N.A, {
@@ -141,7 +139,7 @@ function L(e) {
                 message: t,
                 channel: l,
                 className: v.iU,
-                hideAccessories: r,
+                hideAccessories: a,
                 compact: g.hH.getSetting(),
                 animateAvatar: !1,
                 focusProps: y,

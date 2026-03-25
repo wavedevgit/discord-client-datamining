@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(554146),
+    r = n.n(l),
+    a = n(554146),
     o = n(342494),
     c = n(990078),
     d = n(397927),
@@ -46,7 +46,7 @@ function b(e) {
             }) : I.intl.string(I.t.tc619d)
         }
         return null
-    }, [t.type, b]), [y, j] = s.useState(null), L = s.useMemo(() => A ? [] : [r.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER], [A]), [M, D] = (0, u.kn)(L), G = M === r.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER, U = s.useCallback(e => {
+    }, [t.type, b]), [y, j] = s.useState(null), L = s.useMemo(() => A ? [] : [a.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER], [A]), [M, D] = (0, u.kn)(L), G = M === a.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER, U = s.useCallback(e => {
         null != e && G && D(E.i.USER_DISMISS), j(e)
     }, [G, D, j]), P = s.useCallback(e => {
         D("user:explicit" === e ? E.i.USER_DISMISS : E.i.AUTO_DISMISS)
@@ -56,7 +56,7 @@ function b(e) {
         filterCount: T
     }) : I.intl.string(I.t.UdhTtk), [T]), V = !(0, h.DZ)() && (t.type === C.I4_.DMS || t.type === C.I4_.CHANNEL);
     return (0, i.jsxs)("header", {
-        className: a()(N.wL, {
+        className: r()(N.wL, {
             [N.g$]: null != v
         }),
         children: [(0, i.jsx)("div", {
@@ -100,10 +100,10 @@ function S(e) {
         subtitle: n,
         isSearching: s,
         isIndexing: l,
-        documentsIndexed: a
+        documentsIndexed: r
     } = e;
     return l ? (0, i.jsx)(v, {
-        documentsIndexed: a
+        documentsIndexed: r
     }) : s ? (0, i.jsx)(y, {}) : (0, i.jsx)(j, {
         totalResults: t,
         subtitle: n
@@ -181,8 +181,8 @@ function R(e) {
         searchContext: t,
         selectedChannelId: n,
         isPopoutOpen: l,
-        setOpenPopout: a,
-        onPopoverRequestClose: r,
+        setOpenPopout: r,
+        onPopoverRequestClose: a,
         isPopoverVisible: c
     } = e, u = s.useRef(null), h = A.Hu.useSetting(), m = s.useCallback(e => {
         if (h !== e) {
@@ -203,9 +203,9 @@ function R(e) {
                 };
                 p.A.transitionStateToSearchContext(t, e)
             }
-            a(null), A.Hu.updateSetting(e)
+            r(null), A.Hu.updateSetting(e)
         }
-    }, [h, a, t, n]), [_, g] = s.useMemo(() => [h ? I.intl.string(I.t["8lklch"]) : I.intl.string(I.t.ji3jTF), h ? I.intl.string(I.t.RMQZCa) : I.intl.string(I.t["v/PagC"])], [h]), x = s.useMemo(() => ({
+    }, [h, r, t, n]), [_, g] = s.useMemo(() => [h ? I.intl.string(I.t["8lklch"]) : I.intl.string(I.t.ji3jTF), h ? I.intl.string(I.t.RMQZCa) : I.intl.string(I.t["v/PagC"])], [h]), x = s.useMemo(() => ({
         align: "end"
     }), []);
     return (0, i.jsxs)(i.Fragment, {
@@ -215,7 +215,7 @@ function R(e) {
             animation: d.YNO.Animation.NONE,
             position: "bottom",
             align: "right",
-            onRequestClose: () => a(null),
+            onRequestClose: () => r(null),
             renderPopout: e => {
                 let {
                     closePopout: t
@@ -225,7 +225,7 @@ function R(e) {
                     navId: "search-settings-cog",
                     onClose: t,
                     "aria-label": I.intl.string(I.t.fb59v0),
-                    onSelect: () => a(null),
+                    onSelect: () => r(null),
                     children: (0, i.jsxs)(d.rXV, {
                         label: I.intl.string(I.t["/tMwrA"]),
                         children: [(0, i.jsx)(d.iDA, {
@@ -250,7 +250,7 @@ function R(e) {
                 variant: "secondary",
                 icon: d.Zes,
                 onClick: () => {
-                    a(l ? null : "settings")
+                    r(l ? null : "settings")
                 },
                 "aria-label": I.intl.string(I.t["3D5yo/"]),
                 size: "sm"
@@ -258,7 +258,7 @@ function R(e) {
         }), (0, i.jsx)(o.AM, {
             targetElementRef: u,
             shouldShow: c,
-            onRequestClose: r,
+            onRequestClose: a,
             title: _,
             body: g,
             caretConfig: x,
@@ -272,8 +272,8 @@ function O(e) {
         searchMode: t,
         onSearchModeChange: n,
         isPopoutOpen: l,
-        setOpenPopout: a
-    } = e, r = s.useRef(null), o = s.useMemo(() => [{
+        setOpenPopout: r
+    } = e, a = s.useRef(null), o = s.useMemo(() => [{
         label: I.intl.string(I.t.CbaapP),
         value: C.BBH.NEWEST
     }, {
@@ -283,15 +283,15 @@ function O(e) {
         label: I.intl.string(I.t.q8gB52),
         value: C.BBH.MOST_RELEVANT
     }], []), c = s.useCallback(e => {
-        a(null), n(e)
-    }, [a, n]);
+        r(null), n(e)
+    }, [r, n]);
     return (0, i.jsx)(d.YNO, {
-        targetElementRef: r,
+        targetElementRef: a,
         shouldShow: l,
         animation: d.YNO.Animation.NONE,
         position: "bottom",
         align: "right",
-        onRequestClose: () => a(null),
+        onRequestClose: () => r(null),
         renderPopout: e => {
             let {
                 closePopout: n
@@ -301,7 +301,7 @@ function O(e) {
                 navId: "search-result-sort-menu",
                 onClose: n,
                 "aria-label": I.intl.string(I.t.utp2hS),
-                onSelect: () => a(null),
+                onSelect: () => r(null),
                 children: (0, i.jsx)(d.rXV, {
                     children: o.map(e => {
                         let {
@@ -321,11 +321,11 @@ function O(e) {
         },
         children: e => (0, i.jsx)(d.Button, {
             ...e,
-            buttonRef: r,
+            buttonRef: a,
             variant: "secondary",
             icon: d.JNJ,
             onClick: () => {
-                a(l ? null : "sort")
+                r(l ? null : "sort")
             },
             text: I.intl.string(I.t.XvNMNk),
             "aria-label": I.intl.string(I.t.XvNMNk),

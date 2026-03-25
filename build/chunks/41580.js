@@ -1,33 +1,33 @@
 /** chunk id: 41580 params = (module,exports,require) **/
 a.d(t, {
-    A: () => b
+    A: () => p
 });
 var _ = a(64700),
     n = a(311907),
     o = a(451988),
     r = a(964486),
     i = a(430452),
-    l = a(383501),
+    c = a(383501),
     s = a(927813),
-    c = a(340913),
-    u = a(731854);
-let d = 2.5 * s.A.Millis.SECOND,
-    p = +s.A.Millis.HOUR;
+    l = a(340913),
+    d = a(731854);
+let b = 2.5 * s.A.Millis.SECOND,
+    u = +s.A.Millis.HOUR;
 
-function b() {
-    let [e, t] = _.useState(!1), a = (0, n.bG)([i.Ay], () => i.Ay.getMode() === u.TB.PUSH_TO_TALK), s = (0, n.bG)([l.A], () => null != l.A.getChannelId() && (l.A.getDuration() ?? Number.MAX_VALUE) < d), [b, f] = _.useState(!1), {
+function p() {
+    let [e, t] = _.useState(!1), a = (0, n.bG)([i.Ay], () => i.Ay.getMode() === d.TB.PUSH_TO_TALK), s = (0, n.bG)([c.A], () => null != c.A.getChannelId() && (c.A.getDuration() ?? Number.MAX_VALUE) < b), [p, f] = _.useState(!1), {
         showPTTJoinTooltip: g
-    } = c.A.useConfig({
+    } = l.A.useConfig({
         location: "usePTTJoinTooltip"
     }), x = _.useRef(new o.Ep), m = _.useRef(new o.Ep);
     _.useEffect(() => {
         if (s && a && !e) {
-            if (c.A.getConfig({
+            if (l.A.getConfig({
                     location: "usePTTJoinTooltip:couldDisplayTooltip"
                 }), !g) return;
-            f(!0), t(!0), m.current.start(p, () => {
+            f(!0), t(!0), m.current.start(u, () => {
                 t(!1)
-            }), x.current.start(d, () => {
+            }), x.current.start(b, () => {
                 f(!1)
             })
         }
@@ -39,7 +39,7 @@ function b() {
     return (0, r.l0)(() => {
         x.current.stop(), m.current.stop()
     }), {
-        shouldShowTooltip: b,
+        shouldShowTooltip: p,
         dismissTooltip: A
     }
 }

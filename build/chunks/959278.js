@@ -26,8 +26,8 @@ var i = n(627968),
     S = n(389405),
     x = n(549711),
     v = n(313961),
-    y = n(264140),
-    b = n(72800),
+    b = n(264140),
+    y = n(72800),
     O = n(30747),
     L = n(811736),
     R = n(696086),
@@ -80,8 +80,8 @@ var i = n(627968),
     eS = n(71393),
     ex = n(309010),
     ev = n(519057),
-    ey = n(954571),
-    eb = n(403362),
+    eb = n(954571),
+    ey = n(403362),
     eO = n(661191),
     eL = n(349320),
     eR = n(652215),
@@ -245,9 +245,9 @@ let eU = (0, c.Fe)({
                     guildId: l
                 });
             case eP.VV.REPORT_TO_MOD:
-                return (0, i.jsx)(y.A, {});
+                return (0, i.jsx)(b.A, {});
             default:
-                (0, eb.xb)(c)
+                (0, ey.xb)(c)
         }
         if ((0, H.$Y)(u, h)) return (0, i.jsx)(F.A, {
             guildId: l,
@@ -260,7 +260,7 @@ let eU = (0, c.Fe)({
                 inputSkuId: e
             }, a.id)
         }
-        return (0, i.jsx)(y.A, {})
+        return (0, i.jsx)(b.A, {})
     },
     e$ = a.memo(function() {
         let {
@@ -475,7 +475,7 @@ function ti(e) {
             document.body.classList.add(ew.cB)
         }, []),
         f = a.useCallback(e => {
-            document.body.classList.remove(ew.cB), document.body.classList.remove(ew._A), document.body.classList.remove(ew.uN), document.body.classList.remove(ew.l4), g.current?.style.setProperty("--custom-overdrag", "0px"), h.w.set(p.o, e), ey.default.track(eR.HAw.CHANNEL_SIDEBAR_RESIZED, {
+            document.body.classList.remove(ew.cB), document.body.classList.remove(ew._A), document.body.classList.remove(ew.uN), document.body.classList.remove(ew.l4), g.current?.style.setProperty("--custom-overdrag", "0px"), h.w.set(p.o, e), eb.default.track(eR.HAw.CHANNEL_SIDEBAR_RESIZED, {
                 width: e
             })
         }, []),
@@ -565,7 +565,7 @@ function ta() {
                 "data-fullscreen": I,
                 children: [!I && (0, i.jsx)(eU, {}), u.Fr ? null : (0, i.jsx)(en.A, {}), (0, i.jsxs)("div", {
                     className: ew.Qs,
-                    children: [(0, i.jsx)(b.A, {}), (0, i.jsx)(ti, {
+                    children: [(0, i.jsx)(y.A, {}), (0, i.jsx)(ti, {
                         isSidebarOpen: s,
                         hasNotice: t,
                         sidebarTheme: n,

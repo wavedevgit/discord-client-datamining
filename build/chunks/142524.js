@@ -1,33 +1,33 @@
 /** chunk id: 142524 params = (module,exports,require) **/
 i.d(t, {
-    A: () => y
+    A: () => N
 });
 var n = i(627968),
     l = i(64700),
     s = i(503698),
     a = i.n(s),
     r = i(311907),
-    d = i(80682),
-    o = i(643501),
-    u = i(616356),
-    c = i(961350),
-    A = i(71393),
-    m = i(576705),
-    g = i(290863),
-    h = i(977997),
-    p = i(954571),
-    x = i(279250),
-    f = i(834757),
-    I = i(727353),
-    S = i(652215),
-    E = i(945354);
-class v extends l.PureComponent {
+    u = i(80682),
+    d = i(643501),
+    o = i(616356),
+    A = i(961350),
+    c = i(71393),
+    _ = i(576705),
+    E = i(290863),
+    I = i(977997),
+    h = i(954571),
+    f = i(279250),
+    p = i(834757),
+    m = i(727353),
+    g = i(652215),
+    C = i(945354);
+class L extends l.PureComponent {
     componentDidMount() {
         let {
             user: e,
             streamApplication: t
         } = this.props;
-        p.default.track(S.HAw.OPEN_POPOUT, {
+        h.default.track(g.HAw.OPEN_POPOUT, {
             type: "Stream Preview",
             other_user_id: e.id,
             application_id: null != t ? t.id : null,
@@ -44,27 +44,27 @@ class v extends l.PureComponent {
             previewIsOpen: l,
             onAction: s,
             hideTip: r,
-            onWatch: d,
-            activeStream: o,
-            currentUserId: u,
-            canWatch: c,
-            unavailableReason: A,
-            streamApplication: m
+            onWatch: u,
+            activeStream: d,
+            currentUserId: o,
+            canWatch: A,
+            unavailableReason: c,
+            streamApplication: _
         } = this.props;
         return null == i ? null : (0, n.jsx)("div", {
-            className: a()(E.yt, {
-                [E.P0]: l
+            className: a()(C.yt, {
+                [C.P0]: l
             }),
-            children: (0, n.jsx)(I.Z, {
+            children: (0, n.jsx)(m.Z, {
                 stream: i,
-                activeStream: o,
+                activeStream: d,
                 streamActivity: e,
-                streamApplication: m,
+                streamApplication: _,
                 user: t,
-                currentUserId: u,
-                canWatch: c ?? !1,
-                unavailableReason: A,
-                onWatchStream: d,
+                currentUserId: o,
+                canWatch: A ?? !1,
+                unavailableReason: c,
+                onWatchStream: u,
                 onAction: s,
                 hideTip: r
             })
@@ -72,24 +72,24 @@ class v extends l.PureComponent {
     }
 }
 
-function y(e) {
+function N(e) {
     let {
         user: t,
         channel: i,
         ...s
-    } = e, [a, p] = (0, r.yK)([h.A, A.A, m.A, o.default], () => (0, x.eo)(i, h.A, A.A, m.A, o.default)), I = (0, r.bG)([u.A], () => u.A.getStreamForUser(t.id, i.getGuildId())), S = (0, r.bG)([u.A], () => u.A.getActiveStreamForApplicationStream(I)), E = (0, r.bG)([c.default], () => c.default.getId()), y = (0, f.AO)(I), N = (0, r.bG)([g.A], () => (0, f.nr)(I, g.A)), V = l.useMemo(() => ({
+    } = e, [a, h] = (0, r.yK)([I.A, c.A, _.A, d.default], () => (0, f.eo)(i, I.A, c.A, _.A, d.default)), m = (0, r.bG)([o.A], () => o.A.getStreamForUser(t.id, i.getGuildId())), g = (0, r.bG)([o.A], () => o.A.getActiveStreamForApplicationStream(m)), C = (0, r.bG)([A.default], () => A.default.getId()), N = (0, p.AO)(m), S = (0, r.bG)([E.A], () => (0, p.nr)(m, E.A)), P = l.useMemo(() => ({
         [i.guild_id]: [t.id]
     }), [i.guild_id, t.id]);
-    return (0, d.Eq)(V, "StreamPreviewPopout"), (0, n.jsx)(v, {
+    return (0, u.Eq)(P, "StreamPreviewPopout"), (0, n.jsx)(L, {
         ...s,
         canWatch: a,
-        unavailableReason: p,
+        unavailableReason: h,
         user: t,
-        streamApplication: y,
-        stream: I,
-        activeStream: S,
-        currentUserId: E,
-        activity: N,
+        streamApplication: N,
+        stream: m,
+        activeStream: g,
+        currentUserId: C,
+        activity: S,
         channel: i
     })
 }

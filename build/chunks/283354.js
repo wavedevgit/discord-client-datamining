@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(314116),
-    a = n(397927),
-    r = n(442433),
+    r = n(397927),
+    a = n(442433),
     o = n(50268),
     c = n(928658),
     d = n(208882),
@@ -30,27 +30,27 @@ function A(e) {
         onSuccess: m
     });
     s.useEffect(() => {
-        g || f || null != x || (0, r.Z_)()
+        g || f || null != x || (0, a.Z_)()
     });
     let C = () => {
         d.ZM(t.channelId, t.guildId)
     };
 
     function E() {
-        (0, r.Z_)(), m?.()
+        (0, a.Z_)(), m?.()
     }
-    return (0, i.jsxs)(a.W1t, {
+    return (0, i.jsxs)(r.W1t, {
         "data-menu-migrated": !0,
         navId: "guild-entry-context",
         onClose: E,
         "aria-label": h.intl.string(h.t.HpQykc),
         onSelect: A,
-        children: [(0, i.jsxs)(a.rXV, {
-            children: [g && !_ ? (0, i.jsx)(a.Drp, {
+        children: [(0, i.jsxs)(r.rXV, {
+            children: [g && !_ ? (0, i.jsx)(r.Drp, {
                 id: "update-entry",
                 label: h.intl.string(h.t.XnuOvN),
                 action: function() {
-                    (0, a.mMO)(async () => {
+                    (0, r.mMO)(async () => {
                         let {
                             default: e
                         } = await n.e("88869").then(n.bind(n, 201700));
@@ -62,9 +62,9 @@ function A(e) {
                 },
                 leadingAccessory: {
                     type: "icon",
-                    icon: a.R2l
+                    icon: r.R2l
                 }
-            }) : null, f ? (0, i.jsx)(a.Drp, {
+            }) : null, f ? (0, i.jsx)(r.Drp, {
                 id: "remove-from-hub",
                 label: h.intl.string(h.t.KUxYWH),
                 action: function() {
@@ -80,22 +80,22 @@ function A(e) {
                 color: "danger",
                 leadingAccessory: {
                     type: "icon",
-                    icon: a.ucK
+                    icon: r.ucK
                 }
-            }) : null, p ? null : (0, i.jsx)(a.Drp, {
+            }) : null, p ? null : (0, i.jsx)(r.Drp, {
                 id: "report-server-listing",
                 label: h.intl.string(h.t.Aen9eh),
                 action: function() {
                     null != t && ((0, c.sJ)(t), E())
                 },
-                icon: a.iFK,
+                icon: r.iFK,
                 leadingAccessory: {
                     type: "icon",
-                    icon: a.iFK
+                    icon: r.iFK
                 },
                 color: "danger"
             })]
-        }), (0, i.jsx)(a.rXV, {
+        }), (0, i.jsx)(r.rXV, {
             children: x
         })]
     })

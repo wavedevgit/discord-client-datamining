@@ -188,11 +188,11 @@ function I(e) {
         applicationId: t.currentActivities[0]?.activity?.application_id,
         location: "FriendsActivityFeed",
         source: u.Ob.FriendsActivityFeed
-    }), y = (0, d.A)({
+    }), b = (0, d.A)({
         userId: T.user.id,
         guildId: C?.id
-    }), b = (0, c.a)({
-        displayNameStyles: y
+    }), y = (0, c.a)({
+        displayNameStyles: b
     });
     return (0, i.jsx)(g.A.Header, {
         priorityUser: T,
@@ -203,6 +203,6 @@ function I(e) {
         onSubtitleClick: v,
         onIconClick: v,
         onContextMenu: e => a(e, T.user),
-        displayNameFont: 1 === f.length ? b : void 0
+        displayNameFont: 1 === f.length ? y : void 0
     })
 }

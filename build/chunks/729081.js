@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(735438),
+    r = n.n(l),
+    a = n(735438),
     o = n(835245),
     c = n(695095),
     d = n(158954),
@@ -80,7 +80,7 @@ function V(e) {
         z = (0, u.bG)([I.default], () => I.default.getId()),
         q = s.useMemo(() => {
             let e = K.map(e => (0, D.Xw)(e) || (0, D.Ay)(e) ? e.user.id : null).filter(S.Vq);
-            return (0, r.uniq)([...W, ...e])
+            return (0, a.uniq)([...W, ...e])
         }, [K, W]),
         X = (0, y.U)(Y),
         {
@@ -111,7 +111,7 @@ function V(e) {
                         return t
                     }),
                     l = n.filter(e => e !== z),
-                    a = q.filter(e => e !== z);
+                    r = q.filter(e => e !== z);
                 return V ? (0, i.jsx)(R.A, {
                     sku: t.sku,
                     source: n.length > 0 ? f.uS.WISHLIST : f.uS.POPULAR,
@@ -119,7 +119,7 @@ function V(e) {
                     guildId: h.guild_id,
                     channelId: h.id,
                     showIcons: s,
-                    userIdsForGifting: a,
+                    userIdsForGifting: r,
                     userIdsForRecommendation: l
                 }, t.skuId) : (0, i.jsx)(O.A, {
                     variant: n.length > 0 ? O.$.WISHLIST : O.$.POPULAR,
@@ -163,7 +163,7 @@ function V(e) {
                         })]
                     })
                 }), (0, i.jsx)("div", {
-                    className: a()(U.Xb, {
+                    className: r()(U.Xb, {
                         [U.Im]: V
                     }),
                     children: Z ? (0, i.jsx)(d.y$y, {

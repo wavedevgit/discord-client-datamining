@@ -1,6 +1,6 @@
 /** chunk id: 594968 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => y
 });
 var i = n(627968),
     a = n(64700),
@@ -125,7 +125,7 @@ function v(e) {
     })
 }
 
-function y(e) {
+function b(e) {
     let {
         user: t,
         hovered: n,
@@ -158,7 +158,7 @@ function y(e) {
     })
 }
 
-function b(e) {
+function y(e) {
     let {
         user: t,
         type: n,
@@ -183,7 +183,7 @@ function b(e) {
         onClick: f,
         children: e => (0, i.jsxs)("div", {
             className: N.a4,
-            children: [(0, i.jsx)(y, {
+            children: [(0, i.jsx)(b, {
                 user: t,
                 hovered: e,
                 status: p,

@@ -27,8 +27,8 @@ var i = n(627968),
     S = n(637073),
     x = n(288349),
     v = n(131168),
-    y = n(422936),
-    b = n(234419),
+    b = n(422936),
+    y = n(234419),
     O = n(549996),
     L = n(612669),
     R = n(603488),
@@ -49,7 +49,7 @@ var i = n(627968),
 let K = e => {
         let {
             selected: t
-        } = e, n = (0, s.bG)([p.default], () => p.default.getCurrentUser()), i = (0, s.bG)([E.A], () => E.A.getPremiumTypeSubscription()), a = (0, b.V)(), l = (0, y.O)(), r = (0, T.cg)(), o = (0, k.H)(), d = (0, f.Of)(n, i), c = (0, s.bG)([C.A], () => C.A.getCreatedAtOverride()), u = t || null != a || null != l || r || null != o || d, A = null != c ? c : n?.createdAt;
+        } = e, n = (0, s.bG)([p.default], () => p.default.getCurrentUser()), i = (0, s.bG)([E.A], () => E.A.getPremiumTypeSubscription()), a = (0, y.V)(), l = (0, b.O)(), r = (0, T.cg)(), o = (0, k.H)(), d = (0, f.Of)(n, i), c = (0, s.bG)([C.A], () => C.A.getCreatedAtOverride()), u = t || null != a || null != l || r || null != o || d, A = null != c ? c : n?.createdAt;
         return u || null != n && null != A && Date.now() - A.getTime() > 12096e5
     },
     q = e => {
@@ -65,8 +65,8 @@ let K = e => {
             J = (0, f.Of)(X, Z),
             ee = (0, f.YE)(X, H.PremiumTypes.TIER_2),
             et = (0, l.rm)("nitro"),
-            en = (0, b.V)(),
-            ei = (0, y.O)(),
+            en = (0, y.V)(),
+            ei = (0, b.O)(),
             ea = (0, v.p)(),
             el = (0, S.d)(),
             er = (0, T.cg)(),
@@ -102,7 +102,7 @@ let K = e => {
             } = (0, h.A)({
                 forceFetch: !0
             }),
-            [ey, eb] = (0, m.Wl)(eS !== H.xc.NONE ? o.M.FRACTIONAL_NITRO_DURATION_LEFT_PILL : null, {
+            [eb, ey] = (0, m.Wl)(eS !== H.xc.NONE ? o.M.FRACTIONAL_NITRO_DURATION_LEFT_PILL : null, {
                 showAfterTimestamp: ex.valueOf(),
                 cooldownDurationMs: 0
             }),
@@ -119,7 +119,7 @@ let K = e => {
                 selected: C
             })) return null;
         let eF = () => {
-            ey === o.M.FRACTIONAL_NITRO_DURATION_LEFT_PILL && eb(Y.i.TAKE_ACTION), I.default.track(F.HAw.NITRO_TAB_VISITED, {
+            eb === o.M.FRACTIONAL_NITRO_DURATION_LEFT_PILL && ey(Y.i.TAKE_ACTION), I.default.track(F.HAw.NITRO_TAB_VISITED, {
                 badge_decorator: n,
                 has_premium: J
             }), null != eP && eD(Y.i.USER_DISMISS), null != eG && ek(Y.i.USER_DISMISS), eM === o.M.PREMIUM_GROUP_POPOVER && ej(Y.i.USER_DISMISS)

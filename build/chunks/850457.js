@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(311907),
     l = n(827734),
-    a = n(397927),
-    r = n(587895),
+    r = n(397927),
+    a = n(587895),
     o = n(47167),
     c = n(475889),
     d = n(693879),
@@ -27,7 +27,7 @@ function C(e) {
         event: t,
         guildId: n,
         channelId: l
-    } = e, o = (0, s.bG)([_.default], () => _.default.getUser(t.userId)), c = (0, s.bG)([r.A], () => t.eventType === m.i.ACTIVITY_ENDED && null != t.applicationId ? r.A.getApplication(t.applicationId) : void 0), d = p.Ay.useName(n, l, o);
+    } = e, o = (0, s.bG)([_.default], () => _.default.getUser(t.userId)), c = (0, s.bG)([a.A], () => t.eventType === m.i.ACTIVITY_ENDED && null != t.applicationId ? a.A.getApplication(t.applicationId) : void 0), d = p.Ay.useName(n, l, o);
     if (null == o) return null;
     let A = t.eventType === m.i.ACTIVITY_ENDED;
     return (0, i.jsxs)("div", {
@@ -39,37 +39,37 @@ function C(e) {
             children: A && null != c ? (0, i.jsx)(u.A, {
                 game: c,
                 className: x.AW
-            }) : (0, i.jsx)(a.euF, {
+            }) : (0, i.jsx)(r.euF, {
                 src: o.getAvatarURL(n, 20),
-                size: a._3J.SIZE_20,
+                size: r._3J.SIZE_20,
                 "aria-label": o.username
             })
         }), (0, i.jsxs)("div", {
             className: x.Kw,
-            children: [A ? (0, i.jsx)(a.Text, {
+            children: [A ? (0, i.jsx)(r.Text, {
                 variant: "text-sm/normal",
                 className: x.rN,
                 children: f.intl.format(f.t.CKIMrx, {
                     user: d,
                     activityName: t.applicationName ?? "Unknown"
                 })
-            }) : (0, i.jsx)(a.Text, {
+            }) : (0, i.jsx)(r.Text, {
                 variant: "text-sm/normal",
                 className: x.qJ,
                 children: f.intl.format(f.t.TlVwqn, {
                     user: d,
-                    userHook: (e, t) => (0, i.jsx)(a.Text, {
+                    userHook: (e, t) => (0, i.jsx)(r.Text, {
                         variant: "text-sm/semibold",
                         className: x.C3,
                         children: e
                     }, t),
-                    labelHook: (e, t) => (0, i.jsx)(a.Text, {
+                    labelHook: (e, t) => (0, i.jsx)(r.Text, {
                         variant: "text-sm/normal",
                         className: x.CS,
                         children: e
                     }, t)
                 })
-            }), (0, i.jsx)(a.Text, {
+            }), (0, i.jsx)(r.Text, {
                 variant: "text-xs/normal",
                 color: "text-muted",
                 className: x.gE,
@@ -88,12 +88,12 @@ function E(e) {
     } = e, n = (0, c.H)(t), s = (0, o.Ay)(t);
     return (0, i.jsxs)("div", {
         className: x.hY,
-        children: [(0, i.jsx)(a.HKD, {
+        children: [(0, i.jsx)(r.HKD, {
             size: "custom",
             color: l.A.colors.ICON_FEEDBACK_POSITIVE,
             height: 20,
             width: 20
-        }), (0, i.jsx)(a.Text, {
+        }), (0, i.jsx)(r.Text, {
             variant: "text-md/medium",
             className: x.HA,
             children: s
@@ -114,10 +114,10 @@ function I(e) {
         className: x.kL,
         children: [(0, i.jsx)(E, {
             channel: t
-        }), (0, i.jsx)(a.HOs, {
+        }), (0, i.jsx)(r.HOs, {
             children: (0, i.jsxs)("div", {
                 className: x.PI,
-                children: [(0, i.jsx)(a.Text, {
+                children: [(0, i.jsx)(r.Text, {
                     variant: "text-sm/medium",
                     color: "text-muted",
                     className: x.s8,

@@ -1,7 +1,7 @@
 /** chunk id: 771004 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A,
-    h: () => p
+    A: () => v,
+    h: () => _
 });
 var a = n(627968),
     l = n(64700),
@@ -17,20 +17,20 @@ var a = n(627968),
     f = n(936636),
     h = n(985018),
     g = n(851822),
-    _ = n(812254);
+    p = n(812254);
 
-function p(e) {
+function _(e) {
     let {
         detectedGame: t,
         trackAction: n
-    } = e, [i, x] = l.useState(t?.summaryLocalized != null), [p, A] = l.useState(!0), [v, j] = l.useState(!1), E = l.useRef(null), {
+    } = e, [i, x] = l.useState(t?.summaryLocalized != null), [_, v] = l.useState(!0), [j, A] = l.useState(!1), C = l.useRef(null), {
         width: I,
-        height: C
+        height: b
     } = (0, u.A)();
     return (l.useEffect(() => {
-        let e = E.current;
-        null != e && j(e.scrollHeight - e.clientHeight > 1 || !p)
-    }, [E, I, C, p]), null == t.summary) ? null : (0, a.jsxs)("div", {
+        let e = C.current;
+        null != e && A(e.scrollHeight - e.clientHeight > 1 || !_)
+    }, [C, I, b, _]), null == t.summary) ? null : (0, a.jsxs)("div", {
         className: r()(g.fi, g.mX),
         children: [null != t.summaryLocalized && (0, a.jsxs)("div", {
             className: r()(g.nM, g.Lc),
@@ -47,45 +47,45 @@ function p(e) {
                 })
             })]
         }), (0, a.jsx)(c.EYj, {
-            ref: E,
-            lineClamp: p ? 8 : void 0,
+            ref: C,
+            lineClamp: _ ? 8 : void 0,
             variant: "text-sm/normal",
             children: i ? t.summaryLocalized : t.summary
-        }), v && (0, a.jsx)(d.DUT, {
+        }), j && (0, a.jsx)(d.DUT, {
             className: g.vk,
             onClick: () => {
-                n(p ? m.Ws.ShowMore : m.Ws.ShowLess), A(!p)
+                n(_ ? m.Ws.ShowMore : m.Ws.ShowLess), v(!_)
             },
             children: (0, a.jsx)(c.EYj, {
                 variant: "text-sm/semibold",
-                children: p ? h.intl.string(h.t.lBeKY2) : h.intl.string(h.t["6MwJo/"])
+                children: _ ? h.intl.string(h.t.lBeKY2) : h.intl.string(h.t["6MwJo/"])
             })
         }), (0, a.jsx)(f.A, {
-            className: _.B,
+            className: p.B,
             detectedGame: t
         })]
     })
 }
 
-function A(e) {
+function v(e) {
     let {
         detectedGame: t,
         trackAction: n
     } = e, [i, s] = l.useState(!1), [o, d] = l.useState(null), f = l.useRef(null), {
-        width: _,
-        height: p
+        width: p,
+        height: _
     } = (0, u.A)(), {
-        isTwoColumn: A
-    } = (0, x.c)(), v = l.useMemo(() => A ? 8 : 5, [A]), j = l.useCallback(e => d(e > v), [v]);
+        isTwoColumn: v
+    } = (0, x.c)(), j = l.useMemo(() => v ? 8 : 5, [v]), A = l.useCallback(e => d(e > j), [j]);
     l.useEffect(() => {
         d(null)
-    }, [t.summary, v, _, p]), l.useEffect(() => {
+    }, [t.summary, j, p, _]), l.useEffect(() => {
         let e = f.current;
         if (null == e || null != o) return;
         let t = parseInt(window.getComputedStyle(e).lineHeight, 10);
-        isNaN(t) || j(Math.floor(e.offsetHeight / t))
-    }, [f, o, j]);
-    let E = l.useCallback(() => {
+        isNaN(t) || A(Math.floor(e.offsetHeight / t))
+    }, [f, o, A]);
+    let C = l.useCallback(() => {
         let e = !i;
         n(e ? m.Ws.ShowMore : m.Ws.ShowLess), s(e)
     }, [i, n]);
@@ -95,11 +95,11 @@ function A(e) {
         className: r()(g.fi, g.mX),
         children: [(0, a.jsx)(c.EYj, {
             ref: f,
-            lineClamp: i || null == o ? void 0 : v,
+            lineClamp: i || null == o ? void 0 : j,
             variant: "text-sm/normal",
             children: t.summary
         }), o && (0, a.jsx)(c.QWc, {
-            onClick: E,
+            onClick: C,
             text: I
         })]
     })

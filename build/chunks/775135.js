@@ -26,8 +26,8 @@ var i = n(627968),
     S = n(940447),
     x = n(665037),
     v = n(946960),
-    y = n(49999);
-let b = new Set([r.M.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION, r.M.CHANNEL_NOTICE_GUILD_BANNER]);
+    b = n(49999);
+let y = new Set([r.M.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION, r.M.CHANNEL_NOTICE_GUILD_BANNER]);
 
 function O(e) {
     e.stopPropagation()
@@ -44,21 +44,21 @@ function R(e) {
             let e = [];
             return n && e.push(r.M.GAME_CLAIM_COACHMARK), e.length > 0 ? e : L
         }, [n])),
-        [I, f] = (0, d.ww)(E, _.id, y.m.CHANNEL_NOTICES, !0),
+        [I, f] = (0, d.ww)(E, _.id, b.m.CHANNEL_NOTICES, !0),
         C = null != I,
         N = (0, l.yK)(v.cJ, () => C ? [] : v.cA.filter(e => {
             let {
                 dismissibleContentType: t,
                 store: n
             } = e;
-            return !0 === n?.channelNoticePredicate(_, g) && !b.has(t)
+            return !0 === n?.channelNoticePredicate(_, g) && !y.has(t)
         }).map(e => e.dismissibleContentType), [_, g, C]),
-        [x, R] = (0, d.kn)(N, y.m.CHANNEL_NOTICES),
+        [x, R] = (0, d.kn)(N, b.m.CHANNEL_NOTICES),
         P = I ?? x,
         D = null != I ? f : R,
         M = a.useCallback(() => {
             var e;
-            e = Date.now(), s.w.set(v.hV, e), p(e), D(y.i.UNKNOWN)
+            e = Date.now(), s.w.set(v.hV, e), p(e), D(b.i.UNKNOWN)
         }, [D]),
         j = (() => {
             switch (P) {
@@ -90,7 +90,7 @@ function R(e) {
                 case r.M.LINKED_ROLE_ADMIN_GUILD:
                     return (0, i.jsx)(o.A, {
                         guild: _,
-                        markAsDismissed: () => D(y.i.UNKNOWN)
+                        markAsDismissed: () => D(b.i.UNKNOWN)
                     });
                 case r.M.GAME_CLAIM_COACHMARK:
                     return (0, i.jsx)(u.A, {

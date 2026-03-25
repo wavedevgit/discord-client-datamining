@@ -181,7 +181,7 @@ class $ extends s.PureComponent {
         let {
             searchContext: s
         } = this.props;
-        if (n.isPrivate() && s.type !== w.I4_.DMS || n.isObfuscated()) return void this.focusEditor();
+        if (s.type === w.I4_.GUILD_CHANNEL || n.isPrivate() && s.type !== w.I4_.DMS || n.isObfuscated()) return void this.focusEditor();
         let l = (0, b.Rt)(n);
         null == l ? this.focusEditor() : ((0, k.Tf)({
             searchContext: s

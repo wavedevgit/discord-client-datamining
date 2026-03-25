@@ -2,20 +2,20 @@
 a.d(t, {
     A: () => i
 });
-var s = a(627968);
+var r = a(627968);
 a(64700);
-var l = a(503698),
-    n = a.n(l),
-    r = a(813287);
+var n = a(503698),
+    l = a.n(n),
+    s = a(813287);
 
 function i(e) {
     let {
         children: t,
         tag: a,
-        className: l
+        className: n
     } = e;
-    return a = null != a ? a : "h3", (0, s.jsx)(a, {
-        className: n()(r.D, l),
+    return a = null != a ? a : "h3", (0, r.jsx)(a, {
+        className: l()(s.D, n),
         children: t
     })
 }

@@ -16,12 +16,12 @@ var a = n(627968),
     f = n(597676),
     h = n(305080),
     g = n(954506),
-    _ = n(652215),
-    p = n(985018),
-    A = n(809222),
-    v = n(206314);
+    p = n(652215),
+    _ = n(985018),
+    v = n(809222),
+    j = n(206314);
 
-function j(e, t) {
+function A(e, t) {
     return u.A.parse(e, !0, {
         allowHeading: !0,
         allowList: !0,
@@ -30,7 +30,7 @@ function j(e, t) {
     })
 }
 
-function E(e) {
+function C(e) {
     let {
         variant: t,
         message: n,
@@ -38,10 +38,10 @@ function E(e) {
         onCardClick: c
     } = e, [d, u] = l.useState(!1), m = null != n.mediaUrl, x = "video" === n.mediaType, f = "main" === t, h = l.useCallback(() => u(!0), []), g = l.useCallback(() => c(n.id), [c, n.id]);
     return (0, a.jsxs)(s.DUT, {
-        className: f ? A.cG : A.IU,
+        className: f ? v.cG : v.IU,
         onClick: g,
         children: [m && (0, a.jsxs)("div", {
-            className: f ? A._v : A.eZ,
+            className: f ? v._v : v.eZ,
             children: [x ? (0, a.jsx)(o.A, {
                 src: n.mediaUrl,
                 poster: function(e) {
@@ -52,33 +52,33 @@ function E(e) {
                         return
                     }
                 }(n.mediaUrl),
-                className: r()(f ? A.fk : A.v, d ? A.RT : A.YC),
+                className: r()(f ? v.fk : v.v, d ? v.RT : v.YC),
                 muted: !0,
                 preload: "metadata",
                 playsInline: !0,
                 onLoadedData: h
             }) : (0, a.jsx)("img", {
                 src: n.mediaUrl,
-                className: r()(f ? A.fk : A.v, d ? A.RT : A.YC),
+                className: r()(f ? v.fk : v.v, d ? v.RT : v.YC),
                 alt: "",
                 onLoad: h
             }), !d && (0, a.jsx)("div", {
-                className: A.ns,
+                className: v.ns,
                 children: (0, a.jsx)(s.y$y, {
                     type: s.tVU.SPINNING_CIRCLE,
-                    className: A.u1
+                    className: v.u1
                 })
             })]
         }), (0, a.jsxs)("div", {
-            className: f ? A.GT : A.s4,
+            className: f ? v.GT : v.s4,
             children: [null != n.title && (0, a.jsx)(s.Heading, {
                 variant: f ? "heading-md/bold" : "heading-sm/bold",
                 color: "text-strong",
-                className: f ? A.KX : A._N,
-                children: j(n.title, i)
+                className: f ? v.KX : v._N,
+                children: A(n.title, i)
             }), n.body.length > 0 && (0, a.jsx)("div", {
-                className: r()(A.h_, f ? A.My : A.Gd, v.PT),
-                children: j(n.body, i)
+                className: r()(v.h_, f ? v.My : v.Gd, j.PT),
+                children: A(n.body, i)
             })]
         })]
     })
@@ -93,51 +93,51 @@ function I(e) {
         isMember: o,
         closeModal: u
     } = (0, h.c)(), {
-        messages: v,
-        loading: j
+        messages: j,
+        loading: A
     } = (0, f.A)(i), I = l.useCallback(() => {
         null != r && (u(), c.h.dispatch({
             type: "INVITE_MODAL_OPEN",
             invite: r,
             code: r.code,
-            context: _.BRT.APP
+            context: p.BRT.APP
         }))
-    }, [u, r]), C = l.useCallback(() => {
+    }, [u, r]), b = l.useCallback(() => {
         n(x.Ws.Announcements), o && null != i ? (u(), (0, m.iN)(i)) : I()
-    }, [u, o, I, i, n]), b = l.useCallback(e => {
+    }, [u, o, I, i, n]), E = l.useCallback(e => {
         n(x.Ws.AnnouncementsItem), o && null != i ? (u(), (0, m.ci)(i, e)) : I()
     }, [u, o, I, i, n]);
-    if (null == i || 0 === v.length) return j ? (0, a.jsx)(g.A, {
-        title: p.intl.string(p.t.B0BV3Y),
+    if (null == i || 0 === j.length) return A ? (0, a.jsx)(g.A, {
+        title: _.intl.string(_.t.B0BV3Y),
         children: (0, a.jsx)("div", {
-            className: A.g4,
+            className: v.g4,
             children: (0, a.jsx)(s.y$y, {
                 type: s.tVU.SPINNING_CIRCLE,
-                className: A.u1
+                className: v.u1
             })
         })
     }) : null;
-    let N = 2 !== v.length,
-        T = N ? v[0] : null,
-        S = N ? v.slice(1) : v;
+    let N = 2 !== j.length,
+        S = N ? j[0] : null,
+        k = N ? j.slice(1) : j;
     return (0, a.jsx)(g.A, {
-        title: p.intl.string(p.t.B0BV3Y),
-        onClickViewAll: C,
+        title: _.intl.string(_.t.B0BV3Y),
+        onClickViewAll: b,
         children: (0, a.jsxs)("div", {
-            className: A.f3,
-            children: [null != T && (0, a.jsx)(E, {
+            className: v.f3,
+            children: [null != S && (0, a.jsx)(C, {
                 variant: "main",
-                message: T,
+                message: S,
                 channelId: i,
-                onCardClick: b
-            }), S.length > 0 && (0, a.jsx)(d.A, {
+                onCardClick: E
+            }), k.length > 0 && (0, a.jsx)(d.A, {
                 gap: "sm",
-                className: A.jG,
-                children: S.map(e => (0, a.jsx)(E, {
+                className: v.jG,
+                children: k.map(e => (0, a.jsx)(C, {
                     variant: "small",
                     message: e,
                     channelId: i,
-                    onCardClick: b
+                    onCardClick: E
                 }, e.id))
             })]
         })

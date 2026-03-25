@@ -1,5 +1,5 @@
 /** chunk id: 462226 params = (module,exports,require) **/
-i.d(t, {
+i.d(e, {
     A: () => d
 });
 var n = i(627968);
@@ -10,20 +10,20 @@ var l = i(397927),
     a = i(652215),
     o = i(985018);
 
-function d(e) {
+function d(t) {
     let {
-        activity: t,
+        activity: e,
         user: i,
         variant: d = "secondary",
         onAction: u,
         ...c
-    } = e;
-    return (0, s.A)(t, a.jUm.INSTANCE) ? (0, n.jsx)(l.Button, {
+    } = t;
+    return (0, s.A)(e, a.jUm.INSTANCE) ? (0, n.jsx)(l.Button, {
         text: o.intl.string(o.t.vwl1PK),
         variant: d,
         size: "sm",
         onClick: () => {
-            u?.(), new r.A("UserActivityActions").log("notify", i.id, t)
+            u?.(), new r.A("UserActivityActions").log("notify", i.id, e)
         },
         fullWidth: !0,
         ...c

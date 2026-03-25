@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    a = n(825244),
-    r = n(652215),
+    r = n(825244),
+    a = n(652215),
     o = n(985018),
     c = n(729934);
 let d = e => {
@@ -22,9 +22,9 @@ let d = e => {
             return n => (0, i.jsx)(e, {
                 ...n,
                 guild: t,
-                source: r.PE1.HUB_DIRECTORY,
+                source: a.PE1.HUB_DIRECTORY,
                 analyticsLocation: {
-                    section: r.JJy.HUB_WELCOME_CTA
+                    section: a.JJy.HUB_WELCOME_CTA
                 }
             })
         })
@@ -45,13 +45,13 @@ let d = e => {
             variant: "text-md/normal",
             className: c.YI,
             children: o.intl.string(o.t.WypE0i)
-        }), null != d ? (0, i.jsx)(a.E, {
+        }), null != d ? (0, i.jsx)(r.E, {
             className: c.c5,
             iconUrl: n(928202),
             header: o.intl.string(o.t.hyK15i),
             completed: !1,
             onClick: d
-        }) : null, (0, i.jsx)(a.E, {
+        }) : null, (0, i.jsx)(r.E, {
             className: c.c5,
             iconUrl: n(799258),
             header: o.intl.string(o.t.L4bwJ9),

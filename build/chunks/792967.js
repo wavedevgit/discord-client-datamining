@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(735438),
     l = n.n(s),
-    a = n(813516),
-    r = n(5658),
+    r = n(813516),
+    a = n(5658),
     o = n(712209),
     c = n(985018),
     d = n(48355);
@@ -25,15 +25,15 @@ function u(e, t, n) {
         let t = e.sortOrder !== _;
         _ = e.sortOrder;
         let l = [];
-        return t && (e.hasLoadedAnything && e.sortOrder === o.xB.ReallyOldChannel ? l.push((0, i.jsx)(a.A, {
+        return t && (e.hasLoadedAnything && e.sortOrder === o.xB.ReallyOldChannel ? l.push((0, i.jsx)(r.A, {
             className: d.y,
             contentClassName: d.$,
             children: c.intl.string(c.t.roBMzj)
-        }, "old-divider")) : e.hasLoadedAnything && e.sortOrder === o.xB.NoNotifications && l.push((0, i.jsx)(a.A, {
+        }, "old-divider")) : e.hasLoadedAnything && e.sortOrder === o.xB.NoNotifications && l.push((0, i.jsx)(r.A, {
             className: d.y,
             contentClassName: d.$,
             children: c.intl.string(c.t["2Ys7nu"])
-        }, "disabled-divider"))), l.push((0, i.jsx)(r.A, {
+        }, "disabled-divider"))), l.push((0, i.jsx)(a.A, {
             channel: e,
             markChannelRead: s,
             markGuildRead: u,

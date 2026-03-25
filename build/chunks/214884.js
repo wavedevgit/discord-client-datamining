@@ -26,8 +26,8 @@ var i = n(627968),
     S = n(63995),
     x = n(69407),
     v = n(446600),
-    y = n(964175),
-    b = n(342296),
+    b = n(964175),
+    y = n(342296),
     O = n(576705),
     L = n(287809),
     R = n(182028),
@@ -40,17 +40,17 @@ function w(e) {
     let {
         guild: t,
         isStudyRoomNotice: n = !1
-    } = e, l = (0, E.V)(t.id), u = (0, I.BP)(t.id), b = (0, s.bG)([v.A], () => v.A.getStageInstanceByChannel(l?.id), [l]), {
+    } = e, l = (0, E.V)(t.id), u = (0, I.BP)(t.id), y = (0, s.bG)([v.A], () => v.A.getStageInstanceByChannel(l?.id), [l]), {
         isStageNoticeHidden: w,
         isEventNoticeHidden: G
     } = (0, s.cf)([g.A], () => ({
         isStageNoticeHidden: g.A.isLiveChannelNoticeHidden({
-            stageId: b?.id
+            stageId: y?.id
         }),
         isEventNoticeHidden: g.A.isLiveChannelNoticeHidden({
             eventId: u?.id
         })
-    }), [b, u]), k = l?.id, V = (0, s.yK)([S.A], () => [...new Set(S.A.getMutableParticipants(k, x.ip.SPEAKER).map(e => e.user))], [k]), B = (0, s.bG)([S.A], () => null != k ? S.A.getParticipantCount(k, x.ip.AUDIENCE) : 0, [k]), H = (0, s.bG)([O.A], () => O.A.can(P.xBc.CONNECT, l)), F = (0, y.A)(l?.id), Y = u?.creator_id, W = (0, s.bG)([L.default], () => L.default.getUser(Y), [Y]);
+    }), [y, u]), k = l?.id, V = (0, s.yK)([S.A], () => [...new Set(S.A.getMutableParticipants(k, x.ip.SPEAKER).map(e => e.user))], [k]), B = (0, s.bG)([S.A], () => null != k ? S.A.getParticipantCount(k, x.ip.AUDIENCE) : 0, [k]), H = (0, s.bG)([O.A], () => O.A.can(P.xBc.CONNECT, l)), F = (0, b.A)(l?.id), Y = u?.creator_id, W = (0, s.bG)([L.default], () => L.default.getUser(Y), [Y]);
     a.useEffect(() => {
         null != Y && (0, c.wz)(Y)
     }, [Y]);
@@ -246,7 +246,7 @@ function w(e) {
         }
     })({
         guildEvent: u,
-        stageInstance: b,
+        stageInstance: y,
         activeChannel: l,
         canConnect: H,
         myRole: F,
@@ -256,7 +256,7 @@ function w(e) {
         isEventNoticeHidden: G,
         isStageNoticeHidden: w,
         isStudyRoomNotice: n
-    }), [u, b, l, H, F, W, V, B, G, w, n]);
+    }), [u, y, l, H, F, W, V, B, G, w, n]);
     return null == K ? null : (0, i.jsxs)("div", {
         className: j.kL,
         children: [null != ee ? (0, i.jsx)(d.DUT, {
@@ -325,7 +325,7 @@ function U(e) {
         user: t,
         guildId: n
     } = e, l = a.useRef(null);
-    return (0, i.jsx)(b.A, {
+    return (0, i.jsx)(y.A, {
         targetElementRef: l,
         user: t,
         guildId: n,

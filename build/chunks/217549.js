@@ -1,6 +1,6 @@
 /** chunk id: 217549 params = (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => b
 }), n(321073);
 var i = n(627968),
     a = n(64700),
@@ -27,10 +27,10 @@ var i = n(627968),
     x = n(985018);
 let v = d.A.get(S.fg2.XBOX).name;
 
-function y(e) {
+function b(e) {
     let {
         currentActivities: t
-    } = e, n = t.length > 1, y = function(e) {
+    } = e, n = t.length > 1, b = function(e) {
         let {
             currentActivities: t
         } = e, n = (0, l.bG)([p.A], () => p.A.getAccounts().some(e => e.type === d.A.get(S.fg2.XBOX).type)), a = t.some(e => {
@@ -46,7 +46,7 @@ function y(e) {
                 platform: v
             })
         })
-    }(e), b = function(e) {
+    }(e), y = function(e) {
         let {
             currentActivities: t
         } = e, n = a.useContext(C.AnalyticsContext);
@@ -73,7 +73,7 @@ function y(e) {
             }
         }), [n.location, t])
     }(e), O = [];
-    for (let e of b) {
+    for (let e of y) {
         let {
             activity: t
         } = e;
@@ -136,5 +136,5 @@ function y(e) {
             })
         }(e, n))
     }
-    return [y, ...O]
+    return [b, ...O]
 }

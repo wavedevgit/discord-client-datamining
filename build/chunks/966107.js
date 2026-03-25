@@ -1,67 +1,67 @@
 /** chunk id: 966107 params = (module,exports,require) **/
-n.d(t, {
-    JH: () => s,
-    RK: () => d,
-    ST: () => h,
+i.d(e, {
+    JH: () => d,
+    RK: () => o,
+    ST: () => p,
     Sk: () => u,
     UK: () => c,
-    xf: () => A
+    xf: () => m
 });
-var i = n(562465),
-    l = n(73153),
-    r = n(830215),
-    a = n(961523),
-    o = n(652215);
-async function d(e) {
-    await i.Bo.put({
-        url: o.Rsh.CHANNEL_RECIPIENT_ME(e),
+var n = i(562465),
+    l = i(73153),
+    r = i(830215),
+    s = i(961523),
+    a = i(652215);
+async function o(t) {
+    await n.Bo.put({
+        url: a.Rsh.CHANNEL_RECIPIENT_ME(t),
         body: {
-            consent_status: a.w.ACCEPTED
+            consent_status: s.w.ACCEPTED
         },
         rejectWithError: !1
     }), l.h.dispatch({
         type: "MESSAGE_REQUEST_ACCEPT_OPTIMISTIC",
-        channelId: e
+        channelId: t
     })
 }
 
-function s(e) {
-    return i.Bo.put({
-        url: o.Rsh.CHANNEL_RECIPIENT_ME(e),
+function d(t) {
+    return n.Bo.put({
+        url: a.Rsh.CHANNEL_RECIPIENT_ME(t),
         body: {
-            consent_status: a.w.UNSPECIFIED
+            consent_status: s.w.UNSPECIFIED
         },
         rejectWithError: !1
     })
 }
 
-function u(e) {
-    return i.Bo.put({
-        url: o.Rsh.CHANNEL_RECIPIENT_ME(e),
+function u(t) {
+    return n.Bo.put({
+        url: a.Rsh.CHANNEL_RECIPIENT_ME(t),
         body: {
-            consent_status: a.w.PENDING
+            consent_status: s.w.PENDING
         },
         rejectWithError: !1
     })
 }
 
-function c(e) {
-    return i.Bo.del({
-        url: o.Rsh.CHANNEL_RECIPIENT_ME(e),
+function c(t) {
+    return n.Bo.del({
+        url: a.Rsh.CHANNEL_RECIPIENT_ME(t),
         rejectWithError: !1
     })
 }
 
-function h(e) {
-    return i.Bo.put({
-        url: o.Rsh.CHANNEL_RECIPIENT_REJECT_BATCH(),
+function p(t) {
+    return n.Bo.put({
+        url: a.Rsh.CHANNEL_RECIPIENT_REJECT_BATCH(),
         body: {
-            channel_ids: e
+            channel_ids: t
         },
         rejectWithError: !1
     })
 }
 
-function A() {
+function m() {
     r.A.getLocationMetadata()
 }

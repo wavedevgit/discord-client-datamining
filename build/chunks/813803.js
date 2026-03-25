@@ -1,6 +1,6 @@
 /** chunk id: 813803 params = (module,exports,require) **/
 n.d(t, {
-    _: () => p
+    _: () => N
 });
 var i = n(627968);
 n(64700);
@@ -14,16 +14,16 @@ var l = n(877624),
     d = n(357186),
     _ = n(379848),
     E = n(49999),
-    T = n(652215),
-    A = n(985018),
+    A = n(652215),
+    T = n(985018),
     I = n(237082);
-let p = e => {
+let N = e => {
     let {
         dismissibleContent: t,
         noticeType: n
     } = e, {
-        analyticsLocations: p
-    } = (0, o.Ay)(), N = (0, r.bG)([u.A], () => {
+        analyticsLocations: N
+    } = (0, o.Ay)(), p = (0, r.bG)([u.A], () => {
         let e = u.A.getMarketingComponentByType(l.C.GIFT_REMINDER_NAGBAR);
         return null == e || "giftReminderNagbar" !== e.properties.properties.oneofKind ? null : e.properties.properties.giftReminderNagbar
     });
@@ -37,7 +37,7 @@ let p = e => {
                 visibleContent: t,
                 markAsDismissed: l
             } = e;
-            if (t === s.M.GIFTING_PROMOTION_REMINDER) return null == N ? null : (0, i.jsxs)(a.$Td, {
+            if (t === s.M.GIFTING_PROMOTION_REMINDER) return null == p ? null : (0, i.jsxs)(a.$Td, {
                 color: a.Hv$.PREMIUM_TIER_2,
                 children: [(0, i.jsx)(a.PMB, {
                     onClick: () => l(E.i.USER_DISMISS),
@@ -48,20 +48,20 @@ let p = e => {
                     height: 20,
                     color: "currentColor",
                     className: I.ez
-                }), N.body, (0, i.jsx)(a.Z_L, {
+                }), p.body, (0, i.jsx)(a.Z_L, {
                     onClick: () => {
                         (0, c.A)({
                             isGift: !0,
                             initialPlanId: null,
-                            analyticsLocations: p,
-                            analyticsLocation: T.ThZ.SEASONAL_GIFTING_REMINDER_NAGBAR,
+                            analyticsLocations: N,
+                            analyticsLocation: A.ThZ.SEASONAL_GIFTING_REMINDER_NAGBAR,
                             analyticsObject: {
-                                page: T.liQ.PREMUIM_UPSELL_GIFTING_PROMOTION
+                                page: A.liQ.PREMUIM_UPSELL_GIFTING_PROMOTION
                             }
                         })
                     },
                     noticeType: n,
-                    children: A.intl.string(A.t.RzWDqY)
+                    children: T.intl.string(T.t.RzWDqY)
                 })]
             })
         }

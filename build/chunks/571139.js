@@ -1,6 +1,6 @@
 /** chunk id: 571139 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => R
 }), n(321073);
 var i = n(627968);
 n(64700);
@@ -14,41 +14,41 @@ var l = n(503698),
     d = n(71393),
     _ = n(967198),
     E = n(624458),
-    T = n(202384),
-    A = n(513461),
+    A = n(202384),
+    T = n(513461),
     I = n(709977),
-    p = n(212455),
-    N = n(652215),
-    m = n(746080),
-    R = n(985018),
-    h = n(121615),
-    S = n(1624);
-let g = () => {
+    N = n(212455),
+    p = n(652215),
+    h = n(746080),
+    m = n(985018),
+    S = n(121615),
+    C = n(1624);
+let R = () => {
     let e = (0, a.bG)([_.A], () => _.A.getGuildId(), []),
         t = (0, a.bG)([d.A], () => d.A.getGuild(e), [e]),
-        l = (0, a.bG)([p.A], () => null != e ? p.A.getRequest(e) : null, [e]),
-        g = (0, s.zy)(),
-        C = (0, u.B)(g.pathname, N.BVt.CHANNEL(t?.id, m.VV.GUILD_ONBOARDING))?.isExact === !0;
-    if (null == t || !(0, I.Qd)(t) || C) return null;
-    let O = l?.applicationStatus ?? A.B5.STARTED,
+        l = (0, a.bG)([N.A], () => null != e ? N.A.getRequest(e) : null, [e]),
+        R = (0, s.zy)(),
+        g = (0, u.B)(R.pathname, p.BVt.CHANNEL(t?.id, h.VV.GUILD_ONBOARDING))?.isExact === !0;
+    if (null == t || !(0, I.Qd)(t) || g) return null;
+    let O = l?.applicationStatus ?? T.B5.STARTED,
         y = null,
         x = null,
-        f = null,
-        P = [h.lm, S.lm];
+        P = null,
+        f = [S.lm, C.lm];
     switch (O) {
-        case A.B5.SUBMITTED:
-            y = R.intl.string(R.t["5iLvSx"]), x = R.intl.string(R.t.mqtdmQ), f = () => {
+        case T.B5.SUBMITTED:
+            y = m.intl.string(m.t["5iLvSx"]), x = m.intl.string(m.t.mqtdmQ), P = () => {
                 (0, o.A)({
-                    title: R.intl.string(R.t.aIz1oV),
-                    subtitle: R.intl.string(R.t["13tjTU"]),
+                    title: m.intl.string(m.t.aIz1oV),
+                    subtitle: m.intl.string(m.t["13tjTU"]),
                     variant: "primary",
-                    confirmText: R.intl.string(R.t["cY+Oob"]),
+                    confirmText: m.intl.string(m.t["cY+Oob"]),
                     onConfirm: () => E.A.removeGuildJoinRequest(t.id)
                 })
             };
             break;
-        case A.B5.REJECTED:
-            y = R.intl.string(R.t.lk30cY), x = R.intl.string(R.t["8RrsHr"]), f = () => {
+        case T.B5.REJECTED:
+            y = m.intl.string(m.t.lk30cY), x = m.intl.string(m.t["8RrsHr"]), P = () => {
                 (0, c.mMO)(async () => {
                     let {
                         default: e
@@ -58,23 +58,23 @@ let g = () => {
                         ...n
                     })
                 })
-            }, P.push(h.z3);
+            }, f.push(S.z3);
             break;
         default:
-            y = R.intl.string(R.t.G5YKXP), x = R.intl.string(R.t["r8/DT+"]), f = () => {
-                (0, T.Ze)(t.id)
+            y = m.intl.string(m.t.G5YKXP), x = m.intl.string(m.t["r8/DT+"]), P = () => {
+                (0, A.Ze)(t.id)
             }
     }
     return (0, i.jsxs)("div", {
-        className: r()(...P),
+        className: r()(...f),
         children: [(0, i.jsx)(c.Text, {
-            className: h.wx,
+            className: S.wx,
             variant: "text-sm/normal",
             children: y
         }), (0, i.jsx)(c.Button, {
             variant: "overlay-primary",
             size: "sm",
-            onClick: f,
+            onClick: P,
             text: x
         })]
     })

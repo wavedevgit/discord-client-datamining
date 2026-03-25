@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(311907),
     s = n(713402),
     l = n(73153),
-    a = n(734057),
-    r = n(994500),
+    r = n(734057),
+    a = n(994500),
     o = n(977997),
     c = n(927813),
     d = n(898926);
@@ -56,7 +56,7 @@ function f(e) {
 }
 class x extends i.Ay.Store {
     initialize() {
-        this.waitFor(a.A, r.A, o.A)
+        this.waitFor(r.A, a.A, o.A)
     }
     __getLocalVars = () => ({
         channelEventMaps: _
@@ -98,7 +98,7 @@ let C = new x(l.h, {
                 userId: n,
                 channelId: i
             } = e;
-            !r.A.isBlockedOrIgnored(n) && null != i && _.has(i) && (t = g(i, n) || t)
+            !a.A.isBlockedOrIgnored(n) && null != i && _.has(i) && (t = g(i, n) || t)
         }), t
     },
     CHANNEL_DELETE: function(e) {

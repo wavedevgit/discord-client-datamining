@@ -1,7 +1,7 @@
 /** chunk id: 839671 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v,
-    K: () => j
+    A: () => j,
+    K: () => A
 });
 var a = n(627968),
     l = n(64700),
@@ -19,12 +19,12 @@ let h = [s.V.OFFICIAL, s.V.TWITTER, s.V.YOUTUBE],
     g = {
         colorClass: f.wP
     },
-    _ = {
+    p = {
         size: "xs",
         colorClass: f.wP
     };
 
-function p(e, t) {
+function _(e, t) {
     switch (e.category) {
         case s.V.OFFICIAL:
             return {
@@ -79,7 +79,7 @@ function p(e, t) {
     }
 }
 
-function A(e) {
+function v(e) {
     let {
         website: t,
         trackAction: n
@@ -87,7 +87,7 @@ function A(e) {
         action: i,
         icon: r,
         title: s
-    } = p(t, g), d = l.useCallback(() => {
+    } = _(t, g), d = l.useCallback(() => {
         n(i)
     }, [i, n]);
     return (0, a.jsx)(c.m, {
@@ -102,7 +102,7 @@ function A(e) {
         })
     })
 }
-let v = function(e) {
+let j = function(e) {
     let {
         detectedGame: t,
         trackAction: n
@@ -122,7 +122,7 @@ let v = function(e) {
             children: m.intl.string(m.t["Oj3o1/"])
         }), (0, a.jsx)("div", {
             className: r()(x.nM, x.mX),
-            children: l.map(e => (0, a.jsx)(A, {
+            children: l.map(e => (0, a.jsx)(v, {
                 website: e,
                 trackAction: n
             }, e.url))
@@ -130,7 +130,7 @@ let v = function(e) {
     })
 };
 
-function j(e) {
+function A(e) {
     let {
         website: t,
         trackAction: n
@@ -138,7 +138,7 @@ function j(e) {
         action: r,
         icon: s,
         title: d
-    } = p(t, _), m = l.useCallback(() => {
+    } = _(t, p), m = l.useCallback(() => {
         n(r), i(t.url)
     }, [r, i, n, t.url]);
     return (0, a.jsx)(c.m, {

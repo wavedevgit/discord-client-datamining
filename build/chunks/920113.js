@@ -42,16 +42,16 @@ let v = (0, u.A)(function(e) {
     (0, h.HU)({
         location: N.intl.string(N.t["jnXV/V"])
     });
-    let [y, b] = a.useState(!1);
+    let [b, y] = a.useState(!1);
     a.useEffect(() => {
         let e = e => {
-                e.metaKey && b(!0)
+                e.metaKey && y(!0)
             },
             t = e => {
-                "Meta" === e.key && b(!1)
+                "Meta" === e.key && y(!1)
             },
             n = () => {
-                b(!1)
+                y(!1)
             };
         return window.addEventListener("keydown", e), window.addEventListener("keyup", t), window.addEventListener("blur", n), () => {
             window.removeEventListener("keydown", e), window.removeEventListener("keyup", t), window.removeEventListener("blur", n)
@@ -64,7 +64,7 @@ let v = (0, u.A)(function(e) {
         R = a.useCallback(async e => {
             e.metaKey && L ? await (0, I.be)(T.ZSU.ACK_GRAVITY_REGENERATE_FEED_AND_CLEAR_READ_STATES_BUTTON) : await O()
         }, [O, L]),
-        P = y && L ? N.intl.string(N.t.YplSn2) : N.intl.string(N.t.wzzjk9);
+        P = b && L ? N.intl.string(N.t.YplSn2) : N.intl.string(N.t.wzzjk9);
     return n ? (0, i.jsxs)("div", {
         className: r()(x.TE, S.kL),
         children: [(0, i.jsx)(d.NPJ, {

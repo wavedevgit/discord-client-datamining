@@ -36,13 +36,13 @@ function f(e) {
     }, [n, t, f]);
     if (null == n) return null;
     let {
-        skuIds: _
+        skuIds: p
     } = n;
     return (0, a.jsx)(m.A, {
         title: x.intl.string(x.t.WDdlUb),
         onClickViewAll: h,
         children: (0, a.jsx)(o.R, {
-            skuIds: _,
+            skuIds: p,
             analyticsLocations: f,
             onCardClick: g
         })

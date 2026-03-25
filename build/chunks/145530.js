@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(665260),
+    r = n.n(l),
+    a = n(665260),
     o = n(158954),
     c = n(314116),
     d = n(397927),
@@ -41,12 +41,12 @@ class T extends s.PureComponent {
             moderatorReportData: s
         } = this.props, {
             moderatorReportChannelId: l,
-            isFlagResolved: a
+            isFlagResolved: r
         } = s ?? {};
         e ? (0, p.V2)(i, "message_delete_alert", () => h.A.deleteMessage(n.id, i.id).then(() => {
-            null != l && (t && !a && g.A.resolveFlag(l), this.props.onClose?.())
+            null != l && (t && !r && g.A.resolveFlag(l), this.props.onClose?.())
         })) : h.A.deleteMessage(n.id, i.id).then(() => {
-            null != l && (t && !a && g.A.resolveFlag(l), this.props.onClose?.())
+            null != l && (t && !r && g.A.resolveFlag(l), this.props.onClose?.())
         })
     };
     handleDeleteMana = () => {
@@ -69,16 +69,16 @@ class T extends s.PureComponent {
             } = this.state,
             {
                 channel: l,
-                message: a,
+                message: r,
                 showContextMenuHint: c,
                 moderatorReportData: u,
                 ...h
             } = this.props,
-            A = l.type === I.rbe.GUILD_ANNOUNCEMENT && (0, r.Lt)(a.flags, I.pr7.CROSSPOSTED);
+            A = l.type === I.rbe.GUILD_ANNOUNCEMENT && (0, a.Lt)(r.flags, I.pr7.CROSSPOSTED);
         c && (e = (0, i.jsx)(m.A, {
             className: S.Vc,
             children: N.intl.format(N.t.IxY7E6, {})
-        })), (0, C.AR)(a) && (t = (0, i.jsx)("div", {
+        })), (0, C.AR)(r) && (t = (0, i.jsx)("div", {
             className: S.Vc,
             children: (0, i.jsx)(d.dOG, {
                 label: N.intl.string(N.t.x0jzo9),
@@ -92,7 +92,7 @@ class T extends s.PureComponent {
                     className: S.iU,
                     children: (0, i.jsx)(E.A, {
                         channel: l,
-                        message: a,
+                        message: r,
                         disableInteraction: !0
                     })
                 }), t, e]
@@ -179,7 +179,7 @@ let v = {
             cancelText: N.intl.string(N.t["ETE/oC"]),
             children: (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)("div", {
-                    className: a()(S.iU, S.YK),
+                    className: r()(S.iU, S.YK),
                     children: (0, i.jsx)(E.A, {
                         channel: e,
                         message: t,

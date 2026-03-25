@@ -1,18 +1,17 @@
 /** chunk id: 552736 params = (module,exports,require) **/
-"use strict";
-n.d(t, {
+t.d(n, {
     A: () => o
 });
-var i = n(64700),
-    a = n(607399),
-    r = n(437852),
-    s = n(657515);
+var i = t(64700),
+    _ = t(607399),
+    a = t(437852),
+    r = t(657515);
 
 function o() {
     let {
         enabled: e
-    } = r.Ay.useConfig({
+    } = a.Ay.useConfig({
         location: "useGiftingPromotionConfig"
     });
-    return i.useMemo(() => a.Fr || a.v1 ? null : e ? s.zH : null, [e])
+    return i.useMemo(() => _.Fr || _.v1 ? null : e ? r.zH : null, [e])
 }

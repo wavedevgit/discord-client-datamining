@@ -62,14 +62,14 @@ function v(e, t, n) {
     }), t.end(n)
 }
 
-function y(e, t, n, i) {
+function b(e, t, n, i) {
     let a = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : 0;
     v(e, t, {
         code: a,
         message: i
     }, n)
 }
-class b extends m.A {
+class y extends m.A {
     _socket;
     constructor(e, t, n) {
         if (super("ws", t, n), -1 === ["etf", "json"].indexOf(n)) throw new h.A({
@@ -134,10 +134,10 @@ class L extends l.EventEmitter {
                     } = u.A.toURLSafe(n.get("callback") ?? "") ?? {};
                     e === location.protocol && i === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", C), t.writeHead(301), t.end()
                 },
-                s = new O(!l ? r : v.bind(null, e, t), !l ? r : y.bind(null, e, t, 400), Number(n.get("v")), a);
+                s = new O(!l ? r : v.bind(null, e, t), !l ? r : b.bind(null, e, t, 400), Number(n.get("v")), a);
             l ? (0, g.j7)(s, S(e.headers).origin, n.get("client_id")).then(() => {
                 let n = "";
-                e.on("data", e => n += e), e.on("error", () => y(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(s, n))
+                e.on("data", e => n += e), e.on("error", () => b(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(s, n))
             }).catch(e => {
                 let {
                     code: t,
@@ -147,13 +147,13 @@ class L extends l.EventEmitter {
             }) : (s.authorization.scopes = [p.kw], this.handleMessage(s, decodeURIComponent(n.get("payload") ?? "")));
             return
         }
-        y(e, t, 404, "Not Found")
+        b(e, t, 404, "Not Found")
     }
     handleConnection(e) {
         let t, n = new URLSearchParams(S(e.upgradeReq).url.split("?")[1]),
             i = S(e.upgradeReq).headers.origin ?? "";
         try {
-            t = new b(e, Number(n.get("v")), n.get("encoding") ?? "json")
+            t = new y(e, Number(n.get("v")), n.get("encoding") ?? "json")
         } catch (t) {
             e.close(t.code, t.message);
             return

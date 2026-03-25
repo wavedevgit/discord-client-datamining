@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(478437),
     s = n(574381),
     l = n(311907),
-    a = n(73153),
-    r = n(142120),
+    r = n(73153),
+    a = n(142120),
     o = n(927813),
     c = n(661470);
 let d = new Set,
@@ -26,7 +26,7 @@ function m(e) {
 }
 class _ extends l.Ay.Store {
     initialize() {
-        this.waitFor(r.A)
+        this.waitFor(a.A)
     }
     static displayName = "VoiceChannelStartTimeStore";
     getStartTime(e) {
@@ -36,7 +36,7 @@ class _ extends l.Ay.Store {
         return d.has(e)
     }
 }
-let p = new _(a.h, {
+let p = new _(r.h, {
     GUILD_CREATE: m,
     GUILD_DELETE: m,
     CONNECTION_RESUMED: A,
@@ -68,6 +68,6 @@ let p = new _(a.h, {
         let {
             guildId: t
         } = e;
-        d.add(t), r.A.getSocket().requestChannelInfo(t, ["status", "voice_start_time"])
+        d.add(t), a.A.getSocket().requestChannelInfo(t, ["status", "voice_start_time"])
     }
 })

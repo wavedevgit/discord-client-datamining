@@ -8,8 +8,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(990078),
+    r = n.n(l),
+    a = n(990078),
     o = n(397927),
     c = n(367513),
     d = n(442433),
@@ -61,7 +61,7 @@ function U(e) {
         count: t
     });
     return (0, i.jsxs)("div", {
-        className: a()(D.yJ, {
+        className: r()(D.yJ, {
             [D.Nr]: n
         }),
         children: [(0, i.jsx)("div", {
@@ -108,8 +108,8 @@ let P = (0, A.J)(function(e) {
         voicePlatform: ei,
         isSelfOnOtherClient: es = !1,
         tabIndex: el,
-        isSelf: ea,
-        application: er,
+        isSelf: er,
+        application: ea,
         hangStatusActivity: eo,
         showHangStatus: ec
     } = e, ed = s.useRef(null), [eu, eh] = s.useState(!1), eA = s.useRef(null), [em, e_] = s.useState(!1), [ep, eg] = s.useState(!1), [ef, ex] = s.useState(!1), eC = em || ef || ep, eE = () => {
@@ -151,7 +151,7 @@ let P = (0, A.J)(function(e) {
                 })
             })
         },
-        eT = e => ea ? (0, i.jsx)(E.h, {
+        eT = e => er ? (0, i.jsx)(E.h, {
             ...e,
             channel: A,
             setIsHangStatusInputFocused: e_,
@@ -202,7 +202,7 @@ let P = (0, A.J)(function(e) {
                         otherClientSessionType: en,
                         voicePlatform: ei,
                         embeddedApplication: V,
-                        avatarContainerClass: a()({
+                        avatarContainerClass: r()({
                             [D.dj]: !0
                         }),
                         disabled: es && !n,
@@ -211,12 +211,12 @@ let P = (0, A.J)(function(e) {
                         onDoubleClick: eb,
                         onContextMenu: eS,
                         guildId: A.guild_id,
-                        isSelf: ea,
-                        application: er,
+                        isSelf: er,
+                        application: ea,
                         channelId: A.id,
                         hangStatusActivity: eo,
                         showHangStatus: ec
-                    }, es ? (0, i.jsx)(r.m, {
+                    }, es ? (0, i.jsx)(a.m, {
                         text: (0, g.A)(en) ?? M.intl.string(M.t.IyYqqY),
                         children: (0, i.jsx)(b.Ay, {
                             ref: ed,
@@ -233,7 +233,7 @@ let P = (0, A.J)(function(e) {
                             hangStatusActivity: eo,
                             renderSelfHangStatus: eT
                         }),
-                        shouldShow: (et || ec && eC && ea) && !eu,
+                        shouldShow: (et || ec && eC && er) && !eu,
                         onRequestClose: eI,
                         spacing: 17,
                         children: () => (0, i.jsx)(b.Ay, {

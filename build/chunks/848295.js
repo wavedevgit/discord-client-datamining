@@ -26,8 +26,8 @@ var i = n(627968),
     S = n(49999),
     x = n(985018),
     v = n(530811);
-let y = [],
-    b = e => {
+let b = [],
+    y = e => {
         let {
             tagText: t,
             className: n
@@ -49,7 +49,7 @@ let y = [],
             className: r()(v.Vr, {
                 [v.tF]: s
             }),
-            children: [null != l ? (0, i.jsx)(b, {
+            children: [null != l ? (0, i.jsx)(y, {
                 tagText: l,
                 className: v.bX
             }) : null, (0, i.jsx)("img", {
@@ -78,7 +78,7 @@ function L(e) {
         componentId: t,
         promotionId: n,
         className: l,
-        renderModalProps: b,
+        renderModalProps: y,
         heroArt: L,
         heroArtClassName: R,
         modalTopExtra: P,
@@ -93,7 +93,7 @@ function L(e) {
     } = e, {
         onClose: B,
         transitionState: H
-    } = b, F = (0, p.GV)(), Y = U.length % 2 == 0, W = (0, d.bG)([h.A], () => h.A.useReducedMotion), [K, q] = a.useState(Date.now()), [z, $] = a.useState(0), [Q, X] = a.useState(0), [Z, J] = a.useState(!1), [ee, et] = a.useState(!0), en = a.useRef(K), ei = a.useRef(z), ea = a.useRef(Q), el = a.useRef(Z), er = a.useRef(ee), [es, eo] = a.useState(y), ed = a.useRef(!1);
+    } = y, F = (0, p.GV)(), Y = U.length % 2 == 0, W = (0, d.bG)([h.A], () => h.A.useReducedMotion), [K, q] = a.useState(Date.now()), [z, $] = a.useState(0), [Q, X] = a.useState(0), [Z, J] = a.useState(!1), [ee, et] = a.useState(!0), en = a.useRef(K), ei = a.useRef(z), ea = a.useRef(Q), el = a.useRef(Z), er = a.useRef(ee), [es, eo] = a.useState(b), ed = a.useRef(!1);
 
     function ec() {
         let e = Date.now(),
@@ -128,7 +128,7 @@ function L(e) {
                 });
                 eo(await Promise.all(e))
             } catch (e) {
-                T.A.captureException(e), eo(y)
+                T.A.captureException(e), eo(b)
             }
         };
         !0 !== ed.current && e(), ed.current = !0

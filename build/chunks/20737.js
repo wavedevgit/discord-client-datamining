@@ -83,9 +83,7 @@ let k = l.memo(function(e) {
         ec = (0, C.Tb)(s),
         ed = !S.D_.useSetting() && !(0, y.isAndroidWeb)() && null != window.ResizeObserver,
         eu = (0, E.I7)(s ?? void 0),
-        eh = (0, x.Sc)({
-            location: "ChannelAttachButton"
-        }),
+        eh = (0, x.Sc)(),
         em = (0, u.b)(),
         eA = Y?.length ?? 0,
         eg = (0, D.A)({

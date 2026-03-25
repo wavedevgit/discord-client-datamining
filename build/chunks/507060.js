@@ -47,8 +47,8 @@ let T = (0, _.Fe)({
         [I.zgK.COLLECTIBLES_SHOP]: () => (0, i.jsx)(S, {}),
         [I.zgK.COMPONENT_PLAYGROUND]: () => (0, i.jsx)(T, {})
     },
-    y = "SHOWN",
-    b = "HIDDEN",
+    b = "SHOWN",
+    y = "HIDDEN",
     O = {
         friction: 10,
         tension: 100
@@ -73,7 +73,7 @@ class R extends a.PureComponent {
         super(e);
         let t = 1,
             n = 1;
-        e.mode === b && (t = .93, n = 0), this.state = {
+        e.mode === y && (t = .93, n = 0), this.state = {
             animating: !1,
             scale: new s.A.Value(t),
             opacity: new s.A.Value(n),
@@ -87,8 +87,8 @@ class R extends a.PureComponent {
             mode: n
         } = e;
         if (t !== n) {
-            if (t === y && n === b) return this.animateIn();
-            if (t === b && n === y) return this.animateUnder()
+            if (t === b && n === y) return this.animateIn();
+            if (t === y && n === b) return this.animateUnder()
         }
     }
     componentWillEnter(e) {
@@ -163,7 +163,7 @@ class R extends a.PureComponent {
             children: a,
             baseLayer: l,
             ...o
-        } = this.props, d = n === b, u = e || d ? this.getAnimatedStyle() : null, A = !d && !l, h = (0, i.jsx)(s.A.div, {
+        } = this.props, d = n === y, u = e || d ? this.getAnimatedStyle() : null, A = !d && !l, h = (0, i.jsx)(s.A.div, {
             ref: e => this.containerRef.current = null != e ? e.componentRef : void 0,
             "data-layer": t ?? "base",
             "aria-hidden": d,
@@ -184,7 +184,7 @@ class R extends a.PureComponent {
             className: r()(C.qd, {
                 [C.n3]: l,
                 [C.bW]: e,
-                "stop-animations": n === b
+                "stop-animations": n === y
             }),
             style: u,
             ...o,
@@ -230,7 +230,7 @@ class P extends a.PureComponent {
             length: a
         } = t, l = [];
         return l.push((0, i.jsx)(R, {
-            mode: 0 !== a || n ? b : y,
+            mode: 0 !== a || n ? y : b,
             baseLayer: !0,
             children: e
         }, "layer-base")), t.forEach((e, t) => l.push(this.renderComponent(e, t, a))), l
@@ -239,7 +239,7 @@ class P extends a.PureComponent {
         let a;
         return a = "string" == typeof e ? v[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(R, {
             name: "string" == typeof e ? e : void 0,
-            mode: t === n - 1 ? y : b,
+            mode: t === n - 1 ? b : y,
             children: [(0, i.jsx)(L, {}), a]
         }, `layer-${t}`)
     }

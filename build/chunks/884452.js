@@ -8,8 +8,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    a = n(637248),
-    r = n(728321),
+    r = n(637248),
+    a = n(728321),
     o = n(244083),
     c = n(32603),
     d = n(823142),
@@ -64,7 +64,7 @@ let g = s.memo(function(e) {
         if (null == e) return;
         let t = null,
             i = e.getShownChannelAndThreadIds();
-        null != g && i.includes(g) && (t = (0, a.xb)(_)), (0, a.DD)(n.id, i, t)
+        null != g && i.includes(g) && (t = (0, r.xb)(_)), (0, r.DD)(n.id, i, t)
     }, [n.id, g, _, p]), {
         density: C
     } = (0, l.wRf)(), E = "compact" === C ? 8 : 12;
@@ -111,7 +111,7 @@ let g = s.memo(function(e) {
                 channel: e.record,
                 position: e.position,
                 disableManageChannels: f,
-                children: (0, i.jsx)(r.A, {
+                children: (0, i.jsx)(a.A, {
                     inlineSpecs: u.qB,
                     arrowAlignment: o.oN.TOP,
                     tutorialId: "organize-by-topic",

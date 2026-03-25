@@ -6,9 +6,9 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(735438),
-    o = n.n(r),
+    r = n.n(l),
+    a = n(735438),
+    o = n.n(a),
     c = n(311907),
     d = n(435371),
     u = n(397927),
@@ -52,13 +52,13 @@ function v() {
             } = e;
             return t
         })), [n]),
-        a = (0, c.yK)([m.A], () => o().flatMap(s, e => m.A.getMutableParticipants(e, _.ip.SPEAKER).filter(e => e.type === _.wY.VOICE).map(e => {
+        r = (0, c.yK)([m.A], () => o().flatMap(s, e => m.A.getMutableParticipants(e, _.ip.SPEAKER).filter(e => e.type === _.wY.VOICE).map(e => {
             let {
                 user: t
             } = e;
             return t
         }))),
-        r = (0, c.bG)([m.A], () => {
+        a = (0, c.bG)([m.A], () => {
             let e = 0;
             for (let t of s) e += m.A.getParticipantCount(t, _.ip.AUDIENCE);
             return e
@@ -73,7 +73,7 @@ function v() {
         v = (0, c.yK)([f.default], () => b.map(e => f.default.getUser(e)), [b]),
         y = (0, c.yK)([f.default], () => d.map(e => f.default.getUser(e)), [d]),
         j = T(u.HKD, l.filter(e => !d.includes(e.id) && !b.includes(e.id))),
-        R = 0 === a.length ? null : (0, i.jsxs)("div", {
+        R = 0 === r.length ? null : (0, i.jsxs)("div", {
             className: S.nM,
             children: [(0, i.jsx)(u.qux, {
                 size: "lg",
@@ -81,7 +81,7 @@ function v() {
                 className: S.RI
             }), (0, i.jsx)(A.Ay, {
                 guildId: void 0,
-                users: a,
+                users: r,
                 max: 3
             }), (0, i.jsxs)("div", {
                 className: S.GZ,
@@ -92,7 +92,7 @@ function v() {
                     className: S._I,
                     color: "text-default",
                     variant: "text-xs/medium",
-                    children: r
+                    children: a
                 })]
             })]
         }),
@@ -106,9 +106,9 @@ function v() {
 function y() {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
-            className: a()(S.nM, S.Dl),
+            className: r()(S.nM, S.Dl),
             children: (0, i.jsx)("span", {
-                className: a()(S.cN, S.NT),
+                className: r()(S.cN, S.NT),
                 children: b.intl.string(b.t.wMWyci)
             })
         }), (0, i.jsx)(v, {})]

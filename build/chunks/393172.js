@@ -1,231 +1,231 @@
 /** chunk id: 393172 params = (module,exports,require) **/
-i.d(t, {
-    Ay: () => z,
-    DH: () => Y
-}), i(321073);
-var n = i(627968),
-    l = i(64700),
-    s = i(503698),
-    a = i.n(s),
-    r = i(311907),
-    d = i(397927),
-    o = i(717558),
-    u = i(429913),
-    c = i(478063),
-    A = i(47167),
-    m = i(22705),
-    g = i(209932),
-    h = i(63995),
-    p = i(69407),
-    x = i(530804),
-    f = i(616356),
-    I = i(961350),
-    S = i(734057),
-    E = i(309010),
-    v = i(485296),
-    y = i(287809),
-    N = i(977997),
-    V = i(607567),
-    j = i(256415),
-    T = i(403362),
-    C = i(996439),
-    _ = i(820883),
-    w = i(810412),
-    b = i(412477),
-    O = i(395011),
-    G = i(243612),
-    D = i(147905);
-i(392164);
-var P = i(652215),
-    M = i(731854),
-    k = i(985018),
-    R = i(585990);
-let L = e => {
-    let t = (e ?? 0) % _.A.DEFAULT_AVATARS.length;
-    return _.A.DEFAULT_AVATARS[t]
+n.d(t, {
+    Ay: () => F,
+    DH: () => K
+}), n(321073);
+var l = n(627968),
+    i = n(64700),
+    s = n(503698),
+    r = n.n(s),
+    a = n(311907),
+    c = n(397927),
+    o = n(717558),
+    d = n(429913),
+    u = n(478063),
+    A = n(47167),
+    g = n(22705),
+    h = n(209932),
+    x = n(63995),
+    m = n(69407),
+    p = n(530804),
+    f = n(616356),
+    T = n(961350),
+    I = n(734057),
+    S = n(309010),
+    v = n(485296),
+    y = n(287809),
+    E = n(977997),
+    j = n(607567),
+    C = n(256415),
+    N = n(403362),
+    V = n(996439),
+    D = n(820883),
+    k = n(810412),
+    w = n(412477),
+    b = n(395011),
+    U = n(243612),
+    M = n(147905);
+n(392164);
+var G = n(652215),
+    R = n(731854),
+    _ = n(985018),
+    P = n(585990);
+let z = e => {
+    let t = (e ?? 0) % D.A.DEFAULT_AVATARS.length;
+    return D.A.DEFAULT_AVATARS[t]
 };
 
-function U(e) {
+function L(e) {
     let {
         hiddenVoiceStates: t,
-        voiceStateMap: i,
-        size: l,
+        voiceStateMap: n,
+        size: i,
         locked: s,
         flipped: o
-    } = e, u = (0, D.Ob)(l), A = (0, r.yK)([y.default, S.A], () => t.map(e => {
+    } = e, d = (0, M.Ob)(i), A = (0, a.yK)([y.default, I.A], () => t.map(e => {
         let t = y.default.getUser(e);
         if (null == t) return;
-        let n = S.A.getChannel(i.get(e)?.voiceState.channelId);
-        return t.getAvatarURL(n?.getGuildId(), u, !1)
-    }).filter(T.Vq), [t, i, u]), m = A[0] ?? L(0), g = A[1] ?? L(1);
-    return (0, n.jsxs)("div", {
-        className: a()(R.ZR, s && R.xt, o && R.zq),
-        children: [(0, n.jsx)("div", {
-            className: R.e5,
-            children: (0, n.jsx)(c.A, {
-                size: l,
-                backSrc: m,
-                frontSrc: g,
+        let l = I.A.getChannel(n.get(e)?.voiceState.channelId);
+        return t.getAvatarURL(l?.getGuildId(), d, !1)
+    }).filter(N.Vq), [t, n, d]), g = A[0] ?? z(0), h = A[1] ?? z(1);
+    return (0, l.jsxs)("div", {
+        className: r()(P.ZR, s && P.xt, o && P.zq),
+        children: [(0, l.jsx)("div", {
+            className: P.e5,
+            children: (0, l.jsx)(u.A, {
+                size: i,
+                backSrc: g,
+                frontSrc: h,
                 isTyping: !1
             })
-        }), (0, n.jsx)("div", {
-            className: R.AP,
-            children: (0, n.jsxs)(d.Text, {
+        }), (0, l.jsx)("div", {
+            className: P.AP,
+            children: (0, l.jsxs)(c.Text, {
                 variant: "text-xs/medium",
                 children: ["+", t.length, " others in voice"]
             })
         })]
     })
 }
-let Y = l.memo(function(e) {
+let K = i.memo(function(e) {
     let {
         id: t,
-        context: i = M.x.DEFAULT,
+        context: n = R.x.DEFAULT,
         channel: s,
-        overlayVoiceStates: a,
+        overlayVoiceStates: r,
         displayNameMode: o,
-        displayUserMode: u,
-        locked: c,
+        displayUserMode: d,
+        locked: u,
         pinned: A,
-        guildId: m,
-        showEmpty: g = !0,
-        isPreviewingInGame: h,
-        isSettingsPreview: p = !1,
-        anchorLeft: x,
-        avatarSizeMode: I,
-        maxDisplayedVoiceStates: S = 8
-    } = e, E = (0, w.Dk)(() => (function(e) {
-        let [t, i] = e;
-        return new Set(i)
-    })(a), [a]), [v, y] = a, N = y.length > 0 && null != i && null != s && (!c || A), V = (0, r.yK)([f.A], () => Array.from(E).map(e => f.A.getStreamForUser(e, m)).filter(T.Vq).map(e => e.ownerId), [m, E]);
-    l.useEffect(() => {
-        N && (0, w.Y)(P.uss.VOICE_V3, {
-            locked: j.default.isInstanceLocked(),
-            shownUserIds: Array.from(E),
-            liveUserIds: V,
+        guildId: g,
+        showEmpty: h = !0,
+        isPreviewingInGame: x,
+        isSettingsPreview: m = !1,
+        anchorLeft: p,
+        avatarSizeMode: T,
+        maxDisplayedVoiceStates: I = 8
+    } = e, S = (0, k.Dk)(() => (function(e) {
+        let [t, n] = e;
+        return new Set(n)
+    })(r), [r]), [v, y] = r, E = y.length > 0 && null != n && null != s && (!u || A), j = (0, a.yK)([f.A], () => Array.from(S).map(e => f.A.getStreamForUser(e, g)).filter(N.Vq).map(e => e.ownerId), [g, S]);
+    i.useEffect(() => {
+        E && (0, k.Y)(G.uss.VOICE_V3, {
+            locked: C.default.isInstanceLocked(),
+            shownUserIds: Array.from(S),
+            liveUserIds: j,
             contentInventoryIds: []
         })
-    }, [E, V, N]);
-    let C = -1 !== S ? y.slice(0, S) : y,
-        _ = -1 !== S ? y.slice(S) : [],
-        O = v.get(_[0]),
-        G = u === P.f5z.ALWAYS && -1 !== S;
-    return N ? (0, n.jsxs)("div", {
-        className: R.h8,
-        children: [C.map(e => {
-            let l = v.get(e);
-            return null == l ? null : (0, n.jsx)(D.Ay, {
-                sortedVoiceState: l,
+    }, [S, j, E]);
+    let V = -1 !== I ? y.slice(0, I) : y,
+        D = -1 !== I ? y.slice(I) : [],
+        b = v.get(D[0]),
+        U = d === G.f5z.ALWAYS && -1 !== I;
+    return E ? (0, l.jsxs)("div", {
+        className: P.h8,
+        children: [V.map(e => {
+            let i = v.get(e);
+            return null == i ? null : (0, l.jsx)(M.Ay, {
+                sortedVoiceState: i,
                 channel: s,
                 widgetId: t,
-                flipped: !x,
-                isPreviewingInGame: h,
-                isSettingsPreview: p,
-                context: i,
-                size: I,
+                flipped: !p,
+                isPreviewingInGame: x,
+                isSettingsPreview: m,
+                context: n,
+                size: T,
                 displayNameMode: o,
-                displayUserMode: u,
-                locked: c
+                displayUserMode: d,
+                locked: u
             }, e)
-        }), G && 1 === _.length && null != O && (0, n.jsx)(D.Ay, {
-            sortedVoiceState: O,
+        }), U && 1 === D.length && null != b && (0, l.jsx)(M.Ay, {
+            sortedVoiceState: b,
             channel: s,
             widgetId: t,
-            flipped: !x,
-            isPreviewingInGame: h,
-            isSettingsPreview: p,
-            context: i,
-            size: I,
+            flipped: !p,
+            isPreviewingInGame: x,
+            isSettingsPreview: m,
+            context: n,
+            size: T,
             displayNameMode: o,
-            displayUserMode: u,
-            locked: c
-        }, _[0]), G && _.length > 1 && (0, n.jsx)(U, {
-            hiddenVoiceStates: _,
+            displayUserMode: d,
+            locked: u
+        }, D[0]), U && D.length > 1 && (0, l.jsx)(L, {
+            hiddenVoiceStates: D,
             voiceStateMap: v,
-            size: (0, D.FT)(I),
-            locked: c,
-            flipped: !x
+            size: (0, M.FT)(T),
+            locked: u,
+            flipped: !p
         })]
-    }) : c || !g ? null : (0, n.jsx)(b.g, {
-        emptyText: k.intl.string(k.t.hEh0l1),
-        icon: d.HKD
+    }) : u || !h ? null : (0, l.jsx)(w.g, {
+        emptyText: _.intl.string(_.t.hEh0l1),
+        icon: c.HKD
     })
 });
 
-function z(e) {
+function F(e) {
     let {
         isSettingsPreview: t
-    } = e, i = (0, r.bG)([E.A, S.A], () => S.A.getChannel(E.A.getVoiceChannelId())), s = (0, A.Ay)(i), a = function(e, t) {
-        let i = (0, r.bG)([E.A, S.A], () => S.A.getChannel(E.A.getVoiceChannelId())),
-            [n] = (0, r.bG)([V.Ay, h.A, E.A, S.A], () => {
-                let e = S.A.getChannel(E.A.getVoiceChannelId());
+    } = e, n = (0, a.bG)([S.A, I.A], () => I.A.getChannel(S.A.getVoiceChannelId())), s = (0, A.Ay)(n), r = function(e, t) {
+        let n = (0, a.bG)([S.A, I.A], () => I.A.getChannel(S.A.getVoiceChannelId())),
+            [l] = (0, a.bG)([j.Ay, x.A, S.A, I.A], () => {
+                let e = I.A.getChannel(S.A.getVoiceChannelId());
                 return null == e ? [
                     [], -1
-                ] : e.isGuildStageVoice() ? [h.A.getMutableParticipants(e.id, p.ip.SPEAKER), h.A.getParticipantsVersion(e.id)] : [V.Ay.getVoiceStatesForChannel(e), V.Ay.getVoiceStateVersion(e.getGuildId())]
-            }, [], C.D),
-            s = (0, x.$n)(i?.id, n),
-            a = l.useMemo(() => new Map(s.map(e => [e.user.id, e])), [s]),
-            d = (0, r.bG)([I.default], () => I.default.getId());
-        return [a, (0, r.yK)([N.A, E.A, v.A, g.A], () => {
-            let i = Array.from(new Set(s.map(e => {
+                ] : e.isGuildStageVoice() ? [x.A.getMutableParticipants(e.id, m.ip.SPEAKER), x.A.getParticipantsVersion(e.id)] : [j.Ay.getVoiceStatesForChannel(e), j.Ay.getVoiceStateVersion(e.getGuildId())]
+            }, [], V.D),
+            s = (0, p.$n)(n?.id, l),
+            r = i.useMemo(() => new Map(s.map(e => [e.user.id, e])), [s]),
+            c = (0, a.bG)([T.default], () => T.default.getId());
+        return [r, (0, a.yK)([E.A, S.A, v.A, h.A], () => {
+            let n = Array.from(new Set(s.map(e => {
                 let {
                     user: t
                 } = e;
                 return t.id
             })));
-            if (-1 === t || i.length <= t) return i;
-            let n = new Map;
-            for (let t of i) {
-                let i = (0, o.R)({
+            if (-1 === t || n.length <= t) return n;
+            let l = new Map;
+            for (let t of n) {
+                let n = (0, o.R)({
                         userId: t,
                         checkSoundSharing: !0,
                         checkSoundboardSounds: !1,
                         checkIsMuted: !0,
                         context: e
-                    }, [N.A, E.A, v.A, g.A]),
-                    l = t === d;
-                (i || l) && n.set(t, {
-                    isSpeaking: i,
-                    isCurrentUser: l
+                    }, [E.A, S.A, v.A, h.A]),
+                    i = t === c;
+                (n || i) && l.set(t, {
+                    isSpeaking: n,
+                    isCurrentUser: i
                 })
             }
-            let l = [],
-                a = [],
-                r = [];
-            for (let e = 0; e < i.length; e++) {
-                let s = i[e],
-                    d = n.get(s);
-                e < t ? l.push(s) : d && (d.isSpeaking || d.isCurrentUser) ? r.push(s) : a.push(s)
+            let i = [],
+                r = [],
+                a = [];
+            for (let e = 0; e < n.length; e++) {
+                let s = n[e],
+                    c = l.get(s);
+                e < t ? i.push(s) : c && (c.isSpeaking || c.isCurrentUser) ? a.push(s) : r.push(s)
             }
-            if (r.length > 0) {
-                let e = l.slice(0, t - r.length),
-                    i = l.slice(t - r.length);
-                return [...e, ...r, ...i, ...a]
+            if (a.length > 0) {
+                let e = i.slice(0, t - a.length),
+                    n = i.slice(t - a.length);
+                return [...e, ...a, ...n, ...r]
             }
-            return i
-        }, [s, e, d, t])]
-    }(M.x.DEFAULT, e.maxDisplayedVoiceStates), d = (0, r.bG)([f.A], () => f.A.getStreamerActiveStreamMetadata()), c = (0, G.b4)(), y = (0, u.h)(c?.id), T = (0, r.cf)([f.A, j.default, O.A], () => {
+            return n
+        }, [s, e, c, t])]
+    }(R.x.DEFAULT, e.maxDisplayedVoiceStates), c = (0, a.bG)([f.A], () => f.A.getStreamerActiveStreamMetadata()), u = (0, U.b4)(), y = (0, d.h)(u?.id), N = (0, a.cf)([f.A, C.default, b.A], () => {
         let e = f.A.getCurrentUserActiveStream();
         return {
-            displayUserMode: j.default.getDisplayUserMode(),
-            displayNameMode: j.default.getDisplayNameMode(),
-            avatarSizeMode: j.default.getAvatarSizeMode(),
-            streamApplication: d?.pid === O.A.getTargetPID() ? (0, m.A)(c) : null,
+            displayUserMode: C.default.getDisplayUserMode(),
+            displayNameMode: C.default.getDisplayNameMode(),
+            avatarSizeMode: C.default.getAvatarSizeMode(),
+            streamApplication: c?.pid === b.A.getTargetPID() ? (0, g.A)(u) : null,
             stream: e
         }
     });
-    return (0, n.jsx)(Y, {
-        ...T,
+    return (0, l.jsx)(K, {
+        ...N,
         application: y,
         ...e,
-        overlayVoiceStates: a,
-        channel: i,
-        guildId: i?.guild_id,
+        overlayVoiceStates: r,
+        channel: n,
+        guildId: n?.guild_id,
         title: s ?? "",
-        streamMetadata: d,
-        streamApplication: T.streamApplication ?? {
+        streamMetadata: c,
+        streamApplication: N.streamApplication ?? {
             id: null,
-            name: d?.sourceName
+            name: c?.sourceName
         },
         isSettingsPreview: t
     })
