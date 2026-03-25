@@ -1,9 +1,9 @@
 /** chunk id: 382913 params = (module,exports,require) **/
-i.d(t, {
-    B: () => n
+n.d(t, {
+    B: () => i
 });
 
-function n(e) {
+function i(e) {
     return e.map((e, t) => ({
         file: e.file,
         name: e.id ?? `attachment_${t}`,

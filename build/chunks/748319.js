@@ -25,15 +25,15 @@ var a = n(627968),
     A = n(29160),
     C = n(793574),
     y = n(688810),
-    T = n(325445),
-    S = n(954921),
-    E = n(521502),
-    N = n(380610),
-    I = n(313961),
-    k = n(18235),
-    O = n(183184),
-    R = n(384059),
-    w = n(480890),
+    T = n(521502),
+    S = n(380610),
+    E = n(313961),
+    N = n(18235),
+    I = n(183184),
+    k = n(384059),
+    O = n(480890),
+    R = n(601255),
+    w = n(562819),
     D = n(302223),
     P = n(609425),
     M = n(922301),
@@ -107,7 +107,7 @@ function eM(e) {
         "data-jump-section": _
     } = e, v = i.useRef(null), b = t ?? v, j = (0, ex.F_)({
         avatarDecoration: g,
-        size: (0, S.Te)(h._3J.SIZE_32)
+        size: (0, w.Te)(h._3J.SIZE_32)
     }), A = (0, P.A)(), {
         updateOpenPopoutRef: C,
         highlightBadge: y,
@@ -136,7 +136,7 @@ function eM(e) {
             highlightBadge: s ? n : void 0,
             setHighlightBadge: a
         }
-    }(), E = (0, W.K)(x);
+    }(), S = (0, W.K)(x);
     return null == o ? null : (0, a.jsx)(p.A, {
         object: eE.ZSU.AVATAR,
         children: (0, a.jsx)(Q.A, {
@@ -182,7 +182,7 @@ function eM(e) {
                 } = e;
                 return (0, a.jsxs)("div", {
                     ref: b,
-                    style: E,
+                    style: S,
                     onMouseEnter: t,
                     onMouseDown: i,
                     onClick: t => {
@@ -256,14 +256,14 @@ class eL extends i.PureComponent {
             suppress: t,
             selfMute: n
         } = this.props;
-        (0, O.A)(e, t, eE.JJy.ACCOUNT_PANEL), (0, R.X)(C.A.ACCOUNT, R.O.MIC, n)
+        (0, I.A)(e, t, eE.JJy.ACCOUNT_PANEL), (0, k.X)(C.A.ACCOUNT, k.O.MIC, n)
     };
     handleToggleSelfDeaf = () => {
         let {
             serverDeaf: e,
             selfDeaf: t
         } = this.props;
-        (0, k.A)(e, eE.JJy.ACCOUNT_PANEL), (0, R.X)(C.A.ACCOUNT, R.O.DEAFEN, !t)
+        (0, N.A)(e, eE.JJy.ACCOUNT_PANEL), (0, k.X)(C.A.ACCOUNT, k.O.DEAFEN, !t)
     };
     handleOpenAccountSettings = () => {
         this.dismissTooltips(), ed.A.isConnected() ? (0, X.openUserSettings)(Y.X.VOICE_AND_VIDEO_PANEL) : (0, X.openUserSettings)()
@@ -279,11 +279,11 @@ class eL extends i.PureComponent {
             return t => (0, a.jsx)(e, {
                 ...t,
                 onClose: x.Z_,
-                onInteraction: (0, w.s)("UserSettingsMenu", C.A.ACCOUNT)
+                onInteraction: (0, O.s)("UserSettingsMenu", C.A.ACCOUNT)
             })
         })
     };
-    audioOnInteractionHandler = (0, w.s)("AudioDeviceMenu", C.A.ACCOUNT);
+    audioOnInteractionHandler = (0, O.s)("AudioDeviceMenu", C.A.ACCOUNT);
     handleInputAudioContextMenu = (e, t) => {
         this.dismissTooltips(), (0, x.L3)(e, async () => {
             let {
@@ -691,15 +691,15 @@ function eG() {
             selfDeaf: b,
             deaf: j
         } = (0, Z.A)(p),
-        A = (0, c.bG)([E.A], () => (0, N.kK)() ? E.A.getCurrentBuildOverride().overrides?.discord_web : null),
-        S = (0, c.bG)([eo.Ay], () => eo.Ay.getSpeakingWhileMuted()),
-        k = (0, c.bG)([I.A], () => I.A.isFullscreenInContext()),
-        O = (0, c.bG)([er.A], () => er.A.hasLayers()),
-        R = (0, h.red)(h.DXt) || O || ef.P.isDisallowPopupsSet() || k,
+        A = (0, c.bG)([T.A], () => (0, S.kK)() ? T.A.getCurrentBuildOverride().overrides?.discord_web : null),
+        N = (0, c.bG)([eo.Ay], () => eo.Ay.getSpeakingWhileMuted()),
+        I = (0, c.bG)([E.A], () => E.A.isFullscreenInContext()),
+        k = (0, c.bG)([er.A], () => er.A.hasLayers()),
+        O = (0, h.red)(h.DXt) || k || ef.P.isDisallowPopupsSet() || I,
         w = (0, c.bG)([U.default], () => null != U.default.getAwaitingRemoteSessionInfo()),
         D = (0, c.bG)([ec.A], () => ec.A.getGuildId()),
         P = e?.avatarDecoration,
-        M = (0, T.A)(P),
+        M = (0, R.A)(P),
         L = ev.Ay.useName(e) ?? "",
         {
             analyticsLocations: B
@@ -721,7 +721,7 @@ function eG() {
             avatar: [],
             settings: []
         };
-    R || H.avatar.push(u.M.DISPLAY_NAME_STYLES_COACHMARK);
+    O || H.avatar.push(u.M.DISPLAY_NAME_STYLES_COACHMARK);
     let {
         shouldShowTooltip: K,
         dismissTooltip: q
@@ -750,14 +750,14 @@ function eG() {
             voiceChannel: p,
             dismissibleContents: H,
             userTag: x,
-            occluded: R,
+            occluded: O,
             selfDeaf: b,
             selfMute: f,
             serverDeaf: j,
             serverMute: _,
             speaking: d,
             voiceDb: m,
-            speakingWhileMuted: S,
+            speakingWhileMuted: N,
             speakingWhilePTTInactive: ex,
             status: l,
             streaming: s,

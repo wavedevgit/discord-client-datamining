@@ -19,12 +19,12 @@ var i = n(627968),
     p = n(775602),
     E = n(793574),
     I = n(688810),
-    f = n(580314),
-    C = n(932001),
-    T = n(7584),
-    N = n(486164),
-    S = n(821589),
-    x = n(979286),
+    f = n(932001),
+    C = n(7584),
+    T = n(486164),
+    N = n(821589),
+    S = n(979286),
+    x = n(912140),
     v = n(335657),
     b = n(252362),
     y = n(540063),
@@ -76,11 +76,11 @@ let U = e => {
         } = e, _ = (0, s.rm)("shop"), g = E.A.HOME_PAGE_SHOP_TAB, {
             analyticsLocations: p
         } = (0, I.Ay)(g), [f, C] = a.useState(!1), T = a.useCallback(() => {
-            void 0 !== r && r(), void 0 !== o && (0, x.Cz)({
+            void 0 !== r && r(), void 0 !== o && (0, S.Cz)({
                 tab: o,
                 analyticsLocations: p,
                 analyticsSource: g
-            }), C(!0), (0, x.Sw)({
+            }), C(!0), (0, S.Sw)({
                 analyticsSource: g,
                 analyticsLocations: p
             })
@@ -111,7 +111,7 @@ let U = e => {
             assetId: n,
             avatarDecorationSkuId: a,
             reducedMotion: l = !1
-        } = e, r = null != n || null != a ? (0, f.A)({
+        } = e, r = null != n || null != a ? (0, x.A)({
             legacyAssetId: n,
             skuId: a,
             canAnimate: !l
@@ -156,7 +156,7 @@ let U = e => {
             [E, I] = a.useState(!1),
             [f, C] = a.useState(!1),
             T = a.useRef(null),
-            N = a.useRef(null),
+            S = a.useRef(null),
             x = (0, g.Ay)(),
             v = (0, A.Mw)(x);
         E ? v ? (t = l.entryPointBackgroundAssets?.srcDarkHovered, n = l.entrypointBackgroundStyle?.hovered?.dark) : (t = l.entryPointBackgroundAssets?.srcLightHovered, n = l.entrypointBackgroundStyle?.hovered?.light) : v ? (t = l.entryPointBackgroundAssets?.srcDark, n = l.entrypointBackgroundStyle?.resting?.dark) : (t = l.entryPointBackgroundAssets?.srcLight, n = l.entrypointBackgroundStyle?.resting?.light);
@@ -168,13 +168,13 @@ let U = e => {
                 let i = () => {
                     C(H(T))
                 };
-                i(), N.current = requestAnimationFrame(i), e?.()
+                i(), S.current = requestAnimationFrame(i), e?.()
             }, [l.assetIds, l.avatarDecorationSkuIds]),
             y = a.useCallback(e => {
-                I(!1), C(!1), null != N.current && (cancelAnimationFrame(N.current), N.current = null), e?.()
+                I(!1), C(!1), null != S.current && (cancelAnimationFrame(S.current), S.current = null), e?.()
             }, []);
         a.useEffect(() => () => {
-            null != N.current && cancelAnimationFrame(N.current)
+            null != S.current && cancelAnimationFrame(S.current)
         }, []);
         let O = l.title();
         return (0, i.jsx)(h.STz, {
@@ -192,7 +192,7 @@ let U = e => {
             hideOnClick: !1,
             "aria-label": "string" == typeof O ? O : j.intl.string(j.t.rSXaxY),
             children: e => (0, i.jsxs)(k, {
-                className: null != l.entryPointClassName ? (0, S.t)(w, l.entryPointClassName) : void 0,
+                className: null != l.entryPointClassName ? (0, N.t)(w, l.entryPointClassName) : void 0,
                 ...s,
                 icon: l.entryPointIcon,
                 ...e,
@@ -239,7 +239,7 @@ let U = e => {
             }, []);
         return a.useEffect(() => () => {
             null != _.current && cancelAnimationFrame(_.current)
-        }, []), (0, i.jsx)(N.A, {
+        }, []), (0, i.jsx)(T.A, {
             title: l.title(),
             body: l.body?.() ?? "",
             asset: (0, i.jsx)("img", {
@@ -248,7 +248,7 @@ let U = e => {
                 "aria-hidden": !0
             }),
             children: (0, i.jsxs)(k, {
-                className: null != l.entryPointClassName ? (0, S.t)(w, l.entryPointClassName) : void 0,
+                className: null != l.entryPointClassName ? (0, N.t)(w, l.entryPointClassName) : void 0,
                 ...s,
                 icon: l.entryPointIcon,
                 onMouseEnter: E,
@@ -277,7 +277,7 @@ let U = e => {
             displayOptions: t,
             ...n
         } = e, l = a.useMemo(() => {
-            let e = null != t.emojiName ? T.Ay.getByName(t.emojiName)?.surrogates : null;
+            let e = null != t.emojiName ? C.Ay.getByName(t.emojiName)?.surrogates : null;
             return (0, i.jsxs)(h.Text, {
                 variant: "text-sm/medium",
                 className: w.marketingBadgeTooltipContent,
@@ -375,7 +375,7 @@ let U = e => {
         } = e, {
             shopButtonDisplayOptions: r,
             dismissShopButtonDC: s
-        } = (0, O.A)(), o = !(0, h.ueM)(), [d, c] = (0, C.kn)(o ? [u.M.WISHLIST_SHOP_BUTTON_POPOVER] : []), A = {
+        } = (0, O.A)(), o = !(0, h.ueM)(), [d, c] = (0, f.kn)(o ? [u.M.WISHLIST_SHOP_BUTTON_POPOVER] : []), A = {
             selected: t,
             locationState: a,
             onClick: () => {

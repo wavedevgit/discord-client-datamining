@@ -1,27 +1,27 @@
 /** chunk id: 176634 params = (module,exports,require) **/
-i.d(t, {
+n.d(t, {
     A: () => r
 });
-var n = i(64700),
-    a = i(621466),
-    l = i(654108);
+var i = n(64700),
+    a = n(621466),
+    l = n(654108);
 
 function r(e) {
     let {
         onPasteFiles: t,
-        onPasteBackgroundText: i
+        onPasteBackgroundText: n
     } = e;
-    n.useEffect(() => {
+    i.useEffect(() => {
         let e = e => {
-            let n = e.clipboardData?.files;
-            if (null != n && n.length > 0) null != t && (e.preventDefault(), e.stopPropagation(), t(n));
-            else if (null != i && !(0, l.A)((0, a.BF)(e))) {
+            let i = e.clipboardData?.files;
+            if (null != i && i.length > 0) null != t && (e.preventDefault(), e.stopPropagation(), t(i));
+            else if (null != n && !(0, l.A)((0, a.BF)(e))) {
                 let t = e.clipboardData?.getData("text");
-                null != t && (e.preventDefault(), e.stopPropagation(), i(t))
+                null != t && (e.preventDefault(), e.stopPropagation(), n(t))
             }
         };
         return document.addEventListener("paste", e, !0), () => {
             document.removeEventListener("paste", e, !0)
         }
-    }, [t, i])
+    }, [t, n])
 }

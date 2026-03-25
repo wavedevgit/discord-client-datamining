@@ -11,9 +11,9 @@ var a = n(311907),
     o = n(775602),
     d = n(29160),
     c = n(854378),
-    u = n(954921),
-    A = n(278539),
-    h = n(571694),
+    u = n(571694),
+    A = n(562819),
+    h = n(215689),
     _ = n(994500),
     m = n(427262),
     g = n(837921),
@@ -57,15 +57,15 @@ function S(e) {
         active: l
     } = e, c = (0, a.bG)([o.A], () => o.A.useReducedMotion), g = (0, a.bG)([_.A], () => null == n ? null : _.A.getNickname(n.id)), E = !c && l, S = (0, p.j)(t), {
         avatarDecorationSrc: x
-    } = (0, A.A)({
+    } = (0, h.A)({
         user: n,
-        size: (0, u.Te)(r._3J.SIZE_40),
+        size: (0, A.Te)(r._3J.SIZE_40),
         onlyAnimateOnHoverOrFocus: !0
     });
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(N, {
             className: C.my,
-            src: (0, h.Y)(t, 40, E),
+            src: (0, u.Y)(t, 40, E),
             avatarDecoration: x,
             size: r._3J.SIZE_40,
             "aria-label": n?.username ?? f.intl.string(f.t["30mdIx"])

@@ -332,10 +332,10 @@ function e5() {
         topLevelRoute: !0
     })
 }
-let e3 = e => (0, i.jsx)(S.A, {
+let e2 = e => (0, i.jsx)(S.A, {
         ...e
     }),
-    e2 = () => (0, i.jsx)(es.A, {}),
+    e3 = () => (0, i.jsx)(es.A, {}),
     e4 = () => (0, i.jsx)($.A, {}),
     e8 = () => (0, i.jsx)(J.A, {}),
     te = () => (0, i.jsx)(er.A, {}),
@@ -585,7 +585,7 @@ function ta() {
                                     })
                                 }), (0, i.jsx)(x.A, {
                                     path: eR.BVt.ACTIVITY_DETAILS(":applicationId"),
-                                    render: e3,
+                                    render: e2,
                                     impressionName: d.ImpressionNames.ACTIVITY_DETAILS,
                                     impressionProperties: e => {
                                         let {
@@ -666,7 +666,7 @@ function ta() {
                                 }), (0, i.jsx)(x.A, {
                                     path: eR.BVt.ME,
                                     exact: !0,
-                                    render: e2,
+                                    render: e3,
                                     impressionName: d.ImpressionNames.FRIENDS,
                                     disableTrack: !0
                                 }), c === ei.U5.SIDEBAR && (0, i.jsx)(x.A, {

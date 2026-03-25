@@ -7,26 +7,26 @@ i(64700);
 var n = i(575593),
     l = i(311907),
     a = i(397927),
-    r = i(954921),
-    o = i(278539),
-    u = i(550111),
-    d = i(242874),
-    c = i(75825),
-    f = i(331402),
-    p = i(287809),
+    r = i(550111),
+    o = i(242874),
+    u = i(75825),
+    d = i(331402),
+    c = i(287809),
+    f = i(562819),
+    p = i(215689),
     h = i(674658),
     m = i(245068),
     g = i(704751);
 let A = a._3J.SIZE_152,
-    x = (0, r.Te)(A),
+    x = (0, f.Te)(A),
     _ = t => {
         let {
             item: e
-        } = t, i = (0, l.bG)([p.default], () => p.default.getCurrentUser()), {
+        } = t, i = (0, l.bG)([c.default], () => c.default.getCurrentUser()), {
             avatarDecorationSrc: n,
             avatarPlaceholderSrc: r,
-            eventHandlers: u
-        } = (0, o.A)({
+            eventHandlers: o
+        } = (0, p.A)({
             user: i,
             avatarDecorationOverride: e,
             size: x
@@ -34,7 +34,7 @@ let A = a._3J.SIZE_152,
         return (0, s.jsx)("div", {
             className: g._P,
             children: (0, s.jsx)(a.euF, {
-                ...u,
+                ...o,
                 "aria-label": e.label,
                 src: r,
                 avatarDecoration: n,
@@ -48,7 +48,7 @@ let A = a._3J.SIZE_152,
         } = t;
         return (0, s.jsx)("div", {
             className: g.xC,
-            children: (0, s.jsx)(f.A, {
+            children: (0, s.jsx)(d.A, {
                 isHighlighted: !0,
                 skuId: e?.skuId
             })
@@ -60,7 +60,7 @@ let A = a._3J.SIZE_152,
         } = t;
         return (0, s.jsx)("div", {
             className: g.M4,
-            children: (0, s.jsx)(u.A, {
+            children: (0, s.jsx)(r.A, {
                 nameplate: e,
                 className: g.qF,
                 nameplatePreviewSize: "xlarge",
@@ -110,9 +110,9 @@ let A = a._3J.SIZE_152,
                     item: r
                 });
             default:
-                return null != e.giftStyle ? (0, s.jsx)(c.A, {
-                    defaultAnimationState: d.oA.ACTION,
-                    idleAnimationState: d.oA.LOOP,
+                return null != e.giftStyle ? (0, s.jsx)(u.A, {
+                    defaultAnimationState: o.oA.ACTION,
+                    idleAnimationState: o.oA.LOOP,
                     className: g.l$,
                     giftStyle: e.giftStyle
                 }) : null

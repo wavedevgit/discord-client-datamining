@@ -1,18 +1,18 @@
 /** chunk id: 256252 params = (module,exports,require) **/
-i.d(t, {
+n.d(t, {
     lx: () => m,
     wY: () => c,
     xt: () => d,
     zC: () => h
-}), i(321073);
-var n = i(110259),
-    a = i(562465),
-    l = i(98919),
-    r = i(544028);
-i(723702);
-var s = i(499785),
-    o = i(652215),
-    u = i(985018);
+}), n(321073);
+var i = n(110259),
+    a = n(562465),
+    l = n(98919),
+    r = n(544028);
+n(723702);
+var s = n(499785),
+    o = n(652215),
+    u = n(985018);
 async function d() {
     return (await a.Bo.get({
         url: o.Rsh.BUG_REPORTS,
@@ -21,7 +21,9 @@ async function d() {
 }
 
 function c(e) {
-    return e?.name ?? "" + e?.squad
+    let t = e?.name ?? "",
+        n = e?.squad ?? "";
+    return "" === t && "" === n ? "" : t + "::" + n
 }
 
 function m() {
@@ -47,7 +49,7 @@ function m() {
         value: 3
     }]
 }
-async function h(e, t, i) {
+async function h(e, t, n) {
     let a = [{
         name: "name",
         value: e.name
@@ -108,10 +110,10 @@ async function h(e, t, i) {
     try {
         return await s.A.post({
             url: o.Rsh.BUG_REPORTS,
-            attachments: i,
+            attachments: n,
             fields: a,
             trackedActionData: {
-                event: n.NetworkActionNames.BUG_REPORT_SUBMIT,
+                event: i.NetworkActionNames.BUG_REPORT_SUBMIT,
                 properties: {
                     priority: e.priority,
                     asana_inbox_id: u
