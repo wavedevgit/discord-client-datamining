@@ -1,28 +1,28 @@
 /** chunk id: 119995 params = (module,exports,require) **/
-n.d(t, {
+n.d(e, {
     r: () => l
 });
 var i = n(627968),
-    a = n(397927),
-    r = n(985018),
-    s = n(991635);
+    s = n(397927),
+    a = n(985018),
+    r = n(991635);
 
-function l(e) {
+function l(t) {
     let {
-        rewardName: t
-    } = e;
-    return (0, i.jsx)(a.Text, {
+        rewardName: e
+    } = t;
+    return (0, i.jsx)(s.Text, {
         variant: "text-xs/medium",
-        className: s.tI,
-        children: r.intl.format(r.t.loyTil, {
-            rewardName: (e, n) => (0, i.jsx)(a.Text, {
+        className: r.tI,
+        children: a.intl.format(a.t.loyTil, {
+            rewardName: (t, n) => (0, i.jsx)(s.Text, {
                 variant: "text-xs/medium",
-                className: s.Ht,
-                children: t
+                className: r.Ht,
+                children: e
             }, n),
-            verticalDivider: (e, t) => (0, i.jsx)("div", {
-                className: s.yF
-            }, t)
+            verticalDivider: (t, e) => (0, i.jsx)("div", {
+                className: r.yF
+            }, e)
         })
     })
 }

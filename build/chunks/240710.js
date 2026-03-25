@@ -1,153 +1,165 @@
 /** chunk id: 240710 params = (module,exports,require) **/
-n.d(t, {
-    A: () => C
+n.d(e, {
+    A: () => T
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(731355),
-    s = n(158954),
+    s = n(64700),
+    a = n(731355),
+    r = n(158954),
     l = n(435371),
-    o = n(736653),
-    d = n(341915),
+    d = n(736653),
+    o = n(341915),
     c = n(579473),
-    _ = n(590202),
-    u = n(971649),
-    p = n(651892),
-    E = n(901406),
-    m = n(814793),
-    h = n(241124),
-    g = n(918338),
-    f = n(201805),
-    S = n(654487),
-    v = n(818348),
-    A = n(985018),
-    N = n(861616);
+    u = n(590202),
+    m = n(971649),
+    h = n(651892),
+    x = n(901406),
+    f = n(814793),
+    g = n(241124),
+    C = n(918338),
+    N = n(201805),
+    b = n(491145),
+    A = n(654487),
+    p = n(818348),
+    I = n(985018),
+    j = n(861616);
 
-function T(e) {
+function v(t) {
     let {
-        quest: t,
+        quest: e,
         sourceQuestContent: n,
-        onLoadComplete: T,
-        preCtaClick: C
-    } = e, I = (0, o.Ay)(), R = (0, s.Mwr)(I) ? v.NJ.DARK : v.NJ.LIGHT, y = (0, p.wr)(t), x = (0, u.go)(), D = (0, m.E0)(t.config), L = async () => {
-        await C?.(), (0, E.pu)(t, {
-            content: d.uF.REWARD_MODAL,
-            ctaContent: _.Cy.OPEN_GAME_LINK,
-            impressionId: x,
+        onLoadComplete: v,
+        preCtaClick: T
+    } = t, E = (0, d.Ay)(), _ = (0, r.Mwr)(E) ? p.NJ.DARK : p.NJ.LIGHT, R = (0, m.go)(), O = (0, f.E0)(e.config), y = async () => {
+        await T?.(), (0, x.pu)(e, {
+            content: o.uF.REWARD_MODAL,
+            ctaContent: u.Cy.OPEN_GAME_LINK,
+            impressionId: R,
             sourceQuestContent: n
         })
-    }, j = a.useMemo(() => {
-        let e = t.config.ctaConfig?.subtitle;
-        return null != e ? e : (0, m.pv)(t.config) !== r.Z.GAMEPLAY || t.config.features.includes(S.Li.NON_GAMING_PLAY_QUEST) || (0, m.ui)(t) ? A.intl.string(A.t.y8Xf3k) : A.intl.string(A.t["wirwN+"])
-    }, [t]), {
-        isLoading: O
-    } = (0, h.Gk)();
-    a.useEffect(() => {
-        O || T()
-    }, [O, T]);
-    let k = (0, f.Lk)({
-        isShareable: D,
-        questId: t.id,
-        trackingCtx: a.useMemo(() => ({
-            content: d.uF.REWARD_MODAL,
-            ctaContent: _.Cy.REWARD_MODAL_COPY_LINK,
-            impressionId: x,
+    }, L = s.useMemo(() => {
+        let t = e.config.ctaConfig?.subtitle;
+        return null != t ? t : (0, f.pv)(e.config) !== a.Z.GAMEPLAY || e.config.features.includes(A.Li.NON_GAMING_PLAY_QUEST) || (0, f.ui)(e) ? I.intl.string(I.t.y8Xf3k) : I.intl.string(I.t["wirwN+"])
+    }, [e]), k = (0, b.A)(e, {
+        impressionId: R,
+        sourceQuestContent: n
+    }, T) ?? {
+        ctaText: (0, h.wr)(e),
+        ctaIcon: r.We5,
+        ctaVariant: "primary",
+        onClickCta: y,
+        title: I.intl.format(I.t.EAYZAr, {
+            questName: e.config.messages.questName
+        }),
+        subtitle: L,
+        ctaIconPosition: "end"
+    }, {
+        isLoading: M
+    } = (0, g.Gk)();
+    s.useEffect(() => {
+        M || v()
+    }, [M, v]);
+    let D = (0, N.Lk)({
+        isShareable: O,
+        questId: e.id,
+        trackingCtx: s.useMemo(() => ({
+            content: o.uF.REWARD_MODAL,
+            ctaContent: u.Cy.REWARD_MODAL_COPY_LINK,
+            impressionId: R,
             sourceQuestContent: n
-        }), [x, n])
+        }), [R, n])
     });
     return (0, i.jsxs)("div", {
-        className: N.kL,
-        children: [(0, i.jsx)(h.Sn, {
+        className: j.kL,
+        children: [(0, i.jsx)(g.Sn, {
             id: "hero-display",
-            children: e => (0, i.jsx)(g.A, {
-                quest: t,
+            children: t => (0, i.jsx)(C.A, {
+                quest: e,
                 imageSize: {
                     width: 908,
                     height: 380
                 },
-                containerClassName: N.WQ,
+                containerClassName: j.WQ,
                 isInteracting: !0,
-                assetRef: e
+                assetRef: t
             })
         }), (0, i.jsx)("div", {
-            className: N.Lt,
-            children: (0, i.jsx)(h.Sn, {
+            className: j.Lt,
+            children: (0, i.jsx)(g.Sn, {
                 id: "partner-logotype",
-                children: e => (0, i.jsx)("img", {
-                    ref: e,
-                    className: N.a$,
-                    alt: A.intl.formatToPlainString(A.t.rtm15P, {
-                        name: t.config.messages.gameTitle
+                children: t => (0, i.jsx)("img", {
+                    ref: t,
+                    className: j.a$,
+                    alt: I.intl.formatToPlainString(I.t.rtm15P, {
+                        name: e.config.messages.gameTitle
                     }),
-                    src: (0, c.tW)(t, c.fY.LOGO_TYPE, R).url
+                    src: (0, c.tW)(e, c.fY.LOGO_TYPE, _).url
                 })
             })
         }), (0, i.jsxs)("div", {
-            className: N.Th,
+            className: j.Th,
             children: [(0, i.jsxs)("div", {
-                className: N.Ly,
-                children: [(0, i.jsx)(s.DZT, {
+                className: j.Ly,
+                children: [(0, i.jsx)(r.DZT, {
                     variant: "heading-md/semibold",
                     color: "text-strong",
-                    className: N.fx,
-                    children: A.intl.format(A.t.EAYZAr, {
-                        questName: t.config.messages.questName
-                    })
-                }), (0, i.jsx)(s.EYj, {
+                    className: j.fx,
+                    children: k.title
+                }), (0, i.jsx)(r.EYj, {
                     variant: "text-sm/medium",
                     color: "text-subtle",
-                    children: j
+                    children: k.subtitle
                 })]
-            }), (0, i.jsx)(h.Sn, {
+            }), (0, i.jsx)(g.Sn, {
                 id: "partner-game-tile",
-                children: e => (0, i.jsx)("img", {
-                    ref: e,
-                    className: N.rw,
-                    alt: A.intl.formatToPlainString(A.t.rtm15P, {
-                        name: t.config.messages.gameTitle
+                children: t => (0, i.jsx)("img", {
+                    ref: t,
+                    className: j.rw,
+                    alt: I.intl.formatToPlainString(I.t.rtm15P, {
+                        name: e.config.messages.gameTitle
                     }),
-                    src: (0, c.tW)(t, c.fY.GAME_TILE, R).url
+                    src: (0, c.tW)(e, c.fY.GAME_TILE, _).url
                 })
             })]
         }), (0, i.jsx)("div", {
-            className: N.tu,
-            children: (0, i.jsxs)(s.e2v, {
+            className: j.tu,
+            children: (0, i.jsxs)(r.e2v, {
                 size: "sm",
                 direction: "horizontal",
                 fullWidth: !0,
                 fullWidthContainer: !0,
-                children: [D && (0, i.jsx)(l.m_, {
-                    text: A.intl.string(A.t.WmfZHZ),
-                    children: (0, i.jsx)(s.K0, {
-                        icon: s.qYV,
-                        onClick: k,
-                        "aria-label": A.intl.string(A.t.WmfZHZ),
+                children: [O && (0, i.jsx)(l.m_, {
+                    text: I.intl.string(I.t.WmfZHZ),
+                    children: (0, i.jsx)(r.K0, {
+                        icon: r.qYV,
+                        onClick: D,
+                        "aria-label": I.intl.string(I.t.WmfZHZ),
                         variant: "secondary"
                     })
-                }), (0, i.jsx)(s.$nd, {
-                    variant: "primary",
-                    text: y,
-                    onClick: L,
+                }), (0, i.jsx)(r.$nd, {
+                    variant: k.ctaVariant,
+                    text: k.ctaText,
+                    onClick: k.onClickCta,
                     fullWidth: !0,
-                    icon: s.We5,
-                    iconPosition: "end"
+                    icon: k.ctaIcon,
+                    iconPosition: k.ctaIconPosition
                 })]
             })
         })]
     })
 }
 
-function C(e) {
+function T(t) {
     let {
-        quest: t,
+        quest: e,
         location: n
-    } = e;
-    return (0, i.jsx)(h.jY, {
+    } = t;
+    return (0, i.jsx)(g.jY, {
         source: n,
-        questId: t.id,
-        isPreview: t.preview,
-        children: (0, i.jsx)(T, {
-            ...e
+        questId: e.id,
+        isPreview: e.preview,
+        children: (0, i.jsx)(v, {
+            ...t
         })
     })
 }

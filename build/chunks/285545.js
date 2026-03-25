@@ -1,6 +1,6 @@
 /** chunk id: 285545 params = (module,exports,require) **/
 n.d(t, {
-    i: () => m
+    i: () => g
 }), n(321073);
 var i = n(64700),
     a = n(311907),
@@ -13,33 +13,34 @@ var i = n(64700),
     u = n(859524),
     A = n(639040),
     h = n(567061),
-    _ = n(118972);
+    _ = n(563874),
+    m = n(118972);
 
-function m(e) {
+function g(e) {
     let {
         showDot: t,
         notificationItem: n
-    } = e, [m, g] = i.useState(!1), {
-        unreadItems: p,
-        readItems: E,
-        allUnreadItemsHydrated: I
-    } = (0, A.A)(), f = (0, a.bG)([d.A], () => d.A.getVersion(), []), C = (0, a.bG)([d.A], () => !(d.A.isFirstPageHydrated() && f > 0));
+    } = e, [g, p] = i.useState(!1), {
+        unreadItems: E,
+        readItems: I,
+        allUnreadItemsHydrated: f
+    } = (0, A.A)(), C = (0, a.bG)([d.A], () => d.A.getVersion(), []), T = (0, a.bG)([d.A], () => !(d.A.isFirstPageHydrated() && C > 0));
     i.useEffect(() => {
         null != d.A.getLoadId() && s.k.trackFeedShown({
             homeSessionId: "gravity"
         })
-    }, [f]);
-    let T = (0, a.bG)([d.A], () => d.A.isRefreshing(), []),
-        N = (0, a.bG)([d.A], () => d.A.isHydrating(), []),
-        [S, x] = i.useState([]),
+    }, [C]);
+    let N = (0, a.bG)([d.A], () => d.A.isRefreshing(), []),
+        S = (0, a.bG)([d.A], () => d.A.isHydrating(), []),
+        [x, v] = i.useState([]),
         {
-            loadId: v,
-            lastScrollEventTimestamp: b
+            loadId: b,
+            lastScrollEventTimestamp: y
         } = (0, a.cf)([d.A], () => ({
             loadId: d.A.getLoadId(),
             lastScrollEventTimestamp: d.A.lastScrollEvent()
         })),
-        y = S.filter(e => {
+        O = x.filter(e => {
             let {
                 item: t
             } = e;
@@ -50,18 +51,18 @@ function m(e) {
             } = e;
             return t.id
         }).pop(),
-        O = (0, l.A)(y);
+        L = (0, l.A)(O);
     i.useEffect(() => {
-        if (T || C || null == O || null == y || y === O) return;
+        if (N || T || null == L || null == O || O === L) return;
         let e = Date.now();
-        e - b > _.N && (r.A.gravityScrollEvent(e), s.k.trackFeedFirstScrollStarted())
-    }, [T, b, O, y, v, C]);
-    let L = i.useCallback(e => {
+        e - y > m.N && (r.A.gravityScrollEvent(e), s.k.trackFeedFirstScrollStarted())
+    }, [N, y, L, O, b, T]);
+    let R = i.useCallback(e => {
             let {
                 viewableItems: t
             } = e;
-            if (t.some(e => "end" === e.item.data.kind) && g(!0), 0 === t.length) return;
-            x(t);
+            if (t.some(e => "end" === e.item.data.kind) && p(!0), 0 === t.length) return;
+            v(t);
             let n = [],
                 i = (0, u.P0)(t),
                 a = Date.now();
@@ -76,9 +77,9 @@ function m(e) {
             n.length > 0 && r.A.ackGravityItems(n, !0), s.k.trackItemShortImpression(t, i.map(e => ({
                 id: e.id,
                 type: (0, c.xG)(e)
-            })), f)
-        }, [f, g]),
-        R = i.useCallback(e => {
+            })), C)
+        }, [C, p]),
+        P = i.useCallback(e => {
             let {
                 viewableItems: t
             } = e;
@@ -87,7 +88,7 @@ function m(e) {
             s.k.trackItemLongImpression(t, n.map(e => ({
                 id: e.id,
                 type: (0, c.xG)(e)
-            })), f), r.A.triggerItemsLongImpression(t.filter(e => {
+            })), C), r.A.triggerItemsLongImpression(t.filter(e => {
                 let {
                     item: t
                 } = e;
@@ -107,8 +108,8 @@ function m(e) {
                     isInitiallyVisible: !1
                 }
             }))
-        }, [f]),
-        P = i.useCallback(e => {
+        }, [C]),
+        D = i.useCallback(e => {
             let {
                 viewableItems: t
             } = e;
@@ -133,38 +134,39 @@ function m(e) {
                 }
             }))
         }, []),
-        D = i.useMemo(() => [{
+        M = i.useMemo(() => [{
             viewabilityConfig: {
                 waitForInteraction: !1,
                 viewAreaCoveragePercentThreshold: 100,
                 minimumViewTime: 50
-            },
-            onViewableItemsChanged: L
-        }, {
-            viewabilityConfig: {
-                waitForInteraction: !1,
-                viewAreaCoveragePercentThreshold: 50,
-                minimumViewTime: 1e3
             },
             onViewableItemsChanged: R
         }, {
             viewabilityConfig: {
                 waitForInteraction: !1,
                 viewAreaCoveragePercentThreshold: 50,
-                minimumViewTime: 50
+                minimumViewTime: 1e3
             },
             onViewableItemsChanged: P
-        }], [L, R, P]);
+        }, {
+            viewabilityConfig: {
+                waitForInteraction: !1,
+                viewAreaCoveragePercentThreshold: 50,
+                minimumViewTime: 50
+            },
+            onViewableItemsChanged: D
+        }], [R, P, D]);
     i.useEffect(() => {
         r.A.openICYMITab()
     }, []);
-    let M = (0, h.E)(t),
+    let j = (0, h.E)(t),
+        w = (0, _.n)(),
         {
-            data: j,
-            stickyHeaderIndices: w
+            data: U,
+            stickyHeaderIndices: G
         } = i.useMemo(() => {
             let e = [];
-            return C && null != n && n.type === c.Mm.CUSTOM_STATUS && e.push({
+            return T && null != n && n.type === c.Mm.CUSTOM_STATUS && e.push({
                 id: n.id,
                 timestamp: Date.now(),
                 data: {
@@ -173,25 +175,32 @@ function m(e) {
                 },
                 score: n.score,
                 unread: !0
-            }), C ? e.push({
+            }), T ? e.push({
                 id: "loading",
                 timestamp: 0,
                 unread: !1,
                 data: {
                     kind: "loading"
                 }
-            }) : (p.forEach(t => {
+            }) : (w && e.push({
+                id: "sunsetBanner",
+                timestamp: 0,
+                unread: !1,
+                data: {
+                    kind: "sunsetBanner"
+                }
+            }), E.forEach(t => {
                 (0, u.yx)(t) || e.push(t)
-            }), I && e.push({
+            }), f && e.push({
                 id: "end",
                 timestamp: 0,
                 unread: !1,
                 data: {
                     kind: "end"
                 }
-            }), E.length > 0 && E.forEach(t => {
+            }), I.length > 0 && I.forEach(t => {
                 (0, u.yx)(t) || e.push(t)
-            }), N && e.push({
+            }), S && e.push({
                 id: "bottomLoading",
                 timestamp: 0,
                 unread: !1,
@@ -202,16 +211,16 @@ function m(e) {
                 data: e,
                 stickyHeaderIndices: []
             }
-        }, [C, n, p, I, E, N]);
+        }, [T, n, E, f, I, S, w]);
     return {
-        data: j,
-        loading: C,
-        version: f,
-        visibleItemIds: S,
-        endVisible: m,
-        isRefreshing: T,
-        handleOnRefresh: M,
-        stickyHeaderIndices: w,
-        viewabilityConfigCallbackPairs: D
+        data: U,
+        loading: T,
+        version: C,
+        visibleItemIds: x,
+        endVisible: g,
+        isRefreshing: N,
+        handleOnRefresh: j,
+        stickyHeaderIndices: G,
+        viewabilityConfigCallbackPairs: M
     }
 }

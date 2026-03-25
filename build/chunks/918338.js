@@ -1,47 +1,47 @@
 /** chunk id: 918338 params = (module,exports,require) **/
-n.d(t, {
-    A: () => u
+n.d(e, {
+    A: () => m
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    s = n.n(r),
+    s = n(64700),
+    a = n(503698),
+    r = n.n(a),
     l = n(579473),
-    o = n(415441),
-    d = n(516226),
+    d = n(415441),
+    o = n(516226),
     c = n(985018),
-    _ = n(347564);
+    u = n(347564);
 
-function u(e) {
+function m(t) {
     let {
-        quest: t,
+        quest: e,
         isInteracting: n,
-        hideAssets: r,
-        imageSize: u,
-        containerClassName: p,
-        imageClassName: E,
-        assetRef: m
-    } = e, h = a.useMemo(() => (0, l.tW)(t, l.fY.HERO_IMAGE), [t]), g = a.useMemo(() => (0, l.tW)(t, l.fY.HERO_VIDEO), [t]), {
-        onAssetLoadComplete: f
-    } = a.useContext(d.M);
+        hideAssets: a,
+        imageSize: m,
+        containerClassName: h,
+        imageClassName: x,
+        assetRef: f
+    } = t, g = s.useMemo(() => (0, l.tW)(e, l.fY.HERO_IMAGE), [e]), C = s.useMemo(() => (0, l.tW)(e, l.fY.HERO_VIDEO), [e]), {
+        onAssetLoadComplete: N
+    } = s.useContext(o.M);
     return (0, i.jsx)("div", {
-        className: s()(_.l1, p),
-        children: !r && (0, i.jsx)(o.N, {
-            imageAsset: null != h ? {
-                asset: h,
+        className: r()(u.l1, h),
+        children: !a && (0, i.jsx)(d.N, {
+            imageAsset: null != g ? {
+                asset: g,
                 assetId: "QuestTileBanner",
                 alt: c.intl.string(c.t.jnijWz),
-                className: s()(_.LO, E)
+                className: r()(u.LO, x)
             } : void 0,
-            videoAsset: null != g ? {
-                asset: g,
+            videoAsset: null != C ? {
+                asset: C,
                 assetId: "QuestTileBanner_heroAnimated",
-                className: _.G9
+                className: u.G9
             } : void 0,
             showVideo: n,
-            imageSize: u,
-            onLoadComplete: f,
-            assetRef: m
+            imageSize: m,
+            onLoadComplete: N,
+            assetRef: f
         })
     })
 }

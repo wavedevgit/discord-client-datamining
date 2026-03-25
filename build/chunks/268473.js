@@ -1,153 +1,153 @@
 /** chunk id: 268473 params = (module,exports,require) **/
-n.d(t, {
-    default: () => I
+a.d(t, {
+    default: () => D
 });
-var a = n(627968),
-    s = n(64700),
-    i = n(503698),
-    r = n.n(i),
-    l = n(311907),
-    o = n(397927),
-    c = n(736653),
-    d = n(775602),
-    u = n(793574),
-    m = n(979286),
-    x = n(607470),
-    f = n(318346),
-    _ = n(761705),
-    h = n(106799),
-    p = n(829219),
-    g = n(341915),
-    j = n(890687),
-    C = n(92246),
-    A = n(109174),
-    b = n(524728),
-    v = n(654487),
-    y = n(652215),
-    N = n(758836),
-    E = n(985018),
-    L = n(176741),
-    R = n(627898),
-    S = n(341744),
-    T = n(484252),
-    O = n(460290),
-    w = n(181713);
+var n = a(627968),
+    s = a(64700),
+    o = a(503698),
+    c = a.n(o),
+    r = a(311907),
+    l = a(397927),
+    d = a(736653),
+    i = a(775602),
+    u = a(793574),
+    _ = a(979286),
+    b = a(607470),
+    p = a(318346),
+    f = a(761705),
+    h = a(106799),
+    m = a(829219),
+    x = a(341915),
+    C = a(890687),
+    A = a(92246),
+    y = a(109174),
+    g = a(524728),
+    j = a(654487),
+    S = a(652215),
+    R = a(758836),
+    O = a(985018),
+    L = a(176741),
+    w = a(627898),
+    E = a(341744),
+    T = a(484252),
+    v = a(460290),
+    k = a(181713);
 
-function k(e) {
+function B(e) {
     let {
         onVideoLoaded: t
     } = e;
-    return (0, a.jsx)(x.A, {
+    return (0, n.jsx)(b.A, {
         className: L.d0,
         playsInline: !0,
         controls: !1,
         autoPlay: !0,
         loop: !0,
         onCanPlayThrough: t,
-        children: (0, a.jsx)("source", {
-            src: w.A,
+        children: (0, n.jsx)("source", {
+            src: k.A,
             type: "video/webm"
         })
     })
 }
 
-function D(e) {
+function N(e) {
     let {
         onVideoLoaded: t,
-        isLoading: n
-    } = e, i = (0, l.bG)([d.A], () => d.A.useReducedMotion), [u, m] = s.useState(!i), f = (0, c.Ay)(), _ = (0, o.qB1)(f), h = _ ? S.A : R.A, p = _ ? O.A : T.A, g = s.useRef(null), j = s.useRef(null), [C, A] = s.useState(!1), [b, v] = s.useState(!1), [y, N] = s.useState(!1);
+        isLoading: a
+    } = e, o = (0, r.bG)([i.A], () => i.A.useReducedMotion), [u, _] = s.useState(!o), p = (0, d.Ay)(), f = (0, l.qB1)(p), h = f ? E.A : w.A, m = f ? v.A : T.A, x = s.useRef(null), C = s.useRef(null), [A, y] = s.useState(!1), [g, j] = s.useState(!1), [S, R] = s.useState(!1);
     s.useEffect(() => {
-        C && b && y && t()
-    }, [C, b, y, t]), s.useEffect(() => {
-        n || i || setTimeout(() => {
-            g.current?.play()
+        A && g && S && t()
+    }, [A, g, S, t]), s.useEffect(() => {
+        a || o || setTimeout(() => {
+            x.current?.play()
         }, 200)
-    }, [n, i]);
-    let E = s.useCallback(() => {
-        i || (m(!1), j.current?.play())
-    }, [i]);
-    return (0, a.jsxs)("div", {
+    }, [a, o]);
+    let O = s.useCallback(() => {
+        o || (_(!1), C.current?.play())
+    }, [o]);
+    return (0, n.jsxs)("div", {
         className: L.GF,
-        children: [(0, a.jsx)(x.A, {
-            ref: j,
+        children: [(0, n.jsx)(b.A, {
+            ref: C,
             autoPlay: !1,
             loop: !0,
             muted: !0,
             playsInline: !0,
-            className: r()(L.nH, L.EZ, {
+            className: c()(L.nH, L.EZ, {
                 [L.R]: u
             }),
             controls: !1,
-            onCanPlayThrough: s.useCallback(() => v(!0), []),
-            children: (0, a.jsx)("source", {
-                src: p,
+            onCanPlayThrough: s.useCallback(() => j(!0), []),
+            children: (0, n.jsx)("source", {
+                src: m,
                 type: "video/webm"
             })
-        }), (0, a.jsx)(x.A, {
-            ref: g,
+        }), (0, n.jsx)(b.A, {
+            ref: x,
             autoPlay: !1,
             muted: !0,
             playsInline: !0,
             className: L.nH,
             controls: !1,
-            onCanPlayThrough: s.useCallback(() => A(!0), []),
-            onEnded: E,
-            children: (0, a.jsx)("source", {
+            onCanPlayThrough: s.useCallback(() => y(!0), []),
+            onEnded: O,
+            children: (0, n.jsx)("source", {
                 src: h,
                 type: "video/webm"
             })
-        }), (0, a.jsxs)("div", {
+        }), (0, n.jsxs)("div", {
             className: L.Se,
-            children: [(0, a.jsx)(k, {
-                onVideoLoaded: s.useCallback(() => N(!0), [])
-            }), (0, a.jsx)(k, {}), (0, a.jsx)(k, {}), (0, a.jsx)(k, {})]
+            children: [(0, n.jsx)(B, {
+                onVideoLoaded: s.useCallback(() => R(!0), [])
+            }), (0, n.jsx)(B, {}), (0, n.jsx)(B, {}), (0, n.jsx)(B, {})]
         })]
     })
 }
 
-function W(e) {
+function P(e) {
     let {
         isLoading: t,
-        onClose: n,
+        onClose: a,
         orbsEarned: s,
-        orbsBalance: i,
-        onVideoLoaded: r
-    } = e, l = async () => {
-        (0, f.Y)({
-            pageType: y.liQ.GLOBAL_DISCOVERY_QUESTS,
-            sectionType: y.JJy.ORBS_REWARD_MODAL,
-            ctaObject: y.ZSU.CTA_TO_ORBS_SHOP
-        }), await n(), (0, m.Cz)({
-            tab: N.G2.ORBS,
+        orbsBalance: o,
+        onVideoLoaded: c
+    } = e, r = async () => {
+        (0, p.Y)({
+            pageType: S.liQ.GLOBAL_DISCOVERY_QUESTS,
+            sectionType: S.JJy.ORBS_REWARD_MODAL,
+            ctaObject: S.ZSU.CTA_TO_ORBS_SHOP
+        }), await a(), (0, _.Cz)({
+            tab: R.G2.ORBS,
             analyticsLocations: [],
             analyticsSource: u.A.QUEST_REWARD_MODAL
         })
     };
-    return (0, a.jsxs)("div", {
+    return (0, n.jsxs)("div", {
         className: L.hQ,
-        children: [(0, a.jsx)(D, {
+        children: [(0, n.jsx)(N, {
             isLoading: t,
-            onVideoLoaded: r
-        }), (0, a.jsxs)("div", {
+            onVideoLoaded: c
+        }), (0, n.jsxs)("div", {
             className: L.dD,
-            children: [(0, a.jsxs)("div", {
+            children: [(0, n.jsxs)("div", {
                 className: L.R_,
-                children: [(0, a.jsx)(h.B, {
+                children: [(0, n.jsx)(h.B, {
                     shouldUseThemeColor: !0,
                     className: L.Uu
-                }), (0, a.jsx)(o.Heading, {
+                }), (0, n.jsx)(l.Heading, {
                     variant: "heading-xl/semibold",
                     color: "text-strong",
-                    children: E.intl.formatToPlainString(E.t.YMor7k, {
+                    children: O.intl.formatToPlainString(O.t.YMor7k, {
                         count: s
                     })
                 })]
-            }), null != i ? (0, a.jsx)(o.Text, {
+            }), null != o ? (0, n.jsx)(l.Text, {
                 variant: "text-sm/medium",
                 color: "text-subtle",
-                children: E.intl.format(E.t.g4t9aw, {
-                    orbsBalance: i,
-                    orbsBalanceHook: (e, t) => (0, a.jsx)(o.Text, {
+                children: O.intl.format(O.t.g4t9aw, {
+                    orbsBalance: o,
+                    orbsBalanceHook: (e, t) => (0, n.jsx)(l.Text, {
                         variant: "text-sm/medium",
                         color: "text-strong",
                         tag: "span",
@@ -155,50 +155,50 @@ function W(e) {
                     }, t)
                 })
             }) : null]
-        }), (0, a.jsx)(o.Button, {
+        }), (0, n.jsx)(l.Button, {
             variant: "secondary",
             size: "sm",
-            text: E.intl.string(E.t.WYchde),
-            onClick: l,
+            text: O.intl.string(O.t.WYchde),
+            onClick: r,
             fullWidth: !0
         })]
     })
 }
 
-function I(e) {
+function D(e) {
     let {
         initialQuest: t,
-        onClose: n,
-        transitionState: i,
-        sourceQuestContent: r,
-        location: l
-    } = e, o = (0, j.C5)(t.id) ?? t, c = o.userStatus?.claimedAt != null, {
-        balance: d,
+        onClose: a,
+        transitionState: o,
+        sourceQuestContent: c,
+        location: r
+    } = e, l = (0, C.C5)(t.id) ?? t, d = l.userStatus?.claimedAt != null, {
+        balance: i,
         error: u
-    } = (0, _.W)(), m = (0, C._Z)(o.config), [x, f] = s.useState(c ? "success" : "loading"), [h, y] = s.useState(!1), N = s.useCallback(() => {
-        y(!0)
+    } = (0, f.W)(), _ = (0, A._Z)(l.config), [b, p] = s.useState(d ? "success" : "loading"), [h, S] = s.useState(!1), R = s.useCallback(() => {
+        S(!0)
     }, []);
     s.useEffect(() => {
-        c || "loading" !== x || (0, p.Oq)(o.id, g.pY.CROSS_PLATFORM, l).then(() => f("success")).catch(() => f("error"))
-    }, [o.id, c, x, l]);
-    let L = !h || "loading" === x || null == d && null == u,
-        R = "error" === x || null == m || null == d && null != u;
-    return (0, a.jsx)(b.A, {
-        onClose: n,
-        transitionState: i,
-        quest: o,
-        sourceQuestContent: r,
-        location: v.rE.ORBS_REWARD_MODAL,
+        d || "loading" !== b || (0, m.Oq)(l.id, x.pY.CROSS_PLATFORM, r).then(() => p("success")).catch(() => p("error"))
+    }, [l.id, d, b, r]);
+    let L = !h || "loading" === b || null == i && null == u,
+        w = "error" === b || null == _ || null == i && null != u;
+    return (0, n.jsx)(g.A, {
+        onClose: a,
+        transitionState: o,
+        quest: l,
+        sourceQuestContent: c,
+        location: j.rE.ORBS_REWARD_MODAL,
         isRewardContentLoading: L,
-        rewardContentHasError: R,
-        rewardContent: R ? null : (0, a.jsx)(A.A, {
-            rewardName: E.intl.string(E.t.Lmysvd),
-            children: (0, a.jsx)(W, {
-                onClose: n,
-                orbsEarned: m,
-                orbsBalance: d,
+        rewardContentHasError: w,
+        rewardContent: w ? null : (0, n.jsx)(y.A, {
+            rewardName: O.intl.string(O.t.Lmysvd),
+            children: (0, n.jsx)(P, {
+                onClose: a,
+                orbsEarned: _,
+                orbsBalance: i,
                 isLoading: L,
-                onVideoLoaded: N
+                onVideoLoaded: R
             })
         })
     })

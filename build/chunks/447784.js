@@ -1,23 +1,23 @@
 /** chunk id: 447784 params = (module,exports,require) **/
-n.d(t, {
+t.d(n, {
     k: () => S
 });
-var l = n(627968),
-    i = n(64700),
-    r = n(503698),
-    s = n.n(r),
-    a = n(575593),
-    o = n(397927),
-    u = n(713517),
-    d = n(674658),
-    c = n(898461),
-    p = n(837015),
-    m = n(929283),
-    E = n(761365),
-    _ = n(985018),
-    x = n(836314);
+var l = t(627968),
+    i = t(64700),
+    r = t(503698),
+    s = t.n(r),
+    a = t(575593),
+    o = t(397927),
+    u = t(713517),
+    d = t(674658),
+    c = t(898461),
+    p = t(837015),
+    m = t(929283),
+    E = t(761365),
+    _ = t(985018),
+    x = t(836314);
 let S = e => {
-    let t, n, {
+    let n, t, {
             skuId: r,
             user: S,
             claimed: P,
@@ -40,12 +40,12 @@ let S = e => {
         } = (0, d.q)(r);
     if (null == M) return null;
     let C = M.items[0];
-    return null == C ? null : ((0, c.T)(C) ? (n = a.R.AVATAR_DECORATION, t = (0, l.jsx)(m.i, {
+    return null == C ? null : ((0, c.T)(C) ? (t = a.R.AVATAR_DECORATION, n = (0, l.jsx)(m.i, {
         item: C,
         user: S,
         isHighlighted: R,
         avatarSize: o._3J.SIZE_96
-    })) : (0, p.F)(C) && (n = a.R.NAMEPLATE, t = (0, l.jsx)(E.A, {
+    })) : (0, p.F)(C) && (t = a.R.NAMEPLATE, n = (0, l.jsx)(E.A, {
         nameplate: C,
         user: S,
         isHighlighted: R,
@@ -64,15 +64,15 @@ let S = e => {
             }),
             children: [(0, l.jsx)("div", {
                 className: s()(x.VH, {
-                    [x._Q]: n === a.R.AVATAR_DECORATION,
-                    [x.M4]: n === a.R.NAMEPLATE
+                    [x._Q]: t === a.R.AVATAR_DECORATION,
+                    [x.M4]: t === a.R.NAMEPLATE
                 }),
-                children: null != t ? (0, l.jsxs)(l.Fragment, {
+                children: null != n ? (0, l.jsxs)(l.Fragment, {
                     children: [(0, l.jsx)("div", {
                         className: s()(x.i1, {
                             [x.Sf]: P
                         }),
-                        children: t
+                        children: n
                     }), P && (0, l.jsx)(o.rOg, {
                         size: "custom",
                         width: 48,

@@ -1,21 +1,21 @@
 /** chunk id: 109174 params = (module,exports,require) **/
-n.d(t, {
-    A: () => s
+n.d(e, {
+    A: () => r
 });
 var i = n(627968);
 n(64700);
-var a = n(119995),
-    r = n(457976);
+var s = n(119995),
+    a = n(457976);
 
-function s(e) {
+function r(t) {
     let {
-        rewardName: t,
+        rewardName: e,
         children: n
-    } = e;
+    } = t;
     return (0, i.jsxs)("div", {
-        className: r.k,
-        children: [(0, i.jsx)(a.r, {
-            rewardName: t
+        className: a.k,
+        children: [(0, i.jsx)(s.r, {
+            rewardName: e
         }), n]
     })
 }

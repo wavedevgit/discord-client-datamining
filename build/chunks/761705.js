@@ -1,7 +1,7 @@
 /** chunk id: 761705 params = (module,exports,require) **/
-n.d(t, {
+a.d(t, {
     Q: () => s.Q,
-    W: () => a.W
+    W: () => n.W
 });
-var a = n(309954),
-    s = n(715054)
+var n = a(309954),
+    s = a(715054)

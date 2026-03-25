@@ -1,24 +1,24 @@
 /** chunk id: 91053 params = (module,exports,require) **/
-n.d(t, {
+t.d(n, {
     Z: () => _
 });
-var l = n(627968),
-    i = n(64700),
-    r = n(311907),
-    s = n(732955),
-    a = n(937008),
-    o = n(156312),
-    u = n(166532),
-    d = n(166403),
-    c = n(810498),
-    p = n(683433),
-    m = n(344159),
-    E = n(985018);
+var l = t(627968),
+    i = t(64700),
+    r = t(311907),
+    s = t(732955),
+    a = t(937008),
+    o = t(156312),
+    u = t(166532),
+    d = t(166403),
+    c = t(810498),
+    p = t(683433),
+    m = t(344159),
+    E = t(985018);
 
 function _(e) {
     let {
-        onStepChange: t,
-        selectedPlanId: n,
+        onStepChange: n,
+        selectedPlanId: t,
         paymentSources: r,
         onBackClick: u,
         showBackButton: d,
@@ -40,15 +40,15 @@ function _(e) {
         onClick: f,
         disabled: j
     } = x({
-        onStepChange: t,
-        selectedPlanId: n = n ?? T?.id,
+        onStepChange: n,
+        selectedPlanId: t = t ?? T?.id,
         isGift: I,
         claimableRewards: h,
         paymentSources: r,
         shouldRenderUpdatedPaymentModal: m,
         isTrial: _,
         isNextDisabled: S
-    }), R = i.useMemo(() => null != n && c.includes(n) ? [{
+    }), R = i.useMemo(() => null != t && c.includes(t) ? [{
         variant: g,
         text: A,
         onClick: f,
@@ -57,7 +57,7 @@ function _(e) {
         variant: "primary",
         text: E.intl.string(E.t.XqMe3N),
         disabled: !0
-    }], [g, A, f, j, n, c]);
+    }], [g, A, f, j, t, c]);
     return (0, l.jsx)(s.H7u, {
         leading: d && null != u ? (0, l.jsx)(p.A, {
             onClick: u
@@ -67,8 +67,8 @@ function _(e) {
 }
 let x = e => {
     let {
-        onStepChange: t,
-        selectedPlanId: n,
+        onStepChange: n,
+        selectedPlanId: t,
         isGift: l,
         claimableRewards: i,
         paymentSources: s,
@@ -80,13 +80,13 @@ let x = e => {
         selectedPlan: P
     } = (0, o.P5)(), {
         hasEntitlements: T
-    } = (0, m.X)(n, l), I = null != x && null != x.paymentSourceId || Object.keys(s).length > 0 || T && !p;
+    } = (0, m.X)(t, l), I = null != x && null != x.paymentSourceId || Object.keys(s).length > 0 || T && !p;
     var h = a ? E.intl.string(E.t.PDTjLN) : E.intl.string(E.t.XqMe3N),
         g = u.pn.ADD_PAYMENT_STEPS;
     return I && (g = u.pn.REVIEW), (0, c.px)(P, l, i) && S !== u.pn.SELECT_FREE_SKU && (g = u.pn.SELECT_FREE_SKU), {
         variant: "primary",
         text: h,
-        onClick: () => t(g),
+        onClick: () => n(g),
         disabled: _
     }
 }

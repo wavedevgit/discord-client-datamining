@@ -1,19 +1,19 @@
 /** chunk id: 364876 params = (module,exports,require) **/
-n.d(t, {
+t.d(n, {
     _: () => E
 });
-var l = n(627968);
-n(64700);
-var i = n(877624),
-    r = n(311907),
-    s = n(397927),
-    a = n(937008),
-    o = n(807098),
-    u = n(412260),
-    d = n(810498),
-    c = n(298305),
-    p = n(985018),
-    m = n(686046);
+var l = t(627968);
+t(64700);
+var i = t(877624),
+    r = t(311907),
+    s = t(397927),
+    a = t(937008),
+    o = t(807098),
+    u = t(412260),
+    d = t(810498),
+    c = t(298305),
+    p = t(985018),
+    m = t(686046);
 
 function E() {
     let e = (0, r.bG)([u.A], () => {
@@ -21,9 +21,9 @@ function E() {
             return null == e || "giftCustomizationBanner" !== e.properties.properties.oneofKind ? null : e.properties.properties.giftCustomizationBanner
         }),
         {
-            claimableRewards: t
+            claimableRewards: n
         } = (0, a.Pv)(),
-        n = (0, o.T)(e?.asset),
+        t = (0, o.T)(e?.asset),
         E = (0, o.T)(e?.backgroundAsset),
         _ = e?.gradient,
         x = null != _ && null != _.colors && _.colors.length >= 2 ? (0, d.K5)({
@@ -33,14 +33,14 @@ function E() {
         S = (0, d.gc)(E);
     null != S && (S.backgroundSize = "cover, auto", S.backgroundPosition = "right center, 0% 0%");
     let P = (0, d.x)(S, x);
-    return null == e || null == t ? null : (0, l.jsxs)("div", {
+    return null == e || null == n ? null : (0, l.jsxs)("div", {
         className: m.qD,
         style: P,
         children: [(0, l.jsx)("div", {
             className: m.my,
             children: (0, l.jsx)(c.A, {
-                claimableRewards: t,
-                maxRewardImageSrc: n ?? "",
+                claimableRewards: n,
+                maxRewardImageSrc: t ?? "",
                 size: s._3J.SIZE_40,
                 imageScaling: 1.25
             })

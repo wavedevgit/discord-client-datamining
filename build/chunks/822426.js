@@ -1,24 +1,24 @@
 /** chunk id: 822426 params = (module,exports,require) **/
-n.d(t, {
+t.d(n, {
     K: () => E
 });
-var l = n(627968);
-n(64700);
-var i = n(284009),
-    r = n.n(i),
-    s = n(397927),
-    a = n(96304),
-    o = n(927578),
-    u = n(937008),
-    d = n(156312),
-    c = n(166532),
-    p = n(800471),
-    m = n(985018);
+var l = t(627968);
+t(64700);
+var i = t(284009),
+    r = t.n(i),
+    s = t(397927),
+    a = t(96304),
+    o = t(927578),
+    u = t(937008),
+    d = t(156312),
+    c = t(166532),
+    p = t(800471),
+    m = t(985018);
 
 function E(e) {
     let {
-        handleStepChange: t,
-        handleClose: n
+        handleStepChange: n,
+        handleClose: t
     } = e, {
         activeSubscription: i,
         selectedSkuId: E,
@@ -45,15 +45,15 @@ function E(e) {
                 variant: "primary",
                 text: m.intl.string(m.t["3PatSz"]),
                 onClick: () => {
-                    h ? (_((0, p.xT)(E, i)), t(c.pn.REVIEW)) : t(c.pn.PLAN_SELECT)
+                    h ? (_((0, p.xT)(E, i)), n(c.pn.REVIEW)) : n(c.pn.PLAN_SELECT)
                 }
             }), (0, l.jsx)(s.Button, {
                 variant: "secondary",
-                onClick: n,
+                onClick: t,
                 text: m.intl.string(m.t.rzVN6j)
             })]
         }),
-        onClose: n,
+        onClose: t,
         isDowngrade: !0
     })
 }
