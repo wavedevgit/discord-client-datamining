@@ -74,7 +74,7 @@ function S(e) {
     } = (0, p.A)(0), {
         scrolledToTop: R,
         handleScroll: O
-    } = (0, f.u)(), G = (0, d.bG)([x.A], () => x.A.getRoleMemberCount(t.id)?.[n.id], [n.id, t.id]), L = (0, d.yK)([_.A], () => _.A.getEditedRoleConnectionConfigurationsMap().get(n.id) ?? []), D = L.length > 1 ? m.jO.OR : m.jO.AND, M = s.useMemo(() => D === m.jO.OR ? L.flat() : null != L && L.length > 0 ? L[0] : [], [D, L]), k = s.useMemo(() => new Set(M.map(e => e.connectionType)), [M]);
+    } = (0, f.u)(), L = (0, d.bG)([x.A], () => x.A.getRoleMemberCount(t.id)?.[n.id], [n.id, t.id]), G = (0, d.yK)([_.A], () => _.A.getEditedRoleConnectionConfigurationsMap().get(n.id) ?? []), D = G.length > 1 ? m.jO.OR : m.jO.AND, M = s.useMemo(() => D === m.jO.OR ? G.flat() : null != G && G.length > 0 ? G[0] : [], [D, G]), k = s.useMemo(() => new Set(M.map(e => e.connectionType)), [M]);
 
     function U(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : void 0,
@@ -222,7 +222,7 @@ function S(e) {
                     selectedSection: j.T$.VERIFICATIONS,
                     setSelectedSection: a
                 })
-            }), (G ?? 0) > 0 ? (0, i.jsxs)("div", {
+            }), (L ?? 0) > 0 ? (0, i.jsxs)("div", {
                 className: C.UW,
                 children: [(0, i.jsx)(c.EpV, {
                     size: "custom",

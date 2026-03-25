@@ -1,7 +1,7 @@
 /** chunk id: 965033 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => L,
+    Ay: () => G,
     qH: () => R,
     t9: () => y
 });
@@ -165,7 +165,7 @@ function O(e) {
     })
 }
 
-function G(e) {
+function L(e) {
     let {
         guild: t,
         mfaLevel: n
@@ -208,7 +208,7 @@ function G(e) {
     }) : null
 }
 
-function L() {
+function G() {
     let {
         guild: e,
         mfaLevel: t
@@ -224,7 +224,7 @@ function L() {
             guild: e
         }), (0, i.jsx)(S, {
             guild: e
-        }), (0, i.jsx)(G, {
+        }), (0, i.jsx)(L, {
             guild: e,
             mfaLevel: t
         }), (0, i.jsx)(y, {

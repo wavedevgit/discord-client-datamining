@@ -46,8 +46,8 @@ let v = function() {
         y = (0, u.Rg)(e),
         R = !y || t?.tag == null,
         O = t.badge ?? b.hc["0"],
-        G = t.badgeColorPrimary ?? null,
-        L = t.badgeColorSecondary ?? null,
+        L = t.badgeColorPrimary ?? null,
+        G = t.badgeColorSecondary ?? null,
         D = (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(A.A, {
                 className: I.uW,
@@ -55,8 +55,8 @@ let v = function() {
                 isDisabled: R,
                 tag: t.tag ?? "",
                 badge: O,
-                primaryColor: G,
-                secondaryColor: L
+                primaryColor: L,
+                secondaryColor: G
             }), (0, i.jsx)(p.A, {
                 className: I.uW,
                 selectedBadge: O,
@@ -65,8 +65,8 @@ let v = function() {
                 className: I.uW,
                 guildId: e.id,
                 badge: O,
-                primaryColor: G,
-                secondaryColor: L
+                primaryColor: L,
+                secondaryColor: G
             })]
         });
     return (0, i.jsxs)("div", {
@@ -116,8 +116,8 @@ let v = function() {
                             R ? x.A.updateGuildProfile(e.id, {
                                 tag: t.tag ?? "",
                                 badge: O,
-                                badgeColorPrimary: G,
-                                badgeColorSecondary: L
+                                badgeColorPrimary: L,
+                                badgeColorSecondary: G
                             }) : x.A.updateGuildProfile(e.id, {
                                 tag: null
                             })
@@ -142,8 +142,8 @@ let v = function() {
                     guildId: e.id,
                     tag: t.tag,
                     badge: O,
-                    primaryColor: G,
-                    secondaryColor: L
+                    primaryColor: L,
+                    secondaryColor: G
                 }), !R && (0, i.jsx)(j.A, {
                     guildId: e.id
                 })]

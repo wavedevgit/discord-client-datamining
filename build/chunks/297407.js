@@ -1,6 +1,6 @@
 /** chunk id: 297407 params = (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => d
 });
 var r = n(627968);
 n(64700);
@@ -10,7 +10,7 @@ var i = n(158954),
     o = n(985018),
     a = n(542899);
 
-function u(e) {
+function d(e) {
     let {
         guildId: t
     } = e, n = (0, s.A)(t);

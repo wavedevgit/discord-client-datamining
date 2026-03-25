@@ -1,93 +1,74 @@
 /** chunk id: 358172 params = (module,exports,require) **/
-n.d(t, {
-    A: () => p
+l.d(t, {
+    E: () => n
 });
-var i = n(627968);
-n(64700);
-var s = n(503698),
-    l = n.n(s),
-    a = n(417597),
-    r = n(421380),
-    o = n(397927),
-    d = n(263063),
-    c = n(509536),
-    u = n(721923),
-    m = n(864310),
-    _ = n(71393),
-    g = n(473145),
-    x = n(652215),
-    A = n(985018),
-    h = n(246930);
-let p = function(e) {
-    let {
-        className: t,
-        guildId: n,
-        boostingVariant: s
-    } = e, p = (0, a.bG)([_.A], () => _.A.getGuild(n), [n]), f = (0, m.A)(p?.id).total;
-    return null == p ? (0, i.jsx)("div", {
-        className: l()(t, h.bo),
-        children: (0, i.jsx)("div", {
-            className: h.$g,
-            children: (0, i.jsx)(o.Text, {
-                variant: "text-lg/bold",
-                children: A.intl.string(A.t["6Kwwuo"])
-            })
-        })
-    }) : (0, i.jsxs)("div", {
-        className: l()(t, h.bo),
-        children: [(0, i.jsx)(d.Ay, {
-            className: h.__invalid_guildIcon,
-            guild: p,
-            size: d.Ay.Sizes.LARGER
-        }), (0, i.jsxs)("div", {
-            className: h.$g,
-            children: [(0, i.jsx)(o.Text, {
-                variant: "text-lg/bold",
-                children: p.name
-            }), (0, i.jsxs)("div", {
-                className: h.TZ,
-                children: [(0, i.jsx)(o._Jp, {
-                    color: o.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
-                    className: h.Me
-                }), (0, i.jsx)(o.Text, {
-                    variant: "text-sm/bold",
-                    color: "text-muted",
-                    children: A.intl.format(A.t["pob/cL"], {
-                        subscriptions: f
-                    })
-                }), (0, i.jsx)("div", {
-                    className: h.me
-                }), (0, i.jsx)(o.Text, {
-                    variant: "text-sm/bold",
-                    color: "text-muted",
-                    children: (0, g.gb)(p.premiumTier, {
-                        useLevels: !1
-                    })
-                })]
-            })]
-        }), s ? (0, i.jsx)(u.A, {
-            guild: p,
-            analyticsLocation: {
-                page: x.liQ.GUILD_BOOSTING_USER_SETTINGS,
-                section: x.JJy.GUILD_BOOSTING_RECOMMENDED_SERVER_BOOST_THIS_SERVER_CTA,
-                object: x.ZSU.BUTTON_CTA,
-                objectType: x.AnalyticsObjectTypes.BUY
-            },
-            pauseAnimation: !0,
-            size: r.$n.Sizes.MEDIUM,
-            color: r.$n.Colors.PRIMARY,
-            buttonText: A.intl.string(A.t.aBHecF)
-        }) : (0, i.jsx)(o.Button, {
-            variant: "secondary",
-            text: A.intl.string(A.t.KLOhbO),
-            onClick: () => {
-                (0, c.K)({
-                    guildId: p.id,
-                    location: {
-                        section: x.JJy.GUILD_BOOSTING_RECOMMENDED_SERVER_GO_TO_SERVER_CTA
-                    }
-                })
-            }
-        })]
-    })
+var a = l(60075);
+let n = {
+    title: "Nitro Upsells",
+    stories: [{
+        name: "Burst Reactions Upsell",
+        component: a.t$,
+        id: "burst-reactions-upsell",
+        controls: {}
+    }, {
+        name: "Premium For Later Upsell",
+        component: a.LF,
+        id: "premium-for-later-upsell",
+        controls: {}
+    }, {
+        name: "Premium Profile Upsell",
+        component: a.Z1,
+        id: "premium-profile-upsell",
+        controls: {}
+    }, {
+        name: "Premium Message Length Upsell",
+        component: a.NA,
+        id: "premium-message-length-upsell",
+        controls: {}
+    }, {
+        name: "Premium Message Length Roadblock Upsell",
+        component: a.Ec,
+        id: "premium-message-length-roadblock-upsell",
+        controls: {}
+    }, {
+        name: "Premium Profile Decoration Upsell",
+        component: a.D5,
+        id: "premium-profile-decoration-upsell",
+        controls: {}
+    }, {
+        name: "Premium Guild Cap Upsell",
+        component: a.z_,
+        id: "premium-guild-cap-upsell",
+        controls: {}
+    }, {
+        name: "Premium Animated Profile Upsell",
+        component: a.yJ,
+        id: "premium-animated-profile-upsell",
+        controls: {}
+    }, {
+        name: "Premium Try It Out Profile Upsell",
+        component: a.lz,
+        id: "premium-try-it-out-profile-upsell",
+        controls: {}
+    }, {
+        name: "Premium Video Backgrounds Upsell",
+        component: a.yi,
+        id: "premium-video-backgrounds-upsell",
+        controls: {}
+    }, {
+        name: "Voice Filters Upsell",
+        component: a.s2,
+        id: "voice-filters-upsell",
+        controls: {}
+    }, {
+        name: "Premium Guild Member Profile Upsell",
+        component: a.KF,
+        id: "premium-guild-member-profile-upsell",
+        controls: {}
+    }, {
+        name: "File Upload Upsell",
+        component: a.mi,
+        id: "file-upload-upsell",
+        controls: {}
+    }]
 }

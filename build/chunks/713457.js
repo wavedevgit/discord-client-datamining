@@ -29,8 +29,8 @@ var a = n(627968),
     E = n(814793),
     N = n(201805),
     I = n(212614),
-    O = n(79545),
-    k = n(545986),
+    k = n(79545),
+    O = n(545986),
     R = n(654487),
     w = n(985018),
     D = n(421193);
@@ -142,7 +142,7 @@ function B(e) {
             icon: d.mqY,
             text: w.intl.string(w.t.YsCuyF),
             onClick: () => {
-                (0, k.d5)({
+                (0, O.d5)({
                     quest: t,
                     questContent: n,
                     sourceQuestContent: i,
@@ -228,7 +228,7 @@ function F(e) {
         isQuestEnrollmentBlocked: null != h.A.questEnrollmentBlockedUntil
     })), Y = t.userStatus?.enrolledAt != null, J = t.userStatus?.completedAt != null, X = J && t.userStatus?.claimedAt == null, Z = (0, y.if)(t), ee = !(0, y.Ic)(t), et = (0, v.In)(t), en = (0, S.IO)(t), ea = (0, S.K$)(t), ei = (0, S.Cr)(t), es = (0, v.fc)(t), [el, er, eo] = (0, v.Qo)(t, es), ed = ee && et === v.F3.ACCEPTED, ec = ed && el === x.X0.SELECT, eu = ed && !ec && er.length > 1, em = g.t.useConfig({
         location: R.rE.QUEST_HOME_DESKTOP
-    }), eh = (0, O.Pd)(t), ex = (0, m.O)(e => e.clearErrorHints), ep = i.useCallback(e => {
+    }), eh = (0, k.Pd)(t), ex = (0, m.O)(e => e.clearErrorHints), ep = i.useCallback(e => {
         eo(e), e === R.fO.DESKTOP && (_([]), ex(t.id))
     }, [eo, _, ex, t.id]), {
         text: eg,
@@ -333,13 +333,13 @@ function F(e) {
         })
     }) : ea ? eE = (0, a.jsx)("div", {
         className: D.x6,
-        children: em.enabled && (eh === O.UA.UNENROLLED || eh === O.UA.ENROLLED) && em.enabledQuestStates.has(eh) ? (0, a.jsxs)(r.e2v, {
+        children: em.enabled && (eh === k.UA.UNENROLLED || eh === k.UA.ENROLLED) && em.enabledQuestStates.has(eh) ? (0, a.jsxs)(r.e2v, {
             direction: "horizontal",
             fullWidth: !0,
             wrap: !1,
-            children: [eh === O.UA.UNENROLLED ? eS : null, (0, a.jsx)(I.A, {
+            children: [eh === k.UA.UNENROLLED ? eS : null, (0, a.jsx)(I.A, {
                 quest: t,
-                surface: O.V3.QUEST_HOME_TILE_FOOTER,
+                surface: k.V3.QUEST_HOME_TILE_FOOTER,
                 analyticsCtxQuestContent: n,
                 analyticsCtxSourceQuestContent: U,
                 analyticsCtxQuestContentPosition: A
@@ -376,11 +376,11 @@ function F(e) {
         },
         size: "sm",
         "data-migration-pending": !0
-    }) : em.enabled && eh === O.UA.ENROLLED && em.enabledQuestStates.has(O.UA.ENROLLED) ? (0, a.jsx)("div", {
+    }) : em.enabled && eh === k.UA.ENROLLED && em.enabledQuestStates.has(k.UA.ENROLLED) ? (0, a.jsx)("div", {
         className: D.x6,
         children: (0, a.jsx)(I.A, {
             quest: t,
-            surface: O.V3.QUEST_HOME_TILE_FOOTER,
+            surface: k.V3.QUEST_HOME_TILE_FOOTER,
             analyticsCtxQuestContent: n,
             analyticsCtxSourceQuestContent: U,
             analyticsCtxQuestContentPosition: A
@@ -415,7 +415,7 @@ function F(e) {
         className: D.x6,
         children: (0, a.jsx)(r.$nd, {
             variant: "primary",
-            icon: (0, k.Oz)(t),
+            icon: (0, O.Oz)(t),
             onClick: e_ ?? void 0,
             text: eg,
             fullWidth: !0
@@ -438,7 +438,7 @@ function F(e) {
             text: w.intl.string(w.t.V293qn)
         }), (0, a.jsx)(r.$nd, {
             variant: "primary",
-            onClick: () => (0, k.m6)(t, n, U),
+            onClick: () => (0, O.m6)(t, n, U),
             text: w.intl.string(w.t.vY9GgG)
         })]
     }) : (0, a.jsx)("div", {
@@ -447,9 +447,9 @@ function F(e) {
             direction: "horizontal",
             fullWidth: !0,
             wrap: !1,
-            children: [eS, em.enabled && eh === O.UA.UNENROLLED && em.enabledQuestStates.has(O.UA.UNENROLLED) ? (0, a.jsx)(I.A, {
+            children: [eS, em.enabled && eh === k.UA.UNENROLLED && em.enabledQuestStates.has(k.UA.UNENROLLED) ? (0, a.jsx)(I.A, {
                 quest: t,
-                surface: O.V3.QUEST_HOME_TILE_FOOTER,
+                surface: k.V3.QUEST_HOME_TILE_FOOTER,
                 analyticsCtxQuestContent: n,
                 analyticsCtxSourceQuestContent: U,
                 analyticsCtxQuestContentPosition: A
@@ -458,7 +458,7 @@ function F(e) {
                 variant: "primary",
                 onClick: e_ ?? void 0,
                 text: eg,
-                icon: (0, k.Oz)(t),
+                icon: (0, O.Oz)(t),
                 fullWidth: !0
             })]
         })

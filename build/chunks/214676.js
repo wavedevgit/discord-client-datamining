@@ -1,7 +1,7 @@
 /** chunk id: 214676 params = (module,exports,require) **/
 s.d(t, {
     L: () => v,
-    T: () => k
+    T: () => C
 });
 var n = s(627968),
     a = s(64700),
@@ -21,9 +21,9 @@ var n = s(627968),
     h = s(743981),
     p = s(985018),
     j = s(273034),
-    C = s(191017);
+    k = s(191017);
 
-function k() {
+function C() {
     let [e, t] = a.useState(() => {
         let e = Math.floor(Math.random() * b.Oz.length);
         return {
@@ -48,7 +48,7 @@ function k() {
                 avatar: o.A,
                 username: "Cherry",
                 usernameStyle: s,
-                usernameClassName: l()(r, C.q),
+                usernameClassName: l()(r, k.q),
                 message: p.intl.string(p.t["6OSasb"])
             })
         }), (0, n.jsx)(d.default, {

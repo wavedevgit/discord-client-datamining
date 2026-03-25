@@ -115,7 +115,7 @@ let T = e => {
         })]
     });
     let O = S ? N.t["WH+1Yz"] : N.t.a4MYDO,
-        G = [{
+        L = [{
             name: N.intl.string(N.t.yvk9py),
             failingName: N.intl.string(N.t["IY/UT/"]),
             description: N.intl.string(N.t.hSLSM6),
@@ -272,10 +272,10 @@ let T = e => {
                 className: E.nr,
                 width: 40
             }), d]
-        })), G.filter(e => !m || null == e.checked || !e.checked).map((e, t) => (0, i.jsxs)(s.Fragment, {
+        })), L.filter(e => !m || null == e.checked || !e.checked).map((e, t) => (0, i.jsxs)(s.Fragment, {
             children: [(0, i.jsx)(b, {
                 ...e
-            }), t < G.length - 1 ? (0, i.jsx)("hr", {
+            }), t < L.length - 1 ? (0, i.jsx)("hr", {
                 className: E.me
             }) : null]
         }, `${e.name}`))]

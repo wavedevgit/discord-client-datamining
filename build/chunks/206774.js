@@ -47,8 +47,8 @@ function v(e) {
     s.useEffect(() => {
         null == R && l(null)
     }, [R, l]);
-    let G = (0, a.bG)([m.A], () => m.A.getHighestRole(y), [y]),
-        L = (0, a.bG)([m.A], () => !m.A.isRoleHigher(y, G, R)),
+    let L = (0, a.bG)([m.A], () => m.A.getHighestRole(y), [y]),
+        G = (0, a.bG)([m.A], () => !m.A.isRoleHigher(y, L, R)),
         D = s.useRef(null),
         M = (0, a.bG)([_.A], () => _.A.getProps().integrations),
         k = {
@@ -81,8 +81,8 @@ function v(e) {
             t = (0, i.jsx)(j.Ay, {
                 guild: y,
                 role: R,
-                locked: L,
-                highestRole: G,
+                locked: G,
+                highestRole: L,
                 setSelectedSection: S
             });
             break;
@@ -90,7 +90,7 @@ function v(e) {
             t = (0, i.jsx)(E.Ay, {
                 guild: y,
                 role: R,
-                locked: L,
+                locked: G,
                 setSelectedSection: S,
                 initialSearchQuery: O
             });
@@ -99,7 +99,7 @@ function v(e) {
             t = (0, i.jsx)(f.A, {
                 guild: y,
                 role: R,
-                locked: L,
+                locked: G,
                 setSelectedSection: S,
                 integrations: M ?? void 0
             });
@@ -108,7 +108,7 @@ function v(e) {
             t = (0, i.jsx)(N.Ay, {
                 guild: y,
                 role: R,
-                locked: L,
+                locked: G,
                 setSelectedSection: S
             });
             break;

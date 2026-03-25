@@ -59,8 +59,8 @@ let y = s.forwardRef((e, t) => {
             guild: y,
             onChannelContextMenu: R,
             onContentClick: O,
-            onHeaderClick: G,
-            onTargetContextMenu: L,
+            onHeaderClick: L,
+            onTargetContextMenu: G,
             onUserContextMenu: D,
             theme: M
         } = e,
@@ -79,7 +79,7 @@ let y = s.forwardRef((e, t) => {
         variant: "text-sm/normal",
         children: [w, "—", B]
     });
-    let F = U ? G : T.tEg;
+    let F = U ? L : T.tEg;
     return (0, i.jsx)(a.tG, {
         id: l.id,
         children: e => (0, i.jsxs)("div", {
@@ -162,9 +162,9 @@ let y = s.forwardRef((e, t) => {
                                     },
                                     targetHook: (e, t) => l.targetType === T.GaG.USER && l.target instanceof _.A ? (0, i.jsx)(S, {
                                         user: l.target,
-                                        onContextMenu: L
+                                        onContextMenu: G
                                     }, t) : (0, i.jsx)("span", {
-                                        onContextMenu: L,
+                                        onContextMenu: G,
                                         children: e
                                     }, t),
                                     count: s.count ?? "",

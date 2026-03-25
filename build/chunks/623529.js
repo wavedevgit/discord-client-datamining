@@ -35,7 +35,7 @@ function S(e) {
         isGuildProducts: n = !1
     } = e, {
         format: l
-    } = (0, E.A)(t.id), a = (0, f.Tq)(t.id), m = s.useCallback(() => a?.cover_image_asset?.application_id == null ? null : (0, p.YE)(a.cover_image_asset.application_id, a.cover_image_asset, v), [a]), [A, S] = s.useState(l), [y, R] = s.useState(a?.description ?? ""), [O, G] = s.useState(m), [L, D] = s.useState(a?.store_page_guild_products_default_sort), [M, k] = s.useState(a?.server_shop_tab_order), {
+    } = (0, E.A)(t.id), a = (0, f.Tq)(t.id), m = s.useCallback(() => a?.cover_image_asset?.application_id == null ? null : (0, p.YE)(a.cover_image_asset.application_id, a.cover_image_asset, v), [a]), [A, S] = s.useState(l), [y, R] = s.useState(a?.description ?? ""), [O, L] = s.useState(m), [G, D] = s.useState(a?.store_page_guild_products_default_sort), [M, k] = s.useState(a?.server_shop_tab_order), {
         loading: U,
         error: P,
         updateSubscriptionsSettings: w
@@ -46,12 +46,12 @@ function S(e) {
     } = (0, N.A)(a?.cover_image_asset), V = (0, x.GV)();
 
     function z(e, t) {
-        r()(null != e, "Null value not allowed"), null != t && H(t.name), G(e)
+        r()(null != e, "Null value not allowed"), null != t && H(t.name), L(e)
     }
-    let W = s.useMemo(() => null != y && y !== (a?.description ?? "") || O?.startsWith("data:") === !0 || A !== l || a?.store_page_guild_products_default_sort !== L || a?.server_shop_tab_order !== M, [O, l, y, a, A, L, M]),
+    let W = s.useMemo(() => null != y && y !== (a?.description ?? "") || O?.startsWith("data:") === !0 || A !== l || a?.store_page_guild_products_default_sort !== G || a?.server_shop_tab_order !== M, [O, l, y, a, A, G, M]),
         K = null != y && "" !== y && null != O;
     s.useEffect(() => {
-        a?.cover_image_asset?.application_id != null && G((0, p.YE)(a.cover_image_asset.application_id, a.cover_image_asset, v))
+        a?.cover_image_asset?.application_id != null && L((0, p.YE)(a.cover_image_asset.application_id, a.cover_image_asset, v))
     }, [a?.cover_image_asset]);
     let Y = (0, j.gN)(),
         X = s.useMemo(() => C.aq.map(e => ({
@@ -145,7 +145,7 @@ function S(e) {
             }), (0, i.jsx)(g.l6P, {
                 label: T.intl.string(T.t.aaZ9pE),
                 description: T.intl.string(T.t.TILN8u),
-                value: L,
+                value: G,
                 placeholder: T.intl.string(T.t.XqMe3N),
                 options: X,
                 onSelectionChange: D,
@@ -173,12 +173,12 @@ function S(e) {
                     submitting: U,
                     disabled: !K,
                     onReset: () => {
-                        S(l), R(a?.description ?? ""), G(m), D(a?.store_page_guild_products_default_sort), k(a?.server_shop_tab_order)
+                        S(l), R(a?.description ?? ""), L(m), D(a?.store_page_guild_products_default_sort), k(a?.server_shop_tab_order)
                     },
                     onSave: () => {
                         r()(null != a, "Settings must be defined");
                         let e = {};
-                        y !== a.description && (e.description = y), null != O && O.startsWith("data:") && (e.cover_image = O), A !== l && (e.full_server_gate = A === b.c4.ALL_CHANNELS), L !== a.store_page_guild_products_default_sort && (e.store_page_guild_products_default_sort = L), M !== a.server_shop_tab_order && (e.server_shop_tab_order = M), o().isEmpty(e) || w(t.id, e)
+                        y !== a.description && (e.description = y), null != O && O.startsWith("data:") && (e.cover_image = O), A !== l && (e.full_server_gate = A === b.c4.ALL_CHANNELS), G !== a.store_page_guild_products_default_sort && (e.store_page_guild_products_default_sort = G), M !== a.server_shop_tab_order && (e.server_shop_tab_order = M), o().isEmpty(e) || w(t.id, e)
                     },
                     saveButtonTooltip: K ? void 0 : T.intl.string(T.t["6HRvit"])
                 })

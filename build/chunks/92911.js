@@ -32,8 +32,8 @@ var i = n(627968),
     y = n(997509),
     R = n(694012),
     O = n(652215),
-    G = n(818348),
-    L = n(650583),
+    L = n(818348),
+    G = n(650583),
     D = n(985018),
     M = n(134599);
 let k = "WELCOME_CHANNEL",
@@ -65,10 +65,10 @@ let k = "WELCOME_CHANNEL",
                         channelId: a.channel_id
                     })
                 }, {
-                    onCloseRequest: () => G.FX
+                    onCloseRequest: () => L.FX
                 })
             },
-            [, L] = (0, d.i)({
+            [, G] = (0, d.i)({
                 type: k,
                 item: {
                     channel: a,
@@ -87,9 +87,9 @@ let k = "WELCOME_CHANNEL",
                     h(e.channel, j, !0)
                 }
             });
-        return s.useLayoutEffect(() => (L(U(N)), () => {
-            L(null), U(null)
-        }), [L, U]), t = C ? null != b || null != a.emoji_name ? (0, i.jsx)(x.A, {
+        return s.useLayoutEffect(() => (G(U(N)), () => {
+            G(null), U(null)
+        }), [G, U]), t = C ? null != b || null != a.emoji_name ? (0, i.jsx)(x.A, {
             emojiId: b?.id,
             emojiName: null != b ? b.name : a.emoji_name,
             animated: !!b?.animated
@@ -158,7 +158,7 @@ let k = "WELCOME_CHANNEL",
             description: f,
             channels: T,
             enabled: S
-        } = l, G = e => {
+        } = l, L = e => {
             null == t || o()(e, r.channels) || ((0, b.i4)(t.id, {
                 channels: e
             }), x(!0))
@@ -172,7 +172,7 @@ let k = "WELCOME_CHANNEL",
                 s = [...T];
             null != t && t !== i && (s.splice(i, 1), s.splice(t, 0, e), (0, b.Xx)({
                 channels: s
-            })), n ? (G(s), c(null)) : c(t)
+            })), n ? (L(s), c(null)) : c(t)
         }, w = s.useRef(!1);
         (0, h.Ay)(() => () => {
             w.current = !0
@@ -276,7 +276,7 @@ let k = "WELCOME_CHANNEL",
                                 }), x(!0))
                             },
                             onKeyDown: e => {
-                                e.key === L.dh.ENTER && e.preventDefault()
+                                e.key === G.dh.ENTER && e.preventDefault()
                             },
                             value: f,
                             maxLength: 140,
@@ -297,7 +297,7 @@ let k = "WELCOME_CHANNEL",
                                 let t = [...T ?? []];
                                 null == e ? t.splice(n, 1) : t[n] = e, (0, b.Xx)({
                                     channels: t
-                                }), G(t), 0 === t.length && S && ((0, b.Xx)({
+                                }), L(t), 0 === t.length && S && ((0, b.Xx)({
                                     enabled: !1
                                 }), k(!1))
                             },

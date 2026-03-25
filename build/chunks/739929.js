@@ -46,8 +46,8 @@ function _(e) {
             isMonetizationReapplicationDisabled: R
         } = (0, l.YG)(e?.id),
         O = E || I?.isApplicationPending === !0,
-        G = I?.canApply === !0,
-        L = h.intl.format(h.t.aJUdOi, {
+        L = I?.canApply === !0,
+        G = h.intl.format(h.t.aJUdOi, {
             faqUrl: o.A.getArticleURL(x.MVz.CREATOR_FAQ)
         });
     v && R ? t = !0 === _ ? h.intl.format(h.t["0o1Q+t"], {
@@ -61,7 +61,7 @@ function _(e) {
     let D = n && A && !1 === p,
         M = n && !1 === _,
         k = (0, g.r)(),
-        U = v && G && A ? h.intl.format(h.t.wbVIUB, {}) : void 0;
+        U = v && L && A ? h.intl.format(h.t.wbVIUB, {}) : void 0;
     return i.useEffect(() => {
         D && T()
     }, [T, D]), {
@@ -74,14 +74,14 @@ function _(e) {
         eligibilityError: C,
         refreshEligibility: T,
         eligibility: I,
-        eligibleForMonetization: G,
+        eligibleForMonetization: L,
         isApplicationPending: O,
         hasPreviousApplicationRejection: v,
         requestRejectedNoticeText: t,
         reapplyNoticeText: U,
         showAcceptTermsFlow: M,
         wasRejectedInV1: M && (y || v),
-        requirementsFinePrintText: L,
+        requirementsFinePrintText: G,
         acceptTermsCheckboxText: k
     }
 }

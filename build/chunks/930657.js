@@ -30,13 +30,13 @@ function j(e) {
         imageCTA: y,
         imageAriaLabel: R,
         setFilename: O
-    } = (0, h.A)(j), G = s.useMemo(() => t?.map(e => ({
+    } = (0, h.A)(j), L = s.useMemo(() => t?.map(e => ({
         id: e.toString(),
         value: e,
         label: (0, c.$g)(e, p.Yri.USD)
     })) ?? [], [t]);
 
-    function L(e, t) {
+    function G(e, t) {
         null != t && O(t.name), S(e)
     }
     let D = (0, m.gN)(),
@@ -65,7 +65,7 @@ function j(e) {
                     children: (0, i.jsx)(r.l6P, {
                         selectionMode: "single",
                         label: A.intl.string(A.t.Ibl4BR),
-                        options: G,
+                        options: L,
                         disabled: D || null == t,
                         placeholder: A.intl.string(A.t["88XZDs"]),
                         value: b,
@@ -88,7 +88,7 @@ function j(e) {
                     label: A.intl.string(A.t.RUBM2q),
                     description: A.intl.string(A.t["0iUofN"]),
                     children: (0, i.jsx)(o.A, {
-                        onChange: L,
+                        onChange: G,
                         "aria-label": R,
                         disabled: D,
                         text: y,
@@ -103,7 +103,7 @@ function j(e) {
                     hideSize: !0,
                     className: f.KN,
                     imageClassName: f.NW,
-                    onChange: L,
+                    onChange: G,
                     "aria-label": R,
                     disabled: D
                 })]

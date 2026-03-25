@@ -9,11 +9,11 @@ var i = n(158954),
     l = n(421380),
     o = n(397927),
     a = n(721923),
-    u = n(71393),
-    d = n(975571),
+    d = n(71393),
+    u = n(975571),
     c = n(953382),
-    p = n(864310),
-    m = n(931936),
+    m = n(864310),
+    p = n(931936),
     _ = n(289588),
     f = n(568065),
     g = n(652215),
@@ -25,11 +25,11 @@ function h(e) {
     let {
         guildId: t,
         showVideoCard: n
-    } = e, h = (0, s.bG)([u.A], () => u.A.getGuild(t)), {
+    } = e, h = (0, s.bG)([d.A], () => d.A.getGuild(t)), {
         available: E,
         spent: j,
         total: b
-    } = (0, p.A)(t), I = (0, c.q)("GuildPowerupsBoostInfoContainerAdmin");
+    } = (0, m.A)(t), I = (0, c.q)("GuildPowerupsBoostInfoContainerAdmin");
     if (null != h) return (0, r.jsxs)("div", {
         className: v.kL,
         children: [(0, r.jsxs)("div", {
@@ -42,7 +42,7 @@ function h(e) {
                 className: v.C2,
                 variant: "text-xs/semibold",
                 children: A.intl.format(x.default.fXE30d, {
-                    helpDeskArticle: d.A.getArticleURL(g.MVz.GUILD_BOOSTING_FAQ)
+                    helpDeskArticle: u.A.getArticleURL(g.MVz.GUILD_BOOSTING_FAQ)
                 })
             })]
         }), (0, r.jsxs)("div", {
@@ -73,7 +73,7 @@ function h(e) {
                 size: "sm",
                 color: o.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK
             })
-        }), (0, r.jsx)(m.A, {
+        }), (0, r.jsx)(p.A, {
             guildId: t,
             showVideoCard: n
         })]

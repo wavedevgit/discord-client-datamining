@@ -1,7 +1,7 @@
 /** chunk id: 577092 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => G
+    A: () => L
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -94,12 +94,12 @@ let y = e => {
             disabled: !l
         })
     },
-    G = e => {
+    L = e => {
         let {
             guild: t
         } = e, l = (0, N.A)(t.id), {
             analyticsLocations: u
-        } = (0, m.Ay)(), f = (0, p.A)(t.id), G = t.features.has(T.GuildFeatures.MORE_STICKERS) ? T.TVA.TIER_3 : t.premiumTier, L = t.features.has(T.GuildFeatures.MORE_STICKERS) ? T.M2T[T.TVA.TIER_3] : f, D = (0, A.A)(t.id);
+        } = (0, m.Ay)(), f = (0, p.A)(t.id), L = t.features.has(T.GuildFeatures.MORE_STICKERS) ? T.TVA.TIER_3 : t.premiumTier, G = t.features.has(T.GuildFeatures.MORE_STICKERS) ? T.M2T[T.TVA.TIER_3] : f, D = (0, A.A)(t.id);
         if (s.useEffect(() => {
                 window.dispatchEvent(new Event("resize"))
             }, [l]), "success" !== l.status) return (0, i.jsx)(d.y$y, {});
@@ -108,7 +108,7 @@ let y = e => {
                 tier: T.TVA.NONE,
                 title: (0, i.jsx)(y, {
                     guildStickers: M,
-                    currentGuildTier: G,
+                    currentGuildTier: L,
                     tier: T.TVA.NONE,
                     children: v.intl.string(v.t.tfVXhP)
                 })
@@ -116,7 +116,7 @@ let y = e => {
                 tier: T.TVA.TIER_1,
                 title: (0, i.jsx)(y, {
                     guildStickers: M,
-                    currentGuildTier: G,
+                    currentGuildTier: L,
                     tier: T.TVA.TIER_1,
                     children: v.intl.string(v.t.nzXtaS)
                 })
@@ -124,7 +124,7 @@ let y = e => {
                 tier: T.TVA.TIER_2,
                 title: (0, i.jsx)(y, {
                     guildStickers: M,
-                    currentGuildTier: G,
+                    currentGuildTier: L,
                     tier: T.TVA.TIER_2,
                     children: v.intl.string(v.t["h33/uW"])
                 })
@@ -132,7 +132,7 @@ let y = e => {
                 tier: T.TVA.TIER_3,
                 title: (0, i.jsx)(y, {
                     guildStickers: M,
-                    currentGuildTier: G,
+                    currentGuildTier: L,
                     tier: T.TVA.TIER_3,
                     children: v.intl.string(v.t.BfF6ED)
                 })
@@ -158,7 +158,7 @@ let y = e => {
                     F = (0, j.Cp)(N.tier),
                     H = M.slice(w, B),
                     V = H.length > 0,
-                    z = G < N.tier,
+                    z = L < N.tier,
                     W = (s = M.length, s < (0, j.aG)(T.TVA.NONE) ? T.TVA.NONE : s < (0, j.aG)(T.TVA.TIER_1) ? T.TVA.TIER_1 : s < (0, j.aG)(T.TVA.TIER_2) ? T.TVA.TIER_2 : s < (0, j.aG)(T.TVA.TIER_3) || null != t && t.features.has(T.GuildFeatures.MORE_STICKERS) && s < c.K.MAX_STICKER_SLOTS ? T.TVA.TIER_3 : T.TVA.NONE),
                     K = k && !z && W === N.tier && B !== H.length,
                     Y = K || H.length > 0,
@@ -190,14 +190,14 @@ let y = e => {
                     let e = I.a8[N.tier];
                     null != e && (0, _.Qh)(t.id, e)
                 }, ee = v.intl.string(v.t.g7lkrU), t.premiumTier + 1 !== N.tier && (en = !0, l = v.intl.string(v.t.mTMkY2))) : (en = !0, l = v.intl.string(v.t.hwPEJR)));
-                let ei = W === y + 1 && W > G,
-                    es = K || ei || y > G;
+                let ei = W === y + 1 && W > L,
+                    es = K || ei || y > L;
                 return ei ? m = (0, i.jsx)(g.A, {
                     guild: t,
                     size: o.$n.Sizes.SMALL,
                     color: o.$n.Colors.GREEN,
                     buttonText: v.intl.string(v.t.Vbkh2l),
-                    targetBoostedGuildTier: G + 1,
+                    targetBoostedGuildTier: L + 1,
                     analyticsLocation: {
                         page: T.liQ.GUILD_SETTINGS,
                         section: T.JJy.GUILD_SETTINGS_STICKERS,
@@ -207,7 +207,7 @@ let y = e => {
                 }) : K && (m = (0, i.jsx)(O, {
                     guild: t
                 })), (0, i.jsxs)(C.A, {
-                    subscriptionCount: L,
+                    subscriptionCount: G,
                     tier: N,
                     onSetRef: A,
                     isAnimatedTo: p,

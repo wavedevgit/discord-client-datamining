@@ -1,7 +1,7 @@
 /** chunk id: 728713 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => G
+    A: () => L
 });
 var i = n(627968),
     s = n(64700),
@@ -63,8 +63,8 @@ function O(e) {
             }
         }),
         [{
-            dragSourcePosition: G
-        }, L] = (0, o.H)({
+            dragSourcePosition: L
+        }, G] = (0, o.H)({
             accept: R,
             canDrop: () => T,
             collect: e => {
@@ -94,8 +94,8 @@ function O(e) {
         colors: S
     }), (0, i.jsxs)(u.VQ0.Item, {
         className: r()(y.nM, {
-            [y.qo]: null !== G && x < G,
-            [y.BP]: null !== G && x > G
+            [y.qo]: null !== L && x < L,
+            [y.BP]: null !== L && x > L
         }),
         id: l.id,
         selectedItem: c,
@@ -115,7 +115,7 @@ function O(e) {
         },
         "aria-label": l.name,
         clickableRef: e => {
-            O(L(e?.ref ?? null))
+            O(G(e?.ref ?? null))
         },
         children: [t, null != E ? (0, i.jsx)(b.A, {
             className: y.s2,
@@ -129,7 +129,7 @@ function O(e) {
     })
 }
 
-function G(e) {
+function L(e) {
     let {
         guild: t,
         currentRoleId: n,
@@ -140,8 +140,8 @@ function G(e) {
         handleScroll: v
     } = (0, T.u)(), {
         handleDragStart: R,
-        handleDragReset: G,
-        handleDragComplete: L
+        handleDragReset: L,
+        handleDragComplete: G
     } = (0, C.A)(o), D = s.useRef(null), M = s.useCallback(e => {
         let t = o.findIndex(t => t.id === e);
         D.current?.getScrollerNode()?.scrollTo({
@@ -208,8 +208,8 @@ function G(e) {
                         onClick: () => l(e.id),
                         currentPosition: s,
                         onDragStart: R,
-                        onDragReset: G,
-                        onDragComplete: L,
+                        onDragReset: L,
+                        onDragComplete: G,
                         roleStyle: _
                     }, e.id))
                 })

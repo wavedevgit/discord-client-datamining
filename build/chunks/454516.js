@@ -196,7 +196,7 @@ function v() {
             null != e && y(t)(e) && i.push(e)
         }
         return i
-    }, [y]), O = s.useMemo(() => R(f, t, j), [f, R, t, j]), G = null != f, L = O.length % 1e3 == 0 && O.length > 0 && G, D = 0 === O.length, [M, k] = s.useState({
+    }, [y]), O = s.useMemo(() => R(f, t, j), [f, R, t, j]), L = null != f, G = O.length % 1e3 == 0 && O.length > 0 && L, D = 0 === O.length, [M, k] = s.useState({
         currentPage: 1,
         pageSize: 100
     });
@@ -211,11 +211,11 @@ function v() {
         }, [v]),
         P = s.useMemo(() => r().chunk(O, M.pageSize), [M.pageSize, O]),
         w = s.useCallback(e => {
-            S.current?.scrollToSectionTop(0), (e + 1) * M.pageSize > O.length && L && !d && (B.current = O[O.length - 1]?.id ?? null, U(B.current)), (null != P[e - 1] || L) && k(t => ({
+            S.current?.scrollToSectionTop(0), (e + 1) * M.pageSize > O.length && G && !d && (B.current = O[O.length - 1]?.id ?? null, U(B.current)), (null != P[e - 1] || G) && k(t => ({
                 ...t,
                 currentPage: e
             }))
-        }, [M.pageSize, O, L, P, U, d]),
+        }, [M.pageSize, O, G, P, U, d]),
         B = s.useRef(null);
     s.useEffect(() => {
         U(B.current)
@@ -233,7 +233,7 @@ function v() {
                 bans: f,
                 sortedBans: F,
                 ref: S
-            }), !L && D && (0, i.jsxs)(o.ppr, {
+            }), !G && D && (0, i.jsxs)(o.ppr, {
                 theme: C,
                 className: b.p$,
                 children: [(0, i.jsx)(o.G8R, {
@@ -252,7 +252,7 @@ function v() {
         }), (0, i.jsx)("div", {
             children: (0, i.jsx)(o.mgR, {
                 className: b.JV,
-                totalCount: O.length + (L ? M.pageSize : 0),
+                totalCount: O.length + (G ? M.pageSize : 0),
                 pageSize: M.pageSize,
                 currentPage: M.currentPage,
                 onPageChange: w,

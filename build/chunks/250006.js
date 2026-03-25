@@ -52,7 +52,7 @@ function A(e) {
                 index: l
             })
         })
-    }, [t, l]), y = t.connection_type === h.wZ.APPLICATION, R = t.application_id, O = (0, a.bG)([m.A], () => y && null != R ? m.A.getApplication(R) : null, [y, R]), G = s.useMemo(() => (function(e, t, n) {
+    }, [t, l]), y = t.connection_type === h.wZ.APPLICATION, R = t.application_id, O = (0, a.bG)([m.A], () => y && null != R ? m.A.getApplication(R) : null, [y, R]), L = s.useMemo(() => (function(e, t, n) {
         if (e.connection_type === h.wZ.APPLICATION && null != e.application_id) {
             if (null != n) return {
                 name: n.name,
@@ -93,8 +93,8 @@ function A(e) {
             className: p.hu,
             children: [(0, i.jsx)("div", {
                 className: p.Kk,
-                children: null != G.icon ? (0, i.jsx)("img", {
-                    src: G.icon,
+                children: null != L.icon ? (0, i.jsx)("img", {
+                    src: L.icon,
                     alt: "",
                     width: 40,
                     height: 40
@@ -109,7 +109,7 @@ function A(e) {
                 children: [(0, i.jsx)(d.Text, {
                     variant: "text-md/medium",
                     color: "text-strong",
-                    children: G.name
+                    children: L.name
                 }), (0, i.jsx)(d.Text, {
                     variant: "text-sm/normal",
                     color: "text-muted",

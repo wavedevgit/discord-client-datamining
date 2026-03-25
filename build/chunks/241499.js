@@ -44,7 +44,7 @@ function T(e) {
     } = e, v = s.useRef(null), S = s.useRef(null), [{
         textValue: y,
         richValue: R
-    }, O] = s.useState((0, x.ur)(t.value)), [, G, L] = (0, d.i)({
+    }, O] = s.useState((0, x.ur)(t.value)), [, L, G] = (0, d.i)({
         type: C,
         item: {
             rule: t,
@@ -68,9 +68,9 @@ function T(e) {
             _(e.rule, l, !0)
         }
     });
-    if (s.useLayoutEffect(() => (G(S), L(D(v)), () => {
-            G(null), D(null)
-        }), [G, D, L]), s.useEffect(() => {
+    if (s.useLayoutEffect(() => (L(S), G(D(v)), () => {
+            L(null), D(null)
+        }), [L, D, G]), s.useEffect(() => {
             "" !== t.value && "" === y && O((0, x.ur)(t.value))
         }, [t.value, y]), null == n) return null;
     let M = "" !== t.value ? t.value : t.id;
@@ -166,7 +166,7 @@ function I(e) {
             s.splice(l, 1), s.splice(i, 0, e), n(s)
         }
         s ? null !== x && h(null) : i !== x && h(i)
-    }, [r, x, t, n]), O = t.length === j.yN, G = s.useMemo(() => {
+    }, [r, x, t, n]), O = t.length === j.yN, L = s.useMemo(() => {
         let e = O ? E.intl.formatToPlainString(E.t.tU718E, {
             number: j.yN
         }) : void 0;
@@ -226,7 +226,7 @@ function I(e) {
             className: b.V7,
             children: E.intl.string(E.t.XHWj8W)
         }), (0, i.jsx)(f.z, {
-            pills: G,
+            pills: L,
             pillClassName: b.Io
         })]
     })

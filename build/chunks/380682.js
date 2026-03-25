@@ -32,8 +32,8 @@ var i = n(627968),
     y = n(700458),
     R = n(159719),
     O = n(652215),
-    G = n(746080),
-    L = n(269927),
+    L = n(746080),
+    G = n(269927),
     D = n(985018),
     M = n(782356);
 
@@ -84,7 +84,7 @@ function U(e) {
         teams: n
     } = (0, x.A)({
         refreshOnDepChange: !1
-    }), s = n.find(e => e.id === t?.team?.id), l = [L.y.ACTION_REQUIRED, L.y.BLOCKED, L.y.SUSPENDED];
+    }), s = n.find(e => e.id === t?.team?.id), l = [G.y.ACTION_REQUIRED, G.y.BLOCKED, G.y.SUSPENDED];
     return s?.payout_account_status != null && l.includes(s?.payout_account_status) ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(r.hKd, {
             size: 16
@@ -134,7 +134,7 @@ function w(e) {
         } = (0, y.Tj)(),
         N = (0, f.X)(),
         v = (0, s.bG)([p.default], () => p.default.getCurrentUser()),
-        L = (0, b.A)(n.id),
+        G = (0, b.A)(n.id),
         P = null != n && (0, h.bM)(n, v);
     if (!N) return (0, i.jsx)(r.y$y, {});
     switch (x) {
@@ -212,7 +212,7 @@ function w(e) {
                     children: (0, i.jsx)(l.m, {
                         text: D.intl.string(D.t["1wCH4M"]),
                         children: (0, i.jsx)(r.Button, {
-                            disabled: L,
+                            disabled: G,
                             onClick: () => {
                                 let e = _.A.getEveryoneRole(n);
                                 d.A.close();
@@ -224,7 +224,7 @@ function w(e) {
                                     roles: t,
                                     initialTab: "role_subscriptions",
                                     returnToSection: O.BEX.ROLE_SUBSCRIPTIONS
-                                }), (0, E.SY)(n.id), (0, g.pX)(O.BVt.CHANNEL(n.id, G.VV.ROLE_SUBSCRIPTIONS))
+                                }), (0, E.SY)(n.id), (0, g.pX)(O.BVt.CHANNEL(n.id, L.VV.ROLE_SUBSCRIPTIONS))
                             },
                             text: D.intl.string(D.t.vM81yY),
                             size: "sm",

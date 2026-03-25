@@ -1,8 +1,8 @@
 /** chunk id: 729984 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => G,
-    G: () => L
+    A: () => L,
+    G: () => G
 });
 var i = n(627968),
     s = n(64700),
@@ -132,7 +132,7 @@ function O(e) {
     })
 }
 
-function G(e) {
+function L(e) {
     let {
         saveOnClose: t = !1
     } = e, n = (0, l.bG)([A.A], () => A.A.getGuild()), r = (0, l.bG)([c.A], () => c.A.isLoading()), a = (0, l.bG)([_.Ay], () => _.Ay.getChannels(n?.id)), d = (0, l.bG)([h.A], () => h.A.getCategories(n?.id)), u = (0, l.bG)([E.A], () => E.A.advancedMode), m = s.useRef(null), [g, x] = s.useState(!1), j = s.useRef(n);
@@ -218,7 +218,7 @@ function G(e) {
     })
 }
 
-function L() {
+function G() {
     let e = (0, l.bG)([A.A], () => A.A.getProps().guild),
         t = (0, l.bG)([j.A], () => j.A.submitting),
         n = (0, l.bG)([E.A], () => E.A.advancedMode);

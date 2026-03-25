@@ -32,8 +32,8 @@ var i = n(627968),
     y = n(396816),
     R = n(545567),
     O = n(785312),
-    G = n(319805),
-    L = n(316506),
+    L = n(319805),
+    G = n(316506),
     D = n(486619),
     M = n(631103),
     k = n(927573),
@@ -317,7 +317,7 @@ function ee(e) {
     } = (0, O.A)(0), {
         scrolledToTop: A,
         handleScroll: f
-    } = (0, L.u)();
+    } = (0, G.u)();
     return (0, i.jsx)(g.GtU, {
         className: H.XG,
         style: {
@@ -331,7 +331,7 @@ function ee(e) {
                     [V.l6]: !A
                 }),
                 ref: p,
-                children: (0, i.jsx)(L.A, {
+                children: (0, i.jsx)(G.A, {
                     guild: t,
                     role: n,
                     selectedSection: k.T$.DISPLAY,
@@ -364,7 +364,7 @@ function ee(e) {
                     variant: "text-xs/medium",
                     children: B.intl.string(F.default.tBhCyr)
                 })
-            }), (0, i.jsx)(G.A, {
+            }), (0, i.jsx)(L.A, {
                 guild: t,
                 disabled: x,
                 role: n

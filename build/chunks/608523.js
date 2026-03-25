@@ -64,16 +64,14 @@ let u = e => {
                 onChange: T,
                 value: f,
                 error: C,
-                placeholder: _,
-                autoFocus: !0
+                placeholder: _
             }) : (0, l.jsx)(r.fs1, {
                 maxLength: x,
                 onChange: T,
                 value: f,
                 error: C,
                 rows: m,
-                placeholder: _,
-                autoFocus: !0
+                placeholder: _
             }), null != n && (0, l.jsx)("div", {
                 className: c.a5,
                 children: (0, l.jsx)(r.Text, {

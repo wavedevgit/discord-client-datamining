@@ -10,23 +10,23 @@ var r = n(64700),
 let a = {
         guildTagsBadgePacks: [i.tv, i.OJ, i.Ht, i.jF]
     },
-    u = Object.entries(a).reduce((e, t) => {
+    d = Object.entries(a).reduce((e, t) => {
         let [n, r] = t;
         for (let t of r) e[t] = n;
         return e
     }, {}),
-    d = [o.o9.LEVEL, o.o9.PERK];
+    u = [o.o9.LEVEL, o.o9.PERK];
 
 function c(e, t) {
     let n = (0, s.bG)([l.A], () => l.A.getStateForGuild(e));
-    return r.useMemo(() => d.reduce((e, r) => {
+    return r.useMemo(() => u.reduce((e, r) => {
         let s = n?.powerupCatalog[r];
         if (null == s) return e;
         let l = function(e, t, n) {
             let r = [],
                 s = t.reduce((e, t) => {
                     if (t.type !== o.o9.PERK) return e;
-                    let n = u[t.skuId];
+                    let n = d[t.skuId];
                     return null == n || (e[n] ??= [], e[n].push(t)), e
                 }, {});
             for (let e of t) {
@@ -37,7 +37,7 @@ function c(e, t) {
                     });
                     continue
                 }
-                let t = u[e.skuId];
+                let t = d[e.skuId];
                 if (null != t) {
                     let e = s[t];
                     if (void 0 !== e) {

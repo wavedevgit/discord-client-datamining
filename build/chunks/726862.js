@@ -40,8 +40,8 @@ function b(e) {
         onPromptDragReset: y
     } = e, R = (0, a.bG)([h.A], () => h.A.editedDefaultChannelIds), {
         drag: O,
-        dragSourcePosition: G,
-        drop: L,
+        dragSourcePosition: L,
+        drop: G,
         setIsDraggable: D
     } = (0, c.A)({
         type: "ONBOARDING_PROMPT_CARD",
@@ -64,12 +64,12 @@ function b(e) {
             onBlur: () => w(!1),
             onMouseLeave: () => w(!1),
             className: r()(N.kL, {
-                [N.A]: null != G && u < G,
-                [N.Ze]: null != G && u > G,
+                [N.A]: null != L && u < L,
+                [N.Ze]: null != L && u > L,
                 [N.tW]: P
             }),
             ref: e => {
-                O(L(e))
+                O(G(e))
             },
             children: [(0, i.jsx)("div", {
                 className: N.cK,
@@ -119,12 +119,12 @@ function b(e) {
             onFocus: () => w(!0),
             onBlur: () => w(!1),
             className: r()(N.kL, {
-                [N.A]: null != G && u < G,
-                [N.Ze]: null != G && u > G,
+                [N.A]: null != L && u < L,
+                [N.Ze]: null != L && u > L,
                 [N.tW]: P
             }),
             ref: e => {
-                O(L(e))
+                O(G(e))
             },
             children: [(0, i.jsx)("div", {
                 className: N.cK,

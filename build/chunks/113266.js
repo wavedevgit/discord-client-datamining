@@ -32,15 +32,15 @@ var i = n(627968),
     y = n(358431),
     R = n(486020),
     O = n(473145),
-    G = n(723702),
-    L = n(427262),
+    L = n(723702),
+    G = n(427262),
     D = n(555337),
     M = n(619842),
     k = n(652215),
     U = n(980504),
     P = n(985018),
     w = n(252308);
-let B = G.isPlatformEmbedded || "Safari" !== o().name;
+let B = L.isPlatformEmbedded || "Safari" !== o().name;
 
 function F() {
     let e = (0, d.bG)([D.A], () => D.A.getProps().guild),
@@ -274,9 +274,9 @@ function Y(e) {
         analyticsLocations: b
     } = (0, A.Ay)(), C = (0, d.bG)([S.default], () => _ ?? S.default.getUser(p), [p, _]), {
         canManageGuildExpression: v
-    } = (0, j.nr)(o), y = s.useMemo(() => v(t), [t, v]), O = null != f || null != E, [G, D] = s.useState(!1), M = (0, T.v)(t, o.id);
+    } = (0, j.nr)(o), y = s.useMemo(() => v(t), [t, v]), O = null != f || null != E, [L, D] = s.useState(!1), M = (0, T.v)(t, o.id);
     async function k() {
-        if (!G) {
+        if (!L) {
             D(!0);
             try {
                 await (0, N.ty)(o.id, c)
@@ -298,7 +298,7 @@ function Y(e) {
                 sourceAnalyticsLocations: b
             })
         }, [C, o.id, b]),
-        B = L.Ay.useUserTag(C);
+        B = G.Ay.useUserTag(C);
     return (0, i.jsxs)("div", {
         className: r()(w.nM, {
             [w.vu]: l
@@ -313,7 +313,7 @@ function Y(e) {
             className: w.Zg
         }), (0, i.jsx)(g.DUT, {
             onClick: () => {
-                G || a(t)
+                L || a(t)
             },
             onContextMenu: M,
             className: w.TW,

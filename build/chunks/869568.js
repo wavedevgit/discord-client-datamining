@@ -54,7 +54,7 @@ async function O(e, t, n) {
     }
 }
 
-function G(e) {
+function L(e) {
     let {
         member: t,
         guildId: l,
@@ -152,7 +152,7 @@ function G(e) {
     })
 }
 
-function L(e) {
+function G(e) {
     let {
         handleAddClick: t,
         locked: n
@@ -216,12 +216,12 @@ function D(e) {
                 let {
                     row: s
                 } = e;
-                if (0 === p.length) return (0, i.jsx)(L, {
+                if (0 === p.length) return (0, i.jsx)(G, {
                     handleAddClick: u,
                     locked: a
                 }, "empty");
                 let l = p[s];
-                return (0, i.jsx)(G, {
+                return (0, i.jsx)(L, {
                     member: l,
                     guildId: t,
                     roleId: n,

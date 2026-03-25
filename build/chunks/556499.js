@@ -170,7 +170,7 @@ function S(e) {
         [d, f] = i.useState(!1),
         [S, E] = i.useState(!1),
         [N, I] = i.useState(!1),
-        [O, k] = i.useState(!1),
+        [k, O] = i.useState(!1),
         [R, w] = i.useState(null),
         D = e => {
             let t = new Date(e);
@@ -281,7 +281,7 @@ function S(e) {
                 className: j.VK,
                 children: [(0, a.jsxs)(u.DUT, {
                     onClick: () => {
-                        k(!O)
+                        O(!k)
                     },
                     className: j.Eh,
                     children: [(0, a.jsx)("div", {
@@ -290,9 +290,9 @@ function S(e) {
                             children: "Active Discount Info"
                         })
                     }), (0, a.jsx)(m.A, {
-                        direction: O ? m.A.Directions.UP : m.A.Directions.DOWN
+                        direction: k ? m.A.Directions.UP : m.A.Directions.DOWN
                     })]
-                }), O && (0, a.jsxs)("ul", {
+                }), k && (0, a.jsxs)("ul", {
                     className: j.j3,
                     children: [(0, a.jsxs)("li", {
                         children: [(0, a.jsx)(u.Text, {

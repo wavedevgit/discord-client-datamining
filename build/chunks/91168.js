@@ -32,8 +32,8 @@ var i = n(627968),
     y = n(555337),
     R = n(723278),
     O = n(282625),
-    G = n(423981),
-    L = n(925622),
+    L = n(423981),
+    G = n(925622),
     D = n(123488),
     M = n(758246),
     k = n(53656),
@@ -204,12 +204,12 @@ let ef = {
                     section: eh.BEX.COMMUNITY,
                     impressionName: t.guild.features.has(eh.GuildFeatures.COMMUNITY) ? s.ImpressionNames.GUILD_SETTINGS_COMMUNITY_OVERVIEW : s.ImpressionNames.GUILD_SETTINGS_ENABLE_COMMUNITY,
                     label: eb,
-                    element: L.A,
+                    element: G.A,
                     ariaLabel: eb,
                     newIndicator: !t.guild.features.has(eh.GuildFeatures.COMMUNITY) && null != t.memberCount && t.memberCount >= e_.dH && E.HP.hasHotspot(E._2.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL),
                     notice: {
                         stores: [y.A],
-                        element: L.L
+                        element: G.L
                     }
                 };
             case eh.BEX.ONBOARDING:
@@ -230,7 +230,7 @@ let ef = {
                 };
             case eh.BEX.ANALYTICS:
                 return {
-                    section: eh.BEX.ANALYTICS, impressionName: s.ImpressionNames.GUILD_SETTINGS_ANALYTICS, label: ep.intl.string(ep.t["0wWfUG"]), ariaLabel: ep.intl.string(ep.t["0wWfUG"]), element: G.A, predicate: () => eE
+                    section: eh.BEX.ANALYTICS, impressionName: s.ImpressionNames.GUILD_SETTINGS_ANALYTICS, label: ep.intl.string(ep.t["0wWfUG"]), ariaLabel: ep.intl.string(ep.t["0wWfUG"]), element: L.A, predicate: () => eE
                 };
             case eh.BEX.DISCOVERY_LANDING_PAGE:
                 return {

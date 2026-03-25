@@ -8,11 +8,11 @@ var r = n(627968),
     l = n.n(s),
     o = n(158954),
     a = n(311907),
-    u = n(397927),
-    d = n(793574),
+    d = n(397927),
+    u = n(793574),
     c = n(890942),
-    p = n(744201),
-    m = n(522055),
+    m = n(744201),
+    p = n(522055),
     _ = n(793506),
     f = n(204017),
     g = n(843095),
@@ -27,15 +27,15 @@ function E(e) {
     } = e, n = i.useRef(null), {
         state: s,
         lowestGameServerCost: E
-    } = (0, a.cf)([m.A], () => ({
-        state: m.A.getStateForGuild(t),
-        lowestGameServerCost: m.A.getLowestGameCostForGuild(t)
+    } = (0, a.cf)([p.A], () => ({
+        state: p.A.getStateForGuild(t),
+        lowestGameServerCost: p.A.getLowestGameCostForGuild(t)
     })), j = (0, _.A)(t), {
         gameName: b,
         gameName2: I
     } = (0, f.A)(), {
         textColor: S
-    } = (0, p.A)(j?.type === "active");
+    } = (0, m.A)(j?.type === "active");
     return null == s ? null : (0, r.jsxs)(c.NI, {
         label: A.intl.string(x.default["B3OfL/"]),
         badge: "beta",
@@ -43,7 +43,7 @@ function E(e) {
         isWarning: j?.type === "expiring",
         onClick: () => (0, g.A)({
             guildId: t,
-            analyticsLocation: d.A.GUILD_POWERUPS_OVERVIEW
+            analyticsLocation: u.A.GUILD_POWERUPS_OVERVIEW
         }),
         children: [(0, r.jsx)("div", {
             className: l()(h.ZS, v.Sl),
@@ -72,14 +72,14 @@ function E(e) {
                 })
             })
         }), (0, r.jsx)(c.kd, {
-            children: (0, r.jsx)(u.Button, {
+            children: (0, r.jsx)(d.Button, {
                 variant: "primary",
                 fullWidth: !0,
                 text: Object.values(s.entitlements).length > 0 ? A.intl.string(x.default.PuvU5b) : A.intl.string(x.default.b62EHM),
                 onClick: e => {
                     e.stopPropagation(), (0, g.A)({
                         guildId: t,
-                        analyticsLocation: d.A.GUILD_POWERUPS_OVERVIEW
+                        analyticsLocation: u.A.GUILD_POWERUPS_OVERVIEW
                     })
                 }
             })

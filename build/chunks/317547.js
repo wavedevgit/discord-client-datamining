@@ -1,7 +1,7 @@
 /** chunk id: 317547 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => L,
+    Ay: () => G,
     Kh: () => T,
     MD: () => y,
     fh: () => C
@@ -112,7 +112,7 @@ let C = e => {
             children: [E.intl.string(E.t.oypxxw), " ", e]
         })
     },
-    G = [{
+    L = [{
         key: "dropdown",
         cellClassName: b.pR,
         renderHeader: () => null,
@@ -255,14 +255,14 @@ let C = e => {
             })
         }
     }],
-    L = e => {
+    G = e => {
         let {
             payoutsByPeriod: t
         } = e, [n, l] = s.useState(new Set);
         return (0, i.jsx)("div", {
             className: b.CZ,
             children: (0, i.jsx)(m.A, {
-                columns: G,
+                columns: L,
                 data: t,
                 className: b.tp,
                 rowClassName: b.nM,

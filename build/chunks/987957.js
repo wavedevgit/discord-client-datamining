@@ -34,11 +34,11 @@ let N = function(e) {
     } = e, v = (0, a.bG)([h.A], () => h.A.getChannel(l.channelId)), S = (0, a.bG)([_.A], () => _.A.getGuild(t)), y = (0, a.bG)([A.A], () => A.A.getPendingData()[l.channelId]), {
         customEmoji: R,
         unicodeEmoji: O
-    } = (0, m.A)(l.emoji?.id, l.emoji?.name), G = null == l.emoji || null != R || null != O, L = p.Ay.getNewMemberActionIconURL({
+    } = (0, m.A)(l.emoji?.id, l.emoji?.name), L = null == l.emoji || null != R || null != O, G = p.Ay.getNewMemberActionIconURL({
         channelId: l.channelId,
         icon: l.icon
-    }), D = null != y ? y.iconData : L, M = null;
-    null != v && (0, g.Rc)(v) ? G || (M = f.intl.string(f.t.wAkIZW)) : M = f.intl.string(f.t.CbTEKP);
+    }), D = null != y ? y.iconData : G, M = null;
+    null != v && (0, g.Rc)(v) ? L || (M = f.intl.string(f.t.wAkIZW)) : M = f.intl.string(f.t.CbTEKP);
     let {
         drag: k,
         dragSourcePosition: U,

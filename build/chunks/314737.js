@@ -34,8 +34,8 @@ var i = n(627968),
     y = n(931991),
     R = n(544028),
     O = n(954571),
-    G = n(486020),
-    L = n(690521),
+    L = n(486020),
+    G = n(690521),
     D = n(473145),
     M = n(427262),
     k = n(997509),
@@ -55,7 +55,7 @@ let z = c().throttle(p.dZ, 1e3),
             onEdit: l,
             editingDisabled: a = !1,
             isNewlyAdded: o = !1
-        } = e, [d, c] = s.useState(n.name), m = G.Ay.getEmojiURL({
+        } = e, [d, c] = s.useState(n.name), m = L.Ay.getEmojiURL({
             id: n.id,
             animated: n.animated,
             size: 32
@@ -117,7 +117,7 @@ let z = c().throttle(p.dZ, 1e3),
                         value: d ?? "",
                         onBlur: () => {
                             if (d === n.name) return;
-                            let e = L.Ay.sanitizeEmojiName(d);
+                            let e = G.Ay.sanitizeEmojiName(d);
                             e !== n.name && (0, p.Cp)({
                                 guildId: t,
                                 emojiId: n.id,
@@ -349,8 +349,8 @@ let z = c().throttle(p.dZ, 1e3),
             [E, v] = s.useState(!1),
             y = s.useRef(null),
             {
-                maxEmojiSlots: G,
-                availableEmojiSlots: L,
+                maxEmojiSlots: L,
+                availableEmojiSlots: G,
                 staticEmoji: D,
                 totalStaticEmoji: M,
                 animatedEmoji: V,
@@ -438,7 +438,7 @@ let z = c().throttle(p.dZ, 1e3),
             }, [l.id]), ei = (0, b.w)(l);
         return (0, i.jsxs)("div", {
             className: H.Gi,
-            children: [0 === L ? null : (0, i.jsx)(f.A, {
+            children: [0 === G ? null : (0, i.jsx)(f.A, {
                 className: H.Lc,
                 onDrop: et
             }), (0, i.jsxs)(h.BJc, {
@@ -451,7 +451,7 @@ let z = c().throttle(p.dZ, 1e3),
                     }), (0, i.jsx)(h.Text, {
                         variant: "text-md/normal",
                         children: F.intl.format(F.t.TA1BR0, {
-                            count: G
+                            count: L
                         })
                     })]
                 }), (0, i.jsx)(J, {

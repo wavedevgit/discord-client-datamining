@@ -3,9 +3,9 @@ n.d(t, {
     A: () => N
 }), n(938796);
 var i = n(627968),
-    r = n(64700),
-    l = n(284009),
-    a = n.n(l),
+    l = n(64700),
+    r = n(284009),
+    a = n.n(r),
     s = n(311907),
     o = n(397927),
     d = n(304072),
@@ -30,7 +30,7 @@ function N(e) {
     let {
         backButtonEligible: t,
         prevStep: n,
-        handleStepChange: l,
+        handleStepChange: r,
         trialFooterMessageOverride: N,
         reviewWarningMessage: E,
         planGroup: T,
@@ -57,31 +57,31 @@ function N(e) {
         setHasAcceptedTerms: Z
     } = (0, x.P5)();
     a()(null != G, "Expected plan to be selected");
-    let X = r.useRef(null),
+    let X = l.useRef(null),
         [$, z] = (0, d.A)(!1, 500),
         K = V?.guild_id,
         J = (0, s.bG)([f.A], () => f.A.getGuild(K), [K]),
-        [ee, et] = r.useState(null),
+        [ee, et] = l.useState(null),
         en = (0, p.bg)(M?.flags ?? 0);
-    r.useEffect(() => {
+    l.useEffect(() => {
         null != O && null != X.current && X.current.scrollIntoView({
             behavior: "smooth"
         })
     }, [O]);
-    let ei = r.useCallback(e => {
-            B(e), l(g.pn.CONFIRM)
-        }, [l, B]),
-        er = (0, c.D7)({
+    let ei = l.useCallback(e => {
+            B(e), r(g.pn.CONFIRM)
+        }, [r, B]),
+        el = (0, c.D7)({
             location: "payment_modal_review_step"
         }),
-        el = r.useRef(null);
+        er = l.useRef(null);
     if (Q === h.h.PURCHASING) return (0, i.jsx)(j.A, {});
     let ea = () => {
-            l(g.pn.ADD_PAYMENT_STEPS)
+            r(g.pn.ADD_PAYMENT_STEPS)
         },
-        es = er ? C._ : u.A,
+        es = el ? C._ : u.A,
         eo = null;
-    return er || (eo = (0, i.jsxs)(i.Fragment, {
+    el || (eo = (0, i.jsxs)(i.Fragment, {
         children: [en && (0, i.jsxs)("div", {
             className: y.Uq,
             children: [(0, i.jsx)(o.Text, {
@@ -112,11 +112,14 @@ function N(e) {
                 })
             })
         })]
-    })), (0, i.jsxs)(i.Fragment, {
-        children: [er ? null : (0, i.jsx)(b.A, {
+    }));
+    let ed = el ? null : (0, i.jsx)(b.A, {
             className: y.jD
-        }), (0, i.jsxs)(v.dZ, {
-            children: [(0, i.jsx)(S.A, {}), eo, null == R ? (0, i.jsx)(es, {
+        }),
+        ec = el ? null : (0, i.jsx)(S.A, {});
+    return (0, i.jsxs)(i.Fragment, {
+        children: [ed, (0, i.jsxs)(v.dZ, {
+            children: [ec, eo, null == R ? (0, i.jsx)(es, {
                 selectedPlanId: G.id,
                 planGroup: T,
                 paymentSources: H,
@@ -124,9 +127,9 @@ function N(e) {
                 priceOptions: L,
                 currencies: U,
                 onCurrencyChange: e => Y(e),
-                handlePaymentSourceAdd: () => l(g.pn.ADD_PAYMENT_STEPS),
+                handlePaymentSourceAdd: () => r(g.pn.ADD_PAYMENT_STEPS),
                 setHasAcceptedTerms: Z,
-                legalTermsNodeRef: el,
+                legalTermsNodeRef: er,
                 hasLegalTermsFlash: $,
                 trialFooterMessageOverride: N,
                 reviewWarningMessage: E,
@@ -142,7 +145,7 @@ function N(e) {
                 onPaymentSourceAdd: ea,
                 planId: G.id,
                 setHasAcceptedTerms: Z,
-                legalTermsNodeRef: el,
+                legalTermsNodeRef: er,
                 hasLegalTermsFlash: $,
                 invoiceError: ee,
                 onInvoiceError: e => {
@@ -154,15 +157,15 @@ function N(e) {
                 hasOpenInvoice: null != P,
                 purchaseState: Q,
                 handleClose: w,
-                shouldUseUnifiedCheckoutUI: er
+                shouldUseUnifiedCheckoutUI: el
             })]
         }), (0, i.jsx)(v.UX, {
             children: (0, i.jsx)(A.A, {
                 premiumSubscription: R ?? null,
                 setPurchaseState: q,
-                onBack: () => null != n && l(n),
+                onBack: () => null != n && r(n),
                 onNext: ei,
-                legalTermsNodeRef: el,
+                legalTermsNodeRef: er,
                 flashLegalTerms: () => z(!0),
                 analyticsLocation: k,
                 baseAnalyticsData: I,

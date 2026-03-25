@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     Ay: () => k,
-    eW: () => G,
+    eW: () => L,
     th: () => O
 });
 var i = n(627968),
@@ -56,7 +56,7 @@ function O(e) {
     }
 }
 
-function G(e) {
+function L(e) {
     let t = (0, g.m1)(e, b.default, E.A);
     return {
         tag: {
@@ -71,7 +71,7 @@ function G(e) {
         }
     }
 }
-let L = s.memo(function(e) {
+let G = s.memo(function(e) {
     let {
         row: t,
         guildId: n,
@@ -126,7 +126,7 @@ function D(e) {
 }
 
 function M(e, t, n) {
-    return y(e) ? (0, i.jsx)(L, {
+    return y(e) ? (0, i.jsx)(G, {
         row: e,
         guildId: t,
         className: n
@@ -153,11 +153,11 @@ function k(e) {
         let i = {};
         return e.forEach(e => {
             let t = j.A.getChannel(e);
-            null != t && (i[e] = G(t))
+            null != t && (i[e] = L(t))
         }), t.forEach(e => {
             e in n && (i[e] = O(n[e]))
         }), i
-    })(a, g, A), [a, g, A]), E = s.useMemo(() => Object.keys(f), [f]), [b, S] = s.useState(""), [L, D] = s.useState(!1), [k, U] = s.useState(!1), [P, w] = s.useState(!1), B = s.useRef(null), {
+    })(a, g, A), [a, g, A]), E = s.useMemo(() => Object.keys(f), [f]), [b, S] = s.useState(""), [G, D] = s.useState(!1), [k, U] = s.useState(!1), [P, w] = s.useState(!1), B = s.useRef(null), {
         refs: F,
         floatingStyles: H
     } = (0, d.uaw)({
@@ -196,12 +196,12 @@ function k(e) {
     };
     s.useEffect(() => {
         let e = setTimeout(() => {
-            w(L || k)
+            w(G || k)
         }, 32);
         return () => {
             clearTimeout(e)
         }
-    }, [L, k]);
+    }, [G, k]);
     let Y = (e, t, n) => {
             n.stopPropagation(), n.preventDefault(), 2 === t ? D(e) : (1 === t || D(e), U(e))
         },
@@ -209,7 +209,7 @@ function k(e) {
             let t = {
                 ...f
             };
-            R(e) ? t[e.id] = G(e.record) : y(e) && (t[e.id] = O(e.record)), W(t), S(""), K(), setTimeout(() => {
+            R(e) ? t[e.id] = L(e.record) : y(e) && (t[e.id] = O(e.record)), W(t), S(""), K(), setTimeout(() => {
                 let e = B.current?.containerRef.current,
                     t = e?.firstChild;
                 null != t && t.scrollTo({

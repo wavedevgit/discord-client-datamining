@@ -41,11 +41,11 @@ function T(e) {
     }), [y, R] = s.useState({}), O = s.useMemo(() => {
         let e = T.map(e => y[e] ?? e);
         return (0, a.uniq)(e)
-    }, [T, y]), G = (0, x._Y)(t), L = (0, x.a0)(), D = s.useCallback(() => {
-        L && g.ok.trackExposure({
+    }, [T, y]), L = (0, x._Y)(t), G = (0, x.a0)(), D = s.useCallback(() => {
+        G && g.ok.trackExposure({
             guildId: t,
             location: "b2d9de_1"
-        }), L && G ? (0, u.mMO)(async () => {
+        }), G && L ? (0, u.mMO)(async () => {
             let {
                 default: e
             } = await n.e("263").then(n.bind(n, 486010));
@@ -59,7 +59,7 @@ function T(e) {
         }, {
             modalKey: C
         }) : I()
-    }, [t, v, I, l, L, G]), M = A.Zw(O), k = s.useCallback(() => O.forEach(A.Ts), [O]), U = (0, p.gN)(), P = (0, o.bG)([m.A], () => m.A.getProps().subsection);
+    }, [t, v, I, l, G, L]), M = A.Zw(O), k = s.useCallback(() => O.forEach(A.Ts), [O]), U = (0, p.gN)(), P = (0, o.bG)([m.A], () => m.A.getProps().subsection);
     return s.useEffect(() => (P === N.nd0.ROLE_SUBSCRIPTION_TIER_TEMPLATE && D(), () => {
         (0, u.OoC)(C)
     }), [P, D]), (0, i.jsxs)(i.Fragment, {

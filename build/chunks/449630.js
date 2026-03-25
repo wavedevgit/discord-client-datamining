@@ -29,8 +29,8 @@ var a = n(627968),
     E = n(223330),
     N = n(559506),
     I = n(646986),
-    O = n(379654),
-    k = n(946356),
+    k = n(379654),
+    O = n(946356),
     R = n(810396),
     w = n(376285),
     D = n(159218),
@@ -116,10 +116,10 @@ function et(e) {
         eI = i.useCallback(() => {
             n()
         }, [n]),
-        eO = i.useCallback(() => {
+        ek = i.useCallback(() => {
             ev(), eI()
         }, [ev, eI]),
-        ek = (0, x.JY)({
+        eO = (0, x.JY)({
             location: "UserProfileAccountPopout"
         }),
         eR = (0, x.on)({
@@ -146,7 +146,7 @@ function et(e) {
                         displayProfile: ei,
                         handleOpenUserProfileModal: eE,
                         height: eo
-                    }), (0, a.jsxs)(k.A, {
+                    }), (0, a.jsxs)(O.A, {
                         className: Z.BK,
                         user: t,
                         displayProfile: ei,
@@ -198,7 +198,7 @@ function et(e) {
                                 bio: ei?.bio,
                                 hidePersonalInformation: ex,
                                 onClose: n
-                            }), eN && (0, a.jsx)(O.A, {
+                            }), eN && (0, a.jsx)(k.A, {
                                 user: t,
                                 widgets: ei?.widgets,
                                 onOpenUserProfileModal: eE
@@ -212,14 +212,14 @@ function et(e) {
                                 onClose: n
                             }), (0, a.jsxs)("div", {
                                 className: Z.T_,
-                                children: [(0, a.jsx)(k.A.Overlay, {
+                                children: [(0, a.jsx)(O.A.Overlay, {
                                     className: Z.g0,
                                     children: (0, a.jsxs)(K.Gs, {
                                         children: [(0, a.jsx)(K.N3, {
                                             action: "EDIT_PROFILE",
                                             label: X.intl.string(X.t.s5vZlQ),
                                             icon: c.R2l,
-                                            onClick: eO,
+                                            onClick: ek,
                                             ref: eA
                                         }), (0, a.jsx)(K.N3, {
                                             action: "PRESS_SET_STATUS",
@@ -270,7 +270,7 @@ function et(e) {
                                             } : void 0
                                         })]
                                     })
-                                }), (0, a.jsx)(k.A.Overlay, {
+                                }), (0, a.jsx)(O.A.Overlay, {
                                     className: Z.g0,
                                     children: (0, a.jsxs)(K.Gs, {
                                         children: [(0, a.jsx)(K.N3, {
@@ -306,7 +306,7 @@ function et(e) {
                             skuId: ei.profileEffect.skuId,
                             isHovering: ec
                         })]
-                    }), ek && eR ? (0, a.jsx)(H.A, {
+                    }), eO && eR ? (0, a.jsx)(H.A, {
                         targetElementRef: eA,
                         onClose: n
                     }) : null, (0, a.jsx)(f.A, {})]

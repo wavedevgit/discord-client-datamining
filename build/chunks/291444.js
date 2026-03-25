@@ -32,8 +32,8 @@ var i = n(627968),
     y = n(307209),
     R = n(360827),
     O = n(307879),
-    G = n(652215),
-    L = n(985018),
+    L = n(652215),
+    G = n(985018),
     D = n(361870);
 
 function M() {
@@ -107,10 +107,10 @@ function k(e) {
                 size: d.$n.Sizes.MIN,
                 onClick: () => {
                     if (b.A.hasChanges() && !b.A.canCloseEarly()) {
-                        x._.dispatch(G.jej.SHAKE_APP, {
+                        x._.dispatch(L.jej.SHAKE_APP, {
                             duration: 300,
                             intensity: u.n3
-                        }), x._.dispatch(G.jej.EMPHASIZE_NOTICE);
+                        }), x._.dispatch(L.jej.EMPHASIZE_NOTICE);
                         return
                     }(0, N.P3)(), (0, p.nx)(), (0, j.sk)(), (0, f.p2)(), (0, A.e_)(C.Hy.LANDING)
                 },
@@ -120,7 +120,7 @@ function k(e) {
                 }), (0, i.jsx)(c.Text, {
                     variant: "text-sm/semibold",
                     color: "interactive-text-default",
-                    children: L.intl.string(L.t["13/7kX"])
+                    children: G.intl.string(G.t["13/7kX"])
                 })]
             })
         }), (0, i.jsx)("div", {
@@ -149,7 +149,7 @@ function U(e) {
             }), (0, i.jsx)(c.Text, {
                 color: t === C.Hy.SAFETY_CHECK ? "text-brand" : "text-muted",
                 variant: "text-xs/medium",
-                children: L.intl.format(L.t.Me5Mma, {
+                children: G.intl.format(G.t.Me5Mma, {
                     stepNumber: 1
                 })
             })]
@@ -163,9 +163,9 @@ function U(e) {
             }), (0, i.jsx)(c.Text, {
                 color: t === C.Hy.DEFAULT_CHANNELS ? "text-brand" : "text-muted",
                 variant: "text-xs/medium",
-                children: d ? L.intl.formatToPlainString(L.t["8mGhOy"], {
+                children: d ? G.intl.formatToPlainString(G.t["8mGhOy"], {
                     stepNumber: 2
-                }) : L.intl.formatToPlainString(L.t.vxpuTd, {
+                }) : G.intl.formatToPlainString(G.t.vxpuTd, {
                     stepNumber: 2
                 })
             })]
@@ -179,9 +179,9 @@ function U(e) {
             }), (0, i.jsx)(c.Text, {
                 color: t === C.Hy.CUSTOMIZATION_QUESTIONS ? "text-brand" : "text-muted",
                 variant: "text-xs/medium",
-                children: d ? L.intl.formatToPlainString(L.t.vb6J5g, {
+                children: d ? G.intl.formatToPlainString(G.t.vb6J5g, {
                     stepNumber: 3
-                }) : L.intl.formatToPlainString(L.t.ZpdQqK, {
+                }) : G.intl.formatToPlainString(G.t.ZpdQqK, {
                     stepNumber: 3
                 })
             })]
@@ -195,7 +195,7 @@ function U(e) {
             }), (0, i.jsx)(c.Text, {
                 color: t === C.Hy.HOME_SETTINGS ? "text-brand" : "text-muted",
                 variant: "text-xs/medium",
-                children: L.intl.format(L.t.KVOukh, {
+                children: G.intl.format(G.t.KVOukh, {
                     stepNumber: 4
                 })
             })]
@@ -208,7 +208,7 @@ function U(e) {
             }), (0, i.jsx)(c.Text, {
                 color: t === C.Hy.REVIEW ? "text-brand" : "text-muted",
                 variant: "text-xs/medium",
-                children: L.intl.format(L.t.oVzkiA, {
+                children: G.intl.format(G.t.oVzkiA, {
                     stepNumber: 3 + +!!s + 1
                 })
             })]

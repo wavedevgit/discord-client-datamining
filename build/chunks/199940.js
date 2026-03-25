@@ -211,7 +211,7 @@ async function O(e, t) {
             homeSettings: s
         }), Object.entries(n).forEach(t => {
             let [n, i] = t;
-            null == i || (null != i.iconData ? G(e, n, i).finally(() => {
+            null == i || (null != i.iconData ? L(e, n, i).finally(() => {
                 f(n)
             }) : f(n))
         }), c.default.track(x.HAw.GUILD_SETTINGS_GUIDE_UPDATED, {
@@ -235,20 +235,20 @@ async function O(e, t) {
         })
     }
 }
-async function G(e, t, n) {
+async function L(e, t, n) {
     let {
         iconData: i,
         isUrl: s,
         emoji: l
     } = n;
     if (null != l) return;
-    let r = null != i && s ? await L(i) : i;
+    let r = null != i && s ? await G(i) : i;
     await b(e, t, {
         icon: r,
         emoji: null
     })
 }
-async function L(e) {
+async function G(e) {
     let t = await fetch(e),
         n = await t.blob();
     return await (0, u.We)(n)

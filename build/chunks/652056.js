@@ -34,7 +34,7 @@ function p(e) {
         archiveSubscriptionListing: R,
         submitting: O
     } = (0, c.hc)(), {
-        allowSelfRemoveMonetization: G
+        allowSelfRemoveMonetization: L
     } = (0, d.nq)(p);
     return null == f ? null : (0, i.jsx)(x.A, {
         title: h.intl.string(h.t["7Si8Ul"]),
@@ -47,7 +47,7 @@ function p(e) {
                 messageType: o.YCn.ERROR,
                 children: h.intl.string(h.t.up8gUr)
             }), T ? (0, i.jsx)(o.D0$, {
-                disabled: !G,
+                disabled: !L,
                 label: h.intl.string(h.t["2D14T0"]),
                 description: h.intl.string(h.t.Y4KjUN),
                 children: (0, i.jsxs)(o.BJc, {
@@ -91,12 +91,12 @@ function p(e) {
                             })
                         },
                         loading: S,
-                        disabled: !G || !b,
+                        disabled: !L || !b,
                         text: h.intl.string(h.t.GMtG6p)
                     })]
                 })
             }) : (0, i.jsx)(o.D0$, {
-                disabled: !G,
+                disabled: !L,
                 label: h.intl.string(h.t["MS/4U1"]),
                 description: h.intl.string(h.t["5/Jeg2"]),
                 children: (0, i.jsx)(o.Button, {
@@ -129,7 +129,7 @@ function p(e) {
                         })
                     },
                     loading: O,
-                    disabled: !G,
+                    disabled: !L,
                     text: h.intl.string(h.t.RL0wjm)
                 })
             })]

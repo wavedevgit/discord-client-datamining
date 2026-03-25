@@ -34,10 +34,10 @@ let C = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
         } = e, l = (0, j.Tq)(t.id), {
             loading: a,
             updateSubscriptionsSettings: d
-        } = (0, j.KE)(), [p, f] = s.useState(t.features.has(N.GuildFeatures.CREATOR_STORE_PAGE)), [v, S] = s.useState(l?.store_page_primary_color ?? I), [y, R] = s.useState(l?.store_page_trailer_url), O = null == y || null != y.match(T), [G, L] = s.useState(l?.store_page_show_subscriber_count ?? !1), D = s.useRef(l?.store_page_slug).current, M = p !== t.features.has(N.GuildFeatures.CREATOR_STORE_PAGE) || l?.store_page_primary_color == null && v !== I || l?.store_page_primary_color != null && v !== l?.store_page_primary_color || y !== l?.store_page_trailer_url || null != G && G !== l?.store_page_show_subscriber_count, k = async () => {
+        } = (0, j.KE)(), [p, f] = s.useState(t.features.has(N.GuildFeatures.CREATOR_STORE_PAGE)), [v, S] = s.useState(l?.store_page_primary_color ?? I), [y, R] = s.useState(l?.store_page_trailer_url), O = null == y || null != y.match(T), [L, G] = s.useState(l?.store_page_show_subscriber_count ?? !1), D = s.useRef(l?.store_page_slug).current, M = p !== t.features.has(N.GuildFeatures.CREATOR_STORE_PAGE) || l?.store_page_primary_color == null && v !== I || l?.store_page_primary_color != null && v !== l?.store_page_primary_color || y !== l?.store_page_trailer_url || null != L && L !== l?.store_page_show_subscriber_count, k = async () => {
             o()(null != l, "Settings must be defined");
             let e = {};
-            p !== t.features.has(N.GuildFeatures.CREATOR_STORE_PAGE) && (e.store_page_enabled = p), (l?.store_page_primary_color == null && v !== I || l?.store_page_primary_color != null && v !== l?.store_page_primary_color) && (e.store_page_primary_color = v), y !== l?.store_page_trailer_url && (e.store_page_trailer_url = y), G !== l?.store_page_show_subscriber_count && (e.store_page_show_subscriber_count = G), Object.keys(e).length > 0 && (await d(t.id, e), "store_page_enabled" in e && A.default.track(N.HAw.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_TOGGLED, {
+            p !== t.features.has(N.GuildFeatures.CREATOR_STORE_PAGE) && (e.store_page_enabled = p), (l?.store_page_primary_color == null && v !== I || l?.store_page_primary_color != null && v !== l?.store_page_primary_color) && (e.store_page_primary_color = v), y !== l?.store_page_trailer_url && (e.store_page_trailer_url = y), L !== l?.store_page_show_subscriber_count && (e.store_page_show_subscriber_count = L), Object.keys(e).length > 0 && (await d(t.id, e), "store_page_enabled" in e && A.default.track(N.HAw.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_TOGGLED, {
                 enabled: p,
                 ...(0, h.H$)(t.id)
             }))
@@ -119,8 +119,8 @@ let C = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
                     label: E.intl.string(E.t.hJsAPo),
                     description: E.intl.string(E.t.hn65ET),
                     icon: m.nys,
-                    checked: G,
-                    onChange: e => L(e),
+                    checked: L,
+                    onChange: e => G(e),
                     disabled: w
                 })
             }), (0, i.jsx)(c.F, {
@@ -130,7 +130,7 @@ let C = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
                     children: (0, i.jsx)(u.A, {
                         submitting: a,
                         onReset: () => {
-                            f(t.features.has(N.GuildFeatures.CREATOR_STORE_PAGE)), S(l?.store_page_primary_color ?? I), R(l?.store_page_trailer_url), L(l?.store_page_show_subscriber_count ?? !1)
+                            f(t.features.has(N.GuildFeatures.CREATOR_STORE_PAGE)), S(l?.store_page_primary_color ?? I), R(l?.store_page_trailer_url), G(l?.store_page_show_subscriber_count ?? !1)
                         },
                         onSave: k,
                         disabled: B

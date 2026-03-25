@@ -13,18 +13,18 @@ function o(e) {
             powerups: o
         } = e,
         a = (0, r.jJ)(n, o),
-        u = a.some(e => e.type !== i.b_.INACTIVE);
+        d = a.some(e => e.type !== i.b_.INACTIVE);
     if (o.length <= 0) return null;
-    let d = a.reduce((e, t) => {
+    let u = a.reduce((e, t) => {
         let {
             sourceEntitlement: n
         } = t, r = n?.ends_at;
         return null == r ? e : null == e || r < e ? r : e
     }, void 0);
-    null != d ? t = {
+    null != u ? t = {
         type: "expiring",
-        expiringAt: d
-    } : u && (t = {
+        expiringAt: u
+    } : d && (t = {
         type: "active",
         statusText: l.intl.string(s.default.FFLkmx)
     });
@@ -35,27 +35,27 @@ function o(e) {
             } = t;
             return n === i.b_.POWERUP_ACTIVATED ? e + r.cost : e
         }, 0),
-        p = a.reduce((e, t) => {
+        m = a.reduce((e, t) => {
             let {
                 powerup: n
             } = t;
             return e < (n?.cost ?? 0) ? e : n?.cost ?? 0
         }, a[0]?.powerup?.cost ?? 0),
-        m = a.reduce((e, t) => {
+        p = a.reduce((e, t) => {
             let {
                 powerup: n
             } = t;
             return e + (n?.cost ?? 0)
         }, 0),
-        _ = u ? c : p;
+        _ = d ? c : m;
     return {
-        isActive: u,
+        isActive: d,
         status: t,
         cost: _,
-        costDecorator: !u && m > _ ? "+" : void 0,
-        expiringAt: d,
+        costDecorator: !d && p > _ ? "+" : void 0,
+        expiringAt: u,
         activeCost: c,
-        minCost: p,
-        totalCost: m
+        minCost: m,
+        totalCost: p
     }
 }

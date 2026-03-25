@@ -102,7 +102,7 @@ function h(e) {
     } = (0, c.Ay)(E), {
         ref: I,
         width: v = 0
-    } = (0, c.Ay)(E), S = (0, a.bG)([u.A], () => u.A.useReducedMotion), [y, R] = s.useState(f), O = s.useRef(null), G = T > v ? T : v;
+    } = (0, c.Ay)(E), S = (0, a.bG)([u.A], () => u.A.useReducedMotion), [y, R] = s.useState(f), O = s.useRef(null), L = T > v ? T : v;
     s.useEffect(() => {
         f ? (R(!0), O.current = setTimeout(() => {
             R(!1), O.current = null
@@ -110,7 +110,7 @@ function h(e) {
     }, [f]), s.useEffect(() => () => {
         clearTimeout(O.current)
     }, []);
-    let L = s.useCallback(e => {
+    let G = s.useCallback(e => {
             n(e.target.value)
         }, [n]),
         D = s.useCallback(function() {
@@ -157,11 +157,11 @@ function h(e) {
                         [g.Pq]: p
                     }),
                     ref: j,
-                    onChange: L,
+                    onChange: G,
                     onKeyDownCapture: M,
                     value: t,
                     style: {
-                        width: G > 0 ? G : `calc(${t.length}ch + 10px)`
+                        width: L > 0 ? L : `calc(${t.length}ch + 10px)`
                     }
                 }), (0, i.jsx)(x, {
                     ref: C,

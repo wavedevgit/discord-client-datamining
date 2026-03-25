@@ -1,6 +1,6 @@
 /** chunk id: 940481 params = (module,exports,require) **/
 s.d(t, {
-    default: () => C
+    default: () => k
 });
 var n = s(627968),
     a = s(64700),
@@ -21,12 +21,12 @@ var n = s(627968),
     p = s(985018),
     j = s(712957);
 
-function C(e) {
+function k(e) {
     let {
         guildId: t,
         powerup: s,
-        ...C
-    } = e, [k, v] = a.useState(void 0), N = a.useMemo(() => {
+        ...k
+    } = e, [C, v] = a.useState(void 0), N = a.useMemo(() => {
         switch (s.skuId) {
             case r.SL:
                 return (0, n.jsx)(x.L, {
@@ -51,7 +51,7 @@ function C(e) {
         "data-migration-pending": !0,
         className: j.yl,
         size: i.rIJ.DYNAMIC,
-        ...C,
+        ...k,
         parentComponent: "GuildPowerupPerkModal",
         children: [(0, n.jsxs)(i.$mQ, {
             "data-migration-pending": !0,
@@ -81,11 +81,11 @@ function C(e) {
                         })
                     }), (0, n.jsx)(g.F, {
                         powerup: s
-                    }), null != k && (0, n.jsx)(i.Text, {
+                    }), null != C && (0, n.jsx)(i.Text, {
                         className: j.z3,
                         color: "text-feedback-critical",
                         variant: "text-sm/semibold",
-                        children: k
+                        children: C
                     }), S && (0, n.jsx)(_.Ay, {
                         className: j.qr,
                         guildId: t,
@@ -101,7 +101,7 @@ function C(e) {
         }), (0, n.jsx)(i.s_y, {
             "data-migration-pending": !0,
             className: j.VN,
-            onClick: C.onClose
+            onClick: k.onClose
         })]
     })
 }

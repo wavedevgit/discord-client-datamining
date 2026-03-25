@@ -34,8 +34,8 @@ function N(e) {
         questContent: n,
         isHovering: s,
         contentPosition: N,
-        rowIndex: O,
-        isVisibleInViewport: k,
+        rowIndex: k,
+        isVisibleInViewport: O,
         onReceiveErrorHints: R,
         sourceQuestContent: w
     } = e, D = i.useRef(null), P = (0, _.mq)(t.config), M = (0, _.mH)(t.config), L = t.userStatus?.enrolledAt != null, {
@@ -97,7 +97,7 @@ function N(e) {
             },
             className: S.z,
             children: [(0, a.jsx)(A.A, {
-                showPlaceholder: !k,
+                showPlaceholder: !O,
                 width: 80,
                 height: 80,
                 children: (0, a.jsxs)("div", {
@@ -164,7 +164,7 @@ function N(e) {
             quest: t,
             questContent: n,
             contentPosition: N,
-            rowIndex: O,
+            rowIndex: k,
             onReceiveErrorHints: R,
             sourceQuestContent: w
         })]

@@ -29,8 +29,8 @@ var a = n(627968),
     E = n(792620),
     N = n(814793),
     I = n(241124),
-    O = n(212614),
-    k = n(79545),
+    k = n(212614),
+    O = n(79545),
     R = n(646764),
     w = n(398025),
     D = n(545986),
@@ -168,7 +168,7 @@ function Z(e) {
         onGameSheetOpened: c,
         onGameSheetClosed: m,
         gameProfileSource: x.Ob.QuestBar
-    }), B = (0, k.Pd)(o), {
+    }), B = (0, O.Pd)(o), {
         primaryCtaButtonVariant: G
     } = (0, v.Op)(), V = v.s5.useConfig({
         location: z.rE.QUESTS_CARD
@@ -211,9 +211,9 @@ function Z(e) {
                             variant: "secondary",
                             text: K,
                             onClick: H
-                        }), L.enabled && B === k.UA.UNENROLLED && L.enabledQuestStates.has(k.UA.UNENROLLED) ? (0, a.jsx)(O.A, {
+                        }), L.enabled && B === O.UA.UNENROLLED && L.enabledQuestStates.has(O.UA.UNENROLLED) ? (0, a.jsx)(k.A, {
                             quest: o,
-                            surface: k.V3.QUEST_BAR_FOOTER,
+                            surface: O.V3.QUEST_BAR_FOOTER,
                             size: "sm",
                             variant: G,
                             analyticsCtxQuestContent: _.uF.QUEST_BAR_V2,

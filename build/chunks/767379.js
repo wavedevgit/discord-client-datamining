@@ -55,9 +55,9 @@ let E = function(e) {
         onComplete: j,
         dismissable: E,
         classificationId: N
-    } = e, [I, O] = i.useState(r.M.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), k = i.useRef(I), [R, w] = (0, d.kn)([I], void 0, !0), D = i.useMemo(() => (0, s.A)(), []), P = i.useRef(!1), M = (0, m.W$)();
+    } = e, [I, k] = i.useState(r.M.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), O = i.useRef(I), [R, w] = (0, d.kn)([I], void 0, !0), D = i.useMemo(() => (0, s.A)(), []), P = i.useRef(!1), M = (0, m.W$)();
     i.useEffect(() => {
-        k.current = R
+        O.current = R
     }, [R]);
     let {
         loading: L,
@@ -67,13 +67,13 @@ let E = function(e) {
             j?.(), u()
         },
         onMethodClick: () => {
-            O(r.M.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
+            k(r.M.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
         },
         classificationId: N
     });
     return i.useLayoutEffect(() => () => {
         if (P.current) return;
-        let e = k.current;
+        let e = O.current;
         null != e && (P.current = !0, h.A.maybeOpenAgeVerificationUserFeedback({
             location: "age_verification_get_started_modal",
             visibleContent: e

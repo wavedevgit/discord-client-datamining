@@ -1,7 +1,7 @@
 /** chunk id: 179534 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => L
+    A: () => G
 });
 var i = n(627968),
     s = n(64700),
@@ -32,14 +32,14 @@ var i = n(627968),
     y = n(652215),
     R = n(985018),
     O = n(503377),
-    G = n(63135);
+    L = n(63135);
 
-function L(e) {
+function G(e) {
     let {
         guildId: t
     } = e, n = (0, a.bG)([p.A], () => p.A.getGuild(t)), {
         analyticsLocations: l
-    } = (0, c.Ay)(d.A.GUILD_SETTINGS_MEMBERS_PAGE), L = (0, u.q)(t), D = (0, a.bG)([_.Ay], () => _.Ay.getGuildSidebarState(t), [t]), M = s.useCallback(() => {
+    } = (0, c.Ay)(d.A.GUILD_SETTINGS_MEMBERS_PAGE), G = (0, u.q)(t), D = (0, a.bG)([_.Ay], () => _.Ay.getGuildSidebarState(t), [t]), M = s.useCallback(() => {
         x.A.closeGuildSidebar(t)
     }, [t]), k = !1 == !!n?.features.has(y.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY), U = (0, a.bG)([f.A], () => f.A.getEstimatedMemberSearchCountByGuildId(t), [t]), P = s.useCallback(e => {
         null != e && (0, h.openUserProfileModal)({
@@ -55,17 +55,17 @@ function L(e) {
     return (0, i.jsxs)(c.f5, {
         value: l,
         children: [(0, i.jsx)("div", {
-            className: r()(G.customColumn, O.$Z, O.ed),
+            className: r()(L.customColumn, O.$Z, O.ed),
             children: (0, i.jsx)("div", {
-                className: G.customContainer,
+                className: L.customContainer,
                 children: (0, i.jsx)(o.ArX, {
-                    className: r()(G.customScroller, O.cj),
+                    className: r()(L.customScroller, O.cj),
                     orientation: "auto",
                     children: (0, i.jsx)(o.ArX, {
                         className: O.mh,
                         orientation: "auto",
                         children: (0, i.jsxs)("main", {
-                            className: r()(G.customColumn, G.contentColumnDefault, O.$Z, O.ed, O.z1),
+                            className: r()(L.customColumn, L.contentColumnDefault, O.$Z, O.ed, O.z1),
                             children: [(0, i.jsx)("div", {
                                 className: O.wx,
                                 children: (0, i.jsx)(o.Heading, {
@@ -118,7 +118,7 @@ function L(e) {
                     })
                 })
             })
-        }), L && null != D && (0, i.jsxs)(i.Fragment, {
+        }), G && null != D && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.pkL, {
                 isVisible: !0,
                 onClick: M

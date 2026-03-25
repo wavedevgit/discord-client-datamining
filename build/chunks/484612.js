@@ -8,11 +8,11 @@ var r = n(627968),
     l = n.n(s),
     o = n(311907),
     a = n(554146),
-    u = n(397927),
-    d = n(793574),
+    d = n(397927),
+    u = n(793574),
     c = n(932001),
-    p = n(742589),
-    m = n(976860),
+    m = n(742589),
+    p = n(976860),
     _ = n(488803),
     f = n(14081),
     g = n(843095),
@@ -77,7 +77,7 @@ function M(e) {
                                 let e = new URL(window.location.href);
                                 e.searchParams.delete(G.G0);
                                 let t = e.pathname + e.search + e.hash;
-                                (0, m.bG)(t), J.current = !1
+                                (0, p.bG)(t), J.current = !1
                             }
                         });
                         return
@@ -85,7 +85,7 @@ function M(e) {
                     if ("gameServer" === n.type && s === T.W5) {
                         (0, g.A)({
                             guildId: t,
-                            analyticsLocation: d.A.GUILD_POWERUPS_OVERVIEW
+                            analyticsLocation: u.A.GUILD_POWERUPS_OVERVIEW
                         }), J.current = !0;
                         return
                     }
@@ -98,7 +98,7 @@ function M(e) {
                 },
                 modalKey: `dismissible_content_${X}`
             };
-            (0, u.mMO)(async () => {
+            (0, d.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("86618").then(n.bind(n, 442241));
@@ -111,19 +111,19 @@ function M(e) {
         }
     }, [t, X, q, z]), W?.powerupCatalog == null) ? null : (0, r.jsxs)("div", {
         className: V.kL,
-        children: [(0, r.jsxs)(p.A, {
+        children: [(0, r.jsxs)(m.A, {
             className: V.KE,
             hideSearch: !0,
             toolbar: (0, r.jsx)("div", {}),
-            children: [(0, r.jsx)(p.A.Icon, {
-                icon: u._Jp,
+            children: [(0, r.jsx)(m.A.Icon, {
+                icon: d._Jp,
                 "aria-label": ""
-            }), (0, r.jsx)(p.A.Title, {
+            }), (0, r.jsx)(m.A.Title, {
                 children: U.intl.string(D.default.yv3DJJ)
             })]
         }), (0, r.jsxs)("div", {
             className: V.hQ,
-            children: [(0, r.jsx)(u.IpV, {
+            children: [(0, r.jsx)(d.IpV, {
                 className: V.DO,
                 children: H.map(e => {
                     let {
@@ -143,16 +143,16 @@ function M(e) {
                                     title: U.intl.string(D.default.TV3Vm8), description: U.intl.string(D.default.STx9hp)
                                 }
                         }
-                    }(n), a = n === G.o9.LEVEL ? u.IpV : "div";
+                    }(n), a = n === G.o9.LEVEL ? d.IpV : "div";
                     return (0, r.jsxs)("div", {
                         className: V.lt,
                         children: [(0, r.jsxs)("div", {
                             className: V.kn,
-                            children: [(0, r.jsx)(u.Heading, {
+                            children: [(0, r.jsx)(d.Heading, {
                                 color: "text-strong",
                                 variant: "heading-lg/semibold",
                                 children: s
-                            }), (0, r.jsx)(u.Text, {
+                            }), (0, r.jsx)(d.Text, {
                                 color: "text-muted",
                                 variant: "text-sm/medium",
                                 children: o

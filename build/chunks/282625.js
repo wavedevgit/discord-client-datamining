@@ -32,8 +32,8 @@ var i = n(627968),
     y = n(652215),
     R = n(985018),
     O = n(688661),
-    G = n(63135);
-let L = s.forwardRef((e, t) => {
+    L = n(63135);
+let G = s.forwardRef((e, t) => {
     let {
         onHeaderClick: s,
         guildId: l,
@@ -161,7 +161,7 @@ function D(e) {
                         let t = r === e.id,
                             s = o === e.id,
                             a = t ? c : s ? u : null;
-                        return (0, i.jsx)(L, {
+                        return (0, i.jsx)(G, {
                             guildId: n,
                             guild: l,
                             ref: e => {
@@ -179,7 +179,7 @@ function D(e) {
         })
     })
 }
-L.displayName = "AuditLogClickWrap";
+G.displayName = "AuditLogClickWrap";
 class M extends s.PureComponent {
     _clickedInside = !1;
     _scrollerRef = null;
@@ -422,11 +422,11 @@ class M extends s.PureComponent {
             isLoading: n
         } = this.props;
         return (0, i.jsx)("div", {
-            className: G.customColumn,
+            className: L.customColumn,
             children: (0, i.jsx)("div", {
-                className: G.customContainer,
+                className: L.customContainer,
                 children: (0, i.jsx)(c.GtU, {
-                    className: r()(G.customScroller, O.XG),
+                    className: r()(L.customScroller, O.XG),
                     onScroll: this.handleOnScroll,
                     ref: this.handleSetScrollerRef,
                     children: (0, i.jsx)("div", {

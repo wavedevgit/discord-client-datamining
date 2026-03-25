@@ -38,17 +38,17 @@ function E(e) {
     } = (0, u.wP)(I), R = {
         [m.yT.MEMBERS]: j.intl.string(j.t.sx4E5v),
         [m.yT.CONTENT]: j.intl.string(j.t.fphZb0)
-    }, O = s.useMemo(() => Object.values(y ?? {}).flat().filter(d.Vq), [y]), G = {
+    }, O = s.useMemo(() => Object.values(y ?? {}).flat().filter(d.Vq), [y]), L = {
         isInEditMode: v,
         setEditingRule: b
-    }, L = s.useRef(G);
+    }, G = s.useRef(L);
     s.useEffect(() => {
-        L.current = G
+        G.current = L
     }), s.useEffect(() => {
         let {
             isInEditMode: e,
             setEditingRule: t
-        } = L.current;
+        } = G.current;
         e && t(null)
     }, [I]);
     let D = s.useCallback((e, t) => null != e ? O.find(t => {

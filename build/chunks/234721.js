@@ -33,9 +33,9 @@ function C(e) {
         settingsGuild: A,
         settingsMetadata: C,
         settingsProfile: T
-    } = e, I = A.id, [v, S] = s.useState(!1), [y, R] = s.useState(null), O = A.features.has(N.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL), G = (0, g.H)({
+    } = e, I = A.id, [v, S] = s.useState(!1), [y, R] = s.useState(null), O = A.features.has(N.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL), L = (0, g.H)({
         guildId: A.id
-    }) ?? 0, L = s.useCallback(() => {
+    }) ?? 0, G = s.useCallback(() => {
         R(null), h.A.init(I, N.BEX.ACCESS)
     }, [I]), D = s.useCallback(async e => {
         try {
@@ -152,24 +152,24 @@ function C(e) {
                     onConfirm: s
                 })
             }) : s())
-        }, void(O && G > 0 && t.joinType !== f.J.APPLY ? (0, a.mMO)(async () => {
+        }, void(O && L > 0 && t.joinType !== f.J.APPLY ? (0, a.mMO)(async () => {
             let {
                 default: t
             } = await n.e("63452").then(n.bind(n, 78903));
             return n => (0, i.jsx)(t, {
                 ...n,
                 guildId: I,
-                submittedGuildJoinRequestsCount: G,
+                submittedGuildJoinRequestsCount: L,
                 onConfirm: e
             })
         }) : e())
-    }), [O, P, t, I, G]), B = t.joinType === f.J.DISCOVERABLE && t.settingsView === j.v.ELIGIBLE_DISABLED, F = null != A.description && C.primaryCategoryId !== E.ig && C.keywords.length > 0;
+    }), [O, P, t, I, L]), B = t.joinType === f.J.DISCOVERABLE && t.settingsView === j.v.ELIGIBLE_DISABLED, F = null != A.description && C.primaryCategoryId !== E.ig && C.keywords.length > 0;
     return (0, i.jsx)(r.A, {
         message: B ? b.intl.string(b.t.V2G2Yr) : void 0,
         onSaveText: B ? b.intl.string(b.t["qjtt/p"]) : void 0,
         submitting: v,
         errorMessage: y,
-        onReset: L,
+        onReset: G,
         onSave: w,
         disabled: B && !F
     })

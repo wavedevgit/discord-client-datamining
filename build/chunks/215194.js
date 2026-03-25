@@ -39,7 +39,7 @@ let v = function() {
         }), x.A.updateGuildProfile(n, {
             icon: e
         }))
-    }, [n]), G = s.useCallback(e => {
+    }, [n]), L = s.useCallback(e => {
         null != n && x.A.updateGuildProfile(n, {
             customBanner: e
         })
@@ -47,13 +47,13 @@ let v = function() {
     s.useEffect(() => {
         null != n && v()
     }, [n, v]);
-    let L = s.useCallback(() => {
+    let G = s.useCallback(() => {
         v(!0)
     }, [v]);
     return (s.useEffect(() => {
         a.A.getDetectableGames()
     }, []), S === c.X.FETCHED && null == y) ? (0, i.jsx)(N.g, {
-        forceFetchGuildProfile: L
+        forceFetchGuildProfile: G
     }) : S === c.X.NOT_FETCHED || S === c.X.FETCHING ? (0, i.jsx)("main", {
         className: I.u1,
         children: (0, i.jsx)(r.y$y, {})
@@ -87,7 +87,7 @@ let v = function() {
                     className: I.yF
                 }), (0, i.jsx)(_.A, {
                     profile: y,
-                    onCustomBannerChange: G,
+                    onCustomBannerChange: L,
                     canManageGuild: R
                 }), (0, i.jsx)("div", {
                     className: I.yF

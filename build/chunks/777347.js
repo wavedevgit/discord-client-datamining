@@ -1,7 +1,7 @@
 /** chunk id: 777347 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p,
-    U: () => m
+    A: () => m,
+    U: () => p
 });
 var r = n(64700),
     i = n(311907),
@@ -9,45 +9,45 @@ var r = n(64700),
     l = n(80682),
     o = n(859241),
     a = n(256587),
-    u = n(696451),
-    d = n(71393),
+    d = n(696451),
+    u = n(71393),
     c = n(661191);
 
-function p(e, t) {
+function m(e, t) {
     let n = (0, i.yK)([o.A], () => o.A.getAppliedGuildBoostsForGuild(e) ?? [], [e]),
-        p = r.useMemo(() => [...n].sort((e, t) => c.default.extractTimestamp(e.id) < c.default.extractTimestamp(t.id) ? 1 : -1).slice(0, t), [n, t]),
-        m = (0, i.yK)([u.Ay], () => {
+        m = r.useMemo(() => [...n].sort((e, t) => c.default.extractTimestamp(e.id) < c.default.extractTimestamp(t.id) ? 1 : -1).slice(0, t), [n, t]),
+        p = (0, i.yK)([d.Ay], () => {
             let t = new Set;
-            return p.forEach(n => {
-                null == u.Ay.getMember(e, n.userId) && t.add(n.userId)
+            return m.forEach(n => {
+                null == d.Ay.getMember(e, n.userId) && t.add(n.userId)
             }), Array.from(t)
-        }, [e, p]);
+        }, [e, m]);
     r.useEffect(() => {
-        m.length > 0 && m.forEach(t => a.A.requestMember(e, t))
-    }, [e, m]);
+        p.length > 0 && p.forEach(t => a.A.requestMember(e, t))
+    }, [e, p]);
     let _ = r.useMemo(() => {
-        let t = m.slice(0, l.JM / 2);
+        let t = p.slice(0, l.JM / 2);
         return t.length > 0 ? {
             [e]: t
         } : {}
-    }, [e, m]);
+    }, [e, p]);
     (0, l.Eq)(_, "GuildPowerupsRecentActivity");
-    let f = (0, i.bG)([d.A], () => d.A.getGuild(e)?.premiumSubscriberCount);
+    let f = (0, i.bG)([u.A], () => u.A.getGuild(e)?.premiumSubscriberCount);
     return r.useEffect(() => {
         f !== n.length && (0, s.VU)(e)
-    }, [e, f, n.length]), p
+    }, [e, f, n.length]), m
 }
 
-function m(e) {
+function p(e) {
     let t = new Date(c.default.extractTimestamp(e.id)),
         {
             username: n,
             roleColor: r,
             roleColorStrings: s
-        } = (0, i.cf)([u.Ay], () => {
-            let t = u.Ay.getMember(e.guildId, e.userId);
+        } = (0, i.cf)([d.Ay], () => {
+            let t = d.Ay.getMember(e.guildId, e.userId);
             return {
-                username: u.Ay.getNick(e.guildId, e.userId) ?? e.user?.username,
+                username: d.Ay.getNick(e.guildId, e.userId) ?? e.user?.username,
                 roleColor: t?.colorString ?? null,
                 roleColorStrings: t?.colorStrings ?? null
             }

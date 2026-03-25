@@ -139,7 +139,7 @@ function R() {
     let c = null != t && null == t.getFirstFieldErrorMessage("name") && null == t.getFirstFieldErrorMessage("description");
     return (0, i.jsxs)(g.BJc, {
         gap: 20,
-        children: [(0, i.jsx)(L, {}), (0, i.jsx)(D, {
+        children: [(0, i.jsx)(G, {}), (0, i.jsx)(D, {
             guild: e,
             guildTemplate: a
         }), c ? (0, i.jsx)(g.Text, {
@@ -218,7 +218,7 @@ function O() {
     })
 }
 
-function G(e) {
+function L(e) {
     let {
         cancel: t,
         confirm: n
@@ -238,7 +238,7 @@ function G(e) {
     })
 }
 
-function L() {
+function G() {
     let e = (0, d.bG)([I], () => I.name),
         t = (0, d.bG)([I], () => I.description),
         n = (0, d.bG)([I], () => I.error),
@@ -386,7 +386,7 @@ function U(e) {
                 text: E.intl.string(E.t["cN/RFD"]),
                 onClick: () => r(!0)
             })
-        }), l ? (0, i.jsx)(G, {
+        }), l ? (0, i.jsx)(L, {
             confirm: a,
             cancel: () => r(!1)
         }) : null]

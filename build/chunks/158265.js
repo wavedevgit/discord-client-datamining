@@ -34,13 +34,13 @@ let A = e => {
     } = i.useContext(p.PW), {
         completionSpring: T,
         startCompletionAnimation: S
-    } = (0, _.R)(), E = A.userStatus?.completedAt != null, N = i.useRef(!1), I = (0, c.bG)([m.A], () => m.A.useReducedMotion), O = i.useRef(null), k = (0, c.bG)([h.A], () => h.A.hasLayers()), R = (0, u.A)(k), [w, D] = i.useState(null), [P, M] = i.useState(null), L = i.useRef(new r.OH({
+    } = (0, _.R)(), E = A.userStatus?.completedAt != null, N = i.useRef(!1), I = (0, c.bG)([m.A], () => m.A.useReducedMotion), k = i.useRef(null), O = (0, c.bG)([h.A], () => h.A.hasLayers()), R = (0, u.A)(O), [w, D] = i.useState(null), [P, M] = i.useState(null), L = i.useRef(new r.OH({
         gravity: 0,
         wind: 0
     })), U = (0, r.f9)(w, P), B = i.useMemo(() => [f.r3], []), G = i.useCallback(() => {
         if (I) return;
         let e = n.current,
-            t = O.current;
+            t = k.current;
         if (null != t && null != e && U.isReady) {
             var a, i, s, l;
             let {
@@ -90,21 +90,21 @@ let A = e => {
                 }
             }), 100)
         }
-    }, [n, O, U, I]), F = (0, u.A)(C);
+    }, [n, k, U, I]), F = (0, u.A)(C);
     return (i.useEffect(() => {
         E && C && !F && (S(), G())
     }, [C, E, S, G, F]), i.useEffect(() => {
-        E && !k && R && setTimeout(() => {
+        E && !O && R && setTimeout(() => {
             S(), G()
         }, 200)
-    }, [E, R, k, S, G]), i.useEffect(() => {
+    }, [E, R, O, S, G]), i.useEffect(() => {
         U.isReady && (!N.current && E && (S(), G()), N.current = E)
     }, [E, N, G, S, U]), i.useEffect(() => {
         s && E && (S(), G())
     }, [s, E, S, G]), I) ? null : (0, a.jsxs)("div", {
         className: b.iE,
         "aria-hidden": "true",
-        ref: O,
+        ref: k,
         children: [(0, a.jsx)(d.animated.div, {
             className: b.Tp,
             style: {

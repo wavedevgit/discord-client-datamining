@@ -50,14 +50,14 @@ function N(e) {
     }, [b, t]), s.useEffect(() => {
         g()
     }, [t, g]);
-    let G = s.useCallback(async e => {
+    let L = s.useCallback(async e => {
         y(!0), await (0, _.E)(t, e, T), y(!1)
     }, [T, t]);
     return b ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(o.dOG, {
             label: f.intl.string(f.t.NR6huS),
             checked: C,
-            onChange: G,
+            onChange: L,
             disabled: S
         }), O ? (0, i.jsx)(r.EYj, {
             variant: "text-sm/normal",

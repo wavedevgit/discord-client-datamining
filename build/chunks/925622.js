@@ -63,7 +63,7 @@ let R = "dismissedCommunityFeaturesUpsell",
             errorMessage: e
         })
     },
-    G = e => {
+    L = e => {
         let {
             discoveryEnabled: t,
             onboardingEnabled: n,
@@ -169,7 +169,7 @@ let R = "dismissedCommunityFeaturesUpsell",
             })]
         })
     },
-    L = () => {
+    G = () => {
         let e = (0, l.bG)([b.A], () => b.A.getGuild()),
             {
                 canManageGuild: t,
@@ -212,7 +212,7 @@ let R = "dismissedCommunityFeaturesUpsell",
             children: [(0, i.jsx)(m.Heading, {
                 variant: "heading-lg/semibold",
                 children: v.intl.string(v.t.nRtNqn)
-            }), u ? (0, i.jsx)(G, {
+            }), u ? (0, i.jsx)(L, {
                 discoveryEnabled: e.features.has(I.GuildFeatures.DISCOVERABLE),
                 onboardingEnabled: e.features.has(I.GuildFeatures.GUILD_ONBOARDING),
                 guild: e
@@ -318,7 +318,7 @@ let R = "dismissedCommunityFeaturesUpsell",
     },
     D = () => {
         let e = (0, l.bG)([b.A], () => b.A.getGuild());
-        return null == e ? null : e.features.has(I.GuildFeatures.COMMUNITY) ? (0, i.jsx)(L, {}) : (0, i.jsx)(C.A, {
+        return null == e ? null : e.features.has(I.GuildFeatures.COMMUNITY) ? (0, i.jsx)(G, {}) : (0, i.jsx)(C.A, {
             guild: e
         })
     }

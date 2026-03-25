@@ -1,7 +1,7 @@
 /** chunk id: 946171 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    s: () => G
+    s: () => L
 });
 var i = n(627968),
     s = n(64700);
@@ -327,7 +327,7 @@ function O() {
     })
 }
 
-function G(e) {
+function L(e) {
     let {
         requireTerms: t,
         rules: n,

@@ -108,7 +108,7 @@ let R = e => {
         });
         let e = await (0, u.a)(b.dSh.DEVELOPER_PORTAL_TEAMS);
         (0, o.A)(e)
-    }, [t, r, c, R]), G = s.useCallback(e => r ? (0, i.jsx)(m.A, {
+    }, [t, r, c, R]), L = s.useCallback(e => r ? (0, i.jsx)(m.A, {
         onClick: O,
         children: e
     }) : e, [O, r]);
@@ -124,7 +124,7 @@ let R = e => {
             label: I.intl.string(I.t["sYLCY/"]),
             disabled: !r,
             description: I.intl.format(I.t["5mfqpW"], {
-                onCreateTeamHook: G
+                onCreateTeamHook: L
             }),
             children: R ? (0, i.jsx)(y, {
                 guild: t,

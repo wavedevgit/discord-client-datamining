@@ -25,9 +25,9 @@ function s(e) {
                     e = a;
                     return
                 }
-                let u = a - e,
-                    d = Math.abs(u);
-                (u < 0 && d > s || u > 0 && d > l) && n()
+                let d = a - e,
+                    u = Math.abs(d);
+                (d < 0 && u > s || d > 0 && u > l) && n()
             };
         return document.addEventListener("scroll", r, {
             passive: !0,

@@ -3,8 +3,8 @@ n.d(t, {
     A: () => u
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(459793),
+    l = n(64700),
+    r = n(459793),
     a = n(97352),
     s = n(927578),
     o = n(937008),
@@ -30,14 +30,14 @@ function u(e) {
         setSubscriptionMetadataRequest: S
     } = (0, d.P5)(), {
         isGift: C
-    } = (0, o.Pv)(), [_, y] = r.useState(!x || !g || h);
-    return (r.useEffect(() => {
+    } = (0, o.Pv)(), [_, y] = l.useState(!x || !g || h);
+    return (l.useEffect(() => {
         y(!x || !g || h)
-    }, [h, g, x]), r.useEffect(() => {
+    }, [h, g, x]), l.useEffect(() => {
         null != u && S({
             guild_id: u
         })
-    }, [u, S]), r.useEffect(() => {
+    }, [u, S]), l.useEffect(() => {
         j(n);
         let e = null != n ? a.A.get(n) : null;
         _ || p || (m(t => {
@@ -50,5 +50,5 @@ function u(e) {
                 currency: v.currency
             }
         }), null != e && (A(e?.skuId), f(t)))
-    }, [p, n, C, _, v, b, m, j, A, f, t]), _) ? (0, i.jsx)(c.A, {}) : p ? (0, i.jsx)(l.oO, {}) : null
+    }, [p, n, C, _, v, b, m, j, A, f, t]), _) ? (0, i.jsx)(c.A, {}) : p ? (0, i.jsx)(r.oO, {}) : null
 }
