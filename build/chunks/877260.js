@@ -37,7 +37,7 @@ function x(e) {
         dismissibleBadges: j,
         accessibleDirectory: C
     });
-    let [T, R] = i.useMemo(() => {
+    let [R, T] = i.useMemo(() => {
         let e = [],
             n = [];
         return t.layout.forEach(t => {
@@ -63,13 +63,13 @@ function x(e) {
                         "aria-label": y.intl.string(y.t.cpT0Cq)
                     })
                 }), (0, r.jsx)("div", {
-                    children: T.map(e => (0, r.jsx)(E, {
+                    children: R.map(e => (0, r.jsx)(E, {
                         section: e,
                         visibleContent: I,
                         dismissibleBadges: j,
                         hoisted: !0
                     }, e.key))
-                }), null != x && (0, r.jsx)(x, {}), null != b && 0 === R.length && (0, r.jsx)(b, {})]
+                }), null != x && (0, r.jsx)(x, {}), null != b && 0 === T.length && (0, r.jsx)(b, {})]
             }), (0, r.jsx)(s.hD, {
                 navigator: w,
                 children: (0, r.jsx)(s.PR, {
@@ -87,7 +87,7 @@ function x(e) {
                             ...n,
                             children: [(0, r.jsx)("nav", {
                                 className: v.C$,
-                                children: R.map(e => (0, r.jsx)(E, {
+                                children: T.map(e => (0, r.jsx)(E, {
                                     section: e,
                                     visibleContent: I,
                                     dismissibleBadges: j

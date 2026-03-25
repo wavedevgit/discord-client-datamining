@@ -15,8 +15,8 @@ var n = r(627968),
     _ = r(65600),
     f = r(145331),
     S = r(652215),
-    E = r(985018),
-    g = r(935606);
+    g = r(985018),
+    E = r(935606);
 
 function p(e) {
     let {
@@ -29,22 +29,22 @@ function p(e) {
             type: S.LWr.FILTER_FROM,
             isEligible: A.has(S.LWr.FILTER_FROM),
             icon: l.nys,
-            label: E.intl.string(E.t.ktr6z5)
+            label: g.intl.string(g.t.ktr6z5)
         }, {
             type: S.LWr.FILTER_IN,
             isEligible: A.has(S.LWr.FILTER_IN),
             icon: l.N$i,
-            label: E.intl.string(E.t.VMjDvS)
+            label: g.intl.string(g.t.VMjDvS)
         }, {
             type: S.LWr.FILTER_HAS,
             isEligible: A.has(S.LWr.FILTER_HAS),
             icon: l.PtA,
-            label: E.intl.string(E.t.IhIpc7)
+            label: g.intl.string(g.t.IhIpc7)
         }, {
             type: S.LWr.FILTER_MENTIONS,
             isEligible: A.has(S.LWr.FILTER_MENTIONS),
             icon: l.XxR,
-            label: E.intl.string(E.t.fpKv9Y)
+            label: g.intl.string(g.t.fpKv9Y)
         }];
         return e.filter(e => e.isEligible).map(s => {
             let {
@@ -56,7 +56,7 @@ function p(e) {
                 icon: (0, n.jsx)(l, {
                     size: "sm",
                     color: "currentColor",
-                    className: g.Fx
+                    className: E.Fx
                 }),
                 label: (0, n.jsx)(u.bg, {
                     label: o

@@ -112,7 +112,7 @@ function f(e) {
             })
         }
         return null
-    }(h, A, n), [h, A, n]), v = l.useRef(null), T = l.useCallback(() => {
+    }(h, A, n), [h, A, n]), v = l.useRef(null), E = l.useCallback(() => {
         if (null == t.current) return;
         let e = t.current.getBoundingClientRect();
         v.current = {
@@ -125,16 +125,16 @@ function f(e) {
                 v.current = null;
                 return
             }
-            null == v.current && T()
-        }, [f, T]), !0 !== f || null == _ || null == j) return null;
-    null == v.current && T();
+            null == v.current && E()
+        }, [f, E]), !0 !== f || null == _ || null == j) return null;
+    null == v.current && E();
     let {
-        x: E,
+        x: T,
         y: b
     } = v.current ?? {
         x: 0,
         y: 0
-    }, N = _.x - E - 60 * !!I, S = _.y - b;
+    }, N = _.x - T - 60 * !!I, S = _.y - b;
     return (0, i.jsx)("div", {
         className: p.kL,
         style: {

@@ -27,7 +27,7 @@ function v(e) {
         className: t
     } = e, {
         trackUserProfileEditSaved: n
-    } = (0, g.NJ)(), [a, v] = l.useState(!1), T = (0, o.yK)([p.A], () => p.A.getSaveablePendingWidgets() ?? []), E = (0, o.yK)([p.A], () => p.A.getChangedWidgets()), b = (0, o.yK)([p.A], () => p.A.getRemovedWidgets()), N = (0, o.bG)([p.A], () => p.A.hasUnsavedChanges()), S = (0, o.bG)([p.A], () => p.A.canSaveChanges()), y = (0, o.bG)([p.A], () => p.A.isSubmitting), C = (0, o.bG)([c.A], () => c.A.useReducedMotion), R = (0, d.pnh)(N, {
+    } = (0, g.NJ)(), [a, v] = l.useState(!1), E = (0, o.yK)([p.A], () => p.A.getSaveablePendingWidgets() ?? []), T = (0, o.yK)([p.A], () => p.A.getChangedWidgets()), b = (0, o.yK)([p.A], () => p.A.getRemovedWidgets()), N = (0, o.bG)([p.A], () => p.A.hasUnsavedChanges()), S = (0, o.bG)([p.A], () => p.A.canSaveChanges()), y = (0, o.bG)([p.A], () => p.A.isSubmitting), C = (0, o.bG)([c.A], () => c.A.useReducedMotion), R = (0, d.pnh)(N, {
         from: {
             opacity: 0,
             y: 80 * !C
@@ -56,12 +56,12 @@ function v(e) {
     let k = l.useCallback(async () => {
             if (p.A.canSaveChanges()) {
                 try {
-                    await x.A.savePendingWidgets(T)
+                    await x.A.savePendingWidgets(E)
                 } catch (e) {
                     (0, f.XA)(h.jM.WIDGET_SAVE_FAILURE);
                     return
                 }
-                for (let e of E) {
+                for (let e of T) {
                     let t = {
                         widgetEdited: e.type,
                         isWidgetRemoved: !1
@@ -73,7 +73,7 @@ function v(e) {
                     isWidgetRemoved: !0
                 })
             }
-        }, [T, E, b, n]),
+        }, [E, T, b, n]),
         L = l.useCallback(() => {
             x.A.clearPendingWidgets()
         }, []);

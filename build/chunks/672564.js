@@ -56,7 +56,7 @@ function v(e) {
     })
 }
 
-function T(e) {
+function E(e) {
     let {
         sku: t,
         analyticsLocations: n,
@@ -98,7 +98,7 @@ function T(e) {
     })
 }
 
-function E(e) {
+function T(e) {
     let {
         sku: t,
         analyticsLocations: n,
@@ -106,7 +106,7 @@ function E(e) {
     } = e, {
         analyticsLocations: a
     } = (0, c.Ay)(...n ?? [], d.A.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD);
-    return (0, i.jsx)(T, {
+    return (0, i.jsx)(E, {
         sku: t,
         analyticsLocations: a,
         ...l
@@ -128,7 +128,7 @@ function b(e) {
                 return s()(I.ML, I.ZY)
         }
     }, [t?.tenantMetadata?.collectibles?.type]);
-    return (0, i.jsx)(T, {
+    return (0, i.jsx)(E, {
         sku: t,
         skuPreviewStyle: a,
         ...n
@@ -142,7 +142,7 @@ function N(e) {
     } = e, [a, s] = l.useState(!1);
     switch (t.productLine) {
         case h.EZt.SOCIAL_LAYER_GAME_ITEM:
-            return (0, i.jsx)(E, {
+            return (0, i.jsx)(T, {
                 sku: t,
                 isHoveringOrFocusing: a,
                 setIsHoveringOrFocusing: s,

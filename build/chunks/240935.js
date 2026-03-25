@@ -4,17 +4,17 @@ n.d(t, {
 });
 var i = n(311907),
     s = n(73153),
-    l = n(734057),
-    r = n(309010),
+    r = n(734057),
+    l = n(309010),
     a = n(543465);
 let d = {},
     h = {},
     o = {};
 
 function u() {
-    let e = r.A.getChannelId();
+    let e = l.A.getChannelId();
     if (null == e) return;
-    let t = l.A.getChannel(e);
+    let t = r.A.getChannel(e);
     if (null == t || null == t.guild_id) return;
     let n = t.guild_id;
     if (null == o[e] && (o[e] = 0), t.isThread() || a.Ay.isOptInEnabled(n) && !a.Ay.isChannelOrParentOptedIn(n, t.id)) {
@@ -27,7 +27,7 @@ class c extends i.Ay.PersistedStore {
     static displayName = "FavoritesSuggestionStore";
     static persistKey = "FavoritesSuggestionStore";
     initialize(e) {
-        if (this.waitFor(l.A, r.A, a.Ay), this.syncWith([r.A], u), null == e) return;
+        if (this.waitFor(r.A, l.A, a.Ay), this.syncWith([l.A], u), null == e) return;
         let {
             suggestedChannels: t,
             dismissedSuggestions: n,

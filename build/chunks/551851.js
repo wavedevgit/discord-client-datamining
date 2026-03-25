@@ -4,32 +4,32 @@ n.d(t, {
 });
 var i = n(311907),
     s = n(73153);
-let l = {};
+let r = {};
 
-function r(e) {
+function l(e) {
     let {
         guildId: t,
         expand: n
     } = e;
-    n ? l[t] = !0 : delete l[t]
+    n ? r[t] = !0 : delete r[t]
 }
 class a extends i.Ay.PersistedStore {
     static displayName = "ChannelListVoiceCategoryStore";
     static persistKey = "ChannelListVoiceCategoryStore";
     initialize(e) {
-        l = e ?? {}
+        r = e ?? {}
     }
     isVoiceCategoryExpanded(e) {
-        return (null != e && l[e]) ?? !1
+        return (null != e && r[e]) ?? !1
     }
     isVoiceCategoryCollapsed(e) {
         return !this.isVoiceCategoryExpanded(e)
     }
     getState() {
-        return l
+        return r
     }
 }
 let d = new a(s.h, {
-    VOICE_CATEGORY_COLLAPSE: r,
-    VOICE_CATEGORY_EXPAND: r
+    VOICE_CATEGORY_COLLAPSE: l,
+    VOICE_CATEGORY_EXPAND: l
 })

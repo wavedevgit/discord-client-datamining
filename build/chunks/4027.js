@@ -14,8 +14,8 @@ var l = e(397927),
     o = e(93055),
     h = e(133238),
     A = e(795144),
-    f = e(671470),
-    g = e(73028),
+    g = e(671470),
+    f = e(73028),
     _ = e(961350),
     j = e(605691),
     x = e(848977),
@@ -30,7 +30,7 @@ function v(n) {
     } = n, d = t.isOwner(_.default.getId()), o = (0, x.A)(t), j = (0, m.A)(t), b = (0, c.A)({
         id: t.id,
         label: p.intl.string(p.t.gFHI3k)
-    }), v = (0, s.A)(t), O = (0, h.y)(t), G = (0, A.A)(t), X = (0, f.A)(t), y = d ? (0, i.jsx)(l.Drp, {
+    }), v = (0, s.A)(t), O = (0, h.y)(t), G = (0, A.A)(t), X = (0, g.A)(t), y = d ? (0, i.jsx)(l.Drp, {
         id: "instant-invites",
         label: p.intl.string(p.t.ngRFjZ),
         action: () => (0, l.mMO)(async () => {
@@ -59,7 +59,7 @@ function v(n) {
             children: [y, (0, i.jsx)(l.Drp, {
                 id: "edit-gdm",
                 label: p.intl.string(p.t["5Q9+/L"]),
-                action: () => (0, g.U)(t.id, u.A.GROUP_DM_CONTEXT_MENU)
+                action: () => (0, f.U)(t.id, u.A.GROUP_DM_CONTEXT_MENU)
             })]
         }), (0, i.jsx)(l.rXV, {
             children: v
@@ -78,7 +78,7 @@ function O(n) {
         channel: t,
         selected: a,
         onSelect: d
-    } = n, o = t.isOwner(_.default.getId()), A = (0, x.A)(t), f = (0, m.A)(t), b = (0, j.A)(t, a), v = (0, c.A)({
+    } = n, o = t.isOwner(_.default.getId()), A = (0, x.A)(t), g = (0, m.A)(t), b = (0, j.A)(t, a), v = (0, c.A)({
         id: t.id,
         label: p.intl.string(p.t.gFHI3k)
     }), O = (0, s.A)(t), G = (0, h.m)(t), X = (0, h.y)(t), y = o ? (0, i.jsx)(l.Drp, {
@@ -108,12 +108,12 @@ function O(n) {
             children: [y, (0, i.jsx)(l.Drp, {
                 id: "edit-gdm",
                 label: p.intl.string(p.t["5Q9+/L"]),
-                action: () => (0, g.U)(t.id, u.A.GROUP_DM_CONTEXT_MENU)
+                action: () => (0, f.U)(t.id, u.A.GROUP_DM_CONTEXT_MENU)
             })]
         }), (0, i.jsx)(l.rXV, {
             children: O
         }), (0, i.jsx)(l.rXV, {
-            children: f
+            children: g
         }), (0, i.jsxs)(l.rXV, {
             children: [X, b]
         }), (0, i.jsx)(l.rXV, {

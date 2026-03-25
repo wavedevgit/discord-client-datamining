@@ -1,6 +1,7 @@
 /** chunk id: 909536 params = (module,exports,require) **/
 n.d(t, {
-    Gh: () => l
+    Gh: () => l,
+    St: () => a
 });
 let i = (0, n(945810).mj)({
     name: "2026-03-wishlisting-nitro",
@@ -29,4 +30,10 @@ function l(e) {
     return i.useConfig({
         location: e
     }).isEnabled
+}
+
+function a(e) {
+    return i.useConfig({
+        location: e
+    }).isRoadblocksEnabled
 }

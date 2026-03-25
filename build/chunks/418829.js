@@ -36,18 +36,18 @@ function m(e) {
         let e = C.entry(A ?? j)?.parentPanelKey;
         if (null != e) return C.getPanelOrThrow(e)
     }, [A, C, j]), {
-        navigateWithValidation: T
+        navigateWithValidation: R
     } = (0, o.L_)();
     i.useEffect(() => {
         h.A.init({
             accessibleDirectory: C,
             onViewChange: y,
             navigateWithValidation: (e, t) => {
-                null == N.entry(e) && E?.(), T(t)
+                null == N.entry(e) && E?.(), R(t)
             }
         })
-    }, [C, T, y, E, N]);
-    let [R, k] = i.useState(!0);
+    }, [C, R, y, E, N]);
+    let [T, k] = i.useState(!0);
     (0, a.Ay)(() => (h.A.navigate(j, {
         animatePanelScroll: !1,
         animateSidebarScroll: !1,
@@ -59,7 +59,7 @@ function m(e) {
             visibleDirectory: N,
             accessibleDirectory: C
         }), [N, C]),
-        L = i.useMemo(() => () => T(p), [T, p]),
+        L = i.useMemo(() => () => R(p), [R, p]),
         D = null != A ? N.get(A) : void 0;
     return (0, r.jsx)(c.x.Provider, {
         value: w,
@@ -73,7 +73,7 @@ function m(e) {
                 searchBar: g
             }), (0, r.jsx)(l.A, {
                 onClose: L,
-                setting: R ? void 0 : D ?? I
+                setting: T ? void 0 : D ?? I
             })]
         })
     })

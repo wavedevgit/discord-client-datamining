@@ -4,7 +4,7 @@ n.d(t, {
 });
 var i = n(311907),
     s = n(73153);
-let l = {
+let r = {
         enable_recently_active: "Enable recently active channels",
         theme_setting_in_account_sheet: "Show theme settings in the Account action sheet",
         nav_experiment_server_drawer_enabled: "[NavI] Enable expandable server drawer",
@@ -15,39 +15,39 @@ let l = {
         mana_switch_large_variant: "Larger Switch",
         mana_switch_show_icons: "Show icons on switches"
     },
-    r = {};
+    l = {};
 class a extends i.Ay.DeviceSettingsStore {
     static displayName = "DevToolsDesignTogglesStore";
     static persistKey = "DevToolsDesignTogglesStore";
     getUserAgnosticState() {
         return {
-            toggleStates: r
+            toggleStates: l
         }
     }
     initialize(e) {
-        for (var t in l) {
+        for (var t in r) {
             let n = e?.toggleStates?.[t] ?? !1;
-            r[t] = n
+            l[t] = n
         }
     }
     get(e) {
-        return r[e] ?? !1
+        return l[e] ?? !1
     }
     set(e, t) {
-        return r[e] = t, t
+        return l[e] = t, t
     }
     all() {
-        return r
+        return l
     }
     allWithDescriptions() {
-        return Object.entries(r).map(e => {
+        return Object.entries(l).map(e => {
             let [t, n] = e;
-            return [t, n, l[t]]
+            return [t, n, r[t]]
         })
     }
 }
 let d = new a(s.h, {
     DEV_TOOLS_DESIGN_TOGGLE_SET: function(e) {
-        r[e.toggle] = e.value
+        l[e.toggle] = e.value
     }
 })

@@ -64,7 +64,7 @@ function f(e) {
                     (0, s.mMO)(async () => {
                         let {
                             default: e
-                        } = await Promise.all([i.e("96811"), i.e("53612")]).then(i.bind(i, 648230));
+                        } = await Promise.all([i.e("96811"), i.e("12140")]).then(i.bind(i, 648230));
                         return t => (0, n.jsx)(e, {
                             ...t,
                             sourcePID: c,
@@ -110,7 +110,7 @@ function f(e) {
                     (0, s.mMO)(async () => {
                         let {
                             default: e
-                        } = await Promise.all([i.e("96811"), i.e("53612")]).then(i.bind(i, 648230));
+                        } = await Promise.all([i.e("96811"), i.e("12140")]).then(i.bind(i, 648230));
                         return t => (0, n.jsx)(e, {
                             ...t,
                             sourcePID: o,

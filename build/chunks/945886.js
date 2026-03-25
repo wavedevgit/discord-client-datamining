@@ -4,21 +4,21 @@ n.d(t, {
 });
 var i = n(311907),
     s = n(73153),
-    l = n(661191),
-    r = n(734057);
+    r = n(661191),
+    l = n(734057);
 let a = {},
     d = a;
 
 function h() {
-    l.default.keys(d).forEach(e => {
-        null == r.A.getChannel(e) && delete d[e]
+    r.default.keys(d).forEach(e => {
+        null == l.A.getChannel(e) && delete d[e]
     })
 }
 class o extends i.Ay.PersistedStore {
     static displayName = "CollapsedVoiceChannelStore";
     static persistKey = "collapsedChannels";
     initialize(e) {
-        this.waitFor(r.A), d = e ?? a
+        this.waitFor(l.A), d = e ?? a
     }
     getState() {
         return d

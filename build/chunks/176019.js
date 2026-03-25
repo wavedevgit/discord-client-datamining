@@ -8,8 +8,8 @@ var n = a(627968),
     i = a(64700),
     r = a(311907),
     s = a(684013),
-    l = a(964486),
-    o = a(573435),
+    o = a(964486),
+    l = a(573435),
     _ = a(626584),
     c = a(87001),
     d = a(923917),
@@ -94,13 +94,13 @@ let k = i.memo(function(e) {
         withTitleBar: a,
         windowKey: _
     } = e;
-    t = (0, r.bG)([c.A], () => c.A.getWindow(_)), (0, l.Ay)(() => {
+    t = (0, r.bG)([c.A], () => c.A.getWindow(_)), (0, o.Ay)(() => {
         if (null != t) return N && (t.document.hasFocus() && s.A.setFocusedPID(g.DEV_PID, null), t.addEventListener("focus", G), t.addEventListener("blur", O)), () => {
             N && (t.removeEventListener("focus", G), t.removeEventListener("blur", O))
         }
     });
     let A = function(e, t) {
-            let a, n, o = (0, r.bG)([y.A], () => !m.isPlatformEmbedded || y.A.isWindowHandleInitialized()),
+            let a, n, l = (0, r.bG)([y.A], () => !m.isPlatformEmbedded || y.A.isWindowHandleInitialized()),
                 _ = (0, r.bG)([c.A], () => c.A.getWindow(e)),
                 d = (0, r.bG)([y.A], () => y.A.getFocusedPID()),
                 A = i.useMemo(() => !m.isPlatformEmbedded || null != d && d !== g.UNSET_PID, [d]),
@@ -139,7 +139,7 @@ let k = i.memo(function(e) {
                 }, [T]),
                 k = i.useRef(!1);
             return i.useEffect(() => {
-                if (!E.current && ((0, S.A)("hasUseEffectFired", !0), (0, S.A)("trackedPidFocused", A), o)) {
+                if (!E.current && ((0, S.A)("hasUseEffectFired", !0), (0, S.A)("trackedPidFocused", A), l)) {
                     if (null == _) return void(0, S.A)("errorMessage", "No targetOverlayWindow");
                     if (!A) {
                         k.current || (s.A.updateOverlayState(y.A.getTargetPID(), I.AR.WAITING_FOR_PID_FOCUS, "AppOverlay - not focused"), k.current = !0);
@@ -147,7 +147,7 @@ let k = i.memo(function(e) {
                     }
                     E.current = !0, (0, S.A)("reactInitializationStarted", !0), O(_, e)
                 }
-            }, [O, A, e, _, o]), (0, l.l0)(() => {
+            }, [O, A, e, _, l]), (0, o.l0)(() => {
                 clearInterval(G.current), N.current = !0
             }), a = (0, r.bG)([p.A], () => p.A.windowSize(null != _ ? (0, h.Q2)(_) : void 0)), n = (0, r.bG)([y.A], () => y.A.getFocusedWindowHandle()), i.useEffect(() => {
                 let e, t;
@@ -171,6 +171,6 @@ let k = i.memo(function(e) {
         windowKey: _,
         title: "Discord Overlay",
         hideModals: k,
-        children: [(0, n.jsx)(v.A, {}), (0, n.jsx)(o.Al, {})]
+        children: [(0, n.jsx)(v.A, {}), (0, n.jsx)(l.Al, {})]
     }) : null
 })

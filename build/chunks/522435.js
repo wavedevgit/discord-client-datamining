@@ -1,6 +1,6 @@
 /** chunk id: 522435 params = (module,exports,require) **/
 n.d(t, {
-    K7: () => l,
+    K7: () => r,
     LG: () => a,
     TP: () => s
 });
@@ -10,11 +10,11 @@ function s(e) {
     return null != e && 0 !== e.length && i.test(e)
 }
 
-function l(e) {
+function r(e) {
     return e.startsWith("//") ? `https:${e}` : e
 }
-let r = /\.(webm|mp4)(\?|$)/i;
+let l = /\.(webm|mp4)(\?|$)/i;
 
 function a(e) {
-    return r.test(e)
+    return l.test(e)
 }

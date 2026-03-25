@@ -15,17 +15,17 @@ var n = r(627968),
     _ = r(692986),
     f = r(822382),
     S = r(753806),
-    E = r(424913),
-    g = r(65600),
+    g = r(424913),
+    E = r(65600),
     p = r(145331),
     A = r(272444),
     m = r(806595),
-    R = r(768570),
-    y = r(652215),
+    y = r(768570),
+    R = r(652215),
     x = r(996316);
-let T = o()("2015-05-15").local();
+let I = o()("2015-05-15").local();
 
-function I(e) {
+function T(e) {
     let {
         items: t,
         navId: r,
@@ -87,12 +87,12 @@ let b = s.forwardRef(function(e, t) {
                 performSearch: r,
                 replace: n,
                 resultsState: a,
-                searchQuerySource: R.Q_.SEARCH_POPOUT
+                searchQuerySource: y.Q_.SEARCH_POPOUT
             }), h(-1)
         }, [a, h]), {
             items: f,
-            itemsData: g
-        } = (0, E.A)({
+            itemsData: E
+        } = (0, g.A)({
             resultsState: a,
             searchContext: r,
             selectedChannel: o,
@@ -102,13 +102,13 @@ let b = s.forwardRef(function(e, t) {
                 newSelectedIndex: t,
                 searchAutocompleteSelectAction: r
             } = e, n = t;
-            return null == n && (n = c), !(n < 0) && !(n > g.length - 1) && (g[n].data.onSelect({
+            return null == n && (n = c), !(n < 0) && !(n > E.length - 1) && (E[n].data.onSelect({
                 searchAutocompleteSelectAction: r,
                 selectedIndex: n
             }), !0)
         }, A = e => {
             let t;
-            (t = c + e) > g.length - 1 ? t = 0 : t < 0 && (t = g.length - 1), h(t)
+            (t = c + e) > E.length - 1 ? t = 0 : t < 0 && (t = E.length - 1), h(t)
         }, m = s.useRef({
             itemsData: [],
             selectedIndex: -1,
@@ -122,23 +122,23 @@ let b = s.forwardRef(function(e, t) {
                 modeType: r,
                 query: n
             } = m.current, s = a.mode.type, l = a.query;
-            if (s !== r) s === y.o$q.FILTER ? h(0) : h(-1);
-            else if (s === y.o$q.FILTER && a.query !== n && g.length > 0) h(0);
-            else if (s === y.o$q.FILTER && 0 === e.length && g.length > 0) h(0);
-            else if (t >= 0 && (t === c || e.length !== g.length)) {
+            if (s !== r) s === R.o$q.FILTER ? h(0) : h(-1);
+            else if (s === R.o$q.FILTER && a.query !== n && E.length > 0) h(0);
+            else if (s === R.o$q.FILTER && 0 === e.length && E.length > 0) h(0);
+            else if (t >= 0 && (t === c || e.length !== E.length)) {
                 let r = e[t],
                     n = r?.data.resultText;
                 if (null != n) {
-                    let e = g.findIndex(e => e.data.resultText === n); - 1 !== e ? h(e) : t >= g.length && h(Math.max(0, g.length - 1))
-                } else t >= g.length && h(Math.max(0, g.length - 1))
+                    let e = E.findIndex(e => e.data.resultText === n); - 1 !== e ? h(e) : t >= E.length && h(Math.max(0, E.length - 1))
+                } else t >= E.length && h(Math.max(0, E.length - 1))
             }
             m.current = {
-                itemsData: g,
+                itemsData: E,
                 selectedIndex: c,
                 modeType: s,
                 query: l
             }
-        }, [g, c, a.mode.type, a.query, h]), s.useImperativeHandle(t, () => ({
+        }, [E, c, a.mode.type, a.query, h]), s.useImperativeHandle(t, () => ({
             selectedIndex: c,
             focusNextOption: () => {
                 A(1)
@@ -156,7 +156,7 @@ let b = s.forwardRef(function(e, t) {
             tabIndex: -1,
             "aria-activedescendant": `${l}-${c}`,
             className: f.length > 0 ? x.kL : void 0,
-            children: (0, n.jsx)(I, {
+            children: (0, n.jsx)(T, {
                 items: f,
                 navId: l,
                 selectedIndex: c
@@ -188,25 +188,25 @@ let b = s.forwardRef(function(e, t) {
                     let t = (0, f.bS)(i);
                     (0, p.kc)({
                         searchContext: i,
-                        searchQuery: g.A.getSearchResultsQuery(t),
+                        searchQuery: E.A.getSearchResultsQuery(t),
                         searchQueryString: S.A.getSearchInputText(i),
                         searchTokenType: l.mode.filter,
-                        searchAutocompleteGroup: y.x2k.DATES,
+                        searchAutocompleteGroup: R.x2k.DATES,
                         searchAutocompleteMode: l.mode,
                         isSearchFilterPrefix: !1,
                         isSearchFilterAnswer: !0,
                         isSearchFilterComplete: !1,
-                        searchAutocompleteSelectAction: R.oi.CLICK
+                        searchAutocompleteSelectAction: y.oi.CLICK
                     }), S.A.setSearchQuery({
-                        query: e.format(y.ump) + " ",
+                        query: e.format(R.ump) + " ",
                         performSearch: !0,
                         replace: !1,
                         resultsState: l,
-                        searchQuerySource: R.Q_.SEARCH_POPOUT
+                        searchQuerySource: y.Q_.SEARCH_POPOUT
                     })
                 },
                 maxDate: o()().local(),
-                minDate: T,
+                minDate: I,
                 calendarClassName: x.BJ
             })
         })

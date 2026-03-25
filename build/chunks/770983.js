@@ -22,8 +22,8 @@ var i = n(627968),
     I = n(594832),
     j = n(631784),
     v = n(672564),
-    T = n(518477),
-    E = n(985018),
+    E = n(518477),
+    T = n(985018),
     b = n(79711);
 
 function N(e) {
@@ -41,17 +41,17 @@ function N(e) {
             j(!0);
             try {
                 await _.A.addSkuToWishlist(n.id, g), a?.({
-                    tabSection: T.RP.WISHLIST
+                    tabSection: E.RP.WISHLIST
                 })
             } catch (e) {
-                (0, c.showToast)((0, c.createToast)(E.intl.string(E.t.F8FvUy), c.ToastType.FAILURE)), r.ORC.announce(E.intl.string(E.t.F8FvUy))
+                (0, c.showToast)((0, c.createToast)(T.intl.string(T.t.F8FvUy), c.ToastType.FAILURE)), r.ORC.announce(T.intl.string(T.t.F8FvUy))
             } finally {
                 j(!1)
             }
         }
     }, [n.id, g, a, A]);
     return (0, i.jsx)(d.un, {
-        title: E.intl.string(E.t["8DkMEQ"]),
+        title: T.intl.string(T.t["8DkMEQ"]),
         body: n.name,
         asset: (0, i.jsx)(m.mW, {
             application: t
@@ -94,13 +94,13 @@ function S(e) {
         isLoading: u,
         recommendations: m,
         applicationIds: x
-    } = e, f = (0, g.A)(x), _ = (0, o.bG)([h.default], () => h.default.getUser(t?.userId)), I = (0, A.GG)("add_to_wishlist_grid"), j = l.useMemo(() => f.reduce((e, t) => (null == t || (e[t.id] = t), e), {}), [f]), T = l.useMemo(() => new Set(t?.items.map(e => e.skuId) ?? []), [t]), E = m.filter(e => !T.has(e.id)).slice(0, d);
+    } = e, f = (0, g.A)(x), _ = (0, o.bG)([h.default], () => h.default.getUser(t?.userId)), I = (0, A.GG)("add_to_wishlist_grid"), j = l.useMemo(() => f.reduce((e, t) => (null == t || (e[t.id] = t), e), {}), [f]), E = l.useMemo(() => new Set(t?.items.map(e => e.skuId) ?? []), [t]), T = m.filter(e => !E.has(e.id)).slice(0, d);
     return u ? (0, i.jsx)("div", {
         className: b.g4,
         children: (0, i.jsx)(p.k, {})
-    }) : 0 === E.length ? null : (0, i.jsx)("ul", {
+    }) : 0 === T.length ? null : (0, i.jsx)("ul", {
         className: s()(b.Vg, c),
-        children: E.map(e => I ? (0, i.jsx)(v.J, {
+        children: T.map(e => I ? (0, i.jsx)(v.J, {
             sku: e,
             wishlistId: t?.id,
             wishlistOwner: _,

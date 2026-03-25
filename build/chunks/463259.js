@@ -23,8 +23,8 @@ var i = n(627968),
     I = n(958338),
     j = n(600761),
     v = n(667049),
-    T = n(605694),
-    E = n(357541),
+    E = n(605694),
+    T = n(357541),
     b = n(236599),
     N = n(192),
     S = n(128988),
@@ -41,7 +41,7 @@ function P(e) {
         widget: t,
         ...n
     } = e;
-    return t instanceof _.R ? (0, i.jsx)(T.A, {
+    return t instanceof _.R ? (0, i.jsx)(E.A, {
         widget: t,
         ...n
     }) : t instanceof A.Yy ? (0, i.jsx)(y.A, {
@@ -80,7 +80,7 @@ function G() {
                 visibleContent: l,
                 markAsDismissed: a
             } = e, s = t.find(e => e.dismissibleContent === l);
-            return null == s ? null : (0, i.jsx)(E.A, {
+            return null == s ? null : (0, i.jsx)(T.A, {
                 user: n,
                 application: s.application,
                 onDismiss: a
@@ -101,8 +101,8 @@ function M(e) {
         }, [e, t, n]), "GB" === e && n
     })(), m = (0, c.JY)({
         location: "UserProfileModalV2Widgets"
-    }), j = 0 === s.length && o, T = l.useMemo(() => s.filter(A.fu), [s]), E = l.useMemo(() => s.filter(e => e instanceof _.R), [s]);
-    (0, I.Y)(o, T), ((e, t) => {
+    }), j = 0 === s.length && o, E = l.useMemo(() => s.filter(A.fu), [s]), T = l.useMemo(() => s.filter(e => e instanceof _.R), [s]);
+    (0, I.Y)(o, E), ((e, t) => {
         let n = l.useMemo(() => t.map(e => e.applicationId), [t]);
         (0, g.A)(n);
         let {
@@ -112,7 +112,7 @@ function M(e) {
         l.useEffect(() => {
             s.current && (s.current = !1, a())
         }, [a])
-    })(t.id, E);
+    })(t.id, T);
     let S = () => (0, i.jsxs)(i.Fragment, {
         children: [o && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(b.A, {

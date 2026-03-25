@@ -26,9 +26,9 @@ function I(e) {
         status: I,
         guildId: j,
         channelId: v,
-        onSelect: T
+        onSelect: E
     } = e, {
-        theme: E,
+        theme: T,
         themeType: b
     } = (0, x.E)(), N = l.useMemo(() => t.isNonUserBot() || (0, u.c)(t, v), [t, v]), {
         activities: S,
@@ -55,7 +55,7 @@ function I(e) {
             }
         },
         className: h.nM,
-        onClick: T,
+        onClick: E,
         onContextMenu: e => {
             (0, r.L3)(e, async () => {
                 let {
@@ -72,7 +72,7 @@ function I(e) {
             "aria-label": t.username,
             size: _,
             status: N ? p.clD.UNKNOWN : I,
-            statusBackdropColor: N ? void 0 : (0, s.C$5)(E),
+            statusBackdropColor: N ? void 0 : (0, s.C$5)(T),
             isMobile: y,
             className: h.my
         }), (0, i.jsxs)("div", {

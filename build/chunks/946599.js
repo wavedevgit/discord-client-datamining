@@ -27,7 +27,7 @@ function f(e) {
         disableInteraction: d = !1
     } = e, f = t?.filter(e => null != (0, m.W3)(e)) ?? [], _ = f.length > 0, A = n && !d && (0, u.mS)(a) && f.length < 20, {
         trackUserProfileAction: v
-    } = (0, c.NJ)(), T = (0, l.useRef)(new Map), E = (0, l.useRef)(null), b = (0, l.useRef)(null), [N, S] = (0, l.useState)(0), [y, C] = (0, l.useState)(!1), R = j(E, b, f, T, S);
+    } = (0, c.NJ)(), E = (0, l.useRef)(new Map), T = (0, l.useRef)(null), b = (0, l.useRef)(null), [N, S] = (0, l.useState)(0), [y, C] = (0, l.useState)(!1), R = j(T, b, f, E, S);
     if ((0, l.useEffect)(() => (R(), window.addEventListener("resize", R), () => {
             window.removeEventListener("resize", R)
         }), [R, f?.join("")]), !_ && !A) return null;
@@ -44,12 +44,12 @@ function f(e) {
                     applicationId: r,
                     widgetType: a,
                     ref: t => {
-                        null != t && T.current.set(e, t)
+                        null != t && E.current.set(e, t)
                     },
                     disableInteraction: d
                 }, e))
             }), N > 0 && (0, i.jsx)(I, {
-                buttonRef: E,
+                buttonRef: T,
                 isExpanded: y,
                 numberOfOverflowingTags: N,
                 onExpandTags: () => {

@@ -22,8 +22,8 @@ var i = n(627968),
     I = n(111085),
     j = n(146423),
     v = n(121700),
-    T = n(460442),
-    E = n(662349),
+    E = n(460442),
+    T = n(662349),
     b = n(479026),
     N = n(699976),
     S = n(652215),
@@ -87,7 +87,7 @@ function O(e) {
         label: D,
         icon: G,
         isPromptingPurchase: M
-    } = (0, E.h)({
+    } = (0, T.h)({
         sku: t.sku,
         wishlistOwner: n,
         isOwned: I,
@@ -109,13 +109,13 @@ function O(e) {
             "aria-label": R.intl.formatToPlainString(R.t.ZBB4Ty, {
                 productName: (0, A.TC)(t.sku)
             }),
-            children: [(0, i.jsx)(E.A, {
+            children: [(0, i.jsx)(T.A, {
                 spec: L,
                 onClick: M ? O : y,
                 isHoveringOrFocusing: g,
                 label: D,
                 icon: G
-            }), I && (0, i.jsx)(T.gS, {
+            }), I && (0, i.jsx)(E.gS, {
                 isHoveringOrFocusing: g
             }), n.id === a.id && null != _ && (0, i.jsx)(v.A, {
                 sku: t.sku,

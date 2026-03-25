@@ -22,8 +22,8 @@ var i = n(627968),
     I = n(692969),
     j = n(207963),
     v = n(953756),
-    T = n(647901),
-    E = n(371068),
+    E = n(647901),
+    T = n(371068),
     b = n(61266),
     N = n(731068),
     S = n(619517),
@@ -286,7 +286,7 @@ function H(e) {
                 children: null != t ? t : (0, i.jsx)("div", {
                     className: D.jC
                 })
-            }), (0, i.jsx)(T.x, {
+            }), (0, i.jsx)(E.x, {
                 color: "muted",
                 children: n
             })]
@@ -336,7 +336,7 @@ function X(e) {
 function V(e) {
     let {
         content: t
-    } = e, n = l.useId(), a = (0, T.X)();
+    } = e, n = l.useId(), a = (0, E.X)();
     return null != t ? (0, i.jsx)(b.A, {
         type: g.I5.TEXT_DISPLAY,
         id: n,
@@ -352,7 +352,7 @@ function z(e) {
         content: t,
         image: n,
         imagePosition: l
-    } = e, a = (0, T.X)(), r = (0, h.c)(n) ? (0, i.jsx)("div", {
+    } = e, a = (0, E.X)(), r = (0, h.c)(n) ? (0, i.jsx)("div", {
         className: s()(D.Sl, a.className),
         "data-position": l,
         children: (0, i.jsx)(S.Ay, {
@@ -382,7 +382,7 @@ function Y(e) {
         size: t = "small",
         divider: n = !1
     } = e, a = l.useId();
-    return (0, i.jsx)(E.A, {
+    return (0, i.jsx)(T.A, {
         type: g.I5.SEPARATOR,
         id: a,
         divider: n,
@@ -425,7 +425,7 @@ function J(e) {
         containerInnerWidth: 396,
         children: (0, i.jsx)(j.f5, {
             applicationWidget: n,
-            children: (0, i.jsx)(T.x, {
+            children: (0, i.jsx)(E.x, {
                 size: "reduced",
                 weight: "reduced",
                 children: (0, i.jsx)("div", {
@@ -475,20 +475,20 @@ let Q = Object.assign(function(e) {
             trackUserProfileAction: v
         } = (0, L.NJ)(),
         {
-            user: T,
-            widget: E,
+            user: E,
+            widget: T,
             cta: b,
             subtle: S = !1
         } = e,
-        G = (0, c.bG)([C.default], () => C.default.getId()) === T.id,
-        F = (0, _.h)(E.applicationId),
+        G = (0, c.bG)([C.default], () => C.default.getId()) === E.id,
+        F = (0, _.h)(T.applicationId),
         W = F?.getIconURL(16),
         H = (0, c.bG)([R.A], () => null != F ? R.A.getGameByApplication(F) : null),
         B = (0, I.A)({
             location: "UserProfileApplicationWidget",
             applicationId: H?.id,
             source: A.Ob.UserProfile,
-            sourceUserId: T.id,
+            sourceUserId: E.id,
             trackEntryPointImpression: !0
         }),
         {
@@ -504,11 +504,11 @@ let Q = Object.assign(function(e) {
         ee = l.useCallback(() => {
             z && (v({
                 action: V ? "PRESS_APPLICATION_WIDGET_LINKED_RECONNECT" : "PRESS_APPLICATION_WIDGET_UNLINKED_CONNECT",
-                applicationId: E.applicationId
+                applicationId: T.applicationId
             }), Y({
                 analyticsLocations: $
             }))
-        }, [z, V, Y, v, E.applicationId, $]),
+        }, [z, V, Y, v, T.applicationId, $]),
         et = null == b && X && !V && z,
         en = null == b && X && V && z && null != Q && !Q.scopes.includes(o.F.APPLICATION_IDENTITIES_WRITE) && !Q.scopes.includes(o.F.SDK_SOCIAL_LAYER) && !Q.scopes.includes(o.F.SDK_SOCIAL_LAYER_PRESENCE),
         ei = (0, i.jsxs)(i.Fragment, {
@@ -539,7 +539,7 @@ let Q = Object.assign(function(e) {
             isLoading: ea,
             hasData: es,
             components: er
-        } = (t = T.id, n = E.applicationId, a = (0, f.A)(), r = (0, c.bG)([y.A], () => y.A.getUserIdentityByApplication(t, n)), g = (0, c.bG)([O.A], () => O.A.getApplicationWidgetConfig(n)), h = (0, c.bG)([y.A, O.A], () => null == y.A.getUserIdentities(t) || null == O.A.applicationWidgetConfigs), j = l.useMemo(() => {
+        } = (t = E.id, n = T.applicationId, a = (0, f.A)(), r = (0, c.bG)([y.A], () => y.A.getUserIdentityByApplication(t, n)), g = (0, c.bG)([O.A], () => O.A.getApplicationWidgetConfig(n)), h = (0, c.bG)([y.A, O.A], () => null == y.A.getUserIdentities(t) || null == O.A.applicationWidgetConfigs), j = l.useMemo(() => {
             var e, t;
             if (null == g) return null;
             let n = M[g.widgetTemplateId];
@@ -615,8 +615,8 @@ let Q = Object.assign(function(e) {
         });
     return null == er ? null : (0, i.jsxs)(w.A, {
         ...e,
-        userId: T.id,
-        widget: E,
+        userId: E.id,
+        widget: T,
         className: s()(D.Y5, S && D.aK),
         headerTitle: el,
         headerClassName: D.wx,
@@ -627,7 +627,7 @@ let Q = Object.assign(function(e) {
             action: B
         }) : null,
         children: [(0, i.jsx)(J, {
-            widget: E,
+            widget: T,
             children: (0, i.jsx)(U, {
                 component: er
             })

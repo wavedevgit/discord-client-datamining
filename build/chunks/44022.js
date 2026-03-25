@@ -16,16 +16,16 @@ var n = r(627968),
     _ = r(311907),
     f = r(397927),
     S = r(442433),
-    E = r(928039),
-    g = r(139286),
+    g = r(928039),
+    E = r(139286),
     p = r(636922),
     A = r(194085),
     m = r(835835),
-    R = r(253932),
-    y = r(576705),
+    y = r(253932),
+    R = r(576705),
     x = r(954571),
-    T = r(203982),
-    I = r(927813),
+    I = r(203982),
+    T = r(927813),
     b = r(164684),
     L = r(704456),
     C = r(85109),
@@ -66,7 +66,7 @@ function H(e) {
     let {
         closePopout: t
     } = e, r = (0, v.A)();
-    return ((0, g.A)({
+    return ((0, E.A)({
         type: d.ImpressionTypes.POPOUT,
         name: d.ImpressionNames.FOR_LATER_LIST_VIEWED,
         properties: {
@@ -91,7 +91,7 @@ function P(e) {
     }, [r, o]), h = s.useCallback(() => {
         c(!o), o ? r?.() : t?.()
     }, [r, t, o]);
-    s.useEffect(() => (T._.subscribe(j.jej.TOGGLE_FOR_LATER, h), () => void T._.unsubscribe(j.jej.TOGGLE_FOR_LATER, h)), [h]);
+    s.useEffect(() => (I._.subscribe(j.jej.TOGGLE_FOR_LATER, h), () => void I._.unsubscribe(j.jej.TOGGLE_FOR_LATER, h)), [h]);
     let S = (0, _.bG)([C.A], () => C.A.hasOverdueReminder(), []);
     return (0, n.jsx)(f.YNO, {
         targetElementRef: u,
@@ -120,9 +120,9 @@ function U(e) {
     let {
         savedMessageKeys: t,
         closePopout: r
-    } = e, l = s.useRef(null), a = (0, E.A)("for-later", l), [i, o] = s.useState(new Date);
+    } = e, l = s.useRef(null), a = (0, g.A)("for-later", l), [i, o] = s.useState(new Date);
     return s.useEffect(() => {
-        let e = setInterval(() => o(new Date), I.A.Millis.MINUTE);
+        let e = setInterval(() => o(new Date), T.A.Millis.MINUTE);
         return () => {
             clearInterval(e)
         }
@@ -164,7 +164,7 @@ function q(e) {
             type: null != t.saveData.dueAt ? N.Yf.REMINDER : N.Yf.BOOKMARK,
             due_duration: null != t.saveData.dueAt ? u()().diff(t.saveData.dueAt) : void 0
         })
-    }, [r, t, i]), c = (0, _.bG)([y.A], () => !!(i?.type === j.rbe.UNKNOWN || i?.isPrivate()) || y.A.can(j.xBc.VIEW_CHANNEL, i));
+    }, [r, t, i]), c = (0, _.bG)([R.A], () => !!(i?.type === j.rbe.UNKNOWN || i?.isPrivate()) || R.A.can(j.xBc.VIEW_CHANNEL, i));
     return null != i && null != t.message && c ? (0, n.jsxs)("div", {
         className: W.zC,
         children: [(0, n.jsx)(f.DUT, {
@@ -180,7 +180,7 @@ function q(e) {
             message: t.message,
             channel: i,
             className: W.iU,
-            compact: R.hH.getSetting(),
+            compact: y.hH.getSetting(),
             animateAvatar: !1,
             focusProps: w,
             trackAnnouncementViews: !0

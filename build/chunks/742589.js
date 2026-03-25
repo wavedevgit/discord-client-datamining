@@ -40,11 +40,10 @@ function E(t) {
         role: L,
         hideSearch: p,
         hideForLater: S,
-        showDivider: R,
-        disableDoubleClick: b
+        disableDoubleClick: R
     } = t, {
-        enabled: N,
-        inInbox: m
+        enabled: b,
+        inInbox: N
     } = s.A.useConfig({
         location: "HeaderBar"
     });
@@ -59,12 +58,12 @@ function E(t) {
                     guildId: a,
                     channelId: l,
                     className: A.$P
-                }, a ?? l) : null, R && (0, i.jsx)(h.Ay.Divider, {}), S || !N || m ? null : (0, i.jsx)(o.A, {})]
+                }, a ?? l) : null, S || !b || N ? null : (0, i.jsx)(o.A, {})]
             })
         }(),
         transparent: u,
         hidden: E,
-        onDoubleClick: () => C(b),
+        onDoubleClick: () => C(R),
         "aria-label": I,
         "aria-labelledby": f,
         role: L,
