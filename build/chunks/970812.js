@@ -27,9 +27,9 @@ let f = "ease-in-out",
     b = [6, 10, 9, 16, 8],
     S = 6.67 / 8,
     R = "M16.5 18H16a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1h-.5v-.5a2.5 2.5 0 0 0-5 0v.5Zm3.5 0v-.5a1 1 0 1 0-2 0v.5h2Z",
-    D = `translate(${12.33-15*S}, ${1-15.5*S}) scale(${S})`;
+    y = `translate(${12.33-15*S}, ${1-15.5*S}) scale(${S})`;
 
-function y(e, t) {
+function D(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : m,
         l = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 2,
         i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : 16;
@@ -53,13 +53,13 @@ let M = {
         },
         states: {
             burst: {
-                getHeights: e => y(e, 4),
+                getHeights: e => D(e, 4),
                 getAnimationDelay: () => C(64, 128),
                 getStateDuration: () => C(3e3, 6e3),
                 getNextState: () => "quiet"
             },
             quiet: {
-                getHeights: e => y(e, 3),
+                getHeights: e => D(e, 3),
                 getAnimationDelay: () => C(64, 128),
                 getStateDuration: () => C(1e3, 3e3),
                 getNextState: () => "burst"
@@ -85,49 +85,49 @@ let M = {
                 getNextState: () => "waveBuildCenter"
             },
             waveBuildCenter: {
-                getHeights: e => y(e, 3, E),
+                getHeights: e => D(e, 3, E),
                 getAnimationDelay: () => C(64, 128),
                 getStateDuration: () => C(32, 64),
                 getNextState: () => "waveBuildRight1"
             },
             waveBuildRight1: {
-                getHeights: e => y(e, 4, N, 1),
+                getHeights: e => D(e, 4, N, 1),
                 getAnimationDelay: () => C(64, 128),
                 getStateDuration: () => C(32, 64),
                 getNextState: () => "waveBuildRight2"
             },
             waveBuildRight2: {
-                getHeights: e => y(e, 4, A, 1),
+                getHeights: e => D(e, 4, A, 1),
                 getAnimationDelay: () => C(64, 128),
                 getStateDuration: () => C(32, 64),
                 getNextState: () => "wavePeakRight"
             },
             wavePeakRight: {
-                getHeights: e => y(e, 4, x, 1),
+                getHeights: e => D(e, 4, x, 1),
                 getAnimationDelay: () => C(64, 128),
                 getStateDuration: () => C(32, 64),
                 getNextState: () => "waveReturnLeft1"
             },
             waveReturnLeft1: {
-                getHeights: e => y(e, 5, T),
+                getHeights: e => D(e, 5, T),
                 getAnimationDelay: () => C(64, 128),
                 getStateDuration: () => C(32, 64),
                 getNextState: () => "waveReturnLeft2"
             },
             waveReturnLeft2: {
-                getHeights: e => y(e, 5, v),
+                getHeights: e => D(e, 5, v),
                 getAnimationDelay: () => C(64, 128),
                 getStateDuration: () => C(32, 64),
                 getNextState: () => "burst"
             },
             burst: {
-                getHeights: e => y(e, 4),
+                getHeights: e => D(e, 4),
                 getAnimationDelay: () => C(64, 128),
                 getStateDuration: () => C(3e3, 6e3),
                 getNextState: () => "quiet"
             },
             quiet: {
-                getHeights: e => y(e, 3),
+                getHeights: e => D(e, 3),
                 getAnimationDelay: () => C(64, 128),
                 getStateDuration: () => C(1e3, 3e3),
                 getNextState: () => "burst"
@@ -142,13 +142,13 @@ let M = {
         },
         states: {
             burst: {
-                getHeights: e => y(e, 7, b),
+                getHeights: e => D(e, 7, b),
                 getAnimationDelay: () => C(64, 128),
                 getStateDuration: () => C(3e3, 6e3),
                 getNextState: () => "quiet"
             },
             quiet: {
-                getHeights: e => y(e, 4, b),
+                getHeights: e => D(e, 4, b),
                 getAnimationDelay: () => C(64, 128),
                 getStateDuration: () => C(1e3, 3e3),
                 getNextState: () => "burst"
@@ -198,30 +198,30 @@ function I(e) {
         }, []),
         b = (0, r.K)(v, .15),
         S = i.useRef([, , , , , ].fill(0)),
-        y = M[f],
+        D = M[f],
         C = !A || !x,
         I = (m - 18) / 2,
-        _ = C ? 0 : y.transitionConfig.durationMs,
+        _ = C ? 0 : D.transitionConfig.durationMs,
         L = i.useRef(null),
         w = i.useMemo(() => ({
             transitionProperty: "transform",
             transitionDuration: `${_}ms`,
-            transitionTimingFunction: y.transitionConfig.timingFunction
-        }), [y.transitionConfig.timingFunction, _]),
+            transitionTimingFunction: D.transitionConfig.timingFunction
+        }), [D.transitionConfig.timingFunction, _]),
         O = i.useMemo(() => ({
             ...w,
             width: 2,
             height: 16,
             backgroundColor: u
         }), [w, u]),
-        G = i.useMemo(() => ({
+        P = i.useMemo(() => ({
             left: I,
             top: (m - 16) / 2,
             width: 18,
             height: 16,
             columnGap: 2
         }), [m, I, 18]),
-        P = i.useCallback(e => {
+        G = i.useCallback(e => {
             let t = L.current;
             if (null == t) return;
             let n = t.children;
@@ -234,10 +234,10 @@ function I(e) {
             }
         }, [L]);
     i.useLayoutEffect(() => {
-        C || P(y.states[y.firstState].getHeights(S.current))
-    }, [P, y, C]), t = i.useRef(y.firstState), n = i.useRef(null), a = !C, i.useEffect(() => {
+        C || G(D.states[D.firstState].getHeights(S.current))
+    }, [G, D, C]), t = i.useRef(D.firstState), n = i.useRef(null), a = !C, i.useEffect(() => {
         if (!a) return;
-        t.current = y.firstState, n.current = null;
+        t.current = D.firstState, n.current = null;
         let e = null,
             l = !1;
         n.current = {
@@ -263,14 +263,14 @@ function I(e) {
                 if (l) return;
                 e = null, i.now = Date.now();
                 let n = t.current,
-                    a = y.states[n];
+                    a = D.states[n];
                 if (null == a) {
-                    t.current = y.firstState, r(0);
+                    t.current = D.firstState, r(0);
                     return
                 }
                 try {
                     let e = a.getHeights(S.current);
-                    P(e)
+                    G(e)
                 } catch (e) {
                     l = !0;
                     return
@@ -278,16 +278,16 @@ function I(e) {
                 if (0 === i.stateEndTime || i.now >= i.stateEndTime) {
                     let e = a.getNextState();
                     t.current = e;
-                    let n = y.states[e];
+                    let n = D.states[e];
                     null != n && s(n)
                 }
                 r(a.getAnimationDelay())
             },
-            c = y.states[t.current];
+            c = D.states[t.current];
         return null != c && s(c), r(0), () => {
             l = !0, o()
         }
-    }, [P, a, y, S]);
+    }, [G, a, D, S]);
     let k = E ? `url(#${N})` : void 0;
     return (0, l.jsx)("span", {
         ref: b,
@@ -313,7 +313,7 @@ function I(e) {
                         children: (0, l.jsx)("div", {
                             ref: L,
                             className: g.Gb,
-                            style: G,
+                            style: P,
                             children: p.map(e => (0, l.jsx)("div", {
                                 className: g.M0,
                                 style: O
@@ -323,7 +323,7 @@ function I(e) {
                 })
             }), E && (0, l.jsx)("path", {
                 d: R,
-                transform: D,
+                transform: y,
                 fill: u,
                 fillRule: "evenodd",
                 clipRule: "evenodd"
@@ -372,7 +372,7 @@ function _(e) {
                 })
             }), s && (0, l.jsx)("path", {
                 d: R,
-                transform: D,
+                transform: y,
                 fill: t,
                 fillRule: "evenodd",
                 clipRule: "evenodd"

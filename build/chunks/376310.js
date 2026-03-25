@@ -34,17 +34,17 @@ function T(e) {
     } = e, {
         name: S,
         emojiId: R,
-        emojiName: D
-    } = t, y = null != T, [C, M] = a.useState(!1), j = (0, u.bG)([m.Ay], () => null != R ? m.Ay.getUsableCustomEmojiById(R) : null), I = y || null != x, _ = (!y || !C) && (null != R || null != D), L = 0 === l, w = a.useRef(null), O = (0, u.bG)([f.A], () => f.A.keyboardModeEnabled), G = (0, i.jsxs)(i.Fragment, {
+        emojiName: y
+    } = t, D = null != T, [C, M] = a.useState(!1), j = (0, u.bG)([m.Ay], () => null != R ? m.Ay.getUsableCustomEmojiById(R) : null), I = D || null != x, _ = (!D || !C) && (null != R || null != y), L = 0 === l, w = a.useRef(null), O = (0, u.bG)([f.A], () => f.A.keyboardModeEnabled), P = (0, i.jsxs)(i.Fragment, {
         children: [_ ? (0, i.jsx)(g.A, {
             className: r()(A.emoji, {
                 [A.small]: L
             }),
             emojiId: R,
-            emojiName: D,
+            emojiName: y,
             animated: !!j?.animated,
             size: "reaction"
-        }) : null, C && y && (0, i.jsx)("div", {
+        }) : null, C && D && (0, i.jsx)("div", {
             className: A.closeCircle,
             children: (0, i.jsx)(d.PGe, {
                 size: "md",
@@ -57,7 +57,7 @@ function T(e) {
             color: "currentColor",
             children: S
         })]
-    }), P = {
+    }), G = {
         key: t.id,
         className: r()(A.pill, {
             [A.disabled]: s,
@@ -81,8 +81,8 @@ function T(e) {
                 })
             }))
         },
-        onMouseEnter: () => y && M(!0),
-        onMouseLeave: () => y && M(!1)
+        onMouseEnter: () => D && M(!0),
+        onMouseLeave: () => D && M(!1)
     }, k = (0, o.rm)(`forum-tag-${t.id}`);
     return I ? (0, i.jsx)(d.DUT, {
         ...k,
@@ -95,11 +95,11 @@ function T(e) {
         }),
         role: "button",
         "aria-pressed": v,
-        ...P,
-        children: G
+        ...G,
+        children: P
     }) : (0, i.jsx)("div", {
-        ...P,
-        children: G
+        ...G,
+        children: P
     })
 }
 
