@@ -21,11 +21,11 @@ var i = n(627968),
     N = n(49999),
     g = n(985018),
     C = n(333354),
-    h = n(468406),
-    p = n(274993),
-    R = n(218924);
+    p = n(468406),
+    h = n(274993),
+    x = n(218924);
 
-function x(e) {
+function R(e) {
     let {
         title: t,
         body: n,
@@ -33,16 +33,16 @@ function x(e) {
         analyticsLocations: r
     } = e, o = (0, l.bG)([c.A], () => c.A.useReducedMotion);
     return (0, i.jsxs)("div", {
-        className: h.kL,
+        className: p.kL,
         children: [(0, i.jsx)("div", {
-            className: h.ZS,
+            className: p.ZS,
             children: (0, i.jsx)("img", {
-                className: h.Sl,
-                src: o ? R.A : p.A,
+                className: p.Sl,
+                src: o ? x.A : h.A,
                 alt: "Boost gem"
             })
         }), (0, i.jsxs)("div", {
-            className: h.Qs,
+            className: p.Qs,
             children: [(0, i.jsx)(s.Heading, {
                 variant: "heading-md/semibold",
                 style: {
@@ -52,7 +52,7 @@ function x(e) {
                 children: t
             }), (0, i.jsx)(s.Text, {
                 color: "text-muted",
-                className: h.rf,
+                className: p.rf,
                 variant: "text-sm/medium",
                 children: n
             })]
@@ -80,7 +80,7 @@ function S(e) {
         })
     }, [t.id]);
     let n = (0, A.A)(t.id);
-    return (0, i.jsx)(x, {
+    return (0, i.jsx)(R, {
         title: g.intl.string(C.default.qGDEON),
         body: g.intl.format(C.default["s+HTdX"], {
             viewAllPerks: e => (0, i.jsx)(s.DUT, {
@@ -119,10 +119,10 @@ function M(e) {
         channel: n
     } = e, a = n.guild_id, r = (0, l.bG)([I.A], () => I.A.getGuild(a), [a]);
     return null == r ? null : (0, i.jsx)(T.A, {
-        contentClassName: h.FG,
-        iconContainerClassName: h.zc,
+        contentClassName: p.FG,
+        iconContainerClassName: p.zc,
         iconNode: (0, i.jsx)(s.XFE, {
-            colorClass: h.Kk
+            colorClass: p.Kk
         }),
         children: (0, i.jsx)(O, {
             boostingPrompt: t,

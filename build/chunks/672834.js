@@ -21,10 +21,10 @@ var i = n(627968),
     N = n(698441),
     g = n(484724),
     C = n(997509),
-    h = n(850131),
-    p = n(31051),
-    R = n(659203),
-    x = n(446028),
+    p = n(850131),
+    h = n(31051),
+    x = n(659203),
+    R = n(446028),
     S = n(302291),
     O = n(282224),
     M = n(976860),
@@ -41,8 +41,8 @@ var i = n(627968),
     F = n(576705),
     B = n(290863),
     H = n(309010),
-    V = n(287809),
-    w = n(977997),
+    w = n(287809),
+    V = n(977997),
     q = n(203982),
     X = n(562153),
     K = n(728458),
@@ -75,10 +75,10 @@ var i = n(627968),
     eN = n(576471),
     eg = n(808821),
     eC = n(933762),
-    eh = n(840233),
-    ep = n(536030),
-    eR = n(912746),
-    ex = n(817253),
+    ep = n(840233),
+    eh = n(536030),
+    ex = n(912746),
+    eR = n(817253),
     eS = n(911726),
     eO = n(904854),
     eM = n(652215),
@@ -147,7 +147,7 @@ let eL = Object.freeze({
                 compact: a
             } = e, {
                 author: r
-            } = t, s = t.getChannelId(), o = (0, l.bG)([V.default], () => V.default.getUser(t.mentions[0]), [t]), c = X.Ay.getName(null, s, o), d = (0, Z.P)({
+            } = t, s = t.getChannelId(), o = (0, l.bG)([w.default], () => w.default.getUser(t.mentions[0]), [t]), c = X.Ay.getName(null, s, o), d = (0, Z.P)({
                 user: r,
                 channelId: s,
                 guildId: n.guild_id,
@@ -158,7 +158,7 @@ let eL = Object.freeze({
                 guildId: n.guild_id,
                 messageId: t.id
             });
-            return n.isThread() ? (0, i.jsx)(eh.A, {
+            return n.isThread() ? (0, i.jsx)(ep.A, {
                 message: t,
                 channel: n,
                 compact: a,
@@ -180,7 +180,7 @@ let eL = Object.freeze({
                 compact: a
             } = e, {
                 author: r
-            } = t, s = t.getChannelId(), o = (0, l.bG)([V.default], () => V.default.getUser(t.mentions[0]), [t]), c = (0, Z.P)({
+            } = t, s = t.getChannelId(), o = (0, l.bG)([w.default], () => w.default.getUser(t.mentions[0]), [t]), c = (0, Z.P)({
                 user: r,
                 channelId: s,
                 guildId: n.guild_id,
@@ -191,7 +191,7 @@ let eL = Object.freeze({
                 guildId: n.guild_id,
                 messageId: t.id
             });
-            return n.isThread() ? (0, i.jsx)(ep.A, {
+            return n.isThread() ? (0, i.jsx)(eh.A, {
                 message: t,
                 channel: n,
                 compact: a,
@@ -219,7 +219,7 @@ let eL = Object.freeze({
             } = e, {
                 id: s,
                 author: o
-            } = t, d = y.default.getId(), u = t.getChannelId(), _ = (0, l.bG)([b.A], () => b.A.isCallActive(u, s), [u, s]), m = (0, l.bG)([w.A], () => w.A.getVoiceState(eM.ME, d)), A = !_ && null != t.call && !t.call.participants.includes(d), E = _ && (null == m || m.channelId !== u), I = a.useCallback(() => c.default.selectVoiceChannel(u), [u]), T = (0, Z.P)({
+            } = t, d = y.default.getId(), u = t.getChannelId(), _ = (0, l.bG)([b.A], () => b.A.isCallActive(u, s), [u, s]), m = (0, l.bG)([V.A], () => V.A.getVoiceState(eM.ME, d)), A = !_ && null != t.call && !t.call.participants.includes(d), E = _ && (null == m || m.channelId !== u), I = a.useCallback(() => c.default.selectVoiceChannel(u), [u]), T = (0, Z.P)({
                 user: o,
                 channelId: u,
                 guildId: r.guild_id,
@@ -314,7 +314,7 @@ let eL = Object.freeze({
                 messageId: t.id
             });
             return (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(ex.A, {
+                children: [(0, i.jsx)(eR.A, {
                     message: t,
                     compact: n,
                     usernameHook: s
@@ -444,7 +444,7 @@ let eL = Object.freeze({
                 onContextMenuThread: _
             })
         },
-        [eM.lAJ.THREAD_STARTER_MESSAGE]: eR.A,
+        [eM.lAJ.THREAD_STARTER_MESSAGE]: ex.A,
         [eM.lAJ.GUILD_INVITE_REMINDER]: void 0,
         [eM.lAJ.AUTO_MODERATION_ACTION]: function(e) {
             let {
@@ -608,7 +608,7 @@ let eL = Object.freeze({
                 usernameHook: l
             })
         },
-        [eM.lAJ.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION]: x.A,
+        [eM.lAJ.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION]: R.A,
         [eM.lAJ.PRIVATE_CHANNEL_INTEGRATION_ADDED]: S.R,
         [eM.lAJ.PRIVATE_CHANNEL_INTEGRATION_REMOVED]: S.d,
         [eM.lAJ.PREMIUM_REFERRAL]: function(e) {
@@ -616,7 +616,7 @@ let eL = Object.freeze({
                 message: t,
                 compact: n
             } = e;
-            return (0, i.jsx)(R.A, {
+            return (0, i.jsx)(x.A, {
                 userTrialOfferId: t.referralTrialOfferId,
                 canRenderReferralEmbed: !0,
                 compact: n
@@ -626,7 +626,7 @@ let eL = Object.freeze({
         [eM.lAJ.CUSTOM_GIFT]: void 0,
         [eM.lAJ.GUILD_GAMING_STATS_PROMPT]: void 0,
         [eM.lAJ.VOICE_HANGOUT_INVITE]: void 0,
-        [eM.lAJ.POLL_RESULT]: h.A,
+        [eM.lAJ.POLL_RESULT]: p.A,
         [eM.lAJ.CHANGELOG]: void 0,
         [eM.lAJ.NITRO_NOTIFICATION]: function(e) {
             let {
@@ -654,7 +654,7 @@ let eL = Object.freeze({
             let {
                 message: t,
                 channel: n
-            } = e, a = t.giftingPrompt, r = (0, l.bG)([V.default], () => V.default.getUser(a?.recipientUserId));
+            } = e, a = t.giftingPrompt, r = (0, l.bG)([w.default], () => w.default.getUser(a?.recipientUserId));
             return null == a || null == r ? null : (0, i.jsx)(J.A, {
                 giftIntentType: a.giftIntentType,
                 recipientUser: r,
@@ -709,7 +709,7 @@ let eL = Object.freeze({
                 channel: n,
                 compact: a
             } = e;
-            return (0, i.jsx)(p.A, {
+            return (0, i.jsx)(h.A, {
                 message: t,
                 channel: n,
                 compact: a

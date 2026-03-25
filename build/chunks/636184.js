@@ -1,6 +1,6 @@
 /** chunk id: 636184 params = (module,exports,require) **/
 n.d(t, {
-    h: () => R
+    h: () => x
 });
 var i = n(627968),
     a = n(64700),
@@ -21,8 +21,8 @@ var i = n(627968),
     N = n(652215),
     g = n(985018),
     C = n(185914),
-    h = n(299148);
-let p = e => {
+    p = n(299148);
+let h = e => {
         let {
             recipient: t,
             status: n,
@@ -77,7 +77,7 @@ let p = e => {
             })]
         })
     },
-    R = e => {
+    x = e => {
         let {
             transitionState: t,
             results: n,
@@ -90,7 +90,7 @@ let p = e => {
         } = a.useContext(c.CZ);
         return null === u ? (0, i.jsx)(d.y$y, {}) : (0, i.jsx)(s.ExpressiveModal, {
             graphic: _.enabled ? {
-                src: h.A,
+                src: p.A,
                 type: "image"
             } : {
                 rive: d.lBW,
@@ -107,7 +107,7 @@ let p = e => {
             transitionState: t,
             children: (0, i.jsx)("div", {
                 className: C.Hz,
-                children: n.map(e => (0, i.jsx)(p, {
+                children: n.map(e => (0, i.jsx)(h, {
                     recipient: e.recipient,
                     status: e.status,
                     onClose: l

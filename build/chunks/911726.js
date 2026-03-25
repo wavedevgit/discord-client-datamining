@@ -20,10 +20,10 @@ var i, a = n(627968),
     N = n(840065),
     g = n(473145),
     C = n(763754),
-    h = n(888675),
-    p = n(921066),
-    R = n(652215),
-    x = n(985018),
+    p = n(888675),
+    h = n(921066),
+    x = n(652215),
+    R = n(985018),
     S = n(811336);
 let O = {
     enter: {
@@ -161,9 +161,9 @@ function F(e) {
             case "exit":
                 return "enter"
         }
-    }(u, E), h = D.includes(E), p = h && "exit" === u, R = l.useCallback(e => {
+    }(u, E), p = D.includes(E), h = p && "exit" === u, x = l.useCallback(e => {
         A(e)
-    }, []), x = l.useCallback(() => {
+    }, []), R = l.useCallback(() => {
         "exit" === u && t?.()
     }, [t, u]), U = l.useCallback(e => {
         d.current = e
@@ -200,7 +200,7 @@ function F(e) {
             })
         }
     }, [I, E, u, r]), l.useEffect(() => {
-        if (h && "leaf_fall" === u) {
+        if (p && "leaf_fall" === u) {
             let e = v[E].leafRotationDirection;
             g.createConfetti({
                 id: `${L}-${(0,c.A)()}`,
@@ -250,7 +250,7 @@ function F(e) {
                 sprite: "TOP_LEFT" === E ? y : b
             })
         }
-    }, [h, g, E, u]), (0, a.jsxs)(a.Fragment, {
+    }, [p, g, E, u]), (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(o.K_, {
             ref: N,
             sprites: k,
@@ -268,12 +268,12 @@ function F(e) {
             children: (0, a.jsx)(_.tvC, {
                 animationRef: U,
                 className: s()(S.oQ, {
-                    [S.EG]: p
+                    [S.EG]: h
                 }),
                 nextScene: C,
                 sceneSegments: O,
-                onScenePlay: R,
-                onSceneComplete: x,
+                onScenePlay: x,
+                onSceneComplete: R,
                 importData: G,
                 pauseWhileUnfocused: !1
             })
@@ -291,12 +291,12 @@ function B(e) {
         } = e,
         c = function(e) {
             switch (e.type) {
-                case R.lAJ.GUILD_BOOST_TIER_1:
-                    return R.TVA.TIER_1;
-                case R.lAJ.GUILD_BOOST_TIER_2:
-                    return R.TVA.TIER_2;
-                case R.lAJ.GUILD_BOOST_TIER_3:
-                    return R.TVA.TIER_3
+                case x.lAJ.GUILD_BOOST_TIER_1:
+                    return x.TVA.TIER_1;
+                case x.lAJ.GUILD_BOOST_TIER_2:
+                    return x.TVA.TIER_2;
+                case x.lAJ.GUILD_BOOST_TIER_3:
+                    return x.TVA.TIER_3
             }
             return null
         }(n),
@@ -305,7 +305,7 @@ function B(e) {
             createMultipleConfettiAt: u,
             addClickListener: A
         } = l.useContext(m.x),
-        [p, O] = l.useState(!1),
+        [h, O] = l.useState(!1),
         M = l.useRef(null),
         {
             reducedMotion: D
@@ -313,20 +313,20 @@ function B(e) {
         P = (0, C.Ay)(n),
         U = P.nick,
         v = s(P);
-    t = null == c || null == r ? d > 1 ? x.intl.format(x.t.yfC9ds, {
+    t = null == c || null == r ? d > 1 ? R.intl.format(R.t.yfC9ds, {
         username: U,
         usernameHook: v,
         numSubscriptions: d
-    }) : x.intl.format(x.t["57St/7"], {
+    }) : R.intl.format(R.t["57St/7"], {
         username: U,
         usernameHook: v
-    }) : d > 1 ? x.intl.format(x.t.PO9uJD, {
+    }) : d > 1 ? R.intl.format(R.t.PO9uJD, {
         username: U,
         usernameHook: v,
         numSubscriptions: d,
         guildName: r.name,
         newTierName: (0, g.gb)(c)
-    }) : x.intl.format(x.t.cUfTTE, {
+    }) : R.intl.format(R.t.cUfTTE, {
         username: U,
         usernameHook: v,
         guildName: r.name,
@@ -334,12 +334,12 @@ function B(e) {
     });
     let j = l.useCallback(() => {
             if (!D.enabled)
-                if (p || 0 !== Math.floor(50 * Math.random())) {
+                if (h || 0 !== Math.floor(50 * Math.random())) {
                     let e = M.current?.getBoundingClientRect();
                     if (null == e) return;
                     u(e.left + e.width / 2, e.top + e.height / 2)
                 } else O(!0)
-        }, [u, D, p]),
+        }, [u, D, h]),
         y = l.useCallback(() => {
             O(!1)
         }, []),
@@ -365,7 +365,7 @@ function B(e) {
                 onMouseEnter: j
             })
         });
-    return (0, a.jsxs)(h.A, {
+    return (0, a.jsxs)(p.A, {
         iconNode: B,
         timestamp: n.timestamp,
         compact: i,
@@ -373,7 +373,7 @@ function B(e) {
             onClick: G,
             className: S.iU,
             children: t
-        }), p ? (0, a.jsx)(E.Ay, {
+        }), h ? (0, a.jsx)(E.Ay, {
             children: (0, a.jsx)("div", {
                 className: S.LK,
                 children: (0, a.jsx)(F, {
@@ -390,11 +390,17 @@ function H(e) {
         message: t,
         guild: n,
         usernameHook: i
-    } = e;
-    return (0, A.n)("UserPremiumGuildSubscription") ? (0, a.jsx)(p.A, {
+    } = e, {
+        enabled: l,
+        compact: r
+    } = A.X.useConfig({
+        location: "UserPremiumGuildSubscription"
+    });
+    return l ? (0, a.jsx)(h.A, {
         message: t,
         guild: n,
-        usernameHook: i
+        usernameHook: i,
+        compact: r
     }) : (0, a.jsx)(B, {
         ...e
     })

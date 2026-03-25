@@ -20,30 +20,30 @@ var i = n(627968),
 function T(e) {
     var t;
     let n, T, f, N, g, C, {
-            message: h,
-            channel: p,
-            compact: R
+            message: p,
+            channel: h,
+            compact: x
         } = e,
-        x = (0, A.K)(h),
-        S = (0, r.yK)([d.default], () => h.call?.participants != null ? h.call.participants.map(e => d.default.getUser(e)).filter(e => null != e).filter(e => e.id !== h.author.id) : [], [h.author.id, h.call]),
+        R = (0, A.K)(p),
+        S = (0, r.yK)([d.default], () => p.call?.participants != null ? p.call.participants.map(e => d.default.getUser(e)).filter(e => null != e).filter(e => e.id !== p.author.id) : [], [p.author.id, p.call]),
         O = (0, r.bG)([o.A], () => o.A.getUserAffinitiesMap(), []),
         M = a.useMemo(() => (0, c.L)(S, O, "VoiceSession - participants"), [S, O]),
-        D = (t = h.author, n = (0, _.P)({
+        D = (t = p.author, n = (0, _.P)({
             user: t,
-            channelId: p.id,
-            guildId: p.guild_id,
-            messageId: h.id
+            channelId: h.id,
+            guildId: h.guild_id,
+            messageId: p.id
         }), T = (0, _.P)({
             user: M[0],
-            channelId: p.id,
-            guildId: p.guild_id,
-            messageId: h.id
+            channelId: h.id,
+            guildId: h.guild_id,
+            messageId: p.id
         }), f = (0, _.P)({
             user: M[1],
-            channelId: p.id,
-            guildId: p.guild_id,
-            messageId: h.id
-        }), N = (0, u.Ay)(h), g = (0, u.d8)(M[0], p), C = (0, u.d8)(M[1], p), null == x ? E.intl.format(E.t["eX6e/3"], {
+            channelId: h.id,
+            guildId: h.guild_id,
+            messageId: p.id
+        }), N = (0, u.Ay)(p), g = (0, u.d8)(M[0], h), C = (0, u.d8)(M[1], h), null == R ? E.intl.format(E.t["eX6e/3"], {
             username: N.nick,
             usernameHook: n(N)
         }) : E.intl.format(E.t.YUbgR8, {
@@ -55,7 +55,7 @@ function T(e) {
             username3: C.nick,
             username3Hook: f(C),
             otherCount: M.length - 1,
-            duration: x
+            duration: R
         }));
     return (0, i.jsx)(m.A, {
         iconNode: (0, i.jsx)(l.HKD, {
@@ -63,8 +63,8 @@ function T(e) {
             color: s.LU0.colors.STATUS_POSITIVE
         }),
         iconContainerClassName: I.z,
-        timestamp: h.timestamp,
-        compact: R,
+        timestamp: p.timestamp,
+        compact: x,
         children: D
     })
 }

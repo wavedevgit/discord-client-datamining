@@ -16,7 +16,7 @@ let d = e => {
         limit: a
     } = e, d = (0, r.bG)([c.A], () => c.A.getRecipientStatus()), u = (0, r.bG)([c.A], () => c.A.getReferralsRemaining()), [_, m] = i.useState(0), [A, E] = i.useState([]), [I, T] = i.useState(!1), [f, N] = i.useState(!1), [g, C] = i.useState(new Map);
     l()(null != u, "Referrals remaining should not be null");
-    let h = async (e, i) => {
+    let p = async (e, i) => {
         if (!I && !f && null != e && 0 !== u) try {
             T(!0);
             let a = [...g.values()];
@@ -40,9 +40,9 @@ let d = e => {
         } finally {
             T(!1)
         }
-    }, p = {
+    }, h = {
         limit: a,
-        getNextRows: h,
+        getNextRows: p,
         getLocalReferrals: async () => {
             let e = new Map;
             for (let [t, n] of d)
@@ -51,19 +51,19 @@ let d = e => {
                     e.set(n.id, n)
                 } C(e), E(Array.from(e.values()))
         }
-    }, R = i.useRef(p);
+    }, x = i.useRef(h);
     return i.useEffect(() => {
-        R.current = p
+        x.current = h
     }), i.useEffect(() => {
         let {
             getNextRows: e,
             limit: t,
             getLocalReferrals: n
-        } = R.current;
+        } = x.current;
         u > 0 ? e(0, t) : n()
     }, [t, u]), {
         eligibleUsers: A,
-        fetchUsers: () => h(_, a),
+        fetchUsers: () => p(_, a),
         hasError: f,
         isFetching: I,
         resendUsers: g

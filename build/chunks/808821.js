@@ -40,25 +40,25 @@ function f(e) {
         } catch (e) {
             return {}
         }
-    }(N.content) : {}, [N]), h = (0, r.bG)([c.A], () => c.A.getMatchingGroupClip(g, C)), p = (0, r.bG)([c.A], () => null != h && null != f && c.A.wasClipSharedInChannel(h.id, f)), {
-        onShareClick: R
-    } = (0, u.A)(f), x = a.useCallback(() => {
-        null != h && null != f && t.messageReference?.message_id != null && R({
-            clips: [h],
+    }(N.content) : {}, [N]), p = (0, r.bG)([c.A], () => c.A.getMatchingGroupClip(g, C)), h = (0, r.bG)([c.A], () => null != p && null != f && c.A.wasClipSharedInChannel(p.id, f)), {
+        onShareClick: x
+    } = (0, u.A)(f), R = a.useCallback(() => {
+        null != p && null != f && t.messageReference?.message_id != null && x({
+            clips: [p],
             messageReference: {
                 channel_id: f,
                 message_id: t.messageReference.message_id
             }
         })
-    }, [h, f, t.messageReference, R]);
-    if (null == N || null == g && null == C || null == h || p) return null;
+    }, [p, f, t.messageReference, x]);
+    if (null == N || null == g && null == C || null == p || h) return null;
     let S = N.attachments.find(e => (0, l.Lt)(e.flags ?? 0, E.sbO.IS_CLIP)),
         O = null;
     if (S?.proxy_url != null) {
         let e = m.A.toURLSafe(S.proxy_url);
         null != e && (e.searchParams.append("format", "webp"), O = e.toString())
     }
-    let M = null != O ? [O, h.thumbnail] : [h.thumbnail];
+    let M = null != O ? [O, p.thumbnail] : [p.thumbnail];
     return (0, i.jsx)(A.A, {
         iconNode: (0, i.jsx)(o.xgA, {
             size: "md",
@@ -73,7 +73,7 @@ function f(e) {
                 variant: "stacked"
             }), (0, i.jsx)(s.$nd, {
                 size: "sm",
-                onClick: x,
+                onClick: R,
                 text: I.intl.string(I.t["5qb8EX"]),
                 icon: o.W4J
             })]

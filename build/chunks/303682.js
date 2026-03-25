@@ -21,10 +21,10 @@ var i, a = n(627968),
     N = n(326084),
     g = n(851746),
     C = n(761546),
-    h = n(972007),
-    p = n(636184),
-    R = n(652215),
-    x = n(985018),
+    p = n(972007),
+    h = n(636184),
+    x = n(652215),
+    R = n(985018),
     S = n(683912);
 let O = e => {
         let {
@@ -32,36 +32,36 @@ let O = e => {
             onClose: n,
             onShare: i
         } = e, r = (0, c.bG)([g.A], () => g.A.getReferralsRemaining()), u = (0, c.bG)([g.A], () => g.A.getHasEligibleFriends()), [m, A] = l.useState(new Map), [E, I] = l.useState(""), N = (0, _.A)(E, 400), {
-            eligibleUsers: p,
+            eligibleUsers: h,
             fetchUsers: O,
             hasError: M,
             isFetching: D,
             resendUsers: P
-        } = (0, h.i)({
+        } = (0, p.i)({
             searchQuery: N,
             selectedUsers: m
-        }), [U, v] = l.useState(!1), L = p.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map);
+        }), [U, v] = l.useState(!1), L = h.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map);
         return null === r ? (0, a.jsx)(d.y$y, {}) : M ? (0, a.jsx)(o.Modal, {
             transitionState: t,
             size: "sm",
-            title: x.intl.string(x.t.lcuio4),
-            subtitle: x.intl.string(x.t["x09+CD"]),
+            title: R.intl.string(R.t.lcuio4),
+            subtitle: R.intl.string(R.t["x09+CD"]),
             onClose: n,
             actions: []
         }) : !1 === u ? (0, a.jsx)(o.Modal, {
             transitionState: t,
             size: "sm",
-            title: x.intl.string(x.t["2YigPp"]),
-            subtitle: x.intl.format(x.t.OOCbz8, {
-                helpdeskArticle: T.A.getArticleURL(R.MVz.REFERRAL_PROGRAM)
+            title: R.intl.string(R.t["2YigPp"]),
+            subtitle: R.intl.format(R.t.OOCbz8, {
+                helpdeskArticle: T.A.getArticleURL(x.MVz.REFERRAL_PROGRAM)
             }),
             onClose: n,
             actions: []
         }) : (0, a.jsx)(o.Modal, {
             size: "md",
             transitionState: t,
-            title: x.intl.string(x.t["2dVCLl"]),
-            subtitle: x.intl.string(x.t.DXgoi2),
+            title: R.intl.string(R.t["2dVCLl"]),
+            subtitle: R.intl.string(R.t.DXgoi2),
             onClose: n,
             input: (0, a.jsx)(d.iS7, {
                 selectionMode: "multiple",
@@ -82,7 +82,7 @@ let O = e => {
                 children: (0, a.jsx)("div", {
                     className: S.c,
                     children: (0, a.jsx)(d.a32, {
-                        placeholder: 0 === m.size ? x.intl.string(x.t.Kd5RaI) : "",
+                        placeholder: 0 === m.size ? R.intl.string(R.t.Kd5RaI) : "",
                         onQueryChange: e => {
                             I(e.target.value)
                         }
@@ -95,7 +95,7 @@ let O = e => {
                         eligibleRecipients: l
                     } = e,
                     r = N.length > 0 && 0 === l.size;
-                return t = !0 === r ? x.intl.string(x.t.wpSqAW) : m.size <= 1 ? x.intl.string(x.t.ItpQxk) : x.intl.format(x.t.iW2stn, {
+                return t = !0 === r ? R.intl.string(R.t.wpSqAW) : m.size <= 1 ? R.intl.string(R.t.ItpQxk) : R.intl.format(R.t.iW2stn, {
                     nTrials: m.size
                 }), (0, a.jsx)("div", {
                     className: s()(S.qr, S.h0),
@@ -131,8 +131,8 @@ let O = e => {
                     isUserDisabled: e => null !== r && 0 !== r && [...m.values()].filter(e => !P.has(e.id)).length >= r && !m.has(e.id) && !P.has(e.id),
                     searchQuery: N,
                     emptySearchContent: {
-                        header: x.intl.string(x.t["8+ywHD"]),
-                        body: x.intl.string(x.t.CgQmY2)
+                        header: R.intl.string(R.t["8+ywHD"]),
+                        body: R.intl.string(R.t.CgQmY2)
                     },
                     className: S.p_
                 })
@@ -150,7 +150,7 @@ let O = e => {
             _ = (0, c.bG)([g.A], () => g.A.getRecipientStatus()),
             [m, A] = l.useState(new Map),
             [I, T] = l.useState(new Map),
-            [f, h] = l.useState(!1);
+            [f, p] = l.useState(!1);
         return l.useEffect(() => {
             (async () => {
                 let e = new Map;
@@ -164,11 +164,11 @@ let O = e => {
         }, [_]), (0, a.jsx)(o.Modal, {
             size: "md",
             transitionState: n,
-            title: x.intl.string(x.t.rKmy8I),
-            subtitle: x.intl.string(x.t.VDlF6o),
+            title: R.intl.string(R.t.rKmy8I),
+            subtitle: R.intl.string(R.t.VDlF6o),
             onClose: i,
             actions: [],
-            actionBarInput: (t = I.size <= 1 ? x.intl.string(x.t.ItpQxk) : x.intl.format(x.t.iW2stn, {
+            actionBarInput: (t = I.size <= 1 ? R.intl.string(R.t.ItpQxk) : R.intl.format(R.t.iW2stn, {
                 nTrials: I.size
             }), (0, a.jsx)("div", {
                 className: s()(S.qr, S.h0),
@@ -179,7 +179,7 @@ let O = e => {
                     size: "md",
                     fullWidth: !0,
                     onClick: async () => {
-                        h(!0), await r([...I.values()]), h(!1)
+                        p(!0), await r([...I.values()]), p(!1)
                     }
                 })
             })),
@@ -206,7 +206,7 @@ let P = e => {
     } = e, r = (0, c.bG)([g.A], () => g.A.getReferralsRemaining()), [s, o] = l.useState(i), [u, _] = l.useState([]), {
         analyticsLocations: E
     } = (0, A.Ay)([m.A.PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL]), T = async e => {
-        I.default.track(R.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED, {
+        I.default.track(x.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED, {
             location_stack: E
         });
         let t = await (0, N.xm)(Object.values(e).map(e => e.id));
@@ -215,7 +215,7 @@ let P = e => {
             status: t.get(e.id)
         }))), o(2)
     };
-    return null === r ? (0, a.jsx)(d.y$y, {}) : 2 === s ? (0, a.jsx)(p.h, {
+    return null === r ? (0, a.jsx)(d.y$y, {}) : 2 === s ? (0, a.jsx)(h.h, {
         transitionState: t,
         isReminderConfirmation: 3 === i,
         results: u,

@@ -1,6 +1,6 @@
 /** chunk id: 660176 params = (module,exports,require) **/
 n.d(t, {
-    A: () => w
+    A: () => V
 });
 var i = n(627968),
     a = n(64700),
@@ -21,10 +21,10 @@ var i = n(627968),
     N = n(137207),
     g = n(997509),
     C = n(916768),
-    h = n(854627),
-    p = n(342296),
-    R = n(734057),
-    x = n(696451),
+    p = n(854627),
+    h = n(342296),
+    x = n(734057),
+    R = n(696451),
     S = n(287809),
     O = n(643204),
     M = n(112758),
@@ -80,7 +80,7 @@ function k(e) {
     let {
         compact: t
     } = e;
-    return (0, i.jsx)(V, {
+    return (0, i.jsx)(w, {
         compact: t,
         header: (0, i.jsxs)(a.Fragment, {
             children: [(0, i.jsx)(m.EpV, {
@@ -104,7 +104,7 @@ function G(e) {
     let {
         compact: t
     } = e;
-    return (0, i.jsx)(V, {
+    return (0, i.jsx)(w, {
         compact: t,
         header: (0, i.jsxs)(a.Fragment, {
             children: [(0, i.jsx)(m.EpV, {
@@ -128,16 +128,16 @@ function F(e) {
     let {
         message: t,
         compact: n
-    } = e, l = S.default.getUser((0, T.ZD)(t)), r = R.A.getBasicChannel(t.channel_id)?.guild_id, s = null != r && null != l ? x.Ay.getMember(r, l.id) : null, {
+    } = e, l = S.default.getUser((0, T.ZD)(t)), r = x.A.getBasicChannel(t.channel_id)?.guild_id, s = null != r && null != l ? R.Ay.getMember(r, l.id) : null, {
         avatarSrc: c,
         avatarDecorationSrc: d,
         eventHandlers: u
-    } = (0, h.A)({
+    } = (0, p.A)({
         userId: l?.id,
         guildId: r,
         size: 12
     }), A = a.useRef(null);
-    return (0, i.jsx)(V, {
+    return (0, i.jsx)(w, {
         compact: n,
         header: (0, i.jsxs)(a.Fragment, {
             children: [(0, i.jsx)(m.Hnu, {
@@ -158,7 +158,7 @@ function F(e) {
                         variant: "text-xs/medium",
                         color: "text-default",
                         children: L.intl.string(L.t.qlFrXW)
-                    }), (0, i.jsx)(p.A, {
+                    }), (0, i.jsx)(h.A, {
                         targetElementRef: A,
                         user: l,
                         guildId: r,
@@ -210,13 +210,13 @@ function B(e) {
         dmsSent: s,
         raidType: c,
         resolvedReason: A
-    } = (0, T.Bk)(t), N = (0, u.bG)([R.A], () => R.A.getChannel(t.channel_id), [t.channel_id]), g = N?.guild_id ?? null, {
+    } = (0, T.Bk)(t), N = (0, u.bG)([x.A], () => x.A.getChannel(t.channel_id), [t.channel_id]), g = N?.guild_id ?? null, {
         shouldShowIncidentActions: C
-    } = (0, E.Li)(g), h = (0, M.Am)(t.author.id, t.channel_id), p = a.useCallback(() => {
+    } = (0, E.Li)(g), p = (0, M.Am)(t.author.id, t.channel_id), h = a.useCallback(() => {
         let e = N?.guild_id;
         null != e && (0, f.is)(t.id, e)
-    }, [t.id, N]), x = c === d.p.DM_RAID, S = x ? m.EpV : m.EF8;
-    return (0, i.jsx)(V, {
+    }, [t.id, N]), R = c === d.p.DM_RAID, S = R ? m.EpV : m.EF8;
+    return (0, i.jsx)(w, {
         compact: n,
         header: (0, i.jsxs)(a.Fragment, {
             children: [(0, i.jsx)(S, {
@@ -225,7 +225,7 @@ function B(e) {
             }), (0, i.jsx)(m.Text, {
                 variant: "text-md/semibold",
                 color: "text-feedback-critical",
-                children: x ? L.intl.string(L.t["8+lHUb"]) : L.intl.string(L.t.xMwcwV)
+                children: R ? L.intl.string(L.t["8+lHUb"]) : L.intl.string(L.t.xMwcwV)
             })]
         }),
         subheader: (0, i.jsxs)("div", {
@@ -271,7 +271,7 @@ function B(e) {
                     textVariant: "text-xs/medium",
                     text: L.intl.string(L.t.DEoVWZ),
                     onClick: e => {
-                        h(e)
+                        p(e)
                     }
                 })]
             }), (0, i.jsx)(y, {}), (0, i.jsx)("div", {
@@ -281,7 +281,7 @@ function B(e) {
                     textVariant: "text-xs/medium",
                     size: "sm",
                     text: (0, T.Oj)(A),
-                    onClick: p
+                    onClick: h
                 })
             })]
         }) : null
@@ -292,12 +292,12 @@ function H(e) {
     let {
         message: t,
         compact: n
-    } = e, l = R.A.getBasicChannel(t.channel_id)?.guild_id, {
+    } = e, l = x.A.getBasicChannel(t.channel_id)?.guild_id, {
         raidDatetime: r,
         decisionId: s,
         suspiciousMentionActivityUntil: c
     } = (0, T.Bk)(t);
-    return (0, i.jsx)(V, {
+    return (0, i.jsx)(w, {
         compact: n,
         header: (0, i.jsxs)(a.Fragment, {
             children: [(0, i.jsx)(m.EpV, {
@@ -353,7 +353,7 @@ function H(e) {
     })
 }
 
-function V(e) {
+function w(e) {
     let {
         compact: t,
         header: n,
@@ -386,7 +386,7 @@ function V(e) {
     })
 }
 
-function w(e) {
+function V(e) {
     let {
         id: t,
         compact: n,

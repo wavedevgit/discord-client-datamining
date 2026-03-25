@@ -21,10 +21,10 @@ var i = n(627968),
     N = n(975412),
     g = n(168186),
     C = n(597929),
-    h = n(589022),
-    p = n(427157),
-    R = n(287809),
-    x = n(486020),
+    p = n(589022),
+    h = n(427157),
+    x = n(287809),
+    R = n(486020),
     S = n(203982),
     O = n(405269),
     M = n(763754),
@@ -80,12 +80,12 @@ function b(e, t, n, a, l, s) {
             className: j.Jx
         })
     });
-    let C = x.Ay.getGuildMemberAvatarURL({
+    let C = R.Ay.getGuildMemberAvatarURL({
             avatar: a.guildMemberAvatar ?? void 0,
             userId: t.id,
             guildId: d?.guild_id ?? ""
         }) ?? void 0,
-        h = () => (function(e) {
+        p = () => (function(e) {
             let {
                 user: t,
                 guildId: n,
@@ -115,15 +115,15 @@ function b(e, t, n, a, l, s) {
             onContextMenu: 1 === n ? N : T,
             ref: s
         }),
-        p = 1 === n ? E : A;
-    return null != l && null != p && null != s ? (0, i.jsx)(_.YNO, {
+        h = 1 === n ? E : A;
+    return null != l && null != h && null != s ? (0, i.jsx)(_.YNO, {
         targetElementRef: s,
         renderPopout: l,
-        shouldShow: p,
+        shouldShow: h,
         position: "right",
         onRequestClose: g,
-        children: h
-    }) : h()
+        children: p
+    }) : p()
 }
 
 function k(e, t, n, a, l) {
@@ -167,18 +167,18 @@ function F(e) {
             analyticsLocations: s,
             newestAnalyticsLocation: c
         } = (0, T.Ay)(I.A.EXECUTED_COMMAND),
-        x = (0, u.bG)([R.default], () => R.default.getCurrentUser()),
+        R = (0, u.bG)([x.default], () => x.default.getCurrentUser()),
         D = a.useRef(null),
         y = a.useRef(null),
-        F = a.useMemo(() => (e, t, a) => (o()(null != t, "ExecutedCommand: user cannot be undefined"), o()(null != x, "ExecutedCommand: currentUser cannot be undefined"), o()(null != l, "ExecutedCommand: channel cannot be undefined"), (0, i.jsx)(h.A, {
+        F = a.useMemo(() => (e, t, a) => (o()(null != t, "ExecutedCommand: user cannot be undefined"), o()(null != R, "ExecutedCommand: currentUser cannot be undefined"), o()(null != l, "ExecutedCommand: channel cannot be undefined"), (0, i.jsx)(p.A, {
             ...e,
             user: t,
-            currentUser: x,
+            currentUser: R,
             guildId: l.guild_id,
             channelId: l.id,
             messageId: n.id,
             newAnalyticsLocations: a
-        })), [x, l, n.id]),
+        })), [R, l, n.id]),
         B = a.useMemo(() => e => (o()(null != l, "ExecutedCommand: channel cannot be null"), (0, i.jsx)(P.A, {
             ...e,
             channel: l,
@@ -186,10 +186,10 @@ function F(e) {
             interactionData: n.interactionData
         })), [l, n.id, n.interactionData]),
         H = (0, g.Am)(n),
-        V = H?.type === m.G4.APPLICATION_COMMAND && null != H.target_user ? new p.A(H.target_user) : null,
-        w = H?.type === m.G4.APPLICATION_COMMAND && null != n.messageReference && null != e.renderTargetMessage,
+        w = H?.type === m.G4.APPLICATION_COMMAND && null != H.target_user ? new h.A(H.target_user) : null,
+        V = H?.type === m.G4.APPLICATION_COMMAND && null != n.messageReference && null != e.renderTargetMessage,
         q = (0, M.d8)(n.interaction?.user, l),
-        X = (0, M.d8)(V, l),
+        X = (0, M.d8)(w, l),
         K = a.useMemo(() => e.compact ? (0, U.A)((0, O.i$)(d()(), "LT")) : null, [e.compact]),
         Y = (0, A.Gp)(l.id),
         z = n.interaction;
@@ -276,13 +276,13 @@ function F(e) {
                 children: t
             }, "command")
         }
-    }), w && null != e.renderTargetMessage ? t = (0, i.jsxs)(i.Fragment, {
+    }), V && null != e.renderTargetMessage ? t = (0, i.jsxs)(i.Fragment, {
         children: [t, (0, i.jsx)(G, {}), e.renderTargetMessage()]
-    }) : null != V && (t = (0, i.jsxs)(i.Fragment, {
+    }) : null != w && (t = (0, i.jsxs)(i.Fragment, {
         children: [t, (0, i.jsx)(G, {}), (0, i.jsx)(() => {
-            if (null == V) return null;
-            let t = b(e, V, 1, X, e => F(e, V, [I.A.AVATAR]), D),
-                n = k(e, V, 1, X, e => F(e, V));
+            if (null == w) return null;
+            let t = b(e, w, 1, X, e => F(e, w, [I.A.AVATAR]), D),
+                n = k(e, w, 1, X, e => F(e, w));
             return (0, i.jsxs)(a.Fragment, {
                 children: [t, n]
             }, "target")

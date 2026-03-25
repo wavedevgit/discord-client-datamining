@@ -21,10 +21,10 @@ var i = n(627968),
     N = n(522871),
     g = n(699352),
     C = n(715628),
-    h = n(752636),
-    p = n(675722),
-    R = n(268719),
-    x = n(234957),
+    p = n(752636),
+    h = n(675722),
+    x = n(268719),
+    R = n(234957),
     S = n(652215),
     O = n(119907);
 let M = a.memo(function(e) {
@@ -45,14 +45,14 @@ let M = a.memo(function(e) {
     } = e, k = t.type === S.lAJ.POLL_RESULT || (e.disableInteraction ?? !1), G = t.isFirstMessageInForumPost(P), F = (0, d.S)((t.editedTimestamp ?? t.timestamp).valueOf()), {
         content: B,
         hasSpoilerEmbeds: H,
-        hasBailedAst: V
+        hasBailedAst: w
     } = (0, f.A)(t, {
         hideSimpleEmbedContent: D,
         allowList: G || F,
         allowHeading: G || F,
         allowLinks: !0,
         previewLinkTarget: !0
-    }), w = t.type === S.lAJ.REPLY ? t.messageReference : void 0, q = (0, o.bG)([u.A], () => u.A.getMessageByReference(w)), X = (0, s.rm)(t.id), K = (0, E.Ay)(t), Y = (0, o.bG)([_.A], () => t.hasFlag(S.pr7.HAS_THREAD) && _.A.getChannel(m.default.castMessageIdAsChannelId(t.id))), z = (0, c.$7)({
+    }), V = t.type === S.lAJ.REPLY ? t.messageReference : void 0, q = (0, o.bG)([u.A], () => u.A.getMessageByReference(V)), X = (0, s.rm)(t.id), K = (0, E.Ay)(t), Y = (0, o.bG)([_.A], () => t.hasFlag(S.pr7.HAS_THREAD) && _.A.getChannel(m.default.castMessageIdAsChannelId(t.id))), z = (0, c.$7)({
         guildId: P.guild_id,
         roleId: K.iconRoleId
     }), J = (0, N.A)({
@@ -67,17 +67,17 @@ let M = a.memo(function(e) {
             [O.XN]: k
         }),
         disableInteraction: k,
-        childrenRepliedMessage: (0, x.A)(t, P, w, q, n),
-        childrenExecutedCommand: (0, R.A)(t, P, n),
-        childrenHeader: (0, h.A)({
+        childrenRepliedMessage: (0, R.A)(t, P, V, q, n),
+        childrenExecutedCommand: (0, x.A)(t, P, n),
+        childrenHeader: (0, p.A)({
             ...e,
             guildId: P.guild_id,
             author: K,
             roleIcon: z
         }),
-        childrenAccessories: e.hideAccessories ? void 0 : (0, g.J)(e, H, V),
+        childrenAccessories: e.hideAccessories ? void 0 : (0, g.J)(e, H, w),
         childrenMessageContent: (0, C.A)(e, B),
-        childrenSystemMessage: (0, p.A)({
+        childrenSystemMessage: (0, h.A)({
             ...e,
             disableInteraction: k
         }),

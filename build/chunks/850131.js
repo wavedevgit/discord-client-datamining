@@ -1,6 +1,6 @@
 /** chunk id: 850131 params = (module,exports,require) **/
 n.d(t, {
-    A: () => R
+    A: () => x
 });
 var i = n(627968),
     a = n(64700),
@@ -56,7 +56,7 @@ function C(e) {
     }) : null
 }
 
-function h(e) {
+function p(e) {
     let t, {
             type: n,
             ...a
@@ -122,7 +122,7 @@ function h(e) {
     })
 }
 
-function p(e) {
+function h(e) {
     let {
         className: t,
         data: n,
@@ -149,7 +149,7 @@ function p(e) {
         children: [(0, i.jsx)(C, {
             hasNoVotes: "NO_VOTES" === s.type,
             victorEmoji: n.victorEmoji
-        }), (0, i.jsx)(h, {
+        }), (0, i.jsx)(p, {
             ...s
         }), null != l && (0, i.jsx)(c.Button, {
             size: "sm",
@@ -160,7 +160,7 @@ function p(e) {
     })
 }
 
-function R(e) {
+function x(e) {
     let {
         message: t,
         channel: n,
@@ -171,14 +171,14 @@ function R(e) {
         channelId: n.id,
         guildId: n.guild_id,
         messageId: t.id
-    }), h = t.messageReference, R = a.useCallback(() => {
-        null != h && d.A.jumpToMessage({
-            channelId: h.channel_id,
-            messageId: h.message_id,
+    }), p = t.messageReference, x = a.useCallback(() => {
+        null != p && d.A.jumpToMessage({
+            channelId: p.channel_id,
+            messageId: p.message_id,
             flash: !0,
             returnMessageId: t.id
         })
-    }, [t.id, h]);
+    }, [t.id, p]);
     return null == u ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(A.A, {
             iconNode: (0, i.jsx)(c.YRe, {
@@ -190,12 +190,12 @@ function R(e) {
                 username: g.nick,
                 usernameHook: C(g),
                 title: I,
-                titleOnClick: R
+                titleOnClick: x
             })
-        }), (0, i.jsx)(p, {
+        }), (0, i.jsx)(h, {
             className: N.E6,
             data: u,
-            onClickPollLink: r ? void 0 : R
+            onClickPollLink: r ? void 0 : x
         })]
     })
 }

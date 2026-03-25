@@ -63,18 +63,18 @@ function I(e) {
         channelId: T,
         guildId: n.guild_id,
         messageId: t.id
-    })(N), C = (0, s.d8)(f, n), h = (0, o.P)({
+    })(N), C = (0, s.d8)(f, n), p = (0, o.P)({
         user: f,
         channelId: T,
         guildId: n.guild_id,
         messageId: t.id
-    })(C), p = m[A] ?? null;
-    if (null == p) return null;
-    let R = _.intl.format(p(), {
+    })(C), h = m[A] ?? null;
+    if (null == h) return null;
+    let x = _.intl.format(h(), {
         actorName: I.nick,
         actorHook: g,
         targetName: C?.nick,
-        targetHook: h
+        targetHook: p
     });
     return (0, i.jsx)(c.A, {
         iconNode: (0, i.jsx)(E, {
@@ -82,7 +82,7 @@ function I(e) {
         }),
         timestamp: t.timestamp,
         compact: a,
-        children: R
+        children: x
     })
 }
 

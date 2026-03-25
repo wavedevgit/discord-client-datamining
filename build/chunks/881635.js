@@ -17,13 +17,14 @@ function _(e) {
         guild: t,
         analyticsLocation: n,
         analyticsLocations: _,
-        closeLayer: m
-    } = e, [A, E] = a.useState(!1), {
-        analyticsLocations: I
-    } = (0, s.Ay)(_ ?? []), T = (0, l.bG)([o.default], () => o.default.getCurrentUser()), f = T?.isPremiumGroupMember();
-    async function N() {
-        E(!0), await (0, c.g)({
-            analyticsLocations: I,
+        closeLayer: m,
+        variant: A = "expressive"
+    } = e, [E, I] = a.useState(!1), {
+        analyticsLocations: T
+    } = (0, s.Ay)(_ ?? []), f = (0, l.bG)([o.default], () => o.default.getCurrentUser()), N = f?.isPremiumGroupMember();
+    async function g() {
+        I(!0), await (0, c.g)({
+            analyticsLocations: T,
             analyticsLocation: {
                 object: d.ZSU.BUTTON_CTA,
                 objectType: d.AnalyticsObjectTypes.BUY,
@@ -32,17 +33,17 @@ function _(e) {
             guild: t,
             closeLayer: m,
             onClose: () => {
-                E(!1)
+                I(!1)
             }
         })
     }
     return (0, i.jsx)(r.Button, {
-        variant: "expressive",
+        variant: A,
         size: "md",
         icon: r._Jp,
         text: u.intl.string(u.t.gKmQ1G),
-        onClick: N,
-        loading: A,
-        disabled: f
+        onClick: g,
+        loading: E,
+        disabled: N
     })
 }

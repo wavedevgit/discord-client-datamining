@@ -21,10 +21,10 @@ var i = n(627968),
     N = n(954571),
     g = n(405269),
     C = n(975571),
-    h = n(927578),
-    p = n(580630),
-    R = n(851746),
-    x = n(259297),
+    p = n(927578),
+    h = n(580630),
+    x = n(851746),
+    R = n(259297),
     S = n(727949),
     O = n(664654),
     M = n(303682),
@@ -80,7 +80,7 @@ class b extends a.Component {
         }) : this.offerExpired ? null : L.intl.string(L.t.lQLlOb)
     }
     renderActions() {
-        let e = this.currentUser.id !== this.trialOffer.user_id || (0, h.TW)(this.currentUser) || !this.currentUser.verified || (0, P.P)(this.trialOffer),
+        let e = this.currentUser.id !== this.trialOffer.user_id || (0, p.TW)(this.currentUser) || !this.currentUser.verified || (0, P.P)(this.trialOffer),
             t = this.renderExpirationDate();
         return (0, i.jsxs)("div", {
             className: j.UD,
@@ -162,30 +162,30 @@ class b extends a.Component {
                 children: [(0, i.jsx)(D.A, {
                     subscriptionTier: U.pe.TIER_2,
                     buttonTextOverride: (() => {
-                        switch (x.$.getConfig({
+                        switch (R.$.getConfig({
                                 location: "ReferralTrialEmbed"
                             }).variation) {
-                            case x.Y.CONTROL:
+                            case R.Y.CONTROL:
                                 return L.intl.string(L.t.O0etsF);
-                            case x.Y.VARIANT_1:
+                            case R.Y.VARIANT_1:
                                 return L.intl.string(L.t.m7EEMb);
-                            case x.Y.VARIANT_2: {
+                            case R.Y.VARIANT_2: {
                                 let e = (0, o.TW)(L.intl.currentLocale);
                                 return L.intl.format(L.t["+KbxV6"], {
-                                    fixedTrialCost: (0, p.$g)(0, e)
+                                    fixedTrialCost: (0, h.$g)(0, e)
                                 })
                             }
-                            case x.Y.VARIANT_3:
+                            case R.Y.VARIANT_3:
                                 return L.intl.string(L.t["6TzrER"]);
-                            case x.Y.VARIANT_4:
+                            case R.Y.VARIANT_4:
                                 return L.intl.string(L.t.UZe3YC);
-                            case x.Y.VARIANT_5:
+                            case R.Y.VARIANT_5:
                                 return L.intl.string(L.t.cLVMi9);
-                            case x.Y.VARIANT_6:
+                            case R.Y.VARIANT_6:
                                 return L.intl.string(L.t.ACQTfp);
-                            case x.Y.VARIANT_7:
+                            case R.Y.VARIANT_7:
                                 return L.intl.string(L.t["2P1J0w"]);
-                            case x.Y.VARIANT_8:
+                            case R.Y.VARIANT_8:
                                 return L.intl.string(L.t.dRoPcT)
                         }
                     })(),
@@ -280,11 +280,11 @@ function k(e) {
         trialOffer: l,
         isResolving: r,
         referralsSent: o
-    } = (0, c.cf)([R.A], () => ({
-        trialOffer: n ? R.A.getRelevantUserTrialOffer(t) : null,
-        isResolving: !!n && R.A.isResolving(t),
-        referralsSent: R.A.getRecipientStatus()
-    }), [n, t]), d = T.default.getCurrentUser(), u = (0, c.bG)([T.default], () => null != l && (0, h.TW)(void 0 !== d && l.user_id === d.id ? d : T.default.getUser(l.user_id))), E = (0, c.bG)([f.A], () => u ? f.A.getPremiumTypeSubscription()?.trialEndsAt : null), {
+    } = (0, c.cf)([x.A], () => ({
+        trialOffer: n ? x.A.getRelevantUserTrialOffer(t) : null,
+        isResolving: !!n && x.A.isResolving(t),
+        referralsSent: x.A.getRecipientStatus()
+    }), [n, t]), d = T.default.getCurrentUser(), u = (0, c.bG)([T.default], () => null != l && (0, p.TW)(void 0 !== d && l.user_id === d.id ? d : T.default.getUser(l.user_id))), E = (0, c.bG)([f.A], () => u ? f.A.getPremiumTypeSubscription()?.trialEndsAt : null), {
         analyticsLocations: I
     } = (0, A.Ay)(m.A.SHARE_NITRO_EMBED);
     return r ? (0, i.jsx)(_.Wb, {
