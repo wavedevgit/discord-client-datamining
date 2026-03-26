@@ -31,11 +31,8 @@ function N(e) {
         userId: N,
         isSelf: b = !1,
         analyticsSource: S,
-        onAction: T,
-        className: v,
-        iconClassName: y,
-        textClassName: j
-    } = e, R = (0, l.bG)([u.A], () => u.A.getVoiceChannelId() === n.id, [n]), O = (0, l.bG)([d.A], () => d.A.can(C.xBc.CONNECT, n), [n]), L = null == t.emoji || (0, p.n)(t.emoji, n);
+        onAction: T
+    } = e, v = (0, l.bG)([u.A], () => u.A.getVoiceChannelId() === n.id, [n]), y = (0, l.bG)([d.A], () => d.A.can(C.xBc.CONNECT, n), [n]), j = null == t.emoji || (0, p.n)(t.emoji, n);
     s.useEffect(() => {
         h.default.track(C.HAw.VIEW_HANG_STATUS, {
             source: S,
@@ -43,16 +40,16 @@ function N(e) {
             ...(0, g.A)(n.id)
         })
     }, [S, n.id, N]);
-    let M = s.useCallback(() => {
-            !R && O && (c.default.selectVoiceChannel(n.id), T?.(), h.default.track(C.HAw.HANG_STATUS_CTA_CLICKED, {
+    let R = s.useCallback(() => {
+            !v && y && (c.default.selectVoiceChannel(n.id), T?.(), h.default.track(C.HAw.HANG_STATUS_CTA_CLICKED, {
                 source: S,
                 ...(0, g.A)(n.id),
                 other_user_id: N,
                 cta_type: "join"
             }))
-        }, [R, O, n.id, N, S, T]),
-        D = s.useCallback(() => {
-            if (!R || !L || null == t.state) return;
+        }, [v, y, n.id, N, S, T]),
+        O = s.useCallback(() => {
+            if (!v || !j || null == t.state) return;
             let [e] = (0, _.e)(N, t.state);
             if (null != e) {
                 if (e === x.Kk.CUSTOM) {
@@ -66,38 +63,38 @@ function N(e) {
                     cta_type: "swipe"
                 })
             }
-        }, [R, L, t, n.id, N, S, T]),
-        G = (0, m.Au)(N, t);
+        }, [v, j, t, n.id, N, S, T]),
+        L = (0, m.Au)(N, t);
     return (0, i.jsxs)("div", {
-        className: v ?? I.kL,
+        className: I.kL,
         children: [(0, i.jsx)(f.A, {
             userId: N,
             size: 32,
-            className: y ?? I.Kk,
+            className: I.Kk,
             hangStatusActivity: t
         }), (0, i.jsx)(o.Text, {
             variant: "text-md/medium",
-            className: j ?? I.qS,
+            className: I.qS,
             children: (0, i.jsx)(r.A, {
                 delay: 0,
-                children: G
+                children: L
             })
-        }), R && !b ? (0, i.jsx)(a.m_, {
-            text: L ? void 0 : E.intl.string(E.t["0LMpW+"]),
+        }), v && !b ? (0, i.jsx)(a.m_, {
+            text: j ? void 0 : E.intl.string(E.t["0LMpW+"]),
             children: (0, i.jsx)("div", {
                 children: (0, i.jsx)(o.Button, {
                     size: "sm",
                     variant: "secondary",
                     text: E.intl.string(E.t["0eHzpm"]),
-                    onClick: D,
-                    disabled: !L
+                    onClick: O,
+                    disabled: !j
                 })
             })
-        }) : !b && O && (0, i.jsx)(o.Button, {
+        }) : !b && y && (0, i.jsx)(o.Button, {
             size: "sm",
             variant: "secondary",
             text: E.intl.string(E.t["B/dHXL"]),
-            onClick: M
+            onClick: R
         })]
     })
 }

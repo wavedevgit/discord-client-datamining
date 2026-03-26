@@ -35,8 +35,8 @@ function m(e) {
 
 function A(e) {
     let {
-        guildId: l,
-        onChangeGuildId: t,
+        selectedGuildId: l,
+        onSelectGuildId: t,
         onClose: n,
         className: A
     } = e;

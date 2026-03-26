@@ -22,8 +22,8 @@ function g(e) {
         user: l,
         currentUser: t,
         guildId: g,
-        originGuildId: h,
-        channelId: f,
+        originGuildId: f,
+        channelId: h,
         displayProfile: j,
         relationshipType: I,
         onClose: v
@@ -31,8 +31,8 @@ function g(e) {
         newestAnalyticsLocation: y
     } = (0, s.Ay)(), E = (0, r.A)({
         user: l,
-        guildId: h,
-        channelId: f,
+        guildId: f,
+        channelId: h,
         displayProfile: j,
         onClose: v
     }), {

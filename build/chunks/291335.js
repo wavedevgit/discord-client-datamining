@@ -17,8 +17,8 @@ var n = t(503698),
     p = t(967198),
     x = t(183555),
     g = t(488995),
-    h = t(985018),
-    f = t(882119);
+    f = t(985018),
+    h = t(882119);
 
 function j(e) {
     let {
@@ -29,7 +29,7 @@ function j(e) {
     } = e, a = (0, d.VW)(l, t);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
-            className: f.k_,
+            className: h.k_,
             children: null != l.application.bot ? (0, i.jsx)(o.A, {
                 user: new A.A(l.application.bot),
                 size: r._3J.SIZE_16
@@ -38,9 +38,9 @@ function j(e) {
                 size: "sm"
             })
         }), (0, i.jsxs)("div", {
-            className: f.Hd,
+            className: h.Hd,
             children: [(0, i.jsxs)(r.DUT, {
-                className: f.OB,
+                className: h.OB,
                 onClick: () => {
                     n?.(), (0, c.transitionToGlobalDiscovery)({
                         tab: g.GlobalDiscoveryTab.APPS,
@@ -64,13 +64,13 @@ function j(e) {
                 }) : null, (0, i.jsx)(r.Text, {
                     variant: "text-xxs/normal",
                     color: "text-default",
-                    className: f.nk,
-                    children: h.intl.format(h.t.zIT9YA, {
+                    className: h.nk,
+                    children: f.intl.format(f.t.zIT9YA, {
                         applicationHook: () => l.application.name
                     })
                 })]
             }), null != a && a.length > 0 ? (0, i.jsx)("div", {
-                className: f.yu,
+                className: h.yu,
                 children: a
             }) : null]
         })]
@@ -86,9 +86,9 @@ function I(e) {
         trackUserProfileAction: r
     } = (0, x.NJ)(), o = (0, a.bG)([m.default], () => m.default.locale), d = (0, a.bG)([p.A], () => p.A.getGuildId());
     return 0 === l.length ? null : (0, i.jsx)("ul", {
-        className: s()(f.kL, t),
+        className: s()(h.kL, t),
         children: l.map((e, l) => (0, i.jsx)("li", {
-            className: f.FI,
+            className: h.FI,
             children: (0, i.jsx)(j, {
                 applicationRoleConnection: e,
                 locale: o,

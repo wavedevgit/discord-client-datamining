@@ -1,6 +1,6 @@
 /** chunk id: 513265 params = (module,exports,require) **/
 t.d(l, {
-    A: () => f
+    A: () => h
 });
 var i = t(627968),
     n = t(64700),
@@ -51,7 +51,7 @@ let g = {
             type: d.ToastType.FAILURE
         }
     },
-    h = e => {
+    f = e => {
         let {
             message: l,
             icon: t,
@@ -70,17 +70,16 @@ let g = {
             })]
         })
     },
-    f = e => {
+    h = e => {
         let {
-            className: l,
-            onAutoHide: t
-        } = e, s = (0, u.fu)(), m = (0, o.bG)([c.A], () => c.A.useReducedMotion), [A, x] = n.useState(!1), [f, j] = n.useState(null);
+            className: l
+        } = e, t = (0, u.fu)(), s = (0, o.bG)([c.A], () => c.A.useReducedMotion), [m, A] = n.useState(!1), [x, h] = n.useState(null);
         n.useEffect(() => {
-            null !== s ? (x(!0), j(g[s]), d.ORC.announce(g[s].message)) : x(!1)
-        }, [s]);
-        let I = (0, d.pnh)(A, {
+            null !== t ? (A(!0), h(g[t]), d.ORC.announce(g[t].message)) : A(!1)
+        }, [t]);
+        let j = (0, d.pnh)(m, {
             from: {
-                transform: m ? "translateY(0)" : "translateY(-12px)",
+                transform: s ? "translateY(0)" : "translateY(-12px)",
                 opacity: 0
             },
             enter: {
@@ -88,7 +87,7 @@ let g = {
                 opacity: 1
             },
             leave: {
-                transform: m ? "translateY(0)" : "translateY(-12px)",
+                transform: s ? "translateY(0)" : "translateY(-12px)",
                 opacity: 0
             },
             config: {
@@ -98,19 +97,19 @@ let g = {
                 clamp: !0
             }
         }, "animate-always");
-        return n.useEffect(() => {
-            if (A) {
+        return n.useEffect(() => () => (0, u.XA)(null), []), n.useEffect(() => {
+            if (m) {
                 let e = setTimeout(() => {
-                    t?.()
+                    (0, u.XA)(null)
                 }, 2e3);
                 return () => clearTimeout(e)
             }
-        }, [A, t]), (0, i.jsx)(i.Fragment, {
-            children: I((e, t) => t && null !== f && (0, i.jsx)(r.animated.div, {
+        }, [m]), (0, i.jsx)(i.Fragment, {
+            children: j((e, t) => t && null !== x && (0, i.jsx)(r.animated.div, {
                 className: a()(l, p.Jt),
                 style: e,
-                children: (0, i.jsx)(h, {
-                    ...f
+                children: (0, i.jsx)(f, {
+                    ...x
                 })
             }))
         })
