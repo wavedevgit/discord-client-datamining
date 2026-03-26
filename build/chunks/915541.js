@@ -1,4 +1,5 @@
 /** chunk id: 915541 params = (module,exports,require) **/
+"use strict";
 e.exports = {
     Wm: "dropdown_edf232",
     wx: "header_edf232",

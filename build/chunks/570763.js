@@ -26,8 +26,8 @@ var i = n(627968),
     S = n(178629),
     x = n(701508),
     v = n(979590),
-    b = n(153527),
-    y = n(783531),
+    y = n(153527),
+    b = n(783531),
     O = n(334465),
     L = n(318346),
     R = n(151252),
@@ -162,7 +162,7 @@ function ep(e) {
     }, []);
     return (0, i.jsxs)(ee.X.Provider, {
         value: u,
-        children: [l, (0, i.jsxs)(y.A, {
+        children: [l, (0, i.jsxs)(b.A, {
             onScroll: d,
             ref: u,
             children: [function() {
@@ -195,7 +195,7 @@ let eE = function(e) {
         topLevelRoute: t
     } = e, n = (0, s.zy)(), l = (0, s.W6)(), _ = a.useMemo(() => (0, O.B)(n.pathname, ei.BVt.QUEST_HOME_DEPRECATED)?.isExact === !0, [n.pathname]), C = (0, c.bG)([E.A], () => E.A.getState("quests")), {
         selectedTab: v,
-        onSelectTab: y,
+        onSelectTab: b,
         tabs: D
     } = (0, et.J)({
         withClaimedQuestsTab: !_
@@ -307,8 +307,8 @@ let eE = function(e) {
                 hash: void 0
             }), eo.current?.scrollToTop({
                 animate: !1
-            }), y(e)
-        }, [l, y]);
+            }), b(e)
+        }, [l, b]);
     return (0, i.jsx)(X.M.Provider, {
         value: {
             onAssetLoadComplete: W
@@ -339,7 +339,7 @@ let eE = function(e) {
                             onLoadComplete: W
                         })
                     }),
-                    header: (0, i.jsx)(b.S, {
+                    header: (0, i.jsx)(y.S, {
                         selectedTabId: v,
                         handleTransition: eA,
                         tabs: D,
@@ -404,7 +404,7 @@ let eE = function(e) {
                             })]
                         })
                     }),
-                    header: (0, i.jsx)(b.S, {
+                    header: (0, i.jsx)(y.S, {
                         selectedTabId: v,
                         handleTransition: eA,
                         tabs: D,

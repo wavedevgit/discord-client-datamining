@@ -18,8 +18,8 @@ var i = n(627968),
     A = n(47167),
     m = n(713654),
     p = n(932001),
-    g = n(263063),
-    _ = n(394953),
+    _ = n(263063),
+    g = n(394953),
     f = n(976860),
     x = n(622543),
     C = n(576622),
@@ -103,8 +103,8 @@ function U(e) {
         handleContextMenu: u,
         handleParentClick: h,
         handleParentContextMenu: p,
-        renderFollowButton: g
-    } = e, _ = (0, m.gU)(t, a), {
+        renderFollowButton: _
+    } = e, g = (0, m.gU)(t, a), {
         prefix: f,
         level: x
     } = function(e, t) {
@@ -166,23 +166,23 @@ function U(e) {
         case O.rbe.GUILD_MEDIA:
             return null != t.linkedLobby ? (0, i.jsxs)(G, {
                 channel: t,
-                children: [w(_, t.type === O.rbe.GUILD_ANNOUNCEMENT ? M.intl.string(M.t.l1dkSD) : M.intl.string(M.t.Pnajj0)), (0, i.jsx)(j.A.Title, {
+                children: [w(g, t.type === O.rbe.GUILD_ANNOUNCEMENT ? M.intl.string(M.t.l1dkSD) : M.intl.string(M.t.Pnajj0)), (0, i.jsx)(j.A.Title, {
                     level: x,
                     onContextMenu: u,
                     onClick: c,
                     children: C
                 })]
             }) : (0, i.jsxs)(s.Fragment, {
-                children: [w(_, t.type === O.rbe.GUILD_ANNOUNCEMENT ? M.intl.string(M.t.l1dkSD) : M.intl.string(M.t.Pnajj0)), (0, i.jsx)(j.A.Title, {
+                children: [w(g, t.type === O.rbe.GUILD_ANNOUNCEMENT ? M.intl.string(M.t.l1dkSD) : M.intl.string(M.t.Pnajj0)), (0, i.jsx)(j.A.Title, {
                     level: x,
                     onContextMenu: u,
                     onClick: c,
                     children: C
-                }), null != g ? g() : null]
+                }), null != _ ? _() : null]
             });
         case O.rbe.GUILD_VOICE:
             return (0, i.jsxs)(s.Fragment, {
-                children: [w(_, M.intl.string(M.t.BVZqJl)), (0, i.jsx)(j.A.Title, {
+                children: [w(g, M.intl.string(M.t.BVZqJl)), (0, i.jsx)(j.A.Title, {
                     level: x,
                     onContextMenu: u,
                     onClick: c,
@@ -191,7 +191,7 @@ function U(e) {
             });
         case O.rbe.GUILD_STAGE_VOICE:
             return (0, i.jsxs)(s.Fragment, {
-                children: [w(_, M.intl.string(M.t.EErMzA)), (0, i.jsx)(j.A.Title, {
+                children: [w(g, M.intl.string(M.t.EErMzA)), (0, i.jsx)(j.A.Title, {
                     level: x,
                     onContextMenu: u,
                     onClick: c,
@@ -216,7 +216,7 @@ function U(e) {
             }
             let b = l?.type != null && O.kvI.GUILD_THREADS_ONLY.has(l.type);
             return (0, i.jsxs)(s.Fragment, {
-                children: [I, w(b ? null : _, M.intl.string(M.t["7Xm5QI"])), (0, i.jsx)(j.A.Title, {
+                children: [I, w(b ? null : g, M.intl.string(M.t["7Xm5QI"])), (0, i.jsx)(j.A.Title, {
                     level: x,
                     onContextMenu: u,
                     onClick: c,
@@ -231,8 +231,8 @@ function U(e) {
                 guildName: n
             }) : n;
             return (0, i.jsxs)(s.Fragment, {
-                children: [null !== _ ? (0, i.jsx)(j.A.ChannelIcon, {
-                    icon: _,
+                children: [null !== g ? (0, i.jsx)(j.A.ChannelIcon, {
+                    icon: g,
                     "aria-hidden": !0
                 }) : null, (0, i.jsxs)(j.A.Title, {
                     level: x,
@@ -304,7 +304,7 @@ function V(e) {
         guild: t,
         channel: n,
         caretPosition: l = "left"
-    } = e, r = (0, a.bG)([I.A], () => I.A.getGuildId()), o = (0, _.lI)(), u = s.useRef(null);
+    } = e, r = (0, a.bG)([I.A], () => I.A.getGuildId()), o = (0, g.lI)(), u = s.useRef(null);
     return (r === O.YYv || o) && null != t ? (0, i.jsx)(c.m, {
         asContainer: !0,
         text: t.name,
@@ -319,9 +319,9 @@ function V(e) {
                 direction: "left"
             }), (0, i.jsx)("div", {
                 ref: u,
-                children: (0, i.jsx)(g.Ay, {
+                children: (0, i.jsx)(_.Ay, {
                     guild: t,
-                    size: g.Ay.Sizes.SMALLER,
+                    size: _.Ay.Sizes.SMALLER,
                     className: D.gL,
                     active: !0
                 })

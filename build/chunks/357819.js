@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(927630),
     m = n(120017),
     p = n(779271),
-    g = n(763793),
-    _ = n(985018),
+    _ = n(763793),
+    g = n(985018),
     f = n(516950);
 
 function x(e) {
@@ -58,7 +58,7 @@ let C = (0, r.A)(e => {
         {
             speakerTileWidth: w,
             speakerTileHeight: V
-        } = (n = Math.floor((t = Math.floor(C / M - 8)) / g.i), {
+        } = (n = Math.floor((t = Math.floor(C / M - 8)) / _.i), {
             speakerTileWidth: t,
             speakerTileHeight: n
         }),
@@ -74,7 +74,7 @@ let C = (0, r.A)(e => {
             } = e;
             return 1 === t ? 0 === T ? null : (0, i.jsx)(p.A, {
                 participantCount: T,
-                label: _.intl.string(_.t.CduOkx),
+                label: g.intl.string(g.t.CduOkx),
                 className: f.wx,
                 onClick: () => K(!F),
                 collapsed: F,
@@ -83,7 +83,7 @@ let C = (0, r.A)(e => {
                 isStreamLive: O
             }, `speaker-header-${t}`) : 2 === t ? 0 === v ? null : (0, i.jsx)(p.A, {
                 participantCount: v,
-                label: _.intl.string(_.t["3foUu5"]),
+                label: g.intl.string(g.t["3foUu5"]),
                 className: f.wx,
                 onClick: () => Y(!W),
                 collapsed: W,
@@ -102,7 +102,7 @@ let C = (0, r.A)(e => {
                     if (0 === l.length || null == l[0]) return null;
                     return (0, i.jsx)("div", {
                         className: f.Od,
-                        children: (0, i.jsx)(g.A, {
+                        children: (0, i.jsx)(_.A, {
                             channel: r,
                             participant: l[0],
                             width: B,
@@ -131,7 +131,7 @@ let C = (0, r.A)(e => {
                     return null
             }
         },
-        rowHeight: e => null == P[e][0] ? 0 : 0 === e ? B / g.i + 8 : 1 === e ? F ? 0 : V : 98 * !W,
+        rowHeight: e => null == P[e][0] ? 0 : 0 === e ? B / _.i + 8 : 1 === e ? F ? 0 : V : 98 * !W,
         renderFooter: e => {
             let {
                 section: t

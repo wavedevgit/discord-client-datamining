@@ -1,7 +1,7 @@
 /** chunk id: 576437 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    M: () => _
+    M: () => g
 });
 var i = n(627968),
     s = n(64700),
@@ -16,12 +16,12 @@ var i = n(627968),
     A = n(954571),
     m = n(130802),
     p = n(652215),
-    g = n(49999);
-let _ = e => {
+    _ = n(49999);
+let g = e => {
     let {
         children: t,
         isForceShowSharingPopout: n,
-        setIsForceShowSharingPopout: _,
+        setIsForceShowSharingPopout: g,
         popoutTargetRef: f
     } = e, x = function(e) {
         let {
@@ -58,7 +58,7 @@ let _ = e => {
                 showPopout: a,
                 popoutState: x,
                 handleClose: () => {
-                    l(g.i.USER_DISMISS), _(!1)
+                    l(_.i.USER_DISMISS), g(!1)
                 },
                 popoutTargetRef: f,
                 children: t

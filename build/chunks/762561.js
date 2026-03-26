@@ -12,12 +12,12 @@ var i = n(627968),
     c = n(736653),
     d = n(793574),
     u = n(688810),
-    h = n(713517),
-    A = n(182592),
+    h = n(351966),
+    A = n(713517),
     m = n(594832),
     p = n(183555),
-    g = n(622543),
-    _ = n(950191),
+    _ = n(622543),
+    g = n(950191),
     f = n(679492),
     x = n(657331),
     C = n(718019),
@@ -46,7 +46,7 @@ function V(e) {
         user: t,
         currentUser: n,
         channel: V
-    } = e, B = __OVERLAY__, H = (0, _.Ay)(t.id), F = (0, c.Ay)(), {
+    } = e, B = __OVERLAY__, H = (0, g.Ay)(t.id), F = (0, c.Ay)(), {
         analyticsLocations: K
     } = (0, u.Ay)(d.A.USER_PROFILE_SIDEBAR), W = (0, p.pb)({
         layout: "SIDEBAR",
@@ -55,7 +55,7 @@ function V(e) {
     }), Y = s.useRef(null), {
         isHoveringOrFocusing: z,
         isHovering: q
-    } = (0, h.A)(Y), X = (0, f.fC)(), J = (0, o.zhh)({
+    } = (0, A.A)(Y), X = (0, f.fC)(), J = (0, o.zhh)({
         opacity: +(null != X.interactionType),
         config: {
             duration: 150
@@ -69,8 +69,8 @@ function V(e) {
         })
     }, $ = H?.widgets != null && H.widgets.length > 0, {
         defaultWishlistId: Z
-    } = (0, a.cf)([g.A], () => ({
-        defaultWishlistId: g.A.getFirstWishlistId(t.id)
+    } = (0, a.cf)([_.A], () => ({
+        defaultWishlistId: _.A.getFirstWishlistId(t.id)
     })), {
         wishlist: ee
     } = (0, m.fw)({
@@ -164,7 +164,7 @@ function V(e) {
                         handleOpenProfile: Q,
                         analyticsLocations: K,
                         context: W
-                    }), H?.profileEffect != null && (0, i.jsx)(A.A, {
+                    }), H?.profileEffect != null && (0, i.jsx)(h.A, {
                         skuId: H?.profileEffect?.skuId,
                         isHovering: q
                     })]

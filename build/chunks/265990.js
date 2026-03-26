@@ -26,8 +26,8 @@ var i = n(627968),
     S = n(278066),
     x = n(594968),
     v = n(979282),
-    b = n(575474),
-    y = n(535266),
+    y = n(575474),
+    b = n(535266),
     O = n(787331);
 n(646363);
 var L = n(652215),
@@ -215,7 +215,7 @@ let G = function(e) {
                 }(d, n.length, e, n.some(e => e.giftIntentType === R.np.FRIEND_ANNIVERSARY));
             return d === L.m3P.PENDING && 0 === e ? (0, i.jsxs)("div", {
                 className: D.Gf,
-                children: [(0, i.jsx)(y.A, {
+                children: [(0, i.jsx)(b.A, {
                     id: t,
                     title: a
                 }), el && (0, i.jsx)("div", {
@@ -229,7 +229,7 @@ let G = function(e) {
                 })]
             }, a) : (0, i.jsx)("div", {
                 className: D.Gf,
-                children: (0, i.jsx)(y.A, {
+                children: (0, i.jsx)(b.A, {
                     id: t,
                     title: a
                 })
@@ -260,7 +260,7 @@ let G = function(e) {
         value: n,
         children: (0, i.jsxs)(u.A, {
             section: L.JJy.FRIENDS_LIST,
-            children: [k && (0, i.jsx)(b.g, {}), (0, i.jsx)("div", {
+            children: [k && (0, i.jsx)(y.g, {}), (0, i.jsx)("div", {
                 className: D.ON,
                 children: (0, i.jsx)(o.IWV, {
                     query: Y[d],

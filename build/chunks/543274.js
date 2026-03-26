@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(641703),
     m = n(807067),
     p = n(521588),
-    g = n(688810),
-    _ = n(975412),
+    _ = n(688810),
+    g = n(975412),
     f = n(384059),
     x = n(379848),
     C = n(267102),
@@ -46,8 +46,8 @@ function v(e) {
     }, [G]), B = (0, C.Us)() === b.BRT.POPOUT, {
         parentAnalyticsLocation: H,
         newestAnalyticsLocation: F
-    } = (0, g.Ay)(), K = s.useCallback(() => {
-        (0, f.X)(H, f.O.ACTIVITY), (0, _.A)({
+    } = (0, _.Ay)(), K = s.useCallback(() => {
+        (0, f.X)(H, f.O.ACTIVITY), (0, g.A)({
             context: null != t ? {
                 type: "channel",
                 channel: t

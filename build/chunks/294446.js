@@ -34,11 +34,11 @@ let p = (0, h.A)(e => {
         disableGuildSelect: S,
         disclosures: x,
         integrationType: v,
-        pid: b,
-        signal: y
+        pid: y,
+        signal: b
     } = e, O = `OAuth2Authorize_${t}_${C}_${T}`, L = null != v ? n?.get(v) : void 0, R = L?.application ?? r.A.getApplication(t);
     return new Promise((e, r) => {
-        let L = (0, _.d5)(b),
+        let L = (0, _.d5)(y),
             P = a.SYi;
         null != R && null != (0, l.Ay)({
             application: R,
@@ -91,7 +91,7 @@ let p = (0, h.A)(e => {
                         t?.removeEventListener("abort", n)
                     }
                 }
-            }(O, y);
+            }(O, b);
         (0, a.qfG)(e => (0, i.jsx)(s.OAuth2AuthorizeModal, {
             ...e,
             authorizations: n,

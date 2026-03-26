@@ -7,8 +7,8 @@ var r = n(627968),
     s = n(827734),
     l = n(397927),
     a = n(590180),
-    o = n(4227),
-    c = n(993408),
+    c = n(4227),
+    o = n(993408),
     d = n(985018),
     u = n(672947);
 let m = e => {
@@ -17,12 +17,12 @@ let m = e => {
         canUsePremiumCollectibles: n,
         isPurchaseSection: m,
         isPremiumSection: p
-    } = e, g = (0, c.aT)(t), x = (0, i.bG)([a.A, o.A], () => {
+    } = e, f = (0, o.aT)(t), g = (0, i.bG)([a.A, c.A], () => {
         let e = a.A.getProduct(t),
-            n = o.A.getPurchase(t);
-        return null != n ? (0, c.gA)(n) : (0, c.G0)(e)
+            n = c.A.getPurchase(t);
+        return null != n ? (0, o.gA)(n) : (0, o.G0)(e)
     });
-    return m || p && n ? null : g ? (0, r.jsx)(l.JIr, {
+    return m || p && n ? null : f ? (0, r.jsx)(l.JIr, {
         className: u.Ad,
         text: (0, r.jsxs)("div", {
             className: u.rm,
@@ -32,7 +32,7 @@ let m = e => {
             }), d.intl.string(d.t.y2b7CA)]
         })
     }) : (0, r.jsx)(l.fkz, {
-        icon: x ? () => (0, r.jsx)(l.tvc, {
+        icon: g ? () => (0, r.jsx)(l.tvc, {
             size: "custom",
             color: "currentColor",
             width: 14,

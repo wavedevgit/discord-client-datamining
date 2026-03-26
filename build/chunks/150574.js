@@ -1,6 +1,6 @@
 /** chunk id: 150574 params = (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => b
 });
 var i = n(627968),
     a = n(64700),
@@ -26,11 +26,11 @@ var i = n(627968),
     S = n(57718),
     x = n(652215),
     v = n(985018),
-    b = n(864833);
-let y = (0, a.memo)(function(e) {
+    y = n(864833);
+let b = (0, a.memo)(function(e) {
     let {
         quest: t
-    } = e, [n, l] = (0, a.useState)(!1), [y, O] = (0, a.useState)(24), [L, R] = (0, a.useState)(!1), P = (0, a.useRef)(null), D = (0, a.useRef)(null), M = (0, a.useRef)(null), j = (0, d.bG)([g.default], () => g.default.getCurrentUser()), {
+    } = e, [n, l] = (0, a.useState)(!1), [b, O] = (0, a.useState)(24), [L, R] = (0, a.useState)(!1), P = (0, a.useRef)(null), D = (0, a.useRef)(null), M = (0, a.useRef)(null), j = (0, d.bG)([g.default], () => g.default.getCurrentUser()), {
         ref: w,
         height: U = 0
     } = (0, A.Ay)(), G = (0, h.Ay)(), k = (0, I.S5)(t.userStatus?.claimedAt, {
@@ -80,14 +80,14 @@ let y = (0, a.memo)(function(e) {
             onBlur: et,
             onMouseEnter: ee,
             onMouseLeave: et,
-            className: r()(b.kL, {
-                [b.yo]: n
+            className: r()(y.kL, {
+                [y.yo]: n
             }),
             children: [null != j && F && null != K && (0, i.jsx)("div", {
                 ref: M,
-                className: b.FX,
+                className: y.FX,
                 style: {
-                    top: y
+                    top: b
                 },
                 children: (0, i.jsx)(_.A, {
                     avatarDecorationOverride: K,
@@ -96,13 +96,13 @@ let y = (0, a.memo)(function(e) {
                     animateOnHover: !n
                 })
             }), H ? (0, i.jsx)(T.A, {
-                className: b.Sl
+                className: y.Sl
             }) : Y ? (0, i.jsx)(N.A, {
-                className: b.Sl,
+                className: y.Sl,
                 isAnimated: n,
                 questName: t.config.messages.questName
             }) : $.isAnimated ? (0, i.jsx)(m.A, {
-                className: b.JU,
+                className: y.JU,
                 autoPlay: !1,
                 children: (0, i.jsx)("source", {
                     src: $.url,
@@ -110,33 +110,33 @@ let y = (0, a.memo)(function(e) {
                     onError: () => en($.url)
                 })
             }) : (0, i.jsx)("img", {
-                className: b.Sl,
+                className: y.Sl,
                 src: $.url,
                 alt: t.config.messages.questName,
                 onError: () => en($.url)
             }), (0, i.jsx)("div", {
-                className: r()(b.Lw, {
-                    [b.en]: q,
-                    [b.So]: !q
+                className: r()(y.Lw, {
+                    [y.en]: q,
+                    [y.So]: !q
                 })
             }), (0, i.jsx)("div", {
                 ref: D,
-                className: b.r$,
+                className: y.r$,
                 style: {
                     transform: `translateY(-${Q}px)`
                 },
                 children: (0, i.jsx)(S.Ay, {
-                    logotypeClassName: r()(b.wm, {
-                        [b.A0]: z
+                    logotypeClassName: r()(y.wm, {
+                        [y.A0]: z
                     }),
                     quest: t,
                     withGameTile: !1
                 })
             }), (0, i.jsxs)("div", {
                 ref: w,
-                className: b.zH,
+                className: y.zH,
                 children: [(0, i.jsx)(u.Heading, {
-                    className: b.DD,
+                    className: y.DD,
                     variant: "heading-md/semibold",
                     color: "always-white",
                     children: v.intl.format(v.t.EAYZAr, {

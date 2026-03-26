@@ -9,24 +9,24 @@ var n = i(575593),
     a = i(397927),
     r = i(242874),
     o = i(75825),
-    u = i(331402),
-    d = i(287809),
-    c = i(562819),
-    f = i(215689),
-    p = i(674658),
-    h = i(512213),
+    u = i(287809),
+    d = i(562819),
+    c = i(215689),
+    f = i(674658),
+    p = i(512213),
+    h = i(139136),
     m = i(245068),
     g = i(292440);
 let A = a._3J.SIZE_152,
-    x = (0, c.Te)(A),
+    x = (0, d.Te)(A),
     _ = t => {
         let {
             item: e
-        } = t, i = (0, l.bG)([d.default], () => d.default.getCurrentUser()), {
+        } = t, i = (0, l.bG)([u.default], () => u.default.getCurrentUser()), {
             avatarDecorationSrc: n,
             avatarPlaceholderSrc: r,
             eventHandlers: o
-        } = (0, f.A)({
+        } = (0, c.A)({
             user: i,
             avatarDecorationOverride: e,
             size: x
@@ -48,7 +48,7 @@ let A = a._3J.SIZE_152,
         } = t;
         return (0, s.jsx)("div", {
             className: g.xC,
-            children: (0, s.jsx)(u.A, {
+            children: (0, s.jsx)(h.A, {
                 isHighlighted: !0,
                 skuId: e?.skuId
             })
@@ -60,7 +60,7 @@ let A = a._3J.SIZE_152,
         } = t;
         return (0, s.jsx)("div", {
             className: g.M4,
-            children: (0, s.jsx)(h.A, {
+            children: (0, s.jsx)(p.A, {
                 nameplate: e,
                 className: g.qF,
                 nameplatePreviewSize: "xlarge",
@@ -87,7 +87,7 @@ let A = a._3J.SIZE_152,
         } = t, {
             product: i,
             isFetching: l
-        } = (0, p.q)(e.skuId, !0);
+        } = (0, f.q)(e.skuId, !0);
         if (l || null == i) return (0, s.jsx)("div", {
             className: g.dc,
             children: (0, s.jsx)(a.y$y, {})

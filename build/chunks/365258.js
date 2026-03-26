@@ -3,10 +3,10 @@ n.d(e, {
     AB: () => L,
     AI: () => h,
     Xc: () => T,
-    ae: () => O,
-    g8: () => E,
+    ae: () => f,
+    g8: () => g,
     gF: () => p,
-    gS: () => f,
+    gS: () => O,
     vz: () => I
 });
 var i, r = n(873298),
@@ -14,8 +14,8 @@ var i, r = n(873298),
     a = n(205761),
     s = n(498642),
     o = n(71393),
-    d = n(711014),
-    c = n(115063),
+    c = n(711014),
+    d = n(115063),
     u = n(985018),
     h = ((i = {}).RESTRICTING = "restricting", i.EXPANDING = "expanding", i);
 let _ = r.Qd;
@@ -38,18 +38,18 @@ let C = new Map([
     [r.KP.FRIENDS_ONLY, _.ACTIVITY_STATUS_ON]
 ]);
 
-function g(t) {
+function E(t) {
     return C.get(t) ?? _.ACTIVITY_STATUS_OFF
 }
 
-function E(t, e) {
+function g(t, e) {
     if (t === e) return null;
     let n = A(t),
         i = A(e);
     if (n < 0 || i < 0) return null;
     let r = i < n ? "restricting" : "expanding",
-        l = (0, c.Kk)(),
-        a = d.Ay.getFlattenedGuildIds(),
+        l = (0, d.Kk)(),
+        a = c.Ay.getFlattenedGuildIds(),
         u = t === _.ACTIVITY_STATUS_OFF && e === _.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS || t === _.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS && e === _.ACTIVITY_STATUS_OFF ? "large_only" : t === _.ACTIVITY_STATUS_ON && e === _.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS || t === _.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS && e === _.ACTIVITY_STATUS_ON ? "small_only" : "all",
         h = a.filter(t => {
             if (null == o.A.getGuild(t)) return !1;
@@ -93,7 +93,7 @@ function I(t, e) {
     }
 }
 
-function O(t, e) {
+function f(t, e) {
     return {
         title: u.intl.string(t ? u.t.jRx1Aa : u.t.S0Y0bh),
         subtitle: u.intl.format(t ? u.t.Fs96LO : u.t.GcoYX8, {
@@ -104,11 +104,11 @@ function O(t, e) {
     }
 }
 
-function f(t, e) {
-    let n = g(e),
+function O(t, e) {
+    let n = E(e),
         i = l._Z.getSetting();
-    if (i === n || A(g(t)) > A(n) != A(i) > A(n)) return null;
-    let a = E(i, n);
+    if (i === n || A(E(t)) > A(n) != A(i) > A(n)) return null;
+    let a = g(i, n);
     if (null == a) return null;
     let s = function(t) {
         switch (t) {
@@ -135,7 +135,7 @@ function L(t) {
 }
 
 function p(t, e) {
-    let n = (0, c.Kk)(),
+    let n = (0, d.Kk)(),
         i = new Set(e);
     if ("restricting" === t) {
         let t = new Set([...n, ...i]);

@@ -10,8 +10,8 @@ var a = n(627968),
     o = n(311907),
     d = n(902592),
     c = n(869146),
-    u = n(680108),
-    m = n(734340),
+    u = n(734340),
+    m = n(550730),
     h = n(439895),
     x = n(652215),
     p = n(751156);
@@ -100,9 +100,9 @@ let g = e => {
             }), (() => {
                 switch (e) {
                     case 1:
-                        return (0, a.jsx)(u.A, {});
-                    case 2:
                         return (0, a.jsx)(m.A, {});
+                    case 2:
+                        return (0, a.jsx)(u.A, {});
                     case 3:
                         return (0, a.jsx)(h.A, {});
                     default:

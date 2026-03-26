@@ -35,27 +35,27 @@ let T = a.memo(function(e) {
         isBlocked: null != T && m.A.isBlockedForMessage(T),
         isIgnored: null != T && m.A.isIgnoredForMessage(T)
     }), [T]), x = (0, s.bG)([_.A], () => _.A.can(p.xBc.MANAGE_MESSAGES, t)), v = h.gs.useSetting(), {
-        content: b
+        content: y
     } = a.useMemo(() => T?.content != null && "" !== T.content ? (0, c.Ay)(T, {
         formatInline: !0,
         noStyleAndInteraction: !0
     }) : {
         content: null
-    }, [T]), y = null;
-    if (l) y = (0, i.jsx)(o.Text, {
+    }, [T]), b = null;
+    if (l) b = (0, i.jsx)(o.Text, {
         className: f.G4,
         variant: "text-sm/normal",
         color: "text-muted",
         children: I.intl.string(I.t.BZHld2)
     });
     else if (n)
-        if (null != T && N) y = (0, i.jsx)(o.Text, {
+        if (null != T && N) b = (0, i.jsx)(o.Text, {
             className: f.G4,
             variant: "text-sm/normal",
             color: "text-muted",
             children: I.intl.string(I.t["WPe+xL"])
         });
-        else if (null != T && S) y = (0, i.jsx)(o.Text, {
+        else if (null != T && S) b = (0, i.jsx)(o.Text, {
         className: f.G4,
         variant: "text-sm/normal",
         color: "text-muted",
@@ -65,12 +65,12 @@ let T = a.memo(function(e) {
         let {
             contentPlaceholder: e,
             renderedContent: t
-        } = (0, u.o)(T, b, N, S, r()(f.BK, C.tZ), {
+        } = (0, u.o)(T, y, N, S, r()(f.BK, C.tZ), {
             leadingIconClass: f.AF,
             trailingIconClass: f.AF,
             iconSize: E.eJ
         });
-        y = null != t ? (0, i.jsx)(o.Text, {
+        b = null != t ? (0, i.jsx)(o.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
             className: f.BK,
@@ -82,18 +82,18 @@ let T = a.memo(function(e) {
             className: f.G4,
             children: e
         })
-    } else y = (0, i.jsx)(o.Text, {
+    } else b = (0, i.jsx)(o.Text, {
         className: f.G4,
         variant: "text-sm/normal",
         color: "text-muted",
         children: I.intl.string(I.t["0KfDxM"])
     });
-    else y = null;
+    else b = null;
     return (0, i.jsx)(A.Bs.Provider, {
         value: (0, d.A)(v, x),
         children: (0, i.jsx)(o.M1G, {
             className: f.JY,
-            children: y
+            children: b
         })
     })
 })

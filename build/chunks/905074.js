@@ -50,49 +50,49 @@ let g = e => {
         } = e, b = a.useMemo(() => i.A.reactParserFor({
             ...i.A.defaultRules,
             link: d.B
-        }), []), [C, j] = a.useState(""), [T, N] = a.useState(""), [I, S] = a.useState(null), [y, k] = a.useState(null), [E, w] = a.useState(!1);
+        }), []), [C, T] = a.useState(""), [j, N] = a.useState(""), [I, S] = a.useState(null), [y, E] = a.useState(null), [k, w] = a.useState(!1);
         a.useEffect(() => {
-            j(A?.value ?? ""), N(v?.value ?? ""), A?.value != null && "" !== A.value && w(h(A.value))
+            T(A?.value ?? ""), N(v?.value ?? ""), A?.value != null && "" !== A.value && w(h(A.value))
         }, [A, v]);
         let R = a.useCallback(e => {
-                if (j(e), "" === e) {
-                    S(null), w(!1), N(""), k(null), g({
+                if (T(e), "" === e) {
+                    S(null), w(!1), N(""), E(null), g({
                         value: e,
                         isValid: !1
                     });
                     return
                 }
                 if (!p(e)) {
-                    S(o.intl.string(o.t["24xrGb"])), w(!1), N(""), k(null), g({
+                    S(o.intl.string(o.t["24xrGb"])), w(!1), N(""), E(null), g({
                         value: e,
                         isValid: !1
                     });
                     return
                 }
                 let t = h(e);
-                w(t), S(null), t ? "" === T ? g({
+                w(t), S(null), t ? "" === j ? g({
                     value: e,
                     isValid: !1
-                }) : x.test(T) ? g({
+                }) : x.test(j) ? g({
                     value: e,
                     isValid: !0
                 }, {
-                    value: T,
+                    value: j,
                     isValid: !0
                 }) : g({
                     value: e,
                     isValid: !1
                 }, {
-                    value: T,
+                    value: j,
                     isValid: !1
-                }) : (N(""), k(null), g({
+                }) : (N(""), E(null), g({
                     value: e,
                     isValid: !0
                 }))
-            }, [g, T]),
+            }, [g, j]),
             M = a.useCallback(e => {
                 if (N(e), "" === e || !x.test(e)) {
-                    k(o.intl.string(o.t["24xrGb"])), g({
+                    E(o.intl.string(o.t["24xrGb"])), g({
                         value: C,
                         isValid: !1
                     }, {
@@ -101,7 +101,7 @@ let g = e => {
                     });
                     return
                 }
-                k(null), g({
+                E(null), g({
                     value: C,
                     isValid: !0
                 }, {
@@ -131,7 +131,7 @@ let g = e => {
                         placeholder: s,
                         autoFocus: !0
                     })]
-                }), E && null != _ && (0, l.jsxs)("div", {
+                }), k && null != _ && (0, l.jsxs)("div", {
                     className: u.QB,
                     children: [(0, l.jsx)("div", {
                         className: u.QB,
@@ -145,7 +145,7 @@ let g = e => {
                         })
                     }), (0, l.jsx)(r.ksK, {
                         onChange: M,
-                        value: T,
+                        value: j,
                         error: y,
                         placeholder: m
                     })]

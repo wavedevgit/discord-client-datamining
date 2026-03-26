@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(484191),
     m = n(665450),
     p = n(526369),
-    g = n(699707),
-    _ = n(713397),
+    _ = n(699707),
+    g = n(713397),
     f = n(652215),
     x = n(806931),
     C = n(256960);
@@ -72,7 +72,7 @@ let E = (0, r.A)(e => {
     if (null == r) {
         if (0 === n.length) {
             let e = t.length > 0 && !w;
-            return (0, i.jsx)(_.A, {
+            return (0, i.jsx)(g.A, {
                 channelId: T.id,
                 allPoppedOut: e
             })
@@ -94,7 +94,7 @@ let E = (0, r.A)(e => {
             })
         })
     }
-    return (0, i.jsx)(g.A, {
+    return (0, i.jsx)(_.A, {
         onFullscreenParticipant: S,
         onContextMenuParticipant: b,
         onSelectParticipant: N,

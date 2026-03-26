@@ -57,15 +57,15 @@ let h = function(e) {
             padding: 8,
             callback: () => t?.focus()
         })
-    }, []), b = (0, l.Ay)({
+    }, []), y = (0, l.Ay)({
         id: "people-list",
         isEnabled: T,
         scrollToStart: S,
         scrollToEnd: x,
         setFocus: v
-    }), y = a.useMemo(() => t.map(e => e.length), [t]);
+    }), b = a.useMemo(() => t.map(e => e.length), [t]);
     return (0, i.jsx)(r.hD, {
-        navigator: b,
+        navigator: y,
         children: (0, i.jsx)(r.PR, {
             children: e => {
                 let {
@@ -83,7 +83,7 @@ let h = function(e) {
                         sectionHeight: 50,
                         renderFooter: f,
                         footerHeight: C,
-                        sections: y,
+                        sections: b,
                         className: A.e3,
                         ...n
                     }), _]

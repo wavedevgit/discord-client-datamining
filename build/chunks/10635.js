@@ -10,14 +10,14 @@ var i = n(627968),
     a = n(793574),
     o = n(688810),
     c = n(311016),
-    d = n(713517),
-    u = n(182592),
+    d = n(351966),
+    u = n(713517),
     h = n(562153),
     A = n(183555),
     m = n(950191),
     p = n(657331),
-    g = n(718019),
-    _ = n(31432),
+    _ = n(718019),
+    g = n(31432),
     f = n(915614),
     x = n(389996),
     C = n(743987),
@@ -45,7 +45,7 @@ function O(e) {
     }), U = s.useRef(null), {
         isHoveringOrFocusing: P,
         isHovering: k
-    } = (0, d.A)(U), w = () => {
+    } = (0, u.A)(U), w = () => {
         (0, p.openUserProfileModal)({
             sourceAnalyticsLocations: D,
             hideRestrictedProfile: !0,
@@ -75,7 +75,7 @@ function O(e) {
                             displayProfile: L,
                             themeType: v.d.SIDEBAR,
                             animateOnHoverOrFocusOnly: !P
-                        }), (0, i.jsx)(g.A, {
+                        }), (0, i.jsx)(_.A, {
                             user: t,
                             displayProfile: L,
                             channelId: n.id,
@@ -90,7 +90,7 @@ function O(e) {
                             nickname: h.Ay.getName(null, n.id, t),
                             pronouns: L?.pronouns,
                             onOpenProfile: O ? void 0 : w,
-                            tags: (0, i.jsx)(_.A, {
+                            tags: (0, i.jsx)(g.A, {
                                 displayProfile: L,
                                 themeType: v.d.SIDEBAR
                             })
@@ -118,7 +118,7 @@ function O(e) {
                     handleOpenProfile: w,
                     analyticsLocations: D,
                     context: G
-                }), L?.profileEffect != null && (0, i.jsx)(u.A, {
+                }), L?.profileEffect != null && (0, i.jsx)(d.A, {
                     skuId: L?.profileEffect?.skuId,
                     isHovering: k
                 })]

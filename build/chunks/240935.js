@@ -8,8 +8,8 @@ var i = n(311907),
     l = n(309010),
     a = n(543465);
 let d = {},
-    o = {},
-    h = {};
+    h = {},
+    o = {};
 
 function u() {
     let e = l.A.getChannelId();
@@ -17,11 +17,11 @@ function u() {
     let t = r.A.getChannel(e);
     if (null == t || null == t.guild_id) return;
     let n = t.guild_id;
-    if (null == h[e] && (h[e] = 0), t.isThread() || a.Ay.isOptInEnabled(n) && !a.Ay.isChannelOrParentOptedIn(n, t.id)) {
-        delete h[e], null != d[n] && d[n].delete(e);
+    if (null == o[e] && (o[e] = 0), t.isThread() || a.Ay.isOptInEnabled(n) && !a.Ay.isChannelOrParentOptedIn(n, t.id)) {
+        delete o[e], null != d[n] && d[n].delete(e);
         return
     }
-    return (h[e]++, null == d[n] && (d[n] = new Set), a.Ay.isFavorite(n, e)) ? void d[n].delete(e) : (null == o[n] || !o[n].has(e)) && h[e] > 50 ? (d[n].add(e), !0) : void 0
+    return (o[e]++, null == d[n] && (d[n] = new Set), a.Ay.isFavorite(n, e)) ? void d[n].delete(e) : (null == h[n] || !h[n].has(e)) && o[e] > 50 ? (d[n].add(e), !0) : void 0
 }
 class c extends i.Ay.PersistedStore {
     static displayName = "FavoritesSuggestionStore";
@@ -36,8 +36,8 @@ class c extends i.Ay.PersistedStore {
         if (null != t)
             for (let e in t) d[e] = new Set(t[e]) ?? new Set;
         if (null != n)
-            for (let e in n) o[e] = new Set(n[e]) ?? new Set;
-        h = i ?? {}
+            for (let e in n) h[e] = new Set(n[e]) ?? new Set;
+        o = i ?? {}
     }
     getSuggestedChannelId(e) {
         return null
@@ -56,6 +56,6 @@ let g = new c(s.h, {
             guildId: t,
             channelId: n
         } = e;
-        return null == o[t] && (o[t] = new Set), o[t].add(n), d[t].delete(n), !0
+        return null == h[t] && (h[t] = new Set), h[t].add(n), d[t].delete(n), !0
     }
 })

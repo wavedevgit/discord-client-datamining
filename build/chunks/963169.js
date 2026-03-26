@@ -2,7 +2,7 @@
 n.d(e, {
     MS: () => s,
     OE: () => o,
-    Qb: () => d
+    Qb: () => c
 });
 var i = n(73153),
     r = n(976860),
@@ -22,7 +22,7 @@ function o(t) {
     }), (0, r.aX)())
 }
 
-function d(t) {
+function c(t) {
     (0, r.TX)() && (l.default.track(a.HAw.APP_BACK_FORWARD_NAVIGATED, {
         nav_direction: 1,
         nav_trigger: t

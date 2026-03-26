@@ -36,9 +36,9 @@ function h(e) {
         width: 0,
         height: 0
     }), {
-        width: g,
-        height: _
-    } = m, f = n?.length ?? 0, x = g - 16, C = _ - (h + A), {
+        width: _,
+        height: g
+    } = m, f = n?.length ?? 0, x = _ - 16, C = g - (h + A), {
         tileStyle: E,
         tileWidth: I,
         rows: N,
@@ -68,7 +68,7 @@ function h(e) {
             rows: A,
             columns: m
         }
-    })(f, x, C), [f, x, C]), S = b + 1, T = S * I + (S - 1) * 8 <= g, v = Math.floor(I / c) + 8, y = Math.max(0, C - v * N) / 2;
+    })(f, x, C), [f, x, C]), S = b + 1, T = S * I + (S - 1) * 8 <= _, v = Math.floor(I / c) + 8, y = Math.max(0, C - v * N) / 2;
     return (0, i.jsx)(a.A, {
         fade: !0,
         className: t,

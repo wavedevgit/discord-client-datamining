@@ -1,5 +1,5 @@
 /** chunk id: 474447 params = (module,exports,require) **/
-i.d(e, {
+i.d(t, {
     A: () => o
 });
 var n = i(573648),
@@ -8,9 +8,9 @@ var n = i(573648),
     s = i(652215),
     a = i(985018);
 
-function o(t, e, i) {
-    let o = (0, r.A)(t) ?? "",
-        d = e === l.O.VOICE_CHANNEL && i;
+function o(e, t, i) {
+    let o = (0, r.A)(e) ?? "",
+        d = t === l.O.VOICE_CHANNEL && i;
     switch (o) {
         case s.yTV.PS4:
         case s.yTV.PS5:

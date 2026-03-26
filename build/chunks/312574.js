@@ -19,7 +19,7 @@ var i = n(627968),
     h = n(723702),
     p = n(780964),
     f = n(682262),
-    T = n(401977),
+    T = n(202949),
     S = n(694202),
     E = n(50847),
     b = n(606275),
@@ -31,8 +31,8 @@ var i = n(627968),
     y = n(966040);
 let O = (0, m.t_)(p.X.OVERLAY_PANEL, {
         initialize: function() {
-            return (0, T.Ql)(), g.Ay.addChangeListener(T.Ql), c.A.addChangeListener(T.Ql), A.default.addChangeListener(T.Ql), x.default.addChangeListener(T.Ql), h.isPlatformEmbedded && (0, d.a2)(), () => {
-                g.Ay.removeChangeListener(T.Ql), c.A.removeChangeListener(T.Ql), A.default.removeChangeListener(T.Ql), x.default.removeChangeListener(T.Ql), h.isPlatformEmbedded && (0, d.e0)()
+            return (0, T.Q)(), g.Ay.addChangeListener(T.Q), c.A.addChangeListener(T.Q), A.default.addChangeListener(T.Q), x.default.addChangeListener(T.Q), h.isPlatformEmbedded && (0, d.a2)(), () => {
+                g.Ay.removeChangeListener(T.Q), c.A.removeChangeListener(T.Q), A.default.removeChangeListener(T.Q), x.default.removeChangeListener(T.Q), h.isPlatformEmbedded && (0, d.e0)()
             }
         },
         useTitle: () => N.intl.string(N.t["9cb1Uz"]),

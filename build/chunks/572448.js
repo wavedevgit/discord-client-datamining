@@ -17,8 +17,8 @@ var s = n(503698),
     A = n(729551),
     m = n(58149),
     p = n(571694),
-    g = n(47167),
-    _ = n(713654),
+    _ = n(47167),
+    g = n(713654),
     f = n(915089),
     x = n(263063),
     C = n(616356),
@@ -157,7 +157,7 @@ function U(e) {
         channel: t,
         gotoChannel: n,
         mentionCount: s
-    } = e, r = (0, a.bG)([I.A], () => I.A.getGuild(t.guild_id)), c = (0, a.bG)([E.A], () => E.A.getChannel(t.parent_id)), u = (0, a.bG)([b.Ay], () => b.Ay.getIsMentionLowImportance(t.id)), h = (0, _.gU)(t, r), A = (0, g.Ay)(t, !1), m = null == c ? r?.name : `${r?.name} › ${c.name}`, p = t.isMultiUserDM() ? y.intl.formatToPlainString(y.t.CxSA5N, {
+    } = e, r = (0, a.bG)([I.A], () => I.A.getGuild(t.guild_id)), c = (0, a.bG)([E.A], () => E.A.getChannel(t.parent_id)), u = (0, a.bG)([b.Ay], () => b.Ay.getIsMentionLowImportance(t.id)), h = (0, g.gU)(t, r), A = (0, _.Ay)(t, !1), m = null == c ? r?.name : `${r?.name} › ${c.name}`, p = t.isMultiUserDM() ? y.intl.formatToPlainString(y.t.CxSA5N, {
         members: t.recipients.length + 1
     }) : t.isPrivate() ? (0, i.jsx)(P, {
         channel: t

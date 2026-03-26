@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(738876),
     m = n(775602),
     p = n(793574),
-    g = n(688810),
-    _ = n(355622),
+    _ = n(688810),
+    g = n(355622),
     f = n(408018),
     x = n(133343),
     C = n(171593),
@@ -46,7 +46,7 @@ var i = n(627968),
     F = n(985018),
     K = n(822334),
     W = n(756304);
-let Y = _.oU.THREAD_CREATION;
+let Y = g.oU.THREAD_CREATION;
 
 function z(e) {
     let {
@@ -55,8 +55,8 @@ function z(e) {
         location: s
     } = e, l = (0, a.bG)([y.A], () => y.A.getChannel(t)), {
         analyticsLocations: r
-    } = (0, g.Ay)(p.A.CREATE_THREAD);
-    return null == l ? null : (0, i.jsx)(g.f5, {
+    } = (0, _.Ay)(p.A.CREATE_THREAD);
+    return null == l ? null : (0, i.jsx)(_.f5, {
         value: r,
         children: (0, i.jsx)(M.Ah, {
             children: (0, i.jsxs)("section", {
@@ -123,8 +123,8 @@ function X(e) {
         }, [t])),
         {
             threadSettings: p,
-            setThreadSettings: g,
-            updateThreadSettings: _
+            setThreadSettings: _,
+            updateThreadSettings: g
         } = function(e, t) {
             let n = (0, a.bG)([j.A], () => j.A.getThreadSettings(e.id) ?? {}, [e.id]),
                 [i, l] = s.useState(n),
@@ -160,7 +160,7 @@ function X(e) {
                 textAreaState: n,
                 setTextAreaState: i
             }
-        }(n, g),
+        }(n, _),
         E = (0, P.EN)(n),
         {
             isGeneratingAI: N,
@@ -169,7 +169,7 @@ function X(e) {
         } = (0, V.C)({
             parentChannel: n,
             parentMessageId: l,
-            updateThreadSettings: _,
+            updateThreadSettings: g,
             threadSettings: p,
             textAreaState: x
         }),
@@ -213,7 +213,7 @@ function X(e) {
                         shouldRefocus: !0
                     };
                     let {
-                        valid: g
+                        valid: _
                     } = await (0, D.i)({
                         content: e,
                         stickers: s,
@@ -221,7 +221,7 @@ function X(e) {
                         type: Y,
                         channel: null == n ? t : null
                     });
-                    if (!g) return m(!1), {
+                    if (!_) return m(!1), {
                         shouldClear: !1,
                         shouldRefocus: !0
                     };
@@ -278,7 +278,7 @@ function X(e) {
                                     parentChannel: n,
                                     parentMessageId: l,
                                     threadSettings: p,
-                                    updateThreadSettings: _,
+                                    updateThreadSettings: g,
                                     error: y,
                                     disabled: G,
                                     isGeneratingAI: N,
@@ -287,7 +287,7 @@ function X(e) {
                                 }), n.type === H.rbe.GUILD_TEXT ? (0, i.jsx)(J, {
                                     startedFromMessage: null != l,
                                     threadSettings: p,
-                                    updateThreadSettings: _,
+                                    updateThreadSettings: g,
                                     privateThreadMode: E
                                 }) : null]
                             })]
@@ -350,12 +350,12 @@ function Q(e) {
         getThreadNameInputAccessory: h
     } = e, A = s.name ?? "", m = (0, U.vr)(r, {
         content: A
-    }), p = (0, P.l1)(t, n), g = null != n && !u, _ = (0, E.GV)(), f = u ? F.intl.string(F.t["Nb2/RE"]) : "" !== p ? p : F.intl.string(F.t["Nb2/RE"]);
+    }), p = (0, P.l1)(t, n), _ = null != n && !u, g = (0, E.GV)(), f = u ? F.intl.string(F.t["Nb2/RE"]) : "" !== p ? p : F.intl.string(F.t["Nb2/RE"]);
     return (0, i.jsx)(o.ksK, {
-        label: F.intl.string(g ? F.t.JPvIiL : F.t.j3XWjD),
+        label: F.intl.string(_ ? F.t.JPvIiL : F.t.j3XWjD),
         trailing: h(a),
         value: A,
-        id: _,
+        id: g,
         placeholder: f,
         maxLength: H.Ign,
         onChange: e => {
@@ -381,7 +381,7 @@ function $(e) {
         setTextAreaState: l,
         submit: u,
         error: h
-    } = e, [A, m] = s.useState(!0), p = s.useCallback(() => m(!0), []), g = s.useCallback(() => m(!1), []), _ = s.useCallback((e, n, i) => {
+    } = e, [A, m] = s.useState(!0), p = s.useCallback(() => m(!0), []), _ = s.useCallback(() => m(!1), []), g = s.useCallback((e, n, i) => {
         c.A.saveDraft(t.id, n, j.C.FirstThreadMessage), l(e => ("" !== n && e.textValue !== n ? d.A.startTyping(t.id) : "" === n && d.A.stopTyping(t.id), {
             textValue: n,
             richValue: i
@@ -399,7 +399,7 @@ function $(e) {
         handler: p
     }), (0, M.Vo)({
         event: H.jej.TEXTAREA_BLUR,
-        handler: g
+        handler: _
     });
     let E = (0, a.bG)([O.A], () => O.A.can(H.xBc.ATTACH_FILES, t)),
         I = (0, U.vr)(h, {
@@ -427,8 +427,8 @@ function $(e) {
                 [K.cr]: null != I
             }),
             onFocus: p,
-            onBlur: g,
-            onChange: _,
+            onBlur: _,
+            onChange: g,
             onSubmit: f,
             promptToUpload: G.R
         })]

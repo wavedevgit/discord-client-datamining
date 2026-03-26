@@ -26,8 +26,8 @@ var i = n(627968),
     S = n(954571),
     x = n(927813),
     v = n(279877),
-    b = n(112273),
-    y = n(666290),
+    y = n(112273),
+    b = n(666290),
     O = n(928636),
     L = n(502696),
     R = n(282447),
@@ -42,10 +42,10 @@ let w = 15 * x.A.Millis.MINUTE,
             onUserContextMenu: n,
             onChannelContextMenu: l,
             quest: r
-        } = e, s = a.useRef(null), d = (0, i.jsx)(y.A, {
+        } = e, s = a.useRef(null), d = (0, i.jsx)(b.A, {
             party: t,
             onUserContextMenu: n
-        }), u = (0, i.jsx)(b.A, {
+        }), u = (0, i.jsx)(y.A, {
             party: t,
             onChannelContextMenu: l,
             quest: r
@@ -140,24 +140,24 @@ function k() {
             questsByPartyId: t,
             questIdsByPartyId: n
         }
-    }, [e, s, o]), b = (0, d.bG)([h.A], () => h.A.earnedQuestForPlacement.get(_.uF.ACTIVITY_PANEL), []), y = a.useRef([]), O = a.useMemo(() => {
+    }, [e, s, o]), y = (0, d.bG)([h.A], () => h.A.earnedQuestForPlacement.get(_.uF.ACTIVITY_PANEL), []), b = a.useRef([]), O = a.useMemo(() => {
         let e = Array.from(x.values()),
-            t = y.current;
-        return t.length === e.length && e.every((e, n) => e === t[n]) ? t : (y.current = e, e)
+            t = b.current;
+        return t.length === e.length && e.every((e, n) => e === t[n]) ? t : (b.current = e, e)
     }, [x]);
     a.useEffect(() => {
         f && 0 !== O.length && (0, A.yO)(O, _.uF.ACTIVITY_PANEL, "NowPlaying")
-    }, [O, f, b]);
+    }, [O, f, y]);
     let L = a.useMemo(() => {
             if (!f) return S;
-            if (null == b) return new Map;
+            if (null == y) return new Map;
             let e = new Map;
             for (let [t, n] of x.entries()) {
-                let i = b.quests.get(n);
+                let i = y.quests.get(n);
                 (0, p.Oh)(i) && null != i.questWithUserStatus && e.set(t, i.questWithUserStatus)
             }
             return e
-        }, [f, b, S, x]),
+        }, [f, y, S, x]),
         R = null;
     return t ? R = e.length > 0 ? e.map(e => {
         let {

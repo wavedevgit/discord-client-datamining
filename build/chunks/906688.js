@@ -9,8 +9,8 @@ var r = n(827734),
     a = n(397927),
     s = n(736653),
     o = n(682174),
-    d = n(927018),
-    c = n(579157);
+    c = n(927018),
+    d = n(579157);
 let u = {
         trophy: r.A.unsafe_rawColors.PRIMARY_400.css,
         locked: r.A.unsafe_rawColors.PRIMARY_400.css,
@@ -27,22 +27,22 @@ function _(t) {
         achievementId: e,
         unlocked: n,
         size: r = a._3J.SIZE_40
-    } = t, _ = (0, s.Ay)(), A = (0, d.vM)(e);
+    } = t, _ = (0, s.Ay)(), A = (0, c.vM)(e);
     if (null == A) return null;
     let C = (0, a.KjH)(r),
         {
-            name: g,
-            rarity: E
+            name: E,
+            rarity: g
         } = A,
         {
             color: T
-        } = (0, d.ag)(E),
+        } = (0, c.ag)(g),
         I = (0, l.Mw)(_) ? u : h,
-        O = (C.size - C.offset - 2 * C.stroke) * .8,
-        f = C.size - C.stroke,
+        f = (C.size - C.offset - 2 * C.stroke) * .8,
+        O = C.size - C.stroke,
         L = {
-            width: .4 * O,
-            height: .4 * O
+            width: .4 * f,
+            height: .4 * f
         },
         p = {
             width: L.width + 1,
@@ -52,34 +52,34 @@ function _(t) {
             padding: 0
         };
     return (0, i.jsxs)("div", {
-        className: c.kL,
+        className: d.kL,
         style: {
-            width: f,
-            height: f,
+            width: O,
+            height: O,
             padding: C.stroke
         },
-        "aria-label": `${g()??""}`,
+        "aria-label": `${E()??""}`,
         children: [(0, i.jsx)("div", {
-            className: c.r5,
+            className: d.r5,
             children: (0, i.jsx)(a.OR, {
                 size: "custom",
                 color: n ? T : I.trophy,
-                width: O,
-                height: O
+                width: f,
+                height: f
             })
         }), !n && (0, i.jsx)("div", {
-            className: c.dq,
+            className: d.dq,
             style: p,
             children: (0, i.jsx)(a.XAi, {
                 size: "custom",
                 color: I.locked,
                 ...L
             })
-        }), n && E === d.md.LEGENDARY && (0, i.jsx)("div", {
-            className: c.dq,
+        }), n && g === c.md.LEGENDARY && (0, i.jsx)("div", {
+            className: d.dq,
             style: p,
             children: (0, i.jsx)(o.A, {
-                className: c.ox,
+                className: d.ox,
                 ...L
             })
         })]

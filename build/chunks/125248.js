@@ -1,7 +1,7 @@
 /** chunk id: 125248 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -33,7 +33,7 @@ let m = [A.u8, A.n$, A.uN, A.no],
         })
     });
 
-function g(e) {
+function _(e) {
     let {
         channelId: t,
         callHeight: n

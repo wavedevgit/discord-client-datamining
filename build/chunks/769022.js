@@ -37,9 +37,9 @@ function m(e) {
     return -e.timestamp
 }
 let p = new Map,
-    g = [];
+    _ = [];
 
-function _(e, t) {
+function g(e, t) {
     let n = u(t),
         i = p.get(e);
     return null != i && (i.set(n, {
@@ -62,7 +62,7 @@ class x extends i.Ay.Store {
         channelEventMaps: p
     });
     getHistory(e) {
-        return p.get(e)?.values(h) ?? g
+        return p.get(e)?.values(h) ?? _
     }
     getHistoryVersion(e) {
         return p.get(e)?.version ?? 0
@@ -98,7 +98,7 @@ let C = new x(l.h, {
                 userId: n,
                 channelId: i
             } = e;
-            !a.A.isBlockedOrIgnored(n) && null != i && p.has(i) && (t = _(i, n) || t)
+            !a.A.isBlockedOrIgnored(n) && null != i && p.has(i) && (t = g(i, n) || t)
         }), t
     },
     CHANNEL_DELETE: function(e) {
@@ -112,7 +112,7 @@ let C = new x(l.h, {
             channelId: t
         } = e;
         if (!p.has(t)) return p.has(t) || p.set(t, new s.J(A, m)), Object.values(o.A.getVoiceStatesForChannel(t)).forEach(e => {
-            _(t, e.userId)
+            g(t, e.userId)
         }), !0;
         return !1
     }

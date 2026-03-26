@@ -34,9 +34,9 @@ function S() {
         {
             tabs: x,
             selectedTab: v,
-            setSelectedTab: b
+            setSelectedTab: y
         } = (0, p.f)(),
-        y = (0, h.Ub)(v),
+        b = (0, h.Ub)(v),
         O = !f.R0.has(v),
         {
             searchQuery: L,
@@ -63,15 +63,15 @@ function S() {
         }),
         V = u.A.useField("fetchedQuery"),
         B = a.useCallback(e => {
-            b(e), M && P()
-        }, [M, P, b]),
+            y(e), M && P()
+        }, [M, P, y]),
         H = a.useMemo(() => M ? x.filter(e => {
             let {
                 id: t
             } = e;
             return !f.R0.has(t)
         }) : x, [x, M]),
-        F = a.useRef(new A.A(y)),
+        F = a.useRef(new A.A(b)),
         {
             onGuildCardSeen: Y,
             onGuildCardClick: W
@@ -81,7 +81,7 @@ function S() {
         });
     return a.useEffect(() => {
         F.current.flushSeenGuilds(e.current)
-    }, [y]), a.useEffect(() => {
+    }, [b]), a.useEffect(() => {
         S()
     }, [v, S]), a.useEffect(() => {
         M || u.A.setState({

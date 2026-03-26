@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(954571),
     m = n(652215),
     p = n(985018),
-    g = n(917328);
-let _ = e => {
+    _ = n(917328);
+let g = e => {
         let {
             channel: t
         } = e;
@@ -42,7 +42,7 @@ let _ = e => {
                 text: p.intl.string(p.t["5Q9+/L"]),
                 position: "bottom",
                 children: (0, i.jsxs)(r.DUT, {
-                    className: g.cD,
+                    className: _.cD,
                     onClick: () => {
                         (0, u.U)(s, o.A.HEADER_BAR)
                     },
@@ -68,7 +68,7 @@ let _ = e => {
                     },
                     "aria-label": p.intl.string(p.t["5Q9+/L"]),
                     children: [(0, i.jsx)(d.A, {
-                        className: g.gn,
+                        className: _.gn,
                         "aria-hidden": !0,
                         channel: t,
                         size: r._3J.SIZE_20,
@@ -78,12 +78,12 @@ let _ = e => {
                         color: "text-strong",
                         children: h ?? ""
                     }), (0, i.jsx)(r.R2l, {
-                        className: g.IZ,
+                        className: _.IZ,
                         size: "xs",
                         color: "currentColor"
                     })]
                 })
-            }), (0, i.jsx)(_, {
+            }), (0, i.jsx)(g, {
                 channel: t
             })]
         })

@@ -1,0 +1,216 @@
+.nitroUpsellContainer_d0caf4 {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-inline-end: auto
+}
+
+.nitroWheel_d0caf4 {
+    margin-inline-end: 6px
+}
+
+.nitroText_d0caf4 {
+    flex-wrap: wrap
+}
+
+.previewContainer_d74b94 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-block: 6.5px 0;
+    margin-inline: 2px 3px;
+    min-height: 560px;
+    padding-inline-start: 10px;
+    width: -moz-min-content;
+    width: min-content
+}
+
+.effectDescriptionBorder_d74b94 {
+    border: 2px solid transparent;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 20px var(--custom-user-profile-theme-padding);
+    width: 100%
+}
+
+.effectDescriptionBorderWithGradient_d74b94 {
+    background: linear-gradient(var(--background-base-low), var(--background-base-low)) padding-box, var(--custom-premium-colors-premium-gradient-tier-2-diagonal) border-box
+}
+
+.effectDescriptionNoGradient_d74b94 {
+    background: var(--interactive-background-active)
+}
+
+.effectDescriptionContainer_d74b94 {
+    background: var(--background-base-lower) padding-box;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-inline-end: 4px;
+    padding: var(--space-12);
+    position: relative
+}
+
+.replayButton_d74b94 {
+    display: flex;
+    height: 24px;
+    margin-block: 15px -8px;
+    margin-inline: 30px 0;
+    width: 149px
+}
+
+.replayButtonText_d74b94 {
+    font-family: gg sans;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center
+}
+
+.retryIcon_d74b94 {
+    color: var(--text-default);
+    margin-inline: 6px 3px
+}
+
+.newBadge__03991 {
+    inset-inline-end: -4px;
+    position: absolute;
+    text-transform: uppercase;
+    top: -4px
+}
+
+.newBadgeText__03991 {
+    align-items: center;
+    display: flex;
+    gap: var(--space-4);
+    justify-content: center
+}
+
+.iconBadge__03991 {
+    border-radius: 50%;
+    height: 20px;
+    inset-inline-end: -4px;
+    padding: 2px;
+    position: absolute;
+    top: -6px;
+    width: 20px
+}
+
+.icon_f9347f {
+    height: 24px;
+    margin-bottom: 4px;
+    width: 24px
+}
+
+.notAllowedIcon_f9347f {
+    transform: rotate(90deg)
+}
+
+.effectGridItem_f9347f {
+    align-items: center;
+    background-color: var(--background-base-lowest);
+    border-radius: 4px;
+    color: var(--text-strong);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    transition: box-shadow .15s ease-out
+}
+
+.selected_f9347f {
+    box-shadow: 0 0 0 2px var(--brand-500)
+}
+
+.section_f9347f {
+    display: flex;
+    flex-direction: column;
+    height: 100%
+}
+
+.list_f9347f {
+    flex: 1;
+    inset-inline-start: -12px;
+    margin-top: 2px;
+    padding-bottom: 4px;
+    width: 298px
+}
+
+.shopIcon_f9347f {}
+
+.presetEffectBackground_f9347f,
+.presetEffectImg_f9347f {
+    border-radius: 4px;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+    position: absolute;
+    width: 100%
+}
+
+.modal__6c516 {
+    border-radius: var(--radius-sm);
+    width: unset
+}
+
+.modalFooter__6c516 {
+    gap: var(--space-8)
+}
+
+.modalHeader__6c516 {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden
+}
+
+.modalCloseButton__6c516 {
+    padding: 0
+}
+
+.premiumIcon__6c516 {
+    margin-inline-end: 4px
+}
+
+.modalDescription__6c516 {
+    margin: 0 20px 24px
+}
+
+.discoverMorePerks__6c516 {
+    margin-inline-start: -34px
+}
+
+.modalContent__6c516 {
+    display: flex
+}
+
+.goToShopButton__6c516 {
+    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
+    background-clip: padding-box
+}
+
+.newBadge__6c516 {
+    align-items: center;
+    margin-inline-start: 4px
+}
+
+.spinner__6c516 {
+    align-self: center;
+    margin: 8px
+}
+
+.nitroUpsellContainer__6c516 {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-inline-end: auto
+}
+
+.nitroWheel__6c516 {
+    margin-inline-end: 6px
+}
+
+/*# sourceMappingURL=7ed8ed028df7ea40.css.map*/

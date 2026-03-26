@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(397927),
     m = n(73153),
     p = n(367513),
-    g = n(442433),
-    _ = n(956793),
+    _ = n(442433),
+    g = n(956793),
     f = n(401843),
     x = n(817281),
     C = n(820284),
@@ -70,8 +70,8 @@ var i = n(627968),
     eA = n(309010),
     em = n(287809),
     ep = n(977997),
-    eg = n(954571),
-    e_ = n(147036),
+    e_ = n(954571),
+    eg = n(147036),
     ef = n(203982),
     ex = n(723702),
     eC = n(837921),
@@ -156,7 +156,7 @@ class ew extends s.PureComponent {
             channel: e,
             layout: t
         } = this.props;
-        this.currentDocument.addEventListener(eE.Wb, this.handleFullScreenChange), eg.default.track(eM.HAw.VIDEO_LAYOUT_TOGGLED, {
+        this.currentDocument.addEventListener(eE.Wb, this.handleFullScreenChange), e_.default.track(eM.HAw.VIDEO_LAYOUT_TOGGLED, {
             video_layout: this.inPopout ? "popout" : t,
             ...(0, j.QS)(e.id)
         })
@@ -298,7 +298,7 @@ class ew extends s.PureComponent {
         switch (this._lastIdleProps?.onPreventIdle("menu"), this._lastIdleProps?.onActive(), e.type) {
             case eL.lp.HIDDEN_STREAM:
             case eL.lp.STREAM:
-                this.trackCallTileContextMenuImpression(e, eL.qs.STREAM), (0, g.L3)(t, async () => {
+                this.trackCallTileContextMenuImpression(e, eL.qs.STREAM), (0, _.L3)(t, async () => {
                     let {
                         default: t
                     } = await n.e("66692").then(n.bind(n, 796175));
@@ -326,7 +326,7 @@ class ew extends s.PureComponent {
                     }));
                     switch (r.type) {
                         case eM.rbe.DM:
-                            return (0, g.L3)(t, async () => {
+                            return (0, _.L3)(t, async () => {
                                 let {
                                     default: t
                                 } = await Promise.all([n.e("97262"), n.e("42128"), n.e("70303"), n.e("39778"), n.e("78298")]).then(n.bind(n, 385913));
@@ -341,7 +341,7 @@ class ew extends s.PureComponent {
                                 })
                             }, d);
                         case eM.rbe.GROUP_DM:
-                            return (0, g.L3)(t, async () => {
+                            return (0, _.L3)(t, async () => {
                                 let {
                                     default: t
                                 } = await Promise.all([n.e("97262"), n.e("42128"), n.e("62891"), n.e("30915")]).then(n.bind(n, 228006));
@@ -360,7 +360,7 @@ class ew extends s.PureComponent {
                         case eM.rbe.PUBLIC_THREAD:
                         case eM.rbe.PRIVATE_THREAD:
                             let l = r.getGuildId();
-                            return o()(null != l, "GuildID null for guild voice channel"), (0, g.L3)(t, async () => {
+                            return o()(null != l, "GuildID null for guild voice channel"), (0, _.L3)(t, async () => {
                                 let {
                                     default: t
                                 } = await Promise.all([n.e("97262"), n.e("42128"), n.e("84841"), n.e("50970")]).then(n.bind(n, 107632));
@@ -393,7 +393,7 @@ class ew extends s.PureComponent {
             inCall: l,
             mode: r
         } = this.props;
-        (0, eL.Ay)(e) && (0, k.eo)(n, ep.A, eu.A, eh.A, G.default)[0] && (_.default.selectVoiceChannel(n.id), 0 === s.filter(t => (0, P._z)(t) === e.id && t.state !== eM.XYD.ENDED).length && (0, f.A9)((0, P.Iy)(e.id), {
+        (0, eL.Ay)(e) && (0, k.eo)(n, ep.A, eu.A, eh.A, G.default)[0] && (g.default.selectVoiceChannel(n.id), 0 === s.filter(t => (0, P._z)(t) === e.id && t.state !== eM.XYD.ENDED).length && (0, f.A9)((0, P.Iy)(e.id), {
             forceMultiple: t.shiftKey
         })), l && r === eM._Of.VIDEO && (i?.id === e.id ? p.A.selectParticipant(n.id, null) : p.A.selectParticipant(n.id, e.id))
     };
@@ -404,7 +404,7 @@ class ew extends s.PureComponent {
         } = this.props, n = async () => {
             t?.applicationId != null && await (0, S.od)(t.applicationId, e.id);
             let n = e.getGuildId();
-            null == n || ed.Ay.isCurrentUserGuest(n) || (0, K.pX)((0, e_.vJ)(n)), H.openChannelCallPopout(e)
+            null == n || ed.Ay.isCurrentUserGuest(n) || (0, K.pX)((0, eg.vJ)(n)), H.openChannelCallPopout(e)
         };
         null == t || (0, N.f)() ? n() : (0, v.A)({
             onConfirm: n
@@ -578,9 +578,9 @@ class ew extends s.PureComponent {
             layout: A,
             forceShowControls: m,
             awaitingRemoteSessionInfo: p,
-            currentChannelActivities: g,
-            callContainerDimensions: _
-        } = this.props, f = A === eM.DUB.MINIMUM, x = f || A === eM.DUB.NORMAL, C = s && r === eM._Of.VIDEO, E = (g?.length ?? 0) > 0 && u.isPrivate();
+            currentChannelActivities: _,
+            callContainerDimensions: g
+        } = this.props, f = A === eM.DUB.MINIMUM, x = f || A === eM.DUB.NORMAL, C = s && r === eM._Of.VIDEO, E = (_?.length ?? 0) > 0 && u.isPrivate();
         return this._lastIdleProps = e, (0, i.jsx)(Z.A, {
             renderHeader: this.renderHeader,
             renderBottomLeft: this.renderBottomLeft,
@@ -610,7 +610,7 @@ class ew extends s.PureComponent {
                 showParticipants: a && (!x || E),
                 popoutType: t,
                 awaitingRemoteSessionInfo: p,
-                callContainerDimensions: _
+                callContainerDimensions: g
             })
         })
     }
@@ -687,9 +687,9 @@ let eV = function(e) {
     } = (0, E.Ay)(), {
         width: h = 0,
         height: m = 0,
-        ref: g
-    } = (0, E.Ay)(), {
         ref: _
+    } = (0, E.Ay)(), {
+        ref: g
     } = (0, E.Ay)(), f = (0, B.Us)(), N = (0, U.A)(), S = (0, d.bG)([eA.A], () => (N?.channelId ?? eA.A.getVoiceChannelId()) === t.id), {
         participants: v,
         filteredParticipants: j,
@@ -762,7 +762,7 @@ let eV = function(e) {
         ep && S && null == eN.A.getAllChatOpen()[t.id] && (o <= 0 || p.A.updateChatOpen(t.id, !0, "auto open screen width"))
     }, [ep, er, o, t.id, S]);
     let {
-        theme: eg
+        theme: e_
     } = (0, A.wRf)();
     return (0, i.jsx)(R.f5, {
         value: el,
@@ -800,14 +800,14 @@ let eV = function(e) {
                             width: h,
                             height: m
                         },
-                        callContainerRef: g,
-                        channelChatRef: _,
+                        callContainerRef: _,
+                        channelChatRef: g,
                         width: o,
                         maxHeight: l,
                         forceShowControls: es,
                         awaitingRemoteSessionInfo: $,
                         currentChannelActivities: ed,
-                        theme: eg,
+                        theme: e_,
                         canPopout: r,
                         popoutType: a,
                         canUseHaven: em

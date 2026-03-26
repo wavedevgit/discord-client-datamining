@@ -9,10 +9,10 @@ var n = r(627968),
     a = r(158954),
     u = r(311907),
     o = r(397927),
-    c = r(331402),
-    d = r(287809),
-    m = r(298072),
-    f = r(466459),
+    c = r(287809),
+    d = r(298072),
+    m = r(466459),
+    f = r(139136),
     h = r(623373),
     x = r(561769),
     p = r(846957),
@@ -28,7 +28,7 @@ let v = e => {
         } = e, l = (0, h.YW)(t), {
             isPurchased: a,
             isPartiallyOwnedBundle: u
-        } = (0, f.h)(t), o = l === s.R.PROFILE_EFFECT;
+        } = (0, m.h)(t), o = l === s.R.PROFILE_EFFECT;
         return (0, n.jsxs)(n.Fragment, {
             children: [(0, n.jsx)("div", {
                 className: i()(b.mA, {
@@ -48,10 +48,10 @@ let v = e => {
         let {
             product: t,
             isCardHovered: r
-        } = e, l = (0, u.bG)([d.default], () => d.default.getCurrentUser()), i = (0, h.YW)(t), a = (0, I.D)(t);
+        } = e, l = (0, u.bG)([c.default], () => c.default.getCurrentUser()), i = (0, h.YW)(t), a = (0, I.D)(t);
         switch (i) {
             case s.R.PROFILE_EFFECT:
-                return (0, n.jsx)(c.A, {
+                return (0, n.jsx)(f.A, {
                     skuId: a.skuId,
                     isHighlighted: r,
                     removeSetHeight: !0,
@@ -104,7 +104,7 @@ let v = e => {
             skuId: t,
             isCardHovered: r,
             overrideVariantIndex: l
-        } = e, i = (0, x.Vm)(t), s = (0, m.Q)(i);
+        } = e, i = (0, x.Vm)(t), s = (0, d.Q)(i);
         if (null == i) return null;
         let a = (0, h.rb)(i, l ?? s);
         return (0, n.jsx)(v, {

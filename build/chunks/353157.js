@@ -7,8 +7,8 @@ l(64700);
 var n = l(575593),
     r = l(397927),
     a = l(512213),
-    u = l(929283),
-    s = l(331402),
+    u = l(139136),
+    s = l(929283),
     o = l(798048),
     c = l(664281);
 
@@ -23,7 +23,7 @@ function d(e) {
         case n.R.PROFILE_EFFECT:
             return (0, i.jsx)("div", {
                 className: c.xC,
-                children: (0, i.jsx)(s.A, {
+                children: (0, i.jsx)(u.A, {
                     skuId: p.skuId,
                     isHighlighted: d,
                     removeSetHeight: !0,
@@ -33,7 +33,7 @@ function d(e) {
         case n.R.AVATAR_DECORATION:
             return (0, i.jsx)("div", {
                 className: c._P,
-                children: (0, i.jsx)(u.i, {
+                children: (0, i.jsx)(s.i, {
                     item: p,
                     user: l,
                     isHighlighted: d,

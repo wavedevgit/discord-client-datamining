@@ -26,8 +26,8 @@ var i = n(627968),
     S = n(769015),
     x = n(290987),
     v = n(544028),
-    b = n(189081),
-    y = n(194871),
+    y = n(189081),
+    b = n(194871),
     O = n(966846),
     L = n(531685),
     R = n(255438),
@@ -384,7 +384,7 @@ class W extends a.PureComponent {
         })
     };renderProgressPatching() {
         return (0, i.jsx)(D.A, {
-            getHistoricalTotalBytes: y.A.getHistoricalTotalBytesWritten,
+            getHistoricalTotalBytes: b.A.getHistoricalTotalBytesWritten,
             updateInterval: 5e3,
             children: this.renderProgressPatchingBody
         })
@@ -558,7 +558,7 @@ class X extends a.PureComponent {
                 children: [(0, i.jsx)(M.A, {
                     className: r()(U.e4, U.Eg),
                     title: w.intl.string(w.t.ytoXKr),
-                    getHistoricalTotalBytes: y.A.getHistoricalTotalBytesDownloaded,
+                    getHistoricalTotalBytes: b.A.getHistoricalTotalBytesDownloaded,
                     color: u.A.unsafe_rawColors.GREEN_360.resolve({
                         saturation: 1
                     }).hex(),
@@ -566,7 +566,7 @@ class X extends a.PureComponent {
                 }), (0, i.jsx)(M.A, {
                     className: r()(U.e4, U.pn),
                     title: w.intl.string(w.t.SjohhI),
-                    getHistoricalTotalBytes: y.A.getHistoricalTotalBytesWritten,
+                    getHistoricalTotalBytes: b.A.getHistoricalTotalBytesWritten,
                     color: u.A.unsafe_rawColors.BLUE_345.resolve({
                         saturation: 1
                     }).hex(),
@@ -617,14 +617,14 @@ function Z(e, t, n, i) {
             branchId: s,
             state: d,
             application: o,
-            libraryApplication: b.A.getLibraryApplication(r, s),
+            libraryApplication: y.A.getLibraryApplication(r, s),
             finished: t,
             index: l
         }), e
     }, [])
 }
-let J = (0, f.A)(c.Ay.connectStores([C.A, y.A, O.A, v.A, L.A], () => ({
-    applications: [...Z(O.A.activeItems, !1, C.A, y.A), ...Z(O.A.finishedItems, !0, C.A, y.A)],
+let J = (0, f.A)(c.Ay.connectStores([C.A, b.A, O.A, v.A, L.A], () => ({
+    applications: [...Z(O.A.activeItems, !1, C.A, b.A), ...Z(O.A.finishedItems, !0, C.A, b.A)],
     paused: O.A.paused,
     isFocused: L.A.isFocused(),
     theme: v.A.theme

@@ -36,12 +36,12 @@ let x = Object.freeze({
         left: 32,
         right: 32
     }),
-    b = {
+    y = {
         page: N.liQ.GUILD_DISCOVERY,
         object: N.ZSU.CARD,
         section: N.JJy.DISCOVER_SEARCH
     },
-    y = o().throttle(h.Cf, 1e3, {
+    b = o().throttle(h.Cf, 1e3, {
         leading: !1,
         trailing: !0
     });
@@ -73,7 +73,7 @@ function O(e) {
     a.useEffect(() => {
         M((0, g.YP)())
     }, [N]), a.useEffect(() => {
-        y({
+        b({
             loadId: t,
             searchId: D,
             query: N,
@@ -160,7 +160,7 @@ function O(e) {
                     style: n,
                     children: (0, i.jsx)(T.Ay, {
                         guildId: e,
-                        onClick: async e => await X(e, t, L, b),
+                        onClick: async e => await X(e, t, L, y),
                         onView: e => W(e)
                     })
                 }, a)

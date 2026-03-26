@@ -1,7 +1,7 @@
 /** chunk id: 690953 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => _
 });
 var i = n(627968);
 n(64700);
@@ -18,21 +18,21 @@ var s = n(417597),
     m = n(652215),
     p = n(985018);
 
-function g(e) {
+function _(e) {
     let t = (0, s.bG)([o.A], () => o.A.getChannelId() === e.id),
-        g = (0, u.A)(),
-        _ = g?.channelId === e.id,
+        _ = (0, u.A)(),
+        g = _?.channelId === e.id,
         f = (0, a.J)(e) && !e.isPrivate(),
         x = (0, a.A)(e),
         C = !(0, s.bG)([c.A], () => c.A.isInChannel(e.id)) && x || f,
         E = (0, h.A)();
-    if (!_ && 0 === E.length) return null;
+    if (!g && 0 === E.length) return null;
     let I = (0, A.A)(void 0);
-    return _ ? (0, i.jsx)(l.Drp, {
+    return g ? (0, i.jsx)(l.Drp, {
         label: p.intl.string(p.t.PlwgdU),
         id: "handoff",
         action: () => {
-            (0, d.x)(g)
+            (0, d.x)(_)
         },
         icon: I,
         leadingAccessory: {

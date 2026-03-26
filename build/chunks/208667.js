@@ -20,7 +20,7 @@ function A(e) {
         items: n,
         loading: A,
         loadMore: m
-    } = e, p = s.useRef(null), g = (0, o.A)("for-you", p);
+    } = e, p = s.useRef(null), _ = (0, o.A)("for-you", p);
     (0, c.A)({
         type: l.ImpressionTypes.VIEW,
         name: l.ImpressionNames.NOTIFICATION_CENTER_LANDING,
@@ -30,12 +30,12 @@ function A(e) {
     }, {
         disableTrack: !t
     }, [t]);
-    let _ = () => {
+    let g = () => {
         let e = p.current?.getScrollerState();
         null == e || e.scrollHeight - e.scrollTop - e.offsetHeight < 1500 && m()
     };
     return t ? 0 === n.length ? (0, i.jsx)(d.H, {}) : (0, i.jsx)(r.hD, {
-        navigator: g,
+        navigator: _,
         children: (0, i.jsx)(r.PR, {
             children: e => {
                 let {
@@ -48,7 +48,7 @@ function A(e) {
                         p.current = e, t.current = e?.getScrollerNode() ?? null
                     },
                     ...s,
-                    onScroll: _,
+                    onScroll: g,
                     children: [(0, i.jsx)(u.$, {
                         items: n
                     }), A ? (0, i.jsx)(a.y$y, {

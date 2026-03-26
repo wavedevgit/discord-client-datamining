@@ -1,6 +1,6 @@
 /** chunk id: 598733 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => m
 });
 var i = n(627968),
     l = n(64700),
@@ -13,53 +13,53 @@ var i = n(627968),
     d = n(976860),
     _ = n(71393),
     E = n(967198),
-    A = n(449054),
-    T = n(652215),
+    T = n(449054),
+    A = n(652215),
     I = n(985018),
-    N = n(236458),
-    p = n(215433);
-let h = () => {
+    p = n(236458),
+    N = n(215433);
+let m = () => {
     let e = (0, a.bG)([E.A], () => E.A.getGuildId(), []),
         t = (0, a.bG)([_.A], () => _.A.getGuild(e), [e]),
         [n, r] = l.useState(!1);
     if (null == t) return null;
-    let h = async () => {
+    let m = async () => {
         r(!0);
         try {
-            A.cf(t.id), await u.A.joinGuild(t.id, {
-                source: T.Q4z.NOTICE_BAR
+            T.cf(t.id), await u.A.joinGuild(t.id, {
+                source: A.Q4z.NOTICE_BAR
             })
         } catch {
             r(!1)
         }
     };
     return (0, i.jsxs)("div", {
-        className: s()(N.lm, p.lm),
+        className: s()(p.lm, N.lm),
         children: [(0, i.jsxs)(o.$n, {
             look: o.$n.Looks.OUTLINED,
             color: o.$n.Colors.WHITE,
             size: o.$n.Sizes.NONE,
-            className: s()(N.x6, N.aX),
-            innerClassName: N.gb,
+            className: s()(p.x6, p.aX),
+            innerClassName: p.gb,
             onClick: () => {
                 (0, d.JK)().goBack()
             },
             children: [(0, i.jsx)(c.rJJ, {
                 size: "xs",
                 color: "currentColor",
-                className: N.UE
+                className: p.UE
             }), I.intl.string(I.t["13/7kX"])]
         }), (0, i.jsx)(c.Text, {
-            className: N.wx,
+            className: p.wx,
             variant: "text-sm/normal",
             children: I.intl.string(I.t["N/y2WE"])
         }), (0, i.jsx)(o.$n, {
-            className: N.x6,
+            className: p.x6,
             look: o.$n.Looks.OUTLINED,
             color: o.$n.Colors.WHITE,
             size: o.$n.Sizes.NONE,
             submitting: n,
-            onClick: h,
+            onClick: m,
             children: I.intl.format(I.t.uHN7ny, {
                 guild: t.name
             })

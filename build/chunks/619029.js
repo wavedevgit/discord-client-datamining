@@ -1,6 +1,6 @@
 /** chunk id: 619029 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => N
 });
 var i = n(627968);
 n(64700);
@@ -14,8 +14,8 @@ var l = n(311907),
     d = n(229527),
     _ = n(81400),
     E = n(340837),
-    A = n(355097),
-    T = n(985018);
+    T = n(355097),
+    A = n(985018);
 
 function I(e) {
     let {
@@ -24,7 +24,7 @@ function I(e) {
     } = e, [l, s] = (0, _.j8)({
         guildId: t,
         analyticsLocations: n
-    }), a = s ? T.intl.string(T.t["6ndMcq"]) : T.intl.string(T.t["0eiu6J"]), o = s ? T.intl.string(T.t.S09nw4) : T.intl.string(T.t.tEttXd);
+    }), a = s ? A.intl.string(A.t["6ndMcq"]) : A.intl.string(A.t["0eiu6J"]), o = s ? A.intl.string(A.t.S09nw4) : A.intl.string(A.t.tEttXd);
     return (0, i.jsxs)(r.$Td, {
         color: r.Hv$.DANGER,
         children: [a, (0, i.jsx)(r.zr9, {
@@ -34,20 +34,20 @@ function I(e) {
     })
 }
 
-function N() {
+function p() {
     let e = (0, o.A)({
-        scrollPosition: A._F.GUILD_TAG
+        scrollPosition: T._F.GUILD_TAG
     });
     return (0, i.jsxs)(r.$Td, {
         color: r.Hv$.DANGER,
-        children: [T.intl.string(T.t.Zqlecb), (0, i.jsx)(r.zr9, {
+        children: [A.intl.string(A.t.Zqlecb), (0, i.jsx)(r.zr9, {
             onClick: e,
-            children: T.intl.string(T.t.SJehVW)
+            children: A.intl.string(A.t.SJehVW)
         })]
     })
 }
 
-function p(e) {
+function N(e) {
     let {
         analyticsLocations: t,
         ...n
@@ -61,7 +61,7 @@ function p(e) {
     return o.has(E.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || o.has(E.D.AUTOMOD_QUARANTINED_BIO) ? (0, i.jsx)(I, {
         ...n,
         analyticsLocations: r
-    }) : o.has(E.D.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, i.jsx)(N, {}) : (0, i.jsx)(I, {
+    }) : o.has(E.D.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, i.jsx)(p, {}) : (0, i.jsx)(I, {
         ...n,
         analyticsLocations: r
     })

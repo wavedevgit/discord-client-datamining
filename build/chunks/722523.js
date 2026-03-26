@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     Ay: () => x,
-    GU: () => g
+    GU: () => _
 });
 var i = n(627968);
 n(64700);
@@ -19,27 +19,27 @@ var s = n(503698),
     m = n(985018),
     p = n(58962);
 
-function g(e) {
+function _(e) {
     let {
         className: t,
         guildId: n,
         powerup: s,
         onClick: a
-    } = e, o = (0, d.A)(n, s), c = (0, u.A)(n, s), g = h.HO.has(s.skuId);
+    } = e, o = (0, d.A)(n, s), c = (0, u.A)(n, s), _ = h.HO.has(s.skuId);
     return (0, i.jsx)("div", {
         className: l()(p.FS, t),
         children: (0, i.jsx)(r.$nd, {
             variant: "primary",
             fullWidth: !0,
-            text: g ? m.intl.string(A.default.g5Ds69) : m.intl.string(m.t["0Q61kF"]),
+            text: _ ? m.intl.string(A.default.g5Ds69) : m.intl.string(m.t["0Q61kF"]),
             onClick: e => {
-                a?.(e), g ? o?.(e) : c?.()
+                a?.(e), _ ? o?.(e) : c?.()
             }
         })
     })
 }
 
-function _(e) {
+function g(e) {
     let {
         className: t,
         guildId: n,
@@ -79,7 +79,7 @@ function f(e) {
             grow: h,
             compact: !h,
             expressiveCta: r
-        }), u && (0, i.jsx)(g, {
+        }), u && (0, i.jsx)(_, {
             guildId: n,
             powerup: s
         })]
@@ -92,7 +92,7 @@ function x(e) {
     } = e;
     return (0, o.A)(t.guildId) ? (0, i.jsx)(f, {
         ...t
-    }) : (0, i.jsx)(_, {
+    }) : (0, i.jsx)(g, {
         ...t
     })
 }

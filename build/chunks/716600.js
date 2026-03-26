@@ -50,7 +50,7 @@ function m(e) {
         type: "image",
         src: I ? m.heroArtImageLinkLightTheme : m.heroArtImageLinkDarkTheme
     });
-    let b = "" !== m.modalTopPill ? () => (0, i.jsx)(c.R, {
+    let y = "" !== m.modalTopPill ? () => (0, i.jsx)(c.R, {
         text: m.modalTopPill,
         className: _.ON
     }) : void 0;
@@ -59,7 +59,7 @@ function m(e) {
         promotionId: n,
         renderModalProps: g,
         header: m.header,
-        modalTopExtra: b,
+        modalTopExtra: y,
         subHeader: m.subheader,
         subHeaderExtra: x,
         body: m.body,

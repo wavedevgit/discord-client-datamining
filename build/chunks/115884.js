@@ -54,12 +54,12 @@ function x(e) {
     } = e, n = a.useRef(null), l = a.useRef(null), [s, A] = a.useReducer(S, f), {
         canSend: x,
         hint: v,
-        error: b,
-        success: y
+        error: y,
+        success: b
     } = s;
     return a.useEffect(() => {
-        null != y && (o()(null != n.current, "Input is submitting when not mounted"), n.current.value = "", n.current.focus())
-    }, [y, n]), (0, i.jsxs)("form", {
+        null != b && (o()(null != n.current, "Input is submitting when not mounted"), n.current.value = "", n.current.focus())
+    }, [b, n]), (0, i.jsxs)("form", {
         onSubmit: e => {
             e.preventDefault(), o()(null != n.current, "Input is submitted when not mounted");
             let t = n.current.value.trim();
@@ -101,8 +101,8 @@ function x(e) {
             children: (0, i.jsxs)("div", {
                 ref: l,
                 className: r()(p.fc, {
-                    [p.kX]: y,
-                    [p.z3]: b
+                    [p.kX]: b,
+                    [p.z3]: y
                 }),
                 children: [(0, i.jsx)(d.ob, {
                     id: C,
@@ -140,8 +140,8 @@ function x(e) {
                     "data-1p-ignore": !0,
                     placeholder: t,
                     "aria-label": t,
-                    "aria-invalid": null != b || void 0,
-                    "aria-describedby": null != b ? N : T
+                    "aria-invalid": null != y || void 0,
+                    "aria-describedby": null != y ? N : T
                 }), null != v && (0, i.jsx)("div", {
                     className: p.dQ,
                     "aria-hidden": !0,
@@ -154,22 +154,22 @@ function x(e) {
                     type: "submit"
                 })]
             })
-        }), null != b && (0, i.jsx)("div", {
+        }), null != y && (0, i.jsx)("div", {
             role: "alert",
             children: (0, i.jsx)(c.Text, {
                 id: N,
                 variant: "text-sm/normal",
                 className: E.Ot,
                 color: "text-feedback-critical",
-                children: b
+                children: y
             })
-        }), null != y && (0, i.jsx)("div", {
+        }), null != b && (0, i.jsx)("div", {
             role: "status",
             children: (0, i.jsx)(c.Text, {
                 variant: "text-sm/normal",
                 className: E.Ot,
                 color: "text-feedback-positive",
-                children: y
+                children: b
             })
         })]
     })

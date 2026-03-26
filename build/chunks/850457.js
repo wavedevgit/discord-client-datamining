@@ -17,8 +17,8 @@ var s = n(311907),
     A = n(769022),
     m = n(898926),
     p = n(287809),
-    g = n(562153),
-    _ = n(996439),
+    _ = n(562153),
+    g = n(996439),
     f = n(985018),
     x = n(4568);
 
@@ -27,7 +27,7 @@ function C(e) {
         event: t,
         guildId: n,
         channelId: l
-    } = e, o = (0, s.bG)([p.default], () => p.default.getUser(t.userId)), c = (0, s.bG)([a.A], () => t.eventType === m.i.ACTIVITY_ENDED && null != t.applicationId ? a.A.getApplication(t.applicationId) : void 0), d = g.Ay.useName(n, l, o);
+    } = e, o = (0, s.bG)([p.default], () => p.default.getUser(t.userId)), c = (0, s.bG)([a.A], () => t.eventType === m.i.ACTIVITY_ENDED && null != t.applicationId ? a.A.getApplication(t.applicationId) : void 0), d = _.Ay.useName(n, l, o);
     if (null == o) return null;
     let A = t.eventType === m.i.ACTIVITY_ENDED;
     return (0, i.jsxs)("div", {
@@ -109,7 +109,7 @@ function E(e) {
 function I(e) {
     let {
         channel: t
-    } = e, [n, l] = (0, s.bG)([A.A], () => [A.A.getHistory(t.id), A.A.getHistoryVersion(t.id)], [t.id], _.D);
+    } = e, [n, l] = (0, s.bG)([A.A], () => [A.A.getHistory(t.id), A.A.getHistoryVersion(t.id)], [t.id], g.D);
     return 0 === n.length ? null : (0, i.jsxs)("div", {
         className: x.kL,
         children: [(0, i.jsx)(E, {

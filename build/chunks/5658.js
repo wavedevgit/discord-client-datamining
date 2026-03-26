@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(976860),
     m = n(734057),
     p = n(510560),
-    g = n(572448),
-    _ = n(955454),
+    _ = n(572448),
+    g = n(955454),
     f = n(502754),
     x = n(652215),
     C = n(985018),
@@ -92,7 +92,7 @@ let I = s.memo(function(e) {
         return (0, i.jsx)("div", {
             className: E.Ix,
             children: (0, i.jsx)(c.Fmo, {
-                component: (0, i.jsx)(g.A, {
+                component: (0, i.jsx)(_.A, {
                     channel: o,
                     gotoChannel: C,
                     mentionCount: t.mentionCount,
@@ -114,7 +114,7 @@ let I = s.memo(function(e) {
                     channel: t,
                     channelRecord: o,
                     gotoChannel: C
-                }) : "forum" === t.type ? (0, i.jsx)(_.A, {
+                }) : "forum" === t.type ? (0, i.jsx)(g.A, {
                     channel: t,
                     channelRecord: o,
                     deleteChannel: l

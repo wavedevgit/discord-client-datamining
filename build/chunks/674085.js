@@ -4,19 +4,19 @@ n.d(t, {
     A: () => l
 });
 var r = n(627968),
-    a = n(158954),
-    i = n(933297);
+    i = n(158954),
+    a = n(933297);
 let l = function(e) {
     let {
         badge: t
     } = e;
     switch (t.badgeType) {
-        case i.Xi.NEW:
-            return (0, r.jsx)(a.Exy, {
+        case a.Xi.NEW:
+            return (0, r.jsx)(i.Exy, {
                 type: "new",
                 variant: "brand"
             });
-        case i.Xi.STRONGLY_DISCOURAGED_CUSTOM:
+        case a.Xi.STRONGLY_DISCOURAGED_CUSTOM:
             let {
                 StronglyDiscouragedCustomComponent: n
             } = t;

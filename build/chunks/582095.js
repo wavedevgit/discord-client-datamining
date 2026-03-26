@@ -1,6 +1,6 @@
 /** chunk id: 582095 params = (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => b
 });
 var i = n(311907),
     a = n(73153),
@@ -26,8 +26,8 @@ var i = n(311907),
     S = n(652215),
     x = n(360469),
     v = n(165610),
-    b = n(731854);
-class y {
+    y = n(731854);
+class b {
     rpcServer;
     transports;
     rpcCommandHandlers;
@@ -97,7 +97,7 @@ class y {
     handleSpeaking = e => {
         if (0 === this.rpcServer.subscriptions.length) return;
         let t = 0 !== e.speakingFlags ? S.ZE4.SPEAKING_START : S.ZE4.SPEAKING_STOP;
-        if (e.context === b.x.DEFAULT) {
+        if (e.context === y.x.DEFAULT) {
             let n = m.A.getVoiceChannelId();
             if (null != n) {
                 let i = o.A.getChannel(n);

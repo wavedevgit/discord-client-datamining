@@ -1,5 +1,5 @@
 /** chunk id: 371664 params = (module,exports,require) **/
-i.d(e, {
+i.d(t, {
     A: () => a,
     K: () => s
 });
@@ -8,25 +8,25 @@ var n = i(627968),
     r = i(953727);
 let s = 8;
 
-function a(t) {
+function a(e) {
     let {
-        width: e = 80,
+        width: t = 80,
         height: i = 28,
         color: a = "currentColor",
         foreground: o,
         ...d
-    } = t, u = `pill-frame-pattern-${i}`, c = l.useMemo(() => {
-        let t;
-        return t = i - 8, `m0 0h8v${i}h-8zm4 2c-1.1045695 0-2 .8954305-2 2v${t}c0 1.1045695.8954305 2 2 2s2-.8954305 2-2v-${t}c0-1.1045695-.8954305-2-2-2z`
+    } = e, u = `pill-frame-pattern-${i}`, c = l.useMemo(() => {
+        let e;
+        return e = i - 8, `m0 0h8v${i}h-8zm4 2c-1.1045695 0-2 .8954305-2 2v${e}c0 1.1045695.8954305 2 2 2s2-.8954305 2-2v-${e}c0-1.1045695-.8954305-2-2-2z`
     }, [i]);
     return (0, n.jsxs)("svg", {
         ...(0, r.A)(d),
-        width: e,
+        width: t,
         height: i,
-        viewBox: `0 0 ${e} ${i}`,
+        viewBox: `0 0 ${t} ${i}`,
         children: [(0, n.jsx)("pattern", {
             id: u,
-            width: s / e,
+            width: s / t,
             height: "1",
             children: (0, n.jsx)("path", {
                 d: c,

@@ -32,7 +32,7 @@ let m = (0, s.debounce)(c.Ay.trackWithMetadata, 500),
             cta: S,
             ctaColor: x,
             centerText: v,
-            className: b
+            className: y
         } = e;
         a.useEffect(() => {
             m(A.HAw.CHANNEL_NOTICE_VIEWED, {
@@ -40,8 +40,8 @@ let m = (0, s.debounce)(c.Ay.trackWithMetadata, 500),
                 guild_id: t.id
             })
         }, [t.id, g]);
-        let y = null;
-        "function" == typeof S ? y = S() : null != S && (y = (0, i.jsx)(o.$n, {
+        let b = null;
+        "function" == typeof S ? b = S() : null != S && (b = (0, i.jsx)(o.$n, {
             "data-migration-pending": !0,
             className: _.x6,
             size: o.$n.Sizes.SMALL,
@@ -78,7 +78,7 @@ let m = (0, s.debounce)(c.Ay.trackWithMetadata, 500),
         }));
         let R = null != E ? `${E}px` : "16px";
         return (0, i.jsxs)("div", {
-            className: r()(_.kL, b),
+            className: r()(_.kL, y),
             children: [!0 === C ? null : (0, i.jsx)(d.DUT, {
                 onClick: () => {
                     c.Ay.trackWithMetadata(A.HAw.CHANNEL_NOTICE_CLOSED, {
@@ -107,7 +107,7 @@ let m = (0, s.debounce)(c.Ay.trackWithMetadata, 500),
                 }) : s
             }), (0, i.jsxs)("div", {
                 className: _.iU,
-                children: [O, L, y]
+                children: [O, L, b]
             })]
         })
     }

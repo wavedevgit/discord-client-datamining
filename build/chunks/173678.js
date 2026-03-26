@@ -1,8 +1,8 @@
 /** chunk id: 173678 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    M: () => g,
-    z: () => _
+    M: () => _,
+    z: () => g
 });
 var i = n(627968),
     s = n(575593),
@@ -27,17 +27,17 @@ function p(e, t, n) {
     })
 }
 
-function g(e, t) {
+function _(e, t) {
     let {
         moreCount: n,
         profileOwner: l,
         analyticsLocations: o,
         onViewWishlist: u,
         isSingleCard: m = !1,
-        wishlistId: g,
-        showTypeTooltip: _ = !1,
+        wishlistId: _,
+        showTypeTooltip: g = !1,
         cardSize: f
-    } = t, x = null != e.bundleItems && e.bundleItems.length > 0, C = null != n && n > 0, E = _ && !C, I = C ? h.intl.string(h.t.TxBQzD) : h.intl.string(h.t.pLPjsb), N = {
+    } = t, x = null != e.bundleItems && e.bundleItems.length > 0, C = null != n && n > 0, E = g && !C, I = C ? h.intl.string(h.t.TxBQzD) : h.intl.string(h.t.pLPjsb), N = {
         title: E ? h.intl.string(h.t.HFhcqh) : I,
         body: E ? h.intl.string(h.t.ilhtIa) : void 0,
         renderIcon: E ? r.GM : void 0,
@@ -72,18 +72,18 @@ function g(e, t) {
         moreCount: n,
         isSingleCard: m,
         wishlistItem: e,
-        wishlistId: g,
+        wishlistId: _,
         cardSize: f
     }, e.skuId)
 }
 
-function _(e, t) {
+function g(e, t) {
     let {
         profileOwner: n,
         analyticsLocations: r,
         wishlistId: a,
         onViewWishlist: o
-    } = t, c = null != e.bundleItems && e.bundleItems.length > 0, d = g(e, {
+    } = t, c = null != e.bundleItems && e.bundleItems.length > 0, d = _(e, {
         profileOwner: n,
         analyticsLocations: r,
         onViewWishlist: o,

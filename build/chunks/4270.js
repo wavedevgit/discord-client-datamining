@@ -1,6 +1,6 @@
 /** chunk id: 4270 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => y
 });
 var i = n(627968),
     a = n(64700),
@@ -27,13 +27,13 @@ var i = n(627968),
     x = n(985018),
     v = n(69081);
 
-function b() {
+function y() {
     let e = a.useRef(null),
         t = (0, I.A)(),
         n = (0, f.I)(),
         l = (0, g.r)(),
-        b = (0, c.w)(),
-        y = (0, A.A)("message-requests-spam-list"),
+        y = (0, c.w)(),
+        b = (0, A.A)("message-requests-spam-list"),
         {
             channelId: O
         } = (0, E.N)(),
@@ -74,7 +74,7 @@ function b() {
             className: v.Gf,
             children: [x.intl.format(x.t.C79Edh, {
                 count: n
-            }), b && n > 0 ? (0, i.jsxs)(i.Fragment, {
+            }), y && n > 0 ? (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(d.Text, {
                     className: v.sg,
                     variant: "eyebrow",
@@ -88,11 +88,11 @@ function b() {
                     "aria-label": x.intl.string(x.t.p6t7RC)
                 })]
             }) : null]
-        }, "message-requests-spam-title"), [n, P, b]);
+        }, "message-requests-spam-title"), [n, P, y]);
     return 0 === t.length ? (0, i.jsx)(C.A, {
         section: N.zz.SPAM
     }) : (0, i.jsx)(s.hD, {
-        navigator: y,
+        navigator: b,
         children: (0, i.jsx)(s.PR, {
             children: n => {
                 let {

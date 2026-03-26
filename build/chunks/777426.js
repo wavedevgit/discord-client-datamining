@@ -32,8 +32,8 @@ function v(e) {
         ref: t,
         isFocused: l,
         isActive: v,
-        status: b,
-        activities: y,
+        status: y,
+        activities: b,
         applicationStream: O,
         isGameRelationship: L,
         isMobile: R,
@@ -93,15 +93,15 @@ function v(e) {
             children: [(0, i.jsx)(g.A, {
                 className: x.Cv,
                 user: j,
-                status: b,
+                status: y,
                 isMobile: R,
                 isVR: P,
                 subText: (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(m.A, {
                         hovered: e,
-                        activities: y,
+                        activities: b,
                         applicationStream: O,
-                        status: b,
+                        status: y,
                         user: j,
                         userIgnored: E.A.isIgnored(j.id)
                     }), (0, i.jsxs)("div", {

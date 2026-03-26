@@ -1,6 +1,6 @@
 /** chunk id: 624458 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => T
 });
 var i = n(562465),
     l = n(73153),
@@ -13,7 +13,7 @@ var i = n(562465),
     d = n(212455),
     _ = n(652215),
     E = n(985018);
-let A = {
+let T = {
     fetchGuildJoinRequest: async e => {
         let t = await i.Bo.get({
                 url: _.Rsh.GUILD_JOIN_REQUEST_BY_ID(e),

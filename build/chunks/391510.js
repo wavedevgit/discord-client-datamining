@@ -100,13 +100,13 @@ let E = ["1402418171662569542"],
                 let {
                     assets: x,
                     party: v,
-                    secrets: b,
-                    timestamps: y,
+                    secrets: y,
+                    timestamps: b,
                     buttons: O,
                     type: L
                 } = l;
-                if (null == L && (l.type = p.$pd.PLAYING), null != b) {
-                    let e = a().values(b).filter(e => !!e);
+                if (null == L && (l.type = p.$pd.PLAYING), null != y) {
+                    let e = a().values(y).filter(e => !!e);
                     if (null != v && a().intersection(e, [v.id]).length > 0 && !E.includes(n.application.id)) throw new _.A({
                         errorCode: p.Lw6.INVALID_ACTIVITY_SECRET
                     }, "secrets cannot match the party id");
@@ -117,8 +117,8 @@ let E = ["1402418171662569542"],
                         errorCode: p.Lw6.INVALID_ACTIVITY_SECRET
                     }, "secrets cannot currently be sent with buttons")
                 }
-                if (null != O && (m.button_urls = O.map(e => e.url), l.buttons = O.map(e => e.label)), l.metadata = m, null != y)
-                    for (let e of Object.keys(y)) Date.now().toString().length - y[e].toString().length > 2 && (y[e] = Math.floor(y[e] * h.A.Millis.SECOND));
+                if (null != O && (m.button_urls = O.map(e => e.url), l.buttons = O.map(e => e.label)), l.metadata = m, null != b)
+                    for (let e of Object.keys(b)) Date.now().toString().length - b[e].toString().length > 2 && (b[e] = Math.floor(b[e] * h.A.Millis.SECOND));
                 if (null == x) t = Promise.resolve([]);
                 else {
                     if (null == n.application || null == n.application.id) throw Error();

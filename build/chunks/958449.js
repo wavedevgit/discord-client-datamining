@@ -19,16 +19,16 @@ function o(e) {
             onMouseLeave: A,
             renderNUXHighlight: m,
             buttonRef: p,
-            ...g
+            ..._
         } = e,
-        _ = u ? r.l : r.A;
+        g = u ? r.l : r.A;
     n = c ? d ? a.intl.string(a.t.S5anIc) : a.intl.string(a.t.q3O3J8) : o ? a.intl.string(a.t.fjBNo1) : a.intl.string(a.t.uQn9B8);
     let {
         Component: f,
         events: x,
         play: C
     } = (0, l.c)(c ? "disable" : "enable");
-    return s.useEffect(() => () => C(), [c, C]), (0, i.jsx)(_, {
+    return s.useEffect(() => () => C(), [c, C]), (0, i.jsx)(g, {
         buttonRef: p,
         isTrayButton: !0,
         label: n,
@@ -42,6 +42,6 @@ function o(e) {
         onMouseLeave: e => {
             A?.(e), x.onMouseLeave()
         },
-        ...g
+        ..._
     })
 }

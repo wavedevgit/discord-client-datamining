@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(793574),
     m = n(688810),
     p = n(139286),
-    g = n(713517),
-    _ = n(71393),
+    _ = n(713517),
+    g = n(71393),
     f = n(576705),
     x = n(954571),
     C = n(778768),
@@ -45,12 +45,12 @@ function T(e) {
         }
     });
     let D = (0, c.bG)([f.A], () => f.A.can(E.xBc.CREATE_INSTANT_INVITE, t), [t]),
-        G = (0, c.bG)([_.A], () => _.A.getGuild(t.guild_id)),
+        G = (0, c.bG)([g.A], () => g.A.getGuild(t.guild_id)),
         [U, P] = s.useState(!1),
         k = s.useRef(null),
         {
             isHoveringOrFocusing: w
-        } = (0, g.A)(D ? T : k),
+        } = (0, _.A)(D ? T : k),
         [V, B] = s.useState(!1),
         H = w || V,
         F = s.useCallback(function() {

@@ -2,22 +2,22 @@
 a.d(t, {
     A: () => i
 });
-var r = a(64700),
-    n = a(884362),
-    l = a(311907),
-    s = a(775602);
+var s = a(64700),
+    l = a(884362),
+    n = a(311907),
+    r = a(775602);
 
 function i(e, t, a) {
-    let i = (0, l.bG)([s.A], () => s.A.keyboardModeEnabled),
-        o = r.useCallback(e => {
+    let i = (0, n.bG)([r.A], () => r.A.keyboardModeEnabled),
+        d = s.useCallback(e => {
             let a = document.querySelector(e),
-                r = t.current;
-            null != a && null != r && (a.focus(), r.scrollIntoViewNode({
+                s = t.current;
+            null != a && null != s && (a.focus(), s.scrollIntoViewNode({
                 node: a,
                 padding: 80
             }))
         }, [t]),
-        d = r.useCallback(() => new Promise(e => {
+        A = s.useCallback(() => new Promise(e => {
             let a = t.current;
             if (null == a) return e();
             a.scrollTo({
@@ -25,7 +25,7 @@ function i(e, t, a) {
                 callback: () => requestAnimationFrame(() => e())
             })
         }), [t]),
-        c = r.useCallback(() => new Promise(e => {
+        o = s.useCallback(() => new Promise(e => {
             let a = t.current;
             if (null == a) return e();
             a.scrollTo({
@@ -33,12 +33,12 @@ function i(e, t, a) {
                 callback: () => requestAnimationFrame(() => e())
             })
         }), [t]);
-    return (0, n.Ay)({
+    return (0, l.Ay)({
         id: e,
         isEnabled: i,
-        setFocus: o,
-        scrollToStart: d,
-        scrollToEnd: c,
+        setFocus: d,
+        scrollToStart: A,
+        scrollToEnd: o,
         orientation: a?.orientation
     })
 }

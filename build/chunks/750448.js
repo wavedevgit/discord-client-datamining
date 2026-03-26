@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(583613),
     m = n(652215),
     p = n(985018);
-let g = "app-download-item",
-    _ = "add-server-item";
+let _ = "app-download-item",
+    g = "add-server-item";
 
 function f() {
     return !1
@@ -25,9 +25,9 @@ function f() {
 
 function x(e) {
     let t = o.default.getMutableGuildStates();
-    return e === m.sFm.SERVER_DISCOVERY_BADGE && !u.A.hasViewed(m.sFm.SERVER_DISCOVERY_BADGE) || e !== g && e !== _ && t[e ?? "null"]?.highImportanceMentionCount > 0
+    return e === m.sFm.SERVER_DISCOVERY_BADGE && !u.A.hasViewed(m.sFm.SERVER_DISCOVERY_BADGE) || e !== _ && e !== g && t[e ?? "null"]?.highImportanceMentionCount > 0
 }
-let C = (0, A.L_)((e, t, n) => ["null", ...t, ...e, _, m.sFm.E3_SERVER_DISCOVERY_BADGE, g]),
+let C = (0, A.L_)((e, t, n) => ["null", ...t, ...e, g, m.sFm.E3_SERVER_DISCOVERY_BADGE, _]),
     E = s.forwardRef(function(e, t) {
         let n = (0, l.yK)([d.Ay, c.A, o.default], () => C(d.Ay.getGuildFolders(), c.A.getUnreadPrivateChannelIds(), o.default.getStoreChangeSentinel())),
             s = (0, l.bG)([h.A], () => h.A.isFocused()),

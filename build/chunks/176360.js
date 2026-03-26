@@ -1,7 +1,7 @@
 /** chunk id: 176360 params = (module,exports,require) **/
 let i, a;
 n.d(t, {
-    A: () => y
+    A: () => b
 });
 var l = n(735438),
     r = n.n(l),
@@ -37,7 +37,7 @@ function v() {
     let e = f.getGuildId();
     I = E = x(f), null == E[T] && (T = e), a = null != C, i = c.r(f, C), N = null, p = !1, g = h.XlH.CLOSED, m.clear()
 }
-class b extends s.Ay.Store {
+class y extends s.Ay.Store {
     static displayName = "ChannelSettingsPermissionsStore";
     initialize() {
         this.waitFor(u.A, A.A)
@@ -79,7 +79,7 @@ class b extends s.Ay.Store {
         return S
     }
 }
-let y = new b(d.h, {
+let b = new y(d.h, {
     CHANNEL_SETTINGS_SET_SECTION: function(e) {
         let {
             section: t

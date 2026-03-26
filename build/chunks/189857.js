@@ -2,20 +2,20 @@
 "use strict";
 n.d(t, {
     H: () => l,
-    Z: () => i
+    Z: () => a
 }), n(321073);
 var r = n(963935),
-    a = n(890934);
+    i = n(890934);
 
-function i(e, t) {
+function a(e, t) {
     let n = [],
-        i = new Map,
+        a = new Map,
         l = new Map,
         s = new Map;
-    return (0, a.A)(e, e => {
+    return (0, i.A)(e, e => {
         if (!("getDismissibleBadges" in e)) return;
-        let a = e.getDismissibleBadges?.();
-        if (null == a) return;
+        let i = e.getDismissibleBadges?.();
+        if (null == i) return;
         let o = t.entry(e.key);
         if (o?.parentSidebarItemKey == null) return;
         let c = null;
@@ -27,20 +27,20 @@ function i(e, t) {
             sidebarItemKey: o.parentSidebarItemKey,
             categoryKey: c
         };
-        a.forEach(e => (function(e, t) {
+        i.forEach(e => (function(e, t) {
             let {
                 dismissibleContent: r
             } = e;
-            n.push(r), i.set(r, t), s.set(r, e);
-            let a = l.get(t.sidebarItemKey) ?? new Set;
-            if (a.add(r), l.set(t.sidebarItemKey, a), null != t.categoryKey) {
+            n.push(r), a.set(r, t), s.set(r, e);
+            let i = l.get(t.sidebarItemKey) ?? new Set;
+            if (i.add(r), l.set(t.sidebarItemKey, i), null != t.categoryKey) {
                 let e = l.get(t.categoryKey) ?? new Set;
                 e.add(r), l.set(t.categoryKey, e)
             }
         })(e, u))
     }), {
         allDismissibleContents: n,
-        dismissibleContentToNodeKeys: i,
+        dismissibleContentToNodeKeys: a,
         nodeKeyToDismissibleContents: l,
         dismissibleContentToBadge: s
     }
@@ -49,7 +49,7 @@ function i(e, t) {
 function l(e, t, n) {
     let {
         nodeKeyToDismissibleContents: r,
-        dismissibleContentToBadge: a
-    } = n, i = r.get(e);
-    return null != t && null != i && i.has(t) ? a.get(t) : null
+        dismissibleContentToBadge: i
+    } = n, a = r.get(e);
+    return null != t && null != a && a.has(t) ? i.get(t) : null
 }

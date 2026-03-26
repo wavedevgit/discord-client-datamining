@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(260509),
     m = n(71393),
     p = n(287809),
-    g = n(531053),
-    _ = n(606256),
+    _ = n(531053),
+    g = n(606256),
     f = n(652215),
     x = n(819638),
     C = n(985018),
@@ -52,7 +52,7 @@ function b(e) {
         lastTargetNode: n
     } = e, a = (0, l.yK)([m.A], () => m.A.getGuildsArray()), b = (0, l.bG)([p.default], () => p.default.getCurrentUser()), S = s.useMemo(() => a.some(e => (0, A.bM)(e, b)), [a, b]), T = (0, r.red)(e => (0, r.fDT)(e, x.fc)), {
         analyticsLocations: v
-    } = (0, o.Ay)(), y = (0, i.jsx)(_.A, {
+    } = (0, o.Ay)(), y = (0, i.jsx)(g.A, {
         showPill: !1,
         id: "create-join-button",
         onClick: () => {
@@ -80,7 +80,7 @@ function b(e) {
             tutorialId: S ? "create-more-servers" : "create-first-server",
             inlineSpecs: I,
             position: "right",
-            children: [y, null != n && (0, i.jsx)(g.Ay, {
+            children: [y, null != n && (0, i.jsx)(_.Ay, {
                 name: C.intl.string(C.t["45xjM5"]),
                 targetNode: n,
                 below: !0,

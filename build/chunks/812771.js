@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     A: () => f,
-    X: () => g
+    X: () => _
 });
 var i, s = n(627968),
     l = n(64700),
@@ -16,9 +16,9 @@ var i, s = n(627968),
     A = n(964404),
     m = n(743898),
     p = n(53454),
-    g = ((i = {})[i.PostSidebar = 0] = "PostSidebar", i[i.ThreadSidebar = 1] = "ThreadSidebar", i[i.CallChatSidebar = 2] = "CallChatSidebar", i[i.MessageRequestSidebar = 3] = "MessageRequestSidebar", i[i.HomeSidebar = 4] = "HomeSidebar", i);
+    _ = ((i = {})[i.PostSidebar = 0] = "PostSidebar", i[i.ThreadSidebar = 1] = "ThreadSidebar", i[i.CallChatSidebar = 2] = "CallChatSidebar", i[i.MessageRequestSidebar = 3] = "MessageRequestSidebar", i[i.HomeSidebar = 4] = "HomeSidebar", i);
 
-function _(e) {
+function g(e) {
     let {
         resizableNode: t,
         onResize: n,
@@ -47,7 +47,7 @@ function f(e) {
         onWidthChange: i,
         children: r,
         floatingLayer: h
-    } = e, g = l.useRef(null), f = function(e) {
+    } = e, _ = l.useRef(null), f = function(e) {
         switch (e) {
             case 0:
                 return "postSidebarWidth";
@@ -90,14 +90,14 @@ function f(e) {
                     style: {
                         width: S
                     }
-                }), !I && (0, s.jsx)(_, {
+                }), !I && (0, s.jsx)(g, {
                     minWidth: 450,
                     maxWidth: n,
-                    resizableNode: g,
+                    resizableNode: _,
                     onResize: C,
                     onResizeEnd: E
                 }), (0, s.jsx)("div", {
-                    ref: g,
+                    ref: _,
                     className: a()(p.kL, {
                         [p.DU]: I
                     }),

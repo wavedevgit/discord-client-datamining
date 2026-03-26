@@ -17,8 +17,8 @@ var s = n(163126),
     A = n(503062),
     m = n(51943),
     p = n(946356),
-    g = n(359656),
-    _ = n(985018),
+    _ = n(359656),
+    g = n(985018),
     f = n(506157);
 
 function x(e) {
@@ -36,9 +36,9 @@ function x(e) {
     } = (0, c.A)(t), S = !t.bot && null != I && I > 0, T = null != b && b.length > 0;
     return S || T ? (0, i.jsxs)(p.A.Overlay, {
         className: f.Lw,
-        children: [T && (0, i.jsx)(g.A, {
+        children: [T && (0, i.jsx)(_.A, {
             section: "MUTUAL_GUILDS",
-            header: _.intl.string(_.t["4lTDZq"]),
+            header: g.intl.string(g.t["4lTDZq"]),
             listClassName: f.p_,
             items: b.map(e => {
                 let {
@@ -54,9 +54,9 @@ function x(e) {
             })
         }), T && S && (0, i.jsx)(h.A, {
             className: f.yF
-        }), S && (0, i.jsx)(g.A, {
+        }), S && (0, i.jsx)(_.A, {
             section: "MUTUAL_FRIENDS",
-            header: _.intl.string(_.t["0mTJ3j"]),
+            header: g.intl.string(g.t["0mTJ3j"]),
             listClassName: f.p_,
             onExpand: () => (0, d.A)(t.id, E),
             items: null == N ? Array.from({

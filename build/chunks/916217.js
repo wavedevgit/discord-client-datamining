@@ -7,9 +7,9 @@ var i = t(627968),
     r = t(397927),
     a = t(793574),
     l = t(688810),
-    o = t(915089),
-    d = t(713517),
-    c = t(182592),
+    o = t(351966),
+    d = t(915089),
+    c = t(713517),
     u = t(562153),
     A = t(183555),
     _ = t(950191),
@@ -42,7 +42,7 @@ function O(e) {
         transitionState: k,
         onClose: G,
         sourceAnalyticsLocations: B = []
-    } = e, U = t === N.ME ? void 0 : t, D = (0, _.Ay)(n.id, U), w = u.Ay.getName(U, O, n), F = (0, o.GV)(), {
+    } = e, U = t === N.ME ? void 0 : t, D = (0, _.Ay)(n.id, U), w = u.Ay.getName(U, O, n), F = (0, d.GV)(), {
         analyticsLocations: V
     } = (0, l.Ay)([...B, a.A.USER_PROFILE_MODAL]), z = (0, A.pb)({
         layout: "MODAL",
@@ -52,7 +52,7 @@ function O(e) {
         channelId: O,
         messageId: R,
         roleId: S
-    }), W = s.useRef(null), H = (0, d.M)(W);
+    }), W = s.useRef(null), H = (0, c.M)(W);
     return (0, i.jsx)(l.f5, {
         value: V,
         children: (0, i.jsx)(A.of, {
@@ -147,7 +147,7 @@ function O(e) {
                             })]
                         })]
                     })
-                }), D?.profileEffect != null && (0, i.jsx)(c.A, {
+                }), D?.profileEffect != null && (0, i.jsx)(o.A, {
                     skuId: D?.profileEffect?.skuId,
                     isHovering: H
                 })]

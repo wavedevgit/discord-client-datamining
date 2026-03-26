@@ -18,8 +18,8 @@ var s = n(284009),
     A = n(375492),
     m = n(576705),
     p = n(709562),
-    g = n(652215),
-    _ = n(985018);
+    _ = n(652215),
+    g = n(985018);
 
 function f(e) {
     let {
@@ -49,7 +49,7 @@ function f(e) {
         })
     }, {
         modalKey: "stream-invite-modal",
-        contextKey: o === g.BRT.POPOUT ? a.KX8 : a.SYi
+        contextKey: o === _.BRT.POPOUT ? a.KX8 : a.SYi
     })
 }
 
@@ -72,8 +72,8 @@ function x(e) {
         ...R
     } = e, O = (0, u.Us)(), {
         parentAnalyticsLocation: L
-    } = (0, c.Ay)(), M = s?.getGuildId(), D = (0, r.bG)([h.A], () => null != M ? h.A.getGuild(M) : null, [M]), G = (0, r.bG)([A.A], () => null != t ? A.A.getApplicationActivity(t) : void 0), U = null == t || N ? a.DpX : a.dCJ, P = _.intl.string(_.t["6F9ivu"]);
-    return (null != t && (P = _.intl.string(_.t["OzOM/q"])), null != n && (P = _.intl.string(_.t["6VQaqd"])), null != G && b) ? (0, i.jsx)(p.A, {
+    } = (0, c.Ay)(), M = s?.getGuildId(), D = (0, r.bG)([h.A], () => null != M ? h.A.getGuild(M) : null, [M]), G = (0, r.bG)([A.A], () => null != t ? A.A.getApplicationActivity(t) : void 0), U = null == t || N ? a.DpX : a.dCJ, P = g.intl.string(g.t["6F9ivu"]);
+    return (null != t && (P = g.intl.string(g.t["OzOM/q"])), null != n && (P = g.intl.string(g.t["6VQaqd"])), null != G && b) ? (0, i.jsx)(p.A, {
         onClick: () => {
             null != L && (0, d.X)(L, d.O.INVITE), o.qf(G, !1, O)
         },
@@ -84,7 +84,7 @@ function x(e) {
         size: v,
         buttonText: y,
         color: j ?? void 0
-    }) : null != D && null != s && m.A.can(g.xBc.CREATE_INSTANT_INVITE, s) ? (0, i.jsx)(p.A, {
+    }) : null != D && null != s && m.A.can(_.xBc.CREATE_INSTANT_INVITE, s) ? (0, i.jsx)(p.A, {
         onClick: () => {
             l()(null != D, "guild cannot be null"), l()(null != s, "channel cannot be null"), null != L && (0, d.X)(L, d.O.INVITE), f({
                 guild: D,
@@ -95,7 +95,7 @@ function x(e) {
                 exitFullScreen: x,
                 analyticsLocation: E,
                 guildScheduledEvent: I,
-                source: s.isGuildStageVoice() ? g.PE1.STAGE_CHANNEL : g.PE1.STREAM_INVITE
+                source: s.isGuildStageVoice() ? _.PE1.STAGE_CHANNEL : _.PE1.STREAM_INVITE
             })
         },
         iconComponent: U,

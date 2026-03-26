@@ -8,8 +8,8 @@ var i = n(627968),
     a = n.n(l),
     s = n(397927),
     o = n(927018),
-    d = n(64585),
-    c = n(906688),
+    c = n(64585),
+    d = n(906688),
     u = n(263244);
 let h = t => {
     let {
@@ -72,30 +72,30 @@ function _(t) {
         description: _,
         rarity: A,
         hideDescriptionUntilUnlock: C,
-        onAction: g
+        onAction: E
     } = e, {
-        color: E
+        color: g
     } = (0, o.ag)(A);
     r.useEffect(() => {
         let t = setTimeout(() => {
-            d.A.playAchievementUnlockSound()
+            c.A.playAchievementUnlockSound()
         }, 50);
         return () => {
             clearTimeout(t)
         }
     }, []);
-    let T = null != g && n,
+    let T = null != E && n,
         I = T ? s.DUT : "div";
     return (0, i.jsxs)(I, {
         className: a()(u.kL, T && u.b),
         onClick: () => {
-            T && g()
+            T && E()
         },
         children: [(0, i.jsx)("div", {
             className: u.zc,
-            children: (0, i.jsx)(c.A, {
+            children: (0, i.jsx)(d.A, {
                 achievementId: e.id,
-                size: c.A.Sizes.SIZE_40,
+                size: d.A.Sizes.SIZE_40,
                 unlocked: n
             })
         }), (0, i.jsxs)("div", {
@@ -112,7 +112,7 @@ function _(t) {
         }), (0, i.jsx)("div", {
             className: u.Db,
             children: (0, i.jsx)(h, {
-                color: E
+                color: g
             })
         })]
     })

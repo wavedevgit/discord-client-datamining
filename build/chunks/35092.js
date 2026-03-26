@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(44120),
     m = n(317560),
     p = n(533406),
-    g = n(183555),
-    _ = n(661492),
+    _ = n(183555),
+    g = n(661492),
     f = n(146423),
     x = n(662349),
     C = n(216020),
@@ -43,7 +43,7 @@ function j(e) {
         singleCardInfo: A
     } = e, {
         trackUserProfileWishlistAction: m
-    } = (0, g.NJ)(), p = s.useCallback(() => {
+    } = (0, _.NJ)(), p = s.useCallback(() => {
         m({
             action: S.Mq.PRESS_WISHLIST_BREADCRUMB_CARD,
             skuId: t.id,
@@ -84,7 +84,7 @@ function j(e) {
                 skuPreviewStyle: r()(v.ho, d),
                 onClick: p,
                 "aria-label": T.intl.formatToPlainString(T.t.ZBB4Ty, {
-                    productName: (0, _.TC)(t)
+                    productName: (0, g.TC)(t)
                 }),
                 onHoverOrFocusChange: R,
                 children: (0, i.jsx)(x.A, {
@@ -119,7 +119,7 @@ function R(e) {
         }, {
             analyticsLocations: o
         })
-    }, [t, n, o]), g = s.useCallback(() => {
+    }, [t, n, o]), _ = s.useCallback(() => {
         a?.guildId != null && (0, m.R)({
             skuId: t.id,
             applicationId: t.applicationId,
@@ -129,7 +129,7 @@ function R(e) {
             giftingOrigin: b.vQ.USER_PROFILE_WISHLIST,
             analyticsLocations: o
         })
-    }, [a?.guildId, t.id, t.applicationId, n, o]), _ = s.useMemo(() => ({
+    }, [a?.guildId, t.id, t.applicationId, n, o]), g = s.useMemo(() => ({
         title: t.name,
         description: T.intl.format(T.t["CqpEC+"], {
             applicationName: a?.name
@@ -139,9 +139,9 @@ function R(e) {
         sku: t,
         analyticsLocations: o,
         wishlistOwner: n,
-        onDetailsClick: g,
+        onDetailsClick: _,
         onPurchaseClick: A,
-        singleCardInfo: _,
+        singleCardInfo: g,
         ...r
     })
 }

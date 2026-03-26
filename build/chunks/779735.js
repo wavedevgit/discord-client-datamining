@@ -26,18 +26,18 @@ let g = e => {
         emailToken: f,
         isAuthenticated: b = !0
     } = e, C = (0, o.GV)(), {
-        nodes: j,
-        root_node_id: T,
+        nodes: T,
+        root_node_id: j,
         success_node_id: N,
         fail_node_id: I
-    } = n, [S, y] = a.useState(T), [k, E] = a.useState(void 0), [w, R] = a.useState(void 0), [M, L] = a.useState([]), [O, G] = a.useState(void 0), [D, P] = a.useState(void 0), [U, B] = a.useState(void 0);
+    } = n, [S, y] = a.useState(j), [E, k] = a.useState(void 0), [w, R] = a.useState(void 0), [M, L] = a.useState([]), [O, G] = a.useState(void 0), [D, P] = a.useState(void 0), [B, U] = a.useState(void 0);
     (0, s.Ay)(() => {
         (0, u.VE)()
     });
     let H = e => {
             let {
                 destination: n
-            } = e, [, l] = n, a = j[l];
+            } = e, [, l] = n, a = T[l];
             if (void 0 === a) return void c.A.increment({
                 name: r.K.IN_APP_REPORT_NAVIGATE_TO_NONEXISTENT_NODE
             });
@@ -45,13 +45,13 @@ let g = e => {
                 ...e,
                 destination: ["", a.button.target]
             });
-            if (L([...M, e]), null != a.key && v?.(a.key), E(void 0), R(void 0), t.name === _.t0.MESSAGE || t.name === _.t0.FIRST_DM) {
+            if (L([...M, e]), null != a.key && v?.(a.key), k(void 0), R(void 0), t.name === _.t0.MESSAGE || t.name === _.t0.FIRST_DM) {
                 let e = t.record.id;
                 d.Ay.trackWithMetadata(p.HAw.IAR_NAVIGATE, {
                     message_id: e,
                     content_type: t.name,
                     report_sub_type: a.report_type,
-                    current_node: j[S].id,
+                    current_node: T[S].id,
                     next_node: a.id
                 })
             }
@@ -60,27 +60,27 @@ let g = e => {
         V = async e => {
             let l = b ? await (0, m.zC)(n, t, [...M, e]) : await (0, m.bo)(n, t, [...M, e], f),
                 a = l?.body?.report_id;
-            null != a && G(a), P(j[e.nodeRef].report_type), A?.(a)
+            null != a && G(a), P(T[e.nodeRef].report_type), A?.(a)
         }, F = () => {
             if (M.length < 1) return;
             let e = [...M],
                 n = e.pop(),
-                l = n?.nodeRef ?? T;
+                l = n?.nodeRef ?? j;
             if (t.name === _.t0.MESSAGE || t.name === _.t0.FIRST_DM) {
                 let e = t.record.id;
                 d.Ay.trackWithMetadata(p.HAw.IAR_NAVIGATE, {
                     message_id: e,
                     content_type: t.name,
-                    report_sub_type: j[l].report_type,
-                    current_node: j[S].id,
-                    next_node: j[l].id
+                    report_sub_type: T[l].report_type,
+                    current_node: T[S].id,
+                    next_node: T[l].id
                 })
             }
-            E(n?.multiSelect?.state), R(n?.textInput), y(l), L(e), v?.("..")
+            k(n?.multiSelect?.state), R(n?.textInput), y(l), L(e), v?.("..")
         }, W = a.useCallback((e, t) => {
             let n;
-            for (let t in j) {
-                let l = j[t];
+            for (let t in T) {
+                let l = T[t];
                 if (l.key === e) {
                     n = l;
                     break
@@ -91,31 +91,31 @@ let g = e => {
             if (l >= 0) {
                 let e = M.slice(0, l),
                     t = M[l];
-                R(t?.textInput), E(t?.multiSelect?.state), L(e)
-            } else L([]), R(void 0), E(void 0);
-            B(t), y(n.id)
-        }, [j, M]);
+                R(t?.textInput), k(t?.multiSelect?.state), L(e)
+            } else L([]), R(void 0), k(void 0);
+            U(t), y(n.id)
+        }, [T, M]);
     a.useEffect(() => {
-        null != U && B(void 0)
-    }, [U]);
+        null != B && U(void 0)
+    }, [B]);
     let z = a.useMemo(() => {
         let e = [],
             t = [];
-        for (let n in j) {
-            let l = j[n];
-            if (l.id !== N && l.id !== I && l.id !== T) {
+        for (let n in T) {
+            let l = T[n];
+            if (l.id !== N && l.id !== I && l.id !== j) {
                 if (l.key.endsWith("_SUBMIT") || l.button?.type === "submit") {
                     t.push(l);
                     continue
                 }
                 if (e.push(l), l.button?.type === "next") {
                     let t = l.button?.target,
-                        n = e.indexOf(j[t]); - 1 !== n && (e.splice(n, 1), e.push(j[t]))
+                        n = e.indexOf(T[t]); - 1 !== n && (e.splice(n, 1), e.push(T[t]))
                 }
             }
         }
-        return [j[T], ...e, ...t, j[N], j[I]]
-    }, [j, T, I, N]);
+        return [T[j], ...e, ...t, T[N], T[I]]
+    }, [T, j, I, N]);
     return (0, l.jsx)(i.EOs, {
         "data-migration-pending": !0,
         transitionState: g.transitionState,
@@ -138,14 +138,14 @@ let g = e => {
                         onSelectChild: H,
                         onNavigateBack: F,
                         onNavigateToNode: W,
-                        multiSelect: k,
+                        multiSelect: E,
                         textInput: w,
                         successNodeId: N,
                         failNodeId: I,
                         onSubmit: V,
                         reportId: O,
-                        nodeMap: j,
-                        initialErrorMessage: e.id === S ? U : void 0
+                        nodeMap: T,
+                        initialErrorMessage: e.id === S ? B : void 0
                     })
                 })
             }, e.id))

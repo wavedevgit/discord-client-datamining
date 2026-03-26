@@ -26,8 +26,8 @@ var i = n(627968),
     S = n(309010),
     x = n(625180),
     v = n(898879),
-    b = n(293495),
-    y = n(165610),
+    y = n(293495),
+    b = n(165610),
     O = n(652215),
     L = n(5867),
     R = n(985018),
@@ -52,7 +52,7 @@ function M(e) {
     }), F = a.useCallback(() => {
         x.A.updateFrameLayoutMode({
             applicationId: t.applicationId,
-            layoutMode: y.y.PIP
+            layoutMode: b.y.PIP
         })
     }, [t.applicationId]), Y = a.useCallback(() => {
         x.A.stopFrame({
@@ -72,7 +72,7 @@ function M(e) {
         let e = e => {
             null == k.current || (0, c.HG$)(k.current, e.target) || l || x.A.updateFrameLayoutMode({
                 applicationId: t.applicationId,
-                layoutMode: y.y.PIP
+                layoutMode: b.y.PIP
             })
         };
         return document.addEventListener("mousedown", e), () => {
@@ -92,7 +92,7 @@ function M(e) {
         Q = (0, m.G)();
     if (null == n) return null;
     let X = (U ?? O.da6) + G,
-        Z = (0, b.YY)(t);
+        Z = (0, y.YY)(t);
     return (0, i.jsx)(c.NPJ, {
         theme: O.NJ8.DARK,
         children: e => (0, i.jsxs)("div", {

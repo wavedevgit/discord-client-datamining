@@ -1,5 +1,5 @@
 /** chunk id: 290987 params = (module,exports,require) **/
-i.d(e, {
+i.d(t, {
     $l: () => r.$l,
     Ay: () => s,
     pJ: () => r.pJ
@@ -8,13 +8,13 @@ var n = i(627968);
 i(64700);
 var l = i(439447),
     r = i(499979);
-let s = (0, l.A)(function(t) {
+let s = (0, l.A)(function(e) {
     let {
-        children: e,
+        children: t,
         className: i
-    } = t;
+    } = e;
     return (0, n.jsx)("span", {
         className: i,
-        children: e
+        children: t
     })
 })

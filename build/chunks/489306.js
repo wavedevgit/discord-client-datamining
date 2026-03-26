@@ -17,8 +17,8 @@ var i = n(64700),
     A = n(522055),
     m = n(764322),
     p = n(942975),
-    g = n(904560),
-    _ = n(645619),
+    _ = n(904560),
+    g = n(645619),
     f = n(379229),
     x = n(904629),
     C = n(229548),
@@ -32,8 +32,8 @@ var i = n(64700),
     y = n(49999);
 
 function j(e) {
-    let t = (0, l.bG)([g.A], () => g.A.getNotificationStateForGuild(e), [e]),
-        n = (0, l.bG)([_.A], () => _.A.getStateForGuild(e)),
+    let t = (0, l.bG)([_.A], () => _.A.getNotificationStateForGuild(e), [e]),
+        n = (0, l.bG)([g.A], () => g.A.getStateForGuild(e)),
         {
             indicator: p,
             showUnread: y
@@ -71,8 +71,8 @@ function j(e) {
             }, [s, n?.lastBoostCount, n?.lastSeenWarningNotification, t, d, u?.entitlements])
         }(e, n ?? void 0, t),
         j = function(e, t) {
-            let n, a, [p, g] = (0, C.ty)(null != t),
-                _ = p === r.M.GUILD_POWERUP_PERKS_COACHMARK,
+            let n, a, [p, _] = (0, C.ty)(null != t),
+                g = p === r.M.GUILD_POWERUP_PERKS_COACHMARK,
                 {
                     available: x
                 } = (0, S.A)(e),
@@ -83,22 +83,22 @@ function j(e) {
                         i = t?.unlockedPowerups?.[s.zY] != null;
                     return e && !i ? T.q.FILE_UPLOAD_250_MB : Array.from(T.r9[T.q.GUILD_TAG_BADGE_PACKS_WAVE_TWO]).some(e => t?.unlockedPowerups?.[e] != null) ? n && !a ? T.q.GAME_SERVER_HOSTING : Array.from(T.r9[T.q.GUILD_TAG_BADGE_PACKS_WAVE_ONE]).some(e => t?.unlockedPowerups?.[e] != null) ? 0 : T.q.GUILD_TAG_BADGE_PACKS_WAVE_ONE : T.q.GUILD_TAG_BADGE_PACKS_WAVE_TWO
                 }, [t, n, a])),
-                [R, O] = (0, C.FC)(null != t && !_, j),
+                [R, O] = (0, C.FC)(null != t && !g, j),
                 L = R === r.M.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK,
                 M = (0, E.A)(e),
-                [D, G] = (0, C.ww)(null != t && !_ && !L && null != M, e),
+                [D, G] = (0, C.ww)(null != t && !g && !L && null != M, e),
                 U = D === r.M.BOOST_TO_UNLOCK_COACHMARK,
                 P = (0, I.A)(e),
-                [k, w] = (0, C.W2)(null != t && !_ && !L && !U && null != P, e),
+                [k, w] = (0, C.W2)(null != t && !g && !L && !U && null != P, e),
                 V = k === r.M.EXPIRING_POWERUP_COACHMARK,
                 B = (0, h.TS)(e, "useGuildPowerupsChannelListPopout"),
-                [H, F] = (0, C.rd)(null != t && !_ && !L && !U && !V && B),
+                [H, F] = (0, C.rd)(null != t && !g && !L && !U && !V && B),
                 K = H === r.M.GAME_SERVER_HOSTING_BATCH_RELEASE_V2_COACHMARK,
                 W = (0, m.S)(e, "useGuildPowerupsChannelListPopout"),
                 [Y, z] = (0, C.vn)(null != t && !b && B && W),
                 q = Y === r.M.GAME_SERVER_PRICING_CHANGE_COACHMARK,
                 X = i.useMemo(() => {
-                    if (null == t || _ || L || K || q || U || V) return;
+                    if (null == t || g || L || K || q || U || V) return;
                     let n = function(e, t) {
                         let n = u.fi.find(e => {
                             let n = T.a8[e],
@@ -156,13 +156,13 @@ function j(e) {
                         }
                     }(e, b, x, y);
                     if (null != s) return s
-                }, [e, t, _, L, K, q, U, V, x, b, y]),
+                }, [e, t, g, L, K, q, U, V, x, b, y]),
                 [J, Q] = (0, C.ru)(null != X);
             return i.useMemo(() => {
                 if (null != t) {
-                    if (_) return {
+                    if (g) return {
                         type: f.o.PERKS_AVAILABLE,
-                        markAsDismissed: g
+                        markAsDismissed: _
                     };
                     if (L) {
                         if (j === T.q.GAME_SERVER_HOSTING) return {
@@ -203,7 +203,7 @@ function j(e) {
                         }
                     }
                 }
-            }, [t, _, g, X, J, Q, L, O, j, U, M, G, V, P, w, K, F, q, z])
+            }, [t, g, _, X, J, Q, L, O, j, U, M, G, V, P, w, K, F, q, z])
         }(e, n ?? void 0);
     if (null !== n && (null != p || y || null != j)) return {
         indicator: p,
@@ -213,7 +213,7 @@ function j(e) {
 }
 
 function R(e) {
-    let t = (0, l.bG)([_.A], () => _.A.getStateForGuild(e)),
+    let t = (0, l.bG)([g.A], () => g.A.getStateForGuild(e)),
         n = j(e);
     i.useEffect(() => {
         (0, p.Zm)(e)

@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(888697),
     m = n(581007),
     p = n(522435),
-    g = n(493819),
-    _ = n(722884),
+    _ = n(493819),
+    g = n(722884),
     f = n(148690),
     x = n(985018),
     C = n(591454);
@@ -28,7 +28,7 @@ function E(e) {
         imageUrl: n,
         isConnected: l
     } = e, a = (0, h.S)(n), d = s.useCallback(() => {
-        (0, _.A)({
+        (0, g.A)({
             channel: t
         })
     }, [t]), m = s.useCallback(() => {
@@ -47,7 +47,7 @@ function E(e) {
         children: [l ? (0, i.jsx)("div", {
             className: C.ZS,
             style: E,
-            children: (0, i.jsx)(g.A, {
+            children: (0, i.jsx)(_.A, {
                 src: n,
                 className: C.Sl
             })
@@ -55,7 +55,7 @@ function E(e) {
             className: r()(C.ZS, C.jI),
             style: E,
             onClick: p,
-            children: (0, i.jsx)(g.A, {
+            children: (0, i.jsx)(_.A, {
                 src: n,
                 className: C.Sl
             })
@@ -90,7 +90,7 @@ function I(e) {
     let {
         channel: t
     } = e, n = s.useCallback(() => {
-        (0, _.A)({
+        (0, g.A)({
             channel: t
         })
     }, [t]);

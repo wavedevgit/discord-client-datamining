@@ -20,7 +20,7 @@ let g = e => {
     let {
         application: t,
         reportId: n
-    } = e, [g, A] = a.useState(!1), [v, f] = a.useState(!1), b = (0, r.bG)([x.A, u.A], () => u.A.getChannel(x.A.getChannelId())?.guild_id), [C, j] = a.useState(null);
+    } = e, [g, A] = a.useState(!1), [v, f] = a.useState(!1), b = (0, r.bG)([x.A, u.A], () => u.A.getChannel(x.A.getChannelId())?.guild_id), [C, T] = a.useState(null);
     a.useEffect(() => {
         null != C && (A(!0), f(!0))
     }, [C]), a.useEffect(() => {
@@ -33,12 +33,12 @@ let g = e => {
             } catch {}
             if (e || null == n) return;
             let l = n.find(e => e.application?.id === t.id);
-            null != l && j(l)
+            null != l && T(l)
         })(), () => {
             e = !0
         }
     }, [b, t.id]);
-    let T = a.useCallback(() => {
+    let j = a.useCallback(() => {
             f(!1), s.Ay.trackWithMetadata(p.HAw.IAR_REMOVE_APP_BUTTON_CLICKED, {
                 guild_id: b,
                 application_id: t.id,
@@ -62,7 +62,7 @@ let g = e => {
         description: h.intl.string(h.t["FlcC+3"]),
         buttonText: v ? h.intl.string(h.t.aCJlq4) : h.intl.string(h.t["6I1F3i"]),
         buttonDisabled: !v,
-        onButtonPress: T,
+        onButtonPress: j,
         buttonVariant: v ? "critical-primary" : "secondary"
     }) : null
 }

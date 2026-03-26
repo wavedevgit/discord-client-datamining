@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(942975),
     m = n(379229),
     p = n(489306),
-    g = n(828162),
-    _ = n(249584),
+    _ = n(828162),
+    g = n(249584),
     f = n(49999),
     x = n(333354),
     C = n(985018),
@@ -58,61 +58,61 @@ let N = {
             guildId: t,
             selected: l
         } = e, b = (0, p.Ay)(t), S = s.useCallback(() => {
-            (0, A.Zm)(t), (0, g.A)(t, c.A.GUILD_POWERUPS_CHANNEL_LIST_ROW), b?.popout?.markAsDismissed(f.i.INDIRECT_ACTION)
+            (0, A.Zm)(t), (0, _.A)(t, c.A.GUILD_POWERUPS_CHANNEL_LIST_ROW), b?.popout?.markAsDismissed(f.i.INDIRECT_ACTION)
         }, [t, b]), T = s.useRef(null), v = (0, o.red)(o.DXt), y = (0, a.bG)([h.A], () => h.A.hasLayers()), j = (0, u.xr)(e => e.fullScreenLayers.length > 0), R = v || y || j, O = s.useCallback(() => {
             if (b?.popout == null || R) return null;
             switch (b?.popout?.type) {
                 case m.o.LEVEL_REACHED:
-                    return (0, i.jsx)(_.HW, {
+                    return (0, i.jsx)(g.HW, {
                         guildId: t,
                         channelRowRef: T,
                         ...b.popout
                     });
                 case m.o.PERKS_AVAILABLE:
-                    return (0, i.jsx)(_.UB, {
+                    return (0, i.jsx)(g.UB, {
                         guildId: t,
                         channelRowRef: T,
                         ...b.popout
                     });
                 case m.o.PERKS_PURCHASABLE:
-                    return (0, i.jsx)(_.lw, {
+                    return (0, i.jsx)(g.lw, {
                         guildId: t,
                         channelRowRef: T,
                         ...b.popout
                     });
                 case m.o.NEW_PERK_AVAILABLE:
-                    return (0, i.jsx)(_.bo, {
+                    return (0, i.jsx)(g.bo, {
                         guildId: t,
                         channelRowRef: T,
                         ...b.popout
                     });
                 case m.o.BOOST_TO_UNLOCK:
-                    return (0, i.jsx)(_.Gw, {
+                    return (0, i.jsx)(g.Gw, {
                         guildId: t,
                         channelRowRef: T,
                         ...b.popout
                     });
                 case m.o.EXPIRING_PERK:
-                    return (0, i.jsx)(_.Mr, {
+                    return (0, i.jsx)(g.Mr, {
                         guildId: t,
                         channelRowRef: T,
                         ...b.popout
                     });
                 case m.o.GAME_SERVER_HOSTING_AVAILABLE:
                 case m.o.GAME_SERVER_HOSTING_GUILD_ELIGIBLE:
-                    return (0, i.jsx)(_.jz, {
+                    return (0, i.jsx)(g.jz, {
                         guildId: t,
                         channelRowRef: T,
                         ...b.popout
                     });
                 case m.o.GAME_SERVER_NEW_GAMES:
-                    return (0, i.jsx)(_.YX, {
+                    return (0, i.jsx)(g.YX, {
                         guildId: t,
                         channelRowRef: T,
                         ...b.popout
                     });
                 case m.o.GAME_SERVER_PRICING_CHANGE:
-                    return (0, i.jsx)(_.Ns, {
+                    return (0, i.jsx)(g.Ns, {
                         guildId: t,
                         channelRowRef: T,
                         ...b.popout

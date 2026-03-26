@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(160761),
     m = n(421773),
     p = n(536432),
-    g = n(674168),
-    _ = n(989799),
+    _ = n(674168),
+    g = n(989799),
     f = n(173660),
     x = n(430452),
     C = n(246356),
@@ -91,11 +91,11 @@ function b(e) {
                 children: (0, i.jsx)("div", {
                     onMouseEnter: F,
                     onMouseLeave: K,
-                    children: (0, i.jsx)(_.A, {
+                    children: (0, i.jsx)(g.A, {
                         guildId: L,
                         channel: t,
                         onClose: n,
-                        gridNotice: k === r.M.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, i.jsx)(g.m, {
+                        gridNotice: k === r.M.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, i.jsx)(_.m, {
                             onClose: n,
                             markAsDismissed: w
                         }),

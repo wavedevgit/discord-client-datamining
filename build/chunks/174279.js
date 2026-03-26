@@ -26,8 +26,8 @@ var i = n(627968),
     S = n(723690),
     x = n(652215),
     v = n(788868),
-    b = n(731854),
-    y = n(985018),
+    y = n(731854),
+    b = n(985018),
     O = n(664184);
 
 function L(e) {
@@ -54,33 +54,33 @@ function L(e) {
             location: "Friends"
         })
     }, [n, l, t.id]), m = a.useCallback(() => {
-        let e = l ? y.intl.string(y.t.RLcE6x) : y.intl.string(y.t.cvSt1J);
+        let e = l ? b.intl.string(b.t.RLcE6x) : b.intl.string(b.t.cvSt1J);
         d.A.show({
-            title: y.intl.formatToPlainString(y.t.fPLvZd, {
+            title: b.intl.formatToPlainString(b.t.fPLvZd, {
                 name: I.Ay.getName(t)
             }),
-            body: y.intl.formatToPlainString(y.t.l5FFq6, {
+            body: b.intl.formatToPlainString(b.t.l5FFq6, {
                 name: I.Ay.getName(t)
             }),
             confirmText: e,
             confirmVariant: "critical-primary",
-            cancelText: y.intl.string(y.t["ETE/oC"]),
+            cancelText: b.intl.string(b.t["ETE/oC"]),
             onConfirm: _
         })
-    }, [_, l, t]), g = (0, s.bG)([p.Ay], () => p.Ay.supports(b.O5.VIDEO)), E = t.isProvisional, C = l ? y.intl.string(y.t.RLcE6x) : y.intl.string(y.t.cvSt1J);
+    }, [_, l, t]), g = (0, s.bG)([p.Ay], () => p.Ay.supports(y.O5.VIDEO)), E = t.isProvisional, C = l ? b.intl.string(b.t.RLcE6x) : b.intl.string(b.t.cvSt1J);
     return (0, i.jsxs)(o.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "friend-row",
-        "aria-label": y.intl.string(y.t.liqwPJ),
+        "aria-label": b.intl.string(b.t.liqwPJ),
         onClose: u.Z_,
         onSelect: r,
         children: [!E && g ? (0, i.jsx)(o.Drp, {
             id: "start-video-call",
-            label: y.intl.string(y.t.oCqlGG),
+            label: b.intl.string(b.t.oCqlGG),
             action: h
         }) : null, !E && (0, i.jsx)(o.Drp, {
             id: "start-voice-call",
-            label: y.intl.string(y.t.focH1t),
+            label: b.intl.string(b.t.focH1t),
             action: A
         }), (0, i.jsx)(o.Drp, {
             id: "remove-friend",
@@ -190,12 +190,12 @@ class R extends a.PureComponent {
                     className: O.o1,
                     children: [(0, i.jsx)(C.A, {
                         icon: o.oyn,
-                        tooltip: y.intl.string(y.t["g33r/P"]),
+                        tooltip: b.intl.string(b.t["g33r/P"]),
                         onClick: this.handleOpenPrivateChannel,
                         shouldHighlight: t
                     }), (0, i.jsx)(C.A, {
                         icon: o.FHP,
-                        tooltip: y.intl.string(y.t["UKOtz+"]),
+                        tooltip: b.intl.string(b.t["UKOtz+"]),
                         onClick: this.handleOpenActionsMenu,
                         shouldHighlight: t
                     })]

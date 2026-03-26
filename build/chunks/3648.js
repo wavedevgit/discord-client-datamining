@@ -1,7 +1,7 @@
 /** chunk id: 3648 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _,
+    A: () => g,
     Z: () => p
 });
 var i = n(627968);
@@ -25,8 +25,8 @@ function p(e, t) {
         isSingleCard: r = !1,
         profileOwner: m,
         wishlistId: p,
-        cardSize: g,
-        analyticsLocations: _
+        cardSize: _,
+        analyticsLocations: g
     } = t, f = null != n && n > 0, x = {
         title: f ? h.intl.string(h.t.TxBQzD) : h.intl.string(h.t["4yiU7x"]),
         body: f ? void 0 : h.intl.string(h.t.ilhtIa),
@@ -41,7 +41,7 @@ function p(e, t) {
                 giftRecipient: m,
                 giftingOrigin: u.vQ.USER_PROFILE_WISHLIST
             }, {
-                analyticsLocations: [..._, l.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON]
+                analyticsLocations: [...g, l.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON]
             })
         },
         tooltipConfig: x,
@@ -56,11 +56,11 @@ function p(e, t) {
         moreCount: n,
         isSingleCard: r,
         wishlistId: p,
-        cardSize: g
+        cardSize: _
     }, e.skuId)
 }
 
-function g(e) {
+function _(e) {
     let {
         item: t,
         card: n,
@@ -101,7 +101,7 @@ function g(e) {
     })
 }
 
-function _(e, t) {
+function g(e, t) {
     let {
         profileOwner: n,
         analyticsLocations: s,
@@ -115,7 +115,7 @@ function _(e, t) {
         isSingleCard: !0,
         wishlistId: l
     });
-    return (0, i.jsx)(g, {
+    return (0, i.jsx)(_, {
         item: e,
         card: a,
         profileOwner: n,

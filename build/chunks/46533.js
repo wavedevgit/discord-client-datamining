@@ -26,8 +26,8 @@ var i = n(627968),
     S = n(72152),
     x = n(502103),
     v = n(929163),
-    b = n(423183),
-    y = n(568185),
+    y = n(423183),
+    b = n(568185),
     O = n(225437),
     L = n(221094),
     R = n(781862),
@@ -197,7 +197,7 @@ class e_ extends a.PureComponent {
             guild: e,
             showGuildTemplateDirtyTooltip: t
         } = this.props;
-        null != e && t && y.A.hideGuildTemplateDirtyTooltip(e.id)
+        null != e && t && b.A.hideGuildTemplateDirtyTooltip(e.id)
     };
     renderMenuPopout = async () => {
         let {
@@ -423,7 +423,7 @@ function em(e) {
         guildId: t,
         hideSelectedChannel: n,
         selectedChannelId: l
-    } = e, d = (0, N.$)("favorite-guild-header-context"), c = (0, s.bG)([q.A], () => q.A.getGuild(t)), A = (0, T.A)(t), h = (0, s.bG)([Y.A], () => Y.A.getGuildDimensions(t).scrollTo), C = (0, s.bG)([X.A], () => X.A.getChannelId()), y = (0, s.bG)([$.A], () => $.A.can(es.xBc.MANAGE_GUILD, c)), R = (0, s.bG)([W.A], () => W.A.isUnavailable(t)), V = (0, s.bG)([Z.default], () => Z.default.getCurrentUser()), {
+    } = e, d = (0, N.$)("favorite-guild-header-context"), c = (0, s.bG)([q.A], () => q.A.getGuild(t)), A = (0, T.A)(t), h = (0, s.bG)([Y.A], () => Y.A.getGuildDimensions(t).scrollTo), C = (0, s.bG)([X.A], () => X.A.getChannelId()), b = (0, s.bG)([$.A], () => $.A.can(es.xBc.MANAGE_GUILD, c)), R = (0, s.bG)([W.A], () => W.A.isUnavailable(t)), V = (0, s.bG)([Z.default], () => Z.default.getCurrentUser()), {
         enableStudyGroup: B
     } = (0, L.y)(c), K = (0, E.Ay)(e => e.currentlyShown.has(o.M.NAGBAR_NOTICE_CONNECT_PLAYSTATION)), [ee, et] = a.useState(!K), en = (0, _.A)(t), {
         analyticsLocations: ei
@@ -431,13 +431,13 @@ function em(e) {
     a.useEffect(() => {
         t !== en && et(!K)
     }, [t, en, K]);
-    let [ea, er] = (0, E.Ay)(e => [eo.cA.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ed.m.GUILD_HEADER_TOOLTIPS)], r.x), ec = (0, p.A)(c), eu = (0, u.red)(u.DXt), eh = (0, s.bG)([z.A], () => z.A.hasLayers()), em = (0, P.xr)(e => e.fullScreenLayers.length > 0), eg = (0, s.bG)([H.A], () => H.A.shouldShow(eA)), ep = (0, b.A)(t), eE = c?.features.has(es.GuildFeatures.HUB) === !0, eI = y && c?.features.has(es.GuildFeatures.DISCOVERABLE) === !0, ef = (0, s.bG)([O.A, z.A], () => null != c && null != V && y && !z.A.hasLayers() && O.A.shouldShowGuildTemplateDirtyTooltip(t)), eC = (0, s.bG)([F.A], () => F.A.getChannel(l)), {
+    let [ea, er] = (0, E.Ay)(e => [eo.cA.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ed.m.GUILD_HEADER_TOOLTIPS)], r.x), ec = (0, p.A)(c), eu = (0, u.red)(u.DXt), eh = (0, s.bG)([z.A], () => z.A.hasLayers()), em = (0, P.xr)(e => e.fullScreenLayers.length > 0), eg = (0, s.bG)([H.A], () => H.A.shouldShow(eA)), ep = (0, y.A)(t), eE = c?.features.has(es.GuildFeatures.HUB) === !0, eI = b && c?.features.has(es.GuildFeatures.DISCOVERABLE) === !0, ef = (0, s.bG)([O.A, z.A], () => null != c && null != V && b && !z.A.hasLayers() && O.A.shouldShowGuildTemplateDirtyTooltip(t)), eC = (0, s.bG)([F.A], () => F.A.getChannel(l)), {
         isPopoutOpen: eT
     } = (0, S.S)(), eN = c?.features.has(es.GuildFeatures.COMMUNITY) ?? !1, eS = J.Ay.isNewUser(V), ex = ee && !eS;
     (0, x.A)(c);
     let ev = (0, I.JZ)(o.M.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
-        eb = (0, v.A)(t),
-        ey = (0, s.bG)([X.A], () => X.A.getChannelId()),
+        ey = (0, v.A)(t),
+        eb = (0, s.bG)([X.A], () => X.A.getChannelId()),
         eO = (0, s.bG)([Q.A], () => Q.A.desyncedVoiceStatesCount),
         eL = (0, G.A)(t);
     el.A.useConfig({
@@ -453,7 +453,7 @@ function em(e) {
         eU = (0, U.A)(t),
         eG = !1 === eL && eM && null != eU,
         ek = [];
-    eE && ek.push(o.M.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP), ep && ek.push(o.M.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL), eI && ek.push(o.M.GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL), !1 === eL && ek.push(o.M.GUILD_POWERUP_PERKS_COACHMARK), eR && !eP && !1 === eL && ek.push(o.M.GAME_SERVER_HOSTING_NEW_PERK_AVAILABLE_COACHMARK), eR && !1 === eL && ek.push(o.M.GAME_SERVER_HOSTING_BATCH_RELEASE_V2_COACHMARK), eR && !eP && eD && !1 === eL && ek.push(o.M.GAME_SERVER_PRICING_CHANGE_COACHMARK), eb && ek.push(o.M.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL);
+    eE && ek.push(o.M.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP), ep && ek.push(o.M.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL), eI && ek.push(o.M.GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL), !1 === eL && ek.push(o.M.GUILD_POWERUP_PERKS_COACHMARK), eR && !eP && !1 === eL && ek.push(o.M.GAME_SERVER_HOSTING_NEW_PERK_AVAILABLE_COACHMARK), eR && !1 === eL && ek.push(o.M.GAME_SERVER_HOSTING_BATCH_RELEASE_V2_COACHMARK), eR && !eP && eD && !1 === eL && ek.push(o.M.GAME_SERVER_PRICING_CHANGE_COACHMARK), ey && ek.push(o.M.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL);
     let [eV, eB] = (0, f.kn)(ek, ed.m.GUILD_HEADER_TOOLTIPS), eH = null == eV, [eF, eY] = (0, f.D8)(eH && ew ? o.M.BOOST_TO_UNLOCK_COACHMARK : null, t, {
         cooldownDurationMs: j.bW,
         numTimesToRecur: 5
@@ -485,7 +485,7 @@ function em(e) {
         selectedChannel: eC,
         selectedVoiceChannelId: C,
         voiceStates: A,
-        rtcConnectedChannelId: ey,
+        rtcConnectedChannelId: eb,
         rtcDesyncedVoiceStatesCount: eO,
         isUnavailable: R,
         user: V,

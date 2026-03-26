@@ -1,8 +1,8 @@
 /** chunk id: 355216 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    HN: () => g,
-    ux: () => _
+    HN: () => _,
+    ux: () => g
 });
 var i = n(627968),
     s = n(64700),
@@ -19,7 +19,7 @@ var i = n(627968),
 n(445368);
 var p = n(480293);
 
-function g() {
+function _() {
     let {
         setSelectedFilter: e
     } = (0, u.A)(), t = (0, A.S)(e => e.setInboxReadState);
@@ -28,7 +28,7 @@ function g() {
     }
 }
 
-function _(e) {
+function g(e) {
     let t, n, l, {
             isSelected: u
         } = e,
@@ -36,7 +36,7 @@ function _(e) {
             unreadRecentMentionsCount: A,
             unreadChannelIds: m
         } = (0, h.U4)(),
-        g = (t = function() {
+        _ = (t = function() {
             let {
                 unreadRecentMentionsCount: e
             } = (0, h.U4)(), {
@@ -73,18 +73,18 @@ function _(e) {
             }
         }), [l, t.width])),
         {
-            entrypoint: _
+            entrypoint: g
         } = (0, d.X8)({
             location: "useInboxBadgeInfo"
         });
     return s.useMemo(() => {
-        if (A > 0) return g;
+        if (A > 0) return _;
         let e = m.length;
         if (0 === e) return {
             badge: null,
             badgeType: null
         };
-        if (_ === d.RK.SERVER_RAIL_TOP) {
+        if (g === d.RK.SERVER_RAIL_TOP) {
             let t, n = (0, o.o6S)(e) - 3;
             return {
                 badge: (t = (0, o.o6S)(e) - 3, (0, i.jsx)(o.hVq, {
@@ -107,7 +107,7 @@ function _(e) {
                 }
             }
         }
-        return _ === d.RK.TITLE_BAR_LEFT ? {
+        return g === d.RK.TITLE_BAR_LEFT ? {
             badge: (0, i.jsx)(o.Text, {
                 variant: "eyebrow",
                 children: (0, o.Gub)(e)
@@ -117,5 +117,5 @@ function _(e) {
             badge: null,
             badgeType: null
         }
-    }, [A, g, m.length, _, u])
+    }, [A, _, m.length, g, u])
 }

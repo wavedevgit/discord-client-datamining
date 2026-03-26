@@ -17,8 +17,8 @@ var l = n(503698),
     A = n(557722),
     m = n(834942),
     p = n(287809),
-    g = n(652215),
-    _ = n(53516),
+    _ = n(652215),
+    g = n(53516),
     f = n(985018),
     x = n(609657),
     C = n(442078),
@@ -36,9 +36,9 @@ let I = e => {
         newMember: T
     } = (0, a.bG)([m.A], () => m.A.getCheck(i), [i]), v = 0 === t ? f.intl.string(f.t["6zY8BI"]) : null, y = null, j = null;
     return (0 === t && (I ? (y = f.intl.string(f.t.IRxUlG), j = f.intl.string(f.t.fiNVin)) : b ? (y = f.intl.string(f.t.vW8iUF), j = f.intl.string(f.t["50gfOv"])) : N ? (y = f.intl.string(f.t.vdSOpz), j = f.intl.string(f.t.lm1UKt)) : T ? (y = f.intl.formatToPlainString(f.t.v1ktYb, {
-        min: g.$8o.MEMBER_AGE
+        min: _.$8o.MEMBER_AGE
     }), j = f.intl.string(f.t.BddRzS)) : S && (y = f.intl.formatToPlainString(f.t.sncw41, {
-        min: g.$8o.ACCOUNT_AGE
+        min: _.$8o.ACCOUNT_AGE
     }), j = f.intl.string(f.t.BddRzS))), null == v || null == y) ? null : (0, s.jsxs)(c.lGe, {
         className: r()(C.popover, x.kL),
         "aria-labelledby": E,
@@ -74,7 +74,7 @@ let I = e => {
                                     ...t
                                 })
                             }, {
-                                modalKey: _.V
+                                modalKey: g.V
                             }) : N && (d.A.verifyResend(), (0, o.A)({
                                 title: f.intl.string(f.t.LykQYk),
                                 subtitle: f.intl.format(f.t.azKEPy, {

@@ -26,14 +26,14 @@ var i = n(627968),
     S = n(265990),
     x = n(652215),
     v = n(204925),
-    b = n(985018),
-    y = n(347894);
+    y = n(985018),
+    b = n(347894);
 
 function O() {
     return (0, i.jsx)("div", {
-        className: y.N3,
+        className: b.N3,
         children: (0, i.jsx)(p.Ay, {
-            tooltip: b.intl.string(b.t["HfOgA/"])
+            tooltip: y.intl.string(y.t["HfOgA/"])
         })
     })
 }
@@ -72,60 +72,60 @@ let L = function(e) {
         G = [{
             id: x.m3P.ONLINE,
             show: P.filter(x.m3P.ONLINE).length > 0,
-            content: b.intl.string(b.t.b9w3bO),
-            className: y.AS
+            content: y.intl.string(y.t.b9w3bO),
+            className: b.AS
         }, {
             id: x.m3P.ALL,
             show: M[x.eA$.FRIEND] > 0,
-            content: b.intl.string(b.t.PfjFjR),
-            className: y.AS
+            content: y.intl.string(y.t.PfjFjR),
+            className: b.AS
         }, {
             id: x.m3P.PENDING,
             show: P.filter(x.m3P.PENDING).length > 0,
             content: (0, i.jsxs)(i.Fragment, {
-                children: [b.intl.string(b.t.p6IHGE), L > 0 && (0, i.jsx)(d.hVq, {
+                children: [y.intl.string(y.t.p6IHGE), L > 0 && (0, i.jsx)(d.hVq, {
                     count: L,
-                    className: y.qS
+                    className: b.qS
                 })]
             }),
-            ariaLabel: b.intl.formatToPlainString(b.t.OAC0Z4, {
+            ariaLabel: y.intl.formatToPlainString(y.t.OAC0Z4, {
                 count: L.toString()
             }),
-            className: y.AS
+            className: b.AS
         }, {
             id: x.m3P.SUGGESTIONS,
             show: D > 0,
             content: (0, i.jsxs)(i.Fragment, {
-                children: [b.intl.string(b.t["8rSi1/"]), (0, i.jsx)(d.hVq, {
+                children: [y.intl.string(y.t["8rSi1/"]), (0, i.jsx)(d.hVq, {
                     count: D,
-                    className: y.qS
+                    className: b.qS
                 })]
             }),
-            ariaLabel: b.intl.formatToPlainString(b.t.AbMQp7, {
+            ariaLabel: y.intl.formatToPlainString(y.t.AbMQp7, {
                 count: D.toString()
             }),
-            className: y.AS
+            className: b.AS
         }, {
             id: x.m3P.ADD_FRIEND,
             show: !0,
             content: (0, i.jsx)("span", {
-                children: b.intl.string(b.t.j0wbE5)
+                children: y.intl.string(y.t.j0wbE5)
             }),
-            ariaLabel: b.intl.string(b.t.j0wbE5),
-            className: r()(y.AS, y.GU)
+            ariaLabel: y.intl.string(y.t.j0wbE5),
+            className: r()(b.AS, b.GU)
         }],
         k = null,
         V = (0, i.jsx)("div", {
-            className: y.Xl,
+            className: b.Xl,
             children: (0, i.jsx)(E.A, {})
         });
     return k = R === x.m3P.ADD_FRIEND ? (0, i.jsx)(N.A, {}) : (0, i.jsx)(S.A, {
         titleId: U
     }), (0, i.jsxs)("main", {
-        className: y.kL,
-        "aria-label": b.intl.string(b.t.TdEu5X),
+        className: b.kL,
+        "aria-label": y.intl.string(y.t.TdEu5X),
         children: [(0, i.jsx)(h.HI, {
-            location: b.intl.string(b.t.TdEu5X)
+            location: y.intl.string(y.t.TdEu5X)
         }), (0, i.jsx)(d.NPJ, {
             theme: p,
             children: e => (0, i.jsxs)(g.A, {
@@ -139,13 +139,13 @@ let L = function(e) {
                     "aria-hidden": !0
                 }), (0, i.jsx)(g.A.Title, {
                     id: w,
-                    children: b.intl.string(b.t.TdEu5X)
+                    children: y.intl.string(y.t.TdEu5X)
                 }), (0, i.jsx)(g.A.Divider, {}), (0, i.jsx)(d.VQ0, {
-                    "aria-label": b.intl.string(b.t.TdEu5X),
+                    "aria-label": y.intl.string(y.t.TdEu5X),
                     selectedItem: R,
                     type: "top-pill",
                     onItemSelect: j,
-                    className: y.$H,
+                    className: b.$H,
                     children: G.filter(e => e.show).map(e => (0, i.jsx)(d.VQ0.Item, {
                         id: e.id,
                         className: e.className,
@@ -155,10 +155,10 @@ let L = function(e) {
                 })]
             })
         }), (0, i.jsxs)("div", {
-            className: y.MJ,
+            className: b.MJ,
             children: [(0, i.jsx)(d.VQ0.Panel, {
                 id: R,
-                className: y.UL,
+                className: b.UL,
                 "aria-labelledby": U,
                 children: k
             }), V]

@@ -25,7 +25,7 @@ let v = e => {
         content: b
     } = (0, m.A)(f, {
         hideSimpleEmbedContent: !1
-    }), C = x.hH.useSetting(), j = a.useCallback(() => {
+    }), C = x.hH.useSetting(), T = a.useCallback(() => {
         let {
             leadingIcon: e,
             trailingIcon: n
@@ -52,7 +52,7 @@ let v = e => {
         }), (0, l.jsx)(i.HOs, {
             className: A.PI,
             children: (0, l.jsx)(o.A, {
-                childrenMessageContent: j(),
+                childrenMessageContent: T(),
                 childrenHeader: (0, l.jsx)(u.Ay, {
                     message: t,
                     channel: v,

@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(859703),
     m = n(341915),
     p = n(759366),
-    g = n(245853),
-    _ = n(714510),
+    _ = n(245853),
+    g = n(714510),
     f = n(890687),
     x = n(590202),
     C = n(639214),
@@ -36,13 +36,13 @@ function O(e) {
     let {
         quest: t,
         applicationId: n
-    } = e, r = (0, f.fc)(t), u = (0, _.mU)({
+    } = e, r = (0, f.fc)(t), u = (0, g.mU)({
         quest: t,
         taskDetails: r,
         location: T.rE.QUEST_ACTIVITY_HEADER,
         questContent: m.uF.QUEST_ACTIVITY_HEADER,
         sourceQuestContent: m.uF.RUNNING_ACTIVITY
-    }), [A, p] = s.useState(!1), g = s.useRef(null), C = s.useRef(null), [b, O] = (0, c.kn)([a.M.QUEST_ACTIVITY_HEADER_INTRO], void 0, !0), {
+    }), [A, p] = s.useState(!1), _ = s.useRef(null), C = s.useRef(null), [b, O] = (0, c.kn)([a.M.QUEST_ACTIVITY_HEADER_INTRO], void 0, !0), {
         completedRatio: L,
         completedRatioDisplay: M,
         percentComplete: D
@@ -70,7 +70,7 @@ function O(e) {
                 gap: 8,
                 children: [(0, i.jsx)("div", {
                     className: R.v0,
-                    ref: g,
+                    ref: _,
                     children: (0, i.jsx)(S.A, {
                         quest: t,
                         questContent: m.uF.QUEST_ACTIVITY_HEADER,
@@ -152,7 +152,7 @@ function O(e) {
         }), null != b && (0, i.jsx)(E.A, {
             onDismiss: () => O(v.i.USER_DISMISS),
             onCTAClick: () => O(v.i.TAKE_ACTION),
-            targetElementRef: g
+            targetElementRef: _
         })]
     })
 }
@@ -162,11 +162,11 @@ function L(e) {
         applicationId: t
     } = e, a = (0, r.bG)([A.A], () => A.A.quests), c = (0, r.bG)([u.A], () => u.A.theme), d = s.useMemo(() => (0, C.jm)(a, t, !0)[0], [a, t]), {
         enabled: h
-    } = g.Ym.useConfig({
+    } = _.Ym.useConfig({
         location: T.rE.QUEST_ACTIVITY_HEADER
-    }), _ = (0, r.bG)([p.A], () => p.A.getState().autoEnroll), f = d?.id, x = (0, r.bG)([p.A], () => p.A.isDismissed(f), [f]);
+    }), g = (0, r.bG)([p.A], () => p.A.getState().autoEnroll), f = d?.id, x = (0, r.bG)([p.A], () => p.A.isDismissed(f), [f]);
     return (s.useEffect(() => {
-        !h || null == d || d.userStatus?.enrolledAt != null || _ || x || (0, o.mMO)(async () => {
+        !h || null == d || d.userStatus?.enrolledAt != null || g || x || (0, o.mMO)(async () => {
             let {
                 default: e
             } = await n.e("85986").then(n.bind(n, 113273));
@@ -177,7 +177,7 @@ function L(e) {
         }, {
             modalKey: "quest-activity-unenrolled-modal"
         })
-    }, [h, d, _, x]), null != d && h) ? (0, i.jsx)(l.NPJ, {
+    }, [h, d, g, x]), null != d && h) ? (0, i.jsx)(l.NPJ, {
         theme: c,
         children: e => (0, i.jsx)("div", {
             className: e,

@@ -1,8 +1,8 @@
 /** chunk id: 639555 params = (module,exports,require) **/
-i.d(e, {
-    Rv: () => l
+n.d(t, {
+    Rv: () => r
 });
-let n = (0, i(600975).C)({
+let i = (0, n(600975).C)({
     kind: "user",
     id: "2025-01_inappropriate_conversations_new_defaults",
     label: "Inappropriate Conversation Warning Default On",
@@ -18,15 +18,15 @@ let n = (0, i(600975).C)({
     }]
 });
 
-function l(t) {
+function r(e) {
     let {
-        location: e
-    } = t, {
-        enabled: i
-    } = n.useExperiment({
-        location: e
+        location: t
+    } = e, {
+        enabled: n
+    } = i.useExperiment({
+        location: t
     }, {
         autoTrackExposure: !1
     });
-    return i
+    return n
 }

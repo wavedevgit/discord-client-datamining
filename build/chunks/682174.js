@@ -1,20 +1,20 @@
 /** chunk id: 682174 params = (module,exports,require) **/
-i.d(e, {
+i.d(t, {
     A: () => r
 });
 var n = i(627968);
 i(64700);
 var l = i(953727);
 
-function r(t) {
+function r(e) {
     let {
-        width: e = 20,
+        width: t = 20,
         height: i = 20,
         className: r,
         ...s
-    } = t;
+    } = e;
     return (0, n.jsx)("svg", {
-        width: e,
+        width: t,
         height: i,
         className: r,
         ...(0, l.A)(s),

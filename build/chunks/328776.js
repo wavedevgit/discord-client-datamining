@@ -1,7 +1,7 @@
 /** chunk id: 328776 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -17,21 +17,21 @@ var i = n(627968),
     m = n(762561),
     p = n(985018);
 
-function g(e) {
+function _(e) {
     let {
         channel: t
-    } = e, [n] = t.recipients, g = (0, l.bG)([a.default], () => a.default.getUser(n)), _ = (0, l.bG)([a.default], () => a.default.getCurrentUser()), f = (0, d.A)(), [x, C] = (0, c.A)(n);
+    } = e, [n] = t.recipients, _ = (0, l.bG)([a.default], () => a.default.getUser(n)), g = (0, l.bG)([a.default], () => a.default.getCurrentUser()), f = (0, d.A)(), [x, C] = (0, c.A)(n);
     if (s.useEffect(() => {
-            (0, u.A)(g ?? n, {
+            (0, u.A)(_ ?? n, {
                 type: "sidebar",
-                withMutualFriendsCount: g?.bot !== !0,
+                withMutualFriendsCount: _?.bot !== !0,
                 withMutualFriends: !1,
                 withMutualGuilds: !0,
                 channelId: t.id
             })
-        }, [g, n, t.id]), null == g || null == _ || !f) return null;
-    let E = `user-profile-sidebar-heading-${g.id}`,
-        I = o.Ay.getName(null, t.id, g);
+        }, [_, n, t.id]), null == _ || null == g || !f) return null;
+    let E = `user-profile-sidebar-heading-${_.id}`,
+        I = o.Ay.getName(null, t.id, _);
     return (0, i.jsx)("aside", {
         "aria-labelledby": E,
         children: (0, i.jsx)(r.Fmo, {
@@ -44,17 +44,17 @@ function g(e) {
                 })
             }),
             children: x ? (0, i.jsx)(A.A, {
-                user: g,
-                currentUser: _,
+                user: _,
+                currentUser: g,
                 onHide: C,
                 ...e
-            }) : g.isNonUserBot() ? (0, i.jsx)(h.A, {
-                user: g,
-                currentUser: _,
+            }) : _.isNonUserBot() ? (0, i.jsx)(h.A, {
+                user: _,
+                currentUser: g,
                 ...e
             }) : (0, i.jsx)(m.A, {
-                user: g,
-                currentUser: _,
+                user: _,
+                currentUser: g,
                 ...e
             })
         })

@@ -13,12 +13,12 @@ var i = t(627968),
     u = t(80682),
     m = t(793574),
     A = t(688810),
-    p = t(915089),
-    x = t(713517),
-    g = t(645507),
-    f = t(922590),
-    h = t(821269),
-    j = t(182592),
+    p = t(351966),
+    x = t(915089),
+    g = t(713517),
+    f = t(645507),
+    h = t(922590),
+    j = t(821269),
     I = t(437774),
     v = t(594832),
     N = t(994500),
@@ -90,10 +90,10 @@ function ej(e) {
         channelId: u,
         displayProfile: m,
         nickname: A,
-        hasEntered: p,
+        hasEntered: x,
         customStatusPrompt: v,
         onClose: E
-    } = e, C = l.id === t.id, _ = n.useRef(null), b = (0, x.M)(_), [P, O] = n.useState(), S = n.useCallback(e => {
+    } = e, C = l.id === t.id, _ = n.useRef(null), b = (0, g.M)(_), [P, O] = n.useState(), S = n.useCallback(e => {
         let l = e.contentRect.width;
         l <= 350 ? O("compact-xs") : l <= 380 ? O("compact-sm") : O(void 0)
     }, []);
@@ -101,7 +101,7 @@ function ej(e) {
         fireOnMount: !0
     });
     let G = null != P ? eh[P] : void 0,
-        U = n.useMemo(() => v ?? (0, g.A)(), [v]),
+        U = n.useMemo(() => v ?? (0, f.A)(), [v]),
         {
             relationshipType: M,
             originApplicationId: D
@@ -110,10 +110,10 @@ function ej(e) {
             originApplicationId: N.A.getOriginApplicationId(l.id)
         })),
         Z = (0, o.bG)([y.A], () => y.A.hidePersonalInformation),
-        ei = (0, h.q)({
+        ei = (0, j.q)({
             userId: l.id
         }),
-        es = (0, f.fi)(l.id),
+        es = (0, h.fi)(l.id),
         ea = (0, L.A)(l.id),
         ed = (0, R.A)(l.id);
     return (0, i.jsxs)("main", {
@@ -142,7 +142,7 @@ function ej(e) {
                 guildId: s,
                 channelId: u,
                 themeType: ex.d.MODAL_V2,
-                hasEntered: p,
+                hasEntered: x,
                 prompt: C ? U : null
             })]
         }), (0, i.jsxs)(d.HOs, {
@@ -264,7 +264,7 @@ function ej(e) {
             }), (0, i.jsx)(er.A, {
                 userId: l.id
             })]
-        }), m?.profileEffect != null && (0, i.jsx)(j.A, {
+        }), m?.profileEffect != null && (0, i.jsx)(p.A, {
             skuId: m?.profileEffect.skuId,
             isHovering: b
         })]
@@ -277,7 +277,7 @@ function eI(e) {
         currentUser: t,
         guildId: s,
         originGuildId: c,
-        channelId: x,
+        channelId: p,
         messageId: g,
         roleId: f,
         sessionId: h,
@@ -352,12 +352,12 @@ function eI(e) {
             userId: l.id,
             sourceSessionId: h,
             guildId: k,
-            channelId: x,
+            channelId: p,
             messageId: g,
             roleId: f
         }),
-        eh = E.Ay.useName(z?.guildId, x, l),
-        eI = (0, p.GV)(),
+        eh = E.Ay.useName(z?.guildId, p, l),
+        eI = (0, x.GV)(),
         ev = eg.intl.format(eg.t.KRe1Fk, {
             name: eh
         });
@@ -427,7 +427,7 @@ function eI(e) {
                                             user: l,
                                             currentUser: t,
                                             guildId: k,
-                                            channelId: x,
+                                            channelId: p,
                                             displayProfile: z,
                                             nickname: eh,
                                             originGuildId: c,
@@ -439,7 +439,7 @@ function eI(e) {
                                             currentUser: t,
                                             displayProfile: z,
                                             guildId: k,
-                                            channelId: x,
+                                            channelId: p,
                                             items: eo,
                                             initialSection: j,
                                             onClose: T

@@ -1,6 +1,6 @@
 /** chunk id: 64585 params = (module,exports,require) **/
 n.d(e, {
-    A: () => b
+    A: () => R
 }), n(321073);
 var i = n(73153),
     r = n(272355),
@@ -8,37 +8,37 @@ var i = n(73153),
     a = n(312671),
     s = n(961350),
     o = n(383501),
-    d = n(309010),
-    c = n(741961),
+    c = n(309010),
+    d = n(741961),
     u = n(3137),
     h = n(559908),
     _ = n(652215);
 let A = (0, l.aN)("poggermode_applause", a.A.getSoundpack()),
     C = !1,
-    g = !1,
-    E = [],
+    E = !1,
+    g = [],
     T = null,
     I = () => {
         A.stop(), C = !1
     },
-    O = () => {
+    f = () => {
         let t = u.A.isEnabled(),
             e = u.A.comboSoundsEnabled;
-        return !!t && !!e && null != d.A.getChannelId()
+        return !!t && !!e && null != c.A.getChannelId()
     },
-    f = () => {
-        if (0 === E.length || !O() || g) return;
-        g = !0;
-        let [t, e] = E[E.length - 1];
+    O = () => {
+        if (0 === g.length || !f() || E) return;
+        E = !0;
+        let [t, e] = g[g.length - 1];
         (0, l.Ak)(t, e), T = setTimeout(L, 1e3)
     },
     L = () => {
-        E.pop(), g = !1, f()
+        g.pop(), E = !1, O()
     },
     p = function(t) {
         let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
             n = o.A.isConnected();
-        E.push([t, e * (n ? .1 : 1)]), f()
+        g.push([t, e * (n ? .1 : 1)]), O()
     };
 class S extends r.A {
     _initialize() {
@@ -63,17 +63,17 @@ class S extends r.A {
         I()
     }
     startAudio() {
-        if (!O()) return;
-        let t = d.A.getChannelId();
+        if (!f()) return;
+        let t = c.A.getChannelId();
         if (null == t) return;
         let e = s.default.getId(),
-            n = c.A.isTyping(t, e),
+            n = d.A.isTyping(t, e),
             i = h.Ay.getUserCombo(e, t),
             r = i?.multiplier ?? 1;
         n && r >= 7 ? C || (A.loop(), C = !0) : I()
     }
     playAchievementUnlockSound() {
-        O() && p("poggermode_achievement_unlock")
+        f() && p("poggermode_achievement_unlock")
     }
 }
-let b = new S
+let R = new S

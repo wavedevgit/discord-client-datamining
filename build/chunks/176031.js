@@ -26,8 +26,8 @@ var i = n(627968),
     S = n(775602),
     x = n(924283),
     v = n(139286),
-    b = n(213750),
-    y = n(771781),
+    y = n(213750),
+    b = n(771781),
     O = n(932001),
     L = n(379848),
     R = n(335934),
@@ -117,12 +117,12 @@ let e_ = e => {
                     tab_opened: e
                 })
             },
-            [N, b] = a.useState(!1),
-            y = () => {
-                b(!1)
+            [N, y] = a.useState(!1),
+            b = () => {
+                y(!1)
             },
             L = () => {
-                b(!0)
+                y(!0)
             },
             R = () => (0, i.jsx)(C.z9, {
                 onClick: T,
@@ -132,7 +132,7 @@ let e_ = e => {
                 icon: E.$yI,
                 text: eu.intl.string(eu.t.TdEu5X),
                 onMouseEnter: L,
-                onMouseLeave: y,
+                onMouseLeave: b,
                 ...n,
                 ...l,
                 children: r > 0 ? (0, i.jsx)(E.hVq, {
@@ -364,7 +364,7 @@ let eN = a.memo(function(e) {
                         }
                     }
                 }), S]
-            }, "nitro-tab-group") : null, (0, i.jsx)(b.i, {
+            }, "nitro-tab-group") : null, (0, i.jsx)(y.i, {
                 selected: m === es.BVt.COLLECTIBLES_SHOP || l?.startsWith(es.BVt.COLLECTIBLES_SHOP),
                 listItemRef: I,
                 locationState: {
@@ -421,7 +421,7 @@ function ex() {
         I = (0, V.A)({
             location: "Private Channels"
         });
-    (0, y.Tc)() && (m && !I && E.push(A.M.REFERRAL_PROGRAM_POPOVER), p && E.push(A.M.RECURRING_3P_PROMOTION_POPOVER));
+    (0, b.Tc)() && (m && !I && E.push(A.M.REFERRAL_PROGRAM_POPOVER), p && E.push(A.M.RECURRING_3P_PROMOTION_POPOVER));
     let [f] = (0, O.Cc)(m && I ? A.M.REFERRAL_PROGRAM_POPOVER_V2 : null, g ?? "", void 0, !0), [C, T] = (0, O.kn)(E, void 0, !0), N = null == f && C === A.M.RECURRING_3P_PROMOTION_POPOVER, S = I ? f === A.M.REFERRAL_PROGRAM_POPOVER_V2 : C === A.M.REFERRAL_PROGRAM_POPOVER, x = (0, M.H)(), v = (e = J.dm.useSetting(), t = (0, j.A)(), !0 === e && !0 === t);
     return (0, i.jsx)(eN, {
         theme: r,

@@ -16,9 +16,9 @@ var i, s = n(627968),
     A = n(536482),
     m = n(985018),
     p = n(373431),
-    g = n(233732);
+    _ = n(233732);
 
-function _(e) {
+function g(e) {
     let {
         closePopout: t
     } = e;
@@ -138,7 +138,7 @@ function E(e) {
             variant: "text-sm/normal",
             color: "text-subtle",
             children: m.intl.string(A.default.Yl0mh4)
-        }), (0, s.jsx)(_, {
+        }), (0, s.jsx)(g, {
             closePopout: t
         })]
     })
@@ -172,7 +172,7 @@ function b(e) {
         handleClose: i,
         popoutTargetRef: r,
         children: u
-    } = e, [p, _] = (0, l.useState)(n), f = (0, l.useRef)(null), x = function(e) {
+    } = e, [p, g] = (0, l.useState)(n), f = (0, l.useRef)(null), x = function(e) {
         if (null === e) return null;
         switch (e) {
             case 0:
@@ -229,7 +229,7 @@ function b(e) {
         }
     }(p), N = (0, l.useRef)(t);
     if ((0, l.useEffect)(() => {
-            t && !N.current && _(n), t !== N.current && (N.current = t)
+            t && !N.current && g(n), t !== N.current && (N.current = t)
         }, [n, t]), null == x || !t) return u;
     if ("popover" === x.type) {
         let {
@@ -251,7 +251,7 @@ function b(e) {
                 gradientColor: "purple",
                 graphic: {
                     type: "image",
-                    src: g.A
+                    src: _.A
                 },
                 actions: [{
                     ...e,

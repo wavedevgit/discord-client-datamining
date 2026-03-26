@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(811024),
     m = n(685399),
     p = n(323073),
-    g = n(963027),
-    _ = n(5932),
+    _ = n(963027),
+    g = n(5932),
     f = n(570622),
     x = n(414808),
     C = n(721592),
@@ -198,7 +198,7 @@ class w extends L.Ay {
             showMenuItemPopover: S,
             markMenuItemPopoverAsDismissed: T,
             channelItemRef: v
-        } = this.props, y = v ?? this.channelItemRef, j = !S && o, R = !S && b && null != I && I.length > 0, O = (0, _.M)(C), L = (0, i.jsxs)("li", {
+        } = this.props, y = v ?? this.channelItemRef, j = !S && o, R = !S && b && null != I && I.length > 0, O = (0, g.M)(C), L = (0, i.jsxs)("li", {
             className: r()(this.getClassName(), {
                 [k.r9]: this.isDisabled(),
                 [k.wH]: n
@@ -231,7 +231,7 @@ class w extends L.Ay {
                     isFavoriteSuggestion: f,
                     channelTypeOverride: E ? U.rbe.GUILD_TEXT : void 0,
                     resolvedUnreadSetting: N,
-                    "aria-label": (0, g.Ay)({
+                    "aria-label": (0, _.Ay)({
                         channel: e,
                         unread: l,
                         mentionCount: d,
@@ -264,11 +264,11 @@ function B(e) {
     } = e, {
         hasActiveThreads: u,
         hasMoreActiveThreads: h
-    } = (0, I.NR)(t), g = (0, o.cf)([y.Ay], () => ({
+    } = (0, I.NR)(t), _ = (0, o.cf)([y.Ay], () => ({
         unread: y.Ay.hasUnread(t.id),
         ackMessageId: y.Ay.ackMessageId(t.id),
         isLowImportanceMention: y.Ay.getIsMentionLowImportance(t.id)
-    })), _ = (0, o.bG)([j.Ay], () => j.Ay.resolveUnreadSetting(t)), x = (0, o.cf)([N.A, T.A], () => {
+    })), g = (0, o.bG)([j.Ay], () => j.Ay.resolveUnreadSetting(t)), x = (0, o.cf)([N.A, T.A], () => {
         let e = N.A.getChannel(t.parent_id);
         return {
             canManageChannel: T.A.can(U.xBc.MANAGE_CHANNELS, t),
@@ -286,7 +286,7 @@ function B(e) {
         isNewChannel: S,
         muted: c,
         enableActivities: G,
-        resolvedUnreadSetting: _
+        resolvedUnreadSetting: g
     }), w = (0, m.Ay)(t), [B, H] = s.useState(!1), F = (0, a.K)(s.useCallback(e => {
         H(e)
     }, [])), {
@@ -300,7 +300,7 @@ function B(e) {
         isPopoverAllowed: n.id !== P.Vc
     });
     return (0, o.bG)([v.A, b.Ay], () => v.A.getChannelId() !== t.id && b.Ay.isCurrentUserGuest(t.getGuildId())) ? null : (0, i.jsx)(V, {
-        ...g,
+        ..._,
         ...x,
         ...e,
         hasActiveThreads: u,
@@ -312,7 +312,7 @@ function B(e) {
         channelIsContentGated: D,
         channelInfo: k,
         embeddedApps: w,
-        resolvedUnreadSetting: _,
+        resolvedUnreadSetting: g,
         hasChannelInfo: null != k,
         enableActivities: G,
         showMenuItemPopover: K,

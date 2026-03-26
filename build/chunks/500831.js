@@ -27,8 +27,8 @@ var i = n(627968),
     S = n(667086),
     x = n(87001),
     v = n(52144),
-    b = n(97469),
-    y = n(253932),
+    y = n(97469),
+    b = n(253932),
     O = n(430363),
     L = n(113800),
     R = n(540999),
@@ -54,7 +54,7 @@ let U = (0, l.v)(() => ({
             hasBugReporterAccess: n
         } = A.A.useConfig({
             location: "HeaderBar"
-        }), l = (0, s.bG)([R.A], () => R.A.isDeveloper), U = (0, O.Uk)("VoiceDareTitleBarButton"), G = (0, s.bG)([P.A, c.A], () => y.Q_.getSetting() && null != P.A.testModeApplicationId && null != c.A.getApplication(P.A.testModeApplicationId) && (0, u.A)(c.A.getApplication(P.A.testModeApplicationId))), k = null !== e && t === N.RK.TITLE_BAR_LEFT, V = null === e, {
+        }), l = (0, s.bG)([R.A], () => R.A.isDeveloper), U = (0, O.Uk)("VoiceDareTitleBarButton"), G = (0, s.bG)([P.A, c.A], () => b.Q_.getSetting() && null != P.A.testModeApplicationId && null != c.A.getApplication(P.A.testModeApplicationId) && (0, u.A)(c.A.getApplication(P.A.testModeApplicationId))), k = null !== e && t === N.RK.TITLE_BAR_LEFT, V = null === e, {
             enabled: B
         } = g.s.useConfig({
             location: "AppTitleBar"
@@ -62,7 +62,7 @@ let U = (0, l.v)(() => ({
         a.useLayoutEffect(() => {
             M.Ay.setMinimumSize(800, 500)
         }, []);
-        let H = (0, b.NC)(),
+        let H = (0, y.NC)(),
             F = (0, s.bG)([D.A, x.A], () => (0, j._U)()),
             Y = (0, r.xl)(),
             W = function(e) {

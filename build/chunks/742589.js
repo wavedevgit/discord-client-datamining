@@ -10,69 +10,69 @@ var r = n(607399),
     a = n(688810),
     s = n(966597),
     o = n(922281),
-    d = n(907745),
-    c = n(723702),
+    c = n(907745),
+    d = n(723702),
     u = n(837921),
     h = n(58736),
     _ = n(746080),
     A = n(374850);
 async function C(t) {
-    if (!t && (0, c.isMac)() && c.isPlatformEmbedded) {
+    if (!t && (0, d.isMac)() && d.isPlatformEmbedded) {
         let t = await window.DiscordNative.app.getDefaultDoubleClickAction();
         "Minimize" === t ? u.Ay.minimize() : "Maximize" === t && u.Ay.maximize()
     }
 }
 
-function g(t) {
+function E(t) {
     let {
         children: e,
         className: n,
         channelId: l,
         guildId: a,
-        innerClassname: c,
+        innerClassname: d,
         transparent: u = !1,
-        hidden: g = !1,
-        toolbar: E,
+        hidden: E = !1,
+        toolbar: g,
         mobileToolbar: T,
         "aria-label": I,
-        "aria-labelledby": O,
-        scrollable: f,
+        "aria-labelledby": f,
+        scrollable: O,
         role: L,
         hideSearch: p,
         hideForLater: S,
-        disableDoubleClick: b
+        disableDoubleClick: R
     } = t, {
-        enabled: R,
-        inInbox: m
+        enabled: b,
+        inInbox: N
     } = s.A.useConfig({
         location: "HeaderBar"
     });
     return (0, i.jsx)(h.Ay, {
         className: n,
-        innerClassName: c,
+        innerClassName: d,
         toolbar: function() {
-            if (null == E) return null;
+            if (null == g) return null;
             let t = null != l && !p;
             return r.Fr ? T : (0, i.jsxs)(i.Fragment, {
-                children: [E, t && !(0, _.jq)(l) ? (0, i.jsx)(d.Ay, {
+                children: [g, t && !(0, _.jq)(l) ? (0, i.jsx)(c.Ay, {
                     guildId: a,
                     channelId: l,
                     className: A.$P
-                }, a ?? l) : null, S || !R || m ? null : (0, i.jsx)(o.A, {})]
+                }, a ?? l) : null, S || !b || N ? null : (0, i.jsx)(o.A, {})]
             })
         }(),
         transparent: u,
-        hidden: g,
-        onDoubleClick: () => C(b),
+        hidden: E,
+        onDoubleClick: () => C(R),
         "aria-label": I,
-        "aria-labelledby": O,
+        "aria-labelledby": f,
         role: L,
-        scrollable: f,
+        scrollable: O,
         children: e
     })
 }
 
-function E(t) {
+function g(t) {
     let {
         children: e,
         className: n,
@@ -100,10 +100,10 @@ function T(t) {
     } = (0, a.Ay)(l.A.HEADER_BAR);
     return (0, i.jsx)(a.f5, {
         value: r,
-        children: e ? (0, i.jsx)(g, {
+        children: e ? (0, i.jsx)(E, {
             ...n,
             className: n.className
-        }) : (0, i.jsx)(E, {
+        }) : (0, i.jsx)(g, {
             ...n,
             className: n.className
         })

@@ -21,8 +21,8 @@ function p(e) {
         quest: t,
         questDescription: n,
         completedRatio: p,
-        minimizeFrame: g,
-        onClose: _
+        minimizeFrame: _,
+        onClose: g
     } = e, f = (0, o.Ut)(), x = s.useCallback(() => {
         f({
             questId: t.id,
@@ -32,8 +32,8 @@ function p(e) {
         }), (0, h.navigateToQuestHome)({
             fromContent: a.uF.RUNNING_ACTIVITY,
             questId: t.id
-        }), g(), _()
-    }, [t.id, f, g, _]);
+        }), _(), g()
+    }, [t.id, f, _, g]);
     return (0, i.jsxs)("div", {
         className: m.kL,
         children: [(0, i.jsxs)("div", {
@@ -47,7 +47,7 @@ function p(e) {
             }), (0, i.jsx)(r.DUT, {
                 className: m.b,
                 "aria-label": A.intl.string(A.t.cpT0Cq),
-                onClick: _,
+                onClick: g,
                 children: (0, i.jsx)(r.PGe, {
                     size: "sm",
                     color: "currentColor"

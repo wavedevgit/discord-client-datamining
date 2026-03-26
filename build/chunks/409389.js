@@ -48,8 +48,8 @@ let p = [],
             }, [C]),
             {
                 quests: v,
-                excludedQuests: b,
-                isFetchingCurrentQuests: y,
+                excludedQuests: y,
+                isFetchingCurrentQuests: b,
                 hasFetched: O
             } = (0, d.Qh)(d.NC.ALL, a.useMemo(() => ({
                 sortMethod: T,
@@ -102,8 +102,8 @@ let p = [],
             }), (0, i.jsx)(A.A, {
                 ref: n,
                 quests: v,
-                excludedQuests: b,
-                isFetching: y,
+                excludedQuests: y,
+                isFetching: b,
                 hasFetched: O,
                 hasFiltersApplied: N.length > 0,
                 onClearFilters: L

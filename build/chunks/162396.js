@@ -1,22 +1,22 @@
 /** chunk id: 162396 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => m
+    A: () => p
 });
 var r = n(627968),
-    a = n(64700),
-    i = n(503698),
-    l = n.n(i),
+    i = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(397927),
     o = n(975807),
     c = n(212031),
     u = n(975571),
     d = n(809465),
-    _ = n(652215),
-    h = n(985018),
+    h = n(652215),
+    _ = n(985018),
     f = n(113853);
 
-function p(e) {
+function m(e) {
     let {
         onClose: t
     } = e;
@@ -29,45 +29,45 @@ function p(e) {
         children: (0, r.jsxs)(s.rXV, {
             children: [(0, r.jsx)(s.Drp, {
                 id: "changelog",
-                label: h.intl.string(h.t.LRmNAl),
+                label: _.intl.string(_.t.LRmNAl),
                 action: () => (0, c.j)(!0)
             }), (0, r.jsx)(s.Drp, {
                 id: "acknowledgements",
-                label: h.intl.string(h.t["0nUKy3"]),
-                action: () => (0, o.A)(_.X7G.ACKNOWLEDGEMENTS)
+                label: _.intl.string(_.t["0nUKy3"]),
+                action: () => (0, o.A)(h.X7G.ACKNOWLEDGEMENTS)
             }), (0, r.jsx)(s.Drp, {
                 id: "support",
-                label: h.intl.string(h.t["Yl/Riu"]),
+                label: _.intl.string(_.t["Yl/Riu"]),
                 action: () => (0, o.A)(u.C)
             })]
         })
     })
 }
 
-function m() {
-    let e = a.useRef(null);
+function p() {
+    let e = i.useRef(null);
     return (0, r.jsxs)("div", {
         children: [(0, r.jsx)(d.A, {}), (0, r.jsxs)("div", {
             className: f.yJ,
             children: [(0, r.jsx)(s.MzZ, {
-                href: _.X7G.PRIVACY,
+                href: h.X7G.PRIVACY,
                 children: (0, r.jsx)(s.Text, {
                     tag: "span",
                     variant: "text-xxs/normal",
                     color: "currentColor",
-                    children: h.intl.string(h.t["Knf/f/"])
+                    children: _.intl.string(_.t["Knf/f/"])
                 })
             }), (0, r.jsx)("span", {
                 className: f.xE,
                 "aria-hidden": "true",
                 children: "•"
             }), (0, r.jsx)(s.MzZ, {
-                href: _.X7G.TERMS,
+                href: h.X7G.TERMS,
                 children: (0, r.jsx)(s.Text, {
                     tag: "span",
                     variant: "text-xxs/normal",
                     color: "currentColor",
-                    children: h.intl.string(h.t.uFSTGq)
+                    children: _.intl.string(_.t.uFSTGq)
                 })
             }), (0, r.jsx)("span", {
                 className: f.xE,
@@ -83,7 +83,7 @@ function m() {
                     let {
                         closePopout: t
                     } = e;
-                    return (0, r.jsx)(p, {
+                    return (0, r.jsx)(m, {
                         onClose: t
                     })
                 },
@@ -98,7 +98,7 @@ function m() {
                         tag: "span",
                         variant: "text-xxs/normal",
                         color: "currentColor",
-                        children: h.intl.string(h.t["UKOtz+"])
+                        children: _.intl.string(_.t["UKOtz+"])
                     })
                 })
             })]

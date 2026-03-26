@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(454058),
     m = n(976860),
     p = n(222823),
-    g = n(661191),
-    _ = n(32603),
+    _ = n(661191),
+    g = n(32603),
     f = n(652793),
     x = n(652215),
     C = n(746080),
@@ -28,11 +28,11 @@ function N(e) {
     let {
         guild: t,
         selected: N
-    } = e, b = (0, h.A)(t), S = (0, d.JZ)(r.M.CHANNEL_BROWSER_NEW_BADGE_NUX), T = (0, l.yK)([A.A], () => Array.from(A.A.getNewChannelIds(t.id)).filter(e => A.A.shouldIndicateNewChannel(t.id, e))), v = (0, l.bG)([p.Ay], () => p.Ay.hasUnread(t.id, E.P.GUILD_ONBOARDING_QUESTION)), y = T.length > _.rR, j = (0, l.bG)([u.A, p.Ay], () => {
+    } = e, b = (0, h.A)(t), S = (0, d.JZ)(r.M.CHANNEL_BROWSER_NEW_BADGE_NUX), T = (0, l.yK)([A.A], () => Array.from(A.A.getNewChannelIds(t.id)).filter(e => A.A.shouldIndicateNewChannel(t.id, e))), v = (0, l.bG)([p.Ay], () => p.Ay.hasUnread(t.id, E.P.GUILD_ONBOARDING_QUESTION)), y = T.length > g.rR, j = (0, l.bG)([u.A, p.Ay], () => {
         let e = u.A.lastFetchedAt(t.id),
             n = p.Ay.lastMessageId(t.id, E.P.GUILD_ONBOARDING_QUESTION);
         if (null == n) return !1;
-        let i = g.default.extractTimestamp(n);
+        let i = _.default.extractTimestamp(n);
         return null != e && e > i
     }), R = s.useCallback(() => {
         (0, m.pX)(x.BVt.CHANNEL(t.id, b ? C.VV.CUSTOMIZE_COMMUNITY : C.VV.CHANNEL_BROWSER))

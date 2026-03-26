@@ -1,6 +1,6 @@
 /** chunk id: 432166 params = (module,exports,require) **/
-i.d(e, {
-    A: () => h
+i.d(t, {
+    A: () => m
 });
 var n = i(627968),
     l = i(64700),
@@ -10,11 +10,11 @@ var n = i(627968),
     o = i(235986),
     d = i(624215);
 
-function u(t) {
+function u(e) {
     let {
-        percentage: e,
+        percentage: t,
         isSingleLine: i
-    } = t;
+    } = e;
     return (0, n.jsx)("div", {
         className: s()({
             [d.M0]: i,
@@ -23,24 +23,24 @@ function u(t) {
         children: (0, n.jsx)("div", {
             className: d.qT,
             style: {
-                width: `${100*Math.max(Math.min(e,1),0)}%`
+                width: `${100*Math.max(Math.min(t,1),0)}%`
             }
         })
     })
 }
 
-function c(t) {
-    return String(t).padStart(2, "0")
+function c(e) {
+    return String(e).padStart(2, "0")
 }
 
-function p(t) {
+function A(e) {
     let {
-        time: e,
+        time: t,
         padLargestUnit: i
-    } = t, n = Math.floor(e) % 60, l = Math.floor(e / 60) % 60, r = Math.floor(e / 3600);
+    } = e, n = Math.floor(t) % 60, l = Math.floor(t / 60) % 60, r = Math.floor(t / 3600);
     return 0 === r ? i ? `${c(l)}:${c(n)}` : `${l}:${c(n)}` : i ? `${c(r)}:${c(l)}:${c(n)}` : `${r}:${c(l)}:${c(n)}`
 }
-class m extends l.PureComponent {
+class h extends l.PureComponent {
     static defaultProps = {
         themed: !1
     };
@@ -60,33 +60,33 @@ class m extends l.PureComponent {
     }
     render() {
         let {
-            start: t,
-            end: e,
+            start: e,
+            end: t,
             className: i,
             themed: l,
             singleLine: r = !1
         } = this.props, {
             now: a
-        } = this.state, c = (e - t) / 1e3, m = Math.max(Math.min((a - t) / 1e3, c), 0);
+        } = this.state, c = (t - e) / 1e3, h = Math.max(Math.min((a - e) / 1e3, c), 0);
         return r ? (0, n.jsxs)("div", {
             className: s()(i, {
                 [d.Sp]: l
             }, d.Od),
             children: [(0, n.jsx)("div", {
                 className: d.Iq,
-                children: p({
-                    time: m,
+                children: A({
+                    time: h,
                     padLargestUnit: !0
                 })
             }), (0, n.jsx)("div", {
                 className: d.h7,
                 children: (0, n.jsx)(u, {
-                    percentage: m / c,
+                    percentage: h / c,
                     isSingleLine: !0
                 })
             }), (0, n.jsx)("div", {
                 className: d.EL,
-                children: p({
+                children: A({
                     time: c,
                     padLargestUnit: !0
                 })
@@ -96,20 +96,20 @@ class m extends l.PureComponent {
                 [d.Sp]: l
             }),
             children: [(0, n.jsx)(u, {
-                percentage: m / c,
+                percentage: h / c,
                 isSingleLine: !1
             }), (0, n.jsxs)(o.A, {
                 children: [(0, n.jsx)(o.A.Child, {
                     grow: 1,
                     className: d.n_,
-                    children: p({
-                        time: m,
+                    children: A({
+                        time: h,
                         padLargestUnit: !1
                     })
                 }), (0, n.jsx)(o.A.Child, {
                     grow: 0,
                     className: d.EL,
-                    children: p({
+                    children: A({
                         time: c,
                         padLargestUnit: !1
                     })
@@ -118,4 +118,4 @@ class m extends l.PureComponent {
         })
     }
 }
-let h = m
+let m = h

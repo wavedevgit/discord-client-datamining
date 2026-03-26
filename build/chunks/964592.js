@@ -1,5 +1,5 @@
 /** chunk id: 964592 params = (module,exports,require) **/
-i.d(e, {
+i.d(t, {
     A: () => c
 });
 var n = i(627968);
@@ -12,18 +12,18 @@ var l = i(311907),
     d = i(723702),
     u = i(985018);
 
-function c(t) {
-    let e = (0, l.bG)([a.Ay], () => (0, o.M)(a.Ay.getOutputVolume()));
+function c(e) {
+    let t = (0, l.bG)([a.Ay], () => (0, o.M)(a.Ay.getOutputVolume()));
     return (0, n.jsx)(r.aK1, {
         id: "output",
         label: u.intl.string(u.t.eATD2B),
         control: (i, l) => (0, n.jsx)(r.i42, {
             ...i,
             ref: l,
-            value: e,
+            value: t,
             maxValue: d.isPlatformEmbedded ? 200 : 100,
-            onChange: e => s.A.setOutputVolume((0, o.w)(e), {
-                analyticsLocations: t
+            onChange: t => s.A.setOutputVolume((0, o.w)(t), {
+                analyticsLocations: e
             }),
             "aria-label": u.intl.string(u.t.eATD2B)
         })

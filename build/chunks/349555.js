@@ -50,8 +50,8 @@ let I = a.forwardRef(function(e, t) {
         hasFiltersApplied: I = !1,
         onClearFilters: f
     } = e, C = (0, s.zy)(), T = a.useRef(""), [N, S] = a.useState(null), [x, v] = a.useState(0), [{
-        highlightAnimationProgress: b
-    }, y] = (0, c.zhh)(() => ({
+        highlightAnimationProgress: y
+    }, b] = (0, c.zhh)(() => ({
         highlightAnimationProgress: 1,
         config: {
             duration: p
@@ -74,7 +74,7 @@ let I = a.forwardRef(function(e, t) {
         null != e && (e.scrollIntoView({
             behavior: "smooth",
             block: "center"
-        }), y({
+        }), b({
             from: {
                 highlightAnimationProgress: 0
             },
@@ -86,7 +86,7 @@ let I = a.forwardRef(function(e, t) {
                 e.cancelled || S(null)
             }
         }))
-    }, [N, x, y]), d && 0 === n.length) ? (0, i.jsx)(c.y$y, {
+    }, [N, x, b]), d && 0 === n.length) ? (0, i.jsx)(c.y$y, {
         className: g.u1
     }) : 0 === n.length ? (0, i.jsxs)("div", {
         className: g.y7,
@@ -110,12 +110,12 @@ let I = a.forwardRef(function(e, t) {
                     [g.XB]: l
                 }),
                 style: l ? {
-                    boxShadow: (0, o.to)([b.to({
+                    boxShadow: (0, o.to)([y.to({
                         range: [0, .25, .75, 1],
                         output: [0, 1, 1, 0]
                     })], e => `0 0 ${25*e}px 0 rgba(88, 101, 242, ${e})`)
                 } : s ? {
-                    opacity: (0, o.to)([b.to({
+                    opacity: (0, o.to)([y.to({
                         range: [0, .25, .75, 1],
                         output: [1, .4, .4, 1]
                     })], e => e)

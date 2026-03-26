@@ -26,8 +26,8 @@ var i = n(627968),
     S = n(309010),
     x = n(485296),
     v = n(977997),
-    b = n(607567),
-    y = n(403362),
+    y = n(607567),
+    b = n(403362),
     O = n(652215);
 
 function L(e, t, n, i) {
@@ -176,7 +176,7 @@ function V() {
             s = p.A.getAllActiveStreams();
         if (null != n) {
             let i = I.A.getChannel(n);
-            null != i && (e = i.type, t = b.Ay.countVoiceStatesForChannel(i.id) - !!v.A.isInChannel(i.id), a = p.A.getAllApplicationStreamsForChannel(i.id).map(e => e.ownerId))
+            null != i && (e = i.type, t = y.Ay.countVoiceStatesForChannel(i.id) - !!v.A.isInChannel(i.id), a = p.A.getAllApplicationStreamsForChannel(i.id).map(e => e.ownerId))
         }
         let o = null;
         return o = 1 === s.length ? s[0] : p.A.getCurrentUserActiveStream(), o?.state === O.XYD.CONNECTING && (o = null), null != o && (l = (0, u._z)(o), r = p.A.getViewerIds(l).filter(e => e !== i).length), {
@@ -227,10 +227,10 @@ function B() {
             n = s.Ay.getConnectedActivityLocation(),
             i = (0, o.H)(n),
             a = E.default.getId(),
-            l = (0, y.Vq)(t) ? s.Ay.getEmbeddedActivitiesForChannel(t) : s.Am,
-            r = (0, y.Vq)(e) ? s.Ay.getEmbeddedActivitiesForChannel(e) : s.Am,
-            c = (0, y.Vq)(i) ? s.Ay.getEmbeddedActivitiesForChannel(i) : s.Am,
-            u = (0, y.Vq)(n) ? s.Ay.getSelfEmbeddedActivityForLocation(n) : null;
+            l = (0, b.Vq)(t) ? s.Ay.getEmbeddedActivitiesForChannel(t) : s.Am,
+            r = (0, b.Vq)(e) ? s.Ay.getEmbeddedActivitiesForChannel(e) : s.Am,
+            c = (0, b.Vq)(i) ? s.Ay.getEmbeddedActivitiesForChannel(i) : s.Am,
+            u = (0, b.Vq)(n) ? s.Ay.getSelfEmbeddedActivityForLocation(n) : null;
         return {
             connectedActivityLocation: n,
             voiceChannelId: e,
@@ -253,15 +253,15 @@ function B() {
                 connectedFrame: c
             } = t,
             u = d.some(e => e.applicationId === o?.applicationId && e.launchId === o.launchId);
-        if ((0, y.Vq)(a)) {
+        if ((0, b.Vq)(a)) {
             let t = e.voiceChannelActivities.find(e => e.userIds.has(l)),
                 i = d.find(e => e.userIds.has(l));
-            e.voiceChannelActivities.length < d.length && (0, y.Vq)(e.voiceChannelId) && (n = "activity_launch"), void 0 === i && (0, y.Vq)(t) && (n = "activity_end"), void 0 === t && (0, y.Vq)(i) && i.userIds.size > 1 && (n = "activity_user_join"), (0, y.Vq)(i) && (0, y.Vq)(t) && (i.userIds.size > t.userIds.size && (n = "activity_user_join"), i.userIds.size < t.userIds.size && (n = "activity_user_left"))
+            e.voiceChannelActivities.length < d.length && (0, b.Vq)(e.voiceChannelId) && (n = "activity_launch"), void 0 === i && (0, b.Vq)(t) && (n = "activity_end"), void 0 === t && (0, b.Vq)(i) && i.userIds.size > 1 && (n = "activity_user_join"), (0, b.Vq)(i) && (0, b.Vq)(t) && (i.userIds.size > t.userIds.size && (n = "activity_user_join"), i.userIds.size < t.userIds.size && (n = "activity_user_left"))
         }
         if (!u) {
             e.connectedChannelActivities.length < s.length && e.channelActivities.length < r.length && (n = "activity_launch");
             let t = e.userConnectedActivity;
-            null == o && (0, y.Vq)(t) && (n = "activity_end"), (0, y.Vq)(o) && (0, y.Vq)(t) && (o.userIds.size > t.userIds.size && (n = "activity_user_join"), o.userIds.size < t.userIds.size && (n = "activity_user_left"))
+            null == o && (0, b.Vq)(t) && (n = "activity_end"), (0, b.Vq)(o) && (0, b.Vq)(t) && (o.userIds.size > t.userIds.size && (n = "activity_user_join"), o.userIds.size < t.userIds.size && (n = "activity_user_left"))
         }
         return null == n && (null != e.connectedActivityLocation || null != i) && (null == e.connectedActivityLocation && null != i ? n = "activity_launch" : null != e.connectedActivityLocation && null == i ? n = "activity_end" : null != o && null != e.userConnectedActivity && (e.userConnectedActivity.userIds.size < o.userIds.size ? n = "activity_user_join" : e.userConnectedActivity.userIds.size > o.userIds.size && (n = "activity_user_leave"))), null == n && (null != e.connectedFrame || null != c) && (null == e.connectedFrame && null != c ? n = "activity_launch" : null != e.connectedFrame && null == c && (n = "activity_end")), n
     }), null

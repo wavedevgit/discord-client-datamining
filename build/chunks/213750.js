@@ -26,8 +26,8 @@ var i = n(627968),
     S = n(979286),
     x = n(912140),
     v = n(335657),
-    b = n(252362),
-    y = n(540063),
+    y = n(252362),
+    b = n(540063),
     O = n(870308),
     L = n(998694),
     R = n(158216),
@@ -160,7 +160,7 @@ let U = e => {
             x = (0, g.Ay)(),
             v = (0, A.Mw)(x);
         E ? v ? (t = l.entryPointBackgroundAssets?.srcDarkHovered, n = l.entrypointBackgroundStyle?.hovered?.dark) : (t = l.entryPointBackgroundAssets?.srcLightHovered, n = l.entrypointBackgroundStyle?.hovered?.light) : v ? (t = l.entryPointBackgroundAssets?.srcDark, n = l.entrypointBackgroundStyle?.resting?.dark) : (t = l.entryPointBackgroundAssets?.srcLight, n = l.entrypointBackgroundStyle?.resting?.light);
-        let b = a.useCallback(e => {
+        let y = a.useCallback(e => {
                 let t = l.assetIds;
                 null != t && t.length > 0 && u(e => (e + 1) % t.length);
                 let n = l.avatarDecorationSkuIds;
@@ -170,7 +170,7 @@ let U = e => {
                 };
                 i(), S.current = requestAnimationFrame(i), e?.()
             }, [l.assetIds, l.avatarDecorationSkuIds]),
-            y = a.useCallback(e => {
+            b = a.useCallback(e => {
                 I(!1), C(!1), null != S.current && (cancelAnimationFrame(S.current), S.current = null), e?.()
             }, []);
         a.useEffect(() => () => {
@@ -196,8 +196,8 @@ let U = e => {
                 ...s,
                 icon: l.entryPointIcon,
                 ...e,
-                onMouseEnter: () => b(e.onMouseEnter),
-                onMouseLeave: () => y(e.onMouseLeave),
+                onMouseEnter: () => y(e.onMouseEnter),
+                onMouseLeave: () => b(e.onMouseLeave),
                 children: [(0, i.jsx)("div", {
                     ref: T,
                     className: w.marketingButtonBackgroundNew,
@@ -341,7 +341,7 @@ let U = e => {
                     badgeIcon: t.badgeIcon,
                     badgeText: t.badgeText
                 })]
-            }), (0, i.jsx)(b.A, {
+            }), (0, i.jsx)(y.A, {
                 displayOptions: t,
                 targetElementRef: s,
                 onClick: () => n(M.i.TAKE_ACTION),
@@ -359,7 +359,7 @@ let U = e => {
                 ...n,
                 onClick: () => t(M.i.TAKE_ACTION),
                 listItemRef: l
-            }), (0, i.jsx)(y.A, {
+            }), (0, i.jsx)(b.A, {
                 targetElementRef: l,
                 onClick: () => t(M.i.TAKE_ACTION),
                 onRequestClose: () => t(M.i.USER_DISMISS)

@@ -1,7 +1,7 @@
 /** chunk id: 854514 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b,
-    H: () => y
+    A: () => y,
+    H: () => b
 });
 var i = n(627968),
     a = n(64700),
@@ -95,7 +95,7 @@ function v(e) {
     })
 }
 
-function b(e) {
+function y(e) {
     let {
         config: t,
         onQuestCtaClick: n
@@ -165,7 +165,7 @@ function b(e) {
     })
 }
 
-function y() {
+function b() {
     return (0, i.jsx)("div", {
         className: r()(x.iE, x.FG, x.B3),
         children: (0, i.jsx)(d.y$y, {})
