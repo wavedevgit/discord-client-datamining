@@ -40,7 +40,7 @@ let m = e => {
         className: l()(u.Xl, n),
         children: [(0, i.jsx)(o.Text, {
             variant: "text-sm/semibold",
-            color: "always-white",
+            color: "text-strong",
             children: c.intl.string(c.t["/ARFVE"])
         }), (0, i.jsx)("div", {
             className: u.$R,
@@ -55,20 +55,20 @@ let m = e => {
                                 className: u.B2,
                                 children: (0, i.jsx)(o.Text, {
                                     variant: "text-md/medium",
-                                    color: "always-white",
+                                    color: "text-strong",
                                     children: s
                                 })
                             }), (0, i.jsx)("div", {
                                 className: u.B2,
                                 children: (0, i.jsx)(o.Text, {
                                     variant: "text-md/medium",
-                                    color: "always-white",
+                                    color: "text-strong",
                                     children: l
                                 })
                             })]
                         }), (0, i.jsx)(o.Text, {
                             variant: "text-xs/semibold",
-                            color: "always-white",
+                            color: "text-strong",
                             children: function(e) {
                                 switch (e) {
                                     case "days":
@@ -87,7 +87,7 @@ let m = e => {
                     }, e.unitType), !t && (0, i.jsx)(o.Text, {
                         className: u.cV,
                         variant: "text-lg/normal",
-                        color: "always-white",
+                        color: "text-strong",
                         children: ":"
                     })]
                 })

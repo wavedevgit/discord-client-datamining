@@ -4,7 +4,7 @@ n.d(t, {
 });
 let i = (0, n(945810).mj)({
     kind: "user",
-    name: "2026-01-friend-is-online-notif-rate-limits",
+    name: "2026-03-friend-is-online-v3",
     defaultConfig: {
         showSettingsToggle: !1
     },
@@ -13,9 +13,6 @@ let i = (0, n(945810).mj)({
             showSettingsToggle: !0
         },
         2: {
-            showSettingsToggle: !0
-        },
-        3: {
             showSettingsToggle: !0
         }
     }

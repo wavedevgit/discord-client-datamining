@@ -20,8 +20,8 @@ var i = n(627968),
     b = n(69494),
     A = n(312649),
     j = n(534479),
-    v = n(482132),
-    S = n(921925),
+    S = n(482132),
+    v = n(921925),
     C = n(367160),
     _ = n(985018),
     y = n(950637);
@@ -116,9 +116,9 @@ function N(e) {
     let ed = el ? null : (0, i.jsx)(b.A, {
             className: y.jD
         }),
-        ec = el ? null : (0, i.jsx)(S.A, {});
+        ec = el ? null : (0, i.jsx)(v.A, {});
     return (0, i.jsxs)(i.Fragment, {
-        children: [ed, (0, i.jsxs)(v.dZ, {
+        children: [ed, (0, i.jsxs)(S.dZ, {
             children: [ec, eo, null == R ? (0, i.jsx)(es, {
                 selectedPlanId: G.id,
                 planGroup: T,
@@ -159,7 +159,7 @@ function N(e) {
                 handleClose: w,
                 shouldUseUnifiedCheckoutUI: el
             })]
-        }), (0, i.jsx)(v.UX, {
+        }), (0, i.jsx)(S.UX, {
             children: (0, i.jsx)(A.A, {
                 premiumSubscription: R ?? null,
                 setPurchaseState: q,

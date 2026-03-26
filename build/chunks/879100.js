@@ -94,7 +94,7 @@ function H(e) {
             amount: eu.amount,
             tax: 0,
             taxInclusive: !0,
-            currency: H.currency
+            currency: ei.currency
         } : w.Ay.getPrice($.id, es, !1, H),
         eo = n * ec.amount,
         ed = (0, g.ds)() && w.Ay.hasBoostDiscount(Z) && null != T,

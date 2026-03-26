@@ -23,10 +23,10 @@ function A(e) {
     let t, n, {
             showBenefits: A,
             handleClose: j,
-            onSubscriptionConfirmation: v
+            onSubscriptionConfirmation: S
         } = e,
         {
-            updatedSubscription: S,
+            updatedSubscription: v,
             readySlideId: C,
             selectedSku: _,
             selectedStoreListing: y,
@@ -38,7 +38,7 @@ function A(e) {
         } = l.useContext(s.x),
         P = _?.name ?? "",
         I = () => {
-            j(), v?.()
+            j(), S?.()
         },
         k = C === m.pn.CONFIRM,
         w = (0, o.bg)(_?.flags ?? 0),
@@ -74,11 +74,11 @@ function A(e) {
     })) : t = E ? (0, i.jsx)(c.v, {
         tierName: P,
         onConfirm: I,
-        subscription: S
+        subscription: v
     }) : (0, i.jsx)(d.XG, {
         tierName: P,
         onConfirm: I,
-        subscription: S
+        subscription: v
     }), l.useEffect(() => {
         a.A.useReducedMotion && k && T(window.innerWidth / 2, window.innerHeight / 2)
     }, [T, k]), (0, i.jsxs)(i.Fragment, {

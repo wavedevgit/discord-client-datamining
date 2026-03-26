@@ -26,12 +26,12 @@ function h(e) {
         selectedSku: b,
         selectedStoreListing: A,
         application: j
-    } = (0, u.P5)(), v = (0, a.A)(x.Y), S = (0, r.bG)([c.A], () => c.A.getGuild(h?.guild_id)), C = l.useCallback(() => t(m.pn.REVIEW), [t]);
+    } = (0, u.P5)(), S = (0, a.A)(x.Y), v = (0, r.bG)([c.A], () => c.A.getGuild(h?.guild_id)), C = l.useCallback(() => t(m.pn.REVIEW), [t]);
     if (null == b) return null;
     let _ = (0, s.bg)(b.flags);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(f.dZ, {
-            children: v ? (0, i.jsx)(d.E, {
+            children: S ? (0, i.jsx)(d.E, {
                 confirmCta: g.intl.string(g.t.PBHFSq),
                 onConfirm: C,
                 onCancel: n,
@@ -39,7 +39,7 @@ function h(e) {
                     tier: b.name
                 }),
                 subtitle: _ ? g.intl.string(g.t.lzAoKB) : g.intl.formatToPlainString(g.t["GqaY/j"], {
-                    guildName: S?.name
+                    guildName: v?.name
                 }),
                 showOpenDiscord: !1
             }) : (0, i.jsx)(o.Uf, {
@@ -54,7 +54,7 @@ function h(e) {
                     applicationName: j?.name
                 }) : g.intl.string(g.t.n1Pu8C)
             })
-        }), !v && (0, i.jsx)(f.UX, {
+        }), !S && (0, i.jsx)(f.UX, {
             children: (0, i.jsx)(p.Ay, {
                 onBack: n,
                 backText: g.intl.string(g.t.TQBY1J),
