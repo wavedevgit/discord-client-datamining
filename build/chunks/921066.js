@@ -1,6 +1,6 @@
 /** chunk id: 921066 params = (module,exports,require) **/
 n.d(t, {
-    A: () => G
+    A: () => F
 });
 var i, a = n(627968),
     l = n(64700),
@@ -151,10 +151,31 @@ function j(e) {
 
 function y(e) {
     let {
+        guild: t,
+        children: n
+    } = e, i = (0, T.A)(t?.id);
+    return (0, a.jsx)(d.DUT, {
+        tag: "a",
+        role: "link",
+        onClick: () => {
+            null != t && (i ? (0, f.A)(t.id, _.A.GUILD_BOOSTING_SYSTEM_MESSAGE) : (0, m.K)({
+                guildId: t.id,
+                location: {
+                    section: h.JJy.CHANNEL_TEXT_AREA,
+                    object: h.ZSU.BOOST_ANNOUNCEMENT_UPSELL
+                }
+            }))
+        },
+        children: n
+    })
+}
+
+function b(e) {
+    let {
         message: t,
         guild: n,
         usernameHook: i
-    } = e, l = D(), r = (0, C.Ay)(t), s = i(r), o = (0, I.A)(t), c = (0, T.A)(n?.id);
+    } = e, l = D(), r = (0, C.Ay)(t), s = i(r), o = t.hasFlag(h.pr7.IS_FIRST_BOOSTER);
     return (0, a.jsxs)("div", {
         className: x.ds,
         children: [(0, a.jsx)(N.A, {
@@ -162,27 +183,20 @@ function y(e) {
             forceReducedMotion: !l
         }), (0, a.jsx)(P, {
             className: x.S8,
-            showProgressBar: !0,
+            showProgressBar: !o,
             animate: l
         }), (0, a.jsx)(L, {
-            title: p.intl.format(p.t.SbSWvY, {
+            title: o ? p.intl.format(p.t["/1IQGD"], {
+                username: r.nick,
+                usernameHook: s
+            }) : p.intl.format(p.t.SbSWvY, {
                 username: r.nick,
                 usernameHook: s,
-                numSubscriptions: o
+                numSubscriptions: (0, I.A)(t)
             }),
             body: p.intl.format(p.t.dWm8Iu, {
-                learnMoreHook: e => (0, a.jsx)(d.DUT, {
-                    tag: "a",
-                    role: "link",
-                    onClick: () => {
-                        null != n && (c ? (0, f.A)(n.id, _.A.GUILD_BOOSTING_SYSTEM_MESSAGE) : (0, m.K)({
-                            guildId: n.id,
-                            location: {
-                                section: h.JJy.CHANNEL_TEXT_AREA,
-                                object: h.ZSU.BOOST_ANNOUNCEMENT_UPSELL
-                            }
-                        }))
-                    },
+                learnMoreHook: e => (0, a.jsx)(y, {
+                    guild: n,
                     children: e
                 })
             })
@@ -192,31 +206,26 @@ function y(e) {
     })
 }
 
-function b(e) {
+function k(e) {
     let {
         message: t,
         guild: n,
-        usernameHook: i,
-        compact: l
-    } = e, r = D(), s = (0, C.Ay)(t), o = i(s), c = (0, I.A)(t);
-    return l ? (0, a.jsx)(y, {
-        message: t,
-        guild: n,
         usernameHook: i
-    }) : (0, a.jsxs)("div", {
+    } = e, l = D(), r = (0, C.Ay)(t), s = i(r), o = (0, I.A)(t);
+    return (0, a.jsxs)("div", {
         className: x.kL,
         children: [(0, a.jsx)(N.A, {
             className: x.Tp,
-            forceReducedMotion: !r
+            forceReducedMotion: !l
         }), (0, a.jsx)(P, {
             className: x.rc,
             showProgressBar: !0,
-            animate: r
+            animate: l
         }), (0, a.jsx)(U, {
             title: p.intl.format(p.t["7t1Ecm"], {
-                username: s.nick,
-                usernameHook: o,
-                numSubscriptions: c
+                username: r.nick,
+                usernameHook: s,
+                numSubscriptions: o
             }),
             body: p.intl.string(p.t.nybLqy)
         }), null != n && (0, a.jsxs)(a.Fragment, {
@@ -231,7 +240,7 @@ function b(e) {
     })
 }
 
-function k(e) {
+function G(e) {
     let {
         message: t,
         guild: n,
@@ -260,21 +269,24 @@ function k(e) {
     })
 }
 
-function G(e) {
+function F(e) {
     let {
         message: t,
         guild: n,
         usernameHook: i,
         compact: l
     } = e;
-    return t.hasFlag(h.pr7.IS_FIRST_BOOSTER) ? (0, a.jsx)(k, {
+    return l ? (0, a.jsx)(b, {
         message: t,
         guild: n,
         usernameHook: i
-    }) : (0, a.jsx)(b, {
+    }) : t.hasFlag(h.pr7.IS_FIRST_BOOSTER) ? (0, a.jsx)(G, {
         message: t,
         guild: n,
-        usernameHook: i,
-        compact: l
+        usernameHook: i
+    }) : (0, a.jsx)(k, {
+        message: t,
+        guild: n,
+        usernameHook: i
     })
 }
