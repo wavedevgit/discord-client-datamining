@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(435371),
+    a = n.n(l),
+    r = n(435371),
     o = n(278148);
 
 function c(e) {
@@ -23,13 +23,13 @@ function c(e) {
     } = e, m = s.useMemo(() => null == n || c ? null : (0, i.jsx)("div", {
         className: o.SH,
         children: n
-    }), [n, c]), p = l ? t : (0, i.jsx)("div", {
-        className: r()(o.pm, {
+    }), [n, c]), _ = l ? t : (0, i.jsx)("div", {
+        className: a()(o.pm, {
             [o.wH]: A
         }),
         children: t
     });
-    return (0, i.jsx)(a.m_, {
+    return (0, i.jsx)(r.m_, {
         __unsupportedReactNodeAsText: m,
         position: "right",
         spacing: 12,
@@ -38,6 +38,6 @@ function c(e) {
         forceOpen: h,
         ariaHidden: !0,
         asContainer: !l,
-        children: p
+        children: _
     })
 }

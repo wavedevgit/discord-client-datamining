@@ -28,21 +28,16 @@ function s(e) {
     return i.useExperiment({
         guildId: t,
         location: n
-    }, {
-        autoTrackExposure: !0
     })
 }
 
 function l(e) {
     let {
         guildId: t,
-        location: n,
-        autoTrackExposure: s = !0
+        location: n
     } = e;
     return i.getCurrentConfig({
         guildId: t,
         location: n
-    }, {
-        autoTrackExposure: s
     })
 }

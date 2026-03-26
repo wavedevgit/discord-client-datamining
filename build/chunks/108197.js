@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(837381),
+    a = n.n(l),
+    r = n(837381),
     o = n(311907),
     c = n(3026),
     d = n(397927),
@@ -15,13 +15,13 @@ var i = n(627968),
     h = n(442433),
     A = n(152007),
     m = n(747926),
-    p = n(734057),
-    _ = n(222823),
+    _ = n(734057),
+    p = n(222823),
     g = n(977997),
     f = n(607567),
     x = n(892896),
-    C = n(884415),
-    E = n(775946),
+    E = n(884415),
+    C = n(775946),
     I = n(588224),
     N = n(37411),
     b = n(985018),
@@ -35,16 +35,16 @@ function y(e) {
         withGuildIcon: n,
         inverted: s
     } = e, l = {
-        className: r()(v.GI, {
+        className: a()(v.GI, {
             [v.a7]: n
         }, {
             [v.BJ]: s
         }),
         style: t
     }, {
-        density: a
+        density: r
     } = (0, d.wRf)();
-    switch (a) {
+    switch (r) {
         case "cozy":
             return (0, i.jsxs)("svg", {
                 ...l,
@@ -106,16 +106,16 @@ let j = s.memo(function(e) {
         unread: M,
         mentionCount: D,
         isMentionLowImportance: G
-    } = (0, o.cf)([_.Ay], () => ({
-        unread: _.Ay.hasUnread(t.id),
-        mentionCount: _.Ay.getMentionCount(t.id),
-        isMentionLowImportance: _.Ay.getIsMentionLowImportance(t.id)
+    } = (0, o.cf)([p.Ay], () => ({
+        unread: p.Ay.hasUnread(t.id),
+        mentionCount: p.Ay.getMentionCount(t.id),
+        isMentionLowImportance: p.Ay.getIsMentionLowImportance(t.id)
     })), U = (0, o.bG)([A.A], () => A.A.isMuted(t.id)), P = s.useCallback(e => {
         (0, m.JA)(t, !e.shiftKey, N.H9.CHANNEL_LIST)
-    }, [t]), k = s.useCallback(() => {
+    }, [t]), w = s.useCallback(() => {
         u.A.preload(t.guild_id, t.id)
-    }, [t.guild_id, t.id]), w = s.useCallback(e => {
-        let s = p.A.getChannel(t.id);
+    }, [t.guild_id, t.id]), k = s.useCallback(e => {
+        let s = _.A.getChannel(t.id);
         null != s && (0, h.L3)(e, async () => {
             let {
                 default: e
@@ -128,7 +128,7 @@ let j = s.memo(function(e) {
     }, [t.id]), V = null == O ? 0 : O.length, {
         role: B,
         ...H
-    } = (0, a.rm)(t.id), F = s.useRef(null), K = D > 0 ? b.intl.formatToPlainString(b.t["ZL7+I6"], {
+    } = (0, r.rm)(t.id), F = s.useRef(null), K = D > 0 ? b.intl.formatToPlainString(b.t["ZL7+I6"], {
         channelName: t.name,
         mentionCount: D
     }) : M ? b.intl.formatToPlainString(b.t.YlVvmc, {
@@ -138,7 +138,7 @@ let j = s.memo(function(e) {
     });
     return (0, i.jsxs)("li", {
         role: B,
-        className: r()(S.fx, {
+        className: a()(S.fx, {
             [S.wH]: l
         }),
         children: [(0, i.jsx)(y, {
@@ -158,16 +158,16 @@ let j = s.memo(function(e) {
                 right: 4
             },
             children: (0, i.jsxs)("div", {
-                className: r()(S.Ki, T.iE, T.ZS, {
+                className: a()(S.Ki, T.iE, T.ZS, {
                     [T.J1]: l,
                     [T.F4]: !l && U,
                     [T.V2]: !U && !l && M,
                     [T.lY]: R
                 }),
-                onMouseDown: k,
-                onContextMenu: w,
+                onMouseDown: w,
+                onContextMenu: k,
                 children: [!M || U || l ? null : (0, i.jsx)("div", {
-                    className: r()(T.gy, T.WS)
+                    className: a()(T.gy, T.WS)
                 }), (0, i.jsx)(d.DUT, {
                     ...H,
                     innerRef: F,
@@ -178,18 +178,18 @@ let j = s.memo(function(e) {
                         enabled: !1
                     },
                     children: (0, i.jsxs)("div", {
-                        className: r()(T.Y5, T.__invalid_threadMainContent),
+                        className: a()(T.Y5, T.__invalid_threadMainContent),
                         children: [(0, i.jsx)(c.A, {
                             className: T.UU,
                             "aria-hidden": !0,
                             children: t.name
                         }), (0, i.jsxs)("div", {
                             className: T.Y_,
-                            children: [V > 0 && t.userLimit > 0 ? (0, i.jsx)(C.A, {
+                            children: [V > 0 && t.userLimit > 0 ? (0, i.jsx)(E.A, {
                                 userCount: V,
                                 video: L,
                                 channel: t
-                            }) : null, (0, x.A)(D) ? (0, i.jsx)(E.A, {
+                            }) : null, (0, x.A)(D) ? (0, i.jsx)(C.A, {
                                 mentionsCount: D,
                                 isMentionLowImportance: G
                             }) : null]

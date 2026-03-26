@@ -7,8 +7,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(4208),
+    a = n.n(l),
+    r = n(4208),
     o = n(158954),
     c = n(311907),
     d = n(397927),
@@ -16,13 +16,13 @@ var i = n(627968),
     h = n(793574),
     A = n(230135),
     m = n(552836),
-    p = n(147925),
-    _ = n(363487),
+    _ = n(147925),
+    p = n(363487),
     g = n(267771),
     f = n(828162),
     x = n(259568),
-    C = n(333354),
-    E = n(985018),
+    E = n(333354),
+    C = n(985018),
     I = n(208988);
 let N = s.forwardRef((e, t) => {
     let {
@@ -30,7 +30,7 @@ let N = s.forwardRef((e, t) => {
         maxBoostCount: l,
         premiumSubscriberCount: c,
         className: u
-    } = e, h = n >= l, A = Math.min(n / l * 100, 100), [m, _] = (0, d.zhh)(() => ({
+    } = e, h = n >= l, A = Math.min(n / l * 100, 100), [m, p] = (0, d.zhh)(() => ({
         width: n === c ? `calc(${A}% - 4px)` : "0%",
         config: {
             tension: 250,
@@ -39,16 +39,16 @@ let N = s.forwardRef((e, t) => {
         }
     }), "respect-motion-settings", [n, c]);
     return s.useEffect(() => {
-        _({
+        p({
             width: `calc(${A}% - 4px)`
         })
-    }, [A, _]), (0, i.jsxs)("div", {
+    }, [A, p]), (0, i.jsxs)("div", {
         ref: t,
         className: I.hQ,
         children: [(0, i.jsx)("div", {
-            className: r()(I.L$, u)
-        }), (0, i.jsx)(a.animated.div, {
-            className: r()(I.qB, {
+            className: a()(I.L$, u)
+        }), (0, i.jsx)(r.animated.div, {
+            className: a()(I.qB, {
                 [I.mu]: A <= 5
             }),
             style: m
@@ -59,7 +59,7 @@ let N = s.forwardRef((e, t) => {
                 children: [(0, i.jsx)(o.EYj, {
                     className: I.Qq,
                     variant: "text-xs/semibold",
-                    children: E.intl.string(C.default.NI6Ihe)
+                    children: C.intl.string(E.default.NI6Ihe)
                 }), c >= l && (0, i.jsx)(o.EYj, {
                     className: I.Qq,
                     variant: "text-xs/semibold",
@@ -68,19 +68,19 @@ let N = s.forwardRef((e, t) => {
             }), (0, i.jsxs)("div", {
                 className: I.Ui,
                 children: [(0, i.jsx)(o.EYj, {
-                    className: r()(I.Qq, I.ue),
+                    className: a()(I.Qq, I.ue),
                     variant: "text-xs/semibold",
-                    children: h ? E.intl.formatToPlainString(C.default["Ehpq+7"], {
+                    children: h ? C.intl.formatToPlainString(E.default["Ehpq+7"], {
                         appliedBoostCount: n
-                    }) : E.intl.formatToPlainString(C.default["/rbPDs"], {
+                    }) : C.intl.formatToPlainString(E.default["/rbPDs"], {
                         appliedBoostCount: n,
                         maxBoostCount: l
                     })
-                }), (0, i.jsx)(p.A, {
+                }), (0, i.jsx)(_.A, {
                     width: 12,
                     height: 12,
-                    direction: p.A.Directions.RIGHT,
-                    className: r()(I.Qq, I.ue)
+                    direction: _.A.Directions.RIGHT,
+                    className: a()(I.Qq, I.ue)
                 })]
             })]
         })]
@@ -91,14 +91,14 @@ function b(e) {
     let {
         guild: t,
         withMargin: l
-    } = e, a = s.useRef(null), o = (0, g.A)(t), p = (0, _.A)(t.id), C = s.useCallback(() => {
+    } = e, r = s.useRef(null), o = (0, g.A)(t), _ = (0, p.A)(t.id), E = s.useCallback(() => {
         (0, f.A)(t.id, h.A.GUILD_BOOSTING_SIDEBAR_DISPLAY)
-    }, [t.id]), E = (0, c.bG)([m.A], () => m.A.getCountForGuild(t.id) ?? 0);
+    }, [t.id]), C = (0, c.bG)([m.A], () => m.A.getCountForGuild(t.id) ?? 0);
     s.useEffect(() => {
-        E !== t.premiumSubscriberCount && (0, A.u)(t.id, t.premiumSubscriberCount)
-    }, [t.id, E, t.premiumSubscriberCount]);
+        C !== t.premiumSubscriberCount && (0, A.u)(t.id, t.premiumSubscriberCount)
+    }, [t.id, C, t.premiumSubscriberCount]);
     let b = s.useCallback(e => {
-        p && (0, u.L3)(e, async () => {
+        _ && (0, u.L3)(e, async () => {
             let {
                 default: e
             } = await n.e("71728").then(n.bind(n, 709843));
@@ -107,7 +107,7 @@ function b(e) {
                 guild: t
             })
         })
-    }, [p, t]);
+    }, [_, t]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.DUT, {
             "aria-label": void 0,
@@ -118,20 +118,20 @@ function b(e) {
                     right: 4
                 }
             },
-            onClick: C,
-            className: r()(I.kL, {
+            onClick: E,
+            className: a()(I.kL, {
                 [I.aF]: l
             }),
             onContextMenu: b,
             children: (0, i.jsx)(N, {
-                ref: a,
-                appliedBoostCount: E,
+                ref: r,
+                appliedBoostCount: C,
                 maxBoostCount: o,
                 premiumSubscriberCount: t.premiumSubscriberCount
             })
         }), (0, i.jsx)(x.a, {
             guild: t,
-            targetElementRef: a
+            targetElementRef: r
         })]
     })
 }

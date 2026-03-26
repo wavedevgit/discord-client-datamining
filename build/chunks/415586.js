@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(735438),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(73153),
     c = n(442433),
     d = n(738876),
@@ -15,13 +15,13 @@ var i = n(627968),
     h = n(332456),
     A = n(973854),
     m = n(47167),
-    p = n(698718),
-    _ = n(355622),
+    _ = n(698718),
+    p = n(355622),
     g = n(58736),
     f = n(353428),
     x = n(378570),
-    C = n(734057),
-    E = n(31717),
+    E = n(734057),
+    C = n(31717),
     I = n(71393),
     N = n(977997),
     b = n(823471),
@@ -37,10 +37,10 @@ function j(e) {
             baseChannelId: R,
             channelViewSource: O = "Split View"
         } = e,
-        L = (0, a.bG)([C.A], () => C.A.getChannel(j)),
-        M = (0, a.bG)([I.A], () => I.A.getGuild(L?.getGuildId())),
+        L = (0, r.bG)([E.A], () => E.A.getChannel(j)),
+        M = (0, r.bG)([I.A], () => I.A.getGuild(L?.getGuildId())),
         D = (0, m.Ay)(L);
-    t = L, l = (0, a.bG)([N.A], () => null != t && !r().isEmpty(N.A.getVoiceStatesForChannel(t.id))), s.useEffect(() => {
+    t = L, l = (0, r.bG)([N.A], () => null != t && !a().isEmpty(N.A.getVoiceStatesForChannel(t.id))), s.useEffect(() => {
         l && null != t && (o.h.dispatch({
             type: "SIDEBAR_CLOSE",
             baseChannelId: t.parent_id
@@ -52,7 +52,7 @@ function j(e) {
     if (s.useEffect(() => {
             if (null == L || G.current) return;
             G.current = !0;
-            let e = (0, h.C)(C.A.getChannel(L.id), !0);
+            let e = (0, h.C)(E.A.getChannel(L.id), !0);
             (0, u.zV)(T.HAw.CHANNEL_OPENED, {
                 ...e,
                 ...(0, u.qL)(L.id),
@@ -68,7 +68,7 @@ function j(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.A, {
             channel: L,
-            draftType: E.C.ChannelMessage
+            draftType: C.C.ChannelMessage
         }), (0, i.jsx)(g.Ay, {
             toolbar: U,
             "aria-label": v.intl.string(v.t.Pwe8tN),
@@ -94,10 +94,10 @@ function j(e) {
             })
         }), (0, i.jsx)("div", {
             className: y.T,
-            children: (0, i.jsx)(p.A, {
+            children: (0, i.jsx)(_.A, {
                 channel: L,
                 guild: M,
-                chatInputType: _.oU.SIDEBAR
+                chatInputType: p.oU.SIDEBAR
             }, j)
         })]
     })

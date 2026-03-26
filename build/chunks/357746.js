@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(397927),
     c = n(793574),
     d = n(652793),
@@ -15,13 +15,13 @@ var i = n(627968),
     h = n(186111),
     A = n(942975),
     m = n(379229),
-    p = n(489306),
-    _ = n(828162),
+    _ = n(489306),
+    p = n(828162),
     g = n(249584),
     f = n(49999),
     x = n(333354),
-    C = n(985018),
-    E = n(384055);
+    E = n(985018),
+    C = n(384055);
 
 function I(e) {
     let {
@@ -57,9 +57,9 @@ let N = {
         let {
             guildId: t,
             selected: l
-        } = e, b = (0, p.Ay)(t), S = s.useCallback(() => {
-            (0, A.Zm)(t), (0, _.A)(t, c.A.GUILD_POWERUPS_CHANNEL_LIST_ROW), b?.popout?.markAsDismissed(f.i.INDIRECT_ACTION)
-        }, [t, b]), T = s.useRef(null), v = (0, o.red)(o.DXt), y = (0, a.bG)([h.A], () => h.A.hasLayers()), j = (0, u.xr)(e => e.fullScreenLayers.length > 0), R = v || y || j, O = s.useCallback(() => {
+        } = e, b = (0, _.Ay)(t), S = s.useCallback(() => {
+            (0, A.Zm)(t), (0, p.A)(t, c.A.GUILD_POWERUPS_CHANNEL_LIST_ROW), b?.popout?.markAsDismissed(f.i.INDIRECT_ACTION)
+        }, [t, b]), T = s.useRef(null), v = (0, o.red)(o.DXt), y = (0, r.bG)([h.A], () => h.A.hasLayers()), j = (0, u.xr)(e => e.fullScreenLayers.length > 0), R = v || y || j, O = s.useCallback(() => {
             if (b?.popout == null || R) return null;
             switch (b?.popout?.type) {
                 case m.o.LEVEL_REACHED:
@@ -130,7 +130,7 @@ let N = {
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(d.G, {
                 ref: T,
-                className: E.kL,
+                className: C.kL,
                 id: `skill-trees-${t}`,
                 renderIcon: e => (0, i.jsx)(o._Jp, {
                     size: "md",
@@ -138,10 +138,10 @@ let N = {
                     color: "currentColor"
                 }),
                 background: b?.popout != null && (0, i.jsx)("div", {
-                    className: E.Fi,
+                    className: C.Fi,
                     children: (0, i.jsx)(o.tvC, {
                         nextScene: null == L ? "animation" : "LOOP",
-                        className: E.UU,
+                        className: C.UU,
                         sceneSegments: N,
                         importData: () => n.e("67807").then(n.t.bind(n, 217762, 19)),
                         onScenePlay: D,
@@ -151,10 +151,10 @@ let N = {
                     })
                 }),
                 text: (0, i.jsx)("span", {
-                    className: r()({
-                        [E.A7]: b?.showUnread === !0
+                    className: a()({
+                        [C.A7]: b?.showUnread === !0
                     }),
-                    children: C.intl.string(x.default.yv3DJJ)
+                    children: E.intl.string(x.default.yv3DJJ)
                 }),
                 selected: l,
                 onClick: S,

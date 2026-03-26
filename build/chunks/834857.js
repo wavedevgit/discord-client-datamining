@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(267102),
-    r = n(520006),
-    a = n(576705),
+    a = n(520006),
+    r = n(576705),
     o = n(652215),
     c = n(985018);
 
@@ -20,7 +20,7 @@ function d(e, t, n, d) {
             appContext: (0, l.Us)()
         },
         h = () => {
-            null != t && e.type === o.rbe.GUILD_VOICE && (0, r.X)({
+            null != t && e.type === o.rbe.GUILD_VOICE && (0, a.X)({
                 guild: t,
                 source: o.PE1.VOICE_CHANNEL_CALL_MENU_ITEM,
                 ...u
@@ -35,7 +35,7 @@ function d(e, t, n, d) {
             type: "icon",
             icon: s.DpX
         }
-    }) : null != t && null != e && a.A.can(o.xBc.CREATE_INSTANT_INVITE, e) ? (0, i.jsx)(s.Drp, {
+    }) : null != t && null != e && r.A.can(o.xBc.CREATE_INSTANT_INVITE, e) ? (0, i.jsx)(s.Drp, {
         id: "invite-friends",
         label: c.intl.string(c.t["EE+P0H"]),
         action: h,

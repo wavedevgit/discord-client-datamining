@@ -1,13 +1,13 @@
 /** chunk id: 377045 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
     l = n(607399),
-    r = n(311907),
-    a = n(397927),
+    a = n(311907),
+    r = n(397927),
     o = n(93055),
     c = n(369170),
     d = n(58736),
@@ -16,34 +16,34 @@ var i = n(627968),
     A = n(985018),
     m = n(614238);
 
-function p(e) {
+function _(e) {
     let t, {
-        channelId: p
+        channelId: _
     } = e;
     s.useEffect(() => {
-        u.A.loadThread(p)
+        u.A.loadThread(_)
     });
-    let _ = (0, o.DZ)(),
-        g = (0, r.bG)([h.A], () => h.A.theme);
-    return _ ? (0, i.jsxs)("div", {
+    let p = (0, o.DZ)(),
+        g = (0, a.bG)([h.A], () => h.A.theme);
+    return p ? (0, i.jsxs)("div", {
         className: m.A,
         children: [l.Fr && (0, i.jsx)(d.Ay, {
             children: null
         }), (0, i.jsx)(c.A, {
             theme: g
         })]
-    }) : (t = null != p ? (0, i.jsx)(a.y$y, {
-        type: a.y$y.Type.SPINNING_CIRCLE
-    }) : (0, i.jsx)(a.SGT, {
+    }) : (t = null != _ ? (0, i.jsx)(r.y$y, {
+        type: r.y$y.Type.SPINNING_CIRCLE
+    }) : (0, i.jsx)(r.SGT, {
         note: A.intl.string(A.t["LTr+x9"]),
         children: A.intl.string(A.t.ai6Lbr)
     }), (0, i.jsxs)("div", {
         className: m.j,
         children: [l.Fr && (0, i.jsx)(d.Ay, {
             children: null
-        }), (0, i.jsxs)(a.ppr, {
+        }), (0, i.jsxs)(r.ppr, {
             theme: g,
-            children: [(0, i.jsx)(a.G8R, {
+            children: [(0, i.jsx)(r.G8R, {
                 darkSrc: n(355937),
                 lightSrc: n(332327),
                 width: 272,

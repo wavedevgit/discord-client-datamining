@@ -1,14 +1,14 @@
 /** chunk id: 355216 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    HN: () => _,
+    HN: () => p,
     ux: () => g
 });
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(397927),
     c = n(187508),
     d = n(851109),
@@ -17,9 +17,9 @@ var i = n(627968),
     A = n(628325),
     m = n(849077);
 n(445368);
-var p = n(480293);
+var _ = n(480293);
 
-function _() {
+function p() {
     let {
         setSelectedFilter: e
     } = (0, u.A)(), t = (0, A.S)(e => e.setInboxReadState);
@@ -36,13 +36,13 @@ function g(e) {
             unreadRecentMentionsCount: A,
             unreadChannelIds: m
         } = (0, h.U4)(),
-        _ = (t = function() {
+        p = (t = function() {
             let {
                 unreadRecentMentionsCount: e
             } = (0, h.U4)(), {
                 hasMoreMentions: t,
                 mentionsLoading: n
-            } = (0, a.cf)([c.Ay], () => ({
+            } = (0, r.cf)([c.Ay], () => ({
                 hasMoreMentions: c.Ay.hasMore,
                 mentionsLoading: c.Ay.loading
             })), i = Math.min(e, 25), s = e > i || t || n, l = (0, o.o6S)(i) + 6 * !!s;
@@ -62,7 +62,7 @@ function g(e) {
                 style: {
                     width: s
                 },
-                className: p.xF
+                className: _.xF
             })
         })(t, n), [t, n]), s.useMemo(() => ({
             badge: l,
@@ -78,7 +78,7 @@ function g(e) {
             location: "useInboxBadgeInfo"
         });
     return s.useMemo(() => {
-        if (A > 0) return _;
+        if (A > 0) return p;
         let e = m.length;
         if (0 === e) return {
             badge: null,
@@ -96,8 +96,8 @@ function g(e) {
                         minHeight: 13,
                         minWidth: 13
                     },
-                    className: r()(p.xF, p.pw, {
-                        [p.wH]: u
+                    className: a()(_.xF, _.pw, {
+                        [_.wH]: u
                     })
                 })),
                 badgeType: "unread",
@@ -117,5 +117,5 @@ function g(e) {
             badge: null,
             badgeType: null
         }
-    }, [A, _, m.length, g, u])
+    }, [A, p, m.length, g, u])
 }

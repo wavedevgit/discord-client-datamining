@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(451988),
     c = n(990078),
     d = n(397927),
@@ -15,13 +15,13 @@ var i = n(627968),
     h = n(442433),
     A = n(676002),
     m = n(296216),
-    p = n(685399),
-    _ = n(271683),
+    _ = n(685399),
+    p = n(271683),
     g = n(186369),
     f = n(725613),
     x = n(963027),
-    C = n(844262),
-    E = n(47167),
+    E = n(844262),
+    C = n(47167),
     I = n(262763),
     N = n(5932),
     b = n(857253),
@@ -38,8 +38,8 @@ var i = n(627968),
     G = n(591346),
     U = n(734057),
     P = n(71393),
-    k = n(834942),
-    w = n(576705),
+    w = n(834942),
+    k = n(576705),
     V = n(222823),
     B = n(543465),
     H = n(977997),
@@ -81,17 +81,17 @@ class et extends K.Ay {
             unverifiedAccount: i,
             needSubscriptionToAccess: s,
             enableOpenTIVForPing: l,
-            mentionCount: r
+            mentionCount: a
         } = this.props;
         i && this.setState({
             shouldShowGuildVerificationPopout: !0
         });
-        let a = l && r > 0;
-        a && u.A.updateChatOpen(n.id, !0), I.A.handleVoiceConnect({
+        let r = l && a > 0;
+        r && u.A.updateChatOpen(n.id, !0), I.A.handleVoiceConnect({
             channel: n,
             connected: t,
             needSubscriptionToAccess: s,
-            routeDirectlyToChannel: a,
+            routeDirectlyToChannel: r,
             locked: e
         })
     };
@@ -168,7 +168,7 @@ class et extends K.Ay {
             connected: t,
             channel: n
         } = this.props;
-        t && (e.stopPropagation(), (0, _.A)({
+        t && (e.stopPropagation(), (0, p.A)({
             channel: n
         }))
     };
@@ -221,27 +221,19 @@ class et extends K.Ay {
         let {
             channel: e,
             sorting: t,
-            isUserOver: n,
-            selected: s
+            isUserOver: n
         } = this.props, {
-            popoutToShow: l,
-            shouldShowGuildVerificationPopout: r
+            popoutToShow: s,
+            shouldShowGuildVerificationPopout: l
         } = this.state;
-        if (r) return (0, i.jsx)(j.A, {
+        return l ? (0, i.jsx)(j.A, {
             type: j.H.VOICE,
             guildId: e.guild_id,
             closePopout: this.closeGuildVerificationPopout
-        });
-        if (t || n) return null;
-        if ("history" === l) {
-            let t = this.getVoiceStatesCount();
-            if (t > 0) return (0, i.jsx)(z.A, {
-                channel: e,
-                isChannelSelected: s,
-                voiceStatesCount: t
-            })
-        }
-        return null
+        }) : t || n ? null : "history" === s && this.getVoiceStatesCount() > 0 ? (0, i.jsx)(z.A, {
+            channel: e,
+            source: "voice_channel"
+        }) : null
     };
     renderOpenChatButton = () => {
         let {
@@ -253,7 +245,7 @@ class et extends K.Ay {
             asContainer: !0,
             text: Z.intl.string(Z.t.ZXxLQg),
             children: (0, i.jsx)(d.DUT, {
-                className: r()(ee.Xs, n ? ee.Tf : null),
+                className: a()(ee.Xs, n ? ee.Tf : null),
                 onClick: () => {
                     u.A.updateChatOpen(e.id, !0), (0, M.iN)(e.id)
                 },
@@ -288,17 +280,17 @@ class et extends K.Ay {
             connected: n,
             unread: s,
             resolvedUnreadSetting: l,
-            mentionCount: a,
+            mentionCount: r,
             locked: o,
             sorting: u,
             isUserOver: h,
             connectChannelDropTarget: A,
             connectChannelDragSource: m,
-            connectUserDropTarget: p,
-            connectDragPreview: _,
+            connectUserDropTarget: _,
+            connectDragPreview: p,
             canReorderChannel: g,
             canMoveMembers: f,
-            showTutorial: E,
+            showTutorial: C,
             hasActiveEvent: I,
             embeddedApps: N,
             isSubscriptionGated: b,
@@ -314,11 +306,10 @@ class et extends K.Ay {
             enableHistoryHover: L
         } = (0, G.NH)({
             guildId: e.guild_id,
-            location: "VoiceChannel",
-            autoTrackExposure: !1
+            location: "VoiceChannel"
         }), M = y || j, U = (0, i.jsxs)("li", {
             ref: this.ref,
-            className: r()(this.getModeClass(), {
+            className: a()(this.getModeClass(), {
                 [ee.r9]: this.isDisabled(),
                 [ee.fy]: y
             }),
@@ -346,7 +337,7 @@ class et extends K.Ay {
                         children: (0, i.jsxs)(Y.Ay, {
                             ref: this.channelItemRef,
                             className: ee.Ki,
-                            iconClassName: r()({
+                            iconClassName: a()({
                                 [ee.Gj]: I || v || M
                             }),
                             hasActiveEvent: I,
@@ -355,7 +346,7 @@ class et extends K.Ay {
                             connected: n,
                             unread: n ? s : void 0,
                             resolvedUnreadSetting: l,
-                            mentionCount: a,
+                            mentionCount: r,
                             locked: o,
                             subtitle: this.renderSubtitle(),
                             onClick: () => {
@@ -364,17 +355,17 @@ class et extends K.Ay {
                             onContextMenu: e => {
                                 this.handleContextMenu(e)
                             },
-                            connectDragPreview: _,
+                            connectDragPreview: p,
                             isFavoriteSuggestion: S,
                             "aria-label": (0, x.Ay)({
                                 channel: e,
                                 unread: s,
-                                mentionCount: a,
+                                mentionCount: r,
                                 voiceStates: R,
                                 embeddedActivitiesCount: N.length,
                                 isSubscriptionGated: b
                             }),
-                            "aria-describedby": (0, C.A)({
+                            "aria-describedby": (0, E.A)({
                                 channel: e,
                                 embeddedApps: N
                             }),
@@ -389,7 +380,7 @@ class et extends K.Ay {
                 })
             }), this.renderHangoutWindow(), this.renderVoiceUsers()]
         });
-        return f && (U = p(U)), g && (U = A(m(U))), E && (U = (0, i.jsx)(D.A, {
+        return f && (U = _(U)), g && (U = A(m(U))), C && (U = (0, i.jsx)(D.A, {
             childRef: this.ref,
             tutorialId: "voice-conversations",
             position: "right",
@@ -406,27 +397,27 @@ function ei(e) {
         channel: n,
         disableSorting: s,
         isFavoriteCategory: l,
-        selected: r,
+        selected: a,
         collapsed: o,
         voiceStates: c
-    } = e, d = (0, a.cf)([V.Ay], () => ({
+    } = e, d = (0, r.cf)([V.Ay], () => ({
         unread: V.Ay.hasUnread(n.id),
         mentionCount: V.Ay.getMentionCount(n.id)
-    })), u = (0, a.bG)([B.Ay], () => B.Ay.resolveUnreadSetting(n)), h = (0, a.cf)([U.A, k.A, w.A], () => {
+    })), u = (0, r.bG)([B.Ay], () => B.Ay.resolveUnreadSetting(n)), h = (0, r.cf)([U.A, w.A, k.A], () => {
         let e = U.A.getChannel(n.parent_id),
-            i = k.A.getCheck(n.guild_id);
+            i = w.A.getCheck(n.guild_id);
         return {
-            canManageChannel: w.A.can(Q.xBc.MANAGE_CHANNELS, n),
-            canReorderChannel: !0 !== s && (t.id === $.Vc || (null != e ? w.A.can(Q.xBc.MANAGE_CHANNELS, e) : w.A.can(Q.xBc.MANAGE_CHANNELS, t))),
-            canMoveMembers: w.A.can(Q.xBc.MOVE_MEMBERS, n),
-            locked: !w.A.can(Q.xBc.CONNECT, n),
-            bypassLimit: w.A.can(Q.xBc.MOVE_MEMBERS, n),
+            canManageChannel: k.A.can(Q.xBc.MANAGE_CHANNELS, n),
+            canReorderChannel: !0 !== s && (t.id === $.Vc || (null != e ? k.A.can(Q.xBc.MANAGE_CHANNELS, e) : k.A.can(Q.xBc.MANAGE_CHANNELS, t))),
+            canMoveMembers: k.A.can(Q.xBc.MOVE_MEMBERS, n),
+            locked: !k.A.can(Q.xBc.CONNECT, n),
+            bypassLimit: k.A.can(Q.xBc.MOVE_MEMBERS, n),
             unverifiedAccount: !i.canChat
         }
-    }), A = (0, a.bG)([H.A], () => H.A.hasVideo(n.id)), m = (0, p.Ay)(n), _ = (0, E.Ay)(n), x = (0, y.Qs)(n.id), C = (0, a.bG)([f.A], () => null != f.A.getStartTime(n), [n]), {
+    }), A = (0, r.bG)([H.A], () => H.A.hasVideo(n.id)), m = (0, _.Ay)(n), p = (0, C.Ay)(n), x = (0, y.Qs)(n.id), E = (0, r.bG)([f.A], () => null != f.A.getStartTime(n), [n]), {
         isSubscriptionGated: I,
         needSubscriptionToAccess: N
-    } = (0, v.A)(n.id), S = (0, b.A)(), T = (0, a.bG)([B.Ay], () => B.Ay.isFavorite(t.id, n.id)), j = e.connected || S?.channelId === n.id, {
+    } = (0, v.A)(n.id), S = (0, b.A)(), T = (0, r.bG)([B.Ay], () => B.Ay.isFavorite(t.id, n.id)), j = e.connected || S?.channelId === n.id, {
         enableHangStatus: O,
         showEmptyChannelTopic: M
     } = (0, R.$j)({
@@ -444,7 +435,7 @@ function ei(e) {
         enableWaveformIcon: P
     } = (0, g.b)(t.id, "VoiceChannel"), F = null != c && c.length > 0, K = G && F, Y = P && F, z = (0, W.A)({
         channel: n,
-        isChannelSelected: r,
+        isChannelSelected: a,
         isChannelCollapsed: o,
         voiceStates: c,
         isSubscriptionGated: I,
@@ -453,7 +444,7 @@ function ei(e) {
         enableActivities: !0
     }), q = j && null == z;
     return (0, i.jsx)(en, {
-        channelName: _,
+        channelName: p,
         embeddedApps: m,
         embeddedActivityType: Q.$pd.PLAYING,
         video: A,
@@ -472,7 +463,7 @@ function ei(e) {
         showEmptyChannelTopic: M,
         enableOpenTIVForPing: D,
         hasChannelInfo: null != z,
-        hasStartTime: C,
+        hasStartTime: E,
         shouldHighlightChannel: K,
         shouldUseAnimatedWaveform: Y
     })

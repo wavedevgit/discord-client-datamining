@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(158954),
-    r = n(311907),
-    a = n(397927),
+    a = n(311907),
+    r = n(397927),
     o = n(736653),
     c = n(793574),
     d = n(688810),
@@ -15,13 +15,13 @@ var i = n(627968),
     h = n(562153),
     A = n(183555),
     m = n(672385),
-    p = n(950191),
-    _ = n(249790),
+    _ = n(950191),
+    p = n(249790),
     g = n(946356),
     f = n(254828),
     x = n(783123),
-    C = n(996988),
-    E = n(985018),
+    E = n(996988),
+    C = n(985018),
     I = n(38351),
     N = n(724693);
 
@@ -30,7 +30,7 @@ function b(e) {
         user: t,
         channel: n,
         onHide: b
-    } = e, S = (0, p.Ay)(t.id), T = (0, o.Ay)(), v = (0, r.bG)([u.A], () => u.A.isBlocked(t.id)), {
+    } = e, S = (0, _.Ay)(t.id), T = (0, o.Ay)(), v = (0, a.bG)([u.A], () => u.A.isBlocked(t.id)), {
         analyticsLocations: y
     } = (0, d.Ay)(v ? c.A.BLOCKED_PROFILE_PANEL : c.A.IGNORED_PROFILE_PANEL), j = (0, A.pb)({
         layout: "SIDEBAR",
@@ -46,7 +46,7 @@ function b(e) {
                 ref: R,
                 user: t,
                 displayProfile: S,
-                themeType: C.d.SIDEBAR,
+                themeType: E.d.SIDEBAR,
                 themeOverride: T,
                 children: (0, i.jsx)(l.d_W, {
                     children: (0, i.jsxs)("div", {
@@ -60,18 +60,18 @@ function b(e) {
                             className: I.rf,
                             children: [(0, i.jsxs)("div", {
                                 className: I.N1,
-                                children: [(0, i.jsx)(_.A, {
+                                children: [(0, i.jsx)(p.A, {
                                     user: t
-                                }), (0, i.jsx)(a.Heading, {
+                                }), (0, i.jsx)(r.Heading, {
                                     variant: "heading-lg/bold",
-                                    children: E.intl.string(E.t.b33pLD)
-                                }), (0, i.jsx)(a.Text, {
+                                    children: C.intl.string(C.t.b33pLD)
+                                }), (0, i.jsx)(r.Text, {
                                     variant: "text-sm/medium",
-                                    children: E.intl.format(v ? E.t["8F+WNz"] : E.t["/cZp5s"], {
+                                    children: C.intl.format(v ? C.t["8F+WNz"] : C.t["/cZp5s"], {
                                         username: h.Ay.getName(n.guild_id, n.id, t)
                                     })
                                 })]
-                            }), (0, i.jsxs)(a.BJc, {
+                            }), (0, i.jsxs)(r.BJc, {
                                 align: "center",
                                 children: [(0, i.jsx)(x.A, {
                                     isBlocked: v,

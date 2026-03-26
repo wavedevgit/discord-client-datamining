@@ -1,12 +1,12 @@
 /** chunk id: 871697 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => a
+    A: () => r
 });
 var i = n(311907),
     s = n(73153);
 let l = {};
-class r extends i.Ay.PersistedStore {
+class a extends i.Ay.PersistedStore {
     static displayName = "ViewHistoryStore";
     static persistKey = "ViewHistoryStore";
     initialize(e) {
@@ -21,7 +21,7 @@ class r extends i.Ay.PersistedStore {
         return null != l[e]
     }
 }
-let a = new r(s.h, {
+let r = new a(s.h, {
     VIEW_HISTORY_MARK_VIEW: function(e) {
         let {
             key: t

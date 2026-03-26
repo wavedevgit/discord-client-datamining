@@ -1,13 +1,13 @@
 /** chunk id: 480680 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => k
+    A: () => w
 });
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(4208),
+    a = n.n(l),
+    r = n(4208),
     o = n(311907),
     c = n(827734);
 n(990078);
@@ -17,13 +17,13 @@ var d = n(397927),
     A = n(964486);
 n(793574), n(688810);
 var m = n(952790),
-    p = n(85109),
-    _ = n(734057),
+    _ = n(85109),
+    p = n(734057),
     g = n(71393),
     f = n(320501),
     x = n(222823),
-    C = n(661191),
-    E = n(851109),
+    E = n(661191),
+    C = n(851109),
     I = n(706341),
     N = n(932883),
     b = n(599486),
@@ -39,7 +39,7 @@ var m = n(952790),
     D = n(674823);
 let G = [],
     U = {
-        controller: new a.Controller({
+        controller: new r.Controller({
             value: 1,
             immediate: !0
         }),
@@ -57,7 +57,7 @@ function P(e) {
         includePanelSpacing: t
     } = e, n = (0, N.op)(), {
         selectedFilter: l
-    } = (0, b.A)(), a = (0, o.bG)([S.A], () => S.A.oldestDisplayedMessageId), c = (0, o.yK)([S.A], () => S.A.getInboxMessages()), v = (0, o.yK)([x.Ay, g.A, S.A], () => c.filter(e => !(0, T.EJ)({
+    } = (0, b.A)(), r = (0, o.bG)([S.A], () => S.A.oldestDisplayedMessageId), c = (0, o.yK)([S.A], () => S.A.getInboxMessages()), v = (0, o.yK)([x.Ay, g.A, S.A], () => c.filter(e => !(0, T.EJ)({
         messageId: e.id,
         channelId: e.channelId,
         guildId: e.guildId,
@@ -94,7 +94,7 @@ function P(e) {
                         n = t.last()?.id,
                         i = x.Ay.ackMessageId(e),
                         s = t.hasPresent() && t.ready && !t.cached;
-                    null != n && null != i && s && C.default.compare(i, n) >= 0 && h.ack(e, {
+                    null != n && null != i && s && E.default.compare(i, n) >= 0 && h.ack(e, {
                         section: L.JJy.NOTIFICATIONS_INBOX,
                         object: L.ZSU.ACK_INBOX_CHANNEL_NO_MESSAGES,
                         objectType: L.AnalyticsObjectTypes.ACK_AUTOMATIC
@@ -102,30 +102,30 @@ function P(e) {
                 })
             }, [e, t])
         }(M ? y : null);
-    let k = (0, o.yK)([p.A], () => p.A.getSavedMessages()),
-        F = s.useMemo(() => k.flatMap(e => {
+    let w = (0, o.yK)([_.A], () => _.A.getSavedMessages()),
+        F = s.useMemo(() => w.flatMap(e => {
             let {
                 message: t
             } = e;
             return null == t ? G : [{
                 id: t.id,
                 channelId: t.channel_id,
-                guildId: _.A.getBasicChannel(t.channel_id)?.guild_id,
+                guildId: p.A.getBasicChannel(t.channel_id)?.guild_id,
                 kind: O.yL.BOOKMARK,
                 message: t
             }]
-        }), [k]),
-        K = w(v, l, a),
-        W = w(y, l, null);
+        }), [w]),
+        K = k(v, l, r),
+        W = k(y, l, null);
     (0, A.Ay)(() => {
         u.h.dispatch({
             type: "NOTIFICATIONS_INBOX_OPEN"
         });
-        let e = (0, E.GE)({
+        let e = (0, C.GE)({
                 location: "NotificationsInboxSidebar"
             }).notificationCenterVariant,
             t = S.A.getDevOverrides().navOnClick ?? !0;
-        if (e !== E.U5.SIDEBAR || !1 === t) return;
+        if (e !== C.U5.SIDEBAR || !1 === t) return;
         let {
             message: i,
             isUnread: s
@@ -142,17 +142,17 @@ function P(e) {
                 message: null,
                 isUnread: !1
             };
-            let r = l[0],
-                a = x.Ay.getTrackedAckMessageId(r);
-            return null == a ? {
+            let a = l[0],
+                r = x.Ay.getTrackedAckMessageId(a);
+            return null == r ? {
                 message: null,
                 isUnread: !1
             } : {
                 message: {
-                    id: C.default.atNextMillisecond(a),
-                    channel_id: r
+                    id: E.default.atNextMillisecond(r),
+                    channel_id: a
                 },
-                isUnread: x.Ay.hasUnread(r) ?? !1
+                isUnread: x.Ay.hasUnread(a) ?? !1
             }
         }(K, W);
         null != i && I.A.inboxItemClick({
@@ -173,11 +173,11 @@ function P(e) {
     });
     let {
         filterStyle: Y
-    } = (0, E.X8)({
+    } = (0, C.X8)({
         location: "NotificationsInboxSidebar"
-    }), z = Y === E.yF.DROPDOWN && l !== O.Io.ALL, q = (0, O.Yw)(l);
+    }), z = Y === C.yF.DROPDOWN && l !== O.Io.ALL, q = (0, O.Yw)(l);
     return (0, i.jsx)("nav", {
-        className: r()(D.kL, {
+        className: a()(D.kL, {
             [D.Yu]: t
         }),
         children: (0, i.jsxs)(d.Fmo, {
@@ -205,7 +205,7 @@ function P(e) {
     })
 }
 
-function k(e) {
+function w(e) {
     return (0, i.jsx)(N.GM, {
         children: (0, i.jsx)(P, {
             ...e
@@ -213,12 +213,12 @@ function k(e) {
     })
 }
 
-function w(e, t, n) {
+function k(e, t, n) {
     return s.useMemo(() => 0 === e.length || t === O.Io.BOOKMARKS ? G : e.filter(e => {
         let {
             id: i
         } = e;
-        return !(C.default.age(i) > O.V$ || null != n && 0 >= C.default.compare(i, n)) && t === O.Io.ALL
+        return !(E.default.age(i) > O.V$ || null != n && 0 >= E.default.compare(i, n)) && t === O.Io.ALL
     }), [e, t, n])
 }
 
@@ -239,7 +239,7 @@ function H(e) {
         hideBanner: t
     } = e, n = (0, v.S)(e => e.shouldHide());
     return (0, i.jsx)("div", {
-        className: r()(D.dl, {
+        className: a()(D.dl, {
             [D.jD]: n || t
         }),
         children: (0, i.jsxs)("div", {

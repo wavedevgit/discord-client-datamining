@@ -1,13 +1,13 @@
 /** chunk id: 732077 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(397927),
     c = n(734057),
     d = n(607567),
@@ -15,16 +15,16 @@ var i = n(627968),
     h = n(108197),
     A = n(985018),
     m = n(570302);
-let p = s.memo(function(e) {
+let _ = s.memo(function(e) {
     let {
         channel: t,
         selectedChannel: n,
         selectedVoiceChannelId: s,
         sortedThreadIds: l,
-        withGuildIcon: p
+        withGuildIcon: _
     } = e, {
-        density: _
-    } = (0, o.wRf)(), g = (0, a.yK)([c.A], () => l.map(e => c.A.getChannel(e)).filter(u.Vq), [l]), f = (0, a.bG)([d.Ay], () => {
+        density: p
+    } = (0, o.wRf)(), g = (0, r.yK)([c.A], () => l.map(e => c.A.getChannel(e)).filter(u.Vq), [l]), f = (0, r.bG)([d.Ay], () => {
         let e = g[g.length - 1];
         if (null == e) return 0;
         let t = d.Ay.getVoiceStates(e.guild_id)[e.id];
@@ -38,18 +38,18 @@ let p = s.memo(function(e) {
                 channelName: t.name
             }),
             children: [(0, i.jsx)("div", {
-                className: r()(m.eh, {
-                    [m.ET]: p
+                className: a()(m.eh, {
+                    [m.ET]: _
                 }),
                 style: {
-                    bottom: ("cozy" === _ ? 28 : 24) + f
+                    bottom: ("cozy" === p ? 28 : 24) + f
                 }
             }), g.map((e, t) => (0, i.jsx)(h.A, {
                 thread: e,
                 isSelectedChannel: n?.id === e.id,
                 isSelectedVoice: s === e.id,
                 isLast: t === g.length - 1,
-                withGuildIcon: p
+                withGuildIcon: _
             }, e.id))]
         })
     })

@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    r = n(397927),
-    a = n(626302);
+    a = n(397927),
+    r = n(626302);
 
 function o(e) {
     let {
@@ -17,20 +17,20 @@ function o(e) {
         videoLimit: s
     } = e;
     return (0, i.jsxs)("div", {
-        className: a.iE,
+        className: r.iE,
         children: [(0, i.jsxs)("span", {
-            className: l()(a.VV, {
-                [a.Ki]: s,
-                [a.$G]: n >= 100
+            className: l()(r.VV, {
+                [r.Ki]: s,
+                [r.$G]: n >= 100
             }),
-            children: [s ? (0, i.jsx)(r.npA, {
+            children: [s ? (0, i.jsx)(a.npA, {
                 size: "md",
                 color: "currentColor",
-                className: a.LB
+                className: r.LB
             }) : null, n.toString().padStart(2, "0")]
         }), (0, i.jsx)("span", {
-            className: l()(a.X5, {
-                [a.$G]: t >= 100
+            className: l()(r.X5, {
+                [r.$G]: t >= 100
             }),
             children: t.toString().padStart(2, "0")
         })]

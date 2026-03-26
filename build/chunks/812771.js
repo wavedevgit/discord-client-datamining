@@ -2,12 +2,12 @@
 "use strict";
 n.d(t, {
     A: () => f,
-    X: () => _
+    X: () => p
 });
 var i, s = n(627968),
     l = n(64700),
-    r = n(503698),
-    a = n.n(r),
+    a = n(503698),
+    r = n.n(a),
     o = n(735438),
     c = n(827734),
     d = n(397927),
@@ -15,8 +15,8 @@ var i, s = n(627968),
     h = n(761929),
     A = n(964404),
     m = n(743898),
-    p = n(53454),
-    _ = ((i = {})[i.PostSidebar = 0] = "PostSidebar", i[i.ThreadSidebar = 1] = "ThreadSidebar", i[i.CallChatSidebar = 2] = "CallChatSidebar", i[i.MessageRequestSidebar = 3] = "MessageRequestSidebar", i[i.HomeSidebar = 4] = "HomeSidebar", i);
+    _ = n(53454),
+    p = ((i = {})[i.PostSidebar = 0] = "PostSidebar", i[i.ThreadSidebar = 1] = "ThreadSidebar", i[i.CallChatSidebar = 2] = "CallChatSidebar", i[i.MessageRequestSidebar = 3] = "MessageRequestSidebar", i[i.HomeSidebar = 4] = "HomeSidebar", i);
 
 function g(e) {
     let {
@@ -24,9 +24,9 @@ function g(e) {
         onResize: n,
         onResizeEnd: i,
         maxWidth: l,
-        minWidth: r
-    } = e, a = (0, h.A)({
-        minDimension: r,
+        minWidth: a
+    } = e, r = (0, h.A)({
+        minDimension: a,
         maxDimension: l,
         resizableDomNodeRef: t,
         onElementResize: n,
@@ -35,8 +35,8 @@ function g(e) {
         throttleDuration: 16
     });
     return (0, s.jsx)("div", {
-        onMouseDown: a,
-        className: p.Di
+        onMouseDown: r,
+        className: _.Di
     })
 }
 
@@ -45,9 +45,9 @@ function f(e) {
         sidebarType: t,
         maxWidth: n,
         onWidthChange: i,
-        children: r,
+        children: a,
         floatingLayer: h
-    } = e, _ = l.useRef(null), f = function(e) {
+    } = e, p = l.useRef(null), f = function(e) {
         switch (e) {
             case 0:
                 return "postSidebarWidth";
@@ -60,7 +60,7 @@ function f(e) {
             case 4:
                 return "homeSidebarWidth"
         }
-    }(t), [x, C] = l.useState(A.Ay[f]), E = l.useCallback(e => {
+    }(t), [x, E] = l.useState(A.Ay[f]), C = l.useCallback(e => {
         u.Ay.updatedUnsyncedSettings({
             [f]: e
         })
@@ -79,13 +79,13 @@ function f(e) {
             }
         }), (0, s.jsx)(T, {
             children: (0, s.jsxs)("div", {
-                className: a()(p.PA, {
-                    [p.R]: !1
+                className: r()(_.PA, {
+                    [_.R]: !1
                 }),
                 children: [(0, s.jsx)("div", {
-                    className: a()(p.Uc, {
-                        [p.DU]: I,
-                        [p.iK]: !I
+                    className: r()(_.Uc, {
+                        [_.DU]: I,
+                        [_.iK]: !I
                     }),
                     style: {
                         width: S
@@ -93,18 +93,18 @@ function f(e) {
                 }), !I && (0, s.jsx)(g, {
                     minWidth: 450,
                     maxWidth: n,
-                    resizableNode: _,
-                    onResize: C,
-                    onResizeEnd: E
+                    resizableNode: p,
+                    onResize: E,
+                    onResizeEnd: C
                 }), (0, s.jsx)("div", {
-                    ref: _,
-                    className: a()(p.kL, {
-                        [p.DU]: I
+                    ref: p,
+                    className: r()(_.kL, {
+                        [_.DU]: I
                     }),
                     style: {
                         width: b
                     },
-                    children: r
+                    children: a
                 })]
             })
         })]

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(554146),
     c = n(827734),
     d = n(192308),
@@ -15,13 +15,13 @@ var i = n(627968),
     h = n(442433),
     A = n(932001),
     m = n(361158),
-    p = n(976860),
-    _ = n(733391),
+    _ = n(976860),
+    p = n(733391),
     g = n(832163),
     f = n(133015),
     x = n(44724),
-    C = n(94484),
-    E = n(849134),
+    E = n(94484),
+    C = n(849134),
     I = n(203548),
     N = n(186111),
     b = n(371794),
@@ -36,17 +36,17 @@ let L = s.memo(function(e) {
     let {
         guild: t,
         selected: l
-    } = e, L = s.useRef(null), M = s.useRef(null), D = (0, d.useHasAnyModalOpen)(), G = (0, a.bG)([N.A], () => N.A.hasLayers()), U = (0, m.xr)(e => e.fullScreenLayers.length > 0), P = (0, f.n)({
+    } = e, L = s.useRef(null), M = s.useRef(null), D = (0, d.useHasAnyModalOpen)(), G = (0, r.bG)([N.A], () => N.A.hasLayers()), U = (0, m.xr)(e => e.fullScreenLayers.length > 0), P = (0, f.n)({
         location: "GameShopChannelRow"
     });
     s.useEffect(() => {
-        (0, _.Kh)(t.id)
+        (0, p.Kh)(t.id)
     }, [t.id]);
-    let k = (0, a.bG)([g.A], () => g.A.getAnnouncement(t.id)),
-        w = k?.state === "success" ? k.announcement : void 0,
-        [V, B] = (0, A.x_)(o.M.GAME_SHOP_NEW_BADGE, t.id, w?.id ?? ""),
-        H = V === o.M.GAME_SHOP_NEW_BADGE && null != w,
-        F = null == k || "loading" === k.state || H || !t.features.has(v.GuildFeatures.SOCIAL_LAYER_STOREFRONT) || !P,
+    let w = (0, r.bG)([g.A], () => g.A.getAnnouncement(t.id)),
+        k = w?.state === "success" ? w.announcement : void 0,
+        [V, B] = (0, A.x_)(o.M.GAME_SHOP_NEW_BADGE, t.id, k?.id ?? ""),
+        H = V === o.M.GAME_SHOP_NEW_BADGE && null != k,
+        F = null == w || "loading" === w.state || H || !t.features.has(v.GuildFeatures.SOCIAL_LAYER_STOREFRONT) || !P,
         [K, W] = (0, A.RF)(F ? null : o.M.SLAYER_STOREFRONT_ORBS_REWARDS_ANNOUNCEMENT, 1),
         Y = K === o.M.SLAYER_STOREFRONT_ORBS_REWARDS_ANNOUNCEMENT,
         z = H || Y,
@@ -57,7 +57,7 @@ let L = s.memo(function(e) {
     let X = s.useCallback(() => {
             q(y.i.TAKE_ACTION);
             let e = g.A.getStorefrontState(t.id)?.activePage ?? 0;
-            (0, p.pX)(v.BVt.CHANNELS_GAME_SHOP(t.id, e))
+            (0, _.pX)(v.BVt.CHANNELS_GAME_SHOP(t.id, e))
         }, [t.id, q]),
         J = s.useCallback(() => {
             (0, x.X)({
@@ -82,7 +82,7 @@ let L = s.memo(function(e) {
         Z = s.useCallback(() => {
             L.current?.onMouseEnter(null, 500)
         }, [L]),
-        ee = s.useCallback((e, n, s, a) => (0, i.jsx)(T.G, {
+        ee = s.useCallback((e, n, s, r) => (0, i.jsx)(T.G, {
             innerClassName: e,
             ref: M,
             id: `game-shop-${t.id}`,
@@ -91,11 +91,11 @@ let L = s.memo(function(e) {
                 color: "currentColor",
                 width: 20,
                 height: 20,
-                className: r()(e, s)
+                className: a()(e, s)
             }),
             text: (0, i.jsx)(u.Text, {
                 variant: "text-md/medium",
-                className: r()(R.UU, n),
+                className: a()(R.UU, n),
                 children: j.intl.string(j.t.vyaWs7)
             }),
             selected: l,
@@ -106,24 +106,24 @@ let L = s.memo(function(e) {
                 children: [H && (0, i.jsx)(u.LpS, {
                     text: j.intl.string(j.t.y2b7CA),
                     color: c.A.colors.BACKGROUND_BRAND.css
-                }), a]
+                }), r]
             })
         }), [t.id, l, J, X, $, H]),
         et = s.useMemo(() => {
-            if (null == w) return;
-            let e = null != w.assetId ? S.A.toURLSafe((0, b.YE)(w.applicationId, w.assetId, 128, "webp")) : void 0,
-                t = null != w.backgroundImageAssetId ? S.A.toURLSafe((0, b.YE)(w.applicationId, w.backgroundImageAssetId, 128, "webp")) : void 0;
+            if (null == k) return;
+            let e = null != k.assetId ? S.A.toURLSafe((0, b.YE)(k.applicationId, k.assetId, 128, "webp")) : void 0,
+                t = null != k.backgroundImageAssetId ? S.A.toURLSafe((0, b.YE)(k.applicationId, k.backgroundImageAssetId, 128, "webp")) : void 0;
             if (null != e) return {
                 imageUrl: e,
                 backgroundImageUrl: t
             }
-        }, [w]),
+        }, [k]),
         en = s.useCallback(() => {
             if (H) {
                 let e = P ? j.intl.string(j.t["z/QEIP"]) : j.intl.formatToPlainString(j.t["9J4h1a"], {
-                    applicationName: w.applicationName
+                    applicationName: k.applicationName
                 });
-                return (0, i.jsx)(E.A, {
+                return (0, i.jsx)(C.A, {
                     onActionClick: X,
                     onActionMouseDown: J,
                     onRender: Z,
@@ -135,7 +135,7 @@ let L = s.memo(function(e) {
                     overlayImageUrl: P ? O.A : void 0
                 })
             }
-            return Y ? (0, i.jsx)(C.A, {
+            return Y ? (0, i.jsx)(E.A, {
                 onActionClick: X,
                 onActionMouseDown: J,
                 onRender: Z,
@@ -143,7 +143,7 @@ let L = s.memo(function(e) {
                 targetElementRef: M,
                 applicationName: j.intl.string(j.t.Uu8hke)
             }) : null
-        }, [H, P, w, X, J, Z, Q, et, Y]);
+        }, [H, P, k, X, J, Z, Q, et, Y]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(I.A, {
             ref: L,

@@ -1,13 +1,13 @@
 /** chunk id: 518530 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => E
+    A: () => C
 });
 var i = n(627968),
     s = n(64700),
     l = n(554146),
-    r = n(397927),
-    a = n(367513),
+    a = n(397927),
+    r = n(367513),
     o = n(738876),
     c = n(698718),
     d = n(812771),
@@ -15,17 +15,17 @@ var i = n(627968),
     h = n(826673),
     A = n(58736),
     m = n(31717),
-    p = n(203982),
-    _ = n(43189),
+    _ = n(203982),
+    p = n(43189),
     g = n(652215),
     f = n(49999),
     x = n(985018),
-    C = n(200393);
-let E = function(e) {
+    E = n(200393);
+let C = function(e) {
     let {
         channel: t,
         guild: n,
-        maxWidth: E
+        maxWidth: C
     } = e;
     s.useEffect(() => {
         (0, h.Dr)(l.M.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK, {
@@ -33,17 +33,17 @@ let E = function(e) {
         })
     }, []);
     let I = s.useCallback(() => {
-            a.A.updateChatOpen(t.id, !1, "close button"), p._.safeDispatch(g.jej.FOCUS_CHAT_BUTTON)
+            r.A.updateChatOpen(t.id, !1, "close button"), _._.safeDispatch(g.jej.FOCUS_CHAT_BUTTON)
         }, [t.id]),
         N = (0, i.jsx)(A.Ay.Icon, {
-            icon: r.PGe,
+            icon: a.PGe,
             tooltip: x.intl.string(x.t.cpT0Cq),
             onClick: I
         });
     return (0, i.jsxs)(d.A, {
         sidebarType: d.X.CallChatSidebar,
-        maxWidth: E,
-        floatingLayer: _.Ay,
+        maxWidth: C,
+        floatingLayer: p.Ay,
         children: [(0, i.jsx)(o.A, {
             channel: t,
             draftType: m.C.ChannelMessage
@@ -51,13 +51,13 @@ let E = function(e) {
             toolbar: N,
             "aria-label": x.intl.string(x.t.BIYAqa),
             children: [(0, i.jsx)(A.Ay.ChannelIcon, {
-                icon: r.oyn,
+                icon: a.oyn,
                 "aria-label": x.intl.string(x.t.Kx5kCN)
             }), (0, i.jsx)(A.Ay.Title, {
                 children: t.name
             })]
         }), (0, i.jsx)("div", {
-            className: C.T,
+            className: E.T,
             children: (0, i.jsx)(c.A, {
                 channel: t,
                 guild: n,

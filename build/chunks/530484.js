@@ -1,14 +1,14 @@
 /** chunk id: 530484 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => p
 });
 var i = n(627968);
 n(64700);
 var s = n(311907),
     l = n(554146),
-    r = n(397927),
-    a = n(442433),
+    a = n(397927),
+    r = n(442433),
     o = n(826673),
     c = n(508654),
     d = n(222823),
@@ -16,12 +16,12 @@ var s = n(311907),
     h = n(652793),
     A = n(790782),
     m = n(985018),
-    p = n(567431);
+    _ = n(567431);
 
-function _(e) {
+function p(e) {
     let {
         guild: t,
-        selected: _
+        selected: p
     } = e, {
         hasUnread: g,
         mentionCount: f
@@ -29,8 +29,8 @@ function _(e) {
         hasUnread: d.Ay.hasUnread(t.id, A.P.GUILD_EVENT),
         mentionCount: d.Ay.getMentionCount(t.id, A.P.GUILD_EVENT)
     }), [t.id]), x = (0, s.bG)([u.Ay], () => u.Ay.isMuteScheduledEventsEnabled(t.id));
-    async function C() {
-        await (0, r.mMO)(async () => {
+    async function E() {
+        await (0, a.mMO)(async () => {
             let {
                 default: e
             } = await Promise.all([n.e("51354"), n.e("7453"), n.e("9561")]).then(n.bind(n, 926956));
@@ -40,22 +40,22 @@ function _(e) {
             })
         }), (0, o.Dr)(l.M.GUILD_HEADER_EVENT_UPSELL)
     }
-    let E = (0, c.Ay)(t.id),
-        I = E.length > 0 ? m.intl.formatToPlainString(m.t.IBdqSu, {
-            number: E.length
+    let C = (0, c.Ay)(t.id),
+        I = C.length > 0 ? m.intl.formatToPlainString(m.t.IBdqSu, {
+            number: C.length
         }) : m.intl.string(m.t.tlopTM);
     return (0, i.jsx)(h.G, {
         id: `upcoming-events-${t.id}`,
-        renderIcon: e => (0, i.jsx)(r.CTc, {
+        renderIcon: e => (0, i.jsx)(a.CTc, {
             size: "md",
             color: "currentColor",
             className: e
         }),
         text: I,
-        selected: _,
-        onClick: C,
+        selected: p,
+        onClick: E,
         onContextMenu: e => {
-            (0, a.L3)(e, async () => {
+            (0, r.L3)(e, async () => {
                 let {
                     default: e
                 } = await n.e("71742").then(n.bind(n, 502029));
@@ -66,8 +66,8 @@ function _(e) {
             })
         },
         showUnread: g && !x,
-        trailing: !x && f > 0 ? (0, i.jsx)(r.hVq, {
-            className: p.Do,
+        trailing: !x && f > 0 ? (0, i.jsx)(a.hVq, {
+            className: _.Do,
             disableColor: !0,
             count: f
         }) : null

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(4208),
-    r = n(158954),
-    a = n(311907),
+    a = n(158954),
+    r = n(311907),
     o = n(397927),
     c = n(736653),
     d = n(793574),
@@ -15,13 +15,13 @@ var i = n(627968),
     h = n(351966),
     A = n(713517),
     m = n(594832),
-    p = n(183555),
-    _ = n(622543),
+    _ = n(183555),
+    p = n(622543),
     g = n(950191),
     f = n(679492),
     x = n(657331),
-    C = n(718019),
-    E = n(915614),
+    E = n(718019),
+    C = n(915614),
     I = n(439053),
     N = n(312381),
     b = n(379654),
@@ -38,8 +38,8 @@ var i = n(627968),
     G = n(968975),
     U = n(518477),
     P = n(996988),
-    k = n(985018),
-    w = n(374146);
+    w = n(985018),
+    k = n(374146);
 
 function V(e) {
     let {
@@ -48,7 +48,7 @@ function V(e) {
         channel: V
     } = e, B = __OVERLAY__, H = (0, g.Ay)(t.id), F = (0, c.Ay)(), {
         analyticsLocations: K
-    } = (0, u.Ay)(d.A.USER_PROFILE_SIDEBAR), W = (0, p.pb)({
+    } = (0, u.Ay)(d.A.USER_PROFILE_SIDEBAR), W = (0, _.pb)({
         layout: "SIDEBAR",
         userId: t.id,
         channelId: V.id
@@ -69,8 +69,8 @@ function V(e) {
         })
     }, $ = H?.widgets != null && H.widgets.length > 0, {
         defaultWishlistId: Z
-    } = (0, a.cf)([_.A], () => ({
-        defaultWishlistId: _.A.getFirstWishlistId(t.id)
+    } = (0, r.cf)([p.A], () => ({
+        defaultWishlistId: p.A.getFirstWishlistId(t.id)
     })), {
         wishlist: ee
     } = (0, m.fw)({
@@ -79,7 +79,7 @@ function V(e) {
     }), et = s.useMemo(() => null == ee ? null : ee.items.filter(e => !e.isOwned), [ee]);
     return (0, i.jsx)(u.f5, {
         value: K,
-        children: (0, i.jsx)(p.of, {
+        children: (0, i.jsx)(_.of, {
             value: W,
             isLoaded: H?.isLoaded,
             children: (0, i.jsx)(f.Hl, {
@@ -93,8 +93,8 @@ function V(e) {
                     privateBanner: H?.private === !0 ? (0, i.jsx)(N.A, {}) : void 0,
                     children: [null != X.interactionType && (0, i.jsx)(l.animated.div, {
                         style: J,
-                        className: w.tB
-                    }), (0, i.jsxs)(r.d_W, {
+                        className: k.tB
+                    }), (0, i.jsxs)(a.d_W, {
                         children: [(0, i.jsxs)(v.A, {
                             children: [(0, i.jsx)(y.A, {
                                 user: t,
@@ -107,17 +107,17 @@ function V(e) {
                                 user: t
                             })]
                         }), (0, i.jsxs)("div", {
-                            className: w.wx,
-                            children: [(0, i.jsx)(E.A, {
+                            className: k.wx,
+                            children: [(0, i.jsx)(C.A, {
                                 user: t,
                                 displayProfile: H,
                                 themeType: P.d.SIDEBAR,
                                 animateOnHoverOrFocusOnly: !z,
-                                className: w.vK
+                                className: k.vK
                             }), (0, i.jsx)(I.A, {
                                 userId: t.id,
-                                className: w.oR
-                            }), (0, i.jsx)(C.A, {
+                                className: k.oR
+                            }), (0, i.jsx)(E.A, {
                                 user: t,
                                 displayProfile: H,
                                 channelId: V.id,
@@ -137,19 +137,19 @@ function V(e) {
                             isHoveringOrFocusing: null == X.interactionType && z,
                             onOpenProfile: B ? void 0 : Q
                         }), $ && (0, i.jsx)("div", {
-                            className: w.sJ,
+                            className: k.sJ,
                             children: (0, i.jsx)(b.A, {
                                 user: t,
                                 widgets: H.widgets,
                                 onOpenUserProfileModal: Q
                             })
                         }), null != et && et.length > 0 && (0, i.jsx)("div", {
-                            className: w.vS,
+                            className: k.vS,
                             children: (0, i.jsx)(G.A, {
                                 profileOwner: t,
                                 unownedWishlistItems: et,
                                 wishlistId: Z,
-                                title: k.intl.string(k.t["7lZ31J"]),
+                                title: w.intl.string(w.t["7lZ31J"]),
                                 onClick: () => {
                                     Q?.({
                                         tabSection: U.RP.WISHLIST

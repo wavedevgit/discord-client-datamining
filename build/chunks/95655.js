@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(990078),
-    r = n(397927),
-    a = n(442433),
+    a = n(397927),
+    r = n(442433),
     o = n(793574),
     c = n(47167),
     d = n(598104),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(665691),
     A = n(954571),
     m = n(652215),
-    p = n(985018),
-    _ = n(917328);
+    _ = n(985018),
+    p = n(917328);
 let g = e => {
         let {
             channel: t
@@ -24,11 +24,11 @@ let g = e => {
         return (0, h.bG)({
             channelId: t.id
         }) ? (0, i.jsx)(l.m, {
-            text: p.intl.string(p.t.QyZ4Td),
-            children: (0, i.jsx)(r.m5V, {
+            text: _.intl.string(_.t.QyZ4Td),
+            children: (0, i.jsx)(a.m5V, {
                 size: "xs",
-                "aria-label": p.intl.string(p.t.VHXh8a),
-                color: r.LU0.colors.INTERACTIVE_TEXT_DEFAULT
+                "aria-label": _.intl.string(_.t.VHXh8a),
+                color: a.LU0.colors.INTERACTIVE_TEXT_DEFAULT
             })
         }) : null
     },
@@ -39,14 +39,14 @@ let g = e => {
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(l.m, {
                 asContainer: !0,
-                text: p.intl.string(p.t["5Q9+/L"]),
+                text: _.intl.string(_.t["5Q9+/L"]),
                 position: "bottom",
-                children: (0, i.jsxs)(r.DUT, {
-                    className: _.cD,
+                children: (0, i.jsxs)(a.DUT, {
+                    className: p.cD,
                     onClick: () => {
                         (0, u.U)(s, o.A.HEADER_BAR)
                     },
-                    onContextMenu: e => (0, a.L3)(e, () => Promise.all([n.e("97262"), n.e("70303"), n.e("60200"), n.e("29108")]).then(n.bind(n, 4027)).then(e => {
+                    onContextMenu: e => (0, r.L3)(e, () => Promise.all([n.e("97262"), n.e("70303"), n.e("60200"), n.e("29108")]).then(n.bind(n, 4027)).then(e => {
                         let {
                             default: n
                         } = e;
@@ -66,19 +66,19 @@ let g = e => {
                             location: o.A.HEADER_BAR
                         })
                     },
-                    "aria-label": p.intl.string(p.t["5Q9+/L"]),
+                    "aria-label": _.intl.string(_.t["5Q9+/L"]),
                     children: [(0, i.jsx)(d.A, {
-                        className: _.gn,
+                        className: p.gn,
                         "aria-hidden": !0,
                         channel: t,
-                        size: r._3J.SIZE_20,
-                        facepileSizeOverride: r._3J.SIZE_24
-                    }), (0, i.jsx)(r.Text, {
+                        size: a._3J.SIZE_20,
+                        facepileSizeOverride: a._3J.SIZE_24
+                    }), (0, i.jsx)(a.Text, {
                         variant: "text-md/medium",
                         color: "text-strong",
                         children: h ?? ""
-                    }), (0, i.jsx)(r.R2l, {
-                        className: _.IZ,
+                    }), (0, i.jsx)(a.R2l, {
+                        className: p.IZ,
                         size: "xs",
                         color: "currentColor"
                     })]

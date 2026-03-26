@@ -1,14 +1,14 @@
 /** chunk id: 690953 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => p
 });
 var i = n(627968);
 n(64700);
 var s = n(417597),
     l = n(397927),
-    r = n(882997),
-    a = n(731474),
+    a = n(882997),
+    r = n(731474),
     o = n(383501),
     c = n(977997),
     d = n(458829),
@@ -16,38 +16,38 @@ var s = n(417597),
     h = n(694967),
     A = n(431516),
     m = n(652215),
-    p = n(985018);
+    _ = n(985018);
 
-function _(e) {
+function p(e) {
     let t = (0, s.bG)([o.A], () => o.A.getChannelId() === e.id),
-        _ = (0, u.A)(),
-        g = _?.channelId === e.id,
-        f = (0, a.J)(e) && !e.isPrivate(),
-        x = (0, a.A)(e),
-        C = !(0, s.bG)([c.A], () => c.A.isInChannel(e.id)) && x || f,
-        E = (0, h.A)();
-    if (!g && 0 === E.length) return null;
+        p = (0, u.A)(),
+        g = p?.channelId === e.id,
+        f = (0, r.J)(e) && !e.isPrivate(),
+        x = (0, r.A)(e),
+        E = !(0, s.bG)([c.A], () => c.A.isInChannel(e.id)) && x || f,
+        C = (0, h.A)();
+    if (!g && 0 === C.length) return null;
     let I = (0, A.A)(void 0);
     return g ? (0, i.jsx)(l.Drp, {
-        label: p.intl.string(p.t.PlwgdU),
+        label: _.intl.string(_.t.PlwgdU),
         id: "handoff",
         action: () => {
-            (0, d.x)(_)
+            (0, d.x)(p)
         },
         icon: I,
         leadingAccessory: {
             type: "icon",
             icon: I
         },
-        disabled: C
-    }) : E.map(s => {
-        var a, o;
+        disabled: E
+    }) : C.map(s => {
+        var r, o;
         let c = (0, A.A)(s.type);
         return (0, i.jsx)(l.Drp, {
             id: `transfer-${s.type}-${s.id}`,
-            label: (a = s.type, o = t, a === m.fg2.XBOX ? o ? p.intl.string(p.t["qVE/VF"]) : p.intl.string(p.t.E8euSk) : a === m.fg2.PLAYSTATION ? o ? p.intl.string(p.t.vzfxmY) : p.intl.string(p.t.QxEYDj) : a === m.fg2.PLAYSTATION_STAGING ? o ? p.intl.string(p.t.BDiXtV) : p.intl.string(p.t["bhdB9+"]) : void 0),
+            label: (r = s.type, o = t, r === m.fg2.XBOX ? o ? _.intl.string(_.t["qVE/VF"]) : _.intl.string(_.t.E8euSk) : r === m.fg2.PLAYSTATION ? o ? _.intl.string(_.t.vzfxmY) : _.intl.string(_.t.QxEYDj) : r === m.fg2.PLAYSTATION_STAGING ? o ? _.intl.string(_.t.BDiXtV) : _.intl.string(_.t["bhdB9+"]) : void 0),
             action: () => {
-                !s.twoWayLink || s.revoked ? (0, r.A)({
+                !s.twoWayLink || s.revoked ? (0, a.A)({
                     platformType: s.type,
                     location: "Console Transfer Item"
                 }) : s.type === m.fg2.XBOX ? (0, l.mMO)(async () => {
@@ -74,7 +74,7 @@ function _(e) {
                 type: "icon",
                 icon: c
             },
-            disabled: C
+            disabled: E
         }, s.id)
     })
 }

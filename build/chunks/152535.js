@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(533781),
-    r = n(265872),
-    a = n(688810),
+    a = n(265872),
+    r = n(688810),
     o = n(384059),
     c = n(421773),
     d = n(729081),
@@ -20,14 +20,14 @@ function m(e) {
         channel: t,
         themeable: n,
         whichPopoutIsOpen: m,
-        setWhichPopoutIsOpen: p
+        setWhichPopoutIsOpen: _
     } = e, {
-        parentAnalyticsLocation: _
-    } = (0, a.Ay)(), g = s.useRef(null), {
+        parentAnalyticsLocation: p
+    } = (0, r.Ay)(), g = s.useRef(null), {
         isHovered: f,
         setIsHovered: x,
-        onMouseEnter: C,
-        onMouseLeave: E
+        onMouseEnter: E,
+        onMouseLeave: C
     } = (0, c.A)(200, 300), {
         Component: I,
         play: N,
@@ -36,22 +36,22 @@ function m(e) {
             onMouseLeave: S
         }
     } = (0, l.T)(), T = s.useCallback(e => {
-        "focus" !== e.type && (C(), b())
-    }, [C, b]), v = s.useCallback(() => {
-        null == m && (E(), S())
-    }, [E, S, m]), y = s.useCallback(() => {
-        (0, o.X)(_, o.O.GIFTING), m === h.P.GIFTING ? (p?.(void 0), E()) : (null != m ? (N(), C()) : N(), p?.(h.P.GIFTING))
-    }, [C, E, _, N, p, m]);
-    return (0, i.jsx)(r.Y, {
+        "focus" !== e.type && (E(), b())
+    }, [E, b]), v = s.useCallback(() => {
+        null == m && (C(), S())
+    }, [C, S, m]), y = s.useCallback(() => {
+        (0, o.X)(p, o.O.GIFTING), m === h.P.GIFTING ? (_?.(void 0), C()) : (null != m ? (N(), E()) : N(), _?.(h.P.GIFTING))
+    }, [E, C, p, N, _, m]);
+    return (0, i.jsx)(a.Y, {
         targetElementRef: g,
         shouldShow: f && (m === h.P.GIFTING || null == m) || m === h.P.GIFTING,
-        animation: r.Y.Animation.FADE,
+        animation: a.Y.Animation.FADE,
         animationPosition: "top",
         position: "top",
         align: "center",
         spacing: 16,
         onRequestClose: () => {
-            x(!1), p?.(void 0)
+            x(!1), _?.(void 0)
         },
         renderPopout: e => {
             let {
@@ -61,8 +61,8 @@ function m(e) {
                 channel: t,
                 closePopout: n,
                 isHovered: f,
-                onMouseEnter: C,
-                onMouseLeave: E
+                onMouseEnter: E,
+                onMouseLeave: C
             })
         },
         children: () => (0, i.jsx)(u.l, {

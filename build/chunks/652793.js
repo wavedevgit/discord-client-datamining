@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    r = n(837381),
-    a = n(672117),
+    a = n(837381),
+    r = n(672117),
     o = n(397927),
     c = n(452051),
     d = n(928409),
@@ -22,23 +22,23 @@ function h(e) {
         renderIcon: h,
         text: A,
         selected: m,
-        trailing: p,
-        background: _,
+        trailing: _,
+        background: p,
         showUnread: g = !1,
         ref: f,
         ...x
-    } = e, C = (0, r.rm)(t), E = (0, a.O)(A) ?? "";
+    } = e, E = (0, a.rm)(t), C = (0, r.O)(A) ?? "";
     return (0, i.jsx)("li", {
         ref: f,
         children: (0, i.jsxs)(o.sqX, {
             ...x,
             buttonProps: {
-                ...C,
+                ...E,
                 id: t,
                 role: "button"
             },
             tag: "div",
-            "aria-label": E,
+            "aria-label": C,
             focusProps: {
                 offset: {
                     top: 1,
@@ -52,7 +52,7 @@ function h(e) {
             className: l()(d.fx, u.iE, {
                 [u.J1]: m
             }, n),
-            children: [_, g ? (0, i.jsx)("div", {
+            children: [p, g ? (0, i.jsx)("div", {
                 className: l()(u.gy, u.WS)
             }) : null, (0, i.jsx)("div", {
                 className: l()([u.nf, u.ae, s]),
@@ -65,7 +65,7 @@ function h(e) {
                         className: u.UU,
                         "aria-hidden": !0,
                         children: A
-                    }), p]
+                    }), _]
                 })
             })]
         })

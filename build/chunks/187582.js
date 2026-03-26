@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(607399),
-    r = n(311907),
-    a = n(397927),
+    a = n(311907),
+    r = n(397927),
     o = n(442433),
     c = n(414798),
     d = n(110574),
@@ -15,13 +15,13 @@ var i = n(627968),
     h = n(688810),
     A = n(709066),
     m = n(87664),
-    p = n(449582),
-    _ = n(485947),
+    _ = n(449582),
+    p = n(485947),
     g = n(342296),
     f = n(290863),
     x = n(994500),
-    C = n(741961),
-    E = n(287809),
+    E = n(741961),
+    C = n(287809),
     I = n(954571),
     N = n(203982),
     b = n(398219),
@@ -36,10 +36,10 @@ let R = [],
 function L(e) {
     let {
         user: t,
-        channel: a,
+        channel: r,
         status: u,
         activities: h
-    } = e, A = (0, r.bG)([C.A], () => null != C.A.getTypingUsers(a.id)[t.id]), _ = (0, r.bG)([E.default], () => E.default.getCurrentUser()), I = (0, r.bG)([f.A], () => f.A.isMobileOnline(t.id)), b = (0, r.bG)([x.A], () => x.A.getNickname(t.id)), T = (0, m.A)(t.id), j = s.useRef(null), R = e => {
+    } = e, A = (0, a.bG)([E.A], () => null != E.A.getTypingUsers(r.id)[t.id]), p = (0, a.bG)([C.default], () => C.default.getCurrentUser()), I = (0, a.bG)([f.A], () => f.A.isMobileOnline(t.id)), b = (0, a.bG)([x.A], () => x.A.getNickname(t.id)), T = (0, m.A)(t.id), j = s.useRef(null), R = e => {
         (0, o.L3)(e, async () => {
             let {
                 default: e
@@ -47,25 +47,25 @@ function L(e) {
             return n => (0, i.jsx)(e, {
                 ...n,
                 user: t,
-                channel: a
+                channel: r
             })
         })
     }, L = () => {
         let e = `@${S.Ay.getUserTag(t,{decoration:"never"})}`,
             n = `<@${t.id}>`;
         N._.dispatch(v.jej.TEXTAREA_FOCUS, {
-            channelId: a.id
+            channelId: r.id
         }), N._.dispatchToLastSubscribed(v.jej.INSERT_TEXT, {
             plainText: e,
             rawText: n
-        }), c.A.startTyping(a.id)
-    }, M = (0, p.r)({
+        }), c.A.startTyping(r.id)
+    }, M = (0, _.r)({
         user: t
     }), [D, G] = s.useState(!1);
     return (0, i.jsx)(g.A, {
         targetElementRef: j,
         user: t,
-        channelId: a.id,
+        channelId: r.id,
         position: l.Fr ? "window_center" : "left",
         spacing: 16,
         onShiftClick: L,
@@ -80,15 +80,15 @@ function L(e) {
             return (0, i.jsx)(d.A, {
                 ref: j,
                 user: t,
-                currentUser: _,
-                isOwner: t.id === a.ownerId,
+                currentUser: p,
+                isOwner: t.id === r.ownerId,
                 ownerTooltipText: y.intl.string(y.t["MRXZ+x"]),
                 shouldAnimateStatus: O,
                 isTyping: A,
                 status: u,
                 activities: h,
                 applicationStream: T,
-                channel: a,
+                channel: r,
                 onContextMenu: R,
                 selected: D,
                 isMobile: I,
@@ -119,14 +119,14 @@ function M(e, t) {
 function D(e) {
     let {
         channel: t
-    } = e, n = E.default.getCurrentUser(), l = n?.isStaff(), {
+    } = e, n = C.default.getCurrentUser(), l = n?.isStaff(), {
         analyticsLocations: o
     } = (0, h.Ay)(u.A.MEMBER_LIST), {
         listItems: c
-    } = (0, r.bG)([x.A, E.default, f.A], () => {
-        let e = (0, b.F)(t.recipients, E.default),
+    } = (0, a.bG)([x.A, C.default, f.A], () => {
+        let e = (0, b.F)(t.recipients, C.default),
             n = {};
-        for (let t of e) x.A.isFriend(t.id) || t.id === E.default.getCurrentUser()?.id ? n[t.id] = {
+        for (let t of e) x.A.isFriend(t.id) || t.id === C.default.getCurrentUser()?.id ? n[t.id] = {
             status: f.A.getStatus(t.id) ?? v.clD.OFFLINE,
             activities: f.A.getActivities(t.id) ?? R
         } : n[t.id] = {
@@ -160,10 +160,10 @@ function D(e) {
             className: j.kL,
             children: (0, i.jsx)("aside", {
                 className: j.yg,
-                children: (0, i.jsxs)(a.HOs, {
+                children: (0, i.jsxs)(r.HOs, {
                     className: j.ol,
                     fade: !0,
-                    children: [(0, i.jsxs)(_.A, {
+                    children: [(0, i.jsxs)(p.A, {
                         className: j.lL,
                         children: [`${y.intl.string(y.t["9Oq93m"])}—${c.length} `, d && (0, i.jsx)(A.A, {
                             type: A.A.Types.STAFF_ONLY_DM

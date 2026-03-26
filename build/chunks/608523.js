@@ -42,7 +42,6 @@ let u = e => {
             }))
         }, [h, p]);
         return (0, l.jsxs)("div", {
-            className: c.QB,
             children: [(0, l.jsxs)("div", {
                 className: c.QB,
                 children: [null != t && (0, l.jsxs)(r.Text, {

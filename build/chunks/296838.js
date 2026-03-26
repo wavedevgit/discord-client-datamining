@@ -6,22 +6,22 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(284009),
-    o = n.n(a),
+    a = n.n(l),
+    r = n(284009),
+    o = n.n(r),
     c = n(735438),
     d = n.n(c),
     u = n(615300),
     h = n(311907),
     A = n(73939),
     m = n(397927),
-    p = n(915967),
-    _ = n(34968),
+    _ = n(915967),
+    p = n(34968),
     g = n(775121),
     f = n(775602),
     x = n(400492),
-    C = n(203982),
-    E = n(635914),
+    E = n(203982),
+    C = n(635914),
     I = n(652215),
     N = n(985018),
     b = n(608725);
@@ -46,27 +46,27 @@ function T(e) {
             return null
     }
 }
-let v = [p.Q_.MESSAGE, p.Q_.NAVIGATION, p.Q_.VOICE_AND_VIDEO, p.Q_.CHAT, p.Q_.MISCELLANEOUS];
+let v = [_.Q_.MESSAGE, _.Q_.NAVIGATION, _.Q_.VOICE_AND_VIDEO, _.Q_.CHAT, _.Q_.MISCELLANEOUS];
 
 function y(e) {
     let {
         showBackdrop: t
     } = e;
     return (0, i.jsx)("div", {
-        className: r()(b.tB, {
+        className: a()(b.tB, {
             [b.WU]: t
         })
     })
 }
 
 function j() {
-    let e = s.useMemo(() => d()((0, p.Bx)()).groupBy(e => e.group).value(), []);
+    let e = s.useMemo(() => d()((0, _.Bx)()).groupBy(e => e.group).value(), []);
     return (0, i.jsx)("div", {
         className: b.Io,
         children: v.map(t => {
             let n = e[t],
-                s = (0, p.Gm)(t),
-                l = (0, p.zF)(t);
+                s = (0, _.Gm)(t),
+                l = (0, _.zF)(t);
             return (0, i.jsxs)("div", {
                 className: b.ZK,
                 children: [(0, i.jsxs)("div", {
@@ -112,14 +112,14 @@ class R extends s.PureComponent {
     scrollerRef = s.createRef();
     lastInputedKeys = [];
     componentDidMount() {
-        this.lastInputedKeys = [], C._.subscribe(I.jej.SCROLL_PAGE_UP, this.scrollPageUp), C._.subscribe(I.jej.SCROLL_PAGE_DOWN, this.scrollPageDown), window.addEventListener("keydown", this.handleKeyDown, {
+        this.lastInputedKeys = [], E._.subscribe(I.jej.SCROLL_PAGE_UP, this.scrollPageUp), E._.subscribe(I.jej.SCROLL_PAGE_DOWN, this.scrollPageDown), window.addEventListener("keydown", this.handleKeyDown, {
             capture: !0
         }), window.addEventListener("keyup", this.handleKeyUp, {
             capture: !0
         })
     }
     componentWillUnmount() {
-        C._.unsubscribe(I.jej.SCROLL_PAGE_UP, this.scrollPageUp), C._.unsubscribe(I.jej.SCROLL_PAGE_DOWN, this.scrollPageDown), window.removeEventListener("keydown", this.handleKeyDown, {
+        E._.unsubscribe(I.jej.SCROLL_PAGE_UP, this.scrollPageUp), E._.unsubscribe(I.jej.SCROLL_PAGE_DOWN, this.scrollPageDown), window.removeEventListener("keydown", this.handleKeyDown, {
             capture: !0
         }), window.removeEventListener("keyup", this.handleKeyUp, {
             capture: !0
@@ -261,7 +261,7 @@ function O(e) {
         isActive: t,
         arrow: n,
         className: l,
-        children: a
+        children: r
     } = e, [o, c] = s.useState(t), d = s.useCallback(() => {
         S[n](), c(!0)
     }, [n]);
@@ -272,10 +272,10 @@ function O(e) {
         }
     }, [o]), (0, i.jsx)(m.DUT, {
         onClick: d,
-        className: r()(b.UE, l, {
+        className: a()(b.UE, l, {
             [b.vu]: t || o
         }),
-        children: a
+        children: r
     })
 }
 
@@ -283,7 +283,7 @@ function L(e) {
     let {
         transitionState: t,
         onClose: n
-    } = e, [l, a] = s.useState(!1), [o, c] = s.useState(!1), d = s.useMemo(() => __OVERLAY__ ? (0, _.y8)() : (0, p.Bx)(), []), {
+    } = e, [l, r] = s.useState(!1), [o, c] = s.useState(!1), d = s.useMemo(() => __OVERLAY__ ? (0, p.y8)() : (0, _.Bx)(), []), {
         keyboardModeEnabled: u,
         useReducedMotion: x
     } = (0, h.cf)([f.A], () => ({
@@ -294,7 +294,7 @@ function L(e) {
         children: [(0, i.jsx)(y, {
             showBackdrop: o
         }), (0, i.jsx)(m.EOs, {
-            className: r()(b._$, {
+            className: a()(b._$, {
                 [b.O9]: l
             }),
             size: m.rIJ.DYNAMIC,
@@ -303,7 +303,7 @@ function L(e) {
             parentComponent: "KeyboardShortcutsModal",
             children: (0, i.jsx)(A.F, {
                 component: "div",
-                children: l ? (0, i.jsx)(E.A, {
+                children: l ? (0, i.jsx)(C.A, {
                     handleDemonClose: function() {
                         c(!1), setTimeout(n, 500)
                     }
@@ -311,7 +311,7 @@ function L(e) {
                     content: d,
                     keyboardModeEnabled: u,
                     activateRagingDemon: function() {
-                        x || (g.A.disable(), a(!0), c(!0))
+                        x || (g.A.disable(), r(!0), c(!0))
                     }
                 }, "modal")
             })

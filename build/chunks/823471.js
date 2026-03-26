@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    r = n(182061),
-    a = n(886393),
+    a = n(182061),
+    r = n(886393),
     o = n(307623),
     c = n(660273),
     d = n(707792),
@@ -15,13 +15,13 @@ var i = n(627968),
     h = n(271456),
     A = n(200273),
     m = n(565846),
-    p = n(57907),
-    _ = n(375500),
+    _ = n(57907),
+    p = n(375500),
     g = n(707653),
     f = n(50268),
     x = n(584682),
-    C = n(58736),
-    E = n(378570),
+    E = n(58736),
+    C = n(378570),
     I = n(203982),
     N = n(170428),
     b = n(933057),
@@ -32,20 +32,20 @@ var i = n(627968),
 function y(e) {
     let {
         channel: t
-    } = e, [n, r] = s.useState(!1), a = s.useRef(null);
+    } = e, [n, a] = s.useState(!1), r = s.useRef(null);
 
     function o() {
-        r(e => !e)
+        a(e => !e)
     }
     let c = v.intl.string(v.t["UKOtz+"]);
     return (0, i.jsx)(l.YNO, {
-        targetElementRef: a,
+        targetElementRef: r,
         shouldShow: n,
         animation: l.YNO.Animation.NONE,
         position: "bottom",
         align: "right",
         autoInvert: !1,
-        onRequestClose: () => r(!1),
+        onRequestClose: () => a(!1),
         renderPopout: function(e) {
             return (0, i.jsx)(j, {
                 ...e,
@@ -56,9 +56,9 @@ function y(e) {
             let {
                 isShown: n
             } = t;
-            return (0, i.jsx)(C.Ay.Icon, {
+            return (0, i.jsx)(E.Ay.Icon, {
                 ...e,
-                ref: a,
+                ref: r,
                 onClick: o,
                 tooltip: n ? null : c,
                 icon: l.jNK,
@@ -74,13 +74,13 @@ function j(e) {
         channel: t,
         closePopout: n,
         onSelect: s
-    } = e, x = (0, c.A)(t, "Sidebar Overflow"), C = (0, u.A)(t), N = (0, p.A)(t), b = (0, _.A)(t), S = (0, r.A)(t), y = (0, d.A)(t), j = (0, m.A)(t.id), R = (0, A.A)(t), O = (0, o.A)(t), L = (0, a.A)(t), M = (0, f.A)({
+    } = e, x = (0, c.A)(t, "Sidebar Overflow"), E = (0, u.A)(t), N = (0, _.A)(t), b = (0, p.A)(t), S = (0, a.A)(t), y = (0, d.A)(t), j = (0, m.A)(t.id), R = (0, A.A)(t), O = (0, o.A)(t), L = (0, r.A)(t), M = (0, f.A)({
         id: t.id,
         label: v.intl.string(v.t.DQ797g)
     }), D = (0, g.A)(t), G = (0, h.A)(t);
 
     function U() {
-        (0, E.iN)(t.id)
+        (0, C.iN)(t.id)
     }
     return (0, i.jsxs)(l.W1t, {
         "data-menu-migrated": !0,
@@ -97,7 +97,7 @@ function j(e) {
         }), (0, i.jsxs)(l.rXV, {
             children: [N, b]
         }), (0, i.jsxs)(l.rXV, {
-            children: [R, C, j, G]
+            children: [R, E, j, G]
         }), (0, i.jsxs)(l.rXV, {
             children: [(0, i.jsx)(l.Drp, {
                 id: "search",
@@ -146,7 +146,7 @@ function R(e) {
             channel: t
         }) : null, (0, i.jsx)(y, {
             channel: t
-        }), (0, i.jsx)(C.Ay.Icon, {
+        }), (0, i.jsx)(E.Ay.Icon, {
             icon: l.PGe,
             tooltip: v.intl.string(v.t.cpT0Cq),
             onClick: () => (0, S.xu)((0, x.j)(t), n ?? t.parent_id)

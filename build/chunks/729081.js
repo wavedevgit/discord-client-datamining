@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(735438),
+    a = n.n(l),
+    r = n(735438),
     o = n(835245),
     c = n(695095),
     d = n(158954),
@@ -15,13 +15,13 @@ var i = n(627968),
     h = n(52133),
     A = n(568598),
     m = n(313961),
-    p = n(246356),
-    _ = n(178213),
+    _ = n(246356),
+    p = n(178213),
     g = n(332772),
     f = n(594832),
     x = n(631784),
-    C = n(721932),
-    E = n(310209),
+    E = n(721932),
+    C = n(310209),
     I = n(961350),
     N = n(290863),
     b = n(954571),
@@ -38,9 +38,9 @@ var i = n(627968),
     G = n(985018),
     U = n(325486);
 let P = `vc-gifting-${(0,o.A)()}`,
-    k = Object.freeze([]);
+    w = Object.freeze([]);
 
-function w(e, t) {
+function k(e, t) {
     let [n, i] = e, [s, l] = t;
     return (0, h.v)(n, s) && (0, h.v)(i, l)
 }
@@ -56,7 +56,7 @@ function V(e) {
     s.useEffect(() => {
         t || n()
     }, [n, t]);
-    let V = (0, _.GG)("social_layer_storefront_gifting_mini_shelf");
+    let V = (0, p.GG)("social_layer_storefront_gifting_mini_shelf");
     (0, g.T)({
         location: "social_layer_storefront_gifting_mini_shelf"
     });
@@ -76,11 +76,11 @@ function V(e) {
                             break
                         }
                 } return [Array.from(e).sort(), Array.from(t).sort()]
-        }, [K, H, F], w),
+        }, [K, H, F], k),
         z = (0, u.bG)([I.default], () => I.default.getId()),
         q = s.useMemo(() => {
             let e = K.map(e => (0, D.Xw)(e) || (0, D.Ay)(e) ? e.user.id : null).filter(S.Vq);
-            return (0, a.uniq)([...W, ...e])
+            return (0, r.uniq)([...W, ...e])
         }, [K, W]),
         X = (0, y.U)(Y),
         {
@@ -93,8 +93,8 @@ function V(e) {
             userIds: q
         }),
         Z = "loading" === J || 0 === Q.length,
-        ee = s.useMemo(() => Q.map(e => C.A.fromSKU(e)).filter(S.Vq), [Q]),
-        et = (0, c.A)(Z ? k : ee, B),
+        ee = s.useMemo(() => Q.map(e => E.A.fromSKU(e)).filter(S.Vq), [Q]),
+        et = (0, c.A)(Z ? w : ee, B),
         en = s.useMemo(() => {
             let e = new Set(q),
                 {
@@ -105,13 +105,13 @@ function V(e) {
             return et.map(t => {
                 let n = Object.entries($[t.skuId] ?? {}).filter(t => {
                         let [n, i] = t;
-                        return i === E.j.WISHLIST && e.has(n)
+                        return i === C.j.WISHLIST && e.has(n)
                     }).map(e => {
                         let [t] = e;
                         return t
                     }),
                     l = n.filter(e => e !== z),
-                    r = q.filter(e => e !== z);
+                    a = q.filter(e => e !== z);
                 return V ? (0, i.jsx)(R.A, {
                     sku: t.sku,
                     source: n.length > 0 ? f.uS.WISHLIST : f.uS.POPULAR,
@@ -119,7 +119,7 @@ function V(e) {
                     guildId: h.guild_id,
                     channelId: h.id,
                     showIcons: s,
-                    userIdsForGifting: r,
+                    userIdsForGifting: a,
                     userIdsForRecommendation: l
                 }, t.skuId) : (0, i.jsx)(O.A, {
                     variant: n.length > 0 ? O.$.WISHLIST : O.$.POPULAR,
@@ -138,7 +138,7 @@ function V(e) {
             channel_id: h.id,
             sku_ids: Q.map(e => e.id)
         })
-    }, [h.id, h.guild_id, Q]), (0, i.jsx)(p.A, {
+    }, [h.id, h.guild_id, Q]), (0, i.jsx)(_.A, {
         children: (0, i.jsx)(d.lGe, {
             "aria-labelledby": P,
             modal: !1,
@@ -163,7 +163,7 @@ function V(e) {
                         })]
                     })
                 }), (0, i.jsx)("div", {
-                    className: r()(U.Xb, {
+                    className: a()(U.Xb, {
                         [U.Im]: V
                     }),
                     children: Z ? (0, i.jsx)(d.y$y, {

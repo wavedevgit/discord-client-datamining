@@ -32,6 +32,7 @@ let c = e => {
         }), null != n && "" !== t ? (0, l.jsx)(r.Text, {
             variant: "text-md/normal",
             color: "text-subtle",
+            className: o.m,
             children: p(n)
         }) : null, x && !u && !_ && (0, l.jsx)(r.Text, {
             variant: "text-sm/normal",

@@ -20,10 +20,10 @@ function c(e) {
             code: l,
             ...c
         }),
-        children: "ansi" === a ? (0, t.jsx)(i, {
+        children: "ansi" === a ? (0, t.jsx)(p, {
             code: l,
             ...c
-        }) : (0, t.jsx)(p, {
+        }) : (0, t.jsx)(i, {
             code: l,
             lang: a,
             ...c
@@ -42,7 +42,7 @@ function u(e) {
     })
 }
 
-function p(e) {
+function i(e) {
     let {
         code: l,
         lang: s,
@@ -57,7 +57,7 @@ function p(e) {
     })
 }
 
-function i(e) {
+function p(e) {
     let {
         code: l,
         ...s

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(735438),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(990078),
     c = n(397927),
     d = n(793574),
@@ -15,13 +15,13 @@ var i = n(627968),
     h = n(402216),
     A = n(689874),
     m = n(872363),
-    p = n(966597),
-    _ = n(922281),
+    _ = n(966597),
+    p = n(922281),
     g = n(51082),
     f = n(275731),
     x = n(289552),
-    C = n(246356),
-    E = n(977851),
+    E = n(246356),
+    C = n(977851),
     I = n(772475),
     N = n(481947),
     b = n(485296),
@@ -35,9 +35,9 @@ function R(e) {
     let {
         channelId: t,
         guildId: n
-    } = e, s = (0, a.yK)([b.A, S.A], () => {
+    } = e, s = (0, r.yK)([b.A, S.A], () => {
         let e = Date.now();
-        return r()(b.A.getSpeakers()).map(e => S.A.getParticipant(t, e)).filter(e => null != e && e.type === v.lp.USER && e.speaking && !(0, g.Ay)(e)).sortBy(t => -b.A.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
+        return a()(b.A.getSpeakers()).map(e => S.A.getParticipant(t, e)).filter(e => null != e && e.type === v.lp.USER && e.speaking && !(0, g.Ay)(e)).sortBy(t => -b.A.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
     });
     return 0 === s.length ? null : (0, i.jsx)("div", {
         className: j.$U,
@@ -61,19 +61,19 @@ function O(e) {
         channel: t,
         isChatOpen: n
     } = e, l = s.useRef(null), {
-        analyticsLocations: r
+        analyticsLocations: a
     } = (0, u.Ay)(d.A.VOICE_CHANNEL_HEADER), o = t.id, {
         voiceParticipantsHidden: g,
         selectedParticipant: N,
         userParticipantCount: b
-    } = (0, a.cf)([S.A], () => ({
+    } = (0, r.cf)([S.A], () => ({
         selectedParticipant: S.A.getSelectedParticipant(o),
         voiceParticipantsHidden: S.A.getVoiceParticipantsHidden(o),
         userParticipantCount: S.A.getUserParticipantCount(o)
     }), [o]), y = t.isGuildVoiceOrThread() && !n, {
         enabled: O,
         inInbox: L
-    } = p.A.useConfig({
+    } = _.A.useConfig({
         location: "ChannelCallHeaderToolbar"
     }), M = [];
     return g && M.push((0, i.jsx)(R, {
@@ -97,7 +97,7 @@ function O(e) {
     }, "video-warning")), g && M.push((0, i.jsx)(c.YNO, {
         targetElementRef: l,
         position: "bottom",
-        renderPopout: () => (0, i.jsx)(C.A, {
+        renderPopout: () => (0, i.jsx)(E.A, {
             children: (0, i.jsx)(T.A, {
                 channel: t
             })
@@ -115,14 +115,14 @@ function O(e) {
                 className: j.x6
             })
         }
-    }, "call-members-popout")), O && !L && M.push((0, i.jsx)(_.A, {
+    }, "call-members-popout")), O && !L && M.push((0, i.jsx)(p.A, {
         className: j.x6
-    }, "for-later")), y && M.push((0, i.jsx)(E.V, {
+    }, "for-later")), y && M.push((0, i.jsx)(C.V, {
         channelId: t.id,
         className: j.x6,
         disabled: n
     }, "chat-spacer")), (0, i.jsx)(u.f5, {
-        value: r,
+        value: a,
         children: M
     })
 }

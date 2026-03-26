@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(311907),
     l = n(397927),
-    r = n(604681),
-    a = n(58149),
+    a = n(604681),
+    r = n(58149),
     o = n(761640),
     c = n(967198),
     d = n(58736),
@@ -23,11 +23,11 @@ function A(e) {
         tooltip: m ? h.intl.string(h.t.Axvx8c) : h.intl.string(h.t.gxChDx),
         icon: l.nFg,
         onClick: () => {
-            a.Ay.trackWithMetadata(u.HAw.MEMBER_LIST_TOGGLED, {
+            r.Ay.trackWithMetadata(u.HAw.MEMBER_LIST_TOGGLED, {
                 channel_id: t,
                 guild_id: A,
                 member_list_open: !m
-            }), r.A.toggleMembersSection()
+            }), a.A.toggleMembersSection()
         },
         selected: m
     })

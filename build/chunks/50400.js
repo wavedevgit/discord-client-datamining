@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(4208),
-    r = n(837381),
-    a = n(311907),
+    a = n(837381),
+    r = n(311907),
     o = n(397927),
     c = n(442433),
     d = n(313961),
@@ -15,13 +15,13 @@ var i = n(627968),
     h = n(47167),
     A = n(598104),
     m = n(616356),
-    p = n(383501),
-    _ = n(222823),
+    _ = n(383501),
+    p = n(222823),
     g = n(309010),
     f = n(287809),
     x = n(607567),
-    C = n(531685),
-    E = n(941971),
+    E = n(531685),
+    C = n(941971),
     I = n(375855),
     N = n(900848),
     b = n(65611),
@@ -70,7 +70,7 @@ class R extends s.PureComponent {
             controller: t
         } = this.state;
         e(), t.update({
-            immediate: !C.A.isFocused(),
+            immediate: !E.A.isFocused(),
             height: 1,
             opacity: 1,
             scale: 1,
@@ -98,7 +98,7 @@ class R extends s.PureComponent {
         this.setState({
             animating: !0
         }, () => t.update({
-            immediate: !C.A.isFocused(),
+            immediate: !E.A.isFocused(),
             height: 0,
             opacity: 0,
             scale: 0,
@@ -160,16 +160,16 @@ class R extends s.PureComponent {
             channelName: t,
             selected: n,
             badge: s,
-            audio: r,
-            video: a,
+            audio: a,
+            video: r,
             stream: c,
             isCurrentUserInThisDMCall: d,
             unread: u,
             treeItemProps: h
         } = this.props, {
             hovered: m,
-            animating: p
-        } = this.state, _ = e.isMultiUserDM() && null == e.icon, g = () => (0, i.jsx)(o.jlP, {
+            animating: _
+        } = this.state, p = e.isMultiUserDM() && null == e.icon, g = () => (0, i.jsx)(o.jlP, {
             to: S.BVt.CHANNEL(S.ME, e.id),
             onMouseEnter: () => this.setState({
                 hovered: !0
@@ -183,9 +183,9 @@ class R extends s.PureComponent {
                 name: t
             }) : "",
             onContextMenu: this.handleContextMenu,
-            icon: _ ? void 0 : this.getChannelIcon(),
-            backgroundStyle: _ ? "on-hover" : "always",
-            children: _ ? (0, i.jsx)(A.A, {
+            icon: p ? void 0 : this.getChannelIcon(),
+            backgroundStyle: p ? "on-hover" : "always",
+            children: p ? (0, i.jsx)(A.A, {
                 channel: e,
                 size: o._3J.SIZE_40,
                 facepileSizeOverride: o._3J.SIZE_32,
@@ -196,10 +196,10 @@ class R extends s.PureComponent {
         return (0, i.jsx)(l.animated.div, {
             style: this.getAnimatedStyle(),
             children: (0, i.jsxs)(N.c, {
-                children: [(0, i.jsx)(E.A, {
-                    hovered: !p && m,
-                    selected: !p && n,
-                    unread: !p && u,
+                children: [(0, i.jsx)(C.A, {
+                    hovered: !_ && m,
+                    selected: !_ && n,
+                    unread: !_ && u,
                     className: v.I
                 }), (0, i.jsx)(I.A, {
                     channel: e,
@@ -208,8 +208,8 @@ class R extends s.PureComponent {
                         selected: !1,
                         lowerBadge: s > 0 ? (0, b.wN)(s, void 0, !0) : null,
                         upperBadge: (0, b.oi)({
-                            audio: r,
-                            video: a,
+                            audio: a,
+                            video: r,
                             screenshare: c,
                             isCurrentUserConnected: d
                         }),
@@ -226,13 +226,13 @@ class R extends s.PureComponent {
 let O = s.forwardRef(function(e, t) {
     let n = e.channel.id,
         s = (0, h.Ay)(e.channel),
-        l = (0, r.Vd)(n, 2),
-        c = (0, a.bG)([p.A], () => p.A.getChannelId(), []),
-        u = (0, a.bG)([d.A], () => d.A.getMode(n), [n]),
-        A = (0, a.bG)([m.A], () => m.A.getAllApplicationStreamsForChannel(n).length > 0),
-        f = (0, a.bG)([x.Ay], () => x.Ay.getVoiceStatesForChannel(e.channel).length > 0, [e.channel]),
-        C = (0, a.bG)([g.A], () => g.A.getChannelId(), []),
-        E = (0, a.bG)([_.Ay], () => _.Ay.getMentionCount(n), [n]),
+        l = (0, a.Vd)(n, 2),
+        c = (0, r.bG)([_.A], () => _.A.getChannelId(), []),
+        u = (0, r.bG)([d.A], () => d.A.getMode(n), [n]),
+        A = (0, r.bG)([m.A], () => m.A.getAllApplicationStreamsForChannel(n).length > 0),
+        f = (0, r.bG)([x.Ay], () => x.Ay.getVoiceStatesForChannel(e.channel).length > 0, [e.channel]),
+        E = (0, r.bG)([g.A], () => g.A.getChannelId(), []),
+        C = (0, r.bG)([p.Ay], () => p.Ay.getMentionCount(n), [n]),
         I = c === n,
         N = !1,
         b = !1;
@@ -242,9 +242,9 @@ let O = s.forwardRef(function(e, t) {
         ...e,
         ref: t,
         channelName: s,
-        unread: E > 0,
-        selected: C === n,
-        badge: E,
+        unread: C > 0,
+        selected: E === n,
+        badge: C,
         audio: N,
         video: b,
         stream: A,

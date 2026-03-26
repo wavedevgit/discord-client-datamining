@@ -92,10 +92,10 @@ let el = e => {
         reportId: ec,
         textInput: eu,
         initialErrorMessage: e_
-    } = e, em = et(t, "checkbox"), ex = et(t, "text_line_resource"), ep = en(t, "external_link"), eh = en(t, "free_text"), eg = en(t, "dropdown"), eA = et(t, "country_select"), ev = et(t, "inline_notice"), ef = et(t, "radio_group"), eb = et(t, "text"), eC = et(t, "content_url_input"), eT = r.x.REPORT_TO_MOD.has(n.name), ej = n.name === _.tY.MEDIA_TAKEDOWN, [eN, eI] = a.useState(!1), [eS, ey] = a.useState(!1), [eE, ek] = a.useState(e_ ?? ""), [ew, eR] = a.useState(() => ({})), [eM, eL] = a.useState(() => ({})), eO = a.useRef(null), eG = a.useMemo(() => "message" === n.name ? n.record.channel_id : void 0, [n]), eD = a.useCallback(e => ({
+    } = e, em = et(t, "checkbox"), ex = et(t, "text_line_resource"), ep = en(t, "external_link"), eh = en(t, "free_text"), eg = en(t, "dropdown"), eA = et(t, "country_select"), ev = et(t, "inline_notice"), ef = en(t, "radio_group"), eb = et(t, "text"), eC = et(t, "content_url_input"), eT = r.x.REPORT_TO_MOD.has(n.name), ej = n.name === _.tY.MEDIA_TAKEDOWN, [eN, eI] = a.useState(!1), [eS, ey] = a.useState(!1), [eE, ek] = a.useState(e_ ?? ""), [ew, eR] = a.useState(() => ({})), [eM, eL] = a.useState(() => ({})), eO = a.useRef(null), eG = a.useMemo(() => "message" === n.name ? n.record.channel_id : void 0, [n]), eD = a.useCallback(e => ({
         nodeRef: t.id,
         destination: e,
-        textInput: null != eh || null != eg || null != eA || null != ef || null != eC ? eM : void 0,
+        textInput: null != eh || null != eg || null != eA || ef.length > 0 || null != eC ? eM : void 0,
         multiSelect: null != em ? {
             name: em.name,
             state: ew
@@ -104,7 +104,7 @@ let el = e => {
         freeTextElements: eh,
         dropdownElements: eg,
         countrySelectElement: eA,
-        radioGroupElement: ef,
+        radioGroupElements: ef,
         multiSelectElement: em,
         contentUrlInputElement: eC
     }, {
@@ -327,18 +327,21 @@ let el = e => {
                     onChange: eU,
                     state: eM
                 })
-            }), null != ef && (0, l.jsx)("div", {
-                children: (0, l.jsx)(P.A, {
-                    element: ef,
-                    onChange: eU,
-                    state: eM
-                })
-            }), null != ev && function(e, t, n) {
+            }), ef.map(e => (0, l.jsx)(P.A, {
+                element: e,
+                onChange: eU,
+                state: eM
+            }, e.name)), null != ev && function(e, t, n) {
                 let {
                     visible_when: l
                 } = e.data;
                 if (null == l) return !0;
-                let a = et(t, l.element_type);
+                let a = null != l.element_name ? t.elements.find(e => {
+                    let {
+                        name: t
+                    } = e;
+                    return t === l.element_name
+                }) : et(t, l.element_type);
                 return null != a && n?.[a.name]?.value === l.value
             }(ev, t, eM) && (0, l.jsx)(M.A, {
                 element: ev

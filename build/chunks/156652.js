@@ -1,13 +1,13 @@
 /** chunk id: 156652 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p,
+    A: () => _,
     x: () => A
 });
 var i, s = n(627968),
     l = n(64700),
-    r = n(503698),
-    a = n.n(r),
+    a = n(503698),
+    r = n.n(a),
     o = n(397927),
     c = n(765671),
     d = n(401685),
@@ -20,13 +20,13 @@ function m(e) {
         disableGradients: t = !1,
         renderHeader: n,
         renderBottomLeft: i,
-        renderBottomCenter: r,
-        renderBottomRight: a,
+        renderBottomCenter: a,
+        renderBottomRight: r,
         renderCenter: u
     } = e, A = l.useRef(null), {
         width: m,
-        ref: p
-    } = (0, c.Ay)(), _ = (0, d.bf)(m);
+        ref: _
+    } = (0, c.Ay)(), p = (0, d.bf)(m);
     return (0, s.jsx)(o.xpW, {
         containerRef: A,
         children: (0, s.jsxs)("div", {
@@ -40,19 +40,19 @@ function m(e) {
                 className: h.K1,
                 children: n?.()
             }), u?.(), (0, s.jsx)(d.Ay.Provider, {
-                value: _,
+                value: p,
                 children: (0, s.jsxs)("div", {
                     className: h.q6,
-                    ref: p,
+                    ref: _,
                     children: [(0, s.jsx)("div", {
                         className: h.i$,
                         children: i?.()
                     }), (0, s.jsx)("div", {
                         className: h.Kz,
-                        children: r?.()
+                        children: a?.()
                     }), (0, s.jsx)("div", {
                         className: h.i$,
-                        children: a?.()
+                        children: r?.()
                     })]
                 })
             })]
@@ -60,22 +60,22 @@ function m(e) {
     })
 }
 
-function p(e) {
+function _(e) {
     let {
         screenMessage: t,
         onDoubleClick: n,
         onActive: i,
         onForceIdle: l,
-        idle: r,
+        idle: a,
         children: o,
         renderChatToasts: c,
         renderVoiceChannelEffects: d,
         style: A,
-        ...p
+        ..._
     } = e;
     return (0, s.jsxs)("div", {
-        className: a()(h.zr, {
-            [h.N7]: r
+        className: r()(h.zr, {
+            [h.N7]: a
         }),
         style: A,
         onMouseMove: i,
@@ -86,7 +86,7 @@ function p(e) {
             size: "large",
             ...t
         }) : null, (0, s.jsx)(m, {
-            ...p
+            ..._
         }), c?.(), d?.()]
     })
 }

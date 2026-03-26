@@ -6,22 +6,22 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(735438),
-    o = n.n(a),
+    a = n.n(l),
+    r = n(735438),
+    o = n.n(r),
     c = n(311907),
     d = n(435371),
     u = n(397927),
     h = n(933958),
     A = n(104171),
     m = n(297334),
-    p = n(454938),
-    _ = n(714991),
+    _ = n(454938),
+    p = n(714991),
     g = n(57991),
     f = n(513461),
     x = n(199285),
-    C = n(347951),
-    E = n(164956),
+    E = n(347951),
+    C = n(164956),
     I = n(63995),
     N = n(69407),
     b = n(624265),
@@ -39,7 +39,7 @@ var i = n(627968),
     U = n(985018),
     P = n(826427);
 
-function k(e, t, n) {
+function w(e, t, n) {
     return 0 === t.length ? null : (0, i.jsxs)("div", {
         className: P.nM,
         children: [(0, i.jsx)(e, {
@@ -53,7 +53,7 @@ function k(e, t, n) {
     })
 }
 
-function w(e) {
+function k(e) {
     let {
         muteConfig: t,
         className: n
@@ -70,7 +70,7 @@ function w(e) {
 }
 
 function V(e) {
-    let t, n, l, a, d, p, _, g, f, x, C, E, D, U, V, B, H, F, K, W, {
+    let t, n, l, r, d, _, p, g, f, x, E, C, D, U, V, B, H, F, K, W, {
             guild: Y
         } = e,
         z = Y.id,
@@ -90,7 +90,7 @@ function V(e) {
                 channel: t
             } = e;
             return t.id
-        }), ...Object.values(S.A.getThreadsForGuild(t)).flatMap(e => Object.keys(e))], [t]), l = (0, b.Ay)(t), a = s.useMemo(() => l.map(e => e.id), [l]), d = (0, c.bG)([M.Ay], () => M.Ay.getVoiceStates(t), [t]), p = (0, c.yK)([R.A], () => R.A.getBlockedOrIgnoredIDs()), _ = o().flatMap(n, e => {
+        }), ...Object.values(S.A.getThreadsForGuild(t)).flatMap(e => Object.keys(e))], [t]), l = (0, b.Ay)(t), r = s.useMemo(() => l.map(e => e.id), [l]), d = (0, c.bG)([M.Ay], () => M.Ay.getVoiceStates(t), [t]), _ = (0, c.yK)([R.A], () => R.A.getBlockedOrIgnoredIDs()), p = o().flatMap(n, e => {
             if (e === Y.afkChannelId) return [];
             let t = (d[e] ?? []).map(e => {
                 let {
@@ -98,8 +98,8 @@ function V(e) {
                 } = e;
                 return t
             });
-            return (0, m.aw)(t, p)
-        }), g = (0, c.yK)([I.A], () => o().flatMap(a, e => {
+            return (0, m.aw)(t, _)
+        }), g = (0, c.yK)([I.A], () => o().flatMap(r, e => {
             if (e === Y.afkChannelId) return [];
             let t = I.A.getMutableParticipants(e, N.ip.SPEAKER).filter(e => e.type === N.wY.VOICE).map(e => {
                 let {
@@ -107,29 +107,29 @@ function V(e) {
                 } = e;
                 return t
             });
-            return (0, m.aw)(t, p)
+            return (0, m.aw)(t, _)
         })), f = (0, c.bG)([I.A], () => {
             let e = 0;
-            for (let t of a) e += I.A.getParticipantCount(t, N.ip.AUDIENCE);
+            for (let t of r) e += I.A.getParticipantCount(t, N.ip.AUDIENCE);
             return e
         }), x = (0, c.yK)([y.A], () => {
             let e = y.A.getAllApplicationStreams().filter(e => e.guildId === t).map(e => e.ownerId);
-            return (0, m.F7)(e, p)
-        }, [p, t]), C = (0, c.yK)([h.Ay], () => {
+            return (0, m.F7)(e, _)
+        }, [_, t]), E = (0, c.yK)([h.Ay], () => {
             let e = h.Ay.getEmbeddedActivitiesForGuild(t).flatMap(e => Array.from(e.userIds));
-            return (0, m.F7)(e, p)
-        }, [t, p]), E = (0, c.yK)([L.default], () => {
-            let e = C.map(e => L.default.getUser(e));
+            return (0, m.F7)(e, _)
+        }, [t, _]), C = (0, c.yK)([L.default], () => {
+            let e = E.map(e => L.default.getUser(e));
             return (0, m.aw)(e)
-        }, [C]), D = (0, c.yK)([L.default], () => x.map(e => L.default.getUser(e)), [x]), U = _.filter(e => !x.includes(e.id) && !C.includes(e.id)), V = (0, m.aw)(U), B = D.filter(e => null != e && !C.includes(e.id)), H = (0, c.bG)([T.A], () => T.A.getUserAffinitiesMap(), []), F = s.useMemo(() => (0, v.L)(V, H, "GuildTooltip - nonBlockedUsers"), [V, H]), K = s.useMemo(() => (0, v.L)(g, H, "GuildTooltip - stageSpeakers"), [g, H]), W = s.useMemo(() => (0, v.L)(B, H, "GuildTooltip - streamUsers"), [B, H]), {
+        }, [E]), D = (0, c.yK)([L.default], () => x.map(e => L.default.getUser(e)), [x]), U = p.filter(e => !x.includes(e.id) && !E.includes(e.id)), V = (0, m.aw)(U), B = D.filter(e => null != e && !E.includes(e.id)), H = (0, c.bG)([T.A], () => T.A.getUserAffinitiesMap(), []), F = s.useMemo(() => (0, v.L)(V, H, "GuildTooltip - nonBlockedUsers"), [V, H]), K = s.useMemo(() => (0, v.L)(g, H, "GuildTooltip - stageSpeakers"), [g, H]), W = s.useMemo(() => (0, v.L)(B, H, "GuildTooltip - streamUsers"), [B, H]), {
             voiceUsersToShow: F,
             stageSpeakers: K,
             numStageListeners: f,
             streamUsersToShow: W,
-            embeddedActivitiesUsers: s.useMemo(() => (0, v.L)(E, H, "GuildTooltip - embeddedActivitiesUsers"), [E, H]),
-            hasActivity: g.length > 0 || U.length > 0 || B.length > 0 || E.length > 0
+            embeddedActivitiesUsers: s.useMemo(() => (0, v.L)(C, H, "GuildTooltip - embeddedActivitiesUsers"), [C, H]),
+            hasActivity: g.length > 0 || U.length > 0 || B.length > 0 || C.length > 0
         }),
-        Z = k(u.HKD, q, z),
+        Z = w(u.HKD, q, z),
         ee = 0 === X.length ? null : (0, i.jsxs)("div", {
             className: P.nM,
             children: [(0, i.jsx)(u.qux, {
@@ -153,8 +153,8 @@ function V(e) {
                 })]
             })]
         }),
-        et = k(u.Fzq, Q, z),
-        en = k(u.k9F, $, z),
+        et = w(u.Fzq, Q, z),
+        en = w(u.k9F, $, z),
         {
             isMuted: ei,
             muteConfig: es
@@ -163,9 +163,9 @@ function V(e) {
             muteConfig: O.Ay.getMuteConfig(z)
         }), [z]);
     return (0, i.jsxs)(i.Fragment, {
-        children: [ee, Z, et, en, ei ? (0, i.jsx)(w, {
+        children: [ee, Z, et, en, ei ? (0, i.jsx)(k, {
             muteConfig: es,
-            className: r()(P.LM, {
+            className: a()(P.LM, {
                 [P.Sx]: null != Z || null != et
             })
         }) : null]
@@ -198,23 +198,23 @@ function B(e) {
 function H(e) {
     let {
         guild: t
-    } = e, n = (0, p.A)(t), s = (0, x.a)(t), l = null != s ? (0, i.jsx)(B, {
+    } = e, n = (0, _.A)(t), s = (0, x.a)(t), l = null != s ? (0, i.jsx)(B, {
         guildJoinRequestStatus: s
-    }) : null, a = (0, i.jsx)(V, {
+    }) : null, r = (0, i.jsx)(V, {
         guild: t
-    }), o = (0, c.bG)([E.A], () => E.A.isViewingRoles(t.id)), d = (0, C.Ig)(t);
+    }), o = (0, c.bG)([C.A], () => C.A.isViewingRoles(t.id)), d = (0, E.Ig)(t);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
-            className: r()(P.nM, P.Dl),
+            className: a()(P.nM, P.Dl),
             children: [n ? (0, i.jsx)(g.A, {
                 guild: t,
                 className: P.WX
-            }) : (0, i.jsx)(_.A, {
+            }) : (0, i.jsx)(p.A, {
                 guild: t,
                 size: 20,
                 className: P.aL
             }), (0, i.jsx)("span", {
-                className: r()(P.cN, P.NT),
+                className: a()(P.cN, P.NT),
                 children: t.name
             })]
         }), d ? (0, i.jsx)(u.Text, {
@@ -227,7 +227,7 @@ function H(e) {
             color: "text-default",
             variant: "text-xs/normal",
             children: U.intl.string(U.t["5LwN89"])
-        }) : l ?? a]
+        }) : l ?? r]
     })
 }
 
@@ -236,20 +236,20 @@ function F(e) {
         guild: t,
         disabled: n = !1,
         "aria-label": l = !1,
-        children: r
-    } = e, a = s.useMemo(() => n ? null : (0, i.jsx)("div", {
+        children: a
+    } = e, r = s.useMemo(() => n ? null : (0, i.jsx)("div", {
         className: P.A_,
         children: (0, i.jsx)(H, {
             guild: t
         })
     }), [n, t]);
     return (0, i.jsx)(d.m_, {
-        __unsupportedReactNodeAsText: a,
+        __unsupportedReactNodeAsText: r,
         hideOnClick: !0,
         spacing: 12,
         position: "right",
         "aria-label": !1 === l ? void 0 : l,
         asContainer: !0,
-        children: r
+        children: a
     })
 }

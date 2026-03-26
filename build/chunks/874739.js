@@ -1,13 +1,13 @@
 /** chunk id: 874739 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => E
+    A: () => C
 });
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(456412),
-    a = n(878549),
+    a = n(456412),
+    r = n(878549),
     o = n(313961),
     c = n(493387),
     d = n(235986),
@@ -15,18 +15,18 @@ var i = n(627968),
     h = n(203982),
     A = n(484191),
     m = n(665450),
-    p = n(526369),
-    _ = n(699707),
+    _ = n(526369),
+    p = n(699707),
     g = n(713397),
     f = n(652215),
     x = n(806931),
-    C = n(256960);
-let E = (0, r.A)(e => {
+    E = n(256960);
+let C = (0, a.A)(e => {
     let {
         participants: t,
         filteredParticipants: n,
-        selectedParticipant: r,
-        participantsVersion: E,
+        selectedParticipant: a,
+        participantsVersion: C,
         layout: I,
         onSelectParticipant: N,
         onContextMenuParticipant: b,
@@ -47,8 +47,8 @@ let E = (0, r.A)(e => {
     s.useEffect(() => {
         h._.dispatch(f.jej.REMEASURE_TARGET)
     }, [O, L, P.width, P.height]);
-    let k = s.useMemo(() => n.filter(e => e.type !== x.lp.ACTIVITY || !e.participants.some(e => (0, a.S)(e))), [n, E]),
-        w = (0, l.bG)([o.A], () => o.A.getVoiceParticipantsHidden(T.id), [T.id]);
+    let w = s.useMemo(() => n.filter(e => e.type !== x.lp.ACTIVITY || !e.participants.some(e => (0, r.S)(e))), [n, C]),
+        k = (0, l.bG)([o.A], () => o.A.getVoiceParticipantsHidden(T.id), [T.id]);
     if (U?.channelId === T.id) return (0, i.jsx)(m.A, {
         height: L
     });
@@ -65,26 +65,26 @@ let E = (0, r.A)(e => {
     if (D === f._Of.VOICE) return (0, i.jsx)(c.A, {
         guildId: T.guild_id,
         width: O,
-        className: C.Er,
+        className: E.Er,
         participants: t,
         onContextMenu: b
     });
-    if (null == r) {
+    if (null == a) {
         if (0 === n.length) {
-            let e = t.length > 0 && !w;
+            let e = t.length > 0 && !k;
             return (0, i.jsx)(g.A, {
                 channelId: T.id,
                 allPoppedOut: e
             })
         }
         return (0, i.jsx)(d.A, {
-            className: C.HA,
+            className: E.HA,
             justify: d.A.Justify.CENTER,
             align: d.A.Align.CENTER,
-            children: (0, i.jsx)(p.A, {
+            children: (0, i.jsx)(_.A, {
                 channel: T,
-                className: C.g9,
-                participants: k,
+                className: E.g9,
+                participants: w,
                 totalNumberOfParticipants: t.length,
                 onClick: N,
                 onDoubleClick: S,
@@ -94,12 +94,12 @@ let E = (0, r.A)(e => {
             })
         })
     }
-    return (0, i.jsx)(_.A, {
+    return (0, i.jsx)(p.A, {
         onFullscreenParticipant: S,
         onContextMenuParticipant: b,
         onSelectParticipant: N,
-        selectedParticipant: r,
-        filteredParticipants: k,
+        selectedParticipant: a,
+        filteredParticipants: w,
         participants: t,
         popoutType: G,
         className: y,

@@ -22,9 +22,9 @@ function _(e) {
         onViewChange: f,
         sidebarFooter: m,
         emptyState: p,
-        searchQuery: b,
-        clearSearchQuery: y,
-        searchBar: v,
+        searchQuery: y,
+        clearSearchQuery: v,
+        searchBar: b,
         ...g
     } = e, [x, E] = i.useState(!1), [A, S] = i.useState(1.4), N = i.useRef(null), C = (0, a.bG)([o.A], () => o.A.useReducedMotion), j = (0, a.bG)([c.A], () => c.A.isFocused());
     return i.useEffect(() => {
@@ -51,9 +51,9 @@ function _(e) {
                 onViewChange: f,
                 emptyState: p,
                 sidebarFooter: m,
-                searchQuery: b,
-                clearSearchQuery: y,
-                searchBar: v
+                searchQuery: y,
+                clearSearchQuery: v,
+                searchBar: b
             })
         })
     })

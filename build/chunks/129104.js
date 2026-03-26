@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(397927),
-    a = n(565645),
+    a = n(397927),
+    r = n(565645),
     o = n(375499),
     c = n(937773),
     d = n(961350),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(309010),
     A = n(559405),
     m = n(652215),
-    p = n(307731),
-    _ = n(435579);
+    _ = n(307731),
+    p = n(435579);
 
 function g(e) {
     let {
@@ -25,12 +25,12 @@ function g(e) {
         selectedDefaultStatus: g,
         setIsEmojiPickerOpen: f,
         defaultStatusVariant: x
-    } = e, C = s.useRef(null), E = (0, l.bG)([h.A, u.A], () => u.A.getChannel(h.A.getVoiceChannelId())), I = s.useCallback(() => null != t ? (0, i.jsx)(a.A, {
+    } = e, E = s.useRef(null), C = (0, l.bG)([h.A, u.A], () => u.A.getChannel(h.A.getVoiceChannelId())), I = s.useCallback(() => null != t ? (0, i.jsx)(r.A, {
         emojiId: t.id,
         emojiName: t.name,
         animated: !!t.animated
     }) : null != g ? (0, i.jsx)(A.A, {
-        className: _.Kk,
+        className: p.Kk,
         userId: d.default.getId(),
         size: 20,
         hangStatusActivity: {
@@ -39,8 +39,8 @@ function g(e) {
         },
         fallbackVariant: x
     }) : null, [t, x, g]);
-    return (0, i.jsx)(r.YNO, {
-        targetElementRef: C,
+    return (0, i.jsx)(a.YNO, {
+        targetElementRef: E,
         onRequestOpen: () => f(!0),
         onRequestClose: () => f(!1),
         renderPopout: e => {
@@ -48,8 +48,8 @@ function g(e) {
                 closePopout: t
             } = e;
             return (0, i.jsx)(c.A, {
-                channel: E,
-                guildId: E?.guild_id ?? void 0,
+                channel: C,
+                guildId: C?.guild_id ?? void 0,
                 closePopout: t,
                 onSelectEmoji: e => {
                     let {
@@ -66,11 +66,11 @@ function g(e) {
                         animated: !1
                     }), s && t()
                 },
-                pickerIntention: p.b_.STATUS
+                pickerIntention: _.b_.STATUS
             })
         },
         position: "left",
-        animation: r.YNO.Animation.NONE,
+        animation: a.YNO.Animation.NONE,
         align: "top",
         children: (e, n) => {
             let {
@@ -78,7 +78,7 @@ function g(e) {
             } = n;
             return (0, i.jsx)(o.A, {
                 ...e,
-                ref: C,
+                ref: E,
                 active: s,
                 tabIndex: 0,
                 renderButtonContents: null == t && null == g ? null : I

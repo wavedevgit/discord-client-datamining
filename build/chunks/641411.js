@@ -1,13 +1,13 @@
 /** chunk id: 641411 params = (module,exports,require) **/
 i.d(t, {
-    A: () => a
+    A: () => s
 });
 var n = i(311907),
     l = i(662427),
-    s = i(985018);
-let a = {
-    title: () => s.intl.string(s.t["KzCF/6"]),
-    description: () => s.intl.string(s.t["1ScBC+"]),
+    a = i(985018);
+let s = {
+    title: () => a.intl.string(a.t["KzCF/6"]),
+    description: () => a.intl.string(a.t["1ScBC+"]),
     canCreateGuild: !1,
     useIsGuildSupported: () => (0, n.bG)([l.A], () => e => l.A.getEligibleGuildsForNagActivate().includes(e.id), [])
 }

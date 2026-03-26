@@ -1,12 +1,12 @@
 /** chunk id: 743674 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    S: () => a
+    S: () => r
 });
 var i = n(64700),
     s = n(998304),
     l = n(515718);
-async function r(e) {
+async function a(e) {
     return (await new Promise((t, n) => {
         let i = new Image;
         i.crossOrigin = "Anonymous", i.onerror = e => {
@@ -20,9 +20,9 @@ async function r(e) {
     })
 }
 
-function a(e) {
+function r(e) {
     let [t, n] = i.useState(), s = i.useRef(!1);
-    return null == e || null != t || s.current || (s.current = !0, r(e).then(e => {
+    return null == e || null != t || s.current || (s.current = !0, a(e).then(e => {
         n(e[0])
     })), t
 }

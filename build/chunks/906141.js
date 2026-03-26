@@ -1,13 +1,13 @@
 /** chunk id: 906141 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => w
+    A: () => k
 });
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(397927),
     c = n(33358),
     d = n(384231),
@@ -15,13 +15,13 @@ var i = n(627968),
     h = n(704413),
     A = n(9842),
     m = n(253932),
-    p = n(734057),
-    _ = n(994500),
+    _ = n(734057),
+    p = n(994500),
     g = n(661191),
     f = n(988012),
     x = n(141468),
-    C = n(694318),
-    E = n(143413),
+    E = n(694318),
+    C = n(143413),
     I = n(763754),
     N = n(467073),
     b = n(491182),
@@ -38,22 +38,22 @@ var i = n(627968),
     G = n(652215),
     U = n(985018),
     P = n(213607),
-    k = n(480972);
-let w = s.memo(function e(t) {
+    w = n(480972);
+let k = s.memo(function e(t) {
     let n, {
             channel: s,
             message: l,
             compact: o = !1,
             className: D,
             onContextMenu: P,
-            onClick: w,
+            onClick: k,
             disableInteraction: B = !1,
             hasThread: H,
             treatSpam: F
         } = t,
         K = G.sl8.has(l.type) ? l.messageReference : void 0,
-        W = (0, a.bG)([A.A], () => A.A.getMessageByReference(K)),
-        Y = (0, a.bG)([p.A], () => l.type === G.lAJ.THREAD_STARTER_MESSAGE && W.state === A.a.LOADED ? p.A.getChannel(W.message.channel_id) : null),
+        W = (0, r.bG)([A.A], () => A.A.getMessageByReference(K)),
+        Y = (0, r.bG)([_.A], () => l.type === G.lAJ.THREAD_STARTER_MESSAGE && W.state === A.a.LOADED ? _.A.getChannel(W.message.channel_id) : null),
         z = m.X6.useSetting(),
         q = m.hD.useSetting(),
         X = m.rs.useSetting(),
@@ -75,13 +75,13 @@ let w = s.memo(function e(t) {
             previewLinkTarget: !0
         }),
         ei = (0, I.Ay)(l),
-        es = (0, a.bG)([p.A], () => l.hasFlag(G.pr7.HAS_THREAD) && p.A.getChannel(g.default.castMessageIdAsChannelId(l.id))),
+        es = (0, r.bG)([_.A], () => l.hasFlag(G.pr7.HAS_THREAD) && _.A.getChannel(g.default.castMessageIdAsChannelId(l.id))),
         el = l.type === G.lAJ.THREAD_STARTER_MESSAGE && W.state === A.a.LOADED && null != Y,
-        er = !el && void 0 === n,
-        ea = (0, y.A)({
+        ea = !el && void 0 === n,
+        er = (0, y.A)({
             message: l,
             channel: s,
-            enabled: er
+            enabled: ea
         }),
         eo = (0, c.P)(l),
         ec = (0, f._f)(l.id, l.channel_id),
@@ -92,17 +92,17 @@ let w = s.memo(function e(t) {
         message: W.message,
         channel: Y,
         hasThread: !1
-    }) : (_.A.isBlockedForMessage(l) ? n = U.t["+FcYM/"] : _.A.isIgnoredForMessage(l) ? n = U.t["VFWjc+"] : (0, C.kf)(l) && F && (n = U.t.xfkfTK), void 0 !== n) ? (0, i.jsx)(V, {
+    }) : (p.A.isBlockedForMessage(l) ? n = U.t["+FcYM/"] : p.A.isIgnoredForMessage(l) ? n = U.t["VFWjc+"] : (0, E.kf)(l) && F && (n = U.t.xfkfTK), void 0 !== n) ? (0, i.jsx)(V, {
         className: D,
         compact: o,
         count: 1,
         collapsedReason: n
     }) : (0, i.jsx)(b.A, {
         compact: o,
-        className: r()(D, {
-            [k.M1]: (0, x.ec)(l),
-            [k.XN]: B,
-            [k._A]: t.isGroupStart
+        className: a()(D, {
+            [w.M1]: (0, x.ec)(l),
+            [w.XN]: B,
+            [w._A]: t.isGroupStart
         }),
         childrenRepliedMessage: (0, M.A)(l, s, K, W, o),
         childrenHeader: (0, R.A)({
@@ -138,11 +138,11 @@ let w = s.memo(function e(t) {
         childrenMessageContent: (0, j.A)(t, ee),
         childrenSystemMessage: (0, O.A)(t),
         onContextMenu: P,
-        onClick: w,
+        onClick: k,
         hasThread: !1 !== H && null != es && l.hasFlag(G.pr7.HAS_THREAD),
         hasReply: l.type === G.lAJ.REPLY,
-        isSystemMessage: (0, E.A)(l),
-        messageRef: ea,
+        isSystemMessage: (0, C.A)(l),
+        messageRef: er,
         author: ei,
         "aria-labelledby": eu,
         "aria-roledescription": U.intl.string(U.t.BAB0yK)

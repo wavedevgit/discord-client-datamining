@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(571356),
     c = n(990078),
     d = n(397927),
@@ -15,13 +15,13 @@ var i = n(627968),
     h = n(475743),
     A = n(775602),
     m = n(58149),
-    p = n(587837),
-    _ = n(473553),
+    _ = n(587837),
+    p = n(473553),
     g = n(964404),
     f = n(709562),
     x = n(383831),
-    C = n(128286),
-    E = n(734057),
+    E = n(128286),
+    C = n(734057),
     I = n(696451),
     N = n(309010),
     b = n(287809),
@@ -38,15 +38,15 @@ var i = n(627968),
     G = n(47294),
     U = n(594007),
     P = n(16961),
-    k = n(716730),
-    w = n(5867),
+    w = n(716730),
+    k = n(5867),
     V = n(652215),
     B = n(985018),
     H = n(513336);
 let F = D.DN.SIZE_32,
     K = {
-        [w.E8.NO_CHAT]: H.Oo,
-        [w.E8.RESIZABLE]: H.Ig
+        [k.E8.NO_CHAT]: H.Oo,
+        [k.E8.RESIZABLE]: H.Ig
     };
 
 function W(e) {
@@ -54,54 +54,54 @@ function W(e) {
         maxHeight: t,
         connectedLocation: n,
         renderExternalHeader: l
-    } = e, W = (0, L.A)(), Y = (0, a.yK)([y.Ay], () => y.Ay.getEmbeddedActivitiesForLocation(n), [n]), z = (0, O.H)(n), q = (0, a.bG)([E.A], () => E.A.getChannel(z)), X = (0, j.IQ)(Y), J = (0, j.Rz)(X), Q = s.useCallback(() => {
-        (0, v.gk)(w.Gd.PIP)
-    }, []), $ = s.useRef(null), Z = (0, a.bG)([y.Ay], () => y.Ay.getFocusedLayout()), ee = Z !== w.E8.NO_CHAT, [et, en] = s.useState(g.Ay.activityPanelHeight ?? t ?? null), ei = s.useCallback(e => {
+    } = e, W = (0, L.A)(), Y = (0, r.yK)([y.Ay], () => y.Ay.getEmbeddedActivitiesForLocation(n), [n]), z = (0, O.H)(n), q = (0, r.bG)([C.A], () => C.A.getChannel(z)), X = (0, j.IQ)(Y), J = (0, j.Rz)(X), Q = s.useCallback(() => {
+        (0, v.gk)(k.Gd.PIP)
+    }, []), $ = s.useRef(null), Z = (0, r.bG)([y.Ay], () => y.Ay.getFocusedLayout()), ee = Z !== k.E8.NO_CHAT, [et, en] = s.useState(g.Ay.activityPanelHeight ?? t ?? null), ei = s.useCallback(e => {
         u.Ay.updatedUnsyncedSettings({
             activityPanelHeight: e
         })
-    }, []), es = s.useRef(null), [el, er] = s.useState({
+    }, []), es = s.useRef(null), [el, ea] = s.useState({
         width: 0,
         height: 0
     });
     s.useLayoutEffect(() => {
         if (null == es.current) return;
         let e = new ResizeObserver(() => {
-            er({
+            ea({
                 width: es.current?.clientWidth ?? 0,
                 height: es.current?.clientHeight ?? 0
             })
         });
         return e.observe(es.current), () => e.disconnect()
     }, []);
-    let ea = el.width / Math.max(el.height, 1) < w.B5,
+    let er = el.width / Math.max(el.height, 1) < k.B5,
         eo = 0,
         ec = 0,
         ed = (0, R.A)(W?.id);
     if (!ed) {
         let e = el.width,
             t = el.height;
-        ea ? ((t = el.width / w.B5) > el.height && (e = (t = el.height) * w.B5), ec = (el.height - t) / 2) : ((e = Math.min(el.height * w.B5)) > el.width && (t = (e = el.width) / w.B5), eo = (el.width - e) / 2)
+        er ? ((t = el.width / k.B5) > el.height && (e = (t = el.height) * k.B5), ec = (el.height - t) / 2) : ((e = Math.min(el.height * k.B5)) > el.width && (t = (e = el.width) / k.B5), eo = (el.width - e) / 2)
     }
     let eu = J.get(W?.id ?? ""),
-        eh = (0, a.bG)([N.A], () => N.A.getChannelId()),
-        eA = (0, a.yK)([I.Ay], () => null == q ? [] : Array.from(eu?.embeddedActivity.userIds ?? []).map(e => I.Ay.getMember(q.guild_id, e)), [eu, q]),
+        eh = (0, r.bG)([N.A], () => N.A.getChannelId()),
+        eA = (0, r.yK)([I.Ay], () => null == q ? [] : Array.from(eu?.embeddedActivity.userIds ?? []).map(e => I.Ay.getMember(q.guild_id, e)), [eu, q]),
         em = s.useMemo(() => {
             let e = new Map;
             return eA.forEach(t => {
                 null != t && void 0 !== t && e.set(t.userId, t)
             }), e
         }, [eA]),
-        ep = function(e, t, n) {
+        e_ = function(e, t, n) {
             let i = (0, h.A)(e),
                 l = e !== i,
-                [r, a] = s.useState(!1);
+                [a, r] = s.useState(!1);
             s.useEffect(() => {
-                a(!0);
-                let e = setTimeout(() => a(!1), 50);
+                r(!0);
+                let e = setTimeout(() => r(!1), 50);
                 return () => clearTimeout(e)
             }, [e]);
-            let o = !A.A.useReducedMotion && (l || r);
+            let o = !A.A.useReducedMotion && (l || a);
             return s.useMemo(() => {
                 let i = o ? {
                     transitionProperty: "height, max-height",
@@ -116,7 +116,7 @@ function W(e) {
                 } : i
             }, [o, e, n, t])
         }(ee, et, t),
-        e_ = (0, P.G)();
+        ep = (0, P.G)();
     if (null == W) return null;
     let eg = [];
     null != eu && (eg = Array.from(eu.embeddedActivity.userIds).map(e => b.default.getUser(e)).filter(e => null != e && void 0 !== e));
@@ -138,10 +138,10 @@ function W(e) {
     return (0, i.jsx)(d.NPJ, {
         theme: V.NJ8.DARK,
         children: e => (0, i.jsxs)("div", {
-            className: r()(H.iE, K[Z], e),
+            className: a()(H.iE, K[Z], e),
             ref: $,
-            style: ep,
-            children: [l?.(), (0, i.jsx)(_.A, {
+            style: e_,
+            children: [l?.(), (0, i.jsx)(p.A, {
                 applicationId: W.id
             }), (0, i.jsxs)("div", {
                 className: H.lq,
@@ -154,7 +154,7 @@ function W(e) {
                         children: W?.name
                     })
                 }), (0, i.jsx)("div", {
-                    className: r()(H.ht, {
+                    className: a()(H.ht, {
                         [H.kK]: ed
                     }),
                     style: {
@@ -180,7 +180,7 @@ function W(e) {
                         className: H.Hq,
                         children: [(0, i.jsxs)("div", {
                             className: H.qi,
-                            children: [(0, i.jsx)(k.A, {
+                            children: [(0, i.jsx)(w.A, {
                                 channelId: eh
                             }), (0, i.jsx)(f.l, {
                                 isTrayButton: !0,
@@ -198,7 +198,7 @@ function W(e) {
                                 color: "disconnect"
                             })
                         })]
-                    }), e_ ? (0, i.jsx)(C.A, {
+                    }), ep ? (0, i.jsx)(E.A, {
                         popoutOpen: !1,
                         onOpenPopout: () => {
                             (0, m.zV)(V.HAw.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, G.A)({
@@ -210,7 +210,7 @@ function W(e) {
                         onClosePopout: () => {}
                     }) : null]
                 }) : null]
-            }), ee && null != t ? (0, i.jsx)(p.A, {
+            }), ee && null != t ? (0, i.jsx)(_.A, {
                 minHeight: 480,
                 maxHeight: t,
                 resizableNode: $,

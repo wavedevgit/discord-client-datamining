@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(735438),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(397927),
     c = n(182061),
     d = n(886393),
@@ -15,13 +15,13 @@ var i = n(627968),
     h = n(660273),
     A = n(40389),
     m = n(707792),
-    p = n(41402),
-    _ = n(271456),
+    _ = n(41402),
+    p = n(271456),
     g = n(200273),
     f = n(565846),
     x = n(707653),
-    C = n(50268),
-    E = n(58736),
+    E = n(50268),
+    C = n(58736),
     I = n(253932),
     N = n(977997),
     b = n(747926),
@@ -30,14 +30,14 @@ var i = n(627968),
 function T(e) {
     let {
         channel: t
-    } = e, [n, l] = s.useState(!1), r = s.useRef(null);
+    } = e, [n, l] = s.useState(!1), a = s.useRef(null);
 
-    function a() {
+    function r() {
         l(e => !e)
     }
     let c = S.intl.string(S.t["UKOtz+"]);
     return (0, i.jsx)(o.YNO, {
-        targetElementRef: r,
+        targetElementRef: a,
         shouldShow: n,
         animation: o.YNO.Animation.NONE,
         position: "bottom",
@@ -54,10 +54,10 @@ function T(e) {
             let {
                 isShown: n
             } = t;
-            return (0, i.jsx)(E.Ay.Icon, {
+            return (0, i.jsx)(C.Ay.Icon, {
                 ...e,
-                ref: r,
-                onClick: a,
+                ref: a,
+                onClick: r,
                 tooltip: n ? null : c,
                 icon: o.jNK,
                 "aria-label": c,
@@ -72,10 +72,10 @@ function v(e) {
         channel: t,
         closePopout: n,
         onSelect: s
-    } = e, l = (0, c.A)(t), E = (0, m.A)(t), T = (0, f.A)(t.id), v = (0, g.A)(t), y = (0, C.A)({
+    } = e, l = (0, c.A)(t), C = (0, m.A)(t), T = (0, f.A)(t.id), v = (0, g.A)(t), y = (0, E.A)({
         id: t.id,
         label: S.intl.string(S.t.DQ797g)
-    }), j = (0, d.A)(t), R = (0, u.A)(t), O = (0, h.A)(t, "Toolbar Overflow"), L = (0, p.A)(t), M = (0, A.A)(t), D = (0, x.A)(t), G = (0, _.A)(t), U = I.SY.useSetting(), P = (0, a.bG)([N.A], () => !r().isEmpty(N.A.getVoiceStatesForChannel(t.id)));
+    }), j = (0, d.A)(t), R = (0, u.A)(t), O = (0, h.A)(t, "Toolbar Overflow"), L = (0, _.A)(t), M = (0, A.A)(t), D = (0, x.A)(t), G = (0, p.A)(t), U = I.SY.useSetting(), P = (0, r.bG)([N.A], () => !a().isEmpty(N.A.getVoiceStatesForChannel(t.id)));
     return (0, i.jsxs)(o.W1t, {
         "data-menu-migrated": !0,
         navId: "thread-context",
@@ -93,7 +93,7 @@ function v(e) {
                 }
             }) : null, G]
         }), (0, i.jsxs)(o.rXV, {
-            children: [D, l, E, R]
+            children: [D, l, C, R]
         }), (0, i.jsxs)(o.rXV, {
             children: [j, y]
         })]

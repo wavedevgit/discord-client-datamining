@@ -6,25 +6,25 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(607470),
-    r = n(522435);
+    a = n(522435);
 n(131955);
-var a = n(708072);
+var r = n(708072);
 
 function o(e) {
     let {
         src: t,
         className: n,
-        autoPlayOnMount: r
+        autoPlayOnMount: a
     } = e, o = s.useRef(null), c = s.useRef(!1), [d, u] = s.useState(!1);
     s.useEffect(() => {
-        if (!r) return;
+        if (!a) return;
         let e = o.current;
         if (null != e) return c.current = !1, e.addEventListener("canplay", t), e.readyState >= HTMLMediaElement.HAVE_ENOUGH_DATA && t(), () => e.removeEventListener("canplay", t);
 
         function t() {
             c.current || null == e || (c.current = !0, e.play())
         }
-    }, [t, r]);
+    }, [t, a]);
     let h = s.useCallback(() => {
             let e = o.current;
             null != e && (e.currentTime = 0, u(!0), e.play())
@@ -34,7 +34,7 @@ function o(e) {
             null != e && (u(!1), e.pause())
         }, []);
     return (0, i.jsx)("div", {
-        className: a.j,
+        className: r.j,
         onMouseEnter: h,
         onMouseLeave: A,
         children: (0, i.jsx)(l.A, {
@@ -53,16 +53,16 @@ function c(e) {
         animatedSrc: t,
         staticSrc: n,
         className: l,
-        autoPlayOnMount: r,
-        animationDurationMs: a = 4e3
-    } = e, [o, c] = s.useState(() => r), d = s.useRef(!r);
+        autoPlayOnMount: a,
+        animationDurationMs: r = 4e3
+    } = e, [o, c] = s.useState(() => a), d = s.useRef(!a);
     s.useEffect(() => {
-        if (!r) return;
+        if (!a) return;
         let e = setTimeout(() => {
             d.current = !0, c(!1)
-        }, a);
+        }, r);
         return () => clearTimeout(e)
-    }, [t, r, a]);
+    }, [t, a, r]);
     let u = s.useCallback(() => {
             c(!0)
         }, []),
@@ -85,7 +85,7 @@ function d(e) {
         className: s,
         autoPlayOnMount: l = !0
     } = e;
-    return (0, r.LG)(t) ? (0, i.jsx)(o, {
+    return (0, a.LG)(t) ? (0, i.jsx)(o, {
         src: t,
         className: s,
         autoPlayOnMount: l

@@ -9,7 +9,7 @@ var t = s(64700),
 let n = /^[a-z0-9_+\-.#]+$/,
     c = Promise.resolve(null),
     u = new Map,
-    p = {
+    i = {
         h: "cpp",
         hpp: "cpp",
         cc: "cpp",
@@ -64,17 +64,17 @@ let n = /^[a-z0-9_+\-.#]+$/,
         v: "verilog",
         sv: "verilog"
     },
-    i = new Set((0, r.hK)());
+    p = new Set((0, r.hK)());
 
 function a(e) {
     if (null == e) return;
     let l = e.toLowerCase();
     if (!n.test(l)) return;
-    if (i.has(l)) return l;
+    if (p.has(l)) return l;
     let s = (0, r.Op)(l);
-    if (i.has(s)) return s;
-    let t = p[l];
-    if (null != t && i.has(t)) return t
+    if (p.has(s)) return s;
+    let t = i[l];
+    if (null != t && p.has(t)) return t
 }
 
 function h(e, l) {
@@ -83,14 +83,18 @@ function h(e, l) {
             let l = u.get(e);
             return null == l && (l = (0, r.oS)(e), u.set(e, l)), l
         }(e)),
-        n = t.useMemo(() => (function(e) {
-            for (let l of e.split("\n"))
-                if (l.length > 1e3) return !1;
-            return !0
-        })(l) && null != s ? s.highlight(l) : null, [s, l]);
+        n = t.useMemo(() => {
+            if (! function(e) {
+                    for (let l of e.split("\n"))
+                        if (l.length > 1e3) return !1;
+                    return !0
+                }(l) || null == s) return null;
+            let e = l.endsWith("\n") ? l : l + "\n";
+            return s.highlight(e)
+        }, [s, l]);
     return "string" == typeof n || null == n ? n : t.use(n)
 }
-i.add("ansi");
+p.add("ansi");
 let o = null;
 
 function m(e) {

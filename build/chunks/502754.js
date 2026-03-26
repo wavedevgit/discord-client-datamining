@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(989349),
-    r = n.n(l),
-    a = n(837381),
+    a = n.n(l),
+    r = n(837381),
     o = n(397927),
     c = n(559149),
     d = n(857069),
@@ -15,29 +15,29 @@ var i = n(627968),
     h = n(813516),
     A = n(906141),
     m = n(253932),
-    p = n(961350),
-    _ = n(287809),
+    _ = n(961350),
+    p = n(287809),
     g = n(405269),
     f = n(576456),
     x = n(712209),
-    C = n(652215),
-    E = n(985018),
+    E = n(652215),
+    C = n(985018),
     I = n(915613);
 let N = {
         left: 4,
         right: -12
     },
-    b = [C.lAJ.THREAD_CREATED];
+    b = [E.lAJ.THREAD_CREATED];
 
 function S(e) {
     let {
         channel: t,
         message: n,
         compact: l,
-        isGroupStart: r,
+        isGroupStart: a,
         treatSpam: c,
         gotoChannel: d
-    } = e, u = (0, a.rm)(n.id ?? ""), h = s.useCallback(e => {
+    } = e, u = (0, r.rm)(n.id ?? ""), h = s.useCallback(e => {
         "ArrowLeft" === e.key && document.querySelector(`[data-recents-channel="${t.id}"]`)?.focus()
     }, [t.id]), m = b.includes(n.type);
     return (0, i.jsx)(o.vN3, {
@@ -56,7 +56,7 @@ function S(e) {
                 className: I.iU,
                 compact: l,
                 animateAvatar: !1,
-                isGroupStart: r,
+                isGroupStart: a,
                 onKeyDown: h,
                 treatSpam: c
             })]
@@ -75,7 +75,7 @@ function T(e) {
         location: "20e3b0_1"
     }, {
         autoTrackExposure: !1
-    }), a = m.hH.useSetting(), A = (0, u.iJ)(n), f = !1, N = 0 === t.messages.length || r()(t.messages[0].timestamp).isSame(r()(), "day"), b = _.default.getUser(p.default.getId())?.hasFlag(C.nhx.SPAMMER) ?? !1, T = [];
+    }), r = m.hH.useSetting(), A = (0, u.iJ)(n), f = !1, N = 0 === t.messages.length || a()(t.messages[0].timestamp).isSame(a()(), "day"), b = p.default.getUser(_.default.getId())?.hasFlag(E.nhx.SPAMMER) ?? !1, T = [];
     if (!t.collapsed) {
         let e = null,
             c = null,
@@ -86,13 +86,13 @@ function T(e) {
                 T.push((0, i.jsx)(h.A, {
                     className: I.yF,
                     children: n
-                }, n)), e = r()(t.timestamp)
+                }, n)), e = a()(t.timestamp)
             }
             let o = null == c || (0, d.A)(n, c, t);
             c = t, f = f || (0, u.kf)(t), T.push((0, i.jsx)(S, {
                 channel: n,
                 message: t,
-                compact: a,
+                compact: r,
                 isGroupStart: o,
                 treatSpam: !b && l && (0, u.kf)(t) && A,
                 gotoChannel: s
@@ -101,7 +101,7 @@ function T(e) {
             className: I.Gr,
             children: (0, i.jsx)(o.QWc, {
                 variant: "primary",
-                text: `${E.intl.string(E.t["9OB9hq"])} \u203A`,
+                text: `${C.intl.string(C.t["9OB9hq"])} \u203A`,
                 onClick: e => s(e, m[m.length - 1].id)
             })
         }, "view-all")), 0 === T.length && (T = [(0, i.jsx)(o.y$y, {}, "spinner")])

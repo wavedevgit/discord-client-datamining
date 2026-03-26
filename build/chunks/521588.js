@@ -1,19 +1,19 @@
 /** chunk id: 521588 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    a: () => a
+    a: () => r
 });
 var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    r = n(811505);
-let a = e => {
+    a = n(811505);
+let r = e => {
     let {
         left: t,
         top: n = 0,
         right: s = 0,
-        bottom: a,
+        bottom: r,
         size: o = 8,
         alert: c = !1,
         showBlurpleTreatment: d = !1,
@@ -21,13 +21,13 @@ let a = e => {
         additionalStyles: h
     } = e;
     return (0, i.jsx)("span", {
-        className: l()(r.Om, {
-            [r.xE]: c,
-            [r.nB]: d,
-            [r.GS]: 0 === u,
-            [r.Pn]: 1 === u,
-            [r.HP]: 2 === u,
-            [r.gl]: 3 === u,
+        className: l()(a.Om, {
+            [a.xE]: c,
+            [a.nB]: d,
+            [a.GS]: 0 === u,
+            [a.Pn]: 1 === u,
+            [a.HP]: 2 === u,
+            [a.gl]: 3 === u,
             [h ?? ""]: void 0 !== h
         }),
         style: {
@@ -36,7 +36,7 @@ let a = e => {
             left: t,
             top: n,
             right: s,
-            bottom: a
+            bottom: r
         }
     })
 }

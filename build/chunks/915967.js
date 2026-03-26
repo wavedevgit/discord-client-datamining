@@ -98,7 +98,7 @@ let Y = {
     [B.IWg.JUMP_TO_GUILD]: A.J,
     [B.IWg.SUBMIT]: m.X,
     [B.IWg.TEXTAREA_FOCUS]: f.c,
-    [B.IWg.MARK_CHANNEL_READ]: E.D,
+    [B.IWg.MARK_CHANNEL_READ]: E.Df,
     [B.IWg.MARK_SERVER_READ]: _.P,
     [B.IWg.TOGGLE_CHANNEL_PINS]: U.O,
     [B.IWg.TOGGLE_FOR_LATER]: D.K,

@@ -6,57 +6,57 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(118019),
-    a = n(383501),
+    a = n(118019),
+    r = n(383501),
     o = n(728458),
     c = n(38050),
     d = n(998740),
     u = n(572808),
     h = n(241080);
 let A = () => {
-    let e = (0, l.bG)([a.A], () => a.A.getChannelId()),
+    let e = (0, l.bG)([r.A], () => r.A.getChannelId()),
         t = (0, l.bG)([d.A], () => null != e && d.A.isUserConnected(e)),
         n = (0, c.n)(e => e.genre),
         A = (0, c.n)(e => e.songIndex),
         m = (0, c.n)(e => e.playRadio),
-        p = (0, c.n)(e => e.globalMute),
-        _ = (0, c.n)(e => e.playNextSong),
+        _ = (0, c.n)(e => e.globalMute),
+        p = (0, c.n)(e => e.playNextSong),
         g = (0, c.n)(e => e.volumes),
         f = s.useRef(null),
         x = s.useRef(null),
-        C = s.useRef(null),
-        E = (0, h.A)(n, A),
+        E = s.useRef(null),
+        C = (0, h.A)(n, A),
         I = (0, l.bG)([d.A], () => d.A.assets);
     return (s.useEffect(() => {
         let e = f.current;
-        null != e && E?.src != null && (e.pause(), e.src = E.src, !p && m && t && e.play()?.catch(e => {
+        null != e && C?.src != null && (e.pause(), e.src = C.src, !_ && m && t && e.play()?.catch(e => {
             o.A.captureException(e)
         }))
-    }, [E?.src, p, m, t]), s.useEffect(() => {
+    }, [C?.src, _, m, t]), s.useEffect(() => {
         let e = x.current,
-            n = C.current;
-        null != e && (p || !t ? e.pause() : e.play()?.catch(e => {
+            n = E.current;
+        null != e && (_ || !t ? e.pause() : e.play()?.catch(e => {
             o.A.captureException(e)
-        })), null != n && (p || !t ? n.pause() : n.play()?.catch(e => {
+        })), null != n && (_ || !t ? n.pause() : n.play()?.catch(e => {
             o.A.captureException(e)
         }))
-    }, [p, t]), t) ? (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(r.A, {
+    }, [_, t]), t) ? (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(a.A, {
             ref: f,
-            onEnded: _,
-            volume: p ? 0 : g.radio,
+            onEnded: p,
+            volume: _ ? 0 : g.radio,
             children: (0, i.jsx)("source", {
-                src: E?.src
+                src: C?.src
             })
-        }), (0, i.jsx)(r.A, {
+        }), (0, i.jsx)(a.A, {
             ref: x,
-            volume: p ? 0 : g.environment,
+            volume: _ ? 0 : g.environment,
             children: (0, i.jsx)("source", {
                 src: I?.sounds?.[u.qi.ENVIRONMENT]
             })
-        }), (0, i.jsx)(r.A, {
-            ref: C,
-            volume: p ? 0 : g.campfire,
+        }), (0, i.jsx)(a.A, {
+            ref: E,
+            volume: _ ? 0 : g.campfire,
             children: (0, i.jsx)("source", {
                 src: I?.sounds?.[u.qi.CAMPFIRE]
             })

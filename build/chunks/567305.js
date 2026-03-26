@@ -1,90 +1,23 @@
-/** chunk id: 567305, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    D3: () => p,
-    DN: () => s,
-    HT: () => a,
-    OV: () => o,
-    TG: () => u,
-    Xi: () => f,
+/** chunk id: 567305 params = (module,exports,require) **/
+r.d(t, {
+    TG: () => o,
     _Y: () => d,
-    a0: () => _,
-    hA: () => c
-}), n(469993);
-var r = n(175650),
-    i = n(652215);
-
-function a(e) {
-    return !0
-}
+    hA: () => s
+});
+var n = r(417597),
+    i = r(71393),
+    l = r(652215);
+let a = [l.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED, l.GuildFeatures.CREATOR_MONETIZABLE, l.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL],
+    s = e => null != e && a.some(t => e.features.has(t));
 
 function o(e) {
-    return !0
-}
-
-function s(e) {
-    return r.rh.useExperiment({
-        guildId: null != e ? e : i.dJq,
-        location: "504714_7"
-    })
-}
-let l = [i.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED, i.GuildFeatures.CREATOR_MONETIZABLE, i.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL],
-    c = e => null != e && l.some(t => e.features.has(t));
-
-function u(e) {
-    let {
-        enabled: t
-    } = r.ok.getCurrentConfig({
-        guildId: null != e ? e : i.dJq,
-        location: "504714_9"
-    }, {
-        autoTrackExposure: !1
-    });
-    return t
+    let t = i.A.getGuild(e);
+    return t?.features.has(l.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED) ?? !1
 }
 
 function d(e) {
-    let {
-        enabled: t
-    } = r.ok.useExperiment({
-        guildId: null != e ? e : i.dJq,
-        location: "504714_10"
-    }, {
-        autoTrackExposure: !1
-    });
-    return t
-}
-
-function f(e) {
-    let {
-        showCreatorPortalLink: t
-    } = r.ok.useExperiment({
-        guildId: null != e ? e : i.dJq,
-        location: "504714_11"
-    }, {
-        autoTrackExposure: !1
-    });
-    return t
-}
-
-function p() {
-    let {
-        enabled: e
-    } = r.LD.getCurrentConfig({
-        location: "504714_12"
-    }, {
-        autoTrackExposure: !1
-    });
-    return e
-}
-
-function _() {
-    let {
-        enabled: e
-    } = r.LD.useExperiment({
-        location: "504714_13"
-    }, {
-        autoTrackExposure: !1
-    });
-    return e
+    return (0, n.bG)([i.A], () => {
+        let t = i.A.getGuild(e);
+        return t?.features.has(l.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED) ?? !1
+    })
 }

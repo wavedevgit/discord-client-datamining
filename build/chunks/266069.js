@@ -1,13 +1,13 @@
 /** chunk id: 266069 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    u: () => p
+    u: () => _
 });
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(827734),
     c = n(435371),
     d = n(397927),
@@ -16,16 +16,16 @@ var i = n(627968),
     A = n(661720),
     m = n(945375);
 
-function p(e) {
+function _(e) {
     let {
         label: t,
         icon: n,
         setStatus: l,
-        isFavorited: p,
-        onFavoriteClick: _
-    } = e, [g, f] = s.useState(!1), x = (0, a.bG)([u.A], () => u.A.getFavoritedStatuses().length >= u.x), C = null != _, E = s.useCallback(e => {
-        e.stopPropagation(), _?.()
-    }, [_]), I = p ? d.Gg5 : d.yA2;
+        isFavorited: _,
+        onFavoriteClick: p
+    } = e, [g, f] = s.useState(!1), x = (0, r.bG)([u.A], () => u.A.getFavoritedStatuses().length >= u.x), E = null != p, C = s.useCallback(e => {
+        e.stopPropagation(), p?.()
+    }, [p]), I = _ ? d.Gg5 : d.yA2;
     return (0, i.jsxs)(d.DUT, {
         onClick: l,
         onMouseEnter: () => {
@@ -34,7 +34,7 @@ function p(e) {
         onMouseLeave: () => {
             f(!1)
         },
-        className: r()(m.item, m.labelContainer, A.kL),
+        className: a()(m.item, m.labelContainer, A.kL),
         children: [(0, i.jsx)("div", {
             className: A.P0,
             children: n
@@ -42,14 +42,14 @@ function p(e) {
             variant: "text-md/normal",
             className: A.rv,
             children: t
-        }), g && C && (0, i.jsx)(c.m_, {
-            text: x && !p ? h.intl.string(h.t.YSDH9n) : void 0,
+        }), g && E && (0, i.jsx)(c.m_, {
+            text: x && !_ ? h.intl.string(h.t.YSDH9n) : void 0,
             children: (0, i.jsx)(d.DUT, {
-                className: r()(A.ff, A.wB),
-                onClick: E,
+                className: a()(A.ff, A.wB),
+                onClick: C,
                 children: (0, i.jsx)(I, {
                     className: A.ut,
-                    color: p ? o.A.colors.ICON_FEEDBACK_WARNING : "currentColor"
+                    color: _ ? o.A.colors.ICON_FEEDBACK_WARNING : "currentColor"
                 })
             })
         })]

@@ -7,8 +7,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(735438),
+    a = n.n(l),
+    r = n(735438),
     o = n(4208),
     c = n(311907),
     d = n(397927),
@@ -16,13 +16,13 @@ var i = n(627968),
     h = n(367513),
     A = n(843472),
     m = n(386467),
-    p = n(465364),
-    _ = n(763754),
+    _ = n(465364),
+    p = n(763754),
     g = n(448368),
     f = n(378058),
     x = n(148355),
-    C = n(320501),
-    E = n(994500),
+    E = n(320501),
+    C = n(994500),
     I = n(486020),
     N = n(927813),
     b = n(403362),
@@ -37,16 +37,16 @@ function j(e) {
     } = e, {
         isBlocked: n,
         isIgnored: l
-    } = (0, c.cf)([E.A], () => ({
-        isBlocked: E.A.isBlockedForMessage(t),
-        isIgnored: E.A.isIgnoredForMessage(t)
-    }), [t]), a = (0, _.X4)(t), o = s.useContext(m.A), [u, C] = s.useState(!1), N = s.useCallback(e => {
+    } = (0, c.cf)([C.A], () => ({
+        isBlocked: C.A.isBlockedForMessage(t),
+        isIgnored: C.A.isIgnoredForMessage(t)
+    }), [t]), r = (0, p.X4)(t), o = s.useContext(m.A), [u, E] = s.useState(!1), N = s.useCallback(e => {
         "A" !== e.target.nodeName && (h.A.updateChatOpen(t.channel_id, !0), A.A.jumpToMessage({
             channelId: t.channel_id,
             messageId: t.id,
             flash: !0
         }))
-    }, [t.channel_id, t.id]), b = null != t.content && "" !== t.content ? (0, p.Ay)(t, {
+    }, [t.channel_id, t.id]), b = null != t.content && "" !== t.content ? (0, _.Ay)(t, {
         isInteracting: u
     }).content : null, {
         contentPlaceholder: S,
@@ -66,14 +66,14 @@ function j(e) {
     return (0, i.jsxs)(d.DUT, {
         className: v.oR,
         onMouseEnter: () => {
-            C(!0)
+            E(!0)
         },
         onMouseLeave: () => {
-            C(!1)
+            E(!1)
         },
         onClick: N,
         children: [(0, i.jsxs)("div", {
-            className: r()(v.kn, {
+            className: a()(v.kn, {
                 [v.mK]: t.mentioned
             }),
             children: [null != L ? null : R, y ?? L ?? (0, i.jsx)("span", {
@@ -81,10 +81,10 @@ function j(e) {
             }), null != L ? null : j]
         }), (0, i.jsx)("img", {
             alt: "",
-            src: a?.guildMemberAvatar != null && null != o ? (0, I.s7)({
+            src: r?.guildMemberAvatar != null && null != o ? (0, I.s7)({
                 guildId: o,
                 userId: t.author.id,
-                avatar: a.guildMemberAvatar
+                avatar: r.guildMemberAvatar
             }) : t.author.getAvatarURL(o, 32),
             className: v.my
         })]
@@ -104,8 +104,8 @@ function R(e) {
             isFrozen: n,
             count: i,
             lingerMs: l
-        } = e, [r, a] = s.useState([]), [o, d] = s.useState(!1), h = s.useRef(null), A = s.useRef(void 0), m = s.useCallback(() => {
-            a([]), d(!0)
+        } = e, [a, r] = s.useState([]), [o, d] = s.useState(!1), h = s.useRef(null), A = s.useRef(void 0), m = s.useCallback(() => {
+            r([]), d(!0)
         }, []);
         s.useEffect(() => {
             function e(e) {
@@ -114,7 +114,7 @@ function R(e) {
                     message: i,
                     optimistic: s
                 } = e;
-                n !== t || i.type === S.lAJ.STAGE_START || i.type === S.lAJ.STAGE_END || i.type === S.lAJ.STAGE_TOPIC || i.type === S.lAJ.STAGE_SPEAKER || i.type === S.lAJ.STAGE_RAISE_HAND || s || (clearTimeout(A.current), A.current = setTimeout(m, l), a(e => [...e, i.id]))
+                n !== t || i.type === S.lAJ.STAGE_START || i.type === S.lAJ.STAGE_END || i.type === S.lAJ.STAGE_TOPIC || i.type === S.lAJ.STAGE_SPEAKER || i.type === S.lAJ.STAGE_RAISE_HAND || s || (clearTimeout(A.current), A.current = setTimeout(m, l), r(e => [...e, i.id]))
             }
             return u.h.subscribe("MESSAGE_CREATE", e), () => {
                 u.h.unsubscribe("MESSAGE_CREATE", e)
@@ -122,40 +122,40 @@ function R(e) {
         }, [t, m, i, l]), s.useEffect(() => () => {
             clearTimeout(A.current)
         }, []), s.useEffect(() => {
-            r.length > 3 && a(e => {
+            a.length > 3 && r(e => {
                 let t = e.length - 3;
                 return [...e.slice(t)]
             })
-        }, [r]), n && null == h.current ? h.current = r : n || null == h.current || (h.current = null);
-        let p = h.current ?? r;
+        }, [a]), n && null == h.current ? h.current = a : n || null == h.current || (h.current = null);
+        let _ = h.current ?? a;
         return {
             toastsHidden: o,
-            toastMessages: (0, c.yK)([C.A], () => p.map(e => C.A.getMessage(t, e)), [t, p]).filter(b.Vq)
+            toastMessages: (0, c.yK)([E.A], () => _.map(e => E.A.getMessage(t, e)), [t, _]).filter(b.Vq)
         }
     }({
         channelId: t,
         isFrozen: l,
         count: 3,
         lingerMs: y
-    }), p = s.useRef({}), [_, g] = s.useState({}), f = s.useCallback((e, t) => {
-        null == t ? delete p.current[e] : p.current[e] = t
-    }, []), x = s.useRef(_);
+    }), _ = s.useRef({}), [p, g] = s.useState({}), f = s.useCallback((e, t) => {
+        null == t ? delete _.current[e] : _.current[e] = t
+    }, []), x = s.useRef(p);
     s.useLayoutEffect(() => {
-        x.current = _
+        x.current = p
     }), s.useLayoutEffect(() => {
         let e = {},
             t = 0;
         for (let n of m) {
-            let i = p.current[n.id] ?? 0;
+            let i = _.current[n.id] ?? 0;
             e[n.id] = t, t += i + 8
-        }(0, a.isEqual)(e, x.current) || g(e)
+        }(0, r.isEqual)(e, x.current) || g(e)
     }, [m]);
-    let E = m.map(e => ({
+    let C = m.map(e => ({
             message: e,
-            height: p.current[e.id],
-            y: _[e.id]
+            height: _.current[e.id],
+            y: p[e.id]
         })),
-        I = (0, d.pnh)(E, {
+        I = (0, d.pnh)(C, {
             keys: e => e.message.id,
             from: () => ({
                 opacity: 0
@@ -192,7 +192,7 @@ function R(e) {
     return (0, i.jsx)(d.NPJ, {
         theme: S.NJ8.DARK,
         children: e => (0, i.jsx)("div", {
-            className: r()(n, e),
+            className: a()(n, e),
             onMouseEnter: () => {
                 h(!0)
             },

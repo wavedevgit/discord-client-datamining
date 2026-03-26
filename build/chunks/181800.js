@@ -1,13 +1,13 @@
 /** chunk id: 181800 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => C
+    A: () => E
 }), n(321073);
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(397927),
-    a = n(475743),
+    a = n(397927),
+    r = n(475743),
     o = n(624458),
     c = n(408213),
     d = n(212455),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(636449),
     A = n(263715),
     m = n(928568),
-    p = n(842452),
-    _ = n(357064),
+    _ = n(842452),
+    p = n(357064),
     g = n(985018),
     f = n(250607);
 
@@ -26,12 +26,12 @@ function x(e) {
         children: n
     } = e, o = s.useRef(null), u = (0, l.bG)([d.A], () => d.A.hasJoinRequestCoackmark()), h = s.useCallback(() => {
         c.Ay.clearCoachmark()
-    }, []), A = (0, a.A)(u), m = s.useRef(null);
+    }, []), A = (0, r.A)(u), m = s.useRef(null);
     return s.useEffect(() => {
         u && u !== A && (t(), m.current?.ref?.current?.layerRef?.current?.updatePosition())
     }, [m, u, A, t]), (0, i.jsxs)("div", {
         className: f.kL,
-        children: [(0, i.jsx)(r.YNO, {
+        children: [(0, i.jsx)(a.YNO, {
             ref: m,
             targetElementRef: o,
             shouldShow: u,
@@ -41,15 +41,15 @@ function x(e) {
                     className: f.Bm,
                     children: [(0, i.jsxs)("div", {
                         className: f.q3,
-                        children: [(0, i.jsx)(r.Heading, {
+                        children: [(0, i.jsx)(a.Heading, {
                             variant: "heading-md/medium",
                             children: g.intl.string(g.t["0YV0YE"])
-                        }), (0, i.jsx)(r.Text, {
+                        }), (0, i.jsx)(a.Text, {
                             variant: "text-xs/normal",
                             color: "text-muted",
                             children: g.intl.string(g.t["0UQVDL"])
                         })]
-                    }), (0, i.jsx)(r.Button, {
+                    }), (0, i.jsx)(a.Button, {
                         variant: "primary",
                         size: "sm",
                         text: g.intl.string(g.t["4r+amb"]),
@@ -73,10 +73,10 @@ function x(e) {
     })
 }
 
-function C(e) {
+function E(e) {
     let {
         onActivate: t
-    } = e, [n, C] = s.useState(!1), E = (0, l.bG)([u.A], () => u.A.getGuildId()), I = (0, l.bG)([d.A], () => d.A.hasFetchedRequestToJoinGuilds), N = (0, m.A)(), b = (0, a.A)(E), S = s.useMemo(() => {
+    } = e, [n, E] = s.useState(!1), C = (0, l.bG)([u.A], () => u.A.getGuildId()), I = (0, l.bG)([d.A], () => d.A.hasFetchedRequestToJoinGuilds), N = (0, m.A)(), b = (0, r.A)(C), S = s.useMemo(() => {
         let e = (0, A.xW)({
             folderId: h.U.PENDING_JOIN_REQUESTS_FOLDER,
             folderName: g.intl.string(g.t["scsU+l"]),
@@ -89,30 +89,30 @@ function C(e) {
     s.useEffect(() => {
         n && !I && o.A.fetchRequestToJoinGuilds()
     }, [n, I]);
-    let T = null != E && N.includes(E);
+    let T = null != C && N.includes(C);
     return (s.useEffect(() => {
-        !n && T && b !== E && C(!0)
-    }, [n, T, b, E]), 0 === N.length) ? null : (0, i.jsx)(x, {
+        !n && T && b !== C && E(!0)
+    }, [n, T, b, C]), 0 === N.length) ? null : (0, i.jsx)(x, {
         onActivate: t,
-        children: (0, i.jsx)(p.A, {
+        children: (0, i.jsx)(_.A, {
             folderNode: S,
             expanded: n,
             selected: T,
             draggable: !1,
             sorting: !1,
             onExpandCollapse: () => {
-                C(!n), c.Ay.clearCoachmark()
+                E(!n), c.Ay.clearCoachmark()
             },
             folderButtonSize: "icon",
             folderButtonContent: (0, i.jsx)("div", {
                 className: f.rH,
-                children: (0, i.jsx)(r.Qfk, {
+                children: (0, i.jsx)(a.Qfk, {
                     size: "sm",
                     color: "currentColor"
                 })
             }),
             renderChildNode: function(e, t, n) {
-                return e.type !== A.PJ.GUILD ? null : (0, i.jsx)(_.A, {
+                return e.type !== A.PJ.GUILD ? null : (0, i.jsx)(p.A, {
                     guildNode: e,
                     "aria-setsize": n,
                     "aria-posinset": t

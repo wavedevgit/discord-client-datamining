@@ -7,8 +7,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(158954),
-    r = n(308528),
-    a = n(607272),
+    a = n(308528),
+    r = n(607272),
     o = n(985018),
     c = n(174720);
 
@@ -16,7 +16,7 @@ function d(e) {
     let {
         userId: t
     } = e, n = s.useCallback(e => {
-        e.stopPropagation(), r.A.openPrivateChannel({
+        e.stopPropagation(), a.A.openPrivateChannel({
             recipientIds: [t]
         })
     }, [t]);
@@ -37,10 +37,10 @@ function u(e) {
     let {
         userId: t,
         applicationId: n
-    } = e, [r, d] = s.useState(!1), [u, h] = s.useState(!1), A = s.useCallback(async e => {
+    } = e, [a, d] = s.useState(!1), [u, h] = s.useState(!1), A = s.useCallback(async e => {
         e.stopPropagation(), h(!0);
         try {
-            await a.A.cancelFriendRequest({
+            await r.A.cancelFriendRequest({
                 userId: t,
                 applicationId: n,
                 location: "ActionButtonFriendRequest"
@@ -51,7 +51,7 @@ function u(e) {
     }, [n, t]), m = s.useCallback(async e => {
         e.stopPropagation(), d(!0);
         try {
-            await a.A.maybeConfirmFriendRequestAccept({
+            await r.A.maybeConfirmFriendRequestAccept({
                 userId: t,
                 applicationId: n,
                 location: "ActionButtonFriendRequest"
@@ -68,14 +68,14 @@ function u(e) {
                 variant: "active",
                 onClick: m,
                 text: o.intl.string(o.t.Zcibdf),
-                loading: r,
+                loading: a,
                 disabled: u
             }), (0, i.jsx)(l.$nd, {
                 variant: "secondary",
                 onClick: A,
                 text: o.intl.string(o.t.xuio0C),
                 loading: u,
-                disabled: r
+                disabled: a
             })]
         })
     })

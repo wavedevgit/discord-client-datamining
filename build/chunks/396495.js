@@ -1,14 +1,14 @@
 /** chunk id: 396495 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    b: () => _
+    b: () => p
 });
 var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    r = n(110259),
-    a = n(421380),
+    a = n(110259),
+    r = n(421380),
     o = n(397927),
     c = n(139286),
     d = n(954571),
@@ -17,14 +17,14 @@ var s = n(503698),
     A = n(985018),
     m = n(164778);
 
-function p(e) {
+function _(e) {
     let {
         hidden: t,
         onDismiss: n
     } = e;
     return (0, c.A)({
-        type: r.ImpressionTypes.VIEW,
-        name: r.ImpressionNames.HD_STREAMING_POPOUT
+        type: a.ImpressionTypes.VIEW,
+        name: a.ImpressionNames.HD_STREAMING_POPOUT
     }, {
         disableTrack: t
     }, [t]), (0, i.jsxs)("div", {
@@ -35,12 +35,12 @@ function p(e) {
             className: m.Sl,
             src: "https://cdn.discordapp.com/assets/premium/roadblocks/hd_streaming.png",
             alt: "HD Streaming Nitro Perk"
-        }), (0, i.jsx)(a.$n, {
+        }), (0, i.jsx)(r.$n, {
             "data-migration-pending": !0,
             className: m.b,
             "aria-label": A.intl.string(A.t.cpT0Cq),
-            look: a.$n.Looks.BLANK,
-            size: a.$n.Sizes.NONE,
+            look: r.$n.Looks.BLANK,
+            size: r.$n.Sizes.NONE,
             onClick: () => {
                 n(), d.default.track(h.HAw.HD_STREAMING_POPOUT_DISMISSED)
             },
@@ -72,13 +72,13 @@ function p(e) {
     })
 }
 
-function _(e) {
+function p(e) {
     let {
         ...t
     } = e;
     return (0, i.jsx)(u.x, {
         ...t,
-        renderComponent: e => (0, i.jsx)(p, {
+        renderComponent: e => (0, i.jsx)(_, {
             ...e
         })
     })

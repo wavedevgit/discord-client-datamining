@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    r = n(847599),
-    a = n(132857);
+    a = n(847599),
+    r = n(132857);
 let o = function(e) {
     let {
         title: t,
@@ -21,20 +21,20 @@ let o = function(e) {
         guildId: m
     } = e;
     s.useEffect(() => {
-        (0, r.Bf)(h, A, m)
+        (0, a.Bf)(h, A, m)
     }, [h, A, m]);
-    let p = s.useCallback(() => {
-            (0, r.mU)(r.IY.NSFW_CHANNEL_DISAGREE_CTA, h, A, m), u?.()
+    let _ = s.useCallback(() => {
+            (0, a.mU)(a.IY.NSFW_CHANNEL_DISAGREE_CTA, h, A, m), u?.()
         }, [u, h, A, m]),
-        _ = s.useCallback(() => {
-            (0, r.mU)(r.IY.NSFW_CHANNEL_AGREE_CTA, h, A, m), d?.()
+        p = s.useCallback(() => {
+            (0, a.mU)(a.IY.NSFW_CHANNEL_AGREE_CTA, h, A, m), d?.()
         }, [d, h, A, m]);
     return (0, i.jsxs)(l.BJc, {
         justify: "center",
         align: "center",
         direction: "vertical",
         gap: 16,
-        className: a.XG,
+        className: r.XG,
         children: [(0, i.jsxs)(l.BJc, {
             gap: 8,
             justify: "center",
@@ -42,11 +42,11 @@ let o = function(e) {
             direction: "vertical",
             children: [(0, i.jsx)(l.Text, {
                 variant: "text-lg/semibold",
-                className: a.DD,
+                className: r.DD,
                 children: t
             }), (0, i.jsx)(l.Text, {
                 variant: "text-md/medium",
-                className: a.h_,
+                className: r.h_,
                 color: "text-muted",
                 children: n
             })]
@@ -58,9 +58,9 @@ let o = function(e) {
             children: [null != c && null != u ? (0, i.jsx)(l.Button, {
                 variant: "secondary",
                 text: c,
-                onClick: p
+                onClick: _
             }) : null, null != o && null != d ? (0, i.jsx)(l.Button, {
-                onClick: _,
+                onClick: p,
                 text: o
             }) : null]
         })]
