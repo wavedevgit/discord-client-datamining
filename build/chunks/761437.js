@@ -25,8 +25,8 @@ function f(e) {
             channel: _,
             customWebhooks: N,
             editedWebhook: j,
-            selectableWebhookChannels: v,
-            refToScroller: T,
+            selectableWebhookChannels: T,
+            refToScroller: v,
             errors: C,
             canNavigate: I
         } = e,
@@ -35,7 +35,7 @@ function f(e) {
         [O, w] = l.useState(null);
     if (null != _) n = _;
     else {
-        let e = Object.values(v);
+        let e = Object.values(T);
         n = e.length > 0 ? e[0] : null
     }
     let R = l.useCallback(async () => {
@@ -86,7 +86,7 @@ function f(e) {
             }), (0, i.jsx)(g.A, {
                 webhooks: N,
                 editedWebhook: j,
-                selectableWebhookChannels: v,
+                selectableWebhookChannels: T,
                 lastCreatedWebhookId: S?.id,
                 errors: C,
                 canNavigate: I

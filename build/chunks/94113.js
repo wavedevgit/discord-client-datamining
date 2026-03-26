@@ -15,7 +15,7 @@ function c(e) {
     let t = (0, l.K7)(e),
         s = a.recentImageUrls.filter(e => e !== t);
     return a = {
-        recentImageUrls: [t, ...s].slice(0, 6)
+        recentImageUrls: [t, ...s].slice(0, 9)
     }, !0
 }
 class o extends n.Ay.PersistedStore {

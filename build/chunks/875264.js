@@ -22,8 +22,8 @@ var i = n(627968),
     _ = n(12994),
     N = n(460641),
     j = n(969756),
-    v = n(930238),
-    T = n(761437),
+    T = n(930238),
+    v = n(761437),
     C = n(652215),
     I = n(985018),
     E = n(874090);
@@ -168,7 +168,7 @@ let y = l.memo(function(e) {
             });
             break;
         case C.wLn.WEBHOOKS:
-            $ = (0, i.jsx)(T.A, {
+            $ = (0, i.jsx)(v.A, {
                 guild: s,
                 channel: y,
                 customWebhooks: Z,
@@ -188,7 +188,7 @@ let y = l.memo(function(e) {
             });
             break;
         default:
-            $ = (0, i.jsx)(v.A, {
+            $ = (0, i.jsx)(T.A, {
                 guild: s,
                 channel: y,
                 applicationIntegrations: q,

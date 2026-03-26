@@ -28,7 +28,7 @@ function T(e) {
         trackDisplayedQuestions: N
     } = (0, c.i)(), p = T(t), h = (0, d.i)(n), [m, S] = l.useState(h.blockId), [C, R] = l.useState(h.pageIndex), [g, O] = l.useState(!1), y = (e, n) => {
         I(t, e, n)
-    }, x = l.useCallback(() => (g ? s() : (0, a.qfG)(e => (0, i.jsx)(r.Modal, {
+    }, P = l.useCallback(() => (g ? s() : (0, a.qfG)(e => (0, i.jsx)(r.Modal, {
         title: E.intl.string(E.t.T9Sx3z),
         actions: [{
             variant: "secondary",
@@ -46,7 +46,7 @@ function T(e) {
             variant: "text-md/normal",
             children: E.intl.string(E.t.iCK6G0)
         })
-    })), Promise.resolve()), [s, g]), P = l.useMemo(() => null == m ? [] : (0, d.uy)(n, {
+    })), Promise.resolve()), [s, g]), x = l.useMemo(() => null == m ? [] : (0, d.uy)(n, {
         blockId: m,
         pageIndex: C,
         responses: p
@@ -57,14 +57,14 @@ function T(e) {
             pageIndex: C,
             responses: p
         });
-        N(t, P), e.isComplete && o.Ay.submitSurveyResponse(t, p), S(e.blockId), R(e.pageIndex), O(e.isComplete)
-    }, [n, m, C, p, t, P, N]);
+        N(t, x), e.isComplete && o.Ay.submitSurveyResponse(t, p), S(e.blockId), R(e.pageIndex), O(e.isComplete)
+    }, [n, m, C, p, t, x, N]);
     l.useEffect(() => {
-        0 === P.length && f()
-    }, [P, f]);
+        0 === x.length && f()
+    }, [x, f]);
     let D = l.useMemo(() => {
         if (g) return !1;
-        for (let e of P) {
+        for (let e of x) {
             let t = n.Questions[e];
             if (t?.Validation?.Settings?.ForceResponse === "ON") {
                 let t = p[e];
@@ -72,7 +72,7 @@ function T(e) {
             }
         }
         return !0
-    }, [g, P, n, p]);
+    }, [g, x, n, p]);
     return g ? (0, i.jsxs)(r.Modal, {
         transitionState: u,
         onClose: s,
@@ -92,7 +92,7 @@ function T(e) {
         })]
     }) : (0, i.jsx)(r.Modal, {
         transitionState: u,
-        onClose: x,
+        onClose: P,
         title: E.intl.string(E.t.OSqLUF),
         size: "md",
         actions: [{
@@ -105,9 +105,9 @@ function T(e) {
             style: {
                 width: "100%"
             },
-            children: 0 === P.length ? null : (0, i.jsx)("div", {
+            children: 0 === x.length ? null : (0, i.jsx)("div", {
                 className: A.Qs,
-                children: P.map(e => {
+                children: x.map(e => {
                     let t = n.Questions[e];
                     return null == t ? null : (0, i.jsx)(_.A, {
                         question: t,

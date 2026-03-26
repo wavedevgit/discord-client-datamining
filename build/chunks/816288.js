@@ -17,8 +17,8 @@ var i = n(627968),
     A = n(230135),
     m = n(552836),
     p = n(147925),
-    _ = n(363487),
-    g = n(267771),
+    g = n(363487),
+    _ = n(267771),
     f = n(828162),
     x = n(259568),
     C = n(333354),
@@ -30,7 +30,7 @@ let N = s.forwardRef((e, t) => {
         maxBoostCount: l,
         premiumSubscriberCount: c,
         className: u
-    } = e, h = n >= l, A = Math.min(n / l * 100, 100), [m, _] = (0, d.zhh)(() => ({
+    } = e, h = n >= l, A = Math.min(n / l * 100, 100), [m, g] = (0, d.zhh)(() => ({
         width: n === c ? `calc(${A}% - 4px)` : "0%",
         config: {
             tension: 250,
@@ -39,10 +39,10 @@ let N = s.forwardRef((e, t) => {
         }
     }), "respect-motion-settings", [n, c]);
     return s.useEffect(() => {
-        _({
+        g({
             width: `calc(${A}% - 4px)`
         })
-    }, [A, _]), (0, i.jsxs)("div", {
+    }, [A, g]), (0, i.jsxs)("div", {
         ref: t,
         className: I.hQ,
         children: [(0, i.jsx)("div", {
@@ -91,7 +91,7 @@ function b(e) {
     let {
         guild: t,
         withMargin: l
-    } = e, a = s.useRef(null), o = (0, g.A)(t), p = (0, _.A)(t.id), C = s.useCallback(() => {
+    } = e, a = s.useRef(null), o = (0, _.A)(t), p = (0, g.A)(t.id), C = s.useCallback(() => {
         (0, f.A)(t.id, h.A.GUILD_BOOSTING_SIDEBAR_DISPLAY)
     }, [t.id]), E = (0, c.bG)([m.A], () => m.A.getCountForGuild(t.id) ?? 0);
     s.useEffect(() => {

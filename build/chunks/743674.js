@@ -1,9 +1,10 @@
 /** chunk id: 743674 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
-    S: () => s
+    S: () => a
 });
 var i = n(64700),
-    a = n(998304),
+    s = n(998304),
     l = n(515718);
 async function r(e) {
     return (await new Promise((t, n) => {
@@ -15,13 +16,13 @@ async function r(e) {
         }, i.src = e
     })).map(e => {
         let [t, n, i] = e;
-        return (0, a.Ob)(t, n, i)
+        return (0, s.Ob)(t, n, i)
     })
 }
 
-function s(e) {
-    let [t, n] = i.useState(), a = i.useRef(!1);
-    return null == e || null != t || a.current || (a.current = !0, r(e).then(e => {
+function a(e) {
+    let [t, n] = i.useState(), s = i.useRef(!1);
+    return null == e || null != t || s.current || (s.current = !0, r(e).then(e => {
         n(e[0])
     })), t
 }

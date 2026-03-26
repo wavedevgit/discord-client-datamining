@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(730134),
     m = n(964486),
     p = n(80682),
-    _ = n(58736),
-    g = n(967144),
+    g = n(58736),
+    _ = n(967144),
     f = n(342296),
     x = n(696451),
     C = n(576705),
@@ -35,21 +35,21 @@ let O = s.memo(function(e) {
         let {
             toggleRequestToSpeakSidebar: t,
             chatOpen: n
-        } = e, s = (0, i.jsx)(_.Ay.Icon, {
+        } = e, s = (0, i.jsx)(g.Ay.Icon, {
             icon: u.PGe,
             tooltip: j.intl.string(j.t.cpT0Cq),
             onClick: t
         });
-        return (0, i.jsxs)(_.Ay, {
+        return (0, i.jsxs)(g.Ay, {
             toolbar: s,
             className: r()(R.N1, {
                 [R.X_]: n
             }),
-            children: [(0, i.jsx)(_.Ay.Icon, {
+            children: [(0, i.jsx)(g.Ay.Icon, {
                 icon: u.E7M,
                 disabled: !0,
                 "aria-label": j.intl.string(j.t.TYZgzW)
-            }), (0, i.jsx)(_.Ay.Title, {
+            }), (0, i.jsx)(g.Ay.Title, {
                 children: j.intl.string(j.t.TYZgzW)
             })]
         })
@@ -59,9 +59,9 @@ let O = s.memo(function(e) {
             channel: t,
             participant: l,
             tempDisableOnInit: r = !1
-        } = e, a = s.useRef(null), [_, C] = s.useState(r);
+        } = e, a = s.useRef(null), [g, C] = s.useState(r);
         (0, m.Ay)(() => {
-            if (!_) return;
+            if (!g) return;
             let e = setTimeout(() => C(!1), 1e3);
             return () => clearTimeout(e)
         });
@@ -73,7 +73,7 @@ let O = s.memo(function(e) {
         } = (0, c.cf)([E.A], () => ({
             isMobile: E.A.isMobileOnline(l.user.id),
             status: E.A.getStatus(l.user.id, N)
-        })), y = (0, c.bG)([x.Ay], () => x.Ay.getMember(N, l.user.id)), O = (0, g.gn)(t.guild_id, y?.userId, y?.colorStrings ?? null), L = s.useMemo(() => ({
+        })), y = (0, c.bG)([x.Ay], () => x.Ay.getMember(N, l.user.id)), O = (0, _.gn)(t.guild_id, y?.userId, y?.colorStrings ?? null), L = s.useMemo(() => ({
             [N]: [l.user.id]
         }), [N, l.user.id]);
         (0, p.Eq)(L, "RequestToSpeakSidebar");
@@ -136,7 +136,7 @@ let O = s.memo(function(e) {
                         onClick: function() {
                             (0, I.lL)(t, l.user.id, !1)
                         },
-                        disabled: M || _,
+                        disabled: M || g,
                         icon: u.LvC,
                         variant: "secondary",
                         "aria-label": M ? j.intl.string(j.t.h9rsTd) : j.intl.string(j.t.f0T7hI)

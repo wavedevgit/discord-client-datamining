@@ -30,8 +30,8 @@ var s = t(397927),
     E = t(371843),
     T = t(518477),
     L = t(652215),
-    O = t(996988),
-    P = t(985018),
+    P = t(996988),
+    O = t(985018),
     R = t(763563);
 
 function S(e) {
@@ -84,7 +84,7 @@ function S(e) {
                         component: (0, i.jsx)(s.AC4, {
                             children: (0, i.jsx)(s.H, {
                                 id: Y,
-                                children: P.intl.format(P.t.KRe1Fk, {
+                                children: O.intl.format(O.t.KRe1Fk, {
                                     name: X
                                 })
                             })
@@ -92,7 +92,7 @@ function S(e) {
                         children: (0, i.jsxs)(h.A, {
                             user: n,
                             displayProfile: H,
-                            themeType: O.d.MODAL,
+                            themeType: P.d.MODAL,
                             children: [(0, i.jsx)(v.A, {
                                 children: (0, i.jsx)(j.A, {
                                     user: n,
@@ -103,7 +103,7 @@ function S(e) {
                                 children: [(0, i.jsx)(p.A, {
                                     user: n,
                                     displayProfile: H,
-                                    themeType: O.d.MODAL
+                                    themeType: P.d.MODAL
                                 }), (0, i.jsxs)("div", {
                                     className: R.El,
                                     children: [(0, i.jsx)(m.A, {
@@ -111,10 +111,10 @@ function S(e) {
                                         displayProfile: H,
                                         guildId: W,
                                         channelId: k,
-                                        themeType: O.d.MODAL
+                                        themeType: P.d.MODAL
                                     }), (0, i.jsx)(N.A, {
                                         user: n,
-                                        themeType: O.d.MODAL,
+                                        themeType: P.d.MODAL,
                                         hasEntered: F === s.ip4.ENTERED,
                                         onCloseProfile: V,
                                         disableToolbar: !0
@@ -156,7 +156,7 @@ function S(e) {
                                     nicknameVariant: "heading-xl/bold",
                                     tags: (0, i.jsx)(x.A, {
                                         displayProfile: H,
-                                        themeType: O.d.MODAL,
+                                        themeType: P.d.MODAL,
                                         onClose: V
                                     })
                                 }), (0, i.jsx)(y.A, {

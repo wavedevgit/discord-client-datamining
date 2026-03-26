@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(714510),
     p = n(890687),
     g = n(710969),
-    _ = n(92246),
-    f = n(453384),
+    f = n(92246),
+    _ = n(453384),
     v = n(646764),
     b = n(398025),
     j = n(516226),
@@ -38,7 +38,7 @@ function N(e) {
         isVisibleInViewport: O,
         onReceiveErrorHints: R,
         sourceQuestContent: w
-    } = e, D = i.useRef(null), P = (0, _.mq)(t.config), M = (0, _.mH)(t.config), L = t.userStatus?.enrolledAt != null, {
+    } = e, D = i.useRef(null), P = (0, f.mq)(t.config), M = (0, f.mH)(t.config), L = t.userStatus?.enrolledAt != null, {
         ref: U,
         scrollHeight: B
     } = (0, c.wR)(), G = 104 !== B, {
@@ -51,7 +51,7 @@ function N(e) {
             ...y.N,
             clamp: !0
         }
-    }), W = t.userStatus?.completedAt != null, H = t.userStatus?.claimedAt != null, K = (0, _.ks)(t.config), z = (0, _._Z)(t.config), {
+    }), W = t.userStatus?.completedAt != null, H = t.userStatus?.claimedAt != null, K = (0, f.ks)(t.config), z = (0, f._Z)(t.config), {
         completedRatio: $,
         completedRatioDisplay: q
     } = (0, p.O9)(t), Q = (0, x.gj)(t, w, m.Ob.QuestHome, D), Y = i.useMemo(() => H && K ? T.intl.format(T.t["8Op4c4"], {
@@ -112,7 +112,7 @@ function N(e) {
                             loop: !1,
                             autoplay: !1,
                             shouldAnimate: !X
-                        }), (0, a.jsx)(f.A, {
+                        }), (0, a.jsx)(_.A, {
                             size: 76,
                             percentComplete: $,
                             percentCompleteText: s && !(0, g.Ic)(t) ? q : void 0,

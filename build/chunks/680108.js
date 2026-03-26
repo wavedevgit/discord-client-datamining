@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(259248),
     p = n(43708),
     g = n(14752),
-    _ = n(103748),
-    f = n(553622);
+    f = n(103748),
+    _ = n(553622);
 let v = "Make sure you're only uploading text files!",
     b = e => {
         let {
@@ -27,17 +27,17 @@ let v = "Make sure you're only uploading text files!",
             deleteConfig: i
         } = (0, p.wu)();
         return (0, a.jsxs)(d.DUT, {
-            className: f.B0,
+            className: _.B0,
             onClick: () => {
                 n(t)
             },
             children: [(0, a.jsx)("div", {
-                className: f.yV,
+                className: _.yV,
                 style: {
                     backgroundImage: `url(${t.config?.effects?.[0]?.base64})`
                 }
             }), (0, a.jsxs)("div", {
-                className: f.eL,
+                className: _.eL,
                 children: [(0, a.jsx)(d.Text, {
                     variant: "text-md/bold",
                     children: t.name
@@ -74,12 +74,12 @@ function j() {
         e.currentTarget?.files == null ? (0, h.Ni)("Error uploading file. Try again!") : (0, h.KE)(e.currentTarget.files, E, h.Ni)
     }, [E]);
     return (0, a.jsxs)("div", {
-        className: f.zr,
+        className: _.zr,
         children: [null == s && (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsxs)("div", {
-                className: f.nz,
+                className: _.nz,
                 children: [(0, a.jsxs)("div", {
-                    className: l()(f.uW, f.nM),
+                    className: l()(_.uW, _.nM),
                     children: [(0, a.jsx)(d.Heading, {
                         variant: "heading-xl/bold",
                         children: "Custom Profile Effects"
@@ -96,7 +96,7 @@ function j() {
                         }
                     })]
                 }), (0, a.jsx)("div", {
-                    className: f.Iv,
+                    className: _.Iv,
                     children: Object.values(e).map(e => (0, a.jsx)(b, {
                         effect: e,
                         onClick: e => {
@@ -105,9 +105,9 @@ function j() {
                     }, e.skuId))
                 })]
             }), (0, a.jsxs)("div", {
-                className: l()(f.nM, f._N, f.uW),
+                className: l()(_.nM, _._N, _.uW),
                 children: [(0, a.jsxs)("div", {
-                    className: f.au,
+                    className: _.au,
                     children: [(0, a.jsx)(d.Text, {
                         variant: "text-md/normal",
                         color: "always-white",
@@ -131,7 +131,7 @@ function j() {
                     }
                 })]
             }), (0, a.jsx)("hr", {}), (0, a.jsxs)("div", {
-                className: f.uW,
+                className: _.uW,
                 children: [(0, a.jsx)(d.Heading, {
                     variant: "heading-xl/bold",
                     children: "All Effects"
@@ -141,9 +141,9 @@ function j() {
                         T(e)
                     }
                 }), (0, a.jsx)("div", {
-                    className: f.xm,
+                    className: _.xm,
                     children: S.map(e => (0, a.jsx)(d.DUT, {
-                        className: f.S5,
+                        className: _.S5,
                         style: {
                             backgroundImage: `url(${e.config.thumbnailPreviewSrc})`
                         },
@@ -176,7 +176,7 @@ function j() {
                             })
                         },
                         children: (0, a.jsx)("div", {
-                            className: f.Hd,
+                            className: _.Hd,
                             children: (0, a.jsx)(d.Text, {
                                 variant: "text-md/normal",
                                 color: "always-white",
@@ -186,7 +186,7 @@ function j() {
                     }, e.skuId))
                 })]
             })]
-        }), null != s && (0, a.jsx)(_.A, {
+        }), null != s && (0, a.jsx)(f.A, {
             effect: s
         })]
     })

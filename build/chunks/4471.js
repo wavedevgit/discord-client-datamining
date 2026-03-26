@@ -8,8 +8,8 @@ var n = s(627968),
     a = s(311907),
     r = s(732955),
     C = s(397927),
-    d = s(303136),
-    c = s(550111),
+    d = s(512213),
+    c = s(303136),
     L = s(287809),
     H = s(676279),
     o = s(659746),
@@ -48,13 +48,13 @@ let m = e => {
             children: A
         }), (0, n.jsxs)("div", {
             className: u.Dz,
-            children: [(0, n.jsx)(d.A, {
+            children: [(0, n.jsx)(c.A, {
                 fallbackImage: h.A,
                 className: u.d9,
                 children: (0, n.jsx)("source", {
                     src: _
                 })
-            }), (0, n.jsx)(c.A, {
+            }), (0, n.jsx)(d.A, {
                 user: f,
                 isHighlighted: !0,
                 nameplate: null,

@@ -16,54 +16,55 @@ var n = r(64700),
     u = r(298072),
     m = r(238184),
     p = r(572595),
-    f = r(159439),
-    h = r(57020),
+    h = r(159439),
+    f = r(57020),
     x = r(652215);
 let v = "#itemSkuId=",
-    g = RegExp(`^${v}(\\d+)$`),
-    _ = [x.BVt.COLLECTIBLES_SHOP],
+    _ = RegExp(`^${v}(\\d+)$`),
+    g = [x.BVt.COLLECTIBLES_SHOP],
     A = e => {
         let t = (0, i.zy)();
         n.useEffect(() => {
-            if (null != e && _.includes(t.pathname)) return () => {
+            if (null != e && g.includes(t.pathname)) return () => {
                 window.location.hash.startsWith(v) && window.location.replace("#")
             }
         }, [e, t.pathname])
     },
-    j = () => {
-        let e = (0, f.U)(),
-            t = n.useRef(null),
-            r = (0, i.zy)(),
-            a = r.pathname === x.BVt.COLLECTIBLES_SHOP ? l.A.HOME_PAGE_SHOP_TAB : l.A.COLLECTIBLES_SHOP,
+    j = e => {
+        let t = (0, h.U)(),
+            r = n.useRef(null),
+            a = (0, i.zy)(),
+            v = a.pathname === x.BVt.COLLECTIBLES_SHOP ? l.A.HOME_PAGE_SHOP_TAB : l.A.COLLECTIBLES_SHOP,
             {
-                analyticsLocations: v
-            } = (0, c.Ay)(a),
-            _ = (0, m.A)();
+                analyticsLocations: g
+            } = (0, c.Ay)(v),
+            A = (0, m.A)();
         n.useEffect(() => {
-            let e = g.exec(r.hash);
-            null != e ? t.current = e[1] : t.current = null
-        }, [_, r.hash]);
-        let A = (0, s.bG)([d.A], () => d.A.initialProductSkuId);
+            let e = _.exec(a.hash);
+            null != e ? r.current = e[1] : r.current = null
+        }, [A, a.hash]);
+        let j = (0, s.bG)([d.A], () => d.A.initialProductSkuId);
         n.useEffect(() => {
-            if (e) return;
-            let r = null;
-            if (null != A ? r = A : null != t.current && (r = t.current), null != r) {
-                let e = setTimeout(() => {
+            if (t) return;
+            let n = null;
+            if (null != j ? n = j : null != r.current && (n = r.current), null != n) {
+                let t = setTimeout(() => {
                     (e => {
                         let {
                             productSkuId: t,
                             analyticsLocations: r,
                             analyticsSource: n,
-                            tab: i
-                        } = e, s = o.A.getProduct(t), a = o.A.getCategoryForProduct(t);
-                        if (null != s && null != a) {
-                            let e = s,
-                                l = (0, h.A)({
-                                    product: s
+                            tab: i,
+                            sessionId: s
+                        } = e, a = o.A.getProduct(t), l = o.A.getCategoryForProduct(t);
+                        if (null != a && null != l) {
+                            let e = a,
+                                c = (0, f.A)({
+                                    product: a
                                 }),
-                                c = document.getElementById(`shop-item-${e.skuId}`);
-                            if (c !== document.activeElement && c?.focus(), null != s.variantGroupStoreListingId) {
-                                let r = o.A.getProductByStoreListingId(s.variantGroupStoreListingId);
+                                d = document.getElementById(`shop-item-${e.skuId}`);
+                            if (d !== document.activeElement && d?.focus(), null != a.variantGroupStoreListingId) {
+                                let r = o.A.getProductByStoreListingId(a.variantGroupStoreListingId);
                                 if (null != r) {
                                     e = r;
                                     let n = r.variants?.findIndex(e => e.skuId === t);
@@ -71,23 +72,25 @@ let v = "#itemSkuId=",
                                 }
                             }(0, p.t)({
                                 product: e,
-                                category: a,
+                                category: l,
                                 analyticsSource: n,
                                 analyticsLocations: r,
                                 tab: i,
-                                shouldCheckoutWithOrbs: l
+                                shouldCheckoutWithOrbs: c,
+                                sessionId: s
                             })
                         }
                     })({
-                        productSkuId: r,
-                        analyticsLocations: v,
-                        analyticsSource: a,
-                        tab: _
+                        productSkuId: n,
+                        analyticsLocations: g,
+                        analyticsSource: v,
+                        tab: A,
+                        sessionId: e
                     })
                 }, 250);
-                return () => clearTimeout(e)
+                return () => clearTimeout(t)
             }
-        }, [v, a, e, A, _])
+        }, [g, v, t, j, A, e])
     },
     N = e => {
         let t = n.useRef({}),

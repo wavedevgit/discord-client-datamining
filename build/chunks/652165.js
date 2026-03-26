@@ -1,7 +1,7 @@
 /** chunk id: 652165 params = (module,exports,require) **/
 n.d(t, {
     B4: () => c,
-    o6: () => p
+    o6: () => u
 });
 var a = n(835245);
 n(192308);
@@ -12,15 +12,15 @@ var i = n(397927),
     s = n(373856),
     d = n(652215);
 n(231723);
-let u = "orb-checkout-payment-modal-key",
-    p = () => (0, i.Ry6)(u),
+let p = "orb-checkout-payment-modal-key",
+    u = () => (0, i.Ry6)(p),
     c = e => {
         let {
             skuId: t,
             onCheckoutSuccess: n,
             analyticsLocations: l = [],
             analyticsSourceLocation: r,
-            onCloseCallback: p
+            onCloseCallback: u
         } = e, c = (0, a.A)(), E = !1;
         return _({
             loadId: c,
@@ -33,7 +33,7 @@ let u = "orb-checkout-payment-modal-key",
             onCloseCallback: () => {
                 (0, o.S)({
                     checkoutSucceeded: E
-                }), p?.()
+                }), u?.()
             },
             onCloseRequest: () => {
                 E || (0, s.g)(d.HAw.PAYMENT_FLOW_CANCELED, {
@@ -41,7 +41,7 @@ let u = "orb-checkout-payment-modal-key",
                     skuId: t,
                     analyticsLocations: l,
                     analyticsSourceLocation: r
-                }), (0, i.OoC)(u)
+                }), (0, i.OoC)(p)
             }
         })
     },
@@ -69,7 +69,7 @@ let u = "orb-checkout-payment-modal-key",
             },
             openModalOptions: {
                 onCloseCallback: s,
-                modalKey: u,
+                modalKey: p,
                 onCloseRequest: d
             }
         })

@@ -18,16 +18,16 @@ var i = n(627968),
     A = n(147036),
     m = n(32603),
     p = n(85808),
-    _ = n(823142);
+    g = n(823142);
 n(83766);
-var g = n(728444),
+var _ = n(728444),
     f = n(495401);
 let x = s.memo(function(e) {
     let {
         guildChannels: t,
         guildChannelsVersion: n
     } = e, l = s.useMemo(() => t.getCategoryFromSection(t.voiceChannelsSectionNumber), [t, n]);
-    return null == l ? null : (0, i.jsx)(_.AV, {
+    return null == l ? null : (0, i.jsx)(g.AV, {
         category: l
     })
 });
@@ -71,7 +71,7 @@ let I = s.memo(function(e) {
         sectionIndex: t,
         guildChannels: n,
         guildChannelsVersion: l,
-        voiceStates: _,
+        voiceStates: g,
         guildId: C,
         selectedChannelId: E,
         selectedVoiceChannelId: I,
@@ -95,8 +95,8 @@ let I = s.memo(function(e) {
         channels: j,
         selectedChannelId: E,
         selectedVoiceChannelId: I,
-        voiceStates: _
-    }), [j, E, I, _]);
+        voiceStates: g
+    }), [j, E, I, g]);
     if (t === n.voiceChannelsSectionNumber) return (0, i.jsx)(x, {
         guildChannels: n,
         guildChannelsVersion: l
@@ -115,7 +115,7 @@ let I = s.memo(function(e) {
                 guildId: C,
                 renderLeadingIcon: y ? e => (0, i.jsx)(d.A, {
                     color: "currentColor",
-                    className: r()(e, g.Gj)
+                    className: r()(e, _.Gj)
                 }) : void 0
             })
         }), O]

@@ -32,12 +32,12 @@ let R = () => {
     if (null == t || !(0, I.Qd)(t) || g) return null;
     let O = l?.applicationStatus ?? T.B5.STARTED,
         y = null,
-        x = null,
         P = null,
+        x = null,
         f = [S.lm, C.lm];
     switch (O) {
         case T.B5.SUBMITTED:
-            y = m.intl.string(m.t["5iLvSx"]), x = m.intl.string(m.t.mqtdmQ), P = () => {
+            y = m.intl.string(m.t["5iLvSx"]), P = m.intl.string(m.t.mqtdmQ), x = () => {
                 (0, o.A)({
                     title: m.intl.string(m.t.aIz1oV),
                     subtitle: m.intl.string(m.t["13tjTU"]),
@@ -48,7 +48,7 @@ let R = () => {
             };
             break;
         case T.B5.REJECTED:
-            y = m.intl.string(m.t.lk30cY), x = m.intl.string(m.t["8RrsHr"]), P = () => {
+            y = m.intl.string(m.t.lk30cY), P = m.intl.string(m.t["8RrsHr"]), x = () => {
                 (0, c.mMO)(async () => {
                     let {
                         default: e
@@ -61,7 +61,7 @@ let R = () => {
             }, f.push(S.z3);
             break;
         default:
-            y = m.intl.string(m.t.G5YKXP), x = m.intl.string(m.t["r8/DT+"]), P = () => {
+            y = m.intl.string(m.t.G5YKXP), P = m.intl.string(m.t["r8/DT+"]), x = () => {
                 (0, A.Ze)(t.id)
             }
     }
@@ -74,8 +74,8 @@ let R = () => {
         }), (0, i.jsx)(c.Button, {
             variant: "overlay-primary",
             size: "sm",
-            onClick: P,
-            text: x
+            onClick: x,
+            text: P
         })]
     })
 }

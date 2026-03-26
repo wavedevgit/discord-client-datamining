@@ -26,29 +26,29 @@ function p(e, t) {
         onToggle: l,
         isLoading: u,
         error: p
-    } = (0, d.A)(e, t), _ = (0, s.bG)([o.A], () => o.A.getGuild(e)), g = (0, c.A)(e, t);
+    } = (0, d.A)(e, t), g = (0, s.bG)([o.A], () => o.A.getGuild(e)), _ = (0, c.A)(e, t);
     return {
         onActivate: i.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
                 {
                     shouldCloseAllModals: i = !0
                 } = e;
-            if (null != _ && null != t) return g < t.cost ? void(0, a.g)({
+            if (null != g && null != t) return _ < t.cost ? void(0, a.g)({
                 analyticsLocation: {
                     page: A.liQ.GUILD_POWERUPS_OVERVIEW,
                     section: A.JJy.GUILD_POWERUPS_OVERVIEW_CARD
                 },
-                numberOfBoostsToAdd: t.cost - g,
+                numberOfBoostsToAdd: t.cost - _,
                 analyticsLocations: n,
-                guild: _,
+                guild: g,
                 intent: t.type === h.o9.LEVEL ? h.Pn.LEVEL : h.Pn.PERK,
                 onSubscribeComplete: () => l(!0)?.then(() => {
-                    m(_.id, t, i)
+                    m(g.id, t, i)
                 })
             }) : l(!0)?.then(() => {
-                m(_.id, t, i)
+                m(g.id, t, i)
             })
-        }, [l, t, g, n, _]),
+        }, [l, t, _, n, g]),
         isLoading: u,
         error: p
     }

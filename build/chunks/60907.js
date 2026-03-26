@@ -6,22 +6,22 @@ n.d(t, {
 });
 var r = n(64700),
     l = n(172218),
-    s = n(311907),
+    a = n(311907),
     i = n(475743),
-    a = n(531685);
+    s = n(531685);
 let o = 2;
 
 function u() {
-    let [e, t] = r.useState(!1), n = (0, i.A)(e), s = null !== n && e !== n;
+    let [e, t] = r.useState(!1), n = (0, i.A)(e), a = null !== n && e !== n;
     return {
         visible: e,
-        visibleChanged: s,
+        visibleChanged: a,
         targetRef: (0, l.K)(e => t(e), .6)
     }
 }
 
 function c() {
-    let e = (0, s.bG)([a.A], () => a.A.isFocused()),
+    let e = (0, a.bG)([s.A], () => s.A.isFocused()),
         t = (0, i.A)(e),
         n = null !== t && e !== t;
     return {

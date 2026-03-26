@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(531685),
     m = n(85448),
     p = n(806931),
-    _ = n(254187),
-    g = n(20976),
+    g = n(254187),
+    _ = n(20976),
     f = n(162253);
 let x = {
     SCALE_MIN: .7,
@@ -115,16 +115,16 @@ class C extends s.PureComponent {
             theme: e,
             children: t,
             className: n
-        } = this.props, s = (0, d.Mw)(e), l = r()(_._y, {
+        } = this.props, s = (0, d.Mw)(e), l = r()(g._y, {
             [f.cp]: s,
             [f.QB]: !s
         });
         return (0, i.jsxs)(a.A.div, {
             role: "listitem",
-            className: r()(_.kY, n),
+            className: r()(g.kY, n),
             style: this.getWidthStyle(),
             children: [(0, i.jsx)("div", {
-                className: r()(_.XY, g.xM, g.wq, g.Hu),
+                className: r()(g.XY, _.xM, _.wq, _.Hu),
                 children: (0, i.jsx)(a.A.div, {
                     className: l,
                     style: this.getSpriteStyle()
@@ -145,7 +145,7 @@ function E(e) {
         className: l,
         onClick: a,
         width: d,
-        guildId: g
+        guildId: _
     } = e, f = (0, h.Ay)(), x = (t = n.length, ((0, u.FT9)(u._3J.SIZE_80) + 16) * t > d ? u._3J.SIZE_40 : u._3J.SIZE_80), E = (0, o.bG)([A.A], () => A.A.isFocused()), I = n.map(e => {
         if (e.type !== p.lp.USER) return null;
         let {
@@ -155,7 +155,7 @@ function E(e) {
             ringing: r
         } = e;
         return (0, i.jsx)(C, {
-            className: _.Wp,
+            className: g.Wp,
             width: (0, u.FT9)(x),
             theme: f,
             children: (0, i.jsx)(u.sqX, {
@@ -164,7 +164,7 @@ function E(e) {
                 onContextMenu: t => s?.(e, t),
                 children: (0, i.jsx)(m.A, {
                     userId: t.id,
-                    src: t.getAvatarURL(g, (0, u.FT9)(x), l && E),
+                    src: t.getAvatarURL(_, (0, u.FT9)(x), l && E),
                     size: x,
                     muted: n?.isVoiceMuted() ?? !1,
                     deafen: n?.isVoiceDeafened() ?? !1,
@@ -177,7 +177,7 @@ function E(e) {
     return (0, i.jsx)(c.F, {
         component: "div",
         role: "list",
-        className: r()(_.zr, l),
+        className: r()(g.zr, l),
         children: I
     })
 }

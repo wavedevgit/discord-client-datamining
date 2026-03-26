@@ -16,15 +16,15 @@ var a = n(627968),
     x = n(239606),
     p = n(287809),
     g = n(43708),
-    _ = n(14752),
-    f = n(930442),
+    f = n(14752),
+    _ = n(930442),
     v = n(553622),
     b = n(778765),
     j = n(73269);
 let A = {
-        [_.qH.THUMBNAIL]: null,
-        [_.qH.STATIC]: null,
-        [_.qH.REDUCED_MOTION]: null
+        [f.qH.THUMBNAIL]: null,
+        [f.qH.STATIC]: null,
+        [f.qH.REDUCED_MOTION]: null
     },
     C = "debug",
     y = "reduced-motion-preview-modal",
@@ -76,7 +76,7 @@ let A = {
             frame: n,
             theme: i,
             onClear: s
-        } = e, r = t === _.qH.REDUCED_MOTION, o = r ? j.A : b.A, d = (0, a.jsx)(c.NPJ, {
+        } = e, r = t === f.qH.REDUCED_MOTION, o = r ? j.A : b.A, d = (0, a.jsx)(c.NPJ, {
             theme: i,
             children: e => (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsx)("img", {
@@ -140,10 +140,10 @@ let A = {
             return null == t ? null : t[0]
         }, W = (e, t) => {
             let n = V(t);
-            null != n && (0, _.Mz)(n, t => {
+            null != n && (0, f.Mz)(n, t => {
                 P(a => ({
                     ...a,
-                    [e]: (0, _.GT)(t, n)
+                    [e]: (0, f.GT)(t, n)
                 }))
             })
         };
@@ -160,7 +160,7 @@ let A = {
                         [t]: n
                     }));
                     else if ("" !== n.base64 && null != n.base64) {
-                        let e = (0, _.fB)(n.base64);
+                        let e = (0, f.fB)(n.base64);
                         n.src = e, M.current.push(e), P(e => ({
                             ...e,
                             [t]: n
@@ -205,8 +205,8 @@ let A = {
                     },
                     onChange: e => {
                         let t = V(e);
-                        null != t && (0, _.Mz)(t, async e => {
-                            let n = await (0, _.Ay)(e, t, R.length);
+                        null != t && (0, f.Mz)(t, async e => {
+                            let n = await (0, f.Ay)(e, t, R.length);
                             w(e => [...e, n])
                         })
                     },
@@ -215,19 +215,19 @@ let A = {
                     ref: e => {
                         y.current.thumbnail = e
                     },
-                    onChange: e => W(_.qH.THUMBNAIL, e),
+                    onChange: e => W(f.qH.THUMBNAIL, e),
                     multiple: !1
                 }), (0, a.jsx)(m.A, {
                     ref: e => {
                         y.current.static = e
                     },
-                    onChange: e => W(_.qH.STATIC, e),
+                    onChange: e => W(f.qH.STATIC, e),
                     multiple: !1
                 }), (0, a.jsx)(m.A, {
                     ref: e => {
                         y.current.reducedMotion = e
                     },
-                    onChange: e => W(_.qH.REDUCED_MOTION, e),
+                    onChange: e => W(f.qH.REDUCED_MOTION, e),
                     multiple: !1
                 })]
             }), (0, a.jsxs)("div", {
@@ -310,7 +310,7 @@ let A = {
                         })
                     }), d && (0, a.jsx)("div", {
                         className: v.KJ,
-                        children: (0, a.jsx)(f.A, {
+                        children: (0, a.jsx)(_.A, {
                             config: G
                         })
                     })]
@@ -326,7 +326,7 @@ let A = {
                             pendingProfileEffect: null,
                             canUsePremiumCustomization: !0,
                             isTryItOut: !0
-                        }), (0, a.jsx)(f.A, {
+                        }), (0, a.jsx)(_.A, {
                             config: G
                         })]
                     })
@@ -381,7 +381,7 @@ let A = {
                         }), (0, a.jsxs)("div", {
                             className: v.nM,
                             children: [(0, a.jsx)(u.A, {
-                                fileContents: () => (0, _.rs)(R),
+                                fileContents: () => (0, f.rs)(R),
                                 contentType: "text/plain",
                                 fileName: `${B}_timing_config.txt`,
                                 children: (0, a.jsx)(c.Button, {
@@ -574,7 +574,7 @@ let A = {
                                 },
                                 onChange: e => {
                                     let n;
-                                    null != (n = V(e)) && (0, _.Mz)(n, e => {
+                                    null != (n = V(e)) && (0, f.Mz)(n, e => {
                                         w(a => {
                                             let i = [...a],
                                                 s = a[t];

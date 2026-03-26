@@ -8,17 +8,17 @@ n.d(t, {
 });
 var r = n(627968),
     l = n(64700),
-    s = n(503698),
-    i = n.n(s),
-    a = n(497766),
+    a = n(503698),
+    i = n.n(a),
+    s = n(497766),
     o = n(827734),
     u = n(876230),
     c = n(61491),
     d = n(435371),
     m = n(397927),
     p = n(985018),
-    f = n(681636);
-let E = "-:--",
+    E = n(681636);
+let f = "-:--",
     h = 1500,
     v = {
         [u.Q6.PLAYING]: {
@@ -47,22 +47,22 @@ function S(e) {
     let {
         current: t,
         duration: n
-    } = e, l = null != t ? (0, c.rB)(t) : E, s = null != n ? (0, c.rB)(n) : E;
+    } = e, l = null != t ? (0, c.rB)(t) : f, a = null != n ? (0, c.rB)(n) : f;
     return (0, r.jsxs)("div", {
-        className: i()(f.d$, f.jk),
+        className: i()(E.d$, E.jk),
         "data-testid": "discord-web-video-player-duration",
         children: [(0, r.jsx)(m.Text, {
             variant: "text-xs/normal",
-            className: f.Ue,
+            className: E.Ue,
             children: l
         }), (0, r.jsx)(m.Text, {
             variant: "text-xs/normal",
-            className: f.zO,
+            className: E.zO,
             children: "/"
         }), (0, r.jsx)(m.Text, {
             variant: "text-xs/normal",
-            className: f.Ue,
-            children: s
+            className: E.Ue,
+            children: a
         })]
     })
 }
@@ -70,52 +70,52 @@ let A = l.forwardRef(function(e, t) {
     let {
         iconComponent: n,
         animationTime: l,
-        visible: s,
+        visible: a,
         ariaLabel: c,
         active: p,
-        disabled: E,
+        disabled: f,
         tooltipLabel: v,
         tooltipDelayMs: x = h,
         shortcut: S,
         onClick: A,
-        buttonSize: C = u.n4.MD,
+        buttonSize: b = u.n4.MD,
         "data-testid": _
-    } = e, b = e => (0, r.jsx)(m.DUT, {
+    } = e, C = e => (0, r.jsx)(m.DUT, {
         ...e,
-        onClick: !0 === E ? void 0 : A,
-        className: i()(f.K5, {
-            [f.Iy]: E
+        onClick: !0 === f ? void 0 : A,
+        className: i()(E.K5, {
+            [E.Iy]: f
         }),
         "aria-label": c,
-        "aria-disabled": E,
+        "aria-disabled": f,
         "data-testid": _,
         innerRef: t,
-        children: (0, r.jsx)(a.animated.div, {
-            className: f.K5,
+        children: (0, r.jsx)(s.animated.div, {
+            className: E.K5,
             style: {
-                opacity: (0, a.to)([l.to({
+                opacity: (0, s.to)([l.to({
                     range: [0, 1],
                     output: [0, 1]
-                })], e => `${s?e:Math.pow(e,8)}`),
+                })], e => `${a?e:Math.pow(e,8)}`),
                 height: {
                     [u.n4.LG]: "32px",
                     [u.n4.MD]: "24px"
-                } [C]
+                } [b]
             },
             children: (0, r.jsx)(n, {
-                size: g[C],
-                color: !0 !== E ? o.A.colors.WHITE : o.A.colors.TEXT_MUTED,
-                className: i()(f.jk, {
-                    [f.x2]: p,
-                    [f.Wr]: !E
+                size: g[b],
+                color: !0 !== f ? o.A.colors.WHITE : o.A.colors.TEXT_MUTED,
+                className: i()(E.jk, {
+                    [E.x2]: p,
+                    [E.Wr]: !f
                 })
             })
         })
     });
-    return null != v && s ? (0, r.jsx)(d.m_, {
+    return null != v && a ? (0, r.jsx)(d.m_, {
         text: v,
         keyboardShortcut: "" !== (S ?? "").trim() ? S : void 0,
         delay: x,
-        children: b()
-    }) : b()
+        children: C()
+    }) : C()
 })

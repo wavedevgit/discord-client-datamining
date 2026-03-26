@@ -4,7 +4,7 @@ n.d(t, {
 });
 var r = n(945810),
     l = n(332628);
-let s = (0, r.mj)({
+let a = (0, r.mj)({
     name: "2025-09-video-qoe-metrics-tracking",
     kind: "user",
     defaultConfig: {
@@ -32,7 +32,7 @@ function i(e) {
     });
     return n ? {
         externalAnalyticsEnabled: !1
-    } : s.getConfig({
+    } : a.getConfig({
         location: t
     })
 }

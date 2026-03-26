@@ -19,17 +19,17 @@ function c(e) {
     } = e, g = (0, i.bG)([r.A], () => r.A.getVoiceChannelId() === n.id), h = (0, o.tx)(n.guild_id, n.id, t), {
         icon: A,
         iconColor: p,
-        tooltipText: I,
-        disabled: x,
+        tooltipText: x,
+        disabled: I,
         shouldHideButton: m,
-        onClick: v
+        onClick: S
     } = (0, d.A)({
         user: t,
         channel: n,
         location: c
     });
     return !g || m ? null : (0, l.jsx)(s.m_, {
-        text: I,
+        text: x,
         children: (0, l.jsx)("div", {
             children: (0, l.jsx)(a.K0, {
                 variant: "icon-only",
@@ -41,8 +41,8 @@ function c(e) {
                     username: h
                 }),
                 size: "sm",
-                onClick: v,
-                disabled: x
+                onClick: S,
+                disabled: I
             })
         })
     })

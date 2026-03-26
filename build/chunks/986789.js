@@ -36,7 +36,7 @@ function x() {
                 p(e)
             }
         }, e)), [p]),
-        _ = i.useCallback(() => {
+        f = i.useCallback(() => {
             null != x && null != e && o.h.dispatch({
                 type: "GAME_SERVER_UPDATE_INSTANCE_SUCCESS",
                 guildId: e,
@@ -72,7 +72,7 @@ function x() {
                 children: (0, a.jsx)(r.Button, {
                     variant: "primary",
                     text: "Remove IP Address & Game Server Panel URL",
-                    onClick: _
+                    onClick: f
                 })
             }), (0, a.jsx)(r.Text, {
                 variant: "eyebrow",

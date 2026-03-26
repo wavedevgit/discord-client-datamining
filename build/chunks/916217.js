@@ -1,6 +1,6 @@
 /** chunk id: 916217 params = (module,exports,require) **/
 t.d(n, {
-    A: () => P
+    A: () => O
 });
 var i = t(627968),
     s = t(64700),
@@ -29,27 +29,27 @@ var i = t(627968),
     E = t(985018),
     T = t(763563),
     L = t(195723),
-    O = t(368519);
+    P = t(368519);
 
-function P(e) {
+function O(e) {
     let {
         user: n,
         guildId: t,
-        channelId: P,
+        channelId: O,
         messageId: R,
         roleId: S,
         sessionId: M,
         transitionState: k,
         onClose: G,
         sourceAnalyticsLocations: B = []
-    } = e, U = t === N.ME ? void 0 : t, D = (0, _.Ay)(n.id, U), w = u.Ay.getName(U, P, n), F = (0, o.GV)(), {
+    } = e, U = t === N.ME ? void 0 : t, D = (0, _.Ay)(n.id, U), w = u.Ay.getName(U, O, n), F = (0, o.GV)(), {
         analyticsLocations: V
     } = (0, l.Ay)([...B, a.A.USER_PROFILE_MODAL]), z = (0, A.pb)({
         layout: "MODAL",
         userId: n.id,
         sourceSessionId: M,
         guildId: U,
-        channelId: P,
+        channelId: O,
         messageId: R,
         roleId: S
     }), W = s.useRef(null), H = (0, d.M)(W);
@@ -94,7 +94,7 @@ function P(e) {
                                     user: n,
                                     displayProfile: D,
                                     guildId: U,
-                                    channelId: P,
+                                    channelId: O,
                                     themeType: y.d.MODAL
                                 })
                             })]
@@ -113,14 +113,14 @@ function P(e) {
                                     onClose: G
                                 })
                             }), (0, i.jsxs)("div", {
-                                className: O.kL,
+                                className: P.kL,
                                 children: [(0, i.jsx)(r.VQ0, {
-                                    className: O.$H,
+                                    className: P.$H,
                                     type: "top",
                                     selectedItem: C.RP.BOT_INFO,
                                     onItemSelect: N.tEg,
                                     children: (0, i.jsx)(r.VQ0.Item, {
-                                        className: O.YU,
+                                        className: P.YU,
                                         id: C.RP.BOT_INFO,
                                         "aria-label": E.intl.string(E.t.ZzAR2Y),
                                         children: (0, i.jsx)(r.Text, {

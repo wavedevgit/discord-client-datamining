@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(993719),
     p = n(14059),
     g = n(362823),
-    _ = n(980923),
-    f = n(206018),
+    f = n(980923),
+    _ = n(206018),
     v = n(480890),
     b = n(74848),
     j = n(77735),
@@ -82,7 +82,7 @@ function D(e) {
         } = en,
         er = s || D ? r.O1p : ei;
     i.useEffect(() => () => el(), [et, el]);
-    let eo = (0, _.A)(n, s, D, P);
+    let eo = (0, f.A)(n, s, D, P);
     t = F ? {
         tooltipType: "green_void_do_not_use",
         tooltipText: I.intl.string(I.t["29gnR4"]),
@@ -111,7 +111,7 @@ function D(e) {
                 } = e;
                 return K(), (0, a.jsx)(h.f5, {
                     value: ea,
-                    children: (0, a.jsx)(f.A, {
+                    children: (0, a.jsx)(_.A, {
                         onInteraction: (0, v.s)("AudioDeviceMenu", m.A.ACCOUNT),
                         onClose: t,
                         maybeRenderPTTCheckbox: !0,

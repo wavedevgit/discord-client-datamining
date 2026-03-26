@@ -32,8 +32,8 @@ function h() {
         x = m.useField("includeUserSearchWorkerState"),
         p = m.useField("isUploading"),
         g = m.useField("isSuccess"),
-        _ = m.useField("errorMessage"),
-        f = i.useCallback(async () => {
+        f = m.useField("errorMessage"),
+        _ = i.useCallback(async () => {
             let {
                 includeFrecency: e,
                 includeFriends: t,
@@ -111,8 +111,8 @@ function h() {
         }), (0, a.jsx)(c.q, {
             isUploading: p,
             isSuccess: g,
-            errorMessage: _,
-            onClick: f,
+            errorMessage: f,
+            onClick: _,
             title: "Upload Snapshot Logs"
         })]
     })

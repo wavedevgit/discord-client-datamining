@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(855446),
     m = n(793574),
     p = n(688810),
-    _ = n(975412),
-    g = n(392054),
+    g = n(975412),
+    _ = n(392054),
     f = n(826673),
     x = n(757293),
     C = n(954571),
@@ -78,7 +78,7 @@ function v(e) {
                 text: N.intl.string(N.t.qJvTKQ),
                 children: (0, i.jsx)(d.DUT, {
                     onClick: () => {
-                        (0, _.A)({
+                        (0, g.A)({
                             context: null != t ? {
                                 type: "channel",
                                 channel: t
@@ -152,7 +152,7 @@ function y(e) {
     }
 
     function A() {
-        (0, _.A)({
+        (0, g.A)({
             context: null != t ? {
                 type: "channel",
                 channel: t
@@ -208,7 +208,7 @@ function j(e) {
             n_participants: c
         })
     });
-    let _ = (0, h.A)({
+    let g = (0, h.A)({
             guildId: n.id
         }).slice(0, 3),
         {
@@ -230,12 +230,12 @@ function j(e) {
                 className: r()(b.Di, {
                     [b.qy]: o <= 300
                 }),
-                children: _.map(e => (0, i.jsx)(A.C, {
+                children: g.map(e => (0, i.jsx)(A.C, {
                     context: T,
                     activityItem: e,
                     aspectRatio: A.C.AspectRatio.SIXTEEN_BY_NINE,
                     animatedDivClass: b.KU,
-                    commandOrigin: g.iw.VOICE_TILE_ACTIVITY_SUGGESTIONS
+                    commandOrigin: _.iw.VOICE_TILE_ACTIVITY_SUGGESTIONS
                 }, e.application.id))
             }), (0, i.jsxs)(d.DUT, {
                 className: b.HI,

@@ -10,14 +10,14 @@ var d = n(311907),
     h = n(403362),
     A = n(735547),
     p = n(734057),
-    I = n(576705),
-    x = n(994500),
+    x = n(576705),
+    I = n(994500),
     m = n(652215),
-    v = n(172799);
-let S = new Set,
+    S = n(172799);
+let v = new Set,
     y = [],
     E = new Map,
-    f = {
+    T = {
         numFriends: 0,
         numDms: 0,
         numGroupDms: 0,
@@ -28,13 +28,13 @@ function _(e) {
     let t = new Set,
         n = a?.type === m.rbe.GUILD_VOICE,
         l = null;
-    null == s || o === v.yV.EMBEDDED_APPLICATION || n || (l = s.id);
-    let i = (0, A.oW)(S, l);
-    for (let e of (null == i || x.A.isBlockedOrIgnored(i.id) || t.add(i.id), g.A.getUserAffinities())) t.add(e.otherUserId);
+    null == s || o === S.yV.EMBEDDED_APPLICATION || n || (l = s.id);
+    let i = (0, A.oW)(v, l);
+    for (let e of (null == i || I.A.isBlockedOrIgnored(i.id) || t.add(i.id), g.A.getUserAffinities())) t.add(e.otherUserId);
     let r = new Set;
-    return o === v.yV.EMBEDDED_APPLICATION && c.A.getChannelHistory().map(e => p.A.getChannel(e)).filter(h.Vq).filter(e => e.type === m.rbe.GUILD_TEXT).filter(e => I.A.can(m.xBc.SEND_MESSAGES, e)).slice(0, 3).forEach(e => r.add(e.id)), (0, A.Us)({
+    return o === S.yV.EMBEDDED_APPLICATION && c.A.getChannelHistory().map(e => p.A.getChannel(e)).filter(h.Vq).filter(e => e.type === m.rbe.GUILD_TEXT).filter(e => x.A.can(m.xBc.SEND_MESSAGES, e)).slice(0, 3).forEach(e => r.add(e.id)), (0, A.Us)({
         query: e,
-        omitUserIds: S,
+        omitUserIds: v,
         suggestedUserIds: t,
         maxRowsWithoutQuery: 100,
         omitGuildId: l,
@@ -43,7 +43,7 @@ function _(e) {
     })
 }
 
-function T(e) {
+function f(e) {
     y = e, E = new Map, e.forEach((e, t) => {
         E.set(e, {
             index: t
@@ -53,7 +53,7 @@ function T(e) {
 class C extends d.Ay.Store {
     static displayName = "InviteSuggestionsStore";
     initialize() {
-        this.waitFor(p.A, I.A, c.A, x.A, g.A)
+        this.waitFor(p.A, x.A, c.A, I.A, g.A)
     }
     getInviteSuggestionRows() {
         return y
@@ -62,7 +62,7 @@ class C extends d.Ay.Store {
         return l
     }
     getInitialCounts() {
-        return f
+        return T
     }
     getSelectedInviteMetadata(e) {
         let t = E.get(e),
@@ -85,7 +85,7 @@ let N = new C(u.h, {
             applicationId: u,
             inviteTargetType: c
         } = e;
-        s = null != d ? n : null, a = d, r = u, o = c, S = new Set([...t, ...x.A.getBlockedOrIgnoredIDs(), ...(0, A.Uo)({
+        s = null != d ? n : null, a = d, r = u, o = c, v = new Set([...t, ...I.A.getBlockedOrIgnoredIDs(), ...(0, A.Uo)({
             channel: a,
             applicationId: r,
             inviteTargetType: c
@@ -94,7 +94,7 @@ let N = new C(u.h, {
             rows: g,
             counts: h
         } = _("");
-        T(g), f = h, l = y.length
+        f(g), T = h, l = y.length
     },
     INVITE_SUGGESTIONS_SEARCH: function(e) {
         let {
@@ -104,6 +104,6 @@ let N = new C(u.h, {
         let {
             rows: n
         } = _(t);
-        n.sort((e, t) => null != e.score && null != t.score ? e.score - t.score : 0), T(n)
+        n.sort((e, t) => null != e.score && null != t.score ? e.score - t.score : 0), f(n)
     }
 })

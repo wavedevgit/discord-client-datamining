@@ -27,9 +27,9 @@ var i = n(627968),
     g = n(164956),
     O = n(311127),
     y = n(652215),
-    x = n(746080);
+    P = n(746080);
 n(500208);
-var P = n(2242),
+var x = n(2242),
     f = n(985018),
     D = n(840199);
 
@@ -91,7 +91,7 @@ function M() {
             }
         }(s),
         j = s === y.BEX.ROLE_SUBSCRIPTIONS ? f.intl.string(f.t.hZUCzd) : f.intl.string(f.t["/djIh7"]),
-        b = n === x.VV.GUILD_ONBOARDING,
+        b = n === P.VV.GUILD_ONBOARDING,
         G = e => {
             let {
                 backToSettings: n
@@ -158,7 +158,7 @@ function M() {
             }), C && (0, i.jsx)(c.m, {
                 asContainer: !0,
                 text: f.intl.formatToPlainString(f.t.eummvd, {
-                    maxTiers: P.f7,
+                    maxTiers: x.f7,
                     maxProducts: 50
                 }),
                 children: (0, i.jsx)(d.EpV, {

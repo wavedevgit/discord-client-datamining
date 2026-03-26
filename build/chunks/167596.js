@@ -20,17 +20,17 @@ function h(e) {
         maxAge: h,
         maxUses: A,
         temporary: p,
-        onToggleTemporary: I,
-        onSelectMaxAge: x,
+        onToggleTemporary: x,
+        onSelectMaxAge: I,
         onSelectMaxUses: m,
-        isGuestInviteCreationToggleEnabled: v,
-        inviteFlags: S,
+        isGuestInviteCreationToggleEnabled: S,
+        inviteFlags: v,
         onSetInviteFlags: y,
         isRoleAssignmentEnabled: E,
-        assignableRoles: f,
+        assignableRoles: T,
         selectedRoleIds: _,
-        onToggleRole: T
-    } = e, C = o.Ay.getMaxAgeOptionByValue(h), N = g.find(e => e.value === A), b = i.useMemo(() => f.map(e => ({
+        onToggleRole: f
+    } = e, C = o.Ay.getMaxAgeOptionByValue(h), N = g.find(e => e.value === A), b = i.useMemo(() => T.map(e => ({
         id: e.id,
         value: e.id,
         label: e.name,
@@ -40,13 +40,13 @@ function h(e) {
             background: !1,
             tooltip: !1
         })
-    })), [f]), M = i.useCallback(e => {
+    })), [T]), M = i.useCallback(e => {
         let t = Array.from(_),
             n = e ?? [],
             l = n.find(e => !t.includes(e)),
             i = t.find(e => !n.includes(e));
-        null != l ? T(l) : null != i && T(i)
-    }, [_, T]);
+        null != l ? f(l) : null != i && f(i)
+    }, [_, f]);
     return (0, l.jsxs)("div", {
         className: c.z1,
         children: [(0, l.jsx)(r.ZiE, {
@@ -64,7 +64,7 @@ function h(e) {
                 }
             },
             value: C?.value ?? n[0].value,
-            onSelectionChange: x,
+            onSelectionChange: I,
             selectionMode: "single"
         }), (0, l.jsx)(r.ZiE, {
             label: u.intl.string(u.t.jDqWHW),
@@ -83,7 +83,7 @@ function h(e) {
             value: N?.value,
             onSelectionChange: m,
             selectionMode: "single"
-        }), E && f.length > 0 && (0, l.jsx)(r.ZiE, {
+        }), E && T.length > 0 && (0, l.jsx)(r.ZiE, {
             label: u.intl.string(u.t.rPYJxL),
             placeholder: u.intl.string(u.t["/djIh7"]),
             options: b,
@@ -94,13 +94,13 @@ function h(e) {
             disabled: p
         }), !t && (0, l.jsx)(r.dOG, {
             checked: p,
-            onChange: e => I(e),
+            onChange: e => x(e),
             description: u.intl.string(u.t.UN5IRX),
             label: u.intl.string(u.t["wE+9dr"]),
             disabled: _.size > 0
-        }), v && (0, l.jsx)(r.dOG, {
-            checked: (0, a.Lt)(S, s.Q.IS_GUEST_INVITE),
-            onChange: e => y((0, a.lA)(S, s.Q.IS_GUEST_INVITE, e)),
+        }), S && (0, l.jsx)(r.dOG, {
+            checked: (0, a.Lt)(v, s.Q.IS_GUEST_INVITE),
+            onChange: e => y((0, a.lA)(v, s.Q.IS_GUEST_INVITE, e)),
             description: u.intl.string(u.t["/FeTK6"]),
             label: u.intl.string(u.t.siexRS)
         })]

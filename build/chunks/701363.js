@@ -37,18 +37,18 @@ var l = n(627968),
     L = n(571694),
     U = n(47167),
     D = n(432222),
-    O = n(880714),
-    w = n(824994),
-    G = n(922301),
-    Q = n(750112),
-    P = n(570622),
-    F = n(414808),
-    k = n(954376),
-    V = n(534400),
-    q = n(111864),
-    B = n(967054),
-    H = n(226540),
-    z = n(227),
+    O = n(449582),
+    w = n(351952),
+    G = n(88686),
+    Q = n(214881),
+    P = n(880714),
+    F = n(824994),
+    k = n(922301),
+    V = n(750112),
+    q = n(570622),
+    B = n(414808),
+    H = n(954376),
+    z = n(534400),
     W = n(854627),
     K = n(616356),
     Y = n(290863),
@@ -78,7 +78,7 @@ let ea = en.Ay.getEnableHardwareAcceleration() ? x.JsQ : x.euF,
             reducedClickTarget: i = !1,
             visibleElementRef: r,
             ...u
-        } = e, o = (0, B.K)(t);
+        } = e, o = (0, w.K)(t);
         return (0, l.jsx)(x.DUT, {
             className: a()(ei.b, {
                 [ei.DQ]: null != t,
@@ -163,7 +163,7 @@ let ea = en.Ay.getEnableHardwareAcceleration() ? x.JsQ : x.euF,
             listItemRef: h,
             ...T
         } = e;
-        return (0, l.jsx)(O.A, {
+        return (0, l.jsx)(P.A, {
             className: a()(ei.Ix, {
                 [ei.Ij]: f.Fr
             }, A),
@@ -212,8 +212,8 @@ function eA(e) {
         activities: f,
         applicationStream: T,
         voiceChannel: v,
-        isTyping: q,
-        status: B,
+        isTyping: O,
+        status: w,
         isMobile: K,
         isVR: Y,
         nameplate: Z,
@@ -225,7 +225,7 @@ function eA(e) {
     }, [])), eN = s.useRef(null), eg = ee ?? eN, eC = (0, A.A)(eg, e_), {
         showMenuItemPopover: ev,
         markMenuItemPopoverAsDismissed: eI
-    } = (0, P.z)({
+    } = (0, q.z)({
         location: "PrivateChannel",
         isChannelSelected: !0 === i,
         isTargetInViewport: eT,
@@ -315,14 +315,14 @@ function eA(e) {
                 ...t
             })
         })
-    }, e9 = (0, l.jsx)(Q.A, {
+    }, e9 = (0, l.jsx)(V.A, {
         userName: eB,
         displayNameStyles: r?.displayNameStyles,
-        effectDisplayType: em || i || ef ? G.G.ANIMATED : G.G.PLAIN,
+        effectDisplayType: em || i || ef ? k.G.ANIMATED : k.G.PLAIN,
         loop: em,
         boldFontOpacity: .9
     }), e6 = ew ? (0, l.jsxs)(l.Fragment, {
-        children: [e9, (0, l.jsx)(V.Ay, {
+        children: [e9, (0, l.jsx)(z.Ay, {
             primaryGuild: r?.primaryGuild,
             userId: r?.id,
             inline: !0,
@@ -331,7 +331,7 @@ function eA(e) {
                 [ei.Y_]: eV
             })
         })]
-    }) : e9, e7 = s.useRef(null), e3 = (0, w.W)({
+    }) : e9, e7 = s.useRef(null), e3 = (0, F.W)({
         location: "PrivateChannel"
     }) && r?.displayNameStyles != null, e5 = [(0, y.Ay)({
         channel: t,
@@ -339,7 +339,7 @@ function eA(e) {
     }), (0, y.r2)({
         channel: t,
         muted: eG,
-        userStatus: B
+        userStatus: w
     })].filter(Boolean).join(", "), e4 = (0, S.bG)([$.Ay], () => $.Ay.lastMessageId(t.id)), {
         waveShouldShow: e8,
         wavePressed: te
@@ -365,7 +365,7 @@ function eA(e) {
                 role: n,
                 ...s
             } = e;
-            return (0, l.jsxs)(O.A, {
+            return (0, l.jsxs)(P.A, {
                 className: a()(ei.Ix, ei.dm),
                 role: n,
                 focusProps: {
@@ -394,12 +394,12 @@ function eA(e) {
                     onClick: e0,
                     muted: eV,
                     selected: i,
-                    children: [(0, l.jsx)(z.A, {
+                    children: [(0, l.jsx)(Q.A, {
                         nameplate: ez ? Z : void 0,
                         selected: i,
                         hovered: em,
                         content: e7,
-                        placement: H.u.CHANNEL
+                        placement: G.u.CHANNEL
                     }), (0, l.jsx)("div", {
                         className: ei.lU,
                         ref: eL,
@@ -416,24 +416,24 @@ function eA(e) {
                             avatar: (() => {
                                 let e = x._3J.SIZE_32;
                                 if (t.isMultiUserDM())
-                                    if (t.recipients.length >= 2 && null == t.icon) return (0, l.jsx)(k.A, {
+                                    if (t.recipients.length >= 2 && null == t.icon) return (0, l.jsx)(H.A, {
                                         "aria-hidden": !0,
                                         recipients: t.recipients,
                                         size: e,
-                                        isTyping: q,
-                                        status: B
+                                        isTyping: O,
+                                        status: w
                                     });
                                     else return (0, l.jsx)(ea, {
                                         ...ej,
                                         src: (0, L.Y)(t),
                                         "aria-hidden": !0,
                                         size: e,
-                                        status: q ? el.clD.ONLINE : B,
-                                        isTyping: q
+                                        status: O ? el.clD.ONLINE : w,
+                                        isTyping: O
                                     });
                                 u()(null != r, "PrivateChannel.renderAvatar: Invalid prop configuration - no user or channel");
                                 let n = null;
-                                return r.isSystemUser() || (n = (0, g.A)(f) ? el.clD.STREAMING : B), (0, l.jsx)(ea, {
+                                return r.isSystemUser() || (n = (0, g.A)(f) ? el.clD.STREAMING : w), (0, l.jsx)(ea, {
                                     ...ej,
                                     size: x._3J.SIZE_32,
                                     src: eM,
@@ -441,7 +441,7 @@ function eA(e) {
                                     status: n,
                                     isMobile: K,
                                     isVR: Y,
-                                    isTyping: q,
+                                    isTyping: O,
                                     "aria-label": r.username,
                                     statusTooltip: !0
                                 })
@@ -458,7 +458,7 @@ function eA(e) {
                                 })
                             }) : (0, C.A)({
                                 activities: f,
-                                status: B,
+                                status: w,
                                 applicationStream: T,
                                 voiceChannel: v
                             }) ? (0, l.jsx)(I.A, {
@@ -501,7 +501,7 @@ function eA(e) {
                             visibleElementRef: eH
                         }) : null]
                     })]
-                }), ev && (0, l.jsx)(F.A, {
+                }), ev && (0, l.jsx)(B.A, {
                     targetElementRef: eg,
                     markMenuItemPopoverAsDismissed: eI
                 })]
@@ -531,7 +531,7 @@ let eE = 21552 == n.j ? e => {
         voiceChannel: u
     } = (0, v.A)({
         userId: a
-    }), o = (0, q.r)({
+    }), o = (0, O.r)({
         user: i
     }), c = (0, S.bG)([ee.default, Z.A], () => t.isMultiUserDM() ? et.default.keys(Z.A.getTypingUsers(t.id)).some(e => e !== ee.default.getCurrentUser()?.id) : null != i && Z.A.isTyping(t.id, t.getRecipientId()), [t, i]);
     return t.isMultiUserDM() ? (0, l.jsx)(eA, {

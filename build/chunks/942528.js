@@ -27,8 +27,8 @@ let v = e => {
         disableActivityProfileLinks: j,
         customCTA: A,
         popoutClassname: C,
-        popoutPosition: b = "right"
-    } = e, I = l.useRef(null), E = (0, s.bG)([d.A, o.A], () => o.A.getChannel(d.A.getChannelId())), N = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
+        popoutPosition: I = "right"
+    } = e, b = l.useRef(null), E = (0, s.bG)([d.A, o.A], () => o.A.getChannel(d.A.getChannelId())), N = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
         nick: S,
         avatar: k
     } = l.useMemo(() => {
@@ -39,8 +39,8 @@ let v = e => {
         }
     }, [N, E]);
     return null == N ? null : (0, a.jsx)(c.YNO, {
-        targetElementRef: I,
-        position: b,
+        targetElementRef: b,
+        position: I,
         renderPopout: e => {
             let {
                 closePopout: l,
@@ -66,7 +66,7 @@ let v = e => {
             v?.()
         },
         children: e => (0, a.jsx)(c.DUT, {
-            innerRef: I,
+            innerRef: b,
             ...e,
             className: p.GA,
             children: (0, a.jsx)(c.vN3, {

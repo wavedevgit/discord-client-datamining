@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(994500),
     m = n(287809),
     p = n(203982),
-    _ = n(518960),
-    g = n(65593),
+    g = n(518960),
+    _ = n(65593),
     f = n(698638),
     x = n(652215),
     C = n(985018);
@@ -30,7 +30,7 @@ let E = function(e) {
     } = e, [N, b] = s.useState(!0), S = (0, l.bG)([u.A], () => u.A.hasLayers()), T = (0, l.bG)([h.A], () => null != E && h.A.can(x.xBc.ATTACH_FILES, E), [E]), v = null != (0, l.bG)([a.A], () => a.A.getActiveCommand(E.id)), y = E.getGuildId(), j = I === c.C.FirstThreadMessage, R = (0, r.vL)(E), O = s.useMemo(() => !S && (E.isPrivate() && !E.isManaged() || null != y && !R && T && d.A.canChatInGuild(y)), [T, R, E, y, S]), L = j ? x.kvI.GUILD_THREADS_ONLY.has(E.type) ? C.intl.string(C.t.RBBLhL) : C.intl.string(C.t.gUx4eu) : N ? C.intl.format(C.t.dYP2Fc, {
         destination: (0, o.m1)(E, m.default, A.A, !0)
     }) : C.intl.string(C.t.h76ulG);
-    return v || !O ? null : (0, i.jsx)(g.A, {
+    return v || !O ? null : (0, i.jsx)(_.A, {
         className: t,
         style: n,
         title: L,
@@ -38,7 +38,7 @@ let E = function(e) {
         icons: f.ir,
         onDrop: e => {
             if (v) return !1;
-            O && null != E && ((0, _.R)(e, E, I, {
+            O && null != E && ((0, g.R)(e, E, I, {
                 requireConfirm: N,
                 origin: "drag_drop"
             }), p._.dispatchToLastSubscribed(x.jej.TEXTAREA_FOCUS))

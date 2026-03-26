@@ -1,7 +1,7 @@
 /** chunk id: 565265 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -19,7 +19,7 @@ var i = n(627968),
 function p(e) {
     return e.matches("a") || "highlight" === e.className || e.className.includes("mention")
 }
-class _ extends s.Component {
+class g extends s.Component {
     handleOpenTopic = e => {
         let t = e.target;
         if ((0, a.vq)(t)) {
@@ -75,4 +75,4 @@ class _ extends s.Component {
         }) : null
     }
 }
-let g = _
+let _ = g

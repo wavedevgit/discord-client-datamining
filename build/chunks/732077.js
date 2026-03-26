@@ -23,9 +23,9 @@ let p = s.memo(function(e) {
         sortedThreadIds: l,
         withGuildIcon: p
     } = e, {
-        density: _
-    } = (0, o.wRf)(), g = (0, a.yK)([c.A], () => l.map(e => c.A.getChannel(e)).filter(u.Vq), [l]), f = (0, a.bG)([d.Ay], () => {
-        let e = g[g.length - 1];
+        density: g
+    } = (0, o.wRf)(), _ = (0, a.yK)([c.A], () => l.map(e => c.A.getChannel(e)).filter(u.Vq), [l]), f = (0, a.bG)([d.Ay], () => {
+        let e = _[_.length - 1];
         if (null == e) return 0;
         let t = d.Ay.getVoiceStates(e.guild_id)[e.id];
         return null == t || 0 === t.length ? 0 : s !== e.id ? 40 : 32 * t.length + 8
@@ -42,13 +42,13 @@ let p = s.memo(function(e) {
                     [m.ET]: p
                 }),
                 style: {
-                    bottom: ("cozy" === _ ? 28 : 24) + f
+                    bottom: ("cozy" === g ? 28 : 24) + f
                 }
-            }), g.map((e, t) => (0, i.jsx)(h.A, {
+            }), _.map((e, t) => (0, i.jsx)(h.A, {
                 thread: e,
                 isSelectedChannel: n?.id === e.id,
                 isSelectedVoice: s === e.id,
-                isLast: t === g.length - 1,
+                isLast: t === _.length - 1,
                 withGuildIcon: p
             }, e.id))]
         })

@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(172710),
     m = n(636585),
     p = n(95701),
-    _ = n(961350),
-    g = n(287809),
+    g = n(961350),
+    _ = n(287809),
     f = n(486020),
     x = n(427262),
     C = n(43950),
@@ -70,7 +70,7 @@ let b = e => {
         embeddedApp: r,
         onAction: o,
         enableUserHoverActivities: c
-    } = e, m = null != r, f = m ? Array.from(r.embeddedActivity.userIds) : [], x = (0, a.bG)([g.default, _.default], () => m ? g.default.getUser(f[0]) : null != l ? l.length <= 0 ? null : l.find(e => e.user.id !== _.default.getId())?.user ?? l[0].user : void 0), I = s.useCallback(() => {
+    } = e, m = null != r, f = m ? Array.from(r.embeddedActivity.userIds) : [], x = (0, a.bG)([_.default, g.default], () => m ? _.default.getUser(f[0]) : null != l ? l.length <= 0 ? null : l.find(e => e.user.id !== g.default.getId())?.user ?? l[0].user : void 0), I = s.useCallback(() => {
         if (!c && null != l) return () => (0, i.jsx)(N, {
             guildId: t.guild_id,
             members: l

@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(147036),
     m = n(288989),
     p = n(985018),
-    _ = n(317022);
-let g = {
+    g = n(317022);
+let _ = {
     friction: 30,
     tension: 300
 };
@@ -35,23 +35,23 @@ function f(e) {
         voiceStates: a
     });
     return (0, i.jsxs)(c.DUT, {
-        className: r()(_.M0, _.OF),
+        className: r()(g.M0, g.OF),
         onClick: o,
         children: [(0, i.jsx)(c.HKD, {
             size: "custom",
-            className: _.Gs,
+            className: g.Gs,
             width: 14,
             height: 14,
             color: "currentColor"
         }), (0, i.jsx)(c.Text, {
             variant: "text-xs/semibold",
-            className: _.pM,
+            className: g.pM,
             children: p.intl.format(p.t["fDlr+F"], {
                 count: m.length
             })
         }), (0, i.jsx)(u.A, {
             guildId: t.id,
-            className: _.J$,
+            className: g.J$,
             users: m.slice(0, 4),
             renderMoreUsers: () => null,
             max: 4,
@@ -78,49 +78,49 @@ function x(e) {
         to: {
             transform: b ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
         },
-        config: g
+        config: _
     }, C ? "respect-motion-settings" : "animate-never"), T = s.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), null != N && u(N)
     }, [u, N]);
     return (0, i.jsx)("div", {
-        className: r()(_.kL, {
-            [_.Mn]: "top" === t,
-            [_.sQ]: "bottom" === t
+        className: r()(g.kL, {
+            [g.Mn]: "top" === t,
+            [g.sQ]: "bottom" === t
         }),
         children: (0, i.jsx)(a.animated.div, {
-            className: _.pK,
+            className: g.pK,
             style: S,
             "aria-hidden": b,
             children: E === m.k.HIDDEN ? (0, i.jsx)("div", {
-                className: r()(_.M0, _.Te)
+                className: r()(g.M0, g.Te)
             }) : E === m.k.UNREAD ? (0, i.jsxs)(c.DUT, {
-                className: _.M0,
+                className: g.M0,
                 onClick: T,
                 children: ["bottom" === t ? (0, i.jsx)(c.abt, {
                     size: "custom",
                     color: "currentColor",
-                    className: _.z_,
+                    className: g.z_,
                     height: 14,
                     width: 14
                 }) : (0, i.jsx)(c.tN5, {
                     size: "custom",
                     color: "currentColor",
-                    className: _.z_,
+                    className: g.z_,
                     height: 14,
                     width: 14
                 }), (0, i.jsx)(c.Text, {
                     variant: "text-xs/semibold",
                     color: "interactive-text-default",
-                    className: _.pM,
+                    className: g.pM,
                     children: p.intl.string(p.t.FCRiT3)
                 })]
             }) : E === m.k.MENTIONS ? (0, i.jsx)(c.DUT, {
-                className: r()(_.M0, _.vU),
+                className: r()(g.M0, g.vU),
                 onClick: T,
                 children: (0, i.jsx)(c.Text, {
                     variant: "text-xs/semibold",
                     color: "badge-text-brand",
-                    className: _.pM,
+                    className: g.pM,
                     children: p.intl.format(p.t.EQcLyp, {
                         count: I
                     })

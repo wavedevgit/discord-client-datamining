@@ -1,17 +1,17 @@
 /** chunk id: 834796 params = (module,exports,require) **/
-i.d(e, {
-    A: () => l
+e.d(i, {
+    A: () => s
 });
-var n = i(627968);
-i(64700);
-var r = i(804870),
-    a = i(798048);
+var n = e(627968);
+e(64700);
+var r = e(804870),
+    a = e(798048);
 
-function l(t) {
+function s(t) {
     let {
-        cardSize: e = a.Y.MEDIUM
+        cardSize: i = a.Y.MEDIUM
     } = t;
     return (0, n.jsx)(r.Zu, {
-        cardSize: e
+        cardSize: i
     })
 }

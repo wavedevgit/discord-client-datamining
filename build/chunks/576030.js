@@ -6,11 +6,11 @@ l.d(t, {
 });
 var i = l(627968);
 l(64700);
-var r = l(158954),
-    n = l(311907),
+var n = l(158954),
+    r = l(311907),
     a = l(397927),
-    s = l(587895),
-    u = l(721932),
+    u = l(587895),
+    s = l(721932),
     o = l(287809),
     c = l(360469);
 
@@ -36,7 +36,7 @@ function p(e) {
     return null != l ? (0, i.jsx)("img", {
         src: l,
         alt: t?.name
-    }) : (0, i.jsx)(r.U1X, {
+    }) : (0, i.jsx)(n.U1X, {
         color: "currentColor",
         size: "xs"
     })
@@ -45,7 +45,7 @@ function p(e) {
 function A(e) {
     let {
         wishlistItem: t
-    } = e, l = (0, n.bG)([s.A], () => (0, u.$)(t) ? s.A.getApplication(t.sku.applicationId) : void 0);
+    } = e, l = (0, r.bG)([u.A], () => (0, s.$)(t) ? u.A.getApplication(t.sku.applicationId) : void 0);
     return (0, i.jsx)(p, {
         application: l
     })

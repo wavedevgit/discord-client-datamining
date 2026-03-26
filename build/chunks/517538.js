@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(74848),
     p = n(430452),
     g = n(731854),
-    _ = n(442456),
-    f = n(661251);
+    f = n(442456),
+    _ = n(661251);
 
 function v(e) {
     let {
@@ -160,9 +160,9 @@ function j() {
         label: "Disabled",
         value: "NONE"
     }), (0, a.jsx)(d.IpV, {
-        className: f.nd,
+        className: _.nd,
         children: (0, a.jsxs)("div", {
-            className: _.l,
+            className: f.l,
             children: [(0, a.jsx)(d.Text, {
                 variant: "text-lg/bold",
                 children: "Krisp Tester"

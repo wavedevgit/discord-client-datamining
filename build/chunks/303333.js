@@ -1,108 +1,131 @@
 /** chunk id: 303333 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => x
+    A: () => N
 });
 var i = n(627968),
     s = n(64700),
-    l = n(311907),
-    r = n(990078),
-    a = n(397927),
-    o = n(309698),
-    c = n(888697),
-    d = n(581007),
-    u = n(522435),
-    h = n(493819),
-    A = n(722884),
-    m = n(148690),
-    p = n(985018),
-    _ = n(72057);
+    l = n(503698),
+    r = n.n(l),
+    a = n(311907),
+    o = n(990078),
+    c = n(397927),
+    d = n(309698),
+    u = n(262763),
+    h = n(743674),
+    A = n(888697),
+    m = n(581007),
+    p = n(522435),
+    g = n(493819),
+    _ = n(722884),
+    f = n(148690),
+    x = n(985018),
+    C = n(72057);
 
-function g(e) {
+function E(e) {
     let {
         channel: t,
-        imageUrl: n
-    } = e, l = s.useCallback(() => {
-        (0, A.A)({
+        imageUrl: n,
+        isConnected: l
+    } = e, a = (0, h.S)(n), d = s.useCallback(() => {
+        (0, _.A)({
             channel: t
         })
-    }, [t]), o = s.useCallback(() => {
-        (0, c.e)(t.id)
-    }, [t.id]);
+    }, [t]), m = s.useCallback(() => {
+        (0, A.e)(t.id)
+    }, [t.id]), p = s.useCallback(() => {
+        u.A.handleVoiceConnect({
+            channel: t,
+            connected: !1,
+            needSubscriptionToAccess: !1
+        })
+    }, [t]), E = null != a ? {
+        backgroundColor: a
+    } : void 0;
     return (0, i.jsxs)("div", {
-        className: _.rs,
-        children: [(0, i.jsx)("div", {
-            className: _.ZS,
-            children: (0, i.jsx)(h.A, {
+        className: C.rs,
+        children: [l ? (0, i.jsx)("div", {
+            className: C.ZS,
+            style: E,
+            children: (0, i.jsx)(g.A, {
                 src: n,
-                className: _.Sl
+                className: C.Sl
             })
-        }), (0, i.jsxs)("div", {
-            className: _.n_,
-            children: [(0, i.jsx)(r.m, {
-                text: p.intl.string(m.default.XJ4UpB),
-                children: (0, i.jsx)(a.DUT, {
-                    className: _.HF,
-                    onClick: l,
-                    children: (0, i.jsx)(a.R2l, {
+        }) : (0, i.jsx)(c.DUT, {
+            className: r()(C.ZS, C.jI),
+            style: E,
+            onClick: p,
+            children: (0, i.jsx)(g.A, {
+                src: n,
+                className: C.Sl
+            })
+        }), l ? (0, i.jsxs)("div", {
+            className: C.n_,
+            children: [(0, i.jsx)(o.m, {
+                text: x.intl.string(f.default.XJ4UpB),
+                children: (0, i.jsx)(c.DUT, {
+                    className: C.HF,
+                    onClick: d,
+                    children: (0, i.jsx)(c.R2l, {
                         size: "xs",
                         color: "currentColor"
                     })
                 })
-            }), (0, i.jsx)(r.m, {
-                text: p.intl.string(m.default.XV4qT6),
-                children: (0, i.jsx)(a.DUT, {
-                    className: _.HF,
-                    onClick: o,
-                    children: (0, i.jsx)(a.ucK, {
+            }), (0, i.jsx)(o.m, {
+                text: x.intl.string(f.default.XV4qT6),
+                children: (0, i.jsx)(c.DUT, {
+                    className: C.HF,
+                    onClick: m,
+                    children: (0, i.jsx)(c.ucK, {
                         size: "xs",
                         color: "currentColor"
                     })
                 })
             })]
-        })]
+        }) : null]
     })
 }
 
-function f(e) {
+function I(e) {
     let {
         channel: t
     } = e, n = s.useCallback(() => {
-        (0, A.A)({
+        (0, _.A)({
             channel: t
         })
     }, [t]);
     return (0, i.jsx)("div", {
-        className: _._o,
-        children: (0, i.jsxs)(a.DUT, {
-            className: _.hH,
+        className: C._o,
+        children: (0, i.jsxs)(c.DUT, {
+            className: C.hH,
             onClick: n,
-            children: [(0, i.jsx)(a.XGR, {
+            children: [(0, i.jsx)(c.XGR, {
                 size: "xs",
                 color: "currentColor"
-            }), (0, i.jsx)(a.Text, {
+            }), (0, i.jsx)(c.Text, {
                 variant: "text-sm/medium",
                 color: "currentColor",
-                children: p.intl.string(m.default.NGcIOF)
+                children: x.intl.string(f.default.NGcIOF)
             })]
         })
     })
 }
 
-function x(e) {
+function N(e) {
     let {
         channel: t,
         isConnected: n
     } = e, {
-        enableHangoutWindow: r
-    } = (0, d.Dm)({
+        enableHangoutWindow: l
+    } = (0, m.Dm)({
         guildId: t.guild_id,
         location: "HangoutWindow"
-    }), a = (0, l.bG)([o.A], () => o.A.getChannelStatus(t), [t]), c = s.useMemo(() => (0, u.TP)(a), [a]), h = s.useMemo(() => null == a ? null : (0, u.K7)(a), [a]);
-    return r ? null != a && c && null != h ? (0, i.jsx)(g, {
+    }), r = (0, a.bG)([d.A], () => d.A.getChannelStatus(t), [t]), o = s.useMemo(() => (0, p.TP)(r), [r]), c = s.useMemo(() => null == r ? null : (0, p.K7)(r), [r]);
+    return l ? null != r && o && null != c ? (0, i.jsx)(E, {
         channel: t,
-        imageUrl: h
-    }) : n ? (0, i.jsx)(f, {
+        imageUrl: c,
+        isConnected: n
+    }) : n ? (0, i.jsx)(I, {
         channel: t
     }) : null : null
 }

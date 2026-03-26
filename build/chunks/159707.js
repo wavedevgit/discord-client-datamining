@@ -11,8 +11,8 @@ var n = a(627968),
     c = a(732955),
     _ = a(964486),
     d = a(975807),
-    u = a(303136),
-    f = a(550111),
+    u = a(512213),
+    f = a(303136),
     I = a(639289),
     S = a(976860),
     m = a(287809),
@@ -67,13 +67,13 @@ function A(e) {
                     children: R.intl.string(R.t.QWljxE)
                 }), (0, n.jsxs)("div", {
                     className: T.Dz,
-                    children: [(0, n.jsx)(u.A, {
+                    children: [(0, n.jsx)(f.A, {
                         fallbackImage: E.A,
                         className: T.d9,
                         children: (0, n.jsx)("source", {
                             src: o
                         })
-                    }), (0, n.jsx)(f.A, {
+                    }), (0, n.jsx)(u.A, {
                         user: r,
                         isHighlighted: !0,
                         nameplate: null,

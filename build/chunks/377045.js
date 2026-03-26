@@ -23,14 +23,14 @@ function p(e) {
     s.useEffect(() => {
         u.A.loadThread(p)
     });
-    let _ = (0, o.DZ)(),
-        g = (0, r.bG)([h.A], () => h.A.theme);
-    return _ ? (0, i.jsxs)("div", {
+    let g = (0, o.DZ)(),
+        _ = (0, r.bG)([h.A], () => h.A.theme);
+    return g ? (0, i.jsxs)("div", {
         className: m.A,
         children: [l.Fr && (0, i.jsx)(d.Ay, {
             children: null
         }), (0, i.jsx)(c.A, {
-            theme: g
+            theme: _
         })]
     }) : (t = null != p ? (0, i.jsx)(a.y$y, {
         type: a.y$y.Type.SPINNING_CIRCLE
@@ -42,7 +42,7 @@ function p(e) {
         children: [l.Fr && (0, i.jsx)(d.Ay, {
             children: null
         }), (0, i.jsxs)(a.ppr, {
-            theme: g,
+            theme: _,
             children: [(0, i.jsx)(a.G8R, {
                 darkSrc: n(355937),
                 lightSrc: n(332327),

@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(253932),
     m = n(975571),
     p = n(822382),
-    _ = n(753806),
-    g = n(345859),
+    g = n(753806),
+    _ = n(345859),
     f = n(145331),
     x = n(121806),
     C = n(652215),
@@ -35,7 +35,7 @@ function b(e) {
         isSearching: A,
         documentsIndexed: m,
         selectedChannelId: f
-    } = e, b = (0, g.H)(t), {
+    } = e, b = (0, _.H)(t), {
         totalFilters: T
     } = (0, x.vj)(b, t), v = s.useMemo(() => {
         if (t.type === C.I4_.DMS) {
@@ -51,7 +51,7 @@ function b(e) {
     }, [G, D, j]), P = s.useCallback(e => {
         D("user:explicit" === e ? E.i.USER_DISMISS : E.i.AUTO_DISMISS)
     }, [D]), k = s.useCallback(() => {
-        U(null), _.A.openSearchFiltersModal(t)
+        U(null), g.A.openSearchFiltersModal(t)
     }, [U, t]), w = s.useMemo(() => T > 0 ? I.intl.format(I.t.uaR4sI, {
         filterCount: T
     }) : I.intl.string(I.t.UdhTtk), [T]), V = !(0, h.DZ)() && (t.type === C.I4_.DMS || t.type === C.I4_.CHANNEL);
@@ -195,17 +195,17 @@ function R(e) {
                 let e = {
                     type: C.I4_.DMS
                 };
-                _.A.transitionStateToSearchContext(t, e, _.A.cleanUpPrivateChannelSearchState)
+                g.A.transitionStateToSearchContext(t, e, g.A.cleanUpPrivateChannelSearchState)
             } else {
                 let e = {
                     type: C.I4_.CHANNEL,
                     channelId: n
                 };
-                _.A.transitionStateToSearchContext(t, e)
+                g.A.transitionStateToSearchContext(t, e)
             }
             r(null), A.Hu.updateSetting(e)
         }
-    }, [h, r, t, n]), [p, g] = s.useMemo(() => [h ? I.intl.string(I.t["8lklch"]) : I.intl.string(I.t.ji3jTF), h ? I.intl.string(I.t.RMQZCa) : I.intl.string(I.t["v/PagC"])], [h]), x = s.useMemo(() => ({
+    }, [h, r, t, n]), [p, _] = s.useMemo(() => [h ? I.intl.string(I.t["8lklch"]) : I.intl.string(I.t.ji3jTF), h ? I.intl.string(I.t.RMQZCa) : I.intl.string(I.t["v/PagC"])], [h]), x = s.useMemo(() => ({
         align: "end"
     }), []);
     return (0, i.jsxs)(i.Fragment, {
@@ -260,7 +260,7 @@ function R(e) {
             shouldShow: c,
             onRequestClose: a,
             title: p,
-            body: g,
+            body: _,
             caretConfig: x,
             badge: "new"
         })]

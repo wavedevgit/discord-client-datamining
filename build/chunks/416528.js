@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(689874),
     m = n(872363),
     p = n(966597),
-    _ = n(922281),
-    g = n(51082),
+    g = n(922281),
+    _ = n(51082),
     f = n(275731),
     x = n(289552),
     C = n(246356),
@@ -37,7 +37,7 @@ function R(e) {
         guildId: n
     } = e, s = (0, a.yK)([b.A, S.A], () => {
         let e = Date.now();
-        return r()(b.A.getSpeakers()).map(e => S.A.getParticipant(t, e)).filter(e => null != e && e.type === v.lp.USER && e.speaking && !(0, g.Ay)(e)).sortBy(t => -b.A.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
+        return r()(b.A.getSpeakers()).map(e => S.A.getParticipant(t, e)).filter(e => null != e && e.type === v.lp.USER && e.speaking && !(0, _.Ay)(e)).sortBy(t => -b.A.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
     });
     return 0 === s.length ? null : (0, i.jsx)("div", {
         className: j.$U,
@@ -63,7 +63,7 @@ function O(e) {
     } = e, l = s.useRef(null), {
         analyticsLocations: r
     } = (0, u.Ay)(d.A.VOICE_CHANNEL_HEADER), o = t.id, {
-        voiceParticipantsHidden: g,
+        voiceParticipantsHidden: _,
         selectedParticipant: N,
         userParticipantCount: b
     } = (0, a.cf)([S.A], () => ({
@@ -76,7 +76,7 @@ function O(e) {
     } = p.A.useConfig({
         location: "ChannelCallHeaderToolbar"
     }), M = [];
-    return g && M.push((0, i.jsx)(R, {
+    return _ && M.push((0, i.jsx)(R, {
         channelId: o,
         guildId: t.guild_id
     }, "current-speaker")), M.push((0, i.jsx)(A.A, {
@@ -94,7 +94,7 @@ function O(e) {
     }, "live-indicator"))), N?.type === v.lp.USER && M.push((0, i.jsx)(x.A, {
         className: j.x6,
         userId: N.id
-    }, "video-warning")), g && M.push((0, i.jsx)(c.YNO, {
+    }, "video-warning")), _ && M.push((0, i.jsx)(c.YNO, {
         targetElementRef: l,
         position: "bottom",
         renderPopout: () => (0, i.jsx)(C.A, {
@@ -115,7 +115,7 @@ function O(e) {
                 className: j.x6
             })
         }
-    }, "call-members-popout")), O && !L && M.push((0, i.jsx)(_.A, {
+    }, "call-members-popout")), O && !L && M.push((0, i.jsx)(g.A, {
         className: j.x6
     }, "for-later")), y && M.push((0, i.jsx)(E.V, {
         channelId: t.id,

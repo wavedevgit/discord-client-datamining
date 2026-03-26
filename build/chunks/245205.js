@@ -4,7 +4,7 @@ n.d(t, {
     BZ: () => h,
     R7: () => p,
     S3: () => A,
-    VP: () => g,
+    VP: () => _,
     ni: () => m
 });
 var i = n(110259),
@@ -76,9 +76,9 @@ function p(e) {
         type: "NOTIFICATION_CENTER_ITEMS_ACK",
         optimistic: !0,
         ids: [n]
-    })) : _(e.id)
+    })) : g(e.id)
 }
-async function _(e) {
+async function g(e) {
     try {
         r.h.dispatch({
             type: "NOTIFICATION_CENTER_ITEMS_ACK",
@@ -95,7 +95,7 @@ async function _(e) {
         })
     }
 }
-async function g(e) {
+async function _(e) {
     let t = a.ns.getSetting();
     try {
         r.h.dispatch({

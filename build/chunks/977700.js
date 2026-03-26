@@ -1,6 +1,6 @@
 /** chunk id: 977700 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => _
 });
 var a = n(627968);
 n(64700);
@@ -18,12 +18,12 @@ var i = n(397927),
     p = n(985018),
     g = n(653246);
 
-function _(e) {
+function f(e) {
     let {
         dismissibleContent: t,
         backgroundColor: n,
         specialTextColor: u
-    } = e, _ = m.A.useIsEligible(), f = (0, r.JZ)(t), v = null != n, b = null != u ? {
+    } = e, f = m.A.useIsEligible(), _ = (0, r.JZ)(t), v = null != n, b = null != u ? {
         color: u
     } : void 0, {
         analyticsLocations: j
@@ -36,7 +36,7 @@ function _(e) {
             analyticsLocations: j
         }), A(x.i.TAKE_ACTION)
     };
-    return _ && !f ? (0, a.jsx)(o.Ay, {
+    return f && !_ ? (0, a.jsx)(o.Ay, {
         children: (0, a.jsxs)("div", {
             className: g.iE,
             style: {
@@ -86,8 +86,8 @@ function _(e) {
     }) : null
 }
 
-function f() {
-    return null == u.A.coachmarkDismissibleContent ? null : (0, a.jsx)(_, {
+function _() {
+    return null == u.A.coachmarkDismissibleContent ? null : (0, a.jsx)(f, {
         dismissibleContent: u.A.coachmarkDismissibleContent,
         backgroundColor: u.A.coachmarkBackgroundColor,
         specialTextColor: u.A.coachmarkSpecialTextColor

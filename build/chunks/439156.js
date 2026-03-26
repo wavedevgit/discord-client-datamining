@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(220628),
     m = n(933337),
     p = n(568065),
-    _ = n(333354),
-    g = n(985018),
+    g = n(333354),
+    _ = n(985018),
     f = n(294590);
 
 function x(e) {
@@ -45,13 +45,13 @@ function x(e) {
         title: null,
         body: D
     } : O.type === p.b_.LEVEL_ACTIVATED ? {
-        title: g.intl.string(_.default["9oYuvb"]),
-        body: g.intl.formatToPlainString(_.default.WRRYUT, {
-            perkName: O.sourcePowerup?.title ?? g.intl.string(g.t.BfF6ED)
+        title: _.intl.string(g.default["9oYuvb"]),
+        body: _.intl.formatToPlainString(g.default.WRRYUT, {
+            perkName: O.sourcePowerup?.title ?? _.intl.string(_.t.BfF6ED)
         })
     } : O.type === p.b_.POWERUP_ACTIVATED ? {
-        title: g.intl.string(_.default.TZsu1U),
-        body: g.intl.formatToPlainString(_.default["5HQUzD"], {
+        title: _.intl.string(g.default.TZsu1U),
+        body: _.intl.formatToPlainString(g.default["5HQUzD"], {
             boostCount: n.cost
         })
     } : null;
@@ -62,7 +62,7 @@ function x(e) {
         title: G?.title ?? void 0,
         shouldShow: null != G,
         delay: 100,
-        "aria-label": null != D ? D : L ? g.intl.string(_.default.TZsu1U) : void 0,
+        "aria-label": null != D ? D : L ? _.intl.string(g.default.TZsu1U) : void 0,
         children: (0, i.jsx)("div", {
             className: r()(f.zr, {
                 [f._o]: E,
@@ -83,7 +83,7 @@ function x(e) {
                         text: t.toString(),
                         icon: a
                     } : {
-                        text: g.intl.format(n ? _.default.uzQpQd : _.default.ad2Mfj, {
+                        text: _.intl.format(n ? g.default.uzQpQd : g.default.ad2Mfj, {
                             boostCount: t,
                             dotHook: () => (0, i.jsx)("span", {
                                 className: f.Om,
@@ -104,7 +104,7 @@ function x(e) {
                 });
                 return (0, i.jsx)(o.$nd, {
                     variant: L ? "secondary" : N ? "expressive" : "primary",
-                    "aria-label": g.intl.string(L ? _.default.TZsu1U : _.default.gSxlHf),
+                    "aria-label": _.intl.string(L ? g.default.TZsu1U : g.default.gSxlHf),
                     disabled: M,
                     onClick: e => {
                         e.stopPropagation(), L ? R() : S()

@@ -16,23 +16,23 @@ var l = n(627968),
     h = n(835072),
     A = n(313961),
     p = n(85448),
-    I = n(571694),
-    x = n(47167),
+    x = n(571694),
+    I = n(47167),
     m = n(10862),
-    v = n(410876),
-    S = n(71393),
+    S = n(410876),
+    v = n(71393),
     y = n(535820),
     E = n(290863),
-    f = n(994500),
+    T = n(994500),
     _ = n(287809),
-    T = n(486020),
+    f = n(486020),
     C = n(240248),
     N = n(427262),
     b = n(222075),
     M = n(652215),
     j = n(806931),
-    R = n(985018),
-    G = n(912579);
+    G = n(985018),
+    R = n(912579);
 let U = 48;
 
 function V(e, t) {
@@ -55,7 +55,7 @@ let w = i.memo(function(e) {
         } = e,
         [k, F] = i.useState(!1),
         [B, H] = i.useState(!1),
-        K = (0, r.bG)([S.A], () => S.A.getGuild(s?.guild_id)),
+        K = (0, r.bG)([v.A], () => v.A.getGuild(s?.guild_id)),
         {
             showActivityStatus: z
         } = b.o.useExperiment({
@@ -96,7 +96,7 @@ let w = i.memo(function(e) {
         } = (0, c.A)({
             userId: n?.id
         }),
-        X = (0, x.Ay)(Z),
+        X = (0, I.Ay)(Z),
         $ = (0, r.bG)([A.A], () => null != P && null != n ? A.A.getParticipant(P.id, n.id) : null),
         ee = D && null != $ && $.type === j.lp.USER && $.ringing,
         et = (0, o.S31)(o.clD.ONLINE),
@@ -120,11 +120,11 @@ let w = i.memo(function(e) {
             })))
         }, [y, s, n, U, w, O]),
         el = N.Ay.getName(n),
-        ei = null != n ? f.A.getNickname(n.id) : null,
-        es = null != s ? (0, x.m1)(s, _.default, f.A) : null,
+        ei = null != n ? T.A.getNickname(n.id) : null,
+        es = null != s ? (0, I.m1)(s, _.default, T.A) : null,
         ea = null != n ? n.getAvatarURL(s?.guild_id, 32) : null,
-        er = null != s ? (0, I.Y)(s) : null,
-        eo = null != K && null != s && null == er ? T.Ay.getGuildIconURL({
+        er = null != s ? (0, x.Y)(s) : null,
+        eo = null != K && null != s && null == er ? f.Ay.getGuildIconURL({
             id: s.guild_id,
             icon: K.icon,
             size: 32
@@ -140,63 +140,63 @@ let w = i.memo(function(e) {
         }),
         ep = (0, l.jsx)(o.Button, {
             variant: "secondary",
-            text: B ? R.intl.string(R.t.dVT149) : R.intl.string(R.t.jYnGPG),
+            text: B ? G.intl.string(G.t.dVT149) : G.intl.string(G.t.jYnGPG),
             size: "sm",
             loading: k,
             onClick: en,
             disabled: B
         }),
-        eI = z && null != Y.text,
-        ex = z && null != Z && null != X,
-        em = ex || eI || null != n;
+        ex = z && null != Y.text,
+        eI = z && null != Z && null != X,
+        em = eI || ex || null != n;
     return (0, l.jsxs)("div", {
-        className: G.Og,
+        className: R.Og,
         children: [(0, l.jsxs)("div", {
-            className: G.mQ,
+            className: R.mQ,
             children: [eh ? ee ? (0, l.jsx)(p.A, {
                 size: o._3J.SIZE_32,
                 ringing: ee,
                 src: eu,
-                className: G.hO
+                className: R.hO
             }) : (0, l.jsx)(o.euF, {
                 src: eu,
                 "aria-label": ec,
                 size: o._3J.SIZE_32,
-                className: G.hO,
+                className: R.hO,
                 status: z && null != n ? ed : void 0,
                 isMobile: z && null != n ? q : void 0
             }) : (0, l.jsx)(o.Text, {
                 variant: "text-md/medium",
-                className: G.q9,
+                className: R.q9,
                 "aria-hidden": !0,
                 children: eg
             }), (0, l.jsxs)("div", {
-                className: a()(G.BT, {
-                    [G.DF]: ee
+                className: a()(R.BT, {
+                    [R.DF]: ee
                 }),
                 children: [(0, l.jsxs)(o.Text, {
                     tag: "strong",
                     variant: "text-md/semibold",
                     lineClamp: 1,
-                    children: [t, null != s ? (0, x.m1)(s, _.default, f.A, !0) : null]
+                    children: [t, null != s ? (0, I.m1)(s, _.default, T.A, !0) : null]
                 }), em && (0, l.jsxs)("div", {
-                    className: a()(G.eq, {
-                        [G.DF]: ee
+                    className: a()(R.eq, {
+                        [R.DF]: ee
                     }),
-                    children: [ex ? (0, l.jsx)(m.A, {
+                    children: [eI ? (0, l.jsx)(m.A, {
                         size: "custom",
                         color: et,
                         channel: Z,
-                        className: G.j8
+                        className: R.j8
                     }) : null != J ? (0, l.jsx)(g.A, {
                         icon: J,
-                        className: G.j8
-                    }) : null, ex ? (0, l.jsx)(o.Text, {
+                        className: R.j8
+                    }) : null, eI ? (0, l.jsx)(o.Text, {
                         variant: "text-xs/medium",
                         color: "text-status-online",
                         lineClamp: 1,
                         children: X
-                    }) : eI ? (0, l.jsx)(o.Text, {
+                    }) : ex ? (0, l.jsx)(o.Text, {
                         variant: "text-xs/medium",
                         color: "text-status-online",
                         lineClamp: 1,
@@ -210,13 +210,13 @@ let w = i.memo(function(e) {
                         variant: "text-xs/normal",
                         color: "text-muted",
                         lineClamp: 1,
-                        children: ee && ` • ${R.intl.string(R.t.sURrjb)}`
+                        children: ee && ` • ${G.intl.string(G.t.sURrjb)}`
                     })]
                 })]
             })]
         }), (0, l.jsxs)("div", {
-            className: G.t$,
-            children: [D && null != n && null != P && (0, l.jsx)(v.A, {
+            className: R.t$,
+            children: [D && null != n && null != P && (0, l.jsx)(S.A, {
                 user: n,
                 channel: P,
                 location: "InviteRow"

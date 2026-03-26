@@ -18,7 +18,7 @@ function A(e) {
     let {
         guildId: t,
         onSetActivityStatus: n
-    } = e, A = (0, l.bG)([c.default], () => c.default.getId()), m = (0, o.Ay)(A, t)[0], p = (0, r.YY)(m?.application_id).data ?? void 0, _ = s.useCallback(() => {
+    } = e, A = (0, l.bG)([c.default], () => c.default.getId()), m = (0, o.Ay)(A, t)[0], p = (0, r.YY)(m?.application_id).data ?? void 0, g = s.useCallback(() => {
         null != p && ((0, d.xA)(p.id, !0), n())
     }, [p, n]);
     return null == p ? null : (0, i.jsxs)(i.Fragment, {
@@ -28,7 +28,7 @@ function A(e) {
                 game: p,
                 className: h.K
             }),
-            setStatus: _
+            setStatus: g
         }), (0, i.jsx)("div", {
             role: "separator",
             className: h.m

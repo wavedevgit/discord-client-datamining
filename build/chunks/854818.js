@@ -20,11 +20,11 @@ let d = e => {
         } = e,
         {
             days: p,
-            hours: f,
-            minutes: h,
+            hours: h,
+            minutes: f,
             seconds: x
         } = (0, l.A)(i),
-        v = (r = [(t = e => `${e.toString().padStart(2,"0")}`)(p), t(f), t(h)], m && r.push(t(x)), r.join(":"));
+        v = (r = [(t = e => `${e.toString().padStart(2,"0")}`)(p), t(h), t(f)], m && r.push(t(x)), r.join(":"));
     return (0, n.jsxs)("div", {
         className: s()(o.kL, u),
         role: "timer",
@@ -45,8 +45,8 @@ let d = e => {
         }, t)), (0, n.jsx)(a.AC4, {
             children: c.intl.format(c.t.j6IyVe, {
                 days: p,
-                hours: f,
-                minutes: h
+                hours: h,
+                minutes: f
             })
         })]
     })

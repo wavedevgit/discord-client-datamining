@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(175203),
     m = n(652215),
     p = n(806931),
-    _ = n(697166),
-    g = n(976092);
+    g = n(697166),
+    _ = n(976092);
 let f = "CameraPreviewPosition";
 
 function x(e) {
@@ -48,7 +48,7 @@ function x(e) {
             N(t)
         }, [N]);
     return (0, i.jsx)("div", {
-        className: _.kL,
+        className: g.kL,
         children: (0, i.jsx)(u.S, {
             position: I,
             id: 0,
@@ -64,12 +64,12 @@ function x(e) {
             edgeOffsetRight: 16,
             resizeConfig: j,
             children: (0, i.jsx)("div", {
-                className: _.iA,
+                className: g.iA,
                 children: C.map(e => (0, i.jsx)(A.Ay, {
                     participant: e,
                     channel: x,
                     onContextMenu: n,
-                    className: r()(_.Vs, g.a8),
+                    className: r()(g.Vs, _.a8),
                     fit: A.Yl.COVER,
                     inCall: !0,
                     popoutType: d.N.NO_POPOUT,

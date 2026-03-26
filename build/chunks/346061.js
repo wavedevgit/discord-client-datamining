@@ -25,7 +25,7 @@ function A(e) {
         onContextMenu: A,
         onMouseEnter: m,
         onMouseLeave: p,
-        className: _,
+        className: g,
         ariaHidden: f,
         avatarDecoration: x,
         specs: C,
@@ -64,7 +64,7 @@ function A(e) {
                             width: l,
                             x: r,
                             y: a
-                        } = g(e, n, i), o = (t - e.size) / 2;
+                        } = _(e, n, i), o = (t - e.size) / 2;
                         return {
                             width: l,
                             height: s,
@@ -97,7 +97,7 @@ function A(e) {
         })]
     });
     return null != l || null != a ? (0, i.jsxs)(o.DUT, {
-        className: r()(h.iE, h.Wn, _),
+        className: r()(h.iE, h.Wn, g),
         style: S,
         onClick: l,
         onContextMenu: A,
@@ -109,7 +109,7 @@ function A(e) {
         "aria-hidden": f,
         children: [t, y]
     }) : (0, i.jsxs)("div", {
-        className: r()(h.iE, _),
+        className: r()(h.iE, g),
         style: S,
         onContextMenu: A ?? void 0,
         onMouseEnter: m ?? void 0,
@@ -156,7 +156,7 @@ function m(e) {
                         width: l,
                         x: r,
                         y: a
-                    } = g(e, t, n);
+                    } = _(e, t, n);
                     return (0, i.jsx)("rect", {
                         mask: `url(#${c.hW.SQUIRCLE})`,
                         height: s,
@@ -178,7 +178,7 @@ function m(e) {
                     isSpeaking: !1
                 })
             }), null != m && (0, i.jsx)("foreignObject", {
-                ..._(x, p, f),
+                ...g(x, p, f),
                 mask: `url(#${c.hW.SQUIRCLE})`,
                 children: (0, i.jsx)("img", {
                     src: m,
@@ -200,7 +200,7 @@ function p(e) {
         cornerIconUrl: o,
         cornerIconOffsetX: d = 0,
         cornerIconOffsetY: m = 0
-    } = e, p = (0, s.useId)(), f = (0, s.useId)(), x = (0, u.Kj)(n), C = x.size + d, E = x.size + m, I = g(x, d, m), N = _(x, d, m);
+    } = e, p = (0, s.useId)(), f = (0, s.useId)(), x = (0, u.Kj)(n), C = x.size + d, E = x.size + m, I = _(x, d, m), N = g(x, d, m);
     return (0, i.jsx)(A, {
         ...e,
         ariaLabel: a,
@@ -264,7 +264,7 @@ function p(e) {
     })
 }
 
-function _(e, t, n) {
+function g(e, t, n) {
     return {
         width: 16,
         height: 16,
@@ -273,8 +273,8 @@ function _(e, t, n) {
     }
 }
 
-function g(e, t, n) {
-    let i = _(e, t, n),
+function _(e, t, n) {
+    let i = g(e, t, n),
         s = i.x - 2,
         l = i.y - 2;
     return {

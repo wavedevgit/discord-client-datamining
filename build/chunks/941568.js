@@ -1,6 +1,6 @@
 /** chunk id: 941568 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => I
 }), n(323874), n(14289), n(35956);
 var a = n(627968),
     l = n(64700),
@@ -84,7 +84,7 @@ function C(e) {
     })
 }
 
-function b(e) {
+function I(e) {
     let {
         detectedGame: t,
         trackAction: n
@@ -95,18 +95,18 @@ function b(e) {
     } = (0, f.c)(), {
         messages: j,
         loading: A
-    } = (0, h.A)(i), b = l.useCallback(() => {
+    } = (0, h.A)(i), I = l.useCallback(() => {
         null != r && (u(), c.h.dispatch({
             type: "INVITE_MODAL_OPEN",
             invite: r,
             code: r.code,
             context: p.BRT.APP
         }))
-    }, [u, r]), I = l.useCallback(() => {
-        n(x.Ws.Announcements), o && null != i ? (u(), (0, m.iN)(i)) : b()
-    }, [u, o, b, i, n]), E = l.useCallback(e => {
-        n(x.Ws.AnnouncementsItem), o && null != i ? (u(), (0, m.ci)(i, e)) : b()
-    }, [u, o, b, i, n]);
+    }, [u, r]), b = l.useCallback(() => {
+        n(x.Ws.Announcements), o && null != i ? (u(), (0, m.iN)(i)) : I()
+    }, [u, o, I, i, n]), E = l.useCallback(e => {
+        n(x.Ws.AnnouncementsItem), o && null != i ? (u(), (0, m.ci)(i, e)) : I()
+    }, [u, o, I, i, n]);
     if (null == i || 0 === j.length) return A ? (0, a.jsx)(g.A, {
         title: _.intl.string(_.t.B0BV3Y),
         children: (0, a.jsx)("div", {
@@ -122,7 +122,7 @@ function b(e) {
         k = N ? j.slice(1) : j;
     return (0, a.jsx)(g.A, {
         title: _.intl.string(_.t.B0BV3Y),
-        onClickViewAll: I,
+        onClickViewAll: b,
         children: (0, a.jsxs)("div", {
             className: v.f3,
             children: [null != S && (0, a.jsx)(C, {

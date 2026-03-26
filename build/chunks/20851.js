@@ -1,7 +1,7 @@
 /** chunk id: 20851 params = (module,exports,require) **/
 "use strict";
 r.d(t, {
-    A: () => h
+    A: () => f
 });
 var n = r(627968),
     i = r(64700),
@@ -14,21 +14,21 @@ var n = r(627968),
     u = r(699352),
     m = r(715628),
     p = r(752636),
-    f = r(119907);
-let h = i.memo(function(e) {
+    h = r(119907);
+let f = i.memo(function(e) {
     let {
         message: t,
         channel: r,
         compact: s,
-        className: h,
+        className: f,
         isGroupStart: x,
         hideSimpleEmbedContent: v = !0,
-        disableInteraction: g,
-        previewGuildId: _,
+        disableInteraction: _,
+        previewGuildId: g,
         preview: A,
         author: j
-    } = e, N = _ ?? (0, c.U)(t), C = (0, l.S)((t.editedTimestamp ?? t.timestamp).valueOf()), {
-        content: b
+    } = e, N = g ?? (0, c.U)(t), C = (0, l.S)((t.editedTimestamp ?? t.timestamp).valueOf()), {
+        content: I
     } = (0, d.A)(t, {
         hideSimpleEmbedContent: v,
         allowList: C,
@@ -42,19 +42,19 @@ let h = i.memo(function(e) {
     }), [e, r, N]);
     return (0, n.jsx)(o.A, {
         compact: s,
-        className: a()(h, {
-            [f.iU]: !0,
-            [f.HJ]: !s,
-            [f._A]: x
+        className: a()(f, {
+            [h.iU]: !0,
+            [h.HJ]: !s,
+            [h._A]: x
         }),
         childrenHeader: R,
-        childrenMessageContent: (0, m.A)(e, b),
+        childrenMessageContent: (0, m.A)(e, I),
         childrenAccessories: null != r ? (0, u.J)({
             message: t,
             channel: r,
             compact: s
         }, !1, !1) : null,
-        disableInteraction: g,
+        disableInteraction: _,
         author: j,
         preview: A
     })

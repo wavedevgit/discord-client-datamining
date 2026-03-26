@@ -1,42 +1,44 @@
 /** chunk id: 762168 params = (module,exports,require) **/
-r.d(t, {
+n.d(t, {
     DX: () => m,
     _v: () => x,
     cs: () => y,
-    ec: () => C,
+    ec: () => v,
     kK: () => g,
-    sn: () => S
+    sn: () => C
 });
-var a = r(627968),
-    o = r(64700),
-    n = r(412703),
-    i = r(440703),
-    s = r(267548),
-    l = r(668824),
-    d = r(397927),
-    c = r(104473),
-    u = r(341915),
-    _ = r(73473),
-    p = r(752231),
-    f = r(839727),
-    b = r(652215);
+var r = n(627968),
+    a = n(64700),
+    o = n(412703),
+    i = n(440703),
+    s = n(267548),
+    l = n(668824),
+    d = n(397927),
+    u = n(341915),
+    c = n(73473),
+    p = n(839727),
+    _ = n(795068),
+    f = n(652215),
+    b = n(784018);
 
 function m(e) {
     let {
         url: t,
-        width: r = 640,
-        height: a = 360,
-        target: o = 60,
-        videoTitle: i = "Test Video Quest"
+        width: n = 640,
+        height: r = 360,
+        target: a = 60,
+        videoTitle: i = "Test Video Quest",
+        transcript: s
     } = e;
     return {
-        type: n.n.WATCH_VIDEO,
-        target: o,
+        type: o.n.WATCH_VIDEO,
+        target: a,
         assets: {
             video: {
                 url: t,
-                width: r,
-                height: a
+                width: n,
+                height: r,
+                transcript: s
             }
         },
         messages: {
@@ -49,16 +51,16 @@ function g() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
         {
             streamProgressSeconds: t = 0,
-            completedAt: r = null,
-            enrolledAt: a = null,
-            claimedAt: o = null
+            completedAt: n = null,
+            enrolledAt: r = null,
+            claimedAt: a = null
         } = e;
     return {
         userId: "123",
-        questId: v,
-        enrolledAt: a,
-        completedAt: r,
-        claimedAt: o,
+        questId: S,
+        enrolledAt: r,
+        completedAt: n,
+        claimedAt: a,
         claimedTier: null,
         lastStreamHeartbeatAt: null,
         streamProgressSeconds: t,
@@ -66,14 +68,14 @@ function g() {
         progress: {}
     }
 }
-let v = `playground-video-quest-${Date.now()}`;
+let S = `playground-video-quest-${Date.now()}`;
 
-function C(e) {
+function v(e) {
     return {
-        id: v,
+        id: S,
         preview: !0,
         config: {
-            id: v,
+            id: S,
             configVersion: 2,
             startsAt: "2024-01-01T00:00:00+00:00",
             expiresAt: "2030-01-01T00:00:00+00:00",
@@ -108,7 +110,7 @@ function C(e) {
             },
             assets: {
                 hero: "",
-                heroVideo: c.kz,
+                heroVideo: b.kz,
                 questBarHero: "",
                 questBarHeroVideo: null,
                 questBarHeroBlurhash: null,
@@ -118,7 +120,7 @@ function C(e) {
             taskConfigV2: {
                 joinOperator: l.K.AND,
                 tasks: {
-                    [n.n.WATCH_VIDEO]: e
+                    [o.n.WATCH_VIDEO]: e
                 }
             },
             features: [],
@@ -135,35 +137,35 @@ function C(e) {
     }
 }
 
-function S(e) {
+function C(e) {
     let {
         quest: t,
-        isPortrait: r,
-        children: n,
+        isPortrait: n,
+        children: o,
         isFullscreenEnabled: i = !1,
         useNewStyling: s = !1,
-        setIsFullscreenEnabled: l = b.tEg
-    } = e, d = o.useMemo(() => ({
+        setIsFullscreenEnabled: l = f.tEg
+    } = e, d = a.useMemo(() => ({
         quest: t,
         sourceQuestContent: u.uF.INTERNAL_PREVIEW_TOOL,
         videoSessionId: "playground-session",
-        isPortrait: r,
-        onClose: b.tEg,
+        isPortrait: n,
+        onClose: f.tEg,
         isFullscreenEnabled: i,
         setIsFullscreenEnabled: l,
         useNewProgressBarStyling: s
-    }), [t, r, i, l, s]), c = o.useMemo(() => ({
+    }), [t, n, i, l, s]), p = a.useMemo(() => ({
         questConfig: t.config
     }), [t.config]);
-    return (0, a.jsx)(_.R, {
+    return (0, r.jsx)(c.R, {
         questOrQuests: t,
         questContent: u.uF.VIDEO_MODAL,
         sourceQuestContent: u.uF.INTERNAL_PREVIEW_TOOL,
-        children: (e, t) => (0, a.jsx)(p.VideoQuestConfigContext.Provider, {
-            value: c,
-            children: (0, a.jsx)(p.VideoQuestModalContext.Provider, {
+        children: (e, t) => (0, r.jsx)(_.l.Provider, {
+            value: p,
+            children: (0, r.jsx)(_.a.Provider, {
                 value: d,
-                children: n
+                children: o
             })
         })
     })
@@ -172,24 +174,25 @@ function S(e) {
 function h(e) {
     let {
         orientation: t,
-        autoplay: r,
-        questCompleted: n,
+        autoplay: n,
+        questCompleted: o,
         useNewStyling: i,
         videoUrl: s
-    } = e, l = "portrait" === t, [c, u] = o.useState(!1), _ = m({
+    } = e, l = "portrait" === t, [u, c] = a.useState(!1), _ = m({
         url: s,
         width: l ? 360 : 640,
         height: l ? 640 : 360,
-        videoTitle: l ? "Test Portrait Video" : "Test Landscape Video"
-    }), p = C(_), v = n ? {
-        ...p,
+        videoTitle: l ? "Test Portrait Video" : "Test Landscape Video",
+        transcript: "transcript.txt"
+    }), b = v(_), S = o ? {
+        ...b,
         userStatus: g({
-            enrolledAt: p.userStatus?.enrolledAt ?? null,
-            completedAt: p.userStatus?.enrolledAt ?? null,
+            enrolledAt: b.userStatus?.enrolledAt ?? null,
+            completedAt: b.userStatus?.enrolledAt ?? null,
             streamProgressSeconds: _.target
         })
-    } : p;
-    return (0, a.jsx)("div", {
+    } : b;
+    return (0, r.jsx)("div", {
         style: {
             width: l ? "400px" : "100%",
             maxWidth: l ? void 0 : "800px",
@@ -199,17 +202,17 @@ function h(e) {
             overflow: "hidden",
             "--custom-footer-horizontal-padding": "20px"
         },
-        children: (0, a.jsx)(S, {
-            quest: v,
+        children: (0, r.jsx)(C, {
+            quest: S,
             isPortrait: l,
-            isFullscreenEnabled: c,
-            setIsFullscreenEnabled: u,
+            isFullscreenEnabled: u,
+            setIsFullscreenEnabled: c,
             useNewStyling: i,
-            children: (0, a.jsx)(f.A, {
+            children: (0, r.jsx)(p.A, {
                 targetTimeSec: _.target,
                 parentTransitionState: d.ip4.ENTERED,
-                onOptimisticProgressUpdate: b.tEg,
-                autoplay: r,
+                onOptimisticProgressUpdate: f.tEg,
+                autoplay: n,
                 performanceClockStartTime: 0,
                 orientation: t,
                 videoUrlOverride: s
@@ -248,7 +251,7 @@ let x = {
         videoUrl: {
             label: "Video URL",
             type: "text",
-            defaultValue: c.kz
+            defaultValue: b.kz
         }
     },
     y = {

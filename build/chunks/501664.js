@@ -21,16 +21,16 @@ function d(e) {
         discountOfferAmount: u,
         hideStrikethroughPrice: m = !1,
         nitroIconType: p,
-        nitroIconSize: f = "md"
-    } = e, h = (0, a.WD)(t, {
+        nitroIconSize: h = "md"
+    } = e, f = (0, a.WD)(t, {
         isPremiumUser: r,
         discount: i
     });
-    if (null == h) return null;
+    if (null == f) return null;
     let {
         defaultPrice: x,
         showDefaultPriceOnly: v
-    } = h;
+    } = f;
     if (v) return (0, n.jsx)("div", {
         className: s()(o.kG, d),
         children: (0, n.jsx)(c.x, {
@@ -39,14 +39,14 @@ function d(e) {
         })
     });
     let {
-        showNitroPrice: g,
-        originalPrice: _,
+        showNitroPrice: _,
+        originalPrice: g,
         finalPrice: A
-    } = h;
+    } = f;
     return (0, n.jsxs)("div", {
         className: s()(o.kG, d),
         children: [m ? null : (0, n.jsx)(l.a, {
-            price: _,
+            price: g,
             className: o.q9
         }), (0, n.jsx)(c.x, {
             priceAmount: A.amount,
@@ -55,8 +55,8 @@ function d(e) {
             className: s()({
                 [o.q9]: null == u
             }),
-            nitroIconType: g ? p : void 0,
-            nitroIconSize: f,
+            nitroIconType: _ ? p : void 0,
+            nitroIconSize: h,
             discountOfferAmount: u
         })]
     })

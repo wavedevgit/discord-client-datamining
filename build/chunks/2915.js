@@ -1,7 +1,7 @@
 /** chunk id: 2915 params = (module,exports,require) **/
 n.d(t, {
     A: () => b,
-    I: () => f
+    I: () => _
 });
 var a = n(627968),
     i = n(64700),
@@ -17,7 +17,7 @@ var a = n(627968),
     x = n(753879),
     p = n(815907),
     g = n(661251);
-let _ = {
+let f = {
         [h.GD.QUEST_REWARD]: "Quest Reward",
         [h.GD.DEVELOPER_GIFT]: "Developer Gift",
         [h.GD.INVOICE]: "Invoice",
@@ -26,7 +26,7 @@ let _ = {
         [h.GD.SUBSCRIPTION]: "Subscription",
         [h.GD.SUBSCRIPTION_MEMBER]: "Subscription Member"
     },
-    f = e => {
+    _ = e => {
         let t, {
                 entitlement: n,
                 active: i,
@@ -51,7 +51,7 @@ let _ = {
                 })]
             }), (0, a.jsxs)(d.Text, {
                 variant: "text-md/normal",
-                children: ["Entitlement source type: ", null != (t = n.sourceType) && t in _ ? _[t] : `Unknown source type ${t}`]
+                children: ["Entitlement source type: ", null != (t = n.sourceType) && t in f ? f[t] : `Unknown source type ${t}`]
             }), i && null != s && (0, a.jsx)(o.$n, {
                 className: x.RW,
                 size: o.$n.Sizes.TINY,
@@ -77,7 +77,7 @@ let _ = {
     }];
 
 function b() {
-    let [e, t] = i.useState(!1), [n, s] = i.useState(r.j.PREMIUM_TIER_2_1_HOUR), [u, _] = i.useState([]), [b, j] = i.useState([]), {
+    let [e, t] = i.useState(!1), [n, s] = i.useState(r.j.PREMIUM_TIER_2_1_HOUR), [u, f] = i.useState([]), [b, j] = i.useState([]), {
         refreshEntitlementList: A,
         grantFractionalPremium: C,
         deleteFractionalPremium: y,
@@ -88,7 +88,7 @@ function b() {
     return i.useEffect(() => {
         A()
     }, [A]), i.useEffect(() => {
-        _(S.filter(e => null != e.endsAt && e.endsAt > new Date && e.type === h.zF_.FRACTIONAL_REDEMPTION)), j(S.filter(e => Object.values(r.j).includes(e.skuId) && null == e.startsAt))
+        f(S.filter(e => null != e.endsAt && e.endsAt > new Date && e.type === h.zF_.FRACTIONAL_REDEMPTION)), j(S.filter(e => Object.values(r.j).includes(e.skuId) && null == e.startsAt))
     }, [S]), (0, a.jsx)(d.IpV, {
         className: g.nd,
         children: (0, a.jsxs)("div", {
@@ -200,7 +200,7 @@ function b() {
                         variant: "text-md/bold",
                         children: "Active premium"
                     }), (0, a.jsx)("div", {
-                        children: u.map(e => (0, a.jsx)(f, {
+                        children: u.map(e => (0, a.jsx)(_, {
                             entitlement: e,
                             active: !0,
                             onDelete: () => y(e.id)
@@ -214,7 +214,7 @@ function b() {
                         variant: "text-md/bold",
                         children: "Unconsumed Fractional Premium"
                     }), (0, a.jsx)("div", {
-                        children: b.map(e => (0, a.jsx)(f, {
+                        children: b.map(e => (0, a.jsx)(_, {
                             entitlement: e
                         }, e.id))
                     })]

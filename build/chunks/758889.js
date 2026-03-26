@@ -1,50 +1,51 @@
 /** chunk id: 758889 params = (module,exports,require) **/
-r.d(t, {
+n.d(t, {
     Vy: () => d
 });
-var a = r(627968);
-r(64700);
-var o = r(397927),
-    n = r(931135),
-    i = r(762168),
-    s = r(652215);
+var r = n(627968);
+n(64700);
+var a = n(397927),
+    o = n(931135),
+    i = n(762168),
+    s = n(652215);
 
 function l(e) {
     let {
         orientation: t,
-        autoplay: r,
+        autoplay: n,
         questCompleted: l,
         videoUrl: d
-    } = e, c = "portrait" === t, u = (0, i.DX)({
+    } = e, u = "portrait" === t, c = (0, i.DX)({
         url: d,
-        width: c ? 360 : 640,
-        height: c ? 640 : 360,
-        videoTitle: c ? "Test Portrait Video" : "Test Landscape Video"
-    }), _ = (0, i.ec)(u), p = l ? {
-        ..._,
+        width: u ? 360 : 640,
+        height: u ? 640 : 360,
+        videoTitle: u ? "Test Portrait Video" : "Test Landscape Video",
+        transcript: "transcript.txt"
+    }), p = (0, i.ec)(c), _ = l ? {
+        ...p,
         userStatus: (0, i.kK)({
-            enrolledAt: _.userStatus?.enrolledAt ?? null,
-            completedAt: _.userStatus?.enrolledAt ?? null,
-            streamProgressSeconds: u.target
+            enrolledAt: p.userStatus?.enrolledAt ?? null,
+            completedAt: p.userStatus?.enrolledAt ?? null,
+            streamProgressSeconds: c.target
         })
-    } : _;
-    return (0, a.jsx)("div", {
+    } : p;
+    return (0, r.jsx)("div", {
         style: {
-            width: c ? "400px" : "100%",
-            maxWidth: c ? void 0 : "800px",
-            height: c ? "700px" : "500px",
+            width: u ? "400px" : "100%",
+            maxWidth: u ? void 0 : "800px",
+            height: u ? "700px" : "500px",
             backgroundColor: "#1e1f22",
             borderRadius: "8px",
             overflow: "hidden"
         },
-        children: (0, a.jsx)(i.sn, {
-            quest: p,
-            isPortrait: c,
-            children: (0, a.jsx)(n.A, {
-                targetTimeSec: u.target,
-                parentTransitionState: o.ip4.ENTERED,
+        children: (0, r.jsx)(i.sn, {
+            quest: _,
+            isPortrait: u,
+            children: (0, r.jsx)(o.A, {
+                targetTimeSec: c.target,
+                parentTransitionState: a.ip4.ENTERED,
                 onOptimisticProgressUpdate: s.tEg,
-                autoplay: r,
+                autoplay: n,
                 performanceClockStartTime: 0,
                 orientation: t,
                 videoUrlOverride: d

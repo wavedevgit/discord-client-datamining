@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(69555),
     p = n(237984),
     g = n(43203),
-    _ = n(349435),
-    f = n(674272),
+    f = n(349435),
+    _ = n(674272),
     v = n(253932),
     b = n(559248),
     j = n(179690),
@@ -46,7 +46,7 @@ function k() {
                 variant: "primary",
                 size: "sm",
                 text: "Launch Vibing Wumpus",
-                onClick: () => (0, f.A)({
+                onClick: () => (0, _.A)({
                     source: S.y.KEYBIND
                 })
             })
@@ -66,7 +66,7 @@ function k() {
                             otherUserId: "9876543210",
                             channelId: e,
                             warningId: "test-warning-id",
-                            warningType: _._j.INAPPROPRIATE_CONVERSATION_TIER_2,
+                            warningType: f._j.INAPPROPRIATE_CONVERSATION_TIER_2,
                             ...n
                         })
                     }, {

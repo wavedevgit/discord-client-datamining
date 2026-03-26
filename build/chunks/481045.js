@@ -1,7 +1,7 @@
 /** chunk id: 481045 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    L7: () => _,
+    L7: () => g,
     qA: () => f
 });
 var i = n(627968),
@@ -17,11 +17,11 @@ var i = n(627968),
     A = n(536482),
     m = n(985018),
     p = n(259533);
-let _ = () => {
+let g = () => {
     (0, o.openUserSettings)(a.X.ACTIVITY_PRIVACY_PANEL)
 };
 
-function g(e) {
+function _(e) {
     let {
         children: t,
         onClick: n
@@ -43,9 +43,9 @@ function f(e) {
     let {
         onClosePopout: t
     } = e, n = r.tz.useSetting(), a = (0, s.bG)([c.Ay], () => c.Ay.getFlattenedGuildIds()), o = (0, d.Kk)(), p = a.filter(e => !o.has(e)), f = (0, u.AB)(p);
-    return 0 === a.length ? null : (0, i.jsxs)(g, {
+    return 0 === a.length ? null : (0, i.jsxs)(_, {
         onClick: () => {
-            t(), _()
+            t(), g()
         },
         children: [(0, i.jsx)(l.Text, {
             variant: "text-sm/semibold",

@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(775121),
     m = n(629357),
     p = n(599677),
-    _ = n(12351),
-    g = n(915089),
+    g = n(12351),
+    _ = n(915089),
     f = n(734057),
     x = n(458294),
     C = n(71393),
@@ -123,7 +123,7 @@ function H(e, t, n) {
 class F extends s.PureComponent {
     scrollerRef = s.createRef();
     inputRef = s.createRef();
-    _listId = (0, g.Ld)();
+    _listId = (0, _.Ld)();
     state = {
         query: this.props.query,
         mouseFocusDisabled: !0
@@ -522,11 +522,11 @@ class F extends s.PureComponent {
         }
     };
     renderProtip() {
-        return (0, i.jsx)(_.A, {
+        return (0, i.jsx)(g.A, {
             className: r()(D.PP, {
                 [D.ov]: this.state.query.length > 0
             }),
-            type: _.A.Types.INLINE,
+            type: g.A.Types.INLINE,
             children: M.intl.format(M.t.wukqXQ, {
                 userSymbolHook: (e, t) => H(t, m.AT.USER, M.intl.string(M.t.GQRCGn)),
                 textChannelSymbolHook: (e, t) => H(t, m.AT.TEXT_CHANNEL, M.intl.string(M.t.wrwhuZ)),

@@ -1,12 +1,12 @@
 /** chunk id: 631670 params = (module,exports,require) **/
 n.d(t, {
     $I: () => S,
-    Cw: () => u,
+    Cw: () => p,
     F7: () => g,
     IM: () => A,
     KD: () => _,
     U_: () => c,
-    Uo: () => p,
+    Uo: () => u,
     _L: () => E,
     _e: () => I,
     fw: () => T,
@@ -23,13 +23,13 @@ n(252452);
 var s = n(652215),
     d = n(516780);
 
-function u() {
+function p() {
     l.h.dispatch({
         type: "USER_PROFILE_SETTINGS_INIT"
     })
 }
 
-function p() {
+function u() {
     l.h.dispatch({
         type: "USER_PROFILE_SETTINGS_CLOSE"
     })
@@ -80,8 +80,8 @@ function E(e) {
         email: a,
         emailToken: r,
         password: o,
-        avatar: u,
-        avatarDescription: p,
+        avatar: p,
+        avatarDescription: u,
         avatarId: c,
         avatarDecoration: E,
         newPassword: S,
@@ -99,8 +99,8 @@ function E(e) {
         email: a,
         email_token: r,
         password: o,
-        avatar: u,
-        avatar_description: p,
+        avatar: p,
+        avatar_description: u,
         avatar_id: c,
         discriminator: n,
         global_name: h,
@@ -111,10 +111,10 @@ function E(e) {
     let R = i.w.get(s.Xlh),
         y = (0, d.oH)();
     null != y && null != R && (T.push_provider = y, T.push_token = R);
-    let m = i.w.get(s.Ahp);
-    return null != d.vz && null != m && (T.push_voip_provider = d.vz, T.push_voip_token = m), _(T).then(e => (l.h.dispatch({
+    let N = i.w.get(s.Ahp);
+    return null != d.vz && null != N && (T.push_voip_provider = d.vz, T.push_voip_token = N), _(T).then(e => (l.h.dispatch({
         type: "USER_PROFILE_SETTINGS_SUBMIT_SUCCESS"
-    }), (null != u || null != c) && l.h.dispatch({
+    }), (null != p || null != c) && l.h.dispatch({
         type: "RECENT_AVATARS_UPDATE"
     }), e), e => (l.h.dispatch({
         type: "USER_PROFILE_SETTINGS_SUBMIT_FAILURE",

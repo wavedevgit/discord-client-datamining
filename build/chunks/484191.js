@@ -1,7 +1,7 @@
 /** chunk id: 484191 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -16,37 +16,37 @@ var i = n(627968),
     A = n(426660),
     m = n(806931),
     p = n(985018),
-    _ = n(852887);
-let g = function(e) {
+    g = n(852887);
+let _ = function(e) {
     let {
         participants: t,
         channel: n,
-        hasConnectPermission: g
+        hasConnectPermission: _
     } = e, f = t.filter(m.Xw), x = (0, d.H)(n.guild_id), C = s.useCallback(() => {
         x ? (0, c.Ze)(n.guild_id, () => r.default.selectVoiceChannel(n.id)) : r.default.selectVoiceChannel(n.id)
     }, [n.id, n.guild_id, x]), E = 4 === f.length ? 2 : 3, I = (0, o.Ay)(n);
     return (0, i.jsxs)("div", {
-        className: _.kL,
+        className: g.kL,
         children: [(0, i.jsx)(A.A, {}), (0, i.jsx)("div", {
-            className: _.os,
+            className: g.os,
             style: {
                 maxWidth: 168 * E
             },
             children: f.slice(0, 5).map(e => (0, i.jsx)(h.Ay, {
                 participant: e,
                 channel: n,
-                className: _.Vs,
+                className: g.Vs,
                 inCall: !0,
                 noVideoRender: !0,
                 popoutType: a.N.NO_POPOUT,
                 width: 48
             }, e.id))
         }), (0, i.jsx)(l.Heading, {
-            className: _.HA,
+            className: g.HA,
             variant: "heading-xxl/semibold",
             children: I
         }), (0, i.jsx)("div", {
-            className: _.Nu,
+            className: g.Nu,
             children: (0, i.jsx)(l.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",
@@ -62,12 +62,12 @@ let g = function(e) {
                 }) : void 0
             })
         }), (0, i.jsx)("div", {
-            className: _.PD,
+            className: g.PD,
             children: (0, i.jsx)(l.Button, {
                 variant: "overlay-primary",
-                text: g ? p.intl.string(p.t["96ANUN"]) : p.intl.string(p.t.TVBCKZ),
+                text: _ ? p.intl.string(p.t["96ANUN"]) : p.intl.string(p.t.TVBCKZ),
                 onClick: C,
-                disabled: !g
+                disabled: !_
             })
         })]
     })

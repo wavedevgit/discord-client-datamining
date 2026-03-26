@@ -4,10 +4,10 @@ function r(e, t, n) {
 }
 
 function l(e, t, n) {
-    return s(e / t * 100, n)
+    return a(e / t * 100, n)
 }
 
-function s(e, t) {
+function a(e, t) {
     return e / 100 * t.width
 }
 
@@ -20,7 +20,7 @@ function i(e) {
 }
 n.d(t, {
     DX: () => l,
-    TO: () => s,
+    TO: () => a,
     hc: () => r,
     rB: () => i
 })

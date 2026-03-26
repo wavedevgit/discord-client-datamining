@@ -20,12 +20,12 @@ var s = n(311907),
 function p(e) {
     let {
         channel: t
-    } = e, n = (0, d.S4)(t), p = (0, s.bG)([r.A], () => r.A.hasHidden(t.id)), _ = (0, u.l)(t.id), {
-        sortOrder: g,
+    } = e, n = (0, d.S4)(t), p = (0, s.bG)([r.A], () => r.A.hasHidden(t.id)), g = (0, u.l)(t.id), {
+        sortOrder: _,
         tagFilter: f,
         tagSetting: x
-    } = (0, c.R)(t.id), C = (0, s.bG)([o.A, h.A], () => !!(o.A.getThreadIds(t.id, g, f, x).length > 0) || !!(h.A.getThreads(t.id, g, f, x).length > 0), [t.id, g, f, x]), E = t.isMediaChannel();
-    if (!n || _ || E && C) return null;
+    } = (0, c.R)(t.id), C = (0, s.bG)([o.A, h.A], () => !!(o.A.getThreadIds(t.id, _, f, x).length > 0) || !!(h.A.getThreads(t.id, _, f, x).length > 0), [t.id, _, f, x]), E = t.isMediaChannel();
+    if (!n || g || E && C) return null;
     let I = p ? E ? m.intl.string(m.t["WP/IE1"]) : m.intl.string(m.t.zfq9V4) : E ? m.intl.string(m.t.p60yF1) : m.intl.string(m.t.SNOqYC);
     return (0, i.jsx)(A.In, {
         tooltip: I,

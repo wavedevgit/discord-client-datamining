@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(688810),
     m = n(941971),
     p = n(900848),
-    _ = n(65611),
-    g = n(855725),
+    g = n(65611),
+    _ = n(855725),
     f = n(532794),
     x = n(366811),
     C = n(345942),
@@ -78,9 +78,9 @@ function F(e) {
         eA = (0, r.bG)([N.A], () => N.A.getChannelId(D.YYv)),
         em = (0, r.bG)([I.A], () => I.A.getChannel(eA)),
         ep = (0, x.A)(e => e.guildId),
-        e_ = (0, R.ai)(ep),
+        eg = (0, R.ai)(ep),
         {
-            badge: eg,
+            badge: e_,
             unread: ef
         } = (0, O.A)(eh),
         ex = (F = null != (t = (0, r.bG)([N.A], () => N.A.getVoiceChannelId())) && null != eh[t], K = (0, r.bG)([E.A], () => {
@@ -92,7 +92,7 @@ function F(e) {
                 location: t
             } = e, n = (0, u.H)(t);
             return null != n && null != eh[n]
-        })), X = z.length > 0, J = !1, Q = !1, $ = !1, Z = !1, F ? (J = !Y, Q = Y, $ = K, Z = q) : ($ = W, Z = X), (0, _.oi)({
+        })), X = z.length > 0, J = !1, Q = !1, $ = !1, Z = !1, F ? (J = !Y, Q = Y, $ = K, Z = q) : ($ = W, Z = X), (0, g.oi)({
             audio: J,
             video: Q,
             screenshare: $,
@@ -100,7 +100,7 @@ function F(e) {
             isCurrentUserConnected: F,
             activity: Z
         })),
-        eC = eg > 0 ? (0, g.w)(eg) : null,
+        eC = e_ > 0 ? (0, _.w)(e_) : null,
         eE = s.useRef(!1),
         {
             hasAccess: eI
@@ -138,7 +138,7 @@ function F(e) {
         }
     }, [ei, es]), (0, i.jsxs)(p.c, {
         children: [(0, i.jsx)(m.A, {
-            selected: e_,
+            selected: eg,
             hovered: ea,
             unread: ef && !eu,
             className: V.I
@@ -153,14 +153,14 @@ function F(e) {
                         ...en,
                         ariaLabel: w.intl.formatToPlainString(w.t["/uzRss"], {
                             guildName: w.intl.string(w.t.wMWyci),
-                            mentions: eg
+                            mentions: e_
                         }),
-                        "aria-selected": e_,
+                        "aria-selected": eg,
                         to: {
                             pathname: D.BVt.CHANNEL(D.YYv, eA),
                             state: H
                         },
-                        selected: e_ || ea,
+                        selected: eg || ea,
                         onClick: () => {
                             ee && eb(!1)
                         },

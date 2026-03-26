@@ -4,10 +4,10 @@ n.d(t, {
 });
 var r = n(64700),
     l = n(412703),
-    s = n(536968),
+    a = n(536968),
     i = n(892358),
-    a = n(579473),
-    o = n(752231),
+    s = n(579473),
+    o = n(795068),
     u = n(654487);
 
 function c(e) {
@@ -18,21 +18,21 @@ function c(e) {
         videoAssetType: d
     } = e, {
         questConfig: m
-    } = r.useContext(o.VideoQuestConfigContext), p = (0, s._o)({
+    } = r.useContext(o.l), p = (0, a._o)({
         location: u.rE.VIDEO_MODAL
-    }).externalAnalyticsEnabled && null != t, f = d === a.fY.VIDEO_PLAYER_VIDEO_HLS, E = r.useMemo(() => ({
+    }).externalAnalyticsEnabled && null != t, E = d === s.fY.VIDEO_PLAYER_VIDEO_HLS, f = r.useMemo(() => ({
         contentId: t ?? "",
-        videoStreamType: f ? "hls" : "mp4",
+        videoStreamType: E ? "hls" : "mp4",
         contentType: "quests",
         title: m.taskConfigV2.tasks[l.n.WATCH_VIDEO]?.messages.videoTitle,
         questId: m.id,
         gameName: m.messages.gameTitle
-    }), [t, f, m]);
+    }), [t, E, m]);
     (0, i.P8)({
         videoRef: n,
         hlsRef: c,
         enabled: p,
-        contentMetadata: E,
-        isHls: f
+        contentMetadata: f,
+        isHls: E
     })
 }

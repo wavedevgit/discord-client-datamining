@@ -9,8 +9,8 @@ var a = n(627968),
     o = n(397927),
     s = n(688810),
     d = n(44120),
-    u = n(954571),
-    p = n(440938),
+    p = n(954571),
+    u = n(440938),
     c = n(238184),
     _ = n(766172),
     E = n(652215),
@@ -28,9 +28,9 @@ let v = e => {
         giftRecipient: R,
         giftingOrigin: y = S.vQ.SHOP_PAGE
     } = e, {
-        analyticsLocations: m
-    } = (0, s.Ay)(), N = i.useRef(null), C = (0, p.uM)(), f = (0, c.A)(), O = e => {
-        e.stopPropagation(), u.default.track(E.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        analyticsLocations: N
+    } = (0, s.Ay)(), m = i.useRef(null), C = (0, u.uM)(), f = (0, c.A)(), O = e => {
+        e.stopPropagation(), p.default.track(E.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
             collectibles_shop_session_id: C?.sessionId,
             sku_id: t.skuId,
             page_section: C?.pageSection,
@@ -47,7 +47,7 @@ let v = e => {
             isGift: !0,
             giftRecipient: R,
             giftingOrigin: y,
-            analyticsLocations: m,
+            analyticsLocations: N,
             returnRef: A,
             onClose: null != g ? e => {
                 e && g()
@@ -65,7 +65,7 @@ let v = e => {
         delay: I,
         children: (0, a.jsx)(o.K0, {
             "aria-label": h.intl.string(h.t["JCFN/y"]),
-            buttonRef: N,
+            buttonRef: m,
             variant: n ? "primary" : "secondary",
             icon: o.okO,
             size: "md",

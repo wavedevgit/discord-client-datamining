@@ -14,9 +14,9 @@ var i = n(627968),
     m = n(974544),
     _ = n(793574),
     g = n(688810),
-    x = n(429619),
-    A = n(451909),
-    h = n(550111),
+    x = n(512213),
+    A = n(429619),
+    h = n(451909),
     p = n(202639),
     f = n(407217),
     T = n(919395),
@@ -60,7 +60,7 @@ function M() {
             pendingValue: M,
             userValue: e?.collectibles?.nameplate
         }),
-        B = (0, N.A)() && null != n ? A.Ay.parse(void 0, n).content : n,
+        B = (0, N.A)() && null != n ? h.Ay.parse(void 0, n).content : n,
         F = O.Ay.canUsePremiumProfileCustomization(e),
         {
             analyticsLocations: H,
@@ -70,7 +70,7 @@ function M() {
     let [Y, X] = s.useState(!1), K = !F, W = s.useRef(null);
     return t ? (0, i.jsx)(m.A, {}) : (0, i.jsxs)(g.f5, {
         value: H,
-        children: [(0, i.jsx)(x.A, {}), (0, i.jsx)(S.A, {
+        children: [(0, i.jsx)(A.A, {}), (0, i.jsx)(S.A, {
             profilePreview: (0, i.jsx)(E.A, {
                 user: e,
                 canUsePremiumCustomization: F,
@@ -79,7 +79,7 @@ function M() {
                 ...k,
                 pendingAvatar: w
             }),
-            nameplatePreview: (0, i.jsx)(h.A, {
+            nameplatePreview: (0, i.jsx)(x.A, {
                 user: e,
                 nameplate: V,
                 ...k,

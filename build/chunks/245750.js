@@ -19,9 +19,9 @@ function h(e) {
             onClick: x,
             onContextMenu: p,
             iconForeground: g,
-            nameplate: _
+            nameplate: f
         } = e,
-        f = i.useRef(null),
+        _ = i.useRef(null),
         [v, b] = i.useState(!1);
     (0, s.Ay)(() => {
         let e = () => b(!0);
@@ -39,7 +39,7 @@ function h(e) {
         C = (0, l.w)();
     return A = null != h ? r.Hnu : C.Component, (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(c.A, {
-            ref: f,
+            ref: _,
             tooltipText: t,
             tooltipPositionKey: n,
             onClick: j,
@@ -51,9 +51,9 @@ function h(e) {
                 className: g
             }),
             ...C.events,
-            plated: null != _
+            plated: null != f
         }), (0, a.jsx)(o.V, {
-            targetElementRef: f,
+            targetElementRef: _,
             shouldShow: v,
             onDismiss: () => b(!1)
         })]

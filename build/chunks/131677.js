@@ -1,7 +1,7 @@
 /** chunk id: 131677 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => _
 });
 var i = n(311907),
     s = n(73153),
@@ -29,7 +29,7 @@ function p(e) {
     } = e, n = a.A.getChannel(t);
     return null != n && !!(0, l.Gw)(n.type) && A()
 }
-class _ extends i.Ay.Store {
+class g extends i.Ay.Store {
     static displayName = "PrivateChannelReadStateStore";
     initialize() {
         this.waitFor(d.default, a.A, c.A, o.Ay)
@@ -38,7 +38,7 @@ class _ extends i.Ay.Store {
         return u
     }
 }
-let g = new _(s.h, {
+let _ = new g(s.h, {
     CONNECTION_OPEN: m,
     OVERLAY_INITIALIZE: m,
     MESSAGE_CREATE: p,

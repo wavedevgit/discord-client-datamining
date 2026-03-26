@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(971649),
     p = n(651892),
     g = n(901406),
-    _ = n(92246),
-    f = n(792620),
+    f = n(92246),
+    _ = n(792620),
     v = n(814793),
     b = n(753386),
     j = n(201805),
@@ -143,7 +143,7 @@ let I = e => {
             questContent: u,
             sourceQuestContent: m
         }), p = i.useCallback(e => {
-            r?.(e), (0, _.ks)(t.config) && t.userStatus?.claimedAt != null ? (0, d.Cz)({
+            r?.(e), (0, f.ks)(t.config) && t.userStatus?.claimedAt != null ? (0, d.Cz)({
                 tab: T.G2.ORBS,
                 analyticsLocations: [],
                 analyticsSource: o.A.QUEST_HOME_PAGE
@@ -170,32 +170,32 @@ let I = e => {
             onGameSheetOpen: u,
             onGameSheetClose: m,
             taskDetails: h
-        } = i.useContext(y.T), x = d.userStatus?.completedAt != null, p = (0, f.vv)(d), g = r !== c.X0.SELECT && !s && !l, _ = null;
-        return x ? _ = (0, a.jsx)(w, {
+        } = i.useContext(y.T), x = d.userStatus?.completedAt != null, p = (0, _.vv)(d), g = r !== c.X0.SELECT && !s && !l, f = null;
+        return x ? f = (0, a.jsx)(w, {
             quest: d,
             sourceQuestContent: t
-        }) : p ? _ = (0, a.jsx)(N, {
+        }) : p ? f = (0, a.jsx)(N, {
             quest: d,
             sourceQuestContent: t,
             taskDetails: h
-        }) : (0, v.vA)(d) ? _ = (0, a.jsx)(O, {
+        }) : (0, v.vA)(d) ? f = (0, a.jsx)(O, {
             quest: d
-        }) : r === c.X0.CONSOLE && n ? _ = (0, a.jsx)(k, {
+        }) : r === c.X0.CONSOLE && n ? f = (0, a.jsx)(k, {
             quest: d,
             sourceQuestContent: t
-        }) : g && (0, v.ui)(d) ? _ = (0, a.jsx)(R, {
+        }) : g && (0, v.ui)(d) ? f = (0, a.jsx)(R, {
             quest: d,
             sourceQuestContent: t,
             taskDetails: h,
             popoutTargetElementRef: o,
             onGameSheetOpened: u,
             onGameSheetClosed: m
-        }) : g && (_ = (0, a.jsx)(I, {
+        }) : g && (f = (0, a.jsx)(I, {
             quest: d,
             sourceQuestContent: t
-        })), null == _ ? null : (0, a.jsx)("div", {
+        })), null == f ? null : (0, a.jsx)("div", {
             className: E.lO,
-            children: _
+            children: f
         })
     };
 

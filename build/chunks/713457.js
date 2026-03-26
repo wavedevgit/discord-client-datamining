@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(341915),
     p = n(12251),
     g = n(33621),
-    _ = n(551456),
-    f = n(714510),
+    f = n(551456),
+    _ = n(714510),
     v = n(890687),
     b = n(18437),
     j = n(590202),
@@ -111,7 +111,7 @@ function B(e) {
         text: l
     } = e, {
         enabled: o
-    } = _.K.useConfig({
+    } = f.K.useConfig({
         location: R.rE.QUEST_LEARN_MORE_CTA
     }), {
         externalLinkCta: c,
@@ -165,7 +165,7 @@ function G(e) {
         formattedExpirationDate: i
     } = e, {
         enabled: s
-    } = _.K.useConfig({
+    } = f.K.useConfig({
         location: R.rE.QUEST_LEARN_MORE_CTA
     }), {
         externalLinkCta: l,
@@ -207,7 +207,7 @@ function F(e) {
     let {
         quest: t,
         questContent: n,
-        onReceiveErrorHints: _,
+        onReceiveErrorHints: f,
         contentPosition: A,
         rowIndex: T,
         sourceQuestContent: U
@@ -229,10 +229,10 @@ function F(e) {
     })), Y = t.userStatus?.enrolledAt != null, J = t.userStatus?.completedAt != null, X = J && t.userStatus?.claimedAt == null, Z = (0, y.if)(t), ee = !(0, y.Ic)(t), et = (0, v.In)(t), en = (0, S.IO)(t), ea = (0, S.K$)(t), ei = (0, S.Cr)(t), es = (0, v.fc)(t), [el, er, eo] = (0, v.Qo)(t, es), ed = ee && et === v.F3.ACCEPTED, ec = ed && el === x.X0.SELECT, eu = ed && !ec && er.length > 1, em = g.t.useConfig({
         location: R.rE.QUEST_HOME_DESKTOP
     }), eh = (0, k.Pd)(t), ex = (0, m.O)(e => e.clearErrorHints), ep = i.useCallback(e => {
-        eo(e), e === R.fO.DESKTOP && (_([]), ex(t.id))
-    }, [eo, _, ex, t.id]), {
+        eo(e), e === R.fO.DESKTOP && (f([]), ex(t.id))
+    }, [eo, f, ex, t.id]), {
         text: eg,
-        onClick: e_
+        onClick: ef
     } = (0, N._c)({
         progressState: et,
         quest: t,
@@ -244,7 +244,7 @@ function F(e) {
         inGameQuest: ei,
         sourceQuestContent: U
     }), {
-        startingConsoleQuest: ef,
+        startingConsoleQuest: e_,
         startConsoleQuest: ev
     } = (0, v.Wj)({
         questId: t.id,
@@ -259,11 +259,11 @@ function F(e) {
             })
         },
         afterRequest: e => {
-            V.stopAnimation(), _(e)
+            V.stopAnimation(), f(e)
         }
     }), eb = t.userStatus?.claimedAt != null, {
         launchInGameActivity: ej
-    } = (0, v.zW)(t), eA = (0, f.NA)({
+    } = (0, v.zW)(t), eA = (0, _.NA)({
         quest: t,
         shortText: !0
     }), eC = p.s5.useConfig({
@@ -288,7 +288,7 @@ function F(e) {
         children: (0, a.jsx)(r.$nd, {
             variant: "primary",
             loading: $,
-            onClick: e_ ?? void 0,
+            onClick: ef ?? void 0,
             text: eg,
             fullWidth: !0
         })
@@ -296,7 +296,7 @@ function F(e) {
         quest: t,
         questContent: n,
         sourceQuestContent: U,
-        onClick: e_,
+        onClick: ef,
         text: eg
     }) : (0, E.vA)(t) ? (0, a.jsxs)(r.e2v, {
         direction: "horizontal",
@@ -311,14 +311,14 @@ function F(e) {
             }
         }), (0, a.jsx)(r.$nd, {
             variant: "primary",
-            onClick: e_ ?? void 0,
+            onClick: ef ?? void 0,
             text: eg
         })]
     }) : (0, a.jsx)("div", {
         className: D.x6,
         children: (0, a.jsx)(r.$nd, {
             variant: "primary",
-            onClick: e_ ?? void 0,
+            onClick: ef ?? void 0,
             text: eg,
             fullWidth: !0
         })
@@ -327,7 +327,7 @@ function F(e) {
         children: (0, a.jsx)(r.$nd, {
             variant: "primary",
             loading: $,
-            onClick: e_ ?? void 0,
+            onClick: ef ?? void 0,
             text: eg,
             fullWidth: !0
         })
@@ -351,7 +351,7 @@ function F(e) {
             children: (0, a.jsx)(r.$nd, {
                 variant: "primary",
                 loading: q,
-                onClick: e_ ?? void 0,
+                onClick: ef ?? void 0,
                 text: eg,
                 fullWidth: !0
             })
@@ -389,7 +389,7 @@ function F(e) {
         className: D.x6,
         children: (0, a.jsx)(r.$nd, {
             variant: "secondary",
-            onClick: e_ ?? void 0,
+            onClick: ef ?? void 0,
             text: eg,
             fullWidth: !0
         })
@@ -397,7 +397,7 @@ function F(e) {
         "data-migration-pending": !0,
         color: o.XD.PRIMARY,
         onClick: ev,
-        disabled: ef,
+        disabled: e_,
         className: D.x6,
         children: (0, a.jsxs)("div", {
             className: D.tn,
@@ -407,7 +407,7 @@ function F(e) {
         className: D.x6,
         children: (0, a.jsx)(r.$nd, {
             variant: "primary",
-            onClick: e_ ?? void 0,
+            onClick: ef ?? void 0,
             text: eg,
             fullWidth: !0
         })
@@ -416,7 +416,7 @@ function F(e) {
         children: (0, a.jsx)(r.$nd, {
             variant: "primary",
             icon: (0, O.Oz)(t),
-            onClick: e_ ?? void 0,
+            onClick: ef ?? void 0,
             text: eg,
             fullWidth: !0
         })
@@ -456,7 +456,7 @@ function F(e) {
             }) : (0, a.jsx)(r.$nd, {
                 loading: q,
                 variant: "primary",
-                onClick: e_ ?? void 0,
+                onClick: ef ?? void 0,
                 text: eg,
                 icon: (0, O.Oz)(t),
                 fullWidth: !0

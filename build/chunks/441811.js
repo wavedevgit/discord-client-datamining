@@ -1,6 +1,6 @@
 /** chunk id: 441811 params = (module,exports,require) **/
 n.d(t, {
-    l: () => f
+    l: () => _
 });
 var a = n(627968),
     i = n(64700),
@@ -16,28 +16,28 @@ var a = n(627968),
     x = n(927961),
     p = n(985018),
     g = n(439315);
-let _ = new o.A("DisplayNameStylesCoachmark");
+let f = new o.A("DisplayNameStylesCoachmark");
 
-function f(e) {
+function _(e) {
     let {
         markAsDismissed: t,
         targetElementRef: n,
         children: o
     } = e, {
-        analyticsLocations: f
+        analyticsLocations: _
     } = (0, r.Ay)(), v = (0, i.useRef)(null), b = (0, s.bG)([u.A], () => u.A.isFocused()), j = (0, i.useCallback)(() => {
         t(h.i.TAKE_ACTION), (0, c.openUserSettings)(d.X.PROFILE_PANEL, {
-            analyticsLocations: f
+            analyticsLocations: _
         }, () => {
             (0, m.L)({
-                analyticsLocations: f
+                analyticsLocations: _
             })
         })
-    }, [t, f]), A = (0, i.useCallback)(() => {
+    }, [t, _]), A = (0, i.useCallback)(() => {
         t(h.i.USER_DISMISS)
     }, [t]);
     return (0, i.useEffect)(() => {
-        b && v.current?.paused ? v.current?.play().catch(_.error) : b || v.current?.pause()
+        b && v.current?.paused ? v.current?.play().catch(f.error) : b || v.current?.pause()
     }, [b]), (0, a.jsxs)(a.Fragment, {
         children: [o, (0, a.jsx)(l.A, {
             targetElementRef: n,

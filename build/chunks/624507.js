@@ -48,11 +48,11 @@ function A(e) {
                 })
             }
         })
-    }, [t.guild_id, t.id, t.name]), v = [];
-    null != t.source_channel && null != t.source_guild && (v.push({
+    }, [t.guild_id, t.id, t.name]), T = [];
+    null != t.source_channel && null != t.source_guild && (T.push({
         icon: r.koX,
         text: t.source_channel.name
-    }), v.push({
+    }), T.push({
         text: (0, i.jsx)("span", {
             className: p.lM,
             children: h.intl.format(h.t["H/jJ6R"], {
@@ -63,8 +63,8 @@ function A(e) {
             })
         }, "guild-source")
     }));
-    let T = null;
-    return b && null != n && (T = (0, i.jsxs)("div", {
+    let v = null;
+    return b && null != n && (v = (0, i.jsxs)("div", {
         className: p.rf,
         children: [(0, i.jsx)(r.cGx, {
             className: p.fV
@@ -119,14 +119,14 @@ function A(e) {
                     children: [(0, i.jsx)(g.A, {
                         name: t.name,
                         imageSrc: N,
-                        details: v
+                        details: T
                     }), (0, i.jsx)(u.A, {
                         className: p.eO,
                         expanded: b,
                         "aria-hidden": !0
                     })]
                 })
-            }), T]
+            }), v]
         })
     })
 }

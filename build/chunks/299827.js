@@ -28,7 +28,7 @@ function g(e) {
             tag: "span",
             children: e
         })
-    }), [A]), I = i.useCallback(e => (0, l.jsx)(s.MzZ, {
+    }), [A]), x = i.useCallback(e => (0, l.jsx)(s.MzZ, {
         href: d.X7G.INVITES_HELP,
         target: "_blank",
         children: (0, l.jsx)(s.Text, {
@@ -37,14 +37,14 @@ function g(e) {
             tag: "span",
             children: e
         })
-    }), []), x = n instanceof a.A ? n.code !== d.t02.TOO_MANY_INVITES ? n.getAnyErrorMessage() : o.A.can(d.xBc.MANAGE_GUILD, t) ? u.intl.format(u.t["H/RUY1"], {
+    }), []), I = n instanceof a.A ? n.code !== d.t02.TOO_MANY_INVITES ? n.getAnyErrorMessage() : o.A.can(d.xBc.MANAGE_GUILD, t) ? u.intl.format(u.t["H/RUY1"], {
         inviteListHook: p,
-        inviteHelpHook: I
+        inviteHelpHook: x
     }) : u.intl.string(u.t["/FxH6G"]) : "message" in n ? n.message : u.intl.string(u.t.eAn6z2);
     return (0, l.jsx)(s.Text, {
         className: c.gJ,
         variant: "text-xs/normal",
         color: "text-feedback-critical",
-        children: x
+        children: I
     })
 }

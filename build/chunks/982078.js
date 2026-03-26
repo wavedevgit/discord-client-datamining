@@ -28,9 +28,9 @@ function x() {
         setThemeOverride: t,
         savedClientTheme: n,
         setSavedClientTheme: x
-    } = (0, d.Zt)(), p = (0, o.Ay)(), g = (0, s.bG)([c.A], () => c.A.settings.appearance?.clientThemeSettings), _ = g?.customUserThemeSettings != null && null != g.customUserThemeSettings.colors && g.customUserThemeSettings.colors.length > 0;
+    } = (0, d.Zt)(), p = (0, o.Ay)(), g = (0, s.bG)([c.A], () => c.A.settings.appearance?.clientThemeSettings), f = g?.customUserThemeSettings != null && null != g.customUserThemeSettings.colors && g.customUserThemeSettings.colors.length > 0;
 
-    function f() {
+    function _() {
         null != n && ((0, r.u_)({
             theme: n.theme,
             customUserThemeSettings: n.customUserThemeSettings
@@ -85,7 +85,7 @@ function x() {
                         variant: "critical-primary",
                         text: "Clear Theme Override",
                         onClick: function() {
-                            f(), t(null)
+                            _(), t(null)
                         }
                     })
                 }), (0, a.jsx)(i.l6P, {
@@ -161,8 +161,8 @@ function x() {
                             themeType: n
                         }),
                         clearable: !0,
-                        disabled: _
-                    }), _ && (0, a.jsxs)(a.Fragment, {
+                        disabled: f
+                    }), f && (0, a.jsxs)(a.Fragment, {
                         children: [(0, a.jsx)(i.EYj, {
                             variant: "text-sm/normal",
                             color: "text-feedback-warning",
@@ -193,7 +193,7 @@ function x() {
                             variant: "secondary",
                             size: "sm",
                             text: "Restore Custom Theme",
-                            onClick: f
+                            onClick: _
                         })]
                     })]
                 })]

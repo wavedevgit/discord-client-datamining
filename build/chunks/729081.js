@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(568598),
     m = n(313961),
     p = n(246356),
-    _ = n(178213),
-    g = n(332772),
+    g = n(178213),
+    _ = n(332772),
     f = n(594832),
     x = n(631784),
     C = n(721932),
@@ -56,8 +56,8 @@ function V(e) {
     s.useEffect(() => {
         t || n()
     }, [n, t]);
-    let V = (0, _.GG)("social_layer_storefront_gifting_mini_shelf");
-    (0, g.T)({
+    let V = (0, g.GG)("social_layer_storefront_gifting_mini_shelf");
+    (0, _.T)({
         location: "social_layer_storefront_gifting_mini_shelf"
     });
     let H = (0, u.bG)([v.A], () => v.A.getDetectableIdsToApplicationIds()),

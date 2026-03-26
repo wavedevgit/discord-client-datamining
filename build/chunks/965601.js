@@ -35,7 +35,7 @@ function A(e) {
         updateThreadSettings: l,
         threadSettings: d,
         textAreaState: A
-    } = e, [m, p] = s.useState(!1), [_, g] = s.useState(!1), f = (0, o.b)(), x = s.useCallback(async () => {
+    } = e, [m, p] = s.useState(!1), [g, _] = s.useState(!1), f = (0, o.b)(), x = s.useCallback(async () => {
         if (f) {
             p(!0);
             try {
@@ -56,12 +56,12 @@ function A(e) {
         }
     }, [t.id, n, l, f, A.textValue]);
     s.useEffect(() => {
-        g(!1), p(!1), t.id === d.parentChannelId && n !== d.parentMessageId && l({
+        _(!1), p(!1), t.id === d.parentChannelId && n !== d.parentMessageId && l({
             name: ""
         })
     }, [n, l, t.id, d.parentChannelId, d.parentMessageId]), s.useEffect(() => {
-        null != d.name && "" !== d.name.trim() || _ || f && null != n && (g(!0), x())
-    }, [t.id, n, l, d.name, _, f, x]);
+        null != d.name && "" !== d.name.trim() || g || f && null != n && (_(!0), x())
+    }, [t.id, n, l, d.name, g, f, x]);
     let C = s.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
             if (f) return {

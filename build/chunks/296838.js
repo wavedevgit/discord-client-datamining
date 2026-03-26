@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(73939),
     m = n(397927),
     p = n(915967),
-    _ = n(34968),
-    g = n(775121),
+    g = n(34968),
+    _ = n(775121),
     f = n(775602),
     x = n(400492),
     C = n(203982),
@@ -283,7 +283,7 @@ function L(e) {
     let {
         transitionState: t,
         onClose: n
-    } = e, [l, a] = s.useState(!1), [o, c] = s.useState(!1), d = s.useMemo(() => __OVERLAY__ ? (0, _.y8)() : (0, p.Bx)(), []), {
+    } = e, [l, a] = s.useState(!1), [o, c] = s.useState(!1), d = s.useMemo(() => __OVERLAY__ ? (0, g.y8)() : (0, p.Bx)(), []), {
         keyboardModeEnabled: u,
         useReducedMotion: x
     } = (0, h.cf)([f.A], () => ({
@@ -311,7 +311,7 @@ function L(e) {
                     content: d,
                     keyboardModeEnabled: u,
                     activateRagingDemon: function() {
-                        x || (g.A.disable(), a(!0), c(!0))
+                        x || (_.A.disable(), a(!0), c(!0))
                     }
                 }, "modal")
             })

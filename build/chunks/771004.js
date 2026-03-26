@@ -24,13 +24,13 @@ function _(e) {
         detectedGame: t,
         trackAction: n
     } = e, [i, x] = l.useState(t?.summaryLocalized != null), [_, v] = l.useState(!0), [j, A] = l.useState(!1), C = l.useRef(null), {
-        width: b,
-        height: I
+        width: I,
+        height: b
     } = (0, u.A)();
     return (l.useEffect(() => {
         let e = C.current;
         null != e && A(e.scrollHeight - e.clientHeight > 1 || !_)
-    }, [C, b, I, _]), null == t.summary) ? null : (0, a.jsxs)("div", {
+    }, [C, I, b, _]), null == t.summary) ? null : (0, a.jsxs)("div", {
         className: r()(g.fi, g.mX),
         children: [null != t.summaryLocalized && (0, a.jsxs)("div", {
             className: r()(g.nM, g.Lc),
@@ -90,7 +90,7 @@ function v(e) {
         n(e ? m.Ws.ShowMore : m.Ws.ShowLess), s(e)
     }, [i, n]);
     if (null == t.summary) return null;
-    let b = i ? f.intl.string(f.t["6MwJo/"]) : f.intl.string(f.t.lBeKY2);
+    let I = i ? f.intl.string(f.t["6MwJo/"]) : f.intl.string(f.t.lBeKY2);
     return (0, a.jsxs)("div", {
         className: r()(g.fi, g.mX),
         children: [(0, a.jsx)(c.EYj, {
@@ -100,7 +100,7 @@ function v(e) {
             children: t.summary
         }), o && (0, a.jsx)(c.QWc, {
             onClick: C,
-            text: b
+            text: I
         })]
     })
 }

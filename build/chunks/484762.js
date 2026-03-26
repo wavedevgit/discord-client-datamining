@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(73153),
     p = n(391973),
     g = n(684013),
-    _ = n(56562),
-    f = n(765671),
+    f = n(56562),
+    _ = n(765671),
     v = n(235986),
     b = n(15285),
     j = n(742589),
@@ -359,7 +359,7 @@ let er = i.memo(function(e) {
             let e = T.default.getTrackedGameByPid(t)?.fullscreenType;
             if (null != e) return e;
             let n = b.Ay.getGameOrTransformedSubgameForPID(t);
-            return n?.fullscreenType ?? _.aI.UNKNOWN
+            return n?.fullscreenType ?? f.aI.UNKNOWN
         }, [t]);
         return (0, a.jsxs)(h.Text, {
             variant: "text-sm/normal",
@@ -693,7 +693,7 @@ function eg(e) {
             return "var(--gray-400)"
     }
 }
-let e_ = [{
+let ef = [{
     key: "type",
     cellClassName: Y.SZ,
     renderHeader: () => null,
@@ -701,7 +701,7 @@ let e_ = [{
         let {
             type: t,
             logType: n
-        } = e, i = ef(t);
+        } = e, i = e_(t);
         return (0, a.jsx)("div", {
             className: Y.g$,
             style: {
@@ -756,7 +756,7 @@ let e_ = [{
     }
 }];
 
-function ef(e) {
+function e_(e) {
     switch (e) {
         case C.ON.NativeLegacy:
             return h.WxK;
@@ -796,7 +796,7 @@ let eb = ["__webpack_require__", "fn"],
                 data: u,
                 timestamp: m,
                 pid: x
-            } = t, p = o()(m), g = ef(s);
+            } = t, p = o()(m), g = e_(s);
             return (0, a.jsxs)(h.ArX, {
                 className: Y.bW,
                 children: [(0, a.jsxs)(j.A, {
@@ -915,7 +915,7 @@ function ey() {
     let {
         ref: e,
         height: t
-    } = (0, f.Ay)(), n = (0, c.bG)([N.A], () => N.A.isModuleLoggingEnabled()), [s, r] = i.useState(n), [o, d] = i.useState(!1), [u, m] = i.useState(null), [x, p] = i.useState(Object.keys(ep)), [_, v] = (0, c.bG)([N.A], () => N.A.getOverlayLoggingBreadcrumbs(), [], G.D), [b, j] = i.useState(null), A = b ?? _, C = null != b ? -1 : v;
+    } = (0, _.Ay)(), n = (0, c.bG)([N.A], () => N.A.isModuleLoggingEnabled()), [s, r] = i.useState(n), [o, d] = i.useState(!1), [u, m] = i.useState(null), [x, p] = i.useState(Object.keys(ep)), [f, v] = (0, c.bG)([N.A], () => N.A.getOverlayLoggingBreadcrumbs(), [], G.D), [b, j] = i.useState(null), A = b ?? f, C = null != b ? -1 : v;
     i.useEffect(() => {
         0 !== C && (o ? m(A.reduce((e, t) => "game_tracking_starting" === t.name ? Math.max(e, t.timestamp) : e, 0)) : m(null))
     }, [o, A, C]);
@@ -1039,7 +1039,7 @@ function ey() {
         }), (0, a.jsx)("div", {
             className: l()(Y.st, Y.CZ),
             children: (0, a.jsx)(K.A, {
-                columns: e_,
+                columns: ef,
                 data: E,
                 selectedRowKey: k ?? void 0,
                 onClickRow: e => R(e.key)

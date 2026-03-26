@@ -16,7 +16,7 @@ var a = n(627968),
     x = n(372022);
 let p = [r.UserIcon, r.ShieldIcon, r.GiftIcon, r.AchievementsIcon, r.PiggyBankIcon, r.TreehouseIcon, r.SpeedometerIcon, r.CompassIcon, r.SignPostIcon, r.CarIcon, r.TrainIcon, r.TeacupIcon, r.InventoryIcon, r.FoodIcon, r.BurgerIcon, r.MagicDoorIcon, r.PawPrintIcon, r.RecordPlayerIcon, r.SettingsIcon],
     g = ["text-default", "text-feedback-positive", "text-feedback-warning", "text-feedback-info", "text-feedback-critical"],
-    _ = () => {
+    f = () => {
         let [e, t] = i.useState(""), [n, s] = i.useState(""), [l, r] = i.useState(!1);
         return (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsx)("form", {
@@ -80,13 +80,13 @@ let p = [r.UserIcon, r.ShieldIcon, r.GiftIcon, r.AchievementsIcon, r.PiggyBankIc
             })]
         })
     },
-    f = e => {
+    _ = e => {
         let {
             pool: t
         } = e, {
             id: n,
             summary: s
-        } = t, _ = u.A.getUsersForPool(n), f = (0, o.bG)([h.default], () => h.default.getId()), v = p[Number(n) % p.length], b = g[Number(n) % g.length], j = i.useCallback(() => {
+        } = t, f = u.A.getUsersForPool(n), _ = (0, o.bG)([h.default], () => h.default.getId()), v = p[Number(n) % p.length], b = g[Number(n) % g.length], j = i.useCallback(() => {
             (0, c.cD)(n)
         }, [n]);
         return (0, a.jsx)(d.BJc, {
@@ -107,7 +107,7 @@ let p = [r.UserIcon, r.ShieldIcon, r.GiftIcon, r.AchievementsIcon, r.PiggyBankIc
                 }),
                 title: s,
                 className: x.JC,
-                subtitle: `${_.length} users`,
+                subtitle: `${f.length} users`,
                 children: (0, a.jsxs)(d.BJc, {
                     direction: "vertical",
                     gap: 4,
@@ -117,16 +117,16 @@ let p = [r.UserIcon, r.ShieldIcon, r.GiftIcon, r.AchievementsIcon, r.PiggyBankIc
                         bottom: 16
                     },
                     fullWidth: !1,
-                    children: [_.map((e, n) => (0, a.jsxs)(i.Fragment, {
+                    children: [f.map((e, n) => (0, a.jsxs)(i.Fragment, {
                         children: [0 !== n && (0, a.jsx)(d.cGx, {
                             gap: 4
                         }), (0, a.jsx)(d.DUT, {
                             onClick: n => {
                                 n.stopPropagation(), (0, c.sl)(t.id, e.id)
                             },
-                            "aria-disabled": f === e.id,
+                            "aria-disabled": _ === e.id,
                             className: l()(x.vk, {
-                                [x.Pe]: f === e.id
+                                [x.Pe]: _ === e.id
                             }),
                             children: (0, a.jsxs)(d.BJc, {
                                 direction: "horizontal",
@@ -143,7 +143,7 @@ let p = [r.UserIcon, r.ShieldIcon, r.GiftIcon, r.AchievementsIcon, r.PiggyBankIc
                                     gap: 8,
                                     fullWidth: !1,
                                     className: l()({
-                                        [x.WP]: f === e.id
+                                        [x.WP]: _ === e.id
                                     }),
                                     children: [(0, a.jsx)(r.UserIcon, {
                                         size: "custom",
@@ -162,7 +162,7 @@ let p = [r.UserIcon, r.ShieldIcon, r.GiftIcon, r.AchievementsIcon, r.PiggyBankIc
                                             children: e.email
                                         })]
                                     })]
-                                }), f === e.id ? (0, a.jsx)(d.Text, {
+                                }), _ === e.id ? (0, a.jsx)(d.Text, {
                                     variant: "text-sm/normal",
                                     color: "text-feedback-positive",
                                     children: (0, a.jsx)(r.CircleCheckIcon, {
@@ -197,9 +197,9 @@ function v() {
         gap: 16,
         fullWidth: !1,
         className: x.kL,
-        children: [(0, a.jsx)(_, {}), (0, a.jsx)(d.HOs, {
+        children: [(0, a.jsx)(f, {}), (0, a.jsx)(d.HOs, {
             className: x.Ik,
-            children: e?.map(e => (0, a.jsx)(f, {
+            children: e?.map(e => (0, a.jsx)(_, {
                 pool: e
             }, e.id))
         })]

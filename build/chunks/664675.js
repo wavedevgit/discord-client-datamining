@@ -22,8 +22,8 @@ var i = n(627968),
     _ = n(287809),
     N = n(954571),
     j = n(562153),
-    v = n(661191),
-    T = n(53656),
+    T = n(661191),
+    v = n(53656),
     C = n(803378),
     I = n(200662),
     E = n(739174),
@@ -62,7 +62,7 @@ function R(e) {
                                     t = j.Ay.getName(n, void 0, s);
                                 return e?.localeCompare(t)
                             }
-                            return v.default.compare(e.id, t.id)
+                            return T.default.compare(e.id, t.id)
                         }(n, i, s);
                     case g.RA.ROLE:
                         if (n.id === s) return -1;
@@ -72,7 +72,7 @@ function R(e) {
                         if (n.id === e) return -1;
                         if (i.id === e) return 1;
                         let a = Number(n.canWrite) - Number(i.canWrite);
-                        return 0 !== a ? a : v.default.compare(n.id, i.id)
+                        return 0 !== a ? a : T.default.compare(n.id, i.id)
                 }
             })
         }, [s, d, A]),
@@ -94,7 +94,7 @@ function R(e) {
         0 !== e.length && (u.A.requestMembersById(s, e, !1), E(t => new Set([...t, ...e])))
     }, [s, d, N, E]);
     let R = (0, r.bG)([C.A], () => C.A.getApplicationId()),
-        L = (0, r.bG)([T.default], () => null == R ? void 0 : T.default.integrations.find(e => e.application?.id === R)),
+        L = (0, r.bG)([v.default], () => null == R ? void 0 : v.default.integrations.find(e => e.application?.id === R)),
         M = (0, r.bG)([p.A], () => void 0 !== L && p.A.canShowToggleTooltip(L.id));
     return S.length > 0 ? S.map(e => (0, i.jsx)(k, {
         guild: h,
@@ -129,16 +129,16 @@ function k(e) {
         f = c.id === n.id || c.id === (0, x.Ap)(n.id),
         _ = u?.application?.bot?.username,
         j = !c.canWrite || !b,
-        v = A.default.getId();
-    b ? c.canWrite || (c.type === g.RA.USER ? t = c.id === v ? O.intl.string(O.t["1VF/0x"]) : O.intl.string(O.t.P1GnEd) : c.type === g.RA.ROLE && (t = O.intl.string(O.t.mcAijf))) : t = null != s ? O.intl.string(O.t.tybdas) : O.intl.string(O.t["z2hjk/"]);
-    let T = p && null != u && c.id === n.id && void 0 !== _ && !c.permission;
+        T = A.default.getId();
+    b ? c.canWrite || (c.type === g.RA.USER ? t = c.id === T ? O.intl.string(O.t["1VF/0x"]) : O.intl.string(O.t.P1GnEd) : c.type === g.RA.ROLE && (t = O.intl.string(O.t.mcAijf))) : t = null != s ? O.intl.string(O.t.tybdas) : O.intl.string(O.t["z2hjk/"]);
+    let v = p && null != u && c.id === n.id && void 0 !== _ && !c.permission;
     l.useEffect(() => {
-        T && N.default.track(y.HAw.COMMANDS_MIGRATION_TOOLTIP_VIEWED, {
+        v && N.default.track(y.HAw.COMMANDS_MIGRATION_TOOLTIP_VIEWED, {
             ...(0, m.H$)(n.id),
             application_id: u?.application?.id,
             location: "toggle"
         })
-    }, [n.id, u?.application?.id, T]);
+    }, [n.id, u?.application?.id, v]);
     let C = l.useRef(null),
         I = (0, i.jsx)(d.m, {
             text: t,
@@ -149,7 +149,7 @@ function k(e) {
                 children: (0, i.jsx)(S.A, {
                     isDisabled: j,
                     currentValue: c.permission,
-                    onChange: T ? e => {
+                    onChange: v ? e => {
                         h.A.dismissToggleTooltip(n.id, u), a(e)
                     } : a
                 })
@@ -188,7 +188,7 @@ function k(e) {
                 isSentinel: f,
                 isDisabled: !b,
                 onRemove: r
-            }), I, T && R]
+            }), I, v && R]
         })]
     }, c.id)
 }

@@ -28,7 +28,7 @@ let p = function(e) {
         application: t,
         detectedGame: n,
         trackAction: p
-    } = e, _ = l.useMemo(() => n.genres.map(r.du).join(", "), [n]), v = n.publishers.join(", "), j = n.developers.join(", "), A = n.firstReleaseDate, C = (0, o.A)(n), b = (0, c.Y)(n), I = !(0, s.uJ)(_), E = !(0, s.uJ)(v), N = !(0, s.uJ)(j), S = !(0, s.uJ)(A), k = C.length > 0, T = b.length > 0 && !b.every(e => (0, s.uJ)(e.url));
+    } = e, _ = l.useMemo(() => n.genres.map(r.du).join(", "), [n]), v = n.publishers.join(", "), j = n.developers.join(", "), A = n.firstReleaseDate, C = (0, o.A)(n), I = (0, c.Y)(n), b = !(0, s.uJ)(_), E = !(0, s.uJ)(v), N = !(0, s.uJ)(j), S = !(0, s.uJ)(A), k = C.length > 0, T = I.length > 0 && !I.every(e => (0, s.uJ)(e.url));
     return (0, a.jsxs)("div", {
         className: f.uW,
         children: [(0, a.jsx)("div", {
@@ -46,7 +46,7 @@ let p = function(e) {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     children: 1 !== n.genres.length ? h.intl.string(h.t.pDgwYB) : h.intl.string(h.t.mjFKqn)
-                }), I ? (0, a.jsx)(i.Text, {
+                }), b ? (0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     className: f.Gu,
@@ -112,7 +112,7 @@ let p = function(e) {
                     children: h.intl.string(h.t["Oj3o1/"])
                 }), T ? (0, a.jsx)("div", {
                     className: f.Gu,
-                    children: b.map(e => (0, a.jsx)(u.K, {
+                    children: I.map(e => (0, a.jsx)(u.K, {
                         website: e,
                         trackAction: p
                     }, e.url))

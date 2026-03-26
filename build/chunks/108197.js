@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(152007),
     m = n(747926),
     p = n(734057),
-    _ = n(222823),
-    g = n(977997),
+    g = n(222823),
+    _ = n(977997),
     f = n(607567),
     x = n(892896),
     C = n(884415),
@@ -102,14 +102,14 @@ let j = s.memo(function(e) {
         isSelectedVoice: v,
         isLast: j,
         withGuildIcon: R
-    } = e, O = (0, o.bG)([f.Ay], () => f.Ay.getVoiceStatesForChannel(t), [t]), L = (0, o.bG)([g.A], () => g.A.hasVideo(t.id)), {
+    } = e, O = (0, o.bG)([f.Ay], () => f.Ay.getVoiceStatesForChannel(t), [t]), L = (0, o.bG)([_.A], () => _.A.hasVideo(t.id)), {
         unread: M,
         mentionCount: D,
         isMentionLowImportance: G
-    } = (0, o.cf)([_.Ay], () => ({
-        unread: _.Ay.hasUnread(t.id),
-        mentionCount: _.Ay.getMentionCount(t.id),
-        isMentionLowImportance: _.Ay.getIsMentionLowImportance(t.id)
+    } = (0, o.cf)([g.Ay], () => ({
+        unread: g.Ay.hasUnread(t.id),
+        mentionCount: g.Ay.getMentionCount(t.id),
+        isMentionLowImportance: g.Ay.getIsMentionLowImportance(t.id)
     })), U = (0, o.bG)([A.A], () => A.A.isMuted(t.id)), P = s.useCallback(e => {
         (0, m.JA)(t, !e.shiftKey, N.H9.CHANNEL_LIST)
     }, [t]), k = s.useCallback(() => {

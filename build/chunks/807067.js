@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(735991),
     m = n(786115),
     p = n(975412),
-    _ = n(392054),
-    g = n(354138),
+    g = n(392054),
+    _ = n(354138),
     f = n(111042),
     x = n(767599),
     C = n(267102),
@@ -40,10 +40,10 @@ function L(e) {
             onClick: h
         } = e,
         {
-            fetchState: _,
+            fetchState: g,
             voiceBannerCollection: C
         } = (t = (0, c.bG)([I.default], () => I.default.onlyShowPreviewAppCollections) ? r.W.PREVIEW : r.W.ACTIVE, s.useEffect(() => {
-            (0, g.An)({
+            (0, _.An)({
                 surface: R,
                 activeState: t
             })
@@ -57,7 +57,7 @@ function L(e) {
                 activeState: t
             }))[0]
         }),
-        E = _ === f.e.FETCHING,
+        E = g === f.e.FETCHING,
         N = s.useMemo(() => {
             let e = C?.application_directory_collection_items[0];
             return null == e ? null : e.type === o.L.APPLICATION_BANNER ? e : null
@@ -112,15 +112,15 @@ let M = s.forwardRef(function(e, t) {
         onClick: A,
         className: m
     } = e, {
-        id: g,
+        id: _,
         guild_id: f
     } = l;
     s.useEffect(() => {
         N.default.track(v.HAw.ACTIVITIES_CENTER_CONTROL_TRAY_BUTTON_HOVERED, {
-            channel_id: g,
+            channel_id: _,
             guild_id: f
         })
-    }, [g, f]), s.useEffect(() => {
+    }, [_, f]), s.useEffect(() => {
         r || a()
     }, [a, r]);
     let x = (0, C.Us)(),
@@ -218,7 +218,7 @@ let M = s.forwardRef(function(e, t) {
                             },
                             aspectRatio: T.C.AspectRatio.THIRTEEN_BY_ELEVEN,
                             animatedDivClass: j.KU,
-                            commandOrigin: _.iw.MINI_SHELF
+                            commandOrigin: g.iw.MINI_SHELF
                         }, e.application.id))
                     })]
                 })]

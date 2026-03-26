@@ -1,6 +1,6 @@
 /** chunk id: 225732 params = (module,exports,require) **/
 n.d(t, {
-    default: () => eb
+    default: () => eI
 });
 var a = n(627968),
     l = n(64700),
@@ -22,8 +22,8 @@ var a = n(627968),
     j = n(139286),
     A = n(362490),
     C = n(429913),
-    b = n(590703),
-    I = n(708197),
+    I = n(590703),
+    b = n(708197),
     E = n(583846),
     N = n(885151),
     S = n(928550),
@@ -35,8 +35,8 @@ var a = n(627968),
     R = n(240248),
     G = n(409626),
     M = n(880405),
-    w = n(422069),
-    P = n(476464),
+    P = n(422069),
+    w = n(476464),
     V = n(205184),
     D = n(939764),
     W = n(277089),
@@ -449,10 +449,10 @@ function eA(e) {
         trackExternalAction: d
     } = e, {
         clientThemesClassName: u
-    } = (0, b.Ay)(), m = (0, x.bG)([T.default], () => T.default.locale), h = l.useMemo(() => (0, G.u9)(), []), p = (0, x.yK)([w.A], () => (w.A.getSimilarGames(t) ?? []).slice(0, 25)), [_, v] = l.useState(null), j = (0, V.s)(t), [A, S] = l.useState(null), k = (0, C.h)(t), {
+    } = (0, I.Ay)(), m = (0, x.bG)([T.default], () => T.default.locale), h = l.useMemo(() => (0, G.u9)(), []), p = (0, x.yK)([P.A], () => (P.A.getSimilarGames(t) ?? []).slice(0, 25)), [_, v] = l.useState(null), j = (0, V.s)(t), [A, S] = l.useState(null), k = (0, C.h)(t), {
         data: y,
         refetch: L
-    } = (0, N.k)(t), O = y?.supplementalData ?? null, R = O?.name ?? k?.name, P = (e, a) => {
+    } = (0, N.k)(t), O = y?.supplementalData ?? null, R = O?.name ?? k?.name, w = (e, a) => {
         (0, G.Tn)({
             gameName: R ?? "",
             applicationId: t,
@@ -471,7 +471,7 @@ function eA(e) {
             gameName: R ?? "",
             authorId: i,
             profileType: G.HV.FullProfile
-        }), (0, I.He)()
+        }), (0, b.He)()
     }), (0, C.A)(p), l.useEffect(() => {
         m.startsWith("en") || O?.summaryLocalized != null || L()
     }, [t, O?.summaryLocalized, m, L]), l.useEffect(() => {
@@ -516,7 +516,7 @@ function eA(e) {
                     detectedGame: O,
                     application: k,
                     entries: j,
-                    trackAction: P
+                    trackAction: w
                 }), (0, a.jsx)(f.Fmo, {
                     children: (0, a.jsxs)("div", {
                         className: r()(ed.Qs, ed.rb),
@@ -530,7 +530,7 @@ function eA(e) {
                             onClose: c,
                             viewId: h,
                             source: n,
-                            trackAction: P
+                            trackAction: w
                         }), (0, a.jsx)(ev, {
                             detectedGame: O,
                             onSetOfficialGuildInvite: S,
@@ -540,7 +540,7 @@ function eA(e) {
                             application: k,
                             source: n,
                             trackExternalAction: d,
-                            trackAction: P
+                            trackAction: w
                         })]
                     })
                 })]
@@ -560,11 +560,11 @@ function eC(e) {
         trackExternalAction: u
     } = e, [m, h] = l.useState(!0), [p, _] = l.useState(null), {
         clientThemesClassName: v
-    } = (0, b.Ay)(), j = (0, x.bG)([T.default], () => T.default.locale), S = l.useMemo(() => (0, G.u9)(), []), y = (0, C.h)(t), L = (0, V.s)(t), {
+    } = (0, I.Ay)(), j = (0, x.bG)([T.default], () => T.default.locale), S = l.useMemo(() => (0, G.u9)(), []), y = (0, C.h)(t), L = (0, V.s)(t), {
         data: O
     } = (0, N.k)(t), R = O?.supplementalData ?? null, M = R?.name ?? O?.name ?? y?.name ?? "", {
-        hasAlreadyLinked: w,
-        canStartAuthorization: P,
+        hasAlreadyLinked: P,
+        canStartAuthorization: w,
         fetched: U,
         startAuthorization: F,
         connectionApp: Y
@@ -592,7 +592,7 @@ function eC(e) {
             gameName: M,
             authorId: i,
             profileType: G.HV.FullProfile
-        }), (0, I.He)()
+        }), (0, b.He)()
     }), (0, g.Ay)(() => () => {
         let e = Date.now(),
             n = L.map(t => {
@@ -625,8 +625,8 @@ function eC(e) {
         q = l.useMemo(() => ({
             application: y,
             isTwoColumn: m,
-            canStartAuthorization: P,
-            hasAlreadyLinked: w,
+            canStartAuthorization: w,
+            hasAlreadyLinked: P,
             fetchedAuthorization: U,
             startAuthorization: F,
             connectionApp: Y,
@@ -634,7 +634,7 @@ function eC(e) {
             isMember: z,
             socialLayerStorefrontRecommendationsData: K,
             closeModal: Q
-        }), [y, m, P, w, U, F, Y, B, z, K, Q]),
+        }), [y, m, w, P, U, F, Y, B, z, K, Q]),
         ee = l.useCallback(() => {
             c(), (0, k.closeUserProfileModal)()
         }, [c]);
@@ -683,8 +683,8 @@ function eC(e) {
         })
     })
 }
-let eb = function(e) {
-    return (0, P._)("GameProfileModal") ? (0, a.jsx)(eC, {
+let eI = function(e) {
+    return (0, w._)("GameProfileModal") ? (0, a.jsx)(eC, {
         ...e
     }) : (0, a.jsx)(eA, {
         ...e

@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(47167),
     m = n(12351),
     p = n(386467),
-    _ = n(928658),
-    g = n(226698),
+    g = n(928658),
+    _ = n(226698),
     f = n(994500),
     x = n(287809),
     C = n(628691),
@@ -43,10 +43,10 @@ class T extends s.PureComponent {
             moderatorReportChannelId: l,
             isFlagResolved: r
         } = s ?? {};
-        e ? (0, _.V2)(i, "message_delete_alert", () => h.A.deleteMessage(n.id, i.id).then(() => {
-            null != l && (t && !r && g.A.resolveFlag(l), this.props.onClose?.())
+        e ? (0, g.V2)(i, "message_delete_alert", () => h.A.deleteMessage(n.id, i.id).then(() => {
+            null != l && (t && !r && _.A.resolveFlag(l), this.props.onClose?.())
         })) : h.A.deleteMessage(n.id, i.id).then(() => {
-            null != l && (t && !r && g.A.resolveFlag(l), this.props.onClose?.())
+            null != l && (t && !r && _.A.resolveFlag(l), this.props.onClose?.())
         })
     };
     handleDeleteMana = () => {
@@ -86,8 +86,8 @@ class T extends s.PureComponent {
                 onChange: this.handleToggleReport
             })
         }));
-        let _ = A ? N.intl.string(N.t["2kHABX"]) : N.intl.string(N.t.AMvpS4),
-            g = (0, i.jsxs)(i.Fragment, {
+        let g = A ? N.intl.string(N.t["2kHABX"]) : N.intl.string(N.t.AMvpS4),
+            _ = (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)("div", {
                     className: S.iU,
                     children: (0, i.jsx)(E.A, {
@@ -105,7 +105,7 @@ class T extends s.PureComponent {
                 value: l.guild_id,
                 children: (0, i.jsx)(o.Modal, {
                     title: N.intl.string(N.t.MWMcg7),
-                    subtitle: _,
+                    subtitle: g,
                     actions: [{
                         variant: "critical-primary",
                         text: N.intl.string(N.t.oyYWHE),
@@ -117,7 +117,7 @@ class T extends s.PureComponent {
                         onChange: e => this.handleToggleResolveFlag(e)
                     }),
                     ...h,
-                    children: g
+                    children: _
                 })
             })
         }
@@ -125,7 +125,7 @@ class T extends s.PureComponent {
             value: l.guild_id,
             children: (0, i.jsx)(o.Modal, {
                 title: A ? N.intl.string(N.t.aIz1oV) : N.intl.string(N.t.MWMcg7),
-                subtitle: _,
+                subtitle: g,
                 actions: [{
                     text: N.intl.string(N.t["ETE/oC"]),
                     onClick: h.onClose,
@@ -137,7 +137,7 @@ class T extends s.PureComponent {
                 }],
                 onClose: h.onClose,
                 transitionState: h.transitionState,
-                children: g
+                children: _
             })
         })
     }

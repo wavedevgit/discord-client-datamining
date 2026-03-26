@@ -33,8 +33,8 @@ function A(e) {
         iconSize: n = 20,
         prioritizeSelectedGuild: a = !1
     } = e, A = (0, l.bG)([c.A], () => a ? c.A.getGuildId() : null, [a]), m = (0, l.yK)([o.A], () => t.map(e => o.A.getGuild(e)), [t]), p = (0, s.useMemo)(() => m.filter(e => null != e), [m]), {
-        visibleGuilds: _,
-        numTruncated: g
+        visibleGuilds: g,
+        numTruncated: _
     } = (0, s.useMemo)(() => {
         let e = [...p];
         if (null != A) {
@@ -51,19 +51,19 @@ function A(e) {
     }, [p, A]);
     return (0, i.jsxs)("div", {
         className: u.WM,
-        children: [_.map(e => (0, i.jsx)(h, {
+        children: [g.map(e => (0, i.jsx)(h, {
             iconSize: n,
             children: (0, i.jsx)(d.$, {
                 guild: e,
                 size: n
             })
-        }, e.id)), g > 0 && (0, i.jsx)(h, {
+        }, e.id)), _ > 0 && (0, i.jsx)(h, {
             iconSize: n,
             children: (0, i.jsxs)(r.Text, {
                 className: u.br,
                 color: "text-subtle",
                 variant: "text-xxs/semibold",
-                children: ["+", g]
+                children: ["+", _]
             })
         })]
     })

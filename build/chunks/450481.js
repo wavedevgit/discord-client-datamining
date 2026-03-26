@@ -1,6 +1,6 @@
 /** chunk id: 450481 params = (module,exports,require) **/
 n.d(t, {
-    p: () => p
+    p: () => u
 });
 var a = n(64700),
     i = n(575593),
@@ -9,17 +9,17 @@ var a = n(64700),
     o = n(207803),
     s = n(993408),
     d = n(442759),
-    u = n(985018);
-let p = e => {
+    p = n(985018);
+let u = e => {
     let {
         product: t,
-        onSuccess: p,
+        onSuccess: u,
         onError: c
     } = e, [_, E] = a.useState(!1), {
         firstAvatarDecoration: S,
         firstProfileEffect: h,
         firstNameplate: v
-    } = (0, d.f5)(t), A = (0, s.aw)(t) ? u.intl.string(u.t.tf1ZZ4) : t.type === i.R.AVATAR_DECORATION ? u.intl.string(u.t.zOA4ax) : t.type === i.R.NAMEPLATE ? u.intl.string(u.t.gOzMvx) : u.intl.string(u.t.SWm2ai);
+    } = (0, d.f5)(t), A = (0, s.aw)(t) ? p.intl.string(p.t.tf1ZZ4) : t.type === i.R.AVATAR_DECORATION ? p.intl.string(p.t.zOA4ax) : t.type === i.R.NAMEPLATE ? p.intl.string(p.t.gOzMvx) : p.intl.string(p.t.SWm2ai);
     return {
         handleUseNow: a.useCallback(async () => {
             E(!0);
@@ -45,13 +45,13 @@ let p = e => {
                         position: e.TOP
                     }))
                 }
-                p?.()
+                u?.()
             } catch (e) {
                 c?.(e)
             } finally {
                 E(!1)
             }
-        }, [S, h, v, p, A, c]),
+        }, [S, h, v, u, A, c]),
         isApplying: _
     }
 }

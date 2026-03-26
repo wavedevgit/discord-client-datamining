@@ -1,7 +1,7 @@
 /** chunk id: 369915 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => g
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -16,16 +16,16 @@ var i = n(627968),
     A = n(842452),
     m = n(305928),
     p = n(652215);
-let _ = s.memo(function(e) {
+let g = s.memo(function(e) {
     let {
         folderNode: t,
-        ..._
+        ...g
     } = e, {
-        id: g,
+        id: _,
         name: f,
         color: x,
         children: C
-    } = t, E = C.map(e => e.id), I = (0, o.A)(e => e.guildId), N = (0, l.bG)([c.A], () => c.A.isFolderExpanded(g)), b = function(e) {
+    } = t, E = C.map(e => e.id), I = (0, o.A)(e => e.guildId), N = (0, l.bG)([c.A], () => c.A.isFolderExpanded(_)), b = function(e) {
         let t = e.children.map(e => {
                 let t = e.id,
                     n = u.A.getGuild(t);
@@ -44,23 +44,23 @@ let _ = s.memo(function(e) {
         isMentionLowImportance: E.every(e => d.default.getIsMentionLowImportance(e)),
         unread: E.some(e => d.default.hasUnread(e))
     })), j = s.useCallback(() => {
-        a.A.toggleGuildFolderExpand(g)
-    }, [g]), R = s.useCallback(e => {
+        a.A.toggleGuildFolderExpand(_)
+    }, [_]), R = s.useCallback(e => {
         (0, r.L3)(e, async () => {
             let {
                 default: e
             } = await n.e("32857").then(n.bind(n, 842112));
             return t => (0, i.jsx)(e, {
                 ...t,
-                folderId: g,
+                folderId: _,
                 folderName: f,
                 folderColor: x,
                 unread: y || T > 0
             })
         })
-    }, [g, f, x, y, T]);
+    }, [_, f, x, y, T]);
     return (0, i.jsx)(A.A, {
-        ..._,
+        ...g,
         folderNode: t,
         expanded: N,
         selected: null != I && E.includes(I),

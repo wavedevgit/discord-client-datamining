@@ -18,7 +18,7 @@ function h(e) {
         channel: t
     } = e, [n, h] = s.useState(!1), A = s.useRef(null), m = (0, r.vL)(t), p = s.useCallback(() => {
         h(!1)
-    }, []), _ = s.useCallback(() => {
+    }, []), g = s.useCallback(() => {
         n || (0, o.D3)("Popout"), h(!n)
     }, [n]);
     return (0, i.jsx)(l.YNO, {
@@ -48,7 +48,7 @@ function h(e) {
                 ...e,
                 ref: A,
                 className: u.Kk,
-                onClick: _,
+                onClick: g,
                 icon: l.ysw,
                 "aria-label": d.intl.string(d.t.B2panI),
                 tooltip: n ? null : d.intl.string(d.t.B2panI),

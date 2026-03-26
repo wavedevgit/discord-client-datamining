@@ -1,6 +1,6 @@
 /** chunk id: 264461 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => f
 });
 var a = n(627968),
     i = n(64700),
@@ -9,16 +9,16 @@ var a = n(627968),
     r = n(158954),
     o = n(311907),
     d = n(902592),
-    c = n(996958),
-    u = n(869146),
-    m = n(680108),
+    c = n(869146),
+    u = n(680108),
+    m = n(734340),
     h = n(439895),
     x = n(652215),
     p = n(569885);
 let g = e => {
         let {
             setTab: t
-        } = e, n = (0, o.bG)([u.A], () => u.A.getWindowOpen(x.MLl.DEVTOOLS_POPOUT));
+        } = e, n = (0, o.bG)([c.A], () => c.A.getWindowOpen(x.MLl.DEVTOOLS_POPOUT));
         return (0, a.jsxs)("div", {
             className: p.Qs,
             children: [(0, a.jsx)(r.DUT, {
@@ -83,7 +83,7 @@ let g = e => {
             })]
         })
     },
-    _ = () => {
+    f = () => {
         let [e, t] = i.useState(0);
         return (0, a.jsxs)(r.IpV, {
             className: p.iE,
@@ -100,9 +100,9 @@ let g = e => {
             }), (() => {
                 switch (e) {
                     case 1:
-                        return (0, a.jsx)(m.A, {});
+                        return (0, a.jsx)(u.A, {});
                     case 2:
-                        return (0, a.jsx)(c.A, {});
+                        return (0, a.jsx)(m.A, {});
                     case 3:
                         return (0, a.jsx)(h.A, {});
                     default:

@@ -11,11 +11,11 @@ var l = t(627968),
     u = t(688810),
     d = t(912140),
     c = t(674658),
-    p = t(898461),
-    m = t(837015),
-    E = t(61750),
-    _ = t(369496),
-    x = t(550111),
+    p = t(780898),
+    m = t(512213),
+    E = t(898461),
+    _ = t(837015),
+    x = t(61750),
     S = t(287809),
     P = t(482132),
     T = t(758836),
@@ -39,16 +39,16 @@ function g(e) {
         isNameplateReward: !1,
         nameplateData: null,
         rewardAvatarDecorationSrc: null
-    } : (0, m.F)(N) ? {
+    } : (0, _.F)(N) ? {
         isNameplateReward: !0,
         nameplateData: {
             skuId: N.skuId,
             src: N.asset,
-            palette: (0, _.H6)(N.palette ?? "sky"),
+            palette: (0, p.H6)(N.palette ?? "sky"),
             imgAlt: N.label
         },
         rewardAvatarDecorationSrc: null
-    } : (0, p.T)(N) ? {
+    } : (0, E.T)(N) ? {
         isNameplateReward: !1,
         nameplateData: null,
         rewardAvatarDecorationSrc: (0, d.A)({
@@ -70,7 +70,7 @@ function g(e) {
                     className: h.D,
                     onMouseEnter: () => y(!0),
                     onMouseLeave: () => y(!1),
-                    children: (0, l.jsx)(x.a, {
+                    children: (0, l.jsx)(m.a, {
                         user: g,
                         nameplate: null,
                         nameplateData: v,
@@ -88,7 +88,7 @@ function g(e) {
                     text: I.intl.string(I.t.kMYVwv),
                     loading: M,
                     onClick: () => {
-                        null != R && (t(), (0, E.A)({
+                        null != R && (t(), (0, x.A)({
                             product: R,
                             shouldShowPromotionalExperience: !0,
                             analyticsLocations: f,

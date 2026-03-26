@@ -1,6 +1,6 @@
 /** chunk id: 364616 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => N
 });
 var a = n(627968),
     i = n(64700),
@@ -9,8 +9,8 @@ var a = n(627968),
     o = n(837381),
     s = n(741918),
     d = n(158954),
-    u = n(827734),
-    p = n(990078),
+    p = n(827734),
+    u = n(990078),
     c = n(260762),
     _ = n(298072),
     E = n(274590),
@@ -25,14 +25,14 @@ let I = e => {
             onVariantEnter: n,
             onVariantExit: l,
             isCollapsed: d,
-            wrap: u,
-            overflowProps: p
+            wrap: p,
+            overflowProps: u
         } = e, E = (0, _.Q)(t), {
             shownVariants: S,
             totalVariants: v,
             hasOverflow: A
         } = i.useMemo(() => {
-            let e = p?.maxVariantsToShow;
+            let e = u?.maxVariantsToShow;
             return (0, h.B1)(t) ? null == e || e >= t.variants.length ? {
                 shownVariants: t.variants,
                 totalVariants: t.variants.length,
@@ -46,7 +46,7 @@ let I = e => {
                 totalVariants: 0,
                 hasOverflow: !1
             }
-        }, [t, p?.maxVariantsToShow]), I = i.useCallback((e, n) => {
+        }, [t, u?.maxVariantsToShow]), I = i.useCallback((e, n) => {
             e.stopPropagation(), (0, _.n)(t, n)
         }, [t]), R = (0, c.A)(`shop-variants-group-${t.storeListingId}`, s.Gl.HORIZONTAL);
         return 0 === S.length ? null : (0, a.jsx)(o.hD, {
@@ -61,7 +61,7 @@ let I = e => {
                         className: r()({
                             [g.yZ]: d,
                             [g.sz]: !d,
-                            [g.LV]: u
+                            [g.LV]: p
                         }, g.lO),
                         ref: i,
                         ...o,
@@ -73,10 +73,10 @@ let I = e => {
                             onVariantExit: l,
                             zIndex: v - Math.abs(E - t),
                             onVariantClick: I
-                        }, e.variantValue)), null != p && A && (0, a.jsx)(y, {
-                            zIndex: E >= p.maxVariantsToShow - 1 ? v + 1 : 0,
-                            isSelected: E >= p.maxVariantsToShow - 1,
-                            onOverflowClick: p.onClick,
+                        }, e.variantValue)), null != u && A && (0, a.jsx)(y, {
+                            zIndex: E >= u.maxVariantsToShow - 1 ? v + 1 : 0,
+                            isSelected: E >= u.maxVariantsToShow - 1,
+                            onOverflowClick: u.onClick,
                             storeListingId: t.storeListingId
                         })]
                     })
@@ -90,7 +90,7 @@ let I = e => {
             variantIndex: n,
             isSelected: l,
             onVariantClick: s,
-            onVariantEnter: u,
+            onVariantEnter: p,
             onVariantExit: c,
             zIndex: _
         } = e, {
@@ -101,15 +101,15 @@ let I = e => {
         } = (0, S.h)(t), I = i.useCallback(e => {
             s(e, n), E()
         }, [s, E, n]);
-        return (0, a.jsx)(p.m, {
+        return (0, a.jsx)(u.m, {
             text: A.intl.string(A.t["6cfuDj"]),
             shouldShow: v,
             children: (0, a.jsx)(d.DUT, {
                 "aria-label": t.variantLabel,
                 onClick: I,
-                onMouseEnter: u,
+                onMouseEnter: p,
                 onMouseLeave: c,
-                onFocus: u,
+                onFocus: p,
                 onBlur: c,
                 className: r()(g.bP, {
                     [g.wH]: l
@@ -131,7 +131,7 @@ let I = e => {
         } = e, n = (0, E.A)(t);
         return (0, a.jsx)(d.BNr, {
             className: g.U,
-            color: n ? u.A.colors.BLACK.css : u.A.colors.WHITE.css
+            color: n ? p.A.colors.BLACK.css : p.A.colors.WHITE.css
         })
     },
     y = e => {
@@ -141,11 +141,11 @@ let I = e => {
             onOverflowClick: l,
             storeListingId: s
         } = e, {
-            onFocus: u,
-            ...p
+            onFocus: p,
+            ...u
         } = (0, o.rm)(`shop-variants-group-${s}-overflow`), c = i.useCallback(e => {
-            e.stopPropagation(), l(e), u()
-        }, [l, u]);
+            e.stopPropagation(), l(e), p()
+        }, [l, p]);
         return (0, a.jsx)(d.DUT, {
             "aria-label": A.intl.string(A.t["+0zcgs"]),
             onClick: c,
@@ -155,14 +155,14 @@ let I = e => {
             style: {
                 zIndex: t
             },
-            ...p,
+            ...u,
             children: (0, a.jsx)(d.j96, {
                 className: g.ab,
                 color: "white"
             })
         })
     },
-    m = e => {
+    N = e => {
         let {
             skuId: t,
             isCollapsed: n = !1,

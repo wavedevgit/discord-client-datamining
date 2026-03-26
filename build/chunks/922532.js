@@ -18,12 +18,12 @@ function o(e) {
         isQuestAccepted: u,
         prevIsQuestAccepted: m,
         impressionRef: h
-    } = e, x = a.useRef(-1), p = a.useRef(!1), [g, _] = a.useState(!1), [f, v] = a.useState(!1), b = a.useCallback(() => {
-        _(!0)
+    } = e, x = a.useRef(-1), p = a.useRef(!1), [g, f] = a.useState(!1), [_, v] = a.useState(!1), b = a.useCallback(() => {
+        f(!0)
     }, []), j = a.useCallback(() => {
-        _(!1), p.current || c || o(!1)
+        f(!1), p.current || c || o(!1)
     }, [c, o]), A = a.useCallback(() => {
-        _(!1), c || o(!1), p.current = !1
+        f(!1), c || o(!1), p.current = !1
     }, [c, o]), C = a.useCallback(() => {
         v(!0)
     }, []), y = a.useCallback(() => {
@@ -38,8 +38,8 @@ function o(e) {
     }, [d, n]), S = a.useCallback(() => {
         T()
     }, [T]), E = a.useCallback(() => {
-        window.clearTimeout(x.current), g || f || p.current || o(!1)
-    }, [g, f, o]), N = a.useCallback(() => {
+        window.clearTimeout(x.current), g || _ || p.current || o(!1)
+    }, [g, _, o]), N = a.useCallback(() => {
         (0, s.av)({
             questId: t.id,
             event: r.HAw.QUEST_HOVER,
@@ -66,14 +66,14 @@ function o(e) {
         }), p.current = !1, E()
     }, [E, h, t.id]);
     return a.useEffect(() => {
-        f && I()
-    }, [f, I]), a.useLayoutEffect(() => {
+        _ && I()
+    }, [_, I]), a.useLayoutEffect(() => {
         u && !m && p.current && d()
     }, [d, u, m]), a.useLayoutEffect(() => {
         c || !u || m || p.current || o(!1)
     }, [u, c, m, o]), {
         ctxMenuOpen: g,
-        gameSheetOpen: f,
+        gameSheetOpen: _,
         handleCtxMenuOpened: b,
         handleCtxMenuClosed: j,
         handleCtxMenuSelection: A,

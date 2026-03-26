@@ -22,7 +22,7 @@ let g = (0, r.D)(() => ({
     error: null
 }));
 
-function _(e) {
+function f(e) {
     let {
         title: t,
         guildIds: n
@@ -59,7 +59,7 @@ function _(e) {
     })
 }
 
-function f(e) {
+function _(e) {
     let {
         userState: t
     } = e, {
@@ -192,13 +192,13 @@ function f(e) {
             })]
         }), null != c && (0, a.jsxs)("div", {
             className: p.uk,
-            children: [(0, a.jsx)(_, {
+            children: [(0, a.jsx)(f, {
                 title: "Pending Guild Member Requests:",
                 guildIds: c.pendingRequestGuildIds
-            }), (0, a.jsx)(_, {
+            }), (0, a.jsx)(f, {
                 title: "Sent Guild Member Requests:",
                 guildIds: c.sentRequestGuildIds
-            }), (0, a.jsx)(_, {
+            }), (0, a.jsx)(f, {
                 title: "Unacknowledged Guild Member Requests:",
                 guildIds: c.unacknowledgedRequestGuildIds
             })]
@@ -268,7 +268,7 @@ function b() {
             color: "text-feedback-critical",
             className: p.qS,
             children: t
-        }), null != e && (0, a.jsx)(f, {
+        }), null != e && (0, a.jsx)(_, {
             userState: e
         })]
     })

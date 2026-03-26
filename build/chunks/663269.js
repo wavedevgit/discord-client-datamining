@@ -19,15 +19,15 @@ let r = e => {
         onSetInviteFlags: h,
         onClose: A,
         transitionState: p,
-        isRoleAssignmentEnabled: I,
-        assignableRoles: x,
+        isRoleAssignmentEnabled: x,
+        assignableRoles: I,
         onToggleRole: m
     } = e, {
-        maxAgeOptions: v,
-        maxAge: S,
+        maxAgeOptions: S,
+        maxAge: v,
         maxUses: y,
         temporary: E,
-        flags: f,
+        flags: T,
         roleIds: _
     } = n;
     return (0, l.jsx)(i.Modal, {
@@ -47,8 +47,8 @@ let r = e => {
         }],
         children: (0, l.jsx)(s.A, {
             shouldHideTemporaryInviteToggle: r,
-            maxAgeOptions: v,
-            maxAge: S,
+            maxAgeOptions: S,
+            maxAge: v,
             maxUses: y,
             temporary: E,
             onToggleTemporary: d,
@@ -56,9 +56,9 @@ let r = e => {
             onSelectMaxUses: c,
             isGuestInviteCreationToggleEnabled: g,
             onSetInviteFlags: h,
-            inviteFlags: f,
-            isRoleAssignmentEnabled: I,
-            assignableRoles: x,
+            inviteFlags: T,
+            isRoleAssignmentEnabled: x,
+            assignableRoles: I,
             selectedRoleIds: _,
             onToggleRole: m
         })

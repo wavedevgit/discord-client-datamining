@@ -20,8 +20,8 @@ var i = n(627968),
     A = n(914430),
     m = n(442433),
     p = n(676002),
-    _ = n(485947),
-    g = n(924985),
+    g = n(485947),
+    _ = n(924985),
     f = n(71393),
     x = n(576705),
     C = n(543465),
@@ -46,7 +46,7 @@ let v = s.memo(function(e) {
                 children: j
             } = e,
             R = (0, o.bG)([C.Ay], () => C.Ay.isChannelMuted(l.getGuildId(), l.id)),
-            O = (0, o.bG)([g.A], () => g.A.isCollapsed(l.id)),
+            O = (0, o.bG)([_.A], () => _.A.isCollapsed(l.id)),
             L = (0, o.bG)([x.A], () => x.A.can(N.xBc.MANAGE_CHANNELS, l));
         t = null != v ? I > v ? S.mU : S.TR : S.fx;
         let M = s.useCallback(() => {
@@ -120,7 +120,7 @@ let v = s.memo(function(e) {
                             focusProps: {
                                 enabled: !1
                             },
-                            children: [(0, i.jsx)(_.A, {
+                            children: [(0, i.jsx)(g.A, {
                                 className: S.UU,
                                 children: (0, i.jsx)(c.A, {
                                     children: l.name
@@ -167,7 +167,7 @@ let v = s.memo(function(e) {
                 className: r()(S.Ki, S._V),
                 children: [(0, i.jsx)("div", {
                     className: S.rb,
-                    children: (0, i.jsx)(_.A, {
+                    children: (0, i.jsx)(g.A, {
                         className: S.UU,
                         children: (0, i.jsx)(c.A, {
                             children: t
@@ -215,7 +215,7 @@ let v = s.memo(function(e) {
             className: S.fx,
             children: (0, i.jsx)("div", {
                 className: r()(S.Ki, S._V),
-                children: (0, i.jsx)(_.A, {
+                children: (0, i.jsx)(g.A, {
                     className: S.UU,
                     children: (0, i.jsx)(c.A, {
                         children: b.intl.string(b.t["V/u9Dy"])
@@ -236,7 +236,7 @@ let v = s.memo(function(e) {
             className: S.fx,
             children: (0, i.jsx)("div", {
                 className: r()(S.Ki, S._V),
-                children: (0, i.jsx)(_.A, {
+                children: (0, i.jsx)(g.A, {
                     className: S.UU,
                     children: (0, i.jsx)(c.A, {
                         children: t.name

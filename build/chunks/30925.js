@@ -9,12 +9,12 @@ var l = s(627968),
     r = s(311907),
     o = s(397927),
     d = s(736653),
-    c = s(141468),
-    u = s(963852),
-    m = s(763754),
-    _ = s(20851),
-    x = s(369496),
-    p = s(550111),
+    c = s(780898),
+    u = s(512213),
+    m = s(141468),
+    _ = s(963852),
+    x = s(763754),
+    p = s(20851),
     h = s(919395),
     g = s(287070),
     f = s(101058),
@@ -52,7 +52,7 @@ function I(e) {
         userNameplate: B,
         guildNameplate: J,
         pendingNameplate: F
-    } = (0, h.rv)(t, s?.id), V = (0, x.WK)(J);
+    } = (0, h.rv)(t, s?.id), V = (0, c.WK)(J);
     O && !G ? R = v.NJ8.DARK : !O && G && (R = v.NJ8.LIGHT);
     let q = (0, a.useCallback)(() => {
             S.default.track(v.HAw.DISPLAY_NAME_STYLES_CLOSED), w()
@@ -63,7 +63,7 @@ function I(e) {
             })
         }, []),
         X = (0, a.useMemo)(() => ({
-            ...(0, m.FT)(t, null),
+            ...(0, x.FT)(t, null),
             nick: n,
             displayNameStyles: {
                 fontId: I,
@@ -113,10 +113,10 @@ function I(e) {
                     containerClassName: D.ME,
                     interactive: !1,
                     hideExampleButton: !0
-                }), (0, l.jsx)(_.A, {
+                }), (0, l.jsx)(p.A, {
                     author: X,
-                    message: (0, c.rh)({
-                        ...(0, u.Ay)({
+                    message: (0, m.rh)({
+                        ...(0, _.Ay)({
                             channelId: "1337",
                             content: L.intl.string(b.default.h5Cuej)
                         }),
@@ -128,7 +128,7 @@ function I(e) {
                     hideGuildTag: !0,
                     className: D.OT,
                     previewGuildId: s?.id
-                }), (0, l.jsx)(p.A, {
+                }), (0, l.jsx)(u.A, {
                     user: t,
                     guildId: s?.id,
                     nameplate: F,

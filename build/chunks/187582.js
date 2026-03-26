@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(688810),
     A = n(709066),
     m = n(87664),
-    p = n(485947),
-    _ = n(111864),
-    g = n(342296),
+    p = n(449582),
+    g = n(485947),
+    _ = n(342296),
     f = n(290863),
     x = n(994500),
     C = n(741961),
@@ -39,7 +39,7 @@ function L(e) {
         channel: a,
         status: u,
         activities: h
-    } = e, A = (0, r.bG)([C.A], () => null != C.A.getTypingUsers(a.id)[t.id]), p = (0, r.bG)([E.default], () => E.default.getCurrentUser()), I = (0, r.bG)([f.A], () => f.A.isMobileOnline(t.id)), b = (0, r.bG)([x.A], () => x.A.getNickname(t.id)), T = (0, m.A)(t.id), j = s.useRef(null), R = e => {
+    } = e, A = (0, r.bG)([C.A], () => null != C.A.getTypingUsers(a.id)[t.id]), g = (0, r.bG)([E.default], () => E.default.getCurrentUser()), I = (0, r.bG)([f.A], () => f.A.isMobileOnline(t.id)), b = (0, r.bG)([x.A], () => x.A.getNickname(t.id)), T = (0, m.A)(t.id), j = s.useRef(null), R = e => {
         (0, o.L3)(e, async () => {
             let {
                 default: e
@@ -59,10 +59,10 @@ function L(e) {
             plainText: e,
             rawText: n
         }), c.A.startTyping(a.id)
-    }, M = (0, _.r)({
+    }, M = (0, p.r)({
         user: t
     }), [D, G] = s.useState(!1);
-    return (0, i.jsx)(g.A, {
+    return (0, i.jsx)(_.A, {
         targetElementRef: j,
         user: t,
         channelId: a.id,
@@ -80,7 +80,7 @@ function L(e) {
             return (0, i.jsx)(d.A, {
                 ref: j,
                 user: t,
-                currentUser: p,
+                currentUser: g,
                 isOwner: t.id === a.ownerId,
                 ownerTooltipText: y.intl.string(y.t["MRXZ+x"]),
                 shouldAnimateStatus: O,
@@ -163,7 +163,7 @@ function D(e) {
                 children: (0, i.jsxs)(a.HOs, {
                     className: j.ol,
                     fade: !0,
-                    children: [(0, i.jsxs)(p.A, {
+                    children: [(0, i.jsxs)(g.A, {
                         className: j.lL,
                         children: [`${y.intl.string(y.t["9Oq93m"])}—${c.length} `, d && (0, i.jsx)(A.A, {
                             type: A.A.Types.STAFF_ONLY_DM

@@ -82,7 +82,7 @@ let w = e => {
             [W, z] = r.useState(),
             Y = (0, o.bG)([E.A], () => E.A.getCategory(W)?.name),
             [$, Z] = r.useState();
-        (0, k.XU)();
+        (0, k.XU)(s);
         let q = r.useCallback((e, t) => {
                 Z(e), z(t)
             }, []),

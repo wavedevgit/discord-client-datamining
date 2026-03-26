@@ -22,8 +22,8 @@ var i = n(627968),
     _ = n(526132),
     N = n(887501),
     j = n(962173),
-    v = n(576705),
-    T = n(954571),
+    T = n(576705),
+    v = n(954571),
     C = n(486020),
     I = n(975571),
     E = n(661191),
@@ -91,9 +91,9 @@ function W(e) {
         {
             canManageWebhooks: eh,
             canManageGuild: ep
-        } = (0, d.cf)([v.A], () => ({
-            canManageWebhooks: null != Z && v.A.can(R.xBc.MANAGE_WEBHOOKS, Z) || null != X && v.A.can(R.xBc.MANAGE_WEBHOOKS, X),
-            canManageGuild: null != Z && null == X && v.A.can(R.xBc.MANAGE_GUILD, Z)
+        } = (0, d.cf)([T.A], () => ({
+            canManageWebhooks: null != Z && T.A.can(R.xBc.MANAGE_WEBHOOKS, Z) || null != X && T.A.can(R.xBc.MANAGE_WEBHOOKS, X),
+            canManageGuild: null != Z && null == X && T.A.can(R.xBc.MANAGE_GUILD, Z)
         }), [Z, X]),
         eA = (0, _.e)(X),
         eb = (0, h.h)(X?.linkedLobby?.application_id),
@@ -102,7 +102,7 @@ function W(e) {
             availableTwitchIntegrations: e_,
             availableYoutubeIntegrations: eN,
             guildTwitchIntegrations: ej,
-            guildYoutubeIntegrations: ev
+            guildYoutubeIntegrations: eT
         } = l.useMemo(() => ({
             availableTwitchIntegrations: ee.twitch?.length ?? 0,
             availableYoutubeIntegrations: ee.youtube?.length ?? 0,
@@ -110,7 +110,7 @@ function W(e) {
             guildYoutubeIntegrations: ee.youtube?.filter(e => e.enabled).length ?? 0
         }), [ee.twitch, ee.youtube]),
         {
-            showTwitchCard: eT,
+            showTwitchCard: ev,
             showYoutubeCard: eC
         } = l.useMemo(() => {
             if (eg || !ep) return {
@@ -178,10 +178,10 @@ function W(e) {
                     buttonText: L.intl.string(L.t["Z/qRnM"]),
                     hasNextSection: !0,
                     onButtonClick: () => {
-                        n(a.id), T.default.track(R.HAw.APP_MANAGE_CTA_CLICKED, {
+                        n(a.id), v.default.track(R.HAw.APP_MANAGE_CTA_CLICKED, {
                             application_id: a.id,
                             guild_id: e?.id,
-                            is_admin: null != e ? v.A.can(R.xBc.ADMINISTRATOR, e) : void 0
+                            is_admin: null != e ? T.A.can(R.xBc.ADMINISTRATOR, e) : void 0
                         })
                     },
                     details: o,
@@ -295,7 +295,7 @@ function W(e) {
                 count: r
             })
         }]
-    }, "channels-syncing"))), eT && eP.push((F = x.A.get(R.fg2.TWITCH), e_ > 0 ? (z = (0, i.jsx)(u.uhT, {
+    }, "channels-syncing"))), ev && eP.push((F = x.A.get(R.fg2.TWITCH), e_ > 0 ? (z = (0, i.jsx)(u.uhT, {
         size: "xs"
     }), H = L.intl.formatToPlainString(L.t.FFpnT8, {
         count: ej
@@ -317,7 +317,7 @@ function W(e) {
     }, "integrations-twitch"))), eC && eP.push((Q = x.A.get(R.fg2.YOUTUBE), eN > 0 ? (J = (0, i.jsx)(u.uhT, {
         size: "xs"
     }), Y = L.intl.formatToPlainString(L.t.b2g5vC, {
-        count: ev
+        count: eT
     }), q = () => es(R.fg2.YOUTUBE)) : (K = L.intl.string(L.t.xEyQ3X), Y = L.intl.string(L.t.T0ivgQ), q = () => (0, p.A)({
         platformType: R.fg2.YOUTUBE,
         location: "Integration Settings"

@@ -17,8 +17,8 @@ n(283030);
 var x = n(173628),
     p = n(378230),
     g = n(374058),
-    _ = n(974857),
-    f = n(358622),
+    f = n(974857),
+    _ = n(358622),
     v = n(568834),
     b = n(19767),
     j = n(648514),
@@ -190,7 +190,7 @@ function ec() {
             name: "Colors",
             group: er.fu.UI,
             tags: ["tokens", "themes", "palette"],
-            render: () => (0, a.jsx)(_.A, {})
+            render: () => (0, a.jsx)(f.A, {})
         }), e.push({
             id: "design_toggles",
             name: "Design Toggles",
@@ -269,7 +269,7 @@ function ec() {
             id: "dcf_events",
             name: "DCF Events",
             group: er.fu.DCF,
-            render: () => (0, a.jsx)(f.A, {})
+            render: () => (0, a.jsx)(_.A, {})
         }), e.push({
             id: "hotspots",
             name: "Hotspots",

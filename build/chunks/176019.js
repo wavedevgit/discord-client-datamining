@@ -2,7 +2,7 @@
 "use strict";
 a.r(t), a.d(t, {
     default: () => M,
-    waitForCSSLoad: () => P
+    waitForCSSLoad: () => L
 });
 var n = a(627968),
     i = a(64700),
@@ -32,9 +32,9 @@ var n = a(627968),
     E = a(652215);
 a(703552), a(921955);
 let N = !p.isPlatformEmbedded && !1,
-    L = new c.A("AppOverlay");
+    P = new c.A("AppOverlay");
 
-function P(e, t) {
+function L(e, t) {
     return new Promise((a, n) => {
         let i = Date.now();
         t.current = setInterval(() => {
@@ -67,7 +67,7 @@ async function k(e, t) {
         try {
             await b.Ay.isAlwaysOnTop(t)
         } catch (e) {
-            L.error("Window does not exist while trying to show inactive", e), (0, A.pj)(e, v.Ue.OutOfProcess)
+            P.error("Window does not exist while trying to show inactive", e), (0, A.pj)(e, v.Ue.OutOfProcess)
         }
         for (let i = 0; i < n; i++) try {
             if (!await b.Ay.waitForIPCReady(a, e)) throw Error("IPC not ready");
@@ -76,7 +76,7 @@ async function k(e, t) {
         } catch (e) {
             if (e.message?.includes("IPC") && i < n - 1) {
                 let t = a / 2 * Math.pow(2, i + 1);
-                L.error(`Failed to show inactive, retrying in ${t}ms`, e), await new Promise(e => setTimeout(e, t))
+                P.error(`Failed to show inactive, retrying in ${t}ms`, e), await new Promise(e => setTimeout(e, t))
             } else throw (0, A.pj)(e, v.Ue.OutOfProcess), e
         }
     }
@@ -120,10 +120,10 @@ let M = i.memo(function(e) {
                 R = i.useRef(null),
                 O = i.useCallback(async (e, t) => {
                     try {
-                        if (await P(e, R), N.current) return;
+                        if (await L(e, R), N.current) return;
                         (0, T.A)("cssLoaded", !0)
                     } catch (e) {
-                        L.error("Timed out waiting for CSS to load", e), s.A.setOverlayCrashed(x.A.getTargetPID(), e), (0, T.A)("errorMessage", "CSS failed load");
+                        P.error("Timed out waiting for CSS to load", e), s.A.setOverlayCrashed(x.A.getTargetPID(), e), (0, T.A)("errorMessage", "CSS failed load");
                         return
                     }
                     try {

@@ -43,8 +43,8 @@ function m(e) {
         product: o,
         hasSufficientOrbs: m,
         isProductDisabled: p,
-        discountOfferAmount: f
-    } = e, h = null != f;
+        discountOfferAmount: h
+    } = e, f = null != h;
     return 0 === t.length ? null : t[0].currency === c.Yr.DISCORD_ORB ? (0, n.jsx)(u, {
         orbPrice: t[0],
         isProductDisabled: p,
@@ -57,11 +57,11 @@ function m(e) {
                 product: o,
                 discount: i,
                 isPremiumUser: r,
-                hideStrikethroughPrice: !r || h,
+                hideStrikethroughPrice: !r || f,
                 nitroIconType: "tooltip",
                 nitroIconSize: "xs",
-                discountOfferAmount: f
-            }), r || h ? null : (0, n.jsx)(a.A, {
+                discountOfferAmount: h
+            }), r || f ? null : (0, n.jsx)(a.A, {
                 product: o
             })]
         }), t.length > 1 && t[1].currency === c.Yr.DISCORD_ORB && (0, n.jsx)(l.x, {

@@ -17,8 +17,8 @@ var s = n(397927),
     A = n(882442),
     m = n(869968),
     p = n(694080),
-    _ = n(70730);
-class g extends r.A {
+    g = n(70730);
+class _ extends r.A {
     _premiumPaymentModalCloseResolve = null;
     _premiumPaymentModalCloseReject = null;
     _initialize() {
@@ -60,7 +60,7 @@ class g extends r.A {
     _maybeFetchUserAffinities = () => {
         let {
             enabled: e
-        } = _.u.getConfig({
+        } = g.u.getConfig({
             location: "PremiumManager"
         });
         e && (0, c.u)()
@@ -113,4 +113,4 @@ class g extends r.A {
         })
     }
 }
-let f = new g
+let f = new _
