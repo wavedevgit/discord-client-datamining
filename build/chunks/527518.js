@@ -1,6 +1,6 @@
 /** chunk id: 527518 params = (module,exports,require) **/
 l.d(t, {
-    c$: () => u
+    c$: () => c
 });
 var a = l(627968),
     n = l(162097),
@@ -8,8 +8,8 @@ var a = l(627968),
     i = l(240248),
     o = l(652215),
     s = l(985018),
-    c = l(895375);
-let u = {
+    u = l(895375);
+let c = {
     title: "Balance Widget",
     stories: [{
         name: "Balance Widget Card",
@@ -52,16 +52,16 @@ let u = {
                 ctaText: t,
                 linkText: l,
                 showNotificationBadge: n,
-                cardAlignment: u
+                cardAlignment: c
             } = e;
             return (0, a.jsx)("div", {
-                className: c.tH,
+                className: u.tH,
                 children: (0, a.jsx)(r.SS, {
-                    className: c.oz,
+                    className: u.oz,
                     ctaText: (0, i.uJ)(t) ? s.intl.string(s.t["J+vlIR"]) : t,
                     ctaOnClick: o.tEg,
                     showNotificationBadge: n,
-                    cardAlignment: u,
+                    cardAlignment: c,
                     linkText: (0, i.uJ)(l) ? s.intl.string(s.t.XRdyjz) : l
                 })
             })

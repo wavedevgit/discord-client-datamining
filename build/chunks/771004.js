@@ -96,7 +96,7 @@ function v(e) {
         children: [(0, a.jsx)(c.EYj, {
             ref: h,
             lineClamp: i || null == o ? void 0 : j,
-            variant: "text-sm/normal",
+            variant: "text-md/medium",
             children: t.summary
         }), o && (0, a.jsx)(c.QWc, {
             onClick: C,

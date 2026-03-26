@@ -8,15 +8,15 @@ var n = i(503698),
     a = i.n(n),
     s = i(397927),
     r = i(659612),
-    c = i(898612),
-    d = i(232492),
+    d = i(898612),
+    c = i(232492),
     o = i(533148);
 
 function u(e) {
     let {
         benefit: t,
         guildId: i
-    } = e, n = (0, d.A)(i, t.ref_id), u = (0, l.jsx)(r.A, {
+    } = e, n = (0, c.A)(i, t.ref_id), u = (0, l.jsx)(r.A, {
         guildId: i,
         emojiId: t.emoji_id,
         emojiName: t.emoji_name
@@ -29,13 +29,13 @@ function u(e) {
             variant: "text-md/medium",
             color: "text-strong",
             className: a()(o.UU, o.F$),
-            children: (0, c.A)(t)
+            children: (0, d.A)(t)
         })
     }) : (0, l.jsx)(s.Text, {
         variant: "text-md/medium",
         color: "text-strong",
         className: o.UU,
-        children: (0, c.A)(t)
+        children: (0, d.A)(t)
     });
     return (0, l.jsxs)("div", {
         className: o.kL,

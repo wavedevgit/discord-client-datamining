@@ -2,28 +2,28 @@
 a.d(t, {
     F: () => o
 });
-var n = a(311907),
-    r = a(895944),
-    s = a(649032),
-    i = a(26508),
-    d = a(673608),
-    l = a(861495);
+var r = a(311907),
+    n = a(895944),
+    i = a(649032),
+    s = a(26508),
+    l = a(673608),
+    d = a(861495);
 
 function o(e) {
     let t = e?.location ?? "useNitroProgramReward",
-        a = (0, i.DK)(s.W.NITRO, t),
+        a = (0, s.DK)(i.W.NITRO, t),
         {
             isReady: o,
             programReward: c,
             totalDays: u
-        } = (0, n.cf)([r.A], () => ({
-            isReady: r.A.isReady(),
-            programReward: r.A.getRewardForProgram(s.W.NITRO),
-            totalDays: r.A.getTotalDaysInDuration(s.W.NITRO)
+        } = (0, r.cf)([n.A], () => ({
+            isReady: n.A.isReady(),
+            programReward: n.A.getRewardForProgram(i.W.NITRO),
+            totalDays: n.A.getTotalDaysInDuration(i.W.NITRO)
         })),
-        _ = (0, d.q)(),
-        m = (0, l.Q)(c, a),
-        p = (0, l.Y)(c, u, a);
+        _ = (0, l.q)(),
+        m = (0, d.Q)(c, a),
+        p = (0, d.Y)(c, u, a);
     return {
         isEligible: a,
         isReady: o,

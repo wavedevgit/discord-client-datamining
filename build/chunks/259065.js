@@ -1,31 +1,31 @@
 /** chunk id: 259065 params = (module,exports,require) **/
 a.d(t, {
-    L: () => l
+    L: () => d
 });
-var n = a(627968);
+var r = a(627968);
 a(64700);
-var r = a(397927),
-    s = a(954571),
-    i = a(652215);
-let d = "display-name-styles-modal",
-    l = e => {
+var n = a(397927),
+    i = a(954571),
+    s = a(652215);
+let l = "display-name-styles-modal",
+    d = e => {
         let {
             analyticsLocations: t,
-            guildId: l
+            guildId: d
         } = e;
-        (0, r.mMO)(async () => {
+        (0, n.mMO)(async () => {
             let {
                 default: e
             } = await a.e("15682").then(a.bind(a, 619481));
-            return a => (0, n.jsx)(e, {
+            return a => (0, r.jsx)(e, {
                 ...a,
-                guildId: l,
+                guildId: d,
                 analyticsLocations: t
             })
         }, {
-            modalKey: d,
+            modalKey: l,
             onCloseRequest: () => {
-                s.default.track(i.HAw.DISPLAY_NAME_STYLES_CLOSED), (0, r.OoC)(d)
+                i.default.track(s.HAw.DISPLAY_NAME_STYLES_CLOSED), (0, n.OoC)(l)
             }
         })
     }

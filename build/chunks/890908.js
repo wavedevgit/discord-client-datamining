@@ -1,10 +1,10 @@
 /** chunk id: 890908 params = (module,exports,require) **/
 l.r(t), l.d(t, {
     RevenuePlaygroundCollectionId: () => _,
-    identityCollection: () => T,
-    nitroCollection: () => j,
-    paymentsCollection: () => C,
-    playgroundConfig: () => A,
+    identityCollection: () => A,
+    nitroCollection: () => T,
+    paymentsCollection: () => j,
+    playgroundConfig: () => P,
     virtualCurrencyCollection: () => S
 });
 var a, n = l(397927),
@@ -12,49 +12,50 @@ var a, n = l(397927),
     i = l(527518),
     o = l(270727),
     s = l(473106),
-    c = l(423396),
-    u = l(748081),
-    d = l(309706),
-    p = l(987274),
-    m = l(526838),
-    h = l(886532),
+    u = l(423396),
+    c = l(748081),
+    d = l(51031),
+    p = l(309706),
+    m = l(987274),
+    h = l(526838),
+    x = l(886532),
     b = l(358172),
-    x = l(931433),
-    y = l(391622),
-    f = l(203484),
-    g = l(445736),
-    v = l(504312),
+    y = l(931433),
+    f = l(391622),
+    g = l(203484),
+    v = l(445736),
+    E = l(504312),
     _ = ((a = {}).PAYMENTS = "payments", a.VIRTUAL_CURRENCY = "virtual-currency", a.NITRO = "nitro", a.IDENTITY = "identity", a);
-let E = ["Revenue Storybook", "Revenue Playground"],
-    C = {
+let C = ["Revenue Storybook", "Revenue Playground"],
+    j = {
         id: "payments",
         name: "Payments",
-        groups: [s._, v.Y, d.U, g.Wo, r.v, c.Gu, f.O],
-        tags: E,
+        groups: [s._, E.Y, p.U, v.Wo, r.v, u.Gu, g.O],
+        tags: C,
         IconComponent: n.d2Y
     },
     S = {
         id: "virtual-currency",
         name: "Virtual Currency",
-        groups: [o.h2, i.c$, x.V, y.e],
-        tags: E,
+        groups: [o.h2, i.c$, y.V, f.e],
+        tags: C,
         IconComponent: n.Cp8
     },
-    j = {
+    T = {
         id: "nitro",
         name: "Nitro",
-        groups: [p.I7, m.Z, h.H, b.E],
-        tags: E,
+        groups: [m.I7, h.Z, x.H, b.E],
+        tags: C,
         IconComponent: n.tvc
     },
-    T = {
+    A = {
         id: "identity",
         name: "Identity",
-        groups: [u.T$],
-        tags: E,
+        groups: [c.T$, d.b],
+        tags: C,
         IconComponent: n.nys
     },
-    A = {
+    P = {
         playgroundBaseUrl: "revenue",
-        collections: [C, S, j, T]
+        collections: [j, S, T, A]
     }

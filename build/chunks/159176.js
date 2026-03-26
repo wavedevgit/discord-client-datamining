@@ -1,6 +1,6 @@
 /** chunk id: 159176 params = (module,exports,require) **/
 l.d(t, {
-    A: () => c
+    A: () => u
 });
 var a = l(627968);
 l(64700);
@@ -9,7 +9,7 @@ var n = l(732955),
     i = l(156312),
     o = l(877062),
     s = l(252561);
-let c = {
+let u = {
     name: "Deep Link Test",
     id: "deep-link-test",
     component: function(e) {

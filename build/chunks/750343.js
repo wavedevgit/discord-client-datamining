@@ -8,8 +8,8 @@ var a = l(627968),
     i = l(405139),
     o = l(156312),
     s = l(19311),
-    c = l(869177),
-    u = l(252561),
+    u = l(869177),
+    c = l(252561),
     d = l(985018);
 
 function p(e) {
@@ -28,7 +28,7 @@ function p(e) {
                 type: r.tVU.PULSING_ELLIPSIS
             })
         };
-    return e.renderStepBody ? (0, a.jsx)(c.V, {
+    return e.renderStepBody ? (0, a.jsx)(u.V, {
         ...l,
         ...e
     }) : "applePay" === e.paymentRequestWallet ? (0, a.jsx)(i.Mv, {
@@ -44,7 +44,7 @@ function m(e) {
     let {
         paymentRequestWallet: t
     } = e, l = n.useRef(null), [r, i] = n.useState(!1);
-    return (0, a.jsx)(u.e_, {
+    return (0, a.jsx)(c.e_, {
         footer: (0, a.jsx)(s.Ay, {
             primaryCTA: s.Ay.CTAType.CONTINUE,
             primaryText: d.intl.string("applePay" === t ? d.t.WoXvJL : d.t.wnVVr0),
@@ -71,22 +71,22 @@ let h = {
             stepConfigs: [],
             skuIDs: [],
             activeSubscription: null,
-            children: (0, a.jsxs)(u.wn, {
+            children: (0, a.jsxs)(c.wn, {
                 children: [(0, a.jsx)(r.Heading, {
                     variant: "heading-xl/semibold",
                     children: "Payment Request"
-                }), (0, a.jsx)(u.Hq, {
+                }), (0, a.jsx)(c.Hq, {
                     label: "Default View",
                     children: (0, a.jsx)(p, {
                         paymentRequestWallet: t
                     })
-                }), (0, a.jsx)(u.Hq, {
+                }), (0, a.jsx)(c.Hq, {
                     label: "Connector View",
                     children: (0, a.jsx)(p, {
                         paymentRequestWallet: t,
                         renderConnectorView: !0
                     })
-                }), (0, a.jsx)(u.Hq, {
+                }), (0, a.jsx)(c.Hq, {
                     label: "Add Payment Step Body Connector View",
                     children: (0, a.jsx)(m, {
                         paymentRequestWallet: t

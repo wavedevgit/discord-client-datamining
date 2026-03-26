@@ -1,6 +1,6 @@
 /** chunk id: 189024 params = (module,exports,require) **/
 n.d(t, {
-    A: () => k
+    A: () => U
 });
 var i = n(627968),
     s = n(64700),
@@ -37,12 +37,12 @@ var i = n(627968),
     G = n(893160),
     M = n(509442);
 
-function k() {
+function U() {
     let {
         analyticsLocations: e
-    } = (0, c.Ay)(d.A.PREMIUM_MARKETING_PERK_CARD), t = (0, E.O9)(), k = (0, T.R)({
+    } = (0, c.Ay)(d.A.PREMIUM_MARKETING_PERK_CARD), t = (0, E.O9)(), U = (0, T.R)({
         location: "PremiumWhatsNewSection"
-    }), U = S.A.useExperiment({
+    }), k = S.A.useExperiment({
         location: "PremiumWhatsNewSection"
     }).enabled, w = (0, a.bG)([f.A], () => f.A.getPremiumTypeSubscription()), V = w?.hasActiveTrial ?? !1, B = (0, s.useCallback)(() => {
         (0, p.openUserSettings)(A.X.PROFILE_PANEL, {
@@ -62,7 +62,7 @@ function k() {
     }, []), z = () => {
         (0, o.A)(I.TE)
     }, Y = (0, s.useCallback)(() => {
-        if (k) {
+        if (U) {
             if (V) return void(0, r.mMO)(async () => {
                 let {
                     default: e
@@ -84,7 +84,7 @@ function k() {
                 ...t
             })
         })
-    }, [k, e, V]), X = (0, v.A)(e), {
+    }, [U, e, V]), X = (0, v.A)(e), {
         currentDate: K,
         nDaysInMonth: W
     } = (0, s.useMemo)(() => {
@@ -112,13 +112,13 @@ function k() {
                 }),
                 pillText: y.intl.string(y.t.oW0eUd),
                 primaryAsset: L,
-                ...k ? {
+                ...U ? {
                     ctaIcon: r.tvc,
                     ctaIconPosition: "start"
                 } : {},
-                ctaText: y.intl.string(k ? y.t.IJI7yk : y.t.jVcuVY),
+                ctaText: y.intl.string(U ? y.t.IJI7yk : y.t.jVcuVY),
                 onCtaClick: Y
-            } : null, U ? {
+            } : null, k ? {
                 id: C.RECURRING_3P_PROMOTIONS_CARD_ID,
                 title: y.intl.string(y.t.m7PucM),
                 description: y.intl.format(y.t.zh1X7u, {}),
@@ -175,5 +175,5 @@ function k() {
             s = (n = n.filter(e => null != e))[0].featured,
             a = s ? 5 : 6;
         return n.splice(+!!s, 0, X), n.length > a && n.splice(a, n.length - a), n
-    }, [X, t, k, U, W, K, e, B, H, F, Y])
+    }, [X, t, U, k, W, K, e, B, H, F, Y])
 }

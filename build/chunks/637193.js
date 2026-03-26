@@ -1,25 +1,25 @@
 /** chunk id: 637193 params = (module,exports,require) **/
-n.d(t, {
+n.d(e, {
     p: () => l
 });
 var i = n(627968);
 n(64700);
-var s = n(397927);
-let l = e => {
+var a = n(397927);
+let l = t => {
     let {
-        analyticsLocations: t,
+        analyticsLocations: e,
         guildId: l,
-        initialSelectedNameplate: a
-    } = e;
-    (0, s.mMO)(async () => {
+        initialSelectedNameplate: r
+    } = t;
+    (0, a.mMO)(async () => {
         let {
-            default: e
+            default: t
         } = await n.e("42491").then(n.bind(n, 303318));
-        return n => (0, i.jsx)(e, {
+        return n => (0, i.jsx)(t, {
             ...n,
             guildId: l,
-            analyticsLocations: t,
-            initialSelectedNameplate: a
+            analyticsLocations: e,
+            initialSelectedNameplate: r
         })
     })
 }

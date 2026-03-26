@@ -24,7 +24,7 @@ let i = {
         let s = n.useMemo(() => () => {
                 null != t.current && t.current.play(e)
             }, [e]),
-            c = n.useCallback(e => (0, a.jsx)(r.P, {
+            u = n.useCallback(e => (0, a.jsx)(r.P, {
                 ...e,
                 src: () => l.e("78611").then(l.t.bind(l, 433886, 19)),
                 ref: t,
@@ -36,6 +36,6 @@ let i = {
             play: s,
             getDuration: n.useCallback(() => t.current?.getDuration(), []),
             getCurrentFrame: n.useCallback(() => t.current?.getCurrentFrame() ?? null, []),
-            Component: c
+            Component: u
         }
     }

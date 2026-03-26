@@ -78,12 +78,12 @@ function D() {
         M = (0, l.useCallback)(() => {
             (0, g.pX)(E.BVt.COLLECTIBLES_SHOP)
         }, []),
-        k = (0, l.useCallback)(() => {
+        U = (0, l.useCallback)(() => {
             (0, h.openUserSettings)(x.X.SOUNDBOARD_CATEGORY, {
                 analyticsLocations: i
             })
         }, [i]),
-        U = (0, l.useCallback)(() => {
+        k = (0, l.useCallback)(() => {
             (0, h.openUserSettings)(x.X.PROFILE_PANEL, {
                 analyticsLocations: i
             }, () => (0, m.L)({
@@ -173,14 +173,14 @@ function D() {
             title: C.intl.string(C.t.WJfCPi),
             description: C.intl.string(C.t.liQKJR),
             ctaText: C.intl.string(C.t.jVcuVY),
-            onCtaClick: k,
+            onCtaClick: U,
             primaryAsset: y.A,
             categories: ["appearance"]
         }, {
             id: T.DISPLAY_NAME_STYLES_CARD_ID,
             title: C.intl.string(C.t.OLtTrt),
             description: C.intl.string(C.t["di/pXR"]),
-            onCtaClick: U,
+            onCtaClick: k,
             primaryAsset: I.A,
             ctaText: C.intl.string(C.t.jVcuVY),
             categories: ["appearance"]
@@ -258,6 +258,6 @@ function D() {
                 ariaHidden: !0
             }),
             categories: ["vip"]
-        }], [e, n, L, P, D, G, M, k, U]);
+        }], [e, n, L, P, D, G, M, U, k]);
     return (0, l.useMemo)(() => B.filter(e => null != e && !V.includes(e.id)), [B, V])
 }

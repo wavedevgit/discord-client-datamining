@@ -1,6 +1,6 @@
 /** chunk id: 706276 params = (module,exports,require) **/
 l.d(t, {
-    o: () => b
+    o: () => x
 });
 var a = l(627968),
     n = l(64700),
@@ -8,17 +8,17 @@ var a = l(627968),
     i = l(73825),
     o = l(473702),
     s = l(252561),
-    c = l(654044),
-    u = l(931088),
+    u = l(654044),
+    c = l(931088),
     d = l(652215),
     p = l(601107),
     m = l(788868),
     h = l(818348);
-let b = () => {
-        let [e, t] = n.useState(m.PremiumTypes.TIER_0), [l, b] = n.useState(o.g.WHAT_YOU_LOSE), [y, f] = n.useState(null), [g, v] = n.useState(m.gD.PREMIUM_MONTH_TIER_0), [_, E] = n.useState([]), [C, S] = n.useState(() => {
+let x = () => {
+        let [e, t] = n.useState(m.PremiumTypes.TIER_0), [l, x] = n.useState(o.g.WHAT_YOU_LOSE), [y, f] = n.useState(null), [g, v] = n.useState(m.gD.PREMIUM_MONTH_TIER_0), [E, _] = n.useState([]), [C, j] = n.useState(() => {
             let e = new Date;
             return e.setMonth(e.getMonth() + 1), e
-        }), [j, T] = n.useState(null), [A, P] = n.useState(!1), [k, R] = n.useState(!1), [I, N] = n.useState(!1);
+        }), [S, T] = n.useState(null), [A, P] = n.useState(!1), [k, R] = n.useState(!1), [I, N] = n.useState(!1);
         (0, n.useEffect)(() => {
             (0, i.zS)()
         }, []), (0, n.useEffect)(() => {
@@ -34,11 +34,11 @@ let b = () => {
                 case m.gD.PREMIUM_YEAR_TIER_2:
                     e.setFullYear(e.getFullYear() + 1)
             }
-            S(e)
+            j(e)
         }, [g]), (0, n.useEffect)(() => {
             switch (e) {
                 case m.PremiumTypes.TIER_0:
-                    E([{
+                    _([{
                         label: "Nitro Basic Monthly",
                         value: m.gD.PREMIUM_MONTH_TIER_0
                     }, {
@@ -47,7 +47,7 @@ let b = () => {
                     }]), v(m.gD.PREMIUM_MONTH_TIER_0);
                     break;
                 case m.PremiumTypes.TIER_1:
-                    E([{
+                    _([{
                         label: "Nitro Classic Monthly",
                         value: m.gD.PREMIUM_MONTH_TIER_1
                     }, {
@@ -56,7 +56,7 @@ let b = () => {
                     }]), v(m.gD.PREMIUM_MONTH_TIER_1);
                     break;
                 case m.PremiumTypes.TIER_2:
-                    E([{
+                    _([{
                         label: "Nitro Monthly",
                         value: m.gD.PREMIUM_MONTH_TIER_2
                     }, {
@@ -65,7 +65,7 @@ let b = () => {
                     }]), v(m.gD.PREMIUM_MONTH_TIER_2)
             }
         }, [e]), (0, n.useEffect)(() => {
-            [o.g.CONFIRM_DISCOUNT, o.g.DISCOUNT_APPLIED].includes(l) && null === y && f(x()), l === o.g.PREVIEW && null === j && T(new c.A({
+            [o.g.CONFIRM_DISCOUNT, o.g.DISCOUNT_APPLIED].includes(l) && null === y && f(b()), l === o.g.PREVIEW && null === S && T(new u.A({
                 id: "",
                 invoiceItems: [{
                     id: "",
@@ -89,10 +89,10 @@ let b = () => {
                 subscriptionPeriodStart: new Date,
                 subscriptionPeriodEnd: C,
                 status: d.lT7.PAID
-            })), l !== o.g.PREVIEW && null !== j && T(null)
-        }, [l, y, C, g, j]);
+            })), l !== o.g.PREVIEW && null !== S && T(null)
+        }, [l, y, C, g, S]);
         let M = n.useCallback(async () => {
-            N(!0), await (0, r.mMO)(async () => t => (0, a.jsx)(u.m, {
+            N(!0), await (0, r.mMO)(async () => t => (0, a.jsx)(c.m, {
                 ...t,
                 onClose: () => {
                     t.onClose(), N(!1)
@@ -100,7 +100,7 @@ let b = () => {
                 premiumType: e,
                 churnDiscount: y,
                 planId: g,
-                renewalInvoice: j,
+                renewalInvoice: S,
                 renewalInvoiceDetails: {
                     intervalType: m.WT.MONTH,
                     intervalCount: 1
@@ -108,7 +108,7 @@ let b = () => {
                 errorOnCancel: A,
                 errorOnRedeem: k,
                 setActiveStep: e => {
-                    b(e), t.onClose()
+                    x(e), t.onClose()
                 },
                 activeStep: l,
                 premiumSubscription: {
@@ -134,7 +134,7 @@ let b = () => {
                     pauseReason: p.qf.UNKNOWN
                 }
             }))
-        }, [e, y, g, j, A, k, l, C]);
+        }, [e, y, g, S, A, k, l, C]);
         return (0, n.useEffect)(() => {
             I && M()
         }, [l, I, M]), (0, a.jsxs)(s.LB, {
@@ -160,7 +160,7 @@ let b = () => {
                     selectionMode: "single",
                     fullWidth: !0
                 })
-            }), _.length > 0 && (0, a.jsx)(s.MG, {
+            }), E.length > 0 && (0, a.jsx)(s.MG, {
                 children: (0, a.jsx)(r.l6P, {
                     label: "Subscription Interval",
                     placeholder: "Premium Type",
@@ -177,7 +177,7 @@ let b = () => {
                         }
                     },
                     value: g,
-                    options: _,
+                    options: E,
                     selectionMode: "single",
                     fullWidth: !0
                 })
@@ -185,7 +185,7 @@ let b = () => {
                 children: (0, a.jsx)(r.l6P, {
                     label: "Modal Step",
                     placeholder: "Premium Type",
-                    onSelectionChange: b,
+                    onSelectionChange: x,
                     value: l,
                     options: [{
                         id: "whatYouLose",
@@ -215,7 +215,7 @@ let b = () => {
                 children: (0, a.jsx)(r.Checkbox, {
                     checked: null !== y,
                     onChange: () => {
-                        null === y ? f(x()) : f(null)
+                        null === y ? f(b()) : f(null)
                     },
                     label: "Churn Discount"
                 })
@@ -245,7 +245,7 @@ let b = () => {
             })]
         })
     },
-    x = function() {
+    b = function() {
         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
             {
                 discount: t = {}

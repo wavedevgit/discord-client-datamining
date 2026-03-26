@@ -1,11 +1,11 @@
 /** chunk id: 915967 params = (module,exports,require) **/
 n.d(t, {
     Ay: () => X,
-    Bx: () => z,
+    Bx: () => Y,
     Gm: () => w,
     Q_: () => F,
     zF: () => K,
-    zR: () => Y
+    zR: () => z
 }), n(321073);
 var i, l = n(966597),
     r = n(774603),
@@ -78,12 +78,12 @@ function K(e) {
 function k() {
     for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
     return t.map(e => {
-        let t = Y[e];
+        let t = z[e];
         if (null == t) throw Error(`getBindsFor(...): No bind for ${t}`);
         return t.binds[0]
     })
 }
-let Y = {
+let z = {
     [B.IWg.SERVER_NEXT]: O.yx,
     [B.IWg.SERVER_PREV]: O.yv,
     [B.IWg.CHANNEL_NEXT]: s.kF,
@@ -135,7 +135,7 @@ let Y = {
     [B.IWg.OPEN_CONTEXT_MENU]: C.b
 };
 
-function z() {
+function Y() {
     let e = [{
             description: W.intl.string(W.t.bx4Uyz),
             binds: k(B.IWg.SERVER_PREV, B.IWg.SERVER_NEXT),
@@ -347,4 +347,4 @@ function z() {
         group: "CHAT"
     }), e
 }
-let X = 21552 == n.j ? Y : null
+let X = 21552 == n.j ? z : null

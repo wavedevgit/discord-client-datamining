@@ -8,8 +8,8 @@ var n = i(311907),
     a = i(732955),
     s = i(397927),
     r = i(701273),
-    c = i(71393),
-    d = i(602461),
+    d = i(71393),
+    c = i(602461),
     o = i(985018),
     u = i(677112);
 let m = e => {
@@ -17,7 +17,7 @@ let m = e => {
         onClose: t,
         listing: i,
         guildId: m
-    } = e, x = (0, n.bG)([c.A], () => c.A.getGuild(m), [m]), h = (0, d.A)({
+    } = e, x = (0, n.bG)([d.A], () => d.A.getGuild(m), [m]), h = (0, c.A)({
         listing: i,
         guildId: m
     });

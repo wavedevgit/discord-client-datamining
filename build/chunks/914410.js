@@ -4,26 +4,26 @@ a.d(t, {
     fh: () => _,
     qP: () => u
 });
-var n, r, s = a(627968),
-    i = a(64700),
-    d = a(503698),
-    l = a.n(d);
+var r, n, i = a(627968),
+    s = a(64700),
+    l = a(503698),
+    d = a.n(l);
 a(284009);
 var o = a(736653),
     c = a(751323),
-    u = ((n = {}).UNSET = "unset", n.BLUE = "blue", n.ORANGE = "orange", n),
-    _ = ((r = {}).LIGHT = "light", r.MEDIUM = "medium", r);
+    u = ((r = {}).UNSET = "unset", r.BLUE = "blue", r.ORANGE = "orange", r),
+    _ = ((n = {}).LIGHT = "light", n.MEDIUM = "medium", n);
 let m = e => {
     let {
         progress: t,
         minimum: a = 0,
-        maximum: n = 100,
-        weight: r = "light",
-        variant: d,
+        maximum: r = 100,
+        weight: n = "light",
+        variant: l,
         override: u,
         glowing: _ = !0,
         labelledBy: m
-    } = e, p = null != u && "unset" === d, b = (0, o.Ay)(), f = u?.[b] ?? u?.default, g = i.useMemo(() => (t - a) / (n - a) * 100, [t, a, n]), h = t === a, A = {
+    } = e, p = null != u && "unset" === l, b = (0, o.Ay)(), f = u?.[b] ?? u?.default, g = s.useMemo(() => (t - a) / (r - a) * 100, [t, a, r]), h = t === a, A = {
         ...p ? {
             "--custom-background": f?.background,
             "--custom-gradient-start": f?.gradientStart,
@@ -34,11 +34,11 @@ let m = e => {
             "--custom-gradient-glow": "transparent"
         }
     };
-    return (0, s.jsx)("div", {
-        className: l()(c.progressContainer, c[r], c[d]),
+    return (0, i.jsx)("div", {
+        className: d()(c.progressContainer, c[n], c[l]),
         style: A,
-        children: (0, s.jsxs)("div", {
-            className: l()(c.progress, {
+        children: (0, i.jsxs)("div", {
+            className: d()(c.progress, {
                 [c.empty]: h
             }),
             style: {
@@ -47,14 +47,14 @@ let m = e => {
             role: "meter",
             "aria-valuenow": t,
             "aria-valuemin": a,
-            "aria-valuemax": n,
+            "aria-valuemax": r,
             "aria-labelledby": m,
-            children: [(0, s.jsx)("div", {
-                className: l()(c.glow, {
+            children: [(0, i.jsx)("div", {
+                className: d()(c.glow, {
                     [c.empty]: h
                 })
-            }), (0, s.jsx)("div", {
-                className: l()(c.bar, c[d], {
+            }), (0, i.jsx)("div", {
+                className: d()(c.bar, c[l], {
                     [c.empty]: h
                 })
             })]

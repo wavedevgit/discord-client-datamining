@@ -1,10 +1,10 @@
 /** chunk id: 441446 params = (module,exports,require) **/
 l.d(t, {
-    Hq: () => c,
+    Hq: () => u,
     LB: () => p,
     MG: () => d,
     nB: () => s,
-    wn: () => u
+    wn: () => c
 });
 var a = l(627968);
 l(64700);
@@ -15,12 +15,12 @@ var n = l(503698),
 let s = () => (0, a.jsx)("hr", {
         className: o.ts
     }),
-    c = e => {
+    u = e => {
         let {
             label: t,
             children: l,
             direction: n = "horizontal",
-            className: c
+            className: u
         } = e;
         return (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsx)(s, {}), (0, a.jsx)(i.Text, {
@@ -28,14 +28,14 @@ let s = () => (0, a.jsx)("hr", {
                 className: o.cW,
                 children: t
             }), (0, a.jsx)("div", {
-                className: r()(o.kL, c, {
+                className: r()(o.kL, u, {
                     [o.YG]: "vertical" === n
                 }),
                 children: l
             })]
         })
     },
-    u = e => {
+    c = e => {
         let {
             children: t
         } = e;

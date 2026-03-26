@@ -1,8 +1,8 @@
 /** chunk id: 457569 params = (module,exports,require) **/
 a.d(t, {
-    A: () => r
+    A: () => n
 });
-let n = (0, a(945810).mj)({
+let r = (0, a(945810).mj)({
     name: "2026-03-enable-premium-group-cta",
     kind: "user",
     defaultConfig: {
@@ -18,12 +18,12 @@ let n = (0, a(945810).mj)({
     }
 });
 
-function r(e) {
+function n(e) {
     let {
         location: t
     } = e, {
         enabled: a
-    } = n.useConfig({
+    } = r.useConfig({
         location: t
     });
     return a

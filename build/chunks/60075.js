@@ -1,18 +1,18 @@
 /** chunk id: 60075 params = (module,exports,require) **/
 l.d(t, {
     D5: () => g,
-    Ec: () => x,
+    Ec: () => b,
     KF: () => A,
     LF: () => m,
-    NA: () => b,
+    NA: () => x,
     Z1: () => h,
-    lz: () => S,
+    lz: () => j,
     mi: () => P,
     s2: () => T,
     t$: () => p,
     yJ: () => C,
-    yi: () => j,
-    z_: () => _
+    yi: () => S,
+    z_: () => E
 });
 var a = l(627968),
     n = l(64700),
@@ -20,8 +20,8 @@ var a = l(627968),
     i = l(397927),
     o = l(252561),
     s = l(287809),
-    c = l(652215),
-    u = l(339984),
+    u = l(652215),
+    c = l(339984),
     d = l(788868);
 
 function p() {
@@ -90,7 +90,7 @@ function h() {
     })
 }
 
-function b() {
+function x() {
     let e = n.useCallback(() => {
         (0, i.mMO)(async () => {
             let {
@@ -112,7 +112,7 @@ function b() {
     })
 }
 
-function x() {
+function b() {
     let [e] = n.useState("This is a sample long message that exceeds the character limit."), t = n.useCallback(() => {
         (0, i.mMO)(async () => {
             let {
@@ -213,10 +213,10 @@ let v = [{
 }, {
     id: "at_limit",
     label: "At Limit (100 guilds)",
-    value: c.qlD
+    value: u.qlD
 }];
 
-function _() {
+function E() {
     let [e, t] = n.useState(100), r = n.useCallback(() => {
         (0, i.mMO)(async () => {
             let {
@@ -250,31 +250,31 @@ function _() {
         })]
     })
 }
-let E = [{
+let _ = [{
     id: "avatar",
     label: "Avatar",
-    value: u.HL.AVATAR
+    value: c.HL.AVATAR
 }, {
     id: "banner",
     label: "Banner",
-    value: u.HL.BANNER
+    value: c.HL.BANNER
 }];
 
 function C() {
-    let [e, t] = n.useState(u.HL.AVATAR), c = (0, r.bG)([s.default], () => s.default.getCurrentUser()), d = n.useCallback(() => {
-        null != c && (0, i.mMO)(async () => {
+    let [e, t] = n.useState(c.HL.AVATAR), u = (0, r.bG)([s.default], () => s.default.getCurrentUser()), d = n.useCallback(() => {
+        null != u && (0, i.mMO)(async () => {
             let {
                 default: t
             } = await Promise.all([l.e("59701"), l.e("79149")]).then(l.bind(l, 688796));
             return l => (0, a.jsx)(t, {
-                user: c,
+                user: u,
                 uploadType: e,
                 analyticsSource: {},
                 analyticsLocation: {},
                 ...l
             })
         })
-    }, [c, e]);
+    }, [u, e]);
     return (0, a.jsxs)(o.LB, {
         children: [(0, a.jsx)(o.MG, {
             children: (0, a.jsx)(i.l6P, {
@@ -282,7 +282,7 @@ function C() {
                 placeholder: "Select type",
                 onSelectionChange: e => t(e),
                 value: e,
-                options: E,
+                options: _,
                 selectionMode: "single",
                 fullWidth: !0
             })
@@ -295,7 +295,7 @@ function C() {
     })
 }
 
-function S() {
+function j() {
     let e = (0, r.bG)([s.default], () => s.default.getCurrentUser()),
         t = n.useCallback(() => {
             null != e && (0, i.mMO)(async () => {
@@ -320,7 +320,7 @@ function S() {
     })
 }
 
-function j() {
+function S() {
     let e = n.useCallback(() => {
         (0, i.mMO)(async () => {
             let {

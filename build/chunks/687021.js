@@ -1,81 +1,82 @@
 /** chunk id: 687021 params = (module,exports,require) **/
-n.d(t, {
-    A: () => h
-}), n(667532);
-var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    a = n.n(l),
-    r = n(311907),
-    o = n(444550),
-    d = n(263063),
-    c = n(128450),
-    u = n(836602),
-    m = n(71393),
-    _ = n(711014),
-    g = n(403362),
-    x = n(985018),
-    A = n(263928);
+a.d(t, {
+    A: () => g,
+    v: () => h
+}), a(667532);
+var r = a(627968),
+    n = a(64700),
+    i = a(503698),
+    s = a.n(i),
+    l = a(311907),
+    d = a(444550),
+    o = a(263063),
+    c = a(128450),
+    u = a(836602),
+    _ = a(71393),
+    m = a(711014),
+    p = a(403362),
+    b = a(985018),
+    f = a(263928);
 
-function h(e) {
+function g(e) {
     let {
         guildId: t,
-        className: n,
-        globalOption: s,
-        hideDivider: l = !1,
-        onChange: r,
-        renderOptionSuffix: o
+        className: a,
+        globalOption: n,
+        hideDivider: i = !1,
+        onChange: l,
+        renderOptionSuffix: d
     } = e;
-    return (0, i.jsx)(c.A, {
-        className: a()(A.u, n),
-        title: x.intl.string(x.t.ref7Ki),
-        hideDivider: l,
+    return (0, r.jsx)(c.A, {
+        className: s()(f.u, a),
+        title: b.intl.string(b.t.ref7Ki),
+        hideDivider: i,
         forcedDivider: !0,
-        children: (0, i.jsx)(p, {
+        children: (0, r.jsx)(h, {
             guildId: t,
-            onChange: r,
-            renderOptionSuffix: o,
-            globalOption: s
+            onChange: l,
+            renderOptionSuffix: d,
+            globalOption: n
         })
     })
 }
 
-function p(e) {
+function h(e) {
     let {
         guildId: t,
-        globalOption: n,
-        onChange: l,
-        renderOptionSuffix: a
-    } = e, c = (0, r.bG)([u.A], () => u.A.showNotice()), h = (0, r.bG)([_.Ay], () => _.Ay.getFlattenedGuildIds()), p = (0, r.bG)([m.A], () => m.A.getGuilds()), f = s.useMemo(() => {
-        let e = h.map(e => {
-            let t = p[e];
+        globalOption: a,
+        onChange: i,
+        renderOptionSuffix: s
+    } = e, c = (0, l.bG)([u.A], () => u.A.showNotice()), g = (0, l.bG)([m.Ay], () => m.Ay.getFlattenedGuildIds()), h = (0, l.bG)([_.A], () => _.A.getGuilds()), A = n.useMemo(() => {
+        let e = g.map(e => {
+            let t = h[e];
             return null == t ? null : {
                 label: t.name,
                 value: t.id
             }
-        }).filter(g.Vq);
-        return null != n && e.unshift(n), e
-    }, [h, p, n]), T = s.useCallback(e => {
-        let t = e?.label === n?.label && e?.value === n?.value;
-        return null == e || "" === e.value || t ? null : (0, i.jsx)(d.Ay, {
-            className: A.c,
-            guild: p[e.value],
-            size: d.Ay.Sizes.SMOL,
+        }).filter(p.Vq);
+        return null != a && e.unshift(a), e
+    }, [g, h, a]), x = n.useCallback(e => {
+        let t = e?.label === a?.label && e?.value === a?.value;
+        return null == e || "" === e.value || t ? null : (0, r.jsx)(o.Ay, {
+            className: f.c,
+            guild: h[e.value],
+            size: o.Ay.Sizes.SMOL,
             active: !0
         })
-    }, [p, n]);
-    return (0, i.jsx)(o.p, {
+    }, [h, a]);
+    return (0, r.jsx)(d.p, {
         isDisabled: c,
         onChange: e => {
-            if ("" === e || e === n?.value) return void l(null);
-            let t = p[e];
-            null != t && l(t)
+            if ("" === e || e === a?.value) return void i(null);
+            let t = h[e];
+            null != t && i(t)
         },
         value: t,
-        options: f,
-        renderOptionPrefix: T,
-        renderOptionSuffix: a,
-        placeholder: x.intl.string(x.t["kMgj+e"]),
+        options: A,
+        renderOptionPrefix: x,
+        renderOptionSuffix: s,
+        placeholder: b.intl.string(b.t["kMgj+e"]),
         "data-migration-pending": !0
     })
 }

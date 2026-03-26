@@ -18,10 +18,10 @@ function s(e) {
         balancePillOverlay: s
     } = (0, n.cf)([i.A], () => ({
         balancePillOverlay: i.A.balancePillOverlay
-    })), c = (0, a.jsx)(o.Gy, {
+    })), u = (0, a.jsx)(o.Gy, {
         ref: t,
         ...l
-    }), u = (0, a.jsx)(o.Gy, {
+    }), c = (0, a.jsx)(o.Gy, {
         ...l,
         isInModalOverlay: !0,
         disabled: !0
@@ -29,7 +29,7 @@ function s(e) {
     return (0, a.jsx)(r.YNO, {
         fixed: !0,
         autoInvert: !1,
-        renderPopout: () => u,
+        renderPopout: () => c,
         position: "bottom",
         align: "right",
         shouldShow: s,
@@ -37,6 +37,6 @@ function s(e) {
         animation: r.YNO.Animation.NONE,
         targetElementRef: t,
         positionKey: `${l.balance}-${s}`,
-        children: () => c
+        children: () => u
     })
 }

@@ -1,6 +1,6 @@
 /** chunk id: 553081 params = (module,exports,require) **/
 n.d(t, {
-    A: () => U
+    A: () => k
 }), n(321073), n(323874), n(14289), n(35956);
 var i = n(627968),
     s = n(64700),
@@ -36,8 +36,8 @@ var i = n(627968),
     D = n(652215),
     G = n(985018),
     M = n(904286),
-    k = n(288894);
-let U = e => {
+    U = n(288894);
+let k = e => {
     let {
         userId: t
     } = e, n = (0, E.ds)(), l = (0, r.zy)();
@@ -49,7 +49,7 @@ let U = e => {
     }, [t]), s.useEffect(() => {
         Z(!0)
     }, []), (0, C.j)(), (0, x.P)(g.b);
-    let U = s.useRef(null),
+    let k = s.useRef(null),
         w = s.useRef(null),
         V = (0, o.bG)([T.A], () => T.A.getPremiumTypeSubscription()),
         {
@@ -84,7 +84,7 @@ let U = e => {
     } = (0, _.Ay)(m.A.PREMIUM_SUBSCRIBER_NITRO_HOME), [es, el] = s.useState(!1);
     return null != (0, o.bG)([p.A], () => null != t ? p.A.getUserProfile(t) : null) && (B || null != F) ? (0, i.jsxs)(c.GtU, {
         className: M.xW,
-        ref: U,
+        ref: k,
         children: [(0, i.jsx)(c.hLv, {
             color: "nitro-pink",
             className: a()(M.kL, M.Gd),
@@ -130,7 +130,7 @@ let U = e => {
                         className: M._Z
                     })
                 }), (0, i.jsx)("img", {
-                    src: k,
+                    src: U,
                     className: M.Kw,
                     width: 112,
                     height: 85,

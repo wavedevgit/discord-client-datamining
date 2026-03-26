@@ -8,20 +8,20 @@ var a = l(627968),
     i = l.n(r),
     o = l(732955),
     s = l(397927),
-    c = l(303136),
-    u = l(975571),
+    u = l(303136),
+    c = l(975571),
     d = l(318346),
     p = l(652215),
     m = l(985018),
     h = l(870722),
-    b = l(684083),
-    x = l(268920),
+    x = l(684083),
+    b = l(268920),
     y = l(633217);
 let f = () => (0, a.jsx)("div", {
         className: h.s,
-        children: (0, a.jsx)(c.A, {
+        children: (0, a.jsx)(u.A, {
             src: y.A,
-            fallbackImage: x.A,
+            fallbackImage: b.A,
             className: h.Cb
         })
     }),
@@ -30,8 +30,8 @@ let f = () => (0, a.jsx)("div", {
             ctaText: t,
             ctaOnClick: l,
             analyticsPage: r,
-            linkPreText: c = m.intl.string(m.t["5qZv9E"]),
-            linkText: x = m.intl.string(m.t.XRdyjz)
+            linkPreText: u = m.intl.string(m.t["5qZv9E"]),
+            linkText: b = m.intl.string(m.t.XRdyjz)
         } = e, y = n.useCallback(() => {
             null != r && (0, d.Y)({
                 pageType: r,
@@ -40,7 +40,7 @@ let f = () => (0, a.jsx)("div", {
             })
         }, [r]);
         return (0, a.jsxs)("div", {
-            className: i()(h.kL, b.O),
+            className: i()(h.kL, x.O),
             children: [(0, a.jsx)(f, {}), (0, a.jsx)(o.$nd, {
                 text: t,
                 variant: "primary",
@@ -49,17 +49,17 @@ let f = () => (0, a.jsx)("div", {
                 fullWidth: !0
             }), (0, a.jsxs)("div", {
                 className: h.kx,
-                children: [void 0 !== c && (0, a.jsxs)(s.Text, {
+                children: [void 0 !== u && (0, a.jsxs)(s.Text, {
                     variant: "text-xs/normal",
                     className: h.D5,
-                    children: [c, "\xa0"]
+                    children: [u, "\xa0"]
                 }), (0, a.jsx)(s.MzZ, {
                     target: "_blank",
                     rel: "author",
-                    href: u.A.getArticleURL(p.MVz.ORBS_FAQ),
+                    href: c.A.getArticleURL(p.MVz.ORBS_FAQ),
                     className: h.CU,
                     onClick: y,
-                    children: x
+                    children: b
                 })]
             })]
         })

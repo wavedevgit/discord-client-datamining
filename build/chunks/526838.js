@@ -1,6 +1,6 @@
 /** chunk id: 526838 params = (module,exports,require) **/
 l.d(t, {
-    Z: () => u
+    Z: () => c
 });
 var a = l(627968);
 l(64700);
@@ -9,11 +9,11 @@ var n = l(397927),
     i = l(23003),
     o = l(576765),
     s = l(88433);
-let c = {
+let u = {
         none: void 0,
         nitroWheel: n.tvc
     },
-    u = {
+    c = {
         title: "Marketing Home",
         stories: [{
             name: "Bento Box",
@@ -21,36 +21,36 @@ let c = {
                 let {
                     title: t,
                     description: l,
-                    ctaMode: u,
+                    ctaMode: c,
                     descriptionCtaText: d,
                     action1Text: p,
                     action1Variant: m,
                     action2Text: h,
-                    action2Variant: b,
-                    icon: x,
+                    action2Variant: x,
+                    icon: b,
                     iconPosition: y,
                     index: f,
                     size: g,
                     badgeText: v,
-                    badgeVariant: _,
-                    isReducedMotion: E,
+                    badgeVariant: E,
+                    isReducedMotion: _,
                     previewImageStyle: C
-                } = e, S = () => (0, n.showToast)((0, n.createToast)("CTA clicked!", n.ToastType.SUCCESS)), j = c[x], T = "descriptionCta" === u ? {
+                } = e, j = () => (0, n.showToast)((0, n.createToast)("CTA clicked!", n.ToastType.SUCCESS)), S = u[b], T = "descriptionCta" === c ? {
                     descriptionCta: d,
-                    onClick: S
-                } : "actions" === u ? {
+                    onClick: j
+                } : "actions" === c ? {
                     actions: [{
                         text: p,
                         variant: m,
-                        onClick: S,
-                        ...null != j ? {
-                            icon: j,
+                        onClick: j,
+                        ...null != S ? {
+                            icon: S,
                             iconPosition: y
                         } : {}
                     }, ...h.length > 0 ? [{
                         text: h,
-                        variant: b,
-                        onClick: S
+                        variant: x,
+                        onClick: j
                     }] : []]
                 } : {};
                 return (0, a.jsx)("div", {
@@ -64,8 +64,8 @@ let c = {
                         index: f,
                         size: g,
                         badgeText: v.length > 0 ? v : void 0,
-                        badgeVariant: _,
-                        isReducedMotion: E,
+                        badgeVariant: E,
+                        isReducedMotion: _,
                         previewImageStyle: C,
                         ...T
                     })

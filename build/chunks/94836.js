@@ -275,6 +275,7 @@ function E(e) {
             })
         }), (0, a.jsx)(u.A, {
             gap: "xs",
+            iconButtonSize: "sm",
             children: E.map((e, n) => (0, a.jsx)(I, {
                 item: e,
                 index: n,
