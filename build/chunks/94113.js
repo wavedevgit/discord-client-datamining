@@ -1,28 +1,28 @@
 /** chunk id: 94113 params = (module,exports,require) **/
 s.d(t, {
-    A: () => d
+    A: () => u
 });
-var n = s(311907),
-    i = s(73153),
-    l = s(522435);
+var l = s(311907),
+    n = s(73153),
+    r = s(522435);
 s(131955);
-let r = {
+let i = {
         recentImageUrls: []
     },
-    a = r;
+    a = i;
 
 function c(e) {
-    let t = (0, l.K7)(e),
+    let t = (0, r.K7)(e),
         s = a.recentImageUrls.filter(e => e !== t);
     return a = {
         recentImageUrls: [t, ...s].slice(0, 9)
     }, !0
 }
-class o extends n.Ay.PersistedStore {
+class o extends l.Ay.PersistedStore {
     static displayName = "HangoutWindowHistoryStore";
     static persistKey = "HangoutWindowHistoryStore";
     initialize(e) {
-        a = e ?? r
+        a = e ?? i
     }
     getState() {
         return a
@@ -31,12 +31,12 @@ class o extends n.Ay.PersistedStore {
         return a.recentImageUrls
     }
 }
-let d = new o(i.h, {
+let u = new o(n.h, {
     VOICE_CHANNEL_STATUS_UPDATE: function(e) {
         let {
             status: t
         } = e;
-        return !!(null != t && (0, l.TP)(t)) && c(t)
+        return !!(null != t && (0, r.TP)(t)) && c(t)
     },
     HANGOUT_WINDOW_IMAGE_SELECTED: function(e) {
         let {
@@ -45,6 +45,6 @@ let d = new o(i.h, {
         return c(t)
     },
     LOGOUT: function() {
-        return a = r, !0
+        return a = i, !0
     }
 })

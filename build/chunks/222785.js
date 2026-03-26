@@ -195,7 +195,7 @@ let X = l.memo(function(e) {
                     icon: s._Jp
                 },
                 action: () => {
-                    (0, v.K)({
+                    (0, v.K4)({
                         guildId: i.id,
                         location: {
                             section: P.JJy.GUILD_HEADER_POPOUT

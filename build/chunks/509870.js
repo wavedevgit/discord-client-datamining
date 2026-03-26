@@ -3,8 +3,8 @@ s.d(t, {
     A: () => d
 });
 var i = s(284009),
-    a = s.n(i),
-    r = s(311907),
+    r = s.n(i),
+    a = s(311907),
     l = s(851746),
     n = s(492195),
     C = s(985018);
@@ -12,8 +12,8 @@ let d = e => {
     let {
         numNewSelected: t,
         anySelected: s
-    } = e, i = (0, r.bG)([l.A], () => l.A.getReferralsRemaining());
-    a()(null != i, "Referrals remaining should not be null");
+    } = e, i = (0, a.bG)([l.A], () => l.A.getReferralsRemaining());
+    r()(null != i, "Referrals remaining should not be null");
     let d = i - t;
     return (0, n.dF)({
         location: "useReferralProgramSubheaderText"

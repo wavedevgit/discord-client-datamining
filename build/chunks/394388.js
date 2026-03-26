@@ -87,7 +87,7 @@ function S(e) {
                 tag: "a",
                 role: "link",
                 onClick: () => {
-                    n ? (0, E.A)(t.id, d.A.GUILD_BOOSTING_FIRST_TIME_BOOSTER_UPSELL) : (0, _.K)({
+                    n ? (0, E.A)(t.id, d.A.GUILD_BOOSTING_FIRST_TIME_BOOSTER_UPSELL) : (0, _.K4)({
                         guildId: t.id,
                         location: {
                             section: f.JJy.CHANNEL_TEXT_AREA,

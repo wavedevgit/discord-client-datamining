@@ -57,7 +57,7 @@ let N = {
                 }), (0, i.jsx)(l.Button, {
                     variant: "overlay-primary",
                     text: f.intl.string(f.t.hvVgAZ),
-                    onClick: () => (0, o.K)({
+                    onClick: () => (0, o.K4)({
                         guildId: t.id,
                         location: {
                             section: A.JJy.GUILD_SETTINGS_STICKERS

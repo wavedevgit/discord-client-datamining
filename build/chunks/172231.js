@@ -55,7 +55,7 @@ function E(t) {
         text: I.intl.string(I.t.Uj0md3),
         variant: "expressive",
         onClick: () => {
-            T(), (0, r.K)({
+            T(), (0, r.K4)({
                 guildId: e.guild_id,
                 location: {
                     section: o.JJy.STAGE_VIDEO_LIMIT

@@ -158,7 +158,7 @@ function y(e) {
         tag: "a",
         role: "link",
         onClick: () => {
-            null != t && (i ? (0, f.A)(t.id, _.A.GUILD_BOOSTING_SYSTEM_MESSAGE) : (0, m.K)({
+            null != t && (i ? (0, f.A)(t.id, _.A.GUILD_BOOSTING_SYSTEM_MESSAGE) : (0, m.K4)({
                 guildId: t.id,
                 location: {
                     section: h.JJy.CHANNEL_TEXT_AREA,

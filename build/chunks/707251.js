@@ -182,7 +182,7 @@ function U(e) {
                     }), (0, i.jsx)(c.Button, {
                         variant: "expressive",
                         onClick: () => {
-                            (0, g.K)({
+                            (0, g.K4)({
                                 guildId: t.guild_id,
                                 location: {
                                     section: O.JJy.STAGE_VIDEO_LIMIT

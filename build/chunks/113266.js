@@ -92,7 +92,7 @@ function V(e) {
             children: (0, i.jsx)(g.DUT, {
                 className: w.c7,
                 onClick: () => {
-                    (0, f.K)({
+                    (0, f.K4)({
                         guildId: s,
                         location: {
                             section: k.JJy.GUILD_SETTINGS_SOUNDBOARD,

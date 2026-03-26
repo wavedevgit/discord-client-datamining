@@ -1,6 +1,6 @@
 /** chunk id: 492195 params = (module,exports,require) **/
 s.d(t, {
-    dF: () => a
+    dF: () => r
 });
 let i = (0, s(945810).mj)({
     name: "2026-02-mobile-referral-program-xp-2",
@@ -15,7 +15,7 @@ let i = (0, s(945810).mj)({
     }
 });
 
-function a(e) {
+function r(e) {
     let {
         location: t
     } = e;

@@ -53,7 +53,7 @@ let T = e => {
         S = _ ? () => {
             (0, h.pX)(C.BVt.CHANNEL(n.id, N.VV.ROLE_SUBSCRIPTIONS))
         } : () => {
-            (0, c.K)({
+            (0, c.K4)({
                 guildId: n.id,
                 location: {
                     section: C.JJy.ROLE_ICON_POPOUT

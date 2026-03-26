@@ -95,7 +95,7 @@ function eU(e) {
     } = t, {
         guild_id: o
     } = n, c = t.getChannelId(), d = (0, l.bG)([G.A], () => G.A.getGuild(o), [o]), u = a.useCallback(() => {
-        null != d && (0, E.K)({
+        null != d && (0, E.K4)({
             guildId: d.id,
             location: {
                 section: eM.JJy.CHANNEL_TEXT_AREA,

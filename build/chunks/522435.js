@@ -4,7 +4,7 @@ n.d(t, {
     LG: () => a,
     TP: () => s
 });
-let i = /(?:^|\/{2}|\.)(tenor\.com|tenor\.co|giphy\.com|cdn\.discordapp\.com|klipy\.com)(?:\/|$)/;
+let i = /(?:^|\/{2}|\.)(tenor\.com|tenor\.co|giphy\.com|cdn\.discordapp\.com|media\.discordapp\.net|klipy\.com)(?:\/|$)/;
 
 function s(e) {
     return null != e && 0 !== e.length && i.test(e)

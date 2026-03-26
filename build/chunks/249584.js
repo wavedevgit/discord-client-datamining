@@ -341,7 +341,7 @@ function Q(e) {
             text: P.intl.string(G.default.k0Y0BE),
             variant: "primary",
             onClick: () => {
-                n(D.i.TAKE_ACTION), (0, _.K)({
+                n(D.i.TAKE_ACTION), (0, _.K4)({
                     guildId: t,
                     location: {
                         section: L.JJy.GUILD_HEADER,
@@ -380,7 +380,7 @@ function $(e) {
             text: P.intl.string(G.default.k0Y0BE),
             variant: "primary",
             onClick: () => {
-                n(D.i.TAKE_ACTION), r ? (0, S.A)(t, A.A.GUILD_POWERUPS_COACHMARK_GAME_SERVER_NEW_GAMES, R.W5) : (0, _.K)({
+                n(D.i.TAKE_ACTION), r ? (0, S.A)(t, A.A.GUILD_POWERUPS_COACHMARK_GAME_SERVER_NEW_GAMES, R.W5) : (0, _.K4)({
                     guildId: t,
                     location: {
                         section: L.JJy.GUILD_HEADER,
@@ -417,7 +417,7 @@ function Z(e) {
             text: P.intl.string(P.t.RzWDqY),
             variant: "primary",
             onClick: () => {
-                a ? (0, S.A)(t, A.A.GUILD_POWERUPS_COACHMARK_GAME_SERVER_PRICING_CHANGE, R.W5) : (n(D.i.TAKE_ACTION), (0, _.K)({
+                a ? (0, S.A)(t, A.A.GUILD_POWERUPS_COACHMARK_GAME_SERVER_PRICING_CHANGE, R.W5) : (n(D.i.TAKE_ACTION), (0, _.K4)({
                     guildId: t,
                     location: {
                         section: L.JJy.GUILD_HEADER,

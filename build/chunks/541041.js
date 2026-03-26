@@ -17,7 +17,7 @@ class h extends a.PureComponent {
         let {
             guild: e
         } = this.props;
-        (0, s.K)({
+        (0, s.K4)({
             guildId: e.id,
             location: {
                 section: d.JJy.CHANNEL_NOTICE,

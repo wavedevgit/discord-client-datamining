@@ -9,12 +9,12 @@ var i = n(311907),
 let a = {},
     d = a;
 
-function h() {
+function o() {
     r.default.keys(d).forEach(e => {
         null == l.A.getChannel(e) && delete d[e]
     })
 }
-class o extends i.Ay.PersistedStore {
+class h extends i.Ay.PersistedStore {
     static displayName = "CollapsedVoiceChannelStore";
     static persistKey = "collapsedChannels";
     initialize(e) {
@@ -30,9 +30,9 @@ class o extends i.Ay.PersistedStore {
         return d[e] || !1
     }
 }
-let u = new o(s.h, {
-    CONNECTION_OPEN: h,
-    OVERLAY_INITIALIZE: h,
+let u = new h(s.h, {
+    CONNECTION_OPEN: o,
+    OVERLAY_INITIALIZE: o,
     CHANNEL_COLLAPSE: function(e) {
         let {
             channelId: t

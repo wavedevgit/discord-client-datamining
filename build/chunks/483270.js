@@ -76,7 +76,7 @@ let W = k.Ay.getEnableHardwareAcceleration(),
                 rawText: n
             }), _.A.startTyping(t.id)
         }, [g, t]), Y = s.useCallback(e => {
-            e.stopPropagation(), (0, C.K)({
+            e.stopPropagation(), (0, C.K4)({
                 guildId: t.guild_id,
                 location: {
                     section: B.JJy.THREAD_MEMBER_LIST,

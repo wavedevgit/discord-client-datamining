@@ -60,7 +60,7 @@ function L(e) {
                 variant: "text-sm/medium",
                 children: S.intl.format(k ? I.default["7fWTg4"] : I.default["7PXeeQ"], {
                     onClick: () => {
-                        (0, m.K)({
+                        (0, m.K4)({
                             guildId: t,
                             location: {
                                 section: b.JJy.GUILD_POWERUPS_OVERVIEW_SIDEBAR,

@@ -8,8 +8,8 @@ var i = n(311907),
     l = n(940382),
     a = n(617617),
     d = n(961350),
-    h = n(734057),
-    o = n(808728),
+    o = n(734057),
+    h = n(808728),
     u = n(696451),
     c = n(71393),
     g = n(222823),
@@ -23,7 +23,7 @@ let p = new Set,
 
 function f(e, t) {
     let n = E[e];
-    null != n && null != t && n.has(t) && C.Ay.isOptInEnabled(e) && !h.A.getChannel(t)?.isThread() && null == g.Ay.ackMessageId(t) && s.h.wait(() => (0, r.ack)(t, {
+    null != n && null != t && n.has(t) && C.Ay.isOptInEnabled(e) && !o.A.getChannel(t)?.isThread() && null == g.Ay.ackMessageId(t) && s.h.wait(() => (0, r.ack)(t, {
         object: _.ZSU.ACK_RECENT_CHANNEL_NEW_CHANNEL_VIEWED,
         objectType: _.AnalyticsObjectTypes.ACK_AUTOMATIC
     }, !0, !0, I.default.atPreviousMillisecond(t)))
@@ -31,7 +31,7 @@ function f(e, t) {
 
 function y(e) {
     if (null != E[e]) return;
-    let t = o.Ay.getChannels(e)[o.I6].map(e => e.channel.id),
+    let t = h.Ay.getChannels(e)[h.I6].map(e => e.channel.id),
         n = u.Ay.getMember(e, d.default.getId())?.joinedAt;
     if (null == n) return;
     E[e] = new Set;
@@ -51,7 +51,7 @@ function v() {
 class L extends i.Ay.Store {
     static displayName = "NewChannelsStore";
     initialize() {
-        this.waitFor(d.default, h.A, o.Ay, u.Ay, c.A, g.Ay, C.Ay, a.A), this.syncWith([C.Ay], v)
+        this.waitFor(d.default, o.A, h.Ay, u.Ay, c.A, g.Ay, C.Ay, a.A), this.syncWith([C.Ay], v)
     }
     getNewChannelIds(e) {
         return null != e && null == E[e] && y(e), null != e ? E[e] ?? p : p
