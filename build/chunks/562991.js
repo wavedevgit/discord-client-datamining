@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(3026),
     c = n(397927),
     d = n(532622),
@@ -29,7 +29,7 @@ function E(e) {
         subtitle: E,
         onClick: C,
         showEmptyChannelTopic: I
-    } = e, N = (0, r.bG)([u.A], () => u.A.getChannelStatus(t)), {
+    } = e, N = (0, a.bG)([u.A], () => u.A.getChannelStatus(t)), {
         enableHangoutWindow: b
     } = (0, h.Dm)({
         guildId: t.guild_id,
@@ -41,13 +41,13 @@ function E(e) {
                 guild_id: t.guild_id
             })
         }, [T, t.id, t.guild_id]), null == t.guild_id) return null;
-    let j = a()(f.Ui, n && v ? f.BI : null);
+    let j = r()(f.Ui, n && v ? f.BI : null);
     return T ? (0, i.jsx)(c.DUT, {
         className: j,
         onClick: v ? C : void 0,
         children: (0, i.jsx)(c.Text, {
             variant: "text-xs/medium",
-            className: a()(f.qS, x.PT),
+            className: r()(f.qS, x.PT),
             children: (0, i.jsx)(o.A, {
                 children: m.A.parseVoiceChannelStatus(N, !0, {
                     channelId: t.id

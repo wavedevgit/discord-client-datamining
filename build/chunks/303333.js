@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(990078),
     c = n(397927),
     d = n(309698),
@@ -27,7 +27,7 @@ function C(e) {
         channel: t,
         imageUrl: n,
         isConnected: l
-    } = e, r = (0, h.S)(n), d = s.useCallback(() => {
+    } = e, a = (0, h.S)(n), d = s.useCallback(() => {
         (0, g.A)({
             channel: t
         })
@@ -39,8 +39,8 @@ function C(e) {
             connected: !1,
             needSubscriptionToAccess: !1
         })
-    }, [t]), C = null != r ? {
-        backgroundColor: r
+    }, [t]), C = null != a ? {
+        backgroundColor: a
     } : void 0;
     return (0, i.jsxs)("div", {
         className: E.rs,
@@ -52,7 +52,7 @@ function C(e) {
                 className: E.Sl
             })
         }) : (0, i.jsx)(c.DUT, {
-            className: a()(E.ZS, E.jI),
+            className: r()(E.ZS, E.jI),
             style: C,
             onClick: _,
             children: (0, i.jsx)(p.A, {
@@ -120,8 +120,8 @@ function N(e) {
     } = (0, m.Dm)({
         guildId: t.guild_id,
         location: "HangoutWindow"
-    }), a = (0, r.bG)([d.A], () => d.A.getChannelStatus(t), [t]), o = s.useMemo(() => (0, _.TP)(a), [a]), c = s.useMemo(() => null == a ? null : (0, _.K7)(a), [a]);
-    return l ? null != a && o && null != c ? (0, i.jsx)(C, {
+    }), r = (0, a.bG)([d.A], () => d.A.getChannelStatus(t), [t]), o = s.useMemo(() => (0, _.TP)(r), [r]), c = s.useMemo(() => null == r ? null : (0, _.K7)(r), [r]);
+    return l ? null != r && o && null != c ? (0, i.jsx)(C, {
         channel: t,
         imageUrl: c,
         isConnected: n

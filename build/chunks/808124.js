@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(397927),
     c = n(517461),
     d = n(770178),
@@ -28,7 +28,7 @@ let N = e => {
             channel: t,
             idle: n,
             className: l,
-            participants: r
+            participants: a
         } = e, h = (0, m.A)(t.id), [A, N] = s.useState(!1), b = s.useCallback(e => {
             u.Ay.update(t.id, {
                 seat: e
@@ -52,12 +52,12 @@ let N = e => {
             let {
                 contentRect: t,
                 target: n
-            } = e, i = n.getBoundingClientRect(), s = t.width, l = t.height, a = s / _.i.width * 1.5, r = l / _.i.height * 1.5, o = s / _.i.width * 1.1, c = l / _.i.height * 1.1;
+            } = e, i = n.getBoundingClientRect(), s = t.width, l = t.height, r = s / _.i.width * 1.5, a = l / _.i.height * 1.5, o = s / _.i.width * 1.1, c = l / _.i.height * 1.1;
             V({
                 x: s / 2 + i.x,
                 y: l / 2 + i.y
             });
-            let d = Math.max(a, r);
+            let d = Math.max(r, a);
             if (y(Math.max(o, c)), L(d), null != W.current) {
                 let e = W.current.getBoundingClientRect();
                 z({
@@ -75,11 +75,11 @@ let N = e => {
                 },
                 s = !0,
                 l = 0,
-                a = n.height / t;
-            for (; s && l < 10;)(s = i.y + a / 2 > 1536) && (i.y -= 32), l++;
-            let r = i.x * t,
+                r = n.height / t;
+            for (; s && l < 10;)(s = i.y + r / 2 > 1536) && (i.y -= 32), l++;
+            let a = i.x * t,
                 o = i.y * t,
-                c = n.width / 2 - r,
+                c = n.width / 2 - a,
                 d = n.height / 2 - o;
             R(t), D({
                 x: c,
@@ -99,15 +99,15 @@ let N = e => {
                     y: e.y / j
                 },
                 l = e.y / j > 0,
-                a = e.x / j > 0,
-                r = s.y - n < -1536,
+                r = e.x / j > 0,
+                a = s.y - n < -1536,
                 o = s.x - i < -2180;
-            r || l || a || o || D(e)
+            a || l || r || o || D(e)
         }, [q, j]);
         return (0, i.jsx)(o.vN3, {
             children: (0, i.jsxs)("div", {
                 ref: q,
-                className: a()(I.km, l),
+                className: r()(I.km, l),
                 onClick: () => {
                     w(0)
                 },
@@ -145,16 +145,16 @@ let N = e => {
                     children: (0, i.jsx)(_.A, {
                         roomSeats: h.seats,
                         roomParticipants: h.participants,
-                        participants: r,
+                        participants: a,
                         channel: t,
                         idle: n,
                         skipNewUserEducation: !A,
                         onSeatClick: b
                     })
                 }), (0, i.jsxs)("div", {
-                    className: a()(I.nM, I.vf),
+                    className: r()(I.nM, I.vf),
                     children: [(0, i.jsxs)("div", {
-                        className: a()(I.nM, {
+                        className: r()(I.nM, {
                             [I.R]: n
                         }),
                         children: [(0, i.jsx)("div", {
@@ -182,7 +182,7 @@ let N = e => {
                         idle: n,
                         showChat: S ?? !1
                     }), (0, i.jsxs)("div", {
-                        className: a()(I.nM, {
+                        className: r()(I.nM, {
                             [I.R]: n
                         }),
                         children: [(0, i.jsx)(o.K0, {
@@ -205,7 +205,7 @@ let N = e => {
                     })]
                 }), (0, i.jsx)(x.A, {
                     channel: t,
-                    participants: r
+                    participants: a
                 }), (0, i.jsx)(f.A, {
                     open: F,
                     close: () => K(!1),
@@ -215,7 +215,7 @@ let N = e => {
                         top: Y.y
                     } : void 0
                 }), (0, i.jsx)(g.A, {}), (0, i.jsx)("div", {
-                    className: a()(I.Lw, {
+                    className: r()(I.Lw, {
                         [I.FD]: A
                     }),
                     children: (0, i.jsx)("div", {
@@ -233,7 +233,7 @@ let N = e => {
         let t = h.s.useConfig({
                 location: "Haven"
             }).enabled,
-            n = (0, r.bG)([A.A], () => A.A.isUserConnected(e.channel.id));
+            n = (0, a.bG)([A.A], () => A.A.isUserConnected(e.channel.id));
         return (s.useEffect(() => {
             !t || n || u.Ay.connect(e.channel.id)
         }, [e.channel.id, n, t]), t) ? (0, i.jsx)(N, {

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    a = n(827734),
-    r = n(397927),
+    r = n(827734),
+    a = n(397927),
     o = n(858177),
     c = n(47167),
     d = n(475889),
@@ -29,8 +29,8 @@ function N(e) {
         event: t,
         guildId: n,
         channelId: s
-    } = e, a = (0, l.bG)([g.default], () => g.default.getUser(t.userId)), c = (0, o.O)(t.applicationId ?? null), d = x.Ay.useName(n, s, a);
-    return null == a ? null : (0, i.jsxs)("li", {
+    } = e, r = (0, l.bG)([g.default], () => g.default.getUser(t.userId)), c = (0, o.O)(t.applicationId ?? null), d = x.Ay.useName(n, s, r);
+    return null == r ? null : (0, i.jsxs)("li", {
         className: I.NG,
         children: [(0, i.jsx)("div", {
             className: I.Wz
@@ -43,14 +43,14 @@ function N(e) {
             })
         }), (0, i.jsxs)("div", {
             className: I.Kw,
-            children: [(0, i.jsx)(r.Text, {
+            children: [(0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
                 className: I.rN,
                 children: C.intl.format(C.t.CKIMrx, {
                     user: d,
                     activityName: c?.name ?? C.intl.string(C.t.GIWFlF)
                 })
-            }), (0, i.jsx)(r.Text, {
+            }), (0, i.jsx)(a.Text, {
                 variant: "text-xs/normal",
                 color: "text-muted",
                 className: I.gE,
@@ -68,37 +68,37 @@ function b(e) {
         event: t,
         guildId: n,
         channelId: s
-    } = e, a = (0, l.bG)([g.default], () => g.default.getUser(t.userId)), o = x.Ay.useName(n, s, a);
-    return null == a ? null : (0, i.jsxs)("li", {
+    } = e, r = (0, l.bG)([g.default], () => g.default.getUser(t.userId)), o = x.Ay.useName(n, s, r);
+    return null == r ? null : (0, i.jsxs)("li", {
         className: I.NG,
         children: [(0, i.jsx)("div", {
             className: I.Wz
         }), (0, i.jsx)("div", {
             className: I.xW,
-            children: (0, i.jsx)(r.euF, {
-                src: a.getAvatarURL(n, 20),
-                size: r._3J.SIZE_20,
+            children: (0, i.jsx)(a.euF, {
+                src: r.getAvatarURL(n, 20),
+                size: a._3J.SIZE_20,
                 "aria-hidden": !0
             })
         }), (0, i.jsxs)("div", {
             className: I.Kw,
-            children: [(0, i.jsx)(r.Text, {
+            children: [(0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
                 className: I.qJ,
                 children: C.intl.format(C.t.TlVwqn, {
                     user: o,
-                    userHook: (e, t) => (0, i.jsx)(r.Text, {
+                    userHook: (e, t) => (0, i.jsx)(a.Text, {
                         variant: "text-sm/semibold",
                         className: I.C3,
                         children: e
                     }, t),
-                    labelHook: (e, t) => (0, i.jsx)(r.Text, {
+                    labelHook: (e, t) => (0, i.jsx)(a.Text, {
                         variant: "text-sm/normal",
                         className: I.CS,
                         children: e
                     }, t)
                 })
-            }), (0, i.jsx)(r.Text, {
+            }), (0, i.jsx)(a.Text, {
                 variant: "text-xs/normal",
                 color: "text-muted",
                 className: I.gE,
@@ -134,12 +134,12 @@ function T(e) {
     } = e, n = (0, d.H)(t), s = (0, c.Ay)(t);
     return (0, i.jsxs)("div", {
         className: I.hY,
-        children: [(0, i.jsx)(r.HKD, {
+        children: [(0, i.jsx)(a.HKD, {
             size: "custom",
-            color: a.A.colors.ICON_FEEDBACK_POSITIVE,
+            color: r.A.colors.ICON_FEEDBACK_POSITIVE,
             height: 20,
             width: 20
-        }), (0, i.jsx)(r.Text, {
+        }), (0, i.jsx)(a.Text, {
             variant: "text-md/medium",
             className: I.HA,
             children: s
@@ -156,7 +156,7 @@ function v(e) {
     let {
         channel: t,
         source: n,
-        onMouseEnter: a,
+        onMouseEnter: r,
         onMouseLeave: o
     } = e;
     s.useEffect(() => {
@@ -174,16 +174,16 @@ function v(e) {
         role: "dialog",
         "aria-label": C.intl.string(C.t.N0ED9s),
         className: I.kL,
-        onMouseEnter: a,
+        onMouseEnter: r,
         onMouseLeave: o,
         children: [(0, i.jsx)(T, {
             channel: t
-        }), (0, i.jsx)(r.HOs, {
+        }), (0, i.jsx)(a.HOs, {
             children: (0, i.jsxs)("div", {
                 className: I.PI,
                 children: [(0, i.jsx)("div", {
                     className: I.s8,
-                    children: (0, i.jsx)(r.Text, {
+                    children: (0, i.jsx)(a.Text, {
                         variant: "text-sm/medium",
                         color: "text-muted",
                         children: C.intl.string(C.t.N0ED9s)

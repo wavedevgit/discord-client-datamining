@@ -74,16 +74,16 @@ let F = a.memo(function(e) {
             currentEmbeddedActivity: _.Ay.getCurrentEmbeddedActivity(),
             activityLaunchState: _.Ay.getLaunchState(n.id, F ?? void 0)
         }), [F, n.id]),
-        Y = V?.userIds,
-        z = (0, s.yK)([N.default], () => Array.from(Y ?? []).map(e => N.default.getUser(e)).filter(P.Vq), [Y]),
+        z = V?.userIds,
+        Y = (0, s.yK)([N.default], () => Array.from(z ?? []).map(e => N.default.getUser(e)).filter(P.Vq), [z]),
         Q = (0, s.bG)([S.A], () => {
-            if (null == Y) return null;
-            for (let e of Y) {
+            if (null == z) return null;
+            for (let e of z) {
                 let t = S.A.findActivity(e, e => e.application_id === n.id);
                 if (null != t) return t
             }
             return null
-        }, [n.id, Y]),
+        }, [n.id, z]),
         K = Q?.details,
         J = a.useMemo(() => {
             let e = new v.Ay(n);
@@ -137,7 +137,7 @@ let F = a.memo(function(e) {
             bot: n.bot
         });
     $.disabled && (t = $.tooltip);
-    let el = z.length,
+    let el = Y.length,
         es = Q?.timestamps?.start ?? Q?.created_at,
         eo = (0, C.y)({
             activity: Q,
@@ -194,7 +194,7 @@ let F = a.memo(function(e) {
                         })]
                     })]
                 }), el > 0 && (0, i.jsx)(C.$, {
-                    activityUsers: z,
+                    activityUsers: Y,
                     guildId: o,
                     activityText: eo.text
                 })]

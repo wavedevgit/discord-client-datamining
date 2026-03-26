@@ -6,9 +6,9 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(735438),
-    o = n.n(r),
+    r = n.n(l),
+    a = n(735438),
+    o = n.n(a),
     c = n(837381),
     d = n(311907),
     u = n(397927),
@@ -44,7 +44,7 @@ function O(e) {
     return (0, i.jsx)(u.DUT, {
         "aria-expanded": n,
         onClick: s,
-        className: a()(j.TP, {
+        className: r()(j.TP, {
             [j.yZ]: !n
         }),
         children: (0, i.jsxs)(u.BJc, {
@@ -55,7 +55,7 @@ function O(e) {
                 variant: "text-sm/medium",
                 color: "text-subtle",
                 className: j.P7,
-                children: (0, r.capitalize)(y.intl.string(S.v7[t]).toLowerCase())
+                children: (0, a.capitalize)(y.intl.string(S.v7[t]).toLowerCase())
             }), (0, i.jsx)(u.abt, {
                 size: "xxs",
                 className: j.ai
@@ -103,7 +103,7 @@ function D(e) {
     let t, {
             messages: n,
             unreadMessages: l,
-            loadMore: r,
+            loadMore: a,
             renderLoadingState: A,
             renderMessageGroup: m,
             scrollerClassName: v,
@@ -162,8 +162,8 @@ function D(e) {
             let e = P.current?.getScrollerState();
             if (null == e) return;
             let t = .5 * e.offsetHeight;
-            e.scrollHeight - (e.scrollTop + e.offsetHeight) <= t && r?.(S.VA.USER_SCROLL)
-        }, [r]),
+            e.scrollHeight - (e.scrollTop + e.offsetHeight) <= t && a?.(S.VA.USER_SCROLL)
+        }, [a]),
         X = s.useMemo(() => {
             let e = {
                     [S.Ur.UNREAD]: [],
@@ -219,17 +219,17 @@ function D(e) {
     s.useEffect(() => {
         Q || et(0 === X.UNREAD.length)
     }, [X, Q, et]);
-    let en = (n.length > 0 || l.length > 0) && null != r && B;
+    let en = (n.length > 0 || l.length > 0) && null != a && B;
     ! function(e) {
         let {
             loadingInitial: t,
             messagesByCategory: n
         } = e, i = s.useRef(!1), l = n.UNREAD.length > 0, {
-            setOpenStateFromUnreads: a
+            setOpenStateFromUnreads: r
         } = (0, E.A)();
         s.useEffect(() => {
-            t || i.current || (a(l), i.current = !0)
-        }, [a, l, t])
+            t || i.current || (r(l), i.current = !0)
+        }, [r, l, t])
     }({
         messagesByCategory: X,
         loadingInitial: K
@@ -240,8 +240,8 @@ function D(e) {
         return null == t ? 0 : Math.max(0, Math.ceil(t.offsetHeight / 64) - e)
     }, [W, X]);
     s.useEffect(() => {
-        Q || B || 0 >= ei() || (!ee || z) && r?.(S.VA.FILL_SCROLLER)
-    }, [ei, r, Q, B, ee, z]);
+        Q || B || 0 >= ei() || (!ee || z) && a?.(S.VA.FILL_SCROLLER)
+    }, [ei, a, Q, B, ee, z]);
     let es = s.useMemo(() => {
         let e = Math.min(Math.max(2, ei()), 20);
         return (0, i.jsx)(b.A, {
@@ -257,7 +257,7 @@ function D(e) {
         messagesByCategory: X,
         viewId: U
     }), (0, i.jsx)("div", {
-        className: a()(y, j.KQ),
+        className: r()(y, j.KQ),
         onClick: R,
         onDoubleClick: R,
         "aria-label": e["aria-label"],
@@ -273,7 +273,7 @@ function D(e) {
                         ref: e => {
                             P.current = e, t.current = e?.getScrollerNode() ?? null
                         },
-                        className: a()(j.m4, v),
+                        className: r()(j.m4, v),
                         onScroll: q,
                         fade: !0,
                         ...n,

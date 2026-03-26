@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(64700),
     s = n(735438),
     l = n.n(s),
-    a = n(311907),
-    r = n(568598),
+    r = n(311907),
+    a = n(568598),
     o = n(313961),
     c = n(501838),
     d = n(806931);
@@ -15,9 +15,9 @@ var i = n(64700),
 function u(e) {
     let {
         channelId: t
-    } = e, [n] = (0, a.bG)([o.A], () => null != t ? [o.A.getParticipants(t), o.A.getParticipantsVersion(t)] : [
+    } = e, [n] = (0, r.bG)([o.A], () => null != t ? [o.A.getParticipants(t), o.A.getParticipantsVersion(t)] : [
         [], 0
-    ], [t], r.hS), s = i.useMemo(() => l().uniq(n.filter(e => (0, d.Xw)(e) || (0, d.Ay)(e)).map(e => e.user.id)), [n]), u = (0, c.gT)({
+    ], [t], a.hS), s = i.useMemo(() => l().uniq(n.filter(e => (0, d.Xw)(e) || (0, d.Ay)(e)).map(e => e.user.id)), [n]), u = (0, c.gT)({
         userIds: s
     });
     return (0, c.hJ)() || u

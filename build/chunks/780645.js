@@ -1,13 +1,13 @@
 /** chunk id: 780645 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    $: () => a
+    $: () => r
 });
 var i = n(627968),
     s = n(64700),
     l = n(442433);
 
-function a(e) {
+function r(e) {
     return s.useCallback(t => {
         (0, l.L3)(t, async () => {
             let {

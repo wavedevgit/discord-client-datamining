@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(484030),
+    r = n.n(l),
+    a = n(484030),
     o = n(311907),
     c = n(873298),
     d = n(397927),
@@ -97,7 +97,7 @@ function y(e) {
                     "aria-label": T.intl.string(T.t.GSmTKJ),
                     className: G,
                     children: (0, i.jsx)("div", {
-                        className: a()(v.k, {
+                        className: r()(v.k, {
                             [v.q]: X
                         }),
                         children: (0, i.jsx)(d.Fmo, {
@@ -111,7 +111,7 @@ function y(e) {
                                 onJump: q
                             }) : W && Y && k === c.Y2.BOOKMARKS ? (0, i.jsx)(_.J, {
                                 closePopout: F
-                            }) : k === c.Y2.SCHEDULED ? (0, i.jsx)(N.w, {}) : (0, i.jsx)(r.tH, {
+                            }) : k === c.Y2.SCHEDULED ? (0, i.jsx)(N.w, {}) : (0, i.jsx)(a.tH, {
                                 fallback: (0, i.jsx)(b.T, {}),
                                 children: (0, i.jsx)(b.Ay, {
                                     onJump: q,

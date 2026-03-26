@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    a = n(837381),
-    r = n(311907),
+    r = n(837381),
+    a = n(311907),
     o = n(827734),
     c = n(435371),
     d = n(397927),
@@ -71,12 +71,12 @@ function L(e) {
         channel: t,
         children: n,
         gotoChannel: s,
-        mentionCount: r,
+        mentionCount: a,
         channelState: o,
         toggleCollapsed: c,
         showCollapseButton: u = !1,
         getNumUnreadChannels: h
-    } = e, A = (0, a.rm)(`recents-header-${t.id}-${(0,f.GV)()}`), m = u && !t.isNSFW() && null != o && "nsfw" !== o.type;
+    } = e, A = (0, r.rm)(`recents-header-${t.id}-${(0,f.GV)()}`), m = u && !t.isNSFW() && null != o && "nsfw" !== o.type;
     return (0, i.jsx)(d.vN3, {
         offset: R,
         children: (0, i.jsxs)("div", {
@@ -99,7 +99,7 @@ function L(e) {
             }), (0, i.jsx)(U, {
                 channel: t,
                 gotoChannel: s,
-                mentionCount: r
+                mentionCount: a
             }), n]
         })
     })
@@ -123,7 +123,7 @@ function D(e) {
     let {
         channel: t,
         gotoChannel: n
-    } = e, s = (0, r.bG)([S.default], () => t.isDM() ? S.default.getUser(t.getRecipientId()) : null), l = null == s ? (0, _.Y)(t) : s.getAvatarURL(void 0, 40);
+    } = e, s = (0, a.bG)([S.default], () => t.isDM() ? S.default.getUser(t.getRecipientId()) : null), l = null == s ? (0, _.Y)(t) : s.getAvatarURL(void 0, 40);
     return (0, i.jsx)(d.DUT, {
         onClick: n,
         tabIndex: -1,
@@ -140,7 +140,7 @@ function G(e) {
     let {
         channel: t,
         gotoChannel: n
-    } = e, s = (0, r.bG)([I.A], () => I.A.getGuild(t.guild_id));
+    } = e, s = (0, a.bG)([I.A], () => I.A.getGuild(t.guild_id));
     return null == s ? null : (0, i.jsx)(x.Ay, {
         "aria-hidden": !0,
         className: j.$f,
@@ -157,7 +157,7 @@ function U(e) {
         channel: t,
         gotoChannel: n,
         mentionCount: s
-    } = e, a = (0, r.bG)([I.A], () => I.A.getGuild(t.guild_id)), c = (0, r.bG)([C.A], () => C.A.getChannel(t.parent_id)), u = (0, r.bG)([b.Ay], () => b.Ay.getIsMentionLowImportance(t.id)), h = (0, g.gU)(t, a), A = (0, p.Ay)(t, !1), m = null == c ? a?.name : `${a?.name} › ${c.name}`, _ = t.isMultiUserDM() ? y.intl.formatToPlainString(y.t.CxSA5N, {
+    } = e, r = (0, a.bG)([I.A], () => I.A.getGuild(t.guild_id)), c = (0, a.bG)([C.A], () => C.A.getChannel(t.parent_id)), u = (0, a.bG)([b.Ay], () => b.Ay.getIsMentionLowImportance(t.id)), h = (0, g.gU)(t, r), A = (0, p.Ay)(t, !1), m = null == c ? r?.name : `${r?.name} › ${c.name}`, _ = t.isMultiUserDM() ? y.intl.formatToPlainString(y.t.CxSA5N, {
         members: t.recipients.length + 1
     }) : t.isPrivate() ? (0, i.jsx)(P, {
         channel: t
@@ -207,8 +207,8 @@ function P(e) {
         user: n,
         status: s,
         activities: l,
-        applicationStream: a
-    } = (0, r.cf)([S.default, N.A, E.A], () => {
+        applicationStream: r
+    } = (0, a.cf)([S.default, N.A, E.A], () => {
         let e = S.default.getUser(t.getRecipientId());
         return {
             user: e,
@@ -224,12 +224,12 @@ function P(e) {
     return (0, u.A)({
         activities: l,
         status: s,
-        applicationStream: a,
+        applicationStream: r,
         voiceChannel: o
     }) ? (0, i.jsx)(A.A, {
         user: n,
         activities: l,
-        applicationStream: a,
+        applicationStream: r,
         voiceChannel: o,
         hideTooltip: !0
     }) : null

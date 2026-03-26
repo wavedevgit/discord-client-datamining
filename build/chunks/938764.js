@@ -6,19 +6,19 @@ n.d(t, {
 var i = n(311907),
     s = n(73153),
     l = n(370876);
-let a = [],
-    r = {},
+let r = [],
+    a = {},
     o = {};
 class c extends i.Ay.Store {
     static displayName = "GuildDirectorySearchStore";
     getSearchState(e) {
-        return r[e] ?? {
+        return a[e] ?? {
             mostRecentQuery: "",
             fetching: !1
         }
     }
     getSearchResults(e, t) {
-        return o[e]?.[t]?.results ?? a
+        return o[e]?.[t]?.results ?? r
     }
     shouldFetch(e, t) {
         let n = o[e]?.[t]?.lastSearchedAt;
@@ -31,7 +31,7 @@ let d = new c(s.h, {
             channelId: t,
             query: n
         } = e;
-        r[t] = {
+        a[t] = {
             fetching: !0,
             mostRecentQuery: n
         }
@@ -42,8 +42,8 @@ let d = new c(s.h, {
             query: n,
             results: i
         } = e;
-        r[t] = {
-            ...r[t],
+        a[t] = {
+            ...a[t],
             fetching: !1
         };
         let s = [];
@@ -62,8 +62,8 @@ let d = new c(s.h, {
         let {
             channelId: t
         } = e;
-        r[t] = {
-            ...r[t],
+        a[t] = {
+            ...a[t],
             fetching: !1
         }
     },
@@ -71,7 +71,7 @@ let d = new c(s.h, {
         let {
             channelId: t
         } = e;
-        r[t] = {
+        a[t] = {
             fetching: !1,
             mostRecentQuery: ""
         }
@@ -81,7 +81,7 @@ let d = new c(s.h, {
             channelId: t,
             query: n
         } = e;
-        r[t] = {
+        a[t] = {
             fetching: !1,
             mostRecentQuery: n
         }
@@ -90,14 +90,14 @@ let d = new c(s.h, {
         let {
             channelId: t,
             guildId: n
-        } = e, i = r[t]?.mostRecentQuery;
+        } = e, i = a[t]?.mostRecentQuery;
         if (null == i) return;
         let s = o[t][i];
         if (null == s) return;
         let l = s.results.filter(e => e.guildId !== n);
         o[t] = {
             ...o[t],
-            [r[t].mostRecentQuery]: {
+            [a[t].mostRecentQuery]: {
                 ...s,
                 results: l
             }

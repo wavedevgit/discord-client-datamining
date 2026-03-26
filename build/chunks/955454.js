@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(735438),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(73153),
     c = n(334738),
     d = n(835369),
@@ -26,7 +26,7 @@ function E(e) {
         channel: t,
         channelRecord: n,
         deleteChannel: l
-    } = e, E = (0, r.yK)([h.A, m.A], () => a()(h.A.getThreadsForParent(n.guild_id, n.id)).values().filter(e => {
+    } = e, E = (0, a.yK)([h.A, m.A], () => r()(h.A.getThreadsForParent(n.guild_id, n.id)).values().filter(e => {
         let {
             id: n
         } = e;

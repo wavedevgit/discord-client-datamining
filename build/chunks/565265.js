@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(621466),
+    r = n.n(l),
+    a = n(621466),
     o = n(397927),
     c = n(442433),
     d = n(46054),
@@ -22,10 +22,10 @@ function _(e) {
 class p extends s.Component {
     handleOpenTopic = e => {
         let t = e.target;
-        if ((0, r.vq)(t)) {
+        if ((0, a.vq)(t)) {
             if (_(t)) return;
             let e = t.parentNode;
-            if ((0, r.vq)(e) && _(e)) return
+            if ((0, a.vq)(e) && _(e)) return
         }(0, o.mMO)(async () => {
             let {
                 default: e
@@ -61,7 +61,7 @@ class p extends s.Component {
         let t = null != e.topic && e.topic.length > 0;
         return null != e.linkedLobby || t ? (0, i.jsxs)(s.Fragment, {
             children: [(0, i.jsx)(u.A.Divider, {}), (0, i.jsxs)("div", {
-                className: a()(A.At, A.lu, m.PT),
+                className: r()(A.At, A.lu, m.PT),
                 onContextMenu: this.handleContextMenu,
                 onClick: this.handleOpenTopic,
                 children: [(0, i.jsx)(o.DUT, {

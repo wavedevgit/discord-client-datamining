@@ -7,14 +7,14 @@ var i = n(627968);
 n(64700);
 var s = n(311907),
     l = n(397927),
-    a = n(713654),
-    r = n(71393),
+    r = n(713654),
+    a = n(71393),
     o = n(318496);
 
 function c(e) {
     let {
         channel: t
-    } = e, n = (0, s.bG)([r.A], () => r.A.getGuild(t.guild_id)), c = (0, a.gU)(t, n);
+    } = e, n = (0, s.bG)([a.A], () => a.A.getGuild(t.guild_id)), c = (0, r.gU)(t, n);
     return null == c ? null : (0, i.jsxs)("div", {
         className: o.hY,
         children: [(0, i.jsx)(c, {

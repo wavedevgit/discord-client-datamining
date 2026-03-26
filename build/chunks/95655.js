@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(990078),
-    a = n(397927),
-    r = n(442433),
+    r = n(397927),
+    a = n(442433),
     o = n(793574),
     c = n(47167),
     d = n(598104),
@@ -25,10 +25,10 @@ let g = e => {
             channelId: t.id
         }) ? (0, i.jsx)(l.m, {
             text: _.intl.string(_.t.QyZ4Td),
-            children: (0, i.jsx)(a.m5V, {
+            children: (0, i.jsx)(r.m5V, {
                 size: "xs",
                 "aria-label": _.intl.string(_.t.VHXh8a),
-                color: a.LU0.colors.INTERACTIVE_TEXT_DEFAULT
+                color: r.LU0.colors.INTERACTIVE_TEXT_DEFAULT
             })
         }) : null
     },
@@ -41,12 +41,12 @@ let g = e => {
                 asContainer: !0,
                 text: _.intl.string(_.t["5Q9+/L"]),
                 position: "bottom",
-                children: (0, i.jsxs)(a.DUT, {
+                children: (0, i.jsxs)(r.DUT, {
                     className: p.cD,
                     onClick: () => {
                         (0, u.U)(s, o.A.HEADER_BAR)
                     },
-                    onContextMenu: e => (0, r.L3)(e, () => Promise.all([n.e("97262"), n.e("70303"), n.e("60200"), n.e("29108")]).then(n.bind(n, 4027)).then(e => {
+                    onContextMenu: e => (0, a.L3)(e, () => Promise.all([n.e("97262"), n.e("70303"), n.e("60200"), n.e("29108")]).then(n.bind(n, 4027)).then(e => {
                         let {
                             default: n
                         } = e;
@@ -71,13 +71,13 @@ let g = e => {
                         className: p.gn,
                         "aria-hidden": !0,
                         channel: t,
-                        size: a._3J.SIZE_20,
-                        facepileSizeOverride: a._3J.SIZE_24
-                    }), (0, i.jsx)(a.Text, {
+                        size: r._3J.SIZE_20,
+                        facepileSizeOverride: r._3J.SIZE_24
+                    }), (0, i.jsx)(r.Text, {
                         variant: "text-md/medium",
                         color: "text-strong",
                         children: h ?? ""
-                    }), (0, i.jsx)(a.R2l, {
+                    }), (0, i.jsx)(r.R2l, {
                         className: p.IZ,
                         size: "xs",
                         color: "currentColor"

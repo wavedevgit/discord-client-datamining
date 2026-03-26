@@ -8,8 +8,8 @@ n.d(t, {
 var i = n(64700),
     s = n(311907),
     l = n(394577),
-    a = n(21119),
-    r = n(95701),
+    r = n(21119),
+    a = n(95701),
     o = n(696451),
     c = n(576705),
     d = n(287809),
@@ -30,9 +30,9 @@ function p(e) {
     }, {
         autoTrackExposure: !1
     });
-    return (0, s.yK)([a.A, u.Ay, o.Ay, d.default], () => {
+    return (0, s.yK)([r.A, u.Ay, o.Ay, d.default], () => {
         if (null == t) return [];
-        let e = a.A.getUserAffinitiesMap(),
+        let e = r.A.getUserAffinitiesMap(),
             s = null != t ? u.Ay.getVoiceStatesForChannel(t) : [],
             l = new Set;
         s.forEach(e => l.add(e.user.id));
@@ -41,7 +41,7 @@ function p(e) {
             if (l.has(e.userId)) continue;
             let n = d.default.getUser(e.userId);
             if (null == n) continue;
-            let i = (0, r.TA)(t.type);
+            let i = (0, a.TA)(t.type);
             (0, h.$3)({
                 permission: i,
                 user: n,

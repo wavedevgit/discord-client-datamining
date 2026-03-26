@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    a = n(397927),
-    r = n(769022),
+    r = n(397927),
+    a = n(769022),
     o = n(287809),
     c = n(562153),
     d = n(850457);
@@ -22,7 +22,7 @@ function A(e) {
     s.useEffect(() => () => {
         clearTimeout(_.current)
     }, []);
-    let p = (0, l.bG)([r.A], () => r.A.getLastLeftUserId(t.id), [t.id]),
+    let p = (0, l.bG)([a.A], () => a.A.getLastLeftUserId(t.id), [t.id]),
         g = (0, l.bG)([o.default], () => null != p ? o.default.getUser(p) : null, [p]),
         f = c.Ay.useName(t.guild_id, t.id, g),
         x = () => {
@@ -31,7 +31,7 @@ function A(e) {
         E = () => {
             _.current = setTimeout(() => A(!1), 100)
         };
-    return null == p || null == g ? null : (0, i.jsx)(a.YNO, {
+    return null == p || null == g ? null : (0, i.jsx)(r.YNO, {
         targetElementRef: m,
         position: "right",
         shouldShow: n,
@@ -50,7 +50,7 @@ function A(e) {
                 onClick: n,
                 ...s
             } = e;
-            return (0, i.jsxs)(a.DUT, {
+            return (0, i.jsxs)(r.DUT, {
                 innerRef: m,
                 className: h.nM,
                 "aria-haspopup": "dialog",
@@ -59,27 +59,27 @@ function A(e) {
                 onMouseLeave: E,
                 children: [(0, i.jsxs)("div", {
                     className: h.R3,
-                    children: [(0, i.jsx)(a.euF, {
+                    children: [(0, i.jsx)(r.euF, {
                         src: g.getAvatarURL(t.guild_id, 24),
-                        size: a._3J.SIZE_24,
+                        size: r._3J.SIZE_24,
                         "aria-hidden": !0,
-                        status: a.clD.INVISIBLE,
+                        status: r.clD.INVISIBLE,
                         statusColor: "currentColor"
-                    }), (0, i.jsx)(a.O4, {
+                    }), (0, i.jsx)(r.O4, {
                         className: h.SM
                     })]
-                }), (0, i.jsx)(a.Text, {
+                }), (0, i.jsx)(r.Text, {
                     variant: "text-sm/normal",
                     className: h.Pf,
                     children: u.intl.format(u.t.TlVwqn, {
                         user: f,
-                        userHook: (e, t) => (0, i.jsx)(a.Text, {
+                        userHook: (e, t) => (0, i.jsx)(r.Text, {
                             variant: "text-sm/semibold",
                             className: h.Xh,
                             color: "text-muted",
                             children: e
                         }, t),
-                        labelHook: (e, t) => (0, i.jsx)(a.Text, {
+                        labelHook: (e, t) => (0, i.jsx)(r.Text, {
                             variant: "text-sm/normal",
                             className: h.cp,
                             color: "text-muted",

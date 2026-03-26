@@ -42,7 +42,7 @@ function D(e) {
         channel: r
     } = e, D = a.useRef(null), k = a.useRef(null), O = (0, j.D)(t, n), {
         setPopout: U
-    } = (0, f.A)(n.id, R.Fd), B = (0, x.VL)(n, r, U, !0), G = E.kt.useSetting(), F = (0, S.j)(), [H, V] = a.useState(!1), [q, W] = a.useState(O?.coverImage == null), Y = (0, o.bG)([b.Ay, v.default], () => b.Ay.isMember(O?.guildId, v.default.getCurrentUser()?.id), [O]), z = (0, o.bG)([b.Ay], () => O?.authorId != null ? b.Ay.getMember(O.guildId, O.authorId) : null), Q = (0, m.A)(z?.avatarDecoration != null ? z?.avatarDecoration : O?.user?.avatarDecoration), [K, J, X] = a.useMemo(() => [z?.colorString ?? "inherit", z?.colorStrings ?? null, z?.colorRoleId], [z]), Z = (0, C.gn)(z?.guildId, O?.authorId ?? void 0, J), {
+    } = (0, f.A)(n.id, R.Fd), B = (0, x.VL)(n, r, U, !0), G = E.kt.useSetting(), F = (0, S.j)(), [H, V] = a.useState(!1), [q, W] = a.useState(O?.coverImage == null), z = (0, o.bG)([b.Ay, v.default], () => b.Ay.isMember(O?.guildId, v.default.getCurrentUser()?.id), [O]), Y = (0, o.bG)([b.Ay], () => O?.authorId != null ? b.Ay.getMember(O.guildId, O.authorId) : null), Q = (0, m.A)(Y?.avatarDecoration != null ? Y?.avatarDecoration : O?.user?.avatarDecoration), [K, J, X] = a.useMemo(() => [Y?.colorString ?? "inherit", Y?.colorStrings ?? null, Y?.colorRoleId], [Y]), Z = (0, C.gn)(Y?.guildId, O?.authorId ?? void 0, J), {
         reducedMotion: $
     } = a.useContext(c.CZY), [ee, et] = a.useState(!1), en = a.useCallback(() => {
         V(!0)
@@ -53,11 +53,11 @@ function D(e) {
             media_post_id: O.threadId,
             channel_id: r.id,
             can_access: O.canAccess,
-            is_member: Y
-        }), O.canAccess ? (0, g.A)(L.BVt.CHANNEL(O.guildId, O.threadId, O.messageId)) : Y ? (0, g.A)(L.BVt.CHANNEL(O.guildId, O.parentChannelId)) : await y.Z2(O.guildId, {}, {
+            is_member: z
+        }), O.canAccess ? (0, g.A)(L.BVt.CHANNEL(O.guildId, O.threadId, O.messageId)) : z ? (0, g.A)(L.BVt.CHANNEL(O.guildId, O.parentChannelId)) : await y.Z2(O.guildId, {}, {
             channelId: O.parentChannelId
         }))
-    }, [O, r, Y]);
+    }, [O, r, z]);
     if (null == O) return null;
     let er = (0, T.F_)({
             avatarDecoration: Q,

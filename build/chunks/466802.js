@@ -1,6 +1,6 @@
 /** chunk id: 466802 params = (module,exports,require) **/
 n.d(t, {
-    A: () => Y
+    A: () => z
 });
 var i = n(627968),
     a = n(64700),
@@ -365,7 +365,7 @@ class q extends a.Component {
     }
 }
 let W = (0, m.A)((0, _.A)(q)),
-    Y = function(e) {
+    z = function(e) {
         let {
             code: t,
             author: n

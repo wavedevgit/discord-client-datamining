@@ -6,8 +6,8 @@ n.d(t, {
 });
 var i, s = n(627968),
     l = n(64700),
-    a = n(503698),
-    r = n.n(a),
+    r = n(503698),
+    a = n.n(r),
     o = n(735438),
     c = n(827734),
     d = n(397927),
@@ -24,9 +24,9 @@ function g(e) {
         onResize: n,
         onResizeEnd: i,
         maxWidth: l,
-        minWidth: a
-    } = e, r = (0, h.A)({
-        minDimension: a,
+        minWidth: r
+    } = e, a = (0, h.A)({
+        minDimension: r,
         maxDimension: l,
         resizableDomNodeRef: t,
         onElementResize: n,
@@ -35,7 +35,7 @@ function g(e) {
         throttleDuration: 16
     });
     return (0, s.jsx)("div", {
-        onMouseDown: r,
+        onMouseDown: a,
         className: _.Di
     })
 }
@@ -45,7 +45,7 @@ function f(e) {
         sidebarType: t,
         maxWidth: n,
         onWidthChange: i,
-        children: a,
+        children: r,
         floatingLayer: h
     } = e, p = l.useRef(null), f = function(e) {
         switch (e) {
@@ -79,11 +79,11 @@ function f(e) {
             }
         }), (0, s.jsx)(T, {
             children: (0, s.jsxs)("div", {
-                className: r()(_.PA, {
+                className: a()(_.PA, {
                     [_.R]: !1
                 }),
                 children: [(0, s.jsx)("div", {
-                    className: r()(_.Uc, {
+                    className: a()(_.Uc, {
                         [_.DU]: I,
                         [_.iK]: !I
                     }),
@@ -98,13 +98,13 @@ function f(e) {
                     onResizeEnd: C
                 }), (0, s.jsx)("div", {
                     ref: p,
-                    className: r()(_.kL, {
+                    className: a()(_.kL, {
                         [_.DU]: I
                     }),
                     style: {
                         width: b
                     },
-                    children: a
+                    children: r
                 })]
             })
         })]

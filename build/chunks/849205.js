@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(417597),
     l = n(990078),
-    a = n(397927),
-    r = n(73392),
+    r = n(397927),
+    a = n(73392),
     o = n(665691),
     c = n(290863),
     d = n(994500),
@@ -27,22 +27,22 @@ function p(e) {
         x = (0, s.bG)([c.A], () => c.A.isVROnline(t)),
         E = (0, s.bG)([d.A], () => d.A.getNickname(t)),
         C = h.Ay.useUserTag(p),
-        I = (0, r.a)({
+        I = (0, a.a)({
             displayNameStyles: p?.displayNameStyles
         }),
         N = (0, o.bG)({
             channelId: e.channel.id
         });
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(a.AC4, {
+        children: [(0, i.jsx)(r.AC4, {
             children: m.intl.string(m.t.EJRzg7)
         }), null != p && !n && (0, i.jsx)("div", {
-            children: (0, i.jsx)(a.euF, {
+            children: (0, i.jsx)(r.euF, {
                 status: g,
                 isMobile: f,
                 isVR: x,
                 className: _.my,
-                size: a._3J.SIZE_20,
+                size: r._3J.SIZE_20,
                 "aria-label": h.Ay.getName(p),
                 src: p.getAvatarURL(void 0, 20)
             })
@@ -61,10 +61,10 @@ function p(e) {
                     })
                 }), N && (0, i.jsx)(l.m, {
                     text: m.intl.string(m.t.QyZ4Td),
-                    children: (0, i.jsx)(a.m5V, {
+                    children: (0, i.jsx)(r.m5V, {
                         size: "xs",
                         "aria-label": m.intl.string(m.t.VHXh8a),
-                        color: a.LU0.colors.INTERACTIVE_TEXT_DEFAULT,
+                        color: r.LU0.colors.INTERACTIVE_TEXT_DEFAULT,
                         className: _.vW
                     })
                 })]

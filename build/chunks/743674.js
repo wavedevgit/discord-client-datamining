@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(64700),
     s = n(635377),
     l = n.n(s),
-    a = n(998304),
-    r = n(515718);
+    r = n(998304),
+    a = n(515718);
 let o = new(l())({
     max: 50
 });
@@ -19,10 +19,10 @@ async function c(e) {
             i.crossOrigin = "Anonymous", i.onerror = e => {
                 n(e), null != i && (i.onerror = null, i.onload = null), i = null
             }, i.onload = () => {
-                null != i ? (t((0, r.Sf)(i, 2, 10)), i.onerror = null, i.onload = null, i = null) : n("image is null")
+                null != i ? (t((0, a.Sf)(i, 2, 10)), i.onerror = null, i.onload = null, i = null) : n("image is null")
             }, i.src = e
         }),
-        i = (0, a.Ob)(...n[0]);
+        i = (0, r.Ob)(...n[0]);
     return o.set(e, i), i
 }
 

@@ -1,35 +1,35 @@
 /** chunk id: 306113 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    n: () => a
+    n: () => r
 });
 var i = n(627968);
 n(64700);
 var s = n(512750),
     l = n(158954);
 
-function a(e) {
+function r(e) {
     let {
         powerup: t,
         eventTargetRef: n,
-        className: a
-    } = e, r = {
+        className: r
+    } = e, a = {
         eventTargetRef: n,
         fit: "contain",
-        className: a
+        className: r
     };
     switch (t.skuId) {
         case s.ec:
             return (0, i.jsx)(l.tIK, {
-                ...r
+                ...a
             });
         case s.RV:
             return (0, i.jsx)(l.J$p, {
-                ...r
+                ...a
             });
         case s.YG:
             return (0, i.jsx)(l.zzg, {
-                ...r
+                ...a
             });
         default:
             return null

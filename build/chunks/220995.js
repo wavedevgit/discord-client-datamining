@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(4208),
+    r = n.n(l),
+    a = n(4208),
     o = n(110259),
     c = n(311907),
     d = n(435371),
@@ -136,12 +136,12 @@ function T(e) {
                 onClick: t,
                 ...n
             } = e;
-            return (0, i.jsx)(r.animated.div, {
+            return (0, i.jsx)(a.animated.div, {
                 className: N.lY,
                 style: W,
                 children: (0, i.jsx)(u.DUT, {
                     innerRef: T,
-                    className: a()({
+                    className: r()({
                         [N.vk]: !U
                     }, b.q7, b.L9, b.vk),
                     "aria-disabled": U,
@@ -149,14 +149,14 @@ function T(e) {
                     onClick: K,
                     ...n,
                     children: (0, i.jsxs)("div", {
-                        className: a()(N.Qs, b.Qs),
+                        className: r()(N.Qs, b.Qs),
                         children: [(0, i.jsxs)("div", {
                             className: N.R4,
                             style: {
                                 "--custom-voice-invite-suggestions-timer-size": 24
                             },
                             children: [(0, i.jsxs)("svg", {
-                                className: a()(N.O1, {
+                                className: r()(N.O1, {
                                     [N.Ft]: H
                                 }),
                                 viewBox: "0 0 24 24",
@@ -173,7 +173,7 @@ function T(e) {
                                 width: 14,
                                 height: 14,
                                 color: "currentColor",
-                                className: a()(N.Hk, N.Kk)
+                                className: r()(N.Hk, N.Kk)
                             })]
                         }), (0, i.jsx)(d.m_, {
                             text: I.intl.string(I.t["EE+P0H"]),

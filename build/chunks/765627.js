@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(417597),
     l = n(873298),
-    a = n(827734),
-    r = n(397927),
+    r = n(827734),
+    a = n(397927),
     o = n(966597),
     c = n(85109),
     d = n(566908),
@@ -35,16 +35,16 @@ function g(e) {
         className: p.wx,
         children: [(0, i.jsxs)("div", {
             className: p.qd,
-            children: [(0, i.jsx)(r.K$s, {
+            children: [(0, i.jsx)(a.K$s, {
                 size: "md",
                 color: "currentColor",
                 className: p.yH
-            }), (0, i.jsx)(r.Heading, {
+            }), (0, i.jsx)(a.Heading, {
                 className: p.Hi,
                 variant: "text-lg/semibold",
                 color: "interactive-text-active",
                 children: _.intl.string(_.t.GSmTKJ)
-            }), (0, i.jsxs)(r.sqX, {
+            }), (0, i.jsxs)(a.sqX, {
                 className: p.ne,
                 onClick: e => e.stopPropagation(),
                 focusProps: {
@@ -59,37 +59,37 @@ function g(e) {
             })]
         }), (0, i.jsx)("div", {
             className: p.YF,
-            children: (0, i.jsxs)(r.VQ0, {
+            children: (0, i.jsxs)(a.VQ0, {
                 selectedItem: t,
                 type: "top",
                 look: "brand",
                 onItemSelect: n,
                 className: p.$H,
-                children: [(0, i.jsxs)(r.VQ0.Item, {
+                children: [(0, i.jsxs)(a.VQ0.Item, {
                     id: l.Y2.FOR_YOU,
                     "aria-label": _.intl.string(_.t["En+D+u"]),
                     className: p.Mf,
-                    children: [_.intl.string(_.t["En+D+u"]), u?.badgeForYou ? (0, i.jsx)(r.SC0, {
-                        color: a.A.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css,
+                    children: [_.intl.string(_.t["En+D+u"]), u?.badgeForYou ? (0, i.jsx)(a.SC0, {
+                        color: r.A.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css,
                         className: p.bG
                     }) : null]
-                }), (0, i.jsx)(r.VQ0.Item, {
+                }), (0, i.jsx)(a.VQ0.Item, {
                     id: l.Y2.UNREADS,
                     className: p.Mf,
                     children: _.intl.string(_.t.sRUdB8)
-                }), (0, i.jsx)(r.VQ0.Item, {
+                }), (0, i.jsx)(a.VQ0.Item, {
                     "aria-label": _.intl.string(_.t.GRZF96),
                     id: l.Y2.MENTIONS,
                     className: p.Mf,
                     children: _.intl.string(_.t.GRZF96)
-                }), m && g ? (0, i.jsx)(r.VQ0.Item, {
+                }), m && g ? (0, i.jsx)(a.VQ0.Item, {
                     "aria-label": _.intl.string(_.t["2pAkDA"]),
                     id: l.Y2.BOOKMARKS,
                     className: p.Mf,
                     children: 0 === E ? _.intl.string(_.t["2pAkDA"]) : _.intl.formatToPlainString(_.t.I4fryG, {
                         count: E
                     })
-                }) : null, x ? (0, i.jsx)(r.VQ0.Item, {
+                }) : null, x ? (0, i.jsx)(a.VQ0.Item, {
                     "aria-label": "scheduled",
                     id: l.Y2.SCHEDULED,
                     className: p.Mf,

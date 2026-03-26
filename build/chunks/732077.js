@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(397927),
     c = n(734057),
     d = n(607567),
@@ -24,7 +24,7 @@ let _ = s.memo(function(e) {
         withGuildIcon: _
     } = e, {
         density: p
-    } = (0, o.wRf)(), g = (0, r.yK)([c.A], () => l.map(e => c.A.getChannel(e)).filter(u.Vq), [l]), f = (0, r.bG)([d.Ay], () => {
+    } = (0, o.wRf)(), g = (0, a.yK)([c.A], () => l.map(e => c.A.getChannel(e)).filter(u.Vq), [l]), f = (0, a.bG)([d.Ay], () => {
         let e = g[g.length - 1];
         if (null == e) return 0;
         let t = d.Ay.getVoiceStates(e.guild_id)[e.id];
@@ -38,7 +38,7 @@ let _ = s.memo(function(e) {
                 channelName: t.name
             }),
             children: [(0, i.jsx)("div", {
-                className: a()(m.eh, {
+                className: r()(m.eh, {
                     [m.ET]: _
                 }),
                 style: {

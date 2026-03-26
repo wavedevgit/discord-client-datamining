@@ -58,8 +58,8 @@ function G(e) {
         }, [V.id]),
         W = (0, u.bG)([L.Ay], () => q ? L.Ay.getVoiceStatesForChannelAlt(V.id, H.id) : [], [V.id, H.id, q]),
         {
-            label: Y,
-            sublabel: z
+            label: z,
+            sublabel: Y
         } = function(e) {
             let {
                 currentUserId: t,
@@ -208,13 +208,13 @@ function G(e) {
                         variant: "text-md/medium",
                         children: (0, i.jsx)(_.A, {
                             lineClamp: et ? 1 : 3,
-                            children: Y
+                            children: z
                         })
-                    }), null != z ? (0, i.jsx)(m.Text, {
+                    }), null != Y ? (0, i.jsx)(m.Text, {
                         variant: "text-sm/normal",
                         className: B.$B,
                         children: (0, i.jsx)(_.A, {
-                            children: z
+                            children: Y
                         })
                     }) : null]
                 })]

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(506774),
     c = n(31728),
     d = n(164617),
@@ -33,7 +33,7 @@ function x(e) {
         return [e, s.useCallback(e => {
             o.w.set(f, e), t(e)
         }, [])]
-    }(), b = s.useRef(null), S = null == x.getGuildId() ? 70 : 50, T = (0, r.bG)([h.A], () => h.A.pipWidth(_.R8.CAMERA_PREVIEW)), v = E.length, y = T * v + 8 * (v - 1), j = s.useMemo(() => ({
+    }(), b = s.useRef(null), S = null == x.getGuildId() ? 70 : 50, T = (0, a.bG)([h.A], () => h.A.pipWidth(_.R8.CAMERA_PREVIEW)), v = E.length, y = T * v + 8 * (v - 1), j = s.useMemo(() => ({
         minWidth: _.mn[_.R8.CAMERA_PREVIEW] * v + 8 * (v - 1),
         maxWidth: _.cF[_.R8.CAMERA_PREVIEW] * v + 8 * (v - 1)
     }), [v]);
@@ -69,7 +69,7 @@ function x(e) {
                     participant: e,
                     channel: x,
                     onContextMenu: n,
-                    className: a()(p.Vs, g.a8),
+                    className: r()(p.Vs, g.a8),
                     fit: A.Yl.COVER,
                     inCall: !0,
                     popoutType: d.N.NO_POPOUT,

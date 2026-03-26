@@ -6,8 +6,8 @@ n.d(t, {
 });
 var i, s = n(627968),
     l = n(64700),
-    a = n(503698),
-    r = n.n(a),
+    r = n(503698),
+    a = n.n(r),
     o = n(397927),
     c = n(765671),
     d = n(401685),
@@ -20,8 +20,8 @@ function m(e) {
         disableGradients: t = !1,
         renderHeader: n,
         renderBottomLeft: i,
-        renderBottomCenter: a,
-        renderBottomRight: r,
+        renderBottomCenter: r,
+        renderBottomRight: a,
         renderCenter: u
     } = e, A = l.useRef(null), {
         width: m,
@@ -49,10 +49,10 @@ function m(e) {
                         children: i?.()
                     }), (0, s.jsx)("div", {
                         className: h.Kz,
-                        children: a?.()
+                        children: r?.()
                     }), (0, s.jsx)("div", {
                         className: h.i$,
-                        children: r?.()
+                        children: a?.()
                     })]
                 })
             })]
@@ -66,7 +66,7 @@ function _(e) {
         onDoubleClick: n,
         onActive: i,
         onForceIdle: l,
-        idle: a,
+        idle: r,
         children: o,
         renderChatToasts: c,
         renderVoiceChannelEffects: d,
@@ -74,8 +74,8 @@ function _(e) {
         ..._
     } = e;
     return (0, s.jsxs)("div", {
-        className: r()(h.zr, {
-            [h.N7]: a
+        className: a()(h.zr, {
+            [h.N7]: r
         }),
         style: A,
         onMouseMove: i,

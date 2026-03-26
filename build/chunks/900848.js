@@ -1,12 +1,12 @@
 /** chunk id: 900848 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    c: () => a
+    c: () => r
 });
 var i = n(627968),
     s = n(64700),
     l = n(186942);
-let a = s.forwardRef((e, t) => {
+let r = s.forwardRef((e, t) => {
     let {
         children: n
     } = e;
@@ -16,4 +16,4 @@ let a = s.forwardRef((e, t) => {
         children: n
     })
 });
-a.displayName = "ListItem"
+r.displayName = "ListItem"

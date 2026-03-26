@@ -1,11 +1,11 @@
 /** chunk id: 229548 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    FC: () => r,
+    FC: () => a,
     W2: () => h,
     rd: () => o,
     ru: () => d,
-    ty: () => a,
+    ty: () => r,
     vn: () => c,
     ww: () => u
 });
@@ -13,11 +13,11 @@ var i = n(554146),
     s = n(932001),
     l = n(379229);
 
-function a(e) {
+function r(e) {
     return (0, s.kn)(e ? [i.M.GUILD_POWERUP_PERKS_COACHMARK] : [])
 }
 
-function r(e, t) {
+function a(e, t) {
     return (0, s.RF)(e && t > 0 ? i.M.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK : null, t)
 }
 

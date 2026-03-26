@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(311907),
     l = n(397927),
-    a = n(253932),
-    r = n(461213),
+    r = n(253932),
+    a = n(461213),
     o = n(985018),
     c = n(800350);
 
@@ -30,7 +30,7 @@ function d(e) {
 function u(e) {
     let {
         onClick: t
-    } = e, n = a.tz.useSetting(), o = (0, s.bG)([r.A], () => r.A.getStatus());
+    } = e, n = r.tz.useSetting(), o = (0, s.bG)([a.A], () => a.A.getStatus());
     return __OVERLAY__ || n && o !== l.clD.INVISIBLE ? null : (0, i.jsx)(d, {
         onClick: t
     })

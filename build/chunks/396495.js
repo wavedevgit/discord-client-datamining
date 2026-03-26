@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    a = n(110259),
-    r = n(421380),
+    r = n(110259),
+    a = n(421380),
     o = n(397927),
     c = n(139286),
     d = n(954571),
@@ -23,8 +23,8 @@ function _(e) {
         onDismiss: n
     } = e;
     return (0, c.A)({
-        type: a.ImpressionTypes.VIEW,
-        name: a.ImpressionNames.HD_STREAMING_POPOUT
+        type: r.ImpressionTypes.VIEW,
+        name: r.ImpressionNames.HD_STREAMING_POPOUT
     }, {
         disableTrack: t
     }, [t]), (0, i.jsxs)("div", {
@@ -35,12 +35,12 @@ function _(e) {
             className: m.Sl,
             src: "https://cdn.discordapp.com/assets/premium/roadblocks/hd_streaming.png",
             alt: "HD Streaming Nitro Perk"
-        }), (0, i.jsx)(r.$n, {
+        }), (0, i.jsx)(a.$n, {
             "data-migration-pending": !0,
             className: m.b,
             "aria-label": A.intl.string(A.t.cpT0Cq),
-            look: r.$n.Looks.BLANK,
-            size: r.$n.Sizes.NONE,
+            look: a.$n.Looks.BLANK,
+            size: a.$n.Sizes.NONE,
             onClick: () => {
                 n(), d.default.track(h.HAw.HD_STREAMING_POPOUT_DISMISSED)
             },

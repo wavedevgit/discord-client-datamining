@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    a = n(397927),
-    r = n(835835),
+    r = n(397927),
+    a = n(835835),
     o = n(381849),
     c = n(549973),
     d = n(976860),
@@ -36,7 +36,7 @@ let E = ["high", "medium", "low"],
     C = s.memo(function(e) {
         let {
             moderation: t
-        } = e, n = null != t && 1 === t.status, l = null != t && !t.flagged_title && !t.flagged_summary && !t.flagged_key_points, r = s.useMemo(() => {
+        } = e, n = null != t && 1 === t.status, l = null != t && !t.flagged_title && !t.flagged_summary && !t.flagged_key_points, a = s.useMemo(() => {
             if (null == t) return {
                 passed: 0,
                 failed: 0,
@@ -51,13 +51,13 @@ let E = ["high", "medium", "low"],
                 failed: e,
                 unknown: s
             }
-        }, [t]), o = null == t ? "unknown" : r.failed > 0 ? "failed" : r.unknown > 0 ? "unknown" : r.passed > 0 ? "passed" : "unknown", c = null != t ? t.flagged_summary_details.find(e => {
+        }, [t]), o = null == t ? "unknown" : a.failed > 0 ? "failed" : a.unknown > 0 ? "unknown" : a.passed > 0 ? "passed" : "unknown", c = null != t ? t.flagged_summary_details.find(e => {
             var n;
             return e.severity === (n = t.flagged_summary_details.map(e => e.severity), E.find(e => n.includes(e)) ?? null)
         }) ?? null : null, d = c?.severity ?? null, u = c?.confidence ?? null;
         return (0, i.jsxs)("div", {
             className: g.UO,
-            children: [(0, i.jsx)(a.Text, {
+            children: [(0, i.jsx)(r.Text, {
                 variant: "text-xs/semibold",
                 color: "text-default",
                 className: g.a9,
@@ -66,54 +66,54 @@ let E = ["high", "medium", "low"],
                 className: g.so,
                 children: [(0, i.jsxs)("div", {
                     className: g.a7,
-                    children: [(0, i.jsx)(a.Text, {
+                    children: [(0, i.jsx)(r.Text, {
                         variant: "text-md/semibold",
                         color: null == t ? "text-muted" : n ? "status-positive" : "status-danger",
                         children: null == t ? "—" : n ? "✓" : "✗"
-                    }), (0, i.jsx)(a.Text, {
+                    }), (0, i.jsx)(r.Text, {
                         variant: "text-xs/normal",
                         color: "text-default",
                         children: "Conversation"
-                    }), null != t && !n && null != t.status_reason && (0, i.jsx)(a.Text, {
+                    }), null != t && !n && null != t.status_reason && (0, i.jsx)(r.Text, {
                         variant: "text-xs/normal",
                         color: "text-muted",
                         children: t.status_reason
                     })]
                 }), (0, i.jsxs)("div", {
                     className: g.a7,
-                    children: [(0, i.jsx)(a.Text, {
+                    children: [(0, i.jsx)(r.Text, {
                         variant: "text-md/semibold",
                         color: null == t ? "text-muted" : l ? "status-positive" : "status-danger",
                         children: null == t ? "—" : l ? "✓" : "✗"
-                    }), (0, i.jsx)(a.Text, {
+                    }), (0, i.jsx)(r.Text, {
                         variant: "text-xs/normal",
                         color: "text-default",
                         children: "Summary"
-                    }), null != t && !l && (0, i.jsxs)(a.Text, {
+                    }), null != t && !l && (0, i.jsxs)(r.Text, {
                         variant: "text-xs/normal",
                         color: "text-muted",
                         children: [
                             [t.flagged_title && "title", t.flagged_summary && "summary", t.flagged_key_points && "key points"].filter(Boolean).join(", "), " ", "flagged"
                         ]
-                    }), null != t && !l && (null != d || null != u) && (0, i.jsx)(a.Text, {
+                    }), null != t && !l && (null != d || null != u) && (0, i.jsx)(r.Text, {
                         variant: "text-xs/normal",
                         color: "text-muted",
                         children: [d, u].filter(Boolean).join(" \xb7 ")
                     })]
                 }), (0, i.jsxs)("div", {
                     className: g.a7,
-                    children: [(0, i.jsx)(a.Text, {
+                    children: [(0, i.jsx)(r.Text, {
                         variant: "text-md/semibold",
                         color: null == t || "unknown" === o ? "text-muted" : "passed" === o ? "status-positive" : "status-danger",
                         children: null == t || "unknown" === o ? "—" : "passed" === o ? "✓" : "✗"
-                    }), (0, i.jsx)(a.Text, {
+                    }), (0, i.jsx)(r.Text, {
                         variant: "text-xs/normal",
                         color: "text-default",
                         children: "Messages"
-                    }), null != t && (r.passed > 0 || r.failed > 0 || r.unknown > 0) && (0, i.jsx)(a.Text, {
+                    }), null != t && (a.passed > 0 || a.failed > 0 || a.unknown > 0) && (0, i.jsx)(r.Text, {
                         variant: "text-xs/normal",
                         color: "text-muted",
-                        children: [r.passed > 0 && `${r.passed} passed`, r.failed > 0 && `${r.failed} failed`, r.unknown > 0 && `${r.unknown} unknown`].filter(Boolean).join(", ")
+                        children: [a.passed > 0 && `${a.passed} passed`, a.failed > 0 && `${a.failed} failed`, a.unknown > 0 && `${a.unknown} unknown`].filter(Boolean).join(", ")
                     })]
                 })]
             })]
@@ -124,17 +124,17 @@ let E = ["high", "medium", "low"],
             conversation: t,
             color: n,
             isInViewport: l,
-            scrollTarget: r,
+            scrollTarget: a,
             onJump: d,
             onHoverStart: h,
             onHoverEnd: A
         } = e, m = s.useRef(null);
         s.useEffect(() => {
-            null != r && null != m.current && m.current.scrollIntoView({
+            null != a && null != m.current && m.current.scrollIntoView({
                 behavior: "smooth",
                 block: "center"
             })
-        }, [r]);
+        }, [a]);
         let p = u.default.extractTimestamp(t.start_message_id),
             f = u.default.extractTimestamp(t.end_message_id),
             x = (0, c.e)({
@@ -147,7 +147,7 @@ let E = ["high", "medium", "low"],
             }),
             N = t.summary_map?.entries.find(e => "TOPIC_EXTRACTION_SUMMARY" === e.summary_type),
             b = null != N ? (0, _.i)(N.content_json) : null;
-        return (0, i.jsxs)(a.DUT, {
+        return (0, i.jsxs)(r.DUT, {
             innerRef: m,
             className: `${g.Nm}${l?` ${g.Sk}`:""}`,
             style: {
@@ -158,18 +158,18 @@ let E = ["high", "medium", "low"],
             onMouseLeave: A,
             children: [(0, i.jsx)("div", {
                 className: g.PY,
-                children: (0, i.jsx)(a.Text, {
+                children: (0, i.jsx)(r.Text, {
                     variant: "text-md/medium",
                     color: null != b ? "text-default" : "text-muted",
                     className: g.So,
                     children: b?.title ?? "Summary not available"
                 })
-            }), (0, i.jsxs)(a.Text, {
+            }), (0, i.jsxs)(r.Text, {
                 variant: "text-xs/normal",
                 color: "text-muted",
                 className: g.FR,
                 children: [x, " ago \xb7 ", I, " duration \xb7 ", t.message_count, " messages \xb7 ", t.user_count, " users"]
-            }), b?.brief_summary != null && (0, i.jsx)(a.Text, {
+            }), b?.brief_summary != null && (0, i.jsx)(r.Text, {
                 variant: "text-xs/normal",
                 color: "text-default",
                 className: g.g5,
@@ -177,13 +177,13 @@ let E = ["high", "medium", "low"],
             }), null != b && b.key_points.length > 0 && (0, i.jsx)("ul", {
                 className: g.JP,
                 children: b.key_points.map((e, t) => (0, i.jsx)("li", {
-                    children: (0, i.jsx)(a.Text, {
+                    children: (0, i.jsx)(r.Text, {
                         variant: "text-xs/normal",
                         color: "text-default",
                         children: e
                     })
                 }, t))
-            }), (0, i.jsxs)(a.Text, {
+            }), (0, i.jsxs)(r.Text, {
                 variant: "text-xs/normal",
                 color: "text-default",
                 className: g.RE,
@@ -193,7 +193,7 @@ let E = ["high", "medium", "low"],
                 })]
             }), (0, i.jsxs)("div", {
                 className: g.UO,
-                children: [(0, i.jsx)(a.Text, {
+                children: [(0, i.jsx)(r.Text, {
                     variant: "text-xs/semibold",
                     color: "text-default",
                     className: g.a9,
@@ -202,33 +202,33 @@ let E = ["high", "medium", "low"],
                     className: g.so,
                     children: [(0, i.jsxs)("div", {
                         className: g.a7,
-                        children: [(0, i.jsx)(a.Text, {
+                        children: [(0, i.jsx)(r.Text, {
                             variant: "text-md/semibold",
                             color: "text-default",
                             children: t.substance?.score?.toFixed(2) ?? "—"
-                        }), (0, i.jsx)(a.Text, {
+                        }), (0, i.jsx)(r.Text, {
                             variant: "text-xs/normal",
                             color: "text-default",
                             children: "Substance"
                         })]
                     }), (0, i.jsxs)("div", {
                         className: g.a7,
-                        children: [(0, i.jsx)(a.Text, {
+                        children: [(0, i.jsx)(r.Text, {
                             variant: "text-md/semibold",
                             color: "text-default",
                             children: t.engagement?.score?.toFixed(2) ?? "—"
-                        }), (0, i.jsx)(a.Text, {
+                        }), (0, i.jsx)(r.Text, {
                             variant: "text-xs/normal",
                             color: "text-default",
                             children: "Engagement"
                         })]
                     }), (0, i.jsxs)("div", {
                         className: g.a7,
-                        children: [(0, i.jsx)(a.Text, {
+                        children: [(0, i.jsx)(r.Text, {
                             variant: "text-md/semibold",
                             color: "text-default",
                             children: t.dynamics?.score?.toFixed(2) ?? "—"
-                        }), (0, i.jsx)(a.Text, {
+                        }), (0, i.jsx)(r.Text, {
                             variant: "text-xs/normal",
                             color: "text-default",
                             children: "Dynamics"
@@ -254,13 +254,13 @@ function N(e) {
     return (0, i.jsxs)("aside", {
         "aria-label": "Conversations",
         className: g.zr,
-        children: [(0, i.jsx)(r.Y9, {
-            icon: a.oyn,
+        children: [(0, i.jsx)(a.Y9, {
+            icon: r.oyn,
             title: "Conversations",
             children: (0, i.jsx)("div", {
                 className: g.y6,
-                children: (0, i.jsx)(a.K0, {
-                    icon: E ? a.bMW : a.G3N,
+                children: (0, i.jsx)(r.K0, {
+                    icon: E ? r.bMW : r.G3N,
                     "aria-label": E ? "Hide highlights" : "Show highlights",
                     variant: "secondary",
                     size: "sm",
@@ -271,7 +271,7 @@ function N(e) {
             className: g.Qs,
             children: [c && (0, i.jsx)("div", {
                 className: g.f,
-                children: (0, i.jsx)(a.DUT, {
+                children: (0, i.jsx)(r.DUT, {
                     className: g.Qf,
                     onClick: function() {
                         if (0 === n.length || _) return;
@@ -281,7 +281,7 @@ function N(e) {
                             before: e.start_message_id
                         })
                     },
-                    children: (0, i.jsx)(a.Text, {
+                    children: (0, i.jsx)(r.Text, {
                         variant: "text-sm/medium",
                         color: "text-link",
                         children: _ ? "Loading..." : "Load previous conversations"
@@ -301,14 +301,14 @@ function N(e) {
                     onHoverStart: N,
                     onHoverEnd: b
                 }, t.id)
-            }) : (0, i.jsx)(a.Text, {
+            }) : (0, i.jsx)(r.Text, {
                 variant: "text-sm/normal",
                 color: "text-muted",
                 className: g.BI,
                 children: "No conversations available."
             }), u && (0, i.jsx)("div", {
                 className: g.f,
-                children: (0, i.jsx)(a.DUT, {
+                children: (0, i.jsx)(r.DUT, {
                     className: g.Qf,
                     onClick: function() {
                         if (0 === n.length || _) return;
@@ -318,7 +318,7 @@ function N(e) {
                             after: e.end_message_id
                         })
                     },
-                    children: (0, i.jsx)(a.Text, {
+                    children: (0, i.jsx)(r.Text, {
                         variant: "text-sm/medium",
                         color: "text-link",
                         children: _ ? "Loading..." : "Load newer conversations"

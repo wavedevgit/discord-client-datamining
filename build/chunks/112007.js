@@ -50,15 +50,15 @@ function T(e) {
         q = j?.features.has(E.GuildFeatures.HUB) ?? !1,
         W = j?.id,
         {
-            analyticsLocations: Y
+            analyticsLocations: z
         } = (0, _.Ay)(u.A.INVITE_EMBED),
-        [z, Q] = a.useState(!1),
+        [Y, Q] = a.useState(!1),
         K = a.useCallback(() => Q(!1), []),
         J = a.useRef(null),
         X = (0, s.bG)([x.Ay], () => m.A.canAcceptInvite([x.Ay], L)),
         Z = a.useCallback(() => {
-            Q(!0), (0, c.Pq)(W, "show profile", Y)
-        }, [W, Y]),
+            Q(!0), (0, c.Pq)(W, "show profile", z)
+        }, [W, z]),
         $ = a.useCallback(() => {
             let e = "noop";
             B ? (S(), e = "transition") : (N(), e = "accept"), (0, c.he)({
@@ -66,8 +66,8 @@ function T(e) {
                 action: e,
                 inviter_id: R.author.id,
                 invite_message_id: R.id
-            }, Y)
-        }, [L, R, Y, B, S, N]);
+            }, z)
+        }, [L, R, z, B, S, N]);
     if (null == j) {
         if (null == L.guild) return (0, i.jsx)(I.A, {});
         (j = f.DY(L.guild)).premiumTier = L.guild.premium_tier ?? E.TVA.NONE
@@ -85,7 +85,7 @@ function T(e) {
         children: [(0, i.jsx)(h.A, {
             guildId: j.id,
             name: j.name,
-            shouldShow: z,
+            shouldShow: Y,
             onRequestClose: K,
             targetElementRef: J,
             children: () => (0, i.jsx)(g.A.GuildName, {

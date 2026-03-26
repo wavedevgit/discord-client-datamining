@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    a = n(688810),
-    r = n(980923),
+    r = n(688810),
+    a = n(980923),
     o = n(384059),
     c = n(277342),
     d = n(709562);
@@ -25,7 +25,7 @@ function u(e) {
         ...g
     } = e, {
         parentAnalyticsLocation: f
-    } = (0, a.Ay)(), x = t || n || u, E = h ? d.l : d.A, C = (0, r.A)(t, n, u, A), {
+    } = (0, r.Ay)(), x = t || n || u, E = h ? d.l : d.A, C = (0, a.A)(t, n, u, A), {
         events: I,
         play: N,
         Component: b

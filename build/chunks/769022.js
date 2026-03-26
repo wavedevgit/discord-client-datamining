@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(311907),
     s = n(713402),
     l = n(73153),
-    a = n(725613),
-    r = n(734057),
+    r = n(725613),
+    a = n(734057),
     o = n(994500),
     c = n(977997),
     d = n(898926);
@@ -73,17 +73,17 @@ function I(e, t, n) {
         timestamp: n
     }), !0);
     if (null != n && (l.eventType === d.i.USER_JOINED || l.timestamp >= n)) return !1;
-    let a = n ?? Date.now();
+    let r = n ?? Date.now();
     return s.set(i, {
         userId: t,
         key: i,
         eventType: d.i.USER_LEFT,
-        timestamp: a
+        timestamp: r
     }), !0
 }
 class N extends i.Ay.Store {
     initialize() {
-        this.waitFor(r.A, o.A, a.A, c.A)
+        this.waitFor(a.A, o.A, r.A, c.A)
     }
     __getLocalVars = () => ({
         channelEventMaps: p,
@@ -157,7 +157,7 @@ let b = new N(l.h, {
                 leftAt: i
             }
             of n) l = I(t, e, i) || l;
-        let a = new Set(i.map(e => {
+        let r = new Set(i.map(e => {
             let {
                 userId: t,
                 applicationId: n,
@@ -165,29 +165,29 @@ let b = new N(l.h, {
             } = e;
             return u(t, n ?? i)
         }));
-        for (let e of s.values(A)) e.eventType !== d.i.ACTIVITY_ENDED || a.has(e.key) || (l = s.delete(e.key) || l);
+        for (let e of s.values(A)) e.eventType !== d.i.ACTIVITY_ENDED || r.has(e.key) || (l = s.delete(e.key) || l);
         for (let {
                 userId: e,
                 applicationId: n,
                 applicationName: s,
-                endedAt: a
+                endedAt: r
             }
             of i) l = function(e, t, n, i, s) {
             let l = n ?? i;
             if (null == l) return !1;
-            let a = p.get(e);
-            if (null == a) return !1;
-            let r = u(t, l);
-            return a.set(r, {
+            let r = p.get(e);
+            if (null == r) return !1;
+            let a = u(t, l);
+            return r.set(a, {
                 userId: t,
-                key: r,
+                key: a,
                 timestamp: s,
                 applicationId: n,
                 applicationName: i,
                 activityType: "PLAYED_GAME",
                 eventType: d.i.ACTIVITY_ENDED
             }), !0
-        }(t, e, n, s, a) || l;
+        }(t, e, n, s, r) || l;
         return l && E(t), l
     },
     VOICE_CHANNEL_HISTORY_UPDATE_LAST_FETCH_TIME: function(e) {

@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(672385),
-    a = n(985018),
-    r = n(986849);
+    r = n(985018),
+    a = n(986849);
 
 function o(e) {
     let {
@@ -17,7 +17,7 @@ function o(e) {
         context: o
     } = e;
     return (0, i.jsx)("div", {
-        className: r.q,
+        className: a.q,
         children: (0, i.jsx)(s.DUT, {
             onClick: () => {
                 t(), (0, l.Wn)({
@@ -26,11 +26,11 @@ function o(e) {
                     ...o
                 })
             },
-            className: r.w,
+            className: a.w,
             children: (0, i.jsx)(s.Text, {
                 color: "text-strong",
                 variant: "text-sm/normal",
-                children: a.intl.string(a.t["+Xp3hq"])
+                children: r.intl.string(r.t["+Xp3hq"])
             })
         })
     })

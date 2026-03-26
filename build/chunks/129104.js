@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    a = n(397927),
-    r = n(565645),
+    r = n(397927),
+    a = n(565645),
     o = n(375499),
     c = n(937773),
     d = n(961350),
@@ -25,7 +25,7 @@ function g(e) {
         selectedDefaultStatus: g,
         setIsEmojiPickerOpen: f,
         defaultStatusVariant: x
-    } = e, E = s.useRef(null), C = (0, l.bG)([h.A, u.A], () => u.A.getChannel(h.A.getVoiceChannelId())), I = s.useCallback(() => null != t ? (0, i.jsx)(r.A, {
+    } = e, E = s.useRef(null), C = (0, l.bG)([h.A, u.A], () => u.A.getChannel(h.A.getVoiceChannelId())), I = s.useCallback(() => null != t ? (0, i.jsx)(a.A, {
         emojiId: t.id,
         emojiName: t.name,
         animated: !!t.animated
@@ -39,7 +39,7 @@ function g(e) {
         },
         fallbackVariant: x
     }) : null, [t, x, g]);
-    return (0, i.jsx)(a.YNO, {
+    return (0, i.jsx)(r.YNO, {
         targetElementRef: E,
         onRequestOpen: () => f(!0),
         onRequestClose: () => f(!1),
@@ -70,7 +70,7 @@ function g(e) {
             })
         },
         position: "left",
-        animation: a.YNO.Animation.NONE,
+        animation: r.YNO.Animation.NONE,
         align: "top",
         children: (e, n) => {
             let {

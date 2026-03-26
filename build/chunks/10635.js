@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(158954),
-    a = n(736653),
-    r = n(793574),
+    r = n(736653),
+    a = n(793574),
     o = n(688810),
     c = n(311016),
     d = n(351966),
@@ -36,9 +36,9 @@ function O(e) {
     let {
         user: t,
         channel: n
-    } = e, O = __OVERLAY__ || !(0, c.A)(t.id), L = (0, m.Ay)(t.id), M = (0, a.Ay)(), {
+    } = e, O = __OVERLAY__ || !(0, c.A)(t.id), L = (0, m.Ay)(t.id), M = (0, r.Ay)(), {
         analyticsLocations: D
-    } = (0, o.Ay)(r.A.USER_PROFILE_SIDEBAR), G = (0, A.pb)({
+    } = (0, o.Ay)(a.A.USER_PROFILE_SIDEBAR), G = (0, A.pb)({
         layout: "SIDEBAR",
         userId: t.id,
         channelId: n.id

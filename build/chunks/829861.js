@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(571356),
     c = n(990078),
     d = n(397927),
@@ -54,38 +54,38 @@ function W(e) {
         maxHeight: t,
         connectedLocation: n,
         renderExternalHeader: l
-    } = e, W = (0, L.A)(), Y = (0, r.yK)([y.Ay], () => y.Ay.getEmbeddedActivitiesForLocation(n), [n]), z = (0, O.H)(n), q = (0, r.bG)([C.A], () => C.A.getChannel(z)), X = (0, j.IQ)(Y), J = (0, j.Rz)(X), Q = s.useCallback(() => {
+    } = e, W = (0, L.A)(), Y = (0, a.yK)([y.Ay], () => y.Ay.getEmbeddedActivitiesForLocation(n), [n]), z = (0, O.H)(n), q = (0, a.bG)([C.A], () => C.A.getChannel(z)), X = (0, j.IQ)(Y), J = (0, j.Rz)(X), Q = s.useCallback(() => {
         (0, v.gk)(k.Gd.PIP)
-    }, []), $ = s.useRef(null), Z = (0, r.bG)([y.Ay], () => y.Ay.getFocusedLayout()), ee = Z !== k.E8.NO_CHAT, [et, en] = s.useState(g.Ay.activityPanelHeight ?? t ?? null), ei = s.useCallback(e => {
+    }, []), $ = s.useRef(null), Z = (0, a.bG)([y.Ay], () => y.Ay.getFocusedLayout()), ee = Z !== k.E8.NO_CHAT, [et, en] = s.useState(g.Ay.activityPanelHeight ?? t ?? null), ei = s.useCallback(e => {
         u.Ay.updatedUnsyncedSettings({
             activityPanelHeight: e
         })
-    }, []), es = s.useRef(null), [el, ea] = s.useState({
+    }, []), es = s.useRef(null), [el, er] = s.useState({
         width: 0,
         height: 0
     });
     s.useLayoutEffect(() => {
         if (null == es.current) return;
         let e = new ResizeObserver(() => {
-            ea({
+            er({
                 width: es.current?.clientWidth ?? 0,
                 height: es.current?.clientHeight ?? 0
             })
         });
         return e.observe(es.current), () => e.disconnect()
     }, []);
-    let er = el.width / Math.max(el.height, 1) < k.B5,
+    let ea = el.width / Math.max(el.height, 1) < k.B5,
         eo = 0,
         ec = 0,
         ed = (0, R.A)(W?.id);
     if (!ed) {
         let e = el.width,
             t = el.height;
-        er ? ((t = el.width / k.B5) > el.height && (e = (t = el.height) * k.B5), ec = (el.height - t) / 2) : ((e = Math.min(el.height * k.B5)) > el.width && (t = (e = el.width) / k.B5), eo = (el.width - e) / 2)
+        ea ? ((t = el.width / k.B5) > el.height && (e = (t = el.height) * k.B5), ec = (el.height - t) / 2) : ((e = Math.min(el.height * k.B5)) > el.width && (t = (e = el.width) / k.B5), eo = (el.width - e) / 2)
     }
     let eu = J.get(W?.id ?? ""),
-        eh = (0, r.bG)([N.A], () => N.A.getChannelId()),
-        eA = (0, r.yK)([I.Ay], () => null == q ? [] : Array.from(eu?.embeddedActivity.userIds ?? []).map(e => I.Ay.getMember(q.guild_id, e)), [eu, q]),
+        eh = (0, a.bG)([N.A], () => N.A.getChannelId()),
+        eA = (0, a.yK)([I.Ay], () => null == q ? [] : Array.from(eu?.embeddedActivity.userIds ?? []).map(e => I.Ay.getMember(q.guild_id, e)), [eu, q]),
         em = s.useMemo(() => {
             let e = new Map;
             return eA.forEach(t => {
@@ -95,13 +95,13 @@ function W(e) {
         e_ = function(e, t, n) {
             let i = (0, h.A)(e),
                 l = e !== i,
-                [a, r] = s.useState(!1);
+                [r, a] = s.useState(!1);
             s.useEffect(() => {
-                r(!0);
-                let e = setTimeout(() => r(!1), 50);
+                a(!0);
+                let e = setTimeout(() => a(!1), 50);
                 return () => clearTimeout(e)
             }, [e]);
-            let o = !A.A.useReducedMotion && (l || a);
+            let o = !A.A.useReducedMotion && (l || r);
             return s.useMemo(() => {
                 let i = o ? {
                     transitionProperty: "height, max-height",
@@ -138,7 +138,7 @@ function W(e) {
     return (0, i.jsx)(d.NPJ, {
         theme: V.NJ8.DARK,
         children: e => (0, i.jsxs)("div", {
-            className: a()(H.iE, K[Z], e),
+            className: r()(H.iE, K[Z], e),
             ref: $,
             style: e_,
             children: [l?.(), (0, i.jsx)(p.A, {
@@ -154,7 +154,7 @@ function W(e) {
                         children: W?.name
                     })
                 }), (0, i.jsx)("div", {
-                    className: a()(H.ht, {
+                    className: r()(H.ht, {
                         [H.kK]: ed
                     }),
                     style: {

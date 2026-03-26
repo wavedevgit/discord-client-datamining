@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    a = n(456412),
-    r = n(878549),
+    r = n(456412),
+    a = n(878549),
     o = n(313961),
     c = n(493387),
     d = n(235986),
@@ -21,11 +21,11 @@ var i = n(627968),
     f = n(652215),
     x = n(806931),
     E = n(256960);
-let C = (0, a.A)(e => {
+let C = (0, r.A)(e => {
     let {
         participants: t,
         filteredParticipants: n,
-        selectedParticipant: a,
+        selectedParticipant: r,
         participantsVersion: C,
         layout: I,
         onSelectParticipant: N,
@@ -47,7 +47,7 @@ let C = (0, a.A)(e => {
     s.useEffect(() => {
         h._.dispatch(f.jej.REMEASURE_TARGET)
     }, [O, L, P.width, P.height]);
-    let w = s.useMemo(() => n.filter(e => e.type !== x.lp.ACTIVITY || !e.participants.some(e => (0, r.S)(e))), [n, C]),
+    let w = s.useMemo(() => n.filter(e => e.type !== x.lp.ACTIVITY || !e.participants.some(e => (0, a.S)(e))), [n, C]),
         k = (0, l.bG)([o.A], () => o.A.getVoiceParticipantsHidden(T.id), [T.id]);
     if (U?.channelId === T.id) return (0, i.jsx)(m.A, {
         height: L
@@ -69,7 +69,7 @@ let C = (0, a.A)(e => {
         participants: t,
         onContextMenu: b
     });
-    if (null == a) {
+    if (null == r) {
         if (0 === n.length) {
             let e = t.length > 0 && !k;
             return (0, i.jsx)(g.A, {
@@ -98,7 +98,7 @@ let C = (0, a.A)(e => {
         onFullscreenParticipant: S,
         onContextMenuParticipant: b,
         onSelectParticipant: N,
-        selectedParticipant: a,
+        selectedParticipant: r,
         filteredParticipants: w,
         participants: t,
         popoutType: G,

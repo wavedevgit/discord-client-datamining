@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(934551),
-    a = n(397927),
-    r = n(793574),
+    r = n(397927),
+    a = n(793574),
     o = n(688810),
     c = n(792656),
     d = n(422258),
@@ -25,8 +25,8 @@ function g(e) {
         hasAccess: g
     } = (0, u.TW)("favorites_empty_state"), {
         analyticsLocations: f
-    } = (0, o.Ay)(r.A.FAVORITES_GUILD_HOME), x = s.useCallback(() => {
-        (0, a.mMO)(async () => {
+    } = (0, o.Ay)(a.A.FAVORITES_GUILD_HOME), x = s.useCallback(() => {
+        (0, r.mMO)(async () => {
             let {
                 default: e
             } = await n.e("59839").then(n.bind(n, 889186));
@@ -38,23 +38,23 @@ function g(e) {
     }, []);
     return (0, i.jsx)(o.f5, {
         value: f,
-        children: (0, i.jsx)(a.ppr, {
+        children: (0, i.jsx)(r.ppr, {
             theme: t,
-            children: (0, i.jsxs)(a.BJc, {
+            children: (0, i.jsxs)(r.BJc, {
                 direction: "vertical",
                 align: "center",
                 gap: "md",
-                children: [(0, i.jsx)(a._V3, {
+                children: [(0, i.jsx)(r._V3, {
                     zoomable: !1,
                     src: p.A,
                     width: 197,
                     height: 107
-                }), (0, i.jsx)(a.SGT, {
+                }), (0, i.jsx)(r.SGT, {
                     className: _.Y,
                     noteClassName: _.A,
                     note: m.intl.string(A.default["+SuGKb"]),
                     children: m.intl.string(A.default["wh+Rz1"])
-                }), g ? (0, i.jsx)(a.Button, {
+                }), g ? (0, i.jsx)(r.Button, {
                     text: m.intl.string(A.default["6kk0gM"]),
                     onClick: x,
                     icon: l.PlusMediumIcon

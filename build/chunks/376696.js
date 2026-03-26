@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(397927),
     c = n(80682),
     d = n(845056),
@@ -59,12 +59,12 @@ function k(e) {
         z = Array.from((0, u.Rz)(Y).values()),
         q = (0, I.W)(),
         X = (0, N.i)(e => e.showSelfActivity),
-        [J, Q] = (0, r.yK)([S.A], () => [S.A.getStreamForUser(n.id, t.getGuildId()), S.A.getActiveStreamForUser(n.id, t.getGuildId())], [t, n.id]),
-        [$, Z] = (0, r.yK)([R.A, v.A, y.A, A.default], () => (0, m.eo)(t, R.A, v.A, y.A, A.default)),
-        ee = (0, r.bG)([T.default], () => T.default.getId()),
-        et = (0, r.bG)([j.A], () => (0, _.nr)(J, j.A), [J]),
+        [J, Q] = (0, a.yK)([S.A], () => [S.A.getStreamForUser(n.id, t.getGuildId()), S.A.getActiveStreamForUser(n.id, t.getGuildId())], [t, n.id]),
+        [$, Z] = (0, a.yK)([R.A, v.A, y.A, A.default], () => (0, m.eo)(t, R.A, v.A, y.A, A.default)),
+        ee = (0, a.bG)([T.default], () => T.default.getId()),
+        et = (0, a.bG)([j.A], () => (0, _.nr)(J, j.A), [J]),
         en = (0, d.m)(n, k ?? et),
-        ei = (0, r.bG)([O.Ay], () => O.Ay.getVoiceStatesForChannel(t).find(e => e.user.id === n.id) ?? null, [t, n.id]),
+        ei = (0, a.bG)([O.Ay], () => O.Ay.getVoiceStatesForChannel(t).find(e => e.user.id === n.id) ?? null, [t, n.id]),
         es = s.useMemo(() => null != ei ? [ei] : [], [ei]),
         {
             enableHangStatus: el
@@ -72,11 +72,11 @@ function k(e) {
             guildId: t.guild_id,
             location: "VoiceUserActivities"
         }),
-        ea = (0, C.m)({
+        er = (0, C.m)({
             location: "voice_channel_activities"
         }),
-        er = (0, r.bG)([E.A], () => E.A.getDetectableIdsToApplicationIds()),
-        eo = (0, r.bG)([T.default], () => T.default.getId() === n.id && !X),
+        ea = (0, a.bG)([E.A], () => E.A.getDetectableIdsToApplicationIds()),
+        eo = (0, a.bG)([T.default], () => T.default.getId() === n.id && !X),
         ec = (0, h.r9)() && (0, h.UK)(t.id),
         ed = null != J && !ec,
         eu = en.length + z.length > 0,
@@ -93,7 +93,7 @@ function k(e) {
         setIsHangStatusInputFocused: H,
         setIsEmojiPickerOpen: F
     }) : eA ? (0, i.jsxs)(o.HOs, {
-        className: a()(w.popover, P.kL),
+        className: r()(w.popover, P.kL),
         children: [eh && el && null != B ? (0, i.jsxs)("div", {
             className: P.Sz,
             children: [(0, i.jsx)(o.Text, {
@@ -126,8 +126,8 @@ function k(e) {
             onAction: l,
             enableUserHoverActivities: !0
         }, e.application.id)), en.map(e => {
-            let a = e.application_id;
-            return (null != q && (a = q), ea && null != a && null != er[a]) ? (0, i.jsxs)(s.Fragment, {
+            let r = e.application_id;
+            return (null != q && (r = q), er && null != r && null != ea[r]) ? (0, i.jsxs)(s.Fragment, {
                 children: [(0, i.jsx)(M.A, {
                     presenceActivity: e,
                     channel: t,
@@ -136,7 +136,7 @@ function k(e) {
                     enableUserHoverActivities: !0
                 }), (0, i.jsx)(b.A, {
                     className: P.L,
-                    applicationId: a,
+                    applicationId: r,
                     rewardOfferNoticeClassName: P.Nh,
                     userIds: [n.id],
                     location: "voice_channel",

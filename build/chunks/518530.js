@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(554146),
-    a = n(397927),
-    r = n(367513),
+    r = n(397927),
+    a = n(367513),
     o = n(738876),
     c = n(698718),
     d = n(812771),
@@ -33,10 +33,10 @@ let C = function(e) {
         })
     }, []);
     let I = s.useCallback(() => {
-            r.A.updateChatOpen(t.id, !1, "close button"), _._.safeDispatch(g.jej.FOCUS_CHAT_BUTTON)
+            a.A.updateChatOpen(t.id, !1, "close button"), _._.safeDispatch(g.jej.FOCUS_CHAT_BUTTON)
         }, [t.id]),
         N = (0, i.jsx)(A.Ay.Icon, {
-            icon: a.PGe,
+            icon: r.PGe,
             tooltip: x.intl.string(x.t.cpT0Cq),
             onClick: I
         });
@@ -51,7 +51,7 @@ let C = function(e) {
             toolbar: N,
             "aria-label": x.intl.string(x.t.BIYAqa),
             children: [(0, i.jsx)(A.Ay.ChannelIcon, {
-                icon: a.oyn,
+                icon: r.oyn,
                 "aria-label": x.intl.string(x.t.Kx5kCN)
             }), (0, i.jsx)(A.Ay.Title, {
                 children: t.name

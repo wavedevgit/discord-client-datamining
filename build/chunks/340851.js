@@ -8,8 +8,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(990078),
+    r = n.n(l),
+    a = n(990078),
     o = n(397927),
     c = n(367513),
     d = n(442433),
@@ -59,7 +59,7 @@ function D(e) {
         count: t
     });
     return (0, i.jsxs)("div", {
-        className: a()(L.yJ, {
+        className: r()(L.yJ, {
             [L.Nr]: n
         }),
         children: [(0, i.jsx)("div", {
@@ -108,8 +108,8 @@ let G = (0, A.J)(function(e) {
         tabIndex: ei,
         isSelf: es,
         application: el,
-        hangStatusActivity: ea,
-        showHangStatus: er
+        hangStatusActivity: er,
+        showHangStatus: ea
     } = e, eo = s.useRef(null), [ec, ed] = s.useState(!1), eu = s.useRef(null), [eh, eA] = s.useState(!1), [em, e_] = s.useState(!1), [ep, eg] = s.useState(!1), ef = eh || ep || em, ex = () => {
         ed(!ec)
     }, eE = (e, t) => {
@@ -189,7 +189,7 @@ let G = (0, A.J)(function(e) {
                         otherClientSessionType: ee,
                         voicePlatform: et,
                         embeddedApplication: w,
-                        avatarContainerClass: a()({
+                        avatarContainerClass: r()({
                             [L.dj]: !0
                         }),
                         disabled: en && !n,
@@ -201,9 +201,9 @@ let G = (0, A.J)(function(e) {
                         isSelf: es,
                         application: el,
                         channelId: A.id,
-                        hangStatusActivity: ea,
-                        showHangStatus: er
-                    }, en ? (0, i.jsx)(r.m, {
+                        hangStatusActivity: er,
+                        showHangStatus: ea
+                    }, en ? (0, i.jsx)(a.m, {
                         text: (0, g.A)(ee) ?? O.intl.string(O.t.IyYqqY),
                         children: (0, i.jsx)(I.Ay, {
                             ref: eo,
@@ -217,11 +217,11 @@ let G = (0, A.J)(function(e) {
                             user: l,
                             onAction: eC,
                             onWatchStream: z ? eI : void 0,
-                            hangStatusActivity: ea,
+                            hangStatusActivity: er,
                             setIsHangStatusInputFocused: eA,
                             setIsHangStatusEmojiPickerOpen: eg
                         }),
-                        shouldShow: (Z || er && ef && es) && !ec,
+                        shouldShow: (Z || ea && ef && es) && !ec,
                         onRequestClose: eE,
                         spacing: 17,
                         children: () => (0, i.jsx)(I.Ay, {

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(478437),
     s = n(311907),
     l = n(811024),
-    a = n(933958),
-    r = n(969151),
+    r = n(933958),
+    a = n(969151),
     o = n(297334),
     c = n(508654),
     d = n(233993),
@@ -33,8 +33,8 @@ function b(e, t) {
 function S(e) {
     let t = (0, s.bG)([E.Ay], () => E.Ay.isMuted(e)),
         n = (0, c.BP)(e),
-        i = (0, s.yK)([a.Ay, f.A], () => a.Ay.getEmbeddedActivitiesForGuild(e).filter(e => !(0, o.PH)([...e.userIds], f.A.getBlockedOrIgnoredIDs()))),
-        N = (0, r.H)(i[0]?.location),
+        i = (0, s.yK)([r.Ay, f.A], () => r.Ay.getEmbeddedActivitiesForGuild(e).filter(e => !(0, o.PH)([...e.userIds], f.A.getBlockedOrIgnoredIDs()))),
+        N = (0, a.H)(i[0]?.location),
         S = (0, l.Gp)(N),
         {
             guildHasVoice: T,
@@ -62,7 +62,7 @@ function S(e) {
             }
         }, [e, t]),
         j = m.default.getId();
-    return (0, s.cf)([x.A, _.A, a.Ay, u.A, A.A, g.A], () => {
+    return (0, s.cf)([x.A, _.A, r.Ay, u.A, A.A, g.A], () => {
         let s = x.A.getVoiceChannelId(),
             l = _.A.getChannel(s)?.guild_id === e,
             c = !1,
@@ -91,12 +91,12 @@ function S(e) {
             M = (() => {
                 if (S) return i.length > 0;
                 for (let e of i) {
-                    let t = _.A.getChannel((0, r.H)(e.location));
+                    let t = _.A.getChannel((0, a.H)(e.location));
                     if (null != t && (0, h.gV)(t.type)) return !0
                 }
                 return !1
             })(),
-            D = a.Ay.getEmbeddedActivitiesForGuild(e).length > 0;
+            D = r.Ay.getEmbeddedActivitiesForGuild(e).length > 0;
         return l ? (c = !0, m = n?.channel_id === s, p = b, f = L, E = R, C = D) : (c = T, m = null != n, p = N, f = v, E = O, C = M), {
             audio: c,
             video: f,

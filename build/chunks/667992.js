@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(990078),
+    r = n.n(l),
+    a = n(990078),
     o = n(397927),
     c = n(442433),
     d = n(717558),
@@ -55,7 +55,7 @@ function f(e) {
         guildId: t.guild_id,
         channelId: t.id,
         clickTrap: !0,
-        children: e => (0, i.jsx)(r.m, {
+        children: e => (0, i.jsx)(a.m, {
             targetElementRef: f,
             __unsupportedReactNodeAsText: l.userNick,
             position: "bottom",
@@ -69,7 +69,7 @@ function f(e) {
                 children: (0, i.jsx)(o.euF, {
                     src: N ?? l.user.getAvatarURL(t.guild_id, 24),
                     size: o._3J.SIZE_24,
-                    className: a()(g.my, _),
+                    className: r()(g.my, _),
                     "aria-label": l.userNick,
                     isSpeaking: I && !C.enabled
                 })
@@ -94,7 +94,7 @@ function x(e) {
             className: t
         }, s),
         renderMoreUsers: (e, t, n) => (0, i.jsx)("div", {
-            className: a()(g.$U, t),
+            className: r()(g.$U, t),
             children: e
         }, n)
     })

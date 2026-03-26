@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(533781),
-    a = n(265872),
-    r = n(688810),
+    r = n(265872),
+    a = n(688810),
     o = n(384059),
     c = n(421773),
     d = n(729081),
@@ -23,7 +23,7 @@ function m(e) {
         setWhichPopoutIsOpen: _
     } = e, {
         parentAnalyticsLocation: p
-    } = (0, r.Ay)(), g = s.useRef(null), {
+    } = (0, a.Ay)(), g = s.useRef(null), {
         isHovered: f,
         setIsHovered: x,
         onMouseEnter: E,
@@ -42,10 +42,10 @@ function m(e) {
     }, [C, S, m]), y = s.useCallback(() => {
         (0, o.X)(p, o.O.GIFTING), m === h.P.GIFTING ? (_?.(void 0), C()) : (null != m ? (N(), E()) : N(), _?.(h.P.GIFTING))
     }, [E, C, p, N, _, m]);
-    return (0, i.jsx)(a.Y, {
+    return (0, i.jsx)(r.Y, {
         targetElementRef: g,
         shouldShow: f && (m === h.P.GIFTING || null == m) || m === h.P.GIFTING,
-        animation: a.Y.Animation.FADE,
+        animation: r.Y.Animation.FADE,
         animationPosition: "top",
         position: "top",
         align: "center",

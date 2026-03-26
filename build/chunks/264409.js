@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    a = n(4208),
-    r = n(827734),
+    r = n(4208),
+    a = n(827734),
     o = n(397927),
     c = n(263063),
     d = n(142163);
@@ -22,8 +22,8 @@ function u(e) {
         onAnimationRest: h
     } = e, A = {}, m = {};
     A.transform = "translate3d(10px, 10px, 0) scale3d(3, 3, 1)", m.transform = "translate3d(0, 0, 0) scale3d(1, 1, 1)";
-    let _ = (0, o.rdh)(r.A.unsafe_rawColors.BRAND_500).hex(),
-        p = (0, o.rdh)(r.A.unsafe_rawColors.PRIMARY_630).hex();
+    let _ = (0, o.rdh)(a.A.unsafe_rawColors.BRAND_500).hex(),
+        p = (0, o.rdh)(a.A.unsafe_rawColors.PRIMARY_630).hex();
     s && null == t.icon && (A.backgroundColor = _, m.backgroundColor = p);
     let g = (0, o.pnh)(n, {
         from: A,
@@ -43,7 +43,7 @@ function u(e) {
                 style: {
                     margin: 0
                 },
-                children: (0, i.jsx)(a.animated.div, {
+                children: (0, i.jsx)(r.animated.div, {
                     className: d.NG,
                     style: e,
                     children: (0, i.jsx)("div", {

@@ -6,8 +6,8 @@ n.d(t, {
 });
 var i, s = n(735438),
     l = n.n(s),
-    a = n(311907),
-    r = n(73153),
+    r = n(311907),
+    a = n(73153),
     o = n(455234),
     c = n(63995),
     d = n(69407),
@@ -60,8 +60,8 @@ function j(e) {
     if (null == n || 0 === n.length) return !1;
     let i = null,
         s = null,
-        a = null,
         r = null,
+        a = null,
         o = !0,
         c = !0,
         d = !1,
@@ -85,7 +85,7 @@ function j(e) {
         for (let e = 0; e < p.length; e++) {
             let t = p[e];
             if (!c && !o) break;
-            (T(t.id) || l().some(t.threadIds, T)) && (null == r && (r = t.id), C = !0), (v(t.id) || l().some(t.threadIds, v)) && (null == a && (a = t.id), E += m.Ay.getMentionCount(t.id), E += l().sumBy(t.threadIds, m.Ay.getMentionCount))
+            (T(t.id) || l().some(t.threadIds, T)) && (null == a && (a = t.id), C = !0), (v(t.id) || l().some(t.threadIds, v)) && (null == r && (r = t.id), E += m.Ay.getMentionCount(t.id), E += l().sumBy(t.threadIds, m.Ay.getMentionCount))
         }
     let N = null,
         j = null,
@@ -93,7 +93,7 @@ function j(e) {
     o && E > 0 ? N = {
         mode: "mentions",
         mentionCount: E,
-        targetChannelId: a
+        targetChannelId: r
     } : !d && l().some(R, y) ? N = {
         mode: "voice-channels",
         mentionCount: 0,
@@ -101,7 +101,7 @@ function j(e) {
     } : c && C && (N = {
         mode: "unread",
         mentionCount: 0,
-        targetChannelId: r
+        targetChannelId: a
     }), o && g > 0 ? j = {
         mode: "mentions",
         mentionCount: g,
@@ -160,7 +160,7 @@ function G(e) {
     } = e;
     return null != t && R(t)
 }
-class U extends a.Ay.Store {
+class U extends r.Ay.Store {
     static displayName = "ChannelListUnreadsStore";
     initialize() {
         this.waitFor(x.A, h.A, A.A, u.A, m.Ay, _.A, g.Ay, c.A, p.Ay)
@@ -169,7 +169,7 @@ class U extends a.Ay.Store {
         return b[e] ?? N
     }
 }
-let P = new U(r.h, {
+let P = new U(a.h, {
     UPDATE_CHANNEL_LIST_DIMENSIONS: function(e) {
         let {
             guildId: t,

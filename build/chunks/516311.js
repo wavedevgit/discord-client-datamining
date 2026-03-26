@@ -8,8 +8,8 @@ var i = n(627968);
 n(64700);
 var s = n(284009),
     l = n.n(s),
-    a = n(311907),
-    r = n(397927);
+    r = n(311907),
+    a = n(397927);
 n(313961), n(666328), n(734337), n(74329), n(956747);
 var o = n(288104),
     c = n(661504),
@@ -25,18 +25,18 @@ n(806931);
 var f = n(985018);
 
 function x(e) {
-    let t = (0, a.bG)([h.A], () => h.A.getChannel(e), [e]),
-        n = (0, a.bG)([A.A], () => A.A.can(_.QY, t)),
+    let t = (0, r.bG)([h.A], () => h.A.getChannel(e), [e]),
+        n = (0, r.bG)([A.A], () => A.A.can(_.QY, t)),
         s = (0, g.zU)(),
-        l = (0, a.bG)([p.A], () => p.A.getStageInstanceByChannel(e), [e]),
+        l = (0, r.bG)([p.A], () => p.A.getStageInstanceByChannel(e), [e]),
         o = (0, d.Us)();
-    return t?.isGuildStageVoice() && n && !s ? null != l ? (0, i.jsx)(r.Drp, {
+    return t?.isGuildStageVoice() && n && !s ? null != l ? (0, i.jsx)(a.Drp, {
         id: "edit-stage",
         label: f.intl.string(f.t["I+9bLx"]),
         action: () => {
             null != t && (0, m.tQ)(t, o)
         }
-    }) : (0, i.jsx)(r.Drp, {
+    }) : (0, i.jsx)(a.Drp, {
         id: "start-stage",
         label: f.intl.string(f.t.OYbHfv),
         action: () => {
@@ -46,7 +46,7 @@ function x(e) {
 }
 
 function E(e) {
-    let t = (0, a.bG)([h.A], () => h.A.getChannel(e), [e]);
+    let t = (0, r.bG)([h.A], () => h.A.getChannel(e), [e]);
     l()(null != t, "useNotificationSettingsItem: channel cannot be undefined");
     let n = (0, u.os)("StageChannelCallOverflowMenu"),
         i = (0, c.Ay)(t),

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(397927),
+    r = n.n(l),
+    a = n(397927),
     o = n(402216),
     c = n(667992),
     d = n(876542);
@@ -22,22 +22,22 @@ let u = s.memo(function(e) {
         channel: A,
         isStreamLive: m
     } = e;
-    return (0, i.jsxs)(r.DUT, {
+    return (0, i.jsxs)(a.DUT, {
         onClick: s,
-        className: a()(d.kL, l),
-        children: [null == h ? (0, i.jsx)(r.nFg, {
+        className: r()(d.kL, l),
+        children: [null == h ? (0, i.jsx)(a.nFg, {
             size: "custom",
             color: "currentColor",
             width: 20,
             height: 20,
             className: d.Vo
-        }) : (0, i.jsx)(r.cNw, {
+        }) : (0, i.jsx)(a.cNw, {
             size: "custom",
             color: "currentColor",
             width: 20,
             height: 20,
             className: d.Vo
-        }), (0, i.jsxs)(r.Text, {
+        }), (0, i.jsxs)(a.Text, {
             color: "text-strong",
             variant: "text-md/semibold",
             className: d.Qq,
@@ -47,12 +47,12 @@ let u = s.memo(function(e) {
                 channel: A,
                 speakers: h
             }), m && (0, i.jsx)(o.Ay, {})]
-        }), (0, i.jsx)(r.abt, {
+        }), (0, i.jsx)(a.abt, {
             size: "custom",
             color: "currentColor",
             width: 20,
             height: 20,
-            className: a()(d.mw, {
+            className: r()(d.mw, {
                 [d.VU]: u
             })
         })]
