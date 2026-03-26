@@ -17,8 +17,8 @@ var n = a(627968),
     b = a(914410),
     f = a(954571),
     g = a(872725),
-    A = a(857586),
-    h = a(788868),
+    h = a(857586),
+    A = a(788868),
     x = a(652215),
     R = a(985018),
     C = a(130474);
@@ -66,7 +66,7 @@ let E = e => {
                 function_name: (0, d.snakeCase)(U.name)
             }))
         }, [U, a]),
-        K = O && Y === h.xc.FP_ONLY,
+        K = O && Y === A.xc.FP_ONLY,
         X = !(0, d.isEmpty)(S),
         q = X && (0, c.q)(W),
         z = (0, u.rdh)(u.LU0.colors.BACKGROUND_BASE_LOW).hex(),
@@ -170,7 +170,7 @@ let E = e => {
                     })]
                 }), $ && (0, n.jsxs)("div", {
                     className: C.yk,
-                    children: [K && (0, n.jsx)(A.A, {
+                    children: [K && (0, n.jsx)(h.A, {
                         fullWidth: !0,
                         defaultTextOverride: R.intl.string(R.t.sEAnVH)
                     }), !K && (0, n.jsx)(o.$nd, {

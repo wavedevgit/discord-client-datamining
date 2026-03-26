@@ -17,8 +17,8 @@ var n = a(627968),
     b = a(676279),
     f = a(23003),
     g = a(652215),
-    A = a(693591),
-    h = a(992284);
+    h = a(693591),
+    A = a(992284);
 let x = e => {
     let {
         name: t,
@@ -56,7 +56,7 @@ let x = e => {
             text: x
         }] : U;
         return (0, n.jsx)("div", {
-            className: h.bentoBoxButton,
+            className: A.bentoBoxButton,
             children: (0, n.jsx)(c.ButtonGroup, {
                 children: a?.map((e, t) => {
                     let {
@@ -73,12 +73,12 @@ let x = e => {
             })
         })
     }, q = () => (0, n.jsxs)("div", {
-        className: i()(h.textBox, h[`${P}`], V && h.overlayTextBox),
+        className: i()(A.textBox, A[`${P}`], V && A.overlayTextBox),
         children: [(0, n.jsxs)("div", {
             children: [null == S ? null : "gradient" === y ? (0, n.jsx)("div", {
-                className: h.badgeContainer,
+                className: A.badgeContainer,
                 children: (0, n.jsx)("div", {
-                    className: h.badge,
+                    className: A.badge,
                     children: (0, n.jsx)(c.Heading, {
                         variant: "eyebrow",
                         color: "always-white",
@@ -86,7 +86,7 @@ let x = e => {
                     })
                 })
             }) : (0, n.jsx)("div", {
-                className: h.badgeContainer,
+                className: A.badgeContainer,
                 children: (0, n.jsx)(o.Exy, {
                     type: {
                         text: S
@@ -96,30 +96,30 @@ let x = e => {
             }), (0, n.jsx)(c.Heading, {
                 variant: K,
                 color: "text-strong",
-                className: h.header,
+                className: A.header,
                 children: a
             })]
         }), (0, n.jsx)(c.Text, {
             variant: "text-md/medium",
             color: "text-strong",
-            className: h.description,
+            className: A.description,
             children: s
         }), (0, n.jsx)(X, {})]
     }), z = () => (0, n.jsx)("div", {
-        className: i()(h.boxArtContainer, h[`${P}`]),
+        className: i()(A.boxArtContainer, A[`${P}`]),
         children: (0, n.jsx)(m.A, {
             playsInline: !0,
             preload: E ? "auto" : "none",
             muted: !0,
             poster: R,
             loop: !0,
-            className: i()(V ? h.overlayImage : h.boxVideo, {
+            className: i()(V ? A.overlayImage : A.boxVideo, {
                 [N]: null != N
             }),
             ref: M,
             children: (0, n.jsx)("source", {
                 src: C,
-                type: O ? A.a.MP4 : A.a.WEBM
+                type: O ? h.a.MP4 : h.a.WEBM
             })
         }, C)
     }), $ = v % 2 != 0;
@@ -134,17 +134,17 @@ let x = e => {
         children: (0, n.jsxs)(c.hLv, {
             ref: w,
             id: t,
-            className: i()(h.backgroundColor, h.boxContainer, h[`${P}`], h.gradientBackground, G && h.overlayImageMode, V && h.overlayMode),
+            className: i()(A.backgroundColor, A.boxContainer, A[`${P}`], A.gradientBackground, G && A.overlayImageMode, V && A.overlayMode),
             onMouseEnter: H,
             onFocus: H,
             onBlur: F,
             onMouseLeave: F,
             color: "purple",
             children: [W && (0, n.jsx)("div", {
-                className: h.backgroundVideoContainer,
+                className: A.backgroundVideoContainer,
                 children: (0, n.jsx)(_.A, {
                     preload: E ? "auto" : "none",
-                    className: h.backgroundVideo,
+                    className: A.backgroundVideo,
                     src: j
                 })
             }), (0, n.jsx)(() => $ ? (0, n.jsxs)(n.Fragment, {

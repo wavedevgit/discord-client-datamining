@@ -17,8 +17,8 @@ var n = a(627968),
     b = a(320118),
     f = a(976860),
     g = a(780964),
-    A = a(840065),
-    h = a(975571),
+    h = a(840065),
+    A = a(975571),
     x = a(872725),
     R = a(566119),
     C = a(94264),
@@ -30,7 +30,7 @@ var n = a(627968),
     S = a(327557),
     y = a(909340),
     P = a(455482);
-let j = h.A.getArticleURL(E.MVz.ORBS_REWARDS_FAQ);
+let j = A.A.getArticleURL(E.MVz.ORBS_REWARDS_FAQ);
 
 function D(e) {
     (0, R.o8)(e), window.open(j, "_blank")
@@ -43,7 +43,7 @@ let U = e => {
         programReward: s
     } = (0, b.F)({
         location: "PremiumTenureRewardsOrbsCard"
-    }), h = (0, u.A)("(min-width: 720px)"), j = (0, _.DP)(), U = r.useMemo(() => ({
+    }), A = (0, u.A)("(min-width: 720px)"), j = (0, _.DP)(), U = r.useMemo(() => ({
         hueRotate: 25,
         glowAmount: (0, o.M)(j) ? 2 : 8,
         blurAmount: 10
@@ -76,7 +76,7 @@ let U = e => {
                         text: T.intl.string(I.default.KVCfnE),
                         variant: t ? "overlay-primary" : "secondary",
                         onClick: () => {
-                            (0, R.CC)(a), (0, A.openUserSettings)(g.X.BILLING_PANEL)
+                            (0, R.CC)(a), (0, h.openUserSettings)(g.X.BILLING_PANEL)
                         }
                     }), headerText: T.intl.string(I.default.uuZJXR), subheaderText: T.intl.format(I.default.dkeEV7, {
                         helpdeskArticle: () => D(a)
@@ -92,7 +92,7 @@ let U = e => {
                                 text: T.intl.string(I.default.KVCfnE),
                                 variant: "critical-secondary",
                                 onClick: () => {
-                                    (0, R.ue)(a), (0, A.openUserSettings)(g.X.BILLING_PANEL)
+                                    (0, R.ue)(a), (0, h.openUserSettings)(g.X.BILLING_PANEL)
                                 }
                             })
                         })
@@ -119,7 +119,7 @@ let U = e => {
                         variant: t ? "overlay-primary" : "secondary",
                         icon: l.tvc,
                         onClick: () => {
-                            (0, R.Jv)(a), (0, A.openUserSettings)(g.X.SUBSCRIPTIONS_PANEL)
+                            (0, R.Jv)(a), (0, h.openUserSettings)(g.X.SUBSCRIPTIONS_PANEL)
                         }
                     }), headerText: T.intl.string(I.default.ISnOet), subheaderText: T.intl.format(I.default["vjaRZ/"], {
                         helpdeskArticle: () => D(a)
@@ -128,7 +128,7 @@ let U = e => {
             default:
                 return null
         }
-    }(s, h);
+    }(s, A);
     if (null == O) return null;
     let {
         displayTotalLifetimeRewards: M,
@@ -160,7 +160,7 @@ let U = e => {
             }), (0, n.jsxs)("div", {
                 className: S.FS,
                 children: [(0, n.jsx)(l.NPJ, {
-                    theme: h ? E.NJ8.DARKER : void 0,
+                    theme: A ? E.NJ8.DARKER : void 0,
                     children: e => (0, n.jsx)("div", {
                         className: i()(e, S.aZ),
                         children: (0, n.jsx)(l.Exy, {

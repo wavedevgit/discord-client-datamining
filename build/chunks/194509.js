@@ -26,14 +26,14 @@ let p = e => e === u.pe.TIER_0 ? _.intl.string(_.t.rk4Uu8) : _.intl.string(_.t.V
             subscriptionTier: b,
             premiumModalAnalyticsLocation: f,
             giftMessage: g,
-            onClick: A
-        } = e, h = (0, o.Ay)(), x = p(b);
+            onClick: h
+        } = e, A = (0, o.Ay)(), x = p(b);
         return (0, n.jsx)(c.A, {
             isGift: !0,
             subscriptionTier: b,
             premiumModalAnalyticsLocation: f,
             giftMessage: g,
-            onClick: A,
+            onClick: h,
             children: e => {
                 let {
                     onClick: o
@@ -41,7 +41,7 @@ let p = e => e === u.pe.TIER_0 ? _.intl.string(_.t.rk4Uu8) : _.intl.string(_.t.V
                 return (0, n.jsxs)(d.$n, {
                     "data-migration-pending": !0,
                     innerClassName: m.Nq,
-                    color: r ?? ((0, i.Mw)(h) ? d.XD.WHITE : d.XD.BRAND),
+                    color: r ?? ((0, i.Mw)(A) ? d.XD.WHITE : d.XD.BRAND),
                     look: u ?? d.pR.OUTLINED,
                     className: s()(t, m.xP),
                     onClick: o,

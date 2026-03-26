@@ -110,22 +110,14 @@ function ej(e) {
     S || (a && r ? T && null == s ? v.push(u.M.ACCOUNT_LINK_INVITE_FRIENDS) : v.push(u.M.POST_ACCOUNT_CONNECTION_RTC_POPOVER) : !a && c && null != t && (y = !0), null != f && l?.id != null && l?.name != null && v.push(u.M.JOIN_GAME_COMMUNITY_RTC_CTA));
     let {
         shouldShow: j,
-        markAsDismissed: R,
-        isRecurringExperimentEnabled: O
+        markAsDismissed: R
     } = (0, K.A)({
         application: t,
-        experimentParams: {
-            location: "ActivityPanelGameCard"
-        },
         disabled: !y,
         dismissibleContent: u.M.GAME_ACCOUNT_LINK_RECURRING_UPSELL,
         dismissibleContentGroupName: eb.m.ACCOUNT_NAME_ZONE,
         bypassAutoDismiss: !0
     });
-    !O && y && v.push(u.M.ACCOUNT_LINK_PROMPT);
-    let M = (e, t) => {
-        j ? R(t) : e(t)
-    };
     return S ? null : (0, i.jsx)(P.Ay, {
         contentTypes: v,
         groupName: eb.m.ACCOUNT_NAME_ZONE,
@@ -176,7 +168,7 @@ function ej(e) {
                 }],
                 shouldShow: !0,
                 onRequestClose: () => a(eb.i.USER_DISMISS)
-            }) : s === u.M.ACCOUNT_LINK_PROMPT || j ? (0, i.jsx)(A.AM, {
+            }) : j ? (0, i.jsx)(A.AM, {
                 graphic: {
                     type: "dynamic",
                     component: h.DynamicGraphicComponent.ACCOUNT_LINK_DISPLAY,
@@ -192,14 +184,14 @@ function ej(e) {
                 align: "right",
                 shouldShow: !0,
                 gradientColor: "purple",
-                onRequestClose: () => M(a, eb.i.USER_DISMISS),
+                onRequestClose: () => R(eb.i.USER_DISMISS),
                 caretConfig: {
                     align: "end"
                 },
                 actions: [{
                     text: ev.intl.string(b.altCta ? ev.t.jynBQ5 : ev.t.lw71Nf),
                     onClick: () => {
-                        M(a, eb.i.TAKE_ACTION), d({
+                        R(eb.i.TAKE_ACTION), d({
                             analyticsLocations: E
                         })
                     }

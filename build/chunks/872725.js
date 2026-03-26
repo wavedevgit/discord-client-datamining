@@ -35,8 +35,8 @@ let m = {
             className: b,
             cardClassName: f,
             cardStyle: g = p,
-            cardType: A,
-            artboard: h = "BaseGlowRemapped",
+            cardType: h,
+            artboard: A = "BaseGlowRemapped",
             fit: x = "layout",
             glowing: R = !1,
             glowAmount: C = 8,
@@ -62,7 +62,7 @@ let m = {
             onMouseEnter: I,
             children: [R && y !== c.BW.Loading && (0, n.jsx)(o.w, {
                 buffer: P,
-                artboard: h,
+                artboard: A,
                 artboardProperties: m,
                 eventTargetRef: T,
                 className: _.Q,
@@ -70,7 +70,7 @@ let m = {
                 fit: x,
                 withReducedMotion: D ? "halt" : "play"
             }), (0, n.jsx)(u.ZpM, {
-                type: A ?? u.sl2.CUSTOM,
+                type: h ?? u.sl2.CUSTOM,
                 className: f,
                 style: g,
                 children: t

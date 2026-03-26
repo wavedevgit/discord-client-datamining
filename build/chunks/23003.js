@@ -17,8 +17,8 @@ var n, r, s, i = a(627968),
     b = a(206835),
     f = a(649032),
     g = a(26508),
-    A = a(780964),
-    h = a(358776),
+    h = a(780964),
+    A = a(358776),
     x = a(840065),
     R = a(676279),
     C = a(975571),
@@ -72,7 +72,7 @@ let ec = () => {
     }), n = (0, v.O9)(), r = (0, E.A)({
         location: "bento_box"
     }), s = (0, d.useCallback)(() => {
-        (0, x.openUserSettings)(A.X.PROFILE_PANEL, {
+        (0, x.openUserSettings)(h.X.PROFILE_PANEL, {
             analyticsLocations: e
         }, () => (0, m.L)({
             analyticsLocations: e
@@ -210,23 +210,23 @@ let ec = () => {
         previewImage: ec.yourSpace.thumbnail,
         onClick: () => {
             {
-                let t = (0, h.Ci)("openClientThemes"),
+                let t = (0, A.Ci)("openClientThemes"),
                     {
                         openUserSettings: n
                     } = a(840065);
-                n(t ? A.X.DISPLAY_THEME_CATEGORY : A.X.APPEARANCE_PANEL, {
+                n(t ? h.X.DISPLAY_THEME_CATEGORY : h.X.APPEARANCE_PANEL, {
                     analyticsLocations: e
                 })
             }
         },
         videoUrl: ec.yourSpace.assetUrl
-    }, eA = {
+    }, eh = {
         name: "emojis",
         title: j.intl.string(j.t.zY5PPb),
         description: j.intl.string(j.t.R5Xag2),
         previewImage: ec.emojis.thumbnail,
         videoUrl: ec.emojis.assetUrl
-    }, eh = {
+    }, eA = {
         name: "noLimits",
         title: j.intl.string(j.t["6b3ydG"]),
         description: j.intl.string(j.t["Y+IJyg"]),
@@ -263,7 +263,7 @@ let ec = () => {
         bestOfBoxes: [
             [ef],
             [eg],
-            [eA, eh]
+            [eh, eA]
         ]
     }
 }
