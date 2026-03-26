@@ -22,8 +22,8 @@ var i = n(627968),
     C = n(574660),
     I = n(429913),
     E = n(713654),
-    v = n(734057),
-    b = n(71393),
+    b = n(734057),
+    v = n(71393),
     T = n(576705),
     y = n(287809),
     S = n(954571),
@@ -136,7 +136,7 @@ function U(e) {
                 invite_inviter_id: r.inviter?.id
             })
         }, [r.inviter?.id, A.id]),
-        f = (0, d.bG)([b.A], () => null != r.guild ? b.A.getGuild(r.guild.id) : null, [r]),
+        f = (0, d.bG)([v.A], () => null != r.guild ? v.A.getGuild(r.guild.id) : null, [r]),
         C = (0, I.A)([A.id])[0],
         E = (0, d.bG)([m.Ay], () => r?.channel != null && m.Ay.getSelfEmbeddedActivityForChannel(r.channel.id)?.applicationId === A.id),
         N = (0, d.bG)([m.Ay], () => (r.channel?.id != null ? m.Ay.getEmbeddedActivitiesForChannel(r.channel.id) : []).some(e => {
@@ -145,7 +145,7 @@ function U(e) {
             } = e;
             return A.id === t
         })),
-        P = v.A.getChannel(r.channel?.id),
+        P = b.A.getChannel(r.channel?.id),
         D = (0, d.bG)([T.A], () => null != P && T.A.can(R.xBc.USE_EMBEDDED_ACTIVITIES, P), [P]),
         {
             analyticsLocations: k
@@ -212,12 +212,12 @@ function B(e) {
         handleAcceptInvite: I,
         onView: E
     } = e, {
-        bot: v,
-        icon: b
+        bot: b,
+        icon: v
     } = t, T = N.Ay.getApplicationIconURL({
         id: t.id,
-        icon: b,
-        bot: v
+        icon: v,
+        bot: b
     }), y = (0, C.F)(t), S = (0, f.f)(t), j = n.length, L = a.useMemo(() => [{
         label: m,
         trackingArea: r ? x.kY.PLAY : x.kY.JOIN_SERVER,

@@ -31,11 +31,11 @@ function E(e) {
     } = e, o = (0, m.GV)(), {
         channelId: d,
         messageId: c
-    } = (0, f.Tu)(), [A, x] = a.useState(""), [C, E] = a.useState(!1), v = "" !== A && C, b = a.useCallback(() => {
+    } = (0, f.Tu)(), [A, x] = a.useState(""), [C, E] = a.useState(!1), b = "" !== A && C, v = a.useCallback(() => {
         x((0, g.$m)(c, d, l))
     }, [c, d, l]), T = a.useCallback(() => {
-        b(), E(!0)
-    }, [b]), y = a.useCallback(() => {
+        v(), E(!0)
+    }, [v]), y = a.useCallback(() => {
         E(!1)
     }, []), S = a.useCallback(() => {
         (0, p.e)({
@@ -45,10 +45,10 @@ function E(e) {
         })
     }, [d, c, l]);
     return a.useEffect(() => {
-        if (C) return h.A.addReactChangeListener(b), () => {
-            h.A.removeReactChangeListener(b)
+        if (C) return h.A.addReactChangeListener(v), () => {
+            h.A.removeReactChangeListener(v)
         }
-    }, [C, b]), (0, i.jsxs)("div", {
+    }, [C, v]), (0, i.jsxs)("div", {
         className: I.AA,
         children: [r ? (0, i.jsxs)(i.Fragment, {
             children: ["" !== A ? (0, i.jsx)(u.m, {
@@ -58,7 +58,7 @@ function E(e) {
                     scaleFontToUserSetting: !0,
                     children: A
                 }),
-                forceOpen: v,
+                forceOpen: b,
                 "aria-label": !1,
                 children: (0, i.jsx)(_.QWc, {
                     onMouseEnter: T,
@@ -66,7 +66,7 @@ function E(e) {
                     onFocus: T,
                     onBlur: y,
                     onClick: S,
-                    "aria-describedby": v ? o : void 0,
+                    "aria-describedby": b ? o : void 0,
                     text: n,
                     variant: "secondary",
                     textVariant: "text-xs/semibold"
@@ -80,7 +80,7 @@ function E(e) {
                 text: n,
                 variant: "secondary",
                 textVariant: "text-xs/semibold"
-            }), v && (0, i.jsx)(s.s, {
+            }), b && (0, i.jsx)(s.s, {
                 id: o,
                 children: A
             })]
@@ -98,7 +98,7 @@ function E(e) {
     })
 }
 
-function v(e) {
+function b(e) {
     let {
         percentage: t,
         shouldAnimate: n
@@ -121,7 +121,7 @@ function v(e) {
     })
 }
 
-function b(e) {
+function v(e) {
     let {
         answersInteraction: t,
         isSelected: n,
@@ -169,7 +169,7 @@ function T(e) {
             [I.EK]: a !== A.CQ.LIST,
             [I.wH]: d
         }),
-        children: [r ? (0, i.jsx)(v, {
+        children: [r ? (0, i.jsx)(b, {
             percentage: t.votesPercentage,
             shouldAnimate: m
         }) : null, null != t.pollMedia.emoji && (0, i.jsx)(x.Fb, {
@@ -188,7 +188,7 @@ function T(e) {
             label: t.votes,
             canShowVoterDetails: o,
             answerId: t.answerId
-        }), (0, i.jsx)(b, {
+        }), (0, i.jsx)(v, {
             answersInteraction: a,
             isSelected: d,
             didSelfVote: c,

@@ -29,8 +29,8 @@ function h(e) {
     } = (0, u.L)(), {
         expansionSpring: I,
         isAnimating: E,
-        isExpanded: v,
-        toggleExpanded: b
+        isExpanded: b,
+        toggleExpanded: v
     } = (0, u.s)({
         initiallyExpanded: h || (0, _.RA)({
             location: n,
@@ -67,9 +67,9 @@ function h(e) {
                     expansionSpring: I,
                     isInteracting: T,
                     isAnimating: E,
-                    isExpanded: v,
+                    isExpanded: b,
                     contentPosition: p,
-                    toggleExpanded: b,
+                    toggleExpanded: v,
                     sourceQuestContent: g
                 }), (0, i.jsx)(d.A, {
                     quest: t,
@@ -77,7 +77,7 @@ function h(e) {
                     location: n,
                     size: f,
                     isFocused: T,
-                    isExpanded: v,
+                    isExpanded: b,
                     isAnimating: E,
                     contentPosition: p,
                     sourceQuestContent: g

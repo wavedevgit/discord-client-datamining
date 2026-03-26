@@ -168,8 +168,8 @@ function ep(e) {
             children: [function() {
                 if (!o && g) {
                     if (A !== F.NC.ALL) return null;
-                    if (_) return (0, i.jsx)(Z.H, {});
-                    if (null != h) return (0, i.jsx)(Z.A, {
+                    if (_) return (0, i.jsx)(Z.Hk, {});
+                    if (null != h) return (0, i.jsx)(Z.Ay, {
                         config: h,
                         onQuestCtaClick: E
                     })
@@ -236,10 +236,10 @@ let eE = function(e) {
     (0, f.HU)({
         location: er.intl.string(er.t.JALI2K)
     });
-    let Z = z ? er.intl.format(er.t.BCBIlp, {}) : er.intl.format(er.t.lmMBfy, {}),
-        ee = z ? er.intl.format(er.t.U9FY0J, {}) : er.intl.string(er.t.oWCrBq),
-        eo = a.useRef(null),
-        ed = a.useCallback(() => {
+    let ee = z ? er.intl.format(er.t.BCBIlp, {}) : er.intl.format(er.t.lmMBfy, {}),
+        eo = z ? er.intl.format(er.t.U9FY0J, {}) : er.intl.string(er.t.oWCrBq),
+        ed = a.useRef(null),
+        ec = a.useCallback(() => {
             (0, L.Y)({
                 pageType: ei.liQ.GLOBAL_DISCOVERY_QUESTS,
                 sectionType: ei.JJy.ORBS_BALANCE_MENU,
@@ -255,14 +255,14 @@ let eE = function(e) {
     }, []), a.useEffect(() => {
         N.g.trigger()
     }, []);
-    let ec = (0, H.U)({
+    let eu = (0, H.U)({
         location: en.rE.QUEST_PREVIEW_TOOL_2
     });
     a.useEffect(() => {
         if (null != C) return;
         let e = new URLSearchParams(n.search),
             i = e.get(F.L1.TAB);
-        if (ec && i === F.NC.PREVIEW_TOOL) {
+        if (eu && i === F.NC.PREVIEW_TOOL) {
             let t = e.get(F.L1.QUEST_ID);
             p.A.openNativeAppModal("quests", ei.e$_.DEEP_LINK, {
                 type: el.XK.QUEST_PREVIEW_TOOL,
@@ -288,10 +288,10 @@ let eE = function(e) {
                 }
             })
         }
-    }, [n.search, C, ec, l.action, n.hash, t]), a.useEffect(() => {
+    }, [n.search, C, eu, l.action, n.hash, t]), a.useEffect(() => {
         t && (0, T.Dr)(u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING)
     }, [t]);
-    let eu = a.useCallback(() => {
+    let eA = a.useCallback(() => {
             (0, K.navigateToQuestHome)({
                 fromContent: G.uF.QUEST_HOME_MOVE_CALLOUT_DISCOVER
             }), M.default.track(ei.HAw.QUEST_CONTENT_CLICKED, {
@@ -301,11 +301,11 @@ let eE = function(e) {
                 ...(0, Y.fF)(G.uF.QUEST_HOME_MOVE_CALLOUT_DISCOVER)
             })
         }, []),
-        eA = a.useCallback(e => {
+        eh = a.useCallback(e => {
             l.replace({
                 ...l.location,
                 hash: void 0
-            }), eo.current?.scrollToTop({
+            }), ed.current?.scrollToTop({
                 animate: !1
             }), b(e)
         }, [l, b]);
@@ -317,10 +317,10 @@ let eE = function(e) {
             value: a.useMemo(() => ({
                 isInDiscoverQuestHomeTab: _,
                 onScroll: j,
-                onSelectTab: eA,
-                scrollerRef: eo,
+                onSelectTab: eh,
+                scrollerRef: ed,
                 selectedTab: v
-            }), [_, j, eA, eo, v]),
+            }), [_, j, eh, ed, v]),
             children: (0, i.jsx)("div", {
                 className: r()(es.kL, {
                     [es.KY]: !t
@@ -332,7 +332,7 @@ let eE = function(e) {
                         button: (0, i.jsx)(A.Button, {
                             variant: "overlay-primary",
                             text: er.intl.string(er.t.GURBQl),
-                            onClick: eu
+                            onClick: eA
                         }),
                         className: es.Gj,
                         children: (0, i.jsx)(eg, {
@@ -341,7 +341,7 @@ let eE = function(e) {
                     }),
                     header: (0, i.jsx)(y.S, {
                         selectedTabId: v,
-                        handleTransition: eA,
+                        handleTransition: eh,
                         tabs: D,
                         icon: A.r2v
                     }),
@@ -357,15 +357,15 @@ let eE = function(e) {
                             children: er.intl.string(er.t.HdKh65)
                         }), (0, i.jsx)(A.QWc, {
                             text: er.intl.string(er.t["1CdL8d"]),
-                            onClick: eu,
+                            onClick: eA,
                             textVariant: "text-md/normal",
                             variant: "primary"
                         })]
                     })
                 }) : (0, i.jsx)(ep, {
                     renderBanner: () => v !== F.NC.PREVIEW_TOOL && (0, i.jsx)(J.A, {
-                        title: Z,
-                        subtitle: ee,
+                        title: ee,
+                        subtitle: eo,
                         buttons: z ? (0, i.jsxs)(A.ButtonGroup, {
                             children: [(0, i.jsx)(A.Button, {
                                 variant: "overlay-primary",
@@ -391,7 +391,7 @@ let eE = function(e) {
                             className: r()(es.Tv, {
                                 [es.lJ]: z
                             }),
-                            children: [(0, i.jsx)("div", {
+                            children: [(0, i.jsx)(Z.Ae, {}), (0, i.jsx)("div", {
                                 className: r()(es.nz, {
                                     [es.ZZ]: z
                                 })
@@ -406,13 +406,13 @@ let eE = function(e) {
                     }),
                     header: (0, i.jsx)(y.S, {
                         selectedTabId: v,
-                        handleTransition: eA,
+                        handleTransition: eh,
                         tabs: D,
                         endContent: z ? (0, i.jsx)(P.SS, {
                             analyticsPage: ei.liQ.GLOBAL_DISCOVERY_QUESTS,
                             cardAlignment: P.cP.END,
                             ctaText: er.intl.string(er.t["J+vlIR"]),
-                            ctaOnClick: ed
+                            ctaOnClick: ec
                         }) : null,
                         icon: A.r2v
                     })

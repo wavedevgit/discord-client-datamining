@@ -22,8 +22,8 @@ var i = n(627968),
     C = n(882072),
     I = n(58262),
     E = n(309818),
-    v = n(112007),
-    b = n(877695),
+    b = n(112007),
+    v = n(877695),
     T = n(242907),
     y = n(168428),
     S = n(448894),
@@ -73,7 +73,7 @@ function R(e) {
                 autoJoin: e
             })
         },
-        H = (0, i.jsx)(v.A, {
+        H = (0, i.jsx)(b.A, {
             onTransitionToInviteChannel: G,
             onAcceptInstantInvite: F,
             currentUserId: U,
@@ -169,7 +169,7 @@ function R(e) {
                             message: n
                         });
                         break
-                    }(0, d.v)(D) && (H = (0, i.jsx)(b.A, {
+                    }(0, d.v)(D) && (H = (0, i.jsx)(v.A, {
                         onTransitionToInviteChannel: G,
                         onAcceptInstantInvite: F,
                         isMemberOfGuild: null != O,

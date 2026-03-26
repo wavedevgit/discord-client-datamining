@@ -1,6 +1,6 @@
 /** chunk id: 448894 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => b
 });
 var i = n(627968),
     a = n(64700),
@@ -23,16 +23,16 @@ var i = n(627968),
     I = n(985018),
     E = n(366228);
 
-function v(e) {
+function b(e) {
     let t, {
             invite: n,
             currentUserId: r,
-            guild: v,
-            message: b,
+            guild: b,
+            message: v,
             onTransitionToInviteChannel: T,
             onAcceptInstantInvite: y
         } = e,
-        S = v?.id,
+        S = b?.id,
         N = (0, o.bG)([p.A], () => p.A.getGuildId()),
         j = (0, o.bG)([h.A], () => null != n && null != n.target_user ? h.A.getActiveStreamForUser(n.target_user.id, S) : null, [n, S]),
         L = (0, o.bG)([h.A], () => null != n && null != n.target_user ? h.A.getStreamForUser(n.target_user.id, S) : null, [n, S]),
@@ -54,14 +54,14 @@ function v(e) {
             P ? (T(), e = "transition") : (y(), e = "accept"), (0, d.he)({
                 invite: n,
                 action: e,
-                inviter_id: b.author.id,
-                invite_message_id: b.id
+                inviter_id: v.author.id,
+                invite_message_id: v.id
             }, R)
-        }, [n, b, R, P, T, y]),
-        B = null != v;
-    if (null == v) {
+        }, [n, v, R, P, T, y]),
+        B = null != b;
+    if (null == b) {
         if (null == n.guild) return (0, i.jsx)(x.A, {});
-        v = (0, g.DY)(n.guild)
+        b = (0, g.DY)(n.guild)
     }
     let G = null != n.channel ? (0, m.OY)(n.channel) : null,
         F = A.Ay.getName(D),
@@ -73,10 +73,10 @@ function v(e) {
     }), V = I.intl.string(I.t.Wdi5E1)) : (q = "active", P && (V = I.intl.string(I.t.Q1W99y), q = "secondary"), t = k ? I.intl.string(I.t["4hyaHu"]) : I.intl.formatToPlainString(I.t.QmlLEq, {
         name: F
     }));
-    let W = N === v.id && null != G ? (0, i.jsx)(_.A.Channel, {
+    let W = N === b.id && null != G ? (0, i.jsx)(_.A.Channel, {
         channel: G
     }) : I.intl.formatToPlainString(I.t.u0vaDE, {
-        guildName: v.name
+        guildName: b.name
     });
     return (0, i.jsxs)(_.A, {
         children: [(0, i.jsx)(_.A.Header, {
@@ -85,7 +85,7 @@ function v(e) {
             children: [(0, i.jsxs)("div", {
                 className: E.iH,
                 children: [(0, i.jsx)(_.A.Icon, {
-                    guild: v,
+                    guild: b,
                     onClick: B && w ? U : void 0
                 }), (0, i.jsx)(_.A.Info, {
                     title: t,

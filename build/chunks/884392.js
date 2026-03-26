@@ -38,17 +38,17 @@ let g = function(e) {
         analyticsCtxSourceQuestContent: C,
         analyticsCtxQuestContentPosition: I,
         analyticsCtxQuestContentRowIndex: E
-    } = e, v = {
+    } = e, b = {
         questContent: f,
         questContentCTA: p(c),
         sourceQuestContent: C,
         questContentPosition: I,
         questContentRowIndex: E
-    }, b = n.id, {
+    }, v = n.id, {
         isEnrolling: T
     } = (0, r.cf)([o.A], () => ({
-        isEnrolling: o.A.isEnrolling(b)
-    }), [b]), y = (0, _.Oz)(n), S = function(e, t) {
+        isEnrolling: o.A.isEnrolling(v)
+    }), [v]), y = (0, _.Oz)(n), S = function(e, t) {
         let {
             launchInGameActivity: n
         } = (0, d.zW)(t);
@@ -87,20 +87,20 @@ let g = function(e) {
         }
     }(c, n), j = (t = S ?? void 0, c === a.n.WATCH_VIDEO ? async () => {
         await (0, _.e0)(n, {
-            questContent: v.questContent,
-            questContentCTA: v.questContentCTA,
-            sourceQuestContent: v.sourceQuestContent,
+            questContent: b.questContent,
+            questContentCTA: b.questContentCTA,
+            sourceQuestContent: b.sourceQuestContent,
             sourceQuestContentCTA: p(c),
-            questContentPosition: v.questContentPosition,
-            questContentRowIndex: v.questContentRowIndex
+            questContentPosition: b.questContentPosition,
+            questContentRowIndex: b.questContentRowIndex
         })
     }: async () => {
         await (0, s.Oy)(n.id, {
-            questContent: v.questContent,
-            questContentCTA: v.questContentCTA,
-            sourceQuestContent: v.sourceQuestContent,
-            questContentPosition: v.questContentPosition,
-            questContentRowIndex: v.questContentRowIndex
+            questContent: b.questContent,
+            questContentCTA: b.questContentCTA,
+            sourceQuestContent: b.sourceQuestContent,
+            questContentPosition: b.questContentPosition,
+            questContentRowIndex: b.questContentRowIndex
         }), t?.()
     });
     return (0, i.jsx)(l.Button, {

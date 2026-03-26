@@ -25,8 +25,8 @@ function C(e) {
         invite: t,
         message: n,
         getAcceptInviteContext: C
-    } = e, I = (0, l.bG)([m.default], () => m.default.getId()), E = t.inviter?.id === I, v = t.state === A.elq.ACCEPTING, {
-        analyticsLocations: b
+    } = e, I = (0, l.bG)([m.default], () => m.default.getId()), E = t.inviter?.id === I, b = t.state === A.elq.ACCEPTING, {
+        analyticsLocations: v
     } = (0, c.Ay)(d.A.INVITE_EMBED), T = (0, l.bG)([p.A], () => null != t.inviter && p.A.isFriend(t.inviter?.id)), y = a.useCallback(() => {
         let e = "noop";
         null != t.inviter && null != h.A.getDMFromUserId(t.inviter.id) && (e = "transition", s.A.openPrivateChannel({
@@ -36,20 +36,20 @@ function C(e) {
             action: e,
             inviter_id: n.author.id,
             invite_message_id: n.id
-        }, b)
-    }, [t, n, b]), S = a.useCallback(() => {
+        }, v)
+    }, [t, n, v]), S = a.useCallback(() => {
         (0, o.he)({
             invite: t,
             action: "accept",
             inviter_id: n.author.id,
             invite_message_id: n.id
-        }, b);
+        }, v);
         let e = C("Invite Button Embed");
         o.Ay.acceptInviteAndTransitionToInviteChannel({
             inviteKey: t.code,
             context: e
         })
-    }, [t, n, b, C]);
+    }, [t, n, v, C]);
     if (null == t.inviter) return null;
     let N = T ? y : S,
         j = x.intl.string(x.t.ib7Ng1),
@@ -75,7 +75,7 @@ function C(e) {
             }), (0, i.jsx)(r.$nd, {
                 onClick: N,
                 text: j,
-                loading: v,
+                loading: b,
                 disabled: E,
                 variant: L
             })]

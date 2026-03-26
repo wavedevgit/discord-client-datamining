@@ -3,10 +3,10 @@ n.d(t, {
     H: () => c
 });
 var r = n(64700),
-    l = n(975571),
-    a = n(651892),
-    i = n(901406),
-    s = n(545986),
+    i = n(975571),
+    s = n(651892),
+    a = n(901406),
+    l = n(545986),
     o = n(654487),
     u = n(652215);
 
@@ -18,11 +18,11 @@ function c(e) {
         impressionId: d
     } = e;
     return r.useCallback(async (e, r) => {
-        if (t.id === o.Fw) return void window.open(l.A.getArticleURL(u.MVz.VIRTUAL_CURRENCY_LEARN_MORE));
+        if (t.id === o.Fw) return void window.open(i.A.getArticleURL(u.MVz.VIRTUAL_CURRENCY_LEARN_MORE));
         if (null != n) {
-            let e = (0, a.Jx)(t.config);
-            await (0, s.f7)(e) && n()
-        }(0, i.pu)(t, {
+            let e = (0, s.Jx)(t.config);
+            await (0, l.f7)(e) && n()
+        }(0, a.pu)(t, {
             content: e,
             ctaContent: r,
             impressionId: d,

@@ -23,8 +23,8 @@ var a = n(503698),
     C = n(92246),
     I = n(792620),
     E = n(201805),
-    v = n(212614),
-    b = n(79545),
+    b = n(212614),
+    v = n(79545),
     T = n(646764),
     y = n(545986),
     S = n(433745),
@@ -112,7 +112,7 @@ let M = e => {
         gameProfileSource: c.Ob.QuestEmbed
     }), Q = (0, s.bG)([h.A], () => null != h.A.questEnrollmentBlockedUntil, []), K = p.t.useConfig({
         location: N.rE.QUEST_HOME_DESKTOP
-    }), J = (0, b.Pd)(t), X = (0, s.bG)([u.default], () => u.default.locale), Z = M && !H, $ = (0, I.vv)(t);
+    }), J = (0, v.Pd)(t), X = (0, s.bG)([u.default], () => u.default.locale), Z = M && !H, $ = (0, I.vv)(t);
     return (0, i.jsx)("div", {
         className: R.zr,
         children: (0, i.jsxs)("div", {
@@ -241,9 +241,9 @@ let M = e => {
                         })
                     },
                     text: L.intl.string(L.t.LLLLPD)
-                }), !Z && (K.enabled && J === b.UA.UNENROLLED && K.enabledQuestStates.has(b.UA.UNENROLLED) ? (0, i.jsx)(v.A, {
+                }), !Z && (K.enabled && J === v.UA.UNENROLLED && K.enabledQuestStates.has(v.UA.UNENROLLED) ? (0, i.jsx)(b.A, {
                     quest: t,
-                    surface: b.V3.QUEST_EMBED,
+                    surface: v.V3.QUEST_EMBED,
                     analyticsCtxQuestContent: n,
                     analyticsCtxSourceQuestContent: U,
                     analyticsCtxQuestContentPosition: O

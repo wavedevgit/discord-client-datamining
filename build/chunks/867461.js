@@ -46,7 +46,7 @@ function E(e) {
         isInteracting: n,
         location: r,
         sourceQuestContent: l
-    } = e, E = (0, h.Ic)(t), v = t.userStatus?.claimedAt != null, b = (0, m.S5)(t.config.expiresAt, {
+    } = e, E = (0, h.Ic)(t), b = t.userStatus?.claimedAt != null, v = (0, m.S5)(t.config.expiresAt, {
         month: "numeric",
         day: "numeric"
     }), T = (0, o.bG)([_.A], () => _.A.getQuestHomeHeroConfig()), y = a.useMemo(() => null != T && (0, p.I0)(T, t.id), [T, t.id]), S = (0, c.Ay)(), N = (0, s.Mwr)(S) ? "text-muted" : "always-white";
@@ -131,11 +131,11 @@ function E(e) {
                             color: "always-white",
                             children: t.config.cosponsorMetadata?.name ?? t.config.messages.gamePublisher
                         })]
-                    }), E || v ? null : (0, i.jsx)(s.EYj, {
+                    }), E || b ? null : (0, i.jsx)(s.EYj, {
                         variant: "text-sm/medium",
                         color: N,
                         children: f.intl.format(f.t["7D8r4F"], {
-                            expiryDate: b
+                            expiryDate: v
                         })
                     })]
                 })]

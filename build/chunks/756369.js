@@ -1,7 +1,7 @@
 /** chunk id: 756369 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => e7,
-    OC: () => e2,
+    Ay: () => e2,
+    OC: () => e7,
     iV: () => e1
 }), n(938796);
 var i = n(627968),
@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(150099),
     I = n(871751),
     E = n(510790),
-    v = n(167189),
-    b = n(175335),
+    b = n(167189),
+    v = n(175335),
     T = n(390248),
     y = n(282108),
     S = n(33358),
@@ -78,8 +78,8 @@ var i = n(627968),
     eC = n(998218),
     eI = n(988012),
     eE = n(294520),
-    ev = n(141468),
-    eb = n(863439),
+    eb = n(141468),
+    ev = n(863439),
     eT = n(869938),
     ey = n(143413),
     eS = n(707985),
@@ -212,26 +212,26 @@ class e1 extends a.Component {
                 code: a,
                 url: r
             } = t;
-            if (n === v.I.INVITE) return this.shouldRenderInvite(a) ? (0, i.jsx)(eM.A, {
+            if (n === b.I.INVITE) return this.shouldRenderInvite(a) ? (0, i.jsx)(eM.A, {
                 code: a,
                 message: e,
                 getAcceptInviteContext: this.getAcceptInviteContext
             }, a) : null;
-            if (n === v.I.TEMPLATE) return (0, i.jsx)(O.A, {
+            if (n === b.I.TEMPLATE) return (0, i.jsx)(O.A, {
                 code: a
             }, a);
-            if (n === v.I.EVENT) return (0, i.jsx)(k.A, {
+            if (n === b.I.EVENT) return (0, i.jsx)(k.A, {
                 code: a
             }, a);
-            if (n === v.I.CHANNEL_LINK) return (0, i.jsx)(eN.A, {
+            if (n === b.I.CHANNEL_LINK) return (0, i.jsx)(eN.A, {
                 code: a,
                 message: e
             }, a);
-            if (n === v.I.APP_DIRECTORY_PROFILE) return (0, i.jsx)(P.A, {
+            if (n === b.I.APP_DIRECTORY_PROFILE) return (0, i.jsx)(P.A, {
                 code: a,
                 message: e
             }, a);
-            else if (n === v.I.ACTIVITY_BOOKMARK) {
+            else if (n === b.I.ACTIVITY_BOOKMARK) {
                 let {
                     referrerId: t = e.author.id,
                     customId: n,
@@ -244,13 +244,13 @@ class e1 extends a.Component {
                     customId: n,
                     linkId: l
                 }, a)
-            } else if (n === v.I.GUILD_PRODUCT) return (0, i.jsx)(D.A, {
+            } else if (n === b.I.GUILD_PRODUCT) return (0, i.jsx)(D.A, {
                 code: a
             }, a);
-            else if (n === v.I.SERVER_SHOP) return (0, i.jsx)(b.A, {
+            else if (n === b.I.SERVER_SHOP) return (0, i.jsx)(v.A, {
                 guildId: a
             }, a);
-            else if (n === v.I.SOCIAL_LAYER_STOREFRONT) {
+            else if (n === b.I.SOCIAL_LAYER_STOREFRONT) {
                 let [e, t] = a.split("-"), {
                     channel: n
                 } = this.props;
@@ -259,26 +259,26 @@ class e1 extends a.Component {
                     skuId: e,
                     channel: n
                 }, a)
-            } else if (n === v.I.QUESTS_EMBED) return (0, i.jsx)(X.A, {
+            } else if (n === b.I.QUESTS_EMBED) return (0, i.jsx)(X.A, {
                 questId: a
             }, a);
-            else if (n === v.I.APP_DIRECTORY_STOREFRONT) return (0, i.jsx)(A.G, {
+            else if (n === b.I.APP_DIRECTORY_STOREFRONT) return (0, i.jsx)(A.G, {
                 appId: a,
                 message: e
             }, a);
-            else if (n === v.I.APP_DIRECTORY_STOREFRONT_SKU) {
+            else if (n === b.I.APP_DIRECTORY_STOREFRONT_SKU) {
                 let t = (0, g.u)(a);
                 return null == t ? null : (0, i.jsx)(A.$, {
                     appId: t.applicationId,
                     skuId: t.skuId,
                     message: e
                 }, a)
-            } else if (n === v.I.APP_OAUTH2_LINK) return (0, i.jsx)(f.A, {
+            } else if (n === b.I.APP_OAUTH2_LINK) return (0, i.jsx)(f.A, {
                 applicationId: a,
                 message: e
             }, a);
-            else if (n === v.I.COLLECTIBLES_SHOP) return null;
-            else if (n === v.I.EXPERIMENT) return null;
+            else if (n === b.I.COLLECTIBLES_SHOP) return null;
+            else if (n === b.I.EXPERIMENT) return null;
             else throw Error(`Unknown coded link type: ${n}`)
         })
     }
@@ -557,7 +557,7 @@ class e1 extends a.Component {
         })
     }
     renderEphemeralAccessories(e) {
-        return (0, ev.ec)(e) ? (0, i.jsx)(eR.A, {
+        return (0, eb.ec)(e) ? (0, i.jsx)(eR.A, {
             message: e,
             onDeleteMessage: () => {
                 m.A.dismissAutomatedMessage(e)
@@ -730,16 +730,16 @@ class e1 extends a.Component {
         } = this.props, {
             showSuppressModal: r,
             showRemoveAttachmentModal: s
-        } = this.state, o = this.renderEditedTag(t, a), d = this.renderCodedLinks(t), c = this.renderGiftCodes(t), u = this.renderAttachments(t), _ = this.renderCtaButton(), m = this.renderEmbeds(t), h = this.renderActivityInvite(t), p = this.renderReactions(t), g = this.renderPublishBump(t), A = this.renderEphemeralAccessories(t), x = this.renderStickersAccessories(t), f = this.renderThreadAccessories(t), C = this.renderComponentAccessories(t), I = this.renderThreadRoleMentionWarning(t), E = this.renderEmbeddedApplicationInstanceEmbed(t), v = this.renderInteractionPremiumUpsell(t), b = this.renderMediaPostEmbeds(t), T = this.renderSafetyPolicyNotice(t), y = this.renderSafetySystemNotification(t), S = this.renderMediaObscureNotice(t), N = this.renderPoll(t, n), j = this.renderForwardedMessage(t), L = this.renderReportedMessage(t), R = this.renderShareClientTheme(t);
-        return null == d && null == u && null == m && null == h && null == p && null == c && null == g && null == A && null == x && null == f && null == C && null == E && null == I && null == b && null == T && null != v && null == N && null == j && null == L && null == R ? null : (0, i.jsxs)("div", {
+        } = this.state, o = this.renderEditedTag(t, a), d = this.renderCodedLinks(t), c = this.renderGiftCodes(t), u = this.renderAttachments(t), _ = this.renderCtaButton(), m = this.renderEmbeds(t), h = this.renderActivityInvite(t), p = this.renderReactions(t), g = this.renderPublishBump(t), A = this.renderEphemeralAccessories(t), x = this.renderStickersAccessories(t), f = this.renderThreadAccessories(t), C = this.renderComponentAccessories(t), I = this.renderThreadRoleMentionWarning(t), E = this.renderEmbeddedApplicationInstanceEmbed(t), b = this.renderInteractionPremiumUpsell(t), v = this.renderMediaPostEmbeds(t), T = this.renderSafetyPolicyNotice(t), y = this.renderSafetySystemNotification(t), S = this.renderMediaObscureNotice(t), N = this.renderPoll(t, n), j = this.renderForwardedMessage(t), L = this.renderReportedMessage(t), R = this.renderShareClientTheme(t);
+        return null == d && null == u && null == m && null == h && null == p && null == c && null == g && null == A && null == x && null == f && null == C && null == E && null == I && null == v && null == T && null != b && null == N && null == j && null == L && null == R ? null : (0, i.jsxs)("div", {
             id: (0, ek.XL)(t),
             className: l()(e, eJ.kL),
-            children: [L, j, I, N, R, d, c, b, u, _, m, S, h, x, C, E, v, o, p, g, A, r && this.renderSuppressConfirmModal(), s && this.renderRemoveAttachmentConfirmModal(), f, T, y]
+            children: [L, j, I, N, R, d, c, v, u, _, m, S, h, x, C, E, b, o, p, g, A, r && this.renderSuppressConfirmModal(), s && this.renderRemoveAttachmentConfirmModal(), f, T, y]
         })
     }
 }
 
-function e7(e) {
+function e2(e) {
     let {
         channel: t,
         message: n,
@@ -754,7 +754,7 @@ function e7(e) {
     } = (0, d.cf)([em.A], () => ({
         canAddNewReactions: h && em.A.can(eQ.xBc.ADD_REACTIONS, t),
         canManageMessages: em.A.can(eQ.xBc.MANAGE_MESSAGES, t)
-    }), [h, t]), f = (0, w.ix)(t.guild_id), [, C] = (0, M.c)(t.guild_id), I = (0, el.Id)(t), E = (l === n.author.id || x) && n.author.id !== eQ.oIV && !1 !== a && !(0, o.Lt)(n.flags, eQ.pr7.EPHEMERAL) && I && (0, eT.A)(n) >= 1, v = l === n.author.id && I && !r, b = n.author.id === l, y = n.isFirstMessageInForumPost(t), N = (0, eS.A)({
+    }), [h, t]), f = (0, w.ix)(t.guild_id), [, C] = (0, M.c)(t.guild_id), I = (0, el.Id)(t), E = (l === n.author.id || x) && n.author.id !== eQ.oIV && !1 !== a && !(0, o.Lt)(n.flags, eQ.pr7.EPHEMERAL) && I && (0, eT.A)(n) >= 1, b = l === n.author.id && I && !r, v = n.author.id === l, y = n.isFirstMessageInForumPost(t), N = (0, eS.A)({
         channel: t,
         canChat: h,
         renderReactions: _,
@@ -763,10 +763,10 @@ function e7(e) {
         communicationDisabled: C,
         isActiveChannelOrUnarchivableThread: I,
         isAutomodQuarantined: f
-    }), j = (0, H.S)((n.editedTimestamp ?? n.timestamp).valueOf()), L = (0, Y.A)(t?.id), R = (0, K.A)(n), P = (0, S.P)(n), D = (0, eb.z)(t), k = (0, eI._f)(n.id, n.channel_id), O = (0, T._R)();
+    }), j = (0, H.S)((n.editedTimestamp ?? n.timestamp).valueOf()), L = (0, Y.A)(t?.id), R = (0, K.A)(n), P = (0, S.P)(n), D = (0, ev.z)(t), k = (0, eI._f)(n.id, n.channel_id), O = (0, T._R)();
     return (0, i.jsx)(e1, {
         canSuppressEmbeds: E,
-        canDeleteAttachments: v,
+        canDeleteAttachments: b,
         ...N,
         disableReactionReads: !!y || N.disableReactionReads,
         ...e,
@@ -774,7 +774,7 @@ function e7(e) {
         hasBailedAst: e.hasBailedAst,
         isLurking: p && h,
         isPendingMember: g && h,
-        isCurrentUser: b,
+        isCurrentUser: v,
         inlineAttachmentMedia: s,
         inlineEmbedMedia: c,
         renderEmbeds: u,
@@ -789,7 +789,7 @@ function e7(e) {
         shouldAgeVerify: O
     })
 }
-let e2 = e => {
+let e7 = e => {
     let {
         message: t,
         channel: n,

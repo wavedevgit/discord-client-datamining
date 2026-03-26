@@ -22,8 +22,8 @@ var i = n(627968),
     C = n(722888),
     I = n(43136),
     E = n(575926),
-    v = n(652215),
-    b = n(985018),
+    b = n(652215),
+    v = n(985018),
     T = n(952372);
 
 function y(e) {
@@ -37,9 +37,9 @@ function y(e) {
     } = (0, p.bb)(t), N = (0, p.fZ)(t, {
         publishedOnly: !0
     }), j = a.useCallback(async () => {
-        f.default.track(v.HAw.GUILD_SHOP_EMBED_CLICKED, {
+        f.default.track(b.HAw.GUILD_SHOP_EMBED_CLICKED, {
             ...(0, _.H$)(t)
-        }), await (0, g.A)(v.BVt.SERVER_SHOP(t))
+        }), await (0, g.A)(b.BVt.SERVER_SHOP(t))
     }, [t]);
     (0, m.A)({
         type: s.ImpressionTypes.VIEW,
@@ -67,14 +67,14 @@ function y(e) {
                 variant: "heading-sm/semibold",
                 color: "interactive-text-default",
                 className: T.Nl,
-                children: b.intl.string(b.t.al5EXL)
+                children: v.intl.string(v.t.al5EXL)
             })]
         }), (0, i.jsx)(u.hKd, {
             size: 16
         }), (0, i.jsx)(u.Heading, {
             variant: "heading-md/semibold",
             color: "text-default",
-            children: b.intl.format(b.t.NZeik9, {
+            children: v.intl.format(v.t.NZeik9, {
                 guildName: n.name
             })
         }), (0, i.jsx)(u.hKd, {
@@ -98,7 +98,7 @@ function y(e) {
                     children: (0, i.jsx)(u.Text, {
                         variant: "text-sm/normal",
                         color: "text-muted",
-                        children: b.intl.format(b.t.tKZNlb, {
+                        children: v.intl.format(v.t.tKZNlb, {
                             listingCount: N.length
                         })
                     })
@@ -106,7 +106,7 @@ function y(e) {
                     children: (0, i.jsx)(u.Text, {
                         variant: "text-sm/normal",
                         color: "text-muted",
-                        children: b.intl.format(b.t["kXr8+b"], {
+                        children: v.intl.format(v.t["kXr8+b"], {
                             createdYear: L.getFullYear()
                         })
                     })
@@ -116,7 +116,7 @@ function y(e) {
                 children: (0, i.jsx)(c.$nd, {
                     onClick: j,
                     icon: E.A,
-                    text: b.intl.string(b.t.jXx1CC)
+                    text: v.intl.string(v.t.jXx1CC)
                 })
             })]
         })]

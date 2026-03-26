@@ -22,8 +22,8 @@ var i = n(627968),
     C = n(967144),
     I = n(342296),
     E = n(253932),
-    v = n(696451),
-    b = n(287809),
+    b = n(696451),
+    v = n(287809),
     T = n(486020),
     y = n(449054),
     S = n(218394),
@@ -42,7 +42,7 @@ function D(e) {
         channel: r
     } = e, D = a.useRef(null), k = a.useRef(null), O = (0, j.D)(t, n), {
         setPopout: U
-    } = (0, f.A)(n.id, R.Fd), B = (0, x.VL)(n, r, U, !0), G = E.kt.useSetting(), F = (0, S.j)(), [H, V] = a.useState(!1), [q, W] = a.useState(O?.coverImage == null), Y = (0, o.bG)([v.Ay, b.default], () => v.Ay.isMember(O?.guildId, b.default.getCurrentUser()?.id), [O]), z = (0, o.bG)([v.Ay], () => O?.authorId != null ? v.Ay.getMember(O.guildId, O.authorId) : null), Q = (0, m.A)(z?.avatarDecoration != null ? z?.avatarDecoration : O?.user?.avatarDecoration), [K, J, X] = a.useMemo(() => [z?.colorString ?? "inherit", z?.colorStrings ?? null, z?.colorRoleId], [z]), Z = (0, C.gn)(z?.guildId, O?.authorId ?? void 0, J), {
+    } = (0, f.A)(n.id, R.Fd), B = (0, x.VL)(n, r, U, !0), G = E.kt.useSetting(), F = (0, S.j)(), [H, V] = a.useState(!1), [q, W] = a.useState(O?.coverImage == null), Y = (0, o.bG)([b.Ay, v.default], () => b.Ay.isMember(O?.guildId, v.default.getCurrentUser()?.id), [O]), z = (0, o.bG)([b.Ay], () => O?.authorId != null ? b.Ay.getMember(O.guildId, O.authorId) : null), Q = (0, m.A)(z?.avatarDecoration != null ? z?.avatarDecoration : O?.user?.avatarDecoration), [K, J, X] = a.useMemo(() => [z?.colorString ?? "inherit", z?.colorStrings ?? null, z?.colorRoleId], [z]), Z = (0, C.gn)(z?.guildId, O?.authorId ?? void 0, J), {
         reducedMotion: $
     } = a.useContext(c.CZY), [ee, et] = a.useState(!1), en = a.useCallback(() => {
         V(!0)

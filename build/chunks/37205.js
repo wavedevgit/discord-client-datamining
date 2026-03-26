@@ -22,8 +22,8 @@ var i = n(627968),
     C = n(450149),
     I = n(290331),
     E = n(281489),
-    v = n(378570),
-    b = n(21119),
+    b = n(378570),
+    v = n(21119),
     T = n(95701),
     y = n(734057),
     S = n(696451),
@@ -97,7 +97,7 @@ function G(e) {
             }, X)
         }, [t, r, X, Q, d, C]),
         $ = a.useCallback(() => {
-            Q ? (0, v.iN)(V.id) : C({
+            Q ? (0, b.iN)(V.id) : C({
                 autoJoin: !1
             })
         }, [V.id, Q, C]),
@@ -155,13 +155,13 @@ function G(e) {
                 proximity: 0
             })
         }, [eo]),
-        eu = (0, u.bG)([b.A], () => {
+        eu = (0, u.bG)([v.A], () => {
             let e = r.author.id,
                 t = W.map(e => e.user),
                 n = t.find(t => t.id === e),
                 i = t.filter(t => t.id !== e).sort((e, t) => {
-                    let n = b.A.getUserAffinity(e.id)?.vcProbability ?? 0;
-                    return (b.A.getUserAffinity(t.id)?.vcProbability ?? 0) - n
+                    let n = v.A.getUserAffinity(e.id)?.vcProbability ?? 0;
+                    return (v.A.getUserAffinity(t.id)?.vcProbability ?? 0) - n
                 });
             return null != n ? [n, ...i] : i
         }, [W, r.author.id]);

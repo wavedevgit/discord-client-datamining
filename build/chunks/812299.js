@@ -1,49 +1,48 @@
 /** chunk id: 812299 params = (module,exports,require) **/
-"use strict";
-a.d(t, {
-    k: () => c,
-    y: () => l
+n.d(t, {
+    k: () => o,
+    y: () => c
 });
-var n = a(627968);
-a(64700);
-var i = a(709066),
-    r = a(455207),
-    s = a(943667),
-    o = a(767283);
+var a = n(627968);
+n(64700);
+var i = n(709066),
+    r = n(455207),
+    s = n(943667),
+    l = n(767283);
 
-function c(e) {
+function o(e) {
     let t, {
-        message: a,
-        channel: n,
-        user: o,
-        isRepliedMessage: c
+        message: n,
+        channel: a,
+        user: l,
+        isRepliedMessage: o
     } = e;
-    return a?.isSystemDM() ? t = i.A.Types.SYSTEM_DM : null != a && (0, s.A)(a) ? t = (0, r.MZ)(a) ? i.A.Types.OFFICIAL : i.A.Types.SERVER : o?.bot ? t = i.A.Types.BOT : null != n && n.isForumPost() && n.ownerId === o?.id && !c && (t = i.A.Types.ORIGINAL_POSTER), t
+    return n?.isSystemDM() ? t = i.A.Types.SYSTEM_DM : null != n && (0, s.A)(n) ? t = (0, r.MZ)(n) ? i.A.Types.OFFICIAL : i.A.Types.SERVER : l?.bot ? t = i.A.Types.BOT : null != a && a.isForumPost() && a.ownerId === l?.id && !o && (t = i.A.Types.ORIGINAL_POSTER), t
 }
 
-function l(e) {
+function c(e) {
     let {
         message: t,
-        channel: a,
+        channel: n,
         user: r,
         compact: s,
-        isRepliedMessage: l,
-        hideIcon: _ = !1,
+        isRepliedMessage: c,
+        hideIcon: d = !1,
         children: u
-    } = e, d = c({
+    } = e, _ = o({
         message: t,
-        channel: a,
+        channel: n,
         user: r,
         compact: s,
-        isRepliedMessage: l,
-        hideIcon: _,
+        isRepliedMessage: c,
+        hideIcon: d,
         children: u
     });
-    return null == d ? null : (0, n.jsx)(i.A, {
-        className: s ? o.jW : o.RQ,
-        type: d,
+    return null == _ ? null : (0, a.jsx)(i.A, {
+        className: s ? l.jW : l.RQ,
+        type: _,
         verified: r?.isVerifiedBot(),
-        hideIcon: _,
+        hideIcon: d,
         useRemSizes: !0,
         children: u
     })

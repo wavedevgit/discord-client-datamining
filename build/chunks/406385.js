@@ -1,10 +1,10 @@
 /** chunk id: 406385 params = (module,exports,require) **/
 n.d(t, {
-    AU: () => x,
-    Ey: () => A,
-    QF: () => S,
-    do: () => h,
-    eC: () => v
+    AU: () => v,
+    Ey: () => y,
+    QF: () => b,
+    do: () => x,
+    eC: () => E
 });
 var r = n(627968),
     l = n(64700),
@@ -17,10 +17,10 @@ var r = n(627968),
     d = n(435371),
     m = n(397927),
     p = n(985018),
-    E = n(655833);
+    h = n(655833);
 let f = "-:--",
-    h = 1500,
-    v = {
+    x = 1500,
+    E = {
         [u.Q6.PLAYING]: {
             icon: m.E$n,
             label: p.intl.string(p.t.ZcgDJX)
@@ -34,7 +34,7 @@ let f = "-:--",
             label: p.intl.string(p.t.hsvh0i)
         }
     },
-    x = {
+    v = {
         [u.oA.MD]: u.n4.MD,
         [u.oA.LG]: u.n4.LG
     },
@@ -43,30 +43,30 @@ let f = "-:--",
         [u.n4.LG]: "lg"
     };
 
-function S(e) {
+function b(e) {
     let {
         current: t,
         duration: n
     } = e, l = null != t ? (0, c.rB)(t) : f, a = null != n ? (0, c.rB)(n) : f;
     return (0, r.jsxs)("div", {
-        className: i()(E.d$, E.jk),
+        className: i()(h.d$, h.jk),
         "data-testid": "discord-web-video-player-duration",
         children: [(0, r.jsx)(m.Text, {
             variant: "text-xs/normal",
-            className: E.Ue,
+            className: h.Ue,
             children: l
         }), (0, r.jsx)(m.Text, {
             variant: "text-xs/normal",
-            className: E.zO,
+            className: h.zO,
             children: "/"
         }), (0, r.jsx)(m.Text, {
             variant: "text-xs/normal",
-            className: E.Ue,
+            className: h.Ue,
             children: a
         })]
     })
 }
-let A = l.forwardRef(function(e, t) {
+let y = l.forwardRef(function(e, t) {
     let {
         iconComponent: n,
         animationTime: l,
@@ -74,24 +74,24 @@ let A = l.forwardRef(function(e, t) {
         ariaLabel: c,
         active: p,
         disabled: f,
-        tooltipLabel: v,
-        tooltipDelayMs: x = h,
-        shortcut: S,
-        onClick: A,
-        buttonSize: b = u.n4.MD,
-        "data-testid": _
-    } = e, C = e => (0, r.jsx)(m.DUT, {
+        tooltipLabel: E,
+        tooltipDelayMs: v = x,
+        shortcut: b,
+        onClick: y,
+        buttonSize: S = u.n4.MD,
+        "data-testid": C
+    } = e, A = e => (0, r.jsx)(m.DUT, {
         ...e,
-        onClick: !0 === f ? void 0 : A,
-        className: i()(E.K5, {
-            [E.Iy]: f
+        onClick: !0 === f ? void 0 : y,
+        className: i()(h.K5, {
+            [h.Iy]: f
         }),
         "aria-label": c,
         "aria-disabled": f,
-        "data-testid": _,
+        "data-testid": C,
         innerRef: t,
         children: (0, r.jsx)(s.animated.div, {
-            className: E.K5,
+            className: h.K5,
             style: {
                 opacity: (0, s.to)([l.to({
                     range: [0, 1],
@@ -100,22 +100,22 @@ let A = l.forwardRef(function(e, t) {
                 height: {
                     [u.n4.LG]: "32px",
                     [u.n4.MD]: "24px"
-                } [b]
+                } [S]
             },
             children: (0, r.jsx)(n, {
-                size: g[b],
+                size: g[S],
                 color: !0 !== f ? o.A.colors.WHITE : o.A.colors.TEXT_MUTED,
-                className: i()(E.jk, {
-                    [E.x2]: p,
-                    [E.Wr]: !f
+                className: i()(h.jk, {
+                    [h.x2]: p,
+                    [h.Wr]: !f
                 })
             })
         })
     });
-    return null != v && a ? (0, r.jsx)(d.m_, {
-        text: v,
-        keyboardShortcut: "" !== (S ?? "").trim() ? S : void 0,
-        delay: x,
-        children: C()
-    }) : C()
+    return null != E && a ? (0, r.jsx)(d.m_, {
+        text: E,
+        keyboardShortcut: "" !== (b ?? "").trim() ? b : void 0,
+        delay: v,
+        children: A()
+    }) : A()
 })

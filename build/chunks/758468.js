@@ -1,14 +1,14 @@
 /** chunk id: 758468 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => p,
+    Ay: () => E,
     Ue: () => d,
     lS: () => c
 });
 var r = n(64700),
-    l = n(158954),
-    a = n(892358),
-    i = n(92246),
-    s = n(795068),
+    i = n(158954),
+    s = n(892358),
+    a = n(92246),
+    l = n(795068),
     o = n(654487);
 let u = {
         tension: 500,
@@ -19,54 +19,54 @@ let u = {
     d = 4,
     m = 32;
 
-function p(e) {
+function E(e) {
     let {
         timelineRect: t,
         videoDuration: n,
         targetSec: c
     } = e, {
-        questConfig: p
-    } = r.useContext(s.l), E = r.useMemo(() => p.features.includes(o.Li.FULL_EPISODE_VIDEO_QUEST), [p.features]), [f, h] = r.useState(null), [v, x] = r.useState(null), g = r.useRef(null), [{
-        expansion: S
-    }, A] = (0, l.zhh)(() => ({
+        questConfig: E
+    } = r.useContext(l.l), p = r.useMemo(() => E.features.includes(o.Li.FULL_EPISODE_VIDEO_QUEST), [E.features]), [_, f] = r.useState(null), [v, S] = r.useState(null), h = r.useRef(null), [{
+        expansion: g
+    }, A] = (0, i.zhh)(() => ({
         expansion: 0,
         config: u,
         onRest: () => {
-            null == g.current && x(null)
+            null == h.current && S(null)
         }
-    })), b = r.useCallback(e => {
-        g.current = e, null != e ? (x(e), A({
+    })), x = r.useCallback(e => {
+        h.current = e, null != e ? (S(e), A({
             expansion: 4
         })) : A({
             expansion: 0
-        }), h(e)
-    }, [A]), _ = r.useMemo(() => !E || null == n || null == t || isNaN(n) ? [] : [(e => {
+        }), f(e)
+    }, [A]), C = r.useMemo(() => !p || null == n || null == t || isNaN(n) ? [] : [(e => {
         let {
             index: t,
             targetSec: n,
             videoDuration: r,
-            questConfig: l,
-            timelineRect: s
-        } = e, o = Math.max(0, (0, a.DX)(n, r, s) - m);
+            questConfig: i,
+            timelineRect: l
+        } = e, o = Math.max(0, (0, s.DX)(n, r, l) - m);
         return {
             leftPx: o,
             rightPx: o + m,
             targetSec: n,
-            label: (0, i.mq)(l),
+            label: (0, a.mq)(i),
             index: t
         }
     })({
         index: 0,
         targetSec: c,
         videoDuration: n,
-        questConfig: p,
+        questConfig: E,
         timelineRect: t
-    })], [c, n, p, t, E]), C = r.useCallback(e => null != n && null != t && null != e && _.some(t => e >= t.leftPx - d - 4 * (f === t.index) && e <= t.rightPx + d + 4 * (f === t.index)), [_, n, t, f]);
+    })], [c, n, E, t, p]), T = r.useCallback(e => null != n && null != t && null != e && C.some(t => e >= t.leftPx - d - 4 * (_ === t.index) && e <= t.rightPx + d + 4 * (_ === t.index)), [C, n, t, _]);
     return {
-        indicators: _,
-        isInExclusionZone: C,
-        setHoveredIndicatorIndex: b,
-        expansionSpring: S,
+        indicators: C,
+        isInExclusionZone: T,
+        setHoveredIndicatorIndex: x,
+        expansionSpring: g,
         animatingIndicatorIndex: v
     }
 }

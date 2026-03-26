@@ -1,30 +1,30 @@
 /** chunk id: 801209 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => s
 });
 var r = n(64700),
-    l = n(536968);
+    i = n(536968);
 
-function a(e) {
+function s(e) {
     let {
         videoRef: t,
         hlsRef: n,
-        enabled: a,
-        contentMetadata: i,
-        isHls: s,
+        enabled: s,
+        contentMetadata: a,
+        isHls: l,
         debug: o
     } = e, u = r.useRef(null);
     r.useEffect(() => {
-        if (!a || null == t.current || s && null == n.current) return;
+        if (!s || null == t.current || l && null == n.current) return;
         let e = {
             debug: o ?? !1,
             videoElement: t.current,
-            hlsInstance: s ? n.current ?? void 0 : void 0,
-            feature: i.contentType,
-            contentMetadata: i
+            hlsInstance: l ? n.current ?? void 0 : void 0,
+            feature: a.contentType,
+            contentMetadata: a
         };
-        return u.current = new l.Gb(e), u.current.initialize(), () => {
+        return u.current = new i.Gb(e), u.current.initialize(), () => {
             null != u.current && (u.current.endSession(), u.current.destroy(), u.current = null)
         }
-    }, [a, s, n, t, i, o])
+    }, [s, l, n, t, a, o])
 }

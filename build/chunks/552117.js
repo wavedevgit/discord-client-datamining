@@ -22,8 +22,8 @@ var i = n(627968),
     C = n(87719),
     I = n(465794),
     E = n(71393),
-    v = n(287809),
-    b = n(954571),
+    b = n(287809),
+    v = n(954571),
     T = n(927578),
     y = n(256449),
     S = n(679382),
@@ -37,7 +37,7 @@ var i = n(627968),
     D = n(260268);
 
 function k(e) {
-    b.default.track(R.HAw.PREMIUM_PROMOTION_OPENED, {
+    v.default.track(R.HAw.PREMIUM_PROMOTION_OPENED, {
         location_page: null != e.guild_id ? R.liQ.GUILD_CHANNEL : R.liQ.DM_CHANNEL,
         location_section: R.JJy.STICKER_POPOUT
     }), (0, C.e)()
@@ -103,7 +103,7 @@ let U = e => {
             let {
                 channel: e
             } = g.current;
-            b.default.track(R.HAw.OPEN_POPOUT, {
+            v.default.track(R.HAw.OPEN_POPOUT, {
                 type: R.JJy.STICKER_POPOUT,
                 guild_id: e.getGuildId(),
                 sticker_pack_id: n.pack_id,
@@ -155,7 +155,7 @@ let U = e => {
             } = e,
             [y, S] = a.useState(null),
             [N, L] = a.useState(!1),
-            U = v.default.getCurrentUser(),
+            U = b.default.getCurrentUser(),
             B = T.Ay.canUseCustomStickersEverywhere(U),
             G = (0, s.bG)([E.A], () => E.A.getGuild(n.guild_id)),
             F = null != G,
@@ -202,7 +202,7 @@ let U = e => {
                 } = K.current;
                 e()
             }, [N, y]), (0, m.Ay)(() => {
-                b.default.track(R.HAw.OPEN_POPOUT, {
+                v.default.track(R.HAw.OPEN_POPOUT, {
                     type: $,
                     ...z
                 })

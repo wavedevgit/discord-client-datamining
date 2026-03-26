@@ -47,8 +47,8 @@ function E(e) {
         footer: l,
         info: C,
         staticBannerSrc: E,
-        videoBannerSrc: v,
-        bannerAspectRatio: b = 0,
+        videoBannerSrc: b,
+        bannerAspectRatio: v = 0,
         iconSrc: T,
         actions: y = [],
         primaryActionFirst: S = !1,
@@ -81,10 +81,10 @@ function E(e) {
             channelId: N.channelId,
             messageId: N.messageId
         }), D.current = !0)
-    }, void 0), O = null != E, U = null != v && !1 === M, B = O || U, G = 0 === b ? f.pv : f.$g, F = r.useRef(null), H = r.useCallback(() => {
+    }, void 0), O = null != E, U = null != b && !1 === M, B = O || U, G = 0 === v ? f.pv : f.$g, F = r.useRef(null), H = r.useCallback(() => {
         let e = F.current;
         null == e || ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
-    }, []), V = r.useMemo(() => !!U && new URL(v).pathname.endsWith(".gif"), [U, v]), q = r.useMemo(() => {
+    }, []), V = r.useMemo(() => !!U && new URL(b).pathname.endsWith(".gif"), [U, b]), q = r.useMemo(() => {
         if (null != j) return e => {
             j(e), (0, g.gx)({
                 applicationId: N.id,
@@ -118,11 +118,11 @@ function E(e) {
             children: [U && (V ? (0, a.jsx)("div", {
                 className: f.O9,
                 style: {
-                    backgroundImage: `url(${v})`
+                    backgroundImage: `url(${b})`
                 }
             }) : (0, a.jsx)(o.A, {
                 ref: F,
-                src: v,
+                src: b,
                 mediaLayoutType: x.dG.MOSAIC,
                 loop: !0,
                 muted: !0,

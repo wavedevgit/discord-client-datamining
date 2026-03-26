@@ -20,16 +20,16 @@ function u(e, t) {
         onHlsInstance: d
     } = t, m = r.useRef(null), p = r.useRef(u);
     p.current = u;
-    let E = r.useRef(c),
+    let h = r.useRef(c),
         f = r.useRef(d);
     r.useEffect(() => {
-        E.current = c
+        h.current = c
     }, [c]), r.useEffect(() => {
         f.current = d
     }, [d]);
-    let h = null != n && n.split("?")[0].endsWith(".m3u8") && l.Ay.isSupported();
+    let x = null != n && n.split("?")[0].endsWith(".m3u8") && l.Ay.isSupported();
     return r.useEffect(() => {
-        if (!h || null == n || null == e.current) return;
+        if (!x || null == n || null == e.current) return;
         let t = e.current,
             r = new l.Ay({
                 backBufferLength: s,
@@ -50,7 +50,7 @@ function u(e, t) {
         return r.on(l.Ay.Events.FRAG_LOADING, () => {
             r.config.minAutoBitrate !== i && (r.config.minAutoBitrate = i)
         }), r.on(l.Ay.Events.ERROR, (e, t) => {
-            if (E.current?.(function(e) {
+            if (h.current?.(function(e) {
                     switch (e) {
                         case l.Ay.ErrorTypes.NETWORK_ERROR:
                             return a.SB.HLS_NETWORK_ERROR;
@@ -85,8 +85,8 @@ function u(e, t) {
         }), t.addEventListener("seeking", c), r.loadSource(n), r.attachMedia(t), () => {
             t.removeEventListener("seeking", c), m.current === r && (r.destroy(), m.current = null, f.current?.(null)), t.removeAttribute("src"), t.load()
         }
-    }, [h, n, e]), {
-        isHlsActive: h,
+    }, [x, n, e]), {
+        isHlsActive: x,
         hlsRef: m
     }
 }

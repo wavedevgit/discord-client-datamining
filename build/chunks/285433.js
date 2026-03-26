@@ -22,8 +22,8 @@ var i = n(627968),
     C = n(270045),
     I = n(57718),
     E = n(847641),
-    v = n(646764),
-    b = n(398025),
+    b = n(646764),
+    v = n(398025),
     T = n(433745),
     y = n(654487),
     S = n(818348),
@@ -101,7 +101,7 @@ let L = (0, s.animated)(c.abt),
                     children: [z && (0, i.jsx)(s.animated.div, {
                         className: j.gM,
                         style: {
-                            opacity: (0, b.a)(P.to({
+                            opacity: (0, v.a)(P.to({
                                 range: [0, 1],
                                 output: [1, 0]
                             })),
@@ -114,7 +114,7 @@ let L = (0, s.animated)(c.abt),
                             className: j._F,
                             children: [(0, i.jsx)("div", {
                                 className: j.SY,
-                                children: (0, i.jsx)(v.A, {
+                                children: (0, i.jsx)(b.A, {
                                     quest: n,
                                     questContent: r,
                                     className: j.EK,
@@ -142,7 +142,7 @@ let L = (0, s.animated)(c.abt),
                             [j.Gg]: Q
                         }),
                         style: {
-                            opacity: (0, b.a)(P.to({
+                            opacity: (0, v.a)(P.to({
                                 range: [0, 1],
                                 output: [0, 1]
                             })),
@@ -202,7 +202,7 @@ let L = (0, s.animated)(c.abt),
                         sourceQuestContent: U,
                         children: e => (0, i.jsx)(s.animated.div, {
                             style: {
-                                opacity: (0, b.a)(P),
+                                opacity: (0, v.a)(P),
                                 visibility: w || M ? "inherit" : "hidden"
                             },
                             "aria-hidden": !w && !M,

@@ -1,87 +1,87 @@
 /** chunk id: 804147 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => h
 }), n(321073);
 var r = n(627968),
-    l = n(64700),
-    a = n(503698),
-    i = n.n(a),
-    s = n(4208),
+    i = n(64700),
+    s = n(503698),
+    a = n.n(s),
+    l = n(4208),
     o = n(61491),
     u = n(397927),
     c = n(624600),
     d = n(972441),
     m = n(795068),
-    p = n(163961),
-    E = n(104148),
-    f = n(758468),
-    h = n(590358),
+    E = n(163961),
+    p = n(104148),
+    _ = n(758468),
+    f = n(590358),
     v = n(737149);
-let x = {
+let S = {
     tension: 300,
     friction: 30,
     clamp: !0
 };
 
-function g(e) {
+function h(e) {
     let {
         targetSec: t,
         isFullyVisible: n,
-        percent: a,
-        animate: g,
-        interactionEnabled: S,
+        percent: s,
+        animate: h,
+        interactionEnabled: g,
         isQuestCompleted: A,
-        backgroundColor: b,
-        preloadedBuffers: _,
-        durationSec: C,
-        maxSeekableTime: y,
-        playerState: T,
-        onClick: N,
-        onScrubBack: D,
-        onScrubForward: I,
-        "data-testid": R
+        backgroundColor: x,
+        preloadedBuffers: C,
+        durationSec: T,
+        maxSeekableTime: b,
+        playerState: D,
+        onClick: y,
+        onScrubBack: I,
+        onScrubForward: N,
+        "data-testid": L
     } = e, {
-        quest: L,
-        sourceQuestContent: w,
+        quest: R,
+        sourceQuestContent: O,
         useNewProgressBarStyling: M
-    } = l.useContext(m.a), {
+    } = i.useContext(m.a), {
         contRef: k,
-        boundingRect: P,
-        handleMouseEnter: j,
-        handleMouseLeave: O,
-        handleMouseMove: U,
-        handleKeyDown: B,
+        boundingRect: w,
+        handleMouseEnter: P,
+        handleMouseLeave: j,
+        handleMouseMove: V,
+        handleKeyDown: U,
         hoveredAtX: Q,
-        maxSeekableX: V,
-        isHovering: K,
-        handleClick: F,
-        ariaProps: $
+        maxSeekableX: B,
+        isHovering: F,
+        handleClick: K,
+        ariaProps: Y
     } = (0, d.A)({
-        onScrubBack: D,
-        onScrubForward: I,
-        maxSeekableTime: y,
-        interactionEnabled: S,
-        durationSec: C,
-        percent: a,
-        onClick: N
-    }), Y = l.useMemo(() => null == Q || null == P ? null : (0, o.rB)((0, o.hc)(Q, P, C)), [Q, P, C]), G = l.useMemo(() => {
-        if (null != P) return (0, o.TO)(a, P)
-    }, [a, P]), {
-        currentPxSpring: H
+        onScrubBack: I,
+        onScrubForward: N,
+        maxSeekableTime: b,
+        interactionEnabled: g,
+        durationSec: T,
+        percent: s,
+        onClick: y
+    }), $ = i.useMemo(() => null == Q || null == w ? null : (0, o.rB)((0, o.hc)(Q, w, T)), [Q, w, T]), H = i.useMemo(() => {
+        if (null != w) return (0, o.TO)(s, w)
+    }, [s, w]), {
+        currentPxSpring: G
     } = (0, u.zhh)({
-        currentPxSpring: null == G || Number.isNaN(G) ? 0 : G,
-        config: x
-    }, g ? "animate-always" : "animate-never"), {
-        indicators: z,
+        currentPxSpring: null == H || Number.isNaN(H) ? 0 : H,
+        config: S
+    }, h ? "animate-always" : "animate-never"), {
+        indicators: q,
         isInExclusionZone: W,
-        setHoveredIndicatorIndex: q,
-        animatingIndicatorIndex: X,
-        expansionSpring: J
-    } = (0, f.Ay)({
-        timelineRect: P,
-        videoDuration: C,
+        setHoveredIndicatorIndex: z,
+        animatingIndicatorIndex: J,
+        expansionSpring: X
+    } = (0, _.Ay)({
+        timelineRect: w,
+        videoDuration: T,
         targetSec: t
-    }), Z = l.useMemo(() => W(G), [G, W]), ee = l.useMemo(() => W(Q), [Q, W]), et = !A && M, en = P?.width != null && P?.width !== 0 ? P?.width : 1, er = l.useMemo(() => ((e, t) => {
+    }), Z = i.useMemo(() => W(H), [H, W]), ee = i.useMemo(() => W(Q), [Q, W]), et = !A && M, en = w?.width != null && w?.width !== 0 ? w?.width : 1, er = i.useMemo(() => ((e, t) => {
         let n = [{
             startPx: 0,
             endPx: t,
@@ -90,84 +90,84 @@ function g(e) {
         }];
         if (0 === e.length) return n;
         for (let r = 0; r < e.length; r++) {
-            let l = Math.max(0, e[r].leftPx - f.Ue),
-                a = Math.min(t, e[r].rightPx + f.Ue),
-                i = n?.[n.length - 1];
-            null != i && (i.endPx = l, i.rightIndicatorIndex = r);
-            let s = null != i && i.endPx <= i.startPx,
-                o = s ? i?.leftIndicatorIndex : r;
-            s && n.pop(), a < t && n.push({
-                startPx: a,
+            let i = Math.max(0, e[r].leftPx - _.Ue),
+                s = Math.min(t, e[r].rightPx + _.Ue),
+                a = n?.[n.length - 1];
+            null != a && (a.endPx = i, a.rightIndicatorIndex = r);
+            let l = null != a && a.endPx <= a.startPx,
+                o = l ? a?.leftIndicatorIndex : r;
+            l && n.pop(), s < t && n.push({
+                startPx: s,
                 endPx: t,
                 leftIndicatorIndex: o,
                 rightIndicatorIndex: null
             })
         }
         return n
-    })(z, en), [z, en]);
+    })(q, en), [q, en]);
     return (0, r.jsx)("div", {
         className: v.jD,
         ref: k,
-        "data-testid": R,
+        "data-testid": L,
         style: {
-            "--custom-timeline-height": `${M||K?4:2}px`,
+            "--custom-timeline-height": `${M||F?4:2}px`,
             "--custom-initial-timeline-height": `${M?4:2}px`
         },
         children: (0, r.jsxs)(u.DUT, {
-            className: i()(v.KF, {
-                [v.uc]: S
+            className: a()(v.KF, {
+                [v.uc]: g
             }),
             ignoreKeyPress: !0,
-            onClick: F,
-            onMouseEnter: j,
-            onMouseLeave: O,
-            onMouseMove: U,
-            onKeyDown: B,
-            tabIndex: S ? void 0 : -1,
+            onClick: K,
+            onMouseEnter: P,
+            onMouseLeave: j,
+            onMouseMove: V,
+            onKeyDown: U,
+            tabIndex: g ? void 0 : -1,
             children: [(0, r.jsx)("div", {
                 className: v.G9,
-                ...$,
-                children: null != P && er.map((e, t) => (0, r.jsx)(c.A, {
-                    showGlow: T !== p.Q6.ENDED && null != G && G > e.startPx,
+                ...Y,
+                children: null != w && er.map((e, t) => (0, r.jsx)(c.A, {
+                    showGlow: D !== E.Q6.ENDED && null != H && H > e.startPx,
                     segment: e,
-                    playbackPxSpring: H,
-                    animatingIndex: X,
-                    backgroundColor: b,
-                    expansionSpring: J,
+                    playbackPxSpring: G,
+                    animatingIndex: J,
+                    backgroundColor: x,
+                    expansionSpring: X,
                     timelineWidth: en,
-                    preloadedBuffers: _,
-                    maxSeekableX: V,
-                    interactionEnabled: S,
+                    preloadedBuffers: C,
+                    maxSeekableX: B,
+                    interactionEnabled: g,
                     useNewStyles: M,
-                    progressFillClassName: et ? h.QR : h.UA,
-                    glowClassName: et ? h.Um : h.U5
+                    progressFillClassName: et ? f.QR : f.UA,
+                    glowClassName: et ? f.Um : f.U5
                 }, t))
-            }), null != P && z.map((e, t) => {
-                let n = X === e.index,
-                    l = e.targetSec;
-                return (0, r.jsx)(E.A, {
-                    currentPx: null != G ? G : 0,
+            }), null != w && q.map((e, t) => {
+                let n = J === e.index,
+                    i = e.targetSec;
+                return (0, r.jsx)(p.A, {
+                    currentPx: null != H ? H : 0,
                     indicator: e,
                     isAnimated: n,
-                    expansionSpring: J,
-                    quest: L,
-                    sourceQuestContent: w,
-                    onMouseEnter: () => q(e.index),
-                    onMouseLeave: () => q(null),
-                    onClick: null != N ? () => N(l) : void 0
+                    expansionSpring: X,
+                    quest: R,
+                    sourceQuestContent: O,
+                    onMouseEnter: () => z(e.index),
+                    onMouseLeave: () => z(null),
+                    onClick: null != y ? () => y(i) : void 0
                 }, `indicator-${t}`)
-            }), K && null != Y && n && !ee && (0, r.jsx)(u.Text, {
+            }), F && null != $ && n && !ee && (0, r.jsx)(u.Text, {
                 className: v.Ey,
                 variant: "text-xs/normal",
                 color: "always-white",
                 style: {
                     left: null != Q ? `${Q}px` : "auto"
                 },
-                children: Y
-            }), K && S && null != G && !Z && (0, r.jsx)(s.animated.div, {
+                children: $
+            }), F && g && null != H && !Z && (0, r.jsx)(l.animated.div, {
                 className: v.Ub,
                 style: {
-                    left: H.to(e => `${e}px`)
+                    left: G.to(e => `${e}px`)
                 }
             })]
         })

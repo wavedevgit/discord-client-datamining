@@ -38,7 +38,7 @@ let A = function(e) {
                     children: [(0, i.jsx)(c.xgA, {
                         className: g.gr,
                         size: "xs",
-                        color: "currentColor"
+                        color: "white"
                     }), !s()(l) && (0, i.jsx)(c.Text, {
                         className: g.DD,
                         variant: "text-md/semibold",

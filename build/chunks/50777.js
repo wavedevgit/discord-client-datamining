@@ -22,8 +22,8 @@ var i = n(627968),
     C = n(733391),
     I = n(832163),
     E = n(317560),
-    v = n(533406),
-    b = n(300182),
+    b = n(533406),
+    v = n(300182),
     T = n(183802),
     y = n(818348),
     S = n(985018),
@@ -57,7 +57,7 @@ function j(e) {
             })
         }, [n, R, t, k]),
         H = a.useCallback(() => {
-            null != R && U && (0, v.a)(R, {
+            null != R && U && (0, b.a)(R, {
                 isGift: !1
             }, {
                 analyticsLocations: [d.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED_PURCHASE_BUTTON],
@@ -65,7 +65,7 @@ function j(e) {
             })
         }, [R, t, U]),
         V = a.useCallback(() => {
-            null != R && (0, v.a)(R, {
+            null != R && (0, b.a)(R, {
                 isGift: !0,
                 giftRecipient: O ?? void 0
             }, {
@@ -140,7 +140,7 @@ function j(e) {
                         price: (0, x.$g)(R.price?.amount ?? 0, R.price?.currency ?? y.Yr.USD)
                     }),
                     fullWidth: !0
-                }), (0, i.jsx)(b.A, {
+                }), (0, i.jsx)(v.A, {
                     onGift: V
                 })]
             })]

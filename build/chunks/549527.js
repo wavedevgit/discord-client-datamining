@@ -22,8 +22,8 @@ var i = n(627968),
     C = n(112758),
     I = n(754459),
     E = n(538355),
-    v = n(699352),
-    b = n(378570),
+    b = n(699352),
+    v = n(378570),
     T = n(138298),
     y = n(253932),
     S = n(761640),
@@ -56,7 +56,7 @@ function G(e) {
             channelId: e.id,
             baseChannelId: i,
             guildId: e.guild_id
-        }), (0, b.iN)(i), D.default.track(O.HAw.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
+        }), (0, v.iN)(i), D.default.track(O.HAw.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
             moderator_report_id: t.channel_id,
             destination_channel_id: i,
             destination_message_id: t.id
@@ -195,7 +195,7 @@ function H(e) {
                 channel: C,
                 reportingUserId: n?.moderatorReport?.reporting_user_id,
                 reportedTimestamp: t.timestamp
-            }), (0, v.A)({
+            }), (0, b.A)({
                 channelMessageProps: {
                     message: d,
                     channel: C,
