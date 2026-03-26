@@ -26,7 +26,7 @@ var i = n(627968),
     b = n(2242),
     C = n(284683),
     T = n(985018),
-    I = n(941769);
+    I = n(619092);
 let v = (0, A.xI)(m.A.GUILD_SETTINGS_ROLE_SUBSCRIPTIONS_OVERVIEW_SETTINGS_MAX_WIDTH);
 
 function S(e) {

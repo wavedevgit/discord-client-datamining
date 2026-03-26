@@ -16,7 +16,7 @@ var i = n(627968),
     A = n(426660),
     m = n(806931),
     p = n(985018),
-    g = n(852887);
+    g = n(616124);
 let _ = function(e) {
     let {
         participants: t,

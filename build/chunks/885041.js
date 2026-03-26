@@ -24,7 +24,7 @@ var i = n(627968),
     T = n(315206),
     N = n(844358),
     S = n(828430),
-    x = n(79746),
+    x = n(857365),
     v = n(861638),
     b = n(793574),
     y = n(114716),
@@ -65,7 +65,7 @@ var i = n(627968),
     ed = n(862658),
     ec = n(813160),
     eu = n(942614),
-    eA = n(950067),
+    eA = n(172448),
     eh = n(682492),
     e_ = n(584257),
     em = n(64585),
@@ -113,8 +113,8 @@ var i = n(627968),
     e6 = n(194871),
     e9 = n(856588),
     e5 = n(612181),
-    e3 = n(723702),
-    e2 = n(837921),
+    e2 = n(723702),
+    e3 = n(837921),
     e4 = n(715671),
     e8 = n(652215),
     te = n(746080),
@@ -122,9 +122,9 @@ var i = n(627968),
     tn = n(613057);
 n(115036), n(943577), n(131319), n(794383), n(845618), n(712687), n(328968), n(67480), n(874486), n(162605), n(2866), n(628965), n(752319), n(836602), n(555337), n(863036), n(291731), n(176360), n(972937), n(279061), n(750128), n(921955);
 let ti = !1;
-(0, v.as)(), s.Ay.initialize(), eO.A.loadServer(), e3.isPlatformEmbedded && (e2.Ay.on("USER_SETTINGS_OPEN", (e, t) => {
+(0, v.as)(), s.Ay.initialize(), eO.A.loadServer(), e2.isPlatformEmbedded && (e3.Ay.on("USER_SETTINGS_OPEN", (e, t) => {
     (0, eY.openUserSettings)()
-}), e2.Ay.on("LAUNCH_APPLICATION", (e, t) => {
+}), e3.Ay.on("LAUNCH_APPLICATION", (e, t) => {
     let n = eZ.A.getActiveLibraryApplication(t);
     e4.playApplication(t, n, {
         analyticsParams: {
@@ -404,7 +404,7 @@ let tu = [{
             (0, o.mMO)(async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("64992"), n.e("67208")]).then(n.bind(n, 401539));
+                } = await Promise.all([n.e("64992"), n.e("96878")]).then(n.bind(n, 401539));
                 return t => (0, i.jsx)(e, {
                     ...t,
                     guildId: a
@@ -532,7 +532,7 @@ class t_ extends a.PureComponent {
     historyUnlisten = () => {};
     rewriterUnlisten = () => {};
     componentDidMount() {
-        e2.Ay.setZoomFactor(p.A.zoom), eO.A.init(), O.A.initialize(), eE.A.initialize(), K.A.initialize(), eK.A.initialize(), q.A.initialize(), eC.A.initialize(), k.A.initialize(), es.A.initialize(), E.A.init(), $.A.init(), z.A.init(), eA.A.initialize(), S.A.initialize(), H.A.initialize(), eT.A.initialize(), T.Ay.initialize(), F.Ay.initialize(), eW.A.initialize(), ea.Ay.initialize(), ep.A.initialize(), C.A.initialize(), el.A.init(), D.A.init(), e9.A.init(), f.A.initialize(), eU.A.init(), e7.A.init(), eV.A.init(), eD.A.initialize(), eM.A.initialize(), ek.A.initialize(), eH.A.init(), B.A.initialize(), I.A.initialize(), eP.A.initialize(), em.A.initialize(), e_.A.initialize(), eg.A.initialize(), M.A.initialize(), j.A.initialize(), W.A.initialize(), er.A.initialize(), eo.A.initialize(), eN.A.initialize(), eI.A.initialize(), G.A.initialize(), P.A.initialize(), x.A.initialize(), this.rewriterUnlisten = eS.A.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = eS.A.addRouteChangeListener(this.handleHistoryChange)
+        e3.Ay.setZoomFactor(p.A.zoom), eO.A.init(), O.A.initialize(), eE.A.initialize(), K.A.initialize(), eK.A.initialize(), q.A.initialize(), eC.A.initialize(), k.A.initialize(), es.A.initialize(), E.A.init(), $.A.init(), z.A.init(), eA.A.initialize(), S.A.initialize(), H.A.initialize(), eT.A.initialize(), T.Ay.initialize(), F.Ay.initialize(), eW.A.initialize(), ea.Ay.initialize(), ep.A.initialize(), C.A.initialize(), el.A.init(), D.A.init(), e9.A.init(), f.A.initialize(), eU.A.init(), e7.A.init(), eV.A.init(), eD.A.initialize(), eM.A.initialize(), ek.A.initialize(), eH.A.init(), B.A.initialize(), I.A.initialize(), eP.A.initialize(), em.A.initialize(), e_.A.initialize(), eg.A.initialize(), M.A.initialize(), j.A.initialize(), W.A.initialize(), er.A.initialize(), eo.A.initialize(), eN.A.initialize(), eI.A.initialize(), G.A.initialize(), P.A.initialize(), x.A.initialize(), this.rewriterUnlisten = eS.A.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = eS.A.addRouteChangeListener(this.handleHistoryChange)
     }
     componentWillUnmount() {
         eO.A.terminate(), eK.A.terminate(), eC.A.terminate(), eE.A.terminate(), O.A.terminate(), T.Ay.terminate(), F.Ay.terminate(), eW.A.terminate(), C.A.terminate(), eT.A.terminate(), ep.A.terminate(), ek.A.terminate(), f.A.terminate(), B.A.terminate(), eo.A.terminate(), I.A.terminate(), eN.A.terminate(), eP.A.terminate(), em.A.terminate(), e_.A.terminate(), eg.A.terminate(), M.A.terminate(), j.A.terminate(), eI.A.terminate(), G.A.terminate(), Y.A.terminate(), P.A.terminate(), x.A.terminate(), W.A.terminate(), er.A.terminate(), this.historyUnlisten(), this.rewriterUnlisten()

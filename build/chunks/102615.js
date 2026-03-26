@@ -16,15 +16,15 @@ var s = n(397927),
 let _ = () => (0, i.jsxs)(s.BJc, {
     gap: 32,
     children: [(0, i.jsx)(r.b, {}), (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(l.G, {
+        children: [(0, i.jsx)(l.A, {
             title: m.intl.string(m.t.xVRG4P),
             children: (0, i.jsx)(u.f, {})
-        }), (0, i.jsx)(l.G, {
+        }), (0, i.jsx)(l.A, {
             title: m.intl.string(m.t["y62Z/d"]),
             children: (0, i.jsxs)(a.A, {
                 children: [(0, i.jsx)(o.A, {}), (0, i.jsx)(d.Z, {})]
             })
-        }), (0, i.jsx)(l.G, {
+        }), (0, i.jsx)(l.A, {
             title: m.intl.string(m.t["1Qn8iV"]),
             children: (0, i.jsx)(c.A, {})
         })]

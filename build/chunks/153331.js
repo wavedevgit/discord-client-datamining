@@ -41,7 +41,7 @@ var n, l = i(627968),
     H = i(360469),
     w = i(652215),
     F = i(985018),
-    B = i(609535),
+    B = i(161042),
     W = ((n = {}).ACTIVITY_FEED = "ActivityFeed", n.STREAM_PREVIEW = "StreamPreview", n.VOICE_CHANNEL = "VoiceChannel", n);
 let k = {
         StreamPreview: [108, 60],

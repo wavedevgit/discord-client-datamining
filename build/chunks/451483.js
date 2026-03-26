@@ -63,7 +63,7 @@ function u(e) {
         }, t)
     });
     return (0, i.jsx)(o.A, {
-        icon: n(394803),
+        icon: n(617184),
         timestamp: u,
         compact: l,
         children: I

@@ -1,36 +1,35 @@
 /** chunk id: 552836 params = (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => a
+i.d(t, {
+    A: () => o
 });
-var i = n(311907),
-    s = n(73153);
-let l = {};
-class r extends i.Ay.PersistedStore {
+var r = i(311907),
+    s = i(73153);
+let n = {};
+class a extends r.Ay.PersistedStore {
     static displayName = "GuildBoostingProgressBarPersistedStore";
     static persistKey = "PremiumGuildProgressBarPersistedStore";
     initialize(e) {
-        null != e && (l = e)
+        null != e && (n = e)
     }
     getState() {
-        return l
+        return n
     }
     getCountForGuild(e) {
-        return l[e]
+        return n[e]
     }
 }
-let a = new r(s.h, {
+let o = new a(s.h, {
     APPLIED_GUILD_BOOST_COUNT_UPDATE: e => {
         let {
             guildId: t,
-            premiumCount: n
+            premiumCount: i
         } = e;
-        l = {
-            ...l,
-            [t]: n
+        n = {
+            ...n,
+            [t]: i
         }
     },
     APPLIED_GUILD_BOOST_COUNT_RESET: function() {
-        l = {}
+        n = {}
     }
 })

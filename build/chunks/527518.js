@@ -8,7 +8,7 @@ var a = l(627968),
     i = l(240248),
     o = l(652215),
     s = l(985018),
-    c = l(749226);
+    c = l(895375);
 let u = {
     title: "Balance Widget",
     stories: [{

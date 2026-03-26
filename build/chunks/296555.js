@@ -12,7 +12,7 @@ var a = n(627968),
     d = n(928953),
     c = n(559474),
     u = n(327885),
-    m = n(876607);
+    m = n(978108);
 let h = i.createContext({
         setDropHandler: () => {}
     }),
@@ -41,7 +41,7 @@ let h = i.createContext({
             onCloseRequest: () => (0, s.OoC)(r.k)
         })
     },
-    f = () => {
+    _ = () => {
         (0, s.kBI)(r.g) ? (0, s.OoC)(r.g) : (0, s.mMO)(async () => {
             let {
                 ShopPFXPreviewInstructionModal: e
@@ -54,7 +54,7 @@ let h = i.createContext({
             onCloseRequest: () => (0, s.OoC)(r.g)
         })
     },
-    _ = () => {
+    f = () => {
         let e = (0, l.pF)(),
             {
                 previewProfileEffectSkuId: t,
@@ -77,7 +77,7 @@ let h = i.createContext({
                 }), (0, a.jsx)(s.K0, {
                     variant: "icon-only",
                     size: "sm",
-                    onClick: f,
+                    onClick: _,
                     icon: s.cBN,
                     "aria-label": "Open PFX preview instructions"
                 })]
@@ -324,7 +324,7 @@ let h = i.createContext({
                     icon: s.cBN,
                     "aria-label": "Open preview instructions"
                 })]
-            }), (0, a.jsx)(_, {}), (0, a.jsx)(v, {}), (0, a.jsx)(b, {
+            }), (0, a.jsx)(f, {}), (0, a.jsx)(v, {}), (0, a.jsx)(b, {
                 clearAssets: r,
                 clearIgnoredFiles: d
             }), (0, a.jsx)(j, {

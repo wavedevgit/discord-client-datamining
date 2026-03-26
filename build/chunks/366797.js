@@ -1,14 +1,15 @@
 /** chunk id: 366797 params = (module,exports,require) **/
+"use strict";
 e.exports = {
-    kL: "container_a98bec",
-    hQ: "contentContainer_a98bec",
-    rf: "body_a98bec",
-    s8: "marketingPageTextContainer_a98bec",
-    iQ: "descriptionContainer_a98bec",
-    UJ: "twoButtonContainer_a98bec",
-    es: "singleButtonContainer_a98bec",
-    XN: "offerPillContainer_a98bec",
-    Qn: "affinitiesContainer_a98bec",
-    eZ: "referrerAttributionContainer_a98bec",
-    wx: "header_a98bec"
+    zr: "root_bfe55a",
+    N7: "idle_bfe55a",
+    Yj: "gradientContainer_bfe55a",
+    K1: "topControls_bfe55a controlSection_bfe55a",
+    q6: "bottomControls_bfe55a controlSection_bfe55a",
+    _v: "videoControls_bfe55a",
+    aw: "gradientTop_bfe55a gradientContainer_bfe55a",
+    YA: "gradientBottom_bfe55a gradientContainer_bfe55a",
+    t4: "controlSection_bfe55a",
+    i$: "edgeControls_bfe55a",
+    Kz: "centerControls_bfe55a"
 }

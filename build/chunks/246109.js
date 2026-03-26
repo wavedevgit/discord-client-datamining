@@ -15,7 +15,7 @@ var s = n(397927),
 let m = () => (0, i.jsxs)(s.BJc, {
     gap: 32,
     children: [(0, i.jsx)(a.b, {}), (0, i.jsx)("div", {
-        children: (0, i.jsxs)(l.G, {
+        children: (0, i.jsxs)(l.A, {
             title: u.intl.string(u.t.SRZyHg),
             children: [(0, i.jsx)(c.A, {}), (0, i.jsx)(d.A, {}), (0, i.jsx)(o.A, {}), (0, i.jsx)(r.A, {})]
         })

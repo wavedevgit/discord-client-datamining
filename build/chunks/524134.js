@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(139286),
     p = n(80556),
     g = n(557722),
-    f = n(544028),
-    _ = n(870570),
+    _ = n(544028),
+    f = n(870570),
     v = n(446868),
     b = n(683589),
     j = n(87404),
@@ -29,9 +29,9 @@ function T() {
     let {
         action: e,
         theme: t
-    } = (0, l.cf)([_.A, f.A], () => ({
-        action: _.A.getAction(),
-        theme: f.A.theme
+    } = (0, l.cf)([f.A, _.A], () => ({
+        action: f.A.getAction(),
+        theme: _.A.theme
     })), T = v.A.getVerificationTypes(e), [S, E] = i.useState(0), N = (0, m.A)(T);
     (0, x.A)({
         type: s.ImpressionTypes.MODAL,

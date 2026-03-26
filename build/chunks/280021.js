@@ -18,7 +18,7 @@ var a = r(627968),
     I = r(652215),
     b = r(333354),
     k = r(985018),
-    x = r(37469);
+    x = r(85920);
 let v = e => (0, a.jsx)(i._Jp, {
     ...e,
     color: i.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK_REFRESH

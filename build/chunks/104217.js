@@ -1,14 +1,14 @@
 /** chunk id: 104217 params = (module,exports,require) **/
-n.d(e, {
+n.d(t, {
     A: () => a
 });
 var i = n(73153);
 let a = {
-    disableFalsePositiveButton: function(t, e) {
+    disableFalsePositiveButton: function(e, t) {
         i.h.dispatch({
             type: "MESSAGE_EXPLICIT_CONTENT_FP_SUBMIT",
-            messageId: e,
-            channelId: t
+            messageId: t,
+            channelId: e
         })
     }
 }

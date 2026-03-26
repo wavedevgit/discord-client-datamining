@@ -1,42 +1,43 @@
 /** chunk id: 448290 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => g,
-    C: () => _
+    A: () => A,
+    C: () => g
 });
-var i = n(627968);
+var l = n(627968);
 n(64700);
-var l = n(311907),
-    r = n(397927),
-    a = n(414798),
-    s = n(734057),
+var i = n(311907),
+    s = n(397927),
+    r = n(414798),
+    a = n(734057),
     o = n(576705),
-    d = n(309010),
+    u = n(309010),
     c = n(203982),
-    u = n(427262),
-    h = n(652215),
-    A = n(985018);
+    d = n(427262),
+    m = n(652215),
+    h = n(985018);
 
-function _(e, t) {
+function g(e, t) {
     let {
         id: n
-    } = e, i = `@${u.Ay.getUserTag(e,{decoration:"never"})}`, l = `<@${n}>`;
-    c._.dispatchToLastSubscribed(h.jej.INSERT_TEXT, {
-        plainText: i,
-        rawText: l
-    }), null != t && a.A.startTyping(t)
+    } = e, l = `@${d.Ay.getUserTag(e,{decoration:"never"})}`, i = `<@${n}>`;
+    c._.dispatchToLastSubscribed(m.jej.INSERT_TEXT, {
+        plainText: l,
+        rawText: i
+    }), null != t && r.A.startTyping(t)
 }
 
-function g(e, t, n) {
-    let [a, c] = (0, l.yK)([d.A, s.A, o.A], () => {
-        let e = d.A.getChannelId(t),
-            n = s.A.getChannel(e);
-        return [e, null != n && (n.isMultiUserDM() || o.A.can(h.xBc.SEND_MESSAGES, n))]
-    }, [t]), u = n === h.BRT.POPOUT;
-    return !c || u ? null : (0, i.jsx)(r.Drp, {
+function A(e, t, n) {
+    let [r, c] = (0, i.yK)([u.A, a.A, o.A], () => {
+        let e = u.A.getChannelId(t),
+            n = a.A.getChannel(e);
+        return [e, null != n && (n.isMultiUserDM() || o.A.can(m.xBc.SEND_MESSAGES, n))]
+    }, [t]), d = n === m.BRT.POPOUT;
+    return !c || d ? null : (0, l.jsx)(s.Drp, {
         id: "mention",
-        label: A.intl.string(A.t.P8tvKG),
+        label: h.intl.string(h.t.P8tvKG),
         action: function() {
-            _(e, a)
+            g(e, r)
         }
     })
 }

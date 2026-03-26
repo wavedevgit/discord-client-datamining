@@ -1,6 +1,6 @@
 /** chunk id: 502128 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => _
 });
 var a = n(627968),
     i = n(503698),
@@ -12,8 +12,8 @@ var a = n(627968),
     c = n(734057),
     u = n(320697),
     m = n(394953),
-    h = n(187698),
-    x = n(661251);
+    h = n(184245),
+    x = n(310086);
 let p = [{
         key: "channelName",
         cellClassName: s()(h.Hn, h.HA),
@@ -77,7 +77,7 @@ let p = [{
         }
     }];
 
-function f() {
+function _() {
     let {
         unreadRecentMentionsCount: e,
         unreadChannelIds: t
@@ -85,8 +85,8 @@ function f() {
         isLoading: n,
         hasLoadedEver: i,
         hasPreloaded: s,
-        hasMoreToLoad: f,
-        isLoadingComplete: _
+        hasMoreToLoad: _,
+        isLoadingComplete: f
     } = (0, l.cf)([u.A], () => ({
         isLoading: u.A.isLoading,
         hasLoadedEver: u.A.hasLoadedEver,
@@ -167,9 +167,9 @@ function f() {
                 }), (0, a.jsxs)("div", {
                     children: ["Has Loaded Ever: ", i ? "✅" : "❌"]
                 }), (0, a.jsxs)("div", {
-                    children: ["Has More To Load: ", f ? "✅" : "❌"]
+                    children: ["Has More To Load: ", _ ? "✅" : "❌"]
                 }), (0, a.jsxs)("div", {
-                    children: ["Is Loading Complete: ", _ ? "✅" : "❌"]
+                    children: ["Is Loading Complete: ", f ? "✅" : "❌"]
                 }), (0, a.jsxs)("div", {
                     children: ["Last Loading Trigger: ", v?.loadingTrigger]
                 })]

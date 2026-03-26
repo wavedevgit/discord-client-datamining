@@ -1,6 +1,6 @@
 /** chunk id: 189244 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => f
 });
 var a = n(627968);
 n(64700);
@@ -17,14 +17,14 @@ var i = n(311907),
     x = n(287809),
     p = n(850730),
     g = n(385803),
-    f = n(607335);
+    _ = n(37760);
 
-function _() {
+function f() {
     (0, u.Bf)();
     let e = (0, i.bG)([x.default], () => x.default.getCurrentUser()),
         t = h.eh.useSetting(),
         n = (0, i.bG)([m.A], () => m.A.theme),
-        _ = t.backgroundGradientPresetId,
+        f = t.backgroundGradientPresetId,
         v = (0, i.bG)([d.A], () => d.A.purchases),
         b = (0, c.x9)(v),
         j = (0, c.$W)(v),
@@ -38,7 +38,7 @@ function _() {
         I = (0, i.bG)([r.A], () => r.A.messageGroupSpacing),
         k = h.Xi.useSetting();
     return (0, p.DB)(), (0, a.jsxs)("div", {
-        className: f.kL,
+        className: _.kL,
         children: [(0, a.jsxs)("div", {
             children: [(0, a.jsx)(l.Heading, {
                 variant: "heading-lg/semibold",
@@ -71,7 +71,7 @@ function _() {
                 children: ["Theme: ", n]
             }), (0, a.jsxs)(l.Text, {
                 variant: "text-md/normal",
-                children: ["Client Theme ID:", " ", null != _ ? g.ag[_]?.getName() : "None"]
+                children: ["Client Theme ID:", " ", null != f ? g.ag[f]?.getName() : "None"]
             }), (0, a.jsxs)(l.Text, {
                 variant: "text-md/normal",
                 children: ["Avatar Decoration: ", S?.name ?? "None"]

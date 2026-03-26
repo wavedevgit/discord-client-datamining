@@ -97,7 +97,7 @@ function v(e) {
                     (0, c.mMO)(async () => {
                         let {
                             default: e
-                        } = await t.e("73987").then(t.bind(t, 773486));
+                        } = await t.e("29225").then(t.bind(t, 773486));
                         return n => (0, l.jsx)(e, {
                             ...n,
                             subscription: K,

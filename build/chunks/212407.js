@@ -1,79 +1,78 @@
 /** chunk id: 212407 params = (module,exports,require) **/
-"use strict";
-r.d(t, {
-    Kk: () => l,
-    MV: () => o,
-    U1: () => d,
+n.d(t, {
+    Kk: () => s,
+    MV: () => d,
+    U1: () => c,
     bv: () => u,
-    qY: () => m,
-    s4: () => c,
-    w$: () => p
+    qY: () => A,
+    s4: () => o,
+    w$: () => h
 });
-var n = r(64700),
-    i = r(488430),
-    s = r(940622),
-    a = r(559474);
-let l = e => {
-        let t = (0, s.mb)(a.RN.HERO_LOGO),
-            r = (0, s.mb)(a.RN.HERO_BANNER_STATIC),
-            i = (0, s.mb)(a.RN.HERO_BANNER_ANIMATED),
-            l = (0, s.mb)(a.RN.HERO_BANNER_RIVE);
-        return n.useMemo(() => {
-            let n = null != r || null != i || null != l || null != t,
-                s = null != r && null == i;
+var i = n(64700),
+    a = n(488430),
+    l = n(940622),
+    r = n(559474);
+let s = e => {
+        let t = (0, l.mb)(r.RN.HERO_LOGO),
+            n = (0, l.mb)(r.RN.HERO_BANNER_STATIC),
+            a = (0, l.mb)(r.RN.HERO_BANNER_ANIMATED),
+            s = (0, l.mb)(r.RN.HERO_BANNER_RIVE);
+        return i.useMemo(() => {
+            let i = null != n || null != a || null != s || null != t,
+                l = null != n && null == a;
             return {
-                bannerDisplayConfig: n ? void 0 : e.bannerDisplayConfig,
-                logoDisplayConfig: n ? void 0 : e.logoDisplayConfig,
+                bannerDisplayConfig: i ? void 0 : e.bannerDisplayConfig,
+                logoDisplayConfig: i ? void 0 : e.logoDisplayConfig,
                 heroLogo: t ?? e.heroLogoUrl,
-                heroBannerStatic: r ?? e.heroBannerUrl,
-                heroBannerAnimated: s ? void 0 : i ?? e.heroBannerAnimatedUrl,
-                heroBannerRive: l ?? e.heroRiveUrl
+                heroBannerStatic: n ?? e.heroBannerUrl,
+                heroBannerAnimated: l ? void 0 : a ?? e.heroBannerAnimatedUrl,
+                heroBannerRive: s ?? e.heroRiveUrl
             }
-        }, [t, r, i, l, e])
+        }, [t, n, a, s, e])
     },
-    c = (e, t) => (0, s.mb)(a.RN.FEATURED_BLOCK) ?? t?.assetUrl ?? e?.featuredBlockUrl,
-    o = e => {
-        let t = (0, s.mb)(a.RN.CATALOG_BANNER_STATIC),
-            r = (0, s.mb)(a.RN.CATALOG_BANNER_ANIMATED),
-            n = (0, s.mb)(a.RN.CATALOG_BANNER_RIVE);
+    o = (e, t) => (0, l.mb)(r.RN.FEATURED_BLOCK) ?? t?.assetUrl ?? e?.featuredBlockUrl,
+    d = e => {
+        let t = (0, l.mb)(r.RN.CATALOG_BANNER_STATIC),
+            n = (0, l.mb)(r.RN.CATALOG_BANNER_ANIMATED),
+            i = (0, l.mb)(r.RN.CATALOG_BANNER_RIVE);
         return {
             catalogBannerStatic: t ?? e.catalogBannerUrl,
-            catalogBannerAnimated: r ?? e.catalogBannerAnimatedUrl,
-            catalogBannerRive: n ?? e.catalogBannerRiveUrl
+            catalogBannerAnimated: n ?? e.catalogBannerAnimatedUrl,
+            catalogBannerRive: i ?? e.catalogBannerRiveUrl
         }
     },
-    d = e => (0, s.mb)(a.RN.PDP_BACKGROUND) ?? e.pdpBgUrl,
+    c = e => (0, l.mb)(r.RN.PDP_BACKGROUND) ?? e.pdpBgUrl,
     u = e => {
-        let t = (0, s.mb)(a.RN.SHOP_BUTTON_BG_HOVER),
-            r = (0, s.mb)(a.RN.SHOP_BUTTON_BG_HOVER_DARK),
-            l = (0, s.mb)(a.RN.SHOP_BUTTON_BG_HOVER_LIGHT),
-            c = (0, s.mb)(a.RN.SHOP_BUTTON_BG_RESTING),
-            o = (0, s.mb)(a.RN.SHOP_BUTTON_BG_RESTING_DARK),
-            d = (0, s.mb)(a.RN.SHOP_BUTTON_BG_RESTING_LIGHT),
-            u = (0, s.mb)(a.RN.COACHTIP_AVATAR);
-        return n.useMemo(() => {
-            let n = [t, r, l, c, o, d, u].some(e => null != e);
-            if (e?.type === i.G.COACHMARK) return {
+        let t = (0, l.mb)(r.RN.SHOP_BUTTON_BG_HOVER),
+            n = (0, l.mb)(r.RN.SHOP_BUTTON_BG_HOVER_DARK),
+            s = (0, l.mb)(r.RN.SHOP_BUTTON_BG_HOVER_LIGHT),
+            o = (0, l.mb)(r.RN.SHOP_BUTTON_BG_RESTING),
+            d = (0, l.mb)(r.RN.SHOP_BUTTON_BG_RESTING_DARK),
+            c = (0, l.mb)(r.RN.SHOP_BUTTON_BG_RESTING_LIGHT),
+            u = (0, l.mb)(r.RN.COACHTIP_AVATAR);
+        return i.useMemo(() => {
+            let i = [t, n, s, o, d, c, u].some(e => null != e);
+            if (e?.type === a.G.COACHMARK) return {
                 hasPreviewAssets: !1
             };
-            let s = e?.refTargetBackground?.asset,
-                a = s?.resting,
-                m = s?.hovered;
+            let l = e?.refTargetBackground?.asset,
+                r = l?.resting,
+                A = l?.hovered;
             return {
-                hasPreviewAssets: n,
-                buttonBGHoverDark: r ?? t ?? m?.dark,
-                buttonBGHoverLight: l ?? t ?? m?.light,
-                buttonBGRestingDark: o ?? c ?? a?.dark,
-                buttonBGRestingLight: d ?? c ?? a?.light,
-                coachtipAvatar: u ?? (e?.type === i.G.COACHTIP ? e.avatar : void 0)
+                hasPreviewAssets: i,
+                buttonBGHoverDark: n ?? t ?? A?.dark,
+                buttonBGHoverLight: s ?? t ?? A?.light,
+                buttonBGRestingDark: d ?? o ?? r?.dark,
+                buttonBGRestingLight: c ?? o ?? r?.light,
+                coachtipAvatar: u ?? (e?.type === a.G.COACHTIP ? e.avatar : void 0)
             }
-        }, [t, r, l, c, o, d, u, e])
+        }, [t, n, s, o, d, c, u, e])
     },
-    m = e => ({
+    A = e => ({
         bannerUrl: e.bannerUrl,
         bannerAnimatedUrl: e.bannerAnimatedUrl
     }),
-    p = e => ({
+    h = e => ({
         bannerURL: e.bannerURL,
         bannerAnimatedURL: e.bannerAnimatedURL
     })

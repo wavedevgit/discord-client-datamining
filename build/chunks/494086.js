@@ -24,7 +24,7 @@ function s(e) {
         otherUsernameHook: m
     });
     return (0, i.jsx)(l.A, {
-        icon: n(394803),
+        icon: n(617184),
         timestamp: t.timestamp,
         compact: d,
         children: A

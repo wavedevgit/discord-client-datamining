@@ -25,7 +25,7 @@ var r = n(627968),
     b = n(652215),
     I = n(333354),
     S = n(985018),
-    C = n(520277),
+    C = n(509754),
     w = n(445826);
 let N = E.Ay.getEnableHardwareAcceleration() ? d.JsQ : u.A;
 

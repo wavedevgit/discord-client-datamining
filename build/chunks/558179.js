@@ -14,8 +14,8 @@ var r = a(627968),
     h = a(694403),
     p = a(542664),
     m = a(49005),
-    g = a(529223),
-    x = a(829681);
+    g = a(791106),
+    x = a(360792);
 let f = RegExp(`https?://${window.GLOBAL_ENV.CDN_HOST??""}`);
 
 function b(e) {

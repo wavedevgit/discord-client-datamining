@@ -1,47 +1,47 @@
 /** chunk id: 131935 params = (module,exports,require) **/
-o.d(t, {
-    A: () => _
+i.d(t, {
+    A: () => l
 });
-var i = o(559633),
-    n = o(430452),
-    a = o(954571);
-async function _(e, t) {
+var n = i(559633),
+    o = i(430452),
+    a = i(954571);
+async function l(e, t) {
     let {
-        rating: o,
-        category: _,
-        reasonCode: c,
+        rating: i,
+        category: l,
+        reasonCode: r,
         reasonDescription: s,
-        variant: l,
+        variant: _,
         feedback: d,
-        analyticsData: r
-    } = t, u = n.Ay.getSettings(), m = n.Ay.getInputDeviceId(), b = n.Ay.getInputDevices()[m], p = n.Ay.getOutputDeviceId(), v = n.Ay.getOutputDevices()[p], g = n.Ay.getVideoDeviceId(), y = n.Ay.getVideoDevices()[g], A = n.Ay.getNoiseCancellation(), h = n.Ay.getMediaEngine().getAudioSubsystem(), F = n.Ay.getMediaEngine().getAudioLayer(), C = await i.A.getKrispModel(), {
-        output_audio_route_type: D,
-        ...O
-    } = r ?? {};
+        analyticsData: u
+    } = t, c = o.Ay.getSettings(), m = o.Ay.getInputDeviceId(), b = o.Ay.getInputDevices()[m], p = o.Ay.getOutputDeviceId(), g = o.Ay.getOutputDevices()[p], v = o.Ay.getVideoDeviceId(), f = o.Ay.getVideoDevices()[v], O = o.Ay.getNoiseCancellation(), y = o.Ay.getMediaEngine().getAudioSubsystem(), A = o.Ay.getMediaEngine().getAudioLayer(), E = await n.A.getKrispModel(), {
+        output_audio_route_type: F,
+        ...C
+    } = u ?? {};
     a.default.track(e, {
-        rating: o ?? "no response",
-        category: _,
-        reason_code: c,
+        rating: i ?? "no response",
+        category: l,
+        reason_code: r,
         reason_description: s,
-        reason_variant: l,
+        reason_variant: _,
         feedback: d,
-        audio_input_mode: u.mode,
-        automatic_audio_input_sensitivity_enabled: u.modeOptions.autoThreshold,
-        audio_input_sensitivity: u.modeOptions.threshold,
-        vad_use_advanced_voice_activity: u.modeOptions.vadUseKrisp,
-        echo_cancellation_enabled: u.echoCancellation,
-        noise_suppression_enabled: u.noiseSuppression,
-        automatic_gain_control_enabled: u.automaticGainControl,
-        voice_output_volume: u.outputVolume,
-        noise_cancellation_enabled: A,
+        audio_input_mode: c.mode,
+        automatic_audio_input_sensitivity_enabled: c.modeOptions.autoThreshold,
+        audio_input_sensitivity: c.modeOptions.threshold,
+        vad_use_advanced_voice_activity: c.modeOptions.vadUseKrisp,
+        echo_cancellation_enabled: c.echoCancellation,
+        noise_suppression_enabled: c.noiseSuppression,
+        automatic_gain_control_enabled: c.automaticGainControl,
+        voice_output_volume: c.outputVolume,
+        noise_cancellation_enabled: O,
         input_device_name: b?.name,
-        output_device_name: v?.name,
-        video_device_name: y?.name,
-        audio_subsystem: h,
-        audio_layer: F,
-        automatic_audio_subsystem: u.automaticAudioSubsystem,
-        krisp_nc_model: C,
-        audio_output_mode: D,
-        ...O
+        output_device_name: g?.name,
+        video_device_name: f?.name,
+        audio_subsystem: y,
+        audio_layer: A,
+        automatic_audio_subsystem: c.automaticAudioSubsystem,
+        krisp_nc_model: E,
+        audio_output_mode: F,
+        ...C
     })
 }

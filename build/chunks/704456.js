@@ -1,58 +1,58 @@
 /** chunk id: 704456 params = (module,exports,require) **/
-n.d(t, {
-    Ce: () => g,
-    kh: () => x,
-    le: () => v,
-    vr: () => p
+n.d(e, {
+    Ce: () => p,
+    kh: () => h,
+    le: () => E,
+    vr: () => A
 });
-var l, s = n(64700),
-    a = n(989349),
-    r = n.n(a),
-    i = n(311907),
+var i, a = n(64700),
+    s = n(989349),
+    r = n.n(s),
+    l = n(311907),
     o = n(308528),
     c = n(22007),
     d = n(95701),
-    u = n(734057),
-    h = n(652215),
-    m = n(985018),
-    x = ((l = {})[l.LONG = 0] = "LONG", l[l.SHORT = 1] = "SHORT", l);
+    _ = n(734057),
+    g = n(652215),
+    u = n(985018),
+    h = ((i = {})[i.LONG = 0] = "LONG", i[i.SHORT = 1] = "SHORT", i);
 
-function g(e) {
+function p(t) {
     let {
-        dueAt: t,
+        dueAt: e,
         now: n,
-        type: l
-    } = e;
-    if (null == t) return {
+        type: i
+    } = t;
+    if (null == e) return {
         string: "",
         isOverdue: !1
     };
-    let s = 0 === l ? m.t.TjNWNF : m.t.H4gnX9,
-        a = 0 === l ? m.t.haia16 : m.t["Uq7Y+7"],
-        i = n > t;
+    let a = 0 === i ? u.t.TjNWNF : u.t.H4gnX9,
+        s = 0 === i ? u.t.haia16 : u.t["Uq7Y+7"],
+        l = n > e;
     return {
-        dueInText: m.intl.formatToPlainString(i ? a : s, {
-            duration: r().duration(t.getTime() - n.getTime(), "millisecond").humanize()
+        dueInText: u.intl.formatToPlainString(l ? s : a, {
+            duration: r().duration(e.getTime() - n.getTime(), "millisecond").humanize()
         }),
-        isOverdue: i
+        isOverdue: l
     }
 }
 
-function p(e) {
-    let t = (0, i.bG)([u.A], () => u.A.getChannel(e.saveData.channelId));
-    return s.useMemo(() => null != t ? t : null != e.message ? new d.jb({
-        id: e.saveData.channelId,
-        guild_id: e.saveData.guildId,
-        type: h.rbe.UNKNOWN,
-        name: m.intl.string(m.t.J90oLW)
-    }) : void 0, [t, e])
+function A(t) {
+    let e = (0, l.bG)([_.A], () => _.A.getChannel(t.saveData.channelId));
+    return a.useMemo(() => null != e ? e : null != t.message ? new d.jb({
+        id: t.saveData.channelId,
+        guild_id: t.saveData.guildId,
+        type: g.rbe.UNKNOWN,
+        name: u.intl.string(u.t.J90oLW)
+    }) : void 0, [e, t])
 }
-async function v(e, t) {
-    if (t?.type === h.rbe.UNKNOWN && null == e.saveData.guildId) try {
-        let t = await o.A.fetchChannel(e.saveData.channelId);
-        if (null == t.recipients || t.recipients.length > 1) return;
-        await o.A.ensurePrivateChannel(t.recipients.map(e => e.id))
-    } catch (e) {}(0, c.A)(h.BVt.CHANNEL(t?.getGuildId(), e.saveData.channelId, e.saveData.messageId), {
+async function E(t, e) {
+    if (e?.type === g.rbe.UNKNOWN && null == t.saveData.guildId) try {
+        let e = await o.A.fetchChannel(t.saveData.channelId);
+        if (null == e.recipients || e.recipients.length > 1) return;
+        await o.A.ensurePrivateChannel(e.recipients.map(t => t.id))
+    } catch (t) {}(0, c.A)(g.BVt.CHANNEL(e?.getGuildId(), t.saveData.channelId, t.saveData.messageId), {
         openChannel: !0
     })
 }

@@ -54,7 +54,7 @@ function v(e) {
     null == u && (u = N[e.applicationId] = new l.IX).start(f, () => v(e)), t || (T[e.applicationId] = e, a.w.set(I, T))
 }
 
-function y() {
+function b() {
     let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
         t = d.Ay.getVisibleRunningGames(),
         n = new Set;
@@ -70,33 +70,33 @@ function y() {
     for (let t of Object.keys(T)) n.has(t) || x(T[t], e)
 }
 
-function b() {
+function y() {
     for (let e of Object.keys(T)) x(T[e]);
     S = !1
 }
 class O extends i.Ay.Store {
     static displayName = "ActivityTrackingStore";
     initialize() {
-        this.waitFor(h.default, _.A, m.A, g.A, d.Ay, p.A, c.A), this.syncWith([c.A], y)
+        this.waitFor(h.default, _.A, m.A, g.A, d.Ay, p.A, c.A), this.syncWith([c.A], b)
     }
     getActivities() {
         return T
     }
 }
 new O(r.h, {
-    RUNNING_GAMES_CHANGE: () => y(),
+    RUNNING_GAMES_CHANGE: () => b(),
     CONNECTION_OPEN: function() {
         if (S) return !1;
         for (let e of Object.keys(T)) v(T[e]);
-        y(!1), S = !0
+        b(!1), S = !0
     },
     CONNECTION_CLOSED: function(e) {
         let {
             code: t
         } = e;
-        4004 === t && b()
+        4004 === t && y()
     },
-    LOGOUT: b,
+    LOGOUT: y,
     ACTIVITY_UPDATE_SUCCESS: function(e) {
         let {
             applicationId: t,

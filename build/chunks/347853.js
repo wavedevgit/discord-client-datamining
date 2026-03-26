@@ -32,7 +32,7 @@ function o() {
     (0, i.mMO)(async () => {
         let {
             default: e
-        } = await Promise.all([n.e("88890"), n.e("34078"), n.e("64171")]).then(n.bind(n, 365225));
+        } = await Promise.all([n.e("88890"), n.e("34078"), n.e("89338")]).then(n.bind(n, 365225));
         return t => (0, a.jsx)(e, {
             ...t,
             onBackPressed: r

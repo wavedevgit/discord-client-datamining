@@ -10,7 +10,7 @@ var a = n(627968),
     o = n(37962),
     d = n(881520),
     c = n(670455),
-    u = n(901647);
+    u = n(573624);
 let m = [{
     id: "seconds",
     label: "second(s)",
@@ -30,7 +30,7 @@ let m = [{
 }];
 
 function h() {
-    let [e, t] = i.useState(null), [n, h] = i.useState(0), [x, p] = i.useState(1e3), [g, f] = i.useState(0), _ = (0, s.bG)([d.A], () => null === e ? null : d.A.getFeedbackConfig(c.MW[e]) ?? o.u[c.MW[e]]), v = Object.entries(c.MW), b = v.slice(v.length / 2).map(e => {
+    let [e, t] = i.useState(null), [n, h] = i.useState(0), [x, p] = i.useState(1e3), [g, _] = i.useState(0), f = (0, s.bG)([d.A], () => null === e ? null : d.A.getFeedbackConfig(c.MW[e]) ?? o.u[c.MW[e]]), v = Object.entries(c.MW), b = v.slice(v.length / 2).map(e => {
         let [t] = e;
         return {
             id: t,
@@ -52,22 +52,22 @@ function h() {
                 fullWidth: !0
             }), (0, a.jsxs)(l.nVY, {
                 label: "Override Survey Cooldown",
-                children: [null != _ && (0, a.jsxs)(a.Fragment, {
+                children: [null != f && (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)(l.Text, {
                         variant: "text-sm/semibold",
                         children: "Current cooldown"
                     }), (0, a.jsx)(l.Text, {
                         variant: "text-sm/normal",
-                        children: `${_.cooldown/1e3} second(s) or`
+                        children: `${f.cooldown/1e3} second(s) or`
                     }), (0, a.jsx)(l.Text, {
                         variant: "text-sm/normal",
-                        children: `${_.cooldown/6e4} minute(s) or`
+                        children: `${f.cooldown/6e4} minute(s) or`
                     }), (0, a.jsx)(l.Text, {
                         variant: "text-sm/normal",
-                        children: `${_.cooldown/36e5} hour(s) or`
+                        children: `${f.cooldown/36e5} hour(s) or`
                     }), (0, a.jsx)(l.Text, {
                         variant: "text-sm/normal",
-                        children: `${_.cooldown/864e5} day(s)`
+                        children: `${f.cooldown/864e5} day(s)`
                     })]
                 }), (0, a.jsxs)(l.BJc, {
                     direction: "horizontal",
@@ -93,29 +93,29 @@ function h() {
                 label: "Override Survey Chance",
                 children: (0, a.jsx)(l.ksK, {
                     label: "Override chance",
-                    description: null != _ ? `Current chance: ${100*_.chance}%` : void 0,
+                    description: null != f ? `Current chance: ${100*f.chance}%` : void 0,
                     helperText: "As a percentage",
                     min: 0,
                     max: 100,
                     value: g.toString(),
                     type: "number",
-                    onChange: e => f(parseFloat(e))
+                    onChange: e => _(parseFloat(e))
                 })
             }), (0, a.jsxs)(l.ButtonGroup, {
                 children: [(0, a.jsx)(l.Button, {
                     variant: "critical-primary",
                     text: "Clear Override",
-                    onClick: () => void(null != _ && r.h.dispatch({
+                    onClick: () => void(null != f && r.h.dispatch({
                         type: "FEEDBACK_OVERRIDE_CLEAR",
-                        feedbackType: _.feedbackType
+                        feedbackType: f.feedbackType
                     })),
                     disabled: !j
                 }), (0, a.jsx)(l.Button, {
                     variant: "primary",
                     text: "Update",
-                    onClick: () => void(null != _ && r.h.dispatch({
+                    onClick: () => void(null != f && r.h.dispatch({
                         type: "FEEDBACK_OVERRIDE_SET",
-                        feedbackType: _.feedbackType,
+                        feedbackType: f.feedbackType,
                         cooldown: n * x,
                         chance: g / 100
                     })),

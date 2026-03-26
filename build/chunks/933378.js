@@ -16,14 +16,14 @@ var a = n(627968),
     x = n(18437),
     p = n(590202),
     g = n(971649),
-    f = n(901406),
-    _ = n(792620),
+    _ = n(901406),
+    f = n(792620),
     v = n(814793),
     b = n(201805),
     j = n(495242),
     A = n(52093),
     C = n(985018),
-    y = n(883476);
+    y = n(146567);
 
 function T(e) {
     return (0, a.jsx)(d.Text, {
@@ -40,7 +40,7 @@ function S(e) {
         useReducedMotion: n
     } = e, s = (0, b.H1)(t.id, m.uF.QUEST_BAR_V2, m.uF.QUEST_BAR_V2), o = (0, b.Xf)({
         useReducedMotion: n
-    }), c = (0, x.Ut)(), _ = (0, g.go)(), {
+    }), c = (0, x.Ut)(), f = (0, g.go)(), {
         errorHints: j,
         startingConsoleQuest: A,
         startConsoleQuest: S
@@ -71,19 +71,19 @@ function S(e) {
                 children: j.map((e, n) => {
                     if (e.type === r._.EXPIRED_CREDENTIAL) {
                         let i = u.A.getAccount(e.connected_account_id, e.connected_account_type),
-                            s = (0, f.IG)(e),
-                            l = (0, f.$J)(e);
+                            s = (0, _.IG)(e),
+                            l = (0, _.$J)(e);
                         return (0, a.jsx)(T, {
                             children: C.intl.format(s, {
                                 account_name: i?.name,
                                 onClick: () => {
-                                    (0, f.v0)({
+                                    (0, _.v0)({
                                         quest: t,
                                         platformType: l
                                     }, {
                                         content: m.uF.QUEST_BAR,
                                         ctaContent: p.Cy.DEFIBRILLATOR_RECONNECT_CONSOLE,
-                                        impressionId: _,
+                                        impressionId: f,
                                         sourceQuestContent: m.uF.QUEST_BAR_V2
                                     })
                                 }
@@ -103,7 +103,7 @@ function S(e) {
                 })
             })
         }
-    }, [j, t, _]);
+    }, [j, t, f]);
     return (0, a.jsxs)("div", {
         className: y.XK,
         children: [(0, a.jsxs)("div", {
@@ -138,14 +138,14 @@ let E = function(e) {
     let {
         quest: t,
         taskDetails: n
-    } = e, s = (0, o.bG)([c.A], () => c.A.useReducedMotion), l = (0, h.Du)(), r = i.useMemo(() => (0, f.bg)(t).filter(e => l.xboxAndPlaystationAccounts.find(t => t.type === e)), [l.xboxAndPlaystationAccounts, t]), {
+    } = e, s = (0, o.bG)([c.A], () => c.A.useReducedMotion), l = (0, h.Du)(), r = i.useMemo(() => (0, _.bg)(t).filter(e => l.xboxAndPlaystationAccounts.find(t => t.type === e)), [l.xboxAndPlaystationAccounts, t]), {
         steps: d,
         hasConnectedAccounts: u,
         isProgressingQuestForLaunchedGame: x,
         isQuestComplete: p
     } = i.useMemo(() => {
         let e = r.length > 0,
-            i = e && (0, _.YL)(t),
+            i = e && (0, f.YL)(t),
             s = t.config.messages.gameTitle,
             o = t.userStatus?.completedAt != null;
         return {

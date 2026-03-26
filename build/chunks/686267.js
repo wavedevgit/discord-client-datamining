@@ -12,7 +12,7 @@ var i = n(397927),
     d = n(204821),
     c = n(646284),
     u = n(985018),
-    m = n(528891);
+    m = n(672548);
 let h = {
         [r.wP.EMAIL_VERIFICATION]: u.intl.string(c.default.HC4IiR),
         [r.wP.REFRESH_APP]: u.intl.string(c.default.SzfxQ3),

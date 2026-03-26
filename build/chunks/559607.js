@@ -10,7 +10,7 @@ var n = a(627968),
     o = a(397927),
     c = a(773669),
     d = a(985018),
-    u = a(873523);
+    u = a(912492);
 let m = (0, d.getAvailableLocales)();
 
 function h(e) {

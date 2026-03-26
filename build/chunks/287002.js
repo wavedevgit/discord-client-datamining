@@ -1,46 +1,46 @@
 /** chunk id: 287002 params = (module,exports,require) **/
-n.r(e), n.d(e, {
-    default: () => I
+n.r(t), n.d(t, {
+    default: () => m
 });
 var i = n(627968);
 n(64700);
 var a = n(417597),
-    s = n(397927),
+    r = n(397927),
     l = n(104217),
-    r = n(135598),
+    s = n(135598),
     o = n(390248),
-    c = n(900819),
-    d = n(279547),
+    d = n(900819),
+    c = n(279547),
     u = n(961997),
     _ = n(985018);
 
-function I(t) {
+function m(e) {
     let {
-        channelId: e,
+        channelId: t,
         messageId: n,
-        transitionState: I,
-        onClose: E
-    } = t, x = (0, a.bG)([c.A], () => c.A.getFpMessageInfo(n)), v = x.attachments.map(t => t.id), m = x.attachments.map(t => t.filename), {
-        reportFalsePositive: T,
-        isReportFalsePositiveLoading: C
-    } = (0, d.d)({
+        transitionState: m,
+        onClose: h
+    } = e, p = (0, a.bG)([d.A], () => d.A.getFpMessageInfo(n)), g = p.attachments.map(e => e.id), A = p.attachments.map(e => e.filename), {
+        reportFalsePositive: x,
+        isReportFalsePositiveLoading: f
+    } = (0, c.d)({
         onSuccess: () => {
-            (0, u.o)(E), l.A.disableFalsePositiveButton(e, n)
+            (0, u.o)(h), l.A.disableFalsePositiveButton(t, n)
         },
         onError: () => {
-            (0, s.showToast)((0, s.createToast)(_.intl.string(_.t.R0RpRX), s.ToastType.FAILURE))
+            (0, r.showToast)((0, r.createToast)(_.intl.string(_.t.R0RpRX), r.ToastType.FAILURE))
         },
         report: () => {
-            (0, r.wV)(e, n, v, m)
+            (0, s.wV)(t, n, g, A)
         }
     });
-    return x.attachments.length > 0 || E(), (0, i.jsx)(u.k, {
+    return p.attachments.length > 0 || h(), (0, i.jsx)(u.k, {
         messageId: n,
-        channelId: e,
-        isReportFalsePositiveLoading: C,
+        channelId: t,
+        isReportFalsePositiveLoading: f,
         analyticsContext: o.SW.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_FLOW,
-        onConfirmPress: T,
-        transitionState: I,
-        onClose: E
+        onConfirmPress: x,
+        transitionState: m,
+        onClose: h
     })
 }

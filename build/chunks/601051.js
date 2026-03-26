@@ -1,5 +1,5 @@
 /** chunk id: 601051 params = (module,exports,require) **/
+"use strict";
 e.exports = {
-    _: "tags_e5a45e",
-    L: "wrap_e5a45e"
+    q: "badge_dd79c2"
 }

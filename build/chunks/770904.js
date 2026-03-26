@@ -20,7 +20,7 @@ var i = n(627968),
     _ = n(49999),
     f = n(294726),
     x = n(985018),
-    C = n(838554);
+    C = n(866153);
 let E = s.memo(function(e) {
     let {
         guildId: t,

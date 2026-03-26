@@ -8,7 +8,7 @@ var i = n(627968),
     a = n.n(s),
     r = n(397927),
     o = n(235986),
-    d = n(657737);
+    d = n(549920);
 class c extends l.PureComponent {
     static defaultProps = {
         basis: 232,

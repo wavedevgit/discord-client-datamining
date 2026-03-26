@@ -13,7 +13,7 @@ var a = n(627968),
     u = n(64343),
     m = n(821052),
     h = n(594061),
-    x = n(304932);
+    x = n(331755);
 
 function p() {
     let {
@@ -24,10 +24,10 @@ function p() {
         dailyCapReached: d.A.hasUserHitDCCap(),
         dailyCapOverridden: d.A.dailyCapOverridden,
         newUserMinAgeRequiredOverridden: d.A.newUserMinAgeRequiredOverridden
-    })), [p, g] = i.useState(""), [f, _] = i.useState(20), v = i.useMemo(() => Object.keys(l.M).filter(e => e.toLowerCase().includes(p.toLowerCase())).reverse(), [p]), b = i.useCallback(e => {
+    })), [p, g] = i.useState(""), [_, f] = i.useState(20), v = i.useMemo(() => Object.keys(l.M).filter(e => e.toLowerCase().includes(p.toLowerCase())).reverse(), [p]), b = i.useCallback(e => {
         let t = e.currentTarget;
-        t.scrollHeight - t.scrollTop <= t.clientHeight + 100 && f < v.length && _(e => e + 100)
-    }, [f, v.length]);
+        t.scrollHeight - t.scrollTop <= t.clientHeight + 100 && _ < v.length && f(e => e + 100)
+    }, [_, v.length]);
     return (0, a.jsx)(r.ChK, {
         onScroll: b,
         children: (0, a.jsxs)("div", {
@@ -73,7 +73,7 @@ function p() {
                     onChange: g,
                     onClear: () => g("")
                 }), (0, a.jsx)(c.A, {
-                    items: v.slice(0, f)
+                    items: v.slice(0, _)
                 })]
             })]
         })

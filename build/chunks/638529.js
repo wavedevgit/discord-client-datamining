@@ -6,7 +6,7 @@ var l = n(64700),
     r = n(311907),
     a = n(665171),
     i = n(588591),
-    s = n(513246);
+    s = n(182505);
 
 function d(e) {
     let t = (0, r.bG)([i.A], () => i.A.getRegionStateForPingUrl(e)),

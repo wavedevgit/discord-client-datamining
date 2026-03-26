@@ -9,7 +9,7 @@ var n = l(397927),
     i = l(156312),
     o = l(252561),
     s = l(818348),
-    c = l(825057);
+    c = l(529816);
 let u = {
     name: "Choose Payment Source Type",
     id: "choose-payment-source-type",

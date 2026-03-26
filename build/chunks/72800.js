@@ -11,7 +11,7 @@ var i = n(627968),
     d = n(967198),
     c = n(533550),
     u = n(49999),
-    A = n(826898);
+    A = n(599680);
 let h = a.memo(function(e) {
     let {
         state: t,

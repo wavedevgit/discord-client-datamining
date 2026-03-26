@@ -1,36 +1,18 @@
 /** chunk id: 8271 params = (module,exports,require) **/
-n.d(t, {
-    A: () => g
-});
-var i = n(627968);
-n(64700);
-var s = n(632553),
-    l = n(171316),
-    a = n(975571),
-    r = n(253932),
-    o = n(871930),
-    d = n(578746),
-    c = n(531525),
-    u = n(652215),
-    _ = n(985018),
-    m = n(842130);
-
-function g() {
-    let e = r.vf.useSetting(),
-        t = r.H1.useSetting(),
-        n = (0, l.uM)(),
-        g = (0, s.g)();
-    return (0, i.jsx)(o.h, {
-        setting: c.H.PRIVACY_DATA_QUESTS_3P,
-        children: (0, i.jsx)(d.Ay, {
-            title: _.intl.string(_.t.CyLYKZ),
-            note: _.intl.format(_.t["2QFDU/"], {
-                helpdeskArticle: a.A.getArticleURL(u.MVz.QUESTS_PRIVACY_CONTROLS)
-            }),
-            value: !e,
-            onChange: e => r.vf.updateSetting(!e),
-            disabled: g || t || n,
-            tooltipText: n ? _.intl.string(m.default["6Af/cw"]) : void 0
-        })
-    })
+"use strict";
+e.exports = {
+    Vu: "settingsHeader__4b8d8",
+    KD: "bannedUser__4b8d8",
+    pX: "bannedUserAvatar__4b8d8",
+    Xh: "username__4b8d8",
+    h_: "description__4b8d8",
+    p$: "emptyState__4b8d8",
+    u1: "spinner__4b8d8",
+    Qs: "content__4b8d8",
+    z3: "error__4b8d8",
+    kL: "container__4b8d8",
+    gs: "scrollerContainer__4b8d8",
+    IA: "bansSearchContainer__4b8d8",
+    JU: "searchButton__4b8d8",
+    JV: "paginationInput__4b8d8"
 }

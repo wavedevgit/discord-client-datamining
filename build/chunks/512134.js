@@ -1,6 +1,4 @@
 /** chunk id: 512134 params = (module,exports,require) **/
 e.exports = {
-    Ei: "colorPicker_cd4367",
-    rx: "colorPickerContainer_cd4367",
-    xr: "gradientPicker_cd4367"
+    Z: "taskPresetSelect_a8dbb2"
 }

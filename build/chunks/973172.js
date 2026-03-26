@@ -1,25 +1,25 @@
 /** chunk id: 973172 params = (module,exports,require) **/
-n.d(t, {
-    A: () => d
-}), n(321073);
-var l = n(64700),
-    a = n(311907),
-    r = n(142120),
-    i = n(71393),
-    s = n(680646);
+a.d(t, {
+    A: () => o
+}), a(321073);
+var n = a(64700),
+    i = a(311907),
+    l = a(142120),
+    s = a(71393),
+    r = a(680646);
 
-function d(e) {
+function o(e) {
     let {
         application: t,
-        showMutualGuilds: n = !0
-    } = e, d = (0, a.bG)([s.A], () => s.A.getGuildIdsForApplication(t?.id), [t]), o = (0, a.bG)([r.A], () => r.A.isConnected());
-    return l.useMemo(() => {
+        showMutualGuilds: a = !0
+    } = e, o = (0, i.bG)([r.A], () => r.A.getGuildIdsForApplication(t?.id), [t]), c = (0, i.bG)([l.A], () => l.A.isConnected());
+    return n.useMemo(() => {
         let e = [];
-        if (!o || !n || null == d || null == t) return e;
-        for (let t of d) {
-            let n = i.A.getGuild(t);
-            null != n && e.push(n)
+        if (!c || !a || null == o || null == t) return e;
+        for (let t of o) {
+            let a = s.A.getGuild(t);
+            null != a && e.push(a)
         }
         return e
-    }, [o, d, t, n])
+    }, [c, o, t, a])
 }

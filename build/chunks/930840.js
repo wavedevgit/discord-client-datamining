@@ -1,37 +1,37 @@
 /** chunk id: 930840 params = (module,exports,require) **/
-n.d(t, {
-    c: () => h
+s.d(t, {
+    c: () => x
 });
-var i = n(627968),
-    l = n(64700),
-    s = n(503698),
-    a = n.n(s),
-    r = n(990078),
-    o = n(397927),
-    c = n(957565),
-    d = n(985018),
-    u = n(770778);
+var r = s(627968),
+    l = s(64700),
+    n = s(503698),
+    a = s.n(n),
+    c = s(990078),
+    i = s(397927),
+    o = s(957565),
+    d = s(985018),
+    u = s(523049);
 
-function h(e) {
+function x(e) {
     let {
         chunks: t,
-        className: n,
-        onCopy: s,
-        ...h
-    } = e, m = l.useMemo(() => t?.join(" "), [t]), [A, g] = l.useState(!1), p = l.useCallback(() => {
-        (0, c.C)(m, () => {
-            g(!0), s?.()
+        className: s,
+        onCopy: n,
+        ...x
+    } = e, h = l.useMemo(() => t?.join(" "), [t]), [m, _] = l.useState(!1), p = l.useCallback(() => {
+        (0, o.C)(h, () => {
+            _(!0), n?.()
         })
-    }, [s, m]), f = A ? o.yr3 : o.TdU;
-    return (0, i.jsx)(o.DUT, {
-        className: a()(u.k, n),
+    }, [n, h]), f = m ? i.yr3 : i.TdU;
+    return (0, r.jsx)(i.DUT, {
+        className: a()(u.k, s),
         onClick: p,
-        children: (0, i.jsx)(r.m, {
-            text: A ? d.intl.string(d.t.t5VZ88) : d.intl.string(d.t.OpuAlK),
-            children: (0, i.jsx)(f, {
-                ...h,
+        children: (0, r.jsx)(c.m, {
+            text: m ? d.intl.string(d.t.t5VZ88) : d.intl.string(d.t.OpuAlK),
+            children: (0, r.jsx)(f, {
+                ...x,
                 size: "xxs",
-                color: A ? o.LU0.colors.TEXT_FEEDBACK_POSITIVE : o.LU0.colors.INTERACTIVE_TEXT_DEFAULT
+                color: m ? i.LU0.colors.TEXT_FEEDBACK_POSITIVE : i.LU0.colors.INTERACTIVE_TEXT_DEFAULT
             })
         })
     })

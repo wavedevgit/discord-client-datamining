@@ -35,7 +35,7 @@ var i = n(627968),
     L = n(818348),
     G = n(650583),
     D = n(985018),
-    M = n(134599);
+    M = n(807060);
 let k = "WELCOME_CHANNEL",
     U = e => {
         let t, {

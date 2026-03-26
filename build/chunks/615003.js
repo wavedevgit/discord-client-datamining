@@ -210,7 +210,7 @@ let z = e => {
                 has_premium: et
             }), (0, w.ne)(eh)
         }, n = 6);
-        let e3 = (0, i.jsx)(u.z9, {
+        let e2 = (0, i.jsx)(u.z9, {
                 listItemRef: $,
                 selected: C,
                 route: Q,
@@ -224,9 +224,9 @@ let z = e => {
                 ...ei,
                 children: t
             }),
-            e2 = H.L.NONE;
-        return eQ === o.M.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL ? e2 = H.L.MARKETING_MOMENT_POPOVER : eO && eF === o.M.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK && 8 === n ? e2 = H.L.CHURN_DISCOUNT : e5 && !eC ? e2 = H.L.PREMIUM_GROUP : e5 && eC ? e2 = H.L.PREMIUM_GROUP_TOOLTIP : eN && eF === o.M.PREMIUM_ORBS_UPSELL_POPOVER ? e2 = H.L.ORBS_UPSELL : ey && eF === o.M.PREMIUM_ORBS_REWARDS_INTRO_POPOVER ? e2 = H.L.ORBS_INTRO : eb && eZ === o.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER ? e2 = H.L.ORBS_DROP : e0 ? e2 = H.L.TOOLTIP : e1 ? e2 = H.L.L_PREMIUM_SUB_TOOLTIP : e7 && (e2 = H.L.L_UPSELL), (0, i.jsx)(H.H, {
-            popoverType: e2,
+            e3 = H.L.NONE;
+        return eQ === o.M.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL ? e3 = H.L.MARKETING_MOMENT_POPOVER : eO && eF === o.M.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK && 8 === n ? e3 = H.L.CHURN_DISCOUNT : e5 && !eC ? e3 = H.L.PREMIUM_GROUP : e5 && eC ? e3 = H.L.PREMIUM_GROUP_TOOLTIP : eN && eF === o.M.PREMIUM_ORBS_UPSELL_POPOVER ? e3 = H.L.ORBS_UPSELL : ey && eF === o.M.PREMIUM_ORBS_REWARDS_INTRO_POPOVER ? e3 = H.L.ORBS_INTRO : eb && eZ === o.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER ? e3 = H.L.ORBS_DROP : e0 ? e3 = H.L.TOOLTIP : e1 ? e3 = H.L.L_PREMIUM_SUB_TOOLTIP : e7 && (e3 = H.L.L_UPSELL), (0, i.jsx)(H.H, {
+            popoverType: e3,
             targetElementRef: $,
             churnDiscountOffer: er,
             premiumSubscription: ee,
@@ -236,6 +236,6 @@ let z = e => {
             dismissCoachMark: eY,
             dismissOrbsDropPopover: eJ,
             dismissMarketingPopover: eX,
-            children: e3
+            children: e2
         })
     }

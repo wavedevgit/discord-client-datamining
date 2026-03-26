@@ -10,7 +10,7 @@ var a = n(627968),
     o = n(961895),
     d = n(343991),
     c = n(698638),
-    u = n(727489);
+    u = n(854018);
 let m = () => {
         (0, r.mMO)(async () => {
             let {
@@ -33,9 +33,9 @@ let m = () => {
             className: t,
             onDrop: n,
             children: s
-        } = e, [x, p] = i.useState(!1), g = i.useRef(null), f = i.useCallback(e => {
+        } = e, [x, p] = i.useState(!1), g = i.useRef(null), _ = i.useCallback(e => {
             h(e), p(!0), (0, r.OoC)(d.D)
-        }, []), _ = i.useCallback(e => {
+        }, []), f = i.useCallback(e => {
             h(e);
             let t = g.current,
                 n = e.relatedTarget;
@@ -50,9 +50,9 @@ let m = () => {
         return (0, a.jsxs)("div", {
             ref: g,
             className: l()(t, u.iE),
-            onDragEnter: f,
+            onDragEnter: _,
             onDragOver: h,
-            onDragLeave: _,
+            onDragLeave: f,
             onDrop: v,
             children: [s, x && (0, a.jsx)("div", {
                 className: u.d2,

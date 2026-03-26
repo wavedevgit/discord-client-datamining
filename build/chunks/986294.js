@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(73153),
     p = n(587895),
     g = n(429913),
-    f = n(303054),
-    _ = n(409626),
+    _ = n(303054),
+    f = n(409626),
     v = n(692969),
     b = n(760751),
     j = n(403362),
@@ -28,8 +28,8 @@ var a = n(627968),
     S = n(476398),
     E = n(405311),
     N = n(424994),
-    I = n(750100),
-    k = n(661251);
+    I = n(913351),
+    k = n(310086);
 let O = [{
     key: "type",
     cellClassName: l()(I.Hn, I.T$),
@@ -108,7 +108,7 @@ function w() {
         M = (0, v.A)({
             applicationId: P,
             location: "DevToolsContentInventory",
-            source: _.Ob.DevTools
+            source: f.Ob.DevTools
         }),
         L = Object.entries(m.w.get("GameProfileModal") ?? {}).filter(e => {
             let [t, n] = e;
@@ -128,7 +128,7 @@ function w() {
                 children: [(0, a.jsx)(h.Text, {
                     variant: "text-md/semibold",
                     children: "Inventory"
-                }), r.length > 0 && (0, a.jsx)(f.A, {
+                }), r.length > 0 && (0, a.jsx)(_.A, {
                     columns: O,
                     data: r
                 }), (0, a.jsx)(E.A, {}), (0, a.jsx)(h.Button, {
@@ -238,7 +238,7 @@ let D = e => {
     } = e, n = (0, v.A)({
         applicationId: t.id,
         location: "DevToolsContentInventory",
-        source: _.Ob.DevTools
+        source: f.Ob.DevTools
     });
     return (0, a.jsx)(h.DUT, {
         onClick: n,

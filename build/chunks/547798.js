@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(69555),
     p = n(237984),
     g = n(43203),
-    f = n(349435),
-    _ = n(674272),
+    _ = n(349435),
+    f = n(674272),
     v = n(253932),
     b = n(559248),
     j = n(179690),
@@ -26,8 +26,8 @@ var a = n(627968),
     y = n(652215),
     T = n(327337),
     S = n(431804),
-    E = n(229988),
-    N = n(473169);
+    E = n(413269),
+    N = n(885106);
 
 function I() {
     throw Error("Send help")
@@ -46,7 +46,7 @@ function k() {
                 variant: "primary",
                 size: "sm",
                 text: "Launch Vibing Wumpus",
-                onClick: () => (0, _.A)({
+                onClick: () => (0, f.A)({
                     source: S.y.KEYBIND
                 })
             })
@@ -61,12 +61,12 @@ function k() {
                     return e = A.A.getChannelId() ?? "21154681615024128", void(0, c.mMO)(async () => {
                         let {
                             default: t
-                        } = await Promise.all([n.e("45033"), n.e("46717"), n.e("54105")]).then(n.bind(n, 788099));
+                        } = await Promise.all([n.e("45033"), n.e("46717"), n.e("64690")]).then(n.bind(n, 788099));
                         return n => (0, a.jsx)(t, {
                             otherUserId: "9876543210",
                             channelId: e,
                             warningId: "test-warning-id",
-                            warningType: f._j.INAPPROPRIATE_CONVERSATION_TIER_2,
+                            warningType: _._j.INAPPROPRIATE_CONVERSATION_TIER_2,
                             ...n
                         })
                     }, {

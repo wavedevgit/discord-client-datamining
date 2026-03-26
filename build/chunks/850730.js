@@ -19,8 +19,8 @@ var a = n(64700),
     x = n(544028),
     p = n(253932),
     g = n(594061),
-    f = n(287809),
-    _ = n(927578),
+    _ = n(287809),
+    f = n(927578),
     v = n(652215),
     b = n(385803),
     j = n(381941);
@@ -31,7 +31,7 @@ function y(e) {
     return e[Math.floor(Math.random() * e.length)]
 }
 async function T() {
-    let e, t = (e = f.default.getCurrentUser(), _.Ay.canUseClientThemes(e) ? Object.keys(b.ag).map(e => Number(e)) : []),
+    let e, t = (e = _.default.getCurrentUser(), f.Ay.canUseClientThemes(e) ? Object.keys(b.ag).map(e => Number(e)) : []),
         n = t.length > 0 && Math.random() > .7;
     try {
         if (n) {
@@ -84,12 +84,12 @@ function E() {
 
 function N() {
     a.useEffect(() => {
-        let e = f.default.getCurrentUser(),
+        let e = _.default.getCurrentUser(),
             t = p.eh.getSetting(),
             n = d.A.purchases,
             a = (0, c.x9)(n),
             i = (0, c.$W)(n),
-            _ = x.A.theme,
+            f = x.A.theme,
             v = t.backgroundGradientPresetId,
             b = e?.avatarDecoration?.skuId,
             j = e?.collectibles?.nameplate?.skuId,
@@ -101,7 +101,7 @@ function N() {
         return () => {
             try {
                 l.u_({
-                    theme: _,
+                    theme: f,
                     backgroundGradientPresetId: v ?? void 0,
                     customUserThemeSettings: void 0
                 }, g.Sb.INFREQUENT_USER_ACTION), (0, m.p)({

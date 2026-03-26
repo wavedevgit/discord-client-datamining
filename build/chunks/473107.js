@@ -1,0 +1,6 @@
+/** chunk id: 473107 params = (module,exports,require) **/
+e.exports = {
+    b6: "roleTag__9cd44",
+    ex: "roleTagContainer__9cd44",
+    yY: "roleColor__9cd44"
+}

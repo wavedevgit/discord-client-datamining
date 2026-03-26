@@ -44,7 +44,7 @@ class E extends r.A {
         (0, a.mMO)(async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("10136"), n.e("40709")]).then(n.bind(n, 776971));
+            } = await Promise.all([n.e("10136"), n.e("80346")]).then(n.bind(n, 776971));
             return n => (0, i.jsx)(e, {
                 source: t,
                 ...n

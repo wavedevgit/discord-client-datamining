@@ -1,77 +1,77 @@
 /** chunk id: 755584 params = (module,exports,require) **/
-n.d(t, {
-    A: () => d
+t.d(r, {
+    A: () => h
 });
-var r = n(110259),
-    a = n(933681),
-    l = n(73153),
-    s = n(568185),
-    o = n(543465),
-    i = n(477427),
-    h = n(499785),
-    p = n(832712),
-    c = n(652215),
-    u = n(355097);
-let d = {
+var n = t(110259),
+    i = t(933681),
+    _ = t(73153),
+    o = t(568185),
+    a = t(543465),
+    d = t(477427),
+    c = t(499785),
+    l = t(832712),
+    p = t(652215),
+    s = t(355097);
+let h = {
     createChannel(e) {
         let {
-            guildId: t,
-            type: n,
-            name: d,
-            permissionOverwrites: _ = [],
-            bitrate: g,
-            userLimit: f,
-            parentId: E,
-            skuId: R,
-            branchId: v
+            guildId: r,
+            type: t,
+            name: h,
+            permissionOverwrites: A = [],
+            bitrate: b,
+            userLimit: E,
+            parentId: C,
+            skuId: N,
+            branchId: y
         } = e;
-        l.h.dispatch({
+        _.h.dispatch({
             type: "CREATE_CHANNEL_MODAL_SUBMIT",
-            guildId: t,
-            channelType: n
+            guildId: r,
+            channelType: t
         });
-        let A = {
-            type: n,
-            name: d,
-            permission_overwrites: _
+        let u = {
+            type: t,
+            name: h,
+            permission_overwrites: A
         };
-        if (null != g && g !== c.gp3 && (A.bitrate = g), null != f && f > 0 && (A.user_limit = f), null != E && (A.parent_id = E), n === c.rbe.GUILD_STORE) {
-            if (null == R) throw Error("Unexpected missing SKU");
-            A.sku_id = R, A.branch_id = v
+        if (null != b && b !== p.gp3 && (u.bitrate = b), null != E && E > 0 && (u.user_limit = E), null != C && (u.parent_id = C), t === p.rbe.GUILD_STORE) {
+            if (null == N) throw Error("Unexpected missing SKU");
+            u.sku_id = N, u.branch_id = y
         }
-        return h.A.post({
-            url: c.Rsh.GUILD_CHANNELS(t),
-            body: A,
+        return c.A.post({
+            url: p.Rsh.GUILD_CHANNELS(r),
+            body: u,
             oldFormErrors: !0,
             trackedActionData: {
-                event: r.NetworkActionNames.CHANNEL_CREATE,
-                properties: e => (0, a.e0)({
-                    is_private: _.length > 0,
+                event: n.NetworkActionNames.CHANNEL_CREATE,
+                properties: e => (0, i.e0)({
+                    is_private: A.length > 0,
                     channel_id: e?.body?.id,
                     channel_type: e?.body?.type
                 })
             },
             rejectWithError: !1
-        }).then(e => (o.Ay.isOptInEnabled(t) && p.A.updateChannelOverrideSettings(t, e.body.id, {
-            flags: u.vv.OPT_IN_ENABLED
-        }, i.fd.OptedIn), s.A.checkGuildTemplateDirty(t), e), e => {
-            throw l.h.dispatch({
+        }).then(e => (a.Ay.isOptInEnabled(r) && l.A.updateChannelOverrideSettings(r, e.body.id, {
+            flags: s.vv.OPT_IN_ENABLED
+        }, d.fd.OptedIn), o.A.checkGuildTemplateDirty(r), e), e => {
+            throw _.h.dispatch({
                 type: "CREATE_CHANNEL_MODAL_SUBMIT_FAILURE",
                 errors: e.body
             }), e
         })
     },
-    createRoleSubscriptionTemplateChannel: (e, t, n, l) => h.A.post({
-        url: c.Rsh.GUILD_CHANNELS(e),
+    createRoleSubscriptionTemplateChannel: (e, r, t, _) => c.A.post({
+        url: p.Rsh.GUILD_CHANNELS(e),
         body: {
-            name: t,
-            type: n,
-            topic: l
+            name: r,
+            type: t,
+            topic: _
         },
         oldFormErrors: !0,
         trackedActionData: {
-            event: r.NetworkActionNames.CHANNEL_CREATE,
-            properties: e => (0, a.e0)({
+            event: n.NetworkActionNames.CHANNEL_CREATE,
+            properties: e => (0, i.e0)({
                 is_private: !0,
                 channel_id: e?.body?.id,
                 channel_type: e?.body?.type

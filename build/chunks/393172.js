@@ -39,7 +39,7 @@ n(392164);
 var G = n(652215),
     R = n(731854),
     _ = n(985018),
-    P = n(585990);
+    P = n(901245);
 let z = e => {
     let t = (e ?? 0) % D.A.DEFAULT_AVATARS.length;
     return D.A.DEFAULT_AVATARS[t]

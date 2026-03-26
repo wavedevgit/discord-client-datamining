@@ -1,12 +1,12 @@
 /** chunk id: 133296 params = (module,exports,require) **/
 n.d(t, {
-    A: () => i
+    A: () => s
 });
-var a = n(627968),
-    l = n(64700),
-    s = n(451988);
-class r extends l.Component {
-    timer = new s.IX;
+var i = n(627968),
+    a = n(64700),
+    r = n(451988);
+class l extends a.Component {
+    timer = new r.IX;
     state = {
         hovered: !1
     };
@@ -32,8 +32,8 @@ class r extends l.Component {
     componentDidUpdate(e, t) {
         let {
             props: n
-        } = this, a = (e, t) => !e.disable && !(t.hovered && e.pauseOnHover), l = a(n, this.state), s = a(e, t);
-        l && !s || e.interval !== n.interval ? this.startTimer() : !l && s && this.stopTimer()
+        } = this, i = (e, t) => !e.disable && !(t.hovered && e.pauseOnHover), a = i(n, this.state), r = i(e, t);
+        a && !r || e.interval !== n.interval ? this.startTimer() : !a && r && this.stopTimer()
     }
     startTimer() {
         let {
@@ -63,17 +63,17 @@ class r extends l.Component {
             children: e,
             className: t,
             disable: n
-        } = this.props, l = n ? null : {
+        } = this.props, a = n ? null : {
             onMouseEnter: this.handlePause,
             onFocus: this.handlePause,
             onMouseLeave: this.handleResume,
             onBlur: this.handleResume
         };
-        return (0, a.jsx)("div", {
-            ...l,
+        return (0, i.jsx)("div", {
+            ...a,
             className: t,
             children: e
         })
     }
 }
-let i = r
+let s = l

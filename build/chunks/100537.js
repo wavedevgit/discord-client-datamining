@@ -31,7 +31,7 @@ var i = n(627968),
     O = n(652215),
     L = n(5867),
     R = n(985018),
-    P = n(598449);
+    P = n(426210);
 let D = {
     [L.E8.NO_CHAT]: P.Oo,
     [L.E8.RESIZABLE]: P.Ig

@@ -1,156 +1,156 @@
 /** chunk id: 625841 params = (module,exports,require) **/
-n.d(t, {
-    U: () => I
+i.d(e, {
+    U: () => C
 });
-var i = n(627968),
-    a = n(64700),
-    o = n(503698),
-    l = n.n(o),
-    s = n(311907),
-    c = n(843282),
-    r = n(582754),
-    d = n(397927),
-    _ = n(827343),
-    u = n(688810),
-    g = n(544028),
-    p = n(944993),
-    m = n(347481),
-    b = n(430452),
-    v = n(74848),
-    k = n(731854),
-    x = n(985018),
-    C = n(534393);
+var n = i(627968),
+    l = i(64700),
+    r = i(503698),
+    s = i.n(r),
+    a = i(311907),
+    o = i(843282),
+    d = i(582754),
+    u = i(397927),
+    c = i(827343),
+    p = i(688810),
+    m = i(544028),
+    h = i(944993),
+    A = i(347481),
+    g = i(430452),
+    T = i(74848),
+    f = i(731854),
+    S = i(985018),
+    E = i(789520);
 
-function I(e) {
+function C(t) {
     let {
-        deviceType: t,
-        location: o,
-        selectedDeviceId: I,
-        onSelectDevice: h,
-        hideDeviceTypeIcon: O = !1,
-        label: D,
-        ...f
-    } = e, {
-        setDevice: A,
-        Icon: S,
-        getCanSetDevice: T,
-        getWarningMessage: w,
-        getLocation: U
+        deviceType: e,
+        location: r,
+        selectedDeviceId: C,
+        onSelectDevice: v,
+        hideDeviceTypeIcon: x = !1,
+        label: y,
+        ..._
+    } = t, {
+        setDevice: N,
+        Icon: I,
+        getCanSetDevice: j,
+        getWarningMessage: D,
+        getLocation: O
     } = {
-        [k.oh.AUDIO_INPUT]: {
-            setDevice: _.A.setInputDevice,
-            Icon: d.cNw,
-            getCanSetDevice: e => e.supports(k.O5.AUDIO_INPUT_DEVICE),
-            getWarningMessage: () => x.intl.format(x.t["1iK6UW"], {
-                onDownloadClick: () => (0, p._)("Help Text Input Devices")
+        [f.oh.AUDIO_INPUT]: {
+            setDevice: c.A.setInputDevice,
+            Icon: u.cNw,
+            getCanSetDevice: t => t.supports(f.O5.AUDIO_INPUT_DEVICE),
+            getWarningMessage: () => S.intl.format(S.t["1iK6UW"], {
+                onDownloadClick: () => (0, h._)("Help Text Input Devices")
             }),
-            getLocation: e => `${e}.SingleSelectInputDevices`
+            getLocation: t => `${t}.SingleSelectInputDevices`
         },
-        [k.oh.AUDIO_OUTPUT]: {
-            setDevice: _.A.setOutputDevice,
-            Icon: d.LoC,
-            getCanSetDevice: e => e.supports(k.O5.AUDIO_OUTPUT_DEVICE),
-            getWarningMessage: () => x.intl.format(x.t.Ow0dbF, {
-                onDownloadClick: () => (0, p._)("Help Text Output Devices")
+        [f.oh.AUDIO_OUTPUT]: {
+            setDevice: c.A.setOutputDevice,
+            Icon: u.LoC,
+            getCanSetDevice: t => t.supports(f.O5.AUDIO_OUTPUT_DEVICE),
+            getWarningMessage: () => S.intl.format(S.t.Ow0dbF, {
+                onDownloadClick: () => (0, h._)("Help Text Output Devices")
             }),
-            getLocation: e => `${e}.SingleSelectOutputDevices`
+            getLocation: t => `${t}.SingleSelectOutputDevices`
         },
-        [k.oh.VIDEO_INPUT]: {
-            setDevice: _.A.setVideoDevice,
-            Icon: d.xpe,
-            getCanSetDevice: e => e.isVideoAvailable() || !e.hasVideoDevice(),
-            getWarningMessage: () => x.intl.format(x.t["1iK6UW"], {
-                onDownloadClick: () => (0, p._)("Help Text Video Devices")
+        [f.oh.VIDEO_INPUT]: {
+            setDevice: c.A.setVideoDevice,
+            Icon: u.xpe,
+            getCanSetDevice: t => t.isVideoAvailable() || !t.hasVideoDevice(),
+            getWarningMessage: () => S.intl.format(S.t["1iK6UW"], {
+                onDownloadClick: () => (0, h._)("Help Text Video Devices")
             }),
-            getLocation: e => `${e}.SingleSelectVideoDevices`
+            getLocation: t => `${t}.SingleSelectVideoDevices`
         }
-    } [t], {
-        analyticsLocations: E
-    } = (0, u.Ay)(), j = (0, s.bG)([g.A], () => g.A.theme), N = U(o), P = (0, v.tR)(t), {
-        id: V
-    } = (0, v.x5)(t), y = (0, s.bG)([b.Ay], () => T(b.Ay)), L = (0, i.jsx)(d.po8, {
-        messageType: d.YCn.WARNING,
-        children: w()
-    }), B = a.useCallback(e => {
-        (h?.(e) ?? !0) && A(e, {
-            location: N,
-            analyticsLocations: E
+    } [e], {
+        analyticsLocations: P
+    } = (0, p.Ay)(), L = (0, a.bG)([m.A], () => m.A.theme), U = O(r), R = (0, T.tR)(e), {
+        id: M
+    } = (0, T.x5)(e), b = (0, a.bG)([g.Ay], () => j(g.Ay)), G = (0, n.jsx)(u.po8, {
+        messageType: u.YCn.WARNING,
+        children: D()
+    }), V = l.useCallback(t => {
+        (v?.(t) ?? !0) && N(t, {
+            location: U,
+            analyticsLocations: P
         })
-    }, [N, E, h, A]);
+    }, [U, P, v, N]);
 
-    function M(e) {
-        let t, a, {
-                label: o,
-                value: s
-            } = e,
-            c = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-            _ = o,
-            u = (0, v.d)(o);
-        null != u && (_ = u.prefix, t = u.subName);
-        let g = m.A.getCertifiedDeviceName(s, _);
-        if (m.A.isCertified(s)) {
-            let e = (0, r.qB)(j) ? n(961392) : n(848672);
-            a = (0, i.jsx)("img", {
-                src: e,
-                alt: x.intl.string(x.t.smSKsj)
+    function H(t) {
+        let e, l, {
+                label: r,
+                value: a
+            } = t,
+            o = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+            c = r,
+            p = (0, T.d)(r);
+        null != p && (c = p.prefix, e = p.subName);
+        let m = A.A.getCertifiedDeviceName(a, c);
+        if (A.A.isCertified(a)) {
+            let t = (0, d.qB)(L) ? i(961392) : i(848672);
+            l = (0, n.jsx)("img", {
+                src: t,
+                alt: S.intl.string(S.t.smSKsj)
             })
         }
-        return (0, i.jsxs)("div", {
-            className: l()(C.Mg, {
-                [C.S2]: c && null != t,
-                [C.Sy]: !O
+        return (0, n.jsxs)("div", {
+            className: s()(E.Mg, {
+                [E.S2]: o && null != e,
+                [E.Sy]: !x
             }),
-            children: [!O && (0, i.jsx)("div", {
-                className: C.Kt,
-                children: (0, i.jsx)(S, {
+            children: [!x && (0, n.jsx)("div", {
+                className: E.Kt,
+                children: (0, n.jsx)(I, {
                     size: "custom",
                     width: 20,
                     height: 20,
-                    color: d.LU0.colors.ICON_MUTED
+                    color: u.LU0.colors.ICON_MUTED
                 })
-            }), (0, i.jsx)(d.Text, {
+            }), (0, n.jsx)(u.Text, {
                 lineClamp: 2,
                 variant: "text-md/medium",
-                color: c ? "text-subtle" : "text-default",
-                className: C.hV,
-                children: g
-            }), null != t && (0, i.jsx)(d.Text, {
+                color: o ? "text-subtle" : "text-default",
+                className: E.hV,
+                children: m
+            }), null != e && (0, n.jsx)(u.Text, {
                 lineClamp: 2,
-                variant: c ? "text-xs/medium" : "text-md/medium",
+                variant: o ? "text-xs/medium" : "text-md/medium",
                 color: "text-muted",
-                className: C.VT,
-                children: t
-            }), null != a && (0, i.jsx)("div", {
-                className: C.pN,
-                children: a
+                className: E.VT,
+                children: e
+            }), null != l && (0, n.jsx)("div", {
+                className: E.pN,
+                children: l
             })]
         })
     }
-    return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(c.Te, {
-            label: D,
-            value: I ?? V,
-            onChange: B,
-            options: P.map(e => {
+    return (0, n.jsxs)(n.Fragment, {
+        children: [(0, n.jsx)(o.Te, {
+            label: y,
+            value: C ?? M,
+            onChange: V,
+            options: R.map(t => {
                 let {
-                    id: t,
-                    name: n
-                } = e;
+                    id: e,
+                    name: i
+                } = t;
                 return {
-                    value: t,
-                    label: n
+                    value: e,
+                    label: i
                 }
             }),
-            isDisabled: !y,
+            isDisabled: !b,
             popoutPosition: "bottom",
-            renderOptionLabel: e => M(e, !0),
-            renderOptionValue: e => {
-                let [t] = e;
-                return M(t)
+            renderOptionLabel: t => H(t, !0),
+            renderOptionValue: t => {
+                let [e] = t;
+                return H(e)
             },
-            optionClassName: C.OS,
-            ...f,
+            optionClassName: E.OS,
+            ..._,
             "data-migration-pending": !0
-        }), !y && L]
+        }), !b && G]
     })
 }

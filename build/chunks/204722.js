@@ -45,7 +45,7 @@ var i = n(627968),
     B = n(49999),
     H = n(985018),
     F = n(294726),
-    K = n(275540);
+    K = n(868509);
 
 function W(e, t, n) {
     return null != e && (null != n ? n.applicationId === e.id : null != t && (t.application_id === e.id || e.linkedGames?.some(e => e.id === t.application_id)) && t.type === V.$pd.PLAYING && (0, p.A)(t, V.jUm.JOIN))

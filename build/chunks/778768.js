@@ -38,9 +38,9 @@ var i = n(627968),
     G = n(582904),
     U = n(652215),
     P = n(985018),
-    k = n(357694),
-    w = n(248789),
-    V = n(165180);
+    k = n(997893),
+    w = n(442078),
+    V = n(303621);
 let B = "VoiceInviteSuggestionsPopover";
 
 function H(e) {
@@ -77,7 +77,7 @@ function H(e) {
         o()(null != e, "VoiceInviteSuggestionsPopover must be used in context of a guild"), (0, h.mMO)(async () => {
             let {
                 default: s
-            } = await Promise.all([n.e("43600"), n.e("28136"), n.e("74918")]).then(n.bind(n, 234355));
+            } = await Promise.all([n.e("43600"), n.e("28136"), n.e("89886")]).then(n.bind(n, 234355));
             return n => (0, i.jsx)(s, {
                 ...n,
                 guild: e,

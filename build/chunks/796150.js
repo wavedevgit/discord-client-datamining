@@ -20,7 +20,7 @@ var r = n(627968),
     b = n(12901),
     g = n(921854),
     y = n(985018),
-    v = n(249316);
+    v = n(879797);
 let x = new Set([h.X.PROFILE_PANEL, h.X.SUBSCRIPTIONS_PANEL, h.X.FAMILY_CENTER_PANEL, h.X.POGGERMODE_PANEL]);
 
 function E(e) {

@@ -5,7 +5,7 @@ n.d(t, {
 }), n(801541);
 var i = n(889137),
     a = n(966974),
-    r = n(48693);
+    r = n(108234);
 
 function l(e, t) {
     let n = (0, i.YW)(t).with(a.Z.IMAGE_ONLY_ANSWERS, () => r.EK).otherwise(() => r.fD);

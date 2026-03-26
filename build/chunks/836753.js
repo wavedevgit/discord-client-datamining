@@ -28,7 +28,7 @@ class A extends r.A {
         d.A.isOpen() && !(0, s.kBI)(h) && (0, s.mMO)(async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("83155"), n.e("2257")]).then(n.bind(n, 563038));
+            } = await Promise.all([n.e("83155"), n.e("64252")]).then(n.bind(n, 563038));
             return t => (0, i.jsx)(e, {
                 ...t
             })

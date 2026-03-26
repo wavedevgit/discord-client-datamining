@@ -6,7 +6,7 @@ var a = n(627968),
     i = n(64700),
     s = n(503698),
     l = n.n(s),
-    r = n(497766),
+    r = n(4208),
     o = n(311907),
     d = n(397927),
     c = n(765671),
@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(714510),
     p = n(890687),
     g = n(710969),
-    f = n(92246),
-    _ = n(453384),
+    _ = n(92246),
+    f = n(453384),
     v = n(646764),
     b = n(398025),
     j = n(516226),
@@ -25,7 +25,7 @@ var a = n(627968),
     C = n(713457),
     y = n(419367),
     T = n(985018),
-    S = n(196240);
+    S = n(582251);
 let E = async () => await n.e("40119").then(n.t.bind(n, 718698, 19));
 
 function N(e) {
@@ -38,7 +38,7 @@ function N(e) {
         isVisibleInViewport: O,
         onReceiveErrorHints: R,
         sourceQuestContent: w
-    } = e, D = i.useRef(null), P = (0, f.mq)(t.config), M = (0, f.mH)(t.config), L = t.userStatus?.enrolledAt != null, {
+    } = e, D = i.useRef(null), P = (0, _.mq)(t.config), M = (0, _.mH)(t.config), L = t.userStatus?.enrolledAt != null, {
         ref: U,
         scrollHeight: B
     } = (0, c.wR)(), G = 104 !== B, {
@@ -51,7 +51,7 @@ function N(e) {
             ...y.N,
             clamp: !0
         }
-    }), W = t.userStatus?.completedAt != null, H = t.userStatus?.claimedAt != null, K = (0, f.ks)(t.config), z = (0, f._Z)(t.config), {
+    }), W = t.userStatus?.completedAt != null, H = t.userStatus?.claimedAt != null, K = (0, _.ks)(t.config), z = (0, _._Z)(t.config), {
         completedRatio: $,
         completedRatioDisplay: q
     } = (0, p.O9)(t), Q = (0, x.gj)(t, w, m.Ob.QuestHome, D), Y = i.useMemo(() => H && K ? T.intl.format(T.t["8Op4c4"], {
@@ -112,7 +112,7 @@ function N(e) {
                             loop: !1,
                             autoplay: !1,
                             shouldAnimate: !X
-                        }), (0, a.jsx)(_.A, {
+                        }), (0, a.jsx)(f.A, {
                             size: 76,
                             percentComplete: $,
                             percentCompleteText: s && !(0, g.Ic)(t) ? q : void 0,

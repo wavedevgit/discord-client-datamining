@@ -1,12 +1,12 @@
 /** chunk id: 354583 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => s
 });
 var i = n(311907),
     l = n(734057),
     r = n(309010);
 
-function a() {
+function s() {
     return (0, i.bG)([r.A, l.A], () => {
         let e = r.A.getVoiceChannelId();
         if (null != e) {

@@ -14,7 +14,7 @@ let r = {
         }), (0, a.mMO)(async () => {
             let {
                 default: t
-            } = await Promise.all([n.e("74327"), n.e("5482")]).then(n.bind(n, 355690));
+            } = await Promise.all([n.e("74327"), n.e("6590")]).then(n.bind(n, 355690));
             return n => (0, i.jsx)(t, {
                 classificationId: e,
                 ...n

@@ -13,7 +13,7 @@ var i = n(627968),
     c = n(652215),
     u = n(985018),
     m = n(641131),
-    g = n(841541);
+    g = n(204282);
 async function x(e, t) {
     return await d.A.saveGuild(e.id, {
         moderatorReportingEnabled: t

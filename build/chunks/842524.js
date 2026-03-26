@@ -1,39 +1,39 @@
 /** chunk id: 842524 params = (module,exports,require) **/
-n.d(t, {
-    A: () => o
+r.d(t, {
+    A: () => l
 });
-var i = n(311907),
-    a = n(73153);
-let l = r();
+var n = r(311907),
+    o = r(73153);
+let i = a();
 
-function r() {
+function a() {
     return {
         ignoreTimestamps: {}
     }
 }
-class s extends i.Ay.PersistedStore {
+class _ extends n.Ay.PersistedStore {
     static displayName = "IgnoreNoticeStore";
     static persistKey = "IgnoreNoticeStore";
     initialize(e) {
         let t = e?.ignoreTimestamps ?? {};
-        l = {
-            ...r(),
+        i = {
+            ...a(),
             ignoreTimestamps: t
         }
     }
     getState() {
-        return l
+        return i
     }
     getIgnoreTimestamps() {
-        return l.ignoreTimestamps
+        return i.ignoreTimestamps
     }
 }
-let o = new s(a.h, {
+let l = new _(o.h, {
     RELATIONSHIP_IGNORE_USER_SUCCESS: function(e) {
         let {
             userId: t,
-            timestamp: n
+            timestamp: r
         } = e;
-        l.ignoreTimestamps[t] = n
+        i.ignoreTimestamps[t] = r
     }
 })

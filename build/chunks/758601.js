@@ -13,7 +13,7 @@ var s = n(627968),
     d = n(403403),
     S = n(652215),
     u = n(985018),
-    A = n(24745);
+    A = n(868748);
 let x = function(t) {
     let {
         onClose: e,

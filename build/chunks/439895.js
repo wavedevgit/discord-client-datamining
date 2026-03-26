@@ -13,7 +13,7 @@ var a = n(627968),
     u = n(841702),
     m = n(751304),
     h = n(61750),
-    x = n(841015);
+    x = n(380298);
 let p = e => {
         let [t, n] = i.useState(0);
         return i.useLayoutEffect(() => {
@@ -35,15 +35,15 @@ let p = e => {
             m = (0, s.bG)([d.A], () => d.A.lastSuccessfulFetch),
             g = t.size > 0 && n.size > 0 && null != m,
             {
-                isFetching: f,
-                categories: _
+                isFetching: _,
+                categories: f
             } = (0, u.Ay)({
                 logPerf: !1,
                 stalePurchasesOK: !0,
                 noOp: g
             }),
-            v = g ? t : _,
-            b = g || !f && v.size > 0,
+            v = g ? t : f,
+            b = g || !_ && v.size > 0,
             [j, A] = i.useState(""),
             [C, y] = i.useState(null),
             [T, S] = i.useState(null);
@@ -55,7 +55,7 @@ let p = e => {
             let e = d.A.getProduct(j),
                 t = d.A.getCategoryForProduct(j);
             null != e && null != t ? (y(e), S(t)) : (y(null), S(null))
-        }, [j, b]), f) ? (0, a.jsx)(l.Text, {
+        }, [j, b]), _) ? (0, a.jsx)(l.Text, {
             variant: "text-md/normal",
             children: "Loading categories and collectibles..."
         }) : null == e ? (0, a.jsx)(l.Text, {

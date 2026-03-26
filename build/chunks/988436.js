@@ -17,8 +17,8 @@ var a = n(627968),
     x = n(341915),
     p = n(890687),
     g = n(579473),
-    f = n(18437),
-    _ = n(590202),
+    _ = n(18437),
+    f = n(590202),
     v = n(971649),
     b = n(901406),
     j = n(792620),
@@ -26,7 +26,7 @@ var a = n(627968),
     C = n(201805),
     y = n(818348),
     T = n(985018),
-    S = n(868566);
+    S = n(533029);
 
 function E(e) {
     let {
@@ -35,7 +35,7 @@ function E(e) {
         transitionState: s,
         onClose: A,
         sourceQuestContent: E
-    } = e, [I, k] = (0, i.useState)(n), O = (0, p.UX)(), R = (0, f.Ut)(), w = (0, v.vU)()?.getId(), D = (0, o.bG)([m.A], () => m.A.useReducedMotion), P = (0, C.Xf)({
+    } = e, [I, k] = (0, i.useState)(n), O = (0, p.UX)(), R = (0, _.Ut)(), w = (0, v.vU)()?.getId(), D = (0, o.bG)([m.A], () => m.A.useReducedMotion), P = (0, C.Xf)({
         useReducedMotion: D,
         className: S.Zf
     }), M = I.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), L = (0, j.YL)(t), U = (0, o.bG)([h.A], () => h.A.getState().theme), B = (0, c.Mw)(U) ? y.NJ.DARK : y.NJ.LIGHT, {
@@ -47,7 +47,7 @@ function E(e) {
             P.startAnimation(), R({
                 questId: t.id,
                 questContent: x.uF.CONNECTIONS_MODAL,
-                questContentCTA: _.Cy.DEFIBRILLATOR,
+                questContentCTA: f.Cy.DEFIBRILLATOR,
                 sourceQuestContent: E
             })
         },
@@ -66,7 +66,7 @@ function E(e) {
                 quest: t
             }, {
                 content: x.uF.CONNECTIONS_MODAL,
-                ctaContent: _.Cy.VIEW_CONSOLE_CONNECTIONS_LINK,
+                ctaContent: f.Cy.VIEW_CONSOLE_CONNECTIONS_LINK,
                 impressionId: w,
                 sourceQuestContent: E
             })),

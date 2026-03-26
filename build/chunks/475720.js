@@ -9,7 +9,7 @@ var l = i(627968),
     r = i(573648),
     o = i(954571),
     d = i(652215),
-    c = i(492171);
+    c = i(139616);
 let u = {
     [d.fg2.TWITCH]: a.aWO,
     [d.fg2.YOUTUBE]: a.CiD,

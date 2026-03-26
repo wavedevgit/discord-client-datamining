@@ -1,0 +1,6 @@
+/** chunk id: 367537 params = (module,exports,require) **/
+e.exports = {
+    uE: "thankYouCard_b851f5",
+    Bi: "thankYouText_b851f5",
+    dj: "userAvatar_b851f5"
+}
