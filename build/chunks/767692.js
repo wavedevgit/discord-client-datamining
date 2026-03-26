@@ -30,10 +30,10 @@ function N(e) {
     let {
         premiumSubscription: t
     } = e, n = (0, l.bG)([A.A], () => A.A.boostSlots), N = s.useMemo(() => Object.values(n), [n]), I = (0, l.bG)([x.default], () => x.default.getCurrentUser()), j = h.Ay.isPremium(I, C.PremiumTypes.TIER_2), y = (0, l.bG)([_.A], () => _.A.affinities), O = (0, l.bG)([g.Ay], () => g.Ay.getFlattenedGuildIds()), R = y.length > 0 || O.length > 0, L = N.length > 0, P = s.useMemo(() => N.filter(e => null != e.premiumGuildSubscription), [N]), D = P.length > 0, G = N.length > P.length, M = (0, l.bG)([m.A], () => m.A.getCurrentUserAppliedBoosts()), {
-        fractionalState: U
+        fractionalState: k
     } = (0, a.A)({
         forceFetch: !0
-    }), k = I?.isPremiumGroupMember(), w = t?.isPausedOrPausePending === !0 && U === C.xc.NONE, V = t?.isPausedOrPausePending !== !0 && U === C.xc.NONE && !k, B = j && U === C.xc.FP_SUB_PAUSED, F = U === C.xc.NONE && !k;
+    }), U = I?.isPremiumGroupMember(), w = t?.isPausedOrPausePending === !0 && k === C.xc.NONE, V = t?.isPausedOrPausePending !== !0 && k === C.xc.NONE && !U, B = j && k === C.xc.FP_SUB_PAUSED, F = k === C.xc.NONE && !U;
     return (0, i.jsxs)("div", {
         className: v.GO,
         children: [(0, i.jsx)(r.kb, {
@@ -48,7 +48,7 @@ function N(e) {
             hasBoostPerk: B,
             hasGuildAffinitiesOrInGuild: R,
             subscriptionIsPausedOrPausePending: w
-        }), k && (0, i.jsx)(u.A, {}), !R && (0, i.jsx)(T.A, {}), t?.isPaused && U !== C.xc.FP_SUB_PAUSED ? (0, i.jsx)(p.N, {
+        }), U && (0, i.jsx)(u.A, {}), !R && (0, i.jsx)(T.A, {}), t?.isPaused && k !== C.xc.FP_SUB_PAUSED ? (0, i.jsx)(p.N, {
             appliedGuildBoosts: M,
             premiumSubscription: t
         }) : (0, i.jsx)(p.A, {
@@ -56,7 +56,7 @@ function N(e) {
             premiumSubscription: t
         }), (0, i.jsx)(b.A, {
             guildBoostSlots: N,
-            fractionalPremiumState: U
+            fractionalPremiumState: k
         }), (0, i.jsx)(S.A, {
             canAddBoosts: D && V,
             canApplyBoosts: G

@@ -36,8 +36,8 @@ var i = n(627968),
     D = n(768229),
     G = n(788868),
     M = n(652215),
-    U = n(818348),
-    k = n(352989);
+    k = n(818348),
+    U = n(352989);
 let w = () => {
     let e = (0, r.zy)();
     (0, x.P)(g.b);
@@ -78,19 +78,19 @@ let w = () => {
             compare: eu
         } = el,
         em = (0, i.jsxs)("div", {
-            className: a()(k.kL, k.Gd, k.iI, {
-                [k.Hq]: !B
+            className: a()(U.kL, U.Gd, U.iI, {
+                [U.Hq]: !B
             }),
             "data-cy": "tier-0-marketing-page",
             children: [(0, i.jsx)(v.A, {
-                className: k.yH
+                className: U.yH
             }), (0, i.jsx)(O.A, {
                 navBarSections: el,
                 activeSectionId: ea
             }), (0, i.jsxs)("div", {
-                className: k.Qr,
+                className: U.Qr,
                 children: [(0, i.jsx)("div", {
-                    className: k.qY,
+                    className: U.qY,
                     ref: er.ref,
                     children: (0, i.jsx)(d.L, {
                         innerRef: l,
@@ -104,26 +104,26 @@ let w = () => {
                         })
                     })
                 }), ee && (0, i.jsx)("div", {
-                    className: k.Hz,
+                    className: U.Hz,
                     children: (0, i.jsx)(b.A, {
                         variant: b.c.APPLICATION_NITRO_HOME
                     })
                 }), (0, i.jsx)("div", {
-                    className: k.So,
+                    className: U.So,
                     ref: eo.ref,
                     children: (0, i.jsx)(R.Ct, {
                         shouldLoadVideo: W,
                         isReducedMotion: B
                     })
                 }), (0, i.jsx)("div", {
-                    className: k.KQ,
+                    className: U.KQ,
                     ref: ed.ref,
                     children: (0, i.jsx)(R.oO, {
                         shouldLoadVideo: W,
                         isReducedMotion: B
                     })
                 }), (0, i.jsx)("div", {
-                    className: k.s5,
+                    className: U.s5,
                     ref: ec.ref,
                     children: (0, i.jsx)(d.L, {
                         innerRef: n,
@@ -135,7 +135,7 @@ let w = () => {
                         })
                     })
                 }), (0, i.jsx)("div", {
-                    className: k.aC,
+                    className: U.aC,
                     ref: eu.ref,
                     children: (0, i.jsx)(y.A, {})
                 })]
@@ -148,7 +148,7 @@ let w = () => {
                 },
                 children: (0, i.jsx)("div", {
                     ref: w,
-                    className: k._Z
+                    className: U._Z
                 })
             }), (0, i.jsx)(I.A, {
                 ref: V
@@ -157,13 +157,13 @@ let w = () => {
                 subscriptionTier: $,
                 isEligibleForBogoPromotion: ee
             }), (0, i.jsx)(v.A, {
-                className: k.MF
+                className: U.MF
             })]
         });
     return (0, i.jsx)(c.NPJ, {
-        theme: U.NJ.DARKER,
+        theme: k.NJ.DARKER,
         children: e => (0, i.jsx)(c.GtU, {
-            className: a()(k.XG, e),
+            className: a()(U.XG, e),
             ref: t,
             children: em
         })

@@ -140,13 +140,13 @@ let M = function() {
         activeOutboundPromotions: h,
         claimedEndedOutboundPromotions: f,
         claimedOutboundPromotionCodeMap: M,
-        addClaimedOutboundPromotionCode: U
-    } = (0, p.y7)(), k = h.length + f.length > 0, w = x.m.useExperiment({
+        addClaimedOutboundPromotionCode: k
+    } = (0, p.y7)(), U = h.length + f.length > 0, w = x.m.useExperiment({
         location: "EntitlementGifts"
     }, {
         autoTrackExposure: !1,
         disable: l
-    }).enabled && k;
+    }).enabled && U;
     return _ && A ? (0, i.jsxs)(i.Fragment, {
         children: [function() {
             let e = n.find(e => e.giftCodeBatchId === L.FB && !e.consumed),
@@ -159,7 +159,7 @@ let M = function() {
                 }),
                 d = (0, i.jsx)(c.Heading, {
                     variant: "heading-md/semibold",
-                    children: k ? P.intl.string(P.t.wFsj3B) : void 0
+                    children: U ? P.intl.string(P.t.wFsj3B) : void 0
                 }),
                 u = w ? (0, i.jsxs)("div", {
                     className: D.uo,
@@ -185,7 +185,7 @@ let M = function() {
                     })]
                 }) : null;
             return (0, i.jsxs)("div", {
-                children: [d, k ? (0, i.jsx)(c.cGx, {
+                children: [d, U ? (0, i.jsx)(c.cGx, {
                     className: D.yF
                 }) : null, (0, i.jsx)(S.A, {
                     className: D.Yj,
@@ -204,13 +204,13 @@ let M = function() {
                             return (0, i.jsx)(G, {
                                 outboundPromotion: n,
                                 code: t,
-                                addClaimedOutboundPromotionCode: U,
+                                addClaimedOutboundPromotionCode: k,
                                 disabled: !l
                             }, n.id)
                         }), h.map(e => (0, i.jsx)(G, {
                             outboundPromotion: e,
                             code: M[e.id],
-                            addClaimedOutboundPromotionCode: U,
+                            addClaimedOutboundPromotionCode: k,
                             disabled: !l
                         }, e.id)), null != e ? (0, i.jsx)(O.A, {
                             className: D.uI,

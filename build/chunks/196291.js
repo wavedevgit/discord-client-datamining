@@ -1,6 +1,6 @@
 /** chunk id: 196291 params = (module,exports,require) **/
 n.d(t, {
-    A: () => k
+    A: () => U
 });
 var i = n(627968),
     s = n(64700),
@@ -36,13 +36,13 @@ var i = n(627968),
     D = n(788868),
     G = n(355097),
     M = n(985018),
-    U = n(686294);
+    k = n(686294);
 
-function k(e) {
+function U(e) {
     let {
         user: t,
         isVisible: n,
-        shouldShow: k
+        shouldShow: U
     } = e, w = b.Ay.isPremium(t), V = b.Ay.canUseAnimatedAvatar(t), {
         pendingAvatar: B,
         pendingThemeColors: F,
@@ -102,22 +102,22 @@ function k(e) {
     let $ = (0, c.V)()?.subscription_trial?.sku_id === D.pe.TIER_2,
         ee = (0, d.O)(),
         et = (0, _.U9)(ee, D.pe.TIER_2);
-    return k ? (0, i.jsx)(o.f5, {
+    return U ? (0, i.jsx)(o.f5, {
         value: Z,
         children: (0, i.jsxs)(y.A, {
             ref: W,
-            className: U.MT,
+            className: k.MT,
             type: y.i.PREMIUM,
             isShown: !0,
             hasBackground: !0,
             children: [(0, i.jsx)(v.A, {
                 stickyPreview: !1,
-                layoutClassName: U.th,
+                layoutClassName: k.th,
                 profilePreviewTitle: (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(a.tvc, {
                         size: "md",
                         color: "currentColor",
-                        className: U.PC
+                        className: k.PC
                     }), M.intl.string(M.t.gMlDNd)]
                 }),
                 profilePreview: (0, i.jsxs)(i.Fragment, {
@@ -129,18 +129,18 @@ function k(e) {
                     })]
                 }),
                 children: (0, i.jsxs)("div", {
-                    className: U.EN,
+                    className: k.EN,
                     children: [(0, i.jsxs)("div", {
                         children: [(0, i.jsx)(a.Heading, {
                             variant: "heading-xl/extrabold",
                             children: M.intl.string(M.t["2zGdAW"])
                         }), (0, i.jsx)(a.Text, {
-                            className: U.h_,
+                            className: k.h_,
                             variant: "text-sm/normal",
                             children: M.intl.string(M.t.xeEC20)
                         })]
                     }), (0, i.jsx)(R.A, {
-                        className: U.fz,
+                        className: k.fz,
                         user: t,
                         pendingAvatarSrc: (0, h.V7)({
                             userId: t.id,
@@ -151,13 +151,13 @@ function k(e) {
                         showPremiumIcon: !1,
                         preventDisabled: !0
                     }), (0, i.jsx)(O.A, {
-                        className: U.fz,
+                        className: k.fz,
                         isTryItOut: !0,
                         showRemoveBannerButton: null != Y,
                         onBannerChange: p.xe,
                         showPremiumIcon: !1
                     }), !V && (0, i.jsx)(I.A, {
-                        className: U.fz,
+                        className: k.fz,
                         isTryItOut: !0,
                         onAvatarChange: p.e$,
                         showRemoveAvatarButton: !1,
@@ -165,7 +165,7 @@ function k(e) {
                         sectionTitle: M.intl.string(M.t.vtFfPX)
                     }), (0, i.jsx)(j.A, {
                         user: t,
-                        className: U.fz
+                        className: k.fz
                     }), !$ && (0, i.jsx)(a.Text, {
                         variant: "text-sm/normal",
                         children: M.intl.string(M.t["smo74/"])
@@ -173,7 +173,7 @@ function k(e) {
                 })
             }), !$ && (0, i.jsx)(g.d, {
                 onSubscribeModalClose: J,
-                className: U.Kv,
+                className: k.Kv,
                 showUpsell: !0,
                 text: M.intl.format(M.t.TmfgI2, {
                     onClick: () => {
@@ -189,7 +189,7 @@ function k(e) {
                 position: "inline"
             }), $ && (0, i.jsxs)("div", {
                 children: [(0, i.jsx)("div", {
-                    className: U.BU
+                    className: k.BU
                 }), (0, i.jsx)(x.Ay, {
                     type: D.e.CUSTOM_PROFILE_TRY_OUT_UPSELL,
                     subscriptionTier: D.pe.TIER_2

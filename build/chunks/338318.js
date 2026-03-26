@@ -46,8 +46,8 @@ function M() {
             pendingBio: n,
             pendingAvatar: l,
             pendingNameplate: M,
-            showNotice: U,
-            ...k
+            showNotice: k,
+            ...U
         } = (0, r.cf)([v.A], () => ({
             ...v.A.getPendingChanges(),
             showNotice: v.A.showNotice()
@@ -76,13 +76,13 @@ function M() {
                 canUsePremiumCustomization: F,
                 onUpsellClick: L.A,
                 pendingBio: B,
-                ...k,
+                ...U,
                 pendingAvatar: w
             }),
             nameplatePreview: (0, i.jsx)(x.A, {
                 user: e,
                 nameplate: V,
-                ...k,
+                ...U,
                 className: null == V ? G.tJ : void 0,
                 isHighlighted: !0
             }),
@@ -100,7 +100,7 @@ function M() {
                     isVisible: Y
                 })
             })
-        }), K && !U && (0, i.jsx)(p.d, {
+        }), K && !k && (0, i.jsx)(p.d, {
             className: G.EL,
             showUpsell: !Y,
             text: D.intl.format(D.t.TmfgI2, {

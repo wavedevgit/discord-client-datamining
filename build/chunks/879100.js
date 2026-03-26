@@ -97,7 +97,7 @@ function H(e) {
             currency: H.currency
         } : w.Ay.getPrice($.id, es, !1, H),
         eo = n * ec.amount,
-        ed = (0, g.d)() && w.Ay.hasBoostDiscount(Z) && null != T,
+        ed = (0, g.ds)() && w.Ay.hasBoostDiscount(Z) && null != T,
         em = w.Ay.hasBoostDiscount(Z) && null != T && w.Ay.isPremiumAtLeast(w.Ay.getPremiumType(T.planId), B.PremiumTypes.TIER_1) ? V.intl.format(V.t.hf6YOY, {
             planName: w.Ay.getTierDisplayNameByPlanId(T.planId)
         }) : V.intl.format(ea ? V.t.ba1L74 : V.t.fkffDT, {

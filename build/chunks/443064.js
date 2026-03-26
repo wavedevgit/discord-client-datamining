@@ -36,8 +36,8 @@ var i = n(627968),
     D = n(253932),
     G = n(780964),
     M = n(192501),
-    U = n(840065),
-    k = n(652215),
+    k = n(840065),
+    U = n(652215),
     w = n(53516),
     V = n(985018),
     B = n(536242),
@@ -49,7 +49,7 @@ function z(e) {
     return s.useCallback(() => {
         t ? (0, N.openUserProfileModal)({
             userId: e
-        }) : (0, U.openUserSettings)(G.X.PROFILE_PANEL)
+        }) : (0, k.openUserSettings)(G.X.PROFILE_PANEL)
     }, [t, e])
 }
 
@@ -325,7 +325,7 @@ function Z(e) {
                         (0, c.qfG)(e => (0, i.jsx)(y.default, {
                             ...e,
                             title: V.intl.string(V.t["3CTiKi"]),
-                            children: l.hasFlag(k.nhx.MFA_SMS) ? V.intl.string(V.t.jrhJyo) : void 0,
+                            children: l.hasFlag(U.nhx.MFA_SMS) ? V.intl.string(V.t.jrhJyo) : void 0,
                             actionText: V.intl.string(V.t.N86XcP),
                             handleSubmit: e => f.A.removePhone(e, f.d.USER_SETTINGS_UPDATE)
                         }))
@@ -398,7 +398,7 @@ function Q(e) {
     let {
         className: t
     } = e, l = (0, g.b8)(), r = (0, g.yM)(), o = (0, g.Y2)(), d = !l || r, u = V.intl.string(V.t["9KiIz6"]), x = V.intl.string(V.t.DVywUB), A = V.intl.string(V.t.lKDPGA), h = s.useCallback(() => {
-        window.open(R.A.getArticleURL(k.MVz.TIGGER_PAWTECT_LEARN_MORE), "_blank")
+        window.open(R.A.getArticleURL(U.MVz.TIGGER_PAWTECT_LEARN_MORE), "_blank")
     }, []), p = s.useCallback(() => {
         (0, c.mMO)(async () => {
             let {

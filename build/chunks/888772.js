@@ -1,6 +1,6 @@
 /** chunk id: 888772 params = (module,exports,require) **/
 n.d(t, {
-    A: () => U
+    A: () => k
 }), n(801541);
 var i = n(627968),
     s = n(64700),
@@ -276,7 +276,7 @@ let P = () => {
             requests: e
         })
     },
-    U = () => {
+    k = () => {
         let e = (0, g.A)();
         return (0, i.jsxs)("div", {
             className: N.kL,
