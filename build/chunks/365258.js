@@ -2,17 +2,17 @@
 n.d(e, {
     AB: () => L,
     AI: () => h,
-    Xc: () => T,
-    ae: () => f,
-    g8: () => g,
-    gF: () => p,
-    gS: () => O,
-    vz: () => I
+    Xc: () => g,
+    ae: () => O,
+    g8: () => T,
+    gF: () => I,
+    gS: () => p,
+    vz: () => f
 });
 var i, r = n(873298),
     l = n(253932),
-    a = n(205761),
-    s = n(498642),
+    s = n(205761),
+    a = n(498642),
     o = n(71393),
     c = n(711014),
     d = n(115063),
@@ -20,7 +20,7 @@ var i, r = n(873298),
     h = ((i = {}).RESTRICTING = "restricting", i.EXPANDING = "expanding", i);
 let _ = r.Qd;
 
-function A(t) {
+function C(t) {
     switch (t) {
         case _.ACTIVITY_STATUS_OFF:
             return 2;
@@ -32,31 +32,31 @@ function A(t) {
             return -1
     }
 }
-let C = new Map([
+let A = new Map([
     [r.KP.FRIENDS_AND_ALL_GUILDS, _.ACTIVITY_STATUS_OFF],
     [r.KP.FRIENDS_AND_SMALL_GUILDS, _.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS],
     [r.KP.FRIENDS_ONLY, _.ACTIVITY_STATUS_ON]
 ]);
 
 function E(t) {
-    return C.get(t) ?? _.ACTIVITY_STATUS_OFF
+    return A.get(t) ?? _.ACTIVITY_STATUS_OFF
 }
 
-function g(t, e) {
+function T(t, e) {
     if (t === e) return null;
-    let n = A(t),
-        i = A(e);
+    let n = C(t),
+        i = C(e);
     if (n < 0 || i < 0) return null;
     let r = i < n ? "restricting" : "expanding",
         l = (0, d.Kk)(),
-        a = c.Ay.getFlattenedGuildIds(),
+        s = c.Ay.getFlattenedGuildIds(),
         u = t === _.ACTIVITY_STATUS_OFF && e === _.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS || t === _.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS && e === _.ACTIVITY_STATUS_OFF ? "large_only" : t === _.ACTIVITY_STATUS_ON && e === _.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS || t === _.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS && e === _.ACTIVITY_STATUS_ON ? "small_only" : "all",
-        h = a.filter(t => {
+        h = s.filter(t => {
             if (null == o.A.getGuild(t)) return !1;
             let e = l.has(t);
             if ("restricting" === r && e || "expanding" === r && !e) return !1;
             if ("all" === u) return !0;
-            let n = s.A.getMemberCount(t);
+            let n = a.A.getMemberCount(t);
             return null == n ? "restricting" === r : "large_only" === u ? n > 200 : n <= 200
         });
     return 0 === h.length ? null : (h.sort((t, e) => {
@@ -69,7 +69,7 @@ function g(t, e) {
     })
 }
 
-function T(t) {
+function g(t) {
     switch (t) {
         case _.ACTIVITY_STATUS_OFF:
             return u.intl.string(u.t.FzgQna).toLowerCase();
@@ -82,7 +82,7 @@ function T(t) {
     }
 }
 
-function I(t, e) {
+function f(t, e) {
     return {
         title: u.intl.string(t ? u.t.eYDA7D : u.t["9jYwjo"]),
         subtitle: u.intl.format(t ? u.t["c5/jDc"] : u.t.ajzh8S, {
@@ -93,7 +93,7 @@ function I(t, e) {
     }
 }
 
-function f(t, e) {
+function O(t, e) {
     return {
         title: u.intl.string(t ? u.t.jRx1Aa : u.t.S0Y0bh),
         subtitle: u.intl.format(t ? u.t.Fs96LO : u.t.GcoYX8, {
@@ -104,13 +104,13 @@ function f(t, e) {
     }
 }
 
-function O(t, e) {
+function p(t, e) {
     let n = E(e),
         i = l._Z.getSetting();
-    if (i === n || A(E(t)) > A(n) != A(i) > A(n)) return null;
-    let a = g(i, n);
-    if (null == a) return null;
-    let s = function(t) {
+    if (i === n || C(E(t)) > C(n) != C(i) > C(n)) return null;
+    let s = T(i, n);
+    if (null == s) return null;
+    let a = function(t) {
         switch (t) {
             case r.KP.FRIENDS_AND_ALL_GUILDS:
                 return u.intl.string(u.t.Boxc8R).toLowerCase();
@@ -123,18 +123,18 @@ function O(t, e) {
         }
     }(e);
     return {
-        affectedGuildIds: a.affectedGuildIds,
-        direction: a.direction,
-        settingName: s,
+        affectedGuildIds: s.affectedGuildIds,
+        direction: s.direction,
+        settingName: a,
         mappedActivityValue: n
     }
 }
 
 function L(t) {
-    return [...t].sort((t, e) => a.A.getScoreWithoutFetchingLatest(e) - a.A.getScoreWithoutFetchingLatest(t))
+    return [...t].sort((t, e) => s.A.getScoreWithoutFetchingLatest(e) - s.A.getScoreWithoutFetchingLatest(t))
 }
 
-function p(t, e) {
+function I(t, e) {
     let n = (0, d.Kk)(),
         i = new Set(e);
     if ("restricting" === t) {

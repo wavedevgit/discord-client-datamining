@@ -5,8 +5,8 @@ n.d(e, {
 var i = n(627968),
     r = n(64700),
     l = n(503698),
-    a = n.n(l),
-    s = n(397927),
+    s = n.n(l),
+    a = n(397927),
     o = n(927018),
     c = n(64585),
     d = n(906688),
@@ -70,12 +70,12 @@ function _(t) {
     } = t, {
         name: l,
         description: _,
-        rarity: A,
-        hideDescriptionUntilUnlock: C,
+        rarity: C,
+        hideDescriptionUntilUnlock: A,
         onAction: E
     } = e, {
-        color: g
-    } = (0, o.ag)(A);
+        color: T
+    } = (0, o.ag)(C);
     r.useEffect(() => {
         let t = setTimeout(() => {
             c.A.playAchievementUnlockSound()
@@ -84,12 +84,12 @@ function _(t) {
             clearTimeout(t)
         }
     }, []);
-    let T = null != E && n,
-        I = T ? s.DUT : "div";
-    return (0, i.jsxs)(I, {
-        className: a()(u.kL, T && u.b),
+    let g = null != E && n,
+        f = g ? a.DUT : "div";
+    return (0, i.jsxs)(f, {
+        className: s()(u.kL, g && u.b),
         onClick: () => {
-            T && E()
+            g && E()
         },
         children: [(0, i.jsx)("div", {
             className: u.zc,
@@ -100,19 +100,19 @@ function _(t) {
             })
         }), (0, i.jsxs)("div", {
             className: u.__invalid_nameContainer,
-            children: [(0, i.jsx)(s.Text, {
+            children: [(0, i.jsx)(a.Text, {
                 variant: "text-md/semibold",
                 color: "text-strong",
                 children: l()
-            }), (0, i.jsx)(s.Text, {
+            }), (0, i.jsx)(a.Text, {
                 variant: "text-xs/medium",
                 color: "text-default",
-                children: C && !n ? "?????" : _()
+                children: A && !n ? "?????" : _()
             })]
         }), (0, i.jsx)("div", {
             className: u.Db,
             children: (0, i.jsx)(h, {
-                color: g
+                color: T
             })
         })]
     })

@@ -1,217 +1,217 @@
 /** chunk id: 878244 params = (module,exports,require) **/
-e.d(i, {
-    A: () => v,
-    O: () => M
+t.d(e, {
+    A: () => M,
+    O: () => w
 });
-var n = e(627968),
-    r = e(64700),
-    a = e(503698),
-    s = e.n(a),
-    l = e(575593),
-    o = e(311907),
-    c = e(793574),
-    u = e(587895),
-    d = e(44120),
-    g = e(317560),
-    I = e(533406),
-    _ = e(954571),
-    p = e(661492),
-    A = e(594832),
-    f = e(146423),
-    T = e(121700),
-    C = e(460442),
-    S = e(662349),
-    E = e(754804),
-    L = e(479026),
-    O = e(699976),
-    h = e(652215),
-    m = e(788868),
-    k = e(985018),
-    G = e(367625);
-let y = m.vQ.DM_CHANNEL_WISHLIST,
-    R = O.Z.SIZE_133;
+var n = t(627968),
+    s = t(64700),
+    r = t(503698),
+    o = t.n(r),
+    l = t(575593),
+    a = t(311907),
+    c = t(793574),
+    u = t(587895),
+    d = t(44120),
+    p = t(317560),
+    I = t(533406),
+    f = t(954571),
+    C = t(661492),
+    _ = t(594832),
+    g = t(146423),
+    T = t(121700),
+    E = t(460442),
+    S = t(662349),
+    L = t(754804),
+    h = t(479026),
+    k = t(699976),
+    A = t(652215),
+    O = t(788868),
+    x = t(985018),
+    y = t(367625);
+let v = O.vQ.DM_CHANNEL_WISHLIST,
+    G = k.Z.SIZE_133;
 
-function M(t) {
+function w(i) {
     let {
-        spec: i = R
-    } = t;
-    return (0, n.jsx)(f.$, {
-        spec: i
+        spec: e = G
+    } = i;
+    return (0, n.jsx)(g.$, {
+        spec: e
     })
 }
 
-function N(t) {
+function m(i) {
     let {
-        sku: i,
-        onDetailsClick: e,
-        onPurchaseClick: a,
+        sku: e,
+        onDetailsClick: t,
+        onPurchaseClick: r,
         onOpenWishlist: l,
-        wishlistOwner: o,
+        wishlistOwner: a,
         wishlistId: c,
         source: u,
         hasMultipleSources: d,
-        skuPreviewStyle: g,
+        skuPreviewStyle: p,
         skuPreviewHoverStyle: I,
-        spec: L = R,
-        guildId: O,
-        channelId: m,
-        numMoreItems: y
-    } = t, [M, N] = r.useState(!1), b = null != y && y > 0, P = r.useCallback(() => {
-        if (b) return void l();
-        let t = u === A.uS.WISHLIST ? "wishlist" : "shop";
-        _.default.track(h.HAw.GIFTING_ITEM_CLICKED, {
-            sku_id: i.id,
-            item_source: t,
-            wishlist_id: u === A.uS.WISHLIST ? c : null,
-            product_line: i.productLine
-        }), e?.()
-    }, [e, c, u, i.id, i.productLine, l, b]), v = r.useCallback(() => {
-        let t = u === A.uS.WISHLIST ? "wishlist" : "shop";
-        _.default.track(h.HAw.GIFTING_ITEM_CLICKED, {
-            sku_id: i.id,
-            item_source: t,
-            wishlist_id: u === A.uS.WISHLIST ? c : null,
-            product_line: i.productLine
-        }), a?.()
-    }, [a, i.id, i.productLine, u, c]), {
-        label: x,
-        icon: w,
-        isPromptingPurchase: D
+        spec: h = G,
+        guildId: k,
+        channelId: O,
+        numMoreItems: v
+    } = i, [w, m] = s.useState(!1), P = null != v && v > 0, R = s.useCallback(() => {
+        if (P) return void l();
+        let i = u === _.uS.WISHLIST ? "wishlist" : "shop";
+        f.default.track(A.HAw.GIFTING_ITEM_CLICKED, {
+            sku_id: e.id,
+            item_source: i,
+            wishlist_id: u === _.uS.WISHLIST ? c : null,
+            product_line: e.productLine
+        }), t?.()
+    }, [t, c, u, e.id, e.productLine, l, P]), M = s.useCallback(() => {
+        let i = u === _.uS.WISHLIST ? "wishlist" : "shop";
+        f.default.track(A.HAw.GIFTING_ITEM_CLICKED, {
+            sku_id: e.id,
+            item_source: i,
+            wishlist_id: u === _.uS.WISHLIST ? c : null,
+            product_line: e.productLine
+        }), r?.()
+    }, [r, e.id, e.productLine, u, c]), {
+        label: H,
+        icon: b,
+        isPromptingPurchase: j
     } = (0, S.h)({
-        sku: i,
-        wishlistOwner: o,
+        sku: e,
+        wishlistOwner: a,
         isOwned: !1,
         location: "DM Gifting Modal Wishlist Item Card"
     });
-    return (0, n.jsxs)(f.A, {
-        sku: i,
-        user: o,
-        spec: L,
-        skuPreviewStyle: s()(G.e, g, M ? I : void 0),
-        onClick: P,
-        "aria-label": b ? k.intl.formatToPlainString(k.t["8uYD+I"], {
-            username: o.username
-        }) : k.intl.formatToPlainString(k.t.ZBB4Ty, {
-            productName: (0, p.TC)(i)
+    return (0, n.jsxs)(g.A, {
+        sku: e,
+        user: a,
+        spec: h,
+        skuPreviewStyle: o()(y.e, p, w ? I : void 0),
+        onClick: R,
+        "aria-label": P ? x.intl.formatToPlainString(x.t["8uYD+I"], {
+            username: a.username
+        }) : x.intl.formatToPlainString(x.t.ZBB4Ty, {
+            productName: (0, C.TC)(e)
         }),
-        onHoverOrFocusChange: N,
+        onHoverOrFocusChange: m,
         children: [(0, n.jsx)(T.A, {
-            spec: L,
-            sku: i,
-            isCardHovered: M && !b,
+            spec: h,
+            sku: e,
+            isCardHovered: w && !P,
             location: "DMGiftingModalWishlistItemCardBase",
-            replacedElement: d && u === A.uS.WISHLIST ? (0, n.jsx)(E.X, {
-                spec: L,
-                users: [o],
-                guildId: O ?? void 0,
-                channelId: m ?? void 0
+            replacedElement: d && u === _.uS.WISHLIST ? (0, n.jsx)(L.X, {
+                spec: h,
+                users: [a],
+                guildId: k ?? void 0,
+                channelId: O ?? void 0
             }) : null
-        }), !b && (0, n.jsx)(S.A, {
-            spec: L,
-            onClick: D ? v : P,
-            label: x,
-            icon: w,
-            isHoveringOrFocusing: M
-        }), b && (0, n.jsx)(C.Yb, {
-            count: y
+        }), !P && (0, n.jsx)(S.A, {
+            spec: h,
+            onClick: j ? M : R,
+            label: H,
+            icon: b,
+            isHoveringOrFocusing: w
+        }), P && (0, n.jsx)(E.Yb, {
+            count: v
         })]
     })
 }
 
-function b(t) {
+function P(i) {
     let {
-        sku: i,
-        wishlistOwner: e,
-        analyticsLocations: a,
-        onClick: s,
-        hasMultipleSources: l,
-        source: d,
-        ..._
-    } = t, p = (0, o.bG)([u.A], () => u.A.getApplication(i.applicationId)), A = r.useCallback(() => {
-        s?.(), null != p && null != p.guildId && (0, g.R)({
-            skuId: i.id,
-            applicationId: i.applicationId,
-            isStorefront: !1,
-            giftRecipient: e,
-            giftingOrigin: y,
-            analyticsLocations: a ?? []
-        })
-    }, [a, p, s, i.applicationId, i.id, e]), f = r.useCallback(() => {
-        s?.(), (0, I.a)(i, {
-            isGift: !0,
-            giftRecipient: e,
-            giftingOrigin: y
-        }, {
-            analyticsLocations: [...a ?? [], c.A.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD_GIFT_BUTTON]
-        })
-    }, [i, e, a, s]);
-    return (0, n.jsx)(N, {
-        sku: i,
-        wishlistOwner: e,
-        analyticsLocations: a,
-        onDetailsClick: A,
-        onPurchaseClick: f,
-        hasMultipleSources: l,
-        source: d,
-        ..._
-    })
-}
-
-function P(t) {
-    let {
-        sku: i,
-        wishlistOwner: e,
-        analyticsLocations: a,
+        sku: e,
+        wishlistOwner: t,
+        analyticsLocations: r,
         onClick: o,
-        hasMultipleSources: c,
-        source: u,
-        ...g
-    } = t, I = (0, L.e)({
-        sku: i,
-        giftRecipient: e,
-        giftingOrigin: y,
-        analyticsLocations: a
-    }), _ = r.useCallback(() => {
-        o?.(), (0, d.A)({
-            skuId: i.id,
-            isGift: !0,
-            giftingOrigin: y,
-            analyticsLocations: a ?? [],
-            giftRecipient: e
+        hasMultipleSources: l,
+        source: d,
+        ...f
+    } = i, C = (0, a.bG)([u.A], () => u.A.getApplication(e.applicationId)), _ = s.useCallback(() => {
+        o?.(), null != C && null != C.guildId && (0, p.R)({
+            skuId: e.id,
+            applicationId: e.applicationId,
+            isStorefront: !1,
+            giftRecipient: t,
+            giftingOrigin: v,
+            analyticsLocations: r ?? []
         })
-    }, [o, i.id, a, e]), p = r.useCallback(() => {
-        o?.(), I()
-    }, [o, I]);
-    return (0, n.jsx)(N, {
-        sku: i,
-        wishlistOwner: e,
-        analyticsLocations: a,
-        onDetailsClick: p,
-        onPurchaseClick: _,
-        hasMultipleSources: c,
-        source: u,
-        skuPreviewHoverStyle: s()({
-            [G.m]: null != i.bundledSkus && i.bundledSkus.length > 0 || i.tenantMetadata?.collectibles?.type !== l.R.NAMEPLATE && i.tenantMetadata?.collectibles?.type !== l.R.PROFILE_EFFECT
-        }),
-        ...g
+    }, [r, C, o, e.applicationId, e.id, t]), g = s.useCallback(() => {
+        o?.(), (0, I.a)(e, {
+            isGift: !0,
+            giftRecipient: t,
+            giftingOrigin: v
+        }, {
+            analyticsLocations: [...r ?? [], c.A.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD_GIFT_BUTTON]
+        })
+    }, [e, t, r, o]);
+    return (0, n.jsx)(m, {
+        sku: e,
+        wishlistOwner: t,
+        analyticsLocations: r,
+        onDetailsClick: _,
+        onPurchaseClick: g,
+        hasMultipleSources: l,
+        source: d,
+        ...f
     })
 }
 
-function v(t) {
+function R(i) {
     let {
-        sku: i,
-        ...e
-    } = t;
-    switch (i.productLine) {
-        case h.EZt.SOCIAL_LAYER_GAME_ITEM:
-            return (0, n.jsx)(b, {
-                sku: i,
-                ...e
-            });
-        case h.EZt.COLLECTIBLES:
+        sku: e,
+        wishlistOwner: t,
+        analyticsLocations: r,
+        onClick: a,
+        hasMultipleSources: c,
+        source: u,
+        ...p
+    } = i, I = (0, h.e)({
+        sku: e,
+        giftRecipient: t,
+        giftingOrigin: v,
+        analyticsLocations: r
+    }), f = s.useCallback(() => {
+        a?.(), (0, d.A)({
+            skuId: e.id,
+            isGift: !0,
+            giftingOrigin: v,
+            analyticsLocations: r ?? [],
+            giftRecipient: t
+        })
+    }, [a, e.id, r, t]), C = s.useCallback(() => {
+        a?.(), I()
+    }, [a, I]);
+    return (0, n.jsx)(m, {
+        sku: e,
+        wishlistOwner: t,
+        analyticsLocations: r,
+        onDetailsClick: C,
+        onPurchaseClick: f,
+        hasMultipleSources: c,
+        source: u,
+        skuPreviewHoverStyle: o()({
+            [y.m]: null != e.bundledSkus && e.bundledSkus.length > 0 || e.tenantMetadata?.collectibles?.type !== l.R.NAMEPLATE && e.tenantMetadata?.collectibles?.type !== l.R.PROFILE_EFFECT
+        }),
+        ...p
+    })
+}
+
+function M(i) {
+    let {
+        sku: e,
+        ...t
+    } = i;
+    switch (e.productLine) {
+        case A.EZt.SOCIAL_LAYER_GAME_ITEM:
             return (0, n.jsx)(P, {
-                sku: i,
-                ...e
+                sku: e,
+                ...t
+            });
+        case A.EZt.COLLECTIBLES:
+            return (0, n.jsx)(R, {
+                sku: e,
+                ...t
             });
         default:
             return null

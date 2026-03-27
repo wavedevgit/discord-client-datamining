@@ -1,9 +1,9 @@
 /** chunk id: 300542 params = (module,exports,require) **/
 r.d(t, {
-    A: () => m
+    A: () => u
 });
-var n = r(627968),
-    i = r(64700),
+var i = r(627968),
+    n = r(64700),
     a = r(311907),
     s = r(397927),
     l = r(854627),
@@ -11,36 +11,36 @@ var n = r(627968),
     c = r(985018),
     d = r(217837);
 
-function m() {
+function u() {
     let e = (0, a.bG)([o.A], () => o.A.affinities.slice(0, 3)),
         t = e[0],
         {
             avatarSrc: r,
-            eventHandlers: m
+            eventHandlers: u
         } = (0, l.A)({
             userId: t?.id,
             size: s._3J.SIZE_24,
             animateOnHover: !0
         }),
-        u = e => null != e.globalName ? e.globalName : e.username,
-        T = i.useMemo(() => e.length >= 2 ? c.intl.formatToPlainString(c.t.c7ETJH, {
-            username: u(e[0])
+        m = e => null != e.globalName ? e.globalName : e.username,
+        x = n.useMemo(() => e.length >= 2 ? c.intl.formatToPlainString(c.t.c7ETJH, {
+            username: m(e[0])
         }) : 1 === e.length ? c.intl.formatToPlainString(c.t.dpjXPL, {
-            username: u(e[0])
+            username: m(e[0])
         }) : "", [e]);
-    return 0 === e.length ? null : (0, n.jsxs)("div", {
+    return 0 === e.length ? null : (0, i.jsxs)("div", {
         className: d.kL,
-        children: [(0, n.jsx)(s.euF, {
+        children: [(0, i.jsx)(s.euF, {
             className: d.__invalid_icon,
             src: r,
             "aria-label": t.username,
             size: s._3J.SIZE_24,
-            ...m
-        }), (0, n.jsx)(s.Text, {
+            ...u
+        }), (0, i.jsx)(s.Text, {
             className: d.Qq,
             variant: "text-sm/normal",
             color: "always-white",
-            children: T
+            children: x
         })]
     })
 }

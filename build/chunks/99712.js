@@ -1,11 +1,11 @@
 /** chunk id: 99712 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    i: () => a
+    i: () => i
 });
-var i = n(115328);
+var r = n(115328);
 
-function a() {
-    return i.A.get("enable_recently_active")
+function i() {
+    return r.A.get("enable_recently_active")
 }
 n(239433)

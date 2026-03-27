@@ -1,8 +1,8 @@
 /** chunk id: 393432 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    PW: () => l,
-    mD: () => o,
+    PW: () => o,
+    mD: () => l,
     md: () => a
 });
 var i = n(665260),
@@ -11,8 +11,8 @@ var i = n(665260),
 function a(e, t) {
     return i.UI(i.iE(e, r.n3.UNREADS_ALL_MESSAGES, r.n3.UNREADS_ONLY_MENTIONS), t)
 }
-let l = e => i.iE(e, r.vv.UNREADS_ALL_MESSAGES, r.vv.UNREADS_ONLY_MENTIONS);
+let o = e => i.iE(e, r.vv.UNREADS_ALL_MESSAGES, r.vv.UNREADS_ONLY_MENTIONS);
 
-function o(e, t) {
-    return i.UI(l(e), t)
+function l(e, t) {
+    return i.UI(o(e), t)
 }

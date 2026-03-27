@@ -1,19 +1,19 @@
 /** chunk id: 491057 params = (module,exports,require) **/
-r.d(t, {
+t.d(r, {
     Qt: () => o,
     cG: () => n
 });
-var a = r(627968);
-r(64700);
-let [i, n] = (0, r(786300).A)();
+var a = t(627968);
+t(64700);
+let [i, n] = (0, t(786300).A)();
 
 function o(e) {
     let {
-        children: t,
-        ...r
+        children: r,
+        ...t
     } = e;
     return (0, a.jsx)(i.Provider, {
-        value: r,
-        children: t
+        value: t,
+        children: r
     })
 }

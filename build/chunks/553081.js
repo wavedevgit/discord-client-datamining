@@ -1,6 +1,6 @@
 /** chunk id: 553081 params = (module,exports,require) **/
 n.d(t, {
-    A: () => k
+    A: () => w
 }), n(321073), n(323874), n(14289), n(35956);
 var i = n(627968),
     s = n(64700),
@@ -25,19 +25,20 @@ var i = n(627968),
     b = n(131168),
     C = n(482589),
     v = n(511484),
-    N = n(568031),
-    I = n(518491),
-    j = n(965591),
-    y = n(495022),
-    O = n(382694),
-    R = n(235365),
-    L = n(994763),
-    P = n(788868),
-    D = n(652215),
-    G = n(985018),
-    M = n(904286),
-    U = n(288894);
-let k = e => {
+    N = n(935956),
+    I = n(568031),
+    j = n(518491),
+    y = n(965591),
+    O = n(495022),
+    R = n(382694),
+    L = n(235365),
+    P = n(994763),
+    D = n(788868),
+    G = n(652215),
+    M = n(985018),
+    U = n(904286),
+    k = n(288894);
+let w = e => {
     let {
         userId: t
     } = e, n = (0, E.ds)(), l = (0, r.zy)();
@@ -47,23 +48,23 @@ let k = e => {
             null != t && e.push((0, f.A)(t)), await Promise.all(e)
         })
     }, [t]), s.useEffect(() => {
-        Z(!0)
+        q(!0)
     }, []), (0, C.j)(), (0, A.P)(g.b);
-    let k = s.useRef(null),
-        w = s.useRef(null),
-        V = (0, o.bG)([T.A], () => T.A.getPremiumTypeSubscription()),
+    let w = s.useRef(null),
+        V = s.useRef(null),
+        B = (0, o.bG)([T.A], () => T.A.getPremiumTypeSubscription()),
         {
-            isReady: B,
-            programReward: F,
-            isEligible: H
+            isReady: F,
+            programReward: H,
+            isEligible: z
         } = (0, h.F)({
             location: "PremiumSubscriberHome"
         }),
         {
-            scrollTargetId: z,
-            glowingPerkId: Y,
-            scrollBlock: X,
-            scrollInline: K
+            scrollTargetId: Y,
+            glowingPerkId: X,
+            scrollBlock: K,
+            scrollInline: W
         } = s.useMemo(() => {
             let e = new URLSearchParams(l.search),
                 t = e.get("perk"),
@@ -78,73 +79,73 @@ let k = e => {
                 scrollBlock: "start"
             } : {}
         }, [l.search]);
-    (0, L.z)(z ?? "", null != z, X, K);
-    let [W, Z] = s.useState(!1), q = (0, b.p)(), Q = s.useRef(null), [J, $] = s.useState(!1), ee = null != q && null != V && V.status === D.Dmq.CANCELED, et = (0, v.iU)(P.gD.PREMIUM_MONTH_TIER_2, q, V), en = !J && ee, {
-        analyticsLocations: ei
-    } = (0, _.Ay)(m.A.PREMIUM_SUBSCRIBER_NITRO_HOME), [es, el] = s.useState(!1);
-    return null != (0, o.bG)([p.A], () => null != t ? p.A.getUserProfile(t) : null) && (B || null != F) ? (0, i.jsxs)(c.GtU, {
-        className: M.xW,
-        ref: k,
+    (0, P.z)(Y ?? "", null != Y, K, W);
+    let [Z, q] = s.useState(!1), Q = (0, b.p)(), J = s.useRef(null), [$, ee] = s.useState(!1), et = null != Q && null != B && B.status === G.Dmq.CANCELED, en = (0, v.iU)(D.gD.PREMIUM_MONTH_TIER_2, Q, B), ei = !$ && et, {
+        analyticsLocations: es
+    } = (0, _.Ay)(m.A.PREMIUM_SUBSCRIBER_NITRO_HOME), [el, ea] = s.useState(!1);
+    return null != (0, o.bG)([p.A], () => null != t ? p.A.getUserProfile(t) : null) && (F || null != H) ? (0, i.jsxs)(c.GtU, {
+        className: U.xW,
+        ref: w,
         children: [(0, i.jsx)(c.hLv, {
             color: "nitro-pink",
-            className: a()(M.kL, M.Gd),
+            className: a()(U.kL, U.Gd),
             offsetBottom: n ? .55 : .8,
             children: (0, i.jsxs)(_.f5, {
-                value: ei,
+                value: es,
                 children: [(0, i.jsx)(d.L, {
-                    innerRef: Q,
-                    onChange: e => $(e),
+                    innerRef: J,
+                    onChange: e => ee(e),
                     threshold: .1,
                     active: !0,
-                    children: (0, i.jsx)(I.A, {
-                        buttonVisibilityRef: Q,
-                        className: M.v1,
+                    children: (0, i.jsx)(j.A, {
+                        buttonVisibilityRef: J,
+                        className: U.v1,
                         enablePremiumBrandRefresh: !0,
-                        userDiscountOffer: q,
-                        discountedPrice: et
+                        userDiscountOffer: Q,
+                        discountedPrice: en
                     })
-                }), (0, i.jsx)(O.A, {
-                    glowingPerkId: Y
-                }), null != F && H && (0, i.jsx)(R.A, {
+                }), (0, i.jsx)(R.A, {
+                    glowingPerkId: X
+                }), (0, i.jsx)(N.A, {}), null != H && z && (0, i.jsx)(L.A, {
                     location: m.A.PREMIUM_MARKETING_NITRO_HOME_ORBS_SECTION
-                }), (0, i.jsx)(y.A, {
-                    glowingPerkId: Y
-                }), (0, i.jsx)(N.A, {
-                    className: M.Zy,
+                }), (0, i.jsx)(O.A, {
+                    glowingPerkId: X
+                }), (0, i.jsx)(I.A, {
+                    className: U.Zy,
                     location: m.A.PREMIUM_MARKETING_GIFT_SECTION,
                     analyticsLocation: {
-                        page: D.liQ.NITRO_HOME,
-                        section: D.JJy.GIFT_BANNER
+                        page: G.liQ.NITRO_HOME,
+                        section: G.JJy.GIFT_BANNER
                     }
                 }), (0, i.jsx)("div", {
-                    className: M.hz
+                    className: U.hz
                 }), (0, i.jsx)(d.L, {
-                    innerRef: w,
+                    innerRef: V,
                     onChange: e => {
-                        e && !es && (S.default.track(D.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
-                            location_stack: ei
-                        }), el(!0))
+                        e && !el && (S.default.track(G.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                            location_stack: es
+                        }), ea(!0))
                     },
                     children: (0, i.jsx)("div", {
-                        ref: w,
-                        className: M._Z
+                        ref: V,
+                        className: U._Z
                     })
                 }), (0, i.jsx)("img", {
-                    src: U,
-                    className: M.Kw,
+                    src: k,
+                    className: U.Kw,
                     width: 112,
                     height: 85,
-                    alt: G.intl.string(G.t.X4IxWL)
+                    alt: M.intl.string(M.t.X4IxWL)
                 })]
             })
-        }), ee && null != et && (0, i.jsx)(j.A, {
-            isVisible: en && W,
-            premiumSubscription: V,
-            churnDiscountOffer: q,
-            discountedPrice: et
+        }), et && null != en && (0, i.jsx)(y.A, {
+            isVisible: ei && Z,
+            premiumSubscription: B,
+            churnDiscountOffer: Q,
+            discountedPrice: en
         })]
     }) : (0, i.jsx)("div", {
-        className: a()(M.kL, M.Lq),
+        className: a()(U.kL, U.Lq),
         children: (0, i.jsx)(c.y$y, {})
     })
 }
