@@ -149,7 +149,7 @@ function O(e) {
                     onClick: P
                 })]
             })]
-        }), null != b && (0, i.jsx)(C.A, {
+        }), null != b && U && (0, i.jsx)(C.A, {
             onDismiss: () => O(v.i.USER_DISMISS),
             onCTAClick: () => O(v.i.TAKE_ACTION),
             targetElementRef: p
@@ -161,23 +161,25 @@ function L(e) {
     let {
         applicationId: t
     } = e, a = (0, r.bG)([A.A], () => A.A.quests), c = (0, r.bG)([u.A], () => u.A.theme), d = s.useMemo(() => (0, E.jm)(a, t, !0)[0], [a, t]), {
-        enabled: h
+        enabled: h,
+        showSkipButton: g
     } = p.Ym.useConfig({
         location: T.rE.QUEST_ACTIVITY_HEADER
-    }), g = (0, r.bG)([_.A], () => _.A.getState().autoEnroll), f = d?.id, x = (0, r.bG)([_.A], () => _.A.isDismissed(f), [f]);
+    }), f = (0, r.bG)([_.A], () => _.A.getState().autoEnroll), x = d?.id, C = (0, r.bG)([_.A], () => _.A.isDismissed(x), [x]);
     return (s.useEffect(() => {
-        !h || null == d || d.userStatus?.enrolledAt != null || g || x || (0, o.mMO)(async () => {
+        !h || null == d || d.userStatus?.enrolledAt != null || f || C || (0, o.mMO)(async () => {
             let {
                 default: e
             } = await n.e("85986").then(n.bind(n, 113273));
             return t => (0, i.jsx)(e, {
                 ...t,
-                quest: d
+                quest: d,
+                showSkipButton: g
             })
         }, {
             modalKey: "quest-activity-unenrolled-modal"
         })
-    }, [h, d, g, x]), null != d && h) ? (0, i.jsx)(l.NPJ, {
+    }, [h, d, f, C, g]), null != d && h) ? (0, i.jsx)(l.NPJ, {
         theme: c,
         children: e => (0, i.jsx)("div", {
             className: e,
