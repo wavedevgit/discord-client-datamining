@@ -1,6 +1,6 @@
 /** chunk id: 382120 params = (module,exports,require) **/
 t.d(n, {
-    A: () => A
+    A: () => _
 });
 var i = t(627968);
 t(64700);
@@ -41,22 +41,22 @@ function u(e) {
     })
 }
 
-function A(e) {
+function _(e) {
     let {
         user: n
     } = e, t = (0, r.bG)([o.A], () => o.A.getUserProfile(n.id)?.application), {
-        hasMessageContent: A,
-        hasGuildPresences: _,
+        hasMessageContent: _,
+        hasGuildPresences: A,
         hasGuildMembers: m
     } = (0, l.Z)(t);
     return (0, i.jsxs)(s.IpV, {
         fade: !0,
         className: c.XG,
-        children: [A && (0, i.jsx)(u, {
+        children: [_ && (0, i.jsx)(u, {
             icon: a.oyn,
             title: d.intl.string(d.t["7Tmhfu"]),
             description: d.intl.string(d.t.eu5x7z)
-        }), _ && (0, i.jsx)(u, {
+        }), A && (0, i.jsx)(u, {
             icon: a._xR,
             title: d.intl.string(d.t.awYSsM),
             description: d.intl.string(d.t.TpsXoC)

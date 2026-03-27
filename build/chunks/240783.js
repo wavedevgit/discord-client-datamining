@@ -11,8 +11,8 @@ var i = t(627968),
     d = t(382120),
     c = t(128490),
     u = t(539548),
-    A = t(412775),
-    _ = t(86404),
+    _ = t(412775),
+    A = t(86404),
     m = t(738759),
     x = t(518477),
     p = t(985018),
@@ -34,7 +34,7 @@ function g(e) {
         currentUser: s,
         guildId: a,
         onClose: o
-    }) : n === x.RP.MUTUAL_FRIENDS ? (0, i.jsx)(_.A, {
+    }) : n === x.RP.MUTUAL_FRIENDS ? (0, i.jsx)(A.A, {
         user: t,
         guildId: a,
         channelId: l,
@@ -49,7 +49,7 @@ function g(e) {
         displayProfile: r,
         guildId: a,
         onClose: o
-    }) : (0, i.jsx)(A.A, {
+    }) : (0, i.jsx)(_.A, {
         user: t,
         displayProfile: r,
         onClose: o
@@ -63,15 +63,15 @@ function I(e) {
         displayProfile: d,
         guildId: c,
         items: u,
-        initialSection: A = x.RP.USER_INFO,
-        onClose: _
+        initialSection: _ = x.RP.USER_INFO,
+        onClose: A
     } = e, {
         trackUserProfileAction: m
     } = (0, o.NJ)(), I = (0, r.bG)([l.A], () => l.A.hidePersonalInformation), [j, b] = s.useState(() => u.find(e => {
         let {
             section: n
         } = e;
-        return n === A
+        return n === _
     })?.section ?? u[0]?.section);
     s.useEffect(() => {
         null == u.find(e => e.section === j) && b(u[0].section)
@@ -122,7 +122,7 @@ function I(e) {
             currentUser: t,
             displayProfile: d,
             guildId: c,
-            onClose: _
+            onClose: A
         })]
     })
 }

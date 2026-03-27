@@ -13,19 +13,15 @@ var i = t(627968),
 function c(e) {
     let {
         isCurrentUser: l,
-        onClose: t,
-        className: c
-    } = e, u = (0, s.bG)([o.A], () => o.A.hasUnsavedChanges()), m = n.useCallback(() => {
-        l && u ? r.A.notifyUnsavedWidgets() : t()
-    }, [l, u, t]);
-    return (0, i.jsx)("div", {
-        className: c,
-        children: (0, i.jsx)(a.K0, {
-            "aria-label": d.intl.string(d.t.cpT0Cq),
-            icon: a.PGe,
-            onClick: m,
-            variant: "secondary",
-            size: "sm"
-        })
+        onClose: t
+    } = e, c = (0, s.bG)([o.A], () => o.A.hasUnsavedChanges()), u = n.useCallback(() => {
+        l && c ? r.A.notifyUnsavedWidgets() : t()
+    }, [l, c, t]);
+    return (0, i.jsx)(a.K0, {
+        "aria-label": d.intl.string(d.t.cpT0Cq),
+        icon: a.PGe,
+        onClick: u,
+        variant: "secondary",
+        size: "sm"
     })
 }

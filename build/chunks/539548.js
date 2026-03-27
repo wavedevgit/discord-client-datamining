@@ -12,8 +12,8 @@ var s = t(311907),
     d = t(975571),
     c = t(622543),
     u = t(146655),
-    A = t(489379),
-    _ = t(900179),
+    _ = t(489379),
+    A = t(900179),
     m = t(837924),
     x = t(558628),
     p = t(842241),
@@ -37,17 +37,17 @@ function v(e) {
     } = (0, u.A)(n.id), {
         voiceChannel: T,
         voiceActivity: L
-    } = (0, A.A)({
+    } = (0, _.A)({
         userId: n.id,
         guildId: v
     }), P = (0, s.bG)([a.A], () => a.A.isFetchingUserOutbox(n.id)), O = n.id === t.id, R = (0, s.bG)([o.A, l.A], () => {
         let e = O ? o.A.getStatus() : l.A.getStatus(n.id);
         return e === r.clD.OFFLINE || e === r.clD.INVISIBLE
-    }), S = (0, s.bG)([c.A], () => c.A.getUserProfile(n.id)?.private === !0), M = N.length > 0 || null != E, k = !S && null == E && null == L && null != T, G = !R && (M || k), B = y.length > 0;
-    return G || B || !P ? (0, i.jsxs)(r.IpV, {
+    }), S = (0, s.bG)([c.A], () => c.A.getUserProfile(n.id)?.private === !0), M = N.length > 0 || null != E, k = !S && null == E && null == L && null != T, B = !R && (M || k), G = y.length > 0;
+    return B || G || !P ? (0, i.jsxs)(r.IpV, {
         className: j.XG,
         fade: !0,
-        children: [G ? (0, i.jsx)(_.A, {
+        children: [B ? (0, i.jsx)(A.A, {
             "aria-label": I.intl.string(I.t.J6STd9),
             children: (0, i.jsxs)("ul", {
                 className: j.Ci,
@@ -74,7 +74,7 @@ function v(e) {
                     })
                 })]
             })
-        }) : null, B ? (0, i.jsx)(_.A, {
+        }) : null, G ? (0, i.jsx)(A.A, {
             heading: I.intl.string(I.t.M0zgnT),
             introText: O ? I.intl.format(I.t["4bk9Ak"], {
                 learnMoreHook: (e, n) => (0, i.jsx)(r.MzZ, {

@@ -12,8 +12,8 @@ var s = t(311907),
     d = t(967198),
     c = t(351906),
     u = t(183555),
-    A = t(346713),
-    _ = t(484509),
+    _ = t(346713),
+    A = t(484509),
     m = t(389996),
     x = t(46937),
     p = t(361311),
@@ -34,7 +34,7 @@ function C(e) {
         trackUserProfileAction: N
     } = (0, u.NJ)(), y = (0, s.bG)([d.A], () => d.A.getGuildId()), E = (0, a.q)({
         userId: n.id
-    }), T = (0, s.bG)([c.A], () => c.A.hidePersonalInformation), L = (0, s.bG)([o.default], () => o.default.locale), P = (0, _.A)(n.id), O = (0, A.A)(n.id);
+    }), T = (0, s.bG)([c.A], () => c.A.hidePersonalInformation), L = (0, s.bG)([o.default], () => o.default.locale), P = (0, A.A)(n.id), O = (0, _.A)(n.id);
     return (0, i.jsxs)(r.IpV, {
         fade: !0,
         className: v.XG,

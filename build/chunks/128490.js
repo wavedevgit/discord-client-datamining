@@ -12,8 +12,8 @@ var s = t(311907),
     d = t(987112),
     c = t(389996),
     u = t(743987),
-    A = t(900179),
-    _ = t(280645),
+    _ = t(900179),
+    A = t(280645),
     m = t(928223),
     x = t(518477),
     p = t(985018),
@@ -38,10 +38,10 @@ function h(e) {
             channel: j,
             guildId: h,
             onClick: g
-        }), t?.guildId != null && (0, i.jsx)(_.A, {
+        }), t?.guildId != null && (0, i.jsx)(A.A, {
             userId: n.id,
             guildId: t.guildId
-        }), (0, i.jsx)(A.A, {
+        }), (0, i.jsx)(_.A, {
             heading: p.intl.string(p.t["A//N4k"]),
             children: (0, i.jsx)(u.A, {
                 userId: n.id,

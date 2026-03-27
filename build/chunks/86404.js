@@ -11,8 +11,8 @@ var i = t(627968),
     d = t(913453),
     c = t(229187),
     u = t(657331),
-    A = t(503062),
-    _ = t(985018),
+    _ = t(503062),
+    A = t(985018),
     m = t(643146);
 
 function x(e) {
@@ -43,7 +43,7 @@ function x(e) {
                 className: m.on
             }), (0, i.jsx)("div", {
                 className: m.BI,
-                children: _.intl.string(_.t["/5p4gx"])
+                children: A.intl.string(A.t["/5p4gx"])
             })]
         }) : f.map(e => {
             let {
@@ -51,7 +51,7 @@ function x(e) {
                 user: s,
                 status: r
             } = e;
-            return (0, i.jsx)(A.A, {
+            return (0, i.jsx)(_.A, {
                 user: s,
                 status: r,
                 guildId: t,

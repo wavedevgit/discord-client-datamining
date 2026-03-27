@@ -12,8 +12,8 @@ var s = t(397927),
     d = t(562153),
     c = t(183555),
     u = t(950191),
-    A = t(722868),
-    _ = t(716804),
+    _ = t(722868),
+    A = t(716804),
     m = t(718019),
     x = t(31432),
     p = t(915614),
@@ -41,10 +41,10 @@ function S(e) {
         guildId: S,
         originGuildId: M,
         channelId: k,
-        messageId: G,
-        roleId: B,
-        sessionId: U,
-        initialTabSection: D,
+        messageId: B,
+        roleId: G,
+        sessionId: D,
+        initialTabSection: U,
         initialScrollTarget: w,
         transitionState: F,
         onClose: V,
@@ -54,12 +54,12 @@ function S(e) {
     } = (0, l.Ay)([...z, a.A.USER_PROFILE_MODAL]), K = (0, c.pb)({
         layout: "MODAL",
         userId: n.id,
-        sourceSessionId: U,
+        sourceSessionId: D,
         guildId: W,
         channelId: k,
-        messageId: G,
-        roleId: B
-    }), J = (0, E.A)(n), $ = (0, A.A)({
+        messageId: B,
+        roleId: G
+    }), J = (0, E.A)(n), $ = (0, _.A)({
         user: n,
         guildId: M,
         channelId: k,
@@ -71,7 +71,7 @@ function S(e) {
         children: (0, i.jsx)(c.of, {
             value: K,
             isLoaded: H?.isLoaded,
-            children: (0, i.jsx)(_.N, {
+            children: (0, i.jsx)(A.N, {
                 value: w,
                 children: (0, i.jsx)(s.EOs, {
                     "data-migration-pending": !0,
@@ -165,7 +165,7 @@ function S(e) {
                                     displayProfile: H,
                                     guildId: W,
                                     items: J,
-                                    initialSection: D ?? T.RP.BOT_INFO,
+                                    initialSection: U ?? T.RP.BOT_INFO,
                                     onClose: V
                                 })]
                             })]

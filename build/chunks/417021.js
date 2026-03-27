@@ -11,8 +11,8 @@ var i = t(627968),
     d = t(994500),
     c = t(562153),
     u = t(183555),
-    A = t(672385),
-    _ = t(950191),
+    _ = t(672385),
+    A = t(950191),
     m = t(249790),
     x = t(946356),
     p = t(254828),
@@ -47,7 +47,7 @@ function b(e) {
     }, {
         icon: r.yr3,
         description: I.intl.string(L ? I.t.QxrDY1 : I.t.W6fjkS)
-    }], S = (0, _.Ay)(n.id, T), M = c.Ay.getName(S?.guildId, b, n), k = I.intl.formatToPlainString(I.t.KRe1Fk, {
+    }], S = (0, A.Ay)(n.id, T), M = c.Ay.getName(S?.guildId, b, n), k = I.intl.formatToPlainString(I.t.KRe1Fk, {
         name: M
     });
     return (0, i.jsx)(l.f5, {
@@ -105,7 +105,7 @@ function b(e) {
                                 size: "md",
                                 isBlocked: L,
                                 onClick: () => {
-                                    y(), (0, A.Wn)({
+                                    y(), (0, _.Wn)({
                                         action: L ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                                         analyticsLocations: P,
                                         ...O
@@ -114,7 +114,7 @@ function b(e) {
                             }), (0, i.jsx)(p.A, {
                                 userId: n.id,
                                 onClick: () => {
-                                    y(), (0, A.Wn)({
+                                    y(), (0, _.Wn)({
                                         action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                                         analyticsLocations: P,
                                         ...O

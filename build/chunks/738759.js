@@ -1,6 +1,6 @@
 /** chunk id: 738759 params = (module,exports,require) **/
 t.d(n, {
-    A: () => A
+    A: () => _
 });
 var i = t(627968);
 t(64700);
@@ -13,23 +13,23 @@ var s = t(397927),
     c = t(985018),
     u = t(643146);
 
-function A(e) {
+function _(e) {
     let {
         user: n,
         onClose: t
     } = e, {
-        trackUserProfileAction: A
+        trackUserProfileAction: _
     } = (0, l.NJ)(), {
-        mutualGuilds: _,
+        mutualGuilds: A,
         isFetching: m
     } = (0, o.A)(n);
     return (0, i.jsx)(s.IpV, {
         className: u.DK,
         fade: !0,
-        children: null == _ && m ? (0, i.jsx)("div", {
+        children: null == A && m ? (0, i.jsx)("div", {
             className: u.Ie,
             children: (0, i.jsx)(s.y$y, {})
-        }) : (null != _ || m) && _?.length !== 0 ? _?.map(e => {
+        }) : (null != A || m) && A?.length !== 0 ? A?.map(e => {
             let {
                 guild: s,
                 nick: l
@@ -40,7 +40,7 @@ function A(e) {
                 nick: l,
                 onSelect: () => {
                     var e;
-                    A({
+                    _({
                         action: "PRESS_MUTUAL_GUILD"
                     }), e = s.id, (0, a.u)(e), t(), (0, r.jH)()
                 }
