@@ -15,8 +15,8 @@ var n = t(627968),
     g = t(657331),
     x = t(287809),
     p = t(954571),
-    f = t(975571),
-    A = t(371794),
+    A = t(975571),
+    f = t(371794),
     h = t(439303),
     I = t(44724),
     m = t(995393),
@@ -58,11 +58,11 @@ function R(e) {
             slayer_storefront_session_id: v?.sessionId,
             cta_type: m.ST.LEARN_MORE,
             location_stack: C
-        }), window.open(f.A.getArticleURL(E.MVz.SOCIAL_LAYER_STOREFRONT))
+        }), window.open(A.A.getArticleURL(E.MVz.SOCIAL_LAYER_STOREFRONT))
     }, [v, C]);
     if (null == t) return null;
-    let T = null != t.logoAssetId ? (0, A.YE)(t.applicationId, t.logoAssetId, 75) : null,
-        O = null != t.lightThemeLogoAssetId ? (0, A.YE)(t.applicationId, t.lightThemeLogoAssetId, 75) : null,
+    let T = null != t.logoAssetId ? (0, f.YE)(t.applicationId, t.logoAssetId, 75) : null,
+        O = null != t.lightThemeLogoAssetId ? (0, f.YE)(t.applicationId, t.lightThemeLogoAssetId, 75) : null,
         y = null;
     return y = R ? T ?? O : O ?? T, (0, n.jsxs)(_.A, {
         disableDoubleClick: !0,

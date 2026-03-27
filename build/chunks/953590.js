@@ -6,9 +6,9 @@ n.d(t, {
 var a = n(627968),
     l = n(64700),
     s = n(310784),
-    r = n.n(s),
-    i = n(503698),
-    o = n.n(i),
+    i = n.n(s),
+    r = n(503698),
+    o = n.n(r),
     d = n(615300),
     c = n(397927),
     u = n(456412),
@@ -37,7 +37,7 @@ function N(e) {
     let t = "videoThumbnailSrc" in e ? e.videoThumbnailSrc : e.src,
         [n, a] = (0, _.rh)(t, "#000000"),
         s = l.useMemo(() => {
-            let e = r()(n).darken(1);
+            let e = i()(n).darken(1);
             return `radial-gradient(circle, ${e.alpha(.2).hex()} 0%, transparent 100%)`
         }, [n]);
     return null != t && "#000000" !== n ? s : void 0
@@ -49,8 +49,8 @@ function j(e) {
         onPlay: n,
         onEnded: l,
         onClick: s,
-        playable: r,
-        isMuted: i
+        playable: i,
+        isMuted: r
     } = e, o = N(t), d = (0, a.jsx)(m.rr, {
         href: null,
         thumbnail: {
@@ -70,18 +70,18 @@ function j(e) {
         maxWidth: E,
         onPlay: n,
         onEnded: l,
-        playable: r,
+        playable: i,
         className: T.Ki,
         volume: 1,
-        autoMute: i,
-        autoPlay: r,
+        autoMute: r,
+        autoPlay: i,
         renderVideoComponent: I,
         renderImageComponent: v,
         renderLinkComponent: g.bU
-    }, i ? "player-muted" : "player-unmuted"), u = {
+    }, r ? "player-muted" : "player-unmuted"), u = {
         background: o
     };
-    return r ? (0, a.jsx)("div", {
+    return i ? (0, a.jsx)("div", {
         className: T.AU,
         style: u,
         children: d
@@ -99,23 +99,23 @@ function S(e) {
         setHasInteracted: n,
         onSetItem: l,
         isCurrentItem: s,
-        itemIndex: r
-    } = e, i = {
+        itemIndex: i
+    } = e, r = {
         background: N(t)
     };
     return s ? (0, a.jsx)(c.DUT, {
         onClick: () => n(!0),
         className: T.AU,
-        style: i,
+        style: r,
         children: (0, a.jsx)("img", {
             src: t.src,
             alt: "",
             className: T.NP
         })
     }) : (0, a.jsx)(c.DUT, {
-        onClick: () => l(r),
+        onClick: () => l(i),
         className: T.AU,
-        style: i,
+        style: r,
         children: (0, a.jsx)("img", {
             alt: "",
             className: T.tv,
@@ -129,8 +129,8 @@ let k = (0, u.A)(e => {
         items: t,
         className: n,
         paused: s = !1,
-        autoplayInterval: r = 8e3,
-        onItemChange: i,
+        autoplayInterval: i = 8e3,
+        onItemChange: r,
         isMuted: c = !0,
         onTrackClick: u
     } = e, _ = (0, l.useRef)(0), [m, f] = (0, l.useState)(0), [g, I] = (0, l.useState)(0), v = (0, l.useRef)(0), N = (0, l.useRef)(t.length), [k, y] = (0, l.useState)(!0), [R, U] = (0, l.useState)(!1), [O, w] = (0, l.useState)(!1), [L, P] = (0, l.useState)(!1), [D, B] = (0, l.useState)(!1), M = (0, l.useCallback)((e, n) => {
@@ -246,15 +246,15 @@ let k = (0, u.A)(e => {
     }), [W, G]), (0, l.useEffect)(() => {
         N.current = t.length
     }, [t]), (0, l.useEffect)(() => {
-        i?.(t[g], g)
-    }, [g, t, i]);
+        r?.(t[g], g)
+    }, [g, t, r]);
     let Q = (0, l.useCallback)(e => {
         u?.(x.Jq.CAROUSEL_ITEM), F(e)
     }, [F, u]);
     return (0, a.jsxs)(h.A, {
         pauseOnHover: !0,
         onInterval: H,
-        interval: r,
+        interval: i,
         className: n,
         disable: R || O || s,
         children: [J(), (0, a.jsx)("div", {

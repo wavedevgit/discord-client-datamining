@@ -15,8 +15,8 @@ var n = t(627968),
     g = t(793885),
     x = t(896447),
     p = t(65356),
-    f = t(652215),
-    A = t(515810);
+    A = t(652215),
+    f = t(515810);
 
 function h(e) {
     let {
@@ -50,7 +50,7 @@ function h(e) {
             isUserGuildMember: s,
             pageHasLeaderboard: a
         } = m;
-        o.default.track(f.HAw.SLAYER_STOREFRONT_PAGE_VIEWED, {
+        o.default.track(A.HAw.SLAYER_STOREFRONT_PAGE_VIEWED, {
             slayer_storefront_session_id: e,
             guild_id: l,
             page_index: t,
@@ -66,7 +66,7 @@ function h(e) {
             location: "social_layer_storefront_page"
         }), (0, n.jsxs)("section", {
             ref: h,
-            className: A.k,
+            className: f.k,
             children: [(0, n.jsx)(g.m, {
                 applicationId: l,
                 backgroundImageAssetId: t.leaderboard?.backgroundImageAssetId

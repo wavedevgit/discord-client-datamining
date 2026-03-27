@@ -15,8 +15,8 @@ var n = t(627968),
     g = t(976860),
     x = t(594832),
     p = t(961350),
-    f = t(696451),
-    A = t(71393),
+    A = t(696451),
+    f = t(71393),
     h = t(67480),
     I = t(449054),
     m = t(733391),
@@ -83,7 +83,7 @@ function L(e) {
     }), b = (0, o.bG)([p.default], () => p.default.getSessionId(), []), R = (0, o.bG)([h.A], () => h.A.get(g), [g]);
     (0, x.pE)();
     let N = (0, c.A)((0, r.A)()),
-        L = (0, o.bG)([f.Ay, p.default], () => f.Ay.isMember(t, p.default.getId())),
+        L = (0, o.bG)([A.Ay, p.default], () => A.Ay.isMember(t, p.default.getId())),
         M = s.useMemo(() => {
             if (null == a) return 0;
             let e = parseInt(a, 10);
@@ -102,7 +102,7 @@ function L(e) {
     return (s.useEffect(() => {
         null != t && (0, m.SP)(t, M, null != g ? g : null)
     }, [t, M, g]), s.useEffect(() => {
-        null == t || null == b || null == A.A.getGuild(t) && (0, I.Z2)(t, {}, {
+        null == t || null == b || null == f.A.getGuild(t) && (0, I.Z2)(t, {}, {
             shouldNavigate: !1
         })
     }, [t, b]), null == t || k?.storefront == null) ? (0, n.jsx)("div", {

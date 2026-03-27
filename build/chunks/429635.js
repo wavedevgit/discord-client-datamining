@@ -1,19 +1,19 @@
 /** chunk id: 429635 params = (module,exports,require) **/
 n.d(t, {
-    A: () => i
+    A: () => r
 });
 var a = n(64700),
     l = n(311907),
     s = n(733391),
-    r = n(832163);
+    i = n(832163);
 
-function i(e) {
+function r(e) {
     let {
         guildId: t
-    } = e, n = (0, l.bG)([r.A], () => null != t ? r.A.getStorefrontData(t) : void 0, [t]);
+    } = e, n = (0, l.bG)([i.A], () => null != t ? i.A.getStorefrontData(t) : void 0, [t]);
     return a.useEffect(() => {
-        null != t && n?.state !== "fetched" && n?.state !== "loading" && (0, s.Rw)(t, {
+        null != t && (0, s.Rw)(t, {
             eager: !1
         })
-    }, [t, n]), n
+    }, [t]), n
 }

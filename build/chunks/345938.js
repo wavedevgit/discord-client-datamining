@@ -1,15 +1,15 @@
 /** chunk id: 345938 params = (module,exports,require) **/
 n.d(t, {
-    d: () => r
+    d: () => i
 });
 var a = n(627968),
     l = n(397927),
     s = n(294454);
-let r = e => {
+let i = e => {
     let {
         sku: t,
-        guildId: r,
-        source: i,
+        guildId: i,
+        source: r,
         analyticsLocations: o,
         analyticsContext: d
     } = e;
@@ -20,8 +20,8 @@ let r = e => {
         return n => (0, a.jsx)(e, {
             ...n,
             sku: t,
-            guildId: r,
-            source: i,
+            guildId: i,
+            source: r,
             analyticsLocations: o,
             analyticsContext: d
         })

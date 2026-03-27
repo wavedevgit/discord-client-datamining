@@ -5,8 +5,8 @@ n.d(t, {
 var a = n(627968),
     l = n(311907),
     s = n(139146),
-    r = n(961350),
-    i = n(471505);
+    i = n(961350),
+    r = n(471505);
 
 function o(e) {
     let {
@@ -15,12 +15,12 @@ function o(e) {
         isCardHovered: o = !0,
         trackButtonClick: d,
         ...c
-    } = e, u = (0, l.bG)([r.default], () => r.default.getId()), {
+    } = e, u = (0, l.bG)([i.default], () => i.default.getId()), {
         isWishlisted: _,
         isBusy: m,
         isFirstTimeWishlister: h,
         handleToggle: p
-    } = (0, i.G)({
+    } = (0, r.G)({
         userId: u,
         sku: t,
         location: n,
