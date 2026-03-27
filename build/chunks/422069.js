@@ -1,18 +1,21 @@
 /** chunk id: 422069 params = (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => h
 });
 var a = n(311907),
-    l = n(73153);
-let i = {},
+    i = n(73153);
+let l = {},
     r = {},
     s = {},
     c = {},
-    o = {};
-class d extends a.Ay.Store {
+    o = {},
+    d = {},
+    u = {},
+    m = {};
+class x extends a.Ay.Store {
     static displayName = "GameProfileStore";
     getSimilarGames(e) {
-        return i[e]
+        return l[e]
     }
     getSimilarGamesError(e) {
         return r[e]
@@ -26,14 +29,23 @@ class d extends a.Ay.Store {
     isShopCollectionFetching(e) {
         return o[e] ?? !1
     }
+    getAnnouncements(e) {
+        return d[e]
+    }
+    hasAnnouncementsBeenFetched(e) {
+        return u[e] ?? !1
+    }
+    isAnnouncementsFetching(e) {
+        return m[e] ?? !1
+    }
 }
-let u = new d(l.h, {
+let h = new x(i.h, {
     GAME_PROFILE_GET_SIMILAR_GAMES_SUCCESS: function(e) {
         let {
             applicationId: t,
             games: n
         } = e;
-        i[t] = n
+        l[t] = n
     },
     GAME_PROFILE_GET_SIMILAR_GAMES_ERROR: function(e) {
         let {
@@ -60,5 +72,30 @@ let u = new d(l.h, {
             collectionId: t
         } = e;
         c[t] = !0, o[t] = !1
+    },
+    GAME_PROFILE_GET_ANNOUNCEMENTS_START: function(e) {
+        let {
+            gameId: t
+        } = e;
+        m[t] = !0
+    },
+    GAME_PROFILE_GET_ANNOUNCEMENTS_SUCCESS: function(e) {
+        let {
+            gameId: t,
+            messages: n,
+            channelId: a,
+            guildId: i
+        } = e;
+        d[t] = {
+            messages: n,
+            channelId: a,
+            guildId: i
+        }, u[t] = !0, m[t] = !1
+    },
+    GAME_PROFILE_GET_ANNOUNCEMENTS_ERROR: function(e) {
+        let {
+            gameId: t
+        } = e;
+        u[t] = !0, m[t] = !1
     }
 })

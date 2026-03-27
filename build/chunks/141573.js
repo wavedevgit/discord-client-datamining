@@ -1,2 +1,10 @@
 /** chunk id: 141573 params = (module,exports,require) **/
-p.exports = JSON.parse('{"klSpfs":["Редагувати налаштування"],"NzUuLD":["+",[1,"count"]," ",[6,"count",{"one":["повідомлення"],"few":["повідомлення"],"other":["повідомлень"]},0,"cardinal"]],"O+racd":["Сповіщень немає."],"5H2Jd6":["Показати всі"],"Ko8NGn":["Показати закладки"],"dcpdhC":["Виберіть повідомлення, щоб перейти до нього."],"VAK+h9":["Ласкаво просимо до центру сповіщень!"]}')
+"use strict";
+e.exports = {
+    wx: "header__1d5fc",
+    Sy: "horizontalAuthBox__1d5fc",
+    Qt: "needAccount__1d5fc",
+    Z8: "smallRegisterLink__1d5fc",
+    Eh: "mainLoginContainer__1d5fc",
+    AX: "goBackButton__1d5fc"
+}

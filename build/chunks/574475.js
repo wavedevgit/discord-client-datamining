@@ -10,7 +10,7 @@ var a = i(627968),
     c = i(954571),
     _ = i(652215),
     o = i(985018),
-    C = i(740702);
+    C = i(544949);
 let A = [{
     value: "APPLICATION_SUBSCRIPTION_CANCELLATION_SURVEY_ANSWER_CHOICE_NOT_USING_ENOUGH",
     nameGetter: () => o.intl.string(o.t["+RZgNV"])

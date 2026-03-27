@@ -1,10 +1,10 @@
 /** chunk id: 945276 params = (module,exports,require) **/
-n.d(t, {
+n.d(e, {
     A: () => l
 });
-var i = n(311907),
-    s = n(287809);
+var r = n(311907),
+    i = n(287809);
 
 function l() {
-    return (0, i.bG)([s.default], () => s.default.getCurrentUser()?.nsfwAllowed)
+    return (0, r.bG)([i.default], () => i.default.getCurrentUser()?.nsfwAllowed)
 }

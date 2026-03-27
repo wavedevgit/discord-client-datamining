@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(397927),
-    a = n(956793),
+    a = n(397927),
+    r = n(956793),
     o = n(313961),
     c = n(164617),
     d = n(47167),
@@ -20,14 +20,14 @@ var i = n(627968),
     g = n(110618),
     f = n(566388),
     x = n(985018),
-    E = n(616124);
+    E = n(508545);
 let C = function(e) {
     let {
         participants: t,
         channel: n,
         hasConnectPermission: C
     } = e, I = (0, h.H)(n.guild_id), N = s.useCallback(() => {
-        I ? (0, u.Ze)(n.guild_id, () => a.default.selectVoiceChannel(n.id)) : a.default.selectVoiceChannel(n.id)
+        I ? (0, u.Ze)(n.guild_id, () => r.default.selectVoiceChannel(n.id)) : r.default.selectVoiceChannel(n.id)
     }, [n.id, n.guild_id, I]), b = t.filter(e => e.type === p.wY.VOICE), S = (0, d.Ay)(n), T = 4 === b.length ? 2 : 3, v = (0, l.yK)([o.A], () => b.map(e => o.A.getParticipant(n.id, e.id)).filter(_.Vq), [n.id, b]);
     return (0, i.jsxs)("div", {
         className: E.kL,
@@ -45,13 +45,13 @@ let C = function(e) {
                 popoutType: c.N.NO_POPOUT,
                 width: 48
             }, e.id))
-        }), (0, i.jsx)(r.Heading, {
+        }), (0, i.jsx)(a.Heading, {
             className: E.HA,
             variant: "heading-xxl/normal",
             children: S
         }), (0, i.jsx)("div", {
             className: E.Nu,
-            children: (0, i.jsx)(r.Text, {
+            children: (0, i.jsx)(a.Text, {
                 tag: "div",
                 color: "text-default",
                 variant: "heading-lg/normal",
@@ -61,7 +61,7 @@ let C = function(e) {
             className: E.UD,
             children: [(0, i.jsx)("div", {
                 className: E.PD,
-                children: (0, i.jsx)(r.Button, {
+                children: (0, i.jsx)(a.Button, {
                     variant: "overlay-primary",
                     text: C ? x.intl.string(x.t["7vb2cc"]) : x.intl.string(x.t.TVBCKZ),
                     onClick: N,

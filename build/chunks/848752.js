@@ -1,22 +1,22 @@
 /** chunk id: 848752 params = (module,exports,require) **/
-a.d(t, {
-    Ay: () => p,
-    Oj: () => h,
-    Q8: () => m
+n.d(t, {
+    Ay: () => h,
+    Oj: () => m,
+    Q8: () => _
 });
-var n = a(627968),
-    i = a(64700),
-    l = a(503698),
-    s = a.n(l),
-    r = a(397927),
-    o = a(532197),
-    c = a(594439);
-let d = {
-    CENTER: c.Hu,
-    LEFT: c.Vl
+var a = n(627968),
+    l = n(64700),
+    s = n(503698),
+    r = n.n(s),
+    i = n(397927),
+    o = n(532197),
+    d = n(65668);
+let c = {
+    CENTER: d.Hu,
+    LEFT: d.Vl
 };
-class u extends i.PureComponent {
-    static Align = d;
+class u extends l.PureComponent {
+    static Align = c;
     static defaultProps = {
         scrollToPadding: {
             top: 0,
@@ -24,7 +24,7 @@ class u extends i.PureComponent {
             bottom: 0,
             right: 0
         },
-        align: d.CENTER
+        align: c.CENTER
     };
     _scrollerRef = null;
     _paginationItemRefs = [];
@@ -40,9 +40,9 @@ class u extends i.PureComponent {
     handleSelectedIndexChange = e => {
         let t = this._scrollerRef;
         if (null == t) return;
-        let a = this._paginationItemRefs[e];
-        null != a && t.scrollIntoViewNode({
-            node: a,
+        let n = this._paginationItemRefs[e];
+        null != n && t.scrollIntoViewNode({
+            node: n,
             animate: !0,
             padding: this.props.scrollToPadding
         })
@@ -57,25 +57,25 @@ class u extends i.PureComponent {
         let {
             renderItem: e,
             items: t,
-            vertical: a,
-            paginationContainerClass: l,
+            vertical: n,
+            paginationContainerClass: s,
             align: o
-        } = this.props, d = a ? c.XA : c.BU;
-        return (0, n.jsx)(r.GtU, {
-            orientation: a ? "vertical" : "horizontal",
-            className: s()(d, l, o),
+        } = this.props, c = n ? d.XA : d.BU;
+        return (0, a.jsx)(i.GtU, {
+            orientation: n ? "vertical" : "horizontal",
+            className: r()(c, s, o),
             ref: this.handleSetScrollerRef,
-            children: t.map((t, a) => i.cloneElement(e(t, a), {
-                onClick: () => this.handlePageClick(a),
-                key: a,
+            children: t.map((t, n) => l.cloneElement(e(t, n), {
+                onClick: () => this.handlePageClick(n),
+                key: n,
                 ref: e => {
-                    this._paginationItemRefs[a] = e
+                    this._paginationItemRefs[n] = e
                 }
             }))
         })
     }
 }
-class m extends i.PureComponent {
+class _ extends l.PureComponent {
     handlePrevClick = e => {
         e.stopPropagation(), e.preventDefault();
         let {
@@ -87,17 +87,17 @@ class m extends i.PureComponent {
         let {
             className: e
         } = this.props;
-        return (0, n.jsx)(r.DUT, {
-            className: s()(c.t1, e),
+        return (0, a.jsx)(i.DUT, {
+            className: r()(d.t1, e),
             onClick: this.handlePrevClick,
-            children: (0, n.jsx)(o.A, {
-                className: c.UE,
+            children: (0, a.jsx)(o.A, {
+                className: d.UE,
                 direction: o.A.Directions.LEFT
             })
         })
     }
 }
-class h extends i.PureComponent {
+class m extends l.PureComponent {
     handleNextClick = e => {
         e.stopPropagation(), e.preventDefault();
         let {
@@ -109,14 +109,14 @@ class h extends i.PureComponent {
         let {
             className: e
         } = this.props;
-        return (0, n.jsx)(r.DUT, {
-            className: s()(c.XS, e),
+        return (0, a.jsx)(i.DUT, {
+            className: r()(d.XS, e),
             onClick: this.handleNextClick,
-            children: (0, n.jsx)(o.A, {
-                className: c.UE,
+            children: (0, a.jsx)(o.A, {
+                className: d.UE,
                 direction: o.A.Directions.RIGHT
             })
         })
     }
 }
-let p = u
+let h = u

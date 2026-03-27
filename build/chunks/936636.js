@@ -5,14 +5,14 @@ n.d(t, {
 });
 var a = n(627968);
 n(64700);
-var l = n(503698),
-    i = n.n(l),
+var i = n(503698),
+    l = n.n(i),
     r = n(808380),
     s = n(934551),
     c = n(990078),
     o = n(504186),
     d = n(985018),
-    u = n(282063);
+    u = n(325952);
 
 function m(e) {
     switch (e) {
@@ -65,7 +65,7 @@ function h(e) {
         platforms: t
     } = e;
     return (0, a.jsx)("div", {
-        className: i()(u.nM, u.Lc),
+        className: l()(u.nM, u.Lc),
         style: {
             alignItems: "center"
         },
@@ -94,11 +94,11 @@ function g(e) {
     let {
         detectedGame: t,
         className: n
-    } = e, l = (0, o.A)(t);
-    return 0 === l.length ? null : (0, a.jsx)("div", {
-        className: i()(u.fi, u.iH, n),
-        children: l.length > 0 && (0, a.jsx)(h, {
-            platforms: l
+    } = e, i = (0, o.A)(t);
+    return 0 === i.length ? null : (0, a.jsx)("div", {
+        className: l()(u.fi, u.iH, n),
+        children: i.length > 0 && (0, a.jsx)(h, {
+            platforms: i
         })
     })
 }

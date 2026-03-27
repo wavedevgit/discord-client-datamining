@@ -3,24 +3,24 @@ n.d(t, {
     A: () => x
 });
 var a = n(627968),
-    l = n(64700),
-    i = n(503698),
-    r = n.n(i),
+    i = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(158954),
     c = n(397927),
     o = n(760459),
     d = n(985018),
-    u = n(282063),
-    m = n(495379);
+    u = n(325952),
+    m = n(406184);
 
 function x(e) {
     let {
         entries: t,
         viewId: n,
-        officialGuildId: i,
+        officialGuildId: l,
         onClose: x,
         source: h
-    } = e, f = t.length > 7, [g, p] = l.useState(!1), _ = l.useMemo(() => t.slice(0, f && !g ? 6 : void 0), [t, f, g]);
+    } = e, f = t.length > 7, [g, _] = i.useState(!1), p = i.useMemo(() => t.slice(0, f && !g ? 6 : void 0), [t, f, g]);
     return (0, a.jsxs)("div", {
         children: [(0, a.jsx)(s.DZT, {
             className: u.bV,
@@ -39,17 +39,17 @@ function x(e) {
                 }),
                 children: (0, a.jsx)("div", {
                     className: u.fi,
-                    children: _.map(e => (0, a.jsx)(o.A, {
+                    children: p.map(e => (0, a.jsx)(o.A, {
                         entry: e,
                         viewId: n,
                         onClose: x,
-                        officialGuildId: i,
+                        officialGuildId: l,
                         source: h
                     }, e.id))
                 })
             }), f && !g && (0, a.jsxs)(c.DUT, {
                 className: m.ND,
-                onClick: () => p(!0),
+                onClick: () => _(!0),
                 children: [(0, a.jsx)(s.EYj, {
                     variant: "text-xs/semibold",
                     color: "interactive-text-default",

@@ -8,8 +8,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(990078),
+    a = n.n(l),
+    r = n(990078),
     o = n(397927),
     c = n(367513),
     d = n(442433),
@@ -35,7 +35,7 @@ n(281405);
 var j = n(544105),
     R = n(502075),
     O = n(985018),
-    L = n(437942);
+    L = n(988445);
 
 function M(e) {
     let {
@@ -59,7 +59,7 @@ function D(e) {
         count: t
     });
     return (0, i.jsxs)("div", {
-        className: r()(L.yJ, {
+        className: a()(L.yJ, {
             [L.Nr]: n
         }),
         children: [(0, i.jsx)("div", {
@@ -108,8 +108,8 @@ let G = (0, A.J)(function(e) {
         tabIndex: ei,
         isSelf: es,
         application: el,
-        hangStatusActivity: er,
-        showHangStatus: ea
+        hangStatusActivity: ea,
+        showHangStatus: er
     } = e, eo = s.useRef(null), [ec, ed] = s.useState(!1), eu = s.useRef(null), [eh, eA] = s.useState(!1), [em, e_] = s.useState(!1), [ep, eg] = s.useState(!1), ef = eh || ep || em, ex = () => {
         ed(!ec)
     }, eE = (e, t) => {
@@ -135,7 +135,7 @@ let G = (0, A.J)(function(e) {
             (0, d.L3)(e, async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("97262"), n.e("42128"), n.e("84841"), n.e("50970")]).then(n.bind(n, 107632));
+                } = await Promise.all([n.e("97262"), n.e("42128"), n.e("84841"), n.e("36382")]).then(n.bind(n, 107632));
                 return t => (0, i.jsx)(e, {
                     ...t,
                     user: l,
@@ -189,7 +189,7 @@ let G = (0, A.J)(function(e) {
                         otherClientSessionType: ee,
                         voicePlatform: et,
                         embeddedApplication: w,
-                        avatarContainerClass: r()({
+                        avatarContainerClass: a()({
                             [L.dj]: !0
                         }),
                         disabled: en && !n,
@@ -201,9 +201,9 @@ let G = (0, A.J)(function(e) {
                         isSelf: es,
                         application: el,
                         channelId: A.id,
-                        hangStatusActivity: er,
-                        showHangStatus: ea
-                    }, en ? (0, i.jsx)(a.m, {
+                        hangStatusActivity: ea,
+                        showHangStatus: er
+                    }, en ? (0, i.jsx)(r.m, {
                         text: (0, g.A)(ee) ?? O.intl.string(O.t.IyYqqY),
                         children: (0, i.jsx)(I.Ay, {
                             ref: eo,
@@ -217,11 +217,11 @@ let G = (0, A.J)(function(e) {
                             user: l,
                             onAction: eC,
                             onWatchStream: z ? eI : void 0,
-                            hangStatusActivity: er,
+                            hangStatusActivity: ea,
                             setIsHangStatusInputFocused: eA,
                             setIsHangStatusEmojiPickerOpen: eg
                         }),
-                        shouldShow: (Z || ea && ef && es) && !ec,
+                        shouldShow: (Z || er && ef && es) && !ec,
                         onRequestClose: eE,
                         spacing: 17,
                         children: () => (0, i.jsx)(I.Ay, {

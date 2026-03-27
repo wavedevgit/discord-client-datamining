@@ -26,7 +26,7 @@ var i = n(627968),
     v = n(183802),
     T = n(652215),
     y = n(985018),
-    S = n(23542);
+    S = n(336135);
 
 function N(e) {
     let {
@@ -47,14 +47,13 @@ function N(e) {
         null == t || null == n || A.A.isFetchingForSKU(n) || (0, f.qf)(t, n)
     }, [t, n]);
     let G = a.useCallback(e => {
-            e.stopPropagation(), L?.applicationId != null && null != t && (0, I.R)({
+            e.stopPropagation(), L?.applicationId != null && (0, I.R)({
                 skuId: n,
                 applicationId: L.applicationId,
-                guildId: t,
                 isStorefront: !1,
                 analyticsLocations: D
             })
-        }, [n, L, t, D]),
+        }, [n, L, D]),
         F = a.useCallback(() => {
             null != L && O && (0, E.a)(L, {
                 isGift: !1

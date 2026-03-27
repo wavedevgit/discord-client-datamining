@@ -7,8 +7,8 @@ n.d(t, {
 var i, s = n(627968);
 n(64700);
 var l = n(503698),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(139033),
     c = n(397927),
     d = n(830215),
@@ -20,8 +20,8 @@ var l = n(503698),
     p = n(652215),
     g = n(53516),
     f = n(985018),
-    x = n(609657),
-    E = n(442078),
+    x = n(14688),
+    E = n(467935),
     C = ((i = {})[i.VOICE = 0] = "VOICE", i);
 let I = e => {
     let {
@@ -34,13 +34,13 @@ let I = e => {
         notPhoneVerified: b,
         newAccount: S,
         newMember: T
-    } = (0, a.bG)([m.A], () => m.A.getCheck(i), [i]), v = 0 === t ? f.intl.string(f.t["6zY8BI"]) : null, y = null, j = null;
+    } = (0, r.bG)([m.A], () => m.A.getCheck(i), [i]), v = 0 === t ? f.intl.string(f.t["6zY8BI"]) : null, y = null, j = null;
     return (0 === t && (I ? (y = f.intl.string(f.t.IRxUlG), j = f.intl.string(f.t.fiNVin)) : b ? (y = f.intl.string(f.t.vW8iUF), j = f.intl.string(f.t["50gfOv"])) : N ? (y = f.intl.string(f.t.vdSOpz), j = f.intl.string(f.t.lm1UKt)) : T ? (y = f.intl.formatToPlainString(f.t.v1ktYb, {
         min: p.$8o.MEMBER_AGE
     }), j = f.intl.string(f.t.BddRzS)) : S && (y = f.intl.formatToPlainString(f.t.sncw41, {
         min: p.$8o.ACCOUNT_AGE
     }), j = f.intl.string(f.t.BddRzS))), null == v || null == y) ? null : (0, s.jsxs)(c.lGe, {
-        className: r()(E.popover, x.kL),
+        className: a()(E.popover, x.kL),
         "aria-labelledby": C,
         children: [(0, s.jsx)("img", {
             alt: "",
@@ -68,7 +68,7 @@ let I = e => {
                             I ? u.R() : b ? (0, c.mMO)(async () => {
                                 let {
                                     default: e
-                                } = await Promise.all([n.e("84704"), n.e("5966")]).then(n.bind(n, 615715));
+                                } = await Promise.all([n.e("84704"), n.e("75904")]).then(n.bind(n, 615715));
                                 return t => (0, s.jsx)(e, {
                                     reason: A.d.GUILD_PHONE_REQUIRED,
                                     ...t

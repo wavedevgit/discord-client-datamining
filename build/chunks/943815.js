@@ -1,15 +1,15 @@
 /** chunk id: 943815 params = (module,exports,require) **/
-t.d(a, {
-    A: () => o
+n.d(t, {
+    A: () => s
 });
-var n = t(767283);
-let r = {
-        LATIN12: n.Xh,
-        LATIN24: n.ID,
-        ASIAN: n.KC
+var a = n(812782);
+let i = {
+        LATIN12: a.Xh,
+        LATIN24: a.ID,
+        ASIAN: a.KC
     },
-    s = /(AM|PM)$/;
+    r = /(AM|PM)$/;
 
-function o(e) {
-    return null != e.match(s) ? r.LATIN24 : e.length <= 5 ? r.LATIN12 : r.ASIAN
+function s(e) {
+    return null != e.match(r) ? i.LATIN24 : e.length <= 5 ? i.LATIN12 : i.ASIAN
 }

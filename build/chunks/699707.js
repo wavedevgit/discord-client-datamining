@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(4208),
+    a = n.n(l),
+    r = n(880013),
     o = n(397927),
     c = n(475743),
     d = n(216418),
@@ -22,8 +22,8 @@ var i = n(627968),
     x = n(163432),
     E = n(652215),
     C = n(806931),
-    I = n(256960),
-    N = n(363862);
+    I = n(610893),
+    N = n(332741);
 let b = 16 / 9,
     S = 8 + x.Vp;
 
@@ -64,9 +64,9 @@ function T(e) {
         es = 0;
     (q || $) && (es += 72), q && !$ && (et ? es += 48 : es += 8), $ && (es += .5 * S + 8);
     let el = s.useMemo(() => q && X ? G / (U - 2 * es) : J && null != B && B.width > 0 && B.height > 0 ? B.width / B.height : b, [J, B, q, G, U, es, X]),
-        er = U - 2 * es,
-        ea = q && X ? G : er * el,
-        eo = Math.floor(Math.min(G, ea) / el),
+        ea = U - 2 * es,
+        er = q && X ? G : ea * el,
+        eo = Math.floor(Math.min(G, er) / el),
         ec = U > G / el + 72 + S + 8;
     t = $ || q ? $ ? -16 : -8 : 40 + Math.max(0, 72 - (U - eo) / 2);
     let ed = Math.max(0, 72 - (U - eo) / 2);
@@ -84,7 +84,7 @@ function T(e) {
             value: +!!$,
             delay: ec || !$ ? 0 : 100,
             config: {
-                ...a.config.stiff,
+                ...r.config.stiff,
                 clamp: !0
             },
             onStart: () => z(!0),
@@ -96,28 +96,28 @@ function T(e) {
         em = (0, o.zhh)({
             value: +!!$,
             config: {
-                ...a.config.stiff,
+                ...r.config.stiff,
                 clamp: !0
             }
         }, eh),
         e_ = (0, o.zhh)({
-            value: ea,
+            value: er,
             config: {
-                ...a.config.stiff,
+                ...r.config.stiff,
                 clamp: !0
             }
         }, Z === $ && em.value.idle && !en || ei || eu ? "animate-never" : "animate-always"),
         ep = (0, o.zhh)({
             value: t,
             config: {
-                ...a.config.stiff,
+                ...r.config.stiff,
                 clamp: !0
             }
         }, eh),
         eg = (0, o.pnh)(L, {
             keys: e => e?.id,
             config: {
-                ...a.config.stiff,
+                ...r.config.stiff,
                 clamp: !0
             },
             initial: null,
@@ -140,18 +140,18 @@ function T(e) {
             participantTileWidth: eC
         } = (0, x.i4)(G, y);
     return (0, i.jsxs)("div", {
-        className: r()(N.zr, I.tR, D),
+        className: a()(N.zr, I.tR, D),
         children: [(0, i.jsxs)("div", {
             className: N.QX,
             style: {
                 opacity: J && K ? 0 : 1
             },
-            children: [(0, i.jsxs)(a.animated.div, {
+            children: [(0, i.jsxs)(r.animated.div, {
                 className: N.pc,
                 style: {
                     top: em.value.to(e => -e * S / 2)
                 },
-                children: [(0, i.jsx)(a.animated.div, {
+                children: [(0, i.jsx)(r.animated.div, {
                     style: {
                         width: e_.value
                     },
@@ -163,14 +163,14 @@ function T(e) {
                         },
                         children: eg((e, t, s) => {
                             let {
-                                key: r
+                                key: a
                             } = s;
-                            return null != t ? (0, i.jsx)(a.animated.div, {
+                            return null != t ? (0, i.jsx)(r.animated.div, {
                                 className: I.qX,
                                 style: e,
                                 children: (0, i.jsx)(p.Ay, {
                                     focused: !0,
-                                    noBorder: ea >= G || er >= U,
+                                    noBorder: er >= G || ea >= U,
                                     channel: O,
                                     className: I.JS,
                                     videoComponent: k,
@@ -184,11 +184,11 @@ function T(e) {
                                     popoutType: j,
                                     controlsBottom: ed
                                 })
-                            }, r) : null
+                            }, a) : null
                         })
                     })
-                }), et ? (0, i.jsx)(a.animated.div, {
-                    className: r()(N.$l, {
+                }), et ? (0, i.jsx)(r.animated.div, {
+                    className: a()(N.$l, {
                         [N.N7]: w
                     }),
                     style: {
@@ -200,7 +200,7 @@ function T(e) {
                         isVertical: !0
                     })
                 }) : null]
-            }), (0, i.jsx)(a.animated.div, {
+            }), (0, i.jsx)(r.animated.div, {
                 className: N.Vx,
                 style: {
                     translateY: eA.value.to(e => e * S / 2),

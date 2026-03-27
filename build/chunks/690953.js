@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(417597),
     l = n(397927),
-    r = n(882997),
-    a = n(731474),
+    a = n(882997),
+    r = n(731474),
     o = n(383501),
     c = n(977997),
     d = n(458829),
@@ -22,8 +22,8 @@ function p(e) {
     let t = (0, s.bG)([o.A], () => o.A.getChannelId() === e.id),
         p = (0, u.A)(),
         g = p?.channelId === e.id,
-        f = (0, a.J)(e) && !e.isPrivate(),
-        x = (0, a.A)(e),
+        f = (0, r.J)(e) && !e.isPrivate(),
+        x = (0, r.A)(e),
         E = !(0, s.bG)([c.A], () => c.A.isInChannel(e.id)) && x || f,
         C = (0, h.A)();
     if (!g && 0 === C.length) return null;
@@ -41,19 +41,19 @@ function p(e) {
         },
         disabled: E
     }) : C.map(s => {
-        var a, o;
+        var r, o;
         let c = (0, A.A)(s.type);
         return (0, i.jsx)(l.Drp, {
             id: `transfer-${s.type}-${s.id}`,
-            label: (a = s.type, o = t, a === m.fg2.XBOX ? o ? _.intl.string(_.t["qVE/VF"]) : _.intl.string(_.t.E8euSk) : a === m.fg2.PLAYSTATION ? o ? _.intl.string(_.t.vzfxmY) : _.intl.string(_.t.QxEYDj) : a === m.fg2.PLAYSTATION_STAGING ? o ? _.intl.string(_.t.BDiXtV) : _.intl.string(_.t["bhdB9+"]) : void 0),
+            label: (r = s.type, o = t, r === m.fg2.XBOX ? o ? _.intl.string(_.t["qVE/VF"]) : _.intl.string(_.t.E8euSk) : r === m.fg2.PLAYSTATION ? o ? _.intl.string(_.t.vzfxmY) : _.intl.string(_.t.QxEYDj) : r === m.fg2.PLAYSTATION_STAGING ? o ? _.intl.string(_.t.BDiXtV) : _.intl.string(_.t["bhdB9+"]) : void 0),
             action: () => {
-                !s.twoWayLink || s.revoked ? (0, r.A)({
+                !s.twoWayLink || s.revoked ? (0, a.A)({
                     platformType: s.type,
                     location: "Console Transfer Item"
                 }) : s.type === m.fg2.XBOX ? (0, l.mMO)(async () => {
                     let {
                         default: t
-                    } = await Promise.all([n.e("56838"), n.e("67670")]).then(n.bind(n, 188072));
+                    } = await Promise.all([n.e("41486"), n.e("67670")]).then(n.bind(n, 188072));
                     return n => (0, i.jsx)(t, {
                         ...n,
                         channel: e

@@ -7,8 +7,8 @@ n.d(t, {
 var i = n(64700),
     s = n(942381),
     l = n(465532),
-    r = n(843472),
-    a = n(608299),
+    a = n(843472),
+    r = n(608299),
     o = n(23658),
     c = n(425059),
     d = n(218152),
@@ -29,16 +29,16 @@ function g(e) {
         onThreadCreated: g,
         useDefaultThreadName: f
     } = e, x = i.useCallback((e, t, n, i) => {
-        r.A.sendMessage(e.id, u.Ay.parse(e, n), void 0, {
+        a.A.sendMessage(e.id, u.Ay.parse(e, n), void 0, {
             eagerDispatch: !1,
             location: _.Hx.THREAD_CREATION,
             stickerIds: i,
             attachmentsToUpload: t,
-            onAttachmentUploadError: (i, s, r, c) => {
+            onAttachmentUploadError: (i, s, a, c) => {
                 (0, o.openUploadError)({
                     title: p.intl.string(p.t.B3vFdU),
                     help: c?.message ?? p.intl.string(p.t.zMEjJg)
-                }), "" !== n && "" === h.A.getDraft(e.id, h.C.FirstThreadMessage) && l.A.saveDraft(e.id, n, h.C.FirstThreadMessage), 0 === A.A.getUploadCount(e.id, h.C.FirstThreadMessage) && a.A.setUploads({
+                }), "" !== n && "" === h.A.getDraft(e.id, h.C.FirstThreadMessage) && l.A.saveDraft(e.id, n, h.C.FirstThreadMessage), 0 === A.A.getUploadCount(e.id, h.C.FirstThreadMessage) && r.A.setUploads({
                     channelId: e.id,
                     uploads: t,
                     draftType: h.C.FirstThreadMessage

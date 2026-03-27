@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(417597),
-    r = n(554146),
-    a = n(827734),
+    a = n(554146),
+    r = n(827734),
     o = n(397927),
     c = n(442433),
     d = n(826673),
@@ -28,7 +28,7 @@ function N(e) {
     let {
         guild: t,
         selected: N
-    } = e, b = (0, h.A)(t), S = (0, d.JZ)(r.M.CHANNEL_BROWSER_NEW_BADGE_NUX), T = (0, l.yK)([A.A], () => Array.from(A.A.getNewChannelIds(t.id)).filter(e => A.A.shouldIndicateNewChannel(t.id, e))), v = (0, l.bG)([_.Ay], () => _.Ay.hasUnread(t.id, C.P.GUILD_ONBOARDING_QUESTION)), y = T.length > g.rR, j = (0, l.bG)([u.A, _.Ay], () => {
+    } = e, b = (0, h.A)(t), S = (0, d.JZ)(a.M.CHANNEL_BROWSER_NEW_BADGE_NUX), T = (0, l.yK)([A.A], () => Array.from(A.A.getNewChannelIds(t.id)).filter(e => A.A.shouldIndicateNewChannel(t.id, e))), v = (0, l.bG)([_.Ay], () => _.Ay.hasUnread(t.id, C.P.GUILD_ONBOARDING_QUESTION)), y = T.length > g.rR, j = (0, l.bG)([u.A, _.Ay], () => {
         let e = u.A.lastFetchedAt(t.id),
             n = _.Ay.lastMessageId(t.id, C.P.GUILD_ONBOARDING_QUESTION);
         if (null == n) return !1;
@@ -48,7 +48,7 @@ function N(e) {
         })
     }, [t]), L = null;
     return S && !v && !y || N || j || (L = (0, i.jsx)(o.LpS, {
-        color: a.A.colors.BADGE_BACKGROUND_BRAND.css,
+        color: r.A.colors.BADGE_BACKGROUND_BRAND.css,
         text: I.intl.string(I.t.y2b7CA)
     })), (0, i.jsx)(f.G, {
         id: `channels-${t.id}`,

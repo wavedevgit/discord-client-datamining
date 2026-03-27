@@ -1,5 +1,8 @@
 /** chunk id: 847890 params = (module,exports,require) **/
 e.exports = {
-    k: "container__7b1c2",
-    w: "headingContainer__7b1c2"
+    iU: "message_d9edaa",
+    z3: "error_d9edaa",
+    zH: "details_d9edaa",
+    nf: "errorDetails_d9edaa",
+    HM: "btn_d9edaa"
 }

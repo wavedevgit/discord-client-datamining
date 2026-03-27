@@ -1,42 +1,43 @@
 /** chunk id: 266620 params = (module,exports,require) **/
-n.d(t, {
-    Cr: () => T,
-    I1: () => y,
-    Nj: () => S,
-    R6: () => j,
-    SX: () => N,
-    UB: () => L,
-    YE: () => R
-}), n(938796);
-var i = n(627968),
-    a = n(64700),
-    r = n(665260),
-    l = n(311907),
-    s = n(571356),
-    o = n(990078),
-    d = n(397927),
-    c = n(672477),
-    u = n(67281),
-    _ = n(458517),
-    m = n(776231),
-    h = n(713021),
-    p = n(476066),
-    g = n(121489),
-    A = n(734057),
-    x = n(644447),
-    f = n(998218),
-    C = n(465856),
-    I = n(652176),
-    E = n(652215),
-    b = n(985018),
-    v = n(999169);
+"use strict";
+a.d(t, {
+    Cr: () => x,
+    I1: () => S,
+    Nj: () => E,
+    R6: () => N,
+    SX: () => M,
+    UB: () => O,
+    YE: () => P
+}), a(938796);
+var n = a(627968),
+    r = a(64700),
+    i = a(665260),
+    o = a(311907),
+    s = a(571356),
+    c = a(990078),
+    l = a(397927),
+    _ = a(672477),
+    d = a(67281),
+    u = a(458517),
+    m = a(776231),
+    p = a(713021),
+    f = a(476066),
+    b = a(121489),
+    C = a(734057),
+    g = a(644447),
+    I = a(998218),
+    h = a(465856),
+    A = a(652176),
+    v = a(652215),
+    T = a(985018),
+    y = a(541624);
 
-function T(e) {
+function x(e) {
     let t = e.item.originalItem;
-    return (0, I.LL)({
+    return (0, A.LL)({
         ...e,
         alt: t.description,
-        src: (0, x.E)({
+        src: (0, g.E)({
             proxyURL: t.proxy_url,
             url: t.url
         }),
@@ -45,7 +46,7 @@ function T(e) {
         placeholderVersion: t.placeholder_version,
         contentType: t.content_type,
         originalContentType: t.original_content_type,
-        srcIsAnimated: (0, r.Lt)(t.flags ?? 0, E.sbO.IS_ANIMATED),
+        srcIsAnimated: (0, i.Lt)(t.flags ?? 0, v.sbO.IS_ANIMATED),
         sourceMetadata: {
             message: e.message,
             identifier: {
@@ -60,16 +61,16 @@ function T(e) {
     })
 }
 
-function y(e) {
+function S(e) {
     let t = e.item.originalItem,
         {
-            newEmbedUi: n
-        } = c.Q.useConfig({
+            newEmbedUi: a
+        } = _.Q.useConfig({
             location: "VideoComponentForMessageAttachment"
         }),
-        _ = (0, r.Lt)(t.flags ?? 0, E.sbO.IS_CLIP),
-        h = (0, l.bG)([A.A], () => A.A.getBasicChannel(e.message.channel_id)?.guild_id),
-        g = a.useCallback(() => _ ? n ? (0, i.jsx)(u.A, {
+        u = (0, i.Lt)(t.flags ?? 0, v.sbO.IS_CLIP),
+        p = (0, o.bG)([C.A], () => C.A.getBasicChannel(e.message.channel_id)?.guild_id),
+        b = r.useCallback(() => u ? a ? (0, n.jsx)(d.A, {
             createdAt: null != t.clip_created_at ? Date.parse(t.clip_created_at) : void 0,
             participantIds: t.clip_participants?.map(e => {
                 let {
@@ -79,40 +80,40 @@ function y(e) {
             }) ?? [],
             applicationId: t.application?.id,
             title: t.title,
-            guildId: h
-        }) : (0, i.jsx)(o.m, {
-            text: b.intl.string(b.t["/fgfWh"]),
-            children: (0, i.jsxs)("div", {
-                className: v.M,
-                children: [(0, i.jsx)(d.xgA, {
+            guildId: p
+        }) : (0, n.jsx)(c.m, {
+            text: T.intl.string(T.t["/fgfWh"]),
+            children: (0, n.jsxs)("div", {
+                className: y.M,
+                children: [(0, n.jsx)(l.xgA, {
                     size: "xs",
                     color: "currentColor"
-                }), (0, i.jsx)(s.E, {
+                }), (0, n.jsx)(s.E, {
                     variant: "text-xs/semibold",
                     color: "always-white",
-                    children: b.intl.string(b.t.oA4afG)
+                    children: T.intl.string(T.t.oA4afG)
                 })]
             })
-        }) : null, [t, _, n, h]),
-        x = f.A.toURLSafe(t.proxy_url);
-    if (null == x) return null;
-    if (x.searchParams.append("format", "webp"), _ && n) {
+        }) : null, [t, u, a, p]),
+        g = I.A.toURLSafe(t.proxy_url);
+    if (null == g) return null;
+    if (g.searchParams.append("format", "webp"), u && a) {
         let {
-            width: n,
-            height: a,
-            naturalWidth: r,
-            naturalHeight: l
+            width: a,
+            height: r,
+            naturalWidth: i,
+            naturalHeight: o
         } = e, s = (0, m.AE)({
-            src: x.toString(),
-            width: n,
-            height: a
+            src: g.toString(),
+            width: a,
+            height: r
         });
-        return (0, i.jsx)("div", {
+        return (0, n.jsx)("div", {
             style: {
                 width: "100%",
-                aspectRatio: `${n} / ${a}`
+                aspectRatio: `${a} / ${r}`
             },
-            children: (0, i.jsx)(p.A, {
+            children: (0, n.jsx)(f.A, {
                 src: t.url,
                 downloadUrl: t.url,
                 downloadContentType: t.content_type,
@@ -120,8 +121,8 @@ function y(e) {
                 posterPlaceholder: t.placeholder,
                 posterPlaceholderVersion: t.placeholder_version,
                 active: !1,
-                orientation: r >= l ? "landscape" : "portrait",
-                renderOverlay: g,
+                orientation: i >= o ? "landscape" : "portrait",
+                renderOverlay: b,
                 targetTimeSec: 1 / 0,
                 parentTransitionState: null,
                 onOptimisticProgressUpdate: () => {},
@@ -129,17 +130,17 @@ function y(e) {
             })
         })
     }
-    return (0, I.$o)({
+    return (0, A.$o)({
         ...e,
         alt: t.description,
-        poster: x.toString(),
+        poster: g.toString(),
         fileSize: t.size,
-        fileName: (0, C.A)(t),
+        fileName: (0, h.A)(t),
         src: t.url,
         placeholder: t.placeholder,
         placeholderVersion: t.placeholder_version,
-        srcIsAnimated: (0, r.Lt)(t.flags ?? 0, E.sbO.IS_ANIMATED),
-        renderOverlayContent: g,
+        srcIsAnimated: (0, i.Lt)(t.flags ?? 0, v.sbO.IS_ANIMATED),
+        renderOverlayContent: b,
         sourceMetadata: {
             message: e.message,
             identifier: {
@@ -152,94 +153,94 @@ function y(e) {
     })
 }
 
-function S(e) {
+function E(e) {
     let t = e.item.originalItem;
-    return (0, I.gL)({
+    return (0, A.gL)({
         ...e,
         fileSize: t.size,
-        fileName: (0, C.A)(t),
+        fileName: (0, h.A)(t),
         src: t.url
     })
 }
 
-function N(e) {
+function M(e) {
     let {
         message: t,
-        item: n
-    } = e, i = n.originalItem, r = (0, h.dx)(h.k0.VOICE_MESSAGE, i.id), l = a.useCallback((e, n, a) => {
-        (0, g.wQ)(t.id, i.duration_secs ?? null, n, t.author.id)
-    }, [t, i.duration_secs]), s = a.useCallback((e, n) => {
-        (0, g.dP)(t.id, i.duration_secs ?? null, e, t.author.id, n)
-    }, [t, i.duration_secs]), o = a.useCallback(e => {
-        (0, g._O)(t.id, e?.message ?? null)
+        item: a
+    } = e, n = a.originalItem, i = (0, p.dx)(p.k0.VOICE_MESSAGE, n.id), o = r.useCallback((e, a, r) => {
+        (0, b.wQ)(t.id, n.duration_secs ?? null, a, t.author.id)
+    }, [t, n.duration_secs]), s = r.useCallback((e, a) => {
+        (0, b.dP)(t.id, n.duration_secs ?? null, e, t.author.id, a)
+    }, [t, n.duration_secs]), c = r.useCallback(e => {
+        (0, b._O)(t.id, e?.message ?? null)
     }, [t]);
-    return (0, I.P$)({
+    return (0, A.P$)({
         ...e,
-        fileSize: i.size,
-        fileName: (0, C.A)(i),
-        src: i.url,
-        durationSecs: i.duration_secs,
-        waveform: i.waveform,
-        onPlay: l,
+        fileSize: n.size,
+        fileName: (0, h.A)(n),
+        src: n.url,
+        durationSecs: n.duration_secs,
+        waveform: n.waveform,
+        onPlay: o,
         onPause: s,
-        onError: o,
-        playbackCacheKey: r
+        onError: c,
+        playbackCacheKey: i
     })
 }
 
-function j(e) {
+function N(e) {
     let t = e.item.originalItem;
-    return (0, I._d)({
+    return (0, A._d)({
         ...e,
         url: t.url,
-        fileName: (0, C.A)(t),
+        fileName: (0, h.A)(t),
         fileSize: t.size,
         contentType: t.content_type
     })
 }
 
-function L(e) {
+function O(e) {
     let t = e.item.originalItem;
-    return (0, I.Dk)({
+    return (0, A.Dk)({
         ...e,
         url: t.url,
-        fileName: (0, C.A)(t),
+        fileName: (0, h.A)(t),
         fileSize: t.size
-    })
-}
-
-function R(e) {
-    let {
-        newEmbedUi: t
-    } = c.Q.useConfig({
-        location: "MosaicItemFooterForMessageAttachment"
-    });
-    return "CLIP" !== e.item.type || t ? null : (0, i.jsx)(P, {
-        attachment: e.item.originalItem,
-        message: e.message
     })
 }
 
 function P(e) {
     let {
+        newEmbedUi: t
+    } = _.Q.useConfig({
+        location: "MosaicItemFooterForMessageAttachment"
+    });
+    return "CLIP" !== e.item.type || t ? null : (0, n.jsx)(w, {
+        attachment: e.item.originalItem,
+        message: e.message
+    })
+}
+
+function w(e) {
+    let {
         attachment: t,
-        message: n
-    } = e, a = n.channel_id, r = (0, l.bG)([A.A], () => A.A.getBasicChannel(a)?.guild_id), {
+        message: a
+    } = e, r = a.channel_id, i = (0, o.bG)([C.A], () => C.A.getBasicChannel(r)?.guild_id), {
         clip_created_at: s,
-        clip_participants: o,
-        title: d,
-        application: c
+        clip_participants: c,
+        title: l,
+        application: _
     } = t;
-    return (0, i.jsx)(_.A, {
+    return (0, n.jsx)(u.A, {
         createdAt: null != s ? Date.parse(s) : void 0,
-        participantIds: o?.map(e => {
+        participantIds: c?.map(e => {
             let {
                 id: t
             } = e;
             return t
         }) ?? [],
-        applicationId: c?.id,
-        title: d,
-        guildId: r
+        applicationId: _?.id,
+        title: l,
+        guildId: i
     })
 }

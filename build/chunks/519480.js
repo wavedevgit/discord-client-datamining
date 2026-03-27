@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(311907),
     s = n(73153),
     l = n(370876),
-    r = n(946116);
-let a = Object.freeze({}),
+    a = n(946116);
+let r = Object.freeze({}),
     o = !1,
     c = {},
     d = {},
@@ -20,7 +20,7 @@ class m extends i.Ay.Store {
         return o
     }
     getCurrentCategoryId(e) {
-        return d[e] ?? r.mU.ALL
+        return d[e] ?? a.mU.ALL
     }
     getDirectoryEntries(e, t) {
         return null != t ? u[e]?.[t] : c[e]
@@ -32,7 +32,7 @@ class m extends i.Ay.Store {
         return Object.keys(c[e] ?? {}).length
     }
     getDirectoryCategoryCounts(e) {
-        return h[e] ?? a
+        return h[e] ?? r
     }
     getAdminGuildEntryIds(e) {
         return A[e]
@@ -70,7 +70,7 @@ let _ = new m(s.h, {
             ...c[t],
             [i.guildId]: i
         };
-        let s = i.primaryCategoryId ?? r.mU.UNCATEGORIZED;
+        let s = i.primaryCategoryId ?? a.mU.UNCATEGORIZED;
         if (u[t] = {
                 ...u[t],
                 [s]: {
@@ -94,10 +94,10 @@ let _ = new m(s.h, {
         let s = i.primaryCategoryId,
             l = Object.assign({}, c[t]);
         delete l[n], A[t]?.delete(n), A[t] = new Set(A[t]), c[t] = l;
-        let r = Object.assign({}, u[t][s]);
-        if (delete r[n], u[t] = {
+        let a = Object.assign({}, u[t][s]);
+        if (delete a[n], u[t] = {
                 ...u[t],
-                [s]: r
+                [s]: a
             }, null != h[t]) {
             let e = h[t][s] - 1;
             h[t] = {
@@ -118,12 +118,12 @@ let _ = new m(s.h, {
                 ...i
             }
         };
-        let a = s?.primaryCategoryId ?? r.mU.UNCATEGORIZED,
-            o = i.primaryCategoryId ?? r.mU.UNCATEGORIZED,
-            d = Object.assign({}, u[t]?.[a]);
-        null != s && a !== o && delete d[i.guildId], u[t] = {
+        let r = s?.primaryCategoryId ?? a.mU.UNCATEGORIZED,
+            o = i.primaryCategoryId ?? a.mU.UNCATEGORIZED,
+            d = Object.assign({}, u[t]?.[r]);
+        null != s && r !== o && delete d[i.guildId], u[t] = {
             ...u[t],
-            [a]: d,
+            [r]: d,
             [o]: {
                 ...u[t]?.[o],
                 [i.guildId]: {
@@ -131,9 +131,9 @@ let _ = new m(s.h, {
                     ...i
                 }
             }
-        }, o !== a && null != h[t] && (h[t] = {
+        }, o !== r && null != h[t] && (h[t] = {
             ...h[t],
-            [a]: h[t]?.[a] > 0 ? h[t]?.[a] - 1 : 0,
+            [r]: h[t]?.[r] > 0 ? h[t]?.[r] - 1 : 0,
             [o]: (h[t]?.[o] ?? 0) + 1
         })
     },

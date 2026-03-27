@@ -40,7 +40,7 @@ var i = n(627968),
     U = n(652215),
     B = n(788868),
     G = n(985018),
-    F = n(141019);
+    F = n(860090);
 
 function H(e) {
     let {
@@ -142,7 +142,6 @@ class q extends a.Component {
         null != n && (0, E.bF)(n) && null != i && null != i.guildId ? (e.preventDefault(), (0, b.R)({
             skuId: n.id,
             applicationId: i.id,
-            guildId: i.guildId,
             isStorefront: !1,
             analyticsLocations: [h.A.GIFT_CODE_EMBED]
         })) : null != t && t.isSubscription && (e.preventDefault(), (0, T.openUserSettings)(v.X.NITRO_PANEL))

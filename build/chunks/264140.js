@@ -6,9 +6,9 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(284009),
-    o = n.n(a),
+    a = n.n(l),
+    r = n(284009),
+    o = n.n(r),
     c = n(735438),
     d = n.n(c),
     u = n(873263),
@@ -61,8 +61,8 @@ var f = n(483270),
     ei = n(867624),
     es = n(899584),
     el = n(742589),
-    er = n(353428),
-    ea = n(402385),
+    ea = n(353428),
+    er = n(402385),
     eo = n(95550),
     ec = n(467480),
     ed = n(788579),
@@ -119,7 +119,7 @@ var f = n(483270),
     e5 = n(957173),
     e8 = n(516607),
     e4 = n(985018),
-    te = n(358943);
+    te = n(513544);
 let tt = (0, P.Fe)({
     createPromise: () => n.e("46875").then(n.bind(n, 625846)),
     webpackId: 625846,
@@ -222,7 +222,7 @@ class tn extends s.PureComponent {
         o()(null != s, "Missing user in Channel.openDMContextMenu"), (0, g.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("34408")]).then(n.bind(n, 385913));
+            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("22283")]).then(n.bind(n, 385913));
             return n => (0, i.jsx)(e, {
                 ...n,
                 user: s,
@@ -268,95 +268,95 @@ class tn extends s.PureComponent {
             isLurking: n,
             showCall: s,
             showActivityPanel: l,
-            showFramePanel: r
+            showFramePanel: a
         } = this.props;
         o()(null != e, "Missing channel in Channel.renderHeaderToolbar");
-        let a = [];
-        if (e.isSystemDM()) return a;
+        let r = [];
+        if (e.isSystemDM()) return r;
         switch (e.type) {
             case e9.rbe.GUILD_STAGE_VOICE:
             case e9.rbe.GUILD_VOICE:
                 break;
             case e9.rbe.DM:
-                a.push(this.renderClipsEnabledIndicatorToolbarItem()), a.push(this.renderStreamQualityLiveIndicatorToolbarItem()), a.push((0, i.jsx)(ea.A, {
+                r.push(this.renderClipsEnabledIndicatorToolbarItem()), r.push(this.renderStreamQualityLiveIndicatorToolbarItem()), r.push((0, i.jsx)(er.A, {
                     channel: e
-                }, "calls")), a.push((0, i.jsx)(en.A, {
+                }, "calls")), r.push((0, i.jsx)(en.A, {
                     channel: e
-                }, "pins")), a.push((0, i.jsx)(eo.Ay, {
+                }, "pins")), r.push((0, i.jsx)(eo.Ay, {
                     channel: e,
                     tooltip: e4.intl.string(e4.t.Xjlbvs)
-                }, "invite")), a.push((0, i.jsx)(eu.A, {
+                }, "invite")), r.push((0, i.jsx)(eu.A, {
                     channel: e,
-                    showCallOrActivityPanel: s || l || r
-                }, "profile")), a.push((0, i.jsx)(ec.A, {
+                    showCallOrActivityPanel: s || l || a
+                }, "profile")), r.push((0, i.jsx)(ec.A, {
                     channel: e
                 }, "safety_tools"));
                 break;
             case e9.rbe.GROUP_DM:
-                a.push(this.renderJoinRequestInterviewButtons()), a.push(this.renderClipsEnabledIndicatorToolbarItem()), a.push(this.renderStreamQualityLiveIndicatorToolbarItem()), a.push((0, i.jsx)(ea.A, {
+                r.push(this.renderJoinRequestInterviewButtons()), r.push(this.renderClipsEnabledIndicatorToolbarItem()), r.push(this.renderStreamQualityLiveIndicatorToolbarItem()), r.push((0, i.jsx)(er.A, {
                     channel: e
-                }, "calls")), a.push((0, i.jsx)(en.A, {
+                }, "calls")), r.push((0, i.jsx)(en.A, {
                     channel: e
-                }, "pins")), e.isManaged() || a.push((0, i.jsx)(eo.Ay, {
+                }, "pins")), e.isManaged() || r.push((0, i.jsx)(eo.Ay, {
                     channel: e,
                     tooltip: e4.intl.string(e4.t.AQAPts)
-                }, "invite")), a.push((0, i.jsx)(ee.A, {
+                }, "invite")), r.push((0, i.jsx)(ee.A, {
                     channelId: e.id
                 }, "members"));
                 break;
             case e9.rbe.ANNOUNCEMENT_THREAD:
             case e9.rbe.PRIVATE_THREAD:
             case e9.rbe.PUBLIC_THREAD:
-                e.isModeratorReportChannel() && a.push((0, i.jsx)(eT.A, {
+                e.isModeratorReportChannel() && r.push((0, i.jsx)(eT.A, {
                     channel: e
-                })), null == t || t.isForumLikeChannel() || a.push((0, i.jsx)(ev.A, {
+                })), null == t || t.isForumLikeChannel() || r.push((0, i.jsx)(ev.A, {
                     channel: t
-                }, "browser")), e.isVocalThread() && a.push((0, i.jsx)(ed.A, {
+                }, "browser")), e.isVocalThread() && r.push((0, i.jsx)(ed.A, {
                     channel: e
-                }, "thread-call")), a.push((0, i.jsx)(ey.A, {
+                }, "thread-call")), r.push((0, i.jsx)(ey.A, {
                     channel: e
-                }, "notifications")), a.push((0, i.jsx)(en.A, {
+                }, "notifications")), r.push((0, i.jsx)(en.A, {
                     channel: e
-                }, "pins")), e.isArchivedThread() || a.push((0, i.jsx)(ee.A, {
+                }, "pins")), e.isArchivedThread() || r.push((0, i.jsx)(ee.A, {
                     channelId: e.id
-                }, "members")), null != t && (0, C.pk)(e) && a.push((0, i.jsx)(ei.A, {
+                }, "members")), null != t && (0, C.pk)(e) && r.push((0, i.jsx)(ei.A, {
                     channel: e
-                }, "summaries")), a.push((0, i.jsx)(ej.A, {
+                }, "summaries")), r.push((0, i.jsx)(ej.A, {
                     channel: e
                 }, "threads-overflow"));
                 break;
             case e9.rbe.GUILD_ANNOUNCEMENT:
             case e9.rbe.GUILD_TEXT:
-                a.push((0, i.jsx)(ev.A, {
+                r.push((0, i.jsx)(ev.A, {
                     channel: e
-                }, "browser")), n || a.push((0, i.jsx)(et.A, {
+                }, "browser")), n || r.push((0, i.jsx)(et.A, {
                     channel: e
-                }, "notifications")), a.push((0, i.jsx)(en.A, {
+                }, "notifications")), r.push((0, i.jsx)(en.A, {
                     channel: e
-                }, "pins")), (0, G.f)("channel_header") && a.push((0, i.jsx)(Z.A, {
+                }, "pins")), (0, G.f)("channel_header") && r.push((0, i.jsx)(Z.A, {
                     channelId: e.id
-                }, "conversations")), a.push((0, i.jsx)(ee.A, {
+                }, "conversations")), r.push((0, i.jsx)(ee.A, {
                     channelId: e.id
-                }, "members")), (0, C.pk)(e) && a.push((0, i.jsx)(ei.A, {
+                }, "members")), (0, C.pk)(e) && r.push((0, i.jsx)(ei.A, {
                     channel: e
                 }, "summaries"));
                 break;
             case e9.rbe.GUILD_FORUM:
             case e9.rbe.GUILD_MEDIA:
-                n || (a.push((0, i.jsx)(es.A, {
+                n || (r.push((0, i.jsx)(es.A, {
                     channel: e
-                }, "forum-onboarding")), a.push((0, i.jsx)(et.A, {
+                }, "forum-onboarding")), r.push((0, i.jsx)(et.A, {
                     channel: e
-                }, "notifications"))), __OVERLAY__ || a.push((0, i.jsx)(ee.A, {
+                }, "notifications"))), __OVERLAY__ || r.push((0, i.jsx)(ee.A, {
                     channelId: e.id
                 }, "members"));
                 break;
             case e9.rbe.GUILD_DIRECTORY:
-                a.push((0, i.jsx)(ee.A, {
+                r.push((0, i.jsx)(ee.A, {
                     channelId: e.id
                 }, "members"))
         }
-        return a
+        return r
     };
     renderMobileToolbar = () => {
         let {
@@ -423,7 +423,7 @@ class tn extends s.PureComponent {
             parentChannel: n,
             guild: s,
             guildId: l,
-            showCall: a,
+            showCall: r,
             showActivityPanel: c,
             showFramePanel: d,
             hasVideo: u,
@@ -433,29 +433,29 @@ class tn extends s.PureComponent {
         let A = e.isDM() && !e.isSystemDM() ? this.openUserProfile : h ? () => (0, ex.iN)(e.id) : void 0,
             m = n?.guild_id != null && n?.id != null ? this.handleTitleParentClick : void 0,
             p = c || d,
-            g = a || p;
+            g = r || p;
         return (0, i.jsxs)("div", {
             className: te.SC,
             children: [(0, i.jsx)(_.NPJ, {
-                theme: u && a ? e9.NJ8.DARK : void 0,
-                children: a => (0, i.jsxs)(el.A, {
+                theme: u && r ? e9.NJ8.DARK : void 0,
+                children: r => (0, i.jsxs)(el.A, {
                     guildId: l,
                     channelId: e.id,
                     channelType: e.type,
                     hideSearch: e.isDirectory(),
                     toolbar: this.renderHeaderToolbar(),
                     mobileToolbar: this.renderMobileToolbar(),
-                    className: r()(te.DD, a, {
+                    className: a()(te.DD, r, {
                         [te.zh]: e.type === e9.rbe.GROUP_DM
                     }),
                     transparent: g,
                     hidden: d,
                     "aria-label": e4.intl.string(e4.t.BIYAqa),
-                    children: [h && (0, i.jsx)(er.i$, {
+                    children: [h && (0, i.jsx)(ea.i$, {
                         channel: e,
                         guild: s,
                         caretPosition: "right"
-                    }), (0, er.zF)({
+                    }), (0, ea.zF)({
                         channel: e,
                         channelName: t,
                         parentChannel: n,
@@ -474,7 +474,7 @@ class tn extends s.PureComponent {
                             size: "sm",
                             text: e4.intl.string(e4.t.k5WiPf)
                         })
-                    }) : (0, er.EP)(e, s)]
+                    }) : (0, ea.EP)(e, s)]
                 }, `header-${e.id}`)
             }), (0, i.jsx)(eg.A, {
                 channelId: e.id
@@ -577,12 +577,12 @@ class tn extends s.PureComponent {
             guild: n,
             needSubscriptionToAccess: s,
             section: l,
-            showCall: r,
-            showActivityPanel: a,
+            showCall: a,
+            showActivityPanel: r,
             showFramePanel: c
         } = this.props;
         if (o()(null != e, "Missing channel in Channel.renderSidebar"), __OVERLAY__ || s);
-        else if (l === e9.YvQ.PROFILE && e.isPrivate() && !r && !a && !c) return (0, i.jsx)(eM.A, {
+        else if (l === e9.YvQ.PROFILE && e.isPrivate() && !a && !r && !c) return (0, i.jsx)(eM.A, {
             channel: e
         }, `private-channel-profile-${e.id}`);
         else if (l === e9.YvQ.MEMBERS) switch (e.type) {
@@ -628,11 +628,11 @@ class tn extends s.PureComponent {
             guildId: t,
             hasModalOpen: s,
             showWelcomeModal: l,
-            isLurking: r,
-            isUnavailable: a,
+            isLurking: a,
+            isUnavailable: r,
             showRealNameModal: o
         } = this.props;
-        return null == e || null == t || a || s || (o && (0, _.mMO)(async () => {
+        return null == e || null == t || r || s || (o && (0, _.mMO)(async () => {
             let {
                 default: e
             } = await n.e("38763").then(n.bind(n, 201510));
@@ -652,7 +652,7 @@ class tn extends s.PureComponent {
                 guildId: t
             })
         }, {
-            onCloseCallback: () => (0, eG.ry)(t, r),
+            onCloseCallback: () => (0, eG.ry)(t, a),
             modalKey: "Guild Welcome Screen Modal"
         })), null
     }
@@ -662,12 +662,12 @@ class tn extends s.PureComponent {
             section: n,
             channelSidebarState: s,
             guildSidebarState: l,
-            width: r,
-            channelIsContentGated: a
+            width: a,
+            channelIsContentGated: r
         } = this.props;
         if (null == l && null == s) return null;
         if (n === e9.YvQ.SIDEBAR_CHAT && null != s) {
-            if (a) return null;
+            if (r) return null;
             switch (s.type) {
                 case eI.PE.CREATE_THREAD:
                     if (t?.isForumLikeChannel()) return null;
@@ -717,7 +717,7 @@ class tn extends s.PureComponent {
                 })
             } if (null == e) return null;
         let o = t?.type != null && e9.kvI.GUILD_THREADS_ONLY.has(t.type) ? 528 : 450,
-            c = r - e9.MdR - o;
+            c = a - e9.MdR - o;
         return c += 375, (0, i.jsx)(eJ.A, {
             sidebarType: t?.type != null && e9.kvI.GUILD_THREADS_ONLY.has(t.type) ? eJ.X.PostSidebar : eJ.X.ThreadSidebar,
             maxWidth: c,
@@ -732,7 +732,7 @@ class tn extends s.PureComponent {
             formattedChannelName: n,
             isUnavailable: s,
             layout: l,
-            section: a,
+            section: r,
             hasModalOpen: o,
             guildSidebarState: c,
             hasTextActivityInPanelMode: d
@@ -744,7 +744,7 @@ class tn extends s.PureComponent {
         if (null == e) return (0, i.jsx)(eZ.A, {
             channelId: this.props.channelId
         });
-        let m = a === e9.YvQ.SIDEBAR_CHAT,
+        let m = r === e9.YvQ.SIDEBAR_CHAT,
             _ = null != c && !m,
             p = !e.isForumLikeChannel() && !o,
             g = t?.name;
@@ -754,7 +754,7 @@ class tn extends s.PureComponent {
                 subsection: n ?? void 0
             }), (0, i.jsxs)("div", {
                 "data-has-border": e.type !== e9.rbe.GUILD_VOICE,
-                className: r()(te.TE, {
+                className: a()(te.TE, {
                     [te.js]: m || _,
                     [te.jl]: m && h
                 }),
@@ -766,7 +766,7 @@ class tn extends s.PureComponent {
                     channel: e,
                     draftType: eV.C.ChannelMessage
                 }) : null, A || d ? null : this.renderHeaderBar(), this.renderCall(), this.renderEmbeddedActivityPanel(), (0, i.jsxs)("div", {
-                    className: r()(te.Qs, {
+                    className: a()(te.Qs, {
                         [te.Oo]: l === e9.DUB.NO_CHAT
                     }),
                     children: [this.renderChat(), this.renderSidebar()]
@@ -779,13 +779,13 @@ let ti = (0, E.A)(tn),
     ts = s.memo(function(e) {
         let {
             providedChannel: t
-        } = e, [n, l] = s.useState(null), r = (0, h.bG)([eW.A], () => eW.A.getChannelId()), a = (0, h.bG)([eW.A], () => eW.A.getVoiceChannelId()), o = (0, h.bG)([ek.A], () => t ?? ek.A.getChannel(r), [r, t]), c = (0, B.DZ)(), _ = (0, B.e4)(o, "ConnectedChannel"), g = (0, h.bG)([ek.A], () => ek.A.getChannel(a), [a]), f = _?.parent_id, x = (0, h.bG)([ek.A], () => ek.A.getChannel(f), [f]), E = (0, h.bG)([eH.A], () => eH.A.getGuild(_?.guild_id), [_]), {
+        } = e, [n, l] = s.useState(null), a = (0, h.bG)([eW.A], () => eW.A.getChannelId()), r = (0, h.bG)([eW.A], () => eW.A.getVoiceChannelId()), o = (0, h.bG)([ek.A], () => t ?? ek.A.getChannel(a), [a, t]), c = (0, B.DZ)(), _ = (0, B.e4)(o, "ConnectedChannel"), g = (0, h.bG)([ek.A], () => ek.A.getChannel(r), [r]), f = _?.parent_id, x = (0, h.bG)([ek.A], () => ek.A.getChannel(f), [f]), E = (0, h.bG)([eH.A], () => eH.A.getGuild(_?.guild_id), [_]), {
             needSubscriptionToAccess: b
         } = (0, J.A)(_?.id ?? void 0), y = (0, h.bG)([R.A], () => {
-            let e = null != r ? R.A.getParticipants(r) : [],
-                t = null != r ? R.A.getActivityParticipants(r) : [];
+            let e = null != a ? R.A.getParticipants(a) : [],
+                t = null != a ? R.A.getActivityParticipants(a) : [];
             return e.length - t.length > 0
-        }, [r]), O = (0, K.A)(), L = (0, h.bG)([eW.A], () => (O?.channelId ?? eW.A.getVoiceChannelId()) === _?.id), M = (0, h.bG)([N.Ay], () => null != _ ? N.Ay.getSelfEmbeddedActivityForChannel(_.id) : null, [_]), D = (0, h.bG)([eK.A], () => eK.A.isConnected()), G = (0, I.A)(D), U = D && !1 === G;
+        }, [a]), O = (0, K.A)(), L = (0, h.bG)([eW.A], () => (O?.channelId ?? eW.A.getVoiceChannelId()) === _?.id), M = (0, h.bG)([N.Ay], () => null != _ ? N.Ay.getSelfEmbeddedActivityForChannel(_.id) : null, [_]), D = (0, h.bG)([eK.A], () => eK.A.isConnected()), G = (0, I.A)(D), U = D && !1 === G;
         s.useEffect(() => {
             L && U && null != M && null != _ && p.A.selectParticipant(_.id, (0, j.Qt)({
                 applicationId: M.applicationId,
@@ -804,24 +804,24 @@ let ti = (0, E.A)(tn),
             } = (0, u.zy)(),
             X = (0, h.bG)([em.A], () => null != _ && em.A.isLurking(_.guild_id), [_]),
             Q = (0, h.bG)([eU.A], () => eU.A.hasSeen(_?.guild_id, X), [_, X]),
-            $ = (0, h.bG)([R.A, N.Ay], () => null != N.Ay.getConnectedActivityLocation() && N.Ay.getActivityPanelMode() === e7.Gd.PANEL ? N.Ay.getFocusedLayout() === e7.E8.NO_CHAT ? e9.DUB.NO_CHAT : e9.DUB.NORMAL : null != r ? R.A.getLayout(r) : e9.DUB.NORMAL, [r]),
+            $ = (0, h.bG)([R.A, N.Ay], () => null != N.Ay.getConnectedActivityLocation() && N.Ay.getActivityPanelMode() === e7.Gd.PANEL ? N.Ay.getFocusedLayout() === e7.E8.NO_CHAT ? e9.DUB.NO_CHAT : e9.DUB.NORMAL : null != a ? R.A.getLayout(a) : e9.DUB.NORMAL, [a]),
             Z = (0, eh.A)(E?.id),
             ee = (0, eP.A)(q, E?.id),
             {
                 section: et,
                 channelSidebarState: en
             } = (0, h.cf)([ew.Ay], () => ({
-                section: ew.Ay.getSection(r, _?.isDM()),
-                channelSidebarState: ew.Ay.getSidebarState(r)
-            }), [r, _]),
+                section: ew.Ay.getSection(a, _?.isDM()),
+                channelSidebarState: ew.Ay.getSidebarState(a)
+            }), [a, _]),
             ei = E?.id,
             es = (0, h.bG)([ew.Ay], () => ew.Ay.getGuildSidebarState(ei), [ei]),
             el = (0, e_.lI)(),
-            er = (0, eq.Ay)(_),
-            ea = (0, eq.Ay)(_, !0),
+            ea = (0, eq.Ay)(_),
+            er = (0, eq.Ay)(_, !0),
             eo = (0, h.bG)([R.A], () => null != _ ? R.A.getSelectedParticipant(_.id) : null),
             ec = (0, v.vL)(_),
-            ed = null != _ && a === _.id,
+            ed = null != _ && r === _.id,
             eu = null != _ && _.isGuildStageVoice();
         (0, T.A)({
             onTransition: void 0
@@ -862,10 +862,10 @@ let ti = (0, E.A)(tn),
         let eb = (0, m.useHasAnyModalOpen)();
         return (0, i.jsx)(ti, {
             guildId: _?.guild_id,
-            channelId: r,
+            channelId: a,
             channel: _,
-            channelName: er,
-            formattedChannelName: ea,
+            channelName: ea,
+            formattedChannelName: er,
             parentChannel: x,
             voiceChannel: g,
             layout: $,

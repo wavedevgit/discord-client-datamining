@@ -3,8 +3,8 @@ n.d(t, {
     A: () => h
 });
 var a = n(627968),
-    l = n(64700),
-    i = n(793574),
+    i = n(64700),
+    l = n(793574),
     r = n(688810),
     s = n(44724),
     c = n(317560),
@@ -21,28 +21,27 @@ function h(e) {
         socialLayerStorefrontRecommendationsData: n
     } = (0, u.c)(), {
         analyticsLocations: h
-    } = (0, r.Ay)([i.A.GAME_PROFILE]), f = l.useCallback(() => {
+    } = (0, r.Ay)([l.A.GAME_PROFILE]), f = i.useCallback(() => {
         n?.guildId != null && (t(d.Ws.GameShop), (0, s.default)({
             guildId: n.guildId
         }))
-    }, [n, t]), g = l.useCallback(e => {
-        n?.guildId != null && (t(d.Ws.GameShopItem), (0, c.R)({
+    }, [n, t]), g = i.useCallback((e, n) => {
+        t(d.Ws.GameShopItem), (0, c.R)({
             skuId: e,
-            applicationId: n.application.id,
-            guildId: n.guildId,
+            applicationId: n,
             isStorefront: !1,
             analyticsLocations: h
-        }))
-    }, [n, t, h]);
+        })
+    }, [t, h]);
     if (null == n) return null;
     let {
-        skuIds: p
+        skuIds: _
     } = n;
     return (0, a.jsx)(m.A, {
         title: x.intl.string(x.t.WDdlUb),
         onClickViewAll: f,
         children: (0, a.jsx)(o.R, {
-            skuIds: p,
+            skuIds: _,
             analyticsLocations: h,
             onCardClick: g
         })

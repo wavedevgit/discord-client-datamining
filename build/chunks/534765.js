@@ -30,7 +30,7 @@ function o(e) {
             if (t.isDM() && null != d) return void(0, l.L3)(e, async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("97262"), n.e("42128"), n.e("6787")]).then(n.bind(n, 92016));
+                } = await Promise.all([n.e("97262"), n.e("42128"), n.e("47895")]).then(n.bind(n, 92016));
                 return n => (0, i.jsx)(e, {
                     ...n,
                     user: d,

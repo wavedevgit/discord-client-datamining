@@ -11,7 +11,7 @@ var r = a(627968),
     o = a(786558),
     c = a(799226),
     u = a(397927),
-    _ = a(190152);
+    _ = a(640203);
 let m = {
         HoverLightmode: {
             posy: "number",
@@ -47,7 +47,7 @@ let m = {
         } = e, S = n.useRef(null), y = n.useRef(null), {
             status: T,
             buffer: P
-        } = (0, c.CE)(R ? l.A : null), j = n.useContext(d.C), D = N ?? j.reducedMotion.enabled, O = {
+        } = (0, c.CE)(R ? l.A : null), D = n.useContext(d.C), j = N ?? D.reducedMotion.enabled, O = {
             "--custom-glow-amount": `${C}px`,
             "--custom-blur-amount": `${v}px`,
             "--custom-hue-rotate": `${E}deg`,
@@ -68,7 +68,7 @@ let m = {
                 className: _.Q,
                 ref: y,
                 fit: x,
-                withReducedMotion: D ? "halt" : "play"
+                withReducedMotion: j ? "halt" : "play"
             }), (0, r.jsx)(u.ZpM, {
                 type: h ?? u.sl2.CUSTOM,
                 className: f,

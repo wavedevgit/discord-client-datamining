@@ -6,15 +6,15 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(435371),
+    a = n.n(l),
+    r = n(435371),
     o = n(397927),
     c = n(661492),
     d = n(594832),
     u = n(183555),
     h = n(524380),
     A = n(985018),
-    m = n(842006);
+    m = n(943543);
 let _ = s.forwardRef(function(e, t) {
     let {
         onCardClick: n,
@@ -40,7 +40,7 @@ let _ = s.forwardRef(function(e, t) {
                 productLines: new Set([I])
             })
         },
-        className: r()(S, {
+        className: a()(S, {
             [m.ax]: E === h.Y.SMALL
         }),
         "aria-label": v,
@@ -57,7 +57,7 @@ let _ = s.forwardRef(function(e, t) {
             })
         })]
     });
-    return (0, i.jsx)(a.un, {
+    return (0, i.jsx)(r.un, {
         asContainer: !0,
         asset: s.renderIcon?.(x),
         assetSize: d.Q8,

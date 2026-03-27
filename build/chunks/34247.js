@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(696292),
-    r = n(397927),
-    a = n(533129),
+    a = n(397927),
+    r = n(533129),
     o = n(726845),
     c = n(837057),
     d = n(310419),
@@ -23,7 +23,7 @@ let p = s.forwardRef(function(e, t) {
         questId: g,
         className: f
     } = e, x = s.useCallback(() => {
-        (0, a.WL)({
+        (0, r.WL)({
             source: h.GlobalDiscoveryAnalyticsLocations.GUILDS_BAR_ICON
         });
         let e = void 0 !== g ? h.GlobalDiscoveryTab.QUESTS : o.A.getField("selectedTab");
@@ -65,6 +65,6 @@ let p = s.forwardRef(function(e, t) {
         },
         selected: n,
         tooltip: _.intl.string(_.t["4nEZLk"]),
-        icon: r.QGJ
+        icon: a.QGJ
     })
 })

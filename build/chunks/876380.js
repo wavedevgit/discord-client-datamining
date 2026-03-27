@@ -1,21 +1,7 @@
 /** chunk id: 876380 params = (module,exports,require) **/
 e.exports = {
-    gp: "parentContainer__5573a",
-    kL: "container__5573a",
-    vu: "active__5573a",
-    UD: "buttonContainer__5573a",
-    _A: "labelContainer__5573a",
-    Wq: "rollbackInactive__5573a",
-    JD: "boostProgressBackground__5573a",
-    $e: "warning__5573a",
-    hQ: "contentContainer__5573a",
-    N1: "headerContainer__5573a",
-    h_: "description__5573a",
-    Sl: "image__5573a",
-    $3: "labelContainerEnd__5573a",
-    mG: "inline__5573a",
-    wL: "rollbackInline__5573a",
-    q9: "price__5573a",
-    pT: "inlineBoost__5573a",
-    Hl: "new__5573a"
+    aP: "box_ee23ac",
+    FS: "textContainer_ee23ac",
+    yF: "divider_ee23ac",
+    lY: "animation_ee23ac"
 }

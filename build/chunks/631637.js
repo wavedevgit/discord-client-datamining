@@ -2,34 +2,34 @@
 t.d(n, {
     A: () => A
 });
-var i = t(627968);
+var r = t(627968);
 t(64700);
-var r = t(311907),
+var i = t(311907),
     l = t(397927),
-    d = t(717187),
-    a = t(884569),
+    a = t(717187),
+    d = t(884569),
     s = t(846577),
     u = t(695192),
-    c = t(87746),
-    o = t(287809);
+    o = t(87746),
+    c = t(287809);
 
 function A(e) {
     let {
         channel: n
-    } = e, t = (0, r.bG)([o.default], () => o.default.getCurrentUser()), A = (0, s.P)(n), h = (0, d.y)(n), f = (0, c.Q)(n), g = (0, u.m)(n), x = (0, a.B)(n);
-    return t?.isStaff() !== !0 ? null : (0, i.jsxs)(l.Drp, {
+    } = e, t = (0, i.bG)([c.default], () => c.default.getCurrentUser()), A = (0, s.P)(n), g = (0, a.y)(n), f = (0, o.Q)(n), h = (0, u.m)(n), E = (0, d.B)(n);
+    return t?.isStaff() !== !0 ? null : (0, r.jsxs)(l.Drp, {
         id: "dev tools",
         label: "Dev Tools",
-        children: [(0, i.jsx)(l.rXV, {
+        children: [(0, r.jsx)(l.rXV, {
             children: A
-        }), (0, i.jsx)(l.rXV, {
-            children: g
-        }), (0, i.jsx)(l.rXV, {
-            children: f
-        }), (0, i.jsx)(l.rXV, {
+        }), (0, r.jsx)(l.rXV, {
             children: h
-        }), (0, i.jsx)(l.rXV, {
-            children: x
+        }), (0, r.jsx)(l.rXV, {
+            children: f
+        }), (0, r.jsx)(l.rXV, {
+            children: g
+        }), (0, r.jsx)(l.rXV, {
+            children: E
         })]
     })
 }

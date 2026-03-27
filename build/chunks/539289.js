@@ -1,13 +1,17 @@
-/** Chunk was on 15050 **/
-/** chunk id: 539289, original params: e,a,_ (module,exports,require) **/
+/** chunk id: 539289 params = (module,exports,require) **/
+"use strict";
 e.exports = {
-    kL: "container__35305",
-    zv: "trickSelected__35305",
-    Y4: "treatSelected__35305",
-    AS: "item__35305",
-    z2: "itemSelected__35305",
-    Kk: "icon__35305",
-    JU: "controlText__35305",
-    r9: "disabled__35305",
-    ii: "disabledContainer__35305"
+    kL: "container_ca49a1",
+    I4: "guidelines_ca49a1",
+    $4: "guidelinesHeader_ca49a1",
+    N1: "headerContainer_ca49a1",
+    iQ: "descriptionContainer_ca49a1",
+    jP: "showMore_ca49a1",
+    D7: "gradient_ca49a1",
+    kx: "linkContainer_ca49a1",
+    DD: "showMoreLink_ca49a1",
+    ur: "showMoreText_ca49a1",
+    yS: "showMoreIcon_ca49a1",
+    vk: "clickable_ca49a1",
+    kK: "hiddenVisually_ca49a1"
 }

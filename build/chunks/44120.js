@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968);
 n(64700);
-var l = n(835245),
-    i = n(397927),
+var i = n(835245),
+    l = n(397927),
     r = n(73153),
     s = n(391048),
     c = n(636099),
@@ -17,42 +17,42 @@ var l = n(835245),
     h = n(954571),
     f = n(166532),
     g = n(301518),
-    p = n(652215);
-let _ = new Set([f.pn.REVIEW, f.pn.CONFIRM, f.pn.GIFT_CUSTOMIZATION]);
+    _ = n(652215);
+let p = new Set([f.pn.REVIEW, f.pn.CONFIRM, f.pn.GIFT_CUSTOMIZATION]);
 
 function v(e) {
     let t, {
             skuId: u,
             analyticsLocations: f,
             analyticsObject: v,
-            isGift: A = !1,
+            isGift: j = !1,
             giftMessage: C,
-            giftingOrigin: I,
-            giftRecipient: b,
-            onClose: E,
+            giftingOrigin: E,
+            giftRecipient: I,
+            onClose: b,
             onComplete: N
         } = e,
         S = !1,
-        k = (0, l.A)(),
-        T = A ? "gift-payment-modal" : "payment-modal",
+        T = (0, i.A)(),
+        k = j ? "gift-payment-modal" : "payment-modal",
         y = x.default.getCurrentUser();
     y?.verified ? (r.h.wait(() => {
         r.h.dispatch({
             type: "PAYMENT_MODAL_OPEN"
         })
-    }), j({
-        loadId: k,
+    }), A({
+        loadId: T,
         skuId: u,
         analyticsLocations: f,
         onStepChange: e => {
             t = e
         },
-        modalKey: T,
-        isGift: A,
+        modalKey: k,
+        isGift: j,
         giftMessage: C,
-        giftingOrigin: I,
-        giftRecipient: b,
-        onClose: E,
+        giftingOrigin: E,
+        giftRecipient: I,
+        onClose: b,
         onCloseCallback: () => {
             if ((0, g.S)({
                     checkoutSucceeded: S
@@ -61,48 +61,48 @@ function v(e) {
                     location: "CollectiblesPaymentModal",
                     unifiedCheckoutFlow: d.C.COLLECTIBLES_CHECKOUT
                 });
-                h.default.track(p.HAw.PAYMENT_FLOW_CANCELED, {
-                    load_id: k,
-                    payment_type: p.frM[p.VVm.ONE_TIME],
+                h.default.track(_.HAw.PAYMENT_FLOW_CANCELED, {
+                    load_id: T,
+                    payment_type: _.frM[_.VVm.ONE_TIME],
                     location: v,
-                    is_gift: A,
+                    is_gift: j,
                     sku_id: u,
                     location_stack: f,
                     checkout_design: e ? o.rS.UNIFIED : o.rS.LEGACY
                 })
-            }(0, s.ET)(), (0, c.z)(), E?.(S), S && (0, m.gB)()
+            }(0, s.ET)(), (0, c.z)(), b?.(S), S && (0, m.gB)()
         },
         onCloseRequest: () => {
-            null != t && _.has(t) && (0, i.OoC)(T)
+            null != t && p.has(t) && (0, l.OoC)(k)
         },
         onComplete: () => {
             S = !0, N?.()
         }
-    })) : (0, i.mMO)(async () => {
+    })) : (0, l.mMO)(async () => {
         let {
             default: e
         } = await Promise.all([n.e("12206"), n.e("90406")]).then(n.bind(n, 661925));
         return t => {
             let {
                 onClose: n,
-                ...l
+                ...i
             } = t;
             return (0, a.jsx)(e, {
-                ...l,
+                ...i,
                 onClose: () => {
-                    n(), E?.(!1)
+                    n(), b?.(!1)
                 }
             })
         }
     })
 }
-let j = e => {
+let A = e => {
     let {
         loadId: t,
         skuId: n,
         analyticsLocations: a,
-        onStepChange: l,
-        modalKey: i,
+        onStepChange: i,
+        modalKey: l,
         isGift: r = !1,
         giftMessage: s,
         giftingOrigin: c,
@@ -125,10 +125,10 @@ let j = e => {
         onClose: d,
         onComplete: h,
         flowSpecificOptions: {
-            onStepChange: l
+            onStepChange: i
         },
         openModalOptions: {
-            modalKey: i,
+            modalKey: l,
             onCloseCallback: m,
             onCloseRequest: x
         }

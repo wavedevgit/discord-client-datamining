@@ -39,7 +39,7 @@ var i = n(627968),
     k = n(652215),
     U = n(980504),
     P = n(985018),
-    w = n(656489);
+    w = n(973770);
 let B = L.isPlatformEmbedded || "Safari" !== o().name;
 
 function F() {
@@ -186,7 +186,7 @@ function K(e) {
             (0, g.mMO)(async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("40556"), n.e("18550")]).then(n.bind(n, 228884));
+                } = await Promise.all([n.e("40556"), n.e("43198")]).then(n.bind(n, 228884));
                 return n => (0, i.jsx)(e, {
                     ...n,
                     guildId: t.id
@@ -347,7 +347,7 @@ function Y(e) {
                     e.stopPropagation(), (0, g.mMO)(async () => {
                         let {
                             default: e
-                        } = await Promise.all([n.e("40556"), n.e("18550")]).then(n.bind(n, 228884));
+                        } = await Promise.all([n.e("40556"), n.e("43198")]).then(n.bind(n, 228884));
                         return n => (0, i.jsx)(e, {
                             ...n,
                             guildId: o.id,

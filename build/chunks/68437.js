@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(311907),
     l = n(827734),
-    r = n(397927),
-    a = n(685399),
+    a = n(397927),
+    r = n(685399),
     o = n(475889),
     c = n(693879),
     d = n(435470),
@@ -43,7 +43,7 @@ function y(e) {
         isNewChannel: D,
         muted: G,
         resolvedUnreadSetting: U
-    } = e, P = (0, s.bG)([p.Ay], () => p.Ay.getMentionCount(t.id)), w = (0, s.bG)([p.Ay], () => p.Ay.getIsMentionLowImportance(t.id)), k = (0, a.Ay)(t), V = (0, s.bG)([_.A], () => !_.A.can(S.xBc.CONNECT, t)), B = (0, o.H)(t), H = (0, s.bG)([g.A], () => g.A.hasVideo(t.id)), F = (0, h.qT)(t.id) && t.isGuildStageVoice(), K = (0, C.Ay)({
+    } = e, P = (0, s.bG)([p.Ay], () => p.Ay.getMentionCount(t.id)), w = (0, s.bG)([p.Ay], () => p.Ay.getIsMentionLowImportance(t.id)), k = (0, r.Ay)(t), V = (0, s.bG)([_.A], () => !_.A.can(S.xBc.CONNECT, t)), B = (0, o.H)(t), H = (0, s.bG)([g.A], () => g.A.hasVideo(t.id)), F = (0, h.qT)(t.id) && t.isGuildStageVoice(), K = (0, C.Ay)({
         channel: t,
         locked: V,
         video: (H || F) && null == B,
@@ -56,28 +56,28 @@ function y(e) {
     if ((0, u.v)(L)) return (0, i.jsx)(u.A, {
         locked: M
     });
-    if (D) return (0, i.jsx)(r.LpS, {
+    if (D) return (0, i.jsx)(a.LpS, {
         text: v.intl.string(v.t.y2b7CA),
         color: l.A.colors.BADGE_BACKGROUND_BRAND.css
     });
-    if (!G && U === T.e.ALL_MESSAGES && t.isForumLikeChannel() && null != W && W > 0) return (0, i.jsx)(r.Text, {
+    if (!G && U === T.e.ALL_MESSAGES && t.isForumLikeChannel() && null != W && W > 0) return (0, i.jsx)(a.Text, {
         variant: "text-xs/semibold",
         color: "text-brand",
         children: v.intl.format(v.t.GkAbqY, {
-            count: (0, r.Gub)(W)
+            count: (0, a.Gub)(W)
         })
     });
-    if (!G && t.isForumLikeChannel() && null != Y && Y > 0) return (0, i.jsx)(r.Text, {
+    if (!G && t.isForumLikeChannel() && null != Y && Y > 0) return (0, i.jsx)(a.Text, {
         variant: "text-xs/semibold",
         color: "text-muted",
-        children: (0, r.Gub)(Y)
+        children: (0, a.Gub)(Y)
     });
     let q = j?.length ?? 0;
     return null != R && R && K ? (0, i.jsx)(N.A, {
         userCount: q,
         video: H || F,
         channel: t
-    }) : y && (0, f.t)(j) && z ? (0, i.jsx)(r.LpS, {
+    }) : y && (0, f.t)(j) && z ? (0, i.jsx)(a.LpS, {
         text: v.intl.string(v.t.dI3q4h),
         color: l.A.unsafe_rawColors.RED_400.css
     }) : null != B ? (0, i.jsx)(c.z, {

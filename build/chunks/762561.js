@@ -5,9 +5,9 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    l = n(4208),
-    r = n(158954),
-    a = n(311907),
+    l = n(880013),
+    a = n(158954),
+    r = n(311907),
     o = n(397927),
     c = n(736653),
     d = n(793574),
@@ -39,7 +39,7 @@ var i = n(627968),
     U = n(518477),
     P = n(996988),
     w = n(985018),
-    k = n(374146);
+    k = n(49615);
 
 function V(e) {
     let {
@@ -69,7 +69,7 @@ function V(e) {
         })
     }, $ = H?.widgets != null && H.widgets.length > 0, {
         defaultWishlistId: Z
-    } = (0, a.cf)([p.A], () => ({
+    } = (0, r.cf)([p.A], () => ({
         defaultWishlistId: p.A.getFirstWishlistId(t.id)
     })), {
         wishlist: ee
@@ -94,7 +94,7 @@ function V(e) {
                     children: [null != X.interactionType && (0, i.jsx)(l.animated.div, {
                         style: J,
                         className: k.tB
-                    }), (0, i.jsxs)(r.d_W, {
+                    }), (0, i.jsxs)(a.d_W, {
                         children: [(0, i.jsxs)(v.A, {
                             children: [(0, i.jsx)(y.A, {
                                 user: t,

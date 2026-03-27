@@ -25,15 +25,15 @@ var r = a(627968),
     v = a(652215),
     E = a(758836),
     N = a(901123),
-    I = a(49370),
+    I = a(723468),
     S = a(985018),
-    y = a(327557),
+    y = a(102600),
     T = a(909340),
     P = a(455482);
-let j = A.A.getArticleURL(v.MVz.ORBS_REWARDS_FAQ);
+let D = A.A.getArticleURL(v.MVz.ORBS_REWARDS_FAQ);
 
-function D(e) {
-    (0, R.o8)(e), window.open(j, "_blank")
+function j(e) {
+    (0, R.o8)(e), window.open(D, "_blank")
 }
 let O = e => {
     let {
@@ -43,11 +43,11 @@ let O = e => {
         programReward: i
     } = (0, b.F)({
         location: "PremiumTenureRewardsOrbsCard"
-    }), A = (0, u.A)("(min-width: 720px)"), j = (0, _.DP)(), O = n.useMemo(() => ({
+    }), A = (0, u.A)("(min-width: 720px)"), D = (0, _.DP)(), O = n.useMemo(() => ({
         hueRotate: 25,
-        glowAmount: (0, o.M)(j) ? 2 : 8,
+        glowAmount: (0, o.M)(D) ? 2 : 8,
         blurAmount: 10
-    }), [j]);
+    }), [D]);
     if (!a || null == i) return null;
     let U = function(e, t) {
         let a = e.program_current_state,
@@ -67,7 +67,7 @@ let O = e => {
                         days: Math.max(1, n),
                         orbsCount: e.reward_amount
                     }), subheaderText: S.intl.format(I.default.tUV1vV, {
-                        helpdeskArticle: () => D(a)
+                        helpdeskArticle: () => j(a)
                     })
                 };
             case p.L.PAYMENT_PROCESSING:
@@ -79,7 +79,7 @@ let O = e => {
                             (0, R.CC)(a), (0, h.openUserSettings)(g.X.BILLING_PANEL)
                         }
                     }), headerText: S.intl.string(I.default.uuZJXR), subheaderText: S.intl.format(I.default.dkeEV7, {
-                        helpdeskArticle: () => D(a)
+                        helpdeskArticle: () => j(a)
                     })
                 };
             case p.L.PAYMENT_ERROR:
@@ -97,7 +97,7 @@ let O = e => {
                             })
                         })
                     }), headerText: S.intl.string(I.default["+O9Asn"]), subheaderText: S.intl.format(I.default.nWKEBZ, {
-                        helpdeskArticle: () => D(a)
+                        helpdeskArticle: () => j(a)
                     })
                 };
             case p.L.PROGRAM_ROLLBACK:
@@ -109,7 +109,7 @@ let O = e => {
                             (0, R.WD)(a), (0, f.pX)(N.BV.COLLECTIBLES_SHOP_WITH_TAB(E.G2.ORBS))
                         }
                     }), headerText: S.intl.string(I.default.zF0HnJ), subheaderText: S.intl.format(I.default["5tzNTa"], {
-                        helpdeskArticle: () => D(a)
+                        helpdeskArticle: () => j(a)
                     })
                 };
             case p.L.PREMIUM_CHURNING:
@@ -122,7 +122,7 @@ let O = e => {
                             (0, R.Jv)(a), (0, h.openUserSettings)(g.X.SUBSCRIPTIONS_PANEL)
                         }
                     }), headerText: S.intl.string(I.default.ISnOet), subheaderText: S.intl.format(I.default["vjaRZ/"], {
-                        helpdeskArticle: () => D(a)
+                        helpdeskArticle: () => j(a)
                     })
                 };
             default:

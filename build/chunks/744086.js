@@ -24,9 +24,9 @@ var i = s(141931),
     A = s(502075),
     y = s(753070),
     S = s(731854),
-    C = s(191850),
+    C = s(332800),
     b = s(985018),
-    w = s(894445);
+    w = s(479222);
 let I = [{
         value: y.jQ.PRESET_AUTO,
         canUse: e => e !== i.fS.CAMERA && (0, h.eO)({

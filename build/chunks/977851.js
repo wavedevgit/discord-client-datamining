@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(735438),
+    a = n.n(l),
+    r = n(735438),
     o = n(311907),
     c = n(367513),
     d = n(688810),
@@ -24,7 +24,7 @@ var i = n(627968),
     C = n(985018);
 
 function I(e) {
-    let t = (0, o.bG)([_.A], () => !(0, a.isEmpty)(_.A.getTypingUsers(e)), [e]),
+    let t = (0, o.bG)([_.A], () => !(0, r.isEmpty)(_.A.getTypingUsers(e)), [e]),
         n = (0, o.bG)([m.A], () => m.A.getVoiceChannelId() === e, [e]),
         {
             unreadCount: i,
@@ -48,15 +48,15 @@ function N(e) {
     } = e, {
         unreadCount: s,
         mentionCount: l,
-        isTyping: r,
-        voiceChannelIsSelected: a
+        isTyping: a,
+        voiceChannelIsSelected: r
     } = I(n);
     return (0, i.jsx)(f.A, {
         className: t,
         unreadCount: s,
         mentionCount: l,
-        isTyping: r,
-        canBadge: a
+        isTyping: a,
+        canBadge: r
     })
 }
 
@@ -64,7 +64,7 @@ function b(e) {
     let t, {
             channelId: n,
             className: l,
-            showingClassName: a,
+            showingClassName: r,
             onClick: A,
             inPopout: m,
             showRequestToSpeakSidebar: _,
@@ -88,14 +88,14 @@ function b(e) {
                 unreadCount: t,
                 mentionCount: n,
                 isTyping: i
-            } = I(e), [l, r] = s.useState(!1);
+            } = I(e), [l, a] = s.useState(!1);
             return s.useEffect(() => {
-                r(t > 0);
+                a(t > 0);
                 let e = setTimeout(() => {
-                    r(!1)
+                    a(!1)
                 }, g.R);
                 return () => {
-                    clearTimeout(e), r(!1)
+                    clearTimeout(e), a(!1)
                 }
             }, [t]), {
                 isShowing: l || n > 0 || i,
@@ -146,8 +146,8 @@ function b(e) {
         "aria-label": w.join(", "),
         iconComponent: M,
         tooltipPosition: "bottom",
-        wrapperClassName: r()(l, null != a && {
-            [a]: j
+        wrapperClassName: a()(l, null != r && {
+            [r]: j
         }),
         forceTooltipOpen: G,
         ...b

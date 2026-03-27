@@ -1,0 +1,7 @@
+/** chunk id: 670140 params = (module,exports,require) **/
+e.exports = {
+    kL: "container__87dda",
+    v9: "placeholderItem__87dda",
+    KJ: "chatTextAreaPlaceholder__87dda",
+    rx: "appLauncherPlaceholder__87dda"
+}

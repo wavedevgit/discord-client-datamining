@@ -1,23 +1,23 @@
 /** chunk id: 624826 params = (module,exports,require) **/
-E.d(t, {
-    t: () => a
+t.d(n, {
+    t: () => l
 });
-var e = E(392107),
-    i = E(954571),
-    n = E(486020),
-    o = E(652215);
+var a = t(392107),
+    i = t(954571),
+    r = t(486020),
+    o = t(652215);
 
-function a(_) {
+function l(e) {
     let {
-        avatarHash: t,
-        avatarId: E,
-        isGuildProfile: a = !1,
-        avatarAssetOrigin: S = e.E.NEW_ASSET
-    } = _;
+        avatarHash: n,
+        avatarId: t,
+        isGuildProfile: l = !1,
+        avatarAssetOrigin: d = a.E.NEW_ASSET
+    } = e;
     i.default.track(o.HAw.USER_AVATAR_UPDATED, {
-        animated: (0, n.VI)(t),
-        is_guild_profile: a,
-        recent_avatar_id: S === e.E.ARCHIVED_ASSET ? Number(E) : void 0,
-        is_edited_recent_avatar: S === e.E.EDITED_ARCHIVED_ASSET
+        animated: (0, r.VI)(n),
+        is_guild_profile: l,
+        recent_avatar_id: d === a.E.ARCHIVED_ASSET ? Number(t) : void 0,
+        is_edited_recent_avatar: d === a.E.EDITED_ARCHIVED_ASSET
     })
 }

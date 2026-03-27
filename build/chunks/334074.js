@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(64700),
     s = n(311907),
     l = n(932001),
-    r = n(355898),
-    a = n(574560),
+    a = n(355898),
+    r = n(574560),
     o = n(652215);
 
 function c(e) {
@@ -17,7 +17,7 @@ function c(e) {
         dismissibleContent: c,
         dismissibleContentGroupName: d,
         bypassAutoDismiss: u = !1
-    } = e, h = (0, s.bG)([a.A], () => null != t ? a.A.getGameUpsellDismissal(t.id, c) : null), [A, m] = (0, i.useState)(!1);
+    } = e, h = (0, s.bG)([r.A], () => null != t ? r.A.getGameUpsellDismissal(t.id, c) : null), [A, m] = (0, i.useState)(!1);
     (0, i.useEffect)(() => {
         let e = null != h ? h.dismissedAt + Math.min(864e5 * Math.pow(2, h.timesDismissed - 1), 24192e5) : 0,
             t = 0,
@@ -35,7 +35,7 @@ function c(e) {
     return {
         shouldShow: p === c,
         markAsDismissed: e => {
-            null != t && ((0, r.M)(t.id, c), g(e))
+            null != t && ((0, a.M)(t.id, c), g(e))
         }
     }
 }

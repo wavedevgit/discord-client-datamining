@@ -6,7 +6,7 @@ var l = n(627968),
     s = n(64700),
     i = n(827734),
     a = n(397927),
-    r = n(764788);
+    r = n(347367);
 let u = s.forwardRef(function(e, t) {
     let {
         isInventory: n,

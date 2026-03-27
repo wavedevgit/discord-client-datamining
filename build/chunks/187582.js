@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(607399),
-    r = n(311907),
-    a = n(397927),
+    a = n(311907),
+    r = n(397927),
     o = n(442433),
     c = n(414798),
     d = n(110574),
@@ -29,43 +29,43 @@ var i = n(627968),
     T = n(837921),
     v = n(652215),
     y = n(985018),
-    j = n(922936);
+    j = n(305733);
 let R = [],
     O = T.Ay.getEnableHardwareAcceleration();
 
 function L(e) {
     let {
         user: t,
-        channel: a,
+        channel: r,
         status: u,
         activities: h
-    } = e, A = (0, r.bG)([E.A], () => null != E.A.getTypingUsers(a.id)[t.id]), p = (0, r.bG)([C.default], () => C.default.getCurrentUser()), I = (0, r.bG)([f.A], () => f.A.isMobileOnline(t.id)), b = (0, r.bG)([x.A], () => x.A.getNickname(t.id)), T = (0, m.A)(t.id), j = s.useRef(null), R = e => {
+    } = e, A = (0, a.bG)([E.A], () => null != E.A.getTypingUsers(r.id)[t.id]), p = (0, a.bG)([C.default], () => C.default.getCurrentUser()), I = (0, a.bG)([f.A], () => f.A.isMobileOnline(t.id)), b = (0, a.bG)([x.A], () => x.A.getNickname(t.id)), T = (0, m.A)(t.id), j = s.useRef(null), R = e => {
         (0, o.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("62891"), n.e("30915")]).then(n.bind(n, 228006));
+            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("62891"), n.e("69049")]).then(n.bind(n, 228006));
             return n => (0, i.jsx)(e, {
                 ...n,
                 user: t,
-                channel: a
+                channel: r
             })
         })
     }, L = () => {
         let e = `@${S.Ay.getUserTag(t,{decoration:"never"})}`,
             n = `<@${t.id}>`;
         N._.dispatch(v.jej.TEXTAREA_FOCUS, {
-            channelId: a.id
+            channelId: r.id
         }), N._.dispatchToLastSubscribed(v.jej.INSERT_TEXT, {
             plainText: e,
             rawText: n
-        }), c.A.startTyping(a.id)
+        }), c.A.startTyping(r.id)
     }, M = (0, _.r)({
         user: t
     }), [D, G] = s.useState(!1);
     return (0, i.jsx)(g.A, {
         targetElementRef: j,
         user: t,
-        channelId: a.id,
+        channelId: r.id,
         position: l.Fr ? "window_center" : "left",
         spacing: 16,
         onShiftClick: L,
@@ -81,14 +81,14 @@ function L(e) {
                 ref: j,
                 user: t,
                 currentUser: p,
-                isOwner: t.id === a.ownerId,
+                isOwner: t.id === r.ownerId,
                 ownerTooltipText: y.intl.string(y.t["MRXZ+x"]),
                 shouldAnimateStatus: O,
                 isTyping: A,
                 status: u,
                 activities: h,
                 applicationStream: T,
-                channel: a,
+                channel: r,
                 onContextMenu: R,
                 selected: D,
                 isMobile: I,
@@ -123,7 +123,7 @@ function D(e) {
         analyticsLocations: o
     } = (0, h.Ay)(u.A.MEMBER_LIST), {
         listItems: c
-    } = (0, r.bG)([x.A, C.default, f.A], () => {
+    } = (0, a.bG)([x.A, C.default, f.A], () => {
         let e = (0, b.F)(t.recipients, C.default),
             n = {};
         for (let t of e) x.A.isFriend(t.id) || t.id === C.default.getCurrentUser()?.id ? n[t.id] = {
@@ -160,7 +160,7 @@ function D(e) {
             className: j.kL,
             children: (0, i.jsx)("aside", {
                 className: j.yg,
-                children: (0, i.jsxs)(a.HOs, {
+                children: (0, i.jsxs)(r.HOs, {
                     className: j.ol,
                     fade: !0,
                     children: [(0, i.jsxs)(p.A, {

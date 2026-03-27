@@ -1,123 +1,123 @@
 /** chunk id: 482644 params = (module,exports,require) **/
 "use strict";
-n.r(t), n.d(t, {
-    baseRules: () => E,
-    customRules: () => T
+l.r(t), l.d(t, {
+    baseRules: () => C,
+    customRules: () => y
 });
-var l = n(627968),
-    i = n(64700),
-    s = n(503698),
-    r = n.n(s),
-    a = n(791332),
-    o = n.n(a),
-    u = n(397927),
-    c = n(398590),
-    d = n(46054),
-    m = n(976860),
-    h = n(780964),
-    g = n(840065),
-    A = n(954571),
-    f = n(652215),
-    p = n(559868),
-    x = n(582756);
-let C = o().defaultRules.link,
-    N = {
-        section: f.JJy.SETTINGS_CHANGELOG
+var a = l(627968),
+    n = l(64700),
+    r = l(503698),
+    s = l.n(r),
+    i = l(791332),
+    o = l.n(i),
+    d = l(397927),
+    c = l(398590),
+    u = l(46054),
+    _ = l(976860),
+    m = l(780964),
+    h = l(840065),
+    p = l(954571),
+    g = l(652215),
+    b = l(559868),
+    f = l(266585);
+let x = o().defaultRules.link,
+    k = {
+        section: g.JJy.SETTINGS_CHANGELOG
     },
-    v = e => {
+    A = e => {
         let {
             level: t,
-            children: n,
-            className: l
-        } = e, s = (0, u.$Il)(), r = parseInt(t, 10), a = isNaN(r) ? 1 : r;
-        return i.createElement(`h${s+a-1}`, {
-            className: l
-        }, n)
+            children: l,
+            className: a
+        } = e, r = (0, d.$Il)(), s = parseInt(t, 10), i = isNaN(s) ? 1 : s;
+        return n.createElement(`h${r+i-1}`, {
+            className: a
+        }, l)
     },
-    E = null != d.A ? d.A.defaultRules : null,
-    T = {
+    C = null != u.A ? u.A.defaultRules : null,
+    y = {
         link: {
-            parse(e, t, n) {
-                let l, i = e[2],
-                    s = i.startsWith("https://discordapp.com/nitro") || i.startsWith("https://discord.com/nitro"),
-                    r = i.startsWith("/activities");
-                return l = s ? e => {
-                    A.default.track(f.HAw.PREMIUM_PROMOTION_OPENED, {
-                        location: N
-                    }), (0, g.openUserSettings)(h.X.NITRO_PANEL), n.changeLog.track(f.HAw.CHANGE_LOG_CTA_CLICKED, {
+            parse(e, t, l) {
+                let a, n = e[2],
+                    r = n.startsWith("https://discordapp.com/nitro") || n.startsWith("https://discord.com/nitro"),
+                    s = n.startsWith("/activities");
+                return a = r ? e => {
+                    p.default.track(g.HAw.PREMIUM_PROMOTION_OPENED, {
+                        location: k
+                    }), (0, h.openUserSettings)(m.X.NITRO_PANEL), l.changeLog.track(g.HAw.CHANGE_LOG_CTA_CLICKED, {
                         cta_type: "nitro"
-                    }), (0, u.OoC)(p.lb), e.preventDefault()
-                } : r ? e => {
-                    (0, m.pX)(i), n.changeLog.track(f.HAw.CHANGE_LOG_CTA_CLICKED, {
-                        ...A.default.getCampaignParams(i)
-                    }), (0, c.bz)(), (0, u.OoC)(p.lb), e.preventDefault()
+                    }), (0, d.OoC)(b.lb), e.preventDefault()
+                } : s ? e => {
+                    (0, _.pX)(n), l.changeLog.track(g.HAw.CHANGE_LOG_CTA_CLICKED, {
+                        ...p.default.getCampaignParams(n)
+                    }), (0, c.bz)(), (0, d.OoC)(b.lb), e.preventDefault()
                 } : () => {
-                    n && "function" == typeof n.onLinkClick && n.onLinkClick(i), n.changeLog.track(f.HAw.CHANGE_LOG_CTA_CLICKED, {
-                        target: i,
+                    l && "function" == typeof l.onLinkClick && l.onLinkClick(n), l.changeLog.track(g.HAw.CHANGE_LOG_CTA_CLICKED, {
+                        target: n,
                         cta_type: "inline_link",
-                        ...A.default.getCampaignParams(i)
+                        ...p.default.getCampaignParams(n)
                     })
                 }, {
-                    ...C.parse(e, t, n),
-                    callToAction: l
+                    ...x.parse(e, t, l),
+                    callToAction: a
                 }
             },
-            react: (e, t, n) => (0, l.jsx)(u.MzZ, {
+            react: (e, t, l) => (0, a.jsx)(d.MzZ, {
                 href: o().sanitizeUrl(e.target),
                 title: e.title,
                 onClick: e.callToAction,
                 target: "_blank",
                 className: e.callToAction ? "cta" : void 0,
-                children: t(e.content, n)
-            }, n.key)
+                children: t(e.content, l)
+            }, l.key)
         },
         lheading: e => ({
-            react: (t, n, i) => {
-                var s;
-                return (0, l.jsx)(v, {
+            react: (t, l, n) => {
+                var r;
+                return (0, a.jsx)(A, {
                     level: t.level,
-                    className: r()(x["heading-md/bold"], ...null == (s = t.className) ? [] : s.split(" ").map(t => e[t])),
-                    children: n(t.content, i)
-                }, i.key)
+                    className: s()(f["heading-md/bold"], ...null == (r = t.className) ? [] : r.split(" ").map(t => e[t])),
+                    children: l(t.content, n)
+                }, n.key)
             }
         }),
         heading: {
-            react: (e, t, n) => (0, l.jsx)(v, {
+            react: (e, t, l) => (0, a.jsx)(A, {
                 level: e.level,
-                className: x["heading-md/bold"],
-                children: t(e.content, n)
-            }, n.key)
+                className: f["heading-md/bold"],
+                children: t(e.content, l)
+            }, l.key)
         },
         image: {
-            react(e, t, i) {
-                let s = n(274516)(`./${e.target}`);
-                return (0, l.jsx)("img", {
+            react(e, t, n) {
+                let r = l(274516)(`./${e.target}`);
+                return (0, a.jsx)("img", {
                     alt: e.alt,
-                    src: s
-                }, i.key)
+                    src: r
+                }, n.key)
             }
         },
         blockQuote: {
-            react: E?.blockQuote.react
+            react: C?.blockQuote.react
         },
         list: e => ({
-            react(t, n, i) {
-                let s = t.ordered ? "ol" : "ul",
-                    a = t.items.map((t, s) => (0, l.jsx)("li", {
-                        className: r()(x["text-md/normal"], e.listItem),
-                        children: n(t, i)
-                    }, s));
-                return (0, l.jsx)(s, {
+            react(t, l, n) {
+                let r = t.ordered ? "ol" : "ul",
+                    i = t.items.map((t, r) => (0, a.jsx)("li", {
+                        className: s()(f["text-md/normal"], e.listItem),
+                        children: l(t, n)
+                    }, r));
+                return (0, a.jsx)(r, {
                     className: e.list,
                     start: t.start,
-                    children: a
-                }, i.key)
+                    children: i
+                }, n.key)
             }
         }),
         paragraph: e => ({
-            react: (t, n, i) => (0, l.jsx)("p", {
-                className: r()(x["text-md/normal"], e.paragraph),
-                children: n(t.content, i)
-            }, i.key)
+            react: (t, l, n) => (0, a.jsx)("p", {
+                className: s()(f["text-md/normal"], e.paragraph),
+                children: l(t.content, n)
+            }, n.key)
         })
     }

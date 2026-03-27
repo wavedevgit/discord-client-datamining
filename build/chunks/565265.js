@@ -6,15 +6,15 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(621466),
+    a = n.n(l),
+    r = n(621466),
     o = n(397927),
     c = n(442433),
     d = n(46054),
     u = n(742589),
     h = n(985018),
-    A = n(170028),
-    m = n(782691);
+    A = n(708700),
+    m = n(830684);
 
 function _(e) {
     return e.matches("a") || "highlight" === e.className || e.className.includes("mention")
@@ -22,10 +22,10 @@ function _(e) {
 class p extends s.Component {
     handleOpenTopic = e => {
         let t = e.target;
-        if ((0, a.vq)(t)) {
+        if ((0, r.vq)(t)) {
             if (_(t)) return;
             let e = t.parentNode;
-            if ((0, a.vq)(e) && _(e)) return
+            if ((0, r.vq)(e) && _(e)) return
         }(0, o.mMO)(async () => {
             let {
                 default: e
@@ -44,7 +44,7 @@ class p extends s.Component {
         (0, c.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("70303"), n.e("17425"), n.e("40878")]).then(n.bind(n, 340968));
+            } = await Promise.all([n.e("86097"), n.e("17425"), n.e("40878")]).then(n.bind(n, 340968));
             return n => (0, i.jsx)(e, {
                 ...n,
                 channel: t,
@@ -61,7 +61,7 @@ class p extends s.Component {
         let t = null != e.topic && e.topic.length > 0;
         return null != e.linkedLobby || t ? (0, i.jsxs)(s.Fragment, {
             children: [(0, i.jsx)(u.A.Divider, {}), (0, i.jsxs)("div", {
-                className: r()(A.At, A.lu, m.PT),
+                className: a()(A.At, A.lu, m.PT),
                 onContextMenu: this.handleContextMenu,
                 onClick: this.handleOpenTopic,
                 children: [(0, i.jsx)(o.DUT, {

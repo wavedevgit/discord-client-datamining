@@ -1,30 +1,30 @@
 /** chunk id: 839671 params = (module,exports,require) **/
 n.d(t, {
-    A: () => j,
-    K: () => A
+    A: () => A,
+    K: () => j
 });
 var a = n(627968),
-    l = n(64700),
-    i = n(503698),
-    r = n.n(i),
+    i = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(505779),
     c = n(990078),
     o = n(397927),
     d = n(409626),
     u = n(37948),
     m = n(985018),
-    x = n(282063),
-    h = n(808900);
+    x = n(325952),
+    h = n(123513);
 let f = [s.V.OFFICIAL, s.V.TWITTER, s.V.YOUTUBE],
     g = {
         colorClass: h.wP
     },
-    p = {
+    _ = {
         size: "xs",
         colorClass: h.wP
     };
 
-function _(e, t) {
+function p(e, t) {
     switch (e.category) {
         case s.V.OFFICIAL:
             return {
@@ -84,12 +84,12 @@ function v(e) {
         website: t,
         trackAction: n
     } = e, {
-        action: i,
+        action: l,
         icon: r,
         title: s
-    } = _(t, g), d = l.useCallback(() => {
-        n(i)
-    }, [i, n]);
+    } = p(t, g), d = i.useCallback(() => {
+        n(l)
+    }, [l, n]);
     return (0, a.jsx)(c.m, {
         text: s,
         children: (0, a.jsx)(o.MzZ, {
@@ -102,19 +102,19 @@ function v(e) {
         })
     })
 }
-let j = function(e) {
+let A = function(e) {
     let {
         detectedGame: t,
         trackAction: n
     } = e;
     if (null == t.websites) return null;
-    let l = t.websites.filter(e => {
+    let i = t.websites.filter(e => {
         let {
             category: t
         } = e;
         return f.includes(t)
     }).sort((e, t) => e.category - t.category);
-    return 0 === l.length ? null : (0, a.jsxs)("div", {
+    return 0 === i.length ? null : (0, a.jsxs)("div", {
         children: [(0, a.jsx)(o.Heading, {
             className: x.bV,
             variant: "text-xs/semibold",
@@ -122,7 +122,7 @@ let j = function(e) {
             children: m.intl.string(m.t["Oj3o1/"])
         }), (0, a.jsx)("div", {
             className: r()(x.nM, x.mX),
-            children: l.map(e => (0, a.jsx)(v, {
+            children: i.map(e => (0, a.jsx)(v, {
                 website: e,
                 trackAction: n
             }, e.url))
@@ -130,17 +130,17 @@ let j = function(e) {
     })
 };
 
-function A(e) {
+function j(e) {
     let {
         website: t,
         trackAction: n
-    } = e, i = (0, u.A)(), {
+    } = e, l = (0, u.A)(), {
         action: r,
         icon: s,
         title: d
-    } = _(t, p), m = l.useCallback(() => {
-        n(r), i(t.url)
-    }, [r, i, n, t.url]);
+    } = p(t, _), m = i.useCallback(() => {
+        n(r), l(t.url)
+    }, [r, l, n, t.url]);
     return (0, a.jsx)(c.m, {
         text: d,
         children: (0, a.jsx)(o.DUT, {

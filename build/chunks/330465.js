@@ -6,9 +6,9 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(131346),
-    o = n(4208),
+    a = n.n(l),
+    r = n(131346),
+    o = n(880013),
     c = n(837381),
     d = n(607399),
     u = n(417597),
@@ -34,7 +34,7 @@ var i = n(627968),
     O = n(65611),
     L = n(652215),
     M = n(985018),
-    D = n(604418);
+    D = n(135759);
 let G = {
     analyticsSource: {
         page: L.liQ.GUILD_CHANNEL,
@@ -47,7 +47,7 @@ function U(e, t) {
     (0, _.L3)(e, async () => {
         let {
             default: e
-        } = await Promise.all([n.e("43600"), n.e("68587"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("91872"), n.e("35894"), n.e("50796"), n.e("8458"), n.e("11810"), n.e("34656"), n.e("30453"), n.e("56475"), n.e("54469"), n.e("48892")]).then(n.bind(n, 544676));
+        } = await Promise.all([n.e("43600"), n.e("68587"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("33144"), n.e("35894"), n.e("50796"), n.e("8458"), n.e("11810"), n.e("4260"), n.e("30453"), n.e("56475"), n.e("54469"), n.e("70522")]).then(n.bind(n, 544676));
         return n => (0, i.jsx)(e, {
             ...n,
             guild: t
@@ -89,7 +89,7 @@ let P = s.memo(function(e) {
         },
         [{
             dragging: el
-        }, er] = (0, a.i)({
+        }, ea] = (0, r.i)({
             type: b.PJ.GUILD,
             item: () => (requestAnimationFrame(() => {
                 l?.()
@@ -104,7 +104,7 @@ let P = s.memo(function(e) {
                 dragging: e.isDragging()
             })
         }),
-        ea = (0, c.Vd)(ee ?? L.dJq, null != et ? 2 : 1),
+        er = (0, c.Vd)(ee ?? L.dJq, null != et ? 2 : 1),
         [eo, ec] = s.useState(!1),
         ed = !q && eo,
         [eu, eh] = s.useState(!1),
@@ -172,7 +172,7 @@ let P = s.memo(function(e) {
             onKeyDown: eC,
             icon: (0, E.Iv)(w, 2 * eT, ed && k, !0),
             selected: V || ed,
-            ...ea,
+            ...er,
             "aria-setsize": $,
             "aria-posinset": Z,
             "aria-selected": V
@@ -180,7 +180,7 @@ let P = s.memo(function(e) {
             selected: V,
             children: (0, i.jsx)("div", {
                 ref: z ? e => {
-                    er(e)
+                    ea(e)
                 } : void 0,
                 "data-dnd-name": w.name,
                 "data-drop-hovering": eA,
@@ -198,7 +198,7 @@ let P = s.memo(function(e) {
                     onKeyDown: eC,
                     icon: (0, E.Iv)(w, 2 * eT, ed && k, !0),
                     selected: V || ed,
-                    ...ea,
+                    ...er,
                     "aria-setsize": $,
                     "aria-posinset": Z,
                     "aria-selected": V
@@ -211,14 +211,14 @@ let P = s.memo(function(e) {
         }),
         eO = ep ? (0, i.jsx)(o.animated.div, {
             ref: z ? e => {
-                er(e)
+                ea(e)
             } : void 0,
             "data-dnd-name": w.name,
             style: {
                 scale: null == Q ? 1 : Q
             },
             "data-drop-hovering": eA,
-            className: r()(D.rN, {
+            className: a()(D.rN, {
                 [D.p9]: q,
                 [D.oR]: eA,
                 [D.wH]: eA || V
@@ -234,7 +234,7 @@ let P = s.memo(function(e) {
             style: {
                 scale: null == Q ? 1 : Q
             },
-            className: r()(D.rN, {
+            className: a()(D.rN, {
                 [D.p9]: q,
                 [D.oR]: eA,
                 [D.wH]: eA || V

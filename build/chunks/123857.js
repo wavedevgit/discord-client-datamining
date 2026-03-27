@@ -34,7 +34,7 @@ var i = n(627968),
     y = n(49999),
     O = n(788868),
     R = n(985018),
-    L = n(158040);
+    L = n(882527);
 let P = () => {
     (0, h.Dr)(a.M.CLIENT_THEMES_SPARKLE_PREVIEW, {
         dismissAction: y.i.PRIMARY,

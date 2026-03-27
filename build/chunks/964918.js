@@ -6,9 +6,9 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(735438),
-    o = n.n(a),
+    a = n.n(l),
+    r = n(735438),
+    o = n.n(r),
     c = n(311907),
     d = n(397927),
     u = n(730134),
@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(652215),
     I = n(37411),
     N = n(985018),
-    b = n(175397),
-    S = n(442078);
+    b = n(703046),
+    S = n(467935);
 
 function T(e) {
     let {
@@ -37,11 +37,11 @@ function T(e) {
                 i = g.Ay.lastMessageId(t.id);
             return E.default.compare(n, i)
         }).reverse().value()
-    }), a = t.isForumLikeChannel() ? 5 : 3, u = t.isForumLikeChannel() ? d.bSJ : d.ysw;
+    }), r = t.isForumLikeChannel() ? 5 : 3, u = t.isForumLikeChannel() ? d.bSJ : d.ysw;
     return s.useEffect(() => {
         (0, m.TE)()
     }, []), (0, i.jsxs)("div", {
-        className: r()(S.popover, b.SW),
+        className: a()(S.popover, b.SW),
         children: [(0, i.jsx)(d.Text, {
             variant: "text-sm/medium",
             color: "text-muted",
@@ -49,9 +49,9 @@ function T(e) {
             children: t.isForumLikeChannel() ? N.intl.string(N.t.ioVdO2) : N.intl.string(N.t.VNYs2v)
         }), (0, i.jsxs)("div", {
             className: b.p_,
-            children: [l.slice(0, t.isForumLikeChannel() ? l.length : a).map(e => (0, i.jsx)(v, {
+            children: [l.slice(0, t.isForumLikeChannel() ? l.length : r).map(e => (0, i.jsx)(v, {
                 thread: e
-            }, e.id)).filter(e => s.isValidElement(e)).slice(0, a), (0, i.jsxs)(d.DUT, {
+            }, e.id)).filter(e => s.isValidElement(e)).slice(0, r), (0, i.jsxs)(d.DUT, {
                 className: b.nM,
                 onClick: () => {
                     t.isForumLikeChannel() ? (0, h.iN)(t.id) : (0, d.mMO)(async () => {

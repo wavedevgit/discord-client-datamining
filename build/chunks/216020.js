@@ -1,22 +1,22 @@
 /** chunk id: 216020 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => r
+    A: () => a
 });
 var i = n(627968),
     s = n(158954),
-    l = n(587933);
+    l = n(860496);
 
-function r(e) {
+function a(e) {
     let {
         title: t,
         description: n,
-        onClick: r
+        onClick: a
     } = e;
     return (0, i.jsxs)("div", {
         className: l.S,
         children: [(0, i.jsx)(s.DUT, {
-            onClick: r,
+            onClick: a,
             className: l.H,
             children: (0, i.jsx)(s.EYj, {
                 variant: "text-sm/semibold",

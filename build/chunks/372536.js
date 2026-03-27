@@ -6,10 +6,10 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    r = n(825244),
-    a = n(652215),
+    a = n(825244),
+    r = n(652215),
     o = n(985018),
-    c = n(604927);
+    c = n(3580);
 let d = e => {
     let {
         guild: t,
@@ -18,13 +18,13 @@ let d = e => {
         (0, l.mMO)(async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("43600"), n.e("67505")]).then(n.bind(n, 234355));
+            } = await Promise.all([n.e("43600"), n.e("71281")]).then(n.bind(n, 234355));
             return n => (0, i.jsx)(e, {
                 ...n,
                 guild: t,
-                source: a.PE1.HUB_DIRECTORY,
+                source: r.PE1.HUB_DIRECTORY,
                 analyticsLocation: {
-                    section: a.JJy.HUB_WELCOME_CTA
+                    section: r.JJy.HUB_WELCOME_CTA
                 }
             })
         })
@@ -45,13 +45,13 @@ let d = e => {
             variant: "text-md/normal",
             className: c.YI,
             children: o.intl.string(o.t.WypE0i)
-        }), null != d ? (0, i.jsx)(r.E, {
+        }), null != d ? (0, i.jsx)(a.E, {
             className: c.c5,
             iconUrl: n(928202),
             header: o.intl.string(o.t.hyK15i),
             completed: !1,
             onClick: d
-        }) : null, (0, i.jsx)(r.E, {
+        }) : null, (0, i.jsx)(a.E, {
             className: c.c5,
             iconUrl: n(799258),
             header: o.intl.string(o.t.L4bwJ9),

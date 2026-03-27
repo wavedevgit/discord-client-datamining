@@ -44,7 +44,7 @@ var G = n(172799),
     F = n(771016),
     M = n(396574),
     V = n(985018),
-    W = n(885106);
+    W = n(153335);
 c.Ay.initialize();
 let H = "register",
     K = "login";

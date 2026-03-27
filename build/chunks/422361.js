@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(451988),
     c = n(990078),
     d = n(397927),
@@ -55,7 +55,7 @@ n(281405);
 var Q = n(652215),
     $ = n(349828),
     Z = n(985018),
-    ee = n(928409);
+    ee = n(99566);
 class et extends K.Ay {
     state = {
         popoutToShow: null,
@@ -81,17 +81,17 @@ class et extends K.Ay {
             unverifiedAccount: i,
             needSubscriptionToAccess: s,
             enableOpenTIVForPing: l,
-            mentionCount: r
+            mentionCount: a
         } = this.props;
         i && this.setState({
             shouldShowGuildVerificationPopout: !0
         });
-        let a = l && r > 0;
-        a && u.A.updateChatOpen(n.id, !0), I.A.handleVoiceConnect({
+        let r = l && a > 0;
+        r && u.A.updateChatOpen(n.id, !0), I.A.handleVoiceConnect({
             channel: n,
             connected: t,
             needSubscriptionToAccess: s,
-            routeDirectlyToChannel: a,
+            routeDirectlyToChannel: r,
             locked: e
         })
     };
@@ -245,7 +245,7 @@ class et extends K.Ay {
             asContainer: !0,
             text: Z.intl.string(Z.t.ZXxLQg),
             children: (0, i.jsx)(d.DUT, {
-                className: r()(ee.Xs, n ? ee.Tf : null),
+                className: a()(ee.Xs, n ? ee.Tf : null),
                 onClick: () => {
                     u.A.updateChatOpen(e.id, !0), (0, M.iN)(e.id)
                 },
@@ -280,7 +280,7 @@ class et extends K.Ay {
             connected: n,
             unread: s,
             resolvedUnreadSetting: l,
-            mentionCount: a,
+            mentionCount: r,
             locked: o,
             sorting: u,
             isUserOver: h,
@@ -309,7 +309,7 @@ class et extends K.Ay {
             location: "VoiceChannel"
         }), M = y || j, U = (0, i.jsxs)("li", {
             ref: this.ref,
-            className: r()(this.getModeClass(), {
+            className: a()(this.getModeClass(), {
                 [ee.r9]: this.isDisabled(),
                 [ee.fy]: y
             }),
@@ -337,7 +337,7 @@ class et extends K.Ay {
                         children: (0, i.jsxs)(Y.Ay, {
                             ref: this.channelItemRef,
                             className: ee.Ki,
-                            iconClassName: r()({
+                            iconClassName: a()({
                                 [ee.Gj]: I || v || M
                             }),
                             hasActiveEvent: I,
@@ -346,7 +346,7 @@ class et extends K.Ay {
                             connected: n,
                             unread: n ? s : void 0,
                             resolvedUnreadSetting: l,
-                            mentionCount: a,
+                            mentionCount: r,
                             locked: o,
                             subtitle: this.renderSubtitle(),
                             onClick: () => {
@@ -360,7 +360,7 @@ class et extends K.Ay {
                             "aria-label": (0, x.Ay)({
                                 channel: e,
                                 unread: s,
-                                mentionCount: a,
+                                mentionCount: r,
                                 voiceStates: R,
                                 embeddedActivitiesCount: N.length,
                                 isSubscriptionGated: b
@@ -397,13 +397,13 @@ function ei(e) {
         channel: n,
         disableSorting: s,
         isFavoriteCategory: l,
-        selected: r,
+        selected: a,
         collapsed: o,
         voiceStates: c
-    } = e, d = (0, a.cf)([V.Ay], () => ({
+    } = e, d = (0, r.cf)([V.Ay], () => ({
         unread: V.Ay.hasUnread(n.id),
         mentionCount: V.Ay.getMentionCount(n.id)
-    })), u = (0, a.bG)([B.Ay], () => B.Ay.resolveUnreadSetting(n)), h = (0, a.cf)([U.A, w.A, k.A], () => {
+    })), u = (0, r.bG)([B.Ay], () => B.Ay.resolveUnreadSetting(n)), h = (0, r.cf)([U.A, w.A, k.A], () => {
         let e = U.A.getChannel(n.parent_id),
             i = w.A.getCheck(n.guild_id);
         return {
@@ -414,10 +414,10 @@ function ei(e) {
             bypassLimit: k.A.can(Q.xBc.MOVE_MEMBERS, n),
             unverifiedAccount: !i.canChat
         }
-    }), A = (0, a.bG)([H.A], () => H.A.hasVideo(n.id)), m = (0, _.Ay)(n), p = (0, C.Ay)(n), x = (0, y.Qs)(n.id), E = (0, a.bG)([f.A], () => null != f.A.getStartTime(n), [n]), {
+    }), A = (0, r.bG)([H.A], () => H.A.hasVideo(n.id)), m = (0, _.Ay)(n), p = (0, C.Ay)(n), x = (0, y.Qs)(n.id), E = (0, r.bG)([f.A], () => null != f.A.getStartTime(n), [n]), {
         isSubscriptionGated: I,
         needSubscriptionToAccess: N
-    } = (0, v.A)(n.id), S = (0, b.A)(), T = (0, a.bG)([B.Ay], () => B.Ay.isFavorite(t.id, n.id)), j = e.connected || S?.channelId === n.id, {
+    } = (0, v.A)(n.id), S = (0, b.A)(), T = (0, r.bG)([B.Ay], () => B.Ay.isFavorite(t.id, n.id)), j = e.connected || S?.channelId === n.id, {
         enableHangStatus: O,
         showEmptyChannelTopic: M
     } = (0, R.$j)({
@@ -435,7 +435,7 @@ function ei(e) {
         enableWaveformIcon: P
     } = (0, g.b)(t.id, "VoiceChannel"), F = null != c && c.length > 0, K = G && F, Y = P && F, z = (0, W.A)({
         channel: n,
-        isChannelSelected: r,
+        isChannelSelected: a,
         isChannelCollapsed: o,
         voiceStates: c,
         isSubscriptionGated: I,

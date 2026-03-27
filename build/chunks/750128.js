@@ -1,58 +1,58 @@
 /** chunk id: 750128 params = (module,exports,require) **/
-let r, i, a, o, l;
+let i, a, r, l, s;
 n.d(t, {
-    A: () => T,
-    Z: () => E
+    A: () => f,
+    Z: () => A
 });
-var _, s = n(284009),
-    c = n.n(s),
-    d = n(311907),
-    u = n(73153),
+var o, d = n(284009),
+    c = n.n(d),
+    u = n(311907),
+    _ = n(73153),
     m = n(843472),
-    p = n(155718),
-    f = n(706727),
-    h = n(927813),
-    E = ((_ = {})[_.IN_FLIGHT = 0] = "IN_FLIGHT", _[_.ERRORED = 1] = "ERRORED", _[_.SUCCEEDED = 2] = "SUCCEEDED", _);
-class I extends d.Ay.Store {
+    h = n(155718),
+    p = n(706727),
+    g = n(927813),
+    A = ((o = {})[o.IN_FLIGHT = 0] = "IN_FLIGHT", o[o.ERRORED = 1] = "ERRORED", o[o.SUCCEEDED = 2] = "SUCCEEDED", o);
+class x extends u.Ay.Store {
     static displayName = "InteractionModalStore";
     getModalState(e) {
-        return e !== r ? null : i
+        return e !== i ? null : a
     }
 }
-let T = new I(u.h, {
+let f = new x(_.h, {
     LOGOUT: function() {
-        return r = null, i = null, a = null, o = null, l = null, !0
+        return i = null, a = null, r = null, l = null, s = null, !0
     },
     INTERACTION_MODAL_CREATE: function(e) {
         let {
             nonce: t
         } = e;
-        return t === l && (m.A.deleteMessage(o, a, !0), a = null, o = null, l = null), !1
+        return t === s && (m.A.deleteMessage(l, r, !0), r = null, l = null, s = null), !1
     },
     INTERACTION_IFRAME_MODAL_CREATE: function(e) {
         let {
             nonce: t
         } = e;
-        return t === l && (m.A.deleteMessage(o, a, !0), a = null, o = null, l = null), !1
+        return t === s && (m.A.deleteMessage(l, r, !0), r = null, l = null, s = null), !1
     },
     INTERACTION_QUEUE: function(e) {
         let {
             messageId: t,
             nonce: n,
-            data: _,
-            preflight: s
+            data: o,
+            preflight: d
         } = e;
-        switch (_.interactionType) {
-            case p.G4.APPLICATION_COMMAND:
-                return a = t, o = _.channelId, l = n, !1;
-            case p.G4.MODAL_SUBMIT:
-                c()(null == r || 1 === i || 2 === i, "cannot submit multiple modals at once"), r = n, i = 0;
-                let d = e => {
+        switch (o.interactionType) {
+            case h.G4.APPLICATION_COMMAND:
+                return r = t, l = o.channelId, s = n, !1;
+            case h.G4.MODAL_SUBMIT:
+                c()(null == i || 1 === a || 2 === a, "cannot submit multiple modals at once"), i = n, a = 0;
+                let u = e => {
                     setTimeout(() => {
-                        r === n && 0 === i && (0, f.C1)(n)
+                        i === n && 0 === a && (0, p.C1)(n)
                     }, e)
                 };
-                return null != s ? (d(2 * h.A.Millis.MINUTE), s.then(() => d(10 * h.A.Millis.SECOND)).catch(() => (0, f.C1)(n))) : d(10 * h.A.Millis.SECOND), !0;
+                return null != d ? (u(2 * g.A.Millis.MINUTE), d.then(() => u(10 * g.A.Millis.SECOND)).catch(() => (0, p.C1)(n))) : u(10 * g.A.Millis.SECOND), !0;
             default:
                 return !1
         }
@@ -61,12 +61,12 @@ let T = new I(u.h, {
         let {
             nonce: t
         } = e;
-        return null != t && t === r && (i = 2, !0)
+        return null != t && t === i && (a = 2, !0)
     },
     INTERACTION_FAILURE: function(e) {
         let {
             nonce: t
         } = e;
-        return null != t && t === r && (i = 1, !0)
+        return null != t && t === i && (a = 1, !0)
     }
 })

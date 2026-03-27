@@ -18,7 +18,7 @@ var r = a(627968),
     f = a(23003),
     g = a(652215),
     h = a(693591),
-    A = a(992284);
+    A = a(797487);
 let x = e => {
     let {
         name: t,
@@ -35,10 +35,10 @@ let x = e => {
         badgeText: y,
         badgeVariant: T = "gradient",
         size: P,
-        backgroundVideoUrl: j,
-        previewImageStyle: D = f.Tb.CONTAINED,
+        backgroundVideoUrl: D,
+        previewImageStyle: j = f.Tb.CONTAINED,
         actions: O
-    } = e, U = (0, b.TM)(), M = n.useRef(null), L = n.useRef(0), w = n.useRef(null), B = n.useRef(!1), k = (0, u.A)("(min-width: 1140px)"), G = D === f.Tb.OVERLAY && (P !== f.A0.LARGE || !k), V = P === f.A0.LARGE && k && D === f.Tb.OVERLAY, W = null != j && k && P === f.A0.LARGE, Y = n.useMemo(() => (0, l.debounce)(() => {
+    } = e, U = (0, b.TM)(), M = n.useRef(null), L = n.useRef(0), w = n.useRef(null), B = n.useRef(!1), k = (0, u.A)("(min-width: 1140px)"), G = j === f.Tb.OVERLAY && (P !== f.A0.LARGE || !k), V = P === f.A0.LARGE && k && j === f.Tb.OVERLAY, W = null != D && k && P === f.A0.LARGE, Y = n.useMemo(() => (0, l.debounce)(() => {
         p.default.track(g.HAw.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED, {
             box_type: (0, l.snakeCase)(t)
         })
@@ -145,7 +145,7 @@ let x = e => {
                 children: (0, r.jsx)(_.A, {
                     preload: v ? "auto" : "none",
                     className: A.backgroundVideo,
-                    src: j
+                    src: D
                 })
             }), (0, r.jsx)(() => $ ? (0, r.jsxs)(r.Fragment, {
                 children: [(0, r.jsx)(q, {}), (0, r.jsx)(X, {})]

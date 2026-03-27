@@ -22,7 +22,7 @@ var i = n(627968),
     I = n(939899),
     j = n(518477),
     v = n(985018),
-    T = n(360841);
+    T = n(788676);
 let E = {
     [r.x.FAVORITE_GAMES]: {
         placeholder: () => ({

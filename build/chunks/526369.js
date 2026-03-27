@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(110259),
-    r = n(121894),
-    a = n(311907),
+    a = n(121894),
+    r = n(311907),
     o = n(554146),
     c = n(933958),
     d = n(782091),
@@ -24,7 +24,7 @@ var i = n(627968),
     C = n(175203),
     I = n(263854),
     N = n(652215),
-    b = n(207266);
+    b = n(206415);
 
 function S(e) {
     let {
@@ -37,26 +37,26 @@ function S(e) {
         inCall: j,
         totalNumberOfParticipants: R,
         popoutType: O
-    } = e, L = (0, _.Us)() === N.BRT.POPOUT, M = (0, a.bG)([f.A], () => f.A.getGuild(v.guild_id), [v.guild_id]), {
+    } = e, L = (0, _.Us)() === N.BRT.POPOUT, M = (0, r.bG)([f.A], () => f.A.getGuild(v.guild_id), [v.guild_id]), {
         dismissedActivityEntryPointTileChannel: D
-    } = (0, I.P)(), G = (0, a.bG)([h.A], () => h.A.getUserParticipantCount(v.id), [v]), U = (0, g.vp)(v.id, t), P = s.useCallback(() => {
-        (0, r.r)(() => {
+    } = (0, I.P)(), G = (0, r.bG)([h.A], () => h.A.getUserParticipantCount(v.id), [v]), U = (0, g.vp)(v.id, t), P = s.useCallback(() => {
+        (0, a.r)(() => {
             I.P.setState({
                 dismissedActivityEntryPointTileChannel: v.id
             })
         })
     }, [v.id]);
     s.useEffect(() => {
-        null != D && v.id !== D && (0, r.r)(() => {
+        null != D && v.id !== D && (0, a.r)(() => {
             I.P.setState({
                 dismissedActivityEntryPointTileChannel: null
             })
         })
     }, [v.id, D]);
-    let w = (0, a.bG)([x.A], () => v.isPrivate() || (0, m.K)(x.A, M, v), [M, v]),
+    let w = (0, r.bG)([x.A], () => v.isPrivate() || (0, m.K)(x.A, M, v), [M, v]),
         k = M?.afkChannelId === v.id,
         V = v.userLimit <= 0 || v.userLimit > 1,
-        B = (0, a.bG)([c.Ay], () => c.Ay.getEmbeddedActivitiesForChannel(v.id).length <= 0),
+        B = (0, r.bG)([c.Ay], () => c.Ay.getEmbeddedActivitiesForChannel(v.id).length <= 0),
         H = (0, A.JZ)(o.M.VC_TILE_ACTIVITIES_ENTRY_POINT),
         F = (0, d.et)(v.id) !== d.xy.CAN_LAUNCH,
         K = null != D && D === v.id,

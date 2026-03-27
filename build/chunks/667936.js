@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(990078),
     c = n(397927),
     d = n(302959),
@@ -21,7 +21,7 @@ var i = n(627968),
     f = n(486020),
     x = n(427262),
     E = n(43950),
-    C = n(463745);
+    C = n(304996);
 
 function I(e) {
     let {
@@ -35,7 +35,7 @@ function I(e) {
         children: (0, i.jsx)(c.euF, {
             src: l ?? n.user.getAvatarURL(t, 16),
             size: c._3J.SIZE_16,
-            className: r()(s, C.wE),
+            className: a()(s, C.wE),
             "aria-label": n.nick ?? x.Ay.getName(n.user)
         })
     })
@@ -57,7 +57,7 @@ function N(e) {
             className: t
         }, s),
         renderMoreUsers: (e, t, n) => (0, i.jsx)("div", {
-            className: r()(C.TO, t),
+            className: a()(C.TO, t),
             children: e
         }, n)
     })
@@ -67,10 +67,10 @@ let b = e => {
         channel: t,
         presenceActivity: n,
         members: l,
-        embeddedApp: r,
+        embeddedApp: a,
         onAction: o,
         enableUserHoverActivities: c
-    } = e, m = null != r, f = m ? Array.from(r.embeddedActivity.userIds) : [], x = (0, a.bG)([g.default, p.default], () => m ? g.default.getUser(f[0]) : null != l ? l.length <= 0 ? null : l.find(e => e.user.id !== p.default.getId())?.user ?? l[0].user : void 0), I = s.useCallback(() => {
+    } = e, m = null != a, f = m ? Array.from(a.embeddedActivity.userIds) : [], x = (0, r.bG)([g.default, p.default], () => m ? g.default.getUser(f[0]) : null != l ? l.length <= 0 ? null : l.find(e => e.user.id !== p.default.getId())?.user ?? l[0].user : void 0), I = s.useCallback(() => {
         if (!c && null != l) return () => (0, i.jsx)(N, {
             guildId: t.guild_id,
             members: l
@@ -86,7 +86,7 @@ let b = e => {
             className: c ? void 0 : C.Il,
             children: b ? (0, i.jsx)(T, {
                 activity: n,
-                embeddedApp: r,
+                embeddedApp: a,
                 user: x,
                 channel: t,
                 sortedVoiceStates: l,
@@ -107,7 +107,7 @@ let b = e => {
             children: (0, i.jsx)(h.A, {
                 type: d.M.VOICE_CHANNEL,
                 activity: n,
-                embeddedActivity: r?.embeddedActivity,
+                embeddedActivity: a?.embeddedActivity,
                 user: x,
                 guildId: t.getGuildId(),
                 channelId: t.id,

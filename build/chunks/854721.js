@@ -27,7 +27,7 @@ var n = t(627968),
     b = t(964395),
     R = t(542533),
     N = t(652215),
-    v = t(475260);
+    v = t(931775);
 
 function C(e) {
     let {
@@ -44,7 +44,6 @@ function C(e) {
         if (null != d) return (0, k.R)({
             skuId: d,
             applicationId: l.applicationId,
-            guildId: t,
             isStorefront: !0,
             analyticsLocations: [u.A.SOCIAL_LAYER_STOREFRONT],
             analyticsContext: o.current,

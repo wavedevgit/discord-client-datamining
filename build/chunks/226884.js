@@ -15,7 +15,7 @@ var i = n(397927),
     d = n(954571),
     m = n(652215),
     h = n(985018),
-    g = n(616903);
+    g = n(202912);
 let A = function(e) {
     let {
         guild: t,

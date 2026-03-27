@@ -6,7 +6,7 @@ n.r(t), n.d(t, {
 });
 let {
     createLoader: i
-} = n(932433), s = i({
+} = n(224839), s = i({
     bg: () => n.e("22055").then(n.t.bind(n, 45882, 19)),
     cs: () => n.e("58032").then(n.t.bind(n, 682419, 19)),
     da: () => n.e("74627").then(n.t.bind(n, 637198, 19)),
@@ -33,11 +33,11 @@ let {
     "sv-SE": () => n.e("69250").then(n.t.bind(n, 12281, 19)),
     th: () => n.e("37506").then(n.t.bind(n, 522681, 19)),
     tr: () => n.e("91200").then(n.t.bind(n, 767683, 19)),
-    uk: () => n.e("84326").then(n.t.bind(n, 141573, 19)),
+    uk: () => n.e("84326").then(n.t.bind(n, 363954, 19)),
     vi: () => n.e("41069").then(n.t.bind(n, 891356, 19)),
     "zh-CN": () => n.e("55274").then(n.t.bind(n, 249457, 19)),
     "zh-TW": () => n.e("80662").then(n.t.bind(n, 950357, 19)),
     "en-US": () => n.e("39728").then(n.bind(n, 514259))
 }, "en-US"), {
     makeMessagesProxy: l
-} = n(932433), a = l(s)
+} = n(224839), a = l(s)

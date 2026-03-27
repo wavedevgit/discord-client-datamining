@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(173860),
-    a = n(383394),
+    a = n(173860),
+    r = n(383394),
     o = n(458294),
     c = n(131677),
     d = n(711014),
@@ -31,8 +31,8 @@ let E = (0, A.L_)((e, t, n) => ["null", ...t, ...e, g, m.sFm.E3_SERVER_DISCOVERY
     C = s.forwardRef(function(e, t) {
         let n = (0, l.yK)([d.Ay, c.A, o.default], () => E(d.Ay.getGuildFolders(), c.A.getUnreadPrivateChannelIds(), o.default.getStoreChangeSentinel())),
             s = (0, l.bG)([h.A], () => h.A.isFocused()),
-            u = (0, l.bG)([a.A], () => a.A.getExpandedFolders());
-        return (0, i.jsx)(r.A, {
+            u = (0, l.bG)([r.A], () => r.A.getExpandedFolders());
+        return (0, i.jsx)(a.A, {
             ...e,
             ref: t,
             items: n,

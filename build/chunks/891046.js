@@ -40,7 +40,7 @@ var l = n(627968),
     O = n(253913),
     F = n(652215),
     U = n(985018),
-    G = n(975639);
+    G = n(590934);
 let z = i.memo(function(e) {
     let {
         id: t,

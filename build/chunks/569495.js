@@ -25,7 +25,7 @@ var n = a(627968),
     j = a(310419),
     I = a(652215),
     S = a(985018),
-    E = a(936634);
+    E = a(972729);
 let N = "start_application_install",
     y = "launch_activity";
 

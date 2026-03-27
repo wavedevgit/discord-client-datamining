@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(4208),
+    a = n.n(l),
+    r = n(880013),
     o = n(110259),
     c = n(311907),
     d = n(435371),
@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(652215);
 n(281405);
 var I = n(985018),
-    N = n(426114),
-    b = n(805098);
+    N = n(761277),
+    b = n(501365);
 let S = e => 1 - Math.pow(1 - e, 4);
 
 function T(e) {
@@ -66,7 +66,7 @@ function T(e) {
             null != G && (0, u.mMO)(async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("43600"), n.e("28136"), n.e("89886")]).then(n.bind(n, 234355));
+                } = await Promise.all([n.e("43600"), n.e("28136"), n.e("93662")]).then(n.bind(n, 234355));
                 return n => (0, i.jsx)(e, {
                     ...n,
                     guild: G,
@@ -136,12 +136,12 @@ function T(e) {
                 onClick: t,
                 ...n
             } = e;
-            return (0, i.jsx)(a.animated.div, {
+            return (0, i.jsx)(r.animated.div, {
                 className: N.lY,
                 style: W,
                 children: (0, i.jsx)(u.DUT, {
                     innerRef: T,
-                    className: r()({
+                    className: a()({
                         [N.vk]: !U
                     }, b.q7, b.L9, b.vk),
                     "aria-disabled": U,
@@ -149,14 +149,14 @@ function T(e) {
                     onClick: K,
                     ...n,
                     children: (0, i.jsxs)("div", {
-                        className: r()(N.Qs, b.Qs),
+                        className: a()(N.Qs, b.Qs),
                         children: [(0, i.jsxs)("div", {
                             className: N.R4,
                             style: {
                                 "--custom-voice-invite-suggestions-timer-size": 24
                             },
                             children: [(0, i.jsxs)("svg", {
-                                className: r()(N.O1, {
+                                className: a()(N.O1, {
                                     [N.Ft]: H
                                 }),
                                 viewBox: "0 0 24 24",
@@ -173,7 +173,7 @@ function T(e) {
                                 width: 14,
                                 height: 14,
                                 color: "currentColor",
-                                className: r()(N.Hk, N.Kk)
+                                className: a()(N.Hk, N.Kk)
                             })]
                         }), (0, i.jsx)(d.m_, {
                             text: I.intl.string(I.t["EE+P0H"]),

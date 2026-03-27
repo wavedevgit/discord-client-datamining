@@ -5,9 +5,9 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    l = n(4208),
-    r = n(837381),
-    a = n(311907),
+    l = n(880013),
+    a = n(837381),
+    r = n(311907),
     o = n(397927),
     c = n(442433),
     d = n(313961),
@@ -27,7 +27,7 @@ var i = n(627968),
     b = n(65611),
     S = n(652215),
     T = n(985018),
-    v = n(355593);
+    v = n(207572);
 let y = {
     friction: 28,
     tension: 600
@@ -137,7 +137,7 @@ class R extends s.PureComponent {
         null != s ? (0, c.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("34408")]).then(n.bind(n, 385913));
+            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("22283")]).then(n.bind(n, 385913));
             return n => (0, i.jsx)(e, {
                 ...n,
                 channel: t,
@@ -160,8 +160,8 @@ class R extends s.PureComponent {
             channelName: t,
             selected: n,
             badge: s,
-            audio: r,
-            video: a,
+            audio: a,
+            video: r,
             stream: c,
             isCurrentUserInThisDMCall: d,
             unread: u,
@@ -208,8 +208,8 @@ class R extends s.PureComponent {
                         selected: !1,
                         lowerBadge: s > 0 ? (0, b.wN)(s, void 0, !0) : null,
                         upperBadge: (0, b.oi)({
-                            audio: r,
-                            video: a,
+                            audio: a,
+                            video: r,
                             screenshare: c,
                             isCurrentUserConnected: d
                         }),
@@ -226,13 +226,13 @@ class R extends s.PureComponent {
 let O = s.forwardRef(function(e, t) {
     let n = e.channel.id,
         s = (0, h.Ay)(e.channel),
-        l = (0, r.Vd)(n, 2),
-        c = (0, a.bG)([_.A], () => _.A.getChannelId(), []),
-        u = (0, a.bG)([d.A], () => d.A.getMode(n), [n]),
-        A = (0, a.bG)([m.A], () => m.A.getAllApplicationStreamsForChannel(n).length > 0),
-        f = (0, a.bG)([x.Ay], () => x.Ay.getVoiceStatesForChannel(e.channel).length > 0, [e.channel]),
-        E = (0, a.bG)([g.A], () => g.A.getChannelId(), []),
-        C = (0, a.bG)([p.Ay], () => p.Ay.getMentionCount(n), [n]),
+        l = (0, a.Vd)(n, 2),
+        c = (0, r.bG)([_.A], () => _.A.getChannelId(), []),
+        u = (0, r.bG)([d.A], () => d.A.getMode(n), [n]),
+        A = (0, r.bG)([m.A], () => m.A.getAllApplicationStreamsForChannel(n).length > 0),
+        f = (0, r.bG)([x.Ay], () => x.Ay.getVoiceStatesForChannel(e.channel).length > 0, [e.channel]),
+        E = (0, r.bG)([g.A], () => g.A.getChannelId(), []),
+        C = (0, r.bG)([p.Ay], () => p.Ay.getMentionCount(n), [n]),
         I = c === n,
         N = !1,
         b = !1;

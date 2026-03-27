@@ -4,8 +4,8 @@ n.d(t, {
     N: () => m
 });
 var a = n(627968),
-    l = n(64700),
-    i = n(990078),
+    i = n(64700),
+    l = n(990078),
     r = n(397927),
     s = n(442433),
     c = n(50268),
@@ -17,7 +17,7 @@ function u(e) {
         applicationId: t,
         className: n,
         trackAction: u
-    } = e, m = l.useRef(null), x = (0, c.A)({
+    } = e, m = i.useRef(null), x = (0, c.A)({
         id: t,
         label: d.intl.string(d.t["FfCL+6"])
     }), h = (0, o.n)(t, u);
@@ -47,7 +47,7 @@ function u(e) {
                 })
             })
         },
-        children: e => (0, a.jsx)(i.m, {
+        children: e => (0, a.jsx)(l.m, {
             text: d.intl.string(d.t["UKOtz+"]),
             children: (0, a.jsx)(r.DUT, {
                 innerRef: m,
@@ -68,7 +68,7 @@ function m(e) {
         onClose: n,
         className: u,
         trackAction: m
-    } = e, x = l.useRef(null), h = (0, c.A)({
+    } = e, x = i.useRef(null), h = (0, c.A)({
         id: t,
         label: d.intl.string(d.t["FfCL+6"])
     }), f = (0, o.n)(t, m);
@@ -99,7 +99,7 @@ function m(e) {
                     })
                 })
             },
-            children: e => (0, a.jsx)(i.m, {
+            children: e => (0, a.jsx)(l.m, {
                 text: d.intl.string(d.t["UKOtz+"]),
                 children: (0, a.jsx)("div", {
                     ...e,

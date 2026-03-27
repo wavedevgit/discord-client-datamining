@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(311907),
     l = n(397927),
-    r = n(604681),
-    a = n(672385),
+    a = n(604681),
+    r = n(672385),
     o = n(950191),
     c = n(168015),
     d = n(761640),
@@ -26,10 +26,10 @@ function m(e) {
         tooltip: !p || n ? A.intl.string(A.t.YneDgF) : g ? A.intl.string(A.t.niD64e) : A.intl.string(A.t["+FAsHq"]),
         icon: l.nRI,
         onClick: () => {
-            (0, a.am)({
+            (0, r.am)({
                 displayProfile: _,
                 isProfileOpen: !g
-            }), r.A.toggleUserProfileSidebarSection()
+            }), a.A.toggleUserProfileSidebarSection()
         },
         selected: g && !n
     })

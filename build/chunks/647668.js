@@ -6,9 +6,9 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(735438),
-    o = n.n(a),
+    a = n.n(l),
+    r = n(735438),
+    o = n.n(r),
     c = n(311907),
     d = n(435371),
     u = n(397927),
@@ -37,7 +37,7 @@ var i = n(627968),
     D = n(145408),
     G = n(652215),
     U = n(985018),
-    P = n(826427);
+    P = n(981248);
 
 function w(e, t, n) {
     return 0 === t.length ? null : (0, i.jsxs)("div", {
@@ -70,7 +70,7 @@ function k(e) {
 }
 
 function V(e) {
-    let t, n, l, a, d, _, p, g, f, x, E, C, D, U, V, B, H, F, K, W, {
+    let t, n, l, r, d, _, p, g, f, x, E, C, D, U, V, B, H, F, K, W, {
             guild: Y
         } = e,
         z = Y.id,
@@ -90,7 +90,7 @@ function V(e) {
                 channel: t
             } = e;
             return t.id
-        }), ...Object.values(S.A.getThreadsForGuild(t)).flatMap(e => Object.keys(e))], [t]), l = (0, b.Ay)(t), a = s.useMemo(() => l.map(e => e.id), [l]), d = (0, c.bG)([M.Ay], () => M.Ay.getVoiceStates(t), [t]), _ = (0, c.yK)([R.A], () => R.A.getBlockedOrIgnoredIDs()), p = o().flatMap(n, e => {
+        }), ...Object.values(S.A.getThreadsForGuild(t)).flatMap(e => Object.keys(e))], [t]), l = (0, b.Ay)(t), r = s.useMemo(() => l.map(e => e.id), [l]), d = (0, c.bG)([M.Ay], () => M.Ay.getVoiceStates(t), [t]), _ = (0, c.yK)([R.A], () => R.A.getBlockedOrIgnoredIDs()), p = o().flatMap(n, e => {
             if (e === Y.afkChannelId) return [];
             let t = (d[e] ?? []).map(e => {
                 let {
@@ -99,7 +99,7 @@ function V(e) {
                 return t
             });
             return (0, m.aw)(t, _)
-        }), g = (0, c.yK)([I.A], () => o().flatMap(a, e => {
+        }), g = (0, c.yK)([I.A], () => o().flatMap(r, e => {
             if (e === Y.afkChannelId) return [];
             let t = I.A.getMutableParticipants(e, N.ip.SPEAKER).filter(e => e.type === N.wY.VOICE).map(e => {
                 let {
@@ -110,7 +110,7 @@ function V(e) {
             return (0, m.aw)(t, _)
         })), f = (0, c.bG)([I.A], () => {
             let e = 0;
-            for (let t of a) e += I.A.getParticipantCount(t, N.ip.AUDIENCE);
+            for (let t of r) e += I.A.getParticipantCount(t, N.ip.AUDIENCE);
             return e
         }), x = (0, c.yK)([y.A], () => {
             let e = y.A.getAllApplicationStreams().filter(e => e.guildId === t).map(e => e.ownerId);
@@ -165,7 +165,7 @@ function V(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [ee, Z, et, en, ei ? (0, i.jsx)(k, {
             muteConfig: es,
-            className: r()(P.LM, {
+            className: a()(P.LM, {
                 [P.Sx]: null != Z || null != et
             })
         }) : null]
@@ -200,12 +200,12 @@ function H(e) {
         guild: t
     } = e, n = (0, _.A)(t), s = (0, x.a)(t), l = null != s ? (0, i.jsx)(B, {
         guildJoinRequestStatus: s
-    }) : null, a = (0, i.jsx)(V, {
+    }) : null, r = (0, i.jsx)(V, {
         guild: t
     }), o = (0, c.bG)([C.A], () => C.A.isViewingRoles(t.id)), d = (0, E.Ig)(t);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
-            className: r()(P.nM, P.Dl),
+            className: a()(P.nM, P.Dl),
             children: [n ? (0, i.jsx)(g.A, {
                 guild: t,
                 className: P.WX
@@ -214,7 +214,7 @@ function H(e) {
                 size: 20,
                 className: P.aL
             }), (0, i.jsx)("span", {
-                className: r()(P.cN, P.NT),
+                className: a()(P.cN, P.NT),
                 children: t.name
             })]
         }), d ? (0, i.jsx)(u.Text, {
@@ -227,7 +227,7 @@ function H(e) {
             color: "text-default",
             variant: "text-xs/normal",
             children: U.intl.string(U.t["5LwN89"])
-        }) : l ?? a]
+        }) : l ?? r]
     })
 }
 
@@ -236,20 +236,20 @@ function F(e) {
         guild: t,
         disabled: n = !1,
         "aria-label": l = !1,
-        children: r
-    } = e, a = s.useMemo(() => n ? null : (0, i.jsx)("div", {
+        children: a
+    } = e, r = s.useMemo(() => n ? null : (0, i.jsx)("div", {
         className: P.A_,
         children: (0, i.jsx)(H, {
             guild: t
         })
     }), [n, t]);
     return (0, i.jsx)(d.m_, {
-        __unsupportedReactNodeAsText: a,
+        __unsupportedReactNodeAsText: r,
         hideOnClick: !0,
         spacing: 12,
         position: "right",
         "aria-label": !1 === l ? void 0 : l,
         asContainer: !0,
-        children: r
+        children: a
     })
 }

@@ -10,28 +10,28 @@ n.d(t, {
 var i = n(110259),
     s = n(562465),
     l = n(933681),
-    r = n(73153),
-    a = n(253932),
+    a = n(73153),
+    r = n(253932),
     o = n(499785),
     c = n(252431),
     d = n(995273),
     u = n(652215);
 
 function h(e) {
-    r.h.dispatch({
+    a.h.dispatch({
         type: "NOTIFICATION_CENTER_SET_ACTIVE",
         active: e
     })
 }
 
 function A() {
-    r.h.dispatch({
+    a.h.dispatch({
         type: "RESET_NOTIFICATION_CENTER"
     })
 }
 async function m(e, t) {
     if (c.A.loading) return;
-    await r.h.dispatch({
+    await a.h.dispatch({
         type: "LOAD_NOTIFICATION_CENTER_ITEMS"
     });
     let n = Math.ceil(c.A.items.length / e.limit);
@@ -54,14 +54,14 @@ async function m(e, t) {
             },
             rejectWithError: !0
         });
-        t?.(), await r.h.dispatch({
+        t?.(), await a.h.dispatch({
             type: "LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS",
             items: s.body.items,
             cursor: s.body.cursor,
             hasMore: s.body.has_more
         })
     } catch (e) {
-        t?.(), await r.h.dispatch({
+        t?.(), await a.h.dispatch({
             type: "LOAD_NOTIFICATION_CENTER_ITEMS_FAILURE"
         })
     }
@@ -69,10 +69,10 @@ async function m(e, t) {
 
 function _(e) {
     var t, n;
-    null != e.local_id ? (t = [e.local_id], r.h.dispatch({
+    null != e.local_id ? (t = [e.local_id], a.h.dispatch({
         type: "NOTIFICATION_CENTER_ITEMS_LOCAL_ACK",
         localIds: t
-    })) : (0, d.gk)(e) ? (n = e.id, r.h.dispatch({
+    })) : (0, d.gk)(e) ? (n = e.id, a.h.dispatch({
         type: "NOTIFICATION_CENTER_ITEMS_ACK",
         optimistic: !0,
         ids: [n]
@@ -80,7 +80,7 @@ function _(e) {
 }
 async function p(e) {
     try {
-        r.h.dispatch({
+        a.h.dispatch({
             type: "NOTIFICATION_CENTER_ITEMS_ACK",
             optimistic: !0,
             ids: [e]
@@ -89,16 +89,16 @@ async function p(e) {
             rejectWithError: !0
         })
     } catch (t) {
-        r.h.dispatch({
+        a.h.dispatch({
             type: "NOTIFICATION_CENTER_ITEMS_ACK_FAILURE",
             ids: [e]
         })
     }
 }
 async function g(e) {
-    let t = a.ns.getSetting();
+    let t = r.ns.getSetting();
     try {
-        r.h.dispatch({
+        a.h.dispatch({
             type: "NOTIFICATION_CENTER_ITEM_DELETE",
             id: e.id
         }), await o.A.delete({
@@ -117,7 +117,7 @@ async function g(e) {
             rejectWithError: !1
         })
     } catch (t) {
-        throw r.h.dispatch({
+        throw a.h.dispatch({
             type: "NOTIFICATION_CENTER_ITEM_DELETE_FAILURE",
             item: e
         }), t

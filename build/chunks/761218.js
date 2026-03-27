@@ -24,7 +24,7 @@ var n = s(627968),
     C = s(652215),
     A = s(188275),
     S = s(985018),
-    v = s(666925);
+    v = s(954522);
 let I = {
         pageSection: "marvel-rivals-promotional-banner"
     },
@@ -88,13 +88,11 @@ let I = {
             w = r.useCallback((e, t) => {
                 let {
                     skuId: s,
-                    applicationId: n,
-                    guildId: r
+                    applicationId: n
                 } = t;
                 M("card_click", s), (0, p.R)({
                     skuId: s,
                     applicationId: n,
-                    guildId: r,
                     isStorefront: !1,
                     analyticsLocations: O
                 })

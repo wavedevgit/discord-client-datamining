@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    r = n(417597),
-    a = n(554146),
+    a = n(417597),
+    r = n(554146),
     o = n(506774),
     c = n(397927),
     d = n(442433),
@@ -28,14 +28,14 @@ var s = n(503698),
     b = n(746080),
     S = n(634654),
     T = n(985018),
-    v = n(672669);
+    v = n(216338);
 
 function y(e) {
     let {
         guildId: t,
         selected: n,
         handleClick: s
-    } = e, d = (0, g.w)(t), m = (0, r.bG)([E.A], () => E.A.getGuild(t)), b = m?.features.has(N.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) === !0, y = "false" === o.w.get(S.bJ, "false"), j = (0, r.bG)([u.A], () => u.A.useReducedMotion);
+    } = e, d = (0, g.w)(t), m = (0, a.bG)([E.A], () => E.A.getGuild(t)), b = m?.features.has(N.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) === !0, y = "false" === o.w.get(S.bJ, "false"), j = (0, a.bG)([u.A], () => u.A.useReducedMotion);
     return (0, i.jsx)(I.G, {
         id: `shop-${t}`,
         className: l()(v.A2, {
@@ -64,7 +64,7 @@ function y(e) {
             }), n && (0, i.jsx)(c.DUT, {
                 className: v.b,
                 onClick: e => {
-                    e.stopPropagation(), (0, p.Dr)(a.M.SERVER_SHOP_PHANTOM_PREVIEW), C.default.track(N.HAw.GUILD_SHOP_PREVIEW_CLICK, {
+                    e.stopPropagation(), (0, p.Dr)(r.M.SERVER_SHOP_PHANTOM_PREVIEW), C.default.track(N.HAw.GUILD_SHOP_PREVIEW_CLICK, {
                         ...(0, h.H$)(t),
                         action_taken: S.hN.DISMISS_CHANNEL_ROW
                     }), d && b || (0, f.bG)(N.BVt.CHANNEL(t, x.Ay.getDefaultChannel(t)?.id))
@@ -83,13 +83,13 @@ function j(e) {
     let {
         guild: t,
         selected: s
-    } = e, l = (0, m.P)(t), r = () => {
+    } = e, l = (0, m.P)(t), a = () => {
         o.w.set(S.bJ, "true"), (0, f.pX)(N.BVt.CHANNEL(t.id, b.VV.GUILD_SHOP))
     };
     return l ? (0, i.jsx)(y, {
         guildId: t.id,
         selected: s,
-        handleClick: r
+        handleClick: a
     }) : (0, i.jsx)(I.G, {
         id: `shop-${t.id}`,
         renderIcon: e => (0, i.jsx)(_.h, {
@@ -99,7 +99,7 @@ function j(e) {
         }),
         text: T.intl.string(T.t.al5EXL),
         selected: s,
-        onClick: r,
+        onClick: a,
         onContextMenu: e => {
             null != t && (0, d.L3)(e, async () => {
                 let {

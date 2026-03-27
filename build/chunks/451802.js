@@ -1,27 +1,27 @@
 /** chunk id: 451802 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T,
-    E: () => h
+    A: () => R,
+    E: () => _
 });
-var i, s = n(627968),
+var s, i = n(627968),
     l = n(64700),
-    a = n(503698),
-    r = n.n(a),
-    o = n(507392),
-    d = n.n(o),
-    c = n(735438),
-    u = n.n(c),
-    m = n(397927),
-    _ = n(235986),
+    o = n(503698),
+    r = n.n(o),
+    a = n(507392),
+    d = n.n(a),
+    h = n(735438),
+    u = n.n(h),
+    c = n(397927),
+    p = n(235986),
     g = n(350535),
-    x = n(985018),
-    A = n(945523),
-    h = ((i = {}).DEFAULT = "DEFAULT", i.RECORDING = "RECORDING", i);
-let p = {
-    DEFAULT: A.__invalid_default,
-    RECORDING: A.oz
+    m = n(985018),
+    C = n(61826),
+    _ = ((s = {}).DEFAULT = "DEFAULT", s.RECORDING = "RECORDING", s);
+let b = {
+    DEFAULT: C.__invalid_default,
+    RECORDING: C.oz
 };
-class f extends l.PureComponent {
+class A extends l.PureComponent {
     _inputId = u().uniqueId("key-recorder-");
     _unregisterNativeRecorder = null;
     _mousedownMode = null;
@@ -38,13 +38,13 @@ class f extends l.PureComponent {
         } = e;
         if (n === t) return;
         let {
-            _inputRef: i
+            _inputRef: s
         } = this;
-        if (null == i.current) return;
+        if (null == s.current) return;
         let {
-            activeElement: s
+            activeElement: i
         } = document;
-        "DEFAULT" === t && i.current === s && i.current.blur(), "RECORDING" === t && i.current !== s && i.current.focus()
+        "DEFAULT" === t && s.current === i && s.current.blur(), "RECORDING" === t && s.current !== i && s.current.focus()
     }
     setInputRef = e => {
         let {
@@ -73,42 +73,42 @@ class f extends l.PureComponent {
         let e, {
                 mode: t,
                 value: n,
-                disabled: i
+                disabled: s
             } = this.props,
             l = (0, g.dI)(n, !0);
-        return e = "RECORDING" === t ? x.intl.string(x.t.bmOri0) : 0 === n.length ? x.intl.string(x.t.co3wt9) : x.intl.string(x.t.idFMvH), (0, s.jsx)(m.vN3, {
+        return e = "RECORDING" === t ? m.intl.string(m.t.bmOri0) : 0 === n.length ? m.intl.string(m.t.co3wt9) : m.intl.string(m.t.idFMvH), (0, i.jsx)(c.vN3, {
             focusTarget: this._inputRef,
             ringTarget: this._containerRef,
-            children: (0, s.jsx)("div", {
+            children: (0, i.jsx)("div", {
                 onClick: this.handleClick,
                 onMouseDown: this.handleMouseDown,
                 ref: this._containerRef,
-                className: r()(A.Qm, p[t], {
-                    [A.Qz]: i
+                className: r()(C.Qm, b[t], {
+                    [C.Qz]: s
                 }),
-                children: (0, s.jsxs)(_.A, {
-                    className: A.Pp,
-                    children: [(0, s.jsx)(_.A.Child, {
-                        className: A.bZ,
-                        children: (0, s.jsx)("input", {
+                children: (0, i.jsxs)(p.A, {
+                    className: C.Pp,
+                    children: [(0, i.jsx)(p.A.Child, {
+                        className: C.bZ,
+                        children: (0, i.jsx)("input", {
                             id: this._inputId,
-                            placeholder: x.intl.string(x.t.nWRdnl),
+                            placeholder: m.intl.string(m.t.nWRdnl),
                             type: "text",
                             ref: this.setInputRef,
                             readOnly: !0,
                             value: l,
-                            disabled: "RECORDING" !== this.props.mode || i
+                            disabled: "RECORDING" !== this.props.mode || s
                         })
-                    }), (0, s.jsx)("div", {
-                        className: A.UD,
-                        children: (0, s.jsx)(m.Button, {
+                    }), (0, i.jsx)("div", {
+                        className: C.UD,
+                        children: (0, i.jsx)(c.Button, {
                             size: "sm",
                             variant: "RECORDING" === this.props.mode ? "critical-secondary" : "secondary",
                             text: e,
                             onClick: e => {
                                 e.stopPropagation(), e.preventDefault(), this.handleClick(e)
                             },
-                            disabled: i
+                            disabled: s
                         })
                     })]
                 })
@@ -116,4 +116,4 @@ class f extends l.PureComponent {
         })
     }
 }
-let T = f
+let R = A

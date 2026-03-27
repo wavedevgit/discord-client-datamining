@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(435371),
+    a = n.n(l),
+    r = n(435371),
     o = n(732955),
     c = n(397927),
     d = n(470934),
@@ -16,9 +16,9 @@ var i = n(627968),
     A = n(220628),
     m = n(933337),
     _ = n(568065),
-    p = n(333354),
+    p = n(136708),
     g = n(985018),
-    f = n(21795);
+    f = n(480112);
 
 function x(e) {
     let {
@@ -57,14 +57,14 @@ function x(e) {
     } : null;
     return s.useEffect(() => {
         b?.(v ?? j)
-    }, [v, j, b]), (0, i.jsx)(a.un, {
+    }, [v, j, b]), (0, i.jsx)(r.un, {
         body: G?.body ?? "",
         title: G?.title ?? void 0,
         shouldShow: null != G,
         delay: 100,
         "aria-label": null != D ? D : L ? g.intl.string(p.default.TZsu1U) : void 0,
         children: (0, i.jsx)("div", {
-            className: r()(f.zr, {
+            className: a()(f.zr, {
                 [f._o]: C,
                 [f.nB]: !C
             }, I),
@@ -78,10 +78,10 @@ function x(e) {
                         isActive: n,
                         compact: s,
                         iconSize: l
-                    } = e, r = l ?? "sm", a = n ? c.x8N : c._Jp;
+                    } = e, a = l ?? "sm", r = n ? c.x8N : c._Jp;
                     return s ? {
                         text: t.toString(),
-                        icon: a
+                        icon: r
                     } : {
                         text: g.intl.format(n ? p.default.uzQpQd : p.default.ad2Mfj, {
                             boostCount: t,
@@ -89,8 +89,8 @@ function x(e) {
                                 className: f.Om,
                                 children: "•"
                             }),
-                            boostIconHook: () => (0, i.jsx)(a, {
-                                size: r,
+                            boostIconHook: () => (0, i.jsx)(r, {
+                                size: a,
                                 color: "currentColor",
                                 className: f.$J
                             })

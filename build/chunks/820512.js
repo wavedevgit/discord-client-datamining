@@ -7,11 +7,11 @@ n.d(t, {
 var i = n(562465),
     s = n(73153),
     l = n(725613),
-    r = n(734057),
-    a = n(927813),
+    a = n(734057),
+    r = n(927813),
     o = n(769022),
     c = n(652215);
-let d = 10 * a.A.Millis.MINUTE;
+let d = 10 * r.A.Millis.MINUTE;
 
 function u(e) {
     s.h.dispatch({
@@ -30,10 +30,10 @@ function h(e) {
 }
 async function A(e) {
     try {
-        let t = r.A.getChannel(e),
+        let t = a.A.getChannel(e),
             n = l.A.getStartTime(t);
         if (null == n) return;
-        let a = {
+        let r = {
                 session_start_time: new Date(n).toISOString()
             },
             {
@@ -41,7 +41,7 @@ async function A(e) {
             } = await i.Bo.get({
                 url: c.Rsh.CHANNEL_VOICE_HISTORY(e),
                 rejectWithError: !0,
-                query: a
+                query: r
             }),
             d = (o.voice_leaves ?? []).map(e => ({
                 userId: e.user_id,

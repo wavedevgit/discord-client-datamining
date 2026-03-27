@@ -1,20 +1,20 @@
 /** chunk id: 465736 params = (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => i
 });
 var a = n(627968);
 
-function l(e) {
+function i(e) {
     let {
         rating: t,
         strokeColor: n
-    } = e, l = 2 * Math.PI * 16, i = Math.min(Math.max(t, 0), 100) / 100, r = i * l;
+    } = e, i = 2 * Math.PI * 16, l = Math.min(Math.max(t, 0), 100) / 100, r = l * i;
     return (0, a.jsx)("svg", {
         width: 30,
         height: 30,
         viewBox: "0 0 36 36",
         style: {
-            transform: `rotate(${(1-i)*360/2}deg)`
+            transform: `rotate(${(1-l)*360/2}deg)`
         },
         children: (0, a.jsx)("circle", {
             r: 16,
@@ -23,7 +23,7 @@ function l(e) {
             fill: "none",
             stroke: n,
             strokeWidth: 2.4,
-            strokeDasharray: `${r} ${l-r}`
+            strokeDasharray: `${r} ${i-r}`
         })
     })
 }

@@ -1,9 +1,9 @@
 /** chunk id: 23003 params = (module,exports,require) **/
 a.d(t, {
-    A0: () => ed,
-    Ay: () => ec,
-    NI: () => eo,
-    Tb: () => el
+    A0: () => el,
+    Ay: () => eo,
+    NI: () => ed,
+    Tb: () => es
 });
 var r, n, i, s = a(627968),
     l = a(64700),
@@ -22,165 +22,162 @@ var r, n, i, s = a(627968),
     x = a(840065),
     R = a(676279),
     C = a(975571),
-    v = a(457569),
-    E = a(612669),
-    N = a(788868),
-    I = a(88001),
-    S = a(652215),
-    y = a(355097),
-    T = a(519412),
-    P = a(49370),
-    j = a(985018),
-    D = a(520650),
-    O = a(927961),
-    U = a(817577),
-    M = a(748222),
-    L = a(743501),
-    w = a(652700),
-    B = a(282818),
-    k = a(965132),
-    G = a(576765),
-    V = a(88433),
-    W = a(206771),
-    Y = a(533234),
-    H = a(39508),
-    F = a(198962),
-    K = a(636395),
-    z = a(871891),
-    q = a(116427),
-    X = a(281146),
-    $ = a(324108),
-    J = a(158178),
-    Z = a(199579),
-    Q = a(170467),
-    ee = a(909340),
-    et = a(455482),
-    ea = a(573573),
-    er = a(233572),
-    en = a(437466),
-    ei = a(23145),
-    es = a(56582),
-    el = ((r = {}).CONTAINED = "contained", r.OVERLAY = "overlay", r),
-    ed = ((n = {}).SMALL = "small", n.MEDIUM = "medium", n.LARGE = "large", n),
-    eo = ((i = {}).REFERRAL_PROGRAM = "referralProgram", i.SERVER_PROFILES = "serverProfiles", i.SHOW_YOUR_STYLE = "showYourStyle", i.YOUR_SPACE = "yourSpace", i.EMOJIS = "emojis", i.NO_LIMITS = "noLimits", i.CUSTOM_THEMES = "customThemes", i.DISPLAY_NAME_STYLES = "displayNameStyles", i.PREMIUM_GROUP = "premiumGroup", i.ORB_REWARDS = "orbRewards", i);
-let ec = () => {
+    v = a(612669),
+    E = a(788868),
+    N = a(88001),
+    I = a(652215),
+    S = a(355097),
+    y = a(518582),
+    T = a(723468),
+    P = a(985018),
+    D = a(674547),
+    j = a(241015),
+    O = a(817577),
+    U = a(748222),
+    M = a(743501),
+    L = a(652700),
+    w = a(282818),
+    B = a(965132),
+    k = a(576765),
+    G = a(88433),
+    V = a(206771),
+    W = a(533234),
+    Y = a(39508),
+    H = a(198962),
+    F = a(636395),
+    K = a(871891),
+    z = a(116427),
+    q = a(281146),
+    X = a(324108),
+    $ = a(158178),
+    J = a(199579),
+    Z = a(170467),
+    Q = a(909340),
+    ee = a(455482),
+    et = a(573573),
+    ea = a(233572),
+    er = a(437466),
+    en = a(23145),
+    ei = a(56582),
+    es = ((r = {}).CONTAINED = "contained", r.OVERLAY = "overlay", r),
+    el = ((n = {}).SMALL = "small", n.MEDIUM = "medium", n.LARGE = "large", n),
+    ed = ((i = {}).REFERRAL_PROGRAM = "referralProgram", i.SERVER_PROFILES = "serverProfiles", i.SHOW_YOUR_STYLE = "showYourStyle", i.YOUR_SPACE = "yourSpace", i.EMOJIS = "emojis", i.NO_LIMITS = "noLimits", i.CUSTOM_THEMES = "customThemes", i.DISPLAY_NAME_STYLES = "displayNameStyles", i.PREMIUM_GROUP = "premiumGroup", i.ORB_REWARDS = "orbRewards", i);
+let eo = () => {
     let {
         analyticsLocations: e
     } = (0, u.Ay)(c.A.PREMIUM_MARKETING_BENTO_BOX), t = (0, b.A)({
-        scrollPosition: y._F.TRY_IT_OUT,
+        scrollPosition: S._F.TRY_IT_OUT,
         analyticsLocations: e
-    }), r = (0, E.O9)(), n = (0, v.A)({
-        location: "bento_box"
-    }), i = (0, l.useCallback)(() => {
+    }), r = (0, v.O9)(), n = (0, l.useCallback)(() => {
         (0, x.openUserSettings)(h.X.PROFILE_PANEL, {
             analyticsLocations: e
         }, () => (0, m.L)({
             analyticsLocations: e
         }))
-    }, [e]), el = (0, l.useCallback)(() => {
+    }, [e]), i = (0, l.useCallback)(() => {
         (0, p.A)({
-            subscriptionTier: N.pe.TIER_2,
-            initialPlanId: N.gD.PREMIUM_GROUP_MONTH,
+            subscriptionTier: E.pe.TIER_2,
+            initialPlanId: E.gD.PREMIUM_GROUP_MONTH,
             analyticsLocations: e
         })
-    }, [e]), ed = (0, R.TM)(), eo = C.A.getArticleURL(S.MVz.REFERRAL_PROGRAM), ec = {
+    }, [e]), es = (0, R.TM)(), el = C.A.getArticleURL(I.MVz.REFERRAL_PROGRAM), ed = {
         premiumGroup: {
-            thumbnail: U,
-            assetUrl: U
+            thumbnail: O,
+            assetUrl: O
         },
         serverProfiles: {
-            thumbnail: M,
-            assetUrl: ed ? ei.Ay : es.Ay
+            thumbnail: U,
+            assetUrl: es ? en.Ay : ei.Ay
         },
         customThemes: {
-            thumbnail: er.A,
-            assetUrl: ed ? ea.A : en.A
+            thumbnail: ea.A,
+            assetUrl: es ? et.A : er.A
         },
         displayNameStyles: {
-            thumbnail: w.A,
-            assetUrl: ed ? L.A : B.A
+            thumbnail: L.A,
+            assetUrl: es ? M.A : w.A
         },
         referralProgram: {
-            thumbnail: K.A,
-            assetUrl: ed ? F.A : z.A
+            thumbnail: F.A,
+            assetUrl: es ? H.A : K.A
         },
         showYourStyle: {
-            thumbnail: X.A,
-            assetUrl: ed ? q.A : $.A
+            thumbnail: q.A,
+            assetUrl: es ? z.A : X.A
         },
         yourSpace: {
-            thumbnail: Z.A,
-            assetUrl: ed ? J.A : Q.A
+            thumbnail: J.A,
+            assetUrl: es ? $.A : Z.A
         },
         emojis: {
-            thumbnail: G.A,
-            assetUrl: ed ? k.A : V.A
+            thumbnail: k.A,
+            assetUrl: es ? B.A : G.A
         },
         noLimits: {
-            thumbnail: Y.A,
-            assetUrl: ed ? W.A : H.A
+            thumbnail: W.A,
+            assetUrl: es ? V.A : Y.A
         },
         orbRewards: {
-            thumbnail: et.A,
-            assetUrl: ee.A
+            thumbnail: ee.A,
+            assetUrl: Q.A
         }
-    }, eu = {
+    }, eo = {
         name: "serverProfiles",
-        title: j.intl.string(j.t.I9TYMg),
-        description: j.intl.string(j.t.HMSHeH),
-        descriptionCta: j.intl.string(j.t.jVcuVY),
+        title: P.intl.string(P.t.I9TYMg),
+        description: P.intl.string(P.t.HMSHeH),
+        descriptionCta: P.intl.string(P.t.jVcuVY),
         onClick: t,
-        previewImage: ec.serverProfiles.thumbnail,
-        videoUrl: ec.serverProfiles.assetUrl
-    }, e_ = {
+        previewImage: ed.serverProfiles.thumbnail,
+        videoUrl: ed.serverProfiles.assetUrl
+    }, ec = {
         name: "referralProgram",
-        title: j.intl.string(j.t.tPY4o9),
-        description: j.intl.format(j.t.jRPQUH, {
-            learnMoreLink: eo
+        title: P.intl.string(P.t.tPY4o9),
+        description: P.intl.format(P.t.jRPQUH, {
+            learnMoreLink: el
         }),
-        previewImage: ec.referralProgram.thumbnail,
-        videoUrl: ec.referralProgram.assetUrl
-    }, em = {
+        previewImage: ed.referralProgram.thumbnail,
+        videoUrl: ed.referralProgram.assetUrl
+    }, eu = {
         name: "customThemes",
-        title: j.intl.string(D.default.XokIHM),
-        description: j.intl.string(D.default["7esQMC"]),
-        descriptionCta: j.intl.string(j.t.jVcuVY),
-        previewImage: ec.customThemes.thumbnail,
+        title: P.intl.string(D.default.XokIHM),
+        description: P.intl.string(D.default["7esQMC"]),
+        descriptionCta: P.intl.string(P.t.jVcuVY),
+        previewImage: ed.customThemes.thumbnail,
         onClick: () => {
             (0, _.nf)(_.HP.CUSTOM_THEME)
         },
-        videoUrl: ec.customThemes.assetUrl
-    }, ep = {
+        videoUrl: ed.customThemes.assetUrl
+    }, e_ = {
         name: "displayNameStyles",
-        title: j.intl.string(O.default.ABtBDQ),
-        description: j.intl.string(O.default.MFNXZh),
-        descriptionCta: j.intl.string(j.t.jVcuVY),
-        previewImage: ec.displayNameStyles.thumbnail,
-        onClick: i,
-        badgeText: j.intl.string(j.t.y2b7CA).toLocaleUpperCase(),
-        videoUrl: ec.displayNameStyles.assetUrl
-    }, eb = {
+        title: P.intl.string(j.default.ABtBDQ),
+        description: P.intl.string(j.default.MFNXZh),
+        descriptionCta: P.intl.string(P.t.jVcuVY),
+        previewImage: ed.displayNameStyles.thumbnail,
+        onClick: n,
+        badgeText: P.intl.string(P.t.y2b7CA).toLocaleUpperCase(),
+        videoUrl: ed.displayNameStyles.assetUrl
+    }, em = {
         name: "premiumGroup",
-        title: j.intl.formatToPlainString(T.default.VFEDDB, {
-            premiumGroupProductName: (0, I.DP)()
+        title: P.intl.formatToPlainString(y.default.VFEDDB, {
+            premiumGroupProductName: (0, N.DP)()
         }),
-        description: j.intl.formatToPlainString(T.default.WudmR3, {
-            totalSeats: I.aw,
-            premiumGroupProductName: (0, I.DP)()
+        description: P.intl.formatToPlainString(y.default.WudmR3, {
+            totalSeats: N.aw,
+            premiumGroupProductName: (0, N.DP)()
         }),
-        previewImage: ec.premiumGroup.thumbnail,
-        videoUrl: ec.premiumGroup.assetUrl,
-        actions: [...n ? [{
+        previewImage: ed.premiumGroup.thumbnail,
+        videoUrl: ed.premiumGroup.assetUrl,
+        actions: [{
             variant: "primary",
-            text: j.intl.formatToPlainString(T.default.LwdrNi, {
-                premiumGroupProductName: (0, I.DP)()
+            text: P.intl.formatToPlainString(y.default.LwdrNi, {
+                premiumGroupProductName: (0, N.DP)()
             }),
-            onClick: el,
+            onClick: i,
             icon: o.tvc,
             iconPosition: "start"
-        }] : [], {
+        }, {
             variant: "secondary",
-            text: j.intl.string(j.t.hvVgAZ),
+            text: P.intl.string(P.t.hvVgAZ),
             onClick: () => {
                 (0, d.openModalLazy)(async () => {
                     let {
@@ -192,22 +189,22 @@ let ec = () => {
                 })
             }
         }],
-        badgeText: j.intl.string(j.t.oW0eUd).toLocaleUpperCase(),
+        badgeText: P.intl.string(P.t.oW0eUd).toLocaleUpperCase(),
         badgeVariant: "expressive"
-    }, ef = {
+    }, ep = {
         name: "showYourStyle",
-        title: j.intl.string(j.t.Ij3Zmv),
-        description: j.intl.string(j.t.UsOUxY),
-        descriptionCta: j.intl.string(j.t.jVcuVY),
-        previewImage: ec.showYourStyle.thumbnail,
+        title: P.intl.string(P.t.Ij3Zmv),
+        description: P.intl.string(P.t.UsOUxY),
+        descriptionCta: P.intl.string(P.t.jVcuVY),
+        previewImage: ed.showYourStyle.thumbnail,
         onClick: t,
-        videoUrl: ec.showYourStyle.assetUrl
-    }, eg = {
+        videoUrl: ed.showYourStyle.assetUrl
+    }, eb = {
         name: "yourSpace",
-        title: j.intl.string(j.t.Wme3nX),
-        description: j.intl.string(j.t["/aAIqV"]),
-        descriptionCta: j.intl.string(j.t.jVcuVY),
-        previewImage: ec.yourSpace.thumbnail,
+        title: P.intl.string(P.t.Wme3nX),
+        description: P.intl.string(P.t["/aAIqV"]),
+        descriptionCta: P.intl.string(P.t.jVcuVY),
+        previewImage: ed.yourSpace.thumbnail,
         onClick: () => {
             {
                 let t = (0, A.Ci)("openClientThemes"),
@@ -219,51 +216,51 @@ let ec = () => {
                 })
             }
         },
-        videoUrl: ec.yourSpace.assetUrl
-    }, eh = {
+        videoUrl: ed.yourSpace.assetUrl
+    }, ef = {
         name: "emojis",
-        title: j.intl.string(j.t.zY5PPb),
-        description: j.intl.string(j.t.R5Xag2),
-        previewImage: ec.emojis.thumbnail,
-        videoUrl: ec.emojis.assetUrl
-    }, eA = {
+        title: P.intl.string(P.t.zY5PPb),
+        description: P.intl.string(P.t.R5Xag2),
+        previewImage: ed.emojis.thumbnail,
+        videoUrl: ed.emojis.assetUrl
+    }, eg = {
         name: "noLimits",
-        title: j.intl.string(j.t["6b3ydG"]),
-        description: j.intl.string(j.t["Y+IJyg"]),
-        previewImage: ec.noLimits.thumbnail,
-        videoUrl: ec.noLimits.assetUrl
-    }, ex = (0, g.DK)(f.W.NITRO, "useBentoBoxes"), eR = {
+        title: P.intl.string(P.t["6b3ydG"]),
+        description: P.intl.string(P.t["Y+IJyg"]),
+        previewImage: ed.noLimits.thumbnail,
+        videoUrl: ed.noLimits.assetUrl
+    }, eh = (0, g.DK)(f.W.NITRO, "useBentoBoxes"), eA = {
         name: "orbRewards",
-        title: j.intl.string(P.default["ZFJ/NU"]),
-        description: j.intl.string(P.default.wMi514),
-        descriptionCta: j.intl.string(j.t.hvVgAZ),
+        title: P.intl.string(T.default["ZFJ/NU"]),
+        description: P.intl.string(T.default.wMi514),
+        descriptionCta: P.intl.string(P.t.hvVgAZ),
         onClick: () => {
-            window.open(C.A.getArticleURL(S.MVz.ORBS_REWARDS_FAQ), "_blank")
+            window.open(C.A.getArticleURL(I.MVz.ORBS_REWARDS_FAQ), "_blank")
         },
-        previewImage: ec.orbRewards.thumbnail,
+        previewImage: ed.orbRewards.thumbnail,
         previewImageStyle: "overlay",
-        backgroundVideoUrl: ec.orbRewards.assetUrl,
-        badgeText: j.intl.string(j.t.oW0eUd).toLocaleUpperCase(),
+        backgroundVideoUrl: ed.orbRewards.assetUrl,
+        badgeText: P.intl.string(P.t.oW0eUd).toLocaleUpperCase(),
         badgeVariant: "expressive"
     };
     return {
-        whatsNewBoxes: r ? ex ? [
-            [eb],
-            [eR, e_]
+        whatsNewBoxes: r ? eh ? [
+            [em],
+            [eA, ec]
         ] : [
-            [eb],
-            [eu, e_]
-        ] : ex ? [
-            [eR],
-            [eu, e_]
+            [em],
+            [eo, ec]
+        ] : eh ? [
+            [eA],
+            [eo, ec]
         ] : [
-            [ep],
-            [em, e_]
+            [e_],
+            [eu, ec]
         ],
         bestOfBoxes: [
-            [ef],
-            [eg],
-            [eh, eA]
+            [ep],
+            [eb],
+            [ef, eg]
         ]
     }
 }

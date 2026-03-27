@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(554146),
-    r = n(397927),
-    a = n(688810),
+    a = n(397927),
+    r = n(688810),
     o = n(357186),
     c = n(932001),
     d = n(871123),
@@ -26,7 +26,7 @@ var i = n(627968),
     N = n(652215),
     b = n(49999),
     S = n(985018),
-    T = n(141076);
+    T = n(934865);
 
 function v(e) {
     let {
@@ -38,7 +38,7 @@ function v(e) {
         title: R
     } = e, {
         analyticsLocations: O
-    } = (0, a.Ay)(), {
+    } = (0, r.Ay)(), {
         trackUserProfileWishlistAction: L
     } = (0, f.NJ)(), M = (0, A.GG)("user_profile_sidebar_wishlist_breadcrumb"), D = (0, I.Q)(M), G = (0, s.useId)();
     (0, m.T)({
@@ -82,10 +82,10 @@ function v(e) {
                 s = new Set;
             for (let i = 0; i < P.length; i++) {
                 let l = P[i],
-                    r = i === D - 1 && t.length > D;
+                    a = i === D - 1 && t.length > D;
                 (0, _.L)(l) ? (s.add(l.skuProductLine), e.push((0, C.M)(l, {
                     index: i,
-                    moreCount: r ? t.length - D + 1 : void 0,
+                    moreCount: a ? t.length - D + 1 : void 0,
                     profileOwner: n,
                     analyticsLocations: O,
                     onViewWishlist: v,
@@ -94,7 +94,7 @@ function v(e) {
                     cardSize: j
                 }))) : (0, p.$)(l) && (s.add(l.skuProductLine), e.push((0, h.Z)(l, {
                     index: i,
-                    moreCount: r ? t.length - D + 1 : void 0,
+                    moreCount: a ? t.length - D + 1 : void 0,
                     profileOwner: n,
                     analyticsLocations: O,
                     onViewWishlist: v,
@@ -144,17 +144,17 @@ function v(e) {
             className: T.kL,
             children: [(0, i.jsxs)("div", {
                 className: T.wx,
-                children: [(0, i.jsx)(r.Heading, {
+                children: [(0, i.jsx)(a.Heading, {
                     variant: "text-sm/medium",
                     id: G,
                     children: R ?? S.intl.string(S.t["7lZ31J"])
-                }), M && t.length > D && (0, i.jsx)(r.QWc, {
+                }), M && t.length > D && (0, i.jsx)(a.QWc, {
                     variant: "secondary",
                     textVariant: "text-xs/normal",
                     onClick: v,
                     text: S.intl.string(S.t.y6PSA3)
                 })]
-            }), (0, i.jsxs)(r.Fmo, {
+            }), (0, i.jsxs)(a.Fmo, {
                 children: [(0, i.jsx)("div", {
                     className: T.vY,
                     children: M ? F : z

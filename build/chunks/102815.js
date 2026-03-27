@@ -21,7 +21,7 @@ var r = a(627968),
     A = a(788868),
     x = a(652215),
     R = a(985018),
-    C = a(130474);
+    C = a(806305);
 let v = e => {
     let {
         id: t,
@@ -34,8 +34,8 @@ let v = e => {
         backgroundAssetUrl: y,
         progress: T,
         ctaIcon: P,
-        ctaIconPosition: j,
-        ctaText: D,
+        ctaIconPosition: D,
+        ctaText: j,
         onCtaClick: O,
         subscriptionRequired: U,
         glowing: M = !1,
@@ -70,7 +70,7 @@ let v = e => {
         z = !(0, l.isEmpty)(y),
         q = z && (0, c.q)(W),
         X = (0, u.rdh)(u.LU0.colors.BACKGROUND_BASE_LOW).hex(),
-        $ = K || !(0, l.isEmpty)(D);
+        $ = K || !(0, l.isEmpty)(j);
     return (0, r.jsx)(o.NPJ, {
         theme: q ? x.NJ8.DARKER : void 0,
         children: e => (0, r.jsxs)(g.A, {
@@ -175,8 +175,8 @@ let v = e => {
                         defaultTextOverride: R.intl.string(R.t.sEAnVH)
                     }), !K && (0, r.jsx)(o.$nd, {
                         icon: P,
-                        iconPosition: j,
-                        text: D,
+                        iconPosition: D,
+                        text: j,
                         variant: !z && (0, c.q)(W) ? "primary" : "overlay-primary",
                         onClick: F
                     })]

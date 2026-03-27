@@ -1,2 +1,5 @@
-/** chunk id: 124733, original params: e (module,exports,require) **/
-e.exports = "/assets/990f1e152cffb826.png"
+/** chunk id: 124733 params = (module,exports,require) **/
+e.exports = {
+    A: "outer_ac6414",
+    v: "inner_ac6414"
+}

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(284009),
     s = n.n(i),
     l = n(698441),
-    r = n(71393),
-    a = n(994500),
+    a = n(71393),
+    r = n(994500),
     o = n(287809),
     c = n(240248),
     d = n(427262),
@@ -50,13 +50,13 @@ function _(e) {
             let E = t.local_id?.split("_").pop() ?? "unknown";
             return `Update to build ${E} available!`;
         case u.hW.FRIEND_SUGGESTION_CREATED:
-            a.A.getRelationshipType(i), h.eA$.PENDING_OUTGOING;
+            r.A.getRelationshipType(i), h.eA$.PENDING_OUTGOING;
             break;
         case u.hW.GUILD_SCHEDULED_EVENT_STARTED:
             let C = t.guild_scheduled_event_id,
                 I = null != C ? l.Ay.getGuildScheduledEvent(C) : null,
                 N = I?.name,
-                b = r.A.getGuild(I?.guild_id)?.name,
+                b = a.A.getGuild(I?.guild_id)?.name,
                 S = (0, l.AZ)(I ?? void 0);
             return (0, c.uJ)(b) || (0, c.uJ)(N) || !S ? t.body ?? "" : A.intl.format(A.t.AyvfXR, {
                 event_name: N,

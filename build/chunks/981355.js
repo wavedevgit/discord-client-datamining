@@ -1,10 +1,10 @@
 /** chunk id: 981355 params = (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => i
 });
 var a = n(64700);
 
-function l() {
+function i() {
     arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
     let [e, t] = a.useState(function() {
         return arguments.length > 0 && void 0 !== arguments[0] && arguments[0], {

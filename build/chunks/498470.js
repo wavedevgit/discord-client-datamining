@@ -37,6 +37,20 @@ function o(e) {
             return () => (0, s.A)({
                 analyticsLocations: n
             });
+        case i.dz.OPEN_PREMIUM_GROUP_PAYMENT_MODAL:
+            return () => (0, s.A)({
+                subscriptionTier: a.pe.TIER_2,
+                initialPlanId: a.gD.PREMIUM_GROUP_MONTH,
+                analyticsLocations: n,
+                analyticsObject: {
+                    ...o,
+                    object: r.ZSU.BUTTON_CTA,
+                    objectType: r.AnalyticsObjectTypes.TIER_2
+                },
+                onClose: e => {
+                    e && d?.()
+                }
+            });
         case i.dz.OPEN_TIER_2_PAYMENT_MODAL:
         case i.dz.OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER:
         default:

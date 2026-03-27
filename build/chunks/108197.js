@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(837381),
+    a = n.n(l),
+    r = n(837381),
     o = n(311907),
     c = n(3026),
     d = n(397927),
@@ -25,9 +25,9 @@ var i = n(627968),
     I = n(588224),
     N = n(37411),
     b = n(985018),
-    S = n(928409),
-    T = n(567431),
-    v = n(570302);
+    S = n(99566),
+    T = n(11464),
+    v = n(251843);
 
 function y(e) {
     let {
@@ -35,16 +35,16 @@ function y(e) {
         withGuildIcon: n,
         inverted: s
     } = e, l = {
-        className: r()(v.GI, {
+        className: a()(v.GI, {
             [v.a7]: n
         }, {
             [v.BJ]: s
         }),
         style: t
     }, {
-        density: a
+        density: r
     } = (0, d.wRf)();
-    switch (a) {
+    switch (r) {
         case "cozy":
             return (0, i.jsxs)("svg", {
                 ...l,
@@ -128,7 +128,7 @@ let j = s.memo(function(e) {
     }, [t.id]), V = null == O ? 0 : O.length, {
         role: B,
         ...H
-    } = (0, a.rm)(t.id), F = s.useRef(null), K = D > 0 ? b.intl.formatToPlainString(b.t["ZL7+I6"], {
+    } = (0, r.rm)(t.id), F = s.useRef(null), K = D > 0 ? b.intl.formatToPlainString(b.t["ZL7+I6"], {
         channelName: t.name,
         mentionCount: D
     }) : M ? b.intl.formatToPlainString(b.t.YlVvmc, {
@@ -138,7 +138,7 @@ let j = s.memo(function(e) {
     });
     return (0, i.jsxs)("li", {
         role: B,
-        className: r()(S.fx, {
+        className: a()(S.fx, {
             [S.wH]: l
         }),
         children: [(0, i.jsx)(y, {
@@ -158,7 +158,7 @@ let j = s.memo(function(e) {
                 right: 4
             },
             children: (0, i.jsxs)("div", {
-                className: r()(S.Ki, T.iE, T.ZS, {
+                className: a()(S.Ki, T.iE, T.ZS, {
                     [T.J1]: l,
                     [T.F4]: !l && U,
                     [T.V2]: !U && !l && M,
@@ -167,7 +167,7 @@ let j = s.memo(function(e) {
                 onMouseDown: w,
                 onContextMenu: k,
                 children: [!M || U || l ? null : (0, i.jsx)("div", {
-                    className: r()(T.gy, T.WS)
+                    className: a()(T.gy, T.WS)
                 }), (0, i.jsx)(d.DUT, {
                     ...H,
                     innerRef: F,
@@ -178,7 +178,7 @@ let j = s.memo(function(e) {
                         enabled: !1
                     },
                     children: (0, i.jsxs)("div", {
-                        className: r()(T.Y5, T.__invalid_threadMainContent),
+                        className: a()(T.Y5, T.__invalid_threadMainContent),
                         children: [(0, i.jsx)(c.A, {
                             className: T.UU,
                             "aria-hidden": !0,

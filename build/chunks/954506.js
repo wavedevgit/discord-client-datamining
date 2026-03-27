@@ -4,9 +4,9 @@ n.d(t, {
 });
 var a = n(627968);
 n(64700);
-var l = n(158954),
-    i = n(985018),
-    r = n(952183);
+var i = n(158954),
+    l = n(985018),
+    r = n(836034);
 
 function s(e) {
     let {
@@ -18,16 +18,16 @@ function s(e) {
         className: r.k,
         children: [(0, a.jsxs)("div", {
             className: r.w,
-            children: [(0, a.jsx)(l.DZT, {
+            children: [(0, a.jsx)(i.DZT, {
                 variant: "heading-lg/medium",
                 children: n
-            }), null != s && (0, a.jsx)(l.$nd, {
+            }), null != s && (0, a.jsx)(i.$nd, {
                 size: "sm",
-                icon: l._BQ,
+                icon: i._BQ,
                 iconPosition: "end",
                 variant: "secondary",
                 onClick: s,
-                text: i.intl.string(i.t.budhsM)
+                text: l.intl.string(l.t.budhsM)
             })]
         }), t]
     })

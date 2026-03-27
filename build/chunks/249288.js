@@ -8,29 +8,29 @@ var i = n(311907),
 let l = {
         toastsEnabledForChannel: {}
     },
-    r = l;
-class a extends i.Ay.PersistedStore {
+    a = l;
+class r extends i.Ay.PersistedStore {
     static displayName = "CallChatToastsStore";
     static persistKey = "CallChatToasts";
     initialize(e) {
-        r = e ?? l
+        a = e ?? l
     }
     getToastsEnabled(e) {
-        return r.toastsEnabledForChannel[e] ?? !0
+        return a.toastsEnabledForChannel[e] ?? !0
     }
     getState() {
-        return r
+        return a
     }
 }
-let o = new a(s.h, {
+let o = new r(s.h, {
     CALL_CHAT_TOASTS_SET_ENABLED: function(e) {
         let {
             channelId: t,
             toastsEnabled: n
         } = e;
-        r.toastsEnabledForChannel[t] = n
+        a.toastsEnabledForChannel[t] = n
     },
     LOGOUT: function() {
-        r.toastsEnabledForChannel = {}
+        a.toastsEnabledForChannel = {}
     }
 })
