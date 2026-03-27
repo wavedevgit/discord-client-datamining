@@ -1,16 +1,11 @@
 /** chunk id: 164466 params = (module,exports,require) **/
-e.exports = {
-    hU: "ping__06d62",
-    kV: "largePing__06d62",
-    xr: "clickablePing__06d62",
-    yH: "rtcConnectionStatus__06d62",
-    MN: "rtcConnectionStatusLabel__06d62",
-    nf: "rtcConnectionStatusConnected__06d62 rtcConnectionStatusLabel__06d62",
-    _6: "rtcConnectionStatusConnecting__06d62 rtcConnectionStatusLabel__06d62",
-    Il: "rtcConnectionStatusError__06d62 rtcConnectionStatusLabel__06d62",
-    LP: "rtcConnectionQualityFine__06d62",
-    mq: "rtcConnectionQualityAverage__06d62",
-    yA: "rtcConnectionQualityBad__06d62",
-    ei: "labelWrapper__06d62",
-    pe: "rtcConnectionStatusWrapper__06d62"
+t.exports = {
+    D7: "gradient__7dbcf",
+    cG: "closeButtonContainer__7dbcf",
+    JS: "artContainer__7dbcf",
+    tW: "followupArtContainer__7dbcf artContainer__7dbcf",
+    Qs: "content__7dbcf",
+    rf: "body__7dbcf",
+    wx: "header__7dbcf",
+    v0: "buttonRow__7dbcf"
 }
