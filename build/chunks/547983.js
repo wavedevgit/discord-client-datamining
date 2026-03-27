@@ -14,8 +14,8 @@ var i = n(627968),
     u = n(50268),
     g = n(486503),
     A = n(373963),
-    m = n(115184),
-    p = n(777933),
+    p = n(115184),
+    m = n(777933),
     f = n(826308),
     h = n(51512),
     y = n(773699),
@@ -57,8 +57,8 @@ function W(e) {
             message: u,
             target: g,
             mediaItem: A,
-            shouldHideMediaOptions: m,
-            onSelect: p,
+            shouldHideMediaOptions: p,
+            onSelect: m,
             onHeightUpdate: f
         } = e,
         {
@@ -89,11 +89,11 @@ function W(e) {
             itemTextContent: r,
             canReport: !0,
             onHeightUpdate: f,
-            onSelect: p,
+            onSelect: m,
             onClose: s.Z_,
             navId: "message",
             ariaLabel: z.intl.string(z.t.ChPNkN),
-            shouldHideMediaOptions: m
+            shouldHideMediaOptions: p
         })
     })
 }
@@ -154,8 +154,8 @@ function Z(e) {
         eu = (0, R.A)(t, n),
         eg = (0, A.A)(s),
         eA = (0, f.A)(s),
-        em = (0, b.A)(t, n),
-        ep = (0, D.A)(t, n),
+        ep = (0, b.A)(t, n),
+        em = (0, D.A)(t, n),
         ef = (0, P.A)(t, n),
         eh = (0, C.A)(t, n),
         ey = (0, X.A)(t, n),
@@ -192,7 +192,7 @@ function Z(e) {
             name: W
         }),
         ek = (0, _.A)(s, n.getGuildId()),
-        eX = (0, m.A)(Q, t, {
+        eX = (0, p.A)(Q, t, {
             shouldHideMediaOptions: es,
             contentType: a?.contentType,
             originalContentType: a?.originalContentType
@@ -202,7 +202,7 @@ function Z(e) {
         eH = (0, J.A)(a, {
             shouldHideMediaOptions: es
         }),
-        eK = (0, p.A)(Z ?? $, ee, t, {
+        eK = (0, m.A)(Z ?? $, ee, t, {
             shouldHideMediaOptions: es
         }),
         eq = (0, u.A)({
@@ -233,15 +233,15 @@ function Z(e) {
         }), (0, i.jsx)(r.rXV, {
             children: eA
         }), (0, i.jsxs)(r.rXV, {
-            children: ["" === s ? eu : null, em, eC]
+            children: ["" === s ? eu : null, ep, eC]
         }), (0, i.jsxs)(r.rXV, {
-            children: [ep, ef, eh, ey]
+            children: [em, ef, eh, ey]
         }), (0, i.jsxs)(r.rXV, {
             children: [eE, e_, eS, eb, ev, ex, eI, ej, eT, eD, eM, eN, eO]
         }), (0, i.jsxs)(r.rXV, {
             children: [eR, eG, eL, et && ew, et && eP, eU]
         }), ec ? (0, i.jsxs)(i.Fragment, {
-            children: [eY, ez, (0, i.jsx)(r.rXV, {
+            children: [eY, ez, null == eJ && (0, i.jsx)(r.rXV, {
                 children: eK
             })]
         }) : (0, i.jsxs)(i.Fragment, {

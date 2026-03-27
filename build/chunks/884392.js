@@ -17,7 +17,6 @@ var i = n(627968),
 
 function p(e) {
     switch (e) {
-        case a.n.ACHIEVEMENT_IN_GAME:
         case a.n.ACHIEVEMENT_IN_ACTIVITY:
         case a.n.PLAY_ACTIVITY:
         case a.n.WATCH_VIDEO:
@@ -56,13 +55,11 @@ let g = function(e) {
             (0, _.Fy)(t)
         };
         switch (e) {
-            case a.n.ACHIEVEMENT_IN_GAME:
             case a.n.ACHIEVEMENT_IN_ACTIVITY:
             case a.n.PLAY_ACTIVITY:
-                if (t.config.features.includes(m.Li.START_QUEST_CTA)) return () => {
+                return () => {
                     n()
                 };
-                return null;
             default:
                 return null
         }
@@ -75,13 +72,11 @@ let g = function(e) {
                 return h.intl.formatToPlainString(h.t.GNsKiW, {
                     remainTime: (0, u.xm)((0, u.Yh)(t))
                 });
-            case a.n.ACHIEVEMENT_IN_GAME:
             case a.n.ACHIEVEMENT_IN_ACTIVITY:
-                return n.includes(m.Li.START_QUEST_CTA) ? h.intl.string(h.t["hRIVy+"]) : h.intl.string(h.t.l7E81v);
+                return h.intl.string(h.t["hRIVy+"]);
             case a.n.PLAY_ACTIVITY:
                 if (n.includes(m.Li.CLOUD_GAMING_ACTIVITY)) return h.intl.string(h.t["+qoymD"]);
-                if (n.includes(m.Li.START_QUEST_CTA)) return h.intl.string(h.t["Ie9++s"]);
-                return h.intl.string(h.t.l7E81v);
+                return h.intl.string(h.t["Ie9++s"]);
             default:
                 return h.intl.string(h.t.kUQLMJ)
         }

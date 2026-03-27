@@ -18,9 +18,9 @@ var r = n(627968),
     m = n(397274),
     p = n(189857),
     y = n(188180),
-    b = n(133457),
-    v = n(985018),
-    g = n(107567);
+    v = n(133457),
+    g = n(985018),
+    b = n(107567);
 
 function x(e) {
     let {
@@ -32,7 +32,7 @@ function x(e) {
     } = e, A = f.A.useField("showNavigationMobile"), S = i.useRef(null), [N] = i.useState(t), {
         accessibleDirectory: C
     } = (0, _._)(), j = i.useMemo(() => (0, p.Z)(N, C), [N, C]), [I] = (0, d.kn)(j.allDismissibleContents);
-    (0, b.B)({
+    (0, v.B)({
         visibleContent: I,
         dismissibleBadges: j,
         accessibleDirectory: C
@@ -47,20 +47,20 @@ function x(e) {
     return (0, r.jsx)(c.NPJ, {
         theme: k,
         children: e => (0, r.jsxs)("div", {
-            className: l()(g.pz, e, {
-                [g.Hw]: o.Fr,
-                [g.n7]: A
+            className: l()(b.pz, e, {
+                [b.Hw]: o.Fr,
+                [b.n7]: A
             }),
             children: [(0, r.jsxs)("div", {
-                className: g.gM,
+                className: b.gM,
                 children: [o.Fr && (0, r.jsx)("div", {
-                    className: g.hg,
+                    className: b.hg,
                     children: (0, r.jsx)(c.K0, {
                         icon: c.d$L,
                         onClick: n,
                         variant: "icon-only",
                         size: "sm",
-                        "aria-label": v.intl.string(v.t.cpT0Cq)
+                        "aria-label": g.intl.string(g.t.cpT0Cq)
                     })
                 }), (0, r.jsx)("div", {
                     children: T.map(e => (0, r.jsx)(E, {
@@ -82,11 +82,11 @@ function x(e) {
                             ref: e => {
                                 S.current = e, m.A.setSidebarScrollerRef(e), t.current = e?.getScrollerNode() ?? null
                             },
-                            className: g.Mt,
+                            className: b.Mt,
                             fade: !0,
                             ...n,
                             children: [(0, r.jsx)("nav", {
-                                className: g.C$,
+                                className: b.C$,
                                 children: R.map(e => (0, r.jsx)(E, {
                                     section: e,
                                     visibleContent: I,
@@ -109,12 +109,12 @@ function E(e) {
         hoisted: a = !1
     } = e, l = t.useTitle?.();
     return (0, r.jsxs)("ul", {
-        className: g.uW,
+        className: b.uW,
         "aria-label": l,
         children: [null != l && (0, r.jsx)("div", {
-            className: g.a9,
+            className: b.a9,
             children: (0, r.jsx)(c.Heading, {
-                className: g.Pf,
+                className: b.Pf,
                 variant: "heading-sm/medium",
                 color: "text-muted",
                 children: l

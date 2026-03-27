@@ -13,14 +13,14 @@ var i = n(627968),
     u = n(406704),
     g = n(576705),
     A = n(486020),
-    m = n(690521),
-    p = n(652215),
+    p = n(690521),
+    m = n(652215),
     f = n(985018);
 
 function h(e, t) {
     let {
         reducedMotion: n
-    } = l.useContext(r.CZY), A = (0, u.Id)(t), h = (0, a.bG)([g.A], () => g.A.can(p.xBc.MANAGE_MESSAGES, t) && A, [t, A]), E = e.reactions.reduce((e, t) => t.count_details?.vote != null || null != e.find(e => null != e.id && e.id === t.emoji.id || e.name === t.emoji.name) ? e : [...e, t.emoji], []);
+    } = l.useContext(r.CZY), A = (0, u.Id)(t), h = (0, a.bG)([g.A], () => g.A.can(m.xBc.MANAGE_MESSAGES, t) && A, [t, A]), E = e.reactions.reduce((e, t) => t.count_details?.vote != null || null != e.find(e => null != e.id && e.id === t.emoji.id || e.name === t.emoji.name) ? e : [...e, t.emoji], []);
     return !h || null == e.reactions || 0 === e.reactions.length || e.isPoll() && !(0, o.Gh)(e) ? null : (0, i.jsx)(r.Drp, {
         id: "remove-emoji-reactions",
         label: f.intl.string(f.t["zx/e4P"]),
@@ -47,7 +47,7 @@ function h(e, t) {
             leadingAccessory: {
                 type: "emoji",
                 emojiId: l.id,
-                src: null == l.id ? m.Ay.getURL(l.name ?? "") : void 0,
+                src: null == l.id ? p.Ay.getURL(l.name ?? "") : void 0,
                 animated: l.animated
             },
             icon: e => (0, i.jsx)(y, {
@@ -73,7 +73,7 @@ function y(e) {
             id: t.id,
             animated: t.animated && (!n || a),
             size: 18
-        }) : m.Ay.getURL(t.name ?? ""),
+        }) : p.Ay.getURL(t.name ?? ""),
         alt: ""
     })
 }

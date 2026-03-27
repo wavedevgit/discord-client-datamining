@@ -6,7 +6,7 @@ var r = n(627968),
     l = n(64700),
     a = n(503698),
     i = n.n(a),
-    s = n(4208),
+    s = n(382222),
     o = n(311907),
     u = n(876230),
     c = n(649658),
@@ -84,14 +84,14 @@ let w = {
         l.useLayoutEffect(() => {
             eO.current = performance.now()
         }, []);
-        let [e_, eG] = l.useState(.3), [eQ, eF] = l.useState(!1), [e$, eY] = l.useState(!1), [ez, eX] = l.useState(!1), [eW, eV] = l.useState(!1), eH = (0, o.bG)([p.A], () => p.A.useReducedMotion), eJ = (0, l.useRef)(null), eZ = (0, l.useRef)(null), eq = l.useRef(!0), [e0, e1] = l.useState(null), e6 = l.useCallback((e, t) => {
+        let [e_, eG] = l.useState(.3), [eQ, eF] = l.useState(!1), [e$, eY] = l.useState(!1), [ez, eX] = l.useState(!1), [eW, eV] = l.useState(!1), eH = (0, o.bG)([p.A], () => p.A.useReducedMotion), eJ = (0, l.useRef)(null), eZ = (0, l.useRef)(null), eq = l.useRef(!0), [e0, e1] = l.useState(null), e2 = l.useCallback((e, t) => {
             I?.(e, t)
         }, [I]), {
-            isHlsActive: e2
+            isHlsActive: e6
         } = (0, S.Ay)(eJ, {
             src: es,
             initialTimeSec: L,
-            onError: e6,
+            onError: e2,
             onHlsInstance: q
         }), [e4, e8] = l.useState(!1), [e7, e9] = l.useState(null), [e3, e5] = l.useState(0), te = B ?? eJ.current?.duration ?? 0, [tt, tn] = l.useState(u.oA.MD), tr = {
             [u.oA.MD]: 50,
@@ -353,10 +353,10 @@ let w = {
                     onSeeked: () => {
                         e8(!0)
                     },
-                    onAbort: () => e6(u.SB.ABORT),
-                    onError: () => e6(u.SB.ERROR),
-                    onEmptied: () => e6(u.SB.EMPTIED),
-                    onStalled: () => e6(u.SB.STALLED),
+                    onAbort: () => e2(u.SB.ABORT),
+                    onError: () => e2(u.SB.ERROR),
+                    onEmptied: () => e2(u.SB.EMPTIED),
+                    onStalled: () => e2(u.SB.STALLED),
                     onClick: () => {
                         tx()
                     },
@@ -368,8 +368,8 @@ let w = {
                         kind: "captions",
                         srcLang: "en",
                         default: !0
-                    }), !e2 && (0, r.jsx)("source", {
-                        onError: () => e6(u.SB.SOURCE_ERROR),
+                    }), !e6 && (0, r.jsx)("source", {
+                        onError: () => e2(u.SB.SOURCE_ERROR),
                         src: es,
                         type: "video/mp4"
                     })]

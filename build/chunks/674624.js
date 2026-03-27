@@ -1,8 +1,8 @@
 /** chunk id: 674624 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => D,
-    jW: () => L,
-    w1: () => P
+    Ay: () => M,
+    jW: () => D,
+    w1: () => G
 });
 var i, s = n(627968),
     l = n(64700),
@@ -15,144 +15,148 @@ var i, s = n(627968),
     m = n(259065),
     _ = n(206835),
     g = n(976860),
-    x = n(780964),
-    A = n(358776),
-    h = n(840065),
-    p = n(112848),
-    f = n(149757),
-    T = n(920050),
-    S = n(189024),
-    E = n(652215),
-    b = n(355097),
-    C = n(985018),
-    v = n(64514),
-    N = n(121818),
-    I = n(419455),
-    j = n(288604),
-    y = n(163635),
-    O = n(345362),
-    R = n(509442),
-    L = ((i = {}).BEST_OF_NITRO = "bestof", i.APPEARANCE_STYLE = "appearance", i.UPGRADES = "upgrades", i.VIP_EXTRAS = "vip", i);
-let P = [{
+    x = n(591179),
+    A = n(576060),
+    h = n(780964),
+    p = n(358776),
+    f = n(840065),
+    T = n(112848),
+    S = n(149757),
+    E = n(920050),
+    b = n(189024),
+    C = n(652215),
+    v = n(355097),
+    N = n(985018),
+    I = n(64514),
+    j = n(121818),
+    y = n(419455),
+    O = n(288604),
+    R = n(163635),
+    L = n(345362),
+    P = n(509442),
+    D = ((i = {}).BEST_OF_NITRO = "bestof", i.APPEARANCE_STYLE = "appearance", i.UPGRADES = "upgrades", i.VIP_EXTRAS = "vip", i);
+let G = [{
     id: "bestof",
-    label: () => C.intl.string(C.t.q1u7nQ)
+    label: () => N.intl.string(N.t.q1u7nQ)
 }, {
     id: "appearance",
-    label: () => C.intl.string(C.t.CUnZkZ)
+    label: () => N.intl.string(N.t.CUnZkZ)
 }, {
     id: "upgrades",
-    label: () => C.intl.string(C.t.KC5q8v)
+    label: () => N.intl.string(N.t.KC5q8v)
 }, {
     id: "vip",
-    label: () => C.intl.string(C.t.DjEAcv)
+    label: () => N.intl.string(N.t.DjEAcv)
 }];
 
-function D() {
+function M() {
     let e = (0, d.DP)(),
-        t = (0, p.Lh)(),
-        n = (0, f.N)(t)?.standard ?? null,
+        t = (0, x.X)("useFavoritesPerkCards"),
+        n = (0, T.Lh)(),
+        i = (0, S.N)(n)?.standard ?? null,
         {
-            analyticsLocations: i
+            analyticsLocations: D
         } = (0, u.Ay)(c.A.PREMIUM_MARKETING_PERK_CARD),
-        L = (0, _.A)({
-            scrollPosition: b._F.TRY_IT_OUT,
-            analyticsLocations: i
+        G = (0, _.A)({
+            scrollPosition: v._F.TRY_IT_OUT,
+            analyticsLocations: D
         }),
-        P = (0, l.useCallback)(() => {
-            let e = (0, A.Ci)("openClientThemes");
-            (0, h.openUserSettings)(e ? x.X.DISPLAY_THEME_CATEGORY : x.X.APPEARANCE_PANEL, {
-                analyticsLocations: i
-            })
-        }, [i]),
-        D = (0, l.useCallback)(() => {
-            (0, h.openUserSettings)(x.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
-                analyticsLocations: i
-            })
-        }, [i]),
-        G = (0, l.useCallback)(() => {
-            let e = (0, A.Ci)("openCustomAppSettings") ? x.X.DISPLAY_IN_APP_ICON_CATEGORY : x.X.APPEARANCE_IN_APP_ICON;
-            (0, h.openUserSettings)(e, {
-                analyticsLocations: i
-            })
-        }, [i]),
         M = (0, l.useCallback)(() => {
-            (0, g.pX)(E.BVt.COLLECTIBLES_SHOP)
-        }, []),
-        U = (0, l.useCallback)(() => {
-            (0, h.openUserSettings)(x.X.SOUNDBOARD_CATEGORY, {
-                analyticsLocations: i
+            let e = (0, p.Ci)("openClientThemes");
+            (0, f.openUserSettings)(e ? h.X.DISPLAY_THEME_CATEGORY : h.X.APPEARANCE_PANEL, {
+                analyticsLocations: D
             })
-        }, [i]),
+        }, [D]),
+        U = (0, l.useCallback)(() => {
+            (0, f.openUserSettings)(h.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
+                analyticsLocations: D
+            })
+        }, [D]),
         k = (0, l.useCallback)(() => {
-            (0, h.openUserSettings)(x.X.PROFILE_PANEL, {
-                analyticsLocations: i
+            let e = (0, p.Ci)("openCustomAppSettings") ? h.X.DISPLAY_IN_APP_ICON_CATEGORY : h.X.APPEARANCE_IN_APP_ICON;
+            (0, f.openUserSettings)(e, {
+                analyticsLocations: D
+            })
+        }, [D]),
+        w = (0, l.useCallback)(() => {
+            (0, g.pX)(C.BVt.COLLECTIBLES_SHOP)
+        }, []),
+        V = (0, l.useCallback)(() => {
+            (0, f.openUserSettings)(h.X.SOUNDBOARD_CATEGORY, {
+                analyticsLocations: D
+            })
+        }, [D]),
+        B = (0, A.A)(),
+        F = (0, l.useCallback)(() => {
+            (0, f.openUserSettings)(h.X.PROFILE_PANEL, {
+                analyticsLocations: D
             }, () => (0, m.L)({
-                analyticsLocations: i
+                analyticsLocations: D
             }))
-        }, [i]),
-        w = (0, S.A)(),
-        V = (0, l.useMemo)(() => w.map(e => e?.id), [w]),
-        B = (0, l.useMemo)(() => [{
-            id: T.SERVER_BOOSTS_CARD_ID,
-            title: C.intl.formatToPlainString(C.t.pWySes, {
+        }, [D]),
+        H = (0, b.A)(),
+        z = (0, l.useMemo)(() => H.map(e => e?.id), [H]),
+        Y = (0, l.useMemo)(() => [{
+            id: E.SERVER_BOOSTS_CARD_ID,
+            title: N.intl.formatToPlainString(N.t.pWySes, {
                 boostCount: 2,
                 percentageOff: 30
             }),
-            description: C.intl.formatToPlainString(C.t.cWFUoT, {
+            description: N.intl.formatToPlainString(N.t.cWFUoT, {
                 boostCount: 2,
                 percentageOff: 30
             }),
             subscriptionRequired: !0,
-            ctaText: C.intl.string(C.t.jVcuVY),
-            onCtaClick: D,
+            ctaText: N.intl.string(N.t.jVcuVY),
+            onCtaClick: U,
             primaryAsset: (0, s.jsx)(a.CIt, {
                 alt: "",
                 ariaHidden: !0
             }),
             categories: ["bestof", "upgrades"]
         }, {
-            id: T.PROFILES_CARD_ID,
-            title: C.intl.string(C.t.xDRab3),
-            description: C.intl.string(C.t.yn6fWA),
-            ctaText: C.intl.string(C.t.jVcuVY),
-            onCtaClick: L,
+            id: E.PROFILES_CARD_ID,
+            title: N.intl.string(N.t.xDRab3),
+            description: N.intl.string(N.t.yn6fWA),
+            ctaText: N.intl.string(N.t.jVcuVY),
+            onCtaClick: t ? B : G,
             primaryAsset: (0, s.jsx)(a.R$P, {
                 alt: "",
                 ariaHidden: !0
             }),
             categories: ["bestof", "appearance"]
         }, {
-            id: T.HD_VIDEO_CARD_ID,
-            title: C.intl.string(C.t["/mQ5gg"]),
-            description: C.intl.string(C.t["7WwAXh"]),
+            id: E.HD_VIDEO_CARD_ID,
+            title: N.intl.string(N.t["/mQ5gg"]),
+            description: N.intl.string(N.t["7WwAXh"]),
             primaryAsset: (0, s.jsx)(a.TMU, {
                 alt: "",
                 ariaHidden: !0
             }),
             categories: ["bestof", "upgrades"]
         }, {
-            id: T.CLIENT_THEMES_CARD_ID,
-            title: C.intl.string(C.t.acc6h6),
-            description: C.intl.formatToPlainString(C.t.WQazjs, {
+            id: E.CLIENT_THEMES_CARD_ID,
+            title: N.intl.string(N.t.acc6h6),
+            description: N.intl.formatToPlainString(N.t.WQazjs, {
                 themeCount: 20
             }),
-            ctaText: C.intl.string(C.t.jVcuVY),
-            onCtaClick: P,
-            primaryAsset: R.A,
+            ctaText: N.intl.string(N.t.jVcuVY),
+            onCtaClick: M,
+            primaryAsset: P.A,
             categories: ["bestof", "appearance"]
         }, {
-            id: T.MORE_EMOJIS_CARD_ID,
-            title: C.intl.string(C.t.D8vIDT),
-            description: C.intl.string(C.t.DRMecB),
+            id: E.MORE_EMOJIS_CARD_ID,
+            title: N.intl.string(N.t.D8vIDT),
+            description: N.intl.string(N.t.DRMecB),
             primaryAsset: (0, s.jsx)(a.nT5, {
                 alt: "",
                 ariaHidden: !0
             }),
             categories: ["bestof", "upgrades"]
         }, {
-            id: T.LARGE_UPLOADS_CARD_ID,
-            title: C.intl.string(C.t.nL1WZV),
-            description: C.intl.formatToPlainString(C.t.k8LC1w, {
+            id: E.LARGE_UPLOADS_CARD_ID,
+            title: N.intl.string(N.t.nL1WZV),
+            description: N.intl.formatToPlainString(N.t.k8LC1w, {
                 maxSizeMb: 500
             }),
             primaryAsset: (0, s.jsx)(a.oYh, {
@@ -161,75 +165,75 @@ function D() {
             }),
             categories: ["bestof", "upgrades"]
         }, {
-            id: T.CUSTOM_APP_ICONS_CARD_ID,
-            title: C.intl.string(C.t["GU+wqh"]),
-            description: C.intl.string(C.t["1uPk1Z"]),
-            ctaText: C.intl.string(C.t.jVcuVY),
-            onCtaClick: G,
-            primaryAsset: j.A,
+            id: E.CUSTOM_APP_ICONS_CARD_ID,
+            title: N.intl.string(N.t["GU+wqh"]),
+            description: N.intl.string(N.t["1uPk1Z"]),
+            ctaText: N.intl.string(N.t.jVcuVY),
+            onCtaClick: k,
+            primaryAsset: O.A,
             categories: ["appearance"]
         }, {
-            id: T.ENTRANCE_SOUNDS_CARD_ID,
-            title: C.intl.string(C.t.WJfCPi),
-            description: C.intl.string(C.t.liQKJR),
-            ctaText: C.intl.string(C.t.jVcuVY),
-            onCtaClick: U,
+            id: E.ENTRANCE_SOUNDS_CARD_ID,
+            title: N.intl.string(N.t.WJfCPi),
+            description: N.intl.string(N.t.liQKJR),
+            ctaText: N.intl.string(N.t.jVcuVY),
+            onCtaClick: V,
+            primaryAsset: R.A,
+            categories: ["appearance"]
+        }, {
+            id: E.DISPLAY_NAME_STYLES_CARD_ID,
+            title: N.intl.string(N.t.OLtTrt),
+            description: N.intl.string(N.t["di/pXR"]),
+            onCtaClick: t ? B : F,
+            ctaText: N.intl.string(N.t.jVcuVY),
             primaryAsset: y.A,
             categories: ["appearance"]
         }, {
-            id: T.DISPLAY_NAME_STYLES_CARD_ID,
-            title: C.intl.string(C.t.OLtTrt),
-            description: C.intl.string(C.t["di/pXR"]),
-            onCtaClick: k,
-            primaryAsset: I.A,
-            ctaText: C.intl.string(C.t.jVcuVY),
-            categories: ["appearance"]
-        }, {
-            id: T.CUSTOM_SOUNDS_CARD_ID,
-            title: C.intl.string(C.t["Cu/oFd"]),
-            description: C.intl.string(C.t.czj2aa),
+            id: E.CUSTOM_SOUNDS_CARD_ID,
+            title: N.intl.string(N.t["Cu/oFd"]),
+            description: N.intl.string(N.t.czj2aa),
             primaryAsset: (0, s.jsx)(a.WPL, {
                 alt: "",
                 ariaHidden: !0
             }),
             categories: ["upgrades"]
         }, {
-            id: T.SPECIAL_STICKERS_CARD_ID,
-            title: C.intl.string(C.t.MQoVeb),
-            description: C.intl.string(C.t.HGCLZX),
-            primaryAsset: O.A,
+            id: E.SPECIAL_STICKERS_CARD_ID,
+            title: N.intl.string(N.t.MQoVeb),
+            description: N.intl.string(N.t.HGCLZX),
+            primaryAsset: L.A,
             categories: ["upgrades"]
         }, {
-            id: T.SUPER_REACTIONS_CARD_ID,
-            title: C.intl.string(C.t.qERvAA),
-            description: C.intl.string(C.t.WkUWzx),
+            id: E.SUPER_REACTIONS_CARD_ID,
+            title: N.intl.string(N.t.qERvAA),
+            description: N.intl.string(N.t.WkUWzx),
             primaryAsset: (0, s.jsx)(a.Z8w, {
                 alt: "",
                 ariaHidden: !0
             }),
             categories: ["upgrades"]
         }, {
-            id: T.VIDEO_BACKGROUNDS_CARD_ID,
-            title: C.intl.string(C.t.ssVDYQ),
-            description: C.intl.string(C.t.aUSRMa),
-            primaryAsset: (0, o.Mw)(e) ? v : N,
+            id: E.VIDEO_BACKGROUNDS_CARD_ID,
+            title: N.intl.string(N.t.ssVDYQ),
+            description: N.intl.string(N.t.aUSRMa),
+            primaryAsset: (0, o.Mw)(e) ? I : j,
             categories: ["upgrades"]
         }, {
-            id: T.EARLY_ACCESS_CARD_ID,
-            title: C.intl.string(C.t["g/KRY6"]),
-            description: C.intl.string(C.t.JzAmJc),
+            id: E.EARLY_ACCESS_CARD_ID,
+            title: N.intl.string(N.t["g/KRY6"]),
+            description: N.intl.string(N.t.JzAmJc),
             primaryAsset: (0, s.jsx)(a.AxI, {
                 alt: "",
                 ariaHidden: !0
             }),
             categories: ["vip"]
         }, {
-            id: T.BADGE_CARD_ID,
-            title: C.intl.string(C.t.Bn3CtB),
-            description: C.intl.string(C.t.LmENwu),
+            id: E.BADGE_CARD_ID,
+            title: N.intl.string(N.t.Bn3CtB),
+            description: N.intl.string(N.t.LmENwu),
             subscriptionRequired: !0,
-            primaryAsset: null != n ? (0, s.jsx)("img", {
-                src: n,
+            primaryAsset: null != i ? (0, s.jsx)("img", {
+                src: i,
                 alt: "",
                 width: 160,
                 draggable: "false"
@@ -239,25 +243,25 @@ function D() {
             }),
             categories: ["vip"]
         }, {
-            id: T.SPECIAL_MEMBER_PRICING_CARD_ID,
-            title: C.intl.string(C.t["MTD+7w"]),
-            description: C.intl.string(C.t.Bhs0s6),
-            ctaText: C.intl.string(C.t.dBJVnZ),
-            onCtaClick: M,
+            id: E.SPECIAL_MEMBER_PRICING_CARD_ID,
+            title: N.intl.string(N.t["MTD+7w"]),
+            description: N.intl.string(N.t.Bhs0s6),
+            ctaText: N.intl.string(N.t.dBJVnZ),
+            onCtaClick: w,
             primaryAsset: (0, s.jsx)(a.D8b, {
                 alt: "",
                 ariaHidden: !0
             }),
             categories: ["vip"]
         }, {
-            id: T.PERMADECOS_CARD_ID,
-            title: C.intl.string(C.t.L14NZN),
-            description: C.intl.string(C.t.eCZkAI),
+            id: E.PERMADECOS_CARD_ID,
+            title: N.intl.string(N.t.L14NZN),
+            description: N.intl.string(N.t.eCZkAI),
             primaryAsset: (0, s.jsx)(a.u7P, {
                 alt: "",
                 ariaHidden: !0
             }),
             categories: ["vip"]
-        }], [e, n, L, P, D, G, M, U, k]);
-    return (0, l.useMemo)(() => B.filter(e => null != e && !V.includes(e.id)), [B, V])
+        }], [e, i, G, M, U, k, w, V, F, B, t]);
+    return (0, l.useMemo)(() => Y.filter(e => null != e && !z.includes(e.id)), [Y, z])
 }

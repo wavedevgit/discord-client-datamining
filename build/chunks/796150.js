@@ -18,20 +18,20 @@ var r = n(627968),
     m = n(960545),
     p = n(841329),
     y = n(12901),
-    b = n(921854),
-    v = n(985018),
-    g = n(879797);
+    v = n(921854),
+    g = n(985018),
+    b = n(879797);
 let x = new Set([_.X.PROFILE_PANEL, _.X.SUBSCRIPTIONS_PANEL, _.X.FAMILY_CENTER_PANEL, _.X.POGGERMODE_PANEL]);
 
 function E(e) {
     let {
         target: t,
         ...n
-    } = e, a = h.A.useField("query"), v = i.useCallback(() => {
+    } = e, a = h.A.useField("query"), g = i.useCallback(() => {
         h.A.setState({
             query: ""
         }), o.A.terminate()
-    }, []), [g, E] = i.useState(!1);
+    }, []), [b, E] = i.useState(!1);
     return (i.useLayoutEffect(() => {
         let e = () => {
             null == d.default.getCurrentUser() && (E(!0), (0, y.default)())
@@ -39,8 +39,8 @@ function E(e) {
         return u.default.addChangeListener(e), () => {
             u.default.removeChangeListener(e), m.A.resetState(), s.A.resetState(), l.A.close()
         }
-    }, []), g) ? null : (0, r.jsx)(c.A, {
-        partialRoot: b.D,
+    }, []), b) ? null : (0, r.jsx)(c.A, {
+        partialRoot: v.D,
         searchBar: A,
         emptyState: S,
         sidebarFooter: f.A,
@@ -50,7 +50,7 @@ function E(e) {
         target: t,
         defaultTarget: _.X.ACCOUNT_PANEL,
         searchQuery: a,
-        clearSearchQuery: v,
+        clearSearchQuery: g,
         ...n
     })
 }
@@ -76,7 +76,7 @@ function A() {
     return i.useEffect(() => () => {
         h.A.resetState(), o.A.terminate()
     }, []), (0, r.jsx)("div", {
-        className: g.P,
+        className: b.P,
         children: (0, r.jsx)(a.IWV, {
             size: "md",
             query: e,
@@ -90,15 +90,15 @@ function A() {
 
 function S() {
     return (0, r.jsxs)("div", {
-        className: g.t,
+        className: b.t,
         children: [(0, r.jsx)(a.Text, {
             variant: "text-sm/semibold",
             color: "text-strong",
-            children: v.intl.string(v.t.zihbmv)
+            children: g.intl.string(g.t.zihbmv)
         }), (0, r.jsx)(a.Text, {
             variant: "text-sm/normal",
             color: "text-subtle",
-            children: v.intl.string(v.t.XclvsB)
+            children: g.intl.string(g.t.XclvsB)
         })]
     })
 }

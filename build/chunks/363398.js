@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(268749),
     g = n(239705),
     A = n(264349),
-    m = n(997509),
-    p = n(652215),
+    p = n(997509),
+    m = n(652215),
     f = n(411335),
     h = n(985018),
     y = n(383799);
@@ -42,7 +42,7 @@ function _(e, t) {
         return null
     }
     let L = () => {
-            null != t && ((0, r.Z_)(), m.A.open(t, p.BEX.GUILD_AUTOMOD), setTimeout(() => {
+            null != t && ((0, r.Z_)(), p.A.open(t, m.BEX.GUILD_AUTOMOD), setTimeout(() => {
                 v(t, E, {
                     triggerMetadata: {
                         keywordFilter: [e],

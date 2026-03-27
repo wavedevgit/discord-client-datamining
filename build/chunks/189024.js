@@ -1,6 +1,6 @@
 /** chunk id: 189024 params = (module,exports,require) **/
 n.d(t, {
-    A: () => U
+    A: () => w
 });
 var i = n(627968),
     s = n(64700),
@@ -15,55 +15,57 @@ var i = n(627968),
     _ = n(259065),
     g = n(95035),
     x = n(532794),
-    A = n(780964),
-    h = n(358776),
-    p = n(840065),
-    f = n(166403),
-    T = n(730784),
-    S = n(398523),
-    E = n(612669),
-    b = n(161319),
-    C = n(920050),
-    v = n(9458),
-    N = n(788868),
-    I = n(88001),
-    j = n(519412),
-    y = n(985018),
-    O = n(130474),
-    R = n(998663),
-    L = n(817577),
-    P = n(419455),
-    D = n(288604),
-    G = n(893160),
-    M = n(509442);
+    A = n(591179),
+    h = n(576060),
+    p = n(780964),
+    f = n(358776),
+    T = n(840065),
+    S = n(166403),
+    E = n(730784),
+    b = n(398523),
+    C = n(612669),
+    v = n(161319),
+    N = n(920050),
+    I = n(9458),
+    j = n(788868),
+    y = n(88001),
+    O = n(519412),
+    R = n(985018),
+    L = n(130474),
+    P = n(998663),
+    D = n(817577),
+    G = n(419455),
+    M = n(288604),
+    U = n(893160),
+    k = n(509442);
 
-function U() {
+function w() {
     let {
         analyticsLocations: e
-    } = (0, c.Ay)(d.A.PREMIUM_MARKETING_PERK_CARD), t = (0, E.O9)(), U = (0, T.R)({
+    } = (0, c.Ay)(d.A.PREMIUM_MARKETING_PERK_CARD), t = (0, A.X)("useWhatsNewPerkCards"), w = (0, C.O9)(), V = (0, E.R)({
         location: "PremiumWhatsNewSection"
-    }), k = S.A.useExperiment({
+    }), B = b.A.useExperiment({
         location: "PremiumWhatsNewSection"
-    }).enabled, w = (0, a.bG)([f.A], () => f.A.getPremiumTypeSubscription()), V = w?.hasActiveTrial ?? !1, B = (0, s.useCallback)(() => {
-        (0, p.openUserSettings)(A.X.PROFILE_PANEL, {
+    }).enabled, F = (0, a.bG)([S.A], () => S.A.getPremiumTypeSubscription()), H = F?.hasActiveTrial ?? !1, z = (0, h.A)(), Y = (0, s.useCallback)(() => {
+        (0, T.openUserSettings)(p.X.PROFILE_PANEL, {
             analyticsLocations: e
         }, () => (0, _.L)({
             analyticsLocations: e
         }))
-    }, [e]), F = (0, s.useCallback)(() => {
-        (0, p.openUserSettings)(A.X.PROFILE_PANEL, {
+    }, [e]), X = (0, s.useCallback)(() => {
+        (0, T.openUserSettings)(p.X.PROFILE_PANEL, {
             analyticsLocations: e
         }, () => (0, u.L)({
             analyticsLocations: e
         }))
-    }, [e]), H = (0, s.useCallback)(() => {
-        let e = (0, h.Ci)("openCustomAppSettings") ? A.X.DISPLAY_IN_APP_ICON_CATEGORY : A.X.APPEARANCE_IN_APP_ICON;
-        (0, p.openUserSettings)(e)
-    }, []), z = () => {
-        (0, o.A)(I.TE)
-    }, Y = (0, s.useCallback)(() => {
-        if (U) {
-            if (V) return void(0, r.mMO)(async () => {
+    }, [e]), K = (0, s.useCallback)(() => {
+        let e = (0, f.Ci)("openCustomAppSettings") ? p.X.DISPLAY_IN_APP_ICON_CATEGORY : p.X.APPEARANCE_IN_APP_ICON;
+        (0, T.openUserSettings)(e)
+    }, []), W = () => {
+        (0, o.A)(y.TE)
+    }, Z = (0, s.useCallback)(() => {
+        if (V) {
+            if (H) return void(0, r.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("99709").then(n.bind(n, 516044));
@@ -72,8 +74,8 @@ function U() {
                 })
             });
             (0, x.A)({
-                subscriptionTier: N.pe.TIER_2,
-                initialPlanId: N.gD.PREMIUM_GROUP_MONTH,
+                subscriptionTier: j.pe.TIER_2,
+                initialPlanId: j.gD.PREMIUM_GROUP_MONTH,
                 analyticsLocations: e
             })
         } else(0, r.mMO)(async () => {
@@ -84,9 +86,9 @@ function U() {
                 ...t
             })
         })
-    }, [U, e, V]), X = (0, v.A)(e), {
-        currentDate: K,
-        nDaysInMonth: W
+    }, [V, e, H]), q = (0, I.A)(e), {
+        currentDate: Q,
+        nDaysInMonth: J
     } = (0, s.useMemo)(() => {
         let e = new Date;
         return {
@@ -95,85 +97,85 @@ function U() {
         }
     }, []);
     return (0, s.useMemo)(() => {
-        let n = [t ? {
-                id: C.PREMIUM_GROUP_CARD_ID,
-                title: y.intl.string(j.default.YkvksF),
+        let n = [w ? {
+                id: N.PREMIUM_GROUP_CARD_ID,
+                title: R.intl.string(O.default.YkvksF),
                 description: (0, i.jsxs)(i.Fragment, {
-                    children: [y.intl.formatToPlainString(j.default.JlyGQj, {
-                        totalSeats: I.aw,
-                        premiumGroupProductName: (0, I.DP)()
+                    children: [R.intl.formatToPlainString(O.default.JlyGQj, {
+                        totalSeats: y.aw,
+                        premiumGroupProductName: (0, y.DP)()
                     }), (0, i.jsx)("div", {
-                        className: O.LF,
+                        className: L.LF,
                         children: (0, i.jsx)(g.A, {
-                            onClick: z,
-                            children: y.intl.string(j.default.yYyGJH)
+                            onClick: W,
+                            children: R.intl.string(O.default.yYyGJH)
                         })
                     })]
                 }),
-                pillText: y.intl.string(y.t.oW0eUd),
-                primaryAsset: L,
-                ...U ? {
+                pillText: R.intl.string(R.t.oW0eUd),
+                primaryAsset: D,
+                ...V ? {
                     ctaIcon: r.tvc,
                     ctaIconPosition: "start"
                 } : {},
-                ctaText: y.intl.string(U ? y.t.IJI7yk : y.t.jVcuVY),
-                onCtaClick: Y
-            } : null, k ? {
-                id: C.RECURRING_3P_PROMOTIONS_CARD_ID,
-                title: y.intl.string(y.t.m7PucM),
-                description: y.intl.format(y.t.zh1X7u, {}),
+                ctaText: R.intl.string(V ? R.t.IJI7yk : R.t.jVcuVY),
+                onCtaClick: Z
+            } : null, B ? {
+                id: N.RECURRING_3P_PROMOTIONS_CARD_ID,
+                title: R.intl.string(R.t.m7PucM),
+                description: R.intl.format(R.t.zh1X7u, {}),
                 subscriptionRequired: !0,
-                pillText: y.intl.string(y.t.oW0eUd),
+                pillText: R.intl.string(R.t.oW0eUd),
                 caption: (0, i.jsx)("img", {
-                    src: R,
+                    src: P,
                     alt: "SteelSeries"
                 }),
-                backgroundAssetUrl: G.A,
-                progress: K.getDate() / W,
-                ctaText: y.intl.string(y.t.w7s5Qr),
-                onCtaClick: () => (0, b.uE)({
+                backgroundAssetUrl: U.A,
+                progress: Q.getDate() / J,
+                ctaText: R.intl.string(R.t.w7s5Qr),
+                onCtaClick: () => (0, v.uE)({
                     analyticsLocations: e
                 }),
                 blurTint: "#2E213D"
             } : null, {
-                id: C.DISPLAY_NAME_STYLES_CARD_ID,
-                title: y.intl.string(y.t.OLtTrt),
-                description: y.intl.string(y.t["di/pXR"]),
-                onCtaClick: B,
-                primaryAsset: P.A,
-                ctaText: y.intl.string(y.t.jVcuVY),
-                pillText: y.intl.string(y.t.y2b7CA)
+                id: N.DISPLAY_NAME_STYLES_CARD_ID,
+                title: R.intl.string(R.t.OLtTrt),
+                description: R.intl.string(R.t["di/pXR"]),
+                onCtaClick: t ? z : Y,
+                ctaText: R.intl.string(R.t.jVcuVY),
+                primaryAsset: G.A,
+                pillText: R.intl.string(R.t.y2b7CA)
             }, {
-                id: C.CLIENT_THEMES_CARD_ID,
-                title: y.intl.string(y.t.acc6h6),
-                description: y.intl.formatToPlainString(y.t.WQazjs, {
+                id: N.CLIENT_THEMES_CARD_ID,
+                title: R.intl.string(R.t.acc6h6),
+                description: R.intl.formatToPlainString(R.t.WQazjs, {
                     themeCount: 20
                 }),
-                primaryAsset: M.A,
-                ctaText: y.intl.string(y.t.jVcuVY),
+                primaryAsset: k.A,
+                ctaText: R.intl.string(R.t.jVcuVY),
                 onCtaClick: () => {
                     (0, m.nf)(m.HP.CUSTOM_THEME)
                 }
             }, {
-                id: C.PERMADECOS_CARD_ID,
-                title: y.intl.string(y.t.L14NZN),
-                description: y.intl.string(y.t.eCZkAI),
+                id: N.PERMADECOS_CARD_ID,
+                title: R.intl.string(R.t.L14NZN),
+                description: R.intl.string(R.t.eCZkAI),
                 primaryAsset: (0, i.jsx)(l.u7P, {
                     alt: "",
                     ariaHidden: !0
                 }),
-                ctaText: y.intl.string(y.t.jVcuVY),
-                onCtaClick: F
+                ctaText: R.intl.string(R.t.jVcuVY),
+                onCtaClick: t ? z : X
             }, {
-                id: C.CUSTOM_APP_ICONS_CARD_ID,
-                title: y.intl.string(y.t["GU+wqh"]),
-                description: y.intl.string(y.t["1uPk1Z"]),
-                primaryAsset: D.A,
-                ctaText: y.intl.string(y.t.y9TxXV),
-                onCtaClick: H
+                id: N.CUSTOM_APP_ICONS_CARD_ID,
+                title: R.intl.string(R.t["GU+wqh"]),
+                description: R.intl.string(R.t["1uPk1Z"]),
+                primaryAsset: M.A,
+                ctaText: R.intl.string(R.t.y9TxXV),
+                onCtaClick: K
             }],
             s = (n = n.filter(e => null != e))[0].featured,
             a = s ? 5 : 6;
-        return n.splice(+!!s, 0, X), n.length > a && n.splice(a, n.length - a), n
-    }, [X, t, U, k, W, K, e, B, H, F, Y])
+        return n.splice(+!!s, 0, q), n.length > a && n.splice(a, n.length - a), n
+    }, [q, w, V, B, J, Q, e, Y, K, X, Z, z, t])
 }

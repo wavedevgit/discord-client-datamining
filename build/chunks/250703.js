@@ -1,7 +1,7 @@
 /** chunk id: 250703 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => v
 });
 var r = n(627968),
     i = n(64700),
@@ -62,7 +62,7 @@ function y(e) {
         })
     })
 }
-let b = i.memo(function(e) {
+let v = i.memo(function(e) {
     let {
         onClose: t,
         setting: n

@@ -3,7 +3,7 @@ a.d(t, {
     CC: () => l,
     Jv: () => o,
     RQ: () => _,
-    WD: () => s,
+    WD: () => i,
     b: () => m,
     gP: () => u,
     o8: () => c,
@@ -12,33 +12,33 @@ a.d(t, {
 var r = a(954571),
     n = a(652215);
 
-function i(e, t) {
+function s(e, t) {
     r.default.track(n.HAw.PREMIUM_TENURE_REWARDS_ORBS_CTA_CLICKED, {
         cta_type: e,
         program_state: t
     })
 }
-let s = e => {
-        i("shop_orbs", e)
+let i = e => {
+        s("shop_orbs", e)
     },
     l = e => {
-        i("view_billing", e)
+        s("view_billing", e)
     },
     d = e => {
-        i("update_billing", e)
+        s("update_billing", e)
     },
     o = e => {
-        i("resubscribe", e)
+        s("resubscribe", e)
     },
     c = e => {
-        i("orbs_card_helpdesk", e)
+        s("orbs_card_helpdesk", e)
     },
     u = () => {
-        i("balance_popover_upsell")
+        s("balance_popover_upsell")
     },
     _ = () => {
-        i("balance_popover_next_drop")
+        s("balance_popover_next_drop")
     },
     m = () => {
-        i("balance_popover_helpdesk")
+        s("balance_popover_helpdesk")
     }

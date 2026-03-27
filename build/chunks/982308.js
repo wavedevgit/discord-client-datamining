@@ -14,8 +14,8 @@ var l = n(503698),
     u = n(815807),
     g = n(406704),
     A = n(253932),
-    m = n(576705),
-    p = n(486020),
+    p = n(576705),
+    m = n(486020),
     f = n(690521),
     h = n(652215),
     y = n(307731),
@@ -32,7 +32,7 @@ function b(e) {
         src: r,
         surrogates: o
     } = t;
-    return null == r && null != t.id ? r = p.Ay.getEmojiURL({
+    return null == r && null != t.id ? r = m.Ay.getEmojiURL({
         id: t.id,
         animated: !!l,
         size: 20
@@ -69,7 +69,7 @@ function v(e, t) {
     n.length > 4 && (n.length = 4);
     let l = A.jW.useSetting(),
         a = (0, g.Id)(t);
-    return (0, r.bG)([m.A], () => l && a && (t.isPrivate() || m.A.can(h.xBc.ADD_REACTIONS, t)), [t, a, l]) && n.length > 0 ? (0, i.jsx)(o.rXV, {
+    return (0, r.bG)([p.A], () => l && a && (t.isPrivate() || p.A.can(h.xBc.ADD_REACTIONS, t)), [t, a, l]) && n.length > 0 ? (0, i.jsx)(o.rXV, {
         className: _.iE,
         children: n.map((n, l) => (0, i.jsx)(o.Drp, {
             id: `quickreact-${n.id??l}`,

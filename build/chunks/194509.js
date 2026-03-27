@@ -6,8 +6,8 @@ a.d(t, {
 var r = a(627968);
 a(64700);
 var n = a(503698),
-    i = a.n(n),
-    s = a(582754),
+    s = a.n(n),
+    i = a(582754),
     l = a(421380),
     d = a(397927),
     o = a(736653),
@@ -41,16 +41,16 @@ let p = e => e === u.pe.TIER_0 ? _.intl.string(_.t.rk4Uu8) : _.intl.string(_.t.V
                 return (0, r.jsxs)(l.$n, {
                     "data-migration-pending": !0,
                     innerClassName: m.Nq,
-                    color: n ?? ((0, s.Mw)(A) ? l.XD.WHITE : l.XD.BRAND),
+                    color: n ?? ((0, i.Mw)(A) ? l.XD.WHITE : l.XD.BRAND),
                     look: u ?? l.pR.OUTLINED,
-                    className: i()(t, m.xP),
+                    className: s()(t, m.xP),
                     onClick: o,
                     children: [!_ && (0, r.jsx)(d.okO, {
                         size: "md",
                         color: "currentColor",
                         className: m.ez
                     }), (0, r.jsx)("span", {
-                        className: i()(m._d, a?.textClassName),
+                        className: s()(m._d, a?.textClassName),
                         children: a?.textOverride ?? x
                     })]
                 })

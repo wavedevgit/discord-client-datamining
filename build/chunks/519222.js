@@ -28,8 +28,8 @@ var o = n(118517),
     u = n(961350),
     g = n(734057),
     A = n(954571),
-    m = n(147036),
-    p = n(957565),
+    p = n(147036),
+    m = n(957565),
     f = n(203982),
     h = n(661191),
     y = n(965407),
@@ -44,14 +44,14 @@ function v(e) {
 }
 
 function x(e, t, n) {
-    (0, p.C)(n.shiftKey ? `${t.channel_id}-${t.id}` : t.id)
+    (0, m.C)(n.shiftKey ? `${t.channel_id}-${t.id}` : t.id)
 }
 
 function I(e, t) {
     A.default.track(b.HAw.MESSAGE_LINK_COPIED, {
         message_id: t.id,
         channel: t.channel_id
-    }), (0, p.C)((0, m.n)(e.guild_id, e.id, t.id))
+    }), (0, m.C)((0, p.n)(e.guild_id, e.id, t.id))
 }
 
 function j(e, t, n) {

@@ -1,6 +1,6 @@
 /** chunk id: 474445 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => m
 });
 var i = n(627968),
     l = n(64700),
@@ -13,10 +13,10 @@ var i = n(627968),
     u = n(652215),
     g = n(985018),
     A = n(725360);
-let m = new Map;
+let p = new Map;
 
-function p(e, t) {
-    let p, {
+function m(e, t) {
+    let m, {
             handleTranslate: f,
             handleRevertTranslation: h,
             isTranslating: y,
@@ -29,7 +29,7 @@ function p(e, t) {
                     let d = l ?? i;
                     n(!0);
                     let c = a ?? (0, g.getAvailableLocales)().find(e => e.value === d)?.name ?? d;
-                    m.has(e.id) || m.set(e.id, e.content), (0, s.showToast)((0, s.createToast)(g.intl.formatToPlainString(g.t.Znl8Z8, {
+                    p.has(e.id) || p.set(e.id, e.content), (0, s.showToast)((0, s.createToast)(g.intl.formatToPlainString(g.t.Znl8Z8, {
                         targetLanguage: c
                     }), s.ToastType.AI));
                     try {
@@ -56,7 +56,7 @@ function p(e, t) {
                     }
                 }, [e, t, i]),
                 handleRevertTranslation: l.useCallback(() => {
-                    let t = m.get(e.id);
+                    let t = p.get(e.id);
                     null != t && (o.h.dispatch({
                         type: "MESSAGE_UPDATE",
                         message: {
@@ -64,13 +64,13 @@ function p(e, t) {
                             channel_id: e.channel_id,
                             content: t
                         }
-                    }), m.delete(e.id))
+                    }), p.delete(e.id))
                 }, [e.id, e.channel_id]),
                 isTranslating: t,
-                isTranslated: m.has(e.id)
+                isTranslated: p.has(e.id)
             }
         }(e),
-        _ = (p = (0, g.getAvailableLocales)(), l.useMemo(() => p.map(e => {
+        _ = (m = (0, g.getAvailableLocales)(), l.useMemo(() => m.map(e => {
             let t;
             try {
                 t = n(579832)(`./${e.value}.png`)
@@ -92,7 +92,7 @@ function p(e, t) {
                 action: () => f(e.value, e.name),
                 disabled: y
             }, e.value)
-        }), [f, y, p])),
+        }), [f, y, m])),
         S = (0, d.b)();
     return null != e.content && "" !== e.content.trim() && S ? E ? (0, i.jsx)(s.Drp, {
         id: "revert-translation",

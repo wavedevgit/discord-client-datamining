@@ -4,8 +4,8 @@ a.d(t, {
 });
 var r = a(627968),
     n = a(64700),
-    i = a(503698),
-    s = a.n(i),
+    s = a(503698),
+    i = a.n(s),
     l = a(524007),
     d = a(844222),
     o = a(786558),
@@ -31,7 +31,7 @@ let m = {
         let {
             children: t,
             id: a,
-            tabIndex: i,
+            tabIndex: s,
             className: b,
             cardClassName: f,
             cardStyle: g = p,
@@ -56,8 +56,8 @@ let m = {
         return (0, r.jsxs)("div", {
             id: a,
             ref: S,
-            tabIndex: i,
-            className: s()(_.k, b),
+            tabIndex: s,
+            className: i()(_.k, b),
             style: O,
             onMouseEnter: I,
             children: [R && T !== c.BW.Loading && (0, r.jsx)(o.w, {

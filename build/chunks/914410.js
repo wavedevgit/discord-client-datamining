@@ -4,8 +4,8 @@ a.d(t, {
     fh: () => _,
     qP: () => u
 });
-var r, n, i = a(627968),
-    s = a(64700),
+var r, n, s = a(627968),
+    i = a(64700),
     l = a(503698),
     d = a.n(l);
 a(284009);
@@ -23,7 +23,7 @@ let m = e => {
         override: u,
         glowing: _ = !0,
         labelledBy: m
-    } = e, p = null != u && "unset" === l, b = (0, o.Ay)(), f = u?.[b] ?? u?.default, g = s.useMemo(() => (t - a) / (r - a) * 100, [t, a, r]), h = t === a, A = {
+    } = e, p = null != u && "unset" === l, b = (0, o.Ay)(), f = u?.[b] ?? u?.default, g = i.useMemo(() => (t - a) / (r - a) * 100, [t, a, r]), h = t === a, A = {
         ...p ? {
             "--custom-background": f?.background,
             "--custom-gradient-start": f?.gradientStart,
@@ -34,10 +34,10 @@ let m = e => {
             "--custom-gradient-glow": "transparent"
         }
     };
-    return (0, i.jsx)("div", {
+    return (0, s.jsx)("div", {
         className: d()(c.progressContainer, c[n], c[l]),
         style: A,
-        children: (0, i.jsxs)("div", {
+        children: (0, s.jsxs)("div", {
             className: d()(c.progress, {
                 [c.empty]: h
             }),
@@ -49,11 +49,11 @@ let m = e => {
             "aria-valuemin": a,
             "aria-valuemax": r,
             "aria-labelledby": m,
-            children: [(0, i.jsx)("div", {
+            children: [(0, s.jsx)("div", {
                 className: d()(c.glow, {
                     [c.empty]: h
                 })
-            }), (0, i.jsx)("div", {
+            }), (0, s.jsx)("div", {
                 className: d()(c.bar, c[l], {
                     [c.empty]: h
                 })

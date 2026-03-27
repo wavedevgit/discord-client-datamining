@@ -5,8 +5,8 @@ a.d(t, {
 });
 var r = a(627968),
     n = a(64700),
-    i = a(503698),
-    s = a.n(i),
+    s = a(503698),
+    i = a.n(s),
     l = a(230109),
     d = a(732955),
     o = a(688810),
@@ -23,7 +23,7 @@ let g = "orbs",
             className: t,
             location: a
         } = e, {
-            analyticsLocations: i
+            analyticsLocations: s
         } = (0, o.Ay)(a), h = n.useRef(null), A = n.useRef(!1), {
             passesGeneralUIInvariant: x,
             programReward: R
@@ -31,7 +31,7 @@ let g = "orbs",
             location: "PremiumTenureRewardsOrbsSection"
         });
         return x ? (0, r.jsx)(o.f5, {
-            value: i,
+            value: s,
             children: (0, r.jsx)(l.L, {
                 innerRef: h,
                 onChange: e => {
@@ -43,7 +43,7 @@ let g = "orbs",
                 children: (0, r.jsxs)("div", {
                     ref: h,
                     id: g,
-                    className: s()(f.uW, f.Uv, f.qr, t),
+                    className: i()(f.uW, f.Uv, f.qr, t),
                     children: [(0, r.jsx)(d.DZT, {
                         variant: "display-sm",
                         className: f.R_,
@@ -53,7 +53,7 @@ let g = "orbs",
                         children: b.intl.string(p.default.EdGvBM)
                     }), (0, r.jsx)(d.EYj, {
                         variant: "text-md/medium",
-                        className: s()(f.VA, f.dO),
+                        className: i()(f.VA, f.dO),
                         children: b.intl.string(p.default["2KoHRF"])
                     }), (0, r.jsx)(_.A, {})]
                 })

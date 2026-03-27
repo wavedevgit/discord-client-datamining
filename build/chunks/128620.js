@@ -4,8 +4,8 @@ a.d(t, {
 });
 var r = a(627968),
     n = a(64700),
-    i = a(503698),
-    s = a.n(i),
+    s = a(503698),
+    i = a.n(s),
     l = a(892227),
     d = a(732955),
     o = a(462887),
@@ -40,7 +40,7 @@ let O = e => {
         className: t
     } = e, {
         passesGeneralUIInvariant: a,
-        programReward: i
+        programReward: s
     } = (0, b.F)({
         location: "PremiumTenureRewardsOrbsCard"
     }), A = (0, u.A)("(min-width: 720px)"), D = (0, _.DP)(), O = n.useMemo(() => ({
@@ -48,16 +48,16 @@ let O = e => {
         glowAmount: (0, o.M)(D) ? 2 : 8,
         blurAmount: 10
     }), [D]);
-    if (!a || null == i) return null;
+    if (!a || null == s) return null;
     let U = function(e, t) {
         let a = e.program_current_state,
             n = null != e.next_reward_date && "" !== e.next_reward_date ? (0, l.default)(new Date(e.next_reward_date), new Date) : null,
-            i = e?.total_rewarded_from_program;
+            s = e?.total_rewarded_from_program;
         switch (a) {
             case p.L.ACTIVE:
                 if (null == n || n < 0) return null;
                 return {
-                    displayTotalLifetimeRewards: null != i, displayProgressBar: !0, actionButton: (0, r.jsx)(d.$nd, {
+                    displayTotalLifetimeRewards: null != s, displayProgressBar: !0, actionButton: (0, r.jsx)(d.$nd, {
                         text: S.intl.string(I.default.BxjHiu),
                         variant: t ? "overlay-primary" : "secondary",
                         onClick: () => {
@@ -84,7 +84,7 @@ let O = e => {
                 };
             case p.L.PAYMENT_ERROR:
                 return {
-                    displayTotalLifetimeRewards: null != i, displayProgressBar: !1, actionButton: (0, r.jsx)(d.NPJ, {
+                    displayTotalLifetimeRewards: null != s, displayProgressBar: !1, actionButton: (0, r.jsx)(d.NPJ, {
                         theme: t ? v.NJ8.DARKER : void 0,
                         children: e => (0, r.jsx)("span", {
                             className: e,
@@ -102,7 +102,7 @@ let O = e => {
                 };
             case p.L.PROGRAM_ROLLBACK:
                 return {
-                    displayTotalLifetimeRewards: null != i, displayProgressBar: null != n, actionButton: (0, r.jsx)(d.$nd, {
+                    displayTotalLifetimeRewards: null != s, displayProgressBar: null != n, actionButton: (0, r.jsx)(d.$nd, {
                         text: S.intl.string(I.default["wLAd/+"]),
                         variant: t ? "overlay-primary" : "secondary",
                         onClick: () => {
@@ -114,7 +114,7 @@ let O = e => {
                 };
             case p.L.PREMIUM_CHURNING:
                 return {
-                    displayTotalLifetimeRewards: null != i, displayProgressBar: null != n, actionButton: (0, r.jsx)(d.$nd, {
+                    displayTotalLifetimeRewards: null != s, displayProgressBar: null != n, actionButton: (0, r.jsx)(d.$nd, {
                         text: S.intl.string(I.default.FToh6D),
                         variant: t ? "overlay-primary" : "secondary",
                         icon: d.tvc,
@@ -128,7 +128,7 @@ let O = e => {
             default:
                 return null
         }
-    }(i, A);
+    }(s, A);
     if (null == U) return null;
     let {
         displayTotalLifetimeRewards: M,
@@ -138,7 +138,7 @@ let O = e => {
         subheaderText: k
     } = U;
     return (0, r.jsx)("div", {
-        className: s()(y.Hc, t),
+        className: i()(y.Hc, t),
         children: (0, r.jsxs)(x.A, {
             cardType: c.sl2.CUSTOM,
             cardClassName: y.Nr,
@@ -162,7 +162,7 @@ let O = e => {
                 children: [(0, r.jsx)(d.NPJ, {
                     theme: A ? v.NJ8.DARKER : void 0,
                     children: e => (0, r.jsx)("div", {
-                        className: s()(e, y.aZ),
+                        className: i()(e, y.aZ),
                         children: (0, r.jsx)(d.Exy, {
                             type: "beta",
                             variant: "expressive"
@@ -178,7 +178,7 @@ let O = e => {
                     children: k
                 }), L && (0, r.jsx)(C.A, {
                     className: y.L$
-                }), M && i.total_rewarded_from_program > 0 && (0, r.jsxs)("div", {
+                }), M && s.total_rewarded_from_program > 0 && (0, r.jsxs)("div", {
                     className: y.fB,
                     children: [(0, r.jsx)(d.EYj, {
                         variant: "text-md/medium",
@@ -190,7 +190,7 @@ let O = e => {
                     }), (0, r.jsx)(d.EYj, {
                         variant: "text-md/medium",
                         className: y.G3,
-                        children: i.total_rewarded_from_program
+                        children: s.total_rewarded_from_program
                     })]
                 }), (0, r.jsx)("div", {
                     className: y.WT,

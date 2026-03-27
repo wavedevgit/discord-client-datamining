@@ -1,5 +1,5 @@
 /** chunk id: 2242 params = (module,exports,require) **/
-r.d(t, {
+n.d(t, {
     M_: () => p,
     P7: () => A,
     TQ: () => u,
@@ -11,12 +11,12 @@ r.d(t, {
     nd: () => _,
     p$: () => h
 });
-var n, i, l, a = r(788868),
-    s = r(818348);
+var r, i, l, a = n(788868),
+    s = n(818348);
 let o = 3,
     d = "(max-width: 485px)",
     u = "(max-height: 450px)";
-var c = ((n = {})[n.CHANNEL = 1] = "CHANNEL", n[n.INTANGIBLE = 2] = "INTANGIBLE", n),
+var c = ((r = {})[r.CHANNEL = 1] = "CHANNEL", r[r.INTANGIBLE = 2] = "INTANGIBLE", r),
     E = ((i = {})[i.SOME_CHANNELS = 0] = "SOME_CHANNELS", i[i.ALL_CHANNELS = 1] = "ALL_CHANNELS", i);
 let h = [{
     interval: a.WT.DAY,

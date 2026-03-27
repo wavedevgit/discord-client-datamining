@@ -1,35 +1,35 @@
 /** chunk id: 32058 params = (module,exports,require) **/
 "use strict";
-n.d(t, {
+r.d(t, {
     e: () => u
 });
-var r = n(627968);
-n(64700);
-var a = n(503698),
-    s = n.n(a),
-    i = n(397927),
-    l = n(985018),
-    o = n(529816),
-    c = n(640269);
+var n = r(627968);
+r(64700);
+var a = r(503698),
+    s = r.n(a),
+    i = r(397927),
+    l = r(985018),
+    o = r(529816),
+    c = r(640269);
 let u = e => {
     let {
         children: t,
-        footer: n,
+        footer: r,
         className: a
     } = e;
-    return (0, r.jsx)("div", {
+    return (0, n.jsx)("div", {
         className: s()(c.zr, c.Gg, c.EX, c.vl, o.yl, a),
         "aria-label": l.intl.string(l.t.eQ2bLp),
-        children: (0, r.jsxs)("form", {
+        children: (0, n.jsxs)("form", {
             className: o.Zd,
             onSubmit: e => {
                 e.preventDefault()
             },
-            children: [(0, r.jsx)(i.$mQ, {
+            children: [(0, n.jsx)(i.$mQ, {
                 "data-migration-pending": !0,
                 className: o.gT,
                 children: t
-            }), n]
+            }), r]
         })
     })
 }

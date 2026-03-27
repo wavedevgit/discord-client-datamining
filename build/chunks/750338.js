@@ -4,8 +4,8 @@ a.d(t, {
 });
 var r = a(627968),
     n = a(64700),
-    i = a(503698),
-    s = a.n(i),
+    s = a(503698),
+    i = a.n(s),
     l = a(735438),
     d = a(230109),
     o = a(732955),
@@ -23,7 +23,7 @@ let x = e => {
     let {
         name: t,
         title: a,
-        description: i,
+        description: s,
         descriptionCta: x,
         previewImage: R,
         videoUrl: C,
@@ -72,8 +72,8 @@ let x = e => {
                 })
             })
         })
-    }, q = () => (0, r.jsxs)("div", {
-        className: s()(A.textBox, A[`${P}`], V && A.overlayTextBox),
+    }, X = () => (0, r.jsxs)("div", {
+        className: i()(A.textBox, A[`${P}`], V && A.overlayTextBox),
         children: [(0, r.jsxs)("div", {
             children: [null == y ? null : "gradient" === T ? (0, r.jsx)("div", {
                 className: A.badgeContainer,
@@ -103,17 +103,17 @@ let x = e => {
             variant: "text-md/medium",
             color: "text-strong",
             className: A.description,
-            children: i
+            children: s
         }), (0, r.jsx)(z, {})]
-    }), X = () => (0, r.jsx)("div", {
-        className: s()(A.boxArtContainer, A[`${P}`]),
+    }), q = () => (0, r.jsx)("div", {
+        className: i()(A.boxArtContainer, A[`${P}`]),
         children: (0, r.jsx)(m.A, {
             playsInline: !0,
             preload: v ? "auto" : "none",
             muted: !0,
             poster: R,
             loop: !0,
-            className: s()(V ? A.overlayImage : A.boxVideo, {
+            className: i()(V ? A.overlayImage : A.boxVideo, {
                 [N]: null != N
             }),
             ref: M,
@@ -134,7 +134,7 @@ let x = e => {
         children: (0, r.jsxs)(c.hLv, {
             ref: w,
             id: t,
-            className: s()(A.backgroundColor, A.boxContainer, A[`${P}`], A.gradientBackground, G && A.overlayImageMode, V && A.overlayMode),
+            className: i()(A.backgroundColor, A.boxContainer, A[`${P}`], A.gradientBackground, G && A.overlayImageMode, V && A.overlayMode),
             onMouseEnter: H,
             onFocus: H,
             onBlur: F,
@@ -148,9 +148,9 @@ let x = e => {
                     src: D
                 })
             }), (0, r.jsx)(() => $ ? (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)(q, {}), (0, r.jsx)(X, {})]
-            }) : (0, r.jsxs)(r.Fragment, {
                 children: [(0, r.jsx)(X, {}), (0, r.jsx)(q, {})]
+            }) : (0, r.jsxs)(r.Fragment, {
+                children: [(0, r.jsx)(q, {}), (0, r.jsx)(X, {})]
             }), {})]
         })
     })

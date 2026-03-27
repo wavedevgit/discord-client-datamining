@@ -9,7 +9,7 @@ var r = n(627968),
     l = n.n(a),
     s = n(284009),
     o = n.n(s),
-    c = n(4208),
+    c = n(382222),
     u = n(942381),
     d = n(837381),
     h = n(319354),
@@ -18,9 +18,9 @@ var r = n(627968),
     m = n(253932),
     p = n(894858),
     y = n(272053),
-    b = n(189857),
-    v = n(674085),
-    g = n(188180),
+    v = n(189857),
+    g = n(674085),
+    b = n(188180),
     x = n(890690),
     E = n(480270);
 
@@ -43,7 +43,7 @@ function A(e) {
                 [E.vu]: i
             }),
             ...e,
-            children: [f, null != a && !i && (0, r.jsx)(v.A, {
+            children: [f, null != a && !i && (0, r.jsx)(g.A, {
                 badge: a
             })]
         }, u)
@@ -74,7 +74,7 @@ function S(e) {
     let o = i.useMemo(() => Math.max(t.findIndex(e => e.key === l), 0), [t, l]),
         {
             thumbRef: d,
-            trackRef: v,
+            trackRef: g,
             thumbAnchorRef: S,
             springs: N
         } = function(e) {
@@ -123,12 +123,12 @@ function S(e) {
             "--custom-nav-count": t.length,
             "--custom-nav-index": o,
             "--custom-nav-width": "2px",
-            "--custom-icon-size": `${h.E[g.V]}px`
+            "--custom-icon-size": `${h.E[b.V]}px`
         },
         children: [(0, r.jsx)("div", {
             className: E.u4,
             "aria-hidden": "true",
-            ref: v,
+            ref: g,
             children: (0, r.jsx)(c.animated.div, {
                 className: E.FF,
                 style: N,
@@ -139,7 +139,7 @@ function S(e) {
             "aria-hidden": "true",
             ref: S
         }), t.map(e => {
-            let t = (0, b.H)(e.key, n, a);
+            let t = (0, v.H)(e.key, n, a);
             return (0, r.jsx)(A, {
                 onClick: () => {
                     var t;

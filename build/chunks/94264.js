@@ -5,8 +5,8 @@ a.d(t, {
 var r = a(627968);
 a(64700);
 var n = a(503698),
-    i = a.n(n),
-    s = a(892227),
+    s = a.n(n),
+    i = a(892227),
     l = a(827734),
     d = a(732955),
     o = a(914410),
@@ -32,12 +32,12 @@ let m = {
             totalDays: l
         } = (0, u.F)();
         if (!a || null == n || null == l) return null;
-        let p = (0, s.default)(new Date(n.next_reward_date), new Date),
+        let p = (0, i.default)(new Date(n.next_reward_date), new Date),
             b = n.program_current_state === c.L.PREMIUM_CHURNING,
             f = b ? m.churning.start : m.active.start,
             g = b ? m.churning.end : m.active.end;
         return (0, r.jsxs)("div", {
-            className: i()(_.k, t),
+            className: s()(_.k, t),
             children: [(0, r.jsx)(o.Ay, {
                 variant: o.qP.UNSET,
                 progress: l - p,

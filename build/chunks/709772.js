@@ -1,22 +1,22 @@
 /** chunk id: 709772 params = (module,exports,require) **/
 "use strict";
-n.d(t, {
+r.d(t, {
     a: () => l
 });
-var r = n(627968);
-n(64700);
-var a = n(342393),
-    s = n(71532),
-    i = n(714126);
+var n = r(627968);
+r(64700);
+var a = r(342393),
+    s = r(71532),
+    i = r(714126);
 let l = e => {
     let {
         errorLabel: t,
-        children: n,
+        children: r,
         elementOptions: l
     } = e, o = Date.now();
-    return (0, r.jsx)(i.W, {
+    return (0, n.jsx)(i.W, {
         label: t,
-        children: (0, r.jsx)(a.Elements, {
+        children: (0, n.jsx)(a.Elements, {
             stripe: (0, s.Cv)(),
             options: {
                 mode: "setup",
@@ -24,7 +24,7 @@ let l = e => {
                 setup_future_usage: "off_session",
                 ...l
             },
-            children: n
+            children: r
         })
     }, o)
 }
