@@ -1,6 +1,6 @@
 /** chunk id: 285058 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => x
 });
 var i = n(627968),
     s = n(64700),
@@ -15,7 +15,7 @@ var i = n(627968),
     _ = n(985018),
     g = n(829505);
 
-function x(e) {
+function A(e) {
     let {
         guild: t,
         isActivityRestricted: n,
@@ -48,7 +48,7 @@ function x(e) {
         })]
     })
 }
-let A = function() {
+let x = function() {
     let {
         guilds: e,
         searchQuery: t,
@@ -56,7 +56,7 @@ let A = function() {
         sortOrder: l,
         setSortOrder: r,
         hasActivityRestrictedGuilds: d,
-        onToggleAllActivityRestrictedGuilds: A,
+        onToggleAllActivityRestrictedGuilds: x,
         onToggleActivityRestrictedGuild: h,
         isActivityRestricted: p,
         numActivityRestrictedGuilds: f,
@@ -129,7 +129,7 @@ let A = function() {
                     selectionMode: "single"
                 }), (0, i.jsx)(a.QWc, {
                     variant: "primary",
-                    onClick: A,
+                    onClick: x,
                     text: d ? _.intl.string(_.t["7lxcLO"]) : _.intl.string(_.t.zh6UEs)
                 })]
             })]
@@ -150,7 +150,7 @@ let A = function() {
                     variant: "text-lg/medium",
                     children: _.intl.string(_.t["Xe+fJM"])
                 })
-            }), e.map(e => (0, i.jsx)(x, {
+            }), e.map(e => (0, i.jsx)(A, {
                 guild: e,
                 isActivityRestricted: p(e.id),
                 onToggleActivityRestrictedGuild: h

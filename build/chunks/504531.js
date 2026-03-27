@@ -12,7 +12,7 @@ r.d(t, {
     a4: () => P,
     aB: () => W,
     e_: () => v,
-    le: () => T,
+    le: () => I,
     mQ: () => w,
     pe: () => C,
     t7: () => k,
@@ -42,7 +42,7 @@ var n = r(271830),
     R = r(1214),
     x = r.n(R);
 
-function I(e, t, r, s) {
+function T(e, t, r, s) {
     let l = s.getCurrentContent(),
         a = null;
     null != e && (a = (l = l.createEntity(...e)).getLastCreatedEntityKey());
@@ -58,7 +58,7 @@ function I(e, t, r, s) {
     })
 }
 
-function T(e, t, r, s) {
+function I(e, t, r, s) {
     let l, a, o = t.getCurrentContent(),
         c = o.getFirstBlock(),
         u = c.getText();
@@ -131,14 +131,14 @@ function N(e, t) {
                     start: l,
                     end: a
                 } = e, i = e.getFullMatch();
-                !r.processed && (r.type === s && r.start === l && r.text === i ? (r.processed = !0, n = !0) : (l >= r.start && l < r.end || a > r.start && a <= r.end) && (r.processed = !0, t = I(null, r.start, r.end, t)))
+                !r.processed && (r.type === s && r.start === l && r.text === i ? (r.processed = !0, n = !0) : (l >= r.start && l < r.end || a > r.start && a <= r.end) && (r.processed = !0, t = T(null, r.start, r.end, t)))
             }), n) return;
         let s = r[e.type];
-        t = I([e.type, null != s && s.mutable ? "MUTABLE" : "IMMUTABLE", {
+        t = T([e.type, null != s && s.mutable ? "MUTABLE" : "IMMUTABLE", {
             token: e
         }], e.start, e.end, t)
     }), a.forEach(e => {
-        e.processed || (t = I(null, e.start, e.end, t))
+        e.processed || (t = T(null, e.start, e.end, t))
     }), t
 }
 
@@ -158,7 +158,7 @@ function O(e) {
 
 function k(e, t) {
     let r = C(t);
-    return T(e, t, 0, r.length)
+    return I(e, t, 0, r.length)
 }
 
 function j(e, t) {
@@ -201,7 +201,7 @@ function P(e) {
         r = C(e);
     if (r.length > t) {
         let s = e.getSelection();
-        e = T("", e, t, r.length), s.getAnchorOffset() > t && (s = s.set("anchorOffset", t)), s.getFocusOffset() > t && (s = s.set("focusOffset", t)), e = n.EditorState.forceSelection(e, s)
+        e = I("", e, t, r.length), s.getAnchorOffset() > t && (s = s.set("anchorOffset", t)), s.getFocusOffset() > t && (s = s.set("focusOffset", t)), e = n.EditorState.forceSelection(e, s)
     }
     return e
 }

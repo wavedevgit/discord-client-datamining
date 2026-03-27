@@ -1,6 +1,6 @@
 /** chunk id: 982311 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => x
 });
 var i = n(627968),
     s = n(64700),
@@ -15,7 +15,7 @@ var i = n(627968),
     _ = n(985018),
     g = n(654502);
 
-function x(e) {
+function A(e) {
     let {
         onClose: t,
         transitionState: n
@@ -46,25 +46,25 @@ function x(e) {
         })
     })
 }
-let A = function(e) {
+let x = function(e) {
     let {
         onClose: t,
         onClaim: n,
-        code: A,
+        code: x,
         outboundPromotion: h,
         transitionState: p
     } = e, [f, T] = s.useState(null), S = (0, u.GV)(), {
         analyticsLocations: E
     } = (0, c.Ay)(d.A.USER_SETTINGS_GIFT_INVENTORY);
     return (s.useEffect(() => {
-        null == A && (0, m.kd)({
+        null == x && (0, m.kd)({
             promotionId: h.id,
             analyticsLocations: E
         }).then(e => n(e)).catch(e => T(e?.body?.code))
-    }, [A, h.id, n, E]), null != f) ? (0, i.jsx)(x, {
+    }, [x, h.id, n, E]), null != f) ? (0, i.jsx)(A, {
         onClose: t,
         transitionState: p
-    }) : null == A ? (0, i.jsx)(r.y$y, {
+    }) : null == x ? (0, i.jsx)(r.y$y, {
         className: g.Lq
     }) : (0, i.jsx)(l.Modal, {
         title: "",
@@ -91,7 +91,7 @@ let A = function(e) {
             text: _.intl.string(_.t["+zx47d"]),
             variant: "primary",
             onClick: () => {
-                let e = (0, m.kc)(A, h);
+                let e = (0, m.kc)(x, h);
                 window.open(e, "_blank")
             }
         }],
@@ -104,7 +104,7 @@ let A = function(e) {
                 label: _.intl.string(_.t.s9LFQh),
                 helperText: _.intl.string(_.t["F+nFTZ"]),
                 children: (0, i.jsx)(o.A, {
-                    value: A,
+                    value: x,
                     buttonColor: a.$n.Colors.BRAND,
                     buttonLook: a.$n.Looks.FILLED,
                     delay: 1e3

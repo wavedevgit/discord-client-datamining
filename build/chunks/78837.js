@@ -20,8 +20,8 @@ function g(e) {
         title: n,
         collapsedSubtitle: l,
         isExpanded: g,
-        onExpandedChange: x,
-        children: A,
+        onExpandedChange: A,
+        children: x,
         animate: h = !0
     } = e, p = s.useRef(null), [f, T] = s.useState(null), S = g && null != f;
     return s.useLayoutEffect(() => {
@@ -29,7 +29,7 @@ function g(e) {
     }, [f]), (0, i.jsxs)(r.EN, {
         ref: t,
         isExpanded: g,
-        onExpandedChange: x,
+        onExpandedChange: A,
         children: [(0, i.jsx)(m.U, {
             ref: p,
             style: null != f ? {
@@ -49,7 +49,7 @@ function g(e) {
                     })
                 })
             }),
-            onClick: () => x(!g)
+            onClick: () => A(!g)
         }), (0, i.jsx)(r.kS, {
             className: a()(_.nd, {
                 [_.t5]: !h
@@ -59,7 +59,7 @@ function g(e) {
                 padding: {
                     top: 16
                 },
-                children: A
+                children: x
             })
         })]
     })

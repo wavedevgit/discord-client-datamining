@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(793943),
     _ = n(259065),
     g = n(95035),
-    x = n(532794),
-    A = n(591179),
+    A = n(532794),
+    x = n(591179),
     h = n(576060),
     p = n(780964),
     f = n(358776),
@@ -42,7 +42,7 @@ var i = n(627968),
 function w() {
     let {
         analyticsLocations: e
-    } = (0, c.Ay)(d.A.PREMIUM_MARKETING_PERK_CARD), t = (0, A.X)("useWhatsNewPerkCards"), w = (0, C.O9)(), V = (0, E.R)({
+    } = (0, c.Ay)(d.A.PREMIUM_MARKETING_PERK_CARD), t = (0, x.X)("useWhatsNewPerkCards"), w = (0, C.O9)(), V = (0, E.R)({
         location: "PremiumWhatsNewSection"
     }), B = b.A.useExperiment({
         location: "PremiumWhatsNewSection"
@@ -73,7 +73,7 @@ function w() {
                     ...t
                 })
             });
-            (0, x.A)({
+            (0, A.A)({
                 subscriptionTier: j.pe.TIER_2,
                 initialPlanId: j.gD.PREMIUM_GROUP_MONTH,
                 analyticsLocations: e

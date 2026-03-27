@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(339048),
     _ = n(736653),
     g = n(46054),
-    x = n(728364),
-    A = n(807055),
+    A = n(728364),
+    x = n(807055),
     h = n(264779),
     p = n(35587),
     f = n(982311),
@@ -43,12 +43,12 @@ function G(e) {
             disabled: o
         } = e,
         [d, u] = s.useState(!1),
-        [m, x] = s.useState(!1),
+        [m, A] = s.useState(!1),
         p = () => u(e => !e),
         T = (0, _.Ay)(),
         S = (0, h.WD)(n.id, T),
         E = null != l,
-        b = (0, A.A)(n, E);
+        b = (0, x.A)(n, E);
     E && d ? t = P.intl.format(P.t.pkxVx6, {
         endDate: b,
         onClickDetails: p
@@ -63,7 +63,7 @@ function G(e) {
         onClickDetails: p
     }));
     let C = E ? P.intl.string(P.t["2cHUti"]) : P.intl.string(P.t.O13yhz),
-        v = s.useCallback(() => x(!1), []),
+        v = s.useCallback(() => A(!1), []),
         {
             outboundTitle: N,
             outboundTermsAndConditions: I
@@ -95,7 +95,7 @@ function G(e) {
                     })]
                 }), !o && (0, i.jsx)(c.Button, {
                     text: C,
-                    onClick: () => x(!0),
+                    onClick: () => A(!0),
                     disabled: o,
                     size: "sm"
                 })]
@@ -136,18 +136,18 @@ let M = function() {
         })
     }, []);
     let {
-        promotionsLoaded: A,
+        promotionsLoaded: x,
         activeOutboundPromotions: h,
         claimedEndedOutboundPromotions: f,
         claimedOutboundPromotionCodeMap: M,
         addClaimedOutboundPromotionCode: U
-    } = (0, p.y7)(), k = h.length + f.length > 0, w = x.m.useExperiment({
+    } = (0, p.y7)(), k = h.length + f.length > 0, w = A.m.useExperiment({
         location: "EntitlementGifts"
     }, {
         autoTrackExposure: !1,
         disable: l
     }).enabled && k;
-    return _ && A ? (0, i.jsxs)(i.Fragment, {
+    return _ && x ? (0, i.jsxs)(i.Fragment, {
         children: [function() {
             let e = n.find(e => e.giftCodeBatchId === L.FB && !e.consumed),
                 t = n.filter(e => e.giftCodeBatchId === L.Bu && !e.consumed) ?? [],

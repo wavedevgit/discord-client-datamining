@@ -1,8 +1,8 @@
 /** chunk id: 785048 params = (module,exports,require) **/
 n.d(t, {
-    K7: () => A,
+    K7: () => x,
     UK: () => h,
-    f7: () => x
+    f7: () => A
 });
 var i = n(419954),
     s = n(954571),
@@ -16,13 +16,13 @@ var i = n(419954),
     m = n(355097),
     _ = n(652215),
     g = n(985018);
-let x = () => (0, c.Tx)() !== d.YG;
+let A = () => (0, c.Tx)() !== d.YG;
 
-function A() {
+function x() {
     return g.intl.string(g.t["T+nevN"])
 }
 let h = (0, i.zD)(o.X.CONTENT_AND_SOCIAL_PERMISSIONS_ACTIVITY_JOIN_SETTING, {
-    useTitle: A,
+    useTitle: x,
     useSubtitle: () => g.intl.format(g.t.jXKQCu, {
         helpdeskArticle: l.A.getArticleURL(_.MVz.ACTIVITY_STATUS_SETTINGS)
     }),
@@ -39,5 +39,5 @@ let h = (0, i.zD)(o.X.CONTENT_AND_SOCIAL_PERMISSIONS_ACTIVITY_JOIN_SETTING, {
             guild_id: t
         })
     },
-    usePredicate: x
+    usePredicate: A
 })

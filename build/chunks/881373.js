@@ -1,8 +1,8 @@
 /** chunk id: 881373 params = (module,exports,require) **/
-n.d(t, {
-    YS: () => a
+r.d(t, {
+    YS: () => n
 });
-let i = (0, n(250105).Ay)({
+let a = (0, r(250105).Ay)({
     kind: "user",
     name: "2026-03-l-3pp",
     defaultConfig: {
@@ -18,16 +18,16 @@ let i = (0, n(250105).Ay)({
     }
 });
 
-function a(e) {
+function n(e) {
     let {
         location: t
     } = e, {
-        enabled: n
-    } = i.useConfig({
+        enabled: r
+    } = a.useConfig({
         location: t
     });
     return {
-        marketingEnabled: n,
-        functionalityEnabled: n
+        marketingEnabled: r,
+        functionalityEnabled: r
     }
 }

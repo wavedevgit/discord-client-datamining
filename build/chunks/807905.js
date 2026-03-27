@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(531260),
     _ = n(657516),
     g = n(983511),
-    x = n(342744),
-    A = n(87719),
+    A = n(342744),
+    x = n(87719),
     h = n(287809),
     p = n(166403),
     f = n(473145),
@@ -37,7 +37,7 @@ function j(e) {
         premiumSubscription: r,
         useReducedMotion: u,
         fractionalState: m
-    } = e, _ = s.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t]), g = (0, f.I5)(t), x = r?.isPaused === !0 && m === v.xc.NONE, A = N.intl.string(N.t.mOWsF1);
+    } = e, _ = s.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t]), g = (0, f.I5)(t), A = r?.isPaused === !0 && m === v.xc.NONE, x = N.intl.string(N.t.mOWsF1);
     return (0, i.jsxs)("li", {
         className: I.Hp,
         children: [(0, i.jsxs)("div", {
@@ -64,9 +64,9 @@ function j(e) {
         }), (0, i.jsxs)("div", {
             className: I.E7,
             children: [n && !g && (0, i.jsx)(o.A, {
-                shouldShow: x,
-                text: A,
-                "aria-label": A.toString(),
+                shouldShow: A,
+                text: x,
+                "aria-label": x.toString(),
                 children: e => (0, i.jsx)("div", {
                     className: I.LB,
                     children: (0, i.jsx)(d.QWc, {
@@ -74,14 +74,14 @@ function j(e) {
                         variant: "primary",
                         text: N.intl.string(N.t.twFU3R),
                         onClick: () => l(t),
-                        disabled: x,
+                        disabled: A,
                         size: "sm"
                     })
                 })
             }), g && (0, i.jsx)(o.A, {
-                shouldShow: x,
-                text: A,
-                "aria-label": A.toString(),
+                shouldShow: A,
+                text: x,
+                "aria-label": x.toString(),
                 children: e => (0, i.jsx)("div", {
                     className: I.LB,
                     children: (0, i.jsx)(d.QWc, {
@@ -89,7 +89,7 @@ function j(e) {
                         variant: "primary",
                         text: N.intl.string(N.t["2glQNp"]),
                         onClick: () => a(t),
-                        disabled: x,
+                        disabled: A,
                         size: "sm"
                     })
                 })
@@ -106,7 +106,7 @@ function y(e) {
 }
 
 function O(e) {
-    (0, c.mMO)(async () => t => (0, i.jsx)(x.default, {
+    (0, c.mMO)(async () => t => (0, i.jsx)(A.default, {
         ...t,
         guildBoostSlotId: e.id
     }))
@@ -115,8 +115,8 @@ let R = function(e) {
     let t, n, l, {
             guildBoostSlots: g
         } = e,
-        x = (0, r.bG)([p.A], () => p.A.getPremiumTypeSubscription()),
-        E = x?.isPausedOrPausePending === !0,
+        A = (0, r.bG)([p.A], () => p.A.getPremiumTypeSubscription()),
+        E = A?.isPausedOrPausePending === !0,
         {
             fractionalState: b
         } = (0, m.A)(),
@@ -146,7 +146,7 @@ let R = function(e) {
                 allGuildBoostsAreOnCooldown: s
             }
         }, [g]),
-        V = null != x ? T.Ay.getNumIncludedPremiumGuildSubscriptionSlots(x.planId) : 0,
+        V = null != A ? T.Ay.getNumIncludedPremiumGuildSubscriptionSlots(A.planId) : 0,
         B = Math.max(0, V - G.length),
         F = U > V,
         H = V === g.length,
@@ -171,7 +171,7 @@ let R = function(e) {
             className: I.nw,
             tag: "span",
             onClick: () => {
-                (0, A.e)()
+                (0, x.e)()
             },
             children: e
         }, t);
@@ -236,7 +236,7 @@ let R = function(e) {
                     isCancellable: F,
                     onCancel: y,
                     onUncancel: O,
-                    premiumSubscription: x,
+                    premiumSubscription: A,
                     useReducedMotion: R,
                     fractionalState: b
                 }, e.id))

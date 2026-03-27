@@ -23,8 +23,8 @@ function g() {
         selectedGuildId: d.A.selectedGuildId,
         canSubmit: d.A.canSubmit(),
         errors: d.A.getErrors(d.A.selectedGuildId)
-    })), [g, x] = s.useState(!1), A = s.useMemo(() => n?.guild_tag !== void 0 && n.guild_tag.length > 0 ? n.guild_tag[0] : Object.keys(n ?? {}).length > 0 ? _.intl.string(_.t.s35OuK) : null, [n]), h = s.useCallback(async () => {
-        x(!0);
+    })), [g, A] = s.useState(!1), x = s.useMemo(() => n?.guild_tag !== void 0 && n.guild_tag.length > 0 ? n.guild_tag[0] : Object.keys(n ?? {}).length > 0 ? _.intl.string(_.t.s35OuK) : null, [n]), h = s.useCallback(async () => {
+        A(!0);
         let t = d.A.getPendingChanges(e),
             n = (0, r.C5)(t),
             i = (0, r.yX)(t),
@@ -45,7 +45,7 @@ function g() {
             let t = await (0, o.gi)(i, e);
             s = s && (t?.ok ?? !1), t?.ok ? (0, m.RE)() : (0, u.N)()
         }
-        s && (0, m.x8)(), x(!1)
+        s && (0, m.x8)(), A(!1)
     }, [e]), p = s.useCallback(() => {
         (0, m.IM)()
     }, []);
@@ -54,6 +54,6 @@ function g() {
         onSave: h,
         onReset: p,
         disabled: !t,
-        errorMessage: A ?? void 0
+        errorMessage: x ?? void 0
     })
 }

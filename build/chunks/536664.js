@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(56562),
     _ = n(964486),
     g = n(15285),
-    x = n(286237),
-    A = n(769015),
+    A = n(286237),
+    x = n(769015),
     h = n(496885),
     p = n(810412),
     f = n(41984),
@@ -35,7 +35,7 @@ function R() {
     let {
         runningGame: e,
         runningGameApplication: t
-    } = (0, x.A)(), n = e?.pid, l = (0, r.bG)([T.default], () => null == e || null == n ? null : T.default.getTrackedGameByPid(n), [e, n], a()), {
+    } = (0, A.A)(), n = e?.pid, l = (0, r.bG)([T.default], () => null == e || null == n ? null : T.default.getTrackedGameByPid(n), [e, n], a()), {
         enabledLegacy: R,
         enabledOOP: L
     } = (0, r.cf)([b.A, C.A], () => null == e && null == l ? {
@@ -199,10 +199,10 @@ function R() {
                 children: y.intl.string(y.t.CDOx3w)
             })]
         }),
-        icon: (0, i.jsx)(A.A, {
+        icon: (0, i.jsx)(x.A, {
             game: t,
             pid: e?.pid,
-            size: A.M.MEDIUM
+            size: x.M.MEDIUM
         }),
         "aria-label": y.intl.string(y.t["87O5GC"]),
         action: (0, i.jsx)(d.DUT, {

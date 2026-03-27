@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(117178),
     _ = n(512513),
     g = n(915967),
-    x = n(775121),
-    A = n(734066),
+    A = n(775121),
+    x = n(734066),
     h = n(880144),
     p = n(168943),
     f = n(680243),
@@ -68,7 +68,7 @@ class D extends s.PureComponent {
         let {
             keybind: e
         } = this.props, t = v.dI(e.shortcut);
-        return x.A.hasBind(t) ? (0, i.jsx)(c.po8, {
+        return A.A.hasBind(t) ? (0, i.jsx)(c.po8, {
             messageType: c.YCn.ERROR,
             children: O.intl.string(O.t["7lQlw3"])
         }) : y.Yy.has(t) ? (0, i.jsx)(c.po8, {
@@ -376,8 +376,8 @@ function M() {
     let e = (0, r.bG)([E.Ay], () => E.Ay.getState()),
         t = (0, r.bG)([S.Ay], () => (0, h.A)(S.Ay)),
         n = (0, r.bG)([f.A], () => f.A.isSupported),
-        l = (0, A.sw)(),
-        a = (0, A.BW)();
+        l = (0, x.sw)(),
+        a = (0, x.BW)();
     return (0, i.jsx)(G, {
         keybinds: e,
         canGoLive: t,

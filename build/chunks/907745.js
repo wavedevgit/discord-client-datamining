@@ -24,8 +24,8 @@ var n = r(627968),
     y = r(203982),
     R = r(504531),
     x = r(614690),
-    I = r(256796),
-    T = r(517381),
+    T = r(256796),
+    I = r(517381),
     b = r(822382),
     L = r(408730),
     C = r(771650),
@@ -81,7 +81,7 @@ class $ extends s.PureComponent {
             let e = R.pe(t),
                 n = (0, b._o)(R.pe(t)),
                 s = x.zZ(n, t);
-            I.A.updateAutocompleteQuery({
+            T.A.updateAutocompleteQuery({
                 searchContext: r,
                 tokens: n,
                 cursorScope: s,
@@ -181,7 +181,7 @@ class $ extends s.PureComponent {
         let {
             searchContext: s
         } = this.props;
-        if (s.type === w.I4_.GUILD_CHANNEL || n.isPrivate() && s.type !== w.I4_.DMS || n.isObfuscated()) return void this.focusEditor();
+        if (n.isPrivate() && s.type !== w.I4_.DMS || n.isObfuscated()) return void this.focusEditor();
         let l = (0, b.Rt)(n);
         null == l ? this.focusEditor() : ((0, k.Tf)({
             searchContext: s
@@ -446,7 +446,7 @@ function z(e) {
         className: r
     } = e, l = (0, b.bS)(t), a = (0, u.bG)([f.A], () => f.A.keyboardModeEnabled), i = (0, u.bG)([O.A], () => O.A.getEditorState(l)), o = s.useMemo(() => null != i ? i : R.e_(x.ys(C.Ay)), [i]);
     s.useEffect(() => {
-        I.A.initializeAutocomplete(t)
+        T.A.initializeAutocomplete(t)
     }, [t]);
     let c = (0, u.bG)([O.A], () => O.A.getIsSearchTokensInitialized()),
         h = s.useRef(c);
@@ -458,11 +458,11 @@ function z(e) {
     let {
         isSearching: _,
         hasResults: S
-    } = (0, u.cf)([T.A], () => {
-        let e = T.A.getTotalCount(l);
+    } = (0, u.cf)([I.A], () => {
+        let e = I.A.getTotalCount(l);
         return {
             hasResults: null != e && e > 0,
-            isSearching: T.A.getIsFetching(l)
+            isSearching: I.A.getIsFetching(l)
         }
     }), y = (0, u.bG)([E.Ay, m.A, p.A], () => {
         let e = m.A.getCurrentlySelectedChannelId(),
@@ -496,10 +496,6 @@ function z(e) {
             })
         }, [t]),
         M = (0, u.bG)([A.A, p.A], () => {
-            if (t.type === w.I4_.GUILD_CHANNEL) {
-                let e = p.A.getChannel(t.channelId);
-                return null == e ? null : (0, b.E3)(e)
-            }
             let e = (0, b._B)(t) ? t.guildId : null;
             if (null != e) {
                 let t = A.A.getGuild(e);

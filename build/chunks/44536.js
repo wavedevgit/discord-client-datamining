@@ -35,7 +35,7 @@ function G(e) {
     } = e, a = (0, f.A)(t), d = (0, h.A)(t), u = (0, O.A)(t), c = (0, R.A)(t), A = (0, o.A)({
         id: t.id,
         label: I.intl.string(I.t.DQ797g)
-    }), _ = (0, s.m)(t);
+    }), b = (0, s.m)(t), g = (0, _.A)(t, "Context Menu"), p = (0, v.A)(t), m = (0, E.A)(t), C = (0, s.y)(t);
     return (0, i.jsxs)(r.W1t, {
         "data-menu-migrated": !0,
         navId: "thread-context",
@@ -45,12 +45,16 @@ function G(e) {
         children: [(0, i.jsx)(r.rXV, {
             children: d
         }, "mark-as-read-or-favorite"), (0, i.jsx)(r.rXV, {
-            children: _
-        }), (0, i.jsx)(r.rXV, {
-            children: a
+            children: b
+        }), (0, i.jsxs)(r.rXV, {
+            children: [g, p, a]
         }, "thread-actions"), (0, i.jsxs)(r.rXV, {
             children: [u, c]
         }, "notifications"), (0, i.jsx)(r.rXV, {
+            children: m
+        }), (0, i.jsx)(r.rXV, {
+            children: C
+        }), (0, i.jsx)(r.rXV, {
             children: A
         }, "developer-actions")]
     })
@@ -63,7 +67,7 @@ function y(e) {
     } = e, a = (0, f.A)(t), d = (0, h.A)(t), u = (0, O.A)(t), G = (0, c.A)(t), y = (0, b.A)(t), x = (0, A.A)(t), S = (0, o.A)({
         id: t.id,
         label: I.intl.string(I.t.DQ797g)
-    }), D = (0, _.A)(t, "Context Menu"), L = (0, g.A)(t), U = (0, E.A)(t), N = (0, R.A)(t), j = (0, m.A)(t), F = (0, C.A)(t.id), w = (0, v.A)(t), M = (0, T.A)(t), V = (0, s.m)(t), X = (0, s.y)(t), k = (0, p.A)(t);
+    }), D = (0, _.A)(t, "Context Menu"), L = (0, g.A)(t), U = (0, E.A)(t), j = (0, R.A)(t), N = (0, m.A)(t), F = (0, C.A)(t.id), w = (0, v.A)(t), M = (0, T.A)(t), V = (0, s.m)(t), X = (0, s.y)(t), k = (0, p.A)(t);
     return (0, i.jsxs)(r.W1t, {
         "data-menu-migrated": !0,
         navId: "thread-context",
@@ -75,9 +79,9 @@ function y(e) {
         }, "mark-as-read-or-favorite"), (0, i.jsx)(r.rXV, {
             children: V
         }), (0, i.jsxs)(r.rXV, {
-            children: [D, w, G, y, j, F, a]
+            children: [D, w, G, y, N, F, a]
         }, "thread-actions"), (0, i.jsxs)(r.rXV, {
-            children: [u, N]
+            children: [u, j]
         }, "notifications"), (0, i.jsxs)(r.rXV, {
             children: [M, L, k, U, x]
         }, "admin-actions"), (0, i.jsx)(r.rXV, {

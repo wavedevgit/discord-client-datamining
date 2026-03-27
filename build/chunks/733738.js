@@ -32,6 +32,7 @@ let h = o.GY.binds["0"],
                 children: (0, i.jsx)(s.DUT, {
                     "aria-label": u.intl.string(u.t.B9vzIP),
                     "aria-disabled": !n,
+                    tabIndex: n ? 0 : -1,
                     className: l()(A.x6, A.aX, {
                         [A.r9]: !n
                     }),
@@ -50,6 +51,7 @@ let h = o.GY.binds["0"],
                 children: (0, i.jsx)(s.DUT, {
                     "aria-label": u.intl.string(u.t["9KJ29e"]),
                     "aria-disabled": !a,
+                    tabIndex: a ? 0 : -1,
                     className: l()(A.x6, A.sY, {
                         [A.r9]: !a
                     }),

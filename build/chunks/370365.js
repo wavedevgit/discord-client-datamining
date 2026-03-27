@@ -1,6 +1,6 @@
 /** chunk id: 370365 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => x
 });
 var i = n(627968),
     s = n(64700),
@@ -15,7 +15,7 @@ var i = n(627968),
     _ = n(686533),
     g = n(502040);
 
-function x(e) {
+function A(e) {
     let {
         game: t,
         gameApplication: n
@@ -27,13 +27,13 @@ function x(e) {
     })
 }
 
-function A(e) {
+function x(e) {
     let {
         rawGame: t,
         gameApplication: n,
         supportDisabled: r,
         getEnabledFromStatus: d,
-        onChange: A,
+        onChange: x,
         clientSettingType: h,
         ariaLabel: p
     } = e, f = (0, l.cf)([o.Ay, u.A, m.A], () => (0, o.xU)(t, o.Ay, u.A, m.A)), T = (0, l.cf)([u.A, m.A], () => (0, o.hw)(t, !1, [u.A, m.A]), [t]), S = d(T), [E, b] = s.useState(S);
@@ -41,7 +41,7 @@ function A(e) {
         b(S)
     }, [S]), (0, i.jsx)(_.A, {
         title: t.name,
-        icon: (0, i.jsx)(x, {
+        icon: (0, i.jsx)(A, {
             game: f,
             gameApplication: n
         }),
@@ -52,7 +52,7 @@ function A(e) {
                 disabled: r,
                 onChange: e => {
                     let n;
-                    return n = !e && E, void(b(e), A(e, f, T), n && (0, c.L)(h, f.id ?? t?.id ?? null))
+                    return n = !e && E, void(b(e), x(e, f, T), n && (0, c.L)(h, f.id ?? t?.id ?? null))
                 }
             }), (0, i.jsx)("div", {
                 className: g.Kz

@@ -18,16 +18,16 @@ var l = i(311907),
 function g(n, t) {
     let g = (0, l.bG)([o.A], () => o.A.can(u.xBc.MANAGE_CHANNELS, t)),
         x = (0, s.Ay)(n),
-        j = (0, c.b)(n),
-        C = (0, l.bG)([A.A], () => A.A.getChannelStatus(n)),
-        b = null != C && C.length > 0;
-    return n.isGuildVoice() && (g || x) ? !j && g && b ? (0, e.jsx)(r.Drp, {
+        C = (0, c.b)(n),
+        j = (0, l.bG)([A.A], () => A.A.getChannelStatus(n)),
+        b = null != j && j.length > 0;
+    return n.isGuildVoice() && (g || x) ? !C && g && b ? (0, e.jsx)(r.Drp, {
         id: "clear-status",
         label: h.intl.string(h.t["22CYiZ"]),
         action: () => {
             a.Ay.updateVoiceChannelStatus(n.id, "")
         }
-    }) : j && x ? (0, e.jsx)(r.Drp, {
+    }) : C && x ? (0, e.jsx)(r.Drp, {
         id: "set-status",
         label: h.intl.string(h.t.RBd5PW),
         action: () => {

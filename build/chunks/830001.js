@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(419954),
     _ = n(933297),
     g = n(836602),
-    x = n(591179),
-    A = n(854627),
+    A = n(591179),
+    x = n(854627),
     h = n(657331),
     p = n(961350),
     f = n(287809),
@@ -34,7 +34,7 @@ let v = [{
             {
                 avatarSrc: t,
                 avatarDecorationSrc: n
-            } = (0, A.A)({
+            } = (0, x.A)({
                 userId: e?.id,
                 size: r._3J.SIZE_48
             });
@@ -83,7 +83,7 @@ let v = [{
         icon: O,
         StronglyDiscouragedCustomComponent: N,
         getDismissibleBadges: () => v,
-        usePredicate: () => !(0, x.X)("user_settings_sidebar"),
+        usePredicate: () => !(0, A.X)("user_settings_sidebar"),
         buildLayout: () => [I]
     }),
     y = (0, m.i4)(T.X.PROFILE_SIDEBAR_ITEM_WYSIWYG, {
@@ -91,7 +91,7 @@ let v = [{
         icon: O,
         StronglyDiscouragedCustomComponent: N,
         getDismissibleBadges: () => v,
-        usePredicate: () => (0, x.X)("user_settings_sidebar"),
+        usePredicate: () => (0, A.X)("user_settings_sidebar"),
         onClick: () => {
             let e = p.default.getId();
             (0, h.openUserProfileModal)({
@@ -106,7 +106,7 @@ function O() {
         {
             avatarSrc: t,
             avatarDecorationSrc: n
-        } = (0, A.A)({
+        } = (0, x.A)({
             userId: e?.id,
             size: r._3J.SIZE_48
         });

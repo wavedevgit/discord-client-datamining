@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(927578),
     _ = n(919395),
     g = n(128450),
-    x = n(652215),
-    A = n(49999),
+    A = n(652215),
+    x = n(49999),
     h = n(985018),
     p = n(927961),
     f = n(698551);
@@ -33,14 +33,14 @@ function T(e) {
         pendingDisplayNameStyles: v,
         pendingErrors: N
     } = (0, _.B0)(t, n), [I, j] = (0, o.kn)([l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), y = I === l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, O = (0, s.useCallback)(() => {
-        j(A.i.TAKE_ACTION), u.default.track(x.HAw.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.L)({
+        j(x.i.TAKE_ACTION), u.default.track(A.HAw.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.L)({
             analyticsLocations: E,
             guildId: n
         })
     }, [E, j, n]), R = (0, s.useCallback)(() => {
         (0, c.p)({
             displayNameStyles: null
-        }), u.default.track(x.HAw.DISPLAY_NAME_STYLES_REMOVED)
+        }), u.default.track(A.HAw.DISPLAY_NAME_STYLES_REMOVED)
     }, []), L = (0, s.useCallback)(() => {
         (0, c.p)({
             guildId: n,

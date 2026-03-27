@@ -16,8 +16,8 @@ n(818143);
 var m = n(657331),
     _ = n(287809),
     g = n(427262),
-    x = n(985018),
-    A = n(465001);
+    A = n(985018),
+    x = n(465001);
 
 function h(e) {
     let {
@@ -34,15 +34,15 @@ function h(e) {
     return s.useEffect(() => {
         (0, r.wz)(t)
     }, [t]), (0, i.jsxs)("div", {
-        className: A.uW,
+        className: x.uW,
         children: [null != h && (0, i.jsx)(o.A, {
-            className: A.my,
+            className: x.my,
             user: h,
             size: a._3J.SIZE_40
         }), (0, i.jsxs)("div", {
-            className: A.Qq,
+            className: x.Qq,
             children: [(0, i.jsx)(a.DUT, {
-                className: A.Xh,
+                className: x.Xh,
                 onClick: T,
                 children: (0, i.jsx)(a.Text, {
                     variant: "text-md/semibold",
@@ -52,13 +52,13 @@ function h(e) {
             }), (0, i.jsx)(a.Text, {
                 variant: "text-md/medium",
                 color: "text-default",
-                children: x.intl.format(x.t["/MBjYF"], {
+                children: A.intl.format(A.t["/MBjYF"], {
                     count: n
                 })
             })]
         }), (0, i.jsx)(a.DUT, {
             onClick: f,
-            className: A.Qz,
+            className: x.Qz,
             children: (0, i.jsx)(a.ucK, {
                 size: "xs"
             })
@@ -78,11 +78,11 @@ function p(e) {
     return (0, i.jsxs)("div", {
         className: t,
         children: [(0, i.jsxs)("div", {
-            className: A.Qq,
+            className: x.Qq,
             children: [(0, i.jsx)(a.Text, {
                 variant: "text-sm/semibold",
                 color: "interactive-text-active",
-                children: x.intl.format(x.t.N4qBBO, {
+                children: A.intl.format(A.t.N4qBBO, {
                     index: r + 1
                 })
             }), (0, i.jsx)(a.Text, {
@@ -91,7 +91,7 @@ function p(e) {
                 children: o
             })]
         }), (0, i.jsx)(a.DUT, {
-            className: A.Kk,
+            className: x.Kk,
             onClick: d,
             children: (0, i.jsx)(a.PGe, {
                 size: "md",
@@ -111,12 +111,12 @@ function f(e) {
             count: n.length
         }), n.map((e, l) => (0, i.jsxs)(s.Fragment, {
             children: [(0, i.jsx)(p, {
-                className: A.nM,
+                className: x.nM,
                 userId: t,
                 index: l,
                 verification: e
             }), l !== n.length - 1 && (0, i.jsx)("div", {
-                className: A.yF
+                className: x.yF
             })]
         }, `${l}-${e.timestamp}`))]
     })

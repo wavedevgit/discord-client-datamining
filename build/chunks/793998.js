@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(688810),
     _ = n(726249),
     g = n(915089),
-    x = n(742589),
-    A = n(544028),
+    A = n(742589),
+    x = n(544028),
     h = n(253932),
     p = n(841329),
     f = n(899847),
@@ -98,19 +98,19 @@ function w(e) {
     } = e, l = (0, g.GV)(), o = (0, b.VT)();
     return (0, i.jsx)(d.NPJ, {
         theme: t,
-        children: e => (0, i.jsxs)(x.A, {
+        children: e => (0, i.jsxs)(A.A, {
             className: a()(e, D.ZB),
             scrollable: r.Fr,
             role: "navigation",
             "aria-labelledby": l,
             toolbar: !0,
-            children: [(0, i.jsx)(x.A.Icon, {
+            children: [(0, i.jsx)(A.A.Icon, {
                 icon: d.nFg,
                 "aria-hidden": !0
-            }), (0, i.jsx)(x.A.Title, {
+            }), (0, i.jsx)(A.A.Title, {
                 id: l,
                 children: P.intl.string(L.default.RZqaJn)
-            }), (0, i.jsx)(x.A.Divider, {}), (0, i.jsxs)(d.VQ0, {
+            }), (0, i.jsx)(A.A.Divider, {}), (0, i.jsxs)(d.VQ0, {
                 "aria-label": P.intl.string(L.default.RZqaJn),
                 selectedItem: n,
                 type: "top-pill",
@@ -172,8 +172,8 @@ function V() {
 function B() {
     let {
         analyticsLocations: e
-    } = (0, m.Ay)(u.A.FAMILY_CENTER), t = (0, S.A)(), n = (0, o.bG)([T.A], () => T.A.getIsInitialized()), l = (0, o.bG)([A.A], () => A.A.theme), r = (0, g.GV)(), {
-        isLoading: x,
+    } = (0, m.Ay)(u.A.FAMILY_CENTER), t = (0, S.A)(), n = (0, o.bG)([T.A], () => T.A.getIsInitialized()), l = (0, o.bG)([x.A], () => x.A.theme), r = (0, g.GV)(), {
+        isLoading: A,
         selectedTab: p,
         handleTabChange: E,
         showAgeGateModal: b
@@ -209,7 +209,7 @@ function B() {
                 children: (0, i.jsx)(d.HOs, {
                     children: (0, i.jsx)("div", {
                         className: D.O4,
-                        children: x ? (0, i.jsx)(U, {}) : (0, i.jsx)(v, {})
+                        children: A ? (0, i.jsx)(U, {}) : (0, i.jsx)(v, {})
                     })
                 })
             })]

@@ -18,16 +18,16 @@ function o(e) {
         useVariant: c,
         useDisabled: u,
         onClick: m
-    } = t, [_, g] = s.useState(!1), x = (0, a.q)(t), A = o(), h = d?.(), p = n(), f = c?.(), T = u?.();
+    } = t, [_, g] = s.useState(!1), A = (0, a.q)(t), x = o(), h = d?.(), p = n(), f = c?.(), T = u?.();
     return (0, i.jsx)(r.L, {
         children: (0, i.jsx)(l.D0$, {
-            label: A,
+            label: x,
             description: h,
             disabled: T,
             layout: "horizontal",
             children: (0, i.jsx)(l.Button, {
                 onClick: () => {
-                    x();
+                    A();
                     let e = m();
                     e instanceof Promise && (g(!0), e.finally(() => g(!1)))
                 },

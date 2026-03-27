@@ -14,15 +14,15 @@ var i = n(934551),
     m = n(198987),
     _ = n(315943),
     g = n(475061),
-    x = n(985018);
-let A = (0, s.t_)(a.X.VOICE_AND_VIDEO_PANEL, {
-        useTitle: () => x.intl.string(x.t.B1fFpf),
+    A = n(985018);
+let x = (0, s.t_)(a.X.VOICE_AND_VIDEO_PANEL, {
+        useTitle: () => A.intl.string(A.t.B1fFpf),
         buildLayout: () => [g.p, c.Q, o.i, _.H, m.t, u.U, d.r]
     }),
     h = (0, s.i4)(a.X.VOICE_AND_VIDEO_SIDEBAR_ITEM, {
-        useTitle: () => x.intl.string(x.t.B1fFpf),
+        useTitle: () => A.intl.string(A.t.B1fFpf),
         usePredicate: () => l.Ay.isSupported(),
         icon: i.MicrophoneIcon,
         useMenu: r.A,
-        buildLayout: () => [A]
+        buildLayout: () => [x]
     })

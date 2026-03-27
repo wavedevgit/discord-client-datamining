@@ -1,6 +1,6 @@
 /** chunk id: 611478 params = (module,exports,require) **/
 n.d(t, {
-    P: () => A
+    P: () => x
 }), n(321073);
 var i = n(627968),
     s = n(311907),
@@ -14,7 +14,7 @@ var i = n(627968),
     m = n(443064),
     _ = n(985018),
     g = n(536242);
-let x = (0, o.E2)(c.X.ACCOUNT_PROFILE_SETTING, {
+let A = (0, o.E2)(c.X.ACCOUNT_PROFILE_SETTING, {
         useSearchTerms: function() {
             let e = [_.intl.string(_.t.LYju5J), _.intl.string(_.t["9AjdkD"]), _.intl.string(_.t["+JkHPw"]), _.intl.string(_.t.oP5zGA), _.intl.string(_.t.Ulqq6K)],
                 t = (0, r.fk)(),
@@ -33,6 +33,6 @@ let x = (0, o.E2)(c.X.ACCOUNT_PROFILE_SETTING, {
             })
         }
     }),
-    A = (0, o.zZ)(c.X.ACCOUNT_PROFILE_CATEGORY, {
-        buildLayout: () => [x]
+    x = (0, o.zZ)(c.X.ACCOUNT_PROFILE_CATEGORY, {
+        buildLayout: () => [A]
     })

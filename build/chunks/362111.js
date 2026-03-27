@@ -22,8 +22,8 @@ function m(e) {
         toastContent: m,
         initialStep: _ = o.pn.PAYMENT_TYPE,
         overwriteSubscriptionPaymentSource: g = !1
-    } = e, x = (0, d.KP)(), A = (0, d.Y)({
-        paymentModalArgs: x,
+    } = e, A = (0, d.KP)(), x = (0, d.Y)({
+        paymentModalArgs: A,
         initialStep: _,
         prependSteps: [],
         appendSteps: [],
@@ -52,7 +52,7 @@ function m(e) {
             onSubmit: function(e) {
                 e.preventDefault()
             },
-            children: A
+            children: x
         })
     })
 }

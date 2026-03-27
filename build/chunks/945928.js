@@ -14,8 +14,8 @@ var i = n(64700),
     m = n(77735),
     _ = n(791460),
     g = n(53386),
-    x = n(585175),
-    A = n(338145),
+    A = n(585175),
+    x = n(338145),
     h = n(299752),
     p = n(180491),
     f = n(903427),
@@ -81,5 +81,5 @@ let E = (0, r.Qx)(u.X.VOICE_INPUT_PROFILE_SETTING, {
                 }
             }, [e])
         },
-        buildLayout: () => [E, x.O, A.w, g.h, f.K, h.C, p.m, _.U]
+        buildLayout: () => [E, A.O, x.w, g.h, f.K, h.C, p.m, _.U]
     })

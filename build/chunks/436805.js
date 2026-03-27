@@ -14,7 +14,7 @@ var i = n(627968),
     m = n(580630),
     _ = n(349439),
     g = n(380258);
-let x = e => {
+let A = e => {
         let {
             displayName: t,
             product: n
@@ -25,7 +25,7 @@ let x = e => {
             className: g._P
         })
     },
-    A = e => {
+    x = e => {
         let {
             displayName: t,
             nameplateData: n
@@ -82,13 +82,13 @@ let x = e => {
         });
         switch (n.type) {
             case r.R.AVATAR_DECORATION:
-                return (0, i.jsx)(x, {
+                return (0, i.jsx)(A, {
                     displayName: t,
                     product: n
                 });
             case r.R.NAMEPLATE:
                 let s = (0, u.EQ)(n);
-                return null != s ? (0, i.jsx)(A, {
+                return null != s ? (0, i.jsx)(x, {
                     displayName: t,
                     nameplateData: s
                 }) : null;
@@ -115,14 +115,14 @@ let x = e => {
             product: c
         } = (0, d.A)(t), {
             displayName: u,
-            typeName: x,
-            isSubscription: A
+            typeName: A,
+            isSubscription: x
         } = (0, _.GZ)(c ?? null, n);
-        if (null != t && !A && null == c || null == u) return null;
+        if (null != t && !x && null == c || null == u) return null;
         let h = (0, m.$g)(s, l);
         return (0, i.jsxs)("div", {
             className: a()(g.kL, r),
-            children: [A ? (0, i.jsx)(p, {
+            children: [x ? (0, i.jsx)(p, {
                 subscriptionPlanId: n
             }) : (0, i.jsx)(f, {
                 displayName: u,
@@ -130,7 +130,7 @@ let x = e => {
             }), (0, i.jsxs)("div", {
                 children: [(0, i.jsx)(o.Text, {
                     variant: "text-md/semibold",
-                    children: null != x ? `${u} • ${x}` : u
+                    children: null != A ? `${u} • ${A}` : u
                 }), (0, i.jsx)(o.Text, {
                     variant: "text-sm/medium",
                     color: "text-subtle",

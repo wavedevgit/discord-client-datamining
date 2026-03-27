@@ -18,8 +18,8 @@ function m(e) {
         onClose: m,
         hasCancelableGuildBoostSlot: _,
         premiumSubscription: g,
-        onSelect: x,
-        fractionalState: A
+        onSelect: A,
+        fractionalState: x
     } = e, h = {
         transfer: {
             label: null != t.premiumGuildSubscription ? u.intl.string(u.t["PR0n//"]) : u.intl.string(u.t["+fmEYG"]),
@@ -43,9 +43,9 @@ function m(e) {
             break;
         case d.Dmq.PAUSE_PENDING:
         case d.Dmq.PAUSED:
-            A === c.xc.NONE && (h.transfer.disabled = !0, h.transfer.subtext = u.intl.string(u.t.LiLRRT), h.cancel.subtext = u.intl.string(u.t["1ywaWL"]), h.cancel.disabled = !0, h.uncancel.disabled = !0)
+            x === c.xc.NONE && (h.transfer.disabled = !0, h.transfer.subtext = u.intl.string(u.t.LiLRRT), h.cancel.subtext = u.intl.string(u.t["1ywaWL"]), h.cancel.disabled = !0, h.uncancel.disabled = !0)
     }
-    let p = s.useMemo(() => g.isPausedOrPausePending && A === c.xc.NONE ? (0, i.jsx)(l.Drp, {
+    let p = s.useMemo(() => g.isPausedOrPausePending && x === c.xc.NONE ? (0, i.jsx)(l.Drp, {
         id: "manage-subscription",
         label: u.intl.string(u.t.obRG6Y),
         action: () => (0, r.openUserSettings)(a.X.SUBSCRIPTIONS_PANEL),
@@ -54,10 +54,10 @@ function m(e) {
             type: "icon",
             icon: l.xmO
         }
-    }) : null, [A, g]);
+    }) : null, [x, g]);
     return (0, i.jsxs)(l.W1t, {
         "data-menu-migrated-auto": !0,
-        onSelect: x,
+        onSelect: A,
         navId: "subscription-context",
         variant: "fixed",
         "aria-label": u.intl.string(u.t.ogxXGq),

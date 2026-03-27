@@ -19,17 +19,17 @@ function u(e) {
         {
             layout: _,
             collapseAfter: g,
-            useCollapsibleTitle: x,
-            useCollapsedSubtitle: A
+            useCollapsibleTitle: A,
+            useCollapsedSubtitle: x
         } = n,
         h = null != g ? _.slice(0, g) : _,
         p = null != g ? _.slice(g) : [],
-        f = x?.(u, p.length) ?? (t = p.length, u ? d.intl.formatToPlainString(d.t["3SHL+d"], {
+        f = A?.(u, p.length) ?? (t = p.length, u ? d.intl.formatToPlainString(d.t["3SHL+d"], {
             count: t
         }) : d.intl.formatToPlainString(d.t["8JRFyZ"], {
             count: t
         })),
-        T = A?.();
+        T = x?.();
     return (0, i.jsxs)(l.BJc, {
         gap: 8,
         children: [h.map((e, t) => (0, i.jsxs)(s.Fragment, {

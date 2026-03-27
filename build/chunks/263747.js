@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(688810),
     _ = n(854627),
     g = n(427157),
-    x = n(954571),
-    A = n(975571),
+    A = n(954571),
+    x = n(975571),
     h = n(326084),
     p = n(851746),
     f = n(344904),
@@ -110,7 +110,7 @@ let N = e => {
             e === h.aK.REDEEMED && N.redeemed++, e === h.aK.CONVERTED && (N.redeemed++, N.converted++)
         });
         let I = N.sent === T.Z,
-            y = A.A.getArticleURL(E.MVz.REFERRAL_PROGRAM),
+            y = x.A.getArticleURL(E.MVz.REFERRAL_PROGRAM),
             {
                 analyticsLocations: O
             } = (0, m.Ay)(u.A.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
@@ -153,7 +153,7 @@ let N = e => {
                                 let {
                                     analyticsLocations: t
                                 } = e;
-                                x.default.track(E.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+                                A.default.track(E.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
                                     location_stack: t
                                 }), (0, c.mMO)(async () => {
                                     let {

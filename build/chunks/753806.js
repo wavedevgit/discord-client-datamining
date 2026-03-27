@@ -24,12 +24,12 @@ var n = r(627968),
     R = r(921242),
     x = r(652215);
 
-function I(e) {
+function T(e) {
     let t = (0, _.bS)(e);
     p.A.clearSearchEditorState(e), h.A.clearSearchMessages(t), f.A.cleanUp(t), S.A.cleanUp(t)
 }
 
-function T(e) {
+function I(e) {
     let {
         searchContext: t,
         searchQueryString: r,
@@ -62,7 +62,7 @@ function b(e) {
                 searchQueryString: r,
                 searchQuery: n
             } = e;
-            T({
+            I({
                 searchContext: t,
                 searchQueryString: r,
                 searchQuery: n,
@@ -80,7 +80,7 @@ function b(e) {
                 searchQueryString: r,
                 searchQuery: n
             } = e;
-            T({
+            I({
                 searchContext: t,
                 searchQueryString: r,
                 searchQuery: n,
@@ -109,7 +109,7 @@ function N(e) {
     c._.dispatch(x.jej.SET_SEARCH_QUERY, e)
 }
 let v = {
-    cleanUpSearchState: I,
+    cleanUpSearchState: T,
     fetchMessages: b,
     setSearchInputText: C,
     appendToSearchInputText: function(e, t) {
@@ -180,7 +180,7 @@ let v = {
     cleanUpPrivateChannelSearchState: function() {
         A.A.getSearchStateIds().forEach(e => {
             let t = o.A.getChannel(e);
-            null != t && t.isPrivate() && I({
+            null != t && t.isPrivate() && T({
                 type: x.I4_.CHANNEL,
                 channelId: t.id
             })

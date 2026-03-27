@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(590202),
     _ = n(545986),
     g = n(652215),
-    x = n(985018),
-    A = n(144950),
+    A = n(985018),
+    x = n(144950),
     h = n(641701);
 
 function p() {
@@ -34,32 +34,32 @@ function p() {
             })
         }, []);
     return (0, i.jsx)("div", {
-        className: A.kL,
+        className: x.kL,
         style: t,
         children: (0, i.jsxs)(r.BJc, {
-            className: A.FS,
+            className: x.FS,
             justify: "space-between",
             children: [(0, i.jsxs)(r.BJc, {
                 gap: 4,
                 children: [(0, i.jsxs)("div", {
-                    className: A.N1,
+                    className: x.N1,
                     children: [(0, i.jsx)("img", {
                         alt: "",
                         src: h,
-                        className: A.Kk
+                        className: x.Kk
                     }), (0, i.jsx)(r.Heading, {
                         variant: "heading-lg/bold",
                         color: "always-white",
-                        children: x.intl.string(x.t.z8YP2A)
+                        children: A.intl.string(A.t.z8YP2A)
                     })]
                 }), (0, i.jsx)(r.Text, {
                     variant: "text-md/medium",
                     color: "text-subtle",
-                    children: x.intl.string(x.t.HdKh65)
+                    children: A.intl.string(A.t.HdKh65)
                 })]
             }), (0, i.jsx)(r.Button, {
                 variant: e ? "primary" : "overlay-primary",
-                text: x.intl.string(x.t.GURBQl),
+                text: A.intl.string(A.t.GURBQl),
                 onClick: n
             })]
         })

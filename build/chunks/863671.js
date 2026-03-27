@@ -1,7 +1,7 @@
 /** chunk id: 863671 params = (module,exports,require) **/
 n.d(t, {
     $: () => h,
-    C: () => A
+    C: () => x
 });
 var i = n(64700),
     s = n(934551),
@@ -15,7 +15,7 @@ var i = n(64700),
     m = n(119695),
     _ = n(766761),
     g = n(985018);
-let x = (0, r.zZ)(d.X.SESSIONS_CATEGORY, {
+let A = (0, r.zZ)(d.X.SESSIONS_CATEGORY, {
         buildLayout: () => [m.I, _.A],
         initialize: () => ((0, a.GY)(), () => {
             (0, a.ZQ)()
@@ -27,10 +27,10 @@ let x = (0, r.zZ)(d.X.SESSIONS_CATEGORY, {
             }), [])
         }
     }),
-    A = (0, r.t_)(d.X.SESSIONS_PANEL, {
+    x = (0, r.t_)(d.X.SESSIONS_PANEL, {
         useTitle: () => (0, c._A)("SessionsPanel") ? g.intl.string(g.t.mEndXM) : g.intl.string(g.t["+1h0k/"]),
         hideInStreamerMode: !0,
-        buildLayout: () => [x]
+        buildLayout: () => [A]
     }),
     h = (0, r.i4)(d.X.SESSIONS_SIDEBAR_ITEM, {
         useTitle: () => g.intl.string(g.t["+1h0k/"]),
@@ -42,5 +42,5 @@ let x = (0, r.zZ)(d.X.SESSIONS_CATEGORY, {
             }]
         },
         usePredicate: () => !(0, c._A)("SessionsPanel"),
-        buildLayout: () => [A]
+        buildLayout: () => [x]
     })

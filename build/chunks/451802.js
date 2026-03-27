@@ -14,12 +14,12 @@ var i, s = n(627968),
     m = n(397927),
     _ = n(235986),
     g = n(350535),
-    x = n(985018),
-    A = n(945523),
+    A = n(985018),
+    x = n(945523),
     h = ((i = {}).DEFAULT = "DEFAULT", i.RECORDING = "RECORDING", i);
 let p = {
-    DEFAULT: A.__invalid_default,
-    RECORDING: A.oz
+    DEFAULT: x.__invalid_default,
+    RECORDING: x.oz
 };
 class f extends l.PureComponent {
     _inputId = u().uniqueId("key-recorder-");
@@ -76,23 +76,23 @@ class f extends l.PureComponent {
                 disabled: i
             } = this.props,
             l = (0, g.dI)(n, !0);
-        return e = "RECORDING" === t ? x.intl.string(x.t.bmOri0) : 0 === n.length ? x.intl.string(x.t.co3wt9) : x.intl.string(x.t.idFMvH), (0, s.jsx)(m.vN3, {
+        return e = "RECORDING" === t ? A.intl.string(A.t.bmOri0) : 0 === n.length ? A.intl.string(A.t.co3wt9) : A.intl.string(A.t.idFMvH), (0, s.jsx)(m.vN3, {
             focusTarget: this._inputRef,
             ringTarget: this._containerRef,
             children: (0, s.jsx)("div", {
                 onClick: this.handleClick,
                 onMouseDown: this.handleMouseDown,
                 ref: this._containerRef,
-                className: r()(A.Qm, p[t], {
-                    [A.Qz]: i
+                className: r()(x.Qm, p[t], {
+                    [x.Qz]: i
                 }),
                 children: (0, s.jsxs)(_.A, {
-                    className: A.Pp,
+                    className: x.Pp,
                     children: [(0, s.jsx)(_.A.Child, {
-                        className: A.bZ,
+                        className: x.bZ,
                         children: (0, s.jsx)("input", {
                             id: this._inputId,
-                            placeholder: x.intl.string(x.t.nWRdnl),
+                            placeholder: A.intl.string(A.t.nWRdnl),
                             type: "text",
                             ref: this.setInputRef,
                             readOnly: !0,
@@ -100,7 +100,7 @@ class f extends l.PureComponent {
                             disabled: "RECORDING" !== this.props.mode || i
                         })
                     }), (0, s.jsx)("div", {
-                        className: A.UD,
+                        className: x.UD,
                         children: (0, s.jsx)(m.Button, {
                             size: "sm",
                             variant: "RECORDING" === this.props.mode ? "critical-secondary" : "secondary",

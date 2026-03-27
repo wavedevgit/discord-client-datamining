@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(397927),
     _ = n(384904),
     g = n(793574),
-    x = n(688810),
-    A = n(701273),
+    A = n(688810),
+    x = n(701273),
     h = n(780964),
     p = n(840065),
     f = n(287809),
@@ -42,7 +42,7 @@ let j = [C.Dmq.PAST_DUE, C.Dmq.ACCOUNT_HOLD, C.Dmq.BILLING_RETRY],
                 location_stack: a
             })
         }, []);
-        let x = async () => {
+        let A = async () => {
             d(!0), g(!1);
             try {
                 await (0, _.M2)(l.id, a, r), T.default.track(C.HAw.GUILD_BOOST_PAST_DUE_CANCELLATION_FLOW_COMPLETED, {
@@ -52,13 +52,13 @@ let j = [C.Dmq.PAST_DUE, C.Dmq.ACCOUNT_HOLD, C.Dmq.BILLING_RETRY],
             } catch (e) {
                 g(!0), d(!1)
             }
-        }, A = [{
+        }, x = [{
             text: N.intl.string(N.t.oEAioF),
             onClick: () => n(),
             variant: "secondary"
         }, {
             text: N.intl.string(N.t["cY+Oob"]),
-            onClick: () => x(),
+            onClick: () => A(),
             disabled: o,
             variant: "critical-primary",
             loading: o
@@ -68,7 +68,7 @@ let j = [C.Dmq.PAST_DUE, C.Dmq.ACCOUNT_HOLD, C.Dmq.BILLING_RETRY],
             transitionState: t,
             title: N.intl.string(N.t.LZunzZ),
             subtitle: N.intl.string(N.t.FClXh9),
-            actions: A,
+            actions: x,
             onClose: async () => n(),
             children: u ? (0, i.jsx)(m.wx6, {
                 type: "critical",
@@ -91,7 +91,7 @@ function O(e) {
         }),
         {
             analyticsLocations: O
-        } = (0, x.Ay)(g.A.GUILD_BOOSTING_SUBSCRIPTION_HEADER),
+        } = (0, A.Ay)(g.A.GUILD_BOOSTING_SUBSCRIPTION_HEADER),
         R = (0, E.A)({
             location: "GuildBoostingHeader"
         });
@@ -160,7 +160,7 @@ function O(e) {
             className: I.yW,
             variant: "text-sm/normal",
             children: N.intl.format(d.Fr ? N.t.uxYBEa : N.t.k6haR9, {
-                openAppHook: () => (0, A.A)("app")
+                openAppHook: () => (0, x.A)("app")
             })
         })]
     })

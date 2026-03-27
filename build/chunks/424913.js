@@ -23,8 +23,8 @@ var n = r(627968),
     y = r(443486),
     R = r(768570),
     x = r(652215),
-    I = r(985018),
-    T = r(10691);
+    T = r(985018),
+    I = r(10691);
 let b = [];
 
 function L(e) {
@@ -84,14 +84,14 @@ function L(e) {
     }, M = s.useCallback(e => {
         let {
             hasOtherSearchFiltersVisible: t
-        } = e, s = t ? I.intl.string(I.t.diOL4i) : I.intl.string(I.t["M1tf+7"]);
+        } = e, s = t ? T.intl.string(T.t.diOL4i) : T.intl.string(T.t["M1tf+7"]);
         return (0, g.wE)(S.$.ROW, {
             icon: (0, n.jsx)(a.RgP, {
                 size: "custom",
                 color: "currentColor",
                 width: 20,
                 height: 20,
-                className: T.Fx
+                className: I.Fx
             }),
             label: (0, n.jsx)(f.bg, {
                 label: s
@@ -99,7 +99,7 @@ function L(e) {
             sublabel: t ? (0, n.jsx)(a.Text, {
                 variant: "text-sm/medium",
                 color: "text-muted",
-                children: I.intl.string(I.t["1axf1T"])
+                children: T.intl.string(T.t["1axf1T"])
             }) : void 0,
             onSelect: () => _.A.openSearchFiltersModal(r)
         })
@@ -112,13 +112,13 @@ function L(e) {
                         icon: (0, n.jsx)(a.$p$, {
                             size: "sm",
                             color: "currentColor",
-                            className: T.Fx
+                            className: I.Fx
                         }),
                         label: (0, n.jsx)(f.bg, {
-                            label: I.intl.format(I.t["VGEH/0"], {
+                            label: T.intl.format(T.t["VGEH/0"], {
                                 channelName: t
                             }),
-                            className: T.YL
+                            className: I.YL
                         }),
                         onSelect: e => {
                             let {
@@ -154,7 +154,7 @@ function L(e) {
             })];
             if (e.push((0, g.wE)(S.$.GROUP, {
                     rows: t,
-                    title: I.intl.string(I.t.UdhTtk)
+                    title: T.intl.string(T.t.UdhTtk)
                 })), k.length > 0) {
                 let t = k.map((e, t) => {
                         let {
@@ -169,10 +169,10 @@ function L(e) {
                             icon: (0, n.jsx)(a.$p$, {
                                 size: "sm",
                                 color: "currentColor",
-                                className: T.Fx
+                                className: I.Fx
                             }),
                             label: s,
-                            ariaLabel: I.intl.formatToPlainString(I.t.WoiGrV, {
+                            ariaLabel: T.intl.formatToPlainString(T.t.WoiGrV, {
                                 suggestion: l
                             }),
                             resultText: e,
@@ -213,15 +213,15 @@ function L(e) {
                     icon: (0, n.jsx)(a.$p$, {
                         size: "sm",
                         color: "currentColor",
-                        className: T.Fx
+                        className: I.Fx
                     }),
                     label: (0, n.jsx)(f.bg, {
-                        label: I.intl.format(I.t.rCnaoo, {
+                        label: T.intl.format(T.t.rCnaoo, {
                             value: r
                         }),
-                        className: T.YL
+                        className: I.YL
                     }),
-                    ariaLabel: I.intl.formatToPlainString(I.t.rCnaoo, {
+                    ariaLabel: T.intl.formatToPlainString(T.t.rCnaoo, {
                         value: t.query
                     }),
                     onSelect: () => (e => {
@@ -303,7 +303,7 @@ function L(e) {
                 })];
                 e.push((0, g.wE)(S.$.GROUP, {
                     rows: t,
-                    title: I.intl.string(I.t.UdhTtk)
+                    title: T.intl.string(T.t.UdhTtk)
                 }))
             } else {
                 let t = M({

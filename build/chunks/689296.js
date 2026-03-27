@@ -29,17 +29,17 @@ function d(e) {
                 size: "xs"
             })]
         })
-    }), [x, A] = s.useState(null), h = s.useCallback(() => {
-        if (null == x) return;
+    }), [A, x] = s.useState(null), h = s.useCallback(() => {
+        if (null == A) return;
         let {
             scrollHeight: e,
             clientHeight: t
-        } = x;
+        } = A;
         e > t && _({
             truncatedHeight: t,
             expandedHeight: e
         })
-    }, [x]);
+    }, [A]);
     s.useEffect(() => {
         requestAnimationFrame(h)
     }, [h, t, n]);
@@ -49,7 +49,7 @@ function d(e) {
             ...d,
             className: o.Qs,
             lineClamp: c ? void 0 : n,
-            ref: A,
+            ref: x,
             style: {
                 height: p
             },

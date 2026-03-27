@@ -1,6 +1,6 @@
 /** chunk id: 897027 params = (module,exports,require) **/
 n.d(t, {
-    H: () => x
+    H: () => A
 });
 var i = n(419954),
     s = n(780964),
@@ -14,7 +14,7 @@ var i = n(419954),
     m = n(334218),
     _ = n(803119),
     g = n(985018);
-let x = (0, i.FW)(s.X.NOTIFICATION_SELECTION_FIELD_SET, {
+let A = (0, i.FW)(s.X.NOTIFICATION_SELECTION_FIELD_SET, {
     variant: "compact",
     useTitle: () => g.intl.string(g.t.FEVRDV),
     buildLayout: () => [d.L, _.q, l.Z, a.E, m.N, r.M, c.q, u.q, o.q]

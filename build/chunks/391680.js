@@ -21,8 +21,8 @@ function _() {
         isLoggingGatewayEvents: n,
         isLoggingOverlayEvents: _,
         isLoggingAnalyticsEvents: g,
-        isTracingRequests: x,
-        isForcedCanary: A,
+        isTracingRequests: A,
+        isForcedCanary: x,
         isAxeEnabled: h,
         preventPopoutClose: p,
         onlyShowPreviewAppCollections: f,
@@ -63,10 +63,10 @@ function _() {
         }, "always-deliver"), (0, i.jsx)(l.sLh, {
             id: "forced-canary",
             label: "Forced Canary",
-            checked: A,
+            checked: x,
             action: () => {
                 (0, a.x)({
-                    canary: !A
+                    canary: !x
                 })
             }
         }, "forced-canary"), (0, i.jsx)(l.sLh, {
@@ -124,10 +124,10 @@ function _() {
         }, "analytics-events"), (0, i.jsx)(l.sLh, {
             id: "tracing-requests",
             label: "Tracing Requests",
-            checked: x,
+            checked: A,
             action: () => {
                 (0, a.x)({
-                    trace: !x
+                    trace: !A
                 })
             }
         }, "tracing-requests"), (0, i.jsx)(l.sLh, {

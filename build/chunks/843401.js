@@ -15,27 +15,27 @@ var i = n(627968),
     m = n(942405),
     _ = n(652215),
     g = n(985018),
-    x = n(933230);
+    A = n(933230);
 
-function A(e) {
+function x(e) {
     let {
         game: t,
         application: n
     } = e;
     return null == t || null == n ? (0, i.jsx)("div", {
-        className: x.zc,
+        className: A.zc,
         children: (0, i.jsx)(r.EpV, {
             size: "sm",
             color: r.LU0.colors.TEXT_FEEDBACK_WARNING
         })
     }) : (0, i.jsxs)("div", {
-        className: x.nt,
+        className: A.nt,
         children: [(0, i.jsx)(d.A, {
             game: n,
             pid: t.pid,
             size: d.M.MEDIUM
         }), (0, i.jsx)("div", {
-            className: x.Am,
+            className: A.Am,
             children: (0, i.jsx)(r.EpV, {
                 size: "sm",
                 color: r.LU0.colors.TEXT_FEEDBACK_WARNING
@@ -70,12 +70,12 @@ function p(e) {
         runningGameApplication: o
     } = h(n);
     return s ? (0, i.jsxs)("div", {
-        className: l()(x.kL, t),
-        children: [(0, i.jsx)(A, {
+        className: l()(A.kL, t),
+        children: [(0, i.jsx)(x, {
             game: a,
             application: o
         }), (0, i.jsxs)("div", {
-            className: x.FS,
+            className: A.FS,
             children: [(0, i.jsx)(r.Text, {
                 variant: "text-sm/medium",
                 color: "text-strong",

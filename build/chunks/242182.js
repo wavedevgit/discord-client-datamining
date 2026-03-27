@@ -23,9 +23,9 @@ var n = r(627968),
     y = r(768570),
     R = r(652215),
     x = r(817207);
-let I = o()("2015-05-15").local();
+let T = o()("2015-05-15").local();
 
-function T(e) {
+function I(e) {
     let {
         items: t,
         navId: r,
@@ -156,7 +156,7 @@ let b = s.forwardRef(function(e, t) {
             tabIndex: -1,
             "aria-activedescendant": `${l}-${c}`,
             className: f.length > 0 ? x.kL : void 0,
-            children: (0, n.jsx)(T, {
+            children: (0, n.jsx)(I, {
                 items: f,
                 navId: l,
                 selectedIndex: c
@@ -206,7 +206,7 @@ let b = s.forwardRef(function(e, t) {
                     })
                 },
                 maxDate: o()().local(),
-                minDate: I,
+                minDate: T,
                 calendarClassName: x.BJ
             })
         })

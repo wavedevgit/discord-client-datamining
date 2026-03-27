@@ -15,8 +15,8 @@ var s = n(503698),
     m = n(326084),
     _ = n(851746),
     g = n(617461),
-    x = n(664654),
-    A = n(303682),
+    A = n(664654),
+    x = n(303682),
     h = n(652215),
     p = n(985018),
     f = n(989348),
@@ -56,7 +56,7 @@ let S = e => {
             className: f.L$,
             children: (() => {
                 let e = [];
-                for (let n = 0; n < x.Z; n++)
+                for (let n = 0; n < A.Z; n++)
                     if (t?.[n] !== void 0) {
                         let s = (0, i.jsx)(S, {
                             user: t[n]
@@ -81,7 +81,7 @@ let S = e => {
             background: f.cq,
             strokeSize: .8,
             ringColorOverrideClassName: f.e0,
-            overlayClassName: t === x.Z ? f.ys : void 0,
+            overlayClassName: t === A.Z ? f.ys : void 0,
             children: (0, i.jsx)(r._V3, {
                 src: T.A,
                 height: 93,
@@ -95,7 +95,7 @@ let S = e => {
             className: t
         } = e, {
             referralSentUsers: s
-        } = (0, x.J)(), o = (0, a.bG)([_.A], () => _.A.getRecipientStatus()), u = (0, a.bG)([_.A], () => _.A.getHasEligibleFriends()), T = o.size === x.Z && [...o.values()].every(e => e === m.aK.REDEEMED), S = o.size === x.Z;
+        } = (0, A.J)(), o = (0, a.bG)([_.A], () => _.A.getRecipientStatus()), u = (0, a.bG)([_.A], () => _.A.getHasEligibleFriends()), T = o.size === A.Z && [...o.values()].every(e => e === m.aK.REDEEMED), S = o.size === A.Z;
         return (0, i.jsxs)("div", {
             className: l()(f.kL, t),
             children: [(0, i.jsx)("div", {
@@ -118,7 +118,7 @@ let S = e => {
                         color: "text-subtle",
                         children: !1 === u ? p.intl.format(p.t["zWhX/Q"], {
                             helpdeskArticle: c.A.getArticleURL(h.MVz.REFERRAL_PROGRAM)
-                        }) : s.length === x.Z ? !0 === T ? p.intl.format(p.t["1aEjsH"], {
+                        }) : s.length === A.Z ? !0 === T ? p.intl.format(p.t["1aEjsH"], {
                             helpdeskArticle: c.A.getArticleURL(h.MVz.REFERRAL_PROGRAM)
                         }) : p.intl.format(p.t["+u3AOO"], {
                             helpdeskArticle: c.A.getArticleURL(h.MVz.REFERRAL_PROGRAM)
@@ -164,7 +164,7 @@ let S = e => {
                             })
                         })
                     })({
-                        startingScreen: A.SelectFriendsModalScreens.SELECT_FRIENDS,
+                        startingScreen: x.SelectFriendsModalScreens.SELECT_FRIENDS,
                         analyticsLocations: []
                     })
                 })]

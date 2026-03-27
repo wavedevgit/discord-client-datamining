@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(968898),
     _ = n(95701),
     g = n(427157),
-    x = n(288737),
-    A = n(555528),
+    A = n(288737),
+    x = n(555528),
     h = n(287809),
     p = n(256415),
     f = n(403362),
@@ -30,7 +30,7 @@ function b(e) {
         i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
         s = "456" + Math.floor(1e6 * Math.random());
     return {
-        voiceState: new x.A({
+        voiceState: new A.A({
             channelId: "123",
             userId: s,
             sessionId: "789",
@@ -78,15 +78,15 @@ function C() {
             displayNameMode: p.default.getDisplayNameMode(),
             displayUserMode: p.default.getDisplayUserMode()
         })),
-        [x] = s.useState(() => [b(S.intl.string(S.t.C0ZDvo), !0, !1), b(S.intl.string(S.t.iOtj8E), !1, !1, !0), b(S.intl.string(S.t["0oqNgL"]), !1, !0)]),
-        C = (0, r.bG)([d.A, A.A], () => {
+        [A] = s.useState(() => [b(S.intl.string(S.t.C0ZDvo), !0, !1), b(S.intl.string(S.t.iOtj8E), !1, !1, !0), b(S.intl.string(S.t["0oqNgL"]), !1, !0)]),
+        C = (0, r.bG)([d.A, x.A], () => {
             let e = d.A.getWidgetByType(T.uss.VOICE_V3);
             if (null == e) return null;
-            let t = A.A.getWidget(e.id);
+            let t = x.A.getWidget(e.id);
             return null != t && (0, c.ZO)(t) ? t : null
         }),
         v = C?.meta?.voiceStatesMaxShown ?? 8,
-        N = [null != t ? ((e = b(t.username)).user = t, e) : null, ...x].filter(f.Vq),
+        N = [null != t ? ((e = b(t.username)).user = t, e) : null, ...A].filter(f.Vq),
         I = [new Map(N.map(e => [e.user.id, e])), N.map(e => e.user.id)],
         j = (0, i.jsx)(o.NPJ, {
             theme: T.NJ8.MIDNIGHT,

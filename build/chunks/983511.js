@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(793574),
     _ = n(688810),
     g = n(531260),
-    x = n(235986),
-    A = n(543767),
+    A = n(235986),
+    x = n(543767),
     h = n(253390),
     p = n(43594),
     f = n(735164),
@@ -124,14 +124,14 @@ function G(e) {
         }
     }), {
         analyticsLocations: M
-    } = (0, _.Ay)(), [U] = (0, A.Kq)({
+    } = (0, _.Ay)(), [U] = (0, x.Kq)({
         subscriptionId: t.id,
         renewal: !0,
         currency: t.currency,
         paymentSourceId: t.paymentSourceId,
         analyticsLocations: M,
         analyticsLocation: m.A.GUILD_BOOST_SLOT_CANCELLATION_MODAL_CURRENT_INVOICE_PREVIEW
-    }), k = null != G ? (0, N.Om)(t, C[0]?.quantity ?? 0, G.id) : null, [w] = (0, A.Kq)({
+    }), k = null != G ? (0, N.Om)(t, C[0]?.quantity ?? 0, G.id) : null, [w] = (0, x.Kq)({
         subscriptionId: t.id,
         items: k,
         renewal: !0,
@@ -201,8 +201,8 @@ function G(e) {
             })]
         }), (0, i.jsxs)(d.jlY, {
             "data-migration-pending": !0,
-            align: x.A.Align.CENTER,
-            justify: x.A.Justify.BETWEEN,
+            align: A.A.Align.CENTER,
+            justify: A.A.Justify.BETWEEN,
             children: [(0, i.jsx)(d.Button, {
                 variant: "critical-primary",
                 text: R.intl.string(R.t["/AS/gM"]),
@@ -265,7 +265,7 @@ function U(e) {
     }, []);
     let r = (0, o.bG)([C.A], () => C.A.getPremiumTypeSubscription()),
         u = (0, g.A)(),
-        [x, A] = s.useState(1),
+        [A, x] = s.useState(1),
         h = "control" === (0, p.D)("GuildBoostSlotCancellationModal"),
         {
             analyticsLocations: f
@@ -274,14 +274,14 @@ function U(e) {
         "data-migration-pending": !0,
         children: (0, i.jsx)(d.y$y, {})
     });
-    else switch (x) {
+    else switch (A) {
         case 1:
             t = (0, i.jsx)(P, {
                 premiumSubscription: r,
                 fractionalPremiumInfo: u,
                 isInventory: null == n.premiumGuildSubscription,
                 showImage: h,
-                onNext: () => A(2),
+                onNext: () => x(2),
                 onClose: a,
                 transitionState: l
             });
@@ -295,8 +295,8 @@ function U(e) {
                     premiumSubscription: r,
                     guildBoostSlotId: n.id,
                     fractionalPremiumInfo: u,
-                    onBack: () => A(1),
-                    onNext: () => A(3),
+                    onBack: () => x(1),
+                    onNext: () => x(3),
                     onClose: a
                 })
             });
@@ -311,7 +311,7 @@ function U(e) {
             });
             break;
         default:
-            throw Error(`Unexpected step: ${x}`)
+            throw Error(`Unexpected step: ${A}`)
     }
     return (0, i.jsx)(_.f5, {
         value: f,

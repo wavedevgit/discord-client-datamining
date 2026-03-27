@@ -17,13 +17,13 @@ var i = n(627968),
 function g() {
     let e = (0, o.XQ)(),
         [t, n] = s.useState(!1),
-        [g, x] = s.useState(() => (0, o.TC)()),
-        A = (0, l.bG)([r.Ay], () => r.Ay.getSystemServiceStatus("input-service")),
+        [g, A] = s.useState(() => (0, o.TC)()),
+        x = (0, l.bG)([r.Ay], () => r.Ay.getSystemServiceStatus("input-service")),
         h = s.useCallback(async () => {
-            n(!0), g ? await (0, o.z8)("windows-settings") : await (0, o.sL)("windows-settings"), n(!1), x((0, o.TC)())
+            n(!0), g ? await (0, o.z8)("windows-settings") : await (0, o.sL)("windows-settings"), n(!1), A((0, o.TC)())
         }, [g]);
     if (!e) return null;
-    let p = "running" === A.state;
+    let p = "running" === x.state;
     return (0, i.jsxs)("div", {
         className: _.q,
         children: [(0, i.jsxs)("div", {
@@ -65,7 +65,7 @@ function g() {
                             default:
                                 (0, d.xb)(e.state)
                         }
-                    }(A)
+                    }(x)
                 })
             }) : null]
         }), (0, i.jsx)(a.Button, {

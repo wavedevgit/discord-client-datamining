@@ -1,15 +1,15 @@
 /** chunk id: 576060 params = (module,exports,require) **/
-a.d(t, {
-    A: () => i
+r.d(t, {
+    A: () => s
 });
-var r = a(64700),
-    n = a(287809),
-    s = a(657331);
+var a = r(64700),
+    n = r(287809),
+    i = r(657331);
 
-function i() {
-    return (0, r.useCallback)(() => {
+function s() {
+    return (0, a.useCallback)(() => {
         let e = n.default.getCurrentUser();
-        null != e && (0, s.openUserProfileModal)({
+        null != e && (0, i.openUserProfileModal)({
             userId: e.id
         })
     }, [])

@@ -19,15 +19,15 @@ function u(e) {
         useTrailingDecoration: u,
         useTitle: m,
         useSubtitle: _
-    } = t, g = u?.(), x = _?.(), {
-        parentPanelNode: A,
+    } = t, g = u?.(), A = _?.(), {
+        parentPanelNode: x,
         parentSidebarItemNode: h
-    } = (0, a.x)(n), p = m?.(), f = A?.useTitle?.(), T = p ?? f, S = (0, r.q)(t);
-    if (null == A || null == T) return null;
+    } = (0, a.x)(n), p = m?.(), f = x?.useTitle?.(), T = p ?? f, S = (0, r.q)(t);
+    if (null == x || null == T) return null;
     let E = null != h ? h.icon : void 0;
     return (0, i.jsx)(o.U, {
         title: T,
-        description: x,
+        description: A,
         leadingElement: null != E && (0, i.jsx)("div", {
             className: c.z,
             children: (0, i.jsx)(E, {

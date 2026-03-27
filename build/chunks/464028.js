@@ -1,6 +1,6 @@
 /** chunk id: 464028 params = (module,exports,require) **/
 n.d(t, {
-    f: () => x
+    f: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -15,7 +15,7 @@ var i = n(627968),
     _ = n(985018),
     g = n(338425);
 
-function x() {
+function A() {
     let e = (0, a.WX)(),
         t = s.useMemo(() => [{
             id: "explicit-media-redaction",

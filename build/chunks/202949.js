@@ -15,29 +15,29 @@ var i = n(735438),
     m = n(954571),
     _ = n(350535),
     g = n(780964),
-    x = n(652215),
-    A = n(672396),
+    A = n(652215),
+    x = n(672396),
     h = n(985018);
 let p = T(null);
 
 function f() {
     var e;
     let t = T(p);
-    e = p, s().isEqual(s().omit(t, "old_enabled"), s().omit(e, "old_enabled")) || (m.default.track(x.HAw.OVERLAY_SETTINGS_UPDATED, {
+    e = p, s().isEqual(s().omit(t, "old_enabled"), s().omit(e, "old_enabled")) || (m.default.track(A.HAw.OVERLAY_SETTINGS_UPDATED, {
         ...t
     }), p = t)
 }
 
 function T(e) {
     let t = u.default.getNotificationPositionMode(),
-        n = t !== x.G6Q.DISABLED,
+        n = t !== A.G6Q.DISABLED,
         i = d.Ay.getOverlayKeybind(),
         s = d.Ay.getOverlayChatKeybind();
     return {
         enabled: c.default.enabled,
         notifications_enabled: n,
         notifications_position: n ? t : null,
-        text_notifications_mode: o.A.isNotificationDisabled(A.KS.TextChat) ? "DISABLED" : "ENABLED",
+        text_notifications_mode: o.A.isNotificationDisabled(x.KS.TextChat) ? "DISABLED" : "ENABLED",
         hotkey: null != i ? (0, _.dI)(i.shortcut) : null,
         text_activation_hotkey: null != s ? (0, _.dI)(s.shortcut) : null,
         text_opacity_slider: u.default.getTextWidgetOpacity(),

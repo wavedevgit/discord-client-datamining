@@ -1,6 +1,6 @@
 /** chunk id: 943670 params = (module,exports,require) **/
 n.d(t, {
-    I: () => x
+    I: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -16,7 +16,7 @@ var c = n(933297),
     _ = n(985018),
     g = n(842130);
 
-function x() {
+function A() {
     let e = (0, r.uM)(),
         t = (0, o.vx)(),
         n = s.useCallback(() => {
@@ -24,14 +24,14 @@ function x() {
                 recipientIds: t
             }), (0, d.N)(m.YA.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE, m.YX.LEARN_MORE)
         }, [t]),
-        x = s.useCallback(() => {
+        A = s.useCallback(() => {
             (0, d.N)(m.YA.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE, m.YX.VIEWED)
         }, []);
     return s.useMemo(() => {
         if (e) return {
             type: c.lT.INLINE_NOTICE,
             noticeType: "info",
-            trackView: x,
+            trackView: A,
             useText: () => _.intl.format(g.default.i284fU, {
                 hook: (e, t) => (0, i.jsx)(l.MzZ, {
                     onClick: n,
@@ -40,5 +40,5 @@ function x() {
                 count: t.length
             })
         }
-    }, [n, e, t.length, x])
+    }, [n, e, t.length, A])
 }

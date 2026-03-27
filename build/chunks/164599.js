@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(954571),
     _ = n(927578),
     g = n(919395),
-    x = n(128450),
-    A = n(212168),
+    A = n(128450),
+    x = n(212168),
     h = n(652215),
     p = n(788868),
     f = n(985018),
@@ -47,9 +47,9 @@ function S(e) {
         })
     }, [I, N]);
     let R = C ? o.wLn : r.$n;
-    return (0, i.jsx)(x.A, {
+    return (0, i.jsx)(A.A, {
         forcedDivider: b,
-        borderType: A.i.PREMIUM,
+        borderType: x.i.PREMIUM,
         hasBackground: !0,
         title: E,
         showBorder: v,

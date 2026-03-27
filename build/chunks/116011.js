@@ -1,148 +1,148 @@
 /** chunk id: 116011 params = (module,exports,require) **/
-n.d(t, {
-    o: () => T,
-    w: () => E
+r.d(t, {
+    o: () => C,
+    w: () => R
 });
-var i = n(627968),
-    s = n(64700),
-    l = n(158954),
-    a = n(311907),
-    r = n(397927),
-    o = n(544028),
-    d = n(954571),
-    c = n(975571),
-    u = n(728458),
-    m = n(264779),
-    _ = n(852218),
-    g = n(699443),
-    x = n(652215),
-    A = n(985018),
-    h = n(276478),
-    p = n(870378),
-    f = n(8496);
-let T = {
+var a = r(627968),
+    n = r(64700),
+    i = r(158954),
+    s = r(311907),
+    l = r(397927),
+    o = r(544028),
+    d = r(954571),
+    c = r(975571),
+    u = r(728458),
+    m = r(264779),
+    _ = r(852218),
+    p = r(699443),
+    f = r(652215),
+    b = r(985018),
+    h = r(276478),
+    g = r(870378),
+    x = r(8496);
+let C = {
         [_.KS]: {
-            title: A.t.sfGgOG,
-            body: A.t.igiSKe,
-            bodyWithExpiration: A.t.w8CXUl,
+            title: b.t.sfGgOG,
+            body: b.t.igiSKe,
+            bodyWithExpiration: b.t.w8CXUl,
             redemptionURL: "https://steelseries.com/",
             logos: {
-                dark: (0, i.jsx)(g.a1, {}),
-                light: (0, i.jsx)(g.Gn, {})
+                dark: (0, a.jsx)(p.a1, {}),
+                light: (0, a.jsx)(p.Gn, {})
             },
-            asset: f.A
+            asset: x.A
         },
         [_.Cs]: {
-            title: A.t["9N8obd"],
-            body: A.t["34g+Z3"],
-            bodyWithExpiration: A.t.rqmpXc,
+            title: b.t["9N8obd"],
+            body: b.t["34g+Z3"],
+            bodyWithExpiration: b.t.rqmpXc,
             redemptionURL: "https://www.kontrolfreek.com/",
             logos: {
-                dark: (0, i.jsx)(g.WF, {}),
-                light: (0, i.jsx)(g.s, {})
+                dark: (0, a.jsx)(p.WF, {}),
+                light: (0, a.jsx)(p.s, {})
             },
-            asset: p.A
+            asset: g.A
         }
     },
-    S = e => {
+    A = e => {
         let {
             recurrence: t
-        } = e, n = (0, i.jsx)(l.rOg, {
-            color: r.LU0.colors.CONTROL_CONNECTED_BACKGROUND_DEFAULT
-        }), a = (0, i.jsx)(l.K0, {
-            icon: l.TdU,
+        } = e, r = (0, a.jsx)(i.rOg, {
+            color: l.LU0.colors.CONTROL_CONNECTED_BACKGROUND_DEFAULT
+        }), s = (0, a.jsx)(i.K0, {
+            icon: i.TdU,
             size: "sm",
             variant: "secondary",
             "aria-label": "",
             color: "icon-feedback-positive",
             onClick: () => {
-                navigator.clipboard.writeText(t.code), c(n)
+                navigator.clipboard.writeText(t.code), c(r)
             }
-        }), [o, c] = s.useState(() => a);
-        if (null != t.code) return (0, i.jsx)("div", {
+        }), [o, c] = n.useState(() => s);
+        if (null != t.code) return (0, a.jsx)("div", {
             className: h.oP,
-            children: (0, i.jsxs)("div", {
+            children: (0, a.jsxs)("div", {
                 className: h.t0,
-                children: [(0, i.jsx)("div", {
+                children: [(0, a.jsx)("div", {
                     className: h.cD,
-                    children: (0, i.jsx)(l.EYj, {
+                    children: (0, a.jsx)(i.EYj, {
                         variant: "text-md/medium",
                         color: "text-strong",
                         children: t.code
                     })
-                }), o, (0, i.jsx)(l.$nd, {
+                }), o, (0, a.jsx)(i.$nd, {
                     variant: "overlay-primary",
                     size: "sm",
-                    text: A.intl.formatToPlainString(A.t.DF68t7, {
+                    text: b.intl.formatToPlainString(b.t.DF68t7, {
                         redemptionURL: t.redemptionURL
                     }),
                     onClick: () => {
-                        window.open(t.redemptionURL, "_blank"), d.default.track(x.HAw.RECURRING_PROMOTION_CLAIMED)
+                        window.open(t.redemptionURL, "_blank"), d.default.track(f.HAw.RECURRING_PROMOTION_CLAIMED)
                     }
                 })]
             })
         })
     },
-    E = e => {
+    R = e => {
         var t;
-        let n, d, {
+        let r, d, {
                 recurrence: _,
-                titleClassName: g,
-                showPartnerLogo: p = !1,
-                showPartnerImage: f = !1,
-                countdownBar: E,
-                titleVariant: b = "primary"
+                titleClassName: p,
+                showPartnerLogo: g = !1,
+                showPartnerImage: x = !1,
+                countdownBar: R,
+                titleVariant: v = "primary"
             } = e,
-            [C, v] = s.useState(_.code),
-            [N, I] = s.useState(!1),
-            j = (t = _.partnerId, n = (0, a.bG)([o.A], () => (0, l.Mwr)(o.A.theme)), null == (d = T[t]) ? null : n ? d.logos.dark : d.logos.light),
-            y = null == C;
-        return (0, i.jsxs)("div", {
+            [E, N] = n.useState(_.code),
+            [j, I] = n.useState(!1),
+            y = (t = _.partnerId, r = (0, s.bG)([o.A], () => (0, i.Mwr)(o.A.theme)), null == (d = C[t]) ? null : r ? d.logos.dark : d.logos.light),
+            P = null == E;
+        return (0, a.jsxs)("div", {
             className: h.lA,
-            children: [(0, i.jsxs)("div", {
+            children: [(0, a.jsxs)("div", {
                 className: h.LV,
-                children: [(0, i.jsxs)("div", {
+                children: [(0, a.jsxs)("div", {
                     className: h.JN,
-                    children: [p && j, (0, i.jsxs)("div", {
-                        className: null != g ? `${h.yO} ${g}` : h.yO,
-                        children: [(0, i.jsx)(l.DZT, {
-                            variant: "secondary" === b ? "heading-md/semibold" : "heading-lg/semibold",
+                    children: [g && y, (0, a.jsxs)("div", {
+                        className: null != p ? `${h.yO} ${p}` : h.yO,
+                        children: [(0, a.jsx)(i.DZT, {
+                            variant: "secondary" === v ? "heading-md/semibold" : "heading-lg/semibold",
                             color: "text-strong",
-                            children: A.intl.string(_.title)
-                        }), (0, i.jsx)(l.DZT, {
+                            children: b.intl.string(_.title)
+                        }), (0, a.jsx)(i.DZT, {
                             variant: "heading-sm/medium",
                             color: "text-subtle",
-                            children: N ? A.intl.format(A.t.i2EuFO, {
-                                helpdeskArticle: c.A.getArticleURL(x.MVz.RECURRING_PROMOTION)
-                            }) : y ? A.intl.string(_.body) : A.intl.format(_.bodyWithExpiration, {
+                            children: j ? b.intl.format(b.t.i2EuFO, {
+                                helpdeskArticle: c.A.getArticleURL(f.MVz.RECURRING_PROMOTION)
+                            }) : P ? b.intl.string(_.body) : b.intl.format(_.bodyWithExpiration, {
                                 date: _.endDate
                             })
                         })]
-                    }), y && (N ? (0, i.jsx)(l.$nd, {
-                        icon: l.EpV,
+                    }), P && (j ? (0, a.jsx)(i.$nd, {
+                        icon: i.EpV,
                         variant: "critical-secondary",
                         size: "sm",
                         disabled: !0,
-                        text: A.intl.string(A.t["8LKchl"])
-                    }) : (0, i.jsx)(l.$nd, {
-                        icon: l.XAi,
+                        text: b.intl.string(b.t["8LKchl"])
+                    }) : (0, a.jsx)(i.$nd, {
+                        icon: i.XAi,
                         variant: "overlay-primary",
                         size: "sm",
-                        text: A.intl.string(A.t.vwASIl),
+                        text: b.intl.string(b.t.vwASIl),
                         onClick: () => {
                             (0, m.kd)({
                                 promotionId: _.id,
                                 analyticsLocations: []
                             }).then(e => {
-                                v(e.code)
+                                N(e.code)
                             }).catch(e => {
                                 I(!0), u.A.captureException(e)
                             })
                         }
                     }))]
-                }), f && (0, i.jsx)("div", {
+                }), x && (0, a.jsx)("div", {
                     className: h.R4,
-                    children: (0, i.jsx)(r._V3, {
+                    children: (0, a.jsx)(l._V3, {
                         src: _.asset ?? "",
                         className: h.Ys,
                         width: 100,
@@ -150,10 +150,10 @@ let T = {
                         zoomable: !1
                     })
                 })]
-            }), E, null != C && (0, i.jsx)(S, {
+            }), R, null != E && (0, a.jsx)(A, {
                 recurrence: {
                     ..._,
-                    code: C
+                    code: E
                 }
             })]
         })

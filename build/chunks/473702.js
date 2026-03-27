@@ -1,10 +1,10 @@
 /** chunk id: 473702 params = (module,exports,require) **/
-a.d(t, {
-    T: () => s,
+r.d(t, {
+    T: () => i,
     g: () => n
-}), a(64700);
-var r, n = ((r = {})[r.WHAT_YOU_LOSE = 1] = "WHAT_YOU_LOSE", r[r.CONFIRM = 2] = "CONFIRM", r[r.PREVIEW = 3] = "PREVIEW", r[r.CONFIRM_DISCOUNT = 4] = "CONFIRM_DISCOUNT", r[r.DISCOUNT_APPLIED = 5] = "DISCOUNT_APPLIED", r[r.PAUSE_SELECT = 6] = "PAUSE_SELECT", r[r.PAUSE_CONFIRM = 7] = "PAUSE_CONFIRM", r);
-let s = {
+}), r(64700);
+var a, n = ((a = {})[a.WHAT_YOU_LOSE = 1] = "WHAT_YOU_LOSE", a[a.CONFIRM = 2] = "CONFIRM", a[a.PREVIEW = 3] = "PREVIEW", a[a.CONFIRM_DISCOUNT = 4] = "CONFIRM_DISCOUNT", a[a.DISCOUNT_APPLIED = 5] = "DISCOUNT_APPLIED", a[a.PAUSE_SELECT = 6] = "PAUSE_SELECT", a[a.PAUSE_CONFIRM = 7] = "PAUSE_CONFIRM", a);
+let i = {
     1: "What You're Losing",
     2: "Confirm Cancellation",
     3: "Preview Updated Subscription",

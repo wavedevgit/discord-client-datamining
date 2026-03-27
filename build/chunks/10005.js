@@ -12,7 +12,7 @@ function o(e) {
     let {
         onError: t,
         onSuccess: n
-    } = e ?? {}, [o, d] = i.useState(!1), [c, u] = i.useState(!1), [m, _] = i.useState(!1), [g, x] = i.useState(!1), [A, h] = i.useState(!1), [p, f] = i.useState(!1), [T, S] = i.useState(!1), [E, b] = i.useState(!1), C = o || c || m || g || p || E, v = i.useCallback(async e => {
+    } = e ?? {}, [o, d] = i.useState(!1), [c, u] = i.useState(!1), [m, _] = i.useState(!1), [g, A] = i.useState(!1), [x, h] = i.useState(!1), [p, f] = i.useState(!1), [T, S] = i.useState(!1), [E, b] = i.useState(!1), C = o || c || m || g || p || E, v = i.useCallback(async e => {
         if (!C) {
             d(!0);
             try {
@@ -50,18 +50,18 @@ function o(e) {
         }
     }, [C, t, n]), j = i.useCallback(async e => {
         if (!C) {
-            x(!0);
+            A(!0);
             try {
                 await (0, l.e$)(e), n?.()
             } catch (n) {
                 let e = new s.LG(n);
                 t?.(e)
             } finally {
-                x(!1)
+                A(!1)
             }
         }
     }, [C, t, n]), y = i.useCallback(async () => {
-        if (!A) {
+        if (!x) {
             h(!0);
             try {
                 await (0, l.HB)(), n?.()
@@ -72,7 +72,7 @@ function o(e) {
                 h(!1)
             }
         }
-    }, [A, t, n]), O = i.useCallback(async e => {
+    }, [x, t, n]), O = i.useCallback(async e => {
         if (!T) {
             S(!0);
             try {
@@ -126,7 +126,7 @@ function o(e) {
         isDeclineLoading: c,
         isDisconnectLoading: m,
         isCancelLoading: g,
-        isGetLinkCodeLoading: A,
+        isGetLinkCodeLoading: x,
         isSelectTeenUserLoading: T,
         isRequestingLink: p,
         isMoreLoading: E

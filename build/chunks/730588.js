@@ -21,8 +21,8 @@ function g(e) {
         errors: n,
         onBannerChange: s,
         guildId: g,
-        className: x,
-        disabled: A = !1,
+        className: A,
+        disabled: x = !1,
         showPremiumIcon: h = !0,
         isTryItOut: p = !1,
         forcedDivider: f,
@@ -31,11 +31,11 @@ function g(e) {
         newestAnalyticsLocation: S
     } = (0, o.Ay)(), E = T ? r.wLn : a.$n;
     return (0, i.jsx)(c.A, {
-        className: x,
+        className: A,
         title: m.intl.string(m.t.Vgdusv),
         showPremiumIcon: h,
         errors: n,
-        disabled: A,
+        disabled: x,
         forcedDivider: f,
         children: (0, i.jsxs)("div", {
             className: _.NC,

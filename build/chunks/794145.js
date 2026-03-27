@@ -15,8 +15,8 @@ var i = n(421380),
     m = n(612025),
     _ = n(445176),
     g = n(112469),
-    x = n(137675),
-    A = n(542457),
+    A = n(137675),
+    x = n(542457),
     h = n(355097),
     p = n(652215),
     f = n(985018);
@@ -49,7 +49,7 @@ let T = () => (0, _.e)() ? f.intl.string(f.t.PMsfcH) : f.intl.string(f.t.RAQUSN)
             let t = m.xk.getState().selectedGuildId;
             if (t === m.YG) {
                 var n;
-                n = !e, (0, x.O)({
+                n = !e, (0, A.O)({
                     header: f.intl.string(f.t["uUr+GR"]),
                     body: f.intl.string(f.t.hjGJBp),
                     confirmText: f.intl.string(f.t.gm1Vej),
@@ -65,7 +65,7 @@ let T = () => (0, _.e)() ? f.intl.string(f.t.PMsfcH) : f.intl.string(f.t.RAQUSN)
             } else {
                 let n = (0, o.Tb)();
                 e ? n.delete(t) : n.add(t), c.$s.updateSetting(Array.from(n)), r.default.track(p.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
-                    action: A.m.DIRECT_MESSAGES_TOGGLE,
+                    action: x.m.DIRECT_MESSAGES_TOGGLE,
                     ingress: h.bf.USER_SETTINGS_PRIVACY_SAFETY,
                     guild_id: t
                 })

@@ -15,8 +15,8 @@ var s = n(990078),
     m = n(927578),
     _ = n(580630),
     g = n(511484),
-    x = n(811611),
-    A = n(473702),
+    A = n(811611),
+    x = n(473702),
     h = n(788868),
     p = n(652215),
     f = n(985018),
@@ -48,7 +48,7 @@ function b(e) {
             currency: t.currency,
             paymentSourceId: t.paymentSourceId
         }),
-        x = (0, _.$g)(g.amount, g.currency);
+        A = (0, _.$g)(g.amount, g.currency);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(l.Heading, {
             variant: "heading-xl/semibold",
@@ -62,12 +62,12 @@ function b(e) {
             children: a ? f.intl.format(f.t["3ZiutU"], {
                 percent: n.percentage,
                 numMonths: n.duration,
-                regularPrice: x
+                regularPrice: A
             }) : f.intl.format(f.t.N43FMx, {
                 numMonths: n.duration,
                 discountedPrice: u,
                 billingPeriod: f.intl.string(f.t.FPybU7),
-                fullPrice: x
+                fullPrice: A
             })
         })]
     })
@@ -124,7 +124,7 @@ let v = function(e) {
             })
         },
         R = m.Ay.getPlanIdFromInvoice(_, g),
-        L = (0, x.ux)(j?.expires_at);
+        L = (0, A.ux)(j?.expires_at);
     return (0, d.m1)(R) ? null : (0, i.jsx)("div", {
         className: T.S6,
         children: (0, i.jsx)(l.hLv, {
@@ -166,7 +166,7 @@ let v = function(e) {
                                 size: "md",
                                 text: f.intl.string(f.t.zrCzVB),
                                 loading: h,
-                                onClick: () => O(A.g.CONFIRM_DISCOUNT)
+                                onClick: () => O(x.g.CONFIRM_DISCOUNT)
                             }) : (0, i.jsxs)("div", {
                                 className: T.qK,
                                 children: [(0, i.jsx)(s.m, {

@@ -30,7 +30,7 @@ function v(n) {
     } = n, d = t.isOwner(_.default.getId()), o = (0, x.A)(t), j = (0, m.A)(t), b = (0, c.A)({
         id: t.id,
         label: p.intl.string(p.t.gFHI3k)
-    }), v = (0, s.A)(t), O = (0, h.y)(t), G = (0, A.A)(t), X = (0, g.A)(t), y = d ? (0, i.jsx)(l.Drp, {
+    }), v = (0, s.A)(t), O = (0, h.y)(t), G = (0, A.A)(t), y = (0, g.A)(t), X = d ? (0, i.jsx)(l.Drp, {
         id: "instant-invites",
         label: p.intl.string(p.t.ngRFjZ),
         action: () => (0, l.mMO)(async () => {
@@ -51,12 +51,10 @@ function v(n) {
         onSelect: a,
         children: [(0, i.jsx)(l.rXV, {
             children: o
-        }), (0, i.jsx)(l.rXV, {
-            children: X
-        }), (0, i.jsx)(l.rXV, {
-            children: G
         }), (0, i.jsxs)(l.rXV, {
-            children: [y, (0, i.jsx)(l.Drp, {
+            children: [y, G]
+        }), (0, i.jsxs)(l.rXV, {
+            children: [X, (0, i.jsx)(l.Drp, {
                 id: "edit-gdm",
                 label: p.intl.string(p.t["5Q9+/L"]),
                 action: () => (0, f.U)(t.id, u.A.GROUP_DM_CONTEXT_MENU)
@@ -81,7 +79,7 @@ function O(n) {
     } = n, o = t.isOwner(_.default.getId()), A = (0, x.A)(t), g = (0, m.A)(t), b = (0, j.A)(t, a), v = (0, c.A)({
         id: t.id,
         label: p.intl.string(p.t.gFHI3k)
-    }), O = (0, s.A)(t), G = (0, h.m)(t), X = (0, h.y)(t), y = o ? (0, i.jsx)(l.Drp, {
+    }), O = (0, s.A)(t), G = (0, h.m)(t), y = (0, h.y)(t), X = o ? (0, i.jsx)(l.Drp, {
         id: "instant-invites",
         label: p.intl.string(p.t.ngRFjZ),
         action: () => (0, l.mMO)(async () => {
@@ -105,7 +103,7 @@ function O(n) {
         }), (0, i.jsx)(l.rXV, {
             children: G
         }), (0, i.jsxs)(l.rXV, {
-            children: [y, (0, i.jsx)(l.Drp, {
+            children: [X, (0, i.jsx)(l.Drp, {
                 id: "edit-gdm",
                 label: p.intl.string(p.t["5Q9+/L"]),
                 action: () => (0, f.U)(t.id, u.A.GROUP_DM_CONTEXT_MENU)
@@ -115,7 +113,7 @@ function O(n) {
         }), (0, i.jsx)(l.rXV, {
             children: g
         }), (0, i.jsxs)(l.rXV, {
-            children: [X, b]
+            children: [y, b]
         }), (0, i.jsx)(l.rXV, {
             children: v
         })]

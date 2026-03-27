@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(793574),
     _ = n(688810),
     g = n(726649),
-    x = n(611924),
-    A = n(961250),
+    A = n(611924),
+    x = n(961250),
     h = n(320118),
     p = n(622543),
     f = n(576622),
@@ -43,12 +43,12 @@ let k = e => {
     } = e, n = (0, E.ds)(), l = (0, r.zy)();
     s.useEffect(() => {
         u.h.wait(async () => {
-            let e = [(0, A.Ay)()];
+            let e = [(0, x.Ay)()];
             null != t && e.push((0, f.A)(t)), await Promise.all(e)
         })
     }, [t]), s.useEffect(() => {
         Z(!0)
-    }, []), (0, C.j)(), (0, x.P)(g.b);
+    }, []), (0, C.j)(), (0, A.P)(g.b);
     let k = s.useRef(null),
         w = s.useRef(null),
         V = (0, o.bG)([T.A], () => T.A.getPremiumTypeSubscription()),

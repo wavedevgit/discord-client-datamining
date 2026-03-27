@@ -11,8 +11,8 @@ n.d(t, {
     WI: () => r,
     bd: () => _,
     dT: () => c,
-    eA: () => x,
-    gN: () => A,
+    eA: () => A,
+    gN: () => x,
     hl: () => s,
     i4: () => o,
     sN: () => E,
@@ -86,11 +86,11 @@ function g(e, t) {
     return l(e, i.Z6.LIST, t)
 }
 
-function x(e, t) {
+function A(e, t) {
     return l(e, i.Z6.NESTED_PANEL, t)
 }
 
-function A(e, t) {
+function x(e, t) {
     return l(e, i.Z6.RELATED, t)
 }
 

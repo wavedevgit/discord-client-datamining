@@ -19,13 +19,13 @@ function g(e) {
         n = (0, a.bG)([c.A], () => c.A.getSubscriptionListingForPlan(t)),
         s = (0, a.bG)([c.A], () => null != n ? c.A.getSubscriptionGroupListingForSubscriptionListing(n.id) : null),
         g = (0, a.bG)([r.A], () => r.A.getGuild(s?.guild_id)),
-        [x, A] = i.useState(!1),
+        [A, x] = i.useState(!1),
         {
             fetchSubscriptionsSettings: h
         } = (0, d.XE)();
     i.useEffect(() => {
-        x && null != g && null == c.A.getSubscriptionSettings(g.id) && h(g.id)
-    }, [x, g, h]);
+        A && null != g && null == c.A.getSubscriptionSettings(g.id) && h(g.id)
+    }, [A, g, h]);
     let p = null == n ? void 0 : function(e) {
         let {
             subscription: t
@@ -44,8 +44,8 @@ function g(e) {
     });
     return {
         guild: g,
-        expanded: x,
-        handleToggleExpanded: () => A(e => !e),
+        expanded: A,
+        handleToggleExpanded: () => x(e => !e),
         listing: n,
         groupListing: s,
         subscriptionInfo: p

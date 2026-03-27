@@ -47,20 +47,16 @@ function G(n) {
         onSelect: e,
         children: [(0, i.jsx)(l.rXV, {
             children: r
+        }), (0, i.jsxs)(l.rXV, {
+            children: [E, p, c]
         }), (0, i.jsx)(l.rXV, {
-            children: E
-        }), (0, i.jsx)(l.rXV, {
-            children: p
+            children: s
         }), (0, i.jsxs)(l.rXV, {
             children: [v, G ? x : C]
-        }), (0, i.jsx)(l.rXV, {
-            children: c
         }), (0, i.jsx)(l.rXV, {
             children: S
         }), (0, i.jsx)(l.rXV, {
             children: d
-        }), (0, i.jsx)(l.rXV, {
-            children: s
         }), (0, i.jsx)(l.rXV, {
             children: O
         })]

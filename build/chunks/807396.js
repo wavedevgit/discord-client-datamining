@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(397927),
     _ = n(73153),
     g = n(77468),
-    x = n(289498),
-    A = n(736653),
+    A = n(289498),
+    x = n(736653),
     h = n(573648),
     p = n(681819),
     f = n(370480),
@@ -92,8 +92,8 @@ let k = e => {
 };
 
 function w(e) {
-    let t, n, l, a, o, _, x, {
-            onDisconnect: A,
+    let t, n, l, a, o, _, A, {
+            onDisconnect: x,
             account: b,
             theme: v,
             locale: N
@@ -178,7 +178,7 @@ function w(e) {
                         }, {
                             text: M.intl.string(M.t.bsbMVz),
                             onClick: () => {
-                                A(), t.onClose()
+                                x(), t.onClose()
                             },
                             variant: "primary"
                         }],
@@ -285,7 +285,7 @@ function w(e) {
             onChange: function(e) {
                 H(e), g.A.setShowActivity(b.type, b.id, e)
             }
-        })), h.A.get(b.type)?.hasMetadata === !0 && (x = (0, i.jsx)(m.dOG, {
+        })), h.A.get(b.type)?.hasMetadata === !0 && (A = (0, i.jsx)(m.dOG, {
             label: M.intl.string(M.t.FYKGsL),
             checked: 1 === V,
             onChange: function(e) {
@@ -320,7 +320,7 @@ function w(e) {
                     }
                     w(n), g.A.setVisibility(b.type, b.id, n)
                 }
-            }), x, _, o]
+            }), A, _, o]
         })), function() {
             if (b.revoked || b.integrations.length > 0) return (0, i.jsx)(m.cGx, {})
         }(), b.revoked ? (0, i.jsx)(r.po8, {
@@ -367,7 +367,7 @@ function F() {
     let e = (0, p.gn)();
     return (0, i.jsxs)("div", {
         className: U.lA,
-        children: [e.slice(0, 10).map(e => (0, i.jsx)(x.A, {
+        children: [e.slice(0, 10).map(e => (0, i.jsx)(A.A, {
             type: e.type,
             className: U.__invalid_accountButton,
             innerClassName: U.U$
@@ -434,7 +434,7 @@ function z() {
     let e = (0, o.bG)([I.A], () => I.A.hidePersonalInformation),
         t = (0, o.bG)([v.A], () => v.A.isFetching()),
         n = (0, o.bG)([v.A], () => v.A.getAccounts()),
-        s = (0, A.Ay)(),
+        s = (0, x.Ay)(),
         l = (0, o.bG)([O.default], () => O.default.locale);
     return e ? null : (0, i.jsx)(H, {
         fetching: t,

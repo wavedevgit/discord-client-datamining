@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(954571),
     _ = n(45938),
     g = n(652215),
-    x = n(985018);
-class A extends s.Component {
+    A = n(985018);
+class x extends s.Component {
     state = {
         codeInput: "",
         submitting: !1,
@@ -99,18 +99,18 @@ class A extends s.Component {
             isPromoCode: l
         } = this.state;
         return (0, i.jsx)(a.nVY, {
-            label: x.intl.string(x.t["il+VCo"]),
+            label: A.intl.string(A.t["il+VCo"]),
             children: (0, i.jsx)("form", {
                 onSubmit: this.handleSubmit,
                 children: (0, i.jsxs)(a.M_l, {
                     children: [(0, i.jsx)(a.ksK, {
-                        label: x.intl.string(x.t.SeKIoS),
+                        label: A.intl.string(A.t.SeKIoS),
                         type: e ? "password" : "text",
                         value: t,
                         onChange: this.handleChange,
                         placeholder: "WUMP-AAAAA-BBBBB-CCCCC",
-                        error: !l && s ? x.intl.string(x.t.Y11a2u) : null,
-                        helperText: l ? x.intl.format(x.t.gPt3PE, {
+                        error: !l && s ? A.intl.string(A.t.Y11a2u) : null,
+                        helperText: l ? A.intl.format(A.t.gPt3PE, {
                             promoLink: () => {
                                 window.open(`https://discord.com/billing/promotions/${t}`)
                             }
@@ -118,7 +118,7 @@ class A extends s.Component {
                         fullWidth: !0
                     }), (0, i.jsx)(a.Button, {
                         variant: "primary",
-                        text: x.intl.string(x.t.KIpp7M),
+                        text: A.intl.string(A.t.KIpp7M),
                         type: "submit",
                         loading: n
                     })]
@@ -134,7 +134,7 @@ function h() {
     } = (0, o.c)({
         location: "UserSettingsBilling"
     }), t = s.useContext(m.AnalyticsContext), n = (0, l.bG)([u.A], () => u.A.enabled);
-    return (0, i.jsx)(A, {
+    return (0, i.jsx)(x, {
         analyticsContext: t,
         obscureInput: n,
         acceptGiftCardRedemption: e

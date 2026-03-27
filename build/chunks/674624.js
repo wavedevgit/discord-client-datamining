@@ -15,8 +15,8 @@ var i, s = n(627968),
     m = n(259065),
     _ = n(206835),
     g = n(976860),
-    x = n(591179),
-    A = n(576060),
+    A = n(591179),
+    x = n(576060),
     h = n(780964),
     p = n(358776),
     f = n(840065),
@@ -51,7 +51,7 @@ let G = [{
 
 function M() {
     let e = (0, d.DP)(),
-        t = (0, x.X)("useFavoritesPerkCards"),
+        t = (0, A.X)("useFavoritesPerkCards"),
         n = (0, T.Lh)(),
         i = (0, S.N)(n)?.standard ?? null,
         {
@@ -86,7 +86,7 @@ function M() {
                 analyticsLocations: D
             })
         }, [D]),
-        B = (0, A.A)(),
+        B = (0, x.A)(),
         F = (0, l.useCallback)(() => {
             (0, f.openUserSettings)(h.X.PROFILE_PANEL, {
                 analyticsLocations: D

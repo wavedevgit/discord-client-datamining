@@ -1,57 +1,57 @@
 /** chunk id: 194509 params = (module,exports,require) **/
-a.d(t, {
-    A: () => b,
+r.d(t, {
+    A: () => f,
     U: () => p
 });
-var r = a(627968);
-a(64700);
-var n = a(503698),
-    s = a.n(n),
-    i = a(582754),
-    l = a(421380),
-    d = a(397927),
-    o = a(736653),
-    c = a(783420),
-    u = a(788868),
-    _ = a(985018),
-    m = a(620508);
-let p = e => e === u.pe.TIER_0 ? _.intl.string(_.t.rk4Uu8) : _.intl.string(_.t.Ve9Ge6),
-    b = e => {
+var a = r(627968);
+r(64700);
+var n = r(503698),
+    i = r.n(n),
+    s = r(582754),
+    l = r(421380),
+    o = r(397927),
+    d = r(736653),
+    c = r(783420),
+    u = r(788868),
+    m = r(985018),
+    _ = r(620508);
+let p = e => e === u.pe.TIER_0 ? m.intl.string(m.t.rk4Uu8) : m.intl.string(m.t.Ve9Ge6),
+    f = e => {
         let {
             className: t,
-            textOptions: a,
+            textOptions: r,
             color: n,
             look: u,
-            hideIcon: _,
-            subscriptionTier: b,
-            premiumModalAnalyticsLocation: f,
-            giftMessage: g,
-            onClick: h
-        } = e, A = (0, o.Ay)(), x = p(b);
-        return (0, r.jsx)(c.A, {
+            hideIcon: m,
+            subscriptionTier: f,
+            premiumModalAnalyticsLocation: b,
+            giftMessage: h,
+            onClick: g
+        } = e, x = (0, d.Ay)(), C = p(f);
+        return (0, a.jsx)(c.A, {
             isGift: !0,
-            subscriptionTier: b,
-            premiumModalAnalyticsLocation: f,
-            giftMessage: g,
-            onClick: h,
+            subscriptionTier: f,
+            premiumModalAnalyticsLocation: b,
+            giftMessage: h,
+            onClick: g,
             children: e => {
                 let {
-                    onClick: o
+                    onClick: d
                 } = e;
-                return (0, r.jsxs)(l.$n, {
+                return (0, a.jsxs)(l.$n, {
                     "data-migration-pending": !0,
-                    innerClassName: m.Nq,
-                    color: n ?? ((0, i.Mw)(A) ? l.XD.WHITE : l.XD.BRAND),
+                    innerClassName: _.Nq,
+                    color: n ?? ((0, s.Mw)(x) ? l.XD.WHITE : l.XD.BRAND),
                     look: u ?? l.pR.OUTLINED,
-                    className: s()(t, m.xP),
-                    onClick: o,
-                    children: [!_ && (0, r.jsx)(d.okO, {
+                    className: i()(t, _.xP),
+                    onClick: d,
+                    children: [!m && (0, a.jsx)(o.okO, {
                         size: "md",
                         color: "currentColor",
-                        className: m.ez
-                    }), (0, r.jsx)("span", {
-                        className: s()(m._d, a?.textClassName),
-                        children: a?.textOverride ?? x
+                        className: _.ez
+                    }), (0, a.jsx)("span", {
+                        className: i()(_._d, r?.textClassName),
+                        children: r?.textOverride ?? C
                     })]
                 })
             }

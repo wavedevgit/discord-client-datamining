@@ -17,8 +17,8 @@ var s = n(311907),
     m = n(792656),
     _ = n(954571),
     g = n(12901),
-    x = n(652215),
-    A = n(788868),
+    A = n(652215),
+    x = n(788868),
     h = n(985018),
     p = n(622326);
 let f = () => {
@@ -27,11 +27,11 @@ let f = () => {
 
 function T() {
     return (0, i.jsx)(m.A, {
-        subscriptionTier: A.pe.TIER_2,
+        subscriptionTier: x.pe.TIER_2,
         defaultTextOverride: h.intl.string(h.t.mr4K7D),
         premiumModalAnalyticsLocation: {
-            object: x.ZSU.BUTTON_CTA,
-            objectType: x.AnalyticsObjectTypes.BUY
+            object: A.ZSU.BUTTON_CTA,
+            objectType: A.AnalyticsObjectTypes.BUY
         },
         fullWidth: !0
     })
@@ -41,8 +41,8 @@ let S = () => {
         analyticsLocations: e
     } = (0, o.Ay)(r.A.USER_SETTINGS), t = (0, s.bG)([d.A], () => d.A.isUpsellPreview);
     return (0, a.Ay)(() => {
-        t && _.default.track(x.HAw.PREMIUM_UPSELL_VIEWED, {
-            type: A.e.APP_ICON_UPSELL,
+        t && _.default.track(A.HAw.PREMIUM_UPSELL_VIEWED, {
+            type: x.e.APP_ICON_UPSELL,
             location_stack: e
         })
     }), (0, i.jsx)("div", {
