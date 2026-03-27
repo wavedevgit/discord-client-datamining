@@ -436,10 +436,12 @@ function z() {
         n = (0, o.bG)([v.A], () => v.A.getAccounts()),
         s = (0, x.Ay)(),
         l = (0, o.bG)([O.default], () => O.default.locale);
-    return e ? null : (0, i.jsx)(H, {
-        fetching: t,
-        accounts: n,
-        theme: s,
-        locale: l
+    return e ? null : (0, i.jsxs)(i.Fragment, {
+        children: [null, (0, i.jsx)(H, {
+            fetching: t,
+            accounts: n,
+            theme: s,
+            locale: l
+        })]
     })
 }

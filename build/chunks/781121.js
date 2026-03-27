@@ -1,32 +1,33 @@
 /** chunk id: 781121 params = (module,exports,require) **/
 n.d(t, {
-    H: () => c
+    H: () => d
 });
 var r = n(64700),
-    i = n(975571),
-    s = n(651892),
-    a = n(901406),
-    l = n(545986),
-    o = n(654487),
-    u = n(652215);
+    i = n(397927),
+    s = n(975571),
+    a = n(651892),
+    l = n(901406),
+    o = n(545986),
+    u = n(654487),
+    c = n(652215);
 
-function c(e) {
+function d(e) {
     let {
         quest: t,
         onClose: n,
-        sourceQuestContent: c,
-        impressionId: d
+        sourceQuestContent: d,
+        impressionId: m
     } = e;
     return r.useCallback(async (e, r) => {
-        if (t.id === o.Fw) return void window.open(i.A.getArticleURL(u.MVz.VIRTUAL_CURRENCY_LEARN_MORE));
+        if (t.id === u.Fw) return void window.open(s.A.getArticleURL(c.MVz.VIRTUAL_CURRENCY_LEARN_MORE));
         if (null != n) {
-            let e = (0, s.Jx)(t.config);
-            await (0, l.f7)(e) && n()
-        }(0, a.pu)(t, {
+            let e = (0, a.Jx)(t.config);
+            await (0, o.f7)(e) && (n(), (0, i.s7G)())
+        }(0, l.pu)(t, {
             content: e,
             ctaContent: r,
-            impressionId: d,
-            sourceQuestContent: c
+            impressionId: m,
+            sourceQuestContent: d
         })
-    }, [t, n, c, d])
+    }, [t, n, d, m])
 }
