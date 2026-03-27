@@ -1,18 +1,19 @@
 /** chunk id: 935094 params = (module,exports,require) **/
-n.d(t, {
-    f: () => l
+"use strict";
+r.d(t, {
+    f: () => s
 });
-var a = n(64700),
-    i = n(575593);
-let l = e => {
-    let [t, n] = (0, a.useState)(null);
+var n = r(64700),
+    i = r(575593);
+let s = e => {
+    let [t, r] = (0, n.useState)(null);
     return {
         previewingVariantIndex: t,
-        handleEntering: (0, a.useCallback)(t => {
-            e?.type !== i.R.VARIANTS_GROUP || n(t)
+        handleEntering: (0, n.useCallback)(t => {
+            e?.type !== i.R.VARIANTS_GROUP || r(t)
         }, [e?.type]),
-        handleLeaving: (0, a.useCallback)(() => {
-            e?.type !== i.R.VARIANTS_GROUP || n(null)
+        handleLeaving: (0, n.useCallback)(() => {
+            e?.type !== i.R.VARIANTS_GROUP || r(null)
         }, [e?.type])
     }
 }

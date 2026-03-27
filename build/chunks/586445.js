@@ -8,8 +8,8 @@ var n = r(627968),
     s = r(397927),
     a = r(954571),
     l = r(957565),
-    c = r(758836),
-    o = r(652215),
+    o = r(758836),
+    c = r(652215),
     d = r(985018);
 
 function u(e) {
@@ -17,10 +17,10 @@ function u(e) {
         skuId: t,
         tab: r
     } = e, u = i.useCallback(() => {
-        a.default.track(o.HAw.COLLECTIBLES_SHARE_LINK_BUTTON_CLICKED, {
+        a.default.track(c.HAw.COLLECTIBLES_SHARE_LINK_BUTTON_CLICKED, {
             sku_id: t
         });
-        let e = `${location.protocol}//${location.host}${o.BVt.COLLECTIBLES_SHOP}${(0,c.cw)(r)?`?tab=${r}`:""}#itemSkuId=${t}`;
+        let e = `${location.protocol}//${location.host}${c.BVt.COLLECTIBLES_SHOP}${(0,o.cw)(r)?`?tab=${r}`:""}#itemSkuId=${t}`;
         (0, l.C)(e, () => (0, s.showToast)((0, s.createToast)(d.intl.string(d.t["L/PwZf"]), s.ToastType.SUCCESS)))
     }, [t, r]);
     return (0, n.jsx)(s.K0, {

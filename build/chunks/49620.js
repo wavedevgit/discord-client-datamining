@@ -9,8 +9,8 @@ var i = r(503698),
     s = r.n(i),
     a = r(990078),
     l = r(397927),
-    c = r(985018),
-    o = r(713087);
+    o = r(985018),
+    c = r(713087);
 let d = e => {
     let {
         className: t,
@@ -19,24 +19,24 @@ let d = e => {
     return r ? (0, n.jsx)(a.m, {
         position: "top",
         align: "left",
-        text: c.intl.string(c.t.y1VWkZ),
+        text: o.intl.string(o.t.y1VWkZ),
         children: (0, n.jsxs)("div", {
-            className: s()(o.GX, t),
+            className: s()(c.GX, t),
             children: [(0, n.jsx)("span", {
-                className: o.P0,
+                className: c.P0,
                 children: (0, n.jsx)(l.mir, {
                     size: "md",
                     color: "currentColor",
-                    className: o.G
+                    className: c.G
                 })
             }), (0, n.jsx)(l.Text, {
                 variant: "text-md/semibold",
-                children: c.intl.string(c.t.BEjTij)
+                children: o.intl.string(o.t.BEjTij)
             })]
         })
     }) : (0, n.jsx)(l.Text, {
         variant: "text-md/semibold",
         className: t,
-        children: c.intl.string(c.t["6cfuDj"])
+        children: o.intl.string(o.t["6cfuDj"])
     })
 }

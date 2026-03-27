@@ -12,29 +12,29 @@ var l = r(397927),
     o = r(623373),
     c = r(878112),
     d = r(561769),
-    f = r(347722),
+    h = r(347722),
     m = r(758836),
-    h = r(985018);
-let x = e => {
+    x = r(985018);
+let f = e => {
         let {
             product: t,
             selectedVariantIndex: r,
             cardRef: u,
             onClick: o,
-            icon: x,
+            icon: f,
             prioritizedCurrency: p,
             onClickAnalytics: g
-        } = e, A = (0, a.Mk)(), C = A?.tab, I = (0, s.uM)(), b = (0, f.X)(t, p), v = (0, d.ql)(t, i.A.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, g);
-        return null != o || null != x ? (0, n.jsx)(l.K0, {
+        } = e, v = (0, a.Mk)(), C = v?.tab, A = (0, s.uM)(), b = (0, h.X)(t, p), k = (0, d.ql)(t, i.A.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, g);
+        return null != o || null != f ? (0, n.jsx)(l.K0, {
             variant: "primary",
-            "aria-label": h.intl.string(h.t.SKNnqq),
-            icon: x ?? l.bMW,
+            "aria-label": x.intl.string(x.t.SKNnqq),
+            icon: f ?? l.bMW,
             onClick: e => {
-                e.stopPropagation(), null != o ? o(t.skuId) : v(e)
+                e.stopPropagation(), null != o ? o(t.skuId) : k(e)
             }
         }) : b ? (0, n.jsx)(s.R9, {
             newValue: {
-                pageCategory: C === m.G2.HOME ? void 0 : I?.pageCategory
+                pageCategory: C === m.G2.HOME ? void 0 : A?.pageCategory
             },
             children: (0, n.jsx)(c.A, {
                 primary: !0,
@@ -53,13 +53,13 @@ let x = e => {
             icon: i,
             prioritizedCurrency: s,
             onClickAnalytics: a
-        } = e, c = (0, d.Vm)(t), f = (0, u.Q)(c);
+        } = e, c = (0, d.Vm)(t), h = (0, u.Q)(c);
         if (null == c) return null;
-        let m = (0, o.rb)(c, f);
-        return (0, n.jsx)(x, {
+        let m = (0, o.rb)(c, h);
+        return (0, n.jsx)(f, {
             product: m,
             cardRef: r,
-            selectedVariantIndex: f,
+            selectedVariantIndex: h,
             onClick: l,
             icon: i,
             prioritizedCurrency: s,

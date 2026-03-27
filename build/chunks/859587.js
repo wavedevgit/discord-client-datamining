@@ -14,12 +14,12 @@ function o(e, t) {
         o = (0, s.Q)(t),
         c = n.useRef(!1),
         d = n.useRef(r),
-        f = n.useRef(t),
+        h = n.useRef(t),
         m = n.useRef(o);
     n.useEffect(() => {
         d.current = r
     }, [r]), n.useEffect(() => {
-        f.current = t
+        h.current = t
     }, [t]), n.useEffect(() => {
         m.current = o
     }, [o]), n.useEffect(() => {
@@ -30,7 +30,7 @@ function o(e, t) {
         if (c.current) return;
         let t = setTimeout(() => {
             let e = d.current,
-                t = f.current,
+                t = h.current,
                 r = (0, a.B1)(t);
             l.default.track(u.HAw.SHOP_CARD_HOVERED, {
                 shop_session_id: e?.sessionId,

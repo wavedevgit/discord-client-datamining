@@ -1,6 +1,6 @@
 /** chunk id: 597783 params = (module,exports,require) **/
 r.d(t, {
-    Z: () => f
+    Z: () => h
 });
 var n = r(64700),
     l = r(311907),
@@ -12,31 +12,31 @@ var n = r(64700),
     c = r(331884),
     d = r(652215);
 
-function f(e, t) {
+function h(e, t) {
     let r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "product",
-        f = (0, a.uM)(),
+        h = (0, a.uM)(),
         m = (0, l.bG)([u.A], () => u.A.getProduct(e)),
-        h = (0, c.i)(),
-        x = s.Ay.canUseCollectibles(h),
+        x = (0, c.i)(),
+        f = s.Ay.canUseCollectibles(x),
         p = n.useRef(null),
         g = n.useCallback(() => {
-            let n = null != m ? (0, o.Br)(m, x, !1) : null,
-                l = null != m ? (0, o.c7)(m, x, !1) : void 0;
+            let n = null != m ? (0, o.Br)(m, f, !1) : null,
+                l = null != m ? (0, o.c7)(m, f, !1) : void 0;
             i.default.track(d.HAw.COLLECTIBLES_TILE_IMPRESSION, {
-                collectibles_shop_session_id: f?.sessionId,
+                collectibles_shop_session_id: h?.sessionId,
                 sku_id: e,
                 display_price: n?.amount,
                 display_price_currency: n?.currency.toString(),
                 display_price_strikethrough: l,
-                position: f?.tilePosition,
+                position: h?.tilePosition,
                 page_type: t,
-                page_category: f?.pageCategory,
-                page_section: f?.pageSection,
+                page_category: h?.pageCategory,
+                page_section: h?.pageSection,
                 type: r,
-                category_position: f?.categoryPosition
+                category_position: h?.categoryPosition
             })
-        }, [f?.sessionId, f?.categoryPosition, f?.pageCategory, f?.pageSection, f?.tilePosition, x, t, m, e, r]),
-        A = n.useCallback(e => {
+        }, [h?.sessionId, h?.categoryPosition, h?.pageCategory, h?.pageSection, h?.tilePosition, f, t, m, e, r]),
+        v = n.useCallback(e => {
             e ? null === p.current && (p.current = setTimeout(() => {
                 g(), p.current = null
             }, 1e3)) : null !== p.current && (clearTimeout(p.current), p.current = null)
@@ -44,6 +44,6 @@ function f(e, t) {
     return n.useEffect(() => () => {
         null !== p.current && (clearTimeout(p.current), p.current = null)
     }, []), {
-        handleCardVisibilityChange: A
+        handleCardVisibilityChange: v
     }
 }

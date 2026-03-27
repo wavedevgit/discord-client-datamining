@@ -8,8 +8,8 @@ var n = r(627968),
     s = r(397927),
     a = r(688810),
     l = r(532794),
-    c = r(788868),
-    o = r(319278);
+    o = r(788868),
+    c = r(319278);
 let d = e => {
     let {
         text: t
@@ -17,11 +17,11 @@ let d = e => {
         analyticsLocations: r
     } = (0, a.Ay)(), d = i.useRef(null);
     return (0, n.jsx)(s.DUT, {
-        className: o.F,
+        className: c.F,
         innerRef: d,
         onClick: () => {
             (0, l.A)({
-                subscriptionTier: c.pe.TIER_2,
+                subscriptionTier: o.pe.TIER_2,
                 analyticsLocations: r,
                 returnRef: d
             })
