@@ -1,37 +1,37 @@
 /** chunk id: 441136 params = (module,exports,require) **/
 s.d(l, {
-    SyntaxHighlight: () => c
+    SyntaxHighlight: () => a
 });
 var t = s(627968),
     r = s(64700),
     n = s(768947);
 
-function c(e) {
+function a(e) {
     let {
         code: l,
         lang: s,
-        ...c
-    } = e, a = r.useMemo(() => (0, n.py)(s), [s]);
-    return null == a ? (0, t.jsx)(u, {
+        ...a
+    } = e, i = r.useMemo(() => (0, n.py)(s), [s]);
+    return null == i ? (0, t.jsx)(c, {
         code: l,
-        ...c
+        ...a
     }) : (0, t.jsx)(r.Suspense, {
-        fallback: (0, t.jsx)(u, {
+        fallback: (0, t.jsx)(c, {
             code: l,
-            ...c
+            ...a
         }),
-        children: "ansi" === a ? (0, t.jsx)(p, {
+        children: "ansi" === i ? (0, t.jsx)(o, {
             code: l,
-            ...c
-        }) : (0, t.jsx)(i, {
+            ...a
+        }) : (0, t.jsx)(p, {
             code: l,
-            lang: a,
-            ...c
+            lang: i,
+            ...a
         })
     })
 }
 
-function u(e) {
+function c(e) {
     let {
         code: l,
         ...s
@@ -42,33 +42,33 @@ function u(e) {
     })
 }
 
-function i(e) {
+function p(e) {
     let {
         code: l,
         lang: s,
         ...r
-    } = e, c = (0, n.OY)(s, l);
-    return null == c ? (0, t.jsx)(u, {
+    } = e, a = (0, n.OY)(s, l);
+    return null == a ? (0, t.jsx)(c, {
         code: l,
         ...r
-    }) : (0, t.jsx)(a, {
-        html: c,
+    }) : (0, t.jsx)(i, {
+        html: a,
         ...r
     })
 }
 
-function p(e) {
+function o(e) {
     let {
         code: l,
         ...s
     } = e, r = (0, n.ph)(l);
-    return (0, t.jsx)(a, {
+    return (0, t.jsx)(i, {
         html: r,
         ...s
     })
 }
 
-function a(e) {
+function i(e) {
     let {
         html: l,
         ...s
