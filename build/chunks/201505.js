@@ -115,11 +115,11 @@ let E = s.forwardRef(function(e, t) {
                 label: `${n-e-3}`
             }))
         }, [n]), r.current),
-        [D, P] = s.useState(I ? 0 : -1),
-        U = s.useMemo(f, []),
+        [D, U] = s.useState(I ? 0 : -1),
+        P = s.useMemo(f, []),
         B = {
             onPopulated: E,
-            sortedInputs: U
+            sortedInputs: P
         },
         G = s.useRef(B);
     s.useEffect(() => {
@@ -135,7 +135,7 @@ let E = s.forwardRef(function(e, t) {
     for (let e = 0; e < 3; e++) {
         let {
             type: t
-        } = U[e];
+        } = P[e];
         switch (t) {
             case "day":
                 F.push({
@@ -150,7 +150,7 @@ let E = s.forwardRef(function(e, t) {
                             options: p,
                             value: T,
                             onChange: t => {
-                                C(t), P(e + 1)
+                                C(t), U(e + 1)
                             },
                             maxVisibleItems: 6,
                             autoFocus: D === e,
@@ -174,7 +174,7 @@ let E = s.forwardRef(function(e, t) {
                             options: g,
                             value: y,
                             onChange: t => {
-                                b(t), P(e + 1)
+                                b(t), U(e + 1)
                             },
                             maxVisibleItems: 6,
                             autoFocus: D === e,
@@ -198,7 +198,7 @@ let E = s.forwardRef(function(e, t) {
                             options: k,
                             value: R,
                             onChange: t => {
-                                O(t), P(e + 1)
+                                O(t), U(e + 1)
                             },
                             maxVisibleItems: 6,
                             autoFocus: D === e,

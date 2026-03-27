@@ -36,8 +36,8 @@ var i = n(627968),
     w = n(4274),
     k = n(877062),
     D = n(890698),
-    P = n(129851),
-    U = n(229),
+    U = n(129851),
+    P = n(229),
     B = n(652215);
 n(436317);
 var G = n(172799),
@@ -358,12 +358,12 @@ class Q extends s.PureComponent {
             case B.elq.RESOLVED:
                 if (n && (0, o.Lt)(e.flags ?? 0, a.Q.IS_GUEST_INVITE)) return p.Ay.openApp(e.code), u.u.set(N.B, e.code), this.renderAppOpened(() => s(B.BVt.APP));
                 if (n || !M.VP) return this.renderAuthenticatedOrDownload();
-                if (this.getMode() === K) return (0, i.jsx)(P.A, {
+                if (this.getMode() === K) return (0, i.jsx)(U.A, {
                     invite: e,
                     transitionTo: s,
                     location: r
                 });
-                else return (0, i.jsx)(U.A, {
+                else return (0, i.jsx)(P.A, {
                     invite: e,
                     onLoginStart: () => {
                         O.default.track(B.HAw.INVITE_LOGIN, {

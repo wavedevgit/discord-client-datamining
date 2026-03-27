@@ -37,8 +37,8 @@ var i = n(627968),
     w = n(210714),
     k = n(933924),
     D = n(961350),
-    P = n(115036),
-    U = n(650048),
+    U = n(115036),
+    P = n(650048),
     B = n(954571),
     G = n(203982),
     F = n(723702),
@@ -737,14 +737,14 @@ class X extends s.PureComponent {
 }
 let $ = function(e) {
     (0, L.K)();
-    let t = (0, c.cf)([P.A, U.A, D.default, T.A, b.A], () => ({
+    let t = (0, c.cf)([U.A, P.A, D.default, T.A, b.A], () => ({
         authenticated: D.default.isAuthenticated(),
-        handoffAvailable: P.A.isHandoffAvailable(),
-        user: P.A.user,
+        handoffAvailable: U.A.isHandoffAvailable(),
+        user: U.A.user,
         loginStatus: D.default.getLoginStatus(),
         mfaTicket: D.default.getMFATicket(),
         mfaMethods: D.default.getMFAMethods(),
-        defaultRoute: U.A.defaultRoute,
+        defaultRoute: P.A.defaultRoute,
         country: b.A.getCountryCode(),
         hasLoggedInAccounts: T.A.getHasLoggedInAccounts()
     }));

@@ -36,8 +36,8 @@ var i = n(627968),
     w = n(299091),
     k = n(954571),
     D = n(139675),
-    P = n(612181),
-    U = n(486020),
+    U = n(612181),
+    P = n(486020),
     B = n(952072),
     G = n(765624),
     F = n(603647),
@@ -97,13 +97,13 @@ class eT extends s.PureComponent {
         } = t, l = (0, r.parse)(i.search).redirect_to ?? null;
         (null == l || "" === l || l.startsWith(ei.BVt.ME) || !(0, o.e)(l) && !(0, f.RZ)(l)) && (l = null);
         let a = null;
-        if (null == n) a = (0, P.u8)(l);
+        if (null == n) a = (0, U.u8)(l);
         else if (n?.state === ei.elq.RESOLVED) {
             let {
                 guild: e,
                 target_application: t
             } = n;
-            null != t ? null != s && (a = (0, D.uD)(t.id, s, 1024)) : null != e && "string" == typeof e.splash && (a = U.Ay.getGuildSplashURL({
+            null != t ? null != s && (a = (0, D.uD)(t.id, s, 1024)) : null != e && "string" == typeof e.splash && (a = P.Ay.getGuildSplashURL({
                 id: e.id,
                 splash: e.splash
             }))

@@ -37,8 +37,8 @@ var C = n(491509),
     w = n(210714),
     k = n(493527),
     D = n(544395),
-    P = n(546727),
-    U = n(975169),
+    U = n(546727),
+    P = n(975169),
     B = n(794696),
     G = n(961350),
     F = n(153488),
@@ -565,11 +565,11 @@ class ei extends s.PureComponent {
                 username: e.toLocaleLowerCase(),
                 usernameClientError: 0 === e.length ? $.intl.string($.t.EkokLy) : null
             })
-        }, P = null != e ? (0, i.jsx)(s.Fragment, {
+        }, U = null != e ? (0, i.jsx)(s.Fragment, {
             children: e()
         }, "custom-header") : (0, i.jsx)(v.hE, {
             children: $.intl.string($.t.wC4TlR)
-        }, "title"), U = (0, i.jsxs)(v.eB, {
+        }, "title"), P = (0, i.jsxs)(v.eB, {
             className: ee.QX,
             children: [(0, i.jsx)(v.pd, {
                 autoFocus: !0,
@@ -685,12 +685,12 @@ class ei extends s.PureComponent {
             onSubmit: this.handleSubmit,
             tag: "form",
             className: l()(y, Z.Sy),
-            children: () => [P, (0, i.jsxs)("div", {
+            children: () => [U, (0, i.jsxs)("div", {
                 className: Z.Uu,
                 children: [(0, i.jsx)(v.hE, {
                     className: Z.lR,
                     children: $.intl.string($.t.wC4TlR)
-                }), U]
+                }), P]
             }, "register-title")]
         }) : (0, i.jsxs)(v.Ay, {
             onSubmit: this.handleSubmit,
@@ -705,7 +705,7 @@ class ei extends s.PureComponent {
                     icon: _.n2b,
                     iconPosition: "start"
                 })
-            }) : null, P, U]
+            }) : null, U, P]
         })
     }
     render() {
@@ -765,17 +765,17 @@ function er(e) {
             isUsernameFocused: l,
             onClickSuggestion: a
         } = e,
-        d = (0, U.i)(n, !0, !0),
+        d = (0, P.i)(n, !0, !0),
         c = n.length > 0;
     return t = c ? (0, o.YW)(d).with({
-        type: P.q.ERROR,
+        type: U.q.ERROR,
         message: o.P.select()
     }, e => (0, i.jsx)(_.Text, {
         className: Z.vU,
         variant: "text-sm/normal",
         children: e
     })).with({
-        type: P.q.AVAILABLE,
+        type: U.q.AVAILABLE,
         message: o.P.select()
     }, e => (0, i.jsx)(_.Text, {
         className: Z.vq,
@@ -797,7 +797,7 @@ function er(e) {
         color: "text-default",
         children: $.intl.string($.t.z7c4bP)
     }), (0, i.jsx)(B.A, {
-        show: c && d?.type === P.q.ERROR || l,
+        show: c && d?.type === U.q.ERROR || l,
         top: -12,
         bottom: 20,
         children: t
