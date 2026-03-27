@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(51758),
     f = n(721592),
     x = n(214660),
-    E = n(378570),
-    C = n(323443),
+    C = n(378570),
+    E = n(323443),
     I = n(113783),
     N = n(69407),
     b = n(446600),
@@ -89,14 +89,14 @@ class W extends U.Ay {
         } = this.props, s = e.getGuildId();
         null != s && (0, g.V)(s) && (0, p.Ze)(s), i && this.setState({
             shouldShowGuildVerificationPopout: !0
-        }), t || n || e.isRoleSubscriptionTemplatePreviewChannel() || (0, C.av)(e), __OVERLAY__ || (0, E.iN)(e.id)
+        }), t || n || e.isRoleSubscriptionTemplatePreviewChannel() || (0, E.av)(e), __OVERLAY__ || (0, C.iN)(e.id)
     };
     handleClickChat = () => {
         let {
             channel: e,
             locked: t
         } = this.props;
-        __OVERLAY__ || t || (0, E.iN)(e.id)
+        __OVERLAY__ || t || (0, C.iN)(e.id)
     };
     handleContextMenu = e => {
         let {
@@ -197,8 +197,8 @@ class W extends U.Ay {
             needSubscriptionToAccess: g,
             unread: f,
             resolvedUnreadSetting: x,
-            mentionCount: E,
-            isFavoriteSuggestion: C
+            mentionCount: C,
+            isFavoriteSuggestion: E
         } = this.props, {
             shouldShowGuildVerificationPopout: I
         } = this.state, N = (0, i.jsxs)("li", {
@@ -222,11 +222,11 @@ class W extends U.Ay {
                             [K.G]: null != m
                         }),
                         channel: e,
-                        selected: !C && t,
+                        selected: !E && t,
                         connected: n,
                         unread: n ? f : void 0,
                         resolvedUnreadSetting: x,
-                        mentionCount: E,
+                        mentionCount: C,
                         locked: s,
                         onClick: () => {
                             this.handleClick()
@@ -236,15 +236,15 @@ class W extends U.Ay {
                         },
                         connectDragPreview: u,
                         subtitle: this.renderSubtitle(),
-                        isFavoriteSuggestion: C,
+                        isFavoriteSuggestion: E,
                         "aria-label": (0, _.Ay)({
                             channel: e,
                             unread: f,
-                            mentionCount: E,
+                            mentionCount: C,
                             isSubscriptionGated: p,
                             needSubscriptionToAccess: g
                         }),
-                        children: [C && this.renderAcceptSuggestionButton(), C && this.renderRemoveSuggestionButton(), !C && this.renderOpenChatButton(), !C && this.renderInviteButton(), !C && this.renderEditButton(), !C && this.renderChannelInfo()]
+                        children: [E && this.renderAcceptSuggestionButton(), E && this.renderRemoveSuggestionButton(), !E && this.renderOpenChatButton(), !E && this.renderInviteButton(), !E && this.renderEditButton(), !E && this.renderChannelInfo()]
                     })
                 })
             }), this.renderVoiceUsers()]
@@ -279,15 +279,15 @@ function z(e) {
     }), h = (0, r.bG)([v.A], () => v.A.isCollapsed(n.parent_id)), A = (0, T.Ay)(n.id), m = (0, r.bG)([b.A], () => b.A.getStageInstanceByChannel(n.id), [n.id]), _ = (0, I.zy)(n.id, N.ip.AUDIENCE), {
         isSubscriptionGated: p,
         needSubscriptionToAccess: g
-    } = (0, f.A)(n.id), x = (0, r.bG)([M.Ay], () => M.Ay.isFavorite(t.id, n.id)), E = (0, S.xn)(n.id), C = (0, P.A)({
+    } = (0, f.A)(n.id), x = (0, r.bG)([M.Ay], () => M.Ay.isFavorite(t.id, n.id)), C = (0, S.xn)(n.id), E = (0, P.A)({
         channel: n,
         isChannelSelected: !1,
         isChannelCollapsed: a,
         voiceStates: o,
         isSubscriptionGated: p,
         needSubscriptionToAccess: g,
-        enableConnectedUserLimit: E || n.userLimit > 0 && n.userLimit < V.RCc
-    }), j = e.connected && null == C;
+        enableConnectedUserLimit: C || n.userLimit > 0 && n.userLimit < V.RCc
+    }), j = e.connected && null == E;
     return (0, i.jsx)(Y, {
         categoryCollapsed: h,
         connectAction: A,
@@ -300,7 +300,7 @@ function z(e) {
         ...e,
         isFavoriteSuggestion: l && !x,
         forceShowButtons: j,
-        channelInfo: C,
+        channelInfo: E,
         resolvedUnreadSetting: d
     })
 }

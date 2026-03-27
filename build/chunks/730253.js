@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(855725),
     f = n(532794),
     x = n(366811),
-    E = n(345942),
-    C = n(616356),
+    C = n(345942),
+    E = n(616356),
     I = n(734057),
     N = n(309010),
     b = n(977997),
@@ -83,11 +83,11 @@ function F(e) {
             badge: eg,
             unread: ef
         } = (0, O.A)(eh),
-        ex = (F = null != (t = (0, a.bG)([N.A], () => N.A.getVoiceChannelId())) && null != eh[t], K = (0, a.bG)([C.A], () => {
+        ex = (F = null != (t = (0, a.bG)([N.A], () => N.A.getVoiceChannelId())) && null != eh[t], K = (0, a.bG)([E.A], () => {
             if (!F) return !1;
-            let e = C.A.getCurrentUserActiveStream();
+            let e = E.A.getCurrentUserActiveStream();
             return null != e && null != eh[e.channelId]
-        }), W = (0, a.bG)([C.A], () => C.A.getAllApplicationStreams().some(e => null != eh[e.channelId])), Y = (0, a.bG)([b.A], () => F && null != t && b.A.hasVideo(t), [F, t]), z = (0, a.yK)([d.Ay], () => S.default.keys(eh).reduce((e, t) => (e.push(...d.Ay.getEmbeddedActivitiesForChannel(t)), e), [])), q = (0, a.bG)([d.Ay], () => Array.from(d.Ay.getSelfEmbeddedActivities().values()).some(e => {
+        }), W = (0, a.bG)([E.A], () => E.A.getAllApplicationStreams().some(e => null != eh[e.channelId])), Y = (0, a.bG)([b.A], () => F && null != t && b.A.hasVideo(t), [F, t]), z = (0, a.yK)([d.Ay], () => S.default.keys(eh).reduce((e, t) => (e.push(...d.Ay.getEmbeddedActivitiesForChannel(t)), e), [])), q = (0, a.bG)([d.Ay], () => Array.from(d.Ay.getSelfEmbeddedActivities().values()).some(e => {
             let {
                 location: t
             } = e, n = (0, u.H)(t);
@@ -100,16 +100,16 @@ function F(e) {
             isCurrentUserConnected: F,
             activity: Z
         })),
-        eE = eg > 0 ? (0, g.w)(eg) : null,
-        eC = s.useRef(!1),
+        eC = eg > 0 ? (0, g.w)(eg) : null,
+        eE = s.useRef(!1),
         {
             hasAccess: eI
         } = (0, j.TW)("FavoritesButton"),
         eN = s.useCallback((e, t) => {
-            eC.current = !0, et(e, t)
+            eE.current = !0, et(e, t)
         }, [et]),
         eb = s.useCallback(e => {
-            e && ((0, y.mv)("intro_dc"), (0, E.u)(D.YYv)), eI ? (ed || (0, v.tV)(!0, "favorites_button_onboarding"), e && (0, o.mMO)(async () => {
+            e && ((0, y.mv)("intro_dc"), (0, C.u)(D.YYv)), eI ? (ed || (0, v.tV)(!0, "favorites_button_onboarding"), e && (0, o.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("59839").then(n.bind(n, 889186));
@@ -124,9 +124,9 @@ function F(e) {
             }), eN(U.i.TAKE_ACTION)
         }, [eN, ed, eI, ea]);
     return s.useEffect(() => {
-        ee && (eC.current = !1)
+        ee && (eE.current = !1)
     }, [ee]), s.useEffect(() => () => {
-        ee && !eC.current && eN(U.i.AUTO_DISMISS, !0)
+        ee && !eE.current && eN(U.i.AUTO_DISMISS, !0)
     }, [eN, ee]), s.useEffect(() => {
         if (ei) {
             let e = (0, o.createToast)(k.intl.string(k.t["4tSWQg"]), G.Ck.FAVORITE);
@@ -146,7 +146,7 @@ function F(e) {
             children: (0, i.jsx)(o.Qk9, {
                 selected: !0,
                 upperBadge: ex,
-                lowerBadge: eE,
+                lowerBadge: eC,
                 children: (0, i.jsx)("div", {
                     ref: el,
                     children: (0, i.jsx)(o.jlP, {

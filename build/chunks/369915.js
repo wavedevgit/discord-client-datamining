@@ -24,8 +24,8 @@ let p = s.memo(function(e) {
         id: g,
         name: f,
         color: x,
-        children: E
-    } = t, C = E.map(e => e.id), I = (0, o.A)(e => e.guildId), N = (0, l.bG)([c.A], () => c.A.isFolderExpanded(g)), b = function(e) {
+        children: C
+    } = t, E = C.map(e => e.id), I = (0, o.A)(e => e.guildId), N = (0, l.bG)([c.A], () => c.A.isFolderExpanded(g)), b = function(e) {
         let t = e.children.map(e => {
                 let t = e.id,
                     n = u.A.getGuild(t);
@@ -40,9 +40,9 @@ let p = s.memo(function(e) {
         isMentionLowImportance: v,
         unread: y
     } = (0, l.cf)([d.default], () => ({
-        mentionCount: C.map(e => d.default.getMentionCount(e)).reduce((e, t) => e + t, 0),
-        isMentionLowImportance: C.every(e => d.default.getIsMentionLowImportance(e)),
-        unread: C.some(e => d.default.hasUnread(e))
+        mentionCount: E.map(e => d.default.getMentionCount(e)).reduce((e, t) => e + t, 0),
+        isMentionLowImportance: E.every(e => d.default.getIsMentionLowImportance(e)),
+        unread: E.some(e => d.default.hasUnread(e))
     })), j = s.useCallback(() => {
         r.A.toggleGuildFolderExpand(g)
     }, [g]), R = s.useCallback(e => {
@@ -63,7 +63,7 @@ let p = s.memo(function(e) {
         ...p,
         folderNode: t,
         expanded: N,
-        selected: null != I && C.includes(I),
+        selected: null != I && E.includes(I),
         mentionCount: T,
         isMentionLowImportance: v,
         unread: y,

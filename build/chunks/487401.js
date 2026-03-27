@@ -21,8 +21,8 @@ var i = n(627968),
     g = n(5180),
     f = n(227004),
     x = n(581007),
-    E = n(522435),
-    C = n(781862),
+    C = n(522435),
+    E = n(781862),
     I = n(582904),
     N = n(637248),
     b = n(395504),
@@ -339,7 +339,7 @@ class em extends s.PureComponent {
                 });
                 if (n) {
                     let e = _.A.getChannelStatus(d.record);
-                    (0, E.TP)(e) ? r += 134: l === d.id && (r += 44)
+                    (0, C.TP)(e) ? r += 134: l === d.id && (r += 44)
                 }
             }
             d.id === this.props.rtcConnectedChannelId && (r += 32 * this.props.rtcDesyncedVoiceStatesCount)
@@ -407,7 +407,7 @@ class em extends s.PureComponent {
             if (null == t) return null;
             switch (t) {
                 case er.n.GUILD_HUB_HEADER_OPTIONS:
-                    return (0, i.jsx)(C.A, {
+                    return (0, i.jsx)(E.A, {
                         guild: l,
                         channel: U.Ay.getDefaultChannel(l.id)
                     }, er.n.GUILD_HUB_HEADER_OPTIONS);
@@ -487,7 +487,7 @@ class em extends s.PureComponent {
         let {
             category: g,
             channel: x
-        } = p, E = g instanceof w.xu, I = x.record, N = `${t}${x.id}`;
+        } = p, C = g instanceof w.xu, I = x.record, N = `${t}${x.id}`;
         switch (I.type) {
             case eo.rbe.GUILD_ANNOUNCEMENT:
             case eo.rbe.GUILD_TEXT:
@@ -505,7 +505,7 @@ class em extends s.PureComponent {
                         subtitle: x.subtitle,
                         disableManageChannels: h,
                         canBeNewChannel: m && t === d.recentsSectionNumber,
-                        isFavoriteCategory: E
+                        isFavoriteCategory: C
                     }), x.threadCount > 0 ? (0, i.jsx)(Z.A, {
                         withGuildIcon: _,
                         channel: I,
@@ -525,7 +525,7 @@ class em extends s.PureComponent {
                     voiceStates: u[x.id] ?? [],
                     speakerVoiceStates: A[x.id] ?? [],
                     disableManageChannels: h,
-                    isFavoriteCategory: E
+                    isFavoriteCategory: C
                 }, N);
             case eo.rbe.GUILD_VOICE:
                 return (0, i.jsx)(ea.A, {
@@ -539,7 +539,7 @@ class em extends s.PureComponent {
                     subtitle: x.subtitle,
                     disableManageChannels: h,
                     showTutorial: x.isFirstVoiceChannel,
-                    isFavoriteCategory: E,
+                    isFavoriteCategory: C,
                     withGuildIcon: _
                 }, N);
             case eo.rbe.GUILD_STORE:
@@ -758,12 +758,12 @@ let e_ = e => {
         selectedVoiceChannelId: l
     } = e, c = (0, o.bG)([h.A], () => h.A.keyboardModeEnabled), {
         analyticsLocations: d
-    } = (0, m.Ay)(A.A.GUILD_CHANNEL_LIST), _ = (0, o.bG)([D.A], () => D.A.getChannel(n)), p = (0, o.bG)([D.A], () => D.A.getChannel(l)), g = (0, o.bG)([P.A], () => P.A.getGuildId()), f = (0, b.jN)(t), x = s.useRef(null), E = s.useCallback((e, t) => {
+    } = (0, m.Ay)(A.A.GUILD_CHANNEL_LIST), _ = (0, o.bG)([D.A], () => D.A.getChannel(n)), p = (0, o.bG)([D.A], () => D.A.getChannel(l)), g = (0, o.bG)([P.A], () => P.A.getGuildId()), f = (0, b.jN)(t), x = s.useRef(null), C = s.useCallback((e, t) => {
         let n = x.current;
         null != n && (eo.Ut1.test(t) || (0, ec.jq)(t) ? n.scrollToChannel(t, !1, 16, () => {
             requestAnimationFrame(() => document.querySelector(e)?.focus())
         }) : document.querySelector(e)?.focus())
-    }, []), C = s.useCallback(() => new Promise(e => {
+    }, []), E = s.useCallback(() => new Promise(e => {
         let t = x.current;
         if (null == t) return e();
         t.scrollTo(0, () => requestAnimationFrame(() => e()))
@@ -775,8 +775,8 @@ let e_ = e => {
         id: "channels",
         defaultFocused: n ?? void 0,
         isEnabled: c,
-        setFocus: E,
-        scrollToStart: C,
+        setFocus: C,
+        scrollToStart: E,
         scrollToEnd: I
     }), S = N.setFocus;
     s.useEffect(() => {

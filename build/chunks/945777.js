@@ -21,8 +21,8 @@ var i = n(627968),
     g = n(480890),
     f = n(267102),
     x = n(342296),
-    E = n(961350),
-    C = n(696451),
+    C = n(961350),
+    E = n(696451),
     I = n(562153),
     N = n(105530),
     b = n(806931),
@@ -105,9 +105,9 @@ let T = s.memo(function(e) {
         } = e, {
             user: r,
             blocked: u
-        } = t, I = l.getGuildId(), N = E.default.getId(), {
+        } = t, I = l.getGuildId(), N = C.default.getId(), {
             newestAnalyticsLocation: T
-        } = (0, _.Ay)(m.A.AUDIENCE_TILE), y = (0, f.Us)(), j = (0, d.bG)([C.Ay], () => null != I && C.Ay.getMember(I, r.id)?.premiumSince != null, [I, r.id]), R = s.useRef(null);
+        } = (0, _.Ay)(m.A.AUDIENCE_TILE), y = (0, f.Us)(), j = (0, d.bG)([E.Ay], () => null != I && E.Ay.getMember(I, r.id)?.premiumSince != null, [I, r.id]), R = s.useRef(null);
         o()(null != I, "Channel cannot be guildless");
         let O = s.useCallback(e => {
             (0, p.x)({

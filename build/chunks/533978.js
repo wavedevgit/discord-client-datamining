@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(989799),
     f = n(173660),
     x = n(430452),
-    E = n(246356),
-    C = n(709562),
+    C = n(246356),
+    E = n(709562),
     I = n(376086),
     N = n(985018);
 
@@ -87,7 +87,7 @@ function b(e) {
             let {
                 closePopout: n
             } = e;
-            return U ? null : (0, i.jsx)(E.A, {
+            return U ? null : (0, i.jsx)(C.A, {
                 children: (0, i.jsx)("div", {
                     onMouseEnter: F,
                     onMouseLeave: K,
@@ -104,7 +104,7 @@ function b(e) {
                 })
             })
         },
-        children: () => (0, i.jsx)(C.l, {
+        children: () => (0, i.jsx)(E.l, {
             ref: z,
             isTrayButton: !0,
             themeable: b,

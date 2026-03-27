@@ -19,11 +19,11 @@ var i, s = n(627968),
     g = n(985018),
     f = n(488893);
 let x = ["embedded_cover"],
-    E = {
+    C = {
         tension: 800,
         friction: 24
     };
-var C = ((i = C || {})[i.THIRTEEN_BY_ELEVEN = 0] = "THIRTEEN_BY_ELEVEN", i[i.SIXTEEN_BY_NINE = 1] = "SIXTEEN_BY_NINE", i);
+var E = ((i = E || {})[i.THIRTEEN_BY_ELEVEN = 0] = "THIRTEEN_BY_ELEVEN", i[i.SIXTEEN_BY_NINE = 1] = "SIXTEEN_BY_NINE", i);
 
 function I(e) {
     let {
@@ -31,7 +31,7 @@ function I(e) {
         activityItem: n,
         onClick: i,
         aspectRatio: a = 0,
-        animatedDivClass: C,
+        animatedDivClass: E,
         commandOrigin: I
     } = e, {
         onActivityItemSelected: N,
@@ -98,7 +98,7 @@ function I(e) {
         onMouseLeave: R,
         className: f.XA,
         children: (0, s.jsx)(d.c7X, {
-            config: E,
+            config: C,
             from: {
                 value: 0
             },
@@ -116,7 +116,7 @@ function I(e) {
                         questContent: c.u.ACTIVITY_SUGGESTION,
                         children: i => (0, s.jsxs)(o.animated.div, {
                             ref: i,
-                            className: r()(e, f.LM, C, {
+                            className: r()(e, f.LM, E, {
                                 [f.$g]: 0 === a,
                                 [f.J3]: 1 === a
                             }),
@@ -136,4 +136,4 @@ function I(e) {
         })
     })
 }
-I.AspectRatio = C
+I.AspectRatio = E

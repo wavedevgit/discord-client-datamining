@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(955454),
     f = n(502754),
     x = n(652215),
-    E = n(985018),
-    C = n(368897);
+    C = n(985018),
+    E = n(368897);
 let I = s.memo(function(e) {
         let {
             channel: t,
@@ -81,7 +81,7 @@ let I = s.memo(function(e) {
                     }, !0), l(t.channelId)
                 })
             }), null == o || !t.hasLoadedAnything) return null;
-        let E = (e, i) => {
+        let C = (e, i) => {
             (0, h.zV)(x.HAw.INBOX_CHANNEL_CLICKED, {
                 channel_id: t.channelId,
                 guild_id: t.guildId
@@ -90,11 +90,11 @@ let I = s.memo(function(e) {
             (0, A.pX)(x.BVt.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : s)), n(e)
         };
         return (0, i.jsx)("div", {
-            className: C.Ix,
+            className: E.Ix,
             children: (0, i.jsx)(c.Fmo, {
                 component: (0, i.jsx)(p.A, {
                     channel: o,
-                    gotoChannel: E,
+                    gotoChannel: C,
                     mentionCount: t.mentionCount,
                     toggleCollapsed: a,
                     showCollapseButton: !0,
@@ -102,7 +102,7 @@ let I = s.memo(function(e) {
                     getNumUnreadChannels: e.getNumUnreadChannels,
                     children: (0, i.jsxs)(c.ButtonGroup, {
                         size: "sm",
-                        className: C.GC,
+                        className: E.GC,
                         children: [(0, i.jsx)(_.A, {
                             channel: o
                         }), (0, i.jsx)(b, {
@@ -113,7 +113,7 @@ let I = s.memo(function(e) {
                 children: t.collapsed ? null : "messages" === t.type ? (0, i.jsx)(f.A, {
                     channel: t,
                     channelRecord: o,
-                    gotoChannel: E
+                    gotoChannel: C
                 }) : "forum" === t.type ? (0, i.jsx)(g.A, {
                     channel: t,
                     channelRecord: o,
@@ -131,10 +131,10 @@ function b(e) {
         getNumUnreadChannels: l
     } = e, r = (0, a.A)() && null != t.guildId;
     return (0, i.jsx)(o.m_, {
-        text: r ? E.intl.string(E.t["5lLMhM"]) : E.intl.string(E.t.e6RscS),
+        text: r ? C.intl.string(C.t["5lLMhM"]) : C.intl.string(C.t.e6RscS),
         children: (0, i.jsx)(c.K0, {
             variant: "secondary",
-            "aria-label": r ? E.intl.string(E.t["5lLMhM"]) : E.intl.string(E.t.e6RscS),
+            "aria-label": r ? C.intl.string(C.t["5lLMhM"]) : C.intl.string(C.t.e6RscS),
             size: "sm",
             icon: r ? c.iA$ : c.A9s,
             onClick: function() {

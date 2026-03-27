@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(793574),
     f = n(688810),
     x = n(449582),
-    E = n(485947),
-    C = n(509536),
+    C = n(485947),
+    E = n(509536),
     I = n(201275),
     N = n(657048),
     b = n(561010),
@@ -53,7 +53,7 @@ let W = k.Ay.getEnableHardwareAcceleration(),
             sectionId: l,
             userId: a,
             guildOwnerId: r
-        } = e, o = s.useRef(null), d = (0, h.bG)([L.A], () => L.A.isTyping(t.id, a)), A = (0, h.bG)([y.Ay], () => y.Ay.getMember(t.guild_id, a)), p = (0, h.bG)([j.A], () => A?.colorRoleId != null ? j.A.getRole(t.guild_id, A.colorRoleId)?.name : void 0, [t.guild_id, A]), g = (0, h.bG)([M.default], () => M.default.getUser(a)), f = (0, h.bG)([M.default], () => M.default.getCurrentUser()), E = g?.id === f?.id, I = (0, h.bG)([R.A, O.A], () => E ? O.A.getStatus() : R.A.getStatus(a, t.guild_id)), N = (0, h.bG)([R.A], () => R.A.isMobileOnline(a)), b = (0, h.bG)([R.A, O.A], () => E ? O.A.getActivities() : R.A.getActivities(a, t.guild_id)), D = (0, h.bG)([v.A], () => v.A.getAnyStreamForUser(a)), G = (0, c.rm)(a), P = (0, h.bG)([S.A], () => S.A.canUserViewChannel(t.id, l, a)), k = g?.id != null && g.id === r, F = s.useCallback(e => {
+        } = e, o = s.useRef(null), d = (0, h.bG)([L.A], () => L.A.isTyping(t.id, a)), A = (0, h.bG)([y.Ay], () => y.Ay.getMember(t.guild_id, a)), p = (0, h.bG)([j.A], () => A?.colorRoleId != null ? j.A.getRole(t.guild_id, A.colorRoleId)?.name : void 0, [t.guild_id, A]), g = (0, h.bG)([M.default], () => M.default.getUser(a)), f = (0, h.bG)([M.default], () => M.default.getCurrentUser()), C = g?.id === f?.id, I = (0, h.bG)([R.A, O.A], () => C ? O.A.getStatus() : R.A.getStatus(a, t.guild_id)), N = (0, h.bG)([R.A], () => R.A.isMobileOnline(a)), b = (0, h.bG)([R.A, O.A], () => C ? O.A.getActivities() : R.A.getActivities(a, t.guild_id)), D = (0, h.bG)([v.A], () => v.A.getAnyStreamForUser(a)), G = (0, c.rm)(a), P = (0, h.bG)([S.A], () => S.A.canUserViewChannel(t.id, l, a)), k = g?.id != null && g.id === r, F = s.useCallback(e => {
             null != g && (0, m.L3)(e, async () => {
                 let {
                     default: e
@@ -76,7 +76,7 @@ let W = k.Ay.getEnableHardwareAcceleration(),
                 rawText: n
             }), _.A.startTyping(t.id)
         }, [g, t]), Y = s.useCallback(e => {
-            e.stopPropagation(), (0, C.K4)({
+            e.stopPropagation(), (0, E.K4)({
                 guildId: t.guild_id,
                 location: {
                     section: B.JJy.THREAD_MEMBER_LIST,
@@ -156,7 +156,7 @@ let W = k.Ay.getEnableHardwareAcceleration(),
             children: (0, i.jsx)("div", {
                 className: K.k1
             })
-        }) : (0, i.jsxs)(E.A, {
+        }) : (0, i.jsxs)(C.A, {
             className: K.lL,
             "aria-label": H.intl.formatToPlainString(H.t.Uaqbke, {
                 title: n,
@@ -199,18 +199,18 @@ function Q(e) {
     var t, n;
     let l, r, u, m, _, {
             channel: x,
-            guild: E
+            guild: C
         } = e,
-        C = `members-${x.id}`,
+        E = `members-${x.id}`,
         {
             analyticsLocations: I
         } = (0, f.Ay)(g.A.MEMBER_LIST),
-        N = (0, b.q)(x.id, E),
+        N = (0, b.q)(x.id, C),
         S = N.filter(e => e.userIds.length > 0).reverse()[0],
         {
             navigator: T,
             listRef: v
-        } = (t = C, n = Y, l = (0, h.bG)([p.A], () => p.A.keyboardModeEnabled), r = s.useRef(null), u = s.useCallback((e, t) => {
+        } = (t = E, n = Y, l = (0, h.bG)([p.A], () => p.A.keyboardModeEnabled), r = s.useRef(null), u = s.useCallback((e, t) => {
             let i = r.current;
             if (null == i) return;
             let s = parseInt(t, 10),
@@ -261,7 +261,7 @@ function Q(e) {
         channel: x
     });
     let j = o().omit(T.containerProps, ["ref"]),
-        R = P.wT(E);
+        R = P.wT(C);
     return (0, i.jsx)(f.f5, {
         value: I,
         children: (0, i.jsx)(c.hD, {
@@ -282,7 +282,7 @@ function Q(e) {
                                 id: n.id,
                                 label: n.label,
                                 count: n.userIds.length,
-                                guildId: E.id
+                                guildId: C.id
                             }, n.id)
                         },
                         rowHeight: Y,
@@ -311,7 +311,7 @@ function Q(e) {
                         fade: !0,
                         ...j,
                         ...e
-                    }, C)
+                    }, E)
                 })
             })
         })

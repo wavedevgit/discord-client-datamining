@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(354138),
     f = n(111042),
     x = n(767599),
-    E = n(267102),
-    C = n(246356),
+    C = n(267102),
+    E = n(246356),
     I = n(111162),
     N = n(954571),
     b = n(795816),
@@ -41,7 +41,7 @@ function L(e) {
         } = e,
         {
             fetchState: p,
-            voiceBannerCollection: E
+            voiceBannerCollection: C
         } = (t = (0, c.bG)([I.default], () => I.default.onlyShowPreviewAppCollections) ? a.W.PREVIEW : a.W.ACTIVE, s.useEffect(() => {
             (0, g.An)({
                 surface: R,
@@ -57,11 +57,11 @@ function L(e) {
                 activeState: t
             }))[0]
         }),
-        C = p === f.e.FETCHING,
+        E = p === f.e.FETCHING,
         N = s.useMemo(() => {
-            let e = E?.application_directory_collection_items[0];
+            let e = C?.application_directory_collection_items[0];
             return null == e ? null : e.type === o.L.APPLICATION_BANNER ? e : null
-        }, [E?.application_directory_collection_items]),
+        }, [C?.application_directory_collection_items]),
         {
             trackItemImpressionRef: b
         } = (0, m.A)({
@@ -72,7 +72,7 @@ function L(e) {
             sectionOverallPosition: 0,
             promotionalLabel: null != N ? (0, A.Ii)(N.application) : void 0
         });
-    return null == N || null == E || C ? null : (null != N.id && null != N.image_hash && (n = (0, x.DH)({
+    return null == N || null == C || E ? null : (null != N.id && null != N.image_hash && (n = (0, x.DH)({
         itemId: N.id,
         hash: N.image_hash,
         containerWidth: 584
@@ -123,7 +123,7 @@ let M = s.forwardRef(function(e, t) {
     }, [g, f]), s.useEffect(() => {
         a || r()
     }, [r, a]);
-    let x = (0, E.Us)(),
+    let x = (0, C.Us)(),
         {
             analyticsLocations: I,
             newestAnalyticsLocation: R
@@ -156,7 +156,7 @@ let M = s.forwardRef(function(e, t) {
         }, [o, l]);
     return (0, i.jsx)(h.f5, {
         value: I,
-        children: (0, i.jsx)(C.A, {
+        children: (0, i.jsx)(E.A, {
             children: (0, i.jsxs)(d.lGe, {
                 ref: t,
                 "aria-labelledby": O,

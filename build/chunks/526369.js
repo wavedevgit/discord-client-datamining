@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(530804),
     f = n(71393),
     x = n(576705),
-    E = n(686502),
-    C = n(175203),
+    C = n(686502),
+    E = n(175203),
     I = n(263854),
     N = n(652215),
     b = n(207266);
@@ -60,7 +60,7 @@ function S(e) {
         H = (0, A.JZ)(o.M.VC_TILE_ACTIVITIES_ENTRY_POINT),
         F = (0, d.et)(v.id) !== d.xy.CAN_LAUNCH,
         K = null != D && D === v.id,
-        W = U.map(e => t => (0, i.jsx)(C.Ay, {
+        W = U.map(e => t => (0, i.jsx)(E.Ay, {
             participant: e,
             channel: v,
             className: b.V,
@@ -84,14 +84,14 @@ function S(e) {
         trackOnInitialLoad: !0
     }, []);
     let Y = B && !F;
-    null != M && !k && (G >= 2 && Y && !H && !K ? W.push(e => (0, i.jsx)(E.y, {
+    null != M && !k && (G >= 2 && Y && !H && !K ? W.push(e => (0, i.jsx)(C.y, {
         channel: v,
         guild: M,
         width: e,
         inPopout: L,
         handleClose: P,
         userParticipantCount: G
-    })) : V && 1 === G && w && W.push(e => (0, i.jsx)(E.y, {
+    })) : V && 1 === G && w && W.push(e => (0, i.jsx)(C.y, {
         channel: v,
         guild: M,
         width: e,

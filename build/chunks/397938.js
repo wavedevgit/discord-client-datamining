@@ -21,13 +21,13 @@ var i = n(627968),
     f = n(596540),
     x = n(879221);
 n(445368);
-var E = n(652215),
-    C = n(790782),
+var C = n(652215),
+    E = n(790782),
     I = n(480293);
 
 function N() {
     let e = (0, a.bG)([m.default], () => m.default.getCurrentUser());
-    return (0, a.bG)([h.Ay], () => e?.id != null && h.Ay.getMentionCount(e.id, C.P.NOTIFICATION_CENTER) > 0)
+    return (0, a.bG)([h.Ay], () => e?.id != null && h.Ay.getMentionCount(e.id, E.P.NOTIFICATION_CENTER) > 0)
 }
 
 function b(e) {
@@ -36,7 +36,7 @@ function b(e) {
         selectedOverride: n = !1,
         popoutProps: u,
         ref: h
-    } = e, m = (0, l.Vd)("notifications-inbox"), [f, C] = s.useState(!1), b = (0, p.lI)(), S = n || b, {
+    } = e, m = (0, l.Vd)("notifications-inbox"), [f, E] = s.useState(!1), b = (0, p.lI)(), S = n || b, {
         notificationCenterVariant: T
     } = (0, _.X8)({
         location: "NotificationsInboxButtonInner"
@@ -77,7 +77,7 @@ function b(e) {
             badgeDimensions: a
         }
     }(S), R = T === _.U5.LEGACY ? o.K$s : o.XFE, O = (0, a.bG)([A.A], () => A.A.getChannelId()), L = s.useMemo(() => {
-        if (T === _.U5.SIDEBAR) return E.BVt.CHANNEL(E.gNP, O)
+        if (T === _.U5.SIDEBAR) return C.BVt.CHANNEL(C.gNP, O)
     }, [T, O]);
     return (0, i.jsxs)(d.c, {
         ref: h,
@@ -98,8 +98,8 @@ function b(e) {
                     onClick: t,
                     to: L,
                     selected: S || f,
-                    onMouseEnter: () => C(!0),
-                    onMouseLeave: () => C(!1),
+                    onMouseEnter: () => E(!0),
+                    onMouseLeave: () => E(!1),
                     children: (0, i.jsx)(R, {
                         size: "custom",
                         color: "currentColor",

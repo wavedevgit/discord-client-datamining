@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     Ay: () => f,
-    xc: () => E
+    xc: () => C
 });
 var i = n(627968),
     s = n(64700),
@@ -39,7 +39,7 @@ function x(e, t) {
     return s.useMemo(() => [...[...e, ...t].sort((e, t) => -1 * _.default.compare(e.id, t.id))], [e, t])
 }
 
-function E() {
+function C() {
     let {
         items: e
     } = (0, u.LF)(), t = e.length > 0 ? e[0] : null, n = x(e, (0, l.bG)([o.A], () => o.A.localItems)), h = A.ns.useSetting();

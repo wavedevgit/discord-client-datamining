@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(5932),
     f = n(570622),
     x = n(414808),
-    E = n(721592),
-    C = n(454058),
+    C = n(721592),
+    E = n(454058),
     I = n(406704),
     N = n(734057),
     b = n(696451),
@@ -190,15 +190,15 @@ class k extends L.Ay {
             canReorderChannel: m,
             isSubscriptionGated: _,
             isFavoriteSuggestion: f,
-            subtitle: E,
-            forceTopLevelThread: C,
+            subtitle: C,
+            forceTopLevelThread: E,
             embeddedApps: I,
             resolvedUnreadSetting: N,
             enableActivities: b,
             showMenuItemPopover: S,
             markMenuItemPopoverAsDismissed: T,
             channelItemRef: v
-        } = this.props, y = v ?? this.channelItemRef, j = !S && o, R = !S && b && null != I && I.length > 0, O = (0, g.M)(E), L = (0, i.jsxs)("li", {
+        } = this.props, y = v ?? this.channelItemRef, j = !S && o, R = !S && b && null != I && I.length > 0, O = (0, g.M)(C), L = (0, i.jsxs)("li", {
             className: a()(this.getClassName(), {
                 [w.r9]: this.isDisabled(),
                 [w.wH]: n
@@ -229,7 +229,7 @@ class k extends L.Ay {
                     onContextMenu: this.handleContextMenu,
                     connectDragPreview: m ? A : null,
                     isFavoriteSuggestion: f,
-                    channelTypeOverride: C ? U.rbe.GUILD_TEXT : void 0,
+                    channelTypeOverride: E ? U.rbe.GUILD_TEXT : void 0,
                     resolvedUnreadSetting: N,
                     "aria-label": (0, p.Ay)({
                         channel: e,
@@ -274,10 +274,10 @@ function B(e) {
             canManageChannel: T.A.can(U.xBc.MANAGE_CHANNELS, t),
             canReorderChannel: !0 !== l && (n.id === P.Vc || (null != e ? T.A.can(U.xBc.MANAGE_CHANNELS, e) : T.A.can(U.xBc.MANAGE_CHANNELS, n)))
         }
-    }), S = (0, o.bG)([C.A], () => C.A.shouldIndicateNewChannel(n.id, t.id)), {
+    }), S = (0, o.bG)([E.A], () => E.A.shouldIndicateNewChannel(n.id, t.id)), {
         needSubscriptionToAccess: R,
         isSubscriptionGated: O
-    } = (0, E.A)(t.id), L = (0, o.bG)([j.Ay], () => j.Ay.isFavorite(n.id, t.id)), D = (0, _.vL)(t), G = (0, A.Gp)(t.id), w = (0, M.A)({
+    } = (0, C.A)(t.id), L = (0, o.bG)([j.Ay], () => j.Ay.isFavorite(n.id, t.id)), D = (0, _.vL)(t), G = (0, A.Gp)(t.id), w = (0, M.A)({
         channel: t,
         isChannelCollapsed: !1,
         isChannelSelected: d,

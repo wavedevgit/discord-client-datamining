@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(594061),
     f = n(617617),
     x = n(203982),
-    E = n(646468),
-    C = n(492498),
+    C = n(646468),
+    E = n(492498),
     I = n(765627),
     N = n(547945),
     b = n(412484),
@@ -107,7 +107,7 @@ function y(e) {
                                 badgeState: R,
                                 closePopout: F
                             }),
-                            children: k === c.Y2.FOR_YOU ? (0, i.jsx)(E.Ay, {}) : k === c.Y2.MENTIONS ? (0, i.jsx)(C.A, {
+                            children: k === c.Y2.FOR_YOU ? (0, i.jsx)(C.Ay, {}) : k === c.Y2.MENTIONS ? (0, i.jsx)(E.A, {
                                 onJump: q
                             }) : W && Y && k === c.Y2.BOOKMARKS ? (0, i.jsx)(_.J, {
                                 closePopout: F

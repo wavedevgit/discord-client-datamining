@@ -86,9 +86,9 @@ function p(e) {
         onClick: g,
         onContextMenu: f,
         onHoverChange: x,
-        onKeyDown: E,
+        onKeyDown: C,
         treeItemProps: {
-            onFocus: C,
+            onFocus: E,
             ...I
         },
         "aria-setsize": N,
@@ -105,8 +105,8 @@ function p(e) {
             onContextMenu: f,
             onMouseEnter: v,
             onMouseLeave: y,
-            onKeyDown: E,
-            onFocus: C,
+            onKeyDown: C,
+            onFocus: E,
             focusProps: {
                 enabled: !1
             },

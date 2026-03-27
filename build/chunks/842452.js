@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(263715),
     f = n(941971),
     x = n(447253),
-    E = n(531053),
-    C = n(107385),
+    C = n(531053),
+    E = n(107385),
     I = n(900848),
     N = n(550591),
     b = n(114329),
@@ -118,7 +118,7 @@ let y = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                         [v.oR]: !ei && Z && !O
                     }),
                     "data-dnd-name": er,
-                    children: ei ? (0, i.jsx)(C.A, {
+                    children: ei ? (0, i.jsx)(E.A, {
                         isFolder: !0
                     }) : (0, i.jsx)(x.A, {
                         folderNode: u,
@@ -139,7 +139,7 @@ let y = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                         "aria-posinset": z
                     })
                 })
-            }), P ? (0, i.jsx)(E.Ay, {
+            }), P ? (0, i.jsx)(C.Ay, {
                 name: er,
                 targetNode: u,
                 onDragOverChanged: el
@@ -173,7 +173,7 @@ let y = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                     "aria-label": u.name,
                     children: Q.map((t, n) => F(t, n, Q.length, e.height))
                 }, s)
-            }), P && O ? (0, i.jsx)(E.qv, {
+            }), P && O ? (0, i.jsx)(C.qv, {
                 name: er,
                 targetNode: u
             }) : null]

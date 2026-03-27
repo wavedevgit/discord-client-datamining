@@ -1,7 +1,7 @@
 /** chunk id: 770904 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => C
+    A: () => E
 });
 var i = n(627968),
     s = n(64700),
@@ -20,12 +20,12 @@ var i = n(627968),
     g = n(49999),
     f = n(294726),
     x = n(985018),
-    E = n(866153);
-let C = s.memo(function(e) {
+    C = n(866153);
+let E = s.memo(function(e) {
     let {
         guildId: t,
         selected: n
-    } = e, C = (0, r.useHasAnyModalOpen)(), I = (0, l.bG)([A.A], () => A.A.hasLayers()), N = (0, u.xr)(e => e.fullScreenLayers.length > 0), [b, S] = (0, c.ww)([a.M.GAME_SERVER_HOSTING_NEW_BADGE], t), T = b === a.M.GAME_SERVER_HOSTING_NEW_BADGE, [v, y] = (0, c.ww)(C || I || N || !T ? [] : [a.M.GAME_SERVER_HOSTING_NEW_COACHMARK], t), j = s.useCallback(e => {
+    } = e, E = (0, r.useHasAnyModalOpen)(), I = (0, l.bG)([A.A], () => A.A.hasLayers()), N = (0, u.xr)(e => e.fullScreenLayers.length > 0), [b, S] = (0, c.ww)([a.M.GAME_SERVER_HOSTING_NEW_BADGE], t), T = b === a.M.GAME_SERVER_HOSTING_NEW_BADGE, [v, y] = (0, c.ww)(E || I || N || !T ? [] : [a.M.GAME_SERVER_HOSTING_NEW_COACHMARK], t), j = s.useCallback(e => {
         S(e), y(e)
     }, [S, y]), R = s.useCallback(() => {
         j(g.i.USER_DISMISS), (0, h.pX)(_.BVt.CHANNEL(t, p.VV.GAME_SERVERS))
@@ -49,7 +49,7 @@ let C = s.memo(function(e) {
             trailing: T ? (0, i.jsx)(o.LpS, {
                 disableColor: !0,
                 text: x.intl.string(x.t.y2b7CA),
-                className: E.q
+                className: C.q
             }) : null
         }), L && M()]
     })

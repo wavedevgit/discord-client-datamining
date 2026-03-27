@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(183184),
     f = n(384059),
     x = n(480890),
-    E = n(643501),
-    C = n(880144),
+    C = n(643501),
+    E = n(880144),
     I = n(698441),
     N = n(394412),
     b = n(859894),
@@ -71,7 +71,7 @@ function eu(e) {
         channel: t
     } = e, {
         parentAnalyticsLocation: n
-    } = (0, A.Ay)(), l = (0, ei.A)(t.id), [o, h] = (0, ea.A)(t), m = (0, en.L)(t), _ = (0, es.Vv)(), p = (0, es.tp)(), g = s.useRef(null), [x, E] = (0, c.V)("age-verification-stage-popover-dismissed", !1), C = s.useContext(D.vG);
+    } = (0, A.Ay)(), l = (0, ei.A)(t.id), [o, h] = (0, ea.A)(t), m = (0, en.L)(t), _ = (0, es.Vv)(), p = (0, es.tp)(), g = s.useRef(null), [x, C] = (0, c.V)("age-verification-stage-popover-dismissed", !1), E = s.useContext(D.vG);
     if (l) return null;
     let I = p && !x;
     return (0, i.jsxs)(i.Fragment, {
@@ -85,7 +85,7 @@ function eu(e) {
             }(o, m, _, p, x),
             iconComponent: _ ? r._xi : r.E7M,
             onClick: () => {
-                (0, f.X)(n, f.O.REQUEST_TO_SPEAK, !o), E(!0), _ ? d.A.showAgeVerificationGetStartedModal({
+                (0, f.X)(n, f.O.REQUEST_TO_SPEAK, !o), C(!0), _ ? d.A.showAgeVerificationGetStartedModal({
                     entryPoint: u.q1.STAGE_CHANNEL_RAISE_HAND
                 }) : h()
             },
@@ -100,16 +100,16 @@ function eu(e) {
             gradientColor: "blue",
             title: eo.intl.string(eo.t.zvubnM),
             body: eo.intl.string(eo.t["/wx+J2"]),
-            shouldShow: !C,
+            shouldShow: !E,
             actions: [{
                 text: eo.intl.string(eo.t.KXVgjt),
                 onClick: () => {
                     d.A.showAgeVerificationGetStartedModal({
                         entryPoint: u.q1.STAGE_CHANNEL_AGE_VERIFICATION_PROMPT
-                    }), E(!0)
+                    }), C(!0)
                 }
             }],
-            onRequestClose: () => E(!0)
+            onRequestClose: () => C(!0)
         })]
     })
 }
@@ -160,7 +160,7 @@ function em(e) {
         canManageGuildEvent: c
     } = (0, T.nr)(t), d = (0, l.bG)([Q.A], () => Q.A.getStageInstanceByChannel(t.id), [t.id]), u = (0, l.bG)([I.Ay], () => I.Ay.getGuildScheduledEvent(d?.guild_scheduled_event_id)), {
         suppress: m
-    } = (0, R.A)(t), _ = V.default.getId(), [p] = (0, ea.A)(t), g = X.Ay.isModerator(_, t.id), E = (0, z.Ni)(t.id), C = c(u), {
+    } = (0, R.A)(t), _ = V.default.getId(), [p] = (0, ea.A)(t), g = X.Ay.isModerator(_, t.id), C = (0, z.Ni)(t.id), E = c(u), {
         parentAnalyticsLocation: N
     } = (0, A.Ay)(), b = s.useRef(null), v = () => (function(e) {
         let {
@@ -172,7 +172,7 @@ function em(e) {
         channel: t,
         appContext: a
     });
-    return (g || C) && null != d ? (0, i.jsx)(r.YNO, {
+    return (g || E) && null != d ? (0, i.jsx)(r.YNO, {
         targetElementRef: b,
         renderPopout: e => {
             let {
@@ -220,7 +220,7 @@ function em(e) {
                 popoutOpen: s
             })
         }
-    }) : m && !E || p ? (0, i.jsx)(P.A, {
+    }) : m && !C || p ? (0, i.jsx)(P.A, {
         label: eo.intl.string(eo.t.SMKyih),
         onClick: v
     }) : (0, i.jsx)(P.A, {
@@ -280,13 +280,13 @@ let eg = s.memo(function(e) {
         suppress: a,
         selfMute: o,
         mute: c
-    } = (0, R.A)(t), d = (0, z.Ni)(t.id), u = (0, l.bG)([E.default], () => null != E.default.getAwaitingRemoteSessionInfo()), {
+    } = (0, R.A)(t), d = (0, z.Ni)(t.id), u = (0, l.bG)([C.default], () => null != C.default.getAwaitingRemoteSessionInfo()), {
         cameraUnavailable: h,
         enabled: f
     } = (0, v.A)(), I = (0, j.A)(t), {
         limit: N,
         reachedLimit: b
-    } = (0, y.A)(t), S = (0, l.bG)([K.default], () => K.default.getCurrentUser()), T = (0, l.bG)([B.Ay], () => (0, C.A)(B.Ay)), D = (0, l.bG)([F.A], () => F.A.getVoiceChannelId() === t.id, [t.id]), U = (0, l.bG)([m.A], () => m.A.getStreamParticipants(t.id)[0], [t.id]), P = (0, J.qT)(t.id), V = N > 0, H = b && !P || null != U && U.user.id !== S?.id, W = (0, x.s)("AudioDeviceMenu", n, {
+    } = (0, y.A)(t), S = (0, l.bG)([K.default], () => K.default.getCurrentUser()), T = (0, l.bG)([B.Ay], () => (0, E.A)(B.Ay)), D = (0, l.bG)([F.A], () => F.A.getVoiceChannelId() === t.id, [t.id]), U = (0, l.bG)([m.A], () => m.A.getStreamParticipants(t.id)[0], [t.id]), P = (0, J.qT)(t.id), V = N > 0, H = b && !P || null != U && U.user.id !== S?.id, W = (0, x.s)("AudioDeviceMenu", n, {
         entrypoint: er.GK.CARET
     }), Y = s.useRef(null), q = s.useRef(null);
     if (null == S) return null;

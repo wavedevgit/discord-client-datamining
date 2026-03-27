@@ -24,10 +24,10 @@ function f(e) {
     let {
         channelId: t,
         showDismiss: f = !0
-    } = e, x = (0, s.bG)([o.A], () => o.A.getChannel(t), [t]), E = (0, A.RO)(t), C = null != (0, A.Qs)(t), {
+    } = e, x = (0, s.bG)([o.A], () => o.A.getChannel(t), [t]), C = (0, A.RO)(t), E = null != (0, A.Qs)(t), {
         canManageGuildEvent: I
-    } = (0, r.nr)(x), N = (0, s.bG)([c.A], () => E.filter(e => !c.A.isEventDismissed(e.id)), [E]), b = (0, s.cf)([u.Ay], () => N.reduce((e, t) => (e[t.id] = u.Ay.getUserCount(t.id, (0, m.G3)(t)), e), {}), [N]);
-    return N.length < 1 || C ? null : (0, i.jsx)(i.Fragment, {
+    } = (0, r.nr)(x), N = (0, s.bG)([c.A], () => C.filter(e => !c.A.isEventDismissed(e.id)), [C]), b = (0, s.cf)([u.Ay], () => N.reduce((e, t) => (e[t.id] = u.Ay.getUserCount(t.id, (0, m.G3)(t)), e), {}), [N]);
+    return N.length < 1 || E ? null : (0, i.jsx)(i.Fragment, {
         children: N.map(e => (0, i.jsx)(_.A, {
             icon: (0, i.jsx)(a.CTc, {
                 size: "custom",

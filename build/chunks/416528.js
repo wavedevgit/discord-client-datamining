@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(51082),
     f = n(275731),
     x = n(289552),
-    E = n(246356),
-    C = n(977851),
+    C = n(246356),
+    E = n(977851),
     I = n(772475),
     N = n(481947),
     b = n(485296),
@@ -97,7 +97,7 @@ function O(e) {
     }, "video-warning")), g && M.push((0, i.jsx)(c.YNO, {
         targetElementRef: l,
         position: "bottom",
-        renderPopout: () => (0, i.jsx)(E.A, {
+        renderPopout: () => (0, i.jsx)(C.A, {
             children: (0, i.jsx)(T.A, {
                 channel: t
             })
@@ -117,7 +117,7 @@ function O(e) {
         }
     }, "call-members-popout")), O && !L && M.push((0, i.jsx)(p.A, {
         className: j.x6
-    }, "for-later")), y && M.push((0, i.jsx)(C.V, {
+    }, "for-later")), y && M.push((0, i.jsx)(E.V, {
         channelId: t.id,
         className: j.x6,
         disabled: n

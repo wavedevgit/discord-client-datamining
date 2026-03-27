@@ -25,10 +25,10 @@ function x(e) {
         channelId: t,
         className: n,
         ...x
-    } = e, E = s.useRef(null), C = (0, a.bG)([m.Ay], () => m.Ay.getFocusedLayout() === _.E8.RESIZABLE), I = s.useCallback(() => {
-        let e = C ? _.E8.NO_CHAT : _.E8.RESIZABLE;
+    } = e, C = s.useRef(null), E = (0, a.bG)([m.Ay], () => m.Ay.getFocusedLayout() === _.E8.RESIZABLE), I = s.useCallback(() => {
+        let e = E ? _.E8.NO_CHAT : _.E8.RESIZABLE;
         (0, A.i5)(e)
-    }, [C]), {
+    }, [E]), {
         unreadCount: N,
         mentionCount: b
     } = function(e) {
@@ -46,13 +46,13 @@ function x(e) {
             isTyping: t
         }
     }(t), S = s.useCallback(() => {
-        E.current?.focus()
+        C.current?.focus()
     }, []);
     (0, h.Vo)({
         event: p.jej.FOCUS_CHAT_BUTTON,
         handler: S
     });
-    let T = C ? g.intl.string(g.t["5MstTl"]) : g.intl.string(g.t.kkKapG),
+    let T = E ? g.intl.string(g.t["5MstTl"]) : g.intl.string(g.t.kkKapG),
         v = [T];
     b > 0 && v.push(g.intl.formatToPlainString(g.t["3l1GOx"], {
         mentionCount: b
@@ -64,7 +64,7 @@ function x(e) {
         className: f.iE,
         children: [(0, i.jsx)(c.l, {
             isTrayButton: !0,
-            buttonRef: E,
+            buttonRef: C,
             onClick: I,
             label: T,
             "aria-label": v.join(", "),

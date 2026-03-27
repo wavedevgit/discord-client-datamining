@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(355622),
     f = n(408018),
     x = n(133343),
-    E = n(171593),
-    C = n(915089),
+    C = n(171593),
+    E = n(915089),
     I = n(314307),
     N = n(58736),
     b = n(636922),
@@ -145,7 +145,7 @@ function X(e) {
         }(n, l),
         {
             textAreaState: x,
-            setTextAreaState: E
+            setTextAreaState: C
         } = function(e, t) {
             let [n, i] = s.useState((0, f.N3)());
             return s.useEffect(() => {
@@ -161,7 +161,7 @@ function X(e) {
                 setTextAreaState: i
             }
         }(n, p),
-        C = (0, P.EN)(n),
+        E = (0, P.EN)(n),
         {
             isGeneratingAI: N,
             enableAIFeatures: b,
@@ -244,12 +244,12 @@ function X(e) {
             parentChannel: n,
             parentMessageId: l,
             threadSettings: _,
-            privateThreadMode: C,
+            privateThreadMode: E,
             textAreaState: x,
             location: d,
             enableAIFeatures: b
         }),
-        w = (0, P.Iy)(_, C) ? o.tn0 : o.ysw;
+        w = (0, P.Iy)(_, E) ? o.tn0 : o.ysw;
     return (0, i.jsx)("div", {
         className: K.TE,
         onMouseDown: A,
@@ -288,7 +288,7 @@ function X(e) {
                                     startedFromMessage: null != l,
                                     threadSettings: _,
                                     updateThreadSettings: g,
-                                    privateThreadMode: C
+                                    privateThreadMode: E
                                 }) : null]
                             })]
                         }), (0, i.jsx)(Z, {
@@ -301,7 +301,7 @@ function X(e) {
                     children: [(0, i.jsx)($, {
                         parentChannel: n,
                         textAreaState: x,
-                        setTextAreaState: E,
+                        setTextAreaState: C,
                         submit: O,
                         error: R
                     }), (0, i.jsx)(h.Ay, {
@@ -350,7 +350,7 @@ function J(e) {
         getThreadNameInputAccessory: h
     } = e, A = s.name ?? "", m = (0, U.vr)(a, {
         content: A
-    }), _ = (0, P.l1)(t, n), p = null != n && !u, g = (0, C.GV)(), f = u ? F.intl.string(F.t["Nb2/RE"]) : "" !== _ ? _ : F.intl.string(F.t["Nb2/RE"]);
+    }), _ = (0, P.l1)(t, n), p = null != n && !u, g = (0, E.GV)(), f = u ? F.intl.string(F.t["Nb2/RE"]) : "" !== _ ? _ : F.intl.string(F.t["Nb2/RE"]);
     return (0, i.jsx)(o.ksK, {
         label: F.intl.string(p ? F.t.JPvIiL : F.t.j3XWjD),
         trailing: h(r),
@@ -401,15 +401,15 @@ function $(e) {
         event: H.jej.TEXTAREA_BLUR,
         handler: p
     });
-    let C = (0, r.bG)([O.A], () => O.A.can(H.xBc.ATTACH_FILES, t)),
+    let E = (0, r.bG)([O.A], () => O.A.can(H.xBc.ATTACH_FILES, t)),
         I = (0, U.vr)(h, {
             content: n.textValue
         });
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(E.A, {
+        children: [(0, i.jsx)(C.A, {
             channelId: t.id,
             type: Y,
-            canAttachFiles: C
+            canAttachFiles: E
         }), (0, i.jsx)("div", {
             className: K.xN,
             children: (0, i.jsx)(o.dzK, {

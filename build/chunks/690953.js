@@ -24,9 +24,9 @@ function p(e) {
         g = p?.channelId === e.id,
         f = (0, r.J)(e) && !e.isPrivate(),
         x = (0, r.A)(e),
-        E = !(0, s.bG)([c.A], () => c.A.isInChannel(e.id)) && x || f,
-        C = (0, h.A)();
-    if (!g && 0 === C.length) return null;
+        C = !(0, s.bG)([c.A], () => c.A.isInChannel(e.id)) && x || f,
+        E = (0, h.A)();
+    if (!g && 0 === E.length) return null;
     let I = (0, A.A)(void 0);
     return g ? (0, i.jsx)(l.Drp, {
         label: _.intl.string(_.t.PlwgdU),
@@ -39,8 +39,8 @@ function p(e) {
             type: "icon",
             icon: I
         },
-        disabled: E
-    }) : C.map(s => {
+        disabled: C
+    }) : E.map(s => {
         var r, o;
         let c = (0, A.A)(s.type);
         return (0, i.jsx)(l.Drp, {
@@ -74,7 +74,7 @@ function p(e) {
                 type: "icon",
                 icon: c
             },
-            disabled: E
+            disabled: C
         }, s.id)
     })
 }

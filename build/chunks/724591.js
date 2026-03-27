@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(832163),
     f = n(133015),
     x = n(44724),
-    E = n(94484),
-    C = n(849134),
+    C = n(94484),
+    E = n(849134),
     I = n(203548),
     N = n(186111),
     b = n(371794),
@@ -123,7 +123,7 @@ let L = s.memo(function(e) {
                 let e = P ? j.intl.string(j.t["z/QEIP"]) : j.intl.formatToPlainString(j.t["9J4h1a"], {
                     applicationName: k.applicationName
                 });
-                return (0, i.jsx)(C.A, {
+                return (0, i.jsx)(E.A, {
                     onActionClick: X,
                     onActionMouseDown: Q,
                     onRender: Z,
@@ -135,7 +135,7 @@ let L = s.memo(function(e) {
                     overlayImageUrl: P ? O.A : void 0
                 })
             }
-            return Y ? (0, i.jsx)(E.A, {
+            return Y ? (0, i.jsx)(C.A, {
                 onActionClick: X,
                 onActionMouseDown: Q,
                 onRender: Z,

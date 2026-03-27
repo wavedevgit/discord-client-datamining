@@ -21,8 +21,8 @@ var i = n(627968),
     g = n(429913),
     f = n(520698),
     x = n(659974),
-    E = n(164617),
-    C = n(66004),
+    C = n(164617),
+    E = n(66004),
     I = n(958005),
     N = n(384059),
     b = n(609425),
@@ -73,7 +73,7 @@ let eh = [er.lp.ACTIVITY],
         let r, o, d, {
                 participant: u,
                 popoutType: _,
-                onDoubleClick: E,
+                onDoubleClick: C,
                 onContextMenu: I,
                 onClick: N,
                 onMouseDown: b,
@@ -93,11 +93,11 @@ let eh = [er.lp.ACTIVITY],
                 ignored: ep = !1,
                 fit: ef = v.$.CONTAIN,
                 paused: ex = !1,
-                pulseSpeakingIndicator: eE = !1,
-                forceIdle: eC = !1,
+                pulseSpeakingIndicator: eC = !1,
+                forceIdle: eE = !1,
                 controlsBottom: eI
             } = e,
-            eN = s.useContext(P.vG) || eC,
+            eN = s.useContext(P.vG) || eE,
             [eb, eS] = s.useState(!1),
             eT = U.Q_.useSetting(),
             ev = (0, c.bG)([H.default], () => H.default.isStreamInfoOverlayEnabled),
@@ -173,8 +173,8 @@ let eh = [er.lp.ACTIVITY],
                 N?.(u, e)
             }, [N, u]),
             e0 = s.useCallback(e => {
-                E?.(u, e)
-            }, [E, u]),
+                C?.(u, e)
+            }, [C, u]),
             e1 = s.useCallback((e, t, n) => {
                 I?.(u, e, t, n)
             }, [I, u]),
@@ -216,7 +216,7 @@ let eh = [er.lp.ACTIVITY],
                     blocked: e_,
                     ignored: ep,
                     noVideoRender: eA || eU,
-                    pulseSpeakingIndicator: eE
+                    pulseSpeakingIndicator: eC
                 }), e7 = (0, i.jsx)(ei.s, {
                     participant: u,
                     channelId: z.id
@@ -303,7 +303,7 @@ let eh = [er.lp.ACTIVITY],
                                     userId: eL
                                 }) : null, u.type === er.lp.USER ? (0, i.jsx)("div", {
                                     className: eu.nl,
-                                    children: (0, i.jsx)(C.A, {
+                                    children: (0, i.jsx)(E.A, {
                                         userId: eL,
                                         channelId: z.id,
                                         guildId: z.getGuildId(),
@@ -464,7 +464,7 @@ let eg = s.memo(e => {
         blocked: p,
         ignored: g,
         participantId: x,
-        participantType: C,
+        participantType: E,
         participantUserId: T,
         channel: v,
         platform: y,
@@ -482,7 +482,7 @@ let eg = s.memo(e => {
         paused: H,
         controlsBottom: K,
         streamId: W
-    } = e, Y = (0, c.bG)([F.Ay], () => null != T && F.Ay.isLocalVideoAutoDisabled(T, (0, f.A)(C)), [T, C]), q = (0, b.A)({
+    } = e, Y = (0, c.bG)([F.Ay], () => null != T && F.Ay.isLocalVideoAutoDisabled(T, (0, f.A)(E)), [T, E]), q = (0, b.A)({
         userId: T,
         guildId: v.getGuildId()
     }), X = (0, S.a)({
@@ -495,7 +495,7 @@ let eg = s.memo(e => {
             };
         return z.A.addChangeListener(t), () => z.A.removeChangeListener(t)
     }, []);
-    let ee = !k && C === er.lp.STREAM && w && (!J || G),
+    let ee = !k && E === er.lp.STREAM && w && (!J || G),
         et = function(e) {
             let {
                 localMuted: t,
@@ -520,10 +520,10 @@ let eg = s.memo(e => {
             }
         }, "animate-always"),
         ei = [];
-    return A && C === er.lp.STREAM && ei.push((0, i.jsx)(j.A, {
+    return A && E === er.lp.STREAM && ei.push((0, i.jsx)(j.A, {
         streamId: W,
         paused: H
-    }, "zoom-controls")), A ? B === E.N.CALL_TILE && (ei.push((0, i.jsx)(ep, {
+    }, "zoom-controls")), A ? B === C.N.CALL_TILE && (ei.push((0, i.jsx)(ep, {
         channelId: v.id,
         participantId: x,
         hideWhenInactive: !1,
@@ -587,7 +587,7 @@ let eg = s.memo(e => {
                 className: eu.ac,
                 color: "none",
                 variant: J ? "text-sm/normal" : "text-md/normal",
-                children: [null != et && C === er.lp.USER && (0, i.jsx)(et, {
+                children: [null != et && E === er.lp.USER && (0, i.jsx)(et, {
                     className: eu.gr,
                     size: "xs",
                     color: "currentColor"
@@ -605,7 +605,7 @@ let eg = s.memo(e => {
                         className: eu.Q6
                     })
                 }) : null, t ? null : (0, i.jsx)(em, {
-                    participantType: C,
+                    participantType: E,
                     platform: y,
                     className: eu.gr
                 }), null == n || "" === n || t ? null : (0, i.jsx)("span", {

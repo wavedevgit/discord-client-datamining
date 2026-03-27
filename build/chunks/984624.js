@@ -23,8 +23,8 @@ function g(e) {
         channelId: t,
         onClick: n
     } = e, g = (0, r.Us)(), f = (0, _.Qs)(t), x = (0, l.bG)([u.A], () => u.A.getChannel(t), [t]), {
-        canManageGuildEvent: E
-    } = (0, o.nr)(x), C = E(f), I = s.useRef(null);
+        canManageGuildEvent: C
+    } = (0, o.nr)(x), E = C(f), I = s.useRef(null);
     if (null == f) return null;
     let N = () => {
             null != x && (0, m.A)(x) ? (0, h.Py)(x, g) : n()
@@ -32,7 +32,7 @@ function g(e) {
         b = () => {
             A.A.endEvent(f.id, f.guild_id)
         };
-    return C ? (0, i.jsx)(a.YNO, {
+    return E ? (0, i.jsx)(a.YNO, {
         targetElementRef: I,
         renderPopout: e => {
             let {

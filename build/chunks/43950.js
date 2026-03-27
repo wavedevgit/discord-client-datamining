@@ -21,8 +21,8 @@ var i = n(627968),
     g = n(403362),
     f = n(427262),
     x = n(652215),
-    E = n(985018),
-    C = n(777741);
+    C = n(985018),
+    E = n(777741);
 let I = h.DN.SIZE_24;
 
 function N(e) {
@@ -40,7 +40,7 @@ function N(e) {
             return e = p.Ay.getApplicationIconURL({
                 id: s.application.id,
                 icon: s.application.icon
-            }), t = s.application.name, n = a ? C.p_ : C.P3, (0, i.jsx)(o.m, {
+            }), t = s.application.name, n = a ? E.p_ : E.P3, (0, i.jsx)(o.m, {
                 text: t,
                 position: "top",
                 asContainer: !0,
@@ -52,14 +52,14 @@ function N(e) {
             })
         } let h = r.large_image ?? r.small_image,
         A = (0, d.A)(t),
-        m = a ? C.p_ : A ? C.RC : C.P3,
+        m = a ? E.p_ : A ? E.RC : E.P3,
         g = null != h ? (0, i.jsx)("img", {
             alt: r.large_text ?? "",
             src: (0, _.uD)(u, h, [128, 128]),
             className: m
         }) : null;
     return A && null != l ? (g = (0, i.jsx)(c.DUT, {
-        className: C.vk,
+        className: E.vk,
         onClick: () => {
             l(t, n.id)
         },
@@ -82,7 +82,7 @@ function b(e) {
     else {
         if (!(null != t && (0, d.A)(t)) || null == t.sync_id || null == a || null == s) return null;
         r = a, o = (0, i.jsx)(c.DUT, {
-            className: C.wp,
+            className: E.wp,
             onClick: () => {
                 s(t)
             },
@@ -92,7 +92,7 @@ function b(e) {
     return (0, i.jsx)(c.Heading, {
         variant: l ? "heading-sm/medium" : "heading-sm/semibold",
         color: "text-strong",
-        className: C.wx,
+        className: E.wx,
         children: o
     })
 }
@@ -106,13 +106,13 @@ function S(e) {
     } = e, r = t?.details, o = t?.state, c = r;
     return (null != t && (0, d.A)(t) && null != o && (c = [(0, i.jsx)(A.A, {
         artists: o,
-        linkClassName: l ? C.QJ : C.hw,
+        linkClassName: l ? E.QJ : E.hw,
         canOpen: null != t.sync_id,
         onOpenSpotifyArtist: e => {
             s?.(t, n.id, e)
         }
     }, o)]), null == c || "" === c) ? null : (0, i.jsx)("div", {
-        className: a()(C.Mo, l ? C.JF : C.Tf, C.p9),
+        className: a()(E.Mo, l ? E.JF : E.Tf, E.p9),
         children: c
     })
 }
@@ -122,7 +122,7 @@ function T(e) {
         activity: t
     } = e, n = t?.state;
     return null == n || "" === n || (0, d.A)(t) ? null : (0, i.jsx)("div", {
-        className: a()(C.Mo, C.Tf, C.p9, C.__invalid_activity),
+        className: a()(E.Mo, E.Tf, E.p9, E.__invalid_activity),
         children: n
     })
 }
@@ -143,7 +143,7 @@ function v(e) {
     return (0, i.jsx)(u.A, {
         start: s,
         end: l,
-        className: C.Jq,
+        className: E.Jq,
         themed: !0,
         singleLine: !0
     })
@@ -162,25 +162,25 @@ function y(e) {
     } = e, p = [];
     null != n ? p = Array.from(n.embeddedActivity.userIds) : (0, d.A)(t) && null != c && (p = c.map(e => e.user.id));
     let x = (0, r.yK)([m.default], () => p.map(e => m.default.getUser(e)).filter(g.Vq)),
-        E = null != n || (0, d.A)(t),
+        C = null != n || (0, d.A)(t),
         y = s.useMemo(() => {
             let e = new Map;
-            return E && null != c && c.forEach(t => {
+            return C && null != c && c.forEach(t => {
                 let n = t.member;
                 null != n && e.set(t.user.id, n)
             }), e
-        }, [c, E]);
-    return E ? (0, i.jsxs)("div", {
-        className: C.ec,
+        }, [c, C]);
+    return C ? (0, i.jsxs)("div", {
+        className: E.ec,
         children: [(0, i.jsxs)("div", {
-            className: C.Wh,
+            className: E.Wh,
             children: [(0, i.jsx)(N, {
                 activity: t,
                 user: l,
                 embeddedApp: n,
                 onOpenSpotifyAlbum: _
             }), (0, i.jsxs)("div", {
-                className: C.X0,
+                className: E.X0,
                 children: [(0, i.jsx)(b, {
                     activity: t,
                     embeddedApp: n,
@@ -192,7 +192,7 @@ function y(e) {
                 }), (0, i.jsx)(T, {
                     activity: t
                 }), p.length > 0 && (0, i.jsx)(h.Ay, {
-                    className: C.TN,
+                    className: E.TN,
                     guildId: a.guild_id,
                     users: x,
                     size: I,
@@ -208,7 +208,7 @@ function y(e) {
                             children: (0, i.jsx)("img", {
                                 src: e.getAvatarURL(a.guild_id, I),
                                 alt: n,
-                                className: C.my
+                                className: E.my
                             }, e.id)
                         }, e.id)
                     }
@@ -232,17 +232,17 @@ function j(e) {
     if (!(null != n || (0, d.A)(t))) return null;
     let o = null,
         u = t?.type ?? null;
-    return o = null != n ? u === x.$pd.WATCHING ? E.intl.string(E.t.xeqvTg) : E.intl.string(E.t.J4MQFX) : E.intl.string(E.t.ep6av7), (0, i.jsxs)("div", {
-        className: C.ec,
+    return o = null != n ? u === x.$pd.WATCHING ? C.intl.string(C.t.xeqvTg) : C.intl.string(C.t.J4MQFX) : C.intl.string(C.t.ep6av7), (0, i.jsxs)("div", {
+        className: E.ec,
         children: [null != o && (0, i.jsx)("div", {
-            className: C.N1,
+            className: E.N1,
             children: (0, i.jsx)(c.Heading, {
                 variant: "text-xs/medium",
                 color: "text-muted",
                 children: o
             })
         }), (0, i.jsxs)("div", {
-            className: C.Wh,
+            className: E.Wh,
             children: [(0, i.jsx)(N, {
                 activity: t,
                 user: s,
@@ -250,7 +250,7 @@ function j(e) {
                 onOpenSpotifyAlbum: r,
                 compact: !0
             }), (0, i.jsxs)("div", {
-                className: C.Be,
+                className: E.Be,
                 children: [(0, i.jsx)(b, {
                     activity: t,
                     embeddedApp: n,

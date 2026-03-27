@@ -44,13 +44,13 @@ let p = new Map,
     f = new Map,
     x = [];
 
-function E(e) {
+function C(e) {
     let t = p.get(e),
         n = t?.values(A).find(e => e.eventType === d.i.USER_LEFT);
     null != n ? f.set(e, n.userId) : f.delete(e)
 }
 
-function C(e, t) {
+function E(e, t) {
     let n = h(t),
         i = p.get(e);
     return null != i && (i.set(n, {
@@ -126,8 +126,8 @@ let b = new N(l.h, {
                 userId: i,
                 channelId: s
             } = e;
-            !o.A.isBlockedOrIgnored(i) && null != s && p.has(s) && C(s, i) && (t = !0, n.add(s))
-        }), n.forEach(E), t
+            !o.A.isBlockedOrIgnored(i) && null != s && p.has(s) && E(s, i) && (t = !0, n.add(s))
+        }), n.forEach(C), t
     },
     CHANNEL_DELETE: function(e) {
         let {
@@ -140,7 +140,7 @@ let b = new N(l.h, {
             channelId: t
         } = e;
         if (!p.has(t)) return p.has(t) || (p.set(t, new s.J(m, _)), Object.values(c.A.getVoiceStatesForChannel(t)).forEach(e => {
-            C(t, e.userId)
+            E(t, e.userId)
         })), !0;
         return !1
     },
@@ -188,7 +188,7 @@ let b = new N(l.h, {
                 eventType: d.i.ACTIVITY_ENDED
             }), !0
         }(t, e, n, s, a) || l;
-        return l && E(t), l
+        return l && C(t), l
     },
     VOICE_CHANNEL_HISTORY_UPDATE_LAST_FETCH_TIME: function(e) {
         let {

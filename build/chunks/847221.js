@@ -28,7 +28,7 @@ function A(e) {
         x = () => {
             clearTimeout(_.current), A(!0)
         },
-        E = () => {
+        C = () => {
             _.current = setTimeout(() => A(!1), 100)
         };
     return null == p || null == g ? null : (0, i.jsx)(a.YNO, {
@@ -36,14 +36,14 @@ function A(e) {
         position: "right",
         shouldShow: n,
         onRequestOpen: x,
-        onRequestClose: E,
+        onRequestClose: C,
         useMouseEnter: !0,
         spacing: 17,
         renderPopout: () => (0, i.jsx)(d.A, {
             channel: t,
             source: "ghost_user",
             onMouseEnter: x,
-            onMouseLeave: E
+            onMouseLeave: C
         }),
         children: e => {
             let {
@@ -56,7 +56,7 @@ function A(e) {
                 "aria-haspopup": "dialog",
                 onClick: x,
                 ...s,
-                onMouseLeave: E,
+                onMouseLeave: C,
                 children: [(0, i.jsxs)("div", {
                     className: h.R3,
                     children: [(0, i.jsx)(a.euF, {

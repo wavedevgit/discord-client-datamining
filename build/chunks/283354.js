@@ -32,17 +32,17 @@ function A(e) {
     s.useEffect(() => {
         g || f || null != x || (0, r.Z_)()
     });
-    let E = () => {
+    let C = () => {
         d.ZM(t.channelId, t.guildId)
     };
 
-    function C() {
+    function E() {
         (0, r.Z_)(), m?.()
     }
     return (0, i.jsxs)(a.W1t, {
         "data-menu-migrated": !0,
         navId: "guild-entry-context",
-        onClose: C,
+        onClose: E,
         "aria-label": h.intl.string(h.t.HpQykc),
         onSelect: A,
         children: [(0, i.jsxs)(a.rXV, {
@@ -58,7 +58,7 @@ function A(e) {
                             ...n,
                             entry: t
                         })
-                    }), C()
+                    }), E()
                 },
                 leadingAccessory: {
                     type: "icon",
@@ -74,8 +74,8 @@ function A(e) {
                             guildName: t.name
                         }),
                         confirmText: h.intl.string(h.t.N86XcP),
-                        onConfirm: E
-                    }), C()
+                        onConfirm: C
+                    }), E()
                 },
                 color: "danger",
                 leadingAccessory: {
@@ -86,7 +86,7 @@ function A(e) {
                 id: "report-server-listing",
                 label: h.intl.string(h.t.Aen9eh),
                 action: function() {
-                    null != t && ((0, c.sJ)(t), C())
+                    null != t && ((0, c.sJ)(t), E())
                 },
                 icon: a.iFK,
                 leadingAccessory: {

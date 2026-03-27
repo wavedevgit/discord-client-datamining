@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(660387),
     f = n(343328),
     x = n(485947),
-    E = n(915089),
-    C = n(725323),
+    C = n(915089),
+    E = n(725323),
     I = n(611924),
     N = n(95550),
     b = n(380335),
@@ -378,7 +378,7 @@ let P = e => {
         let e = R.default.getPrivateChannelIds();
         return (0, S.eh)(e, [b.A, T.A])
     });
-    (0, I.P)(C._);
+    (0, I.P)(E._);
     let {
         analyticsLocations: x
     } = (0, p.Ay)(m.A.CONTACTS_LIST), N = (0, v.NC)(), {
@@ -412,7 +412,7 @@ let P = e => {
                 requestAnimationFrame(() => setTimeout(e, 100))
             }
         })
-    }), [M]), w = (0, E.GV)(), k = (0, o.Ay)({
+    }), [M]), w = (0, C.GV)(), k = (0, o.Ay)({
         id: `private-channels-${w}`,
         isEnabled: j,
         scrollToStart: G,

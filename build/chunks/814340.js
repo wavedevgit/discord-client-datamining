@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(915089),
     f = n(734057),
     x = n(458294),
-    E = n(71393),
-    C = n(290863),
+    C = n(71393),
+    E = n(290863),
     I = n(222823),
     N = n(309010),
     b = n(607567),
@@ -53,7 +53,7 @@ class U extends s.Component {
         unread: !1
     };
     render() {
-        let e = E.A.getGuild(this.props.channel.guild_id);
+        let e = C.A.getGuild(this.props.channel.guild_id);
         return (0, i.jsx)(R.c3, {
             ...this.props,
             children: (0, i.jsx)("div", {
@@ -91,23 +91,23 @@ let P = o.Ay.connectStores([I.Ay, f.A], e => {
             unread: x.default.hasUnread(t.id)
         }
     })(R.OS),
-    V = o.Ay.connectStores([I.Ay, C.A], e => {
+    V = o.Ay.connectStores([I.Ay, E.A], e => {
         let {
             channel: t
-        } = e, n = null, i = C.A.getState().statuses;
+        } = e, n = null, i = E.A.getState().statuses;
         return t.recipients?.some(e => i[e] === L.clD.ONLINE) && (n = L.clD.ONLINE), {
             mentions: I.Ay.getMentionCount(t.id),
             status: n
         }
     })(R.nG),
-    B = o.Ay.connectStores([f.A, I.Ay, C.A], e => {
+    B = o.Ay.connectStores([f.A, I.Ay, E.A], e => {
         let {
             user: t
         } = e, n = f.A.getDMFromUserId(t.id);
         return {
             mentions: null != n ? I.Ay.getMentionCount(n) : 0,
-            status: C.A.getStatus(t.id),
-            isMobile: C.A.isMobileOnline(t.id)
+            status: E.A.getStatus(t.id),
+            isMobile: E.A.isMobileOnline(t.id)
         }
     })(R.KJ);
 
@@ -197,7 +197,7 @@ class F extends s.PureComponent {
             case m.rD.TEXT_CHANNEL:
             case m.rD.VOICE_CHANNEL:
                 let s = t.record,
-                    l = E.A.getGuild(s.getGuildId());
+                    l = C.A.getGuild(s.getGuildId());
                 if (null == l) return;
                 switch (s.type) {
                     case L.rbe.GUILD_TEXT:

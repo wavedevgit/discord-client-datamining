@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(661492),
     f = n(146423),
     x = n(662349),
-    E = n(216020),
-    C = n(479026),
+    C = n(216020),
+    E = n(479026),
     I = n(699976),
     N = n(652215),
     b = n(788868),
@@ -50,7 +50,7 @@ function j(e) {
             wishlistId: l,
             productLines: new Set([t.productLine])
         }), u()
-    }, [t, l, u, m]), C = s.useCallback(() => {
+    }, [t, l, u, m]), E = s.useCallback(() => {
         m({
             action: S.Mq.PRESS_WISHLIST_BREADCRUMB_CARD,
             skuId: t.id,
@@ -89,13 +89,13 @@ function j(e) {
                 onHoverOrFocusChange: R,
                 children: (0, i.jsx)(x.A, {
                     spec: y,
-                    onClick: b ? C : _,
+                    onClick: b ? E : _,
                     isHoveringOrFocusing: j,
                     label: I,
                     icon: N
                 })
             })
-        }), r && (0, i.jsx)(E.A, {
+        }), r && (0, i.jsx)(C.A, {
             title: A.title,
             description: A.description,
             onClick: _
@@ -159,7 +159,7 @@ function O(e) {
             analyticsLocations: l ?? [],
             giftRecipient: n
         })
-    }, [t.id, n, l]), d = (0, C.e)({
+    }, [t.id, n, l]), d = (0, E.e)({
         sku: t,
         giftRecipient: n,
         giftingOrigin: b.vQ.USER_PROFILE_WISHLIST,

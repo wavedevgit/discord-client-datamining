@@ -66,20 +66,20 @@ let g = s.memo(function(e) {
             i = e.getShownChannelAndThreadIds();
         null != g && i.includes(g) && (t = (0, a.xb)(_)), (0, a.DD)(n.id, i, t)
     }, [n.id, g, _, p]), {
-        density: E
-    } = (0, l.wRf)(), C = "compact" === E ? 8 : 12;
+        density: C
+    } = (0, l.wRf)(), E = "compact" === C ? 8 : 12;
     switch (t) {
         case c.PU:
             return (0, i.jsx)("div", {
                 style: {
-                    height: C
+                    height: E
                 }
             });
         case c.bK:
             if (n.features.has(h.GuildFeatures.HUB)) return null;
             return (0, i.jsx)("div", {
                 style: {
-                    height: C
+                    height: E
                 }
             });
         case c.HP:

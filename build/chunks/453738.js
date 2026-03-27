@@ -32,8 +32,8 @@ function x(e, t) {
         if (!t.has(n)) return !1;
     return !0
 }
-let E = ["high", "medium", "low"],
-    C = s.memo(function(e) {
+let C = ["high", "medium", "low"],
+    E = s.memo(function(e) {
         let {
             moderation: t
         } = e, n = null != t && 1 === t.status, l = null != t && !t.flagged_title && !t.flagged_summary && !t.flagged_key_points, r = s.useMemo(() => {
@@ -53,7 +53,7 @@ let E = ["high", "medium", "low"],
             }
         }, [t]), o = null == t ? "unknown" : r.failed > 0 ? "failed" : r.unknown > 0 ? "unknown" : r.passed > 0 ? "passed" : "unknown", c = null != t ? t.flagged_summary_details.find(e => {
             var n;
-            return e.severity === (n = t.flagged_summary_details.map(e => e.severity), E.find(e => n.includes(e)) ?? null)
+            return e.severity === (n = t.flagged_summary_details.map(e => e.severity), C.find(e => n.includes(e)) ?? null)
         }) ?? null : null, d = c?.severity ?? null, u = c?.confidence ?? null;
         return (0, i.jsxs)("div", {
             className: g.UO,
@@ -140,9 +140,9 @@ let E = ["high", "medium", "low"],
             x = (0, c.e)({
                 timestamp: p
             }),
-            E = Math.max(1, Math.round((f - p) / 1e3)),
+            C = Math.max(1, Math.round((f - p) / 1e3)),
             I = (0, o.WR)({
-                seconds: E,
+                seconds: C,
                 getFormatter: o.i
             }),
             N = t.summary_map?.entries.find(e => "TOPIC_EXTRACTION_SUMMARY" === e.summary_type),
@@ -235,7 +235,7 @@ let E = ["high", "medium", "low"],
                         })]
                     })]
                 })]
-            }), (0, i.jsx)(C, {
+            }), (0, i.jsx)(E, {
                 moderation: t.moderation
             })]
         })
@@ -244,7 +244,7 @@ let E = ["high", "medium", "low"],
 function N(e) {
     let {
         channel: t
-    } = e, n = (0, l.bG)([m.A], () => m.A.getChannelConversations(t.id), [t.id], f), o = (0, l.bG)([m.A], () => m.A.getVisibleConversationIds(t.id), [t.id], x), c = (0, l.bG)([m.A], () => m.A.hasMoreConversations(t.id, "before"), [t.id]), u = (0, l.bG)([m.A], () => m.A.hasMoreConversations(t.id, "after"), [t.id]), _ = (0, l.bG)([m.A], () => m.A.isPendingFetch(t.id), [t.id]), E = (0, l.bG)([h.A], () => h.A.isHighlightingEnabled(), []), C = (0, l.bG)([m.A], () => m.A.getScrollToConversation(t.id), [t.id]), N = s.useCallback(e => {
+    } = e, n = (0, l.bG)([m.A], () => m.A.getChannelConversations(t.id), [t.id], f), o = (0, l.bG)([m.A], () => m.A.getVisibleConversationIds(t.id), [t.id], x), c = (0, l.bG)([m.A], () => m.A.hasMoreConversations(t.id, "before"), [t.id]), u = (0, l.bG)([m.A], () => m.A.hasMoreConversations(t.id, "after"), [t.id]), _ = (0, l.bG)([m.A], () => m.A.isPendingFetch(t.id), [t.id]), C = (0, l.bG)([h.A], () => h.A.isHighlightingEnabled(), []), E = (0, l.bG)([m.A], () => m.A.getScrollToConversation(t.id), [t.id]), N = s.useCallback(e => {
         (0, A.UA)(t.id, e)
     }, [t.id]), b = s.useCallback(() => {
         (0, A.UA)(null, null)
@@ -260,8 +260,8 @@ function N(e) {
             children: (0, i.jsx)("div", {
                 className: g.y6,
                 children: (0, i.jsx)(a.K0, {
-                    icon: E ? a.bMW : a.G3N,
-                    "aria-label": E ? "Hide highlights" : "Show highlights",
+                    icon: C ? a.bMW : a.G3N,
+                    "aria-label": C ? "Hide highlights" : "Show highlights",
                     variant: "secondary",
                     size: "sm",
                     onClick: A.Eg
@@ -296,7 +296,7 @@ function N(e) {
                     conversation: t,
                     color: n,
                     isInViewport: o.has(t.id),
-                    scrollTarget: C?.conversationId === t.id ? C.seq : null,
+                    scrollTarget: E?.conversationId === t.id ? E.seq : null,
                     onJump: S,
                     onHoverStart: N,
                     onHoverEnd: b

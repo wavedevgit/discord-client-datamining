@@ -23,7 +23,7 @@ function _(e) {
         setStatus: l,
         isFavorited: _,
         onFavoriteClick: p
-    } = e, [g, f] = s.useState(!1), x = (0, r.bG)([u.A], () => u.A.getFavoritedStatuses().length >= u.x), E = null != p, C = s.useCallback(e => {
+    } = e, [g, f] = s.useState(!1), x = (0, r.bG)([u.A], () => u.A.getFavoritedStatuses().length >= u.x), C = null != p, E = s.useCallback(e => {
         e.stopPropagation(), p?.()
     }, [p]), I = _ ? d.Gg5 : d.yA2;
     return (0, i.jsxs)(d.DUT, {
@@ -42,11 +42,11 @@ function _(e) {
             variant: "text-md/normal",
             className: A.rv,
             children: t
-        }), g && E && (0, i.jsx)(c.m_, {
+        }), g && C && (0, i.jsx)(c.m_, {
             text: x && !_ ? h.intl.string(h.t.YSDH9n) : void 0,
             children: (0, i.jsx)(d.DUT, {
                 className: a()(A.ff, A.wB),
-                onClick: C,
+                onClick: E,
                 children: (0, i.jsx)(I, {
                     className: A.ut,
                     color: _ ? o.A.colors.ICON_FEEDBACK_WARNING : "currentColor"

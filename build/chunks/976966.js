@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(345859),
     f = n(145331),
     x = n(121806),
-    E = n(652215),
-    C = n(49999),
+    C = n(652215),
+    E = n(49999),
     I = n(985018),
     N = n(353231);
 
@@ -38,7 +38,7 @@ function b(e) {
     } = e, b = (0, g.H)(t), {
         totalFilters: T
     } = (0, x.vj)(b, t), v = s.useMemo(() => {
-        if (t.type === E.I4_.DMS) {
+        if (t.type === C.I4_.DMS) {
             let e = (0, _.Zf)(b),
                 t = e.channel_id?.length ?? 0;
             return t > 0 ? I.intl.format(I.t.A2dqWG, {
@@ -47,14 +47,14 @@ function b(e) {
         }
         return null
     }, [t.type, b]), [y, j] = s.useState(null), L = s.useMemo(() => A ? [] : [r.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER], [A]), [M, D] = (0, u.kn)(L), G = M === r.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER, U = s.useCallback(e => {
-        null != e && G && D(C.i.USER_DISMISS), j(e)
+        null != e && G && D(E.i.USER_DISMISS), j(e)
     }, [G, D, j]), P = s.useCallback(e => {
-        D("user:explicit" === e ? C.i.USER_DISMISS : C.i.AUTO_DISMISS)
+        D("user:explicit" === e ? E.i.USER_DISMISS : E.i.AUTO_DISMISS)
     }, [D]), w = s.useCallback(() => {
         U(null), p.A.openSearchFiltersModal(t)
     }, [U, t]), k = s.useMemo(() => T > 0 ? I.intl.format(I.t.uaR4sI, {
         filterCount: T
-    }) : I.intl.string(I.t.UdhTtk), [T]), V = !(0, h.DZ)() && (t.type === E.I4_.DMS || t.type === E.I4_.CHANNEL);
+    }) : I.intl.string(I.t.UdhTtk), [T]), V = !(0, h.DZ)() && (t.type === C.I4_.DMS || t.type === C.I4_.CHANNEL);
     return (0, i.jsxs)("header", {
         className: a()(N.wL, {
             [N.g$]: null != v
@@ -137,7 +137,7 @@ function v(e) {
                 color: "text-muted",
                 children: (0, i.jsx)(d.MzZ, {
                     className: N.Zd,
-                    href: m.A.getArticleURL(E.MVz.SEARCH_INDEXING),
+                    href: m.A.getArticleURL(C.MVz.SEARCH_INDEXING),
                     children: I.intl.string(I.t["G3EA+4"])
                 })
             }), (0, i.jsx)(T, {})]
@@ -193,12 +193,12 @@ function R(e) {
                     location: f.vy.SEARCH_HEADER
                 }), e) {
                 let e = {
-                    type: E.I4_.DMS
+                    type: C.I4_.DMS
                 };
                 p.A.transitionStateToSearchContext(t, e, p.A.cleanUpPrivateChannelSearchState)
             } else {
                 let e = {
-                    type: E.I4_.CHANNEL,
+                    type: C.I4_.CHANNEL,
                     channelId: n
                 };
                 p.A.transitionStateToSearchContext(t, e)
@@ -275,13 +275,13 @@ function O(e) {
         setOpenPopout: a
     } = e, r = s.useRef(null), o = s.useMemo(() => [{
         label: I.intl.string(I.t.CbaapP),
-        value: E.BBH.NEWEST
+        value: C.BBH.NEWEST
     }, {
         label: I.intl.string(I.t.OukXZj),
-        value: E.BBH.OLDEST
+        value: C.BBH.OLDEST
     }, {
         label: I.intl.string(I.t.q8gB52),
-        value: E.BBH.MOST_RELEVANT
+        value: C.BBH.MOST_RELEVANT
     }], []), c = s.useCallback(e => {
         a(null), n(e)
     }, [a, n]);

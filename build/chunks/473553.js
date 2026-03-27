@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(714510),
     f = n(890687),
     x = n(590202),
-    E = n(639214),
-    C = n(801320),
+    C = n(639214),
+    E = n(801320),
     I = n(898375),
     N = n(713081),
     b = n(73473),
@@ -42,7 +42,7 @@ function O(e) {
         location: T.rE.QUEST_ACTIVITY_HEADER,
         questContent: m.uF.QUEST_ACTIVITY_HEADER,
         sourceQuestContent: m.uF.RUNNING_ACTIVITY
-    }), [A, _] = s.useState(!1), p = s.useRef(null), E = s.useRef(null), [b, O] = (0, c.kn)([r.M.QUEST_ACTIVITY_HEADER_INTRO], void 0, !0), {
+    }), [A, _] = s.useState(!1), p = s.useRef(null), C = s.useRef(null), [b, O] = (0, c.kn)([r.M.QUEST_ACTIVITY_HEADER_INTRO], void 0, !0), {
         completedRatio: L,
         completedRatioDisplay: M,
         percentComplete: D
@@ -79,7 +79,7 @@ function O(e) {
                         autoplay: A
                     })
                 }), (0, i.jsx)(o.YNO, {
-                    targetElementRef: E,
+                    targetElementRef: C,
                     renderPopout: e => {
                         let {
                             closePopout: n
@@ -101,7 +101,7 @@ function O(e) {
                         }),
                         variant: "secondary",
                         size: "sm",
-                        buttonRef: E,
+                        buttonRef: C,
                         ...e
                     })
                 })]
@@ -149,7 +149,7 @@ function O(e) {
                     onClick: P
                 })]
             })]
-        }), null != b && U && (0, i.jsx)(C.A, {
+        }), null != b && U && (0, i.jsx)(E.A, {
             onDismiss: () => O(v.i.USER_DISMISS),
             onCTAClick: () => O(v.i.TAKE_ACTION),
             targetElementRef: p
@@ -160,14 +160,14 @@ function O(e) {
 function L(e) {
     let {
         applicationId: t
-    } = e, r = (0, a.bG)([A.A], () => A.A.quests), c = (0, a.bG)([u.A], () => u.A.theme), d = s.useMemo(() => (0, E.jm)(r, t, !0)[0], [r, t]), {
+    } = e, r = (0, a.bG)([A.A], () => A.A.quests), c = (0, a.bG)([u.A], () => u.A.theme), d = s.useMemo(() => (0, C.jm)(r, t, !0)[0], [r, t]), {
         enabled: h,
         showSkipButton: g
     } = p.Ym.useConfig({
         location: T.rE.QUEST_ACTIVITY_HEADER
-    }), f = (0, a.bG)([_.A], () => _.A.getState().autoEnroll), x = d?.id, C = (0, a.bG)([_.A], () => _.A.isDismissed(x), [x]);
+    }), f = (0, a.bG)([_.A], () => _.A.getState().autoEnroll), x = d?.id, E = (0, a.bG)([_.A], () => _.A.isDismissed(x), [x]);
     return (s.useEffect(() => {
-        !h || null == d || d.userStatus?.enrolledAt != null || f || C || (0, o.mMO)(async () => {
+        !h || null == d || d.userStatus?.enrolledAt != null || f || E || (0, o.mMO)(async () => {
             let {
                 default: e
             } = await n.e("85986").then(n.bind(n, 113273));
@@ -179,7 +179,7 @@ function L(e) {
         }, {
             modalKey: "quest-activity-unenrolled-modal"
         })
-    }, [h, d, f, C, g]), null != d && h) ? (0, i.jsx)(l.NPJ, {
+    }, [h, d, f, E, g]), null != d && h) ? (0, i.jsx)(l.NPJ, {
         theme: c,
         children: e => (0, i.jsx)("div", {
             className: e,

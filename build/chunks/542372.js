@@ -1,7 +1,7 @@
 /** chunk id: 542372 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => E
+    A: () => C
 });
 var i = n(627968),
     s = n(64700),
@@ -21,12 +21,12 @@ var i = n(627968),
     f = n(475815),
     x = n(652215);
 
-function E(e) {
+function C(e) {
     let {
         channel: t,
         appContext: n,
-        popoutOpen: E,
-        popoutWindow: C,
+        popoutOpen: C,
+        popoutWindow: E,
         currentWindow: I
     } = e, {
         parentAnalyticsLocation: N
@@ -51,15 +51,15 @@ function E(e) {
             currentDocument: R,
             rootNode: O
         } = s.useMemo(() => {
-            let e = null != C && b ? C.document : document,
+            let e = null != E && b ? E.document : document,
                 t = I.document.getElementById("app-mount");
             return {
                 currentWindow: I,
                 currentDocument: e,
                 rootNode: t
             }
-        }, [C, b, I]),
-        L = E && !b,
+        }, [E, b, I]),
+        L = C && !b,
         M = v === x._Of.VIDEO && y && !L,
         D = s.useCallback((e, i) => {
             i !== e && (r.A.updateLayout(t.id, i, n), i === x.DUB.FULL_SCREEN && t.isPrivate() && p._.dispatch(x.jej.TEXTAREA_BLUR))
@@ -105,7 +105,7 @@ function E(e) {
     }, [y, b]), M) ? (0, i.jsx)(A.A, {
         themeable: !1,
         node: O,
-        guestWindow: C,
+        guestWindow: E,
         onClick: U(T)
     }) : null
 }

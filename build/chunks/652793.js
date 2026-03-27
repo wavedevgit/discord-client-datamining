@@ -27,18 +27,18 @@ function h(e) {
         showUnread: g = !1,
         ref: f,
         ...x
-    } = e, E = (0, a.rm)(t), C = (0, r.O)(A) ?? "";
+    } = e, C = (0, a.rm)(t), E = (0, r.O)(A) ?? "";
     return (0, i.jsx)("li", {
         ref: f,
         children: (0, i.jsxs)(o.sqX, {
             ...x,
             buttonProps: {
-                ...E,
+                ...C,
                 id: t,
                 role: "button"
             },
             tag: "div",
-            "aria-label": C,
+            "aria-label": E,
             focusProps: {
                 offset: {
                     top: 1,

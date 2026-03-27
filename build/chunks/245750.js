@@ -1,61 +1,79 @@
 /** chunk id: 245750 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => _
 });
 var a = n(627968),
     i = n(64700),
     s = n(935399),
-    l = n(505312),
-    r = n(397927),
-    o = n(134991),
-    d = n(203982),
-    c = n(42473),
-    u = n(652215),
-    m = n(985018);
+    l = n(554146),
+    r = n(505312),
+    o = n(397927),
+    d = n(379848),
+    c = n(134991),
+    u = n(576989),
+    m = n(203982),
+    h = n(42473),
+    x = n(652215),
+    p = n(49999),
+    g = n(985018);
 
-function h(e) {
+function _(e) {
     let t, n, {
-            webBuildOverride: h,
-            onClick: x,
-            onContextMenu: p,
-            iconForeground: g,
-            nameplate: _
+            webBuildOverride: _,
+            onClick: f,
+            onContextMenu: v,
+            dismissibleContents: b,
+            iconForeground: j,
+            nameplate: A
         } = e,
-        f = i.useRef(null),
-        [v, b] = i.useState(!1);
+        C = i.useRef(null),
+        [y, T] = i.useState(!1);
     (0, s.Ay)(() => {
-        let e = () => b(!0);
-        return d._.subscribe(u.jej.PREMIUM_GROUP_PURCHASE_FLOW_COMPLETED, e), () => {
-            d._.unsubscribe(u.jej.PREMIUM_GROUP_PURCHASE_FLOW_COMPLETED, e)
+        let e = () => T(!0);
+        return m._.subscribe(x.jej.PREMIUM_GROUP_PURCHASE_FLOW_COMPLETED, e), () => {
+            m._.unsubscribe(x.jej.PREMIUM_GROUP_PURCHASE_FLOW_COMPLETED, e)
         }
     });
-    let j = i.useCallback(() => {
-        b(!1), x()
-    }, [x]);
-    t = null != h ? m.intl.formatToPlainString(m.t.Gzh6ZP, {
-        webBuildOverride: h.id
-    }) : m.intl.string(m.t.cduTBL);
-    let A = r.Zes,
-        C = (0, l.w)();
-    return A = null != h ? r.Hnu : C.Component, (0, a.jsxs)(a.Fragment, {
-        children: [(0, a.jsx)(c.A, {
-            ref: f,
+    let S = i.useCallback(() => {
+        T(!1), f()
+    }, [f]);
+    t = null != _ ? g.intl.formatToPlainString(g.t.Gzh6ZP, {
+        webBuildOverride: _.id
+    }) : g.intl.string(g.t.cduTBL);
+    let E = o.Zes,
+        N = (0, r.w)();
+    return E = null != _ ? o.Hnu : N.Component, (0, a.jsxs)(a.Fragment, {
+        children: [(0, a.jsx)(h.A, {
+            ref: C,
             tooltipText: t,
             tooltipPositionKey: n,
-            onClick: j,
-            onContextMenu: p,
-            "aria-label": m.intl.string(m.t.cduTBL),
-            icon: (0, a.jsx)(A, {
+            onClick: S,
+            onContextMenu: v,
+            "aria-label": g.intl.string(g.t.cduTBL),
+            icon: (0, a.jsx)(E, {
                 size: "refresh_sm",
                 color: "currentColor",
-                className: g
+                className: j
             }),
-            ...C.events,
-            plated: null != _
-        }), (0, a.jsx)(o.V, {
-            targetElementRef: f,
-            shouldShow: v,
-            onDismiss: () => b(!1)
+            ...N.events,
+            plated: null != A
+        }), (0, a.jsx)(c.V, {
+            targetElementRef: C,
+            shouldShow: y,
+            onDismiss: () => T(!1)
+        }), (0, a.jsx)(d.Ay, {
+            contentTypes: b,
+            groupName: p.m.ACCOUNT_NAME_ZONE,
+            children: e => {
+                let {
+                    visibleContent: t,
+                    markAsDismissed: n
+                } = e;
+                return t === l.M.PRIVATE_PROFILE_COACHMARK ? (0, a.jsx)(u.K, {
+                    markAsDismissed: n,
+                    targetElementRef: C
+                }) : null
+            }
         })]
     })
 }

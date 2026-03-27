@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(287809),
     f = n(954571),
     x = n(661191),
-    E = n(998218),
-    C = n(245205),
+    C = n(998218),
+    E = n(245205),
     I = n(322387),
     N = n(995273),
     b = n(96511),
@@ -109,7 +109,7 @@ let k = s.memo(function(e) {
         } = e, {
             analyticsLocations: o
         } = (0, c.Ay)(), d = (0, T.t)(t, l), A = s.useCallback(async () => {
-            if (d || (0, C.R7)(t), null != t.item_enum && t.item_enum === I.r_.FIND_FRIENDS) return void(0, a.mMO)(async () => {
+            if (d || (0, E.R7)(t), null != t.item_enum && t.item_enum === I.r_.FIND_FRIENDS) return void(0, a.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("67248").then(n.bind(n, 911539));
@@ -119,12 +119,12 @@ let k = s.memo(function(e) {
                 })
             });
             if (null != t.deeplink) {
-                let e = E.A.safeParseWithQuery(t.deeplink);
+                let e = C.A.safeParseWithQuery(t.deeplink);
                 if (null == e) return;
                 let n = e.hostname,
                     i = e.path;
                 if (null == n || null == i) return;
-                if (E.A.isDiscordHostname(n)) {
+                if (C.A.isDiscordHostname(n)) {
                     let e = i.match("^/users/(\\d+)");
                     null != e && 2 === e.length ? (0, m.openUserProfileModal)({
                         userId: e[1],

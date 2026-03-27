@@ -20,8 +20,8 @@ var i = n(417597),
     g = n(969117),
     f = n(363487),
     x = n(871123),
-    E = n(281405),
-    C = n(652215);
+    C = n(281405),
+    E = n(652215);
 
 function I(e) {
     let t = (0, _.A)(e.id),
@@ -35,16 +35,16 @@ function I(e) {
         y = (0, u.jY)(e.id),
         j = (0, c.fw)(e.id),
         R = [],
-        O = e.features.has(C.GuildFeatures.HUB),
-        L = e.features.has(C.GuildFeatures.COMMUNITY),
-        M = e.features.has(C.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY),
+        O = e.features.has(E.GuildFeatures.HUB),
+        L = e.features.has(E.GuildFeatures.COMMUNITY),
+        M = e.features.has(E.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY),
         D = (0, f.A)(e.id),
         G = (0, p.C$)(e.id, "useGuildActionRows"),
-        U = e.features.has(C.GuildFeatures.GAME_SERVERS),
+        U = e.features.has(E.GuildFeatures.GAME_SERVERS),
         P = (0, g.N)("useGuildActionRows"),
         [w] = (0, a.kn)(G && P && !U ? [s.M.EMPTY_GAME_SERVER_TAB] : [], void 0, !0),
         k = (0, r.ws)(e, {
             location: "guild-action-rows"
         });
-    return O && R.push(E.n.GUILD_HUB_HEADER_OPTIONS), !y && S && v && null != T && T.length > 0 ? R.push(E.n.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : k && R.push(E.n.GUILD_PREMIUM_PROGRESS_BAR), !O && S && R.push(E.n.GUILD_HOME), t && R.push(E.n.GUILD_SCHEDULED_EVENTS), !O && L && R.push(E.n.CHANNELS_AND_ROLES), I && R.push(E.n.GUILD_ROLE_SUBSCRIPTIONS), N && R.push(E.n.GUILD_SHOP), b && R.push(E.n.GUILD_GAME_SHOP), (j && (L || M) || n && e.features.has(C.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && R.push(E.n.GUILD_MOD_DASH_MEMBER_SAFETY), D && R.push(E.n.GUILD_BOOSTS), G && (U ? R.push(E.n.GAME_SERVERS) : null != w && R.push(E.n.GAME_SERVERS_EMPTY)), R
+    return O && R.push(C.n.GUILD_HUB_HEADER_OPTIONS), !y && S && v && null != T && T.length > 0 ? R.push(C.n.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : k && R.push(C.n.GUILD_PREMIUM_PROGRESS_BAR), !O && S && R.push(C.n.GUILD_HOME), t && R.push(C.n.GUILD_SCHEDULED_EVENTS), !O && L && R.push(C.n.CHANNELS_AND_ROLES), I && R.push(C.n.GUILD_ROLE_SUBSCRIPTIONS), N && R.push(C.n.GUILD_SHOP), b && R.push(C.n.GUILD_GAME_SHOP), (j && (L || M) || n && e.features.has(E.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && R.push(C.n.GUILD_MOD_DASH_MEMBER_SAFETY), D && R.push(C.n.GUILD_BOOSTS), G && (U ? R.push(C.n.GAME_SERVERS) : null != w && R.push(C.n.GAME_SERVERS_EMPTY)), R
 }

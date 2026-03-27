@@ -3,7 +3,7 @@
 n.d(t, {
     BA: () => g,
     FA: () => f,
-    LH: () => E,
+    LH: () => C,
     Se: () => p,
     WD: () => m,
     YS: () => A,
@@ -156,7 +156,7 @@ let p = s()(async (e, t) => {
             channelId: e,
             categoryId: t
         })
-    }, E = async (e, t) => {
+    }, C = async (e, t) => {
         try {
             let n = await a.Bo.get({
                 url: u.Rsh.DIRECTORY_CHANNEL_LIST_BY_ID(e),

@@ -21,8 +21,8 @@ var i, s, l = n(64700),
     g = n(567035),
     f = n(455234),
     x = n(863005),
-    E = n(970278),
-    C = n(152007),
+    C = n(970278),
+    E = n(152007),
     I = n(607508),
     N = n(594061),
     b = n(617617),
@@ -85,7 +85,7 @@ class H extends a.EventEmitter {
             hasLoadedAnything: !0
         };
         if ("forum" === e.type) {
-            let t = E.A.hasLoaded(e.guildId);
+            let t = C.A.hasLoaded(e.guildId);
             return {
                 ...e,
                 isFullyLoaded: t,
@@ -185,7 +185,7 @@ class H extends a.EventEmitter {
         })
     };
     handleJoinedThreadsStoreChange = () => {
-        let e = this.state.channels.filter(e => !C.A.isMuted(e.channelId));
+        let e = this.state.channels.filter(e => !E.A.isMuted(e.channelId));
         e.length !== this.state.channels.length && this.setState({
             channels: e
         })
@@ -195,7 +195,7 @@ class H extends a.EventEmitter {
             if ("forum" !== e.type) return e;
             {
                 if (!e.hasLoadedAnything) return e;
-                let t = E.A.hasLoaded(e.guildId);
+                let t = C.A.hasLoaded(e.guildId);
                 return {
                     ...e,
                     isFullyLoaded: t,
@@ -398,5 +398,5 @@ function q(e) {
         c.current = t
     }), l.useLayoutEffect(() => {
         r?.channels, r?.loadState, c.current.maybeLoadMore()
-    }, [r?.channels, r?.loadState]), l.useEffect(() => (j.A.addChangeListener(t.reloadMessages), () => j.A.removeChangeListener(t.reloadMessages)), [t.reloadMessages]), l.useEffect(() => (M.Ay.addChangeListener(t.handleUserGuildSettingsStoreChange), () => M.Ay.removeChangeListener(t.handleUserGuildSettingsStoreChange)), [t]), l.useEffect(() => (C.A.addChangeListener(t.handleJoinedThreadsStoreChange), () => C.A.removeChangeListener(t.handleJoinedThreadsStoreChange)), [t]), l.useEffect(() => (E.A.addChangeListener(t.handleActiveThreadsStoreChange), () => E.A.removeChangeListener(t.handleActiveThreadsStoreChange)), [t]), [r, t]
+    }, [r?.channels, r?.loadState]), l.useEffect(() => (j.A.addChangeListener(t.reloadMessages), () => j.A.removeChangeListener(t.reloadMessages)), [t.reloadMessages]), l.useEffect(() => (M.Ay.addChangeListener(t.handleUserGuildSettingsStoreChange), () => M.Ay.removeChangeListener(t.handleUserGuildSettingsStoreChange)), [t]), l.useEffect(() => (E.A.addChangeListener(t.handleJoinedThreadsStoreChange), () => E.A.removeChangeListener(t.handleJoinedThreadsStoreChange)), [t]), l.useEffect(() => (C.A.addChangeListener(t.handleActiveThreadsStoreChange), () => C.A.removeChangeListener(t.handleActiveThreadsStoreChange)), [t]), [r, t]
 }

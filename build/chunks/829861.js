@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(964404),
     f = n(709562),
     x = n(383831),
-    E = n(128286),
-    C = n(734057),
+    C = n(128286),
+    E = n(734057),
     I = n(696451),
     N = n(309010),
     b = n(287809),
@@ -54,7 +54,7 @@ function W(e) {
         maxHeight: t,
         connectedLocation: n,
         renderExternalHeader: l
-    } = e, W = (0, L.A)(), Y = (0, r.yK)([y.Ay], () => y.Ay.getEmbeddedActivitiesForLocation(n), [n]), z = (0, O.H)(n), q = (0, r.bG)([C.A], () => C.A.getChannel(z)), X = (0, j.IQ)(Y), Q = (0, j.Rz)(X), J = s.useCallback(() => {
+    } = e, W = (0, L.A)(), Y = (0, r.yK)([y.Ay], () => y.Ay.getEmbeddedActivitiesForLocation(n), [n]), z = (0, O.H)(n), q = (0, r.bG)([E.A], () => E.A.getChannel(z)), X = (0, j.IQ)(Y), Q = (0, j.Rz)(X), J = s.useCallback(() => {
         (0, v.gk)(k.Gd.PIP)
     }, []), $ = s.useRef(null), Z = (0, r.bG)([y.Ay], () => y.Ay.getFocusedLayout()), ee = Z !== k.E8.NO_CHAT, [et, en] = s.useState(g.Ay.activityPanelHeight ?? t ?? null), ei = s.useCallback(e => {
         u.Ay.updatedUnsyncedSettings({
@@ -198,7 +198,7 @@ function W(e) {
                                 color: "disconnect"
                             })
                         })]
-                    }), ep ? (0, i.jsx)(E.A, {
+                    }), ep ? (0, i.jsx)(C.A, {
                         popoutOpen: !1,
                         onOpenPopout: () => {
                             (0, m.zV)(V.HAw.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, G.A)({

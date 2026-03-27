@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(186369),
     f = n(725613),
     x = n(963027),
-    E = n(844262),
-    C = n(47167),
+    C = n(844262),
+    E = n(47167),
     I = n(262763),
     N = n(5932),
     b = n(857253),
@@ -290,7 +290,7 @@ class et extends K.Ay {
             connectDragPreview: p,
             canReorderChannel: g,
             canMoveMembers: f,
-            showTutorial: C,
+            showTutorial: E,
             hasActiveEvent: I,
             embeddedApps: N,
             isSubscriptionGated: b,
@@ -365,7 +365,7 @@ class et extends K.Ay {
                                 embeddedActivitiesCount: N.length,
                                 isSubscriptionGated: b
                             }),
-                            "aria-describedby": (0, E.A)({
+                            "aria-describedby": (0, C.A)({
                                 channel: e,
                                 embeddedApps: N
                             }),
@@ -380,7 +380,7 @@ class et extends K.Ay {
                 })
             }), this.renderHangoutWindow(), this.renderVoiceUsers()]
         });
-        return f && (U = _(U)), g && (U = A(m(U))), C && (U = (0, i.jsx)(D.A, {
+        return f && (U = _(U)), g && (U = A(m(U))), E && (U = (0, i.jsx)(D.A, {
             childRef: this.ref,
             tutorialId: "voice-conversations",
             position: "right",
@@ -414,7 +414,7 @@ function ei(e) {
             bypassLimit: k.A.can(J.xBc.MOVE_MEMBERS, n),
             unverifiedAccount: !i.canChat
         }
-    }), A = (0, r.bG)([H.A], () => H.A.hasVideo(n.id)), m = (0, _.Ay)(n), p = (0, C.Ay)(n), x = (0, y.Qs)(n.id), E = (0, r.bG)([f.A], () => null != f.A.getStartTime(n), [n]), {
+    }), A = (0, r.bG)([H.A], () => H.A.hasVideo(n.id)), m = (0, _.Ay)(n), p = (0, E.Ay)(n), x = (0, y.Qs)(n.id), C = (0, r.bG)([f.A], () => null != f.A.getStartTime(n), [n]), {
         isSubscriptionGated: I,
         needSubscriptionToAccess: N
     } = (0, v.A)(n.id), S = (0, b.A)(), T = (0, r.bG)([B.Ay], () => B.Ay.isFavorite(t.id, n.id)), j = e.connected || S?.channelId === n.id, {
@@ -463,7 +463,7 @@ function ei(e) {
         showEmptyChannelTopic: M,
         enableOpenTIVForPing: D,
         hasChannelInfo: null != z,
-        hasStartTime: E,
+        hasStartTime: C,
         shouldHighlightChannel: K,
         shouldUseAnimatedWaveform: Y
     })

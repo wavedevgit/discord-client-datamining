@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(267102),
     f = n(222692),
     x = n(442353),
-    E = n(470710),
-    C = n(186111),
+    C = n(470710),
+    E = n(186111),
     I = n(430452),
     N = n(994500),
     b = n(287809),
@@ -156,16 +156,16 @@ function D(e) {
     } = e, n = (0, p.A)(), s = (0, l.bG)([A.A], () => A.A.getMode(t.id)), r = (0, l.bG)([S.A], () => S.A.isInChannel(t.id)), o = (0, l.bG)([u.A], () => u.A.useReducedMotion), {
         callActive: c,
         callUnavailable: d
-    } = (0, l.cf)([E.A], () => ({
-        callActive: E.A.isCallActive(t.id),
-        callUnavailable: E.A.isCallUnavailable(t.id)
+    } = (0, l.cf)([C.A], () => ({
+        callActive: C.A.isCallActive(t.id),
+        callUnavailable: C.A.isCallUnavailable(t.id)
     })), m = t.getRecipientId(), {
         notFriend: _,
         isBlocked: f
     } = (0, l.cf)([N.A], () => ({
         notFriend: t.type === y.rbe.DM && null != m && !N.A.isFriend(m),
         isBlocked: t.type === y.rbe.DM && null != m && N.A.isBlocked(m)
-    })), x = (0, l.bG)([b.default], () => b.default.getUser(m)), I = (0, g.Us)(), T = [], v = (0, h.A)(t.id), j = (0, l.bG)([C.A], () => C.A.hasLayers());
+    })), x = (0, l.bG)([b.default], () => b.default.getUser(m)), I = (0, g.Us)(), T = [], v = (0, h.A)(t.id), j = (0, l.bG)([E.A], () => E.A.hasLayers());
     return (v && !j && T.push(a.M.ACTIVITY_GDM_CALL_TOOLTIP), n || x?.bot) ? null : (0, i.jsx)(M, {
         channel: t,
         mode: s,

@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(658128),
     f = n(976860),
     x = n(345942),
-    E = n(260509),
-    C = n(696451),
+    C = n(260509),
+    E = n(696451),
     I = n(711014),
     N = n(676279),
     b = n(263715),
@@ -124,11 +124,11 @@ let P = s.memo(function(e) {
             let e = (0, g.W)(w.id);
             null != e && m.A.preload(w.id, e)
         }, [P, w, F, X]),
-        ex = (0, u.bG)([C.Ay], () => C.Ay.isCurrentUserGuest(ee)),
-        eE = s.useCallback(e => {
+        ex = (0, u.bG)([E.Ay], () => E.Ay.isCurrentUserGuest(ee)),
+        eC = s.useCallback(e => {
             null == w || ex || Y(e, w)
         }, [w, Y, ex]),
-        eC = s.useCallback(e => {
+        eE = s.useCallback(e => {
             "ArrowLeft" === e.key && null != et && document.querySelector(`[aria-owns=folder-items-${et}]`)?.focus()
         }, [et]),
         eI = s.useCallback(e => {
@@ -168,9 +168,9 @@ let P = s.memo(function(e) {
             onMouseEnter: eN,
             onMouseLeave: eb,
             onMouseDown: ef,
-            onContextMenu: eE,
-            onKeyDown: eC,
-            icon: (0, E.Iv)(w, 2 * eT, ed && k, !0),
+            onContextMenu: eC,
+            onKeyDown: eE,
+            icon: (0, C.Iv)(w, 2 * eT, ed && k, !0),
             selected: V || ed,
             ...er,
             "aria-setsize": $,
@@ -194,9 +194,9 @@ let P = s.memo(function(e) {
                     onMouseEnter: eN,
                     onMouseLeave: eb,
                     onMouseDown: ef,
-                    onContextMenu: eE,
-                    onKeyDown: eC,
-                    icon: (0, E.Iv)(w, 2 * eT, ed && k, !0),
+                    onContextMenu: eC,
+                    onKeyDown: eE,
+                    icon: (0, C.Iv)(w, 2 * eT, ed && k, !0),
                     selected: V || ed,
                     ...er,
                     "aria-setsize": $,

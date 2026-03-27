@@ -23,7 +23,7 @@ function f(e) {
     let {
         guild: t,
         selected: n
-    } = e, f = (0, l.bG)([m.A], () => m.A.can(p.xBc.KICK_MEMBERS, t)), x = (0, l.bG)([d.A], () => d.A.getSubmittedGuildJoinRequestTotal(t.id)), E = f ? x ?? 0 : 0;
+    } = e, f = (0, l.bG)([m.A], () => m.A.can(p.xBc.KICK_MEMBERS, t)), x = (0, l.bG)([d.A], () => d.A.getSubmittedGuildJoinRequestTotal(t.id)), C = f ? x ?? 0 : 0;
     s.useEffect(() => {
         f && t.features.has(p.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && t.features.has(p.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.A.fetchGuildJoinRequests({
             guildId: t.id,
@@ -31,7 +31,7 @@ function f(e) {
             limit: h.L
         })
     }, [f, t]);
-    let C = s.useCallback(() => {
+    let E = s.useCallback(() => {
             (0, _.aZ)(t.id)
         }, [t.id]),
         I = (0, o.q8)(t.id, a.M.MEMBERS_LAUNCH_UPSELL);
@@ -46,9 +46,9 @@ function f(e) {
             }),
             text: g.intl.string(g.t.oclz3Z),
             selected: n,
-            onClick: C,
-            trailing: E > 0 ? (0, i.jsx)(r.hVq, {
-                count: E
+            onClick: E,
+            trailing: C > 0 ? (0, i.jsx)(r.hVq, {
+                count: C
             }) : null
         })
     })

@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(427209),
     f = n(763754),
     x = n(291812),
-    E = n(449859),
-    C = n(812299),
+    C = n(449859),
+    E = n(812299),
     I = n(943220),
     N = n(538355),
     b = n(995273),
@@ -52,7 +52,7 @@ function B(e) {
         groupedMessages: h
     } = e, A = n.type === P.rbe.UNKNOWN ? u.N$i : (0, _.gU)(n, null), p = (0, m.Ay)(n, !1), g = (0, c.bG)([R.A], () => R.A.getGuild(n.getGuildId())), {
         nick: x,
-        colorString: E
+        colorString: C
     } = (0, f.Ay)(t), {
         avatarSrc: N,
         eventHandlers: b
@@ -61,7 +61,7 @@ function B(e) {
         size: u._3J.SIZE_32,
         guildId: g?.id,
         animateOnHover: !0
-    }), T = n.type !== P.rbe.GUILD_ANNOUNCEMENT || null == g, y = (0, C.y)({
+    }), T = n.type !== P.rbe.GUILD_ANNOUNCEMENT || null == g, y = (0, E.y)({
         channel: n,
         message: t,
         user: t.author,
@@ -127,7 +127,7 @@ function B(e) {
                         children: [(0, i.jsx)("div", {
                             className: V.Xh,
                             style: {
-                                color: E ?? void 0
+                                color: C ?? void 0
                             },
                             children: (0, i.jsx)(d.A, {
                                 children: O
@@ -137,7 +137,7 @@ function B(e) {
                         children: (0, i.jsx)(u.Heading, {
                             variant: "text-md/semibold",
                             style: {
-                                color: E ?? void 0
+                                color: C ?? void 0
                             },
                             className: V.Xh,
                             children: g.name
@@ -228,7 +228,7 @@ function F(e) {
     let {
         message: t
     } = e, n = (0, b.jb)(t.timestamp.getTime());
-    return (0, i.jsx)(E.A, {
+    return (0, i.jsx)(C.A, {
         timestamp: t.timestamp,
         className: V.vE,
         isEdited: t.isEdited(),
@@ -272,15 +272,15 @@ function K(e) {
                 m = t.type === P.lAJ.POLL_RESULT,
                 _ = t.hasFlag(P.pr7.IS_VOICE_MESSAGE),
                 f = t.type === P.lAJ.USER_JOIN,
-                E = null;
-            1 === c ? E = u.xfq : c > 1 ? E = u.sYc : d ? E = g.A : A || m ? E = u.YRe : h ? E = u.tEP : _ && (E = u.HKD);
-            let C = !0,
+                C = null;
+            1 === c ? C = u.xfq : c > 1 ? C = u.sYc : d ? C = g.A : A || m ? C = u.YRe : h ? C = u.tEP : _ && (C = u.HKD);
+            let E = !0,
                 I = null;
-            return s ? d ? I = k.intl.string(k.t["9ddYKt"]) : A ? (C = !1, I = t.poll?.question.text) : I = m ? k.intl.string(k.t.sad2PH) : o ? k.intl.string(k.t.p0oZmy) : c > 1 ? k.intl.formatToPlainString(k.t.rtfTKp, {
+            return s ? d ? I = k.intl.string(k.t["9ddYKt"]) : A ? (E = !1, I = t.poll?.question.text) : I = m ? k.intl.string(k.t.sad2PH) : o ? k.intl.string(k.t.p0oZmy) : c > 1 ? k.intl.formatToPlainString(k.t.rtfTKp, {
                 count: c
             }) : 1 === c ? k.intl.string(k.t.tCcq5p) : h ? k.intl.format(k.t.zY4v1B, {
                 stickerName: t.stickerItems[0].name
-            }) : _ ? k.intl.string(k.t.slFYgi) : f ? k.intl.string(k.t.Yvvfw9) : k.intl.string(k.t.sDqZHL) : (C = !1, I = (0, i.jsx)(x.Ay, {
+            }) : _ ? k.intl.string(k.t.slFYgi) : f ? k.intl.string(k.t.Yvvfw9) : k.intl.string(k.t.sDqZHL) : (E = !1, I = (0, i.jsx)(x.Ay, {
                 content: r,
                 message: t,
                 compact: !1,
@@ -292,12 +292,12 @@ function K(e) {
                 className: a()(V.iU, {
                     [V.gy]: n,
                     [V.wH]: l,
-                    [V.QP]: C
+                    [V.QP]: E
                 }),
                 children: I
             })), {
                 previewContent: I,
-                Icon: E
+                Icon: C
             }
         }, [t, r, n, l])
     }({

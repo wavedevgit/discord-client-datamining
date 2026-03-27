@@ -42,6 +42,7 @@ let d = e => {
             onSelectionChange: h,
             options: p,
             selectionMode: "single",
+            maxOptionsVisible: 4,
             fullWidth: !0
         })
     })

@@ -30,8 +30,8 @@ var i = n(627968),
     g = n(976860),
     f = n(71393),
     x = n(204017),
-    E = n(645619),
-    C = n(379229),
+    C = n(645619),
+    E = n(379229),
     I = n(990208),
     N = n(864310),
     b = n(363487),
@@ -264,8 +264,8 @@ function X(e) {
             className: w.Sl,
             stateMachine: u ? "SM_Main_Int" : "SM_Auto"
         }),
-        title: P.intl.string(n === C.o.GAME_SERVER_HOSTING_AVAILABLE ? G.default.wXLChx : G.default["8z8RpY"]),
-        body: n === C.o.GAME_SERVER_HOSTING_AVAILABLE ? P.intl.formatToPlainString(G.default["7KXp9J"], {
+        title: P.intl.string(n === E.o.GAME_SERVER_HOSTING_AVAILABLE ? G.default.wXLChx : G.default["8z8RpY"]),
+        body: n === E.o.GAME_SERVER_HOSTING_AVAILABLE ? P.intl.formatToPlainString(G.default["7KXp9J"], {
             gameName: r,
             gameName2: d
         }) : P.intl.format(G.default["IQ1E+d"], {
@@ -490,9 +490,9 @@ function et(e) {
         channelRowRef: l,
         markAsDismissed: a,
         ...r
-    } = e, d = (0, c.bG)([E.A], () => E.A.getStateForGuild(t)), {
+    } = e, d = (0, c.bG)([C.A], () => C.A.getStateForGuild(t)), {
         analyticsLocations: u
-    } = (0, m.Ay)(A.A.GUILD_POWERUPS_COACHMARK_EXPIRING_PERK), _ = d?.allPowerups[n.skuId], g = (0, I.A)(_, !0), x = s.useRef(null), C = (0, c.bG)([h.A], () => h.A.useReducedMotion);
+    } = (0, m.Ay)(A.A.GUILD_POWERUPS_COACHMARK_EXPIRING_PERK), _ = d?.allPowerups[n.skuId], g = (0, I.A)(_, !0), x = s.useRef(null), E = (0, c.bG)([h.A], () => h.A.useReducedMotion);
     if (null == _ && !n.isGameServer) return null;
     let N = n.isGameServer ? P.intl.string(U.default["9L0pAN"]) : P.intl.formatToPlainString(U.default.gG8bI8, {
             perkName: n.name
@@ -508,7 +508,7 @@ function et(e) {
             withReducedMotion: "halt",
             fit: "contain",
             className: w.Sl,
-            stateMachine: C ? "SM_Main_Int" : "SM_Auto"
+            stateMachine: E ? "SM_Main_Int" : "SM_Auto"
         }) : _?.type === O.o9.LEVEL ? (0, i.jsx)(v.n, {
             powerup: _,
             eventTargetRef: x,

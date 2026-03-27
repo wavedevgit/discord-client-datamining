@@ -26,8 +26,8 @@ function f(e) {
         className: _
     } = e, f = s.useRef(null), {
         newestAnalyticsLocation: x
-    } = (0, u.Ay)(), E = (0, A.Us)(), {
-        reducedMotion: C
+    } = (0, u.Ay)(), C = (0, A.Us)(), {
+        reducedMotion: E
     } = s.useContext(o.CZY), I = (0, d.A)({
         userId: l.id
     }), N = null != l.member ? (0, p.xT)(l.member) : null, b = e => {
@@ -46,7 +46,7 @@ function f(e) {
                 onInteraction: (0, h.s)("GuildChannelUserContextMenu", x)
             })
         }, {
-            context: E
+            context: C
         })
     };
     return (0, i.jsx)(m.A, {
@@ -71,7 +71,7 @@ function f(e) {
                     size: o._3J.SIZE_24,
                     className: a()(g.my, _),
                     "aria-label": l.userNick,
-                    isSpeaking: I && !C.enabled
+                    isSpeaking: I && !E.enabled
                 })
             })
         })

@@ -20,9 +20,9 @@ var i = n(627968),
     g = n(722884),
     f = n(148690),
     x = n(985018),
-    E = n(591454);
+    C = n(591454);
 
-function C(e) {
+function E(e) {
     let {
         channel: t,
         imageUrl: n,
@@ -39,32 +39,32 @@ function C(e) {
             connected: !1,
             needSubscriptionToAccess: !1
         })
-    }, [t]), C = null != r ? {
+    }, [t]), E = null != r ? {
         backgroundColor: r
     } : void 0;
     return (0, i.jsxs)("div", {
-        className: E.rs,
+        className: C.rs,
         children: [l ? (0, i.jsx)("div", {
-            className: E.ZS,
-            style: C,
+            className: C.ZS,
+            style: E,
             children: (0, i.jsx)(p.A, {
                 src: n,
-                className: E.Sl
+                className: C.Sl
             })
         }) : (0, i.jsx)(c.DUT, {
-            className: a()(E.ZS, E.jI),
-            style: C,
+            className: a()(C.ZS, C.jI),
+            style: E,
             onClick: _,
             children: (0, i.jsx)(p.A, {
                 src: n,
-                className: E.Sl
+                className: C.Sl
             })
         }), l ? (0, i.jsxs)("div", {
-            className: E.n_,
+            className: C.n_,
             children: [(0, i.jsx)(o.m, {
                 text: x.intl.string(f.default.XJ4UpB),
                 children: (0, i.jsx)(c.DUT, {
-                    className: E.HF,
+                    className: C.HF,
                     onClick: d,
                     children: (0, i.jsx)(c.R2l, {
                         size: "xs",
@@ -74,7 +74,7 @@ function C(e) {
             }), (0, i.jsx)(o.m, {
                 text: x.intl.string(f.default.XV4qT6),
                 children: (0, i.jsx)(c.DUT, {
-                    className: E.HF,
+                    className: C.HF,
                     onClick: m,
                     children: (0, i.jsx)(c.ucK, {
                         size: "xs",
@@ -95,9 +95,9 @@ function I(e) {
         })
     }, [t]);
     return (0, i.jsx)("div", {
-        className: E._o,
+        className: C._o,
         children: (0, i.jsxs)(c.DUT, {
-            className: E.hH,
+            className: C.hH,
             onClick: n,
             children: [(0, i.jsx)(c.XGR, {
                 size: "xs",
@@ -121,7 +121,7 @@ function N(e) {
         guildId: t.guild_id,
         location: "HangoutWindow"
     }), a = (0, r.bG)([d.A], () => d.A.getChannelStatus(t), [t]), o = s.useMemo(() => (0, _.TP)(a), [a]), c = s.useMemo(() => null == a ? null : (0, _.K7)(a), [a]);
-    return l ? null != a && o && null != c ? (0, i.jsx)(C, {
+    return l ? null != a && o && null != c ? (0, i.jsx)(E, {
         channel: t,
         imageUrl: c,
         isConnected: n

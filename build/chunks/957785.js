@@ -25,9 +25,9 @@ let _ = s.forwardRef(function(e, t) {
         isSingleCard: g = !1,
         wishlistId: f,
         wishlistItem: x,
-        cardSize: E = h.Y.MEDIUM
+        cardSize: C = h.Y.MEDIUM
     } = e, {
-        skuId: C,
+        skuId: E,
         skuProductLine: I
     } = x, {
         trackUserProfileWishlistAction: N
@@ -35,13 +35,13 @@ let _ = s.forwardRef(function(e, t) {
         onClick: () => {
             n(), N({
                 action: T ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
-                skuId: T ? null : C,
+                skuId: T ? null : E,
                 wishlistId: f,
                 productLines: new Set([I])
             })
         },
         className: a()(S, {
-            [m.ax]: E === h.Y.SMALL
+            [m.ax]: C === h.Y.SMALL
         }),
         "aria-label": v,
         innerRef: t,

@@ -2,10 +2,10 @@
 "use strict";
 n.d(t, {
     Pm: () => I,
-    rS: () => C,
+    rS: () => E,
     rr: () => f,
     sW: () => x,
-    yI: () => E
+    yI: () => C
 });
 var i = n(827734),
     s = n(322387),
@@ -61,8 +61,8 @@ let f = {
                 return "TOP_MESSAGES"
         }
     },
-    E = e => "icHighlight" === e ? "TOP_MESSAGES" : "NOTIFICATION_CENTER",
-    C = e => {
+    C = e => "icHighlight" === e ? "TOP_MESSAGES" : "NOTIFICATION_CENTER",
+    E = e => {
         switch (e) {
             case s.hW.GO_LIVE_PUSH:
                 return {

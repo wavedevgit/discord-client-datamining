@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(35092),
     f = n(183555),
     x = n(535089),
-    E = n(946356),
-    C = n(173678),
+    C = n(946356),
+    E = n(173678),
     I = n(524380),
     N = n(652215),
     b = n(49999),
@@ -83,7 +83,7 @@ function v(e) {
             for (let i = 0; i < P.length; i++) {
                 let l = P[i],
                     a = i === D - 1 && t.length > D;
-                (0, _.L)(l) ? (s.add(l.skuProductLine), e.push((0, C.M)(l, {
+                (0, _.L)(l) ? (s.add(l.skuProductLine), e.push((0, E.M)(l, {
                     index: i,
                     moreCount: a ? t.length - D + 1 : void 0,
                     profileOwner: n,
@@ -127,7 +127,7 @@ function v(e) {
         Y = K !== l.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL;
     if (0 === k.length) return null;
     let z = k;
-    return null != V && ((0, _.L)(V) ? z = (0, C.z)(V, {
+    return null != V && ((0, _.L)(V) ? z = (0, E.z)(V, {
         profileOwner: n,
         analyticsLocations: O,
         wishlistId: y,
@@ -139,7 +139,7 @@ function v(e) {
         onViewWishlist: v
     }))), (0, i.jsx)("section", {
         "aria-labelledby": G,
-        children: (0, i.jsxs)(E.A.Overlay, {
+        children: (0, i.jsxs)(C.A.Overlay, {
             ref: H,
             className: T.kL,
             children: [(0, i.jsxs)("div", {

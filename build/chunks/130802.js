@@ -88,7 +88,7 @@ function x(e) {
     })
 }
 
-function E(e) {
+function C(e) {
     let {
         closePopout: t
     } = e, n = d.tz.useSetting();
@@ -107,7 +107,7 @@ function E(e) {
     })
 }
 
-function C(e) {
+function E(e) {
     let {
         closePopout: t
     } = e;
@@ -214,11 +214,11 @@ function b(e) {
                 };
             case 3:
                 return {
-                    type: "popout", children: E
+                    type: "popout", children: C
                 };
             case 4:
                 return {
-                    type: "popout", children: C
+                    type: "popout", children: E
                 };
             case 5:
                 return {

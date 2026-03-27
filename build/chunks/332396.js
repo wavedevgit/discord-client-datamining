@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(734057),
     f = n(287809),
     x = n(607567),
-    E = n(403362),
-    C = n(661191),
+    C = n(403362),
+    E = n(661191),
     I = n(181079),
     N = n(652215),
     b = n(985018),
@@ -42,7 +42,7 @@ function T(e, t) {
 }
 
 function v() {
-    let e = (0, c.yK)([I.A, g.A], () => C.default.keys(I.A.getFavoriteChannels()).map(e => g.A.getChannel(e)).filter(E.Vq)),
+    let e = (0, c.yK)([I.A, g.A], () => E.default.keys(I.A.getFavoriteChannels()).map(e => g.A.getChannel(e)).filter(C.Vq)),
         t = e.map(e => e.id),
         n = e.filter(e => e.type === N.rbe.GUILD_VOICE),
         s = e.filter(e => e.type === N.rbe.GUILD_STAGE_VOICE).map(e => e.id),

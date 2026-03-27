@@ -47,14 +47,14 @@ function _(e) {
                 count: x
             });
         case u.Uo.MOBILE_NATIVE_UPDATE_AVAILABLE:
-            let E = t.local_id?.split("_").pop() ?? "unknown";
-            return `Update to build ${E} available!`;
+            let C = t.local_id?.split("_").pop() ?? "unknown";
+            return `Update to build ${C} available!`;
         case u.hW.FRIEND_SUGGESTION_CREATED:
             r.A.getRelationshipType(i), h.eA$.PENDING_OUTGOING;
             break;
         case u.hW.GUILD_SCHEDULED_EVENT_STARTED:
-            let C = t.guild_scheduled_event_id,
-                I = null != C ? l.Ay.getGuildScheduledEvent(C) : null,
+            let E = t.guild_scheduled_event_id,
+                I = null != E ? l.Ay.getGuildScheduledEvent(E) : null,
                 N = I?.name,
                 b = a.A.getGuild(I?.guild_id)?.name,
                 S = (0, l.AZ)(I ?? void 0);

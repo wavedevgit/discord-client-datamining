@@ -1,7 +1,7 @@
 /** chunk id: 874739 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => C
+    A: () => E
 });
 var i = n(627968),
     s = n(64700),
@@ -20,13 +20,13 @@ var i = n(627968),
     g = n(713397),
     f = n(652215),
     x = n(806931),
-    E = n(256960);
-let C = (0, a.A)(e => {
+    C = n(256960);
+let E = (0, a.A)(e => {
     let {
         participants: t,
         filteredParticipants: n,
         selectedParticipant: a,
-        participantsVersion: C,
+        participantsVersion: E,
         layout: I,
         onSelectParticipant: N,
         onContextMenuParticipant: b,
@@ -47,7 +47,7 @@ let C = (0, a.A)(e => {
     s.useEffect(() => {
         h._.dispatch(f.jej.REMEASURE_TARGET)
     }, [O, L, P.width, P.height]);
-    let w = s.useMemo(() => n.filter(e => e.type !== x.lp.ACTIVITY || !e.participants.some(e => (0, r.S)(e))), [n, C]),
+    let w = s.useMemo(() => n.filter(e => e.type !== x.lp.ACTIVITY || !e.participants.some(e => (0, r.S)(e))), [n, E]),
         k = (0, l.bG)([o.A], () => o.A.getVoiceParticipantsHidden(T.id), [T.id]);
     if (U?.channelId === T.id) return (0, i.jsx)(m.A, {
         height: L
@@ -65,7 +65,7 @@ let C = (0, a.A)(e => {
     if (D === f._Of.VOICE) return (0, i.jsx)(c.A, {
         guildId: T.guild_id,
         width: O,
-        className: E.Er,
+        className: C.Er,
         participants: t,
         onContextMenu: b
     });
@@ -78,12 +78,12 @@ let C = (0, a.A)(e => {
             })
         }
         return (0, i.jsx)(d.A, {
-            className: E.HA,
+            className: C.HA,
             justify: d.A.Justify.CENTER,
             align: d.A.Align.CENTER,
             children: (0, i.jsx)(_.A, {
                 channel: T,
-                className: E.g9,
+                className: C.g9,
                 participants: w,
                 totalNumberOfParticipants: t.length,
                 onClick: N,

@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(192308),
     f = n(397927),
     x = n(951001),
-    E = n(964486),
-    C = n(260762),
+    C = n(964486),
+    E = n(260762),
     I = n(793574),
     N = n(688810),
     b = n(313961),
@@ -181,12 +181,12 @@ function eu(e) {
         lurkingGuildIds: l
     } = e, a = (0, y.A)("TopSection"), {
         isExperimentEnabled: r
-    } = (0, v.TW)("TopSection"), o = (0, h.bG)([V.A], () => null != V.A.getVoiceChannelId()), c = (0, g.useHasAnyModalOpen)(), d = (0, S.Ay)(e => e.postConnectionOpen), [u, m] = (0, T.kn)(d && r && !o && !c ? [A.M.FAVORITES_SERVER_ONBOARDING_INTRO] : []), _ = u === A.M.FAVORITES_SERVER_ONBOARDING_INTRO, [p] = (0, T.kn)(_ ? [A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM] : [], void 0, !0), f = p === A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM, x = s.useRef(!1), E = f && a;
+    } = (0, v.TW)("TopSection"), o = (0, h.bG)([V.A], () => null != V.A.getVoiceChannelId()), c = (0, g.useHasAnyModalOpen)(), d = (0, S.Ay)(e => e.postConnectionOpen), [u, m] = (0, T.kn)(d && r && !o && !c ? [A.M.FAVORITES_SERVER_ONBOARDING_INTRO] : []), _ = u === A.M.FAVORITES_SERVER_ONBOARDING_INTRO, [p] = (0, T.kn)(_ ? [A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM] : [], void 0, !0), f = p === A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM, x = s.useRef(!1), C = f && a;
     s.useEffect(() => {
-        E && !x.current && n(), x.current = E
-    }, [n, E]);
-    let C = (0, h.yK)([k.A, P.Ay], () => k.A.getGuildIds().filter(e => P.Ay.isCurrentUserGuest(e))),
-        I = l.concat(C),
+        C && !x.current && n(), x.current = C
+    }, [n, C]);
+    let E = (0, h.yK)([k.A, P.Ay], () => k.A.getGuildIds().filter(e => P.Ay.isCurrentUserGuest(e))),
+        I = l.concat(E),
         {
             entrypoint: N
         } = (0, L.X8)({
@@ -244,7 +244,7 @@ function eA(e) {
     }), u = (0, h.bG)([O.A], () => O.A.lurkingGuildIds()), A = s.useMemo(() => n ? [] : u, [u, n]), m = (0, h.bG)([b.A], () => b.A.isFullscreenInContext()), {
         isSorting: g,
         startSorting: x,
-        stopSorting: C
+        stopSorting: E
     } = (0, F.A)(), S = s.useRef(!1), [T] = s.useState(() => new _.Ep), v = s.useRef(null), j = s.useRef(null), {
         ref: R,
         ...U
@@ -278,7 +278,7 @@ function eA(e) {
     let {
         analyticsLocations: es
     } = (0, N.Ay)(I.A.GUILDS_LIST), eA = ec(Q);
-    (0, E.u5)(() => {
+    (0, C.u5)(() => {
         if (!S.current && 0 !== o.size) {
             if (!eA) {
                 let {
@@ -319,7 +319,7 @@ function eA(e) {
                         draggable: !0,
                         sorting: g,
                         onDragStart: x,
-                        onDragEnd: C,
+                        onDragEnd: E,
                         renderChildNode: e,
                         "aria-setsize": s,
                         "aria-posinset": void 0 !== n ? n + 1 : void 0
@@ -331,14 +331,14 @@ function eA(e) {
                         draggable: !0,
                         sorting: g,
                         onDragStart: x,
-                        onDragEnd: C,
+                        onDragEnd: E,
                         "aria-setsize": s,
                         "aria-posinset": void 0 !== n ? n + 1 : void 0
                     }, t.id);
                 default:
                     return null
             }
-        }, [x, C, g, ei.setNodeRef]),
+        }, [x, E, g, ei.setNodeRef]),
         ep = (0, i.jsx)(J.A, {
             selected: eA,
             className: er.ai
@@ -411,7 +411,7 @@ function eA(e) {
     })
 }
 let em = s.memo(function(e) {
-    let t = (0, C.A)("guildsnav");
+    let t = (0, E.A)("guildsnav");
     return (0, i.jsx)(d.hD, {
         navigator: t,
         children: (0, i.jsx)(eA, {

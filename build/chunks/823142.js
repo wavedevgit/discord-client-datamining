@@ -24,8 +24,8 @@ var i = n(627968),
     g = n(924985),
     f = n(71393),
     x = n(576705),
-    E = n(543465),
-    C = n(551851),
+    C = n(543465),
+    E = n(551851),
     I = n(879124),
     N = n(652215),
     b = n(985018),
@@ -39,13 +39,13 @@ let v = s.memo(function(e) {
                 channel: l,
                 connectChannelDragSource: u,
                 connectChannelDropTarget: _,
-                disableManageChannels: C,
+                disableManageChannels: E,
                 position: I,
                 sortingPosition: v,
                 hideIcon: y,
                 children: j
             } = e,
-            R = (0, o.bG)([E.Ay], () => E.Ay.isChannelMuted(l.getGuildId(), l.id)),
+            R = (0, o.bG)([C.Ay], () => C.Ay.isChannelMuted(l.getGuildId(), l.id)),
             O = (0, o.bG)([g.A], () => g.A.isCollapsed(l.id)),
             L = (0, o.bG)([x.A], () => x.A.can(N.xBc.MANAGE_CHANNELS, l));
         t = null != v ? I > v ? S.mU : S.TR : S.fx;
@@ -133,7 +133,7 @@ let v = s.memo(function(e) {
                         }), (0, i.jsx)("div", {
                             onClick: T,
                             className: S.Y_,
-                            children: L && !C ? (0, i.jsx)(d.m, {
+                            children: L && !E ? (0, i.jsx)(d.m, {
                                 text: b.intl.string(b.t["fUYU+j"]),
                                 children: (0, i.jsx)(h.DUT, {
                                     className: a()(S.c9, S.ih),
@@ -192,7 +192,7 @@ let v = s.memo(function(e) {
     R = s.memo(function(e) {
         let {
             category: t
-        } = e, n = (0, o.bG)([C.A], () => C.A.isVoiceCategoryCollapsed(t.guild.id)), l = s.useCallback(() => {
+        } = e, n = (0, o.bG)([E.A], () => E.A.isVoiceCategoryCollapsed(t.guild.id)), l = s.useCallback(() => {
             n ? (0, I.T)(t.guild.id) : (0, I.E)(t.guild.id)
         }, [t.guild.id, n]);
         return (0, i.jsx)("div", {
@@ -210,7 +210,7 @@ let v = s.memo(function(e) {
         let {
             category: t,
             channel: n
-        } = e, s = (0, o.bG)([C.A], () => C.A.isVoiceCategoryCollapsed(t.guild.id));
+        } = e, s = (0, o.bG)([E.A], () => E.A.isVoiceCategoryCollapsed(t.guild.id));
         return s || null == n || n.record.type === N.rbe.GUILD_CATEGORY ? s ? (0, i.jsx)("li", {
             className: S.fx,
             children: (0, i.jsx)("div", {

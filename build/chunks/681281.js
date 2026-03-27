@@ -21,8 +21,8 @@ var s = n(503698),
     g = n(974930),
     f = n(961314),
     x = n(58736),
-    E = n(742589),
-    C = n(353428),
+    C = n(742589),
+    E = n(353428),
     I = n(267102),
     N = n(46054),
     b = n(164203),
@@ -198,7 +198,7 @@ function F(e) {
         children: [(0, i.jsx)(o.NPJ, {
             theme: U.NJ.DARK,
             children: e => (0, i.jsxs)(x.Ay, {
-                onDoubleClick: E.I,
+                onDoubleClick: C.I,
                 transparent: !0,
                 className: l()(e, w.jr),
                 innerClassName: w.gi,
@@ -227,7 +227,7 @@ function F(e) {
                             })
                         })]
                     })
-                }), (0, i.jsx)(C.i$, {
+                }), (0, i.jsx)(E.i$, {
                     channel: t,
                     guild: s
                 }), (0, i.jsx)(H, {

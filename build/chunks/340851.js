@@ -22,8 +22,8 @@ var i = n(627968),
     g = n(916641),
     f = n(652896),
     x = n(279250),
-    E = n(346846),
-    C = n(342296),
+    C = n(346846),
+    E = n(342296),
     I = n(481947),
     N = n(961350),
     b = n(71393),
@@ -112,10 +112,10 @@ let G = (0, A.J)(function(e) {
         showHangStatus: er
     } = e, eo = s.useRef(null), [ec, ed] = s.useState(!1), eu = s.useRef(null), [eh, eA] = s.useState(!1), [em, e_] = s.useState(!1), [ep, eg] = s.useState(!1), ef = eh || ep || em, ex = () => {
         ed(!ec)
-    }, eE = (e, t) => {
+    }, eC = (e, t) => {
         let n = new Set(["system:click_outside", "user:escape", "user:explicit"]);
-        null != t && n.has(t) && (em && e_(!1), eh && eA(!1)), eC()
-    }, eC = () => {
+        null != t && n.has(t) && (em && e_(!1), eh && eA(!1)), eE()
+    }, eE = () => {
         clearTimeout(eu.current), $?.(l.id)
     };
     s.useEffect(() => () => {
@@ -129,7 +129,7 @@ let G = (0, A.J)(function(e) {
                 channelId: A.id,
                 guildId: A.guild_id
             };
-            N.default.getId() !== l.id && u.default.selectVoiceChannel(A.id), q ? ((0, E.A)(e), c.A.selectParticipant(e.channelId, (0, f._z)(e))) : (0, h.Nl)(e), $?.(l.id)
+            N.default.getId() !== l.id && u.default.selectVoiceChannel(A.id), q ? ((0, C.A)(e), c.A.selectParticipant(e.channelId, (0, f._z)(e))) : (0, h.Nl)(e), $?.(l.id)
         },
         eN = e => {
             (0, d.L3)(e, async () => {
@@ -155,8 +155,8 @@ let G = (0, A.J)(function(e) {
             onMouseEnter: en ? void 0 : () => {
                 ec || (eu.current = setTimeout(() => J?.(l.id), 100))
             },
-            onMouseLeave: en ? void 0 : eC,
-            children: (0, i.jsx)(C.A, {
+            onMouseLeave: en ? void 0 : eE,
+            children: (0, i.jsx)(E.A, {
                 clickTrap: l?.id === T.default.getCurrentUser()?.id && ec,
                 targetElementRef: eo,
                 user: l,
@@ -215,14 +215,14 @@ let G = (0, A.J)(function(e) {
                         renderPopout: () => (0, i.jsx)(y.A, {
                             channel: A,
                             user: l,
-                            onAction: eC,
+                            onAction: eE,
                             onWatchStream: z ? eI : void 0,
                             hangStatusActivity: ea,
                             setIsHangStatusInputFocused: eA,
                             setIsHangStatusEmojiPickerOpen: eg
                         }),
                         shouldShow: (Z || er && ef && es) && !ec,
-                        onRequestClose: eE,
+                        onRequestClose: eC,
                         spacing: 17,
                         children: () => (0, i.jsx)(I.Ay, {
                             ...s,

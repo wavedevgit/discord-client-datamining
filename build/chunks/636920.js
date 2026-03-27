@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(358957),
     f = n(559405),
     x = n(708455),
-    E = n(652215),
-    C = n(985018),
+    C = n(652215),
+    E = n(985018),
     I = n(392951);
 
 function N(e) {
@@ -32,16 +32,16 @@ function N(e) {
         isSelf: b = !1,
         analyticsSource: S,
         onAction: T
-    } = e, v = (0, l.bG)([u.A], () => u.A.getVoiceChannelId() === n.id, [n]), y = (0, l.bG)([d.A], () => d.A.can(E.xBc.CONNECT, n), [n]), j = null == t.emoji || (0, _.n)(t.emoji, n);
+    } = e, v = (0, l.bG)([u.A], () => u.A.getVoiceChannelId() === n.id, [n]), y = (0, l.bG)([d.A], () => d.A.can(C.xBc.CONNECT, n), [n]), j = null == t.emoji || (0, _.n)(t.emoji, n);
     s.useEffect(() => {
-        h.default.track(E.HAw.VIEW_HANG_STATUS, {
+        h.default.track(C.HAw.VIEW_HANG_STATUS, {
             source: S,
             other_user_id: N,
             ...(0, p.A)(n.id)
         })
     }, [S, n.id, N]);
     let R = s.useCallback(() => {
-            !v && y && (c.default.selectVoiceChannel(n.id), T?.(), h.default.track(E.HAw.HANG_STATUS_CTA_CLICKED, {
+            !v && y && (c.default.selectVoiceChannel(n.id), T?.(), h.default.track(C.HAw.HANG_STATUS_CTA_CLICKED, {
                 source: S,
                 ...(0, p.A)(n.id),
                 other_user_id: N,
@@ -56,7 +56,7 @@ function N(e) {
                     if (null == t.details || null == t.emoji) return;
                     (0, A.hS)(t.details, t.emoji, !0)
                 } else(0, A.Iq)(e, !0);
-                T?.(), h.default.track(E.HAw.HANG_STATUS_CTA_CLICKED, {
+                T?.(), h.default.track(C.HAw.HANG_STATUS_CTA_CLICKED, {
                     source: S,
                     ...(0, p.A)(n.id),
                     other_user_id: N,
@@ -80,12 +80,12 @@ function N(e) {
                 children: L
             })
         }), v && !b ? (0, i.jsx)(r.m_, {
-            text: j ? void 0 : C.intl.string(C.t["0LMpW+"]),
+            text: j ? void 0 : E.intl.string(E.t["0LMpW+"]),
             children: (0, i.jsx)("div", {
                 children: (0, i.jsx)(o.Button, {
                     size: "sm",
                     variant: "secondary",
-                    text: C.intl.string(C.t["0eHzpm"]),
+                    text: E.intl.string(E.t["0eHzpm"]),
                     onClick: O,
                     disabled: !j
                 })
@@ -93,7 +93,7 @@ function N(e) {
         }) : !b && y && (0, i.jsx)(o.Button, {
             size: "sm",
             variant: "secondary",
-            text: C.intl.string(C.t["B/dHXL"]),
+            text: E.intl.string(E.t["B/dHXL"]),
             onClick: R
         })]
     })

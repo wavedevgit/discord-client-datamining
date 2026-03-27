@@ -31,7 +31,7 @@ function _(e) {
                 muted: !_
             }, d.G_.muted(!_)) : f(e => !e)
         },
-        E = m.intl.string(m.t.h850Ss);
+        C = m.intl.string(m.t.h850Ss);
     return (0, i.jsx)(a.YNO, {
         targetElementRef: n,
         shouldShow: g,
@@ -55,9 +55,9 @@ function _(e) {
                 ...e,
                 ref: n,
                 onClick: x,
-                tooltip: s ? null : E,
+                tooltip: s ? null : C,
                 icon: _ || p !== A.orn.ALL_MESSAGES ? a.a_I : a.XFE,
-                "aria-label": E,
+                "aria-label": C,
                 selected: s
             })
         }

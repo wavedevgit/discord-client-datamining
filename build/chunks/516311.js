@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     RQ: () => x,
-    dA: () => E
+    dA: () => C
 });
 var i = n(627968);
 n(64700);
@@ -45,7 +45,7 @@ function x(e) {
     }) : null
 }
 
-function E(e) {
+function C(e) {
     let t = (0, a.bG)([h.A], () => h.A.getChannel(e), [e]);
     l()(null != t, "useNotificationSettingsItem: channel cannot be undefined");
     let n = (0, u.os)("StageChannelCallOverflowMenu"),

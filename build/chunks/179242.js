@@ -28,8 +28,8 @@ function x(e) {
     } = e, {
         analyticsLocations: x
     } = (0, l.Ay)(), {
-        context: E
-    } = (0, o.NJ)(), C = (0, s.A)(), {
+        context: C
+    } = (0, o.NJ)(), E = (0, s.A)(), {
         mutualFriendsCount: I,
         mutualFriends: N,
         mutualGuilds: b
@@ -58,7 +58,7 @@ function x(e) {
             section: "MUTUAL_FRIENDS",
             header: g.intl.string(g.t["0mTJ3j"]),
             listClassName: f.p_,
-            onExpand: () => (0, d.A)(t.id, C),
+            onExpand: () => (0, d.A)(t.id, E),
             items: null == N ? Array.from({
                 length: I
             }).map((e, t) => (0, i.jsxs)("div", {
@@ -82,7 +82,7 @@ function x(e) {
                     channelId: n,
                     onSelect: () => {
                         (0, u.openUserProfileModal)({
-                            ...E,
+                            ...C,
                             userId: s.id,
                             sourceAnalyticsLocations: x
                         })

@@ -26,9 +26,9 @@ function o(e) {
     let {
         Component: f,
         events: x,
-        play: E
+        play: C
     } = (0, l.c)(c ? "disable" : "enable");
-    return s.useEffect(() => () => E(), [c, E]), (0, i.jsx)(g, {
+    return s.useEffect(() => () => C(), [c, C]), (0, i.jsx)(g, {
         buttonRef: _,
         isTrayButton: !0,
         label: n,

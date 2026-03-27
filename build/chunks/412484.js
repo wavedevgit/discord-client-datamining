@@ -22,8 +22,8 @@ var i = n(627968),
     g = n(203982),
     f = n(723702),
     x = n(157296),
-    E = n(963702),
-    C = n(792967),
+    C = n(963702),
+    E = n(792967),
     I = n(712209),
     N = n(652215),
     b = n(985018),
@@ -87,7 +87,7 @@ function T(e) {
         g._.unsubscribe(N.jej.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
     }));
     let k = (0, _.A)("unreads", L);
-    return 0 === U.length ? (0, i.jsx)(E.A, {
+    return 0 === U.length ? (0, i.jsx)(C.A, {
         Icon: u.K$s,
         header: b.intl.string(b.t["6XMM+D"]),
         tip: o().os?.family === "OS X" ? b.intl.string(b.t.w9uDOW) : b.intl.string(b.t.BiUJC6)
@@ -108,7 +108,7 @@ function T(e) {
                     className: a()(S.XG, `group-spacing-${w}`),
                     children: [j ? (0, i.jsx)(v, {
                         setSeenTutorial: R
-                    }) : null, (0, C.A)(U, D, y), G === I.mJ.Done ? null : (0, i.jsx)(u.y$y, {
+                    }) : null, (0, E.A)(U, D, y), G === I.mJ.Done ? null : (0, i.jsx)(u.y$y, {
                         className: S.u1
                     })]
                 })
@@ -153,7 +153,7 @@ function v(e) {
 }
 
 function y() {
-    return (0, i.jsx)(E.A, {
+    return (0, i.jsx)(C.A, {
         Icon: u.K$s,
         disableStars: !0,
         header: b.intl.string(b.t["KG/ynf"]),

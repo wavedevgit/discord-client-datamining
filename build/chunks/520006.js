@@ -59,8 +59,8 @@ function x(e) {
         stream: n,
         channel: s,
         exitFullScreen: x,
-        appContext: E,
-        analyticsLocation: C,
+        appContext: C,
+        analyticsLocation: E,
         guildScheduledEvent: I,
         shouldPrioritizeGroupPlusIcon: N = !1,
         isRichPresenceInvite: b = !1,
@@ -91,9 +91,9 @@ function x(e) {
                 channel: s,
                 streamUserId: n?.ownerId,
                 applicationId: t,
-                appContext: E ?? O,
+                appContext: C ?? O,
                 exitFullScreen: x,
-                analyticsLocation: C,
+                analyticsLocation: E,
                 guildScheduledEvent: I,
                 source: s.isGuildStageVoice() ? p.PE1.STAGE_CHANNEL : p.PE1.STREAM_INVITE
             })

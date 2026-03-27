@@ -21,8 +21,8 @@ var i = n(64700),
     g = n(645619),
     f = n(379229),
     x = n(904629),
-    E = n(229548),
-    C = n(139032),
+    C = n(229548),
+    E = n(139032),
     I = n(52260),
     N = n(294384),
     b = n(639060),
@@ -71,7 +71,7 @@ function j(e) {
             }, [s, n?.lastBoostCount, n?.lastSeenWarningNotification, t, d, u?.entitlements])
         }(e, n ?? void 0, t),
         j = function(e, t) {
-            let n, r, [_, p] = (0, E.ty)(null != t),
+            let n, r, [_, p] = (0, C.ty)(null != t),
                 g = _ === a.M.GUILD_POWERUP_PERKS_COACHMARK,
                 {
                     available: x
@@ -83,19 +83,19 @@ function j(e) {
                         i = t?.unlockedPowerups?.[s.zY] != null;
                     return e && !i ? T.q.FILE_UPLOAD_250_MB : Array.from(T.r9[T.q.GUILD_TAG_BADGE_PACKS_WAVE_TWO]).some(e => t?.unlockedPowerups?.[e] != null) ? n && !r ? T.q.GAME_SERVER_HOSTING : Array.from(T.r9[T.q.GUILD_TAG_BADGE_PACKS_WAVE_ONE]).some(e => t?.unlockedPowerups?.[e] != null) ? 0 : T.q.GUILD_TAG_BADGE_PACKS_WAVE_ONE : T.q.GUILD_TAG_BADGE_PACKS_WAVE_TWO
                 }, [t, n, r])),
-                [R, O] = (0, E.FC)(null != t && !g, j),
+                [R, O] = (0, C.FC)(null != t && !g, j),
                 L = R === a.M.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK,
-                M = (0, C.A)(e),
-                [D, G] = (0, E.ww)(null != t && !g && !L && null != M, e),
+                M = (0, E.A)(e),
+                [D, G] = (0, C.ww)(null != t && !g && !L && null != M, e),
                 U = D === a.M.BOOST_TO_UNLOCK_COACHMARK,
                 P = (0, I.A)(e),
-                [w, k] = (0, E.W2)(null != t && !g && !L && !U && null != P, e),
+                [w, k] = (0, C.W2)(null != t && !g && !L && !U && null != P, e),
                 V = w === a.M.EXPIRING_POWERUP_COACHMARK,
                 B = (0, h.TS)(e, "useGuildPowerupsChannelListPopout"),
-                [H, F] = (0, E.rd)(null != t && !g && !L && !U && !V && B),
+                [H, F] = (0, C.rd)(null != t && !g && !L && !U && !V && B),
                 K = H === a.M.GAME_SERVER_HOSTING_BATCH_RELEASE_V2_COACHMARK,
                 W = (0, m.S)(e, "useGuildPowerupsChannelListPopout"),
-                [Y, z] = (0, E.vn)(null != t && !b && B && W),
+                [Y, z] = (0, C.vn)(null != t && !b && B && W),
                 q = Y === a.M.GAME_SERVER_PRICING_CHANGE_COACHMARK,
                 X = i.useMemo(() => {
                     if (null == t || g || L || K || q || U || V) return;
@@ -157,7 +157,7 @@ function j(e) {
                     }(e, b, x, y);
                     if (null != s) return s
                 }, [e, t, g, L, K, q, U, V, x, b, y]),
-                [Q, J] = (0, E.ru)(null != X);
+                [Q, J] = (0, C.ru)(null != X);
             return i.useMemo(() => {
                 if (null != t) {
                     if (g) return {

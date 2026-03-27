@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(538355),
     f = n(854627),
     x = n(447404),
-    E = n(320501),
-    C = n(203982),
+    C = n(320501),
+    E = n(203982),
     I = n(427262),
     N = n(652215),
     b = n(985018),
@@ -101,8 +101,8 @@ let T = e => {
         }, []), s.useEffect(() => {
             let e = () => y(!0),
                 t = () => y(!1);
-            return C._.subscribe(N.jej.TEXTAREA_FOCUS, e), C._.subscribe(N.jej.TEXTAREA_BLUR, t), () => {
-                C._.unsubscribe(N.jej.TEXTAREA_FOCUS, e), C._.unsubscribe(N.jej.TEXTAREA_BLUR, t)
+            return E._.subscribe(N.jej.TEXTAREA_FOCUS, e), E._.subscribe(N.jej.TEXTAREA_BLUR, t), () => {
+                E._.unsubscribe(N.jej.TEXTAREA_FOCUS, e), E._.unsubscribe(N.jej.TEXTAREA_BLUR, t)
             }
         }, []), s.useEffect(() => {
             let e = I.current;
@@ -112,7 +112,7 @@ let T = e => {
             })
         }, [I]), s.useEffect(() => {
             let e = Date.now();
-            _(E.A.getMessages(t.id)._array.filter(t => t.timestamp.getTime() > e - 12e5).slice(-50))
+            _(C.A.getMessages(t.id)._array.filter(t => t.timestamp.getTime() > e - 12e5).slice(-50))
         }, [t]);
         let M = s.useCallback(e => {
                 _(t => {
@@ -141,7 +141,7 @@ let T = e => {
                 let {
                     channelId: n,
                     message: i
-                } = e, s = E.A.getMessage(i.channel_id, i.id);
+                } = e, s = C.A.getMessage(i.channel_id, i.id);
                 if (n === t.id && s?.state === "SENT") {
                     M(s);
                     let e = setTimeout(() => {

@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(392054),
     f = n(826673),
     x = n(757293),
-    E = n(954571),
-    C = n(272812),
+    C = n(954571),
+    E = n(272812),
     I = n(652215),
     N = n(985018),
     b = n(408851),
@@ -71,7 +71,7 @@ function v(e) {
     } = (0, _.Ay)(m.A.VC_TILE_ACTIVITY_SHELF_BUTTON);
     return (0, i.jsx)(_.f5, {
         value: l,
-        children: (0, i.jsxs)(C.A, {
+        children: (0, i.jsxs)(E.A, {
             className: b.zr,
             children: [(0, i.jsx)(c.m, {
                 asContainer: !0,
@@ -125,7 +125,7 @@ function y(e) {
         activitiesEnabled: o = !0
     } = e;
     s.useEffect(() => {
-        E.default.track(I.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
+        C.default.track(I.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
             tile_type: "activity invite",
             n_participants: 1
         })
@@ -168,7 +168,7 @@ function y(e) {
         children: (0, i.jsx)(d.NPJ, {
             disableAdaptiveTheme: !0,
             theme: I.NJ8.MIDNIGHT,
-            children: e => (0, i.jsxs)(C.A, {
+            children: e => (0, i.jsxs)(E.A, {
                 className: a()(b.zr, b.co, e),
                 children: [(0, i.jsx)("img", {
                     src: S,
@@ -203,7 +203,7 @@ function j(e) {
         userParticipantCount: c
     } = e;
     (0, u.Ay)(() => {
-        E.default.track(I.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
+        C.default.track(I.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
             tile_type: "activity suggestion",
             n_participants: c
         })
@@ -220,7 +220,7 @@ function j(e) {
         }), [t]);
     return (0, i.jsx)(_.f5, {
         value: S,
-        children: (0, i.jsxs)(C.A, {
+        children: (0, i.jsxs)(E.A, {
             className: b.zr,
             children: [o > 300 ? (0, i.jsx)(d.Text, {
                 className: b.R_,
@@ -240,7 +240,7 @@ function j(e) {
             }), (0, i.jsxs)(d.DUT, {
                 className: b.HI,
                 onClick: function() {
-                    E.default.track(I.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
+                    C.default.track(I.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
                         tile_type: "activity suggestion",
                         close_type: "permanent",
                         n_participants: c
@@ -253,7 +253,7 @@ function j(e) {
             }), (0, i.jsx)(d.DUT, {
                 className: b.cG,
                 onClick: function() {
-                    E.default.track(I.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
+                    C.default.track(I.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
                         tile_type: "activity suggestion",
                         close_type: "temporary",
                         n_participants: c

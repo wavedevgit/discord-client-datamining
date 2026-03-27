@@ -21,8 +21,8 @@ var i = n(627968),
     g = n(521588),
     f = n(688810),
     x = n(362490),
-    E = n(384059),
-    C = n(359348),
+    C = n(384059),
+    E = n(359348),
     I = n(932001),
     N = n(625180),
     b = n(338771),
@@ -84,19 +84,19 @@ let Y = s.memo(function(e) {
                 action_type: "invite_to_game",
                 game_id: g?.id ?? null,
                 application_id: M.application_id
-            }), (0, E.X)(en, E.O.INVITE), w.default.track(V.HAw.OPEN_MODAL, {
+            }), (0, C.X)(en, C.O.INVITE), w.default.track(V.HAw.OPEN_MODAL, {
                 type: "Send Join Invite",
                 application_id: M.application_id,
                 location: Y.location
             }), (0, h.qf)(M, !1)
         }, [M, Y, en, g]), e_ = s.useCallback((e, t) => () => {
-            (0, E.X)(en, E.O.LEAVE_ACTIVITY), p.A.leaveActivity({
+            (0, C.X)(en, C.O.LEAVE_ACTIVITY), p.A.leaveActivity({
                 location: t,
                 applicationId: e,
                 showFeedback: !0
             })
         }, [en]), ep = s.useCallback(e => () => {
-            (0, E.X)(en, E.O.LEAVE_ACTIVITY), N.A.stopFrame({
+            (0, C.X)(en, C.O.LEAVE_ACTIVITY), N.A.stopFrame({
                 applicationId: e
             })
         }, [en]), eg = s.useCallback(() => {
@@ -113,7 +113,7 @@ let Y = s.memo(function(e) {
                     analyticsLocations: ei
                 })
             })
-        }, [g, ei]), ex = D?.name ?? g?.name ?? "", eE = s.useCallback(() => {
+        }, [g, ei]), ex = D?.name ?? g?.name ?? "", eC = s.useCallback(() => {
             (0, T.pK)({
                 gameApplicationId: g?.id,
                 buttonVariant: "admin"
@@ -127,7 +127,7 @@ let Y = s.memo(function(e) {
                     ...t
                 })
             })
-        }, [ex, g?.id]), eC = s.useCallback(() => {
+        }, [ex, g?.id]), eE = s.useCallback(() => {
             a()(null != r, "Received null guildId"), (0, T.pK)({
                 gameApplicationId: g?.id,
                 buttonVariant: "member"
@@ -150,7 +150,7 @@ let Y = s.memo(function(e) {
                 tooltipText: H.intl.formatToPlainString(F.default.YhnUVO, {
                     gameName: ex
                 }),
-                onClick: eE,
+                onClick: eC,
                 onViewed: () => (0, T.ET)({
                     gameApplicationId: g?.id,
                     buttonVariant: "admin"
@@ -166,7 +166,7 @@ let Y = s.memo(function(e) {
                         runningGameId: g?.id,
                         targetElementRef: t,
                         onClick: () => {
-                            eE(), n(B.i.TAKE_ACTION), s(B.i.TAKE_ACTION)
+                            eC(), n(B.i.TAKE_ACTION), s(B.i.TAKE_ACTION)
                         },
                         onClose: () => n(B.i.USER_DISMISS)
                     })
@@ -175,7 +175,7 @@ let Y = s.memo(function(e) {
                 tooltipText: H.intl.formatToPlainString(F.default.lwwiHE, {
                     gameName: ex
                 }),
-                onClick: eC,
+                onClick: eE,
                 onViewed: () => (0, T.ET)({
                     gameApplicationId: g?.id,
                     buttonVariant: "member"
@@ -191,7 +191,7 @@ let Y = s.memo(function(e) {
                         runningGameId: g?.id,
                         targetElementRef: t,
                         onClick: () => {
-                            eC(), n(B.i.TAKE_ACTION), s(B.i.TAKE_ACTION)
+                            eE(), n(B.i.TAKE_ACTION), s(B.i.TAKE_ACTION)
                         },
                         onClose: () => n(B.i.USER_DISMISS)
                     })
@@ -202,9 +202,9 @@ let Y = s.memo(function(e) {
                 if (null == g && null != I && !(0, m.f)() || !c && !l) return null;
                 let s = null;
                 return c ? (e = !1, t = () => {
-                    eg(), (0, E.X)(en, E.O.STREAM, !1)
+                    eg(), (0, C.X)(en, C.O.STREAM, !1)
                 }, n = u.GT3, s = H.intl.string(H.t.S5anIc)) : _ ? (e = !1, t = () => {
-                    ef(), (0, E.X)(en, E.O.STREAM, !0)
+                    ef(), (0, C.X)(en, C.O.STREAM, !0)
                 }, n = u.Fzq, s = null != g ? H.intl.formatToPlainString(H.t.AB5gTy, {
                     game: g.name
                 }) : H.intl.string(H.t.FeUKeA)) : (e = !0, t = null, n = u.Fzq, null != A && (0, G.gV)(A.type) && (s = H.intl.string(H.t.uQn9B8))), (0, i.jsx)("div", {
@@ -233,7 +233,7 @@ let Y = s.memo(function(e) {
                 onClick: ep(O.applicationId),
                 icon: u.oLl
             }),
-            eO = null == t ? null : (0, i.jsx)(C.A, {}),
+            eO = null == t ? null : (0, i.jsx)(E.A, {}),
             eL = !Z || ee ? null : (0, i.jsx)(z, {
                 runningGame: g,
                 startAuthorization: () => {
@@ -302,7 +302,7 @@ function q(e) {
         } = (0, O.c9)(),
         [_, p] = (0, I.kn)(!d && h && m ? [c.M.GAME_DETECTION_CREATE_GAME_SERVER_COACHMARK] : [], void 0, !0),
         [f, x] = (0, I.kn)([c.M.GAME_SERVER_GAME_DETECTION_UPSELL_NEW_BADGE], void 0, !0),
-        E = s.useCallback(() => {
+        C = s.useCallback(() => {
             p(B.i.TAKE_ACTION), x(B.i.TAKE_ACTION), n()
         }, [p, x, n]);
     return (0, i.jsxs)(i.Fragment, {
@@ -316,7 +316,7 @@ function q(e) {
             }), (0, i.jsx)(k.A, {
                 ref: r,
                 tooltipText: t,
-                onClick: E,
+                onClick: C,
                 icon: u._xR
             }), f === c.M.GAME_SERVER_GAME_DETECTION_UPSELL_NEW_BADGE && (0, i.jsx)(g.a, {
                 top: 2,

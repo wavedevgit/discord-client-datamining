@@ -28,15 +28,15 @@ function A(e) {
         className: p,
         ariaHidden: f,
         avatarDecoration: x,
-        specs: E,
-        cornerIconUrl: C,
+        specs: C,
+        cornerIconUrl: E,
         cornerIconOffsetX: I,
         cornerIconOffsetY: N,
         ariaLabel: b
     } = e, S = {
         width: (0, o.FT9)(n),
         height: (0, o.FT9)(n)
-    }, T = (0, s.useId)(), v = E.size * d.Xq, y = null != x && (0, i.jsxs)("svg", {
+    }, T = (0, s.useId)(), v = C.size * d.Xq, y = null != x && (0, i.jsxs)("svg", {
         width: v,
         height: v,
         viewBox: `0 0 ${v} ${v}`,
@@ -50,7 +50,7 @@ function A(e) {
                 width: v,
                 height: v,
                 fill: "white"
-            }), null != C && function(e, t) {
+            }), null != E && function(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 0,
                     s = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 0,
                     {
@@ -81,7 +81,7 @@ function A(e) {
                     rx: e.stroke,
                     fill: "black"
                 })
-            }(E, v, I, N)]
+            }(C, v, I, N)]
         }), (0, i.jsx)("foreignObject", {
             x: 0,
             y: 0,
@@ -131,20 +131,20 @@ function m(e) {
         cornerIconUrl: m,
         cornerIconOffsetX: _ = 0,
         cornerIconOffsetY: f = 0
-    } = e, x = (0, u.Kj)(n), E = x.size, C = (0, s.useId)();
+    } = e, x = (0, u.Kj)(n), C = x.size, E = (0, s.useId)();
     return (0, i.jsx)(A, {
         ...e,
         ariaLabel: o,
         ariaHidden: l,
         specs: x,
         children: (0, i.jsxs)("svg", {
-            width: E + _,
-            height: E + f,
-            viewBox: `0 0 ${E+_} ${E+f}`,
+            width: C + _,
+            height: C + f,
+            viewBox: `0 0 ${C+_} ${C+f}`,
             className: a()(h.dK, h.JW),
             "aria-hidden": !0,
             children: [(0, i.jsxs)("mask", {
-                id: C,
+                id: E,
                 children: [(0, i.jsx)("circle", {
                     cx: x.size / 2,
                     cy: x.size / 2,
@@ -171,7 +171,7 @@ function m(e) {
                 y: 0,
                 width: x.size,
                 height: x.size,
-                mask: `url(#${C})`,
+                mask: `url(#${E})`,
                 children: (0, i.jsx)(r.d9, {
                     src: t,
                     className: d,
@@ -200,16 +200,16 @@ function _(e) {
         cornerIconUrl: o,
         cornerIconOffsetX: d = 0,
         cornerIconOffsetY: m = 0
-    } = e, _ = (0, s.useId)(), f = (0, s.useId)(), x = (0, u.Kj)(n), E = x.size + d, C = x.size + m, I = g(x, d, m), N = p(x, d, m);
+    } = e, _ = (0, s.useId)(), f = (0, s.useId)(), x = (0, u.Kj)(n), C = x.size + d, E = x.size + m, I = g(x, d, m), N = p(x, d, m);
     return (0, i.jsx)(A, {
         ...e,
         ariaLabel: r,
         ariaHidden: l,
         specs: x,
         children: (0, i.jsxs)("svg", {
-            width: E,
-            height: C,
-            viewBox: `0 0 ${E} ${C}`,
+            width: C,
+            height: E,
+            viewBox: `0 0 ${C} ${E}`,
             className: a()(h.dK, h.JW),
             "aria-hidden": !0,
             children: [(0, i.jsxs)("mask", {

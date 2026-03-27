@@ -20,8 +20,8 @@ var i = n(627968),
     g = n(975412),
     f = n(384059),
     x = n(379848),
-    E = n(267102),
-    C = n(421773),
+    C = n(267102),
+    E = n(421773),
     I = n(168754),
     N = n(376086),
     b = n(652215),
@@ -39,11 +39,11 @@ function v(e) {
         setIsHovered: D,
         onMouseEnter: G,
         onMouseLeave: U
-    } = (0, C.A)(200, 300), P = (0, u.b)({
+    } = (0, E.A)(200, 300), P = (0, u.b)({
         surface: c.YI.VOICE_LAUNCHER
     }), w = (0, l.bG)([d.Ay], () => null != d.Ay.getSelfEmbeddedActivityForLocation(d.Ay.getConnectedActivityLocation())), k = !L, V = s.useCallback(e => {
         "focus" !== e.type && G()
-    }, [G]), B = (0, E.Us)() === b.BRT.POPOUT, {
+    }, [G]), B = (0, C.Us)() === b.BRT.POPOUT, {
         parentAnalyticsLocation: H,
         newestAnalyticsLocation: F
     } = (0, p.Ay)(), K = s.useCallback(() => {
