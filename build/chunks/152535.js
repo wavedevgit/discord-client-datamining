@@ -22,8 +22,8 @@ function m(e) {
         whichPopoutIsOpen: m,
         setWhichPopoutIsOpen: _
     } = e, {
-        parentAnalyticsLocation: p
-    } = (0, r.Ay)(), g = s.useRef(null), {
+        parentAnalyticsLocation: g
+    } = (0, r.Ay)(), p = s.useRef(null), {
         isHovered: f,
         setIsHovered: x,
         onMouseEnter: C,
@@ -40,10 +40,10 @@ function m(e) {
     }, [C, b]), v = s.useCallback(() => {
         null == m && (E(), S())
     }, [E, S, m]), y = s.useCallback(() => {
-        (0, o.X)(p, o.O.GIFTING), m === h.P.GIFTING ? (_?.(void 0), E()) : (null != m ? (N(), C()) : N(), _?.(h.P.GIFTING))
-    }, [C, E, p, N, _, m]);
+        (0, o.X)(g, o.O.GIFTING), m === h.P.GIFTING ? (_?.(void 0), E()) : (null != m ? (N(), C()) : N(), _?.(h.P.GIFTING))
+    }, [C, E, g, N, _, m]);
     return (0, i.jsx)(a.Y, {
-        targetElementRef: g,
+        targetElementRef: p,
         shouldShow: f && (m === h.P.GIFTING || null == m) || m === h.P.GIFTING,
         animation: a.Y.Animation.FADE,
         animationPosition: "top",
@@ -66,7 +66,7 @@ function m(e) {
             })
         },
         children: () => (0, i.jsx)(u.l, {
-            ref: g,
+            ref: p,
             isTrayButton: !0,
             themeable: n,
             "aria-label": A.intl.string(A.t.PEjaCx),

@@ -30,9 +30,9 @@ function C(e) {
         height: S,
         keepOpen: I,
         interactive: T = !0,
-        analyticsSource: N,
-        onClose: v
-    } = e, b = function(e) {
+        analyticsSource: v,
+        onClose: N
+    } = e, y = function(e) {
         let [t, n] = (0, a.yK)([A.A], () => [A.A.getSounds(), A.A.getFavorites()]);
         return l.useMemo(() => {
             let i = [],
@@ -45,23 +45,23 @@ function C(e) {
                 };
             return l.forEach(e => s(e, !0)), l.forEach(e => s(e, !1)), i
         }, [t, n, e])
-    }((0, f.Y)(n, !0)), y = (0, p.T)(), j = l.useRef(null), [R, M] = l.useState(void 0), D = (0, a.bG)([u.A], () => u.A.getMediaSessionId()), {
+    }((0, f.Y)(n, !0)), b = (0, p.T)(), j = l.useRef(null), [R, M] = l.useState(void 0), D = (0, a.bG)([u.A], () => u.A.getMediaSessionId()), {
         analyticsLocations: O
     } = (0, o.Ay)(r.A.SOUNDBOARD_WHEEL), L = l.useCallback(e => {
-        (0, g.Ak)(e, n.id, O), v()
-    }, [O, n.id, v]);
+        (0, g.Ak)(e, n.id, O), N()
+    }, [O, n.id, N]);
     l.useEffect(() => {
         m.E7(), d.bW.loadIfNecessary()
     }, []), l.useEffect(() => {
-        0 === b.length && 0 === y.length && v()
-    }, [b.length, y, v]), l.useEffect(() => () => {
+        0 === y.length && 0 === b.length && N()
+    }, [y.length, b, N]), l.useEffect(() => () => {
         let e = j.current;
         I || null == e || L(e)
     }, [I, L]), (0, c.A)({
         type: s.ImpressionTypes.POPOUT,
         name: s.ImpressionNames.SOUNDBOARD_POPOUT,
         properties: {
-            source: N,
+            source: v,
             guild_id: t,
             media_session_id: D
         }
@@ -73,22 +73,22 @@ function C(e) {
         }, []),
         w = l.useCallback(e => {
             if (null == e) return void P(null);
-            let t = b[e];
+            let t = y[e];
             null != t && P(t)
-        }, [P, b]),
+        }, [P, y]),
         k = l.useCallback(e => {
             if (null == e) return;
-            let t = b[e];
+            let t = y[e];
             null != t && L(t)
-        }, [b, L]),
-        U = l.useMemo(() => b.map(e => (0, i.jsx)(E.Ay, {
+        }, [y, L]),
+        U = l.useMemo(() => y.map(e => (0, i.jsx)(E.Ay, {
             interactive: T,
             className: x.a,
             sound: e,
             focused: R === e.soundId,
             channel: n
-        }, e.soundId)), [R, n, T, b]);
-    return 0 === b.length ? null : (0, i.jsx)(o.f5, {
+        }, e.soundId)), [R, n, T, y]);
+    return 0 === y.length ? null : (0, i.jsx)(o.f5, {
         value: O,
         children: (0, i.jsx)(_.A, {
             wheelWidth: C,
@@ -99,7 +99,7 @@ function C(e) {
             activeItem: R,
             onItemSelect: w,
             onItemAction: k,
-            onClose: v,
+            onClose: N,
             interactive: T,
             children: U
         })

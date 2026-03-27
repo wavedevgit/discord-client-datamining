@@ -29,11 +29,11 @@ function S(e) {
             user: I
         } = e,
         T = (0, s.bG)([o.A], () => o.A.useReducedMotion),
-        N = (0, u.Ay)(n) ?? "",
+        v = (0, u.Ay)(n) ?? "",
         {
-            avatarDecorationSrc: v,
-            eventHandlers: b,
-            isAnimating: y
+            avatarDecorationSrc: N,
+            eventHandlers: y,
+            isAnimating: b
         } = (0, _.A)({
             userId: I?.id,
             size: r._3J.SIZE_80,
@@ -41,17 +41,17 @@ function S(e) {
         }),
         [j, R] = l.useState(!1),
         M = l.useCallback(() => {
-            b.onMouseEnter(), R(!0)
-        }, [b]),
+            y.onMouseEnter(), R(!0)
+        }, [y]),
         D = l.useCallback(() => {
-            b.onMouseLeave(), R(!1)
-        }, [b]),
+            y.onMouseLeave(), R(!1)
+        }, [y]),
         O = !n.isMultiUserDM() && I?.displayNameStyles != null;
     return (0, i.jsxs)(E.Ay, {
         channelId: n.id,
         onMouseEnter: M,
         onMouseLeave: D,
-        children: [(t = !T && y, n.isMultiUserDM() ? (0, i.jsx)(g.Q, {
+        children: [(t = !T && b, n.isMultiUserDM() ? (0, i.jsx)(g.Q, {
             channel: n,
             editable: !0,
             location: c.A.EMPTY_GROUP_DM,
@@ -59,20 +59,20 @@ function S(e) {
                 channel: n,
                 size: r._3J.SIZE_80,
                 animated: t,
-                "aria-label": N
+                "aria-label": v
             })
         }) : (0, i.jsx)(r.euF, {
-            "aria-label": N,
+            "aria-label": v,
             size: r._3J.SIZE_80,
             src: (0, d.Y)(n, 80, t),
-            avatarDecoration: v
+            avatarDecoration: N
         })), (0, i.jsx)(E.cr, {
             children: O ? (0, i.jsx)(m.A, {
-                userName: N,
+                userName: v,
                 displayNameStyles: I?.displayNameStyles,
                 effectDisplayType: j ? h.G.ANIMATED : h.G.STATIC,
                 loop: !0
-            }) : N
+            }) : v
         }), (0, i.jsx)(E.j1, {
             children: S
         }), n.isMultiUserDM() && (0, i.jsxs)(a.e2v, {

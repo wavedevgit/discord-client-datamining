@@ -19,7 +19,7 @@ var i = n(627968),
 function _(e) {
     let {
         channel: t
-    } = e, n = s.useRef(null), [_, p] = (0, l.yK)([o.Ay], () => [o.Ay.isChannelMuted(t.getGuildId(), t.id), o.Ay.resolvedMessageNotifications(t)], [t]), [g, f] = s.useState(!1);
+    } = e, n = s.useRef(null), [_, g] = (0, l.yK)([o.Ay], () => [o.Ay.isChannelMuted(t.getGuildId(), t.id), o.Ay.resolvedMessageNotifications(t)], [t]), [p, f] = s.useState(!1);
     s.useEffect(() => {
         let e = () => f(!0);
         return c._.subscribe(A.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
@@ -34,7 +34,7 @@ function _(e) {
         C = m.intl.string(m.t.h850Ss);
     return (0, i.jsx)(a.YNO, {
         targetElementRef: n,
-        shouldShow: g,
+        shouldShow: p,
         animation: a.YNO.Animation.NONE,
         position: "bottom",
         align: "right",
@@ -56,7 +56,7 @@ function _(e) {
                 ref: n,
                 onClick: x,
                 tooltip: s ? null : C,
-                icon: _ || p !== A.orn.ALL_MESSAGES ? a.a_I : a.XFE,
+                icon: _ || g !== A.orn.ALL_MESSAGES ? a.a_I : a.XFE,
                 "aria-label": C,
                 selected: s
             })

@@ -3,25 +3,25 @@
 n.d(t, {
     EZ: () => A,
     HU: () => m,
-    KX: () => g,
+    KX: () => h,
     Kd: () => p,
-    L7: () => h,
+    L7: () => g,
     fJ: () => f
 }), n(938796);
 var l = n(665260),
     i = n(311907),
     s = n(696451),
-    r = n(71393),
-    a = n(576705),
+    a = n(71393),
+    r = n(576705),
     o = n(287809),
     u = n(661191),
     c = n(340837),
     d = n(652215);
 let m = (e, t) => {
     var n;
-    let a = (0, i.bG)([s.Ay], () => (0, l.Lt)(s.Ay.getMember(e, t)?.flags ?? 0, c.D.DID_REJOIN)),
-        d = (0, i.bG)([r.A], () => {
-            let t = r.A.getGuild(e);
+    let r = (0, i.bG)([s.Ay], () => (0, l.Lt)(s.Ay.getMember(e, t)?.flags ?? 0, c.D.DID_REJOIN)),
+        d = (0, i.bG)([a.A], () => {
+            let t = a.A.getGuild(e);
             return null != t && function(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 7,
                     n = u.default.extractTimestamp(e.id);
@@ -35,7 +35,7 @@ let m = (e, t) => {
         let {
             maxDaysOld: l,
             minDaysOld: i = 0
-        } = t, a = r.A.getGuild(e), o = a?.joinedAt;
+        } = t, r = a.A.getGuild(e), o = r?.joinedAt;
         if (null != n) {
             let t = s.Ay.getMember(e, n);
             o = t?.joinedAt == null ? null : new Date(t.joinedAt)
@@ -43,30 +43,30 @@ let m = (e, t) => {
         if (null == o) return !1;
         let u = Date.now() - o.getTime();
         return (null == l || u <= 864e5 * l) && u >= 864e5 * i
-    })(e, n, t), [n, e, t]) && !d && !m && !a
+    })(e, n, t), [n, e, t]) && !d && !m && !r
 };
 
-function h(e, t) {
-    let [n] = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [a.A];
-    return null != t && g(e, t, [n]) && !e.isProvisional
+function g(e, t) {
+    let [n] = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [r.A];
+    return null != t && h(e, t, [n]) && !e.isProvisional
 }
 
-function g(e, t) {
-    let [n] = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [a.A];
+function h(e, t) {
+    let [n] = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [r.A];
     return null != t && n.canManageUser(d.xBc.KICK_MEMBERS, e, t) && !e.isNonUserBot()
 }
 
 function A(e, t) {
-    let [n] = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [a.A];
+    let [n] = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [r.A];
     return null != t && f(e, t, [n]) && !e.isProvisional
 }
 
 function f(e, t) {
-    let [n] = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [a.A];
+    let [n] = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [r.A];
     return null != t && n.canManageUser(d.xBc.BAN_MEMBERS, e, t) && !e.isNonUserBot() && !e.bot
 }
 
 function p(e, t) {
-    let [n] = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [a.A];
+    let [n] = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [r.A];
     return null != e && null != t && n.canManageUser(d.xBc.MANAGE_MESSAGES, e, t) && !e.isNonUserBot()
 }

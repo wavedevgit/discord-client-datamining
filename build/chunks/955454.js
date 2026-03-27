@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(747926),
     m = n(734057),
     _ = n(403362),
-    p = n(661191),
-    g = n(652215),
+    g = n(661191),
+    p = n(652215),
     f = n(37411),
     x = n(440649);
 
@@ -30,21 +30,21 @@ function C(e) {
         let {
             id: n
         } = e;
-        return p.default.compare(n, t.oldestReadMessageId) > 0
+        return g.default.compare(n, t.oldestReadMessageId) > 0
     }).map(e => {
         let {
             id: t
         } = e;
         return m.A.getChannel(t)
-    }).filter(_.Vq).sort((e, t) => p.default.compare(e.id, t.id)).value(), [t.oldestReadMessageId, n.guild_id, n.id]), E = s.useCallback((e, t) => {
+    }).filter(_.Vq).sort((e, t) => g.default.compare(e.id, t.id)).value(), [t.oldestReadMessageId, n.guild_id, n.id]), E = s.useCallback((e, t) => {
         (0, A.JA)(e, t, f.H9.INBOX)
     }, []);
     return s.useEffect(() => {
         null == n || !t.isFullyLoaded || t.hasError || t.collapsed || 0 !== C.length || o.h.wait(() => {
             (0, c.ack)(t.channelId, {
-                section: g.JJy.INBOX,
-                object: g.ZSU.ACK_INBOX_FORUM_NO_POSTS,
-                objectType: g.AnalyticsObjectTypes.ACK_AUTOMATIC
+                section: p.JJy.INBOX,
+                object: p.ZSU.ACK_INBOX_FORUM_NO_POSTS,
+                objectType: p.AnalyticsObjectTypes.ACK_AUTOMATIC
             }, !0), l(t.channelId)
         })
     }), (0, i.jsx)("div", {

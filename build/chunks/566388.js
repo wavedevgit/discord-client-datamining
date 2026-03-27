@@ -17,8 +17,8 @@ var i = n(627968),
     A = n(964486),
     m = n(793574),
     _ = n(688810),
-    p = n(313961),
-    g = n(520698),
+    g = n(313961),
+    p = n(520698),
     f = n(43189),
     x = n(518530),
     C = n(384059),
@@ -72,7 +72,7 @@ function es(e) {
         selectedParticipant: c
     } = e, {
         parentAnalyticsLocation: d
-    } = (0, _.Ay)(), h = t.getGuildId(), A = (0, o.bG)([G.A], () => G.A.getMostRecentSelectedTextChannelId(h), [h]), m = O.default.getId(), f = !(0, o.bG)([p.A], () => p.A.isFullscreenInContext(n)) && (!U.isPlatformEmbedded || P.Ay.supportsFeature($.BYE.POPOUT_WINDOWS)), x = null != c && c.type !== Z.lp.ACTIVITY && c.user.id !== m, E = s.useMemo(() => a?.window ?? window, [a]), N = (0, Q.A)({
+    } = (0, _.Ay)(), h = t.getGuildId(), A = (0, o.bG)([G.A], () => G.A.getMostRecentSelectedTextChannelId(h), [h]), m = O.default.getId(), f = !(0, o.bG)([g.A], () => g.A.isFullscreenInContext(n)) && (!U.isPlatformEmbedded || P.Ay.supportsFeature($.BYE.POPOUT_WINDOWS)), x = null != c && c.type !== Z.lp.ACTIVITY && c.user.id !== m, E = s.useMemo(() => a?.window ?? window, [a]), N = (0, Q.A)({
         channel: t,
         appContext: n,
         popoutOpen: l,
@@ -81,7 +81,7 @@ function es(e) {
     }), S = n === $.BRT.POPOUT && U.isPlatformEmbedded && P.Ay.supportsFeature($.BYE.POPOUT_WINDOWS);
     return (0, i.jsxs)(i.Fragment, {
         children: [x ? (0, i.jsx)(R.A, {
-            context: (0, g.A)(c.type),
+            context: (0, p.A)(c.type),
             userId: c.user.id,
             currentWindow: E,
             sliderClassName: et.MQ,
@@ -125,7 +125,7 @@ function ea(e) {
             popoutWindowAlwaysOnTop: u,
             popoutOpen: h,
             popoutType: A,
-            chatOpen: g,
+            chatOpen: p,
             idleProps: x
         } = e,
         {
@@ -135,7 +135,7 @@ function ea(e) {
         N = (0, o.bG)([G.A], () => G.A.getVoiceChannelId() === n.id, [n.id]),
         b = (0, o.bG)([D.A], () => D.A.can($.xBc.CONNECT, n)),
         S = (0, k.E5)(n.id, V.ip.SPEAKER),
-        y = (0, o.bG)([p.A], () => p.A.getSelectedParticipant(n.id)),
+        y = (0, o.bG)([g.A], () => g.A.getSelectedParticipant(n.id)),
         j = h && I !== $.BRT.POPOUT,
         [R, O] = s.useState(0),
         M = s.useMemo(() => (0, r.debounce)(e => {
@@ -194,7 +194,7 @@ function ea(e) {
             showRequestToSpeakSidebar: c,
             channel: n
         }),
-        renderChatToasts: () => !P || g || j ? null : (0, i.jsx)(f.Ay, {
+        renderChatToasts: () => !P || p || j ? null : (0, i.jsx)(f.Ay, {
             children: (0, i.jsx)(T.A, {
                 className: a()(et.T6, {
                     [et.c3]: c
@@ -214,7 +214,7 @@ function er(e) {
     let {
         channel: t,
         popoutType: l
-    } = e, [r, u] = s.useState(!1), g = s.useCallback(() => {
+    } = e, [r, u] = s.useState(!1), p = s.useCallback(() => {
         u(!r)
     }, [r, u]), {
         popoutWindow: C,
@@ -224,7 +224,7 @@ function er(e) {
         popoutWindowAlwaysOnTop: N.A.getIsAlwaysOnTop($.MLl.CHANNEL_CALL_POPOUT)
     })), b = null != C && !C.closed, {
         analyticsLocations: T
-    } = (0, _.Ay)(m.A.STAGE_CHANNEL_CALL), v = (0, E.Us)(), y = (0, o.bG)([p.A], () => p.A.getChatOpen(t.id), [t.id]), j = (0, o.bG)([M.A], () => M.A.getGuild(t.guild_id), [t.guild_id]);
+    } = (0, _.Ay)(m.A.STAGE_CHANNEL_CALL), v = (0, E.Us)(), y = (0, o.bG)([g.A], () => g.A.getChatOpen(t.id), [t.id]), j = (0, o.bG)([M.A], () => M.A.getGuild(t.guild_id), [t.guild_id]);
     (0, A.Ay)(() => {
         null == c.w.get(en) && ((0, d.mMO)(async () => {
             let {
@@ -256,7 +256,7 @@ function er(e) {
                             timeout: 2e3,
                             children: e => (0, i.jsx)(ea, {
                                 channel: t,
-                                toggleRequestToSpeakSidebar: g,
+                                toggleRequestToSpeakSidebar: p,
                                 showRequestToSpeakSidebar: r,
                                 popoutWindow: C,
                                 popoutWindowAlwaysOnTop: I,
@@ -269,7 +269,7 @@ function er(e) {
                     })
                 }), r ? (0, i.jsx)(F.A, {
                     channel: t,
-                    toggleRequestToSpeakSidebar: g,
+                    toggleRequestToSpeakSidebar: p,
                     chatOpen: y
                 }) : null, (0, i.jsx)("div", {
                     className: et.B2,

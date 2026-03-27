@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(397927),
     m = n(442433),
     _ = n(414798),
-    p = n(775602),
-    g = n(793574),
+    g = n(775602),
+    p = n(793574),
     f = n(688810),
     x = n(449582),
     C = n(485947),
@@ -53,29 +53,29 @@ let W = k.Ay.getEnableHardwareAcceleration(),
             sectionId: l,
             userId: a,
             guildOwnerId: r
-        } = e, o = s.useRef(null), d = (0, h.bG)([L.A], () => L.A.isTyping(t.id, a)), A = (0, h.bG)([y.Ay], () => y.Ay.getMember(t.guild_id, a)), p = (0, h.bG)([j.A], () => A?.colorRoleId != null ? j.A.getRole(t.guild_id, A.colorRoleId)?.name : void 0, [t.guild_id, A]), g = (0, h.bG)([M.default], () => M.default.getUser(a)), f = (0, h.bG)([M.default], () => M.default.getCurrentUser()), C = g?.id === f?.id, I = (0, h.bG)([R.A, O.A], () => C ? O.A.getStatus() : R.A.getStatus(a, t.guild_id)), N = (0, h.bG)([R.A], () => R.A.isMobileOnline(a)), b = (0, h.bG)([R.A, O.A], () => C ? O.A.getActivities() : R.A.getActivities(a, t.guild_id)), D = (0, h.bG)([v.A], () => v.A.getAnyStreamForUser(a)), G = (0, c.rm)(a), P = (0, h.bG)([S.A], () => S.A.canUserViewChannel(t.id, l, a)), k = g?.id != null && g.id === r, F = s.useCallback(e => {
-            null != g && (0, m.L3)(e, async () => {
+        } = e, o = s.useRef(null), d = (0, h.bG)([L.A], () => L.A.isTyping(t.id, a)), A = (0, h.bG)([y.Ay], () => y.Ay.getMember(t.guild_id, a)), g = (0, h.bG)([j.A], () => A?.colorRoleId != null ? j.A.getRole(t.guild_id, A.colorRoleId)?.name : void 0, [t.guild_id, A]), p = (0, h.bG)([M.default], () => M.default.getUser(a)), f = (0, h.bG)([M.default], () => M.default.getCurrentUser()), C = p?.id === f?.id, I = (0, h.bG)([R.A, O.A], () => C ? O.A.getStatus() : R.A.getStatus(a, t.guild_id)), N = (0, h.bG)([R.A], () => R.A.isMobileOnline(a)), b = (0, h.bG)([R.A, O.A], () => C ? O.A.getActivities() : R.A.getActivities(a, t.guild_id)), D = (0, h.bG)([v.A], () => v.A.getAnyStreamForUser(a)), G = (0, c.rm)(a), P = (0, h.bG)([S.A], () => S.A.canUserViewChannel(t.id, l, a)), k = p?.id != null && p.id === r, F = s.useCallback(e => {
+            null != p && (0, m.L3)(e, async () => {
                 let {
                     default: e
                 } = await Promise.all([n.e("97262"), n.e("67447"), n.e("87340")]).then(n.bind(n, 708202));
                 return n => (0, i.jsx)(e, {
                     ...n,
-                    user: g,
+                    user: p,
                     guildId: t.guild_id,
                     channel: t
                 })
             })
-        }, [g, t]), K = s.useCallback(() => {
-            if (null == g) return;
-            let e = `@${w.Ay.getUserTag(g,{decoration:"never"})}`,
-                n = `<@${g.id}>`;
+        }, [p, t]), K = s.useCallback(() => {
+            if (null == p) return;
+            let e = `@${w.Ay.getUserTag(p,{decoration:"never"})}`,
+                n = `<@${p.id}>`;
             U._.dispatch(B.jej.TEXTAREA_FOCUS, {
                 channelId: t.id
             }), U._.dispatchToLastSubscribed(B.jej.INSERT_TEXT, {
                 plainText: e,
                 rawText: n
             }), _.A.startTyping(t.id)
-        }, [g, t]), Y = s.useCallback(e => {
+        }, [p, t]), Y = s.useCallback(e => {
             e.stopPropagation(), (0, E.K4)({
                 guildId: t.guild_id,
                 location: {
@@ -84,14 +84,14 @@ let W = k.Ay.getEnableHardwareAcceleration(),
                 }
             })
         }, [t.guild_id]), z = (0, x.r)({
-            user: g,
+            user: p,
             guildId: t.guild_id
         }), [q, X] = s.useState(!1);
-        if (null == g) return null;
+        if (null == p) return null;
         let Q = A?.premiumSince;
         return (0, i.jsx)(T.A, {
             targetElementRef: o,
-            user: g,
+            user: p,
             guildId: t.guild_id,
             channelId: t.id,
             position: u.Fr ? "window_center" : "left",
@@ -109,14 +109,14 @@ let W = k.Ay.getEnableHardwareAcceleration(),
                     ref: o,
                     onContextMenu: F,
                     shouldAnimateStatus: W,
-                    user: g,
+                    user: p,
                     currentUser: f,
                     nick: A?.nick,
                     status: I,
                     activities: b,
                     colorString: A?.colorString,
                     colorStrings: A?.colorStrings,
-                    colorRoleName: p,
+                    colorRoleName: g,
                     isTyping: d,
                     channel: t,
                     guildId: t.guild_id,
@@ -204,13 +204,13 @@ function Q(e) {
         E = `members-${x.id}`,
         {
             analyticsLocations: I
-        } = (0, f.Ay)(g.A.MEMBER_LIST),
+        } = (0, f.Ay)(p.A.MEMBER_LIST),
         N = (0, b.q)(x.id, C),
         S = N.filter(e => e.userIds.length > 0).reverse()[0],
         {
             navigator: T,
             listRef: v
-        } = (t = E, n = Y, l = (0, h.bG)([p.A], () => p.A.keyboardModeEnabled), r = s.useRef(null), u = s.useCallback((e, t) => {
+        } = (t = E, n = Y, l = (0, h.bG)([g.A], () => g.A.keyboardModeEnabled), r = s.useRef(null), u = s.useCallback((e, t) => {
             let i = r.current;
             if (null == i) return;
             let s = parseInt(t, 10),

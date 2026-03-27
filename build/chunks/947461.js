@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(746080),
     m = n(49999),
     _ = n(294726),
-    p = n(985018),
-    g = n(81152),
+    g = n(985018),
+    p = n(81152),
     f = n(928409);
 let x = s.memo(function(e) {
     let {
@@ -36,15 +36,15 @@ let x = s.memo(function(e) {
             })
         })
     }, [t]), S = (0, i.jsxs)("div", {
-        className: g.c,
+        className: p.c,
         children: [(0, i.jsx)("div", {
             className: f.Xs,
             children: (0, i.jsx)(r.m, {
-                text: p.intl.string(p.t.fgq1gs),
+                text: g.intl.string(g.t.fgq1gs),
                 position: "top",
                 children: (0, i.jsx)(o.DUT, {
                     onClick: b,
-                    "aria-label": p.intl.string(p.t.fgq1gs),
+                    "aria-label": g.intl.string(g.t.fgq1gs),
                     children: (0, i.jsx)(o.PGe, {
                         size: "xs",
                         color: "currentColor",
@@ -56,8 +56,8 @@ let x = s.memo(function(e) {
             className: f.yW,
             children: (0, i.jsx)(o.LpS, {
                 disableColor: !0,
-                text: p.intl.string(p.t.y2b7CA),
-                className: g.q
+                text: g.intl.string(g.t.y2b7CA),
+                className: p.q
             })
         })]
     });
@@ -69,7 +69,7 @@ let x = s.memo(function(e) {
             className: e,
             color: "currentColor"
         }),
-        text: p.intl.string(_.default.vCzwM7),
+        text: g.intl.string(_.default.vCzwM7),
         selected: x,
         onClick: N,
         trailing: S

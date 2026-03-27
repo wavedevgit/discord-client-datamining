@@ -1,6 +1,6 @@
 /** chunk id: 38198 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => N
 });
 var i = n(627968),
     l = n(64700),
@@ -24,14 +24,14 @@ var i = n(627968),
     S = n(49999),
     I = n(412136),
     T = n(985018);
-let N = /(.*)```(\w+)\n(.*)```(.*)/s;
+let v = /(.*)```(\w+)\n(.*)```(.*)/s;
 
-function v(e) {
+function N(e) {
     let {
         channel: t,
-        options: v,
-        onFileUpload: b,
-        onClose: y,
+        options: N,
+        onFileUpload: y,
+        onClose: b,
         onSelect: j,
         draftType: R,
         editorTextContent: M,
@@ -75,7 +75,7 @@ function v(e) {
         let e = M,
             n = "txt",
             i = "",
-            l = M.match(N);
+            l = M.match(v);
         null != l && (i = l[1], n = l[2], e = l[3], i += l[4]), (0, _.R)([(0, f.VE)(new Blob([e], {
             type: "text/plain"
         }), `message.${n}`, "text/plain")], t, R), p._.dispatchToLastSubscribed(C.jej.CLEAR_TEXT), "" !== i && p._.dispatchToLastSubscribed(C.jej.INSERT_TEXT, {
@@ -92,9 +92,9 @@ function v(e) {
         "data-menu-migrated": !0,
         onSelect: j,
         navId: "channel-attach",
-        onClose: y,
+        onClose: b,
         "aria-label": T.intl.string(T.t.Xm41aV),
-        children: v.map(function(e) {
+        children: N.map(function(e) {
             switch (e.type) {
                 case x.v.UPLOAD_A_FILE:
                     return (0, i.jsx)(r.Drp, {
@@ -105,7 +105,7 @@ function v(e) {
                             type: "icon",
                             icon: e.icon
                         },
-                        action: b
+                        action: y
                     }, "upload-file");
                 case x.v.UPLOAD_TEXT_AS_FILE:
                     if ("" === M) return null;

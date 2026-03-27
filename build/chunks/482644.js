@@ -2,52 +2,52 @@
 "use strict";
 n.r(t), n.d(t, {
     baseRules: () => E,
-    customRules: () => T
+    customRules: () => I
 });
 var l = n(627968),
     i = n(64700),
     s = n(503698),
-    r = n.n(s),
-    a = n(791332),
-    o = n.n(a),
+    a = n.n(s),
+    r = n(791332),
+    o = n.n(r),
     u = n(397927),
     c = n(398590),
     d = n(46054),
     m = n(976860),
-    h = n(780964),
-    g = n(840065),
+    g = n(780964),
+    h = n(840065),
     A = n(954571),
     f = n(652215),
     p = n(559868),
     x = n(582756);
-let C = o().defaultRules.link,
-    N = {
+let v = o().defaultRules.link,
+    C = {
         section: f.JJy.SETTINGS_CHANGELOG
     },
-    v = e => {
+    N = e => {
         let {
             level: t,
             children: n,
             className: l
-        } = e, s = (0, u.$Il)(), r = parseInt(t, 10), a = isNaN(r) ? 1 : r;
-        return i.createElement(`h${s+a-1}`, {
+        } = e, s = (0, u.$Il)(), a = parseInt(t, 10), r = isNaN(a) ? 1 : a;
+        return i.createElement(`h${s+r-1}`, {
             className: l
         }, n)
     },
     E = null != d.A ? d.A.defaultRules : null,
-    T = {
+    I = {
         link: {
             parse(e, t, n) {
                 let l, i = e[2],
                     s = i.startsWith("https://discordapp.com/nitro") || i.startsWith("https://discord.com/nitro"),
-                    r = i.startsWith("/activities");
+                    a = i.startsWith("/activities");
                 return l = s ? e => {
                     A.default.track(f.HAw.PREMIUM_PROMOTION_OPENED, {
-                        location: N
-                    }), (0, g.openUserSettings)(h.X.NITRO_PANEL), n.changeLog.track(f.HAw.CHANGE_LOG_CTA_CLICKED, {
+                        location: C
+                    }), (0, h.openUserSettings)(g.X.NITRO_PANEL), n.changeLog.track(f.HAw.CHANGE_LOG_CTA_CLICKED, {
                         cta_type: "nitro"
                     }), (0, u.OoC)(p.lb), e.preventDefault()
-                } : r ? e => {
+                } : a ? e => {
                     (0, m.pX)(i), n.changeLog.track(f.HAw.CHANGE_LOG_CTA_CLICKED, {
                         ...A.default.getCampaignParams(i)
                     }), (0, c.bz)(), (0, u.OoC)(p.lb), e.preventDefault()
@@ -58,7 +58,7 @@ let C = o().defaultRules.link,
                         ...A.default.getCampaignParams(i)
                     })
                 }, {
-                    ...C.parse(e, t, n),
+                    ...v.parse(e, t, n),
                     callToAction: l
                 }
             },
@@ -74,15 +74,15 @@ let C = o().defaultRules.link,
         lheading: e => ({
             react: (t, n, i) => {
                 var s;
-                return (0, l.jsx)(v, {
+                return (0, l.jsx)(N, {
                     level: t.level,
-                    className: r()(x["heading-md/bold"], ...null == (s = t.className) ? [] : s.split(" ").map(t => e[t])),
+                    className: a()(x["heading-md/bold"], ...null == (s = t.className) ? [] : s.split(" ").map(t => e[t])),
                     children: n(t.content, i)
                 }, i.key)
             }
         }),
         heading: {
-            react: (e, t, n) => (0, l.jsx)(v, {
+            react: (e, t, n) => (0, l.jsx)(N, {
                 level: e.level,
                 className: x["heading-md/bold"],
                 children: t(e.content, n)
@@ -103,20 +103,20 @@ let C = o().defaultRules.link,
         list: e => ({
             react(t, n, i) {
                 let s = t.ordered ? "ol" : "ul",
-                    a = t.items.map((t, s) => (0, l.jsx)("li", {
-                        className: r()(x["text-md/normal"], e.listItem),
+                    r = t.items.map((t, s) => (0, l.jsx)("li", {
+                        className: a()(x["text-md/normal"], e.listItem),
                         children: n(t, i)
                     }, s));
                 return (0, l.jsx)(s, {
                     className: e.list,
                     start: t.start,
-                    children: a
+                    children: r
                 }, i.key)
             }
         }),
         paragraph: e => ({
             react: (t, n, i) => (0, l.jsx)("p", {
-                className: r()(x["text-md/normal"], e.paragraph),
+                className: a()(x["text-md/normal"], e.paragraph),
                 children: n(t.content, i)
             }, i.key)
         })

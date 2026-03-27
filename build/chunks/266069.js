@@ -22,10 +22,10 @@ function _(e) {
         icon: n,
         setStatus: l,
         isFavorited: _,
-        onFavoriteClick: p
-    } = e, [g, f] = s.useState(!1), x = (0, r.bG)([u.A], () => u.A.getFavoritedStatuses().length >= u.x), C = null != p, E = s.useCallback(e => {
-        e.stopPropagation(), p?.()
-    }, [p]), I = _ ? d.Gg5 : d.yA2;
+        onFavoriteClick: g
+    } = e, [p, f] = s.useState(!1), x = (0, r.bG)([u.A], () => u.A.getFavoritedStatuses().length >= u.x), C = null != g, E = s.useCallback(e => {
+        e.stopPropagation(), g?.()
+    }, [g]), I = _ ? d.Gg5 : d.yA2;
     return (0, i.jsxs)(d.DUT, {
         onClick: l,
         onMouseEnter: () => {
@@ -42,7 +42,7 @@ function _(e) {
             variant: "text-md/normal",
             className: A.rv,
             children: t
-        }), g && C && (0, i.jsx)(c.m_, {
+        }), p && C && (0, i.jsx)(c.m_, {
             text: x && !_ ? h.intl.string(h.t.YSDH9n) : void 0,
             children: (0, i.jsx)(d.DUT, {
                 className: a()(A.ff, A.wB),

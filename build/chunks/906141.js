@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(9842),
     m = n(253932),
     _ = n(734057),
-    p = n(994500),
-    g = n(661191),
+    g = n(994500),
+    p = n(661191),
     f = n(988012),
     x = n(141468),
     C = n(694318),
@@ -75,7 +75,7 @@ let k = s.memo(function e(t) {
             previewLinkTarget: !0
         }),
         ei = (0, I.Ay)(l),
-        es = (0, r.bG)([_.A], () => l.hasFlag(G.pr7.HAS_THREAD) && _.A.getChannel(g.default.castMessageIdAsChannelId(l.id))),
+        es = (0, r.bG)([_.A], () => l.hasFlag(G.pr7.HAS_THREAD) && _.A.getChannel(p.default.castMessageIdAsChannelId(l.id))),
         el = l.type === G.lAJ.THREAD_STARTER_MESSAGE && W.state === A.a.LOADED && null != Y,
         ea = !el && void 0 === n,
         er = (0, y.A)({
@@ -92,7 +92,7 @@ let k = s.memo(function e(t) {
         message: W.message,
         channel: Y,
         hasThread: !1
-    }) : (p.A.isBlockedForMessage(l) ? n = U.t["+FcYM/"] : p.A.isIgnoredForMessage(l) ? n = U.t["VFWjc+"] : (0, C.kf)(l) && F && (n = U.t.xfkfTK), void 0 !== n) ? (0, i.jsx)(V, {
+    }) : (g.A.isBlockedForMessage(l) ? n = U.t["+FcYM/"] : g.A.isIgnoredForMessage(l) ? n = U.t["VFWjc+"] : (0, C.kf)(l) && F && (n = U.t.xfkfTK), void 0 !== n) ? (0, i.jsx)(V, {
         className: D,
         compact: o,
         count: 1,

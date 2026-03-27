@@ -27,7 +27,7 @@ function A(e, t) {
             members: c.A.getMemberListSections(e)
         })),
         _ = null == t,
-        p = i.useMemo(() => {
+        g = i.useMemo(() => {
             if (_) return h;
             let e = n.filter(e => e.hoist).map(e => ({
                 id: e.id,
@@ -52,5 +52,5 @@ function A(e, t) {
                 }
             })
         }, [n, m, A, _]);
-    return null != m ? p : h
+    return null != m ? g : h
 }

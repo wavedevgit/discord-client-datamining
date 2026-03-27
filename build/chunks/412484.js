@@ -18,8 +18,8 @@ var i = n(627968),
     A = n(964486),
     m = n(775602),
     _ = n(928039),
-    p = n(954571),
-    g = n(203982),
+    g = n(954571),
+    p = n(203982),
     f = n(723702),
     x = n(157296),
     C = n(963702),
@@ -67,8 +67,8 @@ function T(e) {
             let e = r.channels.find(e => !e.collapsed);
             null != e && x.markChannelRead(e)
         };
-        return g._.subscribe(N.jej.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
-            g._.unsubscribe(N.jej.MARK_TOP_INBOX_CHANNEL_READ, e)
+        return p._.subscribe(N.jej.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
+            p._.unsubscribe(N.jej.MARK_TOP_INBOX_CHANNEL_READ, e)
         }
     }, [x, r.channels]), T = D, s.useEffect(() => {
         let e = e => {
@@ -78,13 +78,13 @@ function T(e) {
             document.removeEventListener("keydown", e)
         }
     }, [T]), s.useEffect(() => {
-        p.default.track(N.HAw.OPEN_POPOUT, {
+        g.default.track(N.HAw.OPEN_POPOUT, {
             type: "Inbox"
         })
     }, []), s.useEffect(() => (h.h.subscribe("CONNECTION_OPEN", O), () => {
         h.h.unsubscribe("CONNECTION_OPEN", O)
-    }), [O]), (0, A.Ay)(() => (g._.subscribe(N.jej.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
-        g._.unsubscribe(N.jej.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
+    }), [O]), (0, A.Ay)(() => (p._.subscribe(N.jej.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
+        p._.unsubscribe(N.jej.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
     }));
     let k = (0, _.A)("unreads", L);
     return 0 === U.length ? (0, i.jsx)(C.A, {
@@ -161,5 +161,5 @@ function y() {
     })
 }
 let j = () => (0, i.jsx)(x.A, {
-    onClick: () => g._.dispatch(N.jej.INBOX_MARK_ALL_UNREADS_READ)
+    onClick: () => p._.dispatch(N.jej.INBOX_MARK_ALL_UNREADS_READ)
 })

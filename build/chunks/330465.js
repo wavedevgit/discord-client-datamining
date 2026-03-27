@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(397927),
     m = n(308528),
     _ = n(442433),
-    p = n(817281),
-    g = n(658128),
+    g = n(817281),
+    p = n(658128),
     f = n(976860),
     x = n(345942),
     C = n(260509),
@@ -98,7 +98,7 @@ let P = s.memo(function(e) {
                 nodeId: t.id
             }),
             end() {
-                _?.(), (0, p.um)(I.Ay.getCompatibleGuildFolders())
+                _?.(), (0, g.um)(I.Ay.getCompatibleGuildFolders())
             },
             collect: e => ({
                 dragging: e.isDragging()
@@ -110,9 +110,9 @@ let P = s.memo(function(e) {
         [eu, eh] = s.useState(!1),
         [eA, em] = s.useState(!1),
         [e_] = s.useState(() => new h.J_(70, () => em(!0))),
-        ep = (0, N.nr)() && !d.Fr;
+        eg = (0, N.nr)() && !d.Fr;
     s.useEffect(() => () => e_.cancel(), [e_]);
-    let eg = s.useCallback(() => {
+    let ep = s.useCallback(() => {
             null != P ? (0, f.pX)(P, {
                 state: G
             }) : (0, x.u)(ee, {
@@ -121,7 +121,7 @@ let P = s.memo(function(e) {
         }, [ee, P]),
         ef = s.useCallback(() => {
             if (null != P || null == w || F || !X) return;
-            let e = (0, g.W)(w.id);
+            let e = (0, p.W)(w.id);
             null != e && m.A.preload(w.id, e)
         }, [P, w, F, X]),
         ex = (0, u.bG)([E.Ay], () => E.Ay.isCurrentUserGuest(ee)),
@@ -158,13 +158,13 @@ let P = s.memo(function(e) {
                 eA || eh(!1)
             }
         }),
-        ey = ep ? (0, i.jsx)(A.jlP, {
+        ey = eg ? (0, i.jsx)(A.jlP, {
             ariaLabel: M.intl.formatToPlainString(M.t["/uzRss"], {
                 guildName: w.name,
                 mentions: K
             }),
             name: w.name,
-            onClick: eg,
+            onClick: ep,
             onMouseEnter: eN,
             onMouseLeave: eb,
             onMouseDown: ef,
@@ -190,7 +190,7 @@ let P = s.memo(function(e) {
                         mentions: K
                     }),
                     name: w.name,
-                    onClick: eg,
+                    onClick: ep,
                     onMouseEnter: eN,
                     onMouseLeave: eb,
                     onMouseDown: ef,
@@ -209,7 +209,7 @@ let P = s.memo(function(e) {
         eR = (0, i.jsx)(v.g4, {
             children: (0, i.jsx)(j.A, {})
         }),
-        eO = ep ? (0, i.jsx)(o.animated.div, {
+        eO = eg ? (0, i.jsx)(o.animated.div, {
             ref: z ? e => {
                 ea(e)
             } : void 0,

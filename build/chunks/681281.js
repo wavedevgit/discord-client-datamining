@@ -17,8 +17,8 @@ var s = n(503698),
     A = n(47167),
     m = n(713654),
     _ = n(769015),
-    p = n(508654),
-    g = n(974930),
+    g = n(508654),
+    p = n(974930),
     f = n(961314),
     x = n(58736),
     C = n(742589),
@@ -87,8 +87,8 @@ function H(e) {
             channel: l
         } = e,
         a = (0, T.$F)(l),
-        r = (0, p.Qs)(l.id),
-        c = null != r ? (0, g.G3)(r) : null,
+        r = (0, g.Qs)(l.id),
+        c = null != r ? (0, p.G3)(r) : null,
         u = null != r;
     if (s?.type === D.lp.ACTIVITY) null != n && (t = (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(x.Ay.Divider, {
@@ -139,13 +139,13 @@ function F(e) {
         appContext: c,
         inCall: d,
         isChatOpen: _,
-        exitFullScreen: p
+        exitFullScreen: g
     } = e, {
-        focusedParticipant: g
+        focusedParticipant: p
     } = (0, a.cf)([j.A], () => ({
         focusedParticipant: j.A.getSelectedParticipant(t.id),
         participantsOpen: j.A.getParticipantsOpen(t.id)
-    }), [t.id]), f = (0, A.Ay)(t), I = (0, m.gU)(t), [T] = (0, u.A)(g?.type === D.lp.ACTIVITY ? [g.applicationId] : []), v = P.intl.string(P.t.BVZqJl);
+    }), [t.id]), f = (0, A.Ay)(t), I = (0, m.gU)(t), [T] = (0, u.A)(p?.type === D.lp.ACTIVITY ? [p.applicationId] : []), v = P.intl.string(P.t.BVZqJl);
     t.isDM() ? v = P.intl.string(P.t.jN2DfZ) : t.isGroupDM() && (v = P.intl.string(P.t["e5y+gm"]));
     let y = (0, a.bG)([h.A], () => h.A.getChannelStatus(t)),
         L = t.isGuildVoice() && d && null != y && y.length > 0,
@@ -209,7 +209,7 @@ function F(e) {
                     appContext: c,
                     inCall: d,
                     isChatOpen: _,
-                    exitFullScreen: p
+                    exitFullScreen: g
                 }),
                 children: [(0, i.jsx)(x.Ay.Title, {
                     wrapperClassName: w.DD,
@@ -232,7 +232,7 @@ function F(e) {
                     guild: s
                 }), (0, i.jsx)(H, {
                     focusedApplication: T,
-                    focusedParticipant: g,
+                    focusedParticipant: p,
                     channel: t
                 })]
             })

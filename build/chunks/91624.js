@@ -1,6 +1,6 @@
 /** chunk id: 91624 params = (module,exports,require) **/
 n.d(t, {
-    A: () => N
+    A: () => v
 }), n(938796);
 var i = n(627968),
     l = n(64700),
@@ -45,10 +45,10 @@ function I(e) {
         id: c
     } = t, {
         id: d
-    } = n, g = t.getGuildId(), p = (0, a.bG)([m.A], () => m.A.getGuild(g), [g]), _ = t.type === x.rbe.GUILD_ANNOUNCEMENT, I = null != p && p.features.has(x.GuildFeatures.NEWS), N = _ && I, {
-        editingMessage: v,
-        editingTextValue: b,
-        editingRichValue: y
+    } = n, g = t.getGuildId(), p = (0, a.bG)([m.A], () => m.A.getGuild(g), [g]), _ = t.type === x.rbe.GUILD_ANNOUNCEMENT, I = null != p && p.features.has(x.GuildFeatures.NEWS), v = _ && I, {
+        editingMessage: N,
+        editingTextValue: y,
+        editingRichValue: b
     } = (0, a.cf)([h.A], () => ({
         editingMessage: h.A.getEditingMessage(c),
         editingTextValue: h.A.getEditingTextValue(c),
@@ -56,7 +56,7 @@ function I(e) {
     }), [c]), j = (0, a.bG)([u.default], () => u.default.getId()), R = l.useCallback((e, i, l) => {
         let {
             content: a
-        } = l, c = A.A.can(x.xBc.MANAGE_MESSAGES, t), d = null != v && null != v.author ? v.author.id : null, u = N && (d === j || c), h = {
+        } = l, c = A.A.can(x.xBc.MANAGE_MESSAGES, t), d = null != N && null != N.author ? N.author.id : null, u = v && (d === j || c), h = {
             content: a,
             components: void 0
         };
@@ -69,18 +69,18 @@ function I(e) {
                 id: "82744"
             }), h.content = "", h.components = t
         }
-        return u && null != v && (0, s.Lt)(v.flags, x.pr7.CROSSPOSTED) ? f.A.confirmEdit(e, i, h) : r.A.editMessage(e, i, h), Promise.resolve()
-    }, [v, N, j, t, n]), M = l.useCallback(e => (0, l.createElement)(T, {
+        return u && null != N && (0, s.Lt)(N.flags, x.pr7.CROSSPOSTED) ? f.A.confirmEdit(e, i, h) : r.A.editMessage(e, i, h), Promise.resolve()
+    }, [N, v, j, t, n]), M = l.useCallback(e => (0, l.createElement)(T, {
         ...e,
         className: C.gM,
         key: d
     }), [d]);
-    return null != b && null != y ? (0, i.jsx)(E.A, {
+    return null != y && null != b ? (0, i.jsx)(E.A, {
         ref: void 0,
         channel: t,
         message: n,
-        textValue: b,
-        richValue: y,
+        textValue: y,
+        richValue: b,
         onCancel: r.A.endEditMessage,
         onChange: r.A.updateEditMessage,
         onConfirmDelete: f.A.confirmDelete,
@@ -124,7 +124,7 @@ function T(e) {
     }, s.id)
 }
 
-function N(e, t, n) {
+function v(e, t, n) {
     let {
         message: l,
         channel: s,

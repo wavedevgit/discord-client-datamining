@@ -17,8 +17,8 @@ var i = n(627968),
     A = n(442433),
     m = n(793574),
     _ = n(688810),
-    p = n(139286),
-    g = n(480890),
+    g = n(139286),
+    p = n(480890),
     f = n(267102),
     x = n(342296),
     C = n(961350),
@@ -110,7 +110,7 @@ let T = s.memo(function(e) {
         } = (0, _.Ay)(m.A.AUDIENCE_TILE), y = (0, f.Us)(), j = (0, d.bG)([E.Ay], () => null != I && E.Ay.getMember(I, r.id)?.premiumSince != null, [I, r.id]), R = s.useRef(null);
         o()(null != I, "Channel cannot be guildless");
         let O = s.useCallback(e => {
-            (0, p.x)({
+            (0, g.x)({
                 type: c.ImpressionTypes.MENU,
                 name: c.ImpressionNames.CALL_TILE_CONTEXT_MENU,
                 properties: {
@@ -130,7 +130,7 @@ let T = s.memo(function(e) {
                     showMediaItems: !0,
                     showStageChannelItems: !0,
                     showChatItems: !1,
-                    onInteraction: (0, g.s)("GuildChannelUserContextMenu", T, {
+                    onInteraction: (0, p.s)("GuildChannelUserContextMenu", T, {
                         targetUserId: r.id,
                         tileType: b.qs.USER
                     })

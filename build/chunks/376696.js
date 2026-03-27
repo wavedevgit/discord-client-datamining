@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(643501),
     m = n(279250),
     _ = n(834757),
-    p = n(727353),
-    g = n(140547),
+    g = n(727353),
+    p = n(140547),
     f = n(636920),
     x = n(958140),
     C = n(832163),
@@ -68,7 +68,7 @@ function k(e) {
         es = s.useMemo(() => null != ei ? [ei] : [], [ei]),
         {
             enableHangStatus: el
-        } = (0, g.$j)({
+        } = (0, p.$j)({
             guildId: t.guild_id,
             location: "VoiceUserActivities"
         }),
@@ -108,7 +108,7 @@ function k(e) {
                 analyticsSource: "VoiceUserActivities",
                 onAction: l
             })]
-        }) : null, null == Q || null == V || ec ? null : (0, i.jsx)(p.P, {
+        }) : null, null == Q || null == V || ec ? null : (0, i.jsx)(g.P, {
             stream: Q,
             activeStream: J,
             streamActivity: et,

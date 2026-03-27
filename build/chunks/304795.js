@@ -22,7 +22,7 @@ function d(e, t) {
         },
         icon: l.oyn,
         action: () => {
-            a.A.openConversationsSection(), (0, s.s4)(t.id, n)
+            a.A.openConversationsSection(), (0, s.xI)(t.id, n)
         }
     })
 }

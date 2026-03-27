@@ -28,13 +28,13 @@ let C = e => {
     } = e, {
         activeVoice: C,
         mostRecentlyRequestedVoiceId: S
-    } = (0, p.f)(), I = (0, g.e)(t.id), T = t.id === C, N = !t.available && !t.temporarilyAvailable, v = t.temporarilyAvailable && !n && !T, b = !T && t.id === S, [y, j] = l.useState(!1);
+    } = (0, p.f)(), I = (0, g.e)(t.id), T = t.id === C, v = !t.available && !t.temporarilyAvailable, N = t.temporarilyAvailable && !n && !T, y = !T && t.id === S, [b, j] = l.useState(!1);
     l.useEffect(() => {
-        let e = b ? setTimeout(() => j(b), 200) : void 0;
+        let e = y ? setTimeout(() => j(y), 200) : void 0;
         return () => {
             clearTimeout(e), j(!1)
         }
-    }, [b]);
+    }, [y]);
     let R = I?.previewSoundURLs,
         [M, D] = l.useState(0),
         {
@@ -47,11 +47,11 @@ let C = e => {
         }),
         k = x[t.styleKey],
         U = l.useCallback(() => {
-            n || !N ? ((0, m.O)(C === t.id ? null : t.id, s), v && h.default.track(f.HAw.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED, {
+            n || !v ? ((0, m.O)(C === t.id ? null : t.id, s), N && h.default.track(f.HAw.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED, {
                 voice_filter_id: t.id,
                 ...(0, A.A)(s)
             })) : (0, d.n)()
-        }, [n, N, C, t.id, s, v]),
+        }, [n, v, C, t.id, s, N]),
         G = l.useCallback(() => {
             h.default.track(f.HAw.VOICE_FILTER_PREVIEW_PLAYED, {
                 voice_filter_id: t.id,
@@ -65,7 +65,7 @@ let C = e => {
     return (0, i.jsxs)("div", {
         className: a()(x.filter, k, {
             [x.selected]: T,
-            [x.locked]: N && !T
+            [x.locked]: v && !T
         }),
         children: [(0, i.jsxs)(c.DUT, {
             className: x.selector,
@@ -97,7 +97,7 @@ let C = e => {
                         colorClass: x.checkmark,
                         secondaryColor: r.A.unsafe_rawColors.WHITE.css
                     })
-                }), N && !T && (0, i.jsx)("div", {
+                }), v && !T && (0, i.jsx)("div", {
                     className: a()([x.iconCircle, x.lockedCircle]),
                     children: (0, i.jsx)(c.XAi, {
                         size: "custom",
@@ -106,7 +106,7 @@ let C = e => {
                         color: "currentColor",
                         colorClass: x.lockedIcon
                     })
-                }), v && (0, i.jsx)("div", {
+                }), N && (0, i.jsx)("div", {
                     className: a()([x.iconCircle, x.iconBorder]),
                     children: (0, i.jsx)("div", {
                         className: a()([x.clockCircle]),
@@ -118,7 +118,7 @@ let C = e => {
                             colorClass: x.clockIcon
                         })
                     })
-                }), y && (0, i.jsx)("div", {
+                }), b && (0, i.jsx)("div", {
                     className: x.spinnerWrapper,
                     children: (0, i.jsx)(c.y$y, {
                         type: c.y$y.Type.CHASING_DOTS,

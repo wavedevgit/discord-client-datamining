@@ -21,8 +21,8 @@ function u(e) {
         awaitingRemote: A,
         onMouseEnter: m,
         onMouseLeave: _,
-        onClick: p,
-        ...g
+        onClick: g,
+        ...p
     } = e, {
         parentAnalyticsLocation: f
     } = (0, a.Ay)(), x = t || n || u, C = h ? d.l : d.A, E = (0, r.A)(t, n, u, A), {
@@ -43,8 +43,8 @@ function u(e) {
             _?.(e), I.onMouseLeave()
         },
         onClick: e => {
-            p?.(e), (0, o.X)(f, o.O.MIC, t)
+            g?.(e), (0, o.X)(f, o.O.MIC, t)
         },
-        ...g
+        ...p
     })
 }

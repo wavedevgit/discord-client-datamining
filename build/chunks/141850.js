@@ -1,35 +1,37 @@
 /** chunk id: 141850 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Eg: () => r,
-    UA: () => a,
+    Eg: () => a,
+    UA: () => r,
     WF: () => function e(t) {
         let {
             channelId: n,
-            limit: r = 5,
-            before: a,
+            limit: a = 25,
+            before: r,
             after: o,
-            around: u
+            around: u,
+            isStaleRefresh: c
         } = t;
         if (i.h.isDispatching()) return void Promise.resolve().then(() => e({
             channelId: n,
-            limit: r,
-            before: a,
+            limit: a,
+            before: r,
             after: o,
-            around: u
+            around: u,
+            isStaleRefresh: c
         }));
-        let c = null != u ? "around" : null != o ? "after" : "before";
+        let d = null != u ? "around" : null != o ? "after" : "before";
         i.h.dispatch({
             type: "CONVERSATIONS_FETCH_START",
             channelId: n,
-            direction: c
+            direction: d
         });
-        let d = {
-            limit: r
+        let m = {
+            limit: a
         };
-        null != a && (d.before = a), null != o && (d.after = o), null != u && (d.around = u), l.Bo.get({
+        null != r && (m.before = r), null != o && (m.after = o), null != u && (m.around = u), l.Bo.get({
             url: s.Rsh.CHANNEL_CONVERSATIONS(n),
-            query: d,
+            query: m,
             oldFormErrors: !0,
             rejectWithError: !0
         }).then(e => {
@@ -38,10 +40,11 @@ n.d(t, {
                 type: "CONVERSATIONS_FETCH_SUCCESS",
                 channelId: n,
                 conversations: t.conversations,
-                direction: c,
+                direction: d,
                 beforeShortCircuited: t.before_short_circuited,
                 afterShortCircuited: t.after_short_circuited,
-                anchor: u ?? a ?? o
+                anchor: u ?? r ?? o,
+                isStaleRefresh: c ?? !1
             })
         }, () => {
             i.h.dispatch({
@@ -50,25 +53,26 @@ n.d(t, {
             })
         })
     },
-    s4: () => function e(t, n) {
+    xI: () => function e(t, n) {
         i.h.isDispatching() ? Promise.resolve().then(() => e(t, n)) : i.h.dispatch({
-            type: "CONVERSATIONS_SCROLL_TO",
+            type: "SET_SELECTED_CONVERSATION",
             channelId: t,
             conversationId: n
         })
     }
 });
 var l = n(562465),
-    i = n(73153),
-    s = n(652215);
+    i = n(73153);
+n(705448);
+var s = n(652215);
 
-function r() {
+function a() {
     i.h.dispatch({
         type: "CONVERSATIONS_TOGGLE_HIGHLIGHTING"
     })
 }
 
-function a(e, t) {
+function r(e, t) {
     i.h.dispatch({
         type: "CONVERSATIONS_HOVER_CONVERSATION",
         channelId: e,

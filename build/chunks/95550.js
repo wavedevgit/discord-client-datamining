@@ -26,10 +26,10 @@ var i = n(627968),
     S = n(58149),
     I = n(688810),
     T = n(571694),
-    N = n(47167),
-    v = n(915089),
-    b = n(66442),
-    y = n(279208),
+    v = n(47167),
+    N = n(915089),
+    y = n(66442),
+    b = n(279208),
     j = n(267102),
     R = n(976860),
     M = n(219271),
@@ -59,12 +59,12 @@ var i = n(627968),
     et = n(650583),
     en = n(985018),
     ei = n(94521);
-let el = (0, v.Ld)(),
+let el = (0, N.Ld)(),
     es = e => {
         let {
             channel: t,
             onClose: n
-        } = e, l = (0, N.Ay)(t) ?? "", s = (0, c.bG)([G.Ay], () => G.Ay.lastMessageId(t.id) ?? t.id);
+        } = e, l = (0, v.Ay)(t) ?? "", s = (0, c.bG)([G.Ay], () => G.Ay.lastMessageId(t.id) ?? t.id);
         return (0, i.jsx)(u.DUT, {
             onClick: () => {
                 (0, R.uh)(ee.ME, t.id), n()
@@ -577,7 +577,7 @@ class er extends l.PureComponent {
             copied: l
         } = this.state;
         if (null == e || !e.isMultiUserDM() || this.isPartyFull()) return null;
-        let s = null != t ? (0, y.A)(t.code) : "",
+        let s = null != t ? (0, b.A)(t.code) : "",
             a = s.length > 0;
         return (0, i.jsx)(u.D0$, {
             label: en.intl.string(en.t.t3O2BR),
@@ -586,7 +586,7 @@ class er extends l.PureComponent {
             }) : void 0,
             children: (0, i.jsx)(u.e2O, {
                 supportsCopy: K.p5,
-                placeholder: (0, y.A)(en.intl.string(en.t.lPVBqP)),
+                placeholder: (0, b.A)(en.intl.string(en.t.lPVBqP)),
                 value: a ? n ? en.intl.string(en.t["6HzNgZ"]) : s : "",
                 buttonColor: d.$n.Colors.BRAND,
                 text: a ? l ? en.intl.string(en.t.q30c5i) : en.intl.string(en.t.OpuAlK) : en.intl.string(en.t.qzxqUf),
@@ -908,10 +908,10 @@ function eo(e) {
         onChange: r
     } = e, {
         analyticsLocations: o
-    } = (0, I.Ay)(C.A.NEW_GROUP_DM_INVITE_MODAL), c = (0, N.Jo)(Array.from(t), B.default, F.A);
+    } = (0, I.Ay)(C.A.NEW_GROUP_DM_INVITE_MODAL), c = (0, v.Jo)(Array.from(t), B.default, F.A);
     return (0, i.jsxs)("div", {
         className: ei.zj,
-        children: [(0, i.jsx)(b.X, {
+        children: [(0, i.jsx)(y.X, {
             className: ei.r9,
             channel: null,
             previewIcon: l,

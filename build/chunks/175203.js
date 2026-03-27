@@ -17,8 +17,8 @@ var i = n(627968),
     A = n(827343),
     m = n(820284),
     _ = n(793574),
-    p = n(587895),
-    g = n(429913),
+    g = n(587895),
+    p = n(429913),
     f = n(520698),
     x = n(659974),
     C = n(164617),
@@ -90,7 +90,7 @@ let eh = [er.lp.ACTIVITY],
                 noVideoRender: eA = !1,
                 focused: em = !1,
                 blocked: e_ = !1,
-                ignored: ep = !1,
+                ignored: eg = !1,
                 fit: ef = v.$.CONTAIN,
                 paused: ex = !1,
                 pulseSpeakingIndicator: eC = !1,
@@ -105,7 +105,7 @@ let eh = [er.lp.ACTIVITY],
             eR = (0, c.bG)([V.default], () => V.default.getId()),
             eO = u.type === er.lp.ACTIVITY ? null : u.user,
             eL = eO?.id ?? null,
-            [eM] = (0, g.A)(u.type === er.lp.ACTIVITY ? [u.applicationId] : []),
+            [eM] = (0, p.A)(u.type === er.lp.ACTIVITY ? [u.applicationId] : []),
             eD = (0, c.bG)([F.Ay], () => null != eL && F.Ay.isLocalVideoDisabled(eL, (0, f.A)(u.type)), [eL, u.type]),
             eG = (0, c.bG)([F.Ay], () => null != eL ? F.Ay.getVideoToggleState(eL, (0, f.A)(u.type)) : ea.bb8.NONE, [eL, u.type]),
             eU = eG === ea.bb8.AUTO_PROBING,
@@ -153,7 +153,7 @@ let eh = [er.lp.ACTIVITY],
             }),
             eY = (0, c.bG)([K.A], () => eW && null != eL ? K.A.findActivity(eL, e => null != e.application_id && e.type === ea.$pd.PLAYING) : null, [eW, eL]),
             ez = (0, c.bG)([B.A], () => eY?.application_id != null ? B.A.getDetectableGame(eY.application_id) : null),
-            eq = (0, c.bG)([p.A], () => null != ez && eY?.application_id != null ? p.A.getApplication(eY?.application_id) : void 0),
+            eq = (0, c.bG)([g.A], () => null != ez && eY?.application_id != null ? g.A.getApplication(eY?.application_id) : void 0),
             eX = (0, D.UF)({
                 userId: eL,
                 channelId: z.id
@@ -214,7 +214,7 @@ let eh = [er.lp.ACTIVITY],
                     selected: J,
                     width: q,
                     blocked: e_,
-                    ignored: ep,
+                    ignored: eg,
                     noVideoRender: eA || eU,
                     pulseSpeakingIndicator: eC
                 }), e7 = (0, i.jsx)(ei.s, {
@@ -322,7 +322,7 @@ let eh = [er.lp.ACTIVITY],
                                         color: "currentColor",
                                         className: eu.Dt
                                     })
-                                }) : null, eh.includes(u.type) ? null : (0, i.jsx)(eg, {
+                                }) : null, eh.includes(u.type) ? null : (0, i.jsx)(ep, {
                                     focused: em,
                                     width: q,
                                     inCall: Q,
@@ -334,7 +334,7 @@ let eh = [er.lp.ACTIVITY],
                                     platform: eK,
                                     title: (0, $.A)(z, u),
                                     blocked: e_,
-                                    ignored: ep,
+                                    ignored: eg,
                                     localVideoDisabled: eD,
                                     videoToggleState: eG,
                                     hideAudioIcon: eH,
@@ -436,7 +436,7 @@ function e_(e) {
     })
 }
 
-function ep(e) {
+function eg(e) {
     let {
         channelId: t,
         participantId: n,
@@ -454,15 +454,15 @@ function ep(e) {
     }) : null
 }
 eA.displayName = "CallTile";
-let eg = s.memo(e => {
+let ep = s.memo(e => {
     let {
         idle: t,
         title: n,
         width: l,
         focused: A,
         videoToggleState: m,
-        blocked: p,
-        ignored: g,
+        blocked: g,
+        ignored: p,
         participantId: x,
         participantType: E,
         participantUserId: T,
@@ -523,7 +523,7 @@ let eg = s.memo(e => {
     return A && E === er.lp.STREAM && ei.push((0, i.jsx)(j.A, {
         streamId: W,
         paused: H
-    }, "zoom-controls")), A ? B === C.N.CALL_TILE && (ei.push((0, i.jsx)(ep, {
+    }, "zoom-controls")), A ? B === C.N.CALL_TILE && (ei.push((0, i.jsx)(eg, {
         channelId: v.id,
         participantId: x,
         hideWhenInactive: !1,
@@ -591,14 +591,14 @@ let eg = s.memo(e => {
                     className: eu.gr,
                     size: "xs",
                     color: "currentColor"
-                }), p ? (0, i.jsx)("div", {
+                }), g ? (0, i.jsx)("div", {
                     className: eu.Z5,
                     children: (0, i.jsx)(h.KTN, {
                         size: "lg",
                         className: eu.Q6,
                         color: d.A.unsafe_rawColors.RED_400.css
                     })
-                }) : null, g ? (0, i.jsx)("div", {
+                }) : null, p ? (0, i.jsx)("div", {
                     className: eu.PP,
                     children: (0, i.jsx)(h.G3N, {
                         size: "lg",
@@ -632,6 +632,6 @@ let eg = s.memo(e => {
         })]
     })
 });
-eg.displayName = "CallTileOverlay";
+ep.displayName = "CallTileOverlay";
 let ef = v.$,
     ex = eA

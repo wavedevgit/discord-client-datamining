@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(141850),
     m = n(736339),
     _ = n(701952),
-    p = n(652215),
-    g = n(968353);
+    g = n(652215),
+    p = n(968353);
 
 function f(e, t) {
     if (e.length !== t.length) return !1;
@@ -56,16 +56,16 @@ let C = ["high", "medium", "low"],
             return e.severity === (n = t.flagged_summary_details.map(e => e.severity), C.find(e => n.includes(e)) ?? null)
         }) ?? null : null, d = c?.severity ?? null, u = c?.confidence ?? null;
         return (0, i.jsxs)("div", {
-            className: g.UO,
+            className: p.UO,
             children: [(0, i.jsx)(a.Text, {
                 variant: "text-xs/semibold",
                 color: "text-default",
-                className: g.a9,
+                className: p.a9,
                 children: "Moderation"
             }), (0, i.jsxs)("div", {
-                className: g.so,
+                className: p.so,
                 children: [(0, i.jsxs)("div", {
-                    className: g.a7,
+                    className: p.a7,
                     children: [(0, i.jsx)(a.Text, {
                         variant: "text-md/semibold",
                         color: null == t ? "text-muted" : n ? "status-positive" : "status-danger",
@@ -80,7 +80,7 @@ let C = ["high", "medium", "low"],
                         children: t.status_reason
                     })]
                 }), (0, i.jsxs)("div", {
-                    className: g.a7,
+                    className: p.a7,
                     children: [(0, i.jsx)(a.Text, {
                         variant: "text-md/semibold",
                         color: null == t ? "text-muted" : l ? "status-positive" : "status-danger",
@@ -101,7 +101,7 @@ let C = ["high", "medium", "low"],
                         children: [d, u].filter(Boolean).join(" \xb7 ")
                     })]
                 }), (0, i.jsxs)("div", {
-                    className: g.a7,
+                    className: p.a7,
                     children: [(0, i.jsx)(a.Text, {
                         variant: "text-md/semibold",
                         color: null == t || "unknown" === o ? "text-muted" : "passed" === o ? "status-positive" : "status-danger",
@@ -135,12 +135,12 @@ let C = ["high", "medium", "low"],
                 block: "center"
             })
         }, [r]);
-        let p = u.default.extractTimestamp(t.start_message_id),
+        let g = u.default.extractTimestamp(t.start_message_id),
             f = u.default.extractTimestamp(t.end_message_id),
             x = (0, c.e)({
-                timestamp: p
+                timestamp: g
             }),
-            C = Math.max(1, Math.round((f - p) / 1e3)),
+            C = Math.max(1, Math.round((f - g) / 1e3)),
             I = (0, o.WR)({
                 seconds: C,
                 getFormatter: o.i
@@ -149,7 +149,7 @@ let C = ["high", "medium", "low"],
             b = null != N ? (0, _.i)(N.content_json) : null;
         return (0, i.jsxs)(a.DUT, {
             innerRef: m,
-            className: `${g.Nm}${l?` ${g.Sk}`:""}`,
+            className: `${p.Nm}${l?` ${p.Sk}`:""}`,
             style: {
                 backgroundColor: l ? n.replace(/,\s*0\.12\)$/, ", 0.24)") : n
             },
@@ -157,25 +157,25 @@ let C = ["high", "medium", "low"],
             onMouseEnter: () => h(t.id),
             onMouseLeave: A,
             children: [(0, i.jsx)("div", {
-                className: g.PY,
+                className: p.PY,
                 children: (0, i.jsx)(a.Text, {
                     variant: "text-md/medium",
                     color: null != b ? "text-default" : "text-muted",
-                    className: g.So,
+                    className: p.So,
                     children: b?.title ?? "Summary not available"
                 })
             }), (0, i.jsxs)(a.Text, {
                 variant: "text-xs/normal",
                 color: "text-muted",
-                className: g.FR,
+                className: p.FR,
                 children: [x, " ago \xb7 ", I, " duration \xb7 ", t.message_count, " messages \xb7 ", t.user_count, " users"]
             }), b?.brief_summary != null && (0, i.jsx)(a.Text, {
                 variant: "text-xs/normal",
                 color: "text-default",
-                className: g.g5,
+                className: p.g5,
                 children: b.brief_summary
             }), null != b && b.key_points.length > 0 && (0, i.jsx)("ul", {
-                className: g.JP,
+                className: p.JP,
                 children: b.key_points.map((e, t) => (0, i.jsx)("li", {
                     children: (0, i.jsx)(a.Text, {
                         variant: "text-xs/normal",
@@ -186,22 +186,22 @@ let C = ["high", "medium", "low"],
             }), (0, i.jsxs)(a.Text, {
                 variant: "text-xs/normal",
                 color: "text-default",
-                className: g.RE,
+                className: p.RE,
                 children: ["Keywords: ", (0, i.jsx)("span", {
-                    className: g.Br,
+                    className: p.Br,
                     children: t.keywords.length > 0 ? t.keywords.join(" \xb7 ") : "Not available."
                 })]
             }), (0, i.jsxs)("div", {
-                className: g.UO,
+                className: p.UO,
                 children: [(0, i.jsx)(a.Text, {
                     variant: "text-xs/semibold",
                     color: "text-default",
-                    className: g.a9,
+                    className: p.a9,
                     children: "Quality Scores"
                 }), (0, i.jsxs)("div", {
-                    className: g.so,
+                    className: p.so,
                     children: [(0, i.jsxs)("div", {
-                        className: g.a7,
+                        className: p.a7,
                         children: [(0, i.jsx)(a.Text, {
                             variant: "text-md/semibold",
                             color: "text-default",
@@ -212,7 +212,7 @@ let C = ["high", "medium", "low"],
                             children: "Substance"
                         })]
                     }), (0, i.jsxs)("div", {
-                        className: g.a7,
+                        className: p.a7,
                         children: [(0, i.jsx)(a.Text, {
                             variant: "text-md/semibold",
                             color: "text-default",
@@ -223,7 +223,7 @@ let C = ["high", "medium", "low"],
                             children: "Engagement"
                         })]
                     }), (0, i.jsxs)("div", {
-                        className: g.a7,
+                        className: p.a7,
                         children: [(0, i.jsx)(a.Text, {
                             variant: "text-md/semibold",
                             color: "text-default",
@@ -249,16 +249,16 @@ function N(e) {
     }, [t.id]), b = s.useCallback(() => {
         (0, A.UA)(null, null)
     }, []), S = s.useCallback(e => {
-        (0, d.pX)(p.BVt.CHANNEL(e.guild_id, e.channel_id, e.start_message_id))
+        (0, A.xI)(e.channel_id, e.id), (0, d.pX)(g.BVt.CHANNEL(e.guild_id, e.channel_id, e.start_message_id))
     }, []);
     return (0, i.jsxs)("aside", {
         "aria-label": "Conversations",
-        className: g.zr,
+        className: p.zr,
         children: [(0, i.jsx)(r.Y9, {
             icon: a.oyn,
             title: "Conversations",
             children: (0, i.jsx)("div", {
-                className: g.y6,
+                className: p.y6,
                 children: (0, i.jsx)(a.K0, {
                     icon: C ? a.bMW : a.G3N,
                     "aria-label": C ? "Hide highlights" : "Show highlights",
@@ -268,11 +268,11 @@ function N(e) {
                 })
             })
         }), (0, i.jsxs)("div", {
-            className: g.Qs,
+            className: p.Qs,
             children: [c && (0, i.jsx)("div", {
-                className: g.f,
+                className: p.f,
                 children: (0, i.jsx)(a.DUT, {
-                    className: g.Qf,
+                    className: p.Qf,
                     onClick: function() {
                         if (0 === n.length || _) return;
                         let e = n[0].conversation;
@@ -304,12 +304,12 @@ function N(e) {
             }) : (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
                 color: "text-muted",
-                className: g.BI,
+                className: p.BI,
                 children: "No conversations available."
             }), u && (0, i.jsx)("div", {
-                className: g.f,
+                className: p.f,
                 children: (0, i.jsx)(a.DUT, {
-                    className: g.Qf,
+                    className: p.Qf,
                     onClick: function() {
                         if (0 === n.length || _) return;
                         let e = n[n.length - 1].conversation;

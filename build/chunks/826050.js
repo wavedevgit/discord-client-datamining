@@ -1,7 +1,7 @@
 /** chunk id: 826050 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968),
     s = n(64700),
@@ -136,4 +136,4 @@ class _ extends s.PureComponent {
         }
     }
 }
-let p = _
+let g = _

@@ -21,8 +21,8 @@ let _ = s.forwardRef(function(e, t) {
         tooltipConfig: s,
         shouldScalePreview: l = !0,
         renderPreview: _,
-        moreCount: p,
-        isSingleCard: g = !1,
+        moreCount: g,
+        isSingleCard: p = !1,
         wishlistId: f,
         wishlistItem: x,
         cardSize: C = h.Y.MEDIUM
@@ -31,7 +31,7 @@ let _ = s.forwardRef(function(e, t) {
         skuProductLine: I
     } = x, {
         trackUserProfileWishlistAction: N
-    } = (0, u.NJ)(), b = l ? m.ho : m.C8, S = g ? m.pr : m.Nr, T = null != p && p > 0, v = T ? A.intl.string(A.t.TxBQzD) : (0, c.x2)(x), y = (0, i.jsxs)(o.DUT, {
+    } = (0, u.NJ)(), b = l ? m.ho : m.C8, S = p ? m.pr : m.Nr, T = null != g && g > 0, v = T ? A.intl.string(A.t.TxBQzD) : (0, c.x2)(x), y = (0, i.jsxs)(o.DUT, {
         onClick: () => {
             n(), N({
                 action: T ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
@@ -53,7 +53,7 @@ let _ = s.forwardRef(function(e, t) {
             children: (0, i.jsxs)(o.Text, {
                 variant: "text-xs/medium",
                 color: "always-white",
-                children: ["+", p]
+                children: ["+", g]
             })
         })]
     });

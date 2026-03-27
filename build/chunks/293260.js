@@ -9,8 +9,8 @@ var l = n(627968);
 n(64700);
 var i = n(311907),
     s = n(397927),
-    r = n(317525),
-    a = n(370480),
+    a = n(317525),
+    r = n(370480),
     o = n(985018);
 let u = "guild-connection-roles";
 
@@ -33,7 +33,7 @@ function c(e) {
 }
 
 function d(e) {
-    return (0, i.bG)([r.A], () => (0, a.N8)(r.A.getSortedRoles(e.id)), [e]) ? (0, l.jsx)(s.Drp, {
+    return (0, i.bG)([a.A], () => (0, r.N8)(a.A.getSortedRoles(e.id)), [e]) ? (0, l.jsx)(s.Drp, {
         id: "guild-connection-roles",
         label: o.intl.string(o.t.ghtnss),
         icon: s.qYV,

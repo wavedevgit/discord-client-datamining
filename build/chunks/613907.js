@@ -32,9 +32,9 @@ function I(e) {
     }, []);
     let I = (0, r.bG)([A.A, m.default], () => !!a()(A.A.getMessages(t.id).toArray()).reverse().find(e => e.author.id !== m.default.getId() && e.state === E.cmJ.SENT && !(0, _.A)(e))),
         T = (0, r.bG)([g.default], () => g.default.getUser(t.isPrivate() ? t.getRecipientId() : null)),
-        N = f.Ay.useName(T) ?? x.intl.string(x.t.y1Wu2f),
-        v = (0, r.bG)([u.A], () => u.A.getStickerById(S)),
-        b = l.useCallback(async () => {
+        v = f.Ay.useName(T) ?? x.intl.string(x.t.y1Wu2f),
+        N = (0, r.bG)([u.A], () => u.A.getStickerById(S)),
+        y = l.useCallback(async () => {
             if (null == n || "" === n) try {
                 await c.A.sendGreetMessage(t.id, S), p.default.track(E.HAw.DM_EMPTY_ACTION, {
                     channel_id: t.id,
@@ -46,8 +46,8 @@ function I(e) {
                 e.ok || 429 !== e.status || s(x.intl.string(x.t.Whhv4w))
             }
         }, [t.id, t.type, n]),
-        y = x.intl.formatToPlainString(x.t.m0zYbV, {
-            username: N
+        b = x.intl.formatToPlainString(x.t.m0zYbV, {
+            username: v
         }),
         j = null != n && "" !== n ? (0, i.jsx)(o.Text, {
             className: C.z3,
@@ -60,29 +60,29 @@ function I(e) {
         children: [(0, i.jsxs)(o.DUT, {
             className: null != n && "" !== n ? C.AO : C.Iq,
             "aria-label": x.intl.string(x.t.pJObYI),
-            onClick: b,
+            onClick: y,
             children: [(0, i.jsx)(h.A, {
-                sticker: v,
+                sticker: N,
                 size: 24
             }), (0, i.jsx)(o.Text, {
                 className: C.Qq,
                 variant: "text-md/medium",
-                children: y
+                children: b
             })]
         }), j]
     }) : (0, i.jsxs)("div", {
         className: C.nj,
         children: [(0, i.jsx)(h.A, {
-            sticker: v,
+            sticker: N,
             size: 160,
             className: C.Xr
         }), (0, i.jsx)(o.Button, {
             fullWidth: !0,
             variant: "primary",
             size: "md",
-            onClick: b,
+            onClick: y,
             disabled: !!n,
-            text: y
+            text: b
         }), j]
     })
 }

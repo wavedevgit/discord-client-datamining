@@ -17,8 +17,8 @@ var i = n(627968),
     A = n(253932),
     m = n(954571),
     _ = n(661191),
-    p = n(652215),
-    g = n(985018);
+    g = n(652215),
+    p = n(985018);
 
 function f() {
     let {
@@ -51,14 +51,14 @@ function C() {
         }
         return !1
     }, [t, h, n]) ? (0, i.jsx)(a.m_, {
-        text: g.intl.string(g.t["8k+6QY"]),
+        text: p.intl.string(p.t["8k+6QY"]),
         children: (0, i.jsx)(r.K0, {
-            "aria-label": g.intl.string(g.t["8k+6QY"]),
+            "aria-label": p.intl.string(p.t["8k+6QY"]),
             icon: r.iA$,
             variant: "secondary",
             size: "sm",
             onClick: () => {
-                null != t && (A.ns.updateSetting(t.id), m.default.track(p.HAw.NOTIFICATION_CENTER_ACTION, {
+                null != t && (A.ns.updateSetting(t.id), m.default.track(g.HAw.NOTIFICATION_CENTER_ACTION, {
                     action_type: c.e1.MARK_ALL_READ
                 }))
             }

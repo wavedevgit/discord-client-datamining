@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(102876),
     m = n(657331),
     _ = n(253932),
-    p = n(427157),
-    g = n(287809),
+    g = n(427157),
+    p = n(287809),
     f = n(954571),
     x = n(661191),
     C = n(998218),
@@ -41,7 +41,7 @@ function G(e) {
         item: t
     } = e, n = t.message?.content;
     if (null == n) return (0, i.jsx)("div", {});
-    let s = g.default.getUser(t.message?.author?.id) ?? new p.A(t.message?.author),
+    let s = p.default.getUser(t.message?.author?.id) ?? new g.A(t.message?.author),
         l = h.A.parse(n);
     return (0, i.jsxs)("div", {
         className: L.PI,
@@ -148,8 +148,8 @@ let k = s.memo(function(e) {
         }) : (t.type === I.hW.FRIEND_REQUEST_ACCEPTED || t.type === I.hW.GAME_FRIEND_REQUEST_ACCEPTED) && null != t.other_user && (_ = (0, i.jsx)(y.R, {
             userId: t.other_user.id
         }));
-        let p = null != t.local_id,
-            g = (0, b.A)({
+        let g = null != t.local_id,
+            p = (0, b.A)({
                 item: t,
                 renderApplication: e => (0, i.jsx)(w, {
                     applicationId: e
@@ -171,7 +171,7 @@ let k = s.memo(function(e) {
                 focusProps: {
                     offset: 4
                 },
-                "aria-label": g,
+                "aria-label": p,
                 onClick: A,
                 children: [d ? null : (0, i.jsx)("div", {
                     className: L.gy
@@ -184,7 +184,7 @@ let k = s.memo(function(e) {
                     }), (0, i.jsxs)(a.Text, {
                         variant: "text-md/normal",
                         color: d ? "text-muted" : "text-default",
-                        children: ["string" != typeof g ? g : h.A.parse(g), M]
+                        children: ["string" != typeof p ? p : h.A.parse(p), M]
                     }), t.message?.content != null ? (0, i.jsx)(G, {
                         item: t
                     }) : null, null != t.callout ? (0, i.jsx)(U, {
@@ -195,7 +195,7 @@ let k = s.memo(function(e) {
                         children: (0, N.jb)(x.default.extractTimestamp(t.id))
                     }), _]
                 })]
-            }), p ? null : (0, i.jsx)(j.e, {
+            }), g ? null : (0, i.jsx)(j.e, {
                 item: t
             })]
         })

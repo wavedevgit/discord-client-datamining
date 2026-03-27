@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
     Ln: () => f,
-    Z0: () => g,
-    kt: () => p
+    Z0: () => p,
+    kt: () => g
 }), n(321073);
 var i = n(64700),
     s = n(311907),
@@ -19,7 +19,7 @@ var i = n(64700),
     m = n(366251),
     _ = n(652215);
 
-function p(e) {
+function g(e) {
     let {
         channel: t
     } = e, n = t?.guild_id, {
@@ -53,7 +53,7 @@ function p(e) {
     }, [t, n, i])
 }
 
-function g(e) {
+function p(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
         {
             collapsed: n = !1

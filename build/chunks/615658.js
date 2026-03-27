@@ -20,8 +20,8 @@ let A = () => {
         A = (0, c.n)(e => e.songIndex),
         m = (0, c.n)(e => e.playRadio),
         _ = (0, c.n)(e => e.globalMute),
-        p = (0, c.n)(e => e.playNextSong),
-        g = (0, c.n)(e => e.volumes),
+        g = (0, c.n)(e => e.playNextSong),
+        p = (0, c.n)(e => e.volumes),
         f = s.useRef(null),
         x = s.useRef(null),
         C = s.useRef(null),
@@ -43,20 +43,20 @@ let A = () => {
     }, [_, t]), t) ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(a.A, {
             ref: f,
-            onEnded: p,
-            volume: _ ? 0 : g.radio,
+            onEnded: g,
+            volume: _ ? 0 : p.radio,
             children: (0, i.jsx)("source", {
                 src: E?.src
             })
         }), (0, i.jsx)(a.A, {
             ref: x,
-            volume: _ ? 0 : g.environment,
+            volume: _ ? 0 : p.environment,
             children: (0, i.jsx)("source", {
                 src: I?.sounds?.[u.qi.ENVIRONMENT]
             })
         }), (0, i.jsx)(a.A, {
             ref: C,
-            volume: _ ? 0 : g.campfire,
+            volume: _ ? 0 : p.campfire,
             children: (0, i.jsx)("source", {
                 src: I?.sounds?.[u.qi.CAMPFIRE]
             })

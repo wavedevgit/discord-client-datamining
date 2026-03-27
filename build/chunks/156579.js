@@ -31,10 +31,10 @@ function A(e) {
             connectedActivity: t,
             activityPanelMode: r.Ay.getActivityPanelMode()
         }
-    }), p = (0, s.bG)([l.A], () => l.A.getWindowOpen(h.MLl.ACTIVITY_POPOUT));
+    }), g = (0, s.bG)([l.A], () => l.A.getWindowOpen(h.MLl.ACTIVITY_POPOUT));
     if (!(0, a.Gp)(A)) return null;
-    let g = m?.applicationId;
-    return _ !== u.Gd.PANEL || null == g || p || null == A || null == m || (0, c.A)(A) ? null : (0, i.jsx)(d.A, {
+    let p = m?.applicationId;
+    return _ !== u.Gd.PANEL || null == p || g || null == A || null == m || (0, c.A)(A) ? null : (0, i.jsx)(d.A, {
         maxHeight: t,
         connectedLocation: m.location,
         renderExternalHeader: n

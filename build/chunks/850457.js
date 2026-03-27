@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(290987),
     m = n(820512),
     _ = n(769022),
-    p = n(898926),
-    g = n(287809),
+    g = n(898926),
+    p = n(287809),
     f = n(954571),
     x = n(562153),
     C = n(652215),
@@ -29,7 +29,7 @@ function N(e) {
         event: t,
         guildId: n,
         channelId: s
-    } = e, a = (0, l.bG)([g.default], () => g.default.getUser(t.userId)), c = (0, o.O)(t.applicationId ?? null), d = x.Ay.useName(n, s, a);
+    } = e, a = (0, l.bG)([p.default], () => p.default.getUser(t.userId)), c = (0, o.O)(t.applicationId ?? null), d = x.Ay.useName(n, s, a);
     return null == a ? null : (0, i.jsxs)("li", {
         className: I.NG,
         children: [(0, i.jsx)("div", {
@@ -68,7 +68,7 @@ function b(e) {
         event: t,
         guildId: n,
         channelId: s
-    } = e, a = (0, l.bG)([g.default], () => g.default.getUser(t.userId)), o = x.Ay.useName(n, s, a);
+    } = e, a = (0, l.bG)([p.default], () => p.default.getUser(t.userId)), o = x.Ay.useName(n, s, a);
     return null == a ? null : (0, i.jsxs)("li", {
         className: I.NG,
         children: [(0, i.jsx)("div", {
@@ -117,11 +117,11 @@ function S(e) {
         guildId: n,
         channelId: s
     } = e;
-    return t.eventType === p.i.ACTIVITY_ENDED ? (0, i.jsx)(N, {
+    return t.eventType === g.i.ACTIVITY_ENDED ? (0, i.jsx)(N, {
         event: t,
         guildId: n,
         channelId: s
-    }) : t.eventType === p.i.USER_LEFT ? (0, i.jsx)(b, {
+    }) : t.eventType === g.i.USER_LEFT ? (0, i.jsx)(b, {
         event: t,
         guildId: n,
         channelId: s

@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(104171),
     m = n(47167),
     _ = n(713654),
-    p = n(427930),
-    g = n(427209),
+    g = n(427930),
+    p = n(427209),
     f = n(763754),
     x = n(291812),
     C = n(449859),
@@ -50,7 +50,7 @@ function B(e) {
         isSelected: r,
         isUnread: o,
         groupedMessages: h
-    } = e, A = n.type === P.rbe.UNKNOWN ? u.N$i : (0, _.gU)(n, null), p = (0, m.Ay)(n, !1), g = (0, c.bG)([R.A], () => R.A.getGuild(n.getGuildId())), {
+    } = e, A = n.type === P.rbe.UNKNOWN ? u.N$i : (0, _.gU)(n, null), g = (0, m.Ay)(n, !1), p = (0, c.bG)([R.A], () => R.A.getGuild(n.getGuildId())), {
         nick: x,
         colorString: C
     } = (0, f.Ay)(t), {
@@ -59,9 +59,9 @@ function B(e) {
     } = (0, S.A)({
         userId: t.author.id,
         size: u._3J.SIZE_32,
-        guildId: g?.id,
+        guildId: p?.id,
         animateOnHover: !0
-    }), T = n.type !== P.rbe.GUILD_ANNOUNCEMENT || null == g, y = (0, E.y)({
+    }), T = n.type !== P.rbe.GUILD_ANNOUNCEMENT || null == p, y = (0, E.y)({
         channel: n,
         message: t,
         user: t.author,
@@ -79,8 +79,8 @@ function B(e) {
         })
     });
     return (0, s.useEffect)(() => {
-        null != g && j.A.requestMember(g.id, t.author.id)
-    }, [g, t.author.id]), (0, i.jsx)(u.vN3, {
+        null != p && j.A.requestMember(p.id, t.author.id)
+    }, [p, t.author.id]), (0, i.jsx)(u.vN3, {
         ...l,
         children: (0, i.jsxs)("div", {
             onMouseLeave: b.onMouseLeave,
@@ -98,14 +98,14 @@ function B(e) {
                     "aria-label": "User Avatar",
                     src: N,
                     size: u._3J.SIZE_32,
-                    cornerIconUrl: null != g ? (0, v.Iv)(g, 24) : void 0,
+                    cornerIconUrl: null != p ? (0, v.Iv)(p, 24) : void 0,
                     cornerIconOffsetX: 4,
                     cornerIconOffsetY: 3
                 }) : (0, i.jsx)(U.h, {
                     "aria-label": "Guild Icon",
-                    src: (0, v.Iv)(g, 32),
+                    src: (0, v.Iv)(p, 32),
                     size: u._3J.SIZE_32,
-                    cornerIconUrl: t.author.getAvatarURL(g.id, 24),
+                    cornerIconUrl: t.author.getAvatarURL(p.id, 24),
                     cornerIconOffsetX: 4,
                     cornerIconOffsetY: 3
                 })
@@ -140,7 +140,7 @@ function B(e) {
                                 color: C ?? void 0
                             },
                             className: V.Xh,
-                            children: g.name
+                            children: p.name
                         })
                     }), (0, i.jsxs)(u.BJc, {
                         direction: "horizontal",
@@ -179,7 +179,7 @@ function B(e) {
                             [V.gy]: o,
                             [V.wH]: r
                         }),
-                        children: [p, !T && ` \xb7 ${x}`]
+                        children: [g, !T && ` \xb7 ${x}`]
                     })]
                 }), (0, i.jsx)(K, {
                     message: t,
@@ -266,14 +266,14 @@ function K(e) {
             let e, s = "" === t.content,
                 o = t.embeds.some(e => e.type === P.Auw.GIFV),
                 c = (e = t.embeds.some(e => e.type === P.Auw.GIFV), t.attachments.length + +!!e),
-                d = (0, p.A)(t),
+                d = (0, g.A)(t),
                 h = t.stickerItems.length > 0,
                 A = t.isPoll(),
                 m = t.type === P.lAJ.POLL_RESULT,
                 _ = t.hasFlag(P.pr7.IS_VOICE_MESSAGE),
                 f = t.type === P.lAJ.USER_JOIN,
                 C = null;
-            1 === c ? C = u.xfq : c > 1 ? C = u.sYc : d ? C = g.A : A || m ? C = u.YRe : h ? C = u.tEP : _ && (C = u.HKD);
+            1 === c ? C = u.xfq : c > 1 ? C = u.sYc : d ? C = p.A : A || m ? C = u.YRe : h ? C = u.tEP : _ && (C = u.HKD);
             let E = !0,
                 I = null;
             return s ? d ? I = k.intl.string(k.t["9ddYKt"]) : A ? (E = !1, I = t.poll?.question.text) : I = m ? k.intl.string(k.t.sad2PH) : o ? k.intl.string(k.t.p0oZmy) : c > 1 ? k.intl.formatToPlainString(k.t.rtfTKp, {
@@ -338,8 +338,8 @@ let W = (0, s.memo)(function(e) {
             type: P.rbe.UNKNOWN,
             name: k.intl.string(k.t.J90oLW)
         })
-    }), p = (0, D.s)(e => e.isMenuOpenForMessage(d?.id ?? null)), {
-        notificationCenterVariant: g
+    }), g = (0, D.s)(e => e.isMenuOpenForMessage(d?.id ?? null)), {
+        notificationCenterVariant: p
     } = (0, O.X8)({
         location: "NotificationsInboxMessageUnit"
     }), f = s.useMemo(() => `${d?.author.username}: ${_?.name}`, [d?.author.username, _?.name]), x = l?.map(e => e.message).filter(e => null != e) ?? [];
@@ -347,14 +347,14 @@ let W = (0, s.memo)(function(e) {
         "aria-label": f,
         className: a()(V.FJ, {
             [V.wH]: d.id === m.messageId,
-            [V.Yj]: p
+            [V.Yj]: g
         }),
         onClick: () => {
             L.A.inboxItemClick({
                 message: d,
                 channel: _,
                 isUnread: r,
-                isSidebar: g === O.U5.SIDEBAR,
+                isSidebar: p === O.U5.SIDEBAR,
                 viewId: A
             })
         },

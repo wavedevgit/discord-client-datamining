@@ -1,7 +1,7 @@
 /** chunk id: 984624 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(627968),
     s = n(64700),
@@ -16,18 +16,18 @@ var i = n(627968),
     A = n(496092),
     m = n(132860),
     _ = n(508654),
-    p = n(985018);
+    g = n(985018);
 
-function g(e) {
+function p(e) {
     let {
         channelId: t,
         onClick: n
-    } = e, g = (0, r.Us)(), f = (0, _.Qs)(t), x = (0, l.bG)([u.A], () => u.A.getChannel(t), [t]), {
+    } = e, p = (0, r.Us)(), f = (0, _.Qs)(t), x = (0, l.bG)([u.A], () => u.A.getChannel(t), [t]), {
         canManageGuildEvent: C
     } = (0, o.nr)(x), E = C(f), I = s.useRef(null);
     if (null == f) return null;
     let N = () => {
-            null != x && (0, m.A)(x) ? (0, h.Py)(x, g) : n()
+            null != x && (0, m.A)(x) ? (0, h.Py)(x, p) : n()
         },
         b = () => {
             A.A.endEvent(f.id, f.guild_id)
@@ -43,13 +43,13 @@ function g(e) {
                     "data-menu-migrated": !0,
                     navId: "exit-options",
                     onSelect: () => {},
-                    "aria-label": p.intl.string(p.t["K6/mk3"]),
+                    "aria-label": g.intl.string(g.t["K6/mk3"]),
                     onClose: t,
                     children: (0, i.jsx)(a.Drp, {
                         id: "end-voice-event",
                         color: "danger",
                         action: b,
-                        label: p.intl.string(p.t.qaYzPA),
+                        label: g.intl.string(g.t.qaYzPA),
                         leadingAccessory: {
                             type: "icon",
                             icon: a.aXh
@@ -68,13 +68,13 @@ function g(e) {
             } = e;
             return (0, i.jsx)(d.A, {
                 buttonRef: I,
-                label: p.intl.string(p.t["6vrfgt"]),
+                label: g.intl.string(g.t["6vrfgt"]),
                 onClick: N,
                 onPopoutClick: t
             })
         }
     }) : (0, i.jsx)(d.A, {
-        label: p.intl.string(p.t["6vrfgt"]),
+        label: g.intl.string(g.t["6vrfgt"]),
         onClick: n
     })
 }

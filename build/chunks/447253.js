@@ -1,7 +1,7 @@
 /** chunk id: 447253 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968),
     s = n(64700),
@@ -72,7 +72,7 @@ function _(e) {
     })
 }
 
-function p(e) {
+function g(e) {
     let {
         folderNode: t,
         expanded: n,
@@ -82,8 +82,8 @@ function p(e) {
         isMentionLowImportance: c,
         tooltipName: d,
         folderGroupId: m,
-        folderButtonContent: p,
-        onClick: g,
+        folderButtonContent: g,
+        onClick: p,
         onContextMenu: f,
         onHoverChange: x,
         onKeyDown: C,
@@ -101,7 +101,7 @@ function p(e) {
     return (0, i.jsx)(o.vN3, {
         children: (0, i.jsxs)(o.DUT, {
             className: A.H3,
-            onClick: g,
+            onClick: p,
             onContextMenu: f,
             onMouseEnter: v,
             onMouseLeave: y,
@@ -131,9 +131,9 @@ function p(e) {
                 },
                 children: (0, i.jsx)("div", {
                     className: A.vA,
-                    children: null != p ? (0, i.jsx)("div", {
+                    children: null != g ? (0, i.jsx)("div", {
                         className: A.hJ,
-                        children: p
+                        children: g
                     }) : (0, i.jsx)(_, {
                         folderNode: t,
                         hovered: S,

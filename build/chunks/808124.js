@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(998740),
     m = n(732777),
     _ = n(709382),
-    p = n(287245),
-    g = n(615658),
+    g = n(287245),
+    p = n(615658),
     f = n(592044),
     x = n(100449),
     C = n(588703),
@@ -177,7 +177,7 @@ let N = e => {
                                 e.preventDefault(), e.stopPropagation(), T(!S)
                             }
                         })]
-                    }), (0, i.jsx)(p.A, {
+                    }), (0, i.jsx)(g.A, {
                         channel: t,
                         idle: n,
                         showChat: S ?? !1
@@ -214,7 +214,7 @@ let N = e => {
                         left: Y.x,
                         top: Y.y
                     } : void 0
-                }), (0, i.jsx)(g.A, {}), (0, i.jsx)("div", {
+                }), (0, i.jsx)(p.A, {}), (0, i.jsx)("div", {
                     className: a()(I.Lw, {
                         [I.FD]: A
                     }),

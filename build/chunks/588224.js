@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(313961),
     m = n(532622),
     _ = n(550946),
-    p = n(140547),
-    g = n(242919),
+    g = n(140547),
+    p = n(242919),
     f = n(7054),
     x = n(220995),
     C = n(582904),
@@ -59,10 +59,10 @@ let B = s.memo(e => {
         return t.has(x)
     }), [x, l.id]), F = (0, h.A)(null != H ? [H.applicationId] : []), K = (0, N.Ay)(x, l.guild_id)[0], W = (0, u.YY)(K?.application_id).data ?? void 0, [Y, z] = (0, r.yK)([v.A], () => [v.A.getStreamForUser(x, l.getGuildId()), v.A.getActiveStreamForUser(x, l.getGuildId())], [l, x]), q = (0, r.bG)([L.A], () => L.A.getSessionById(a)), X = G.Ay.useName(s), Q = (0, r.bG)([D.A], () => D.A.getVoicePlatformForChannel(l.id, x), [l.id, x]), {
         enableHangStatus: J
-    } = (0, p.$j)({
+    } = (0, g.$j)({
         guildId: l.guild_id,
         location: "VoiceUsers"
-    }), $ = (0, m.Ay)(l, !0, s), Z = (0, r.bG)([g.A], () => C ? g.A.getHangStatusActivity() : null, [C]), ee = (0, f.h)(x), et = (0, b.uy)(l.id, x), {
+    }), $ = (0, m.Ay)(l, !0, s), Z = (0, r.bG)([p.A], () => C ? p.A.getHangStatusActivity() : null, [C]), ee = (0, f.h)(x), et = (0, b.uy)(l.id, x), {
         enableVCStatusIcons: en
     } = I.m.useExperiment({
         guildId: l.guild_id,
@@ -110,8 +110,8 @@ let H = [],
             collapsedMax: u = 6,
             tabIndex: m,
             numAudience: _,
-            withGuildIcon: p = !1,
-            className: g,
+            withGuildIcon: g = !1,
+            className: p,
             children: E,
             isThread: I = !1
         } = e, [N, v] = s.useState(null), j = s.useRef(null), L = (0, b.$n)(l.id, c ?? H);
@@ -189,9 +189,9 @@ let H = [],
             }, "ghost-user")), s
         })();
         return null == z && null == E ? null : (0, i.jsxs)(S.Wr, {
-            className: a()(g, V.p_, {
+            className: a()(p, V.p_, {
                 [V.yZ]: d,
-                [V.lY]: p,
+                [V.lY]: g,
                 [V.fT]: I
             }),
             collapsed: d,

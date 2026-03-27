@@ -17,8 +17,8 @@ var s = n(311907),
     A = n(508654),
     m = n(974930),
     _ = n(47868),
-    p = n(985018),
-    g = n(275237);
+    g = n(985018),
+    p = n(275237);
 
 function f(e) {
     let {
@@ -36,10 +36,10 @@ function f(e) {
                 width: 20
             }),
             color: l.A.unsafe_rawColors.GREEN_360.css,
-            title: p.intl.formatToPlainString(I(e) ? p.t["1vGXqM"] : p.t.xMJyla, {
+            title: g.intl.formatToPlainString(I(e) ? g.t["1vGXqM"] : g.t.xMJyla, {
                 eventName: e.name
             }),
-            description: p.intl.formatToPlainString(p.t.PTebCR, {
+            description: g.intl.formatToPlainString(g.t.PTebCR, {
                 startTime: (0, m.CC)(e.scheduled_start_time).startDateTimeString
             }),
             onClick: () => {
@@ -60,7 +60,7 @@ function f(e) {
                 return t = e.id, void(0, h.Nt)(t)
             } : void 0,
             userCount: b[e.id],
-            className: g.f
+            className: p.f
         }, e.id))
     })
 }

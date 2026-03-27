@@ -17,8 +17,8 @@ var i = n(627968),
     A = n(587895),
     m = n(290987),
     _ = n(976860),
-    p = n(194871),
-    g = n(966846),
+    g = n(194871),
+    p = n(966846),
     f = n(674378),
     x = n(505806),
     C = n(652215),
@@ -111,7 +111,7 @@ class b extends s.PureComponent {
         if (e.type === C.WTw.UPDATING || e.type === C.WTw.REPAIRING || e.type === C.WTw.INSTALLING) {
             if (t) return E.intl.string(E.t["5oxtFS"]);
             else if (e.stage === C.OQC.PATCHING || e.stage === C.OQC.REPAIRING) return (0, i.jsx)(x.A, {
-                getHistoricalTotalBytes: p.A.getHistoricalTotalBytesWritten,
+                getHistoricalTotalBytes: g.A.getHistoricalTotalBytesWritten,
                 updateInterval: 5e3,
                 children: this.renderProgressBody
             })
@@ -206,16 +206,16 @@ function T(e, t) {
         return null != l && e.push(l), e
     }, [])
 }
-let v = o.Ay.connectStores([g.A, p.A, A.A], () => {
-    let e = g.A.activeItems,
-        t = T(e, p.A),
+let v = o.Ay.connectStores([p.A, g.A, A.A], () => {
+    let e = p.A.activeItems,
+        t = T(e, g.A),
         {
             total: n,
             progress: i
         } = f.zY(t);
     return {
         percent: f.uA(i, n),
-        isPaused: g.A.paused,
+        isPaused: p.A.paused,
         firstApplication: e.length > 0 ? A.A.getApplication(e[0].applicationId) : null,
         firstState: t.length > 0 ? t[0] : null
     }

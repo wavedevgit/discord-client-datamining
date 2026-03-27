@@ -43,10 +43,10 @@ function A(e, t, n) {
                 r(c.A.getMutableParticipants(d[0], e), t[e], e === u.ip.SPEAKER)
             }), r(a, 1, !1), [n, i]
         }, [d, t, h, A, e])),
-        [_, p] = m,
-        [g, f] = (0, a.J)(m, n, [t[u.ip.AUDIENCE]]);
+        [_, g] = m,
+        [p, f] = (0, a.J)(m, n, [t[u.ip.AUDIENCE]]);
     return [
-        [_[3 * !!A], _[1], g[2]],
-        [p[3 * !!A], p[1], f[2]]
+        [_[3 * !!A], _[1], p[2]],
+        [g[3 * !!A], g[1], f[2]]
     ]
 }

@@ -65,7 +65,7 @@ function C(e) {
         isBlocked: h.A.isBlocked(S)
     }), [S]), T = l.useCallback(() => {
         (0, m.xi)(t, [C])
-    }, [t, C]), N = (0, f.eT)(), v = l.useCallback(e => () => {
+    }, [t, C]), v = (0, f.eT)(), N = l.useCallback(e => () => {
         o.A.blockUser(S, {
             location: f.Rx
         }).then(() => {
@@ -88,7 +88,7 @@ function C(e) {
             name: s.K.SAFETY_WARNING_VIEW
         })
     }, [t, C, S]);
-    let b = () => {
+    let y = () => {
             (0, r.mMO)(async () => {
                 let {
                     default: e
@@ -105,7 +105,7 @@ function C(e) {
                         warningId: C,
                         senderId: S,
                         description: E.intl.string(E.t.DJMZX6),
-                        safetyTipRows: N.map((e, t) => (0, i.jsx)(d.B, {
+                        safetyTipRows: v.map((e, t) => (0, i.jsx)(d.B, {
                             index: t,
                             listType: "numbered",
                             title: e
@@ -121,7 +121,7 @@ function C(e) {
                                 buttonText: E.intl.string(E.t["5QYPO2"]),
                                 buttonVariant: "critical-primary",
                                 onButtonPress: () => {
-                                    s(), y(g.Wm.USER_MODAL_BLOCK_CONFIRM, g.Wm.USER_MODAL_BLOCK_CANCEL, b)
+                                    s(), b(g.Wm.USER_MODAL_BLOCK_CONFIRM, g.Wm.USER_MODAL_BLOCK_CANCEL, y)
                                 }
                             }, "block-button")]
                         })
@@ -129,7 +129,7 @@ function C(e) {
                 }
             })
         },
-        y = (e, l, s) => {
+        b = (e, l, s) => {
             (0, r.mMO)(async () => {
                 let {
                     default: a
@@ -137,7 +137,7 @@ function C(e) {
                 return n => (0, i.jsx)(a, {
                     ...n,
                     userId: S,
-                    confirmBlock: v(e),
+                    confirmBlock: N(e),
                     onCancel: () => {
                         s?.(), (0, g._$)({
                             channelId: t,
@@ -162,7 +162,7 @@ function C(e) {
             text: E.intl.string(E.t["Qk/c48"]),
             variant: "primary",
             onClick: () => {
-                b(), (0, g._$)({
+                y(), (0, g._$)({
                     channelId: t,
                     warningId: C,
                     senderId: S,
@@ -173,7 +173,7 @@ function C(e) {
         }, ...I ? [] : [{
             text: E.intl.string(E.t.ie0QdN),
             variant: "critical-primary",
-            onClick: () => y(g.Wm.USER_BANNER_BLOCK_CONFIRM, g.Wm.USER_BANNER_BLOCK_CANCEL)
+            onClick: () => b(g.Wm.USER_BANNER_BLOCK_CONFIRM, g.Wm.USER_BANNER_BLOCK_CANCEL)
         }]]
     })
 }

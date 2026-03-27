@@ -26,7 +26,7 @@ let o = function(e) {
     let _ = s.useCallback(() => {
             (0, a.mU)(a.IY.NSFW_CHANNEL_DISAGREE_CTA, h, A, m), u?.()
         }, [u, h, A, m]),
-        p = s.useCallback(() => {
+        g = s.useCallback(() => {
             (0, a.mU)(a.IY.NSFW_CHANNEL_AGREE_CTA, h, A, m), d?.()
         }, [d, h, A, m]);
     return (0, i.jsxs)(l.BJc, {
@@ -60,7 +60,7 @@ let o = function(e) {
                 text: c,
                 onClick: _
             }) : null, null != o && null != d ? (0, i.jsx)(l.Button, {
-                onClick: p,
+                onClick: g,
                 text: o
             }) : null]
         })]

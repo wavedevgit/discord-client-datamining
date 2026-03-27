@@ -17,8 +17,8 @@ var s = n(554146),
     A = n(363487),
     m = n(828162),
     _ = n(652215),
-    p = n(49999),
-    g = n(985018);
+    g = n(49999),
+    p = n(985018);
 
 function f(e) {
     let {
@@ -40,7 +40,7 @@ function f(e) {
             return r === s.M.BOOST_PROGRESS_BAR_ADMIN_COACHMARK ? (0, i.jsx)(a.A, {
                 targetElementRef: n,
                 onRequestClose: () => {
-                    c(p.i.USER_DISMISS)
+                    c(g.i.USER_DISMISS)
                 },
                 position: "right",
                 alignmentStrategy: "edge",
@@ -55,19 +55,19 @@ function f(e) {
                     aspectRatio: "21/9"
                 },
                 size: "video",
-                title: g.intl.string(g.t.bjJ7xZ),
-                body: g.intl.string(g.t.SeBPzu),
+                title: p.intl.string(p.t.bjJ7xZ),
+                body: p.intl.string(p.t.SeBPzu),
                 actions: [{
-                    text: g.intl.string(g.t["Xc9J+x"]),
+                    text: p.intl.string(p.t["Xc9J+x"]),
                     variant: "primary",
                     onClick: () => {
-                        c(p.i.TAKE_ACTION), u.A.open(t.id, _.BEX.BOOST_PERKS, o.A.GUILD_BOOSTING_PROGRESS_BAR_ADMIN_COACHMARK)
+                        c(g.i.TAKE_ACTION), u.A.open(t.id, _.BEX.BOOST_PERKS, o.A.GUILD_BOOSTING_PROGRESS_BAR_ADMIN_COACHMARK)
                     }
                 }]
             }) : r === s.M.BOOST_PROGRESS_BAR_MEMBER_COACHMARK ? (0, i.jsx)(a.A, {
                 targetElementRef: n,
                 onRequestClose: () => {
-                    c(p.i.USER_DISMISS)
+                    c(g.i.USER_DISMISS)
                 },
                 position: "right",
                 alignmentStrategy: "edge",
@@ -82,13 +82,13 @@ function f(e) {
                     aspectRatio: "21/9"
                 },
                 size: "video",
-                title: g.intl.string(g.t["8W0djT"]),
-                body: g.intl.string(g.t.tgSfkH),
+                title: p.intl.string(p.t["8W0djT"]),
+                body: p.intl.string(p.t.tgSfkH),
                 actions: [{
-                    text: g.intl.string(g.t.cTJtBG),
+                    text: p.intl.string(p.t.cTJtBG),
                     variant: "primary",
                     onClick: () => {
-                        c(p.i.TAKE_ACTION), (0, m.A)(t.id, o.A.GUILD_BOOSTING_PROGRESS_BAR_MEMBER_COACHMARK)
+                        c(g.i.TAKE_ACTION), (0, m.A)(t.id, o.A.GUILD_BOOSTING_PROGRESS_BAR_MEMBER_COACHMARK)
                     }
                 }]
             }) : null

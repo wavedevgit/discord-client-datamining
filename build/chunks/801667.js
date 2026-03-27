@@ -33,10 +33,10 @@ function x(e) {
         } = g.A.useConfig({
             location: "useIsEligibleForFirstBoosterUpsell"
         }),
-        [N] = (0, a.Wl)(s.M.FIRST_BOOSTER_UPSELL_OVERSEER, {
+        [v] = (0, a.Wl)(s.M.FIRST_BOOSTER_UPSELL_OVERSEER, {
             cooldownDurationMs: 0,
             numTimesToRecur: 3
         }),
-        v = N === s.M.FIRST_BOOSTER_UPSELL_OVERSEER;
-    return i.useMemo(() => !(!T || !v || !S || null == C || C <= 17.06 || e.type !== f.rbe.GUILD_TEXT || null == t || A.default.age(t.id) < _ || null == t.premiumSubscriberCount || 0 !== t.premiumSubscriberCount || n < 10 || m?.id == null || A.default.age(m.id) > E) && (x || I), [T, v, S, e.type, t, n, C, m?.id, x, I])
+        N = v === s.M.FIRST_BOOSTER_UPSELL_OVERSEER;
+    return i.useMemo(() => !(!T || !N || !S || null == C || C <= 17.06 || e.type !== f.rbe.GUILD_TEXT || null == t || A.default.age(t.id) < _ || null == t.premiumSubscriberCount || 0 !== t.premiumSubscriberCount || n < 10 || m?.id == null || A.default.age(m.id) > E) && (x || I), [T, N, S, e.type, t, n, C, m?.id, x, I])
 }

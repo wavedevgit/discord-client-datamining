@@ -61,18 +61,18 @@ let m = {
             minZoom: n = 1,
             maxZoom: o = 5,
             children: c
-        } = e, [d, u] = l.useState(n), [h, p] = l.useState(!1), [f, _] = l.useState(!1), [E, x] = l.useState(!1), [C, S] = l.useState(!1), [I, T] = l.useState(16 / 9), [N, v] = l.useState({
+        } = e, [d, u] = l.useState(n), [h, p] = l.useState(!1), [f, _] = l.useState(!1), [E, x] = l.useState(!1), [C, S] = l.useState(!1), [I, T] = l.useState(16 / 9), [v, N] = l.useState({
             x: 0,
             y: 0
-        }), b = l.useRef(null), y = l.useRef(null);
+        }), y = l.useRef(null), b = l.useRef(null);
         (0, r.l0)(() => {
-            y.current?.stop()
+            b.current?.stop()
         });
         let j = l.useCallback((e, t) => {
-                if (null == b.current) return m;
+                if (null == y.current) return m;
                 let n = t ?? d,
-                    i = b.current.clientWidth,
-                    l = b.current.clientHeight,
+                    i = y.current.clientWidth,
+                    l = y.current.clientHeight,
                     a = i * (n - 1) / 2,
                     r = l * (n - 1) / 2;
                 return {
@@ -85,10 +85,10 @@ let m = {
                 if (null == i || r === d) return;
                 p(!0);
                 let c = r / d;
-                v(e => j({
+                N(e => j({
                     x: (e.x - i.x) * c + i.x,
                     y: (e.y - i.y) * c + i.y
-                }, r)), u(r), g(r, l, t), null == y.current && (y.current = new a.Ep), y.current.start(2e3, () => {
+                }, r)), u(r), g(r, l, t), null == b.current && (b.current = new a.Ep), b.current.start(2e3, () => {
                     p(!1)
                 })
             }, [j, o, n, t, d]),
@@ -109,11 +109,11 @@ let m = {
                 videoAspectRatio: I,
                 setVideoAspectRatio: T,
                 doZoom: R,
-                panOffset: N,
-                setPanOffset: v,
-                wrapperRef: b,
+                panOffset: v,
+                setPanOffset: N,
+                wrapperRef: y,
                 clampPanOffset: j
-            }), [j, R, f, C, E, h, o, n, N, I, d]);
+            }), [j, R, f, C, E, h, o, n, v, I, d]);
         return (0, i.jsx)(A.Provider, {
             value: M,
             children: c

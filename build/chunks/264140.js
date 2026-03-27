@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(554146),
     m = n(192308),
     _ = n(397927),
-    p = n(367513),
-    g = n(442433);
+    g = n(367513),
+    p = n(442433);
 n(183994);
 var f = n(483270),
     x = n(738876),
@@ -71,8 +71,8 @@ var f = n(483270),
     eA = n(376943),
     em = n(857071),
     e_ = n(394953),
-    ep = n(187582),
-    eg = n(164203),
+    eg = n(187582),
+    ep = n(164203),
     ef = n(976860),
     ex = n(378570),
     eC = n(23179),
@@ -194,7 +194,7 @@ class tn extends s.PureComponent {
         let {
             guild: s
         } = this.props;
-        o()(null != t, "Missing channel in Channel.openChannelContextMenu"), o()(null != s, "Missing guild in Channel.openChannelContextMenu"), (0, g.L3)(e, async () => {
+        o()(null != t, "Missing channel in Channel.openChannelContextMenu"), o()(null != s, "Missing guild in Channel.openChannelContextMenu"), (0, p.L3)(e, async () => {
             let {
                 default: e
             } = await n.e("17425").then(n.bind(n, 340968));
@@ -206,7 +206,7 @@ class tn extends s.PureComponent {
         })
     }
     openThreadContextMenu(e, t) {
-        o()(null != t, "Missing channel in Channel.openChannelContextMenu"), (0, g.L3)(e, async () => {
+        o()(null != t, "Missing channel in Channel.openChannelContextMenu"), (0, p.L3)(e, async () => {
             let {
                 default: e
             } = await n.e("33").then(n.bind(n, 44536));
@@ -219,7 +219,7 @@ class tn extends s.PureComponent {
     openDMContextMenu(e, t) {
         o()(null != t, "Missing channel in Channel.openDMContextMenu");
         let s = eY.default.getUser(t.getRecipientId());
-        o()(null != s, "Missing user in Channel.openDMContextMenu"), (0, g.L3)(e, async () => {
+        o()(null != s, "Missing user in Channel.openDMContextMenu"), (0, p.L3)(e, async () => {
             let {
                 default: e
             } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("34408")]).then(n.bind(n, 385913));
@@ -432,8 +432,8 @@ class tn extends s.PureComponent {
         o()(null != e, "Missing channel in Channel.renderHeaderBar"), o()(null != t, "Should not be null if channel is not null.");
         let A = e.isDM() && !e.isSystemDM() ? this.openUserProfile : h ? () => (0, ex.iN)(e.id) : void 0,
             m = n?.guild_id != null && n?.id != null ? this.handleTitleParentClick : void 0,
-            p = c || d,
-            g = r || p;
+            g = c || d,
+            p = r || g;
         return (0, i.jsxs)("div", {
             className: te.SC,
             children: [(0, i.jsx)(_.NPJ, {
@@ -448,7 +448,7 @@ class tn extends s.PureComponent {
                     className: a()(te.DD, r, {
                         [te.zh]: e.type === e9.rbe.GROUP_DM
                     }),
-                    transparent: g,
+                    transparent: p,
                     hidden: d,
                     "aria-label": e4.intl.string(e4.t.BIYAqa),
                     children: [h && (0, i.jsx)(ea.i$, {
@@ -476,7 +476,7 @@ class tn extends s.PureComponent {
                         })
                     }) : (0, ea.EP)(e, s)]
                 }, `header-${e.id}`)
-            }), (0, i.jsx)(eg.A, {
+            }), (0, i.jsx)(ep.A, {
                 channelId: e.id
             })]
         })
@@ -587,7 +587,7 @@ class tn extends s.PureComponent {
         }, `private-channel-profile-${e.id}`);
         else if (l === e9.YvQ.MEMBERS) switch (e.type) {
             case e9.rbe.GROUP_DM:
-                return (0, i.jsx)(ep.A, {
+                return (0, i.jsx)(eg.A, {
                     channel: e
                 }, `private-channel-recipients-${e.id}`);
             case e9.rbe.GUILD_DIRECTORY:
@@ -746,11 +746,11 @@ class tn extends s.PureComponent {
         });
         let m = r === e9.YvQ.SIDEBAR_CHAT,
             _ = null != c && !m,
-            p = !e.isForumLikeChannel() && !o,
-            g = t?.name;
+            g = !e.isForumLikeChannel() && !o,
+            p = t?.name;
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(w.HI, {
-                location: g,
+                location: p,
                 subsection: n ?? void 0
             }), (0, i.jsxs)("div", {
                 "data-has-border": e.type !== e9.rbe.GUILD_VOICE,
@@ -758,7 +758,7 @@ class tn extends s.PureComponent {
                     [te.js]: m || _,
                     [te.jl]: m && h
                 }),
-                children: [p ? (0, i.jsx)(x.A, {
+                children: [g ? (0, i.jsx)(x.A, {
                     style: {
                         right: m ? u : void 0
                     },
@@ -779,7 +779,7 @@ let ti = (0, C.A)(tn),
     ts = s.memo(function(e) {
         let {
             providedChannel: t
-        } = e, [n, l] = s.useState(null), a = (0, h.bG)([eW.A], () => eW.A.getChannelId()), r = (0, h.bG)([eW.A], () => eW.A.getVoiceChannelId()), o = (0, h.bG)([ek.A], () => t ?? ek.A.getChannel(a), [a, t]), c = (0, B.DZ)(), _ = (0, B.e4)(o, "ConnectedChannel"), g = (0, h.bG)([ek.A], () => ek.A.getChannel(r), [r]), f = _?.parent_id, x = (0, h.bG)([ek.A], () => ek.A.getChannel(f), [f]), C = (0, h.bG)([eH.A], () => eH.A.getGuild(_?.guild_id), [_]), {
+        } = e, [n, l] = s.useState(null), a = (0, h.bG)([eW.A], () => eW.A.getChannelId()), r = (0, h.bG)([eW.A], () => eW.A.getVoiceChannelId()), o = (0, h.bG)([ek.A], () => t ?? ek.A.getChannel(a), [a, t]), c = (0, B.DZ)(), _ = (0, B.e4)(o, "ConnectedChannel"), p = (0, h.bG)([ek.A], () => ek.A.getChannel(r), [r]), f = _?.parent_id, x = (0, h.bG)([ek.A], () => ek.A.getChannel(f), [f]), C = (0, h.bG)([eH.A], () => eH.A.getGuild(_?.guild_id), [_]), {
             needSubscriptionToAccess: b
         } = (0, Q.A)(_?.id ?? void 0), y = (0, h.bG)([R.A], () => {
             let e = null != a ? R.A.getParticipants(a) : [],
@@ -787,7 +787,7 @@ let ti = (0, C.A)(tn),
             return e.length - t.length > 0
         }, [a]), O = (0, K.A)(), L = (0, h.bG)([eW.A], () => (O?.channelId ?? eW.A.getVoiceChannelId()) === _?.id), M = (0, h.bG)([N.Ay], () => null != _ ? N.Ay.getSelfEmbeddedActivityForChannel(_.id) : null, [_]), D = (0, h.bG)([eK.A], () => eK.A.isConnected()), G = (0, I.A)(D), U = D && !1 === G;
         s.useEffect(() => {
-            L && U && null != M && null != _ && p.A.selectParticipant(_.id, (0, j.Qt)({
+            L && U && null != M && null != _ && g.A.selectParticipant(_.id, (0, j.Qt)({
                 applicationId: M.applicationId,
                 instanceId: M.compositeInstanceId
             }))
@@ -834,18 +834,18 @@ let ti = (0, C.A)(tn),
                 null != t && l(t)
             }
         }, []);
-        let ep = {
+        let eg = {
                 channel: _,
                 inCurrentVoiceChannel: ed
             },
-            eg = s.useRef(ep);
+            ep = s.useRef(eg);
         s.useEffect(() => {
-            eg.current = ep
+            ep.current = eg
         }), s.useEffect(() => {
             let {
                 channel: e,
                 inCurrentVoiceChannel: t
-            } = eg.current;
+            } = ep.current;
             null != n && null != e && eu && e.id === n && !t && ((0, eN.av)(e), l(null))
         }, [n, eu]);
         let ex = (0, E.cI)(_),
@@ -867,7 +867,7 @@ let ti = (0, C.A)(tn),
             channelName: ea,
             formattedChannelName: er,
             parentChannel: x,
-            voiceChannel: g,
+            voiceChannel: p,
             layout: $,
             needSubscriptionToAccess: b,
             isLurking: X,

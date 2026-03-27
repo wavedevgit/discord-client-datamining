@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(178213),
     m = n(332772),
     _ = n(872472),
-    p = n(721932),
-    g = n(35092),
+    g = n(721932),
+    p = n(35092),
     f = n(183555),
     x = n(535089),
     C = n(946356),
@@ -65,7 +65,7 @@ function v(e) {
                 i = !1;
             for (let s = 0; s < t.length && e.length < D; s++) {
                 let l = t[s];
-                e.push(l), (0, p.$)(l) && (0, d.bF)(l.sku) ? n = !0 : (0, _.L)(l) && (i = !0)
+                e.push(l), (0, g.$)(l) && (0, d.bF)(l.sku) ? n = !0 : (0, _.L)(l) && (i = !0)
             }
             return {
                 visibleItems: e,
@@ -92,7 +92,7 @@ function v(e) {
                     wishlistId: y,
                     showTypeTooltip: w,
                     cardSize: j
-                }))) : (0, p.$)(l) && (s.add(l.skuProductLine), e.push((0, h.Z)(l, {
+                }))) : (0, g.$)(l) && (s.add(l.skuProductLine), e.push((0, h.Z)(l, {
                     index: i,
                     moreCount: a ? t.length - D + 1 : void 0,
                     profileOwner: n,
@@ -114,7 +114,7 @@ function v(e) {
             onAction: U,
             productLines: B
         }),
-        F = (0, s.useMemo)(() => M ? P.map((e, s) => null == e.sku ? null : (0, i.jsx)(g.A, {
+        F = (0, s.useMemo)(() => M ? P.map((e, s) => null == e.sku ? null : (0, i.jsx)(p.A, {
             sku: e.sku,
             index: s,
             wishlistOwner: n,
@@ -132,7 +132,7 @@ function v(e) {
         analyticsLocations: O,
         wishlistId: y,
         onViewWishlist: v
-    }) : (0, p.$)(V) && (z = (0, h.A)(V, {
+    }) : (0, g.$)(V) && (z = (0, h.A)(V, {
         profileOwner: n,
         analyticsLocations: O,
         wishlistId: y,

@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(47167),
     m = n(21119),
     _ = n(907459),
-    p = n(616356),
-    g = n(994500),
+    g = n(616356),
+    p = n(994500),
     f = n(543465),
     x = n(287809),
     C = n(607567),
@@ -67,8 +67,8 @@ function T(e) {
             activityUsers: M,
             streamUsers: D,
             voiceUsers: G
-        } = (t = O.id, n = (0, r.yK)([g.A], () => g.A.getBlockedOrIgnoredIDs()), l = (0, r.bG)([m.A], () => m.A.getUserAffinitiesMap(), []), o = (0, r.yK)([d.Ay, x.default], () => d.Ay.getEmbeddedActivitiesForChannel(t).flatMap(e => Array.from(e.userIds)).map(e => x.default.getUser(e)), [t]), u = s.useMemo(() => (0, h.aw)(o, n), [o, n]), A = s.useMemo(() => (0, _.L)(u, l, "DirectMessageTooltip - activityUsers"), [u, l]), E = (0, r.yK)([p.A, x.default], () => {
-            let e = p.A.getAllApplicationStreamsForChannel(t).map(e => e.ownerId).map(e => x.default.getUser(e));
+        } = (t = O.id, n = (0, r.yK)([p.A], () => p.A.getBlockedOrIgnoredIDs()), l = (0, r.bG)([m.A], () => m.A.getUserAffinitiesMap(), []), o = (0, r.yK)([d.Ay, x.default], () => d.Ay.getEmbeddedActivitiesForChannel(t).flatMap(e => Array.from(e.userIds)).map(e => x.default.getUser(e)), [t]), u = s.useMemo(() => (0, h.aw)(o, n), [o, n]), A = s.useMemo(() => (0, _.L)(u, l, "DirectMessageTooltip - activityUsers"), [u, l]), E = (0, r.yK)([g.A, x.default], () => {
+            let e = g.A.getAllApplicationStreamsForChannel(t).map(e => e.ownerId).map(e => x.default.getUser(e));
             return (0, h.aw)(e, n)
         }, [t, n]), I = s.useMemo(() => (0, h.aw)(E, n), [E, n]), T = s.useMemo(() => (0, _.L)(I, l, "DirectMessageTooltip - activityUsers"), [I, l]), v = s.useMemo(() => T.filter(e => !A.some(t => t.id === e.id)), [T, A]), y = (0, r.yK)([C.Ay], () => {
             let e = C.Ay.getVoiceStatesForChannel(O).map(e => {

@@ -28,10 +28,10 @@ let S = l.memo(function(e) {
         channel: S,
         compact: I = !1,
         referencedUsernameProfile: T,
-        referencedAvatarProfile: N,
-        setPopout: v,
-        isReplySpineClickable: b,
-        showReplySpine: y
+        referencedAvatarProfile: v,
+        setPopout: N,
+        isReplySpineClickable: y,
+        showReplySpine: b
     } = e, j = n.state === h.a.LOADED ? n.message : void 0, R = (0, p.X4)(j), M = (0, c.S)((t.editedTimestamp ?? t.timestamp).valueOf()), D = l.useMemo(() => {
         if (null == j) return null;
         let e = (0, r.A)(j);
@@ -81,12 +81,12 @@ let S = l.memo(function(e) {
     } = (0, s.cf)([m.A], () => ({
         isReplyAuthorBlocked: null != j && m.A.isBlockedForMessage(j),
         isReplyAuthorIgnored: null != j && m.A.isIgnoredForMessage(j)
-    }), [j]), P = (0, E.r4)(j?.author.id, S.id), w = (0, E.Ck)(t, j), k = (0, E.H9)(j, S, T, v), U = (0, E.Ge)(N, v), G = l.useCallback(() => {
-        v({
+    }), [j]), P = (0, E.r4)(j?.author.id, S.id), w = (0, E.Ck)(t, j), k = (0, E.H9)(j, S, T, N), U = (0, E.Ge)(v, N), G = l.useCallback(() => {
+        N({
             referencedUsernameProfile: !1,
             referencedAvatarProfile: !1
         })
-    }, [v]), F = (0, p.X4)(t);
+    }, [N]), F = (0, p.X4)(t);
     return (0, i.jsx)(f.A, {
         repliedAuthor: R,
         baseMessage: t,
@@ -97,7 +97,7 @@ let S = l.memo(function(e) {
         compact: I,
         isReplyAuthorBlocked: O,
         isReplyAuthorIgnored: L,
-        showAvatarPopout: N,
+        showAvatarPopout: v,
         showUsernamePopout: T,
         renderPopout: _.A,
         onClickAvatar: U,
@@ -105,8 +105,8 @@ let S = l.memo(function(e) {
         onClickReply: w,
         onContextMenu: P,
         onPopoutRequestClose: G,
-        isReplySpineClickable: b,
-        showReplySpine: y
+        isReplySpineClickable: y,
+        showReplySpine: b
     })
 });
 

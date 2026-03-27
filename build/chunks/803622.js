@@ -24,10 +24,10 @@ var i = n(627968),
     S = n(761640),
     I = n(994500),
     T = n(287809),
-    N = n(486020),
-    v = n(302975),
-    b = n(652215),
-    y = n(518477),
+    v = n(486020),
+    N = n(302975),
+    y = n(652215),
+    b = n(518477),
     j = n(985018),
     R = n(342659);
 let M = e => {
@@ -37,7 +37,7 @@ let M = e => {
         } = e, s = (0, o.bG)([x.A], () => x.A.getMutualGuilds(t), [t]), a = l.useMemo(() => null != s ? s.slice(0, 3).map((e, t) => {
             let {
                 guild: n
-            } = e, l = null != n ? N.Ay.getGuildIconURL({
+            } = e, l = null != n ? v.Ay.getGuildIconURL({
                 id: n.id,
                 icon: n.icon,
                 size: 24
@@ -70,7 +70,7 @@ let M = e => {
                     (0, C.openUserProfileModal)({
                         userId: t,
                         channelId: n,
-                        tabSection: y.RP.MUTUAL_GUILDS,
+                        tabSection: b.RP.MUTUAL_GUILDS,
                         sourceAnalyticsLocations: [u.A.DM_CHANNEL]
                     })
                 },
@@ -94,7 +94,7 @@ let M = e => {
             variant: "secondary",
             onClick: () => {
                 d.A.blockUser(n, {
-                    location: b.liQ.DM_CHANNEL
+                    location: y.liQ.DM_CHANNEL
                 })
             },
             text: j.intl.string(j.t.l4Emac)
@@ -104,10 +104,10 @@ let M = e => {
             userId: n,
             applicationId: u,
             isGameRelationship: !1,
-            location: b.liQ.DM_CHANNEL
+            location: y.liQ.DM_CHANNEL
         });
         switch (t) {
-            case b.eA$.NONE:
+            case y.eA$.NONE:
                 return (0, i.jsxs)(i.Fragment, {
                     children: [!s && !l && (0, i.jsx)(c.Button, {
                         size: "sm",
@@ -116,38 +116,38 @@ let M = e => {
                             d.A.addRelationship({
                                 userId: n,
                                 context: {
-                                    location: b.liQ.DM_CHANNEL
+                                    location: y.liQ.DM_CHANNEL
                                 }
                             })
                         },
                         text: r
                     }), a]
                 });
-            case b.eA$.FRIEND:
+            case y.eA$.FRIEND:
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(c.Button, {
                         size: "sm",
                         variant: "secondary",
                         onClick: () => {
                             d.A.removeFriend(n, {
-                                location: b.liQ.DM_CHANNEL
+                                location: y.liQ.DM_CHANNEL
                             })
                         },
                         text: j.intl.string(j.t.cvSt1J)
                     }), a]
                 });
-            case b.eA$.BLOCKED:
+            case y.eA$.BLOCKED:
                 return (0, i.jsx)(c.Button, {
                     size: "sm",
                     variant: "secondary",
                     onClick: () => {
                         d.A.unblockUser(n, {
-                            location: b.liQ.DM_CHANNEL
+                            location: y.liQ.DM_CHANNEL
                         })
                     },
                     text: j.intl.string(j.t.XyHpKH)
                 });
-            case b.eA$.PENDING_INCOMING:
+            case y.eA$.PENDING_INCOMING:
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(c.Button, {
                         size: "sm",
@@ -159,13 +159,13 @@ let M = e => {
                         variant: "secondary",
                         onClick: () => {
                             d.A.cancelFriendRequest(n, {
-                                location: b.liQ.DM_CHANNEL
+                                location: y.liQ.DM_CHANNEL
                             })
                         },
                         text: j.intl.string(j.t.rQSndv)
                     }), a]
                 });
-            case b.eA$.PENDING_OUTGOING:
+            case y.eA$.PENDING_OUTGOING:
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(c.Button, {
                         size: "sm",
@@ -240,12 +240,12 @@ let M = e => {
                 relationshipType: u,
                 userId: t,
                 showingBanner: l
-            }), !l && (0, i.jsx)(v.A, {
+            }), !l && (0, i.jsx)(N.A, {
                 otherUserId: t,
                 channel: n,
                 navigateAwayOnReportSuccess: m
             })]
-        }), E = u !== b.eA$.PENDING_INCOMING || d || h ? null : (0, i.jsx)(c.Text, {
+        }), E = u !== y.eA$.PENDING_INCOMING || d || h ? null : (0, i.jsx)(c.Text, {
             color: "text-default",
             variant: "text-sm/normal",
             children: j.intl.string(j.t.c2v5nO)

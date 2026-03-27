@@ -1,66 +1,66 @@
 /** chunk id: 855344 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => T
+    A: () => I
 });
 var l = n(627968);
 n(64700);
 var i = n(311907),
     s = n(3026),
-    r = n(397927),
-    a = n(964486),
+    a = n(397927),
+    r = n(964486),
     o = n(58149),
     u = n(376304),
     c = n(509536),
     d = n(98318),
     m = n(657048),
-    h = n(976860),
-    g = n(734057),
+    g = n(976860),
+    h = n(734057),
     A = n(317525),
     f = n(309010),
     p = n(954571),
     x = n(652176),
-    C = n(652215),
-    N = n(746080),
-    v = n(985018),
+    v = n(652215),
+    C = n(746080),
+    N = n(985018),
     E = n(183819);
-let T = e => {
+let I = e => {
     let {
         roleIcon: t,
         guild: n
     } = e, {
-        name: T
+        name: I
     } = t;
-    (0, a.Ay)(() => {
-        p.default.track(C.HAw.OPEN_POPOUT, {
+    (0, r.Ay)(() => {
+        p.default.track(v.HAw.OPEN_POPOUT, {
             type: "Role Icon Popout",
             guild_id: n.id,
-            ...(0, o.dI)(g.A.getChannel(f.A.getChannelId(n.id)))
+            ...(0, o.dI)(h.A.getChannel(f.A.getChannelId(n.id)))
         })
     });
-    let b = (0, i.bG)([A.A], () => null != t.roleId ? A.A.getRole(n.id, t.roleId) : void 0),
-        _ = (0, d.U)(b),
-        j = _ ? v.intl.formatToPlainString(v.t.t0928V, {
-            name: T
-        }) : v.intl.formatToPlainString(v.t.UDDkGy, {
-            name: T
+    let _ = (0, i.bG)([A.A], () => null != t.roleId ? A.A.getRole(n.id, t.roleId) : void 0),
+        b = (0, d.U)(_),
+        S = b ? N.intl.formatToPlainString(N.t.t0928V, {
+            name: I
+        }) : N.intl.formatToPlainString(N.t.UDDkGy, {
+            name: I
         }),
-        I = {
+        j = {
             ...t,
             src: null == t.src ? t.src : (0, u.ux)(t.src, 40),
             size: 40
         },
-        S = _ ? () => {
-            (0, h.pX)(C.BVt.CHANNEL(n.id, N.VV.ROLE_SUBSCRIPTIONS))
+        T = b ? () => {
+            (0, g.pX)(v.BVt.CHANNEL(n.id, C.VV.ROLE_SUBSCRIPTIONS))
         } : () => {
             (0, c.K4)({
                 guildId: n.id,
                 location: {
-                    section: C.JJy.ROLE_ICON_POPOUT
+                    section: v.JJy.ROLE_ICON_POPOUT
                 }
             })
         };
-    return (0, l.jsx)(r.lGe, {
+    return (0, l.jsx)(a.lGe, {
         children: (0, l.jsx)(x.Uq, {
             children: (0, l.jsxs)("div", {
                 className: E.jC,
@@ -69,30 +69,30 @@ let T = e => {
                     children: [(0, l.jsx)("div", {
                         className: E.Xq,
                         children: (0, l.jsx)(m.A, {
-                            ...I,
+                            ...j,
                             enableTooltip: !1,
                             className: E.__invalid_roleIcon,
                             enableHeight: !1
                         })
                     }), (0, l.jsxs)("div", {
                         className: E.bM,
-                        children: [(0, l.jsx)(r.Heading, {
+                        children: [(0, l.jsx)(a.Heading, {
                             variant: "heading-md/semibold",
                             className: E.S3,
                             children: (0, l.jsx)(s.A, {
-                                children: T
+                                children: I
                             })
-                        }), (0, l.jsx)(r.Text, {
+                        }), (0, l.jsx)(a.Text, {
                             variant: "text-sm/normal",
-                            children: j
+                            children: S
                         })]
                     })]
-                }), (0, l.jsx)(r.Button, {
+                }), (0, l.jsx)(a.Button, {
                     size: "sm",
                     variant: "secondary",
-                    text: v.intl.string(v.t["H930+H"]),
-                    onClick: S,
-                    icon: r._Jp,
+                    text: N.intl.string(N.t["H930+H"]),
+                    onClick: T,
+                    icon: a._Jp,
                     fullWidth: !0,
                     autoFocus: !0
                 })]

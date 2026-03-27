@@ -24,8 +24,8 @@ function m(e) {
         onClose: p,
         sidebarFooter: y,
         searchBar: v,
-        onViewChange: g,
-        emptyState: b,
+        onViewChange: b,
+        emptyState: g,
         searchQuery: x,
         clearSearchQuery: E
     } = e, A = d.A.useField("currentPanelKey"), {
@@ -41,12 +41,12 @@ function m(e) {
     i.useEffect(() => {
         h.A.init({
             accessibleDirectory: C,
-            onViewChange: g,
+            onViewChange: b,
             navigateWithValidation: (e, t) => {
                 null == N.entry(e) && E?.(), T(t)
             }
         })
-    }, [C, T, g, E, N]);
+    }, [C, T, b, E, N]);
     let [R, k] = i.useState(!0);
     (0, a.Ay)(() => (h.A.navigate(j, {
         animatePanelScroll: !1,
@@ -69,7 +69,7 @@ function m(e) {
                 root: S,
                 onClose: L,
                 footer: y,
-                emptyState: b,
+                emptyState: g,
                 searchBar: v
             }), (0, r.jsx)(l.A, {
                 onClose: L,

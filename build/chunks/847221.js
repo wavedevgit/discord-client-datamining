@@ -22,16 +22,16 @@ function A(e) {
     s.useEffect(() => () => {
         clearTimeout(_.current)
     }, []);
-    let p = (0, l.bG)([r.A], () => r.A.getLastLeftUserId(t.id), [t.id]),
-        g = (0, l.bG)([o.default], () => null != p ? o.default.getUser(p) : null, [p]),
-        f = c.Ay.useName(t.guild_id, t.id, g),
+    let g = (0, l.bG)([r.A], () => r.A.getLastLeftUserId(t.id), [t.id]),
+        p = (0, l.bG)([o.default], () => null != g ? o.default.getUser(g) : null, [g]),
+        f = c.Ay.useName(t.guild_id, t.id, p),
         x = () => {
             clearTimeout(_.current), A(!0)
         },
         C = () => {
             _.current = setTimeout(() => A(!1), 100)
         };
-    return null == p || null == g ? null : (0, i.jsx)(a.YNO, {
+    return null == g || null == p ? null : (0, i.jsx)(a.YNO, {
         targetElementRef: m,
         position: "right",
         shouldShow: n,
@@ -60,7 +60,7 @@ function A(e) {
                 children: [(0, i.jsxs)("div", {
                     className: h.R3,
                     children: [(0, i.jsx)(a.euF, {
-                        src: g.getAvatarURL(t.guild_id, 24),
+                        src: p.getAvatarURL(t.guild_id, 24),
                         size: a._3J.SIZE_24,
                         "aria-hidden": !0,
                         status: a.clD.INVISIBLE,

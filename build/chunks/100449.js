@@ -1,7 +1,7 @@
 /** chunk id: 100449 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(627968),
     s = n(64700),
@@ -16,7 +16,7 @@ var i = n(627968),
     A = n(806931),
     m = n(731854),
     _ = n(643802);
-let p = s.memo(function(e) {
+let g = s.memo(function(e) {
     let {
         channel: t,
         participant: n
@@ -25,16 +25,16 @@ let p = s.memo(function(e) {
         context: m.x.DEFAULT
     });
     if (null == l) return null;
-    let p = o._3J.SIZE_32,
-        g = o.vCh[p].size,
-        f = l.getAvatarURL(t.guild_id, g);
+    let g = o._3J.SIZE_32,
+        p = o.vCh[g].size,
+        f = l.getAvatarURL(t.guild_id, p);
     return (0, i.jsxs)("div", {
         className: a()(_.vB, {
             [_.zY]: A
         }),
         children: [(0, i.jsx)(o.euF, {
             className: _.my,
-            size: p,
+            size: g,
             src: f,
             "aria-hidden": !0
         }), (0, i.jsx)("div", {
@@ -48,7 +48,7 @@ let p = s.memo(function(e) {
     })
 });
 
-function g(e) {
+function p(e) {
     let {
         channel: t,
         participants: n
@@ -59,7 +59,7 @@ function g(e) {
     }, [n, l]);
     return 0 === a.length ? null : (0, i.jsx)("div", {
         className: _.kL,
-        children: a.map(e => (0, A.Xw)(e) ? (0, i.jsx)(p, {
+        children: a.map(e => (0, A.Xw)(e) ? (0, i.jsx)(g, {
             channel: t,
             participant: e
         }, e.user.id) : null)

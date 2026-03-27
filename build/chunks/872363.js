@@ -24,13 +24,13 @@ var i = n(627968),
     S = n(652215),
     I = n(788868),
     T = n(985018),
-    N = n(765985);
-let v = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
-    b = {
+    v = n(765985);
+let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
+    y = {
         opacity: 0,
         transform: "translate3d(100%, 0, 0)"
     },
-    y = {
+    b = {
         opacity: 1,
         transform: "translate3d(0%, 0, 0)"
     },
@@ -41,10 +41,10 @@ let v = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
         opacity: 1
     },
     M = {
-        borderRadius: `${v}px ${v}px ${v}px ${v}px`
+        borderRadius: `${N}px ${N}px ${N}px ${N}px`
     },
     D = {
-        borderRadius: `0px ${v}px ${v}px 0px`
+        borderRadius: `0px ${N}px ${N}px 0px`
     },
     O = {
         mass: 1,
@@ -57,9 +57,9 @@ let v = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
                 participant: r,
                 isUpsellEnabled: o,
                 shape: h,
-                size: v,
-                didTrackUpsellViewed: b,
-                setDidTrackUpsellViewed: y,
+                size: N,
+                didTrackUpsellViewed: y,
+                setDidTrackUpsellViewed: b,
                 className: j,
                 premiumIndicator: R,
                 quality: M
@@ -96,27 +96,27 @@ let v = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
                 })
             }, [k, L, P]);
         if (l.useEffect(() => {
-                !b && L && (_.default.track(S.HAw.PREMIUM_UPSELL_VIEWED, {
+                !y && L && (_.default.track(S.HAw.PREMIUM_UPSELL_VIEWED, {
                     type: I.e.STREAM_QUALITY_INDICATOR,
                     has_premium_stream_fps: t,
                     has_premium_stream_resolution: s,
                     location_stack: D
-                }), y(!0))
-            }, [t, s, L, b, y, D]), null == M) return null;
+                }), b(!0))
+            }, [t, s, L, y, b, D]), null == M) return null;
         let G = (0, i.jsx)(u.m, {
             text: O ? T.intl.string(T.t.q8TiVt) : L ? T.intl.string(T.t.IHgpEn) : T.intl.string(T.t.vLb0VW),
             position: "bottom",
             children: (0, i.jsxs)(m.DUT, {
                 onClick: U,
-                className: a()(N.t5, v, p.u1[h], O ? N.Y5 : N.Lc, {
-                    [N.vk]: k && L
+                className: a()(v.t5, N, p.u1[h], O ? v.Y5 : v.Lc, {
+                    [v.vk]: k && L
                 }),
                 children: [L ? (0, i.jsx)(m.tvc, {
                     size: "md",
                     color: "currentColor",
-                    className: N.fY
+                    className: v.fY
                 }) : null, (0, i.jsx)("span", {
-                    className: N.UD,
+                    className: v.UD,
                     children: (0, x.ME)(M.maxResolution)
                 }), (0, i.jsx)("span", {
                     children: (0, x.Bs)(M.maxFrameRate)
@@ -125,8 +125,8 @@ let v = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
         });
         return (0, i.jsx)(m.LpS, {
             text: G,
-            className: a()(j, N.AA, {
-                [N.Dc]: L && R
+            className: a()(j, v.AA, {
+                [v.Dc]: L && R
             }),
             color: d.A.unsafe_rawColors.PRIMARY_500.css,
             shape: p.u1[h]
@@ -144,10 +144,10 @@ let v = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
             reducedMotion: g
         } = l.useContext(m.CZY), f = n && null != A, _ = (0, m.pnh)(f, {
             enter: {
-                from: g.enabled ? j : b,
-                to: g.enabled ? R : y
+                from: g.enabled ? j : y,
+                to: g.enabled ? R : b
             },
-            leave: g.enabled ? j : b,
+            leave: g.enabled ? j : y,
             config: O
         }, "animate-always"), E = (0, m.zhh)({
             to: f ? D : M,
@@ -159,12 +159,12 @@ let v = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
                 popoutProps: l
             } = e;
             return (0, i.jsxs)("div", {
-                className: a()(N.dr, n),
+                className: a()(v.dr, n),
                 ...l,
                 children: [_((e, n) => n ? (0, i.jsx)(r.animated.div, {
                     style: e,
                     children: (0, i.jsx)(L, {
-                        className: N.LZ,
+                        className: v.LZ,
                         participant: t,
                         size: o,
                         shape: m.EGs.ROUND_LEFT,
@@ -176,7 +176,7 @@ let v = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
                     })
                 }) : null), (0, i.jsx)(r.animated.div, {
                     style: E,
-                    className: N.Ok,
+                    className: v.Ok,
                     children: (0, i.jsx)(p.Ay, {
                         look: p.gv.RED,
                         size: o,

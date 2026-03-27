@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(278941),
     m = n(665909),
     _ = n(186111),
-    p = n(58736),
-    g = n(327337),
+    g = n(58736),
+    p = n(327337),
     f = n(985018);
 let x = s.memo(function(e) {
     let {
@@ -69,7 +69,7 @@ let x = s.memo(function(e) {
                 })
             }
         }, {
-            modalKey: g.V
+            modalKey: p.V
         }), (0, m._$)({
             channelId: t.id,
             senderId: t.getRecipientId(),
@@ -83,7 +83,7 @@ let x = s.memo(function(e) {
         forceOpen: S,
         text: T,
         position: "bottom",
-        children: (0, i.jsx)(p.Ay.Icon, {
+        children: (0, i.jsx)(g.Ay.Icon, {
             icon: o.lmn,
             onClick: y,
             tooltip: f.intl.string(f.t.rpc2qv),

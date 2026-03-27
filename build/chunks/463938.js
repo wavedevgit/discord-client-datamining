@@ -16,9 +16,9 @@ var i = n(627968),
     A = n(652215),
     m = n(746080),
     _ = n(985018),
-    p = n(139715);
+    g = n(139715);
 
-function g(e, t) {
+function p(e, t) {
     return (0, i.jsx)(o.Text, {
         variant: "text-xs/bold",
         color: "text-default",
@@ -44,42 +44,42 @@ let f = s.memo(function(e) {
                     right: 4
                 }
             },
-            className: p.G9,
+            className: g.G9,
             onClick: function() {
                 (0, u.pX)(A.BVt.CHANNEL(t.id, m.VV.GUILD_HOME))
             },
             children: [(0, i.jsxs)("div", {
-                className: p.A1,
+                className: g.A1,
                 children: [(0, i.jsx)(o.Heading, {
                     variant: "heading-sm/bold",
                     children: _.intl.string(_.t.SnrR3x)
                 }), (0, i.jsxs)("div", {
-                    className: p.Ib,
+                    className: g.Ib,
                     children: [(0, i.jsx)(o.Text, {
                         variant: "text-xs/medium",
                         color: "text-muted",
-                        className: p.Cv,
+                        className: g.Cv,
                         children: _.intl.format(_.t.eqZ1lW, {
-                            numberHook: g,
+                            numberHook: p,
                             total: C.toString(),
                             completed: x.toString()
                         })
                     }), (0, i.jsx)(h.A, {
-                        className: p.UE,
+                        className: g.UE,
                         width: 16,
                         height: 16,
                         direction: h.A.Directions.RIGHT
                     })]
                 })]
             }), (0, i.jsx)(o.iCB, {
-                className: p.hr,
+                className: g.hr,
                 foregroundGradientColor: [r.A.unsafe_rawColors.GREEN_300.css, r.A.unsafe_rawColors.GREEN_230.css],
                 percent: x / C * 100 + 3,
                 animate: !0
             })]
         }), (0, i.jsx)("div", {
             role: "separator",
-            className: p.yF
+            className: g.yF
         })]
     })
 })

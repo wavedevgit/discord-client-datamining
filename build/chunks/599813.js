@@ -29,8 +29,8 @@ function S(e) {
         voiceListRef: l,
         showSectionHeaders: s = !1,
         query: a
-    } = e, r = T(), S = (0, o.bG)([h.default], () => (0, m.ki)(h.default.getCurrentUser())), v = N(a, S), b = Math.ceil(v.length / t), {
-        isNativeModuleLoaded: y,
+    } = e, r = T(), S = (0, o.bG)([h.default], () => (0, m.ki)(h.default.getCurrentUser())), N = v(a, S), y = Math.ceil(N.length / t), {
+        isNativeModuleLoaded: b,
         isNativeModuleLoading: j,
         catalogLastFetchTime: R
     } = (0, o.cf)([g.A], () => ({
@@ -38,7 +38,7 @@ function S(e) {
         isNativeModuleLoading: g.A.isNativeModuleLoading(),
         catalogLastFetchTime: g.A.getCatalogLastFetchTime()
     }));
-    return a && 0 === v.length ? (0, i.jsxs)("div", {
+    return a && 0 === N.length ? (0, i.jsxs)("div", {
         className: E.nm,
         children: [(0, i.jsx)(d.$p$, {
             width: 40,
@@ -65,7 +65,7 @@ function S(e) {
             variant: "text-sm/normal",
             color: "text-muted",
             children: _.intl.format(_.t["5afO9U"], {
-                onClick: y ? p.st : p.md
+                onClick: b ? p.st : p.md
             })
         })]
     }) : j || null == R ? (0, i.jsx)("div", {
@@ -79,14 +79,14 @@ function S(e) {
         className: E.kL,
         renderRow: e => {
             let n = e * t,
-                l = v.slice(n, n + t);
+                l = N.slice(n, n + t);
             return (0, i.jsx)(I, {
                 children: l.map((n, l) => (0, i.jsx)(f.I, {
                     voiceFilter: n,
                     hasNitro: S,
                     analyticsContext: {
                         reason: A.O.USER_SELECTION,
-                        gridRows: b,
+                        gridRows: y,
                         gridColumns: t,
                         interactedRow: e,
                         interactedColumn: l
@@ -101,7 +101,7 @@ function S(e) {
             children: _.intl.string(C[e])
         }),
         sectionHeaderHeight: !1 === s ? void 0 : e => x[e],
-        rowCount: b,
+        rowCount: y,
         rowHeight: 130,
         onScroll: n,
         ref: l,
@@ -123,7 +123,7 @@ function I(e) {
     })
 }
 let T = () => (0, o.bG)([g.A], () => !Object.keys(g.A.getVoiceFilterModels() ?? {}).length && (g.A.getCatalogFetchFailed() || g.A.hasNativeModuleFailed())),
-    N = (e, t) => (0, o.yK)([g.A], () => {
+    v = (e, t) => (0, o.yK)([g.A], () => {
         var n;
         let i, l = g.A.getVoiceFilters(),
             s = g.A.getSortedVoiceFilters();

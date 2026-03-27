@@ -1,8 +1,8 @@
 /** chunk id: 487401 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    B: () => eg,
-    T: () => ep
+    B: () => ep,
+    T: () => eg
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -17,8 +17,8 @@ var i = n(627968),
     A = n(793574),
     m = n(688810),
     _ = n(309698),
-    p = n(915089),
-    g = n(5180),
+    g = n(915089),
+    p = n(5180),
     f = n(227004),
     x = n(581007),
     C = n(522435),
@@ -482,12 +482,12 @@ class em extends s.PureComponent {
             }
         }
         if (d.isPlaceholderRow(t, n)) return null;
-        let p = d.getChannelFromSectionRow(t, n);
-        if (null == p) return null;
+        let g = d.getChannelFromSectionRow(t, n);
+        if (null == g) return null;
         let {
-            category: g,
+            category: p,
             channel: x
-        } = p, C = g instanceof w.xu, I = x.record, N = `${t}${x.id}`;
+        } = g, C = p instanceof w.xu, I = x.record, N = `${t}${x.id}`;
         switch (I.type) {
             case eo.rbe.GUILD_ANNOUNCEMENT:
             case eo.rbe.GUILD_TEXT:
@@ -521,7 +521,7 @@ class em extends s.PureComponent {
                     position: x.position,
                     selected: r === x.id,
                     connected: c === x.id,
-                    collapsed: x.isCollapsed || g.isCollapsed,
+                    collapsed: x.isCollapsed || p.isCollapsed,
                     voiceStates: u[x.id] ?? [],
                     speakerVoiceStates: A[x.id] ?? [],
                     disableManageChannels: h,
@@ -534,7 +534,7 @@ class em extends s.PureComponent {
                     position: x.position,
                     selected: r === x.id,
                     connected: c === x.id,
-                    collapsed: x.isCollapsed || g.isCollapsed,
+                    collapsed: x.isCollapsed || p.isCollapsed,
                     voiceStates: u[x.id],
                     subtitle: x.subtitle,
                     disableManageChannels: h,
@@ -666,7 +666,7 @@ class em extends s.PureComponent {
             selectedGuildId: n,
             density: s
         } = this.props, l = {};
-        (0, g.ai)(n) && (l["data-favorites"] = !0);
+        (0, p.ai)(n) && (l["data-favorites"] = !0);
         let {
             ref: a,
             ...r
@@ -719,7 +719,7 @@ class em extends s.PureComponent {
             guildChannelsVersion: t,
             showNewUnreadsBar: n
         } = this.props;
-        return (0, i.jsx)(p.V0, {
+        return (0, i.jsx)(g.V0, {
             children: l => (0, i.jsx)(c.Fmo, {
                 component: (0, i.jsx)(c.AC4, {
                     children: (0, i.jsx)(c.H, {
@@ -758,7 +758,7 @@ let e_ = e => {
         selectedVoiceChannelId: l
     } = e, c = (0, o.bG)([h.A], () => h.A.keyboardModeEnabled), {
         analyticsLocations: d
-    } = (0, m.Ay)(A.A.GUILD_CHANNEL_LIST), _ = (0, o.bG)([D.A], () => D.A.getChannel(n)), p = (0, o.bG)([D.A], () => D.A.getChannel(l)), g = (0, o.bG)([P.A], () => P.A.getGuildId()), f = (0, b.jN)(t), x = s.useRef(null), C = s.useCallback((e, t) => {
+    } = (0, m.Ay)(A.A.GUILD_CHANNEL_LIST), _ = (0, o.bG)([D.A], () => D.A.getChannel(n)), g = (0, o.bG)([D.A], () => D.A.getChannel(l)), p = (0, o.bG)([P.A], () => P.A.getGuildId()), f = (0, b.jN)(t), x = s.useRef(null), C = s.useCallback((e, t) => {
         let n = x.current;
         null != n && (eo.Ut1.test(t) || (0, ec.jq)(t) ? n.scrollToChannel(t, !1, 16, () => {
             requestAnimationFrame(() => document.querySelector(e)?.focus())
@@ -794,9 +794,9 @@ let e_ = e => {
                     listNavigator: N,
                     ref: x,
                     selectedChannel: _,
-                    selectedVoiceChannel: p,
+                    selectedVoiceChannel: g,
                     stageChannelSpeakerVoiceStates: T,
-                    selectedGuildId: g,
+                    selectedGuildId: p,
                     optInEnabled: f
                 })
             })
@@ -804,7 +804,7 @@ let e_ = e => {
     })
 };
 
-function ep(e) {
+function eg(e) {
     let {
         guildChannels: t,
         shouldShowEmptyState: n
@@ -873,7 +873,7 @@ function ep(e) {
     })
 }
 
-function eg(e) {
+function ep(e) {
     let t = (0, H.A)(e.guild),
         n = (0, o.cf)([k.A], () => k.A.getGuild(e.guildId, {
             guildActionRows: t

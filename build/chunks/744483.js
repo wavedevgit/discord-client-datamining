@@ -20,17 +20,17 @@ function m(e) {
     let {
         channel: t,
         showCallOrActivityPanel: n
-    } = e, m = (0, s.bG)([d.Ay], () => d.Ay.getSection(t.id, t?.isDM())), _ = (0, o.Ay)(t.getRecipientId()), p = (0, c.A)(), g = m === h.YvQ.PROFILE && p;
+    } = e, m = (0, s.bG)([d.Ay], () => d.Ay.getSection(t.id, t?.isDM())), _ = (0, o.Ay)(t.getRecipientId()), g = (0, c.A)(), p = m === h.YvQ.PROFILE && g;
     return (0, i.jsx)(u.In, {
-        disabled: !p || n,
-        tooltip: !p || n ? A.intl.string(A.t.YneDgF) : g ? A.intl.string(A.t.niD64e) : A.intl.string(A.t["+FAsHq"]),
+        disabled: !g || n,
+        tooltip: !g || n ? A.intl.string(A.t.YneDgF) : p ? A.intl.string(A.t.niD64e) : A.intl.string(A.t["+FAsHq"]),
         icon: l.nRI,
         onClick: () => {
             (0, r.am)({
                 displayProfile: _,
-                isProfileOpen: !g
+                isProfileOpen: !p
             }), a.A.toggleUserProfileSidebarSection()
         },
-        selected: g && !n
+        selected: p && !n
     })
 }

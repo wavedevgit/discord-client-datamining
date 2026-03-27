@@ -47,7 +47,7 @@ function _(e) {
                 before: E.at(-1)?.pinnedAt
             })
         }, [t.id, E]),
-        N = (0, s.bG)([m.A], () => (0, a.qB)(m.A.theme));
+        v = (0, s.bG)([m.A], () => (0, a.qB)(m.A.theme));
     return (0, i.jsx)(r.lGe, {
         "aria-label": p.intl.string(p.t["mp1N/2"]),
         children: (0, i.jsx)(h.Ay, {
@@ -60,7 +60,7 @@ function _(e) {
             renderEmptyState: function() {
                 if (E.length > 0) return;
                 let e = p.intl.string(t.isPrivate() ? p.t.rhqcbJ : p.t.fmyaWJ),
-                    l = N ? n(395236) : n(90367);
+                    l = v ? n(395236) : n(90367);
                 return (0, i.jsx)(h.u9, {
                     msg: e,
                     image: l

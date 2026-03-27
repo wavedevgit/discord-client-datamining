@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(775602),
     m = n(58149),
     _ = n(587837),
-    p = n(473553),
-    g = n(964404),
+    g = n(473553),
+    p = n(964404),
     f = n(709562),
     x = n(383831),
     C = n(128286),
@@ -56,7 +56,7 @@ function W(e) {
         renderExternalHeader: l
     } = e, W = (0, L.A)(), Y = (0, r.yK)([y.Ay], () => y.Ay.getEmbeddedActivitiesForLocation(n), [n]), z = (0, O.H)(n), q = (0, r.bG)([E.A], () => E.A.getChannel(z)), X = (0, j.IQ)(Y), Q = (0, j.Rz)(X), J = s.useCallback(() => {
         (0, v.gk)(k.Gd.PIP)
-    }, []), $ = s.useRef(null), Z = (0, r.bG)([y.Ay], () => y.Ay.getFocusedLayout()), ee = Z !== k.E8.NO_CHAT, [et, en] = s.useState(g.Ay.activityPanelHeight ?? t ?? null), ei = s.useCallback(e => {
+    }, []), $ = s.useRef(null), Z = (0, r.bG)([y.Ay], () => y.Ay.getFocusedLayout()), ee = Z !== k.E8.NO_CHAT, [et, en] = s.useState(p.Ay.activityPanelHeight ?? t ?? null), ei = s.useCallback(e => {
         u.Ay.updatedUnsyncedSettings({
             activityPanelHeight: e
         })
@@ -116,10 +116,10 @@ function W(e) {
                 } : i
             }, [o, e, n, t])
         }(ee, et, t),
-        ep = (0, P.G)();
+        eg = (0, P.G)();
     if (null == W) return null;
-    let eg = [];
-    null != eu && (eg = Array.from(eu.embeddedActivity.userIds).map(e => b.default.getUser(e)).filter(e => null != e && void 0 !== e));
+    let ep = [];
+    null != eu && (ep = Array.from(eu.embeddedActivity.userIds).map(e => b.default.getUser(e)).filter(e => null != e && void 0 !== e));
     let ef = e => {
         if (null == e || void 0 === e || e === D.mt) return null;
         let t = em.get(e.id),
@@ -141,7 +141,7 @@ function W(e) {
             className: a()(H.iE, K[Z], e),
             ref: $,
             style: e_,
-            children: [l?.(), (0, i.jsx)(p.A, {
+            children: [l?.(), (0, i.jsx)(g.A, {
                 applicationId: W.id
             }), (0, i.jsxs)("div", {
                 className: H.lq,
@@ -172,7 +172,7 @@ function W(e) {
                     className: H.qr,
                     children: [(0, i.jsx)(D.Ay, {
                         renderIcon: !1,
-                        users: eg,
+                        users: ep,
                         size: F,
                         max: 6,
                         renderUser: ef
@@ -198,7 +198,7 @@ function W(e) {
                                 color: "disconnect"
                             })
                         })]
-                    }), ep ? (0, i.jsx)(C.A, {
+                    }), eg ? (0, i.jsx)(C.A, {
                         popoutOpen: !1,
                         onOpenPopout: () => {
                             (0, m.zV)(V.HAw.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, G.A)({

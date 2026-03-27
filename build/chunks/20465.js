@@ -17,8 +17,8 @@ var i = n(627968),
     A = n(843472),
     m = n(386467),
     _ = n(465364),
-    p = n(763754),
-    g = n(448368),
+    g = n(763754),
+    p = n(448368),
     f = n(378058),
     x = n(148355),
     C = n(320501),
@@ -40,7 +40,7 @@ function j(e) {
     } = (0, c.cf)([E.A], () => ({
         isBlocked: E.A.isBlockedForMessage(t),
         isIgnored: E.A.isIgnoredForMessage(t)
-    }), [t]), r = (0, p.X4)(t), o = s.useContext(m.A), [u, C] = s.useState(!1), N = s.useCallback(e => {
+    }), [t]), r = (0, g.X4)(t), o = s.useContext(m.A), [u, C] = s.useState(!1), N = s.useCallback(e => {
         "A" !== e.target.nodeName && (h.A.updateChatOpen(t.channel_id, !0), A.A.jumpToMessage({
             channelId: t.channel_id,
             messageId: t.id,
@@ -53,7 +53,7 @@ function j(e) {
         renderedContent: y,
         trailingIcon: j,
         leadingIcon: R
-    } = (0, g.o)(t, b, n, l, v.BK, {
+    } = (0, p.o)(t, b, n, l, v.BK, {
         trailingIconClass: v.sl,
         leadingIconClass: v.aG,
         iconSize: T.eJ
@@ -137,23 +137,23 @@ function R(e) {
         isFrozen: l,
         count: 3,
         lingerMs: y
-    }), _ = s.useRef({}), [p, g] = s.useState({}), f = s.useCallback((e, t) => {
+    }), _ = s.useRef({}), [g, p] = s.useState({}), f = s.useCallback((e, t) => {
         null == t ? delete _.current[e] : _.current[e] = t
-    }, []), x = s.useRef(p);
+    }, []), x = s.useRef(g);
     s.useLayoutEffect(() => {
-        x.current = p
+        x.current = g
     }), s.useLayoutEffect(() => {
         let e = {},
             t = 0;
         for (let n of m) {
             let i = _.current[n.id] ?? 0;
             e[n.id] = t, t += i + 8
-        }(0, r.isEqual)(e, x.current) || g(e)
+        }(0, r.isEqual)(e, x.current) || p(e)
     }, [m]);
     let E = m.map(e => ({
             message: e,
             height: _.current[e.id],
-            y: p[e.id]
+            y: g[e.id]
         })),
         I = (0, d.pnh)(E, {
             keys: e => e.message.id,

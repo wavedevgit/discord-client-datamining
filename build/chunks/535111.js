@@ -1,7 +1,7 @@
 /** chunk id: 535111 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    O: () => g
+    O: () => p
 });
 var i = n(627968);
 n(64700);
@@ -18,7 +18,7 @@ var s = n(503698),
     m = n(985018),
     _ = n(455270);
 
-function p(e) {
+function g(e) {
     let {
         name: t,
         applicationId: n
@@ -38,7 +38,7 @@ function p(e) {
     })
 }
 
-function g(e) {
+function p(e) {
     let {
         isStreaming: t,
         application: n,
@@ -47,7 +47,7 @@ function g(e) {
         isForceShowSharingPopout: u,
         setIsForceShowSharingPopout: h,
         ref: A,
-        popoutTargetRef: g
+        popoutTargetRef: p
     } = e, f = null != n ? n.name : null != s ? s.name : m.intl.string(m.t["UQMV/E"]);
     return (0, c.z)(), (0, i.jsxs)("div", {
         className: _.cm,
@@ -64,12 +64,12 @@ function g(e) {
                 className: _.it
             }) : null]
         }), (0, i.jsx)(o.M, {
-            popoutTargetRef: g,
+            popoutTargetRef: p,
             isForceShowSharingPopout: u,
             setIsForceShowSharingPopout: h,
             children: (0, i.jsxs)("div", {
                 className: _.pq,
-                children: [null != f ? (0, i.jsx)(p, {
+                children: [null != f ? (0, i.jsx)(g, {
                     name: f,
                     applicationId: n?.id
                 }) : null, (0, i.jsx)(r.G, {

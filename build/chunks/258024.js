@@ -1,6 +1,6 @@
 /** chunk id: 258024 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => N
+    Ay: () => v
 }), n(321073);
 var i = n(64700),
     l = n(735438),
@@ -584,7 +584,7 @@ class T {
     }
 }
 
-function N(e) {
+function v(e) {
     let {
         messages: t,
         channel: n,

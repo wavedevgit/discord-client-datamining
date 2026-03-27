@@ -23,19 +23,19 @@ function _(e) {
         iconClassName: n,
         sliderClassName: s,
         userId: _,
-        context: p,
-        currentWindow: g = window,
+        context: g,
+        currentWindow: p = window,
         location: f
     } = e, {
         currentVolume: x,
         muted: C
     } = (0, a.cf)([d.Ay], () => ({
-        currentVolume: d.Ay.getLocalVolume(_, p),
-        muted: d.Ay.isLocalMute(_, p)
+        currentVolume: d.Ay.getLocalVolume(_, g),
+        muted: d.Ay.isLocalMute(_, g)
     }));
     return (0, i.jsx)(A.A, {
         children: (0, i.jsx)(c.A, {
-            currentWindow: g,
+            currentWindow: p,
             iconClassName: l()(n, m.pd),
             sliderClassName: s,
             className: t,
@@ -43,10 +43,10 @@ function _(e) {
             muted: C,
             maxValue: h.isPlatformEmbedded ? 200 : 100,
             onValueChange: e => {
-                e > 0 && C && r.A.toggleLocalMute(_, p), r.A.setLocalVolume(_, (0, u.w)(e), p)
+                e > 0 && C && r.A.toggleLocalMute(_, g), r.A.setLocalVolume(_, (0, u.w)(e), g)
             },
             onToggleMute: () => {
-                null != f && (0, o.X)(f, o.O.VOLUME, C), r.A.toggleLocalMute(_, p)
+                null != f && (0, o.X)(f, o.O.VOLUME, C), r.A.toggleLocalMute(_, g)
             }
         })
     })

@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(817281),
     m = n(534409),
     _ = n(711014),
-    p = n(240248),
-    g = n(263715),
+    g = n(240248),
+    p = n(263715),
     f = n(941971),
     x = n(447253),
     C = n(531053),
@@ -28,13 +28,13 @@ var i = n(627968),
     S = n(985018),
     T = n(142163),
     v = n(604418);
-let y = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
+let y = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
     j = (0, o.animated)(h.BJc),
     R = s.memo(function(e) {
         var t;
         let n, l, o, {
                 folderNode: u,
-                setNodeRef: p,
+                setNodeRef: g,
                 selected: R,
                 expanded: O,
                 mediaState: L,
@@ -69,9 +69,9 @@ let y = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
         let [{
             dragging: ei
         }, es] = (0, r.i)({
-            type: g.PJ.FOLDER,
+            type: p.PJ.FOLDER,
             item: () => (k?.(), {
-                type: g.PJ.FOLDER,
+                type: p.PJ.FOLDER,
                 nodeId: u.id
             }),
             end() {
@@ -97,7 +97,7 @@ let y = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
             config: {
                 duration: y
             }
-        }), eh = s.useCallback(e => p?.(q, e), [p, q]), eA = (0, i.jsxs)(I.c, {
+        }), eh = s.useCallback(e => g?.(q, e), [g, q]), eA = (0, i.jsxs)(I.c, {
             children: [(0, i.jsx)(f.A, {
                 disabled: ei || O,
                 hovered: J,

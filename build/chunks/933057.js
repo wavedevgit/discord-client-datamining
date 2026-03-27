@@ -19,22 +19,22 @@ var i = n(627968),
 function _(e) {
     let {
         channel: t
-    } = e, n = (0, d.X)(t), [_, p] = s.useState(!1), g = s.useRef(null), f = (0, l.bG)([o.A], () => null != t.guild_id && o.A.isLurking(t.guild_id));
+    } = e, n = (0, d.X)(t), [_, g] = s.useState(!1), p = s.useRef(null), f = (0, l.bG)([o.A], () => null != t.guild_id && o.A.isLurking(t.guild_id));
     if (s.useEffect(() => {
-            let e = () => p(!0);
+            let e = () => g(!0);
             return c._.subscribe(A.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
                 c._.unsubscribe(A.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
             }
         }, []), f) return null;
     let x = m.intl.string(m.t.h850Ss);
     return (0, i.jsx)(a.YNO, {
-        targetElementRef: g,
+        targetElementRef: p,
         shouldShow: _,
         animation: a.YNO.Animation.NONE,
         position: "bottom",
         align: "right",
         autoInvert: !1,
-        onRequestClose: () => p(!1),
+        onRequestClose: () => g(!1),
         renderPopout: e => (0, i.jsx)(u.A, {
             ...e,
             channel: t,
@@ -47,8 +47,8 @@ function _(e) {
             } = t;
             return (0, i.jsx)(r.Ay.Icon, {
                 ...e,
-                ref: g,
-                onClick: () => p(e => !e),
+                ref: p,
+                onClick: () => g(e => !e),
                 tooltip: s ? null : x,
                 icon: n === h.CP.NO_MESSAGES ? a.a_I : a.XFE,
                 "aria-label": x,

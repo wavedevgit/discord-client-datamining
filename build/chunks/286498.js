@@ -1,6 +1,6 @@
 /** chunk id: 286498 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => N
 });
 var i = n(627968),
     l = n(64700),
@@ -24,7 +24,7 @@ var i = n(627968),
     S = n(652215),
     I = n(985018),
     T = n(442921);
-let N = e => {
+let v = e => {
     let {
         user: t,
         handleTrackAction: n
@@ -93,7 +93,7 @@ let N = e => {
     }
 };
 
-function v(e) {
+function N(e) {
     let t, {
             user: n,
             section: l,
@@ -104,9 +104,9 @@ function v(e) {
             checked: f,
             disabled: x = !1,
             onClick: S,
-            onMessageClick: v,
-            onMouseEnter: b,
-            "aria-setsize": y,
+            onMessageClick: N,
+            onMouseEnter: y,
+            "aria-setsize": b,
             "aria-posinset": j,
             handleTrackAction: R,
             inImprovedDMExperiment: M,
@@ -128,7 +128,7 @@ function v(e) {
             variant: "secondary",
             icon: d.ggM,
             onClick: () => {
-                R(l, s, "message"), v?.(n.id)
+                R(l, s, "message"), N?.(n.id)
             },
             disabled: x
         })
@@ -147,13 +147,13 @@ function v(e) {
             R(l, s, "select"), S?.(n.id)
         } : void 0,
         onMouseEnter: () => {
-            b?.(l, s)
+            y?.(l, s)
         },
         ...P,
         role: "option",
         "aria-selected": f,
         "aria-disabled": x,
-        "aria-setsize": y,
+        "aria-setsize": b,
         "aria-posinset": j,
         children: (0, i.jsxs)(g.A, {
             align: g.A.Align.CENTER,
@@ -182,7 +182,7 @@ function v(e) {
                         forceUsername: !0
                     })
                 })]
-            }), l !== E.A.FRIENDS && M ? (0, i.jsx)(N, {
+            }), l !== E.A.FRIENDS && M ? (0, i.jsx)(v, {
                 user: n,
                 handleTrackAction: () => R(l, s, "friend")
             }) : null, t]

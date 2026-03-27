@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(430452),
     m = n(203982),
     _ = n(220144),
-    p = n(175203),
-    g = n(306852),
+    g = n(175203),
+    p = n(306852),
     f = n(947580),
     x = n(163432),
     C = n(652215),
@@ -107,14 +107,14 @@ function T(e) {
                 clamp: !0
             }
         }, Z === $ && em.value.idle && !en || ei || eu ? "animate-never" : "animate-always"),
-        ep = (0, o.zhh)({
+        eg = (0, o.zhh)({
             value: t,
             config: {
                 ...r.config.stiff,
                 clamp: !0
             }
         }, eh),
-        eg = (0, o.pnh)(L, {
+        ep = (0, o.pnh)(L, {
             keys: e => e?.id,
             config: {
                 ...r.config.stiff,
@@ -161,14 +161,14 @@ function T(e) {
                         style: {
                             aspectRatio: el
                         },
-                        children: eg((e, t, s) => {
+                        children: ep((e, t, s) => {
                             let {
                                 key: a
                             } = s;
                             return null != t ? (0, i.jsx)(r.animated.div, {
                                 className: I.qX,
                                 style: e,
-                                children: (0, i.jsx)(p.Ay, {
+                                children: (0, i.jsx)(g.Ay, {
                                     focused: !0,
                                     noBorder: er >= G || ea >= U,
                                     channel: O,
@@ -192,7 +192,7 @@ function T(e) {
                         [N.N7]: w
                     }),
                     style: {
-                        bottom: ep.value
+                        bottom: eg.value
                     },
                     children: (0, i.jsx)(u.A, {
                         channelId: O.id,
@@ -220,7 +220,7 @@ function T(e) {
                     paused: Y || !M
                 })
             })]
-        }), ex.length > 0 ? (0, i.jsx)(g.A, {
+        }), ex.length > 0 ? (0, i.jsx)(p.A, {
             onContextMenuParticipant: l,
             width: G,
             height: U,

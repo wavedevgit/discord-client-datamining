@@ -37,10 +37,10 @@ let x = l.memo(function(e) {
     } = l.useContext(h.k3), {
         enabled: I,
         zoomLevel: T,
-        minZoom: N,
-        maxZoom: v,
-        isDragging: b,
-        isWheeling: y,
+        minZoom: v,
+        maxZoom: N,
+        isDragging: y,
+        isWheeling: b,
         isSlidering: j,
         setIsSlidering: R,
         doZoom: M,
@@ -50,7 +50,7 @@ let x = l.memo(function(e) {
         panOffset: P,
         setPanOffset: w,
         clampPanOffset: k
-    } = l.useContext(A.e9), [U, G] = l.useState(!1), F = l.useRef(null), H = T > N, B = l.useCallback(() => {
+    } = l.useContext(A.e9), [U, G] = l.useState(!1), F = l.useRef(null), H = T > v, B = l.useCallback(() => {
         C("interact")
     }, [C]), V = l.useCallback(() => {
         G(!1), S("interact")
@@ -95,9 +95,9 @@ let x = l.memo(function(e) {
             "--custom-zoom-indicator-top": `${100*(0,r.clamp)(s-i/2,0,1-i)}%`,
             "--custom-zoom-indicator-width": `${100*n}%`,
             "--custom-zoom-indicator-height": `${100*i}%`,
-            "--custom-zoom-indicator-transition": b || U || y || j ? "none" : "top 0.1s ease-out, left 0.1s ease-out, width 0.1s ease-out, height 0.1s ease-out"
+            "--custom-zoom-indicator-transition": y || U || b || j ? "none" : "top 0.1s ease-out, left 0.1s ease-out, width 0.1s ease-out, height 0.1s ease-out"
         }
-    }, [b, U, y, j, P, T, L]), Z = l.useCallback(e => {
+    }, [y, U, b, j, P, T, L]), Z = l.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), M(T - .25, A.qd, "button")
     }, [M, T]), X = l.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), M(T + .25, A.qd, "button")
@@ -147,14 +147,14 @@ let x = l.memo(function(e) {
                     children: (0, i.jsx)(d.K0, {
                         icon: d.V0_,
                         onClick: Z,
-                        disabled: T <= N,
+                        disabled: T <= v,
                         variant: "overlay-secondary",
                         size: "sm",
                         "aria-label": g.intl.string(g.t.M6Cmwy)
                     })
                 }), (0, i.jsx)(d.Apm, {
-                    minValue: N,
-                    maxValue: v,
+                    minValue: v,
+                    maxValue: N,
                     initialValue: T,
                     value: T,
                     asValueChanges: ee,
@@ -167,7 +167,7 @@ let x = l.memo(function(e) {
                 children: (0, i.jsx)(d.K0, {
                     icon: d.r1u,
                     onClick: X,
-                    disabled: T >= v,
+                    disabled: T >= N,
                     variant: "overlay-secondary",
                     size: "sm",
                     "aria-label": g.intl.string(g.t["9hMafy"])

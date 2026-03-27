@@ -18,8 +18,8 @@ var i = n(627968),
 let _ = function(e) {
     let {
         channel: t
-    } = e, n = (0, o.vL)(t), [_, p] = s.useState(!1), g = (0, l.bG)([d.Ay], () => d.Ay.hasUnreadPins(t.id), [t]), f = (0, c.aL)(), x = s.useRef(null), C = s.useCallback(() => {
-        n || p(e => !e)
+    } = e, n = (0, o.vL)(t), [_, g] = s.useState(!1), p = (0, l.bG)([d.Ay], () => d.Ay.hasUnreadPins(t.id), [t]), f = (0, c.aL)(), x = s.useRef(null), C = s.useCallback(() => {
+        n || g(e => !e)
     }, [n]);
 
     function E(e) {
@@ -35,7 +35,7 @@ let _ = function(e) {
         align: "right",
         autoInvert: !1,
         ignoreModalClicks: !0,
-        onRequestClose: () => p(!1),
+        onRequestClose: () => g(!1),
         renderPopout: function(e) {
             return (0, i.jsx)(r.A, {
                 ...e,
@@ -57,7 +57,7 @@ let _ = function(e) {
                 iconSize: 20,
                 "aria-label": m.intl.string(m.t["mp1N/2"]),
                 disabled: n,
-                showBadge: g,
+                showBadge: p,
                 selected: s
             })
         }

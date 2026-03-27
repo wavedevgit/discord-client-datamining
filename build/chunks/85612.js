@@ -24,10 +24,10 @@ var i = n(627968),
     S = n(954571),
     I = n(474090),
     T = n(927578),
-    N = n(971778),
-    v = n(494783),
-    b = n(342887),
-    y = n(606451),
+    v = n(971778),
+    N = n(494783),
+    y = n(342887),
+    b = n(606451),
     j = n(177392),
     R = n(185494),
     M = n(15910),
@@ -59,12 +59,12 @@ function F(e) {
     });
     (0, U.useSyncMessages)(k.messagesLoader);
     let Y = (0, o.bG)([C.default], () => (0, I.ki)(C.default.getCurrentUser())),
-        q = (0, o.bG)([N.A], () => N.A.getCatalogUpdateTime()),
+        q = (0, o.bG)([v.A], () => v.A.getCatalogUpdateTime()),
         [J, $] = l.useState(!1),
         [Z, X] = l.useState(!1),
         {
             activeVoice: Q
-        } = (0, v.f)(),
+        } = (0, N.f)(),
         ee = (0, c.zhh)({
             transform: J ? "translateY(-8px) scale(0.96)" : "translateY(0px) scale(1)",
             config: {
@@ -96,7 +96,7 @@ function F(e) {
         }),
         ei = l.useRef(null);
     (0, d.Ay)(() => {
-        (0, b.md)(), S.default.track(O.HAw.VOICE_FILTER_PICKER_OPENED, {
+        (0, y.md)(), S.default.track(O.HAw.VOICE_FILTER_PICKER_OPENED, {
             active_voice_filter_id: Q ?? null
         })
     });
@@ -173,7 +173,7 @@ function F(e) {
                         })
                     })
                 })]
-            }), (0, i.jsx)(j.H, {}), (0, i.jsx)(y.m, {}), (0, i.jsx)(R.l, {}), (0, i.jsxs)("div", {
+            }), (0, i.jsx)(j.H, {}), (0, i.jsx)(b.m, {}), (0, i.jsx)(R.l, {}), (0, i.jsxs)("div", {
                 className: a()(G.N$, {
                     [G.rd]: null != Q
                 }),

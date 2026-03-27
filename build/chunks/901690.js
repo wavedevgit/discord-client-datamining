@@ -35,16 +35,16 @@ let p = l.memo(function(e) {
         panOffset: S,
         setPanOffset: I,
         zoomLevel: T,
-        isWheeling: N,
-        setIsWheeling: v,
-        isSlidering: b,
-        setVideoAspectRatio: y,
+        isWheeling: v,
+        setIsWheeling: N,
+        isSlidering: y,
+        setVideoAspectRatio: b,
         wrapperRef: j,
         doZoom: R,
         clampPanOffset: M
     } = l.useContext(m.e9), [D, O] = l.useState(null), [L, P] = l.useState(null), [w, k] = l.useState(0), [U, G] = l.useState(null), [F, H] = l.useState(null), [B, V] = l.useState(!1), K = l.useRef(new r.Ep), W = l.useRef(new r.Ep), z = l.useRef(null), Y = T > E, q = l.useCallback(e => {
-        e.width > 0 && e.height > 0 && y(e.width / e.height), s?.(e)
-    }, [s, y]), J = l.useCallback(e => {
+        e.width > 0 && e.height > 0 && b(e.width / e.height), s?.(e)
+    }, [s, b]), J = l.useCallback(e => {
         if (null == j.current) return m.qd;
         let t = j.current.getBoundingClientRect();
         return {
@@ -82,10 +82,10 @@ let p = l.memo(function(e) {
     }, [Y, L, w, D]), ee = l.useCallback(() => {
         C(!1), H(null), G(null)
     }, [C]), et = l.useCallback(e => {
-        _ && (v(!0), R(T - e.deltaY / 100, J(e), "wheel"), f(), K.current.start(100, () => {
-            v(!1)
+        _ && (N(!0), R(T - e.deltaY / 100, J(e), "wheel"), f(), K.current.start(100, () => {
+            N(!1)
         }))
-    }, [_, R, T, J, f, v]);
+    }, [_, R, T, J, f, N]);
     (0, o.i4)(j, l.useCallback(e => {
         let {
             width: t,
@@ -130,9 +130,9 @@ let p = l.memo(function(e) {
             "--custom-zoom-scale": T,
             "--custom-pan-x": `${e.x}px`,
             "--custom-pan-y": `${e.y}px`,
-            "--custom-zoom-transition": x || B || N || b ? "none" : "transform 0.15s ease-out"
+            "--custom-zoom-transition": x || B || v || y ? "none" : "transform 0.15s ease-out"
         }
-    }, [M, x, B, N, b, S, T]);
+    }, [M, x, B, v, y, S, T]);
     return (0, i.jsx)("div", {
         ref: j,
         className: a()(A.iE, p, {

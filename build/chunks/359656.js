@@ -20,7 +20,7 @@ function d(e) {
         onExpand: u
     } = e, {
         trackUserProfileAction: h
-    } = (0, o.NJ)(), A = s.useId(), [m, _] = s.useState(!1), p = m ? r.abt : r._BQ;
+    } = (0, o.NJ)(), A = s.useId(), [m, _] = s.useState(!1), g = m ? r.abt : r._BQ;
     return (0, i.jsxs)("section", {
         className: c.uW,
         children: [(0, i.jsxs)(r.DUT, {
@@ -37,7 +37,7 @@ function d(e) {
                 variant: "text-sm/medium",
                 color: "text-default",
                 children: [n, " — ", l.length]
-            }), (0, i.jsx)(p, {
+            }), (0, i.jsx)(g, {
                 size: "md"
             })]
         }), l.length > 0 && (0, i.jsx)("ul", {

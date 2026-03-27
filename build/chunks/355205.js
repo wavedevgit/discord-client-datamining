@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(342494),
     m = n(397927),
     _ = n(73153),
-    p = n(298990),
-    g = n(367513),
+    g = n(298990),
+    p = n(367513),
     f = n(951001),
     x = n(492684),
     C = n(707606),
@@ -70,8 +70,8 @@ var i = n(627968),
     eA = n(157257),
     em = n(954571),
     e_ = n(975571),
-    ep = n(723702),
-    eg = n(498057),
+    eg = n(723702),
+    ep = n(498057),
     ef = n(994314),
     ex = n(485599),
     eC = n(204722),
@@ -96,7 +96,7 @@ function ej(e) {
         startAuthorization: d,
         accountLinkUpsellTargetRef: m,
         inviteButtonRef: _,
-        accountLinkButtonRef: g,
+        accountLinkButtonRef: p,
         gameCommunityGuildId: f,
         parentAnalyticsLocation: x,
         analyticsLocations: C,
@@ -104,7 +104,7 @@ function ej(e) {
     } = e, {
         isQuestBarEmpty: I,
         hasLoadedQuestBar: N
-    } = (0, ee.c9)(), b = eg.A.useConfig({
+    } = (0, ee.c9)(), b = ep.A.useConfig({
         location: "ActivityPanelGameCard"
     }), S = !N || !I, T = (0, eC.W)(t, n, s), v = [], y = !1;
     S || (a && r ? T && null == s ? v.push(u.M.ACCOUNT_LINK_INVITE_FRIENDS) : v.push(u.M.POST_ACCOUNT_CONNECTION_RTC_POPOVER) : !a && c && null != t && (y = !0), null != f && l?.id != null && l?.name != null && v.push(u.M.JOIN_GAME_COMMUNITY_RTC_CTA));
@@ -148,7 +148,7 @@ function ej(e) {
                             type: "Send Join Invite",
                             application_id: n.application_id,
                             location: E.location
-                        }), (0, p.qf)(n, !1)
+                        }), (0, g.qf)(n, !1)
                     }
                 }]
             }) : s === u.M.POST_ACCOUNT_CONNECTION_RTC_POPOVER ? (0, i.jsx)(A.AM, {
@@ -180,7 +180,7 @@ function ej(e) {
                     gameName: t.name
                 }),
                 body: ev.intl.string(b.altBody ? ev.t["JKqu+4"] : ev.t.qYAzOp),
-                targetElementRef: g,
+                targetElementRef: p,
                 align: "right",
                 shouldShow: !0,
                 gradientColor: "purple",
@@ -348,7 +348,7 @@ class eO extends s.PureComponent {
             embeddedActivity: t,
             isActivityPopoutOpen: n
         } = this.props;
-        o()(null != t, "Activity cannot be null during navigation click"), o()(null != e, "Channel cannot be null during navigation click"), f.A.channelListScrollTo(e.guild_id ?? eI.ME, e.id), !n && ((0, et.gV)(e.type) && g.A.selectParticipant(e.id, (0, O.Qt)({
+        o()(null != t, "Activity cannot be null during navigation click"), o()(null != e, "Channel cannot be null during navigation click"), f.A.channelListScrollTo(e.guild_id ?? eI.ME, e.id), !n && ((0, et.gV)(e.type) && p.A.selectParticipant(e.id, (0, O.Qt)({
             applicationId: t.applicationId,
             instanceId: t.compositeInstanceId
         })), (0, et.pQ)(e.type) && (0, b.gk)(eN.Gd.PANEL))
@@ -495,7 +495,7 @@ let eL = (0, C.A)(function(e) {
     let {
         guildId: t,
         ...n
-    } = e, l = (0, d.bG)([ei.default], () => ei.default.getId()), a = (0, d.bG)([H.Ay, eA.A], () => (0, X.A)(H.Ay, eA.A)), r = (0, d.bG)([eu.A, es.A], () => es.A.getChannel(eu.A.getVoiceChannelId())), o = (0, d.bG)([S.Ay], () => S.Ay.getConnectedActivityChannelId()), u = (0, d.bG)([es.A], () => es.A.getChannel(o)), h = (0, d.bG)([ea.A], () => ea.A.getGuild(u?.guild_id)), [A, m] = (0, d.yK)([en.A], () => [en.A.getCurrentUserActiveStream(), en.A.getStreamerActiveStreamMetadata()]), _ = (0, d.bG)([I.A], () => I.A.useReducedMotion), p = (0, d.bG)([S.Ay], () => S.Ay.getCurrentEmbeddedActivity()), g = (0, d.bG)([k.A], () => k.A.getConnectedFrame()), f = (0, d.bG)([ea.A, eo.A], () => null == r || W.vz(r, ea.A, eo.A, !1)), [x] = (0, R.A)([(null != m && null != m.id ? m.id : null != a && null != a.id ? a.id : null != p ? p.applicationId : null != g ? g.applicationId : void 0) ?? ""]), C = (0, d.bG)([G.A], () => G.A.getFakeGameData()), b = (0, d.bG)([S.Ay], () => S.Ay.getCurrentEmbeddedActivity()), v = (0, T.u)() && null != b && (0, N.f)(), O = (0, d.bG)([er.Ay], () => (0, Y.A)(er.Ay) && (0, ep.isWindows)()), L = (0, d.bG)([ec.A], () => null != l ? ec.A.findActivity(l, e => e.type === eI.$pd.PLAYING) : null), D = null != A && A.ownerId === l && A.state !== eI.XYD.ENDED, U = (0, d.bG)([eh.default, ed.A], () => null != u ? (0, M.m1)(u, eh.default, ed.A) : void 0), P = (0, $.A)(), [w, V] = s.useState(!1), F = (0, d.bG)([J.A], () => J.A.getWindowOpen(eI.MLl.ACTIVITY_POPOUT)), {
+    } = e, l = (0, d.bG)([ei.default], () => ei.default.getId()), a = (0, d.bG)([H.Ay, eA.A], () => (0, X.A)(H.Ay, eA.A)), r = (0, d.bG)([eu.A, es.A], () => es.A.getChannel(eu.A.getVoiceChannelId())), o = (0, d.bG)([S.Ay], () => S.Ay.getConnectedActivityChannelId()), u = (0, d.bG)([es.A], () => es.A.getChannel(o)), h = (0, d.bG)([ea.A], () => ea.A.getGuild(u?.guild_id)), [A, m] = (0, d.yK)([en.A], () => [en.A.getCurrentUserActiveStream(), en.A.getStreamerActiveStreamMetadata()]), _ = (0, d.bG)([I.A], () => I.A.useReducedMotion), g = (0, d.bG)([S.Ay], () => S.Ay.getCurrentEmbeddedActivity()), p = (0, d.bG)([k.A], () => k.A.getConnectedFrame()), f = (0, d.bG)([ea.A, eo.A], () => null == r || W.vz(r, ea.A, eo.A, !1)), [x] = (0, R.A)([(null != m && null != m.id ? m.id : null != a && null != a.id ? a.id : null != g ? g.applicationId : null != p ? p.applicationId : void 0) ?? ""]), C = (0, d.bG)([G.A], () => G.A.getFakeGameData()), b = (0, d.bG)([S.Ay], () => S.Ay.getCurrentEmbeddedActivity()), v = (0, T.u)() && null != b && (0, N.f)(), O = (0, d.bG)([er.Ay], () => (0, Y.A)(er.Ay) && (0, eg.isWindows)()), L = (0, d.bG)([ec.A], () => null != l ? ec.A.findActivity(l, e => e.type === eI.$pd.PLAYING) : null), D = null != A && A.ownerId === l && A.state !== eI.XYD.ENDED, U = (0, d.bG)([eh.default, ed.A], () => null != u ? (0, M.m1)(u, eh.default, ed.A) : void 0), P = (0, $.A)(), [w, V] = s.useState(!1), F = (0, d.bG)([J.A], () => J.A.getWindowOpen(eI.MLl.ACTIVITY_POPOUT)), {
         parentAnalyticsLocation: K,
         analyticsLocations: z
     } = (0, y.Ay)(), {
@@ -505,10 +505,10 @@ let eL = (0, C.A)(function(e) {
         startAuthorization: ee
     } = (0, j.RD)(x, {
         allowedFlows: [j._M.RPC, j._M.WEB]
-    }), [et, e_] = s.useState(!1), eg = (0, E.A)(x?.id);
+    }), [et, e_] = s.useState(!1), ep = (0, E.A)(x?.id);
     s.useEffect(() => {
-        eg !== x?.id && e_(!1)
-    }, [x, eg, e_]);
+        ep !== x?.id && e_(!1)
+    }, [x, ep, e_]);
     let ef = (0, c.K)(e => {
             e && null != Z && em.default.track(eI.HAw.ACTIVITY_PANEL_SDK_LINK_VIEWED, {
                 game_id: a?.id ?? null,
@@ -528,8 +528,8 @@ let eL = (0, C.A)(function(e) {
         guildId: t,
         canGoLive: O || v || void 0 !== C,
         activity: L,
-        embeddedActivity: p,
-        frame: g,
+        embeddedActivity: g,
+        frame: p,
         userId: l,
         runningGame: C ?? a,
         application: x,

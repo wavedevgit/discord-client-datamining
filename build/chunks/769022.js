@@ -39,20 +39,20 @@ function m(e) {
 function _(e) {
     return -e.timestamp
 }
-let p = new Map,
-    g = new Map,
+let g = new Map,
+    p = new Map,
     f = new Map,
     x = [];
 
 function C(e) {
-    let t = p.get(e),
+    let t = g.get(e),
         n = t?.values(A).find(e => e.eventType === d.i.USER_LEFT);
     null != n ? f.set(e, n.userId) : f.delete(e)
 }
 
 function E(e, t) {
     let n = h(t),
-        i = p.get(e);
+        i = g.get(e);
     return null != i && (i.set(n, {
         userId: t,
         timestamp: Date.now(),
@@ -63,7 +63,7 @@ function E(e, t) {
 
 function I(e, t, n) {
     let i = h(t),
-        s = p.get(e);
+        s = g.get(e);
     if (null == s) return !1;
     let l = s.get(i);
     if (null == l) return null != n && (s.set(i, {
@@ -86,60 +86,60 @@ class N extends i.Ay.Store {
         this.waitFor(r.A, o.A, a.A, c.A)
     }
     __getLocalVars = () => ({
-        channelEventMaps: p,
+        channelEventMaps: g,
         lastLeftUserIds: f
     });
     getLastLeftUserId(e) {
         return f.get(e)
     }
     getHistory(e) {
-        return p.get(e)?.values(A) ?? x
+        return g.get(e)?.values(A) ?? x
     }
     getHistoryVersion(e) {
-        return p.get(e)?.version ?? 0
+        return g.get(e)?.version ?? 0
     }
     getHistoryExists(e) {
-        return p.has(e)
+        return g.has(e)
     }
     getLastFetchTime(e) {
-        return g.get(e)
+        return p.get(e)
     }
 }
 let b = new N(l.h, {
     VOICE_STATE_UPDATES: function(e) {
         let t = !1,
             n = new Set,
-            i = e.voiceStates.filter(e => null != e.oldChannelId && p.has(e.oldChannelId)),
-            s = e.voiceStates.filter(e => null != e.channelId && p.has(e.channelId));
+            i = e.voiceStates.filter(e => null != e.oldChannelId && g.has(e.oldChannelId)),
+            s = e.voiceStates.filter(e => null != e.channelId && g.has(e.channelId));
         return new Set(i.map(e => e.oldChannelId).filter(e => null != e)).forEach(e => {
             var t;
             let n;
-            0 === Object.keys(c.A.getVoiceStatesForChannel(e)).length && (t = e, null != (n = p.get(t)) && n.clear(), f.delete(t))
+            0 === Object.keys(c.A.getVoiceStatesForChannel(e)).length && (t = e, null != (n = g.get(t)) && n.clear(), f.delete(t))
         }), i.forEach(e => {
             let {
                 userId: i,
                 oldChannelId: s
-            } = e, l = null != s ? p.get(s) : null;
+            } = e, l = null != s ? g.get(s) : null;
             null != s && null != l && l.values().length > 0 && I(s, i) && (t = !0, n.add(s))
         }), s.forEach(e => {
             let {
                 userId: i,
                 channelId: s
             } = e;
-            !o.A.isBlockedOrIgnored(i) && null != s && p.has(s) && E(s, i) && (t = !0, n.add(s))
+            !o.A.isBlockedOrIgnored(i) && null != s && g.has(s) && E(s, i) && (t = !0, n.add(s))
         }), n.forEach(C), t
     },
     CHANNEL_DELETE: function(e) {
         let {
             channel: t
         } = e;
-        return !!p.has(t.id) && (p.delete(t.id), g.delete(t.id), f.delete(t.id), !0)
+        return !!g.has(t.id) && (g.delete(t.id), p.delete(t.id), f.delete(t.id), !0)
     },
     VOICE_CHANNEL_HISTORY_START_TRACKING: function(e) {
         let {
             channelId: t
         } = e;
-        if (!p.has(t)) return p.has(t) || (p.set(t, new s.J(m, _)), Object.values(c.A.getVoiceStatesForChannel(t)).forEach(e => {
+        if (!g.has(t)) return g.has(t) || (g.set(t, new s.J(m, _)), Object.values(c.A.getVoiceStatesForChannel(t)).forEach(e => {
             E(t, e.userId)
         })), !0;
         return !1
@@ -149,7 +149,7 @@ let b = new N(l.h, {
             channelId: t,
             voiceLeaves: n,
             activities: i
-        } = e, s = p.get(t);
+        } = e, s = g.get(t);
         if (null == s) return !1;
         let l = !1;
         for (let {
@@ -175,7 +175,7 @@ let b = new N(l.h, {
             of i) l = function(e, t, n, i, s) {
             let l = n ?? i;
             if (null == l) return !1;
-            let a = p.get(e);
+            let a = g.get(e);
             if (null == a) return !1;
             let r = u(t, l);
             return a.set(r, {
@@ -195,6 +195,6 @@ let b = new N(l.h, {
             channelId: t,
             timestamp: n
         } = e;
-        g.set(t, n)
+        p.set(t, n)
     }
 })

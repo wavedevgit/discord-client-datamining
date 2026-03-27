@@ -42,7 +42,7 @@ function T(e) {
         activeVoice: t
     } = (0, f.f)(), n = (0, h.A)(t), s = (0, p.e)(t), {
         toggleLoopback: T,
-        isLoopbackEnabled: N
+        isLoopbackEnabled: v
     } = function() {
         let {
             activeVoice: e
@@ -55,7 +55,7 @@ function T(e) {
             isLoopbackEnabled: t,
             toggleLoopback: n
         }
-    }(), v = N ? d.GOW : d.uik, b = l.useCallback(() => (0, g.O)(null), []), y = (0, d.rdh)(d.LU0.colors.BACKGROUND_BASE_LOWER).hex(), j = (0, d.rdh)(d.LU0.colors.WHITE).hex(), R = l.useRef(0), M = t !== n ? R.current + 1 : R.current;
+    }(), N = v ? d.GOW : d.uik, y = l.useCallback(() => (0, g.O)(null), []), b = (0, d.rdh)(d.LU0.colors.BACKGROUND_BASE_LOWER).hex(), j = (0, d.rdh)(d.LU0.colors.WHITE).hex(), R = l.useRef(0), M = t !== n ? R.current + 1 : R.current;
     l.useEffect(() => {
         R.current = M
     }, [M]);
@@ -67,7 +67,7 @@ function T(e) {
             opacity: +!!D,
             height: 72 * !!D,
             pointerEvents: D ? "auto" : "none",
-            backgroundColor: s?.baseColor ?? y,
+            backgroundColor: s?.baseColor ?? b,
             config: e => "backgroundColor" === e ? {
                 easing: x,
                 duration: 200
@@ -167,7 +167,7 @@ function T(e) {
                 } : L ? C : S
             }
         }, "respect-motion-settings"),
-        H = _.intl.string(N ? _.t.esVyo6 : _.t.UQqFCF);
+        H = _.intl.string(v ? _.t.esVyo6 : _.t.UQqFCF);
     return (0, i.jsxs)(r.animated.div, {
         className: E.TC,
         "aria-hidden": O,
@@ -213,7 +213,7 @@ function T(e) {
                     }), (0, i.jsx)(d.Text, {
                         variant: "text-xs/normal",
                         color: "text-muted",
-                        children: _.intl.string(N ? _.t.Sg6cfm : _.t.ZKhtw0)
+                        children: _.intl.string(v ? _.t.Sg6cfm : _.t.ZKhtw0)
                     })]
                 }),
                 shouldShow: D,
@@ -223,7 +223,7 @@ function T(e) {
                     style: U[0],
                     children: (0, i.jsx)(d.DUT, {
                         className: a()(E.x6, {
-                            [E.v3]: N
+                            [E.v3]: v
                         }),
                         "aria-label": H,
                         "aria-hidden": O,
@@ -232,7 +232,7 @@ function T(e) {
                         },
                         tabIndex: D ? 0 : -1,
                         onClick: () => T(),
-                        children: (0, i.jsx)(v, {
+                        children: (0, i.jsx)(N, {
                             size: "custom",
                             width: 20,
                             height: 20,
@@ -253,7 +253,7 @@ function T(e) {
                             enabled: D
                         },
                         tabIndex: D ? 0 : -1,
-                        onClick: b,
+                        onClick: y,
                         children: (0, i.jsx)(d.aXh, {
                             size: "custom",
                             width: 20,

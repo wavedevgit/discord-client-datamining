@@ -45,7 +45,7 @@ function S(e) {
         })
     }
     let T = x?.nick ?? f.Ay.getName(E) ?? "???",
-        N = x?.colorString;
+        v = x?.colorString;
     return null == E ? (0, i.jsx)("span", {
         className: a()(C.eM, C.sL),
         children: T
@@ -66,7 +66,7 @@ function S(e) {
                 onContextMenu: I,
                 children: (0, i.jsx)(o.gyj, {
                     name: T,
-                    colorString: N ?? null,
+                    colorString: v ?? null,
                     colorStrings: S
                 })
             })

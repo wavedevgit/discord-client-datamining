@@ -20,16 +20,16 @@ let u = e => {
         handleClearSearch: A,
         handleSearchKeyPress: m,
         handleCreateOrAddGuild: _,
-        searchResults: p,
-        searchFetching: g
+        searchResults: g,
+        searchFetching: p
     } = e;
-    if (g) t = (0, i.jsx)("div", {
+    if (p) t = (0, i.jsx)("div", {
         className: o.$$,
         children: (0, i.jsx)(s.y$y, {
             className: o.u1
         })
     });
-    else if (0 === p.length) {
+    else if (0 === g.length) {
         let e = null != _ ? r.intl.format(r.t.qWFupn, {
             addServerHook: function(e, t) {
                 return (0, i.jsx)(s.MzZ, {
@@ -58,7 +58,7 @@ let u = e => {
         })
     } else t = (0, i.jsx)("div", {
         className: o.vY,
-        children: p.map(e => (0, i.jsx)(a.A, {
+        children: g.map(e => (0, i.jsx)(a.A, {
             entry: e
         }, e.guildId))
     });
@@ -80,7 +80,7 @@ let u = e => {
                         variant: "heading-xl/semibold",
                         className: c.s7,
                         children: r.intl.format(r.t.UkOHRd, {
-                            numResults: p.length,
+                            numResults: g.length,
                             query: h
                         })
                     })]

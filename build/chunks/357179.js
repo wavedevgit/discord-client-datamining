@@ -72,7 +72,7 @@ function p(e) {
         T = l.useCallback(() => {
             _(), C(h.Wm.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
         }, [_, C]),
-        N = l.useCallback(() => {
+        v = l.useCallback(() => {
             (0, r.mMO)(async () => {
                 let {
                     default: e
@@ -111,7 +111,7 @@ function p(e) {
         }, ...E ? [] : [{
             text: g.intl.string(g.t["7q0bNY"]),
             variant: "secondary",
-            onClick: N
+            onClick: v
         }]]
     })
 }

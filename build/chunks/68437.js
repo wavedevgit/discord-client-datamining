@@ -17,8 +17,8 @@ var s = n(311907),
     A = n(863005),
     m = n(71393),
     _ = n(576705),
-    p = n(222823),
-    g = n(977997),
+    g = n(222823),
+    p = n(977997),
     f = n(669715),
     x = n(893943),
     C = n(892896),
@@ -43,7 +43,7 @@ function y(e) {
         isNewChannel: D,
         muted: G,
         resolvedUnreadSetting: U
-    } = e, P = (0, s.bG)([p.Ay], () => p.Ay.getMentionCount(t.id)), w = (0, s.bG)([p.Ay], () => p.Ay.getIsMentionLowImportance(t.id)), k = (0, r.Ay)(t), V = (0, s.bG)([_.A], () => !_.A.can(S.xBc.CONNECT, t)), B = (0, o.H)(t), H = (0, s.bG)([g.A], () => g.A.hasVideo(t.id)), F = (0, h.qT)(t.id) && t.isGuildStageVoice(), K = (0, E.Ay)({
+    } = e, P = (0, s.bG)([g.Ay], () => g.Ay.getMentionCount(t.id)), w = (0, s.bG)([g.Ay], () => g.Ay.getIsMentionLowImportance(t.id)), k = (0, r.Ay)(t), V = (0, s.bG)([_.A], () => !_.A.can(S.xBc.CONNECT, t)), B = (0, o.H)(t), H = (0, s.bG)([p.A], () => p.A.hasVideo(t.id)), F = (0, h.qT)(t.id) && t.isGuildStageVoice(), K = (0, E.Ay)({
         channel: t,
         locked: V,
         video: (H || F) && null == B,
