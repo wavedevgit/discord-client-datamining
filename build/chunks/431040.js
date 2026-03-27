@@ -14,9 +14,9 @@ var a = n(627968),
     m = n(936636),
     x = n(424994),
     h = n(985018),
-    g = n(706445);
+    f = n(706445);
 
-function f() {
+function g() {
     return (0, a.jsx)(l.Text, {
         variant: "text-sm/normal",
         color: "text-subtle",
@@ -28,20 +28,20 @@ let _ = function(e) {
         application: t,
         detectedGame: n,
         trackAction: _
-    } = e, p = i.useMemo(() => n.genres.map(r.du).join(", "), [n]), v = n.publishers.join(", "), A = n.developers.join(", "), j = n.firstReleaseDate, C = (0, o.A)(n), E = (0, c.Y)(n), I = !(0, s.uJ)(p), N = !(0, s.uJ)(v), b = !(0, s.uJ)(A), S = !(0, s.uJ)(j), T = C.length > 0, k = E.length > 0 && !E.every(e => (0, s.uJ)(e.url));
+    } = e, p = i.useMemo(() => n.genres.map(r.du).join(", "), [n]), v = n.publishers.join(", "), A = n.developers.join(", "), j = n.firstReleaseDate, E = (0, o.A)(n), C = (0, c.Y)(n), I = !(0, s.uJ)(p), N = !(0, s.uJ)(v), b = !(0, s.uJ)(A), S = !(0, s.uJ)(j), T = E.length > 0, k = C.length > 0 && !C.every(e => (0, s.uJ)(e.url));
     return (0, a.jsxs)("div", {
-        className: g.uW,
+        className: f.uW,
         children: [(0, a.jsx)("div", {
-            className: g.Gf,
+            className: f.Gf,
             children: (0, a.jsx)(l.Heading, {
                 variant: "heading-sm/semibold",
                 color: "text-strong",
                 children: h.intl.string(h.t["7OjmmH"])
             })
         }), (0, a.jsxs)("div", {
-            className: g.kL,
+            className: f.kL,
             children: [(0, a.jsxs)("div", {
-                className: g.J1,
+                className: f.J1,
                 children: [(0, a.jsx)(l.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
@@ -49,11 +49,11 @@ let _ = function(e) {
                 }), I ? (0, a.jsx)(l.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
-                    className: g.Gu,
+                    className: f.Gu,
                     children: p
-                }) : (0, a.jsx)(f, {})]
+                }) : (0, a.jsx)(g, {})]
             }), (0, a.jsxs)("div", {
-                className: g.J1,
+                className: f.J1,
                 children: [(0, a.jsx)(l.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
@@ -61,11 +61,11 @@ let _ = function(e) {
                 }), N ? (0, a.jsx)(l.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
-                    className: g.Gu,
+                    className: f.Gu,
                     children: v
-                }) : (0, a.jsx)(f, {})]
+                }) : (0, a.jsx)(g, {})]
             }), (0, a.jsxs)("div", {
-                className: g.J1,
+                className: f.J1,
                 children: [(0, a.jsx)(l.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
@@ -73,11 +73,11 @@ let _ = function(e) {
                 }), b ? (0, a.jsx)(l.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
-                    className: g.Gu,
+                    className: f.Gu,
                     children: A
-                }) : (0, a.jsx)(f, {})]
+                }) : (0, a.jsx)(g, {})]
             }), (0, a.jsxs)("div", {
-                className: g.J1,
+                className: f.J1,
                 children: [(0, a.jsx)(l.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
@@ -85,40 +85,40 @@ let _ = function(e) {
                 }), S ? (0, a.jsx)(l.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
-                    className: g.Gu,
+                    className: f.Gu,
                     children: new Date(j).toLocaleDateString(h.intl.currentLocale, {
                         year: "numeric",
                         month: "long",
                         day: "numeric"
                     })
-                }) : (0, a.jsx)(f, {})]
+                }) : (0, a.jsx)(g, {})]
             }), (0, a.jsxs)("div", {
-                className: g.J1,
+                className: f.J1,
                 children: [(0, a.jsx)(l.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
-                    children: C.length > 1 ? h.intl.string(h.t.PNqxNe) : h.intl.string(h.t["UxAag+"])
+                    children: E.length > 1 ? h.intl.string(h.t.PNqxNe) : h.intl.string(h.t["UxAag+"])
                 }), T ? (0, a.jsx)("div", {
-                    className: g.Gu,
-                    children: C.map(e => (0, a.jsx)(m.s, {
+                    className: f.Gu,
+                    children: E.map(e => (0, a.jsx)(m.s, {
                         platform: e
                     }, e))
-                }) : (0, a.jsx)(f, {})]
+                }) : (0, a.jsx)(g, {})]
             }), (0, a.jsxs)("div", {
-                className: g.J1,
+                className: f.J1,
                 children: [(0, a.jsx)(l.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     children: h.intl.string(h.t["Oj3o1/"])
                 }), k ? (0, a.jsx)("div", {
-                    className: g.Gu,
-                    children: E.map(e => (0, a.jsx)(u.K, {
+                    className: f.Gu,
+                    children: C.map(e => (0, a.jsx)(u.K, {
                         website: e,
                         trackAction: _
                     }, e.url))
-                }) : (0, a.jsx)(f, {})]
+                }) : (0, a.jsx)(g, {})]
             }), (0, a.jsxs)("div", {
-                className: g.J1,
+                className: f.J1,
                 children: [(0, a.jsx)(l.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
@@ -126,14 +126,14 @@ let _ = function(e) {
                 }), (0, a.jsx)(l.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
-                    className: g.Gu,
+                    className: f.Gu,
                     children: h.intl.format(h.t.XPFZVl, {
                         igdbLink: x.s8
                     })
                 })]
             })]
         }), (0, a.jsx)("div", {
-            className: g.OQ,
+            className: f.OQ,
             children: (0, a.jsx)(d.A, {
                 application: t,
                 trackAction: _

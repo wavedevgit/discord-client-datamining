@@ -14,8 +14,8 @@ var a = n(627968),
     m = n(562153),
     x = n(420706),
     h = n(322789),
-    g = n(506326),
-    f = n(985018),
+    f = n(506326),
+    g = n(985018),
     _ = n(504225),
     p = n(282063);
 let v = e => {
@@ -26,8 +26,8 @@ let v = e => {
         onRequestOpen: v,
         disableActivityProfileLinks: A,
         customCTA: j,
-        popoutClassname: C,
-        popoutPosition: E = "right"
+        popoutClassname: E,
+        popoutPosition: C = "right"
     } = e, I = i.useRef(null), N = (0, s.bG)([d.A, o.A], () => o.A.getChannel(d.A.getChannelId())), b = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
         nick: S,
         avatar: T
@@ -40,14 +40,14 @@ let v = e => {
     }, [b, N]);
     return null == b ? null : (0, a.jsx)(c.YNO, {
         targetElementRef: I,
-        position: E,
+        position: C,
         renderPopout: e => {
             let {
                 closePopout: i,
                 updatePosition: r
             } = e;
             return (0, a.jsx)("div", {
-                className: C,
+                className: E,
                 children: (0, a.jsx)(x.Oo, {
                     entry: t,
                     closePopout: i,
@@ -80,7 +80,7 @@ let v = e => {
                     children: [(0, a.jsx)("img", {
                         className: _.my,
                         src: T,
-                        alt: f.intl.formatToPlainString(f.t.IzVXxY, {
+                        alt: g.intl.formatToPlainString(g.t.IzVXxY, {
                             userName: S
                         })
                     }), (0, a.jsx)("div", {
@@ -92,8 +92,8 @@ let v = e => {
                                 color: "text-strong",
                                 lineClamp: 1,
                                 children: S
-                            }), (0, a.jsx)(g.mG, {
-                                location: g.N5.APP_LAUNCHER,
+                            }), (0, a.jsx)(f.mG, {
+                                location: f.N5.APP_LAUNCHER,
                                 children: h.n.map((e, n) => (0, a.jsx)(e, {
                                     entry: t
                                 }, n))

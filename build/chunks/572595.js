@@ -19,8 +19,8 @@ let c = "collectibles shop product details modal",
             analyticsLocations: m,
             returnRef: x,
             tab: h,
-            giftRecipient: g,
-            giftingOrigin: f,
+            giftRecipient: f,
+            giftingOrigin: g,
             cardId: _,
             sessionId: p,
             tilePosition: v
@@ -49,8 +49,8 @@ let c = "collectibles shop product details modal",
                     analyticsLocations: m,
                     returnRef: x,
                     tab: h,
-                    giftRecipient: g,
-                    giftingOrigin: f
+                    giftRecipient: f,
+                    giftingOrigin: g
                 })
             })
         }, {

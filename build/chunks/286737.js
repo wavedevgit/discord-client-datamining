@@ -16,23 +16,24 @@ var a = n(627968),
 
 function h(e) {
     let {
-        trackAction: t
+        trackAction: t,
+        analyticsLocations: n
     } = e, {
-        fetchedAuthorization: n,
-        hasAlreadyLinked: h,
+        fetchedAuthorization: h,
+        hasAlreadyLinked: f,
         canStartAuthorization: g,
-        startAuthorization: f,
-        connectionApp: _,
-        officialInvite: p
-    } = (0, u.c)(), v = (0, l.bG)([c.default], () => c.default.getCurrentUser()), A = i.useCallback(() => {
-        t(d.Ws.LinkAccount), f({
-            analyticsLocations: ["game_profile"]
+        startAuthorization: _,
+        connectionApp: p,
+        officialInvite: v
+    } = (0, u.c)(), A = (0, l.bG)([c.default], () => c.default.getCurrentUser()), j = i.useCallback(() => {
+        t(d.Ws.LinkAccount), _({
+            analyticsLocations: n
         })
-    }, [t, f]);
-    if (!n || null == _ || !g || h || null == v) return null;
-    let j = p?.guild != null ? o.Ay.getGuildSplashURL({
-        id: p.guild.id,
-        splash: p.guild.splash
+    }, [t, _, n]);
+    if (!h || null == p || !g || f || null == A) return null;
+    let E = v?.guild != null ? o.Ay.getGuildSplashURL({
+        id: v.guild.id,
+        splash: v.guild.splash
     }) : null;
     return (0, a.jsxs)("div", {
         className: x.uW,
@@ -43,14 +44,14 @@ function h(e) {
             children: m.intl.string(m.t["VDAhr+"])
         }), (0, a.jsxs)("div", {
             className: x.kL,
-            children: [null != j ? (0, a.jsx)("img", {
+            children: [null != E ? (0, a.jsx)("img", {
                 className: x.ll,
-                src: j,
+                src: E,
                 alt: ""
             }) : (0, a.jsx)("div", {
                 className: x.sB,
                 children: (0, a.jsx)(s.default, {
-                    application: _
+                    application: p
                 })
             }), (0, a.jsxs)("div", {
                 className: x.hQ,
@@ -60,7 +61,7 @@ function h(e) {
                         variant: "heading-md/semibold",
                         color: "text-default",
                         children: m.intl.formatToPlainString(m.t.hUbQT2, {
-                            gameName: _.name
+                            gameName: p.name
                         })
                     }), (0, a.jsx)(r.Text, {
                         variant: "text-sm/medium",
@@ -71,7 +72,7 @@ function h(e) {
                     variant: "secondary",
                     icon: r.A5T,
                     text: m.intl.string(m.t.jynBQ5),
-                    onClick: A,
+                    onClick: j,
                     fullWidth: !0
                 })]
             })]

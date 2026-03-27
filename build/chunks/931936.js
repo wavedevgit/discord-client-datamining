@@ -8,8 +8,8 @@ var r = n(627968),
     s = n(932001),
     o = n(630117),
     a = n(613943),
-    u = n(71478),
-    d = n(182859),
+    d = n(71478),
+    u = n(182859),
     c = n(636086),
     p = n(180185),
     _ = n(629721),
@@ -37,7 +37,7 @@ function E(e) {
     let {
         guildId: t,
         showVideoCard: n = !1
-    } = e, E = (0, u.A)(t), b = (0, o.A)(t), I = (0, a.A)(t), j = n ? [l.M.GUILD_POWERUPS_OVERVIEW_SIDEBAR_VIDEO_CARD] : [], [S, C] = (0, s.kn)(j), w = S === l.M.GUILD_POWERUPS_OVERVIEW_SIDEBAR_VIDEO_CARD, y = (0, m.A)(b.shouldShow || I.shouldShow || w);
+    } = e, E = (0, d.A)(t), b = (0, o.A)(t), I = (0, a.A)(t), j = n ? [l.M.GUILD_POWERUPS_OVERVIEW_SIDEBAR_VIDEO_CARD] : [], [S, C] = (0, s.kn)(j), w = S === l.M.GUILD_POWERUPS_OVERVIEW_SIDEBAR_VIDEO_CARD, y = (0, m.A)(b.shouldShow || I.shouldShow || w);
     return E.shouldShow || b.shouldShow || I.shouldShow || y.shouldShow || w ? (0, r.jsxs)("div", {
         className: v.kL,
         children: [(0, r.jsx)(i.EYj, {
@@ -55,7 +55,7 @@ function E(e) {
             markAsDismissed: I.markAsDismissed
         }), y.shouldShow && (0, r.jsx)(c.A, {
             markAsDismissed: y.markAsDismissed
-        }), w && (0, r.jsx)(d.A, {
+        }), w && (0, r.jsx)(u.A, {
             guildId: t,
             analyticsLocation: {
                 page: f.liQ.GUILD_POWERUPS_OVERVIEW,

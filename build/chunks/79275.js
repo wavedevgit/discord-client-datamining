@@ -8,8 +8,8 @@ var r = n(627968),
     s = n(311907),
     o = n(554146),
     a = n(192308),
-    u = n(342494),
-    d = n(932001),
+    d = n(342494),
+    u = n(932001),
     c = n(186111),
     p = n(89305),
     _ = n(49999),
@@ -27,14 +27,14 @@ function A(e) {
         dismissibleContentType: o.M.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER
     } : null, h = [];
     null == v || g || !A || x || h.push(v.dismissibleContentType);
-    let [E, b] = (0, d.kn)(h), I = i.useCallback(() => {
+    let [E, b] = (0, u.kn)(h), I = i.useCallback(() => {
         b(_.i.INDIRECT_ACTION)
     }, [b]);
     return ((0, p.A)({
         targetRef: n,
         onShouldClose: I,
         enabled: null != E
-    }), null == v || null == E) ? null : (0, r.jsx)(u.AM, {
+    }), null == v || null == E) ? null : (0, r.jsx)(d.AM, {
         targetElementRef: n,
         shouldShow: !0,
         position: "right",

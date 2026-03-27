@@ -9,8 +9,8 @@ var i = n(158954),
     s = n(421380),
     o = n(397927),
     a = n(721923),
-    u = n(71393),
-    d = n(975571),
+    d = n(71393),
+    u = n(975571),
     c = n(953382),
     p = n(864310),
     _ = n(931936),
@@ -25,7 +25,7 @@ function h(e) {
     let {
         guildId: t,
         showVideoCard: n
-    } = e, h = (0, l.bG)([u.A], () => u.A.getGuild(t)), {
+    } = e, h = (0, l.bG)([d.A], () => d.A.getGuild(t)), {
         available: E,
         spent: b,
         total: I
@@ -42,7 +42,7 @@ function h(e) {
                 className: v.C2,
                 variant: "text-xs/semibold",
                 children: x.intl.format(g.default.fXE30d, {
-                    helpDeskArticle: d.A.getArticleURL(A.MVz.GUILD_BOOSTING_FAQ)
+                    helpDeskArticle: u.A.getArticleURL(A.MVz.GUILD_BOOSTING_FAQ)
                 })
             })]
         }), (0, r.jsxs)("div", {

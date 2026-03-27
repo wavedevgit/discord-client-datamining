@@ -8,8 +8,8 @@ var r = n(627968),
     s = n(998418),
     o = n(890942),
     a = n(722523),
-    u = n(490557),
-    d = n(634925),
+    d = n(490557),
+    u = n(634925),
     c = n(744201),
     p = n(867060),
     _ = n(568065),
@@ -18,30 +18,32 @@ var r = n(627968),
 function f(e) {
     let {
         guildId: t,
-        powerup: n
-    } = e, [f, A] = i.useState(void 0);
-    (0, p.A)(f);
-    let [g, x] = i.useState(!1), v = (0, s.Ay)(t, n).type !== _.b_.INACTIVE, {
-        textColor: h
-    } = (0, c.A)(v);
-    return (0, r.jsxs)(d.h, {
-        onHover: e => x(e),
+        powerup: n,
+        badge: f
+    } = e, [A, g] = i.useState(void 0);
+    (0, p.A)(A);
+    let [x, v] = i.useState(!1), h = (0, s.Ay)(t, n).type !== _.b_.INACTIVE, {
+        textColor: E
+    } = (0, c.A)(h);
+    return (0, r.jsxs)(u.h, {
+        onHover: e => v(e),
         guildId: t,
         powerup: n,
-        children: [(0, r.jsx)(u.l, {
+        badge: f,
+        children: [(0, r.jsx)(d.l, {
             className: m.Sl,
             powerup: n,
-            isHovering: g
+            isHovering: x
         }), (0, r.jsx)(o.Ft, {
             title: n.title,
-            textColor: h,
-            footer: (0, r.jsx)(d.A, {
+            textColor: E,
+            footer: (0, r.jsx)(u.A, {
                 guildId: t,
                 powerup: n
             }),
             children: (0, r.jsx)(l.Text, {
                 className: m.h_,
-                color: h,
+                color: E,
                 variant: "text-sm/medium",
                 children: n.description
             })
@@ -49,7 +51,7 @@ function f(e) {
             children: (0, r.jsx)(a.Ay, {
                 guildId: t,
                 powerup: n,
-                onError: A
+                onError: g
             })
         })]
     })

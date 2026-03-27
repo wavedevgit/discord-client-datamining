@@ -1,8 +1,8 @@
 /** chunk id: 561769 params = (module,exports,require) **/
 n.d(t, {
     AW: () => j,
-    Hi: () => C,
-    UU: () => E,
+    Hi: () => E,
+    UU: () => C,
     Vm: () => N,
     gZ: () => A,
     nY: () => v,
@@ -19,8 +19,8 @@ var a, i, l = n(64700),
     m = n(590180),
     x = n(161918),
     h = n(572595),
-    g = n(57020),
-    f = n(758836),
+    f = n(57020),
+    g = n(758836),
     _ = n(652215);
 let p = l.createContext({
     flattenProductVariants: void 0,
@@ -36,16 +36,16 @@ function A() {
     return l.useContext(p).prioritizedCurrency
 }
 var j = ((a = {}).NONE = "none", a.NEW = "new", a.ORBS_EXCLUSIVE = "orbs_exclusive", a.LIMITED_TIME = "limited_time", a.NITRO_EXCLUSIVE = "nitro_exclusive", a),
-    C = ((i = {}).FIAT = "fiat", i.ORBS = "orbs", i);
-let E = (e, t, n) => a => {
+    E = ((i = {}).FIAT = "fiat", i.ORBS = "orbs", i);
+let C = (e, t, n) => a => {
         d.default.track(_.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
             collectibles_shop_session_id: n?.sessionId,
             sku_id: e.skuId,
             page_type: t,
             page_section: n?.pageSection,
-            page_category: t === f.G2.HOME ? void 0 : n?.pageCategory,
-            page_index: t === f.G2.CATALOG ? n?.pageIndex : void 0,
-            page_size: t === f.G2.CATALOG ? n?.pageSize : void 0,
+            page_category: t === g.G2.HOME ? void 0 : n?.pageCategory,
+            page_index: t === g.G2.CATALOG ? n?.pageIndex : void 0,
+            page_size: t === g.G2.CATALOG ? n?.pageSize : void 0,
             tile_type: r.R[e.type],
             tile_position: String(n?.tilePosition),
             cta_name: a
@@ -58,16 +58,16 @@ let E = (e, t, n) => a => {
             {
                 analyticsLocations: d
             } = (0, o.Ay)(c.A.COLLECTIBLES_SHOP_CARD),
-            f = (0, s.bG)([m.A], () => m.A.getCategoryForProduct(e.skuId)),
+            g = (0, s.bG)([m.A], () => m.A.getCategoryForProduct(e.skuId)),
             _ = l.useRef(null);
         return l.useCallback(t => a => {
-            if (null == f) return;
-            let l = (0, g.A)({
+            if (null == g) return;
+            let l = (0, f.A)({
                 product: e
             });
             _.current = a.currentTarget, n?.(), (0, h.t)({
                 product: e,
-                category: f,
+                category: g,
                 shouldCheckoutWithOrbs: l,
                 analyticsLocations: d,
                 analyticsSource: t,
@@ -77,7 +77,7 @@ let E = (e, t, n) => a => {
                 sessionId: r?.sessionId,
                 tilePosition: r?.tilePosition
             })
-        }, [e, i, f, d, n, r?.cardId, r?.sessionId, r?.tilePosition])(t)
+        }, [e, i, g, d, n, r?.cardId, r?.sessionId, r?.tilePosition])(t)
     },
     N = e => {
         let {

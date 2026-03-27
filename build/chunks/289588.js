@@ -1,6 +1,6 @@
 /** chunk id: 289588 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => u
 });
 var r = n(627968);
 n(64700);
@@ -9,17 +9,17 @@ var i = n(934551),
     s = n(827734),
     o = n(379512),
     a = n(568065),
-    u = n(658479);
+    d = n(658479);
 
-function d(e) {
+function u(e) {
     let {
         count: t,
         type: n
     } = e;
     return (0, r.jsxs)("div", {
-        className: u.k,
+        className: d.k,
         children: [(0, r.jsxs)("div", {
-            className: u.N,
+            className: d.N,
             children: [(0, r.jsx)(i.BoostGemIcon, {
                 size: "sm",
                 color: n !== a.yG.AVAILABLE ? s.A.colors.TEXT_MUTED : s.A.unsafe_rawColors.GUILD_BOOSTING_PINK

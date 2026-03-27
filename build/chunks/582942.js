@@ -1,6 +1,6 @@
 /** chunk id: 582942 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => C
 });
 var a = n(627968);
 n(64700);
@@ -15,14 +15,14 @@ var i = n(503698),
     m = n(136086),
     x = n(885151),
     h = n(409626),
-    g = n(422069),
-    f = n(611656),
+    f = n(422069),
+    g = n(611656),
     _ = n(459746),
     p = n(225732),
     v = n(985018),
     A = n(282063),
     j = n(379093);
-let C = e => {
+let E = e => {
     let {
         game: t,
         onClose: n,
@@ -50,18 +50,18 @@ let C = e => {
     })
 };
 
-function E(e) {
+function C(e) {
     let {
         applicationId: t,
         onClose: n,
         trackAction: i,
         similarGames: r,
         similarGamesError: o
-    } = e, u = (0, c.bG)([g.A, m.A], () => {
-        let e = void 0 === g.A.getSimilarGames(t) && null == g.A.getSimilarGamesError(t),
+    } = e, u = (0, c.bG)([f.A, m.A], () => {
+        let e = void 0 === f.A.getSimilarGames(t) && null == f.A.getSimilarGamesError(t),
             n = r.some(e => m.A.isFetching(e));
         return e || n
-    }), h = (0, c.yK)([m.A], () => r.map(e => m.A.getGame(e)).filter(e => null != e).filter(e => (0, f.oS)(e.applicationId)).slice(0, 5));
+    }), h = (0, c.yK)([m.A], () => r.map(e => m.A.getGame(e)).filter(e => null != e).filter(e => (0, g.oS)(e.applicationId)).slice(0, 5));
     return ((0, x.k)(t), (0, x.W)(r), u && null == o) ? (0, a.jsxs)("div", {
         children: [(0, a.jsx)("div", {
             className: l()(j.vM, A.bV)
@@ -79,7 +79,7 @@ function E(e) {
             children: v.intl.string(v.t["6rLyQB"])
         }), (0, a.jsx)("div", {
             className: j.D$,
-            children: h.map(e => null != e.supplementalData ? (0, a.jsx)(C, {
+            children: h.map(e => null != e.supplementalData ? (0, a.jsx)(E, {
                 game: e.supplementalData,
                 onClose: n,
                 trackClick: i

@@ -10,8 +10,8 @@ var i = n(503698),
     s = n(732955),
     o = n(438874),
     a = n(363487),
-    u = n(439156),
-    d = n(689906),
+    d = n(439156),
+    u = n(689906),
     c = n(224331),
     p = n(568065),
     _ = n(333354),
@@ -24,7 +24,7 @@ function A(e) {
         guildId: n,
         powerup: i,
         onClick: o
-    } = e, a = (0, d.A)(n, i), u = (0, c.A)(n, i), A = p.HO.has(i.skuId);
+    } = e, a = (0, u.A)(n, i), d = (0, c.A)(n, i), A = p.HO.has(i.skuId);
     return (0, r.jsx)("div", {
         className: l()(f.FS, t),
         children: (0, r.jsx)(s.$nd, {
@@ -32,7 +32,7 @@ function A(e) {
             fullWidth: !0,
             text: A ? m.intl.string(_.default.g5Ds69) : m.intl.string(m.t["0Q61kF"]),
             onClick: e => {
-                o?.(e), A ? a?.(e) : u?.()
+                o?.(e), A ? a?.(e) : d?.()
             }
         })
     })
@@ -66,12 +66,12 @@ function x(e) {
         expressiveCta: s,
         onError: a
     } = e, {
-        showToggleButton: d,
+        showToggleButton: u,
         isPowerupActive: c
     } = (0, o.A)(n, i), p = !c;
     return (0, r.jsxs)("div", {
         className: l()(f.kL, t),
-        children: [d && (0, r.jsx)(u.A, {
+        children: [u && (0, r.jsx)(d.A, {
             guildId: n,
             powerup: i,
             onError: a,

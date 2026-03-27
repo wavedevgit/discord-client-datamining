@@ -1,6 +1,6 @@
 /** chunk id: 629721 params = (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => d
 });
 var r = n(627968);
 n(64700);
@@ -10,17 +10,17 @@ var i = n(934551),
     o = n(371028),
     a = n(289404);
 
-function u(e) {
+function d(e) {
     let {
         guildId: t,
         powerupNames: n,
-        warnings: u
+        warnings: d
     } = e, {
-        shouldShow: d,
+        shouldShow: u,
         title: c,
         description: p
     } = (0, o.A)(t, n);
-    return d ? (0, r.jsxs)("div", {
+    return u ? (0, r.jsxs)("div", {
         className: a.kL,
         children: [(0, r.jsx)(i.CircleErrorIcon, {
             color: s.A.colors.TEXT_FEEDBACK_WARNING,
@@ -31,7 +31,7 @@ function u(e) {
             children: c
         }), (0, r.jsxs)(l.EYj, {
             variant: "text-sm/medium",
-            children: [p, u?.map((e, t) => (0, r.jsx)(l.EYj, {
+            children: [p, d?.map((e, t) => (0, r.jsx)(l.EYj, {
                 variant: "text-sm/medium",
                 color: "text-feedback-warning",
                 className: a.$e,

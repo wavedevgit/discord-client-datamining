@@ -1,6 +1,6 @@
 /** chunk id: 689906 params = (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => d
 });
 var r = n(64700),
     i = n(512750),
@@ -9,7 +9,7 @@ var r = n(64700),
     o = n(568065),
     a = n(652215);
 
-function u(e, t) {
+function d(e, t) {
     let n = r.useCallback(n => {
         if (n.stopPropagation(), t.type !== o.o9.LEVEL) switch ((0, l.OoC)(o.Fq), t.skuId) {
             case i.SL:

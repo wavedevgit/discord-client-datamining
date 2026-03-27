@@ -9,8 +9,8 @@ var i = n(110259),
     s = n(688810),
     o = n(139286),
     a = n(49463),
-    u = n(976860),
-    d = n(71393),
+    d = n(976860),
+    u = n(71393),
     c = n(363487),
     p = n(484612);
 
@@ -18,7 +18,7 @@ function _(e) {
     let {
         guildId: t,
         powerupListingId: n
-    } = e, _ = (0, l.bG)([d.A], () => d.A.getGuild(t)), m = (0, l.bG)([a.A], () => a.A.hasLoadedExperiments), f = (0, c.A)(t), A = (0, u.PR)(), g = !m || null == f || null == _, x = (0, s.Ay)(null != A ? A : []);
+    } = e, _ = (0, l.bG)([u.A], () => u.A.getGuild(t)), m = (0, l.bG)([a.A], () => a.A.hasLoadedExperiments), f = (0, c.A)(t), A = (0, d.PR)(), g = !m || null == f || null == _, x = (0, s.Ay)(null != A ? A : []);
     return ((0, o.A)({
         type: i.ImpressionTypes.VIEW,
         name: i.ImpressionNames.BOOST_SHOP_OPENED,

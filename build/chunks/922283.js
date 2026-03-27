@@ -1,6 +1,6 @@
 /** chunk id: 922283 params = (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => E
 });
 var a = n(627968),
     i = n(64700),
@@ -14,8 +14,8 @@ var a = n(627968),
     m = n(133580),
     x = n(37948),
     h = n(778591),
-    g = n(465736),
-    f = n(985018),
+    f = n(465736),
+    g = n(985018),
     _ = n(928976);
 
 function p(e) {
@@ -28,14 +28,14 @@ function p(e) {
     } = t, h = m?.steam ?? {
         rating: void 0,
         ratingCount: void 0
-    }, g = (0, x.A)(), p = (0, o.j)(h.rating, h.ratingCount), v = (0, u.y)(p), A = i.useCallback(() => {
-        l(d.Ws.SteamReviews), g(n)
-    }, [g, l, n]);
+    }, f = (0, x.A)(), p = (0, o.j)(h.rating, h.ratingCount), v = (0, u.y)(p), A = i.useCallback(() => {
+        l(d.Ws.SteamReviews), f(n)
+    }, [f, l, n]);
     return (0, a.jsx)(s.DUT, {
         onClick: A,
         className: _.nf,
         role: "link",
-        "aria-label": f.intl.string(f.t.YNC5Di),
+        "aria-label": g.intl.string(g.t.YNC5Di),
         children: (0, a.jsxs)("div", {
             className: _.U6,
             children: [(0, a.jsxs)("div", {
@@ -46,10 +46,10 @@ function p(e) {
                 }), (0, a.jsx)(s.Heading, {
                     variant: "heading-sm/medium",
                     color: "text-strong",
-                    children: f.intl.string(f.t.whmopT)
+                    children: g.intl.string(g.t.whmopT)
                 })]
             }), (0, a.jsx)(r.m, {
-                text: p === c.vI.NO_USER_REVIEWS ? f.intl.string(f.t.CLMt8J) : f.intl.format(f.t["lzANJ/"], {
+                text: p === c.vI.NO_USER_REVIEWS ? g.intl.string(g.t.CLMt8J) : g.intl.format(g.t["lzANJ/"], {
                     rating: h.rating,
                     rating_count: h.ratingCount?.toLocaleString()
                 }).toString(),
@@ -62,7 +62,7 @@ function p(e) {
                     }), null != h.ratingCount && p !== c.vI.NO_USER_REVIEWS && (0, a.jsx)(s.Text, {
                         variant: "text-xs/medium",
                         color: "text-subtle",
-                        children: f.intl.format(f.t.sgIoin, {
+                        children: g.intl.format(g.t.sgIoin, {
                             rating_count: h.ratingCount?.toLocaleString()
                         }).toString()
                     })]
@@ -83,31 +83,31 @@ function v(e) {
         topCriticRating: void 0,
         topCriticRatingCount: void 0,
         tier: void 0
-    }, m = o.tier, h = o.topCriticRating ?? -1, g = o.topCriticRatingCount ?? -1, p = (h <= 0 || g <= 0) && null == m, v = (0, x.A)(), C = i.useCallback(() => {
+    }, m = o.tier, h = o.topCriticRating ?? -1, f = o.topCriticRatingCount ?? -1, p = (h <= 0 || f <= 0) && null == m, v = (0, x.A)(), E = i.useCallback(() => {
         l(d.Ws.OpenCriticReviews), v(n)
     }, [v, l, n]);
     return (0, a.jsx)(s.DUT, {
-        onClick: C,
+        onClick: E,
         className: _.nf,
         role: "link",
-        "aria-label": f.intl.string(f.t.aLNBAw),
+        "aria-label": g.intl.string(g.t.aLNBAw),
         children: (0, a.jsxs)("div", {
             className: _.Ur,
             children: [(0, a.jsx)(s.Heading, {
                 variant: "heading-sm/medium",
                 color: "text-strong",
-                children: f.intl.string(f.t["UxvER+"])
+                children: g.intl.string(g.t["UxvER+"])
             }), (0, a.jsxs)("div", {
                 className: _.WA,
                 children: [null != m ? (0, a.jsx)(A, {
                     tier: m
-                }) : null, null != m && h > 0 && g > 0 ? (0, a.jsx)(j, {
+                }) : null, null != m && h > 0 && f > 0 ? (0, a.jsx)(j, {
                     rating: h,
                     tier: m
                 }) : null, p ? (0, a.jsx)(s.Text, {
                     variant: "text-xs/medium",
                     color: (0, u.y)(c.vI.NO_USER_REVIEWS),
-                    children: f.intl.string(f.t["0xYzpO"])
+                    children: g.intl.string(g.t["0xYzpO"])
                 }) : null]
             })]
         })
@@ -141,13 +141,13 @@ function j(e) {
         backgroundColor: l
     } = (0, m.ff)(n);
     return (0, a.jsx)(r.m, {
-        text: f.intl.string(f.t.Ub4YR1),
+        text: g.intl.string(g.t.Ub4YR1),
         children: (0, a.jsxs)("div", {
             className: _.TE,
             style: {
                 backgroundColor: l
             },
-            children: [(0, a.jsx)(g.A, {
+            children: [(0, a.jsx)(f.A, {
                 rating: t,
                 strokeColor: i
             }), (0, a.jsx)(s.Text, {
@@ -159,7 +159,7 @@ function j(e) {
         })
     }, "open-critic-rating")
 }
-let C = function(e) {
+let E = function(e) {
     let {
         detectedGame: t,
         trackAction: n
@@ -173,7 +173,7 @@ let C = function(e) {
             children: (0, a.jsx)(s.Heading, {
                 variant: "heading-sm/semibold",
                 color: "text-strong",
-                children: f.intl.string(f.t.GaAQXP)
+                children: g.intl.string(g.t.GaAQXP)
             })
         }), (0, a.jsxs)("div", {
             className: _.kL,

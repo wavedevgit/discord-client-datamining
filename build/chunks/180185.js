@@ -1,6 +1,6 @@
 /** chunk id: 180185 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => u
 });
 var r = n(627968);
 n(64700);
@@ -9,17 +9,17 @@ var i = n(934551),
     s = n(827734),
     o = n(49999),
     a = n(985018),
-    u = n(737584);
+    d = n(737584);
 
-function d(e) {
+function u(e) {
     let {
         notificationConfig: t,
         markAsDismissed: n
     } = e;
     return (0, r.jsxs)("div", {
-        className: u.kL,
+        className: d.kL,
         children: [(0, r.jsx)("div", {
-            className: u.VN,
+            className: d.VN,
             children: (0, r.jsx)(l.K0, {
                 variant: "icon-only",
                 size: "md",
@@ -31,7 +31,7 @@ function d(e) {
             })
         }), (0, r.jsx)(i.CircleErrorIcon, {
             color: s.A.colors.TEXT_FEEDBACK_WARNING,
-            className: u.Kk
+            className: d.Kk
         }), (0, r.jsx)(l.EYj, {
             variant: "text-md/semibold",
             color: "text-feedback-warning",

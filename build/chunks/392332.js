@@ -20,7 +20,7 @@ function x(e) {
         officialGuildId: l,
         onClose: x,
         source: h
-    } = e, g = t.length > 7, [f, _] = i.useState(!1), p = i.useMemo(() => t.slice(0, g && !f ? 6 : void 0), [t, g, f]);
+    } = e, f = t.length > 7, [g, _] = i.useState(!1), p = i.useMemo(() => t.slice(0, f && !g ? 6 : void 0), [t, f, g]);
     return (0, a.jsxs)("div", {
         children: [(0, a.jsx)(s.DZT, {
             className: u.bV,
@@ -35,7 +35,7 @@ function x(e) {
         }) : (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsx)("div", {
                 className: r()(m.yz, {
-                    [m.T6]: g && !f
+                    [m.T6]: f && !g
                 }),
                 children: (0, a.jsx)("div", {
                     className: u.fi,
@@ -47,7 +47,7 @@ function x(e) {
                         source: h
                     }, e.id))
                 })
-            }), g && !f && (0, a.jsxs)(c.DUT, {
+            }), f && !g && (0, a.jsxs)(c.DUT, {
                 className: m.ND,
                 onClick: () => _(!0),
                 children: [(0, a.jsx)(s.EYj, {

@@ -34,8 +34,8 @@ var l = n(627968),
     R = n(734057),
     U = n(808728),
     V = n(958590),
-    w = n(535820),
-    O = n(576705),
+    O = n(535820),
+    w = n(576705),
     D = n(290863),
     P = n(309010),
     L = n(287809),
@@ -590,11 +590,11 @@ let eo = i.forwardRef(function(e, t) {
         analyticsLocation: _
     } = e, {
         analyticsLocations: f
-    } = (0, v.Ay)(S.A.INSTANT_INVITE_MODAL), M = (0, g.bG)([P.A, R.A, U.Ay, O.A], () => {
+    } = (0, v.Ay)(S.A.INSTANT_INVITE_MODAL), M = (0, g.bG)([P.A, R.A, U.Ay, w.A], () => {
         if (null != n) return n;
         let e = P.A.getChannelId(),
             t = null == e || (0, $.jq)(e) ? void 0 : R.A.getChannel(e);
-        return t?.isThread() && (t = R.A.getChannel(t.parent_id)), t?.guild_id === s.id && null != t && O.A.can(X.xBc.VIEW_CHANNEL, t) ? t : U.Ay.getDefaultChannel(s.id, !0, X.xBc.CREATE_INSTANT_INVITE)
+        return t?.isThread() && (t = R.A.getChannel(t.parent_id)), t?.guild_id === s.id && null != t && w.A.can(X.xBc.VIEW_CHANNEL, t) ? t : U.Ay.getDefaultChannel(s.id, !0, X.xBc.CREATE_INSTANT_INVITE)
     }, [n, s.id]), j = (0, T.Ay)(M), D = null;
     null != o ? D = Z.yV.STREAM : null != c && (D = Z.yV.EMBEDDED_APPLICATION);
     let L = null != n ? n.getGuildId() : null != s ? s.id : null,
@@ -614,12 +614,12 @@ let eo = i.forwardRef(function(e, t) {
                 targetApplicationId: c
             })
         }, [M, D, o, c]),
-        [W, Y, J, ee] = (0, g.yK)([w.A, k.Ay], () => [w.A.getInviteSuggestionRows(), w.A.getTotalSuggestionsCount() >= 1, w.A.getInitialCounts(), null != n && null != M ? k.Ay.getVoiceStatesForChannel(M) : null], [M, n]),
+        [W, Y, J, ee] = (0, g.yK)([O.A, k.Ay], () => [O.A.getInviteSuggestionRows(), O.A.getTotalSuggestionsCount() >= 1, O.A.getInitialCounts(), null != n && null != M ? k.Ay.getVoiceStatesForChannel(M) : null], [M, n]),
         et = i.useMemo(() => {
             let e = null != M ? M.id : null;
             return null != L ? G.Ay.getProps(L, e) : void 0
         }, [M, L]),
-        en = (0, g.bG)([O.A], () => null != M && O.A.can(X.xBc.CREATE_INSTANT_INVITE, M), [M]),
+        en = (0, g.bG)([w.A], () => null != M && w.A.can(X.xBc.CREATE_INSTANT_INVITE, M), [M]),
         er = null === z || !en,
         eo = M?.type === X.rbe.GUILD_VOICE,
         ed = (0, E.A)(M),
@@ -694,8 +694,8 @@ let eo = i.forwardRef(function(e, t) {
             maxAge: eR,
             maxUses: eU,
             temporary: eV,
-            savedMaxAge: ew,
-            flags: eO,
+            savedMaxAge: eO,
+            flags: ew,
             roleIds: eD
         } = eT,
         eP = !eG && eV,
@@ -729,19 +729,19 @@ let eo = i.forwardRef(function(e, t) {
                 target_user_id: o,
                 target_application_id: eh?.id,
                 temporary: eP,
-                flags: eO,
+                flags: ew,
                 role_ids: Array.from(eD)
             }, a).catch(e => ef({
                 networkError: e,
                 showVanityURL: ev
-            }))), eR !== el.value && ew !== el.value && ef({
+            }))), eR !== el.value && eO !== el.value && ef({
                 savedMaxAge: el.value
             })
-        }, [ev, en, M, a, eh?.id, D, o, eR, eU, eP, ef, ew, eO, eD]),
+        }, [ev, en, M, a, eh?.id, D, o, eR, eU, eP, ef, eO, ew, eD]),
         eK = (0, m.A)(M),
-        ez = (0, m.A)((0, u.Lt)(eO, d.Q.IS_APPLICATION_BYPASS)),
+        ez = (0, m.A)((0, u.Lt)(ew, d.Q.IS_APPLICATION_BYPASS)),
         eQ = null != eK && eK !== M,
-        eq = null != ez && ez !== (0, u.Lt)(eO, d.Q.IS_APPLICATION_BYPASS);
+        eq = null != ez && ez !== (0, u.Lt)(ew, d.Q.IS_APPLICATION_BYPASS);
     i.useEffect(() => {
         !ev && (eQ || eq) && eH()
     }, [eH, eQ, eq, ev]);

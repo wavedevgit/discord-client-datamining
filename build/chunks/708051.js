@@ -62,7 +62,7 @@ let v = r.Ay.connectStores([g.A], () => ({
             networkError: R,
             showVanityURL: U,
             flags: V
-        } = u, w = i.useCallback(() => {
+        } = u, O = i.useCallback(() => {
             h.default.track(I.HAw.COPY_INSTANT_INVITE, {
                 server: c.A.getGuildId(),
                 channel: _?.id,
@@ -78,7 +78,7 @@ let v = r.Ay.connectStores([g.A], () => ({
             children: [(0, l.jsx)(v, {
                 value: E,
                 autoFocus: r,
-                onCopy: w,
+                onCopy: O,
                 disabled: b
             }), g && (0, l.jsx)(d.dOG, {
                 checked: (0, a.Lt)(V, s.Q.IS_APPLICATION_BYPASS),

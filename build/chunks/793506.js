@@ -1,6 +1,6 @@
 /** chunk id: 793506 params = (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => d
 });
 var r = n(64700),
     i = n(311907),
@@ -9,7 +9,7 @@ var r = n(64700),
     o = n(333354),
     a = n(985018);
 
-function u(e) {
+function d(e) {
     let t = (0, i.bG)([l.A], () => l.A.getStateForGuild(e)?.entitlements, [e]),
         n = (0, s.A)(e);
     return r.useMemo(() => {

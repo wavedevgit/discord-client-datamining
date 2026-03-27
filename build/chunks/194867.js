@@ -8,8 +8,8 @@ var r = n(627968),
     s = n(990078),
     o = n(397927),
     a = n(775602),
-    u = n(600941),
-    d = n(890942),
+    d = n(600941),
+    u = n(890942),
     c = n(744201),
     p = n(271484),
     _ = n(526652);
@@ -19,7 +19,7 @@ function m(e) {
         guildId: t,
         group: n,
         powerups: m
-    } = e, [f, A] = i.useState(!1), g = (0, l.bG)([a.A], () => a.A.useReducedMotion), x = (0, p.A)(n, t), v = !g && f ? x?.image?.animatedUrl : x?.image?.staticUrl, h = (0, u.A)({
+    } = e, [f, A] = i.useState(!1), g = (0, l.bG)([a.A], () => a.A.useReducedMotion), x = (0, p.A)(n, t), v = !g && f ? x?.image?.animatedUrl : x?.image?.staticUrl, h = (0, d.A)({
         guildId: t,
         powerups: m
     }), {
@@ -31,7 +31,7 @@ function m(e) {
         cost: I,
         costDecorator: j
     } = h;
-    return (0, r.jsxs)(d.NI, {
+    return (0, r.jsxs)(u.NI, {
         label: x.title,
         isActive: b?.type === "active",
         isWarning: b?.type === "expiring",
@@ -43,10 +43,10 @@ function m(e) {
             alt: "",
             src: v,
             className: _.S
-        }), (0, r.jsx)(d.Ft, {
+        }), (0, r.jsx)(u.Ft, {
             title: x.title,
             textColor: E,
-            footer: (0, r.jsx)(d.$L, {
+            footer: (0, r.jsx)(u.$L, {
                 status: b,
                 cost: I,
                 costDecorator: j
@@ -57,7 +57,7 @@ function m(e) {
                 variant: "text-sm/medium",
                 children: x.description
             })
-        }), (0, r.jsx)(d.kd, {
+        }), (0, r.jsx)(u.kd, {
             children: x?.viewCtaTooltip != null ? (0, r.jsx)(s.m, {
                 asContainer: !0,
                 text: x.viewCtaTooltip,

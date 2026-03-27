@@ -8,8 +8,8 @@ var r = n(627968),
     s = n.n(l),
     o = n(311907),
     a = n(554146),
-    u = n(397927),
-    d = n(793574),
+    d = n(397927),
+    u = n(793574),
     c = n(932001),
     p = n(742589),
     _ = n(976860),
@@ -85,7 +85,7 @@ function M(e) {
                     if ("gameServer" === n.type && l === T.W5) {
                         (0, A.A)({
                             guildId: t,
-                            analyticsLocation: d.A.GUILD_POWERUPS_OVERVIEW
+                            analyticsLocation: u.A.GUILD_POWERUPS_OVERVIEW
                         }), J.current = !0;
                         return
                     }
@@ -98,7 +98,7 @@ function M(e) {
                 },
                 modalKey: `dismissible_content_${H}`
             };
-            (0, u.mMO)(async () => {
+            (0, d.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("86618").then(n.bind(n, 442241));
@@ -116,14 +116,14 @@ function M(e) {
             hideSearch: !0,
             toolbar: (0, r.jsx)("div", {}),
             children: [(0, r.jsx)(p.A.Icon, {
-                icon: u._Jp,
+                icon: d._Jp,
                 "aria-label": ""
             }), (0, r.jsx)(p.A.Title, {
                 children: V.intl.string(D.default.yv3DJJ)
             })]
         }), (0, r.jsxs)("div", {
             className: U.hQ,
-            children: [(0, r.jsx)(u.IpV, {
+            children: [(0, r.jsx)(d.IpV, {
                 className: U.DO,
                 children: Q.map(e => {
                     let {
@@ -143,16 +143,16 @@ function M(e) {
                                     title: V.intl.string(D.default.TV3Vm8), description: V.intl.string(D.default.STx9hp)
                                 }
                         }
-                    }(n), a = n === P.o9.LEVEL ? u.IpV : "div";
+                    }(n), a = n === P.o9.LEVEL ? d.IpV : "div";
                     return (0, r.jsxs)("div", {
                         className: U.lt,
                         children: [(0, r.jsxs)("div", {
                             className: U.kn,
-                            children: [(0, r.jsx)(u.Heading, {
+                            children: [(0, r.jsx)(d.Heading, {
                                 color: "text-strong",
                                 variant: "heading-lg/semibold",
                                 children: l
-                            }), (0, r.jsx)(u.Text, {
+                            }), (0, r.jsx)(d.Text, {
                                 color: "text-muted",
                                 variant: "text-sm/medium",
                                 children: o
@@ -175,7 +175,8 @@ function M(e) {
                                     case "singlePerk":
                                         return (0, r.jsx)(C.A, {
                                             guildId: t,
-                                            powerup: e.powerup
+                                            powerup: e.powerup,
+                                            badge: e.badge
                                         }, `powerup-${e.powerup.skuId}`);
                                     case "multiPerk":
                                         return (0, r.jsx)(S.A, {

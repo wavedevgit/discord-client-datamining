@@ -1,49 +1,56 @@
 /** chunk id: 999450 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => g
 });
 var a = n(627968),
     i = n(64700),
-    l = n(793574),
-    r = n(688810),
-    s = n(44724),
-    c = n(317560),
-    o = n(563988),
-    d = n(409626),
-    u = n(305080),
-    m = n(954506),
-    x = n(985018);
+    l = n(877227),
+    r = n(793574),
+    s = n(688810),
+    c = n(44724),
+    o = n(317560),
+    d = n(563988),
+    u = n(409626),
+    m = n(305080),
+    x = n(954506),
+    h = n(652215),
+    f = n(985018);
 
-function h(e) {
+function g(e) {
     let {
         trackAction: t
     } = e, {
-        socialLayerStorefrontRecommendationsData: n
-    } = (0, u.c)(), {
-        analyticsLocations: h
-    } = (0, r.Ay)([l.A.GAME_PROFILE]), g = i.useCallback(() => {
-        n?.guildId != null && (t(d.Ws.GameShop), (0, s.default)({
+        socialLayerStorefrontRecommendationsData: n,
+        closeModal: g
+    } = (0, m.c)(), {
+        analyticsLocations: _
+    } = (0, s.Ay)([r.A.GAME_PROFILE]), p = i.useCallback(() => {
+        n?.guildId != null && (t(u.Ws.GameShop), g(), (0, c.default)({
             guildId: n.guildId
         }))
-    }, [n, t]), f = i.useCallback((e, n) => {
-        t(d.Ws.GameShopItem), (0, c.R)({
+    }, [n, t, g]), v = i.useCallback((e, a) => {
+        let i = n?.guildId;
+        null != i && (t(u.Ws.GameShopItem), g(), (0, o.R)({
             skuId: e,
-            applicationId: n,
+            applicationId: a,
             isStorefront: !1,
-            analyticsLocations: h
-        })
-    }, [t, h]);
+            analyticsLocations: _,
+            onClose: () => {
+                (0, l.JK)().location.pathname.indexOf(h.BVt.CHANNELS_GAME_SHOP(i)) >= 0 && g()
+            }
+        }))
+    }, [t, g, _, n]);
     if (null == n) return null;
     let {
-        skuIds: _
+        skuIds: A
     } = n;
-    return (0, a.jsx)(m.A, {
-        title: x.intl.string(x.t.WDdlUb),
-        onClickViewAll: g,
-        children: (0, a.jsx)(o.R, {
-            skuIds: _,
-            analyticsLocations: h,
-            onCardClick: f
+    return (0, a.jsx)(x.A, {
+        title: f.intl.string(f.t.WDdlUb),
+        onClickViewAll: p,
+        children: (0, a.jsx)(d.R, {
+            skuIds: A,
+            analyticsLocations: _,
+            onCardClick: v
         })
     })
 }
