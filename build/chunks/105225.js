@@ -11,7 +11,7 @@ var i = n(627968),
     a = n.n(l),
     r = n(284009),
     o = n.n(r),
-    c = n(880013),
+    c = n(4208),
     d = n(311907),
     u = n(554146),
     h = n(397927),
@@ -52,8 +52,8 @@ var i = n(627968),
     z = n(496841),
     q = n(383831),
     X = n(905216),
-    J = n(577062),
-    Q = n(533978),
+    Q = n(577062),
+    J = n(533978),
     $ = n(958449),
     Z = n(970636),
     ee = n(996744),
@@ -78,7 +78,7 @@ var i = n(627968),
     ex = n(652215),
     eE = n(806931),
     eC = n(49999),
-    eI = n(702167);
+    eI = n(776912);
 
 function eN(e, t) {
     if (es.Ay.isVideoEnabled() === e) return;
@@ -469,7 +469,7 @@ let ej = function(e) {
                             } = e, {
                                 isShown: s
                             } = t;
-                            return (0, i.jsx)(J.A, {
+                            return (0, i.jsx)(Q.A, {
                                 ref: eu,
                                 centerButton: !0,
                                 onPopoutClick: V ? null : n,
@@ -535,7 +535,7 @@ let ej = function(e) {
                         idle: c?.idle ?? !0,
                         whichPopoutIsOpen: _,
                         setWhichPopoutIsOpen: p
-                    }), ei && (0, i.jsx)(Q.A, {
+                    }), ei && (0, i.jsx)(J.A, {
                         channel: t,
                         themeable: !0,
                         whichPopoutIsOpen: _,

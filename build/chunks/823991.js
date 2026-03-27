@@ -1,55 +1,55 @@
 /** chunk id: 823991 params = (module,exports,require) **/
 t.d(n, {
-    A: () => o
+    A: () => _
 });
-var l = t(627968);
+var a = t(627968);
 t(64700);
 var i = t(503698),
-    s = t.n(i),
-    a = t(397927),
-    r = t(985018),
-    c = t(157033);
+    r = t.n(i),
+    c = t(397927),
+    l = t(985018),
+    o = t(894692);
 
-function o(e) {
+function _(e) {
     let {
         guild: n,
         speakers: t,
         speakerCount: i,
-        className: o
-    } = e, d = t.slice(0, 5), u = d.map(e => (0, l.jsxs)("div", {
-        className: c.dq,
-        children: [(0, l.jsx)(a.euF, {
+        className: _
+    } = e, s = t.slice(0, 5), d = s.map(e => (0, a.jsxs)("div", {
+        className: o.dq,
+        children: [(0, a.jsx)(c.euF, {
             src: e?.user?.getAvatarURL(n.id, 20),
-            size: a._3J.SIZE_20,
-            className: c.my,
+            size: c._3J.SIZE_20,
+            className: o.my,
             "aria-label": `${e?.userNick}-avatar`
-        }), (0, l.jsx)("div", {
-            className: c.CU,
-            children: (0, l.jsx)(a.Text, {
+        }), (0, a.jsx)("div", {
+            className: o.CU,
+            children: (0, a.jsx)(c.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",
-                className: c.br,
+                className: o.br,
                 children: e?.userNick
             })
         })]
-    }, e?.user?.id)), h = i - d.length;
-    return (0, l.jsxs)("div", {
-        className: s()(c.Vg, o),
-        children: [u, h > 0 && (0, l.jsxs)("div", {
-            className: c.dq,
-            children: [(0, l.jsx)("div", {
-                className: c.Ko,
-                children: (0, l.jsx)(a.cNw, {
+    }, e?.user?.id)), u = i - s.length;
+    return (0, a.jsxs)("div", {
+        className: r()(o.Vg, _),
+        children: [d, u > 0 && (0, a.jsxs)("div", {
+            className: o.dq,
+            children: [(0, a.jsx)("div", {
+                className: o.Ko,
+                children: (0, a.jsx)(c.cNw, {
                     size: "custom",
                     color: "currentColor",
                     height: 12
                 })
-            }), (0, l.jsx)(a.Text, {
+            }), (0, a.jsx)(c.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",
-                className: c.br,
-                children: r.intl.format(r.t["185ggO"], {
-                    count: h
+                className: o.br,
+                children: l.intl.format(l.t["185ggO"], {
+                    count: u
                 })
             })]
         })]

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(64700),
     i = n(568065),
-    s = n(136708),
-    l = n(985018);
+    l = n(333354),
+    s = n(985018);
 
 function o(e, t, n) {
     return r.useMemo(() => t.sourceEntitlement?.ends_at != null ? {
@@ -16,11 +16,11 @@ function o(e, t, n) {
         removingAt: e.storeRemovalDate
     } : t.type === i.b_.LEVEL_ACTIVATED ? {
         type: "active",
-        statusText: l.intl.formatToPlainString(s.default.WRRYUT, {
-            perkName: t.sourcePowerup?.title ?? l.intl.string(l.t.BfF6ED)
+        statusText: s.intl.formatToPlainString(l.default.WRRYUT, {
+            perkName: t.sourcePowerup?.title ?? s.intl.string(s.t.BfF6ED)
         })
     } : t.type !== i.b_.INACTIVE ? {
         type: "active",
-        statusText: l.intl.string(s.default.FFLkmx)
+        statusText: s.intl.string(l.default.FFLkmx)
     } : void 0, [t, n, e])
 }

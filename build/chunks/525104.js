@@ -1,34 +1,35 @@
 /** chunk id: 525104 params = (module,exports,require) **/
-s.d(t, {
+"use strict";
+n.d(t, {
     A: () => o
-}), s(321073);
-var n = s(64700),
-    a = s(311907),
-    r = s(555337),
-    l = s(645619),
-    i = s(743981);
+}), n(321073);
+var i = n(64700),
+    s = n(311907),
+    l = n(555337),
+    r = n(645619),
+    a = n(743981);
 
 function o() {
-    let e = (0, a.bG)([r.A], () => r.A.getGuild()),
-        t = (0, a.bG)([l.A], () => l.A.getStateForGuild(e?.id)?.allPowerups);
-    return (0, n.useMemo)(() => {
-        let s = i.hc.map(e => ({
+    let e = (0, s.bG)([l.A], () => l.A.getGuild()),
+        t = (0, s.bG)([r.A], () => r.A.getStateForGuild(e?.id)?.allPowerups);
+    return (0, i.useMemo)(() => {
+        let n = a.hc.map(e => ({
                 kind: e
             })),
-            n = [];
-        return e?.features == null || Object.keys(i.Tf).forEach(a => {
-            let r = i.Tf[a],
-                l = i.kO[a],
-                o = t?.[l],
-                c = o?.title,
-                d = r.map(e => ({
+            i = [];
+        return e?.features == null || Object.keys(a.Tf).forEach(s => {
+            let l = a.Tf[s],
+                r = a.kO[s],
+                o = t?.[r],
+                d = o?.title,
+                c = l.map(e => ({
                     kind: e,
-                    packName: c
+                    packName: d
                 }));
-            e.features.has(a) ? s.push(...d) : n.push(...d)
+            e.features.has(s) ? n.push(...c) : i.push(...c)
         }), {
-            unlockedBadges: s,
-            lockedBadges: n
+            unlockedBadges: n,
+            lockedBadges: i
         }
     }, [e?.features, t])
 }

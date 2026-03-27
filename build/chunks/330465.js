@@ -8,7 +8,7 @@ var i = n(627968),
     l = n(503698),
     a = n.n(l),
     r = n(131346),
-    o = n(880013),
+    o = n(4208),
     c = n(837381),
     d = n(607399),
     u = n(417597),
@@ -34,7 +34,7 @@ var i = n(627968),
     O = n(65611),
     L = n(652215),
     M = n(985018),
-    D = n(135759);
+    D = n(604418);
 let G = {
     analyticsSource: {
         page: L.liQ.GUILD_CHANNEL,
@@ -47,7 +47,7 @@ function U(e, t) {
     (0, _.L3)(e, async () => {
         let {
             default: e
-        } = await Promise.all([n.e("43600"), n.e("68587"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("33144"), n.e("35894"), n.e("50796"), n.e("8458"), n.e("11810"), n.e("4260"), n.e("30453"), n.e("56475"), n.e("54469"), n.e("70522")]).then(n.bind(n, 544676));
+        } = await Promise.all([n.e("43600"), n.e("68587"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("91872"), n.e("35894"), n.e("50796"), n.e("8458"), n.e("11810"), n.e("34656"), n.e("30453"), n.e("56475"), n.e("54469"), n.e("48892")]).then(n.bind(n, 544676));
         return n => (0, i.jsx)(e, {
             ...n,
             guild: t
@@ -73,16 +73,16 @@ let P = s.memo(function(e) {
         draggable: z = !1,
         sorting: q = !1,
         preloadOnClick: X = !0,
-        guildJoinRequestStatus: J,
-        height: Q,
+        guildJoinRequestStatus: Q,
+        height: J,
         "aria-setsize": $,
         "aria-posinset": Z
     } = e, {
         id: ee,
         parentId: et
     } = t, en = e.upperBadge ?? (F ? (0, O.em)() : null != H ? (0, O.oi)(H) : void 0), ei = e.lowerBadge ?? void 0;
-    null == ei && K > 0 ? ei = (0, O.wN)(K, W ? A.LU0.colors.BACKGROUND_MOD_STRONG.css : A.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css) ?? void 0 : null == ei && null != J && (ei = (0, O.eW)({
-        guildJoinRequestStatus: J
+    null == ei && K > 0 ? ei = (0, O.wN)(K, W ? A.LU0.colors.BACKGROUND_MOD_STRONG.css : A.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css) ?? void 0 : null == ei && null != Q && (ei = (0, O.eW)({
+        guildJoinRequestStatus: Q
     }) ?? void 0);
     let es = e.lowerBadgeSize ?? {
             width: (0, A.o6S)(K)
@@ -215,7 +215,7 @@ let P = s.memo(function(e) {
             } : void 0,
             "data-dnd-name": w.name,
             style: {
-                scale: null == Q ? 1 : Q
+                scale: null == J ? 1 : J
             },
             "data-drop-hovering": eA,
             className: a()(D.rN, {
@@ -232,7 +232,7 @@ let P = s.memo(function(e) {
             })
         }) : (0, i.jsx)(o.animated.div, {
             style: {
-                scale: null == Q ? 1 : Q
+                scale: null == J ? 1 : J
             },
             className: a()(D.rN, {
                 [D.p9]: q,

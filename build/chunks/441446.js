@@ -1,37 +1,37 @@
 /** chunk id: 441446 params = (module,exports,require) **/
-a.d(t, {
-    Hq: () => d,
-    LB: () => x,
-    MG: () => u,
-    nB: () => o,
+l.d(t, {
+    Hq: () => u,
+    LB: () => p,
+    MG: () => d,
+    nB: () => s,
     wn: () => c
 });
-var l = a(627968);
-a(64700);
-var n = a(503698),
-    r = a.n(n),
-    s = a(397927),
-    i = a(810583);
-let o = () => (0, l.jsx)("hr", {
-        className: i.ts
+var a = l(627968);
+l(64700);
+var n = l(503698),
+    r = l.n(n),
+    i = l(397927),
+    o = l(764432);
+let s = () => (0, a.jsx)("hr", {
+        className: o.ts
     }),
-    d = e => {
+    u = e => {
         let {
             label: t,
-            children: a,
+            children: l,
             direction: n = "horizontal",
-            className: d
+            className: u
         } = e;
-        return (0, l.jsxs)(l.Fragment, {
-            children: [(0, l.jsx)(o, {}), (0, l.jsx)(s.Text, {
+        return (0, a.jsxs)(a.Fragment, {
+            children: [(0, a.jsx)(s, {}), (0, a.jsx)(i.Text, {
                 variant: "text-md/semibold",
-                className: i.cW,
+                className: o.cW,
                 children: t
-            }), (0, l.jsx)("div", {
-                className: r()(i.kL, d, {
-                    [i.YG]: "vertical" === n
+            }), (0, a.jsx)("div", {
+                className: r()(o.kL, u, {
+                    [o.YG]: "vertical" === n
                 }),
-                children: a
+                children: l
             })]
         })
     },
@@ -39,16 +39,16 @@ let o = () => (0, l.jsx)("hr", {
         let {
             children: t
         } = e;
-        return (0, l.jsx)("div", {
-            className: i.uW,
+        return (0, a.jsx)("div", {
+            className: o.uW,
             children: t
         })
     },
-    u = e => (0, l.jsx)("div", {
-        className: i.wO,
+    d = e => (0, a.jsx)("div", {
+        className: o.wO,
         children: e.children
     }),
-    x = e => (0, l.jsx)("fieldset", {
-        className: i.lI,
+    p = e => (0, a.jsx)("fieldset", {
+        className: o.lI,
         children: e.children
     })

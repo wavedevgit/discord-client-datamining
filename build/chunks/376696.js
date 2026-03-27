@@ -37,8 +37,8 @@ var i = n(627968),
     D = n(652215),
     G = n(699976),
     U = n(985018),
-    P = n(71228),
-    w = n(467935);
+    P = n(510495),
+    w = n(442078);
 
 function k(e) {
     let {
@@ -59,10 +59,10 @@ function k(e) {
         z = Array.from((0, u.Rz)(Y).values()),
         q = (0, I.W)(),
         X = (0, N.i)(e => e.showSelfActivity),
-        [J, Q] = (0, r.yK)([S.A], () => [S.A.getStreamForUser(n.id, t.getGuildId()), S.A.getActiveStreamForUser(n.id, t.getGuildId())], [t, n.id]),
+        [Q, J] = (0, r.yK)([S.A], () => [S.A.getStreamForUser(n.id, t.getGuildId()), S.A.getActiveStreamForUser(n.id, t.getGuildId())], [t, n.id]),
         [$, Z] = (0, r.yK)([R.A, v.A, y.A, A.default], () => (0, m.eo)(t, R.A, v.A, y.A, A.default)),
         ee = (0, r.bG)([T.default], () => T.default.getId()),
-        et = (0, r.bG)([j.A], () => (0, _.nr)(J, j.A), [J]),
+        et = (0, r.bG)([j.A], () => (0, _.nr)(Q, j.A), [Q]),
         en = (0, d.m)(n, k ?? et),
         ei = (0, r.bG)([O.Ay], () => O.Ay.getVoiceStatesForChannel(t).find(e => e.user.id === n.id) ?? null, [t, n.id]),
         es = s.useMemo(() => null != ei ? [ei] : [], [ei]),
@@ -78,7 +78,7 @@ function k(e) {
         er = (0, r.bG)([E.A], () => E.A.getDetectableIdsToApplicationIds()),
         eo = (0, r.bG)([T.default], () => T.default.getId() === n.id && !X),
         ec = (0, h.r9)() && (0, h.UK)(t.id),
-        ed = null != J && !ec,
+        ed = null != Q && !ec,
         eu = en.length + z.length > 0,
         eh = null != B,
         eA = ed || eu || eh && el;
@@ -108,9 +108,9 @@ function k(e) {
                 analyticsSource: "VoiceUserActivities",
                 onAction: l
             })]
-        }) : null, null == J || null == V || ec ? null : (0, i.jsx)(p.P, {
-            stream: J,
-            activeStream: Q,
+        }) : null, null == Q || null == V || ec ? null : (0, i.jsx)(p.P, {
+            stream: Q,
+            activeStream: J,
             streamActivity: et,
             user: n,
             currentUserId: ee,

@@ -1,19 +1,18 @@
 /** chunk id: 933337 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => a
+    A: () => s
 });
-var i = n(627968),
-    s = n(64700),
+var r = n(627968),
+    i = n(64700),
     l = n(397927);
 
-function a(e, t) {
-    return s.useCallback(() => {
+function s(e, t) {
+    return i.useCallback(() => {
         (0, l.mMO)(async () => {
             let {
-                default: s
+                default: i
             } = await n.e("74488").then(n.bind(n, 285899));
-            return n => (0, i.jsx)(s, {
+            return n => (0, r.jsx)(i, {
                 guildId: e,
                 powerup: t,
                 ...n

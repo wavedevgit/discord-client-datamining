@@ -37,7 +37,7 @@ var i = n(627968),
     D = n(145408),
     G = n(652215),
     U = n(985018),
-    P = n(981248);
+    P = n(826427);
 
 function w(e, t, n) {
     return 0 === t.length ? null : (0, i.jsxs)("div", {
@@ -77,8 +77,8 @@ function V(e) {
         {
             voiceUsersToShow: q,
             stageSpeakers: X,
-            numStageListeners: J,
-            streamUsersToShow: Q,
+            numStageListeners: Q,
+            streamUsersToShow: J,
             embeddedActivitiesUsers: $
         } = (t = Y.id, n = (0, c.yK)([j.Ay, S.A], () => [...j.Ay.getChannels(t)[j.vM].filter(e => {
             let {
@@ -149,11 +149,11 @@ function V(e) {
                     className: P._I,
                     color: "text-default",
                     variant: "text-xs/normal",
-                    children: J
+                    children: Q
                 })]
             })]
         }),
-        et = w(u.Fzq, Q, z),
+        et = w(u.Fzq, J, z),
         en = w(u.k9F, $, z),
         {
             isMuted: ei,

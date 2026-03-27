@@ -1,5 +1,6 @@
 /** chunk id: 490111 params = (module,exports,require) **/
-t.d(n, {
+"use strict";
+n.d(t, {
     A: () => i
 });
 let i = "https://cdn.discordapp.com/assets/content/f58d64b879e61a43468e7bf2066612c3719ede17c3c3f140c1bebdeb180abda4.png"

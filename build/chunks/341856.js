@@ -15,7 +15,7 @@ var l = a(627968),
     A = a(818348),
     u = a(396574),
     I = a(855522),
-    k = a(899397);
+    k = a(330148);
 let h = "Footer Navigation",
     p = {
         BLURPLE: "Blurple",

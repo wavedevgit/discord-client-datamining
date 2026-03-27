@@ -1,16 +1,16 @@
 /** chunk id: 89305 params = (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => l
 });
 var r = n(64700),
     i = n(621466);
 
-function s(e) {
+function l(e) {
     let {
         targetRef: t,
         onShouldClose: n,
-        topThreshold: s = 40,
-        bottomThreshold: l = 60,
+        topThreshold: l = 40,
+        bottomThreshold: s = 60,
         enabled: o = !0
     } = e;
     r.useEffect(() => {
@@ -25,9 +25,9 @@ function s(e) {
                     e = a;
                     return
                 }
-                let d = a - e,
-                    u = Math.abs(d);
-                (d < 0 && u > s || d > 0 && u > l) && n()
+                let u = a - e,
+                    d = Math.abs(u);
+                (u < 0 && d > l || u > 0 && d > s) && n()
             };
         return document.addEventListener("scroll", r, {
             passive: !0,
@@ -37,5 +37,5 @@ function s(e) {
                 capture: !0
             })
         }
-    }, [o, t, n, s, l])
+    }, [o, t, n, l, s])
 }

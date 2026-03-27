@@ -29,7 +29,7 @@ var i = n(627968),
     I = n(879124),
     N = n(652215),
     b = n(985018),
-    S = n(71735);
+    S = n(458004);
 
 function T(e) {
     e.stopPropagation()
@@ -73,7 +73,7 @@ let v = s.memo(function(e) {
                 null != t && (0, h.mMO)(async () => {
                     let {
                         default: s
-                    } = await Promise.all([n.e("64233"), n.e("52719")]).then(n.bind(n, 409200));
+                    } = await Promise.all([n.e("64233"), n.e("38405")]).then(n.bind(n, 409200));
                     return n => (0, i.jsx)(s, {
                         ...n,
                         channelType: e,

@@ -38,9 +38,9 @@ var i = n(627968),
     G = n(582904),
     U = n(652215),
     P = n(985018),
-    w = n(97220),
-    k = n(467935),
-    V = n(276170);
+    w = n(997893),
+    k = n(442078),
+    V = n(303621);
 let B = "VoiceInviteSuggestionsPopover";
 
 function H(e) {
@@ -77,7 +77,7 @@ function H(e) {
         o()(null != e, "VoiceInviteSuggestionsPopover must be used in context of a guild"), (0, h.mMO)(async () => {
             let {
                 default: s
-            } = await Promise.all([n.e("43600"), n.e("28136"), n.e("93662")]).then(n.bind(n, 234355));
+            } = await Promise.all([n.e("43600"), n.e("28136"), n.e("89886")]).then(n.bind(n, 234355));
             return n => (0, i.jsx)(s, {
                 ...n,
                 guild: e,
@@ -172,10 +172,10 @@ function F(e) {
             activityStatusIcon: null == e ? void 0 : (0, f.f)(e)
         }
     }, [K, z]), {
-        voiceChannel: J
+        voiceChannel: Q
     } = (0, p.A)({
         userId: n.id
-    }), Q = (0, I.Ay)(J), $ = (0, h.S31)(h.clD.ONLINE), Z = "success" === E || "sending" === E, ee = s.useCallback(e => {
+    }), J = (0, I.Ay)(Q), $ = (0, h.S31)(h.clD.ONLINE), Z = "success" === E || "sending" === E, ee = s.useCallback(e => {
         e.stopPropagation(), k || F()
     }, [F, k]), et = s.useCallback(async () => {
         if (Z) return;
@@ -220,7 +220,7 @@ function F(e) {
         ea = P.intl.string(P.t.jYnGPG),
         er = W !== h.clD.OFFLINE ? W : void 0,
         eo = K && null != q.text,
-        ec = K && null != J && null != Q;
+        ec = K && null != Q && null != J;
     return (0, i.jsxs)(h.DUT, {
         innerRef: o,
         tag: "li",
@@ -251,7 +251,7 @@ function F(e) {
                 children: [ec ? (0, i.jsx)(S.A, {
                     size: "custom",
                     color: $,
-                    channel: J,
+                    channel: Q,
                     className: w.RI
                 }) : null != X ? (0, i.jsx)(g.A, {
                     icon: X,
@@ -260,7 +260,7 @@ function F(e) {
                     variant: "text-xs/medium",
                     color: "text-status-online",
                     lineClamp: 1,
-                    children: ec ? Q : q.text
+                    children: ec ? J : q.text
                 })]
             })]
         }), "sending" === E && (0, i.jsx)("div", {

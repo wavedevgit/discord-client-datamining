@@ -1,26 +1,26 @@
 /** chunk id: 863439 params = (module,exports,require) **/
 n.d(t, {
-    A: () => l,
+    A: () => r,
     z: () => o
 });
-var a = n(417597),
-    i = n(253932),
-    r = n(576705),
-    s = n(652215);
+var i = n(417597),
+    s = n(253932),
+    l = n(576705),
+    a = n(652215);
 
-function l(e, t) {
+function r(e, t) {
     switch (e) {
-        case s.P6Q.ALWAYS:
+        case a.P6Q.ALWAYS:
             return !0;
-        case s.P6Q.IF_MODERATOR:
+        case a.P6Q.IF_MODERATOR:
             return t;
-        case s.P6Q.ON_CLICK:
+        case a.P6Q.ON_CLICK:
         default:
             return !1
     }
 }
 
 function o(e) {
-    let t = (0, a.bG)([r.A], () => r.A.can(s.xBc.MANAGE_MESSAGES, e));
-    return !l(i.gs.useSetting(), t)
+    let t = (0, i.bG)([l.A], () => l.A.can(a.xBc.MANAGE_MESSAGES, e));
+    return !r(s.gs.useSetting(), t)
 }

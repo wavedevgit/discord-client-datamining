@@ -1,62 +1,62 @@
 /** chunk id: 391209 params = (module,exports,require) **/
 r.d(t, {
-    A: () => b
+    A: () => k
 });
 var a = r(627968),
     s = r(64700),
     n = r(503698),
     o = r.n(n),
     i = r(397927),
-    l = r(503852),
-    c = r(363487),
+    c = r(503852),
+    l = r(363487),
     d = r(998418),
     u = r(193157),
     p = r(439156),
     _ = r(568065),
     m = r(985018),
-    f = r(750295),
-    I = r(107836);
+    I = r(512536),
+    b = r(107836);
 
-function b(e) {
+function k(e) {
     let {
         guildId: t,
         powerup: r,
         onClose: n,
-        ...b
-    } = e, [k, x] = s.useState(void 0), v = (0, d.Ay)(t, r), T = v.type === _.b_.TIER_OVERRIDE_ACTIVATED, A = (0, c.A)(t), E = null == v.sourceEntitlement || !A;
-    return (0, l.Z)(t, r, l.q.DETAIL), (0, a.jsxs)(i.EOs, {
+        ...k
+    } = e, [x, f] = s.useState(void 0), T = (0, d.Ay)(t, r), v = T.type === _.b_.TIER_OVERRIDE_ACTIVATED, A = (0, l.A)(t), E = null == T.sourceEntitlement || !A;
+    return (0, c.Z)(t, r, c.q.DETAIL), (0, a.jsxs)(i.EOs, {
         "data-migration-pending": !0,
-        className: f.yl,
+        className: I.yl,
         size: i.rIJ.DYNAMIC,
-        ...b,
+        ...k,
         parentComponent: "GuildPowerupLevelModal",
         children: [(0, a.jsxs)(i.$mQ, {
             "data-migration-pending": !0,
-            className: f._F,
+            className: I._F,
             scrollbarType: "none",
             children: [(0, a.jsx)("img", {
                 alt: "",
-                src: I,
-                className: f.v5
+                src: b,
+                className: I.v5
             }), (0, a.jsxs)("div", {
-                className: f.hQ,
+                className: I.hQ,
                 children: [(0, a.jsx)(i.Heading, {
                     variant: "heading-xl/extrabold",
                     children: r.title
                 }), (0, a.jsx)(u.A, {
                     powerup: r
-                }), null != k && (0, a.jsx)(i.Text, {
+                }), null != x && (0, a.jsx)(i.Text, {
                     color: "text-feedback-critical",
                     variant: "text-sm/semibold",
-                    children: k
+                    children: x
                 }), (0, a.jsxs)("div", {
-                    className: o()(f.qr, {
-                        [f.r9]: E
+                    className: o()(I.qr, {
+                        [I.r9]: E
                     }),
-                    children: [!T && A && (0, a.jsx)(p.A, {
+                    children: [!v && A && (0, a.jsx)(p.A, {
                         guildId: t,
                         powerup: r,
-                        onError: x,
+                        onError: f,
                         grow: !1,
                         compact: !E
                     }), (0, a.jsx)(i.Button, {
@@ -68,7 +68,7 @@ function b(e) {
             })]
         }), (0, a.jsx)(i.s_y, {
             "data-migration-pending": !0,
-            className: f.VN,
+            className: I.VN,
             onClick: n
         })]
     })

@@ -7,7 +7,7 @@ var r = n(627968),
     s = n(503698),
     a = n.n(s),
     l = n(771253),
-    o = n(880013),
+    o = n(4208),
     u = n(942381),
     c = n(311907),
     d = n(876230),
@@ -41,7 +41,7 @@ var r = n(627968),
     U = n(654487),
     Q = n(838541),
     B = n(985018),
-    F = n(155350);
+    F = n(655833);
 let K = {
     tension: 250,
     friction: 5,
@@ -74,7 +74,7 @@ function Y(e) {
         targetRef: eu
     } = (0, v.O7)(), [ec, ed] = i.useState(!0 === s ? O.Q6.PLAYING : O.Q6.PAUSED), [em, eE] = i.useState(!1), [ep, e_] = i.useState(!1), ef = (0, y.Yh)(W), [ev, eS] = i.useState(ef.percentComplete), eh = i.useCallback(e => {
         eU(null), eS(e)
-    }, []), [eg, eA] = i.useState(!1), [ex, eC] = i.useState(!0), [eT, eb] = i.useState(!1), [eD, ey] = i.useState([]), [eI, eN] = i.useState(S.A.getEffectiveConnectionSpeed()), [eL, eR] = i.useState(0), [eO, eM] = i.useState(0), [ek, ew] = i.useState(!1), [eP, ej] = i.useState(!1), [eV, eU] = i.useState(null), eQ = i.useRef(!0), eB = i.useRef(null), eF = i.useRef(null), eK = (0, x.Kr)(e => e.videoProgress[W.id] ?? x.yc, u.x), eY = (0, x.Kr)(e => e.setVideoProgress), e$ = (0, x.Kr)(e => e.muted), eH = (0, x.Kr)(e => e.volume), eG = (0, c.bG)([_.A], () => _.A.useReducedMotion), eq = (0, i.useRef)(null), eW = (0, i.useRef)(null), ez = i.useRef(!0), eJ = W.userStatus?.completedAt != null, eX = i.useMemo(() => W.config.features.includes(U.Li.FULL_EPISODE_VIDEO_QUEST), [W.config.features]), eZ = i.useRef(!1), [e0, e1] = i.useState(null), [e6, e7] = i.useState(!1), [e5, e4] = i.useState(!1), [e3, e8] = i.useState(!1), [e9, e2] = i.useState(null), te = eJ ? eq.current?.duration ?? 0 : Math.max(eK.maxTimestampSec, ef.progressSeconds), tt = i.useMemo(() => (0, b.L)({
+    }, []), [eg, eA] = i.useState(!1), [ex, eC] = i.useState(!0), [eT, eb] = i.useState(!1), [eD, ey] = i.useState([]), [eI, eN] = i.useState(S.A.getEffectiveConnectionSpeed()), [eL, eR] = i.useState(0), [eO, eM] = i.useState(0), [ek, ew] = i.useState(!1), [eP, ej] = i.useState(!1), [eV, eU] = i.useState(null), eQ = i.useRef(!0), eB = i.useRef(null), eF = i.useRef(null), eK = (0, x.Kr)(e => e.videoProgress[W.id] ?? x.yc, u.x), eY = (0, x.Kr)(e => e.setVideoProgress), e$ = (0, x.Kr)(e => e.muted), eH = (0, x.Kr)(e => e.volume), eG = (0, c.bG)([_.A], () => _.A.useReducedMotion), eq = (0, i.useRef)(null), eW = (0, i.useRef)(null), ez = i.useRef(!0), eJ = W.userStatus?.completedAt != null, eX = i.useMemo(() => W.config.features.includes(U.Li.FULL_EPISODE_VIDEO_QUEST), [W.config.features]), eZ = i.useRef(!1), [e0, e1] = i.useState(null), [e6, e7] = i.useState(!1), [e4, e5] = i.useState(!1), [e3, e8] = i.useState(!1), [e9, e2] = i.useState(null), te = eJ ? eq.current?.duration ?? 0 : Math.max(eK.maxTimestampSec, ef.progressSeconds), tt = i.useMemo(() => (0, b.L)({
         quest: W,
         location: U.rE.VIDEO_MODAL
     }), [W]), tn = (0, m.g)(eJ, eK, ef.progressSeconds), [tr, ti] = i.useState(O.oA.MD), ts = {
@@ -137,7 +137,7 @@ function Y(e) {
             getCurrentVideoTime: tD,
             isPlaying: ec === O.Q6.PLAYING,
             isMetadataLoaded: e6,
-            isInitialSeekComplete: e5,
+            isInitialSeekComplete: e4,
             onAnalytics: th,
             emitIntervalMs: v.KI,
             minSegmentDurationMs: v._4
@@ -207,7 +207,7 @@ function Y(e) {
         }
     }, [tj]);
     let tQ = i.useCallback(e => {
-        null != eq.current && (tt.info(`[QV] | seekTimeline | timeSec: ${e}`), eU(e / (eq.current.duration ?? 1) * 100), ty(), eA(!0), e4(!1), eq.current.currentTime = e, eY(W.id, e, eq.current.duration))
+        null != eq.current && (tt.info(`[QV] | seekTimeline | timeSec: ${e}`), eU(e / (eq.current.duration ?? 1) * 100), ty(), eA(!0), e5(!1), eq.current.currentTime = e, eY(W.id, e, eq.current.duration))
     }, [eq, eY, W.id, ty, tt]);
     i.useEffect(() => {
         let e = eq.current;
@@ -311,8 +311,8 @@ function Y(e) {
         t1 = i.useMemo(() => (0, C.tW)(W, C.fY.VIDEO_PLAYER_CAPTION, void 0, !1), [W]),
         t6 = eJ || eK.maxTimestampSec >= (eq.current?.currentTime ?? 0) + 1,
         t7 = i.useMemo(() => null === (0, C.tW)(W, C.fY.VIDEO_PLAYER_TRANSCRIPT, void 0, !1), [W]),
-        t5 = ee ? 20 : 12,
-        t4 = 20 * !!ee,
+        t4 = ee ? 20 : 12,
+        t5 = 20 * !!ee,
         t3 = eJ && eP;
     return (0, r.jsx)(E.DUT, {
         className: F.W6,
@@ -400,7 +400,7 @@ function Y(e) {
                 onCanPlay: tG,
                 onCanPlayThrough: tG,
                 onSeeked: () => {
-                    tt.info("[QV] | handleSeeked"), e4(!0)
+                    tt.info("[QV] | handleSeeked"), e5(!0)
                 },
                 onAbort: () => t$(O.SB.ABORT),
                 onError: () => t$(O.SB.ERROR),
@@ -525,7 +525,7 @@ function Y(e) {
                 style: {
                     translateY: (0, o.to)([tq.to({
                         range: [0, 1],
-                        output: [-t4, -ts[tr]]
+                        output: [-t5, -ts[tr]]
                     })], e => `${e}px`)
                 },
                 children: (0, r.jsx)(E.Text, {
@@ -547,7 +547,7 @@ function Y(e) {
                         transform: (0, o.to)([tq.to({
                             range: [1, 0],
                             output: [0, 1]
-                        })], e => `translateY(-${e*t4}px)`)
+                        })], e => `translateY(-${e*t5}px)`)
                     },
                     children: (0, r.jsx)(j.A, {
                         percent: null != eV ? eV : ev,
@@ -574,7 +574,7 @@ function Y(e) {
                         paddingTop: (0, o.to)([tq.to({
                             range: [0, 1],
                             output: [0, 1]
-                        })], e => `${e*e*t5}px`),
+                        })], e => `${e*e*t4}px`),
                         paddingBottom: (0, o.to)([tq.to({
                             range: [0, 1],
                             output: [0, 1]

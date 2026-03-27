@@ -1,8 +1,8 @@
 /** chunk id: 966284 params = (module,exports,require) **/
 n.d(t, {
-    Z: () => a
+    Z: () => r
 });
-class a {
+class r {
     static getSiteKey(e) {
         return null != e ? e : "production" === window.GLOBAL_ENV.PROJECT_ENV ? "6LeYqFcqAAAAAD6iZesmNgVulsO4PkpBdr6NVG6M" : "6LdtfVMqAAAAAMurhtf2pDhK0oqD4eLqeQPh025y"
     }
@@ -11,8 +11,8 @@ class a {
             null != t && (n?.("recaptcha-element-exists-callback"), t());
             return
         }
-        let a = document.createElement("script");
-        a.src = `https://www.google.com/recaptcha/enterprise.js?render=${this.getSiteKey(e)}`, a.id = `recaptcha-script-${this.getSiteKey(e)}`, a.async = !0, a.defer = !0, document.body.appendChild(a), null != t && (a.onload = () => {
+        let r = document.createElement("script");
+        r.src = `https://www.google.com/recaptcha/enterprise.js?render=${this.getSiteKey(e)}`, r.id = `recaptcha-script-${this.getSiteKey(e)}`, r.async = !0, r.defer = !0, document.body.appendChild(r), null != t && (r.onload = () => {
             n?.("recaptcha-script-onload-callback"), t()
         })
     }

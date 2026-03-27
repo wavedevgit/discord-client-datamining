@@ -44,8 +44,8 @@ var i = n(627968),
     V = n(652215),
     B = n(49999),
     H = n(985018),
-    F = n(738072),
-    K = n(645802);
+    F = n(294726),
+    K = n(868509);
 
 function W(e, t, n) {
     return null != e && (null != n ? n.applicationId === e.id : null != t && (t.application_id === e.id || e.linkedGames?.some(e => e.id === t.application_id)) && t.type === V.$pd.PLAYING && (0, _.A)(t, V.jUm.JOIN))
@@ -64,8 +64,8 @@ let Y = s.memo(function(e) {
             activity: M,
             application: D,
             analyticsContext: Y,
-            inviteButtonRef: J,
-            accountLinkButtonRef: Q,
+            inviteButtonRef: Q,
+            accountLinkButtonRef: J,
             startAuthorization: $,
             canStartAuthorization: Z,
             hasAlreadyLinked: ee,
@@ -218,7 +218,7 @@ let Y = s.memo(function(e) {
                 })
             }(),
             ey = el && null == I ? (0, i.jsx)(k.A, {
-                ref: J,
+                ref: Q,
                 tooltipText: H.intl.string(H.t["hC/Zey"]),
                 onClick: em,
                 icon: u.DpX
@@ -244,12 +244,12 @@ let Y = s.memo(function(e) {
                     }, 9e4))
                 },
                 connectionApp: et,
-                ref: Q
+                ref: J
             }),
             eM = !Z || ee ? null : (0, i.jsx)(d.AM, {
                 title: H.intl.string(H.t.ULvRFd),
                 body: H.intl.string(H.t["HJJDr+"]),
-                targetElementRef: Q,
+                targetElementRef: J,
                 position: "top",
                 align: "center",
                 caretConfig: {

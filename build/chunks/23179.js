@@ -35,7 +35,7 @@ var i = n(627968),
     L = n(652215),
     M = n(670455),
     D = n(985018),
-    G = n(694053);
+    G = n(448006);
 class U extends s.Component {
     componentDidMount() {
         this.autoAnalytics()
@@ -285,8 +285,8 @@ let V = [],
                 }), N(e)
             }, [N, t, a]),
             X = Math.floor(n.offset / L.T_y),
-            J = K && X >= F,
-            Q = F + 1,
+            Q = K && X >= F,
+            J = F + 1,
             $ = (0, r.yK)([T.A], () => {
                 if (0 !== n.offset) return V;
                 let e = u.length;
@@ -321,11 +321,11 @@ let V = [],
             }), (0, i.jsxs)(d.T7Y, {
                 ref: M,
                 className: G.XG,
-                children: [J && !n.isSearching && (0, i.jsx)(d.po8, {
+                children: [Q && !n.isSearching && (0, i.jsx)(d.po8, {
                     className: G.VC,
                     messageType: d.YCn.WARNING,
                     children: D.intl.formatToPlainString(D.t["E+2azY"], {
-                        maxPages: Q
+                        maxPages: J
                     })
                 }), et && (0, i.jsx)(d.po8, {
                     className: G.QR,

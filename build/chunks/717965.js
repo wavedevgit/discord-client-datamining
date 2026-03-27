@@ -50,8 +50,8 @@ var i = n(627968),
     z = n(776781),
     q = n(233993),
     X = n(312006),
-    J = n(446600),
-    Q = n(96566),
+    Q = n(446600),
+    J = n(96566),
     $ = n(302884),
     Z = n(30108),
     ee = n(39938),
@@ -63,7 +63,7 @@ var i = n(627968),
     ea = n(361619),
     er = n(806931),
     eo = n(985018),
-    ec = n(393187),
+    ec = n(775786),
     ed = n(117816);
 
 function eu(e) {
@@ -158,7 +158,7 @@ function em(e) {
         onSelect: n
     } = e, a = (0, S.Us)(), {
         canManageGuildEvent: c
-    } = (0, T.nr)(t), d = (0, l.bG)([J.A], () => J.A.getStageInstanceByChannel(t.id), [t.id]), u = (0, l.bG)([I.Ay], () => I.Ay.getGuildScheduledEvent(d?.guild_scheduled_event_id)), {
+    } = (0, T.nr)(t), d = (0, l.bG)([Q.A], () => Q.A.getStageInstanceByChannel(t.id), [t.id]), u = (0, l.bG)([I.Ay], () => I.Ay.getGuildScheduledEvent(d?.guild_scheduled_event_id)), {
         suppress: m
     } = (0, R.A)(t), _ = V.default.getId(), [p] = (0, ea.A)(t), g = X.Ay.isModerator(_, t.id), E = (0, z.Ni)(t.id), C = c(u), {
         parentAnalyticsLocation: N
@@ -286,7 +286,7 @@ let eg = s.memo(function(e) {
     } = (0, v.A)(), I = (0, j.A)(t), {
         limit: N,
         reachedLimit: b
-    } = (0, y.A)(t), S = (0, l.bG)([K.default], () => K.default.getCurrentUser()), T = (0, l.bG)([B.Ay], () => (0, C.A)(B.Ay)), D = (0, l.bG)([F.A], () => F.A.getVoiceChannelId() === t.id, [t.id]), U = (0, l.bG)([m.A], () => m.A.getStreamParticipants(t.id)[0], [t.id]), P = (0, Q.qT)(t.id), V = N > 0, H = b && !P || null != U && U.user.id !== S?.id, W = (0, x.s)("AudioDeviceMenu", n, {
+    } = (0, y.A)(t), S = (0, l.bG)([K.default], () => K.default.getCurrentUser()), T = (0, l.bG)([B.Ay], () => (0, C.A)(B.Ay)), D = (0, l.bG)([F.A], () => F.A.getVoiceChannelId() === t.id, [t.id]), U = (0, l.bG)([m.A], () => m.A.getStreamParticipants(t.id)[0], [t.id]), P = (0, J.qT)(t.id), V = N > 0, H = b && !P || null != U && U.user.id !== S?.id, W = (0, x.s)("AudioDeviceMenu", n, {
         entrypoint: er.GK.CARET
     }), Y = s.useRef(null), q = s.useRef(null);
     if (null == S) return null;

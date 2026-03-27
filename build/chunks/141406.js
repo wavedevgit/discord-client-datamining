@@ -4,18 +4,18 @@ n.d(t, {
 });
 var r = n(64700),
     i = n(311907),
-    s = n(403362),
-    l = n(645619),
+    l = n(403362),
+    s = n(645619),
     o = n(904629);
 
 function a(e) {
-    let t = (0, i.bG)([l.A], () => l.A.getStateForGuild(e));
+    let t = (0, i.bG)([s.A], () => s.A.getStateForGuild(e));
     return r.useMemo(() => {
         if (null == t) return [];
         let {
             allPowerups: e,
             unlockedPowerups: n
         } = t;
-        return (0, o.k)(Object.values(n)).map(t => e[t.sku_id]).filter(s.Vq)
+        return (0, o.k)(Object.values(n)).map(t => e[t.sku_id]).filter(l.Vq)
     }, [t])
 }

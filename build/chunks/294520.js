@@ -1,96 +1,95 @@
 /** chunk id: 294520 params = (module,exports,require) **/
-"use strict";
-a.d(t, {
-    K6: () => C,
-    eJ: () => g,
+n.d(t, {
+    K6: () => E,
+    eJ: () => I,
     iW: () => p,
-    rx: () => I,
+    rx: () => T,
     sC: () => f,
-    tt: () => b
-}), a(938796);
-var n = a(665260),
-    r = a(417597),
-    i = a(930125),
-    o = a(338717),
-    s = a(282108),
-    c = a(256265),
-    l = a(253932),
-    _ = a(576705),
-    d = a(863439),
-    u = a(652215),
-    m = a(985018);
+    tt: () => h
+}), n(938796);
+var r = n(665260),
+    i = n(417597),
+    a = n(930125),
+    o = n(338717),
+    l = n(282108),
+    _ = n(256265),
+    s = n(253932),
+    c = n(576705),
+    d = n(863439),
+    u = n(652215),
+    m = n(985018);
 let p = (e, t) => {
         let {
-            spoiler: a,
-            flags: r = 0
-        } = e, c = (0, s.b)({
-            type: i.D.Attachment,
+            spoiler: n,
+            flags: i = 0
+        } = e, _ = (0, l.b)({
+            type: a.D.Attachment,
             media: e
-        }, t), l = (0, s.$V)({
-            type: i.D.Attachment,
+        }, t), s = (0, l.$V)({
+            type: a.D.Attachment,
             media: e
         }, t);
-        return c.length > 0 ? c[0] : l ? o.Oc.POTENTIAL_EXPLICIT_CONTENT : a || (0, n.Lt)(r, u.sbO.IS_SPOILER) ? o.Oc.SPOILER : null
+        return _.length > 0 ? _[0] : s ? o.Oc.POTENTIAL_EXPLICIT_CONTENT : n || (0, r.Lt)(i, u.sbO.IS_SPOILER) ? o.Oc.SPOILER : null
     },
-    f = (e, t, a, n) => {
-        let r = (0, s.b)({
-                type: i.D.Embed,
+    f = (e, t, n, r) => {
+        let i = (0, l.b)({
+                type: a.D.Embed,
                 media: e
-            }, n),
-            c = !t.author.bot && (0, s.$V)({
-                type: i.D.Embed,
+            }, r),
+            _ = !t.author.bot && (0, l.$V)({
+                type: a.D.Embed,
                 media: e
-            }, n);
-        return r.length > 0 ? r[0] : c ? o.Oc.POTENTIAL_EXPLICIT_CONTENT : a ? o.Oc.SPOILER : null
+            }, r);
+        return i.length > 0 ? i[0] : _ ? o.Oc.POTENTIAL_EXPLICIT_CONTENT : n ? o.Oc.SPOILER : null
     },
-    b = function(e, t) {
-        let a = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-            n = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
-            r = (0, s.b)({
-                type: i.D.GenericMedia,
+    h = function(e, t) {
+        let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
+            r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
+            i = (0, l.b)({
+                type: a.D.GenericMedia,
                 media: e
             }, t),
-            c = !n && (0, s.$V)({
-                type: i.D.GenericMedia,
+            _ = !r && (0, l.$V)({
+                type: a.D.GenericMedia,
                 media: e
             }, t);
-        return r.includes(o.Oc.EXPLICIT_CONTENT) ? o.Oc.EXPLICIT_CONTENT : r.includes(o.Oc.GORE_CONTENT) ? o.Oc.GORE_CONTENT : r.includes(o.Oc.SELF_HARM_CONTENT) ? o.Oc.SELF_HARM_CONTENT : c ? o.Oc.POTENTIAL_EXPLICIT_CONTENT : a ? o.Oc.SPOILER : null
+        return i.includes(o.Oc.EXPLICIT_CONTENT) ? o.Oc.EXPLICIT_CONTENT : i.includes(o.Oc.GORE_CONTENT) ? o.Oc.GORE_CONTENT : i.includes(o.Oc.SELF_HARM_CONTENT) ? o.Oc.SELF_HARM_CONTENT : _ ? o.Oc.POTENTIAL_EXPLICIT_CONTENT : n ? o.Oc.SPOILER : null
     };
 
-function C(e, t, a) {
+function E(e, t, n) {
     if (null == e) return [!1, void 0];
-    let n = function(e) {
+    let r = function(e) {
         switch (e.type) {
-            case c.vV.EMBED:
+            case _.vV.EMBED:
                 return {
-                    type: i.D.Embed, media: e
+                    type: a.D.Embed, media: e
                 };
-            case c.vV.ATTACHMENT:
+            case _.vV.ATTACHMENT:
                 return {
-                    type: i.D.Attachment, media: e
+                    type: a.D.Attachment, media: e
                 };
-            case c.vV.COMPONENT:
+            case _.vV.COMPONENT:
                 return {
-                    type: i.D.GenericMedia, media: e.srcUnfurledMediaItem
+                    type: a.D.GenericMedia, media: e.srcUnfurledMediaItem
                 };
             default:
                 return null
         }
     }(e);
-    if (null == n) return [!1, void 0];
-    let r = (0, s.b)(n, a),
-        l = (0, s.$V)(n, a);
-    return r.length > 0 ? [!0, r[0]] : l ? [!0, o.Oc.POTENTIAL_EXPLICIT_CONTENT] : e.spoiler ? [t, o.Oc.SPOILER] : [!1, void 0]
+    if (null == r) return [!1, void 0];
+    let i = (0, l.b)(r, n),
+        s = (0, l.$V)(r, n);
+    return i.length > 0 ? [!0, i[0]] : s ? [!0, o.Oc.POTENTIAL_EXPLICIT_CONTENT] : e.spoiler ? [t, o.Oc.SPOILER] : [!1, void 0]
 }
 
-function g(e) {
+function I(e) {
     let {
         channel: t,
-        media: a
-    } = e, n = (0, r.bG)([_.A], () => null != t && _.A.can(u.xBc.MANAGE_MESSAGES, t)), o = l.gs.useSetting(), c = (0, s.O8)(i.v.GUILD);
-    return C(a, !(0, d.A)(o, n), c)
+        media: n
+    } = e, r = (0, i.bG)([c.A], () => null != t && c.A.can(u.xBc.MANAGE_MESSAGES, t)), o = s.gs.useSetting(), _ = (0, l.O8)(a.v.GUILD);
+    return E(n, !(0, d.A)(o, r), _)
 }
-let I = e => {
+let T = e => {
     switch (e) {
         case o.Oc.EXPLICIT_CONTENT:
         case o.Oc.GORE_CONTENT:

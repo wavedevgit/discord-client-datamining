@@ -20,9 +20,9 @@ var i = n(627968),
     g = n(615658),
     f = n(592044),
     x = n(100449),
-    E = n(952057),
+    E = n(588703),
     C = n(985018),
-    I = n(249176);
+    I = n(181039);
 let N = e => {
         let {
             channel: t,
@@ -89,7 +89,7 @@ let N = e => {
         s.useEffect(() => {
             X(O)
         }, [O, X]);
-        let J = s.useCallback(e => {
+        let Q = s.useCallback(e => {
             let t = q.current?.getBoundingClientRect();
             if (null == t) return;
             let n = t.height / j,
@@ -129,7 +129,7 @@ let N = e => {
                     }
                 },
                 onMouseMove: e => {
-                    !1 !== G && (w(P + Math.abs(e.movementX) + Math.abs(e.movementY)), J({
+                    !1 !== G && (w(P + Math.abs(e.movementX) + Math.abs(e.movementY)), Q({
                         x: M.x + e.movementX,
                         y: M.y + e.movementY
                     })), H({

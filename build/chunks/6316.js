@@ -4,13 +4,13 @@ n.d(t, {
 });
 var r = n(64700),
     i = n(311907),
-    s = n(904629),
-    l = n(522055);
+    l = n(904629),
+    s = n(522055);
 
 function o(e) {
-    let t = (0, i.bG)([l.A], () => l.A.getStateForGuild(e));
+    let t = (0, i.bG)([s.A], () => s.A.getStateForGuild(e));
     return r.useMemo(() => {
         let e = Object.values(t?.entitlements ?? {});
-        return 0 === e.length ? [] : (0, s.k)(e)
+        return 0 === e.length ? [] : (0, l.k)(e)
     }, [t?.entitlements])
 }

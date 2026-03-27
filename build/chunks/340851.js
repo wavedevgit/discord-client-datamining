@@ -35,7 +35,7 @@ n(281405);
 var j = n(544105),
     R = n(502075),
     O = n(985018),
-    L = n(988445);
+    L = n(437942);
 
 function M(e) {
     let {
@@ -98,8 +98,8 @@ let G = (0, A.J)(function(e) {
         isStreaming: z,
         isWatching: q,
         isGuest: X,
-        priority: J,
-        showPreview: Q,
+        priority: Q,
+        showPreview: J,
         hidePreview: $,
         shouldShowHoverPopout: Z,
         otherClientSessionType: ee,
@@ -135,7 +135,7 @@ let G = (0, A.J)(function(e) {
             (0, d.L3)(e, async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("97262"), n.e("42128"), n.e("84841"), n.e("36382")]).then(n.bind(n, 107632));
+                } = await Promise.all([n.e("97262"), n.e("42128"), n.e("84841"), n.e("50970")]).then(n.bind(n, 107632));
                 return t => (0, i.jsx)(e, {
                     ...t,
                     user: l,
@@ -153,7 +153,7 @@ let G = (0, A.J)(function(e) {
             className: L.kZ,
             "data-dnd-name": A.name,
             onMouseEnter: en ? void 0 : () => {
-                ec || (eu.current = setTimeout(() => Q?.(l.id), 100))
+                ec || (eu.current = setTimeout(() => J?.(l.id), 100))
             },
             onMouseLeave: en ? void 0 : eC,
             children: (0, i.jsx)(C.A, {
@@ -177,7 +177,7 @@ let G = (0, A.J)(function(e) {
                         isStreaming: z,
                         isGuest: X,
                         video: P,
-                        priority: J,
+                        priority: Q,
                         ringing: H,
                         deaf: U,
                         nick: B,

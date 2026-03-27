@@ -1,21 +1,20 @@
 /** chunk id: 915667 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => a
+    A: () => s
 });
-var i = n(627968);
+var r = n(627968);
 n(64700);
-var s = n(397927),
+var i = n(397927),
     l = n(568065);
 
-function a(e, t) {
-    (0, s.mMO)(async () => {
+function s(e, t) {
+    (0, i.mMO)(async () => {
         switch (t.type) {
             case l.o9.LEVEL: {
                 let {
-                    default: s
+                    default: i
                 } = await n.e("54508").then(n.bind(n, 278087));
-                return n => (0, i.jsx)(s, {
+                return n => (0, r.jsx)(i, {
                     guildId: e,
                     powerup: t,
                     ...n
@@ -23,9 +22,9 @@ function a(e, t) {
             }
             case l.o9.PERK: {
                 let {
-                    default: s
-                } = await Promise.all([n.e("63379"), n.e("60019")]).then(n.bind(n, 940481));
-                return n => (0, i.jsx)(s, {
+                    default: i
+                } = await Promise.all([n.e("63379"), n.e("26918")]).then(n.bind(n, 940481));
+                return n => (0, r.jsx)(i, {
                     guildId: e,
                     powerup: t,
                     ...n

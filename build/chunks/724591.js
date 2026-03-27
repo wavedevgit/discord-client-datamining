@@ -30,7 +30,7 @@ var i = n(627968),
     v = n(652215),
     y = n(49999),
     j = n(985018),
-    R = n(11464),
+    R = n(567431),
     O = n(439706);
 let L = s.memo(function(e) {
     let {
@@ -59,13 +59,13 @@ let L = s.memo(function(e) {
             let e = g.A.getStorefrontState(t.id)?.activePage ?? 0;
             (0, _.pX)(v.BVt.CHANNELS_GAME_SHOP(t.id, e))
         }, [t.id, q]),
-        J = s.useCallback(() => {
+        Q = s.useCallback(() => {
             (0, x.X)({
                 guildId: t.id,
                 forceFetch: H
             })
         }, [t.id, H]),
-        Q = s.useCallback(() => {
+        J = s.useCallback(() => {
             q(y.i.USER_DISMISS)
         }, [q]),
         $ = s.useCallback(e => {
@@ -99,7 +99,7 @@ let L = s.memo(function(e) {
                 children: j.intl.string(j.t.vyaWs7)
             }),
             selected: l,
-            onMouseDown: J,
+            onMouseDown: Q,
             onClick: X,
             onContextMenu: $,
             trailing: (0, i.jsxs)(i.Fragment, {
@@ -108,7 +108,7 @@ let L = s.memo(function(e) {
                     color: c.A.colors.BACKGROUND_BRAND.css
                 }), r]
             })
-        }), [t.id, l, J, X, $, H]),
+        }), [t.id, l, Q, X, $, H]),
         et = s.useMemo(() => {
             if (null == k) return;
             let e = null != k.assetId ? S.A.toURLSafe((0, b.YE)(k.applicationId, k.assetId, 128, "webp")) : void 0,
@@ -125,9 +125,9 @@ let L = s.memo(function(e) {
                 });
                 return (0, i.jsx)(C.A, {
                     onActionClick: X,
-                    onActionMouseDown: J,
+                    onActionMouseDown: Q,
                     onRender: Z,
-                    onRequestClose: Q,
+                    onRequestClose: J,
                     targetElementRef: M,
                     skuImageDetails: et,
                     title: j.intl.string(j.t["7PvvS9"]),
@@ -137,13 +137,13 @@ let L = s.memo(function(e) {
             }
             return Y ? (0, i.jsx)(E.A, {
                 onActionClick: X,
-                onActionMouseDown: J,
+                onActionMouseDown: Q,
                 onRender: Z,
-                onRequestClose: Q,
+                onRequestClose: J,
                 targetElementRef: M,
                 applicationName: j.intl.string(j.t.Uu8hke)
             }) : null
-        }, [H, P, k, X, J, Z, Q, et, Y]);
+        }, [H, P, k, X, Q, Z, J, et, Y]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(I.A, {
             ref: L,

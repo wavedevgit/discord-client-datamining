@@ -4,29 +4,29 @@ n.d(t, {
 }), n(321073), n(667532);
 var r = n(64700),
     i = n(512750),
-    s = n(311907),
-    l = n(645619),
+    l = n(311907),
+    s = n(645619),
     o = n(568065);
 let a = {
         guildTagsBadgePacks: [i.tv, i.OJ, i.Ht, i.jF]
     },
-    d = Object.entries(a).reduce((e, t) => {
+    u = Object.entries(a).reduce((e, t) => {
         let [n, r] = t;
         for (let t of r) e[t] = n;
         return e
     }, {}),
-    u = [o.o9.LEVEL, o.o9.PERK];
+    d = [o.o9.LEVEL, o.o9.PERK];
 
 function c(e, t) {
-    let n = (0, s.bG)([l.A], () => l.A.getStateForGuild(e));
-    return r.useMemo(() => u.reduce((e, r) => {
-        let s = n?.powerupCatalog[r];
-        if (null == s) return e;
-        let l = function(e, t, n) {
+    let n = (0, l.bG)([s.A], () => s.A.getStateForGuild(e));
+    return r.useMemo(() => d.reduce((e, r) => {
+        let l = n?.powerupCatalog[r];
+        if (null == l) return e;
+        let s = function(e, t, n) {
             let r = [],
-                s = t.reduce((e, t) => {
+                l = t.reduce((e, t) => {
                     if (t.type !== o.o9.PERK) return e;
-                    let n = d[t.skuId];
+                    let n = u[t.skuId];
                     return null == n || (e[n] ??= [], e[n].push(t)), e
                 }, {});
             for (let e of t) {
@@ -37,16 +37,16 @@ function c(e, t) {
                     });
                     continue
                 }
-                let t = d[e.skuId];
+                let t = u[e.skuId];
                 if (null != t) {
-                    let e = s[t];
+                    let e = l[t];
                     if (void 0 !== e) {
                         let n = a[t];
                         e.sort((e, t) => n.indexOf(e.skuId) - n.indexOf(t.skuId)), r.push({
                             type: "multiPerk",
                             group: t,
                             powerups: e
-                        }), s[t] = void 0
+                        }), l[t] = void 0
                     }
                     continue
                 }
@@ -64,15 +64,15 @@ function c(e, t) {
                     if (-1 !== t && -1 !== n && n !== t + 1) {
                         let t = [...e],
                             [r] = t.splice(n, 1),
-                            s = t.findIndex(e => "singlePerk" === e.type && e.powerup.skuId === i.SL);
-                        return t.splice(s + 1, 0, r), t
+                            l = t.findIndex(e => "singlePerk" === e.type && e.powerup.skuId === i.SL);
+                        return t.splice(l + 1, 0, r), t
                     }
                     return e
                 }(r)
-        }(r, s, t);
+        }(r, l, t);
         return e.push({
             type: r,
-            listings: l
+            listings: s
         }), e
     }, []), [n?.powerupCatalog, t])
 }

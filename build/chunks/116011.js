@@ -17,7 +17,7 @@ var i = n(627968),
     g = n(699443),
     x = n(652215),
     A = n(985018),
-    h = n(616825),
+    h = n(276478),
     p = n(870378),
     f = n(8496);
 let T = {
@@ -90,34 +90,35 @@ let T = {
                 titleClassName: g,
                 showPartnerLogo: p = !1,
                 showPartnerImage: f = !1,
-                countdownBar: E
+                countdownBar: E,
+                titleVariant: b = "primary"
             } = e,
-            [b, C] = s.useState(_.code),
-            [v, N] = s.useState(!1),
-            I = (t = _.partnerId, n = (0, a.bG)([o.A], () => (0, l.Mwr)(o.A.theme)), null == (d = T[t]) ? null : n ? d.logos.dark : d.logos.light),
-            j = null == b;
+            [C, v] = s.useState(_.code),
+            [N, I] = s.useState(!1),
+            j = (t = _.partnerId, n = (0, a.bG)([o.A], () => (0, l.Mwr)(o.A.theme)), null == (d = T[t]) ? null : n ? d.logos.dark : d.logos.light),
+            y = null == C;
         return (0, i.jsxs)("div", {
             className: h.lA,
             children: [(0, i.jsxs)("div", {
                 className: h.LV,
                 children: [(0, i.jsxs)("div", {
                     className: h.JN,
-                    children: [p && I, (0, i.jsxs)("div", {
+                    children: [p && j, (0, i.jsxs)("div", {
                         className: null != g ? `${h.yO} ${g}` : h.yO,
                         children: [(0, i.jsx)(l.DZT, {
-                            variant: "heading-lg/semibold",
+                            variant: "secondary" === b ? "heading-md/semibold" : "heading-lg/semibold",
                             color: "text-strong",
                             children: A.intl.string(_.title)
                         }), (0, i.jsx)(l.DZT, {
                             variant: "heading-sm/medium",
                             color: "text-subtle",
-                            children: v ? A.intl.format(A.t.i2EuFO, {
+                            children: N ? A.intl.format(A.t.i2EuFO, {
                                 helpdeskArticle: c.A.getArticleURL(x.MVz.RECURRING_PROMOTION)
-                            }) : j ? A.intl.string(_.body) : A.intl.format(_.bodyWithExpiration, {
+                            }) : y ? A.intl.string(_.body) : A.intl.format(_.bodyWithExpiration, {
                                 date: _.endDate
                             })
                         })]
-                    }), j && (v ? (0, i.jsx)(l.$nd, {
+                    }), y && (N ? (0, i.jsx)(l.$nd, {
                         icon: l.EpV,
                         variant: "critical-secondary",
                         size: "sm",
@@ -133,26 +134,26 @@ let T = {
                                 promotionId: _.id,
                                 analyticsLocations: []
                             }).then(e => {
-                                C(e.code)
+                                v(e.code)
                             }).catch(e => {
-                                N(!0), u.A.captureException(e)
+                                I(!0), u.A.captureException(e)
                             })
                         }
                     }))]
                 }), f && (0, i.jsx)("div", {
                     className: h.R4,
                     children: (0, i.jsx)(r._V3, {
-                        src: _.asset,
+                        src: _.asset ?? "",
                         className: h.Ys,
                         width: 100,
                         height: 100,
                         zoomable: !1
                     })
                 })]
-            }), E, null != b && (0, i.jsx)(S, {
+            }), E, null != C && (0, i.jsx)(S, {
                 recurrence: {
                     ..._,
-                    code: b
+                    code: C
                 }
             })]
         })

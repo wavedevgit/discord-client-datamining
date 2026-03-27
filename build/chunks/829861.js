@@ -42,7 +42,7 @@ var i = n(627968),
     k = n(5867),
     V = n(652215),
     B = n(985018),
-    H = n(959579);
+    H = n(513336);
 let F = D.DN.SIZE_32,
     K = {
         [k.E8.NO_CHAT]: H.Oo,
@@ -54,7 +54,7 @@ function W(e) {
         maxHeight: t,
         connectedLocation: n,
         renderExternalHeader: l
-    } = e, W = (0, L.A)(), Y = (0, r.yK)([y.Ay], () => y.Ay.getEmbeddedActivitiesForLocation(n), [n]), z = (0, O.H)(n), q = (0, r.bG)([C.A], () => C.A.getChannel(z)), X = (0, j.IQ)(Y), J = (0, j.Rz)(X), Q = s.useCallback(() => {
+    } = e, W = (0, L.A)(), Y = (0, r.yK)([y.Ay], () => y.Ay.getEmbeddedActivitiesForLocation(n), [n]), z = (0, O.H)(n), q = (0, r.bG)([C.A], () => C.A.getChannel(z)), X = (0, j.IQ)(Y), Q = (0, j.Rz)(X), J = s.useCallback(() => {
         (0, v.gk)(k.Gd.PIP)
     }, []), $ = s.useRef(null), Z = (0, r.bG)([y.Ay], () => y.Ay.getFocusedLayout()), ee = Z !== k.E8.NO_CHAT, [et, en] = s.useState(g.Ay.activityPanelHeight ?? t ?? null), ei = s.useCallback(e => {
         u.Ay.updatedUnsyncedSettings({
@@ -83,7 +83,7 @@ function W(e) {
             t = el.height;
         er ? ((t = el.width / k.B5) > el.height && (e = (t = el.height) * k.B5), ec = (el.height - t) / 2) : ((e = Math.min(el.height * k.B5)) > el.width && (t = (e = el.width) / k.B5), eo = (el.width - e) / 2)
     }
-    let eu = J.get(W?.id ?? ""),
+    let eu = Q.get(W?.id ?? ""),
         eh = (0, r.bG)([N.A], () => N.A.getChannelId()),
         eA = (0, r.yK)([I.Ay], () => null == q ? [] : Array.from(eu?.embeddedActivity.userIds ?? []).map(e => I.Ay.getMember(q.guild_id, e)), [eu, q]),
         em = s.useMemo(() => {
@@ -185,7 +185,7 @@ function W(e) {
                             }), (0, i.jsx)(f.l, {
                                 isTrayButton: !0,
                                 label: B.intl.string(B.t.brPQ5U),
-                                onClick: Q,
+                                onClick: J,
                                 iconComponent: d.gR,
                                 themeable: !0
                             })]

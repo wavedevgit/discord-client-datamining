@@ -16,7 +16,7 @@ var i = n(627968),
     g = n(780964),
     x = n(652215),
     A = n(985018),
-    h = n(950779);
+    h = n(988352);
 let p = (0, m.E2)(g.X.CLIPS_SCREENSHOT_KEYBIND, {
     useSearchTerms: () => [A.intl.string(A.t["0U/hj7"]), A.intl.string(A.t["5zxkdo"])],
     usePredicate: u.BW,

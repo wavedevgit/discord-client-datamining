@@ -1,65 +1,64 @@
 /** chunk id: 67281 params = (module,exports,require) **/
-"use strict";
-a.d(t, {
-    A: () => C
+n.d(t, {
+    A: () => A
 });
-var n = a(627968);
-a(64700);
-var r = a(791282),
-    i = a.n(r),
-    o = a(943854),
-    s = a.n(o),
-    c = a(311907),
-    l = a(342952),
-    _ = a(397927),
-    d = a(429913),
-    u = a(287809),
-    m = a(405269),
-    p = a(403362),
-    f = a(985018),
-    b = a(653455);
-let C = function(e) {
+var i = n(627968);
+n(64700);
+var a = n(791282),
+    r = n.n(a),
+    l = n(943854),
+    s = n.n(l),
+    o = n(311907),
+    d = n(342952),
+    c = n(397927),
+    u = n(429913),
+    _ = n(287809),
+    m = n(405269),
+    h = n(403362),
+    p = n(985018),
+    g = n(2398);
+let A = function(e) {
     let {
         createdAt: t,
-        participantIds: a,
-        applicationId: r,
-        title: o,
-        guildId: C
-    } = e, g = (0, d.h)(r), I = (0, c.yK)([u.default], () => a.map(e => u.default.getUser(e)).filter(p.Vq) ?? []), h = null != t ? (0, m.Fe)(new Date(t)) : null, A = i()([g?.name, h]);
-    return (0, n.jsxs)("div", {
-        className: b.oK,
-        children: [(0, n.jsx)("div", {
-            className: b.Lu
-        }), (0, n.jsxs)("div", {
-            className: b.s$,
-            children: [(0, n.jsxs)("div", {
-                className: b.yR,
-                children: [(0, n.jsxs)("div", {
-                    className: b.$,
-                    children: [(0, n.jsx)(_.xgA, {
-                        className: b.gr,
+        participantIds: n,
+        applicationId: a,
+        title: l,
+        guildId: A
+    } = e, x = (0, u.h)(a), f = (0, o.yK)([_.default], () => n.map(e => _.default.getUser(e)).filter(h.Vq) ?? []), C = null != t ? (0, m.Fe)(new Date(t)) : null, I = r()([x?.name, C]);
+    return (0, i.jsxs)("div", {
+        className: g.oK,
+        children: [(0, i.jsx)("div", {
+            className: g.Lu
+        }), (0, i.jsxs)("div", {
+            className: g.s$,
+            children: [(0, i.jsxs)("div", {
+                className: g.yR,
+                children: [(0, i.jsxs)("div", {
+                    className: g.$,
+                    children: [(0, i.jsx)(c.xgA, {
+                        className: g.gr,
                         size: "xs",
                         color: "white"
-                    }), !s()(o) && (0, n.jsx)(_.Text, {
-                        className: b.DD,
+                    }), !s()(l) && (0, i.jsx)(c.Text, {
+                        className: g.DD,
                         variant: "text-md/semibold",
                         color: "always-white",
-                        children: o
+                        children: l
                     })]
-                }), A.length > 0 && (0, n.jsx)(_.Text, {
-                    className: b.yu,
+                }), I.length > 0 && (0, i.jsx)(c.Text, {
+                    className: g.yu,
                     variant: "text-sm/normal",
                     color: "always-white",
-                    children: A.join(" \xb7 ")
+                    children: I.join(" \xb7 ")
                 })]
-            }), I.length > 0 && (0, n.jsx)("div", {
-                className: b.HD,
-                children: (0, n.jsx)(l.A, {
+            }), f.length > 0 && (0, i.jsx)("div", {
+                className: g.HD,
+                children: (0, i.jsx)(d.A, {
                     maxUsers: 4,
-                    users: I,
-                    guildId: C,
-                    size: _._3J.SIZE_24,
-                    "aria-label": f.intl.string(f.t.WTozwe)
+                    users: f,
+                    guildId: A,
+                    size: c._3J.SIZE_24,
+                    "aria-label": p.intl.string(p.t.WTozwe)
                 })
             })]
         })]

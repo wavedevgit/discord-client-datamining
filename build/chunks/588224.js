@@ -40,7 +40,7 @@ var i = n(627968),
     P = n(340851),
     w = n(652215),
     k = n(31408),
-    V = n(552068);
+    V = n(647493);
 let B = s.memo(e => {
     let {
         mute: t,
@@ -57,8 +57,8 @@ let B = s.memo(e => {
             userIds: t
         } = e;
         return t.has(x)
-    }), [x, l.id]), F = (0, h.A)(null != H ? [H.applicationId] : []), K = (0, N.Ay)(x, l.guild_id)[0], W = (0, u.YY)(K?.application_id).data ?? void 0, [Y, z] = (0, r.yK)([v.A], () => [v.A.getStreamForUser(x, l.getGuildId()), v.A.getActiveStreamForUser(x, l.getGuildId())], [l, x]), q = (0, r.bG)([L.A], () => L.A.getSessionById(a)), X = G.Ay.useName(s), J = (0, r.bG)([D.A], () => D.A.getVoicePlatformForChannel(l.id, x), [l.id, x]), {
-        enableHangStatus: Q
+    }), [x, l.id]), F = (0, h.A)(null != H ? [H.applicationId] : []), K = (0, N.Ay)(x, l.guild_id)[0], W = (0, u.YY)(K?.application_id).data ?? void 0, [Y, z] = (0, r.yK)([v.A], () => [v.A.getStreamForUser(x, l.getGuildId()), v.A.getActiveStreamForUser(x, l.getGuildId())], [l, x]), q = (0, r.bG)([L.A], () => L.A.getSessionById(a)), X = G.Ay.useName(s), Q = (0, r.bG)([D.A], () => D.A.getVoicePlatformForChannel(l.id, x), [l.id, x]), {
+        enableHangStatus: J
     } = (0, p.$j)({
         guildId: l.guild_id,
         location: "VoiceUsers"
@@ -69,7 +69,7 @@ let B = s.memo(e => {
         location: "VoiceUsers"
     }, {
         autoTrackExposure: K?.session_id != null
-    }), ei = en || Q;
+    }), ei = en || J;
     return (0, i.jsx)(C.A, {
         shakeLocation: k.uD.VOICE_USER,
         isShaking: U,
@@ -79,7 +79,7 @@ let B = s.memo(e => {
             canDrag: e.canDrag && !V,
             disconnected: et,
             otherClientSessionType: q?.clientInfo?.os,
-            voicePlatform: J,
+            voicePlatform: Q,
             localMute: S && !E,
             localVideoDisabled: R,
             mute: t || S,
@@ -93,7 +93,7 @@ let B = s.memo(e => {
             isGuest: V,
             isSelf: E,
             application: ei && K?.session_id != null ? W : void 0,
-            showHangStatus: $ && Q && (E || null != ee),
+            showHangStatus: $ && J && (E || null != ee),
             hangStatusActivity: E ? Z : ee
         })
     })

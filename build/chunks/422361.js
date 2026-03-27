@@ -50,12 +50,12 @@ var i = n(627968),
     z = n(850457),
     q = n(469178),
     X = n(562991),
-    J = n(588224);
+    Q = n(588224);
 n(281405);
-var Q = n(652215),
+var J = n(652215),
     $ = n(349828),
     Z = n(985018),
-    ee = n(99566);
+    ee = n(928409);
 class et extends K.Ay {
     state = {
         popoutToShow: null,
@@ -197,7 +197,7 @@ class et extends K.Ay {
             withGuildIcon: s,
             tabIndex: l
         } = this.props;
-        return (0, i.jsx)(J.A, {
+        return (0, i.jsx)(Q.A, {
             channel: e,
             collapsed: n,
             collapsedMax: 6,
@@ -407,11 +407,11 @@ function ei(e) {
         let e = U.A.getChannel(n.parent_id),
             i = w.A.getCheck(n.guild_id);
         return {
-            canManageChannel: k.A.can(Q.xBc.MANAGE_CHANNELS, n),
-            canReorderChannel: !0 !== s && (t.id === $.Vc || (null != e ? k.A.can(Q.xBc.MANAGE_CHANNELS, e) : k.A.can(Q.xBc.MANAGE_CHANNELS, t))),
-            canMoveMembers: k.A.can(Q.xBc.MOVE_MEMBERS, n),
-            locked: !k.A.can(Q.xBc.CONNECT, n),
-            bypassLimit: k.A.can(Q.xBc.MOVE_MEMBERS, n),
+            canManageChannel: k.A.can(J.xBc.MANAGE_CHANNELS, n),
+            canReorderChannel: !0 !== s && (t.id === $.Vc || (null != e ? k.A.can(J.xBc.MANAGE_CHANNELS, e) : k.A.can(J.xBc.MANAGE_CHANNELS, t))),
+            canMoveMembers: k.A.can(J.xBc.MOVE_MEMBERS, n),
+            locked: !k.A.can(J.xBc.CONNECT, n),
+            bypassLimit: k.A.can(J.xBc.MOVE_MEMBERS, n),
             unverifiedAccount: !i.canChat
         }
     }), A = (0, r.bG)([H.A], () => H.A.hasVideo(n.id)), m = (0, _.Ay)(n), p = (0, C.Ay)(n), x = (0, y.Qs)(n.id), E = (0, r.bG)([f.A], () => null != f.A.getStartTime(n), [n]), {
@@ -446,7 +446,7 @@ function ei(e) {
     return (0, i.jsx)(en, {
         channelName: p,
         embeddedApps: m,
-        embeddedActivityType: Q.$pd.PLAYING,
+        embeddedActivityType: J.$pd.PLAYING,
         video: A,
         hasActiveEvent: null != x,
         isSubscriptionGated: I,

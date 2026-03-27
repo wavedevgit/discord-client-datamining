@@ -10,7 +10,7 @@ var r = n(827734),
     s = n(736653),
     o = n(682174),
     c = n(927018),
-    d = n(983684);
+    d = n(579157);
 let u = {
         trophy: r.A.unsafe_rawColors.PRIMARY_400.css,
         locked: r.A.unsafe_rawColors.PRIMARY_400.css,

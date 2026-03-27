@@ -1,34 +1,33 @@
 /** chunk id: 121489 params = (module,exports,require) **/
-"use strict";
-a.d(t, {
+n.d(t, {
     _O: () => s,
-    dP: () => o,
-    wQ: () => i
+    dP: () => l,
+    wQ: () => r
 });
-var n = a(954571),
-    r = a(652215);
+var i = n(954571),
+    a = n(652215);
 
-function i(e, t, a, i) {
-    n.default.track(r.HAw.VOICE_MESSAGE_PLAYBACK_STARTED, {
+function r(e, t, n, r) {
+    i.default.track(a.HAw.VOICE_MESSAGE_PLAYBACK_STARTED, {
         message_id: e,
         total_duration_secs: t,
-        start_duration_secs: Math.min(t ?? a, a),
-        sender_user_id: i
+        start_duration_secs: Math.min(t ?? n, n),
+        sender_user_id: r
     })
 }
 
-function o(e, t, a, i, o) {
-    n.default.track(r.HAw.VOICE_MESSAGE_PLAYBACK_ENDED, {
+function l(e, t, n, r, l) {
+    i.default.track(a.HAw.VOICE_MESSAGE_PLAYBACK_ENDED, {
         message_id: e,
         total_duration_secs: t,
-        end_duration_secs: Math.min(t ?? a, a),
-        sender_user_id: i,
-        duration_listening_secs: o
+        end_duration_secs: Math.min(t ?? n, n),
+        sender_user_id: r,
+        duration_listening_secs: l
     })
 }
 
 function s(e, t) {
-    n.default.track(r.HAw.VOICE_MESSAGE_PLAYBACK_FAILED, {
+    i.default.track(a.HAw.VOICE_MESSAGE_PLAYBACK_FAILED, {
         message_id: e,
         error_message: t
     })

@@ -1,8 +1,8 @@
 /** chunk id: 715757 params = (module,exports,require) **/
-e.d(t, {
-    Qo: () => h,
-    V: () => A,
-    W1: () => f,
+e.d(n, {
+    Qo: () => f,
+    V: () => h,
+    W1: () => A,
     ml: () => _,
     vb: () => b
 });
@@ -10,44 +10,44 @@ var i = e(64700),
     l = e(311907),
     a = e(843472),
     r = e(803306),
-    s = e(71393),
-    o = e(320501),
+    o = e(71393),
+    u = e(320501),
     d = e(376708),
-    u = e(272720),
+    s = e(272720),
     c = e(56595);
 
-function h(n) {
-    return (0, l.bG)([s.A], () => {
-        if (null == n) return !1;
-        let t = s.A.getGuild(n);
-        return null != t && (0, c.A)(t) && null != (0, u.A)(t)
+function f(t) {
+    return (0, l.bG)([o.A], () => {
+        if (null == t) return !1;
+        let n = o.A.getGuild(t);
+        return null != n && (0, c.A)(n) && null != (0, s.A)(n)
     })
 }
 
-function A(n) {
-    return (0, d.uW)(n)
+function h(t) {
+    return (0, d.uW)(t)
 }
 
-function f(n) {
-    return (0, d.xJ)(n)
+function A(t) {
+    return (0, d.xJ)(t)
 }
 
-function _(n) {
+function _(t) {
     let {
-        messageReference: t
-    } = n, e = (0, l.bG)([o.A], () => null != t ? o.A.getMessage(t.channel_id, t.message_id) : null);
+        messageReference: n
+    } = t, e = (0, l.bG)([u.A], () => null != n ? u.A.getMessage(n.channel_id, n.message_id) : null);
     (0, i.useEffect)(() => {
-        null == e && null != t && a.A.fetchMessages({
-            channelId: t.channel_id,
+        null == e && null != n && a.A.fetchMessages({
+            channelId: n.channel_id,
             jump: {
-                messageId: t.message_id
+                messageId: n.message_id
             },
             limit: 10
         })
-    }, [e, t])
+    }, [e, n])
 }
 
-function b(n) {
-    let t = n?.messageSnapshots[0]?.moderatorReport?.reported_user_id;
-    null != t && (0, r.wz)(t)
+function b(t) {
+    let n = t?.messageSnapshots[0]?.moderatorReport?.reported_user_id;
+    null != n && (0, r.wz)(n)
 }

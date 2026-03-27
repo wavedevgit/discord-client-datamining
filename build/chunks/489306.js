@@ -157,7 +157,7 @@ function j(e) {
                     }(e, b, x, y);
                     if (null != s) return s
                 }, [e, t, g, L, K, q, U, V, x, b, y]),
-                [J, Q] = (0, E.ru)(null != X);
+                [Q, J] = (0, E.ru)(null != X);
             return i.useMemo(() => {
                 if (null != t) {
                     if (g) return {
@@ -196,14 +196,14 @@ function j(e) {
                         type: f.o.GAME_SERVER_PRICING_CHANGE,
                         markAsDismissed: z
                     };
-                    if (J === a.M.GUILD_POWERUP_NOTIFICATION && null != X) return {
+                    if (Q === a.M.GUILD_POWERUP_NOTIFICATION && null != X) return {
                         ...X,
                         markAsDismissed: e => {
-                            Q(e), X.markAsDismissed(e)
+                            J(e), X.markAsDismissed(e)
                         }
                     }
                 }
-            }, [t, g, p, X, J, Q, L, O, j, U, M, G, V, P, k, K, F, q, z])
+            }, [t, g, p, X, Q, J, L, O, j, U, M, G, V, P, k, K, F, q, z])
         }(e, n ?? void 0);
     if (null !== n && (null != _ || y || null != j)) return {
         indicator: _,

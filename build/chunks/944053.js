@@ -1,5 +1,4 @@
 /** chunk id: 944053 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     Lb: "confettiCanvas__8fcbd",
     VN: "close__8fcbd",

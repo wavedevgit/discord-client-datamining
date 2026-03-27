@@ -50,8 +50,8 @@ var i = n(627968),
     z = n(105225),
     q = n(874739),
     X = n(461782),
-    J = n(447404),
-    Q = n(401685),
+    Q = n(447404),
+    J = n(401685),
     $ = n(20465),
     Z = n(156652),
     ee = n(622770),
@@ -89,7 +89,7 @@ var i = n(627968),
     eL = n(806931),
     eM = n(652215),
     eD = n(985018),
-    eG = n(751102);
+    eG = n(507257);
 let eU = {
         [eM.DUB.NORMAL]: eG.qb,
         [eM.DUB.MINIMUM]: eG.Bp,
@@ -113,9 +113,9 @@ function ew(e) {
         canInvite: a,
         onToggleChat: r,
         maybeLeaveFullScreen: o
-    } = e, c = (0, Q.Bx)(), u = (0, d.bG)([L.A], () => s?.type === eL.lp.ACTIVITY ? L.A.getApplication(s.applicationId) : void 0), h = t === eM.DUB.NO_CHAT ? ee.A.Directions.UP : ee.A.Directions.DOWN, A = [eM.DUB.FULL_SCREEN, eM.DUB.NO_CHAT].includes(t);
+    } = e, c = (0, J.Bx)(), u = (0, d.bG)([L.A], () => s?.type === eL.lp.ACTIVITY ? L.A.getApplication(s.applicationId) : void 0), h = t === eM.DUB.NO_CHAT ? ee.A.Directions.UP : ee.A.Directions.DOWN, A = [eM.DUB.FULL_SCREEN, eM.DUB.NO_CHAT].includes(t);
     return (0, i.jsxs)(i.Fragment, {
-        children: [a && c < Q.vs.NO_INVITE ? (0, i.jsx)(en.A, {
+        children: [a && c < J.vs.NO_INVITE ? (0, i.jsx)(en.A, {
             channel: n,
             stream: s?.type === eL.lp.STREAM ? (0, P.Iy)(s.id) : void 0,
             className: eG.jZ,
@@ -329,7 +329,7 @@ class ek extends s.PureComponent {
                             return (0, p.L3)(t, async () => {
                                 let {
                                     default: t
-                                } = await Promise.all([n.e("97262"), n.e("42128"), n.e("86097"), n.e("39778"), n.e("51181")]).then(n.bind(n, 385913));
+                                } = await Promise.all([n.e("97262"), n.e("42128"), n.e("70303"), n.e("39778"), n.e("78298")]).then(n.bind(n, 385913));
                                 return n => (0, i.jsx)(t, {
                                     ...n,
                                     showChannelCallItems: !0,
@@ -344,7 +344,7 @@ class ek extends s.PureComponent {
                             return (0, p.L3)(t, async () => {
                                 let {
                                     default: t
-                                } = await Promise.all([n.e("97262"), n.e("42128"), n.e("62891"), n.e("69049")]).then(n.bind(n, 228006));
+                                } = await Promise.all([n.e("97262"), n.e("42128"), n.e("62891"), n.e("30915")]).then(n.bind(n, 228006));
                                 return n => (0, i.jsx)(t, {
                                     ...n,
                                     showChannelCallItems: !0,
@@ -363,7 +363,7 @@ class ek extends s.PureComponent {
                             return o()(null != l, "GuildID null for guild voice channel"), (0, p.L3)(t, async () => {
                                 let {
                                     default: t
-                                } = await Promise.all([n.e("97262"), n.e("42128"), n.e("84841"), n.e("36382")]).then(n.bind(n, 107632));
+                                } = await Promise.all([n.e("97262"), n.e("42128"), n.e("84841"), n.e("50970")]).then(n.bind(n, 107632));
                                 return n => (0, i.jsx)(t, {
                                     ...n,
                                     showMediaItems: !0,
@@ -548,7 +548,7 @@ class ek extends s.PureComponent {
             useExternalHeader: r,
             renderHeader: o
         } = this.viewProperties;
-        return o ? (0, i.jsx)(J.A, {
+        return o ? (0, i.jsx)(Q.A, {
             children: (0, i.jsx)("div", {
                 className: eG.dL,
                 children: r ? e?.() : (0, i.jsx)(ev.A, {
@@ -725,7 +725,7 @@ let eV = function(e) {
     } = (0, d.cf)([F.A], () => ({
         popoutWindow: F.A.getWindow(eM.MLl.CHANNEL_CALL_POPOUT),
         popoutWindowAlwaysOnTop: F.A.getIsAlwaysOnTop(eM.MLl.CHANNEL_CALL_POPOUT)
-    })), J = (0, d.bG)([eh.A], () => eh.A.can(eM.xBc.CONNECT, t)), Q = (0, d.bG)([ec.A], () => ec.A.getToastsEnabled(t.id)), $ = (0, d.bG)([G.default], () => G.default.getAwaitingRemoteSessionInfo()), Z = (0, d.bG)([Y.Ay], () => Y.Ay.callHeaderHeight), ee = s.useCallback(e => {
+    })), Q = (0, d.bG)([eh.A], () => eh.A.can(eM.xBc.CONNECT, t)), J = (0, d.bG)([ec.A], () => ec.A.getToastsEnabled(t.id)), $ = (0, d.bG)([G.default], () => G.default.getAwaitingRemoteSessionInfo()), Z = (0, d.bG)([Y.Ay], () => Y.Ay.callHeaderHeight), ee = s.useCallback(e => {
         x.Ay.updatedUnsyncedSettings({
             callHeaderHeight: e
         })
@@ -773,7 +773,7 @@ let eV = function(e) {
                     children: [(0, i.jsx)(ek, {
                         channel: t,
                         guild: W,
-                        hasConnectPermission: J,
+                        hasConnectPermission: Q,
                         participantsOpen: P,
                         renderExternalHeader: n,
                         appContext: f,
@@ -792,7 +792,7 @@ let eV = function(e) {
                         selectedParticipant: k,
                         allActiveStreams: H,
                         connectedEmbeddedActivity: ei ?? void 0,
-                        showChatToasts: Q,
+                        showChatToasts: J,
                         storedCallHeaderHeight: Z,
                         updateStoredCallHeaderHeight: ee,
                         wrapperRef: c,

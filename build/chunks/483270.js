@@ -1,7 +1,7 @@
 /** chunk id: 483270 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => J
+    A: () => Q
 });
 var i = n(627968),
     s = n(64700),
@@ -43,8 +43,8 @@ var i = n(627968),
     V = n(110574),
     B = n(652215),
     H = n(985018),
-    F = n(718742),
-    K = n(305733);
+    F = n(526439),
+    K = n(922936);
 let W = k.Ay.getEnableHardwareAcceleration(),
     Y = 44 + V.b,
     z = s.memo(function(e) {
@@ -57,7 +57,7 @@ let W = k.Ay.getEnableHardwareAcceleration(),
             null != g && (0, m.L3)(e, async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("97262"), n.e("67447"), n.e("76722")]).then(n.bind(n, 708202));
+                } = await Promise.all([n.e("97262"), n.e("67447"), n.e("87340")]).then(n.bind(n, 708202));
                 return n => (0, i.jsx)(e, {
                     ...n,
                     user: g,
@@ -88,7 +88,7 @@ let W = k.Ay.getEnableHardwareAcceleration(),
             guildId: t.guild_id
         }), [q, X] = s.useState(!1);
         if (null == g) return null;
-        let J = A?.premiumSince;
+        let Q = A?.premiumSince;
         return (0, i.jsx)(T.A, {
             targetElementRef: o,
             user: g,
@@ -123,7 +123,7 @@ let W = k.Ay.getEnableHardwareAcceleration(),
                     isMobile: N,
                     selected: q,
                     applicationStream: D,
-                    premiumSince: null == J ? null : new Date(J),
+                    premiumSince: null == Q ? null : new Date(Q),
                     onClickPremiumGuildIcon: Y,
                     itemProps: G,
                     lostPermissionTooltipText: P ? void 0 : H.intl.string(H.t["/QcoTz"]),
@@ -195,7 +195,7 @@ let W = k.Ay.getEnableHardwareAcceleration(),
         }) : null
     });
 
-function J(e) {
+function Q(e) {
     var t, n;
     let l, r, u, m, _, {
             channel: x,
@@ -257,7 +257,7 @@ function J(e) {
                 channel_type: x.type,
                 guild_id: x.guild_id
             })
-        }, [x.guild_id, x.id, x.type]), y) return (0, i.jsx)(Q, {
+        }, [x.guild_id, x.id, x.type]), y) return (0, i.jsx)(J, {
         channel: x
     });
     let j = o().omit(T.containerProps, ["ref"]),
@@ -318,7 +318,7 @@ function J(e) {
     })
 }
 
-function Q(e) {
+function J(e) {
     let {
         channel: t
     } = e;

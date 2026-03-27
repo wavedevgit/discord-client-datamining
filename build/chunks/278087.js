@@ -13,15 +13,15 @@ function i(e) {
         guildId: t,
         powerup: r,
         ...i
-    } = e, l = (0, s.D)("GuildPowerupLevelModalExperimentWrapper");
-    return "control" === l ? (0, a.jsx)(n.A, {
+    } = e, c = (0, s.D)("GuildPowerupLevelModalExperimentWrapper");
+    return "control" === c ? (0, a.jsx)(n.A, {
         guildId: t,
         powerup: r,
         ...i
     }) : (0, a.jsx)(o.A, {
         guildId: t,
         powerup: r,
-        expressiveCta: "refresh_expressive_cta" === l,
+        expressiveCta: "refresh_expressive_cta" === c,
         ...i
     })
 }

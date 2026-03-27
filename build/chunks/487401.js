@@ -51,8 +51,8 @@ var i = n(627968),
     z = n(724591),
     q = n(573956),
     X = n(141515),
-    J = n(463938),
-    Q = n(779881),
+    Q = n(463938),
+    J = n(779881),
     $ = n(998986),
     Z = n(732077),
     ee = n(689025),
@@ -68,8 +68,8 @@ var eo = n(652215),
     ec = n(746080);
 n(131955);
 var ed = n(985018),
-    eu = n(525736),
-    eh = n(520487);
+    eu = n(665606),
+    eh = n(116648);
 
 function eA(e) {
     return c.LU0.modules.channels.NAME_LINE_HEIGHT.resolve({
@@ -428,7 +428,7 @@ class em extends s.PureComponent {
                         selected: r === er.n.GUILD_SCHEDULED_EVENTS
                     }, er.n.GUILD_SCHEDULED_EVENTS);
                 case er.n.GUILD_ROLE_SUBSCRIPTIONS:
-                    return (0, i.jsx)(Q.A, {
+                    return (0, i.jsx)(J.A, {
                         guild: l,
                         selected: r === ec.VV.ROLE_SUBSCRIPTIONS
                     }, er.n.GUILD_ROLE_SUBSCRIPTIONS);
@@ -443,7 +443,7 @@ class em extends s.PureComponent {
                         selected: r === ec.VV.GAME_SHOP
                     }, er.n.GUILD_GAME_SHOP);
                 case er.n.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR:
-                    return (0, i.jsx)(J.j, {
+                    return (0, i.jsx)(Q.j, {
                         guild: l
                     });
                 case er.n.CHANNELS_AND_ROLES:

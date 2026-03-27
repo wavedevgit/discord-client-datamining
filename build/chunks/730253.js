@@ -38,9 +38,9 @@ var i = n(627968),
     G = n(97483),
     U = n(49999),
     P = n(788868),
-    w = n(525736),
+    w = n(665606),
     k = n(985018),
-    V = n(141920),
+    V = n(414839),
     B = n(988572);
 let H = {
     analyticsSource: {
@@ -51,7 +51,7 @@ let H = {
 };
 
 function F(e) {
-    let t, F, K, W, Y, z, q, X, J, Q, $, Z, {
+    let t, F, K, W, Y, z, q, X, Q, J, $, Z, {
             shouldShowIntroPopover: ee,
             markIntroPopoverAsDismissed: et
         } = e,
@@ -92,9 +92,9 @@ function F(e) {
                 location: t
             } = e, n = (0, u.H)(t);
             return null != n && null != eh[n]
-        })), X = z.length > 0, J = !1, Q = !1, $ = !1, Z = !1, F ? (J = !Y, Q = Y, $ = K, Z = q) : ($ = W, Z = X), (0, p.oi)({
-            audio: J,
-            video: Q,
+        })), X = z.length > 0, Q = !1, J = !1, $ = !1, Z = !1, F ? (Q = !Y, J = Y, $ = K, Z = q) : ($ = W, Z = X), (0, p.oi)({
+            audio: Q,
+            video: J,
             screenshare: $,
             liveStage: !1,
             isCurrentUserConnected: F,

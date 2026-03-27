@@ -18,7 +18,7 @@ var i = n(627968),
     _ = n(779271),
     p = n(763793),
     g = n(985018),
-    f = n(979909);
+    f = n(516950);
 
 function x(e) {
     return e.type === d.wY.VOICE

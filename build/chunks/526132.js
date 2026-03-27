@@ -1,17 +1,17 @@
 /** chunk id: 526132 params = (module,exports,require) **/
-t.d(e, {
-    e: () => c,
+n.d(t, {
+    e: () => r,
     n: () => a
 });
-var i = t(311907),
-    r = t(576705),
-    l = t(652215);
+var i = n(311907),
+    l = n(576705),
+    s = n(652215);
 
-function a(n) {
-    let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r.A;
-    return null != n && null != n.linkedLobby && e.can(l.xBc.MANAGE_CHANNELS, n) && e.can(l.xBc.VIEW_CHANNEL, n) && e.can(l.xBc.SEND_MESSAGES, n)
+function a(e) {
+    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : l.A;
+    return null != e && null != e.linkedLobby && t.can(s.xBc.MANAGE_CHANNELS, e) && t.can(s.xBc.VIEW_CHANNEL, e) && t.can(s.xBc.SEND_MESSAGES, e)
 }
 
-function c(n) {
-    return (0, i.bG)([r.A], () => a(n, r.A))
+function r(e) {
+    return (0, i.bG)([l.A], () => a(e, l.A))
 }

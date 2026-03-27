@@ -44,8 +44,8 @@ var i = n(627968),
     B = n(55294),
     H = n(652215),
     F = n(985018),
-    K = n(671389),
-    W = n(812077);
+    K = n(822334),
+    W = n(756304);
 let Y = g.oU.THREAD_CREATION;
 
 function z(e) {
@@ -274,7 +274,7 @@ function X(e) {
                                     className: W.Kk
                                 })
                             }), (0, i.jsxs)(o.nVY, {
-                                children: [(0, i.jsx)(Q, {
+                                children: [(0, i.jsx)(J, {
                                     parentChannel: n,
                                     parentMessageId: l,
                                     threadSettings: _,
@@ -284,7 +284,7 @@ function X(e) {
                                     isGeneratingAI: N,
                                     enableAIFeatures: b,
                                     getThreadNameInputAccessory: v
-                                }), n.type === H.rbe.GUILD_TEXT ? (0, i.jsx)(J, {
+                                }), n.type === H.rbe.GUILD_TEXT ? (0, i.jsx)(Q, {
                                     startedFromMessage: null != l,
                                     threadSettings: _,
                                     updateThreadSettings: g,
@@ -316,7 +316,7 @@ function X(e) {
     })
 }
 
-function J(e) {
+function Q(e) {
     let {
         startedFromMessage: t,
         threadSettings: n,
@@ -337,7 +337,7 @@ function J(e) {
     })
 }
 
-function Q(e) {
+function J(e) {
     let {
         parentChannel: t,
         parentMessageId: n,

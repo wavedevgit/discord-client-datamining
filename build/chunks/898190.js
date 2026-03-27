@@ -1,20 +1,19 @@
 /** chunk id: 898190 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => l
 });
-var i = n(64700),
-    s = n(181940);
+var r = n(64700),
+    i = n(181940);
 
 function l(e, t) {
     let {
         isLoading: n,
         error: l,
-        onToggle: a
-    } = (0, s.A)(e, t);
+        onToggle: s
+    } = (0, i.A)(e, t);
     return {
         isLoading: n,
         error: l,
-        onDeactivate: i.useCallback(() => a(!1), [a])
+        onDeactivate: r.useCallback(() => s(!1), [s])
     }
 }

@@ -1,8 +1,8 @@
 /** chunk id: 43594 params = (module,exports,require) **/
-s.d(t, {
-    D: () => a
+n.d(e, {
+    D: () => i
 });
-let n = (0, s(250105).Ay)({
+let l = (0, n(250105).Ay)({
     name: "2026-02-boosting-refresh-modals",
     kind: "user",
     defaultConfig: {
@@ -21,8 +21,8 @@ let n = (0, s(250105).Ay)({
     }
 });
 
-function a(e) {
-    return n.useConfig({
-        location: e
+function i(t) {
+    return l.useConfig({
+        location: t
     }).variant
 }

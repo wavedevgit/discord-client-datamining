@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     V: () => v,
-    X: () => b
+    X: () => g
 });
 var r = n(627968),
     i = n(64700),
@@ -18,10 +18,10 @@ var r = n(627968),
     f = n(674085),
     m = n(215566),
     p = n(362205),
-    y = n(640096);
+    y = n(710515);
 let v = "refresh_sm";
 
-function g(e) {
+function b(e) {
     let {
         tag: t,
         onClick: n,
@@ -34,10 +34,10 @@ function g(e) {
     } = e, {
         icon: _,
         StronglyDiscouragedCustomComponent: p,
-        usePersistentBadge: g,
-        useTitle: b,
+        usePersistentBadge: b,
+        useTitle: g,
         variant: x = "default"
-    } = s, E = b?.(), A = function(e) {
+    } = s, E = g?.(), A = function(e) {
         switch (e) {
             case "default":
                 return "currentColor";
@@ -51,7 +51,7 @@ function g(e) {
             case "destructive":
                 return o.LU0.colors.ICON_FEEDBACK_CRITICAL
         }
-    }(x), N = g?.(a), C = i.useMemo(() => null != c ? a ? null : (0, r.jsx)(f.A, {
+    }(x), N = b?.(a), C = i.useMemo(() => null != c ? a ? null : (0, r.jsx)(f.A, {
         badge: c
     }) : null != N ? (0, r.jsx)(m.A, {
         badge: N
@@ -82,7 +82,7 @@ function g(e) {
     })
 }
 
-function b(e) {
+function g(e) {
     let {
         node: t,
         visibleContent: n,
@@ -98,7 +98,7 @@ function b(e) {
         if (null == o || !(0, u.Iu)(o.layout)) return null;
         let e = o.layout.filter(u.bJ);
         return e.length > 1 ? e : null
-    }, [o]), b = null != o ? () => {
+    }, [o]), g = null != o ? () => {
         let e = f === o.key && null != v ? v[0].key : o.key;
         h.A.navigate(e, {
             animateSidebarScroll: !0,
@@ -109,20 +109,20 @@ function b(e) {
         visibleContent: n,
         dismissibleBadges: a
     }) : null, [y, v, n, a]), E = l ? "li" : "div", A = i.useMemo(() => (0, _.H)(t.key, n, a), [t.key, n, a]);
-    return l ? (0, r.jsx)(g, {
+    return l ? (0, r.jsx)(b, {
         tag: E,
         panelKey: o?.key,
-        onClick: b,
+        onClick: g,
         active: y,
         node: t,
         dismissibleBadge: A,
         children: x
     }) : (0, r.jsx)(s.tG, {
         id: t.key,
-        children: e => (0, r.jsx)(g, {
+        children: e => (0, r.jsx)(b, {
             tag: E,
             panelKey: o?.key,
-            onClick: b,
+            onClick: g,
             active: y,
             node: t,
             dismissibleBadge: A,

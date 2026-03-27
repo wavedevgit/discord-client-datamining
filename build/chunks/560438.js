@@ -1,8 +1,8 @@
 /** chunk id: 560438 params = (module,exports,require) **/
-t.d(n, {
-    l: () => i
+n.d(t, {
+    l: () => r
 });
-let i = {
+let r = {
     allowList: !0,
     allowHeading: !0,
     allowLinks: !0,

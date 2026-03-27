@@ -1,21 +1,22 @@
 /** chunk id: 535089 params = (module,exports,require) **/
-n.d(t, {
+"use strict";
+i.d(t, {
     A: () => a
 });
-var i = n(64700),
-    l = n(172218);
+var n = i(64700),
+    s = i(172218);
 
 function a(e) {
     let {
         wishlistId: t,
-        onAction: n,
+        onAction: i,
         productLines: a
-    } = e, [s, r] = (0, i.useState)(!1), o = (0, i.useCallback)(e => {
-        e && null != t && (n({
+    } = e, [l, r] = (0, n.useState)(!1), o = (0, n.useCallback)(e => {
+        e && null != t && (i({
             action: "VIEW_WISHLIST",
             wishlistId: t,
             productLines: a ?? void 0
         }), r(!0))
-    }, [t, n, a]);
-    return (0, l.K)(o, void 0, null != t && !s)
+    }, [t, i, a]);
+    return (0, s.K)(o, void 0, null != t && !l)
 }

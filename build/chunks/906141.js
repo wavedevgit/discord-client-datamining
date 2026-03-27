@@ -37,8 +37,8 @@ var i = n(627968),
     D = n(888675),
     G = n(652215),
     U = n(985018),
-    P = n(790610),
-    w = n(10029);
+    P = n(213607),
+    w = n(480972);
 let k = s.memo(function e(t) {
     let n, {
             channel: s,
@@ -57,8 +57,8 @@ let k = s.memo(function e(t) {
         z = m.X6.useSetting(),
         q = m.hD.useSetting(),
         X = m.rs.useSetting(),
-        J = m.kt.useSetting(),
-        Q = (0, d.S)((l.editedTimestamp ?? l.timestamp).valueOf()),
+        Q = m.kt.useSetting(),
+        J = (0, d.S)((l.editedTimestamp ?? l.timestamp).valueOf()),
         $ = (0, u.A)(s?.id),
         {
             disableReactionCreates: Z
@@ -69,8 +69,8 @@ let k = s.memo(function e(t) {
             hasBailedAst: en
         } = (0, v.A)(l, {
             hideSimpleEmbedContent: q && X,
-            allowList: Q,
-            allowHeading: Q,
+            allowList: J,
+            allowHeading: J,
             allowLinks: !0,
             previewLinkTarget: !0
         }),
@@ -126,10 +126,10 @@ let k = s.memo(function e(t) {
             inlineAttachmentMedia: z,
             inlineEmbedMedia: q,
             renderEmbeds: X,
-            gifAutoPlay: J,
+            gifAutoPlay: Q,
             poll: ed,
-            showListsAndHeaders: Q,
-            showMaskedLinks: Q,
+            showListsAndHeaders: J,
+            showMaskedLinks: J,
             shouldHideMediaOptions: $,
             enabledContentHarmTypeFlags: eo,
             ctaButtonType: ec

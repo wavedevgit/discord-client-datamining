@@ -1,21 +1,20 @@
 /** chunk id: 438874 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => a
+    A: () => s
 });
-var i = n(294384),
-    s = n(998418),
+var r = n(294384),
+    i = n(998418),
     l = n(568065);
 
-function a(e, t) {
-    let n = (0, s.Ay)(e, t),
-        a = n.type !== l.b_.INACTIVE,
-        r = n.type === l.b_.TIER_OVERRIDE_ACTIVATED,
-        o = (0, i.A)(e, t, "GuildPowerupCardFooterAdmin"),
-        c = l.HO;
+function s(e, t) {
+    let n = (0, i.Ay)(e, t),
+        s = n.type !== l.b_.INACTIVE,
+        o = n.type === l.b_.TIER_OVERRIDE_ACTIVATED,
+        a = (0, r.A)(e, t, "GuildPowerupCardFooterAdmin"),
+        u = l.HO;
     return {
-        showToggleButton: (a || !o) && !r,
-        showConfigureButton: a && c.has(t.skuId),
-        isPowerupActive: a
+        showToggleButton: (s || !a) && !o,
+        showConfigureButton: s && u.has(t.skuId),
+        isPowerupActive: s
     }
 }

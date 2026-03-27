@@ -50,8 +50,8 @@ var i = n(627968),
     z = n(845211),
     q = n(941604),
     X = n(246884),
-    J = n(497140),
-    Q = n(34247),
+    Q = n(497140),
+    J = n(34247),
     $ = n(850729),
     Z = n(521872),
     ee = n(827975),
@@ -61,7 +61,7 @@ var i = n(627968),
     es = n(343170),
     el = n(652215),
     ea = n(985018),
-    er = n(353058);
+    er = n(159969);
 let eo = (0, H.isWindows)() ? 4 : 12 * !(0, H.isMac)();
 
 function ec(e) {
@@ -214,7 +214,7 @@ function eh(e) {
     } = e, [r] = (0, h.yK)([B.Ay], () => {
         let e = B.Ay.getGuildsTree();
         return [e, e.version]
-    }), o = r.getRoots(), c = (0, h.yK)([U.A], () => U.A.getGeoRestrictedGuilds()).map(e => (0, i.jsx)(J.A, {
+    }), o = r.getRoots(), c = (0, h.yK)([U.A], () => U.A.getGeoRestrictedGuilds()).map(e => (0, i.jsx)(Q.A, {
         id: e.id,
         name: e.name,
         icon: e.icon
@@ -249,7 +249,7 @@ function eA(e) {
         ref: R,
         ...U
     } = (0, d.$y)(), P = (0, f.R7z)(), [k, V] = s.useState(!1), z = (0, f.rdh)(p.A.modules.guildbar.AVATAR_SIZE), q = (0, f.rdh)(p.A.space.SPACE_XS), X = (0, y.A)("GuildsBar"), {
-        pathname: J
+        pathname: Q
     } = (0, c.zy)(), {
         entrypoint: $
     } = (0, L.X8)({
@@ -277,7 +277,7 @@ function eA(e) {
     }, []);
     let {
         analyticsLocations: es
-    } = (0, N.Ay)(I.A.GUILDS_LIST), eA = ec(J);
+    } = (0, N.Ay)(I.A.GUILDS_LIST), eA = ec(Q);
     (0, E.u5)(() => {
         if (!S.current && 0 !== o.size) {
             if (!eA) {
@@ -339,7 +339,7 @@ function eA(e) {
                     return null
             }
         }, [x, C, g, ei.setNodeRef]),
-        ep = (0, i.jsx)(Q.A, {
+        ep = (0, i.jsx)(J.A, {
             selected: eA,
             className: er.ai
         }),

@@ -2,18 +2,18 @@
 n.d(t, {
     j: () => d
 });
-var i = n(349435),
-    r = n(963555),
-    l = n(617641),
+var l = n(349435),
+    i = n(963555),
+    r = n(617641),
     a = n(168447),
-    o = n(546140);
+    s = n(546140);
 
 function d(e, t) {
-    let n = (0, l.Lc)({
+    let n = (0, r.Lc)({
             location: t
         }),
-        d = (0, o.L)(),
-        s = (0, a.Y)(e),
-        u = (0, r.F)(e, i._j.INAPPROPRIATE_CONVERSATION_TIER_2);
-    if (n && d && 0 !== s.length && !s.some(e => e.type === i._j.INAPPROPRIATE_CONVERSATION_TIER_1 || e.type === i._j.INAPPROPRIATE_CONVERSATION_TIER_2 && null != e.dismiss_timestamp)) return u
+        d = (0, s.L)(),
+        o = (0, a.Y)(e),
+        c = (0, i.F)(e, l._j.INAPPROPRIATE_CONVERSATION_TIER_2);
+    if (n && d && 0 !== o.length && !o.some(e => e.type === l._j.INAPPROPRIATE_CONVERSATION_TIER_1 || e.type === l._j.INAPPROPRIATE_CONVERSATION_TIER_2 && null != e.dismiss_timestamp)) return c
 }
