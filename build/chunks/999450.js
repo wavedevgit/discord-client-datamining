@@ -21,11 +21,11 @@ function h(e) {
         socialLayerStorefrontRecommendationsData: n
     } = (0, u.c)(), {
         analyticsLocations: h
-    } = (0, r.Ay)([l.A.GAME_PROFILE]), f = i.useCallback(() => {
+    } = (0, r.Ay)([l.A.GAME_PROFILE]), g = i.useCallback(() => {
         n?.guildId != null && (t(d.Ws.GameShop), (0, s.default)({
             guildId: n.guildId
         }))
-    }, [n, t]), g = i.useCallback((e, n) => {
+    }, [n, t]), f = i.useCallback((e, n) => {
         t(d.Ws.GameShopItem), (0, c.R)({
             skuId: e,
             applicationId: n,
@@ -39,11 +39,11 @@ function h(e) {
     } = n;
     return (0, a.jsx)(m.A, {
         title: x.intl.string(x.t.WDdlUb),
-        onClickViewAll: f,
+        onClickViewAll: g,
         children: (0, a.jsx)(o.R, {
             skuIds: _,
             analyticsLocations: h,
-            onCardClick: g
+            onCardClick: f
         })
     })
 }

@@ -112,30 +112,32 @@ let H = [],
             numAudience: _,
             withGuildIcon: p = !1,
             className: g,
-            children: f,
-            isThread: E = !1
-        } = e, [I, N] = s.useState(null), v = s.useRef(null), j = (0, b.$n)(l.id, c ?? H), {
-            enableHistoryHover: L
+            children: E,
+            isThread: I = !1
+        } = e, [N, v] = s.useState(null), j = s.useRef(null), L = (0, b.$n)(l.id, c ?? H);
+        (0, f.s)(l.guild_id, L);
+        let {
+            enableHistoryHover: M
         } = (0, T.G8)({
             guildId: l.guild_id,
             location: "VoiceUsers"
         }), {
-            shouldShow: M,
-            dismiss: D
+            shouldShow: D,
+            dismiss: G
         } = (0, C.Z0)(l, {
             collapsed: d
-        }), G = s.useRef(new o.J_(50, () => {
-            N(v.current), v.current = null
-        })), k = s.useRef(new o.J_(175, () => {
-            N(null)
-        })), F = s.useCallback(e => {
-            t && (k.current.cancel(), v.current = e, G.current.delay())
-        }, [t]), K = s.useCallback(e => {
-            t && (G.current.cancel(), v.current = null, k.current.delay())
-        }, [t]), W = (0, r.yK)([O.A], () => {
+        }), k = s.useRef(new o.J_(50, () => {
+            v(j.current), j.current = null
+        })), F = s.useRef(new o.J_(175, () => {
+            v(null)
+        })), K = s.useCallback(e => {
+            t && (F.current.cancel(), j.current = e, k.current.delay())
+        }, [t]), W = s.useCallback(e => {
+            t && (k.current.cancel(), j.current = null, F.current.delay())
+        }, [t]), Y = (0, r.yK)([O.A], () => {
             if (d) return [];
             let e = new Set;
-            return j?.forEach(t => {
+            return L?.forEach(t => {
                 let {
                     user: n
                 } = t;
@@ -144,10 +146,10 @@ let H = [],
                 })
             }), Array.from(e)
         });
-        (0, h.A)(W);
-        let Y = (() => {
-            if (null == j || 0 === j.length) return null;
-            let e = d && j.length > u + 1 ? j.slice(0, u) : j,
+        (0, h.A)(Y);
+        let z = (() => {
+            if (null == L || 0 === L.length) return null;
+            let e = d && L.length > u + 1 ? L.slice(0, u) : L,
                 t = A.A.getGuildRingingUsers(l.id),
                 s = e.map(e => {
                     let {
@@ -168,31 +170,31 @@ let H = [],
                         channel: l,
                         collapsed: d,
                         canDrag: n && R.A.can(w.xBc.MOVE_MEMBERS, l),
-                        showPreview: F,
-                        hidePreview: K,
-                        shouldShowHoverPopout: I === s.id,
+                        showPreview: K,
+                        hidePreview: W,
+                        shouldShowHoverPopout: N === s.id,
                         tabIndex: m
                     }, `voice-user-${s.id}-${o}`)
                 });
-            return M && s.unshift((0, i.jsx)(x.p, {
+            return D && s.unshift((0, i.jsx)(x.p, {
                 channel: l,
-                onClose: D
+                onClose: G
             }, "voice-invite-suggestions-button")), null != _ && _ > 0 ? s.push((0, i.jsx)(P.aI, {
                 collapsed: d,
                 numAudience: _
-            })) : d && j.length > u + 1 && s.push((0, i.jsx)(P.LR, {
-                numUsers: j.length - u
-            })), L && !d && l.type === w.rbe.GUILD_VOICE && s.push((0, i.jsx)(U.A, {
+            })) : d && L.length > u + 1 && s.push((0, i.jsx)(P.LR, {
+                numUsers: L.length - u
+            })), M && !d && l.type === w.rbe.GUILD_VOICE && s.push((0, i.jsx)(U.A, {
                 channel: l
             }, "ghost-user")), s
         })();
-        return null == Y && null == f ? null : (0, i.jsxs)(S.Wr, {
+        return null == z && null == E ? null : (0, i.jsxs)(S.Wr, {
             className: a()(g, V.p_, {
                 [V.yZ]: d,
                 [V.lY]: p,
-                [V.fT]: E
+                [V.fT]: I
             }),
             collapsed: d,
-            children: [Y, f]
+            children: [z, E]
         })
     }

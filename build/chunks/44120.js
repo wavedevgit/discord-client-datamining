@@ -15,22 +15,22 @@ var i = n(835245),
     m = n(979286),
     x = n(287809),
     h = n(954571),
-    f = n(166532),
-    g = n(301518),
+    g = n(166532),
+    f = n(301518),
     _ = n(652215);
-let p = new Set([f.pn.REVIEW, f.pn.CONFIRM, f.pn.GIFT_CUSTOMIZATION]);
+let p = new Set([g.pn.REVIEW, g.pn.CONFIRM, g.pn.GIFT_CUSTOMIZATION]);
 
 function v(e) {
     let t, {
             skuId: u,
-            analyticsLocations: f,
+            analyticsLocations: g,
             analyticsObject: v,
             isGift: j = !1,
             giftMessage: C,
             giftingOrigin: E,
             giftRecipient: I,
-            onClose: b,
-            onComplete: N
+            onClose: N,
+            onComplete: b
         } = e,
         S = !1,
         T = (0, i.A)(),
@@ -43,7 +43,7 @@ function v(e) {
     }), A({
         loadId: T,
         skuId: u,
-        analyticsLocations: f,
+        analyticsLocations: g,
         onStepChange: e => {
             t = e
         },
@@ -52,9 +52,9 @@ function v(e) {
         giftMessage: C,
         giftingOrigin: E,
         giftRecipient: I,
-        onClose: b,
+        onClose: N,
         onCloseCallback: () => {
-            if ((0, g.S)({
+            if ((0, f.S)({
                     checkoutSucceeded: S
                 }), !S) {
                 let e = (0, o.q1)({
@@ -67,16 +67,16 @@ function v(e) {
                     location: v,
                     is_gift: j,
                     sku_id: u,
-                    location_stack: f,
+                    location_stack: g,
                     checkout_design: e ? o.rS.UNIFIED : o.rS.LEGACY
                 })
-            }(0, s.ET)(), (0, c.z)(), b?.(S), S && (0, m.gB)()
+            }(0, s.ET)(), (0, c.z)(), N?.(S), S && (0, m.gB)()
         },
         onCloseRequest: () => {
             null != t && p.has(t) && (0, l.OoC)(k)
         },
         onComplete: () => {
-            S = !0, N?.()
+            S = !0, b?.()
         }
     })) : (0, l.mMO)(async () => {
         let {
@@ -90,7 +90,7 @@ function v(e) {
             return (0, a.jsx)(e, {
                 ...i,
                 onClose: () => {
-                    n(), b?.(!1)
+                    n(), N?.(!1)
                 }
             })
         }

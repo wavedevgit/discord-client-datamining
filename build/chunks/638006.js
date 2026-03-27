@@ -11,14 +11,14 @@ var n = r(627968),
     o = r(397927),
     c = r(287809),
     d = r(298072),
-    m = r(466459),
-    f = r(139136),
+    f = r(466459),
+    m = r(139136),
     h = r(623373),
     x = r(561769),
     p = r(846957),
     g = r(929283),
-    C = r(245068),
-    A = r(761365),
+    A = r(245068),
+    C = r(761365),
     I = r(550674),
     b = r(797877);
 let v = e => {
@@ -28,7 +28,7 @@ let v = e => {
         } = e, l = (0, h.YW)(t), {
             isPurchased: a,
             isPartiallyOwnedBundle: u
-        } = (0, m.h)(t), o = l === s.R.PROFILE_EFFECT;
+        } = (0, f.h)(t), o = l === s.R.PROFILE_EFFECT;
         return (0, n.jsxs)(n.Fragment, {
             children: [(0, n.jsx)("div", {
                 className: i()(b.mA, {
@@ -51,7 +51,7 @@ let v = e => {
         } = e, l = (0, u.bG)([c.default], () => c.default.getCurrentUser()), i = (0, h.YW)(t), a = (0, I.D)(t);
         switch (i) {
             case s.R.PROFILE_EFFECT:
-                return (0, n.jsx)(f.A, {
+                return (0, n.jsx)(m.A, {
                     skuId: a.skuId,
                     isHighlighted: r,
                     removeSetHeight: !0,
@@ -65,13 +65,13 @@ let v = e => {
                     avatarSize: o._3J.SIZE_120
                 });
             case s.R.NAMEPLATE:
-                return (0, n.jsx)(A.A, {
+                return (0, n.jsx)(C.A, {
                     nameplate: a,
                     user: l,
                     isHighlighted: r
                 });
             case s.R.BUNDLE:
-                return (0, n.jsx)(C.X, {
+                return (0, n.jsx)(A.X, {
                     product: t,
                     user: l,
                     isHighlighted: r

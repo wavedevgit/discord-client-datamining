@@ -12,14 +12,14 @@ var l = r(417597),
     o = r(465794),
     c = r(106799),
     d = r(652165),
-    m = r(287809),
-    f = r(927578),
+    f = r(287809),
+    m = r(927578),
     h = r(979286),
     x = r(4227),
     p = r(298072),
     g = r(993408),
-    C = r(450481),
-    A = r(740076),
+    A = r(450481),
+    C = r(740076),
     I = r(466459),
     b = r(623373),
     v = r(561769),
@@ -41,10 +41,10 @@ let P = e => {
             hasDiscountOffer: o,
             discountOfferAmount: c,
             text: d
-        } = e, m = (0, g.R8)(t, l, !1), f = o ? _.intl.formatToPlainString(_.t["5U5RB5"], {
+        } = e, f = (0, g.R8)(t, l, !1), m = o ? _.intl.formatToPlainString(_.t["5U5RB5"], {
             discountOfferAmount: c
         }) : _.intl.formatToPlainString(_.t["cNSL/j"], {
-            price: m
+            price: f
         });
         return (0, n.jsx)(i.Button, {
             variant: "primary",
@@ -58,7 +58,7 @@ let P = e => {
                     analyticsLocations: s
                 })
             },
-            text: d ?? f,
+            text: d ?? m,
             fullWidth: !0
         })
     },
@@ -217,12 +217,12 @@ let P = e => {
             text: o,
             prioritizedCurrency: c,
             onClickAnalytics: d
-        } = e, h = (0, l.bG)([m.default], () => m.default.getCurrentUser()), p = f.Ay.canUseCollectibles(h), {
+        } = e, h = (0, l.bG)([f.default], () => f.default.getCurrentUser()), p = m.Ay.canUseCollectibles(h), {
             isPurchased: b,
             isPartiallyOwnedBundle: k
         } = (0, I.h)(t), y = (0, g.G0)(t), R = (0, g.tt)(t), {
             isDisabled: T
-        } = (0, A.I)(t.skuId), _ = (0, g.Zu)({
+        } = (0, C.I)(t.skuId), _ = (0, g.Zu)({
             product: t,
             isPartiallyOwnedBundle: k,
             isPurchased: b
@@ -240,7 +240,7 @@ let P = e => {
         } = (0, a.Ay)(s.A.COLLECTIBLES_SHOP_CARD), F = (0, v.ql)(t, s.A.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, d), [z, Q] = (0, l.yK)([x.A], () => [x.A.isClaiming === t.skuId, null != x.A.isClaiming && x.A.isClaiming !== t.skuId]), {
             handleUseNow: X,
             isApplying: Y
-        } = (0, C.p)({
+        } = (0, A.p)({
             product: t
         });
         if (null != u) return (0, n.jsx)(V, {

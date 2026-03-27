@@ -11,8 +11,8 @@ var n = r(627968),
     o = r(732955),
     c = r(770178),
     d = r(775602),
-    m = r(985018),
-    f = r(721473);
+    f = r(985018),
+    m = r(721473);
 let h = e => {
     let {
         children: t,
@@ -22,10 +22,10 @@ let h = e => {
         className: x,
         iconButtonSize: p,
         "aria-label": g
-    } = e, C = l.useId(), A = l.useRef(0), I = l.useRef(0), b = l.useRef(0), v = l.useRef(!1), k = l.useRef(!1), E = l.useRef(null), j = (0, u.bG)([d.A], () => d.A.keyboardModeEnabled), y = (0, u.bG)([d.A], () => d.A.useReducedMotion), R = l.useMemo(() => l.Children.map(t, e => l.isValidElement(e) ? null != e && "object" == typeof e && e.$$typeof === Symbol.for("react.portal") ? e : l.cloneElement(e, {
+    } = e, A = l.useId(), C = l.useRef(0), I = l.useRef(0), b = l.useRef(0), v = l.useRef(!1), k = l.useRef(!1), E = l.useRef(null), j = (0, u.bG)([d.A], () => d.A.keyboardModeEnabled), y = (0, u.bG)([d.A], () => d.A.useReducedMotion), R = l.useMemo(() => l.Children.map(t, e => l.isValidElement(e) ? null != e && "object" == typeof e && e.$$typeof === Symbol.for("react.portal") ? e : l.cloneElement(e, {
         tabIndex: -1
     }) : e), [t]), [T, _] = l.useState(!1), [L, P] = l.useState(!1), [S, N] = l.useState(!0), O = () => {
-        _(I.current > A.current)
+        _(I.current > C.current)
     }, V = l.useCallback(() => {
         if (k.current) return;
         let e = w.current;
@@ -48,7 +48,7 @@ let h = e => {
         let {
             contentRect: t
         } = e;
-        A.current = t.width, null != w.current && (b.current = w.current?.scrollLeft), O(), B(), M()
+        C.current = t.width, null != w.current && (b.current = w.current?.scrollLeft), O(), B(), M()
     }), w = l.useRef(null);
     l.useEffect(() => {
         let e = w.current;
@@ -75,27 +75,27 @@ let h = e => {
             if (null == e) return;
             let {
                 scrollLeft: t
-            } = e, r = Math.max(0, t - A.current);
+            } = e, r = Math.max(0, t - C.current);
             b.current = r, v.current = !0, e.scrollTo({
                 left: r,
                 behavior: y ? "auto" : "smooth"
             }), e.addEventListener("scrollend", () => v.current = !1, {
                 once: !0
             }), B()
-        }, 200), [A, B, y]),
+        }, 200), [C, B, y]),
         U = l.useMemo(() => (0, a.throttle)(() => {
             let e = w.current;
             if (null == e) return;
             let {
                 scrollLeft: t
-            } = e, r = t + A.current;
+            } = e, r = t + C.current;
             b.current = r, v.current = !0, e.scrollTo({
                 left: r,
                 behavior: y ? "auto" : "smooth"
             }), e.addEventListener("scrollend", () => v.current = !1, {
                 once: !0
             }), B()
-        }, 200), [A, B, y]),
+        }, 200), [C, B, y]),
         G = l.useCallback(() => {
             let e = w.current;
             if (null == e) return !1;
@@ -125,13 +125,13 @@ let h = e => {
         role: null != g ? "region" : void 0,
         "aria-label": g,
         style: F,
-        className: s()(f.kL, x),
+        className: s()(m.kL, x),
         children: [T && (0, n.jsxs)("div", {
-            className: f.o1,
+            className: m.o1,
             role: "group",
             children: [(0, n.jsx)("div", {
-                className: s()(f.x6, {
-                    [f.r9]: !L && h
+                className: s()(m.x6, {
+                    [m.r9]: !L && h
                 }),
                 children: (0, n.jsx)(o.K0, {
                     icon: o.Zge,
@@ -139,13 +139,13 @@ let h = e => {
                     variant: "overlay-secondary",
                     onClick: H,
                     disabled: !L,
-                    "aria-label": m.intl.string(m.t.FQx1Ru),
+                    "aria-label": f.intl.string(f.t.FQx1Ru),
                     "aria-hidden": !L && h,
-                    "aria-controls": C
+                    "aria-controls": A
                 })
             }), (0, n.jsx)("div", {
-                className: s()(f.x6, {
-                    [f.r9]: !S && h
+                className: s()(m.x6, {
+                    [m.r9]: !S && h
                 }),
                 children: (0, n.jsx)(o.K0, {
                     icon: o.KS6,
@@ -153,22 +153,22 @@ let h = e => {
                     variant: "overlay-secondary",
                     onClick: U,
                     disabled: !S,
-                    "aria-label": m.intl.string(m.t.H4hwjn),
+                    "aria-label": f.intl.string(f.t.H4hwjn),
                     "aria-hidden": !S && h,
-                    "aria-controls": C
+                    "aria-controls": A
                 })
             })]
         }), (0, n.jsx)(o.BJc, {
             direction: "horizontal",
             gap: r,
-            id: C,
+            id: A,
             "aria-label": g,
             ref: w,
-            className: s()(f.Y_, {
-                [f.jL]: L,
-                [f.w6]: S,
-                [f.XG]: L && S,
-                [f.DY]: j
+            className: s()(m.Y_, {
+                [m.jL]: L,
+                [m.w6]: S,
+                [m.XG]: L && S,
+                [m.DY]: j
             }),
             tabIndex: 0,
             onFocus: e => {

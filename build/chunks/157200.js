@@ -12,8 +12,8 @@ var l = r(397927),
     o = r(623373),
     c = r(878112),
     d = r(561769),
-    m = r(347722),
-    f = r(758836),
+    f = r(347722),
+    m = r(758836),
     h = r(985018);
 let x = e => {
         let {
@@ -24,7 +24,7 @@ let x = e => {
             icon: x,
             prioritizedCurrency: p,
             onClickAnalytics: g
-        } = e, C = (0, a.Mk)(), A = C?.tab, I = (0, s.uM)(), b = (0, m.X)(t, p), v = (0, d.ql)(t, i.A.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, g);
+        } = e, A = (0, a.Mk)(), C = A?.tab, I = (0, s.uM)(), b = (0, f.X)(t, p), v = (0, d.ql)(t, i.A.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, g);
         return null != o || null != x ? (0, n.jsx)(l.K0, {
             variant: "primary",
             "aria-label": h.intl.string(h.t.SKNnqq),
@@ -34,7 +34,7 @@ let x = e => {
             }
         }) : b ? (0, n.jsx)(s.R9, {
             newValue: {
-                pageCategory: A === f.G2.HOME ? void 0 : I?.pageCategory
+                pageCategory: C === m.G2.HOME ? void 0 : I?.pageCategory
             },
             children: (0, n.jsx)(c.A, {
                 primary: !0,
@@ -53,13 +53,13 @@ let x = e => {
             icon: i,
             prioritizedCurrency: s,
             onClickAnalytics: a
-        } = e, c = (0, d.Vm)(t), m = (0, u.Q)(c);
+        } = e, c = (0, d.Vm)(t), f = (0, u.Q)(c);
         if (null == c) return null;
-        let f = (0, o.rb)(c, m);
+        let m = (0, o.rb)(c, f);
         return (0, n.jsx)(x, {
-            product: f,
+            product: m,
             cardRef: r,
-            selectedVariantIndex: m,
+            selectedVariantIndex: f,
             onClick: l,
             icon: i,
             prioritizedCurrency: s,

@@ -1,5 +1,5 @@
 /** chunk id: 123902 params = (module,exports,require) **/
-i.d(t, {
+i.d(e, {
     A: () => g,
     V: () => A
 });
@@ -12,22 +12,22 @@ var n, l = i(627968),
     u = i(371664),
     c = i(671097),
     A = ((n = {}).BLACK = "BLACK", n.GRAY = "GRAY", n);
-let h = {
+let m = {
         BLACK: c.Ql,
         GRAY: c.wm
     },
-    m = {
+    h = {
         sm: 20,
         md: 28
     };
 
-function p(e) {
-    return Math.round(e / u.K) * u.K
+function p(t) {
+    return Math.round(t / u.K) * u.K
 }
 
-function g(e) {
+function g(t) {
     let {
-        notchBackground: t,
+        notchBackground: e,
         progress: i,
         size: n = "md",
         gradientStart: s = o.A.unsafe_rawColors.YELLOW_260.css,
@@ -35,15 +35,15 @@ function g(e) {
         className: g,
         notchClassName: f,
         children: T
-    } = e, S = m[n], {
+    } = t, S = h[n], {
         ref: E,
         width: C
     } = (0, d.Ay)(), v = r.useMemo(() => null != C ? p(C) : 0, [C]), _ = r.useMemo(() => {
-        let e = Math.abs(p(v * (100 - Math.max(0, Math.min(100, i))) / 100) - v);
+        let t = Math.abs(p(v * (100 - Math.max(0, Math.min(100, i))) / 100) - v);
         return {
-            transform: `translateX(${e}px)`
+            transform: `translateX(${t}px)`
         }
-    }, [i, v]), y = r.useMemo(() => ({
+    }, [i, v]), I = r.useMemo(() => ({
         width: `${v}px`,
         background: i <= 0 ? "none" : `linear-gradient(to right, ${s}, ${A})`
     }), [A, s, i, v]);
@@ -55,14 +55,14 @@ function g(e) {
         },
         children: [(0, l.jsxs)("div", {
             className: a()(c.kL, g),
-            style: y,
+            style: I,
             children: [(0, l.jsx)("div", {
                 className: c.qB,
                 style: _
             }), 0 !== v && (0, l.jsx)(u.A, {
                 width: v,
                 height: S,
-                className: a()(c.DR, h[t], f)
+                className: a()(c.DR, m[e], f)
             })]
         }), T]
     })

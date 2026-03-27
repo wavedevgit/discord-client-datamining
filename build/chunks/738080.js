@@ -1,5 +1,5 @@
 /** chunk id: 738080 params = (module,exports,require) **/
-i.d(t, {
+i.d(e, {
     A: () => o
 });
 var n = i(627968);
@@ -9,20 +9,20 @@ var l = i(556445),
     s = i(90644),
     a = i(652215);
 
-function o(e) {
+function o(t) {
     let {
-        activity: t,
+        activity: e,
         user: i,
         guildId: o,
         channelId: d,
         source: u,
         onAction: c
-    } = e;
-    return null != t && (0, r.A)(t, a.jUm.SYNC) && (0, s.A)(t) ? (0, n.jsx)(l.A, {
+    } = t;
+    return null != e && (0, r.A)(e, a.jUm.SYNC) && (0, s.A)(e) ? (0, n.jsx)(l.A, {
         size: "sm",
         variant: "secondary",
         user: i,
-        activity: t,
+        activity: e,
         guildId: o ?? void 0,
         channelId: d,
         source: u,

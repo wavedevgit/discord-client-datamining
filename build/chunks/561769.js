@@ -3,7 +3,7 @@ n.d(t, {
     AW: () => j,
     Hi: () => C,
     UU: () => E,
-    Vm: () => b,
+    Vm: () => N,
     gZ: () => A,
     nY: () => v,
     ql: () => I,
@@ -19,8 +19,8 @@ var a, i, l = n(64700),
     m = n(590180),
     x = n(161918),
     h = n(572595),
-    f = n(57020),
-    g = n(758836),
+    g = n(57020),
+    f = n(758836),
     _ = n(652215);
 let p = l.createContext({
     flattenProductVariants: void 0,
@@ -43,9 +43,9 @@ let E = (e, t, n) => a => {
             sku_id: e.skuId,
             page_type: t,
             page_section: n?.pageSection,
-            page_category: t === g.G2.HOME ? void 0 : n?.pageCategory,
-            page_index: t === g.G2.CATALOG ? n?.pageIndex : void 0,
-            page_size: t === g.G2.CATALOG ? n?.pageSize : void 0,
+            page_category: t === f.G2.HOME ? void 0 : n?.pageCategory,
+            page_index: t === f.G2.CATALOG ? n?.pageIndex : void 0,
+            page_size: t === f.G2.CATALOG ? n?.pageSize : void 0,
             tile_type: r.R[e.type],
             tile_position: String(n?.tilePosition),
             cta_name: a
@@ -58,16 +58,16 @@ let E = (e, t, n) => a => {
             {
                 analyticsLocations: d
             } = (0, o.Ay)(c.A.COLLECTIBLES_SHOP_CARD),
-            g = (0, s.bG)([m.A], () => m.A.getCategoryForProduct(e.skuId)),
+            f = (0, s.bG)([m.A], () => m.A.getCategoryForProduct(e.skuId)),
             _ = l.useRef(null);
         return l.useCallback(t => a => {
-            if (null == g) return;
-            let l = (0, f.A)({
+            if (null == f) return;
+            let l = (0, g.A)({
                 product: e
             });
             _.current = a.currentTarget, n?.(), (0, h.t)({
                 product: e,
-                category: g,
+                category: f,
                 shouldCheckoutWithOrbs: l,
                 analyticsLocations: d,
                 analyticsSource: t,
@@ -77,9 +77,9 @@ let E = (e, t, n) => a => {
                 sessionId: r?.sessionId,
                 tilePosition: r?.tilePosition
             })
-        }, [e, i, g, d, n, r?.cardId, r?.sessionId, r?.tilePosition])(t)
+        }, [e, i, f, d, n, r?.cardId, r?.sessionId, r?.tilePosition])(t)
     },
-    b = e => {
+    N = e => {
         let {
             flattenProductVariants: t,
             productOverride: n

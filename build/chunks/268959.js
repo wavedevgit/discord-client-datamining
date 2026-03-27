@@ -12,14 +12,14 @@ var l = r(503698),
     o = r(927578),
     c = r(590180),
     d = r(298072),
-    m = r(993408),
-    f = r(466459),
+    f = r(993408),
+    m = r(466459),
     h = r(623373),
     x = r(561769),
     p = r(525723),
     g = r(57020),
-    C = r(985018),
-    A = r(766706);
+    A = r(985018),
+    C = r(766706);
 let I = e => {
         let {
             product: t,
@@ -30,7 +30,7 @@ let I = e => {
         } = e, {
             isPurchased: I,
             isPartiallyOwnedBundle: b
-        } = (0, f.h)(t), v = (0, m.G0)(t), k = (0, s.bG)([c.A], () => c.A.getCategoryForProduct(t.skuId)), E = k?.unpublishedAt != null ? (0, m.WU)(k.unpublishedAt) : null, j = (0, s.bG)([u.default], () => u.default.getCurrentUser()), y = o.Ay.canUseCollectibles(j), R = (0, p.V_)(t), {
+        } = (0, m.h)(t), v = (0, f.G0)(t), k = (0, s.bG)([c.A], () => c.A.getCategoryForProduct(t.skuId)), E = k?.unpublishedAt != null ? (0, f.WU)(k.unpublishedAt) : null, j = (0, s.bG)([u.default], () => u.default.getCurrentUser()), y = o.Ay.canUseCollectibles(j), R = (0, p.V_)(t), {
             isOrbExclusive: T
         } = (0, g.F)({
             product: t,
@@ -38,27 +38,27 @@ let I = e => {
             prioritizedCurrency: h,
             hasDiscountOffer: null != R
         }), _ = r;
-        if (null == _ && (!l && (0, m.HF)(k?.unpublishedAt) ? _ = x.AW.LIMITED_TIME : !b && !I && (0, m.aT)(t.skuId) ? _ = x.AW.NEW : T ? _ = x.AW.ORBS_EXCLUSIVE : v && (_ = x.AW.NITRO_EXCLUSIVE)), null == _ || _ === x.AW.NONE) return null;
+        if (null == _ && (!l && (0, f.HF)(k?.unpublishedAt) ? _ = x.AW.LIMITED_TIME : !b && !I && (0, f.aT)(t.skuId) ? _ = x.AW.NEW : T ? _ = x.AW.ORBS_EXCLUSIVE : v && (_ = x.AW.NITRO_EXCLUSIVE)), null == _ || _ === x.AW.NONE) return null;
         let L = null;
         switch (_) {
             case x.AW.LIMITED_TIME:
-                L = null != E ? E > 1 ? C.intl.formatToPlainString(C.t.Io7ozn, {
+                L = null != E ? E > 1 ? A.intl.formatToPlainString(A.t.Io7ozn, {
                     days: E
-                }) : C.intl.string(C.t.Bc13HF) : C.intl.string(C.t["h/uBCR"]);
+                }) : A.intl.string(A.t.Bc13HF) : A.intl.string(A.t["h/uBCR"]);
                 break;
             case x.AW.NEW:
-                L = C.intl.string(C.t.y2b7CA);
+                L = A.intl.string(A.t.y2b7CA);
                 break;
             case x.AW.NITRO_EXCLUSIVE:
-                L = C.intl.string(C.t.X3Ekj8);
+                L = A.intl.string(A.t.X3Ekj8);
                 break;
             case x.AW.ORBS_EXCLUSIVE:
-                L = C.intl.string(C.t["0TmQRG"])
+                L = A.intl.string(A.t["0TmQRG"])
         }
         return (0, n.jsx)(a.LpS, {
             text: L,
             disableColor: !0,
-            className: i()(d, A.$)
+            className: i()(d, C.$)
         })
     },
     b = e => {

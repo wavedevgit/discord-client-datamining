@@ -1,6 +1,6 @@
 /** chunk id: 751304 params = (module,exports,require) **/
 r.d(t, {
-    A: () => P
+    A: () => S
 });
 var n = r(627968),
     l = r(64700),
@@ -10,32 +10,33 @@ var n = r(627968),
     u = r(575593),
     o = r(230109),
     c = r(397927),
-    d = r(793574),
+    d = r(444927),
+    f = r(793574),
     m = r(713517),
-    f = r(440938),
-    h = r(161918),
-    x = r(597783),
-    p = r(859587),
-    g = r(536572),
+    h = r(440938),
+    x = r(161918),
+    p = r(597783),
+    g = r(859587),
+    A = r(536572),
     C = r(268959),
-    A = r(387945),
-    I = r(638006),
-    b = r(140877),
-    v = r(834384),
-    k = r(157200),
-    E = r(561769),
-    j = r(364616),
-    y = r(666839),
-    R = r(935094),
-    T = r(758836),
-    _ = r(551497);
-let L = l.memo(function(e) {
+    I = r(387945),
+    b = r(638006),
+    v = r(140877),
+    k = r(834384),
+    E = r(157200),
+    j = r(561769),
+    y = r(364616),
+    R = r(666839),
+    T = r(935094),
+    _ = r(758836),
+    L = r(551497);
+let P = l.memo(function(e) {
         let {
             product: t,
             hideWishlistButton: r,
             hideProductName: i,
             hideVariantSwitcher: a,
-            hidePrice: L,
+            hidePrice: d,
             hidePrimaryCTA: P,
             hideSecondaryCTA: S,
             badgeOverride: N,
@@ -58,21 +59,21 @@ let L = l.memo(function(e) {
             previewingVariantIndex: q,
             handleEntering: K,
             handleLeaving: Z
-        } = (0, R.f)(t), $ = (0, E.gZ)() ?? X, J = (0, h.Mk)(), ee = J?.tab, et = (0, f.uM)(), er = l.useMemo(() => (0, E.UU)(t, ee, et), [t, ee, et]), en = (0, g.s7)(t), el = l.useRef(null), {
+        } = (0, T.f)(t), $ = (0, j.gZ)() ?? X, J = (0, x.Mk)(), ee = J?.tab, et = (0, h.uM)(), er = l.useMemo(() => (0, j.UU)(t, ee, et), [t, ee, et]), en = (0, A.s7)(t), el = l.useRef(null), {
             isHoveringOrFocusing: ei
         } = (0, m.A)(el), {
             handleCardVisibilityChange: es
-        } = (0, x.Z)(t.skuId, ee === T.G2.CATALOG ? "full" : ee), ea = (0, E.ql)(t, d.A.COLLECTIBLES_SHOP_CARD, er);
-        (0, p.x)(ei, t);
+        } = (0, p.Z)(t.skuId, ee === _.G2.CATALOG ? "full" : ee), ea = (0, j.ql)(t, f.A.COLLECTIBLES_SHOP_CARD, er);
+        (0, g.x)(ei, t);
         let eu = t.type === u.R.VARIANTS_GROUP && !a,
             eo = l.useMemo(() => ({
                 maxVariantsToShow: 4,
                 onClick: ea
             }), [ea]),
             ec = !P || !S,
-            ed = !(L && i) || eu,
-            em = ed || ec,
-            ef = ec || eu;
+            ed = !(d && i) || eu,
+            ef = ed || ec,
+            em = ec || eu;
         return (0, n.jsx)(o.L, {
             innerRef: el,
             onChange: es,
@@ -81,60 +82,60 @@ let L = l.memo(function(e) {
                 ref: el,
                 onClick: V ?? ea,
                 "aria-label": en,
-                className: s()(Q, _.ty, {
-                    [_.yo]: ei
+                className: s()(Q, L.ty, {
+                    [L.yo]: ei
                 }),
                 onFocus: () => H?.(t.skuId),
                 onBlur: () => U?.(t.skuId),
                 onMouseEnter: () => W?.(t.skuId),
                 onMouseLeave: () => w?.(t.skuId),
                 children: (0, n.jsxs)("div", {
-                    className: _.qt,
+                    className: L.qt,
                     style: {
                         aspectRatio: Y
                     },
                     children: [(0, n.jsx)("div", {
-                        className: s()(_.Dq, {
-                            [_.$r]: !i || ed || ef
+                        className: s()(L.Dq, {
+                            [L.$r]: !i || ed || em
                         }),
-                        children: (0, n.jsx)(I.A, {
+                        children: (0, n.jsx)(b.A, {
                             skuId: t.skuId,
                             isCardHovered: ei,
                             overrideVariantIndex: q
                         })
                     }), (0, n.jsxs)("div", {
-                        className: _.N1,
+                        className: L.N1,
                         children: [(0, n.jsx)(C.A, {
                             skuId: t.skuId,
                             badgeOverride: N,
                             className: z,
                             prioritizedCurrency: $,
                             skipLimitedTimeCheck: O
-                        }), !r && (0, n.jsx)(y.A, {
+                        }), !r && (0, n.jsx)(R.A, {
                             skuId: t.skuId,
                             isCardHovered: ei
                         })]
-                    }), em && (0, n.jsxs)(n.Fragment, {
+                    }), ef && (0, n.jsxs)(n.Fragment, {
                         children: [(0, n.jsx)("div", {
-                            className: _.wY
+                            className: L.wY
                         }), (0, n.jsxs)("div", {
-                            className: _.xQ,
+                            className: L.xQ,
                             children: [ed && (0, n.jsxs)("div", {
-                                className: _.xE,
-                                children: [!(i && L) && (0, n.jsxs)("div", {
-                                    className: _.Ly,
-                                    children: [!i && (0, n.jsx)(A.A, {
+                                className: L.xE,
+                                children: [!(i && d) && (0, n.jsxs)("div", {
+                                    className: L.Ly,
+                                    children: [!i && (0, n.jsx)(I.A, {
                                         skuId: t.skuId,
-                                        className: s()(F, _.tZ)
-                                    }), !L && (0, n.jsx)("div", {
-                                        className: _.oh,
+                                        className: s()(F, L.tZ)
+                                    }), !d && (0, n.jsx)("div", {
+                                        className: L.oh,
                                         "aria-hidden": !0,
-                                        children: (0, n.jsx)(b.A, {
+                                        children: (0, n.jsx)(v.A, {
                                             skuId: t.skuId,
                                             prioritizedCurrency: $
                                         })
                                     })]
-                                }), eu && (0, n.jsx)(j.A, {
+                                }), eu && (0, n.jsx)(y.A, {
                                     skuId: t.skuId,
                                     isCollapsed: !ei,
                                     onVariantEnter: K,
@@ -142,19 +143,19 @@ let L = l.memo(function(e) {
                                     overflowProps: eo
                                 })]
                             }), ec && (0, n.jsx)("div", {
-                                className: _.Vs,
+                                className: L.Vs,
                                 children: (0, n.jsxs)(c.ButtonGroup, {
                                     wrap: !1,
-                                    className: _.Ld,
+                                    className: L.Ld,
                                     fullWidth: !0,
-                                    children: [!P && (0, n.jsx)(v.A, {
+                                    children: [!P && (0, n.jsx)(k.A, {
                                         skuId: t.skuId,
                                         cardRef: el,
                                         onClick: B,
                                         text: G,
                                         prioritizedCurrency: $,
                                         onClickAnalytics: er
-                                    }), !S && (0, n.jsx)(k.A, {
+                                    }), !S && (0, n.jsx)(E.A, {
                                         skuId: t.skuId,
                                         cardRef: el,
                                         onClick: M,
@@ -170,17 +171,17 @@ let L = l.memo(function(e) {
             })
         })
     }),
-    P = e => {
+    S = e => {
         let {
             skuId: t,
             ...r
-        } = e, i = (0, E.Vm)(t), s = l.useMemo(() => ({
+        } = e, l = (0, j.Vm)(t), i = (0, d.A)(() => ({
             cardId: (0, a.A)()
-        }), []);
-        return null == i ? null : (0, n.jsx)(f.R9, {
-            newValue: s,
-            children: (0, n.jsx)(L, {
-                product: i,
+        }));
+        return null == l ? null : (0, n.jsx)(h.R9, {
+            newValue: i,
+            children: (0, n.jsx)(P, {
+                product: l,
                 ...r
             })
         })

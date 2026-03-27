@@ -1,5 +1,5 @@
 /** chunk id: 302959 params = (module,exports,require) **/
-i.d(t, {
+i.d(e, {
     A: () => _,
     M: () => v
 });
@@ -13,8 +13,8 @@ var n = i(627968),
     u = i(806246),
     c = i(890330),
     A = i(172710),
-    h = i(616356),
-    m = i(734057),
+    m = i(616356),
+    h = i(734057),
     p = i(71393),
     g = i(977997),
     f = i(954571),
@@ -22,9 +22,9 @@ var n = i(627968),
     S = i(652215),
     E = i(78016);
 
-function C(e) {
+function C(t) {
     let {
-        type: t,
+        type: e,
         source: i,
         activity: l,
         applicationStream: r,
@@ -32,10 +32,10 @@ function C(e) {
         guildId: a,
         channelId: d,
         onAction: u
-    } = e;
+    } = t;
     return (0, n.jsx)(o.A, {
-        className: (0, T.t)(E, "actions", t),
-        type: t,
+        className: (0, T.t)(E, "actions", e),
+        type: e,
         source: i,
         activity: l,
         applicationStream: r,
@@ -47,41 +47,41 @@ function C(e) {
     })
 }
 let v = a.A.Types,
-    _ = function(e) {
+    _ = function(t) {
         let {
-            activity: t,
+            activity: e,
             user: i,
             useStoreStream: o = !0,
             showActions: T = !0,
             hideHeader: E = !1,
             showChannelDetails: v = !1,
             ..._
-        } = e, y = (0, r.bG)([g.A, m.A], () => m.A.getChannel(g.A.getVoiceStateForUser(i.id)?.channelId)), x = (0, c.v)("UserActivityContainer", y), I = (0, r.bG)([h.A], () => o ? h.A.getAnyStreamForUser(i.id) : null), N = t?.type === S.$pd.HANG_STATUS && x ? y : null, j = (0, r.bG)([p.A, g.A, m.A], () => (0, s.A)(t, S.jUm.EMBEDDED) ? p.A.getGuild(m.A.getChannel(g.A.getVoiceStateForSession(i.id, t?.session_id)?.channelId)?.getGuildId()) : null != N ? p.A.getGuild(N.getGuildId()) : null), D = (0, r.bG)([p.A], () => null != I ? p.A.getGuild(I.guildId) : null), O = (0, r.bG)([d.A], () => {
-            if (null != t)
-                if (null != t.application_id) return d.A.getApplication(t.application_id);
-                else return d.A.getApplicationByName(t.name);
+        } = t, I = (0, r.bG)([g.A, h.A], () => h.A.getChannel(g.A.getVoiceStateForUser(i.id)?.channelId)), y = (0, c.v)("UserActivityContainer", I), x = (0, r.bG)([m.A], () => o ? m.A.getAnyStreamForUser(i.id) : null), N = e?.type === S.$pd.HANG_STATUS && y ? I : null, j = (0, r.bG)([p.A, g.A, h.A], () => (0, s.A)(e, S.jUm.EMBEDDED) ? p.A.getGuild(h.A.getChannel(g.A.getVoiceStateForSession(i.id, e?.session_id)?.channelId)?.getGuildId()) : null != N ? p.A.getGuild(N.getGuildId()) : null), D = (0, r.bG)([p.A], () => null != x ? p.A.getGuild(x.guildId) : null), O = (0, r.bG)([d.A], () => {
+            if (null != e)
+                if (null != e.application_id) return d.A.getApplication(e.application_id);
+                else return d.A.getApplicationByName(e.name);
             return null
         });
         return (l.useEffect(() => {
-            t?.type === S.$pd.HANG_STATUS && x && f.default.track(S.HAw.VIEW_HANG_STATUS, {
+            e?.type === S.$pd.HANG_STATUS && y && f.default.track(S.HAw.VIEW_HANG_STATUS, {
                 source: "UserActivity",
                 other_user_id: i.id,
                 ...(0, u.A)(N?.id)
             })
-        }, [t?.type, x, N, i.id]), t?.type !== S.$pd.HANG_STATUS || x) ? (0, n.jsx)(a.A, {
+        }, [e?.type, y, N, i.id]), e?.type !== S.$pd.HANG_STATUS || y) ? (0, n.jsx)(a.A, {
             ..._,
-            activity: t,
+            activity: e,
             user: i,
             application: O,
             hideHeader: E,
             activityGuild: j ?? D,
             showChannelDetails: v,
-            channel: v ? y : void 0,
+            channel: v ? I : void 0,
             enableUserHoverActivities: _.enableUserHoverActivities,
             renderActions: T ? () => (0, n.jsx)(C, {
                 ..._,
-                applicationStream: I,
-                activity: t,
+                applicationStream: x,
+                activity: e,
                 user: i
             }) : null,
             onOpenSpotifyTrack: A.Mp,
