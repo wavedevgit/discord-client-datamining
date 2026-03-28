@@ -545,7 +545,7 @@ let Q = e => {
                 disableVerificationLevel: Z,
                 disableContentFilter: J,
                 onAcceptVerificationLevel: e => {
-                    e ? e && N.A.updateGuild({
+                    e ? N.A.updateGuild({
                         verificationLevel: y.PvD.LOW
                     }) : N.A.updateGuild({
                         verificationLevel: k

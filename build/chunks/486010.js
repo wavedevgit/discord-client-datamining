@@ -152,7 +152,7 @@ function L(e) {
                 children: [S && (0, s.jsx)(m.DUT, {
                     className: I.wZ,
                     onClick: () => {
-                        S && b(!1)
+                        b(!1)
                     },
                     "aria-label": "overlay"
                 }), (0, s.jsxs)(m.IpV, {

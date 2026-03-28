@@ -30,8 +30,8 @@ var i = n(284009),
     p = n(50827),
     E = n(395504),
     S = n(454058),
-    f = n(272720),
-    y = n(56595),
+    y = n(272720),
+    f = n(56595),
     v = n(863005),
     L = n(152007),
     m = n(95701),
@@ -143,7 +143,7 @@ class ee {
         this.id = e, this.hideMutedChannels = D.Ay.isGuildCollapsed(this.id), this.mutedChannelIds = D.Ay.getMutedChannels(this.id), this.optedInChannels = D.Ay.getOptedInChannelsWithPendingUpdates(this.id) ?? D.Ay.getOptedInChannels(this.id), this.optInEnabled = (0, E.WW)(this.id), this.hideResourceChannels = (0, u.K)(this.id), this.favoriteChannelIds = new Set(D.Ay.getGuildFavorites(this.id) ?? []), this.suggestedFavoriteChannelId = _.A.getSuggestedChannelId(this.id), this.collapsedCategoryIds = N.A.getCollapsedCategories();
         const i = w.A.getMutableGuildChannelsForGuild(this.id),
             r = T.A.getGuild(this.id);
-        this.moderatorReportChannelId = null != r ? (0, f.A)(r) : null, this.moderatorReportChannelEnabled = null != r && (0, y.A)(r);
+        this.moderatorReportChannelId = null != r ? (0, y.A)(r) : null, this.moderatorReportChannelEnabled = null != r && (0, f.A)(r);
         const a = {},
             d = [],
             o = {};
@@ -796,13 +796,7 @@ function ep(e, t, n) {
         selectedChannel: i,
         activeJoinedRelevantThreads: s
     } = n;
-    if (t.type === B.rbe.GUILD_DIRECTORY || !e.optInEnabled || e.optedInChannels.has(t.id) || t.isThread() || null != t.parent_id && e.optedInChannels.has(t.parent_id) || e.hideResourceChannels && t.hasFlag(M.lx.IS_GUILD_RESOURCE_CHANNEL)) return !1;
-    if (t.isGuildVocal()) {
-        let n = x.A.isVoiceCategoryCollapsed(e.id);
-        if (!n) return !1;
-        let i = l().some(F.A.getVoiceStatesForChannel(t.id));
-        if (n && i) return !1
-    }
+    if (t.type === B.rbe.GUILD_DIRECTORY || !e.optInEnabled || e.optedInChannels.has(t.id) || t.isThread() || null != t.parent_id && e.optedInChannels.has(t.parent_id) || e.hideResourceChannels && t.hasFlag(M.lx.IS_GUILD_RESOURCE_CHANNEL) || t.isGuildVocal() && (!x.A.isVoiceCategoryCollapsed(e.id) || l().some(F.A.getVoiceStatesForChannel(t.id)))) return !1;
     if (null != i && (i.id === t.id || i.isThread() && i.parent_id === t.id) || O.Ay.getMentionCount(t.id) > 0) return !0;
     for (let e in s[t.id])
         if (O.Ay.getMentionCount(e) > 0 || O.Ay.hasUnread(e) || O.Ay.hasRecentlyVisitedAndRead(e)) return !0;

@@ -47,13 +47,13 @@ function N(e) {
         children: [(0, i.jsx)(c.Text, {
             variant: "text-sm/normal",
             children: I
-        }), S ? (0, i.jsx)(c._BQ, {
+        }), (0, i.jsx)(c._BQ, {
             size: "custom",
             color: "currentColor",
             width: 10,
             height: 10,
             className: _.OW
-        }) : null]
+        })]
     }) : (0, i.jsx)(c.Button, {
         size: "sm",
         buttonRef: U,

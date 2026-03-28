@@ -166,7 +166,7 @@ class s {
                         return {
                             type: r.Gy.GAME_EVENT,
                             eventType: r.rb.MULTIKILL,
-                            importance: e.killStreak >= 4 && e.killerIsActivePlayer ? 1 : .5,
+                            importance: e.killStreak >= 4 ? 1 : .5,
                             title: t,
                             description: i
                         }
@@ -237,7 +237,7 @@ class s {
                     if (e.playerHelpedKill) return {
                         type: r.Gy.GAME_EVENT,
                         eventType: r.rb.OBJECTIVE_KILL,
-                        importance: e.playerHelpedKill ? .8 : .5,
+                        importance: .8,
                         title: a.intl.string(a.t.KohKss),
                         description: a.intl.formatToPlainString(a.t["4yYLUi"], {
                             killerName: e.killerName

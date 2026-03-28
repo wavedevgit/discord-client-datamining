@@ -12,8 +12,8 @@ var a = s(627968),
     o = s(638128),
     p = s(975571),
     u = s(454235),
-    d = s(652215),
-    g = s(985018);
+    g = s(652215),
+    d = s(985018);
 
 function b(t) {
     let {
@@ -28,7 +28,7 @@ function b(t) {
         spellcheckEnabled: b
     };
     let h = n.useRef(!1),
-        [m, T] = n.useState(!1),
+        [T, m] = n.useState(!1),
         [y, S] = n.useState([]),
         C = n.useCallback(() => {
             let {
@@ -38,10 +38,10 @@ function b(t) {
             } = x.current;
             t && (0, u.TT)() && Promise.all([(0, u.PS)(e, !0), (0, u.Os)(e, !0)]).then(t => {
                 let [e, a] = t;
-                h.current && (T(e), S(a), s())
+                h.current && (m(e), S(a), s())
             })
         }, []),
-        E = n.useCallback(() => {
+        A = n.useCallback(() => {
             if ((0, r.vq)(s, HTMLInputElement) || (0, r.vq)(s, HTMLTextAreaElement)) {
                 let {
                     selectionStart: t,
@@ -65,29 +65,29 @@ function b(t) {
             (0, u.rK)(t), s.focus()
         }
     }, `correction-${e}`)), (0, a.jsxs)(a.Fragment, {
-        children: [m ? (0, a.jsx)(c.Drp, {
+        children: [T ? (0, a.jsx)(c.Drp, {
             id: "add-to-dictionary",
-            label: g.intl.string(g.t.HJmG1G),
+            label: d.intl.string(d.t.HJmG1G),
             action: () => {
-                (0, l.NG)(e), E()
+                (0, l.NG)(e), A()
             }
         }) : null, f && (0, a.jsx)(c.Drp, {
             id: "remove-from-dictionary",
-            label: g.intl.string(g.t.xXqIX0),
+            label: d.intl.string(d.t.xXqIX0),
             action: () => {
-                (0, l.QZ)(e), E()
+                (0, l.QZ)(e), A()
             }
         }), (0, a.jsx)(c.sLh, {
             id: "spellcheck",
-            label: g.intl.string(g.t.TKkotf),
+            label: d.intl.string(d.t.TKkotf),
             checked: b,
             action: () => {
-                (0, l.Np)(), E()
+                (0, l.Np)(), A()
             }
         }), b ? (0, a.jsx)(c.Drp, {
             id: "languages",
-            label: g.intl.string(g.t.OlOHDH),
-            action: () => window.open(p.A.getArticleURL(d.MVz.SPELLCHECK))
+            label: d.intl.string(d.t.OlOHDH),
+            action: () => window.open(p.A.getArticleURL(g.MVz.SPELLCHECK))
         }) : null]
     })] : [null, null]
 }

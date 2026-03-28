@@ -12,8 +12,8 @@ var a = s(627968),
     o = s(147087),
     p = s(773669),
     u = s(186306),
-    d = s(323350),
-    g = s(711371),
+    g = s(323350),
+    d = s(711371),
     b = s(652215),
     f = s(985018),
     x = s(715413);
@@ -23,12 +23,12 @@ function h(t) {
         {
             selection: h
         } = t,
-        m = null != h ? (0, d.WO)(g.VW.richValue(t), {
+        T = null != h ? (0, g.WO)(d.VW.richValue(t), {
             mode: "plain",
             range: h,
             preventEmojiSurrogates: !1
         }) : "",
-        T = n.useCallback(e => {
+        m = n.useCallback(e => {
             r.rL.focus(t), u.o.withSingleEntry(t, () => {
                 t.deleteFragment(), t.insertText(e)
             })
@@ -58,9 +58,9 @@ function h(t) {
                 action: i,
                 disabled: s
             })
-        }(m, T),
+        }(T, m),
         S = function(t, e) {
-            let [r, o] = n.useState(!1), u = (0, i.bG)([p.default], () => p.default.locale), d = n.useCallback(async (s, a) => {
+            let [r, o] = n.useState(!1), u = (0, i.bG)([p.default], () => p.default.locale), g = n.useCallback(async (s, a) => {
                 if (r) return;
                 let n = s ?? u;
                 o(!0);
@@ -83,7 +83,7 @@ function h(t) {
                 } finally {
                     o(!1)
                 }
-            }, [r, u, t, e]), g = (0, f.getAvailableLocales)().map(t => {
+            }, [r, u, t, e]), d = (0, f.getAvailableLocales)().map(t => {
                 let e;
                 try {
                     e = s(579832)(`./${t.value}.png`)
@@ -102,19 +102,19 @@ function h(t) {
                         type: "image",
                         src: e
                     },
-                    action: () => d(t.value, t.name),
+                    action: () => g(t.value, t.name),
                     disabled: r
                 }, t.value)
             });
             return (0, a.jsx)(l.Drp, {
                 id: "translate",
                 label: r ? f.intl.string(f.t.SVKIdU) : f.intl.string(f.t["6epDlR"]),
-                action: () => d(),
+                action: () => g(),
                 disabled: r,
-                children: g
+                children: d
             })
-        }(m, T);
-    return "" !== m.trim() && e ? (0, a.jsxs)(a.Fragment, {
+        }(T, m);
+    return "" !== T.trim() && e ? (0, a.jsxs)(a.Fragment, {
         children: [y, S]
     }) : null
 }

@@ -29,9 +29,8 @@ class h extends a.A {
                 isTryItOut: h
             } = e;
             if (h) return void(0, s.e$)(t);
-            let _ = d.default.getCurrentUser(),
-                m = c.Ay.canUseAnimatedAvatar(_);
-            if (m || "image/gif" !== n.type) {
+            let _ = d.default.getCurrentUser();
+            if (c.Ay.canUseAnimatedAvatar(_) || "image/gif" !== n.type) {
                 (0, o.p)({
                     guildId: i,
                     avatar: t
@@ -39,13 +38,13 @@ class h extends a.A {
                 return
             }
             if (null == _) return;
-            let g = (0, r.V7)({
+            let m = (0, r.V7)({
                 userId: _.id,
                 image: t
             });
-            if (!m) return void(0, l.G)({
+            (0, l.G)({
                 uploadType: A.HL.AVATAR,
-                imageSrc: g,
+                imageSrc: m,
                 analyticsSource: a
             })
         })(e) : e.uploadType === A.HL.BANNER ? (e => {

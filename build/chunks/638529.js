@@ -35,7 +35,7 @@ function d(e) {
                             if (!isNaN(n)) {
                                 let t = performance.now(),
                                     s = Math.round(t - n);
-                                l.push(s), !r && l.length >= 3 && (r = !0, clearTimeout(i), a(), e())
+                                l.push(s), l.length >= 3 && (r = !0, clearTimeout(i), a(), e())
                             }
                         }, t.onerror = () => {
                             r || (r = !0, clearTimeout(i), a(), n(Error("WebSocket error")))

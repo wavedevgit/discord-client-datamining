@@ -41,7 +41,7 @@ class S extends s.Component {
         } = this.props;
         if (n) i ? c.default.selectVoiceChannel(null) : d.A.callPrivateChannel(t.id, !1);
         else {
-            let i = !n && !e.shiftKey;
+            let i = !e.shiftKey;
             d.A.callPrivateChannel(t.id, i)
         }
     };

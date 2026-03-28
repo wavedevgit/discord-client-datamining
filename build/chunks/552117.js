@@ -353,7 +353,7 @@ let F = e => {
         channel: n,
         closePopout: a,
         refreshPositionKey: r
-    }) : s ? s && null == l ? (0, i.jsx)(G, {
+    }) : s ? null == l ? (0, i.jsx)(G, {
         channel: n,
         closePopout: a,
         sticker: t

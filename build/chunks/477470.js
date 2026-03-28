@@ -31,7 +31,7 @@ let g = function(e) {
         E || C(t, -1)
     }, [C, t, E]);
     return s.useEffect(() => {
-        null != g && (j ? j && h.stop() : h.start(g, T))
+        null != g && (j ? h.stop() : h.start(g, T))
     }, [j, h, g, T]), (0, i.jsxs)("div", {
         className: m.zr,
         onMouseEnter: () => N(!0),

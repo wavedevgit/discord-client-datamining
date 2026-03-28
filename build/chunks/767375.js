@@ -70,7 +70,7 @@ class v extends s.PureComponent {
                     showSubtext: !0,
                     showLabels: !0,
                     showPaymentSourceIcon: !0
-                }), n ? null : (0, i.jsx)(d.$nd, {
+                }), (0, i.jsx)(d.$nd, {
                     variant: "secondary",
                     onClick: this.handleEditClick,
                     size: "sm",
