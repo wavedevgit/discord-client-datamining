@@ -1,6 +1,6 @@
 /** chunk id: 104473 params = (module,exports,require) **/
 n.d(t, {
-    AZ: () => S
+    AZ: () => g
 });
 var r = n(627968),
     a = n(64700),
@@ -40,7 +40,7 @@ function p(e) {
     let {
         orientation: t,
         autoplay: n,
-        seekForwardRestricted: a,
+        maxSeekableTimeSec: a,
         videoUrl: o,
         poster: l,
         showEndScreen: p,
@@ -50,8 +50,7 @@ function p(e) {
         style: {
             width: "landscape" === t ? "640px" : "360px",
             height: "landscape" === t ? "360px" : "640px",
-            margin: "0 auto",
-            backgroundColor: "#000"
+            margin: "0 auto"
         },
         children: (0, r.jsx)(s.A, {
             src: o,
@@ -59,7 +58,7 @@ function p(e) {
             active: _,
             autoplay: n,
             orientation: t,
-            seekForwardRestricted: a,
+            maxSeekableTimeSec: a > 0 ? a : void 0,
             parentTransitionState: i.ip4.ENTERED,
             targetTimeSec: 1 / 0,
             onOptimisticProgressUpdate: () => {},
@@ -99,10 +98,10 @@ let _ = {
             type: "boolean",
             defaultValue: !1
         },
-        seekForwardRestricted: {
-            label: "Restrict Seek Forward",
-            type: "boolean",
-            defaultValue: !1
+        maxSeekableTimeSec: {
+            label: "Max Seekable Time (sec, 0 = unrestricted)",
+            type: "number",
+            defaultValue: 0
         },
         videoUrl: {
             label: "Video URL",
@@ -137,7 +136,7 @@ let _ = {
             }
         }
     },
-    b = {
+    m = {
         name: "Portrait Video (Generic)",
         id: "portrait-video-generic",
         component: p,
@@ -149,7 +148,7 @@ let _ = {
             }
         }
     },
-    m = {
+    b = {
         name: "HLS Video (Generic)",
         id: "hls-video-generic",
         component: p,
@@ -165,21 +164,21 @@ let _ = {
             }
         }
     },
-    g = {
+    S = {
         tension: 500,
         friction: 30,
         clamp: !0
     },
-    S = {
+    g = {
         title: "Discord Video Player (Generic)",
-        stories: [f, b, m, {
+        stories: [f, m, b, {
             name: "Timeline Indicators (Generic)",
             id: "timeline-indicators-generic",
             component: function(e) {
                 let {
                     orientation: t,
                     autoplay: n,
-                    seekForwardRestricted: l,
+                    maxSeekableTimeSec: l,
                     videoUrl: d,
                     indicatorTimeSec: u
                 } = e, c = function(e) {
@@ -187,7 +186,7 @@ let _ = {
                         expansion: u
                     }, c] = (0, i.zhh)(() => ({
                         expansion: 0,
-                        config: g,
+                        config: S,
                         onRest: () => {
                             null == d.current && l(null)
                         }
@@ -244,14 +243,13 @@ let _ = {
                     style: {
                         width: "landscape" === t ? "640px" : "360px",
                         height: "landscape" === t ? "360px" : "640px",
-                        margin: "0 auto",
-                        backgroundColor: "#000"
+                        margin: "0 auto"
                     },
                     children: (0, r.jsx)(s.A, {
                         src: d,
                         autoplay: n,
                         orientation: t,
-                        seekForwardRestricted: l,
+                        maxSeekableTimeSec: l > 0 ? l : void 0,
                         parentTransitionState: i.ip4.ENTERED,
                         targetTimeSec: 1 / 0,
                         onOptimisticProgressUpdate: () => {},
@@ -263,7 +261,7 @@ let _ = {
             controls: {
                 orientation: _.orientation,
                 autoplay: _.autoplay,
-                seekForwardRestricted: _.seekForwardRestricted,
+                maxSeekableTimeSec: _.maxSeekableTimeSec,
                 videoUrl: _.videoUrl,
                 indicatorTimeSec: {
                     label: "Indicator Time (sec)",

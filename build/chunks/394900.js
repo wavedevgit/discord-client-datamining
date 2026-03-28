@@ -1,28 +1,27 @@
 /** chunk id: 394900 params = (module,exports,require) **/
 n.d(t, {
-    L: () => o,
-    s: () => d
+    L: () => s,
+    s: () => o
 });
 var i = n(64700),
     a = n(397927),
     r = n(770178),
-    l = n(765548),
-    s = n(433745);
+    l = n(765548);
 
-function o() {
-    let [e, t] = i.useState("lg"), [n, a] = i.useState(void 0), o = (0, l.A)(e => {
+function s() {
+    let [e, t] = i.useState("lg"), [n, a] = i.useState(void 0), s = (0, l.A)(e => {
         let n = e.target,
             i = e.contentRect.width;
-        return (a(n.scrollHeight), null == i || i > s.Cf) ? t("lg") : i > s.tN ? t("sm") : t("xs")
+        return (a(n.scrollHeight), null == i || i > 460) ? t("lg") : i > 280 ? t("sm") : t("xs")
     });
     return {
-        containerRef: (0, r.w)(o),
+        containerRef: (0, r.w)(s),
         size: e,
         height: n
     }
 }
 
-function d(e) {
+function o(e) {
     let {
         initiallyExpanded: t
     } = e, [n, r] = i.useState(t), [l, s] = i.useState(!1), o = i.useCallback(() => {
@@ -44,3 +43,4 @@ function d(e) {
         toggleExpanded: o
     }
 }
+n(433745)

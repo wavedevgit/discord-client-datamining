@@ -55,8 +55,9 @@ function u(e) {
         handleClick: e => {
             if (!c || null == m) return;
             let t = e.currentTarget.getBoundingClientRect(),
-                n = e.clientX - t.left;
-            m((0, a.hc)(n, t, d))
+                n = e.clientX - t.left,
+                r = (0, a.hc)(n, t, d);
+            m(null != u ? Math.min(r, u) : r)
         },
         ariaProps: y
     }

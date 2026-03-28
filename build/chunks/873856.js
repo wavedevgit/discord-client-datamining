@@ -20,19 +20,19 @@ function c(e) {
         questConfig: m
     } = r.useContext(o.l), E = (0, s._o)({
         location: u.rE.VIDEO_MODAL
-    }).externalAnalyticsEnabled && null != t, p = d === l.fY.VIDEO_PLAYER_VIDEO_HLS, _ = r.useMemo(() => ({
+    }).externalAnalyticsEnabled && null != t, _ = d === l.fY.VIDEO_PLAYER_VIDEO_HLS, p = r.useMemo(() => ({
         contentId: t ?? "",
-        videoStreamType: p ? "hls" : "mp4",
+        videoStreamType: _ ? "hls" : "mp4",
         contentType: "quests",
         title: m.taskConfigV2.tasks[i.n.WATCH_VIDEO]?.messages.videoTitle,
         questId: m.id,
         gameName: m.messages.gameTitle
-    }), [t, p, m]);
+    }), [t, _, m]);
     (0, a.P8)({
         videoRef: n,
         hlsRef: c,
         enabled: E,
-        contentMetadata: _,
-        isHls: p
+        contentMetadata: p,
+        isHls: _
     })
 }

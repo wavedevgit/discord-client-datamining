@@ -1,7 +1,6 @@
 /** chunk id: 798324 params = (module,exports,require) **/
 e.exports = {
     nw: "outerContainer__74dc6",
-    fu: "outerContainerGiftInventory__74dc6",
     Gg: "outerContainerEmbed__74dc6",
     v7: "questSplashContainer__74dc6",
     Z5: "questSplashImage__74dc6",
@@ -11,12 +10,6 @@ e.exports = {
     eX: "headerContentEmbed__74dc6",
     Yu: "headerExpandedContent__74dc6",
     uA: "headerExpandedWrapper__74dc6",
-    gM: "headerCollapsedContent__74dc6",
-    _F: "headerCollapsedClickableContainer__74dc6",
-    SY: "headerCollapsedContentRewardWrapper__74dc6",
-    EK: "headerCollapsedRewardTile__74dc6",
-    if: "headerCollapsedContentCopyWrapper__74dc6",
-    dc: "headerCollapsedContentCopyLogos__74dc6",
     _V: "iconLogotypeContainer__74dc6",
     Iu: "partnerBranding__74dc6",
     qN: "partnerBrandingLogotypes__74dc6",

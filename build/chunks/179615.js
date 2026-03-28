@@ -13,8 +13,8 @@ var r = n(627968),
     d = n(590202),
     m = n(971649),
     E = n(651892),
-    p = n(73473),
-    _ = n(795068),
+    _ = n(73473),
+    p = n(795068),
     f = n(54291),
     v = n(781121),
     S = n(654487),
@@ -27,41 +27,41 @@ function A(e) {
         onTrackQuestContentClick: n,
         orientation: A
     } = e, {
-        onClose: x,
-        sourceQuestContent: C,
-        quest: T,
-        isFullscreenEnabled: b
-    } = i.useContext(_.a), D = (0, m.go)(), y = (0, v.H)({
-        quest: T,
-        onClose: x,
-        sourceQuestContent: C,
+        onClose: C,
+        sourceQuestContent: T,
+        quest: b,
+        isFullscreenEnabled: x
+    } = i.useContext(p.a), D = (0, m.go)(), y = (0, v.H)({
+        quest: b,
+        onClose: C,
+        sourceQuestContent: T,
         impressionId: D
     }), I = i.useCallback(e => {
-        if (b) {
+        if (x) {
             let e = (0, l.qf)(t.current?.parentNode, t.current);
             null != e && (0, l.sP)(e)
         }
         n(e, d.Cy.LEARN_MORE), y(e, d.Cy.OPEN_GAME_LINK)
-    }, [b, t, y, n]), {
-        title: N,
-        subtitle: L
+    }, [x, t, y, n]), {
+        title: L,
+        subtitle: N
     } = {
-        title: (0, E.wr)(T),
-        subtitle: T.config.ctaConfig.subtitle ?? h.intl.string(h.t.mxaHfx)
+        title: (0, E.wr)(b),
+        subtitle: b.config.ctaConfig.subtitle ?? h.intl.string(h.t.mxaHfx)
     }, {
         enabled: R
     } = u.uK.useConfig({
         location: S.rE.VIDEO_MODAL
-    }), O = i.useMemo(() => (0, c.tW)(T, c.fY.VIDEO_PLAYER_THUMBNAIL, void 0, !1)?.url ?? null, [T]);
+    }), O = i.useMemo(() => (0, c.tW)(b, c.fY.VIDEO_PLAYER_THUMBNAIL, void 0, !1)?.url ?? null, [b]);
     return R ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(a.nY, {
             url: O
         }), (0, r.jsx)(a.KP, {}), (0, r.jsxs)(a.zj, {
             orientation: A,
-            children: [null != O && (0, r.jsx)(p.R, {
-                questOrQuests: T,
+            children: [null != O && (0, r.jsx)(_.R, {
+                questOrQuests: b,
                 questContent: o.uF.VIDEO_MODAL_END_CARD,
-                sourceQuestContent: C,
+                sourceQuestContent: T,
                 children: e => (0, r.jsx)(a.Kb, {
                     ref: t => {
                         e.current = t
@@ -70,19 +70,19 @@ function A(e) {
                     orientation: A
                 })
             }), (0, r.jsx)(a.lx, {
-                title: N,
-                subtitle: L,
-                ctaBtnLabel: T.config.ctaConfig.buttonLabel,
+                title: L,
+                subtitle: N,
+                ctaBtnLabel: b.config.ctaConfig.buttonLabel,
                 ctaIcon: s.KS6,
                 onCTAClick: () => I(o.uF.VIDEO_MODAL),
                 orientation: A
             })]
         })]
     }) : (0, r.jsxs)(r.Fragment, {
-        children: [null != O && (0, r.jsx)(p.R, {
-            questOrQuests: T,
+        children: [null != O && (0, r.jsx)(_.R, {
+            questOrQuests: b,
             questContent: o.uF.VIDEO_MODAL_END_CARD,
-            sourceQuestContent: C,
+            sourceQuestContent: T,
             children: e => (0, r.jsx)(a.pK, {
                 ref: t => {
                     e.current = t
@@ -93,8 +93,8 @@ function A(e) {
             className: g.MT,
             "data-testid": "discord-web-video-player-end-screen"
         }), (0, r.jsx)(a.OH, {
-            title: N,
-            subtitle: L,
+            title: L,
+            subtitle: N,
             icon: s.KS6,
             className: g.mT,
             onClick: () => I(o.uF.VIDEO_MODAL),
