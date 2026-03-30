@@ -108,7 +108,7 @@ function B() {
                 subscriptionRequired: !0,
                 progress: ee.getDate() / et,
                 ctaText: P.intl.string(P.t.w7s5Qr),
-                onCtaClick: () => (0, N.uE)({
+                onCtaClick: () => (0, N.u)({
                     analyticsLocations: e
                 }),
                 blurTint: "#2E213D"
@@ -148,7 +148,7 @@ function B() {
                 backgroundAssetUrl: w.A,
                 progress: ee.getDate() / et,
                 ctaText: P.intl.string(P.t.w7s5Qr),
-                onCtaClick: () => (0, N.uE)({
+                onCtaClick: () => (0, N.u)({
                     analyticsLocations: e
                 }),
                 blurTint: "#2E213D"

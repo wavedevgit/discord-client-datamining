@@ -3,9 +3,9 @@ n.d(t, {
     A: () => h
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    r = n.n(a),
     s = n(397927),
     o = n(927018),
     d = n(64585),
@@ -68,15 +68,15 @@ function h(e) {
         achievement: t,
         unlocked: n
     } = e, {
-        name: l,
+        name: a,
         description: h,
         rarity: _,
         hideDescriptionUntilUnlock: m,
-        onAction: g
+        onAction: p
     } = t, {
-        color: p
+        color: g
     } = (0, o.ag)(_);
-    a.useEffect(() => {
+    l.useEffect(() => {
         let e = setTimeout(() => {
             d.A.playAchievementUnlockSound()
         }, 50);
@@ -84,12 +84,12 @@ function h(e) {
             clearTimeout(e)
         }
     }, []);
-    let E = null != g && n,
+    let E = null != p && n,
         I = E ? s.DUT : "div";
     return (0, i.jsxs)(I, {
         className: r()(u.kL, E && u.b),
         onClick: () => {
-            E && g()
+            E && p()
         },
         children: [(0, i.jsx)("div", {
             className: u.zc,
@@ -103,7 +103,7 @@ function h(e) {
             children: [(0, i.jsx)(s.Text, {
                 variant: "text-md/semibold",
                 color: "text-strong",
-                children: l()
+                children: a()
             }), (0, i.jsx)(s.Text, {
                 variant: "text-xs/medium",
                 color: "text-default",
@@ -112,7 +112,7 @@ function h(e) {
         }), (0, i.jsx)("div", {
             className: u.Db,
             children: (0, i.jsx)(A, {
-                color: p
+                color: g
             })
         })]
     })

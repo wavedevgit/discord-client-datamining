@@ -4,40 +4,40 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(827734),
-    l = n(582754),
+var l = n(827734),
+    a = n(582754),
     r = n(397927),
     s = n(736653),
     o = n(682174),
     d = n(927018),
     c = n(579157);
 let u = {
-        trophy: a.A.unsafe_rawColors.PRIMARY_400.css,
-        locked: a.A.unsafe_rawColors.PRIMARY_400.css,
-        unlocked: a.A.unsafe_rawColors.GREEN_330.css
+        trophy: l.A.unsafe_rawColors.PRIMARY_400.css,
+        locked: l.A.unsafe_rawColors.PRIMARY_400.css,
+        unlocked: l.A.unsafe_rawColors.GREEN_330.css
     },
     A = {
-        trophy: a.A.unsafe_rawColors.PRIMARY_400.css,
-        locked: a.A.unsafe_rawColors.PRIMARY_400.css,
-        unlocked: a.A.unsafe_rawColors.GREEN_330.css
+        trophy: l.A.unsafe_rawColors.PRIMARY_400.css,
+        locked: l.A.unsafe_rawColors.PRIMARY_400.css,
+        unlocked: l.A.unsafe_rawColors.GREEN_330.css
     };
 
 function h(e) {
     let {
         achievementId: t,
         unlocked: n,
-        size: a = r._3J.SIZE_40
+        size: l = r._3J.SIZE_40
     } = e, h = (0, s.Ay)(), _ = (0, d.vM)(t);
     if (null == _) return null;
-    let m = (0, r.KjH)(a),
+    let m = (0, r.KjH)(l),
         {
-            name: g,
-            rarity: p
+            name: p,
+            rarity: g
         } = _,
         {
             color: E
-        } = (0, d.ag)(p),
-        I = (0, l.Mw)(h) ? u : A,
+        } = (0, d.ag)(g),
+        I = (0, a.Mw)(h) ? u : A,
         f = (m.size - m.offset - 2 * m.stroke) * .8,
         C = m.size - m.stroke,
         T = {
@@ -58,7 +58,7 @@ function h(e) {
             height: C,
             padding: m.stroke
         },
-        "aria-label": `${g()??""}`,
+        "aria-label": `${p()??""}`,
         children: [(0, i.jsx)("div", {
             className: c.r5,
             children: (0, i.jsx)(r.OR, {
@@ -75,7 +75,7 @@ function h(e) {
                 color: I.locked,
                 ...T
             })
-        }), n && p === d.md.LEGENDARY && (0, i.jsx)("div", {
+        }), n && g === d.md.LEGENDARY && (0, i.jsx)("div", {
             className: c.dq,
             style: N,
             children: (0, i.jsx)(o.A, {

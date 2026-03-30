@@ -3,8 +3,8 @@ n.d(t, {
     A: () => T
 });
 var i = n(64700),
-    a = n(498419),
-    l = n.n(a),
+    l = n(498419),
+    a = n.n(l),
     r = n(481613),
     s = n.n(r),
     o = n(311907),
@@ -15,20 +15,20 @@ var i = n(64700),
     h = n(994500),
     _ = n(503509),
     m = n(723702),
-    g = n(837921),
-    p = n(726249),
+    p = n(837921),
+    g = n(726249),
     E = n(652215),
     I = n(985018);
 let f = new Set(["Blink", "Gecko", "WebKit"]),
     C = E.tEg;
-if (m.isPlatformEmbedded) C = e => g.Ay.setBadge(e);
+if (m.isPlatformEmbedded) C = e => p.Ay.setBadge(e);
 else if (f.has(s().layout)) {
-    let e = new(l())({
+    let e = new(a())({
         animation: "none"
     });
     C = t => {
         try {
-            (0, p.sF)(t), e.badge(-1 === t ? "•" : t)
+            (0, g.sF)(t), e.badge(-1 === t ? "•" : t)
         } catch (e) {}
     }
 }
@@ -40,13 +40,13 @@ function T() {
                 t = (0, c.dH)([h.A, d.A]),
                 n = u.default.hasAnyUnread(),
                 i = A.A.getDisableUnreadBadge(),
-                a = e + t;
-            return 0 === a && n && !i && (a = -1), a
+                l = e + t;
+            return 0 === l && n && !i && (l = -1), l
         });
     i.useEffect(() => {
         if (!e) return;
-        let t = g.Ay.bounceDock("critical"),
-            n = (0, p.iA)({
+        let t = p.Ay.bounceDock("critical"),
+            n = (0, g.iA)({
                 messages: [I.intl.string(I.t["fk1/bX"])],
                 count: 50
             });

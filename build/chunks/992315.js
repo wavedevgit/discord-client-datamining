@@ -4,15 +4,15 @@ r.d(t, {
 });
 var a = r(649032),
     n = r(26508),
-    i = r(881373),
-    s = r(612669),
+    s = r(881373),
+    i = r(612669),
     l = r(23003);
 
 function o() {
-    let e = (0, i.YS)({
+    let e = (0, s.YS)({
             location: "bento_box"
         }).functionalityEnabled,
-        t = (0, s.O9)(),
+        t = (0, i.O9)(),
         r = (0, n.DK)(a.W.NITRO, "useBentoBoxes"),
         o = [...e ? [l.NI.THREE_P_PROMOTIONS] : [], ...t ? [l.NI.PREMIUM_GROUP] : [], ...r ? [l.NI.ORB_REWARDS] : []];
     if (o.length > 0) {

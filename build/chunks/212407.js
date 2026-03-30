@@ -49,25 +49,19 @@ let l = e => {
             l = (0, s.mb)(a.RN.SHOP_BUTTON_BG_HOVER_LIGHT),
             o = (0, s.mb)(a.RN.SHOP_BUTTON_BG_RESTING),
             c = (0, s.mb)(a.RN.SHOP_BUTTON_BG_RESTING_DARK),
-            d = (0, s.mb)(a.RN.SHOP_BUTTON_BG_RESTING_LIGHT),
-            u = (0, s.mb)(a.RN.COACHTIP_AVATAR);
+            d = (0, s.mb)(a.RN.SHOP_BUTTON_BG_RESTING_LIGHT);
         return n.useMemo(() => {
-            let n = [t, r, l, o, c, d, u].some(e => null != e);
-            if (e?.type === i.G.COACHMARK) return {
-                hasPreviewAssets: !1
-            };
-            let s = e?.refTargetBackground?.asset,
-                a = s?.resting,
-                m = s?.hovered;
+            if (e?.type === i.G.COACHMARK) return {};
+            let n = e?.refTargetBackground?.asset,
+                s = n?.resting,
+                a = n?.hovered;
             return {
-                hasPreviewAssets: n,
-                buttonBGHoverDark: r ?? t ?? m?.dark,
-                buttonBGHoverLight: l ?? t ?? m?.light,
-                buttonBGRestingDark: c ?? o ?? a?.dark,
-                buttonBGRestingLight: d ?? o ?? a?.light,
-                coachtipAvatar: u ?? (e?.type === i.G.COACHTIP ? e.avatar : void 0)
+                buttonBGHoverDark: r ?? t ?? a?.dark,
+                buttonBGHoverLight: l ?? t ?? a?.light,
+                buttonBGRestingDark: c ?? o ?? s?.dark,
+                buttonBGRestingLight: d ?? o ?? s?.light
             }
-        }, [t, r, l, o, c, d, u, e])
+        }, [t, r, l, o, c, d, e])
     },
     m = e => ({
         bannerUrl: e.bannerUrl,

@@ -1,16 +1,16 @@
 /** chunk id: 93151 params = (module,exports,require) **/
 n.d(t, {
-    u: () => l
+    u: () => a
 });
 var i = n(562465),
-    a = n(652215);
-async function l(e, t) {
+    l = n(652215);
+async function a(e, t) {
     if (void 0 === e) return !1;
     try {
         let {
             body: n
         } = await i.Bo.get({
-            url: a.Rsh.ACTIVITIES_TRUSTED_LINKS(e),
+            url: l.Rsh.ACTIVITIES_TRUSTED_LINKS(e),
             rejectWithError: !1,
             query: {
                 url: t

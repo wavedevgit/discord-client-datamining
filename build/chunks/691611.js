@@ -3,9 +3,9 @@ n.d(t, {
     A: () => v
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    r = n.n(a),
     s = n(837381),
     o = n(311907),
     d = n(201275),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(491182),
     _ = n(860227),
     m = n(538355),
-    g = n(699352),
-    p = n(715628),
+    p = n(699352),
+    g = n(715628),
     E = n(752636),
     I = n(675722),
     f = n(268719),
@@ -25,12 +25,12 @@ var i = n(627968),
     N = n(652215),
     S = n(955744),
     x = n(480972);
-let v = a.memo(function(e) {
+let v = l.memo(function(e) {
     let {
         message: t,
         className: n,
-        onContextMenu: a,
-        onClick: l,
+        onContextMenu: l,
+        onClick: a,
         hideSimpleEmbedContent: v = !0,
         channel: y,
         isGroupStart: b,
@@ -72,14 +72,14 @@ let v = a.memo(function(e) {
             hideTimestamp: !0,
             hideGuildTag: !1
         }),
-        childrenAccessories: e.hideAccessories ? void 0 : (0, g.J)(e, U, G),
-        childrenMessageContent: (0, p.A)(e, w),
+        childrenAccessories: e.hideAccessories ? void 0 : (0, p.J)(e, U, G),
+        childrenMessageContent: (0, g.A)(e, w),
         childrenSystemMessage: (0, I.A)({
             ...e,
             disableInteraction: D
         }),
-        onContextMenu: a,
-        onClick: l,
+        onContextMenu: l,
+        onClick: a,
         hasThread: R && null != B && t.hasFlag(N.pr7.HAS_THREAD),
         hasReply: !1,
         "aria-labelledby": F,

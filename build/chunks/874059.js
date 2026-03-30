@@ -3,9 +3,9 @@ n.d(t, {
     A: () => s
 });
 var i = n(73153),
-    a = n(272355),
-    l = n(287809);
-class r extends a.A {
+    l = n(272355),
+    a = n(287809);
+class r extends l.A {
     _initialize() {
         i.h.subscribe("POST_CONNECTION_OPEN", this._maybeStartDevSession), i.h.subscribe("LOGOUT", this._maybeStopDevSession)
     }
@@ -15,7 +15,7 @@ class r extends a.A {
     _maybeStartDevSession() {
         if (null == window.DiscordDevSession || !0 !== window.__METICULOUS_ENABLED) return;
         let e = "production" === window.GLOBAL_ENV.PROJECT_ENV,
-            t = l.default.getCurrentUser();
+            t = a.default.getCurrentUser();
         t?.email == null || e && t.isStaff() || (t.username.startsWith("mtcls") || !e ? window.DiscordDevSession.start() : window.DiscordDevSession.stop())
     }
     _maybeStopDevSession() {

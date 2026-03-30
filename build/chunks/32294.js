@@ -3,8 +3,8 @@ let i;
 n.d(t, {
     A: () => x
 });
-var a = n(73153),
-    l = n(31728),
+var l = n(73153),
+    a = n(31728),
     r = n(272355),
     s = n(933958),
     o = n(313961),
@@ -15,8 +15,8 @@ var a = n(73153),
     h = n(186111),
     _ = n(430452),
     m = n(334463),
-    g = n(383501),
-    p = n(309010),
+    p = n(383501),
+    g = n(309010),
     E = n(967198),
     I = n(977997),
     f = n(652215),
@@ -25,15 +25,15 @@ var a = n(73153),
 function T() {
     let e = i;
     if (null == e || !m.A.isOpen(e)) return !1;
-    a.h.wait(() => l.VN(e)), g.A.getRTCConnection()?.setPipOpen(!1), i = null
+    l.h.wait(() => a.VN(e)), p.A.getRTCConnection()?.setPipOpen(!1), i = null
 }
 
 function N() {
-    let e = g.A.getChannelId(),
+    let e = p.A.getChannelId(),
         t = i === e;
     if (function() {
-            let e = g.A.getChannelId(),
-                t = p.A.getChannelId();
+            let e = p.A.getChannelId(),
+                t = g.A.getChannelId();
             if (!_.Ay.supports(C.O5.VIDEO) || c.A.getWindowOpen(f.MLl.CHANNEL_CALL_POPOUT)) return !0;
             let n = null != e && u.A.getAllActiveStreams().some(t => !o.A.isParticipantPoppedOut(e, (0, d._z)(t)));
             if (!(null != e && Object.values(I.A.getVideoVoiceStatesForChannel(e)).some(t => {
@@ -47,16 +47,16 @@ function N() {
         }()) return T();
     if (t || T(), null == e) return !1;
     let n = A.A.getChannel(e);
-    return !(null == n || m.A.isOpen(e)) && (a.h.wait(() => l.ho(n.id, f.o1q.VIDEO, {
+    return !(null == n || m.A.isOpen(e)) && (l.h.wait(() => a.ho(n.id, f.o1q.VIDEO, {
         channel: n
-    })), g.A.getRTCConnection()?.setPipOpen(!0), void(i = e))
+    })), p.A.getRTCConnection()?.setPipOpen(!0), void(i = e))
 }
 class S extends r.A {
     _initialize() {
-        p.A.addChangeListener(N), E.A.addChangeListener(N), g.A.addChangeListener(N), I.A.addChangeListener(N), h.A.addChangeListener(N), u.A.addChangeListener(N), c.A.addChangeListener(N), _.Ay.addChangeListener(N), s.Ay.addChangeListener(N), o.A.addChangeListener(N)
+        g.A.addChangeListener(N), E.A.addChangeListener(N), p.A.addChangeListener(N), I.A.addChangeListener(N), h.A.addChangeListener(N), u.A.addChangeListener(N), c.A.addChangeListener(N), _.Ay.addChangeListener(N), s.Ay.addChangeListener(N), o.A.addChangeListener(N)
     }
     _terminate() {
-        p.A.removeChangeListener(N), E.A.removeChangeListener(N), g.A.removeChangeListener(N), I.A.removeChangeListener(N), h.A.removeChangeListener(N), u.A.removeChangeListener(N), c.A.removeChangeListener(N), _.Ay.removeChangeListener(N), s.Ay.removeChangeListener(N), o.A.removeChangeListener(N)
+        g.A.removeChangeListener(N), E.A.removeChangeListener(N), p.A.removeChangeListener(N), I.A.removeChangeListener(N), h.A.removeChangeListener(N), u.A.removeChangeListener(N), c.A.removeChangeListener(N), _.Ay.removeChangeListener(N), s.Ay.removeChangeListener(N), o.A.removeChangeListener(N)
     }
 }
 let x = new S

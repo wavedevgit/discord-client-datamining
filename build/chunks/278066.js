@@ -1,10 +1,10 @@
 /** chunk id: 278066 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p,
+    A: () => g,
     a: () => h
 });
-var i, a = n(627968),
-    l = n(64700),
+var i, l = n(627968),
+    a = n(64700),
     r = n(615300),
     s = n(311907),
     o = n(397927),
@@ -19,13 +19,13 @@ let _ = Object.freeze({
             darkSrc: n(642269),
             width: 376,
             height: 162,
-            renderContent: e => (0, a.jsxs)(l.Fragment, {
-                children: [(0, a.jsx)(o.SGT, {
+            renderContent: e => (0, l.jsxs)(a.Fragment, {
+                children: [(0, l.jsx)(o.SGT, {
                     note: u.intl.string(u.t.Y4vMY8)
-                }), (0, a.jsx)("div", {
+                }), (0, l.jsx)("div", {
                     "data-button-hoisted-classname-wrapper": !0,
                     className: A.x6,
-                    children: (0, a.jsx)(o.Button, {
+                    children: (0, l.jsx)(o.Button, {
                         variant: "primary",
                         text: u.intl.string(u.t.w5uwoI),
                         onClick: e
@@ -38,7 +38,7 @@ let _ = Object.freeze({
             darkSrc: n(492055),
             width: 421,
             height: 218,
-            renderContent: () => (0, a.jsx)(o.SGT, {
+            renderContent: () => (0, l.jsx)(o.SGT, {
                 note: u.intl.string(u.t.v7HbiQ)
             })
         },
@@ -47,7 +47,7 @@ let _ = Object.freeze({
             darkSrc: n(689818),
             width: 433,
             height: 232,
-            renderContent: () => (0, a.jsx)(o.SGT, {
+            renderContent: () => (0, l.jsx)(o.SGT, {
                 note: u.intl.string(u.t["9xdyWB"])
             })
         },
@@ -56,11 +56,11 @@ let _ = Object.freeze({
             darkSrc: n(317017),
             width: 415,
             height: 200,
-            renderContent: (e, t) => (0, a.jsxs)("div", {
+            renderContent: (e, t) => (0, l.jsxs)("div", {
                 className: A.y7,
-                children: [(0, a.jsx)(o.SGT, {
+                children: [(0, l.jsx)(o.SGT, {
                     note: u.intl.string(u.t["aCYQ+P"])
-                }), null != e && (0, a.jsx)(o.Button, {
+                }), null != e && (0, l.jsx)(o.Button, {
                     variant: "secondary",
                     text: t ? u.intl.string(u.t.R40bU2) : u.intl.string(u.t.rXl8fj),
                     onClick: e,
@@ -73,7 +73,7 @@ let _ = Object.freeze({
             darkSrc: n(317017),
             width: 415,
             height: 200,
-            renderContent: () => (0, a.jsx)(o.SGT, {
+            renderContent: () => (0, l.jsx)(o.SGT, {
                 note: u.intl.string(u.t["vgI/EF"])
             })
         },
@@ -82,7 +82,7 @@ let _ = Object.freeze({
             darkSrc: n(492055),
             width: 421,
             height: 218,
-            renderContent: () => (0, a.jsx)(o.SGT, {
+            renderContent: () => (0, l.jsx)(o.SGT, {
                 note: u.intl.string(u.t["7sW4h1"])
             })
         }
@@ -91,14 +91,14 @@ let _ = Object.freeze({
         let {
             theme: t
         } = e, n = u.intl.string(u.t["oi+B4p"]);
-        return (0, a.jsx)(o.ppr, {
+        return (0, l.jsx)(o.ppr, {
             theme: t,
-            children: (0, a.jsx)(o.SGT, {
+            children: (0, l.jsx)(o.SGT, {
                 note: n
             })
         })
     };
-class g extends l.PureComponent {
+class p extends a.PureComponent {
     state = {
         opacity: new r.A.Value(1)
     };
@@ -121,7 +121,7 @@ class g extends l.PureComponent {
             theme: n
         } = this.props, i = {
             opacity: this.state.opacity
-        }, l = function(e) {
+        }, a = function(e) {
             switch (e) {
                 case c.m3P.ADD_FRIEND:
                 case c.m3P.ALL:
@@ -138,24 +138,24 @@ class g extends l.PureComponent {
                     throw Error("FriendsEmptyState: Invalid empty state")
             }
         }(e);
-        return e === c.m3P.ADD_FRIEND ? (0, a.jsx)(r.A.div, {
+        return e === c.m3P.ADD_FRIEND ? (0, l.jsx)(r.A.div, {
             className: A.VD,
             style: i,
-            children: (0, a.jsx)(m, {
+            children: (0, l.jsx)(m, {
                 theme: n
             })
-        }) : (0, a.jsx)(r.A.div, {
+        }) : (0, l.jsx)(r.A.div, {
             className: A.VD,
             style: i,
-            children: (0, a.jsx)(o.ppr, {
+            children: (0, l.jsx)(o.ppr, {
                 theme: n,
-                children: l.renderContent(t)
+                children: a.renderContent(t)
             })
         })
     }
 }
-let p = s.Ay.connectStores([d.A], () => ({
+let g = s.Ay.connectStores([d.A], () => ({
     theme: d.A.theme
 }), {
     forwardRef: !0
-})(g)
+})(p)

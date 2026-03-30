@@ -3,8 +3,8 @@ n.d(t, {
     A: () => S
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(397927),
+    l = n(64700),
+    a = n(397927),
     r = n(178629),
     s = n(770472),
     o = n(737823),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(965660),
     _ = n(601193),
     m = n(424956),
-    g = n(19925),
-    p = n(689817),
+    p = n(19925),
+    g = n(689817),
     E = n(38894),
     I = n(299579),
     f = n(324580),
@@ -25,7 +25,7 @@ var i = n(627968),
     N = n(579528);
 
 function S() {
-    let e = a.useRef((0, h.YP)()),
+    let e = l.useRef((0, h.YP)()),
         {
             onScroll: t,
             scrollPosition: n,
@@ -35,7 +35,7 @@ function S() {
             tabs: x,
             selectedTab: v,
             setSelectedTab: y
-        } = (0, p.f)(),
+        } = (0, g.f)(),
         b = (0, h.Ub)(v),
         O = !f.R0.has(v),
         {
@@ -44,7 +44,7 @@ function S() {
             onClearSearch: P,
             onSearchSubmit: D,
             isSearchVisible: M
-        } = (0, g.X)({
+        } = (0, p.X)({
             loadId: e.current
         }),
         j = _.A.useField("searchBarState"),
@@ -62,16 +62,16 @@ function S() {
             })
         }),
         V = u.A.useField("fetchedQuery"),
-        B = a.useCallback(e => {
+        B = l.useCallback(e => {
             y(e), M && P()
         }, [M, P, y]),
-        H = a.useMemo(() => M ? x.filter(e => {
+        H = l.useMemo(() => M ? x.filter(e => {
             let {
                 id: t
             } = e;
             return !f.R0.has(t)
         }) : x, [x, M]),
-        F = a.useRef(new A.A(b)),
+        F = l.useRef(new A.A(b)),
         {
             onGuildCardSeen: Y,
             onGuildCardClick: W
@@ -79,11 +79,11 @@ function S() {
             guildDiscoveryCardSeenManager: F.current,
             loadId: e.current
         });
-    return a.useEffect(() => {
+    return l.useEffect(() => {
         F.current.flushSeenGuilds(e.current)
-    }, [b]), a.useEffect(() => {
+    }, [b]), l.useEffect(() => {
         S()
-    }, [v, S]), a.useEffect(() => {
+    }, [v, S]), l.useEffect(() => {
         M || u.A.setState({
             scrollPosition: null
         })
@@ -94,17 +94,17 @@ function S() {
             children: [!M && (0, i.jsx)(o.ns, {
                 scrollPosition: n
             }), M ? (0, i.jsx)(o.XQ, {
-                icon: l.Zge,
+                icon: a.Zge,
                 onClick: P
             }) : (0, i.jsx)(o.T4, {
-                icon: l.RR9
+                icon: a.RR9
             }), !M && (0, i.jsx)(d.A, {
                 className: k,
                 tabs: H,
                 selectedTab: v,
                 onTabSelect: B,
                 onAvailableWidthChange: w
-            }), M && (0, i.jsx)(l.Heading, {
+            }), M && (0, i.jsx)(a.Heading, {
                 variant: "heading-lg/semibold",
                 color: "text-strong",
                 className: N.ov,

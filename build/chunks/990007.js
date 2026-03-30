@@ -3,8 +3,8 @@ n.d(t, {
     A: () => O
 }), n(323874), n(14289), n(35956);
 var i = n(488428),
-    a = n(485845),
-    l = n(179771),
+    l = n(485845),
+    a = n(179771),
     r = n(136722),
     s = n(562465),
     o = n(898467),
@@ -15,8 +15,8 @@ var i = n(488428),
     h = n(224750),
     _ = n(20015),
     m = n(716965),
-    g = n(671523),
-    p = n(337095),
+    p = n(671523),
+    g = n(337095),
     E = n(611010),
     I = n(287809),
     f = n(927813),
@@ -29,7 +29,7 @@ let x = "CachedTokens",
         "1273616940451102832": new o.A(2, +f.A.Millis.MINUTE)
     };
 async function y(e, t, n) {
-    let i, l, s, o, d, {
+    let i, a, s, o, d, {
         client_id: c,
         response_type: u = "code",
         redirect_uri: f,
@@ -61,11 +61,11 @@ async function y(e, t, n) {
     if ("string" == typeof O ? k = O.split(" ").filter(e => e.length > 0) : Array.isArray(O) && (k = O), null == I.default.getCurrentUser()) throw new T.A({
         errorCode: S.Lw6.OAUTH2_ERROR
     }, "Client is not logged in");
-    if (null != j) l = Number(j);
+    if (null != j) a = Number(j);
     else {
-        let e = e => (0, _.n)(e, S.gfo.EMBEDDED) && e?.integrationTypesConfig?.[a.b.USER_INSTALL] != null,
+        let e = e => (0, _.n)(e, S.gfo.EMBEDDED) && e?.integrationTypesConfig?.[l.b.USER_INSTALL] != null,
             t = A.A.getApplication(c);
-        l = e(t) || e(t = E.Ay.createFromServer(await (0, p.TA)(c, U))) ? a.b.USER_INSTALL : a.b.GUILD_INSTALL
+        a = e(t) || e(t = E.Ay.createFromServer(await (0, g.TA)(c, U))) ? l.b.USER_INSTALL : l.b.GUILD_INSTALL
     }
     try {
         [s, {
@@ -79,7 +79,7 @@ async function y(e, t, n) {
             codeChallenge: N,
             codeChallengeMethod: x,
             state: y,
-            integrationType: l,
+            integrationType: a,
             signal: U
         }), (0, h.vG)(c)])
     } catch (t) {
@@ -90,7 +90,7 @@ async function y(e, t, n) {
             errorCode: S.Lw6.OAUTH2_ERROR
         }, `OAuth2 Authorization Error: ${e?.message||"Unknown Error"}`)
     }
-    if (D === g.l.NONE && null != s && s.authorized && d) try {
+    if (D === p.l.NONE && null != s && s.authorized && d) try {
         return (await (0, m.Gq)({
             authorize: !0,
             clientId: c,
@@ -101,7 +101,7 @@ async function y(e, t, n) {
             codeChallengeMethod: x,
             state: y,
             nonce: b,
-            integrationType: l
+            integrationType: a
         })).location
     } catch (t) {
         let {
@@ -116,7 +116,7 @@ async function y(e, t, n) {
     try {
         V = r.iu(L ?? 0)
     } catch (e) {}
-    if (null != s.integration_type && Object.values(a.b).includes(s.integration_type) && (i = new Map).set(s.integration_type, s), null != v[s.application.id] && (await v[s.application.id].process(), U?.aborted)) throw new T.A({
+    if (null != s.integration_type && Object.values(l.b).includes(s.integration_type) && (i = new Map).set(s.integration_type, s), null != v[s.application.id] && (await v[s.application.id].process(), U?.aborted)) throw new T.A({
         errorCode: S.Lw6.UNKNOWN_ERROR
     }, "Request aborted");
     return t({
@@ -134,7 +134,7 @@ async function y(e, t, n) {
         prompt: D,
         disableGuildSelect: M,
         disclosures: o,
-        integrationType: l,
+        integrationType: a,
         pid: w,
         signal: U
     })
@@ -158,18 +158,18 @@ function b(e, t) {
         e.authorization.authing = !1;
         let {
             application: i,
-            user: a,
-            scopes: l,
+            user: l,
+            scopes: a,
             expires: r
         } = n.body;
         if (e.application.id !== i.id) throw new T.A({
             errorCode: S.Lw6.INVALID_CLIENTID
         }, "Application does not match the connection's");
         let s = I.default.getCurrentUser();
-        if (null == s || !a || s.id !== a.id) throw new T.A({
+        if (null == s || !l || s.id !== l.id) throw new T.A({
             errorCode: S.Lw6.INVALID_TOKEN
         }, "Token does not match current user");
-        return e.authorization.scopes = [...e.authorization.scopes, ...l, N.VH], e.authorization.accessToken = t, e.authorization.expires = new Date(r), u.h.dispatch({
+        return e.authorization.scopes = [...e.authorization.scopes, ...a, N.VH], e.authorization.accessToken = t, e.authorization.expires = new Date(r), u.h.dispatch({
             type: "RPC_APP_AUTHENTICATED",
             socketId: e.id,
             application: e.application
@@ -191,18 +191,18 @@ function O(e, t) {
         [S.e$_.AUTHENTICATE]: (0, d.T)(S.e$_.AUTHENTICATE, {
             handler(n) {
                 let {
-                    socket: a,
+                    socket: l,
                     signal: r,
                     args: {
                         access_token: s
                     }
                 } = n;
-                if (null == s && a.transport === N.z4.IPC) {
-                    let n = a.application.id;
+                if (null == s && l.transport === N.z4.IPC) {
+                    let n = l.application.id;
                     if (null == n) throw new T.A({
                         errorCode: S.Lw6.INVALID_COMMAND
                     }, "No application.");
-                    let o = l.F.IDENTIFY,
+                    let o = a.F.IDENTIFY,
                         d = () => y({
                             client_id: n,
                             scope: o,
@@ -210,7 +210,7 @@ function O(e, t) {
                             signal: r,
                             isSocketRpcPrivateScope: !1
                         }, e, t).then(e => {
-                            var t, l, r;
+                            var t, a, r;
                             let s;
                             if (null == e) throw new T.A({
                                 errorCode: S.Lw6.UNKNOWN_ERROR
@@ -220,11 +220,11 @@ function O(e, t) {
                             if (null != d.error) throw new T.A({
                                 errorCode: S.Lw6.OAUTH2_ERROR
                             }, `OAuth2 Error: ${d.error}: ${d.error_description??"unknown error"}`);
-                            return t = d.access_token, l = d.scope, r = d.expires_in, (s = c.w.get(x) ?? {})[n] = {
+                            return t = d.access_token, a = d.scope, r = d.expires_in, (s = c.w.get(x) ?? {})[n] = {
                                 accessToken: t,
-                                scope: l,
+                                scope: a,
                                 expires: Date.now() + r
-                            }, c.w.set(x, s), b(a, d.access_token)
+                            }, c.w.set(x, s), b(l, d.access_token)
                         });
                     return null != (s = function(e, t) {
                         let n = c.w.get(x);
@@ -233,7 +233,7 @@ function O(e, t) {
                             if (!(i.scope !== t || i.expires <= Date.now())) return i.accessToken;
                             delete n[e], c.w.set(x, n)
                         }
-                    }(n, o)) ? b(a, s).catch(() => {
+                    }(n, o)) ? b(l, s).catch(() => {
                         let e;
                         return e = c.w.get(x) ?? {}, delete e[n], c.w.set(x, e), d()
                     }) : d()
@@ -241,16 +241,16 @@ function O(e, t) {
                 if (null == s) throw new T.A({
                     errorCode: S.Lw6.INVALID_TOKEN
                 }, "No access token provided");
-                return b(a, s)
+                return b(l, s)
             }
         }),
         [S.e$_.AUTHORIZE]: {
             handler(n) {
                 let {
                     socket: i,
-                    signal: a,
-                    args: l
-                } = n, r = l.client_id;
+                    signal: l,
+                    args: a
+                } = n, r = a.client_id;
                 if (!r) throw new T.A({
                     errorCode: S.Lw6.INVALID_CLIENTID
                 }, "No client id provided");
@@ -260,18 +260,18 @@ function O(e, t) {
                 if (i.authorization.authing) throw new T.A({
                     errorCode: S.Lw6.INVALID_COMMAND
                 }, "Already authing");
-                if (i.authorization.authing = !0, "token" === l.response_type) throw i.authorization.authing = !1, new T.A({
+                if (i.authorization.authing = !0, "token" === a.response_type) throw i.authorization.authing = !1, new T.A({
                     errorCode: S.Lw6.INVALID_COMMAND
                 }, 'Authorization response_type "token" is not supported');
                 let s = i.authorization.scopes.includes(N.LQ);
                 if (!s && i.application.id !== r) throw i.authorization.authing = !1, new T.A({
                     errorCode: S.Lw6.INVALID_CLIENTID
                 }, "Application does not match the connection's");
-                let o = l.scopes || l.scope;
-                return delete l.scopes, y({
-                    ...l,
+                let o = a.scopes || a.scope;
+                return delete a.scopes, y({
+                    ...a,
                     scope: o,
-                    signal: a,
+                    signal: l,
                     isSocketRpcPrivateScope: s
                 }, e, t).then(e => {
                     if (i.authorization.authing = !1, null == e) throw new T.A({
@@ -283,12 +283,12 @@ function O(e, t) {
                         code: n,
                         location: e
                     };
-                    let a = t.searchParams.get("error");
-                    if (null != a && "" !== a) {
+                    let l = t.searchParams.get("error");
+                    if (null != l && "" !== l) {
                         let e = t.searchParams.get("error_description") ?? "unknown error";
                         throw new T.A({
                             errorCode: S.Lw6.OAUTH2_ERROR
-                        }, `OAuth2 Error: ${a}: ${e}`)
+                        }, `OAuth2 Error: ${l}: ${e}`)
                     }
                     if (null == n) throw new T.A({
                         errorCode: S.Lw6.OAUTH2_ERROR

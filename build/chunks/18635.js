@@ -3,9 +3,9 @@ n.d(t, {
     A: () => L
 }), n(323874), n(14289), n(35956);
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    r = n.n(a),
     s = n(873263),
     o = n(311907),
     d = n(397927),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(726249),
     _ = n(915089),
     m = n(346084),
-    g = n(742589),
-    p = n(95550),
+    p = n(742589),
+    g = n(95550),
     E = n(608881),
     I = n(210714),
     f = n(544028),
@@ -32,7 +32,7 @@ var i = n(627968),
 function O() {
     return (0, i.jsx)("div", {
         className: b.N3,
-        children: (0, i.jsx)(p.Ay, {
+        children: (0, i.jsx)(g.Ay, {
             tooltip: y.intl.string(y.t["HfOgA/"])
         })
     })
@@ -40,26 +40,26 @@ function O() {
 let L = function(e) {
     let {
         initialSection: t
-    } = e, n = (0, s.zy)(), l = (0, s.W6)();
-    a.useEffect(() => {
+    } = e, n = (0, s.zy)(), a = (0, s.W6)();
+    l.useEffect(() => {
         "true" === new URLSearchParams(n.search).get("confirm-age") && c.h.dispatch({
             type: "AGE_GATE_MODAL_OPEN",
             source: v.w_.DEEP_LINK_PROMPT
         }).then(() => {
-            l.replace(x.BVt.ME)
+            a.replace(x.BVt.ME)
         })
-    }, [l, n]), a.useEffect(() => {
+    }, [a, n]), l.useEffect(() => {
         u.I(x.BVt.FRIENDS), (0, I.d)("friends")
     }, []);
-    let p = (0, o.bG)([f.A], () => f.A.theme),
+    let g = (0, o.bG)([f.A], () => f.A.theme),
         L = (0, T.kX)(),
         {
             section: R,
             rows: P
         } = (0, o.cf)([C.Ay], () => C.Ay.getState()),
         D = (0, o.bG)([m.A], () => m.A.getSuggestionCount()),
-        M = a.useMemo(() => P.getRelationshipCounts(), [P]);
-    a.useEffect(() => {
+        M = l.useMemo(() => P.getRelationshipCounts(), [P]);
+    l.useEffect(() => {
         null != t && A.A.setInitialSection(t), 0 === M[x.eA$.FRIEND] && 0 === M[x.eA$.PENDING_INCOMING] && 0 === M[x.eA$.PENDING_OUTGOING] && 0 === M[x.eA$.BLOCKED] && A.A.transitionToSection(x.m3P.ADD_FRIEND)
     }, [t, M]);
     let j = e => {
@@ -127,20 +127,20 @@ let L = function(e) {
         children: [(0, i.jsx)(h.HI, {
             location: y.intl.string(y.t.TdEu5X)
         }), (0, i.jsx)(d.NPJ, {
-            theme: p,
-            children: e => (0, i.jsxs)(g.A, {
+            theme: g,
+            children: e => (0, i.jsxs)(p.A, {
                 className: e,
                 toolbar: (0, i.jsx)(O, {}),
                 role: "navigation",
                 "aria-labelledby": w,
                 scrollable: !0,
-                children: [(0, i.jsx)(g.A.Icon, {
+                children: [(0, i.jsx)(p.A.Icon, {
                     icon: d.$yI,
                     "aria-hidden": !0
-                }), (0, i.jsx)(g.A.Title, {
+                }), (0, i.jsx)(p.A.Title, {
                     id: w,
                     children: y.intl.string(y.t.TdEu5X)
-                }), (0, i.jsx)(g.A.Divider, {}), (0, i.jsx)(d.VQ0, {
+                }), (0, i.jsx)(p.A.Divider, {}), (0, i.jsx)(d.VQ0, {
                     "aria-label": y.intl.string(y.t.TdEu5X),
                     selectedItem: R,
                     type: "top-pill",

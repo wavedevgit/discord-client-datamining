@@ -4,8 +4,8 @@ n.d(t, {
     x: () => T
 });
 var i = n(735438),
-    a = n.n(i),
-    l = n(311907),
+    l = n.n(i),
+    a = n(311907),
     r = n(73153),
     s = n(827343),
     o = n(617617),
@@ -18,8 +18,8 @@ let h = {
     },
     _ = h,
     m = !1,
-    g = {},
     p = {},
+    g = {},
     E = {},
     I = {
         id: null,
@@ -48,7 +48,7 @@ function N(e, t, n) {
         type: u.E.INPUT_AND_OUTPUT
     } : e
 }
-class S extends l.Ay.DeviceSettingsStore {
+class S extends a.Ay.DeviceSettingsStore {
     static displayName = "ConnectedDeviceStore";
     static persistKey = "ConnectedDeviceStore";
     static migrations = [e => null == e.ignoredDevices ? {
@@ -68,13 +68,13 @@ class S extends l.Ay.DeviceSettingsStore {
         return E
     }
     get inputDevices() {
-        return g
+        return p
     }
     get lastInputSystemDevice() {
         return I
     }
     get outputDevices() {
-        return p
+        return g
     }
     get lastOutputSystemDevice() {
         return f
@@ -92,27 +92,27 @@ let x = new S(r.h, {
                 t !== I.id && (I.justChanged = !0), I.id = t
             }
         });
-        let l = {};
+        let a = {};
         if (f.justChanged = !1, n.forEach(e => {
-                if (l[T(e)] = e.id, e.id === A.dx) {
+                if (a[T(e)] = e.id, e.id === A.dx) {
                     let t = e.originalId ?? e.originalName;
                     t !== f.id && (f.justChanged = !0), f.id = t
                 }
             }), !m) {
-            g = i, p = l, m = !0;
+            p = i, g = a, m = !0;
             return
         }
-        let r = Object.keys(g),
+        let r = Object.keys(p),
             s = Object.keys(i),
-            o = Object.keys(p),
-            d = Object.keys(l),
-            c = a().difference(r, s),
-            h = a().difference(o, d);
-        return c.length > 0 || h.length > 0 ? E = {} : (a().difference(s, r).forEach(e => {
+            o = Object.keys(g),
+            d = Object.keys(a),
+            c = l().difference(r, s),
+            h = l().difference(o, d);
+        return c.length > 0 || h.length > 0 ? E = {} : (l().difference(s, r).forEach(e => {
             E[e] = N(E[e], e, u.E.INPUT)
-        }), a().difference(d, o).forEach(e => {
+        }), l().difference(d, o).forEach(e => {
             E[e] = N(E[e], e, u.E.OUTPUT)
-        })), !(a().isEqual(r, s) && a().isEqual(o, d)) && (g = i, p = l, !0)
+        })), !(l().isEqual(r, s) && l().isEqual(o, d)) && (p = i, g = a, !0)
     },
     CONNECTED_DEVICE_SWITCH: function(e) {
         let {
@@ -121,13 +121,13 @@ let x = new S(r.h, {
             location: i
         } = e;
         if (n === u.f.INPUT || n === u.f.INPUT_AND_OUTPUT) {
-            let e = g[t];
+            let e = p[t];
             null != e && r.h.wait(() => s.A.setInputDevice(e, {
                 location: i
             }))
         }
         if (n === u.f.OUTPUT || n === u.f.INPUT_AND_OUTPUT) {
-            let e = p[t];
+            let e = g[t];
             r.h.wait(() => s.A.setOutputDevice(e, {
                 location: i
             }))

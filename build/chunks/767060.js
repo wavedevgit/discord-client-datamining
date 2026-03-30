@@ -4,13 +4,13 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(873263),
-    l = n(33666),
+var l = n(873263),
+    a = n(33666),
     r = n(793998),
     s = n(652215);
 
 function o() {
-    return "teen" === (0, l.A)() ? (0, i.jsx)(a.rd, {
+    return "teen" === (0, a.A)() ? (0, i.jsx)(l.rd, {
         to: s.BVt.SETTINGS("family-center")
     }) : (0, i.jsx)(r.A, {})
 }

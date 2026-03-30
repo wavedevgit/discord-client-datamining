@@ -3,9 +3,9 @@ n.d(t, {
     A: () => R
 }), n(323874), n(14289), n(35956);
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    r = n.n(a),
     s = n(110259),
     o = n(877624),
     d = n(311907),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(775602),
     _ = n(139286),
     m = n(871751),
-    g = n(259407),
-    p = n(915089),
+    p = n(259407),
+    g = n(915089),
     E = n(607470),
     I = n(367727),
     f = n(652176),
@@ -42,23 +42,23 @@ let b = [],
         let {
             header: t,
             subHeader: n,
-            imageSrc: a,
-            tagText: l,
+            imageSrc: l,
+            tagText: a,
             wideStyle: s
         } = e;
         return (0, i.jsxs)("div", {
             className: r()(y.Vr, {
                 [y.tF]: s
             }),
-            children: [null != l ? (0, i.jsx)(O, {
-                tagText: l,
+            children: [null != a ? (0, i.jsx)(O, {
+                tagText: a,
                 className: y.bX
             }) : null, (0, i.jsx)("img", {
                 alt: "",
                 className: r()(y._n, {
                     [y.tF]: s
                 }),
-                src: a
+                src: l
             }), (0, i.jsxs)("div", {
                 className: r()(y.Zz, {
                     [y.tF]: s
@@ -80,7 +80,7 @@ function R(e) {
     let {
         componentId: t,
         promotionId: n,
-        className: l,
+        className: a,
         renderModalProps: O,
         heroArt: R,
         heroArtClassName: P,
@@ -96,13 +96,13 @@ function R(e) {
     } = e, {
         onClose: H,
         transitionState: F
-    } = O, Y = (0, p.GV)(), W = G.length % 2 == 0, K = (0, d.bG)([h.A], () => h.A.useReducedMotion), [q, z] = a.useState(Date.now()), [$, Q] = a.useState(0), [X, Z] = a.useState(0), [J, ee] = a.useState(!1), [et, en] = a.useState(!0), ei = a.useRef(q), ea = a.useRef($), el = a.useRef(X), er = a.useRef(J), es = a.useRef(et), [eo, ed] = a.useState(b), ec = a.useRef(!1);
+    } = O, Y = (0, g.GV)(), W = G.length % 2 == 0, K = (0, d.bG)([h.A], () => h.A.useReducedMotion), [q, z] = l.useState(Date.now()), [$, Q] = l.useState(0), [X, Z] = l.useState(0), [J, ee] = l.useState(!1), [et, en] = l.useState(!0), ei = l.useRef(q), el = l.useRef($), ea = l.useRef(X), er = l.useRef(J), es = l.useRef(et), [eo, ed] = l.useState(b), ec = l.useRef(!1);
 
     function eu() {
         let e = Date.now(),
             t = e - ei.current,
-            n = ea.current,
-            i = el.current;
+            n = el.current,
+            i = ea.current;
         return er.current && (Q(n += t), es.current || Z(i += t)), z(e), [n, i]
     }
     return (0, _.A)({
@@ -112,7 +112,7 @@ function R(e) {
             component_id: t,
             component_type: o.C.ANNOUNCEMENT_MODAL
         }
-    }), a.useEffect(() => {
+    }), l.useEffect(() => {
         let e = async () => {
             try {
                 if ("video" !== R.type || null == R.subtitles) return;
@@ -123,10 +123,10 @@ function R(e) {
                         i = new Blob([n], {
                             type: "text/vtt"
                         }),
-                        a = URL.createObjectURL(i);
+                        l = URL.createObjectURL(i);
                     return {
                         ...e,
-                        src: a
+                        src: l
                     }
                 });
                 ed(await Promise.all(e))
@@ -135,13 +135,13 @@ function R(e) {
             }
         };
         !0 !== ec.current && e(), ec.current = !0
-    }, [R, eo]), a.useEffect(() => () => {
+    }, [R, eo]), l.useEffect(() => () => {
         null != eo && eo.forEach(e => {
             URL.revokeObjectURL(e.src)
         })
-    }, [eo]), a.useEffect(() => {
-        ei.current = q, ea.current = $, el.current = X, er.current = J, es.current = et
-    }, [q, $, X, J, et]), a.useEffect(() => () => {
+    }, [eo]), l.useEffect(() => {
+        ei.current = q, el.current = $, ea.current = X, er.current = J, es.current = et
+    }, [q, $, X, J, et]), l.useEffect(() => () => {
         if ("video" === R.type || "embed" === R.type) {
             let [e, t] = eu();
             C.default.track(S.HAw.CHANGE_LOG_VIDEO_PLAYED, {
@@ -152,7 +152,7 @@ function R(e) {
                 seconds_unmuted: Math.round(t / 1e3)
             })
         }
-    }, [k, R.type]), a.useEffect(() => {
+    }, [k, R.type]), l.useEffect(() => {
         (0, I.Vh)(c.M.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL);
         let e = Date.now();
         return C.default.track(S.HAw.CHANGE_LOG_OPENED, {
@@ -167,7 +167,7 @@ function R(e) {
         }
     }, [k, n]), (0, i.jsx)(A.EOs, {
         "data-migration-pending": !0,
-        className: r()(y.zr, y.kv, l),
+        className: r()(y.zr, y.kv, a),
         transitionState: F,
         "aria-labelledby": Y,
         parentComponent: "PremiumAnnouncementModalVariant1",
@@ -222,7 +222,7 @@ function R(e) {
                     href: R.href,
                     thumbnail: R.thumbnail,
                     video: R.embed,
-                    provider: g.mt.YOUTUBE,
+                    provider: p.mt.YOUTUBE,
                     maxWidth: R.embed.width,
                     maxHeight: R.embed.height,
                     renderVideoComponent: f.$o,

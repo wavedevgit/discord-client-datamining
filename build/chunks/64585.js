@@ -3,8 +3,8 @@ n.d(t, {
     A: () => x
 }), n(321073);
 var i = n(73153),
-    a = n(272355),
-    l = n(400492),
+    l = n(272355),
+    a = n(400492),
     r = n(312671),
     s = n(961350),
     o = n(383501),
@@ -13,10 +13,10 @@ var i = n(73153),
     u = n(3137),
     A = n(559908),
     h = n(652215);
-let _ = (0, l.aN)("poggermode_applause", r.A.getSoundpack()),
+let _ = (0, a.aN)("poggermode_applause", r.A.getSoundpack()),
     m = !1,
-    g = !1,
-    p = [],
+    p = !1,
+    g = [],
     E = null,
     I = () => {
         _.stop(), m = !1
@@ -27,20 +27,20 @@ let _ = (0, l.aN)("poggermode_applause", r.A.getSoundpack()),
         return !!e && !!t && null != d.A.getChannelId()
     },
     C = () => {
-        if (0 === p.length || !f() || g) return;
-        g = !0;
-        let [e, t] = p[p.length - 1];
-        (0, l.Ak)(e, t), E = setTimeout(T, 1e3)
+        if (0 === g.length || !f() || p) return;
+        p = !0;
+        let [e, t] = g[g.length - 1];
+        (0, a.Ak)(e, t), E = setTimeout(T, 1e3)
     },
     T = () => {
-        p.pop(), g = !1, C()
+        g.pop(), p = !1, C()
     },
     N = function(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
             n = o.A.isConnected();
-        p.push([e, t * (n ? .1 : 1)]), C()
+        g.push([e, t * (n ? .1 : 1)]), C()
     };
-class S extends a.A {
+class S extends l.A {
     _initialize() {
         A.Ay.addChangeListener(this.startAudio), i.h.subscribe("RTC_CONNECTION_STATE", this.setVolume), i.h.subscribe("TYPING_STOP", this.stopAudio), i.h.subscribe("TYPING_STOP_LOCAL", this.stopAudio), i.h.subscribe("CHANNEL_SELECT", this.stopAudio), i.h.subscribe("POGGERMODE_SETTINGS_UPDATE", this.stopAudio)
     }
@@ -69,8 +69,8 @@ class S extends a.A {
         let t = s.default.getId(),
             n = c.A.isTyping(e, t),
             i = A.Ay.getUserCombo(t, e),
-            a = i?.multiplier ?? 1;
-        n && a >= 7 ? m || (_.loop(), m = !0) : I()
+            l = i?.multiplier ?? 1;
+        n && l >= 7 ? m || (_.loop(), m = !0) : I()
     }
     playAchievementUnlockSound() {
         f() && N("poggermode_achievement_unlock")

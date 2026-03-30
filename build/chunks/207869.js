@@ -24,8 +24,8 @@ var a = n(627968),
     A = n(545986),
     C = n(194267),
     y = n(963713),
-    T = n(758836),
-    S = n(985018),
+    S = n(758836),
+    T = n(985018),
     E = n(384100);
 
 function N(e) {
@@ -83,7 +83,7 @@ let I = e => {
                 sourceQuestContent: n
             }),
             size: "sm",
-            text: S.intl.string(S.t.csptqV)
+            text: T.intl.string(T.t.csptqV)
         })
     },
     O = e => {
@@ -125,7 +125,7 @@ let I = e => {
                 variant: "secondary",
                 fullWidth: !0,
                 size: "sm",
-                text: S.intl.string(S.t["93PTEs"]),
+                text: T.intl.string(T.t["93PTEs"]),
                 ...e
             })
         })
@@ -144,7 +144,7 @@ let I = e => {
             sourceQuestContent: m
         }), p = i.useCallback(e => {
             r?.(e), (0, _.ks)(t.config) && t.userStatus?.claimedAt != null ? (0, d.Cz)({
-                tab: T.G2.ORBS,
+                tab: S.G2.ORBS,
                 analyticsLocations: [],
                 analyticsSource: o.A.QUEST_HOME_PAGE
             }) : x()
@@ -152,7 +152,7 @@ let I = e => {
         return (0, a.jsx)(s.$nd, {
             fullWidth: !0,
             onClick: p,
-            text: n ?? S.intl.string(S.t.cfY4PE),
+            text: n ?? T.intl.string(T.t.cfY4PE),
             ...h,
             size: h.size === l.$n.Sizes.MEDIUM ? "md" : "sm"
         })
@@ -206,7 +206,7 @@ function P(e) {
         ref: t,
         children: [e.showBackButton && (0, a.jsx)(s.K0, {
             size: "sm",
-            "aria-label": S.intl.string(S.t["13/7kX"]),
+            "aria-label": T.intl.string(T.t["13/7kX"]),
             onClick: e.onBack,
             icon: r.n2b,
             variant: "secondary"

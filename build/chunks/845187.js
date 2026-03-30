@@ -4,8 +4,8 @@ n.d(t, {
     default: () => _
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(158954),
+    l = n(64700),
+    a = n(158954),
     r = n(397927),
     s = n(817281),
     o = n(429913),
@@ -20,8 +20,8 @@ function _(e) {
         applicationId: t,
         transitionState: n,
         onClose: _
-    } = e, [m, g] = a.useState(!1), [p] = (0, o.A)([t]), E = p?.name ?? "This Activity";
-    a.useEffect(() => {
+    } = e, [m, p] = l.useState(!1), [g] = (0, o.A)([t]), E = g?.name ?? "This Activity";
+    l.useEffect(() => {
         d.default.track(u.HAw.OPEN_MODAL, {
             type: h
         })
@@ -39,7 +39,7 @@ function _(e) {
             application_id: t
         }), c.Ay.setEnableHardwareAcceleration(!0), await I()
     };
-    return (0, i.jsx)(l.Modal, {
+    return (0, i.jsx)(a.Modal, {
         size: "md",
         transitionState: n,
         onClose: I,
@@ -47,7 +47,7 @@ function _(e) {
         title: A.intl.string(A.t.NQkK4l),
         actionBarInput: (0, i.jsx)(r.Checkbox, {
             checked: m,
-            onChange: () => g(!m),
+            onChange: () => p(!m),
             label: A.intl.string(A.t["5E9SB9"]),
             labelType: "secondary"
         }),

@@ -1,22 +1,22 @@
 /** chunk id: 851466 params = (module,exports,require) **/
 var i = n(311907),
-    a = n(73153);
-let l = {};
+    l = n(73153);
+let a = {};
 class r extends i.Ay.Store {
     static displayName = "ChannelSKUStore";
     getSkuIdForChannel(e) {
-        return l[e]
+        return a[e]
     }
 }
-new r(a.h, {
+new r(l.h, {
     CONNECTION_OPEN: function() {
-        l = {}
+        a = {}
     },
     STORE_LISTING_FETCH_SUCCESS: function(e) {
         let {
             channelId: t,
             storeListing: n
         } = e;
-        null != t && (l[t] = n.sku.id)
+        null != t && (a[t] = n.sku.id)
     }
 })

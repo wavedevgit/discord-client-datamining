@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    l = n.n(a),
+var l = n(503698),
+    a = n.n(l),
     r = n(311907),
     s = n(554146),
     o = n(397927),
@@ -16,21 +16,21 @@ var a = n(503698),
     h = n(379848),
     _ = n(193699),
     m = n(153488),
-    g = n(426389),
-    p = n(652215),
+    p = n(426389),
+    g = n(652215),
     E = n(985018),
     I = n(444876);
 
 function f() {
     let {
         analyticsLocations: e
-    } = (0, u.Ay)(c.A.ACTIVE_NOW_COLUMN), t = (0, r.bG)([m.A], () => m.A.hasConsented(p.YAq.PERSONALIZATION)) ? [] : [s.M.NOW_PLAYING_CONSENT_CARD], n = (0, A.GV)();
+    } = (0, u.Ay)(c.A.ACTIVE_NOW_COLUMN), t = (0, r.bG)([m.A], () => m.A.hasConsented(g.YAq.PERSONALIZATION)) ? [] : [s.M.NOW_PLAYING_CONSENT_CARD], n = (0, A.GV)();
     return (0, i.jsx)(u.f5, {
         value: e,
         children: (0, i.jsx)(d.A, {
-            section: p.JJy.ACTIVE_NOW_COLUMN,
+            section: g.JJy.ACTIVE_NOW_COLUMN,
             children: (0, i.jsx)("aside", {
-                className: l()(I.kL, "refresh-active-now"),
+                className: a()(I.kL, "refresh-active-now"),
                 "aria-labelledby": n,
                 children: (0, i.jsx)(o.HOs, {
                     className: I.XG,
@@ -52,7 +52,7 @@ function f() {
                                     markAsDismissed: n
                                 })
                             }
-                        }), (0, i.jsx)(g.A, {})]
+                        }), (0, i.jsx)(p.A, {})]
                     })
                 })
             })

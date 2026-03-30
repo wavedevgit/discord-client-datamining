@@ -3,8 +3,8 @@ n.d(t, {
     A: () => O
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(607399),
+    l = n(64700),
+    a = n(607399),
     r = n(311907),
     s = n(397927),
     o = n(384904),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(465932),
     _ = n(142120),
     m = n(742589),
-    g = n(71393),
-    p = n(615405),
+    p = n(71393),
+    g = n(615405),
     E = n(300233),
     I = n(217976),
     f = n(514179),
@@ -31,20 +31,20 @@ var i = n(627968),
 function b(e) {
     let {
         guildId: t
-    } = e, n = (0, r.bG)([g.A], () => g.A.getGuild(t), [t]), b = (0, r.bG)([_.A], () => _.A.isConnected()), O = (0, A.A)(t), L = (0, I.A)(t), R = (0, r.bG)([p.A], () => p.A.isSubscriptionFetching), P = (0, E.X)(), {
+    } = e, n = (0, r.bG)([p.A], () => p.A.getGuild(t), [t]), b = (0, r.bG)([_.A], () => _.A.isConnected()), O = (0, A.A)(t), L = (0, I.A)(t), R = (0, r.bG)([g.A], () => g.A.isSubscriptionFetching), P = (0, E.X)(), {
         shouldHideGuildPurchaseEntryPoints: D,
         restrictionsLoading: M
     } = (0, h.MH)(t), j = null == n || !P || R || M;
     (0, c.HU)({
         subsection: v.intl.string(v.t["KzCF/6"]),
         location: n?.name
-    }), (0, d.A)(l.Fr ? "role-subscriptions-overview" : void 0);
+    }), (0, d.A)(a.Fr ? "role-subscriptions-overview" : void 0);
     let w = b && (null == n || !(O || L) || D && !M);
-    if (a.useEffect(() => {
+    if (l.useEffect(() => {
             o.hP()
-        }, []), a.useEffect(() => {
-            w && !l.Fr && (0, u.B)(t, x.VV.ROLE_SUBSCRIPTIONS)
-        }, [t, w]), l.Fr && w) {
+        }, []), l.useEffect(() => {
+            w && !a.Fr && (0, u.B)(t, x.VV.ROLE_SUBSCRIPTIONS)
+        }, [t, w]), a.Fr && w) {
         let e = null == n ? T.b.NOT_GUILD_MEMBER : T.b.GUILD_NOT_ELIGIBLE;
         return (0, i.jsx)(T.k, {
             errorType: e
@@ -53,7 +53,7 @@ function b(e) {
     return (0, i.jsxs)("div", {
         className: y.kL,
         children: [(0, i.jsxs)(m.A, {
-            toolbar: (0, i.jsx)(a.Fragment, {}),
+            toolbar: (0, i.jsx)(l.Fragment, {}),
             className: y.jr,
             children: [(0, i.jsx)(m.A.Icon, {
                 icon: (0, s.kHD)(f.A),

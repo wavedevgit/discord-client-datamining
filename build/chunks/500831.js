@@ -4,8 +4,8 @@ n.r(t), n.d(t, {
     useAppSidebarState: () => U
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(353640),
+    l = n(64700),
+    a = n(353640),
     r = n(574381),
     s = n(311907),
     o = n(397927),
@@ -16,8 +16,8 @@ var i = n(627968),
     h = n(932340),
     _ = n(733738),
     m = n(871432),
-    g = n(352306),
-    p = n(817199),
+    p = n(352306),
+    g = n(817199),
     E = n(540177),
     I = n(898642),
     f = n(558416),
@@ -38,11 +38,11 @@ var i = n(627968),
     j = n(475815),
     w = n(71855);
 n(801416);
-let U = (0, l.v)(() => ({
+let U = (0, a.v)(() => ({
         isOpen: !0
     })),
-    G = a.memo(function() {
-        a.useLayoutEffect(() => {
+    G = l.memo(function() {
+        l.useLayoutEffect(() => {
             M.Ay.setMinimumSize(800, 500)
         }, []);
         let {
@@ -54,12 +54,12 @@ let U = (0, l.v)(() => ({
             hasBugReporterAccess: n
         } = A.A.useConfig({
             location: "HeaderBar"
-        }), l = (0, s.bG)([R.A], () => R.A.isDeveloper), U = (0, O.Uk)("VoiceDareTitleBarButton"), G = (0, s.bG)([P.A, c.A], () => b.Q_.getSetting() && null != P.A.testModeApplicationId && null != c.A.getApplication(P.A.testModeApplicationId) && (0, u.A)(c.A.getApplication(P.A.testModeApplicationId))), k = null !== e && t === N.RK.TITLE_BAR_LEFT, V = null === e, {
+        }), a = (0, s.bG)([R.A], () => R.A.isDeveloper), U = (0, O.Uk)("VoiceDareTitleBarButton"), G = (0, s.bG)([P.A, c.A], () => b.Q_.getSetting() && null != P.A.testModeApplicationId && null != c.A.getApplication(P.A.testModeApplicationId) && (0, u.A)(c.A.getApplication(P.A.testModeApplicationId))), k = null !== e && t === N.RK.TITLE_BAR_LEFT, V = null === e, {
             enabled: B
-        } = g.s.useConfig({
+        } = p.s.useConfig({
             location: "AppTitleBar"
         });
-        a.useLayoutEffect(() => {
+        l.useLayoutEffect(() => {
             M.Ay.setMinimumSize(800, 500)
         }, []);
         let H = (0, y.NC)(),
@@ -71,7 +71,7 @@ let U = (0, l.v)(() => ({
                     showNotificationsInbox: n,
                     showRecentsButton: i
                 } = e;
-                return a.useMemo(() => t ? "BACK_FORWARD_NAVIGATION" : n ? "NOTIFICATIONS_INBOX" : i ? "RECENTS" : "HELP", [t, n, i])
+                return l.useMemo(() => t ? "BACK_FORWARD_NAVIGATION" : n ? "NOTIFICATIONS_INBOX" : i ? "RECENTS" : "HELP", [t, n, i])
             }({
                 showBackForwardButtons: Y,
                 showNotificationsInbox: k,
@@ -91,7 +91,7 @@ let U = (0, l.v)(() => ({
                     }),
                     title: (0, i.jsx)(T.M, {}),
                     trailing: (0, i.jsxs)(i.Fragment, {
-                        children: [(0, i.jsx)(m.A, {}), U ? (0, i.jsx)(L.A, {}) : null, B && (0, i.jsx)(p.A, {}), (0, i.jsx)(h.A, {
+                        children: [(0, i.jsx)(m.A, {}), U ? (0, i.jsx)(L.A, {}) : null, B && (0, i.jsx)(g.A, {}), (0, i.jsx)(h.A, {
                             canShowReminder: !0
                         }), V && (0, i.jsx)(v.A, {
                             ..."RECENTS" === W ? e : {}
@@ -99,7 +99,7 @@ let U = (0, l.v)(() => ({
                             focusSectionProps: "HELP" === W ? e : void 0
                         }) : (0, i.jsx)(I.A, {
                             focusSectionProps: "HELP" === W ? e : void 0
-                        }), l && (0, i.jsx)(E.R, {}), G && (0, i.jsx)(d.A, {}), (0, i.jsx)(C.A, {})]
+                        }), a && (0, i.jsx)(E.R, {}), G && (0, i.jsx)(d.A, {}), (0, i.jsx)(C.A, {})]
                     })
                 })
             })

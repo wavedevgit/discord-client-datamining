@@ -1,6 +1,6 @@
 /** chunk id: 323970 params = (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => T
 });
 var a = n(582754),
     i = n(736653),
@@ -57,7 +57,7 @@ let y = {
             light: " #6881D4, #956CB8, #5491A0"
         }
     },
-    T = {
+    S = {
         [r.Ac.PREMIUM_TENURE_1_MONTH]: {
             dark: o.A,
             light: g.A
@@ -92,12 +92,12 @@ let y = {
         }
     };
 
-function S() {
+function T() {
     let e = (0, l.A)(),
         t = (0, a.Mw)((0, i.Ay)());
     if (!e) return null;
     let n = y[e],
-        o = T[e],
+        o = S[e],
         d = {
             currentBadge: (0, s.e0)(e),
             currentBadgeTextGradient: t ? n?.dark : n?.light,

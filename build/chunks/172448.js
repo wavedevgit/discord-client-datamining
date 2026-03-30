@@ -3,9 +3,9 @@ let i;
 n.d(t, {
     A: () => L
 });
-var a = n(627968);
+var l = n(627968);
 n(64700);
-var l = n(397927),
+var a = n(397927),
     r = n(73153),
     s = n(272355),
     o = n(323073),
@@ -16,8 +16,8 @@ var l = n(397927),
     h = n(894778),
     _ = n(447696),
     m = n(684407),
-    g = n(919638),
-    p = n(71393),
+    p = n(919638),
+    g = n(71393),
     E = n(967198),
     I = n(287809),
     f = n(403362),
@@ -31,7 +31,7 @@ n(436317);
 var y = n(315290);
 
 function b() {
-    null != i && (0, l.OoC)(i)
+    null != i && (0, a.OoC)(i)
 }
 class O extends s.A {
     _initialize() {
@@ -57,10 +57,10 @@ class O extends s.A {
         let s = !1,
             b = E.A.getGuildId();
         if (r === S.zY.INVITE_UNCLAIMED) {
-            let e = p.A.getGuild(b);
+            let e = g.A.getGuild(b);
             null != e && (0, u.Qd)(e) && (s = !0, (0, _.Fy)(e.id))
         }
-        let O = () => 0 === g.A.totalGuilds && !C.isPlatformEmbedded,
+        let O = () => 0 === p.A.totalGuilds && !C.isPlatformEmbedded,
             L = o.xq();
         e = [{
             key: "Unified NUF Modal",
@@ -94,11 +94,11 @@ class O extends s.A {
                             f.xb(e)
                     }
                 };
-                i = await (0, l.mMO)(async () => {
+                i = await (0, a.mMO)(async () => {
                     let {
                         default: e
                     } = await Promise.all([n.e("86746"), n.e("31922")]).then(n.bind(n, 218318));
-                    return n => (0, a.jsx)(e, {
+                    return n => (0, l.jsx)(e, {
                         ...n,
                         onSlideChange: t
                     })
@@ -123,11 +123,11 @@ class O extends s.A {
             predicate: () => s && !I.default.getCurrentUser()?.isClaimed() && !0
         }, {
             key: "Guild Welcome Modal",
-            open: e => (0, l.mMO)(async () => {
+            open: e => (0, a.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("98063").then(n.bind(n, 143154));
-                return t => (0, a.jsx)(e, {
+                return t => (0, l.jsx)(e, {
                     ...t,
                     guildId: b
                 })

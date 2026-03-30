@@ -3,9 +3,9 @@ n.d(t, {
     A: () => D
 }), n(321073);
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    r = n.n(a),
     s = n(615300),
     o = n(311907),
     d = n(73939),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(775121),
     _ = n(268218),
     m = n(361158),
-    g = n(97469),
-    p = n(186111),
+    p = n(97469),
+    g = n(186111),
     E = n(203982),
     I = n(652215),
     f = n(985018),
@@ -55,10 +55,10 @@ let T = (0, _.Fe)({
     };
 
 function L() {
-    return a.useEffect(() => (h.A.enable(), h.A.enableTemp(A.w), () => h.A.disableTemp()), []), null
+    return l.useEffect(() => (h.A.enable(), h.A.enableTemp(A.w), () => h.A.disableTemp()), []), null
 }
-class R extends a.PureComponent {
-    containerRef = a.createRef();
+class R extends l.PureComponent {
+    containerRef = l.createRef();
     static getDerivedStateFromProps(e, t) {
         return e.mode !== t.mode ? {
             animating: !0,
@@ -160,10 +160,10 @@ class R extends a.PureComponent {
         } = this.state, {
             name: t,
             mode: n,
-            children: a,
-            baseLayer: l,
+            children: l,
+            baseLayer: a,
             ...o
-        } = this.props, d = n === b, u = e || d ? this.getAnimatedStyle() : null, A = !d && !l, h = (0, i.jsx)(s.A.div, {
+        } = this.props, d = n === b, u = e || d ? this.getAnimatedStyle() : null, A = !d && !a, h = (0, i.jsx)(s.A.div, {
             ref: e => this.containerRef.current = null != e ? e.componentRef : void 0,
             "data-layer": t ?? "base",
             "aria-hidden": d,
@@ -182,15 +182,15 @@ class R extends a.PureComponent {
             }(t) : void 0,
             role: A ? "dialog" : void 0,
             className: r()(C.qd, {
-                [C.n3]: l,
+                [C.n3]: a,
                 [C.bW]: e,
                 "stop-animations": n === b
             }),
             style: u,
             ...o,
-            children: a
+            children: l
         });
-        return l ? h : (0, i.jsx)(c.Oky, {
+        return a ? h : (0, i.jsx)(c.Oky, {
             containerRef: this.containerRef,
             children: h
         })
@@ -214,7 +214,7 @@ class R extends a.PureComponent {
         }
     }
 }
-class P extends a.PureComponent {
+class P extends l.PureComponent {
     componentDidMount() {
         E._.subscribe(I.jej.LAYER_POP_ESCAPE_KEY, u.jH)
     }
@@ -227,20 +227,20 @@ class P extends a.PureComponent {
             layers: t,
             hasFullScreenLayer: n
         } = this.props, {
-            length: a
-        } = t, l = [];
-        return l.push((0, i.jsx)(R, {
-            mode: 0 !== a || n ? b : y,
+            length: l
+        } = t, a = [];
+        return a.push((0, i.jsx)(R, {
+            mode: 0 !== l || n ? b : y,
             baseLayer: !0,
             children: e
-        }, "layer-base")), t.forEach((e, t) => l.push(this.renderComponent(e, t, a))), l
+        }, "layer-base")), t.forEach((e, t) => a.push(this.renderComponent(e, t, l))), a
     }
     renderComponent(e, t, n) {
-        let a;
-        return a = "string" == typeof e ? v[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(R, {
+        let l;
+        return l = "string" == typeof e ? v[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(R, {
             name: "string" == typeof e ? e : void 0,
             mode: t === n - 1 ? y : b,
-            children: [(0, i.jsx)(L, {}), a]
+            children: [(0, i.jsx)(L, {}), l]
         }, `layer-${t}`)
     }
     renderArtisanalHack() {
@@ -263,13 +263,13 @@ class P extends a.PureComponent {
 }
 
 function D(e) {
-    let t = (0, g.NC)(),
-        n = (0, o.bG)([p.A], () => p.A.getLayers()),
-        a = (0, m.xr)(e => e.fullScreenLayers.length > 0 && !e.fullScreenLayers.some(e => e.options.showAppUnderLayer));
+    let t = (0, p.NC)(),
+        n = (0, o.bG)([g.A], () => g.A.getLayers()),
+        l = (0, m.xr)(e => e.fullScreenLayers.length > 0 && !e.fullScreenLayers.some(e => e.options.showAppUnderLayer));
     return (0, i.jsx)(P, {
         ...e,
         sidebarTheme: t,
         layers: n,
-        hasFullScreenLayer: a
+        hasFullScreenLayer: l
     })
 }

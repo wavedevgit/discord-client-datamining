@@ -1,23 +1,23 @@
 /** chunk id: 355443 params = (module,exports,require) **/
 n.d(t, {
-    H: () => l
+    H: () => a
 });
 var i = n(179771),
-    a = n(672162);
-let l = {
-        [a.vd.INITIATE_IMAGE_UPLOAD]: {
+    l = n(672162);
+let a = {
+        [l.vd.INITIATE_IMAGE_UPLOAD]: {
             request: void 0,
             response: e => ({
                 image_url: e.string().required()
             })
         },
-        [a.vd.OPEN_SHARE_MOMENT_DIALOG]: {
+        [l.vd.OPEN_SHARE_MOMENT_DIALOG]: {
             response: void 0,
             request: e => ({
                 mediaUrl: e.string().required().max(1024)
             })
         },
-        [a.vd.AUTHENTICATE]: {
+        [l.vd.AUTHENTICATE]: {
             request: e => ({
                 access_token: e.string().allow(null).optional()
             }),
@@ -31,7 +31,7 @@ let l = {
                     public_flags: e.number().required(),
                     global_name: e.string().allow(null)
                 }).required(),
-                scopes: e.array().items(e.string().valid(...(0, a.iW)(i.F))).required(),
+                scopes: e.array().items(e.string().valid(...(0, l.iW)(i.F))).required(),
                 expires: e.string().required(),
                 application: e.object({
                     description: e.string().required(),
@@ -42,7 +42,7 @@ let l = {
                 }).required()
             })
         },
-        [a.vd.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: {
+        [l.vd.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: {
             request: void 0,
             response: e => ({
                 participants: e.array().items(s(e).keys({
@@ -50,7 +50,7 @@ let l = {
                 }).required()).required()
             })
         },
-        [a.vd.SHARE_INTERACTION]: {
+        [l.vd.SHARE_INTERACTION]: {
             request: e => ({
                 command: e.string().required(),
                 options: e.array().items(e.object({
@@ -71,7 +71,7 @@ let l = {
                 success: e.boolean().required()
             })
         },
-        [a.vd.SHARE_LINK]: {
+        [l.vd.SHARE_LINK]: {
             request: e => ({
                 custom_id: e.string().max(64),
                 message: e.string().max(1e3).required(),
@@ -83,7 +83,7 @@ let l = {
                 didSendMessage: e.boolean().required()
             })
         },
-        [a.vd.GET_RELATIONSHIPS]: {
+        [l.vd.GET_RELATIONSHIPS]: {
             request: void 0,
             response: e => ({
                 relationships: e.array().required().items(e.object({
@@ -96,20 +96,20 @@ let l = {
                 }))
             })
         },
-        [a.vd.INVITE_USER_EMBEDDED]: {
+        [l.vd.INVITE_USER_EMBEDDED]: {
             request: e => ({
                 user_id: e.string().required(),
                 content: e.string().min(0).max(1024)
             }),
             response: void 0
         },
-        [a.vd.GET_USER]: {
+        [l.vd.GET_USER]: {
             request: e => ({
                 id: e.string().max(64).required()
             }),
             response: e => s(e).allow(null)
         },
-        [a.vd.GET_QUEST_ENROLLMENT_STATUS]: {
+        [l.vd.GET_QUEST_ENROLLMENT_STATUS]: {
             request: e => ({
                 quest_id: e.string().required()
             }),
@@ -119,7 +119,7 @@ let l = {
                 enrolled_at: e.string().allow(null).optional()
             })
         },
-        [a.vd.QUEST_START_TIMER]: {
+        [l.vd.QUEST_START_TIMER]: {
             request: e => ({
                 quest_id: e.string().required()
             }),
@@ -127,7 +127,7 @@ let l = {
                 success: e.boolean().required()
             })
         },
-        [a.vd.REQUEST_PROXY_TICKET_REFRESH]: {
+        [l.vd.REQUEST_PROXY_TICKET_REFRESH]: {
             request: void 0,
             response: e => ({
                 ticket: e.string().required()

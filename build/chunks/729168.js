@@ -3,29 +3,29 @@ n.d(t, {
     A: () => c
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    r = n.n(a),
     s = n(397927),
     o = n(770178),
     d = n(311401);
-let c = a.forwardRef(function(e, t) {
+let c = l.forwardRef(function(e, t) {
     let {
         topContent: n,
-        title: l,
+        title: a,
         subtitle: c,
         buttons: u,
         background: A,
         className: h
-    } = e, [_, m] = a.useState("display-lg"), g = a.useCallback(e => {
+    } = e, [_, m] = l.useState("display-lg"), p = l.useCallback(e => {
         m(e.contentRect.width < 500 ? "display-md" : "display-lg")
-    }, []), p = (0, o.w)(g, [], {
+    }, []), g = (0, o.w)(p, [], {
         fireOnMount: !0
     });
     return (0, i.jsx)("div", {
         className: r()(d.iE, "theme-midnight", h),
         ref: e => {
-            p.current = e, "function" == typeof t ? t(e) : null != t && (t.current = e)
+            g.current = e, "function" == typeof t ? t(e) : null != t && (t.current = e)
         },
         children: (0, i.jsxs)("div", {
             className: d.FG,
@@ -42,7 +42,7 @@ let c = a.forwardRef(function(e, t) {
                             color: "text-strong",
                             variant: _,
                             className: d.DD,
-                            children: l
+                            children: a
                         }), (0, i.jsx)(s.Text, {
                             color: "text-strong",
                             variant: "text-md/normal",

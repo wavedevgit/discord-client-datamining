@@ -3,8 +3,8 @@ n.d(t, {
     A: () => _
 }), n(321073);
 var i = n(627968),
-    a = n(64700),
-    l = n(311907),
+    l = n(64700),
+    a = n(311907),
     r = n(587895),
     s = n(64983),
     o = n(997509),
@@ -20,24 +20,24 @@ function _(e) {
         } = e,
         _ = (0, c.$s)(n),
         m = () => (0, d.Hc)(n.id),
-        g = a.useMemo(() => new Set(_.map(e => e.applicationId)), [_]),
-        p = (0, l.yK)([r.A], () => {
+        p = l.useMemo(() => new Set(_.map(e => e.applicationId)), [_]),
+        g = (0, a.yK)([r.A], () => {
             let e = [];
-            for (let t of g) {
+            for (let t of p) {
                 let n = r.A.getApplication(t);
                 null != n && e.push(n)
             }
             return e
-        }, [g]);
-    return 0 === p.length ? null : (t = 1 === p.length ? A.intl.formatToPlainString(A.t["Egq+G/"], {
-        a: p[0].name
-    }) : 2 === p.length ? A.intl.formatToPlainString(A.t.LxU9R3, {
-        a: p[0].name,
-        b: p[1].name
-    }) : 3 === p.length ? A.intl.formatToPlainString(A.t.crKXMC, {
-        a: p[0].name,
-        b: p[1].name,
-        c: p[2].name
+        }, [p]);
+    return 0 === g.length ? null : (t = 1 === g.length ? A.intl.formatToPlainString(A.t["Egq+G/"], {
+        a: g[0].name
+    }) : 2 === g.length ? A.intl.formatToPlainString(A.t.LxU9R3, {
+        a: g[0].name,
+        b: g[1].name
+    }) : 3 === g.length ? A.intl.formatToPlainString(A.t.crKXMC, {
+        a: g[0].name,
+        b: g[1].name,
+        c: g[2].name
     }) : A.intl.string(A.t.MvfowF), (0, i.jsx)(s.A, {
         guild: n,
         onDismissed: m,

@@ -1,10 +1,10 @@
 /** chunk id: 176360 params = (module,exports,require) **/
-let i, a;
+let i, l;
 n.d(t, {
     A: () => b
 });
-var l = n(735438),
-    r = n.n(l),
+var a = n(735438),
+    r = n.n(a),
     s = n(311907),
     o = n(506774),
     d = n(73153),
@@ -14,8 +14,8 @@ var l = n(735438),
     h = n(652215),
     _ = n(737045);
 let m = new Set,
-    g = h.XlH.CLOSED,
-    p = !1,
+    p = h.XlH.CLOSED,
+    g = !1,
     E = null,
     I = null,
     f = null,
@@ -35,7 +35,7 @@ function x(e) {
 function v() {
     if (f = u.A.getChannel(), C = u.A.getCategory(), null == f) return !1;
     let e = f.getGuildId();
-    I = E = x(f), null == E[T] && (T = e), a = null != C, i = c.r(f, C), N = null, p = !1, g = h.XlH.CLOSED, m.clear()
+    I = E = x(f), null == E[T] && (T = e), l = null != C, i = c.r(f, C), N = null, g = !1, p = h.XlH.CLOSED, m.clear()
 }
 class y extends s.Ay.Store {
     static displayName = "ChannelSettingsPermissionsStore";
@@ -43,7 +43,7 @@ class y extends s.Ay.Store {
         this.waitFor(u.A, A.A)
     }
     hasChanges() {
-        return p
+        return g
     }
     showNotice() {
         return this.hasChanges()
@@ -61,10 +61,10 @@ class y extends s.Ay.Store {
         return T
     }
     get formState() {
-        return g
+        return p
     }
     get isLockable() {
-        return a
+        return l
     }
     get locked() {
         return i
@@ -92,17 +92,17 @@ let b = new y(d.h, {
         let {
             id: t,
             allow: n,
-            deny: a
-        } = e, l = E?.[t];
-        if (null == l || null == f) return !1;
-        l = {
-            ...l,
+            deny: l
+        } = e, a = E?.[t];
+        if (null == a || null == f) return !1;
+        a = {
+            ...a,
             allow: n,
-            deny: a
+            deny: l
         }, E = {
             ...E,
-            [t]: l
-        }, m.add(t), g = h.XlH.OPEN, p = !r().isEqual(E, I), i = c.r(f, C)
+            [t]: a
+        }, m.add(t), p = h.XlH.OPEN, g = !r().isEqual(E, I), i = c.r(f, C)
     },
     CHANNEL_SETTINGS_PERMISSIONS_SELECT_PERMISSION: function(e) {
         let {
@@ -118,7 +118,7 @@ let b = new y(d.h, {
         u.A.getSection() === h.p_A.PERMISSIONS && v()
     },
     CHANNEL_SETTINGS_CLOSE: function() {
-        g = h.XlH.CLOSED, E = null, I = null, f = null, C = null, p = !1, m.clear(), T = null, N = null
+        p = h.XlH.CLOSED, E = null, I = null, f = null, C = null, g = !1, m.clear(), T = null, N = null
     },
     CHANNEL_UPDATES: function(e) {
         let {
@@ -143,13 +143,13 @@ let b = new y(d.h, {
         return n
     },
     CHANNEL_SETTINGS_PERMISSIONS_SUBMITTING: function() {
-        g = h.XlH.SUBMITTING
+        p = h.XlH.SUBMITTING
     },
     CHANNEL_SETTINGS_PERMISSIONS_SAVE_SUCCESS: function(e) {
         let {
             silent: t
         } = e;
-        t ? g = h.XlH.OPEN : (g = h.XlH.CLOSED, v())
+        t ? p = h.XlH.OPEN : (p = h.XlH.CLOSED, v())
     },
     CHANNEL_SETTINGS_PERMISSIONS_SET_ADVANCED_MODE: function(e) {
         let {

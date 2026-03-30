@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(877624),
-    l = n(397927),
+var l = n(877624),
+    a = n(397927),
     r = n(73153),
     s = n(272355),
     o = n(835095),
@@ -16,8 +16,8 @@ var a = n(877624),
     h = n(881489),
     _ = n(412260),
     m = n(852218),
-    g = n(231265),
-    p = n(979080);
+    p = n(231265),
+    g = n(979080);
 let E = "PremiumServerDriveAnnouncementModal";
 class I extends s.A {
     _initialize() {
@@ -34,7 +34,7 @@ class I extends s.A {
                     if (null == e || null != e.expires_at && Date.parse(e.expires_at) < Date.now()) continue
                 }
                 for (let e of t.marketingComponents)
-                    if (e.component_type === a.C.ANNOUNCEMENT_MODAL) return void this.maybeOpenServerDriveAnnouncementModal(e.id, e.promotion_id, e.properties, !1)
+                    if (e.component_type === l.C.ANNOUNCEMENT_MODAL) return void this.maybeOpenServerDriveAnnouncementModal(e.id, e.promotion_id, e.properties, !1)
             }
     };
     handleActivePromotionsFetchSuccess = e => {
@@ -49,18 +49,18 @@ class I extends s.A {
         } = e;
         null != t && this.maybeShowAnnouncementModalFromPromotions(Object.values(_.A.promotionsByType[m.pt.MARKETING_MOMENT]))
     };
-    maybeOpenServerDriveAnnouncementModal = async (e, t, a, r) => {
-        if ((0, l.kBI)(E)) return !1;
-        let s = (0, p.H)({
+    maybeOpenServerDriveAnnouncementModal = async (e, t, l, r) => {
+        if ((0, a.kBI)(E)) return !1;
+        let s = (0, g.H)({
             promotionId: t,
-            content: a,
+            content: l,
             isPreview: r
         });
-        if (null != s) return (!1 !== r || s?.contentIdentifier !== "summer_bogo_content" || !!await (0, g.C)()) && ((0, l.mMO)(async () => {
+        if (null != s) return (!1 !== r || s?.contentIdentifier !== "summer_bogo_content" || !!await (0, p.C)()) && ((0, a.mMO)(async () => {
             let {
-                default: a
+                default: l
             } = await Promise.resolve().then(n.bind(n, 979080));
-            return n => (0, i.jsx)(a, {
+            return n => (0, i.jsx)(l, {
                 renderModalProps: n,
                 componentId: e,
                 promotionId: t,

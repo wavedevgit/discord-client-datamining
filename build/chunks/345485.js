@@ -1,11 +1,11 @@
 /** chunk id: 345485 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(627968);
 n(64700);
-var a = n(110259),
-    l = n(417597),
+var l = n(110259),
+    a = n(417597),
     r = n(342494),
     s = n(139286),
     o = n(997509),
@@ -17,25 +17,25 @@ var a = n(110259),
     _ = n(985018),
     m = n(330766);
 
-function g(e) {
+function p(e) {
     let {
         guildId: t,
         markAsDismissed: n,
-        targetElementRef: g
-    } = e, p = (0, l.bG)([c.A, u.default], () => {
+        targetElementRef: p
+    } = e, g = (0, a.bG)([c.A, u.default], () => {
         let e = u.default.getCurrentUser(),
             n = c.A.getGuild(t);
         return null != n && (0, d.bM)(n, e)
     });
     return (0, s.A)({
-        type: a.ImpressionTypes.POPOUT,
-        name: a.ImpressionNames.ENABLE_CREATOR_MONETIZATION_GUILD_HEADER_UPSELL,
+        type: l.ImpressionTypes.POPOUT,
+        name: l.ImpressionNames.ENABLE_CREATOR_MONETIZATION_GUILD_HEADER_UPSELL,
         properties: {
             guild_id: t,
-            is_owner: p
+            is_owner: g
         }
     }), (0, i.jsx)(r.AM, {
-        targetElementRef: g,
+        targetElementRef: p,
         title: _.intl.string(_.t.C0m4rQ),
         body: _.intl.string(_.t.zOHfEX),
         graphic: {

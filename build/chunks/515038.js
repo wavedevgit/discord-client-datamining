@@ -24,8 +24,8 @@ var a = n(627968),
     A = n(720875),
     C = n(713457),
     y = n(419367),
-    T = n(985018),
-    S = n(582251);
+    S = n(985018),
+    T = n(582251);
 let E = async () => await n.e("40119").then(n.t.bind(n, 718698, 19));
 
 function N(e) {
@@ -54,28 +54,28 @@ function N(e) {
     }), W = t.userStatus?.completedAt != null, H = t.userStatus?.claimedAt != null, K = (0, _.ks)(t.config), z = (0, _._Z)(t.config), {
         completedRatio: $,
         completedRatioDisplay: q
-    } = (0, p.O9)(t), Q = (0, x.gj)(t, w, m.Ob.QuestHome, D), Y = i.useMemo(() => H && K ? T.intl.format(T.t["8Op4c4"], {
+    } = (0, p.O9)(t), Q = (0, x.gj)(t, w, m.Ob.QuestHome, D), Y = i.useMemo(() => H && K ? S.intl.format(S.t["8Op4c4"], {
         balanceHook: () => (0, a.jsxs)(I, {
             questId: t.id,
             children: [(0, a.jsx)(h.A, {
                 shouldUseThemeColor: !0,
-                className: S.Kq,
+                className: T.Kq,
                 customSize: 14
             }), z]
         }, t.id)
     }) : H ? (0, a.jsx)(I, {
         questId: t.id,
         children: P
-    }) : K ? T.intl.format(T.t.ro1sze, {
+    }) : K ? S.intl.format(S.t.ro1sze, {
         balanceHook: () => (0, a.jsxs)(I, {
             questId: t.id,
             children: [(0, a.jsx)(h.A, {
                 shouldUseThemeColor: !0,
-                className: S.Kq,
+                className: T.Kq,
                 customSize: 14
             }), z]
         }, t.id)
-    }) : T.intl.format(T.t["0IUT4Y"], {
+    }) : S.intl.format(S.t["0IUT4Y"], {
         rewardWithArticleHook: () => (0, a.jsx)(I, {
             questId: t.id,
             children: M
@@ -84,31 +84,31 @@ function N(e) {
         if (null != Q) return (0, a.jsx)(d.Text, {
             variant: "text-sm/medium",
             color: "text-muted",
-            className: S.h_,
+            className: T.h_,
             children: Q
         })
     }, [Q]), X = (0, o.bG)([u.A], () => u.A.useReducedMotion);
     return (0, a.jsxs)("div", {
-        className: S.kL,
+        className: T.kL,
         ref: D,
         children: [(0, a.jsxs)(r.animated.div, {
             style: {
                 maxHeight: V.to([0, 1], [104, (B ?? 0) + 12])
             },
-            className: S.z,
+            className: T.z,
             children: [(0, a.jsx)(A.A, {
                 showPlaceholder: !O,
                 width: 80,
                 height: 80,
                 children: (0, a.jsxs)("div", {
-                    className: S.c6,
+                    className: T.c6,
                     children: [!H && W && (0, a.jsx)("div", {
-                        className: S.Nz
+                        className: T.Nz
                     }), L ? (0, a.jsxs)("div", {
-                        className: S.Tr,
+                        className: T.Tr,
                         children: [W && (0, a.jsx)(d.akl, {
                             importData: E,
-                            className: S.t_,
+                            className: T.t_,
                             loop: !1,
                             autoplay: !1,
                             shouldAnimate: !X
@@ -130,7 +130,7 @@ function N(e) {
                         quest: t,
                         autoplay: s,
                         questContent: n,
-                        className: S.eB,
+                        className: T.eB,
                         onLoadComplete: F,
                         lazyLoad: !0,
                         sourceQuestContent: w
@@ -138,27 +138,27 @@ function N(e) {
                 })
             }), (0, a.jsxs)("div", {
                 ref: U,
-                className: l()(S.FS, {
-                    [S.wq]: !G
+                className: l()(T.FS, {
+                    [T.wq]: !G
                 }),
                 children: [(0, a.jsx)(d.Heading, {
                     variant: "eyebrow",
                     color: "text-brand",
-                    className: S.G$,
-                    children: T.intl.format(T.t.EAYZAr, {
+                    className: T.G$,
+                    children: S.intl.format(S.t.EAYZAr, {
                         questName: t.config.messages.questName
                     })
                 }), (0, a.jsx)(d.Text, {
                     variant: "text-md/semibold",
                     color: "text-strong",
-                    className: S.wx,
+                    className: T.wx,
                     children: Y
                 }), J]
             }), G && (0, a.jsx)(r.animated.div, {
                 style: {
                     opacity: (0, b.a)(V.to([0, 1], [1, 0]))
                 },
-                className: S.hS
+                className: T.hS
             })]
         }), (0, a.jsx)(C.A, {
             quest: t,
@@ -179,7 +179,7 @@ let I = i.memo(function(e) {
         variant: "text-md/semibold",
         color: "text-strong",
         tag: "span",
-        className: S.wx,
+        className: T.wx,
         children: n
     }, `${t}_reward`)
 })

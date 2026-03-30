@@ -1,7 +1,7 @@
 /** chunk id: 699443 params = (module,exports,require) **/
 r.d(t, {
-    Gn: () => i,
-    WF: () => s,
+    Gn: () => s,
+    WF: () => i,
     a1: () => n,
     s: () => l
 });
@@ -52,7 +52,7 @@ let n = () => (0, a.jsxs)("svg", {
             })
         })]
     }),
-    i = () => (0, a.jsxs)("svg", {
+    s = () => (0, a.jsxs)("svg", {
         width: "20",
         height: "20",
         viewBox: "0 0 20 20",
@@ -98,7 +98,7 @@ let n = () => (0, a.jsxs)("svg", {
             })
         })]
     }),
-    s = () => (0, a.jsxs)("svg", {
+    i = () => (0, a.jsxs)("svg", {
         width: "20",
         height: "20",
         viewBox: "0 0 20 20",

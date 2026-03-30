@@ -3,9 +3,9 @@ n.d(t, {
     A: () => P
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(735438),
-    r = n.n(l),
+    l = n(64700),
+    a = n(735438),
+    r = n.n(a),
     s = n(311907),
     o = n(397927),
     d = n(157559),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(70730),
     _ = n(777426),
     m = n(976860),
-    g = n(734057),
-    p = n(430452),
+    p = n(734057),
+    g = n(430452),
     E = n(994500),
     I = n(427262),
     f = n(607272),
@@ -34,27 +34,27 @@ function L(e) {
     let {
         user: t,
         applicationId: n,
-        isGameRelationship: l,
+        isGameRelationship: a,
         onSelect: r
-    } = e, A = a.useCallback(() => {
+    } = e, A = l.useCallback(() => {
         c.A.openPrivateChannel({
             recipientIds: t.id,
             joinCall: !0
         })
-    }, [t.id]), h = a.useCallback(() => {
+    }, [t.id]), h = l.useCallback(() => {
         c.A.openPrivateChannel({
             recipientIds: t.id,
             joinCall: !0,
             joinCallVideo: !0
         })
-    }, [t.id]), _ = a.useCallback(() => {
+    }, [t.id]), _ = l.useCallback(() => {
         f.A.removeFriend({
             userId: t.id,
-            applicationId: l ? n : null,
+            applicationId: a ? n : null,
             location: "Friends"
         })
-    }, [n, l, t.id]), m = a.useCallback(() => {
-        let e = l ? b.intl.string(b.t.RLcE6x) : b.intl.string(b.t.cvSt1J);
+    }, [n, a, t.id]), m = l.useCallback(() => {
+        let e = a ? b.intl.string(b.t.RLcE6x) : b.intl.string(b.t.cvSt1J);
         d.A.show({
             title: b.intl.formatToPlainString(b.t.fPLvZd, {
                 name: I.Ay.getName(t)
@@ -67,14 +67,14 @@ function L(e) {
             cancelText: b.intl.string(b.t["ETE/oC"]),
             onConfirm: _
         })
-    }, [_, l, t]), g = (0, s.bG)([p.Ay], () => p.Ay.supports(y.O5.VIDEO)), E = t.isProvisional, C = l ? b.intl.string(b.t.RLcE6x) : b.intl.string(b.t.cvSt1J);
+    }, [_, a, t]), p = (0, s.bG)([g.Ay], () => g.Ay.supports(y.O5.VIDEO)), E = t.isProvisional, C = a ? b.intl.string(b.t.RLcE6x) : b.intl.string(b.t.cvSt1J);
     return (0, i.jsxs)(o.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "friend-row",
         "aria-label": b.intl.string(b.t.liqwPJ),
         onClose: u.Z_,
         onSelect: r,
-        children: [!E && g ? (0, i.jsx)(o.Drp, {
+        children: [!E && p ? (0, i.jsx)(o.Drp, {
             id: "start-video-call",
             label: b.intl.string(b.t.oCqlGG),
             action: h
@@ -90,8 +90,8 @@ function L(e) {
         })]
     })
 }
-class R extends a.PureComponent {
-    peopleListItemRef = a.createRef();
+class R extends l.PureComponent {
+    peopleListItemRef = l.createRef();
     state = {
         isActiveRow: !1
     };
@@ -106,7 +106,7 @@ class R extends a.PureComponent {
             user: t
         } = this.props;
         e.stopPropagation();
-        let n = r().find(g.A.getMutablePrivateChannels(), e => e.type === x.rbe.DM && e.getRecipientId() === t.id);
+        let n = r().find(p.A.getMutablePrivateChannels(), e => e.type === x.rbe.DM && e.getRecipientId() === t.id);
         null != n ? (0, m.pX)(x.BVt.CHANNEL(x.ME, n.id)) : c.A.openPrivateChannel({
             recipientIds: t.id
         })
@@ -115,12 +115,12 @@ class R extends a.PureComponent {
         let {
             user: t,
             isGameRelationship: n,
-            applicationId: a
+            applicationId: l
         } = this.props;
         (0, u.jA)(e, e => (0, i.jsx)(L, {
             ...e,
             user: t,
-            applicationId: a,
+            applicationId: l,
             isGameRelationship: n
         }), {
             onClose: () => {
@@ -137,50 +137,50 @@ class R extends a.PureComponent {
             user: e,
             isFocused: t,
             activities: n,
-            applicationStream: a,
-            status: l,
+            applicationStream: l,
+            status: a,
             isMobile: r,
             isVR: s,
             isGameRelationship: d,
             giftIntentType: c,
             hasFriendAnniversarySection: m,
-            sectionIndex: g
+            sectionIndex: p
         } = this.props, {
-            isActiveRow: p
+            isActiveRow: g
         } = this.state;
-        return (0, h.p)(A.A.FRIENDS_LIST) && c === v.np.FRIEND_ANNIVERSARY && m && 0 === g ? (0, i.jsx)(_.A, {
+        return (0, h.p)(A.A.FRIENDS_LIST) && c === v.np.FRIEND_ANNIVERSARY && m && 0 === p ? (0, i.jsx)(_.A, {
             ref: this.peopleListItemRef,
             isFocused: t,
-            isActive: p,
+            isActive: g,
             recipientUser: e,
-            onOtherHover: () => p ? null : (0, u.Z_)(),
+            onOtherHover: () => g ? null : (0, u.Z_)(),
             onClick: this.handleOpenPrivateChannel,
             giftIntentType: c,
-            status: l,
+            status: a,
             activities: n,
-            applicationStream: a,
+            applicationStream: l,
             isMobile: r,
             isVR: s,
             isGameRelationship: d
         }) : (0, i.jsx)(T.A, {
             ref: this.peopleListItemRef,
             isFocused: t,
-            isActive: p,
+            isActive: g,
             user: e,
-            onOtherHover: () => p ? null : (0, u.Z_)(),
+            onOtherHover: () => g ? null : (0, u.Z_)(),
             onClick: this.handleOpenPrivateChannel,
             children: t => (0, i.jsxs)("div", {
                 className: O.a4,
                 children: [(0, i.jsx)(S.A, {
                     user: e,
-                    status: l,
+                    status: a,
                     isMobile: r,
                     isVR: s,
                     subText: (0, i.jsx)(N.A, {
                         hovered: t,
                         activities: n,
-                        applicationStream: a,
-                        status: l,
+                        applicationStream: l,
+                        status: a,
                         user: e,
                         userIgnored: E.A.isIgnored(e.id)
                     }),

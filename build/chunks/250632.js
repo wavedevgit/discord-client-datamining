@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    l = n.n(a),
+var l = n(503698),
+    a = n.n(l),
     r = n(235986),
     s = n(957358),
     o = n(505806),
@@ -15,7 +15,7 @@ let u = function(e) {
     let {
         title: t,
         className: n,
-        color: a,
+        color: l,
         animate: u,
         getHistoricalTotalBytes: A
     } = e;
@@ -24,7 +24,7 @@ let u = function(e) {
         children: (e, o, A) => {
             var h;
             return (0, i.jsx)("div", {
-                className: l()(c.dm, n),
+                className: a()(c.dm, n),
                 children: (0, i.jsxs)(r.A, {
                     align: r.A.Align.CENTER,
                     children: [(0, i.jsxs)(r.A, {
@@ -48,7 +48,7 @@ let u = function(e) {
                             maxValue: Math.max(Math.max.apply(null, e), 1e3),
                             className: c.CD,
                             updateInterval: o,
-                            color: a,
+                            color: l,
                             numUpdatesToShow: A,
                             animate: u,
                             pixelWidth: 600,

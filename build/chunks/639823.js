@@ -3,8 +3,8 @@ n.d(t, {
     A: () => E
 });
 var i = n(451988),
-    a = n(73153),
-    l = n(956793),
+    l = n(73153),
+    a = n(956793),
     r = n(272355),
     s = n(616356),
     o = n(734057),
@@ -15,33 +15,33 @@ var i = n(451988),
     h = n(723702),
     _ = n(652215);
 let m = new i.Ep,
-    g = new i.Ep;
-class p extends r.A {
+    p = new i.Ep;
+class g extends r.A {
     _initialize() {
-        a.h.subscribe("IDLE", this.handleIdleUpdate)
+        l.h.subscribe("IDLE", this.handleIdleUpdate)
     }
     _terminate() {
-        m.stop(), g.stop(), a.h.unsubscribe("IDLE", this.handleIdleUpdate)
+        m.stop(), p.stop(), l.h.unsubscribe("IDLE", this.handleIdleUpdate)
     }
     handleIdleUpdate() {
         let e = c.A.getIdleSince();
         if (!h.isPlatformEmbedded) return;
-        for (let e of (m.stop(), g.stop(), s.A.getAllActiveStreams()))
+        for (let e of (m.stop(), p.stop(), s.A.getAllActiveStreams()))
             if (e.state !== _.XYD.ENDED) return;
         if (null == e) return;
         let t = u.A.getChannelId();
         if (null == t) return;
-        g.start(18e6, () => {
-            l.default.selectVoiceChannel(null)
+        p.start(18e6, () => {
+            a.default.selectVoiceChannel(null)
         });
         let n = d.A.getGuild(u.A.getGuildId());
         if (null == n || null == n.afkChannelId || n.afkChannelId === t || null == n.afkTimeout) return;
         let i = o.A.getChannel(t);
         null == i || i.isGuildStageVoice() || m.start(e + n.afkTimeout * A.A.Millis.SECOND - Date.now(), () => {
-            null != (n = d.A.getGuild(u.A.getGuildId())) && null != n.afkChannelId && l.default.selectVoiceChannel(n.afkChannelId, !1, !1, {
+            null != (n = d.A.getGuild(u.A.getGuildId())) && null != n.afkChannelId && a.default.selectVoiceChannel(n.afkChannelId, !1, !1, {
                 bypassIdleUpdate: !0
             })
         })
     }
 }
-let E = new p
+let E = new g

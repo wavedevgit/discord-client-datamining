@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(397927),
-    l = n(49229),
+var l = n(397927),
+    a = n(49229),
     r = n(688810),
     s = n(38910),
     o = n(657331),
@@ -21,11 +21,11 @@ function m(e) {
         user: t,
         nickname: n,
         status: m,
-        isFocused: g
+        isFocused: p
     } = e, {
-        analyticsLocations: p
+        analyticsLocations: g
     } = (0, r.Ay)(), E = e => {
-        e?.stopPropagation(), l.A.addRelationship({
+        e?.stopPropagation(), a.A.addRelationship({
             userId: t.id,
             context: {
                 location: "Friends"
@@ -37,22 +37,22 @@ function m(e) {
         e?.stopPropagation(), s.A.ignore(t.id)
     }, f = m === A.clD.OFFLINE ? A.clD.UNKNOWN : m;
     return (0, i.jsx)(c.A, {
-        isFocused: g,
+        isFocused: p,
         user: t,
         onClick: () => (0, o.openUserProfileModal)({
             userId: t.id,
-            sourceAnalyticsLocations: p
+            sourceAnalyticsLocations: g
         }),
         children: e => {
-            let l = (0, i.jsxs)(i.Fragment, {
+            let a = (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(d.A, {
-                    icon: a.A9s,
+                    icon: l.A9s,
                     actionType: d.A.ActionTypes.ACCEPT,
                     tooltip: h.intl.string(h.t.Zcibdf),
                     onClick: E,
                     shouldHighlight: e
                 }), (0, i.jsx)(d.A, {
-                    icon: a.PGe,
+                    icon: l.PGe,
                     actionType: d.A.ActionTypes.DENY,
                     tooltip: h.intl.string(h.t.xuio0C),
                     onClick: I,
@@ -69,7 +69,7 @@ function m(e) {
                     className: _.__invalid_userInfo
                 }), (0, i.jsx)("div", {
                     className: _.o,
-                    children: l
+                    children: a
                 })]
             })
         }

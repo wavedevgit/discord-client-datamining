@@ -3,9 +3,9 @@ n.d(t, {
     A: () => v
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    r = n.n(a),
     s = n(110259),
     o = n(311907),
     d = n(3203),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(139286),
     _ = n(414711),
     m = n(187696),
-    g = n(723690),
-    p = n(21119),
+    p = n(723690),
+    g = n(21119),
     E = n(994500),
     I = n(954571),
     f = n(45787),
@@ -30,7 +30,7 @@ var S = n(985018),
 function v(e) {
     let {
         ref: t,
-        isFocused: l,
+        isFocused: a,
         isActive: v,
         status: y,
         activities: b,
@@ -60,8 +60,8 @@ function v(e) {
         },
         location: "gift-intent-friend-row"
     });
-    a.useEffect(() => {
-        let e = p.A.getUserAffinity(j.id);
+    l.useEffect(() => {
+        let e = g.A.getUserAffinity(j.id);
         (0, h.x)({
             name: s.ImpressionNames.GIFT_INTENT_ACTION_BUTTON,
             type: s.ImpressionTypes.VIEW,
@@ -73,7 +73,7 @@ function v(e) {
     }, [j, w]);
     let B = e => {
         e.stopPropagation();
-        let t = p.A.getUserAffinity(j.id);
+        let t = g.A.getUserAffinity(j.id);
         I.default.track(N.HAw.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
             gift_intent_type: w,
             affinity: t?.dmProbability,
@@ -82,7 +82,7 @@ function v(e) {
     };
     return (0, i.jsx)(_.A, {
         ref: t,
-        isFocused: l,
+        isFocused: a,
         isActive: v,
         user: j,
         onOtherHover: D,
@@ -90,7 +90,7 @@ function v(e) {
         height: 72,
         children: e => (0, i.jsxs)("div", {
             className: r()(x.a4, x.Z$),
-            children: [(0, i.jsx)(g.A, {
+            children: [(0, i.jsx)(p.A, {
                 className: x.Cv,
                 user: j,
                 status: y,

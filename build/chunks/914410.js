@@ -4,8 +4,8 @@ r.d(t, {
     fh: () => m,
     qP: () => u
 });
-var a, n, i = r(627968),
-    s = r(64700),
+var a, n, s = r(627968),
+    i = r(64700),
     l = r(503698),
     o = r.n(l);
 r(284009);
@@ -23,39 +23,39 @@ let _ = e => {
         override: u,
         glowing: m = !0,
         labelledBy: _
-    } = e, p = null != u && "unset" === l, f = (0, d.Ay)(), b = u?.[f] ?? u?.default, h = s.useMemo(() => (t - r) / (a - r) * 100, [t, r, a]), g = t === r, x = {
+    } = e, p = null != u && "unset" === l, f = (0, d.Ay)(), h = u?.[f] ?? u?.default, b = i.useMemo(() => (t - r) / (a - r) * 100, [t, r, a]), x = t === r, g = {
         ...p ? {
-            "--custom-background": b?.background,
-            "--custom-gradient-start": b?.gradientStart,
-            "--custom-gradient-end": b?.gradientEnd,
-            "--custom-gradient-glow": b?.gradientEnd
+            "--custom-background": h?.background,
+            "--custom-gradient-start": h?.gradientStart,
+            "--custom-gradient-end": h?.gradientEnd,
+            "--custom-gradient-glow": h?.gradientEnd
         } : {},
         ...!m && {
             "--custom-gradient-glow": "transparent"
         }
     };
-    return (0, i.jsx)("div", {
+    return (0, s.jsx)("div", {
         className: o()(c.progressContainer, c[n], c[l]),
-        style: x,
-        children: (0, i.jsxs)("div", {
+        style: g,
+        children: (0, s.jsxs)("div", {
             className: o()(c.progress, {
-                [c.empty]: g
+                [c.empty]: x
             }),
             style: {
-                width: `${h}%`
+                width: `${b}%`
             },
             role: "meter",
             "aria-valuenow": t,
             "aria-valuemin": r,
             "aria-valuemax": a,
             "aria-labelledby": _,
-            children: [(0, i.jsx)("div", {
+            children: [(0, s.jsx)("div", {
                 className: o()(c.glow, {
-                    [c.empty]: g
+                    [c.empty]: x
                 })
-            }), (0, i.jsx)("div", {
+            }), (0, s.jsx)("div", {
                 className: o()(c.bar, c[l], {
-                    [c.empty]: g
+                    [c.empty]: x
                 })
             })]
         })

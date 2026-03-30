@@ -6,10 +6,10 @@ n.d(t, {
     sn: () => s,
     vM: () => c
 });
-var i, a, l = n(103640),
+var i, l, a = n(103640),
     r = n(985018),
     s = ((i = {})[i.ENABLE_POGGERMODE = 0] = "ENABLE_POGGERMODE", i[i.DISABLE_POGGERMODE = 1] = "DISABLE_POGGERMODE", i[i.PING_SOMEONE = 2] = "PING_SOMEONE", i[i.PING_ME = 3] = "PING_ME", i[i.COMBO_MULTI_LEVEL_1 = 4] = "COMBO_MULTI_LEVEL_1", i[i.COMBO_MULTI_LEVEL_2 = 5] = "COMBO_MULTI_LEVEL_2", i[i.COMBO_MULTI_LEVEL_3 = 6] = "COMBO_MULTI_LEVEL_3", i[i.COMBO_MULTI_LEVEL_4 = 7] = "COMBO_MULTI_LEVEL_4", i[i.TOTAL_SCORE_LEVEL_1 = 8] = "TOTAL_SCORE_LEVEL_1", i[i.TOTAL_SCORE_LEVEL_2 = 9] = "TOTAL_SCORE_LEVEL_2", i[i.TOTAL_SCORE_LEVEL_3 = 10] = "TOTAL_SCORE_LEVEL_3", i[i.TOTAL_SCORE_LEVEL_4 = 11] = "TOTAL_SCORE_LEVEL_4", i[i.TOTAL_SCORE_LEVEL_5 = 12] = "TOTAL_SCORE_LEVEL_5", i[i.VISITOR_100 = 13] = "VISITOR_100", i[i.CUSTOMIZE_CONFETTI = 14] = "CUSTOMIZE_CONFETTI", i[i.MORE = 15] = "MORE", i[i.COMBO_VALUE_LEVEL_1 = 16] = "COMBO_VALUE_LEVEL_1", i[i.COMBO_VALUE_LEVEL_2 = 17] = "COMBO_VALUE_LEVEL_2", i[i.COMBO_VALUE_LEVEL_3 = 18] = "COMBO_VALUE_LEVEL_3", i[i.COMBO_VALUE_LEVEL_4 = 19] = "COMBO_VALUE_LEVEL_4", i),
-    o = ((a = {})[a.COMMON = 0] = "COMMON", a[a.UNCOMMON = 1] = "UNCOMMON", a[a.RARE = 2] = "RARE", a[a.EPIC = 3] = "EPIC", a[a.LEGENDARY = 4] = "LEGENDARY", a);
+    o = ((l = {})[l.COMMON = 0] = "COMMON", l[l.UNCOMMON = 1] = "UNCOMMON", l[l.RARE = 2] = "RARE", l[l.EPIC = 3] = "EPIC", l[l.LEGENDARY = 4] = "LEGENDARY", l);
 let d = {
     0: {
         id: 0,
@@ -101,7 +101,7 @@ let d = {
         description: () => r.intl.string(r.t.YtKoSd),
         rarity: 3,
         hideDescriptionUntilUnlock: !0,
-        checkUnlock: e => 430 === (0, l.RL)(e)
+        checkUnlock: e => 430 === (0, a.RL)(e)
     },
     9: {
         id: 9,
@@ -109,7 +109,7 @@ let d = {
         description: () => r.intl.string(r.t.QKxjeQ),
         rarity: 3,
         hideDescriptionUntilUnlock: !0,
-        checkUnlock: e => 555 === (0, l.RL)(e)
+        checkUnlock: e => 555 === (0, a.RL)(e)
     },
     10: {
         id: 10,
@@ -117,7 +117,7 @@ let d = {
         description: () => r.intl.string(r.t["7tuql7"]),
         rarity: 3,
         hideDescriptionUntilUnlock: !0,
-        checkUnlock: e => 898 === (0, l.RL)(e)
+        checkUnlock: e => 898 === (0, a.RL)(e)
     },
     11: {
         id: 11,
@@ -125,7 +125,7 @@ let d = {
         description: () => r.intl.string(r.t.okzLOT),
         rarity: 4,
         hideDescriptionUntilUnlock: !0,
-        checkUnlock: e => 1337 === (0, l.RL)(e)
+        checkUnlock: e => 1337 === (0, a.RL)(e)
     },
     12: {
         id: 12,
@@ -133,7 +133,7 @@ let d = {
         description: () => r.intl.string(r.t.KSzHjj),
         rarity: 4,
         hideDescriptionUntilUnlock: !0,
-        checkUnlock: e => 2048 === (0, l.RL)(e)
+        checkUnlock: e => 2048 === (0, a.RL)(e)
     },
     16: {
         id: 16,

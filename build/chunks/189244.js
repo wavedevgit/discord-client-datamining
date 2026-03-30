@@ -31,9 +31,9 @@ function f() {
         A = e?.avatarDecoration?.skuId,
         C = e?.collectibles?.nameplate?.skuId,
         y = null != A ? b.find(e => e.skuId === A) ?? null : null,
-        T = null != C ? j.find(e => e.skuId === C) ?? null : null,
-        S = (0, i.bG)([o.A], () => o.A.getProduct(y?.skuId)),
-        E = (0, i.bG)([o.A], () => o.A.getProduct(T?.skuId)),
+        S = null != C ? j.find(e => e.skuId === C) ?? null : null,
+        T = (0, i.bG)([o.A], () => o.A.getProduct(y?.skuId)),
+        E = (0, i.bG)([o.A], () => o.A.getProduct(S?.skuId)),
         N = (0, i.bG)([r.A], () => r.A.fontSize),
         I = (0, i.bG)([r.A], () => r.A.messageGroupSpacing),
         k = h.Xi.useSetting();
@@ -74,7 +74,7 @@ function f() {
                 children: ["Client Theme ID:", " ", null != f ? g.ag[f]?.getName() : "None"]
             }), (0, a.jsxs)(l.Text, {
                 variant: "text-md/normal",
-                children: ["Avatar Decoration: ", S?.name ?? "None"]
+                children: ["Avatar Decoration: ", T?.name ?? "None"]
             }), (0, a.jsxs)(l.Text, {
                 variant: "text-md/normal",
                 children: ["Nameplate: ", E?.name ?? "None"]

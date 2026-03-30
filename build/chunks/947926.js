@@ -25,8 +25,8 @@ var a = n(627968),
     A = n(139210),
     C = n(568329),
     y = n(818276),
-    T = n(742860),
-    S = n(783569),
+    S = n(742860),
+    T = n(783569),
     E = n(963713),
     N = n(717695),
     I = n(899592),
@@ -158,7 +158,7 @@ function L(e) {
                         [D.E$]: Q,
                         [D.KA]: W
                     }),
-                    children: (0, a.jsx)(S.R, {
+                    children: (0, a.jsx)(T.R, {
                         springConfig: en,
                         isExpanded: Q,
                         children: (0, a.jsx)(C.oK, {
@@ -180,7 +180,7 @@ function L(e) {
                                     ref: eh,
                                     className: D.Qs,
                                     overlayRef: ex
-                                }, K ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, a.jsx)(T.A, {
+                                }, K ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, a.jsx)(S.A, {
                                     className: D.Qs,
                                     overlayRef: ex,
                                     ref: em,

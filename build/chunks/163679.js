@@ -45,8 +45,8 @@ let C = function(e) {
     let {
         transitionState: t,
         onClose: n
-    } = e, [u, x] = i.useState(null), [p, C] = i.useState(!0), [y, T] = i.useState(null), [S, E] = i.useState(!1), N = i.useCallback(async () => {
-        C(!0), T(null);
+    } = e, [u, x] = i.useState(null), [p, C] = i.useState(!0), [y, S] = i.useState(null), [T, E] = i.useState(!1), N = i.useCallback(async () => {
+        C(!0), S(null);
         try {
             let e = await (0, c.$R)();
             if (null == e) return void n();
@@ -66,7 +66,7 @@ let C = function(e) {
                 }
             })
         } catch {
-            T(v.intl.string(f.default["/f++3g"]))
+            S(v.intl.string(f.default["/f++3g"]))
         } finally {
             C(!1)
         }
@@ -81,7 +81,7 @@ let C = function(e) {
                 };
                 await (0, c.Rt)(t), N()
             } catch (e) {
-                T(v.intl.string(f.default["+QRSxc"]))
+                S(v.intl.string(f.default["+QRSxc"]))
             } finally {
                 E(!1)
             }
@@ -156,7 +156,7 @@ let C = function(e) {
                     }), null === y && null != u && (0, a.jsx)(A, {
                         task: u,
                         handleSubmit: I,
-                        disabled: S
+                        disabled: T
                     })]
                 })
             })

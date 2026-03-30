@@ -3,9 +3,9 @@ n.d(t, {
     A: () => y
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    r = n.n(a),
     s = n(877227),
     o = n(311907),
     d = n(319354),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(418842),
     _ = n(309010),
     m = n(723702),
-    g = n(851109),
-    p = n(394953),
+    p = n(851109),
+    g = n(394953),
     E = n(355216),
     I = n(596540),
     f = n(652215),
@@ -42,10 +42,10 @@ function v(e) {
     let {
         onClick: t,
         selectedOverride: n = !1,
-        popoutProps: l,
+        popoutProps: a,
         ref: s,
         focusSectionProps: o
-    } = e, [_, g] = a.useState(!1), I = (0, p.lI)(), f = n || I, v = n || f, y = (0, i.jsx)(u.XFE, {
+    } = e, [_, p] = l.useState(!1), I = (0, g.lI)(), f = n || I, v = n || f, y = (0, i.jsx)(u.XFE, {
         className: T.Kk,
         color: _ || v ? u.LU0.colors.ICON_STRONG : u.LU0.colors.ICON_MUTED,
         size: "sm"
@@ -69,15 +69,15 @@ function v(e) {
                 innerRef: s,
                 className: T.OV,
                 ...o,
-                ...l,
+                ...a,
                 onMouseEnter: () => {
-                    g(!0)
+                    p(!0)
                 },
                 onMouseLeave: () => {
-                    g(!1)
+                    p(!1)
                 },
                 onClick: () => {
-                    t?.(), l?.onClick?.()
+                    t?.(), a?.onClick?.()
                 },
                 children: [(0, i.jsx)("div", {
                     className: r()(T.P0, null),
@@ -100,28 +100,28 @@ function v(e) {
 function y() {
     let {
         focusSectionProps: e
-    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, t = a.useRef(null), {
+    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, t = l.useRef(null), {
         notificationCenterVariant: n
-    } = (0, g.X8)({
+    } = (0, p.X8)({
         location: "NotificationsInboxButton"
-    }), l = (0, o.bG)([_.A], () => _.A.getChannelId()), r = a.useMemo(() => f.BVt.CHANNEL(f.gNP, l ?? void 0), [l]), d = (0, E.HN)();
-    return n === g.U5.SIDEBAR ? (0, i.jsx)(v, {
+    }), a = (0, o.bG)([_.A], () => _.A.getChannelId()), r = l.useMemo(() => f.BVt.CHANNEL(f.gNP, a ?? void 0), [a]), d = (0, E.HN)();
+    return n === p.U5.SIDEBAR ? (0, i.jsx)(v, {
         onClick: () => {
             d(), (0, s.pX)(r)
         },
         focusSectionProps: e
-    }) : n === g.U5.POPOUT ? (0, i.jsx)(I.A, {
+    }) : n === p.U5.POPOUT ? (0, i.jsx)(I.A, {
         targetElementRef: t,
         popoutPosition: "bottom",
         popoutAlign: "left",
         spacing: 2,
-        children: (n, a, l) => (0, i.jsx)(v, {
+        children: (n, l, a) => (0, i.jsx)(v, {
             ref: t,
-            selectedOverride: a,
+            selectedOverride: l,
             onClick: () => {
                 d(), n()
             },
-            popoutProps: l,
+            popoutProps: a,
             focusSectionProps: e
         })
     }) : null

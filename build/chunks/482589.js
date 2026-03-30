@@ -4,8 +4,8 @@ r.d(t, {
 });
 var a = r(64700),
     n = r(554146),
-    i = r(771781),
-    s = r(367727),
+    s = r(771781),
+    i = r(367727),
     l = r(320118),
     o = r(49999);
 
@@ -16,7 +16,7 @@ function d() {
         } = (0, l.F)(),
         r = t?.last_granted_reward ?? null;
     a.useEffect(() => {
-        e || (0, i.dD)(n.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER) || null != r && (0, s.qr)(n.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER, r, {
+        e || (0, s.dD)(n.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER) || null != r && (0, i.qr)(n.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER, r, {
             dismissAction: o.i.INDIRECT_ACTION
         })
     }, [e, r])

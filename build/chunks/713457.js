@@ -24,8 +24,8 @@ var a = n(627968),
     A = n(971649),
     C = n(651892),
     y = n(710969),
-    T = n(901406),
-    S = n(792620),
+    S = n(901406),
+    T = n(792620),
     E = n(814793),
     N = n(201805),
     I = n(212614),
@@ -92,7 +92,7 @@ function U(e) {
     return {
         externalLinkCta: (0, C.wr)(t),
         handleOpenExternalLink: i.useCallback(() => {
-            (0, T.pu)(t, {
+            (0, S.pu)(t, {
                 content: x.uF.QUEST_HOME_DESKTOP,
                 ctaContent: j.Cy.OPEN_GAME_LINK,
                 impressionId: a,
@@ -209,7 +209,7 @@ function F(e) {
         questContent: n,
         onReceiveErrorHints: _,
         contentPosition: A,
-        rowIndex: T,
+        rowIndex: S,
         sourceQuestContent: U
     } = e, F = (0, s.bG)([c.A], () => c.A.useReducedMotion), V = (0, N.Xf)({
         useReducedMotion: F
@@ -226,7 +226,7 @@ function F(e) {
         isClaiming: h.A.isClaimingReward(t.id) || h.A.isFetchingRewardCode(t.id),
         isEnrolling: h.A.isEnrolling(t.id),
         isQuestEnrollmentBlocked: null != h.A.questEnrollmentBlockedUntil
-    })), Y = t.userStatus?.enrolledAt != null, J = t.userStatus?.completedAt != null, X = J && t.userStatus?.claimedAt == null, Z = (0, y.if)(t), ee = !(0, y.Ic)(t), et = (0, v.In)(t), en = (0, S.IO)(t), ea = (0, S.K$)(t), ei = (0, S.Cr)(t), es = (0, v.fc)(t), [el, er, eo] = (0, v.Qo)(t, es), ed = ee && et === v.F3.ACCEPTED, ec = ed && el === x.X0.SELECT, eu = ed && !ec && er.length > 1, em = g.t.useConfig({
+    })), Y = t.userStatus?.enrolledAt != null, J = t.userStatus?.completedAt != null, X = J && t.userStatus?.claimedAt == null, Z = (0, y.if)(t), ee = !(0, y.Ic)(t), et = (0, v.In)(t), en = (0, T.IO)(t), ea = (0, T.K$)(t), ei = (0, T.Cr)(t), es = (0, v.fc)(t), [el, er, eo] = (0, v.Qo)(t, es), ed = ee && et === v.F3.ACCEPTED, ec = ed && el === x.X0.SELECT, eu = ed && !ec && er.length > 1, em = g.t.useConfig({
         location: R.rE.QUEST_HOME_DESKTOP
     }), eh = (0, k.Pd)(t), ex = (0, m.O)(e => e.clearErrorHints), ep = i.useCallback(e => {
         eo(e), e === R.fO.DESKTOP && (_([]), ex(t.id))
@@ -238,7 +238,7 @@ function F(e) {
         quest: t,
         questContent: n,
         questContentPosition: A,
-        questContentRowIndex: T,
+        questContentRowIndex: S,
         inGiftInventory: !0,
         isVideoQuest: en,
         inGameQuest: ei,
@@ -254,7 +254,7 @@ function F(e) {
                 questContent: n,
                 questContentCTA: j.Cy.DEFIBRILLATOR,
                 questContentPosition: A,
-                questContentRowIndex: T,
+                questContentRowIndex: S,
                 sourceQuestContent: U
             })
         },
@@ -268,18 +268,18 @@ function F(e) {
         shortText: !0
     }), eC = p.s5.useConfig({
         location: R.rE.QUESTS_CARD
-    }), ey = eC.enabled && (eC.variant === p.tL.LEARN_MORE_CTA_ONLY || eC.variant === p.tL.COMBINE_LEARN_MORE_CTA_AND_EXPRESSIVE_BUTTON), eT = (0, v.do)({
+    }), ey = eC.enabled && (eC.variant === p.tL.LEARN_MORE_CTA_ONLY || eC.variant === p.tL.COMBINE_LEARN_MORE_CTA_AND_EXPRESSIVE_BUTTON), eS = (0, v.do)({
         quest: t,
         content: n,
         ctaContent: eC.variant === p.tL.LEARN_MORE_CTA_ONLY ? j.Cy.LEARN_MORE_CTA_AND_EXPRESSIVE_BUTTON_TREATMENT_TWO_OPEN_GAME_LINK : j.Cy.LEARN_MORE_CTA_AND_EXPRESSIVE_BUTTON_TREATMENT_THREE_OPEN_GAME_LINK,
         sourceQuestContent: U
-    }), eS = null;
+    }), eT = null;
     if (ey) {
         let e = (0, C.wr)(t);
-        eS = (0, a.jsx)(r.$nd, {
+        eT = (0, a.jsx)(r.$nd, {
             variant: "secondary",
             text: e,
-            onClick: eT
+            onClick: eS
         })
     }
     let eE = null;
@@ -337,7 +337,7 @@ function F(e) {
             direction: "horizontal",
             fullWidth: !0,
             wrap: !1,
-            children: [eh === k.UA.UNENROLLED ? eS : null, (0, a.jsx)(I.A, {
+            children: [eh === k.UA.UNENROLLED ? eT : null, (0, a.jsx)(I.A, {
                 quest: t,
                 surface: k.V3.QUEST_HOME_TILE_FOOTER,
                 analyticsCtxQuestContent: n,
@@ -385,7 +385,7 @@ function F(e) {
             analyticsCtxSourceQuestContent: U,
             analyticsCtxQuestContentPosition: A
         })
-    }) : (0, S.g5)(t) && !K && el !== x.X0.DESKTOP ? H ? (0, a.jsx)("div", {
+    }) : (0, T.g5)(t) && !K && el !== x.X0.DESKTOP ? H ? (0, a.jsx)("div", {
         className: D.x6,
         children: (0, a.jsx)(r.$nd, {
             variant: "secondary",
@@ -447,7 +447,7 @@ function F(e) {
             direction: "horizontal",
             fullWidth: !0,
             wrap: !1,
-            children: [eS, em.enabled && eh === k.UA.UNENROLLED && em.enabledQuestStates.has(k.UA.UNENROLLED) ? (0, a.jsx)(I.A, {
+            children: [eT, em.enabled && eh === k.UA.UNENROLLED && em.enabledQuestStates.has(k.UA.UNENROLLED) ? (0, a.jsx)(I.A, {
                 quest: t,
                 surface: k.V3.QUEST_HOME_TILE_FOOTER,
                 analyticsCtxQuestContent: n,

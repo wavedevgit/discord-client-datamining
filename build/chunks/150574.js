@@ -3,9 +3,9 @@ n.d(t, {
     A: () => b
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    r = n.n(a),
     s = n(575593),
     o = n(440703),
     d = n(311907),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(736653),
     _ = n(162232),
     m = n(607470),
-    g = n(287809),
-    p = n(954571),
+    p = n(287809),
+    g = n(954571),
     E = n(341915),
     I = n(890687),
     f = n(579473),
@@ -27,10 +27,10 @@ var i = n(627968),
     x = n(652215),
     v = n(985018),
     y = n(864833);
-let b = (0, a.memo)(function(e) {
+let b = (0, l.memo)(function(e) {
     let {
         quest: t
-    } = e, [n, l] = (0, a.useState)(!1), [b, O] = (0, a.useState)(24), [L, R] = (0, a.useState)(!1), P = (0, a.useRef)(null), D = (0, a.useRef)(null), M = (0, a.useRef)(null), j = (0, d.bG)([g.default], () => g.default.getCurrentUser()), {
+    } = e, [n, a] = (0, l.useState)(!1), [b, O] = (0, l.useState)(24), [L, R] = (0, l.useState)(!1), P = (0, l.useRef)(null), D = (0, l.useRef)(null), M = (0, l.useRef)(null), j = (0, d.bG)([p.default], () => p.default.getCurrentUser()), {
         ref: w,
         height: U = 0
     } = (0, A.Ay)(), G = (0, h.Ay)(), k = (0, I.S5)(t.userStatus?.claimedAt, {
@@ -44,12 +44,12 @@ let b = (0, a.memo)(function(e) {
         if (!F || null == t || null == D.current || null == P.current || null == M.current) return;
         let n = P.current.getBoundingClientRect(),
             i = D.current.getBoundingClientRect(),
-            a = M.current.getBoundingClientRect();
-        O((i.top - n.top - a.height) / 2)
+            l = M.current.getBoundingClientRect();
+        O((i.top - n.top - l.height) / 2)
     });
     let q = (0, c.Mw)(G),
-        z = (0, a.useMemo)(() => null != t.config.cosponsorMetadata, [t]),
-        $ = (0, a.useMemo)(() => (0, f.tW)(t, f.fY.REWARD), [t]),
+        z = (0, l.useMemo)(() => null != t.config.cosponsorMetadata, [t]),
+        $ = (0, l.useMemo)(() => (0, f.tW)(t, f.fY.REWARD), [t]),
         Q = n ? U + 8 : 0,
         {
             content_position: X,
@@ -57,16 +57,16 @@ let b = (0, a.memo)(function(e) {
             ...J
         } = (0, C.fF)(E.uF.TROPHY_CASE_CARD),
         ee = () => {
-            l(!0), p.default.track(x.HAw.QUEST_HOVER, {
+            a(!0), g.default.track(x.HAw.QUEST_HOVER, {
                 quest_id: t.id,
                 ...J
             })
         },
         et = () => {
-            l(!1)
+            a(!1)
         },
         en = e => {
-            R(!0), p.default.track(x.HAw.QUEST_ASSET_LOADING_FAILURE, {
+            R(!0), g.default.track(x.HAw.QUEST_ASSET_LOADING_FAILURE, {
                 source: e,
                 asset_id: e,
                 quest_id: t.id

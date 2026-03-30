@@ -3,8 +3,8 @@ n.d(t, {
     A: () => h
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(884362),
+    l = n(64700),
+    a = n(884362),
     r = n(837381),
     s = n(311907),
     o = n(397927),
@@ -20,36 +20,36 @@ let h = function(e) {
         renderSection: h,
         footer: _,
         sectionFilter: m,
-        renderSectionFooter: g
-    } = e, p = e => {
+        renderSectionFooter: p
+    } = e, g = e => {
         let {
             section: i,
-            row: a
-        } = e, l = t[i];
-        if (null == l || null == a) return null;
-        let r = l[a];
+            row: l
+        } = e, a = t[i];
+        if (null == a || null == l) return null;
+        let r = a[l];
         return null == r ? null : n(r, i)
-    }, E = a.useCallback((e, n) => {
+    }, E = l.useCallback((e, n) => {
         let i = t[e]?.[n];
         return m === c.m3P.ALL && i?.giftIntentType === u.np.FRIEND_ANNIVERSARY && 0 === e ? 72 : 61
-    }, [t, m]), I = a.useCallback(e => {
+    }, [t, m]), I = l.useCallback(e => {
         let {
             section: t
         } = e;
         return h(t)
-    }, [h]), f = a.useCallback(e => null == g ? null : g(e.section), [g]), C = a.useCallback(e => null == g ? 0 : 48 * (null != g(e)), [g]), T = (0, s.bG)([d.A], () => d.A.keyboardModeEnabled), N = a.useRef(null), S = a.useCallback(() => new Promise(e => {
+    }, [h]), f = l.useCallback(e => null == p ? null : p(e.section), [p]), C = l.useCallback(e => null == p ? 0 : 48 * (null != p(e)), [p]), T = (0, s.bG)([d.A], () => d.A.keyboardModeEnabled), N = l.useRef(null), S = l.useCallback(() => new Promise(e => {
         let t = N.current;
         if (null == t) return e();
         t.scrollToTop({
             callback: () => requestAnimationFrame(() => e())
         })
-    }), []), x = a.useCallback(() => new Promise(e => {
+    }), []), x = l.useCallback(() => new Promise(e => {
         let t = N.current;
         if (null == t) return e();
         t.scrollToBottom({
             callback: () => requestAnimationFrame(() => e())
         })
-    }), []), v = a.useCallback(e => {
+    }), []), v = l.useCallback(e => {
         let t = document.querySelector(e),
             n = N.current;
         null != t && null != n && n.scrollIntoViewNode({
@@ -57,13 +57,13 @@ let h = function(e) {
             padding: 8,
             callback: () => t?.focus()
         })
-    }, []), y = (0, l.Ay)({
+    }, []), y = (0, a.Ay)({
         id: "people-list",
         isEnabled: T,
         scrollToStart: S,
         scrollToEnd: x,
         setFocus: v
-    }), b = a.useMemo(() => t.map(e => e.length), [t]);
+    }), b = l.useMemo(() => t.map(e => e.length), [t]);
     return (0, i.jsx)(r.hD, {
         navigator: y,
         children: (0, i.jsx)(r.PR, {
@@ -77,7 +77,7 @@ let h = function(e) {
                         ref: e => {
                             N.current = e, t.current = e?.getScrollerNode() ?? null
                         },
-                        renderRow: p,
+                        renderRow: g,
                         rowHeight: E,
                         renderSection: I,
                         sectionHeight: 50,

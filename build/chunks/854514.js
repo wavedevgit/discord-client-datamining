@@ -5,9 +5,9 @@ n.d(t, {
     Hk: () => O
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    r = n.n(a),
     s = n(323889),
     o = n(311907),
     d = n(397927),
@@ -17,8 +17,8 @@ var i = n(627968),
     h = n(579473),
     _ = n(561844),
     m = n(590202),
-    g = n(415441),
-    p = n(73473),
+    p = n(415441),
+    g = n(73473),
     E = n(139384),
     I = n(729168),
     f = n(7832),
@@ -38,9 +38,9 @@ function y(e) {
     let {
         assetImage: t,
         assetVideo: n
-    } = e, l = a.useRef(null);
-    (0, E.A)(l, C.rE.QUEST_HOME_DESKTOP);
-    let s = a.useMemo(() => (null != n ? (0, h.WV)(n.url) : null) ?? t.url, [n, t]);
+    } = e, a = l.useRef(null);
+    (0, E.A)(a, C.rE.QUEST_HOME_DESKTOP);
+    let s = l.useMemo(() => (null != n ? (0, h.WV)(n.url) : null) ?? t.url, [n, t]);
     return null == n ? (0, i.jsxs)("div", {
         className: S.Tv,
         children: [(0, i.jsx)(v, {}), (0, i.jsx)("div", {
@@ -69,10 +69,10 @@ function y(e) {
         className: S.Tv,
         children: [(0, i.jsx)(v, {}), (0, i.jsx)("div", {
             className: S.LO,
-            children: (0, i.jsx)(g.N, {
+            children: (0, i.jsx)(p.N, {
                 showImage: !1,
                 showVideo: !0,
-                assetRef: l,
+                assetRef: a,
                 imageAsset: {
                     alt: n.altText,
                     className: S.LY,
@@ -102,12 +102,12 @@ function b(e) {
     let {
         config: t,
         onQuestCtaClick: n
-    } = e, l = (0, o.bG)([u.A], () => u.A.quests), {
+    } = e, a = (0, o.bG)([u.A], () => u.A.quests), {
         dismissQuestHomeHeroContent: r
     } = (0, f.I)();
-    return a.useEffect(() => {
+    return l.useEffect(() => {
         r(T.i.INDIRECT_ACTION)
-    }, [r]), (0, i.jsx)(p.R, {
+    }, [r]), (0, i.jsx)(g.R, {
         adContentId: t.campaignId,
         adCreativeType: s.p.QUEST_HOME_HERO,
         questContent: A.uF.QUEST_HOME_HERO,
@@ -145,7 +145,7 @@ function b(e) {
                     size: "md",
                     text: t.ctaSponsorUrl.title,
                     variant: "overlay-primary"
-                }), t.ctaQuests.map((e, a) => l.has(e.questId) ? (0, i.jsx)(d.Button, {
+                }), t.ctaQuests.map((e, l) => a.has(e.questId) ? (0, i.jsx)(d.Button, {
                     onClick: () => {
                         n?.(e.questId), (0, _.vK)({
                             adContentId: t.campaignId,
@@ -158,7 +158,7 @@ function b(e) {
                     size: "md",
                     text: e.title,
                     variant: "color-mix"
-                }, a) : null)]
+                }, l) : null)]
             }),
             background: (0, i.jsx)(y, {
                 assetImage: t.assetHeroImage,

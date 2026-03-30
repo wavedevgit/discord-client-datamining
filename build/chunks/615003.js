@@ -4,8 +4,8 @@ n.d(t, {
     o: () => X
 }), n(321073), n(323874), n(14289), n(35956);
 var i = n(627968),
-    a = n(64700),
-    l = n(837381),
+    l = n(64700),
+    a = n(837381),
     r = n(877624),
     s = n(311907),
     o = n(554146),
@@ -16,8 +16,8 @@ var i = n(627968),
     h = n(531260),
     _ = n(771781),
     m = n(932001),
-    g = n(320118),
-    p = n(976860),
+    p = n(320118),
+    g = n(976860),
     E = n(287809),
     I = n(166403),
     f = n(954571),
@@ -53,7 +53,7 @@ var i = n(627968),
 let Q = e => {
         let {
             selected: t
-        } = e, n = (0, s.bG)([E.default], () => E.default.getCurrentUser()), i = (0, s.bG)([I.A], () => I.A.getPremiumTypeSubscription()), a = (0, P.V)(), l = (0, R.O)(), r = (0, N.cg)(), o = (0, F.H)(), d = (0, C.Of)(n, i), c = (0, s.bG)([T.A], () => T.A.getCreatedAtOverride()), u = t || null != a || null != l || r || null != o || d, A = null != c ? c : n?.createdAt;
+        } = e, n = (0, s.bG)([E.default], () => E.default.getCurrentUser()), i = (0, s.bG)([I.A], () => I.A.getPremiumTypeSubscription()), l = (0, P.V)(), a = (0, R.O)(), r = (0, N.cg)(), o = (0, F.H)(), d = (0, C.Of)(n, i), c = (0, s.bG)([T.A], () => T.A.getCreatedAtOverride()), u = t || null != l || null != a || r || null != o || d, A = null != c ? c : n?.createdAt;
         return u || null != n && null != A && Date.now() - A.getTime() > 12096e5
     },
     X = e => {
@@ -67,8 +67,8 @@ let Q = e => {
             et = (0, s.bG)([E.default], () => E.default.getCurrentUser()),
             en = (0, s.bG)([I.A], () => I.A.getPremiumTypeSubscription()),
             ei = (0, C.Of)(et, en),
-            ea = (0, C.YE)(et, K.PremiumTypes.TIER_2),
-            el = (0, l.rm)("nitro"),
+            el = (0, C.YE)(et, K.PremiumTypes.TIER_2),
+            ea = (0, a.rm)("nitro"),
             er = (0, P.V)(),
             es = (0, R.O)(),
             eo = (0, L.p)(),
@@ -81,11 +81,11 @@ let Q = e => {
             eh = (0, F.H)(),
             e_ = (0, k.Tp)(),
             em = (0, s.bG)([S.A], () => S.A.getReminderStateId()),
-            eg = (0, G.c7)(),
+            ep = (0, G.c7)(),
             {
-                programReward: ep,
+                programReward: eg,
                 isEligible: eE
-            } = (0, g.F)({
+            } = (0, p.F)({
                 location: "NitroTabButton"
             }),
             {
@@ -99,18 +99,18 @@ let Q = e => {
             eN = eC === v.xb.ANNOUNCEMENT_MODAL,
             eS = !(0, C.TW)(et),
             ex = eS && eE,
-            ev = ep?.last_granted_reward,
-            ey = ep?.last_granted_reward_amount,
+            ev = eg?.last_granted_reward,
+            ey = eg?.last_granted_reward_amount,
             eb = (0, _.mB)(o.M.PREMIUM_ORBS_REWARDS_INTRO_POPOVER),
-            eO = ea && eE && null != ev && null != ey && !eb,
-            eL = ea && eE && !eO && null != ep,
+            eO = el && eE && null != ev && null != ey && !eb,
+            eL = el && eE && !eO && null != eg,
             eR = null != eo && null != en && en.status === q.Dmq.CANCELED,
             {
                 marketingEnabled: eP
             } = (0, M.YS)({
                 location: "NitroTabButton"
             }),
-            eD = eP && ea,
+            eD = eP && el,
             eM = eP && eS,
             {
                 fractionalState: ej,
@@ -126,11 +126,11 @@ let Q = e => {
             eV = er?.trial_id === K.Dw,
             eB = [],
             eH = [];
-        (0, _.Tc)() && (eg && eB.push(o.M.RECURRING_3P_PROMOTION_POPOVER), ec && eB.push(o.M.BOGO_2025_NITRO_TAB_BADGE));
+        (0, _.Tc)() && (ep && eB.push(o.M.RECURRING_3P_PROMOTION_POPOVER), ec && eB.push(o.M.BOGO_2025_NITRO_TAB_BADGE));
         let [eF, eY] = (0, m.kn)(eB, void 0, !0);
         eR && eH.push(o.M.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK), eA && (eT ? eH.push(o.M.PREMIUM_GROUP_POPOVER_UPSELL_V2) : eH.push(o.M.PREMIUM_GROUP_POPOVER)), ex && eH.push(o.M.PREMIUM_ORBS_UPSELL_POPOVER), eL && eH.push(o.M.PREMIUM_ORBS_REWARDS_INTRO_POPOVER), eD && eH.push(o.M.L_3PP_NITRO_TOOLTIP), eM && eH.push(o.M.L_3PP_NON_NITRO_POPOVER);
         let [eW, eK] = (0, m.kn)(eH, void 0, !0), eq = (0, D.c)(r.C.PREMIUM_TAB), ez = (0, D.c)(r.C.PREMIUM_TAB_TOOLTIP), e$ = (0, D.c)(r.C.PREMIUM_TAB_POPOVER), [eQ, eX] = (0, m.Cc)(null != eq && "premiumTab" === eq.properties.properties.oneofKind ? o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE : null, eq?.promotionId ?? "", void 0, !0), [eZ, eJ] = (0, m.Cc)(null != e$ && "premiumTabPopover" === e$.properties.properties.oneofKind ? o.M.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL : null, e$?.promotionId ?? "", void 0, !0), [e0, e1] = (0, m.Cc)(eO ? o.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER : null, ev ?? "", void 0, !0), e7 = null != ez && "premiumTabTooltip" === ez.properties.properties.oneofKind && eQ === o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, e6 = eD && eW === o.M.L_3PP_NITRO_TOOLTIP, e9 = eM && eW === o.M.L_3PP_NON_NITRO_POPOVER;
-        if (a.useEffect(() => {
+        if (l.useEffect(() => {
                 !0 === T && (null != eF && eY(z.i.AUTO_DISMISS), null != eW && eK(z.i.AUTO_DISMISS), null != eQ && eX(z.i.AUTO_DISMISS), null != e0 && e1(z.i.AUTO_DISMISS), null != eZ && eJ(z.i.AUTO_DISMISS))
             }, [eY, T, eF, eK, eW, eQ, eX, e0, e1, eZ, eJ]), !Q({
                 selected: T
@@ -223,7 +223,7 @@ let Q = e => {
             route: Z,
             icon: c.tvc,
             text: (0, i.jsx)(d.A, {
-                children: ea ? $.intl.string($.t["4gwVVn"]) : $.intl.string($.t.Ipxkog)
+                children: el ? $.intl.string($.t["4gwVVn"]) : $.intl.string($.t.Ipxkog)
             }),
             locationState: J,
             onClick: () => {
@@ -231,12 +231,12 @@ let Q = e => {
                     let e = new URLSearchParams({
                         [O.W]: b.LOGITECH_3PP_CARD_ID
                     }).toString();
-                    (0, p.pX)(Z.includes("?") ? `${Z}&${e}` : `${Z}?${e}`)
+                    (0, g.pX)(Z.includes("?") ? `${Z}&${e}` : `${Z}?${e}`)
                 }
                 e5()
             },
             ...ee,
-            ...el,
+            ...ea,
             children: t
         });
         return (0, i.jsx)(Y.H, {

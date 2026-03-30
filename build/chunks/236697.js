@@ -3,8 +3,8 @@ n.d(t, {
     u: () => I
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(964892),
+    l = n(64700),
+    a = n(964892),
     r = n(208756),
     s = n(135564),
     o = n(916845),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(788868),
     _ = n(49999),
     m = n(653624),
-    g = n(985018),
-    p = n(991674),
+    p = n(985018),
+    g = n(991674),
     E = n(8496);
 
 function I(e) {
@@ -26,7 +26,7 @@ function I(e) {
         children: I
     } = e, {
         analyticsLocations: f
-    } = (0, u.Ay)(), C = a.useCallback(() => {
+    } = (0, u.Ay)(), C = l.useCallback(() => {
         n(_.i.TAKE_ACTION), (0, A.A)({
             subscriptionTier: h.pe.TIER_2,
             analyticsLocations: f
@@ -35,7 +35,7 @@ function I(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             children: I
-        }), (0, i.jsx)(l.x, {
+        }), (0, i.jsx)(a.x, {
             targetElementRef: t,
             onRequestClose: () => n(_.i.USER_DISMISS),
             alignmentStrategy: "edge",
@@ -51,23 +51,23 @@ function I(e) {
                     onClick: () => n(_.i.USER_DISMISS),
                     variant: "color-mix"
                 }), (0, i.jsx)("div", {
-                    className: p.h,
+                    className: g.h,
                     children: (0, i.jsx)("img", {
                         src: E.A,
                         alt: "",
                         "aria-hidden": !0,
-                        className: p.S
+                        className: g.S
                     })
                 }), (0, i.jsx)(d.D, {
-                    title: g.intl.string(m.default.OlObRa),
-                    body: g.intl.string(m.default["8Gl8gP"]),
+                    title: p.intl.string(m.default.OlObRa),
+                    body: p.intl.string(m.default["8Gl8gP"]),
                     badge: {
                         type: "beta",
                         variant: "expressive"
                     }
                 }), (0, i.jsx)(r.Z, {
                     actions: [{
-                        text: g.intl.string(g.t.pj0XBN),
+                        text: p.intl.string(p.t.pj0XBN),
                         variant: "primary",
                         icon: c.tvc,
                         iconPosition: "start",

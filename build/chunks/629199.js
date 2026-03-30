@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(311907),
-    l = n(692617),
+var l = n(311907),
+    a = n(692617),
     r = n(397927),
     s = n(297413),
     o = n(775602),
@@ -16,8 +16,8 @@ var a = n(311907),
     h = n(215689),
     _ = n(994500),
     m = n(427262),
-    g = n(837921),
-    p = n(800583),
+    p = n(837921),
+    g = n(800583),
     E = n(999068),
     I = n(122943),
     f = n(985018),
@@ -33,7 +33,7 @@ let T = e => {
             children: f.intl.string(f.t.jpY0X5)
         }) : (0, i.jsxs)("div", {
             className: C.I9,
-            children: [(0, i.jsx)(l.A, {
+            children: [(0, i.jsx)(a.A, {
                 guilds: n,
                 maxGuilds: 3,
                 size: c.$v.Sizes.SMOL,
@@ -48,14 +48,14 @@ let T = e => {
             })]
         })
     },
-    N = g.Ay.getEnableHardwareAcceleration() ? r.JsQ : r.euF;
+    N = p.Ay.getEnableHardwareAcceleration() ? r.JsQ : r.euF;
 
 function S(e) {
     let {
         channel: t,
         otherUser: n,
-        active: l
-    } = e, c = (0, a.bG)([o.A], () => o.A.useReducedMotion), g = (0, a.bG)([_.A], () => null == n ? null : _.A.getNickname(n.id)), E = !c && l, S = (0, p.j)(t), {
+        active: a
+    } = e, c = (0, l.bG)([o.A], () => o.A.useReducedMotion), p = (0, l.bG)([_.A], () => null == n ? null : _.A.getNickname(n.id)), E = !c && a, S = (0, g.j)(t), {
         avatarDecorationSrc: x
     } = (0, h.A)({
         user: n,
@@ -74,7 +74,7 @@ function S(e) {
             children: [(0, i.jsxs)("div", {
                 className: C.rU,
                 children: [(0, i.jsx)(s.A, {
-                    nick: g,
+                    nick: p,
                     user: n,
                     showAccountIdentifier: !0,
                     className: C.I8,
@@ -90,7 +90,7 @@ function S(e) {
                 hoverText: (0, i.jsx)(I.A, {
                     channel: t
                 }),
-                forceHover: l,
+                forceHover: a,
                 children: (0, i.jsx)(T, {
                     userId: n.id
                 })

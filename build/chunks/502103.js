@@ -3,8 +3,8 @@ n.d(t, {
     A: () => m
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(554146),
+    l = n(64700),
+    a = n(554146),
     r = n(397927),
     s = n(15073),
     o = n(5180),
@@ -18,14 +18,14 @@ var i = n(627968),
 function m(e) {
     let t = (0, s.TZ)(e),
         m = _.dR.some(t => !(0, o.ai)(e?.id) && c.Ib(t, e)),
-        g = e?.defaultMessageNotifications === A.orn.ALL_MESSAGES,
-        p = (0, u.G$)(l.V.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, e?.id ?? A.dJq),
-        E = t && (m || g) && !p,
-        I = a.useCallback(() => {
-            (0, u._$)(l.V.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, e?.id ?? A.dJq, !0, h.i.DISMISS)
+        p = e?.defaultMessageNotifications === A.orn.ALL_MESSAGES,
+        g = (0, u.G$)(a.V.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, e?.id ?? A.dJq),
+        E = t && (m || p) && !g,
+        I = l.useCallback(() => {
+            (0, u._$)(a.V.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, e?.id ?? A.dJq, !0, h.i.DISMISS)
         }, [e]),
-        f = a.useRef(!1);
-    a.useEffect(() => {
+        f = l.useRef(!1);
+    l.useEffect(() => {
         E && !f.current && ((0, r.mMO)(async () => {
             let {
                 default: t
@@ -33,14 +33,14 @@ function m(e) {
             return n => (0, i.jsx)(t, {
                 guild: e,
                 canEveryoneModerate: m,
-                isDefaultNotificationsAllMessages: g,
+                isDefaultNotificationsAllMessages: p,
                 ...n
             })
         }, {
             onCloseCallback: I
         }), d.default.track(A.HAw.DISMISSIBLE_CONTENT_SHOWN, {
-            type: l.V[l.V.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE],
+            type: a.V[a.V.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE],
             guild_id: e?.id ?? A.dJq
         }), f.current = !0)
-    }, [m, e, I, g, E])
+    }, [m, e, I, p, E])
 }

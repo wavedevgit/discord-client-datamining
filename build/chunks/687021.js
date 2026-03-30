@@ -1,12 +1,12 @@
 /** chunk id: 687021 params = (module,exports,require) **/
 r.d(t, {
-    A: () => h,
-    v: () => g
+    A: () => b,
+    v: () => x
 }), r(667532);
 var a = r(627968),
     n = r(64700),
-    i = r(503698),
-    s = r.n(i),
+    s = r(503698),
+    i = r.n(s),
     l = r(311907),
     o = r(444550),
     d = r(263063),
@@ -16,23 +16,23 @@ var a = r(627968),
     _ = r(711014),
     p = r(403362),
     f = r(985018),
-    b = r(263928);
+    h = r(263928);
 
-function h(e) {
+function b(e) {
     let {
         guildId: t,
         className: r,
         globalOption: n,
-        hideDivider: i = !1,
+        hideDivider: s = !1,
         onChange: l,
         renderOptionSuffix: o
     } = e;
     return (0, a.jsx)(c.A, {
-        className: s()(b.u, r),
+        className: i()(h.u, r),
         title: f.intl.string(f.t.ref7Ki),
-        hideDivider: i,
+        hideDivider: s,
         forcedDivider: !0,
-        children: (0, a.jsx)(g, {
+        children: (0, a.jsx)(x, {
             guildId: t,
             onChange: l,
             renderOptionSuffix: o,
@@ -41,41 +41,41 @@ function h(e) {
     })
 }
 
-function g(e) {
+function x(e) {
     let {
         guildId: t,
         globalOption: r,
-        onChange: i,
-        renderOptionSuffix: s
-    } = e, c = (0, l.bG)([u.A], () => u.A.showNotice()), h = (0, l.bG)([_.Ay], () => _.Ay.getFlattenedGuildIds()), g = (0, l.bG)([m.A], () => m.A.getGuilds()), x = n.useMemo(() => {
-        let e = h.map(e => {
-            let t = g[e];
+        onChange: s,
+        renderOptionSuffix: i
+    } = e, c = (0, l.bG)([u.A], () => u.A.showNotice()), b = (0, l.bG)([_.Ay], () => _.Ay.getFlattenedGuildIds()), x = (0, l.bG)([m.A], () => m.A.getGuilds()), g = n.useMemo(() => {
+        let e = b.map(e => {
+            let t = x[e];
             return null == t ? null : {
                 label: t.name,
                 value: t.id
             }
         }).filter(p.Vq);
         return null != r && e.unshift(r), e
-    }, [h, g, r]), C = n.useCallback(e => {
+    }, [b, x, r]), C = n.useCallback(e => {
         let t = e?.label === r?.label && e?.value === r?.value;
         return null == e || "" === e.value || t ? null : (0, a.jsx)(d.Ay, {
-            className: b.c,
-            guild: g[e.value],
+            className: h.c,
+            guild: x[e.value],
             size: d.Ay.Sizes.SMOL,
             active: !0
         })
-    }, [g, r]);
+    }, [x, r]);
     return (0, a.jsx)(o.p, {
         isDisabled: c,
         onChange: e => {
-            if ("" === e || e === r?.value) return void i(null);
-            let t = g[e];
-            null != t && i(t)
+            if ("" === e || e === r?.value) return void s(null);
+            let t = x[e];
+            null != t && s(t)
         },
         value: t,
-        options: x,
+        options: g,
         renderOptionPrefix: C,
-        renderOptionSuffix: s,
+        renderOptionSuffix: i,
         placeholder: f.intl.string(f.t["kMgj+e"]),
         "data-migration-pending": !0
     })

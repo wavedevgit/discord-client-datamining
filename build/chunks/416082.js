@@ -3,8 +3,8 @@ n.d(t, {
     A: () => _
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(311907),
+    l = n(64700),
+    a = n(311907),
     r = n(397927),
     s = n(747550),
     o = n(282026),
@@ -16,7 +16,7 @@ var i = n(627968),
 let _ = function(e) {
     let {
         loadId: t
-    } = e, n = o.A.useField("categoryId"), _ = (0, l.bG)([d.A], () => d.A.getCategoryName(n)), m = a.useCallback(() => {
+    } = e, n = o.A.useField("categoryId"), _ = (0, a.bG)([d.A], () => d.A.getCategoryName(n)), m = l.useCallback(() => {
         o.A.setState({
             categoryId: c.Iq
         }), s.A.loadCategoryResults({
@@ -25,9 +25,9 @@ let _ = function(e) {
             query: o.A.getField("fetchedQuery"),
             languageCode: o.A.getField("languageCode")
         })
-    }, [t]), g = n === c.Iq ? u.intl.string(u.t.Ivw1Is) : u.intl.formatToPlainString(u.t["+1WAFb"], {
+    }, [t]), p = n === c.Iq ? u.intl.string(u.t.Ivw1Is) : u.intl.formatToPlainString(u.t["+1WAFb"], {
         categoryName: _
-    }), p = n === c.Iq ? u.intl.string(u.t.aXvEjd) : u.intl.format(u.t.XLioqn, {
+    }), g = n === c.Iq ? u.intl.string(u.t.aXvEjd) : u.intl.format(u.t.XLioqn, {
         onClick: m
     });
     return (0, i.jsxs)("div", {
@@ -39,11 +39,11 @@ let _ = function(e) {
         }), (0, i.jsx)(r.Heading, {
             variant: "heading-xl/semibold",
             className: A.wx,
-            children: g
+            children: p
         }), (0, i.jsx)(r.Text, {
             variant: "text-md/normal",
             color: "text-default",
-            children: p
+            children: g
         })]
     })
 }

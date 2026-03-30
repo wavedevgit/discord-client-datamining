@@ -3,9 +3,9 @@ n.d(t, {
     A: () => A
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    r = n.n(a),
     s = n(615300),
     o = n(837381),
     d = n(397927),
@@ -15,16 +15,16 @@ var u = n(456187);
 let A = function(e) {
     let {
         index: t,
-        children: l,
+        children: a,
         user: A,
         channel: h,
         onClick: _,
         isFocused: m,
-        isActive: g,
-        onOtherHover: p,
+        isActive: p,
+        onOtherHover: g,
         className: E
-    } = e, [I, f] = a.useState(!1), [C, T] = a.useState(!1), N = () => {
-        f(!0), !m || g || C || p?.()
+    } = e, [I, f] = l.useState(!1), [C, T] = l.useState(!1), N = () => {
+        f(!0), !m || p || C || g?.()
     }, S = () => {
         f(!1)
     };
@@ -37,7 +37,7 @@ let A = function(e) {
             },
             children: (0, i.jsx)(s.A.div, {
                 className: r()(u.Cf, E, {
-                    [u.vu]: g || C,
+                    [u.vu]: p || C,
                     [u.CJ]: 0 === t
                 }),
                 onContextMenu: e => {
@@ -63,7 +63,7 @@ let A = function(e) {
                     opacity: 1
                 },
                 ...e,
-                children: l(I || g || C)
+                children: a(I || p || C)
             })
         })
     })

@@ -1,10 +1,10 @@
 /** chunk id: 796111 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(562465),
-    a = n(10716),
-    l = n(458664),
+    l = n(10716),
+    a = n(458664),
     r = n(587895),
     s = n(20015),
     o = n(147964),
@@ -15,7 +15,7 @@ var i = n(562465),
     h = n(569475),
     _ = n(613057),
     m = n(652215);
-let g = {
+let p = {
     [m.e$_.SEND_ANALYTICS_EVENT]: {
         validation: e => (0, A.A)(e).required().keys({
             event_name: e.string().required(),
@@ -30,22 +30,22 @@ let g = {
                 }
             } = e;
             (0, u.lG)(t.transport), (0, u.D2)(t.application);
-            let a = t.application.id,
+            let l = t.application.id,
                 o = (0, h.A)(),
                 A = o?.getGuildId(),
-                _ = r.A.getApplication(a);
+                _ = r.A.getApplication(l);
             if (!(0, s.n)(_, m.gfo.EMBEDDED_FIRST_PARTY)) throw new c.A({
                 errorCode: m.Lw6.INVALID_COMMAND
             }, "This application cannot access this API");
-            let g = (0, l.D)(a),
-                p = {
-                    activity_application_id: a,
+            let p = (0, a.D)(l),
+                g = {
+                    activity_application_id: l,
                     activity_channel_type: o?.type,
                     activity_guild_id: A,
-                    activity_user_session_id: g?.activityUserSessionId
+                    activity_user_session_id: p?.activityUserSessionId
                 };
             d.default.track(n, {
-                ...p,
+                ...g,
                 ...i
             })
         }
@@ -62,7 +62,7 @@ let g = {
             return i.Bo.post({
                 url: m.Rsh.APPLICATION_TICKET(n),
                 body: {
-                    test_mode: o.A.inTestModeForApplication(n) || a.A.inDevModeForApplication(n)
+                    test_mode: o.A.inTestModeForApplication(n) || l.A.inDevModeForApplication(n)
                 },
                 retries: 3,
                 oldFormErrors: !0,

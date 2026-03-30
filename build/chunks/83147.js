@@ -1,13 +1,13 @@
 /** chunk id: 83147 params = (module,exports,require) **/
 n.d(t, {
-    $: () => l
+    $: () => a
 });
 var i = n(636401),
-    a = n(652215);
-let l = {
+    l = n(652215);
+let a = {
     handler(e) {
         throw new i.A({
-            errorCode: a.Lw6.INVALID_COMMAND
+            errorCode: l.Lw6.INVALID_COMMAND
         }, `Deprecated command: ${e.cmd}`)
     }
 }

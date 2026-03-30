@@ -5,7 +5,7 @@ r.d(t, {
     NI: () => eu,
     Tb: () => ed
 });
-var a, n, i, s = r(627968),
+var a, n, s, i = r(627968),
     l = r(64700),
     o = r(192308),
     d = r(397927),
@@ -15,22 +15,22 @@ var a, n, i, s = r(627968),
     _ = r(259065),
     p = r(532794),
     f = r(206835),
-    b = r(591179),
-    h = r(576060),
-    g = r(780964),
-    x = r(358776),
+    h = r(591179),
+    b = r(576060),
+    x = r(780964),
+    g = r(358776),
     C = r(840065),
     A = r(676279),
     R = r(975571),
     v = r(161319),
-    E = r(992315),
+    j = r(992315),
     N = r(788868),
-    j = r(88001),
+    E = r(88001),
     I = r(652215),
     y = r(355097),
     P = r(653624),
-    S = r(519412),
-    T = r(49370),
+    T = r(519412),
+    S = r(49370),
     w = r(985018),
     O = r(520650),
     D = r(927961),
@@ -58,21 +58,21 @@ var a, n, i, s = r(627968),
     er = r(909340),
     ea = r(455482),
     en = r(573573),
-    ei = r(233572),
-    es = r(437466),
+    es = r(233572),
+    ei = r(437466),
     el = r(23145),
     eo = r(56582),
     ed = ((a = {}).CONTAINED = "contained", a.OVERLAY = "overlay", a),
     ec = ((n = {}).SMALL = "small", n.MEDIUM = "medium", n.LARGE = "large", n),
-    eu = ((i = {}).REFERRAL_PROGRAM = "referralProgram", i.SERVER_PROFILES = "serverProfiles", i.SHOW_YOUR_STYLE = "showYourStyle", i.YOUR_SPACE = "yourSpace", i.EMOJIS = "emojis", i.NO_LIMITS = "noLimits", i.CUSTOM_THEMES = "customThemes", i.DISPLAY_NAME_STYLES = "displayNameStyles", i.PREMIUM_GROUP = "premiumGroup", i.ORB_REWARDS = "orbRewards", i.THREE_P_PROMOTIONS = "threePPromotions", i);
+    eu = ((s = {}).REFERRAL_PROGRAM = "referralProgram", s.SERVER_PROFILES = "serverProfiles", s.SHOW_YOUR_STYLE = "showYourStyle", s.YOUR_SPACE = "yourSpace", s.EMOJIS = "emojis", s.NO_LIMITS = "noLimits", s.CUSTOM_THEMES = "customThemes", s.DISPLAY_NAME_STYLES = "displayNameStyles", s.PREMIUM_GROUP = "premiumGroup", s.ORB_REWARDS = "orbRewards", s.THREE_P_PROMOTIONS = "threePPromotions", s);
 let em = () => {
     let {
         analyticsLocations: e
-    } = (0, u.Ay)(c.A.PREMIUM_MARKETING_BENTO_BOX), t = (0, b.X)("useBentoBoxes"), a = (0, h.A)(), n = (0, f.A)({
+    } = (0, u.Ay)(c.A.PREMIUM_MARKETING_BENTO_BOX), t = (0, h.X)("useBentoBoxes"), a = (0, b.A)(), n = (0, f.A)({
         scrollPosition: y._F.TRY_IT_OUT,
         analyticsLocations: e
-    }), i = (0, l.useCallback)(() => {
-        (0, C.openUserSettings)(g.X.PROFILE_PANEL, {
+    }), s = (0, l.useCallback)(() => {
+        (0, C.openUserSettings)(x.X.PROFILE_PANEL, {
             analyticsLocations: e
         }, () => (0, _.L)({
             analyticsLocations: e
@@ -93,8 +93,8 @@ let em = () => {
             assetUrl: ec ? el.Ay : eo.Ay
         },
         customThemes: {
-            thumbnail: ei.A,
-            assetUrl: ec ? en.A : es.A
+            thumbnail: es.A,
+            assetUrl: ec ? en.A : ei.A
         },
         displayNameStyles: {
             thumbnail: k.A,
@@ -164,25 +164,25 @@ let em = () => {
             description: w.intl.string(D.default.MFNXZh),
             descriptionCta: w.intl.string(w.t.jVcuVY),
             previewImage: em.displayNameStyles.thumbnail,
-            onClick: t ? a : i,
+            onClick: t ? a : s,
             badgeText: w.intl.string(w.t.y2b7CA).toLocaleUpperCase(),
             videoUrl: em.displayNameStyles.assetUrl
         },
         premiumGroup: {
             name: "premiumGroup",
-            title: w.intl.formatToPlainString(S.default.VFEDDB, {
-                premiumGroupProductName: (0, j.DP)()
+            title: w.intl.formatToPlainString(T.default.VFEDDB, {
+                premiumGroupProductName: (0, E.DP)()
             }),
-            description: w.intl.formatToPlainString(S.default.WudmR3, {
-                totalSeats: j.aw,
-                premiumGroupProductName: (0, j.DP)()
+            description: w.intl.formatToPlainString(T.default.WudmR3, {
+                totalSeats: E.aw,
+                premiumGroupProductName: (0, E.DP)()
             }),
             previewImage: em.premiumGroup.thumbnail,
             videoUrl: em.premiumGroup.assetUrl,
             actions: [{
                 variant: "primary",
-                text: w.intl.formatToPlainString(S.default.LwdrNi, {
-                    premiumGroupProductName: (0, j.DP)()
+                text: w.intl.formatToPlainString(T.default.LwdrNi, {
+                    premiumGroupProductName: (0, E.DP)()
                 }),
                 onClick: ed,
                 icon: d.tvc,
@@ -195,7 +195,7 @@ let em = () => {
                         let {
                             default: e
                         } = await r.e("69595").then(r.bind(r, 526710));
-                        return t => (0, s.jsx)(e, {
+                        return t => (0, i.jsx)(e, {
                             ...t
                         })
                     })
@@ -221,11 +221,11 @@ let em = () => {
             previewImage: em.yourSpace.thumbnail,
             onClick: () => {
                 {
-                    let t = (0, x.Ci)("openClientThemes"),
+                    let t = (0, g.Ci)("openClientThemes"),
                         {
                             openUserSettings: a
                         } = r(840065);
-                    a(t ? g.X.DISPLAY_THEME_CATEGORY : g.X.APPEARANCE_PANEL, {
+                    a(t ? x.X.DISPLAY_THEME_CATEGORY : x.X.APPEARANCE_PANEL, {
                         analyticsLocations: e
                     })
                 }
@@ -248,8 +248,8 @@ let em = () => {
         },
         orbRewards: {
             name: "orbRewards",
-            title: w.intl.string(T.default["ZFJ/NU"]),
-            description: w.intl.string(T.default.wMi514),
+            title: w.intl.string(S.default["ZFJ/NU"]),
+            description: w.intl.string(S.default.wMi514),
             descriptionCta: w.intl.string(w.t.hvVgAZ),
             onClick: () => {
                 window.open(R.A.getArticleURL(I.MVz.ORBS_REWARDS_FAQ), "_blank")
@@ -267,7 +267,7 @@ let em = () => {
             descriptionCta: w.intl.string(P.default.HINTfJ),
             previewImage: em.threePPromotions.thumbnail,
             videoUrl: em.threePPromotions.assetUrl,
-            onClick: () => (0, v.uE)({
+            onClick: () => (0, v.u)({
                 analyticsLocations: e
             }),
             badgeText: w.intl.string(w.t.y2b7CA).toLocaleUpperCase()
@@ -276,11 +276,11 @@ let em = () => {
         let t = e_[e];
         if (null == t) throw Error(`useBentoBoxes: missing bento config for ${e}`);
         return t
-    }, [ef, eb, eh] = (0, E.A)();
+    }, [ef, eh, eb] = (0, j.A)();
     return {
         whatsNewBoxes: [
             [ep(ef)],
-            [ep(eb), ep(eh)]
+            [ep(eh), ep(eb)]
         ],
         bestOfBoxes: [
             [ep("showYourStyle")],

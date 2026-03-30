@@ -3,8 +3,8 @@ n.d(t, {
     A: () => c
 });
 var i = n(287809),
-    a = n(486020),
-    l = n(515718),
+    l = n(486020),
+    a = n(515718),
     r = n(636401),
     s = n(629471),
     o = n(613057),
@@ -30,7 +30,7 @@ let c = {
             if ("user" === n) {
                 let e = i.default.getUser(s);
                 if (null != e) {
-                    t = a.Ay.getUserAvatarURL(e, !1, c, o);
+                    t = l.Ay.getUserAvatarURL(e, !1, c, o);
                     let n = window.GLOBAL_ENV.CDN_HOST;
                     null != n && -1 !== t.indexOf(n) && (t += "&_=")
                 } else throw new r.A({
@@ -40,7 +40,7 @@ let c = {
             if (null == t) throw new r.A({
                 errorCode: d.Lw6.INVALID_COMMAND
             }, "No valid type.");
-            return fetch(t).then(e => e.blob()).then(e => (0, l.We)(e)).then(e => ({
+            return fetch(t).then(e => e.blob()).then(e => (0, a.We)(e)).then(e => ({
                 data_url: e
             }))
         }

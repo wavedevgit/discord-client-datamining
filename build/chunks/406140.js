@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(397927),
-    l = n(263063),
+var l = n(397927),
+    a = n(263063),
     r = n(253932),
     s = n(218394),
     o = n(258335),
@@ -18,28 +18,28 @@ function c(e) {
         guild: c,
         description: u,
         children: A
-    } = e, h = r.kt.useSetting(), _ = (0, s.j)(), [m, g] = (0, o.A)(t, _ && h);
+    } = e, h = r.kt.useSetting(), _ = (0, s.j)(), [m, p] = (0, o.A)(t, _ && h);
     return (0, i.jsxs)("div", {
         className: d.kL,
         children: [(0, i.jsx)("div", {
             ref: m,
             className: d.El,
-            children: null != g && (0, i.jsx)("img", {
-                src: g,
+            children: null != p && (0, i.jsx)("img", {
+                src: p,
                 alt: "",
                 className: d.N4
             })
         }), (0, i.jsx)("div", {
             className: d._C,
-            children: (0, i.jsx)(l.Ay, {
+            children: (0, i.jsx)(a.Ay, {
                 guild: c,
-                size: l.Ay.Sizes.XLARGE
+                size: a.Ay.Sizes.XLARGE
             })
-        }), (0, i.jsx)(a.Heading, {
+        }), (0, i.jsx)(l.Heading, {
             variant: "heading-xl/semibold",
             className: d.H1,
             children: n
-        }), (0, i.jsx)(a.Text, {
+        }), (0, i.jsx)(l.Text, {
             className: d.jr,
             variant: "text-md/normal",
             color: "text-default",

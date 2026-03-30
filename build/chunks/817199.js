@@ -3,8 +3,8 @@ n.d(t, {
     A: () => u
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(158954),
+    l = n(64700),
+    a = n(158954),
     r = n(554146),
     s = n(189252),
     o = n(932001),
@@ -12,11 +12,11 @@ var i = n(627968),
     c = n(49999);
 
 function u() {
-    let [e, t] = (0, o.kn)([r.M.APRIL_FOOLS_2026_COACHMARK]), n = a.useRef(null), u = e === r.M.APRIL_FOOLS_2026_COACHMARK;
+    let [e, t] = (0, o.kn)([r.M.APRIL_FOOLS_2026_COACHMARK]), n = l.useRef(null), u = e === r.M.APRIL_FOOLS_2026_COACHMARK;
     return (0, i.jsxs)("div", {
         children: [(0, i.jsx)(s.A, {
             ref: n,
-            icon: l.cBN,
+            icon: a.cBN,
             tooltip: "???",
             onClick: () => {
                 u && t(c.i.INDIRECT_ACTION)

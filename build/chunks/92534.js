@@ -1,10 +1,10 @@
 /** chunk id: 92534 params = (module,exports,require) **/
 n.d(t, {
-    B: () => p
+    B: () => g
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(308368),
+    l = n(64700),
+    a = n(308368),
     r = n(308528),
     s = n(442433),
     o = n(49229),
@@ -15,11 +15,11 @@ var i = n(627968),
     h = n(734057),
     _ = n(652215),
     m = n(381941),
-    g = n(985018);
+    p = n(985018);
 
-function p(e) {
+function g(e) {
     return {
-        handlePrimaryAction: a.useCallback(t => {
+        handlePrimaryAction: l.useCallback(t => {
             switch (t.type) {
                 case u.c.OPEN_DIRECT_MESSAGE:
                     if (null == t.userId) return;
@@ -85,7 +85,7 @@ function p(e) {
                     break;
                 case u.c.SEND_ACTIVITY_INVITE:
                     if (null == t.userId || null == t.activity) return;
-                    l.A.sendActivityInviteUser({
+                    a.A.sendActivityInviteUser({
                         type: _.xL.JOIN,
                         userId: t.userId,
                         activity: t.activity,
@@ -94,7 +94,7 @@ function p(e) {
                     break;
                 case u.c.ASK_TO_JOIN:
                     if (null == t.userId || null == t.activity) return;
-                    l.A.sendActivityInviteUser({
+                    a.A.sendActivityInviteUser({
                         type: _.xL.JOIN_REQUEST,
                         userId: t.userId,
                         activity: t.activity,
@@ -113,7 +113,7 @@ function p(e) {
                             if (null == i) return;
                             !0 === e.extra.fake_inventory_item ? await (0, c.J)({
                                 channel: i,
-                                content: g.intl.formatToPlainString(g.t.UVBA9g, {
+                                content: p.intl.formatToPlainString(p.t.UVBA9g, {
                                     gameName: e.extra.game_name
                                 }),
                                 whenReady: !0,
@@ -121,7 +121,7 @@ function p(e) {
                                 location: m.Hx.CONTENT_INVENTORY_MEMBERLIST
                             }) : await (0, c.d)({
                                 channel: i,
-                                content: g.intl.string(g.t.DwAcMz),
+                                content: p.intl.string(p.t.DwAcMz),
                                 entry: e,
                                 whenReady: !0,
                                 doNotNotifyOnError: !1,
@@ -140,7 +140,7 @@ function p(e) {
                     t.type
             }
         }, [e]),
-        handleContextMenu: a.useCallback(e => {
+        handleContextMenu: l.useCallback(e => {
             switch (e.type) {
                 case u.K.FRIEND_ROW:
                     if (null == e.user) return;
@@ -228,9 +228,9 @@ function p(e) {
                     let t = e.guild?.id ?? null;
                     (0, s.L3)(e.event, async () => {
                         let {
-                            default: a
+                            default: l
                         } = await Promise.all([n.e("97262"), n.e("32418"), n.e("54631")]).then(n.bind(n, 668569));
-                        return n => (0, i.jsx)(a, {
+                        return n => (0, i.jsx)(l, {
                             ...n,
                             user: e.user,
                             guildId: t ?? void 0,

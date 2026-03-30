@@ -24,8 +24,8 @@ var a = n(627968),
     A = n(309010),
     C = n(837921),
     y = n(652215),
-    T = n(327337),
-    S = n(431804),
+    S = n(327337),
+    T = n(431804),
     E = n(413269),
     N = n(885106);
 
@@ -47,7 +47,7 @@ function k() {
                 size: "sm",
                 text: "Launch Vibing Wumpus",
                 onClick: () => (0, f.A)({
-                    source: S.y.KEYBIND
+                    source: T.y.KEYBIND
                 })
             })
         }), (0, a.jsx)("div", {
@@ -70,7 +70,7 @@ function k() {
                             ...n
                         })
                     }, {
-                        modalKey: T.V
+                        modalKey: S.V
                     })
                 }
             })

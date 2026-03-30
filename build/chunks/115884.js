@@ -3,9 +3,9 @@ n.d(t, {
     A: () => x
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    r = n.n(a),
     s = n(284009),
     o = n.n(s),
     d = n(421380),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(395422),
     _ = n(652215),
     m = n(650583),
-    g = n(985018),
-    p = n(323687),
+    p = n(985018),
+    g = n(323687),
     E = n(885106);
 let I = n(892799),
     f = {
@@ -50,14 +50,14 @@ function S(e, t) {
 
 function x(e) {
     let {
-        placeholder: t = g.intl.string(g.t["Rn/sLl"])
-    } = e, n = a.useRef(null), l = a.useRef(null), [s, A] = a.useReducer(S, f), {
+        placeholder: t = p.intl.string(p.t["Rn/sLl"])
+    } = e, n = l.useRef(null), a = l.useRef(null), [s, A] = l.useReducer(S, f), {
         canSend: x,
         hint: v,
         error: y,
         success: b
     } = s;
-    return a.useEffect(() => {
+    return l.useEffect(() => {
         null != b && (o()(null != n.current, "Input is submitting when not mounted"), n.current.value = "", n.current.focus())
     }, [b, n]), (0, i.jsxs)("form", {
         onSubmit: e => {
@@ -75,7 +75,7 @@ function x(e) {
                 }
             }).then(() => A({
                 type: "SUCCESS",
-                text: g.intl.format(g.t.Rtl1Ep, {
+                text: p.intl.format(p.t.Rtl1Ep, {
                     discordTag: t
                 })
             }), e => A({
@@ -85,39 +85,39 @@ function x(e) {
         },
         autoComplete: "off",
         children: [(0, i.jsxs)("div", {
-            className: p.QR,
+            className: g.QR,
             children: [(0, i.jsx)(c.Text, {
                 tag: "div",
                 variant: "heading-md/normal",
-                children: g.intl.string(g.t["Rn/sLl"])
+                children: p.intl.string(p.t["Rn/sLl"])
             }), (0, i.jsx)("img", {
                 src: I,
                 alt: "Wumpus Waving"
             })]
         }), (0, i.jsx)(c.vN3, {
             focusTarget: n,
-            ringTarget: l,
-            ringClassName: p.hN,
+            ringTarget: a,
+            ringClassName: g.hN,
             children: (0, i.jsxs)("div", {
-                ref: l,
-                className: r()(p.fc, {
-                    [p.kX]: b,
-                    [p.z3]: y
+                ref: a,
+                className: r()(g.fc, {
+                    [g.kX]: b,
+                    [g.z3]: y
                 }),
                 children: [(0, i.jsx)(d.ob, {
                     id: C,
                     inputRef: n,
-                    className: p.QP,
-                    inputClassName: p.hF,
+                    className: g.QP,
+                    inputClassName: g.hF,
                     onKeyPress: e => {
                         let t = e.currentTarget.value;
                         if (e.key !== m.N$.Enter && t.includes("#")) {
                             o()(null != n.current, "Input is handling keypress when not mounted");
                             let i = t.indexOf("#"),
-                                a = n.current.selectionStart,
-                                l = e.key === m.N$.Backspace || e.key === m.N$.ArrowRight || e.key === m.N$.ArrowLeft,
+                                l = n.current.selectionStart,
+                                a = e.key === m.N$.Backspace || e.key === m.N$.ArrowRight || e.key === m.N$.ArrowLeft,
                                 r = e.which >= 48 && e.which <= 57;
-                            null != a && a > i && /^(.+?#\d{4})$/.test(t) && !l ? e.preventDefault() : null == a || !(a > i) || r || l || e.preventDefault()
+                            null != l && l > i && /^(.+?#\d{4})$/.test(t) && !a ? e.preventDefault() : null == l || !(l > i) || r || a || e.preventDefault()
                         }
                     },
                     onChange: e => {
@@ -143,13 +143,13 @@ function x(e) {
                     "aria-invalid": null != y || void 0,
                     "aria-describedby": null != y ? N : T
                 }), null != v && (0, i.jsx)("div", {
-                    className: p.dQ,
+                    className: g.dQ,
                     "aria-hidden": !0,
                     children: v
                 }), (0, i.jsx)(c.Button, {
                     variant: "primary",
                     size: "sm",
-                    text: g.intl.string(g.t["PMsq/b"]),
+                    text: p.intl.string(p.t["PMsq/b"]),
                     disabled: !x,
                     type: "submit"
                 })]

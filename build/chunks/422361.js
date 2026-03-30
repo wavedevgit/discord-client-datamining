@@ -65,9 +65,9 @@ class en extends W.Ay {
     };
     ref = s.createRef();
     channelItemRef = s.createRef();
-    activitiesHideTimeout = new o.Ep;
+    activitiesHoverTimeout = new o.Ep;
     componentWillUnmount() {
-        this.activitiesHideTimeout.stop()
+        this.activitiesHoverTimeout.stop()
     }
     closeGuildVerificationPopout = () => {
         this.setState({
@@ -116,25 +116,29 @@ class en extends W.Ay {
         })
     };
     handleMouseEnter = () => {
+        this.activitiesHoverTimeout.stop(), this.setState({
+            hovered: !0
+        });
         let {
             enableHistoryHover: e
         } = (0, U.NH)({
             guildId: this.props.channel.guild_id,
             location: "VoiceChannel"
-        }), t = this.getVoiceStatesCount(), n = null;
-        e && t > 0 && (n = "history"), this.activitiesHideTimeout.stop(), this.setState({
-            hovered: !0,
-            popoutToShow: n
+        });
+        this.activitiesHoverTimeout.start(100, () => {
+            e && this.getVoiceStatesCount() > 0 && this.setState({
+                popoutToShow: "history"
+            })
         })
     };
     handleMouseLeave = () => {
-        this.activitiesHideTimeout.start(100, () => this.setState({
+        this.activitiesHoverTimeout.start(100, () => this.setState({
             popoutToShow: null,
             hovered: !1
         }))
     };
     closePopout = () => {
-        this.activitiesHideTimeout.stop(), this.setState({
+        this.activitiesHoverTimeout.stop(), this.setState({
             popoutToShow: null
         })
     };
@@ -237,7 +241,9 @@ class en extends W.Ay {
             closePopout: this.closeGuildVerificationPopout
         }) : t || n ? null : "history" === s && this.getVoiceStatesCount() > 0 ? (0, i.jsx)(q.A, {
             channel: e,
-            source: "voice_channel"
+            source: "voice_channel",
+            onMouseEnter: this.handleMouseEnter,
+            onMouseLeave: this.handleMouseLeave
         }) : null
     };
     renderOpenChatButton = () => {

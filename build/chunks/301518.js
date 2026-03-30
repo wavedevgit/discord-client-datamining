@@ -2,16 +2,16 @@
 n.d(t, {
     S: () => r
 });
-var a = n(224771),
+var a = n(123633),
     l = n(624210),
-    i = n(224949);
+    i = n(26279);
 async function r(e) {
     let {
         checkoutSucceeded: t
     } = e;
     if (t) return;
-    let n = i.A.currentOrder;
-    if (n?.id != null && n.status === a.Re.DRAFT) try {
+    let n = a.A.currentOrder;
+    if (n?.id != null && n.status === i.Re.DRAFT) try {
         await (0, l.Nl)(n.id)
     } catch (e) {}
 }

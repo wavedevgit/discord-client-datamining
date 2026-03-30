@@ -3,8 +3,8 @@ n.d(t, {
     A: () => G
 });
 var i = n(73153),
-    a = n(827343),
-    l = n(684013),
+    l = n(827343),
+    a = n(684013),
     r = n(956793),
     s = n(401843),
     o = n(55619),
@@ -15,8 +15,8 @@ var i = n(73153),
     h = n(572164),
     _ = n(399925),
     m = n(963169),
-    g = n(652896),
-    p = n(349963),
+    p = n(652896),
+    g = n(349963),
     E = n(140175),
     I = n(528772),
     f = n(123973),
@@ -36,14 +36,14 @@ let D = new Map;
 
 function M(e, t, n, i) {
     if (!S.A.isConnected()) return;
-    let a = i.context ?? P.x.DEFAULT,
-        l = D.get(a);
-    null == l && (l = {
+    let l = i.context ?? P.x.DEFAULT,
+        a = D.get(l);
+    null == a && (a = {
         held: new Set,
         priorityHeld: new Set
-    }, D.set(a, l)), n || (e ? l.held.add(i.id) : l.held.delete(i.id)), t && (e ? l.priorityHeld.add(i.id) : l.priorityHeld.delete(i.id));
-    let r = l.held.size > 0,
-        s = l.priorityHeld.size > 0;
+    }, D.set(l, a)), n || (e ? a.held.add(i.id) : a.held.delete(i.id)), t && (e ? a.priorityHeld.add(i.id) : a.priorityHeld.delete(i.id));
+    let r = a.held.size > 0,
+        s = a.priorityHeld.size > 0;
     (0, E.N)(r, s)
 }
 let j = {
@@ -87,7 +87,7 @@ let j = {
     },
     [R.hCu.PUSH_TO_MUTE]: {
         onTrigger(e) {
-            N.Ay.getMode() === R.TBI.VOICE_ACTIVITY && (j[R.hCu.PUSH_TO_MUTE].isPressed = e, a.A.setTemporarySelfMute(e))
+            N.Ay.getMode() === R.TBI.VOICE_ACTIVITY && (j[R.hCu.PUSH_TO_MUTE].isPressed = e, l.A.setTemporarySelfMute(e))
         },
         keyEvents: {
             keyup: !0,
@@ -96,7 +96,7 @@ let j = {
         isPressed: !1
     },
     [R.hCu.TOGGLE_MUTE]: {
-        onTrigger: () => a.A.toggleSelfMute({
+        onTrigger: () => l.A.toggleSelfMute({
             usedKeybind: !0,
             location: "Custom Keybind"
         }),
@@ -106,7 +106,7 @@ let j = {
         }
     },
     [R.hCu.TOGGLE_DEAFEN]: {
-        onTrigger: () => a.A.toggleSelfDeaf({
+        onTrigger: () => l.A.toggleSelfDeaf({
             usedKeybind: !0,
             location: "Custom Keybind"
         }),
@@ -125,7 +125,7 @@ let j = {
     [R.hCu.TOGGLE_VOICE_MODE]: {
         onTrigger() {
             let e = N.Ay.getMode() === R.TBI.PUSH_TO_TALK ? R.TBI.VOICE_ACTIVITY : R.TBI.PUSH_TO_TALK;
-            a.A.setMode(e)
+            l.A.setMode(e)
         },
         keyEvents: {
             keyup: !0,
@@ -143,7 +143,7 @@ let j = {
         onTrigger(e, t) {
             if (!(0, v.DV)(t.shortcut)) return;
             let n = (0, L.A)();
-            null != n && l.A.setInputLocked(!b.default.isLocked(n), n)
+            null != n && a.A.setInputLocked(!b.default.isLocked(n), n)
         },
         keyEvents: {
             keyup: !0,
@@ -154,7 +154,7 @@ let j = {
         onTrigger() {
             let e = y.default.getFocusedPID(),
                 t = null != e;
-            null != e && t && b.default.isPinned(R.uss.TEXT) && b.default.isLocked(e) && y.default.isReady(e) && l.A.activateRegion(R.ajI.TEXT_WIDGET)
+            null != e && t && b.default.isPinned(R.uss.TEXT) && b.default.isLocked(e) && y.default.isReady(e) && a.A.activateRegion(R.ajI.TEXT_WIDGET)
         },
         keyEvents: {
             keyup: !0,
@@ -164,8 +164,8 @@ let j = {
     [R.hCu.TOGGLE_GO_LIVE_STREAMING]: {
         onTrigger() {
             let e = T.A.getCurrentUserActiveStream();
-            if (null != e) return (0, s.vN)((0, g._z)(e));
-            (0, p.A)(!0, [u.A.GO_LIVE_KEYBIND])
+            if (null != e) return (0, s.vN)((0, p._z)(e));
+            (0, g.A)(!0, [u.A.GO_LIVE_KEYBIND])
         },
         keyEvents: {
             keyup: !0,

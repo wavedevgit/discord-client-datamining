@@ -3,8 +3,8 @@ n.d(t, {
     A: () => _
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(311907),
+    l = n(64700),
+    a = n(311907),
     r = n(397927),
     s = n(189252),
     o = n(851580),
@@ -19,29 +19,29 @@ function _(e) {
         onOpen: t,
         onClose: n,
         "data-jump-section": _
-    } = e, m = (0, l.bG)([c.default], () => c.default.getCurrentUser()), g = a.useRef(null), p = (0, l.bG)([d.Ay], () => m?.id != null && d.Ay.getMentionCount(m.id, A.P.NOTIFICATION_CENTER) > 0);
+    } = e, m = (0, a.bG)([c.default], () => c.default.getCurrentUser()), p = l.useRef(null), g = (0, a.bG)([d.Ay], () => m?.id != null && d.Ay.getMentionCount(m.id, A.P.NOTIFICATION_CENTER) > 0);
     return (0, i.jsx)(u.C, {
-        targetElementRef: g,
+        targetElementRef: p,
         onOpen: t,
         onClose: n,
         badgeState: {
-            badgeForYou: p
+            badgeForYou: g
         },
         popoutPosition: "bottom",
         popoutAlign: "right",
-        children: (e, t, n, a) => (0, i.jsxs)(i.Fragment, {
+        children: (e, t, n, l) => (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(s.A, {
                 ...n,
                 icon: r.K$s,
                 tooltip: h.intl.string(h.t.GSmTKJ),
                 onClick: e,
-                showBadge: p || a,
+                showBadge: g || l,
                 selected: t,
                 "data-jump-section": _,
-                ref: g
+                ref: p
             }), (0, i.jsx)(o.v, {
                 location: "inbox-button",
-                targetElementRef: g
+                targetElementRef: p
             })]
         })
     })

@@ -3,8 +3,8 @@ n.d(t, {
     A: () => o
 });
 var i = n(420970),
-    a = n(287809),
-    l = n(639621),
+    l = n(287809),
+    a = n(639621),
     r = n(613057),
     s = n(652215);
 let o = {
@@ -17,8 +17,8 @@ let o = {
                 args: {
                     id: t
                 }
-            } = e, n = a.default.getUser(t);
-            return null == n ? null : (0, l.A)(n)
+            } = e, n = l.default.getUser(t);
+            return null == n ? null : (0, a.A)(n)
         }
     })
 }

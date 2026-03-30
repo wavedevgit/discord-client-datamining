@@ -3,9 +3,9 @@ n.d(t, {
     A: () => O
 }), n(321073);
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    r = n.n(a),
     s = n(735438),
     o = n.n(s),
     d = n(311907),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(775602),
     _ = n(142120),
     m = n(552122),
-    g = n(400492),
-    p = n(312671),
+    p = n(400492),
+    g = n(312671),
     E = n(210714),
     I = n(773669),
     f = n(437959),
@@ -27,7 +27,7 @@ var i = n(627968),
     x = n(652215),
     v = n(985018),
     y = n(540528);
-class b extends a.PureComponent {
+class b extends l.PureComponent {
     videoRef = null;
     _noProblemsTimeout = null;
     _problemsTimeout = null;
@@ -115,7 +115,7 @@ class b extends a.PureComponent {
     createSound() {
         let {
             soundpack: e
-        } = this.props, t = (0, g.aN)("discodo", e);
+        } = this.props, t = (0, p.aN)("discodo", e);
         return t.volume = 1, t
     }
     componentDidMount() {
@@ -125,19 +125,19 @@ class b extends a.PureComponent {
         let {
             ready: n,
             hide: i,
-            problems: a
+            problems: l
         } = this.state, {
-            connected: l,
+            connected: a,
             soundpack: r
-        } = this.props, s = l && n && !i && !a;
-        e.soundpack !== r && (this._connectedSound = this.createSound()), e.connected !== l || s ? (l && (0, E.D)(), l && null != this.videoRef && c.w.get(x.wqg) && this._connectedSound.play(), this.setState({
+        } = this.props, s = a && n && !i && !l;
+        e.soundpack !== r && (this._connectedSound = this.createSound()), e.connected !== a || s ? (a && (0, E.D)(), a && null != this.videoRef && c.w.get(x.wqg) && this._connectedSound.play(), this.setState({
             problems: !1,
-            hide: l
+            hide: a
         })) : t.hide !== i ? (i ? this.clearProblemsTimeout() : this.setProblemsTimeout(), this.setState({
             shouldRender: !0
         }), setTimeout(() => this.setState({
             shouldRender: !i
-        }), 200)) : t.problems !== a && a && A.A.checkIncidents()
+        }), 200)) : t.problems !== l && l && A.A.checkIncidents()
     }
     componentWillUnmount() {
         this.clearProblemsTimeout()
@@ -167,9 +167,9 @@ class b extends a.PureComponent {
         } = this.state;
         if (!this.state.shouldRender) return null;
         {
-            let a = this._loadingText,
-                l = null;
-            return null != this._eventLoadingText && (a = this._eventLoadingText), null != t && (a = t.name, l = t.incident_updates[0].body), (0, i.jsxs)("div", {
+            let l = this._loadingText,
+                a = null;
+            return null != this._eventLoadingText && (l = this._eventLoadingText), null != t && (l = t.name, a = t.incident_updates[0].body), (0, i.jsxs)("div", {
                 className: y.kL,
                 "data-fade": n,
                 style: {
@@ -191,10 +191,10 @@ class b extends a.PureComponent {
                             children: v.intl.string(v.t.v0R1Lh)
                         }), (0, i.jsx)("div", {
                             className: null != t ? y.DD : y.uN,
-                            children: a
+                            children: l
                         }), (0, i.jsx)("div", {
                             className: y.rf,
-                            children: l
+                            children: a
                         })]
                     })]
                 }), (0, i.jsxs)("div", {
@@ -228,24 +228,24 @@ class b extends a.PureComponent {
         }
     }
 }
-let O = d.Ay.connectStores([_.A, f.A, p.A, h.A], () => ({
+let O = d.Ay.connectStores([_.A, f.A, g.A, h.A], () => ({
     isTryingToConnect: _.A.isTryingToConnect(),
     connected: _.A.isConnected(),
     incident: f.A.getIncident(),
-    soundpack: p.A.getSoundpack(),
+    soundpack: g.A.getSoundpack(),
     reducedMotion: h.A.useReducedMotion
 }))(e => {
     let {
         isTryingToConnect: t,
         connected: n,
-        incident: a,
-        soundpack: l,
+        incident: l,
+        soundpack: a,
         reducedMotion: r
     } = e;
     return t ? (0, i.jsx)(b, {
         reducedMotion: r,
-        soundpack: l,
+        soundpack: a,
         connected: n,
-        incident: a
+        incident: l
     }) : null
 })

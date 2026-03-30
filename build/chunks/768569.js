@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(342494),
-    l = n(397927),
+var l = n(342494),
+    a = n(397927),
     r = n(688810),
     s = n(532794),
     o = n(113359),
@@ -19,17 +19,17 @@ let m = e => {
     let {
         targetElementRef: t,
         dismissPopover: m,
-        children: g
-    } = e, p = (0, o.QG)({
+        children: p
+    } = e, g = (0, o.QG)({
         location: "nitro_tab_popover"
     }) === o.xb.POPOVER, {
         analyticsLocations: E
-    } = (0, r.Ay)(), I = p ? h.intl.string(A.default.oOSj1l) : h.intl.format(A.default["c+NBSl"], {
+    } = (0, r.Ay)(), I = g ? h.intl.string(A.default.oOSj1l) : h.intl.format(A.default["c+NBSl"], {
         premiumGroupProductName: (0, c.DP)()
-    }), f = p ? h.intl.string(A.default.nCLJQn) : h.intl.format(A.default.MuUV5u, {
+    }), f = g ? h.intl.string(A.default.nCLJQn) : h.intl.format(A.default.MuUV5u, {
         premiumGroupProductName: (0, c.DP)(),
         totalSeats: c.aw
-    }), C = (0, i.jsx)(a.AM, {
+    }), C = (0, i.jsx)(l.AM, {
         targetElementRef: t,
         title: I,
         body: f,
@@ -49,16 +49,16 @@ let m = e => {
             align: "start"
         },
         actions: [{
-            text: p ? h.intl.format(A.default.LwdrNi, {
+            text: g ? h.intl.format(A.default.LwdrNi, {
                 premiumGroupProductName: (0, c.DP)()
             }) : h.intl.string(A.default["IO+nlU"]),
-            variant: p ? "expressive" : "primary",
+            variant: g ? "expressive" : "primary",
             onClick: () => {
-                m(u.i.TAKE_ACTION), p ? (0, s.A)({
+                m(u.i.TAKE_ACTION), g ? (0, s.A)({
                     subscriptionTier: d.pe.TIER_2,
                     initialPlanId: d.gD.PREMIUM_GROUP_MONTH,
                     analyticsLocations: E
-                }) : (0, l.mMO)(async () => {
+                }) : (0, a.mMO)(async () => {
                     let {
                         default: e
                     } = await n.e("91976").then(n.bind(n, 526710));
@@ -67,8 +67,8 @@ let m = e => {
                     })
                 })
             },
-            ...p ? {
-                icon: l.tvc,
+            ...g ? {
+                icon: a.tvc,
                 iconPosition: "start"
             } : {}
         }],
@@ -76,7 +76,7 @@ let m = e => {
     });
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
-            children: g
+            children: p
         }), C]
     })
 }

@@ -3,8 +3,8 @@ n.d(t, {
     A: () => m
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(835245),
+    l = n(64700),
+    a = n(835245),
     r = n(607399),
     s = n(732955),
     o = n(397927),
@@ -18,8 +18,8 @@ var i = n(627968),
 function m(e) {
     let {
         applicationId: t
-    } = e, [m, g] = a.useState(null), [p, E] = a.useState(!1), I = a.useRef(!1), f = !c.isPlatformEmbedded && !r.Fr, C = a.useMemo(() => (0, l.A)(), []);
-    if (a.useEffect(() => {
+    } = e, [m, p] = l.useState(null), [g, E] = l.useState(!1), I = l.useRef(!1), f = !c.isPlatformEmbedded && !r.Fr, C = l.useMemo(() => (0, a.A)(), []);
+    if (l.useEffect(() => {
             f && !0 !== I.current ? (Promise.resolve().then(n.bind(n, 129014)).then(e => {
                 let {
                     default: n
@@ -33,12 +33,12 @@ function m(e) {
                     }
                 }).then(e => {
                     let t = e ?? !1;
-                    g(t), t || E(!0)
+                    p(t), t || E(!0)
                 }).catch(() => {
-                    g(!1), E(!0)
+                    p(!1), E(!0)
                 }).then(() => n.disconnect())
             }), I.current = !0) : f || E(!0)
-        }, [t, f, C]), p) return (0, i.jsx)(d.A, {});
+        }, [t, f, C]), g) return (0, i.jsx)(d.A, {});
     if (f && !1 !== m)
         if (!0 === m) return (0, i.jsxs)("div", {
             className: _.k,

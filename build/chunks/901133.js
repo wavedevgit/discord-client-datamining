@@ -3,9 +3,9 @@ n.d(t, {
     A: () => C
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    r = n.n(a),
     s = n(990078),
     o = n(397927),
     d = n(793574),
@@ -15,13 +15,13 @@ var i = n(627968),
     h = n(975571),
     _ = n(42473),
     m = n(994314),
-    g = n(485599),
-    p = n(652215),
+    p = n(485599),
+    g = n(652215),
     E = n(985018),
     I = n(919992);
-class f extends a.PureComponent {
-    partyMemberAvatarRef = a.createRef();
-    partyMemberOverflowRef = a.createRef();
+class f extends l.PureComponent {
+    partyMemberAvatarRef = l.createRef();
+    partyMemberOverflowRef = l.createRef();
     isHost() {
         let {
             currentUser: e,
@@ -31,7 +31,7 @@ class f extends a.PureComponent {
     }
     renderTitle() {
         return (0, i.jsxs)("div", {
-            children: [(0, i.jsx)(g.A, {
+            children: [(0, i.jsx)(p.A, {
                 children: this.isHost() ? E.intl.formatToPlainString(E.t["6UJ7mh"], {
                     count: this.props.party.length
                 }) : E.intl.string(E.t.RZufbH)
@@ -54,20 +54,20 @@ class f extends a.PureComponent {
         let n;
         if (null == e) return null;
         let {
-            host: l,
+            host: a,
             onUserContextMenu: c
         } = this.props;
-        return n = l?.id === e.id ? E.intl.string(E.t["N9bqD+"]) : E.intl.string(E.t.Z2Y4c9), (0, i.jsx)(u.A, {
+        return n = a?.id === e.id ? E.intl.string(E.t["N9bqD+"]) : E.intl.string(E.t.Z2Y4c9), (0, i.jsx)(u.A, {
             targetElementRef: this.partyMemberAvatarRef,
             user: e,
             newAnalyticsLocations: [d.A.AVATAR],
             position: "top",
             align: "center",
             clickTrap: !0,
-            children: l => (0, i.jsx)(s.m, {
+            children: a => (0, i.jsx)(s.m, {
                 text: n,
-                children: (0, a.createElement)(o.euF, {
-                    ...l,
+                children: (0, l.createElement)(o.euF, {
+                    ...a,
                     key: e.id,
                     src: e.getAvatarURL(void 0, 24),
                     size: o._3J.SIZE_24,
@@ -81,10 +81,10 @@ class f extends a.PureComponent {
     };
     renderPartyMemberOverflow = (e, t, n) => {
         let {
-            renderOverflowPopout: a
+            renderOverflowPopout: l
         } = this.props;
         return (0, i.jsx)(o.YNO, {
-            renderPopout: a,
+            renderPopout: l,
             targetElementRef: this.partyMemberOverflowRef,
             children: n => (0, i.jsx)(s.m, {
                 text: E.intl.string(E.t.Zf4NPe),
@@ -101,7 +101,7 @@ class f extends a.PureComponent {
         return this.isHost() ? (0, i.jsx)(_.A, {
             tooltipText: E.intl.string(E.t.U7N2Hs),
             onClick: () => {
-                window.open(h.A.getArticleURL(p.MVz.SPOTIFY_CONNECTION), "_blank")
+                window.open(h.A.getArticleURL(g.MVz.SPOTIFY_CONNECTION), "_blank")
             },
             icon: o.mir
         }) : null

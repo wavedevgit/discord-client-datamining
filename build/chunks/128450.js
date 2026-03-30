@@ -4,8 +4,8 @@ r.d(t, {
 });
 var a = r(627968),
     n = r(64700),
-    i = r(503698),
-    s = r.n(i),
+    s = r(503698),
+    i = r.n(s),
     l = r(397927),
     o = r(453771),
     d = r(450232),
@@ -32,36 +32,36 @@ let _ = n.forwardRef(function(e, t) {
     let {
         title: r,
         titleIcon: n,
-        titleId: i,
+        titleId: s,
         description: o,
         children: _,
         className: p,
         errors: f,
-        disabled: b = !1,
-        hideDivider: h = !1,
-        showBorder: g = !1,
-        borderType: x,
+        disabled: h = !1,
+        hideDivider: b = !1,
+        showBorder: x = !1,
+        borderType: g,
         hasBackground: C = !1,
         forcedDivider: A = !1,
         showPremiumIcon: R = !1
     } = e;
     return (0, a.jsx)("div", {
-        className: s()(u.fz, p, {
-            [u.r9]: b,
-            [u.Ai]: h,
-            [u.Ac]: g,
+        className: i()(u.fz, p, {
+            [u.r9]: h,
+            [u.Ai]: b,
+            [u.Ac]: x,
             [u.Cx]: A
         }),
         ref: t,
         children: (0, a.jsxs)(c.A, {
             className: u.D6,
             backgroundClassName: u.fr,
-            isShown: g,
-            type: x,
+            isShown: x,
+            type: g,
             hasBackground: C,
             children: [(0, a.jsxs)(l.zEo, {
                 className: u.DD,
-                id: i,
+                id: s,
                 "data-migration-pending": !0,
                 children: [r, R && (0, a.jsx)(d.A, {
                     size: "xs"
