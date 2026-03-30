@@ -10,8 +10,8 @@ var l = n(311907),
     a = n(688810),
     o = n(206835),
     c = n(961350),
-    u = n(696451),
-    d = n(229527),
+    d = n(696451),
+    u = n(229527),
     _ = n(81400),
     E = n(340837),
     T = n(355097),
@@ -53,10 +53,10 @@ function N(e) {
         ...n
     } = e, {
         analyticsLocations: r
-    } = (0, a.Ay)(t, s.A.AUTOMOD_NAGBAR_NOTICE), o = (0, l.bG)([c.default, u.Ay], () => {
+    } = (0, a.Ay)(t, s.A.AUTOMOD_NAGBAR_NOTICE), o = (0, l.bG)([c.default, d.Ay], () => {
         if (null == n.guildId) return new Set;
         let e = c.default.getId();
-        return (0, d.wj)(u.Ay.getMember(n.guildId, e))
+        return (0, u.wj)(d.Ay.getMember(n.guildId, e))
     }, [n.guildId]);
     return o.has(E.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || o.has(E.D.AUTOMOD_QUARANTINED_BIO) ? (0, i.jsx)(I, {
         ...n,

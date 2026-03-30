@@ -28,8 +28,8 @@ let g = e => {
     } = e, C = (0, o.GV)(), {
         nodes: T,
         root_node_id: j,
-        success_node_id: N,
-        fail_node_id: I
+        success_node_id: I,
+        fail_node_id: N
     } = n, [S, y] = a.useState(j), [E, k] = a.useState(void 0), [w, R] = a.useState(void 0), [M, L] = a.useState([]), [O, G] = a.useState(void 0), [D, P] = a.useState(void 0), [B, U] = a.useState(void 0);
     (0, s.Ay)(() => {
         (0, u.VE)()
@@ -103,7 +103,7 @@ let g = e => {
             t = [];
         for (let n in T) {
             let l = T[n];
-            if (l.id !== N && l.id !== I && l.id !== j) {
+            if (l.id !== I && l.id !== N && l.id !== j) {
                 if (l.key.endsWith("_SUBMIT") || l.button?.type === "submit") {
                     t.push(l);
                     continue
@@ -114,8 +114,8 @@ let g = e => {
                 }
             }
         }
-        return [T[j], ...e, ...t, T[N], T[I]]
-    }, [T, j, I, N]);
+        return [T[j], ...e, ...t, T[I], T[N]]
+    }, [T, j, N, I]);
     return (0, l.jsx)(i.EOs, {
         "data-migration-pending": !0,
         transitionState: g.transitionState,
@@ -140,8 +140,8 @@ let g = e => {
                         onNavigateToNode: W,
                         multiSelect: E,
                         textInput: w,
-                        successNodeId: N,
-                        failNodeId: I,
+                        successNodeId: I,
+                        failNodeId: N,
                         onSubmit: V,
                         reportId: O,
                         nodeMap: T,

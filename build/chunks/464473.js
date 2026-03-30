@@ -9,9 +9,9 @@ var i = n(627968),
     a = n(916768),
     o = n(942405),
     c = n(652215),
-    u = n(985018);
+    d = n(985018);
 
-function d() {
+function u() {
     (0, o.sL)("nagbar")
 }
 
@@ -21,10 +21,10 @@ function _() {
         children: [(0, i.jsx)(r.PMB, {
             noticeType: c.kqX.SYSTEM_SERVICE_WARNING,
             onClick: () => (0, a.w)()
-        }), u.intl.string(u.t["5rPt+j"]), (0, i.jsx)(r.Z_L, {
-            onClick: d,
+        }), d.intl.string(d.t["5rPt+j"]), (0, i.jsx)(r.Z_L, {
+            onClick: u,
             noticeType: c.kqX.SYSTEM_SERVICE_WARNING,
-            children: u.intl.string(u.t["1iI46O"])
+            children: d.intl.string(d.t["1iI46O"])
         })]
     })
 }

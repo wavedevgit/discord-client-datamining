@@ -9,8 +9,8 @@ var i = n(562465),
     a = n(95701),
     o = n(51271),
     c = n(844944),
-    u = n(513461),
-    d = n(212455),
+    d = n(513461),
+    u = n(212455),
     _ = n(652215),
     E = n(985018);
 let T = {
@@ -19,7 +19,7 @@ let T = {
                 url: _.Rsh.GUILD_JOIN_REQUEST_BY_ID(e),
                 rejectWithError: !1
             }),
-            n = (0, d.j)(t.body);
+            n = (0, u.j)(t.body);
         return l.h.dispatch({
             type: "GUILD_JOIN_REQUEST_BY_ID_FETCH_SUCCESS",
             joinRequest: n
@@ -28,7 +28,7 @@ let T = {
     fetchGuildJoinRequests: async e => {
         let {
             guildId: t,
-            status: n = u.B5.SUBMITTED,
+            status: n = d.B5.SUBMITTED,
             before: r,
             after: s,
             limit: a = 25,
@@ -50,7 +50,7 @@ let T = {
                         rejectWithError: !1
                     }),
                     o = e.body.total,
-                    c = (e.body.guild_join_requests ?? []).map(d.j);
+                    c = (e.body.guild_join_requests ?? []).map(u.j);
                 return l.h.dispatch({
                     type: "GUILD_JOIN_REQUESTS_FETCH_SUCCESS",
                     status: n,
@@ -96,7 +96,7 @@ let T = {
         }
     },
     updateGuildJoinRequest: async function(e, t, n) {
-        let s = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : u.B5.APPROVED,
+        let s = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : d.B5.APPROVED,
             a = arguments.length > 4 ? arguments[4] : void 0;
         (0, o.iN)({
             guildId: e,

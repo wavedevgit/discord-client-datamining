@@ -9,8 +9,8 @@ var i = n(627968),
     a = n(554146),
     o = n(916768),
     c = n(617108),
-    u = n(745299),
-    d = n(816733),
+    d = n(745299),
+    u = n(816733),
     _ = n(927578),
     E = n(160761),
     T = n(49999),
@@ -23,12 +23,12 @@ let p = e => {
     } = e, r = l.useMemo(() => {
         switch (n) {
             case A.kqX.PREMIUM_TIER_2_TRIAL_ENDING:
-                let e = d.A.getAlmostExpiringTrialOffersForReminder([I.pe.TIER_2]);
+                let e = u.A.getAlmostExpiringTrialOffersForReminder([I.pe.TIER_2]);
                 return {
                     cooldownDurationMs: (0, _.e1)(e[0])
                 };
             case A.kqX.PREMIUM_TIER_2_DISCOUNT_ENDING:
-                let t = d.A.getAlmostExpiringDiscountOffersForReminder([I.pe.TIER_2]);
+                let t = u.A.getAlmostExpiringDiscountOffersForReminder([I.pe.TIER_2]);
                 return {
                     cooldownDurationMs: (0, _.e1)(t[0])
                 };
@@ -40,7 +40,7 @@ let p = e => {
     }, [n]), p = s()().add(5, "days").toDate(), [N, m] = (0, E.Bo)(t, r, T.m.NOTICE_BAR);
     if (null == N) return null;
     if (N === a.M.NAGBAR_NOTICE_OFFER_EXPIRING) {
-        if (n === A.kqX.PREMIUM_TIER_2_TRIAL_ENDING) return (0, i.jsx)(u.A, {
+        if (n === A.kqX.PREMIUM_TIER_2_TRIAL_ENDING) return (0, i.jsx)(d.A, {
             dismissCurrentNotice: () => {
                 m(T.i.USER_DISMISS), (0, o.w)(p)
             },

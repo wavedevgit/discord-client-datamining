@@ -9,8 +9,8 @@ var i = n(627968),
     a = n(397927),
     o = n(728364),
     c = n(264779),
-    u = n(597758),
-    d = n(780964),
+    d = n(597758),
+    u = n(780964),
     _ = n(840065),
     E = n(287809),
     T = n(954571),
@@ -32,7 +32,7 @@ let S = e => {
         autoTrackExposure: !1,
         disable: S
     }), C = l.useCallback(() => {
-        T.default.track(N.HAw.OUTBOUND_PROMOTION_NOTICE_CLICKED), (0, _.openUserSettings)(d.X.GIFT_PANEL), u.Ay.dismissOutboundPromotionNotice()
+        T.default.track(N.HAw.OUTBOUND_PROMOTION_NOTICE_CLICKED), (0, _.openUserSettings)(u.X.GIFT_PANEL), d.Ay.dismissOutboundPromotionNotice()
     }, []);
     return null == n ? null : (0, i.jsx)(I.YS, {
         contentType: t,
@@ -52,7 +52,7 @@ let S = e => {
                 children: [(0, i.jsx)(a.PMB, {
                     noticeType: N.kqX.OUTBOUND_PROMOTION,
                     onClick: () => {
-                        u.Ay.dismissOutboundPromotionNotice(), null !== n && n(p.i.USER_DISMISS)
+                        d.Ay.dismissOutboundPromotionNotice(), null !== n && n(p.i.USER_DISMISS)
                     }
                 }), (0, i.jsx)(a.tvc, {
                     size: "md",

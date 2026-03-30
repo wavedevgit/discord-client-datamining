@@ -10,8 +10,8 @@ var l = n(503698),
     a = n(935649),
     o = n(847599),
     c = n(734057),
-    u = n(309010),
-    d = n(849736),
+    d = n(309010),
+    u = n(849736),
     _ = n(354583),
     E = n(366098),
     T = n(418208),
@@ -22,10 +22,10 @@ function p(e) {
     if (!e && (0, T.Cf)()) return void a.A.showAgeVerificationGetStartedModal({
         entryPoint: o.q1.STAGE_CHANNEL_RAISE_HAND
     });
-    let t = u.A.getVoiceChannelId();
+    let t = d.A.getVoiceChannelId();
     if (null == t) return;
     let n = c.A.getChannel(t);
-    null != n && (0, d.e7)(n, e)
+    null != n && (0, u.e7)(n, e)
 }
 
 function N(e) {

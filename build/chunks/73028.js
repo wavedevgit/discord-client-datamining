@@ -11,10 +11,10 @@ var l = n(397927),
 let o = (e, t) => {
     let o = `group-dm-edit-modal-${e}`,
         c = !1,
-        u = e => {
+        d = e => {
             c = e
         },
-        d = () => {
+        u = () => {
             c ? r.A.show({
                 title: a.intl.string(a.t.pvRCSu),
                 body: a.intl.string(a.t.DRi46S),
@@ -30,14 +30,14 @@ let o = (e, t) => {
             default: l
         } = await n.e("42455").then(n.bind(n, 66442));
         return n => (0, i.jsx)(l, {
-            closeOrShowDiscardChangesAlert: d,
-            setHasPendingChanges: u,
+            closeOrShowDiscardChangesAlert: u,
+            setHasPendingChanges: d,
             channelId: e,
             location: t,
             ...n
         })
     }, {
         modalKey: o,
-        onCloseRequest: d
+        onCloseRequest: u
     })
 }

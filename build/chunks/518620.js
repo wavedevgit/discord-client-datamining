@@ -31,7 +31,7 @@ let h = function(e) {
         return null == r ? null : n(r, i)
     }, E = a.useCallback((e, n) => {
         let i = t[e]?.[n];
-        return m === c.m3P.ALL && i?.giftIntentType === u.np.FRIEND_ANNIVERSARY && 0 === e ? 72 : 62
+        return m === c.m3P.ALL && i?.giftIntentType === u.np.FRIEND_ANNIVERSARY && 0 === e ? 72 : 61
     }, [t, m]), I = a.useCallback(e => {
         let {
             section: t

@@ -10,8 +10,8 @@ var l = n(877624),
     a = n(397927),
     o = n(688810),
     c = n(532794),
-    u = n(412260),
-    d = n(357186),
+    d = n(412260),
+    u = n(357186),
     _ = n(379848),
     E = n(49999),
     T = n(652215),
@@ -23,13 +23,13 @@ let p = e => {
         noticeType: n
     } = e, {
         analyticsLocations: p
-    } = (0, o.Ay)(), N = (0, r.bG)([u.A], () => {
-        let e = u.A.getMarketingComponentByType(l.C.GIFT_REMINDER_NAGBAR);
+    } = (0, o.Ay)(), N = (0, r.bG)([d.A], () => {
+        let e = d.A.getMarketingComponentByType(l.C.GIFT_REMINDER_NAGBAR);
         return null == e || "giftReminderNagbar" !== e.properties.properties.oneofKind ? null : e.properties.properties.giftReminderNagbar
     });
     return (0, i.jsx)(_.GY, {
         contentType: t,
-        latestVersion: (0, d.c)(t),
+        latestVersion: (0, u.c)(t),
         groupName: E.m.NOTICE_BAR,
         bypassAutoDismiss: !0,
         children: e => {

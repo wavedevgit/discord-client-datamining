@@ -11,8 +11,8 @@ var i = n(73153),
     a = n(20015),
     o = n(793943),
     c = n(611010),
-    u = n(998218),
-    d = n(110782),
+    d = n(998218),
+    u = n(110782),
     _ = n(652215);
 async function E(e, t) {
     i.h.dispatch({
@@ -24,8 +24,8 @@ async function E(e, t) {
         let n = s.A.getApplication(e);
         null == n && (n = c.Ay.createFromServer(await r.Ay.fetchApplication(e)));
         let o = (0, a.n)(n, _.gfo.EMBEDDED);
-        if (o && (null == t || !u.A.URL_REGEX.test(t))) throw Error("Invalid Origin URL for embedded application");
-        return o || d.Cd(n), i.h.dispatch({
+        if (o && (null == t || !d.A.URL_REGEX.test(t))) throw Error("Invalid Origin URL for embedded application");
+        return o || u.Cd(n), i.h.dispatch({
             type: "DEVELOPER_TEST_MODE_AUTHORIZATION_SUCCESS",
             applicationId: e,
             originURL: o ? t : null

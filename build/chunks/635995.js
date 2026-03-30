@@ -1,6 +1,6 @@
 /** chunk id: 635995 params = (module,exports,require) **/
 n.d(t, {
-    In: () => d,
+    In: () => u,
     T0: () => E,
     fY: () => _
 });
@@ -12,15 +12,15 @@ var l = n(503698),
     a = n(397927),
     o = n(818348),
     c = n(985018),
-    u = n(843194);
-let d = e => {
+    d = n(843194);
+let u = e => {
         let {
             children: t
         } = e;
         return (0, i.jsx)(a.Heading, {
             variant: "heading-sm/medium",
             color: "text-strong",
-            className: u.ut,
+            className: d.ut,
             children: t
         })
     },
@@ -49,15 +49,15 @@ function E(e) {
         theme: o.NJ.DARKER,
         children: e => (0, i.jsxs)("div", {
             ref: n,
-            className: r()(u.lm, e, t),
+            className: r()(d.lm, e, t),
             children: [(0, i.jsx)("div", {
-                className: u.qZ,
+                className: d.qZ,
                 children: l
             }), (0, i.jsx)(a.DUT, {
                 focusProps: {
                     offset: 6
                 },
-                className: u.b,
+                className: d.b,
                 onClick: s,
                 "aria-label": c.intl.string(c.t.WAI6xu),
                 children: (0, i.jsx)(a.PGe, {

@@ -2,8 +2,8 @@
 s.d(t, {
     A: () => S
 });
-var n = s(735438),
-    i = s.n(n),
+var i = s(735438),
+    n = s.n(i),
     a = s(311907),
     o = s(73153),
     r = s(427157),
@@ -19,7 +19,7 @@ function p(e) {
     let t = null != e.contact_names && e.contact_names.length >= 2 ? e.contact_names.slice(0, 2) : [];
     return {
         key: e.suggested_user.id,
-        name: i().first(e.reasons)?.name,
+        name: n().first(e.reasons)?.name,
         user: new r.A(e.suggested_user),
         mutualFriendsCount: e.mutual_friends_count,
         contactNames: t
@@ -60,7 +60,7 @@ let S = new m(o.h, {
     },
     LOAD_FRIEND_SUGGESTIONS_SUCCESS: function(e) {
         var t;
-        g = !1, t = e.suggestions, _ = i().chain(t).map(e => p(e)).keyBy(e => e.key).value(), d = i().keys(_).length
+        g = !1, t = e.suggestions, _ = n().chain(t).map(e => p(e)).keyBy(e => e.key).value(), d = n().keys(_).length
     },
     LOAD_FRIEND_SUGGESTIONS_FAILURE: function() {
         g = !1, _ = {}

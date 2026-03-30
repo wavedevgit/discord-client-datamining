@@ -50,14 +50,14 @@ let g = e => {
                 })
             })
         }, [t.id, b, C, n]),
-        N = (0, r.bG)([m.A, _.A], () => {
+        I = (0, r.bG)([m.A, _.A], () => {
             let e = _.A.getGuild(b);
             if (null == e) return !1;
             let n = m.A.can(p.xBc.MANAGE_GUILD, e),
                 l = null == t.bot || m.A.canManageUser(p.xBc.MANAGE_GUILD, t.bot.id, e);
             return n && l
         });
-    return null != t && null != b && g && N ? (0, l.jsx)(c.PQ, {
+    return null != t && null != b && g && I ? (0, l.jsx)(c.PQ, {
         title: h.intl.string(h.t["WV/CsH"]),
         description: h.intl.string(h.t["FlcC+3"]),
         buttonText: v ? h.intl.string(h.t.aCJlq4) : h.intl.string(h.t["6I1F3i"]),

@@ -10,8 +10,8 @@ var l = n(554146),
     a = n(573648),
     o = n(975807),
     c = n(793574),
-    u = n(882997),
-    d = n(662427),
+    d = n(882997),
+    u = n(662427),
     _ = n(532794),
     E = n(745299),
     T = n(976860),
@@ -93,7 +93,7 @@ let O = e => {
                         }), (0, i.jsx)(p.A, {
                             className: C.tV
                         }), g.intl.string(g.t["5NUVHH"]), (0, i.jsx)(r.Z_L, {
-                            onClick: () => (0, u.A)({
+                            onClick: () => (0, d.A)({
                                 platformType: h.fg2.SPOTIFY,
                                 location: "Notice Bar"
                             }),
@@ -112,7 +112,7 @@ let O = e => {
                             className: C.tV,
                             src: a.A.get(h.fg2.PLAYSTATION).icon.whiteSVG
                         }), g.intl.string(g.t.WHWgoY), (0, i.jsx)(r.zr9, {
-                            onClick: () => (0, u.A)({
+                            onClick: () => (0, d.A)({
                                 platformType: h.fg2.PLAYSTATION,
                                 location: "Notice Bar"
                             }),
@@ -218,7 +218,7 @@ let O = e => {
                         })]
                     });
                 case l.M.NAGBAR_ACTIVATE_SERVER_SUBSCRIPTION:
-                    let y = d.A.getEligibleGuildsForNagActivate();
+                    let y = u.A.getEligibleGuildsForNagActivate();
                     return (0, i.jsxs)(r.$Td, {
                         color: r.Hv$.DEFAULT,
                         children: [(0, i.jsx)(r.PMB, {

@@ -108,6 +108,8 @@ function N(e) {
     }), [M, t.primaryGuild, z, n.author.id, O]), ef = s ?? n.author, eb = null != F && null != w ? (0, i.jsx)(I.A, {
         targetElementRef: W,
         user: ef,
+        guildId: z,
+        channelId: n.channel_id,
         renderPopout: F,
         shouldShow: w,
         shouldPreload: ei,

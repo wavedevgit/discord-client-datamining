@@ -10,8 +10,8 @@ var l = n(503698),
     a = n(311907),
     o = n(314116),
     c = n(397927),
-    u = n(334465),
-    d = n(71393),
+    d = n(334465),
+    u = n(71393),
     _ = n(967198),
     E = n(624458),
     T = n(202384),
@@ -25,10 +25,10 @@ var l = n(503698),
     S = n(215433);
 let g = () => {
     let e = (0, a.bG)([_.A], () => _.A.getGuildId(), []),
-        t = (0, a.bG)([d.A], () => d.A.getGuild(e), [e]),
+        t = (0, a.bG)([u.A], () => u.A.getGuild(e), [e]),
         l = (0, a.bG)([p.A], () => null != e ? p.A.getRequest(e) : null, [e]),
         g = (0, s.zy)(),
-        C = (0, u.B)(g.pathname, N.BVt.CHANNEL(t?.id, m.VV.GUILD_ONBOARDING))?.isExact === !0;
+        C = (0, d.B)(g.pathname, N.BVt.CHANNEL(t?.id, m.VV.GUILD_ONBOARDING))?.isExact === !0;
     if (null == t || !(0, I.Qd)(t) || C) return null;
     let O = l?.applicationStatus ?? A.B5.STARTED,
         y = null,

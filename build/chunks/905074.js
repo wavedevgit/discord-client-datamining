@@ -50,20 +50,20 @@ let g = e => {
         } = e, b = a.useMemo(() => i.A.reactParserFor({
             ...i.A.defaultRules,
             link: d.B
-        }), []), [C, T] = a.useState(""), [j, N] = a.useState(""), [I, S] = a.useState(null), [y, E] = a.useState(null), [k, w] = a.useState(!1);
+        }), []), [C, T] = a.useState(""), [j, I] = a.useState(""), [N, S] = a.useState(null), [y, E] = a.useState(null), [k, w] = a.useState(!1);
         a.useEffect(() => {
-            T(A?.value ?? ""), N(v?.value ?? ""), A?.value != null && "" !== A.value && w(h(A.value))
+            T(A?.value ?? ""), I(v?.value ?? ""), A?.value != null && "" !== A.value && w(h(A.value))
         }, [A, v]);
         let R = a.useCallback(e => {
                 if (T(e), "" === e) {
-                    S(null), w(!1), N(""), E(null), g({
+                    S(null), w(!1), I(""), E(null), g({
                         value: e,
                         isValid: !1
                     });
                     return
                 }
                 if (!p(e)) {
-                    S(o.intl.string(o.t["24xrGb"])), w(!1), N(""), E(null), g({
+                    S(o.intl.string(o.t["24xrGb"])), w(!1), I(""), E(null), g({
                         value: e,
                         isValid: !1
                     });
@@ -85,13 +85,13 @@ let g = e => {
                 }, {
                     value: j,
                     isValid: !1
-                }) : (N(""), E(null), g({
+                }) : (I(""), E(null), g({
                     value: e,
                     isValid: !0
                 }))
             }, [g, j]),
             M = a.useCallback(e => {
-                if (N(e), "" === e || !x.test(e)) {
+                if (I(e), "" === e || !x.test(e)) {
                     E(o.intl.string(o.t["24xrGb"])), g({
                         value: C,
                         isValid: !1
@@ -127,7 +127,7 @@ let g = e => {
                     }), (0, l.jsx)(r.ksK, {
                         onChange: R,
                         value: C,
-                        error: I,
+                        error: N,
                         placeholder: s,
                         autoFocus: !0
                     })]

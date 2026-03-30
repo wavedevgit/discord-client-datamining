@@ -10,8 +10,8 @@ var l = n(110259),
     a = n(688810),
     o = n(139286),
     c = n(532794),
-    u = n(954571),
-    d = n(975571),
+    d = n(954571),
+    u = n(975571),
     _ = n(927578),
     E = n(234419),
     T = n(635995),
@@ -49,10 +49,10 @@ let m = function(e) {
             intervalType: R.subscription_trial?.interval,
             intervalCount: R.subscription_trial?.interval_count
         }),
-        O = d.A.getArticleURL(R.trial_id === I.yo ? p.MVz.NITRO_TRIAL_FOR_ALL : p.MVz.PREMIUM_TRIAL);
+        O = u.A.getArticleURL(R.trial_id === I.yo ? p.MVz.NITRO_TRIAL_FOR_ALL : p.MVz.PREMIUM_TRIAL);
     return (0, i.jsxs)(T.T0, {
         onClick: () => {
-            t(), u.default.track(p.HAw.APP_NOTICE_CLOSED, {
+            t(), d.default.track(p.HAw.APP_NOTICE_CLOSED, {
                 notice_type: g,
                 trial_id: R.trial_id
             })
@@ -70,7 +70,7 @@ let m = function(e) {
                         section: p.JJy.NOTIFICATION_BAR,
                         object: p.ZSU.BUTTON_CTA
                     }
-                }), u.default.track(p.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
+                }), d.default.track(p.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
                     notice_type: g,
                     trial_id: R.trial_id
                 })

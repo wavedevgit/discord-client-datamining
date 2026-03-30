@@ -9,8 +9,8 @@ var i = n(627968),
     a = n(311907),
     o = n(421380),
     c = n(397927),
-    u = n(686956),
-    d = n(976860),
+    d = n(686956),
+    u = n(976860),
     _ = n(71393),
     E = n(967198),
     T = n(449054),
@@ -26,7 +26,7 @@ let m = () => {
     let m = async () => {
         r(!0);
         try {
-            T.cf(t.id), await u.A.joinGuild(t.id, {
+            T.cf(t.id), await d.A.joinGuild(t.id, {
                 source: A.Q4z.NOTICE_BAR
             })
         } catch {
@@ -42,7 +42,7 @@ let m = () => {
             className: s()(p.x6, p.aX),
             innerClassName: p.gb,
             onClick: () => {
-                (0, d.JK)().goBack()
+                (0, u.JK)().goBack()
             },
             children: [(0, i.jsx)(c.rJJ, {
                 size: "xs",

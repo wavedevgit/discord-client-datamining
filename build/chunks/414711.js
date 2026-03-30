@@ -14,7 +14,7 @@ s(646363);
 var c = s(904914);
 class A extends n.PureComponent {
     state = {
-        height: new l.A.Value(this.props.height ?? 62),
+        height: new l.A.Value(this.props.height ?? 61),
         opacity: new l.A.Value(1),
         hovered: !1,
         isContextMenuActive: !1
@@ -33,7 +33,7 @@ class A extends n.PureComponent {
             toValue: 1,
             duration: 200
         }), l.A.timing(this.state.height, {
-            toValue: this.props.height ?? 62,
+            toValue: this.props.height ?? 61,
             duration: 200
         })]).start(e)
     }
@@ -85,33 +85,40 @@ class A extends n.PureComponent {
             onClick: A,
             isActive: m,
             className: d,
-            activeClassName: p
+            activeClassName: p,
+            noBorder: N
         } = this.props;
-        return (0, i.jsx)(o.tG, {
-            id: h.id,
-            children: o => (0, i.jsx)(u.vN3, {
-                offset: {
-                    left: -8,
-                    right: -8
-                },
-                children: (0, i.jsx)(l.A.div, {
-                    className: r()(d, c.V, null != p ? {
-                        [p]: m || n
-                    } : null, {
-                        [c.v]: m || n
-                    }),
-                    onContextMenu: e => this.handleContextMenu(e, h),
-                    onMouseEnter: this.handleMouseEnter,
-                    onMouseLeave: this.handleMouseLeave,
-                    onClick: A ?? void 0,
-                    style: {
-                        height: e,
-                        opacity: t
-                    },
-                    ...o,
-                    children: a(s || m || n)
+        return (0, i.jsxs)(i.Fragment, {
+            children: [N ? null : (0, i.jsx)("div", {
+                className: r()(c.yF, {
+                    [c._]: m || n || s
                 })
-            })
+            }), (0, i.jsx)(o.tG, {
+                id: h.id,
+                children: o => (0, i.jsx)(u.vN3, {
+                    offset: {
+                        left: -8,
+                        right: -8
+                    },
+                    children: (0, i.jsx)(l.A.div, {
+                        className: r()(d, c.Vg, null != p ? {
+                            [p]: m || n
+                        } : null, {
+                            [c.vu]: m || n
+                        }),
+                        onContextMenu: e => this.handleContextMenu(e, h),
+                        onMouseEnter: this.handleMouseEnter,
+                        onMouseLeave: this.handleMouseLeave,
+                        onClick: A ?? void 0,
+                        style: {
+                            height: e,
+                            opacity: t
+                        },
+                        ...o,
+                        children: a(s || m || n)
+                    })
+                })
+            })]
         })
     }
 }
