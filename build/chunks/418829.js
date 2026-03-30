@@ -23,8 +23,8 @@ function m(e) {
         defaultTarget: m,
         onClose: p,
         sidebarFooter: v,
-        searchBar: y,
-        onViewChange: b,
+        searchBar: b,
+        onViewChange: y,
         emptyState: g,
         searchQuery: x,
         clearSearchQuery: E
@@ -41,12 +41,12 @@ function m(e) {
     i.useEffect(() => {
         h.A.init({
             accessibleDirectory: C,
-            onViewChange: b,
+            onViewChange: y,
             navigateWithValidation: (e, t) => {
                 null == N.entry(e) && E?.(), R(t)
             }
         })
-    }, [C, R, b, E, N]);
+    }, [C, R, y, E, N]);
     let [T, k] = i.useState(!0);
     (0, a.Ay)(() => (h.A.navigate(j, {
         animatePanelScroll: !1,
@@ -70,7 +70,7 @@ function m(e) {
                 onClose: L,
                 footer: v,
                 emptyState: g,
-                searchBar: y
+                searchBar: b
             }), (0, r.jsx)(l.A, {
                 onClose: L,
                 setting: T ? void 0 : D ?? I

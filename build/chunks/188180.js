@@ -1,7 +1,7 @@
 /** chunk id: 188180 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    V: () => y,
+    V: () => b,
     X: () => g
 });
 var r = n(627968),
@@ -19,9 +19,9 @@ var r = n(627968),
     m = n(215566),
     p = n(362205),
     v = n(710515);
-let y = "refresh_sm";
+let b = "refresh_sm";
 
-function b(e) {
+function y(e) {
     let {
         tag: t,
         onClick: n,
@@ -34,7 +34,7 @@ function b(e) {
     } = e, {
         icon: _,
         StronglyDiscouragedCustomComponent: p,
-        usePersistentBadge: b,
+        usePersistentBadge: y,
         useTitle: g,
         variant: x = "default"
     } = s, E = g?.(), A = function(e) {
@@ -51,7 +51,7 @@ function b(e) {
             case "destructive":
                 return o.LU0.colors.ICON_FEEDBACK_CRITICAL
         }
-    }(x), N = b?.(a), C = i.useMemo(() => null != c ? a ? null : (0, r.jsx)(f.A, {
+    }(x), N = y?.(a), C = i.useMemo(() => null != c ? a ? null : (0, r.jsx)(f.A, {
         badge: c
     }) : null != N ? (0, r.jsx)(m.A, {
         badge: N
@@ -70,7 +70,7 @@ function b(e) {
                 className: v.Ly,
                 children: [(0, r.jsx)(_, {
                     color: S,
-                    size: y,
+                    size: b,
                     className: v.Kk
                 }), (0, r.jsx)(o.Text, {
                     variant: "text-md/medium",
@@ -94,22 +94,22 @@ function g(e) {
         if (null == f) return !1;
         let e = m.entry(f);
         return e?.parentSidebarItemKey === t.key
-    }, [f, t.key, m]), y = i.useMemo(() => {
+    }, [f, t.key, m]), b = i.useMemo(() => {
         if (null == o || !(0, u.Iu)(o.layout)) return null;
         let e = o.layout.filter(u.bJ);
         return e.length > 1 ? e : null
     }, [o]), g = null != o ? () => {
-        let e = f === o.key && null != y ? y[0].key : o.key;
+        let e = f === o.key && null != b ? b[0].key : o.key;
         h.A.navigate(e, {
             animateSidebarScroll: !0,
             showNavigationMobile: !1
         })
-    } : t.onClick, x = i.useMemo(() => v && null != y ? (0, r.jsx)(p.A, {
-        categories: y,
+    } : t.onClick, x = i.useMemo(() => v && null != b ? (0, r.jsx)(p.A, {
+        categories: b,
         visibleContent: n,
         dismissibleBadges: a
-    }) : null, [v, y, n, a]), E = l ? "li" : "div", A = i.useMemo(() => (0, _.H)(t.key, n, a), [t.key, n, a]);
-    return l ? (0, r.jsx)(b, {
+    }) : null, [v, b, n, a]), E = l ? "li" : "div", A = i.useMemo(() => (0, _.H)(t.key, n, a), [t.key, n, a]);
+    return l ? (0, r.jsx)(y, {
         tag: E,
         panelKey: o?.key,
         onClick: g,
@@ -119,7 +119,7 @@ function g(e) {
         children: x
     }) : (0, r.jsx)(s.tG, {
         id: t.key,
-        children: e => (0, r.jsx)(b, {
+        children: e => (0, r.jsx)(y, {
             tag: E,
             panelKey: o?.key,
             onClick: g,

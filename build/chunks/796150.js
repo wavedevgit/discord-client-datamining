@@ -18,8 +18,8 @@ var r = n(627968),
     m = n(960545),
     p = n(841329),
     v = n(12901),
-    y = n(921854),
-    b = n(985018),
+    b = n(921854),
+    y = n(985018),
     g = n(879797);
 let x = new Set([_.X.PROFILE_PANEL, _.X.SUBSCRIPTIONS_PANEL, _.X.FAMILY_CENTER_PANEL, _.X.POGGERMODE_PANEL]);
 
@@ -27,7 +27,7 @@ function E(e) {
     let {
         target: t,
         ...n
-    } = e, a = h.A.useField("query"), b = i.useCallback(() => {
+    } = e, a = h.A.useField("query"), y = i.useCallback(() => {
         h.A.setState({
             query: ""
         }), o.A.terminate()
@@ -40,7 +40,7 @@ function E(e) {
             u.default.removeChangeListener(e), m.A.resetState(), s.A.resetState(), l.A.close()
         }
     }, []), g) ? null : (0, r.jsx)(c.A, {
-        partialRoot: y.D,
+        partialRoot: b.D,
         searchBar: A,
         emptyState: S,
         sidebarFooter: f.A,
@@ -50,7 +50,7 @@ function E(e) {
         target: t,
         defaultTarget: _.X.ACCOUNT_PANEL,
         searchQuery: a,
-        clearSearchQuery: b,
+        clearSearchQuery: y,
         ...n
     })
 }
@@ -94,11 +94,11 @@ function S() {
         children: [(0, r.jsx)(a.Text, {
             variant: "text-sm/semibold",
             color: "text-strong",
-            children: b.intl.string(b.t.zihbmv)
+            children: y.intl.string(y.t.zihbmv)
         }), (0, r.jsx)(a.Text, {
             variant: "text-sm/normal",
             color: "text-subtle",
-            children: b.intl.string(b.t.XclvsB)
+            children: y.intl.string(y.t.XclvsB)
         })]
     })
 }

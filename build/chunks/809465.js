@@ -21,13 +21,13 @@ var i = n(503698),
 function p() {
     let e = (0, d.GV)(),
         t = window.GLOBAL_ENV.RELEASE_CHANNEL,
-        n = "519016",
-        i = "31896785abdd0347c8707b0a8cebd49229f96024".substring(0, 7),
+        n = "519025",
+        i = "db84befac0e76545130bde9298398df14b8f6e02".substring(0, 7),
         l = c.A?.app.getVersion(),
         p = c.A?.app.getBuildNumber(),
         v = c.A?.app.getAppArch(),
-        y = u.A.getCurrentBuildOverride().overrides?.discord_web,
-        b = function() {
+        b = u.A.getCurrentBuildOverride().overrides?.discord_web,
+        y = function() {
             let e = s()?.os?.toString();
             if (null == e || null == c.A) return null;
             let t = c.A.os.release,
@@ -35,7 +35,7 @@ function p() {
             return e.includes("Windows 10") && void 0 !== i && i >= 22e3 && (e = e.replace("Windows 10", "Windows 11")), e.includes("OS X 10.15.7") && void 0 !== n && n >= 20 && (e = `macOS ${n>=25?n+1:n-9}`), `${e} (${t})`
         }(),
         g = [t, n, `(${i})`];
-    return null != l && (g.push(`Host ${l}`), null != v && g.push(v.toLowerCase()), null != p && g.push(`(${p})`)), g.push(`Build Override: ${null!=y?y.id:"N/A"}`), null != b && g.push(b), (0, r.jsxs)(r.Fragment, {
+    return null != l && (g.push(`Host ${l}`), null != v && g.push(v.toLowerCase()), null != p && g.push(`(${p})`)), g.push(`Build Override: ${null!=b?b.id:"N/A"}`), null != y && g.push(y), (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(h.A, {
             copyValue: g.join(" "),
             text: f.intl.string(f.t["9Al4Qd"]),
@@ -67,13 +67,13 @@ function p() {
                             children: [" (", p, ")"]
                         })]
                     })]
-                }), null != y && (0, r.jsx)(o.Text, {
+                }), null != b && (0, r.jsx)(o.Text, {
                     tag: "span",
                     variant: "text-xxs/normal",
                     color: "text-muted",
                     children: (0, r.jsxs)("span", {
                         className: m.Pc,
-                        children: ["Build Override: ", y.id]
+                        children: ["Build Override: ", b.id]
                     })
                 })]
             })

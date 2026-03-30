@@ -23,8 +23,8 @@ function _(e) {
         sidebarFooter: m,
         emptyState: p,
         searchQuery: v,
-        clearSearchQuery: y,
-        searchBar: b,
+        clearSearchQuery: b,
+        searchBar: y,
         ...g
     } = e, [x, E] = i.useState(!1), [A, S] = i.useState(1.4), N = i.useRef(null), C = (0, a.bG)([o.A], () => o.A.useReducedMotion), j = (0, a.bG)([c.A], () => c.A.isFocused());
     return i.useEffect(() => {
@@ -52,8 +52,8 @@ function _(e) {
                 emptyState: p,
                 sidebarFooter: m,
                 searchQuery: v,
-                clearSearchQuery: y,
-                searchBar: b
+                clearSearchQuery: b,
+                searchBar: y
             })
         })
     })
