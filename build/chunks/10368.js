@@ -23,8 +23,8 @@ function g() {
         {
             banner: m,
             themeColors: g,
-            avatarDecorationSkuId: A,
-            displayNameStyles: x
+            avatarDecorationSkuId: x,
+            displayNameStyles: A
         } = (0, i.useMemo)(() => {
             let n = (0, c.Wt)(t);
             return {
@@ -35,7 +35,7 @@ function g() {
             }
         }, [t, e]),
         h = (0, s.bG)([a.A], () => {
-            let e = a.A.getProduct(A);
+            let e = a.A.getProduct(x);
             return (0, r.T)(e?.items[0]) ? e.items[0] : null
         });
     (0, i.useEffect)(() => {
@@ -43,9 +43,9 @@ function g() {
             banner: m,
             themeColors: g,
             avatarDecoration: h,
-            displayNameStyles: x
+            displayNameStyles: A
         })
-    }, [m, g, h, x]);
+    }, [m, g, h, A]);
     let p = (0, i.useCallback)(() => {
         let e = _(t);
         n(e), d.default.track(u.HAw.TRY_IT_OUT_PRESET_SHUFFLED, {

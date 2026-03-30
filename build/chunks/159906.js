@@ -15,8 +15,8 @@ var s = n(284009),
     m = n(543767),
     _ = n(788868),
     g = n(652215),
-    A = n(985018),
-    x = n(816375);
+    x = n(985018),
+    A = n(816375);
 
 function h(e) {
     let t, {
@@ -33,7 +33,7 @@ function h(e) {
             analyticsLocation: r.A.PREMIUM_SUBSCRIPTION_FINE_PRINT_CONTENT
         });
     if (null == p) return null;
-    let T = s ? x.r : x.a,
+    let T = s ? A.r : A.a,
         f = p.invoiceItems.find(e => {
             let {
                 subscriptionPlanId: t
@@ -45,17 +45,17 @@ function h(e) {
         E = d.A.get(S);
     l()(null != E, "Missing plan");
     let b = (0, u.$g)(p.total, p.currency);
-    return E.interval === _.WT.YEAR ? t = A.intl.format(A.t["jPz/39"], {
+    return E.interval === _.WT.YEAR ? t = x.intl.format(x.t["jPz/39"], {
         price: b,
         termsUrl: g.X7G.TERMS,
         paidURL: g.X7G.PAID_TERMS,
         privacyUrl: g.X7G.PRIVACY
-    }) : E.interval === _.WT.MONTH && (t = 1 === E.intervalCount ? A.intl.format(A.t.m27GpI, {
+    }) : E.interval === _.WT.MONTH && (t = 1 === E.intervalCount ? x.intl.format(x.t.m27GpI, {
         price: b,
         termsUrl: g.X7G.TERMS,
         paidURL: g.X7G.PAID_TERMS,
         privacyUrl: g.X7G.PRIVACY
-    }) : A.intl.format(A.t["9xf5Vx"], {
+    }) : x.intl.format(x.t["9xf5Vx"], {
         price: b,
         termsUrl: g.X7G.TERMS,
         paidURL: g.X7G.PAID_TERMS,

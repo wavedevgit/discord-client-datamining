@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(580630),
     _ = n(422936),
     g = n(234419),
-    A = n(511484),
-    x = n(356309),
+    x = n(511484),
+    A = n(356309),
     h = n(121304),
     p = n(788868),
     T = n(985018),
@@ -48,14 +48,27 @@ let b = e => {
         let {
             label: t,
             tier0ColumnData: n,
-            tier2ColumnData: s
+            tier2ColumnData: s,
+            logoSrc: l,
+            subtitle: r
         } = e;
         return (0, i.jsxs)("tr", {
             className: a()(f.nM, f.WQ),
             children: [(0, i.jsx)("th", {
                 scope: "row",
                 className: f.nx,
-                children: (0, i.jsx)(o.Text, {
+                children: null != l ? (0, i.jsxs)("div", {
+                    className: f.aT,
+                    children: [(0, i.jsx)("img", {
+                        src: l,
+                        alt: "",
+                        className: f.Nj
+                    }), (0, i.jsx)(o.Text, {
+                        variant: "text-sm/medium",
+                        color: "text-subtle",
+                        children: r
+                    })]
+                }) : (0, i.jsx)(o.Text, {
                     variant: "text-md/medium",
                     children: t
                 })
@@ -167,8 +180,8 @@ let b = e => {
             b = (0, g.V)(),
             C = b?.subscription_trial?.sku_id,
             N = (0, _.O)(),
-            j = null != N && (0, A.U9)(N, p.pe.TIER_2),
-            y = (0, A.N1)(p.gD.PREMIUM_MONTH_TIER_2),
+            j = null != N && (0, x.U9)(N, p.pe.TIER_2),
+            y = (0, x.N1)(p.gD.PREMIUM_MONTH_TIER_2),
             O = `${y}/${(0,u.FJ)(p.WT.MONTH)}`,
             R = (0, u.JM)(p.gD.PREMIUM_MONTH_TIER_0),
             L = (0, u.JM)(p.gD.PREMIUM_MONTH_TIER_2),
@@ -176,7 +189,7 @@ let b = e => {
         if (l) t = null;
         else {
             let e = null != b ? T.intl.string(T.t.IBYG5U) : T.intl.string(T.t.TR2B4T);
-            t = (0, i.jsx)(x.D, {
+            t = (0, i.jsx)(A.D, {
                 className: a()(f.Io, f.SP),
                 text: e
             })

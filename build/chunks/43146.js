@@ -20,14 +20,14 @@ function o(e) {
         useDisabledMessage: m,
         usePersistentBadge: _,
         hasIcon: g,
-        getDismissibleBadges: A
-    } = t, x = d(), h = c?.(), p = n(), T = u?.() ?? !1, f = m?.(), S = _?.(), E = A?.(), b = (0, l.A)({
+        getDismissibleBadges: x
+    } = t, A = d(), h = c?.(), p = n(), T = u?.() ?? !1, f = m?.(), S = _?.(), E = x?.(), b = (0, l.A)({
         persistentBadge: S,
         dismissibleBadges: E
     }), C = (0, a.q)(t);
     return (0, i.jsxs)(r.L, {
         children: [(0, i.jsx)(s.dOG, {
-            label: x,
+            label: A,
             description: h,
             badge: b,
             checked: p,

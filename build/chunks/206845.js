@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(985018);
 let _ = c.A.Millis.SECOND,
     g = 2 * _,
-    A = c.A.Millis.HALF_SECOND,
-    x = [() => m.intl.string(m.t.MSaeTe), () => m.intl.string(m.t.UmrCw7), () => m.intl.string(m.t.gKE0Jq), () => m.intl.string(m.t["4DSKbi"]), () => m.intl.string(m.t["+8ENdT"]), () => m.intl.string(m.t.GlWHv8), () => m.intl.string(m.t.hIzxU9), () => m.intl.string(m.t["26uMPL"]), () => m.intl.string(m.t.uFs7R2), () => m.intl.string(m.t.bLXdcY), () => m.intl.string(m.t.gPg9fS)];
+    x = c.A.Millis.HALF_SECOND,
+    A = [() => m.intl.string(m.t.MSaeTe), () => m.intl.string(m.t.UmrCw7), () => m.intl.string(m.t.gKE0Jq), () => m.intl.string(m.t["4DSKbi"]), () => m.intl.string(m.t["+8ENdT"]), () => m.intl.string(m.t.GlWHv8), () => m.intl.string(m.t.hIzxU9), () => m.intl.string(m.t["26uMPL"]), () => m.intl.string(m.t.uFs7R2), () => m.intl.string(m.t.bLXdcY), () => m.intl.string(m.t.gPg9fS)];
 
 function h(e) {
     let {
@@ -24,7 +24,7 @@ function h(e) {
         children: c,
         onCopy: m,
         "aria-label": h,
-        delay: p = A,
+        delay: p = x,
         dataMeticulousIgnore: T
     } = e, [f, S] = s.useState(0), [E, b] = s.useState(!1), [C, v] = s.useState(!1), [N] = s.useState(() => new a.Ep), [I] = s.useState(() => new a.Ep);
     if (s.useEffect(() => () => {
@@ -32,14 +32,14 @@ function h(e) {
         }, [N, I]), !d.p5) return (0, i.jsx)(i.Fragment, {
         children: c({})
     });
-    let j = f >= x.length - 1,
+    let j = f >= A.length - 1,
         y = j ? r.oMw.RED : r.oMw.GREEN,
         O = E ? y : r.oMw.PRIMARY;
     return (0, i.jsx)(r.STz, {
         text: (() => {
             if (!E) return t;
-            let e = (0, l.clamp)(f - 1, 0, x.length - 1),
-                n = x[e] ?? x[0];
+            let e = (0, l.clamp)(f - 1, 0, A.length - 1),
+                n = A[e] ?? A[0];
             return (0, i.jsx)(r.bfh, {
                 isShaking: j,
                 children: n()

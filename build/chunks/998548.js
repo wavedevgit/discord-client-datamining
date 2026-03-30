@@ -17,18 +17,18 @@ var i = n(627968),
 n(866945);
 var _ = n(840387),
     g = n(933297),
-    A = n(975571),
-    x = n(835002),
+    x = n(975571),
+    A = n(835002),
     h = n(985018);
 
 function p() {
     let e = (0, _.Z)(),
         t = (0, c.WX)(),
         n = s.useCallback(() => {
-            window.open(A.A.getArticleURL(t), "_blank"), (0, m.N)(x.YA.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE, x.YX.LEARN_MORE)
+            window.open(x.A.getArticleURL(t), "_blank"), (0, m.N)(A.YA.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE, A.YX.LEARN_MORE)
         }, [t]),
         l = s.useCallback(() => {
-            (0, m.N)(x.YA.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE, x.YX.VIEWED)
+            (0, m.N)(A.YA.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE, A.YX.VIEWED)
         }, []);
     return s.useMemo(() => {
         if (e) return {
@@ -52,10 +52,10 @@ function T() {
         l = s.useCallback(() => {
             r.A.showAgeVerificationGetStartedModal({
                 entryPoint: o.q1.CONTENT_AND_SOCIAL_NOTICE
-            }), (0, m.N)(x.YA.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE, x.YX.LEARN_MORE)
+            }), (0, m.N)(A.YA.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE, A.YX.LEARN_MORE)
         }, []),
         c = s.useCallback(() => {
-            (0, m.N)(x.YA.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE, x.YX.VIEWED)
+            (0, m.N)(A.YA.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE, A.YX.VIEWED)
         }, []);
     return s.useMemo(() => {
         if (n) return {
@@ -75,15 +75,15 @@ function T() {
 function f() {
     let e = (0, c.WX)();
     s.useEffect(() => {
-        (0, m.N)(x.YA.AGE_CONFIRMATION_NOTICE, x.YX.VIEWED)
+        (0, m.N)(A.YA.AGE_CONFIRMATION_NOTICE, A.YX.VIEWED)
     }, []);
     let t = s.useCallback(() => {
-            window.open(A.A.getArticleURL(e), "_blank"), (0, m.N)(x.YA.AGE_CONFIRMATION_NOTICE, x.YX.LEARN_MORE)
+            window.open(x.A.getArticleURL(e), "_blank"), (0, m.N)(A.YA.AGE_CONFIRMATION_NOTICE, A.YX.LEARN_MORE)
         }, [e]),
         n = s.useCallback(() => {
             r.A.showAgeVerificationGetStartedModal({
                 entryPoint: o.q1.CONTENT_AND_SOCIAL_NOTICE
-            }), (0, m.N)(x.YA.AGE_CONFIRMATION_NOTICE, x.YX.CONFIRM_AGE)
+            }), (0, m.N)(A.YA.AGE_CONFIRMATION_NOTICE, A.YX.CONFIRM_AGE)
         }, []);
     return (0, i.jsx)(a.po8, {
         messageType: a.YCn.INFO,

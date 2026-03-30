@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(974544),
     _ = n(793574),
     g = n(688810),
-    A = n(512213),
-    x = n(429619),
+    x = n(512213),
+    A = n(429619),
     h = n(451909),
     p = n(202639),
     T = n(407217),
@@ -70,7 +70,7 @@ function M() {
     let [Y, X] = s.useState(!1), K = !F, W = s.useRef(null);
     return t ? (0, i.jsx)(m.A, {}) : (0, i.jsxs)(g.f5, {
         value: H,
-        children: [(0, i.jsx)(x.A, {}), (0, i.jsx)(S.A, {
+        children: [(0, i.jsx)(A.A, {}), (0, i.jsx)(S.A, {
             profilePreview: (0, i.jsx)(E.A, {
                 user: e,
                 canUsePremiumCustomization: F,
@@ -79,7 +79,7 @@ function M() {
                 ...U,
                 pendingAvatar: w
             }),
-            nameplatePreview: (0, i.jsx)(A.A, {
+            nameplatePreview: (0, i.jsx)(x.A, {
                 user: e,
                 nameplate: V,
                 ...U,

@@ -15,8 +15,8 @@ var s = n(503698),
     m = n(742589),
     _ = n(287809),
     g = n(927578),
-    A = n(652215),
-    x = n(788868),
+    x = n(652215),
+    A = n(788868),
     h = n(985018),
     p = n(670324);
 let T = a.Ay.connectStores([_.default], () => ({
@@ -25,9 +25,9 @@ let T = a.Ay.connectStores([_.default], () => ({
     let {
         isAuthenticated: t,
         user: n
-    } = e, s = (0, g.TW)(n, x.PremiumTypes.TIER_2), a = (0, u.Ay)();
+    } = e, s = (0, g.TW)(n, A.PremiumTypes.TIER_2), a = (0, u.Ay)();
     return (0, i.jsx)(d.A, {
-        section: A.JJy.NAVIGATION,
+        section: x.JJy.NAVIGATION,
         children: (0, i.jsx)(o.NPJ, {
             theme: a,
             children: e => (0, i.jsxs)(m.A, {

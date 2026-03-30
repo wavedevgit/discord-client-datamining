@@ -1,6 +1,6 @@
 /** chunk id: 843956 params = (module,exports,require) **/
 n.d(t, {
-    K: () => x
+    K: () => A
 });
 var i = n(419954),
     s = n(780964),
@@ -14,8 +14,8 @@ var i = n(419954),
     m = n(728699),
     _ = n(345648),
     g = n(863671),
-    A = n(985018);
-let x = (0, i.WI)(s.X.USER_SECTION, {
-    useTitle: () => A.intl.string(A.t.cduTBL),
+    x = n(985018);
+let A = (0, i.WI)(s.X.USER_SECTION, {
+    useTitle: () => x.intl.string(x.t.cduTBL),
     buildLayout: () => [a.J, c.T, u.v, m.T, r.J, ...(0, l.pC)("UserSection") ? [] : [g.$], d.z, _.e, o.r]
 })

@@ -1,6 +1,6 @@
 /** chunk id: 182859 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => x
 });
 var i = n(627968),
     s = n(64700),
@@ -15,12 +15,12 @@ var i = n(627968),
     _ = n(664126),
     g = n(519636);
 
-function A(e) {
+function x(e) {
     let {
         guildId: t,
         variant: l = "admin",
-        className: A,
-        analyticsLocation: x,
+        className: x,
+        analyticsLocation: A,
         videoPlacement: h = "sidebar",
         onDismiss: p
     } = e, {
@@ -33,14 +33,14 @@ function A(e) {
             return n => (0, i.jsx)(e, {
                 ...n,
                 guildId: t,
-                analyticsLocation: x,
+                analyticsLocation: A,
                 videoPlacement: h,
                 sourceAnalyticsLocations: T
             })
         })
-    }, [x, T, t, h]);
+    }, [A, T, t, h]);
     return "member" === l ? (0, i.jsxs)(o.DUT, {
-        className: a()(_.iR, A),
+        className: a()(_.iR, x),
         onClick: f,
         "aria-label": m.intl.string(u.default["103aY+"]),
         children: [(0, i.jsx)("img", {

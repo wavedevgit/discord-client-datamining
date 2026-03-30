@@ -1,6 +1,6 @@
 /** chunk id: 372411 params = (module,exports,require) **/
 n.d(t, {
-    E: () => A
+    E: () => x
 });
 var i = n(311907),
     s = n(264686),
@@ -35,7 +35,7 @@ let u = {
         useValue: () => (0, i.bG)([r.A], () => r.A.getDisableAllSounds()),
         setValue: e => s.default.toggleDisableAllSounds(e)
     }),
-    A = (0, a.D1)(o.X.NOTIFICATION_SOUNDS_LIST, {
+    x = (0, a.D1)(o.X.NOTIFICATION_SOUNDS_LIST, {
         initialize: function() {
             return () => {
                 (0, d.vd)()

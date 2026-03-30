@@ -45,21 +45,21 @@ let M = a.memo(function(e) {
     } = e, k = t.type === S.lAJ.POLL_RESULT || (e.disableInteraction ?? !1), G = t.isFirstMessageInForumPost(P), F = (0, d.S)((t.editedTimestamp ?? t.timestamp).valueOf()), {
         content: B,
         hasSpoilerEmbeds: H,
-        hasBailedAst: w
+        hasBailedAst: V
     } = (0, f.A)(t, {
         hideSimpleEmbedContent: D,
         allowList: G || F,
         allowHeading: G || F,
         allowLinks: !0,
         previewLinkTarget: !0
-    }), V = t.type === S.lAJ.REPLY ? t.messageReference : void 0, X = (0, o.bG)([u.A], () => u.A.getMessageByReference(V)), q = (0, s.rm)(t.id), K = (0, E.Ay)(t), Y = (0, o.bG)([_.A], () => t.hasFlag(S.pr7.HAS_THREAD) && _.A.getChannel(m.default.castMessageIdAsChannelId(t.id))), z = (0, c.$7)({
+    }), w = t.type === S.lAJ.REPLY ? t.messageReference : void 0, X = (0, o.bG)([u.A], () => u.A.getMessageByReference(w)), q = (0, s.rm)(t.id), K = (0, E.Ay)(t), Y = (0, o.bG)([_.A], () => t.hasFlag(S.pr7.HAS_THREAD) && _.A.getChannel(m.default.castMessageIdAsChannelId(t.id))), z = (0, c.$7)({
         guildId: P.guild_id,
         roleId: K.iconRoleId
-    }), W = (0, N.A)({
+    }), J = (0, N.A)({
         message: t,
         channel: P,
         enabled: y
-    }), J = (0, T.fF)(t), Q = (0, T.ZD)(t);
+    }), W = (0, T.fF)(t), Q = (0, T.ZD)(t);
     return (0, i.jsx)(I.A, {
         compact: n,
         className: r()(a, {
@@ -67,7 +67,7 @@ let M = a.memo(function(e) {
             [O.XN]: k
         }),
         disableInteraction: k,
-        childrenRepliedMessage: (0, R.A)(t, P, V, X, n),
+        childrenRepliedMessage: (0, R.A)(t, P, w, X, n),
         childrenExecutedCommand: (0, x.A)(t, P, n),
         childrenHeader: (0, h.A)({
             ...e,
@@ -75,7 +75,7 @@ let M = a.memo(function(e) {
             author: K,
             roleIcon: z
         }),
-        childrenAccessories: e.hideAccessories ? void 0 : (0, g.J)(e, H, w),
+        childrenAccessories: e.hideAccessories ? void 0 : (0, g.J)(e, H, V),
         childrenMessageContent: (0, C.A)(e, B),
         childrenSystemMessage: (0, p.A)({
             ...e,
@@ -85,9 +85,9 @@ let M = a.memo(function(e) {
         onClick: M,
         hasThread: j && null != Y && t.hasFlag(S.pr7.HAS_THREAD),
         hasReply: t.type === S.lAJ.REPLY,
-        "aria-labelledby": J,
+        "aria-labelledby": W,
         "aria-describedby": Q,
-        messageRef: W,
+        messageRef: J,
         author: K,
         ...q,
         ...b

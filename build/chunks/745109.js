@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(836602),
     _ = n(576622),
     g = n(841329),
-    A = n(183476),
-    x = n(338318),
+    x = n(183476),
+    A = n(338318),
     h = n(71393),
     p = n(967198),
     T = n(711014),
@@ -47,7 +47,7 @@ function y() {
         null != l && t?.id != null && (0, _.A)(l.id, l.getAvatarURL(t?.id, 80), {
             guildId: t?.id
         })
-    }, [t?.id, l]), (0, i.jsxs)(A.R, {
+    }, [t?.id, l]), (0, i.jsxs)(x.R, {
         children: [(0, i.jsxs)(o.VQ0, {
             className: I.$H,
             type: "top",
@@ -89,6 +89,6 @@ function y() {
                 }
                 null != e && (0, c.JJ)(e.id)
             }
-        }) : (0, i.jsx)(x.A, {})]
+        }) : (0, i.jsx)(A.A, {})]
     })
 }

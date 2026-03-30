@@ -14,13 +14,13 @@ var i = n(627968),
     m = n(95701),
     _ = n(486020),
     g = n(253932),
-    A = n(652215),
-    x = n(985018),
+    x = n(652215),
+    A = n(985018),
     h = n(80281);
 let p = new m.nA({
         id: "1337",
         guild_id: "1337",
-        type: A.rbe.GUILD_TEXT,
+        type: x.rbe.GUILD_TEXT,
         name: "preview"
     }),
     T = [{
@@ -42,7 +42,7 @@ function f(e) {
             channelId: p.id,
             content: e
         }),
-        state: A.cmJ.SENT,
+        state: x.cmJ.SENT,
         reactions: t
     })
 }
@@ -50,7 +50,7 @@ function f(e) {
 function S() {
     let e = g.hH.useSetting(),
         t = g.jW.useSetting(),
-        n = s.useMemo(() => [f(x.intl.formatToPlainString(x.t.BknJRT, {}), t ? [{
+        n = s.useMemo(() => [f(A.intl.formatToPlainString(A.t.BknJRT, {}), t ? [{
             emoji: {
                 id: null,
                 name: "\uD83E\uDD40",
@@ -70,7 +70,7 @@ function S() {
             count: 1,
             me_burst: !1,
             burst_count: 0
-        }] : []), f(x.intl.formatToPlainString(x.t["4rDfgM"], {}))], [t]),
+        }] : []), f(A.intl.formatToPlainString(A.t["4rDfgM"], {}))], [t]),
         o = (0, l.bG)([r.A], () => r.A.messageGroupSpacing);
     return (0, i.jsx)(a.M1G, {
         children: (0, i.jsxs)("section", {
@@ -78,7 +78,7 @@ function S() {
                 variant: "text-md/medium",
                 color: "text-muted",
                 className: h.Vf,
-                children: x.intl.string(x.t.RC22qg)
+                children: A.intl.string(A.t.RC22qg)
             }), (0, i.jsxs)(a.IpV, {
                 className: h.VH,
                 children: [(0, i.jsx)("ol", {
@@ -86,7 +86,7 @@ function S() {
                     style: {
                         gap: o
                     },
-                    "aria-label": x.intl.string(x.t.xfjsEV),
+                    "aria-label": A.intl.string(A.t.xfjsEV),
                     children: n.map(t => (0, i.jsx)("li", {
                         children: (0, i.jsx)(u.A, {
                             message: t,
@@ -113,11 +113,11 @@ function S() {
                                 isMobile: s,
                                 size: a._3J.SIZE_32,
                                 src: _.Ay.getDefaultAvatarURL(void 0, n),
-                                "aria-label": x.intl.string(x.t.VKE5TK)
+                                "aria-label": A.intl.string(A.t.VKE5TK)
                             }, t)
                         })
                     }), (0, i.jsx)(a.Button, {
-                        text: x.intl.string(x.t["2RHHgz"]),
+                        text: A.intl.string(A.t["2RHHgz"]),
                         size: "sm",
                         variant: "primary"
                     })]

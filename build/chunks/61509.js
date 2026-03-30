@@ -1,6 +1,6 @@
 /** chunk id: 61509 params = (module,exports,require) **/
 n.d(t, {
-    A: () => eA
+    A: () => ex
 }), n(938796), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(311907),
     _ = n(435371),
     g = n(732955),
-    A = n(397927),
-    x = n(975807),
+    x = n(397927),
+    A = n(975807),
     h = n(793574),
     p = n(688810),
     T = n(362490),
@@ -89,7 +89,7 @@ function ec(e) {
     return (0, i.jsx)(_.m_, {
         forceOpen: o,
         text: a ? l : n,
-        children: (0, i.jsx)(A.DUT, {
+        children: (0, i.jsx)(x.DUT, {
             onMouseEnter: () => {
                 a && r(!1)
             },
@@ -161,11 +161,11 @@ function e_(e) {
     }), d = (s?.attachments?.length ?? 0) > 0, c = null != r;
     return l ? (0, i.jsx)("div", {
         className: es.hT,
-        children: (0, i.jsx)(A.y$y, {})
+        children: (0, i.jsx)(x.y$y, {})
     }) : null != s && (d || c) ? (0, i.jsxs)("div", {
         className: es.hT,
         children: [d && (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(A.Text, {
+            children: [(0, i.jsx)(x.Text, {
                 variant: "text-xs/semibold",
                 color: "text-default",
                 className: es.yE,
@@ -176,7 +176,7 @@ function e_(e) {
         }), c && (0, i.jsxs)(i.Fragment, {
             children: [d && (0, i.jsx)("div", {
                 className: es.yF
-            }), (0, i.jsx)(A.Text, {
+            }), (0, i.jsx)(x.Text, {
                 variant: "text-xs/semibold",
                 color: "text-default",
                 className: es.yE,
@@ -458,7 +458,7 @@ class eg extends s.PureComponent {
             analyticsLocations: r
         } = this.props, o = t.entitlements?.some(e => e.isFulfilled());
         return t.status === ee.__0.REFUNDED ? (0, i.jsxs)(s.Fragment, {
-            children: [(0, i.jsx)(A.H, {
+            children: [(0, i.jsx)(x.H, {
                 className: es.mW,
                 children: ei.intl.string(ei.t["gIGB/A"])
             }), (0, i.jsx)("div", {
@@ -470,7 +470,7 @@ class eg extends s.PureComponent {
                 })
             })]
         }) : t.isGift ? (0, i.jsxs)(s.Fragment, {
-            children: [(0, i.jsx)(A.H, {
+            children: [(0, i.jsx)(x.H, {
                 className: es.mW,
                 children: ei.intl.string(ei.t["gIGB/A"])
             }), (0, i.jsx)("div", {
@@ -487,7 +487,7 @@ class eg extends s.PureComponent {
                 })
             })]
         }) : o ? null : (0, i.jsxs)(s.Fragment, {
-            children: [(0, i.jsx)(A.H, {
+            children: [(0, i.jsx)(x.H, {
                 className: es.mW,
                 children: ei.intl.string(ei.t["gIGB/A"])
             }), (0, i.jsx)("div", {
@@ -504,7 +504,7 @@ class eg extends s.PureComponent {
                 children: n ? (0, i.jsx)(g.$nd, {
                     variant: "primary",
                     text: ei.intl.string(ei.t.zoztQA),
-                    onClick: () => (0, x.A)(el(a))
+                    onClick: () => (0, A.A)(el(a))
                 }) : (0, i.jsx)(g.$nd, {
                     variant: "primary",
                     text: ei.intl.string(ei.t["jCqvk/"]),
@@ -559,7 +559,7 @@ class eg extends s.PureComponent {
             dateLimit: o,
             playtimeLimit: 2
         }), (0, i.jsxs)(s.Fragment, {
-            children: [(0, i.jsx)(A.H, {
+            children: [(0, i.jsx)(x.H, {
                 className: es.mW,
                 children: ei.intl.string(ei.t["n/27pr"])
             }), (0, i.jsxs)("div", {
@@ -573,7 +573,7 @@ class eg extends s.PureComponent {
     renderRefundCriteria(e, t, n, s) {
         return (0, i.jsxs)("div", {
             className: es._Z,
-            children: [(0, i.jsx)(A.H, {
+            children: [(0, i.jsx)(x.H, {
                 className: es.ud,
                 children: e
             }), (0, i.jsxs)("div", {
@@ -593,7 +593,7 @@ class eg extends s.PureComponent {
             payment: n
         } = this.props;
         if (e.includes("SKU_TYPE")) return null;
-        let s = e.includes("PURCHASE_DATE") ? A.PGe : A.A9s;
+        let s = e.includes("PURCHASE_DATE") ? x.PGe : x.A9s;
         return (0, i.jsxs)("div", {
             className: es.My,
             children: [(0, i.jsx)("div", {
@@ -601,7 +601,7 @@ class eg extends s.PureComponent {
                 children: !n.isCollectible && this.renderRefundCriteria(ei.intl.string(ei.t.H0RNz4), s, ei.intl.formatToPlainString(ei.t["7dtXa/"], {
                     daysSincePurchase: this.daysSincePurchase
                 }))
-            }), (0, i.jsx)(A.MzZ, {
+            }), (0, i.jsx)(x.MzZ, {
                 href: el(t),
                 children: ei.intl.string(ei.t.re5nOB)
             })]
@@ -621,7 +621,7 @@ class eg extends s.PureComponent {
             } = this.state,
             m = l.sku,
             g = l.subscription,
-            x = null != l.paymentSource && ee.AD1.has(l.paymentSource.type);
+            A = null != l.paymentSource && ee.AD1.has(l.paymentSource.type);
         if (null != g && 0 !== g.items.length) {
             let n = [],
                 s = null;
@@ -630,7 +630,7 @@ class eg extends s.PureComponent {
                     planId: t,
                     quantity: i
                 } = e;
-                (0, q.xq)(t) ? (n.push(q.Ay.getDisplayName(t, !1, x)), s = (0, q.mH)(et.hd[t].skuId)) : (n.push(`${i>1?`${i}x `:""}${q.Ay.getDisplayName(t,!1,x)}`), null == s && (s = (0, q.mH)(et.hd[t].skuId)))
+                (0, q.xq)(t) ? (n.push(q.Ay.getDisplayName(t, !1, A)), s = (0, q.mH)(et.hd[t].skuId)) : (n.push(`${i>1?`${i}x `:""}${q.Ay.getDisplayName(t,!1,A)}`), null == s && (s = (0, q.mH)(et.hd[t].skuId)))
             });
             else if (g.type === ee.rzx.GUILD) {
                 if (null != c) {
@@ -660,7 +660,7 @@ class eg extends s.PureComponent {
                     className: es.Sy,
                     size: 24
                 })
-            } else e = l.sku?.productLine === ee.EZt.COLLECTIBLES ? (0, i.jsx)(A.U1X, {
+            } else e = l.sku?.productLine === ee.EZt.COLLECTIBLES ? (0, i.jsx)(x.U1X, {
                 size: "custom",
                 width: 23,
                 height: 23,
@@ -674,19 +674,19 @@ class eg extends s.PureComponent {
                 size: b.M.XSMALL,
                 skuId: m.id
             });
-        else e = (0, i.jsx)(A.tvc, {
+        else e = (0, i.jsx)(x.tvc, {
             size: "md",
             color: "currentColor",
             className: es.Sy
         }), t = l.description;
-        let h = (0, i.jsx)(A.Text, {
+        let h = (0, i.jsx)(x.Text, {
                 variant: "text-sm/normal",
                 className: es.p6,
                 children: (0, Z.i$)(o()(l.createdAt), "MM/DD/YYYY")
             }),
             p = l.isGift ? (0, i.jsx)(_.m_, {
                 text: ei.intl.string(ei.t.QddTpm),
-                children: (0, i.jsx)(A.okO, {
+                children: (0, i.jsx)(x.okO, {
                     size: "md",
                     color: "currentColor",
                     className: es.ez
@@ -715,12 +715,12 @@ class eg extends s.PureComponent {
         return e.isGuildProductPurchase ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
                 className: es.ts
-            }), e.isSoftDeletedProduct ? (0, i.jsx)(A.po8, {
-                messageType: A.YCn.WARNING,
+            }), e.isSoftDeletedProduct ? (0, i.jsx)(x.po8, {
+                messageType: x.YCn.WARNING,
                 action: (0, i.jsx)(g.$nd, {
                     variant: "overlay-secondary",
                     text: ei.intl.string(ei.t.zoztQA),
-                    onClick: () => (0, x.A)(el(n))
+                    onClick: () => (0, A.A)(el(n))
                 }),
                 children: ei.intl.string(ei.t["3AvulN"])
             }) : null != s && null != e.sku && (0, i.jsx)(e_, {
@@ -730,11 +730,11 @@ class eg extends s.PureComponent {
         }) : null
     }
     renderExpandedSection() {
-        return (0, i.jsx)(A.DUT, {
+        return (0, i.jsx)(x.DUT, {
             onClick: e => e.stopPropagation(),
             children: (0, i.jsxs)("div", {
                 className: es.WI,
-                children: [(0, i.jsx)(A.H, {
+                children: [(0, i.jsx)(x.H, {
                     className: es.mW,
                     children: ei.intl.string(ei.t.nyzoFb)
                 }), this.renderPaymentBreakdown(), this.renderGuildProductBenefits(), this.renderInvoiceDownload(), this.renderAdditionalTenantInfo(), this.renderRefundDetails()]
@@ -751,7 +751,7 @@ class eg extends s.PureComponent {
         } = this.state;
         return (0, i.jsx)(d.tG, {
             id: e.id,
-            children: e => (0, i.jsxs)(A.DUT, {
+            children: e => (0, i.jsxs)(x.DUT, {
                 onClick: this.handleExpandInfo,
                 "data-expanded": s,
                 className: a()(es.Ji, t, {
@@ -778,7 +778,7 @@ class eg extends s.PureComponent {
     }
 }
 
-function eA(e) {
+function ex(e) {
     let {
         payment: t,
         locale: n,
@@ -793,8 +793,8 @@ function eA(e) {
         gameApplication: f.A.getApplication(o ?? "") ?? t.sku?.application,
         paymentSources: H.A.paymentSources
     })), {
-        hasAlreadyLinked: A
-    } = (0, T.RD)((0, L.bF)(t.sku) ? _ : void 0), x = (0, m.bG)([f.A], () => null != d ? f.A.getApplication(d) : null);
+        hasAlreadyLinked: x
+    } = (0, T.RD)((0, L.bF)(t.sku) ? _ : void 0), A = (0, m.bG)([f.A], () => null != d ? f.A.getApplication(d) : null);
     s.useEffect(() => {
         c && null != d && (0, R.TA)(d)
     }, [d, c]);
@@ -811,7 +811,7 @@ function eA(e) {
         } = (0, p.Ay)(h.A.BILLING_SETTINGS_BILLING);
     return (0, i.jsx)(eg, {
         applicationStatistics: u,
-        application: c ? x : E,
+        application: c ? A : E,
         analyticsLocations: N,
         guild: S,
         stickerPack: null,
@@ -822,6 +822,6 @@ function eA(e) {
         payment: t,
         plan: C,
         claimedGiftUser: v,
-        hasLinkedToApplication: A
+        hasLinkedToApplication: x
     })
 }

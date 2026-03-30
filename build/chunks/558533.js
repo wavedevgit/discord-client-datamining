@@ -16,10 +16,10 @@ var i = n(627968),
 let g = e => {
     let {
         entrypoint: t
-    } = e, n = (0, d.V)(), g = (0, o.O)(), A = (0, u.NF)({
+    } = e, n = (0, d.V)(), g = (0, o.O)(), x = (0, u.NF)({
         trialOffer: n
-    }), x = (0, u.Tp)(), h = (0, l.bG)([a.A], () => a.A.getReminderStateId());
+    }), A = (0, u.Tp)(), h = (0, l.bG)([a.A], () => a.A.getReminderStateId());
     return (s.useEffect(() => {
-        !0 === A && (0, u.QG)(), !0 === x && (0, u.ne)(h), (null != n || null != g) && (0, r.u1)(n, g)
-    }, [n, g, A, x, h]), t === _.Mf.UserSettings) ? (0, i.jsx)(m.A, {}) : t === _.Mf.ApplicationStoreHome ? (0, i.jsx)(c.A, {}) : null
+        !0 === x && (0, u.QG)(), !0 === A && (0, u.ne)(h), (null != n || null != g) && (0, r.u1)(n, g)
+    }, [n, g, x, A, h]), t === _.Mf.UserSettings) ? (0, i.jsx)(m.A, {}) : t === _.Mf.ApplicationStoreHome ? (0, i.jsx)(c.A, {}) : null
 }

@@ -1,17 +1,16 @@
 /** chunk id: 145408 params = (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => l,
-    M: () => o
+n.d(e, {
+    A: () => u,
+    M: () => a
 });
 var i = n(627968);
 n(64700);
-var r = n(397927),
-    a = n(985018);
+var l = n(397927),
+    r = n(985018);
 
-function o(e) {
-    return null == e || null == e.end_time ? null : a.intl.formatToPlainString(a.t.j7h4AJ, {
-        endTime: new Date(e.end_time).toLocaleString(a.intl.currentLocale, {
+function a(t) {
+    return null == t || null == t.end_time ? null : r.intl.formatToPlainString(r.t.j7h4AJ, {
+        endTime: new Date(t.end_time).toLocaleString(r.intl.currentLocale, {
             month: "numeric",
             day: "numeric",
             hour: "numeric",
@@ -20,15 +19,15 @@ function o(e) {
     })
 }
 
-function l(e) {
+function u(t) {
     let {
-        muteConfig: t,
+        muteConfig: e,
         className: n
-    } = e, a = o(t);
-    return null != a ? (0, i.jsx)(r.Text, {
+    } = t, r = a(e);
+    return null != r ? (0, i.jsx)(l.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         className: n,
-        children: a
+        children: r
     }) : null
 }

@@ -18,13 +18,13 @@ function _(e) {
         currentUser: t,
         userTeamsLoading: n,
         userTeams: _
-    } = e, [g, A] = s.useState(!1), [x, h] = s.useState(!1), [p, T] = s.useState(!1), [f, S] = s.useState(!1), [E, b] = s.useState(null), C = s.useCallback(e => {
+    } = e, [g, x] = s.useState(!1), [A, h] = s.useState(!1), [p, T] = s.useState(!1), [f, S] = s.useState(!1), [E, b] = s.useState(null), C = s.useCallback(e => {
         if (e.body.code === u.t02.INVALID_PASSWORD) throw e;
         S(!0), b(e.body.message)
     }, []), v = s.useCallback((e, t) => (0, a.U_)(e, t).then(u.tEg, C), [C]), N = s.useCallback(function() {
         let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
             n = o.A.getGuildsArray().filter(e => e.ownerId === t.id);
-        (_?.filter(e => e.owner_user_id === t.id) ?? []).length > 0 ? A(!0) : n.length > 0 ? h(!0) : t.isClaimed() ? (0, l.qfG)(t => (0, i.jsx)(r.default, {
+        (_?.filter(e => e.owner_user_id === t.id) ?? []).length > 0 ? x(!0) : n.length > 0 ? h(!0) : t.isClaimed() ? (0, l.qfG)(t => (0, i.jsx)(r.default, {
             ...t,
             handleSubmit: t => v(t, e),
             title: e ? m.intl.string(m.t["8lQ2rR"]) : m.intl.string(m.t.jf5GGb),
@@ -40,11 +40,11 @@ function _(e) {
             handleDeleteAccount: () => N(!0)
         }), (0, i.jsx)(c.A, {
             shouldRenderOwnedTeamsModal: g,
-            shouldRenderOwnedGuildsModal: x,
+            shouldRenderOwnedGuildsModal: A,
             shouldRenderDeleteAccountConfirmModal: p,
             shouldRenderDisableAccountErrorModal: f,
             disableAccountErrorMessage: E,
-            onOwnedTeamsWarningModalClose: () => A(!1),
+            onOwnedTeamsWarningModalClose: () => x(!1),
             onOwnedGuildsWarningModalClose: () => h(!1),
             onDeleteAccountConfirmModalClose: () => T(!1),
             onDisableAccountErrorModalClose: () => {

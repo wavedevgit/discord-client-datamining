@@ -44,7 +44,7 @@ let _ = e => {
     g = e => {
         let {
             inModal: t
-        } = e, n = (0, o.y)(c.intl.string(d.default["TCzk/e"]), c.intl.string(d.default["2OqtJJ"])), s = (0, o.y)(c.intl.string(d.default.ASf7XN), c.intl.string(d.default["82y87X"])), l = (0, o.y)(c.intl.string(d.default["0QDVFN"]), c.intl.string(d.default["1xBHHV"])), m = c.intl.string(d.default["JvJ3P/"]), g = (0, o.y)(c.intl.string(d.default.l0ChgF), c.intl.string(d.default.S2ss5X)), A = (0, o.y)(c.intl.string(d.default.LDu4Uk), c.intl.string(d.default.fEgtLV)), x = c.intl.string(d.default["4SCALu"]), h = c.intl.string(d.default.oYf9P7), p = (0, o.y)(c.intl.string(d.default["dES/2r"]), c.intl.string(d.default.ep6mdN)), T = (0, o.y)(c.intl.string(d.default["30+sih"]), c.intl.string(d.default["0cuLn1"])), f = (0, o.y)(c.intl.string(d.default.tHTyRh), c.intl.string(d.default.TeNlMb)), S = (0, o.y)(c.intl.string(d.default.wZejZr), c.intl.string(d.default.tdgcf1));
+        } = e, n = (0, o.y)(c.intl.string(d.default["TCzk/e"]), c.intl.string(d.default["2OqtJJ"])), s = (0, o.y)(c.intl.string(d.default.ASf7XN), c.intl.string(d.default["82y87X"])), l = (0, o.y)(c.intl.string(d.default["0QDVFN"]), c.intl.string(d.default["1xBHHV"])), m = c.intl.string(d.default["JvJ3P/"]), g = (0, o.y)(c.intl.string(d.default.l0ChgF), c.intl.string(d.default.S2ss5X)), x = (0, o.y)(c.intl.string(d.default.LDu4Uk), c.intl.string(d.default.fEgtLV)), A = c.intl.string(d.default["4SCALu"]), h = c.intl.string(d.default.oYf9P7), p = (0, o.y)(c.intl.string(d.default["dES/2r"]), c.intl.string(d.default.ep6mdN)), T = (0, o.y)(c.intl.string(d.default["30+sih"]), c.intl.string(d.default["0cuLn1"])), f = (0, o.y)(c.intl.string(d.default.tHTyRh), c.intl.string(d.default.TeNlMb)), S = (0, o.y)(c.intl.string(d.default.wZejZr), c.intl.string(d.default.tdgcf1));
         return (0, i.jsxs)("div", {
             children: [(0, i.jsx)(_, {
                 header: m,
@@ -58,7 +58,7 @@ let _ = e => {
                 inModal: t
             }), (0, i.jsx)(_, {
                 header: c.intl.string(d.default["44NEx6"]),
-                description: A,
+                description: x,
                 icon: (0, i.jsx)(r.Bxc, {
                     size: "custom",
                     width: 20,
@@ -67,7 +67,7 @@ let _ = e => {
                 }),
                 inModal: t
             }), (0, i.jsx)(_, {
-                header: x,
+                header: A,
                 description: h,
                 icon: (0, i.jsx)(a.ChatIcon, {
                     size: "md"

@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(954571),
     _ = n(661191),
     g = n(695515),
-    A = n(923531),
-    x = n(294433),
+    x = n(923531),
+    A = n(294433),
     h = n(10005),
     p = n(400641),
     T = n(438732),
@@ -69,10 +69,10 @@ function U(e) {
         (0, u.showToast)((0, u.createToast)(D.intl.string(P.default.Wu8BK2), u.ToastType.FAILURE))
     }, []), l = (0, T.A)(), r = (0, p._w)(t), d = (0, p.Gn)(t), c = (0, p.Ju)(t), {
         loadMore: m,
-        isMoreLoading: x
+        isMoreLoading: A
     } = (0, h.A)({
         onError: n
-    }), f = (0, A.kN)().get(t), [S, E] = s.useState(R.PH), b = s.useCallback(() => {
+    }), f = (0, x.kN)().get(t), [S, E] = s.useState(R.PH), b = s.useCallback(() => {
         E(e => e + R.PH), m(t)
     }, [t, m]);
     o()(f, `No text for action type: ${t}`);
@@ -81,18 +81,18 @@ function U(e) {
             let {
                 row: t
             } = e, n = r[t];
-            if ((0, A.aq)(n)) {
+            if ((0, x.aq)(n)) {
                 let e = _.default.extractTimestamp(n.event_id),
-                    t = (0, A.i6)(e, f.timestampFormatter);
+                    t = (0, x.i6)(e, f.timestampFormatter);
                 return (0, i.jsx)(N.A, {
                     userId: n.entity_id,
                     subText: t
                 }, n.event_id)
             }
-            if ((0, A.Is)(n)) return (0, i.jsx)(C.A, {
+            if ((0, x.Is)(n)) return (0, i.jsx)(C.A, {
                 guildId: n.entity_id
             }, n.event_id);
-            if ((0, A.u7)(n)) {
+            if ((0, x.u7)(n)) {
                 let e = g.A.getPurchaseInfo(n.entity_id);
                 return null == e ? null : (0, i.jsx)(v.A, {
                     skuId: e.sku_id,
@@ -129,12 +129,12 @@ function U(e) {
             }))
         }), O.length < d ? (0, i.jsx)(u.DUT, {
             className: a()(G.FQ, {
-                [G.r9]: x
+                [G.r9]: A
             }),
             onClick: b,
             role: "button",
-            "aria-disabled": x,
-            children: x ? (0, i.jsx)(u.y$y, {
+            "aria-disabled": A,
+            children: A ? (0, i.jsx)(u.y$y, {
                 type: u.y$y.Type.PULSING_ELLIPSIS,
                 className: G.u1
             }) : (0, i.jsx)(u.Text, {
@@ -150,10 +150,10 @@ function U(e) {
 let w = () => {
         let e = (0, T.A)(),
             t = (0, E.vx)(),
-            n = (0, x.y)(D.intl.formatToPlainString(P.default["7hqFl9"], {
+            n = (0, A.y)(D.intl.formatToPlainString(P.default["7hqFl9"], {
                 activeLinks: t.length
             }), D.intl.string(P.default["Q/D/0Q"])),
-            s = (0, A.cV)(!!e),
+            s = (0, x.cV)(!!e),
             l = (0, E.v4)(s);
         return e && t.length > 1 ? (0, i.jsx)(u.Text, {
             variant: "eyebrow",
@@ -231,7 +231,7 @@ let B = () => {
         let e = (0, f.k)(),
             t = (0, T.A)(),
             n = (0, E.vx)(),
-            s = (0, A.cV)(!!t),
+            s = (0, x.cV)(!!t),
             l = (0, E.v4)(s);
         return null === e ? null : t && 1 !== n.length ? (0, i.jsx)(B, {}) : (0, i.jsx)(V, {
             userId: e,
@@ -239,9 +239,9 @@ let B = () => {
         })
     },
     H = () => {
-        let e = (0, A.Mo)(),
+        let e = (0, x.Mo)(),
             t = (0, p.lI)(),
-            n = (0, A.jp)(),
+            n = (0, x.jp)(),
             s = (0, E.v4)(n);
         return (0, i.jsxs)("div", {
             className: G.kL,

@@ -1,6 +1,6 @@
 /** chunk id: 946015 params = (module,exports,require) **/
 n.d(t, {
-    s: () => A
+    s: () => x
 });
 var i = n(627968),
     s = n(64700),
@@ -74,7 +74,7 @@ class g extends s.PureComponent {
         })
     }
 }
-class A extends s.PureComponent {
+class x extends s.PureComponent {
     static Child = g;
     static Direction = d;
     static Align = m;
@@ -105,14 +105,14 @@ class A extends s.PureComponent {
             style: m,
             gutter: _,
             ...g
-        } = this.props, A = {
+        } = this.props, x = {
             flexShrink: d,
             flexGrow: c,
             flexBasis: u,
             ...m
         };
         return (0, i.jsx)("div", {
-            style: A,
+            style: x,
             className: a()(o.Uu, n, s, l, r, _, t),
             ...g,
             children: e

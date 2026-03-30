@@ -1,6 +1,6 @@
 /** chunk id: 301656 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => x
 });
 var i = n(627968),
     s = n(64700),
@@ -15,10 +15,10 @@ var i = n(627968),
     _ = n(985018),
     g = n(827735);
 
-function A(e) {
+function x(e) {
     let {
         onBackClick: t
-    } = e, n = (0, l.bG)([c.A], () => c.A.getAllUnlockedAchievements()), A = s.useMemo(() => Object.values(n).sort((e, t) => t.dateUnlocked - e.dateUnlocked), [n]), x = s.useMemo(() => Object.values(u.l0).filter(d.Vq).filter(e => null == n[e.id]).sort((e, t) => e.rarity - t.rarity), [n]);
+    } = e, n = (0, l.bG)([c.A], () => c.A.getAllUnlockedAchievements()), x = s.useMemo(() => Object.values(n).sort((e, t) => t.dateUnlocked - e.dateUnlocked), [n]), A = s.useMemo(() => Object.values(u.l0).filter(d.Vq).filter(e => null == n[e.id]).sort((e, t) => e.rarity - t.rarity), [n]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)(r.DUT, {
             onClick: t,
@@ -53,11 +53,11 @@ function A(e) {
                     height: 40
                 })
             })]
-        }), A.length > 0 && (0, i.jsx)("div", {
+        }), x.length > 0 && (0, i.jsx)("div", {
             className: g.yF,
             children: (0, i.jsx)("div", {
                 className: g.Eh,
-                children: A.map(e => {
+                children: x.map(e => {
                     let {
                         achievementId: t,
                         dateUnlocked: n
@@ -68,7 +68,7 @@ function A(e) {
                     }, t)
                 })
             })
-        }), x.length > 0 && (0, i.jsxs)("div", {
+        }), A.length > 0 && (0, i.jsxs)("div", {
             className: g.yF,
             children: [(0, i.jsx)("div", {
                 className: g.if,
@@ -79,7 +79,7 @@ function A(e) {
                 })
             }), (0, i.jsx)("div", {
                 className: g.Eh,
-                children: x.map(e => (0, i.jsx)(m.A, {
+                children: A.map(e => (0, i.jsx)(m.A, {
                     achievementId: e.id
                 }, e.id))
             })]

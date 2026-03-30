@@ -1,6 +1,6 @@
 /** chunk id: 189024 params = (module,exports,require) **/
 n.d(t, {
-    A: () => w
+    A: () => B
 });
 var i = n(627968),
     s = n(64700),
@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(793943),
     _ = n(259065),
     g = n(95035),
-    A = n(532794),
-    x = n(591179),
+    x = n(532794),
+    A = n(591179),
     h = n(576060),
     p = n(780964),
     T = n(358776),
@@ -23,49 +23,53 @@ var i = n(627968),
     S = n(166403),
     E = n(730784),
     b = n(398523),
-    C = n(612669),
-    v = n(161319),
-    N = n(920050),
-    I = n(9458),
-    j = n(788868),
-    y = n(88001),
-    O = n(519412),
-    R = n(985018),
-    L = n(130474),
-    P = n(998663),
-    D = n(817577),
-    G = n(419455),
-    M = n(288604),
-    k = n(893160),
-    U = n(509442);
+    C = n(881373),
+    v = n(612669),
+    N = n(161319),
+    I = n(920050),
+    j = n(9458),
+    y = n(788868),
+    O = n(88001),
+    R = n(653624),
+    L = n(519412),
+    P = n(985018),
+    D = n(130474),
+    G = n(998663),
+    M = n(817577),
+    k = n(419455),
+    U = n(288604),
+    w = n(893160),
+    V = n(509442);
 
-function w() {
+function B() {
     let {
         analyticsLocations: e
-    } = (0, c.Ay)(d.A.PREMIUM_MARKETING_PERK_CARD), t = (0, x.X)("useWhatsNewPerkCards"), w = (0, C.O9)(), V = (0, E.R)({
+    } = (0, c.Ay)(d.A.PREMIUM_MARKETING_PERK_CARD), t = (0, A.X)("useWhatsNewPerkCards"), B = (0, v.O9)(), F = (0, C.YS)({
+        location: "useWhatsNewPerkCards"
+    }).functionalityEnabled, H = (0, E.R)({
         location: "PremiumWhatsNewSection"
-    }), B = b.A.useExperiment({
+    }), z = b.A.useExperiment({
         location: "PremiumWhatsNewSection"
-    }).enabled, F = (0, a.bG)([S.A], () => S.A.getPremiumTypeSubscription()), H = F?.hasActiveTrial ?? !1, z = (0, h.A)(), Y = (0, s.useCallback)(() => {
+    }).enabled, Y = (0, a.bG)([S.A], () => S.A.getPremiumTypeSubscription()), X = Y?.hasActiveTrial ?? !1, K = (0, h.A)(), W = (0, s.useCallback)(() => {
         (0, f.openUserSettings)(p.X.PROFILE_PANEL, {
             analyticsLocations: e
         }, () => (0, _.L)({
             analyticsLocations: e
         }))
-    }, [e]), X = (0, s.useCallback)(() => {
+    }, [e]), Z = (0, s.useCallback)(() => {
         (0, f.openUserSettings)(p.X.PROFILE_PANEL, {
             analyticsLocations: e
         }, () => (0, u.L)({
             analyticsLocations: e
         }))
-    }, [e]), K = (0, s.useCallback)(() => {
+    }, [e]), q = (0, s.useCallback)(() => {
         let e = (0, T.Ci)("openCustomAppSettings") ? p.X.DISPLAY_IN_APP_ICON_CATEGORY : p.X.APPEARANCE_IN_APP_ICON;
         (0, f.openUserSettings)(e)
-    }, []), W = () => {
-        (0, o.A)(y.TE)
-    }, Z = (0, s.useCallback)(() => {
-        if (V) {
-            if (H) return void(0, r.mMO)(async () => {
+    }, []), Q = () => {
+        (0, o.A)(O.TE)
+    }, J = (0, s.useCallback)(() => {
+        if (H) {
+            if (X) return void(0, r.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("99709").then(n.bind(n, 516044));
@@ -73,9 +77,9 @@ function w() {
                     ...t
                 })
             });
-            (0, A.A)({
-                subscriptionTier: j.pe.TIER_2,
-                initialPlanId: j.gD.PREMIUM_GROUP_MONTH,
+            (0, x.A)({
+                subscriptionTier: y.pe.TIER_2,
+                initialPlanId: y.gD.PREMIUM_GROUP_MONTH,
                 analyticsLocations: e
             })
         } else(0, r.mMO)(async () => {
@@ -86,9 +90,9 @@ function w() {
                 ...t
             })
         })
-    }, [V, e, H]), q = (0, I.A)(e), {
-        currentDate: Q,
-        nDaysInMonth: J
+    }, [H, e, X]), $ = (0, j.A)(e), {
+        currentDate: ee,
+        nDaysInMonth: et
     } = (0, s.useMemo)(() => {
         let e = new Date;
         return {
@@ -97,85 +101,96 @@ function w() {
         }
     }, []);
     return (0, s.useMemo)(() => {
-        let n = [w ? {
-                id: N.PREMIUM_GROUP_CARD_ID,
-                title: R.intl.string(O.default.YkvksF),
+        let n = [F ? {
+                id: I.LOGITECH_3PP_CARD_ID,
+                title: P.intl.string(R.default.OlObRa),
+                description: P.intl.string(R.default["8Gl8gP"]),
+                subscriptionRequired: !0,
+                progress: ee.getDate() / et,
+                ctaText: P.intl.string(P.t.w7s5Qr),
+                onCtaClick: () => (0, N.uE)({
+                    analyticsLocations: e
+                }),
+                blurTint: "#2E213D"
+            } : null, B ? {
+                id: I.PREMIUM_GROUP_CARD_ID,
+                title: P.intl.string(L.default.YkvksF),
                 description: (0, i.jsxs)(i.Fragment, {
-                    children: [R.intl.formatToPlainString(O.default.JlyGQj, {
-                        totalSeats: y.aw,
-                        premiumGroupProductName: (0, y.DP)()
+                    children: [P.intl.formatToPlainString(L.default.JlyGQj, {
+                        totalSeats: O.aw,
+                        premiumGroupProductName: (0, O.DP)()
                     }), (0, i.jsx)("div", {
-                        className: L.LF,
+                        className: D.LF,
                         children: (0, i.jsx)(g.A, {
-                            onClick: W,
-                            children: R.intl.string(O.default.yYyGJH)
+                            onClick: Q,
+                            children: P.intl.string(L.default.yYyGJH)
                         })
                     })]
                 }),
-                pillText: R.intl.string(R.t.oW0eUd),
-                primaryAsset: D,
-                ...V ? {
+                pillText: P.intl.string(P.t.oW0eUd),
+                primaryAsset: M,
+                ...H ? {
                     ctaIcon: r.tvc,
                     ctaIconPosition: "start"
                 } : {},
-                ctaText: R.intl.string(V ? R.t.IJI7yk : R.t.jVcuVY),
-                onCtaClick: Z
-            } : null, B ? {
-                id: N.RECURRING_3P_PROMOTIONS_CARD_ID,
-                title: R.intl.string(R.t.m7PucM),
-                description: R.intl.format(R.t.zh1X7u, {}),
+                ctaText: P.intl.string(H ? P.t.IJI7yk : P.t.jVcuVY),
+                onCtaClick: J
+            } : null, z ? {
+                id: I.RECURRING_3P_PROMOTIONS_CARD_ID,
+                title: P.intl.string(P.t.m7PucM),
+                description: P.intl.format(P.t.zh1X7u, {}),
                 subscriptionRequired: !0,
-                pillText: R.intl.string(R.t.oW0eUd),
+                pillText: P.intl.string(P.t.oW0eUd),
                 caption: (0, i.jsx)("img", {
-                    src: P,
+                    src: G,
                     alt: "SteelSeries"
                 }),
-                backgroundAssetUrl: k.A,
-                progress: Q.getDate() / J,
-                ctaText: R.intl.string(R.t.w7s5Qr),
-                onCtaClick: () => (0, v.uE)({
+                backgroundAssetUrl: w.A,
+                progress: ee.getDate() / et,
+                ctaText: P.intl.string(P.t.w7s5Qr),
+                onCtaClick: () => (0, N.uE)({
                     analyticsLocations: e
                 }),
                 blurTint: "#2E213D"
             } : null, {
-                id: N.DISPLAY_NAME_STYLES_CARD_ID,
-                title: R.intl.string(R.t.OLtTrt),
-                description: R.intl.string(R.t["di/pXR"]),
-                onCtaClick: t ? z : Y,
-                ctaText: R.intl.string(R.t.jVcuVY),
-                primaryAsset: G.A,
-                pillText: R.intl.string(R.t.y2b7CA)
+                id: I.DISPLAY_NAME_STYLES_CARD_ID,
+                title: P.intl.string(P.t.OLtTrt),
+                description: P.intl.string(P.t["di/pXR"]),
+                onCtaClick: t ? K : W,
+                ctaText: P.intl.string(P.t.jVcuVY),
+                primaryAsset: k.A,
+                pillText: P.intl.string(P.t.y2b7CA)
             }, {
-                id: N.CLIENT_THEMES_CARD_ID,
-                title: R.intl.string(R.t.acc6h6),
-                description: R.intl.formatToPlainString(R.t.WQazjs, {
+                id: I.CLIENT_THEMES_CARD_ID,
+                title: P.intl.string(P.t.acc6h6),
+                description: P.intl.formatToPlainString(P.t.WQazjs, {
                     themeCount: 20
                 }),
-                primaryAsset: U.A,
-                ctaText: R.intl.string(R.t.jVcuVY),
+                primaryAsset: V.A,
+                ctaText: P.intl.string(P.t.jVcuVY),
                 onCtaClick: () => {
                     (0, m.nf)(m.HP.CUSTOM_THEME)
                 }
             }, {
-                id: N.PERMADECOS_CARD_ID,
-                title: R.intl.string(R.t.L14NZN),
-                description: R.intl.string(R.t.eCZkAI),
+                id: I.PERMADECOS_CARD_ID,
+                title: P.intl.string(P.t.L14NZN),
+                description: P.intl.string(P.t.eCZkAI),
                 primaryAsset: (0, i.jsx)(l.u7P, {
                     alt: "",
                     ariaHidden: !0
                 }),
-                ctaText: R.intl.string(R.t.jVcuVY),
-                onCtaClick: t ? z : X
+                ctaText: P.intl.string(P.t.jVcuVY),
+                onCtaClick: t ? K : Z
             }, {
-                id: N.CUSTOM_APP_ICONS_CARD_ID,
-                title: R.intl.string(R.t["GU+wqh"]),
-                description: R.intl.string(R.t["1uPk1Z"]),
-                primaryAsset: M.A,
-                ctaText: R.intl.string(R.t.y9TxXV),
-                onCtaClick: K
+                id: I.CUSTOM_APP_ICONS_CARD_ID,
+                title: P.intl.string(P.t["GU+wqh"]),
+                description: P.intl.string(P.t["1uPk1Z"]),
+                primaryAsset: U.A,
+                ctaText: P.intl.string(P.t.y9TxXV),
+                onCtaClick: q
             }],
             s = (n = n.filter(e => null != e))[0].featured,
             a = s ? 5 : 6;
-        return n.splice(+!!s, 0, q), n.length > a && n.splice(a, n.length - a), n
-    }, [q, w, V, B, J, Q, e, Y, K, X, Z, z, t])
+        return n.splice(+!!s, 0, $), n.length > a && n.splice(a, n.length - a), n
+    }, [$, B, H, z, et, ee, e, W, q, Z, J, K, t, F])
 }

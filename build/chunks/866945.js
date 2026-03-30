@@ -20,11 +20,11 @@ function m(e) {
         dismissNotice: m,
         className: _,
         noticeType: g
-    } = e, A = null != m;
+    } = e, x = null != m;
     s.useEffect(() => {
         (0, o.N)(g, d.YX.VIEWED)
     }, [g]);
-    let x = s.useCallback(() => {
+    let A = s.useCallback(() => {
             null != m && (m(), (0, o.N)(g, d.YX.DISMISS))
         }, [g, m]),
         h = s.useCallback(() => {
@@ -49,9 +49,9 @@ function m(e) {
                     children: e
                 }, t)
             })
-        }), A && (0, i.jsx)(r.DUT, {
+        }), x && (0, i.jsx)(r.DUT, {
             className: u.b,
-            onClick: x,
+            onClick: A,
             children: (0, i.jsx)(r.PGe, {})
         })]
     })

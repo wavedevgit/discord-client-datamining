@@ -23,7 +23,7 @@ let g = (0, o.E2)(c.X.ADVANCED_HARDWARE_ACCELERATION, {
                 label: n,
                 description: l,
                 checked: e,
-                onChange: A
+                onChange: x
             }), !e && (0, i.jsx)(m.A, {
                 look: m.k.WARNING,
                 children: _.intl.string(_.t.j7S6IX)
@@ -32,7 +32,7 @@ let g = (0, o.E2)(c.X.ADVANCED_HARDWARE_ACCELERATION, {
     }
 });
 
-function A(e) {
+function x(e) {
     let t = e ? _.intl.format(_.t.LYXRxL, {}) : _.intl.format(_.t.uDP3Kz, {});
     (0, r.A)({
         title: _.intl.string(_.t.aqpAvn),

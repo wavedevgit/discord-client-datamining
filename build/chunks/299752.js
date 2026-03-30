@@ -1,6 +1,6 @@
 /** chunk id: 299752 params = (module,exports,require) **/
 n.d(t, {
-    C: () => x
+    C: () => A
 });
 var i = n(627968),
     s = n(158954),
@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(903427),
     _ = n(652215),
     g = n(985018),
-    A = n(616118);
-let x = (0, o.E2)(c.X.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
+    x = n(616118);
+let A = (0, o.E2)(c.X.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
     useSearchTerms: () => [g.intl.string(g.t["pS+K2L"]), g.intl.string(g.t.nuFtHH)],
     usePredicate: m.P,
     Component: function() {
@@ -33,7 +33,7 @@ let x = (0, o.E2)(c.X.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
             description: t,
             layout: "horizontal-responsive",
             children: (0, i.jsx)("div", {
-                className: A.e,
+                className: x.e,
                 children: (0, i.jsx)(r.A, {
                     defaultValue: e,
                     onChange: e => a.A.setMode(_.TBI.PUSH_TO_TALK, {

@@ -1,6 +1,6 @@
 /** chunk id: 909081 params = (module,exports,require) **/
 n.d(t, {
-    T: () => A
+    T: () => x
 });
 var i = n(627968),
     s = n(311907),
@@ -14,7 +14,7 @@ var i = n(627968),
     m = n(32096),
     _ = n(545214),
     g = n(985018);
-let A = (0, l.E2)(d.X.ACCOUNT_SMS_BACKUP_AUTHENTICATION_SETTING, {
+let x = (0, l.E2)(d.X.ACCOUNT_SMS_BACKUP_AUTHENTICATION_SETTING, {
     useSearchTerms: () => [g.intl.string(g.t.uHAJ5v)],
     usePredicate: function() {
         let e = (0, m.b)(),

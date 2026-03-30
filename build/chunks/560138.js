@@ -1,33 +1,33 @@
 /** chunk id: 560138 params = (module,exports,require) **/
-t.d(r, {
-    A: () => _
+n.d(t, {
+    A: () => a
 });
-var a = t(311907),
-    i = t(73153);
-let o = {
+var i = n(311907),
+    l = n(73153);
+let r = {
     fetched: !1,
     affinities: []
 };
-class n extends a.Ay.Store {
+class s extends i.Ay.Store {
     get hasFetched() {
-        return o.fetched
+        return r.fetched
     }
     get affinities() {
-        return o.affinities
+        return r.affinities
     }
 }
-let _ = new n(i.h, {
+let a = new s(l.h, {
     BILLING_NITRO_AFFINITY_FETCHED: function(e) {
         let {} = e;
-        o.fetched = !0
+        r.fetched = !0
     },
     BILLING_NITRO_AFFINITY_FETCH_SUCCEEDED: function(e) {
         let {
-            res: r
+            res: t
         } = e;
-        o.affinities = r
+        r.affinities = t
     },
     LOGOUT: function() {
-        o.fetched = !1, o.affinities = []
+        r.fetched = !1, r.affinities = []
     }
 })

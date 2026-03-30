@@ -15,8 +15,8 @@ var s = n(311907),
     m = n(67480),
     _ = n(163437),
     g = n(185438),
-    A = n(572566),
-    x = n(652215),
+    x = n(572566),
+    A = n(652215),
     h = n(985018),
     p = n(675403);
 
@@ -26,12 +26,12 @@ function T(e) {
         currentSubscription: n,
         currentListing: l,
         alternativeListings: g,
-        navigateToHome: x,
+        navigateToHome: A,
         subscriptionGroup: T,
         renewalSkuId: S
     } = e, E = (0, r.A)(t, 100), b = (0, _.PJ)(T.flags), C = b ? a.RR9 : a.nys, v = b ? h.intl.string(h.t["46YF2D"]) : h.intl.string(h.t.fFyGiA), N = n.metadata?.application_subscription_guild_id, I = (0, s.bG)([u.A], () => b && null != N ? u.A.getGuild(N) : void 0, [N, b]), j = (0, s.bG)([m.A], () => {
         if (null != S) return m.A.get(S)
-    }, [S]), y = (0, A.Y)(n.currentPeriodEnd);
+    }, [S]), y = (0, x.Y)(n.currentPeriodEnd);
     return (0, i.jsxs)("div", {
         children: [(0, i.jsxs)("div", {
             className: p.wx,
@@ -122,7 +122,7 @@ function T(e) {
             }, e.id) : (0, i.jsx)(f, {
                 storeListing: e,
                 guildId: N,
-                navigateToHome: x
+                navigateToHome: A
             }, e.id))]
         })]
     })
@@ -136,7 +136,7 @@ function f(e) {
     } = e, {
         openModal: a
     } = (0, g.A)({
-        analyticsLocation: x.ThZ.APP_SUBSCRIPTIONS_MANAGEMENT,
+        analyticsLocation: A.ThZ.APP_SUBSCRIPTIONS_MANAGEMENT,
         skuId: t.skuId,
         initialSubscribeForGuild: n,
         disableGuildSelector: !0,

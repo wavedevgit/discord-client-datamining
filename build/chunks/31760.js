@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(231137),
     _ = n(151098),
     g = n(716005),
-    A = n(144010),
-    x = n(175631),
+    x = n(144010),
+    A = n(175631),
     h = n(430443),
     p = n(997442),
     T = n(985018);
@@ -29,10 +29,10 @@ function f(e) {
         overrideId: r,
         setOverride: o,
         fetchOverride: d
-    } = e, [c, u] = s.useState(r ?? ""), m = s.useRef(null), [_, g] = s.useState(0), A = () => {
+    } = e, [c, u] = s.useState(r ?? ""), m = s.useRef(null), [_, g] = s.useState(0), x = () => {
         null != m.current && (clearTimeout(m.current), m.current = null)
     };
-    return s.useEffect(() => A, []), (0, i.jsx)(l.D0$, {
+    return s.useEffect(() => x, []), (0, i.jsx)(l.D0$, {
         layout: "horizontal-responsive",
         label: t,
         description: n,
@@ -43,7 +43,7 @@ function f(e) {
             value: c,
             onChange: e => {
                 if (!(e.length > 0) || /^[0-9]+$/.test(e)) {
-                    if (u(e), A(), 0 === e.length) {
+                    if (u(e), x(), 0 === e.length) {
                         g(0), o(null);
                         return
                     }
@@ -60,7 +60,7 @@ function f(e) {
 }
 let S = (0, a.zZ)(o.X.DEV_OVERRIDES, {
     useTitle: () => "Overrides",
-    buildLayout: () => [h.U, p.l, u.B, m.q, g.g, d.Y, x.s, _.t, A.T, c.s],
+    buildLayout: () => [h.U, p.l, u.B, m.q, g.g, d.Y, A.s, _.t, x.T, c.s],
     useInlineNotice: () => ({
         type: r.lT.INLINE_NOTICE,
         noticeType: "info",

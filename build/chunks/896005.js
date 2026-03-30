@@ -38,7 +38,7 @@ let u = s.memo(function(e) {
         layout: a,
         variant: u = "default",
         isTitleHiddenVisually: m
-    } = t, _ = n(), g = l?.(), A = s.useId(), x = null != _ && "" !== _, h = null != g && "" !== g, p = function(e) {
+    } = t, _ = n(), g = l?.(), x = s.useId(), A = null != _ && "" !== _, h = null != g && "" !== g, p = function(e) {
         switch (e) {
             case "default":
                 return "md";
@@ -47,7 +47,7 @@ let u = s.memo(function(e) {
         }
     }(u);
     return (0, i.jsxs)("fieldset", {
-        "aria-describedby": h ? A : void 0,
+        "aria-describedby": h ? x : void 0,
         children: [(0, i.jsx)(c, {
             title: _,
             subtitle: g,
@@ -55,13 +55,13 @@ let u = s.memo(function(e) {
         }), h ? (0, i.jsx)(r.Text, {
             variant: "text-sm/normal",
             color: "text-default",
-            id: A,
+            id: x,
             className: d.VA,
             children: g
         }) : null, (0, i.jsx)(r.BJc, {
             gap: p,
             padding: {
-                top: x && !m ? 16 : 0
+                top: A && !m ? 16 : 0
             },
             children: a.map(e => (0, i.jsx)(o.A, {
                 node: e

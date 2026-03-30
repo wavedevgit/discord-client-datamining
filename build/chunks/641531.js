@@ -1,6 +1,6 @@
 /** chunk id: 641531 params = (module,exports,require) **/
 n.d(t, {
-    V: () => A
+    V: () => x
 });
 var i = n(349941),
     s = n(311907),
@@ -14,7 +14,7 @@ var i = n(349941),
     m = n(780964),
     _ = n(818348),
     g = n(985018);
-let A = (0, o.zD)(m.X.DISPLAY_DARK_SIDEBAR, {
+let x = (0, o.zD)(m.X.DISPLAY_DARK_SIDEBAR, {
     useTitle: () => g.intl.string(g.t.EpSHAQ),
     useSearchTerms: () => [g.intl.string(g.t.Ksh3ik)],
     useValue: function() {

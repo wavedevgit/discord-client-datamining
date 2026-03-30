@@ -1,88 +1,88 @@
 /** chunk id: 906688 params = (module,exports,require) **/
-n.d(e, {
-    A: () => _
+n.d(t, {
+    A: () => h
 });
 var i = n(627968);
 n(64700);
-var r = n(827734),
+var a = n(827734),
     l = n(582754),
-    s = n(397927),
-    a = n(736653),
+    r = n(397927),
+    s = n(736653),
     o = n(682174),
-    c = n(927018),
-    d = n(579157);
+    d = n(927018),
+    c = n(579157);
 let u = {
-        trophy: r.A.unsafe_rawColors.PRIMARY_400.css,
-        locked: r.A.unsafe_rawColors.PRIMARY_400.css,
-        unlocked: r.A.unsafe_rawColors.GREEN_330.css
+        trophy: a.A.unsafe_rawColors.PRIMARY_400.css,
+        locked: a.A.unsafe_rawColors.PRIMARY_400.css,
+        unlocked: a.A.unsafe_rawColors.GREEN_330.css
     },
-    h = {
-        trophy: r.A.unsafe_rawColors.PRIMARY_400.css,
-        locked: r.A.unsafe_rawColors.PRIMARY_400.css,
-        unlocked: r.A.unsafe_rawColors.GREEN_330.css
+    A = {
+        trophy: a.A.unsafe_rawColors.PRIMARY_400.css,
+        locked: a.A.unsafe_rawColors.PRIMARY_400.css,
+        unlocked: a.A.unsafe_rawColors.GREEN_330.css
     };
 
-function _(t) {
+function h(e) {
     let {
-        achievementId: e,
+        achievementId: t,
         unlocked: n,
-        size: r = s._3J.SIZE_40
-    } = t, _ = (0, a.Ay)(), C = (0, c.vM)(e);
-    if (null == C) return null;
-    let A = (0, s.KjH)(r),
+        size: a = r._3J.SIZE_40
+    } = e, h = (0, s.Ay)(), _ = (0, d.vM)(t);
+    if (null == _) return null;
+    let m = (0, r.KjH)(a),
         {
-            name: E,
-            rarity: T
-        } = C,
+            name: g,
+            rarity: p
+        } = _,
         {
-            color: g
-        } = (0, c.ag)(T),
-        f = (0, l.Mw)(_) ? u : h,
-        O = (A.size - A.offset - 2 * A.stroke) * .8,
-        p = A.size - A.stroke,
-        L = {
-            width: .4 * O,
-            height: .4 * O
+            color: E
+        } = (0, d.ag)(p),
+        I = (0, l.Mw)(h) ? u : A,
+        f = (m.size - m.offset - 2 * m.stroke) * .8,
+        C = m.size - m.stroke,
+        T = {
+            width: .4 * f,
+            height: .4 * f
         },
-        I = {
-            width: L.width + 1,
-            height: L.height + 1,
-            right: A.stroke + 1,
-            bottom: A.stroke + 1,
+        N = {
+            width: T.width + 1,
+            height: T.height + 1,
+            right: m.stroke + 1,
+            bottom: m.stroke + 1,
             padding: 0
         };
     return (0, i.jsxs)("div", {
-        className: d.kL,
+        className: c.kL,
         style: {
-            width: p,
-            height: p,
-            padding: A.stroke
+            width: C,
+            height: C,
+            padding: m.stroke
         },
-        "aria-label": `${E()??""}`,
+        "aria-label": `${g()??""}`,
         children: [(0, i.jsx)("div", {
-            className: d.r5,
-            children: (0, i.jsx)(s.OR, {
+            className: c.r5,
+            children: (0, i.jsx)(r.OR, {
                 size: "custom",
-                color: n ? g : f.trophy,
-                width: O,
-                height: O
+                color: n ? E : I.trophy,
+                width: f,
+                height: f
             })
         }), !n && (0, i.jsx)("div", {
-            className: d.dq,
-            style: I,
-            children: (0, i.jsx)(s.XAi, {
+            className: c.dq,
+            style: N,
+            children: (0, i.jsx)(r.XAi, {
                 size: "custom",
-                color: f.locked,
-                ...L
+                color: I.locked,
+                ...T
             })
-        }), n && T === c.md.LEGENDARY && (0, i.jsx)("div", {
-            className: d.dq,
-            style: I,
+        }), n && p === d.md.LEGENDARY && (0, i.jsx)("div", {
+            className: c.dq,
+            style: N,
             children: (0, i.jsx)(o.A, {
-                className: d.ox,
-                ...L
+                className: c.ox,
+                ...T
             })
         })]
     })
 }
-_.Sizes = s._3J
+h.Sizes = r._3J

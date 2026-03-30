@@ -45,11 +45,11 @@ function p() {
                             onClick: () => (0, o.Ab)()
                         }), (0, a.jsx)(r.Button, {
                             variant: "primary",
-                            text: "Clear All",
+                            text: "Undismiss All DCs",
                             onClick: () => (0, h.nT)()
                         }), (0, a.jsx)(r.Button, {
                             variant: "primary",
-                            text: "Check All",
+                            text: "Dismiss All DCs",
                             onClick: () => (0, h.D1)()
                         })]
                     }), (0, a.jsx)(r.Text, {

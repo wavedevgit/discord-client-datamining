@@ -9,6 +9,7 @@ r.r(t), r.d(t, {
     ENTRANCE_SOUNDS_CARD_ID: () => d,
     HD_VIDEO_CARD_ID: () => c,
     LARGE_UPLOADS_CARD_ID: () => u,
+    LOGITECH_3PP_CARD_ID: () => v,
     MORE_EMOJIS_CARD_ID: () => m,
     PERMADECOS_CARD_ID: () => _,
     PREMIUM_GROUP_CARD_ID: () => p,
@@ -40,4 +41,5 @@ let a = "badge",
     x = "specialStickers",
     C = "superReactions",
     A = "tenureBadge",
-    R = "videoBackgrounds"
+    R = "videoBackgrounds",
+    v = "logitech3PP"

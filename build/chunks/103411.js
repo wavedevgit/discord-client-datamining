@@ -1,11 +1,11 @@
 /** chunk id: 103411 params = (module,exports,require) **/
 n.d(t, {
-    m: () => s
+    m: () => r
 });
 var i = n(311907),
-    l = n(851746),
-    r = n(190187);
-let s = function() {
+    a = n(851746),
+    l = n(190187);
+let r = function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-    return (0, r.i)(e), (0, i.bG)([l.A], () => l.A.getIsEligibleToSendReferrals())
+    return (0, l.i)(e), (0, i.bG)([a.A], () => a.A.getIsEligibleToSendReferrals())
 }

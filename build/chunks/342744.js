@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(198982),
     _ = n(136857),
     g = n(793574),
-    A = n(688810),
-    x = n(253390),
+    x = n(688810),
+    A = n(253390),
     h = n(166403),
     p = n(927578),
     T = n(985018),
@@ -66,7 +66,7 @@ function C(e) {
         onClose: l
     } = e, {
         analyticsLocations: u
-    } = (0, A.Ay)(g.A.GUILD_BOOST_UNCANCELLATION_MODAL);
+    } = (0, x.Ay)(g.A.GUILD_BOOST_UNCANCELLATION_MODAL);
     s.useEffect(() => {
         h.A.hasFetchedSubscriptions() || (0, c.hP)()
     }, []);
@@ -77,14 +77,14 @@ function C(e) {
         O = s.useCallback(async () => {
             if (null != f) try {
                 I(!0), y(null);
-                let e = (0, x.v)(f, 1);
+                let e = (0, A.v)(f, 1);
                 a()((0, p.bx)(e) <= (0, p.bx)(f.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await S(f, e, t, u), v(2)
             } catch (t) {
                 let e = t instanceof m.Ey ? t : new m.Ey(t, t.code);
                 y(T.intl.string(e.code === _.tG.BILLING_PAUSE_INVALID_UPDATE ? T.t.dq4vq7 : T.t["5mlOCW"])), I(!1)
             }
         }, [f, t, u]);
-    return (0, i.jsx)(A.f5, {
+    return (0, i.jsx)(x.f5, {
         value: u,
         children: (0, i.jsx)(r.Modal, {
             transitionState: n,

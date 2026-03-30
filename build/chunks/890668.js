@@ -15,8 +15,8 @@ var s = n(284009),
     m = n(200790),
     _ = n(230084),
     g = n(339442),
-    A = n(900254),
-    x = n(431982),
+    x = n(900254),
+    A = n(431982),
     h = n(730588),
     p = n(593629),
     T = n(164599),
@@ -103,7 +103,7 @@ function L() {
         }, "avatar"), (0, i.jsx)(m.A, {
             user: e,
             sectionTitle: O.intl.string(O.t["7v0T9P"])
-        }, "decoration"), (0, i.jsx)(x.A, {
+        }, "decoration"), (0, i.jsx)(A.A, {
             user: e
         }), (0, i.jsx)(T.A, {
             user: e,
@@ -146,7 +146,7 @@ function L() {
             onChange: e => (0, C.p)({
                 primaryGuildId: e
             })
-        }), null != X && (0, i.jsx)(A.A, {
+        }), null != X && (0, i.jsx)(x.A, {
             legacyUsername: X,
             pendingLegacyUsernameDisabled: k
         }, "legacy_username")]

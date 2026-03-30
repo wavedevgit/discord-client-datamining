@@ -43,8 +43,8 @@ function g(e) {
     } = e, [l, g] = s.useState({
         route: c.R.HOME
     }), {
-        route: A
-    } = l, x = () => {
+        route: x
+    } = l, A = () => {
         g({
             route: c.R.HOME
         })
@@ -52,7 +52,7 @@ function g(e) {
         g({
             route: c.R.SWITCH_APP_PLANS,
             ...e
-        }), n(m.intl.string(m.t.VFqtkP), x)
+        }), n(m.intl.string(m.t.VFqtkP), A)
     }, [p, T] = s.useState({});
     s.useEffect(() => {
         for (let e of t) {
@@ -76,7 +76,7 @@ function g(e) {
     let {
         loadState: f
     } = (0, o.E)(), S = f !== o.mJ.LOADED;
-    switch (A) {
+    switch (x) {
         case c.R.HOME:
             return (0, i.jsx)(i.Fragment, {
                 children: t.map(e => (0, i.jsx)(_, {
@@ -94,9 +94,9 @@ function g(e) {
             } = l;
             return (0, i.jsx)(u.A, {
                 ...b,
-                navigateToHome: x
+                navigateToHome: A
             });
         default:
-            (0, a.xb)(A)
+            (0, a.xb)(x)
     }
 }

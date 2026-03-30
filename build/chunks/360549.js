@@ -1,6 +1,6 @@
 /** chunk id: 360549 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => x
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -18,11 +18,11 @@ let g = {
     value: u.YG
 };
 
-function A() {
+function x() {
     let {
         selectedGuildId: e,
         setSelectedGuildId: t
-    } = (0, u.xk)(), n = (0, l.bG)([d.Ay], () => d.Ay.getFlattenedGuildIds()), m = (0, l.bG)([o.A], () => o.A.getGuilds()), A = n[0];
+    } = (0, u.xk)(), n = (0, l.bG)([d.Ay], () => d.Ay.getFlattenedGuildIds()), m = (0, l.bG)([o.A], () => o.A.getGuilds()), x = n[0];
     s.useEffect(() => c.A.subscribe(e => {
         let {
             query: t
@@ -30,11 +30,11 @@ function A() {
         return t.trim()
     }, (e, n) => {
         let i = u.xk.getState().selectedGuildId;
-        "" === n && "" !== e && i === u.YG && null != A ? t(A) : "" === e && i !== u.YG && t(u.YG)
+        "" === n && "" !== e && i === u.YG && null != x ? t(x) : "" === e && i !== u.YG && t(u.YG)
     }, {
         equalityFn: (e, t) => e === t
-    }), [A, t]);
-    let x = s.useMemo(() => {
+    }), [x, t]);
+    let A = s.useMemo(() => {
         let e = [];
         return e.push({
             ...g,
@@ -70,6 +70,6 @@ function A() {
             t(e)
         },
         value: e,
-        options: x
+        options: A
     })
 }

@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(974544),
     _ = n(107834),
     g = n(793574),
-    A = n(688810),
-    x = n(86379),
+    x = n(688810),
+    A = n(86379),
     h = n(160946),
     p = n(459793),
     T = n(726649),
@@ -40,11 +40,11 @@ let M = function(e) {
         entrypoint: t = P.Mf.UserSettings
     } = e;
     (0, f.P)(T.b);
-    let n = (0, x.Hp)(),
+    let n = (0, A.Hp)(),
         {
             sourceAnalyticsLocations: l,
             analyticsLocations: M
-        } = (0, A.Ay)(g.A.PREMIUM_MARKETING),
+        } = (0, x.Ay)(g.A.PREMIUM_MARKETING),
         k = (0, r.bG)([C.A], () => C.A.hasFetchedSubscriptions()),
         U = (0, r.bG)([b.A], () => b.A.hasFetchedPaymentSources),
         w = (0, r.bG)([E.default], () => E.default.getCurrentUser()),
@@ -73,7 +73,7 @@ let M = function(e) {
     }, [n, B, F]);
     let Z = (0, r.bG)([S.A], () => S.A.enabled),
         q = t === P.Mf.ApplicationStoreHome,
-        Q = Z ? (0, i.jsx)(m.A, {}) : n ? (0, i.jsx)(p.uK, {}) : q && K ? (0, i.jsx)(A.f5, {
+        Q = Z ? (0, i.jsx)(m.A, {}) : n ? (0, i.jsx)(p.uK, {}) : q && K ? (0, i.jsx)(x.f5, {
             value: M,
             children: (0, i.jsx)(y.A, {
                 userId: V
@@ -84,7 +84,7 @@ let M = function(e) {
         });
     return null != Q ? (0, i.jsxs)(i.Fragment, {
         children: [q && (0, i.jsx)(_.A, {}), Q]
-    }) : (0, i.jsx)(A.f5, {
+    }) : (0, i.jsx)(x.f5, {
         value: M,
         children: (0, i.jsx)(L.A, {
             entrypoint: t

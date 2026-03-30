@@ -15,8 +15,8 @@ var s = n(503698),
     m = n(191627),
     _ = n(842130),
     g = n(985018),
-    A = n(397381),
-    x = n(452567),
+    x = n(397381),
+    A = n(452567),
     h = n(272673),
     p = n(607913);
 let T = () => {
@@ -26,7 +26,7 @@ let T = () => {
                 handleTabChange: n
             } = (0, d.A)();
         return (0, c.xr)() || t && e ? null : (0, i.jsx)("div", {
-            className: A.x6,
+            className: x.x6,
             children: t ? (0, i.jsx)(a.Button, {
                 variant: "primary",
                 text: g.intl.string(g.t.LhlgY9),
@@ -43,11 +43,11 @@ let T = () => {
                 articleLink: "https://support.discord.com/hc/articles/14155043715735"
             }));
         return (0, i.jsxs)("div", {
-            className: l()(A.kL, x.a),
+            className: l()(x.kL, A.a),
             children: [(0, i.jsxs)("div", {
                 children: [(0, i.jsx)("div", {
                     children: (0, i.jsxs)("div", {
-                        className: A.TK,
+                        className: x.TK,
                         children: [(0, i.jsx)(a.Heading, {
                             variant: "heading-xl/medium",
                             children: (0, i.jsx)(a.Fmo, {
@@ -61,7 +61,7 @@ let T = () => {
                     })
                 }), (0, i.jsx)(T, {})]
             }), (0, i.jsx)("div", {
-                className: A.F0,
+                className: x.F0,
                 children: (0, i.jsx)("img", {
                     src: e ? h : p,
                     alt: g.intl.string(_.default.ffg6xd)

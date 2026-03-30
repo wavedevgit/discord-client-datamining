@@ -139,7 +139,7 @@ let g = [{
     getTier3Value: () => !0
 }];
 
-function A(e) {
+function x(e) {
     let {
         children: t,
         className: n,
@@ -162,7 +162,7 @@ function A(e) {
     })
 }
 
-function x(e) {
+function A(e) {
     let t, {
         className: n,
         textVariant: s = "text-md/bold",
@@ -261,14 +261,14 @@ function p(e) {
                     })
                 })
             })
-        }), !u && (0, i.jsx)(x, {
+        }), !u && (0, i.jsx)(A, {
             textVariant: "text-md/normal",
             value: c.getTier0Value()
-        }), (0, i.jsx)(x, {
+        }), (0, i.jsx)(A, {
             value: c.getTier1Value()
-        }), (0, i.jsx)(x, {
+        }), (0, i.jsx)(A, {
             value: c.getTier2Value()
-        }), (0, i.jsx)(x, {
+        }), (0, i.jsx)(A, {
             value: c.getTier3Value()
         })]
     })
@@ -280,7 +280,7 @@ let T = function(e) {
             className: a,
             guild: r,
             hideHeading: u,
-            hideTier0: x
+            hideTier0: A
         } = e;
 
     function T() {
@@ -303,19 +303,19 @@ let T = function(e) {
                 children: [(0, i.jsx)("thead", {
                     children: (0, i.jsxs)("tr", {
                         className: _.__invalid_tableRow,
-                        children: [(0, i.jsx)(A, {
+                        children: [(0, i.jsx)(x, {
                             className: _.VC,
                             children: m.intl.string(m.t.F5MY0k)
-                        }), !x && (0, i.jsx)(A, {
+                        }), !A && (0, i.jsx)(x, {
                             tier: c.TVA.NONE,
                             children: m.intl.string(m.t.mx8j2m)
-                        }), (0, i.jsx)(A, {
+                        }), (0, i.jsx)(x, {
                             tier: c.TVA.TIER_1,
                             children: m.intl.string(m.t.nzXtaS)
-                        }), (0, i.jsx)(A, {
+                        }), (0, i.jsx)(x, {
                             tier: c.TVA.TIER_2,
                             children: m.intl.string(m.t["h33/uW"])
-                        }), (0, i.jsx)(A, {
+                        }), (0, i.jsx)(x, {
                             tier: c.TVA.TIER_3,
                             children: m.intl.string(m.t.BfF6ED)
                         })]
@@ -332,7 +332,7 @@ let T = function(e) {
                             handleRowBlur: T,
                             theme: t,
                             row: e,
-                            hideTier0: x
+                            hideTier0: A
                         }, s) : null
                     })
                 })]

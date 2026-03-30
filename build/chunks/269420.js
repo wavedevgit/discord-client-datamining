@@ -14,9 +14,9 @@ var i = n(419954),
     m = n(544727),
     _ = n(298648),
     g = n(782e3),
-    A = n(509725),
-    x = n(985018);
+    x = n(509725),
+    A = n(985018);
 let h = (0, i.zZ)(s.X.CLIPS_RECORDING_CATEGORY, {
-    useTitle: () => x.intl.string(x.t.iIwmV5),
-    buildLayout: () => [d.e, a.X, _.T, g.B, A.Z, o.R, c.j, l.k, r.t, u.N, m.$]
+    useTitle: () => A.intl.string(A.t.iIwmV5),
+    buildLayout: () => [d.e, a.X, _.T, g.B, x.Z, o.R, c.j, l.k, r.t, u.N, m.$]
 })

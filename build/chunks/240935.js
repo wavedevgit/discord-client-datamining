@@ -1,6 +1,6 @@
 /** chunk id: 240935 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => C
 });
 var i = n(311907),
     s = n(73153),
@@ -50,7 +50,7 @@ class c extends i.Ay.PersistedStore {
         }
     }
 }
-let g = new c(s.h, {
+let C = new c(s.h, {
     DISMISS_FAVORITE_SUGGESTION: function(e) {
         let {
             guildId: t,

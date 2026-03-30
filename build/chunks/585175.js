@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(827343),
     _ = n(915089),
     g = n(419954),
-    A = n(430452),
-    x = n(780964),
+    x = n(430452),
+    A = n(780964),
     h = n(731854),
     p = n(985018),
     T = n(342976),
@@ -55,10 +55,10 @@ function b(e) {
     } = e, {
         threshold: d,
         autoThreshold: _
-    } = (0, r.cf)([A.Ay], () => ({
-        threshold: A.Ay.getModeOptions().threshold,
-        autoThreshold: A.Ay.getModeOptions().autoThreshold
-    })), g = (0, r.bG)([A.Ay], () => A.Ay.getMode());
+    } = (0, r.cf)([x.Ay], () => ({
+        threshold: x.Ay.getModeOptions().threshold,
+        autoThreshold: x.Ay.getModeOptions().autoThreshold
+    })), g = (0, r.bG)([x.Ay], () => x.Ay.getMode());
     return (0, i.jsx)("section", {
         className: a()(T.Mo, T.jW),
         id: n,
@@ -96,26 +96,26 @@ function b(e) {
         })
     })
 }
-let C = (0, g.E2)(x.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
+let C = (0, g.E2)(A.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
     useSearchTerms: () => [p.intl.string(p.t["sqUm+k"]), p.intl.string(p.t.I1Zuq0), p.intl.string(p.t.nuFtHH)],
-    usePredicate: () => (0, r.bG)([A.Ay], () => A.Ay.isInputProfileCustom()),
+    usePredicate: () => (0, r.bG)([x.Ay], () => x.Ay.isInputProfileCustom()),
     Component: function() {
         let {
             autoThreshold: e,
             disabled: t
-        } = (0, r.cf)([A.Ay], () => ({
-            autoThreshold: A.Ay.getModeOptions().autoThreshold,
-            disabled: A.Ay.getMode() !== h.TB.VOICE_ACTIVITY
+        } = (0, r.cf)([x.Ay], () => ({
+            autoThreshold: x.Ay.getModeOptions().autoThreshold,
+            disabled: x.Ay.getMode() !== h.TB.VOICE_ACTIVITY
         })), n = s.useCallback(e => {
-            let t = A.Ay.getMode(),
+            let t = x.Ay.getMode(),
                 {
                     threshold: n
-                } = A.Ay.getModeOptions();
+                } = x.Ay.getModeOptions();
             m.A.setMode(t, {
                 autoThreshold: e,
                 threshold: n
             })
-        }, []), l = (0, r.bG)([A.Ay], () => A.Ay.supports(h.O5.AUTOMATIC_VAD)), {
+        }, []), l = (0, r.bG)([x.Ay], () => x.Ay.supports(h.O5.AUTOMATIC_VAD)), {
             volume: a,
             isSpeaking: c
         } = function() {
@@ -127,15 +127,15 @@ let C = (0, g.E2)(x.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
             return s.useEffect(() => {
                 let e = new d.Ep;
                 return e.start(1e3, () => {
-                    A.Ay.getMediaEngine().on(o.bg.VoiceActivity, l), e.stop()
+                    x.Ay.getMediaEngine().on(o.bg.VoiceActivity, l), e.stop()
                 }), () => {
-                    A.Ay.getMediaEngine().removeListener(o.bg.VoiceActivity, l), e.stop()
+                    x.Ay.getMediaEngine().removeListener(o.bg.VoiceActivity, l), e.stop()
                 }
             }, []), {
                 volume: e,
                 isSpeaking: n
             }
-        }(), _ = (0, r.bG)([A.Ay], () => A.Ay.isEnabled()), g = s.useMemo(() => !_ && (0, i.jsx)("div", {
+        }(), _ = (0, r.bG)([x.Ay], () => x.Ay.isEnabled()), g = s.useMemo(() => !_ && (0, i.jsx)("div", {
             className: T.B4,
             children: (0, i.jsx)(u.wx6, {
                 type: "warning",
@@ -143,7 +143,7 @@ let C = (0, g.E2)(x.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
                     onEnableClick: () => m.A.enable(!0)
                 })
             })
-        }), [_]), x = s.useMemo(() => e ? p.intl.string(p.t.JsbzjA) : p.intl.string(p.t.MLmyMY), [e]), f = s.useId(), S = s.useId();
+        }), [_]), A = s.useMemo(() => e ? p.intl.string(p.t.JsbzjA) : p.intl.string(p.t.MLmyMY), [e]), f = s.useId(), S = s.useId();
         return l ? (0, i.jsxs)("fieldset", {
             "aria-describedby": S,
             children: [(0, i.jsx)(u.AC4, {
@@ -152,14 +152,14 @@ let C = (0, g.E2)(x.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
                 children: p.intl.string(p.t.GByLar)
             }), (0, i.jsx)(u.AC4, {
                 id: S,
-                children: x
+                children: A
             }), (0, i.jsxs)(u.BJc, {
                 direction: "vertical",
                 gap: 8,
                 children: [(0, i.jsx)(u.dOG, {
                     disabled: t,
                     label: p.intl.string(p.t.lY6j47),
-                    description: x,
+                    description: A,
                     checked: e,
                     onChange: n
                 }), e ? (0, i.jsx)(E, {
@@ -180,7 +180,7 @@ let C = (0, g.E2)(x.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
             gap: 8,
             children: [(0, i.jsx)(u.D0$, {
                 label: p.intl.string(p.t["sqUm+k"]),
-                description: x,
+                description: A,
                 layout: "vertical",
                 children: n => e ? (0, i.jsx)(E, {
                     isSpeaking: c,
