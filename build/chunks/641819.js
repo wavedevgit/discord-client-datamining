@@ -32,30 +32,30 @@ function h(e) {
         setSelectedGiftingPromotionReward: g,
         selectedGiftingPromotionReward: A,
         claimableRewards: f
-    } = (0, _.Pv)(), j = (0, a.bG)([E.default], () => E.default.getCurrentUser()), R = (0, a.yK)([p.A], () => p.A.getGiftPromotionRewardSkuIds()), M = (0, c.U)(f, A), [C, y] = i.useState(M), [N, O] = i.useState(!1);
+    } = (0, _.Pv)(), j = (0, a.bG)([E.default], () => E.default.getCurrentUser()), R = (0, a.yK)([p.A], () => p.A.getGiftPromotionRewardSkuIds()), C = (0, c.U)(f, A), [M, y] = i.useState(C), [N, O] = i.useState(!1);
     i.useEffect(() => {
-        N || null != A || null == M || (g(M), y(M))
-    }, [M, N, A, g]), s()(null != t, "Expected plan to selected"), s()(null != r, "Expected selectedSkuId"), s()(null != h, "Step should be set");
-    let v = i.useMemo(() => null != C && (f ?? []).includes(C), [C, f]),
-        b = i.useMemo(() => 0 === R.length || null == C || !v, [R, C, v]);
+        N || null != A || null == C || (g(C), y(C))
+    }, [C, N, A, g]), s()(null != t, "Expected plan to selected"), s()(null != r, "Expected selectedSkuId"), s()(null != h, "Step should be set");
+    let v = i.useMemo(() => null != M && (f ?? []).includes(M), [M, f]),
+        b = i.useMemo(() => 0 === R.length || null == M || !v, [R, M, v]);
     i.useEffect(() => {
         if (0 === R.length) {
             y(void 0), g(void 0);
             return
         }
-        null != C && v && R.includes(C) || null == C || (y(void 0), g(void 0))
-    }, [R, v, C, g]);
+        null != M && v && R.includes(M) || null == M || (y(void 0), g(void 0))
+    }, [R, v, M, g]);
     let k = e => {
             g(e), y(e), O(!0)
         },
-        w = R.map(e => (0, l.jsx)(d.k, {
+        U = R.map(e => (0, l.jsx)(d.k, {
             skuId: e,
             claimed: null != f && !f.includes(e),
             user: j,
             onSelect: k,
-            selectedSkuId: C
+            selectedSkuId: M
         }, e)),
-        U = (0, l.jsx)(P.UX, {
+        w = (0, l.jsx)(P.UX, {
             children: (0, l.jsx)(m.Z, {
                 onStepChange: n,
                 onBackClick: () => n(S.pn.PLAN_SELECT),
@@ -78,9 +78,9 @@ function h(e) {
                 align: "center",
                 children: (0, l.jsx)("div", {
                     className: I.Dq,
-                    children: w
+                    children: U
                 })
             })
-        }), U]
+        }), w]
     })
 }

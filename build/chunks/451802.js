@@ -1,6 +1,6 @@
 /** chunk id: 451802 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T,
+    A: () => f,
     E: () => h
 });
 var i, s = n(627968),
@@ -21,7 +21,7 @@ let p = {
     DEFAULT: x.__invalid_default,
     RECORDING: x.oz
 };
-class f extends l.PureComponent {
+class T extends l.PureComponent {
     _inputId = u().uniqueId("key-recorder-");
     _unregisterNativeRecorder = null;
     _mousedownMode = null;
@@ -116,4 +116,4 @@ class f extends l.PureComponent {
         })
     }
 }
-let T = f
+let f = T

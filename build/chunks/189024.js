@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(591179),
     h = n(576060),
     p = n(780964),
-    f = n(358776),
-    T = n(840065),
+    T = n(358776),
+    f = n(840065),
     S = n(166403),
     E = n(730784),
     b = n(398523),
@@ -36,8 +36,8 @@ var i = n(627968),
     D = n(817577),
     G = n(419455),
     M = n(288604),
-    U = n(893160),
-    k = n(509442);
+    k = n(893160),
+    U = n(509442);
 
 function w() {
     let {
@@ -47,20 +47,20 @@ function w() {
     }), B = b.A.useExperiment({
         location: "PremiumWhatsNewSection"
     }).enabled, F = (0, a.bG)([S.A], () => S.A.getPremiumTypeSubscription()), H = F?.hasActiveTrial ?? !1, z = (0, h.A)(), Y = (0, s.useCallback)(() => {
-        (0, T.openUserSettings)(p.X.PROFILE_PANEL, {
+        (0, f.openUserSettings)(p.X.PROFILE_PANEL, {
             analyticsLocations: e
         }, () => (0, _.L)({
             analyticsLocations: e
         }))
     }, [e]), X = (0, s.useCallback)(() => {
-        (0, T.openUserSettings)(p.X.PROFILE_PANEL, {
+        (0, f.openUserSettings)(p.X.PROFILE_PANEL, {
             analyticsLocations: e
         }, () => (0, u.L)({
             analyticsLocations: e
         }))
     }, [e]), K = (0, s.useCallback)(() => {
-        let e = (0, f.Ci)("openCustomAppSettings") ? p.X.DISPLAY_IN_APP_ICON_CATEGORY : p.X.APPEARANCE_IN_APP_ICON;
-        (0, T.openUserSettings)(e)
+        let e = (0, T.Ci)("openCustomAppSettings") ? p.X.DISPLAY_IN_APP_ICON_CATEGORY : p.X.APPEARANCE_IN_APP_ICON;
+        (0, f.openUserSettings)(e)
     }, []), W = () => {
         (0, o.A)(y.TE)
     }, Z = (0, s.useCallback)(() => {
@@ -130,7 +130,7 @@ function w() {
                     src: P,
                     alt: "SteelSeries"
                 }),
-                backgroundAssetUrl: U.A,
+                backgroundAssetUrl: k.A,
                 progress: Q.getDate() / J,
                 ctaText: R.intl.string(R.t.w7s5Qr),
                 onCtaClick: () => (0, v.uE)({
@@ -151,7 +151,7 @@ function w() {
                 description: R.intl.formatToPlainString(R.t.WQazjs, {
                     themeCount: 20
                 }),
-                primaryAsset: k.A,
+                primaryAsset: U.A,
                 ctaText: R.intl.string(R.t.jVcuVY),
                 onCtaClick: () => {
                     (0, m.nf)(m.HP.CUSTOM_THEME)

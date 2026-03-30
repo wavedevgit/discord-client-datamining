@@ -36,13 +36,13 @@ function x(e) {
         onChange: x,
         clientSettingType: h,
         ariaLabel: p
-    } = e, f = (0, l.cf)([o.Ay, u.A, m.A], () => (0, o.xU)(t, o.Ay, u.A, m.A)), T = (0, l.cf)([u.A, m.A], () => (0, o.hw)(t, !1, [u.A, m.A]), [t]), S = d(T), [E, b] = s.useState(S);
+    } = e, T = (0, l.cf)([o.Ay, u.A, m.A], () => (0, o.xU)(t, o.Ay, u.A, m.A)), f = (0, l.cf)([u.A, m.A], () => (0, o.hw)(t, !1, [u.A, m.A]), [t]), S = d(f), [E, b] = s.useState(S);
     return s.useEffect(() => {
         b(S)
     }, [S]), (0, i.jsx)(_.A, {
         title: t.name,
         icon: (0, i.jsx)(A, {
-            game: f,
+            game: T,
             gameApplication: n
         }),
         "aria-label": p,
@@ -52,7 +52,7 @@ function x(e) {
                 disabled: r,
                 onChange: e => {
                     let n;
-                    return n = !e && E, void(b(e), x(e, f, T), n && (0, c.L)(h, f.id ?? t?.id ?? null))
+                    return n = !e && E, void(b(e), x(e, T, f), n && (0, c.L)(h, T.id ?? t?.id ?? null))
                 }
             }), (0, i.jsx)("div", {
                 className: g.Kz

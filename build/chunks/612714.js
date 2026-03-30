@@ -21,10 +21,10 @@ function A(e) {
             togglingSMS: x
         } = e,
         [h, p] = s.useState(!1),
-        f = s.useCallback(e => {
+        T = s.useCallback(e => {
             e.preventDefault(), p(!h)
         }, [h]),
-        T = s.useCallback(function() {
+        f = s.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
             (0, l.qfG)(t => (0, i.jsx)(d.default, {
                 reason: r.d.USER_SETTINGS_UPDATE,
@@ -35,13 +35,13 @@ function A(e) {
             })
         }, []),
         S = s.useCallback(() => {
-            T()
-        }, [T]),
+            f()
+        }, [f]),
         E = s.useCallback(() => {
-            null == A.phone ? T({
+            null == A.phone ? f({
                 onAddedPhone: a.A.enableSMS
             }) : a.A.enableSMS()
-        }, [A, T]),
+        }, [A, f]),
         b = s.useCallback(() => {
             (0, l.qfG)(e => (0, i.jsx)(o.default, {
                 ...e,
@@ -60,7 +60,7 @@ function A(e) {
             children: [_.intl.format(_.t.PXVoEO, {
                 phoneNumber: e
             }), (0, i.jsx)(l.MzZ, {
-                onClick: f,
+                onClick: T,
                 className: g.vN,
                 children: h ? _.intl.string(_.t.FfltIN) : _.intl.string(_.t.llArAg)
             })]

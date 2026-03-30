@@ -19,8 +19,8 @@ var s = n(963935),
     x = n(743961),
     h = n(896005),
     p = n(388773),
-    f = n(691116),
-    T = n(353667),
+    T = n(691116),
+    f = n(353667),
     S = n(182884),
     E = n(115617);
 
@@ -35,7 +35,7 @@ function b(e) {
         case s.Z6.TAB_ITEM:
             throw Error(`${t.type} nodes should never be rendered directly`);
         case s.Z6.PANEL:
-            return (0, i.jsx)(T.j, {
+            return (0, i.jsx)(f.j, {
                 node: t
             });
         case s.Z6.LIST:
@@ -91,7 +91,7 @@ function b(e) {
                 node: t
             });
         case s.Z6.NESTED_PANEL:
-            return (0, i.jsx)(f.A, {
+            return (0, i.jsx)(T.A, {
                 node: t
             });
         case s.Z6.CUSTOM:

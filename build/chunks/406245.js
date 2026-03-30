@@ -1,84 +1,83 @@
-/** chunk id: 406245, original params: e,t,n (module,exports,require) **/
-"use strict";
+/** chunk id: 406245 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    a = n(503698),
-    o = n.n(a),
-    s = n(397927),
-    l = n(975571),
-    c = n(652215),
-    u = n(985018),
-    d = n(943216);
-let f = [{
-        getQuestion: () => u.intl.string(u.t.C4J8UB),
-        getAnswer: () => u.intl.string(u.t.nhkk6k)
+    A: () => _
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(503698),
+    a = n.n(l),
+    r = n(397927),
+    o = n(975571),
+    d = n(652215),
+    c = n(985018),
+    u = n(192971);
+let m = [{
+        getQuestion: () => c.intl.string(c.t.C4J8UB),
+        getAnswer: () => c.intl.string(c.t.nhkk6k)
     }, {
-        getQuestion: () => u.intl.string(u.t.ai4ym2),
-        getAnswer: () => u.intl.format(u.t["8zlqlD"], {
-            helpCenterUrl: l.A.getArticleURL(c.MVz.GUILD_BOOSTING_FAQ)
+        getQuestion: () => c.intl.string(c.t.ai4ym2),
+        getAnswer: () => c.intl.format(c.t["8zlqlD"], {
+            helpCenterUrl: o.A.getArticleURL(d.MVz.GUILD_BOOSTING_FAQ)
         })
     }, {
-        getQuestion: () => u.intl.string(u.t.kMVGsC),
-        getAnswer: () => u.intl.string(u.t["Vz/SCQ"])
+        getQuestion: () => c.intl.string(c.t.kMVGsC),
+        getAnswer: () => c.intl.string(c.t["Vz/SCQ"])
     }, {
-        getQuestion: () => u.intl.string(u.t.kYmXWF),
-        getAnswer: () => u.intl.string(u.t["+OURPp"])
+        getQuestion: () => c.intl.string(c.t.kYmXWF),
+        getAnswer: () => c.intl.string(c.t["+OURPp"])
     }, {
-        getQuestion: () => u.intl.string(u.t["LsX/vb"]),
-        getAnswer: () => u.intl.string(u.t["3TeauK"])
+        getQuestion: () => c.intl.string(c.t["LsX/vb"]),
+        getAnswer: () => c.intl.string(c.t["3TeauK"])
     }, {
-        getQuestion: () => u.intl.string(u.t.fRlnXU),
-        getAnswer: () => u.intl.string(u.t.bTRacj)
+        getQuestion: () => c.intl.string(c.t.fRlnXU),
+        getAnswer: () => c.intl.string(c.t.bTRacj)
     }, {
-        getQuestion: () => u.intl.string(u.t["8Mu5Q9"]),
-        getAnswer: () => u.intl.string(u.t["2T5iPo"])
+        getQuestion: () => c.intl.string(c.t["8Mu5Q9"]),
+        getAnswer: () => c.intl.string(c.t["2T5iPo"])
     }, {
-        getQuestion: () => u.intl.string(u.t["6EN+TZ"]),
-        getAnswer: () => u.intl.string(u.t.NZax1u)
+        getQuestion: () => c.intl.string(c.t["6EN+TZ"]),
+        getAnswer: () => c.intl.string(c.t.NZax1u)
     }, {
-        getQuestion: () => u.intl.string(u.t.f5B4EW),
-        getAnswer: () => u.intl.string(u.t.Aje8Pb)
+        getQuestion: () => c.intl.string(c.t.f5B4EW),
+        getAnswer: () => c.intl.string(c.t.Aje8Pb)
     }],
-    p = function(e) {
+    _ = function(e) {
         let {
             className: t
-        } = e, [n, a] = i.useState(null);
-        return (0, r.jsxs)("div", {
-            className: o()(d.iE, t),
-            children: [(0, r.jsx)(s.Heading, {
-                className: d.R_,
+        } = e, [n, l] = s.useState(null);
+        return (0, i.jsxs)("div", {
+            className: a()(u.iE, t),
+            children: [(0, i.jsx)(r.Heading, {
+                className: u.R_,
                 variant: "heading-xxl/bold",
-                children: u.intl.string(u.t.HPJ6Nj)
-            }), (0, r.jsx)("ul", {
-                className: d.p_,
-                children: f.map((e, t) => {
-                    let i = n === t;
-                    return (0, r.jsxs)("div", {
-                        className: d.Aw,
-                        children: [(0, r.jsxs)(s.DUT, {
-                            className: o()(d.k7, {
-                                [d.lo]: i
+                children: c.intl.string(c.t.HPJ6Nj)
+            }), (0, i.jsx)("ul", {
+                className: u.p_,
+                children: m.map((e, t) => {
+                    let s = n === t;
+                    return (0, i.jsxs)("div", {
+                        className: u.Aw,
+                        children: [(0, i.jsxs)(r.DUT, {
+                            className: a()(u.k7, {
+                                [u.lo]: s
                             }),
-                            onClick: () => a(e => e === t ? null : t),
+                            onClick: () => l(e => e === t ? null : t),
                             tag: "li",
-                            children: [(0, r.jsx)(s.Text, {
-                                className: d.b1,
+                            children: [(0, i.jsx)(r.Text, {
+                                className: u.b1,
                                 variant: "text-lg/normal",
                                 children: e.getQuestion()
-                            }), i ? (0, r.jsx)(s.QGg, {
+                            }), s ? (0, i.jsx)(r.QGg, {
                                 size: "md",
                                 color: "currentColor",
-                                className: d.q4
-                            }) : (0, r.jsx)(s.j96, {
+                                className: u.q4
+                            }) : (0, i.jsx)(r.j96, {
                                 size: "md",
                                 color: "currentColor",
-                                className: d.q4
+                                className: u.q4
                             })]
-                        }), i && (0, r.jsx)(s.Text, {
-                            className: d.ZF,
+                        }), s && (0, i.jsx)(r.Text, {
+                            className: u.ZF,
                             color: "text-default",
                             variant: "text-md/normal",
                             children: e.getAnswer()

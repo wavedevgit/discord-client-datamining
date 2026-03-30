@@ -1,6 +1,6 @@
 /** chunk id: 607940 params = (module,exports,require) **/
 i.d(e, {
-    A: () => P,
+    A: () => N,
     e: () => d
 });
 var n, l = i(284009),
@@ -42,7 +42,7 @@ function h(t) {
         e = i, T.set(e.id, e)
     }
 }
-class N extends a.il {
+class P extends a.il {
     static displayName = "ApplicationSubscriptionStore";
     getSubscriptionGroupListingsForApplicationFetchState(t) {
         return C[t] ?? 0
@@ -76,7 +76,7 @@ class N extends a.il {
         return E.values(A(e, t))
     }
 }
-let P = new N(u.h, {
+let N = new P(u.h, {
     LOGOUT: function() {
         _.clear(), T.clear(), E.clear(), C = {}, f = {}
     },

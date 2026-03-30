@@ -26,8 +26,8 @@ var l = t(627968),
     f = t(156312),
     j = t(491057),
     R = t(482132),
-    M = t(877156),
-    C = t(216641),
+    C = t(877156),
+    M = t(216641),
     y = t(921925),
     N = t(652215),
     O = t(49999);
@@ -38,8 +38,8 @@ function v(e) {
             planGroup: v,
             onSubscriptionConfirmation: b,
             renderPurchaseConfirmation: k,
-            postSuccessGuild: w,
-            followupSKUInfo: U,
+            postSuccessGuild: U,
+            followupSKUInfo: w,
             continueSessionToInitialStep: G
         } = e,
         {
@@ -74,7 +74,7 @@ function v(e) {
             let e = S.A.getMarketingComponentByType(o.C.GIFT_REMINDER_NAGBAR);
             return null == e || "giftReminderNagbar" !== e.properties.properties.oneofKind ? null : e.properties.properties.giftReminderNagbar
         }),
-        ea = (0, C.g)(L, F),
+        ea = (0, M.g)(L, F),
         eo = Y && null != en && null != er && ei;
     s()(null != H, "Expected plan to selected"), s()(null != B, "Expected selectedSkuId"), s()(null != W, "Step should be set");
     let eu = i.useCallback(() => {
@@ -137,9 +137,9 @@ function v(e) {
     });
     else {
         let e = V.current === H.id ? {
-            postSuccessGuild: w
+            postSuccessGuild: U
         } : {
-            followupSKUInfo: U,
+            followupSKUInfo: w,
             startingPremiumSubscriptionPlanId: V.current,
             isDowngrade: null != D && (0, g.vT)(D, H.id, v)
         };
@@ -156,7 +156,7 @@ function v(e) {
     return (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsxs)(R.dZ, {
             children: [(0, l.jsx)(y.A, {}), n]
-        }), null != et && et, eo && null != en && (0, l.jsx)(M.A, {
+        }), null != et && et, eo && null != en && (0, l.jsx)(C.A, {
             rewardSkuId: en,
             onClose: eu
         })]

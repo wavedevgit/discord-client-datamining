@@ -1,6 +1,6 @@
 /** chunk id: 927378 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => T
 });
 var i = n(627968),
     s = n(64700),
@@ -19,7 +19,7 @@ var i = n(627968),
     h = n(985018),
     p = n(850605);
 
-function f() {
+function T() {
     let e = (0, r.bG)([c.default], () => c.default.getCurrentUser()),
         {
             currentHarvestType: t,
@@ -28,7 +28,7 @@ function f() {
             currentHarvestType: g.A.harvestType,
             awaitingInitialRequest: g.A.requestingHarvest
         })),
-        [f, T] = s.useState(!1);
+        [T, f] = s.useState(!1);
     if (null == e) return null;
     let S = (0, m.Oj)(t, e) || l,
         E = null != t && a()().diff(a()(t.created_at), "days") < x.n83,
@@ -84,7 +84,7 @@ function f() {
                             })
                         })({
                             onConfirm: e => {
-                                T(!0), (0, _.$)(e).then(e => {
+                                f(!0), (0, _.$)(e).then(e => {
                                     null != e && null != e.body ? d.A.show({
                                         title: h.intl.string(h.t.i2iul5),
                                         body: h.intl.string(h.t["6Nmv4i"])
@@ -98,11 +98,11 @@ function f() {
                                         title: h.intl.string(h.t.OjbtDm),
                                         body: t
                                     })
-                                }).finally(() => T(!1))
+                                }).finally(() => f(!1))
                             }
                         })
                     },
-                    loading: f || l
+                    loading: T || l
                 })
             })]
         })]

@@ -33,15 +33,15 @@ function h(e) {
             analyticsLocation: r.A.PREMIUM_SUBSCRIPTION_FINE_PRINT_CONTENT
         });
     if (null == p) return null;
-    let f = s ? x.r : x.a,
-        T = p.invoiceItems.find(e => {
+    let T = s ? x.r : x.a,
+        f = p.invoiceItems.find(e => {
             let {
                 subscriptionPlanId: t
             } = e;
             return (0, c.xq)(t)
         });
-    if (null == T) return null;
-    let S = T.subscriptionPlanId,
+    if (null == f) return null;
+    let S = f.subscriptionPlanId,
         E = d.A.get(S);
     l()(null != E, "Missing plan");
     let b = (0, u.$g)(p.total, p.currency);
@@ -63,7 +63,7 @@ function h(e) {
         intervalCount: E.intervalCount
     })), (0, i.jsx)(a.Text, {
         color: "text-muted",
-        className: f,
+        className: T,
         variant: "text-xs/normal",
         children: t
     })

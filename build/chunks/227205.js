@@ -61,8 +61,8 @@ let j = {
             heroBannerAnimatedUrl: l.heroBannerAnimatedUrl
         }, [k, l]), {
             bannerDisplayConfig: D,
-            logoDisplayConfig: w,
-            heroLogo: H,
+            logoDisplayConfig: H,
+            heroLogo: w,
             heroBannerStatic: F,
             heroBannerAnimated: G,
             heroBannerRive: U
@@ -132,11 +132,11 @@ let j = {
                             className: L.v0
                         }), (0, n.jsxs)("div", {
                             className: L.Wq,
-                            children: [null != H && (0, n.jsx)("img", {
+                            children: [null != w && (0, n.jsx)("img", {
                                 className: L.rm,
-                                src: H,
+                                src: w,
                                 alt: P.name,
-                                style: w?.toDesktopStyles()
+                                style: H?.toDesktopStyles()
                             }), null != P.title && (0, n.jsx)(u.Heading, {
                                 variant: "heading-xxl/bold",
                                 className: L.DD,

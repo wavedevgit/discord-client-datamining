@@ -24,7 +24,7 @@ function h() {
     } = (0, l.cf)([u.A], () => ({
         canSubmit: u.A.canSubmit(),
         errors: u.A.getErrors()
-    })), [n, h] = s.useState(!1), p = s.useMemo(() => Object.keys(t ?? {}).length > 0 ? x.intl.string(x.t["84MExs"]) : null, [t]), f = s.useCallback(async () => {
+    })), [n, h] = s.useState(!1), p = s.useMemo(() => Object.keys(t ?? {}).length > 0 ? x.intl.string(x.t["84MExs"]) : null, [t]), T = s.useCallback(async () => {
         h(!0);
         let e = u.A.getPendingChanges(),
             t = (0, d.Sk)(e),
@@ -61,13 +61,13 @@ function h() {
             }
         }
         s && (0, r.x8)(), h(!1)
-    }, []), T = s.useCallback(() => {
+    }, []), f = s.useCallback(() => {
         (0, r.IM)()
     }, []);
     return (0, i.jsx)(a.A, {
         submitting: n,
-        onSave: f,
-        onReset: T,
+        onSave: T,
+        onReset: f,
         disabled: !e,
         errorMessage: p ?? void 0
     })

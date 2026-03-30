@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(555528),
     h = n(287809),
     p = n(256415),
-    f = n(403362),
-    T = n(652215);
+    T = n(403362),
+    f = n(652215);
 n(392164);
 var S = n(985018),
     E = n(502040);
@@ -80,16 +80,16 @@ function C() {
         })),
         [A] = s.useState(() => [b(S.intl.string(S.t.C0ZDvo), !0, !1), b(S.intl.string(S.t.iOtj8E), !1, !1, !0), b(S.intl.string(S.t["0oqNgL"]), !1, !0)]),
         C = (0, r.bG)([d.A, x.A], () => {
-            let e = d.A.getWidgetByType(T.uss.VOICE_V3);
+            let e = d.A.getWidgetByType(f.uss.VOICE_V3);
             if (null == e) return null;
             let t = x.A.getWidget(e.id);
             return null != t && (0, c.ZO)(t) ? t : null
         }),
         v = C?.meta?.voiceStatesMaxShown ?? 8,
-        N = [null != t ? ((e = b(t.username)).user = t, e) : null, ...A].filter(f.Vq),
+        N = [null != t ? ((e = b(t.username)).user = t, e) : null, ...A].filter(T.Vq),
         I = [new Map(N.map(e => [e.user.id, e])), N.map(e => e.user.id)],
         j = (0, i.jsx)(o.NPJ, {
-            theme: T.NJ8.MIDNIGHT,
+            theme: f.NJ8.MIDNIGHT,
             children: e => (0, i.jsxs)("div", {
                 className: a()(E.Y5, e),
                 children: [(0, i.jsx)("div", {
@@ -100,14 +100,14 @@ function C() {
                         channel: (0, _.createChannelRecord)({
                             id: "123",
                             name: "Test Channel",
-                            type: T.rbe.GUILD_VOICE,
+                            type: f.rbe.GUILD_VOICE,
                             guild_id: "456"
                         }),
                         overlayVoiceStates: I,
                         displayNameMode: l,
                         displayUserMode: g,
                         avatarSizeMode: n,
-                        widget: T.uss.VOICE,
+                        widget: f.uss.VOICE,
                         anchorLeft: !0,
                         application: null,
                         stream: null,

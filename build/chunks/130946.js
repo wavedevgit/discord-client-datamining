@@ -19,8 +19,8 @@ var l = n(503698),
     x = n(652215),
     h = n(985018),
     p = n(488149),
-    f = n(137815),
-    T = n(967521),
+    T = n(137815),
+    f = n(967521),
     S = n(767032),
     E = n(990521),
     b = ((i = {}).SUBSCRIBER_HOME = "SUBSCRIBER_HOME", i.NITRO_SETTINGS = "SETTINGS", i.APPLICATION_NITRO_HOME = "APPLICATION_NITRO_HOME", i);
@@ -72,7 +72,7 @@ let C = function(e) {
                 className: p.ZS,
                 children: (0, s.jsx)("img", {
                     alt: "",
-                    src: T.A,
+                    src: f.A,
                     className: p.F$
                 })
             })]
@@ -127,7 +127,7 @@ let C = function(e) {
             className: p.yk,
             children: (0, s.jsx)("img", {
                 alt: "",
-                src: f.A,
+                src: T.A,
                 className: p.$V
             })
         }), (0, s.jsxs)("div", {

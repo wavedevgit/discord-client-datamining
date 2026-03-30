@@ -25,23 +25,23 @@ function g(e) {
         disabled: x = !1,
         showPremiumIcon: h = !0,
         isTryItOut: p = !1,
-        forcedDivider: f,
-        withHighlight: T = !1
+        forcedDivider: T,
+        withHighlight: f = !1
     } = e, {
         newestAnalyticsLocation: S
-    } = (0, o.Ay)(), E = T ? r.wLn : a.$n;
+    } = (0, o.Ay)(), E = f ? r.wLn : a.$n;
     return (0, i.jsx)(c.A, {
         className: A,
         title: m.intl.string(m.t.Vgdusv),
         showPremiumIcon: h,
         errors: n,
         disabled: x,
-        forcedDivider: f,
+        forcedDivider: T,
         children: (0, i.jsxs)("div", {
             className: _.NC,
             children: [(0, i.jsx)(E, {
                 className: l()({
-                    [_.yj]: T
+                    [_.yj]: f
                 }),
                 size: a.$n.Sizes.SMALL,
                 onClick: () => (0, d.XD)({

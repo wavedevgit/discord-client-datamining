@@ -26,8 +26,8 @@ var n = i(627968),
     I = i(977997),
     S = i(572487),
     C = i(855790),
-    N = i(652215),
-    b = i(985018),
+    b = i(652215),
+    N = i(985018),
     T = i(672829),
     O = i(470534);
 class L extends s.PureComponent {
@@ -66,9 +66,9 @@ class L extends s.PureComponent {
     renderChannelLink(e) {
         let {
             guild: t
-        } = this.props, i = (0, _.m1)(e, E.default, y.A), s = null != t ? `${i} / ${t.name}` : i, a = null != t ? t.id : N.ME;
+        } = this.props, i = (0, _.m1)(e, E.default, y.A), s = null != t ? `${i} / ${t.name}` : i, a = null != t ? t.id : b.ME;
         return (0, n.jsx)(r.N_, {
-            to: N.BVt.CHANNEL(a),
+            to: b.BVt.CHANNEL(a),
             onClick: t => {
                 t.stopPropagation(), u.A.channelListScrollTo(a, e.id)
             },
@@ -121,17 +121,17 @@ class L extends s.PureComponent {
                 }), (0, n.jsxs)(p.A, {
                     grow: 0,
                     children: [(0, n.jsx)(f.A, {
-                        tooltipText: _ ? b.intl.string(b.t.YqAjXy) : b.intl.string(b.t.w4m945),
+                        tooltipText: _ ? N.intl.string(N.t.YqAjXy) : N.intl.string(N.t.w4m945),
                         icon: _ ? d.z0P : d.cNw,
                         iconForeground: _ ? T.of : null,
                         onClick: this.handleToggleSelfMute
                     }), (0, n.jsx)(f.A, {
-                        tooltipText: h ? b.intl.string(b.t["2US872"]) : b.intl.string(b.t.wjcRFX),
+                        tooltipText: h ? N.intl.string(N.t["2US872"]) : N.intl.string(N.t.wjcRFX),
                         icon: h ? d.cQT : d.LoC,
                         onClick: this.handleToggleSelfDeaf,
                         iconForeground: h ? T.of : null
                     }), null == s && (0, n.jsx)(f.A, {
-                        tooltipText: b.intl.string(b.t["6vrfgt"]),
+                        tooltipText: N.intl.string(N.t["6vrfgt"]),
                         onClick: this.handleDisconnect,
                         icon: d.zWQ
                     })]

@@ -1,6 +1,6 @@
 /** chunk id: 371764 params = (module,exports,require) **/
 n.d(t, {
-    x: () => f
+    x: () => T
 });
 var i = n(627968);
 n(64700);
@@ -19,13 +19,13 @@ var s = n(110259),
     x = n(637706),
     h = n(985018),
     p = n(308785);
-let f = e => {
+let T = e => {
     let {
         componentId: t,
         promotionBannerMarketingComponentFields: n
     } = e, {
-        analyticsLocations: f
-    } = (0, m.Ay)(), T = (0, u.p)();
+        analyticsLocations: T
+    } = (0, m.Ay)(), f = (0, u.p)();
     (0, _.A)({
         type: s.ImpressionTypes.VIEW,
         name: s.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
@@ -36,8 +36,8 @@ let f = e => {
     });
     let S = (0, A.h)({
             buttonAction: n.button?.buttonAction ?? o.dz.OPEN_TIER_2_PAYMENT_MODAL,
-            analyticsLocations: f,
-            analyticsLocation: T.location
+            analyticsLocations: T,
+            analyticsLocation: f.location
         }),
         E = (0, x.a)(n.body);
     return (0, i.jsxs)("div", {

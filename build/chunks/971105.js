@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(928039),
     h = n(235986),
     p = n(39190),
-    f = n(933392),
-    T = n(97352),
+    T = n(933392),
+    f = n(97352),
     S = n(166403),
     E = n(927578),
     b = n(61509),
@@ -42,14 +42,14 @@ function O(e) {
             to: 0
         })
     }, [c]);
-    let f = s.useCallback(e => {
+    let T = s.useCallback(e => {
             m(e);
             let n = t[t.length - 1].id;
             e >= r - 2 && g !== n && ((0, _.CK)(10, n), A(n))
         }, [t, r, g]),
-        T = (0, x.A)("billing-history", o);
+        f = (0, x.A)("billing-history", o);
     return (0, i.jsx)(d.hD, {
-        navigator: T,
+        navigator: f,
         children: (0, i.jsx)(d.PR, {
             children: e => {
                 let {
@@ -59,7 +59,7 @@ function O(e) {
                 return (0, i.jsx)(p.A, {
                     className: j.GD,
                     currentPageIndex: c,
-                    onChangePage: f,
+                    onChangePage: T,
                     numPages: r,
                     showPageCount: !1,
                     ref: t,
@@ -154,7 +154,7 @@ function L(e) {
 }
 
 function P(e) {
-    let t = (0, c.bG)([f.A], () => f.A.getPayments()),
+    let t = (0, c.bG)([T.A], () => T.A.getPayments()),
         n = (0, c.bG)([S.A], () => S.A.getPremiumTypeSubscription()),
         l = s.useMemo(() => new Set(t.filter(L).map(e => {
             let {
@@ -168,7 +168,7 @@ function P(e) {
             } = e;
             return t
         })), [t]),
-        r = (0, c.yK)([T.A], () => T.A.getPlanIdsForSkus(Array.from(a))),
+        r = (0, c.yK)([f.A], () => f.A.getPlanIdsForSkus(Array.from(a))),
         o = s.useCallback(() => r.length === l.size, [r, l]),
         d = s.useMemo(() => t.filter(e => e.currency !== C.Yri.DISCORD_ORB), [t]);
     return s.useEffect(() => {

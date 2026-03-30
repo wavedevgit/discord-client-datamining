@@ -26,8 +26,8 @@ var n = i(627968),
     I = i(41984),
     S = i(941023),
     C = i(855790),
-    N = i(672396),
-    b = i(652215),
+    b = i(672396),
+    N = i(652215),
     T = i(985018),
     O = i(227499);
 let L = 10 * v.A.Millis.SECOND,
@@ -37,7 +37,7 @@ function w() {
     let e = (0, y.getPID)(),
         t = (0, y.getRPCAuthToken)();
     (0, f.tN)({
-        type: b.kGV.DISPATCH,
+        type: N.kGV.DISPATCH,
         pid: e,
         token: t,
         payloads: [{
@@ -55,8 +55,8 @@ class D extends s.PureComponent {
     notificationTimer;
     contentDomRef = s.createRef();
     componentDidMount() {
-        this.notificationTimer = setTimeout(this.hideNotification, L), p.A.track(b.HAw.NOTIFICATION_VIEWED, {
-            notif_type: N.KS.OverlayCrashed
+        this.notificationTimer = setTimeout(this.hideNotification, L), p.A.track(N.HAw.NOTIFICATION_VIEWED, {
+            notif_type: b.KS.OverlayCrashed
         })
     }
     componentWillUnmount() {
@@ -75,8 +75,8 @@ class D extends s.PureComponent {
     handleReload = e => {
         this.setState({
             busy: !0
-        }), w(), p.A.track(b.HAw.NOTIFICATION_CLICKED, {
-            notif_type: N.KS.OverlayCrashed,
+        }), w(), p.A.track(N.HAw.NOTIFICATION_CLICKED, {
+            notif_type: b.KS.OverlayCrashed,
             action_type: "reload"
         }, !0), e.stopPropagation(), setTimeout(() => location.reload(!0), 200)
     };
@@ -102,7 +102,7 @@ class D extends s.PureComponent {
             contentDomRef: this.contentDomRef,
             observe: !1,
             children: (0, n.jsx)(_.NPJ, {
-                theme: b.NJ8.DARK,
+                theme: N.NJ8.DARK,
                 children: s => (0, n.jsxs)(_.DUT, {
                     innerRef: this.contentDomRef,
                     className: l()(s, O.kL),
@@ -164,7 +164,7 @@ class k extends s.PureComponent {
         let n = (0, y.getPID)(),
             s = (0, y.getRPCAuthToken)();
         (0, f.tN)({
-            type: b.kGV.DISPATCH,
+            type: N.kGV.DISPATCH,
             pid: (0, y.getPID)(),
             token: s,
             payloads: [{
@@ -180,7 +180,7 @@ class k extends s.PureComponent {
         let a = (0, E.St)(e, I.Ue.Hook, {
             extra: t
         });
-        p.A.track(b.HAw.APP_CRASHED, {
+        p.A.track(N.HAw.APP_CRASHED, {
             path: i.pathname,
             extra: t,
             error_message: e.message,

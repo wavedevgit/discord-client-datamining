@@ -29,8 +29,8 @@ function c(e) {
         wrapTags: x,
         selectionMode: h,
         usePersistentBadge: p,
-        getDismissibleBadges: f
-    } = t, T = n(), S = c?.(), E = u(), b = _(), C = p?.(), v = f?.(), N = (0, a.A)({
+        getDismissibleBadges: T
+    } = t, f = n(), S = c?.(), E = u(), b = _(), C = p?.(), v = T?.(), N = (0, a.A)({
         persistentBadge: C,
         dismissibleBadges: v
     }), I = (0, r.q)(t), j = s.useMemo(() => ({
@@ -41,7 +41,7 @@ function c(e) {
     return (0, i.jsx)(o.L, {
         children: (0, i.jsx)(l.l6P, {
             ...j,
-            label: T,
+            label: f,
             description: S,
             options: b,
             wrapTags: x,

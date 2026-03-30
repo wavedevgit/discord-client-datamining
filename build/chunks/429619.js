@@ -23,16 +23,16 @@ let x = () => {
         popoutAsset: x,
         title: h,
         body: p,
-        version: f,
-        revertTextColor: T
+        version: T,
+        revertTextColor: f
     } = (0, u.M)(), S = s.useContext(o.gl), E = S?.navigateWithValidation ?? (e => e());
     return s.useEffect(() => {
         d.default.track(m.HAw.PREMIUM_UPSELL_VIEWED, {
             type: _.e.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
             location_stack: e,
-            version: f
+            version: T
         })
-    }, [e, f]), (0, i.jsxs)("div", {
+    }, [e, T]), (0, i.jsxs)("div", {
         ref: t,
         className: A.kL,
         style: {
@@ -51,12 +51,12 @@ let x = () => {
             className: A.Em,
             children: [(0, i.jsx)(l.Heading, {
                 variant: "heading-lg/extrabold",
-                color: T ? "text-overlay-dark" : "currentColor",
+                color: f ? "text-overlay-dark" : "currentColor",
                 className: A.DD,
                 children: h
             }), (0, i.jsx)(l.Text, {
                 variant: "text-sm/normal",
-                color: T ? "text-overlay-dark" : "currentColor",
+                color: f ? "text-overlay-dark" : "currentColor",
                 children: p
             })]
         }), (0, i.jsx)(l.Button, {

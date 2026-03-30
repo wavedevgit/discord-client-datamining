@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(927578),
     h = n(580630),
     p = n(83617),
-    f = n(661191),
-    T = n(533808),
+    T = n(661191),
+    f = n(533808),
     S = n(219887),
     E = n(652215),
     b = n(985018),
@@ -47,7 +47,7 @@ class v extends s.PureComponent {
             onCancel: m,
             onDelete: _
         } = this.props;
-        return n ? (0, i.jsx)(T.A, {
+        return n ? (0, i.jsx)(f.A, {
             paymentSource: e,
             isDefault: t,
             removing: r,
@@ -218,12 +218,12 @@ class I extends s.PureComponent {
                 premiumSubscriptionPaymentSourceId: d,
                 showGiftCards: u
             } = this.props,
-            m = a().values(s).sort((e, t) => e.id === n ? -1 : t.id === n ? 1 : f.default.compare(e.id, t.id)),
+            m = a().values(s).sort((e, t) => e.id === n ? -1 : t.id === n ? 1 : T.default.compare(e.id, t.id)),
             A = m.filter(e => !(e instanceof g.LQ)),
             x = m.filter(e => e instanceof g.LQ),
             h = this.state.editingPayment,
             p = A.findIndex(e => e.id === h),
-            T = A.map((e, t) => (0, i.jsx)(v, {
+            f = A.map((e, t) => (0, i.jsx)(v, {
                 locale: l,
                 paymentSource: e,
                 isDefault: n === e.id,
@@ -267,7 +267,7 @@ class I extends s.PureComponent {
                     color: "text-subtle",
                     children: b.intl.string(b.t.h6V3uK)
                 })]
-            }) : null, T, u && e, p !== A.length - 1 || u && x.length > 0 ? (0, i.jsx)(c.cGx, {}) : null, this.renderFooter()]
+            }) : null, f, u && e, p !== A.length - 1 || u && x.length > 0 ? (0, i.jsx)(c.cGx, {}) : null, this.renderFooter()]
         })
     }
 }

@@ -1,6 +1,6 @@
 /** chunk id: 180020 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => f
 });
 var i = n(627968),
     s = n(64700),
@@ -18,13 +18,13 @@ var i = n(627968),
     x = n(49999),
     h = n(985018),
     p = n(927961),
-    f = n(698551);
+    T = n(698551);
 
-function T(e) {
+function f(e) {
     let {
         user: t,
         guildId: n,
-        className: T
+        className: f
     } = e, S = m.Ay.canUsePremiumProfileCustomization(t), {
         analyticsLocations: E
     } = (0, r.Ay)(), {
@@ -51,13 +51,13 @@ function T(e) {
         title: h.intl.string(p.default["86GtGH"]),
         titleIcon: y ? (0, i.jsx)(a.LpS, {
             text: h.intl.string(h.t.y2b7CA),
-            className: f.A
+            className: T.A
         }) : void 0,
-        className: T,
+        className: f,
         showPremiumIcon: S,
         errors: N,
         children: (0, i.jsxs)("div", {
-            className: f.N,
+            className: T.N,
             children: [(0, i.jsx)(a.Button, {
                 variant: "primary",
                 size: "sm",

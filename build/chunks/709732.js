@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(235986),
     h = n(769015),
     p = n(75825),
-    f = n(871123),
-    T = n(366523),
+    T = n(871123),
+    f = n(366523),
     S = n(961350),
     E = n(30793),
     b = n(351906),
@@ -143,7 +143,7 @@ class D extends s.PureComponent {
             giftStyle: t,
             application: n
         } = this.props;
-        return (0, f.bF)(e) ? (0, i.jsx)(T.e, {
+        return (0, T.bF)(e) ? (0, i.jsx)(f.e, {
             shape: "square",
             sku: e,
             containerClassName: L.ez
@@ -163,7 +163,7 @@ class D extends s.PureComponent {
             entitlements: t,
             application: n
         } = this.props;
-        return (0, f.bF)(e) ? (0, i.jsxs)("div", {
+        return (0, T.bF)(e) ? (0, i.jsxs)("div", {
             className: a()(L.Oc, L.ic),
             children: [(0, i.jsx)(h.A, {
                 game: n,

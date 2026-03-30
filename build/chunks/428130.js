@@ -22,8 +22,8 @@ var i = n(627968),
     x = n(253932),
     h = n(780964),
     p = n(840065),
-    f = n(123857),
-    T = n(652215),
+    T = n(123857),
+    f = n(652215),
     S = n(381941),
     E = n(985018),
     b = n(421361),
@@ -40,35 +40,35 @@ let v = {
                 channelId: N,
                 content: E.intl.string(E.t.oZxkEq)
             }),
-            state: T.cmJ.SENT,
+            state: f.cmJ.SENT,
             id: `${t++}`
         }), (0, u.rh)({
             ...(0, m.Ay)({
                 channelId: N,
                 content: (0, o.Mw)(e) ? E.intl.string(E.t["WGb/v7"]) : E.intl.string(E.t["62m4mz"])
             }),
-            state: T.cmJ.SENT,
+            state: f.cmJ.SENT,
             id: `${t++}`
         }), (0, u.rh)({
             ...(0, m.Ay)({
                 channelId: N,
                 content: E.intl.string(E.t.a0Byo5)
             }),
-            state: T.cmJ.SENT,
+            state: f.cmJ.SENT,
             id: `${t++}`
         }), (0, u.rh)({
             ...(0, m.Ay)({
                 channelId: N,
                 content: E.intl.string(E.t.bmwEWJ)
             }),
-            state: T.cmJ.SENT,
+            state: f.cmJ.SENT,
             id: `${t++}`
         }), (0, u.rh)({
             ...(0, m.Ay)({
                 channelId: N,
                 content: E.intl.string(E.t["hK9QW/"])
             }),
-            state: T.cmJ.SENT,
+            state: f.cmJ.SENT,
             id: `${t}`
         })]
     },
@@ -84,7 +84,7 @@ let v = {
                 color: "text-subtle",
                 children: E.intl.string(E.t.PV3dGX)
             })]
-        }), (0, i.jsx)(f.Q3, {})]
+        }), (0, i.jsx)(T.Q3, {})]
     }),
     y = () => E.intl.format(E.t.Jae48E, {
         onClick: () => {
@@ -107,16 +107,16 @@ let v = {
                 theme: A.A.theme,
                 messageGroupSpacing: c.A.messageGroupSpacing
             })),
-            [m] = s.useState(() => I(T.NJ8.DARK)),
-            [h] = s.useState(() => I(T.NJ8.LIGHT)),
+            [m] = s.useState(() => I(f.NJ8.DARK)),
+            [h] = s.useState(() => I(f.NJ8.LIGHT)),
             p = t && n,
-            f = (0, o.Mw)(l) ? m : h;
+            T = (0, o.Mw)(l) ? m : h;
         return (0, i.jsx)(d.M1G, {
             children: (0, i.jsx)(d.ZpM, {
                 className: a()(b.VH, C.C2, e ? b.Me : void 0, `group-spacing-${null!=u?u:e?S.y5:S.ES}`),
                 outline: !0,
                 "aria-hidden": !0,
-                children: f.map((t, n) => (0, i.jsx)(g.A, {
+                children: T.map((t, n) => (0, i.jsx)(g.A, {
                     author: (0, _.p_)(t),
                     message: t,
                     compact: e,

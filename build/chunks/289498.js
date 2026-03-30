@@ -23,9 +23,9 @@ let x = e => {
         className: s,
         innerClassName: x,
         onConnect: h
-    } = e, p = (0, d.Ay)(), f = c.A.get((0, u.ML)(n));
+    } = e, p = (0, d.Ay)(), T = c.A.get((0, u.ML)(n));
     return (0, i.jsx)(a.m, {
-        text: f.name,
+        text: T.name,
         children: (0, i.jsx)("div", {
             className: l()(A.iE, s),
             children: (0, i.jsx)(o.vN3, {
@@ -34,7 +34,7 @@ let x = e => {
                     type: "button",
                     disabled: t,
                     style: {
-                        backgroundImage: `url('${(0,r.Mw)(p)?f.icon.darkSVG:f.icon.lightSVG}')`
+                        backgroundImage: `url('${(0,r.Mw)(p)?T.icon.darkSVG:T.icon.lightSVG}')`
                     },
                     onClick: null != h ? h : () => {
                         let e;
@@ -47,7 +47,7 @@ let x = e => {
                             platform_type: e.type
                         }))
                     },
-                    "aria-label": f.name
+                    "aria-label": T.name
                 })
             })
         })

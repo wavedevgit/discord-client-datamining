@@ -19,8 +19,8 @@ var s = n(503698),
     x = n(788868),
     h = n(652215),
     p = n(519412),
-    f = n(985018),
-    T = n(288948);
+    T = n(985018),
+    f = n(288948);
 
 function S(e) {
     let t, {
@@ -36,48 +36,48 @@ function S(e) {
     let S = null != A ? A.skuId : null,
         E = _.skuId === S,
         b = g.Ay.getDisplayName(s);
-    if (m) t = f.intl.string(p.default["5asczk"]);
+    if (m) t = T.intl.string(p.default["5asczk"]);
     else if (E && null != r) {
         let e;
         e = new Date(r.status === h.Dmq.PAUSED && null != r.pauseEndsAt ? r.pauseEndsAt : r.currentPeriodEnd);
         let n = (0, g._e)(e, c);
-        t = f.intl.formatToPlainString(f.t["5CNRRA"], {
+        t = T.intl.formatToPlainString(T.t["5CNRRA"], {
             date: n ?? 0
         })
-    } else t = f.intl.formatToPlainString(f.t.eNXZ5O, {
+    } else t = T.intl.formatToPlainString(T.t.eNXZ5O, {
         planName: b
     });
     let C = n.hasFreePremium() || null != r && r.isPurchasedExternally;
     return (0, i.jsxs)("div", {
-        className: T.Bh,
+        className: f.Bh,
         children: [(0, i.jsx)("div", {
             className: l()({
-                [T.sr]: _.skuId === x.pe.TIER_0,
-                [T.lP]: _.skuId === x.pe.TIER_1,
-                [T.eb]: _.skuId === x.pe.TIER_2
+                [f.sr]: _.skuId === x.pe.TIER_0,
+                [f.lP]: _.skuId === x.pe.TIER_1,
+                [f.eb]: _.skuId === x.pe.TIER_2
             }),
             children: (0, i.jsx)(d.tvc, {
                 size: "md",
                 color: "currentColor",
-                className: T.Kk
+                className: f.Kk
             })
         }), (0, i.jsxs)("div", {
-            className: T.pt,
+            className: f.pt,
             children: [(0, i.jsx)(d.Heading, {
                 variant: "heading-md/semibold",
-                children: f.intl.format(f.t.LzobT9, {
+                children: T.intl.format(T.t.LzobT9, {
                     planName: b
                 })
             }), !C && (0, i.jsx)(d.Heading, {
-                className: T.gj,
+                className: f.gj,
                 variant: "heading-sm/semibold",
                 color: "text-default",
                 children: t
             })]
         }), (0, i.jsx)(d.Text, {
-            className: T.PJ,
+            className: f.PJ,
             variant: "text-md/semibold",
-            children: f.intl.format(f.t["ess/xl"], {
+            children: T.intl.format(T.t["ess/xl"], {
                 count: a
             })
         })]
@@ -99,7 +99,7 @@ let E = function(e) {
     let E = p.isPremiumWithPremiumGroup();
     return (0, i.jsxs)("div", {
         children: [(0, i.jsx)("div", {
-            className: l()(t, T.xF, T.J_),
+            className: l()(t, f.xF, f.J_),
             children: Object.keys(s).map(e => (0, i.jsx)(S, {
                 planId: e,
                 count: s[e].length,
@@ -110,9 +110,9 @@ let E = function(e) {
             }, e))
         }), h && g && (0, i.jsxs)("div", {
             children: [(0, i.jsx)(d.Text, {
-                className: T.eT,
+                className: f.eT,
                 variant: "text-md/normal",
-                children: f.intl.string(f.t["VNr4+O"])
+                children: T.intl.string(T.t["VNr4+O"])
             }), (0, i.jsx)(A.i, {})]
         })]
     })

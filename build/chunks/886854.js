@@ -1,7 +1,7 @@
 /** chunk id: 886854 params = (module,exports,require) **/
 n.d(t, {
-    du: () => f,
-    j0: () => T,
+    du: () => T,
+    j0: () => f,
     yj: () => E
 });
 var i = n(934551),
@@ -21,10 +21,10 @@ var i = n(934551),
     h = n(136451),
     p = n(985018);
 
-function f() {
+function T() {
     (0, l.v)()
 }
-let T = [{
+let f = [{
         badgeType: r.Xi.STRONGLY_DISCOURAGED_CUSTOM,
         dismissibleContent: s.M.CLIENT_THEMES_SETTINGS_BADGE,
         StronglyDiscouragedCustomComponent: u.L
@@ -38,7 +38,7 @@ let T = [{
     }],
     S = (0, a.t_)(o.X.APPEARANCE_PANEL, {
         useTitle: () => p.intl.string(p.t["iHH+ky"]),
-        initialize: f,
+        initialize: T,
         buildLayout: () => [x.S, _._, h.u, g.U, A.M, m.d]
     }),
     E = (0, a.i4)(o.X.APPEARANCE_SIDEBAR_ITEM, {
@@ -46,6 +46,6 @@ let T = [{
         icon: i.PaintPaletteIcon,
         usePredicate: () => !(0, d.bp)("AppearanceSidebarItem"),
         useMenu: c.A,
-        getDismissibleBadges: () => T,
+        getDismissibleBadges: () => f,
         buildLayout: () => [S]
     })

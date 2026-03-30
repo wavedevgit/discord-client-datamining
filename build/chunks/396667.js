@@ -19,7 +19,7 @@ var i = n(627968),
 function x(e) {
     let {
         showHeader: t = !1
-    } = e, n = (0, a.bG)([c.A], () => c.A.isSyncing), x = (0, a.bG)([u.A], () => u.A.paymentSources), h = (0, a.bG)([u.A], () => u.A.defaultPaymentSourceId), p = (0, a.bG)([_.default], () => _.default.locale), f = (0, a.bG)([m.A], () => m.A.getPremiumTypeSubscription()), T = (0, a.bG)([c.A], () => c.A.isRemovingPaymentSource), S = (0, a.bG)([c.A], () => c.A.isUpdatingPaymentSource), {
+    } = e, n = (0, a.bG)([c.A], () => c.A.isSyncing), x = (0, a.bG)([u.A], () => u.A.paymentSources), h = (0, a.bG)([u.A], () => u.A.defaultPaymentSourceId), p = (0, a.bG)([_.default], () => _.default.locale), T = (0, a.bG)([m.A], () => m.A.getPremiumTypeSubscription()), f = (0, a.bG)([c.A], () => c.A.isRemovingPaymentSource), S = (0, a.bG)([c.A], () => c.A.isUpdatingPaymentSource), {
         enabled: E
     } = (0, d.c)({
         location: "UserSettingsBilling"
@@ -33,9 +33,9 @@ function x(e) {
         showHeader: t,
         paymentSources: x,
         defaultPaymentSourceId: h,
-        premiumSubscriptionPaymentSourceId: null != f && f.status !== g.Dmq.CANCELED ? f.paymentSourceId : null,
+        premiumSubscriptionPaymentSourceId: null != T && T.status !== g.Dmq.CANCELED ? T.paymentSourceId : null,
         locale: p,
-        removing: T,
+        removing: f,
         submitting: S,
         showGiftCards: E
     })

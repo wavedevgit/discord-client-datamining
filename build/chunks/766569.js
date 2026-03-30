@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(287070),
     h = n(101058),
     p = n(836602),
-    f = n(622543),
-    T = n(696451),
+    T = n(622543),
+    f = n(696451),
     S = n(351906),
     E = n(287809),
     b = n(975571),
@@ -56,15 +56,15 @@ function P(e) {
     } = (0, m.Ay)(u.A.USER_SETTINGS_GUILD_PROFILE), P = (0, r.bG)([E.default], () => {
         let e = E.default.getCurrentUser();
         return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-    }), D = (0, r.bG)([T.Ay], () => null != t ? T.Ay.getMember(t.id, P.id) : null), G = (0, r.bG)([f.A], () => !f.A.isFetchingProfile(P.id, t?.id)), M = (0, r.bG)([S.A], () => S.A.hidePersonalInformation), {
-        pendingAvatar: U,
-        pendingNameplate: k,
+    }), D = (0, r.bG)([f.Ay], () => null != t ? f.Ay.getMember(t.id, P.id) : null), G = (0, r.bG)([T.A], () => !T.A.isFetchingProfile(P.id, t?.id)), M = (0, r.bG)([S.A], () => S.A.hidePersonalInformation), {
+        pendingAvatar: k,
+        pendingNameplate: U,
         ...w
     } = (0, r.cf)([p.A], () => p.A.getPendingChanges(t?.id)), V = (0, h.V7)({
         userId: P.id,
-        image: U
+        image: k
     }), B = (0, g.lw)({
-        pendingValue: k,
+        pendingValue: U,
         userValue: P?.collectibles?.nameplate,
         guildValue: D?.collectibles?.nameplate,
         guildId: t?.id

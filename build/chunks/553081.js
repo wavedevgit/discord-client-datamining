@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(961250),
     h = n(320118),
     p = n(622543),
-    f = n(576622),
-    T = n(166403),
+    T = n(576622),
+    f = n(166403),
     S = n(954571),
     E = n(881489),
     b = n(131168),
@@ -36,8 +36,8 @@ var i = n(627968),
     D = n(788868),
     G = n(652215),
     M = n(985018),
-    U = n(904286),
-    k = n(288894);
+    k = n(904286),
+    U = n(288894);
 let w = e => {
     let {
         userId: t
@@ -45,14 +45,14 @@ let w = e => {
     s.useEffect(() => {
         u.h.wait(async () => {
             let e = [(0, x.Ay)()];
-            null != t && e.push((0, f.A)(t)), await Promise.all(e)
+            null != t && e.push((0, T.A)(t)), await Promise.all(e)
         })
     }, [t]), s.useEffect(() => {
         q(!0)
     }, []), (0, C.j)(), (0, A.P)(g.b);
     let w = s.useRef(null),
         V = s.useRef(null),
-        B = (0, o.bG)([T.A], () => T.A.getPremiumTypeSubscription()),
+        B = (0, o.bG)([f.A], () => f.A.getPremiumTypeSubscription()),
         {
             isReady: F,
             programReward: H,
@@ -84,11 +84,11 @@ let w = e => {
         analyticsLocations: es
     } = (0, _.Ay)(m.A.PREMIUM_SUBSCRIBER_NITRO_HOME), [el, ea] = s.useState(!1);
     return null != (0, o.bG)([p.A], () => null != t ? p.A.getUserProfile(t) : null) && (F || null != H) ? (0, i.jsxs)(c.GtU, {
-        className: U.xW,
+        className: k.xW,
         ref: w,
         children: [(0, i.jsx)(c.hLv, {
             color: "nitro-pink",
-            className: a()(U.kL, U.Gd),
+            className: a()(k.kL, k.Gd),
             offsetBottom: n ? .55 : .8,
             children: (0, i.jsxs)(_.f5, {
                 value: es,
@@ -99,7 +99,7 @@ let w = e => {
                     active: !0,
                     children: (0, i.jsx)(j.A, {
                         buttonVisibilityRef: J,
-                        className: U.v1,
+                        className: k.v1,
                         enablePremiumBrandRefresh: !0,
                         userDiscountOffer: Q,
                         discountedPrice: en
@@ -111,14 +111,14 @@ let w = e => {
                 }), (0, i.jsx)(O.A, {
                     glowingPerkId: X
                 }), (0, i.jsx)(I.A, {
-                    className: U.Zy,
+                    className: k.Zy,
                     location: m.A.PREMIUM_MARKETING_GIFT_SECTION,
                     analyticsLocation: {
                         page: G.liQ.NITRO_HOME,
                         section: G.JJy.GIFT_BANNER
                     }
                 }), (0, i.jsx)("div", {
-                    className: U.hz
+                    className: k.hz
                 }), (0, i.jsx)(d.L, {
                     innerRef: V,
                     onChange: e => {
@@ -128,11 +128,11 @@ let w = e => {
                     },
                     children: (0, i.jsx)("div", {
                         ref: V,
-                        className: U._Z
+                        className: k._Z
                     })
                 }), (0, i.jsx)("img", {
-                    src: k,
-                    className: U.Kw,
+                    src: U,
+                    className: k.Kw,
                     width: 112,
                     height: 85,
                     alt: M.intl.string(M.t.X4IxWL)
@@ -145,7 +145,7 @@ let w = e => {
             discountedPrice: en
         })]
     }) : (0, i.jsx)("div", {
-        className: a()(U.kL, U.Lq),
+        className: a()(k.kL, k.Lq),
         children: (0, i.jsx)(c.y$y, {})
     })
 }

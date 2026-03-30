@@ -1,8 +1,8 @@
 /** chunk id: 102255 params = (module,exports,require) **/
 n.d(t, {
     AF: () => E,
-    Im: () => T,
-    jH: () => f
+    Im: () => f,
+    jH: () => T
 });
 var i = n(627968),
     s = n(64700),
@@ -21,7 +21,7 @@ var i = n(627968),
     h = n(985018),
     p = n(237350);
 
-function f() {
+function T() {
     return (0, i.jsx)(o.Text, {
         variant: "text-sm/normal",
         className: p.h_,
@@ -29,7 +29,7 @@ function f() {
     })
 }
 
-function T() {
+function f() {
     let {
         currentSession: e
     } = (0, u.r)();
@@ -129,7 +129,7 @@ function b(e) {
                     text: e, icon: o.kN9
                 }
         }
-    }(t.client_info?.os), x = n ? null : (0, u.Y)(t.approx_last_used_time), f = [_, m].filter(g.Vq), T = [d, x].filter(g.Vq);
+    }(t.client_info?.os), x = n ? null : (0, u.Y)(t.approx_last_used_time), T = [_, m].filter(g.Vq), f = [d, x].filter(g.Vq);
     return (0, i.jsxs)("div", {
         className: a()(p.dZ, {
             [p.gg]: n
@@ -148,24 +148,24 @@ function b(e) {
                     variant: "eyebrow",
                     className: p.nT,
                     children: [(0, i.jsx)("span", {
-                        children: f[0]
-                    }), f.length > 1 && (0, i.jsxs)(i.Fragment, {
-                        children: [(0, i.jsx)("span", {
-                            children: "\xb7"
-                        }), (0, i.jsx)("span", {
-                            children: f[1]
-                        })]
-                    })]
-                }), (0, i.jsxs)(o.Text, {
-                    variant: "text-sm/medium",
-                    className: p.nT,
-                    children: [(0, i.jsx)("span", {
                         children: T[0]
                     }), T.length > 1 && (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)("span", {
                             children: "\xb7"
                         }), (0, i.jsx)("span", {
                             children: T[1]
+                        })]
+                    })]
+                }), (0, i.jsxs)(o.Text, {
+                    variant: "text-sm/medium",
+                    className: p.nT,
+                    children: [(0, i.jsx)("span", {
+                        children: f[0]
+                    }), f.length > 1 && (0, i.jsxs)(i.Fragment, {
+                        children: [(0, i.jsx)("span", {
+                            children: "\xb7"
+                        }), (0, i.jsx)("span", {
+                            children: f[1]
                         })]
                     })]
                 })]

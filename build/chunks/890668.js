@@ -19,8 +19,8 @@ var s = n(284009),
     x = n(431982),
     h = n(730588),
     p = n(593629),
-    f = n(164599),
-    T = n(63675),
+    T = n(164599),
+    f = n(63675),
     S = n(617514),
     E = n(546849),
     b = n(101058),
@@ -47,8 +47,8 @@ function L() {
             pendingPronouns: D,
             pendingAccentColor: G,
             pendingThemeColors: M,
-            pendingLegacyUsernameDisabled: U,
-            pendingPrimaryGuildId: k,
+            pendingLegacyUsernameDisabled: k,
+            pendingPrimaryGuildId: U,
             errors: w
         } = (0, a.cf)([v.A], () => {
             let e = v.A.getPendingChanges(),
@@ -105,7 +105,7 @@ function L() {
             sectionTitle: O.intl.string(O.t["7v0T9P"])
         }, "decoration"), (0, i.jsx)(x.A, {
             user: e
-        }), (0, i.jsx)(f.A, {
+        }), (0, i.jsx)(T.A, {
             user: e,
             sectionTitle: O.intl.string(O.t.wR5wOo)
         }, "effect"), F ? (0, i.jsxs)(i.Fragment, {
@@ -116,7 +116,7 @@ function L() {
                     banner: e
                 }),
                 forcedDivider: !0
-            }, "banner"), (0, i.jsx)(T.A, {
+            }, "banner"), (0, i.jsx)(f.A, {
                 user: e,
                 pendingAvatarSrc: V,
                 pendingColors: M,
@@ -142,13 +142,13 @@ function L() {
             currentBio: t?.bio ?? ""
         }, "bio"), Z.length > 0 && (0, i.jsx)(o.A, {
             availablePrimaryGuilds: Z,
-            pendingPrimaryGuildId: k,
+            pendingPrimaryGuildId: U,
             onChange: e => (0, C.p)({
                 primaryGuildId: e
             })
         }), null != X && (0, i.jsx)(A.A, {
             legacyUsername: X,
-            pendingLegacyUsernameDisabled: U
+            pendingLegacyUsernameDisabled: k
         }, "legacy_username")]
     })
 }

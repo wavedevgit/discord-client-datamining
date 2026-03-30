@@ -29,8 +29,8 @@ function _(e) {
         } = s,
         h = A && !a,
         p = a ? "text-strong" : "text-muted",
-        f = a ? "text-default" : "text-muted",
-        T = r()(n),
+        T = a ? "text-default" : "text-muted",
+        f = r()(n),
         S = null != x && a,
         E = S ? o.DUT : "div";
     return (0, i.jsxs)(E, {
@@ -51,14 +51,14 @@ function _(e) {
                 variant: "text-xxs/semibold",
                 color: "text-muted",
                 className: m.YR,
-                children: (0, d.mk)(T)
+                children: (0, d.mk)(f)
             }), (0, i.jsx)(o.Text, {
                 variant: "text-md/medium",
                 color: p,
                 children: _()
             }), (0, i.jsx)(o.Text, {
                 variant: "text-xs/normal",
-                color: f,
+                color: T,
                 children: h ? "?????" : g()
             })]
         })]

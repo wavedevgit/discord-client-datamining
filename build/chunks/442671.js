@@ -27,7 +27,7 @@ let _ = e => {
         })
     }, [t, x]), p = () => {
         A(!0)
-    }, f = () => {
+    }, T = () => {
         A(!1)
     };
     return (0, i.jsx)(o.tG, {
@@ -46,7 +46,7 @@ let _ = e => {
                     [m.vu]: g
                 }),
                 onMouseEnter: p,
-                onMouseLeave: f,
+                onMouseLeave: T,
                 onClick: h,
                 ...e,
                 children: n(g)

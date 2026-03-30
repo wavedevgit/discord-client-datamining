@@ -47,10 +47,10 @@ var i = n(284009),
     P = n(607567),
     U = n(403362),
     V = n(661191),
-    W = n(669715),
-    x = n(551851),
-    k = n(281405),
-    B = n(652215),
+    x = n(669715),
+    W = n(551851),
+    B = n(281405),
+    k = n(652215),
     M = n(746080),
     H = n(818348);
 let Y = "placeholder-channel-id",
@@ -61,7 +61,7 @@ let Y = "placeholder-channel-id",
     Z = 3,
     q = 4,
     $ = 5,
-    Q = new Set([String(k.n.GUILD_DIRECTORY)]);
+    Q = new Set([String(B.n.GUILD_DIRECTORY)]);
 class X {
     guilds = {};
     _areGuildActionRowsUpdated(e, t) {
@@ -149,7 +149,7 @@ class ee {
             o = {};
         for (const e in i) {
             const t = i[e];
-            t.type === B.rbe.GUILD_CATEGORY && (a[t.id] = t, o[t.id] = [])
+            t.type === k.rbe.GUILD_CATEGORY && (a[t.id] = t, o[t.id] = [])
         }
         const h = [],
             c = [],
@@ -157,12 +157,12 @@ class ee {
             C = this.initializationData;
         for (const e in i) {
             const t = i[e];
-            if (t.type !== B.rbe.GUILD_CATEGORY) {
-                if (t.type === B.rbe.GUILD_DIRECTORY) {
-                    null == r || r.features.has(B.GuildFeatures.HUB) || g.push(t);
+            if (t.type !== k.rbe.GUILD_CATEGORY) {
+                if (t.type === k.rbe.GUILD_DIRECTORY) {
+                    null == r || r.features.has(k.GuildFeatures.HUB) || g.push(t);
                     continue
                 }
-                ep(this, t, C) ? h.push(t) : (t.type === B.rbe.GUILD_VOICE || t.type === B.rbe.GUILD_STAGE_VOICE) && (null != t.parent_id && null != a[t.parent_id] && c.push(a[t.parent_id]), c.push(t)), null != t.parent_id && t.parent_id in o ? o[t.parent_id].push(t) : d.push(t)
+                ep(this, t, C) ? h.push(t) : (t.type === k.rbe.GUILD_VOICE || t.type === k.rbe.GUILD_STAGE_VOICE) && (null != t.parent_id && null != a[t.parent_id] && c.push(a[t.parent_id]), c.push(t)), null != t.parent_id && t.parent_id in o ? o[t.parent_id].push(t) : d.push(t)
             }
         }
         for (const e in this.categories = {}, o) this.categories[e] = new ei(this, a[e], o[e], C);
@@ -253,7 +253,7 @@ class ee {
             if (null == e) return null;
             if (eE.has(e)) return e;
             let t = w.A.getChannel(e);
-            return t?.isDirectory() ? k.n.GUILD_DIRECTORY : null
+            return t?.isDirectory() ? B.n.GUILD_DIRECTORY : null
         }(e);
         if (null != t) return [{
             row: this.getGuildActionSection().getRows().indexOf(t),
@@ -273,7 +273,7 @@ class ee {
         if (a >= 0 && n.push({
                 section: this.recentsSectionNumber,
                 row: a
-            }), i.type === B.rbe.GUILD_CATEGORY) return [{
+            }), i.type === k.rbe.GUILD_CATEGORY) return [{
             section: l().findIndex(this.getSortedNamedCategories(), e => e.id === i?.id) + $
         }];
         let d = this.getCategory(i),
@@ -506,7 +506,7 @@ class el extends et {
     hiddenChannelIds = null;
     constructor(e, t, n, i) {
         if (super(e), this.categoriesById = n, !e.optInEnabled) return;
-        this.isCollapsed = x.A.isVoiceCategoryCollapsed(e.id), this.isMuted = !1, this.categoriesById = n, this.channels = l()(t).map(e => new eg(this, e, i)).keyBy(e => e.id).value()
+        this.isCollapsed = W.A.isVoiceCategoryCollapsed(e.id), this.isMuted = !1, this.categoriesById = n, this.channels = l()(t).map(e => new eg(this, e, i)).keyBy(e => e.id).value()
     }
     invalidate() {
         super.invalidate(), this.hiddenChannelIds = null
@@ -530,12 +530,12 @@ class el extends et {
         if (null == this.shownChannelIds) {
             let e = l()(this.channels).filter(e => 4 === e.renderLevel).orderBy([e => {
                 var t;
-                return t = this.categoriesById, e.record.type === B.rbe.GUILD_CATEGORY ? e.record.position : null != e.record.parent_id ? t[e.record.parent_id]?.position ?? -1 : -1
-            }, e => e.record.type === B.rbe.GUILD_CATEGORY ? -1 : e.record.position], ["asc", "asc"]).value();
+                return t = this.categoriesById, e.record.type === k.rbe.GUILD_CATEGORY ? e.record.position : null != e.record.parent_id ? t[e.record.parent_id]?.position ?? -1 : -1
+            }, e => e.record.type === k.rbe.GUILD_CATEGORY ? -1 : e.record.position], ["asc", "asc"]).value();
             this.shownChannelIds = [];
             for (let t = 0; t < e.length; t++) {
                 let n = e[t];
-                t < e.length - 1 && n.record.type === B.rbe.GUILD_CATEGORY && e[t + 1]?.record.type === B.rbe.GUILD_CATEGORY || (t !== e.length - 1 || n.record.type !== B.rbe.GUILD_CATEGORY) && this.shownChannelIds.push(n.id)
+                t < e.length - 1 && n.record.type === k.rbe.GUILD_CATEGORY && e[t + 1]?.record.type === k.rbe.GUILD_CATEGORY || (t !== e.length - 1 || n.record.type !== k.rbe.GUILD_CATEGORY) && this.shownChannelIds.push(n.id)
             }
         }
         return this.shownChannelIds
@@ -562,7 +562,7 @@ class ea {
 class ed {
     guildActionRows;
     constructor(e, t) {
-        this.guildActionRows = e.map(String), t && this.guildActionRows.push(String(k.n.GUILD_DIRECTORY))
+        this.guildActionRows = e.map(String), t && this.guildActionRows.push(String(B.n.GUILD_DIRECTORY))
     }
     isEmpty() {
         return 0 === this.guildActionRows.length
@@ -654,7 +654,7 @@ class eh extends eo {
         } : a.hideMutedChannels && a.mutedChannelIds.has(this.id) ? {
             renderLevel: 2,
             threadIds: c
-        } : this.category.isCollapsed && (a.mutedChannelIds.has(this.id) || null != r && a.mutedChannelIds.has(r) || this.record.isGuildVocal() || this.record.type === B.rbe.GUILD_STORE || (0, m.ig)(this.record.type) && !O.Ay.hasUnread(this.record.id)) ? {
+        } : this.category.isCollapsed && (a.mutedChannelIds.has(this.id) || null != r && a.mutedChannelIds.has(r) || this.record.isGuildVocal() || this.record.type === k.rbe.GUILD_STORE || (0, m.ig)(this.record.type) && !O.Ay.hasUnread(this.record.id)) ? {
             renderLevel: 3,
             threadIds: c
         } : {
@@ -721,14 +721,14 @@ class eg extends eh {
 
 function eC(e, t, n) {
     switch (e.type) {
-        case B.rbe.GUILD_VOICE: {
+        case k.rbe.GUILD_VOICE: {
             let i = c.Ay.getActiveEventByChannel(e.id);
             if (null != i) return {
                 type: "event",
                 name: i.name
             };
             let s = P.Ay.getVoiceStatesForChannel(e);
-            if (n && t && (0, W.t)(s)) return {
+            if (n && t && (0, x.t)(s)) return {
                 type: "go-live"
             };
             let r = o.A.getChannelStatus(e),
@@ -749,7 +749,7 @@ function eC(e, t, n) {
             };
             return null
         }
-        case B.rbe.GUILD_STAGE_VOICE: {
+        case k.rbe.GUILD_STAGE_VOICE: {
             let t = c.Ay.getActiveEventByChannel(e.id);
             if (null != t) return {
                 type: "event",
@@ -796,7 +796,7 @@ function ep(e, t, n) {
         selectedChannel: i,
         activeJoinedRelevantThreads: s
     } = n;
-    if (t.type === B.rbe.GUILD_DIRECTORY || !e.optInEnabled || e.optedInChannels.has(t.id) || t.isThread() || null != t.parent_id && e.optedInChannels.has(t.parent_id) || e.hideResourceChannels && t.hasFlag(M.lx.IS_GUILD_RESOURCE_CHANNEL) || t.isGuildVocal() && (!x.A.isVoiceCategoryCollapsed(e.id) || l().some(F.A.getVoiceStatesForChannel(t.id)))) return !1;
+    if (t.type === k.rbe.GUILD_DIRECTORY || !e.optInEnabled || e.optedInChannels.has(t.id) || t.isThread() || null != t.parent_id && e.optedInChannels.has(t.parent_id) || e.hideResourceChannels && t.hasFlag(M.lx.IS_GUILD_RESOURCE_CHANNEL) || t.isGuildVocal() && (!W.A.isVoiceCategoryCollapsed(e.id) || l().some(F.A.getVoiceStatesForChannel(t.id)))) return !1;
     if (null != i && (i.id === t.id || i.isThread() && i.parent_id === t.id) || O.Ay.getMentionCount(t.id) > 0) return !0;
     for (let e in s[t.id])
         if (O.Ay.getMentionCount(e) > 0 || O.Ay.hasUnread(e) || O.Ay.hasRecentlyVisitedAndRead(e)) return !0;
@@ -805,4 +805,4 @@ function ep(e, t, n) {
         a = Array.from(r).sort((e, t) => V.default.compare(t, e));
     return !!(r.has(t.id) && a.indexOf(t.id) < j || O.Ay.hasRecentlyVisitedAndRead(t.id))
 }
-let eE = new Set(Object.values(k.n))
+let eE = new Set(Object.values(B.n))

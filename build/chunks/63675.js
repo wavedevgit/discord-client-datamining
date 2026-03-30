@@ -26,12 +26,12 @@ function p(e) {
         pendingColors: s,
         onThemeColorsChange: a,
         preventDisabled: p,
-        guildId: f,
-        className: T,
+        guildId: T,
+        className: f,
         showPremiumIcon: S = !0,
         showResetThemeButton: E = !1,
         forcedDivider: b
-    } = e, C = (0, u.Ay)(t.id, f), {
+    } = e, C = (0, u.Ay)(t.id, T), {
         primaryColor: v,
         secondaryColor: N
     } = (0, m.A)({
@@ -39,7 +39,7 @@ function p(e) {
         displayProfile: C,
         pendingThemeColors: s,
         isPreview: !0
-    }), I = _.Ay.canUsePremiumProfileCustomization(t), j = null != n ? n : t.getAvatarURL(f, 80), y = (0, d.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), O = (0, c.rh)(j, y, !1);
+    }), I = _.Ay.canUsePremiumProfileCustomization(t), j = null != n ? n : t.getAvatarURL(T, 80), y = (0, d.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), O = (0, c.rh)(j, y, !1);
     if (null == v || null == N) return null;
     let R = e => {
         a(r()(e, C?.themeColors) ? void 0 : e)
@@ -47,7 +47,7 @@ function p(e) {
     return (0, i.jsx)(A.A, {
         title: x.intl.string(x.t.DMeO2X),
         disabled: !I && !p,
-        className: l()(h.__invalid_profileThemesSection, T),
+        className: l()(h.__invalid_profileThemesSection, f),
         showPremiumIcon: S,
         forcedDivider: b,
         children: (0, i.jsxs)("div", {
@@ -82,7 +82,7 @@ function p(e) {
                         children: x.intl.string(x.t["8elvy6"])
                     })
                 })
-            }), E && null != f && (0, i.jsx)("div", {
+            }), E && null != T && (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: h.WA,
                 children: (0, i.jsx)(d.Button, {

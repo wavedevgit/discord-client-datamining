@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(212168),
     h = n(652215),
     p = n(788868),
-    f = n(985018),
-    T = n(545286);
+    T = n(985018),
+    f = n(545286);
 
 function S(e) {
     let {
@@ -56,7 +56,7 @@ function S(e) {
         errors: O,
         className: S,
         children: (0, i.jsxs)("div", {
-            className: T.NC,
+            className: f.NC,
             children: [(0, i.jsx)(R, {
                 size: r.$n.Sizes.SMALL,
                 onClick: () => {
@@ -67,16 +67,16 @@ function S(e) {
                     })
                 },
                 className: a()({
-                    [T.yj]: C
+                    [f.yj]: C
                 }),
-                children: f.intl.string(f.t["/dRfCf"])
+                children: T.intl.string(T.t["/dRfCf"])
             }), (void 0 === y ? null != j : null != y) && (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
-                className: T.DT,
+                className: f.DT,
                 children: (0, i.jsx)(o.Button, {
                     variant: "secondary",
                     size: "sm",
-                    text: null != n ? f.intl.string(f.t.CHf9iJ) : f.intl.string(f.t.uMuafO),
+                    text: null != n ? T.intl.string(T.t.CHf9iJ) : T.intl.string(T.t.uMuafO),
                     onClick: () => {
                         (0, u.p)({
                             guildId: n?.id,

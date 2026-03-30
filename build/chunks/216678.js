@@ -66,7 +66,8 @@ function d(t) {
                     sku_id: d,
                     application_id: e,
                     location_stack: I,
-                    checkout_design: t ? u.rS.UNIFIED : u.rS.LEGACY
+                    checkout_design: t ? u.rS.UNIFIED : u.rS.LEGACY,
+                    checkout_flow: E
                 })
             }(0, a.ET)(), (0, r.z)(), S?.(C)
         },

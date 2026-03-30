@@ -1,50 +1,47 @@
-/** chunk id: 684136, original params: e,t,n (module,exports,require) **/
-"use strict";
+/** chunk id: 684136 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => c
 });
-var r = n(627968);
+var i, s = n(627968);
 n(64700);
-var i = n(503698),
-    a = n.n(i),
-    o = n(607399),
-    s = n(397927),
-    l = n(985018),
-    c = n(462674),
-    u = function(e) {
-        return e.DEFAULT = "", e.BOLD = "Bold", e.SOLID = "Solid", e
-    }(u || {});
+var r = n(503698),
+    l = n.n(r),
+    a = n(607399),
+    d = n(397927),
+    o = n(985018),
+    h = n(494697),
+    u = ((i = u || {}).DEFAULT = "", i.BOLD = "Bold", i.SOLID = "Solid", i);
 
-function d(e) {
+function c(e) {
     let {
         closeAction: t,
         variant: n = "",
         keybind: i,
-        className: u
+        className: r
     } = e;
-    return (0, r.jsxs)("div", {
-        className: a()(c.kL, u),
-        children: [(0, r.jsx)(s.DUT, {
-            className: a()(c.b, {
-                [c.EH]: "Bold" === n,
-                [c.O3]: "Solid" === n
+    return (0, s.jsxs)("div", {
+        className: l()(h.kL, r),
+        children: [(0, s.jsx)(d.DUT, {
+            className: l()(h.b, {
+                [h.EH]: "Bold" === n,
+                [h.O3]: "Solid" === n
             }),
             onClick: t,
-            "aria-label": l.intl.string(l.t.cpT0Cq),
-            children: "Solid" === n ? (0, r.jsx)(s.aXh, {
+            "aria-label": o.intl.string(o.t.cpT0Cq),
+            children: "Solid" === n ? (0, s.jsx)(d.aXh, {
                 size: "md",
                 color: "currentColor",
                 "aria-hidden": !0
-            }) : (0, r.jsx)(s.PGe, {
+            }) : (0, s.jsx)(d.PGe, {
                 size: "sm",
                 color: "currentColor",
                 "aria-hidden": !0
             })
-        }), o.Fr ? null : (0, r.jsx)("div", {
-            className: c.P,
+        }), a.Fr ? null : (0, s.jsx)("div", {
+            className: h.P,
             "aria-hidden": !0,
             children: i
         })]
     })
 }
-d.Variants = u
+c.Variants = u

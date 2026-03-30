@@ -19,8 +19,8 @@ var i = n(627968),
     x = n(544028),
     h = n(253932),
     p = n(841329),
-    f = n(899847),
-    T = n(695515),
+    T = n(899847),
+    f = n(695515),
     S = n(438732),
     E = n(809697),
     b = n(834981),
@@ -49,7 +49,7 @@ let G = {
         [O.u9.DATA_AND_PRIVACY]: v.A
     };
 
-function U() {
+function k() {
     return (0, i.jsx)(d.BJc, {
         justify: "center",
         align: "center",
@@ -58,7 +58,7 @@ function U() {
     })
 }
 
-function k(e) {
+function U(e) {
     let {
         section: t,
         handleItemSelect: n
@@ -143,7 +143,7 @@ function V() {
         } = (0, y.j)({
             location: O.MH.SETTINGS,
             onMountEffect: () => {
-                f.Ay.initialPageLoad()
+                T.Ay.initialPageLoad()
             }
         });
     if (s.useEffect(() => {
@@ -155,7 +155,7 @@ function V() {
         "aria-label": P.intl.string(L.default.RZqaJn),
         children: [(0, i.jsx)(_.HI, {
             location: P.intl.string(L.default.RZqaJn)
-        }), (0, i.jsx)(k, {
+        }), (0, i.jsx)(U, {
             section: n,
             handleItemSelect: e => {
                 l(e)
@@ -164,7 +164,7 @@ function V() {
             id: n,
             "aria-labelledby": e,
             className: D.Us,
-            children: t ? (0, i.jsx)(U, {}) : (0, i.jsx)(r, {})
+            children: t ? (0, i.jsx)(k, {}) : (0, i.jsx)(r, {})
         })]
     })
 }
@@ -172,7 +172,7 @@ function V() {
 function B() {
     let {
         analyticsLocations: e
-    } = (0, m.Ay)(u.A.FAMILY_CENTER), t = (0, S.A)(), n = (0, o.bG)([T.A], () => T.A.getIsInitialized()), l = (0, o.bG)([x.A], () => x.A.theme), r = (0, g.GV)(), {
+    } = (0, m.Ay)(u.A.FAMILY_CENTER), t = (0, S.A)(), n = (0, o.bG)([f.A], () => f.A.getIsInitialized()), l = (0, o.bG)([x.A], () => x.A.theme), r = (0, g.GV)(), {
         isLoading: A,
         selectedTab: p,
         handleTabChange: E,
@@ -180,7 +180,7 @@ function B() {
     } = (0, y.j)({
         location: O.MH.SIDENAV,
         onMountEffect: () => {
-            c.I(R.BVt.FAMILY_CENTER), !T.A.isLoading() && T.A.canRefetch() && f.Ay.initialPageLoad()
+            c.I(R.BVt.FAMILY_CENTER), !f.A.isLoading() && f.A.canRefetch() && T.Ay.initialPageLoad()
         }
     });
     if (s.useEffect(() => {
@@ -209,7 +209,7 @@ function B() {
                 children: (0, i.jsx)(d.HOs, {
                     children: (0, i.jsx)("div", {
                         className: D.O4,
-                        children: A ? (0, i.jsx)(U, {}) : (0, i.jsx)(v, {})
+                        children: A ? (0, i.jsx)(k, {}) : (0, i.jsx)(v, {})
                     })
                 })
             })]

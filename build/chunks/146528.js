@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(915089),
     h = n(465932),
     p = n(263063),
-    f = n(543767),
-    T = n(420139),
+    T = n(543767),
+    f = n(420139),
     S = n(790284),
     E = n(976860),
     b = n(780964),
@@ -36,7 +36,7 @@ var i = n(627968),
     D = n(355097),
     G = n(985018),
     M = n(943138);
-let U = e => {
+let k = e => {
         let {
             label: t,
             value: n,
@@ -66,18 +66,18 @@ let U = e => {
             })]
         })
     },
-    k = e => {
+    U = e => {
         let {
             subscription: t
         } = e, {
             analyticsLocations: n
-        } = (0, g.Ay)(), [s] = (0, f.Kq)({
+        } = (0, g.Ay)(), [s] = (0, T.Kq)({
             subscriptionId: t.id,
             renewal: !0,
             analyticsLocations: n,
             analyticsLocation: _.A.GUILD_ROLE_SUBSCRIPTION_PAYMENT_SOURCE_WITH_INVOICE
         }), l = (0, r.bG)([N.A], () => N.A.hasFetchedPaymentSources);
-        return null != s && l ? (0, i.jsx)(T.A, {
+        return null != s && l ? (0, i.jsx)(f.A, {
             subscription: t,
             currentInvoicePreview: s,
             dropdownClassName: M.Nw
@@ -123,13 +123,13 @@ let U = e => {
             guild: r,
             expanded: _,
             handleToggleExpanded: A,
-            subscriptionInfo: f
-        } = (0, I.A)(t), [T, N] = s.useState(!1), V = (0, x.GV)(), {
+            subscriptionInfo: T
+        } = (0, I.A)(t), [f, N] = s.useState(!1), V = (0, x.GV)(), {
             analyticsLocations: B
         } = (0, g.Ay)(), {
             shouldHideGuildPurchaseEntryPoints: F
         } = (0, h.MH)(r?.id), H = t?.isPurchasedViaAppleGeneric;
-        if (null == l || null == n || null == f) return null;
+        if (null == l || null == n || null == T) return null;
         let z = async () => {
             try {
                 N(!0), await u.QP(t, B), (0, R.q)()
@@ -144,7 +144,7 @@ let U = e => {
             nextRenewalDate: Z,
             nextRenewalLabel: q,
             isTrial: Q
-        } = f, J = n.soft_deleted || null == r || H;
+        } = T, J = n.soft_deleted || null == r || H;
         return (0, i.jsxs)("div", {
             className: M.kL,
             children: [(0, i.jsx)(j.A, {
@@ -224,15 +224,15 @@ let U = e => {
                     className: M.kE
                 }), (0, i.jsxs)("div", {
                     className: M.Zx,
-                    children: [(0, i.jsx)(U, {
+                    children: [(0, i.jsx)(k, {
                         label: q,
                         value: Z
-                    }), (0, i.jsx)(U, {
+                    }), (0, i.jsx)(k, {
                         label: G.intl.string(G.t.dltUMH),
                         value: K,
                         showInfoIcon: Q,
                         infoIconTooltipText: Q ? G.intl.string(G.t["/q6fpa"]) : void 0
-                    }), (0, i.jsx)(U, {
+                    }), (0, i.jsx)(k, {
                         label: G.intl.string(G.t.AOcwWB),
                         value: W
                     })]
@@ -240,13 +240,13 @@ let U = e => {
                     size: 16
                 }), !Y && !H && (0, i.jsx)(c.D0$, {
                     label: G.intl.string(G.t.wmMFvA),
-                    children: (0, i.jsx)(k, {
+                    children: (0, i.jsx)(U, {
                         subscription: t
                     })
                 }), !J && (0, i.jsx)(w, {
                     isTrial: Q,
                     isCancelled: Y,
-                    isResubscribing: T,
+                    isResubscribing: f,
                     shouldHideRoleSubscriptionEntryPoints: F,
                     onCancelSubscriptionClick: () => {
                         null != r && (0, O.q)({

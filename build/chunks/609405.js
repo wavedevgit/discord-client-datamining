@@ -19,8 +19,8 @@ var i = n(627968),
     x = n(311092),
     h = n(233413),
     p = n(400297),
-    f = n(652215),
-    T = n(788868),
+    T = n(652215),
+    f = n(788868),
     S = n(985018),
     E = n(73468);
 
@@ -44,24 +44,24 @@ function b(e) {
             date: new Date(e)
         })
     }, [n, o, d, c]), m = s.useMemo(() => (function(e) {
-        if (null == e || e === f.TVA.NONE) return "";
+        if (null == e || e === T.TVA.NONE) return "";
         let t = [S.intl.formatToPlainString(S.t["dLlKX/"], {
-            numEmojiSlots: T.TG[e].limits.emoji
+            numEmojiSlots: f.TG[e].limits.emoji
         }), S.intl.formatToPlainString(S.t["+ANIfv"], {
-            numStickerSlots: T.TG[e].limits.stickers
+            numStickerSlots: f.TG[e].limits.stickers
         }), S.intl.formatToPlainString(S.t["4gt60b"], {
-            numSoundboardSlots: T.TG[e].limits.soundboardSounds
+            numSoundboardSlots: f.TG[e].limits.soundboardSounds
         }), S.intl.formatToPlainString(S.t.XahSjZ, {
-            resolution: T.TG[e].limits.screenShareQualityResolution,
-            framerate: T.TG[e].limits.screenShareQualityFramerate
+            resolution: f.TG[e].limits.screenShareQualityResolution,
+            framerate: f.TG[e].limits.screenShareQualityFramerate
         }), S.intl.formatToPlainString(S.t.NbNs7S, {
-            bitrate: T.TG[e].limits.bitrate / 1e3
+            bitrate: f.TG[e].limits.bitrate / 1e3
         }), S.intl.formatToPlainString(S.t.VVKcpn, {
-            filesize: T.TG[e].limits.fileSize / 1024 / 1024
+            filesize: f.TG[e].limits.fileSize / 1024 / 1024
         }), S.intl.formatToPlainString(S.t.TbpCvv, {
-            numVideoStageSeats: T.TG[e].limits.stageVideoUsers
+            numVideoStageSeats: f.TG[e].limits.stageVideoUsers
         }), S.intl.string(S.t.LDyX3i), S.intl.string(S.t.YtGlPW)];
-        e >= f.TVA.TIER_2 && (t.push(S.intl.string(S.t.SztbtN)), t.push(S.intl.string(S.t["3GK91n"]))), e >= f.TVA.TIER_3 && t.push(S.intl.string(S.t["XUUJd+"]));
+        e >= T.TVA.TIER_2 && (t.push(S.intl.string(S.t.SztbtN)), t.push(S.intl.string(S.t["3GK91n"]))), e >= T.TVA.TIER_3 && t.push(S.intl.string(S.t["XUUJd+"]));
         let n = t[Math.floor(Math.random() * t.length)];
         return S.intl.format(S.t["/dOAmQ"], {
             perk: n
@@ -77,7 +77,7 @@ function b(e) {
             opacity: 0
         }
     }, "animate-always");
-    return o || t === f.TVA.NONE ? (0, i.jsx)("div", {
+    return o || t === T.TVA.NONE ? (0, i.jsx)("div", {
         className: E.xm,
         children: (0, i.jsx)(r.Text, {
             variant: "text-sm/medium",
@@ -103,25 +103,25 @@ function C(e) {
         hasCancelableGuildBoostSlot: u,
         showAltText: m,
         isLastGuildBoostSlot: g
-    } = e, A = (0, a.bG)([o.A], () => o.A.useReducedMotion), p = s.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), f = s.useMemo(() => null != p && p > new Date, [p]), T = (0, _.I5)(n), C = (0, d.A)(), v = s.useRef(null);
+    } = e, A = (0, a.bG)([o.A], () => o.A.useReducedMotion), p = s.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), T = s.useMemo(() => null != p && p > new Date, [p]), f = (0, _.I5)(n), C = (0, d.A)(), v = s.useRef(null);
     return (0, i.jsxs)("div", {
         className: E.PW,
         children: [(0, i.jsxs)("div", {
             className: E.$U,
             children: [(0, i.jsx)(h.A, {
-                isCanceled: T,
-                hasCooldown: f,
+                isCanceled: f,
+                hasCooldown: T,
                 useReducedMotion: A
             }), (0, i.jsx)("div", {
                 className: E.vh,
-                children: null != p && f && !T ? (0, i.jsx)(x.A, {
+                children: null != p && T && !f ? (0, i.jsx)(x.A, {
                     className: E.xm,
                     cooldown: p.getTime()
                 }) : (0, i.jsx)(b, {
                     guildTier: t,
                     guildBoostSlot: n,
                     showAltText: m,
-                    isCanceled: T,
+                    isCanceled: f,
                     premiumSubscription: l,
                     fractionalPremiumInfo: C
                 })

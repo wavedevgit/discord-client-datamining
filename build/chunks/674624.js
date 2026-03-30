@@ -19,8 +19,8 @@ var i, s = n(627968),
     x = n(576060),
     h = n(780964),
     p = n(358776),
-    f = n(840065),
-    T = n(112848),
+    T = n(840065),
+    f = n(112848),
     S = n(149757),
     E = n(920050),
     b = n(189024),
@@ -52,7 +52,7 @@ let G = [{
 function M() {
     let e = (0, d.DP)(),
         t = (0, A.X)("useFavoritesPerkCards"),
-        n = (0, T.Lh)(),
+        n = (0, f.Lh)(),
         i = (0, S.N)(n)?.standard ?? null,
         {
             analyticsLocations: D
@@ -63,18 +63,18 @@ function M() {
         }),
         M = (0, l.useCallback)(() => {
             let e = (0, p.Ci)("openClientThemes");
-            (0, f.openUserSettings)(e ? h.X.DISPLAY_THEME_CATEGORY : h.X.APPEARANCE_PANEL, {
-                analyticsLocations: D
-            })
-        }, [D]),
-        U = (0, l.useCallback)(() => {
-            (0, f.openUserSettings)(h.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
+            (0, T.openUserSettings)(e ? h.X.DISPLAY_THEME_CATEGORY : h.X.APPEARANCE_PANEL, {
                 analyticsLocations: D
             })
         }, [D]),
         k = (0, l.useCallback)(() => {
+            (0, T.openUserSettings)(h.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
+                analyticsLocations: D
+            })
+        }, [D]),
+        U = (0, l.useCallback)(() => {
             let e = (0, p.Ci)("openCustomAppSettings") ? h.X.DISPLAY_IN_APP_ICON_CATEGORY : h.X.APPEARANCE_IN_APP_ICON;
-            (0, f.openUserSettings)(e, {
+            (0, T.openUserSettings)(e, {
                 analyticsLocations: D
             })
         }, [D]),
@@ -82,13 +82,13 @@ function M() {
             (0, g.pX)(C.BVt.COLLECTIBLES_SHOP)
         }, []),
         V = (0, l.useCallback)(() => {
-            (0, f.openUserSettings)(h.X.SOUNDBOARD_CATEGORY, {
+            (0, T.openUserSettings)(h.X.SOUNDBOARD_CATEGORY, {
                 analyticsLocations: D
             })
         }, [D]),
         B = (0, x.A)(),
         F = (0, l.useCallback)(() => {
-            (0, f.openUserSettings)(h.X.PROFILE_PANEL, {
+            (0, T.openUserSettings)(h.X.PROFILE_PANEL, {
                 analyticsLocations: D
             }, () => (0, m.L)({
                 analyticsLocations: D
@@ -108,7 +108,7 @@ function M() {
             }),
             subscriptionRequired: !0,
             ctaText: N.intl.string(N.t.jVcuVY),
-            onCtaClick: U,
+            onCtaClick: k,
             primaryAsset: (0, s.jsx)(a.CIt, {
                 alt: "",
                 ariaHidden: !0
@@ -169,7 +169,7 @@ function M() {
             title: N.intl.string(N.t["GU+wqh"]),
             description: N.intl.string(N.t["1uPk1Z"]),
             ctaText: N.intl.string(N.t.jVcuVY),
-            onCtaClick: k,
+            onCtaClick: U,
             primaryAsset: O.A,
             categories: ["appearance"]
         }, {
@@ -262,6 +262,6 @@ function M() {
                 ariaHidden: !0
             }),
             categories: ["vip"]
-        }], [e, i, G, M, U, k, w, V, F, B, t]);
+        }], [e, i, G, M, k, U, w, V, F, B, t]);
     return (0, l.useMemo)(() => Y.filter(e => null != e && !z.includes(e.id)), [Y, z])
 }

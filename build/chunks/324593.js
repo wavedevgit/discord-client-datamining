@@ -1,10 +1,10 @@
 /** chunk id: 324593 params = (module,exports,require) **/
-i.d(t, {
-    A: () => a
+n.d(t, {
+    A: () => r
 });
-var n = i(835245),
-    s = i(187559);
-let a = new class {
+var i = n(835245),
+    s = n(187559);
+let r = new class {
     searchSessionId = null;
     searchSessionStartTime = null;
     isQueryEnteredTracked = !1;
@@ -15,7 +15,7 @@ let a = new class {
         return null != this.searchSessionId
     }
     initialize() {
-        this.searchSessionId = (0, n.A)(), this.searchSessionStartTime = Date.now(), this.isQueryEnteredTracked = !1
+        this.searchSessionId = (0, i.A)(), this.searchSessionStartTime = Date.now(), this.isQueryEnteredTracked = !1
     }
     maybeTrackQueryEntered() {
         this.isQueryEnteredTracked || ((0, s.j6)(), this.isQueryEnteredTracked = !0)

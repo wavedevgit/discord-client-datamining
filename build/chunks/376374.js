@@ -42,7 +42,7 @@ function C(t) {
         text: null != o ? T.intl.formatToPlainString(T.t.i4T8vz, {
             rate: o
         }) : T.intl.string(T.t.uuzaAK)
-    }) : (0, l.jsx)(N, {
+    }) : (0, l.jsx)(P, {
         text: function(t, e) {
             switch (t) {
                 case 2:
@@ -72,7 +72,7 @@ function f(t) {
     } = (0, u.Ay)(r.A.APP_STOREFRONT), S = (0, A.L)(s.id), p = s.type === _.Puh.DURABLE && S, {
         price: E
     } = s;
-    return null == E ? null : p ? (0, l.jsx)(N, {
+    return null == E ? null : p ? (0, l.jsx)(P, {
         text: T.intl.string(T.t["6cfuDj"])
     }) : (0, l.jsx)(h, {
         appId: e,
@@ -119,7 +119,7 @@ function h(t) {
     })
 }
 
-function N(t) {
+function P(t) {
     let {
         text: e
     } = t;

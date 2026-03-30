@@ -18,7 +18,7 @@ var i = n(627968),
     x = n(652215),
     h = n(985018),
     p = n(504734);
-let f = e => {
+let T = e => {
         let {
             isShowingAll: t,
             onClick: n
@@ -37,7 +37,7 @@ let f = e => {
             })]
         })
     },
-    T = e => {
+    f = e => {
         let {
             title: t,
             description: n,
@@ -101,7 +101,7 @@ let f = e => {
                 className: a()(p.perkCardContainer, {
                     [p.perkCardContainerExpanded]: l
                 }),
-                children: E.map(e => null != e && (0, i.jsx)(T, {
+                children: E.map(e => null != e && (0, i.jsx)(f, {
                     ...e
                 }, e.title))
             }), n && (0, i.jsxs)(i.Fragment, {
@@ -110,7 +110,7 @@ let f = e => {
                         [p.sizeGizmo]: !l,
                         [p.sizeGizmoExpanded]: l
                     }),
-                    children: (0, i.jsx)(f, {
+                    children: (0, i.jsx)(T, {
                         onClick: () => {
                             g.default.track(x.HAw.PREMIUM_MARKETING_PERKS_SEE_ALL_CLICKED, {
                                 location_stack: S,

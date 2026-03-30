@@ -1,6 +1,6 @@
 /** chunk id: 828797 params = (module,exports,require) **/
 n.d(t, {
-    o: () => T
+    o: () => f
 });
 var i = n(311907),
     s = n(419954),
@@ -18,9 +18,9 @@ var i = n(311907),
     x = n(237948),
     h = n(32096),
     p = n(545214),
-    f = n(985018);
-let T = (0, s.zZ)(r.X.ACCOUNT_AUTHENTICATION_CATEGORY, {
-    useTitle: () => f.intl.string(f.t.pKSjEj),
+    T = n(985018);
+let f = (0, s.zZ)(r.X.ACCOUNT_AUTHENTICATION_CATEGORY, {
+    useTitle: () => T.intl.string(T.t.pKSjEj),
     useInlineNotice: function() {
         return (0, i.bG)([a.default], () => a.default.getCurrentUser()?.mfaEnabled ?? !1) ? {
             type: l.lT.STRONGLY_DISCOURAGED_CUSTOM,

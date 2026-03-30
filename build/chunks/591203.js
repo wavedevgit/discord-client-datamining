@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(595953),
     h = n(975571),
     p = n(780964),
-    f = n(617617),
-    T = n(652215);
+    T = n(617617),
+    f = n(652215);
 n(980504);
 var S = n(985018),
     E = n(199141);
@@ -38,7 +38,7 @@ function b(e) {
 function C(e) {
     let {
         guildId: t
-    } = e, n = (0, l.bG)([f.A], () => f.A.settings.guilds?.guilds?.[t]?.joinSound), s = b(n);
+    } = e, n = (0, l.bG)([T.A], () => T.A.settings.guilds?.guilds?.[t]?.joinSound), s = b(n);
     if (null == n || null == s) return null;
     let {
         emojiId: o,
@@ -66,12 +66,12 @@ let v = (0, u.E2)(p.X.ENTRANCE_SOUNDS_SETTING, {
     Component: function() {
         let {
             analyticsLocations: e
-        } = (0, o.Ay)(), [t, n] = s.useState("0"), r = (0, A.mz)(t), u = b(r), p = r?.type === A.PP.GLOBAL, f = (0, l.bG)([_.A], () => _.A.hasFetchedAllSounds()) && null != r && null == u;
+        } = (0, o.Ay)(), [t, n] = s.useState("0"), r = (0, A.mz)(t), u = b(r), p = r?.type === A.PP.GLOBAL, T = (0, l.bG)([_.A], () => _.A.hasFetchedAllSounds()) && null != r && null == u;
         s.useEffect(() => {
-            f && (0, g.ND)({
+            T && (0, g.ND)({
                 location: e
             })
-        }, [f, e]), s.useEffect(() => {
+        }, [T, e]), s.useEffect(() => {
             (0, m.E7)()
         }, []);
         let v = s.useCallback((e, t) => {
@@ -85,7 +85,7 @@ let v = (0, u.E2)(p.X.ENTRANCE_SOUNDS_SETTING, {
         return (0, i.jsxs)(a.nVY, {
             label: S.intl.string(S.t.nzUc3B),
             description: S.intl.format(S.t.u9RWmv, {
-                helpdeskArticle: h.A.getArticleURL(T.MVz.SOUNDBOARD)
+                helpdeskArticle: h.A.getArticleURL(f.MVz.SOUNDBOARD)
             }),
             children: [(0, i.jsx)(d.A, {
                 guildId: t,
@@ -113,7 +113,7 @@ let v = (0, u.E2)(p.X.ENTRANCE_SOUNDS_SETTING, {
                     onSelect: n => {
                         null == n ? (0, g.Dv)(t, e) : (0, g.un)(t, n, e)
                     }
-                }), f && (0, i.jsx)(a.po8, {
+                }), T && (0, i.jsx)(a.po8, {
                     className: E.lm,
                     messageType: a.YCn.WARNING,
                     children: S.intl.string(S.t.WkPsFR)

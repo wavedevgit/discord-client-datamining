@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(50268),
     h = n(922301),
     p = n(81400),
-    f = n(557722),
-    T = n(207560),
+    T = n(557722),
+    f = n(207560),
     S = n(836602),
     E = n(591179),
     b = n(262),
@@ -36,8 +36,8 @@ var i = n(627968),
     D = n(253932),
     G = n(780964),
     M = n(192501),
-    U = n(840065),
-    k = n(652215),
+    k = n(840065),
+    U = n(652215),
     w = n(53516),
     V = n(985018),
     B = n(536242),
@@ -49,7 +49,7 @@ function z(e) {
     return s.useCallback(() => {
         t ? (0, N.openUserProfileModal)({
             userId: e
-        }) : (0, U.openUserSettings)(G.X.PROFILE_PANEL)
+        }) : (0, k.openUserSettings)(G.X.PROFILE_PANEL)
     }, [t, e])
 }
 
@@ -325,9 +325,9 @@ function Z(e) {
                         (0, c.qfG)(e => (0, i.jsx)(y.default, {
                             ...e,
                             title: V.intl.string(V.t["3CTiKi"]),
-                            children: l.hasFlag(k.nhx.MFA_SMS) ? V.intl.string(V.t.jrhJyo) : void 0,
+                            children: l.hasFlag(U.nhx.MFA_SMS) ? V.intl.string(V.t.jrhJyo) : void 0,
                             actionText: V.intl.string(V.t.N86XcP),
-                            handleSubmit: e => f.A.removePhone(e, f.d.USER_SETTINGS_UPDATE)
+                            handleSubmit: e => T.A.removePhone(e, T.d.USER_SETTINGS_UPDATE)
                         }))
                     }
                 })
@@ -345,7 +345,7 @@ function Z(e) {
                                 default: e
                             } = await Promise.resolve().then(n.bind(n, 615715));
                             return t => (0, i.jsx)(e, {
-                                reason: f.d.USER_SETTINGS_UPDATE,
+                                reason: T.d.USER_SETTINGS_UPDATE,
                                 ...t
                             })
                         }, {
@@ -398,7 +398,7 @@ function Q(e) {
     let {
         className: t
     } = e, l = (0, g.b8)(), r = (0, g.yM)(), o = (0, g.Y2)(), d = !l || r, u = V.intl.string(V.t["9KiIz6"]), A = V.intl.string(V.t.DVywUB), x = V.intl.string(V.t.lKDPGA), h = s.useCallback(() => {
-        window.open(R.A.getArticleURL(k.MVz.TIGGER_PAWTECT_LEARN_MORE), "_blank")
+        window.open(R.A.getArticleURL(U.MVz.TIGGER_PAWTECT_LEARN_MORE), "_blank")
     }, []), p = s.useCallback(() => {
         (0, c.mMO)(async () => {
             let {
@@ -408,9 +408,9 @@ function Q(e) {
                 ...t
             })
         })
-    }, []), f = s.useMemo(() => l ? r ? V.intl.string(V.t.sK0dmH) : o ? V.intl.format(B.default.WM5adV, {
+    }, []), T = s.useMemo(() => l ? r ? V.intl.string(V.t.sK0dmH) : o ? V.intl.format(B.default.WM5adV, {
         handleOnHelpUrlHook: h
-    }) : V.intl.string(V.t.XxRj7f) : x, [l, r, o, x, h]), T = l && !r && o;
+    }) : V.intl.string(V.t.XxRj7f) : x, [l, r, o, x, h]), f = l && !r && o;
     return (0, i.jsxs)("div", {
         className: a()(F.ZZ, t),
         children: [(0, i.jsx)("div", {
@@ -425,11 +425,11 @@ function Q(e) {
                         tag: "span",
                         color: "text-strong",
                         variant: "text-md/normal",
-                        children: [o && l && !r ? `${V.intl.string(V.t.XxRj7f)} • ` : null, f]
+                        children: [o && l && !r ? `${V.intl.string(V.t.XxRj7f)} • ` : null, T]
                     })
                 })]
             })
-        }), T && (0, i.jsx)("div", {
+        }), f && (0, i.jsx)("div", {
             "data-button-hoisted-classname-wrapper": !0,
             className: F.pr,
             children: (0, i.jsx)(c.Button, {
@@ -439,7 +439,7 @@ function Q(e) {
                 "aria-label": V.intl.string(V.t.bt75uw),
                 onClick: p
             })
-        }), d && !T && (0, i.jsx)("div", {
+        }), d && !f && (0, i.jsx)("div", {
             "data-button-hoisted-classname-wrapper": !0,
             className: F.pr,
             children: (0, i.jsx)(c.Button, {
@@ -464,7 +464,7 @@ function J(e) {
     } = (0, v.A)({
         userId: t?.id,
         size: c._3J.SIZE_80
-    }), g = (0, T.fk)();
+    }), g = (0, f.fk)();
     return (0, i.jsxs)("div", {
         className: F.DM,
         children: [(0, i.jsx)(j.o, {

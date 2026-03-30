@@ -7,7 +7,7 @@ n.d(t, {
     Hn: () => b,
     Hr: () => a,
     Qx: () => C,
-    Tf: () => T,
+    Tf: () => f,
     WI: () => r,
     bd: () => _,
     dT: () => c,
@@ -17,7 +17,7 @@ n.d(t, {
     i4: () => o,
     sN: () => E,
     t_: () => d,
-    v_: () => f,
+    v_: () => T,
     zC: () => u,
     zD: () => S,
     zZ: () => m
@@ -106,11 +106,11 @@ function p(e, t, n) {
     }
 }
 
-function f(e, t) {
+function T(e, t) {
     return p(e, i.Z6.STATIC, t)
 }
 
-function T(e, t) {
+function f(e, t) {
     return p(e, i.Z6.BUTTON, t)
 }
 

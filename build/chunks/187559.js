@@ -1,19 +1,19 @@
 /** chunk id: 187559 params = (module,exports,require) **/
-i.d(t, {
+n.d(t, {
     MH: () => d,
-    f1: () => r,
-    j6: () => l
+    f1: () => l,
+    j6: () => a
 });
-var n = i(954571),
-    s = i(324593),
-    a = i(652215);
-
-function r() {
-    n.default.track(a.HAw.USER_SETTINGS_SEARCH_PRESS)
-}
+var i = n(954571),
+    s = n(324593),
+    r = n(652215);
 
 function l() {
-    n.default.track(a.HAw.USER_SETTINGS_SEARCH_QUERY_ENTERED, {
+    i.default.track(r.HAw.USER_SETTINGS_SEARCH_PRESS)
+}
+
+function a() {
+    i.default.track(r.HAw.USER_SETTINGS_SEARCH_QUERY_ENTERED, {
         search_session_id: s.A.getSearchSessionId()
     })
 }
@@ -22,7 +22,7 @@ function d(e) {
     let {
         searchSessionDuration: t
     } = e;
-    n.default.track(a.HAw.USER_SETTINGS_SEARCH_CLOSED, {
+    i.default.track(r.HAw.USER_SETTINGS_SEARCH_CLOSED, {
         search_session_id: s.A.getSearchSessionId(),
         search_session_duration_ms: t
     })

@@ -21,7 +21,7 @@ function o(e) {
         usePersistentBadge: _,
         hasIcon: g,
         getDismissibleBadges: A
-    } = t, x = d(), h = c?.(), p = n(), f = u?.() ?? !1, T = m?.(), S = _?.(), E = A?.(), b = (0, l.A)({
+    } = t, x = d(), h = c?.(), p = n(), T = u?.() ?? !1, f = m?.(), S = _?.(), E = A?.(), b = (0, l.A)({
         persistentBadge: S,
         dismissibleBadges: E
     }), C = (0, a.q)(t);
@@ -35,10 +35,10 @@ function o(e) {
             onChange: e => {
                 C(), o(e)
             },
-            disabled: f
-        }), f && null != T ? (0, i.jsx)(s.po8, {
+            disabled: T
+        }), T && null != f ? (0, i.jsx)(s.po8, {
             messageType: s.YCn.WARNING,
-            children: T
+            children: f
         }) : null]
     })
 }

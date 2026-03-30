@@ -27,8 +27,8 @@ var s = i(627968),
     S = i(235986);
 i(607470);
 var C = i(15285),
-    N = i(880144),
-    b = i(905552),
+    b = i(880144),
+    N = i(905552),
     T = i(768841),
     O = i(265367),
     L = i(616356),
@@ -314,7 +314,7 @@ function ep() {
         incompatibleApp: H.default.incompatibleApp,
         activeRegions: H.default.getActiveRegions(),
         isPreviewingInGame: H.default.isPreviewingInGame()
-    })), r = (0, p.bG)([W.A], () => W.A.windowSize()), o = (0, p.bG)([V.Ay], () => V.Ay.getOverlayKeybind()), d = (0, p.bG)([k.A], () => k.A.getVoiceChannelId()), c = (0, p.bG)([j.A], () => j.A.getChannel(d)), u = (0, p.bG)([w.A], () => null != c ? w.A.getGuild(c.guild_id) : null), h = (0, p.bG)([C.Ay, P.A], () => (0, b.A)(C.Ay, P.A)), _ = (0, p.bG)([R.Ay], () => (0, N.A)(R.Ay)), f = (0, p.bG)([L.A], () => null != L.A.getCurrentUserActiveStream()), {
+    })), r = (0, p.bG)([W.A], () => W.A.windowSize()), o = (0, p.bG)([V.Ay], () => V.Ay.getOverlayKeybind()), d = (0, p.bG)([k.A], () => k.A.getVoiceChannelId()), c = (0, p.bG)([j.A], () => j.A.getChannel(d)), u = (0, p.bG)([w.A], () => null != c ? w.A.getGuild(c.guild_id) : null), h = (0, p.bG)([C.Ay, P.A], () => (0, N.A)(C.Ay, P.A)), _ = (0, p.bG)([R.Ay], () => (0, b.A)(R.Ay)), f = (0, p.bG)([L.A], () => null != L.A.getCurrentUserActiveStream()), {
         analyticsLocations: m
     } = (0, I.Ay)(E.A.OVERLAY);
     return a.useEffect(() => {

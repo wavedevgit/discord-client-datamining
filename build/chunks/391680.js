@@ -25,8 +25,8 @@ function _() {
         isForcedCanary: x,
         isAxeEnabled: h,
         preventPopoutClose: p,
-        onlyShowPreviewAppCollections: f,
-        disableAppCollectionsCache: T
+        onlyShowPreviewAppCollections: T,
+        disableAppCollectionsCache: f
     } = (0, s.cf)([d.default, o.A], () => ({
         layoutDebuggingEnabled: d.default.layoutDebuggingEnabled,
         isDeveloper: o.A.isDeveloper,
@@ -72,19 +72,19 @@ function _() {
         }, "forced-canary"), (0, i.jsx)(l.sLh, {
             id: "preview-collections",
             label: "Preview Unpublished Collections",
-            checked: f,
+            checked: T,
             action: () => {
                 (0, a.x)({
-                    onlyShowPreviewAppCollections: !f
+                    onlyShowPreviewAppCollections: !T
                 })
             }
         }, "preview-collections"), (0, i.jsx)(l.sLh, {
             id: "disable-collections-cache",
             label: "Disable Collections Cache",
-            checked: T,
+            checked: f,
             action: () => {
                 (0, a.x)({
-                    disableAppCollectionsCache: !T
+                    disableAppCollectionsCache: !f
                 })
             }
         }, "disable-collections-cache")]

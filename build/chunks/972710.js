@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(701273),
     h = n(780964),
     p = n(840065),
-    f = n(287809),
-    T = n(954571),
+    T = n(287809),
+    f = n(954571),
     S = n(927578),
     E = n(866312),
     b = n(327479),
@@ -37,7 +37,7 @@ let j = [C.Dmq.PAST_DUE, C.Dmq.ACCOUNT_HOLD, C.Dmq.BILLING_RETRY],
             analyticsLocation: r
         } = e, [o, d] = s.useState(!1), [u, g] = s.useState(!1);
         s.useEffect(() => {
-            T.default.track(C.HAw.GUILD_BOOST_PAST_DUE_CANCEL_MODAL_VIEWED, {
+            f.default.track(C.HAw.GUILD_BOOST_PAST_DUE_CANCEL_MODAL_VIEWED, {
                 subscription_id: l.id,
                 location_stack: a
             })
@@ -45,7 +45,7 @@ let j = [C.Dmq.PAST_DUE, C.Dmq.ACCOUNT_HOLD, C.Dmq.BILLING_RETRY],
         let A = async () => {
             d(!0), g(!1);
             try {
-                await (0, _.M2)(l.id, a, r), T.default.track(C.HAw.GUILD_BOOST_PAST_DUE_CANCELLATION_FLOW_COMPLETED, {
+                await (0, _.M2)(l.id, a, r), f.default.track(C.HAw.GUILD_BOOST_PAST_DUE_CANCELLATION_FLOW_COMPLETED, {
                     subscription_id: l.id,
                     location_stack: a
                 }), (0, _.hP)(), n()
@@ -85,8 +85,8 @@ function O(e) {
             fromStandaloneBillingPage: r = !0,
             analyticsLocation: _
         } = e,
-        T = (0, u.bG)([f.default], () => {
-            let e = f.default.getCurrentUser();
+        f = (0, u.bG)([T.default], () => {
+            let e = T.default.getCurrentUser();
             return o()(null != e, "GuildBoostingHeader: currentUser cannot be undefined"), e
         }),
         {
@@ -130,7 +130,7 @@ function O(e) {
                     children: (0, S.Uf)({
                         subscription: n,
                         renewalInvoicePreview: s,
-                        user: T,
+                        user: f,
                         fractionalPremiumInfo: l
                     })
                 })]

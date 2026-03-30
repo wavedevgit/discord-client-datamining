@@ -1,6 +1,6 @@
 /** chunk id: 202949 params = (module,exports,require) **/
 n.d(t, {
-    Q: () => f,
+    Q: () => T,
     z: () => S
 });
 var i = n(735438),
@@ -18,17 +18,17 @@ var i = n(735438),
     A = n(652215),
     x = n(672396),
     h = n(985018);
-let p = T(null);
+let p = f(null);
 
-function f() {
+function T() {
     var e;
-    let t = T(p);
+    let t = f(p);
     e = p, s().isEqual(s().omit(t, "old_enabled"), s().omit(e, "old_enabled")) || (m.default.track(A.HAw.OVERLAY_SETTINGS_UPDATED, {
         ...t
     }), p = t)
 }
 
-function T(e) {
+function f(e) {
     let t = u.default.getNotificationPositionMode(),
         n = t !== A.G6Q.DISABLED,
         i = d.Ay.getOverlayKeybind(),

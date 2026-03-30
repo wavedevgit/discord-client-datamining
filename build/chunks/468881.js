@@ -18,17 +18,17 @@ var i = n(934551),
     x = n(581837),
     h = n(666196),
     p = n(654757),
-    f = n(556710),
-    T = n(305290),
+    T = n(556710),
+    f = n(305290),
     S = n(8187),
     E = n(985018);
 let b = (0, s.t_)(a.X.ACCESSIBILITY_PANEL, {
         useTitle: () => E.intl.string(E.t.G0neg7),
-        buildLayout: () => [c.s, f._, x.b, p.T, g.V, h.G, u.v, m.T]
+        buildLayout: () => [c.s, T._, x.b, p.T, g.V, h.G, u.v, m.T]
     }),
     C = (0, s.t_)(a.X.ACCESSIBILITY_PANEL, {
         useTitle: () => E.intl.string(E.t.G0neg7),
-        buildLayout: () => [T.U, S.P, A.l, p.T, _.X],
+        buildLayout: () => [f.U, S.P, A.l, p.T, _.X],
         decoration: {
             type: l.t9.STRONGLY_DISCOURAGED_CUSTOM,
             component: o.A,

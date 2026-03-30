@@ -26,8 +26,8 @@ var n = i(284009),
     I = i(164891),
     S = i(961350),
     C = i(734057),
-    N = i(803224),
-    b = i(290863),
+    b = i(803224),
+    N = i(290863),
     T = i(309010),
     O = i(461213),
     L = i(351906),
@@ -120,7 +120,7 @@ function q(e) {
 class $ extends l.Ay.Store {
     static displayName = "OverlayNotificationsStore";
     initialize() {
-        this.waitFor(S.default, C.A, g.A, N.A, D.default, v.default, P.A, y.A, R.default, b.A, T.A, O.A, L.A, j.default)
+        this.waitFor(S.default, C.A, g.A, b.A, D.default, v.default, P.A, y.A, R.default, N.A, T.A, O.A, L.A, j.default)
     }
     getNotifications() {
         return K
@@ -186,7 +186,7 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
                 if (null == l) return !1;
                 switch (t.activity.type) {
                     case G.xL.JOIN:
-                        if (null == (n = b.A.getApplicationActivity(i.id, l.id)) || null == n.party || n.party.id !== t.activity.party_id) return !1;
+                        if (null == (n = N.A.getApplicationActivity(i.id, l.id)) || null == n.party || n.party.id !== t.activity.party_id) return !1;
                         a = (0, c.A)(e, t, i, l, n);
                         break;
                     case G.xL.JOIN_REQUEST:
@@ -204,7 +204,7 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
             if (!1 !== e) return e
         }
         if ((!R.default.isInstanceLocked() || R.default.isPinned(G.uss.TEXT)) && t === T.A.getChannelId() || y.A.isNotificationDisabled(V.KS.TextChat) || L.A.disableNotifications || !(0, x.lx)(i, t)) return !1;
-        let l = !N.A.isSoundDisabled(w.cH);
+        let l = !b.A.isSoundDisabled(w.cH);
         Q((0, f.A)(n, i, a, l), {
             type: 1,
             channelId: n.id,

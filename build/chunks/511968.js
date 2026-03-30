@@ -25,8 +25,8 @@ function h(e) {
     } = e, {
         applicationId: h,
         benefits: p,
-        description: f
-    } = n, T = s.useMemo(() => null == n.thumbnail ? null : (0, g.t)(h, n.thumbnail, 256), [h, n.thumbnail]), {
+        description: T
+    } = n, f = s.useMemo(() => null == n.thumbnail ? null : (0, g.t)(h, n.thumbnail, 256), [h, n.thumbnail]), {
         data: S
     } = (0, c.j)(n.skuId), E = s.useMemo(() => {
         if (null == S || 0 === S.length) return null;
@@ -38,8 +38,8 @@ function h(e) {
         header: (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)("div", {
                 className: x.qd,
-                children: [null != T && (0, i.jsx)(d._V3, {
-                    src: T.href,
+                children: [null != f && (0, i.jsx)(d._V3, {
+                    src: f.href,
                     imageClassName: x.rW,
                     width: 48,
                     height: 48
@@ -54,11 +54,11 @@ function h(e) {
                 })]
             }), t]
         }),
-        children: [!(0, _.uJ)(f) && (0, i.jsx)("div", {
+        children: [!(0, _.uJ)(T) && (0, i.jsx)("div", {
             className: x.h_,
             children: (0, i.jsx)(A.A, {
                 variant: "text-sm/medium",
-                children: f
+                children: T
             })
         }), null != p && p.length > 0 && (0, i.jsx)("div", {
             className: x.PX,

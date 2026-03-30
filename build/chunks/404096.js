@@ -19,8 +19,8 @@ var i = n(421380),
     x = n(612025),
     h = n(112469),
     p = n(137675),
-    f = n(542457),
-    T = n(355097),
+    T = n(542457),
+    f = n(355097),
     S = n(652215),
     E = n(985018);
 let b = (e, t) => {
@@ -78,8 +78,8 @@ let v = (0, r.zD)(A.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING, {
         } else {
             let n = (0, u.xo)();
             e ? n.delete(t) : n.add(t), g.Zr.updateSetting(Array.from(n)), d.default.track(S.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
-                action: f.m.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
-                ingress: T.bf.USER_SETTINGS_PRIVACY_SAFETY,
+                action: T.m.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
+                ingress: f.bf.USER_SETTINGS_PRIVACY_SAFETY,
                 guild_id: t
             })
         }

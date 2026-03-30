@@ -1,6 +1,6 @@
 /** chunk id: 551378 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => f
 });
 var i = n(627968);
 n(64700);
@@ -19,7 +19,7 @@ var s = n(503698),
     x = n(452567),
     h = n(272673),
     p = n(607913);
-let f = () => {
+let T = () => {
         let e = (0, c.Li)(),
             t = (0, o.A)(),
             {
@@ -34,7 +34,7 @@ let f = () => {
             }) : (0, i.jsx)(u.A, {})
         })
     },
-    T = () => {
+    f = () => {
         let e = (0, o.A)(),
             t = (0, r.y)(g.intl.string(_.default["T7GyW+"]), g.intl.string(_.default.goKE2b)),
             n = (0, r.y)(g.intl.format(_.default.MXjDSv, {
@@ -59,7 +59,7 @@ let f = () => {
                             children: n
                         })]
                     })
-                }), (0, i.jsx)(f, {})]
+                }), (0, i.jsx)(T, {})]
             }), (0, i.jsx)("div", {
                 className: A.F0,
                 children: (0, i.jsx)("img", {

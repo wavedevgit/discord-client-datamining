@@ -59,8 +59,8 @@ let x = function() {
         onToggleAllActivityRestrictedGuilds: x,
         onToggleActivityRestrictedGuild: h,
         isActivityRestricted: p,
-        numActivityRestrictedGuilds: f,
-        numTotalGuilds: T
+        numActivityRestrictedGuilds: T,
+        numTotalGuilds: f
     } = (0, c.M)(), S = (0, s.useId)();
     return (0, i.jsxs)("div", {
         className: g.iE,
@@ -73,21 +73,21 @@ let x = function() {
                     o.default.track(u.HAw.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
                         interaction: "search_cleared",
                         sort_order: l,
-                        activity_restricted_guild_count: f,
-                        total_guild_count: T
+                        activity_restricted_guild_count: T,
+                        total_guild_count: f
                     }), n("")
                 },
                 onFocus: () => o.default.track(u.HAw.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
                     interaction: "search_focused",
                     sort_order: l,
-                    activity_restricted_guild_count: f,
-                    total_guild_count: T
+                    activity_restricted_guild_count: T,
+                    total_guild_count: f
                 }),
                 onBlur: () => o.default.track(u.HAw.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
                     interaction: "search_blurred",
                     sort_order: l,
-                    activity_restricted_guild_count: f,
-                    total_guild_count: T
+                    activity_restricted_guild_count: T,
+                    total_guild_count: f
                 }),
                 placeholder: _.intl.string(_.t["H+nRYw"]),
                 "aria-label": _.intl.string(_.t["5h0QOP"]),
@@ -121,8 +121,8 @@ let x = function() {
                         o.default.track(u.HAw.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
                             interaction: "sort_order_changed",
                             sort_order: e,
-                            activity_restricted_guild_count: f,
-                            total_guild_count: T
+                            activity_restricted_guild_count: T,
+                            total_guild_count: f
                         }), r(e)
                     },
                     value: l,

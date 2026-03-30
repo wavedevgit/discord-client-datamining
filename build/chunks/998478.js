@@ -1,6 +1,6 @@
 /** chunk id: 998478 params = (module,exports,require) **/
 n.d(t, {
-    $: () => T
+    $: () => f
 });
 var i = n(419954),
     s = n(403362),
@@ -18,9 +18,9 @@ var i = n(419954),
     x = n(540576),
     h = n(773140),
     p = n(836799),
-    f = n(985018);
-let T = (0, i.WI)(l.X.APP_SECTION, {
-    useTitle: () => f.intl.string(f.t.f2n1TP),
+    T = n(985018);
+let f = (0, i.WI)(l.X.APP_SECTION, {
+    useTitle: () => T.intl.string(T.t.f2n1TP),
     buildLayout: function() {
         let e = (0, a.Ci)("AppSection_buildLayout");
         return [e ? h.q : null, e ? null : d.yj, e ? u.S : null, r.w, e ? null : h.q, A.z, e ? null : c.g, m.$, _.w, p.$, g.a, e ? null : x.i, e ? null : o._].filter(s.Vq)

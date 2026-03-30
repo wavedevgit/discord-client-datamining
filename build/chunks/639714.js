@@ -1,12 +1,12 @@
 /** chunk id: 639714 params = (module,exports,require) **/
 n.d(t, {
-    A: () => C,
+    A: () => E,
     o: () => I
 });
 var a = n(627968),
-    i = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    i = n(503698),
+    r = n.n(i),
     s = n(505779),
     c = n(311907),
     o = n(397927),
@@ -22,32 +22,32 @@ var a = n(627968),
     v = n(985018),
     A = n(282063),
     j = n(682209),
-    E = n(862809);
+    C = n(862809);
 
-function C(e) {
+function E(e) {
     let {
         detectedGame: t,
         trackAction: n,
-        onInviteResolved: l,
+        onInviteResolved: i,
         closeModal: f
-    } = e, [_, E] = i.useState(), C = (0, c.bG)([x.A], () => _?.guild?.id != null && x.A.isMember(_?.guild?.id)), I = i.useMemo(() => t.websites?.find(e => {
+    } = e, [_, C] = l.useState(), E = (0, c.bG)([x.A], () => _?.guild?.id != null && x.A.isMember(_?.guild?.id)), I = l.useMemo(() => t.websites?.find(e => {
         let {
             category: t
         } = e;
         return t === s.V.DISCORD
     }), [t.websites]);
-    i.useEffect(() => {
+    l.useEffect(() => {
         let e = async e => {
             let t = e.split("/").pop();
             if (null != t) {
                 if (null != _ && _.code.toLowerCase() === t.toLowerCase()) return;
                 let e = await (0, m.A)(t);
-                !0 !== e.banned && (E(e.invite), null != e.invite && l?.(e.invite))
+                !0 !== e.banned && (C(e.invite), null != e.invite && i?.(e.invite))
             }
         };
         null != I && e(I.url)
-    }, [I, l, _]);
-    let N = i.useCallback(() => {
+    }, [I, i, _]);
+    let N = l.useCallback(() => {
         null != _ && (n(g.Ws.JoinOfficialServer), f(), d.h.dispatch({
             type: "INVITE_MODAL_OPEN",
             invite: _,
@@ -97,7 +97,7 @@ function C(e) {
             })]
         }), (0, a.jsx)(o.Button, {
             variant: "secondary",
-            text: C ? v.intl.string(v.t.cEnaWx) : v.intl.string(v.t.XpeFYr),
+            text: E ? v.intl.string(v.t.cEnaWx) : v.intl.string(v.t.XpeFYr),
             onClick: N,
             fullWidth: !0
         })]
@@ -109,11 +109,11 @@ function I(e) {
         trackAction: t,
         closeModal: n
     } = e, {
-        canStartAuthorization: l,
+        canStartAuthorization: i,
         hasAlreadyLinked: r,
         officialInvite: s,
         isMember: c
-    } = (0, _.c)(), m = i.useCallback(() => {
+    } = (0, _.c)(), m = l.useCallback(() => {
         null != s && (t(g.Ws.JoinOfficialServer), n(), d.h.dispatch({
             type: "INVITE_MODAL_OPEN",
             invite: s,
@@ -131,43 +131,43 @@ function I(e) {
             id: s.guild.id,
             splash: s.guild.splash
         }),
-        j = l && !r || null == A,
-        C = (0, a.jsx)("img", {
-            className: E.$f,
+        j = i && !r || null == A,
+        E = (0, a.jsx)("img", {
+            className: C.$f,
             src: x,
             alt: v.intl.formatToPlainString(v.t.xm6W9D, {
                 guildName: s.guild.name
             })
         }),
-        I = j ? E.To : E.Kt,
-        N = j ? E.yj : E.FS;
+        I = j ? C.To : C.Kt,
+        N = j ? C.yj : C.FS;
     return (0, a.jsxs)("div", {
-        className: E.uW,
+        className: C.uW,
         children: [(0, a.jsx)(o.Heading, {
-            className: E.Gf,
+            className: C.Gf,
             variant: "heading-sm/semibold",
             color: "text-strong",
             children: v.intl.string(v.t["U2N+ci"])
         }), (0, a.jsxs)("div", {
-            className: E.kL,
+            className: C.kL,
             children: [!j && null != A && (0, a.jsx)("img", {
-                className: E.ll,
+                className: C.ll,
                 src: A,
                 alt: ""
             }), (0, a.jsxs)("div", {
-                className: E.hQ,
+                className: C.hQ,
                 children: [(0, a.jsxs)("div", {
                     className: I,
-                    children: [j ? C : (0, a.jsx)("div", {
-                        className: E._C,
+                    children: [j ? E : (0, a.jsx)("div", {
+                        className: C._C,
                         children: (0, a.jsx)("div", {
-                            className: E.kW,
-                            children: C
+                            className: C.kW,
+                            children: E
                         })
                     }), (0, a.jsxs)("div", {
                         className: N,
                         children: [(0, a.jsxs)("div", {
-                            className: E.YS,
+                            className: C.YS,
                             children: [(0, a.jsx)(u.A, {
                                 guild: s.guild,
                                 size: 16
@@ -181,11 +181,11 @@ function I(e) {
                             color: "text-muted",
                             children: s.guild?.description
                         }), null != s.approximate_member_count || null != s.approximate_presence_count ? (0, a.jsxs)("div", {
-                            className: E.iR,
+                            className: C.iR,
                             children: [null != s.approximate_presence_count && (0, a.jsxs)("div", {
-                                className: E.Tb,
+                                className: C.Tb,
                                 children: [(0, a.jsx)("i", {
-                                    className: E._o
+                                    className: C._o
                                 }), (0, a.jsx)(o.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-muted",
@@ -194,9 +194,9 @@ function I(e) {
                                     })
                                 })]
                             }), null != s.approximate_member_count && (0, a.jsxs)("div", {
-                                className: E.Tb,
+                                className: C.Tb,
                                 children: [(0, a.jsx)("i", {
-                                    className: E.jk
+                                    className: C.jk
                                 }), (0, a.jsx)(o.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-muted",

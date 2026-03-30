@@ -18,20 +18,20 @@ var i = n(627968),
     x = n(847521),
     h = n(760751),
     p = n(189081),
-    f = n(954571),
-    T = n(723702),
+    T = n(954571),
+    f = n(723702),
     S = n(652215),
     E = n(650583),
     b = n(985018),
     C = n(380531),
     v = n(435115);
-let N = (0, T.isWindows)();
+let N = (0, f.isWindows)();
 
 function I(e) {
     let {
         rawGame: t,
         nowPlaying: l = !1,
-        isOverride: T,
+        isOverride: f,
         subgames: j,
         isSubgame: y = !1,
         parentGame: O
@@ -41,9 +41,9 @@ function I(e) {
     } = (0, r.cf)([g.Ay], () => ({
         canToggleDetection: null == O || g.Ay.isDetectionEnabled(O),
         isCurrentGameDetectionEnabled: g.Ay.isDetectionEnabled(R)
-    })), D = (0, r.bG)([g.Ay], () => g.Ay.getVisibleGame()), [G, M] = s.useState(!1), U = s.useMemo(() => (0, x.n1)(R) ? y ? R.gameName : b.intl.formatToPlainString(b.t.G6BGdx, {
+    })), D = (0, r.bG)([g.Ay], () => g.Ay.getVisibleGame()), [G, M] = s.useState(!1), k = s.useMemo(() => (0, x.n1)(R) ? y ? R.gameName : b.intl.formatToPlainString(b.t.G6BGdx, {
         subgameName: R.gameName
-    }) : R.name, [R, y]), [k, w] = s.useState(U ?? "???"), V = a()(v.tR, {
+    }) : R.name, [R, y]), [U, w] = s.useState(k ?? "???"), V = a()(v.tR, {
         [C.LO]: !l,
         [C.Rw]: l,
         [C.FB]: null != R && l,
@@ -59,10 +59,10 @@ function I(e) {
             return t => (0, i.jsx)(e, {
                 ...t,
                 title: b.intl.formatToPlainString(b.t.PZ4fKc, {
-                    platform: U
+                    platform: k
                 }),
                 subtitle: b.intl.formatToPlainString(b.t.ZIQbfb, {
-                    platform: U
+                    platform: k
                 }),
                 actions: [{
                     text: b.intl.string(b.t["ETE/oC"]),
@@ -85,11 +85,11 @@ function I(e) {
             className: V,
             children: [(0, i.jsxs)("div", {
                 className: a()(C.$K, v.Vd),
-                children: [R.verified && !T ? (0, i.jsxs)("div", {
+                children: [R.verified && !f ? (0, i.jsxs)("div", {
                     className: C.HS,
                     children: [(0, i.jsx)("div", {
                         className: C.mO,
-                        children: U
+                        children: k
                     }), (0, i.jsx)(d.m_, {
                         text: b.intl.string(b.t["4PJP5p"]),
                         children: (0, i.jsx)(A.A, {
@@ -108,9 +108,9 @@ function I(e) {
                     className: a()(C.mO, C.sr),
                     type: "text",
                     maxLength: 128,
-                    value: k,
+                    value: U,
                     onBlur: function() {
-                        R.name !== k && u.A.editName(R, k)
+                        R.name !== U && u.A.editName(R, U)
                     },
                     onKeyDown: function(e) {
                         e.key === E.dh.ENTER && (e.currentTarget.blur(), e.preventDefault())
@@ -131,7 +131,7 @@ function I(e) {
                         })
                     })
                 }()]
-            }), T || G ? null : (0, i.jsx)("div", {
+            }), f || G ? null : (0, i.jsx)("div", {
                 className: a()(v.tR, v.oA, v.LT, C.E3),
                 children: (0, i.jsx)(d.m_, {
                     text: b.intl.string(b.t["y0B+lo"]),
@@ -141,7 +141,7 @@ function I(e) {
                         onClick: function() {
                             if (G) return;
                             let e = null != R.id ? h.A.getDetectableGame(R.id) : null;
-                            f.default.track(S.HAw.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
+                            T.default.track(S.HAw.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
                                 application_id: e?.id,
                                 game_name: (0, x.n1)(R) ? R.gameName : R.name
                             }), M(!0), (0, c.mMO)(async () => {
@@ -229,7 +229,7 @@ function I(e) {
                         })
                     })]
                 })
-            }(), l && !T || H ? null : (0, i.jsx)(m.A, {
+            }(), l && !f || H ? null : (0, i.jsx)(m.A, {
                 className: C.LS,
                 onClick: function() {
                     u.A.deleteEntry(R), j?.forEach(e => {

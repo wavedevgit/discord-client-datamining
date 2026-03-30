@@ -25,20 +25,20 @@ function h(e) {
         onCopy: m,
         "aria-label": h,
         delay: p = A,
-        dataMeticulousIgnore: f
-    } = e, [T, S] = s.useState(0), [E, b] = s.useState(!1), [C, v] = s.useState(!1), [N] = s.useState(() => new a.Ep), [I] = s.useState(() => new a.Ep);
+        dataMeticulousIgnore: T
+    } = e, [f, S] = s.useState(0), [E, b] = s.useState(!1), [C, v] = s.useState(!1), [N] = s.useState(() => new a.Ep), [I] = s.useState(() => new a.Ep);
     if (s.useEffect(() => () => {
             N.stop(), I.stop()
         }, [N, I]), !d.p5) return (0, i.jsx)(i.Fragment, {
         children: c({})
     });
-    let j = T >= x.length - 1,
+    let j = f >= x.length - 1,
         y = j ? r.oMw.RED : r.oMw.GREEN,
         O = E ? y : r.oMw.PRIMARY;
     return (0, i.jsx)(r.STz, {
         text: (() => {
             if (!E) return t;
-            let e = (0, l.clamp)(T - 1, 0, x.length - 1),
+            let e = (0, l.clamp)(f - 1, 0, x.length - 1),
                 n = x[e] ?? x[0];
             return (0, i.jsx)(r.bfh, {
                 isShaking: j,
@@ -47,7 +47,7 @@ function h(e) {
         })(),
         delay: p,
         "aria-label": h,
-        dataMeticulousIgnore: f,
+        dataMeticulousIgnore: T,
         color: O,
         forceOpen: C,
         onAnimationRest: (e, t) => {
@@ -62,7 +62,7 @@ function h(e) {
             return c({
                 ...s,
                 onClick: () => {
-                    t?.(), m?.(), (0, d.C)(n), o.default.track(u.HAw.TEXT_COPIED), C || S(T + 1), v(!0), b(!0), N.start(_, () => v(!1)), I.start(g, () => S(0))
+                    t?.(), m?.(), (0, d.C)(n), o.default.track(u.HAw.TEXT_COPIED), C || S(f + 1), v(!0), b(!0), N.start(_, () => v(!1)), I.start(g, () => S(0))
                 },
                 onMouseEnter: () => {
                     E ? (N.stop(), v(!1)) : i?.()

@@ -19,8 +19,8 @@ var s = n(284009),
     x = n(431982),
     h = n(730588),
     p = n(164599),
-    f = n(63675),
-    T = n(546849),
+    T = n(63675),
+    f = n(546849),
     S = n(101058),
     E = n(84540),
     b = n(836602),
@@ -48,8 +48,8 @@ function M() {
     let {
         pendingAvatar: s,
         pendingNickname: M,
-        pendingBanner: U,
-        pendingBio: k,
+        pendingBanner: k,
+        pendingBio: U,
         pendingPronouns: w,
         pendingThemeColors: V,
         errors: B
@@ -59,7 +59,7 @@ function M() {
     })), F = (0, S.V7)({
         userId: e.id,
         image: s
-    }), H = (0, d.EC)(n.id), z = (0, a.bG)([v.Ay], () => null == n.id ? null : v.Ay.getMember(n.id, e.id)), Y = (0, a.bG)([C.A], () => C.A.getGuildMemberProfile(e.id, n.id)), X = j.Ay.canUsePremiumProfileCustomization(e), K = (0, u.z5)(s, z?.avatar), W = (0, u.Ac)(U, Y?.banner), Z = (0, O.l)(V, Y?.themeColors), q = Y?.bio ?? "", Q = Y?.pronouns ?? "", J = (e, t, n) => {
+    }), H = (0, d.EC)(n.id), z = (0, a.bG)([v.Ay], () => null == n.id ? null : v.Ay.getMember(n.id, e.id)), Y = (0, a.bG)([C.A], () => C.A.getGuildMemberProfile(e.id, n.id)), X = j.Ay.canUsePremiumProfileCustomization(e), K = (0, u.z5)(s, z?.avatar), W = (0, u.Ac)(k, Y?.banner), Z = (0, O.l)(V, Y?.themeColors), q = Y?.bio ?? "", Q = Y?.pronouns ?? "", J = (e, t, n) => {
         n(e ?? (null != t ? null : void 0))
     };
     return (0, i.jsxs)("div", {
@@ -71,7 +71,7 @@ function M() {
             currentNick: z?.nick,
             user: e,
             guild: n
-        }, "nick"), (0, i.jsx)(T.A, {
+        }, "nick"), (0, i.jsx)(f.A, {
             sectionTitle: D.intl.string(D.t["+T3RI/"]),
             errors: B?.pronouns,
             onPronounsChange: e => (0, E.p)({
@@ -151,7 +151,7 @@ function M() {
                 })),
                 guildId: n.id,
                 disabled: !X
-            }, "banner"), (0, i.jsx)(f.A, {
+            }, "banner"), (0, i.jsx)(T.A, {
                 user: e,
                 pendingAvatarSrc: F,
                 pendingColors: V,
@@ -178,7 +178,7 @@ function M() {
                     bio: e
                 }),
                 errors: B?.bio ?? H?.bio,
-                pendingBio: k,
+                pendingBio: U,
                 currentBio: q,
                 disabled: !X
             }, "about")]

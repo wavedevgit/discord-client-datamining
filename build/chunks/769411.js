@@ -25,8 +25,8 @@ let d = "url(#gradient)",
             }, 200);
             return () => clearTimeout(e)
         }, [t]);
-        let f = (0, a.Ay)(),
-            T = (0, l.qB)(f),
+        let T = (0, a.Ay)(),
+            f = (0, l.qB)(T),
             S = (e => {
                 switch (e) {
                     case r.BN.NITRO_GEM:
@@ -47,7 +47,7 @@ let d = "url(#gradient)",
                     default:
                         return
                 }
-            })(_, T),
+            })(_, f),
             b = g ?? ((e, t) => {
                 switch (t) {
                     case r.BN.NITRO_GEM:
@@ -58,7 +58,7 @@ let d = "url(#gradient)",
                     default:
                         return
                 }
-            })(T, _);
+            })(f, _);
         return (0, i.jsxs)("div", {
             className: o.Ap,
             children: [(0, i.jsxs)("svg", {

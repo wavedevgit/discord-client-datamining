@@ -24,12 +24,12 @@ function h(e) {
     } = e, {
         authorizedApplicationId: h,
         authorizationError: p,
-        authorizing: f
+        authorizing: T
     } = (0, a.cf)([m.A], () => ({
         authorizedApplicationId: m.A.testModeApplicationId,
         authorizationError: m.A.error,
         authorizing: m.A.isFetchingAuthorization
-    })), [T, S] = s.useState(h ?? ""), [E, b] = s.useState("8080"), [C, v] = s.useState("localhost"), N = x.test(T);
+    })), [f, S] = s.useState(h ?? ""), [E, b] = s.useState("8080"), [C, v] = s.useState("localhost"), N = x.test(f);
     async function I() {
         d.SH();
         let e = function(e, t, n) {
@@ -40,21 +40,21 @@ function h(e) {
                 case "proxy":
                     return (0, c.Ay)(n)
             }
-        }(C, E, T);
-        null != await d.q1(T, e) && t()
+        }(C, E, f);
+        null != await d.q1(f, e) && t()
     }
     s.useEffect(() => () => o.h.wait(() => d.SH()), []);
-    let j = null != h && h === T,
+    let j = null != h && h === f,
         y = j ? function() {
             d.cL(), S(""), v(null)
         } : I,
         O = s.useMemo(() => [{
-            loading: f,
-            disabled: !N || 0 === T.length || "localhost" === C && 0 === E.length,
+            loading: T,
+            disabled: !N || 0 === f.length || "localhost" === C && 0 === E.length,
             variant: j ? "critical-primary" : "active",
             text: j ? _.intl.string(_.t.d6TR3I) : _.intl.string(_.t.qwuK5I),
             onClick: y
-        }], [T.length, f, j, N, E.length, y, C]);
+        }], [f.length, T, j, N, E.length, y, C]);
     return (0, i.jsxs)(l.Modal, {
         title: _.intl.string(_.t.f8fzky),
         subtitle: _.intl.string(_.t.a6Vill),
@@ -75,20 +75,20 @@ function h(e) {
                 children: (0, i.jsx)(r.ksK, {
                     label: _.intl.string(_.t.P6TzgI),
                     required: !0,
-                    value: T,
+                    value: f,
                     maxLength: 19,
                     error: N ? null : _.intl.string(_.t.gPNgKO),
                     onChange: function(e) {
                         S(e)
                     },
-                    disabled: f
+                    disabled: T
                 })
             }), (0, i.jsx)("div", {
                 className: g.I,
                 children: (0, i.jsx)(r.l6P, {
                     selectionMode: "single",
                     label: _.intl.string(_.t["/GTqXG"]),
-                    disabled: !N || "" === T,
+                    disabled: !N || "" === f,
                     value: C,
                     options: [{
                         value: "localhost",
@@ -112,7 +112,7 @@ function h(e) {
                     value: E,
                     maxLength: 5,
                     onChange: e => b(e),
-                    disabled: f
+                    disabled: T
                 })
             })]
         })]

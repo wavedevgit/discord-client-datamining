@@ -46,12 +46,12 @@ function L(e) {
         s?.current?.scrollToTop({
             animate: !0
         })
-    }, [s]), w = y?.join("");
+    }, [s]), H = y?.join("");
     r.useEffect(() => {
         D()
-    }, [w, D]);
-    let H = (0, m.p)(),
-        F = r.useMemo(() => H(P), [H, P]);
+    }, [H, D]);
+    let w = (0, m.p)(),
+        F = r.useMemo(() => w(P), [w, P]);
     r.useEffect(() => {
         t || (0, f.z)({
             sessionId: j,

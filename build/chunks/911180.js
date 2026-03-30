@@ -24,13 +24,13 @@ function x(e) {
         suggestedColors: x,
         disabled: h,
         label: p,
-        colorPickerMiddle: f,
-        colorPickerFooter: T,
+        colorPickerMiddle: T,
+        colorPickerFooter: f,
         showEyeDropper: S
-    } = e, E = s.useRef(null), b = (0, c.rdh)(d.A.colors.BACKGROUND_BASE_LOW).hex(), C = d.A.colors.BACKGROUND_MOD_MUTED.css, v = (0, m.sN)(l), N = (0, o.Hl)(l), I = N === b ? C : N, j = v ? d.A.unsafe_rawColors.WHITE.css : d.A.unsafe_rawColors.PRIMARY_530.css, y = (0, u.A)(f), O = (0, u.A)(T), [R, L] = s.useState((0, r.A)());
+    } = e, E = s.useRef(null), b = (0, c.rdh)(d.A.colors.BACKGROUND_BASE_LOW).hex(), C = d.A.colors.BACKGROUND_MOD_MUTED.css, v = (0, m.sN)(l), N = (0, o.Hl)(l), I = N === b ? C : N, j = v ? d.A.unsafe_rawColors.WHITE.css : d.A.unsafe_rawColors.PRIMARY_530.css, y = (0, u.A)(T), O = (0, u.A)(f), [R, L] = s.useState((0, r.A)());
     return s.useEffect(() => {
-        (y !== f || O !== T) && L((0, r.A)())
-    }, [T, f, O, y]), (0, i.jsx)(c.YNO, {
+        (y !== T || O !== f) && L((0, r.A)())
+    }, [f, T, O, y]), (0, i.jsx)(c.YNO, {
         targetElementRef: E,
         positionKey: R,
         renderPopout: e => (0, i.jsx)(c.VNw, {
@@ -38,8 +38,8 @@ function x(e) {
             value: l,
             onChange: t,
             suggestedColors: x,
-            middle: f,
-            footer: T,
+            middle: T,
+            footer: f,
             showEyeDropper: S
         }),
         onRequestClose: n,

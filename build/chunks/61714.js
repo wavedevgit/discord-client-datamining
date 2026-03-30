@@ -26,8 +26,8 @@ var n = i(627968),
     I = i(277680),
     S = i(118277),
     C = i(905552),
-    N = i(22705),
-    b = i(994314),
+    b = i(22705),
+    N = i(994314),
     T = i(63995),
     O = i(69407),
     L = i(520006),
@@ -74,8 +74,8 @@ function q(e) {
     if (c === Z.f5z.ONLY_WHILE_SPEAKING && i && !y) return null;
     let {
         mute: C,
-        selfMute: N,
-        suppress: b,
+        selfMute: b,
+        suppress: N,
         deaf: T,
         selfDeaf: O
     } = g;
@@ -99,9 +99,9 @@ function q(e) {
         isOverlay: !0,
         size: u,
         priority: E,
-        mute: C || N || A,
+        mute: C || b || A,
         localMute: A,
-        serverMute: C || b,
+        serverMute: C || N,
         deaf: T || O,
         serverDeaf: T,
         userNameClassName: l()(Q.Xh, {
@@ -302,7 +302,7 @@ class $ extends s.PureComponent {
                             className: Q.$A,
                             variant: "text-sm/normal",
                             children: J.intl.string(J.t.XKYej5)
-                        }), (0, n.jsx)(b.A, {
+                        }), (0, n.jsx)(N.A, {
                             children: o?.name ?? _
                         })]
                     })]
@@ -413,7 +413,7 @@ function ee(e) {
                 displayUserMode: z.default.getDisplayUserMode(),
                 displayNameMode: z.default.getDisplayNameMode(),
                 avatarSizeMode: z.default.getAvatarSizeMode(),
-                streamApplication: a?.pid === (0, B.getPID)() ? (0, N.A)(e) : null,
+                streamApplication: a?.pid === (0, B.getPID)() ? (0, b.A)(e) : null,
                 stream: t
             }
         });

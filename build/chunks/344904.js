@@ -50,8 +50,8 @@ let h = e => {
             percentage: u,
             initialPercentage: x,
             progressCircleVariation: p = 0,
-            avatarDecorationLegacyAssetId: f,
-            avatarDecorationSkuId: T,
+            avatarDecorationLegacyAssetId: T,
+            avatarDecorationSkuId: f,
             avatarDecoAssetDescription: S,
             ellipseOpacity: E,
             customAnimationClassName: b,
@@ -84,9 +84,9 @@ let h = e => {
                                 ellipseOpacity: E
                             });
                         case 2:
-                            if (null != T) return (0, s.jsx)(h, {
-                                avatarDecorationLegacyAssetId: f,
-                                avatarDecorationSkuId: T,
+                            if (null != f) return (0, s.jsx)(h, {
+                                avatarDecorationLegacyAssetId: T,
+                                avatarDecorationSkuId: f,
                                 avatarDecoAssetDescription: S
                             });
                             return null;

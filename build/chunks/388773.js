@@ -24,12 +24,12 @@ function u(e) {
         } = n,
         h = null != g ? _.slice(0, g) : _,
         p = null != g ? _.slice(g) : [],
-        f = A?.(u, p.length) ?? (t = p.length, u ? d.intl.formatToPlainString(d.t["3SHL+d"], {
+        T = A?.(u, p.length) ?? (t = p.length, u ? d.intl.formatToPlainString(d.t["3SHL+d"], {
             count: t
         }) : d.intl.formatToPlainString(d.t["8JRFyZ"], {
             count: t
         })),
-        T = x?.();
+        f = x?.();
     return (0, i.jsxs)(l.BJc, {
         gap: 8,
         children: [h.map((e, t) => (0, i.jsxs)(s.Fragment, {
@@ -41,8 +41,8 @@ function u(e) {
             children: [(0, i.jsx)(r.A, {
                 className: c.mn
             }), (0, i.jsx)(o.f, {
-                title: f,
-                collapsedSubtitle: T,
+                title: T,
+                collapsedSubtitle: f,
                 isExpanded: u,
                 onExpandedChange: m,
                 children: (0, i.jsx)(l.BJc, {

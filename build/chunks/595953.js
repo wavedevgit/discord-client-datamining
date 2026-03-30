@@ -1,6 +1,6 @@
 /** chunk id: 595953 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => f
 });
 var i = n(627968),
     s = n(64700),
@@ -64,7 +64,7 @@ function p(e) {
     })
 }
 
-function f(e) {
+function T(e) {
     let {
         sound: t
     } = e, {
@@ -84,7 +84,7 @@ function f(e) {
     })
 }
 
-function T(e) {
+function f(e) {
     let {
         sound: t,
         isGlobal: n,
@@ -111,7 +111,7 @@ function T(e) {
                         children: e
                     })
                 }) : t.name
-            }), l ? (0, i.jsx)(f, {
+            }), l ? (0, i.jsx)(T, {
                 sound: t
             }) : (0, i.jsx)(r.HKD, {
                 size: "md",

@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(235986),
     h = n(544028),
     p = n(652215),
-    f = n(986238),
-    T = n(909453),
+    T = n(986238),
+    f = n(909453),
     S = n(8350),
     E = n(885106);
 let b = ["discord_web", "discord_marketing", "discord_developers", "discord_ios", "discord_android"],
@@ -61,10 +61,10 @@ class N extends s.Component {
         } = this.props;
         return (0, i.jsxs)(x.A, {
             direction: x.A.Direction.VERTICAL,
-            className: a()(T.oS, E.SX, S.N, T.nM),
+            className: a()(f.oS, E.SX, S.N, f.nM),
             children: [(0, i.jsx)(m.A, {
-                className: a()(T.lL, {
-                    [T.zi]: s
+                className: a()(f.lL, {
+                    [f.zi]: s
                 }),
                 onClick: s ? void 0 : this.handleRemoveBuildOverride
             }), (0, i.jsxs)(x.A, {
@@ -91,13 +91,13 @@ class N extends s.Component {
                 })]
             }), (0, i.jsxs)(x.A.Child, {
                 children: [null != l && "" !== l && (0, i.jsx)(u.Text, {
-                    className: T.AS,
+                    className: f.AS,
                     color: "text-feedback-critical",
                     variant: "text-sm/normal",
                     children: l
                 }), (0, i.jsxs)(u.Text, {
                     variant: "text-sm/normal",
-                    className: T.AS,
+                    className: f.AS,
                     children: ["This controls the build that will be served for the ", (0, i.jsx)("code", {
                         children: e
                     }), " project."]
@@ -478,7 +478,7 @@ class j extends s.Component {
             allowLoggedOut: o,
             experiments: d,
             experimentsError: c
-        } = this.state, m = f.fL.find(t => t.value === e), _ = l.map(e => ({
+        } = this.state, m = T.fL.find(t => t.value === e), _ = l.map(e => ({
             id: e,
             label: e,
             value: e
@@ -489,13 +489,13 @@ class j extends s.Component {
                 selectionMode: "single",
                 label: "Expire After",
                 value: null != m ? m.value : void 0,
-                options: f.fL,
+                options: T.fL,
                 onSelectionChange: this.handleExpirationChange
             }), this.isMobile() ? null : (0, i.jsx)(u.l6P, {
                 selectionMode: "single",
                 label: "Release Channel",
                 value: t,
-                options: f.VP,
+                options: T.VP,
                 onSelectionChange: this.handleReleaseChannelChange
             }), this.isMobile() ? (0, i.jsxs)(u.BJc, {
                 gap: 20,

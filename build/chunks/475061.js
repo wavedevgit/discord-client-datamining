@@ -1,6 +1,6 @@
 /** chunk id: 475061 params = (module,exports,require) **/
 n.d(t, {
-    p: () => T
+    p: () => f
 });
 var i = n(627968),
     s = n(64700),
@@ -19,7 +19,7 @@ var i = n(627968),
     h = n(985018);
 let p = c.isWindows() ? ["BTHENUM", "BTHHFENUM"] : [];
 
-function f(e) {
+function T(e) {
     let {
         inputAndOutputAreBluetooth: t,
         canPromptSystemServiceInstallForVoice: n
@@ -33,7 +33,7 @@ function f(e) {
         })]
     })
 }
-let T = (0, r.zZ)(u.X.VOICE_CATEGORY, {
+let f = (0, r.zZ)(u.X.VOICE_CATEGORY, {
     useTitle: () => h.intl.string(h.t.K3lovD),
     useInlineNotice: function() {
         let e = (0, d.I)("voice"),
@@ -46,7 +46,7 @@ let T = (0, r.zZ)(u.X.VOICE_CATEGORY, {
             }, [t, n]);
         return s.useMemo(() => e.canPrompt || l ? {
             type: o.lT.STRONGLY_DISCOURAGED_CUSTOM,
-            notice: () => (0, i.jsx)(f, {
+            notice: () => (0, i.jsx)(T, {
                 inputAndOutputAreBluetooth: l,
                 canPromptSystemServiceInstallForVoice: e.canPrompt
             })

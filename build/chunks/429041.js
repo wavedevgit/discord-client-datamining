@@ -25,9 +25,9 @@ function h() {
         {
             explicitContentGuilds: h,
             explicitContentFriendDm: p,
-            explicitContentNonFriendDm: f
+            explicitContentNonFriendDm: T
         } = (0, d.R)(),
-        T = e => {
+        f = e => {
             let t = Object.values(e);
             (0, r.hK)() && t.includes(s.TO.SHOW) ? l.A.showAgeVerificationGetStartedModal({
                 entryPoint: a.q1.SENSITIVE_MEDIA_FILTER_SETTINGS
@@ -58,15 +58,15 @@ function h() {
         children: [(0, i.jsx)(g.A, {
             title: A.intl.string(A.t["+uI23H"]),
             value: p,
-            onChange: e => T({
+            onChange: e => f({
                 explicitContentFriendDm: e
             }),
             options: S,
             ...C
         }), (0, i.jsx)(g.A, {
             title: A.intl.string(A.t["Yh+HX1"]),
-            value: f,
-            onChange: e => T({
+            value: T,
+            onChange: e => f({
                 explicitContentNonFriendDm: e
             }),
             options: S,
@@ -74,7 +74,7 @@ function h() {
         }), (0, i.jsx)(g.A, {
             title: A.intl.string(A.t["FP+a42"]),
             value: h,
-            onChange: e => T({
+            onChange: e => f({
                 explicitContentGuilds: e
             }),
             isDisabled: !e || n,

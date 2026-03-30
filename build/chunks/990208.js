@@ -1,15 +1,12 @@
-/** chunk id: 990208, original params: e,t,n (module,exports,require) **/
+/** chunk id: 990208 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => l
 });
-var r = n(311907),
-    i = n(775602);
+var i = n(311907),
+    s = n(775602);
 
-function a(e, t, n) {
-    if (null != e) return t || !1 === n ? e.staticImageUrl : e.animatedImageUrl
-}
-
-function o(e, t) {
-    return a(e, (0, r.bG)([i.A], () => i.A.useReducedMotion), t)
+function l(e, t, n) {
+    let l = (0, i.bG)([s.A], () => s.A.useReducedMotion);
+    return null != e ? l || !1 === t || n ? e.staticImageUrl : e.animatedImageUrl ?? e.staticImageUrl : void 0
 }

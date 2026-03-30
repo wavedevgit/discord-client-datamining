@@ -1,6 +1,6 @@
 /** chunk id: 983511 params = (module,exports,require) **/
 n.d(t, {
-    default: () => U
+    default: () => k
 });
 var i = n(627968),
     s = n(64700),
@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(543767),
     h = n(253390),
     p = n(43594),
-    f = n(735164),
-    T = n(683433),
+    T = n(735164),
+    f = n(683433),
     S = n(692440),
     E = n(178368),
     b = n(97352),
@@ -124,21 +124,21 @@ function G(e) {
         }
     }), {
         analyticsLocations: M
-    } = (0, _.Ay)(), [U] = (0, x.Kq)({
+    } = (0, _.Ay)(), [k] = (0, x.Kq)({
         subscriptionId: t.id,
         renewal: !0,
         currency: t.currency,
         paymentSourceId: t.paymentSourceId,
         analyticsLocations: M,
         analyticsLocation: m.A.GUILD_BOOST_SLOT_CANCELLATION_MODAL_CURRENT_INVOICE_PREVIEW
-    }), k = null != G ? (0, N.Om)(t, C[0]?.quantity ?? 0, G.id) : null, [w] = (0, x.Kq)({
+    }), U = null != G ? (0, N.Om)(t, C[0]?.quantity ?? 0, G.id) : null, [w] = (0, x.Kq)({
         subscriptionId: t.id,
-        items: k,
+        items: U,
         renewal: !0,
         analyticsLocations: M,
         analyticsLocation: m.A.GUILD_BOOST_SLOT_CANCELLATION_MODAL_RENEWAL_INVOICE_PREVIEW
     });
-    if (null == w || null == P || null == G || null == U) return (0, i.jsx)(d.y$y, {});
+    if (null == w || null == P || null == G || null == k) return (0, i.jsx)(d.y$y, {});
     let V = t.items.some(e => {
             let {
                 planId: t
@@ -156,7 +156,7 @@ function G(e) {
             } = e;
             return y.pW.has(t)
         }),
-        F = V || B ? w.total - U.total : -U.total,
+        F = V || B ? w.total - k.total : -k.total,
         {
             interval: H,
             intervalCount: z
@@ -181,18 +181,18 @@ function G(e) {
                 })
             }), (0, i.jsx)("div", {
                 children: Y
-            }), (0, i.jsxs)(f.Yx, {
+            }), (0, i.jsxs)(T.Yx, {
                 className: L.S,
-                children: [(0, i.jsx)(f.Xd, {
+                children: [(0, i.jsx)(T.Xd, {
                     children: R.intl.string(R.t.iqhIp4)
-                }), (0, i.jsx)(f.oR, {
+                }), (0, i.jsx)(T.oR, {
                     label: R.intl.format(R.t["Vg+LRr"], {
                         subscriptionCount: 1
                     }),
                     value: (0, I.CE)((0, I.$g)(F, t.currency), H, z),
                     className: L.Au
-                }), null != k && k.length > 0 ? (0, i.jsxs)("div", {
-                    children: [(0, i.jsx)(f.pK, {}), (0, i.jsx)(S.m0, {
+                }), null != U && U.length > 0 ? (0, i.jsxs)("div", {
+                    children: [(0, i.jsx)(T.pK, {}), (0, i.jsx)(S.m0, {
                         premiumSubscription: t,
                         renewalInvoice: w,
                         isUpdate: !0
@@ -214,7 +214,7 @@ function G(e) {
                         E(R.intl.string(R.t["5mlOCW"])), g(!1)
                     }
                 }
-            }), (0, i.jsx)(T.A, {
+            }), (0, i.jsx)(f.A, {
                 onClick: a
             })]
         })]
@@ -254,7 +254,7 @@ function M(e) {
     })
 }
 
-function U(e) {
+function k(e) {
     let t, {
         guildBoostSlot: n,
         transitionState: l,
@@ -268,7 +268,7 @@ function U(e) {
         [A, x] = s.useState(1),
         h = "control" === (0, p.D)("GuildBoostSlotCancellationModal"),
         {
-            analyticsLocations: f
+            analyticsLocations: T
         } = (0, _.Ay)(m.A.GUILD_BOOST_CANCELLATION_MODAL);
     if (null == r) t = (0, i.jsx)(d.$mQ, {
         "data-migration-pending": !0,
@@ -314,7 +314,7 @@ function U(e) {
             throw Error(`Unexpected step: ${A}`)
     }
     return (0, i.jsx)(_.f5, {
-        value: f,
+        value: T,
         children: t
     })
 }

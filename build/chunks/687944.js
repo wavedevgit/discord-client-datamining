@@ -19,8 +19,8 @@ var s = n(990078),
     x = n(473702),
     h = n(788868),
     p = n(652215),
-    f = n(985018),
-    T = n(81431),
+    T = n(985018),
+    f = n(81431),
     S = n(818724);
 let E = {
     page: p.liQ.USER_SETTINGS,
@@ -53,20 +53,20 @@ function b(e) {
         children: [(0, i.jsx)(l.Heading, {
             variant: "heading-xl/semibold",
             color: "text-strong",
-            children: f.intl.format(f.t["50bA2I"], {
+            children: T.intl.format(T.t["50bA2I"], {
                 percent: n.percentage
             })
         }), (0, i.jsx)(l.Text, {
             variant: "text-sm/medium",
             color: "text-default",
-            children: a ? f.intl.format(f.t["3ZiutU"], {
+            children: a ? T.intl.format(T.t["3ZiutU"], {
                 percent: n.percentage,
                 numMonths: n.duration,
                 regularPrice: A
-            }) : f.intl.format(f.t.N43FMx, {
+            }) : T.intl.format(T.t.N43FMx, {
                 numMonths: n.duration,
                 discountedPrice: u,
-                billingPeriod: f.intl.string(f.t.FPybU7),
+                billingPeriod: T.intl.string(T.t.FPybU7),
                 fullPrice: A
             })
         })]
@@ -82,13 +82,13 @@ function C(e) {
         children: [(0, i.jsx)(l.Heading, {
             variant: "heading-xl/semibold",
             color: "text-strong",
-            children: f.intl.format(f.t.sFO20P, {
+            children: T.intl.format(T.t.sFO20P, {
                 percent: t.discount.amount
             })
         }), (0, i.jsx)(l.Text, {
             variant: "text-sm/medium",
             color: "text-default",
-            children: f.intl.format(f.t["PH7Q+R"], {
+            children: T.intl.format(T.t["PH7Q+R"], {
                 numMonths: t.discount.user_usage_limit,
                 discountedPrice: s,
                 billingPeriod: (0, m.Ke)(t.discount.user_usage_limit_interval)
@@ -126,30 +126,30 @@ let v = function(e) {
         R = m.Ay.getPlanIdFromInvoice(_, g),
         L = (0, A.ux)(j?.expires_at);
     return (0, d.m1)(R) ? null : (0, i.jsx)("div", {
-        className: T.S6,
+        className: f.S6,
         children: (0, i.jsx)(l.hLv, {
             color: "nitro-pink",
-            className: T.YL,
+            className: f.YL,
             children: (0, i.jsxs)("div", {
-                className: T.mK,
+                className: f.mK,
                 children: [(0, i.jsxs)("div", {
-                    className: T.Gp,
+                    className: f.Gp,
                     children: [(0, i.jsx)(u.A, {
                         color: "currentcolor",
-                        className: T.fJ,
-                        "aria-label": f.intl.string(f.t.lpNrPu)
+                        className: f.fJ,
+                        "aria-label": T.intl.string(T.t.lpNrPu)
                     }), (0, i.jsx)(l.Text, {
-                        className: T.tD,
+                        className: f.tD,
                         variant: "text-sm/medium",
                         color: "text-strong",
                         children: null != j && L
                     })]
                 }), (0, i.jsx)("div", {
-                    className: T.T
+                    className: f.T
                 }), (0, i.jsxs)("div", {
-                    className: T.ly,
+                    className: f.ly,
                     children: [(0, i.jsxs)("div", {
-                        className: T.Yc,
+                        className: f.Yc,
                         children: [null != j ? (0, i.jsx)(C, {
                             discountOffer: j,
                             premiumSubscription: _
@@ -159,16 +159,16 @@ let v = function(e) {
                             invoicePreview: g,
                             isDiscountActive: null != N
                         }), (0, i.jsx)("div", {
-                            className: T.e_,
+                            className: f.e_,
                             children: (t = m.Ay.isSwitchingPlansDisabled(_), c = m.Ay.getSwitchingPlansDisabledMessage(_), m.Ay.isBaseSubscriptionCanceled(_) ? (0, i.jsx)(l.Button, {
                                 variant: "expressive",
                                 icon: l.tvc,
                                 size: "md",
-                                text: f.intl.string(f.t.zrCzVB),
+                                text: T.intl.string(T.t.zrCzVB),
                                 loading: h,
                                 onClick: () => O(x.g.CONFIRM_DISCOUNT)
                             }) : (0, i.jsxs)("div", {
-                                className: T.qK,
+                                className: f.qK,
                                 children: [(0, i.jsx)(s.m, {
                                     text: c,
                                     shouldShow: t && null != c,
@@ -176,7 +176,7 @@ let v = function(e) {
                                     children: (0, i.jsx)(l.Button, {
                                         variant: "expressive",
                                         disabled: t,
-                                        text: f.intl.string(f.t["dylp/7"]),
+                                        text: T.intl.string(T.t["dylp/7"]),
                                         size: "md",
                                         onClick: () => {
                                             (0, o.A)({
@@ -190,7 +190,7 @@ let v = function(e) {
                                 }), (0, i.jsx)(l.Button, {
                                     variant: "secondary",
                                     size: "md",
-                                    text: f.intl.string(f.t["ETE/oC"]),
+                                    text: T.intl.string(T.t["ETE/oC"]),
                                     loading: h,
                                     onClick: () => {
                                         _.status !== p.Dmq.CANCELED && O()
@@ -199,7 +199,7 @@ let v = function(e) {
                             }))
                         })]
                     }), (0, i.jsx)("img", {
-                        className: T.Hp,
+                        className: f.Hp,
                         src: S,
                         alt: "",
                         draggable: !1

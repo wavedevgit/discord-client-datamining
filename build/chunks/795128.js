@@ -18,7 +18,7 @@ function _(e) {
         currentUser: t,
         userTeamsLoading: n,
         userTeams: _
-    } = e, [g, A] = s.useState(!1), [x, h] = s.useState(!1), [p, f] = s.useState(!1), [T, S] = s.useState(!1), [E, b] = s.useState(null), C = s.useCallback(e => {
+    } = e, [g, A] = s.useState(!1), [x, h] = s.useState(!1), [p, T] = s.useState(!1), [f, S] = s.useState(!1), [E, b] = s.useState(null), C = s.useCallback(e => {
         if (e.body.code === u.t02.INVALID_PASSWORD) throw e;
         S(!0), b(e.body.message)
     }, []), v = s.useCallback((e, t) => (0, a.U_)(e, t).then(u.tEg, C), [C]), N = s.useCallback(function() {
@@ -30,7 +30,7 @@ function _(e) {
             title: e ? m.intl.string(m.t["8lQ2rR"]) : m.intl.string(m.t.jf5GGb),
             actionText: e ? m.intl.string(m.t["8lQ2rR"]) : m.intl.string(m.t.jf5GGb),
             children: e ? m.intl.string(m.t.FB4H1D) : m.intl.string(m.t.gk7h32)
-        })) : f(!0)
+        })) : T(!0)
     }, [t, v, _]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.A, {
@@ -42,11 +42,11 @@ function _(e) {
             shouldRenderOwnedTeamsModal: g,
             shouldRenderOwnedGuildsModal: x,
             shouldRenderDeleteAccountConfirmModal: p,
-            shouldRenderDisableAccountErrorModal: T,
+            shouldRenderDisableAccountErrorModal: f,
             disableAccountErrorMessage: E,
             onOwnedTeamsWarningModalClose: () => A(!1),
             onOwnedGuildsWarningModalClose: () => h(!1),
-            onDeleteAccountConfirmModalClose: () => f(!1),
+            onDeleteAccountConfirmModalClose: () => T(!1),
             onDisableAccountErrorModalClose: () => {
                 S(!1), b(null)
             }

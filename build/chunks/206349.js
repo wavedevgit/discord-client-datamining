@@ -18,15 +18,15 @@ var i = n(627968),
     x = n(295405),
     h = n(166403),
     p = n(767692),
-    f = n(196199),
-    T = n(652215),
+    T = n(196199),
+    f = n(652215),
     S = n(479310);
 
 function E() {
     let e = (0, g.j)("UserSettingsPremiumGuildSubscriptions");
     s.useEffect(() => {
         d.h.wait(() => {
-            c.hP(), c.$o(), (0, u.CD)(), (0, m.zS)(null, null, T.tF5.DISCOVERY), (0, u.tO)(!0)
+            c.hP(), c.$o(), (0, u.CD)(), (0, m.zS)(null, null, f.tF5.DISCOVERY), (0, u.tO)(!0)
         })
     }, []);
     let {
@@ -42,7 +42,7 @@ function E() {
             className: S.Tp
         }), (0, i.jsx)("div", {
             className: S.Qs,
-            children: e ? (0, i.jsx)(f.A, {
+            children: e ? (0, i.jsx)(T.A, {
                 premiumSubscription: n
             }) : (0, i.jsx)(p.A, {
                 premiumSubscription: n

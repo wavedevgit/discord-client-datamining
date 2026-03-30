@@ -22,11 +22,11 @@ function u(e) {
     } = t, g = u?.(), A = _?.(), {
         parentPanelNode: x,
         parentSidebarItemNode: h
-    } = (0, a.x)(n), p = m?.(), f = x?.useTitle?.(), T = p ?? f, S = (0, r.q)(t);
-    if (null == x || null == T) return null;
+    } = (0, a.x)(n), p = m?.(), T = x?.useTitle?.(), f = p ?? T, S = (0, r.q)(t);
+    if (null == x || null == f) return null;
     let E = null != h ? h.icon : void 0;
     return (0, i.jsx)(o.U, {
-        title: T,
+        title: f,
         description: A,
         leadingElement: null != E && (0, i.jsx)("div", {
             className: c.z,

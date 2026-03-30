@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(975571),
     h = n(326084),
     p = n(851746),
-    f = n(344904),
-    T = n(664654),
+    T = n(344904),
+    f = n(664654),
     S = n(871582),
     E = n(652215),
     b = n(985018),
@@ -101,7 +101,7 @@ let N = e => {
             isInSettings: t = !1
         } = e, l = (0, r.bG)([p.A], () => p.A.getRecipientStatus()), {
             referralSentUsers: o
-        } = (0, T.J)(), _ = s.useMemo(() => o.map(e => new g.A(e)), [o]), N = {
+        } = (0, f.J)(), _ = s.useMemo(() => o.map(e => new g.A(e)), [o]), N = {
             redeemed: 0,
             converted: 0,
             sent: l.size
@@ -109,18 +109,18 @@ let N = e => {
         l.forEach(e => {
             e === h.aK.REDEEMED && N.redeemed++, e === h.aK.CONVERTED && (N.redeemed++, N.converted++)
         });
-        let I = N.sent === T.Z,
+        let I = N.sent === f.Z,
             y = x.A.getArticleURL(E.MVz.REFERRAL_PROGRAM),
             {
                 analyticsLocations: O
             } = (0, m.Ay)(u.A.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
             R = s.useRef(null),
-            L = N.sent / T.Z * 100,
+            L = N.sent / f.Z * 100,
             P = (0, i.jsxs)("div", {
                 className: C.hE,
-                children: [(0, i.jsx)(f.Ay, {
+                children: [(0, i.jsx)(T.Ay, {
                     percentage: L,
-                    progressCircleVariation: f.BN.NITRO_LOGO,
+                    progressCircleVariation: T.BN.NITRO_LOGO,
                     iconClassName: a()({
                         [C.VC]: !t,
                         [C.ER]: t
@@ -180,7 +180,7 @@ let N = e => {
                     })]
                 })]
             }),
-            D = N.redeemed === T.Z;
+            D = N.redeemed === f.Z;
         return (0, i.jsx)(m.f5, {
             value: O,
             children: (0, i.jsx)("div", {

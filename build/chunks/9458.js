@@ -21,7 +21,7 @@ var i = n(64700),
 function p(e) {
     let {
         fractionalState: t
-    } = (0, a.A)(), n = t === g.xc.FP_ONLY, s = (0, d.$F)(), p = (0, d.Xb)(), f = s?.status === d.Wo.UPCOMING || n, T = (0, u.N)(s?.id), S = (0, r.z)(), E = (0, c.t)();
+    } = (0, a.A)(), n = t === g.xc.FP_ONLY, s = (0, d.$F)(), p = (0, d.Xb)(), T = s?.status === d.Wo.UPCOMING || n, f = (0, u.N)(s?.id), S = (0, r.z)(), E = (0, c.t)();
     return (0, i.useMemo)(() => {
         let t, i = null != E && E.days <= 30;
         return null != s ? s.status === d.Wo.UPCOMING ? t = A.intl.formatToPlainString(A.t.a1eKDi, {
@@ -30,9 +30,9 @@ function p(e) {
             id: _.TENURE_BADGE_CARD_ID,
             title: null != s ? A.intl.string(s.nameUnformattedNitro) : n ? A.intl.string(A.t.tx9Fvw) : "",
             pillText: A.intl.string(A.t["jyYgZ+"]),
-            primaryAsset: null != T ? f ? T.standard : T.ambientLarge : n ? h : null,
+            primaryAsset: null != f ? T ? f.standard : f.ambientLarge : n ? h : null,
             primaryAssetClassName: l()(x.p, {
-                [x.n]: f
+                [x.n]: T
             }),
             caption: null != p ? A.intl.formatToPlainString(A.t.Hu4jfi, {
                 date: new Date(p)
@@ -45,5 +45,5 @@ function p(e) {
                 analyticsLocations: e
             })
         }
-    }, [s, T, f, p, S, n, E, e])
+    }, [s, f, T, p, S, n, E, e])
 }

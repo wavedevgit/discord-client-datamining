@@ -71,7 +71,7 @@ let A = e => {
             })
         })
     },
-    f = e => {
+    T = e => {
         let {
             displayName: t,
             product: n
@@ -104,7 +104,7 @@ let A = e => {
                 })
         }
     },
-    T = s.memo(e => {
+    f = s.memo(e => {
         let {
             skuId: t,
             subscriptionPlanId: n,
@@ -124,7 +124,7 @@ let A = e => {
             className: a()(g.kL, r),
             children: [x ? (0, i.jsx)(p, {
                 subscriptionPlanId: n
-            }) : (0, i.jsx)(f, {
+            }) : (0, i.jsx)(T, {
                 displayName: u,
                 product: c ?? null
             }), (0, i.jsxs)("div", {
@@ -139,5 +139,5 @@ let A = e => {
             })]
         })
     });
-T.displayName = "FamilyCenterActivityPurchaseRow";
-let S = T
+f.displayName = "FamilyCenterActivityPurchaseRow";
+let S = f

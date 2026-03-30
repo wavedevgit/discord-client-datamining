@@ -1,6 +1,6 @@
 /** chunk id: 794145 params = (module,exports,require) **/
 n.d(t, {
-    K: () => T,
+    K: () => f,
     V: () => E
 });
 var i = n(421380),
@@ -19,8 +19,8 @@ var i = n(421380),
     x = n(542457),
     h = n(355097),
     p = n(652215),
-    f = n(985018);
-let T = () => (0, _.e)() ? f.intl.string(f.t.PMsfcH) : f.intl.string(f.t.RAQUSN),
+    T = n(985018);
+let f = () => (0, _.e)() ? T.intl.string(T.t.PMsfcH) : T.intl.string(T.t.RAQUSN),
     S = (e, t) => {
         r.default.track(p.HAw.GUILD_DEFAULT_DMS_UPDATED, {
             default_guilds_restricted: e,
@@ -28,12 +28,12 @@ let T = () => (0, _.e)() ? f.intl.string(f.t.PMsfcH) : f.intl.string(f.t.RAQUSN)
         })
     },
     E = (0, l.zD)(u.X.CONTENT_AND_SOCIAL_PERMISSIONS_DMS_SETTING, {
-        useTitle: T,
+        useTitle: f,
         useSubtitle: () => {
             let e = (0, g.Tx)(),
                 t = (0, g.q9)(),
                 n = (0, _.e)();
-            return e === m.YG ? n ? f.intl.string(f.t.XXGmuB) : f.intl.string(f.t.wbYDfT) : t ? f.intl.string(f.t.V0ka0Q) : n ? f.intl.string(f.t.F9WY3f) : f.intl.string(f.t.G7c3Xo)
+            return e === m.YG ? n ? T.intl.string(T.t.XXGmuB) : T.intl.string(T.t.wbYDfT) : t ? T.intl.string(T.t.V0ka0Q) : n ? T.intl.string(T.t.F9WY3f) : T.intl.string(T.t.G7c3Xo)
         },
         useValue: () => {
             let e = (0, g.Tx)(),
@@ -50,10 +50,10 @@ let T = () => (0, _.e)() ? f.intl.string(f.t.PMsfcH) : f.intl.string(f.t.RAQUSN)
             if (t === m.YG) {
                 var n;
                 n = !e, (0, A.O)({
-                    header: f.intl.string(f.t["uUr+GR"]),
-                    body: f.intl.string(f.t.hjGJBp),
-                    confirmText: f.intl.string(f.t.gm1Vej),
-                    cancelText: f.intl.string(f.t.p89ACt),
+                    header: T.intl.string(T.t["uUr+GR"]),
+                    body: T.intl.string(T.t.hjGJBp),
+                    confirmText: T.intl.string(T.t.gm1Vej),
+                    cancelText: T.intl.string(T.t.p89ACt),
                     confirmButtonColor: i.$n.Colors.BRAND,
                     onConfirm: () => {
                         c.n6.updateSetting(n), S(n, !1)

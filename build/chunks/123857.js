@@ -1,6 +1,6 @@
 /** chunk id: 123857 params = (module,exports,require) **/
 n.d(t, {
-    Ix: () => k,
+    Ix: () => U,
     J3: () => P,
     Q3: () => V,
     mx: () => B
@@ -21,8 +21,8 @@ var i = n(627968),
     x = n(793943),
     h = n(826673),
     p = n(422936),
-    f = n(234419),
-    T = n(792656),
+    T = n(234419),
+    f = n(792656),
     S = n(511484),
     E = n(811611),
     b = n(97469),
@@ -47,7 +47,7 @@ function D() {
         t = (0, S.U9)(e, O.pe.TIER_2) ? R.intl.formatToPlainString(R.t.bkQ4bH, {
             percent: e?.discount.amount
         }) : R.intl.string(R.t.mr4K7D);
-    return (0, i.jsx)(T.A, {
+    return (0, i.jsx)(f.A, {
         subscriptionTier: O.pe.TIER_2,
         defaultTextOverride: t,
         premiumModalAnalyticsLocation: {
@@ -60,7 +60,7 @@ function D() {
 
 function G() {
     let e = (0, l.bG)([_.A], () => _.A.isPreview),
-        t = (0, f.V)()?.subscription_trial?.sku_id === O.pe.TIER_2;
+        t = (0, T.V)()?.subscription_trial?.sku_id === O.pe.TIER_2;
     return !e || t ? null : (0, i.jsxs)("div", {
         className: L.gY,
         children: [(0, i.jsx)(o.Button, {
@@ -88,9 +88,9 @@ function M(e) {
     }) : t
 }
 
-function U() {
+function k() {
     let e = (0, l.bG)([_.A], () => _.A.isPreview),
-        t = (0, f.V)()?.subscription_trial?.sku_id === O.pe.TIER_2;
+        t = (0, T.V)()?.subscription_trial?.sku_id === O.pe.TIER_2;
     return e && t ? (0, i.jsxs)("div", {
         children: [(0, i.jsx)("div", {
             className: L.c7,
@@ -108,7 +108,7 @@ function U() {
         })]
     }) : null
 }
-let k = () => (0, i.jsx)("div", {
+let U = () => (0, i.jsx)("div", {
     children: (0, i.jsxs)(A.Ay, {
         type: A.v0.SETTINGS,
         children: [(0, i.jsx)(A.Ay.Basic, {
@@ -117,7 +117,7 @@ let k = () => (0, i.jsx)("div", {
             children: [(0, i.jsx)(A.Ay.Gradient, {
                 disabled: !1,
                 renderCTAButtons: () => (0, i.jsx)(G, {})
-            }), (0, i.jsx)(U, {})]
+            }), (0, i.jsx)(k, {})]
         })]
     })
 });
@@ -178,7 +178,7 @@ function B(e) {
                     disabled: !1,
                     size: t
                 })
-            }), (0, i.jsx)(U, {})]
+            }), (0, i.jsx)(k, {})]
         })
     })
 }

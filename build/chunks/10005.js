@@ -12,7 +12,7 @@ function o(e) {
     let {
         onError: t,
         onSuccess: n
-    } = e ?? {}, [o, d] = i.useState(!1), [c, u] = i.useState(!1), [m, _] = i.useState(!1), [g, A] = i.useState(!1), [x, h] = i.useState(!1), [p, f] = i.useState(!1), [T, S] = i.useState(!1), [E, b] = i.useState(!1), C = o || c || m || g || p || E, v = i.useCallback(async e => {
+    } = e ?? {}, [o, d] = i.useState(!1), [c, u] = i.useState(!1), [m, _] = i.useState(!1), [g, A] = i.useState(!1), [x, h] = i.useState(!1), [p, T] = i.useState(!1), [f, S] = i.useState(!1), [E, b] = i.useState(!1), C = o || c || m || g || p || E, v = i.useCallback(async e => {
         if (!C) {
             d(!0);
             try {
@@ -73,7 +73,7 @@ function o(e) {
             }
         }
     }, [x, t, n]), O = i.useCallback(async e => {
-        if (!T) {
+        if (!f) {
             S(!0);
             try {
                 await l.Ay.fetchTeenActivity(e), n?.()
@@ -84,7 +84,7 @@ function o(e) {
                 S(!1)
             }
         }
-    }, [T, t, n]);
+    }, [f, t, n]);
     return {
         acceptLinkRequest: v,
         declineLinkRequest: N,
@@ -94,14 +94,14 @@ function o(e) {
         getLinkCode: y,
         requestLink: i.useCallback(async (e, i) => {
             if (!p) {
-                f(!0);
+                T(!0);
                 try {
                     await l.Ay.requestLink(e, i), n?.()
                 } catch (n) {
                     let e = new s.LG(n);
                     t?.(e)
                 } finally {
-                    f(!1)
+                    T(!1)
                 }
             }
         }, [p, t, n]),
@@ -127,7 +127,7 @@ function o(e) {
         isDisconnectLoading: m,
         isCancelLoading: g,
         isGetLinkCodeLoading: x,
-        isSelectTeenUserLoading: T,
+        isSelectTeenUserLoading: f,
         isRequestingLink: p,
         isMoreLoading: E
     }

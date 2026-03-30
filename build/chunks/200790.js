@@ -26,8 +26,8 @@ function x(e) {
         forcedDivider: h = !1,
         withTutorial: p = !1
     } = e, {
-        analyticsLocations: f
-    } = (0, o.Ay)(), T = (0, m.a4)({
+        analyticsLocations: T
+    } = (0, o.Ay)(), f = (0, m.a4)({
         user: t,
         guildId: n?.id
     }), {
@@ -46,7 +46,7 @@ function x(e) {
                 size: a.$n.Sizes.SMALL,
                 onClick: () => {
                     (0, c.L)({
-                        analyticsLocations: f,
+                        analyticsLocations: T,
                         guild: n
                     })
                 },
@@ -54,7 +54,7 @@ function x(e) {
                     [A.yj]: p
                 }),
                 children: g.intl.string(g.t.BVcYCx)
-            }), (void 0 === S ? null != T : null != S) && (0, i.jsx)("div", {
+            }), (void 0 === S ? null != f : null != S) && (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: A.DT,
                 children: (0, i.jsx)(r.Button, {

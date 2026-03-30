@@ -26,8 +26,8 @@ var n = i(627968),
     I = i(408018),
     S = i(20737),
     C = i(133343),
-    N = i(692051),
-    b = i(685603),
+    b = i(692051),
+    N = i(685603),
     T = i(451909),
     O = i(926262),
     L = i(371648),
@@ -288,7 +288,7 @@ class es extends s.PureComponent {
             showNewMessagesBar: !f,
             scrollerClassName: u ? et.XG : void 0,
             showingQuarantineBanner: !1
-        }, t.id), (0, n.jsx)(N.Y.Provider, {
+        }, t.id), (0, n.jsx)(b.Y.Provider, {
             value: {
                 disableInteractions: u && o && !d,
                 disableAnimations: u && f && !d
@@ -365,13 +365,13 @@ class es extends s.PureComponent {
         let {
             dragStart: t
         } = this.props;
-        t(b.P.MOVE, e.clientX, e.clientY)
+        t(N.P.MOVE, e.clientX, e.clientY)
     };
     resizeDragStart = e => {
         let {
             dragStart: t
         } = this.props;
-        t(b.P.RESIZE_SOUTH_EAST, e.clientX, e.clientY)
+        t(N.P.RESIZE_SOUTH_EAST, e.clientX, e.clientY)
     };
     renderWidgetWrapper(e) {
         let {

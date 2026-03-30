@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(729770),
     h = n(274835),
     p = n(505112),
-    f = n(163944),
-    T = n(41197),
+    T = n(163944),
+    f = n(41197),
     S = n(28161),
     E = n(114074),
     b = n(413336),
@@ -27,7 +27,7 @@ var i = n(627968),
 let v = (0, o.t_)(c.X.DISPLAY_PANEL, {
         initialize: A.du,
         useTitle: () => C.intl.string(C.t.DVatCa),
-        buildLayout: () => [E.K, f.S, T.X, p.S, S.f, (0, b.$)(!0), h.J]
+        buildLayout: () => [E.K, T.S, f.X, p.S, S.f, (0, b.$)(!0), h.J]
     }),
     N = [...A.j0, {
         badgeType: d.Xi.STRONGLY_DISCOURAGED_CUSTOM,

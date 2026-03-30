@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(338318),
     h = n(71393),
     p = n(967198),
-    f = n(711014),
-    T = n(287809),
+    T = n(711014),
+    f = n(287809),
     S = n(203982),
     E = n(115063),
     b = n(507553),
@@ -33,13 +33,13 @@ let j = {
 };
 
 function y() {
-    let e = (0, r.bG)([p.A, f.Ay, m.A], () => {
+    let e = (0, r.bG)([p.A, T.Ay, m.A], () => {
             let e = m.A.selectedGuildId ?? p.A.getGuildId();
-            return null == e || m._.has(e) ? f.Ay.getFlattenedGuildIds().find(e => !m._.has(e)) : e
+            return null == e || m._.has(e) ? T.Ay.getFlattenedGuildIds().find(e => !m._.has(e)) : e
         }),
         t = (0, r.bG)([h.A], () => h.A.getGuild(e)),
         n = (0, r.bG)([m.A], () => m.A.showNotice()),
-        l = (0, r.bG)([T.default], () => T.default.getCurrentUser()),
+        l = (0, r.bG)([f.default], () => f.default.getCurrentUser()),
         y = b.A.useField("subsection");
     return s.useEffect(() => {
         (0, g._)(j[y])

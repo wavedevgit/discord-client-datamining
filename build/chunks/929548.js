@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(419954),
     h = n(430452),
     p = n(353835),
-    f = n(780964),
-    T = n(652215),
+    T = n(780964),
+    f = n(652215),
     S = n(731854),
     E = n(985018);
 let b = (0, _.D)(() => ({
@@ -51,7 +51,7 @@ async function N(e) {
             message: {
                 message: "User Live Dump"
             }
-        }), await (0, g.a)(T.Umv.RTC), e = E.intl.string(E.t["fKBB8+"]), t = E.intl.string(E.t.BvyxE7), (0, r.A)({
+        }), await (0, g.a)(f.Umv.RTC), e = E.intl.string(E.t["fKBB8+"]), t = E.intl.string(E.t.BvyxE7), (0, r.A)({
             title: e,
             subtitle: t
         })
@@ -99,7 +99,7 @@ async function I() {
         })
     })
 }
-let j = (0, x.E2)(f.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
+let j = (0, x.E2)(T.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
     useSearchTerms: () => [E.intl.string(E.t["726JHL"]), E.intl.string(E.t.EbwFfR), E.intl.string(E.t.nuPtYi)],
     usePredicate: function() {
         let e = (0, a.bG)([h.Ay], () => h.Ay.supports(S.O5.DEBUG_LOGGING));

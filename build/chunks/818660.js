@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(734066),
     h = n(880144),
     p = n(168943),
-    f = n(680243),
-    T = n(843401),
+    T = n(680243),
+    f = n(843401),
     S = n(430452),
     E = n(532624),
     b = n(975571),
@@ -300,7 +300,7 @@ class G extends s.PureComponent {
                                 variant: "primary"
                             })
                         })]
-                    }), (0, i.jsx)(T.A, {
+                    }), (0, i.jsx)(f.A, {
                         className: R.Qo,
                         sourcePage: "keybinds"
                     }), n.length > 0 && (0, i.jsxs)(i.Fragment, {
@@ -375,7 +375,7 @@ function M() {
     }), []);
     let e = (0, r.bG)([E.Ay], () => E.Ay.getState()),
         t = (0, r.bG)([S.Ay], () => (0, h.A)(S.Ay)),
-        n = (0, r.bG)([f.A], () => f.A.isSupported),
+        n = (0, r.bG)([T.A], () => T.A.isSupported),
         l = (0, x.sw)(),
         a = (0, x.BW)();
     return (0, i.jsx)(G, {

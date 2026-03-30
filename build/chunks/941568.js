@@ -1,11 +1,11 @@
 /** chunk id: 941568 params = (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => E
 }), n(323874), n(14289), n(35956);
 var a = n(627968),
-    i = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    i = n(503698),
+    r = n.n(i),
     s = n(621466),
     c = n(397927),
     o = n(688810),
@@ -30,13 +30,13 @@ function j(e, t) {
     })
 }
 
-function E(e) {
+function C(e) {
     let {
         variant: t,
         message: n,
-        channelId: l,
+        channelId: i,
         onCardClick: o
-    } = e, [u, m] = i.useState(!1), x = null != n.mediaUrl, h = "video" === n.mediaType, f = "main" === t, g = i.useCallback(() => m(!0), []), _ = i.useCallback(e => {
+    } = e, [u, m] = l.useState(!1), x = null != n.mediaUrl, h = "video" === n.mediaType, f = "main" === t, g = l.useCallback(() => m(!0), []), _ = l.useCallback(e => {
         if (!((0, s.vq)(e.target, HTMLAnchorElement) || (0, s.vq)(e.target, HTMLSpanElement) && (0, s.vq)(e.target.parentElement, HTMLAnchorElement))) return o(n.id)
     }, [o, n.id]);
     return (0, a.jsxs)(c.DUT, {
@@ -77,21 +77,21 @@ function E(e) {
                 variant: f ? "heading-md/bold" : "heading-sm/bold",
                 color: "text-strong",
                 className: f ? v.KX : v._N,
-                children: j(n.title, l)
+                children: j(n.title, i)
             }), n.body.length > 0 && (0, a.jsx)("div", {
                 className: r()(v.h_, f ? v.My : v.Gd, A.PT),
-                children: j(n.body, l)
+                children: j(n.body, i)
             })]
         })]
     })
 }
 
-function C(e) {
+function E(e) {
     let {
         gameId: t,
         trackAction: n
     } = e, {
-        analyticsLocations: l
+        analyticsLocations: i
     } = (0, o.Ay)(), {
         officialInvite: r,
         closeModal: s
@@ -99,34 +99,34 @@ function C(e) {
         messages: c,
         guildId: d,
         channelId: m
-    } = (0, h.A)(t), A = i.useCallback(() => {
+    } = (0, h.A)(t), A = l.useCallback(() => {
         let e = r?.guild?.id ?? d;
         null != e && (n(x.Ws.Announcements), s(), (0, f.A)({
             invite: r,
             guildId: e,
             channelId: m,
-            analyticsLocationStack: l
+            analyticsLocationStack: i
         }))
-    }, [n, s, r, d, m, l]), j = i.useCallback(e => {
+    }, [n, s, r, d, m, i]), j = l.useCallback(e => {
         let t = r?.guild?.id ?? d;
         null != t && (n(x.Ws.AnnouncementsItem), s(), (0, f.A)({
             invite: r,
             guildId: t,
             channelId: m,
             messageId: e,
-            analyticsLocationStack: l
+            analyticsLocationStack: i
         }))
-    }, [n, s, r, d, m, l]);
+    }, [n, s, r, d, m, i]);
     if (null == m || 0 === c.length) return null;
-    let C = 2 !== c.length,
-        I = C ? c[0] : null,
-        N = C ? c.slice(1) : c;
+    let E = 2 !== c.length,
+        I = E ? c[0] : null,
+        N = E ? c.slice(1) : c;
     return (0, a.jsx)(_.A, {
         title: p.intl.string(p.t.B0BV3Y),
         onClickViewAll: A,
         children: (0, a.jsxs)("div", {
             className: v.f3,
-            children: [null != I && (0, a.jsx)(E, {
+            children: [null != I && (0, a.jsx)(C, {
                 variant: "main",
                 message: I,
                 channelId: m,
@@ -134,7 +134,7 @@ function C(e) {
             }), N.length > 0 && (0, a.jsx)(u.A, {
                 gap: "sm",
                 className: v.jG,
-                children: N.map(e => (0, a.jsx)(E, {
+                children: N.map(e => (0, a.jsx)(C, {
                     variant: "small",
                     message: e,
                     channelId: m,

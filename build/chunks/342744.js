@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(253390),
     h = n(166403),
     p = n(927578),
-    f = n(985018),
-    T = n(743641);
+    T = n(985018),
+    f = n(743641);
 async function S(e, t, n, i) {
     let s = (0, p.aE)(e, t);
     await (0, u.Ey)(n), await (0, c.nV)(e, {
@@ -35,26 +35,26 @@ function E(e) {
         errorMsg: t
     } = e;
     return (0, i.jsxs)("div", {
-        className: T.rf,
+        className: f.rf,
         children: [null !== t && (0, i.jsx)("div", {
-            className: T.z3,
+            className: f.z3,
             children: (0, i.jsx)(d.wx6, {
                 type: "critical",
                 children: t
             })
         }), (0, i.jsx)("div", {
-            children: f.intl.string(f.t.DY2CXs)
+            children: T.intl.string(T.t.DY2CXs)
         })]
     })
 }
 
 function b() {
     return (0, i.jsxs)("div", {
-        className: T.rf,
+        className: f.rf,
         children: [(0, i.jsx)("div", {
-            className: T.dk
+            className: f.dk
         }), (0, i.jsx)("div", {
-            children: f.intl.string(f.t.G27uHe)
+            children: T.intl.string(T.t.G27uHe)
         })]
     })
 }
@@ -70,20 +70,20 @@ function C(e) {
     s.useEffect(() => {
         h.A.hasFetchedSubscriptions() || (0, c.hP)()
     }, []);
-    let T = (0, o.bG)([h.A], () => h.A.getPremiumTypeSubscription()),
+    let f = (0, o.bG)([h.A], () => h.A.getPremiumTypeSubscription()),
         [C, v] = s.useState(1),
         [N, I] = s.useState(!1),
         [j, y] = s.useState(null),
         O = s.useCallback(async () => {
-            if (null != T) try {
+            if (null != f) try {
                 I(!0), y(null);
-                let e = (0, x.v)(T, 1);
-                a()((0, p.bx)(e) <= (0, p.bx)(T.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await S(T, e, t, u), v(2)
+                let e = (0, x.v)(f, 1);
+                a()((0, p.bx)(e) <= (0, p.bx)(f.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await S(f, e, t, u), v(2)
             } catch (t) {
                 let e = t instanceof m.Ey ? t : new m.Ey(t, t.code);
-                y(f.intl.string(e.code === _.tG.BILLING_PAUSE_INVALID_UPDATE ? f.t.dq4vq7 : f.t["5mlOCW"])), I(!1)
+                y(T.intl.string(e.code === _.tG.BILLING_PAUSE_INVALID_UPDATE ? T.t.dq4vq7 : T.t["5mlOCW"])), I(!1)
             }
-        }, [T, t, u]);
+        }, [f, t, u]);
     return (0, i.jsx)(A.f5, {
         value: u,
         children: (0, i.jsx)(r.Modal, {
@@ -93,9 +93,9 @@ function C(e) {
             title: (() => {
                 switch (C) {
                     case 1:
-                        return f.intl.string(f.t.l52ih2);
+                        return T.intl.string(T.t.l52ih2);
                     case 2:
-                        return f.intl.string(f.t.H9QUAB);
+                        return T.intl.string(T.t.H9QUAB);
                     default:
                         return ""
                 }
@@ -105,19 +105,19 @@ function C(e) {
                     case 1:
                         return [{
                             variant: "secondary",
-                            text: f.intl.string(f.t.oEAioF),
+                            text: T.intl.string(T.t.oEAioF),
                             disabled: N,
                             onClick: l
                         }, {
                             variant: "primary",
-                            text: f.intl.string(f.t.etZP4B),
+                            text: T.intl.string(T.t.etZP4B),
                             loading: N,
                             onClick: O
                         }];
                     case 2:
                         return [{
                             variant: "primary",
-                            text: f.intl.string(f.t.BddRzS),
+                            text: T.intl.string(T.t.BddRzS),
                             onClick: l
                         }];
                     default:
@@ -125,7 +125,7 @@ function C(e) {
                 }
             })(),
             children: (() => {
-                if (null == T) return (0, i.jsx)(d.y$y, {});
+                if (null == f) return (0, i.jsx)(d.y$y, {});
                 switch (C) {
                     case 1:
                         return (0, i.jsx)(E, {

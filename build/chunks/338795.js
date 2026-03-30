@@ -26,7 +26,7 @@ let p = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
         },
         buildLayout: () => [g.Q]
     }),
-    f = (0, a.dT)(c.X.ACCOUNT_SECURITY_TAB, {
+    T = (0, a.dT)(c.X.ACCOUNT_SECURITY_TAB, {
         getTitle: () => h.intl.string(h.t.Am9YHi),
         onItemSelect: () => {
             d.default.track(x.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
@@ -35,7 +35,7 @@ let p = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
         },
         buildLayout: () => [m.P, u.o, _.s]
     }),
-    T = (0, a.t_)(c.X.ACCOUNT_PANEL, {
+    f = (0, a.t_)(c.X.ACCOUNT_PANEL, {
         useTitle: () => h.intl.string(h.t["JAIM/m"]),
         initialize: function() {
             let e = o.default.getCurrentUser();
@@ -44,10 +44,10 @@ let p = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
             }
         },
         hideInStreamerMode: !0,
-        buildLayout: () => [f, p]
+        buildLayout: () => [T, p]
     }),
     S = (0, a.i4)(c.X.ACCOUNT_SIDEBAR_ITEM, {
         useTitle: () => h.intl.string(h.t["JAIM/m"]),
         icon: i.UserIcon,
-        buildLayout: () => [T]
+        buildLayout: () => [f]
     })

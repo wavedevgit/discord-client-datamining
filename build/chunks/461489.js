@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(961350),
     h = n(71393),
     p = n(957565),
-    f = n(222735),
-    T = n(688151),
+    T = n(222735),
+    f = n(688151),
     S = n(385818);
 
 function E() {
@@ -35,7 +35,7 @@ function E() {
     }), [n, e]), r = s.useMemo(() => ({
         ...l,
         ...t
-    }), [l, t]), [d, c] = s.useState(""), u = (0, f.oC)((0, f.R3)((0, f.Fm)(a), r), d);
+    }), [l, t]), [d, c] = s.useState(""), u = (0, T.oC)((0, T.R3)((0, T.Fm)(a), r), d);
     return (0, i.jsxs)("div", {
         "data-mtctest-ignore": "true",
         children: [(0, i.jsx)(o.IWV, {
@@ -67,9 +67,9 @@ function b(e) {
         experimentId: n,
         overrideInfo: l,
         defaultOpen: _
-    } = e, [A, h] = s.useState(_), [f, E] = s.useState(!1), b = s.useCallback(() => {
+    } = e, [A, h] = s.useState(_), [T, E] = s.useState(!1), b = s.useCallback(() => {
         h(e => !e)
-    }, []), C = (0, r.bG)([x.default], () => x.default.getId()), v = (0, g.iN)(t, C), N = (0, g.Fm)(t, C), I = (0, r.yK)([m.A], () => a().sortBy(m.A.getRecentExposures(T.Vh.USER, n), e => {
+    }, []), C = (0, r.bG)([x.default], () => x.default.getId()), v = (0, g.iN)(t, C), N = (0, g.Fm)(t, C), I = (0, r.yK)([m.A], () => a().sortBy(m.A.getRecentExposures(f.Vh.USER, n), e => {
         let [t, n] = e;
         return -n
     }).map(e => {
@@ -116,7 +116,7 @@ function b(e) {
         children: y
     });
     let O = "";
-    return O = t.system === c.l5.LEGACY ? `Currently assigned to bucket ${v??T.RE.NOT_ELIGIBLE}` : null != v ? `Currently assigned to variant ${v}` : "Currently unassigned", (0, i.jsxs)("div", {
+    return O = t.system === c.l5.LEGACY ? `Currently assigned to bucket ${v??f.RE.NOT_ELIGIBLE}` : null != v ? `Currently assigned to variant ${v}` : "Currently unassigned", (0, i.jsxs)("div", {
         className: S.Os,
         children: [y, (0, i.jsx)("div", {
             children: (0, i.jsx)(u.g, {
@@ -133,7 +133,7 @@ function b(e) {
                 color: "text-subtle",
                 children: 'Warning: Server did not send any experiment config. You may need to check the "Send to Client" box in the admin UI.'
             }) : null
-        }), f ? (0, i.jsxs)("div", {
+        }), T ? (0, i.jsxs)("div", {
             children: [(0, i.jsx)(o.Text, {
                 variant: "text-lg/medium",
                 className: S.id,
@@ -179,19 +179,19 @@ function C(e) {
         overrideInfo: l
     } = e, [d, c] = s.useState(null != l), [_, g] = s.useState(!1), A = s.useCallback(() => {
         c(e => !e)
-    }, []), x = (0, r.bG)([m.A], () => m.A.getLoadedGuildExperiment(n)), p = (0, r.yK)([m.A], () => a().sortBy(m.A.getRecentExposures(T.Vh.GUILD, n), e => {
+    }, []), x = (0, r.bG)([m.A], () => m.A.getLoadedGuildExperiment(n)), p = (0, r.yK)([m.A], () => a().sortBy(m.A.getRecentExposures(f.Vh.GUILD, n), e => {
         let [t, n] = e;
         return -n
     }).map(e => {
         let [t, n] = e;
         return `${new Date(n).toLocaleString()} (${t})`
-    })), [f, E] = (0, r.yK)([h.A, m.A], () => {
+    })), [T, E] = (0, r.yK)([h.A, m.A], () => {
         let e = a().sortBy(h.A.getGuildsArray(), e => e.name.toLowerCase()),
             t = {},
             i = [];
         for (let s of e) {
             let e = m.A.getGuildExperimentDescriptor(n, s.id),
-                l = e?.bucket ?? T.RE.NOT_ELIGIBLE;
+                l = e?.bucket ?? f.RE.NOT_ELIGIBLE;
             l in t || (t[l] = 0), t[l]++, i.push(`${s.name}: ${l}`)
         }
         let s = a()(t).keys().map(Number).sort().map(e => `${t[e]} guilds in bucket ${e}`).join(", ");
@@ -238,7 +238,7 @@ function C(e) {
             }), (0, i.jsx)(o.Text, {
                 variant: "code",
                 className: S.AS,
-                children: f
+                children: T
             }), (0, i.jsx)(o.Text, {
                 variant: "text-lg/medium",
                 className: S.id,

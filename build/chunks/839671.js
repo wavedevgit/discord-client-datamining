@@ -4,9 +4,9 @@ n.d(t, {
     K: () => j
 });
 var a = n(627968),
-    i = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    i = n(503698),
+    r = n.n(i),
     s = n(505779),
     c = n(990078),
     o = n(397927),
@@ -84,12 +84,12 @@ function v(e) {
         website: t,
         trackAction: n
     } = e, {
-        action: l,
+        action: i,
         icon: r,
         title: s
-    } = p(t, g), d = i.useCallback(() => {
-        n(l)
-    }, [l, n]);
+    } = p(t, g), d = l.useCallback(() => {
+        n(i)
+    }, [i, n]);
     return (0, a.jsx)(c.m, {
         text: s,
         children: (0, a.jsx)(o.MzZ, {
@@ -108,13 +108,13 @@ let A = function(e) {
         trackAction: n
     } = e;
     if (null == t.websites) return null;
-    let i = t.websites.filter(e => {
+    let l = t.websites.filter(e => {
         let {
             category: t
         } = e;
         return f.includes(t)
     }).sort((e, t) => e.category - t.category);
-    return 0 === i.length ? null : (0, a.jsxs)("div", {
+    return 0 === l.length ? null : (0, a.jsxs)("div", {
         children: [(0, a.jsx)(o.Heading, {
             className: x.bV,
             variant: "text-xs/semibold",
@@ -122,7 +122,7 @@ let A = function(e) {
             children: m.intl.string(m.t["Oj3o1/"])
         }), (0, a.jsx)("div", {
             className: r()(x.nM, x.mX),
-            children: i.map(e => (0, a.jsx)(v, {
+            children: l.map(e => (0, a.jsx)(v, {
                 website: e,
                 trackAction: n
             }, e.url))
@@ -134,13 +134,13 @@ function j(e) {
     let {
         website: t,
         trackAction: n
-    } = e, l = (0, u.A)(), {
+    } = e, i = (0, u.A)(), {
         action: r,
         icon: s,
         title: d
-    } = p(t, _), m = i.useCallback(() => {
-        n(r), l(t.url)
-    }, [r, l, n, t.url]);
+    } = p(t, _), m = l.useCallback(() => {
+        n(r), i(t.url)
+    }, [r, i, n, t.url]);
     return (0, a.jsx)(c.m, {
         text: d,
         children: (0, a.jsx)(o.DUT, {

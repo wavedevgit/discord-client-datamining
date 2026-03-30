@@ -1,7 +1,7 @@
 /** chunk id: 576030 params = (module,exports,require) **/
 l.d(t, {
     GM: () => h,
-    mW: () => p,
+    mW: () => C,
     uq: () => d
 });
 var i = l(627968);
@@ -24,12 +24,12 @@ function d(e) {
 }
 
 function h(e) {
-    return (0, i.jsx)(A, {
+    return (0, i.jsx)(p, {
         wishlistItem: e
     })
 }
 
-function p(e) {
+function C(e) {
     let {
         application: t
     } = e, l = null != t ? t.getIconURL(c.iu.SMALL) : void 0;
@@ -42,11 +42,11 @@ function p(e) {
     })
 }
 
-function A(e) {
+function p(e) {
     let {
         wishlistItem: t
     } = e, l = (0, r.bG)([u.A], () => (0, s.$)(t) ? u.A.getApplication(t.sku.applicationId) : void 0);
-    return (0, i.jsx)(p, {
+    return (0, i.jsx)(C, {
         application: l
     })
 }

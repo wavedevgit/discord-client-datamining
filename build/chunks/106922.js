@@ -19,8 +19,8 @@ var i = n(627968),
     x = n(397927),
     h = n(73153),
     p = n(384904),
-    f = n(73825),
-    T = n(736653),
+    T = n(73825),
+    f = n(736653),
     S = n(793574),
     E = n(688810),
     b = n(86379),
@@ -37,8 +37,8 @@ var i = n(627968),
     D = n(224016),
     G = n(954571),
     M = n(975571),
-    U = n(927578),
-    k = n(526292),
+    k = n(927578),
+    U = n(526292),
     w = n(881489),
     V = n(810498),
     B = n(807098),
@@ -71,7 +71,7 @@ function ec(e) {
         isDiscountApplied: n,
         activeDiscountInfo: s,
         theme: l
-    } = e, a = t.hasActiveTrial, r = t.planIdFromItems === $.gD.PREMIUM_YEAR_TIER_2, d = n || a, c = null != t.trialEndsAt ? o()(t.trialEndsAt).diff(o()(), "d") : 0, u = $.hd[t.planIdFromItems], m = U.Ay.formatPriceString(U.Ay.getDefaultPrice(u.id), u.interval);
+    } = e, a = t.hasActiveTrial, r = t.planIdFromItems === $.gD.PREMIUM_YEAR_TIER_2, d = n || a, c = null != t.trialEndsAt ? o()(t.trialEndsAt).diff(o()(), "d") : 0, u = $.hd[t.planIdFromItems], m = k.Ay.formatPriceString(k.Ay.getDefaultPrice(u.id), u.interval);
     return d ? (0, i.jsxs)(i.Fragment, {
         children: [(a || !r) && (0, i.jsx)(Z.ir, {
             text: a ? en.intl.string(en.t.qYKftX) : en.intl.string(en.t.EyjDRE),
@@ -103,9 +103,9 @@ function ec(e) {
 }
 
 function eu() {
-    let e = (0, k.k5)(),
-        t = (0, k.nf)(),
-        n = (0, T.Ay)(),
+    let e = (0, U.k5)(),
+        t = (0, U.nf)(),
+        n = (0, f.Ay)(),
         s = (0, u.bG)([P.A], () => P.A.getPremiumTypeSubscription()),
         l = (0, u.bG)([L.default], () => L.default.getCurrentUser()),
         r = l?.isPremiumWithPremiumGroup(),
@@ -325,38 +325,38 @@ let eg = function() {
             let e = F.A.getMarketingComponentByType(c.C.BILLING_SETTINGS_NITRO_GIFT_BANNER);
             return null == e || "billingSettingsNitroGiftBanner" !== e.properties.properties.oneofKind ? null : e.properties.properties.billingSettingsNitroGiftBanner
         }),
-        T = !(d.Fr || d.v1) && null != A,
+        f = !(d.Fr || d.v1) && null != A,
         j = s.useRef(null);
     (0, z.i)();
     let y = (0, H.m)();
     s.useEffect(() => {
         h.h.wait(async () => {
-            e || await Promise.all([p.hP(), p.$o(), (0, f.zS)(null, null, et.tF5.DISCOVERY)]), _(!1)
+            e || await Promise.all([p.hP(), p.$o(), (0, T.zS)(null, null, et.tF5.DISCOVERY)]), _(!1)
         })
     }, [e]);
     let [O, R] = s.useState(!1);
     if (e) return (0, i.jsx)(N.uK, {});
     let D = a && null !== l && r,
         M = g.fetched && g.isFractionalPremiumActive,
-        U = n?.isPremiumWithPremiumGroup();
-    if (!D && !M && !o && !U) return (0, i.jsx)(I.A, {
+        k = n?.isPremiumWithPremiumGroup();
+    if (!D && !M && !o && !k) return (0, i.jsx)(I.A, {
         title: en.intl.string(en.t.dyq9TR),
         note: null
     });
-    if (!D && !M && !U || o) return (0, i.jsx)(x.y$y, {});
-    let k = !!l?.hasActiveTrial;
+    if (!D && !M && !k || o) return (0, i.jsx)(x.y$y, {});
+    let U = !!l?.hasActiveTrial;
     return (0, i.jsx)(E.f5, {
         value: t,
         children: (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)("div", {
-                children: [T && (0, i.jsx)(em, {
+                children: [f && (0, i.jsx)(em, {
                     config: A
                 }), (0, i.jsx)(eu, {}), y && (0, i.jsx)(Y.A, {
                     isInSettings: !0
-                }), !T && (0, i.jsx)(e_, {}), (0, i.jsx)(J.A, {
+                }), !f && (0, i.jsx)(e_, {}), (0, i.jsx)(J.A, {
                     hideCTAs: !0,
                     headingOverride: en.intl.string(en.t.dnVvQS),
-                    hidePill: !k,
+                    hidePill: !U,
                     selectedPlanColumnClassName: ei.JG,
                     selectedPlanTier: $.PremiumTypes.TIER_2
                 })]

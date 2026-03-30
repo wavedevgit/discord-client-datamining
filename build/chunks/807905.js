@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(87719),
     h = n(287809),
     p = n(166403),
-    f = n(473145),
-    T = n(927578),
+    T = n(473145),
+    f = n(927578),
     S = n(966275),
     E = n(311092),
     b = n(233413),
@@ -37,7 +37,7 @@ function j(e) {
         premiumSubscription: r,
         useReducedMotion: u,
         fractionalState: m
-    } = e, _ = s.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t]), g = (0, f.I5)(t), A = r?.isPaused === !0 && m === v.xc.NONE, x = N.intl.string(N.t.mOWsF1);
+    } = e, _ = s.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t]), g = (0, T.I5)(t), A = r?.isPaused === !0 && m === v.xc.NONE, x = N.intl.string(N.t.mOWsF1);
     return (0, i.jsxs)("li", {
         className: I.Hp,
         children: [(0, i.jsxs)("div", {
@@ -127,8 +127,8 @@ let R = function(e) {
         {
             appliedGuildBoostSlots: G,
             unappliedGuildBoostSlots: M,
-            numActiveGuildBoostSlots: U,
-            hasCooldownBoosts: k,
+            numActiveGuildBoostSlots: k,
+            hasCooldownBoosts: U,
             allGuildBoostsAreOnCooldown: w
         } = s.useMemo(() => {
             let e = [],
@@ -137,7 +137,7 @@ let R = function(e) {
                 i = !1,
                 s = !0;
             return g.forEach(l => {
-                !(0, f.I5)(l) && n++, l.isOnCooldown() ? i = !0 : s = !1, null != l.premiumGuildSubscription ? e.push(l) : t.push(l)
+                !(0, T.I5)(l) && n++, l.isOnCooldown() ? i = !0 : s = !1, null != l.premiumGuildSubscription ? e.push(l) : t.push(l)
             }), {
                 appliedGuildBoostSlots: e,
                 unappliedGuildBoostSlots: t,
@@ -146,9 +146,9 @@ let R = function(e) {
                 allGuildBoostsAreOnCooldown: s
             }
         }, [g]),
-        V = null != A ? T.Ay.getNumIncludedPremiumGuildSubscriptionSlots(A.planId) : 0,
+        V = null != A ? f.Ay.getNumIncludedPremiumGuildSubscriptionSlots(A.planId) : 0,
         B = Math.max(0, V - G.length),
-        F = U > V,
+        F = k > V,
         H = V === g.length,
         z = H ? B : 1,
         Y = s.useMemo(() => {
@@ -166,7 +166,7 @@ let R = function(e) {
             numUnappliedGuildBoostSlots: K
         }) : N.intl.formatToPlainString(w ? N.t["3DW6Dc"] : N.t.BPadnO, {
             numUnappliedGuildBoostSlots: K
-        }), T.Ay.isPremium(L)) {
+        }), f.Ay.isPremium(L)) {
         let e = (e, t) => (0, i.jsx)(c.DUT, {
             className: I.nw,
             tag: "span",
@@ -229,7 +229,7 @@ let R = function(e) {
                         })
                     })
                 })]
-            }), (!H || k) && (0, i.jsx)("ul", {
+            }), (!H || U) && (0, i.jsx)("ul", {
                 className: I.LU,
                 children: M.map(e => (0, i.jsx)(j, {
                     guildBoostSlot: e,

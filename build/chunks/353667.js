@@ -18,9 +18,9 @@ var i = n(627968),
     x = n(397274),
     h = n(641324),
     p = n(46373),
-    f = n(32145);
+    T = n(32145);
 
-function T(e) {
+function f(e) {
     let {
         notice: t,
         children: n
@@ -44,7 +44,7 @@ function T(e) {
             element: e
         } = t;
         return (0, i.jsx)(d.FQk, {
-            className: f.lm,
+            className: T.lm,
             children: (0, i.jsx)(e, {})
         })
     }, [t, l]);
@@ -61,8 +61,8 @@ function S(e) {
         decoration: t
     } = e, n = t.component;
     return (0, i.jsx)("div", {
-        className: a()(f.oK, {
-            [f.qf]: t.sticky
+        className: a()(T.oK, {
+            [T.qf]: t.sticky
         }),
         "data-settings-panel-sticky-decoration": t.sticky || void 0,
         children: (0, i.jsx)(n, {})
@@ -75,15 +75,15 @@ function E(e) {
         notice: n,
         children: l
     } = e, a = s.useRef(null);
-    return (0, i.jsx)(T, {
+    return (0, i.jsx)(f, {
         notice: n,
         children: (0, i.jsx)(d.GtU, {
-            className: f.XG,
+            className: T.XG,
             ref: e => {
                 x.A.setPanelScrollerRef(e)
             },
             children: (0, i.jsx)("div", {
-                className: f.nd,
+                className: T.nd,
                 ref: a,
                 children: (0, i.jsx)(d.xpW, {
                     containerRef: a,
@@ -100,14 +100,14 @@ function b(e) {
         decoration: n
     } = e;
     return (0, i.jsxs)("div", {
-        className: f.LZ,
+        className: T.LZ,
         children: [null != n && (0, i.jsx)(S, {
             decoration: n
         }), t.map((e, n) => (0, i.jsxs)(s.Fragment, {
             children: [(0, i.jsx)(h.A, {
                 node: e
             }), n !== t.length - 1 && (0, i.jsx)(p.A, {
-                className: f.yF
+                className: T.yF
             })]
         }, e.key))]
     })
@@ -138,7 +138,7 @@ function C(e) {
         panelKey: t,
         notice: l,
         children: [(0, i.jsx)(d.VQ0, {
-            className: f.$H,
+            className: T.$H,
             selectedItem: r,
             onItemSelect: e => {
                 A.A.navigate(e, {

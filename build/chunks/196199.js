@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(343557),
     h = n(807905),
     p = n(149524),
-    f = n(501486),
-    T = n(924699),
+    T = n(501486),
+    f = n(924699),
     S = n(184487),
     E = n(788868),
     b = n(515145);
@@ -36,7 +36,7 @@ function C(e) {
         className: b.GO,
         children: [(0, i.jsx)(r.kb, {
             className: b.ek
-        }), (0, i.jsx)(T.A, {}), L && (0, i.jsx)(d.A, {}), !j && (0, i.jsx)(x.A, {}), t?.isPaused && R !== E.xc.FP_SUB_PAUSED ? (0, i.jsx)(A.N, {
+        }), (0, i.jsx)(f.A, {}), L && (0, i.jsx)(d.A, {}), !j && (0, i.jsx)(x.A, {}), t?.isPaused && R !== E.xc.FP_SUB_PAUSED ? (0, i.jsx)(A.N, {
             appliedGuildBoosts: O,
             premiumSubscription: t
         }) : (0, i.jsx)(A.A, {
@@ -51,6 +51,6 @@ function C(e) {
             className: b.Q,
             hideHeading: !0,
             hideTier0: !0
-        }), (0, i.jsx)(p.A, {}), (0, i.jsx)(f.A, {})]
+        }), (0, i.jsx)(p.A, {}), (0, i.jsx)(T.A, {})]
     })
 }

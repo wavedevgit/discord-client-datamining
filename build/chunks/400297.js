@@ -23,7 +23,7 @@ let p = function(e) {
         className: t,
         guildId: n,
         boostingVariant: s
-    } = e, p = (0, a.bG)([_.A], () => _.A.getGuild(n), [n]), f = (0, m.A)(p?.id).total;
+    } = e, p = (0, a.bG)([_.A], () => _.A.getGuild(n), [n]), T = (0, m.A)(p?.id).total;
     return null == p ? (0, i.jsx)("div", {
         className: l()(t, h.bo),
         children: (0, i.jsx)("div", {
@@ -53,7 +53,7 @@ let p = function(e) {
                     variant: "text-sm/bold",
                     color: "text-muted",
                     children: x.intl.format(x.t["pob/cL"], {
-                        subscriptions: f
+                        subscriptions: T
                     })
                 }), (0, i.jsx)("div", {
                     className: h.me

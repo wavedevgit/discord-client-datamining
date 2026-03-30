@@ -50,7 +50,8 @@ function _(e) {
                     is_gift: !1,
                     sku_id: g,
                     location_stack: Array.isArray(m) ? m : [m],
-                    checkout_design: e ? o.rS.UNIFIED : o.rS.LEGACY
+                    checkout_design: e ? o.rS.UNIFIED : o.rS.LEGACY,
+                    checkout_flow: d.C.GUILD_PRODUCT_CHECKOUT
                 })
             }(0, l.ET)(), (0, s.z)()
         },

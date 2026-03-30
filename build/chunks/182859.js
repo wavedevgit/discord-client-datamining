@@ -24,8 +24,8 @@ function A(e) {
         videoPlacement: h = "sidebar",
         onDismiss: p
     } = e, {
-        analyticsLocations: f
-    } = (0, d.Ay)(), T = s.useCallback(() => {
+        analyticsLocations: T
+    } = (0, d.Ay)(), f = s.useCallback(() => {
         (0, o.mMO)(async () => {
             let {
                 default: e
@@ -35,13 +35,13 @@ function A(e) {
                 guildId: t,
                 analyticsLocation: x,
                 videoPlacement: h,
-                sourceAnalyticsLocations: f
+                sourceAnalyticsLocations: T
             })
         })
-    }, [x, f, t, h]);
+    }, [x, T, t, h]);
     return "member" === l ? (0, i.jsxs)(o.DUT, {
         className: a()(_.iR, A),
-        onClick: T,
+        onClick: f,
         "aria-label": m.intl.string(u.default["103aY+"]),
         children: [(0, i.jsx)("img", {
             alt: "",
@@ -74,7 +74,7 @@ function A(e) {
             })
         }), (0, i.jsxs)(o.DUT, {
             className: _.iT,
-            onClick: T,
+            onClick: f,
             "aria-label": m.intl.string(u.default["103aY+"]),
             children: [(0, i.jsx)("img", {
                 alt: "",

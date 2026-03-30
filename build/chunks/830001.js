@@ -19,8 +19,8 @@ var i = n(627968),
     x = n(854627),
     h = n(657331),
     p = n(961350),
-    f = n(287809),
-    T = n(780964),
+    T = n(287809),
+    f = n(780964),
     S = n(633817),
     E = n(652215),
     b = n(985018),
@@ -30,7 +30,7 @@ let v = [{
         dismissibleContent: a.M.DISPLAY_NAME_STYLES_NEW_BADGE
     }],
     N = () => {
-        let e = (0, l.bG)([f.default], () => f.default.getCurrentUser()),
+        let e = (0, l.bG)([T.default], () => T.default.getCurrentUser()),
             {
                 avatarSrc: t,
                 avatarDecorationSrc: n
@@ -67,7 +67,7 @@ let v = [{
             })]
         })
     },
-    I = (0, m.t_)(T.X.PROFILE_PANEL, {
+    I = (0, m.t_)(f.X.PROFILE_PANEL, {
         useTitle: () => b.intl.string(b.t["vi7f+q"]),
         notice: {
             stores: [g.A],
@@ -78,7 +78,7 @@ let v = [{
         }),
         buildLayout: () => [S.I]
     }),
-    j = (0, m.i4)(T.X.PROFILE_SIDEBAR_ITEM, {
+    j = (0, m.i4)(f.X.PROFILE_SIDEBAR_ITEM, {
         useTitle: () => b.intl.string(b.t["vi7f+q"]),
         icon: O,
         StronglyDiscouragedCustomComponent: N,
@@ -86,7 +86,7 @@ let v = [{
         usePredicate: () => !(0, A.X)("user_settings_sidebar"),
         buildLayout: () => [I]
     }),
-    y = (0, m.i4)(T.X.PROFILE_SIDEBAR_ITEM_WYSIWYG, {
+    y = (0, m.i4)(f.X.PROFILE_SIDEBAR_ITEM_WYSIWYG, {
         useTitle: () => b.intl.string(b.t["vi7f+q"]),
         icon: O,
         StronglyDiscouragedCustomComponent: N,
@@ -102,7 +102,7 @@ let v = [{
     });
 
 function O() {
-    let e = (0, l.bG)([f.default], () => f.default.getCurrentUser()),
+    let e = (0, l.bG)([T.default], () => T.default.getCurrentUser()),
         {
             avatarSrc: t,
             avatarDecorationSrc: n

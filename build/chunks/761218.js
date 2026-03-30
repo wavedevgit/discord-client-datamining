@@ -85,7 +85,7 @@ let I = {
                     guildId: A.Kf
                 })
             }, [M]),
-            w = r.useCallback((e, t) => {
+            H = r.useCallback((e, t) => {
                 let {
                     skuId: s,
                     applicationId: n
@@ -97,7 +97,7 @@ let I = {
                     analyticsLocations: O
                 })
             }, [M, O]),
-            H = r.useCallback(() => {
+            w = r.useCallback(() => {
                 M("dismiss"), s()
             }, [M, s]),
             F = r.useCallback(e => {
@@ -127,7 +127,7 @@ let I = {
                         children: (0, n.jsx)(i.JnF, {
                             size: "sm",
                             variant: "icon-only",
-                            onClick: H
+                            onClick: w
                         })
                     }), (0, n.jsxs)("div", {
                         className: v.xf,
@@ -161,7 +161,7 @@ let I = {
                             children: k.map((e, t) => (0, n.jsx)(f.A, {
                                 skuId: e,
                                 positionInSection: t,
-                                onClick: w
+                                onClick: H
                             }, e))
                         })
                     })]

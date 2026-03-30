@@ -1,6 +1,6 @@
 /** chunk id: 746706 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => T
 });
 var i = n(627968),
     s = n(64700),
@@ -19,12 +19,12 @@ var i = n(627968),
     h = n(896237),
     p = n(448085);
 
-function f(e) {
+function T(e) {
     let {
         user: t,
         showOverlay: n,
-        children: f
-    } = e, T = (0, r.Ay)(), {
+        children: T
+    } = e, f = (0, r.Ay)(), {
         analyticsLocations: S
     } = (0, d.Ay)(o.A.PREMIUM_UPSELL_OVERLAY);
     return (s.useEffect(() => {
@@ -35,7 +35,7 @@ function f(e) {
     }, [n, S]), n) ? (0, i.jsxs)("div", {
         className: x.ry,
         children: [(0, i.jsx)("div", {
-            children: f
+            children: T
         }), (0, i.jsxs)("div", {
             className: x.Wc,
             children: [(0, i.jsx)("img", {
@@ -52,7 +52,7 @@ function f(e) {
                         default:
                             return h
                     }
-                }(T)
+                }(f)
             }), (0, i.jsxs)("div", {
                 className: x._9,
                 children: [(0, i.jsx)(a.Text, {
@@ -73,5 +73,5 @@ function f(e) {
                 subscriptionTier: g.pe.TIER_2
             })]
         })]
-    }) : f
+    }) : T
 }

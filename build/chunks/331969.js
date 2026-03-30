@@ -19,8 +19,8 @@ var i = n(627968),
     h = n(985018),
     p = n(730040);
 
-function f() {}
-let T = [x.rD.VOICE_CHANNEL];
+function T() {}
+let f = [x.rD.VOICE_CHANNEL];
 
 function S(e) {
     e.setOptions({
@@ -89,7 +89,7 @@ function C(e) {
     let t, n, {
             transitionState: o,
             onClose: c,
-            onSelect: f
+            onSelect: T
         } = e,
         b = s.useId(),
         C = s.useRef(null),
@@ -99,7 +99,7 @@ function C(e) {
             queryResults: I
         } = (0, d.A)({
             visible: !0,
-            autocompleterResultTypes: T,
+            autocompleterResultTypes: f,
             autocompleterBeforeCreateSearchContext: S
         }),
         j = (t = "" !== v, n = (0, a.yK)([_.Ay, m.A, A.A], () => {
@@ -163,7 +163,7 @@ function C(e) {
                     focused: y === t,
                     onMouseEnter: () => O(t),
                     onClick: () => {
-                        f(n.id), c()
+                        T(n.id), c()
                     },
                     onFocus: () => O(t),
                     children: null != l ? (0, i.jsx)("div", {
@@ -201,7 +201,7 @@ function C(e) {
                             let e = I[y];
                             if (e?.type === x.rD.VOICE_CHANNEL) return e.record
                         })();
-                        null == e ? f(void 0) : f(e.id), c();
+                        null == e ? T(void 0) : T(e.id), c();
                         break
                     }
                     case "arrowup":
@@ -252,9 +252,9 @@ function v(e) {
         channel: n,
         id: n.id,
         category: s,
-        onClick: f,
-        onFocus: f,
-        onMouseEnter: f,
+        onClick: T,
+        onFocus: T,
+        onMouseEnter: T,
         focused: !1,
         children: null != l ? (0, i.jsx)("div", {
             className: p.J5,

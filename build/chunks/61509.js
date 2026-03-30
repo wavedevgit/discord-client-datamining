@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(975807),
     h = n(793574),
     p = n(688810),
-    f = n(362490),
-    T = n(587895),
+    T = n(362490),
+    f = n(587895),
     S = n(120385),
     E = n(235986),
     b = n(769015),
@@ -36,8 +36,8 @@ var i = n(627968),
     D = n(378058),
     G = n(148355),
     M = n(780964),
-    U = n(12901),
-    k = n(840065),
+    k = n(12901),
+    U = n(840065),
     w = n(202613),
     V = n(317525),
     B = n(71393),
@@ -133,7 +133,7 @@ function em(e) {
     } = e, l = (0, C.Qi)(t, n, {
         requireCurrentGuild: !1
     }), a = (0, N.z)(l), r = (0, m.bG)([B.A], () => B.A.getGuild(t)), o = l?.role_id != null && l?.attachments_count === 0 ? ei.intl.string(ei.t.H11qcT) : a, d = s.useCallback(async () => {
-        r?.features.has(ee.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE) ? await (0, y.A)(ee.BVt.GUILD_PRODUCT(t, n)) : await (0, y.A)(ee.BVt.CHANNEL(t)), (0, U.default)()
+        r?.features.has(ee.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE) ? await (0, y.A)(ee.BVt.GUILD_PRODUCT(t, n)) : await (0, y.A)(ee.BVt.CHANNEL(t)), (0, k.default)()
     }, [r, t, n]);
     return (0, i.jsxs)(i.Fragment, {
         children: [null != o && (0, i.jsx)(eu, {
@@ -483,7 +483,7 @@ class eg extends s.PureComponent {
                 children: (0, i.jsx)(g.$nd, {
                     variant: "primary",
                     text: ei.intl.string(ei.t["jcSP+g"]),
-                    onClick: () => (0, k.openUserSettings)(M.X.GIFT_PANEL)
+                    onClick: () => (0, U.openUserSettings)(M.X.GIFT_PANEL)
                 })
             })]
         }) : o ? null : (0, i.jsxs)(s.Fragment, {
@@ -788,13 +788,13 @@ function eA(e) {
         applicationStatistics: u,
         gameApplication: _,
         paymentSources: g
-    } = (0, m.cf)([H.A, Y.A, T.A], () => ({
+    } = (0, m.cf)([H.A, Y.A, f.A], () => ({
         applicationStatistics: null != o ? Y.A.getCurrentUserStatisticsForApplication(o) : null,
-        gameApplication: T.A.getApplication(o ?? "") ?? t.sku?.application,
+        gameApplication: f.A.getApplication(o ?? "") ?? t.sku?.application,
         paymentSources: H.A.paymentSources
     })), {
         hasAlreadyLinked: A
-    } = (0, f.RD)((0, L.bF)(t.sku) ? _ : void 0), x = (0, m.bG)([T.A], () => null != d ? T.A.getApplication(d) : null);
+    } = (0, T.RD)((0, L.bF)(t.sku) ? _ : void 0), x = (0, m.bG)([f.A], () => null != d ? f.A.getApplication(d) : null);
     s.useEffect(() => {
         c && null != d && (0, R.TA)(d)
     }, [d, c]);

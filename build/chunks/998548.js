@@ -2,7 +2,7 @@
 n.d(t, {
     Xj: () => S,
     aK: () => p,
-    m3: () => f
+    m3: () => T
 });
 var i = n(627968),
     s = n(64700),
@@ -45,7 +45,7 @@ function p() {
     }, [n, e, l])
 }
 
-function f() {
+function T() {
     let e = (0, u.SJ)(),
         t = (0, d.b8)(),
         n = e && !t,
@@ -72,7 +72,7 @@ function f() {
     }, [l, n, c])
 }
 
-function T() {
+function f() {
     let e = (0, c.WX)();
     s.useEffect(() => {
         (0, m.N)(x.YA.AGE_CONFIRMATION_NOTICE, x.YX.VIEWED)
@@ -109,7 +109,7 @@ function S() {
     return s.useMemo(() => {
         if (e && !t) return {
             type: g.lT.STRONGLY_DISCOURAGED_CUSTOM,
-            notice: T
+            notice: f
         }
     }, [e, t])
 }

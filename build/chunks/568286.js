@@ -23,8 +23,8 @@ let h = e => {
             listing: l,
             subscription: h,
             onClose: p
-        } = e, f = (0, m.GV)(), {
-            analyticsLocations: T
+        } = e, T = (0, m.GV)(), {
+            analyticsLocations: f
         } = (0, u.Ay)(c.A.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL), {
             cancelSubscription: S,
             error: E,
@@ -44,7 +44,7 @@ let h = e => {
                 error: i,
                 submitting: t
             }
-        })(T), C = async () => {
+        })(f), C = async () => {
             await S(h.id) && p()
         }, v = l.role_benefits.benefits.filter(e => e.ref_type === g.bN.CHANNEL), N = l.role_benefits.benefits.filter(e => e.ref_type === g.bN.INTANGIBLE), I = a()(h.currentPeriodEnd).format("MMMM Do, YYYY"), j = A.intl.formatToPlainString(A.t.KsMRP5, {
             numChannels: v.length,
@@ -53,7 +53,7 @@ let h = e => {
         });
         return (0, i.jsx)(r.Modal, {
             transitionState: t,
-            "aria-labelledby": f,
+            "aria-labelledby": T,
             actions: [{
                 text: A.intl.string(A.t.EP6EPb),
                 variant: "secondary",

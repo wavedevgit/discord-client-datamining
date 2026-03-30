@@ -23,8 +23,8 @@ let _ = e => {
         starContainerClassName: x,
         boltAssetClassName: h,
         carAssetClassName: p,
-        hammerAssetClassName: f,
-        keyAssetClassName: T,
+        hammerAssetClassName: T,
+        keyAssetClassName: f,
         starAssetClassName: S,
         animationSpeedScale: E = 1
     } = e;
@@ -104,7 +104,7 @@ let _ = e => {
                 animationSpeedScale: E,
                 children: (0, i.jsx)("img", {
                     src: c.A,
-                    className: f,
+                    className: T,
                     alt: ""
                 })
             })
@@ -137,7 +137,7 @@ let _ = e => {
                 animationSpeedScale: E,
                 children: (0, i.jsx)("img", {
                     src: u.A,
-                    className: T,
+                    className: f,
                     alt: ""
                 })
             })

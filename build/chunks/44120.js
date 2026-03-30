@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968);
 n(64700);
-var i = n(835245),
-    l = n(397927),
+var l = n(835245),
+    i = n(397927),
     r = n(73153),
     s = n(391048),
     c = n(636099),
@@ -26,14 +26,14 @@ function v(e) {
             analyticsLocations: f,
             analyticsObject: v,
             isGift: j = !1,
-            giftMessage: E,
-            giftingOrigin: C,
+            giftMessage: C,
+            giftingOrigin: E,
             giftRecipient: I,
             onClose: N,
             onComplete: b
         } = e,
         S = !1,
-        T = (0, i.A)(),
+        T = (0, l.A)(),
         k = j ? "gift-payment-modal" : "payment-modal",
         L = x.default.getCurrentUser();
     L?.verified ? (r.h.wait(() => {
@@ -49,8 +49,8 @@ function v(e) {
         },
         modalKey: k,
         isGift: j,
-        giftMessage: E,
-        giftingOrigin: C,
+        giftMessage: C,
+        giftingOrigin: E,
         giftRecipient: I,
         onClose: N,
         onCloseCallback: () => {
@@ -68,27 +68,28 @@ function v(e) {
                     is_gift: j,
                     sku_id: u,
                     location_stack: f,
-                    checkout_design: e ? o.rS.UNIFIED : o.rS.LEGACY
+                    checkout_design: e ? o.rS.UNIFIED : o.rS.LEGACY,
+                    checkout_flow: d.C.COLLECTIBLES_CHECKOUT
                 })
             }(0, s.ET)(), (0, c.z)(), N?.(S), S && (0, m.gB)()
         },
         onCloseRequest: () => {
-            null != t && p.has(t) && (0, l.OoC)(k)
+            null != t && p.has(t) && (0, i.OoC)(k)
         },
         onComplete: () => {
             S = !0, b?.()
         }
-    })) : (0, l.mMO)(async () => {
+    })) : (0, i.mMO)(async () => {
         let {
             default: e
         } = await Promise.all([n.e("12206"), n.e("90406")]).then(n.bind(n, 661925));
         return t => {
             let {
                 onClose: n,
-                ...i
+                ...l
             } = t;
             return (0, a.jsx)(e, {
-                ...i,
+                ...l,
                 onClose: () => {
                     n(), N?.(!1)
                 }
@@ -101,8 +102,8 @@ let A = e => {
         loadId: t,
         skuId: n,
         analyticsLocations: a,
-        onStepChange: i,
-        modalKey: l,
+        onStepChange: l,
+        modalKey: i,
         isGift: r = !1,
         giftMessage: s,
         giftingOrigin: c,
@@ -125,10 +126,10 @@ let A = e => {
         onClose: d,
         onComplete: h,
         flowSpecificOptions: {
-            onStepChange: i
+            onStepChange: l
         },
         openModalOptions: {
-            modalKey: l,
+            modalKey: i,
             onCloseCallback: m,
             onCloseRequest: x
         }

@@ -17,7 +17,7 @@ function d(e) {
         analyticsLocations: l,
         analyticsSource: d = n.A.USER_PROFILE_WISHLIST,
         giftRecipient: h,
-        giftingOrigin: p
+        giftingOrigin: C
     } = e;
     return (0, a.A)(), i.useCallback(() => {
         let e = r.A.getProduct(t.id),
@@ -33,7 +33,7 @@ function d(e) {
             returnRef: void 0,
             tab: void 0,
             giftRecipient: h,
-            giftingOrigin: p
+            giftingOrigin: C
         })
-    }, [l, d, h, p, t.id])
+    }, [l, d, h, C, t.id])
 }

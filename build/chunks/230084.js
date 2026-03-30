@@ -27,8 +27,8 @@ function x(e) {
         sectionTitle: x,
         changeAvatarButtonText: h,
         guildId: p,
-        className: f,
-        disabled: T = !1,
+        className: T,
+        disabled: f = !1,
         isTryItOut: S = !1,
         forcedDivider: E,
         withHighlight: b = !1
@@ -44,10 +44,10 @@ function x(e) {
         })
     }, [p, C, S]);
     return (0, i.jsx)(u.A, {
-        className: f,
+        className: T,
         title: x,
         errors: n,
-        disabled: T,
+        disabled: f,
         forcedDivider: E,
         children: (0, i.jsxs)("div", {
             className: g.NC,

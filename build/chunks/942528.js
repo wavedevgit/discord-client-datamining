@@ -3,9 +3,9 @@ n.d(t, {
     A: () => v
 });
 var a = n(627968),
-    i = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    i = n(503698),
+    r = n.n(i),
     s = n(311907),
     c = n(397927),
     o = n(734057),
@@ -22,16 +22,16 @@ let v = e => {
     let {
         entry: t,
         onClose: n,
-        onReaction: l,
+        onReaction: i,
         onRequestOpen: v,
         disableActivityProfileLinks: A,
         customCTA: j,
-        popoutClassname: E,
-        popoutPosition: C = "right"
-    } = e, I = i.useRef(null), N = (0, s.bG)([d.A, o.A], () => o.A.getChannel(d.A.getChannelId())), b = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
+        popoutClassname: C,
+        popoutPosition: E = "right"
+    } = e, I = l.useRef(null), N = (0, s.bG)([d.A, o.A], () => o.A.getChannel(d.A.getChannelId())), b = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
         nick: S,
         avatar: T
-    } = i.useMemo(() => {
+    } = l.useMemo(() => {
         let e = b?.getAvatarURL(N?.guild_id, 48, !1);
         return {
             nick: m.Ay.getName(N?.guild_id, N?.id, b),
@@ -40,22 +40,22 @@ let v = e => {
     }, [b, N]);
     return null == b ? null : (0, a.jsx)(c.YNO, {
         targetElementRef: I,
-        position: C,
+        position: E,
         renderPopout: e => {
             let {
-                closePopout: i,
+                closePopout: l,
                 updatePosition: r
             } = e;
             return (0, a.jsx)("div", {
-                className: E,
+                className: C,
                 children: (0, a.jsx)(x.Oo, {
                     entry: t,
-                    closePopout: i,
+                    closePopout: l,
                     updatePopoutPosition: r,
                     onReaction: () => {
-                        l?.(), n(), i()
+                        i?.(), n(), l()
                     },
-                    onUserPopoutClosed: () => i(),
+                    onUserPopoutClosed: () => l(),
                     disableGameProfileLinks: !0,
                     disableActivityProfileLinks: A
                 })

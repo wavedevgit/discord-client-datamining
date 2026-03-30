@@ -10,16 +10,16 @@ var n = a(627968),
     s = a(684013),
     o = a(964486),
     l = a(573435),
-    _ = a(626584),
-    c = a(87001),
+    c = a(626584),
+    _ = a(87001),
     d = a(923917),
     u = a(555528),
     f = a(309010),
     p = a(531685),
     m = a(723702),
     A = a(837921),
-    g = a(9302),
-    h = a(365971),
+    h = a(9302),
+    g = a(365971),
     b = a(777334),
     I = a(41984),
     v = a(200042),
@@ -32,7 +32,7 @@ var n = a(627968),
     L = a(652215);
 a(703552), a(921955);
 let N = !m.isPlatformEmbedded && !1,
-    P = new _.A("AppOverlay");
+    P = new c.A("AppOverlay");
 
 function w(e, t) {
     return new Promise((a, n) => {
@@ -82,28 +82,28 @@ async function D(e, t) {
     }
 }
 
-function G() {
-    s.A.setFocusedPID(g.DEV_PID, null)
+function O() {
+    s.A.setFocusedPID(h.DEV_PID, null)
 }
 
-function O() {
+function G() {
     s.A.setFocusedPID(null, null)
 }
 let k = i.memo(function(e) {
     let t, {
         withTitleBar: a,
-        windowKey: _
+        windowKey: c
     } = e;
-    t = (0, r.bG)([c.A], () => c.A.getWindow(_)), (0, o.Ay)(() => {
-        if (null != t) return N && (t.document.hasFocus() && s.A.setFocusedPID(g.DEV_PID, null), t.addEventListener("focus", G), t.addEventListener("blur", O)), () => {
-            N && (t.removeEventListener("focus", G), t.removeEventListener("blur", O))
+    t = (0, r.bG)([_.A], () => _.A.getWindow(c)), (0, o.Ay)(() => {
+        if (null != t) return N && (t.document.hasFocus() && s.A.setFocusedPID(h.DEV_PID, null), t.addEventListener("focus", O), t.addEventListener("blur", G)), () => {
+            N && (t.removeEventListener("focus", O), t.removeEventListener("blur", G))
         }
     });
     let A = function(e, t) {
             let a, n, l = (0, r.bG)([y.A], () => !m.isPlatformEmbedded || y.A.isWindowHandleInitialized()),
-                _ = (0, r.bG)([c.A], () => c.A.getWindow(e)),
+                c = (0, r.bG)([_.A], () => _.A.getWindow(e)),
                 d = (0, r.bG)([y.A], () => y.A.getFocusedPID()),
-                A = i.useMemo(() => !m.isPlatformEmbedded || null != d && d !== g.UNSET_PID, [d]),
+                A = i.useMemo(() => !m.isPlatformEmbedded || null != d && d !== h.UNSET_PID, [d]),
                 [b, v] = i.useState(!1),
                 E = i.useRef(!1),
                 T = i.useCallback(() => {
@@ -117,10 +117,10 @@ let k = i.memo(function(e) {
                     }), (0, x.Fd)()
                 }, [t]),
                 N = i.useRef(!1),
-                G = i.useRef(null),
-                O = i.useCallback(async (e, t) => {
+                O = i.useRef(null),
+                G = i.useCallback(async (e, t) => {
                     try {
-                        if (await w(e, G), N.current) return;
+                        if (await w(e, O), N.current) return;
                         (0, S.A)("cssLoaded", !0)
                     } catch (e) {
                         P.error("Timed out waiting for CSS to load", e), s.A.setOverlayCrashed(y.A.getTargetPID(), e), (0, S.A)("errorMessage", "CSS failed load");
@@ -140,35 +140,35 @@ let k = i.memo(function(e) {
                 k = i.useRef(!1);
             return i.useEffect(() => {
                 if (!E.current && ((0, S.A)("hasUseEffectFired", !0), (0, S.A)("trackedPidFocused", A), l)) {
-                    if (null == _) return void(0, S.A)("errorMessage", "No targetOverlayWindow");
+                    if (null == c) return void(0, S.A)("errorMessage", "No targetOverlayWindow");
                     if (!A) {
                         k.current || (s.A.updateOverlayState(y.A.getTargetPID(), I.AR.WAITING_FOR_PID_FOCUS, "AppOverlay - not focused"), k.current = !0);
                         return
                     }
-                    E.current = !0, (0, S.A)("reactInitializationStarted", !0), O(_, e)
+                    E.current = !0, (0, S.A)("reactInitializationStarted", !0), G(c, e)
                 }
-            }, [O, A, e, _, l]), (0, o.l0)(() => {
-                clearInterval(G.current), N.current = !0
-            }), a = (0, r.bG)([p.A], () => p.A.windowSize(null != _ ? (0, h.Q2)(_) : void 0)), n = (0, r.bG)([y.A], () => y.A.getFocusedWindowHandle()), i.useEffect(() => {
+            }, [G, A, e, c, l]), (0, o.l0)(() => {
+                clearInterval(O.current), N.current = !0
+            }), a = (0, r.bG)([p.A], () => p.A.windowSize(null != c ? (0, g.Q2)(c) : void 0)), n = (0, r.bG)([y.A], () => y.A.getFocusedWindowHandle()), i.useEffect(() => {
                 let e, t;
-                if (null != _ && b && _.innerHeight === a.height && _.innerWidth === a.width) return e = _.requestAnimationFrame(() => {
-                    e = _.requestAnimationFrame(() => {
-                        _.clearTimeout(t), s.A.overlayUIFocusedPid(d ?? g.UNSET_PID, n)
+                if (null != c && b && c.innerHeight === a.height && c.innerWidth === a.width) return e = c.requestAnimationFrame(() => {
+                    e = c.requestAnimationFrame(() => {
+                        c.clearTimeout(t), s.A.overlayUIFocusedPid(d ?? h.UNSET_PID, n)
                     })
-                }), t = _.setTimeout(() => {
-                    _.cancelAnimationFrame(e), s.A.overlayUIFocusedPid(d ?? g.UNSET_PID, n)
+                }), t = c.setTimeout(() => {
+                    c.cancelAnimationFrame(e), s.A.overlayUIFocusedPid(d ?? h.UNSET_PID, n)
                 }, 500), () => {
-                    _.cancelAnimationFrame(e), _.clearTimeout(t)
+                    c.cancelAnimationFrame(e), c.clearTimeout(t)
                 }
-            }, [b, _, d, n, a]), b
-        }(_, T.G),
+            }, [b, c, d, n, a]), b
+        }(c, T.G),
         b = (0, r.bG)([y.A], () => y.A.getFocusedPID()),
         k = (0, r.bG)([E.A], () => E.A.isInputLocked(b), [b]);
     return A ? (0, n.jsxs)(d.A, {
         themeOverride: L.NJ8.MIDNIGHT,
         appContext: L.BRT.OVERLAY,
         withTitleBar: a,
-        windowKey: _,
+        windowKey: c,
         title: "Discord Overlay",
         hideModals: k,
         children: [(0, n.jsx)(v.A, {}), (0, n.jsx)(l.Al, {})]

@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(743981),
     h = n(355097),
     p = n(985018),
-    f = n(591470);
-let T = (0, o.Ld)(),
+    T = n(591470);
+let f = (0, o.Ld)(),
     S = s.memo(function(e) {
         let {
             availablePrimaryGuilds: t,
@@ -76,15 +76,15 @@ let T = (0, o.Ld)(),
         }, [o]), P = s.useRef(null);
         return (0, _.A)(P, h._F.GUILD_TAG), (0, i.jsxs)(m.A, {
             title: p.intl.string(p.t.Pdd1nd),
-            titleId: T,
+            titleId: f,
             ref: P,
             children: [(0, i.jsx)(r.Text, {
-                className: f.VA,
+                className: T.VA,
                 variant: "text-sm/normal",
                 children: p.intl.string(p.t.mlZ6Jx)
             }), (0, i.jsx)(a.Pw, {
-                className: f.Lt,
-                optionClassName: f.S0,
+                className: T.Lt,
+                optionClassName: T.S0,
                 isSelected: O,
                 options: C,
                 select: y,

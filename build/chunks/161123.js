@@ -24,7 +24,7 @@ function x() {
         [s, x] = (0, a.yK)([c.Ay], () => [c.Ay.canShowAdminWarning, c.Ay.getVisibleGame()], []),
         h = (0, u.NP)(),
         p = null != x && x.elevated && s && !h,
-        f = !(0, m.DV)(e?.shortcut ?? []);
+        T = !(0, m.DV)(e?.shortcut ?? []);
     return (0, i.jsx)("div", {
         className: A.hc,
         children: (0, i.jsxs)("div", {
@@ -40,7 +40,7 @@ function x() {
                     color: "text-feedback-warning",
                     className: A.y7,
                     children: g.intl.string(g.t.NsowVa)
-                }), f && (0, i.jsx)(r.Text, {
+                }), T && (0, i.jsx)(r.Text, {
                     variant: "text-xs/normal",
                     color: "text-feedback-warning",
                     className: A.y7,

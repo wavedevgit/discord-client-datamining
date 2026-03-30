@@ -1,6 +1,6 @@
 /** chunk id: 27715 params = (module,exports,require) **/
 n.d(t, {
-    T: () => f
+    T: () => T
 }), n(321073);
 var i = n(627968),
     s = n(64700);
@@ -133,7 +133,7 @@ function p(e) {
     }) : (0, i.jsx)(h, {})
 }
 
-function f() {
+function T() {
     let {
         showLoadingIndicator: e,
         slayerSdkApplications: t

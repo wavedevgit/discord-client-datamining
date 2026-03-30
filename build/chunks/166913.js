@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(611924),
     h = n(909536),
     p = n(166403),
-    f = n(954571),
-    T = n(927578),
+    T = n(954571),
+    f = n(927578),
     S = n(40185),
     E = n(526292),
     b = n(234419),
@@ -36,8 +36,8 @@ var i = n(627968),
     D = n(244778),
     G = n(788868),
     M = n(652215),
-    U = n(985018),
-    k = n(831096),
+    k = n(985018),
+    U = n(831096),
     w = n(419878),
     V = n(288894);
 let B = e => {
@@ -60,8 +60,8 @@ let B = e => {
             [X, K] = s.useState(!1),
             [W, Z] = s.useState(!1),
             q = (0, o.bG)([p.A], () => p.A.getPremiumTypeSubscription()),
-            Q = null != q ? (0, T.EL)(q) : null,
-            J = null != Q ? T.Ay.getSkuIdForPlan(Q.planId) : null,
+            Q = null != q ? (0, f.EL)(q) : null,
+            J = null != Q ? f.Ay.getSkuIdForPlan(Q.planId) : null,
             $ = null !== J && J !== G.pe.TIER_2 ? G.pe.TIER_2 : null,
             ee = (0, b.V)(),
             et = ee?.subscription_trial?.sku_id,
@@ -91,28 +91,28 @@ let B = e => {
                     tier0CTAButton: (0, i.jsx)(I.A, {
                         showIcon: !1,
                         subscriptionTier: G.pe.TIER_0,
-                        className: k.Ph,
+                        className: U.Ph,
                         look: u.pR.OUTLINED,
                         color: u.XD.WHITE,
-                        buttonShineClassName: k.Qr
+                        buttonShineClassName: U.Qr
                     }),
                     tier2CTAButton: et === G.pe.TIER_0 ? (0, i.jsx)(I.A, {
                         showIcon: !1,
                         subscriptionTier: G.pe.TIER_2,
-                        className: k.Ph,
+                        className: U.Ph,
                         look: u.pR.OUTLINED,
                         color: u.XD.WHITE,
-                        buttonShineClassName: k.Qr
+                        buttonShineClassName: U.Qr
                     }) : (0, i.jsx)(I.A, {
                         color: u.XD.BRAND_INVERTED,
                         showIcon: !1,
                         subscriptionTier: G.pe.TIER_2,
-                        className: k.Ph,
+                        className: U.Ph,
                         hasActivePromotion: el,
                         textOptions: {
-                            textClassName: k.Ac
+                            textClassName: U.Ac
                         },
-                        buttonShineClassName: k.Qr
+                        buttonShineClassName: U.Qr
                     })
                 })
             })
@@ -177,7 +177,7 @@ let B = e => {
             }), (0, i.jsx)(d.L, {
                 innerRef: n,
                 onChange: e => {
-                    e && !X && (f.default.track(M.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                    e && !X && (T.default.track(M.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                         location_stack: er
                     }), K(!0))
                 },
@@ -190,7 +190,7 @@ let B = e => {
                 className: w.Kw,
                 width: 112,
                 height: 85,
-                alt: U.intl.string(U.t.X4IxWL)
+                alt: k.intl.string(k.t.X4IxWL)
             })]
         })
     }

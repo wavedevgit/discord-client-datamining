@@ -19,8 +19,8 @@ var _ = n(355097),
     x = n(755165),
     h = n(542838),
     p = n(9523),
-    f = n(416999),
-    T = n(338832),
+    T = n(416999),
+    f = n(338832),
     S = n(252373),
     E = n(522799),
     b = n(795710),
@@ -37,8 +37,8 @@ var _ = n(355097),
     D = n(747918),
     G = n(330290),
     M = n(252261),
-    U = n(106731);
-let k = (e, t, n) => (0, s.Mw)(e) ? t : n,
+    k = n(106731);
+let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
     w = e => {
         let {
             styles: t
@@ -58,7 +58,7 @@ let k = (e, t, n) => (0, s.Mw)(e) ? t : n,
             badgeAlt: {
                 title: g.intl.string(g.t["5cYMu0"]),
                 description: g.intl.string(g.t.vxk9va),
-                imageSource: k(s, A, x),
+                imageSource: U(s, A, x),
                 imageClassName: t.badgeNewImage
             },
             clientThemes: {
@@ -106,49 +106,49 @@ let k = (e, t, n) => (0, s.Mw)(e) ? t : n,
                         onTryItOutClick: t
                     })
                 },
-                imageSource: f,
+                imageSource: T,
                 imageClassName: t.perGuildProfilesImage
             },
             longerMessages: {
                 title: g.intl.string(g.t.BUScid),
                 description: g.intl.string(g.t.vN6XpQ),
-                imageSource: k(s, L, P),
+                imageSource: U(s, L, P),
                 imageClassName: t.longerMessagesImage
             },
             moreGuilds: {
                 title: g.intl.string(g.t.Bv8Pfk),
                 description: g.intl.string(g.t.JMfaTU),
-                imageSource: k(s, p, D),
+                imageSource: U(s, p, D),
                 imageClassName: t.moreGuildsImage
             },
             moreGuildsAlt: {
                 title: g.intl.string(g.t.Bv8Pfk),
                 description: g.intl.string(g.t.JMfaTU),
-                imageSource: k(s, T, S),
+                imageSource: U(s, f, S),
                 imageClassName: t.moreGuildsAltImage
             },
             soundboard: {
                 title: g.intl.string(g.t["lGcW+c"]),
                 description: g.intl.string(g.t["/fDyO+"]),
-                imageSource: k(s, E, b),
+                imageSource: U(s, E, b),
                 imageClassName: t.soundboardImage
             },
             stickers: {
                 title: g.intl.string(g.t["1c+xwT"]),
                 description: g.intl.string(g.t.hJG8ZN),
-                imageSource: k(s, C, G),
+                imageSource: U(s, C, G),
                 imageClassName: t.stickersImage
             },
             stickersBurst: {
                 title: g.intl.string(g.t.tzdIwI),
                 description: g.intl.string(g.t.hJG8ZN),
-                imageSource: k(s, C, G),
+                imageSource: U(s, C, G),
                 imageClassName: t.stickersImage
             },
             stickersPremiumPerk: {
                 title: g.intl.string(g.t.tzdIwI),
                 description: g.intl.string(g.t.hJG8ZN),
-                imageSource: k(s, C, G),
+                imageSource: U(s, C, G),
                 imageClassName: t.stickersImage
             },
             streaming: {
@@ -160,7 +160,7 @@ let k = (e, t, n) => (0, s.Mw)(e) ? t : n,
             superReactions: {
                 title: g.intl.string(g.t["uZt5q/"]),
                 description: g.intl.string(g.t.ZK3ZoX),
-                imageSource: k(s, v, N),
+                imageSource: U(s, v, N),
                 imageClassName: t.superReactionsImage
             },
             upload: {
@@ -170,13 +170,13 @@ let k = (e, t, n) => (0, s.Mw)(e) ? t : n,
                 description: g.intl.formatToPlainString(g.t["HI+cfm"], {
                     premiumMaxSize: B
                 }),
-                imageSource: U,
+                imageSource: k,
                 imageClassName: t.uploadImage
             },
             videoBackground: {
                 title: g.intl.string(g.t.NaGpTf),
                 description: g.intl.string(g.t["A8O/Qw"]),
-                imageSource: k(s, I, j),
+                imageSource: U(s, I, j),
                 imageClassName: t.videoBackgroundImage
             }
         }

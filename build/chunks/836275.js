@@ -1,349 +1,339 @@
-/** chunk id: 836275, original params: e,t,n (module,exports,require) **/
-"use strict";
+/** chunk id: 836275 params = (module,exports,require) **/
 n.d(t, {
-    A: () => O
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    a = n(503698),
-    o = n.n(a),
-    s = n(582754),
-    l = n(397927),
-    c = n(736653),
-    u = n(652215),
-    d = n(788868),
-    f = n(985018),
-    p = n(428055);
-let _ = 1048576,
-    h = [{
-        getPerkHeading: () => f.intl.string(f.t.tIiwuj),
-        getPerkPreviewLightTheme: () => n(604203),
-        getPerkPreviewDarkTheme: () => n(878515),
-        getTier0Value: () => d.TG[u.TVA.NONE].limits.emoji,
-        getTier1Value: () => d.TG[u.TVA.TIER_1].limits.emoji,
-        getTier2Value: () => d.TG[u.TVA.TIER_2].limits.emoji,
-        getTier3Value: () => d.TG[u.TVA.TIER_3].limits.emoji
-    }, {
-        getPerkHeading: () => f.intl.string(f.t["3iccet"]),
-        getPerkPreviewLightTheme: () => n(105732),
-        getPerkPreviewDarkTheme: () => n(857020),
-        getTier0Value: () => d.TG[u.TVA.NONE].limits.stickers,
-        getTier1Value: () => d.TG[u.TVA.TIER_1].limits.stickers,
-        getTier2Value: () => d.TG[u.TVA.TIER_2].limits.stickers,
-        getTier3Value: () => d.TG[u.TVA.TIER_3].limits.stickers
-    }, {
-        getPerkHeading: () => f.intl.string(f.t["+smCv9"]),
-        getPerkPreviewLightTheme: () => n(597890),
-        getPerkPreviewDarkTheme: () => n(297642),
-        getTier0Value: () => d.TG[u.TVA.NONE].limits.soundboardSounds,
-        getTier1Value: () => d.TG[u.TVA.TIER_1].limits.soundboardSounds,
-        getTier2Value: () => d.TG[u.TVA.TIER_2].limits.soundboardSounds,
-        getTier3Value: () => d.TG[u.TVA.TIER_3].limits.soundboardSounds
-    }, {
-        getPerkHeading: () => f.intl.string(f.t.SMYauD),
-        getPerkPreviewLightTheme: () => n(323091),
-        getPerkPreviewDarkTheme: () => n(261835),
-        getTier0Value: () => f.intl.formatToPlainString(f.t.zZ6Rdi, {
-            resolution: d.TG[u.TVA.NONE].limits.screenShareQualityResolution,
-            framerate: d.TG[u.TVA.NONE].limits.screenShareQualityFramerate
-        }),
-        getTier1Value: () => f.intl.formatToPlainString(f.t.zZ6Rdi, {
-            resolution: d.TG[u.TVA.TIER_1].limits.screenShareQualityResolution,
-            framerate: d.TG[u.TVA.TIER_1].limits.screenShareQualityFramerate
-        }),
-        getTier2Value: () => f.intl.formatToPlainString(f.t.zZ6Rdi, {
-            resolution: d.TG[u.TVA.TIER_2].limits.screenShareQualityResolution,
-            framerate: d.TG[u.TVA.TIER_2].limits.screenShareQualityFramerate
-        }),
-        getTier3Value: () => f.intl.formatToPlainString(f.t.zZ6Rdi, {
-            resolution: d.TG[u.TVA.TIER_3].limits.screenShareQualityResolution,
-            framerate: d.TG[u.TVA.TIER_3].limits.screenShareQualityFramerate
-        })
-    }, {
-        getPerkHeading: () => f.intl.string(f.t["/79IDj"]),
-        getPerkPreviewLightTheme: () => n(913997),
-        getPerkPreviewDarkTheme: () => n(95781),
-        getTier0Value: () => f.intl.formatToPlainString(f.t.w1gmLt, {
-            bitrate: d.TG[u.TVA.NONE].limits.bitrate / 1e3
-        }),
-        getTier1Value: () => f.intl.formatToPlainString(f.t.w1gmLt, {
-            bitrate: d.TG[u.TVA.TIER_1].limits.bitrate / 1e3
-        }),
-        getTier2Value: () => f.intl.formatToPlainString(f.t.w1gmLt, {
-            bitrate: d.TG[u.TVA.TIER_2].limits.bitrate / 1e3
-        }),
-        getTier3Value: () => f.intl.formatToPlainString(f.t.w1gmLt, {
-            bitrate: d.TG[u.TVA.TIER_3].limits.bitrate / 1e3
-        })
-    }, {
-        getPerkHeading: () => f.intl.string(f.t.R1U2xC),
-        getPerkPreviewLightTheme: () => n(389833),
-        getPerkPreviewDarkTheme: () => n(754561),
-        getTier0Value: () => f.intl.formatToPlainString(f.t.pIn7Af, {
-            size: d.TG[u.TVA.NONE].limits.fileSize / _
-        }),
-        getTier1Value: () => f.intl.formatToPlainString(f.t.pIn7Af, {
-            size: d.TG[u.TVA.TIER_1].limits.fileSize / _
-        }),
-        getTier2Value: () => f.intl.formatToPlainString(f.t.pIn7Af, {
-            size: d.TG[u.TVA.TIER_2].limits.fileSize / _
-        }),
-        getTier3Value: () => f.intl.formatToPlainString(f.t.pIn7Af, {
-            size: d.TG[u.TVA.TIER_3].limits.fileSize / _
-        })
-    }, {
-        getPerkHeading: () => f.intl.string(f.t.f6vfso),
-        getPerkPreviewLightTheme: () => n(735669),
-        getPerkPreviewDarkTheme: () => n(283517),
-        getTier0Value: () => d.TG[u.TVA.NONE].limits.stageVideoUsers,
-        getTier1Value: () => d.TG[u.TVA.TIER_1].limits.stageVideoUsers,
-        getTier2Value: () => d.TG[u.TVA.TIER_2].limits.stageVideoUsers,
-        getTier3Value: () => d.TG[u.TVA.TIER_3].limits.stageVideoUsers
-    }, {
-        getPerkHeading: () => f.intl.string(f.t.qDqUME),
-        getPerkPreviewLightTheme: () => n(970770),
-        getPerkPreviewDarkTheme: () => n(416378),
-        getTier0Value: () => !1,
-        getTier1Value: () => !0,
-        getTier2Value: () => !0,
-        getTier3Value: () => !0
-    }, {
-        getPerkHeading: () => f.intl.string(f.t.uwqgbu),
-        getPerkPreviewLightTheme: () => n(243580),
-        getPerkPreviewDarkTheme: () => n(975940),
-        getTier0Value: () => !1,
-        getTier1Value: () => !0,
-        getTier2Value: () => !0,
-        getTier3Value: () => !0
-    }, {
-        getPerkHeading: () => f.intl.string(f.t.zxsDxc),
-        getPerkPreviewLightTheme: () => n(435748),
-        getPerkPreviewDarkTheme: () => n(978380),
-        getTier0Value: () => !1,
-        getTier1Value: () => !1,
-        getTier2Value: () => f.intl.string(f.t["2TNS3n"]),
-        getTier3Value: () => f.intl.string(f.t["l+S46U"])
-    }, {
-        getPerkHeading: () => f.intl.string(f.t["bHa+Ee"]),
-        getPerkPreviewLightTheme: () => n(329312),
-        getPerkPreviewDarkTheme: () => n(800120),
-        getTier0Value: () => !1,
-        getTier1Value: () => !1,
-        getTier2Value: () => !0,
-        getTier3Value: () => !0
-    }, {
-        getPerkHeading: () => f.intl.string(f.t.QV6MZQ),
-        getPerkPreviewLightTheme: () => n(463384),
-        getPerkPreviewDarkTheme: () => n(258963),
-        getTier0Value: () => !1,
-        getTier1Value: () => !1,
-        getTier2Value: () => !1,
-        getTier3Value: () => !0
-    }];
+    A: () => T
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(503698),
+    a = n.n(l),
+    r = n(582754),
+    o = n(397927),
+    d = n(736653),
+    c = n(652215),
+    u = n(788868),
+    m = n(985018),
+    _ = n(45812);
+let g = [{
+    getPerkHeading: () => m.intl.string(m.t.tIiwuj),
+    getPerkPreviewLightTheme: () => n(604203),
+    getPerkPreviewDarkTheme: () => n(878515),
+    getTier0Value: () => u.TG[c.TVA.NONE].limits.emoji,
+    getTier1Value: () => u.TG[c.TVA.TIER_1].limits.emoji,
+    getTier2Value: () => u.TG[c.TVA.TIER_2].limits.emoji,
+    getTier3Value: () => u.TG[c.TVA.TIER_3].limits.emoji
+}, {
+    getPerkHeading: () => m.intl.string(m.t["3iccet"]),
+    getPerkPreviewLightTheme: () => n(105732),
+    getPerkPreviewDarkTheme: () => n(857020),
+    getTier0Value: () => u.TG[c.TVA.NONE].limits.stickers,
+    getTier1Value: () => u.TG[c.TVA.TIER_1].limits.stickers,
+    getTier2Value: () => u.TG[c.TVA.TIER_2].limits.stickers,
+    getTier3Value: () => u.TG[c.TVA.TIER_3].limits.stickers
+}, {
+    getPerkHeading: () => m.intl.string(m.t["+smCv9"]),
+    getPerkPreviewLightTheme: () => n(597890),
+    getPerkPreviewDarkTheme: () => n(297642),
+    getTier0Value: () => u.TG[c.TVA.NONE].limits.soundboardSounds,
+    getTier1Value: () => u.TG[c.TVA.TIER_1].limits.soundboardSounds,
+    getTier2Value: () => u.TG[c.TVA.TIER_2].limits.soundboardSounds,
+    getTier3Value: () => u.TG[c.TVA.TIER_3].limits.soundboardSounds
+}, {
+    getPerkHeading: () => m.intl.string(m.t.SMYauD),
+    getPerkPreviewLightTheme: () => n(323091),
+    getPerkPreviewDarkTheme: () => n(261835),
+    getTier0Value: () => m.intl.formatToPlainString(m.t.zZ6Rdi, {
+        resolution: u.TG[c.TVA.NONE].limits.screenShareQualityResolution,
+        framerate: u.TG[c.TVA.NONE].limits.screenShareQualityFramerate
+    }),
+    getTier1Value: () => m.intl.formatToPlainString(m.t.zZ6Rdi, {
+        resolution: u.TG[c.TVA.TIER_1].limits.screenShareQualityResolution,
+        framerate: u.TG[c.TVA.TIER_1].limits.screenShareQualityFramerate
+    }),
+    getTier2Value: () => m.intl.formatToPlainString(m.t.zZ6Rdi, {
+        resolution: u.TG[c.TVA.TIER_2].limits.screenShareQualityResolution,
+        framerate: u.TG[c.TVA.TIER_2].limits.screenShareQualityFramerate
+    }),
+    getTier3Value: () => m.intl.formatToPlainString(m.t.zZ6Rdi, {
+        resolution: u.TG[c.TVA.TIER_3].limits.screenShareQualityResolution,
+        framerate: u.TG[c.TVA.TIER_3].limits.screenShareQualityFramerate
+    })
+}, {
+    getPerkHeading: () => m.intl.string(m.t["/79IDj"]),
+    getPerkPreviewLightTheme: () => n(913997),
+    getPerkPreviewDarkTheme: () => n(95781),
+    getTier0Value: () => m.intl.formatToPlainString(m.t.w1gmLt, {
+        bitrate: u.TG[c.TVA.NONE].limits.bitrate / 1e3
+    }),
+    getTier1Value: () => m.intl.formatToPlainString(m.t.w1gmLt, {
+        bitrate: u.TG[c.TVA.TIER_1].limits.bitrate / 1e3
+    }),
+    getTier2Value: () => m.intl.formatToPlainString(m.t.w1gmLt, {
+        bitrate: u.TG[c.TVA.TIER_2].limits.bitrate / 1e3
+    }),
+    getTier3Value: () => m.intl.formatToPlainString(m.t.w1gmLt, {
+        bitrate: u.TG[c.TVA.TIER_3].limits.bitrate / 1e3
+    })
+}, {
+    getPerkHeading: () => m.intl.string(m.t.R1U2xC),
+    getPerkPreviewLightTheme: () => n(389833),
+    getPerkPreviewDarkTheme: () => n(754561),
+    getTier0Value: () => m.intl.formatToPlainString(m.t.pIn7Af, {
+        size: u.TG[c.TVA.NONE].limits.fileSize / 1048576
+    }),
+    getTier1Value: () => m.intl.formatToPlainString(m.t.pIn7Af, {
+        size: u.TG[c.TVA.TIER_1].limits.fileSize / 1048576
+    }),
+    getTier2Value: () => m.intl.formatToPlainString(m.t.pIn7Af, {
+        size: u.TG[c.TVA.TIER_2].limits.fileSize / 1048576
+    }),
+    getTier3Value: () => m.intl.formatToPlainString(m.t.pIn7Af, {
+        size: u.TG[c.TVA.TIER_3].limits.fileSize / 1048576
+    })
+}, {
+    getPerkHeading: () => m.intl.string(m.t.f6vfso),
+    getPerkPreviewLightTheme: () => n(735669),
+    getPerkPreviewDarkTheme: () => n(283517),
+    getTier0Value: () => u.TG[c.TVA.NONE].limits.stageVideoUsers,
+    getTier1Value: () => u.TG[c.TVA.TIER_1].limits.stageVideoUsers,
+    getTier2Value: () => u.TG[c.TVA.TIER_2].limits.stageVideoUsers,
+    getTier3Value: () => u.TG[c.TVA.TIER_3].limits.stageVideoUsers
+}, {
+    getPerkHeading: () => m.intl.string(m.t.qDqUME),
+    getPerkPreviewLightTheme: () => n(970770),
+    getPerkPreviewDarkTheme: () => n(416378),
+    getTier0Value: () => !1,
+    getTier1Value: () => !0,
+    getTier2Value: () => !0,
+    getTier3Value: () => !0
+}, {
+    getPerkHeading: () => m.intl.string(m.t.uwqgbu),
+    getPerkPreviewLightTheme: () => n(243580),
+    getPerkPreviewDarkTheme: () => n(975940),
+    getTier0Value: () => !1,
+    getTier1Value: () => !0,
+    getTier2Value: () => !0,
+    getTier3Value: () => !0
+}, {
+    getPerkHeading: () => m.intl.string(m.t.zxsDxc),
+    getPerkPreviewLightTheme: () => n(435748),
+    getPerkPreviewDarkTheme: () => n(978380),
+    getTier0Value: () => !1,
+    getTier1Value: () => !1,
+    getTier2Value: () => m.intl.string(m.t["2TNS3n"]),
+    getTier3Value: () => m.intl.string(m.t["l+S46U"])
+}, {
+    getPerkHeading: () => m.intl.string(m.t["bHa+Ee"]),
+    getPerkPreviewLightTheme: () => n(329312),
+    getPerkPreviewDarkTheme: () => n(800120),
+    getTier0Value: () => !1,
+    getTier1Value: () => !1,
+    getTier2Value: () => !0,
+    getTier3Value: () => !0
+}, {
+    getPerkHeading: () => m.intl.string(m.t.QV6MZQ),
+    getPerkPreviewLightTheme: () => n(463384),
+    getPerkPreviewDarkTheme: () => n(258963),
+    getTier0Value: () => !1,
+    getTier1Value: () => !1,
+    getTier2Value: () => !1,
+    getTier3Value: () => !0
+}];
 
-function m(e) {
+function A(e) {
     let {
         children: t,
         className: n,
-        tier: i
-    } = e, a = i === u.TVA.NONE ? "text-muted" : "text-strong", s = i === u.TVA.NONE || null == i ? "heading-xl/normal" : "heading-xl/bold";
-    return (0, r.jsxs)("th", {
-        className: o()(p.PG, n),
+        tier: s
+    } = e, l = s === c.TVA.NONE ? "text-muted" : "text-strong", r = s === c.TVA.NONE || null == s ? "heading-xl/normal" : "heading-xl/bold";
+    return (0, i.jsxs)("th", {
+        className: a()(_.PG, n),
         scope: "col",
-        children: [(0, r.jsx)(l.Heading, {
-            color: a,
-            variant: s,
+        children: [(0, i.jsx)(o.Heading, {
+            color: l,
+            variant: r,
             children: t
-        }), null != i && (0, r.jsx)(l.Text, {
-            color: a,
+        }), null != s && (0, i.jsx)(o.Text, {
+            color: l,
             variant: "text-md/normal",
-            children: f.intl.format(f.t["pob/cL"], {
-                subscriptions: u.M2T[i]
+            children: m.intl.format(m.t["pob/cL"], {
+                subscriptions: c.M2T[s]
             })
         })]
     })
 }
 
-function g(e) {
+function x(e) {
     let t, {
         className: n,
-        textVariant: i = "text-md/bold",
-        value: a
+        textVariant: s = "text-md/bold",
+        value: l
     } = e;
-    if ("boolean" == typeof a) {
-        let e = o()(p.Jk, {
-            [p.I$]: a
+    if ("boolean" == typeof l) {
+        let e = a()(_.Jk, {
+            [_.I$]: l
         });
-        t = a ? (0, r.jsx)(l.A9s, {
+        t = l ? (0, i.jsx)(o.A9s, {
             size: "md",
             color: "currentColor",
             className: e
-        }) : (0, r.jsx)(l.PGe, {
+        }) : (0, i.jsx)(o.PGe, {
             size: "md",
             color: "currentColor",
             className: e
         })
-    } else t = (0, r.jsx)(l.Text, {
+    } else t = (0, i.jsx)(o.Text, {
         color: "interactive-text-active",
-        variant: i,
-        children: a
+        variant: s,
+        children: l
     });
-    return (0, r.jsx)("td", {
-        className: o()(p.xR, n),
+    return (0, i.jsx)("td", {
+        className: a()(_.xR, n),
         children: t
     })
 }
 
-function E(e) {
-    switch (e) {
-        case u.TVA.NONE:
-        case u.TVA.TIER_1:
-            return u.TVA.TIER_2;
-        case u.TVA.TIER_2:
-        case u.TVA.TIER_3:
-            return u.TVA.TIER_3;
-        default:
-            return null
-    }
-}
-
-function y(e) {
+function h(e) {
     let {
         currentTier: t
-    } = e, n = E(t);
-    return null == n ? null : (0, r.jsx)("div", {
-        className: o()(p.ER, {
-            [p.GH]: n === u.TVA.TIER_2,
-            [p.z5]: n === u.TVA.TIER_3
+    } = e, n = function(e) {
+        switch (e) {
+            case c.TVA.NONE:
+            case c.TVA.TIER_1:
+                return c.TVA.TIER_2;
+            case c.TVA.TIER_2:
+            case c.TVA.TIER_3:
+                return c.TVA.TIER_3;
+            default:
+                return null
+        }
+    }(t);
+    return null == n ? null : (0, i.jsx)("div", {
+        className: a()(_.ER, {
+            [_.GH]: n === c.TVA.TIER_2,
+            [_.z5]: n === c.TVA.TIER_3
         }),
-        children: (0, r.jsx)(l.Text, {
-            className: p.uQ,
+        children: (0, i.jsx)(o.Text, {
+            className: _.uQ,
             color: "always-white",
             variant: "text-xs/bold",
-            children: t === u.TVA.TIER_3 ? f.intl.string(f.t.d849Up) : f.intl.string(f.t.dZeX1z)
+            children: t === c.TVA.TIER_3 ? m.intl.string(m.t.d849Up) : m.intl.string(m.t.dZeX1z)
         })
     })
 }
 
-function b(e) {
+function p(e) {
     let {
         isFocused: t,
         handleFocus: n,
-        handleRowBlur: a,
-        theme: c,
-        row: u,
-        hideTier0: d
-    } = e, f = i.useRef(null);
-    return (0, r.jsxs)("tr", {
-        className: p.__invalid_tableRow,
-        children: [(0, r.jsx)("th", {
-            className: o()(p.xR, p.uB),
+        handleRowBlur: l,
+        theme: d,
+        row: c,
+        hideTier0: u
+    } = e, m = s.useRef(null);
+    return (0, i.jsxs)("tr", {
+        className: _.__invalid_tableRow,
+        children: [(0, i.jsx)("th", {
+            className: a()(_.xR, _.uB),
             scope: "row",
-            children: (0, r.jsx)(l.DUT, {
-                className: o()(p.VC, p.xR, p.Rk),
+            children: (0, i.jsx)(o.DUT, {
+                className: a()(_.VC, _.xR, _.Rk),
                 onFocus: n,
-                onBlur: a,
+                onBlur: l,
                 onMouseEnter: n,
-                onMouseLeave: a,
-                children: (0, r.jsx)(l.YNO, {
-                    targetElementRef: f,
+                onMouseLeave: l,
+                children: (0, i.jsx)(o.YNO, {
+                    targetElementRef: m,
                     align: "center",
                     disablePointerEvents: !0,
                     nudgeAlignIntoViewport: !0,
                     position: "bottom",
-                    renderPopout: () => (0, r.jsx)("img", {
-                        className: p.Mz,
-                        src: (0, s.Mw)(c) ? u.getPerkPreviewDarkTheme() : u.getPerkPreviewLightTheme(),
+                    renderPopout: () => (0, i.jsx)("img", {
+                        className: _.Mz,
+                        src: (0, r.Mw)(d) ? c.getPerkPreviewDarkTheme() : c.getPerkPreviewLightTheme(),
                         alt: ""
                     }),
                     shouldShow: t,
                     spacing: 16,
-                    children: () => (0, r.jsx)(l.Text, {
+                    children: () => (0, i.jsx)(o.Text, {
                         variant: "text-md/normal",
-                        ref: f,
-                        children: u.getPerkHeading()
+                        ref: m,
+                        children: c.getPerkHeading()
                     })
                 })
             })
-        }), !d && (0, r.jsx)(g, {
+        }), !u && (0, i.jsx)(x, {
             textVariant: "text-md/normal",
-            value: u.getTier0Value()
-        }), (0, r.jsx)(g, {
-            value: u.getTier1Value()
-        }), (0, r.jsx)(g, {
-            value: u.getTier2Value()
-        }), (0, r.jsx)(g, {
-            value: u.getTier3Value()
+            value: c.getTier0Value()
+        }), (0, i.jsx)(x, {
+            value: c.getTier1Value()
+        }), (0, i.jsx)(x, {
+            value: c.getTier2Value()
+        }), (0, i.jsx)(x, {
+            value: c.getTier3Value()
         })]
     })
 }
-let O = function(e) {
-    let t = (0, c.Ay)(),
-        [n, a] = i.useState(null),
+let T = function(e) {
+    let t = (0, d.Ay)(),
+        [n, l] = s.useState(null),
         {
-            className: o,
-            guild: s,
-            hideHeading: d,
-            hideTier0: _
+            className: a,
+            guild: r,
+            hideHeading: u,
+            hideTier0: x
         } = e;
 
-    function g(e) {
-        a(e)
+    function T() {
+        l(null)
     }
-
-    function E() {
-        a(null)
-    }
-    return (0, r.jsxs)("div", {
-        className: o,
-        children: [!d && (0, r.jsx)(l.Heading, {
-            className: p.R_,
+    return (0, i.jsxs)("div", {
+        className: a,
+        children: [!u && (0, i.jsx)(o.Heading, {
+            className: _.R_,
             variant: "heading-xxl/extrabold",
-            children: f.intl.string(f.t["9GGb9k"])
-        }), (0, r.jsxs)("div", {
-            className: p.wY,
-            children: [null != s && (0, r.jsx)(y, {
-                currentTier: s.premiumTier
-            }), (0, r.jsxs)("table", {
-                className: p.tp,
+            children: m.intl.string(m.t["9GGb9k"])
+        }), (0, i.jsxs)("div", {
+            className: _.wY,
+            children: [null != r && (0, i.jsx)(h, {
+                currentTier: r.premiumTier
+            }), (0, i.jsxs)("table", {
+                className: _.tp,
                 cellPadding: 0,
                 cellSpacing: 0,
-                children: [(0, r.jsx)("thead", {
-                    children: (0, r.jsxs)("tr", {
-                        className: p.__invalid_tableRow,
-                        children: [(0, r.jsx)(m, {
-                            className: p.VC,
-                            children: f.intl.string(f.t.F5MY0k)
-                        }), !_ && (0, r.jsx)(m, {
-                            tier: u.TVA.NONE,
-                            children: f.intl.string(f.t.mx8j2m)
-                        }), (0, r.jsx)(m, {
-                            tier: u.TVA.TIER_1,
-                            children: f.intl.string(f.t.nzXtaS)
-                        }), (0, r.jsx)(m, {
-                            tier: u.TVA.TIER_2,
-                            children: f.intl.string(f.t["h33/uW"])
-                        }), (0, r.jsx)(m, {
-                            tier: u.TVA.TIER_3,
-                            children: f.intl.string(f.t.BfF6ED)
+                children: [(0, i.jsx)("thead", {
+                    children: (0, i.jsxs)("tr", {
+                        className: _.__invalid_tableRow,
+                        children: [(0, i.jsx)(A, {
+                            className: _.VC,
+                            children: m.intl.string(m.t.F5MY0k)
+                        }), !x && (0, i.jsx)(A, {
+                            tier: c.TVA.NONE,
+                            children: m.intl.string(m.t.mx8j2m)
+                        }), (0, i.jsx)(A, {
+                            tier: c.TVA.TIER_1,
+                            children: m.intl.string(m.t.nzXtaS)
+                        }), (0, i.jsx)(A, {
+                            tier: c.TVA.TIER_2,
+                            children: m.intl.string(m.t["h33/uW"])
+                        }), (0, i.jsx)(A, {
+                            tier: c.TVA.TIER_3,
+                            children: m.intl.string(m.t.BfF6ED)
                         })]
                     })
-                }), (0, r.jsx)("tbody", {
-                    className: p.__invalid_tableBody,
-                    children: h.map((e, i) => {
-                        let a = n === i;
-
-                        function o() {
-                            g(i)
-                        }
-                        return void 0 === e.predicate ? (0, r.jsx)(b, {
+                }), (0, i.jsx)("tbody", {
+                    className: _.__invalid_tableBody,
+                    children: g.map((e, s) => {
+                        let a = n === s;
+                        return void 0 === e.predicate ? (0, i.jsx)(p, {
                             isFocused: a,
-                            handleFocus: o,
-                            handleRowBlur: E,
+                            handleFocus: function() {
+                                l(s)
+                            },
+                            handleRowBlur: T,
                             theme: t,
                             row: e,
-                            hideTier0: _
-                        }, i) : null
+                            hideTier0: x
+                        }, s) : null
                     })
                 })]
             })]

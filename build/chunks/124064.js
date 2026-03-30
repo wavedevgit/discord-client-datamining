@@ -1,6 +1,6 @@
 /** chunk id: 124064 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => T
 });
 var i = n(627968),
     s = n(64700),
@@ -22,25 +22,25 @@ let x = (0, d.Ld)(),
     }),
     p = (0, d.Ld)();
 
-function f(e) {
+function T(e) {
     let {
         sectionTitle: t,
         errors: n,
         onBioChange: d,
         pendingBio: u,
-        placeholder: f,
-        currentBio: T,
+        placeholder: T,
+        currentBio: f,
         disabled: S = !1
-    } = e, [E, b] = s.useState(u ?? T), [C, v] = s.useState((0, r.x7)(E)), N = s.useRef(T), I = s.useRef(!1);
+    } = e, [E, b] = s.useState(u ?? f), [C, v] = s.useState((0, r.x7)(E)), N = s.useRef(f), I = s.useRef(!1);
     return s.useEffect(() => {
-        if (N.current !== T) {
-            let e = (0, r.x7)(T);
-            b(T), v(e)
+        if (N.current !== f) {
+            let e = (0, r.x7)(f);
+            b(f), v(e)
         }
-        N.current = T
-    }, [T]), s.useEffect(() => {
-        void 0 !== u || E === T || I.current || (b(T), v((0, r.x7)(T)))
-    }, [u, T, E]), (0, i.jsxs)(m.A, {
+        N.current = f
+    }, [f]), s.useEffect(() => {
+        void 0 !== u || E === f || I.current || (b(f), v((0, r.x7)(f)))
+    }, [u, f, E]), (0, i.jsxs)(m.A, {
         title: t,
         titleId: x,
         description: g.intl.string(g.t.Bbw6Ac),
@@ -55,7 +55,7 @@ function f(e) {
             onChange: function(e, t, n) {
                 t !== E && (b(t), v(n), d(t))
             },
-            placeholder: f,
+            placeholder: T,
             channel: h,
             textValue: E,
             richValue: C,

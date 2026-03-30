@@ -1,6 +1,6 @@
 /** chunk id: 903427 params = (module,exports,require) **/
 n.d(t, {
-    K: () => f,
+    K: () => T,
     P: () => p
 });
 var i = n(627968),
@@ -22,7 +22,7 @@ let h = !l.Av;
 function p() {
     return (0, a.bG)([u.Ay], () => u.Ay.getMode() === A.TB.PUSH_TO_TALK)
 }
-let f = (0, c.zD)(m.X.VOICE_PUSH_TO_TALK_SETTING, {
+let T = (0, c.zD)(m.X.VOICE_PUSH_TO_TALK_SETTING, {
     useTitle: function() {
         return l.Av ? x.intl.string(x.t.tG4Np5) : x.intl.string(x.t.JMyQin)
     },

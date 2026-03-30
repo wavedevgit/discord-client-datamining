@@ -40,8 +40,8 @@ let O = e => {
         tab: y,
         buttonContainerClassName: R,
         orbsSupportedOnly: B
-    } = e, M = (0, i.bG)([_.default], () => _.default.getCurrentUser()), P = p.Ay.canUseCollectibles(M), D = (0, E.W)("FeedBlock"), w = (0, I.yB)("FeedBlock"), {
-        sortType: H,
+    } = e, M = (0, i.bG)([_.default], () => _.default.getCurrentUser()), P = p.Ay.canUseCollectibles(M), D = (0, E.W)("FeedBlock"), H = (0, I.yB)("FeedBlock"), {
+        sortType: w,
         setSortType: F,
         sortedItems: G,
         sortOptions: U,
@@ -87,7 +87,7 @@ let O = e => {
                 })]
             }), (0, n.jsxs)("div", {
                 className: a()(T.IE, {
-                    [I.jP]: w
+                    [I.jP]: H
                 }),
                 children: [(0, n.jsx)(c.Text, {
                     variant: "text-md/medium",
@@ -110,7 +110,7 @@ let O = e => {
                                 value: s
                             }
                         },
-                        value: H,
+                        value: w,
                         selectionMode: "single",
                         fullWidth: !0
                     })

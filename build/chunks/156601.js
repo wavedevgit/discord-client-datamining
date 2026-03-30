@@ -22,21 +22,21 @@ let g = function(e) {
         isGift: g = !1,
         variant: T,
         priceOptions: p,
-        isApplicationHome: I,
-        enablePremiumBrandRefresh: h
-    } = e, f = (0, s.bG)([d.A], () => d.A.isLoadedForSKUs([t])), A = (0, l.qB)((0, c.Ay)());
+        isApplicationHome: h,
+        enablePremiumBrandRefresh: I
+    } = e, f = (0, s.bG)([d.A], () => d.A.isLoadedForSKUs([t])), j = (0, l.qB)((0, c.Ay)());
     if (!f) return (0, i.jsx)(o.y$y, {
         type: o.y$y.Type.PULSING_ELLIPSIS,
         className: x.xB
     });
-    let j = d.A.getForSkuAndInterval((0, u.mH)(t), r),
-        v = null != j ? (0, u.sS)(j, p, !1, g) : null;
-    if (h) {
+    let A = d.A.getForSkuAndInterval((0, u.mH)(t), r),
+        v = null != A ? (0, u.sS)(A, p, !1, g) : null;
+    if (I) {
         let e = r === m.WT.YEAR;
         return (0, i.jsxs)("div", {
             children: [(0, i.jsx)(o.Text, {
                 variant: e ? "heading-md/semibold" : "heading-xxl/extrabold",
-                color: e ? "text-muted" : A ? "text-strong" : "always-white",
+                color: e ? "text-muted" : j ? "text-strong" : "always-white",
                 tag: "span",
                 children: (0, i.jsx)("span", {
                     children: v
@@ -50,12 +50,12 @@ let g = function(e) {
         })
     }
     return (0, i.jsx)(o.Heading, {
-        color: I ? "none" : "always-white",
+        color: h ? "none" : "always-white",
         variant: T ?? "heading-md/medium",
         className: a()(x.SW, n),
         children: (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("span", {
-                className: I ? void 0 : x.q9,
+                className: h ? void 0 : x.q9,
                 children: v
             }), " / ", (0, u.FJ)(r)]
         })

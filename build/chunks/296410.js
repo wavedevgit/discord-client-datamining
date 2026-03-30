@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(9302),
     h = n(505136),
     p = n(370365),
-    f = n(686533),
-    T = n(985018),
+    T = n(686533),
+    f = n(985018),
     S = n(502040);
 
 function E() {
@@ -35,11 +35,11 @@ function E() {
             enabledOOP: i
         } = n;
         r.A.toggleOverlay(t, e, i)
-    }, j = s.useMemo(() => (0, x.supportsLegacy)() ? v ? T.intl.string(T.t.r9jEVw) : T.intl.string(T.t.OzInYk) : T.intl.string(T.t["8Ox6/E"]), [v]);
-    return 0 === b.length ? (0, i.jsx)(f.A, {
-        title: T.intl.string(T.t.BfFpW1),
+    }, j = s.useMemo(() => (0, x.supportsLegacy)() ? v ? f.intl.string(f.t.r9jEVw) : f.intl.string(f.t.OzInYk) : f.intl.string(f.t["8Ox6/E"]), [v]);
+    return 0 === b.length ? (0, i.jsx)(T.A, {
+        title: f.intl.string(f.t.BfFpW1),
         description: j,
-        "aria-label": T.intl.string(T.t.BfFpW1),
+        "aria-label": f.intl.string(f.t.BfFpW1),
         className: S.dA,
         action: (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(a.dOG, {
@@ -53,11 +53,11 @@ function E() {
     }) : (0, i.jsxs)(h.A, {
         onExpand: t,
         className: e ? S.tx : void 0,
-        title: T.intl.string(T.t.BfFpW1),
+        title: f.intl.string(f.t.BfFpW1),
         description: j,
-        "aria-label": T.intl.string(T.t.BfFpW1),
+        "aria-label": f.intl.string(f.t.BfFpW1),
         action: (0, i.jsx)(a.DUT, {
-            onClick: e => (0, f.$)(e),
+            onClick: e => (0, T.$)(e),
             children: (0, i.jsx)(a.dOG, {
                 checked: n,
                 disabled: v,
@@ -69,7 +69,7 @@ function E() {
             children: (0, i.jsx)(a.Text, {
                 variant: "text-xs/semibold",
                 color: "text-muted",
-                children: T.intl.string(T.t.FzoWRo)
+                children: f.intl.string(f.t.FzoWRo)
             })
         }), (0, i.jsx)(a.IpV, {
             className: S.XG,
@@ -85,7 +85,7 @@ function E() {
                     return t
                 },
                 onChange: I,
-                ariaLabel: T.intl.format(T.t.hvPYsF, {
+                ariaLabel: f.intl.format(f.t.hvPYsF, {
                     gameName: e.name
                 }).toString()
             }, e.id))

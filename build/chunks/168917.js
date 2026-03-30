@@ -23,7 +23,7 @@ function A(e) {
         username: x,
         user: h,
         guild: p
-    } = e, f = (0, s.bG)([c.A], () => c.A.can(u.xBc.CHANGE_NICKNAME, p) || c.A.can(u.xBc.MANAGE_NICKNAMES, p)), T = (0, a.L)(m.PremiumTypes.TIER_2);
+    } = e, T = (0, s.bG)([c.A], () => c.A.can(u.xBc.CHANGE_NICKNAME, p) || c.A.can(u.xBc.MANAGE_NICKNAMES, p)), f = (0, a.L)(m.PremiumTypes.TIER_2);
     return (0, i.jsxs)(r.A, {
         title: _.intl.string(_.t.me1lRk),
         errors: t,
@@ -37,9 +37,9 @@ function A(e) {
                     nickname: e
                 })
             },
-            disabled: !f,
-            helperText: f ? void 0 : _.intl.string(_.t.gzjxQi)
-        }), T && (0, i.jsx)(o.A, {
+            disabled: !T,
+            helperText: T ? void 0 : _.intl.string(_.t.gzjxQi)
+        }), f && (0, i.jsx)(o.A, {
             user: h,
             guildId: p.id,
             className: g.F

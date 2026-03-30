@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(86379),
     h = n(160946),
     p = n(459793),
-    f = n(726649),
-    T = n(611924),
+    T = n(726649),
+    f = n(611924),
     S = n(351906),
     E = n(287809),
     b = n(295405),
@@ -39,14 +39,14 @@ let M = function(e) {
     let {
         entrypoint: t = P.Mf.UserSettings
     } = e;
-    (0, T.P)(f.b);
+    (0, f.P)(T.b);
     let n = (0, x.Hp)(),
         {
             sourceAnalyticsLocations: l,
             analyticsLocations: M
         } = (0, A.Ay)(g.A.PREMIUM_MARKETING),
-        U = (0, r.bG)([C.A], () => C.A.hasFetchedSubscriptions()),
-        k = (0, r.bG)([b.A], () => b.A.hasFetchedPaymentSources),
+        k = (0, r.bG)([C.A], () => C.A.hasFetchedSubscriptions()),
+        U = (0, r.bG)([b.A], () => b.A.hasFetchedPaymentSources),
         w = (0, r.bG)([E.default], () => E.default.getCurrentUser()),
         V = w?.id,
         B = (0, R.V)(),
@@ -78,7 +78,7 @@ let M = function(e) {
             children: (0, i.jsx)(y.A, {
                 userId: V
             })
-        }) : U && H && k ? null : (0, i.jsx)("div", {
+        }) : k && H && U ? null : (0, i.jsx)("div", {
             className: a()(G.kL, G.Lq),
             children: (0, i.jsx)(o.y$y, {})
         });

@@ -19,8 +19,8 @@ var i = n(627968),
     x = n(294433),
     h = n(10005),
     p = n(400641),
-    f = n(438732),
-    T = n(500470),
+    T = n(438732),
+    f = n(500470),
     S = n(153739),
     E = n(834981),
     b = n(607822),
@@ -38,7 +38,7 @@ var i = n(627968),
     G = n(407765),
     M = n(452567);
 
-function U() {
+function k() {
     let e = s.useCallback(() => {
         (0, u.mMO)(async () => {
             let {
@@ -62,28 +62,28 @@ function U() {
     })
 }
 
-function k(e) {
+function U(e) {
     let {
         displayType: t
     } = e, n = s.useCallback(() => {
         (0, u.showToast)((0, u.createToast)(D.intl.string(P.default.Wu8BK2), u.ToastType.FAILURE))
-    }, []), l = (0, f.A)(), r = (0, p._w)(t), d = (0, p.Gn)(t), c = (0, p.Ju)(t), {
+    }, []), l = (0, T.A)(), r = (0, p._w)(t), d = (0, p.Gn)(t), c = (0, p.Ju)(t), {
         loadMore: m,
         isMoreLoading: x
     } = (0, h.A)({
         onError: n
-    }), T = (0, A.kN)().get(t), [S, E] = s.useState(R.PH), b = s.useCallback(() => {
+    }), f = (0, A.kN)().get(t), [S, E] = s.useState(R.PH), b = s.useCallback(() => {
         E(e => e + R.PH), m(t)
     }, [t, m]);
-    o()(T, `No text for action type: ${t}`);
-    let I = t === R.NV.PURCHASES && null != c ? T.sectionHeader(c) : T.sectionHeader(d),
+    o()(f, `No text for action type: ${t}`);
+    let I = t === R.NV.PURCHASES && null != c ? f.sectionHeader(c) : f.sectionHeader(d),
         j = s.useCallback(e => {
             let {
                 row: t
             } = e, n = r[t];
             if ((0, A.aq)(n)) {
                 let e = _.default.extractTimestamp(n.event_id),
-                    t = (0, A.i6)(e, T.timestampFormatter);
+                    t = (0, A.i6)(e, f.timestampFormatter);
                 return (0, i.jsx)(N.A, {
                     userId: n.entity_id,
                     subText: t
@@ -102,19 +102,19 @@ function k(e) {
                 }, n.event_id)
             }
             return null
-        }, [r, T.timestampFormatter]),
+        }, [r, f.timestampFormatter]),
         y = s.useCallback(() => (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(u.Text, {
                 className: G.bV,
                 variant: "text-md/semibold",
                 children: I
-            }), void 0 !== T.sectionDescription ? (0, i.jsx)(u.Text, {
+            }), void 0 !== f.sectionDescription ? (0, i.jsx)(u.Text, {
                 className: G.yV,
                 variant: "text-md/medium",
                 color: "text-muted",
-                children: T.sectionDescription(l ?? !1)
+                children: f.sectionDescription(l ?? !1)
             }) : null]
-        }), [I, T, l]);
+        }), [I, f, l]);
     if (0 === r.length) return null;
     let O = r.slice(0, S);
     return (0, i.jsxs)("div", {
@@ -148,7 +148,7 @@ function k(e) {
     })
 }
 let w = () => {
-        let e = (0, f.A)(),
+        let e = (0, T.A)(),
             t = (0, E.vx)(),
             n = (0, x.y)(D.intl.formatToPlainString(P.default["7hqFl9"], {
                 activeLinks: t.length
@@ -228,8 +228,8 @@ let B = () => {
         })
     },
     F = () => {
-        let e = (0, T.k)(),
-            t = (0, f.A)(),
+        let e = (0, f.k)(),
+            t = (0, T.A)(),
             n = (0, E.vx)(),
             s = (0, A.cV)(!!t),
             l = (0, E.v4)(s);
@@ -247,7 +247,7 @@ let B = () => {
             className: G.kL,
             children: [(0, i.jsxs)("div", {
                 className: G.vF,
-                children: [(0, i.jsx)(w, {}), (0, i.jsx)(U, {})]
+                children: [(0, i.jsx)(w, {}), (0, i.jsx)(k, {})]
             }), (0, i.jsxs)("div", {
                 className: M.a,
                 children: [(0, i.jsx)("div", {
@@ -270,7 +270,7 @@ let B = () => {
                         className: G.RJ,
                         children: [(0, i.jsx)(O.A, {}), t ? e.map(e => {
                             let [t] = e;
-                            return (0, i.jsx)(k, {
+                            return (0, i.jsx)(U, {
                                 displayType: t
                             }, `${t}-list`)
                         }) : (0, i.jsx)(y.A, {

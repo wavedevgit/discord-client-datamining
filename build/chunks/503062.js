@@ -31,8 +31,8 @@ function v(e) {
     } = e, {
         theme: S,
         themeType: C
-    } = (0, p.E)(), N = s.useMemo(() => t.isNonUserBot() || (0, u.c)(t, E), [t, E]), {
-        activities: b,
+    } = (0, p.E)(), b = s.useMemo(() => t.isNonUserBot() || (0, u.c)(t, E), [t, E]), {
+        activities: N,
         isMobileOnline: T
     } = (0, a.cf)([_.A], () => ({
         activities: _.A.getActivities(t.id),
@@ -72,8 +72,8 @@ function v(e) {
             src: t.getAvatarURL(y, x),
             "aria-label": t.username,
             size: A,
-            status: N ? f.clD.UNKNOWN : v,
-            statusBackdropColor: N ? void 0 : (0, l.C$5)(S),
+            status: b ? f.clD.UNKNOWN : v,
+            statusBackdropColor: b ? void 0 : (0, l.C$5)(S),
             isMobile: T,
             className: g.my
         }), (0, n.jsxs)("div", {
@@ -84,7 +84,7 @@ function v(e) {
                 discriminatorClass: g.D2
             }), (0, n.jsx)(c.A, {
                 user: t,
-                activities: b,
+                activities: N,
                 applicationStream: O,
                 voiceChannel: L
             })]

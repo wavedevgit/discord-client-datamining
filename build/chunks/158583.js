@@ -18,17 +18,17 @@ var i = n(627968),
     x = n(422258),
     h = n(668267),
     p = n(93055),
-    f = n(652215),
-    T = n(788868),
+    T = n(652215),
+    f = n(788868),
     S = n(665606),
     E = n(985018);
-let b = _.A.getArticleURL(f.MVz.FAVORITES_GUILD);
+let b = _.A.getArticleURL(T.MVz.FAVORITES_GUILD);
 
 function C() {
     let {
         analyticsLocations: e
     } = (0, o.Ay)(r.A.USER_SETTINGS_FAVORITES), t = s.useCallback(() => {
-        (0, h.mv)("settings_page"), (0, c.uh)(f.YYv), (0, u.default)()
+        (0, h.mv)("settings_page"), (0, c.uh)(T.YYv), (0, u.default)()
     }, []);
     return (0, i.jsx)(o.f5, {
         value: e,
@@ -48,7 +48,7 @@ function C() {
                     text: E.intl.string(S.default["7WwLnr"]),
                     onClick: t
                 }), (0, i.jsx)(d.A, {
-                    subscriptionTier: T.pe.TIER_2,
+                    subscriptionTier: f.pe.TIER_2,
                     defaultTextOverride: E.intl.string(S.default["20sYUU"])
                 })]
             })
@@ -60,11 +60,11 @@ function v() {
     let e = (0, l.bG)([A.A], () => A.A.favoriteGuildEnabled),
         t = (0, l.bG)([m.default], () => {
             let e = m.default.getCurrentUser();
-            return null != e && g.Ay.isPremiumExactly(e, T.PremiumTypes.TIER_2)
+            return null != e && g.Ay.isPremiumExactly(e, f.PremiumTypes.TIER_2)
         }),
         n = (0, p.DZ)(),
         r = s.useCallback(e => {
-            (0, x.tV)(e, "settings_page"), !e && n && (0, c.pX)(f.BVt.ME)
+            (0, x.tV)(e, "settings_page"), !e && n && (0, c.pX)(T.BVt.ME)
         }, [n]);
     return t ? (0, i.jsx)(a.dOG, {
         checked: e,

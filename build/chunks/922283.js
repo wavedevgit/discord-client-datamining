@@ -1,10 +1,10 @@
 /** chunk id: 922283 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => C
 });
 var a = n(627968),
-    i = n(64700),
-    l = n(792216),
+    l = n(64700),
+    i = n(792216),
     r = n(990078),
     s = n(397927),
     c = n(223273),
@@ -22,15 +22,15 @@ function p(e) {
     let {
         detectedGame: t,
         url: n,
-        trackAction: l
+        trackAction: i
     } = e, {
         reviews: m
     } = t, h = m?.steam ?? {
         rating: void 0,
         ratingCount: void 0
-    }, f = (0, x.A)(), p = (0, o.j)(h.rating, h.ratingCount), v = (0, u.y)(p), A = i.useCallback(() => {
-        l(d.Ws.SteamReviews), f(n)
-    }, [f, l, n]);
+    }, f = (0, x.A)(), p = (0, o.j)(h.rating, h.ratingCount), v = (0, u.y)(p), A = l.useCallback(() => {
+        i(d.Ws.SteamReviews), f(n)
+    }, [f, i, n]);
     return (0, a.jsx)(s.DUT, {
         onClick: A,
         className: _.nf,
@@ -76,18 +76,18 @@ function v(e) {
     let {
         detectedGame: t,
         url: n,
-        trackAction: l
+        trackAction: i
     } = e, {
         reviews: r
     } = t, o = r?.opencritic ?? {
         topCriticRating: void 0,
         topCriticRatingCount: void 0,
         tier: void 0
-    }, m = o.tier, h = o.topCriticRating ?? -1, f = o.topCriticRatingCount ?? -1, p = (h <= 0 || f <= 0) && null == m, v = (0, x.A)(), E = i.useCallback(() => {
-        l(d.Ws.OpenCriticReviews), v(n)
-    }, [v, l, n]);
+    }, m = o.tier, h = o.topCriticRating ?? -1, f = o.topCriticRatingCount ?? -1, p = (h <= 0 || f <= 0) && null == m, v = (0, x.A)(), C = l.useCallback(() => {
+        i(d.Ws.OpenCriticReviews), v(n)
+    }, [v, i, n]);
     return (0, a.jsx)(s.DUT, {
-        onClick: E,
+        onClick: C,
         className: _.nf,
         role: "link",
         "aria-label": g.intl.string(g.t.aLNBAw),
@@ -117,13 +117,13 @@ function v(e) {
 function A(e) {
     let {
         tier: t
-    } = e, n = (0, m.a)(t), i = (0, m.GE)(t);
+    } = e, n = (0, m.a)(t), l = (0, m.GE)(t);
     return (0, a.jsx)(r.m, {
         text: n,
         children: (0, a.jsx)("div", {
             className: _.TE,
             children: (0, a.jsx)("img", {
-                src: i,
+                src: l,
                 alt: n,
                 width: 32,
                 height: 32
@@ -137,19 +137,19 @@ function j(e) {
         rating: t,
         tier: n
     } = e, {
-        foregroundColor: i,
-        backgroundColor: l
+        foregroundColor: l,
+        backgroundColor: i
     } = (0, m.ff)(n);
     return (0, a.jsx)(r.m, {
         text: g.intl.string(g.t.Ub4YR1),
         children: (0, a.jsxs)("div", {
             className: _.TE,
             style: {
-                backgroundColor: l
+                backgroundColor: i
             },
             children: [(0, a.jsx)(f.A, {
                 rating: t,
-                strokeColor: i
+                strokeColor: l
             }), (0, a.jsx)(s.Text, {
                 variant: "text-xs/bold",
                 color: "always-white",
@@ -159,13 +159,13 @@ function j(e) {
         })
     }, "open-critic-rating")
 }
-let E = function(e) {
+let C = function(e) {
     let {
         detectedGame: t,
         trackAction: n
     } = e, {
-        applicationId: i
-    } = t, r = (0, h.I)(i), c = t.opencriticUrl, o = t.steamReleaseStatus !== l.Y.RETIRED_ABANDONED && null != r, d = t.reviews?.opencritic != null && null != c;
+        applicationId: l
+    } = t, r = (0, h.I)(l), c = t.opencriticUrl, o = t.steamReleaseStatus !== i.Y.RETIRED_ABANDONED && null != r, d = t.reviews?.opencritic != null && null != c;
     return o || d ? (0, a.jsxs)("div", {
         className: _.uW,
         children: [(0, a.jsx)("div", {

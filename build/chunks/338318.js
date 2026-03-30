@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(429619),
     h = n(451909),
     p = n(202639),
-    f = n(407217),
-    T = n(919395),
+    T = n(407217),
+    f = n(919395),
     S = n(884546),
     E = n(287070),
     b = n(196291),
@@ -46,8 +46,8 @@ function M() {
             pendingBio: n,
             pendingAvatar: l,
             pendingNameplate: M,
-            showNotice: U,
-            ...k
+            showNotice: k,
+            ...U
         } = (0, r.cf)([v.A], () => ({
             ...v.A.getPendingChanges(),
             showNotice: v.A.showNotice()
@@ -56,7 +56,7 @@ function M() {
             userId: e.id,
             image: l
         }),
-        V = (0, T.lw)({
+        V = (0, f.lw)({
             pendingValue: M,
             userValue: e?.collectibles?.nameplate
         }),
@@ -76,13 +76,13 @@ function M() {
                 canUsePremiumCustomization: F,
                 onUpsellClick: L.A,
                 pendingBio: B,
-                ...k,
+                ...U,
                 pendingAvatar: w
             }),
             nameplatePreview: (0, i.jsx)(A.A, {
                 user: e,
                 nameplate: V,
-                ...k,
+                ...U,
                 className: null == V ? G.tJ : void 0,
                 isHighlighted: !0
             }),
@@ -100,11 +100,11 @@ function M() {
                     isVisible: Y
                 })
             })
-        }), K && !U && (0, i.jsx)(p.d, {
+        }), K && !k && (0, i.jsx)(p.d, {
             className: G.EL,
             showUpsell: !Y,
             text: D.intl.format(D.t.TmfgI2, {
-                onClick: () => (0, f.K)({
+                onClick: () => (0, T.K)({
                     analyticsSource: z
                 })
             }),

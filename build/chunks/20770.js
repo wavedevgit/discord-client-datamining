@@ -1,6 +1,6 @@
 /** chunk id: 20770 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => T
 }), n(938796);
 var i = n(627968);
 n(64700);
@@ -20,16 +20,16 @@ var s = n(311907),
     h = n(985018),
     p = n(675403);
 
-function f(e) {
+function T(e) {
     let {
         app: t,
         currentSubscription: n,
         currentListing: l,
         alternativeListings: g,
         navigateToHome: x,
-        subscriptionGroup: f,
+        subscriptionGroup: T,
         renewalSkuId: S
-    } = e, E = (0, r.A)(t, 100), b = (0, _.PJ)(f.flags), C = b ? a.RR9 : a.nys, v = b ? h.intl.string(h.t["46YF2D"]) : h.intl.string(h.t.fFyGiA), N = n.metadata?.application_subscription_guild_id, I = (0, s.bG)([u.A], () => b && null != N ? u.A.getGuild(N) : void 0, [N, b]), j = (0, s.bG)([m.A], () => {
+    } = e, E = (0, r.A)(t, 100), b = (0, _.PJ)(T.flags), C = b ? a.RR9 : a.nys, v = b ? h.intl.string(h.t["46YF2D"]) : h.intl.string(h.t.fFyGiA), N = n.metadata?.application_subscription_guild_id, I = (0, s.bG)([u.A], () => b && null != N ? u.A.getGuild(N) : void 0, [N, b]), j = (0, s.bG)([m.A], () => {
         if (null != S) return m.A.get(S)
     }, [S]), y = (0, A.Y)(n.currentPeriodEnd);
     return (0, i.jsxs)("div", {
@@ -119,7 +119,7 @@ function f(e) {
                         startDate: y
                     })
                 })
-            }, e.id) : (0, i.jsx)(T, {
+            }, e.id) : (0, i.jsx)(f, {
                 storeListing: e,
                 guildId: N,
                 navigateToHome: x
@@ -128,7 +128,7 @@ function f(e) {
     })
 }
 
-function T(e) {
+function f(e) {
     let {
         storeListing: t,
         guildId: n,

@@ -23,17 +23,17 @@ function g(e) {
         onExpandedChange: A,
         children: x,
         animate: h = !0
-    } = e, p = s.useRef(null), [f, T] = s.useState(null), S = g && null != f;
+    } = e, p = s.useRef(null), [T, f] = s.useState(null), S = g && null != T;
     return s.useLayoutEffect(() => {
-        null != p.current && null == f && T(p.current.clientHeight)
-    }, [f]), (0, i.jsxs)(r.EN, {
+        null != p.current && null == T && f(p.current.clientHeight)
+    }, [T]), (0, i.jsxs)(r.EN, {
         ref: t,
         isExpanded: g,
         onExpandedChange: A,
         children: [(0, i.jsx)(m.U, {
             ref: p,
-            style: null != f ? {
-                minHeight: f
+            style: null != T ? {
+                minHeight: T
             } : void 0,
             title: n,
             description: S ? void 0 : l,

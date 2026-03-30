@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(356309),
     h = n(121304),
     p = n(788868),
-    f = n(985018),
-    T = n(705284),
+    T = n(985018),
+    f = n(705284),
     S = n(115292),
     E = n(799919);
 let b = e => {
@@ -32,7 +32,7 @@ let b = e => {
                 color: r.A.colors.TEXT_STRONG,
                 "aria-hidden": !0
             }), (0, i.jsx)(o.AC4, {
-                children: f.intl.string(f.t["tq+6t/"])
+                children: T.intl.string(T.t["tq+6t/"])
             })]
         }) : (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.aoi, {
@@ -40,7 +40,7 @@ let b = e => {
                 color: r.A.colors.TEXT_STRONG,
                 "aria-hidden": !0
             }), (0, i.jsx)(o.AC4, {
-                children: f.intl.string(f.t.l4qZrp)
+                children: T.intl.string(T.t.l4qZrp)
             })]
         })
     },
@@ -51,16 +51,16 @@ let b = e => {
             tier2ColumnData: s
         } = e;
         return (0, i.jsxs)("tr", {
-            className: a()(T.nM, T.WQ),
+            className: a()(f.nM, f.WQ),
             children: [(0, i.jsx)("th", {
                 scope: "row",
-                className: T.nx,
+                className: f.nx,
                 children: (0, i.jsx)(o.Text, {
                     variant: "text-md/medium",
                     children: t
                 })
             }), (0, i.jsx)("td", {
-                className: T.Hn,
+                className: f.Hn,
                 children: null != n.text ? (0, i.jsx)(o.Text, {
                     variant: "text-md/medium",
                     children: n.text
@@ -68,7 +68,7 @@ let b = e => {
                     includes: !!n.includes
                 })
             }), (0, i.jsx)("td", {
-                className: T.Hn,
+                className: f.Hn,
                 children: null != s.text ? (0, i.jsx)(o.Text, {
                     variant: "text-md/medium",
                     children: s.text
@@ -85,9 +85,9 @@ let b = e => {
         } = e;
         return (0, i.jsxs)("tbody", {
             children: [(0, i.jsx)("tr", {
-                className: a()(T.nM, T.Gf),
+                className: a()(f.nM, f.Gf),
                 children: (0, i.jsx)("td", {
-                    className: T.nx,
+                    className: f.nx,
                     colSpan: 3,
                     children: (0, i.jsx)(o.Heading, {
                         variant: "heading-lg/bold",
@@ -103,13 +103,13 @@ let b = e => {
         let {
             premiumType: t,
             priceString: n
-        } = e, s = t === p.PremiumTypes.TIER_0 ? f.intl.string(f.t.tUbSDK) : f.intl.string(f.t.Ipxkog);
+        } = e, s = t === p.PremiumTypes.TIER_0 ? T.intl.string(T.t.tUbSDK) : T.intl.string(T.t.Ipxkog);
         return (0, i.jsxs)("div", {
-            className: T.nn,
+            className: f.nn,
             children: [(0, i.jsxs)("div", {
-                className: T.KS,
+                className: f.KS,
                 children: [(0, i.jsx)(o.tvc, {
-                    colorClass: T.oG
+                    colorClass: f.oG
                 }), (0, i.jsx)(o.Heading, {
                     variant: "heading-sm/semibold",
                     children: s
@@ -129,24 +129,24 @@ let b = e => {
         } = e, a = s ? l : (0, m.$g)(n.amount, n.currency);
         return (0, i.jsx)("thead", {
             children: (0, i.jsxs)("tr", {
-                className: T.U1,
+                className: f.U1,
                 children: [(0, i.jsx)("th", {
                     scope: "col",
-                    className: T.Cr,
+                    className: f.Cr,
                     children: (0, i.jsx)(o.Heading, {
                         variant: "heading-xl/bold",
-                        children: f.intl.string(f.t.ED4UVD)
+                        children: T.intl.string(T.t.ED4UVD)
                     })
                 }), (0, i.jsx)("th", {
                     scope: "col",
-                    className: T.Hn,
+                    className: f.Hn,
                     children: (0, i.jsx)(N, {
                         premiumType: p.PremiumTypes.TIER_0,
                         priceString: (0, m.$g)(t.amount, t.currency)
                     })
                 }), (0, i.jsx)("th", {
                     scope: "col",
-                    className: T.Hn,
+                    className: f.Hn,
                     children: (0, i.jsx)(N, {
                         premiumType: p.PremiumTypes.TIER_2,
                         priceString: a
@@ -175,9 +175,9 @@ let b = e => {
             P = (0, h.g)();
         if (l) t = null;
         else {
-            let e = null != b ? f.intl.string(f.t.IBYG5U) : f.intl.string(f.t.TR2B4T);
+            let e = null != b ? T.intl.string(T.t.IBYG5U) : T.intl.string(T.t.TR2B4T);
             t = (0, i.jsx)(x.D, {
-                className: a()(T.Io, T.SP),
+                className: a()(f.Io, f.SP),
                 text: e
             })
         }
@@ -185,35 +185,35 @@ let b = e => {
         return (0, i.jsx)(c.f5, {
             value: m,
             children: (0, i.jsxs)("div", {
-                className: a()(T.zr, n),
+                className: a()(f.zr, n),
                 children: [(0, i.jsx)(o.Heading, {
-                    className: T.Qw,
+                    className: f.Qw,
                     variant: "display-md",
                     color: "text-strong",
-                    children: f.intl.string(f.t.DbPgAd)
+                    children: T.intl.string(T.t.DbPgAd)
                 }), (0, i.jsxs)("div", {
-                    className: T.wY,
+                    className: f.wY,
                     children: [(0, i.jsxs)("div", {
-                        className: a()(T.fO, {
-                            [T.Vd]: D,
-                            [T.hA]: !D
+                        className: a()(f.fO, {
+                            [f.Vd]: D,
+                            [f.hA]: !D
                         }),
                         children: [!D && t, (0, i.jsx)("div", {
-                            className: T.xQ
+                            className: f.xQ
                         }), (0, i.jsxs)("div", {
-                            className: T.wN,
+                            className: f.wN,
                             children: [(0, i.jsx)("img", {
                                 src: E,
                                 alt: "",
-                                className: T.kQ
+                                className: f.kQ
                             }), (0, i.jsx)("img", {
                                 src: S,
                                 alt: "",
-                                className: T.kQ
+                                className: f.kQ
                             })]
                         })]
                     }), (0, i.jsxs)("table", {
-                        className: T.tp,
+                        className: f.tp,
                         children: [(0, i.jsx)(I, {
                             tier0Price: R,
                             tier2Price: L,

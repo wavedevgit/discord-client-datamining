@@ -24,8 +24,8 @@ function _(e) {
         userNameplate: x,
         guildNameplate: h,
         pendingNameplate: p,
-        pendingErrors: f
-    } = (0, d.rv)(t, n?.id), T = s.useCallback(() => {
+        pendingErrors: T
+    } = (0, d.rv)(t, n?.id), f = s.useCallback(() => {
         (0, r.p)({
             analyticsLocations: g,
             guildId: n?.id
@@ -39,14 +39,14 @@ function _(e) {
     return (0, i.jsx)(c.A, {
         title: u.intl.string(u.t.x5CoXR),
         titleIcon: _,
-        errors: f,
+        errors: T,
         children: (0, i.jsxs)("div", {
             className: m.u,
             children: [(0, i.jsx)(l.Button, {
                 variant: "primary",
                 size: "sm",
                 text: u.intl.string(u.t.BwdeM1),
-                onClick: T
+                onClick: f
             }), (void 0 === p ? (A ? h : x) != null : null != p) && (0, i.jsx)(l.Button, {
                 variant: "secondary",
                 size: "sm",

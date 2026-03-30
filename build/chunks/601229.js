@@ -1,7 +1,7 @@
 /** chunk id: 601229 params = (module,exports,require) **/
 n.d(t, {
-    U6: () => f,
-    kp: () => T,
+    U6: () => T,
+    kp: () => f,
     yG: () => S
 });
 var i = n(627968);
@@ -21,11 +21,11 @@ var s = n(311907),
     x = n(788868),
     h = n(985018),
     p = n(622326);
-let f = () => {
+let T = () => {
     (0, u.nf)(u.HP.APP_ICON), (0, g.default)()
 };
 
-function T() {
+function f() {
     return (0, i.jsx)(m.A, {
         subscriptionTier: x.pe.TIER_2,
         defaultTextOverride: h.intl.string(h.t.mr4K7D),
@@ -54,8 +54,8 @@ let S = () => {
                 children: [(0, i.jsx)(l.Button, {
                     variant: t ? "secondary" : "primary",
                     text: h.intl.string(h.t["hb/wE0"]),
-                    onClick: () => f()
-                }), t && (0, i.jsx)(T, {})]
+                    onClick: () => T()
+                }), t && (0, i.jsx)(f, {})]
             })
         })
     })

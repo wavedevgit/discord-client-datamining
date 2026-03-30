@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(414736),
     h = n(927018),
     p = n(928830),
-    f = n(3137),
-    T = n(301656),
+    T = n(3137),
+    f = n(301656),
     S = n(224964),
     E = n(31408),
     b = n(985018),
@@ -308,7 +308,7 @@ function M(e) {
     })
 }
 
-function U(e) {
+function k(e) {
     let {
         updateSettings: t
     } = e;
@@ -337,7 +337,7 @@ function U(e) {
     })
 }
 
-function k(e) {
+function U(e) {
     let {
         onChangePage: t
     } = e;
@@ -380,7 +380,7 @@ function V(e) {
     let {
         onChangePage: t,
         setShowEnableAnimation: n
-    } = e, l = (0, a.cf)([f.A], () => f.A.getState()), [r, o] = s.useState({
+    } = e, l = (0, a.cf)([T.A], () => T.A.getState()), [r, o] = s.useState({
         x: 0,
         y: 0
     }), c = (0, S.A)(), u = (e, t) => {
@@ -409,7 +409,7 @@ function V(e) {
         children: [(0, i.jsx)(P, {
             settings: l,
             updateSettings: u
-        }), (0, i.jsx)(k, {
+        }), (0, i.jsx)(U, {
             onChangePage: t
         }), (0, i.jsx)(G, {
             settings: l,
@@ -420,7 +420,7 @@ function V(e) {
         }), (0, i.jsx)(D, {
             settings: l,
             updateSettings: u
-        }), (0, i.jsx)(U, {
+        }), (0, i.jsx)(k, {
             updateSettings: u
         })]
     })
@@ -454,7 +454,7 @@ function F() {
                             setShowEnableAnimation: n
                         });
                     case 1:
-                        return (0, i.jsx)(T.A, {
+                        return (0, i.jsx)(f.A, {
                             onBackClick: s(0)
                         });
                     default:

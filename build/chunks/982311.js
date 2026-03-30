@@ -53,15 +53,15 @@ let x = function(e) {
         code: x,
         outboundPromotion: h,
         transitionState: p
-    } = e, [f, T] = s.useState(null), S = (0, u.GV)(), {
+    } = e, [T, f] = s.useState(null), S = (0, u.GV)(), {
         analyticsLocations: E
     } = (0, c.Ay)(d.A.USER_SETTINGS_GIFT_INVENTORY);
     return (s.useEffect(() => {
         null == x && (0, m.kd)({
             promotionId: h.id,
             analyticsLocations: E
-        }).then(e => n(e)).catch(e => T(e?.body?.code))
-    }, [x, h.id, n, E]), null != f) ? (0, i.jsx)(A, {
+        }).then(e => n(e)).catch(e => f(e?.body?.code))
+    }, [x, h.id, n, E]), null != T) ? (0, i.jsx)(A, {
         onClose: t,
         transitionState: p
     }) : null == x ? (0, i.jsx)(r.y$y, {
