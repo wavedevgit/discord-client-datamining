@@ -1,7 +1,7 @@
 /** chunk id: 562991 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => C
+    A: () => E
 });
 var i = n(627968),
     s = n(64700),
@@ -21,20 +21,20 @@ var i = n(627968),
     f = n(171616),
     x = n(782691);
 
-function C(e) {
+function E(e) {
     let {
         channel: t,
         connected: n,
         hovered: l,
-        subtitle: C,
-        onClick: E,
+        subtitle: E,
+        onClick: C,
         showEmptyChannelTopic: I
     } = e, N = (0, r.bG)([u.A], () => u.A.getChannelStatus(t)), {
         enableHangoutWindow: b
     } = (0, h.Dm)({
         guildId: t.guild_id,
         location: "VoiceChannelStatus"
-    }), S = b && (0, A.TP)(N), T = null != N && N.length > 0 && !S, v = (0, d.Ay)(t, !0), y = null != C && C.length > 0;
+    }), S = b && (0, A.TP)(N), T = null != N && N.length > 0 && !S, v = (0, d.Ay)(t, !0), y = null != E && E.length > 0;
     if (s.useEffect(() => {
             T && _.default.track(g.HAw.VOICE_CHANNEL_TOPIC_VIEWED, {
                 channel_id: t.id,
@@ -44,7 +44,7 @@ function C(e) {
     let j = a()(f.Ui, n && v ? f.BI : null);
     return T ? (0, i.jsx)(c.DUT, {
         className: j,
-        onClick: v ? E : void 0,
+        onClick: v ? C : void 0,
         children: (0, i.jsx)(c.Text, {
             variant: "text-xs/medium",
             className: a()(f.qS, x.PT),
@@ -56,7 +56,7 @@ function C(e) {
         })
     }) : n && v && !S && (!y || l) && I ? (0, i.jsxs)(c.DUT, {
         className: j,
-        onClick: E,
+        onClick: C,
         children: [(0, i.jsx)(c.Text, {
             variant: "text-xs/medium",
             className: f.qS,
@@ -67,6 +67,6 @@ function C(e) {
             size: "xxs"
         })]
     }) : y ? (0, i.jsx)(o.A, {
-        children: C
+        children: E
     }) : null
 }

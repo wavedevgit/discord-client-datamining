@@ -20,8 +20,8 @@ var i = n(627968),
     p = n(864436),
     f = n(835072),
     x = n(793574),
-    C = n(688810),
-    E = n(139286),
+    E = n(688810),
+    C = n(139286),
     I = n(47167),
     N = n(713517),
     b = n(854627),
@@ -57,8 +57,8 @@ function B(e) {
         location: "VoiceInviteSuggestionsPopover"
     }), {
         analyticsLocations: g
-    } = (0, C.Ay)(x.A.VOICE_INVITE_SUGGESTIONS_POPOVER);
-    (0, E.A)({
+    } = (0, E.Ay)(x.A.VOICE_INVITE_SUGGESTIONS_POPOVER);
+    (0, C.A)({
         name: c.ImpressionNames.VOICE_INVITE_SUGGESTIONS_POPOVER,
         type: c.ImpressionTypes.POPOUT,
         properties: {
@@ -131,7 +131,7 @@ function H(e) {
         ringingEnabled: l
     } = e, r = t.guild_id, o = s.useRef(null), c = (0, d.bG)([y.Ay], () => y.Ay.getMember(r, n.id), [r, n.id]), {
         isHoveringOrFocusing: x
-    } = (0, N.A)(o), [C, E] = s.useState(null), {
+    } = (0, N.A)(o), [E, C] = s.useState(null), {
         icon: T,
         iconColor: j,
         tooltipText: D,
@@ -163,7 +163,7 @@ function H(e) {
         voiceChannel: q
     } = (0, g.A)({
         userId: n.id
-    }), X = (0, I.Ay)(q), Q = (0, h.S31)(h.clD.ONLINE), J = "success" === C || "sending" === C, $ = s.useCallback(e => {
+    }), X = (0, I.Ay)(q), Q = (0, h.S31)(h.clD.ONLINE), J = "success" === E || "sending" === E, $ = s.useCallback(e => {
         e.stopPropagation(), w || H()
     }, [H, w]), Z = s.useCallback(async () => {
         if (J) return;
@@ -180,9 +180,9 @@ function H(e) {
             }
             return e?.code ?? null
         }
-        E("sending");
+        C("sending");
         let i = await e();
-        null == i ? E(null) : m.A.enqueue({
+        null == i ? C(null) : m.A.enqueue({
             type: m.F.USER,
             user: n,
             inviteKey: i,
@@ -191,7 +191,7 @@ function H(e) {
                 source: G.PE1.VOICE_INVITE_SUGGESTIONS
             }
         }, e => {
-            E(e ? "success" : null)
+            C(e ? "success" : null)
         })
     }, [J, n, t]), {
         avatarDecorationSrc: ee,
@@ -251,19 +251,19 @@ function H(e) {
                     children: er ? X : Y.text
                 })]
             })]
-        }), "sending" === C && (0, i.jsx)("div", {
+        }), "sending" === E && (0, i.jsx)("div", {
             className: P.r$,
             children: (0, i.jsx)(h.nvX, {
                 dotRadius: 2,
                 themed: !0
             })
-        }), "success" === C && (0, i.jsx)(h.Text, {
+        }), "success" === E && (0, i.jsx)(h.Text, {
             variant: "text-xs/medium",
             color: "text-muted",
             className: P.h5,
             lineClamp: 1,
             children: U.intl.string(U.t["8BEiNn"])
-        }), null == C && !l && (0, i.jsx)("div", {
+        }), null == E && !l && (0, i.jsx)("div", {
             className: P.SB,
             children: (0, i.jsx)(h.Rvf, {
                 color: "currentColor",

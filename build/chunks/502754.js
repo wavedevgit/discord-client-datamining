@@ -20,14 +20,14 @@ var i = n(627968),
     p = n(405269),
     f = n(576456),
     x = n(712209),
-    C = n(652215),
-    E = n(985018),
+    E = n(652215),
+    C = n(985018),
     I = n(915613);
 let N = {
         left: 4,
         right: -12
     },
-    b = [C.lAJ.THREAD_CREATED];
+    b = [E.lAJ.THREAD_CREATED];
 
 function S(e) {
     let {
@@ -75,7 +75,7 @@ function T(e) {
         location: "20e3b0_1"
     }, {
         autoTrackExposure: !1
-    }), r = m.hH.useSetting(), A = (0, u.iJ)(n), f = !1, N = 0 === t.messages.length || a()(t.messages[0].timestamp).isSame(a()(), "day"), b = g.default.getUser(_.default.getId())?.hasFlag(C.nhx.SPAMMER) ?? !1, T = [];
+    }), r = m.hH.useSetting(), A = (0, u.iJ)(n), f = !1, N = 0 === t.messages.length || a()(t.messages[0].timestamp).isSame(a()(), "day"), b = g.default.getUser(_.default.getId())?.hasFlag(E.nhx.SPAMMER) ?? !1, T = [];
     if (!t.collapsed) {
         let e = null,
             c = null,
@@ -101,7 +101,7 @@ function T(e) {
             className: I.Gr,
             children: (0, i.jsx)(o.QWc, {
                 variant: "primary",
-                text: `${E.intl.string(E.t["9OB9hq"])} \u203A`,
+                text: `${C.intl.string(C.t["9OB9hq"])} \u203A`,
                 onClick: e => s(e, m[m.length - 1].id)
             })
         }, "view-all")), 0 === T.length && (T = [(0, i.jsx)(o.y$y, {}, "spinner")])

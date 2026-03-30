@@ -24,8 +24,8 @@ let A = s.forwardRef(function(e, t) {
         upperBadge: p,
         lowerBadge: f,
         lowerBadgeSize: x,
-        showPill: C = !0,
-        className: E,
+        showPill: E = !0,
+        className: C,
         "aria-label": I,
         children: N,
         onMouseEnter: b,
@@ -33,7 +33,7 @@ let A = s.forwardRef(function(e, t) {
         onMouseDown: T
     } = e, v = (0, r.Vd)(n), [y, j] = s.useState(!1), R = "string" == typeof g && null == I ? g : I;
     return (0, i.jsxs)(d.c, {
-        children: [C ? (0, i.jsx)("div", {
+        children: [E ? (0, i.jsx)("div", {
             className: h.Io,
             children: (0, i.jsx)(c.A, {
                 hovered: y,
@@ -56,7 +56,7 @@ let A = s.forwardRef(function(e, t) {
                         S?.(), j(!1)
                     },
                     onMouseDown: T,
-                    className: a()(h.oZ, E, {
+                    className: a()(h.oZ, C, {
                         [h.wH]: _ || y
                     }),
                     onClick: l,

@@ -34,10 +34,10 @@ let f = s.memo(function(e) {
         return n.forEach(t => {
             null != f[t.channelId] && e++
         }), e
-    }, [f, n]), C = null == n ? 0 : n.length, E = (0, l.rm)(`progress-bar-${t.id}`);
+    }, [f, n]), E = null == n ? 0 : n.length, C = (0, l.rm)(`progress-bar-${t.id}`);
     return (0, i.jsxs)("li", {
         children: [(0, i.jsxs)(o.DUT, {
-            ...E,
+            ...C,
             role: "button",
             focusProps: {
                 offset: {
@@ -61,7 +61,7 @@ let f = s.memo(function(e) {
                         className: g.Cv,
                         children: _.intl.format(_.t.eqZ1lW, {
                             numberHook: p,
-                            total: C.toString(),
+                            total: E.toString(),
                             completed: x.toString()
                         })
                     }), (0, i.jsx)(h.A, {
@@ -74,7 +74,7 @@ let f = s.memo(function(e) {
             }), (0, i.jsx)(o.iCB, {
                 className: g.hr,
                 foregroundGradientColor: [r.A.unsafe_rawColors.GREEN_300.css, r.A.unsafe_rawColors.GREEN_230.css],
-                percent: x / C * 100 + 3,
+                percent: x / E * 100 + 3,
                 animate: !0
             })]
         }), (0, i.jsx)("div", {

@@ -20,8 +20,8 @@ var i = n(627968),
     p = n(332772),
     f = n(594832),
     x = n(631784),
-    C = n(721932),
-    E = n(310209),
+    E = n(721932),
+    C = n(310209),
     I = n(961350),
     N = n(290863),
     b = n(954571),
@@ -93,7 +93,7 @@ function V(e) {
             userIds: q
         }),
         Z = "loading" === Q || 0 === J.length,
-        ee = s.useMemo(() => J.map(e => C.A.fromSKU(e)).filter(S.Vq), [J]),
+        ee = s.useMemo(() => J.map(e => E.A.fromSKU(e)).filter(S.Vq), [J]),
         et = (0, c.A)(Z ? w : ee, B),
         en = s.useMemo(() => {
             let e = new Set(q),
@@ -105,7 +105,7 @@ function V(e) {
             return et.map(t => {
                 let n = Object.entries($[t.skuId] ?? {}).filter(t => {
                         let [n, i] = t;
-                        return i === E.j.WISHLIST && e.has(n)
+                        return i === C.j.WISHLIST && e.has(n)
                     }).map(e => {
                         let [t] = e;
                         return t

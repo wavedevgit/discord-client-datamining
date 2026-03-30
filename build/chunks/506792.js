@@ -25,8 +25,8 @@ let f = (0, c.a)(function(e) {
         position: c,
         disableManageChannels: f,
         sorting: x,
-        sortingType: C,
-        sortingPosition: E,
+        sortingType: E,
+        sortingPosition: C,
         connectChannelDragSource: I,
         connectChannelDropTarget: N,
         tabIndex: b
@@ -45,8 +45,8 @@ let f = (0, c.a)(function(e) {
         })
     }, [S]);
     if (null == S) return null;
-    let R = (0, A.O6)(c, E),
-        O = (0, A.h$)(S, x, C),
+    let R = (0, A.O6)(c, C),
+        O = (0, A.h$)(S, x, E),
         L = (0, i.jsx)("div", {
             className: a()(R, {
                 [p.r9]: O,

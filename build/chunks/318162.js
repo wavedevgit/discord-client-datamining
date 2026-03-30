@@ -20,8 +20,8 @@ var i = n(627968),
     p = n(946356),
     f = n(254828),
     x = n(783123),
-    C = n(996988),
-    E = n(985018),
+    E = n(996988),
+    C = n(985018),
     I = n(38351),
     N = n(724693);
 
@@ -46,7 +46,7 @@ function b(e) {
                 ref: R,
                 user: t,
                 displayProfile: S,
-                themeType: C.d.SIDEBAR,
+                themeType: E.d.SIDEBAR,
                 themeOverride: T,
                 children: (0, i.jsx)(l.d_W, {
                     children: (0, i.jsxs)("div", {
@@ -64,10 +64,10 @@ function b(e) {
                                     user: t
                                 }), (0, i.jsx)(r.Heading, {
                                     variant: "heading-lg/bold",
-                                    children: E.intl.string(E.t.b33pLD)
+                                    children: C.intl.string(C.t.b33pLD)
                                 }), (0, i.jsx)(r.Text, {
                                     variant: "text-sm/medium",
-                                    children: E.intl.format(v ? E.t["8F+WNz"] : E.t["/cZp5s"], {
+                                    children: C.intl.format(v ? C.t["8F+WNz"] : C.t["/cZp5s"], {
                                         username: h.Ay.getName(n.guild_id, n.id, t)
                                     })
                                 })]

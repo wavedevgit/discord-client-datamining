@@ -20,8 +20,8 @@ var i = n(627968),
     p = n(287809),
     f = n(954571),
     x = n(562153),
-    C = n(652215),
-    E = n(985018),
+    E = n(652215),
+    C = n(985018),
     I = n(4568);
 
 function N(e) {
@@ -46,9 +46,9 @@ function N(e) {
             children: [(0, i.jsx)(r.Text, {
                 variant: "text-sm/normal",
                 className: I.rN,
-                children: E.intl.format(E.t.CKIMrx, {
+                children: C.intl.format(C.t.CKIMrx, {
                     user: d,
-                    activityName: c?.name ?? E.intl.string(E.t.GIWFlF)
+                    activityName: c?.name ?? C.intl.string(C.t.GIWFlF)
                 })
             }), (0, i.jsx)(r.Text, {
                 variant: "text-xs/normal",
@@ -85,7 +85,7 @@ function b(e) {
             children: [(0, i.jsx)(r.Text, {
                 variant: "text-sm/normal",
                 className: I.qJ,
-                children: E.intl.format(E.t.TlVwqn, {
+                children: C.intl.format(C.t.TlVwqn, {
                     user: o,
                     userHook: (e, t) => (0, i.jsx)(r.Text, {
                         variant: "text-sm/semibold",
@@ -165,14 +165,14 @@ function v(e) {
     let c = (0, l.bG)([_.A], () => _.A.getHistory(t.id), [t.id]),
         d = c.length > 0;
     return (s.useEffect(() => {
-        d && f.default.track(C.HAw.OPEN_POPOUT, {
+        d && f.default.track(E.HAw.OPEN_POPOUT, {
             type: "Voice Channel History",
             channel_id: t.id,
             source: n
         })
     }, [d, t.id, n]), d) ? (0, i.jsxs)("div", {
         role: "dialog",
-        "aria-label": E.intl.string(E.t.N0ED9s),
+        "aria-label": C.intl.string(C.t.N0ED9s),
         className: I.kL,
         onMouseEnter: a,
         onMouseLeave: o,
@@ -186,7 +186,7 @@ function v(e) {
                     children: (0, i.jsx)(r.Text, {
                         variant: "text-sm/medium",
                         color: "text-muted",
-                        children: E.intl.string(E.t.N0ED9s)
+                        children: C.intl.string(C.t.N0ED9s)
                     })
                 }), (0, i.jsx)("ol", {
                     className: I.Gz,

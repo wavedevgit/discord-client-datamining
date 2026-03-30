@@ -8,9 +8,9 @@ n.d(t, {
     ed: () => p,
     f7: () => f,
     ft: () => u,
-    gU: () => E,
+    gU: () => C,
     oT: () => m,
-    pK: () => C,
+    pK: () => E,
     tR: () => A,
     wN: () => d
 });
@@ -139,7 +139,7 @@ function x(e) {
     })
 }
 
-function C(e) {
+function E(e) {
     let {
         gameApplicationId: t,
         buttonVariant: n
@@ -150,7 +150,7 @@ function C(e) {
     })
 }
 
-function E(e) {
+function C(e) {
     let {
         guildId: t,
         gameApplicationId: n

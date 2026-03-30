@@ -20,9 +20,9 @@ var i = n(627968),
     p = n(166444),
     f = n(652215),
     x = n(790782),
-    C = n(928409);
+    E = n(928409);
 
-function E(e, t) {
+function C(e, t) {
     let n = t.getGuildId();
     if (null == n) throw Error("TextChannel, preloadChannel: Channel does not have a guildId");
     o.A.preload(n, t.id)
@@ -66,15 +66,15 @@ class I extends g.Ay {
             canReorderChannel: r
         } = this.props, o = (0, i.jsx)("li", {
             className: a()(this.getClassName(), {
-                [C.r9]: this.isDisabled()
+                [E.r9]: this.isDisabled()
             }),
             "data-dnd-name": e.name,
             children: (0, i.jsxs)(p.Ay, {
-                className: C.Ki,
+                className: E.Ki,
                 channel: e,
                 selected: t,
                 onClick: this.handleClick,
-                onMouseDown: E,
+                onMouseDown: C,
                 onContextMenu: this.handleContextMenu,
                 connectDragPreview: r ? l : null,
                 "aria-label": (0, u.Ay)({

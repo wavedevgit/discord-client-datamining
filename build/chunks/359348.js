@@ -20,8 +20,8 @@ var i = n(627968),
     p = n(399925),
     f = n(652215),
     x = n(985018),
-    C = n(862741),
-    E = n(145394);
+    E = n(862741),
+    C = n(145394);
 
 function I(e) {
     (0, o.L3)(e, async () => {
@@ -45,9 +45,9 @@ let N = e => {
             title: x.intl.format(x.t["o+srEw"], {
                 keybind: t,
                 keybindHook: () => (0, i.jsx)("span", {
-                    className: C.E,
+                    className: E.E,
                     children: (0, i.jsx)(r.e7I, {
-                        className: C.d,
+                        className: E.d,
                         shortcut: t
                     })
                 })
@@ -58,7 +58,7 @@ let N = e => {
             }),
             graphic: {
                 type: "image",
-                src: E
+                src: C
             },
             caretConfig: {
                 align: "center"
@@ -74,18 +74,18 @@ let N = e => {
             n = (0, l.bG)([h.A], () => h.A.hasLayers()),
             a = (0, g.Et)(),
             o = (0, l.bG)([_.A], () => _.A.getIsAtMaxSaveClipOperations()),
-            C = (0, l.bG)([A.Ay], () => A.Ay.getKeybindForAction(f.hCu.SAVE_CLIP));
-        if (!a || null == C || n) return null;
-        let E = m.dI(C.shortcut, !0);
+            E = (0, l.bG)([A.Ay], () => A.Ay.getKeybindForAction(f.hCu.SAVE_CLIP));
+        if (!a || null == E || n) return null;
+        let C = m.dI(E.shortcut, !0);
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(N, {
-                keybindString: E,
+                keybindString: C,
                 targetElementRef: e
             }), (0, i.jsx)(u.A, {
                 ref: e,
                 disabled: o,
-                tooltipText: null != C ? x.intl.formatToPlainString(x.t.HIMcv1, {
-                    hotkey: m.dI(C?.shortcut, !0)
+                tooltipText: null != E ? x.intl.formatToPlainString(x.t.HIMcv1, {
+                    hotkey: m.dI(E?.shortcut, !0)
                 }) : x.intl.string(x.t.s52pju),
                 onClick: () => {
                     (0, p.l0)(), (0, d.X)(t, d.O.CLIP)

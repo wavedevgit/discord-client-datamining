@@ -20,8 +20,8 @@ var i = n(627968),
     p = n(606256),
     f = n(652215),
     x = n(819638),
-    C = n(985018),
-    E = n(186942);
+    E = n(985018),
+    C = n(186942);
 let I = {
     origin: {
         x: -16,
@@ -71,17 +71,17 @@ function b(e) {
         },
         selected: T,
         onContextMenu: N,
-        tooltip: C.intl.string(C.t.l5WIbf),
+        tooltip: E.intl.string(E.t.l5WIbf),
         icon: a.U1e
     });
     return t ? y : (0, i.jsx)("div", {
-        className: E.Uq,
+        className: C.Uq,
         children: (0, i.jsxs)(h.A, {
             tutorialId: S ? "create-more-servers" : "create-first-server",
             inlineSpecs: I,
             position: "right",
             children: [y, null != n && (0, i.jsx)(g.Ay, {
-                name: C.intl.string(C.t["45xjM5"]),
+                name: E.intl.string(E.t["45xjM5"]),
                 targetNode: n,
                 below: !0,
                 noCombine: !0

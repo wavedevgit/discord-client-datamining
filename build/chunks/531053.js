@@ -1,7 +1,7 @@
 /** chunk id: 531053 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => E,
+    Ay: () => C,
     g4: () => N,
     qv: () => I
 });
@@ -76,7 +76,7 @@ function x(e) {
     })
 }
 
-function C(e) {
+function E(e) {
     let {
         name: t,
         targetNode: n,
@@ -108,7 +108,7 @@ function C(e) {
         })
     })
 }
-let E = s.memo(function(e) {
+let C = s.memo(function(e) {
     let {
         name: t,
         targetNode: n,
@@ -123,7 +123,7 @@ let E = s.memo(function(e) {
             name: t,
             targetNode: n,
             below: l
-        }), r ? (0, i.jsx)(C, {
+        }), r ? (0, i.jsx)(E, {
             name: t,
             targetNode: n,
             onDragOverChanged: a

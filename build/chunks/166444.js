@@ -208,32 +208,34 @@ let z = i.memo(function(e) {
             mentionCount: $,
             resolvedUnreadSetting: Z,
             isFavoriteSuggestion: q,
-            hasActiveEvent: J = !1
-        } = e, Y = Z === w.e.ALL_MESSAGES || null != $ && $ > 0, X = (0, o.bG)([j.A], () => Object.values(j.A.getVoiceStatesForChannel(n.id)).length > 0, [n.id]), {
-            role: Q,
-            ...ee
-        } = (0, r.rm)(n.id), et = i.useRef(null), en = i.useRef(null), el = (0, b.A)(n);
-        null != el && _.A.getConfig({
-            guildId: el,
+            hasActiveEvent: J = !1,
+            transitionExtras: Y
+        } = e, X = Z === w.e.ALL_MESSAGES || null != $ && $ > 0, Q = (0, o.bG)([j.A], () => Object.values(j.A.getVoiceStatesForChannel(n.id)).length > 0, [n.id]), {
+            role: ee,
+            ...et
+        } = (0, r.rm)(n.id), en = i.useRef(null), el = i.useRef(null), ei = (0, b.A)(n);
+        null != ei && _.A.getConfig({
+            guildId: ei,
             location: "channel_item"
         });
-        let ei = L.BVt.CHANNEL(el, n.id),
-            ea = (0, p.Ay)(n),
-            es = n.isGuildVocal(),
-            er = null != N || null != x || null != A || W,
-            eo = (0, l.jsx)("div", {
+        let ea = L.BVt.CHANNEL(ei, n.id),
+            es = (0, p.Ay)(n),
+            er = n.isGuildVocal(),
+            eo = null != N || null != x || null != A || W,
+            eu = (0, l.jsx)("div", {
                 className: s()({
                     [P.ow]: q
                 }),
-                ref: en,
+                ref: el,
                 children: (0, l.jsxs)(R.A, {
-                    role: es && !g ? "button" : "link",
-                    href: es ? void 0 : ei,
+                    role: er && !g ? "button" : "link",
+                    href: er ? void 0 : ea,
                     target: "_blank",
-                    ref: et,
+                    ref: en,
                     className: P.nf,
                     onClick: () => N?.(n),
-                    ...ee,
+                    transitionExtras: Y,
+                    ...et,
                     "aria-label": U,
                     "aria-current": h ? "page" : void 0,
                     focusProps: {
@@ -245,7 +247,7 @@ let z = i.memo(function(e) {
                             className: y,
                             channel: n,
                             guild: F,
-                            hasUsersInVoiceChannel: X,
+                            hasUsersInVoiceChannel: Q,
                             hasActiveThreads: E,
                             locked: m
                         }), (0, l.jsx)(u.A, {
@@ -255,7 +257,7 @@ let z = i.memo(function(e) {
                             "aria-hidden": !0,
                             children: (0, l.jsx)(V, {
                                 channel: n,
-                                name: null != a ? a : ea
+                                name: null != a ? a : es
                             })
                         }), i.Children.count(B) > 0 ? (0, l.jsx)("div", {
                             onClick: k,
@@ -275,8 +277,8 @@ let z = i.memo(function(e) {
                 })
             });
         return (0, l.jsx)(d.vN3, {
-            focusTarget: et,
-            ringTarget: en,
+            focusTarget: en,
+            ringTarget: el,
             offset: {
                 top: 2,
                 bottom: 2,
@@ -284,13 +286,13 @@ let z = i.memo(function(e) {
             },
             children: (0, l.jsxs)("div", {
                 ref: t,
-                className: s()(S, er ? P.iE : P.IA, (() => {
+                className: s()(S, eo ? P.iE : P.IA, (() => {
                     if (h) return s()(O.rM, G.SELECTED);
                     if (g) return s()(O.rM, G.CONNECTED);
                     if (m) return G.LOCKED;
                     if (c) return G.MUTED;
                     if (f)
-                        if (Y) return G.UNREAD_IMPORTANT;
+                        if (X) return G.UNREAD_IMPORTANT;
                         else return G.UNREAD_LESS_IMPORTANT;
                     return null
                 })(), function(e) {
@@ -317,8 +319,8 @@ let z = i.memo(function(e) {
                 onMouseEnter: I,
                 onMouseLeave: H,
                 children: [c || !f ? null : (0, l.jsx)("div", {
-                    className: s()(P.gy, Y ? P.WS : void 0)
-                }), v?.(eo) ?? eo]
+                    className: s()(P.gy, X ? P.WS : void 0)
+                }), v?.(eu) ?? eu]
             })
         })
     }) : null;

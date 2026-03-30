@@ -20,8 +20,8 @@ var i = n(627968),
     p = n(956793),
     f = n(401843),
     x = n(817281),
-    C = n(820284),
-    E = n(765671),
+    E = n(820284),
+    C = n(765671),
     I = n(475743),
     N = n(646865),
     b = n(10716),
@@ -74,8 +74,8 @@ var i = n(627968),
     ep = n(147036),
     ef = n(203982),
     ex = n(723702),
-    eC = n(837921),
-    eE = n(475815),
+    eE = n(837921),
+    eC = n(475815),
     eI = n(134047),
     eN = n(313961),
     eb = n(520698),
@@ -156,13 +156,13 @@ class ek extends s.PureComponent {
             channel: e,
             layout: t
         } = this.props;
-        this.currentDocument.addEventListener(eE.Wb, this.handleFullScreenChange), eg.default.track(eM.HAw.VIDEO_LAYOUT_TOGGLED, {
+        this.currentDocument.addEventListener(eC.Wb, this.handleFullScreenChange), eg.default.track(eM.HAw.VIDEO_LAYOUT_TOGGLED, {
             video_layout: this.inPopout ? "popout" : t,
             ...(0, j.QS)(e.id)
         })
     }
     componentWillUnmount() {
-        this._videoBackgroundTooltipTimeout.stop(), this.currentDocument.removeEventListener(eE.Wb, this.handleFullScreenChange), this.inPopout && (0, ex.isMac)() || this.maybeLeaveFullScreen()
+        this._videoBackgroundTooltipTimeout.stop(), this.currentDocument.removeEventListener(eC.Wb, this.handleFullScreenChange), this.inPopout && (0, ex.isMac)() || this.maybeLeaveFullScreen()
     }
     componentDidUpdate(e) {
         let {
@@ -171,10 +171,10 @@ class ek extends s.PureComponent {
             mode: i,
             layout: s
         } = this.props, l = this.getRootNode();
-        null != l && e.mode === eM._Of.VIDEO && i === eM._Of.VOICE && (0, eE._U)(l, this.currentDocument) && (0, eE.sP)(l, this.currentDocument), (e.participantsOpen !== t || s !== e.layout) && this._contentRef.current?.triggerResize(), e.inCall && !n && this.inPopout && m.h.wait(() => this.handleClosePopout())
+        null != l && e.mode === eM._Of.VIDEO && i === eM._Of.VOICE && (0, eC._U)(l, this.currentDocument) && (0, eC.sP)(l, this.currentDocument), (e.participantsOpen !== t || s !== e.layout) && this._contentRef.current?.triggerResize(), e.inCall && !n && this.inPopout && m.h.wait(() => this.handleClosePopout())
     }
     get nativePopoutSupported() {
-        return ex.isPlatformEmbedded && eC.Ay.supportsFeature(eM.BYE.POPOUT_WINDOWS)
+        return ex.isPlatformEmbedded && eE.Ay.supportsFeature(eM.BYE.POPOUT_WINDOWS)
     }
     get popoutSupported() {
         return !ex.isPlatformEmbedded || this.nativePopoutSupported
@@ -240,15 +240,15 @@ class ek extends s.PureComponent {
     }
     handleFullScreenChange = () => {
         let e = this.getRootNode();
-        null != e && ((0, eE._U)(e, this.currentDocument) || this.props.layout !== eM.DUB.FULL_SCREEN || this.handleFullScreen())
+        null != e && ((0, eC._U)(e, this.currentDocument) || this.props.layout !== eM.DUB.FULL_SCREEN || this.handleFullScreen())
     };
     handleFullScreen = () => {
         let e = this.getRootNode();
-        null != e && (this.props.layout !== eM.DUB.FULL_SCREEN ? (this._prevLayout = this.props.layout, this.handleChangeLayout(eM.DUB.FULL_SCREEN), (0, eE.tl)(e)) : this.maybeLeaveFullScreen())
+        null != e && (this.props.layout !== eM.DUB.FULL_SCREEN ? (this._prevLayout = this.props.layout, this.handleChangeLayout(eM.DUB.FULL_SCREEN), (0, eC.tl)(e)) : this.maybeLeaveFullScreen())
     };
     maybeLeaveFullScreen = () => {
         let e = this.getRootNode();
-        null == e || this.props.layout === eM.DUB.FULL_SCREEN && (this.handleChangeLayout(this._prevLayout), (0, eE.sP)(e, this.currentDocument))
+        null == e || this.props.layout === eM.DUB.FULL_SCREEN && (this.handleChangeLayout(this._prevLayout), (0, eC.sP)(e, this.currentDocument))
     };
     handleToggleLayout = () => {
         this.handleChangeLayout(this.props.layout === eM.DUB.NORMAL ? eM.DUB.NO_CHAT : eM.DUB.NORMAL)
@@ -580,7 +580,7 @@ class ek extends s.PureComponent {
             awaitingRemoteSessionInfo: _,
             currentChannelActivities: g,
             callContainerDimensions: p
-        } = this.props, f = A === eM.DUB.MINIMUM, x = f || A === eM.DUB.NORMAL, C = s && a === eM._Of.VIDEO, E = (g?.length ?? 0) > 0 && u.isPrivate();
+        } = this.props, f = A === eM.DUB.MINIMUM, x = f || A === eM.DUB.NORMAL, E = s && a === eM._Of.VIDEO, C = (g?.length ?? 0) > 0 && u.isPrivate();
         return this._lastIdleProps = e, (0, i.jsx)(Z.A, {
             renderHeader: this.renderHeader,
             renderBottomLeft: this.renderBottomLeft,
@@ -601,13 +601,13 @@ class ek extends s.PureComponent {
                 participants: o,
                 filteredParticipants: c,
                 participantsVersion: d,
-                selectedParticipant: C ? n : null,
+                selectedParticipant: E ? n : null,
                 layout: A,
                 idle: e.idle,
                 mode: a,
                 onSelectParticipant: this.handleSelectParticipant,
                 onContextMenuParticipant: this.handleContextMenu,
-                showParticipants: r && (!x || E),
+                showParticipants: r && (!x || C),
                 popoutType: t,
                 awaitingRemoteSessionInfo: _,
                 callContainerDimensions: p
@@ -684,13 +684,13 @@ let eV = function(e) {
     } = e, {
         width: o = 0,
         ref: c
-    } = (0, E.Ay)(), {
+    } = (0, C.Ay)(), {
         width: h = 0,
         height: m = 0,
         ref: g
-    } = (0, E.Ay)(), {
+    } = (0, C.Ay)(), {
         ref: p
-    } = (0, E.Ay)(), f = (0, B.Us)(), N = (0, U.A)(), S = (0, d.bG)([eA.A], () => (N?.channelId ?? eA.A.getVoiceChannelId()) === t.id), {
+    } = (0, C.Ay)(), f = (0, B.Us)(), N = (0, U.A)(), S = (0, d.bG)([eA.A], () => (N?.channelId ?? eA.A.getVoiceChannelId()) === t.id), {
         participants: v,
         filteredParticipants: j,
         participantsVersion: O,
@@ -738,9 +738,9 @@ let eV = function(e) {
         let e = !1,
             t = null;
         return (async () => {
-            S && L === eM._Of.VIDEO && (t = await eC.Ay.blockDisplaySleep(), e && null != t && eC.Ay.unblockDisplaySleep(t))
+            S && L === eM._Of.VIDEO && (t = await eE.Ay.blockDisplaySleep(), e && null != t && eE.Ay.unblockDisplaySleep(t))
         })(), () => {
-            null != t ? eC.Ay.unblockDisplaySleep(t) : e = !0
+            null != t ? eE.Ay.unblockDisplaySleep(t) : e = !0
         }
     }, [S, L]);
     let es = (0, D.mB)(u.M.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK),
@@ -766,7 +766,7 @@ let eV = function(e) {
     } = (0, A.wRf)();
     return (0, i.jsx)(R.f5, {
         value: el,
-        children: (0, i.jsx)(C.A, {
+        children: (0, i.jsx)(E.A, {
             page: eM.liQ.CHANNEL_CALL,
             children: (0, i.jsx)(eS.qh, {
                 children: (0, i.jsxs)(ej.CB, {

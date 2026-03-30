@@ -1,7 +1,7 @@
 /** chunk id: 955454 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => C
+    A: () => E
 });
 var i = n(627968),
     s = n(64700),
@@ -21,12 +21,12 @@ var i = n(627968),
     f = n(37411),
     x = n(440649);
 
-function C(e) {
+function E(e) {
     let {
         channel: t,
         channelRecord: n,
         deleteChannel: l
-    } = e, C = (0, r.yK)([h.A, m.A], () => a()(h.A.getThreadsForParent(n.guild_id, n.id)).values().filter(e => {
+    } = e, E = (0, r.yK)([h.A, m.A], () => a()(h.A.getThreadsForParent(n.guild_id, n.id)).values().filter(e => {
         let {
             id: n
         } = e;
@@ -36,11 +36,11 @@ function C(e) {
             id: t
         } = e;
         return m.A.getChannel(t)
-    }).filter(_.Vq).sort((e, t) => g.default.compare(e.id, t.id)).value(), [t.oldestReadMessageId, n.guild_id, n.id]), E = s.useCallback((e, t) => {
+    }).filter(_.Vq).sort((e, t) => g.default.compare(e.id, t.id)).value(), [t.oldestReadMessageId, n.guild_id, n.id]), C = s.useCallback((e, t) => {
         (0, A.JA)(e, t, f.H9.INBOX)
     }, []);
     return s.useEffect(() => {
-        null == n || !t.isFullyLoaded || t.hasError || t.collapsed || 0 !== C.length || o.h.wait(() => {
+        null == n || !t.isFullyLoaded || t.hasError || t.collapsed || 0 !== E.length || o.h.wait(() => {
             (0, c.ack)(t.channelId, {
                 section: p.JJy.INBOX,
                 object: p.ZSU.ACK_INBOX_FORUM_NO_POSTS,
@@ -49,12 +49,12 @@ function C(e) {
         })
     }), (0, i.jsx)("div", {
         className: x.k,
-        children: C.map(e => (0, i.jsx)(u.Cp, {
+        children: E.map(e => (0, i.jsx)(u.Cp, {
             channel: n,
             children: (0, i.jsx)(d.Ay, {
                 className: x.u,
                 threadId: e.id,
-                goToThread: E
+                goToThread: C
             })
         }, e.id))
     })

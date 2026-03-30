@@ -15,13 +15,13 @@ function u(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
         {
             shouldShowIncidentActions: u,
-            isUnderLockdown: A,
-            incidentData: g
+            isUnderLockdown: g,
+            incidentData: A
         } = (0, r.Li)(e.id),
         E = l.useCallback(() => {
             let t = {
                 source: a.Eo.CONTEXT_MENU,
-                alertType: (0, d.$5)(g)
+                alertType: (0, d.$5)(A)
             };
             (0, s.mMO)(async () => {
                 let {
@@ -33,14 +33,14 @@ function u(e) {
                     analyticsData: t
                 })
             })
-        }, [e.id, g]);
+        }, [e.id, A]);
     return e.features.has(c.GuildFeatures.COMMUNITY) && u ? (0, n.jsx)(s.Drp, {
         id: "server-lockdown",
-        label: A ? o.intl.string(o.t["+tSVi3"]) : o.intl.string(o.t.EPlEdu),
-        icon: t ? A ? s.wUM : s.XAi : void 0,
+        label: g ? o.intl.string(o.t["+tSVi3"]) : o.intl.string(o.t.EPlEdu),
+        icon: t ? g ? s.wUM : s.XAi : void 0,
         leadingAccessory: t ? {
             type: "icon",
-            icon: A ? s.wUM : s.XAi
+            icon: g ? s.wUM : s.XAi
         } : void 0,
         action: E,
         color: "danger"

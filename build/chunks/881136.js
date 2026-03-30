@@ -1,6 +1,6 @@
 /** chunk id: 881136 params = (module,exports,require) **/
 i.d(t, {
-    A: () => g
+    A: () => A
 });
 var n = i(627968);
 i(64700);
@@ -13,7 +13,7 @@ var l = i(311907),
     o = i(652215),
     u = i(985018);
 
-function A() {
+function g() {
     return [{
         setting: o.orn.ALL_MESSAGES,
         label: u.intl.string(u.t["n/bTaY"])
@@ -26,12 +26,12 @@ function A() {
     }]
 }
 
-function g(e) {
+function A(e) {
     let t = function(e) {
             let {
                 suppressEveryone: t,
                 suppressRoles: i,
-                mobilePush: g,
+                mobilePush: A,
                 messageNotifications: E,
                 notifyHighlights: h
             } = (0, l.cf)([d.Ay], () => ({
@@ -47,7 +47,7 @@ function g(e) {
             }
             return (0, n.jsxs)(n.Fragment, {
                 children: [(0, n.jsx)(s.rXV, {
-                    children: A().map(e => {
+                    children: g().map(e => {
                         let {
                             setting: t,
                             label: i
@@ -92,19 +92,19 @@ function g(e) {
                         id: "mobile-push",
                         label: u.intl.string(u.t.h1DL66),
                         action: () => S({
-                            mobile_push: !g
-                        }, c.G_.mobilePush(!g)),
-                        checked: g
+                            mobile_push: !A
+                        }, c.G_.mobilePush(!A)),
+                        checked: A
                     })
                 })]
             })
         }(e),
-        g = (0, l.bG)([d.Ay], () => d.Ay.getMessageNotifications(e.id), [e.id]),
-        E = A()?.find(e => {
+        A = (0, l.bG)([d.Ay], () => d.Ay.getMessageNotifications(e.id), [e.id]),
+        E = g()?.find(e => {
             let {
                 setting: t
             } = e;
-            return t === g
+            return t === A
         })?.label;
     return null != t ? (0, n.jsx)(s.Drp, {
         id: "guild-notifications",

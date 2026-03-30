@@ -20,8 +20,8 @@ var i = n(627968),
     p = n(242919),
     f = n(7054),
     x = n(220995),
-    C = n(582904),
-    E = n(551826),
+    E = n(582904),
+    C = n(551826),
     I = n(159426),
     N = n(25528),
     b = n(530804),
@@ -49,7 +49,7 @@ let B = s.memo(e => {
         channel: l,
         sessionId: a,
         nick: o
-    } = e, x = s.id, C = (0, r.bG)([y.default], () => y.default.getId() === x, [x]), [S, T, R] = (0, r.yK)([j.Ay], () => C ? [!j.Ay.isSupported() || j.Ay.isSelfMute() || j.Ay.isSelfMutedTemporarily(), j.Ay.isSelfDeaf(), !1] : [!j.Ay.isSupported() || j.Ay.isLocalMute(x), !1, j.Ay.isLocalVideoDisabled(x)], [C, x]), O = (0, r.bG)([M.A], () => M.A.isPrioritySpeaker(x)), U = (0, c.A)({
+    } = e, x = s.id, E = (0, r.bG)([y.default], () => y.default.getId() === x, [x]), [S, T, R] = (0, r.yK)([j.Ay], () => E ? [!j.Ay.isSupported() || j.Ay.isSelfMute() || j.Ay.isSelfMutedTemporarily(), j.Ay.isSelfDeaf(), !1] : [!j.Ay.isSupported() || j.Ay.isLocalMute(x), !1, j.Ay.isLocalVideoDisabled(x)], [E, x]), O = (0, r.bG)([M.A], () => M.A.isPrioritySpeaker(x)), U = (0, c.A)({
         userId: x,
         checkSoundSharing: !0
     }), V = (0, _.A)(l.guild_id, x), B = (0, r.bG)([A.A], () => A.A.getGuildRingingUsers(l.id).has(x)), H = (0, r.bG)([d.Ay], () => d.Ay.getEmbeddedActivitiesForChannel(l.id).find(e => {
@@ -62,7 +62,7 @@ let B = s.memo(e => {
     } = (0, g.$j)({
         guildId: l.guild_id,
         location: "VoiceUsers"
-    }), $ = (0, m.Ay)(l, !0, s), Z = (0, r.bG)([p.A], () => C ? p.A.getHangStatusActivity() : null, [C]), ee = (0, f.h)(x), et = (0, b.uy)(l.id, x), {
+    }), $ = (0, m.Ay)(l, !0, s), Z = (0, r.bG)([p.A], () => E ? p.A.getHangStatusActivity() : null, [E]), ee = (0, f.h)(x), et = (0, b.uy)(l.id, x), {
         enableVCStatusIcons: en
     } = I.m.useExperiment({
         guildId: l.guild_id,
@@ -70,7 +70,7 @@ let B = s.memo(e => {
     }, {
         autoTrackExposure: K?.session_id != null
     }), ei = en || J;
-    return (0, i.jsx)(E.A, {
+    return (0, i.jsx)(C.A, {
         shakeLocation: k.uD.VOICE_USER,
         isShaking: U,
         children: (0, i.jsx)(P.Ay, {
@@ -80,7 +80,7 @@ let B = s.memo(e => {
             disconnected: et,
             otherClientSessionType: q?.clientInfo?.os,
             voicePlatform: Q,
-            localMute: S && !C,
+            localMute: S && !E,
             localVideoDisabled: R,
             mute: t || S,
             deaf: n || T,
@@ -91,10 +91,10 @@ let B = s.memo(e => {
             isStreaming: null != Y && Y.channelId === l.id,
             isWatching: null != z && z.state !== w.XYD.ENDED,
             isGuest: V,
-            isSelf: C,
+            isSelf: E,
             application: ei && K?.session_id != null ? W : void 0,
-            showHangStatus: $ && J && (C || null != ee),
-            hangStatusActivity: C ? Z : ee
+            showHangStatus: $ && J && (E || null != ee),
+            hangStatusActivity: E ? Z : ee
         })
     })
 });
@@ -112,7 +112,7 @@ let H = [],
             numAudience: _,
             withGuildIcon: g = !1,
             className: p,
-            children: E,
+            children: C,
             isThread: I = !1
         } = e, [N, v] = s.useState(null), j = s.useRef(null), L = (0, b.$n)(l.id, c ?? H);
         (0, f.s)(l.guild_id, L);
@@ -124,7 +124,7 @@ let H = [],
         }), {
             shouldShow: D,
             dismiss: G
-        } = (0, C.Z0)(l, {
+        } = (0, E.Z0)(l, {
             collapsed: d
         }), k = s.useRef(new o.J_(50, () => {
             v(j.current), j.current = null
@@ -188,13 +188,13 @@ let H = [],
                 channel: l
             }, "ghost-user")), s
         })();
-        return null == z && null == E ? null : (0, i.jsxs)(S.Wr, {
+        return null == z && null == C ? null : (0, i.jsxs)(S.Wr, {
             className: a()(p, V.p_, {
                 [V.yZ]: d,
                 [V.lY]: g,
                 [V.fT]: I
             }),
             collapsed: d,
-            children: [z, E]
+            children: [z, C]
         })
     }

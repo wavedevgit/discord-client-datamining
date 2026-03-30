@@ -12,8 +12,8 @@ var l = i(397927),
     c = i(266648),
     o = i(267102),
     u = i(652215),
-    A = i(488995),
-    g = i(985018);
+    g = i(488995),
+    A = i(985018);
 
 function E(e) {
     let t = (0, o.aL)(),
@@ -24,7 +24,7 @@ function E(e) {
     };
     return (0, n.jsx)(l.Drp, {
         id: "guild-settings",
-        label: g.intl.string(g.t["154/bL"]),
+        label: A.intl.string(A.t["154/bL"]),
         action: () => E(),
         children: (0, c.P)(e).map(t => {
             let {
@@ -39,14 +39,14 @@ function E(e) {
                     return (0, n.jsx)(l.Drp, {
                         id: i,
                         action: () => E(i),
-                        label: g.intl.string(g.t.nRtNqn)
+                        label: A.intl.string(A.t.nRtNqn)
                     }, i);
                 case u.BEX.APP_DIRECTORY:
                     return (0, n.jsx)(l.Drp, {
                         id: i,
                         action: () => {
                             (0, s.transitionToGlobalDiscovery)({
-                                tab: A.GlobalDiscoveryTab.APPS,
+                                tab: g.GlobalDiscoveryTab.APPS,
                                 newSessionState: {
                                     guildId: e.id,
                                     entrypoint: {
@@ -60,7 +60,7 @@ function E(e) {
                             icon: l.tfB
                         },
                         iconLeft: l.tfB,
-                        label: g.intl.string(g.t.AKcFUj)
+                        label: A.intl.string(A.t.AKcFUj)
                     }, i);
                 default:
                     let c = "string" == typeof a ? a : d;

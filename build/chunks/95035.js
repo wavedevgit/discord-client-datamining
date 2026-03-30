@@ -14,21 +14,22 @@ let c = i.forwardRef(function(e, t) {
         onClick: o,
         onKeyPress: d,
         focusProps: u,
-        ...m
-    } = e, x = i.useCallback(e => {
-        e.repeat || ((e.charCode === s.Ks6.SPACE || e.charCode === s.Ks6.ENTER) && (e.preventDefault(), null != n && (0, r.pX)(n), o?.()), d?.(e))
-    }, [n, d, o]), h = i.useCallback(e => {
-        e.metaKey || e.shiftKey || 0 !== e.button || (e.preventDefault(), e.stopPropagation(), null != n && (0, r.pX)(n), o?.())
-    }, [n, o]), f = (0, a.jsx)("a", {
+        transitionExtras: m,
+        ...x
+    } = e, h = i.useCallback(e => {
+        e.repeat || ((e.charCode === s.Ks6.SPACE || e.charCode === s.Ks6.ENTER) && (e.preventDefault(), null != n && (0, r.pX)(n, m), o?.()), d?.(e))
+    }, [n, d, o, m]), f = i.useCallback(e => {
+        e.metaKey || e.shiftKey || 0 !== e.button || (e.preventDefault(), e.stopPropagation(), null != n && (0, r.pX)(n, m), o?.())
+    }, [n, o, m]), g = (0, a.jsx)("a", {
         ref: t,
         href: n,
-        onClick: h,
-        onKeyPress: x,
-        ...m,
+        onClick: f,
+        onKeyPress: h,
+        ...x,
         children: c
     });
     return (0, a.jsx)(l.vN3, {
         ...u,
-        children: f
+        children: g
     })
 })

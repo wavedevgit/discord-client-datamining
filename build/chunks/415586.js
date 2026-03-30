@@ -20,8 +20,8 @@ var i = n(627968),
     p = n(58736),
     f = n(353428),
     x = n(378570),
-    C = n(734057),
-    E = n(31717),
+    E = n(734057),
+    C = n(31717),
     I = n(71393),
     N = n(977997),
     b = n(823471),
@@ -37,7 +37,7 @@ function j(e) {
             baseChannelId: R,
             channelViewSource: O = "Split View"
         } = e,
-        L = (0, r.bG)([C.A], () => C.A.getChannel(j)),
+        L = (0, r.bG)([E.A], () => E.A.getChannel(j)),
         M = (0, r.bG)([I.A], () => I.A.getGuild(L?.getGuildId())),
         D = (0, m.Ay)(L);
     t = L, l = (0, r.bG)([N.A], () => null != t && !a().isEmpty(N.A.getVoiceStatesForChannel(t.id))), s.useEffect(() => {
@@ -52,7 +52,7 @@ function j(e) {
     if (s.useEffect(() => {
             if (null == L || G.current) return;
             G.current = !0;
-            let e = (0, h.C)(C.A.getChannel(L.id), !0);
+            let e = (0, h.C)(E.A.getChannel(L.id), !0);
             (0, u.zV)(T.HAw.CHANNEL_OPENED, {
                 ...e,
                 ...(0, u.qL)(L.id),
@@ -68,7 +68,7 @@ function j(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.A, {
             channel: L,
-            draftType: E.C.ChannelMessage
+            draftType: C.C.ChannelMessage
         }), (0, i.jsx)(p.Ay, {
             toolbar: U,
             "aria-label": v.intl.string(v.t.Pwe8tN),

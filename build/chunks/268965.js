@@ -78,8 +78,8 @@ let p = e => {
             currentCategoryId: g,
             handleSelectCategory: f,
             categoryCounts: x,
-            allEntriesCount: C,
-            isLoading: E
+            allEntriesCount: E,
+            isLoading: C
         } = e;
         return (0, i.jsx)("div", {
             className: A.$$,
@@ -103,7 +103,7 @@ let p = e => {
                         children: [(0, i.jsx)(r.VQ0.Item, {
                             className: m.YU,
                             id: d.mU.ALL,
-                            children: `${h.intl.string(h.t.hEAa2a)} (${C})`
+                            children: `${h.intl.string(h.t.hEAa2a)} (${E})`
                         }, d.mU.ALL), (0, d.g2)(t.id).map(e => {
                             let {
                                 value: t,
@@ -116,7 +116,7 @@ let p = e => {
                             }, t)
                         })]
                     })
-                }), E && null == n ? (0, i.jsx)(r.y$y, {
+                }), C && null == n ? (0, i.jsx)(r.y$y, {
                     className: A.u1
                 }) : n?.map((e, t) => (0, i.jsxs)(s.Fragment, {
                     children: [void 0 !== e.header ? (0, i.jsx)(r.Text, {

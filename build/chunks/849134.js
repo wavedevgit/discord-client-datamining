@@ -31,7 +31,7 @@ function d(e) {
     s.useEffect(() => {
         n?.()
     }, [n]);
-    let C = s.useMemo(() => g?.imageUrl == null ? {
+    let E = s.useMemo(() => g?.imageUrl == null ? {
         type: "image",
         src: c.A,
         aspectRatio: "6/4"
@@ -67,6 +67,6 @@ function d(e) {
         targetElementRef: t,
         title: p ?? r.intl.string(r.t.Ylu2JM),
         body: f ?? r.intl.string(r.t.vgylLQ),
-        graphic: C
+        graphic: E
     })
 }

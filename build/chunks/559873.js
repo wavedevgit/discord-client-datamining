@@ -20,8 +20,8 @@ var i = n(627968),
     p = n(654795),
     f = n(849077),
     x = n(652215),
-    C = n(985018),
-    E = n(68450);
+    E = n(985018),
+    C = n(68450);
 let I = {
     [f.Th.MENTION]: [f.kR.SETTINGS],
     [f.Th.REPLY]: [f.kR.SETTINGS],
@@ -46,7 +46,7 @@ function N(e) {
         onTooltipShow: () => u(!0),
         onTooltipHide: () => u(!1),
         children: (0, i.jsx)(r.DUT, {
-            className: E.XI,
+            className: C.XI,
             onClick: e => {
                 (0, _.Ml)({
                     message: l,
@@ -56,7 +56,7 @@ function N(e) {
             },
             children: (0, i.jsx)(o, {
                 size: d ? "sm" : "xs",
-                className: E.gE
+                className: C.gE
             })
         })
     })
@@ -72,7 +72,7 @@ function b(e) {
         interactionType: d,
         actionType: u
     } = e, h = (0, _.op)(), [A, m] = (0, s.useState)(!1), [g, f] = (0, s.useState)(!1), x = (0, s.useRef)(null), {
-        openMenu: C,
+        openMenu: E,
         closeMenu: I
     } = (0, p.s)();
     return (0, i.jsx)(r.YNO, {
@@ -104,20 +104,20 @@ function b(e) {
             onTooltipHide: () => m(!1),
             children: (0, i.jsx)(r.DUT, {
                 innerRef: x,
-                className: E.XI,
+                className: C.XI,
                 onClick: e => {
                     let t;
                     (0, _.Ml)({
                         message: n,
                         interactionType: d,
                         viewId: h
-                    }), e.stopPropagation(), f(t = !g), t ? C(n.id, u) : I(n.id, u)
+                    }), e.stopPropagation(), f(t = !g), t ? E(n.id, u) : I(n.id, u)
                 },
                 children: (0, i.jsx)(o, {
                     ...e,
                     message: n,
                     "aria-label": l,
-                    className: E.gE,
+                    className: C.gE,
                     size: A ? "sm" : "xs"
                 })
             })
@@ -128,7 +128,7 @@ let S = {
     [f.kR.ACK]: {
         type: "standard",
         Icon: r.A9s,
-        label: C.intl.string(C.t.e6RscS),
+        label: E.intl.string(E.t.e6RscS),
         onClick: e => {
             o.h.dispatch({
                 type: "NOTIFICATIONS_INBOX_ITEM_ACK",
@@ -143,7 +143,7 @@ let S = {
     },
     [f.kR.BOOKMARK]: {
         type: "menu",
-        label: C.intl.string(C.t["9p3D9p"]),
+        label: E.intl.string(E.t["9p3D9p"]),
         Icon: e => null != A.A.getSavedMessage(e.message.channel_id, e.message.id) ? (0, i.jsx)(r.cFy, {
             ...e
         }) : (0, i.jsx)(r.c$8, {
@@ -162,12 +162,12 @@ let S = {
                 "data-menu-migrated-auto": !0,
                 ...n,
                 navId: "message-reminder-create",
-                "aria-label": C.intl.string(C.t.mJ3P0N),
+                "aria-label": E.intl.string(E.t.mJ3P0N),
                 onClose: n.closePopout,
                 onSelect: () => null,
                 children: [null != s ? (0, i.jsx)(r.Drp, {
                     id: "remove-from-for-later",
-                    label: C.intl.string(C.t.SvXS1Z),
+                    label: E.intl.string(E.t.SvXS1Z),
                     icon: r.cFy,
                     leadingAccessory: {
                         type: "icon",
@@ -181,7 +181,7 @@ let S = {
                     })
                 }) : (0, i.jsx)(r.Drp, {
                     id: "create-bookmark",
-                    label: C.intl.string(C.t["9p3D9p"]),
+                    label: E.intl.string(E.t["9p3D9p"]),
                     icon: r.c$8,
                     leadingAccessory: {
                         type: "icon",
@@ -199,7 +199,7 @@ let S = {
     [f.kR.SETTINGS]: {
         type: "menu",
         Icon: r.XFE,
-        label: C.intl.string(C.t.h850Ss),
+        label: E.intl.string(E.t.h850Ss),
         interactionType: _.X8.SETTINGS,
         Menu: e => {
             let {
@@ -210,12 +210,12 @@ let S = {
                 ...n,
                 channel: t,
                 navId: "thread-context",
-                label: C.intl.string(C.t["1NBjqb"])
+                label: E.intl.string(E.t["1NBjqb"])
             }) : (0, i.jsx)(d.A, {
                 ...n,
                 channel: t,
                 navId: "channel-context",
-                label: C.intl.string(C.t.Xm41aV)
+                label: E.intl.string(E.t.Xm41aV)
             })
         }
     }
@@ -237,7 +237,7 @@ function T(e) {
         gap: 4,
         align: "center",
         justify: "center",
-        className: E.o1,
+        className: C.o1,
         children: o.map(e => {
             let t = S[e];
             switch (t.type) {

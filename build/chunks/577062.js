@@ -25,17 +25,17 @@ function u(e) {
         ...p
     } = e, {
         parentAnalyticsLocation: f
-    } = (0, a.Ay)(), x = t || n || u, C = h ? d.l : d.A, E = (0, r.A)(t, n, u, A), {
+    } = (0, a.Ay)(), x = t || n || u, E = h ? d.l : d.A, C = (0, r.A)(t, n, u, A), {
         events: I,
         play: N,
         Component: b
     } = (0, c.q)(x), S = n || u ? l.O1p : b;
-    return s.useEffect(() => () => N(), [N, x]), (0, i.jsx)(C, {
+    return s.useEffect(() => () => N(), [N, x]), (0, i.jsx)(E, {
         iconComponent: S,
         isTrayButton: !0,
         caretColor: x ? "red" : "primaryDark",
         color: x ? "red" : void 0,
-        label: E,
+        label: C,
         onMouseEnter: e => {
             m?.(e), I.onMouseEnter()
         },

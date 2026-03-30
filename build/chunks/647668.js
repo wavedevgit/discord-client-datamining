@@ -20,8 +20,8 @@ var i = n(627968),
     p = n(57991),
     f = n(513461),
     x = n(199285),
-    C = n(347951),
-    E = n(164956),
+    E = n(347951),
+    C = n(164956),
     I = n(63995),
     N = n(69407),
     b = n(624265),
@@ -70,7 +70,7 @@ function k(e) {
 }
 
 function V(e) {
-    let t, n, l, r, d, _, g, p, f, x, C, E, D, U, V, B, H, F, K, W, {
+    let t, n, l, r, d, _, g, p, f, x, E, C, D, U, V, B, H, F, K, W, {
             guild: Y
         } = e,
         z = Y.id,
@@ -115,19 +115,19 @@ function V(e) {
         }), x = (0, c.yK)([y.A], () => {
             let e = y.A.getAllApplicationStreams().filter(e => e.guildId === t).map(e => e.ownerId);
             return (0, m.F7)(e, _)
-        }, [_, t]), C = (0, c.yK)([h.Ay], () => {
+        }, [_, t]), E = (0, c.yK)([h.Ay], () => {
             let e = h.Ay.getEmbeddedActivitiesForGuild(t).flatMap(e => Array.from(e.userIds));
             return (0, m.F7)(e, _)
-        }, [t, _]), E = (0, c.yK)([L.default], () => {
-            let e = C.map(e => L.default.getUser(e));
+        }, [t, _]), C = (0, c.yK)([L.default], () => {
+            let e = E.map(e => L.default.getUser(e));
             return (0, m.aw)(e)
-        }, [C]), D = (0, c.yK)([L.default], () => x.map(e => L.default.getUser(e)), [x]), U = g.filter(e => !x.includes(e.id) && !C.includes(e.id)), V = (0, m.aw)(U), B = D.filter(e => null != e && !C.includes(e.id)), H = (0, c.bG)([T.A], () => T.A.getUserAffinitiesMap(), []), F = s.useMemo(() => (0, v.L)(V, H, "GuildTooltip - nonBlockedUsers"), [V, H]), K = s.useMemo(() => (0, v.L)(p, H, "GuildTooltip - stageSpeakers"), [p, H]), W = s.useMemo(() => (0, v.L)(B, H, "GuildTooltip - streamUsers"), [B, H]), {
+        }, [E]), D = (0, c.yK)([L.default], () => x.map(e => L.default.getUser(e)), [x]), U = g.filter(e => !x.includes(e.id) && !E.includes(e.id)), V = (0, m.aw)(U), B = D.filter(e => null != e && !E.includes(e.id)), H = (0, c.bG)([T.A], () => T.A.getUserAffinitiesMap(), []), F = s.useMemo(() => (0, v.L)(V, H, "GuildTooltip - nonBlockedUsers"), [V, H]), K = s.useMemo(() => (0, v.L)(p, H, "GuildTooltip - stageSpeakers"), [p, H]), W = s.useMemo(() => (0, v.L)(B, H, "GuildTooltip - streamUsers"), [B, H]), {
             voiceUsersToShow: F,
             stageSpeakers: K,
             numStageListeners: f,
             streamUsersToShow: W,
-            embeddedActivitiesUsers: s.useMemo(() => (0, v.L)(E, H, "GuildTooltip - embeddedActivitiesUsers"), [E, H]),
-            hasActivity: p.length > 0 || U.length > 0 || B.length > 0 || E.length > 0
+            embeddedActivitiesUsers: s.useMemo(() => (0, v.L)(C, H, "GuildTooltip - embeddedActivitiesUsers"), [C, H]),
+            hasActivity: p.length > 0 || U.length > 0 || B.length > 0 || C.length > 0
         }),
         Z = w(u.HKD, q, z),
         ee = 0 === X.length ? null : (0, i.jsxs)("div", {
@@ -202,7 +202,7 @@ function H(e) {
         guildJoinRequestStatus: s
     }) : null, r = (0, i.jsx)(V, {
         guild: t
-    }), o = (0, c.bG)([E.A], () => E.A.isViewingRoles(t.id)), d = (0, C.Ig)(t);
+    }), o = (0, c.bG)([C.A], () => C.A.isViewingRoles(t.id)), d = (0, E.Ig)(t);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
             className: a()(P.nM, P.Dl),

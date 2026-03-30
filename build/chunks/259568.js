@@ -25,11 +25,11 @@ function f(e) {
         guild: t,
         targetElementRef: n
     } = e, f = (0, A.A)(t.id), x = (0, h.L)(), {
-        enabled: C
+        enabled: E
     } = d.Ay.useExperiment({
         guildId: t.id,
         location: "progress-bar-coachmark"
-    }), E = (0, r.A)(), I = (0, d._E)(t, C), N = C && I && !E, b = [];
+    }), C = (0, r.A)(), I = (0, d._E)(t, E), N = E && I && !C, b = [];
     return null != f && f && N && b.push(s.M.BOOST_PROGRESS_BAR_ADMIN_COACHMARK), x && null != f && !f && N && b.push(s.M.BOOST_PROGRESS_BAR_MEMBER_COACHMARK), (0, i.jsx)(c.Ay, {
         contentTypes: b,
         children: e => {

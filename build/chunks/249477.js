@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(77729),
     A = n(855511),
     h = n(58149),
-    _ = n(332456),
-    m = n(237774),
+    _ = n(237774),
+    m = n(885437),
     g = n(973854),
     p = n(504982),
     E = n(815706),
@@ -334,18 +334,15 @@ function eu() {
             selectedGuildId: o
         } = e;
         a.useEffect(() => {
-            if (n && null != s) {
-                let e = (0, _.C)(H.A.getChannel(s), !0);
-                (0, h.zV)(er.HAw.CHANNEL_OPENED, {
-                    ...e,
-                    ...(0, h.qL)(s),
-                    selected_guild_id: o
-                }), (0, g.A)({
-                    channelId: s
-                }), t.current.isTextInVoice && (0, h.zV)(er.HAw.TEXT_IN_VOICE_OPENED, {
-                    channel_is_nsfw: t.current.isNSFWChannel
-                })
-            }
+            n && null != s && ((0, h.zV)(er.HAw.CHANNEL_OPENED, {
+                ...(0, m.p)(s),
+                ...(0, h.qL)(s),
+                selected_guild_id: o
+            }), (0, g.A)({
+                channelId: s
+            }), t.current.isTextInVoice && (0, h.zV)(er.HAw.TEXT_IN_VOICE_OPENED, {
+                channel_is_nsfw: t.current.isNSFWChannel
+            }))
         }, [n, s, o]), a.useEffect(() => {
             n && null == o && l === er.BVt.FRIENDS && (0, p.A)({
                 tab_opened: i
@@ -366,7 +363,7 @@ function eu() {
                         viewing_all_channels: !Z.Ay.isOptInEnabled(o),
                         num_recent_channels: D.A.recentsChannelCount(o)
                     };
-                if ((0, h.zV)(er.HAw.GUILD_VIEWED, i), (0, m.k)(er.HAw.GUILD_VIEWED_CLICKSTREAM, {
+                if ((0, h.zV)(er.HAw.GUILD_VIEWED, i), (0, _.k)(er.HAw.GUILD_VIEWED_CLICKSTREAM, {
                         guild_id: o
                     }), (0, x.ai)(o)) {
                     let e = S.o.getConfig({

@@ -20,8 +20,8 @@ var i = n(627968),
     p = n(622543),
     f = n(950191),
     x = n(679492),
-    C = n(657331),
-    E = n(718019),
+    E = n(657331),
+    C = n(718019),
     I = n(915614),
     N = n(439053),
     b = n(312381),
@@ -62,7 +62,7 @@ function B(e) {
             duration: 150
         }
     }), Z = e => {
-        (0, C.openUserProfileModal)({
+        (0, E.openUserProfileModal)({
             sourceAnalyticsLocations: Y,
             hideRestrictedProfile: !0,
             ...z,
@@ -119,7 +119,7 @@ function B(e) {
                             }), (0, i.jsx)(N.A, {
                                 userId: t.id,
                                 className: V.oR
-                            }), (0, i.jsx)(E.A, {
+                            }), (0, i.jsx)(C.A, {
                                 user: t,
                                 displayProfile: F,
                                 channelId: B.id,

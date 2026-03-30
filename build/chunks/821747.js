@@ -28,7 +28,7 @@ function _(e) {
         location: f
     } = e, {
         currentVolume: x,
-        muted: C
+        muted: E
     } = (0, a.cf)([d.Ay], () => ({
         currentVolume: d.Ay.getLocalVolume(_, g),
         muted: d.Ay.isLocalMute(_, g)
@@ -40,13 +40,13 @@ function _(e) {
             sliderClassName: s,
             className: t,
             value: (0, u.M)(x),
-            muted: C,
+            muted: E,
             maxValue: h.isPlatformEmbedded ? 200 : 100,
             onValueChange: e => {
-                e > 0 && C && r.A.toggleLocalMute(_, g), r.A.setLocalVolume(_, (0, u.w)(e), g)
+                e > 0 && E && r.A.toggleLocalMute(_, g), r.A.setLocalVolume(_, (0, u.w)(e), g)
             },
             onToggleMute: () => {
-                null != f && (0, o.X)(f, o.O.VOLUME, C), r.A.toggleLocalMute(_, g)
+                null != f && (0, o.X)(f, o.O.VOLUME, E), r.A.toggleLocalMute(_, g)
             }
         })
     })

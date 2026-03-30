@@ -37,15 +37,15 @@ function g(e, t) {
         wishlistId: g,
         showTypeTooltip: p = !1,
         cardSize: f
-    } = t, x = null != e.bundleItems && e.bundleItems.length > 0, C = null != n && n > 0, E = p && !C, I = C ? h.intl.string(h.t.TxBQzD) : h.intl.string(h.t.pLPjsb), N = {
-        title: E ? h.intl.string(h.t.HFhcqh) : I,
-        body: E ? h.intl.string(h.t.ilhtIa) : void 0,
-        renderIcon: E ? a.GM : void 0,
+    } = t, x = null != e.bundleItems && e.bundleItems.length > 0, E = null != n && n > 0, C = p && !E, I = E ? h.intl.string(h.t.TxBQzD) : h.intl.string(h.t.pLPjsb), N = {
+        title: C ? h.intl.string(h.t.HFhcqh) : I,
+        body: C ? h.intl.string(h.t.ilhtIa) : void 0,
+        renderIcon: C ? a.GM : void 0,
         shouldShow: !0
     }, b = !x && e.collectiblesItem.type === s.R.PROFILE_EFFECT;
     return (0, i.jsx)(d.A, {
         onCardClick: () => {
-            C ? u() : _(e, l, o)
+            E ? u() : _(e, l, o)
         },
         tooltipConfig: N,
         shouldScalePreview: x || !b,

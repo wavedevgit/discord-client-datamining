@@ -20,8 +20,8 @@ var i = n(627968),
     p = n(661191),
     f = n(988012),
     x = n(141468),
-    C = n(694318),
-    E = n(143413),
+    E = n(694318),
+    C = n(143413),
     I = n(763754),
     N = n(467073),
     b = n(491182),
@@ -92,7 +92,7 @@ let k = s.memo(function e(t) {
         message: W.message,
         channel: Y,
         hasThread: !1
-    }) : (g.A.isBlockedForMessage(l) ? n = U.t["+FcYM/"] : g.A.isIgnoredForMessage(l) ? n = U.t["VFWjc+"] : (0, C.kf)(l) && F && (n = U.t.xfkfTK), void 0 !== n) ? (0, i.jsx)(V, {
+    }) : (g.A.isBlockedForMessage(l) ? n = U.t["+FcYM/"] : g.A.isIgnoredForMessage(l) ? n = U.t["VFWjc+"] : (0, E.kf)(l) && F && (n = U.t.xfkfTK), void 0 !== n) ? (0, i.jsx)(V, {
         className: D,
         compact: o,
         count: 1,
@@ -141,7 +141,7 @@ let k = s.memo(function e(t) {
         onClick: k,
         hasThread: !1 !== H && null != es && l.hasFlag(G.pr7.HAS_THREAD),
         hasReply: l.type === G.lAJ.REPLY,
-        isSystemMessage: (0, E.A)(l),
+        isSystemMessage: (0, C.A)(l),
         messageRef: er,
         author: ei,
         "aria-labelledby": eu,

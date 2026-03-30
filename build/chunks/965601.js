@@ -62,7 +62,7 @@ function A(e) {
     }, [n, l, t.id, d.parentChannelId, d.parentMessageId]), s.useEffect(() => {
         null != d.name && "" !== d.name.trim() || g || f && null != n && (p(!0), x())
     }, [t.id, n, l, d.name, g, f, x]);
-    let C = s.useCallback(function() {
+    let E = s.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
             if (f) return {
                 icon: r.Dud,
@@ -73,7 +73,7 @@ function A(e) {
                 loading: m
             }
         }, [f, x, m, n, A.textValue]),
-        E = s.useCallback(function() {
+        C = s.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
             return f ? (0, i.jsx)(a.m, {
                 text: u.intl.string(u.t.ZF2oBs),
@@ -93,7 +93,7 @@ function A(e) {
         isGeneratingAI: m,
         generateAIName: x,
         enableAIFeatures: f,
-        renderAiGenerateButton: E,
-        getThreadNameInputAccessory: C
+        renderAiGenerateButton: C,
+        getThreadNameInputAccessory: E
     }
 }

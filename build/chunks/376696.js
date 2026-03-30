@@ -20,8 +20,8 @@ var i = n(627968),
     p = n(140547),
     f = n(636920),
     x = n(958140),
-    C = n(832163),
-    E = n(565688),
+    E = n(832163),
+    C = n(565688),
     I = n(533562),
     N = n(760716),
     b = n(93879),
@@ -72,10 +72,10 @@ function k(e) {
             guildId: t.guild_id,
             location: "VoiceUserActivities"
         }),
-        ea = (0, E.m)({
+        ea = (0, C.m)({
             location: "voice_channel_activities"
         }),
-        er = (0, r.bG)([C.A], () => C.A.getDetectableIdsToApplicationIds()),
+        er = (0, r.bG)([E.A], () => E.A.getDetectableIdsToApplicationIds()),
         eo = (0, r.bG)([T.default], () => T.default.getId() === n.id && !X),
         ec = (0, h.r9)() && (0, h.UK)(t.id),
         ed = null != Q && !ec,

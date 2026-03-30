@@ -20,8 +20,8 @@ var i = n(627968),
     p = n(200273),
     f = n(565846),
     x = n(707653),
-    C = n(50268),
-    E = n(58736),
+    E = n(50268),
+    C = n(58736),
     I = n(253932),
     N = n(977997),
     b = n(747926),
@@ -54,7 +54,7 @@ function T(e) {
             let {
                 isShown: n
             } = t;
-            return (0, i.jsx)(E.Ay.Icon, {
+            return (0, i.jsx)(C.Ay.Icon, {
                 ...e,
                 ref: a,
                 onClick: r,
@@ -72,7 +72,7 @@ function v(e) {
         channel: t,
         closePopout: n,
         onSelect: s
-    } = e, l = (0, c.A)(t), E = (0, m.A)(t), T = (0, f.A)(t.id), v = (0, p.A)(t), y = (0, C.A)({
+    } = e, l = (0, c.A)(t), C = (0, m.A)(t), T = (0, f.A)(t.id), v = (0, p.A)(t), y = (0, E.A)({
         id: t.id,
         label: S.intl.string(S.t.DQ797g)
     }), j = (0, d.A)(t), R = (0, u.A)(t), O = (0, h.A)(t, "Toolbar Overflow"), L = (0, _.A)(t), M = (0, A.A)(t), D = (0, x.A)(t), G = (0, g.A)(t), U = I.SY.useSetting(), P = (0, r.bG)([N.A], () => !a().isEmpty(N.A.getVoiceStatesForChannel(t.id)));
@@ -93,7 +93,7 @@ function v(e) {
                 }
             }) : null, G]
         }), (0, i.jsxs)(o.rXV, {
-            children: [D, l, E, R]
+            children: [D, l, C, R]
         }), (0, i.jsxs)(o.rXV, {
             children: [j, y]
         })]

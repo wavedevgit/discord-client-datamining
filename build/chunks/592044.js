@@ -49,7 +49,7 @@ let p = e => {
             triggerRef: u
         } = e, f = (0, o.A)(null, () => {
             t && n()
-        }, u), x = (0, c.n)(e => e.globalMute), C = (0, c.n)(e => e.setGlobalMute), E = (0, c.n)(e => e.genre), I = (0, c.n)(e => e.setGenre), N = (0, c.n)(e => e.songIndex), b = (0, c.n)(e => e.playRadio), S = (0, c.n)(e => e.setPlayRadio), T = (0, c.n)(e => e.playPrevSong), v = (0, c.n)(e => e.playNextSong), y = (0, a.bG)([d.A], () => d.A.assets), j = (0, A.A)(E, N), R = !x && b;
+        }, u), x = (0, c.n)(e => e.globalMute), E = (0, c.n)(e => e.setGlobalMute), C = (0, c.n)(e => e.genre), I = (0, c.n)(e => e.setGenre), N = (0, c.n)(e => e.songIndex), b = (0, c.n)(e => e.playRadio), S = (0, c.n)(e => e.setPlayRadio), T = (0, c.n)(e => e.playPrevSong), v = (0, c.n)(e => e.playNextSong), y = (0, a.bG)([d.A], () => d.A.assets), j = (0, A.A)(C, N), R = !x && b;
         return (0, i.jsxs)("div", {
             ref: f,
             className: l()(g.ZR, {
@@ -111,13 +111,13 @@ let p = e => {
                 children: Object.values(h.TU).map(e => (0, i.jsx)(r.DUT, {
                     className: g.vk,
                     onClick: () => {
-                        E !== e ? (I(e), S(!0)) : S(!b)
+                        C !== e ? (I(e), S(!0)) : S(!b)
                     },
                     children: (0, i.jsxs)(r.BJc, {
                         align: "center",
                         children: [(0, i.jsx)("div", {
                             className: l()(g.D$, {
-                                [g.wH]: e === E
+                                [g.wH]: e === C
                             }),
                             style: {
                                 backgroundImage: `url('${y?.genres?.[e]?.thumbnail}')`,
@@ -125,7 +125,7 @@ let p = e => {
                             },
                             children: (0, i.jsxs)("div", {
                                 className: l()(g.BW, {
-                                    [g.wH]: e === E,
+                                    [g.wH]: e === C,
                                     [g.he]: R,
                                     [g.Ft]: !R
                                 }),
@@ -161,7 +161,7 @@ let p = e => {
                         "aria-label": _.intl.string(m.default.Tf8XqQ),
                         icon: x ? r._RO : r.HKD,
                         onClick: e => {
-                            e.preventDefault(), e.stopPropagation(), C(!x)
+                            e.preventDefault(), e.stopPropagation(), E(!x)
                         }
                     })
                 })]

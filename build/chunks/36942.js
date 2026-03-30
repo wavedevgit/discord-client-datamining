@@ -1,6 +1,6 @@
 /** chunk id: 36942 params = (module,exports,require) **/
 i.d(t, {
-    A: () => A
+    A: () => g
 });
 var n = i(627968);
 i(64700);
@@ -13,12 +13,12 @@ var l = i(311907),
     o = i(652215),
     u = i(985018);
 
-function A(e) {
+function g(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
         i = (0, c.jN)(e),
-        A = (0, l.bG)([r.A], () => r.A.getGuild(e)),
-        g = (0, l.bG)([a.default], () => a.default.getCurrentUser());
-    return null != g && null != A && (A.features.has(o.GuildFeatures.COMMUNITY) || g.isStaff()) ? (0, n.jsx)(s.sLh, {
+        g = (0, l.bG)([r.A], () => r.A.getGuild(e)),
+        A = (0, l.bG)([a.default], () => a.default.getCurrentUser());
+    return null != A && null != g && (g.features.has(o.GuildFeatures.COMMUNITY) || A.isStaff()) ? (0, n.jsx)(s.sLh, {
         id: "opt-in",
         label: u.intl.string(u.t.FB2ZZV),
         leadingAccessory: t ? {

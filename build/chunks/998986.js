@@ -21,8 +21,8 @@ var s = n(503698),
     p = n(440293),
     f = n(976860),
     x = n(808728),
-    C = n(71393),
-    E = n(954571),
+    E = n(71393),
+    C = n(954571),
     I = n(652793),
     N = n(652215),
     b = n(746080),
@@ -35,7 +35,7 @@ function y(e) {
         guildId: t,
         selected: n,
         handleClick: s
-    } = e, d = (0, p.w)(t), m = (0, a.bG)([C.A], () => C.A.getGuild(t)), b = m?.features.has(N.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) === !0, y = "false" === o.w.get(S.bJ, "false"), j = (0, a.bG)([u.A], () => u.A.useReducedMotion);
+    } = e, d = (0, p.w)(t), m = (0, a.bG)([E.A], () => E.A.getGuild(t)), b = m?.features.has(N.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) === !0, y = "false" === o.w.get(S.bJ, "false"), j = (0, a.bG)([u.A], () => u.A.useReducedMotion);
     return (0, i.jsx)(I.G, {
         id: `shop-${t}`,
         className: l()(v.A2, {
@@ -64,7 +64,7 @@ function y(e) {
             }), n && (0, i.jsx)(c.DUT, {
                 className: v.b,
                 onClick: e => {
-                    e.stopPropagation(), (0, g.Dr)(r.M.SERVER_SHOP_PHANTOM_PREVIEW), E.default.track(N.HAw.GUILD_SHOP_PREVIEW_CLICK, {
+                    e.stopPropagation(), (0, g.Dr)(r.M.SERVER_SHOP_PHANTOM_PREVIEW), C.default.track(N.HAw.GUILD_SHOP_PREVIEW_CLICK, {
                         ...(0, h.H$)(t),
                         action_taken: S.hN.DISMISS_CHANNEL_ROW
                     }), d && b || (0, f.bG)(N.BVt.CHANNEL(t, x.Ay.getDefaultChannel(t)?.id))

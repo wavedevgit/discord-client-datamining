@@ -24,17 +24,17 @@ let A = () => {
         p = (0, c.n)(e => e.volumes),
         f = s.useRef(null),
         x = s.useRef(null),
-        C = s.useRef(null),
-        E = (0, h.A)(n, A),
+        E = s.useRef(null),
+        C = (0, h.A)(n, A),
         I = (0, l.bG)([d.A], () => d.A.assets);
     return (s.useEffect(() => {
         let e = f.current;
-        null != e && E?.src != null && (e.pause(), e.src = E.src, !_ && m && t && e.play()?.catch(e => {
+        null != e && C?.src != null && (e.pause(), e.src = C.src, !_ && m && t && e.play()?.catch(e => {
             o.A.captureException(e)
         }))
-    }, [E?.src, _, m, t]), s.useEffect(() => {
+    }, [C?.src, _, m, t]), s.useEffect(() => {
         let e = x.current,
-            n = C.current;
+            n = E.current;
         null != e && (_ || !t ? e.pause() : e.play()?.catch(e => {
             o.A.captureException(e)
         })), null != n && (_ || !t ? n.pause() : n.play()?.catch(e => {
@@ -46,7 +46,7 @@ let A = () => {
             onEnded: g,
             volume: _ ? 0 : p.radio,
             children: (0, i.jsx)("source", {
-                src: E?.src
+                src: C?.src
             })
         }), (0, i.jsx)(a.A, {
             ref: x,
@@ -55,7 +55,7 @@ let A = () => {
                 src: I?.sounds?.[u.qi.ENVIRONMENT]
             })
         }), (0, i.jsx)(a.A, {
-            ref: C,
+            ref: E,
             volume: _ ? 0 : p.campfire,
             children: (0, i.jsx)("source", {
                 src: I?.sounds?.[u.qi.CAMPFIRE]

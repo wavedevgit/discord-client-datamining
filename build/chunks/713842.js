@@ -1,7 +1,7 @@
 /** chunk id: 713842 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => E
+    A: () => C
 });
 var i = n(627968),
     s = n(64700),
@@ -20,27 +20,27 @@ var i = n(627968),
     p = n(71393),
     f = n(853742),
     x = n(985018),
-    C = n(136917);
+    E = n(136917);
 
-function E(e) {
+function C(e) {
     let {
         channelId: t
-    } = e, E = (0, l.bG)([_.A], () => _.A.getChannel(t)), I = (0, l.bG)([_.A], () => _.A.getChannel(E?.parent_id)), N = (0, l.bG)([p.A], () => p.A.getGuild(E?.getGuildId())), b = (0, o.Ay)(E), S = s.useRef(!1);
+    } = e, C = (0, l.bG)([_.A], () => _.A.getChannel(t)), I = (0, l.bG)([_.A], () => _.A.getChannel(C?.parent_id)), N = (0, l.bG)([p.A], () => p.A.getGuild(C?.getGuildId())), b = (0, o.Ay)(C), S = s.useRef(!1);
     if (s.useEffect(() => {
-            null == E || S.current || (S.current = !0, (0, f.rH)(E))
-        }, [E]), null == E || null == N) return null;
+            null == C || S.current || (S.current = !0, (0, f.rH)(C))
+        }, [C]), null == C || null == N) return null;
     let T = (0, i.jsx)(m.A, {
-        channel: E
+        channel: C
     });
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(r.A, {
-            channel: E,
+            channel: C,
             draftType: g.C.ChannelMessage
         }), (0, i.jsx)(u.Ay, {
             toolbar: T,
             "aria-label": x.intl.string(x.t.Pwe8tN),
             children: (0, h.zF)({
-                channel: E,
+                channel: C,
                 parentChannel: I,
                 channelName: b,
                 guild: N,
@@ -52,18 +52,18 @@ function E(e) {
                         } = await n.e("33").then(n.bind(n, 44536));
                         return t => (0, i.jsx)(e, {
                             ...t,
-                            channel: E
+                            channel: C
                         })
                     })
                 },
                 handleClick: function() {
-                    null != E && (0, A.uh)(E.guild_id, E.id)
+                    null != C && (0, A.uh)(C.guild_id, C.id)
                 }
             })
         }), (0, i.jsx)("div", {
-            className: C.T,
+            className: E.T,
             children: (0, i.jsx)(c.A, {
-                channel: E,
+                channel: C,
                 guild: N,
                 chatInputType: d.oU.SIDEBAR
             }, t)

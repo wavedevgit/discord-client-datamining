@@ -20,8 +20,8 @@ var i = n(627968),
     p = n(309010),
     f = n(287809),
     x = n(816733),
-    C = n(619921),
-    E = n(194871),
+    E = n(619921),
+    C = n(194871),
     I = n(966846),
     N = n(674378),
     b = n(87941),
@@ -54,8 +54,8 @@ function G(e) {
         badge: a,
         link: u,
         showProgressBadge: A
-    } = e, [m, p] = s.useState(!1), [f, x] = s.useState(!1), [C, E] = s.useState(null), [I, N] = s.useState(0), b = (0, l.Vd)("home"), R = (0, h.fy)().activePanel === h.HP.APP_ICON, G = () => {
-        E(null), N(0), clearTimeout(C)
+    } = e, [m, p] = s.useState(!1), [f, x] = s.useState(!1), [E, C] = s.useState(null), [I, N] = s.useState(0), b = (0, l.Vd)("home"), R = (0, h.fy)().activePanel === h.HP.APP_ICON, G = () => {
+        C(null), N(0), clearTimeout(E)
     };
     if (null == n) return null;
     let U = L.intl.string(L.t.YUU0RF);
@@ -77,7 +77,7 @@ function G(e) {
                 onMouseEnter: () => p(!0),
                 onMouseLeave: () => p(!1),
                 onClick: () => {
-                    if (!__OVERLAY__ && (null != C && clearTimeout(C), E(setTimeout(G, 500)), N(I + 1), 15 === I)) {
+                    if (!__OVERLAY__ && (null != E && clearTimeout(E), C(setTimeout(G, 500)), N(I + 1), 15 === I)) {
                         G();
                         let e = !r.w.get(j.wqg);
                         r.w.set(j.wqg, e), e && r.w.set(O.L, !0), e ? (0, _.Ak)("discodo") : (0, _.Ak)("user_leave"), x(!0), setTimeout(() => {
@@ -127,8 +127,8 @@ function G(e) {
 
 function U() {
     let e = (0, b.q)(),
-        t = (0, a.bG)([I.A, E.A], () => {
-            let e = (0, c.v)(I.A.activeItems, E.A),
+        t = (0, a.bG)([I.A, C.A], () => {
+            let e = (0, c.v)(I.A.activeItems, C.A),
                 {
                     total: t,
                     progress: n
@@ -151,7 +151,7 @@ function U() {
         _ = (0, A.W)(),
         g = n + d + _,
         S = g === d && d > 0 && n + _ === 0,
-        T = C.A.getHomeLink();
+        T = E.A.getHomeLink();
     return S && (T = j.BVt.APPLICATION_STORE), (0, i.jsx)(G, {
         selected: e,
         user: h,

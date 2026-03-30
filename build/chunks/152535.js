@@ -26,8 +26,8 @@ function m(e) {
     } = (0, r.Ay)(), p = s.useRef(null), {
         isHovered: f,
         setIsHovered: x,
-        onMouseEnter: C,
-        onMouseLeave: E
+        onMouseEnter: E,
+        onMouseLeave: C
     } = (0, c.A)(200, 300), {
         Component: I,
         play: N,
@@ -36,12 +36,12 @@ function m(e) {
             onMouseLeave: S
         }
     } = (0, l.T)(), T = s.useCallback(e => {
-        "focus" !== e.type && (C(), b())
-    }, [C, b]), v = s.useCallback(() => {
-        null == m && (E(), S())
-    }, [E, S, m]), y = s.useCallback(() => {
-        (0, o.X)(g, o.O.GIFTING), m === h.P.GIFTING ? (_?.(void 0), E()) : (null != m ? (N(), C()) : N(), _?.(h.P.GIFTING))
-    }, [C, E, g, N, _, m]);
+        "focus" !== e.type && (E(), b())
+    }, [E, b]), v = s.useCallback(() => {
+        null == m && (C(), S())
+    }, [C, S, m]), y = s.useCallback(() => {
+        (0, o.X)(g, o.O.GIFTING), m === h.P.GIFTING ? (_?.(void 0), C()) : (null != m ? (N(), E()) : N(), _?.(h.P.GIFTING))
+    }, [E, C, g, N, _, m]);
     return (0, i.jsx)(a.Y, {
         targetElementRef: p,
         shouldShow: f && (m === h.P.GIFTING || null == m) || m === h.P.GIFTING,
@@ -61,8 +61,8 @@ function m(e) {
                 channel: t,
                 closePopout: n,
                 isHovered: f,
-                onMouseEnter: C,
-                onMouseLeave: E
+                onMouseEnter: E,
+                onMouseLeave: C
             })
         },
         children: () => (0, i.jsx)(u.l, {

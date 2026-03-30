@@ -22,35 +22,35 @@ var i = n(627968),
 let x = s.memo(function(e) {
     let {
         channel: t
-    } = e, x = (0, u.u)(t.id), C = (0, h.S)(t.id), E = (0, A.e)(t.id), I = (0, a.useHasAnyModalOpen)(), N = (0, l.bG)([_.A], () => _.A.hasLayers()), b = s.useCallback(() => C ? f.intl.string(f.t["16QyDv"]) : null != E ? f.intl.string(f.t.kCN9i0) : null, [C, E]), S = s.useMemo(() => (C || null != E) && !I && !N, [C, E, I, N]), [T, v] = s.useState(b());
+    } = e, x = (0, u.u)(t.id), E = (0, h.S)(t.id), C = (0, A.e)(t.id), I = (0, a.useHasAnyModalOpen)(), N = (0, l.bG)([_.A], () => _.A.hasLayers()), b = s.useCallback(() => E ? f.intl.string(f.t["16QyDv"]) : null != C ? f.intl.string(f.t.kCN9i0) : null, [E, C]), S = s.useMemo(() => (E || null != C) && !I && !N, [E, C, I, N]), [T, v] = s.useState(b());
     s.useEffect(() => {
-        null != E && null != x && (o.ORC.announce(f.intl.string(f.t.acsXuG)), setTimeout(() => {
-            (0, d.xi)(t.id, [E.id])
+        null != C && null != x && (o.ORC.announce(f.intl.string(f.t.acsXuG)), setTimeout(() => {
+            (0, d.xi)(t.id, [C.id])
         }, 5e3), (0, m.QF)({
             channelId: t.id,
             senderId: t.getRecipientId(),
-            warningId: E.id,
-            warningType: E.type,
-            isNudgeWarning: null != E,
+            warningId: C.id,
+            warningType: C.type,
+            isNudgeWarning: null != C,
             viewName: m.gN.SAFETY_TOOLS_NUDGE_TOOLTIP
-        })), C && (o.ORC.announce(f.intl.string(f.t["1dxCqG"])), setTimeout(() => {
+        })), E && (o.ORC.announce(f.intl.string(f.t["1dxCqG"])), setTimeout(() => {
             (0, d.bg)(t.id)
         }, 5e3))
-    }, [t, E, x, C]), (0, c.Ay)(() => {
+    }, [t, C, x, E]), (0, c.Ay)(() => {
         null != x && (0, m.QF)({
             channelId: t.id,
             senderId: t.getRecipientId(),
             warningId: x.id,
             warningType: x.type,
-            isNudgeWarning: null != E,
+            isNudgeWarning: null != C,
             viewName: m.gN.SAFETY_TOOLS_BUTTON
         })
     }), s.useEffect(() => {
         let e = b();
         null != e && v(e)
-    }, [C, E, b]);
+    }, [E, C, b]);
     let y = s.useCallback(() => {
-        null != E && (0, d.xi)(t.id, [E.id]), null != x && ((0, o.mMO)(async () => {
+        null != C && (0, d.xi)(t.id, [C.id]), null != x && ((0, o.mMO)(async () => {
             let {
                 default: e
             } = await Promise.all([n.e("45033"), n.e("46717"), n.e("88331")]).then(n.bind(n, 788099));
@@ -76,9 +76,9 @@ let x = s.memo(function(e) {
             warningId: x.id,
             warningType: x.type,
             cta: m.Wm.USER_SAFETY_TOOLS_BUTTON_CLICK,
-            isNudgeWarning: null != E
+            isNudgeWarning: null != C
         }))
-    }, [E, x, t]);
+    }, [C, x, t]);
     return null == x ? null : (0, i.jsx)(r.m_, {
         forceOpen: S,
         text: T,
@@ -87,7 +87,7 @@ let x = s.memo(function(e) {
             icon: o.lmn,
             onClick: y,
             tooltip: f.intl.string(f.t.rpc2qv),
-            tooltipDisabled: null != E
+            tooltipDisabled: null != C
         })
     })
 })

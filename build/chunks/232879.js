@@ -21,7 +21,7 @@ let p = s.memo(function(e) {
     let {
         guildNode: t,
         lowerBadge: n
-    } = e, p = t.id, f = (0, l.bG)([h.A], () => h.A.getGuild(p)), x = (0, r.a)(f), C = (0, l.bG)([A.A], () => A.A.isFocused()), E = (0, l.bG)([d.A], () => d.A.isUnavailable(p)), I = (0, c.A)(e => e.guildId), N = (0, m.A)(p), {
+    } = e, p = t.id, f = (0, l.bG)([h.A], () => h.A.getGuild(p)), x = (0, r.a)(f), E = (0, l.bG)([A.A], () => A.A.isFocused()), C = (0, l.bG)([d.A], () => d.A.isUnavailable(p)), I = (0, c.A)(e => e.guildId), N = (0, m.A)(p), {
         badge: b,
         unread: S,
         isMentionLowImportance: T
@@ -42,8 +42,8 @@ let p = s.memo(function(e) {
     return (0, i.jsx)(_.A, {
         ...e,
         guild: f,
-        unavailable: E,
-        animatable: C,
+        unavailable: C,
+        animatable: E,
         selected: I === p,
         badge: b,
         isMentionLowImportance: T,

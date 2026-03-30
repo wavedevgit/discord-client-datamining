@@ -50,8 +50,7 @@ function u(e) {
             leadingAccessory: {
                 type: "icon",
                 icon: a.L9S
-            },
-            icon: a.L9S
+            }
         }), (0, i.jsx)(a.Drp, {
             id: "copy-item-id",
             label: _,
@@ -59,8 +58,7 @@ function u(e) {
             leadingAccessory: {
                 type: "icon",
                 icon: a.L9S
-            },
-            icon: a.L9S
+            }
         }), null != g && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(a.Drp, {
                 id: "copy-image-link",
@@ -69,17 +67,19 @@ function u(e) {
                 leadingAccessory: {
                     type: "icon",
                     icon: a.qYV
-                },
-                icon: a.qYV
+                }
             }), (0, i.jsx)(a.Drp, {
                 id: "open-image-link",
                 label: b,
                 action: y,
                 leadingAccessory: {
                     type: "icon",
-                    icon: a.qYV
+                    icon: a.WxK
                 },
-                icon: a.qYV
+                trailingIndicator: {
+                    type: "icon",
+                    icon: a.I9m
+                }
             })]
         })]
     })

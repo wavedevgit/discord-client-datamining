@@ -20,8 +20,8 @@ var i = n(627968),
     p = n(309010),
     f = n(287809),
     x = n(607567),
-    C = n(531685),
-    E = n(941971),
+    E = n(531685),
+    C = n(941971),
     I = n(375855),
     N = n(900848),
     b = n(65611),
@@ -70,7 +70,7 @@ class R extends s.PureComponent {
             controller: t
         } = this.state;
         e(), t.update({
-            immediate: !C.A.isFocused(),
+            immediate: !E.A.isFocused(),
             height: 1,
             opacity: 1,
             scale: 1,
@@ -98,7 +98,7 @@ class R extends s.PureComponent {
         this.setState({
             animating: !0
         }, () => t.update({
-            immediate: !C.A.isFocused(),
+            immediate: !E.A.isFocused(),
             height: 0,
             opacity: 0,
             scale: 0,
@@ -196,7 +196,7 @@ class R extends s.PureComponent {
         return (0, i.jsx)(l.animated.div, {
             style: this.getAnimatedStyle(),
             children: (0, i.jsxs)(N.c, {
-                children: [(0, i.jsx)(E.A, {
+                children: [(0, i.jsx)(C.A, {
                     hovered: !_ && m,
                     selected: !_ && n,
                     unread: !_ && u,
@@ -231,8 +231,8 @@ let O = s.forwardRef(function(e, t) {
         u = (0, r.bG)([d.A], () => d.A.getMode(n), [n]),
         A = (0, r.bG)([m.A], () => m.A.getAllApplicationStreamsForChannel(n).length > 0),
         f = (0, r.bG)([x.Ay], () => x.Ay.getVoiceStatesForChannel(e.channel).length > 0, [e.channel]),
-        C = (0, r.bG)([p.A], () => p.A.getChannelId(), []),
-        E = (0, r.bG)([g.Ay], () => g.Ay.getMentionCount(n), [n]),
+        E = (0, r.bG)([p.A], () => p.A.getChannelId(), []),
+        C = (0, r.bG)([g.Ay], () => g.Ay.getMentionCount(n), [n]),
         I = c === n,
         N = !1,
         b = !1;
@@ -242,9 +242,9 @@ let O = s.forwardRef(function(e, t) {
         ...e,
         ref: t,
         channelName: s,
-        unread: E > 0,
-        selected: C === n,
-        badge: E,
+        unread: C > 0,
+        selected: E === n,
+        badge: C,
         audio: N,
         video: b,
         stream: A,

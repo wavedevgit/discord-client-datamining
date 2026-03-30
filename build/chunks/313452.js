@@ -20,8 +20,8 @@ var i = n(627968),
     p = n(661191),
     f = n(851109),
     x = n(932883),
-    C = n(39324),
-    E = n(320697),
+    E = n(39324),
+    C = n(320697),
     I = n(394953),
     N = n(628325),
     b = n(524628),
@@ -124,18 +124,18 @@ function D(e) {
             isLoading: B,
             isLoadingComplete: H,
             hasLoadedEver: F
-        } = (0, d.cf)([E.A], () => ({
-            isLoading: E.A.isLoading,
-            isLoadingComplete: E.A.isLoadingComplete,
-            hasLoadedEver: E.A.hasLoadedEver
+        } = (0, d.cf)([C.A], () => ({
+            isLoading: C.A.isLoading,
+            isLoadingComplete: C.A.isLoadingComplete,
+            hasLoadedEver: C.A.hasLoadedEver
         })),
         K = !F && B,
         {
             messageCategoryOpenStates: W,
             toggleOpenState: Y
-        } = (0, C.A)(),
-        z = (t = (0, d.yK)([E.A], () => E.A.getNotifyingChannelIds() ?? []), (0, d.bG)([E.A, _.Ay], () => {
-            let e = E.A.getChannelInfoMap();
+        } = (0, E.A)(),
+        z = (t = (0, d.yK)([C.A], () => C.A.getNotifyingChannelIds() ?? []), (0, d.bG)([C.A, _.Ay], () => {
+            let e = C.A.getChannelInfoMap();
             for (let n of t) {
                 let t = e[n];
                 if ((null == t || t.loadState === S.Ve.UNLOADED) && _.Ay.hasUnread(n)) return !0
@@ -226,7 +226,7 @@ function D(e) {
             messagesByCategory: n
         } = e, i = s.useRef(!1), l = n.UNREAD.length > 0, {
             setOpenStateFromUnreads: a
-        } = (0, C.A)();
+        } = (0, E.A)();
         s.useEffect(() => {
             t || i.current || (a(l), i.current = !0)
         }, [a, l, t])

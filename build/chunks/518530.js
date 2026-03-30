@@ -1,7 +1,7 @@
 /** chunk id: 518530 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => E
+    A: () => C
 });
 var i = n(627968),
     s = n(64700),
@@ -20,12 +20,12 @@ var i = n(627968),
     p = n(652215),
     f = n(49999),
     x = n(985018),
-    C = n(200393);
-let E = function(e) {
+    E = n(200393);
+let C = function(e) {
     let {
         channel: t,
         guild: n,
-        maxWidth: E
+        maxWidth: C
     } = e;
     s.useEffect(() => {
         (0, h.Dr)(l.M.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK, {
@@ -42,7 +42,7 @@ let E = function(e) {
         });
     return (0, i.jsxs)(d.A, {
         sidebarType: d.X.CallChatSidebar,
-        maxWidth: E,
+        maxWidth: C,
         floatingLayer: g.Ay,
         children: [(0, i.jsx)(o.A, {
             channel: t,
@@ -57,7 +57,7 @@ let E = function(e) {
                 children: t.name
             })]
         }), (0, i.jsx)("div", {
-            className: C.T,
+            className: E.T,
             children: (0, i.jsx)(c.A, {
                 channel: t,
                 guild: n,

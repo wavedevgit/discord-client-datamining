@@ -24,8 +24,8 @@ function g(e) {
         completedRatio: g,
         minimizeFrame: p,
         onClose: f
-    } = e, x = (0, r.GV)(), C = (0, c.Ut)(), E = s.useCallback(() => {
-        C({
+    } = e, x = (0, r.GV)(), E = (0, c.Ut)(), C = s.useCallback(() => {
+        E({
             questId: t.id,
             questContent: o.uF.RUNNING_ACTIVITY,
             questContentCTA: d.Cy.LEARN_MORE,
@@ -34,7 +34,7 @@ function g(e) {
             fromContent: o.uF.RUNNING_ACTIVITY,
             questId: t.id
         }), p(), f()
-    }, [t.id, C, p, f]);
+    }, [t.id, E, p, f]);
     return (0, i.jsxs)(a.lGe, {
         className: _.kL,
         "aria-labelledby": x,
@@ -81,7 +81,7 @@ function g(e) {
             text: m.intl.string(m.t["th2+0j"]),
             variant: "secondary",
             size: "md",
-            onClick: E
+            onClick: C
         })]
     })
 }

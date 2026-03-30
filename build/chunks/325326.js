@@ -28,8 +28,8 @@ let h = () => {
             initialPageSize: m
         } = e, _ = (0, s.bG)([d.A], () => d.A.shouldReload()), g = i.useRef(!1), [p, f] = i.useState(!1), {
             initialized: x,
-            loading: C,
-            items: E,
+            loading: E,
+            items: C,
             hasMore: I,
             cursor: N,
             errored: b
@@ -52,8 +52,8 @@ let h = () => {
         }, [t, x]);
         let v = (0, a.A)();
         i.useEffect(() => () => {
-            h ? !v() && (b || E.length > 100) && (0, o.S3)() : n && E.length > 100 && (0, o.S3)()
-        }, [n, E, h, v, b]), i.useEffect(() => {
+            h ? !v() && (b || C.length > 100) && (0, o.S3)() : n && C.length > 100 && (0, o.S3)()
+        }, [n, C, h, v, b]), i.useEffect(() => {
             let e = _ && t;
             (!x || e) && (0, o.ni)({
                 limit: m ?? (A ? 8 : 20),
@@ -75,8 +75,8 @@ let h = () => {
         }, [x, I, N, b, A, S, T]);
         return {
             initialized: x,
-            loading: C,
-            items: E,
+            loading: E,
+            items: C,
             hasMore: I,
             loadMore: y,
             loadingMore: p,

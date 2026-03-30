@@ -23,9 +23,9 @@ let x = s.memo(function(e) {
     let {
         guildId: t,
         selected: x
-    } = e, [C, E] = (0, c.ww)([l.M.GAME_SERVER_HOSTING_NEW_BADGE], t), I = C === l.M.GAME_SERVER_HOSTING_NEW_BADGE, N = s.useCallback(() => {
-        E(m.i.USER_DISMISS), (0, u.pX)(h.BVt.CHANNEL(t, A.VV.GAME_SERVERS))
-    }, [t, E]), b = s.useCallback(e => {
+    } = e, [E, C] = (0, c.ww)([l.M.GAME_SERVER_HOSTING_NEW_BADGE], t), I = E === l.M.GAME_SERVER_HOSTING_NEW_BADGE, N = s.useCallback(() => {
+        C(m.i.USER_DISMISS), (0, u.pX)(h.BVt.CHANNEL(t, A.VV.GAME_SERVERS))
+    }, [t, C]), b = s.useCallback(e => {
         e.stopPropagation(), (0, a.openModalLazy)(async () => {
             let {
                 default: e

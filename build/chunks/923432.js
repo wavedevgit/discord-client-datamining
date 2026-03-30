@@ -70,16 +70,16 @@ function x(e) {
     } = e, {
         bottomBar: A,
         topBar: x
-    } = (0, o.cf)([m.A], () => m.A.getUnreadStateForGuildId(n.id)), C = (0, o.bG)([h.A], () => h.A.isFocused()), {
-        mode: E,
+    } = (0, o.cf)([m.A], () => m.A.getUnreadStateForGuildId(n.id)), E = (0, o.bG)([h.A], () => h.A.isFocused()), {
+        mode: C,
         mentionCount: I,
         targetChannelId: N
-    } = "bottom" === t ? A : x, b = E === m.k.HIDDEN, S = (0, c.zhh)({
+    } = "bottom" === t ? A : x, b = C === m.k.HIDDEN, S = (0, c.zhh)({
         to: {
             transform: b ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
         },
         config: p
-    }, C ? "respect-motion-settings" : "animate-never"), T = s.useCallback(e => {
+    }, E ? "respect-motion-settings" : "animate-never"), T = s.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), null != N && u(N)
     }, [u, N]);
     return (0, i.jsx)("div", {
@@ -91,9 +91,9 @@ function x(e) {
             className: g.pK,
             style: S,
             "aria-hidden": b,
-            children: E === m.k.HIDDEN ? (0, i.jsx)("div", {
+            children: C === m.k.HIDDEN ? (0, i.jsx)("div", {
                 className: a()(g.M0, g.Te)
-            }) : E === m.k.UNREAD ? (0, i.jsxs)(c.DUT, {
+            }) : C === m.k.UNREAD ? (0, i.jsxs)(c.DUT, {
                 className: g.M0,
                 onClick: T,
                 children: ["bottom" === t ? (0, i.jsx)(c.abt, {
@@ -114,7 +114,7 @@ function x(e) {
                     className: g.pM,
                     children: _.intl.string(_.t.FCRiT3)
                 })]
-            }) : E === m.k.MENTIONS ? (0, i.jsx)(c.DUT, {
+            }) : C === m.k.MENTIONS ? (0, i.jsx)(c.DUT, {
                 className: a()(g.M0, g.vU),
                 onClick: T,
                 children: (0, i.jsx)(c.Text, {
@@ -125,7 +125,7 @@ function x(e) {
                         count: I
                     })
                 })
-            }) : E === m.k.VOICE_CHANNELS ? (0, i.jsx)(f, {
+            }) : C === m.k.VOICE_CHANNELS ? (0, i.jsx)(f, {
                 jumpToVoiceChannels: d,
                 guildChannels: n,
                 guildChannelsVersion: l

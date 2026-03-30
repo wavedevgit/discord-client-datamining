@@ -46,9 +46,9 @@ let p = e => {
             type: "SharingPrivacyPopout"
         })
     }, [n]);
-    let C = n ? [] : [a.M.SHARE_ACTIVITY_COACHMARK_V2];
+    let E = n ? [] : [a.M.SHARE_ACTIVITY_COACHMARK_V2];
     return (0, i.jsx)(r.Ay, {
-        contentTypes: C,
+        contentTypes: E,
         children: e => {
             let {
                 visibleContent: s,

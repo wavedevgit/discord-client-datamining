@@ -20,8 +20,8 @@ var i = n(627968),
     p = n(199160),
     f = n(551640),
     x = n(970244),
-    C = n(253932),
-    E = n(383233),
+    E = n(253932),
+    C = n(383233),
     I = n(734057),
     N = n(287809),
     b = n(403362),
@@ -116,7 +116,7 @@ let D = s.memo(function(e) {
         scheduledMessage: t,
         channel: n,
         isPendingDeletion: l
-    } = e, r = new E.Ay({
+    } = e, r = new C.Ay({
         id: t.scheduledMessageId,
         content: t.scheduledMessage.content,
         author: N.default.getUser(t.userId),
@@ -184,7 +184,7 @@ let D = s.memo(function(e) {
                     message: r,
                     channel: n,
                     className: j.iU,
-                    compact: C.hH.getSetting(),
+                    compact: E.hH.getSetting(),
                     animateAvatar: !1,
                     focusProps: R
                 }, r.id), (0, i.jsxs)(d.e2v, {

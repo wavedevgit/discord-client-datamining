@@ -21,8 +21,8 @@ var s = n(934551),
     p = n(559506),
     f = n(361311),
     x = n(886891),
-    C = n(743987),
-    E = n(501193),
+    E = n(743987),
+    C = n(501193),
     I = n(383448),
     N = n(900179),
     b = n(646986),
@@ -86,7 +86,7 @@ function L(e) {
         }, e.applicationId)), (0, i.jsx)(I.A, {
             user: t
         }), L?.private && (0, i.jsx)(S.A.Overlay, {
-            children: (0, i.jsx)(E.A, {
+            children: (0, i.jsx)(C.A, {
                 username: h.Ay.getName(null, M.id, t)
             })
         }), t.isProvisional && (0, i.jsx)(S.A.Overlay, {
@@ -129,7 +129,7 @@ function L(e) {
             }), (0, i.jsx)(N.A, {
                 heading: t.bot ? R.intl.string(R.t["A//N4k"]) : R.intl.string(R.t.a6XYD9),
                 headingColor: "text-strong",
-                children: (0, i.jsx)(C.A, {
+                children: (0, i.jsx)(E.A, {
                     userId: t.id
                 })
             })]

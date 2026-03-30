@@ -28,7 +28,7 @@ function _(e) {
         setIsOpen: f
     } = (0, d.A)(), x = s.useCallback(() => {
         f(!1)
-    }, [f]), C = s.useCallback(() => {
+    }, [f]), E = s.useCallback(() => {
         f(!p)
     }, [p, f]);
     (0, r.Ay)(() => {
@@ -36,9 +36,9 @@ function _(e) {
             f(!1)
         };
         return a.h.subscribe("USER_SETTINGS_MODAL_OPEN", e), () => a.h.unsubscribe("USER_SETTINGS_MODAL_OPEN", e)
-    }), s.useEffect(() => (o._.subscribe(h.jej.TOGGLE_INBOX, C), () => void o._.unsubscribe(h.jej.TOGGLE_INBOX, C)), [C]);
+    }), s.useEffect(() => (o._.subscribe(h.jej.TOGGLE_INBOX, E), () => void o._.unsubscribe(h.jej.TOGGLE_INBOX, E)), [E]);
     let {
-        entrypoint: E
+        entrypoint: C
     } = (0, c.X8)({
         location: "NotificationsInboxPopout"
     });
@@ -46,8 +46,8 @@ function _(e) {
         targetElementRef: m,
         shouldShow: p,
         align: u,
-        animation: E === c.RK.TITLE_BAR_LEFT ? l.YNO.Animation.TRANSLATE : l.YNO.Animation.FADE,
-        animationPosition: E === c.RK.TITLE_BAR_LEFT ? "bottom" : "left",
+        animation: C === c.RK.TITLE_BAR_LEFT ? l.YNO.Animation.TRANSLATE : l.YNO.Animation.FADE,
+        animationPosition: C === c.RK.TITLE_BAR_LEFT ? "bottom" : "left",
         position: n,
         onRequestClose: x,
         spacing: _,
@@ -59,7 +59,7 @@ function _(e) {
             let {
                 isShown: i
             } = n;
-            return t(C, i, e)
+            return t(E, i, e)
         }
     })
 }

@@ -21,8 +21,8 @@ var i = n(627968),
     p = n(345942),
     f = n(71393),
     x = n(486020),
-    C = n(860689),
-    E = n(352123),
+    E = n(860689),
+    C = n(352123),
     I = n(682557),
     N = n(652215),
     b = n(985018),
@@ -52,7 +52,7 @@ function y(e) {
         entry: t
     } = e, [l, r] = s.useState(!1), d = s.useRef(null), {
         canEdit: u
-    } = (0, E.A)(t);
+    } = (0, C.A)(t);
     return (0, i.jsx)("div", {
         className: a()(S.fc, {
             [S.QX]: l
@@ -123,7 +123,7 @@ let j = s.memo(function(e) {
         } finally {
             a(!1)
         }
-    }, E = x.Ay.getGuildSplashURL({
+    }, C = x.Ay.getGuildSplashURL({
         id: t.guildId,
         splash: t.splash,
         size: 300 * (0, g.mZ)()
@@ -149,8 +149,8 @@ let j = s.memo(function(e) {
             className: S.MY,
             children: [(0, i.jsx)("div", {
                 className: S.Yi,
-                children: null != E && (0, i.jsx)("img", {
-                    src: E,
+                children: null != C && (0, i.jsx)("img", {
+                    src: C,
                     alt: "",
                     className: S.j0
                 })
@@ -165,7 +165,7 @@ let j = s.memo(function(e) {
                         children: (0, i.jsx)(m.Ay, {
                             className: S.rZ,
                             iconSrc: I,
-                            guild: (0, C.xi)(t),
+                            guild: (0, E.xi)(t),
                             size: m.Ay.Sizes.MEDIUM,
                             active: !0
                         })

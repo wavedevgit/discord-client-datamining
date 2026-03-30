@@ -25,8 +25,8 @@ function g(e) {
         p = (0, s.bG)([c.A], () => c.A.getStatus(t)),
         f = (0, s.bG)([c.A], () => c.A.isMobileOnline(t)),
         x = (0, s.bG)([c.A], () => c.A.isVROnline(t)),
-        C = (0, s.bG)([d.A], () => d.A.getNickname(t)),
-        E = h.Ay.useUserTag(g),
+        E = (0, s.bG)([d.A], () => d.A.getNickname(t)),
+        C = h.Ay.useUserTag(g),
         I = (0, r.a)({
             displayNameStyles: g?.displayNameStyles
         }),
@@ -53,11 +53,11 @@ function g(e) {
             className: null != e.handleClick ? _.or : null,
             children: (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(l.m, {
-                    text: E,
+                    text: C,
                     position: "bottom",
                     children: (0, i.jsx)("span", {
                         className: I,
-                        children: C ?? h.Ay.getName(g)
+                        children: E ?? h.Ay.getName(g)
                     })
                 }), N && (0, i.jsx)(l.m, {
                     text: m.intl.string(m.t.QyZ4Td),

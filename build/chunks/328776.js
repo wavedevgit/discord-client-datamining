@@ -20,7 +20,7 @@ var i = n(627968),
 function g(e) {
     let {
         channel: t
-    } = e, [n] = t.recipients, g = (0, l.bG)([r.default], () => r.default.getUser(n)), p = (0, l.bG)([r.default], () => r.default.getCurrentUser()), f = (0, d.A)(), [x, C] = (0, c.A)(n);
+    } = e, [n] = t.recipients, g = (0, l.bG)([r.default], () => r.default.getUser(n)), p = (0, l.bG)([r.default], () => r.default.getCurrentUser()), f = (0, d.A)(), [x, E] = (0, c.A)(n);
     if (s.useEffect(() => {
             (0, u.A)(g ?? n, {
                 type: "sidebar",
@@ -30,14 +30,14 @@ function g(e) {
                 channelId: t.id
             })
         }, [g, n, t.id]), null == g || null == p || !f) return null;
-    let E = `user-profile-sidebar-heading-${g.id}`,
+    let C = `user-profile-sidebar-heading-${g.id}`,
         I = o.Ay.getName(null, t.id, g);
     return (0, i.jsx)("aside", {
-        "aria-labelledby": E,
+        "aria-labelledby": C,
         children: (0, i.jsx)(a.Fmo, {
             component: (0, i.jsx)(a.AC4, {
                 children: (0, i.jsx)(a.H, {
-                    id: E,
+                    id: C,
                     children: _.intl.format(_.t.KRe1Fk, {
                         name: I
                     })
@@ -46,7 +46,7 @@ function g(e) {
             children: x ? (0, i.jsx)(A.A, {
                 user: g,
                 currentUser: p,
-                onHide: C,
+                onHide: E,
                 ...e
             }) : g.isNonUserBot() ? (0, i.jsx)(h.A, {
                 user: g,

@@ -20,8 +20,8 @@ var i = n(627968),
     p = n(615658),
     f = n(592044),
     x = n(100449),
-    C = n(588703),
-    E = n(985018),
+    E = n(588703),
+    C = n(985018),
     I = n(181039);
 let N = e => {
         let {
@@ -161,7 +161,7 @@ let N = e => {
                             ref: W,
                             children: (0, i.jsx)(o.K0, {
                                 variant: "icon-only",
-                                "aria-label": E.intl.string(C.default.W7TAH4),
+                                "aria-label": C.intl.string(E.default.W7TAH4),
                                 icon: o.T7G,
                                 disabled: n,
                                 onClick: e => {
@@ -170,7 +170,7 @@ let N = e => {
                             })
                         }), (0, i.jsx)(o.K0, {
                             variant: "icon-only",
-                            "aria-label": E.intl.string(C.default.O7EDNk),
+                            "aria-label": C.intl.string(E.default.O7EDNk),
                             icon: S ? o._mZ : o.oyn,
                             disabled: n,
                             onClick: e => {

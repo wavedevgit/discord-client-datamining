@@ -25,7 +25,7 @@ function p(e) {
     } = e, p = (0, d.e)({
         guildId: t,
         channelId: n
-    }), f = (0, c.uk)(t), x = (0, c.Tq)(t), C = (0, l.bG)([o.A], () => o.A.getGuild(t), [t]), E = C?.name, I = (0, l.bG)([r.A], () => r.A.getChannel(n)), N = s.useMemo(() => {
+    }), f = (0, c.uk)(t), x = (0, c.Tq)(t), E = (0, l.bG)([o.A], () => o.A.getGuild(t), [t]), C = E?.name, I = (0, l.bG)([r.A], () => r.A.getChannel(n)), N = s.useMemo(() => {
         let e = {};
         for (let t of f)
             for (let n of t.subscription_listings_ids) e[n] = t.id;
@@ -35,7 +35,7 @@ function p(e) {
         guildId: t,
         location: m.ThZ.ROLE_SUBSCRIPTION_GATED_CHANNEL,
         relevantSubscriptionListingIds: p.map(e => e.id)
-    }), null == C) ? (0, i.jsx)("div", {
+    }), null == E) ? (0, i.jsx)("div", {
         className: g.__invalid_spinnerContainer,
         children: (0, i.jsx)(a.y$y, {
             className: g.__invalid_spinner
@@ -46,7 +46,7 @@ function p(e) {
             variant: "heading-xl/semibold",
             className: g.DX,
             children: _.intl.format(_.t.xHMpym, {
-                serverName: E,
+                serverName: C,
                 channelName: I?.name
             })
         }), (0, i.jsx)(a.Text, {

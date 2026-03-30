@@ -46,8 +46,8 @@ var i = n(627968),
     B = n(304795),
     H = n(25287),
     K = n(220167),
-    q = n(772331),
-    J = n(649455),
+    J = n(772331),
+    q = n(649455),
     Y = n(652215),
     z = n(985018);
 
@@ -198,26 +198,26 @@ function Z(e) {
             originalContentType: a?.originalContentType
         }),
         eV = (0, K.A)(t, a),
-        eB = (0, q.A)(t),
-        eH = (0, J.A)(a, {
+        eB = (0, J.A)(t),
+        eH = (0, q.A)(a, {
             shouldHideMediaOptions: es
         }),
         eK = (0, m.A)(Z ?? $, ee, t, {
             shouldHideMediaOptions: es
         }),
-        eq = (0, u.A)({
+        eJ = (0, u.A)({
             id: t.id,
             label: z.intl.string(z.t.zBoHlf),
             shiftId: `${t.channel_id}-${t.id}`
         }),
-        eJ = (0, T.A)({
+        eq = (0, T.A)({
             messageId: t.id,
             itemId: c,
             type: d,
             imageSrc: $
         }),
         eY = (0, i.jsx)(r.rXV, {
-            children: eJ ?? eq
+            children: eq ?? eJ
         }),
         ez = (0, i.jsxs)(r.rXV, {
             children: [eF, ek, eX, eV, eB, eH]
@@ -241,7 +241,7 @@ function Z(e) {
         }), (0, i.jsxs)(r.rXV, {
             children: [eR, eG, eL, et && ew, et && eP, eU]
         }), ec ? (0, i.jsxs)(i.Fragment, {
-            children: [eY, ez, null == eJ && (0, i.jsx)(r.rXV, {
+            children: [eY, ez, null == eq && (0, i.jsx)(r.rXV, {
                 children: eK
             })]
         }) : (0, i.jsxs)(i.Fragment, {

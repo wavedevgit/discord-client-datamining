@@ -1,7 +1,7 @@
 /** chunk id: 493387 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => E
+    A: () => C
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -27,7 +27,7 @@ let x = {
     EASING_IN: r.A.Easing.inOut(r.A.Easing.back()),
     EASING_OUT: r.A.Easing.quad
 };
-class C extends s.PureComponent {
+class E extends s.PureComponent {
     scaleAnimation = new r.A.Value(0);
     spriteAnimation = new r.A.Value(0);
     spriteOpacity = new r.A.Value(0);
@@ -137,7 +137,7 @@ class C extends s.PureComponent {
     }
 }
 
-function E(e) {
+function C(e) {
     var t;
     let {
         participants: n,
@@ -146,7 +146,7 @@ function E(e) {
         onClick: r,
         width: d,
         guildId: p
-    } = e, f = (0, h.Ay)(), x = (t = n.length, ((0, u.FT9)(u._3J.SIZE_80) + 16) * t > d ? u._3J.SIZE_40 : u._3J.SIZE_80), E = (0, o.bG)([A.A], () => A.A.isFocused()), I = n.map(e => {
+    } = e, f = (0, h.Ay)(), x = (t = n.length, ((0, u.FT9)(u._3J.SIZE_80) + 16) * t > d ? u._3J.SIZE_40 : u._3J.SIZE_80), C = (0, o.bG)([A.A], () => A.A.isFocused()), I = n.map(e => {
         if (e.type !== _.lp.USER) return null;
         let {
             user: t,
@@ -154,7 +154,7 @@ function E(e) {
             speaking: l,
             ringing: a
         } = e;
-        return (0, i.jsx)(C, {
+        return (0, i.jsx)(E, {
             className: g.Wp,
             width: (0, u.FT9)(x),
             theme: f,
@@ -164,7 +164,7 @@ function E(e) {
                 onContextMenu: t => s?.(e, t),
                 children: (0, i.jsx)(m.A, {
                     userId: t.id,
-                    src: t.getAvatarURL(p, (0, u.FT9)(x), l && E),
+                    src: t.getAvatarURL(p, (0, u.FT9)(x), l && C),
                     size: x,
                     muted: n?.isVoiceMuted() ?? !1,
                     deafen: n?.isVoiceDeafened() ?? !1,

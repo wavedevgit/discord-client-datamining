@@ -20,8 +20,8 @@ var i = n(627968),
     p = n(31432),
     f = n(915614),
     x = n(389996),
-    C = n(743987),
-    E = n(900179),
+    E = n(743987),
+    C = n(900179),
     I = n(946356),
     N = n(810396),
     b = n(35241),
@@ -96,7 +96,7 @@ function O(e) {
                             })
                         }), (0, i.jsxs)(I.A.Overlay, {
                             className: R.Lw,
-                            children: [(0, i.jsx)(E.A, {
+                            children: [(0, i.jsx)(C.A, {
                                 heading: y.intl.string(y.t.ZzAR2Y),
                                 headingColor: "text-strong",
                                 children: (0, i.jsx)(x.A, {
@@ -105,10 +105,10 @@ function O(e) {
                                     animateOnHoverOrFocusOnly: !0,
                                     isHoveringOrFocusing: P
                                 })
-                            }), (0, i.jsx)(E.A, {
+                            }), (0, i.jsx)(C.A, {
                                 heading: y.intl.string(y.t["A//N4k"]),
                                 headingColor: "text-strong",
-                                children: (0, i.jsx)(C.A, {
+                                children: (0, i.jsx)(E.A, {
                                     userId: t.id
                                 })
                             })]

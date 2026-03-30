@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     A: () => I,
-    H: () => E
+    H: () => C
 });
 var i, s = n(627968);
 n(64700);
@@ -21,14 +21,14 @@ var l = n(503698),
     p = n(53516),
     f = n(985018),
     x = n(609657),
-    C = n(442078),
-    E = ((i = {})[i.VOICE = 0] = "VOICE", i);
+    E = n(442078),
+    C = ((i = {})[i.VOICE = 0] = "VOICE", i);
 let I = e => {
     let {
         type: t,
         guildId: i,
         closePopout: l
-    } = e, E = (0, h.GV)(), {
+    } = e, C = (0, h.GV)(), {
         notClaimed: I,
         notEmailVerified: N,
         notPhoneVerified: b,
@@ -40,8 +40,8 @@ let I = e => {
     }), j = f.intl.string(f.t.BddRzS)) : S && (y = f.intl.formatToPlainString(f.t.sncw41, {
         min: g.$8o.ACCOUNT_AGE
     }), j = f.intl.string(f.t.BddRzS))), null == v || null == y) ? null : (0, s.jsxs)(c.lGe, {
-        className: a()(C.popover, x.kL),
-        "aria-labelledby": E,
+        className: a()(E.popover, x.kL),
+        "aria-labelledby": C,
         children: [(0, s.jsx)("img", {
             alt: "",
             className: x.Sl,
@@ -50,7 +50,7 @@ let I = e => {
             className: x.Qs,
             children: [(0, s.jsx)(c.Heading, {
                 variant: "heading-md/semibold",
-                id: E,
+                id: C,
                 children: v
             }), (0, s.jsx)(c.Text, {
                 color: "text-default",

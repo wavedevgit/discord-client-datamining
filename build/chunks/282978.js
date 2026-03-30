@@ -20,8 +20,8 @@ var i = n(627968),
     p = n(71393),
     f = n(287809),
     x = n(583613),
-    C = n(403362),
-    E = n(58736),
+    E = n(403362),
+    C = n(58736),
     I = n(518477),
     N = n(985018),
     b = n(28283);
@@ -49,7 +49,7 @@ class S {
     }
     generateNicknameGuildPairs = (0, x.L_)(e => a()(g.Ay.getNicknameGuildsMapping(e?.id ?? this.userId)).toPairs().map(e => {
         let [t, n] = e;
-        return [t, n.map(e => p.A.getGuild(e)?.name).filter(C.Vq)]
+        return [t, n.map(e => p.A.getGuild(e)?.name).filter(E.Vq)]
     }).filter(t => {
         let [n] = t;
         return n !== e?.globalName
@@ -128,16 +128,16 @@ function T(e) {
         userId: n,
         analyticsLocations: _,
         channelId: t.id
-    }), [x, C] = s.useState(!1), I = s.useCallback(() => {
-        C(!0)
-    }, [C]), T = s.useCallback(() => {
-        C(!1)
-    }, [C]);
+    }), [x, E] = s.useState(!1), I = s.useCallback(() => {
+        E(!0)
+    }, [E]), T = s.useCallback(() => {
+        E(!1)
+    }, [E]);
     return 0 === g.getNicknameGuildPairs().length && 0 === l.length ? (0, i.jsx)("div", {
         className: b.jH
     }) : (0, i.jsxs)(A.f5, {
         value: _,
-        children: [(0, i.jsx)(E.cG, {
+        children: [(0, i.jsx)(C.cG, {
             className: b.yF
         }), (0, i.jsx)(d.LpS, {
             text: N.intl.string(N.t.l1QVfj),

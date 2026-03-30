@@ -22,8 +22,8 @@ var i = n(627968),
     p = n(394953),
     f = n(976860),
     x = n(622543),
-    C = n(576622),
-    E = n(994500),
+    E = n(576622),
+    C = n(994500),
     I = n(967198),
     N = n(287809),
     b = n(486020),
@@ -138,7 +138,7 @@ function U(e) {
                     prefix: null, level: 1
                 }
         }
-    }(t.type, r), C = (0, i.jsxs)(i.Fragment, {
+    }(t.type, r), E = (0, i.jsxs)(i.Fragment, {
         children: [null != f ? (0, i.jsxs)(d.AC4, {
             children: [f, ":"]
         }) : null, " ", n]
@@ -152,7 +152,7 @@ function U(e) {
                 handleContextMenu: u
             });
         case O.rbe.GROUP_DM:
-            if (t.isManaged()) return C;
+            if (t.isManaged()) return E;
             return (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(d.AC4, {
                     children: M.intl.string(M.t["e5y+gm"])
@@ -170,14 +170,14 @@ function U(e) {
                     level: x,
                     onContextMenu: u,
                     onClick: c,
-                    children: C
+                    children: E
                 })]
             }) : (0, i.jsxs)(s.Fragment, {
                 children: [k(p, t.type === O.rbe.GUILD_ANNOUNCEMENT ? M.intl.string(M.t.l1dkSD) : M.intl.string(M.t.Pnajj0)), (0, i.jsx)(j.A.Title, {
                     level: x,
                     onContextMenu: u,
                     onClick: c,
-                    children: C
+                    children: E
                 }), null != g ? g() : null]
             });
         case O.rbe.GUILD_VOICE:
@@ -186,7 +186,7 @@ function U(e) {
                     level: x,
                     onContextMenu: u,
                     onClick: c,
-                    children: C
+                    children: E
                 })]
             });
         case O.rbe.GUILD_STAGE_VOICE:
@@ -195,7 +195,7 @@ function U(e) {
                     level: x,
                     onContextMenu: u,
                     onClick: c,
-                    children: C
+                    children: E
                 })]
             });
         case O.rbe.ANNOUNCEMENT_THREAD:
@@ -210,7 +210,7 @@ function U(e) {
                         onContextMenu: _,
                         onClick: h,
                         className: a()(D.rg, D.or),
-                        children: (0, A.m1)(l, N.default, E.A)
+                        children: (0, A.m1)(l, N.default, C.A)
                     }), (0, i.jsx)(j.A.Caret, {})]
                 })
             }
@@ -223,7 +223,7 @@ function U(e) {
                     className: a()({
                         [D.or]: o
                     }),
-                    children: C
+                    children: E
                 })]
             });
         case O.rbe.GUILD_DIRECTORY:
@@ -252,7 +252,7 @@ let P = e => {
         channel: t
     } = e, n = (0, r.bG)([N.default], () => N.default.getCurrentUser()), l = (0, r.bG)([N.default], () => N.default.getUser(t.getRecipientId())), a = (0, r.bG)([x.A], () => null != l ? x.A.getUserProfile(l.id) : null), o = null != a && (a?.fetchEndedAt ?? 0) > 0;
     return (s.useEffect(() => {
-        n?.isStaff() && null != l && !l.isStaff() && (0, C.A)(l.id, l.getAvatarURL(void 0, 80), {
+        n?.isStaff() && null != l && !l.isStaff() && (0, E.A)(l.id, l.getAvatarURL(void 0, 80), {
             dispatchWait: !0,
             withMutualGuilds: !0,
             withMutualFriendsCount: !0

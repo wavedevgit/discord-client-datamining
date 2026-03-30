@@ -22,8 +22,8 @@ var m = n(952790),
     p = n(71393),
     f = n(320501),
     x = n(222823),
-    C = n(661191),
-    E = n(851109),
+    E = n(661191),
+    C = n(851109),
     I = n(706341),
     N = n(932883),
     b = n(599486),
@@ -94,7 +94,7 @@ function P(e) {
                         n = t.last()?.id,
                         i = x.Ay.ackMessageId(e),
                         s = t.hasPresent() && t.ready && !t.cached;
-                    null != n && null != i && s && C.default.compare(i, n) >= 0 && h.ack(e, {
+                    null != n && null != i && s && E.default.compare(i, n) >= 0 && h.ack(e, {
                         section: L.JJy.NOTIFICATIONS_INBOX,
                         object: L.ZSU.ACK_INBOX_CHANNEL_NO_MESSAGES,
                         objectType: L.AnalyticsObjectTypes.ACK_AUTOMATIC
@@ -121,11 +121,11 @@ function P(e) {
         u.h.dispatch({
             type: "NOTIFICATIONS_INBOX_OPEN"
         });
-        let e = (0, E.GE)({
+        let e = (0, C.GE)({
                 location: "NotificationsInboxSidebar"
             }).notificationCenterVariant,
             t = S.A.getDevOverrides().navOnClick ?? !0;
-        if (e !== E.U5.SIDEBAR || !1 === t) return;
+        if (e !== C.U5.SIDEBAR || !1 === t) return;
         let {
             message: i,
             isUnread: s
@@ -149,7 +149,7 @@ function P(e) {
                 isUnread: !1
             } : {
                 message: {
-                    id: C.default.atNextMillisecond(r),
+                    id: E.default.atNextMillisecond(r),
                     channel_id: a
                 },
                 isUnread: x.Ay.hasUnread(a) ?? !1
@@ -173,9 +173,9 @@ function P(e) {
     });
     let {
         filterStyle: Y
-    } = (0, E.X8)({
+    } = (0, C.X8)({
         location: "NotificationsInboxSidebar"
-    }), z = Y === E.yF.DROPDOWN && l !== O.Io.ALL, q = (0, O.Yw)(l);
+    }), z = Y === C.yF.DROPDOWN && l !== O.Io.ALL, q = (0, O.Yw)(l);
     return (0, i.jsx)("nav", {
         className: a()(D.kL, {
             [D.Yu]: t
@@ -218,7 +218,7 @@ function k(e, t, n) {
         let {
             id: i
         } = e;
-        return !(C.default.age(i) > O.V$ || null != n && 0 >= C.default.compare(i, n)) && t === O.Io.ALL
+        return !(E.default.age(i) > O.V$ || null != n && 0 >= E.default.compare(i, n)) && t === O.Io.ALL
     }), [e, t, n])
 }
 

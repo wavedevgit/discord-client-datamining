@@ -60,7 +60,7 @@ function f(e) {
             case 4:
                 return "homeSidebarWidth"
         }
-    }(t), [x, C] = l.useState(A.Ay[f]), E = l.useCallback(e => {
+    }(t), [x, E] = l.useState(A.Ay[f]), C = l.useCallback(e => {
         u.Ay.updatedUnsyncedSettings({
             [f]: e
         })
@@ -94,8 +94,8 @@ function f(e) {
                     minWidth: 450,
                     maxWidth: n,
                     resizableNode: g,
-                    onResize: C,
-                    onResizeEnd: E
+                    onResize: E,
+                    onResizeEnd: C
                 }), (0, s.jsx)("div", {
                     ref: g,
                     className: r()(_.kL, {

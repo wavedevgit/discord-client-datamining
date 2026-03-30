@@ -1,7 +1,7 @@
 /** chunk id: 750448 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => E
+    A: () => C
 });
 var i = n(627968),
     s = n(64700),
@@ -27,9 +27,9 @@ function x(e) {
     let t = o.default.getMutableGuildStates();
     return e === m.sFm.SERVER_DISCOVERY_BADGE && !u.A.hasViewed(m.sFm.SERVER_DISCOVERY_BADGE) || e !== g && e !== p && t[e ?? "null"]?.highImportanceMentionCount > 0
 }
-let C = (0, A.L_)((e, t, n) => ["null", ...t, ...e, p, m.sFm.E3_SERVER_DISCOVERY_BADGE, g]),
-    E = s.forwardRef(function(e, t) {
-        let n = (0, l.yK)([d.Ay, c.A, o.default], () => C(d.Ay.getGuildFolders(), c.A.getUnreadPrivateChannelIds(), o.default.getStoreChangeSentinel())),
+let E = (0, A.L_)((e, t, n) => ["null", ...t, ...e, p, m.sFm.E3_SERVER_DISCOVERY_BADGE, g]),
+    C = s.forwardRef(function(e, t) {
+        let n = (0, l.yK)([d.Ay, c.A, o.default], () => E(d.Ay.getGuildFolders(), c.A.getUnreadPrivateChannelIds(), o.default.getStoreChangeSentinel())),
             s = (0, l.bG)([h.A], () => h.A.isFocused()),
             u = (0, l.bG)([r.A], () => r.A.getExpandedFolders());
         return (0, i.jsx)(a.A, {

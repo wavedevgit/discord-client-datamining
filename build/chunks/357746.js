@@ -20,8 +20,8 @@ var i = n(627968),
     p = n(249584),
     f = n(49999),
     x = n(333354),
-    C = n(985018),
-    E = n(384055);
+    E = n(985018),
+    C = n(384055);
 
 function I(e) {
     let {
@@ -130,7 +130,7 @@ let N = {
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(d.G, {
                 ref: T,
-                className: E.kL,
+                className: C.kL,
                 id: `skill-trees-${t}`,
                 renderIcon: e => (0, i.jsx)(o._Jp, {
                     size: "md",
@@ -138,10 +138,10 @@ let N = {
                     color: "currentColor"
                 }),
                 background: b?.popout != null && (0, i.jsx)("div", {
-                    className: E.Fi,
+                    className: C.Fi,
                     children: (0, i.jsx)(o.tvC, {
                         nextScene: null == L ? "animation" : "LOOP",
-                        className: E.UU,
+                        className: C.UU,
                         sceneSegments: N,
                         importData: () => n.e("67807").then(n.t.bind(n, 217762, 19)),
                         onScenePlay: D,
@@ -152,9 +152,9 @@ let N = {
                 }),
                 text: (0, i.jsx)("span", {
                     className: a()({
-                        [E.A7]: b?.showUnread === !0
+                        [C.A7]: b?.showUnread === !0
                     }),
-                    children: C.intl.string(x.default.yv3DJJ)
+                    children: E.intl.string(x.default.yv3DJJ)
                 }),
                 selected: l,
                 onClick: S,

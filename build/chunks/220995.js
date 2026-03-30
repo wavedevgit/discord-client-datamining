@@ -20,8 +20,8 @@ var i = n(627968),
     p = n(71393),
     f = n(576705),
     x = n(954571),
-    C = n(778768),
-    E = n(652215);
+    E = n(778768),
+    C = n(652215);
 n(281405);
 var I = n(985018),
     N = n(426114),
@@ -44,7 +44,7 @@ function T(e) {
             location_stack: M
         }
     });
-    let D = (0, c.bG)([f.A], () => f.A.can(E.xBc.CREATE_INSTANT_INVITE, t), [t]),
+    let D = (0, c.bG)([f.A], () => f.A.can(C.xBc.CREATE_INSTANT_INVITE, t), [t]),
         G = (0, c.bG)([p.A], () => p.A.getGuild(t.guild_id)),
         [U, P] = s.useState(!1),
         w = s.useRef(null),
@@ -55,7 +55,7 @@ function T(e) {
         H = k || V,
         F = s.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "unknown";
-            x.default.track(E.HAw.VOICE_INVITE_SUGGESTIONS_ENTRYPOINT_CLOSED, {
+            x.default.track(C.HAw.VOICE_INVITE_SUGGESTIONS_ENTRYPOINT_CLOSED, {
                 reason: e,
                 channel_id: t.id,
                 guild_id: t.guild_id,
@@ -71,7 +71,7 @@ function T(e) {
                     ...n,
                     guild: G,
                     channel: t,
-                    source: E.PE1.VOICE_INVITE_SUGGESTIONS
+                    source: C.PE1.VOICE_INVITE_SUGGESTIONS
                 })
             })
         }, [G, t]),
@@ -124,7 +124,7 @@ function T(e) {
         align: "top",
         spacing: 17,
         popoutKey: "voice-invite-suggestions-button",
-        renderPopout: e => (0, i.jsx)(C.w, {
+        renderPopout: e => (0, i.jsx)(E.w, {
             channel: t,
             onHoverOrFocus: B,
             ...e

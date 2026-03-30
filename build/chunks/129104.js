@@ -25,7 +25,7 @@ function p(e) {
         selectedDefaultStatus: p,
         setIsEmojiPickerOpen: f,
         defaultStatusVariant: x
-    } = e, C = s.useRef(null), E = (0, l.bG)([h.A, u.A], () => u.A.getChannel(h.A.getVoiceChannelId())), I = s.useCallback(() => null != t ? (0, i.jsx)(r.A, {
+    } = e, E = s.useRef(null), C = (0, l.bG)([h.A, u.A], () => u.A.getChannel(h.A.getVoiceChannelId())), I = s.useCallback(() => null != t ? (0, i.jsx)(r.A, {
         emojiId: t.id,
         emojiName: t.name,
         animated: !!t.animated
@@ -40,7 +40,7 @@ function p(e) {
         fallbackVariant: x
     }) : null, [t, x, p]);
     return (0, i.jsx)(a.YNO, {
-        targetElementRef: C,
+        targetElementRef: E,
         onRequestOpen: () => f(!0),
         onRequestClose: () => f(!1),
         renderPopout: e => {
@@ -48,8 +48,8 @@ function p(e) {
                 closePopout: t
             } = e;
             return (0, i.jsx)(c.A, {
-                channel: E,
-                guildId: E?.guild_id ?? void 0,
+                channel: C,
+                guildId: C?.guild_id ?? void 0,
                 closePopout: t,
                 onSelectEmoji: e => {
                     let {
@@ -78,7 +78,7 @@ function p(e) {
             } = n;
             return (0, i.jsx)(o.A, {
                 ...e,
-                ref: C,
+                ref: E,
                 active: s,
                 tabIndex: 0,
                 renderButtonContents: null == t && null == p ? null : I

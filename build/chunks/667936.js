@@ -20,8 +20,8 @@ var i = n(627968),
     p = n(287809),
     f = n(486020),
     x = n(427262),
-    C = n(43950),
-    E = n(463745);
+    E = n(43950),
+    C = n(463745);
 
 function I(e) {
     let {
@@ -35,7 +35,7 @@ function I(e) {
         children: (0, i.jsx)(c.euF, {
             src: l ?? n.user.getAvatarURL(t, 16),
             size: c._3J.SIZE_16,
-            className: a()(s, E.wE),
+            className: a()(s, C.wE),
             "aria-label": n.nick ?? x.Ay.getName(n.user)
         })
     })
@@ -47,7 +47,7 @@ function N(e) {
         guildId: n
     } = e;
     return (0, i.jsx)(m.A, {
-        className: E.S3,
+        className: C.S3,
         guildId: n,
         users: t,
         max: 6,
@@ -57,7 +57,7 @@ function N(e) {
             className: t
         }, s),
         renderMoreUsers: (e, t, n) => (0, i.jsx)("div", {
-            className: a()(E.TO, t),
+            className: a()(C.TO, t),
             children: e
         }, n)
     })
@@ -79,11 +79,11 @@ let b = e => {
     if (null == x) return null;
     let b = m || (0, u.A)(n),
         S = (0, _.gV)(t.type),
-        T = c ? C.z : C.A;
+        T = c ? E.z : E.A;
     return (0, i.jsxs)("div", {
-        className: c ? void 0 : E.Eb,
+        className: c ? void 0 : C.Eb,
         children: [(0, i.jsx)("div", {
-            className: c ? void 0 : E.Il,
+            className: c ? void 0 : C.Il,
             children: b ? (0, i.jsx)(T, {
                 activity: n,
                 embeddedApp: a,
@@ -103,7 +103,7 @@ let b = e => {
                 enableUserHoverActivities: c
             })
         }), (0, i.jsx)("div", {
-            className: c ? void 0 : E.M4,
+            className: c ? void 0 : C.M4,
             children: (0, i.jsx)(h.A, {
                 type: d.M.VOICE_CHANNEL,
                 activity: n,

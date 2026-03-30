@@ -20,8 +20,8 @@ var i = n(627968),
     p = n(306852),
     f = n(947580),
     x = n(163432),
-    C = n(652215),
-    E = n(806931),
+    E = n(652215),
+    C = n(806931),
     I = n(256960),
     N = n(363862);
 let b = 16 / 9,
@@ -51,13 +51,13 @@ function T(e) {
         F = (0, c.A)(B),
         [K, W] = s.useState(!0),
         [Y, z] = s.useState(!1),
-        q = L.type === E.lp.ACTIVITY,
+        q = L.type === C.lp.ACTIVITY,
         X = (0, d.A)(q ? L.applicationId : void 0),
         Q = !q && null != L.streamId,
         J = U <= 2 * S + 144,
         $ = M && !J,
         Z = (0, c.A)($),
-        ee = P === C.DUB.MINIMUM || P === C.DUB.NORMAL,
+        ee = P === E.DUB.MINIMUM || P === E.DUB.NORMAL,
         et = !J && (!ee || q),
         en = (0, _.A)(et, 100),
         ei = ((0, c.A)(L.id) ?? L.id) !== L.id,
@@ -88,9 +88,9 @@ function T(e) {
                 clamp: !0
             },
             onStart: () => z(!0),
-            onChange: () => m._.dispatch(C.jej.REMEASURE_TARGET),
+            onChange: () => m._.dispatch(E.jej.REMEASURE_TARGET),
             onRest: () => {
-                z(!1), m._.dispatch(C.jej.REMEASURE_TARGET)
+                z(!1), m._.dispatch(E.jej.REMEASURE_TARGET)
             }
         }, eh),
         em = (0, o.zhh)({
@@ -136,8 +136,8 @@ function T(e) {
         }, []),
         ex = $ ? [] : (0, f.Cf)(v, L, V),
         {
-            visibleParticipants: eC,
-            participantTileWidth: eE
+            visibleParticipants: eE,
+            participantTileWidth: eC
         } = (0, x.i4)(G, y);
     return (0, i.jsxs)("div", {
         className: a()(N.zr, I.tR, D),
@@ -212,8 +212,8 @@ function T(e) {
                     onClick: n,
                     onContextMenu: l,
                     onDoubleClick: T,
-                    participants: eC,
-                    participantTileWidth: eE,
+                    participants: eE,
+                    participantTileWidth: eC,
                     selectedParticipantId: L.id,
                     inCall: R,
                     popoutType: j,

@@ -20,8 +20,8 @@ var i = n(627968),
     p = n(544028),
     f = n(253932),
     x = n(576705),
-    C = n(486020),
-    E = n(885631),
+    E = n(486020),
+    C = n(885631),
     I = n(986268),
     N = n(652215),
     b = n(349828),
@@ -54,7 +54,7 @@ function v(e) {
                 className: a()(T.Q, {
                     [T.fr]: o.Fr
                 }),
-                src: C.Ay.getGuildBannerURL({
+                src: E.Ay.getGuildBannerURL({
                     id: t.id,
                     banner: s
                 }, l) ?? "",
@@ -140,8 +140,8 @@ function L(e) {
         ariaControls: o,
         ariaExpanded: m,
         children: p
-    } = e, f = (0, h.YC)(l), C = (0, c.bG)([x.A], () => (0, _.K)(x.A, l)), E = s.useCallback(() => {
-        C ? (0, u.mMO)(async () => {
+    } = e, f = (0, h.YC)(l), E = (0, c.bG)([x.A], () => (0, _.K)(x.A, l)), C = s.useCallback(() => {
+        E ? (0, u.mMO)(async () => {
             let {
                 default: e
             } = await Promise.all([n.e("43600"), n.e("67505")]).then(n.bind(n, 234355));
@@ -158,7 +158,7 @@ function L(e) {
                 ...t
             })
         })
-    }, [C, l]);
+    }, [E, l]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)(u.DUT, {
             className: T.Vm,
@@ -190,7 +190,7 @@ function L(e) {
             children: (0, i.jsx)(u.DUT, {
                 className: T.ak,
                 onClick: () => {
-                    E()
+                    C()
                 },
                 children: (0, i.jsx)(u.DpX, {
                     size: "refresh_sm",
@@ -219,7 +219,7 @@ let M = s.memo(function(e) {
         headerClassName: R,
         communityInfoVisible: O,
         hasSubheader: M
-    } = e, G = I.features.has(N.GuildFeatures.ANIMATED_BANNER), U = (0, m.A)(I), P = !U && (0, E.A)(I), w = !U && O, k = (0, C.VI)(b) && G && !_, [V, B] = s.useState(!1), H = s.useRef(!1), F = s.useRef(null), K = t ?? F, W = s.useRef(void 0), Y = f.kt.getSetting(), z = (0, c.bG)([p.A], () => p.A.theme);
+    } = e, G = I.features.has(N.GuildFeatures.ANIMATED_BANNER), U = (0, m.A)(I), P = !U && (0, C.A)(I), w = !U && O, k = (0, E.VI)(b) && G && !_, [V, B] = s.useState(!1), H = s.useRef(!1), F = s.useRef(null), K = t ?? F, W = s.useRef(void 0), Y = f.kt.getSetting(), z = (0, c.bG)([p.A], () => p.A.theme);
     s.useEffect(() => {
         if (k && n && !H.current && Y) return B(!0), W.current = setTimeout(() => {
             B(!1)

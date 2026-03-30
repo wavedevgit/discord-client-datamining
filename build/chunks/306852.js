@@ -26,20 +26,20 @@ function x(e) {
         onContextMenuParticipant: n,
         height: l,
         channel: x,
-        participants: C,
-        onSelectParticipant: E
+        participants: E,
+        onSelectParticipant: C
     } = e, [I, N] = function() {
         let [e, t] = s.useState(() => o.w.get(f, m.CUs.BOTTOM_RIGHT));
         return [e, s.useCallback(e => {
             o.w.set(f, e), t(e)
         }, [])]
-    }(), b = s.useRef(null), S = null == x.getGuildId() ? 70 : 50, T = (0, r.bG)([h.A], () => h.A.pipWidth(_.R8.CAMERA_PREVIEW)), v = C.length, y = T * v + 8 * (v - 1), j = s.useMemo(() => ({
+    }(), b = s.useRef(null), S = null == x.getGuildId() ? 70 : 50, T = (0, r.bG)([h.A], () => h.A.pipWidth(_.R8.CAMERA_PREVIEW)), v = E.length, y = T * v + 8 * (v - 1), j = s.useMemo(() => ({
         minWidth: _.mn[_.R8.CAMERA_PREVIEW] * v + 8 * (v - 1),
         maxWidth: _.cF[_.R8.CAMERA_PREVIEW] * v + 8 * (v - 1)
     }), [v]);
     s.useLayoutEffect(() => {
         b.current?.ensureIsInPosition()
-    }, [C.length]);
+    }, [E.length]);
     let R = s.useCallback(e => {
             let t = 0 === v ? e : (e - 8 * (v - 1)) / v;
             c.EB(t, _.R8.CAMERA_PREVIEW)
@@ -65,7 +65,7 @@ function x(e) {
             resizeConfig: j,
             children: (0, i.jsx)("div", {
                 className: g.iA,
-                children: C.map(e => (0, i.jsx)(A.Ay, {
+                children: E.map(e => (0, i.jsx)(A.Ay, {
                     participant: e,
                     channel: x,
                     onContextMenu: n,
@@ -74,7 +74,7 @@ function x(e) {
                     inCall: !0,
                     popoutType: d.N.NO_POPOUT,
                     width: 160,
-                    onClick: E
+                    onClick: C
                 }, e.id))
             })
         })

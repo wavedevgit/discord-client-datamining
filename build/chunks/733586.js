@@ -38,8 +38,8 @@ function h(e) {
     }), {
         width: g,
         height: p
-    } = m, f = n?.length ?? 0, x = g - 16, C = p - (h + A), {
-        tileStyle: E,
+    } = m, f = n?.length ?? 0, x = g - 16, E = p - (h + A), {
+        tileStyle: C,
         tileWidth: I,
         rows: N,
         columns: b
@@ -68,7 +68,7 @@ function h(e) {
             rows: A,
             columns: m
         }
-    })(f, x, C), [f, x, C]), S = b + 1, T = S * I + (S - 1) * 8 <= g, v = Math.floor(I / c) + 8, y = Math.max(0, C - v * N) / 2;
+    })(f, x, E), [f, x, E]), S = b + 1, T = S * I + (S - 1) * 8 <= g, v = Math.floor(I / c) + 8, y = Math.max(0, E - v * N) / 2;
     return (0, i.jsx)(r.A, {
         fade: !0,
         className: t,
@@ -80,7 +80,7 @@ function h(e) {
                 children: n?.slice(t, t + b)?.map((e, n) => {
                     let s = t + n;
                     return (0, i.jsx)("div", {
-                        style: E,
+                        style: C,
                         className: a()(o.Vs, {
                             [o.E3]: T,
                             [o.k4]: s >= (N - 1) * b,

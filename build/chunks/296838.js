@@ -20,8 +20,8 @@ var i = n(627968),
     p = n(775121),
     f = n(775602),
     x = n(400492),
-    C = n(203982),
-    E = n(635914),
+    E = n(203982),
+    C = n(635914),
     I = n(652215),
     N = n(985018),
     b = n(608725);
@@ -112,14 +112,14 @@ class R extends s.PureComponent {
     scrollerRef = s.createRef();
     lastInputedKeys = [];
     componentDidMount() {
-        this.lastInputedKeys = [], C._.subscribe(I.jej.SCROLL_PAGE_UP, this.scrollPageUp), C._.subscribe(I.jej.SCROLL_PAGE_DOWN, this.scrollPageDown), window.addEventListener("keydown", this.handleKeyDown, {
+        this.lastInputedKeys = [], E._.subscribe(I.jej.SCROLL_PAGE_UP, this.scrollPageUp), E._.subscribe(I.jej.SCROLL_PAGE_DOWN, this.scrollPageDown), window.addEventListener("keydown", this.handleKeyDown, {
             capture: !0
         }), window.addEventListener("keyup", this.handleKeyUp, {
             capture: !0
         })
     }
     componentWillUnmount() {
-        C._.unsubscribe(I.jej.SCROLL_PAGE_UP, this.scrollPageUp), C._.unsubscribe(I.jej.SCROLL_PAGE_DOWN, this.scrollPageDown), window.removeEventListener("keydown", this.handleKeyDown, {
+        E._.unsubscribe(I.jej.SCROLL_PAGE_UP, this.scrollPageUp), E._.unsubscribe(I.jej.SCROLL_PAGE_DOWN, this.scrollPageDown), window.removeEventListener("keydown", this.handleKeyDown, {
             capture: !0
         }), window.removeEventListener("keyup", this.handleKeyUp, {
             capture: !0
@@ -303,7 +303,7 @@ function L(e) {
             parentComponent: "KeyboardShortcutsModal",
             children: (0, i.jsx)(A.F, {
                 component: "div",
-                children: l ? (0, i.jsx)(E.A, {
+                children: l ? (0, i.jsx)(C.A, {
                     handleDemonClose: function() {
                         c(!1), setTimeout(n, 500)
                     }
