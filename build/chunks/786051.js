@@ -18,8 +18,8 @@ let u = function(e) {
         buttonText: h,
         buttonIcon: m,
         buttonSubmitting: A,
-        onButtonClick: g,
-        imageSrc: p,
+        onButtonClick: p,
+        imageSrc: g,
         animationSrc: f,
         secondaryButtonText: _,
         onSecondaryButtonClick: E,
@@ -32,9 +32,9 @@ let u = function(e) {
         children: l.Children.only(x)
     });
     let T = null;
-    return null != p ? T = (0, i.jsx)("img", {
+    return null != g ? T = (0, i.jsx)("img", {
         alt: "",
-        src: p,
+        src: g,
         className: d.Sl
     }) : null != f && (T = (0, i.jsx)(r.akl, {
         importData: f,
@@ -71,7 +71,7 @@ let u = function(e) {
                     text: h,
                     size: "sm",
                     variant: S ?? "secondary",
-                    onClick: g,
+                    onClick: p,
                     loading: A,
                     icon: m
                 })

@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(827734),
     m = n(990078),
     A = n(397927),
-    g = n(608299),
-    p = n(155718),
+    p = n(608299),
+    g = n(155718),
     f = n(565150),
     _ = n(775602),
     E = n(793574),
@@ -63,7 +63,7 @@ function Z(e, t, n) {
         media: {
             url: l,
             proxyUrl: l,
-            loadingState: p.TD.UNKNOWN,
+            loadingState: g.TD.UNKNOWN,
             flags: 0
         },
         description: t ?? void 0,
@@ -99,13 +99,13 @@ let X = l.memo(l.forwardRef(function(e, t) {
             autoCompletePosition: eh,
             disableThemedBackground: em = !1,
             emojiPickerCloseOnModalOuterClick: eA,
-            parentModalKey: eg
+            parentModalKey: ep
         } = e,
-        ep = I.A.useField("channelDrafts")[y.id],
-        ef = ep?.title ?? "",
-        e_ = ep?.heroFile,
-        eE = ep?.publish ?? !0,
-        ex = ep?.createThread ?? !0;
+        eg = I.A.useField("channelDrafts")[y.id],
+        ef = eg?.title ?? "",
+        e_ = eg?.heroFile,
+        eE = eg?.publish ?? !0,
+        ex = eg?.createThread ?? !0;
     o()(null != b, "chat input type must be set");
     let {
         analyticsLocations: eC
@@ -148,11 +148,11 @@ let X = l.memo(l.forwardRef(function(e, t) {
             }
         }).then(t);
         n.push({
-            type: p.I5.MEDIA_GALLERY,
+            type: g.I5.MEDIA_GALLERY,
             items: [Z(`attachment://${e_.name}`, null, !1)],
             id: "82733"
         }), e.value.length > 0 && n.push({
-            type: p.I5.TEXT_DISPLAY,
+            type: g.I5.TEXT_DISPLAY,
             content: e.value,
             id: "82744"
         });
@@ -161,12 +161,12 @@ let X = l.memo(l.forwardRef(function(e, t) {
             a = l.filter(e => !e.isImage && !e.isVideo && e.filename !== e_?.name),
             r = s.map(e => Z(`attachment://${e.filename}`, e.description, e.spoiler));
         return r.length > 0 && n.push({
-            type: p.I5.MEDIA_GALLERY,
+            type: g.I5.MEDIA_GALLERY,
             items: r,
             id: "82755"
         }), a.forEach((e, t) => {
             n.push({
-                type: p.I5.FILE,
+                type: g.I5.FILE,
                 file: Z(`attachment://${e.filename}`, e.description, e.spoiler).media,
                 id: `${82766+t}`,
                 spoiler: e.spoiler,
@@ -244,7 +244,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
         if (null == e_) return;
         let e = P.A.getUploads(y.id, b.drafts.type),
             t = e.find(e => e.filename === e_.name)?.id;
-        null != t && g.A.remove(y.id, t, O.C.ChannelMessage), (0, I.x)(y.id, {
+        null != t && p.A.remove(y.id, t, O.C.ChannelMessage), (0, I.x)(y.id, {
             heroFile: null
         })
     }, [y.id, e_, b.drafts.type]);
@@ -441,7 +441,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                 onSelectSticker: e6,
                 channel: y,
                 closeOnModalOuterClick: eA,
-                parentModalKey: eg,
+                parentModalKey: ep,
                 position: "top",
                 align: "right",
                 positionLayerClassName: $.BD
@@ -561,14 +561,14 @@ function en(e) {
                 isThumbnail: !1,
                 origin: "file_picker"
             };
-        g.A.addFile({
+        p.A.addFile({
             file: s,
             channelId: t.id,
             draftType: O.C.ChannelMessage
         }), n(l)
     }, [o, c] = l.useState(!1), u = l.useCallback(() => {
         c(!0)
-    }, []), p = l.useCallback(() => {
+    }, []), g = l.useCallback(() => {
         c(!1)
     }, []);
     return (0, i.jsx)("div", {
@@ -580,7 +580,7 @@ function en(e) {
             children: (0, i.jsxs)(A.DUT, {
                 className: J.qN,
                 onMouseOver: u,
-                onMouseOut: p,
+                onMouseOut: g,
                 onFocus: s,
                 children: [(0, i.jsx)(j.Ay, {
                     ref: a,

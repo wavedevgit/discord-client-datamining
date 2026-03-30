@@ -18,12 +18,12 @@ let m = e => {
         user: n,
         application: m,
         oauth2Token: A
-    } = e, g = (0, l.bG)([o.Ay], () => o.Ay.getSelfEmbeddedActivities());
+    } = e, p = (0, l.bG)([o.Ay], () => o.Ay.getSelfEmbeddedActivities());
     if (!n.bot || null == m) return null;
 
-    function p() {
+    function g() {
         r.A.delete(A.id);
-        let e = g.get(m.id);
+        let e = p.get(m.id);
         null != e && c.A.leaveActivity({
             location: e.location,
             applicationId: m.id
@@ -47,7 +47,7 @@ let m = e => {
                     text: h.intl.string(h.t.xUqheM),
                     variant: "critical-primary",
                     onClick: () => {
-                        p(), e.onClose()
+                        g(), e.onClose()
                     }
                 }],
                 ...e

@@ -16,15 +16,15 @@ function h(e) {
     let t, n, h, {
             channel: m,
             messages: A,
-            oldestUnreadMessageId: g,
-            treatSpam: p,
+            oldestUnreadMessageId: p,
+            treatSpam: g,
             summaries: f,
             selectedSummary: _,
             selectedConversation: E
         } = e,
         x = [],
         C = !1,
-        S = null != g ? r.default.extractTimestamp(g) : null,
+        S = null != p ? r.default.extractTimestamp(p) : null,
         I = null;
     return A.forEach(e => {
         var s, T;
@@ -63,12 +63,12 @@ function h(e) {
             else if (t.ignored) return u.TZK.MESSAGE_GROUP_IGNORED;
             else if ((0, c.iJ)(e) && n) return u.TZK.MESSAGE_GROUP_SPAMMER;
             return null
-        }(m, e, R && p);
+        }(m, e, R && g);
         (null !== M && ([j, b] = (N = s = b, null == s || s.type !== M ? (v = {
             type: M,
             content: [],
             key: e.id
-        }, x.push(v)) : N = (v = s).content[v.content.length - 1], [v, N])), g === e.id && null != S) ? (null != b && b.type === u.TZK.DIVIDER ? b.unreadId = e.id : null !== j ? (T = j, e.isFirstMessageInForumPost(m) || T.content.push({
+        }, x.push(v)) : N = (v = s).content[v.content.length - 1], [v, N])), p === e.id && null != S) ? (null != b && b.type === u.TZK.DIVIDER ? b.unreadId = e.id : null !== j ? (T = j, e.isFirstMessageInForumPost(m) || T.content.push({
             type: u.TZK.DIVIDER,
             unreadId: e.id
         }), T.hasUnread = !0) : e.isFirstMessageInForumPost(m) || x.push({

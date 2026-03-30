@@ -15,8 +15,8 @@ var l = n(311907),
     h = n(661191),
     m = n(844944),
     A = n(513461),
-    g = n(123393),
-    p = n(652215),
+    p = n(123393),
+    g = n(652215),
     f = n(985018),
     _ = n(130921);
 
@@ -35,7 +35,7 @@ function E(e) {
             t = d.A.getGuild(e?.guildId);
         return {
             joinRequest: e,
-            isModmin: null != t && u.A.can(p.xBc.KICK_MEMBERS, t),
+            isModmin: null != t && u.A.can(g.xBc.KICK_MEMBERS, t),
             guildId: t?.id,
             maxMembers: t?.maxMembers
         }
@@ -43,7 +43,7 @@ function E(e) {
         approveRequest: y,
         rejectRequest: b,
         submitting: j
-    } = (0, g.W)(C?.guildId, C?.userId, C?.joinRequestId);
+    } = (0, p.W)(C?.guildId, C?.userId, C?.joinRequestId);
     return null != C && C.applicationStatus === A.B5.SUBMITTED && S ? (0, i.jsxs)("div", {
         className: _.U,
         children: [(0, i.jsx)(s.m, {

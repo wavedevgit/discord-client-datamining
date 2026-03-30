@@ -17,12 +17,12 @@ function h(e) {
         channel: t,
         user: h,
         guild: m
-    } = e, A = (0, l.bG)([o.A], () => null != h && null != m && (0, a.KX)(h, m, [o.A])), g = (0, l.bG)([r.Ay], () => null == h || null == r.Ay.getMember(t.guild_id, h.id));
+    } = e, A = (0, l.bG)([o.A], () => null != h && null != m && (0, a.KX)(h, m, [o.A])), p = (0, l.bG)([r.Ay], () => null == h || null == r.Ay.getMember(t.guild_id, h.id));
     if (!A) return null;
-    let p = g ? u.intl.string(d.default.Ux67nW) : u.intl.string(d.default["snp/lJ"]),
+    let g = p ? u.intl.string(d.default.Ux67nW) : u.intl.string(d.default["snp/lJ"]),
         f = `kick-user-${h?.id}`;
     return (0, i.jsx)(c.A, {
-        text: p,
+        text: g,
         icon: s.Nxw,
         onClick: () => {
             null != h && (0, s.mMO)(async () => {
@@ -37,6 +37,6 @@ function h(e) {
                 })
             })
         },
-        disabled: g
+        disabled: p
     }, f)
 }

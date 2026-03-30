@@ -21,8 +21,8 @@ let d = [],
         })
     },
     A = [],
-    g = 10 * o.A.Millis.SECOND,
-    p = (0, l.debounce)(() => {
+    p = 10 * o.A.Millis.SECOND,
+    g = (0, l.debounce)(() => {
         let e = (0, c.fr)(h);
         a.OR.announce(e, "polite"), h = []
     }, 500);
@@ -67,14 +67,14 @@ let _ = new f(r.h, {
         }, h = [...h, {
             emojiName: t.name,
             userId: n
-        }], p())
+        }], g())
     },
     VOICE_CHANNEL_EFFECT_SENT_LOCAL: () => {
         let e = new Date;
         if ((A = [e, ...A].slice(0, 20)).length >= 20) {
             let t = A[A.length - 1],
                 n = e.getTime() - t.getTime();
-            n < g && (i = new Date(e.getTime() + g - n))
+            n < p && (i = new Date(e.getTime() + p - n))
         }
     },
     VOICE_CHANNEL_EFFECT_UPDATE_TIME_STAMP: e => {

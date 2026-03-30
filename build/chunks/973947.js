@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(954571),
     m = n(504292),
     A = n(656088),
-    g = n(774030),
-    p = n(494783),
+    p = n(774030),
+    g = n(494783),
     f = n(652215),
     _ = n(257645),
     E = n(985018),
@@ -28,7 +28,7 @@ let C = e => {
     } = e, {
         activeVoice: C,
         mostRecentlyRequestedVoiceId: S
-    } = (0, p.f)(), I = (0, g.e)(t.id), T = t.id === C, v = !t.available && !t.temporarilyAvailable, N = t.temporarilyAvailable && !n && !T, y = !T && t.id === S, [b, j] = l.useState(!1);
+    } = (0, g.f)(), I = (0, p.e)(t.id), T = t.id === C, v = !t.available && !t.temporarilyAvailable, N = t.temporarilyAvailable && !n && !T, y = !T && t.id === S, [b, j] = l.useState(!1);
     l.useEffect(() => {
         let e = y ? setTimeout(() => j(y), 200) : void 0;
         return () => {

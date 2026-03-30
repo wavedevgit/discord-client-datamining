@@ -1,6 +1,6 @@
 /** chunk id: 926262 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(627968),
     l = n(64700),
@@ -15,11 +15,11 @@ var i = n(627968),
     m = n(976369),
     A = n(782691);
 
-function g(e) {
+function p(e) {
     let {
         onClose: t,
-        onConfirm: g,
-        onCancel: p,
+        onConfirm: p,
+        onCancel: g,
         channel: f,
         analyticsType: _,
         popoutText: E,
@@ -32,11 +32,11 @@ function g(e) {
         })
     }, [_, f]);
     let C = l.useCallback(() => {
-            g?.(), t()
-        }, [g, t]),
-        S = l.useCallback(() => {
             p?.(), t()
         }, [p, t]),
+        S = l.useCallback(() => {
+            g?.(), t()
+        }, [g, t]),
         I = l.useRef(null);
     return l.useEffect(() => {
         let e, t = c.A.theme,

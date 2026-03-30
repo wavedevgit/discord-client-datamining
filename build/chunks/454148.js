@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(544231),
     m = n(349435),
     A = n(665909),
-    g = n(576045),
-    p = n(477427),
+    p = n(576045),
+    g = n(477427),
     f = n(56462),
     _ = n(652215),
     E = n(985018);
@@ -30,7 +30,7 @@ function x(e) {
     }, [t, x]), T = e => {
         r.A.updateChannelOverrideSettings(null, t, {
             muted: !0
-        }, p.fd.Muted), c.A.showMuteSuccessToast(C, t), (0, A._$)({
+        }, g.fd.Muted), c.A.showMuteSuccessToast(C, t), (0, A._$)({
             channelId: t,
             warningId: x,
             senderId: C,
@@ -47,7 +47,7 @@ function x(e) {
         }), o.A.increment({
             name: s.K.SAFETY_WARNING_VIEW
         })
-    }, [t, x, C]), (0, i.jsx)(g.N, {
+    }, [t, x, C]), (0, i.jsx)(p.N, {
         channelId: t,
         warningId: x,
         senderId: C,

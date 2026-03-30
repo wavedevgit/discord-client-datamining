@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(734066),
     m = n(274372),
     A = n(572164),
-    g = n(157207),
-    p = n(794905),
+    p = n(157207),
+    g = n(794905),
     f = n(450510),
     _ = n(267102),
     E = n(969632),
@@ -50,7 +50,7 @@ let k = l.memo(function(e) {
         location: "ChannelAttachButton"
     }), {
         onShareClick: $
-    } = (0, p.A)(s.id), Z = (0, r.bG)([f.HP], () => f.HP.hasHotspot(f._2.CLIPS_CHANNEL_ATTACH_REMINDER)), X = (0, o.red)(e => (0, o.fDT)(e, L.nm)), Q = (0, r.bG)([T.A], () => T.A.hasLayers()), ee = (0, r.bG)([m.A], () => m.A.hasClips()), [et, en] = l.useState(null), ei = (0, h.sw)() && (W || ee), el = s.isPrivate(), es = (0, r.bG)([v.A], () => el || v.A.can(O.xBc.ATTACH_FILES, s) && v.A.can(O.xBc.SEND_MESSAGES, s)), ea = (0, d.A)(z);
+    } = (0, g.A)(s.id), Z = (0, r.bG)([f.HP], () => f.HP.hasHotspot(f._2.CLIPS_CHANNEL_ATTACH_REMINDER)), X = (0, o.red)(e => (0, o.fDT)(e, L.nm)), Q = (0, r.bG)([T.A], () => T.A.hasLayers()), ee = (0, r.bG)([m.A], () => m.A.hasClips()), [et, en] = l.useState(null), ei = (0, h.sw)() && (W || ee), el = s.isPrivate(), es = (0, r.bG)([v.A], () => el || v.A.can(O.xBc.ATTACH_FILES, s) && v.A.can(O.xBc.SEND_MESSAGES, s)), ea = (0, d.A)(z);
 
     function er() {
         (0, o.mMO)(async () => {
@@ -86,7 +86,7 @@ let k = l.memo(function(e) {
         eh = (0, x.Sc)(),
         em = (0, u.b)(),
         eA = Y?.length ?? 0,
-        eg = (0, D.A)({
+        ep = (0, D.A)({
             canAttachFiles: es,
             canStartThreads: eo || ec,
             useSlate: ed,
@@ -100,8 +100,8 @@ let k = l.memo(function(e) {
             canSendScheduledMessages: eh,
             canSummarizeThreads: em
         });
-    if (0 === eg.length) return null;
-    let ep = (0, i.jsx)(o.pa$, {
+    if (0 === ep.length) return null;
+    let eg = (0, i.jsx)(o.pa$, {
             size: "refresh_sm",
             color: "currentColor",
             colorClass: w.dW
@@ -122,7 +122,7 @@ let k = l.memo(function(e) {
             renderPopout: e => {
                 switch (et) {
                     case "recentClips":
-                        return (0, i.jsx)(g.A, {
+                        return (0, i.jsx)(p.A, {
                             ...e,
                             onOpenClips: er,
                             lastClipsSession: z
@@ -131,7 +131,7 @@ let k = l.memo(function(e) {
                         return (0, i.jsx)(M.A, {
                             ...e,
                             onClose: () => en(null),
-                            options: eg,
+                            options: ep,
                             channel: s,
                             onFileUpload: () => B.current?.activateUploadDialogue(),
                             draftType: k,
@@ -152,7 +152,7 @@ let k = l.memo(function(e) {
                 onDoubleClick: es ? () => B.current?.activateUploadDialogue() : void 0,
                 "aria-haspopup": "menu",
                 ...e,
-                children: ep
+                children: eg
             })
         });
     return (0, i.jsxs)(i.Fragment, {

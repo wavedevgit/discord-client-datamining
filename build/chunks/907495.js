@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(565645),
     m = n(775602),
     A = n(812930),
-    g = n(822123),
-    p = n(7584),
+    p = n(822123),
+    g = n(7584),
     f = n(635222),
     _ = n(969043),
     E = n(843626),
@@ -53,7 +53,7 @@ var i = n(627968),
     Z = n(307731),
     X = n(985018),
     Q = n(410110);
-let ee = [p.Ay.getByName("100"), p.Ay.getByName("laughing"), p.Ay.getByName("sparkling_heart")].filter(F.Vq);
+let ee = [g.Ay.getByName("100"), g.Ay.getByName("laughing"), g.Ay.getByName("sparkling_heart")].filter(F.Vq);
 
 function et(e) {
     e.stopPropagation()
@@ -89,7 +89,7 @@ let ei = l.memo(function(e) {
     let {
         channel: t,
         message: n
-    } = e, l = (0, g.QZ)(t.guild_id).filter(e => !G.Ay.isEmojiFilteredOrLocked({
+    } = e, l = (0, p.QZ)(t.guild_id).filter(e => !G.Ay.isEmojiFilteredOrLocked({
         emoji: e,
         channel: t,
         intention: Z.b_.REACTION,
@@ -150,8 +150,8 @@ function el(e) {
         canDelete: r,
         canReport: o,
         canEdit: h,
-        canPublish: g,
-        canReact: p,
+        canPublish: p,
+        canReact: g,
         canConfigureJoin: f,
         canReply: C,
         canStartThread: S,
@@ -177,7 +177,7 @@ function el(e) {
             isFocused: o
         } = e, {
             author: u
-        } = n, h = (0, d.bG)([L.A], () => L.A.getGuild(t.guild_id), [t.guild_id]), g = (0, d.bG)([D.default], () => D.default.getId()), p = (0, R.Id)(t), f = (0, R.s5)(t), {
+        } = n, h = (0, d.bG)([L.A], () => L.A.getGuild(t.guild_id), [t.guild_id]), p = (0, d.bG)([D.default], () => D.default.getId()), g = (0, R.Id)(t), f = (0, R.s5)(t), {
             firstMessage: x
         } = (0, d.bG)([_.A], () => _.A.getMessage(t.id), [t.id]), C = M.jW.useSetting(), S = M.Q_.useSetting(), T = (0, d.bG)([P.A], () => null == t.guild_id || P.A.canChatInGuild(t.guild_id), [t]), {
             canManageMessages: v,
@@ -185,11 +185,11 @@ function el(e) {
         } = (0, d.cf)([w.A], () => ({
             canAddNewReactions: T && w.A.can($.xBc.ADD_REACTIONS, t),
             canManageMessages: w.A.can($.xBc.MANAGE_MESSAGES, t)
-        }), [t, T]), O = (0, y.u)(t, n), k = (0, R.n)(t, n), G = (0, R.R)(n), F = (0, d.bG)([I.A], () => null != t.guild_id && I.A.isLurking(t.guild_id), [t]), z = u.id === g, Y = (v || n.canDeleteOwnMessage(g)) && p && !$.MRS.UNDELETABLE.has(n.type);
+        }), [t, T]), O = (0, y.u)(t, n), k = (0, R.n)(t, n), G = (0, R.R)(n), F = (0, d.bG)([I.A], () => null != t.guild_id && I.A.isLurking(t.guild_id), [t]), z = u.id === p, Y = (v || n.canDeleteOwnMessage(p)) && g && !$.MRS.UNDELETABLE.has(n.type);
         n.type === $.lAJ.AUTO_MODERATION_ACTION && (Y = Y && v), t.isModeratorReportChannel() && (Y = Y && n.id !== x?.id && !(0, K.A)(n));
         let q = (0, H.ul)(n),
             J = (0, V.A)(n, t),
-            Z = !t.isSystemDM() && (0, B.A)(n, g) && p && !f,
+            Z = !t.isSystemDM() && (0, B.A)(n, p) && g && !f,
             {
                 disableReactionCreates: X
             } = (0, W.A)({
@@ -198,7 +198,7 @@ function el(e) {
                 renderReactions: C,
                 canAddNewReactions: N,
                 isLurking: F,
-                isActiveChannelOrUnarchivableThread: p
+                isActiveChannelOrUnarchivableThread: g
             }),
             Q = t.type === $.rbe.GUILD_ANNOUNCEMENT && null != h && h.features.has($.GuildFeatures.NEWS) && (z || v) && (0, A.A)(n),
             ee = t.getGuildId(),
@@ -287,7 +287,7 @@ function el(e) {
                 icon: u.W4J,
                 onClick: e => (0, Y.$b)(t, n, e)
             }, "reply-self") : null]
-        }) : null, p ? (0, i.jsxs)(i.Fragment, {
+        }) : null, g ? (0, i.jsxs)(i.Fragment, {
             children: [N ? null : (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(ei, {
                     channel: t,
@@ -321,7 +321,7 @@ function el(e) {
             label: X.intl.string(X.t["39d0Wj"]),
             icon: u.ysw,
             onClick: () => (0, Y.mF)(t, n)
-        }, "view-thread") : null, g ? (0, i.jsx)(z.qv, {
+        }, "view-thread") : null, p ? (0, i.jsx)(z.qv, {
             label: eo ? X.intl.string(X.t["1kWJAr"]) : X.intl.string(X.t.MFGE51),
             icon: u.koX,
             onClick: () => (0, Y.Le)(t, n),

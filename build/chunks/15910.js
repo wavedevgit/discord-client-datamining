@@ -78,7 +78,7 @@ let A = e => {
             }))
         })
     },
-    g = () => {
+    p = () => {
         let [e, t] = l.useState(!1);
         l.useEffect(() => {
             let e;
@@ -107,7 +107,7 @@ let A = e => {
             })]
         })
     },
-    p = e => {
+    g = e => {
         let {
             digits: t
         } = e;
@@ -131,11 +131,11 @@ let A = e => {
         } = e;
         return (0, i.jsxs)("div", {
             className: h.eh,
-            children: [(0, i.jsx)(p, {
+            children: [(0, i.jsx)(g, {
                 digits: t.hours
-            }), (0, i.jsx)(g, {}), (0, i.jsx)(p, {
+            }), (0, i.jsx)(p, {}), (0, i.jsx)(g, {
                 digits: t.minutes
-            }), (0, i.jsx)(g, {}), (0, i.jsx)(p, {
+            }), (0, i.jsx)(p, {}), (0, i.jsx)(g, {
                 digits: t.seconds
             })]
         })

@@ -14,8 +14,8 @@ var l, s = n(311907),
     h = n(95701),
     m = n(240248),
     A = n(427262),
-    g = n(734057),
-    p = n(153488),
+    p = n(734057),
+    g = n(153488),
     f = n(205761),
     _ = n(696451),
     E = n(994500),
@@ -35,7 +35,7 @@ let I = !1,
             n = x.default.getCurrentUser();
         return E.A.isFriend(e.user.id) ? t.push("FRIENDS") : e.user.id !== n?.id && D.has(e.user.id) && t.push("GUILD_MEMBERS"), t
     }, function(e) {
-        return e.user.username === T ? -1e3 : p.A.hasConsented(C.YAq.PERSONALIZATION) ? -(u.A.getUserAffinity(e.user.id)?.communicationProbability ?? 0) : (0, m.sS)(A.Ay.getName(e.user).toLocaleLowerCase())
+        return e.user.username === T ? -1e3 : g.A.hasConsented(C.YAq.PERSONALIZATION) ? -(u.A.getUserAffinity(e.user.id)?.communicationProbability ?? 0) : (0, m.sS)(A.Ay.getName(e.user).toLocaleLowerCase())
     }),
     D = new Set;
 
@@ -49,7 +49,7 @@ function L(e) {
 
 function P() {
     if (!I) return !1;
-    let e = g.A.getChannel(R);
+    let e = p.A.getChannel(R);
     if (0 === T.trim().length) return null != i && i.clearQuery(), y = function(e) {
         let t = E.A.getFriendIDs(),
             n = d.A.getConfig({
@@ -100,7 +100,7 @@ function P() {
                 let t = f.A.getScoreWithoutFetchingLatest(e.id),
                     n = e.getRecipientId(),
                     i = .2 * !!E.A.isFriend(n),
-                    a = .1 * (null != g.A.getDMFromUserId(n));
+                    a = .1 * (null != p.A.getDMFromUserId(n));
                 s[n] = 1 + t / l + i + a
             }), s)
         })
@@ -115,7 +115,7 @@ function w() {
 }
 
 function k(e, t) {
-    if (p.A.hasConsented(C.YAq.PERSONALIZATION)) {
+    if (g.A.hasConsented(C.YAq.PERSONALIZATION)) {
         let n = u.A.getUserAffinity(e.user.id)?.communicationProbability ?? 0,
             i = u.A.getUserAffinity(t.user.id)?.communicationProbability ?? 0;
         if (n !== i) return i - n
@@ -166,7 +166,7 @@ function B() {
 class V extends s.Ay.Store {
     static displayName = "PrivateChannelRecipientsInviteStore";
     initialize() {
-        this.waitFor(g.A, p.A, c.A, f.A, E.A, u.A, x.default, _.Ay), this.syncWith([x.default, g.A], P), this.syncWith([E.A], w)
+        this.waitFor(p.A, g.A, c.A, f.A, E.A, u.A, x.default, _.Ay), this.syncWith([x.default, p.A], P), this.syncWith([E.A], w)
     }
     getResults() {
         return y

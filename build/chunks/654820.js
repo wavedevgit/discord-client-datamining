@@ -12,17 +12,17 @@ function o(e) {
     let {
         currentUserId: t,
         participant: n
-    } = e, o = (0, s.A)(n.type), [c, d] = l.useState(), [u, h] = l.useState(), [m, A] = l.useState(), g = n.id.split(":").at(-1), p = t === g, f = l.useCallback((e, t, n) => {
+    } = e, o = (0, s.A)(n.type), [c, d] = l.useState(), [u, h] = l.useState(), [m, A] = l.useState(), p = n.id.split(":").at(-1), g = t === p, f = l.useCallback((e, t, n) => {
         var i, l;
         let s = n ? a.Ay.getOutboundStats(t) : a.Ay.getInboundStats(e, t);
         d(s?.codec ?? "unknown"), h(void 0 === (i = s?.resolution) || 0 === i.width && 0 === i.height ? "unknown" : i.width + " x " + i.height), A(s?.bitrateEstimate !== void 0 ? (l = s.bitrateEstimate, `${(l/1e3).toFixed(2)} Kbps`) : "unknown")
     }, []);
     return l.useEffect(() => {
-        let e = () => f(g, o, p);
+        let e = () => f(p, o, g);
         e();
         let t = setInterval(e, 1e3);
         return () => clearInterval(t)
-    }, [p, g, o, f]), (0, i.jsxs)("div", {
+    }, [g, p, o, f]), (0, i.jsxs)("div", {
         className: r.w,
         children: [(0, i.jsx)("div", {
             children: (0, i.jsx)("strong", {
@@ -42,7 +42,7 @@ function o(e) {
             }), (0, i.jsx)("strong", {
                 children: u
             })]
-        }), p && (0, i.jsxs)("div", {
+        }), g && (0, i.jsxs)("div", {
             className: r.l,
             children: [(0, i.jsx)("span", {
                 children: "Bitrate Estimate: "

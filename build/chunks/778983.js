@@ -1,6 +1,6 @@
 /** chunk id: 778983 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(627968),
     l = n(311907),
@@ -15,15 +15,15 @@ var i = n(627968),
     m = n(641131),
     A = n(985018);
 
-function g(e) {
+function p(e) {
     let {
         message: t,
         user: n,
-        guild: g,
-        channel: p
-    } = e, f = (0, l.bG)([u.A], () => null != n && null != g && (0, r.Kd)(n, g, [u.A])), {
+        guild: p,
+        channel: g
+    } = e, f = (0, l.bG)([u.A], () => null != n && null != p && (0, r.Kd)(n, p, [u.A])), {
         messageReference: _
-    } = t, E = (0, l.bG)([d.A], () => null != _ ? d.A.getMessage(_.channel_id, _.message_id) : null), x = (0, l.bG)([c.A], () => null != E ? c.A.getChannel(E.channel_id) : null), C = (0, l.bG)([c.A], () => c.A.getChannel(p.id)?.isArchivedThread() ?? !1);
+    } = t, E = (0, l.bG)([d.A], () => null != _ ? d.A.getMessage(_.channel_id, _.message_id) : null), x = (0, l.bG)([c.A], () => null != E ? c.A.getChannel(E.channel_id) : null), C = (0, l.bG)([c.A], () => c.A.getChannel(g.id)?.isArchivedThread() ?? !1);
     if (!f) return null;
     let S = null == E ? A.intl.string(m.default["0IZbwC"]) : A.intl.string(m.default.Uj6oD4),
         I = null == E,
@@ -34,7 +34,7 @@ function g(e) {
         onClick: () => {
             null != x && null != E && o.A.confirmDelete(x, E, !1, {
                 isFlagResolved: C,
-                moderatorReportChannelId: p.id
+                moderatorReportChannelId: g.id
             })
         },
         disabled: I,

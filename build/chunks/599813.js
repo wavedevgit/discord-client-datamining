@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(287809),
     m = n(474090),
     A = n(656088),
-    g = n(971778),
-    p = n(342887),
+    p = n(971778),
+    g = n(342887),
     f = n(973947),
     _ = n(985018),
     E = n(208368);
@@ -33,10 +33,10 @@ function S(e) {
         isNativeModuleLoaded: b,
         isNativeModuleLoading: j,
         catalogLastFetchTime: R
-    } = (0, o.cf)([g.A], () => ({
-        isNativeModuleLoaded: g.A.isNativeModuleLoaded(),
-        isNativeModuleLoading: g.A.isNativeModuleLoading(),
-        catalogLastFetchTime: g.A.getCatalogLastFetchTime()
+    } = (0, o.cf)([p.A], () => ({
+        isNativeModuleLoaded: p.A.isNativeModuleLoaded(),
+        isNativeModuleLoading: p.A.isNativeModuleLoading(),
+        catalogLastFetchTime: p.A.getCatalogLastFetchTime()
     }));
     return a && 0 === N.length ? (0, i.jsxs)("div", {
         className: E.nm,
@@ -65,7 +65,7 @@ function S(e) {
             variant: "text-sm/normal",
             color: "text-muted",
             children: _.intl.format(_.t["5afO9U"], {
-                onClick: b ? p.st : p.md
+                onClick: b ? g.st : g.md
             })
         })]
     }) : j || null == R ? (0, i.jsx)("div", {
@@ -122,11 +122,11 @@ function I(e) {
         })
     })
 }
-let T = () => (0, o.bG)([g.A], () => !Object.keys(g.A.getVoiceFilterModels() ?? {}).length && (g.A.getCatalogFetchFailed() || g.A.hasNativeModuleFailed())),
-    v = (e, t) => (0, o.yK)([g.A], () => {
+let T = () => (0, o.bG)([p.A], () => !Object.keys(p.A.getVoiceFilterModels() ?? {}).length && (p.A.getCatalogFetchFailed() || p.A.hasNativeModuleFailed())),
+    v = (e, t) => (0, o.yK)([p.A], () => {
         var n;
-        let i, l = g.A.getVoiceFilters(),
-            s = g.A.getSortedVoiceFilters();
+        let i, l = p.A.getVoiceFilters(),
+            s = p.A.getSortedVoiceFilters();
         return n = t ? Object.values(l) : s, "" === (i = (0, r.sS)(e.toLowerCase())) ? n : n.filter(e => {
             let {
                 name: t

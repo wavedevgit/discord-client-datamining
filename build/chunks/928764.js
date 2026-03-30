@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(56562),
     m = n(765671),
     A = n(304072),
-    g = n(390395),
-    p = n(659195),
+    p = n(390395),
+    g = n(659195),
     f = n(505527),
     _ = n(467073),
     E = n(960538),
@@ -94,7 +94,7 @@ function V(e) {
         disableReactionCreates: Z,
         isLurking: X,
         isPendingMember: Q
-    } = (0, _.A)(Y), ee = (0, v.W1)(Y), et = (0, r.bG)([R.A], () => R.A.getChannel(o)), en = (0, O.Ck)(et), ei = (0, r.bG)([g.A], () => g.A.shouldDisplayPrompt(t) && !0 === n, [t, n]), el = l.useCallback(e => {
+    } = (0, _.A)(Y), ee = (0, v.W1)(Y), et = (0, r.bG)([R.A], () => R.A.getChannel(o)), en = (0, O.Ck)(et), ei = (0, r.bG)([p.A], () => p.A.shouldDisplayPrompt(t) && !0 === n, [t, n]), el = l.useCallback(e => {
         let t = e[0];
         if (null != t && n) {
             let e = t.intersectionRect,
@@ -229,7 +229,7 @@ function V(e) {
                     })
                 })]
             })]
-        }), ei && (0, i.jsx)(p.A, {
+        }), ei && (0, i.jsx)(g.A, {
             threadId: t
         }), (0, i.jsx)(x.A, {
             channel: Y,

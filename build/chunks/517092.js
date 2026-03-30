@@ -14,8 +14,8 @@ var i = n(665260),
     h = n(661191),
     m = n(887560),
     A = n(652215),
-    g = n(790782),
-    p = n(355097);
+    p = n(790782),
+    g = n(355097);
 let f = [{
         timeSinceJoin: +u.A.Millis.HOUR,
         sends: 1,
@@ -70,13 +70,13 @@ function b(e) {
     let t = r.A.getBasicChannel(e);
     if (null == t || null == t.guild_id || d.Ay.isGuildOrCategoryOrChannelMuted(t.guild_id, t.id) || j(t.guild_id, t.id) || j(t.guild_id, t.parent_id)) return !1;
     let n = d.Ay.resolveUnreadSetting(t);
-    return d.Ay.getChannelUnreadSetting(t.guild_id, t.id) === g.e.UNSET && n !== g.e.ALL_MESSAGES
+    return d.Ay.getChannelUnreadSetting(t.guild_id, t.id) === p.e.UNSET && n !== p.e.ALL_MESSAGES
 }
 
 function j(e, t) {
     if (null == t) return !1;
     let n = d.Ay.getChannelOverrides(e)[t];
-    return null != n && !!(null != n.message_notifications && n.message_notifications !== A.orn.NULL || null != n.flags && (0, i.br)(n.flags, p.vv.UNREADS_ALL_MESSAGES | p.vv.UNREADS_ONLY_MENTIONS))
+    return null != n && !!(null != n.message_notifications && n.message_notifications !== A.orn.NULL || null != n.flags && (0, i.br)(n.flags, g.vv.UNREADS_ALL_MESSAGES | g.vv.UNREADS_ONLY_MENTIONS))
 }
 class R extends l.Ay.PersistedStore {
     static displayName = "UnreadSettingNoticeStore2";
@@ -102,7 +102,7 @@ class R extends l.Ay.PersistedStore {
             for (let e of f)
                 if (i < e.timeSinceJoin && (l.numSends >= e.sends || l.viewDuration >= e.viewTime)) return !0;
             return !1
-        }(t) && (delete x.channels[e], C.add(e), (0, m.mA)(t.guild_id, t.id, g.e.ALL_MESSAGES), !0)
+        }(t) && (delete x.channels[e], C.add(e), (0, m.mA)(t.guild_id, t.id, p.e.ALL_MESSAGES), !0)
     }
 }
 let M = new R(s.h, {

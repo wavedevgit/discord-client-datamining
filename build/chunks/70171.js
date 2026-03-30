@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(361157),
     m = n(652896),
     A = n(750506),
-    g = n(172914);
-let p = {
+    p = n(172914);
+let g = {
         visibility: "hidden"
     },
     f = {
@@ -43,9 +43,9 @@ function x(e) {
         (0, u.MI)(I)
     }, [I]);
     let y = e => {
-            if (n !== c.N.NO_POPOUT) return p;
+            if (n !== c.N.NO_POPOUT) return g;
             let t = S?.getBoundingClientRect();
-            if (N.current = t, e.timestamp !== T || null == t) return p;
+            if (N.current = t, e.timestamp !== T || null == t) return g;
             let {
                 top: i,
                 left: l
@@ -78,9 +78,9 @@ function x(e) {
                 visibility: "hidden",
                 opacity: 1,
                 ...x.enabled ? y(e) : (() => {
-                    if (n !== c.N.NO_POPOUT) return p;
+                    if (n !== c.N.NO_POPOUT) return g;
                     let e = C.current?.getBoundingClientRect();
-                    return null == e ? p : {
+                    return null == e ? g : {
                         width: e.width,
                         height: e.height,
                         top: e.top,
@@ -113,17 +113,17 @@ function x(e) {
         }, "animate-always");
     return (0, s.useChain)([b, R], [0, .1], 3e3), (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
-            className: g.R,
+            className: p.R,
             ref: C
         }), j((e, t) => null != t && (0, i.jsx)(s.animated.div, {
-            className: g.w5,
+            className: p.w5,
             style: e
         })), (0, i.jsx)(A.Ay, {
             children: (0, i.jsx)("div", {
-                className: g.R,
+                className: p.R,
                 children: M((e, t, n, l) => t?.thumbnail != null && (0, i.jsx)(s.animated.img, {
                     src: t.thumbnail,
-                    className: g.yI,
+                    className: p.yI,
                     style: e
                 }))
             })

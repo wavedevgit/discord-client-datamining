@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(573435),
     m = n(327166),
     A = n(157550),
-    g = n(471271),
-    p = n(957283),
+    p = n(471271),
+    g = n(957283),
     f = n(772659),
     _ = n(390848),
     E = n(138298),
@@ -195,24 +195,24 @@ let M = e => {
             isRejectLoading: h,
             isOptimisticAccepted: m,
             isOptimisticRejected: A
-        } = (0, g.t)({
+        } = (0, p.t)({
             user: T.default.getUser(n),
             onError: s,
             onAcceptSuccess: r,
             onRejectSuccess: a
-        }), p = u || h || m || A;
+        }), g = u || h || m || A;
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
-                disabled: p,
+                disabled: g,
                 onClick: () => o(t),
                 loading: u,
                 text: j.intl.string(j.t.Kz8Pwr)
             }), (0, i.jsx)(c.Button, {
                 variant: "secondary",
                 size: "sm",
-                disabled: p,
+                disabled: g,
                 onClick: () => d(t),
                 loading: h,
                 text: j.intl.string(j.t.B2nygW)
@@ -226,7 +226,7 @@ let M = e => {
             showingBanner: l
         } = e, {
             channelId: s
-        } = (0, p.N)(), d = (0, o.bG)([A.A], () => null != s && A.A.isSpam(s), [s]), u = (0, o.bG)([I.A], () => I.A.getRelationshipType(t), [t]), h = n.id === s, m = !r.Fr && !h, g = !!r.Fr || h || d, _ = d || h ? (0, i.jsxs)("div", {
+        } = (0, g.N)(), d = (0, o.bG)([A.A], () => null != s && A.A.isSpam(s), [s]), u = (0, o.bG)([I.A], () => I.A.getRelationshipType(t), [t]), h = n.id === s, m = !r.Fr && !h, p = !!r.Fr || h || d, _ = d || h ? (0, i.jsxs)("div", {
             className: R.mG,
             children: [(0, i.jsx)(O, {
                 channelId: n.id,
@@ -251,14 +251,14 @@ let M = e => {
             children: j.intl.string(j.t.c2v5nO)
         });
         return (0, i.jsxs)("div", {
-            className: g ? R.AA : R.kL,
+            className: p ? R.AA : R.kL,
             children: [(0, i.jsx)("div", {
                 className: R.mG,
                 children: (0, i.jsx)(M, {
                     userId: t,
                     channelId: n.id
                 })
-            }), !g && (0, i.jsx)("div", {
+            }), !p && (0, i.jsx)("div", {
                 className: R.yF
             }), (0, i.jsxs)("div", {
                 className: a()(R.mG, R.LV),

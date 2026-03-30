@@ -18,8 +18,8 @@ let m = l.memo(function(e) {
         channel: n,
         compact: m = !1,
         interactionUsernameProfile: A,
-        interactionAvatarProfile: g,
-        interactionData: p,
+        interactionAvatarProfile: p,
+        interactionData: g,
         referencedUsernameProfile: f,
         referencedAvatarProfile: _,
         setPopout: E
@@ -29,7 +29,7 @@ let m = l.memo(function(e) {
     } = (0, s.cf)([c.A], () => ({
         isInteractionUserBlocked: c.A.isBlockedForMessage(t),
         isInteractionUserIgnored: c.A.isIgnoredForMessage(t)
-    }), [t]), S = (0, s.bG)([o.A], () => o.A.getMessageByReference(t?.messageReference)), I = (0, u.r4)(t.interaction?.user.id, n.id), T = (0, u.T0)(t.interaction, n, A, E), v = (0, u.Yq)(g, E), N = (0, r.Am)(t), y = N?.type === a.G4.APPLICATION_COMMAND ? N.target_user?.id : void 0, b = (0, u.r4)(y, n.id), j = (0, u.I)(y, n, f, E), R = (0, u.Ge)(_, E), M = (0, u.U_)(p, E), D = l.useCallback(() => {
+    }), [t]), S = (0, s.bG)([o.A], () => o.A.getMessageByReference(t?.messageReference)), I = (0, u.r4)(t.interaction?.user.id, n.id), T = (0, u.T0)(t.interaction, n, A, E), v = (0, u.Yq)(p, E), N = (0, r.Am)(t), y = N?.type === a.G4.APPLICATION_COMMAND ? N.target_user?.id : void 0, b = (0, u.r4)(y, n.id), j = (0, u.I)(y, n, f, E), R = (0, u.Ge)(_, E), M = (0, u.U_)(g, E), D = l.useCallback(() => {
         E({
             interactionUsernameProfile: !1,
             interactionAvatarProfile: !1,
@@ -55,9 +55,9 @@ let m = l.memo(function(e) {
         compact: m,
         isInteractionUserBlocked: x,
         isInteractionUserIgnored: C,
-        showAvatarPopout: g,
+        showAvatarPopout: p,
         showUsernamePopout: A,
-        showDataPopout: p,
+        showDataPopout: g,
         showTargetAvatarPopout: _,
         showTargetUsernamePopout: f,
         onClickAvatar: v,

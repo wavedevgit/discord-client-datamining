@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(454148),
     m = n(718468),
     A = n(655377),
-    g = n(816144),
-    p = n(928764),
+    p = n(816144),
+    g = n(928764),
     f = n(640708),
     _ = n(265869),
     E = n(715757),
@@ -106,8 +106,8 @@ function en(e) {
         eh = D.default.getCurrentUser(),
         em = () => ea.isInitialized() || m.ready,
         eA = (0, F.r)(l),
-        eg = m.length > 0 && m.first()?.isFirstMessageInForumPost(l),
-        ep = (0, o.cI)(l),
+        ep = m.length > 0 && m.first()?.isFirstMessageInForumPost(l),
+        eg = (0, o.cI)(l),
         ef = (0, s.bG)([N.A], () => N.A.shouldShowTopicsBar() && !ed),
         e_ = (0, T.l)(l.id),
         eE = (0, S.j)(l.id, X.Rx),
@@ -132,7 +132,7 @@ function en(e) {
             });
             return null
         }(l, e_ ?? eE ?? ex),
-        eI = l.isForumPost() && !eg ? (0, i.jsx)(p.A, {
+        eI = l.isForumPost() && !ep ? (0, i.jsx)(g.A, {
             postId: l.id
         }) : null,
         eT = (0, _.A)(l.id),
@@ -159,7 +159,7 @@ function en(e) {
                     children: e.content
                 }, `divider-${e.contentKey??e.unreadId??t}`)
             }
-            if (e.type === Z.TZK.FORUM_POST_ACTION_BAR) return (0, i.jsx)(p.A, {
+            if (e.type === Z.TZK.FORUM_POST_ACTION_BAR) return (0, i.jsx)(g.A, {
                 parentChannelId: l.parent_id,
                 postId: l.id,
                 isLastItem: t + 1 === el.length,
@@ -221,7 +221,7 @@ function en(e) {
             ...er
         }, "has-more"))
     }
-    if (m.hasMoreBefore && null == eo || ey.unshift((0, i.jsx)(g.A, {
+    if (m.hasMoreBefore && null == eo || ey.unshift((0, i.jsx)(p.A, {
             channel: l,
             showingBanner: ec
         }, "empty-message")), m.hasMoreAfter && ey.push((0, i.jsx)(z.Ay, {
@@ -233,7 +233,7 @@ function en(e) {
         let e, n, s = R.Ay.getOldestUnreadTimestamp(l.id),
             r = 0 !== s ? s : P.default.extractTimestamp(l.id),
             c = (0, O.ro)(new Date, new Date(r));
-        if (R.Ay.isEstimated(l.id) ? (e = c ? Q.t.wvtbbG : Q.t.tHqbtg, n = Q.t.vaPWFe) : (e = c ? Q.t["BctFH/"] : Q.t["3wXb9P"], n = Q.t["4H8ldG"]), ep && (0, o.Kc)(l) && eC.includes(J.i.SUMMARIES)) {
+        if (R.Ay.isEstimated(l.id) ? (e = c ? Q.t.wvtbbG : Q.t.tHqbtg, n = Q.t.vaPWFe) : (e = c ? Q.t["BctFH/"] : Q.t["3wXb9P"], n = Q.t["4H8ldG"]), eg && (0, o.Kc)(l) && eC.includes(J.i.SUMMARIES)) {
             let s = R.Ay.ackMessageId(l.id),
                 c = (0, y.L)(l.id, R.Ay.getOldestUnreadMessageId(l.id));
             if ((0, d.zV)(Z.HAw.SUMMARIES_UNREAD_BAR_VIEWED, {

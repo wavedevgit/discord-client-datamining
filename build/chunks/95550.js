@@ -16,8 +16,8 @@ var i = n(627968),
     h = n(73153),
     m = n(387755),
     A = n(308528),
-    g = n(711950),
-    p = n(846293),
+    p = n(711950),
+    g = n(846293),
     f = n(888906),
     _ = n(49229),
     E = n(684136),
@@ -191,7 +191,7 @@ class er extends l.PureComponent {
         let t = (0, Z.i)({
             location: "5326c5_1"
         });
-        p.Ay.createInvite(e.id, {
+        g.Ay.createInvite(e.id, {
             max_age: t
         }, ee.PE1.GROUP_DM)
     }
@@ -487,15 +487,15 @@ class er extends l.PureComponent {
                 hideDiscriminator: h,
                 isStaffOnlyDM: m,
                 channel: A,
-                currentUser: g,
-                query: p
+                currentUser: p,
+                query: g
             } = this.props,
             {
                 sectionVisibility: f
             } = this.state;
         if (s) {
             if (!1 === f[n]) return null;
-            if (n === k.A.GUILD_MEMBERS && "" === p) return (0, i.jsx)("div", {
+            if (n === k.A.GUILD_MEMBERS && "" === g) return (0, i.jsx)("div", {
                 className: ei.Rg,
                 children: (0, i.jsx)(u.Text, {
                     variant: "text-md/normal",
@@ -510,7 +510,7 @@ class er extends l.PureComponent {
         let {
             user: E,
             comparator: x
-        } = _, C = o.has(E.id), S = ((m || null == A) && E.isStaff() && g?.isStaff()) ?? !1, I = !1;
+        } = _, C = o.has(E.id), S = ((m || null == A) && E.isStaff() && p?.isStaff()) ?? !1, I = !1;
         return !C && 0 >= this.getRemaining() ? I = !0 : s && !C && o.size > 0 && n === k.A.GUILD_MEMBERS && (I = !0, t = en.intl.string(en.t.z9qAt9)), (0, i.jsx)(Q.A, {
             section: n,
             row: l,
@@ -543,7 +543,7 @@ class er extends l.PureComponent {
         } = this.props, {
             sectionVisibility: s
         } = this.state, a = n[t];
-        return "" !== l && (null == a || 0 === a.length) ? null : (0, i.jsx)(ep, {
+        return "" !== l && (null == a || 0 === a.length) ? null : (0, i.jsx)(eg, {
             section: t,
             heading: t === k.A.FRIENDS ? en.intl.string(en.t.TdEu5X) : en.intl.string(en.t.y29JXs),
             onToggleVisibility: this.handleToggleSectionVisibility,
@@ -750,7 +750,7 @@ class er extends l.PureComponent {
         }), t()
     };
     handleAddFriendNavigation = () => {
-        g.A.transitionToSection(ee.m3P.ADD_FRIEND, {
+        p.A.transitionToSection(ee.m3P.ADD_FRIEND, {
             explicit: !0
         }), this.props.onClose()
     };
@@ -1014,8 +1014,8 @@ function eh(e) {
     } = ed({
         channel: t,
         subscribeToGlobalHotkey: d
-    }), g = (0, c.bG)([B.default], () => B.default.getUser(t?.getRecipientId()));
-    return g?.bot || g?.isProvisional ? null : (0, i.jsx)(X.Ay.Icon, {
+    }), p = (0, c.bG)([B.default], () => B.default.getUser(t?.getRecipientId()));
+    return p?.bot || p?.isProvisional ? null : (0, i.jsx)(X.Ay.Icon, {
         ref: h,
         onClick: A,
         icon: m,
@@ -1053,15 +1053,15 @@ function em(e) {
 }
 
 function eA(e) {
-    let t = eg(e);
-    return new Set((0, s.chain)(L.A.getMutablePrivateChannels()).values().filter(e => (0, O.MK)(e.type)).filter(e => eg(e.recipients) === t).map(e => e.id).value())
-}
-
-function eg(e) {
-    return JSON.stringify(e.sort())
+    let t = ep(e);
+    return new Set((0, s.chain)(L.A.getMutablePrivateChannels()).values().filter(e => (0, O.MK)(e.type)).filter(e => ep(e.recipients) === t).map(e => e.id).value())
 }
 
 function ep(e) {
+    return JSON.stringify(e.sort())
+}
+
+function eg(e) {
     let {
         section: t,
         heading: n,

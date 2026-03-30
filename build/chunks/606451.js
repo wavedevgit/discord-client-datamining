@@ -15,7 +15,7 @@ var i = n(627968),
     m = n(298808);
 
 function A() {
-    let e, t, n, A, g, p, {
+    let e, t, n, A, p, g, {
             hasActiveDownloads: f,
             progress: _
         } = (e = (0, r.cf)([c.A], () => c.A.getOngoingDownloads()), t = l.useRef({}), l.useEffect(() => {
@@ -25,9 +25,9 @@ function A() {
                 downloadedBytes: t
             } = e;
             return (t ?? 0) > 0
-        }), g = (0, s.sumBy)(n, e => e?.downloadedBytes ?? 0), {
+        }), p = (0, s.sumBy)(n, e => e?.downloadedBytes ?? 0), {
             hasActiveDownloads: A,
-            progress: 0 === (p = (0, s.sumBy)(n, e => e?.totalBytes ?? 0)) ? 0 : Math.floor(g / p * 100)
+            progress: 0 === (g = (0, s.sumBy)(n, e => e?.totalBytes ?? 0)) ? 0 : Math.floor(p / g * 100)
         }),
         {
             activeVoice: E

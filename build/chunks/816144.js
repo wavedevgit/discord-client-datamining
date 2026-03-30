@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(495273),
     m = n(265869),
     A = n(772659),
-    g = n(437774),
-    p = n(622543),
+    p = n(437774),
+    g = n(622543),
     f = n(576622),
     _ = n(95701),
     E = n(546183),
@@ -75,7 +75,7 @@ function H(e) {
     } = (0, s.cf)([C.A], () => ({
         canManageRoles: C.A.can(P.xBc.MANAGE_ROLES, t),
         canReadMessageHistory: C.A.can(P.xBc.READ_MESSAGE_HISTORY, t)
-    })), D = (0, s.bG)([p.A], () => m === P.rbe.DM ? p.A.getMutualGuilds(t.getRecipientId()) : null, [t, m]), O = (0, d.A)(_?.id ?? P.dJq), {
+    })), D = (0, s.bG)([g.A], () => m === P.rbe.DM ? g.A.getMutualGuilds(t.getRecipientId()) : null, [t, m]), O = (0, d.A)(_?.id ?? P.dJq), {
         authorizedAppToken: L,
         authorizedAppsFetchState: H
     } = (0, s.cf)([E.default], () => ({
@@ -126,7 +126,7 @@ function H(e) {
                 children: x
             }), k.intl.format(k.t["Qvg+6+"], {
                 username: h
-            }), _?.isProvisional && (0, i.jsx)(g.Y, {
+            }), _?.isProvisional && (0, i.jsx)(p.Y, {
                 userId: _.id
             }), e]
         })

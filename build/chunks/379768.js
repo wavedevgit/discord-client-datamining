@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(397927),
     m = n(435183),
     A = n(155718),
-    g = n(47167),
-    p = n(685374),
+    p = n(47167),
+    g = n(685374),
     f = n(569989),
     _ = n(997509),
     E = n(46054),
@@ -36,7 +36,7 @@ var i = n(627968),
 function O(e) {
     let {
         channel: t
-    } = e, [n, s] = l.useState(!1), r = (0, g.Ay)(t, !0), O = t.guild_id, L = (0, d.bG)([C.A], () => null != O ? C.A.getSortedRoles(O) : void 0), P = (0, d.bG)([T.default, S.A], () => T.default.getUser(S.A.getGuild(O)?.ownerId)), w = l.useMemo(() => null != L ? L.filter(e => !(0, x.Oy)(e)) : [], [L]), k = l.useMemo(() => o()(w).filter(e => {
+    } = e, [n, s] = l.useState(!1), r = (0, p.Ay)(t, !0), O = t.guild_id, L = (0, d.bG)([C.A], () => null != O ? C.A.getSortedRoles(O) : void 0), P = (0, d.bG)([T.default, S.A], () => T.default.getUser(S.A.getGuild(O)?.ownerId)), w = l.useMemo(() => null != L ? L.filter(e => !(0, x.Oy)(e)) : [], [L]), k = l.useMemo(() => o()(w).filter(e => {
         if (null == O) return !1;
         let n = v.aH({
             forceRoles: {
@@ -150,7 +150,7 @@ function O(e) {
                 }, e.id)
             })]
         }), n ? (0, i.jsx)(h.aFV, {
-            renderModal: e => (0, i.jsx)(p.default, {
+            renderModal: e => (0, i.jsx)(g.default, {
                 ...e,
                 onClose: () => (F(), e.onClose()),
                 channelId: t.id

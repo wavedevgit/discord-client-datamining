@@ -15,8 +15,8 @@ var l = n(311907),
     h = n(229527),
     m = n(81400),
     A = n(652215),
-    g = n(340837),
-    p = n(355097),
+    p = n(340837),
+    g = n(355097),
     f = n(985018),
     _ = n(604137);
 
@@ -24,7 +24,7 @@ function E(e) {
     let {
         guild: t
     } = e, n = (0, c.A)({
-        scrollPosition: p._F.GUILD_TAG
+        scrollPosition: g._F.GUILD_TAG
     });
     return (0, i.jsx)("div", {
         children: (0, i.jsx)(o._, {
@@ -91,9 +91,9 @@ function C(e) {
         let e = d.default.getId();
         return (0, h.wj)(u.Ay.getMember(t.id, e))
     }, [t]);
-    return n.has(g.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || n.has(g.D.AUTOMOD_QUARANTINED_BIO) ? (0, i.jsx)(x, {
+    return n.has(p.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || n.has(p.D.AUTOMOD_QUARANTINED_BIO) ? (0, i.jsx)(x, {
         guild: t
-    }) : n.has(g.D.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, i.jsx)(E, {
+    }) : n.has(p.D.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, i.jsx)(E, {
         guild: t
     }) : (0, i.jsx)(x, {
         guild: t

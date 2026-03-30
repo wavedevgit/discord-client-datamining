@@ -29,18 +29,18 @@ function d(e) {
             let e = a().random(1, i);
             return m += c * d, m += u * d, m += (e - 1) * h * d, e
         }),
-        g = A.map((e, t) => t),
-        p = [];
-    for (; p.length < l;) {
+        p = A.map((e, t) => t),
+        g = [];
+    for (; g.length < l;) {
         let e = {
             width: a().random(140, 400),
             height: a().random(100, 320)
         };
-        p.push([g.splice(a().random(0, g.length - 1), 1)[0], e]), m += e.height + r.VF * d
+        g.push([p.splice(a().random(0, p.length - 1), 1)[0], e]), m += e.height + r.VF * d
     }
     return {
         messages: A,
-        attachmentSpecs: p,
+        attachmentSpecs: g,
         totalHeight: m,
         groupSpacing: c
     }

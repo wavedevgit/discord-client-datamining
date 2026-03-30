@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(580745),
     m = n(71393),
     A = n(576705),
-    g = n(203982),
-    p = n(460350),
+    p = n(203982),
+    g = n(460350),
     f = n(145530),
     _ = n(291812),
     E = n(205120),
@@ -28,7 +28,7 @@ function S(e) {
         value: t,
         channel: n
     } = e;
-    return (0, p.i)({
+    return (0, g.i)({
         type: c.oU.EDIT,
         content: t,
         channel: n,
@@ -45,7 +45,7 @@ function I(e) {
         id: c
     } = t, {
         id: d
-    } = n, g = t.getGuildId(), p = (0, a.bG)([m.A], () => m.A.getGuild(g), [g]), _ = t.type === x.rbe.GUILD_ANNOUNCEMENT, I = null != p && p.features.has(x.GuildFeatures.NEWS), v = _ && I, {
+    } = n, p = t.getGuildId(), g = (0, a.bG)([m.A], () => m.A.getGuild(p), [p]), _ = t.type === x.rbe.GUILD_ANNOUNCEMENT, I = null != g && g.features.has(x.GuildFeatures.NEWS), v = _ && I, {
         editingMessage: N,
         editingTextValue: y,
         editingRichValue: b
@@ -100,10 +100,10 @@ function T(e) {
         onSubmit: o,
         onKeyDown: u,
         renderLeftAccessories: h
-    } = e, [m, A] = l.useState(!0), p = l.useCallback(() => A(!0), []), f = l.useCallback(() => A(!1), []);
-    return l.useEffect(() => (g._.subscribe(x.jej.TEXTAREA_FOCUS, p), g._.subscribe(x.jej.TEXTAREA_BLUR, f), () => {
-        g._.unsubscribe(x.jej.TEXTAREA_FOCUS, p), g._.unsubscribe(x.jej.TEXTAREA_BLUR, f)
-    }), [p, f]), (0, i.jsx)(d.Ay, {
+    } = e, [m, A] = l.useState(!0), g = l.useCallback(() => A(!0), []), f = l.useCallback(() => A(!1), []);
+    return l.useEffect(() => (p._.subscribe(x.jej.TEXTAREA_FOCUS, g), p._.subscribe(x.jej.TEXTAREA_BLUR, f), () => {
+        p._.unsubscribe(x.jej.TEXTAREA_FOCUS, g), p._.unsubscribe(x.jej.TEXTAREA_BLUR, f)
+    }), [g, f]), (0, i.jsx)(d.Ay, {
         className: C.gM,
         textValue: t,
         richValue: n,
@@ -118,7 +118,7 @@ function T(e) {
         },
         onKeyDown: u,
         focused: m,
-        onFocus: p,
+        onFocus: g,
         onBlur: f,
         renderLeftAccessories: h
     }, s.id)

@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(432371),
     m = n(765548),
     A = n(775602),
-    g = n(821720),
-    p = n(429913),
+    p = n(821720),
+    g = n(429913),
     f = n(17447),
     _ = n(736339),
     E = n(354328),
@@ -51,8 +51,8 @@ let Y = (0, r.animated)(d.fKU),
         var t;
         let n, s, r, {
                 className: h,
-                messageGroupSpacing: g,
-                scrollerClassName: p,
+                messageGroupSpacing: p,
+                scrollerClassName: g,
                 channel: f,
                 messages: _,
                 unreadCount: E,
@@ -80,8 +80,8 @@ let Y = (0, r.animated)(d.fKU),
                 groupRange: 4,
                 attachments: Z,
                 fontSize: j,
-                groupSpacing: g
-            }), [S, $, Z, j, g]),
+                groupSpacing: p
+            }), [S, $, Z, j, p]),
             Q = (0, B.Ay)({
                 messages: _,
                 channel: f,
@@ -159,11 +159,11 @@ let Y = (0, r.animated)(d.fKU),
         return (0, i.jsxs)(o.hD, {
             navigator: ee,
             children: [null != ea && ea, (0, i.jsxs)("div", {
-                className: a()(z.Og, h, `group-spacing-${g}`),
+                className: a()(z.Og, h, `group-spacing-${p}`),
                 children: [null == ea && ei, (0, i.jsxs)(Y, {
                     ref: ed,
                     customTheme: !0,
-                    className: a()(p, z.XG, eu ? em : void 0),
+                    className: a()(g, z.XG, eu ? em : void 0),
                     contentClassName: z.gT,
                     onResize: Q.handleResize,
                     onScroll: Q.handleScroll,
@@ -287,8 +287,8 @@ let Y = (0, r.animated)(d.fKU),
                     return t.forEach(t => {
                         null != t.applicationId && null == t.application && e.add(t.applicationId)
                     }), Array.from(e)
-                }, [t]), (0, p.A)(n));
-            (0, g.A)(i, e);
+                }, [t]), (0, g.A)(n));
+            (0, p.A)(i, e);
             let T = l.useMemo(() => (0, k.A)({
                 channel: e,
                 messages: i,

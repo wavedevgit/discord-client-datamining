@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(297413),
     m = n(966327),
     A = n(793574),
-    g = n(235986),
-    p = n(803664),
+    p = n(235986),
+    g = n(803664),
     f = n(583311),
     _ = n(290863),
     E = n(584777),
@@ -28,11 +28,11 @@ let v = e => {
     let {
         user: t,
         handleTrackAction: n
-    } = e, s = (0, o.bG)([x.A], () => x.A.getRelationshipType(t.id)), [a, r] = l.useState(!1), h = (0, p.A)({
+    } = e, s = (0, o.bG)([x.A], () => x.A.getRelationshipType(t.id)), [a, r] = l.useState(!1), h = (0, g.A)({
         user: t,
         location: A.A.NEW_GROUP_DM_INVITE_MODAL,
         setLoading: r
-    }), m = l.useRef(null), g = l.useCallback(async () => {
+    }), m = l.useRef(null), p = l.useCallback(async () => {
         n(), r(!0), await u.A.addRelationship({
             userId: t.id,
             context: {
@@ -83,7 +83,7 @@ let v = e => {
                 ariaHidden: !0,
                 children: (0, i.jsx)(d.K0, {
                     size: "sm",
-                    onClick: g,
+                    onClick: p,
                     variant: "icon-only",
                     "aria-label": I.intl.string(I.t.w5uwoI),
                     icon: d.Rvf,
@@ -100,7 +100,7 @@ function N(e) {
             row: s,
             hideDiscriminator: u,
             comparator: A,
-            selected: p,
+            selected: g,
             checked: f,
             disabled: x = !1,
             onClick: S,
@@ -155,10 +155,10 @@ function N(e) {
         "aria-disabled": x,
         "aria-setsize": b,
         "aria-posinset": j,
-        children: (0, i.jsxs)(g.A, {
-            align: g.A.Align.CENTER,
+        children: (0, i.jsxs)(p.A, {
+            align: p.A.Align.CENTER,
             className: a()(T.Bc, {
-                [T.oz]: p
+                [T.oz]: g
             }),
             children: [(0, i.jsx)(m.A, {
                 user: n,

@@ -40,7 +40,7 @@ function u(e) {
         })
     }, [n.keyboardModeEnabled, t]), A = i.useCallback(() => {
         n.hasMoreAfter || r._.dispatchToLastSubscribed(d.jej.TEXTAREA_FOCUS)
-    }, [n.hasMoreAfter]), g = (0, l.Ay)({
+    }, [n.hasMoreAfter]), p = (0, l.Ay)({
         id: o.D,
         preserveFocusPosition: !1,
         setFocus: m,
@@ -48,14 +48,14 @@ function u(e) {
         scrollToStart: h,
         scrollToEnd: u,
         onNavigateNextAtEnd: A
-    }), p = i.useCallback(e => {
+    }), g = i.useCallback(e => {
         let {
             atEnd: t = !1
         } = e;
-        t ? g.focusLastVisibleItem() : g.focusFirstVisibleItem()
-    }, [g]);
+        t ? p.focusLastVisibleItem() : p.focusFirstVisibleItem()
+    }, [p]);
     return (0, a.Vo)({
         event: d.jej.FOCUS_MESSAGES,
-        handler: p
-    }), g
+        handler: g
+    }), p
 }

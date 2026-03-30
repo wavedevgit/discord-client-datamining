@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(83942),
     m = n(259374),
     A = n(763845),
-    g = n(857341),
-    p = n(603266),
+    p = n(857341),
+    g = n(603266),
     f = n(985018),
     _ = n(451070);
 
@@ -79,16 +79,16 @@ function C(e) {
 
 function S(e) {
     let t = (0, s.bG)([c.A], () => c.A.hasVideo(e.channelId)),
-        [n, o] = l.useState(p.Rj.RTC_DEBUG_PANEL),
+        [n, o] = l.useState(g.Rj.RTC_DEBUG_PANEL),
         d = (0, r.GV)(),
         m = l.useMemo(() => {
             switch (n) {
-                case p.Rj.RTC_DEBUG_PANEL:
+                case g.Rj.RTC_DEBUG_PANEL:
                     return (0, i.jsx)(C, {
                         ...e
                     });
-                case p.Rj.RTC_SECURE_FRAMES:
-                    return (0, i.jsx)(g.A, {
+                case g.Rj.RTC_SECURE_FRAMES:
+                    return (0, i.jsx)(p.A, {
                         channelId: e.channelId
                     })
             }
@@ -101,7 +101,7 @@ function S(e) {
     }, [e.channelId, n]);
     let A = (0, h.c)();
     return l.useEffect(() => {
-        A && o(p.Rj.RTC_DEBUG_PANEL)
+        A && o(g.Rj.RTC_DEBUG_PANEL)
     }, [A]), (0, i.jsxs)("div", {
         className: _.kL,
         children: [(0, i.jsx)(a.Heading, {
@@ -116,11 +116,11 @@ function S(e) {
             look: "brand",
             onItemSelect: o,
             children: [(0, i.jsx)(a.VQ0.Item, {
-                id: p.Rj.RTC_DEBUG_PANEL,
+                id: g.Rj.RTC_DEBUG_PANEL,
                 className: _.YU,
                 children: f.intl.string(f.t.MBY1Pm)
             }), A ? null : (0, i.jsx)(a.VQ0.Item, {
-                id: p.Rj.RTC_SECURE_FRAMES,
+                id: g.Rj.RTC_SECURE_FRAMES,
                 className: _.YU,
                 children: f.intl.string(f.t.zC6o3s)
             })]

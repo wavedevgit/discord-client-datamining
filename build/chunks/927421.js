@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(661191),
     m = n(796774),
     A = n(209932),
-    g = n(536432),
-    p = n(933204),
+    p = n(536432),
+    g = n(933204),
     f = n(805143),
     _ = n(375366),
     E = n(69217);
@@ -45,10 +45,10 @@ function C(e) {
                 };
             return l.forEach(e => s(e, !0)), l.forEach(e => s(e, !1)), i
         }, [t, n, e])
-    }((0, f.Y)(n, !0)), b = (0, p.T)(), j = l.useRef(null), [R, M] = l.useState(void 0), D = (0, a.bG)([u.A], () => u.A.getMediaSessionId()), {
+    }((0, f.Y)(n, !0)), b = (0, g.T)(), j = l.useRef(null), [R, M] = l.useState(void 0), D = (0, a.bG)([u.A], () => u.A.getMediaSessionId()), {
         analyticsLocations: O
     } = (0, o.Ay)(r.A.SOUNDBOARD_WHEEL), L = l.useCallback(e => {
-        (0, g.Ak)(e, n.id, O), N()
+        (0, p.Ak)(e, n.id, O), N()
     }, [O, n.id, N]);
     l.useEffect(() => {
         m.E7(), d.bW.loadIfNecessary()

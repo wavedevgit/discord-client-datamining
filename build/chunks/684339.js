@@ -1,6 +1,6 @@
 /** chunk id: 684339 params = (module,exports,require) **/
 n.d(t, {
-    M: () => g,
+    M: () => p,
     u: () => m
 });
 var i, l = n(499979),
@@ -14,7 +14,7 @@ var i, l = n(499979),
     h = n(652215),
     m = ((i = {}).SELF_VIDEO = "self_video", i.SELF_STREAM = "self_stream", i.REMOTE_VIDEO = "remote_video", i.REMOTE_STREAM = "remote_stream", i.CHANGE_VIDEO_BACKGROUND = "change_video_background", i.REPLAY_VIDEO_STREAM = "replay_video_stream", i);
 let A = new Map;
-class g {
+class p {
     logger;
     spinnerVisibleStart = null;
     constructor(e) {
@@ -32,8 +32,8 @@ class g {
         [${e}, count for stream: ${s}]`);
         this.logger.info(`spinner visible for ${m} ms
       [${e}, count for stream: ${s}]`);
-        let g = c.A.getGuildId(),
-            p = d.A.getUserVoiceChannelId(g, a.default.getId()),
+        let p = c.A.getGuildId(),
+            g = d.A.getUserVoiceChannelId(p, a.default.getId()),
             f = function(e) {
                 if (null != e) {
                     if (e.isGuildVoice()) return "guild_voice";
@@ -42,15 +42,15 @@ class g {
                     if (e.isGroupDM()) return "group_dm"
                 }
                 return null
-            }(r.A.getChannel(p));
+            }(r.A.getChannel(g));
         u.default.track(h.HAw.VIDEO_SPINNER_SHOWN_V2, {
             video_spinner_context: e,
             duration_video_spinner_visible_ms: m,
             rtc_connection_id: c.A.getRTCConnectionId(),
             media_session_id: c.A.getMediaSessionId(),
             event_count_for_stream: s,
-            guild_id: g,
-            channel_id: p,
+            guild_id: p,
+            channel_id: g,
             channel_type: f,
             spinning_user_id: t,
             connection_type: o.A.getType(),

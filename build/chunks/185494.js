@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(475743),
     m = n(400492),
     A = n(430452),
-    g = n(504292),
-    p = n(774030),
+    p = n(504292),
+    g = n(774030),
     f = n(494783),
     _ = n(985018),
     E = n(345849);
@@ -40,14 +40,14 @@ let x = e => 1 - Math.pow(1 - e, 4),
 function T(e) {
     let {} = e, {
         activeVoice: t
-    } = (0, f.f)(), n = (0, h.A)(t), s = (0, p.e)(t), {
+    } = (0, f.f)(), n = (0, h.A)(t), s = (0, g.e)(t), {
         toggleLoopback: T,
         isLoopbackEnabled: v
     } = function() {
         let {
             activeVoice: e
         } = (0, f.f)(), t = (0, o.bG)([A.Ay], () => A.Ay.getVoiceFilterPlaybackEnabled()), n = l.useCallback(() => {
-            (0, m.Ak)(t ? "voice_filter_loopback_off" : "voice_filter_loopback_on"), (0, g.K)(!t)
+            (0, m.Ak)(t ? "voice_filter_loopback_off" : "voice_filter_loopback_on"), (0, p.K)(!t)
         }, [t]);
         return l.useEffect(() => (u.A.setLoopback("voice_filter_preview", null != e && t), () => {
             u.A.setLoopback("voice_filter_preview", !1)
@@ -55,7 +55,7 @@ function T(e) {
             isLoopbackEnabled: t,
             toggleLoopback: n
         }
-    }(), N = v ? d.GOW : d.uik, y = l.useCallback(() => (0, g.O)(null), []), b = (0, d.rdh)(d.LU0.colors.BACKGROUND_BASE_LOWER).hex(), j = (0, d.rdh)(d.LU0.colors.WHITE).hex(), R = l.useRef(0), M = t !== n ? R.current + 1 : R.current;
+    }(), N = v ? d.GOW : d.uik, y = l.useCallback(() => (0, p.O)(null), []), b = (0, d.rdh)(d.LU0.colors.BACKGROUND_BASE_LOWER).hex(), j = (0, d.rdh)(d.LU0.colors.WHITE).hex(), R = l.useRef(0), M = t !== n ? R.current + 1 : R.current;
     l.useEffect(() => {
         R.current = M
     }, [M]);
