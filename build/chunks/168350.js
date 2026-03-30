@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(397927),
-    l = n(736653),
+var l = n(397927),
+    a = n(736653),
     r = n(303136),
     s = n(676279),
     o = n(44684),
@@ -20,8 +20,8 @@ function A(e) {
             className: n,
             forceReducedMotion: A
         } = e,
-        E = (0, l.Ay)(),
-        I = (0, a.qB1)(E),
+        E = (0, a.Ay)(),
+        I = (0, l.qB1)(E),
         T = I ? m.A : d.A;
     return t = (0, s.TM)() ? I ? u.A : o.A : I ? _.A : c.A, (0, i.jsx)(r.A, {
         fallbackImage: T,

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(397927),
-    l = n(843472),
+var l = n(397927),
+    a = n(843472),
     r = n(763754),
     s = n(888675),
     o = n(985018);
@@ -22,13 +22,13 @@ function c(e) {
             channel_id: e,
             message_id: n
         } = t.messageReference;
-        l.A.jumpToMessage({
+        a.A.jumpToMessage({
             channelId: e,
             messageId: n,
             flash: !0
         })
     }, E = {
-        iconNode: (0, i.jsx)(a.tsw, {
+        iconNode: (0, i.jsx)(l.tsw, {
             size: "sm",
             color: "currentColor"
         })

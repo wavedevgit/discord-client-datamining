@@ -4,20 +4,20 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    l = n.n(a),
+var l = n(503698),
+    a = n.n(l),
     r = n(662714);
 
 function s(e) {
     let {
         thumbnails: t,
         variant: n = "gallery",
-        className: a
+        className: l
     } = e;
     if ("stacked" === n) {
         let e = Math.min(t.length, 2);
         return (0, i.jsx)("div", {
-            className: l()(r.qH, a, {
+            className: a()(r.qH, l, {
                 [r.qK]: 1 === e,
                 [r.xs]: 2 === e
             }),
@@ -31,7 +31,7 @@ function s(e) {
     }
     let s = Math.min(t.length, 4);
     return (0, i.jsx)("div", {
-        className: l()(r.bF, a, {
+        className: a()(r.bF, l, {
             [r.tK]: 1 === s,
             [r.y0]: 2 === s,
             [r.rm]: 3 === s,

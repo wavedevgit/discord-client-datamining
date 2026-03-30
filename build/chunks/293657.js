@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(397927),
-    l = n(763754),
+var l = n(397927),
+    a = n(763754),
     r = n(888675),
     s = n(985018),
     o = n(442268);
@@ -15,13 +15,13 @@ function c(e) {
         message: t,
         compact: n,
         usernameHook: c
-    } = e, d = (0, l.Ay)(t), u = c(d), _ = s.intl.format(s.t["dKW5C+"], {
+    } = e, d = (0, a.Ay)(t), u = c(d), _ = s.intl.format(s.t["dKW5C+"], {
         username: d.nick,
         usernameHook: u
     });
     return (0, i.jsx)(r.A, {
         className: o.d,
-        iconNode: (0, i.jsx)(a.LvC, {
+        iconNode: (0, i.jsx)(l.LvC, {
             size: "md",
             color: "currentColor"
         }),

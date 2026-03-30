@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(934551),
-    l = n(429913),
+var l = n(934551),
+    a = n(429913),
     r = n(769015),
     s = n(975571),
     o = n(763754),
@@ -28,7 +28,7 @@ function A(e) {
         channelId: n.id,
         guildId: void 0,
         messageId: void 0
-    })(), f = (0, l.h)(t.applicationId);
+    })(), f = (0, a.h)(t.applicationId);
     if (null == f) return null;
     let N = _.intl.format(_.t.m7Lwas, {
         username: I,
@@ -45,7 +45,7 @@ function A(e) {
         helpdeskArticle: s.A.getArticleURL(u.MVz.SOCIAL_LAYER_CONNECTIONS)
     });
     return (0, i.jsx)(d.A, {
-        iconNode: (0, i.jsx)(a.GameControllerIcon, {
+        iconNode: (0, i.jsx)(l.GameControllerIcon, {
             size: "sm"
         }),
         compact: E,

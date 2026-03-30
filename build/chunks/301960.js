@@ -3,9 +3,9 @@ n.d(t, {
     A: () => F
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    r = n.n(a),
     s = n(284009),
     o = n.n(s),
     c = n(989349),
@@ -19,8 +19,8 @@ var i = n(627968),
     T = n(688810),
     f = n(735991),
     N = n(975412),
-    g = n(168186),
-    C = n(597929),
+    C = n(168186),
+    g = n(597929),
     h = n(589022),
     p = n(427157),
     x = n(287809),
@@ -39,12 +39,12 @@ function y(e) {
     let {
         width: t = 6,
         height: n = 10,
-        color: a = "currentColor",
-        className: l,
+        color: l = "currentColor",
+        className: a,
         foreground: r
     } = e;
     return (0, i.jsx)("svg", {
-        className: l,
+        className: a,
         width: t,
         height: n,
         viewBox: "0 0 6 10",
@@ -53,12 +53,12 @@ function y(e) {
         children: (0, i.jsx)("path", {
             d: "M4.61241 0L6 0.845294L1.38759 10L0 9.15471L4.61241 0Z",
             className: r,
-            fill: a
+            fill: l
         })
     })
 }
 
-function b(e, t, n, a, l, s) {
+function b(e, t, n, l, a, s) {
     let {
         message: o,
         compact: c,
@@ -71,7 +71,7 @@ function b(e, t, n, a, l, s) {
         onUserContextMenu: T,
         onClickTargetAvatar: f,
         onTargetUserContextMenu: N,
-        onPopoutRequestClose: g
+        onPopoutRequestClose: C
     } = e;
     if (c && 1 === n) return null;
     if (c && null == o.activityInstance || u || m) return (0, i.jsx)("div", {
@@ -80,8 +80,8 @@ function b(e, t, n, a, l, s) {
             className: j.Jx
         })
     });
-    let C = R.Ay.getGuildMemberAvatarURL({
-            avatar: a.guildMemberAvatar ?? void 0,
+    let g = R.Ay.getGuildMemberAvatarURL({
+            avatar: l.guildMemberAvatar ?? void 0,
             userId: t.id,
             guildId: d?.guild_id ?? ""
         }) ?? void 0,
@@ -89,44 +89,44 @@ function b(e, t, n, a, l, s) {
             let {
                 user: t,
                 guildId: n,
-                guildAvatar: a,
-                onClick: l,
+                guildAvatar: l,
+                onClick: a,
                 onContextMenu: s,
                 onMouseDown: o,
                 ref: c
             } = e;
             return (0, i.jsx)("img", {
                 alt: "",
-                src: a ?? t.getAvatarURL(n, 16),
-                onClick: l,
+                src: l ?? t.getAvatarURL(n, 16),
+                onClick: a,
                 onContextMenu: s,
                 onMouseDown: o,
                 className: r()({
                     [j.WU]: !0,
-                    [j.vk]: null != l
+                    [j.vk]: null != a
                 }),
                 ref: c
             })
         })({
             user: t,
             guildId: d.guild_id,
-            guildAvatar: C,
+            guildAvatar: g,
             onClick: 1 === n ? f : I,
             onContextMenu: 1 === n ? N : T,
             ref: s
         }),
         p = 1 === n ? E : A;
-    return null != l && null != p && null != s ? (0, i.jsx)(_.YNO, {
+    return null != a && null != p && null != s ? (0, i.jsx)(_.YNO, {
         targetElementRef: s,
-        renderPopout: l,
+        renderPopout: a,
         shouldShow: p,
         position: "right",
-        onRequestClose: g,
+        onRequestClose: C,
         children: h
     }) : h()
 }
 
-function k(e, t, n, a, l) {
+function k(e, t, n, l, a) {
     let {
         message: r,
         channel: s,
@@ -141,12 +141,12 @@ function k(e, t, n, a, l) {
     return (0, i.jsx)(D.A, {
         className: 1 === n ? j.iu : "",
         compact: !0,
-        author: a,
+        author: l,
         message: r,
         channel: s,
         userOverride: t,
         showPopout: 1 === n ? c : o,
-        renderPopout: l,
+        renderPopout: a,
         onClick: 1 === n ? _ : d,
         onContextMenu: 1 === n ? m : u,
         onPopoutRequestClose: A
@@ -161,72 +161,72 @@ let G = () => (0, i.jsx)(_._BQ, {
 function F(e) {
     let t, {
             message: n,
-            channel: l
+            channel: a
         } = e,
         {
             analyticsLocations: s,
             newestAnalyticsLocation: c
         } = (0, T.Ay)(I.A.EXECUTED_COMMAND),
         R = (0, u.bG)([x.default], () => x.default.getCurrentUser()),
-        D = a.useRef(null),
-        y = a.useRef(null),
-        F = a.useMemo(() => (e, t, a) => (o()(null != t, "ExecutedCommand: user cannot be undefined"), o()(null != R, "ExecutedCommand: currentUser cannot be undefined"), o()(null != l, "ExecutedCommand: channel cannot be undefined"), (0, i.jsx)(h.A, {
+        D = l.useRef(null),
+        y = l.useRef(null),
+        F = l.useMemo(() => (e, t, l) => (o()(null != t, "ExecutedCommand: user cannot be undefined"), o()(null != R, "ExecutedCommand: currentUser cannot be undefined"), o()(null != a, "ExecutedCommand: channel cannot be undefined"), (0, i.jsx)(h.A, {
             ...e,
             user: t,
             currentUser: R,
-            guildId: l.guild_id,
-            channelId: l.id,
+            guildId: a.guild_id,
+            channelId: a.id,
             messageId: n.id,
-            newAnalyticsLocations: a
-        })), [R, l, n.id]),
-        B = a.useMemo(() => e => (o()(null != l, "ExecutedCommand: channel cannot be null"), (0, i.jsx)(P.A, {
+            newAnalyticsLocations: l
+        })), [R, a, n.id]),
+        B = l.useMemo(() => e => (o()(null != a, "ExecutedCommand: channel cannot be null"), (0, i.jsx)(P.A, {
             ...e,
-            channel: l,
+            channel: a,
             messageId: n.id,
             interactionData: n.interactionData
-        })), [l, n.id, n.interactionData]),
-        H = (0, g.Am)(n),
+        })), [a, n.id, n.interactionData]),
+        H = (0, C.Am)(n),
         V = H?.type === m.G4.APPLICATION_COMMAND && null != H.target_user ? new p.A(H.target_user) : null,
         w = H?.type === m.G4.APPLICATION_COMMAND && null != n.messageReference && null != e.renderTargetMessage,
-        X = (0, M.d8)(n.interaction?.user, l),
-        q = (0, M.d8)(V, l),
-        K = a.useMemo(() => e.compact ? (0, U.A)((0, O.i$)(d()(), "LT")) : null, [e.compact]),
-        Y = (0, A.Gp)(l.id),
-        z = n.interaction;
-    if (null == z || null == X) return null;
+        X = (0, M.d8)(n.interaction?.user, a),
+        q = (0, M.d8)(V, a),
+        K = l.useMemo(() => e.compact ? (0, U.A)((0, O.i$)(d()(), "LT")) : null, [e.compact]),
+        z = (0, A.Gp)(a.id),
+        Y = n.interaction;
+    if (null == Y || null == X) return null;
     let J = () => {
-        let t = b(e, z.user, 0, X, e => F(e, z.user, [I.A.AVATAR]), D),
-            n = k(e, z.user, 0, X, e => F(e, z.user));
-        return (0, i.jsxs)(a.Fragment, {
+        let t = b(e, Y.user, 0, X, e => F(e, Y.user, [I.A.AVATAR]), D),
+            n = k(e, Y.user, 0, X, e => F(e, Y.user));
+        return (0, i.jsxs)(l.Fragment, {
             children: [t, n]
         }, "user")
     };
-    if (n?.activityInstance === null || (0, C.V)(n)) t = L.intl.format(L.t["rg7U+C"], {
+    if (n?.activityInstance === null || (0, g.V)(n)) t = L.intl.format(L.t["rg7U+C"], {
         userHook: J,
         commandHook: () => {
             let t = function(e, t, n) {
                 let {
-                    showDataPopout: a,
-                    message: l,
+                    showDataPopout: l,
+                    message: a,
                     onClickCommand: s,
                     onPopoutRequestClose: o
-                } = e, c = l.interaction.displayName;
+                } = e, c = a.interaction.displayName;
                 return (0, i.jsx)(_.YNO, {
                     targetElementRef: n,
                     renderPopout: t,
-                    shouldShow: a,
+                    shouldShow: l,
                     position: "top",
                     align: "center",
                     onRequestClose: o,
                     animation: _.YNO.Animation.FADE,
-                    positionKey: null != l.interactionData ? "ready" : "loading",
+                    positionKey: null != a.interactionData ? "ready" : "loading",
                     children: e => {
                         let {
                             onClick: t,
-                            ...a
+                            ...l
                         } = e;
-                        if (l.type === v.lAJ.CHAT_INPUT_COMMAND || l.type === v.lAJ.INTERACTION_PREMIUM_UPSELL) return (0, i.jsx)(_.DUT, {
-                            ...a,
+                        if (a.type === v.lAJ.CHAT_INPUT_COMMAND || a.type === v.lAJ.INTERACTION_PREMIUM_UPSELL) return (0, i.jsx)(_.DUT, {
+                            ...l,
                             tag: "span",
                             onClick: s,
                             innerRef: n,
@@ -241,7 +241,7 @@ function F(e) {
                                 }), c]
                             })
                         });
-                        if (!(0, C.V)(l)) return (0, i.jsx)("div", {
+                        if (!(0, g.V)(a)) return (0, i.jsx)("div", {
                             className: j.p6,
                             ref: n,
                             children: c
@@ -249,11 +249,11 @@ function F(e) {
                         {
                             let e = (0, f.kF)(c);
                             return (0, i.jsx)(_.DUT, {
-                                ...a,
+                                ...l,
                                 tag: "span",
                                 onClick: () => {
                                     S._.dispatchToLastSubscribed(v.jej.OPEN_APP_LAUNCHER, {
-                                        applicationId: l.applicationId
+                                        applicationId: a.applicationId
                                     })
                                 },
                                 innerRef: n,
@@ -272,7 +272,7 @@ function F(e) {
                     }
                 })
             }(e, B, y);
-            return (0, i.jsx)(a.Fragment, {
+            return (0, i.jsx)(l.Fragment, {
                 children: t
             }, "command")
         }
@@ -283,7 +283,7 @@ function F(e) {
             if (null == V) return null;
             let t = b(e, V, 1, q, e => F(e, V, [I.A.AVATAR]), D),
                 n = k(e, V, 1, q, e => F(e, V));
-            return (0, i.jsxs)(a.Fragment, {
+            return (0, i.jsxs)(l.Fragment, {
                 children: [t, n]
             }, "target")
         }, {})]
@@ -291,19 +291,19 @@ function F(e) {
     else {
         let e = () => {
             (0, N.A)({
-                context: null != l ? {
+                context: null != a ? {
                     type: "channel",
-                    channel: l
+                    channel: a
                 } : {
                     type: "contextless"
                 },
                 openInPopout: !1,
                 analyticsLocation: c
             }), (0, E.LV)({
-                guildId: l.guild_id
+                guildId: a.guild_id
             })
         };
-        t = Y ? L.intl.format(L.t.kfV8WM, {
+        t = z ? L.intl.format(L.t.kfV8WM, {
             userHook: J,
             activityHook: () => (0, i.jsx)(_.DUT, {
                 tag: "span",

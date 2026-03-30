@@ -3,9 +3,9 @@ n.d(t, {
     h: () => x
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    r = n.n(a),
     s = n(158954),
     o = n(311907),
     c = n(582754),
@@ -19,60 +19,60 @@ var i = n(627968),
     T = n(326084),
     f = n(851746),
     N = n(652215),
-    g = n(985018),
-    C = n(471449),
+    C = n(985018),
+    g = n(471449),
     h = n(299148);
 let p = e => {
         let {
             recipient: t,
             status: n,
-            onClose: a
+            onClose: l
         } = e, {
-            avatarSrc: l,
+            avatarSrc: a,
             eventHandlers: s
         } = (0, _.A)({
             userId: t?.id,
             size: d._3J.SIZE_56
         }), o = I.Ay.getName(t), c = n === T.o.FAIL;
         return (0, i.jsxs)("div", {
-            className: C.w4,
+            className: g.w4,
             children: [(0, i.jsx)(d.euF, {
                 imageClassName: r()({
-                    [C.jN]: c
+                    [g.jN]: c
                 }),
-                src: l,
+                src: a,
                 "aria-label": o,
                 size: d._3J.SIZE_32,
                 ...s
             }), c ? (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(d.Text, {
-                    className: C.E0,
+                    className: g.E0,
                     variant: "text-md/medium",
                     color: "text-strong",
                     children: o
                 }), (0, i.jsx)(d.Text, {
                     variant: "text-md/medium",
-                    className: C.nT,
+                    className: g.nT,
                     color: "text-strong",
-                    children: g.intl.format(g.t.RO3T4B, {
+                    children: C.intl.format(C.t.RO3T4B, {
                         userName: o
                     })
                 })]
             }) : (0, i.jsx)(d.Text, {
                 variant: "text-md/medium",
-                className: C.Pm,
+                className: g.Pm,
                 color: "text-strong",
                 children: o
             }), (0, i.jsx)(d.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: g.intl.string(g.t["g33r/P"]),
+                text: C.intl.string(C.t["g33r/P"]),
                 icon: d.oyn,
                 onClick: () => {
                     var e;
                     return e = t.id, void((0, m.default)(), u.A.openPrivateChannel({
                         recipientIds: e
-                    }), a())
+                    }), l())
                 }
             })]
         })
@@ -81,13 +81,13 @@ let p = e => {
         let {
             transitionState: t,
             results: n,
-            onClose: l,
+            onClose: a,
             isReminderConfirmation: r
         } = e, u = (0, o.bG)([f.A], () => f.A.getReferralsRemaining());
         A.default.track(N.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED);
         let {
             reducedMotion: _
-        } = a.useContext(c.CZ);
+        } = l.useContext(c.CZ);
         return null === u ? (0, i.jsx)(d.y$y, {}) : (0, i.jsx)(s.ExpressiveModal, {
             graphic: _.enabled ? {
                 src: h.A,
@@ -97,20 +97,20 @@ let p = e => {
                 type: "rive"
             },
             gradientColor: "nitro-pink",
-            title: 0 === n.filter(e => e.status === T.o.SUCCESS).length ? g.intl.string(g.t["7VBEue"]) : !0 === r ? g.intl.string(g.t.GP5lbq) : g.intl.string(g.t.tKCltd),
-            subtitle: !0 === r ? g.intl.format(g.t["4gJJfD"], {
+            title: 0 === n.filter(e => e.status === T.o.SUCCESS).length ? C.intl.string(C.t["7VBEue"]) : !0 === r ? C.intl.string(C.t.GP5lbq) : C.intl.string(C.t.tKCltd),
+            subtitle: !0 === r ? C.intl.format(C.t["4gJJfD"], {
                 helpdeskArticle: E.A.getArticleURL(N.MVz.REFERRAL_PROGRAM)
-            }) : g.intl.format(g.t.AwGSWl, {
+            }) : C.intl.format(C.t.AwGSWl, {
                 helpdeskArticle: E.A.getArticleURL(N.MVz.REFERRAL_PROGRAM)
             }),
-            onClose: l,
+            onClose: a,
             transitionState: t,
             children: (0, i.jsx)("div", {
-                className: C.Hz,
+                className: g.Hz,
                 children: n.map(e => (0, i.jsx)(p, {
                     recipient: e.recipient,
                     status: e.status,
-                    onClose: l
+                    onClose: a
                 }, e.recipient.id))
             })
         })

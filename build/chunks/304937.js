@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    l = n.n(a),
+var l = n(503698),
+    a = n.n(l),
     r = n(158954),
     s = n(212555),
     o = n(428855),
@@ -17,7 +17,7 @@ function _(e) {
     let {
         question: t,
         questionId: n,
-        responses: a,
+        responses: l,
         onResponseChange: _
     } = e, m = (() => {
         switch (t.QuestionType) {
@@ -25,14 +25,14 @@ function _(e) {
                 return (0, i.jsx)(o.A, {
                     question: t,
                     questionId: n,
-                    value: a[n] ?? "",
+                    value: l[n] ?? "",
                     onValueChange: _
                 });
             case c.SQ.MULTIPLE_CHOICE:
                 return (0, i.jsx)(s.A, {
                     question: t,
                     questionId: n,
-                    value: a[n] ?? "",
+                    value: l[n] ?? "",
                     onValueChange: _
                 });
             case c.SQ.DESCRIPTIVE_BLOCK:
@@ -42,7 +42,7 @@ function _(e) {
         }
     })();
     return null == m ? null : (0, i.jsxs)("div", {
-        className: l()(u.PT, d.k),
+        className: a()(u.PT, d.k),
         children: [(0, i.jsx)(r.EYj, {
             variant: "text-lg/normal",
             color: "text-strong",

@@ -1,10 +1,10 @@
 /** chunk id: 336589 params = (module,exports,require) **/
 n.d(t, {
-    I: () => g
+    I: () => C
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(311907),
+    l = n(64700),
+    a = n(311907),
     r = n(732955),
     s = n(355622),
     o = n(148355),
@@ -22,7 +22,7 @@ let N = e => {
         let {
             channel: t,
             message: n
-        } = e, l = (0, E.dv)(n.id), c = a.useCallback(() => {
+        } = e, a = (0, E.dv)(n.id), c = l.useCallback(() => {
             (0, A.i)({
                 type: s.oU.FORM,
                 content: "",
@@ -31,15 +31,15 @@ let N = e => {
                 let {
                     valid: i
                 } = e;
-                i && (0, E.S9)(t, n, l.id)
+                i && (0, E.S9)(t, n, a.id)
             })
-        }, [t, n, l]);
+        }, [t, n, a]);
         return (0, i.jsx)("div", {
             className: f.T,
             children: (0, i.jsx)(r.$nd, {
                 icon: {
                     type: "sticker",
-                    asset: l,
+                    asset: a,
                     component: o.A
                 },
                 text: T.intl.string(T.t["7Tj6HT"]),
@@ -48,21 +48,21 @@ let N = e => {
             })
         })
     },
-    g = e => {
+    C = e => {
         let {
             message: t,
             channel: n
-        } = e, a = n.getGuildId(), r = (0, l.bG)([m.default, _.A, u.A, d.Ay], () => {
+        } = e, l = n.getGuildId(), r = (0, a.bG)([m.default, _.A, u.A, d.Ay], () => {
             let e = m.default.getCurrentUser(),
                 i = (0, c.UJ)(n),
-                l = _.A.can(I.xBc.SEND_MESSAGES, n),
-                r = null != a && null != e && d.Ay.getMember(a, e.id)?.isPending,
+                a = _.A.can(I.xBc.SEND_MESSAGES, n),
+                r = null != l && null != e && d.Ay.getMember(l, e.id)?.isPending,
                 s = t.author.bot,
-                o = u.A.getGuild(a),
+                o = u.A.getGuild(l),
                 A = null != o && (o.systemChannelFlags & I.ogj.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
-            return l && !i && !r && !s && A
+            return a && !i && !r && !s && A
         });
-        return null != a && r ? (0, i.jsx)(N, {
+        return null != l && r ? (0, i.jsx)(N, {
             message: t,
             channel: n
         }) : null

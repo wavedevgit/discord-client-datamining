@@ -1,10 +1,10 @@
 /** chunk id: 379114 params = (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => g
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(397927),
+    l = n(64700),
+    a = n(397927),
     r = n(793574),
     s = n(688810),
     o = n(763754),
@@ -25,14 +25,14 @@ function N(e) {
     } = e;
     return (0, i.jsx)("div", {
         className: f._X,
-        children: (0, i.jsx)(l.Text, {
+        children: (0, i.jsx)(a.Text, {
             tag: "p",
             className: f._X,
             color: "status-positive-text",
             variant: "heading-xl/medium",
             children: T.intl.format(T.t.MLKSln, {
                 username: t,
-                usernameHook: (e, t) => (0, i.jsx)(l.Text, {
+                usernameHook: (e, t) => (0, i.jsx)(a.Text, {
                     tag: "span",
                     color: "status-positive-text",
                     variant: "heading-xxl/extrabold",
@@ -44,75 +44,75 @@ function N(e) {
     })
 }
 
-function g(e) {
+function C(e) {
     let {
         guildId: t,
         user: n,
-        username: a
+        username: l
     } = e;
     return (0, i.jsxs)("div", {
         className: f.pG,
         role: "img",
         "aria-label": T.intl.formatToPlainString(T.t["utf8+W"], {
-            username: a
+            username: l
         }),
         children: [(0, i.jsx)(A.A, {
             guildId: t,
             user: n,
             className: f.sz
         }), (0, i.jsx)(N, {
-            username: a
+            username: l
         })]
     })
 }
 
-function C(e) {
+function g(e) {
     let {
         channel: t,
-        message: l,
+        message: a,
         compact: A
-    } = e, T = (0, o.Ay)(l), f = function(e) {
+    } = e, T = (0, o.Ay)(a), f = function(e) {
         let {
             author: t,
             channel: n,
             message: i
-        } = e, l = n.guild_id, o = (0, c.P)({
+        } = e, a = n.guild_id, o = (0, c.P)({
             user: i.author,
             channelId: n.id,
-            guildId: l,
+            guildId: a,
             messageId: i.id
         })(t), {
             analyticsLocations: d
-        } = (0, s.Ay)(r.A.GUILD_ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE), m = i.roleSubscriptionData, A = a.useCallback(() => {
-            (0, u.pX)(E.BVt.CHANNEL(l, I.VV.ROLE_SUBSCRIPTIONS), {
+        } = (0, s.Ay)(r.A.GUILD_ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE), m = i.roleSubscriptionData, A = l.useCallback(() => {
+            (0, u.pX)(E.BVt.CHANNEL(a, I.VV.ROLE_SUBSCRIPTIONS), {
                 sourceLocationStack: d
-            }), m?.role_subscription_listing_id != null && (0, _.xH)(l, n.id, i.id, m.role_subscription_listing_id)
-        }, [l, n, i, m, d]);
+            }), m?.role_subscription_listing_id != null && (0, _.xH)(a, n.id, i.id, m.role_subscription_listing_id)
+        }, [a, n, i, m, d]);
         return null == m ? null : (0, _.gw)({
             username: t.nick,
             usernameOnClickHandler: o,
             roleSubscriptionOnClickHandler: A,
-            guildId: l,
+            guildId: a,
             roleSubscriptionData: i.roleSubscriptionData
         })
     }({
         channel: t,
-        message: l,
+        message: a,
         author: T
-    }), N = l.roleSubscriptionData?.total_months_subscribed != null && l.roleSubscriptionData?.total_months_subscribed <= 1;
+    }), N = a.roleSubscriptionData?.total_months_subscribed != null && a.roleSubscriptionData?.total_months_subscribed <= 1;
     return null == f ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.A, {
             icon: n(617184),
-            timestamp: l.timestamp,
+            timestamp: a.timestamp,
             compact: A,
             children: f
-        }), N && (0, i.jsx)(g, {
+        }), N && (0, i.jsx)(C, {
             guildId: t.guild_id,
-            user: l.author,
+            user: a.author,
             username: T.nick
         }), (0, i.jsx)(m.A, {
             channel: t,
-            message: l
+            message: a
         })]
     })
 }

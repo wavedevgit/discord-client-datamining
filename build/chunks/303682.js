@@ -3,8 +3,8 @@ n.d(t, {
     SelectFriendsModalScreens: () => D,
     default: () => P
 });
-var i, a = n(627968),
-    l = n(64700),
+var i, l = n(627968),
+    a = n(64700),
     r = n(503698),
     s = n.n(r),
     o = n(158954),
@@ -19,8 +19,8 @@ var i, a = n(627968),
     T = n(975571),
     f = n(427262),
     N = n(326084),
-    g = n(851746),
-    C = n(761546),
+    C = n(851746),
+    g = n(761546),
     h = n(972007),
     p = n(636184),
     x = n(652215),
@@ -31,7 +31,7 @@ let O = e => {
             transitionState: t,
             onClose: n,
             onShare: i
-        } = e, r = (0, c.bG)([g.A], () => g.A.getReferralsRemaining()), u = (0, c.bG)([g.A], () => g.A.getHasEligibleFriends()), [m, A] = l.useState(new Map), [E, I] = l.useState(""), N = (0, _.A)(E, 400), {
+        } = e, r = (0, c.bG)([C.A], () => C.A.getReferralsRemaining()), u = (0, c.bG)([C.A], () => C.A.getHasEligibleFriends()), [m, A] = a.useState(new Map), [E, I] = a.useState(""), N = (0, _.A)(E, 400), {
             eligibleUsers: p,
             fetchUsers: O,
             hasError: M,
@@ -40,15 +40,15 @@ let O = e => {
         } = (0, h.i)({
             searchQuery: N,
             selectedUsers: m
-        }), [U, v] = l.useState(!1), L = p.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map);
-        return null === r ? (0, a.jsx)(d.y$y, {}) : M ? (0, a.jsx)(o.Modal, {
+        }), [U, v] = a.useState(!1), L = p.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map);
+        return null === r ? (0, l.jsx)(d.y$y, {}) : M ? (0, l.jsx)(o.Modal, {
             transitionState: t,
             size: "sm",
             title: R.intl.string(R.t.lcuio4),
             subtitle: R.intl.string(R.t["x09+CD"]),
             onClose: n,
             actions: []
-        }) : !1 === u ? (0, a.jsx)(o.Modal, {
+        }) : !1 === u ? (0, l.jsx)(o.Modal, {
             transitionState: t,
             size: "sm",
             title: R.intl.string(R.t["2YigPp"]),
@@ -57,13 +57,13 @@ let O = e => {
             }),
             onClose: n,
             actions: []
-        }) : (0, a.jsx)(o.Modal, {
+        }) : (0, l.jsx)(o.Modal, {
             size: "md",
             transitionState: t,
             title: R.intl.string(R.t["2dVCLl"]),
             subtitle: R.intl.string(R.t.DXgoi2),
             onClose: n,
-            input: (0, a.jsx)(d.iS7, {
+            input: (0, l.jsx)(d.iS7, {
                 selectionMode: "multiple",
                 value: Array.from(m.values()),
                 options: Array.from(L.values()),
@@ -79,9 +79,9 @@ let O = e => {
                         null != e && n.set(e.id, e)
                     }), A(n)
                 },
-                children: (0, a.jsx)("div", {
+                children: (0, l.jsx)("div", {
                     className: S.c,
-                    children: (0, a.jsx)(d.a32, {
+                    children: (0, l.jsx)(d.a32, {
                         placeholder: 0 === m.size ? R.intl.string(R.t.Kd5RaI) : "",
                         onQueryChange: e => {
                             I(e.target.value)
@@ -92,14 +92,14 @@ let O = e => {
             actions: [],
             actionBarInput: (e => {
                 let t, {
-                        eligibleRecipients: l
+                        eligibleRecipients: a
                     } = e,
-                    r = N.length > 0 && 0 === l.size;
+                    r = N.length > 0 && 0 === a.size;
                 return t = !0 === r ? R.intl.string(R.t.wpSqAW) : m.size <= 1 ? R.intl.string(R.t.ItpQxk) : R.intl.format(R.t.iW2stn, {
                     nTrials: m.size
-                }), (0, a.jsx)("div", {
+                }), (0, l.jsx)("div", {
                     className: s()(S.qr, S.h0),
-                    children: (0, a.jsx)(d.Button, {
+                    children: (0, l.jsx)(d.Button, {
                         variant: "primary",
                         disabled: 0 === m.size && !r || U,
                         text: t,
@@ -117,7 +117,7 @@ let O = e => {
                 let {
                     eligibleRecipients: t
                 } = e;
-                return (0, a.jsx)(C.A, {
+                return (0, l.jsx)(g.A, {
                     users: Array.from(t.values()),
                     isUserSelected: e => m.has(e.id),
                     onSelectionChange: (e, t) => {
@@ -147,11 +147,11 @@ let O = e => {
                 onClose: i,
                 onShare: r
             } = e,
-            _ = (0, c.bG)([g.A], () => g.A.getRecipientStatus()),
-            [m, A] = l.useState(new Map),
-            [I, T] = l.useState(new Map),
-            [f, h] = l.useState(!1);
-        return l.useEffect(() => {
+            _ = (0, c.bG)([C.A], () => C.A.getRecipientStatus()),
+            [m, A] = a.useState(new Map),
+            [I, T] = a.useState(new Map),
+            [f, h] = a.useState(!1);
+        return a.useEffect(() => {
             (async () => {
                 let e = new Map;
                 for (let [t, n] of _) {
@@ -161,7 +161,7 @@ let O = e => {
                 }
                 A(e)
             })()
-        }, [_]), (0, a.jsx)(o.Modal, {
+        }, [_]), (0, l.jsx)(o.Modal, {
             size: "md",
             transitionState: n,
             title: R.intl.string(R.t.rKmy8I),
@@ -170,9 +170,9 @@ let O = e => {
             actions: [],
             actionBarInput: (t = I.size <= 1 ? R.intl.string(R.t.ItpQxk) : R.intl.format(R.t.iW2stn, {
                 nTrials: I.size
-            }), (0, a.jsx)("div", {
+            }), (0, l.jsx)("div", {
                 className: s()(S.qr, S.h0),
-                children: (0, a.jsx)(d.Button, {
+                children: (0, l.jsx)(d.Button, {
                     variant: "primary",
                     disabled: 0 === I.size || f,
                     text: t,
@@ -183,7 +183,7 @@ let O = e => {
                     }
                 })
             })),
-            children: (0, a.jsx)(C.A, {
+            children: (0, l.jsx)(g.A, {
                 users: Array.from(m.values()),
                 isUserSelected: e => I.has(e.id),
                 isUserDisabled: e => e.referralStatus === N.aK.REDEEMED,
@@ -203,7 +203,7 @@ let P = e => {
         transitionState: t,
         onClose: n,
         startingScreen: i = 1
-    } = e, r = (0, c.bG)([g.A], () => g.A.getReferralsRemaining()), [s, o] = l.useState(i), [u, _] = l.useState([]), {
+    } = e, r = (0, c.bG)([C.A], () => C.A.getReferralsRemaining()), [s, o] = a.useState(i), [u, _] = a.useState([]), {
         analyticsLocations: E
     } = (0, A.Ay)([m.A.PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL]), T = async e => {
         I.default.track(x.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED, {
@@ -215,16 +215,16 @@ let P = e => {
             status: t.get(e.id)
         }))), o(2)
     };
-    return null === r ? (0, a.jsx)(d.y$y, {}) : 2 === s ? (0, a.jsx)(p.h, {
+    return null === r ? (0, l.jsx)(d.y$y, {}) : 2 === s ? (0, l.jsx)(p.h, {
         transitionState: t,
         isReminderConfirmation: 3 === i,
         results: u,
         onClose: n
-    }) : 1 === s ? (0, a.jsx)(O, {
+    }) : 1 === s ? (0, l.jsx)(O, {
         transitionState: t,
         onClose: n,
         onShare: T
-    }) : 3 === s ? (0, a.jsx)(M, {
+    }) : 3 === s ? (0, l.jsx)(M, {
         transitionState: t,
         onClose: n,
         onShare: T

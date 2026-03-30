@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(397927),
-    l = n(888675),
+var l = n(397927),
+    a = n(888675),
     r = n(985018),
     s = n(470435);
 
@@ -14,8 +14,8 @@ function o(e) {
         message: t,
         compact: n
     } = e;
-    return (0, i.jsx)(l.A, {
-        iconNode: (0, i.jsx)(a.ysw, {
+    return (0, i.jsx)(a.A, {
+        iconNode: (0, i.jsx)(l.ysw, {
             size: "md",
             color: "currentColor",
             className: s.K

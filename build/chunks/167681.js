@@ -4,13 +4,13 @@ n.d(t, {
     dv: () => c
 });
 var i = n(843472),
-    a = n(287809),
-    l = n(954571),
+    l = n(287809),
+    a = n(954571),
     r = n(661191),
     s = n(21181),
     o = n(652215);
 let c = e => {
-        let t = a.default.getCurrentUser()?.id,
+        let t = l.default.getCurrentUser()?.id,
             n = ((null != t ? r.default.extractTimestamp(t) : 0) + r.default.extractTimestamp(e)) % s.I.length;
         return s.I[n]
     },
@@ -20,10 +20,10 @@ let c = e => {
             message: t,
             shouldMention: !0,
             showMentionToggle: !0
-        })), l.default.track(o.HAw.WELCOME_CTA_CLICKED, {
+        })), a.default.track(o.HAw.WELCOME_CTA_CLICKED, {
             is_reply: !0,
             sticker_id: n,
             target_user: t.author.id,
-            sender: a.default.getCurrentUser()?.id
+            sender: l.default.getCurrentUser()?.id
         })
     }

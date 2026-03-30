@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    l = n.n(a),
+var l = n(503698),
+    a = n.n(l),
     r = n(397927),
     s = n(709066),
     o = n(763754),
@@ -20,8 +20,8 @@ function E(e) {
     let {
         message: t,
         compact: n,
-        usernameHook: a
-    } = e, E = (0, o.Ay)(t), I = a(E), {
+        usernameHook: l
+    } = e, E = (0, o.Ay)(t), I = l(E), {
         avatarSrc: T,
         eventHandlers: {
             onMouseEnter: f,
@@ -32,7 +32,7 @@ function E(e) {
         onMouseEnter: f,
         onMouseLeave: N,
         children: (0, i.jsx)(u.A, {
-            className: l()(A.rs, {
+            className: a()(A.rs, {
                 [A.oE]: n
             }),
             iconNode: n ? null : (0, i.jsx)(d.l, {
@@ -41,13 +41,13 @@ function E(e) {
             iconContainerClassName: A.zc,
             compact: n,
             children: (0, i.jsxs)("div", {
-                className: l()(A.Qs, {
+                className: a()(A.Qs, {
                     [A.oE]: n
                 }),
                 children: [(0, i.jsx)(c.ix, {
                     message: t,
                     messageClassname: A.he,
-                    className: l()(A.QV, A.he, {
+                    className: a()(A.QV, A.he, {
                         [A.oE]: n
                     }),
                     username: (0, i.jsxs)("div", {
@@ -66,7 +66,7 @@ function E(e) {
                     compact: n,
                     showTimestamp: !0
                 }), (0, i.jsx)("div", {
-                    className: l()(A.__invalid_messageContent, {
+                    className: a()(A.__invalid_messageContent, {
                         [A.oE]: n
                     }),
                     children: m.intl.format(m.t.qntXNQ, {

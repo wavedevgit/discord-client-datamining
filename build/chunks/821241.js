@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    l = n.n(a),
+var l = n(503698),
+    a = n.n(l),
     r = n(311907),
     s = n(397927),
     o = n(709066),
@@ -22,10 +22,10 @@ function T(e) {
     let {
         message: t,
         compact: n,
-        usernameHook: a,
+        usernameHook: l,
         channel: T
-    } = e, f = (0, r.bG)([c.A], () => c.A.getGuild(T.guild_id)), N = (0, d.Ay)(t), g = a(N), {
-        avatarSrc: C,
+    } = e, f = (0, r.bG)([c.A], () => c.A.getGuild(T.guild_id)), N = (0, d.Ay)(t), C = l(N), {
+        avatarSrc: g,
         eventHandlers: {
             onMouseEnter: h,
             onMouseLeave: p
@@ -35,22 +35,22 @@ function T(e) {
         onMouseEnter: h,
         onMouseLeave: p,
         children: (0, i.jsx)(m.A, {
-            className: l()(I.rs, {
+            className: a()(I.rs, {
                 [I.oE]: n
             }),
             iconNode: n ? null : (0, i.jsx)(_.l, {
-                src: C
+                src: g
             }),
             iconContainerClassName: I.zc,
             compact: n,
             children: (0, i.jsxs)("div", {
-                className: l()(I.Qs, {
+                className: a()(I.Qs, {
                     [I.oE]: n
                 }),
                 children: [(0, i.jsx)(u.ix, {
                     message: t,
                     messageClassname: I.he,
-                    className: l()(I.QV, I.he, {
+                    className: a()(I.QV, I.he, {
                         [I.oE]: n
                     }),
                     username: (0, i.jsxs)("div", {
@@ -69,12 +69,12 @@ function T(e) {
                     compact: n,
                     showTimestamp: !0
                 }), (0, i.jsx)("div", {
-                    className: l()(I.__invalid_messageContent, {
+                    className: a()(I.__invalid_messageContent, {
                         [I.oE]: n
                     }),
                     children: E.intl.format(E.t.W0UBI3, {
                         username: N.nick,
-                        usernameHook: g,
+                        usernameHook: C,
                         guildName: f?.name ?? ""
                     })
                 })]

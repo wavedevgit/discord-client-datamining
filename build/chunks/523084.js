@@ -1,21 +1,21 @@
 /** chunk id: 523084 params = (module,exports,require) **/
-n.d(t, {
+t.d(n, {
     A: () => m
 });
-var a = n(627968),
-    s = n(64700),
-    i = n(106778),
-    r = n(311907),
-    l = n(397927),
-    d = n(775602),
-    c = n(524246),
-    o = n(14368),
-    u = n(944053);
+var a = t(627968),
+    s = t(64700),
+    i = t(106778),
+    r = t(311907),
+    l = t(397927),
+    d = t(775602),
+    c = t(524246),
+    o = t(14368),
+    u = t(944053);
 
 function m(e) {
     let {
-        title: t,
-        description: n,
+        title: n,
+        description: t,
         image: m,
         button: _,
         ...f
@@ -42,12 +42,12 @@ function m(e) {
                         className: u.hQ,
                         children: [(0, a.jsx)(l.Heading, {
                             variant: "heading-xl/extrabold",
-                            children: t
-                        }), (0, a.jsx)(l.Text, {
+                            children: n
+                        }), null != t && (0, a.jsx)(l.Text, {
                             tag: "span",
                             className: u.h_,
                             variant: "text-sm/normal",
-                            children: n
+                            children: t
                         }), _]
                     })]
                 })

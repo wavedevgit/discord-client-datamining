@@ -3,8 +3,8 @@ n.d(t, {
     A: () => O
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(110259),
+    l = n(64700),
+    a = n(110259),
     r = n(311907),
     s = n(397927),
     o = n(966327),
@@ -19,25 +19,25 @@ var i = n(627968),
     T = n(979474),
     f = n(51501),
     N = n(788868),
-    g = n(652215),
-    C = n(778712),
+    C = n(652215),
+    g = n(778712),
     h = n(985018),
     p = n(478169);
-let x = (0, s.FT9)(C._3.SIZE_56),
-    R = (0, s.FT9)(C._3.SIZE_24);
+let x = (0, s.FT9)(g._3.SIZE_56),
+    R = (0, s.FT9)(g._3.SIZE_24);
 
 function S(e) {
     let {
         user: t,
         ariaLabel: n,
-        showCutout: l
-    } = e, r = a.useId(), s = "u" > typeof document && document.documentElement?.dir === "rtl" ? -2 : x - R - -2, c = x - R - -3;
+        showCutout: a
+    } = e, r = l.useId(), s = "u" > typeof document && document.documentElement?.dir === "rtl" ? -2 : x - R - -2, c = x - R - -3;
     return (0, i.jsxs)("svg", {
         width: x,
         height: x,
         viewBox: `0 0 ${x} ${x}`,
         className: p.XH,
-        children: [l && (0, i.jsxs)("mask", {
+        children: [a && (0, i.jsxs)("mask", {
             id: r,
             maskUnits: "userSpaceOnUse",
             children: [(0, i.jsx)("rect", {
@@ -57,12 +57,12 @@ function S(e) {
             y: 0,
             width: x,
             height: x,
-            mask: l ? `url(#${r})` : void 0,
+            mask: a ? `url(#${r})` : void 0,
             children: (0, i.jsx)(o.A, {
                 className: p.A6,
                 user: t,
                 "aria-label": n,
-                size: C._3.SIZE_56
+                size: g._3.SIZE_56
             })
         })]
     })
@@ -86,15 +86,15 @@ function O(e) {
         analyticsObject: {
             page: R,
             section: O,
-            object: g.ZSU.BUTTON_CTA,
-            objectType: g.AnalyticsObjectTypes.GIFT
+            object: C.ZSU.BUTTON_CTA,
+            objectType: C.AnalyticsObjectTypes.GIFT
         },
         location: "gift-intent-card"
     });
-    a.useEffect(() => {
+    l.useEffect(() => {
         (0, u.x)({
-            name: l.ImpressionNames.GIFT_INTENT_CARD,
-            type: l.ImpressionTypes.VIEW,
+            name: a.ImpressionNames.GIFT_INTENT_CARD,
+            type: a.ImpressionTypes.VIEW,
             properties: {
                 gift_intent_type: t,
                 num_friend_anniversaries: I.Ay.getFriendAnniversaries().length
@@ -119,7 +119,7 @@ function O(e) {
                         className: p.GM,
                         user: D,
                         "aria-label": x.username,
-                        size: C._3.SIZE_24
+                        size: g._3.SIZE_24
                     })]
                 }), (0, i.jsxs)("div", {
                     className: p.FS,
@@ -151,7 +151,7 @@ function O(e) {
                     text: h.intl.string(h.t.nffuyb),
                     "aria-label": h.intl.string(h.t.nffuyb),
                     onClick: e => {
-                        e.stopPropagation(), A.default.track(g.HAw.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
+                        e.stopPropagation(), A.default.track(C.HAw.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
                             gift_intent_type: t,
                             cta_type: "send_message",
                             location_stack: P
@@ -175,7 +175,7 @@ function O(e) {
                     onClick: e => {
                         e.stopPropagation();
                         let n = _.A.getUserAffinity(x.id);
-                        A.default.track(g.HAw.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
+                        A.default.track(C.HAw.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
                             gift_intent_type: t,
                             affinity: n?.dmProbability,
                             location_stack: P

@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968);
 n(64700);
-var a = n(311907),
-    l = n(342952),
+var l = n(311907),
+    a = n(342952),
     r = n(397927),
     s = n(696451),
     o = n(287809);
@@ -14,7 +14,7 @@ function c(e) {
     let {
         guildId: t,
         className: n
-    } = e, c = (0, a.yK)([s.Ay, o.default], () => {
+    } = e, c = (0, l.yK)([s.Ay, o.default], () => {
         let e = [];
         for (let n of s.Ay.getMembers(t)) {
             if (null == n.premiumSince) continue;
@@ -23,7 +23,7 @@ function c(e) {
         }
         return e
     }, [t]);
-    return 0 === c.length ? null : (0, i.jsx)(l.A, {
+    return 0 === c.length ? null : (0, i.jsx)(a.A, {
         className: n,
         users: c,
         maxUsers: 7,

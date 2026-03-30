@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(763754),
-    l = n(888675),
+var l = n(763754),
+    a = n(888675),
     r = n(985018);
 
 function s(e) {
@@ -17,13 +17,13 @@ function s(e) {
         compact: d
     } = e, {
         nick: u
-    } = (0, a.Ay)(t), _ = o(), m = c(), A = r.intl.format(r.t.MMN2Jq, {
+    } = (0, l.Ay)(t), _ = o(), m = c(), A = r.intl.format(r.t.MMN2Jq, {
         username: u,
         usernameHook: _,
         otherUsername: s,
         otherUsernameHook: m
     });
-    return (0, i.jsx)(l.A, {
+    return (0, i.jsx)(a.A, {
         icon: n(617184),
         timestamp: t.timestamp,
         compact: d,

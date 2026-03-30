@@ -3,8 +3,8 @@ n.d(t, {
     A: () => f
 }), n(938796);
 var i = n(627968),
-    a = n(64700),
-    l = n(665260),
+    l = n(64700),
+    a = n(665260),
     r = n(311907),
     s = n(732955),
     o = n(397927),
@@ -23,16 +23,16 @@ function f(e) {
         message: t,
         compact: n
     } = e, f = t.channel_id, N = (0, r.bG)([_.A], () => null != t.messageReference ? _.A.getMessage(t.messageReference.channel_id, t.messageReference.message_id) : null, [t.messageReference]), {
-        clipId: g,
-        remoteTriggerClipId: C
-    } = a.useMemo(() => null != N ? function(e) {
+        clipId: C,
+        remoteTriggerClipId: g
+    } = l.useMemo(() => null != N ? function(e) {
         let t = "__CLIP_METADATA__",
             n = e.indexOf(t);
         if (-1 === n) return {};
         let i = n + t.length,
-            a = e.substring(i);
+            l = e.substring(i);
         try {
-            let e = JSON.parse(a);
+            let e = JSON.parse(l);
             return {
                 clipId: e.id,
                 remoteTriggerClipId: e.remoteTriggerClipId
@@ -40,9 +40,9 @@ function f(e) {
         } catch (e) {
             return {}
         }
-    }(N.content) : {}, [N]), h = (0, r.bG)([c.A], () => c.A.getMatchingGroupClip(g, C)), p = (0, r.bG)([c.A], () => null != h && null != f && c.A.wasClipSharedInChannel(h.id, f)), {
+    }(N.content) : {}, [N]), h = (0, r.bG)([c.A], () => c.A.getMatchingGroupClip(C, g)), p = (0, r.bG)([c.A], () => null != h && null != f && c.A.wasClipSharedInChannel(h.id, f)), {
         onShareClick: x
-    } = (0, u.A)(f), R = a.useCallback(() => {
+    } = (0, u.A)(f), R = l.useCallback(() => {
         null != h && null != f && t.messageReference?.message_id != null && x({
             clips: [h],
             messageReference: {
@@ -51,8 +51,8 @@ function f(e) {
             }
         })
     }, [h, f, t.messageReference, x]);
-    if (null == N || null == g && null == C || null == h || p) return null;
-    let S = N.attachments.find(e => (0, l.Lt)(e.flags ?? 0, E.sbO.IS_CLIP)),
+    if (null == N || null == C && null == g || null == h || p) return null;
+    let S = N.attachments.find(e => (0, a.Lt)(e.flags ?? 0, E.sbO.IS_CLIP)),
         O = null;
     if (S?.proxy_url != null) {
         let e = m.A.toURLSafe(S.proxy_url);

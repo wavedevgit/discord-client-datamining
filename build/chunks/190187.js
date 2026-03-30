@@ -3,8 +3,8 @@ n.d(t, {
     i: () => _
 });
 var i = n(64700),
-    a = n(311907),
-    l = n(531260),
+    l = n(311907),
+    a = n(531260),
     r = n(287809),
     s = n(474090),
     o = n(526292),
@@ -13,10 +13,10 @@ var i = n(64700),
     u = n(788868);
 let _ = function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
-        t = (0, a.bG)([r.default], () => r.default.getCurrentUser()),
+        t = (0, l.bG)([r.default], () => r.default.getCurrentUser()),
         n = (0, o.k5)(),
         _ = (0, c.QQ)(),
-        m = (0, l.A)(),
+        m = (0, a.A)(),
         A = t?.verified === !0 && (0, s.YE)(t, u.PremiumTypes.TIER_2) && m.fetched && m.fractionalState !== u.xc.FP_ONLY && !n && !_;
     i.useEffect(() => {
         A && !e && d.A.checkAndFetchReferralsRemaining()

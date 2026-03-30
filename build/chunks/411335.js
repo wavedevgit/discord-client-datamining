@@ -1,26 +1,26 @@
 /** chunk id: 411335 params = (module,exports,require) **/
 n.d(t, {
     $5: () => E,
-    AH: () => a.A,
+    AH: () => l.A,
     Ku: () => m,
     M3: () => f,
-    Mc: () => l.M,
+    Mc: () => a.M,
     NX: () => I,
     Nu: () => N,
-    TZ: () => g,
+    TZ: () => C,
     UW: () => c,
     Us: () => T,
     bV: () => o,
     hG: () => d,
     kS: () => _,
-    oN: () => C,
+    oN: () => g,
     qm: () => u,
     uh: () => r.u,
     vY: () => s,
     zs: () => A
 });
-var i, a = n(185348),
-    l = n(269820),
+var i, l = n(185348),
+    a = n(269820),
     r = n(866232),
     s = ((i = {})[i.PROFANITY = 1] = "PROFANITY", i[i.SEXUAL_CONTENT = 2] = "SEXUAL_CONTENT", i[i.SLURS = 3] = "SLURS", i);
 r.u.USER_PROFILE, r.u.SERVER_POLICY, r.u.MENTION_SPAM, r.u.ML_SPAM, r.u.DEFAULT_KEYWORD_LIST, r.u.KEYWORD;
@@ -36,5 +36,5 @@ let o = 1e3,
     T = 1,
     f = 50,
     N = 20,
-    g = 300,
-    C = "automod-profile-quarantine-alert"
+    C = 300,
+    g = "automod-profile-quarantine-alert"

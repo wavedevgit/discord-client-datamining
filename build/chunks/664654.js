@@ -4,22 +4,22 @@ n.d(t, {
     Z: () => o
 });
 var i = n(64700),
-    a = n(311907),
-    l = n(803306),
+    l = n(311907),
+    a = n(803306),
     r = n(287809),
     s = n(851746);
 let o = 3;
 
 function c() {
-    let e = (0, a.yK)([s.A], () => s.A.getSentUserIds()),
-        t = (0, a.yK)([r.default], () => e.map(e => r.default.getUser(e)).filter(e => null != e));
+    let e = (0, l.yK)([s.A], () => s.A.getSentUserIds()),
+        t = (0, l.yK)([r.default], () => e.map(e => r.default.getUser(e)).filter(e => null != e));
     return i.useEffect(() => {
         e.forEach(e => {
-            (0, l.wz)(e)
+            (0, a.wz)(e)
         })
     }, [e]), {
         referralSentUsers: t,
         hasSentAllReferrals: e.length === o,
-        refreshAt: (0, a.bG)([s.A], () => s.A.getRefreshAt())
+        refreshAt: (0, l.bG)([s.A], () => s.A.getRefreshAt())
     }
 }

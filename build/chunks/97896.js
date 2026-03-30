@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(785823),
-    l = n(508983),
+var l = n(785823),
+    a = n(508983),
     r = n(660176);
 
 function s(e) {
@@ -13,10 +13,10 @@ function s(e) {
         message: t,
         ...n
     } = e;
-    return (0, a.de)(t) ? (0, i.jsx)(r.A, {
+    return (0, l.de)(t) ? (0, i.jsx)(r.A, {
         message: t,
         ...n
-    }) : (0, i.jsx)(l.A, {
+    }) : (0, i.jsx)(a.A, {
         message: t,
         ...n
     })

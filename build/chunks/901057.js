@@ -1,11 +1,11 @@
 /** chunk id: 901057 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => C
 });
 var i = n(627968);
 n(64700);
-var a = n(311907),
-    l = n(990078),
+var l = n(311907),
+    a = n(990078),
     r = n(397927),
     s = n(367513),
     o = n(956793),
@@ -21,36 +21,36 @@ var a = n(311907),
     f = n(449054),
     N = n(652215);
 
-function g(e) {
+function C(e) {
     let {
         channel: t,
         onClick: n,
-        beforeTransition: g,
-        className: C,
+        beforeTransition: C,
+        className: g,
         openChatWithoutConnecting: h
-    } = e, p = (0, a.bG)([I.default, E.A], () => null == t ? "" : (0, c.m1)(t, I.default, E.A), [t]);
-    return (0, i.jsx)(l.m, {
+    } = e, p = (0, l.bG)([I.default, E.A], () => null == t ? "" : (0, c.m1)(t, I.default, E.A), [t]);
+    return (0, i.jsx)(a.m, {
         "data-pending-richtooltip-migration": !0,
         __unsupportedReactNodeAsText: p,
         position: "top",
         children: (0, i.jsx)(d.A, {
             role: "link",
-            className: C,
+            className: g,
             onClick: e => {
-                e.stopPropagation(), null != n ? n() : (null != g && g(), (0, r.s7G)(), function(e, t) {
+                e.stopPropagation(), null != n ? n() : (null != C && C(), (0, r.s7G)(), function(e, t) {
                     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
                     if (null == e || null == t) return;
                     let i = A.A.getGuild(e);
                     if (i?.joinedAt == null) return f.Z2(e, {}, {
                         channelId: t
                     });
-                    let a = m.A.getChannel(t);
-                    if (null != a && (0, _.ay)(a.type)) {
+                    let l = m.A.getChannel(t);
+                    if (null != l && (0, _.ay)(l.type)) {
                         if (n) {
-                            s.A.updateChatOpen(a.id, !0), (0, u.pX)(N.BVt.CHANNEL(e, t));
+                            s.A.updateChatOpen(l.id, !0), (0, u.pX)(N.BVt.CHANNEL(e, t));
                             return
                         }
-                        o.default.selectVoiceChannel(a.id);
+                        o.default.selectVoiceChannel(l.id);
                         return
                     }(0, u.pX)(N.BVt.CHANNEL(e, t))
                 }(t?.guild_id, t?.id, h))

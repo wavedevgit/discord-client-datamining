@@ -29,10 +29,10 @@ function c(t) {
             src: n.animatedImageUrl ?? n.staticImageUrl ?? "",
             aspectRatio: "16/9"
         },
-        A = u.intl.formatToPlainString(d.default.lFuOFF, {
+        v = u.intl.formatToPlainString(d.default.lFuOFF, {
             perkName: n.title
         }),
-        v = f ? [{
+        x = f ? [{
             text: u.intl.string(d.default.g5Ds69),
             variant: "primary",
             size: "md",
@@ -49,11 +49,11 @@ function c(t) {
         }];
     return (0, r.jsx)(a.kpP, {
         graphic: m,
-        title: A,
-        actions: v,
+        title: v,
+        actions: x,
         onClose: c,
         ...p,
-        children: (0, r.jsx)(a.Text, {
+        children: f && (0, r.jsx)(a.Text, {
             variant: "text-md/normal",
             children: u.intl.formatToPlainString(d.default.y3wHot, {
                 perkName: n.title

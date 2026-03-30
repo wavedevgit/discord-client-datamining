@@ -2,8 +2,8 @@
 n.d(t, {
     Ay: () => H
 });
-var i, a = n(627968),
-    l = n(64700),
+var i, l = n(627968),
+    a = n(64700),
     r = n(503698),
     s = n.n(r),
     o = n(106778),
@@ -18,8 +18,8 @@ var i, a = n(627968),
     T = n(567771),
     f = n(780964),
     N = n(840065),
-    g = n(473145),
-    C = n(763754),
+    C = n(473145),
+    g = n(763754),
     h = n(888675),
     p = n(921066),
     x = n(652215),
@@ -132,7 +132,7 @@ function F(e) {
         onClick: n,
         position: i,
         size: r
-    } = e, d = l.useRef(null), [u, A] = l.useState(null), [E] = l.useState(i ?? function() {
+    } = e, d = a.useRef(null), [u, A] = a.useState(null), [E] = a.useState(i ?? function() {
         switch (Math.floor(Math.random() * Object.keys(M).length)) {
             case 0:
                 return "TOP_LEFT";
@@ -146,7 +146,7 @@ function F(e) {
     }()), {
         createMultipleConfettiAt: I,
         confettiCanvas: T
-    } = l.useContext(m.x), [f, N] = l.useState(null), g = (0, o.f9)(T, f), C = function(e, t) {
+    } = a.useContext(m.x), [f, N] = a.useState(null), C = (0, o.f9)(T, f), g = function(e, t) {
         if (null == e) return "enter";
         switch (e) {
             case "enter":
@@ -161,14 +161,14 @@ function F(e) {
             case "exit":
                 return "enter"
         }
-    }(u, E), h = D.includes(E), p = h && "exit" === u, x = l.useCallback(e => {
+    }(u, E), h = D.includes(E), p = h && "exit" === u, x = a.useCallback(e => {
         A(e)
-    }, []), R = l.useCallback(() => {
+    }, []), R = a.useCallback(() => {
         "exit" === u && t?.()
-    }, [t, u]), U = l.useCallback(e => {
+    }, [t, u]), U = a.useCallback(e => {
         d.current = e
     }, []);
-    return l.useEffect(() => {
+    return a.useEffect(() => {
         if ("confetti" === u) {
             let {
                 confettiVelocityDirection: e
@@ -179,10 +179,10 @@ function F(e) {
                     x: 0,
                     y: 0
                 };
-                let a = v[t].getConfettiPosition(n);
+                let l = v[t].getConfettiPosition(n);
                 return {
-                    x: i.left + a.x,
-                    y: i.top + a.y
+                    x: i.left + l.x,
+                    y: i.top + l.y
                 }
             }(d.current, E, r);
             I(t.x, t.y, {
@@ -199,10 +199,10 @@ function F(e) {
                 }
             })
         }
-    }, [I, E, u, r]), l.useEffect(() => {
+    }, [I, E, u, r]), a.useEffect(() => {
         if (h && "leaf_fall" === u) {
             let e = v[E].leafRotationDirection;
-            g.createConfetti({
+            C.createConfetti({
                 id: `${L}-${(0,c.A)()}`,
                 position: {
                     type: "static",
@@ -250,14 +250,14 @@ function F(e) {
                 sprite: "TOP_LEFT" === E ? y : b
             })
         }
-    }, [h, g, E, u]), (0, a.jsxs)(a.Fragment, {
-        children: [(0, a.jsx)(o.K_, {
+    }, [h, C, E, u]), (0, l.jsxs)(l.Fragment, {
+        children: [(0, l.jsx)(o.K_, {
             ref: N,
             sprites: k,
             colors: j,
             spriteWidth: 45,
             spriteHeight: 45
-        }), (0, a.jsx)(_.DUT, {
+        }), (0, l.jsx)(_.DUT, {
             onClick: n,
             className: s()(S.FT, {
                 [S.FZ]: "TOP_LEFT" === E,
@@ -265,12 +265,12 @@ function F(e) {
                 [S.Re]: "BOTTOM_LEFT" === E,
                 [S._t]: "BOTTOM_RIGHT" === E
             }),
-            children: (0, a.jsx)(_.tvC, {
+            children: (0, l.jsx)(_.tvC, {
                 animationRef: U,
                 className: s()(S.oQ, {
                     [S.EG]: p
                 }),
-                nextScene: C,
+                nextScene: g,
                 sceneSegments: O,
                 onScenePlay: x,
                 onSceneComplete: R,
@@ -304,13 +304,13 @@ function B(e) {
         {
             createMultipleConfettiAt: u,
             addClickListener: A
-        } = l.useContext(m.x),
-        [p, O] = l.useState(!1),
-        M = l.useRef(null),
+        } = a.useContext(m.x),
+        [p, O] = a.useState(!1),
+        M = a.useRef(null),
         {
             reducedMotion: D
-        } = l.useContext(_.CZY),
-        P = (0, C.Ay)(n),
+        } = a.useContext(_.CZY),
+        P = (0, g.Ay)(n),
         U = P.nick,
         v = s(P);
     t = null == c || null == r ? d > 1 ? R.intl.format(R.t.yfC9ds, {
@@ -325,14 +325,14 @@ function B(e) {
         usernameHook: v,
         numSubscriptions: d,
         guildName: r.name,
-        newTierName: (0, g.gb)(c)
+        newTierName: (0, C.gb)(c)
     }) : R.intl.format(R.t.cUfTTE, {
         username: U,
         usernameHook: v,
         guildName: r.name,
-        newTierName: (0, g.gb)(c)
+        newTierName: (0, C.gb)(c)
     });
-    let j = l.useCallback(() => {
+    let j = a.useCallback(() => {
             if (!D.enabled)
                 if (p || 0 !== Math.floor(50 * Math.random())) {
                     let e = M.current?.getBoundingClientRect();
@@ -340,43 +340,43 @@ function B(e) {
                     u(e.left + e.width / 2, e.top + e.height / 2)
                 } else O(!0)
         }, [u, D, p]),
-        y = l.useCallback(() => {
+        y = a.useCallback(() => {
             O(!1)
         }, []),
-        b = l.useCallback(() => {
+        b = a.useCallback(() => {
             (0, I.O9)({
                 settingsVisible: !0
             }), (0, N.openUserSettings)(f.X.POGGERMODE_PANEL), O(!1)
         }, []),
-        k = l.useCallback((e, t) => {
+        k = a.useCallback((e, t) => {
             t?.id.startsWith(L) && b()
         }, [b]);
-    l.useEffect(() => A(k));
-    let G = l.useCallback(e => {
+    a.useEffect(() => A(k));
+    let G = a.useCallback(e => {
             e.target === e.currentTarget && o(e)
         }, [o]),
-        B = (0, a.jsx)(_.DUT, {
+        B = (0, l.jsx)(_.DUT, {
             className: S.P0,
             innerRef: M,
             onClick: o,
-            children: (0, a.jsx)(_._Jp, {
+            children: (0, l.jsx)(_._Jp, {
                 color: _.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
                 className: S.Kk,
                 onMouseEnter: j
             })
         });
-    return (0, a.jsxs)(h.A, {
+    return (0, l.jsxs)(h.A, {
         iconNode: B,
         timestamp: n.timestamp,
         compact: i,
-        children: [(0, a.jsx)("div", {
+        children: [(0, l.jsx)("div", {
             onClick: G,
             className: S.iU,
             children: t
-        }), p ? (0, a.jsx)(E.Ay, {
-            children: (0, a.jsx)("div", {
+        }), p ? (0, l.jsx)(E.Ay, {
+            children: (0, l.jsx)("div", {
                 className: S.LK,
-                children: (0, a.jsx)(F, {
+                children: (0, l.jsx)(F, {
                     onAnimationComplete: y,
                     onClick: b
                 })
@@ -391,17 +391,17 @@ function H(e) {
         guild: n,
         usernameHook: i
     } = e, {
-        enabled: l,
+        enabled: a,
         compact: r
     } = A.X.useConfig({
         location: "UserPremiumGuildSubscription"
     });
-    return l ? (0, a.jsx)(p.A, {
+    return a ? (0, l.jsx)(p.A, {
         message: t,
         guild: n,
         usernameHook: i,
         compact: r
-    }) : (0, a.jsx)(B, {
+    }) : (0, l.jsx)(B, {
         ...e
     })
 }

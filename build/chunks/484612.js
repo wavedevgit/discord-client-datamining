@@ -59,7 +59,7 @@ function M(e) {
         $ = null == l && null != z,
         X = [];
     K && $ && X.push(a.M.VANITY_URL_POWERUP_ROLLBACK_MODAL);
-    let [H, Y] = (0, c.kn)(X), Q = (0, b.MO)(t, M), q = Q.flatMap(e => e.listings).filter(e => "multiPerk" === e.type).map(e => e.group), Z = (0, N.g)(q, t);
+    let [Y, H] = (0, c.kn)(X), Q = (0, b.MO)(t, M), q = Q.flatMap(e => e.listings).filter(e => "multiPerk" === e.type).map(e => e.group), Z = (0, N.g)(q, t);
     return (i.useEffect(() => {
         if (null != l && !J.current)
             for (let e of Q)
@@ -91,12 +91,12 @@ function M(e) {
                     }
                 }
     }, [t, l, Q, Z]), i.useEffect(() => {
-        if (null != H && null != z) {
+        if (null != Y && null != z) {
             let e = {
                 onCloseCallback: () => {
-                    Y(G.i.USER_DISMISS)
+                    H(G.i.USER_DISMISS)
                 },
-                modalKey: `dismissible_content_${H}`
+                modalKey: `dismissible_content_${Y}`
             };
             (0, d.mMO)(async () => {
                 let {
@@ -104,12 +104,12 @@ function M(e) {
                 } = await n.e("86618").then(n.bind(n, 442241));
                 return t => (0, r.jsx)(e, {
                     modalConfig: z,
-                    markAsDismissed: Y,
+                    markAsDismissed: H,
                     ...t
                 })
             }, e)
         }
-    }, [t, H, Y, z]), W?.powerupCatalog == null) ? null : (0, r.jsxs)("div", {
+    }, [t, Y, H, z]), W?.powerupCatalog == null) ? null : (0, r.jsxs)("div", {
         className: U.kL,
         children: [(0, r.jsxs)(p.A, {
             className: U.KE,

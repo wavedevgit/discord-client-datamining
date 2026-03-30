@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(763754),
-    l = n(888675),
+var l = n(763754),
+    a = n(888675),
     r = n(985018);
 
 function s(e) {
@@ -17,10 +17,10 @@ function s(e) {
             compact: u,
             channel: _
         } = e,
-        m = (0, a.Ay)(s),
+        m = (0, l.Ay)(s),
         A = m.nick,
         E = o(m),
-        I = (0, a.d8)(c, _);
+        I = (0, l.d8)(c, _);
     if (null != I && null != d) {
         let e = d(I);
         t = r.intl.format(r.t.L2FyVq, {
@@ -33,7 +33,7 @@ function s(e) {
         username: A,
         usernameHook: E
     });
-    return (0, i.jsx)(l.A, {
+    return (0, i.jsx)(a.A, {
         icon: n(884797),
         timestamp: s.timestamp,
         compact: u,

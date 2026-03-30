@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(763754),
-    l = n(888675),
+var l = n(763754),
+    a = n(888675),
     r = n(502197),
     s = n(985018);
 
@@ -17,8 +17,8 @@ function o(e) {
         joinable: d,
         usernameHook: u,
         onClickJoinCall: _
-    } = e, m = (0, a.Ay)(t), A = m.nick, E = u(m), I = (0, r.K)(t);
-    return c ? (0, i.jsx)(l.A, {
+    } = e, m = (0, l.Ay)(t), A = m.nick, E = u(m), I = (0, r.K)(t);
+    return c ? (0, i.jsx)(a.A, {
         icon: n(130158),
         timestamp: t.timestamp,
         compact: o,
@@ -30,7 +30,7 @@ function o(e) {
             username: A,
             usernameHook: E
         })
-    }) : (0, i.jsxs)(l.A, {
+    }) : (0, i.jsxs)(a.A, {
         icon: n(175476),
         timestamp: t.timestamp,
         compact: o,
@@ -41,7 +41,7 @@ function o(e) {
         }) : s.intl.format(s.t.LuB5RD, {
             username: A,
             usernameHook: E
-        }), d ? (0, i.jsx)(l.A.Action, {
+        }), d ? (0, i.jsx)(a.A.Action, {
             onClick: _,
             children: s.intl.string(s.t.oa9mvZ)
         }) : null]

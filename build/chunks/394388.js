@@ -3,8 +3,8 @@ n.d(t, {
     A: () => M
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(311907),
+    l = n(64700),
+    a = n(311907),
     r = n(554146),
     s = n(397927),
     o = n(155718),
@@ -19,8 +19,8 @@ var i = n(627968),
     T = n(888675),
     f = n(652215),
     N = n(49999),
-    g = n(985018),
-    C = n(333354),
+    C = n(985018),
+    g = n(333354),
     h = n(884967),
     p = n(274993),
     x = n(218924);
@@ -29,9 +29,9 @@ function R(e) {
     let {
         title: t,
         body: n,
-        guild: a,
+        guild: l,
         analyticsLocations: r
-    } = e, o = (0, l.bG)([c.A], () => c.A.useReducedMotion);
+    } = e, o = (0, a.bG)([c.A], () => c.A.useReducedMotion);
     return (0, i.jsxs)("div", {
         className: h.kL,
         children: [(0, i.jsx)("div", {
@@ -58,7 +58,7 @@ function R(e) {
             })]
         }), (0, i.jsx)("div", {
             children: (0, i.jsx)(m.A, {
-                guild: a,
+                guild: l,
                 analyticsLocations: r,
                 analyticsLocation: {
                     page: f.liQ.GUILD_CHANNEL,
@@ -73,7 +73,7 @@ function S(e) {
     let {
         guild: t
     } = e;
-    a.useEffect(() => {
+    l.useEffect(() => {
         (0, u.uh)(r.M.FIRST_BOOSTER_UPSELL_OVERSEER, {
             dismissAction: N.i.AUTO_DISMISS,
             guildId: t.id
@@ -81,8 +81,8 @@ function S(e) {
     }, [t.id]);
     let n = (0, A.A)(t.id);
     return (0, i.jsx)(R, {
-        title: g.intl.string(C.default.qGDEON),
-        body: g.intl.format(C.default["s+HTdX"], {
+        title: C.intl.string(g.default.qGDEON),
+        body: C.intl.format(g.default["s+HTdX"], {
             viewAllPerks: e => (0, i.jsx)(s.DUT, {
                 tag: "a",
                 role: "link",
@@ -117,7 +117,7 @@ function M(e) {
     let {
         boostingPrompt: t,
         channel: n
-    } = e, a = n.guild_id, r = (0, l.bG)([I.A], () => I.A.getGuild(a), [a]);
+    } = e, l = n.guild_id, r = (0, a.bG)([I.A], () => I.A.getGuild(l), [l]);
     return null == r ? null : (0, i.jsx)(T.A, {
         contentClassName: h.FG,
         iconContainerClassName: h.zc,

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(397927),
-    l = n(793574),
+var l = n(397927),
+    a = n(793574),
     r = n(73028),
     s = n(763754),
     o = n(888675),
@@ -18,7 +18,7 @@ function d(e) {
         compact: d
     } = e, u = (0, s.Ay)(t), _ = n(u);
     return (0, i.jsx)(o.A, {
-        iconNode: (0, i.jsx)(a.R2l, {
+        iconNode: (0, i.jsx)(l.R2l, {
             size: "xs",
             color: "currentColor"
         }),
@@ -27,13 +27,13 @@ function d(e) {
         children: c.intl.format(c.t["4wLp25"], {
             username: u.nick,
             usernameHook: _,
-            editGroupButton: (0, i.jsx)(a.Text, {
+            editGroupButton: (0, i.jsx)(l.Text, {
                 tag: "span",
                 variant: "text-md/medium",
                 color: "text-link",
                 children: c.intl.string(c.t["5Q9+/L"])
             }, `edit-group-button-${t.id}`),
-            onEditGroup: () => (0, r.U)(t.channel_id, l.A.GROUP_DM_SYSTEM_MESSAGE_ICON)
+            onEditGroup: () => (0, r.U)(t.channel_id, a.A.GROUP_DM_SYSTEM_MESSAGE_ICON)
         })
     })
 }

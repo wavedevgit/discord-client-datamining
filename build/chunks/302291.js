@@ -4,8 +4,8 @@ n.d(t, {
     d: () => E
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(397927),
+    l = n(64700),
+    a = n(397927),
     r = n(763754),
     s = n(447215),
     o = n(888675),
@@ -15,17 +15,17 @@ var i = n(627968),
     _ = n(652215);
 
 function m(e, t) {
-    let n = a.useRef(null);
-    return a.useCallback(a => (r, s) => {
+    let n = l.useRef(null);
+    return l.useCallback(l => (r, s) => {
         let o = d.Ay.getApplicationIconURL({
-                id: a.id,
-                icon: a.icon,
-                bot: a.bot,
+                id: l.id,
+                icon: l.icon,
+                bot: l.bot,
                 botIconFirst: !0
             }),
             {
                 bot: u
-            } = a;
+            } = l;
         return null == u ? r : (0, i.jsx)(c.A, {
             targetElementRef: n,
             userId: u.id,
@@ -34,7 +34,7 @@ function m(e, t) {
             channelId: e.id,
             messageId: t.id,
             clickTrap: !0,
-            children: e => (0, i.jsx)(l.MzZ, {
+            children: e => (0, i.jsx)(a.MzZ, {
                 ...e,
                 ref: n,
                 children: r
@@ -46,18 +46,18 @@ function m(e, t) {
 function A(e) {
     let {
         message: t,
-        channel: a,
-        compact: l
+        channel: l,
+        compact: a
     } = e, c = (0, r.Ay)(t), d = t.application, A = (0, s.P)({
         user: t.author,
-        channelId: a.id,
-        guildId: a.guild_id,
+        channelId: l.id,
+        guildId: l.guild_id,
         messageId: t.id
-    }), E = m(a, t);
+    }), E = m(l, t);
     return (0, i.jsx)(o.A, {
         icon: n(617184),
         timestamp: t.timestamp,
-        compact: l,
+        compact: a,
         children: (0, u.eu)({
             application: d,
             username: c.nick,
@@ -70,18 +70,18 @@ function A(e) {
 function E(e) {
     let {
         message: t,
-        channel: a,
-        compact: l
+        channel: l,
+        compact: a
     } = e, c = (0, r.Ay)(t), d = t.application, A = (0, s.P)({
         user: t.author,
-        channelId: a.id,
-        guildId: a.guild_id,
+        channelId: l.id,
+        guildId: l.guild_id,
         messageId: t.id
-    }), E = m(a, t);
+    }), E = m(l, t);
     return (0, i.jsx)(o.A, {
         icon: n(884797),
         timestamp: t.timestamp,
-        compact: l,
+        compact: a,
         children: (0, u.A0)({
             application: d,
             username: c.nick,

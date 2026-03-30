@@ -1,10 +1,10 @@
 /** chunk id: 147351 params = (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => g
 });
 var i = n(627968),
-    a = n(64700),
-    l = n(311907),
+    l = n(64700),
+    a = n(311907),
     r = n(732955),
     s = n(843472),
     o = n(355622),
@@ -24,28 +24,28 @@ function N(e) {
         assets: t,
         currentUser: n,
         message: i
-    } = e, a = (E.default.extractTimestamp(n.id) + E.default.extractTimestamp(i.id)) % t.length;
-    return t[a]
+    } = e, l = (E.default.extractTimestamp(n.id) + E.default.extractTimestamp(i.id)) % t.length;
+    return t[l]
 }
 
-function g(e) {
+function C(e) {
     let {
         currentUser: t,
         channel: n,
-        message: l,
+        message: a,
         buttonLabels: d,
         stickers: u,
         event: _,
         eventProperties: m
-    } = e, E = a.useMemo(() => N({
+    } = e, E = l.useMemo(() => N({
         assets: u,
         currentUser: t,
-        message: l
-    }), [u, t, l]), T = a.useMemo(() => N({
+        message: a
+    }), [u, t, a]), T = l.useMemo(() => N({
         assets: d,
         currentUser: t,
-        message: l
-    }), [d, t, l]), f = a.useCallback(async () => {
+        message: a
+    }), [d, t, a]), f = l.useCallback(async () => {
         let {
             valid: e
         } = await (0, I.i)({
@@ -67,7 +67,7 @@ function g(e) {
             }))
         }({
             channel: n,
-            message: l,
+            message: a,
             sticker: E
         }), function(e) {
             let {
@@ -84,7 +84,7 @@ function g(e) {
             event: _,
             eventProperties: m
         }))
-    }, [n, l, E, _, m]);
+    }, [n, a, E, _, m]);
     return (0, i.jsx)(r.$nd, {
         icon: {
             type: "sticker",
@@ -97,11 +97,11 @@ function g(e) {
     })
 }
 
-function C(e) {
+function g(e) {
     let {
         channel: t,
         message: n,
-        buttonLabels: a,
+        buttonLabels: l,
         stickers: r,
         event: s,
         eventProperties: o
@@ -111,14 +111,14 @@ function C(e) {
             message: n,
             currentUser: i
         } = e;
-        return (0, l.bG)([_.A, u.Ay], () => {
+        return (0, a.bG)([_.A, u.Ay], () => {
             let e = t.guild_id;
             if (null == i || null == e) return !1;
-            let a = (0, d.UJ)(t),
-                l = _.A.can(T.xBc.SEND_MESSAGES, t),
+            let l = (0, d.UJ)(t),
+                a = _.A.can(T.xBc.SEND_MESSAGES, t),
                 r = u.Ay.getMember(e, i.id)?.isPending,
                 s = n.author.bot;
-            return l && !a && !r && !s
+            return a && !l && !r && !s
         })
     }({
         channel: t,
@@ -127,11 +127,11 @@ function C(e) {
     });
     return null != c && A ? (0, i.jsx)("div", {
         className: f.S,
-        children: (0, i.jsx)(g, {
+        children: (0, i.jsx)(C, {
             currentUser: c,
             channel: t,
             message: n,
-            buttonLabels: a,
+            buttonLabels: l,
             stickers: r,
             event: s,
             eventProperties: o

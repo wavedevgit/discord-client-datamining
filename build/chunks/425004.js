@@ -22,14 +22,15 @@ function _(t) {
         ..._
     } = t;
     if ("control" === (0, i.D)("GuildPowerupActivateModalExperimentWrapper")) {
-        let t = u.HO.has(n.skuId);
+        let t = u.HO.has(n.skuId),
+            i = t ? p.intl.formatToPlainString(c.default.y3wHot, {
+                perkName: n.title
+            }) : void 0;
         return (0, r.jsx)(l.A, {
             title: p.intl.formatToPlainString(c.default.lFuOFF, {
                 perkName: n.title
             }),
-            description: p.intl.formatToPlainString(c.default.y3wHot, {
-                perkName: n.title
-            }),
+            description: i,
             image: (0, r.jsx)(o.l, {
                 className: f.Sl,
                 powerup: n

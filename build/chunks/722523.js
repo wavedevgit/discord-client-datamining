@@ -1,6 +1,6 @@
 /** chunk id: 722523 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => v,
+    Ay: () => h,
     GU: () => A
 });
 var r = n(627968);
@@ -24,21 +24,41 @@ function A(e) {
         guildId: n,
         powerup: i,
         onClick: o
-    } = e, a = (0, u.A)(n, i), d = (0, c.A)(n, i), A = p.HO.has(i.skuId);
+    } = e, a = (0, u.A)(n, i);
     return (0, r.jsx)("div", {
         className: l()(f.FS, t),
         children: (0, r.jsx)(s.$nd, {
             variant: "primary",
             fullWidth: !0,
-            text: A ? m.intl.string(_.default.g5Ds69) : m.intl.string(m.t["0Q61kF"]),
+            text: m.intl.string(_.default.g5Ds69),
             onClick: e => {
-                o?.(e), A ? a?.(e) : d?.()
+                o?.(e), a?.(e)
             }
         })
     })
 }
 
 function g(e) {
+    let {
+        className: t,
+        guildId: n,
+        powerup: i,
+        onClick: o
+    } = e, a = (0, c.A)(n, i);
+    return (0, r.jsx)("div", {
+        className: l()(f.FS, t),
+        children: (0, r.jsx)(s.$nd, {
+            variant: "primary",
+            fullWidth: !0,
+            text: m.intl.string(m.t["0Q61kF"]),
+            onClick: e => {
+                o?.(e), a?.()
+            }
+        })
+    })
+}
+
+function x(e) {
     let {
         className: t,
         guildId: n,
@@ -58,7 +78,7 @@ function g(e) {
     })
 }
 
-function x(e) {
+function v(e) {
     let {
         className: t,
         guildId: n,
@@ -67,31 +87,35 @@ function x(e) {
         onError: a
     } = e, {
         showToggleButton: u,
-        isPowerupActive: c
-    } = (0, o.A)(n, i), p = !c;
+        isPowerupActive: c,
+        showConfigureButton: p
+    } = (0, o.A)(n, i), _ = !c;
     return (0, r.jsxs)("div", {
         className: l()(f.kL, t),
         children: [u && (0, r.jsx)(d.A, {
             guildId: n,
             powerup: i,
             onError: a,
-            grow: p,
-            compact: !p,
+            grow: _,
+            compact: !_,
             expressiveCta: s
-        }), c && (0, r.jsx)(A, {
+        }), p ? (0, r.jsx)(A, {
             guildId: n,
             powerup: i
-        })]
+        }) : c ? (0, r.jsx)(g, {
+            guildId: n,
+            powerup: i
+        }) : null]
     })
 }
 
-function v(e) {
+function h(e) {
     let {
         ...t
     } = e;
-    return (0, a.A)(t.guildId) ? (0, r.jsx)(x, {
+    return (0, a.A)(t.guildId) ? (0, r.jsx)(v, {
         ...t
-    }) : (0, r.jsx)(g, {
+    }) : (0, r.jsx)(x, {
         ...t
     })
 }

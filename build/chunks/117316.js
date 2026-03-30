@@ -66,7 +66,7 @@ function A(e, t) {
         let A = a.A.getMatchingGroupClip(h, m);
         return null == A || a.A.wasClipSharedInChannel(A.id, t.id) ? null : (n = t.id, i = (0, d.Ay)({
             channelId: n,
-            type: 67,
+            type: 68,
             content: "",
             author: e.author,
             state: u.cmJ.SENT
