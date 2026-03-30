@@ -3,13 +3,13 @@ i.r(t), i.d(t, {
     default: () => o
 });
 var r = i(627968),
-    s = i(64700),
-    n = i(816288),
+    n = i(64700),
+    s = i(816288),
     a = i(914841);
 
 function o() {
-    let [e, t] = s.useState(1);
-    return s.useEffect(() => {
+    let [e, t] = n.useState(1);
+    return n.useEffect(() => {
         let e = setTimeout(() => {
             t(15)
         }, 500);
@@ -18,7 +18,7 @@ function o() {
         className: a.KD,
         children: (0, r.jsx)("div", {
             className: a.oU,
-            children: (0, r.jsx)(n.n, {
+            children: (0, r.jsx)(s.n, {
                 className: a.hr,
                 appliedBoostCount: e,
                 maxBoostCount: 20,

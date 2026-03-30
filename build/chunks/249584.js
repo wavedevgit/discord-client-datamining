@@ -560,6 +560,7 @@ function en(e) {
     } = e;
     return (0, i.jsx)(u.AM, {
         ...c,
+        gradientColor: "pink",
         graphic: {
             type: "dynamic",
             component: d.DynamicGraphicComponent.GUILD_POWERUPS_COACHMARK_ASSET,

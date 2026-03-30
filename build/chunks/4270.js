@@ -9,12 +9,12 @@ var i = n(627968),
     s = n(837381),
     o = n(731738),
     d = n(397927),
-    c = n(55400),
-    u = n(964486),
-    A = n(260762),
-    h = n(485947),
-    _ = n(831062),
-    m = n(954571),
+    c = n(964486),
+    u = n(260762),
+    A = n(485947),
+    h = n(831062),
+    _ = n(954571),
+    m = n(15978),
     g = n(336590),
     p = n(471271),
     E = n(957283),
@@ -32,8 +32,8 @@ function y() {
         t = (0, I.A)(),
         n = (0, f.I)(),
         l = (0, g.r)(),
-        y = (0, c.w)(),
-        b = (0, A.A)("message-requests-spam-list"),
+        y = (0, m.w)(),
+        b = (0, u.A)("message-requests-spam-list"),
         {
             channelId: O
         } = (0, E.N)(),
@@ -48,10 +48,10 @@ function y() {
         P = a.useCallback(() => {
             R(t.map(e => e.channel.id))
         }, [t, R]);
-    (0, u.Ay)(() => {
-        m.default.track(S.HAw.SPAM_MESSAGE_REQUESTS_VIEWED, {
+    (0, c.Ay)(() => {
+        _.default.track(S.HAw.SPAM_MESSAGE_REQUESTS_VIEWED, {
             num_spam_message_requests: n
-        }), _.A.increment({
+        }), h.A.increment({
             name: o.K.SPAM_MESSAGE_REQUEST_VIEW
         })
     });
@@ -70,7 +70,7 @@ function y() {
                 hasSingleMessageRequest: l
             }, o)
         }, [t, l, O]),
-        M = a.useCallback(() => (0, i.jsxs)(h.A, {
+        M = a.useCallback(() => (0, i.jsxs)(A.A, {
             className: v.Gf,
             children: [x.intl.format(x.t.C79Edh, {
                 count: n

@@ -81,7 +81,7 @@ let ee = s.memo(function(e) {
             keybind: t,
             onClick: n,
             locked: s
-        } = e, l = (0, N.X4)(g.A.OVERLAY);
+        } = e;
         return (0, i.jsx)(d.DUT, {
             className: r()(B.LK, {
                 [B.Zo]: !s,
@@ -98,10 +98,10 @@ let ee = s.memo(function(e) {
             onContextMenu: $,
             children: s ? null : (0, i.jsxs)(D.A, {
                 className: B.BE,
-                children: [l ? (0, i.jsx)(R.A, {
+                children: [(0, i.jsx)(R.A, {
                     onClick: () => (0, H.b)(g.A.OVERLAY, K.BRT.OVERLAY),
                     IconComponent: d.iFK
-                }) : null, (0, i.jsx)(R.A, {
+                }), (0, i.jsx)(R.A, {
                     keybind: t,
                     onClick: n,
                     IconComponent: d.d$L

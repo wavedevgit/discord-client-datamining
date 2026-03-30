@@ -9,7 +9,7 @@ var s = n(554146),
     a = n(932001),
     r = n(49999),
     o = n(985018),
-    d = n(584386);
+    d = n(201682);
 let c = e => {
     let {
         targetElementRef: t
@@ -20,9 +20,9 @@ let c = e => {
         body: o.intl.string(o.t.IqPvOn),
         graphic: {
             type: "image",
-            src: d
+            src: d.A
         },
-        size: "md",
+        size: "video",
         alignmentStrategy: "edge",
         align: "right",
         position: "bottom",
@@ -30,7 +30,7 @@ let c = e => {
             align: "end"
         },
         actions: [{
-            text: o.intl.string(o.t.lCOD8e),
+            text: o.intl.string(o.t.moIhI0),
             onClick: () => c(r.i.TAKE_ACTION)
         }],
         onRequestClose: () => c(r.i.USER_DISMISS)

@@ -48,6 +48,7 @@ function f(e) {
                 caretConfig: {
                     align: "start"
                 },
+                gradientColor: "pink",
                 graphic: {
                     type: "dynamic",
                     component: l.DynamicGraphicComponent.GUILD_POWERUPS_PROGRESS_BAR_COACHMARK_GRAPHIC,
@@ -75,6 +76,7 @@ function f(e) {
                 caretConfig: {
                     align: "start"
                 },
+                gradientColor: "pink",
                 graphic: {
                     type: "dynamic",
                     component: l.DynamicGraphicComponent.GUILD_POWERUPS_PROGRESS_BAR_COACHMARK_GRAPHIC,
