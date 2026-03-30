@@ -3,8 +3,8 @@ n.d(t, {
     A: () => _
 });
 var i = n(64700),
-    a = n(284009),
-    r = n.n(a),
+    r = n(284009),
+    a = n.n(r),
     l = n(417597),
     s = n(397927),
     o = n(871109),
@@ -16,17 +16,17 @@ function _(e) {
     let {
         guildId: t,
         productId: n
-    } = e, a = (0, l.bG)([o.A], () => o.A.getGuildProduct(n)), {
+    } = e, r = (0, l.bG)([o.A], () => o.A.getGuildProduct(n)), {
         isLoading: _,
         downloadAttachment: m
     } = (0, d.A)(t, n), h = i.useCallback(() => {
-        let e = a?.attachments?.[0]?.id;
-        r()(null != e, "No attachment"), m(e)
-    }, [m, a?.attachments]), p = i.useCallback(() => c.A.open({
+        let e = r?.attachments?.[0]?.id;
+        a()(null != e, "No attachment"), m(e)
+    }, [m, r?.attachments]), p = i.useCallback(() => c.A.open({
         guildId: t,
         productId: n
     }), [t, n]);
-    return (a?.attachments?.length ?? 0) > 1 ? {
+    return (r?.attachments?.length ?? 0) > 1 ? {
         variant: "primary",
         text: u.intl.string(u.t.UyuiUE),
         icon: s.KS6,

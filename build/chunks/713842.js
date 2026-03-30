@@ -25,9 +25,9 @@ var i = n(627968),
 function C(e) {
     let {
         channelId: t
-    } = e, C = (0, l.bG)([_.A], () => _.A.getChannel(t)), I = (0, l.bG)([_.A], () => _.A.getChannel(C?.parent_id)), N = (0, l.bG)([p.A], () => p.A.getGuild(C?.getGuildId())), b = (0, o.Ay)(C), S = s.useRef(!1);
+    } = e, C = (0, l.bG)([_.A], () => _.A.getChannel(t)), I = (0, l.bG)([_.A], () => _.A.getChannel(C?.parent_id)), N = (0, l.bG)([p.A], () => p.A.getGuild(C?.getGuildId())), S = (0, o.Ay)(C), b = s.useRef(!1);
     if (s.useEffect(() => {
-            null == C || S.current || (S.current = !0, (0, f.rH)(C))
+            null == C || b.current || (b.current = !0, (0, f.rH)(C))
         }, [C]), null == C || null == N) return null;
     let T = (0, i.jsx)(m.A, {
         channel: C
@@ -42,7 +42,7 @@ function C(e) {
             children: (0, h.zF)({
                 channel: C,
                 parentChannel: I,
-                channelName: b,
+                channelName: S,
                 guild: N,
                 inSidebar: !0,
                 handleContextMenu: function(e) {

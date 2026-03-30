@@ -63,8 +63,8 @@ function x(e) {
         analyticsLocation: C,
         guildScheduledEvent: I,
         shouldPrioritizeGroupPlusIcon: N = !1,
-        isRichPresenceInvite: b = !1,
-        iconClassName: S,
+        isRichPresenceInvite: S = !1,
+        iconClassName: b,
         look: T,
         size: v,
         buttonText: y,
@@ -73,13 +73,13 @@ function x(e) {
     } = e, O = (0, u.Us)(), {
         parentAnalyticsLocation: L
     } = (0, c.Ay)(), M = s?.getGuildId(), D = (0, a.bG)([h.A], () => null != M ? h.A.getGuild(M) : null, [M]), G = (0, a.bG)([A.A], () => null != t ? A.A.getApplicationActivity(t) : void 0), U = null == t || N ? r.DpX : r.dCJ, P = p.intl.string(p.t["6F9ivu"]);
-    return (null != t && (P = p.intl.string(p.t["OzOM/q"])), null != n && (P = p.intl.string(p.t["6VQaqd"])), null != G && b) ? (0, i.jsx)(_.A, {
+    return (null != t && (P = p.intl.string(p.t["OzOM/q"])), null != n && (P = p.intl.string(p.t["6VQaqd"])), null != G && S) ? (0, i.jsx)(_.A, {
         onClick: () => {
             null != L && (0, d.X)(L, d.O.INVITE), o.qf(G, !1, O)
         },
         iconComponent: U,
         label: P,
-        iconClassName: S,
+        iconClassName: b,
         look: T,
         size: v,
         buttonText: y,
@@ -100,7 +100,7 @@ function x(e) {
         },
         iconComponent: U,
         label: P,
-        iconClassName: S,
+        iconClassName: b,
         look: T,
         size: v,
         color: j,

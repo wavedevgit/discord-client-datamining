@@ -25,8 +25,8 @@ var s = n(503698),
     C = n(734057),
     I = n(71393),
     N = n(290863),
-    b = n(222823),
-    S = n(287809),
+    S = n(222823),
+    b = n(287809),
     T = n(147925),
     v = n(652215),
     y = n(985018),
@@ -123,7 +123,7 @@ function D(e) {
     let {
         channel: t,
         gotoChannel: n
-    } = e, s = (0, r.bG)([S.default], () => t.isDM() ? S.default.getUser(t.getRecipientId()) : null), l = null == s ? (0, _.Y)(t) : s.getAvatarURL(void 0, 40);
+    } = e, s = (0, r.bG)([b.default], () => t.isDM() ? b.default.getUser(t.getRecipientId()) : null), l = null == s ? (0, _.Y)(t) : s.getAvatarURL(void 0, 40);
     return (0, i.jsx)(d.DUT, {
         onClick: n,
         tabIndex: -1,
@@ -157,7 +157,7 @@ function U(e) {
         channel: t,
         gotoChannel: n,
         mentionCount: s
-    } = e, a = (0, r.bG)([I.A], () => I.A.getGuild(t.guild_id)), c = (0, r.bG)([C.A], () => C.A.getChannel(t.parent_id)), u = (0, r.bG)([b.Ay], () => b.Ay.getIsMentionLowImportance(t.id)), h = (0, p.gU)(t, a), A = (0, g.Ay)(t, !1), m = null == c ? a?.name : `${a?.name} › ${c.name}`, _ = t.isMultiUserDM() ? y.intl.formatToPlainString(y.t.CxSA5N, {
+    } = e, a = (0, r.bG)([I.A], () => I.A.getGuild(t.guild_id)), c = (0, r.bG)([C.A], () => C.A.getChannel(t.parent_id)), u = (0, r.bG)([S.Ay], () => S.Ay.getIsMentionLowImportance(t.id)), h = (0, p.gU)(t, a), A = (0, g.Ay)(t, !1), m = null == c ? a?.name : `${a?.name} › ${c.name}`, _ = t.isMultiUserDM() ? y.intl.formatToPlainString(y.t.CxSA5N, {
         members: t.recipients.length + 1
     }) : t.isPrivate() ? (0, i.jsx)(P, {
         channel: t
@@ -208,8 +208,8 @@ function P(e) {
         status: s,
         activities: l,
         applicationStream: a
-    } = (0, r.cf)([S.default, N.A, E.A], () => {
-        let e = S.default.getUser(t.getRecipientId());
+    } = (0, r.cf)([b.default, N.A, E.A], () => {
+        let e = b.default.getUser(t.getRecipientId());
         return {
             user: e,
             status: null != e ? N.A.getStatus(e.id) : null,

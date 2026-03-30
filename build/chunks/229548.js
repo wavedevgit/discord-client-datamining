@@ -22,7 +22,7 @@ function r(e, t) {
 }
 
 function o(e) {
-    return (0, s.kn)(e ? [i.M.GAME_SERVER_HOSTING_BATCH_RELEASE_V2_COACHMARK] : [])
+    return (0, s.kn)(e ? [i.M.GAME_SERVER_HOSTING_BATCH_RELEASE_V3_COACHMARK] : [])
 }
 
 function c(e) {

@@ -82,7 +82,7 @@ class y extends i.PureComponent {
             canAccessMembersPage: A,
             canViewGuildAnalytics: S
         } = this.props;
-        t !== n && w(t, n), (l || i || s || r || c || u || o || A || E || _) && (o || t !== L.BEX.AUDIT_LOG) && (s || t !== L.BEX.ROLES) && (u || t !== L.BEX.EMOJI) && (u || t !== L.BEX.STICKERS) && (u || t !== L.BEX.SOUNDBOARD) && (r || t !== L.BEX.BANS) && (S || t !== L.BEX.ANALYTICS) && (A || t !== L.BEX.MEMBERS) || (0, a.jH)()
+        t !== n && w(t, n), (l || i || s || r || c || u || o || A || E || _ || S) && (o || t !== L.BEX.AUDIT_LOG) && (s || t !== L.BEX.ROLES) && (u || t !== L.BEX.EMOJI) && (u || t !== L.BEX.STICKERS) && (u || t !== L.BEX.SOUNDBOARD) && (r || t !== L.BEX.BANS) && (A || t !== L.BEX.MEMBERS) || (0, a.jH)()
     }
     render() {
         let {

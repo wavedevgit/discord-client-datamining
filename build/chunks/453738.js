@@ -146,7 +146,7 @@ let E = ["high", "medium", "low"],
                 getFormatter: o.i
             }),
             N = t.summary_map?.entries.find(e => "TOPIC_EXTRACTION_SUMMARY" === e.summary_type),
-            b = null != N ? (0, _.i)(N.content_json) : null;
+            S = null != N ? (0, _.i)(N.content_json) : null;
         return (0, i.jsxs)(a.DUT, {
             innerRef: m,
             className: `${p.Nm}${l?` ${p.Sk}`:""}`,
@@ -160,23 +160,23 @@ let E = ["high", "medium", "low"],
                 className: p.PY,
                 children: (0, i.jsx)(a.Text, {
                     variant: "text-md/medium",
-                    color: null != b ? "text-default" : "text-muted",
+                    color: null != S ? "text-default" : "text-muted",
                     className: p.So,
-                    children: b?.title ?? "Summary not available"
+                    children: S?.title ?? "Summary not available"
                 })
             }), (0, i.jsxs)(a.Text, {
                 variant: "text-xs/normal",
                 color: "text-muted",
                 className: p.FR,
                 children: [x, " ago \xb7 ", I, " duration \xb7 ", t.message_count, " messages \xb7 ", t.user_count, " users"]
-            }), b?.brief_summary != null && (0, i.jsx)(a.Text, {
+            }), S?.brief_summary != null && (0, i.jsx)(a.Text, {
                 variant: "text-xs/normal",
                 color: "text-default",
                 className: p.g5,
-                children: b.brief_summary
-            }), null != b && b.key_points.length > 0 && (0, i.jsx)("ul", {
+                children: S.brief_summary
+            }), null != S && S.key_points.length > 0 && (0, i.jsx)("ul", {
                 className: p.JP,
-                children: b.key_points.map((e, t) => (0, i.jsx)("li", {
+                children: S.key_points.map((e, t) => (0, i.jsx)("li", {
                     children: (0, i.jsx)(a.Text, {
                         variant: "text-xs/normal",
                         color: "text-default",
@@ -246,9 +246,9 @@ function N(e) {
         channel: t
     } = e, n = (0, l.bG)([m.A], () => m.A.getChannelConversations(t.id), [t.id], f), o = (0, l.bG)([m.A], () => m.A.getVisibleConversationIds(t.id), [t.id], x), c = (0, l.bG)([m.A], () => m.A.hasMoreConversations(t.id, "before"), [t.id]), u = (0, l.bG)([m.A], () => m.A.hasMoreConversations(t.id, "after"), [t.id]), _ = (0, l.bG)([m.A], () => m.A.isPendingFetch(t.id), [t.id]), E = (0, l.bG)([h.A], () => h.A.isHighlightingEnabled(), []), C = (0, l.bG)([m.A], () => m.A.getScrollToConversation(t.id), [t.id]), N = s.useCallback(e => {
         (0, A.UA)(t.id, e)
-    }, [t.id]), b = s.useCallback(() => {
+    }, [t.id]), S = s.useCallback(() => {
         (0, A.UA)(null, null)
-    }, []), S = s.useCallback(e => {
+    }, []), b = s.useCallback(e => {
         (0, A.xI)(e.channel_id, e.id), (0, d.pX)(g.BVt.CHANNEL(e.guild_id, e.channel_id, e.start_message_id))
     }, []);
     return (0, i.jsxs)("aside", {
@@ -297,9 +297,9 @@ function N(e) {
                     color: n,
                     isInViewport: o.has(t.id),
                     scrollTarget: C?.conversationId === t.id ? C.seq : null,
-                    onJump: S,
+                    onJump: b,
                     onHoverStart: N,
-                    onHoverEnd: b
+                    onHoverEnd: S
                 }, t.id)
             }) : (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",

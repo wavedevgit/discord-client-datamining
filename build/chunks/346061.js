@@ -32,8 +32,8 @@ function A(e) {
         cornerIconUrl: C,
         cornerIconOffsetX: I,
         cornerIconOffsetY: N,
-        ariaLabel: b
-    } = e, S = {
+        ariaLabel: S
+    } = e, b = {
         width: (0, o.FT9)(n),
         height: (0, o.FT9)(n)
     }, T = (0, s.useId)(), v = E.size * d.Xq, y = null != x && (0, i.jsxs)("svg", {
@@ -98,24 +98,24 @@ function A(e) {
     });
     return null != l || null != r ? (0, i.jsxs)(o.DUT, {
         className: a()(h.iE, h.Wn, g),
-        style: S,
+        style: b,
         onClick: l,
         onContextMenu: A,
         onMouseDown: r,
         onKeyDown: u,
         onMouseEnter: m ?? void 0,
         onMouseLeave: _ ?? void 0,
-        "aria-label": b ?? void 0,
+        "aria-label": S ?? void 0,
         "aria-hidden": f,
         children: [t, y]
     }) : (0, i.jsxs)("div", {
         className: a()(h.iE, g),
-        style: S,
+        style: b,
         onContextMenu: A ?? void 0,
         onMouseEnter: m ?? void 0,
         onMouseLeave: _ ?? void 0,
         role: "img",
-        "aria-label": b ?? void 0,
+        "aria-label": S ?? void 0,
         "aria-hidden": f,
         children: [t, y]
     })

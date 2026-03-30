@@ -9,8 +9,8 @@ n.d(t, {
     YE: () => R
 }), n(938796);
 var i = n(627968),
-    a = n(64700),
-    r = n(665260),
+    r = n(64700),
+    a = n(665260),
     l = n(311907),
     s = n(571356),
     o = n(990078),
@@ -45,7 +45,7 @@ function T(e) {
         placeholderVersion: t.placeholder_version,
         contentType: t.content_type,
         originalContentType: t.original_content_type,
-        srcIsAnimated: (0, r.Lt)(t.flags ?? 0, E.sbO.IS_ANIMATED),
+        srcIsAnimated: (0, a.Lt)(t.flags ?? 0, E.sbO.IS_ANIMATED),
         sourceMetadata: {
             message: e.message,
             identifier: {
@@ -67,9 +67,9 @@ function y(e) {
         } = c.Q.useConfig({
             location: "VideoComponentForMessageAttachment"
         }),
-        _ = (0, r.Lt)(t.flags ?? 0, E.sbO.IS_CLIP),
+        _ = (0, a.Lt)(t.flags ?? 0, E.sbO.IS_CLIP),
         h = (0, l.bG)([A.A], () => A.A.getBasicChannel(e.message.channel_id)?.guild_id),
-        g = a.useCallback(() => _ ? n ? (0, i.jsx)(u.A, {
+        g = r.useCallback(() => _ ? n ? (0, i.jsx)(u.A, {
             createdAt: null != t.clip_created_at ? Date.parse(t.clip_created_at) : void 0,
             participantIds: t.clip_participants?.map(e => {
                 let {
@@ -99,18 +99,18 @@ function y(e) {
     if (x.searchParams.append("format", "webp"), _ && n) {
         let {
             width: n,
-            height: a,
-            naturalWidth: r,
+            height: r,
+            naturalWidth: a,
             naturalHeight: l
         } = e, s = (0, m.AE)({
             src: x.toString(),
             width: n,
-            height: a
+            height: r
         });
         return (0, i.jsx)("div", {
             style: {
                 width: "100%",
-                aspectRatio: `${n} / ${a}`
+                aspectRatio: `${n} / ${r}`
             },
             children: (0, i.jsx)(p.A, {
                 src: t.url,
@@ -120,7 +120,7 @@ function y(e) {
                 posterPlaceholder: t.placeholder,
                 posterPlaceholderVersion: t.placeholder_version,
                 active: !1,
-                orientation: r >= l ? "landscape" : "portrait",
+                orientation: a >= l ? "landscape" : "portrait",
                 renderOverlay: g,
                 targetTimeSec: 1 / 0,
                 parentTransitionState: null,
@@ -138,7 +138,7 @@ function y(e) {
         src: t.url,
         placeholder: t.placeholder,
         placeholderVersion: t.placeholder_version,
-        srcIsAnimated: (0, r.Lt)(t.flags ?? 0, E.sbO.IS_ANIMATED),
+        srcIsAnimated: (0, a.Lt)(t.flags ?? 0, E.sbO.IS_ANIMATED),
         renderOverlayContent: g,
         sourceMetadata: {
             message: e.message,
@@ -166,11 +166,11 @@ function N(e) {
     let {
         message: t,
         item: n
-    } = e, i = n.originalItem, r = (0, h.dx)(h.k0.VOICE_MESSAGE, i.id), l = a.useCallback((e, n, a) => {
+    } = e, i = n.originalItem, a = (0, h.dx)(h.k0.VOICE_MESSAGE, i.id), l = r.useCallback((e, n, r) => {
         (0, g.wQ)(t.id, i.duration_secs ?? null, n, t.author.id)
-    }, [t, i.duration_secs]), s = a.useCallback((e, n) => {
+    }, [t, i.duration_secs]), s = r.useCallback((e, n) => {
         (0, g.dP)(t.id, i.duration_secs ?? null, e, t.author.id, n)
-    }, [t, i.duration_secs]), o = a.useCallback(e => {
+    }, [t, i.duration_secs]), o = r.useCallback(e => {
         (0, g._O)(t.id, e?.message ?? null)
     }, [t]);
     return (0, I.P$)({
@@ -183,7 +183,7 @@ function N(e) {
         onPlay: l,
         onPause: s,
         onError: o,
-        playbackCacheKey: r
+        playbackCacheKey: a
     })
 }
 
@@ -224,7 +224,7 @@ function P(e) {
     let {
         attachment: t,
         message: n
-    } = e, a = n.channel_id, r = (0, l.bG)([A.A], () => A.A.getBasicChannel(a)?.guild_id), {
+    } = e, r = n.channel_id, a = (0, l.bG)([A.A], () => A.A.getBasicChannel(r)?.guild_id), {
         clip_created_at: s,
         clip_participants: o,
         title: d,
@@ -240,6 +240,6 @@ function P(e) {
         }) ?? [],
         applicationId: c?.id,
         title: d,
-        guildId: r
+        guildId: a
     })
 }

@@ -3,9 +3,9 @@ n.d(t, {
     A: () => A
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    r = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(382222),
     o = n(435371),
     d = n(397927),
@@ -25,7 +25,7 @@ function A(e) {
     let {
         className: t,
         guildId: n,
-        channelId: r,
+        channelId: a,
         members: c,
         ref: h,
         motion: A
@@ -35,7 +35,7 @@ function A(e) {
         scale: 1,
         config: g
     }));
-    return a.useEffect(() => {
+    return r.useEffect(() => {
         S({
             x: b,
             y: v,
@@ -52,7 +52,7 @@ function A(e) {
         children: [C.map((e, t) => (0, i.jsx)("div", {
             className: p.my,
             children: (0, i.jsx)(o.m_, {
-                text: m.Ay.getName(n, r, e),
+                text: m.Ay.getName(n, a, e),
                 children: (0, i.jsx)(d.euF, {
                     src: function(e, t, n) {
                         let i = u.Ay.getMember(t, e.id);
@@ -68,7 +68,7 @@ function A(e) {
             })
         }, e.id)), f && (0, i.jsx)(x, {
             guildId: n,
-            channelId: r,
+            channelId: a,
             members: c,
             count: I
         }, "overflow")]
@@ -79,16 +79,16 @@ function x(e) {
     let {
         guildId: t,
         channelId: n,
-        members: r,
+        members: a,
         count: s
-    } = e, o = a.useRef(null), {
+    } = e, o = r.useRef(null), {
         isHoveringOrFocusing: u
     } = (0, c.A)(o);
     return (0, i.jsx)(h.$, {
         targetElementRef: o,
         guildId: t,
         channelId: n,
-        users: r,
+        users: a,
         shouldShow: u,
         children: e => (0, i.jsx)("div", {
             className: l()(p.my, p.k2),

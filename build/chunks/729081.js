@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(310209),
     I = n(961350),
     N = n(290863),
-    b = n(954571),
-    S = n(403362),
+    S = n(954571),
+    b = n(403362),
     T = n(871123),
     v = n(832163),
     y = n(453774),
@@ -79,7 +79,7 @@ function V(e) {
         }, [K, H, F], k),
         z = (0, u.bG)([I.default], () => I.default.getId()),
         q = s.useMemo(() => {
-            let e = K.map(e => (0, D.Xw)(e) || (0, D.Ay)(e) ? e.user.id : null).filter(S.Vq);
+            let e = K.map(e => (0, D.Xw)(e) || (0, D.Ay)(e) ? e.user.id : null).filter(b.Vq);
             return (0, r.uniq)([...W, ...e])
         }, [K, W]),
         X = (0, y.U)(Y),
@@ -93,7 +93,7 @@ function V(e) {
             userIds: q
         }),
         Z = "loading" === Q || 0 === J.length,
-        ee = s.useMemo(() => J.map(e => E.A.fromSKU(e)).filter(S.Vq), [J]),
+        ee = s.useMemo(() => J.map(e => E.A.fromSKU(e)).filter(b.Vq), [J]),
         et = (0, c.A)(Z ? w : ee, B),
         en = s.useMemo(() => {
             let e = new Set(q),
@@ -133,7 +133,7 @@ function V(e) {
             })
         }, [z, q, J, et, $, V, X, h.guild_id, h.id]);
     return s.useEffect(() => {
-        0 !== J.length && b.default.track(M.HAw.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
+        0 !== J.length && S.default.track(M.HAw.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
             guild_id: h.guild_id,
             channel_id: h.id,
             sku_ids: J.map(e => e.id)

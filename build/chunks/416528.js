@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(977851),
     I = n(772475),
     N = n(481947),
-    b = n(485296),
-    S = n(313961),
+    S = n(485296),
+    b = n(313961),
     T = n(195007),
     v = n(806931),
     y = n(985018),
@@ -35,9 +35,9 @@ function R(e) {
     let {
         channelId: t,
         guildId: n
-    } = e, s = (0, r.yK)([b.A, S.A], () => {
+    } = e, s = (0, r.yK)([S.A, b.A], () => {
         let e = Date.now();
-        return a()(b.A.getSpeakers()).map(e => S.A.getParticipant(t, e)).filter(e => null != e && e.type === v.lp.USER && e.speaking && !(0, p.Ay)(e)).sortBy(t => -b.A.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
+        return a()(S.A.getSpeakers()).map(e => b.A.getParticipant(t, e)).filter(e => null != e && e.type === v.lp.USER && e.speaking && !(0, p.Ay)(e)).sortBy(t => -S.A.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
     });
     return 0 === s.length ? null : (0, i.jsx)("div", {
         className: j.$U,
@@ -65,11 +65,11 @@ function O(e) {
     } = (0, u.Ay)(d.A.VOICE_CHANNEL_HEADER), o = t.id, {
         voiceParticipantsHidden: p,
         selectedParticipant: N,
-        userParticipantCount: b
-    } = (0, r.cf)([S.A], () => ({
-        selectedParticipant: S.A.getSelectedParticipant(o),
-        voiceParticipantsHidden: S.A.getVoiceParticipantsHidden(o),
-        userParticipantCount: S.A.getUserParticipantCount(o)
+        userParticipantCount: S
+    } = (0, r.cf)([b.A], () => ({
+        selectedParticipant: b.A.getSelectedParticipant(o),
+        voiceParticipantsHidden: b.A.getVoiceParticipantsHidden(o),
+        userParticipantCount: b.A.getUserParticipantCount(o)
     }), [o]), y = t.isGuildVoiceOrThread() && !n, {
         enabled: O,
         inInbox: L
@@ -110,7 +110,7 @@ function O(e) {
                 ...e,
                 buttonRef: l,
                 isActive: n,
-                count: b,
+                count: S,
                 key: "call-members",
                 className: j.x6
             })

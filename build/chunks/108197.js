@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(775946),
     I = n(588224),
     N = n(37411),
-    b = n(985018),
-    S = n(928409),
+    S = n(985018),
+    b = n(928409),
     T = n(567431),
     v = n(570302);
 
@@ -128,18 +128,18 @@ let j = s.memo(function(e) {
     }, [t.id]), V = null == O ? 0 : O.length, {
         role: B,
         ...H
-    } = (0, r.rm)(t.id), F = s.useRef(null), K = D > 0 ? b.intl.formatToPlainString(b.t["ZL7+I6"], {
+    } = (0, r.rm)(t.id), F = s.useRef(null), K = D > 0 ? S.intl.formatToPlainString(S.t["ZL7+I6"], {
         channelName: t.name,
         mentionCount: D
-    }) : M ? b.intl.formatToPlainString(b.t.YlVvmc, {
+    }) : M ? S.intl.formatToPlainString(S.t.YlVvmc, {
         channelName: t.name
-    }) : b.intl.formatToPlainString(b.t["0nZpiF"], {
+    }) : S.intl.formatToPlainString(S.t["0nZpiF"], {
         channelName: t.name
     });
     return (0, i.jsxs)("li", {
         role: B,
-        className: a()(S.fx, {
-            [S.wH]: l
+        className: a()(b.fx, {
+            [b.wH]: l
         }),
         children: [(0, i.jsx)(y, {
             withGuildIcon: R
@@ -158,7 +158,7 @@ let j = s.memo(function(e) {
                 right: 4
             },
             children: (0, i.jsxs)("div", {
-                className: a()(S.Ki, T.iE, T.ZS, {
+                className: a()(b.Ki, T.iE, T.ZS, {
                     [T.J1]: l,
                     [T.F4]: !l && U,
                     [T.V2]: !U && !l && M,

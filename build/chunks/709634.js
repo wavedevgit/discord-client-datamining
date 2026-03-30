@@ -3,9 +3,9 @@ n.d(t, {
     A: () => I
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    r = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(989349),
     o = n.n(s),
     d = n(397927),
@@ -24,11 +24,11 @@ let I = e => {
     let {
         reportingUserId: t,
         guildId: n,
-        compact: r,
+        compact: a,
         channel: s,
         messageId: I,
         reportedTimestamp: E
-    } = e, b = h.default.getUser(t), v = a.useMemo(() => r ? (0, _.A)((0, p.i$)(o()(), "LT")) : null, [r]), T = (0, m.P)({
+    } = e, b = h.default.getUser(t), v = r.useMemo(() => a ? (0, _.A)((0, p.i$)(o()(), "LT")) : null, [a]), T = (0, m.P)({
         user: b,
         channelId: s.id,
         guildId: n,

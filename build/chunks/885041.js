@@ -147,7 +147,8 @@ let ta = (0, g.z)(e => {
                 search: t.search
             });
             (0, eF.trackParseSettingsUrl)(n, "deeplink"), (0, eY.openUserSettings)(n.target, {
-                path: n.path
+                path: n.path,
+                searchParams: n.params
             })
         }), (0, i.jsx)(m.A, {
             deepLinkType: tn.XK.USER_SETTINGS,

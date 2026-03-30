@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(941971),
     I = n(375855),
     N = n(900848),
-    b = n(65611),
-    S = n(652215),
+    S = n(65611),
+    b = n(652215),
     T = n(985018),
     v = n(355593);
 let y = {
@@ -127,13 +127,13 @@ class R extends s.PureComponent {
     getChannelIcon() {
         let {
             channel: e
-        } = this.props, t = e.type === S.rbe.DM ? f.default.getUser(e.getRecipientId()) : null;
+        } = this.props, t = e.type === b.rbe.DM ? f.default.getUser(e.getRecipientId()) : null;
         return null != t ? t.getAvatarURL(void 0, 48, !1) : (0, u.Y)(e)
     }
     handleContextMenu = e => {
         let {
             channel: t
-        } = this.props, s = t.type === S.rbe.DM ? f.default.getUser(t.getRecipientId()) : null;
+        } = this.props, s = t.type === b.rbe.DM ? f.default.getUser(t.getRecipientId()) : null;
         null != s ? (0, c.L3)(e, async () => {
             let {
                 default: e
@@ -170,7 +170,7 @@ class R extends s.PureComponent {
             hovered: m,
             animating: _
         } = this.state, g = e.isMultiUserDM() && null == e.icon, p = () => (0, i.jsx)(o.jlP, {
-            to: S.BVt.CHANNEL(S.ME, e.id),
+            to: b.BVt.CHANNEL(b.ME, e.id),
             onMouseEnter: () => this.setState({
                 hovered: !0
             }),
@@ -206,8 +206,8 @@ class R extends s.PureComponent {
                     children: (0, i.jsx)(o.Qk9, {
                         rounded: !0,
                         selected: !1,
-                        lowerBadge: s > 0 ? (0, b.wN)(s, void 0, !0) : null,
-                        upperBadge: (0, b.oi)({
+                        lowerBadge: s > 0 ? (0, S.wN)(s, void 0, !0) : null,
+                        upperBadge: (0, S.oi)({
                             audio: a,
                             video: r,
                             screenshare: c,
@@ -235,8 +235,8 @@ let O = s.forwardRef(function(e, t) {
         C = (0, r.bG)([g.Ay], () => g.Ay.getMentionCount(n), [n]),
         I = c === n,
         N = !1,
-        b = !1;
-    (I || f) && (N = u === S._Of.VOICE, b = u === S._Of.VIDEO);
+        S = !1;
+    (I || f) && (N = u === b._Of.VOICE, S = u === b._Of.VIDEO);
     let T = (0, o.rdh)(o.LU0.modules.guildbar.AVATAR_SIZE);
     return (0, i.jsx)(R, {
         ...e,
@@ -246,7 +246,7 @@ let O = s.forwardRef(function(e, t) {
         selected: E === n,
         badge: C,
         audio: N,
-        video: b,
+        video: S,
         stream: A,
         isCurrentUserInThisDMCall: I,
         size: T,

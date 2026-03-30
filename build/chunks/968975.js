@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(173678),
     I = n(524380),
     N = n(652215),
-    b = n(49999),
-    S = n(985018),
+    S = n(49999),
+    b = n(985018),
     T = n(141076);
 
 function v(e) {
@@ -147,12 +147,12 @@ function v(e) {
                 children: [(0, i.jsx)(a.Heading, {
                     variant: "text-sm/medium",
                     id: G,
-                    children: R ?? S.intl.string(S.t["7lZ31J"])
+                    children: R ?? b.intl.string(b.t["7lZ31J"])
                 }), M && t.length > D && (0, i.jsx)(a.QWc, {
                     variant: "secondary",
                     textVariant: "text-xs/normal",
                     onClick: v,
-                    text: S.intl.string(S.t.y6PSA3)
+                    text: b.intl.string(b.t.y6PSA3)
                 })]
             }), (0, i.jsxs)(a.Fmo, {
                 children: [(0, i.jsx)("div", {
@@ -161,7 +161,7 @@ function v(e) {
                 }), !Y && B.has(N.EZt.SOCIAL_LAYER_GAME_ITEM) && (0, i.jsx)(u.A, {
                     location: "user_profile_sidebar_wishlist_breadcrumb",
                     className: T.EK,
-                    onDismiss: () => W(b.i.USER_DISMISS)
+                    onDismiss: () => W(S.i.USER_DISMISS)
                 })]
             })]
         })

@@ -25,8 +25,8 @@ var f = n(483270),
     C = n(432371),
     I = n(475743),
     N = n(933958),
-    b = n(156579),
-    S = n(108959),
+    S = n(156579),
+    b = n(108959),
     T = n(480720),
     v = n(323073),
     y = n(793574),
@@ -79,8 +79,8 @@ var f = n(483270),
     eC = n(138298),
     eI = n(940382),
     eN = n(323443),
-    eb = n(566388),
-    eS = n(168675),
+    eS = n(566388),
+    eb = n(168675),
     eT = n(170428),
     ev = n(494208),
     ey = n(933057),
@@ -495,7 +495,7 @@ class tn extends s.PureComponent {
         if (o()(null != e, "Missing channel in Channel.renderCall"), !this.shouldRenderCall()) return null;
         switch (e.type) {
             case e9.rbe.GUILD_STAGE_VOICE:
-                return (0, i.jsx)(eb.A, {
+                return (0, i.jsx)(eS.A, {
                     channel: e,
                     popoutType: O.N.NO_POPOUT
                 }, e.id);
@@ -521,7 +521,7 @@ class tn extends s.PureComponent {
         } = this.props, t = this.shouldRenderCall();
         if (o()(null != e, "Missing channel in Channel.renderEmbeddedActivityPanel"), t) return null;
         let n = this.props.height - 200;
-        return (0, i.jsx)(b.A, {
+        return (0, i.jsx)(S.A, {
             maxHeight: n,
             renderExternalHeader: this.renderHeaderBar
         })
@@ -671,7 +671,7 @@ class tn extends s.PureComponent {
             switch (s.type) {
                 case eI.PE.CREATE_THREAD:
                     if (t?.isForumLikeChannel()) return null;
-                    e = (0, i.jsx)(eS.A, {
+                    e = (0, i.jsx)(eb.A, {
                         parentChannelId: s.parentChannelId,
                         parentMessageId: s.parentMessageId,
                         location: s.location
@@ -780,7 +780,7 @@ let ti = (0, E.A)(tn),
         let {
             providedChannel: t
         } = e, [n, l] = s.useState(null), a = (0, h.bG)([eW.A], () => eW.A.getChannelId()), r = (0, h.bG)([eW.A], () => eW.A.getVoiceChannelId()), o = (0, h.bG)([ek.A], () => t ?? ek.A.getChannel(a), [a, t]), c = (0, B.DZ)(), _ = (0, B.e4)(o, "ConnectedChannel"), p = (0, h.bG)([ek.A], () => ek.A.getChannel(r), [r]), f = _?.parent_id, x = (0, h.bG)([ek.A], () => ek.A.getChannel(f), [f]), E = (0, h.bG)([eH.A], () => eH.A.getGuild(_?.guild_id), [_]), {
-            needSubscriptionToAccess: b
+            needSubscriptionToAccess: S
         } = (0, Q.A)(_?.id ?? void 0), y = (0, h.bG)([R.A], () => {
             let e = null != a ? R.A.getParticipants(a) : [],
                 t = null != a ? R.A.getActivityParticipants(a) : [];
@@ -794,7 +794,7 @@ let ti = (0, E.A)(tn),
         }, [U, _, L, M]);
         let P = (0, h.bG)([N.Ay], () => N.Ay.getCurrentEmbeddedActivity()),
             w = (0, h.bG)([N.Ay], () => N.Ay.getActivityPanelMode()),
-            k = null != P && !(0, S.A)(_?.id) && w === e7.Gd.PANEL,
+            k = null != P && !(0, b.A)(_?.id) && w === e7.Gd.PANEL,
             H = (0, h.bG)([ez.A], () => null != _ && _.isVocalThread() && !d().isEmpty(ez.A.getVoiceStatesForChannel(_.id)), [_]),
             W = null != _ && _.isPrivate() && !k && y,
             Y = _?.isGuildVocal() || W || H,
@@ -859,7 +859,7 @@ let ti = (0, E.A)(tn),
                 dismissAction: e2.i.AUTO
             })
         }, [_?.id, eI, eE, eC]);
-        let eb = (0, m.useHasAnyModalOpen)();
+        let eS = (0, m.useHasAnyModalOpen)();
         return (0, i.jsx)(ti, {
             guildId: _?.guild_id,
             channelId: a,
@@ -869,14 +869,14 @@ let ti = (0, E.A)(tn),
             parentChannel: x,
             voiceChannel: p,
             layout: $,
-            needSubscriptionToAccess: b,
+            needSubscriptionToAccess: S,
             isLurking: X,
-            hasModalOpen: eb,
+            hasModalOpen: eS,
             section: et,
             channelSidebarState: en,
             guildSidebarState: es,
             guild: E,
-            showCall: !b && Y,
+            showCall: !S && Y,
             showActivityPanel: k,
             showFramePanel: z,
             channelIsContentGated: ec,

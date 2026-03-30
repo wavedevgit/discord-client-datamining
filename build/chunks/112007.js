@@ -3,8 +3,8 @@ n.d(t, {
     A: () => T
 }), n(938796);
 var i = n(627968),
-    a = n(64700),
-    r = n(821418),
+    r = n(64700),
+    a = n(821418),
     l = n(665260),
     s = n(311907),
     o = n(990078),
@@ -45,21 +45,21 @@ function T(e) {
         B = null != j,
         G = null != U,
         F = null != U && U.isGuildStageVoice(),
-        H = (0, l.Lt)(L.flags ?? 0, r.Q.IS_GUEST_INVITE),
+        H = (0, l.Lt)(L.flags ?? 0, a.Q.IS_GUEST_INVITE),
         V = U?.isGuildVoiceOrThread() ?? !1,
         q = j?.features.has(E.GuildFeatures.HUB) ?? !1,
         W = j?.id,
         {
             analyticsLocations: z
         } = (0, _.Ay)(u.A.INVITE_EMBED),
-        [Y, Q] = a.useState(!1),
-        K = a.useCallback(() => Q(!1), []),
-        J = a.useRef(null),
+        [Y, Q] = r.useState(!1),
+        K = r.useCallback(() => Q(!1), []),
+        J = r.useRef(null),
         X = (0, s.bG)([x.Ay], () => m.A.canAcceptInvite([x.Ay], L)),
-        Z = a.useCallback(() => {
+        Z = r.useCallback(() => {
             Q(!0), (0, c.Pq)(W, "show profile", z)
         }, [W, z]),
-        $ = a.useCallback(() => {
+        $ = r.useCallback(() => {
             let e = "noop";
             B ? (S(), e = "transition") : (N(), e = "accept"), (0, c.he)({
                 invite: L,

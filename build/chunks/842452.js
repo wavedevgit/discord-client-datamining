@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(107385),
     I = n(900848),
     N = n(550591),
-    b = n(114329),
-    S = n(985018),
+    S = n(114329),
+    b = n(985018),
     T = n(142163),
     v = n(604418);
 let y = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
@@ -84,7 +84,7 @@ let y = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
             ee(e)
         }, []), ea = s.useCallback(e => {
             ("ArrowRight" === e.key && !O || "ArrowLeft" === e.key && O) && B()
-        }, [B, O]), er = null != X && "" !== X ? X : null != U && "" !== U ? U : S.intl.string(S.t.xV9hVh), eo = (0, c.Vd)(`${q}`), ec = `folder-items-${q}`, ed = (t = Q.length, n = (0, h.rdh)(h.LU0.modules.guildbar.FOLDER_SIZE), l = (0, h.rdh)(h.LU0.modules.guildbar.AVATAR_SIZE), t * (l + (o = (0, h.rdh)(h.LU0.space.SPACE_XS))) - o + (o - (n - l) / 2) + (0, h.rdh)(h.LU0.space.SPACE_4)), eu = (0, h.pnh)(!ei && O, {
+        }, [B, O]), er = null != X && "" !== X ? X : null != U && "" !== U ? U : b.intl.string(b.t.xV9hVh), eo = (0, c.Vd)(`${q}`), ec = `folder-items-${q}`, ed = (t = Q.length, n = (0, h.rdh)(h.LU0.modules.guildbar.FOLDER_SIZE), l = (0, h.rdh)(h.LU0.modules.guildbar.AVATAR_SIZE), t * (l + (o = (0, h.rdh)(h.LU0.space.SPACE_XS))) - o + (o - (n - l) / 2) + (0, h.rdh)(h.LU0.space.SPACE_4)), eu = (0, h.pnh)(!ei && O, {
             from: {
                 height: 0
             },
@@ -144,7 +144,7 @@ let y = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                 targetNode: u,
                 onDragOverChanged: el
             }) : null]
-        }), em = null != u.color ? u.color : b.DO, e_ = em === b.DO ? void 0 : (0, d.Hl)(em);
+        }), em = null != u.color ? u.color : S.DO, e_ = em === S.DO ? void 0 : (0, d.Hl)(em);
         return (0, i.jsxs)("div", {
             ref: eh,
             className: a()(T.qc, {

@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(734057),
     I = n(696451),
     N = n(309010),
-    b = n(287809),
-    S = n(203982),
+    S = n(287809),
+    b = n(203982),
     T = n(427262),
     v = n(795816),
     y = n(933958),
@@ -119,7 +119,7 @@ function W(e) {
         eg = (0, P.G)();
     if (null == W) return null;
     let ep = [];
-    null != eu && (ep = Array.from(eu.embeddedActivity.userIds).map(e => b.default.getUser(e)).filter(e => null != e && void 0 !== e));
+    null != eu && (ep = Array.from(eu.embeddedActivity.userIds).map(e => S.default.getUser(e)).filter(e => null != e && void 0 !== e));
     let ef = e => {
         if (null == e || void 0 === e || e === D.mt) return null;
         let t = em.get(e.id),
@@ -215,12 +215,12 @@ function W(e) {
                 maxHeight: t,
                 resizableNode: $,
                 onResize: e => {
-                    S._.dispatch(V.jej.MANUAL_IFRAME_RESIZING, {
+                    b._.dispatch(V.jej.MANUAL_IFRAME_RESIZING, {
                         resizing: !0
                     }), en(e)
                 },
                 onResizeEnd: e => {
-                    S._.dispatch(V.jej.MANUAL_IFRAME_RESIZING, {
+                    b._.dispatch(V.jej.MANUAL_IFRAME_RESIZING, {
                         resizing: !1
                     }), ei(e)
                 }

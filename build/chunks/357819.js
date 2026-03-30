@@ -32,8 +32,8 @@ let E = (0, a.A)(e => {
         } = e,
         {
             selectedParticipantId: N,
-            largeStream: b,
-            chatOpen: S
+            largeStream: S,
+            chatOpen: b
         } = (0, l.cf)([r.A], () => ({
             selectedParticipantId: r.A.getSelectedParticipantId(a.id),
             largeStream: r.A.getStageStreamSize(a.id),
@@ -46,7 +46,7 @@ let E = (0, a.A)(e => {
         R = j.filter(x),
         O = null != j.find(e => e.type === d.wY.STREAM),
         L = Math.floor((E - 32) / 102),
-        M = E < 424 ? 1 : E < 624 ? 2 : E < 824 || S ? 3 : 4,
+        M = E < 424 ? 1 : E < 624 ? 2 : E < 824 || b ? 3 : 4,
         D = {
             [d.ip.SPEAKER]: M,
             [d.ip.AUDIENCE]: L,
@@ -62,7 +62,7 @@ let E = (0, a.A)(e => {
             speakerTileWidth: t,
             speakerTileHeight: n
         }),
-        B = b ? E - 32 : Math.min(E - 64, 3 * k + 8),
+        B = S ? E - 32 : Math.min(E - 64, 3 * k + 8),
         H = e => e === U.length - 1 || 0 === v && 1 === e,
         [F, K] = s.useState(!1),
         [W, Y] = s.useState(!1);

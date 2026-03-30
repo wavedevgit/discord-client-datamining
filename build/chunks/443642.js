@@ -3,8 +3,8 @@ n.d(t, {
     A: () => I
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(990078),
+    r = n(64700),
+    a = n(990078),
     l = n(319060),
     s = n(397927),
     o = n(793574),
@@ -25,7 +25,7 @@ let C = (0, _.xI)(l.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
             renderableSticker: t,
             channel: n,
             isInteracting: l
-        } = e, _ = a.useRef(null), [I, E] = a.useState(!0), [b, v] = a.useState(String(Date.now())), [T] = (0, m.Zq)(t, l), {
+        } = e, _ = r.useRef(null), [I, E] = r.useState(!0), [b, v] = r.useState(String(Date.now())), [T] = (0, m.Zq)(t, l), {
             analyticsLocations: y
         } = (0, c.Ay)(o.A.STICKER_MESSAGE), S = (0, i.jsxs)("span", {
             className: f.Zl,
@@ -57,7 +57,7 @@ let C = (0, _.xI)(l.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
                         let {
                             onClick: n
                         } = e;
-                        return (0, i.jsx)(r.m, {
+                        return (0, i.jsx)(a.m, {
                             ...u.Uk,
                             shouldShow: I,
                             __unsupportedReactNodeAsText: (0, u.yR)(S),

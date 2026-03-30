@@ -25,8 +25,8 @@ var i = n(627968),
     C = n(267102),
     I = n(574172),
     N = n(869146),
-    b = n(976860),
-    S = n(461782),
+    S = n(976860),
+    b = n(461782),
     T = n(20465),
     v = n(156652),
     y = n(128286),
@@ -78,7 +78,7 @@ function es(e) {
         popoutOpen: l,
         popoutWindow: a,
         currentWindow: C
-    }), S = n === $.BRT.POPOUT && U.isPlatformEmbedded && P.Ay.supportsFeature($.BYE.POPOUT_WINDOWS);
+    }), b = n === $.BRT.POPOUT && U.isPlatformEmbedded && P.Ay.supportsFeature($.BYE.POPOUT_WINDOWS);
     return (0, i.jsxs)(i.Fragment, {
         children: [x ? (0, i.jsx)(R.A, {
             context: (0, p.A)(c.type),
@@ -86,7 +86,7 @@ function es(e) {
             currentWindow: C,
             sliderClassName: et.MQ,
             location: d
-        }) : null, S ? (0, i.jsx)(j.A, {
+        }) : null, b ? (0, i.jsx)(j.A, {
             popoutWindowAlwaysOnTop: r,
             onToggleStayOnTop: ei
         }) : null, f ? (0, i.jsx)(y.A, {
@@ -94,7 +94,7 @@ function es(e) {
             onOpenPopout: () => {
                 (0, E.X)(d, E.O.POPOUT, !0), (() => {
                     let e = t.getGuildId();
-                    null != e && null != A && (0, b.uh)(e, A), I.openChannelCallPopout(t)
+                    null != e && null != A && (0, S.uh)(e, A), I.openChannelCallPopout(t)
                 })()
             },
             onClosePopout: () => {
@@ -133,8 +133,8 @@ function ea(e) {
         } = (0, _.Ay)(m.A.VOICE_CONTROL_TRAY),
         I = (0, C.Us)(),
         N = (0, o.bG)([G.A], () => G.A.getVoiceChannelId() === n.id, [n.id]),
-        b = (0, o.bG)([D.A], () => D.A.can($.xBc.CONNECT, n)),
-        S = (0, k.E5)(n.id, V.ip.SPEAKER),
+        S = (0, o.bG)([D.A], () => D.A.can($.xBc.CONNECT, n)),
+        b = (0, k.E5)(n.id, V.ip.SPEAKER),
         y = (0, o.bG)([g.A], () => g.A.getSelectedParticipant(n.id)),
         j = h && I !== $.BRT.POPOUT,
         [R, O] = s.useState(0),
@@ -162,9 +162,9 @@ function ea(e) {
         onScroll: M,
         popoutType: A
     }) : (0, i.jsx)(K.A, {
-        participants: S,
+        participants: b,
         channel: n,
-        hasConnectPermission: b
+        hasConnectPermission: S
     }), (0, i.jsx)(v.A, {
         style: {
             height: `calc(100% - ${B})`,
@@ -222,7 +222,7 @@ function er(e) {
     } = (0, o.cf)([N.A], () => ({
         popoutWindow: N.A.getWindow($.MLl.CHANNEL_CALL_POPOUT),
         popoutWindowAlwaysOnTop: N.A.getIsAlwaysOnTop($.MLl.CHANNEL_CALL_POPOUT)
-    })), b = null != E && !E.closed, {
+    })), S = null != E && !E.closed, {
         analyticsLocations: T
     } = (0, _.Ay)(m.A.STAGE_CHANNEL_CALL), v = (0, C.Us)(), y = (0, o.bG)([g.A], () => g.A.getChatOpen(t.id), [t.id]), j = (0, o.bG)([M.A], () => M.A.getGuild(t.guild_id), [t.guild_id]);
     (0, A.Ay)(() => {
@@ -238,7 +238,7 @@ function er(e) {
     let {
         width: R = 0,
         ref: O
-    } = (0, h.Ay)(), L = !b || v === $.BRT.POPOUT;
+    } = (0, h.Ay)(), L = !S || v === $.BRT.POPOUT;
     return (0, i.jsx)(_.f5, {
         value: T,
         children: (0, i.jsxs)(f.qh, {
@@ -252,7 +252,7 @@ function er(e) {
                             [et.pR]: r,
                             [et.gy]: r || y
                         }),
-                        children: (0, i.jsx)(S.Ay, {
+                        children: (0, i.jsx)(b.Ay, {
                             timeout: 2e3,
                             children: e => (0, i.jsx)(ea, {
                                 channel: t,
@@ -260,7 +260,7 @@ function er(e) {
                                 showRequestToSpeakSidebar: r,
                                 popoutWindow: E,
                                 popoutWindowAlwaysOnTop: I,
-                                popoutOpen: b,
+                                popoutOpen: S,
                                 popoutType: l,
                                 chatOpen: y,
                                 idleProps: e

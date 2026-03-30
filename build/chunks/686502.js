@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(272812),
     I = n(652215),
     N = n(985018),
-    b = n(408851),
-    S = n(867010);
+    S = n(408851),
+    b = n(867010);
 
 function T(e) {
     let {
@@ -72,7 +72,7 @@ function v(e) {
     return (0, i.jsx)(_.f5, {
         value: l,
         children: (0, i.jsxs)(C.A, {
-            className: b.zr,
+            className: S.zr,
             children: [(0, i.jsx)(c.m, {
                 asContainer: !0,
                 text: N.intl.string(N.t.qJvTKQ),
@@ -89,9 +89,9 @@ function v(e) {
                             analyticsLocation: r
                         })
                     },
-                    className: b.F1,
+                    className: S.F1,
                     children: (0, i.jsx)("div", {
-                        className: b.zc,
+                        className: S.zc,
                         children: (0, i.jsx)(d.k9F, {
                             size: "custom",
                             color: "currentColor",
@@ -104,11 +104,11 @@ function v(e) {
                 theme: I.NJ8.DARK,
                 children: e => (0, i.jsx)(d.DUT, {
                     onClick: s,
-                    className: a()(e, b.lg),
+                    className: a()(e, S.lg),
                     children: (0, i.jsx)(d.aXh, {
                         size: "md",
                         color: "currentColor",
-                        className: b.yP,
+                        className: S.yP,
                         secondaryColor: o.A.colors.INTERACTIVE_TEXT_DEFAULT.css
                     })
                 })
@@ -169,10 +169,10 @@ function y(e) {
             disableAdaptiveTheme: !0,
             theme: I.NJ8.MIDNIGHT,
             children: e => (0, i.jsxs)(C.A, {
-                className: a()(b.zr, b.co, e),
+                className: a()(S.zr, S.co, e),
                 children: [(0, i.jsx)("img", {
-                    src: S,
-                    className: b.Qw,
+                    src: b,
+                    className: S.Qw,
                     alt: ""
                 }), (0, i.jsxs)(d.ButtonGroup, {
                     justify: "center",
@@ -212,33 +212,33 @@ function j(e) {
             guildId: n.id
         }).slice(0, 3),
         {
-            analyticsLocations: S
+            analyticsLocations: b
         } = (0, _.Ay)(m.A.VC_TILE_ACTIVITY_SUGGESTION),
         T = s.useMemo(() => ({
             channel: t,
             type: "channel"
         }), [t]);
     return (0, i.jsx)(_.f5, {
-        value: S,
+        value: b,
         children: (0, i.jsxs)(C.A, {
-            className: b.zr,
+            className: S.zr,
             children: [o > 300 ? (0, i.jsx)(d.Text, {
-                className: b.R_,
+                className: S.R_,
                 variant: o > 550 ? "text-md/semibold" : "text-sm/semibold",
                 children: N.intl.string(N.t["7BKMcG"])
             }) : null, (0, i.jsx)("div", {
-                className: a()(b.Di, {
-                    [b.qy]: o <= 300
+                className: a()(S.Di, {
+                    [S.qy]: o <= 300
                 }),
                 children: g.map(e => (0, i.jsx)(A.C, {
                     context: T,
                     activityItem: e,
                     aspectRatio: A.C.AspectRatio.SIXTEEN_BY_NINE,
-                    animatedDivClass: b.KU,
+                    animatedDivClass: S.KU,
                     commandOrigin: p.iw.VOICE_TILE_ACTIVITY_SUGGESTIONS
                 }, e.application.id))
             }), (0, i.jsxs)(d.DUT, {
-                className: b.HI,
+                className: S.HI,
                 onClick: function() {
                     E.default.track(I.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
                         tile_type: "activity suggestion",
@@ -251,7 +251,7 @@ function j(e) {
                     children: N.intl.string(N.t["5E9SB9"])
                 })]
             }), (0, i.jsx)(d.DUT, {
-                className: b.cG,
+                className: S.cG,
                 onClick: function() {
                     E.default.track(I.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
                         tile_type: "activity suggestion",
@@ -262,7 +262,7 @@ function j(e) {
                 children: (0, i.jsx)(d.PGe, {
                     size: "md",
                     color: "currentColor",
-                    className: b.b
+                    className: S.b
                 })
             })]
         })

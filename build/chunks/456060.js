@@ -7,26 +7,26 @@ n.d(t, {
     n$: () => o
 });
 var i = n(287809),
-    a = n(562153),
-    r = n(652215),
+    r = n(562153),
+    a = n(652215),
     l = n(985018),
     s = n(426127);
 
 function o(e, t, n) {
     switch (t) {
-        case r.xL.LISTEN:
+        case a.xL.LISTEN:
             return l.intl.formatToPlainString(l.t["/8czH4"], {
                 name: e
             });
-        case r.xL.WATCH:
+        case a.xL.WATCH:
             return l.intl.formatToPlainString(l.t.BBJXVk, {
                 name: e
             });
-        case r.xL.JOIN:
+        case a.xL.JOIN:
             return n ? void 0 : l.intl.string(l.t.pkq6Vq);
-        case r.xL.STREAM_REQUEST:
+        case a.xL.STREAM_REQUEST:
             return l.intl.string(s.default.DKHhec);
-        case r.xL.JOIN_REQUEST:
+        case a.xL.JOIN_REQUEST:
         default:
             return l.intl.string(l.t.Ckxb6j)
     }
@@ -34,15 +34,15 @@ function o(e, t, n) {
 
 function d(e, t, n) {
     return e.author.id === n ? l.intl.string(s.default["8B3U5O"]) : l.intl.formatToPlainString(s.default["d/qbC0"], {
-        username: (0, a.mG)(t.guild_id, t.id, e.author)
+        username: (0, r.mG)(t.guild_id, t.id, e.author)
     })
 }
 
-function c(e, t, n, a, r) {
-    if (e.author.id === a) {
+function c(e, t, n, r, a) {
+    if (e.author.id === r) {
         if (n.isPrivate()) {
             let e = i.default.getUser(n.getRecipientId());
-            if (null != e) return r ? l.intl.formatToPlainString(l.t.JddpN2, {
+            if (null != e) return a ? l.intl.formatToPlainString(l.t.JddpN2, {
                 username: e.globalName,
                 appName: t
             }) : l.intl.formatToPlainString(l.t.gYVkSW, {
@@ -50,13 +50,13 @@ function c(e, t, n, a, r) {
                 appName: t
             })
         }
-        return r ? l.intl.formatToPlainString(l.t["2N1kNS"], {
+        return a ? l.intl.formatToPlainString(l.t["2N1kNS"], {
             appName: t
         }) : l.intl.formatToPlainString(l.t.IA6uDV, {
             appName: t
         })
     }
-    return r ? l.intl.formatToPlainString(l.t.XE8axA, {
+    return a ? l.intl.formatToPlainString(l.t.XE8axA, {
         username: e.author.globalName,
         appName: t
     }) : l.intl.formatToPlainString(l.t.hgcjOn, {
@@ -65,15 +65,15 @@ function c(e, t, n, a, r) {
     })
 }
 
-function u(e, t, n, i, a) {
+function u(e, t, n, i, r) {
     switch (e.activity?.type) {
-        case r.xL.LISTEN:
-        case r.xL.WATCH:
-        case r.xL.JOIN:
-            return l.intl.string(a ? l.t.x1UXGR : l.t["Ek+51n"]);
-        case r.xL.STREAM_REQUEST:
+        case a.xL.LISTEN:
+        case a.xL.WATCH:
+        case a.xL.JOIN:
+            return l.intl.string(r ? l.t.x1UXGR : l.t["Ek+51n"]);
+        case a.xL.STREAM_REQUEST:
             return d(e, n, i);
-        case r.xL.JOIN_REQUEST:
+        case a.xL.JOIN_REQUEST:
         default:
             return c(e, t, n, i, !0)
     }
@@ -85,7 +85,7 @@ function _(e) {
         maxPartySize: n,
         partySize: i
     } = e;
-    return t === r.xL.STREAM_REQUEST ? "" : t === r.xL.LISTEN ? n > 0 ? l.intl.formatToPlainString(l.t.Zogoou, {
+    return t === a.xL.STREAM_REQUEST ? "" : t === a.xL.LISTEN ? n > 0 ? l.intl.formatToPlainString(l.t.Zogoou, {
         partySize: i,
         maxPartySize: n
     }) : l.intl.formatToPlainString(l.t.UGei0j, {

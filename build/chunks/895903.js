@@ -1,7 +1,7 @@
 /** chunk id: 895903 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => S
+    A: () => b
 });
 var i = n(627968),
     s = n(64700),
@@ -48,7 +48,7 @@ function N(e) {
     })
 }
 
-function b(e) {
+function S(e) {
     let {
         channel: t
     } = e, {
@@ -85,7 +85,7 @@ function b(e) {
     })
 }
 
-function S(e) {
+function b(e) {
     let {
         channel: t,
         onContinueClick: n
@@ -125,7 +125,7 @@ function S(e) {
                     [I.fN]: !0
                 }),
                 onClick: n
-            }) : null, (0, i.jsx)(b, {
+            }) : null, (0, i.jsx)(S, {
                 channel: t
             })]
         })]

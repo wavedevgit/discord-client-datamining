@@ -1,7 +1,7 @@
 /** chunk id: 362205 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => S
+    A: () => A
 });
 var r = n(627968),
     i = n(64700),
@@ -12,8 +12,8 @@ var r = n(627968),
     c = n(382222),
     u = n(942381),
     d = n(837381),
-    h = n(319354),
-    _ = n(397927),
+    _ = n(319354),
+    h = n(397927),
     f = n(775602),
     m = n(253932),
     p = n(894858),
@@ -24,7 +24,7 @@ var r = n(627968),
     x = n(890690),
     E = n(480270);
 
-function A(e) {
+function S(e) {
     let {
         category: t,
         onClick: n,
@@ -34,10 +34,10 @@ function A(e) {
         useTitle: s,
         useSubnavLabel: c,
         key: u
-    } = t, h = s?.(), f = c?.() ?? h;
+    } = t, _ = s?.(), f = c?.() ?? _;
     return o()(null != f, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(d.tG, {
         id: u,
-        children: e => (0, r.jsxs)(_.DUT, {
+        children: e => (0, r.jsxs)(h.DUT, {
             onClick: n,
             className: l()(E.AS, {
                 [E.vu]: i
@@ -50,7 +50,7 @@ function A(e) {
     })
 }
 
-function S(e) {
+function A(e) {
     let {
         categories: t,
         visibleContent: n,
@@ -75,7 +75,7 @@ function S(e) {
         {
             thumbRef: d,
             trackRef: b,
-            thumbAnchorRef: S,
+            thumbAnchorRef: A,
             springs: N
         } = function(e) {
             let t = m.Xi.useSetting(),
@@ -84,7 +84,7 @@ function S(e) {
                 a = i.useRef(null),
                 l = i.useRef(!0),
                 s = i.useRef(t),
-                [o, c] = (0, _.zhh)(() => ({
+                [o, c] = (0, h.zhh)(() => ({
                     y: 0,
                     height: 0,
                     config: {
@@ -97,10 +97,10 @@ function S(e) {
                 let e = s.current !== t,
                     i = () => {
                         if (null == n.current || null == r.current || null == a.current) return;
-                        let [i, u] = [n.current.getBoundingClientRect(), a.current.getBoundingClientRect()], d = i.width / 2, h = (u.y - i.y) / d, _ = u.height / d;
-                        l.current || e || f.A.useReducedMotion ? (o.y.set(h), o.height.set(_)) : c({
-                            y: h,
-                            height: _
+                        let [i, u] = [n.current.getBoundingClientRect(), a.current.getBoundingClientRect()], d = i.width / 2, _ = (u.y - i.y) / d, h = u.height / d;
+                        l.current || e || f.A.useReducedMotion ? (o.y.set(_), o.height.set(h)) : c({
+                            y: _,
+                            height: h
                         }), l.current = !1, s.current = t
                     },
                     u = null;
@@ -123,7 +123,7 @@ function S(e) {
             "--custom-nav-count": t.length,
             "--custom-nav-index": o,
             "--custom-nav-width": "2px",
-            "--custom-icon-size": `${h.E[g.V]}px`
+            "--custom-icon-size": `${_.E[g.V]}px`
         },
         children: [(0, r.jsx)("div", {
             className: E.u4,
@@ -137,10 +137,10 @@ function S(e) {
         }), (0, r.jsx)("div", {
             className: E.gu,
             "aria-hidden": "true",
-            ref: S
+            ref: A
         }), t.map(e => {
             let t = (0, y.H)(e.key, n, a);
-            return (0, r.jsx)(A, {
+            return (0, r.jsx)(S, {
                 onClick: () => {
                     var t;
                     return t = e.key, void v.A.navigate(t, {

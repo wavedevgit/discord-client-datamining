@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    r = n.n(a),
+var r = n(503698),
+    a = n.n(r),
     l = n(582754),
     s = n(397927),
     o = n(736653),
@@ -15,12 +15,12 @@ let u = function(e) {
     let {
         className: t,
         color: n = "text-strong",
-        textOpacity: a = .9
+        textOpacity: r = .9
     } = e, u = (0, o.DP)(), _ = (0, l.Mw)(u);
     return (0, i.jsxs)(s.Text, {
         variant: "text-xxs/medium",
         color: n,
-        className: r()(c.P, t),
+        className: a()(c.P, t),
         children: [(0, i.jsx)("span", {
             className: c.r,
             style: {
@@ -28,7 +28,7 @@ let u = function(e) {
             }
         }), (0, i.jsx)("span", {
             style: {
-                opacity: a
+                opacity: r
             },
             children: d.intl.string(d.t.o6FLcF)
         })]

@@ -63,7 +63,7 @@ let _ = a.memo(function(e) {
                         }),
                         renderGuildHeaderDropdownButton: a
                     });
-                case l.M.GAME_SERVER_HOSTING_BATCH_RELEASE_V2_COACHMARK:
+                case l.M.GAME_SERVER_HOSTING_BATCH_RELEASE_V3_COACHMARK:
                     return (0, i.jsx)(h, {
                         renderPopout: e => (0, i.jsx)(u.YX, {
                             guildId: n.id,

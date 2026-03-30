@@ -2,8 +2,8 @@
 n.d(t, {
     A: () => R
 });
-var i, a = n(627968),
-    r = n(64700),
+var i, r = n(627968),
+    a = n(64700),
     l = n(158954),
     s = n(311907),
     o = n(827734),
@@ -35,7 +35,7 @@ let j = Object.freeze({
     [T.Hf6.MOVE_UP]: "queued",
     [T.Hf6.RESUME]: "paused"
 });
-class L extends r.Component {
+class L extends a.Component {
     static defaultProps = {
         fullWidth: !1,
         size: "md",
@@ -127,19 +127,19 @@ class L extends r.Component {
             fullWidth: t,
             size: n,
             playButtonVariant: i = "secondary",
-            disabledVariant: r,
+            disabledVariant: a,
             onDropdownOpen: l,
             onDropdownClose: s,
             analyticsListSort: o,
             analyticsListIndex: d
         } = this.props;
-        return (0, a.jsx)(v.A, {
+        return (0, r.jsx)(v.A, {
             applicationId: e.id,
             libraryApplication: e,
             fullWidth: t,
             size: n,
             variant: i,
-            disabledVariant: r,
+            disabledVariant: a,
             onDropdownOpen: l,
             onDropdownClose: s,
             analyticsListSort: o,
@@ -150,23 +150,23 @@ class L extends r.Component {
         let {
             fullWidth: n,
             size: i,
-            disabledVariant: r = "secondary",
+            disabledVariant: a = "secondary",
             tooltipPosition: s
         } = this.props, o = this.renderProgressBar();
-        return (0, a.jsxs)("div", {
+        return (0, r.jsxs)("div", {
             className: null != o ? S.c : void 0,
-            children: [(0, a.jsxs)("div", {
+            children: [(0, r.jsxs)("div", {
                 className: S.Yr,
-                children: [(0, a.jsx)(l.$nd, {
+                children: [(0, r.jsx)(l.$nd, {
                     text: this.getText(e),
                     fullWidth: n,
                     size: i,
-                    variant: r,
+                    variant: a,
                     disabled: !0
-                }), (0, a.jsx)(d.m, {
+                }), (0, r.jsx)(d.m, {
                     text: t,
                     position: s,
-                    children: (0, a.jsx)("div", {
+                    children: (0, r.jsx)("div", {
                         className: S.p5
                     })
                 })]
@@ -182,7 +182,7 @@ class L extends r.Component {
         let n = C.z0(t);
         if (null == n) return null;
         let i = n.type === T.WTw.UNINSTALLING ? c.iCB.INDETERMINATE : C.uA(Number(n.progress), Number(n.total));
-        return (0, a.jsx)(c.iCB, {
+        return (0, r.jsx)(c.iCB, {
             percent: i,
             size: c.iCB.Sizes.XSMALL,
             foregroundColor: n.paused ? o.A.unsafe_rawColors.PRIMARY_500.css : o.A.unsafe_rawColors.GREEN_360.css,
@@ -194,16 +194,16 @@ class L extends r.Component {
         let {
             fullWidth: n,
             size: i,
-            actionButtonVariant: r = "primary",
+            actionButtonVariant: a = "primary",
             isCloudSyncing: s
         } = this.props, o = this.renderProgressBar();
-        return (0, a.jsxs)("div", {
+        return (0, r.jsxs)("div", {
             className: null != o ? S.c : void 0,
-            children: [(0, a.jsx)(l.$nd, {
+            children: [(0, r.jsx)(l.$nd, {
                 text: this.getText(e),
                 fullWidth: n,
                 size: i,
-                variant: r,
+                variant: a,
                 loading: "uninstalling" === e || s,
                 onClick: e => this.handleClick(e, t)
             }), o]
@@ -233,12 +233,12 @@ class L extends r.Component {
 function R(e) {
     let {
         libraryApplication: t
-    } = e, n = (0, _.p)(), [i, r] = (0, s.yK)([x.A, f.A], () => [(0, g.F)(t, x.A, f.A), x.A.getState(t.id, t.branchId)], [t]), l = (0, s.bG)([A.A], () => A.A.isSyncing(t.id, t.branchId), [t]), o = (0, s.bG)([p.A], () => p.A.hasNoBuild(t.id, t.branchId), [t]);
-    return (0, a.jsx)(L, {
+    } = e, n = (0, _.p)(), [i, a] = (0, s.yK)([x.A, f.A], () => [(0, g.F)(t, x.A, f.A), x.A.getState(t.id, t.branchId)], [t]), l = (0, s.bG)([A.A], () => A.A.isSyncing(t.id, t.branchId), [t]), o = (0, s.bG)([p.A], () => p.A.hasNoBuild(t.id, t.branchId), [t]);
+    return (0, r.jsx)(L, {
         ...e,
         analyticsContext: n,
         actionState: i,
-        dispatchState: r,
+        dispatchState: a,
         isCloudSyncing: l,
         hasNoBuild: o
     })

@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(454058),
     I = n(824865),
     N = n(406704),
-    b = n(734057),
-    S = n(696451),
+    S = n(734057),
+    b = n(696451),
     T = n(71393),
     v = n(576705),
     y = n(383501),
@@ -194,13 +194,13 @@ class V extends M.Ay {
             subtitle: E,
             forceTopLevelThread: C,
             embeddedApps: N,
-            resolvedUnreadSetting: b,
-            enableActivities: S,
+            resolvedUnreadSetting: S,
+            enableActivities: b,
             showMenuItemPopover: T,
             markMenuItemPopoverAsDismissed: v,
             channelItemRef: y,
             isSuggestedSection: j
-        } = this.props, R = y ?? this.channelItemRef, O = !T && o, L = !T && S && null != N && N.length > 0, M = (0, p.M)(E), D = (0, i.jsxs)("li", {
+        } = this.props, R = y ?? this.channelItemRef, O = !T && o, L = !T && b && null != N && N.length > 0, M = (0, p.M)(E), D = (0, i.jsxs)("li", {
             className: a()(this.getClassName(), {
                 [k.r9]: this.isDisabled(),
                 [k.wH]: n
@@ -232,7 +232,7 @@ class V extends M.Ay {
                     connectDragPreview: m ? A : null,
                     isFavoriteSuggestion: f,
                     channelTypeOverride: C ? P.rbe.GUILD_TEXT : void 0,
-                    resolvedUnreadSetting: b,
+                    resolvedUnreadSetting: S,
                     transitionExtras: j ? {
                         source: I.A.CHANNEL_LIST_SUGGESTED_SECTION
                     } : void 0,
@@ -273,8 +273,8 @@ function H(e) {
         unread: j.Ay.hasUnread(t.id),
         ackMessageId: j.Ay.ackMessageId(t.id),
         isLowImportanceMention: j.Ay.getIsMentionLowImportance(t.id)
-    })), p = (0, o.bG)([R.Ay], () => R.Ay.resolveUnreadSetting(t)), x = (0, o.cf)([b.A, v.A], () => {
-        let e = b.A.getChannel(t.parent_id);
+    })), p = (0, o.bG)([R.Ay], () => R.Ay.resolveUnreadSetting(t)), x = (0, o.cf)([S.A, v.A], () => {
+        let e = S.A.getChannel(t.parent_id);
         return {
             canManageChannel: v.A.can(P.xBc.MANAGE_CHANNELS, t),
             canReorderChannel: !0 !== l && (n.id === w.Vc || (null != e ? v.A.can(P.xBc.MANAGE_CHANNELS, e) : v.A.can(P.xBc.MANAGE_CHANNELS, n)))
@@ -304,7 +304,7 @@ function H(e) {
         channelType: t.type,
         isPopoverAllowed: n.id !== w.Vc
     });
-    return (0, o.bG)([y.A, S.Ay], () => y.A.getChannelId() !== t.id && S.Ay.isCurrentUserGuest(t.getGuildId())) ? null : (0, i.jsx)(B, {
+    return (0, o.bG)([y.A, b.Ay], () => y.A.getChannelId() !== t.id && b.Ay.isCurrentUserGuest(t.getGuildId())) ? null : (0, i.jsx)(B, {
         ...g,
         ...x,
         ...e,

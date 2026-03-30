@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(885631),
     I = n(986268),
     N = n(652215),
-    b = n(349828),
-    S = n(985018),
+    S = n(349828),
+    b = n(985018),
     T = n(961577);
 
 function v(e) {
@@ -76,7 +76,7 @@ function y(e) {
     } = n.springs, c = t.features.has(N.GuildFeatures.DISCOVERABLE), h = (0, i.jsx)("div", {
         className: T.WV,
         children: c && (0, i.jsx)(d.m, {
-            text: S.intl.string(S.t.O8lDI2),
+            text: b.intl.string(b.t.O8lDI2),
             position: "right",
             children: (0, i.jsxs)("div", {
                 className: T.Pl,
@@ -89,7 +89,7 @@ function y(e) {
                 }), (0, i.jsx)(u.Text, {
                     variant: "text-xs/normal",
                     color: "none",
-                    children: S.intl.string(S.t["B/vjCu"])
+                    children: b.intl.string(b.t["B/vjCu"])
                 })]
             })
         })
@@ -129,7 +129,7 @@ function R(e) {
         children: (0, h.YC)(t)
     })
 }
-let O = [b.Vc, N.gNP];
+let O = [S.Vc, N.gNP];
 
 function L(e) {
     let {
@@ -162,7 +162,7 @@ function L(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)(u.DUT, {
             className: T.Vm,
-            "aria-label": S.intl.formatToPlainString(S.t.xMXpl3, {
+            "aria-label": b.intl.formatToPlainString(b.t.xMXpl3, {
                 guildName: f
             }),
             "aria-controls": o,
@@ -174,17 +174,17 @@ function L(e) {
                 children: [(0, i.jsx)(I.A, {
                     guild: l,
                     isBannerVisible: t
-                }), l.id === b.Vc && (0, i.jsx)(j, {}), (0, i.jsx)(R, {
+                }), l.id === S.Vc && (0, i.jsx)(j, {}), (0, i.jsx)(R, {
                     guild: l
                 })]
             }), (0, i.jsx)("div", {
                 className: T.dx,
                 children: p
             })]
-        }), l.id === b.Vc && (0, i.jsx)(A.A, {
+        }), l.id === S.Vc && (0, i.jsx)(A.A, {
             className: T.sq
         }), !O.includes(l.id) && (0, i.jsx)(d.m, {
-            text: S.intl.string(S.t.Sd8Ixw),
+            text: b.intl.string(b.t.Sd8Ixw),
             position: "bottom",
             asContainer: !0,
             children: (0, i.jsx)(u.DUT, {
@@ -213,13 +213,13 @@ let M = s.memo(function(e) {
         "aria-expanded": g,
         "aria-controls": x,
         guild: I,
-        guildBanner: b,
-        animationOverlayHeight: S,
+        guildBanner: S,
+        animationOverlayHeight: b,
         children: j,
         headerClassName: R,
         communityInfoVisible: O,
         hasSubheader: M
-    } = e, G = I.features.has(N.GuildFeatures.ANIMATED_BANNER), U = (0, m.A)(I), P = !U && (0, C.A)(I), w = !U && O, k = (0, E.VI)(b) && G && !_, [V, B] = s.useState(!1), H = s.useRef(!1), F = s.useRef(null), K = t ?? F, W = s.useRef(void 0), Y = f.kt.getSetting(), z = (0, c.bG)([p.A], () => p.A.theme);
+    } = e, G = I.features.has(N.GuildFeatures.ANIMATED_BANNER), U = (0, m.A)(I), P = !U && (0, C.A)(I), w = !U && O, k = (0, E.VI)(S) && G && !_, [V, B] = s.useState(!1), H = s.useRef(!1), F = s.useRef(null), K = t ?? F, W = s.useRef(void 0), Y = f.kt.getSetting(), z = (0, c.bG)([p.A], () => p.A.theme);
     s.useEffect(() => {
         if (k && n && !H.current && Y) return B(!0), W.current = setTimeout(() => {
             B(!1)
@@ -270,13 +270,13 @@ let M = s.memo(function(e) {
                     }), P && (0, i.jsx)(y, {
                         guild: I,
                         controller: l,
-                        hasBanner: null != b,
+                        hasBanner: null != S,
                         hasSubheader: M ?? !1
                     })]
-                }), null != b ? (0, i.jsx)(v, {
+                }), null != S ? (0, i.jsx)(v, {
                     guild: I,
                     controller: l,
-                    guildBanner: b,
+                    guildBanner: S,
                     animate: V
                 }) : null, (0, i.jsx)(D, {
                     controller: l
@@ -288,7 +288,7 @@ let M = s.memo(function(e) {
                 },
                 onMouseLeave: () => B(!1),
                 style: {
-                    height: S
+                    height: b
                 }
             }) : null]
         })

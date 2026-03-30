@@ -1,7 +1,7 @@
 /** chunk id: 246884 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => S
 });
 var i = n(627968),
     s = n(64700),
@@ -46,11 +46,11 @@ function N(e) {
     })
 }
 
-function b(e) {
+function S(e) {
     let {
         disableTooltip: t,
         lastTargetNode: n
-    } = e, r = (0, l.yK)([m.A], () => m.A.getGuildsArray()), b = (0, l.bG)([_.default], () => _.default.getCurrentUser()), S = s.useMemo(() => r.some(e => (0, A.bM)(e, b)), [r, b]), T = (0, a.red)(e => (0, a.fDT)(e, x.fc)), {
+    } = e, r = (0, l.yK)([m.A], () => m.A.getGuildsArray()), S = (0, l.bG)([_.default], () => _.default.getCurrentUser()), b = s.useMemo(() => r.some(e => (0, A.bM)(e, S)), [r, S]), T = (0, a.red)(e => (0, a.fDT)(e, x.fc)), {
         analyticsLocations: v
     } = (0, o.Ay)(), y = (0, i.jsx)(p.A, {
         showPill: !1,
@@ -77,7 +77,7 @@ function b(e) {
     return t ? y : (0, i.jsx)("div", {
         className: C.Uq,
         children: (0, i.jsxs)(h.A, {
-            tutorialId: S ? "create-more-servers" : "create-first-server",
+            tutorialId: b ? "create-more-servers" : "create-first-server",
             inlineSpecs: I,
             position: "right",
             children: [y, null != n && (0, i.jsx)(g.Ay, {

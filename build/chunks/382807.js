@@ -3,8 +3,8 @@ n.d(t, {
     A: () => d
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(397927),
+    r = n(64700),
+    a = n(397927),
     l = n(123791),
     s = n(627363),
     o = n(985018);
@@ -14,10 +14,10 @@ function d(e) {
         applicationId: t,
         guildId: n
     } = e, {
-        data: a
+        data: r
     } = (0, s.YY)(t);
-    return null == a ? null : (0, i.jsx)(c, {
-        app: a,
+    return null == r ? null : (0, i.jsx)(c, {
+        app: r,
         guildId: n
     })
 }
@@ -28,8 +28,8 @@ function c(e) {
         guildId: s
     } = e;
     (0, l.C)(t.id);
-    let d = a.useCallback(() => {
-        (0, r.mMO)(async () => {
+    let d = r.useCallback(() => {
+        (0, a.mMO)(async () => {
             let {
                 default: e
             } = await Promise.all([n.e("33563"), n.e("7194")]).then(n.bind(n, 719847));
@@ -40,10 +40,10 @@ function c(e) {
             })
         })
     }, [t, s]);
-    return (0, i.jsx)(r.Button, {
+    return (0, i.jsx)(a.Button, {
         size: "sm",
         onClick: d,
-        icon: r.Uzv,
+        icon: a.Uzv,
         text: o.intl.format(o.t.XDRjs5, {
             appName: t.name
         })

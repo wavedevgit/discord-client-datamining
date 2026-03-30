@@ -26,7 +26,7 @@ function f(e) {
         showDismiss: f = !0
     } = e, x = (0, s.bG)([o.A], () => o.A.getChannel(t), [t]), E = (0, A.RO)(t), C = null != (0, A.Qs)(t), {
         canManageGuildEvent: I
-    } = (0, r.nr)(x), N = (0, s.bG)([c.A], () => E.filter(e => !c.A.isEventDismissed(e.id)), [E]), b = (0, s.cf)([u.Ay], () => N.reduce((e, t) => (e[t.id] = u.Ay.getUserCount(t.id, (0, m.G3)(t)), e), {}), [N]);
+    } = (0, r.nr)(x), N = (0, s.bG)([c.A], () => E.filter(e => !c.A.isEventDismissed(e.id)), [E]), S = (0, s.cf)([u.Ay], () => N.reduce((e, t) => (e[t.id] = u.Ay.getUserCount(t.id, (0, m.G3)(t)), e), {}), [N]);
     return N.length < 1 || C ? null : (0, i.jsx)(i.Fragment, {
         children: N.map(e => (0, i.jsx)(_.A, {
             icon: (0, i.jsx)(a.CTc, {
@@ -59,7 +59,7 @@ function f(e) {
                 var t;
                 return t = e.id, void(0, h.Nt)(t)
             } : void 0,
-            userCount: b[e.id],
+            userCount: S[e.id],
             className: p.f
         }, e.id))
     })

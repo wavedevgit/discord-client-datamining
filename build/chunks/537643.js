@@ -3,8 +3,8 @@ n.d(t, {
     I: () => d
 });
 var i = n(64700),
-    a = n(311907),
-    r = n(139675),
+    r = n(311907),
+    a = n(139675),
     l = n(835517),
     s = n(729394),
     o = n(216184);
@@ -16,22 +16,22 @@ let d = e => {
     } = e, {
         cachedImageURL: c,
         imageURL: u
-    } = (0, a.cf)([o.A], () => (e => {
+    } = (0, r.cf)([o.A], () => (e => {
         let {
             messageId: t,
             presenceActivity: n,
             application: i
-        } = e, a = o.A.getCoverImageURL({
+        } = e, r = o.A.getCoverImageURL({
             messageId: t
         });
-        if (null === a) return {
+        if (null === r) return {
             cachedImageURL: null,
             imageURL: null
         };
         let s = 600 * (0, l.A)(),
-            d = (n?.assets?.invite_cover_image != null ? (0, r.uD)(n.application_id, n.assets.invite_cover_image, s) : null) ?? a ?? i.getCoverImageURL(s) ?? null;
+            d = (n?.assets?.invite_cover_image != null ? (0, a.uD)(n.application_id, n.assets.invite_cover_image, s) : null) ?? r ?? i.getCoverImageURL(s) ?? null;
         return {
-            cachedImageURL: a,
+            cachedImageURL: r,
             imageURL: d
         }
     })({

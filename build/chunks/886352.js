@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    r = n.n(a),
+var r = n(503698),
+    a = n.n(r),
     l = n(985018),
     s = n(398321);
 let o = e => {
@@ -13,7 +13,7 @@ let o = e => {
         className: t
     } = e;
     return (0, i.jsx)("div", {
-        className: r()(s.T, t),
+        className: a()(s.T, t),
         children: (0, i.jsx)("span", {
             className: s.Q,
             children: l.intl.string(l.t["8IfYqa"])

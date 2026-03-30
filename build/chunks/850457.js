@@ -63,7 +63,7 @@ function N(e) {
     })
 }
 
-function b(e) {
+function S(e) {
     let {
         event: t,
         guildId: n,
@@ -111,7 +111,7 @@ function b(e) {
     })
 }
 
-function S(e) {
+function b(e) {
     let {
         event: t,
         guildId: n,
@@ -121,7 +121,7 @@ function S(e) {
         event: t,
         guildId: n,
         channelId: s
-    }) : t.eventType === g.i.USER_LEFT ? (0, i.jsx)(b, {
+    }) : t.eventType === g.i.USER_LEFT ? (0, i.jsx)(S, {
         event: t,
         guildId: n,
         channelId: s
@@ -190,7 +190,7 @@ function v(e) {
                     })
                 }), (0, i.jsx)("ol", {
                     className: I.Gz,
-                    children: c.map(e => (0, i.jsx)(S, {
+                    children: c.map(e => (0, i.jsx)(b, {
                         event: e,
                         guildId: t.guild_id,
                         channelId: t.id

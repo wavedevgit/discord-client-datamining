@@ -32,7 +32,7 @@ let h = () => {
             items: C,
             hasMore: I,
             cursor: N,
-            errored: b
+            errored: S
         } = (0, s.cf)([c.A], () => ({
             initialized: c.A.initialized,
             loading: c.A.loading,
@@ -41,7 +41,7 @@ let h = () => {
             cursor: c.A.cursor,
             errored: c.A.errored
         })), {
-            roleFilter: S,
+            roleFilter: b,
             everyoneFilter: T
         } = (0, s.cf)([r.Ay], () => ({
             everyoneFilter: r.Ay.everyoneFilter,
@@ -52,27 +52,27 @@ let h = () => {
         }, [t, x]);
         let v = (0, a.A)();
         i.useEffect(() => () => {
-            h ? !v() && (b || C.length > 100) && (0, o.S3)() : n && C.length > 100 && (0, o.S3)()
-        }, [n, C, h, v, b]), i.useEffect(() => {
+            h ? !v() && (S || C.length > 100) && (0, o.S3)() : n && C.length > 100 && (0, o.S3)()
+        }, [n, C, h, v, S]), i.useEffect(() => {
             let e = _ && t;
             (!x || e) && (0, o.ni)({
                 limit: m ?? (A ? 8 : 20),
                 with_mentions: A,
-                roles_filter: S,
+                roles_filter: b,
                 everyone_filter: T
             })
-        }, [x, _, t, A, S, T, m]);
+        }, [x, _, t, A, b, T, m]);
         let y = i.useCallback(async e => {
-            !g.current && x && I && null != N && (e || !b) && (g.current = !0, f(!0), await (0, o.ni)({
+            !g.current && x && I && null != N && (e || !S) && (g.current = !0, f(!0), await (0, o.ni)({
                 after: N,
                 with_mentions: A,
-                roles_filter: S,
+                roles_filter: b,
                 everyone_filter: T,
                 limit: A ? 8 : 20
             }, () => {
                 g.current = !1
             }), f(!1))
-        }, [x, I, N, b, A, S, T]);
+        }, [x, I, N, S, A, b, T]);
         return {
             initialized: x,
             loading: E,
@@ -83,7 +83,7 @@ let h = () => {
             setReadNotifItemToAcked: e => {
                 e.acked || (e.acked = !0)
             },
-            errored: b
+            errored: S
         }
     })({
         isFocused: !0,

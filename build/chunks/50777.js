@@ -3,8 +3,8 @@ n.d(t, {
     A: () => N
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(158954),
+    r = n(64700),
+    a = n(158954),
     l = n(311907),
     s = n(990078),
     o = n(397927),
@@ -42,11 +42,11 @@ function N(e) {
         {
             primaryIconAsset: U,
             primaryIconLabel: B
-        } = a.useMemo(() => (0, x.Cv)(L, R), [L, R]);
-    a.useEffect(() => {
+        } = r.useMemo(() => (0, x.Cv)(L, R), [L, R]);
+    r.useEffect(() => {
         null == t || null == n || A.A.isFetchingForSKU(n) || (0, f.qf)(t, n)
     }, [t, n]);
-    let G = a.useCallback(e => {
+    let G = r.useCallback(e => {
             e.stopPropagation(), L?.applicationId != null && (0, I.R)({
                 skuId: n,
                 applicationId: L.applicationId,
@@ -54,7 +54,7 @@ function N(e) {
                 analyticsLocations: D
             })
         }, [n, L, D]),
-        F = a.useCallback(() => {
+        F = r.useCallback(() => {
             null != L && O && (0, E.a)(L, {
                 isGift: !1
             }, {
@@ -62,7 +62,7 @@ function N(e) {
                 guildId: t
             })
         }, [L, t, O]),
-        H = a.useCallback(() => {
+        H = r.useCallback(() => {
             null != L && (0, E.a)(L, {
                 isGift: !0,
                 giftRecipient: k ?? void 0
@@ -112,7 +112,7 @@ function N(e) {
                             color: "currentColor",
                             children: y.intl.format(y.t.GiVd2Q, {
                                 orbCount: L.orbsReward,
-                                orbIconHook: () => (0, i.jsx)(r.Cp8, {
+                                orbIconHook: () => (0, i.jsx)(a.Cp8, {
                                     size: "xs",
                                     color: "currentColor"
                                 }, "orbs-icon")
@@ -120,18 +120,18 @@ function N(e) {
                         })
                     })]
                 })]
-            }), (0, i.jsxs)(r.e2v, {
+            }), (0, i.jsxs)(a.e2v, {
                 wrap: !1,
                 fullWidth: !0,
                 children: [(0, i.jsx)(s.m, {
                     text: O ? void 0 : y.intl.string(y.t.IqlPbQ),
-                    children: (0, i.jsx)(r.$nd, {
+                    children: (0, i.jsx)(a.$nd, {
                         variant: O ? "secondary" : "primary",
                         onClick: G,
                         text: y.intl.string(y.t.KLBTgF),
                         fullWidth: !0
                     })
-                }), O && (0, i.jsx)(r.$nd, {
+                }), O && (0, i.jsx)(a.$nd, {
                     variant: "primary",
                     onClick: F,
                     text: y.intl.format(y.t.Xp5WTn, {

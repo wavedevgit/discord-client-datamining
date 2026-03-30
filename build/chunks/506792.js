@@ -29,45 +29,45 @@ let f = (0, c.a)(function(e) {
         sortingPosition: C,
         connectChannelDragSource: I,
         connectChannelDropTarget: N,
-        tabIndex: b
-    } = e, S = (0, r.bG)([d.A, u.Ay], () => {
+        tabIndex: S
+    } = e, b = (0, r.bG)([d.A, u.Ay], () => {
         let e = u.Ay.getDirectoryChannelIds(t.id);
         return 0 === e.length ? null : d.A.getChannel(e[0])
-    }), T = (0, r.bG)([d.A], () => d.A.getChannel(S?.parent_id)), v = l === S?.id, y = (0, r.bG)([h.A], () => null != T ? h.A.can(_.xBc.MANAGE_CHANNELS, T) : null != t && h.A.can(_.xBc.MANAGE_CHANNELS, t)), j = s.useCallback(e => {
-        null != S && (0, o.L3)(e, async () => {
+    }), T = (0, r.bG)([d.A], () => d.A.getChannel(b?.parent_id)), v = l === b?.id, y = (0, r.bG)([h.A], () => null != T ? h.A.can(_.xBc.MANAGE_CHANNELS, T) : null != t && h.A.can(_.xBc.MANAGE_CHANNELS, t)), j = s.useCallback(e => {
+        null != b && (0, o.L3)(e, async () => {
             let {
                 default: e
             } = await n.e("29559").then(n.bind(n, 994058));
             return t => (0, i.jsx)(e, {
                 ...t,
-                channel: S
+                channel: b
             })
         })
-    }, [S]);
-    if (null == S) return null;
+    }, [b]);
+    if (null == b) return null;
     let R = (0, A.O6)(c, C),
-        O = (0, A.h$)(S, x, E),
+        O = (0, A.h$)(b, x, E),
         L = (0, i.jsx)("div", {
             className: a()(R, {
                 [p.r9]: O,
                 [p.wH]: v
             }),
-            "data-dnd-name": S.name,
+            "data-dnd-name": b.name,
             children: (0, i.jsxs)(m.Ay, {
                 className: p.Ki,
-                channel: S,
+                channel: b,
                 guild: t,
                 selected: v,
                 onContextMenu: j,
                 forceInteractable: !0,
                 resolvedUnreadSetting: g.e.ONLY_MENTIONS,
                 children: [(0, i.jsx)(A.gQ, {
-                    channel: S,
-                    tabIndex: b
+                    channel: b,
+                    tabIndex: S
                 }), (0, i.jsx)(A.Jd, {
-                    channel: S,
+                    channel: b,
                     disableManageChannels: f,
-                    tabIndex: b
+                    tabIndex: S
                 })]
             })
         });

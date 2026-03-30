@@ -25,8 +25,8 @@ var i = n(627968),
     C = n(267102),
     I = n(401901),
     N = n(326567),
-    b = n(342296),
-    S = n(616356),
+    S = n(342296),
+    b = n(616356),
     T = n(961350),
     v = n(71393),
     y = n(576705),
@@ -56,7 +56,7 @@ let U = 16 / 9,
             ignored: g,
             id: p
         } = t;
-        return (0, i.jsx)(b.A, {
+        return (0, i.jsx)(S.A, {
             targetElementRef: A,
             user: r,
             guildId: a,
@@ -98,8 +98,8 @@ let U = 16 / 9,
             id: _,
             blocked: p,
             ignored: C
-        } = t, N = (0, o.yK)([S.A], () => S.A.getAllActiveStreams(), []), {
-            selectedParticipant: b,
+        } = t, N = (0, o.yK)([b.A], () => b.A.getAllActiveStreams(), []), {
+            selectedParticipant: S,
             largeStream: T
         } = (0, o.cf)([g.A], () => ({
             selectedParticipant: null != l ? g.A.getSelectedParticipant(l.id) : null,
@@ -111,8 +111,8 @@ let U = 16 / 9,
                     forceMultiple: t.shiftKey
                 })
             }
-            b?.id === e.id ? T ? (d.A.selectParticipant(l.id, null), d.A.updateStageStreamSize(l.id, !1)) : d.A.updateStageStreamSize(l.id, !0) : (d.A.updateStageStreamSize(l.id, !1), d.A.selectParticipant(l.id, e.id))
-        }, [N, l, b, T]);
+            S?.id === e.id ? T ? (d.A.selectParticipant(l.id, null), d.A.updateStageStreamSize(l.id, !1)) : d.A.updateStageStreamSize(l.id, !0) : (d.A.updateStageStreamSize(l.id, !1), d.A.selectParticipant(l.id, e.id))
+        }, [N, l, S, T]);
         return (0, i.jsx)(O.A, {
             participant: n,
             aspectRatio: U,
@@ -142,9 +142,9 @@ let U = 16 / 9,
         a()(null != f, "Channel cannot be guildless");
         let {
             user: E
-        } = t, I = (0, o.bG)([g.A], () => g.A.getParticipant(s.id, t.id), [s.id, t.id]), b = (0, o.bG)([R.Ay], () => R.Ay.isModerator(E.id, s.id), [s.id, E.id]);
+        } = t, I = (0, o.bG)([g.A], () => g.A.getParticipant(s.id, t.id), [s.id, t.id]), S = (0, o.bG)([R.Ay], () => R.Ay.isModerator(E.id, s.id), [s.id, E.id]);
         if (null == I || I.type === D.lp.ACTIVITY) return null;
-        let S = e => {
+        let b = e => {
                 (0, _.x)({
                     type: r.ImpressionTypes.MENU,
                     name: r.ImpressionNames.CALL_TILE_CONTEXT_MENU,
@@ -159,7 +159,7 @@ let U = 16 / 9,
                 switch (e.type) {
                     case D.lp.HIDDEN_STREAM:
                     case D.lp.STREAM:
-                        S(D.qs.STREAM), (0, u.L3)(t, async () => {
+                        b(D.qs.STREAM), (0, u.L3)(t, async () => {
                             let {
                                 default: t
                             } = await n.e("66692").then(n.bind(n, 796175));
@@ -180,7 +180,7 @@ let U = 16 / 9,
                         return;
                     case D.lp.USER:
                     default:
-                        if (S(D.qs.USER), l) return (0, N.r)(t, E, s, {
+                        if (b(D.qs.USER), l) return (0, N.r)(t, E, s, {
                             context: h
                         }, (e, t) => (0, p.Y)({
                             menuName: e,
@@ -219,7 +219,7 @@ let U = 16 / 9,
             guildId: f,
             user: E,
             width: l,
-            isModerator: b,
+            isModerator: S,
             onContextMenu: v,
             popoutType: c
         }) : (0, i.jsx)(P, {
@@ -229,7 +229,7 @@ let U = 16 / 9,
             guildId: f,
             user: E,
             width: l,
-            isModerator: b,
+            isModerator: S,
             onContextMenu: v,
             popoutType: c
         })

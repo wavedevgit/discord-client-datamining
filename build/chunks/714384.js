@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    r = n.n(a),
+var r = n(503698),
+    a = n.n(r),
     l = n(990078),
     s = n(547056),
     o = n(169295),
@@ -32,12 +32,12 @@ function h(e) {
     let {
         operatingSystem: t,
         className: n
-    } = e, a = m[t];
-    if (null == a) throw Error(`Unexpected operating system: ${t}`);
-    let r = a.icon;
+    } = e, r = m[t];
+    if (null == r) throw Error(`Unexpected operating system: ${t}`);
+    let a = r.icon;
     return (0, i.jsx)(l.m, {
-        text: a.getLabel(),
-        children: (0, i.jsx)(r, {
+        text: r.getLabel(),
+        children: (0, i.jsx)(a, {
             className: n
         })
     })
@@ -46,13 +46,13 @@ let p = e => {
     let {
         systems: t,
         className: n,
-        iconClassName: a
+        iconClassName: r
     } = e;
     return (0, i.jsx)("div", {
-        className: r()(_.I, n),
+        className: a()(_.I, n),
         children: t.map(e => (0, i.jsx)(h, {
             operatingSystem: e,
-            className: r()(_.A, a)
+            className: a()(_.A, r)
         }, e))
     })
 }

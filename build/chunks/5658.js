@@ -105,7 +105,7 @@ let I = s.memo(function(e) {
                         className: C.GC,
                         children: [(0, i.jsx)(_.A, {
                             channel: o
-                        }), (0, i.jsx)(b, {
+                        }), (0, i.jsx)(S, {
                             ...e
                         })]
                     })
@@ -123,7 +123,7 @@ let I = s.memo(function(e) {
         })
     });
 
-function b(e) {
+function S(e) {
     let {
         channel: t,
         markChannelRead: n,

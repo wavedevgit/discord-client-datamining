@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(187508),
     I = n(576456),
     N = n(572448),
-    b = n(963702),
-    S = n(652215),
+    S = n(963702),
+    b = n(652215),
     T = n(985018),
     v = n(917831);
 let y = {
@@ -40,9 +40,9 @@ function j(e, t, n) {
         s = t ? C.Ay.roleFilter : null,
         l = t ? C.Ay.everyoneFilter : null,
         a = null;
-    null != e && null != i && (a = i === S.KE7.ALL_SERVERS ? null : e.getGuildId()), c.A.fetchRecentMentions({
+    null != e && null != i && (a = i === b.KE7.ALL_SERVERS ? null : e.getGuildId()), c.A.fetchRecentMentions({
         before: n,
-        limit: S.Ue3,
+        limit: b.Ue3,
         guildId: a,
         roles: s,
         everyone: l
@@ -66,13 +66,13 @@ function R(e) {
         guildFilter: C.Ay.guildFilter,
         roleFilter: C.Ay.roleFilter,
         everyoneFilter: C.Ay.everyoneFilter
-    })), I = (0, g.Sc)(), N = (0, u.A)(m), b = (0, u.A)(p), y = (0, u.A)(x);
+    })), I = (0, g.Sc)(), N = (0, u.A)(m), S = (0, u.A)(p), y = (0, u.A)(x);
     s.useEffect(() => {
-        C.Ay.hasLoadedEver ? (null != N && m !== N || null != b && p !== b || null != y && x !== y) && j(n, !0) : j(n, !0)
-    }, [N, m, b, p, y, x, n, !0]), (0, d.Ay)(() => {
+        C.Ay.hasLoadedEver ? (null != N && m !== N || null != S && p !== S || null != y && x !== y) && j(n, !0) : j(n, !0)
+    }, [N, m, S, p, y, x, n, !0]), (0, d.Ay)(() => {
         l?.some(A.$r) && (c.A.clearMentions(), j(n, !0))
     }), s.useEffect(() => () => {
-        c.A.truncateMentions(S.Ue3)
+        c.A.truncateMentions(b.Ue3)
     }, []);
     let R = s.useCallback(() => null, []);
     return (0, i.jsx)(_.Ay, {
@@ -150,7 +150,7 @@ function L(e) {
 }
 
 function M() {
-    return (0, i.jsx)(b.A, {
+    return (0, i.jsx)(S.A, {
         Icon: o.XxR,
         header: T.intl.string(T.t.bgDz74),
         tip: T.intl.string(T.t.NS15vk)

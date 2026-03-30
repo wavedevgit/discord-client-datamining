@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(186111),
     I = n(430452),
     N = n(994500),
-    b = n(287809),
-    S = n(977997),
+    S = n(287809),
+    b = n(977997),
     T = n(203982),
     v = n(58736),
     y = n(652215),
@@ -153,7 +153,7 @@ class M extends s.PureComponent {
 function D(e) {
     let {
         channel: t
-    } = e, n = (0, g.A)(), s = (0, l.bG)([A.A], () => A.A.getMode(t.id)), r = (0, l.bG)([S.A], () => S.A.isInChannel(t.id)), o = (0, l.bG)([u.A], () => u.A.useReducedMotion), {
+    } = e, n = (0, g.A)(), s = (0, l.bG)([A.A], () => A.A.getMode(t.id)), r = (0, l.bG)([b.A], () => b.A.isInChannel(t.id)), o = (0, l.bG)([u.A], () => u.A.useReducedMotion), {
         callActive: c,
         callUnavailable: d
     } = (0, l.cf)([E.A], () => ({
@@ -165,7 +165,7 @@ function D(e) {
     } = (0, l.cf)([N.A], () => ({
         notFriend: t.type === y.rbe.DM && null != m && !N.A.isFriend(m),
         isBlocked: t.type === y.rbe.DM && null != m && N.A.isBlocked(m)
-    })), x = (0, l.bG)([b.default], () => b.default.getUser(m)), I = (0, p.Us)(), T = [], v = (0, h.A)(t.id), j = (0, l.bG)([C.A], () => C.A.hasLayers());
+    })), x = (0, l.bG)([S.default], () => S.default.getUser(m)), I = (0, p.Us)(), T = [], v = (0, h.A)(t.id), j = (0, l.bG)([C.A], () => C.A.hasLayers());
     return (v && !j && T.push(a.M.ACTIVITY_GDM_CALL_TOOLTIP), n || x?.bot) ? null : (0, i.jsx)(M, {
         channel: t,
         mode: s,

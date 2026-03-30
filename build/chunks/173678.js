@@ -42,13 +42,13 @@ function g(e, t) {
         body: C ? h.intl.string(h.t.ilhtIa) : void 0,
         renderIcon: C ? a.GM : void 0,
         shouldShow: !0
-    }, b = !x && e.collectiblesItem.type === s.R.PROFILE_EFFECT;
+    }, S = !x && e.collectiblesItem.type === s.R.PROFILE_EFFECT;
     return (0, i.jsx)(d.A, {
         onCardClick: () => {
             E ? u() : _(e, l, o)
         },
         tooltipConfig: N,
-        shouldScalePreview: x || !b,
+        shouldScalePreview: x || !S,
         renderPreview: () => {
             if (x) {
                 let t = {

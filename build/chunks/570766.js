@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    r = n.n(a),
+var r = n(503698),
+    a = n.n(r),
     l = n(126031),
     s = n(397927),
     o = n(438437),
@@ -17,7 +17,7 @@ function _(e) {
     let {
         didSelfVote: t,
         label: n,
-        percentage: a
+        percentage: r
     } = e;
     return (0, i.jsxs)("div", {
         className: u.AA,
@@ -26,7 +26,7 @@ function _(e) {
         }), (0, i.jsxs)(s.Text, {
             variant: "text-md/semibold",
             color: "none",
-            children: [a, "%"]
+            children: [r, "%"]
         }), (0, i.jsx)(s.Text, {
             variant: "text-xs/semibold",
             color: "none",
@@ -39,18 +39,18 @@ function m(e) {
     let {
         answer: t,
         isExpired: n,
-        myAvatarUrl: a,
+        myAvatarUrl: r,
         canShowVoteCounts: l
     } = e, s = !0 === t.isSelected, o = !0 === t.didSelfVote, c = !0 === t.isVictor;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.Dt, {
-            attachmentClassName: r()(u.oh, {
+            attachmentClassName: a()(u.oh, {
                 [u.Wx]: l
             }),
             emojiClassName: u.Zg,
             media: t.pollMedia,
             fallback: (0, i.jsx)("div", {
-                className: r()(u.oh, u.nb)
+                className: a()(u.oh, u.nb)
             })
         }), s && (0, i.jsx)(d.Vx, {
             size: 40,
@@ -62,7 +62,7 @@ function m(e) {
                 didSelfVote: o,
                 percentage: t.votesPercentage,
                 label: t.votes,
-                myAvatarUrl: o ? a : void 0
+                myAvatarUrl: o ? r : void 0
             }), (!n && o || c) && (0, i.jsx)(d.Vx, {
                 size: 18,
                 isVictor: c,
@@ -77,22 +77,22 @@ function h(e) {
     let {
         isExpired: t,
         myAvatarUrl: n,
-        answersInteraction: a,
+        answersInteraction: r,
         canShowVoteCounts: l,
         ...s
     } = e;
     return (0, i.jsx)(d.Fh, {
         className: u.ry,
-        answerClassName: r()(u.ZF, {
-            [u.EK]: a !== o.CQ.LIST
+        answerClassName: a()(u.ZF, {
+            [u.EK]: r !== o.CQ.LIST
         }),
         myAvatarUrl: n,
-        answersInteraction: a,
+        answersInteraction: r,
         renderAnswerContent: e => (0, i.jsx)(m, {
             answer: e,
             isExpired: t,
             myAvatarUrl: n,
-            answersInteraction: a,
+            answersInteraction: r,
             canShowVoteCounts: l
         }),
         ...s

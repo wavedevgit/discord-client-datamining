@@ -3,9 +3,9 @@ n.d(t, {
     A: () => g
 }), n(321073);
 var i = n(627968),
-    a = n(64700),
-    r = n(735438),
-    l = n.n(r),
+    r = n(64700),
+    a = n(735438),
+    l = n.n(a),
     s = n(435371),
     o = n(397927),
     d = n(793574),
@@ -18,8 +18,8 @@ let p = e => {
         let {
             member: t,
             empty: n,
-            guildId: r
-        } = e, l = a.useRef(null);
+            guildId: a
+        } = e, l = r.useRef(null);
         return n ? (0, i.jsx)("div", {
             className: h._b
         }) : null == t ? (0, i.jsx)("div", {
@@ -32,16 +32,16 @@ let p = e => {
             children: (0, i.jsx)(c.A, {
                 targetElementRef: l,
                 userId: t.id,
-                guildId: r,
+                guildId: a,
                 newAnalyticsLocations: [d.A.AVATAR],
                 position: "left",
                 clickTrap: !0,
                 children: e => (0, i.jsx)(s.m_, {
-                    text: m.Ay.getName(r, void 0, t),
+                    text: m.Ay.getName(a, void 0, t),
                     children: (0, i.jsx)(o.euF, {
                         ...e,
                         ref: l,
-                        src: t.getAvatarURL(r, 24),
+                        src: t.getAvatarURL(a, 24),
                         "aria-label": t.username,
                         size: o._3J.SIZE_24,
                         className: h.pO
@@ -54,8 +54,8 @@ let p = e => {
         let {
             partySize: t,
             members: n,
-            minAvatarsShown: a = 1,
-            maxAvatarsShown: r = 2,
+            minAvatarsShown: r = 1,
+            maxAvatarsShown: a = 2,
             guildId: s,
             overflowRef: o
         } = e, {
@@ -63,22 +63,22 @@ let p = e => {
             totalSize: c,
             knownSize: u
         } = t;
-        if (c < a) return null;
-        let m = l()(n).filter(_.Vq).take(r).map(e => (0, i.jsx)(p, {
+        if (c < r) return null;
+        let m = l()(n).filter(_.Vq).take(a).map(e => (0, i.jsx)(p, {
             member: e,
             guildId: s
         }, e.id)).value();
-        for (let e = 0; e < d && m.length < r; e++) m.push((0, i.jsx)(p, {
+        for (let e = 0; e < d && m.length < a; e++) m.push((0, i.jsx)(p, {
             guildId: s
         }, `unknown-member-${e}`));
         let g = c - u - d;
-        for (let e = 0; e < g && m.length < r; e++) m.push((0, i.jsx)(p, {
+        for (let e = 0; e < g && m.length < a; e++) m.push((0, i.jsx)(p, {
             empty: !0,
             guildId: s
         }, `empty-member-${e}`));
         let A = Math.max(Math.min(c - m.length, 99), 0);
         if (1 === A) {
-            let e = n[r];
+            let e = n[a];
             m.push((0, i.jsx)(p, {
                 member: e,
                 guildId: s

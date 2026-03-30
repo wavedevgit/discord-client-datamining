@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(479026),
     I = n(699976),
     N = n(652215),
-    b = n(788868),
-    S = n(518477),
+    S = n(788868),
+    b = n(518477),
     T = n(985018),
     v = n(444239);
 let y = I.Z.SIZE_90;
@@ -45,14 +45,14 @@ function j(e) {
         trackUserProfileWishlistAction: m
     } = (0, g.NJ)(), _ = s.useCallback(() => {
         m({
-            action: S.Mq.PRESS_WISHLIST_BREADCRUMB_CARD,
+            action: b.Mq.PRESS_WISHLIST_BREADCRUMB_CARD,
             skuId: t.id,
             wishlistId: l,
             productLines: new Set([t.productLine])
         }), u()
     }, [t, l, u, m]), C = s.useCallback(() => {
         m({
-            action: S.Mq.PRESS_WISHLIST_BREADCRUMB_CARD,
+            action: b.Mq.PRESS_WISHLIST_BREADCRUMB_CARD,
             skuId: t.id,
             wishlistId: l,
             productLines: new Set([t.productLine])
@@ -60,7 +60,7 @@ function j(e) {
     }, [h, t.id, l, t.productLine, m]), {
         label: I,
         icon: N,
-        isPromptingPurchase: b
+        isPromptingPurchase: S
     } = (0, x.h)({
         sku: t,
         wishlistOwner: n,
@@ -89,7 +89,7 @@ function j(e) {
                 onHoverOrFocusChange: R,
                 children: (0, i.jsx)(x.A, {
                     spec: y,
-                    onClick: b ? C : _,
+                    onClick: S ? C : _,
                     isHoveringOrFocusing: j,
                     label: I,
                     icon: N
@@ -115,7 +115,7 @@ function R(e) {
         (0, _.a)(t, {
             isGift: !0,
             giftRecipient: n,
-            giftingOrigin: b.vQ.USER_PROFILE_WISHLIST
+            giftingOrigin: S.vQ.USER_PROFILE_WISHLIST
         }, {
             analyticsLocations: o
         })
@@ -125,7 +125,7 @@ function R(e) {
             applicationId: t.applicationId,
             isStorefront: !1,
             giftRecipient: n,
-            giftingOrigin: b.vQ.USER_PROFILE_WISHLIST,
+            giftingOrigin: S.vQ.USER_PROFILE_WISHLIST,
             analyticsLocations: o
         })
     }, [t.id, t.applicationId, n, o]), p = s.useMemo(() => ({
@@ -155,14 +155,14 @@ function O(e) {
         (0, A.A)({
             skuId: t.id,
             isGift: !0,
-            giftingOrigin: b.vQ.USER_PROFILE_WISHLIST,
+            giftingOrigin: S.vQ.USER_PROFILE_WISHLIST,
             analyticsLocations: l ?? [],
             giftRecipient: n
         })
     }, [t.id, n, l]), d = (0, C.e)({
         sku: t,
         giftRecipient: n,
-        giftingOrigin: b.vQ.USER_PROFILE_WISHLIST,
+        giftingOrigin: S.vQ.USER_PROFILE_WISHLIST,
         analyticsLocations: l
     }), u = s.useMemo(() => {
         switch (t?.tenantMetadata?.collectibles?.type) {

@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(139286),
     I = n(47167),
     N = n(713517),
-    b = n(854627),
-    S = n(10862),
+    S = n(854627),
+    b = n(10862),
     T = n(164891),
     v = n(135635),
     y = n(696451),
@@ -197,7 +197,7 @@ function H(e) {
         avatarDecorationSrc: ee,
         avatarSrc: et,
         eventHandlers: en
-    } = (0, b.A)({
+    } = (0, S.A)({
         userId: n.id,
         size: h._3J.SIZE_24,
         animateOnHover: !x,
@@ -236,7 +236,7 @@ function H(e) {
                 children: ei
             }), (er || ea) && (0, i.jsxs)("div", {
                 className: P.J2,
-                children: [er ? (0, i.jsx)(S.A, {
+                children: [er ? (0, i.jsx)(b.A, {
                     size: "custom",
                     color: Q,
                     channel: q,

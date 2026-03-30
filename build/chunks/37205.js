@@ -3,9 +3,9 @@ n.d(t, {
     A: () => H
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    r = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(284009),
     o = n.n(s),
     d = n(735438),
@@ -46,11 +46,11 @@ function H(e) {
     let {
         invite: t,
         currentUserId: n,
-        message: r,
+        message: a,
         guild: s,
         onTransitionToInviteChannel: d,
         onAcceptInstantInvite: C
-    } = e, I = (0, w.xR)("VoiceInviteEmbed"), b = a.useRef(null), k = s ?? null;
+    } = e, I = (0, w.xR)("VoiceInviteEmbed"), b = r.useRef(null), k = s ?? null;
     null == k && null != t.guild && (k = P.DY(t.guild));
     let H = null != t.channel ? (0, y.OY)(t.channel) : null;
     o()(null != k, "Voice Invite Embed must be used in context of a guild."), o()(null != H, "Voice Invite Embed must be able to resolve an invite channel.");
@@ -67,20 +67,20 @@ function H(e) {
                 currentUserId: t,
                 author: n,
                 voiceStates: i
-            } = e, a = n.id === t, r = i.length > 0, l = i.length;
-            return r ? {
-                label: a ? G.intl.format(G.t["2RWMFV"], {
+            } = e, r = n.id === t, a = i.length > 0, l = i.length;
+            return a ? {
+                label: r ? G.intl.format(G.t["2RWMFV"], {
                     othersCount: l
                 }) : G.intl.format(G.t.Da7tZx, {
                     othersCount: l
                 })
             } : {
-                label: a ? G.intl.string(G.t.DVDvCD) : G.intl.string(G.t.TY77rq),
+                label: r ? G.intl.string(G.t.DVDvCD) : G.intl.string(G.t.TY77rq),
                 sublabel: G.intl.string(G.t.wM2WTM)
             }
         }({
             currentUserId: n,
-            author: r.author,
+            author: a.author,
             voiceStates: z
         }),
         K = (0, u.bG)([j.A], () => null != j.A.getGuild(k.id), [k.id]),
@@ -89,76 +89,76 @@ function H(e) {
         {
             analyticsLocations: Z
         } = (0, f.Ay)(x.A.INVITE_EMBED),
-        $ = a.useCallback(() => {
+        $ = r.useCallback(() => {
             let e = K ? "transition" : "accept";
             K ? d() : C(), (0, h.he)({
                 invite: t,
                 action: e,
-                inviter_id: r.author.id,
-                invite_message_id: r.id
+                inviter_id: a.author.id,
+                invite_message_id: a.id
             }, Z)
-        }, [t, r, Z, K, d, C]),
-        ee = a.useCallback(() => {
+        }, [t, a, Z, K, d, C]),
+        ee = r.useCallback(() => {
             K ? (0, v.iN)(H.id) : C({
                 autoJoin: !1
             })
         }, [H.id, K, C]),
         et = (0, U.A)({
             invite: t,
-            message: r,
+            message: a,
             voiceStates: z,
             guildId: k.id,
             channelId: H.id
         }),
         en = I.activityPreviewEnabled && null != et,
-        ei = a.useCallback(() => {
+        ei = r.useCallback(() => {
             null != et && (K ? (p.default.selectVoiceChannel(et.channelId), (0, g.Nl)(et)) : C(), (0, h.he)({
                 invite: t,
                 action: K ? "watch" : "accept",
-                inviter_id: r.author.id,
-                invite_message_id: r.id
+                inviter_id: a.author.id,
+                invite_message_id: a.id
             }, Z))
-        }, [et, K, t, r, Z, C]),
-        ea = (0, u.bG)([A.A], () => A.A.useReducedMotion),
-        er = a.useRef(null),
-        [el, es] = a.useState({
+        }, [et, K, t, a, Z, C]),
+        er = (0, u.bG)([A.A], () => A.A.useReducedMotion),
+        ea = r.useRef(null),
+        [el, es] = r.useState({
             percentX: 0,
             percentY: 0,
             proximity: 0
         }),
         eo = (0, u.bG)([T.A], () => {
             let e = z.map(e => e.user),
-                t = e.find(e => e.id === r.author.id),
-                n = e.filter(e => e.id !== r.author.id).sort((e, t) => {
+                t = e.find(e => e.id === a.author.id),
+                n = e.filter(e => e.id !== a.author.id).sort((e, t) => {
                     let n = T.A.getUserAffinity(e.id)?.vcProbability ?? 0;
                     return (T.A.getUserAffinity(t.id)?.vcProbability ?? 0) - n
                 });
             return null != t ? [t, ...n] : n
-        }, [z, r.author.id]),
-        ed = a.useMemo(() => c().throttle(es, 20), [es]);
-    a.useEffect(() => () => ed.cancel(), [ed]);
-    let ec = a.useCallback(e => {
-            if (ea) return;
-            let t = er.current?.getBoundingClientRect();
+        }, [z, a.author.id]),
+        ed = r.useMemo(() => c().throttle(es, 20), [es]);
+    r.useEffect(() => () => ed.cancel(), [ed]);
+    let ec = r.useCallback(e => {
+            if (er) return;
+            let t = ea.current?.getBoundingClientRect();
             if (null == t) return;
             let n = (e.clientX - t.left) / t.width * 2 - 1,
                 i = (e.clientY - t.top) / t.height * 2 - 1,
-                a = 0,
-                r = b.current?.getBoundingClientRect();
-            if (null != r) {
-                let n = r.left + r.width / 2,
-                    i = r.top + r.height / 2,
+                r = 0,
+                a = b.current?.getBoundingClientRect();
+            if (null != a) {
+                let n = a.left + a.width / 2,
+                    i = a.top + a.height / 2,
                     l = e.clientX - n,
                     s = e.clientY - i;
-                a = 2 * Math.exp(-Math.sqrt(l * l + s * s) / (.2 * Math.sqrt(t.width ** 2 + t.height ** 2)))
+                r = 2 * Math.exp(-Math.sqrt(l * l + s * s) / (.2 * Math.sqrt(t.width ** 2 + t.height ** 2)))
             }
             ed({
                 percentX: n,
                 percentY: i,
-                proximity: a
+                proximity: r
             })
-        }, [ea, ed]),
-        eu = a.useCallback(() => {
+        }, [er, ed]),
+        eu = r.useCallback(() => {
             ed.cancel(), es({
                 percentX: 0,
                 percentY: 0,
@@ -166,7 +166,7 @@ function H(e) {
             })
         }, [ed]);
     return (0, i.jsxs)("div", {
-        ref: er,
+        ref: ea,
         className: l()(F.kL, {
             [F.VD]: en
         }),
@@ -243,23 +243,23 @@ function V(e) {
     let {
         guildId: t,
         channelId: n,
-        members: a
+        members: r
     } = e;
-    return a.length > 4 ? (0, i.jsx)(q, {
+    return r.length > 4 ? (0, i.jsx)(q, {
         guildId: t,
         channelId: n,
-        members: a
+        members: r
     }) : (0, i.jsx)("div", {
         className: F.WM,
         children: (0, i.jsx)(b.A, {
             guildId: t,
             partySize: {
-                knownSize: a.length,
+                knownSize: r.length,
                 unknownSize: 0,
-                totalSize: a.length
+                totalSize: r.length
             },
             maxAvatarsShown: 3,
-            members: a
+            members: r
         })
     })
 }
@@ -268,14 +268,14 @@ function q(e) {
     let {
         guildId: t,
         channelId: n,
-        members: r
-    } = e, l = a.useRef(null), {
+        members: a
+    } = e, l = r.useRef(null), {
         isHoveringOrFocusing: s
     } = (0, C.A)(l);
     return (0, i.jsx)(k.$, {
         guildId: t,
         channelId: n,
-        users: r,
+        users: a,
         targetElementRef: l,
         shouldShow: s,
         children: e => (0, i.jsx)("div", {
@@ -284,12 +284,12 @@ function q(e) {
             children: (0, i.jsx)(b.A, {
                 guildId: t,
                 partySize: {
-                    knownSize: r.length,
+                    knownSize: a.length,
                     unknownSize: 0,
-                    totalSize: r.length
+                    totalSize: a.length
                 },
                 maxAvatarsShown: 3,
-                members: r,
+                members: a,
                 overflowRef: l
             })
         })
@@ -301,15 +301,15 @@ function W(e) {
         className: t,
         stream: n
     } = e, {
-        previewUrl: a,
-        isLoading: r
-    } = (0, I.A)(n.guildId, n.channelId, n.ownerId), s = null != a && !r;
+        previewUrl: r,
+        isLoading: a
+    } = (0, I.A)(n.guildId, n.channelId, n.ownerId), s = null != r && !a;
     return (0, i.jsx)("div", {
         className: l()(t, F.rr, {
             [F.pc]: !s
         }),
         style: {
-            "--custom-bg-url": s ? `url(${a})` : "unset"
+            "--custom-bg-url": s ? `url(${r})` : "unset"
         },
         children: (0, i.jsx)("div", {
             className: F.bW

@@ -3,19 +3,19 @@ n.d(t, {
     A: () => u
 });
 var i = n(735438),
-    a = n.n(i),
-    r = n(223637),
+    r = n.n(i),
+    a = n(223637),
     l = n(542664),
     s = n(46054);
-let o = a().omit(l.A.RULES, ["codeBlock", "heading"]),
+let o = r().omit(l.A.RULES, ["codeBlock", "heading"]),
     d = {
-        ...r.A,
+        ...a.A,
         parse: function(e, t, n) {
-            let i = r.A.parse(e, t, n),
-                a = Math.min(6, (n.initialHeaderLevel ?? 3) + i.level);
+            let i = a.A.parse(e, t, n),
+                r = Math.min(6, (n.initialHeaderLevel ?? 3) + i.level);
             return {
                 ...i,
-                level: a
+                level: r
             }
         }
     },

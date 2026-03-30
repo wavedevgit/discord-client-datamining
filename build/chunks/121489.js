@@ -2,32 +2,32 @@
 n.d(t, {
     _O: () => s,
     dP: () => l,
-    wQ: () => r
+    wQ: () => a
 });
 var i = n(954571),
-    a = n(652215);
+    r = n(652215);
 
-function r(e, t, n, r) {
-    i.default.track(a.HAw.VOICE_MESSAGE_PLAYBACK_STARTED, {
+function a(e, t, n, a) {
+    i.default.track(r.HAw.VOICE_MESSAGE_PLAYBACK_STARTED, {
         message_id: e,
         total_duration_secs: t,
         start_duration_secs: Math.min(t ?? n, n),
-        sender_user_id: r
+        sender_user_id: a
     })
 }
 
-function l(e, t, n, r, l) {
-    i.default.track(a.HAw.VOICE_MESSAGE_PLAYBACK_ENDED, {
+function l(e, t, n, a, l) {
+    i.default.track(r.HAw.VOICE_MESSAGE_PLAYBACK_ENDED, {
         message_id: e,
         total_duration_secs: t,
         end_duration_secs: Math.min(t ?? n, n),
-        sender_user_id: r,
+        sender_user_id: a,
         duration_listening_secs: l
     })
 }
 
 function s(e, t) {
-    i.default.track(a.HAw.VOICE_MESSAGE_PLAYBACK_FAILED, {
+    i.default.track(r.HAw.VOICE_MESSAGE_PLAYBACK_FAILED, {
         message_id: e,
         error_message: t
     })

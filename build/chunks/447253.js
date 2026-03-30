@@ -92,8 +92,8 @@ function g(e) {
             ...I
         },
         "aria-setsize": N,
-        "aria-posinset": b
-    } = e, [S, T] = s.useState(!1), v = s.useCallback(() => {
+        "aria-posinset": S
+    } = e, [b, T] = s.useState(!1), v = s.useCallback(() => {
         l || T(!0), x?.(!0)
     }, [l, x]), y = s.useCallback(() => {
         l || T(!1), x?.(!1)
@@ -113,7 +113,7 @@ function g(e) {
             ...I,
             role: "treeitem",
             "aria-setsize": N,
-            "aria-posinset": b,
+            "aria-posinset": S,
             "aria-expanded": n,
             "aria-owns": m,
             children: [(0, i.jsx)(o.AC4, {
@@ -136,7 +136,7 @@ function g(e) {
                         children: g
                     }) : (0, i.jsx)(_, {
                         folderNode: t,
-                        hovered: S,
+                        hovered: b,
                         sorting: l
                     })
                 })

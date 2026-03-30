@@ -25,7 +25,7 @@ var i = n(627968),
     I = n(985018),
     N = n(826427);
 
-function b(e) {
+function S(e) {
     let {
         icon: t,
         users: n
@@ -42,7 +42,7 @@ function b(e) {
     })
 }
 
-function S(e) {
+function b(e) {
     let {
         muteConfig: t,
         className: n
@@ -83,15 +83,15 @@ function T(e) {
             streamUsers: v,
             activityUsers: A
         }),
-        U = (0, i.jsx)(b, {
+        U = (0, i.jsx)(S, {
             icon: c.HKD,
             users: G
         }),
-        P = (0, i.jsx)(b, {
+        P = (0, i.jsx)(S, {
             icon: c.Fzq,
             users: D
         }),
-        w = (0, i.jsx)(b, {
+        w = (0, i.jsx)(S, {
             icon: c.k9F,
             users: M
         }),
@@ -103,7 +103,7 @@ function T(e) {
             muteConfig: f.Ay.getChannelMuteConfig(null, L)
         }), [L]);
     return (0, i.jsxs)(i.Fragment, {
-        children: [U, P, w, k ? (0, i.jsx)(S, {
+        children: [U, P, w, k ? (0, i.jsx)(b, {
             muteConfig: V,
             className: a()(N.LM, {
                 [N.Sx]: null != U || null != P

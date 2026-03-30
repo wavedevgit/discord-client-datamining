@@ -3,8 +3,8 @@ n.d(t, {
     A: () => U
 }), n(321073);
 var i = n(627968),
-    a = n(64700),
-    r = n(379834),
+    r = n(64700),
+    a = n(379834),
     l = n(934551),
     s = n(27989),
     o = n(311907),
@@ -41,12 +41,12 @@ function O(e) {
     let {
         presenceActivity: t,
         remoteJoinPlatform: n,
-        isGameLaunchable: r
+        isGameLaunchable: a
     } = e, o = (0, L.z4)({
         platforms: t?.supported_platforms,
         currentPlatform: w.yTV.DESKTOP,
-        isGameLaunchable: r
-    }), c = a.useMemo(() => o.map(e => {
+        isGameLaunchable: a
+    }), c = r.useMemo(() => o.map(e => {
         switch (e) {
             case L.FL.MOBILE:
                 return (0, i.jsx)(d.u6o, {
@@ -132,7 +132,7 @@ function U(e) {
         startAuthorization: J,
         accountLinkButtonRef: X,
         renderAccountLinkUpsell: Z
-    } = e, $ = V?.timestamps?.start ?? V?.created_at, ee = a.useMemo(() => null != $ ? (0, i.jsxs)("div", {
+    } = e, $ = V?.timestamps?.start ?? V?.created_at, ee = r.useMemo(() => null != $ ? (0, i.jsxs)("div", {
         className: k.Ym,
         children: [(0, i.jsx)(d._xR, {
             size: "xxs",
@@ -146,21 +146,21 @@ function U(e) {
             textTabularNumbers: !1,
             textFontCode: !1
         })]
-    }) : null, [$, V?.timestamps?.end]), et = (0, v.v)(t), en = (0, x.s)(n.id), ei = a.useMemo(() => en.some(e => (0, g.CZ)(e) === r.m.GLOBAL) ? (0, i.jsxs)(i.Fragment, {
+    }) : null, [$, V?.timestamps?.end]), et = (0, v.v)(t), en = (0, x.s)(n.id), ei = r.useMemo(() => en.some(e => (0, g.CZ)(e) === a.m.GLOBAL) ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.Y3C, {
             size: "xxs",
             color: "currentColor"
         }), D.intl.string(D.t.TsWCdW)]
-    }) : null, [en]), ea = a.useMemo(() => (0, i.jsxs)(d.Text, {
+    }) : null, [en]), er = r.useMemo(() => (0, i.jsxs)(d.Text, {
         variant: "text-xs/normal",
         className: k.dS,
         color: "none",
         lineClamp: 2,
         children: [et ? (0, I.YC)(t, l, s, y, !1) : ee, et ? null : ei]
-    }), [et, t, l, s, y, ee, ei]), er = a.useMemo(() => (0, i.jsxs)("div", {
+    }), [et, t, l, s, y, ee, ei]), ea = r.useMemo(() => (0, i.jsxs)("div", {
         className: k.pq,
-        children: [ea, W || et ? null : z]
-    }), [ea, W, et, z]), el = !!L, es = (0, A.e)(n), {
+        children: [er, W || et ? null : z]
+    }), [er, W, et, z]), el = !!L, es = (0, A.e)(n), {
         canJoin: eo,
         remoteJoinPlatform: ed
     } = (0, E.D)({
@@ -175,7 +175,7 @@ function U(e) {
     }), ec = (0, E.M)(V, q, t, n), eu = (0, b.E)(V, t, n, y), e_ = (0, T.w)(q, V), em = (0, S.L)(V), eh = (0, o.bG)([f.A], () => null != V && null != V.application_id && f.A.getState(V.application_id, w.xL.JOIN) === w.eAD.LOADING), {
         actions: ep,
         hasAccountLinkButton: eg
-    } = a.useMemo(() => {
+    } = r.useMemo(() => {
         let e = null,
             n = !0,
             i = !1;
@@ -240,8 +240,8 @@ function U(e) {
             onClick: () => {},
             disabled: !0
         } : null != U && (e = U, n = !1);
-        let a = [];
-        return null != e && (a.push(e), Q && n && (a.push({
+        let r = [];
+        return null != e && (r.push(e), Q && n && (r.push({
             label: D.intl.string(D.t.lw71Nf),
             trackingArea: h.kY.CONNECT_ACCOUNT,
             onClick: () => {
@@ -253,12 +253,12 @@ function U(e) {
             iconButton: !0,
             buttonRef: X
         }), i = !0)), {
-            actions: a,
+            actions: r,
             hasAccountLinkButton: i
         }
     }, [eo, ec, eu, e_, U, t.author.id, t.id, V, s.id, s.guild_id, Y, ed, y, eh, Q, J, X, K, em]), eA = ep.some(e => e.trackingArea === h.kY.CLOUD_PLAY);
     (0, P.A)(eA, Y);
-    let ex = a.useMemo(() => e_ ? null : (0, i.jsx)(O, {
+    let ex = r.useMemo(() => e_ ? null : (0, i.jsx)(O, {
         presenceActivity: V,
         remoteJoinPlatform: ed,
         isGameLaunchable: el
@@ -271,7 +271,7 @@ function U(e) {
             onClickBanner: G,
             bannerAspectRatio: m.u.ACTIVITY,
             iconSrc: F ?? void 0,
-            info: er,
+            info: ea,
             actions: ep,
             primaryActionFirst: !0,
             onClickContent: G,

@@ -3,8 +3,8 @@ n.d(t, {
     A: () => d
 });
 var i = n(64700),
-    a = n(157559),
-    r = n(198982),
+    r = n(157559),
+    a = n(198982),
     l = n(306522),
     s = n(922482),
     o = n(985018);
@@ -26,8 +26,8 @@ function d(e, t) {
                     });
                     await s.R(i)
                 } catch (t) {
-                    let e = t instanceof r.LG ? t.getAnyErrorMessage() : void 0;
-                    a.A.show({
+                    let e = t instanceof a.LG ? t.getAnyErrorMessage() : void 0;
+                    r.A.show({
                         title: o.intl.string(o.t.R0RpRX),
                         body: e ?? o.intl.string(o.t.eAn6z2)
                     })

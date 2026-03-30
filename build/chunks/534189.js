@@ -25,8 +25,8 @@ var s = n(934551),
     C = n(501193),
     I = n(383448),
     N = n(900179),
-    b = n(646986),
-    S = n(946356),
+    S = n(646986),
+    b = n(946356),
     T = n(810396),
     v = n(243166),
     y = n(652215),
@@ -70,13 +70,13 @@ function L(e) {
                 isVisible: D,
                 onOpenProfile: G
             })
-        }), U === y.eA$.PENDING_INCOMING && (0, i.jsx)(S.A.Overlay, {
+        }), U === y.eA$.PENDING_INCOMING && (0, i.jsx)(b.A.Overlay, {
             children: (0, i.jsx)(x.A, {
                 user: t,
                 channelId: M.id,
                 applicationId: P
             })
-        }), w.map(e => (0, i.jsx)(S.A.Overlay, {
+        }), w.map(e => (0, i.jsx)(b.A.Overlay, {
             children: (0, i.jsx)(x.A, {
                 user: t,
                 isGameRelationship: !0,
@@ -85,11 +85,11 @@ function L(e) {
             })
         }, e.applicationId)), (0, i.jsx)(I.A, {
             user: t
-        }), L?.private && (0, i.jsx)(S.A.Overlay, {
+        }), L?.private && (0, i.jsx)(b.A.Overlay, {
             children: (0, i.jsx)(C.A, {
                 username: h.Ay.getName(null, M.id, t)
             })
-        }), t.isProvisional && (0, i.jsx)(S.A.Overlay, {
+        }), t.isProvisional && (0, i.jsx)(b.A.Overlay, {
             children: (0, i.jsx)(N.A, {
                 heading: R.intl.string(R.t.Iyka0U),
                 headingIcon: (0, i.jsx)(s.CircleErrorIcon, {
@@ -101,11 +101,11 @@ function L(e) {
                     userId: t.id
                 })
             })
-        }), (0, i.jsx)(b.A, {
+        }), (0, i.jsx)(S.A, {
             user: t,
             currentUser: n,
             onOpenUserProfileModal: G
-        }), (0, i.jsxs)(S.A.Overlay, {
+        }), (0, i.jsxs)(b.A.Overlay, {
             className: O.Lw,
             children: [!V && L?.bio != null && L?.bio !== "" && (0, i.jsx)(N.A, {
                 heading: R.intl.string(R.t.ZzAR2Y),

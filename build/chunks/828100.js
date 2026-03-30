@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(725323),
     I = n(611924),
     N = n(95550),
-    b = n(380335),
-    S = n(309199),
+    S = n(380335),
+    b = n(309199),
     T = n(157550),
     v = n(97469),
     y = n(734057),
@@ -374,9 +374,9 @@ let P = e => {
         theme: l,
         children: a,
         listScrollerRef: d
-    } = e, h = s.Children.count(a), _ = y.A.getMutablePrivateChannels(), p = (0, S.uX)(_), f = (0, c.yK)([R.default, b.A, T.A], () => {
+    } = e, h = s.Children.count(a), _ = y.A.getMutablePrivateChannels(), p = (0, b.uX)(_), f = (0, c.yK)([R.default, S.A, T.A], () => {
         let e = R.default.getPrivateChannelIds();
-        return (0, S.eh)(e, [b.A, T.A])
+        return (0, b.eh)(e, [S.A, T.A])
     });
     (0, I.P)(C._);
     let {

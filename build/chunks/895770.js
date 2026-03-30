@@ -25,10 +25,10 @@ function v(e) {
         titleClassName: v,
         variant: g = "clickable",
         location: f
-    } = e, b = (0, o.A)(a.gameId, "cover"), {
-        containerClass: j,
-        boostGemColor: p,
-        boostPriceTextColor: h,
+    } = e, j = (0, o.A)(a.gameId, "cover"), {
+        containerClass: b,
+        boostGemColor: h,
+        boostPriceTextColor: p,
         handleClick: N
     } = {
         clickable: {
@@ -54,14 +54,14 @@ function v(e) {
     } [g];
     return (0, l.jsxs)(r.DUT, {
         "aria-disabled": "disabled" === g,
-        className: i()(m.LO, j, t),
+        className: i()(m.LO, b, t),
         onClick: N,
         children: [(0, l.jsxs)("div", {
             className: i()(m.Rf, x),
             children: [(0, l.jsx)("img", {
                 className: m.Sl,
                 alt: "",
-                src: b ?? ""
+                src: j ?? ""
             }), (0, l.jsx)("div", {
                 className: m.Gj
             }), (0, l.jsx)("div", {
@@ -78,10 +78,10 @@ function v(e) {
                 className: m.PW,
                 children: [(0, l.jsx)(r._Jp, {
                     size: "sm",
-                    color: p
+                    color: h
                 }), (0, l.jsx)(r.Text, {
                     variant: "text-sm/medium",
-                    color: h,
+                    color: p,
                     children: u.intl.formatToPlainString(a.plans.length > 1 ? c.default["G/aTXi"] : c.default.r9pa9K, {
                         boostCount: a.baseCost
                     })

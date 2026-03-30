@@ -3,9 +3,9 @@ n.d(t, {
     M: () => m
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    r = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(341915),
     o = n(73473),
     d = n(327247),
@@ -17,13 +17,13 @@ function m(e) {
     let {
         quest: t,
         location: n,
-        questContentPosition: r,
+        questContentPosition: a,
         sourceQuestContent: m
-    } = e, [h, p] = a.useState(!1), g = () => p(!0), A = () => p(!1);
+    } = e, [h, p] = r.useState(!1), g = () => p(!0), A = () => p(!1);
     return (0, i.jsx)(o.R, {
         questOrQuests: t,
         questContent: n,
-        questContentPosition: r,
+        questContentPosition: a,
         trackGuildAndChannelMetadata: n === s.uF.QUESTS_EMBED,
         sourceQuestContent: m,
         children: e => (0, i.jsxs)("div", {
@@ -44,7 +44,7 @@ function m(e) {
                 quest: t,
                 location: n,
                 isInteracting: h,
-                contentPosition: r,
+                contentPosition: a,
                 sourceQuestContent: m
             })]
         })

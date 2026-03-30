@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(320697),
     I = n(394953),
     N = n(628325),
-    b = n(524628),
-    S = n(849077),
+    S = n(524628),
+    b = n(849077),
     T = n(652215),
     v = n(228160),
     y = n(985018),
@@ -55,7 +55,7 @@ function O(e) {
                 variant: "text-sm/medium",
                 color: "text-subtle",
                 className: j.P7,
-                children: (0, r.capitalize)(y.intl.string(S.v7[t]).toLowerCase())
+                children: (0, r.capitalize)(y.intl.string(b.v7[t]).toLowerCase())
             }), (0, i.jsx)(u.abt, {
                 size: "xxs",
                 className: j.ai
@@ -63,7 +63,7 @@ function O(e) {
         })
     })
 }
-let L = [S.Ur.UNREAD, S.Ur.TODAY, S.Ur.YESTERDAY, S.Ur.OLDER];
+let L = [b.Ur.UNREAD, b.Ur.TODAY, b.Ur.YESTERDAY, b.Ur.OLDER];
 
 function M() {
     let {
@@ -138,7 +138,7 @@ function D(e) {
             let e = C.A.getChannelInfoMap();
             for (let n of t) {
                 let t = e[n];
-                if ((null == t || t.loadState === S.Ve.UNLOADED) && _.Ay.hasUnread(n)) return !0
+                if ((null == t || t.loadState === b.Ve.UNLOADED) && _.Ay.hasUnread(n)) return !0
             }
             return !1
         }, [t]));
@@ -162,32 +162,32 @@ function D(e) {
             let e = P.current?.getScrollerState();
             if (null == e) return;
             let t = .5 * e.offsetHeight;
-            e.scrollHeight - (e.scrollTop + e.offsetHeight) <= t && r?.(S.VA.USER_SCROLL)
+            e.scrollHeight - (e.scrollTop + e.offsetHeight) <= t && r?.(b.VA.USER_SCROLL)
         }, [r]),
         X = s.useMemo(() => {
             let e = {
-                    [S.Ur.UNREAD]: [],
-                    [S.Ur.TODAY]: [],
-                    [S.Ur.YESTERDAY]: [],
-                    [S.Ur.OLDER]: []
+                    [b.Ur.UNREAD]: [],
+                    [b.Ur.TODAY]: [],
+                    [b.Ur.YESTERDAY]: [],
+                    [b.Ur.OLDER]: []
                 },
                 t = {
-                    [S.Ur.UNREAD]: [],
-                    [S.Ur.TODAY]: [],
-                    [S.Ur.YESTERDAY]: [],
-                    [S.Ur.OLDER]: []
+                    [b.Ur.UNREAD]: [],
+                    [b.Ur.TODAY]: [],
+                    [b.Ur.YESTERDAY]: [],
+                    [b.Ur.OLDER]: []
                 },
                 i = {
-                    [S.Ur.UNREAD]: {},
-                    [S.Ur.TODAY]: {},
-                    [S.Ur.YESTERDAY]: {},
-                    [S.Ur.OLDER]: {}
+                    [b.Ur.UNREAD]: {},
+                    [b.Ur.TODAY]: {},
+                    [b.Ur.YESTERDAY]: {},
+                    [b.Ur.OLDER]: {}
                 };
             return (n.length > 0 || l.length > 0) && (o().each(l, e => {
-                e.kind === S.yL.MENTION ? t[S.Ur.UNREAD].push(e) : e.channelId in i[S.Ur.UNREAD] ? i[S.Ur.UNREAD][e.channelId].push(e) : i[S.Ur.UNREAD][e.channelId] = [e]
+                e.kind === b.yL.MENTION ? t[b.Ur.UNREAD].push(e) : e.channelId in i[b.Ur.UNREAD] ? i[b.Ur.UNREAD][e.channelId].push(e) : i[b.Ur.UNREAD][e.channelId] = [e]
             }), o().each(n, e => {
                 let n = (0, I.i7)(e);
-                e.kind === S.yL.MENTION ? t[n].push(e) : e.channelId in i[n] ? i[n][e.channelId].push(e) : i[n][e.channelId] = [e]
+                e.kind === b.yL.MENTION ? t[n].push(e) : e.channelId in i[n] ? i[n][e.channelId].push(e) : i[n][e.channelId] = [e]
             }), o().each(L, n => {
                 [...Object.values(i[n]).map(e => e.reverse()), ...t[n].map(e => [e])].sort((e, t) => p.default.compare(t[0].id, e[0].id)).forEach(t => {
                     e[n].push(t)
@@ -210,7 +210,7 @@ function D(e) {
                             viewId: U
                         })
                     }
-                }, t)), W[t] && e.push(...X[t].map(e => m(e, t === S.Ur.UNREAD))))
+                }, t)), W[t] && e.push(...X[t].map(e => m(e, t === b.Ur.UNREAD))))
             }), e
         }, [n, l, A, W, Y, X, G, m, Q, J, U]),
         Z = $[$.length - 1],
@@ -240,11 +240,11 @@ function D(e) {
         return null == t ? 0 : Math.max(0, Math.ceil(t.offsetHeight / 64) - e)
     }, [W, X]);
     s.useEffect(() => {
-        J || B || 0 >= ei() || (!ee || z) && r?.(S.VA.FILL_SCROLLER)
+        J || B || 0 >= ei() || (!ee || z) && r?.(b.VA.FILL_SCROLLER)
     }, [ei, r, J, B, ee, z]);
     let es = s.useMemo(() => {
         let e = Math.min(Math.max(2, ei()), 20);
-        return (0, i.jsx)(b.A, {
+        return (0, i.jsx)(S.A, {
             withHeader: !1,
             size: e
         })

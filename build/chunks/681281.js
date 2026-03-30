@@ -25,8 +25,8 @@ var s = n(503698),
     C = n(353428),
     I = n(267102),
     N = n(46054),
-    b = n(164203),
-    S = n(665691),
+    S = n(164203),
+    b = n(665691),
     T = n(123973),
     v = n(241756),
     y = n(447404),
@@ -190,7 +190,7 @@ function F(e) {
                 })]
             })
         }) : null,
-        B = (0, S.bG)({
+        B = (0, b.bG)({
             channelId: t.id
         });
     return (0, i.jsxs)("div", {
@@ -236,7 +236,7 @@ function F(e) {
                     channel: t
                 })]
             })
-        }), (0, i.jsx)(b.A, {
+        }), (0, i.jsx)(S.A, {
             channelId: t.id
         })]
     })

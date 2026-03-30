@@ -6,11 +6,11 @@ n.d(t, {
     y5: () => s
 });
 var i = n(627968),
-    a = n(64700);
-let r = a.createContext(void 0);
+    r = n(64700);
+let a = r.createContext(void 0);
 
 function l() {
-    let e = a.useContext(r);
+    let e = r.useContext(a);
     if (null == e) throw Error("No PollContextProvider found");
     return e
 }
@@ -20,11 +20,11 @@ function s(e) {
         children: t,
         message: n,
         poll: l
-    } = e, s = a.useMemo(() => ({
+    } = e, s = r.useMemo(() => ({
         message: n,
         poll: l
     }), [n, l]);
-    return (0, i.jsx)(r.Provider, {
+    return (0, i.jsx)(a.Provider, {
         value: s,
         children: t
     })
@@ -43,7 +43,7 @@ function d() {
     let {
         message: e
     } = l(), t = e.getChannelId();
-    return a.useMemo(() => ({
+    return r.useMemo(() => ({
         channelId: t,
         messageId: e.id
     }), [e.id, t])

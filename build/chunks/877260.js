@@ -12,8 +12,8 @@ var r = n(627968),
     c = n(397927),
     u = n(928039),
     d = n(932001),
-    h = n(97469),
-    _ = n(199966),
+    _ = n(97469),
+    h = n(199966),
     f = n(894858),
     m = n(397274),
     p = n(189857),
@@ -29,27 +29,27 @@ function x(e) {
         footer: a,
         emptyState: v,
         searchBar: x
-    } = e, A = f.A.useField("showNavigationMobile"), S = i.useRef(null), [N] = i.useState(t), {
+    } = e, S = f.A.useField("showNavigationMobile"), A = i.useRef(null), [N] = i.useState(t), {
         accessibleDirectory: C
-    } = (0, _._)(), j = i.useMemo(() => (0, p.Z)(N, C), [N, C]), [I] = (0, d.kn)(j.allDismissibleContents);
+    } = (0, h._)(), I = i.useMemo(() => (0, p.Z)(N, C), [N, C]), [j] = (0, d.kn)(I.allDismissibleContents);
     (0, y.B)({
-        visibleContent: I,
-        dismissibleBadges: j,
+        visibleContent: j,
+        dismissibleBadges: I,
         accessibleDirectory: C
     });
-    let [R, T] = i.useMemo(() => {
+    let [T, R] = i.useMemo(() => {
         let e = [],
             n = [];
         return t.layout.forEach(t => {
             t.hoisted ? e.push(t) : n.push(t)
         }), [e, n]
-    }, [t.layout]), k = (0, h.NC)(), w = (0, u.A)("settings-sidebar", S);
+    }, [t.layout]), k = (0, _.NC)(), w = (0, u.A)("settings-sidebar", A);
     return (0, r.jsx)(c.NPJ, {
         theme: k,
         children: e => (0, r.jsxs)("div", {
             className: l()(g.pz, e, {
                 [g.Hw]: o.Fr,
-                [g.n7]: A
+                [g.n7]: S
             }),
             children: [(0, r.jsxs)("div", {
                 className: g.gM,
@@ -63,13 +63,13 @@ function x(e) {
                         "aria-label": b.intl.string(b.t.cpT0Cq)
                     })
                 }), (0, r.jsx)("div", {
-                    children: R.map(e => (0, r.jsx)(E, {
+                    children: T.map(e => (0, r.jsx)(E, {
                         section: e,
-                        visibleContent: I,
-                        dismissibleBadges: j,
+                        visibleContent: j,
+                        dismissibleBadges: I,
                         hoisted: !0
                     }, e.key))
-                }), null != x && (0, r.jsx)(x, {}), null != v && 0 === T.length && (0, r.jsx)(v, {})]
+                }), null != x && (0, r.jsx)(x, {}), null != v && 0 === R.length && (0, r.jsx)(v, {})]
             }), (0, r.jsx)(s.hD, {
                 navigator: w,
                 children: (0, r.jsx)(s.PR, {
@@ -80,17 +80,17 @@ function x(e) {
                         } = e;
                         return (0, r.jsxs)(c.ChK, {
                             ref: e => {
-                                S.current = e, m.A.setSidebarScrollerRef(e), t.current = e?.getScrollerNode() ?? null
+                                A.current = e, m.A.setSidebarScrollerRef(e), t.current = e?.getScrollerNode() ?? null
                             },
                             className: g.Mt,
                             fade: !0,
                             ...n,
                             children: [(0, r.jsx)("nav", {
                                 className: g.C$,
-                                children: T.map(e => (0, r.jsx)(E, {
+                                children: R.map(e => (0, r.jsx)(E, {
                                     section: e,
-                                    visibleContent: I,
-                                    dismissibleBadges: j
+                                    visibleContent: j,
+                                    dismissibleBadges: I
                                 }, e.key))
                             }), null != a && (0, r.jsx)(a, {})]
                         })

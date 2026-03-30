@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(509536),
     I = n(201275),
     N = n(657048),
-    b = n(561010),
-    S = n(219065),
+    S = n(561010),
+    b = n(219065),
     T = n(342296),
     v = n(616356),
     y = n(696451),
@@ -53,7 +53,7 @@ let W = k.Ay.getEnableHardwareAcceleration(),
             sectionId: l,
             userId: a,
             guildOwnerId: r
-        } = e, o = s.useRef(null), d = (0, h.bG)([L.A], () => L.A.isTyping(t.id, a)), A = (0, h.bG)([y.Ay], () => y.Ay.getMember(t.guild_id, a)), g = (0, h.bG)([j.A], () => A?.colorRoleId != null ? j.A.getRole(t.guild_id, A.colorRoleId)?.name : void 0, [t.guild_id, A]), p = (0, h.bG)([M.default], () => M.default.getUser(a)), f = (0, h.bG)([M.default], () => M.default.getCurrentUser()), E = p?.id === f?.id, I = (0, h.bG)([R.A, O.A], () => E ? O.A.getStatus() : R.A.getStatus(a, t.guild_id)), N = (0, h.bG)([R.A], () => R.A.isMobileOnline(a)), b = (0, h.bG)([R.A, O.A], () => E ? O.A.getActivities() : R.A.getActivities(a, t.guild_id)), D = (0, h.bG)([v.A], () => v.A.getAnyStreamForUser(a)), G = (0, c.rm)(a), P = (0, h.bG)([S.A], () => S.A.canUserViewChannel(t.id, l, a)), k = p?.id != null && p.id === r, F = s.useCallback(e => {
+        } = e, o = s.useRef(null), d = (0, h.bG)([L.A], () => L.A.isTyping(t.id, a)), A = (0, h.bG)([y.Ay], () => y.Ay.getMember(t.guild_id, a)), g = (0, h.bG)([j.A], () => A?.colorRoleId != null ? j.A.getRole(t.guild_id, A.colorRoleId)?.name : void 0, [t.guild_id, A]), p = (0, h.bG)([M.default], () => M.default.getUser(a)), f = (0, h.bG)([M.default], () => M.default.getCurrentUser()), E = p?.id === f?.id, I = (0, h.bG)([R.A, O.A], () => E ? O.A.getStatus() : R.A.getStatus(a, t.guild_id)), N = (0, h.bG)([R.A], () => R.A.isMobileOnline(a)), S = (0, h.bG)([R.A, O.A], () => E ? O.A.getActivities() : R.A.getActivities(a, t.guild_id)), D = (0, h.bG)([v.A], () => v.A.getAnyStreamForUser(a)), G = (0, c.rm)(a), P = (0, h.bG)([b.A], () => b.A.canUserViewChannel(t.id, l, a)), k = p?.id != null && p.id === r, F = s.useCallback(e => {
             null != p && (0, m.L3)(e, async () => {
                 let {
                     default: e
@@ -113,7 +113,7 @@ let W = k.Ay.getEnableHardwareAcceleration(),
                     currentUser: f,
                     nick: A?.nick,
                     status: I,
-                    activities: b,
+                    activities: S,
                     colorString: A?.colorString,
                     colorStrings: A?.colorStrings,
                     colorRoleName: g,
@@ -205,8 +205,8 @@ function Q(e) {
         {
             analyticsLocations: I
         } = (0, f.Ay)(p.A.MEMBER_LIST),
-        N = (0, b.q)(x.id, E),
-        S = N.filter(e => e.userIds.length > 0).reverse()[0],
+        N = (0, S.q)(x.id, E),
+        b = N.filter(e => e.userIds.length > 0).reverse()[0],
         {
             navigator: T,
             listRef: v
@@ -301,8 +301,8 @@ function Q(e) {
                                 guildOwnerId: R
                             }, s[n])
                         },
-                        footerHeight: e => 80 * (N[e] === S && x.type === B.rbe.PRIVATE_THREAD),
-                        renderFooter: e => N[e.section] === S ? (0, i.jsx)(X, {
+                        footerHeight: e => 80 * (N[e] === b && x.type === B.rbe.PRIVATE_THREAD),
+                        renderFooter: e => N[e.section] === b ? (0, i.jsx)(X, {
                             channel: x
                         }, "footer") : null,
                         innerAriaLabel: H.intl.string(H.t["9Oq93m"]),

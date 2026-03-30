@@ -13,8 +13,8 @@ var r = n(627968),
     c = n(199966),
     u = n(963935),
     d = n(894858),
-    h = n(272053),
-    _ = n(189857),
+    _ = n(272053),
+    h = n(189857),
     f = n(674085),
     m = n(215566),
     p = n(362205),
@@ -30,21 +30,21 @@ function b(e) {
         dismissibleBadge: c,
         panelKey: u,
         listItemProps: d,
-        children: h
+        children: _
     } = e, {
-        icon: _,
+        icon: h,
         StronglyDiscouragedCustomComponent: p,
         usePersistentBadge: b,
         useTitle: g,
         variant: x = "default"
-    } = s, E = g?.(), A = function(e) {
+    } = s, E = g?.(), S = function(e) {
         switch (e) {
             case "default":
                 return "currentColor";
             case "destructive":
                 return "text-feedback-critical"
         }
-    }(x), S = function(e) {
+    }(x), A = function(e) {
         switch (e) {
             case "default":
                 return "currentColor";
@@ -68,17 +68,17 @@ function b(e) {
             onClick: n,
             children: [null != p ? (0, r.jsx)(p, {}) : (0, r.jsxs)("div", {
                 className: v.Ly,
-                children: [(0, r.jsx)(_, {
-                    color: S,
+                children: [(0, r.jsx)(h, {
+                    color: A,
                     size: y,
                     className: v.Kk
                 }), (0, r.jsx)(o.Text, {
                     variant: "text-md/medium",
-                    color: A,
+                    color: S,
                     children: E
                 })]
             }), C]
-        }), h]
+        }), _]
     })
 }
 
@@ -100,7 +100,7 @@ function g(e) {
         return e.length > 1 ? e : null
     }, [o]), g = null != o ? () => {
         let e = f === o.key && null != y ? y[0].key : o.key;
-        h.A.navigate(e, {
+        _.A.navigate(e, {
             animateSidebarScroll: !0,
             showNavigationMobile: !1
         })
@@ -108,14 +108,14 @@ function g(e) {
         categories: y,
         visibleContent: n,
         dismissibleBadges: a
-    }) : null, [v, y, n, a]), E = l ? "li" : "div", A = i.useMemo(() => (0, _.H)(t.key, n, a), [t.key, n, a]);
+    }) : null, [v, y, n, a]), E = l ? "li" : "div", S = i.useMemo(() => (0, h.H)(t.key, n, a), [t.key, n, a]);
     return l ? (0, r.jsx)(b, {
         tag: E,
         panelKey: o?.key,
         onClick: g,
         active: v,
         node: t,
-        dismissibleBadge: A,
+        dismissibleBadge: S,
         children: x
     }) : (0, r.jsx)(s.tG, {
         id: t.key,
@@ -125,7 +125,7 @@ function g(e) {
             onClick: g,
             active: v,
             node: t,
-            dismissibleBadge: A,
+            dismissibleBadge: S,
             listItemProps: e,
             children: x
         })

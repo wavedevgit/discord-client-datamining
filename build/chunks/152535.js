@@ -32,14 +32,14 @@ function m(e) {
         Component: I,
         play: N,
         events: {
-            onMouseEnter: b,
-            onMouseLeave: S
+            onMouseEnter: S,
+            onMouseLeave: b
         }
     } = (0, l.T)(), T = s.useCallback(e => {
-        "focus" !== e.type && (E(), b())
-    }, [E, b]), v = s.useCallback(() => {
-        null == m && (C(), S())
-    }, [C, S, m]), y = s.useCallback(() => {
+        "focus" !== e.type && (E(), S())
+    }, [E, S]), v = s.useCallback(() => {
+        null == m && (C(), b())
+    }, [C, b, m]), y = s.useCallback(() => {
         (0, o.X)(g, o.O.GIFTING), m === h.P.GIFTING ? (_?.(void 0), C()) : (null != m ? (N(), E()) : N(), _?.(h.P.GIFTING))
     }, [E, C, g, N, _, m]);
     return (0, i.jsx)(a.Y, {

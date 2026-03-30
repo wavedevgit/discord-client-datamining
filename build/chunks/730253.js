@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(616356),
     I = n(734057),
     N = n(309010),
-    b = n(977997),
-    S = n(661191),
+    S = n(977997),
+    b = n(661191),
     T = n(181079),
     v = n(422258),
     y = n(668267),
@@ -87,7 +87,7 @@ function F(e) {
             if (!F) return !1;
             let e = C.A.getCurrentUserActiveStream();
             return null != e && null != eh[e.channelId]
-        }), W = (0, a.bG)([C.A], () => C.A.getAllApplicationStreams().some(e => null != eh[e.channelId])), Y = (0, a.bG)([b.A], () => F && null != t && b.A.hasVideo(t), [F, t]), z = (0, a.yK)([d.Ay], () => S.default.keys(eh).reduce((e, t) => (e.push(...d.Ay.getEmbeddedActivitiesForChannel(t)), e), [])), q = (0, a.bG)([d.Ay], () => Array.from(d.Ay.getSelfEmbeddedActivities().values()).some(e => {
+        }), W = (0, a.bG)([C.A], () => C.A.getAllApplicationStreams().some(e => null != eh[e.channelId])), Y = (0, a.bG)([S.A], () => F && null != t && S.A.hasVideo(t), [F, t]), z = (0, a.yK)([d.Ay], () => b.default.keys(eh).reduce((e, t) => (e.push(...d.Ay.getEmbeddedActivitiesForChannel(t)), e), [])), q = (0, a.bG)([d.Ay], () => Array.from(d.Ay.getSelfEmbeddedActivities().values()).some(e => {
             let {
                 location: t
             } = e, n = (0, u.H)(t);
@@ -108,7 +108,7 @@ function F(e) {
         eN = s.useCallback((e, t) => {
             eC.current = !0, et(e, t)
         }, [et]),
-        eb = s.useCallback(e => {
+        eS = s.useCallback(e => {
             e && ((0, y.mv)("intro_dc"), (0, E.u)(D.YYv)), eI ? (ed || (0, v.tV)(!0, "favorites_button_onboarding"), e && (0, o.mMO)(async () => {
                 let {
                     default: e
@@ -162,7 +162,7 @@ function F(e) {
                         },
                         selected: eg || er,
                         onClick: () => {
-                            ee && eb(!1)
+                            ee && eS(!1)
                         },
                         onMouseEnter: () => eo(!0),
                         onMouseLeave: () => eo(!1),
@@ -204,7 +204,7 @@ function F(e) {
             actions: [{
                 icon: o.tvc,
                 text: eI ? k.intl.string(w.default["0lHa0Z"]) : k.intl.string(w.default["0nZZEk"]),
-                onClick: () => eb(!0),
+                onClick: () => eS(!0),
                 variant: eI ? void 0 : "expressive"
             }]
         })]

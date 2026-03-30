@@ -1,7 +1,7 @@
 /** chunk id: 359348 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => S
 });
 var i = n(627968),
     s = n(64700),
@@ -66,7 +66,7 @@ let N = e => {
             onRequestClose: c
         })
     },
-    b = () => {
+    S = () => {
         let e = s.useRef(null),
             {
                 parentAnalyticsLocation: t

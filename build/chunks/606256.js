@@ -28,8 +28,8 @@ let A = s.forwardRef(function(e, t) {
         className: C,
         "aria-label": I,
         children: N,
-        onMouseEnter: b,
-        onMouseLeave: S,
+        onMouseEnter: S,
+        onMouseLeave: b,
         onMouseDown: T
     } = e, v = (0, r.Vd)(n), [y, j] = s.useState(!1), R = "string" == typeof g && null == I ? g : I;
     return (0, i.jsxs)(d.c, {
@@ -50,10 +50,10 @@ let A = s.forwardRef(function(e, t) {
                 children: (0, i.jsx)(o.DUT, {
                     innerRef: t,
                     onMouseEnter: () => {
-                        b?.(), j(!0)
+                        S?.(), j(!0)
                     },
                     onMouseLeave: () => {
-                        S?.(), j(!1)
+                        b?.(), j(!1)
                     },
                     onMouseDown: T,
                     className: a()(h.oZ, C, {

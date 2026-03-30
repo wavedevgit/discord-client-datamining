@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(311907),
-    r = n(397927),
+var r = n(311907),
+    a = n(397927),
     l = n(456060),
     s = n(793574),
     o = n(688810),
@@ -40,14 +40,14 @@ function v(e) {
     } = (0, u.f)(T), P = A.Ay.getApplicationIconURL({
         id: T.id,
         icon: T.icon
-    }), w = (0, a.bG)([_.Ay, p.A], () => _.Ay.getVisibleRunningGames().find(e => {
+    }), w = (0, r.bG)([_.Ay, p.A], () => _.Ay.getVisibleRunningGames().find(e => {
         let {
             id: t
         } = e;
         if (t === T.id) return !0;
         let n = p.A.getGameByApplication(T);
         return null != n && t === n.id
-    })), M = (0, a.bG)([h.A], () => h.A.getCurrentUserActiveStream()), D = (0, a.bG)([g.A], () => g.A.getChannelId()), k = f.default.extractTimestamp(v.id) + C.M < Date.now(), O = (0, i.jsx)(i.Fragment, {
+    })), M = (0, r.bG)([h.A], () => h.A.getCurrentUserActiveStream()), D = (0, r.bG)([g.A], () => g.A.getChannelId()), k = f.default.extractTimestamp(v.id) + C.M < Date.now(), O = (0, i.jsx)(i.Fragment, {
         children: (0, l.Wf)(v, y, t)
     }), {
         analyticsLocations: U
@@ -65,7 +65,7 @@ function v(e) {
             trackingArea: c.kY.STREAM,
             disabled: G,
             onClick: () => {
-                null != w && ((0, x.isWindows)() ? (0, m.A)(w.pid) : (0, r.mMO)(async () => {
+                null != w && ((0, x.isWindows)() ? (0, m.A)(w.pid) : (0, a.mMO)(async () => {
                     let {
                         default: e
                     } = await Promise.all([n.e("96811"), n.e("48697")]).then(n.bind(n, 648230));

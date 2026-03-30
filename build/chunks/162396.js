@@ -12,8 +12,8 @@ var r = n(627968),
     c = n(212031),
     u = n(975571),
     d = n(809465),
-    h = n(652215),
-    _ = n(985018),
+    _ = n(652215),
+    h = n(985018),
     f = n(113853);
 
 function m(e) {
@@ -29,15 +29,15 @@ function m(e) {
         children: (0, r.jsxs)(s.rXV, {
             children: [(0, r.jsx)(s.Drp, {
                 id: "changelog",
-                label: _.intl.string(_.t.LRmNAl),
+                label: h.intl.string(h.t.LRmNAl),
                 action: () => (0, c.j)(!0)
             }), (0, r.jsx)(s.Drp, {
                 id: "acknowledgements",
-                label: _.intl.string(_.t["0nUKy3"]),
-                action: () => (0, o.A)(h.X7G.ACKNOWLEDGEMENTS)
+                label: h.intl.string(h.t["0nUKy3"]),
+                action: () => (0, o.A)(_.X7G.ACKNOWLEDGEMENTS)
             }), (0, r.jsx)(s.Drp, {
                 id: "support",
-                label: _.intl.string(_.t["Yl/Riu"]),
+                label: h.intl.string(h.t["Yl/Riu"]),
                 action: () => (0, o.A)(u.C)
             })]
         })
@@ -50,24 +50,24 @@ function p() {
         children: [(0, r.jsx)(d.A, {}), (0, r.jsxs)("div", {
             className: f.yJ,
             children: [(0, r.jsx)(s.MzZ, {
-                href: h.X7G.PRIVACY,
+                href: _.X7G.PRIVACY,
                 children: (0, r.jsx)(s.Text, {
                     tag: "span",
                     variant: "text-xxs/normal",
                     color: "currentColor",
-                    children: _.intl.string(_.t["Knf/f/"])
+                    children: h.intl.string(h.t["Knf/f/"])
                 })
             }), (0, r.jsx)("span", {
                 className: f.xE,
                 "aria-hidden": "true",
                 children: "•"
             }), (0, r.jsx)(s.MzZ, {
-                href: h.X7G.TERMS,
+                href: _.X7G.TERMS,
                 children: (0, r.jsx)(s.Text, {
                     tag: "span",
                     variant: "text-xxs/normal",
                     color: "currentColor",
-                    children: _.intl.string(_.t.uFSTGq)
+                    children: h.intl.string(h.t.uFSTGq)
                 })
             }), (0, r.jsx)("span", {
                 className: f.xE,
@@ -98,7 +98,7 @@ function p() {
                         tag: "span",
                         variant: "text-xxs/normal",
                         color: "currentColor",
-                        children: _.intl.string(_.t["UKOtz+"])
+                        children: h.intl.string(h.t["UKOtz+"])
                     })
                 })
             })]

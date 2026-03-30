@@ -31,8 +31,8 @@ let I = {
         topBar: I,
         bottomBar: I
     },
-    b = {},
-    S = {};
+    S = {},
+    b = {};
 
 function T(e) {
     let t = h.A.getChannel(e);
@@ -56,7 +56,7 @@ function y(e) {
 function j(e) {
     let {
         guildChannels: t
-    } = x.A.getGuildWithoutChangingGuildActionRows(e), n = t.getChannels(S[e] ?? []);
+    } = x.A.getGuildWithoutChangingGuildActionRows(e), n = t.getChannels(b[e] ?? []);
     if (null == n || 0 === n.length) return !1;
     let i = null,
         s = null,
@@ -113,7 +113,7 @@ function j(e) {
     });
     let O = null != j && (null == N || "mentions" !== N.mode && "mentions" === j.mode),
         L = null != N && ("mentions" === N.mode || !O);
-    return b[e] = {
+    return S[e] = {
         topBar: O ? j ?? I : I,
         bottomBar: L ? N ?? I : I
     }, !0
@@ -166,7 +166,7 @@ class U extends a.Ay.Store {
         this.waitFor(x.A, h.A, A.A, u.A, m.Ay, _.A, p.Ay, c.A, g.Ay)
     }
     getUnreadStateForGuildId(e) {
-        return b[e] ?? N
+        return S[e] ?? N
     }
 }
 let P = new U(r.h, {
@@ -175,7 +175,7 @@ let P = new U(r.h, {
             guildId: t,
             channelIds: n
         } = e, i = A.A.getGuild(t);
-        return null != i && !!i.features.has(E.GuildFeatures.COMMUNITY) && null != n && !l().isEqual(S[t], n) && (S[t] = n, j(t))
+        return null != i && !!i.features.has(E.GuildFeatures.COMMUNITY) && null != n && !l().isEqual(b[t], n) && (b[t] = n, j(t))
     },
     BULK_ACK: function(e) {
         let {
@@ -217,7 +217,7 @@ let P = new U(r.h, {
             voiceStates: t
         } = e, n = _.A.getGuildId();
         if (null == n || !new Set(t.map(e => e.guildId)).has(n)) return !1;
-        let i = b[n];
+        let i = S[n];
         return null != i && "voice-channels" === i.bottomBar.mode && R(n)
     },
     USER_GUILD_SETTINGS_CHANNEL_UPDATE: G,

@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(194871),
     I = n(966846),
     N = n(674378),
-    b = n(87941),
-    S = n(941971),
+    S = n(87941),
+    b = n(941971),
     T = n(900848),
     v = n(550591),
     y = n(65611),
@@ -54,7 +54,7 @@ function G(e) {
         badge: a,
         link: u,
         showProgressBadge: A
-    } = e, [m, p] = s.useState(!1), [f, x] = s.useState(!1), [E, C] = s.useState(null), [I, N] = s.useState(0), b = (0, l.Vd)("home"), R = (0, h.fy)().activePanel === h.HP.APP_ICON, G = () => {
+    } = e, [m, p] = s.useState(!1), [f, x] = s.useState(!1), [E, C] = s.useState(null), [I, N] = s.useState(0), S = (0, l.Vd)("home"), R = (0, h.fy)().activePanel === h.HP.APP_ICON, G = () => {
         C(null), N(0), clearTimeout(E)
     };
     if (null == n) return null;
@@ -89,7 +89,7 @@ function G(e) {
                 ariaLabel: L.intl.string(L.t.YUU0RF),
                 "aria-owns": "guild-list-unread-dms",
                 "aria-selected": t,
-                ...b,
+                ...S,
                 to: {
                     pathname: u,
                     state: {
@@ -110,7 +110,7 @@ function G(e) {
             tutorialId: "friends-list",
             position: "right",
             children: (0, i.jsxs)(T.c, {
-                children: [(0, i.jsx)(S.A, {
+                children: [(0, i.jsx)(b.A, {
                     selected: t,
                     hovered: m,
                     className: M.Io
@@ -126,7 +126,7 @@ function G(e) {
 }
 
 function U() {
-    let e = (0, b.q)(),
+    let e = (0, S.q)(),
         t = (0, a.bG)([I.A, C.A], () => {
             let e = (0, c.v)(I.A.activeItems, C.A),
                 {
@@ -150,9 +150,9 @@ function U() {
         h = (0, a.bG)([f.default], () => f.default.getCurrentUser()),
         _ = (0, A.W)(),
         g = n + d + _,
-        S = g === d && d > 0 && n + _ === 0,
+        b = g === d && d > 0 && n + _ === 0,
         T = E.A.getHomeLink();
-    return S && (T = j.BVt.APPLICATION_STORE), (0, i.jsx)(G, {
+    return b && (T = j.BVt.APPLICATION_STORE), (0, i.jsx)(G, {
         selected: e,
         user: h,
         selectedChannelId: p.A.getChannelId(j.ME),

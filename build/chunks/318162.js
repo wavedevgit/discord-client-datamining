@@ -1,7 +1,7 @@
 /** chunk id: 318162 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => S
 });
 var i = n(627968),
     s = n(64700),
@@ -25,12 +25,12 @@ var i = n(627968),
     I = n(38351),
     N = n(724693);
 
-function b(e) {
+function S(e) {
     let {
         user: t,
         channel: n,
-        onHide: b
-    } = e, S = (0, _.Ay)(t.id), T = (0, o.Ay)(), v = (0, a.bG)([u.A], () => u.A.isBlocked(t.id)), {
+        onHide: S
+    } = e, b = (0, _.Ay)(t.id), T = (0, o.Ay)(), v = (0, a.bG)([u.A], () => u.A.isBlocked(t.id)), {
         analyticsLocations: y
     } = (0, d.Ay)(v ? c.A.BLOCKED_PROFILE_PANEL : c.A.IGNORED_PROFILE_PANEL), j = (0, A.pb)({
         layout: "SIDEBAR",
@@ -41,11 +41,11 @@ function b(e) {
         value: y,
         children: (0, i.jsx)(A.of, {
             value: j,
-            isLoaded: S?.isLoaded,
+            isLoaded: b?.isLoaded,
             children: (0, i.jsx)(p.A, {
                 ref: R,
                 user: t,
-                displayProfile: S,
+                displayProfile: b,
                 themeType: E.d.SIDEBAR,
                 themeOverride: T,
                 children: (0, i.jsx)(l.d_W, {
@@ -76,7 +76,7 @@ function b(e) {
                                 children: [(0, i.jsx)(x.A, {
                                     isBlocked: v,
                                     onClick: () => {
-                                        b(), (0, m.Wn)({
+                                        S(), (0, m.Wn)({
                                             action: v ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                                             analyticsLocations: y,
                                             ...j
@@ -85,7 +85,7 @@ function b(e) {
                                 }), (0, i.jsx)(f.A, {
                                     userId: t.id,
                                     onClick: () => {
-                                        b(), (0, m.Wn)({
+                                        S(), (0, m.Wn)({
                                             action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                                             analyticsLocations: y,
                                             ...j

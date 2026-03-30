@@ -1,7 +1,7 @@
 /** chunk id: 533978 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => S
 });
 var i = n(627968),
     s = n(64700),
@@ -25,11 +25,11 @@ var i = n(627968),
     I = n(376086),
     N = n(985018);
 
-function b(e) {
+function S(e) {
     let {
         channel: t,
-        themeable: b,
-        whichPopoutIsOpen: S,
+        themeable: S,
+        whichPopoutIsOpen: b,
         setWhichPopoutIsOpen: T
     } = e, {
         parentAnalyticsLocation: v
@@ -69,12 +69,12 @@ function b(e) {
     }
 
     function Y() {
-        (0, u.X)(v, u.O.SOUNDBOARD), S === I.P.SOUNDBOARD ? (T?.(void 0), K()) : (null != S ? (j(), F()) : j(), T?.(I.P.SOUNDBOARD))
+        (0, u.X)(v, u.O.SOUNDBOARD), b === I.P.SOUNDBOARD ? (T?.(void 0), K()) : (null != b ? (j(), F()) : j(), T?.(I.P.SOUNDBOARD))
     }
     let z = s.useRef(null);
     return (0, i.jsx)(o.Y, {
         targetElementRef: z,
-        shouldShow: B && (S === I.P.SOUNDBOARD || null == S) || S === I.P.SOUNDBOARD,
+        shouldShow: B && (b === I.P.SOUNDBOARD || null == b) || b === I.P.SOUNDBOARD,
         animation: o.Y.Animation.FADE,
         animationPosition: "top",
         position: "top",
@@ -107,7 +107,7 @@ function b(e) {
         children: () => (0, i.jsx)(C.l, {
             ref: z,
             isTrayButton: !0,
-            themeable: b,
+            themeable: S,
             label: M ? N.intl.string(N.t["Ox4/zU"]) : D ? N.intl.string(N.t["+YBKYI"]) : G ? N.intl.string(N.t.X1lQli) : void 0,
             iconComponent: y,
             disabled: U,
@@ -117,10 +117,10 @@ function b(e) {
                 R(), "focus" !== e.type && F()
             },
             onMouseLeave: () => {
-                null == S && (K(), O())
+                null == b && (K(), O())
             },
-            isActive: B || S === I.P.SOUNDBOARD,
-            color: B || S === I.P.SOUNDBOARD ? "primaryDark" : void 0
+            isActive: B || b === I.P.SOUNDBOARD,
+            color: B || b === I.P.SOUNDBOARD ? "primaryDark" : void 0
         })
     })
 }

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    r = n.n(a),
+var r = n(503698),
+    a = n.n(r),
     l = n(397927),
     s = n(207963),
     o = n(953756),
@@ -19,7 +19,7 @@ function h(e) {
     let {
         components: t,
         message: n,
-        gifAutoPlay: a,
+        gifAutoPlay: r,
         getGifFavButton: h,
         getOnMediaItemContextMenu: p,
         shouldHideMediaOptions: g,
@@ -28,7 +28,7 @@ function h(e) {
         hiddenSpoiler: f = !1
     } = e, [C, I] = (0, o.zn)();
     return 0 === t.length ? null : (0, i.jsx)(c.N, {
-        gifAutoPlay: a,
+        gifAutoPlay: r,
         getGifFavButton: h,
         getOnMediaItemContextMenu: p,
         shouldHideMediaOptions: g,
@@ -47,7 +47,7 @@ function h(e) {
                         children: e => (0, i.jsxs)("div", {
                             ref: e,
                             "aria-hidden": f,
-                            className: r()(_.O0, m.k, m.z, {
+                            className: a()(_.O0, m.k, m.z, {
                                 [_.dK]: f
                             }),
                             children: [null != x && (0, i.jsx)(l.DUT, {

@@ -149,7 +149,8 @@ let G = {
                                 search: i.search
                             });
                         (0, S.trackParseSettingsUrl)(n, "deeplink"), (0, x.openUserSettings)(n.target, {
-                            path: n.path
+                            path: n.path,
+                            searchParams: n.params
                         }), U(i, (0, M.OE)(t))
                     }
                     break;

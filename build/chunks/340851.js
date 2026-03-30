@@ -26,8 +26,8 @@ var i = n(627968),
     C = n(342296),
     I = n(481947),
     N = n(961350),
-    b = n(71393),
-    S = n(576705),
+    S = n(71393),
+    b = n(576705),
     T = n(287809),
     v = n(977997),
     y = n(376696);
@@ -122,7 +122,7 @@ let G = (0, A.J)(function(e) {
         clearTimeout(eu.current)
     }, []);
     let eI = () => {
-            if (!z || !(0, x.eo)(A, v.A, b.A, S.A, g.default)[0]) return;
+            if (!z || !(0, x.eo)(A, v.A, S.A, b.A, g.default)[0]) return;
             let e = {
                 streamType: R.U4.GUILD,
                 ownerId: l.id,
@@ -149,7 +149,7 @@ let G = (0, A.J)(function(e) {
                 })
             })
         },
-        eb = (0, i.jsx)("div", {
+        eS = (0, i.jsx)("div", {
             className: L.kZ,
             "data-dnd-name": A.name,
             onMouseEnter: en ? void 0 : () => {
@@ -235,5 +235,5 @@ let G = (0, A.J)(function(e) {
                 }
             })
         });
-    return Y ? W(eb) : eb
+    return Y ? W(eS) : eS
 })

@@ -30,11 +30,11 @@ function E(e) {
         onClick: C,
         showEmptyChannelTopic: I
     } = e, N = (0, r.bG)([u.A], () => u.A.getChannelStatus(t)), {
-        enableHangoutWindow: b
+        enableHangoutWindow: S
     } = (0, h.Dm)({
         guildId: t.guild_id,
         location: "VoiceChannelStatus"
-    }), S = b && (0, A.TP)(N), T = null != N && N.length > 0 && !S, v = (0, d.Ay)(t, !0), y = null != E && E.length > 0;
+    }), b = S && (0, A.TP)(N), T = null != N && N.length > 0 && !b, v = (0, d.Ay)(t, !0), y = null != E && E.length > 0;
     if (s.useEffect(() => {
             T && _.default.track(g.HAw.VOICE_CHANNEL_TOPIC_VIEWED, {
                 channel_id: t.id,
@@ -54,7 +54,7 @@ function E(e) {
                 })
             })
         })
-    }) : n && v && !S && (!y || l) && I ? (0, i.jsxs)(c.DUT, {
+    }) : n && v && !b && (!y || l) && I ? (0, i.jsxs)(c.DUT, {
         className: j,
         onClick: C,
         children: [(0, i.jsx)(c.Text, {

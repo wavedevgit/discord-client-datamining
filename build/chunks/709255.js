@@ -1,6 +1,6 @@
 /** chunk id: 709255 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => p
 });
 var a = n(627968),
     l = n(64700),
@@ -16,23 +16,23 @@ var a = n(627968),
     v = n(225180),
     g = n(146995),
     f = n(333354),
-    b = n(985018),
-    j = n(779836);
+    j = n(985018),
+    b = n(779836);
 
-function p(e) {
+function h(e) {
     let {
         guildId: t,
         gameInstance: n,
         cost: l
     } = e;
     return (0, a.jsx)(d.un, {
-        "aria-label": b.intl.string(f.default.TZsu1U),
-        title: b.intl.string(f.default.TZsu1U),
-        body: b.intl.formatToPlainString(f.default["5HQUzD"], {
+        "aria-label": j.intl.string(f.default.TZsu1U),
+        title: j.intl.string(f.default.TZsu1U),
+        body: j.intl.formatToPlainString(f.default["5HQUzD"], {
             boostCount: l
         }),
         children: (0, a.jsx)("div", {
-            className: j.vI,
+            className: b.vI,
             children: (0, a.jsx)(o.Button, {
                 icon: {
                     type: "icon",
@@ -41,7 +41,7 @@ function p(e) {
                 text: l.toString(),
                 variant: "secondary",
                 size: "sm",
-                "aria-label": b.intl.string(f.default.TZsu1U),
+                "aria-label": j.intl.string(f.default.TZsu1U),
                 onClick: e => {
                     e.stopPropagation(), (0, g.m)(t, n)
                 }
@@ -50,33 +50,33 @@ function p(e) {
     })
 }
 
-function h(e) {
+function p(e) {
     let {
         guildId: t,
         gameInstance: n,
         onClick: s
-    } = e, d = (0, r.bG)([x.A], () => x.A.getStateForGuild(t)), g = l.useMemo(() => d?.entitlements?.[n.entitlementId], [d?.entitlements, n.entitlementId]), h = g?.ends_at != null, N = (0, u.A)(g), A = (0, v.A)(n.gameId, "icon"), S = (0, c.A)(t);
+    } = e, d = (0, r.bG)([x.A], () => x.A.getStateForGuild(t)), g = l.useMemo(() => d?.entitlements?.[n.entitlementId], [d?.entitlements, n.entitlementId]), p = g?.ends_at != null, N = (0, u.A)(g), S = (0, v.A)(n.gameId, "icon"), I = (0, c.A)(t);
     return null == N ? null : (0, a.jsxs)(o.DUT, {
-        className: i()(j.LO, {
-            [j.r9]: !S
+        className: i()(b.LO, {
+            [b.r9]: !I
         }),
-        onClick: S ? () => s(n) : void 0,
-        "aria-disabled": !S,
+        onClick: I ? () => s(n) : void 0,
+        "aria-disabled": !I,
         children: [(0, a.jsx)("img", {
-            className: j.Sl,
+            className: b.Sl,
             alt: "",
-            src: A
+            src: S
         }), (0, a.jsxs)("div", {
-            className: j.FS,
+            className: b.FS,
             children: [(0, a.jsx)(o.Heading, {
                 variant: "heading-sm/semibold",
                 children: n.name
-            }), h ? (0, a.jsx)(m.P5, {
+            }), p ? (0, a.jsx)(m.P5, {
                 dateString: g.ends_at
             }) : (0, a.jsx)(m.TG, {
-                text: b.intl.string(f.default.FFLkmx)
+                text: j.intl.string(f.default.FFLkmx)
             })]
-        }), S && (0, a.jsx)(p, {
+        }), I && (0, a.jsx)(h, {
             guildId: t,
             gameInstance: n,
             cost: N

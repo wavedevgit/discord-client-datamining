@@ -3,9 +3,9 @@ n.d(t, {
     A: () => D
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    r = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(835245),
     o = n(417597),
     d = n(827734),
@@ -39,27 +39,27 @@ function D(e) {
     let {
         embedUrl: t,
         message: n,
-        channel: r
-    } = e, D = a.useRef(null), k = a.useRef(null), O = (0, j.D)(t, n), {
+        channel: a
+    } = e, D = r.useRef(null), k = r.useRef(null), O = (0, j.D)(t, n), {
         setPopout: U
-    } = (0, f.A)(n.id, R.Fd), B = (0, x.VL)(n, r, U, !0), G = E.kt.useSetting(), F = (0, S.j)(), [H, V] = a.useState(!1), [q, W] = a.useState(O?.coverImage == null), z = (0, o.bG)([b.Ay, v.default], () => b.Ay.isMember(O?.guildId, v.default.getCurrentUser()?.id), [O]), Y = (0, o.bG)([b.Ay], () => O?.authorId != null ? b.Ay.getMember(O.guildId, O.authorId) : null), Q = (0, m.A)(Y?.avatarDecoration != null ? Y?.avatarDecoration : O?.user?.avatarDecoration), [K, J, X] = a.useMemo(() => [Y?.colorString ?? "inherit", Y?.colorStrings ?? null, Y?.colorRoleId], [Y]), Z = (0, C.gn)(Y?.guildId, O?.authorId ?? void 0, J), {
+    } = (0, f.A)(n.id, R.Fd), B = (0, x.VL)(n, a, U, !0), G = E.kt.useSetting(), F = (0, S.j)(), [H, V] = r.useState(!1), [q, W] = r.useState(O?.coverImage == null), z = (0, o.bG)([b.Ay, v.default], () => b.Ay.isMember(O?.guildId, v.default.getCurrentUser()?.id), [O]), Y = (0, o.bG)([b.Ay], () => O?.authorId != null ? b.Ay.getMember(O.guildId, O.authorId) : null), Q = (0, m.A)(Y?.avatarDecoration != null ? Y?.avatarDecoration : O?.user?.avatarDecoration), [K, J, X] = r.useMemo(() => [Y?.colorString ?? "inherit", Y?.colorStrings ?? null, Y?.colorRoleId], [Y]), Z = (0, C.gn)(Y?.guildId, O?.authorId ?? void 0, J), {
         reducedMotion: $
-    } = a.useContext(c.CZY), [ee, et] = a.useState(!1), en = a.useCallback(() => {
+    } = r.useContext(c.CZY), [ee, et] = r.useState(!1), en = r.useCallback(() => {
         V(!0)
-    }, [V]), ei = a.useCallback(() => {
+    }, [V]), ei = r.useCallback(() => {
         V(!1)
-    }, [V]), ea = a.useCallback(async () => {
+    }, [V]), er = r.useCallback(async () => {
         null != O && ((0, _.zV)(L.HAw.MEDIA_POST_PREVIEW_EMBED_CLICKED, {
             media_post_id: O.threadId,
-            channel_id: r.id,
+            channel_id: a.id,
             can_access: O.canAccess,
             is_member: z
         }), O.canAccess ? (0, g.A)(L.BVt.CHANNEL(O.guildId, O.threadId, O.messageId)) : z ? (0, g.A)(L.BVt.CHANNEL(O.guildId, O.parentChannelId)) : await y.Z2(O.guildId, {}, {
             channelId: O.parentChannelId
         }))
-    }, [O, r, z]);
+    }, [O, a, z]);
     if (null == O) return null;
-    let er = (0, T.F_)({
+    let ea = (0, T.F_)({
             avatarDecoration: Q,
             size: (0, h.Te)(c._3J.SIZE_40),
             canAnimate: ee
@@ -96,7 +96,7 @@ function D(e) {
                 onContextMenu: B,
                 onError: () => W(!0)
             })), null != O.coverImageOverlayText && (0, i.jsx)(c.DUT, {
-                onClick: ea,
+                onClick: er,
                 children: (0, i.jsx)("div", {
                     className: w.nx,
                     children: (0, i.jsxs)("div", {
@@ -132,7 +132,7 @@ function D(e) {
                     targetElementRef: k,
                     userId: O.authorId,
                     guildId: O.guildId,
-                    channelId: r.id,
+                    channelId: a.id,
                     messageId: n.id,
                     roleId: X,
                     avatarUrl: O.avatarUrl,
@@ -147,7 +147,7 @@ function D(e) {
                             size: c._3J.SIZE_40,
                             src: el,
                             "aria-label": P.intl.string(P.t.KXz3XB),
-                            avatarDecoration: er
+                            avatarDecoration: ea
                         })
                     })
                 }), (0, i.jsxs)("div", {
@@ -159,7 +159,7 @@ function D(e) {
                             color: "currentColor",
                             className: w.Xg
                         }), (0, i.jsx)(c.DUT, {
-                            onClick: ea,
+                            onClick: er,
                             className: w.HA,
                             children: (0, i.jsx)(c.Heading, {
                                 variant: "heading-md/semibold",
@@ -182,7 +182,7 @@ function D(e) {
                                 targetElementRef: D,
                                 userId: O.authorId,
                                 guildId: O.guildId,
-                                channelId: r.id,
+                                channelId: a.id,
                                 messageId: n.id,
                                 roleId: X,
                                 avatarUrl: O.avatarUrl,
@@ -200,10 +200,10 @@ function D(e) {
                     })]
                 }), O.canAccess ? (0, i.jsx)(c.Button, {
                     variant: "primary",
-                    onClick: ea,
+                    onClick: er,
                     text: O.ctaText
                 }) : (0, i.jsx)(c.Button, {
-                    onClick: ea,
+                    onClick: er,
                     variant: "primary",
                     text: O.ctaText
                 })]

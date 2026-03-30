@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(565688),
     I = n(533562),
     N = n(760716),
-    b = n(93879),
-    S = n(616356),
+    S = n(93879),
+    b = n(616356),
     T = n(961350),
     v = n(71393),
     y = n(576705),
@@ -59,7 +59,7 @@ function k(e) {
         z = Array.from((0, u.Rz)(Y).values()),
         q = (0, I.W)(),
         X = (0, N.i)(e => e.showSelfActivity),
-        [Q, J] = (0, r.yK)([S.A], () => [S.A.getStreamForUser(n.id, t.getGuildId()), S.A.getActiveStreamForUser(n.id, t.getGuildId())], [t, n.id]),
+        [Q, J] = (0, r.yK)([b.A], () => [b.A.getStreamForUser(n.id, t.getGuildId()), b.A.getActiveStreamForUser(n.id, t.getGuildId())], [t, n.id]),
         [$, Z] = (0, r.yK)([R.A, v.A, y.A, A.default], () => (0, m.eo)(t, R.A, v.A, y.A, A.default)),
         ee = (0, r.bG)([T.default], () => T.default.getId()),
         et = (0, r.bG)([j.A], () => (0, _.nr)(Q, j.A), [Q]),
@@ -134,7 +134,7 @@ function k(e) {
                     members: es,
                     onAction: l,
                     enableUserHoverActivities: !0
-                }), (0, i.jsx)(b.A, {
+                }), (0, i.jsx)(S.A, {
                     className: P.L,
                     applicationId: a,
                     rewardOfferNoticeClassName: P.Nh,

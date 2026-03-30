@@ -1,7 +1,7 @@
 /** chunk id: 883662 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => h
 });
 var r = n(627968),
     i = n(64700),
@@ -12,13 +12,13 @@ var r = n(627968),
     c = n(531685),
     u = n(203982),
     d = n(418829),
-    h = n(652215);
+    _ = n(652215);
 
-function _(e) {
+function h(e) {
     let {
         partialRoot: t,
         target: n,
-        defaultTarget: _,
+        defaultTarget: h,
         onViewChange: f,
         sidebarFooter: m,
         emptyState: p,
@@ -26,28 +26,28 @@ function _(e) {
         clearSearchQuery: y,
         searchBar: b,
         ...g
-    } = e, [x, E] = i.useState(!1), [A, S] = i.useState(1.4), N = i.useRef(null), C = (0, a.bG)([o.A], () => o.A.useReducedMotion), j = (0, a.bG)([c.A], () => c.A.isFocused());
+    } = e, [x, E] = i.useState(!1), [S, A] = i.useState(1.4), N = i.useRef(null), C = (0, a.bG)([o.A], () => o.A.useReducedMotion), I = (0, a.bG)([c.A], () => c.A.isFocused());
     return i.useEffect(() => {
         let e = e => {
             let {
                 intensity: t,
                 duration: n
             } = e;
-            !C && j && (E(!0), S(t ?? 1.4), clearTimeout(N.current), N.current = setTimeout(() => E(!1), n ?? 1e3))
+            !C && I && (E(!0), A(t ?? 1.4), clearTimeout(N.current), N.current = setTimeout(() => E(!1), n ?? 1e3))
         };
-        return u._.subscribe(h.jej.SHAKE_SETTINGS_MODAL, e), () => {
-            u._.unsubscribe(h.jej.SHAKE_SETTINGS_MODAL, e), clearTimeout(N.current)
+        return u._.subscribe(_.jej.SHAKE_SETTINGS_MODAL, e), () => {
+            u._.unsubscribe(_.jej.SHAKE_SETTINGS_MODAL, e), clearTimeout(N.current)
         }
-    }, [C, j]), (0, r.jsx)(s.bfh, {
+    }, [C, I]), (0, r.jsx)(s.bfh, {
         isShaking: x,
-        intensity: A,
+        intensity: S,
         children: (0, r.jsx)(l.N, {
             ...g,
             children: (0, r.jsx)(d.A, {
                 onClose: g.onClose,
                 partialRoot: t,
                 target: n,
-                defaultTarget: _,
+                defaultTarget: h,
                 onViewChange: f,
                 emptyState: p,
                 sidebarFooter: m,

@@ -1,7 +1,7 @@
 /** chunk id: 548392 params = (module,exports,require) **/
 n.d(t, {
-    AI: () => b,
-    N4: () => j,
+    AI: () => j,
+    N4: () => b,
     cp: () => f
 });
 var a = n(627968);
@@ -68,7 +68,7 @@ function f(e) {
     }
 }
 
-function b(e) {
+function j(e) {
     let t, {
             onBack: n,
             stepAction: l
@@ -91,7 +91,7 @@ function b(e) {
     })
 }
 
-function j(e) {
+function b(e) {
     let {
         step: t,
         className: n,

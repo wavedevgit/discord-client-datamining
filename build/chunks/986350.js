@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(397927),
-    r = n(29352),
+var r = n(397927),
+    a = n(29352),
     l = n(652215),
     s = n(985018),
     o = n(596340);
@@ -19,7 +19,7 @@ function d(e) {
         u = n.interactionMetadata?.ephemerality_reason,
         _ = () => d(n, !0);
     if (null != u) {
-        let e = (0, r.R)(u);
+        let e = (0, a.R)(u);
         t = (0, i.jsx)("div", {
             className: o.rd,
             children: s.intl.format(s.t.wx1tLQ, {
@@ -37,7 +37,7 @@ function d(e) {
     return (0, i.jsxs)("div", {
         className: o.XO,
         onClick: e => e.stopPropagation(),
-        children: [(0, i.jsx)(a.bMW, {
+        children: [(0, i.jsx)(r.bMW, {
             size: "xs",
             color: "currentColor",
             className: o.Kk

@@ -3,8 +3,8 @@ n.d(t, {
     A: () => u
 });
 var i = n(627968),
-    a = n(351405),
-    r = n(793574),
+    r = n(351405),
+    a = n(793574),
     l = n(688810),
     s = n(627363),
     o = n(611010),
@@ -17,10 +17,10 @@ let u = e => {
         hideParty: u
     } = e, {
         analyticsLocations: _
-    } = (0, l.Ay)(r.A.INVITE_EMBED), m = null != n.application ? o.Ay.createFromServer(n.application) : null != n.activity && null != n.activity.party_id && (0, c.pH)(n.activity.party_id) ? d.HT : void 0, {
+    } = (0, l.Ay)(a.A.INVITE_EMBED), m = null != n.application ? o.Ay.createFromServer(n.application) : null != n.activity && null != n.activity.party_id && (0, c.pH)(n.activity.party_id) ? d.HT : void 0, {
         data: h
     } = (0, s.YY)(n.application?.id), p = h ?? m;
-    return null == p ? null : (0, i.jsx)(a.P, {
+    return null == p ? null : (0, i.jsx)(r.P, {
         app: p,
         channel: t,
         message: n,

@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(164956),
     I = n(63995),
     N = n(69407),
-    b = n(624265),
-    S = n(970278),
+    S = n(624265),
+    b = n(970278),
     T = n(21119),
     v = n(907459),
     y = n(616356),
@@ -80,7 +80,7 @@ function V(e) {
             numStageListeners: Q,
             streamUsersToShow: J,
             embeddedActivitiesUsers: $
-        } = (t = Y.id, n = (0, c.yK)([j.Ay, S.A], () => [...j.Ay.getChannels(t)[j.vM].filter(e => {
+        } = (t = Y.id, n = (0, c.yK)([j.Ay, b.A], () => [...j.Ay.getChannels(t)[j.vM].filter(e => {
             let {
                 channel: t
             } = e;
@@ -90,7 +90,7 @@ function V(e) {
                 channel: t
             } = e;
             return t.id
-        }), ...Object.values(S.A.getThreadsForGuild(t)).flatMap(e => Object.keys(e))], [t]), l = (0, b.Ay)(t), r = s.useMemo(() => l.map(e => e.id), [l]), d = (0, c.bG)([M.Ay], () => M.Ay.getVoiceStates(t), [t]), _ = (0, c.yK)([R.A], () => R.A.getBlockedOrIgnoredIDs()), g = o().flatMap(n, e => {
+        }), ...Object.values(b.A.getThreadsForGuild(t)).flatMap(e => Object.keys(e))], [t]), l = (0, S.Ay)(t), r = s.useMemo(() => l.map(e => e.id), [l]), d = (0, c.bG)([M.Ay], () => M.Ay.getVoiceStates(t), [t]), _ = (0, c.yK)([R.A], () => R.A.getBlockedOrIgnoredIDs()), g = o().flatMap(n, e => {
             if (e === Y.afkChannelId) return [];
             let t = (d[e] ?? []).map(e => {
                 let {

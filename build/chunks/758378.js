@@ -15,15 +15,9 @@ var i = n(627968),
     _ = n(595241);
 
 function g() {
-    let e = (0, o.XQ)(),
-        [t, n] = s.useState(!1),
-        [g, x] = s.useState(() => (0, o.TC)()),
-        A = (0, l.bG)([r.Ay], () => r.Ay.getSystemServiceStatus("input-service")),
-        h = s.useCallback(async () => {
-            n(!0), g ? await (0, o.z8)("windows-settings") : await (0, o.sL)("windows-settings"), n(!1), x((0, o.TC)())
-        }, [g]);
-    if (!e) return null;
-    let p = "running" === A.state;
+    let [e, t] = s.useState(!1), [n, g] = s.useState(() => (0, o.TC)()), x = (0, l.bG)([r.Ay], () => r.Ay.getSystemServiceStatus("input-service")), A = s.useCallback(async () => {
+        t(!0), n ? await (0, o.z8)("windows-settings") : await (0, o.sL)("windows-settings"), t(!1), g((0, o.TC)())
+    }, [n]), h = "running" === x.state;
     return (0, i.jsxs)("div", {
         className: _.q,
         children: [(0, i.jsxs)("div", {
@@ -38,10 +32,10 @@ function g() {
                 children: m.intl.format(m.t["8CAL+D"], {
                     helpCenterLink: c.A.getArticleURL(u.MVz.SYSTEM_SERVICE)
                 })
-            }), g ? (0, i.jsx)(a.Text, {
+            }), n ? (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
-                color: p ? "text-feedback-positive" : "text-feedback-warning",
-                children: p ? m.intl.string(m.t.KHVMkW) : m.intl.format(m.t["5Rlr0b"], {
+                color: h ? "text-feedback-positive" : "text-feedback-warning",
+                children: h ? m.intl.string(m.t.KHVMkW) : m.intl.format(m.t["5Rlr0b"], {
                     status: function(e) {
                         switch (e.state) {
                             case "unknown":
@@ -65,14 +59,14 @@ function g() {
                             default:
                                 (0, d.xb)(e.state)
                         }
-                    }(A)
+                    }(x)
                 })
             }) : null]
         }), (0, i.jsx)(a.Button, {
-            variant: g ? "critical-secondary" : "primary",
-            loading: t,
-            onClick: h,
-            text: g ? m.intl.string(m.t.pAwbdL) : m.intl.string(m.t["1iI46O"])
+            variant: n ? "critical-secondary" : "primary",
+            loading: e,
+            onClick: A,
+            text: n ? m.intl.string(m.t.pAwbdL) : m.intl.string(m.t["1iI46O"])
         })]
     })
 }

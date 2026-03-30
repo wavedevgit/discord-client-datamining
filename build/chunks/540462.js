@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(765671),
     I = n(475743),
     N = n(646865),
-    b = n(10716),
-    S = n(795816),
+    S = n(10716),
+    b = n(795816),
     T = n(933958),
     v = n(47294),
     y = n(793574),
@@ -78,8 +78,8 @@ var i = n(627968),
     eC = n(475815),
     eI = n(134047),
     eN = n(313961),
-    eb = n(520698),
-    eS = n(43189),
+    eS = n(520698),
+    eb = n(43189),
     eT = n(518530),
     ev = n(681281),
     ey = n(587837),
@@ -402,7 +402,7 @@ class ek extends s.PureComponent {
             channel: e,
             connectedEmbeddedActivity: t
         } = this.props, n = async () => {
-            t?.applicationId != null && await (0, S.od)(t.applicationId, e.id);
+            t?.applicationId != null && await (0, b.od)(t.applicationId, e.id);
             let n = e.getGuildId();
             null == n || ed.Ay.isCurrentUserGuest(n) || (0, K.pX)((0, ep.vJ)(n)), H.openChannelCallPopout(e)
         };
@@ -474,7 +474,7 @@ class ek extends s.PureComponent {
         } = this.viewProperties;
         return (0, i.jsxs)(i.Fragment, {
             children: [null != s && s.type !== eL.lp.ACTIVITY && s.user.id !== n ? (0, i.jsx)(el.A, {
-                context: (0, eb.A)(s.type),
+                context: (0, eS.A)(s.type),
                 userId: s.user.id,
                 currentWindow: this.inPopout ? e ?? void 0 : window,
                 sliderClassName: eG.MQ,
@@ -517,7 +517,7 @@ class ek extends s.PureComponent {
             channel: n,
             inCall: s
         } = this.props;
-        return !e || t || this.popoutOpen && !this.inPopout && s ? null : (0, i.jsx)(eS.Ay, {
+        return !e || t || this.popoutOpen && !this.inPopout && s ? null : (0, i.jsx)(eb.Ay, {
             children: (0, i.jsx)($.A, {
                 className: eG.T6,
                 channelId: n.id
@@ -690,7 +690,7 @@ let eV = function(e) {
         ref: g
     } = (0, C.Ay)(), {
         ref: p
-    } = (0, C.Ay)(), f = (0, B.Us)(), N = (0, U.A)(), S = (0, d.bG)([eA.A], () => (N?.channelId ?? eA.A.getVoiceChannelId()) === t.id), {
+    } = (0, C.Ay)(), f = (0, B.Us)(), N = (0, U.A)(), b = (0, d.bG)([eA.A], () => (N?.channelId ?? eA.A.getVoiceChannelId()) === t.id), {
         participants: v,
         filteredParticipants: j,
         participantsVersion: O,
@@ -729,20 +729,20 @@ let eV = function(e) {
         x.Ay.updatedUnsyncedSettings({
             callHeaderHeight: e
         })
-    }, []), et = (0, d.bG)([b.A], () => b.A.getFetchState(), []), en = (0, I.A)(et);
+    }, []), et = (0, d.bG)([S.A], () => S.A.getFetchState(), []), en = (0, I.A)(et);
     s.useEffect(() => {
-        et === b.$.ERROR && en !== b.$.ERROR && (0, A.showToast)((0, A.createToast)(eD.intl.string(eD.t["AlJyI+"]), A.ToastType.FAILURE))
+        et === S.$.ERROR && en !== S.$.ERROR && (0, A.showToast)((0, A.createToast)(eD.intl.string(eD.t["AlJyI+"]), A.ToastType.FAILURE))
     }, [et, en]);
     let ei = (0, d.bG)([T.Ay], () => T.Ay.getSelfEmbeddedActivityForChannel(t.id), [t]);
     s.useEffect(() => {
         let e = !1,
             t = null;
         return (async () => {
-            S && L === eM._Of.VIDEO && (t = await eE.Ay.blockDisplaySleep(), e && null != t && eE.Ay.unblockDisplaySleep(t))
+            b && L === eM._Of.VIDEO && (t = await eE.Ay.blockDisplaySleep(), e && null != t && eE.Ay.unblockDisplaySleep(t))
         })(), () => {
             null != t ? eE.Ay.unblockDisplaySleep(t) : e = !0
         }
-    }, [S, L]);
+    }, [b, L]);
     let es = (0, D.mB)(u.M.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK),
         {
             analyticsLocations: el
@@ -759,8 +759,8 @@ let eV = function(e) {
             location: "ChannelCall"
         });
     s.useEffect(() => {
-        e_ && S && null == eN.A.getAllChatOpen()[t.id] && (o <= 0 || _.A.updateChatOpen(t.id, !0, "auto open screen width"))
-    }, [e_, ea, o, t.id, S]);
+        e_ && b && null == eN.A.getAllChatOpen()[t.id] && (o <= 0 || _.A.updateChatOpen(t.id, !0, "auto open screen width"))
+    }, [e_, ea, o, t.id, b]);
     let {
         theme: eg
     } = (0, A.wRf)();
@@ -768,7 +768,7 @@ let eV = function(e) {
         value: el,
         children: (0, i.jsx)(E.A, {
             page: eM.liQ.CHANNEL_CALL,
-            children: (0, i.jsx)(eS.qh, {
+            children: (0, i.jsx)(eb.qh, {
                 children: (0, i.jsxs)(ej.CB, {
                     children: [(0, i.jsx)(ek, {
                         channel: t,
@@ -781,7 +781,7 @@ let eV = function(e) {
                         popoutWindowAlwaysOnTop: X,
                         selectedStream: K,
                         mode: L,
-                        inCall: S,
+                        inCall: b,
                         participants: v,
                         filteredParticipants: j,
                         participantsVersion: O,
@@ -811,7 +811,7 @@ let eV = function(e) {
                         canPopout: a,
                         popoutType: r,
                         canUseHaven: em
-                    }), !t.isPrivate() && (0, i.jsx)(ej.wQ, {}), (0, i.jsx)(eS.WD, {})]
+                    }), !t.isPrivate() && (0, i.jsx)(ej.wQ, {}), (0, i.jsx)(eb.WD, {})]
                 })
             })
         })

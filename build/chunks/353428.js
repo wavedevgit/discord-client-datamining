@@ -26,8 +26,8 @@ var i = n(627968),
     C = n(994500),
     I = n(967198),
     N = n(287809),
-    b = n(486020),
-    S = n(975571),
+    S = n(486020),
+    b = n(975571),
     T = n(282978),
     v = n(95655),
     y = n(565265),
@@ -44,7 +44,7 @@ function G(e) {
         children: n
     } = e, s = (0, u.h)(t.linkedLobby?.application_id), [l, a] = (0, _.kn)([o.M.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP], void 0, !0);
     if (null == s) return null;
-    let r = b.Ay.getApplicationIconURL({
+    let r = S.Ay.getApplicationIconURL({
             id: s.id,
             icon: s.icon,
             size: 14
@@ -59,7 +59,7 @@ function G(e) {
                 variant: "text-sm/medium",
                 color: "text-default",
                 children: M.intl.format(M.t["16aguo"], {
-                    helpdeskArticle: S.A.getArticleURL(O.MVz.LINKED_LOBBIES)
+                    helpdeskArticle: b.A.getArticleURL(O.MVz.LINKED_LOBBIES)
                 })
             }), (0, i.jsx)(d.DUT, {
                 className: D.Q1,
@@ -214,9 +214,9 @@ function U(e) {
                     }), (0, i.jsx)(j.A.Caret, {})]
                 })
             }
-            let b = l?.type != null && O.kvI.GUILD_THREADS_ONLY.has(l.type);
+            let S = l?.type != null && O.kvI.GUILD_THREADS_ONLY.has(l.type);
             return (0, i.jsxs)(s.Fragment, {
-                children: [I, k(b ? null : p, M.intl.string(M.t["7Xm5QI"])), (0, i.jsx)(j.A.Title, {
+                children: [I, k(S ? null : p, M.intl.string(M.t["7Xm5QI"])), (0, i.jsx)(j.A.Title, {
                     level: x,
                     onContextMenu: u,
                     onClick: c,
@@ -227,7 +227,7 @@ function U(e) {
                 })]
             });
         case O.rbe.GUILD_DIRECTORY:
-            let S = r?.features.has(O.GuildFeatures.HUB) ? M.intl.formatToPlainString(M.t.Dy2aht, {
+            let b = r?.features.has(O.GuildFeatures.HUB) ? M.intl.formatToPlainString(M.t.Dy2aht, {
                 guildName: n
             }) : n;
             return (0, i.jsxs)(s.Fragment, {
@@ -240,7 +240,7 @@ function U(e) {
                     onClick: c,
                     children: [null != f ? (0, i.jsxs)(d.AC4, {
                         children: [f, ":"]
-                    }) : null, " ", S]
+                    }) : null, " ", b]
                 })]
             });
         default:

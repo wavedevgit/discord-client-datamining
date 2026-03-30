@@ -25,8 +25,8 @@ var i = n(627968),
 n(281405);
 var I = n(985018),
     N = n(426114),
-    b = n(805098);
-let S = e => 1 - Math.pow(1 - e, 4);
+    S = n(805098);
+let b = e => 1 - Math.pow(1 - e, 4);
 
 function T(e) {
     let {
@@ -84,7 +84,7 @@ function T(e) {
             },
             config: {
                 duration: 200,
-                easing: S,
+                easing: b,
                 clamp: !0
             }
         })),
@@ -143,13 +143,13 @@ function T(e) {
                     innerRef: T,
                     className: a()({
                         [N.vk]: !U
-                    }, b.q7, b.L9, b.vk),
+                    }, S.q7, S.L9, S.vk),
                     "aria-disabled": U,
                     "aria-label": I.intl.string(I.t.F3qiJr),
                     onClick: K,
                     ...n,
                     children: (0, i.jsxs)("div", {
-                        className: a()(N.Qs, b.Qs),
+                        className: a()(N.Qs, S.Qs),
                         children: [(0, i.jsxs)("div", {
                             className: N.R4,
                             style: {

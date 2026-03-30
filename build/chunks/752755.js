@@ -3,12 +3,12 @@ n.d(t, {
     A: () => c,
     e: () => l
 });
-var i, a = n(311907),
-    r = n(73153),
+var i, r = n(311907),
+    a = n(73153),
     l = ((i = {})[i.NOT_FETCHED = 0] = "NOT_FETCHED", i[i.FETCHING = 1] = "FETCHING", i[i.FETCHED = 2] = "FETCHED", i[i.FAILED = 3] = "FAILED", i);
 let s = {},
     o = {};
-class d extends a.Ay.Store {
+class d extends r.Ay.Store {
     static displayName = "MediaPostEmbedStore";
     getMediaPostEmbed(e) {
         if (null != e) return s[e]
@@ -20,7 +20,7 @@ class d extends a.Ay.Store {
         return s
     }
 }
-let c = new d(r.h, {
+let c = new d(a.h, {
     CONNECTION_OPEN: function() {
         s = {}, o = {}
     },

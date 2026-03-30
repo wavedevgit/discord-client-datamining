@@ -1,7 +1,7 @@
 /** chunk id: 769022 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => S
 });
 var i = n(311907),
     s = n(713402),
@@ -105,7 +105,7 @@ class N extends i.Ay.Store {
         return p.get(e)
     }
 }
-let b = new N(l.h, {
+let S = new N(l.h, {
     VOICE_STATE_UPDATES: function(e) {
         let t = !1,
             n = new Set,

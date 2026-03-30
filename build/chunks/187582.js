@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(287809),
     I = n(954571),
     N = n(203982),
-    b = n(398219),
-    S = n(427262),
+    S = n(398219),
+    b = n(427262),
     T = n(837921),
     v = n(652215),
     y = n(985018),
@@ -39,7 +39,7 @@ function L(e) {
         channel: r,
         status: u,
         activities: h
-    } = e, A = (0, a.bG)([E.A], () => null != E.A.getTypingUsers(r.id)[t.id]), g = (0, a.bG)([C.default], () => C.default.getCurrentUser()), I = (0, a.bG)([f.A], () => f.A.isMobileOnline(t.id)), b = (0, a.bG)([x.A], () => x.A.getNickname(t.id)), T = (0, m.A)(t.id), j = s.useRef(null), R = e => {
+    } = e, A = (0, a.bG)([E.A], () => null != E.A.getTypingUsers(r.id)[t.id]), g = (0, a.bG)([C.default], () => C.default.getCurrentUser()), I = (0, a.bG)([f.A], () => f.A.isMobileOnline(t.id)), S = (0, a.bG)([x.A], () => x.A.getNickname(t.id)), T = (0, m.A)(t.id), j = s.useRef(null), R = e => {
         (0, o.L3)(e, async () => {
             let {
                 default: e
@@ -51,7 +51,7 @@ function L(e) {
             })
         })
     }, L = () => {
-        let e = `@${S.Ay.getUserTag(t,{decoration:"never"})}`,
+        let e = `@${b.Ay.getUserTag(t,{decoration:"never"})}`,
             n = `<@${t.id}>`;
         N._.dispatch(v.jej.TEXTAREA_FOCUS, {
             channelId: r.id
@@ -92,7 +92,7 @@ function L(e) {
                 onContextMenu: R,
                 selected: D,
                 isMobile: I,
-                nick: b,
+                nick: S,
                 nameplate: M,
                 onClick: e => {
                     e.shiftKey ? L?.() : G(e => !e)
@@ -124,7 +124,7 @@ function D(e) {
     } = (0, h.Ay)(u.A.MEMBER_LIST), {
         listItems: c
     } = (0, a.bG)([x.A, C.default, f.A], () => {
-        let e = (0, b.F)(t.recipients, C.default),
+        let e = (0, S.F)(t.recipients, C.default),
             n = {};
         for (let t of e) x.A.isFriend(t.id) || t.id === C.default.getCurrentUser()?.id ? n[t.id] = {
             status: f.A.getStatus(t.id) ?? v.clD.OFFLINE,

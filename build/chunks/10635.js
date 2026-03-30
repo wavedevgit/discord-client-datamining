@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(900179),
     I = n(946356),
     N = n(810396),
-    b = n(35241),
-    S = n(587168),
+    S = n(35241),
+    b = n(587168),
     T = n(747524),
     v = n(996988),
     y = n(985018),
@@ -64,8 +64,8 @@ function O(e) {
                 themeType: v.d.SIDEBAR,
                 themeOverride: M,
                 children: [(0, i.jsxs)(l.d_W, {
-                    children: [(0, i.jsx)(S.A, {
-                        children: (0, i.jsx)(b.A, {
+                    children: [(0, i.jsx)(b.A, {
+                        children: (0, i.jsx)(S.A, {
                             user: t
                         })
                     }), (0, i.jsxs)("div", {

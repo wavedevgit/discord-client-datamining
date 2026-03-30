@@ -1,7 +1,7 @@
 /** chunk id: 976966 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => S
 });
 var i = n(627968),
     s = n(64700),
@@ -25,7 +25,7 @@ var i = n(627968),
     I = n(985018),
     N = n(353231);
 
-function b(e) {
+function S(e) {
     let {
         searchContext: t,
         searchMode: n,
@@ -35,18 +35,18 @@ function b(e) {
         isSearching: A,
         documentsIndexed: m,
         selectedChannelId: f
-    } = e, b = (0, p.H)(t), {
+    } = e, S = (0, p.H)(t), {
         totalFilters: T
-    } = (0, x.vj)(b, t), v = s.useMemo(() => {
+    } = (0, x.vj)(S, t), v = s.useMemo(() => {
         if (t.type === E.I4_.DMS) {
-            let e = (0, _.Zf)(b),
+            let e = (0, _.Zf)(S),
                 t = e.channel_id?.length ?? 0;
             return t > 0 ? I.intl.format(I.t.A2dqWG, {
                 filterCount: t
             }) : I.intl.string(I.t.tc619d)
         }
         return null
-    }, [t.type, b]), [y, j] = s.useState(null), L = s.useMemo(() => A ? [] : [r.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER], [A]), [M, D] = (0, u.kn)(L), G = M === r.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER, U = s.useCallback(e => {
+    }, [t.type, S]), [y, j] = s.useState(null), L = s.useMemo(() => A ? [] : [r.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER], [A]), [M, D] = (0, u.kn)(L), G = M === r.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER, U = s.useCallback(e => {
         null != e && G && D(C.i.USER_DISMISS), j(e)
     }, [G, D, j]), P = s.useCallback(e => {
         D("user:explicit" === e ? C.i.USER_DISMISS : C.i.AUTO_DISMISS)
@@ -62,7 +62,7 @@ function b(e) {
         children: [(0, i.jsx)("div", {
             className: N.TN,
             role: "status",
-            children: (0, i.jsx)(S, {
+            children: (0, i.jsx)(b, {
                 totalResults: o,
                 subtitle: v,
                 isIndexing: c,
@@ -94,7 +94,7 @@ function b(e) {
     })
 }
 
-function S(e) {
+function b(e) {
     let {
         totalResults: t,
         subtitle: n,

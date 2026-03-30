@@ -1,10 +1,10 @@
 /** chunk id: 472590 params = (module,exports,require) **/
 n.d(t, {
-    p: () => r
+    p: () => a
 });
 var i = n(659051),
-    a = n(652215);
+    r = n(652215);
 
-function r(e, t, n, r) {
-    return !t.hasAnyAfter(e, e => null != e.activity && e.application?.id === n && e.activity.type === a.xL.JOIN && !(0, i.A)(r, e, n), 25)
+function a(e, t, n, a) {
+    return !t.hasAnyAfter(e, e => null != e.activity && e.application?.id === n && e.activity.type === r.xL.JOIN && !(0, i.A)(a, e, n), 25)
 }

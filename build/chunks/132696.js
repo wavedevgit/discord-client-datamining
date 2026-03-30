@@ -3,9 +3,9 @@ n.d(t, {
     A: () => A
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    r = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(615300),
     o = n(607399),
     d = n(451988),
@@ -14,7 +14,7 @@ var i = n(627968),
     _ = n(133296),
     m = n(607470),
     h = n(428339);
-class p extends a.Component {
+class p extends r.Component {
     _animatedValue = new s.A.Value(1);
     state = {
         imageLoadError: !1,
@@ -52,11 +52,11 @@ class p extends a.Component {
             className: t,
             title: n
         } = this.props, {
-            imageLoading: a
+            imageLoading: r
         } = this.state;
         return (0, i.jsx)(s.A.img, {
             className: l()({
-                [h.YC]: a
+                [h.YC]: r
             }, t),
             src: e,
             alt: n,
@@ -71,17 +71,17 @@ class p extends a.Component {
             title: t,
             src: n
         } = this.props, {
-            imageLoadError: a,
-            imageLoading: r
+            imageLoadError: r,
+            imageLoading: a
         } = this.state;
-        return null == n || a ? (0, i.jsx)(s.A.div, {
+        return null == n || r ? (0, i.jsx)(s.A.div, {
             className: l()(h.gn, e),
             style: this.getImageStyle(),
             children: t
         }) : (0, i.jsxs)(s.A.div, {
-            className: l()(r ? h.g4 : null, e),
+            className: l()(a ? h.g4 : null, e),
             style: this.getImageStyle(),
-            children: [r ? (0, i.jsx)(u.y$y, {
+            children: [a ? (0, i.jsx)(u.y$y, {
                 className: h.u1,
                 itemClassName: h.$N,
                 type: u.y$y.Type.PULSING_ELLIPSIS,
@@ -90,13 +90,13 @@ class p extends a.Component {
         })
     }
 }
-class g extends a.Component {
+class g extends r.Component {
     state = {
         currentIndex: 0,
         videoLoadError: !1,
         videoLoaded: !1
     };
-    _video = a.createRef();
+    _video = r.createRef();
     videoTimeout = new d.Ep;
     videoPlaying = !1;
     componentWillUnmount() {
@@ -140,14 +140,14 @@ class g extends a.Component {
         } = this.state, {
             video: t,
             image: n,
-            title: r,
+            title: a,
             playing: s,
             muted: d,
             splashClassName: _,
             splashPlaceholderClassName: g,
             renderMediaOverlay: A
         } = this.props, x = d ? u._RO : u.HKD;
-        return (0, i.jsxs)(a.Fragment, {
+        return (0, i.jsxs)(r.Fragment, {
             children: [o.Fr ? null : (0, i.jsx)(m.A, {
                 className: l()(h.Yi, _),
                 muted: d,
@@ -164,7 +164,7 @@ class g extends a.Component {
                 children: s && e ? null : (0, i.jsx)(p, {
                     className: l()(h.NB, g),
                     src: n,
-                    title: r
+                    title: a
                 }, 0)
             }), (0, i.jsx)(u.DUT, {
                 className: l()(h.b4, {
@@ -190,17 +190,17 @@ class g extends a.Component {
         let {
             image: t,
             title: n,
-            playing: a,
-            splashClassName: r
+            playing: r,
+            splashClassName: a
         } = this.props, {
             currentIndex: s
         } = this.state;
-        return a ? (0, i.jsx)(p, {
-            className: l()(h.Yi, r),
+        return r ? (0, i.jsx)(p, {
+            className: l()(h.Yi, a),
             src: e[s],
             title: n
         }, s) : (0, i.jsx)(p, {
-            className: l()(h.Yi, r),
+            className: l()(h.Yi, a),
             src: t,
             title: n
         }, "image")
@@ -210,13 +210,13 @@ class g extends a.Component {
             playing: e,
             slideImages: t,
             image: n,
-            title: a,
-            splashClassName: r
+            title: r,
+            splashClassName: a
         } = this.props;
         return null == t ? (0, i.jsx)(p, {
-            className: l()(h.Yi, r),
+            className: l()(h.Yi, a),
             src: n,
-            title: a
+            title: r
         }, "image") : (0, i.jsx)(_.A, {
             onInterval: this.nextItem,
             interval: 2e3,
@@ -232,8 +232,8 @@ class g extends a.Component {
             video: e,
             className: t,
             placeholder: n,
-            renderMediaOverlay: a,
-            playing: r
+            renderMediaOverlay: r,
+            playing: a
         } = this.props, {
             videoLoadError: s,
             videoLoaded: o
@@ -242,7 +242,7 @@ class g extends a.Component {
             className: t
         }) : (0, i.jsxs)("figure", {
             className: l()(h.__invalid_tileMedia, t),
-            children: [null == e || s ? this.renderTypeImage() : this.renderTypeVideo(), null != a && a(r && o)]
+            children: [null == e || s ? this.renderTypeImage() : this.renderTypeVideo(), null != r && r(a && o)]
         })
     }
 }

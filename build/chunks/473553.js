@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(801320),
     I = n(898375),
     N = n(713081),
-    b = n(73473),
-    S = n(646764),
+    S = n(73473),
+    b = n(646764),
     T = n(654487),
     v = n(49999),
     y = n(165610),
@@ -42,7 +42,7 @@ function O(e) {
         location: T.rE.QUEST_ACTIVITY_HEADER,
         questContent: m.uF.QUEST_ACTIVITY_HEADER,
         sourceQuestContent: m.uF.RUNNING_ACTIVITY
-    }), [A, _] = s.useState(!1), g = s.useRef(null), E = s.useRef(null), [b, O] = (0, c.kn)([r.M.QUEST_ACTIVITY_HEADER_INTRO], void 0, !0), {
+    }), [A, _] = s.useState(!1), g = s.useRef(null), E = s.useRef(null), [S, O] = (0, c.kn)([r.M.QUEST_ACTIVITY_HEADER_INTRO], void 0, !0), {
         completedRatio: L,
         completedRatioDisplay: M,
         percentComplete: D
@@ -71,7 +71,7 @@ function O(e) {
                 children: [(0, i.jsx)("div", {
                     className: R.v0,
                     ref: g,
-                    children: (0, i.jsx)(S.A, {
+                    children: (0, i.jsx)(b.A, {
                         quest: t,
                         questContent: m.uF.QUEST_ACTIVITY_HEADER,
                         sourceQuestContent: m.uF.RUNNING_ACTIVITY,
@@ -149,7 +149,7 @@ function O(e) {
                     onClick: P
                 })]
             })]
-        }), null != b && U && (0, i.jsx)(C.A, {
+        }), null != S && U && (0, i.jsx)(C.A, {
             onDismiss: () => O(v.i.USER_DISMISS),
             onCTAClick: () => O(v.i.TAKE_ACTION),
             targetElementRef: g
@@ -183,7 +183,7 @@ function L(e) {
         theme: c,
         children: e => (0, i.jsx)("div", {
             className: e,
-            children: (0, i.jsx)(b.R, {
+            children: (0, i.jsx)(S.R, {
                 questOrQuests: d,
                 questContent: m.uF.QUEST_ACTIVITY_HEADER,
                 sourceQuestContent: m.uF.RUNNING_ACTIVITY,

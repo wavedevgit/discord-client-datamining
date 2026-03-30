@@ -25,8 +25,8 @@ var i = n(627968),
     C = n(359348),
     I = n(932001),
     N = n(625180),
-    b = n(338771),
-    S = n(212637),
+    S = n(338771),
+    b = n(212637),
     T = n(397400),
     v = n(488803),
     y = n(44621),
@@ -100,7 +100,7 @@ let Y = s.memo(function(e) {
                 applicationId: e
             })
         }, [en]), ep = s.useCallback(() => {
-            (0, b.A)(t)
+            (0, S.A)(t)
         }, [t]), ef = s.useCallback(() => {
             (0, u.mMO)(async () => {
                 let {
@@ -131,18 +131,18 @@ let Y = s.memo(function(e) {
             a()(null != r, "Received null guildId"), (0, T.pK)({
                 gameApplicationId: p?.id,
                 buttonVariant: "member"
-            }), (0, S.A)({
+            }), (0, b.A)({
                 analyticsLocations: ei,
                 analyticsLocation: Y.location,
                 guildId: r
             })
-        }, [r, ei, Y.location, p?.id]), eI = s.useRef(null), [eN, eb] = s.useState(!1);
+        }, [r, ei, Y.location, p?.id]), eI = s.useRef(null), [eN, eS] = s.useState(!1);
         s.useEffect(() => () => {
             null != eI.current && clearTimeout(eI.current)
         }, []), s.useEffect(() => {
-            ee && (eb(!1), null != eI.current && (clearTimeout(eI.current), eI.current = null))
+            ee && (eS(!1), null != eI.current && (clearTimeout(eI.current), eI.current = null))
         }, [ee]);
-        let eS = es?.guildId == null || null == D ? null : (0, i.jsx)(X, {
+        let eb = es?.guildId == null || null == D ? null : (0, i.jsx)(X, {
                 guildId: es.guildId,
                 applicationId: es.id
             }),
@@ -239,8 +239,8 @@ let Y = s.memo(function(e) {
                 startAuthorization: () => {
                     $({
                         analyticsLocations: ei
-                    }) === x._M.RPC && (eb(!0), null != eI.current && clearTimeout(eI.current), eI.current = setTimeout(() => {
-                        eb(!1)
+                    }) === x._M.RPC && (eS(!0), null != eI.current && clearTimeout(eI.current), eI.current = setTimeout(() => {
+                        eS(!1)
                     }, 9e4))
                 },
                 connectionApp: et,
@@ -257,12 +257,12 @@ let Y = s.memo(function(e) {
                 },
                 shouldShow: eN,
                 onRequestClose: () => {
-                    eb(!1), null != eI.current && (clearTimeout(eI.current), eI.current = null)
+                    eS(!1), null != eI.current && (clearTimeout(eI.current), eI.current = null)
                 }
             });
-        return null == ev && null == ey && null == ej && null == eR && null == eL && null == eS && null == eT ? null : (0, i.jsxs)("div", {
+        return null == ev && null == ey && null == ej && null == eR && null == eL && null == eb && null == eT ? null : (0, i.jsxs)("div", {
             className: K.o1,
-            children: [eS ?? eL ?? ey, eT, ev, ej ?? eR ?? eO, eM]
+            children: [eb ?? eL ?? ey, eT, ev, ej ?? eR ?? eO, eM]
         })
     }),
     z = s.forwardRef(function(e, t) {

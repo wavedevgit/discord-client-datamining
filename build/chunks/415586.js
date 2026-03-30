@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(31717),
     I = n(71393),
     N = n(977997),
-    b = n(823471),
-    S = n(37411),
+    S = n(823471),
+    b = n(37411),
     T = n(652215),
     v = n(985018),
     y = n(200393);
@@ -45,7 +45,7 @@ function j(e) {
             type: "SIDEBAR_CLOSE",
             baseChannelId: t.parent_id
         }), (0, x.N9)(t, {
-            source: S.H9.VOICE_AUTO_OPEN
+            source: b.H9.VOICE_AUTO_OPEN
         }))
     }, [l, t]);
     let G = s.useRef(!1);
@@ -61,7 +61,7 @@ function j(e) {
                 channelId: L.id
             })
         }, [L, O]), null == L || null == M) return null;
-    let U = (0, i.jsx)(b.A, {
+    let U = (0, i.jsx)(S.A, {
         channel: L,
         baseChannelId: R
     });

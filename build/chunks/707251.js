@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(71393),
     I = n(576705),
     N = n(954571),
-    b = n(113783),
-    S = n(69407),
+    S = n(113783),
+    b = n(69407),
     T = n(776781),
     v = n(233993),
     y = n(446600),
@@ -44,7 +44,7 @@ function G(e) {
     } = e, {
         analyticsLocations: l,
         newestAnalyticsLocation: o
-    } = (0, h.Ay)(u.A.VOICE_CHANNEL_HEADER), c = (0, r.bG)([A.A], () => A.A.getChatOpen(t.id), [t.id]), _ = (0, T.Ni)(t.id), p = (0, b.zy)(t.id, S.ip.REQUESTED_TO_SPEAK_ONLY);
+    } = (0, h.Ay)(u.A.VOICE_CHANNEL_HEADER), c = (0, r.bG)([A.A], () => A.A.getChatOpen(t.id), [t.id]), _ = (0, T.Ni)(t.id), p = (0, S.zy)(t.id, b.ip.REQUESTED_TO_SPEAK_ONLY);
     return (0, i.jsxs)(h.f5, {
         value: l,
         children: [(0, i.jsx)(g.A, {
@@ -79,7 +79,7 @@ function U(e) {
         channel: t,
         toggleRequestToSpeakSidebar: n,
         showRequestToSpeakSidebar: l
-    } = e, u = (0, _.Ay)(t), h = (0, r.bG)([y.A], () => y.A.getStageInstanceByChannel(t.id)), A = (0, b.uy)(t.id), m = (0, b.zy)(t.id, S.ip.AUDIENCE), g = (0, r.bG)([C.A], () => C.A.getGuild(t.guild_id), [t.guild_id]), E = g?.maxStageVideoChannelUsers ?? 0, T = null != g && g.features.has(O.GuildFeatures.COMMUNITY) ? E < O.p2C : g?.premiumTier !== O.TVA.TIER_3 && E <= O.nyz, j = (0, R.A)(t), U = (0, r.bG)([I.A], () => I.A.can(v.QY, t)), w = () => {
+    } = e, u = (0, _.Ay)(t), h = (0, r.bG)([y.A], () => y.A.getStageInstanceByChannel(t.id)), A = (0, S.uy)(t.id), m = (0, S.zy)(t.id, b.ip.AUDIENCE), g = (0, r.bG)([C.A], () => C.A.getGuild(t.guild_id), [t.guild_id]), E = g?.maxStageVideoChannelUsers ?? 0, T = null != g && g.features.has(O.GuildFeatures.COMMUNITY) ? E < O.p2C : g?.premiumTier !== O.TVA.TIER_3 && E <= O.nyz, j = (0, R.A)(t), U = (0, r.bG)([I.A], () => I.A.can(v.QY, t)), w = () => {
         d.A.updateStageVideoLimitBoostUpsellDismissed(t.id, !0), N.default.track(O.HAw.BOOSTING_UPSELL_CLICKED, {
             guild_id: t.guild_id,
             type: L.e.VIDEO_STAGE_LIMIT,

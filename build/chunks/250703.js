@@ -12,8 +12,8 @@ var r = n(627968),
     c = n(397927),
     u = n(97469),
     d = n(894858),
-    h = n(641324),
-    _ = n(82186),
+    _ = n(641324),
+    h = n(82186),
     f = n(985018),
     m = n(660938);
 
@@ -51,7 +51,7 @@ function v(e) {
                         showNavigationMobile: !0
                     }),
                     label: f.intl.string(f.t["13/7kX"])
-                }), null != t && (0, r.jsx)(_.E, {
+                }), null != t && (0, r.jsx)(h.E, {
                     node: t
                 })]
             }), (0, r.jsx)(p, {
@@ -77,7 +77,7 @@ let y = i.memo(function(e) {
             onClose: t
         }), (0, r.jsx)("div", {
             className: m.yp,
-            children: null != n && (0, r.jsx)(h.A, {
+            children: null != n && (0, r.jsx)(_.A, {
                 node: n
             })
         })]

@@ -25,8 +25,8 @@ var i = n(627968),
     C = n(994500),
     I = n(486020),
     N = n(927813),
-    b = n(403362),
-    S = n(652215),
+    S = n(403362),
+    b = n(652215),
     T = n(838541),
     v = n(424366);
 let y = 10 * N.A.Millis.SECOND;
@@ -46,14 +46,14 @@ function j(e) {
             messageId: t.id,
             flash: !0
         }))
-    }, [t.channel_id, t.id]), b = null != t.content && "" !== t.content ? (0, _.Ay)(t, {
+    }, [t.channel_id, t.id]), S = null != t.content && "" !== t.content ? (0, _.Ay)(t, {
         isInteracting: u
     }).content : null, {
-        contentPlaceholder: S,
+        contentPlaceholder: b,
         renderedContent: y,
         trailingIcon: j,
         leadingIcon: R
-    } = (0, p.o)(t, b, n, l, v.BK, {
+    } = (0, p.o)(t, S, n, l, v.BK, {
         trailingIconClass: v.sl,
         leadingIconClass: v.aG,
         iconSize: T.eJ
@@ -77,7 +77,7 @@ function j(e) {
                 [v.mK]: t.mentioned
             }),
             children: [null != L ? null : R, y ?? L ?? (0, i.jsx)("span", {
-                children: S
+                children: b
             }), null != L ? null : j]
         }), (0, i.jsx)("img", {
             alt: "",
@@ -114,7 +114,7 @@ function R(e) {
                     message: i,
                     optimistic: s
                 } = e;
-                n !== t || i.type === S.lAJ.STAGE_START || i.type === S.lAJ.STAGE_END || i.type === S.lAJ.STAGE_TOPIC || i.type === S.lAJ.STAGE_SPEAKER || i.type === S.lAJ.STAGE_RAISE_HAND || s || (clearTimeout(A.current), A.current = setTimeout(m, l), r(e => [...e, i.id]))
+                n !== t || i.type === b.lAJ.STAGE_START || i.type === b.lAJ.STAGE_END || i.type === b.lAJ.STAGE_TOPIC || i.type === b.lAJ.STAGE_SPEAKER || i.type === b.lAJ.STAGE_RAISE_HAND || s || (clearTimeout(A.current), A.current = setTimeout(m, l), r(e => [...e, i.id]))
             }
             return u.h.subscribe("MESSAGE_CREATE", e), () => {
                 u.h.unsubscribe("MESSAGE_CREATE", e)
@@ -130,7 +130,7 @@ function R(e) {
         let _ = h.current ?? a;
         return {
             toastsHidden: o,
-            toastMessages: (0, c.yK)([E.A], () => _.map(e => E.A.getMessage(t, e)), [t, _]).filter(b.Vq)
+            toastMessages: (0, c.yK)([E.A], () => _.map(e => E.A.getMessage(t, e)), [t, _]).filter(S.Vq)
         }
     }({
         channelId: t,
@@ -190,7 +190,7 @@ function R(e) {
             }
         });
     return (0, i.jsx)(d.NPJ, {
-        theme: S.NJ8.DARK,
+        theme: b.NJ8.DARK,
         children: e => (0, i.jsx)("div", {
             className: a()(n, e),
             onMouseEnter: () => {

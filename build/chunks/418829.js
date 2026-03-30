@@ -12,8 +12,8 @@ var r = n(627968),
     c = n(199966),
     u = n(669550),
     d = n(894858),
-    h = n(272053),
-    _ = n(397274),
+    _ = n(272053),
+    h = n(397274),
     f = n(776644);
 
 function m(e) {
@@ -28,52 +28,52 @@ function m(e) {
         emptyState: g,
         searchQuery: x,
         clearSearchQuery: E
-    } = e, A = d.A.useField("currentPanelKey"), {
-        node: S,
+    } = e, S = d.A.useField("currentPanelKey"), {
+        node: A,
         visibleDirectory: N,
         accessibleDirectory: C
-    } = (0, u.Ay)(t, x ?? ""), j = null != n && N.entry(n)?.parentPanelKey != null ? n : m, I = i.useMemo(() => {
-        let e = C.entry(A ?? j)?.parentPanelKey;
+    } = (0, u.Ay)(t, x ?? ""), I = null != n && N.entry(n)?.parentPanelKey != null ? n : m, j = i.useMemo(() => {
+        let e = C.entry(S ?? I)?.parentPanelKey;
         if (null != e) return C.getPanelOrThrow(e)
-    }, [A, C, j]), {
-        navigateWithValidation: R
+    }, [S, C, I]), {
+        navigateWithValidation: T
     } = (0, o.L_)();
     i.useEffect(() => {
-        h.A.init({
+        _.A.init({
             accessibleDirectory: C,
             onViewChange: b,
             navigateWithValidation: (e, t) => {
-                null == N.entry(e) && E?.(), R(t)
+                null == N.entry(e) && E?.(), T(t)
             }
         })
-    }, [C, R, b, E, N]);
-    let [T, k] = i.useState(!0);
-    (0, a.Ay)(() => (h.A.navigate(j, {
+    }, [C, T, b, E, N]);
+    let [R, k] = i.useState(!0);
+    (0, a.Ay)(() => (_.A.navigate(I, {
         animatePanelScroll: !1,
         animateSidebarScroll: !1,
         showNavigationMobile: null == n
     }), k(!1), () => {
-        h.A.reset(), _.A.reset(), d.A.resetState()
+        _.A.reset(), h.A.reset(), d.A.resetState()
     }));
     let w = i.useMemo(() => ({
             visibleDirectory: N,
             accessibleDirectory: C
         }), [N, C]),
-        L = i.useMemo(() => () => R(p), [R, p]),
-        D = null != A ? N.get(A) : void 0;
+        L = i.useMemo(() => () => T(p), [T, p]),
+        O = null != S ? N.get(S) : void 0;
     return (0, r.jsx)(c.x.Provider, {
         value: w,
         children: (0, r.jsxs)("div", {
             className: f.k,
             children: [(0, r.jsx)(s.L, {
-                root: S,
+                root: A,
                 onClose: L,
                 footer: v,
                 emptyState: g,
                 searchBar: y
             }), (0, r.jsx)(l.A, {
                 onClose: L,
-                setting: T ? void 0 : D ?? I
+                setting: R ? void 0 : O ?? j
             })]
         })
     })

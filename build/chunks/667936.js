@@ -1,7 +1,7 @@
 /** chunk id: 667936 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => S
 });
 var i = n(627968),
     s = n(64700),
@@ -62,7 +62,7 @@ function N(e) {
         }, n)
     })
 }
-let b = e => {
+let S = e => {
     let {
         channel: t,
         presenceActivity: n,
@@ -77,22 +77,22 @@ let b = e => {
         })
     }, [c, l, t.guild_id])();
     if (null == x) return null;
-    let b = m || (0, u.A)(n),
-        S = (0, _.gV)(t.type),
+    let S = m || (0, u.A)(n),
+        b = (0, _.gV)(t.type),
         T = c ? E.z : E.A;
     return (0, i.jsxs)("div", {
         className: c ? void 0 : C.Eb,
         children: [(0, i.jsx)("div", {
             className: c ? void 0 : C.Il,
-            children: b ? (0, i.jsx)(T, {
+            children: S ? (0, i.jsx)(T, {
                 activity: n,
                 embeddedApp: a,
                 user: x,
                 channel: t,
                 sortedVoiceStates: l,
-                onOpenSpotifyTrack: S ? A.Mp : void 0,
-                onOpenSpotifyArtist: S ? A.mN : void 0,
-                onOpenSpotifyAlbum: S ? A.QX : void 0
+                onOpenSpotifyTrack: b ? A.Mp : void 0,
+                onOpenSpotifyArtist: b ? A.mN : void 0,
+                onOpenSpotifyAlbum: b ? A.QX : void 0
             }) : (0, i.jsx)(d.A, {
                 type: d.M.VOICE_CHANNEL,
                 activity: n,

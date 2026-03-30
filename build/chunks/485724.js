@@ -4,8 +4,8 @@ n.d(t, {
     W: () => U
 }), n(321073), n(134528), n(947204);
 var i = n(627968),
-    a = n(64700),
-    r = n(485845),
+    r = n(64700),
+    a = n(485845),
     l = n(379834),
     s = n(311907),
     o = n(397927),
@@ -43,7 +43,7 @@ function U(e) {
     let {
         app: t,
         linkType: n,
-        activityCustomId: r,
+        activityCustomId: a,
         activityReferrerId: l,
         message: o,
         onView: g
@@ -71,7 +71,7 @@ function U(e) {
         },
         applicationId: t.id,
         botUserId: C?.id
-    }), Y = null != b && v && z, Q = q && v, K = (0, x.e)(t), J = (0, M.F)(t), X = (0, M.t)(t), Z = a.useMemo(() => {
+    }), Y = null != b && v && z, Q = q && v, K = (0, x.e)(t), J = (0, M.F)(t), X = (0, M.t)(t), Z = r.useMemo(() => {
         let e = [];
         return v ? K ? e.push({
             label: k.intl.string(k.t.RscU7I),
@@ -90,7 +90,7 @@ function U(e) {
                     applicationId: t.id,
                     isStart: null == H,
                     embeddedActivitiesManager: W,
-                    customId: r,
+                    customId: a,
                     referrerId: O,
                     analyticsLocations: U
                 })
@@ -104,12 +104,12 @@ function U(e) {
                     appId: t.id,
                     botId: b,
                     analyticsLocations: U,
-                    customId: r,
+                    customId: a,
                     referrerId: O
                 })
             }
         })) : null != X && e.push(X), e
-    }, [v, X, K, t.id, Q, Y, H, V, F, W, r, O, U, b]), $ = v ? (0, i.jsx)(G, {
+    }, [v, X, K, t.id, Q, Y, H, V, F, W, a, O, U, b]), $ = v ? (0, i.jsx)(G, {
         app: t
     }) : (0, i.jsx)(B, {
         app: t
@@ -128,7 +128,7 @@ function U(e) {
             id: t.id,
             linkType: n,
             referrerId: O,
-            activityCustomId: r,
+            activityCustomId: a,
             onView: g,
             guildId: E.A.getChannel(o.channel_id)?.guild_id,
             channelId: o.channel_id,
@@ -144,7 +144,7 @@ function B(e) {
         customInstallUrl: t.customInstallUrl,
         installParams: t.installParams,
         integrationTypesConfig: t.integrationTypesConfig
-    }) && null != t.integrationTypesConfig && r.b.GUILD_INSTALL in t.integrationTypesConfig, l = (0, s.bG)([C.default], () => C.default.locale, []), d = a.useMemo(() => {
+    }) && null != t.integrationTypesConfig && a.b.GUILD_INSTALL in t.integrationTypesConfig, l = (0, s.bG)([C.default], () => C.default.locale, []), d = r.useMemo(() => {
         if (!n) return null;
         let e = new Intl.NumberFormat(l, {
                 notation: "compact",
@@ -179,17 +179,17 @@ function G(e) {
         app: t
     } = e, {
         tags: n,
-        maxParticipants: r = 0
+        maxParticipants: a = 0
     } = t, d = (0, s.bG)([v.A], () => v.A.getGuildId() ?? void 0, []), c = (0, f.s)(t.id), u = (0, s.yK)([T.default, b.A], () => {
         let e = [];
         for (let [t, n] of c.entries()) {
             if (t >= 5) break;
             let i = T.default.getUser(n.author_id),
-                a = b.A.isFriend(n.author_id);
-            null != i && a && e.push(i)
+                r = b.A.isFriend(n.author_id);
+            null != i && r && e.push(i)
         }
         return e
-    }, [c]), _ = a.useMemo(() => {
+    }, [c]), _ = r.useMemo(() => {
         if (u.length > 0) return (0, i.jsx)(L.$, {
             activityUsers: u,
             guildId: d,
@@ -203,8 +203,8 @@ function G(e) {
                 color: "currentColor"
             }), k.intl.string(k.t.TsWCdW)]
         });
-        let e = r > 0 ? k.intl.format(k.t.z8EAJW, {
-            count: r
+        let e = a > 0 ? k.intl.format(k.t.z8EAJW, {
+            count: a
         }) : k.intl.string(k.t.RjceQU);
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.nys, {
@@ -212,7 +212,7 @@ function G(e) {
                 color: "currentColor"
             }), e]
         })
-    }, [c, u, d, r]);
+    }, [c, u, d, a]);
     return (0, i.jsxs)(i.Fragment, {
         children: [n.length > 0 && (0, i.jsx)(o.Text, {
             variant: "text-xs/medium",

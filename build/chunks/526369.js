@@ -1,7 +1,7 @@
 /** chunk id: 526369 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => S
+    A: () => b
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -24,13 +24,13 @@ var i = n(627968),
     C = n(175203),
     I = n(263854),
     N = n(652215),
-    b = n(207266);
+    S = n(207266);
 
-function S(e) {
+function b(e) {
     let {
         participants: t,
         onClick: n,
-        onDoubleClick: S,
+        onDoubleClick: b,
         onContextMenu: T,
         channel: v,
         className: y,
@@ -63,9 +63,9 @@ function S(e) {
         W = U.map(e => t => (0, i.jsx)(C.Ay, {
             participant: e,
             channel: v,
-            className: b.V,
+            className: S.V,
             onClick: n,
-            onDoubleClick: S,
+            onDoubleClick: b,
             onContextMenu: T,
             inCall: j,
             width: t,

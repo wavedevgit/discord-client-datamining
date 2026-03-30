@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(290863),
     I = n(222823),
     N = n(309010),
-    b = n(607567),
-    S = n(234320),
+    S = n(607567),
+    b = n(234320),
     T = n(203982),
     v = n(975571),
     y = n(793322),
@@ -74,13 +74,13 @@ let P = o.Ay.connectStores([I.Ay, f.A], e => {
             category: f.A.getChannel(t.parent_id)
         }
     })(U),
-    w = o.Ay.connectStores([b.Ay], e => {
+    w = o.Ay.connectStores([S.Ay], e => {
         let {
             channel: t
         } = e;
         if (null == t.guild_id) throw Error("ConnectedVoiceChannel - somehow we got a voice channel with no guild_id...");
         return {
-            voiceStates: b.Ay.getVoiceStates(t.guild_id)[t.id]
+            voiceStates: S.Ay.getVoiceStates(t.guild_id)[t.id]
         }
     })(U),
     k = o.Ay.connectStores([x.default], e => {
@@ -352,7 +352,7 @@ class F extends s.PureComponent {
             query: n
         } = this.state, s = t.length > 0 && "" !== n;
         return (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(S.EG, {
+            children: [(0, i.jsx)(b.EG, {
                 event: L.jej.GLOBAL_CLIPBOARD_PASTE,
                 handler: this.handleGlobalPaste
             }), (0, i.jsx)(d.vN3, {

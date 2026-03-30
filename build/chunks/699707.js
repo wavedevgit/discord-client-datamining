@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(806931),
     I = n(256960),
     N = n(363862);
-let b = 16 / 9,
-    S = 8 + x.Vp;
+let S = 16 / 9,
+    b = 8 + x.Vp;
 
 function T(e) {
     let t, {
@@ -54,7 +54,7 @@ function T(e) {
         q = L.type === C.lp.ACTIVITY,
         X = (0, d.A)(q ? L.applicationId : void 0),
         Q = !q && null != L.streamId,
-        J = U <= 2 * S + 144,
+        J = U <= 2 * b + 144,
         $ = M && !J,
         Z = (0, c.A)($),
         ee = P === E.DUB.MINIMUM || P === E.DUB.NORMAL,
@@ -62,12 +62,12 @@ function T(e) {
         en = (0, _.A)(et, 100),
         ei = ((0, c.A)(L.id) ?? L.id) !== L.id,
         es = 0;
-    (q || $) && (es += 72), q && !$ && (et ? es += 48 : es += 8), $ && (es += .5 * S + 8);
-    let el = s.useMemo(() => q && X ? G / (U - 2 * es) : Q && null != B && B.width > 0 && B.height > 0 ? B.width / B.height : b, [Q, B, q, G, U, es, X]),
+    (q || $) && (es += 72), q && !$ && (et ? es += 48 : es += 8), $ && (es += .5 * b + 8);
+    let el = s.useMemo(() => q && X ? G / (U - 2 * es) : Q && null != B && B.width > 0 && B.height > 0 ? B.width / B.height : S, [Q, B, q, G, U, es, X]),
         ea = U - 2 * es,
         er = q && X ? G : ea * el,
         eo = Math.floor(Math.min(G, er) / el),
-        ec = U > G / el + 72 + S + 8;
+        ec = U > G / el + 72 + b + 8;
     t = $ || q ? $ ? -16 : -8 : 40 + Math.max(0, 72 - (U - eo) / 2);
     let ed = Math.max(0, 72 - (U - eo) / 2);
     s.useEffect(() => {
@@ -149,7 +149,7 @@ function T(e) {
             children: [(0, i.jsxs)(r.animated.div, {
                 className: N.pc,
                 style: {
-                    top: em.value.to(e => -e * S / 2)
+                    top: em.value.to(e => -e * b / 2)
                 },
                 children: [(0, i.jsx)(r.animated.div, {
                     style: {
@@ -203,7 +203,7 @@ function T(e) {
             }), (0, i.jsx)(r.animated.div, {
                 className: N.Vx,
                 style: {
-                    translateY: eA.value.to(e => e * S / 2),
+                    translateY: eA.value.to(e => e * b / 2),
                     opacity: eA.value,
                     visibility: eA.value.to(e => 0 === e ? "hidden" : "visible")
                 },

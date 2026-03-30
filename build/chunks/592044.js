@@ -49,7 +49,7 @@ let p = e => {
             triggerRef: u
         } = e, f = (0, o.A)(null, () => {
             t && n()
-        }, u), x = (0, c.n)(e => e.globalMute), E = (0, c.n)(e => e.setGlobalMute), C = (0, c.n)(e => e.genre), I = (0, c.n)(e => e.setGenre), N = (0, c.n)(e => e.songIndex), b = (0, c.n)(e => e.playRadio), S = (0, c.n)(e => e.setPlayRadio), T = (0, c.n)(e => e.playPrevSong), v = (0, c.n)(e => e.playNextSong), y = (0, a.bG)([d.A], () => d.A.assets), j = (0, A.A)(C, N), R = !x && b;
+        }, u), x = (0, c.n)(e => e.globalMute), E = (0, c.n)(e => e.setGlobalMute), C = (0, c.n)(e => e.genre), I = (0, c.n)(e => e.setGenre), N = (0, c.n)(e => e.songIndex), S = (0, c.n)(e => e.playRadio), b = (0, c.n)(e => e.setPlayRadio), T = (0, c.n)(e => e.playPrevSong), v = (0, c.n)(e => e.playNextSong), y = (0, a.bG)([d.A], () => d.A.assets), j = (0, A.A)(C, N), R = !x && S;
         return (0, i.jsxs)("div", {
             ref: f,
             className: l()(g.ZR, {
@@ -92,9 +92,9 @@ let p = e => {
                         variant: "icon-only",
                         size: "sm",
                         "aria-label": _.intl.string(m.default.zsW8PM),
-                        icon: b ? r.E$n : r.udU,
+                        icon: S ? r.E$n : r.udU,
                         onClick: e => {
-                            e.preventDefault(), e.stopPropagation(), S(!b)
+                            e.preventDefault(), e.stopPropagation(), b(!S)
                         }
                     }), (0, i.jsx)(r.K0, {
                         variant: "icon-only",
@@ -111,7 +111,7 @@ let p = e => {
                 children: Object.values(h.TU).map(e => (0, i.jsx)(r.DUT, {
                     className: g.vk,
                     onClick: () => {
-                        C !== e ? (I(e), S(!0)) : S(!b)
+                        C !== e ? (I(e), b(!0)) : b(!S)
                     },
                     children: (0, i.jsxs)(r.BJc, {
                         align: "center",

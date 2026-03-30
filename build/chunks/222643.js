@@ -29,7 +29,7 @@ function u(e) {
     }, [E, C, m]);
     let {
         preventIdle: N,
-        allowIdle: b
+        allowIdle: S
     } = (0, d.o)("popup");
     return t?.current == null ? null : (0, i.jsx)(r.Ay, {
         children: (0, i.jsx)(a.QCO, {
@@ -43,8 +43,8 @@ function u(e) {
                 ref: C,
                 onMouseOver: N,
                 onFocus: N,
-                onBlur: b,
-                onMouseLeave: b,
+                onBlur: S,
+                onMouseLeave: S,
                 children: h({
                     hidden: f || _ || n,
                     onDismiss: u

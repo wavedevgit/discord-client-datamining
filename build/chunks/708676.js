@@ -4,22 +4,22 @@ n.d(t, {
     J: () => l
 });
 var i = n(989349),
-    a = n.n(i),
-    r = n(985018);
+    r = n.n(i),
+    a = n(985018);
 
 function l(e) {
-    let t = a()();
+    let t = r()();
     if (e <= t) return;
     let n = e.diff(t, "days");
-    if (n > 1) return r.intl.formatToPlainString(r.t.dex68a, {
+    if (n > 1) return a.intl.formatToPlainString(a.t.dex68a, {
         days: n
     });
     let i = e.diff(t, "hours");
-    if (i > 1) return r.intl.formatToPlainString(r.t.BWqf0c, {
+    if (i > 1) return a.intl.formatToPlainString(a.t.BWqf0c, {
         hours: i
     });
     let l = e.diff(t, "minutes");
-    return r.intl.formatToPlainString(r.t["3SLXAz"], {
+    return a.intl.formatToPlainString(a.t["3SLXAz"], {
         minutes: l
     })
 }

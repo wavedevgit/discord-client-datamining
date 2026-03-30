@@ -4,20 +4,20 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(397927),
-    r = n(500208);
+var r = n(397927),
+    a = n(500208);
 
 function l(e, t) {
-    (0, a.mMO)(async () => {
+    (0, r.mMO)(async () => {
         let {
-            default: a
+            default: r
         } = await Promise.all([n.e("49862"), n.e("67096")]).then(n.bind(n, 559947));
-        return n => (0, i.jsx)(a, {
+        return n => (0, i.jsx)(r, {
             guildId: e,
             productId: t,
             ...n
         })
     }, {
-        modalKey: r.DG
+        modalKey: a.DG
     })
 }

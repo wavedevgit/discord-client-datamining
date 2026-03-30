@@ -25,8 +25,8 @@ var i = n(627968),
     C = n(781862),
     I = n(582904),
     N = n(637248),
-    b = n(395504),
-    S = n(947461),
+    S = n(395504),
+    b = n(947461),
     T = n(770904),
     v = n(357746),
     y = n(816288),
@@ -473,7 +473,7 @@ class em extends s.PureComponent {
                         selected: r === ec.VV.GAME_SERVERS
                     }, er.n.GAME_SERVERS);
                 case er.n.GAME_SERVERS_EMPTY:
-                    return (0, i.jsx)(S.A, {
+                    return (0, i.jsx)(b.A, {
                         guildId: l.id,
                         selected: r === ec.VV.GAME_SERVERS
                     }, er.n.GAME_SERVERS_EMPTY);
@@ -761,7 +761,7 @@ let e_ = e => {
         selectedVoiceChannelId: l
     } = e, c = (0, o.bG)([h.A], () => h.A.keyboardModeEnabled), {
         analyticsLocations: d
-    } = (0, m.Ay)(A.A.GUILD_CHANNEL_LIST), _ = (0, o.bG)([D.A], () => D.A.getChannel(n)), g = (0, o.bG)([D.A], () => D.A.getChannel(l)), p = (0, o.bG)([P.A], () => P.A.getGuildId()), f = (0, b.jN)(t), x = s.useRef(null), E = s.useCallback((e, t) => {
+    } = (0, m.Ay)(A.A.GUILD_CHANNEL_LIST), _ = (0, o.bG)([D.A], () => D.A.getChannel(n)), g = (0, o.bG)([D.A], () => D.A.getChannel(l)), p = (0, o.bG)([P.A], () => P.A.getGuildId()), f = (0, S.jN)(t), x = s.useRef(null), E = s.useCallback((e, t) => {
         let n = x.current;
         null != n && (eo.Ut1.test(t) || (0, ec.jq)(t) ? n.scrollToChannel(t, !1, 16, () => {
             requestAnimationFrame(() => document.querySelector(e)?.focus())
@@ -781,10 +781,10 @@ let e_ = e => {
         setFocus: E,
         scrollToStart: C,
         scrollToEnd: I
-    }), S = N.setFocus;
+    }), b = N.setFocus;
     s.useEffect(() => {
-        null != n && S(n)
-    }, [n, S]);
+        null != n && b(n)
+    }, [n, b]);
     let T = (0, R.A)(t);
     return (0, i.jsx)(m.f5, {
         value: d,

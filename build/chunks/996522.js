@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    r = n.n(a),
+var r = n(503698),
+    a = n.n(r),
     l = n(311907),
     s = n(397927),
     o = n(442433),
@@ -25,9 +25,9 @@ function C(e) {
     let {
         message: t,
         compact: n
-    } = e, a = (0, l.bG)([c.A], () => c.A.getChannel(u.default.castMessageIdAsChannelId(t.id)));
-    return null == a ? null : (0, i.jsx)(I, {
-        channel: a,
+    } = e, r = (0, l.bG)([c.A], () => c.A.getChannel(u.default.castMessageIdAsChannelId(t.id)));
+    return null == r ? null : (0, i.jsx)(I, {
+        channel: r,
         compact: n,
         isSystemMessage: (0, d.A)(t)
     })
@@ -35,13 +35,13 @@ function C(e) {
 
 function I(e) {
     var t;
-    let a, d, c, {
+    let r, d, c, {
             channel: u,
             compact: C,
             isSystemMessage: I
         } = e,
         E = (0, l.bG)([m.A], () => m.A.getCount(u.id)),
-        b = (t = u, a = (0, l.bG)([m.A], () => m.A.getMostRecentMessage(t.id)), d = (0, l.bG)([m.A], () => m.A.getCount(t.id)), c = (0, h.JO)(t), t.threadMetadata?.archived ? x.intl.string(x.t.ZTo4HS) : null == d || 0 === d ? x.intl.string(x.t.HYtNyE) : null == a ? (0, i.jsxs)(i.Fragment, {
+        b = (t = u, r = (0, l.bG)([m.A], () => m.A.getMostRecentMessage(t.id)), d = (0, l.bG)([m.A], () => m.A.getCount(t.id)), c = (0, h.JO)(t), t.threadMetadata?.archived ? x.intl.string(x.t.ZTo4HS) : null == d || 0 === d ? x.intl.string(x.t.HYtNyE) : null == r ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("span", {
                 children: x.intl.string(x.t.ZTo4HS)
             }), (0, i.jsx)("span", {
@@ -50,7 +50,7 @@ function I(e) {
             })]
         }) : (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(p.A, {
-                message: a,
+                message: r,
                 channel: t
             }), (0, i.jsx)("span", {
                 className: f.vE,
@@ -60,7 +60,7 @@ function I(e) {
         v = null != E && E > 0;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
-            className: r()(f.GI, {
+            className: a()(f.GI, {
                 [f.E]: !C,
                 [f.E_]: I
             })
@@ -86,7 +86,7 @@ function I(e) {
                 })
             },
             "aria-roledescription": x.intl.string(x.t["8ipxiY"]),
-            className: r()(f.kL, {
+            className: a()(f.kL, {
                 [f.og]: I
             }),
             children: (0, i.jsxs)(s.RDc, {

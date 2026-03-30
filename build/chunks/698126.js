@@ -1,7 +1,7 @@
 /** chunk id: 698126 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => S
 });
 var i = n(627968),
     s = n(64700),
@@ -88,7 +88,7 @@ class I extends g.Ay {
     }
 }
 let N = (0, d.a)(I),
-    b = s.memo(function(e) {
+    S = s.memo(function(e) {
         let {
             channel: t,
             guild: n,
