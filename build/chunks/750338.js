@@ -38,7 +38,7 @@ let C = e => {
         backgroundVideoUrl: T,
         previewImageStyle: w = b.Tb.CONTAINED,
         actions: O
-    } = e, D = (0, f.TM)(), M = n.useRef(null), U = n.useRef(0), L = n.useRef(null), B = n.useRef(!1), k = (0, u.A)("(min-width: 1140px)"), G = w === b.Tb.OVERLAY && (S !== b.A0.LARGE || !k), F = S === b.A0.LARGE && k && w === b.Tb.OVERLAY, V = null != T && k && S === b.A0.LARGE, H = n.useMemo(() => (0, l.debounce)(() => {
+    } = e, D = (0, f.TM)(), M = n.useRef(null), U = n.useRef(0), L = n.useRef(null), B = n.useRef(!1), k = (0, u.A)("(min-width: 1140px)"), G = w === b.Tb.OVERLAY && (S !== b.A0.LARGE || !k), V = S === b.A0.LARGE && k && w === b.Tb.OVERLAY, F = null != T && k && S === b.A0.LARGE, H = n.useMemo(() => (0, l.debounce)(() => {
         p.default.track(h.HAw.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED, {
             box_type: (0, l.snakeCase)(t)
         })
@@ -73,7 +73,7 @@ let C = e => {
             })
         })
     }, K = () => (0, a.jsxs)("div", {
-        className: s()(x.textBox, x[`${S}`], F && x.overlayTextBox),
+        className: s()(x.textBox, x[`${S}`], V && x.overlayTextBox),
         children: [(0, a.jsxs)("div", {
             children: [null == y ? null : "gradient" === P ? (0, a.jsx)("div", {
                 className: x.badgeContainer,
@@ -113,7 +113,7 @@ let C = e => {
             muted: !0,
             poster: A,
             loop: !0,
-            className: s()(F ? x.overlayImage : x.boxVideo, {
+            className: s()(V ? x.overlayImage : x.boxVideo, {
                 [N]: null != N
             }),
             ref: M,
@@ -134,13 +134,13 @@ let C = e => {
         children: (0, a.jsxs)(c.hLv, {
             ref: L,
             id: t,
-            className: s()(x.backgroundColor, x.boxContainer, x[`${S}`], x.gradientBackground, G && x.overlayImageMode, F && x.overlayMode),
+            className: s()(x.backgroundColor, x.boxContainer, x[`${S}`], x.gradientBackground, G && x.overlayImageMode, V && x.overlayMode),
             onMouseEnter: Y,
             onFocus: Y,
             onBlur: W,
             onMouseLeave: W,
             color: "purple",
-            children: [V && (0, a.jsx)("div", {
+            children: [F && (0, a.jsx)("div", {
                 className: x.backgroundVideoContainer,
                 children: (0, a.jsx)(m.A, {
                     preload: v ? "auto" : "none",

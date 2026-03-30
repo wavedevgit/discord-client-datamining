@@ -236,8 +236,8 @@ function O(e) {
         comment: L,
         tags: w
     } = o, {
-        coverImageUrl: D,
-        gameName: P,
+        coverImageUrl: P,
+        gameName: D,
         isLoading: G
     } = (0, d.A)(O), M = {
         variant: "heading-sm/medium",
@@ -248,9 +248,9 @@ function O(e) {
     if (G) return (0, i.jsx)(A.E, {});
     let z = () => (0, i.jsx)(_.A, {
             coverRef: T,
-            className: null == D || u ? void 0 : E.iL,
-            imageSrc: D,
-            gameName: P,
+            className: null == P || u ? void 0 : E.iL,
+            imageSrc: P,
+            gameName: D,
             applicationId: O,
             userId: t.id,
             disableInteraction: u,
@@ -269,11 +269,11 @@ function O(e) {
                 className: b.zH,
                 children: [u ? (0, i.jsx)(r.Heading, {
                     ...M,
-                    children: P
+                    children: D
                 }) : (0, i.jsx)(S, {
                     applicationId: O,
                     userId: t.id,
-                    gameName: P,
+                    gameName: D,
                     ...M
                 }), B ? (0, i.jsx)(k, {
                     text: L,

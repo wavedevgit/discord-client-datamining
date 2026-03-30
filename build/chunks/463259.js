@@ -1,7 +1,7 @@
 /** chunk id: 463259 params = (module,exports,require) **/
 n.d(t, {
     A: () => U,
-    u: () => D
+    u: () => P
 });
 var i = n(627968),
     l = n(64700),
@@ -36,7 +36,7 @@ var i = n(627968),
     L = n(985018),
     w = n(882612);
 
-function D(e) {
+function P(e) {
     let {
         widget: t,
         ...n
@@ -50,7 +50,7 @@ function D(e) {
     }) : null
 }
 
-function P() {
+function D() {
     return (0, i.jsxs)("div", {
         className: w.mJ,
         children: [(0, i.jsx)(o.mir, {
@@ -117,8 +117,8 @@ function M(e) {
         children: [o && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(b.A, {
                 className: w.cG
-            }), u && (0, i.jsx)(P, {}), m && (0, i.jsx)(G, {})]
-        }), s.map((e, l) => (0, i.jsx)(D, {
+            }), u && (0, i.jsx)(D, {}), m && (0, i.jsx)(G, {})]
+        }), s.map((e, l) => (0, i.jsx)(P, {
             widget: e,
             user: t,
             guildId: n,

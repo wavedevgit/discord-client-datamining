@@ -44,8 +44,8 @@ let v = e => {
         className: B,
         containerClassName: k,
         tabIndex: G = 0,
-        blurTint: F
-    } = e, V = (0, m.DP)(), {
+        blurTint: V
+    } = e, F = (0, m.DP)(), {
         fractionalState: H
     } = (0, p.A)();
     (0, _.A)({
@@ -68,7 +68,7 @@ let v = e => {
         }, [O, r]),
         Z = D && H === x.xc.FP_ONLY,
         z = !(0, l.isEmpty)(y),
-        K = z && (0, c.q)(V),
+        K = z && (0, c.q)(F),
         X = (0, u.rdh)(u.LU0.colors.BACKGROUND_BASE_LOW).hex(),
         $ = Z || !(0, l.isEmpty)(w);
     return (0, a.jsx)(d.NPJ, {
@@ -80,7 +80,7 @@ let v = e => {
             cardType: u.sl2.PRIMARY,
             glowing: M,
             hueRotate: 25,
-            glowAmount: (0, c.M)(V) ? 2 : 8,
+            glowAmount: (0, c.M)(F) ? 2 : 8,
             blurAmount: 10,
             className: s()(R.Ui, k, {
                 [R.Tn]: z
@@ -118,7 +118,7 @@ let v = e => {
                 children: [(0, a.jsx)("div", {
                     className: R.u_,
                     style: {
-                        "--custom-tint-color": F ?? X
+                        "--custom-tint-color": V ?? X
                     },
                     "aria-hidden": !0
                 }), (0, a.jsxs)("div", {
@@ -177,7 +177,7 @@ let v = e => {
                         icon: S,
                         iconPosition: T,
                         text: w,
-                        variant: !z && (0, c.q)(V) ? "primary" : "overlay-primary",
+                        variant: !z && (0, c.q)(F) ? "primary" : "overlay-primary",
                         onClick: W
                     })]
                 })]

@@ -43,10 +43,10 @@ function E(e) {
     } = (0, g.A)({
         userId: t.id,
         guildId: b
-    }), L = (0, l.bG)([s.A], () => s.A.isFetchingUserOutbox(t.id)), w = t.id === n.id, D = (0, l.bG)([d.A, o.A], () => {
+    }), L = (0, l.bG)([s.A], () => s.A.isFetchingUserOutbox(t.id)), w = t.id === n.id, P = (0, l.bG)([d.A, o.A], () => {
         let e = w ? d.A.getStatus() : o.A.getStatus(t.id);
         return e === a.clD.OFFLINE || e === a.clD.INVISIBLE
-    }), P = y.length > 0 || null != R, G = E?.private !== !0 && null == R && null == O && null != k, M = !D && (P || G), U = C.length > 0;
+    }), D = y.length > 0 || null != R, G = E?.private !== !0 && null == R && null == O && null != k, M = !P && (D || G), U = C.length > 0;
     return M || U || !L ? M || U || L ? (0, i.jsxs)(A.K, {
         className: T.XG,
         fade: !0,

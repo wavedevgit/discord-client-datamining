@@ -34,8 +34,8 @@ var i = n(627968),
     O = n(383430),
     L = n(300131),
     w = n(518477),
-    D = n(788868),
-    P = n(985018),
+    P = n(788868),
+    D = n(985018),
     G = n(426158);
 
 function M(e) {
@@ -45,7 +45,7 @@ function M(e) {
         handleOpenGameShop: l
     } = e;
     return t.length > 0 ? (0, i.jsx)(O.A, {
-        title: P.intl.string(P.t["i/yzHs"]),
+        title: D.intl.string(D.t["i/yzHs"]),
         handleOpenCollectiblesShop: n,
         handleOpenGameShop: l,
         socialLayerStorefrontApplicationIds: t
@@ -53,7 +53,7 @@ function M(e) {
         variant: "secondary",
         size: "sm",
         icon: c.U1X,
-        text: P.intl.string(P.t["i/yzHs"]),
+        text: D.intl.string(D.t["i/yzHs"]),
         onClick: n
     })
 }
@@ -70,7 +70,7 @@ function U(e) {
     return (0, i.jsxs)("div", {
         className: G.$s,
         children: [t.length > 0 || null != s ? (0, i.jsx)(O.A, {
-            title: P.intl.string(P.t.SDUwM0),
+            title: D.intl.string(D.t.SDUwM0),
             handleOpenCollectiblesShop: l,
             handleOpenGameShop: t.length > 0 ? a : void 0,
             handleAddNitroToWishlist: s,
@@ -79,7 +79,7 @@ function U(e) {
             variant: "secondary",
             size: "sm",
             icon: c.j96,
-            text: P.intl.string(P.t.SDUwM0),
+            text: D.intl.string(D.t.SDUwM0),
             onClick: l
         }), (0, i.jsx)(L.A, {
             isOwner: !0,
@@ -103,7 +103,7 @@ function F(e) {
         variant: "primary",
         size: "sm",
         icon: c.U1X,
-        text: P.intl.formatToPlainString(P.t["HDT/rg"], {
+        text: D.intl.formatToPlainString(D.t["HDT/rg"], {
             applicationName: t.name
         }),
         onClick: s,
@@ -130,7 +130,7 @@ function W(e) {
             })
         }
         return (0, i.jsx)(O.A, {
-            title: P.intl.string(P.t.FkjcWY),
+            title: D.intl.string(D.t.FkjcWY),
             variant: "primary",
             handleOpenGameShop: s,
             socialLayerStorefrontApplicationIds: n
@@ -143,11 +143,11 @@ function W(e) {
             children: [(0, i.jsx)(c.Heading, {
                 variant: "heading-md/medium",
                 color: "text-strong",
-                children: P.intl.string(P.t.HGnLLT)
+                children: D.intl.string(D.t.HGnLLT)
             }), (0, i.jsx)(c.Text, {
                 variant: "text-sm/normal",
                 color: "text-default",
-                children: P.intl.string(P.t["/X1ny6"])
+                children: D.intl.string(D.t["/X1ny6"])
             })]
         }), (0, i.jsxs)(c.ButtonGroup, {
             size: "sm",
@@ -155,7 +155,7 @@ function W(e) {
                 variant: "primary",
                 size: "sm",
                 icon: c.U1X,
-                text: P.intl.string(P.t.ZbS4QB),
+                text: D.intl.string(D.t.ZbS4QB),
                 onClick: a
             }), d]
         })]
@@ -213,7 +213,7 @@ function H(e) {
             }), (0, i.jsx)(c.Text, {
                 variant: "text-xs/normal",
                 color: "text-subtle",
-                children: P.intl.string(P.t.RX7D9h)
+                children: D.intl.string(D.t.RX7D9h)
             })]
         }), h && f && (0, i.jsxs)("div", {
             className: G.lm,
@@ -224,7 +224,7 @@ function H(e) {
             }), (0, i.jsx)(c.Text, {
                 variant: "text-xs/normal",
                 color: "text-subtle",
-                children: P.intl.string(P.t.d78ChW)
+                children: D.intl.string(D.t.d78ChW)
             })]
         }), (0, i.jsxs)("div", {
             ref: j,
@@ -232,7 +232,7 @@ function H(e) {
             children: [(0, i.jsx)(c.Text, {
                 variant: "text-xs/semibold",
                 color: "text-subtle",
-                children: P.intl.format(P.t.r6Y1Lg, {
+                children: D.intl.format(D.t.r6Y1Lg, {
                     count: a.items.length
                 })
             }), t ? (0, i.jsx)(U, {
@@ -297,20 +297,20 @@ function B(e) {
         }))
     }, []), Y = l.useCallback(async () => {
         try {
-            await A.A.addSkuToWishlist(D.pe.TIER_2, m)
+            await A.A.addSkuToWishlist(P.pe.TIER_2, m)
         } catch {
-            (0, c.showToast)((0, c.createToast)(P.intl.string(P.t.F8FvUy), c.ToastType.FAILURE)), c.ORC.announce(P.intl.string(P.t.F8FvUy))
+            (0, c.showToast)((0, c.createToast)(D.intl.string(D.t.F8FvUy), c.ToastType.FAILURE)), c.ORC.announce(D.intl.string(D.t.F8FvUy))
         }
-    }, [m]);
+    }, [m]), K = S?.items ?? [];
     if (null != L) return null;
-    let K = null == S || 0 === S.items.length;
+    let q = null == S || 0 === K.length;
     return (0, i.jsxs)(C.K, {
         scrollerRef: n,
         className: s()({
-            [G.XG]: !K
+            [G.XG]: !q
         }),
         fade: !0,
-        children: [K ? (0, i.jsx)(W, {
+        children: [q ? (0, i.jsx)(W, {
             isOwner: E,
             socialLayerStorefrontApplicationIds: w,
             handleOpenShop: X,
@@ -326,9 +326,9 @@ function B(e) {
                 socialLayerStorefrontApplicationIds: w,
                 handleOpenShop: X,
                 handleOpenGameShop: z,
-                handleAddNitroToWishlist: F && !S.hasSkuId(D.pe.TIER_2) ? Y : void 0
+                handleAddNitroToWishlist: F && !S.hasSkuId(P.pe.TIER_2) ? Y : void 0
             }), (0, i.jsx)(R.A, {
-                items: S.items,
+                items: K,
                 profileOwner: t,
                 isOwner: E
             })]
@@ -338,7 +338,7 @@ function B(e) {
             applicationIds: w,
             hasFetchedWishlist: O,
             analyticsLocations: m,
-            className: K ? G._E : G.HZ
+            className: q ? G._E : G.HZ
         })]
     })
 }

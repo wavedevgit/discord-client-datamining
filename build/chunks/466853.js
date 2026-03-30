@@ -99,7 +99,7 @@ function T(e) {
     }), L = R === n.type;
     (0, m.A)(O, L);
     let w = C && null != h && !g,
-        D = () => (0, i.jsxs)("div", {
+        P = () => (0, i.jsxs)("div", {
             ref: y,
             className: s()(j.kL, p),
             children: [(0, i.jsx)(_.A, {
@@ -123,7 +123,7 @@ function T(e) {
             widget: n,
             getWidth: () => y.current?.offsetWidth,
             additionalManageWidgetMenuItems: N,
-            children: D()
-        }) : D()
+            children: P()
+        }) : P()
     })
 }

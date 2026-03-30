@@ -71,7 +71,7 @@ function v(e) {
             className: i()(m.FS, v),
             children: [(0, l.jsx)(r.Heading, {
                 variant: "heading-sm/semibold",
-                lineClamp: 1,
+                lineClamp: 2,
                 title: a.name,
                 children: a.name
             }), (0, l.jsxs)("div", {

@@ -86,20 +86,20 @@ function b(e) {
             startAuthorization: w
         } = (0, u.RD)(k),
         {
-            analyticsLocations: D
+            analyticsLocations: P
         } = (0, c.Ay)(d.A.USER_PROFILE_APPLICATION_WIDGET),
-        P = g.G.useConfig({
+        D = g.G.useConfig({
             location: "UserProfileWidgetOptionAddButton"
         }),
-        G = C && !O && L && P.enabled,
+        G = C && !O && L && D.enabled,
         M = l.useCallback(() => {
             if (!f) {
                 if (G) {
-                    P.autoAdd && ((0, h.Y5)(n), b({
+                    D.autoAdd && ((0, h.Y5)(n), b({
                         action: "WIDGET_ADDED",
                         ...n.getProfileEditAnalyticsOptions()
                     }), (0, _.XA)(j.jM.WIDGET_ADDED), a?.()), w({
-                        analyticsLocations: D
+                        analyticsLocations: P
                     });
                     return
                 }(0, h.Y5)(n), b({
@@ -107,7 +107,7 @@ function b(e) {
                     ...n.getProfileEditAnalyticsOptions()
                 }), (0, _.XA)(j.jM.WIDGET_ADDED), a?.()
             }
-        }, [f, G, P, n, b, a, w, D]),
+        }, [f, G, D, n, b, a, w, P]),
         U = y?.(n),
         F = G ? o.qYV : o.U1e;
     return (0, i.jsxs)("div", {

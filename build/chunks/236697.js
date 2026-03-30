@@ -59,8 +59,8 @@ function I(e) {
                         className: p.S
                     })
                 }), (0, i.jsx)(d.D, {
-                    title: g.intl.string(m.default.i4QNXo),
-                    body: g.intl.string(m.default.NqBsX4),
+                    title: g.intl.string(m.default.OlObRa),
+                    body: g.intl.string(m.default["8Gl8gP"]),
                     badge: {
                         type: "beta",
                         variant: "expressive"

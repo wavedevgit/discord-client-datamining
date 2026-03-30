@@ -40,8 +40,8 @@ var a, n, i, s = r(627968),
     B = r(743501),
     k = r(652700),
     G = r(282818),
-    F = r(965132),
-    V = r(576765),
+    V = r(965132),
+    F = r(576765),
     H = r(88433),
     Y = r(206771),
     W = r(533234),
@@ -113,8 +113,8 @@ let em = () => {
             assetUrl: ec ? Q.A : et.A
         },
         emojis: {
-            thumbnail: V.A,
-            assetUrl: ec ? F.A : H.A
+            thumbnail: F.A,
+            assetUrl: ec ? V.A : H.A
         },
         noLimits: {
             thumbnail: W.A,
@@ -262,9 +262,9 @@ let em = () => {
         },
         threePPromotions: {
             name: "threePPromotions",
-            title: w.intl.string(P.default.F2FzGm),
-            description: w.intl.string(P.default.QwAmgW),
-            descriptionCta: w.intl.string(P.default.Q0fh8d),
+            title: w.intl.string(P.default.OlObRa),
+            description: w.intl.string(P.default["8Gl8gP"]),
+            descriptionCta: w.intl.string(P.default.HINTfJ),
             previewImage: em.threePPromotions.thumbnail,
             videoUrl: em.threePPromotions.assetUrl,
             onClick: () => (0, v.uE)({
