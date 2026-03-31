@@ -31,8 +31,8 @@ var i = n(627968),
     y = n(662758),
     O = n(957565),
     R = n(975571),
-    L = n(427262),
-    P = n(837921),
+    P = n(427262),
+    L = n(837921),
     D = n(253932),
     G = n(780964),
     M = n(192501),
@@ -42,7 +42,7 @@ var i = n(627968),
     V = n(985018),
     B = n(536242),
     F = n(856647);
-let H = P.Ay.getEnableHardwareAcceleration() ? c.JsQ : c.euF;
+let H = L.Ay.getEnableHardwareAcceleration() ? c.JsQ : c.euF;
 
 function z(e) {
     let t = (0, E.X)("UserSettingsAccountProfileCard");
@@ -130,7 +130,7 @@ function X(e) {
     let {
         user: t,
         className: n
-    } = e, l = z(t.id), r = (0, p.EC)(), u = r?.nick?.[0] ?? null, m = L.Ay.getGlobalName(t), _ = s.useRef(null), [g, x] = s.useState(!1);
+    } = e, l = z(t.id), r = (0, p.EC)(), u = r?.nick?.[0] ?? null, m = P.Ay.getGlobalName(t), _ = s.useRef(null), [g, x] = s.useState(!1);
     return s.useEffect(() => {
         x(null != _.current && _.current.scrollWidth > _.current.clientWidth)
     }, [m]), (0, i.jsxs)("div", {

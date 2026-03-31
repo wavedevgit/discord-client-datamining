@@ -31,8 +31,8 @@ var i = n(627968),
     y = n(954571),
     O = n(927578),
     R = n(890668),
-    L = n(780207),
-    P = n(652215),
+    P = n(780207),
+    L = n(652215),
     D = n(985018),
     G = n(21861);
 
@@ -74,7 +74,7 @@ function M() {
             profilePreview: (0, i.jsx)(E.A, {
                 user: e,
                 canUsePremiumCustomization: F,
-                onUpsellClick: L.A,
+                onUpsellClick: P.A,
                 pendingBio: B,
                 ...U,
                 pendingAvatar: w
@@ -115,7 +115,7 @@ function M() {
                 children: (0, i.jsx)(d.Button, {
                     variant: "overlay-primary",
                     onClick: () => {
-                        y.default.track(P.HAw.TRY_IT_OUT_PRESET_CLICKED, {
+                        y.default.track(L.HAw.TRY_IT_OUT_PRESET_CLICKED, {
                             cta_variant: "floating_action_button"
                         }), W?.current?.scrollIntoView({
                             behavior: "smooth"

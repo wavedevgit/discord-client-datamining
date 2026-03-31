@@ -32,8 +32,8 @@ var i, s = n(627968),
     y = n(419455),
     O = n(288604),
     R = n(163635),
-    L = n(345362),
-    P = n(509442),
+    P = n(345362),
+    L = n(509442),
     D = ((i = {}).BEST_OF_NITRO = "bestof", i.APPEARANCE_STYLE = "appearance", i.UPGRADES = "upgrades", i.VIP_EXTRAS = "vip", i);
 let G = [{
     id: "bestof",
@@ -142,7 +142,7 @@ function M() {
             }),
             ctaText: N.intl.string(N.t.jVcuVY),
             onCtaClick: M,
-            primaryAsset: P.A,
+            primaryAsset: L.A,
             categories: ["bestof", "appearance"]
         }, {
             id: E.MORE_EMOJIS_CARD_ID,
@@ -201,7 +201,7 @@ function M() {
             id: E.SPECIAL_STICKERS_CARD_ID,
             title: N.intl.string(N.t.MQoVeb),
             description: N.intl.string(N.t.HGCLZX),
-            primaryAsset: L.A,
+            primaryAsset: P.A,
             categories: ["upgrades"]
         }, {
             id: E.SUPER_REACTIONS_CARD_ID,

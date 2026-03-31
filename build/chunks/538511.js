@@ -33,8 +33,8 @@ var s = n(503698),
     y = n(573359),
     O = n(422936),
     R = n(795269),
-    L = n(327479),
-    P = n(473702),
+    P = n(327479),
+    L = n(473702),
     D = n(788868),
     G = n(652215),
     M = n(601107),
@@ -149,7 +149,7 @@ function Y() {
             className: U.MS,
             children: k.intl.string(k.t.R0GJL2)
         }),
-        buttons: (0, i.jsx)(L.A, {
+        buttons: (0, i.jsx)(P.A, {
             className: U.au,
             onClick: () => (0, h.A)({
                 subscriptionTier: D.pe.TIER_1,
@@ -180,7 +180,7 @@ let X = function(e) {
     } = K, Z = W === D.xc.FP_SUB_PAUSED, q = (0, O.O)(), Q = q?.discount?.amount, J = (0, I.k5)(), $ = (0, I.nf)(), ee = (0, j.ds)(), et = () => {
         (t.status === G.Dmq.ACTIVE || t.status === G.Dmq.PAST_DUE || t.status === G.Dmq.PAUSE_PENDING || Z) && ei()
     }, en = () => {
-        t.status === G.Dmq.BILLING_RETRY && ei(P.g.CONFIRM)
+        t.status === G.Dmq.BILLING_RETRY && ei(L.g.CONFIRM)
     }, ei = e => {
         (0, c.mMO)(async () => {
             let {
@@ -253,9 +253,9 @@ let X = function(e) {
             }
         })
     }, ea = () => {
-        t.status === G.Dmq.PAUSED && ei(P.g.PAUSE_SELECT)
+        t.status === G.Dmq.PAUSED && ei(L.g.PAUSE_SELECT)
     }, er = () => {
-        ei(P.g.WHAT_YOU_LOSE)
+        ei(L.g.WHAT_YOU_LOSE)
     }, eo = C.Ay.getPlanIdFromInvoice(t, s);
     if ((0, p.m1)(eo)) return null;
     let ed = C.Ay.getStatusFromInvoice(t, s),
@@ -342,7 +342,7 @@ let X = function(e) {
                     }), (0, i.jsx)(d.m_, {
                         text: n,
                         asContainer: !0,
-                        children: (0, i.jsx)(L.A, {
+                        children: (0, i.jsx)(P.A, {
                             className: l()(U.au, U.lB),
                             disabled: e,
                             onClick: () => {

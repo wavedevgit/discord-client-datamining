@@ -31,8 +31,8 @@ var i = n(627968),
     y = n(840065),
     O = n(709732),
     R = n(652215),
-    L = n(788868),
-    P = n(985018),
+    P = n(788868),
+    L = n(985018),
     D = n(827033);
 
 function G(e) {
@@ -49,20 +49,20 @@ function G(e) {
         S = (0, h.WD)(n.id, f),
         E = null != l,
         b = (0, A.A)(n, E);
-    E && d ? t = P.intl.format(P.t.pkxVx6, {
+    E && d ? t = L.intl.format(L.t.pkxVx6, {
         endDate: b,
         onClickDetails: p
-    }) : E && !d ? t = P.intl.format(P.t["4sFeob"], {
+    }) : E && !d ? t = L.intl.format(L.t["4sFeob"], {
         endDate: b,
         onClickDetails: p
-    }) : !E && d ? t = P.intl.format(P.t["RBnE+l"], {
+    }) : !E && d ? t = L.intl.format(L.t["RBnE+l"], {
         endDate: b,
         onClickDetails: p
-    }) : E || d || (t = P.intl.format(P.t["57+7Qn"], {
+    }) : E || d || (t = L.intl.format(L.t["57+7Qn"], {
         endDate: b,
         onClickDetails: p
     }));
-    let C = E ? P.intl.string(P.t["2cHUti"]) : P.intl.string(P.t.O13yhz),
+    let C = E ? L.intl.string(L.t["2cHUti"]) : L.intl.string(L.t.O13yhz),
         v = s.useCallback(() => x(!1), []),
         {
             outboundTitle: N,
@@ -127,7 +127,7 @@ let M = function() {
             } = e;
             return null == t
         }),
-        l = (0, d.bG)([b.default], () => N.Ay.isPremiumExactly(b.default.getCurrentUser(), L.PremiumTypes.TIER_2)),
+        l = (0, d.bG)([b.default], () => N.Ay.isPremiumExactly(b.default.getCurrentUser(), P.PremiumTypes.TIER_2)),
         r = o().groupBy(t, e => (0, v.Kx)(e.skuId, e.subscriptionPlanId, e.giftStyle)),
         [_, g] = s.useState(!1);
     s.useEffect(() => {
@@ -149,17 +149,17 @@ let M = function() {
     }).enabled && U;
     return _ && A ? (0, i.jsxs)(i.Fragment, {
         children: [function() {
-            let e = n.find(e => e.giftCodeBatchId === L.FB && !e.consumed),
-                t = n.filter(e => e.giftCodeBatchId === L.Bu && !e.consumed) ?? [],
+            let e = n.find(e => e.giftCodeBatchId === P.FB && !e.consumed),
+                t = n.filter(e => e.giftCodeBatchId === P.Bu && !e.consumed) ?? [],
                 [s, r] = o().partition(t, e => {
                     let {
                         subscriptionPlanId: t
                     } = e;
-                    return t === L.gD.PREMIUM_YEAR_TIER_2
+                    return t === P.gD.PREMIUM_YEAR_TIER_2
                 }),
                 d = (0, i.jsx)(c.Heading, {
                     variant: "heading-md/semibold",
-                    children: U ? P.intl.string(P.t.wFsj3B) : void 0
+                    children: U ? L.intl.string(L.t.wFsj3B) : void 0
                 }),
                 u = w ? (0, i.jsxs)("div", {
                     className: D.uo,
@@ -170,7 +170,7 @@ let M = function() {
                     }), (0, i.jsx)(c.Text, {
                         variant: "text-md/normal",
                         className: D.Qw,
-                        children: P.intl.format(P.t.G4fwxK, {
+                        children: L.intl.format(L.t.G4fwxK, {
                             onClick: () => {
                                 (0, j.default)(), (0, E.pX)(R.BVt.APPLICATION_STORE)
                             }
@@ -178,9 +178,9 @@ let M = function() {
                     }), (0, i.jsx)(f.A, {
                         showGradient: !0,
                         className: D.aA,
-                        subscriptionTier: L.pe.TIER_2,
+                        subscriptionTier: P.pe.TIER_2,
                         textOptions: {
-                            textOverride: P.intl.string(P.t.mr4K7D)
+                            textOverride: L.intl.string(L.t.mr4K7D)
                         }
                     })]
                 }) : null;
@@ -217,19 +217,19 @@ let M = function() {
                             skuId: e.skuId,
                             subscriptionPlanId: e.subscriptionPlanId,
                             entitlements: [e],
-                            giftCodeBatchId: L.FB
+                            giftCodeBatchId: P.FB
                         }, (0, v.Kx)(e.skuId, e.subscriptionPlanId)) : null, s.length > 0 ? (0, i.jsx)(O.A, {
                             className: D.uI,
                             skuId: s[0].skuId,
                             subscriptionPlanId: s[0].subscriptionPlanId,
                             entitlements: s,
-                            giftCodeBatchId: L.Bu
+                            giftCodeBatchId: P.Bu
                         }, (0, v.Kx)(s[0].skuId, s[0].subscriptionPlanId)) : null, r.length > 0 ? (0, i.jsx)(O.A, {
                             className: D.uI,
                             skuId: r[0].skuId,
                             subscriptionPlanId: r[0].subscriptionPlanId,
                             entitlements: r,
-                            giftCodeBatchId: L.Bu
+                            giftCodeBatchId: P.Bu
                         }, (0, v.Kx)(r[0].skuId, r[0].subscriptionPlanId)) : null]
                     })
                 })]
@@ -239,7 +239,7 @@ let M = function() {
             children: (0, i.jsxs)(c.Fmo, {
                 component: (0, i.jsx)(c.Heading, {
                     variant: "heading-md/semibold",
-                    children: P.intl.string(P.t["9KeUbY"])
+                    children: L.intl.string(L.t["9KeUbY"])
                 }),
                 children: [(0, i.jsx)(c.cGx, {
                     className: D.yF
@@ -249,10 +249,10 @@ let M = function() {
                         className: D.QT
                     }), (0, i.jsx)(c.H, {
                         className: D.ks,
-                        children: P.intl.string(P.t.B1qgZn)
+                        children: L.intl.string(L.t.B1qgZn)
                     }), (0, i.jsx)("p", {
                         className: D.WO,
-                        children: P.intl.format(P.t.HezvJ8, {
+                        children: L.intl.format(L.t.HezvJ8, {
                             onClick: function() {
                                 (0, y.openUserSettings)(I.X.NITRO_PANEL)
                             }

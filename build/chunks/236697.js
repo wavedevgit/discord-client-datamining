@@ -1,6 +1,6 @@
 /** chunk id: 236697 params = (module,exports,require) **/
 n.d(t, {
-    u: () => I
+    u: () => f
 });
 var i = n(627968),
     l = n(64700),
@@ -12,32 +12,33 @@ var i = n(627968),
     c = n(397927),
     u = n(688810),
     A = n(532794),
-    h = n(788868),
-    _ = n(49999),
-    m = n(653624),
-    p = n(985018),
-    g = n(991674),
-    E = n(8496);
+    h = n(881373),
+    _ = n(788868),
+    m = n(49999),
+    p = n(653624),
+    g = n(985018),
+    E = n(991674),
+    I = n(240703);
 
-function I(e) {
+function f(e) {
     let {
         targetElementRef: t,
         dismissPopover: n,
-        children: I
+        children: f
     } = e, {
-        analyticsLocations: f
-    } = (0, u.Ay)(), C = l.useCallback(() => {
-        n(_.i.TAKE_ACTION), (0, A.A)({
-            subscriptionTier: h.pe.TIER_2,
-            analyticsLocations: f
+        analyticsLocations: C
+    } = (0, u.Ay)(), T = l.useCallback(() => {
+        n(m.i.TAKE_ACTION), (0, A.A)({
+            subscriptionTier: _.pe.TIER_2,
+            analyticsLocations: C
         })
-    }, [n, f]);
+    }, [n, C]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
-            children: I
+            children: f
         }), (0, i.jsx)(a.x, {
             targetElementRef: t,
-            onRequestClose: () => n(_.i.USER_DISMISS),
+            onRequestClose: () => n(m.i.USER_DISMISS),
             alignmentStrategy: "edge",
             align: "top",
             position: "right",
@@ -48,30 +49,32 @@ function I(e) {
             children: (0, i.jsxs)("div", {
                 "data-mana-component": "popover",
                 children: [(0, i.jsx)(o.q, {
-                    onClick: () => n(_.i.USER_DISMISS),
+                    onClick: () => n(m.i.USER_DISMISS),
                     variant: "color-mix"
                 }), (0, i.jsx)("div", {
-                    className: g.h,
+                    className: E.h,
                     children: (0, i.jsx)("img", {
-                        src: E.A,
+                        src: I.A,
                         alt: "",
                         "aria-hidden": !0,
-                        className: g.S
+                        className: E.S
                     })
                 }), (0, i.jsx)(d.D, {
-                    title: p.intl.string(m.default.OlObRa),
-                    body: p.intl.string(m.default["8Gl8gP"]),
+                    title: g.intl.string(p.default.OlObRa),
+                    body: g.intl.format(p.default["A+56/R"], {
+                        discountPercent: h.aW
+                    }),
                     badge: {
                         type: "beta",
                         variant: "expressive"
                     }
                 }), (0, i.jsx)(r.Z, {
                     actions: [{
-                        text: p.intl.string(p.t.pj0XBN),
+                        text: g.intl.string(g.t.pj0XBN),
                         variant: "primary",
                         icon: c.tvc,
                         iconPosition: "start",
-                        onClick: C
+                        onClick: T
                     }]
                 }), (0, i.jsx)(s.F, {})]
             })

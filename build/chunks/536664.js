@@ -37,17 +37,17 @@ function R() {
         runningGameApplication: t
     } = (0, x.A)(), n = e?.pid, l = (0, r.bG)([f.default], () => null == e || null == n ? null : f.default.getTrackedGameByPid(n), [e, n], a()), {
         enabledLegacy: R,
-        enabledOOP: L
+        enabledOOP: P
     } = (0, r.cf)([b.A, C.A], () => null == e && null == l ? {
         enabledLegacy: !1,
         enabledOOP: !1
     } : null == e ? {
         enabledLegacy: l?.legacyEnabled ?? !1,
         enabledOOP: l?.oopEnabled ?? !1
-    } : (0, g.hw)(e, !1, [b.A, C.A]), [e, l]), P = (0, r.bG)([g.Ay, b.A, C.A], () => null == e ? null : (0, g.xU)(e, g.Ay, b.A, C.A), [e], a()), [D, G] = s.useState(L), [M, k] = s.useState(R), [U, w] = s.useState(!1);
+    } : (0, g.hw)(e, !1, [b.A, C.A]), [e, l]), L = (0, r.bG)([g.Ay, b.A, C.A], () => null == e ? null : (0, g.xU)(e, g.Ay, b.A, C.A), [e], a()), [D, G] = s.useState(P), [M, k] = s.useState(R), [U, w] = s.useState(!1);
     s.useEffect(() => {
-        G(L), k(R)
-    }, [L, R]);
+        G(P), k(R)
+    }, [P, R]);
     let V = !(0, v.supportsLegacy)(),
         B = !(0, v.supportsOutOfProcess)(),
         {
@@ -171,7 +171,7 @@ function R() {
         onExpand: w,
         className: U ? O.tx : void 0,
         title: (0, i.jsxs)(i.Fragment, {
-            children: [t?.name ?? P?.name ?? e?.gameName ?? "", null != P && P.verified ? (0, i.jsx)(o.m, {
+            children: [t?.name ?? L?.name ?? e?.gameName ?? "", null != L && L.verified ? (0, i.jsx)(o.m, {
                 text: y.intl.string(y.t["4PJP5p"]),
                 children: (0, i.jsx)(h.A, {
                     size: j.zj,

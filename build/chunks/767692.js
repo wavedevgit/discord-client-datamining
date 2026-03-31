@@ -29,7 +29,7 @@ var i = n(627968),
 function N(e) {
     let {
         premiumSubscription: t
-    } = e, n = (0, l.bG)([A.A], () => A.A.boostSlots), N = s.useMemo(() => Object.values(n), [n]), I = (0, l.bG)([x.default], () => x.default.getCurrentUser()), j = h.Ay.isPremium(I, C.PremiumTypes.TIER_2), y = (0, l.bG)([_.A], () => _.A.affinities), O = (0, l.bG)([g.Ay], () => g.Ay.getFlattenedGuildIds()), R = y.length > 0 || O.length > 0, L = N.length > 0, P = s.useMemo(() => N.filter(e => null != e.premiumGuildSubscription), [N]), D = P.length > 0, G = N.length > P.length, M = (0, l.bG)([m.A], () => m.A.getCurrentUserAppliedBoosts()), {
+    } = e, n = (0, l.bG)([A.A], () => A.A.boostSlots), N = s.useMemo(() => Object.values(n), [n]), I = (0, l.bG)([x.default], () => x.default.getCurrentUser()), j = h.Ay.isPremium(I, C.PremiumTypes.TIER_2), y = (0, l.bG)([_.A], () => _.A.affinities), O = (0, l.bG)([g.Ay], () => g.Ay.getFlattenedGuildIds()), R = y.length > 0 || O.length > 0, P = N.length > 0, L = s.useMemo(() => N.filter(e => null != e.premiumGuildSubscription), [N]), D = L.length > 0, G = N.length > L.length, M = (0, l.bG)([m.A], () => m.A.getCurrentUserAppliedBoosts()), {
         fractionalState: k
     } = (0, a.A)({
         forceFetch: !0
@@ -39,7 +39,7 @@ function N(e) {
         children: [(0, i.jsx)(r.kb, {
             className: v.ek
         }), (0, i.jsx)(T.A, {
-            hasGuildBoostSlots: L,
+            hasGuildBoostSlots: P,
             hasAppliedGuildBoosts: D,
             hasBoostPerk: B,
             canAddBoosts: V

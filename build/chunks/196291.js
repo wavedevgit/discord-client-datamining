@@ -31,8 +31,8 @@ var i = n(627968),
     y = n(212168),
     O = n(730588),
     R = n(63675),
-    L = n(253604),
-    P = n(652215),
+    P = n(253604),
+    L = n(652215),
     D = n(788868),
     G = n(355097),
     M = n(985018),
@@ -86,15 +86,15 @@ function U(e) {
         }) : (0, T.p)({
             avatar: z,
             themeColors: H
-        }), (0, C.WU)(z), S.default.track(P.HAw.TRY_IT_OUT_PRESET_SELECTED, {
+        }), (0, C.WU)(z), S.default.track(L.HAw.TRY_IT_OUT_PRESET_SELECTED, {
             preset: X
         }))
     };
     s.useEffect(() => {
-        n && S.default.track(P.HAw.PREMIUM_UPSELL_VIEWED, {
+        n && S.default.track(L.HAw.PREMIUM_UPSELL_VIEWED, {
             type: D.e.PREMIUM_PROFILE_TRY_IT_OUT,
             location: {
-                page: P.liQ.USER_SETTINGS
+                page: L.liQ.USER_SETTINGS
             },
             location_stack: Q
         })
@@ -124,7 +124,7 @@ function U(e) {
                     children: [(0, i.jsx)(m.A, {
                         preset: X,
                         onShuffle: K
-                    }), (0, i.jsx)(L.A, {
+                    }), (0, i.jsx)(P.A, {
                         user: t
                     })]
                 }),

@@ -74,7 +74,7 @@ function K(e) {
         targetRef: eu
     } = (0, v.O7)(), [ec, ed] = i.useState(!0 === s ? O.Q6.PLAYING : O.Q6.PAUSED), [em, eE] = i.useState(!1), [e_, ep] = i.useState(!1), ef = (0, y.Yh)(W), [ev, eS] = i.useState(ef.percentComplete), eh = i.useCallback(e => {
         eU(null), eS(e)
-    }, []), [eg, eA] = i.useState(!1), [eC, eT] = i.useState(!0), [eb, ex] = i.useState(!1), [eD, ey] = i.useState([]), [eI, eL] = i.useState(S.A.getEffectiveConnectionSpeed()), [eN, eR] = i.useState(0), [eO, ek] = i.useState(0), [eM, ew] = i.useState(!1), [eP, ej] = i.useState(!1), [eV, eU] = i.useState(null), eQ = i.useRef(!0), eB = i.useRef(null), eF = i.useRef(null), eY = (0, C.Kr)(e => e.videoProgress[W.id] ?? C.yc, u.x), eK = (0, C.Kr)(e => e.setVideoProgress), eH = (0, C.Kr)(e => e.muted), e$ = (0, C.Kr)(e => e.volume), eG = (0, c.bG)([p.A], () => p.A.useReducedMotion), eq = (0, i.useRef)(null), eW = (0, i.useRef)(null), ez = i.useRef(!0), eJ = W.userStatus?.completedAt != null, eX = i.useMemo(() => W.config.features.includes(U.Li.FULL_EPISODE_VIDEO_QUEST), [W.config.features]), eZ = i.useRef(!1), [e0, e1] = i.useState(null), [e6, e7] = i.useState(!1), [e5, e4] = i.useState(!1), [e8, e3] = i.useState(!1), [e9, e2] = i.useState(null), te = eJ ? eq.current?.duration ?? 0 : Math.max(eY.maxTimestampSec, ef.progressSeconds), tt = i.useMemo(() => (0, x.L)({
+    }, []), [eg, eA] = i.useState(!1), [eC, eT] = i.useState(!0), [eb, ex] = i.useState(!1), [eD, ey] = i.useState([]), [eI, eL] = i.useState(S.A.getEffectiveConnectionSpeed()), [eN, eR] = i.useState(0), [eO, ek] = i.useState(0), [eM, ew] = i.useState(!1), [eP, ej] = i.useState(!1), [eV, eU] = i.useState(null), eQ = i.useRef(!0), eB = i.useRef(null), eF = i.useRef(null), eY = (0, C.Kr)(e => e.videoProgress[W.id] ?? C.yc, u.x), eK = (0, C.Kr)(e => e.setVideoProgress), eH = (0, C.Kr)(e => e.muted), e$ = (0, C.Kr)(e => e.volume), eG = (0, c.bG)([p.A], () => p.A.useReducedMotion), eq = (0, i.useRef)(null), eW = (0, i.useRef)(null), ez = i.useRef(!0), eJ = W.userStatus?.completedAt != null, eX = i.useMemo(() => W.config.features.includes(U.Li.FULL_EPISODE_VIDEO_QUEST), [W.config.features]), eZ = i.useRef(!1), [e0, e1] = i.useState(null), [e6, e7] = i.useState(!1), [e5, e4] = i.useState(!1), [e8, e3] = i.useState(!1), [e2, e9] = i.useState(null), te = eJ ? eq.current?.duration ?? 0 : Math.max(eY.maxTimestampSec, ef.progressSeconds), tt = i.useMemo(() => (0, x.L)({
         quest: W,
         location: U.rE.VIDEO_MODAL
     }), [W]), tn = (0, m.g)(eJ, eY, ef.progressSeconds), [tr, ti] = i.useState(O.oA.MD), ts = {
@@ -236,10 +236,10 @@ function K(e) {
             }
         },
         tF = e => {
-            e2(e)
+            e9(e)
         },
         tY = e => {
-            e2(t => t?.id === e.id ? null : t)
+            e9(t => t?.id === e.id ? null : t)
         },
         tK = i.useCallback(() => {
             if (null == eq.current || (tt.info(`[QV] | handleTracksLoaded: textTracks.length: ${eq.current.textTracks.length}`), 0 === eq.current.textTracks.length)) return;
@@ -296,11 +296,11 @@ function K(e) {
         config: Y
     }));
     i.useEffect(() => (tX({
-        captionHeightSpring: er && null != e9 ? tz.current?.clientHeight ?? 0 : 0,
+        captionHeightSpring: er && null != e2 ? tz.current?.clientHeight ?? 0 : 0,
         immediate: eG
     }), () => {
         tJ.stop()
-    }), [er, tX, eG, e9, tJ]), i.useEffect(() => (tW({
+    }), [er, tX, eG, e2, tJ]), i.useEffect(() => (tW({
         controlBarAnimSpring: tP || eM ? 1 : 0,
         immediate: eG
     }), () => {
@@ -518,7 +518,7 @@ function K(e) {
                 }) : (0, r.jsx)(E.E$n, {
                     className: F.PK
                 })
-            }, ec), er && null != e9 && !tZ && (0, r.jsx)(o.animated.div, {
+            }, ec), er && null != e2 && !tZ && (0, r.jsx)(o.animated.div, {
                 className: F.o$,
                 ref: tz,
                 "data-testid": "discord-web-video-player-captions",
@@ -532,7 +532,7 @@ function K(e) {
                     variant: "text-lg/semibold",
                     color: "always-white",
                     className: F.qh,
-                    children: e9.text
+                    children: e2.text
                 })
             }), (0, r.jsxs)(o.animated.div, {
                 className: F.r8,

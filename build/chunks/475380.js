@@ -36,8 +36,8 @@ function I(e) {
         isSubgame: y = !1,
         parentGame: O
     } = e, R = (0, r.cf)([g.Ay, h.A, p.A], () => (0, g.xU)(t, g.Ay, h.A, p.A)), {
-        canToggleDetection: L,
-        isCurrentGameDetectionEnabled: P
+        canToggleDetection: P,
+        isCurrentGameDetectionEnabled: L
     } = (0, r.cf)([g.Ay], () => ({
         canToggleDetection: null == O || g.Ay.isDetectionEnabled(O),
         isCurrentGameDetectionEnabled: g.Ay.isDetectionEnabled(R)
@@ -52,7 +52,7 @@ function I(e) {
     });
 
     function B() {
-        null != j && j.length > 0 && P ? (0, c.mMO)(async () => {
+        null != j && j.length > 0 && L ? (0, c.mMO)(async () => {
             let {
                 Modal: e
             } = await Promise.resolve().then(n.bind(n, 158954));
@@ -170,7 +170,7 @@ function I(e) {
             }), function() {
                 let {
                     detectable: e
-                } = R, t = e && L ? (0, i.jsx)(c.bMW, {
+                } = R, t = e && P ? (0, i.jsx)(c.bMW, {
                     size: "md",
                     color: "currentColor",
                     className: C.Lj,
@@ -178,14 +178,14 @@ function I(e) {
                 }) : (0, i.jsx)(c.G3N, {
                     size: "md",
                     color: "currentColor",
-                    className: L ? C.$V : C.zN,
+                    className: P ? C.$V : C.zN,
                     colorClass: C.GS
                 });
                 return (0, i.jsx)("div", {
                     className: a()(v.tR, v.oA, v.LT, C.E3),
                     children: (0, i.jsx)(d.m_, {
                         text: b.intl.string(b.t.QmitzM),
-                        children: L ? (0, i.jsx)(c.DUT, {
+                        children: P ? (0, i.jsx)(c.DUT, {
                             "aria-label": b.intl.string(b.t.QmitzM),
                             className: C.ym,
                             onClick: B,

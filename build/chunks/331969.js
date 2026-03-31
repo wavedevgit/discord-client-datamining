@@ -134,12 +134,12 @@ function C(e) {
         })
     }, [y]);
     let R = null != j ? j.length : I.length,
-        L = (() => {
+        P = (() => {
             if (null != j) return j[y]?.id;
             let e = I[y];
             if (e?.type === A.rD.VOICE_CHANNEL) return e.record.id
         })(),
-        P = R > 0 || "" === v ? {
+        L = R > 0 || "" === v ? {
             innerId: b,
             innerRole: "listbox",
             innerAriaLabel: h.intl.string(h.t["+N3fW7"]),
@@ -215,12 +215,12 @@ function C(e) {
             role: "combobox",
             "aria-controls": b,
             "aria-expanded": R > 0,
-            "aria-activedescendant": R > 0 && null != L ? L : void 0,
+            "aria-activedescendant": R > 0 && null != P ? P : void 0,
             "aria-autocomplete": "list",
             spellCheck: !1,
             autoFocus: !0
         }),
-        listProps: P
+        listProps: L
     })
 }
 

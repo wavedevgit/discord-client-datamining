@@ -61,7 +61,7 @@ function R(e) {
     })
 }
 
-function L(e) {
+function P(e) {
     let {
         children: t
     } = e;
@@ -73,7 +73,7 @@ function L(e) {
     })
 }
 
-function P(e) {
+function L(e) {
     let {
         settings: {
             enabled: t,
@@ -128,7 +128,7 @@ function D(e) {
                 color: o ? "text-muted" : "text-strong",
                 className: C.KF,
                 children: b.intl.string(b.t.vd0D81)
-            }), (0, i.jsx)(L, {
+            }), (0, i.jsx)(P, {
                 children: b.intl.string(b.t.a18Sug)
             }), (0, i.jsx)(d.Apm, {
                 disabled: o,
@@ -148,7 +148,7 @@ function D(e) {
                 color: o ? "text-muted" : "text-strong",
                 className: C.KF,
                 children: b.intl.string(b.t.sPO3ij)
-            }), (0, i.jsx)(L, {
+            }), (0, i.jsx)(P, {
                 children: b.intl.string(b.t.xoldVn)
             }), (0, i.jsx)(d.Apm, {
                 disabled: o,
@@ -223,7 +223,7 @@ function G(e) {
                 color: r ? "text-muted" : "text-strong",
                 className: C.KF,
                 children: b.intl.string(b.t.L0oQuh)
-            }), (0, i.jsx)(L, {
+            }), (0, i.jsx)(P, {
                 children: b.intl.string(b.t["/OOFpL"])
             }), (0, i.jsx)(d.Apm, {
                 disabled: r,
@@ -267,7 +267,7 @@ function M(e) {
                 color: u ? "text-muted" : "text-strong",
                 className: C.KF,
                 children: b.intl.string(b.t.UxnnC4)
-            }), (0, i.jsx)(L, {
+            }), (0, i.jsx)(P, {
                 children: b.intl.string(b.t.CEOEOb)
             }), (0, i.jsx)(d.Apm, {
                 disabled: u,
@@ -406,7 +406,7 @@ function V(e) {
     };
     return s.useEffect(() => (window.addEventListener("mousemove", _), () => window.removeEventListener("mousemove", _)), []), (0, i.jsxs)(d.BJc, {
         gap: 24,
-        children: [(0, i.jsx)(P, {
+        children: [(0, i.jsx)(L, {
             settings: l,
             updateSettings: u
         }), (0, i.jsx)(U, {

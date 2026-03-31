@@ -42,12 +42,12 @@ let _ = {
             glowAmount: R = 8,
             blurAmount: v = 30,
             hueRotate: j = 0,
-            isReducedMotion: N,
-            onMouseEnter: E
-        } = e, I = n.useRef(null), y = n.useRef(null), {
+            isReducedMotion: E,
+            onMouseEnter: N
+        } = e, y = n.useRef(null), I = n.useRef(null), {
             status: P,
-            buffer: T
-        } = (0, c.CE)(A ? l.A : null), S = n.useContext(o.C), w = N ?? S.reducedMotion.enabled, O = {
+            buffer: S
+        } = (0, c.CE)(A ? l.A : null), T = n.useContext(o.C), w = E ?? T.reducedMotion.enabled, O = {
             "--custom-glow-amount": `${R}px`,
             "--custom-blur-amount": `${v}px`,
             "--custom-hue-rotate": `${j}deg`,
@@ -55,18 +55,18 @@ let _ = {
         };
         return (0, a.jsxs)("div", {
             id: r,
-            ref: I,
+            ref: y,
             tabIndex: s,
             className: i()(m.k, f),
             style: O,
-            onMouseEnter: E,
+            onMouseEnter: N,
             children: [A && P !== c.BW.Loading && (0, a.jsx)(d.w, {
-                buffer: T,
+                buffer: S,
                 artboard: g,
                 artboardProperties: _,
-                eventTargetRef: I,
+                eventTargetRef: y,
                 className: m.Q,
-                ref: y,
+                ref: I,
                 fit: C,
                 withReducedMotion: w ? "halt" : "play"
             }), (0, a.jsx)(u.ZpM, {

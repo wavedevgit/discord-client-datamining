@@ -1,23 +1,26 @@
 /** chunk id: 333639 params = (module,exports,require) **/
 n.d(t, {
-    e: () => o
+    e: () => d
 });
 var i = n(627968);
 n(64700);
 var l = n(435371),
-    a = n(653624),
-    r = n(985018),
-    s = n(8496);
+    a = n(881373),
+    r = n(653624),
+    s = n(985018),
+    o = n(208556);
 
-function o(e) {
+function d(e) {
     let {
         children: t
     } = e;
     return (0, i.jsx)(l.un, {
-        body: r.intl.string(a.default["8Gl8gP"]),
-        title: r.intl.string(a.default.OlObRa),
+        body: s.intl.format(r.default.zinfZi, {
+            discountPercent: a.aW
+        }),
+        title: s.intl.string(r.default.OlObRa),
         asset: (0, i.jsx)("img", {
-            src: s.A,
+            src: o.A,
             alt: "",
             "aria-hidden": !0,
             style: {

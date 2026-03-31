@@ -31,12 +31,12 @@ function C(e) {
         fractionalState: R
     } = (0, a.A)({
         forceFetch: !0
-    }), L = v?.isPremiumGroupMember(), P = t?.isPausedOrPausePending !== !0 && R === E.xc.NONE && !L;
+    }), P = v?.isPremiumGroupMember(), L = t?.isPausedOrPausePending !== !0 && R === E.xc.NONE && !P;
     return (0, i.jsxs)("div", {
         className: b.GO,
         children: [(0, i.jsx)(r.kb, {
             className: b.ek
-        }), (0, i.jsx)(f.A, {}), L && (0, i.jsx)(d.A, {}), !j && (0, i.jsx)(A.A, {}), t?.isPaused && R !== E.xc.FP_SUB_PAUSED ? (0, i.jsx)(x.N, {
+        }), (0, i.jsx)(f.A, {}), P && (0, i.jsx)(d.A, {}), !j && (0, i.jsx)(A.A, {}), t?.isPaused && R !== E.xc.FP_SUB_PAUSED ? (0, i.jsx)(x.N, {
             appliedGuildBoosts: O,
             premiumSubscription: t
         }) : (0, i.jsx)(x.A, {
@@ -46,7 +46,7 @@ function C(e) {
             guildBoostSlots: C,
             fractionalPremiumState: R
         }), (0, i.jsx)(S.A, {
-            canAddBoosts: y && P
+            canAddBoosts: y && L
         }), (0, i.jsx)(o.A, {
             className: b.Q,
             hideHeading: !0,

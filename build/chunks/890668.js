@@ -1,6 +1,6 @@
 /** chunk id: 890668 params = (module,exports,require) **/
 n.d(t, {
-    A: () => L
+    A: () => P
 });
 var i = n(627968);
 n(64700);
@@ -33,7 +33,7 @@ var s = n(284009),
     O = n(985018),
     R = n(125955);
 
-function L() {
+function P() {
     let e = (0, a.bG)([j.default], () => {
             let e = j.default.getCurrentUser();
             return l()(null != e, "DefaultCustomizationSections: user cannot be undefined"), e
@@ -42,8 +42,8 @@ function L() {
         {
             pendingAvatar: n,
             pendingGlobalName: s,
-            pendingBanner: L,
-            pendingBio: P,
+            pendingBanner: P,
+            pendingBio: L,
             pendingPronouns: D,
             pendingAccentColor: G,
             pendingThemeColors: M,
@@ -65,7 +65,7 @@ function L() {
         B = (0, r.EC)(),
         F = y.Ay.canUsePremiumProfileCustomization(e),
         H = (0, c.z5)(n, e.avatar),
-        z = (0, c.Ac)(L, t?.banner),
+        z = (0, c.Ac)(P, t?.banner),
         Y = (0, I.Ay)(e.id),
         X = Y?.getLegacyUsername(),
         K = (w.global_name?.length ?? 0) > 0 ? w.global_name : B?.nick ?? [],
@@ -138,7 +138,7 @@ function L() {
             onBioChange: e => (0, C.p)({
                 bio: e
             }),
-            pendingBio: P,
+            pendingBio: L,
             currentBio: t?.bio ?? ""
         }, "bio"), Z.length > 0 && (0, i.jsx)(o.A, {
             availablePrimaryGuilds: Z,

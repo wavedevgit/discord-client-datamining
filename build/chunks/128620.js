@@ -24,16 +24,16 @@ var a = r(627968),
     R = r(94264),
     v = r(652215),
     j = r(758836),
-    N = r(901123),
-    E = r(49370),
-    I = r(985018),
-    y = r(327557),
+    E = r(901123),
+    N = r(49370),
+    y = r(985018),
+    I = r(327557),
     P = r(909340),
-    T = r(455482);
-let S = g.A.getArticleURL(v.MVz.ORBS_REWARDS_FAQ);
+    S = r(455482);
+let T = g.A.getArticleURL(v.MVz.ORBS_REWARDS_FAQ);
 
 function w(e) {
-    (0, A.o8)(e), window.open(S, "_blank")
+    (0, A.o8)(e), window.open(T, "_blank")
 }
 let O = e => {
     let {
@@ -43,11 +43,11 @@ let O = e => {
         programReward: s
     } = (0, f.F)({
         location: "PremiumTenureRewardsOrbsCard"
-    }), g = (0, u.A)("(min-width: 720px)"), S = (0, m.DP)(), O = n.useMemo(() => ({
+    }), g = (0, u.A)("(min-width: 720px)"), T = (0, m.DP)(), O = n.useMemo(() => ({
         hueRotate: 25,
-        glowAmount: (0, d.M)(S) ? 2 : 8,
+        glowAmount: (0, d.M)(T) ? 2 : 8,
         blurAmount: 10
-    }), [S]);
+    }), [T]);
     if (!r || null == s) return null;
     let D = function(e, t) {
         let r = e.program_current_state,
@@ -58,27 +58,27 @@ let O = e => {
                 if (null == n || n < 0) return null;
                 return {
                     displayTotalLifetimeRewards: null != s, displayProgressBar: !0, actionButton: (0, a.jsx)(o.$nd, {
-                        text: I.intl.string(E.default.BxjHiu),
+                        text: y.intl.string(N.default.BxjHiu),
                         variant: t ? "overlay-primary" : "secondary",
                         onClick: () => {
-                            (0, A.WD)(r), (0, h.pX)(N.BV.COLLECTIBLES_SHOP_WITH_TAB(j.G2.ORBS))
+                            (0, A.WD)(r), (0, h.pX)(E.BV.COLLECTIBLES_SHOP_WITH_TAB(j.G2.ORBS))
                         }
-                    }), headerText: I.intl.format(E.default.BxLJQL, {
+                    }), headerText: y.intl.format(N.default.BxLJQL, {
                         days: Math.max(1, n),
                         orbsCount: e.reward_amount
-                    }), subheaderText: I.intl.format(E.default.tUV1vV, {
+                    }), subheaderText: y.intl.format(N.default.tUV1vV, {
                         helpdeskArticle: () => w(r)
                     })
                 };
             case p.L.PAYMENT_PROCESSING:
                 return {
                     displayTotalLifetimeRewards: !1, displayProgressBar: !1, actionButton: (0, a.jsx)(o.$nd, {
-                        text: I.intl.string(E.default.KVCfnE),
+                        text: y.intl.string(N.default.KVCfnE),
                         variant: t ? "overlay-primary" : "secondary",
                         onClick: () => {
                             (0, A.CC)(r), (0, x.openUserSettings)(b.X.BILLING_PANEL)
                         }
-                    }), headerText: I.intl.string(E.default.uuZJXR), subheaderText: I.intl.format(E.default.dkeEV7, {
+                    }), headerText: y.intl.string(N.default.uuZJXR), subheaderText: y.intl.format(N.default.dkeEV7, {
                         helpdeskArticle: () => w(r)
                     })
                 };
@@ -89,39 +89,39 @@ let O = e => {
                         children: e => (0, a.jsx)("span", {
                             className: e,
                             children: (0, a.jsx)(o.$nd, {
-                                text: I.intl.string(E.default.KVCfnE),
+                                text: y.intl.string(N.default.KVCfnE),
                                 variant: "critical-secondary",
                                 onClick: () => {
                                     (0, A.ue)(r), (0, x.openUserSettings)(b.X.BILLING_PANEL)
                                 }
                             })
                         })
-                    }), headerText: I.intl.string(E.default["+O9Asn"]), subheaderText: I.intl.format(E.default.nWKEBZ, {
+                    }), headerText: y.intl.string(N.default["+O9Asn"]), subheaderText: y.intl.format(N.default.nWKEBZ, {
                         helpdeskArticle: () => w(r)
                     })
                 };
             case p.L.PROGRAM_ROLLBACK:
                 return {
                     displayTotalLifetimeRewards: null != s, displayProgressBar: null != n, actionButton: (0, a.jsx)(o.$nd, {
-                        text: I.intl.string(E.default["wLAd/+"]),
+                        text: y.intl.string(N.default["wLAd/+"]),
                         variant: t ? "overlay-primary" : "secondary",
                         onClick: () => {
-                            (0, A.WD)(r), (0, h.pX)(N.BV.COLLECTIBLES_SHOP_WITH_TAB(j.G2.ORBS))
+                            (0, A.WD)(r), (0, h.pX)(E.BV.COLLECTIBLES_SHOP_WITH_TAB(j.G2.ORBS))
                         }
-                    }), headerText: I.intl.string(E.default.zF0HnJ), subheaderText: I.intl.format(E.default["5tzNTa"], {
+                    }), headerText: y.intl.string(N.default.zF0HnJ), subheaderText: y.intl.format(N.default["5tzNTa"], {
                         helpdeskArticle: () => w(r)
                     })
                 };
             case p.L.PREMIUM_CHURNING:
                 return {
                     displayTotalLifetimeRewards: null != s, displayProgressBar: null != n, actionButton: (0, a.jsx)(o.$nd, {
-                        text: I.intl.string(E.default.FToh6D),
+                        text: y.intl.string(N.default.FToh6D),
                         variant: t ? "overlay-primary" : "secondary",
                         icon: o.tvc,
                         onClick: () => {
                             (0, A.Jv)(r), (0, x.openUserSettings)(b.X.SUBSCRIPTIONS_PANEL)
                         }
-                    }), headerText: I.intl.string(E.default.ISnOet), subheaderText: I.intl.format(E.default["vjaRZ/"], {
+                    }), headerText: y.intl.string(N.default.ISnOet), subheaderText: y.intl.format(N.default["vjaRZ/"], {
                         helpdeskArticle: () => w(r)
                     })
                 };
@@ -138,31 +138,31 @@ let O = e => {
         subheaderText: k
     } = D;
     return (0, a.jsx)("div", {
-        className: i()(y.Hc, t),
+        className: i()(I.Hc, t),
         children: (0, a.jsxs)(C.A, {
             cardType: c.sl2.CUSTOM,
-            cardClassName: y.Nr,
+            cardClassName: I.Nr,
             glowing: !0,
             ...O,
             children: [(0, a.jsx)(_.A, {
-                className: y.Ki,
+                className: I.Ki,
                 src: P.A
             }), (0, a.jsxs)("div", {
-                className: y.zK,
+                className: I.zK,
                 children: [(0, a.jsx)("img", {
-                    src: T.A,
-                    className: y._e,
+                    src: S.A,
+                    className: I._e,
                     alt: "",
                     "aria-hidden": !0
                 }), (0, a.jsx)("div", {
-                    className: y.mR
+                    className: I.mR
                 })]
             }), (0, a.jsxs)("div", {
-                className: y.FS,
+                className: I.FS,
                 children: [(0, a.jsx)(o.NPJ, {
                     theme: g ? v.NJ8.DARKER : void 0,
                     children: e => (0, a.jsx)("div", {
-                        className: i()(e, y.aZ),
+                        className: i()(e, I.aZ),
                         children: (0, a.jsx)(o.Exy, {
                             type: "beta",
                             variant: "expressive"
@@ -170,30 +170,30 @@ let O = e => {
                     })
                 }), (0, a.jsx)(o.DZT, {
                     variant: "heading-xl/bold",
-                    className: y.R_,
+                    className: I.R_,
                     children: B
                 }), (0, a.jsx)(o.EYj, {
                     variant: "text-md/medium",
-                    className: y.G3,
+                    className: I.G3,
                     children: k
                 }), U && (0, a.jsx)(R.A, {
-                    className: y.L$
+                    className: I.L$
                 }), M && s.total_rewarded_from_program > 0 && (0, a.jsxs)("div", {
-                    className: y.fB,
+                    className: I.fB,
                     children: [(0, a.jsx)(o.EYj, {
                         variant: "text-md/medium",
-                        className: y.G3,
-                        children: I.intl.string(E.default["/1mWUn"])
+                        className: I.G3,
+                        children: y.intl.string(N.default["/1mWUn"])
                     }), (0, a.jsx)(o.Cp8, {
                         size: "sm",
                         color: "currentColor"
                     }), (0, a.jsx)(o.EYj, {
                         variant: "text-md/medium",
-                        className: y.G3,
+                        className: I.G3,
                         children: s.total_rewarded_from_program
                     })]
                 }), (0, a.jsx)("div", {
-                    className: y.WT,
+                    className: I.WT,
                     children: (0, a.jsx)(o.e2v, {
                         children: L
                     })

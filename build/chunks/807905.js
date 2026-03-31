@@ -121,9 +121,9 @@ let R = function(e) {
             fractionalState: b
         } = (0, m.A)(),
         R = (0, r.bG)([u.A], () => u.A.useReducedMotion),
-        L = (0, r.bG)([h.default], () => h.default.getCurrentUser()),
-        P = b === v.xc.FP_SUB_PAUSED,
-        D = E && !P,
+        P = (0, r.bG)([h.default], () => h.default.getCurrentUser()),
+        L = b === v.xc.FP_SUB_PAUSED,
+        D = E && !L,
         {
             appliedGuildBoostSlots: G,
             unappliedGuildBoostSlots: M,
@@ -166,7 +166,7 @@ let R = function(e) {
             numUnappliedGuildBoostSlots: K
         }) : N.intl.formatToPlainString(w ? N.t["3DW6Dc"] : N.t.BPadnO, {
             numUnappliedGuildBoostSlots: K
-        }), f.Ay.isPremium(L)) {
+        }), f.Ay.isPremium(P)) {
         let e = (e, t) => (0, i.jsx)(c.DUT, {
             className: I.nw,
             tag: "span",

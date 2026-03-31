@@ -32,8 +32,8 @@ var i = n(627968),
     y = n(768985),
     O = n(191627),
     R = n(652215),
-    L = n(842130),
-    P = n(985018),
+    P = n(842130),
+    L = n(985018),
     D = n(394397);
 let G = {
         [O.u9.REQUESTS]: I.A,
@@ -65,7 +65,7 @@ function U(e) {
     } = e, s = (0, b.VT)(), l = (0, S.A)();
     return t === O.u9.CONTENT_AND_SOCIAL || t === O.u9.DATA_AND_PRIVACY ? null : (0, i.jsxs)(d.VQ0, {
         className: D.c5,
-        "aria-label": P.intl.string(L.default.RZqaJn),
+        "aria-label": L.intl.string(P.default.RZqaJn),
         selectedItem: t,
         type: "top",
         look: "brand",
@@ -73,19 +73,19 @@ function U(e) {
         children: [(0, i.jsx)(d.VQ0.Item, {
             className: D.jA,
             id: O.u9.ACTIVITY,
-            children: P.intl.string(L.default.bdBmqy)
+            children: L.intl.string(P.default.bdBmqy)
         }), (0, i.jsxs)(d.VQ0.Item, {
             className: D.jA,
             id: O.u9.REQUESTS,
-            "aria-label": P.intl.string(L.default["gVWG+6"]),
-            children: [P.intl.string(L.default["gVWG+6"]), s > 0 ? (0, i.jsx)(d.hVq, {
+            "aria-label": L.intl.string(P.default["gVWG+6"]),
+            children: [L.intl.string(P.default["gVWG+6"]), s > 0 ? (0, i.jsx)(d.hVq, {
                 className: D.qS,
                 count: s
             }) : null]
         }), l ? (0, i.jsx)(d.VQ0.Item, {
             className: D.jA,
             id: O.u9.SETTINGS,
-            children: P.intl.string(P.t["3D5yo/"])
+            children: L.intl.string(L.t["3D5yo/"])
         }) : null]
     })
 }
@@ -109,21 +109,21 @@ function w(e) {
                 "aria-hidden": !0
             }), (0, i.jsx)(x.A.Title, {
                 id: l,
-                children: P.intl.string(L.default.RZqaJn)
+                children: L.intl.string(P.default.RZqaJn)
             }), (0, i.jsx)(x.A.Divider, {}), (0, i.jsxs)(d.VQ0, {
-                "aria-label": P.intl.string(L.default.RZqaJn),
+                "aria-label": L.intl.string(P.default.RZqaJn),
                 selectedItem: n,
                 type: "top-pill",
                 onItemSelect: s,
                 children: [(0, i.jsx)(d.VQ0.Item, {
                     id: O.u9.ACTIVITY,
                     className: D.AS,
-                    children: P.intl.string(L.default.bdBmqy)
+                    children: L.intl.string(P.default.bdBmqy)
                 }), (0, i.jsxs)(d.VQ0.Item, {
                     id: O.u9.REQUESTS,
                     className: D.AS,
-                    "aria-label": P.intl.string(L.default["gVWG+6"]),
-                    children: [P.intl.string(L.default["gVWG+6"]), o > 0 ? (0, i.jsx)(d.hVq, {
+                    "aria-label": L.intl.string(P.default["gVWG+6"]),
+                    children: [L.intl.string(P.default["gVWG+6"]), o > 0 ? (0, i.jsx)(d.hVq, {
                         className: D.qS,
                         count: o
                     }) : null]
@@ -152,9 +152,9 @@ function V() {
     let r = G[n];
     return (0, i.jsxs)("main", {
         className: D.kL,
-        "aria-label": P.intl.string(L.default.RZqaJn),
+        "aria-label": L.intl.string(P.default.RZqaJn),
         children: [(0, i.jsx)(_.HI, {
-            location: P.intl.string(L.default.RZqaJn)
+            location: L.intl.string(P.default.RZqaJn)
         }), (0, i.jsx)(U, {
             section: n,
             handleItemSelect: e => {
@@ -193,9 +193,9 @@ function B() {
         value: e,
         children: (0, i.jsxs)("main", {
             className: a()(D.kL, D.ei),
-            "aria-label": P.intl.string(L.default.RZqaJn),
+            "aria-label": L.intl.string(P.default.RZqaJn),
             children: [(0, i.jsx)(_.HI, {
-                location: P.intl.string(L.default.RZqaJn)
+                location: L.intl.string(P.default.RZqaJn)
             }), (0, i.jsx)(w, {
                 theme: l,
                 section: C,

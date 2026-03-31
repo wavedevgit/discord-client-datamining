@@ -32,8 +32,8 @@ var s = n(284009),
     y = n(427262),
     O = n(684732),
     R = n(168917),
-    L = n(746706),
-    P = n(788868),
+    P = n(746706),
+    L = n(788868),
     D = n(985018),
     G = n(966227);
 
@@ -42,7 +42,7 @@ function M() {
             let e = I.default.getCurrentUser();
             return l()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
         }),
-        t = (0, c.L)(P.PremiumTypes.TIER_2),
+        t = (0, c.L)(L.PremiumTypes.TIER_2),
         n = (0, a.bG)([b.A, N.A], () => N.A.getGuild(b.A.selectedGuildId));
     l()(null != n, "guild should not be null");
     let {
@@ -80,7 +80,7 @@ function M() {
             }),
             pendingPronouns: w,
             currentPronouns: Q
-        }, "pronouns"), (0, i.jsxs)(L.A, {
+        }, "pronouns"), (0, i.jsxs)(P.A, {
             user: e,
             showOverlay: !X,
             children: [(0, i.jsx)(g.A, {

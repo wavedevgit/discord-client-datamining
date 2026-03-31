@@ -31,8 +31,8 @@ var i = n(627968),
     y = n(295405),
     O = n(166403),
     R = n(469778),
-    L = n(954571),
-    P = n(975571),
+    P = n(954571),
+    L = n(975571),
     D = n(927578),
     G = n(881489),
     M = n(887997),
@@ -141,7 +141,7 @@ let q = function() {
                     variant: "text-md/normal",
                     className: Y.JU,
                     children: z.intl.format(z.t["7Zi06b"], {
-                        helpCenterLink: P.A.getArticleURL(F.MVz.FRACTIONAL_PREMIUM_ABOUT)
+                        helpCenterLink: L.A.getArticleURL(F.MVz.FRACTIONAL_PREMIUM_ABOUT)
                     })
                 }), (0, i.jsx)(M.A, {
                     className: Y.fX,
@@ -162,7 +162,7 @@ let q = function() {
                     onClickManageSubscription: () => {
                         V.A.setState({
                             subsection: H.PZ
-                        }), L.default.track(F.HAw.PREMIUM_APPLICATION_SUBSCRIPTION_MANAGE_CTA_CLICKED)
+                        }), P.default.track(F.HAw.PREMIUM_APPLICATION_SUBSCRIPTION_MANAGE_CTA_CLICKED)
                     }
                 })]
             }), (0, i.jsx)(Z, {}), null != t ? (0, i.jsx)(U.A, {

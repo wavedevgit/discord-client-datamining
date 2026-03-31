@@ -97,10 +97,10 @@ function O(e) {
         });
     if (0 === (0, S.bx)(n.additionalPlans)) return null;
     let {
-        status: L
-    } = n, P = (0, S.$k)(n), D = R && !P && n.isBoostOnly && j.includes(n.status);
-    if (P) t = I.v2;
-    else switch (L) {
+        status: P
+    } = n, L = (0, S.$k)(n), D = R && !L && n.isBoostOnly && j.includes(n.status);
+    if (L) t = I.v2;
+    else switch (P) {
         case C.Dmq.PAST_DUE:
         case C.Dmq.ACCOUNT_HOLD:
         case C.Dmq.BILLING_RETRY:
@@ -124,7 +124,7 @@ function O(e) {
                 className: I.eC,
                 children: [(0, i.jsx)("div", {
                     className: a()(I.Ab, {
-                        [I.aD]: P
+                        [I.aD]: L
                     })
                 }), (0, i.jsx)("div", {
                     children: (0, S.Uf)({

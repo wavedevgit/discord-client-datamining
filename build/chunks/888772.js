@@ -130,7 +130,7 @@ function R() {
     })
 }
 
-function L(e) {
+function P(e) {
     let {
         sectionType: t,
         sectionTitle: n,
@@ -188,7 +188,7 @@ function L(e) {
         })
     })
 }
-let P = () => {
+let L = () => {
         let e = (0, g.A)(),
             t = (0, x.GR)(),
             n = e ? S.Y7 : S.kp,
@@ -197,7 +197,7 @@ let P = () => {
                 max: n
             },
             l = (0, m.y)(C.intl.formatToPlainString(b.default["+tnO34"], s), C.intl.formatToPlainString(b.default["pu6/U0"], s));
-        return t.length > 0 ? (0, i.jsx)(L, {
+        return t.length > 0 ? (0, i.jsx)(P, {
             sectionType: S.Ef.ACTIVE,
             sectionTitle: l,
             requests: t
@@ -270,7 +270,7 @@ let P = () => {
             }), C.intl.formatToPlainString(b.default.Q8XnAa, {
                 count: e.length
             }));
-        return 0 === e.length ? null : (0, i.jsx)(L, {
+        return 0 === e.length ? null : (0, i.jsx)(P, {
             sectionType: S.Ef.PENDING,
             sectionTitle: t,
             requests: e
@@ -280,6 +280,6 @@ let P = () => {
         let e = (0, g.A)();
         return (0, i.jsxs)("div", {
             className: N.kL,
-            children: [e ? (0, i.jsx)(O, {}) : (0, i.jsx)(R, {}), (0, i.jsx)(P, {}), (0, i.jsx)(M, {}), (0, i.jsx)(D, {}), (0, i.jsx)(G, {})]
+            children: [e ? (0, i.jsx)(O, {}) : (0, i.jsx)(R, {}), (0, i.jsx)(L, {}), (0, i.jsx)(M, {}), (0, i.jsx)(D, {}), (0, i.jsx)(G, {})]
         })
     }
