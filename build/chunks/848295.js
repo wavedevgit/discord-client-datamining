@@ -26,15 +26,15 @@ var i = n(627968),
     S = n(652215),
     x = n(49999),
     v = n(985018),
-    y = n(442234);
-let b = [],
+    b = n(442234);
+let y = [],
     O = e => {
         let {
             tagText: t,
             className: n
         } = e;
         return (0, i.jsx)(A.LpS, {
-            className: r()(y.Tc, n),
+            className: r()(b.Tc, n),
             text: t
         })
     },
@@ -47,25 +47,25 @@ let b = [],
             wideStyle: s
         } = e;
         return (0, i.jsxs)("div", {
-            className: r()(y.Vr, {
-                [y.tF]: s
+            className: r()(b.Vr, {
+                [b.tF]: s
             }),
             children: [null != a ? (0, i.jsx)(O, {
                 tagText: a,
-                className: y.bX
+                className: b.bX
             }) : null, (0, i.jsx)("img", {
                 alt: "",
-                className: r()(y._n, {
-                    [y.tF]: s
+                className: r()(b._n, {
+                    [b.tF]: s
                 }),
                 src: l
             }), (0, i.jsxs)("div", {
-                className: r()(y.Zz, {
-                    [y.tF]: s
+                className: r()(b.Zz, {
+                    [b.tF]: s
                 }),
                 children: [(0, i.jsx)(A.Heading, {
                     variant: "heading-sm/semibold",
-                    className: y.Hf,
+                    className: b.Hf,
                     children: t
                 }), (0, i.jsx)(A.Text, {
                     variant: "text-xs/normal",
@@ -96,7 +96,7 @@ function R(e) {
     } = e, {
         onClose: H,
         transitionState: F
-    } = O, Y = (0, g.GV)(), W = G.length % 2 == 0, K = (0, d.bG)([h.A], () => h.A.useReducedMotion), [q, z] = l.useState(Date.now()), [$, Q] = l.useState(0), [X, Z] = l.useState(0), [J, ee] = l.useState(!1), [et, en] = l.useState(!0), ei = l.useRef(q), el = l.useRef($), ea = l.useRef(X), er = l.useRef(J), es = l.useRef(et), [eo, ed] = l.useState(b), ec = l.useRef(!1);
+    } = O, Y = (0, g.GV)(), W = G.length % 2 == 0, K = (0, d.bG)([h.A], () => h.A.useReducedMotion), [q, z] = l.useState(Date.now()), [$, Q] = l.useState(0), [X, Z] = l.useState(0), [J, ee] = l.useState(!1), [et, en] = l.useState(!0), ei = l.useRef(q), el = l.useRef($), ea = l.useRef(X), er = l.useRef(J), es = l.useRef(et), [eo, ed] = l.useState(y), ec = l.useRef(!1);
 
     function eu() {
         let e = Date.now(),
@@ -131,7 +131,7 @@ function R(e) {
                 });
                 ed(await Promise.all(e))
             } catch (e) {
-                T.A.captureException(e), ed(b)
+                T.A.captureException(e), ed(y)
             }
         };
         !0 !== ec.current && e(), ec.current = !0
@@ -167,23 +167,23 @@ function R(e) {
         }
     }, [k, n]), (0, i.jsx)(A.EOs, {
         "data-migration-pending": !0,
-        className: r()(y.zr, y.kv, a),
+        className: r()(b.zr, b.kv, a),
         transitionState: F,
         "aria-labelledby": Y,
         parentComponent: "PremiumAnnouncementModalVariant1",
         children: (0, i.jsxs)(A.hLv, {
             color: "nitro-pink",
             children: [(0, i.jsx)("div", {
-                className: y.cG,
+                className: b.cG,
                 children: (0, i.jsx)(u.JnF, {
                     "data-migration-pending": !0,
                     onClick: async () => await H()
                 })
             }), (0, i.jsxs)(A.$mQ, {
                 "data-migration-pending": !0,
-                className: y.Qs,
+                className: b.Qs,
                 children: ["video" === R.type ? (0, i.jsx)(E.A, {
-                    className: r()(y.Ki, P),
+                    className: r()(b.Ki, P),
                     autoPlay: !K,
                     loop: !0,
                     muted: !0,
@@ -217,7 +217,7 @@ function R(e) {
                         }, e.locale)
                     })
                 }) : "embed" === R.type ? (0, i.jsx)(m.rr, {
-                    className: r()(y.Ki, P),
+                    className: r()(b.Ki, P),
                     allowFullScreen: !1,
                     href: R.href,
                     thumbnail: R.thumbnail,
@@ -235,35 +235,35 @@ function R(e) {
                     }
                 }) : "image" === R.type ? (0, i.jsx)("img", {
                     alt: "",
-                    className: r()(y.Ki, P),
+                    className: r()(b.Ki, P),
                     src: R.src
                 }) : null, null != j && "" !== j ? (0, i.jsx)(N.R, {
                     text: j,
                     colorOptions: N.at.PREMIUM_TIER_2_WHITE_FILL,
-                    className: y.ON
+                    className: b.ON
                 }) : null, (0, i.jsx)(A.Heading, {
                     variant: "display-md",
-                    className: r()(y.TK, M),
+                    className: r()(b.TK, M),
                     children: D
                 }), (0, i.jsxs)(A.Text, {
                     variant: "text-md/normal",
                     color: "text-subtle",
-                    className: y.uI,
+                    className: b.uI,
                     children: [w, U?.()]
                 }), null != B && "" !== B && (0, i.jsx)(A.Heading, {
                     variant: "heading-lg/semibold",
-                    className: y.G3,
+                    className: b.G3,
                     children: B
                 }), G.length > 0 && (0, i.jsx)("div", {
-                    className: r()(y.IS, {
-                        [y.tF]: W
+                    className: r()(b.IS, {
+                        [b.tF]: W
                     }),
                     children: G.map((e, t) => (0, i.jsx)(L, {
                         ...e,
                         wideStyle: W
                     }, `${e.header}_${t}`))
                 }), (0, i.jsx)("div", {
-                    className: y.UD,
+                    className: b.UD,
                     children: V()
                 })]
             })]

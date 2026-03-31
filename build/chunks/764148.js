@@ -26,7 +26,7 @@ var i = n(256415),
     S = n(466444),
     x = n(177235),
     v = n(266686);
-let y = {
+let b = {
         ...a.U,
         ...u.A,
         ...A.A,
@@ -44,7 +44,7 @@ let y = {
         ...h.A,
         ...T.A
     },
-    b = {
+    y = {
         ...r.A,
         ...o.c,
         ...d.I,
@@ -52,8 +52,8 @@ let y = {
     },
     O = {
         server: s.A,
-        commands: y,
-        events: b,
+        commands: b,
+        events: y,
         stores: [i.default],
         transports: [v.A],
         registerTransportsForEmbeddedPlatform: function() {

@@ -27,8 +27,8 @@ var l = n(179771),
     S = n(461213),
     x = n(531685),
     v = n(403362),
-    y = n(661191),
-    b = n(998218),
+    b = n(661191),
+    y = n(998218),
     O = n(475815),
     L = n(636401),
     R = n(90924),
@@ -282,7 +282,7 @@ let V = {
                 errorCode: U.Lw6.INVALID_COMMAND
             }, "This application cannot access this API");
             let l = (0, D.A)();
-            if (!b.A.isDiscordCdnUrl(n)) throw new L.A({
+            if (!y.A.isDiscordCdnUrl(n)) throw new L.A({
                 errorCode: U.Lw6.INVALID_PAYLOAD
             }, "mediaUrl must be a Discord CDN url");
             (0, p.g)({
@@ -326,7 +326,7 @@ let V = {
             if (null !== l || null !== a || null !== o) {
                 let e = [];
                 void 0 !== l && (e = [{
-                    id: y.default.cast(y.default.fromTimestamp(Date.now())),
+                    id: b.default.cast(b.default.fromTimestamp(Date.now())),
                     size: 0,
                     proxy_url: l.url,
                     filename: "preview",
@@ -334,7 +334,7 @@ let V = {
                     height: l.height,
                     width: l.width
                 }]), t = new C.Ay({
-                    id: y.default.cast(y.default.fromTimestamp(Date.now())),
+                    id: b.default.cast(b.default.fromTimestamp(Date.now())),
                     applicationId: u,
                     content: o,
                     components: a,

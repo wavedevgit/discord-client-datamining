@@ -32,13 +32,13 @@ let v = l.memo(function(e) {
         onContextMenu: l,
         onClick: a,
         hideSimpleEmbedContent: v = !0,
-        channel: y,
-        isGroupStart: b,
+        channel: b,
+        isGroupStart: y,
         animateAvatar: O,
         subscribeToComponentDispatch: L,
         renderThreadAccessory: R,
         ...P
-    } = e, D = t.type === N.lAJ.POLL_RESULT || (e.disableInteraction ?? !1), M = t.isFirstMessageInForumPost(y), j = (0, c.S)((t.editedTimestamp ?? t.timestamp).valueOf()), {
+    } = e, D = t.type === N.lAJ.POLL_RESULT || (e.disableInteraction ?? !1), M = t.isFirstMessageInForumPost(b), j = (0, c.S)((t.editedTimestamp ?? t.timestamp).valueOf()), {
         content: w,
         hasSpoilerEmbeds: U,
         hasBailedAst: G
@@ -49,7 +49,7 @@ let v = l.memo(function(e) {
         allowLinks: !0,
         previewLinkTarget: !0
     }), k = (0, s.rm)(t.id), V = (0, A.Ay)(t), B = (0, o.bG)([C.A], () => t.hasFlag(N.pr7.HAS_THREAD) && C.A.getChannel(T.default.castMessageIdAsChannelId(t.id))), H = (0, d.$7)({
-        guildId: y.guild_id,
+        guildId: b.guild_id,
         roleId: V.iconRoleId
     }), F = (0, _.fF)(t), Y = (0, _.ZD)(t);
     return (0, i.jsx)(h.A, {
@@ -59,12 +59,12 @@ let v = l.memo(function(e) {
             [x.XN]: D
         }),
         disableInteraction: D,
-        childrenExecutedCommand: (0, f.A)(t, y, !1),
+        childrenExecutedCommand: (0, f.A)(t, b, !1),
         childrenHeader: (0, E.A)({
             message: t,
-            channel: y,
+            channel: b,
             author: V,
-            guildId: y.guild_id,
+            guildId: b.guild_id,
             compact: !1,
             animateAvatar: O,
             isGroupStart: !0,

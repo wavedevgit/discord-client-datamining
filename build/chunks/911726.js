@@ -388,19 +388,20 @@ function B(e) {
 function H(e) {
     let {
         message: t,
-        guild: n,
-        usernameHook: i
+        compact: n,
+        guild: i,
+        usernameHook: a
     } = e, {
-        enabled: a,
-        compact: r
+        enabled: r,
+        compact: s
     } = A.X.useConfig({
         location: "UserPremiumGuildSubscription"
     });
-    return a ? (0, l.jsx)(p.A, {
+    return t.type === x.lAJ.GUILD_BOOST && r && !n ? (0, l.jsx)(p.A, {
         message: t,
-        guild: n,
-        usernameHook: i,
-        compact: r
+        guild: i,
+        usernameHook: a,
+        compact: s
     }) : (0, l.jsx)(B, {
         ...e
     })

@@ -26,15 +26,15 @@ var i = n(627968),
     S = n(674378),
     x = n(240248),
     v = n(471761),
-    y = n(652215),
-    b = n(985018),
+    b = n(652215),
+    y = n(985018),
     O = n(495333);
 let L = (0, x.xI)(u.A.GAME_LIST_ROW_MIN_HEIGHT),
     R = (0, x.xI)(u.A.GAME_LIST_LINKED_TO_GLOW_DURATION),
     P = Object.freeze({
-        [y.DpB.PLATFORM]: "Platform",
-        [y.DpB.LAST_PLAYED]: "Last Played",
-        [y.DpB.NAME]: "Name"
+        [b.DpB.PLATFORM]: "Platform",
+        [b.DpB.LAST_PLAYED]: "Last Played",
+        [b.DpB.NAME]: "Name"
     }),
     D = e => {
         let {
@@ -53,8 +53,8 @@ let L = (0, x.xI)(u.A.GAME_LIST_ROW_MIN_HEIGHT),
         })
     },
     M = [{
-        key: y.DpB.NAME,
-        renderHeader: () => b.intl.string(b.t.dBfWfc),
+        key: b.DpB.NAME,
+        renderHeader: () => y.intl.string(y.t.dBfWfc),
         sort: !0,
         cellClassName: O.UQ,
         bodyCellClassName: O.SJ,
@@ -69,8 +69,8 @@ let L = (0, x.xI)(u.A.GAME_LIST_ROW_MIN_HEIGHT),
                 children: [(0, i.jsx)("div", {
                     className: O.TF,
                     children: e.libraryApplication.getBranchedName(e.application)
-                }), e.libraryApplication.hasFlag(y.hM6.PREMIUM) ? (0, i.jsx)(c.m, {
-                    text: b.intl.string(b.t.tG2SzG),
+                }), e.libraryApplication.hasFlag(b.hM6.PREMIUM) ? (0, i.jsx)(c.m, {
+                    text: y.intl.string(y.t.tG2SzG),
                     children: (0, i.jsx)(A.tvc, {
                         size: "md",
                         color: "currentColor",
@@ -80,8 +80,8 @@ let L = (0, x.xI)(u.A.GAME_LIST_ROW_MIN_HEIGHT),
             })]
         })
     }, {
-        key: y.DpB.PLATFORM,
-        renderHeader: () => b.intl.string(b.t.YR4cHH),
+        key: b.DpB.PLATFORM,
+        renderHeader: () => y.intl.string(y.t.YR4cHH),
         sort: !0,
         cellClassName: O.AA,
         bodyCellClassName: O.iV,
@@ -89,21 +89,21 @@ let L = (0, x.xI)(u.A.GAME_LIST_ROW_MIN_HEIGHT),
             let t = e.libraryApplication.getDistributor();
             return (0, i.jsx)(g.A, {
                 align: g.A.Align.CENTER,
-                children: null != t ? y.gG4[t] : b.intl.string(b.t["F+l3Jt"])
+                children: null != t ? b.gG4[t] : y.intl.string(y.t["F+l3Jt"])
             })
         }
     }, {
-        key: y.DpB.LAST_PLAYED,
-        renderHeader: () => b.intl.string(b.t.FDDyjS),
+        key: b.DpB.LAST_PLAYED,
+        renderHeader: () => y.intl.string(y.t.FDDyjS),
         sort: !0,
         cellClassName: O.SX,
         bodyCellClassName: O.iV,
         render(e) {
             let t;
-            return t = e.isRunning ? b.intl.string(b.t.Md326p) : e.isNew ? b.intl.string(b.t["+F0Tho"]) : 0 !== e.lastPlayed ? (0, i.jsx)(f.Ay, {
+            return t = e.isRunning ? y.intl.string(y.t.Md326p) : e.isNew ? y.intl.string(y.t["+F0Tho"]) : 0 !== e.lastPlayed ? (0, i.jsx)(f.Ay, {
                 end: e.lastPlayed,
                 location: f.Ay.Locations.GAME_LIBRARY_LAST_PLAYED
-            }) : b.intl.string(b.t.EoWLru), (0, i.jsx)(g.A, {
+            }) : y.intl.string(y.t.EoWLru), (0, i.jsx)(g.A, {
                 align: g.A.Align.CENTER,
                 className: r()({
                     [O.g3]: e.isNew
@@ -112,7 +112,7 @@ let L = (0, x.xI)(u.A.GAME_LIST_ROW_MIN_HEIGHT),
             })
         }
     }, {
-        key: y.DpB.ACTIONS,
+        key: b.DpB.ACTIONS,
         renderHeader: () => null,
         cellClassName: O.AT,
         render(e, t, n) {
@@ -123,15 +123,15 @@ let L = (0, x.xI)(u.A.GAME_LIST_ROW_MIN_HEIGHT),
                 children: [(0, i.jsxs)("div", {
                     className: O.nU,
                     children: [(0, i.jsx)(D, {
-                        flag: y.hM6.PRIVATE,
+                        flag: b.hM6.PRIVATE,
                         item: e,
                         icon: A.G3N,
-                        tooltip: b.intl.string(b.t.NozAop)
+                        tooltip: y.intl.string(y.t.NozAop)
                     }), (0, i.jsx)(D, {
-                        flag: y.hM6.OVERLAY_DISABLED,
+                        flag: b.hM6.OVERLAY_DISABLED,
                         item: e,
                         icon: A.nkR,
-                        tooltip: b.intl.string(b.t.Az9eqn)
+                        tooltip: y.intl.string(y.t.Az9eqn)
                     }), (0, i.jsx)(v.A, {
                         className: r()(O.up, {
                             [O.R]: !e.supportsCloudSync
@@ -139,9 +139,9 @@ let L = (0, x.xI)(u.A.GAME_LIST_ROW_MIN_HEIGHT),
                         libraryApplication: e.libraryApplication
                     })]
                 }), (0, S.XZ)(e.libraryApplication) ? (0, i.jsx)(p.A, {
-                    analyticsListSort: (a = t.sortKey, s = t.sortDirection, `${P[a]} ${s===y.tSW.ASCENDING?"ASC":"DESC"}`),
+                    analyticsListSort: (a = t.sortKey, s = t.sortDirection, `${P[a]} ${s===b.tSW.ASCENDING?"ASC":"DESC"}`),
                     analyticsListIndex: n,
-                    source: y.ThZ.APPLICATION_LIBRARY,
+                    source: b.ThZ.APPLICATION_LIBRARY,
                     libraryApplication: e.libraryApplication,
                     playButtonVariant: o ? "primary" : "secondary",
                     size: "sm",
@@ -238,33 +238,33 @@ class w extends l.PureComponent {
             } = this.props;
         for (let t of n) {
             switch (t.libraryApplication.getDistributor()) {
-                case y.d3x.DISCORD:
+                case b.d3x.DISCORD:
                     e.num_applications_discord++;
                     break;
-                case y.d3x.STEAM:
+                case b.d3x.STEAM:
                     e.num_applications_steam++;
                     break;
-                case y.d3x.BATTLENET:
+                case b.d3x.BATTLENET:
                     e.num_applications_battlenet++;
                     break;
-                case y.d3x.TWITCH:
+                case b.d3x.TWITCH:
                     e.num_applications_twitch++;
                     break;
-                case y.d3x.UPLAY:
+                case b.d3x.UPLAY:
                     e.num_applications_uplay++;
                     break;
-                case y.d3x.ORIGIN:
+                case b.d3x.ORIGIN:
                     e.num_applications_origin++;
                     break;
-                case y.d3x.GOG:
+                case b.d3x.GOG:
                     e.num_applications_gog++;
                     break;
-                case y.d3x.EPIC:
+                case b.d3x.EPIC:
                     e.num_applications_epic++
             }
             e.num_applications_total++
         }
-        N.default.track(y.HAw.LIBRARY_VIEWED, {
+        N.default.track(b.HAw.LIBRARY_VIEWED, {
             ...e,
             load_id: t.loadId
         })
@@ -315,9 +315,9 @@ class w extends l.PureComponent {
             applicationViewItems: t,
             filterQuery: n
         } = this.props;
-        return t.length > 0 ? null : (e = "" !== n ? b.intl.format(b.t["4Q1TAr"], {
+        return t.length > 0 ? null : (e = "" !== n ? y.intl.format(y.t["4Q1TAr"], {
             query: n
-        }) : b.intl.string(b.t["0Y+0PY"]), (0, i.jsxs)("div", {
+        }) : y.intl.string(y.t["0Y+0PY"]), (0, i.jsxs)("div", {
             className: O.mv,
             children: [(0, i.jsx)("div", {
                 className: O.Zd
@@ -329,7 +329,7 @@ class w extends l.PureComponent {
                     className: O.q6,
                     children: [(0, i.jsx)("div", {
                         className: O.ks,
-                        children: b.intl.string(b.t.Lw8X2j)
+                        children: y.intl.string(y.t.Lw8X2j)
                     }), (0, i.jsx)("div", {
                         className: O.Li,
                         children: e

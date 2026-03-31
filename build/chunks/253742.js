@@ -26,8 +26,8 @@ var i = n(627968),
     S = n(427262),
     x = n(31408),
     v = n(985018),
-    y = n(391987);
-let b = {
+    b = n(391987);
+let y = {
         offset: 2
     },
     O = {
@@ -159,21 +159,21 @@ function L(e) {
                 onClick: t => {
                     e.onClick(t), (0, g.X)(a, g.O.VOICE_USER)
                 },
-                className: y.H,
+                className: b.H,
                 onContextMenu: F,
-                focusProps: b,
+                focusProps: y,
                 children: (0, i.jsx)(I.A, {
                     shakeLocation: x.uD.VOICE_USER,
                     isShaking: j,
                     children: (0, i.jsx)("div", {
-                        className: y.my,
+                        className: b.my,
                         style: {
                             backgroundImage: `url(${U})`,
                             ...W
                         },
                         children: null != k ? (0, i.jsx)(k, {
-                            className: r()(y.tr, {
-                                [y.qE]: V
+                            className: r()(b.tr, {
+                                [b.qE]: V
                             }),
                             color: "currentColor",
                             size: "xs"
@@ -228,11 +228,11 @@ function R(e) {
         })
     }), N = E && c ? t : g;
     return N.length <= 0 ? null : (0, i.jsx)(d.IpV, {
-        className: r()(y.XG, a),
+        className: r()(b.XG, a),
         fade: !0,
         children: (0, i.jsxs)("div", {
             ref: m,
-            className: r()(y.Xk, !c && y.yZ),
+            className: r()(b.Xk, !c && b.yZ),
             role: "group",
             "aria-label": v.intl.string(v.t["/ZgaVU"]),
             children: [N.map(e => {

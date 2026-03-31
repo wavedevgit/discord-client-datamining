@@ -3,8 +3,8 @@ n.d(t, {
     A: () => r
 });
 var a = n(835245),
-    l = n(562465),
-    i = n(652215);
+    i = n(562465),
+    l = n(652215);
 let r = {
     generateNonce: function() {
         return (0, a.A)()
@@ -14,8 +14,8 @@ let r = {
             body: {
                 handoff_token: t
             }
-        } = await l.Bo.post({
-            url: i.Rsh.HANDOFF,
+        } = await i.Bo.post({
+            url: l.Rsh.HANDOFF,
             body: {
                 key: e
             },

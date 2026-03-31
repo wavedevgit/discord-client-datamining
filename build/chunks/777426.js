@@ -21,7 +21,7 @@ var i = n(627968),
     I = n(954571),
     f = n(45787),
     C = n(275759),
-    T = n(979474),
+    T = n(233971),
     N = n(652215);
 n(646363);
 var S = n(985018),
@@ -32,8 +32,8 @@ function v(e) {
         ref: t,
         isFocused: a,
         isActive: v,
-        status: y,
-        activities: b,
+        status: b,
+        activities: y,
         applicationStream: O,
         isGameRelationship: L,
         isMobile: R,
@@ -93,15 +93,15 @@ function v(e) {
             children: [(0, i.jsx)(p.A, {
                 className: x.Cv,
                 user: j,
-                status: y,
+                status: b,
                 isMobile: R,
                 isVR: P,
                 subText: (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(m.A, {
                         hovered: e,
-                        activities: b,
+                        activities: y,
                         applicationStream: O,
-                        status: y,
+                        status: b,
                         user: j,
                         userIgnored: E.A.isIgnored(j.id)
                     }), (0, i.jsxs)("div", {

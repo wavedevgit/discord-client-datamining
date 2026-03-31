@@ -22,7 +22,7 @@ let g = function(e) {
         setQuestId: n,
         quest: g,
         refreshQuest: E
-    } = e, [I, f] = l.useState(!1), [C, T] = l.useState(!1), N = l.useRef(null), S = (0, u.pT)(), x = (0, a.bG)([c.A], () => null != t ? c.A.getFetchQuestPreviewError(t) : null, [t]), v = (0, a.bG)([c.A], () => null != t && c.A.isFetchingQuestPreview(t), [t]), y = l.useMemo(() => {
+    } = e, [I, f] = l.useState(!1), [C, T] = l.useState(!1), N = l.useRef(null), S = (0, u.pT)(), x = (0, a.bG)([c.A], () => null != t ? c.A.getFetchQuestPreviewError(t) : null, [t]), v = (0, a.bG)([c.A], () => null != t && c.A.isFetchingQuestPreview(t), [t]), b = l.useMemo(() => {
         let e = S.map(e => ({
             id: e.id,
             label: `${e.config?.messages?.questName??e.id} (${e.id})`,
@@ -33,7 +33,7 @@ let g = function(e) {
             label: t,
             value: t
         }), e
-    }, [S, t]), b = l.useCallback(async () => {
+    }, [S, t]), y = l.useCallback(async () => {
         if (null != t) {
             f(!0);
             try {
@@ -77,7 +77,7 @@ let g = function(e) {
                             selectionMode: "single",
                             label: "Quest ID",
                             hideLabel: !0,
-                            options: y,
+                            options: b,
                             value: t,
                             onSelectionChange: R,
                             placeholder: m.intl.string(m.t.Zw8jxn),
@@ -104,7 +104,7 @@ let g = function(e) {
             children: (0, i.jsxs)(r.ButtonGroup, {
                 className: p.xv,
                 children: [(0, i.jsx)(r.Button, {
-                    onClick: b,
+                    onClick: y,
                     disabled: I,
                     loading: I,
                     variant: "secondary",

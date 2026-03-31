@@ -34,8 +34,8 @@ function p(e) {
         S = (0, l.bG)([d.A], () => d.A.isHydrating(), []),
         [x, v] = i.useState([]),
         {
-            loadId: y,
-            lastScrollEventTimestamp: b
+            loadId: b,
+            lastScrollEventTimestamp: y
         } = (0, l.cf)([d.A], () => ({
             loadId: d.A.getLoadId(),
             lastScrollEventTimestamp: d.A.lastScrollEvent()
@@ -55,8 +55,8 @@ function p(e) {
     i.useEffect(() => {
         if (N || T || null == L || null == O || O === L) return;
         let e = Date.now();
-        e - b > m.N && (r.A.gravityScrollEvent(e), s.k.trackFeedFirstScrollStarted())
-    }, [N, b, L, O, y, T]);
+        e - y > m.N && (r.A.gravityScrollEvent(e), s.k.trackFeedFirstScrollStarted())
+    }, [N, y, L, O, b, T]);
     let R = i.useCallback(e => {
             let {
                 viewableItems: t

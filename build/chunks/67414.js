@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(954571),
     E = n(242874),
     I = n(275759),
-    T = n(979474),
-    f = n(51501),
+    T = n(51501),
+    f = n(233971),
     N = n(788868),
     C = n(652215),
     g = n(778712),
@@ -77,9 +77,9 @@ function O(e) {
         innerRef: M
     } = e, D = (0, r.bG)([m.default], () => m.default.getCurrentUser()), {
         analyticsLocations: P
-    } = (0, d.Ay)(c.A.PREMIUM_GIFT_INTENT_CARD), U = (0, r.bG)([I.Ay], () => I.Ay.getFriendAnniversaryYears(x.id)), v = (0, f.$)(t), {
+    } = (0, d.Ay)(c.A.PREMIUM_GIFT_INTENT_CARD), U = (0, r.bG)([I.Ay], () => I.Ay.getFriendAnniversaryYears(x.id)), v = (0, T.$)(t), {
         openGiftModal: L
-    } = (0, T.$)({
+    } = (0, f.$)({
         giftRecipient: x,
         analyticsLocations: P,
         analyticsLocation: v.chat,

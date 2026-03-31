@@ -45,8 +45,8 @@ var l = n(627968),
     F = n(824994),
     k = n(922301),
     V = n(750112),
-    q = n(570622),
-    B = n(414808),
+    q = n(414808),
+    B = n(302005),
     H = n(954376),
     z = n(534400),
     W = n(854627),
@@ -225,7 +225,7 @@ function eA(e) {
     }, [])), eN = s.useRef(null), eg = ee ?? eN, eC = (0, A.A)(eg, e_), {
         showMenuItemPopover: ev,
         markMenuItemPopoverAsDismissed: eI
-    } = (0, q.z)({
+    } = (0, B.z)({
         location: "PrivateChannel",
         isChannelSelected: !0 === i,
         isTargetInViewport: eT,
@@ -340,10 +340,10 @@ function eA(e) {
         channel: t,
         muted: eG,
         userStatus: w
-    })].filter(Boolean).join(", "), e5 = (0, S.bG)([$.Ay], () => $.Ay.lastMessageId(t.id)), {
-        waveShouldShow: e4,
+    })].filter(Boolean).join(", "), e4 = (0, S.bG)([$.Ay], () => $.Ay.lastMessageId(t.id)), {
+        waveShouldShow: e5,
         wavePressed: te
-    } = (0, D.A)(t, e5), {
+    } = (0, D.A)(t, e4), {
         showClose: tt
     } = R.A.useConfig({
         location: "PrivateChannel"
@@ -487,11 +487,11 @@ function eA(e) {
                         className: a()(ei._q, {
                             [ei.EY]: ez
                         }),
-                        children: [eF ? (0, l.jsx)(ec, {}) : null, ek ? (0, l.jsx)(ed, {}) : null, e4 && null != eB ? (0, l.jsx)(eo, {
+                        children: [eF ? (0, l.jsx)(ec, {}) : null, ek ? (0, l.jsx)(ed, {}) : null, e5 && null != eB ? (0, l.jsx)(eo, {
                             channelName: eB,
                             onClick: te,
                             showNameplate: ez
-                        }) : null, tt || !e4 ? (0, l.jsx)(eu, {
+                        }) : null, tt || !e5 ? (0, l.jsx)(eu, {
                             icon: x.PGe,
                             "aria-label": eU ? es.intl.string(es.t["26C4oi"]) : es.intl.string(es.t.jsvgc3),
                             onClick: eU ? e2 : eJ,
@@ -501,7 +501,7 @@ function eA(e) {
                             visibleElementRef: eH
                         }) : null]
                     })]
-                }), ev && (0, l.jsx)(B.A, {
+                }), ev && (0, l.jsx)(q.A, {
                     targetElementRef: eg,
                     markMenuItemPopoverAsDismissed: eI
                 })]

@@ -41,7 +41,7 @@ function g(e) {
         onVolumeChange: k
     } = e, {
         isFullscreenEnabled: M
-    } = i.useContext(f.a), w = (0, p.Kr)(e => e.volume), P = (0, p.Kr)(e => e.setVolume), j = (0, p.Kr)(e => e.muted), V = (0, p.Kr)(e => e.setMuted), U = (0, p.Kr)(e => e.transcriptEnabled), Q = (0, p.Kr)(e => e.captionEnabled), B = (0, o.bG)([m.A], () => m.A.useReducedMotion), F = (0, o.bG)([m.A], () => m.A.keyboardModeEnabled), [Y, K] = i.useState(j ? 0 : w), [H, $] = i.useState(!1), [G, q] = i.useState(!1), [{
+    } = i.useContext(f.a), w = (0, p.Kr)(e => e.volume), P = (0, p.Kr)(e => e.setVolume), j = (0, p.Kr)(e => e.muted), V = (0, p.Kr)(e => e.setMuted), U = (0, p.Kr)(e => e.transcriptEnabled), Q = (0, p.Kr)(e => e.captionEnabled), B = (0, o.bG)([m.A], () => m.A.useReducedMotion), F = (0, o.bG)([m.A], () => m.A.keyboardModeEnabled), [K, Y] = i.useState(j ? 0 : w), [H, $] = i.useState(!1), [G, q] = i.useState(!1), [{
         volumeAnimSpring: W
     }, z] = (0, d.zhh)(() => ({
         from: {
@@ -53,10 +53,10 @@ function g(e) {
             clamp: !0
         }
     })), J = i.useRef(null), X = i.useCallback(e => {
-        null != t.current && (e !== t.current.volume && (t.current.volume = e), e !== Y && K(e))
-    }, [t, Y]), Z = i.useCallback(() => {
-        null != t.current && (0 === Y ? (V(!1), 0 === w ? (P(E.$J), X(E.$J), k(E.$J)) : (X(w), k(w))) : (P(Y), X(0), V(!0), k(0)))
-    }, [t, Y, X, w, V, P, k]), ee = () => {
+        null != t.current && (e !== t.current.volume && (t.current.volume = e), e !== K && Y(e))
+    }, [t, K]), Z = i.useCallback(() => {
+        null != t.current && (0 === K ? (V(!1), 0 === w ? (P(E.$J), X(E.$J), k(E.$J)) : (X(w), k(w))) : (P(K), X(0), V(!0), k(0)))
+    }, [t, K, X, w, V, P, k]), ee = () => {
         $(!0)
     }, et = () => {
         $(!1)
@@ -94,7 +94,7 @@ function g(e) {
     }), [G, H, z, B, W]), i.useEffect(() => (window.addEventListener("keydown", en), () => {
         window.removeEventListener("keydown", en)
     }), [en]);
-    let er = 0 === Y ? d._RO : Y < .5 ? d.S24 : d.HKD,
+    let er = 0 === K ? d._RO : K < .5 ? d.S24 : d.HKD,
         {
             icon: ei,
             label: es
@@ -178,7 +178,7 @@ function g(e) {
                     },
                     children: (0, r.jsx)(c.A, {
                         mini: !0,
-                        value: Y,
+                        value: K,
                         keyboardStep: .1,
                         minValue: 0,
                         maxValue: 1,

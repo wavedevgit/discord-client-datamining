@@ -14,8 +14,8 @@ var n = l(627968),
     u = l(961350),
     m = l(954571),
     x = l(504049),
-    h = l(134413),
-    g = l(225671),
+    h = l(587426),
+    g = l(134413),
     H = l(652215),
     j = l(985018),
     _ = l(260835);
@@ -23,10 +23,10 @@ var n = l(627968),
 function f(e) {
     let {
         guildId: t
-    } = e, f = (0, h.vA)(t), {
+    } = e, f = (0, g.vA)(t), {
         selectedUserIds: p,
         clearSelection: b
-    } = (0, g.A)(t), v = p.size > 0, A = (e, t, l, n) => {
+    } = (0, h.A)(t), v = p.size > 0, A = (e, t, l, n) => {
         d.A.startBulkBan(e, t, l, n)
     }, V = i.useCallback(() => {
         b()

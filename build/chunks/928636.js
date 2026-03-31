@@ -25,8 +25,8 @@ var i, l = n(627968),
     S = n(847177),
     x = n(359549),
     v = n(793574),
-    y = n(688810),
-    b = n(139286),
+    b = n(688810),
+    y = n(139286),
     O = n(627363),
     L = n(587895),
     R = n(47167),
@@ -111,7 +111,7 @@ let es = [14, 14, 12, 12, 10, 8, 6],
             onCloudPlayClick: t,
             analyticsLocations: n
         } = e;
-        return (0, b.A)({
+        return (0, y.A)({
             name: o.ImpressionNames.CLOUD_PLAY_CTA,
             type: o.ImpressionTypes.VIEW,
             properties: {
@@ -400,7 +400,7 @@ ef.Header = eI, ef.Body = e => {
         activity: r
     } = e, {
         analyticsLocations: s
-    } = (0, y.Ay)(v.A.NOW_PLAYING_ITEM_GAME_SECTION);
+    } = (0, b.Ay)(v.A.NOW_PLAYING_ITEM_GAME_SECTION);
     return (0, l.jsxs)(eu, {
         children: [(0, l.jsxs)("div", {
             className: er.yn,
@@ -428,7 +428,7 @@ ef.Header = eI, ef.Body = e => {
         user: a
     } = e, {
         analyticsLocations: r
-    } = (0, y.Ay)(v.A.NOW_PLAYING_ITEM_RICH_PRESENCE_SECTION), {
+    } = (0, b.Ay)(v.A.NOW_PLAYING_ITEM_RICH_PRESENCE_SECTION), {
         data: o
     } = (0, O.YY)(t.application_id), {
         assets: d,
@@ -652,7 +652,7 @@ ef.Header = eI, ef.Body = e => {
         A = (0, p.p)(),
         {
             analyticsLocations: _
-        } = (0, y.Ay)();
+        } = (0, b.Ay)();
     if (null == c) return null;
     let m = L.A.getApplication(c);
     if (null == m) return null;

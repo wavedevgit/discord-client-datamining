@@ -28,17 +28,17 @@ var a = n(397927),
     x = n(994277),
     v = n(652215);
 n(436317);
-var y = n(315290);
+var b = n(315290);
 
-function b() {
+function y() {
     null != i && (0, a.OoC)(i)
 }
 class O extends s.A {
     _initialize() {
-        r.h.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), r.h.subscribe("LOGOUT", b)
+        r.h.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), r.h.subscribe("LOGOUT", y)
     }
     _terminate() {
-        r.h.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen), r.h.unsubscribe("LOGOUT", b)
+        r.h.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen), r.h.unsubscribe("LOGOUT", y)
     }
     handleConnectionOpen() {
         var e;
@@ -46,18 +46,18 @@ class O extends s.A {
         if (null == r) return;
         switch (r) {
             case S.zY.INVITE_UNCLAIMED:
-                h.A.flowStart(y.do.INVITE, y.ju.NUF_STARTED);
+                h.A.flowStart(b.do.INVITE, b.ju.NUF_STARTED);
                 break;
             case S.zY.ORGANIC_REGISTERED:
-                h.A.flowStart(y.do.ORGANIC, y.ju.NUF_STARTED);
+                h.A.flowStart(b.do.ORGANIC, b.ju.NUF_STARTED);
                 break;
             case S.zY.MARKETING_UNCLAIMED:
-                h.A.flowStart(y.do.ORGANIC_MARKETING, y.ju.NUF_STARTED)
+                h.A.flowStart(b.do.ORGANIC_MARKETING, b.ju.NUF_STARTED)
         }
         let s = !1,
-            b = E.A.getGuildId();
+            y = E.A.getGuildId();
         if (r === S.zY.INVITE_UNCLAIMED) {
-            let e = g.A.getGuild(b);
+            let e = g.A.getGuild(y);
             null != e && (0, u.Qd)(e) && (s = !0, (0, _.Fy)(e.id))
         }
         let O = () => 0 === p.A.totalGuilds && !C.isPlatformEmbedded,
@@ -68,25 +68,25 @@ class O extends s.A {
                 let t = e => {
                     switch (e) {
                         case x.i.AGE_GATE:
-                            h.A.flowStep(y.do.ANY, y.ju.AGE_GATE);
+                            h.A.flowStep(b.do.ANY, b.ju.AGE_GATE);
                             break;
                         case x.i.CHOOSE_TEMPLATE:
-                            h.A.flowStep(y.do.ANY, y.jC.GUILD_TEMPLATES);
+                            h.A.flowStep(b.do.ANY, b.jC.GUILD_TEMPLATES);
                             break;
                         case x.i.CUSTOMIZE_GUILD:
-                            h.A.flowStep(y.do.ANY, y.jC.GUILD_CREATE);
+                            h.A.flowStep(b.do.ANY, b.jC.GUILD_CREATE);
                             break;
                         case x.i.CHANNEL_PROMPT:
-                            h.A.flowStep(y.do.ANY, y.jC.CHANNEL_PROMPT);
+                            h.A.flowStep(b.do.ANY, b.jC.CHANNEL_PROMPT);
                             break;
                         case x.i.JOIN_GUILD:
-                            h.A.flowStep(y.do.ANY, y.jC.JOIN_GUILD);
+                            h.A.flowStep(b.do.ANY, b.jC.JOIN_GUILD);
                             break;
                         case x.i.CREATION_INTENT:
-                            h.A.flowStep(y.do.ANY, y.jC.CREATION_INTENT);
+                            h.A.flowStep(b.do.ANY, b.jC.CREATION_INTENT);
                             break;
                         case x.i.COMPLETE:
-                            h.A.flowStep(y.do.ANY, y.jC.SUCCESS);
+                            h.A.flowStep(b.do.ANY, b.jC.SUCCESS);
                             break;
                         case null:
                             break;
@@ -119,7 +119,7 @@ class O extends s.A {
             predicate: () => !s && null != I.default.getCurrentUser() && !I.default.getCurrentUser()?.isClaimed() && !(0, A._9)()
         }, {
             key: "Verification Gate with Claim Account",
-            open: e => (0, c.Ze)(b, e ?? void 0),
+            open: e => (0, c.Ze)(y, e ?? void 0),
             predicate: () => s && !I.default.getCurrentUser()?.isClaimed() && !0
         }, {
             key: "Guild Welcome Modal",
@@ -129,14 +129,14 @@ class O extends s.A {
                 } = await n.e("98063").then(n.bind(n, 143154));
                 return t => (0, l.jsx)(e, {
                     ...t,
-                    guildId: b
+                    guildId: y
                 })
             }, {
                 onCloseCallback: e
             }),
-            predicate: () => null != b && null != m.A.get(b) && m.A.get(b) !== m.E
+            predicate: () => null != y && null != m.A.get(y) && m.A.get(y) !== m.E
         }], t = () => {
-            T.D(), h.A.flowStep(y.do.ANY, y.ju.NUF_COMPLETE, !0)
+            T.D(), h.A.flowStep(b.do.ANY, b.ju.NUF_COMPLETE, !0)
         }, [...e].reverse().forEach(e => {
             let n = t;
             t = () => {

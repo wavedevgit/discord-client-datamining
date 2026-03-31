@@ -5,9 +5,9 @@ n.d(t, {
     dI: () => o,
     pX: () => s
 }), n(321073);
-var l = n(830845),
-    i = n(353719),
-    r = n.n(i);
+var i = n(830845),
+    l = n(353719),
+    r = n.n(l);
 
 function s(e) {
     a.push(e)
@@ -24,4 +24,4 @@ function o(e) {
         }).exec(e.history.location.pathname)
     }
 }
-a = (0, l.zR)()
+a = (0, i.zR)()

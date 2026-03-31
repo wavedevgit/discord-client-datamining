@@ -3,9 +3,9 @@ n.d(t, {
     A: () => x
 });
 var a = n(627968),
-    l = n(64700),
-    i = n(503698),
-    r = n.n(i),
+    i = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(158954),
     c = n(397927),
     o = n(760459),
@@ -17,10 +17,10 @@ function x(e) {
     let {
         entries: t,
         viewId: n,
-        officialGuildId: i,
+        officialGuildId: l,
         onClose: x,
         source: h
-    } = e, f = t.length > 7, [g, _] = l.useState(!1), p = l.useMemo(() => t.slice(0, f && !g ? 6 : void 0), [t, f, g]);
+    } = e, f = t.length > 7, [g, _] = i.useState(!1), p = i.useMemo(() => t.slice(0, f && !g ? 6 : void 0), [t, f, g]);
     return (0, a.jsxs)("div", {
         children: [(0, a.jsx)(s.DZT, {
             className: u.bV,
@@ -43,7 +43,7 @@ function x(e) {
                         entry: e,
                         viewId: n,
                         onClose: x,
-                        officialGuildId: i,
+                        officialGuildId: l,
                         source: h
                     }, e.id))
                 })

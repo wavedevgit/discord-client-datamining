@@ -13,7 +13,7 @@ var i = n(627968),
     u = n(829219),
     A = n(859703),
     h = n(341915),
-    _ = n(33621),
+    _ = n(112142),
     m = n(714510),
     p = n(890687),
     g = n(579473),
@@ -26,8 +26,8 @@ var i = n(627968),
     S = n(201805),
     x = n(212614),
     v = n(79545),
-    y = n(847641),
-    b = n(311243),
+    b = n(847641),
+    y = n(311243),
     O = n(545986),
     L = n(654487),
     R = n(652215),
@@ -132,7 +132,7 @@ function j(e) {
             className: D.Wp,
             children: [Y ? (0, i.jsx)(M, {
                 quest: n
-            }) : (0, i.jsx)(y.A, {}), (0, i.jsx)(N.C, {
+            }) : (0, i.jsx)(b.A, {}), (0, i.jsx)(N.C, {
                 quest: n,
                 questContent: h.uF.ACTIVITY_PANEL,
                 shouldShowDisclosure: n.userStatus?.enrolledAt == null,
@@ -159,7 +159,7 @@ function j(e) {
                     children: q
                 })
             })]
-        }), Y && !W && (0, i.jsx)(b.A, {
+        }), Y && !W && (0, i.jsx)(y.A, {
             autoplay: g,
             className: D.t3,
             quest: n,

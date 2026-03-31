@@ -33,8 +33,8 @@ function C(e) {
         currentActivities: S,
         partiedMembers: x,
         applicationStreams: v,
-        guildContext: y
-    } = t, b = (0, A.sb)(C), O = [], L = e => {
+        guildContext: b
+    } = t, y = (0, A.sb)(C), O = [], L = e => {
         let {
             length: t
         } = O;
@@ -77,7 +77,7 @@ function C(e) {
             activity: r
         } = e;
         L((0, i.jsx)(E.A.ApplicationStreamingSection, {
-            guildId: y?.id,
+            guildId: b?.id,
             user: n,
             activity: r,
             applicationStream: t,
@@ -125,7 +125,7 @@ function C(e) {
             let e = N.length > 0 && N[0].members.length > 1,
                 l = a.length > 1;
             L((0, i.jsx)(E.A.TwitchSection, {
-                guildId: y?.id,
+                guildId: b?.id,
                 activity: n,
                 user: e || l ? A : null,
                 getAssetImage: p.uD
@@ -145,7 +145,7 @@ function C(e) {
             getAssetImage: p.uD,
             user: A
         }, `rich-presence-${n.session_id??t}-${A.id}`)));
-        b && null != C && null != l && (0, _.zS)(n, C) && (null == C.userStatus || !(0, h.gO)(C.userStatus, u.uF.ACTIVITY_PANEL)) && L((0, i.jsx)(m.A, {
+        y && null != C && null != l && (0, _.zS)(n, C) && (null == C.userStatus || !(0, h.gO)(C.userStatus, u.uF.ACTIVITY_PANEL)) && L((0, i.jsx)(m.A, {
             quest: C
         }, `quest-${C.id}-${n.session_id??t}`))
     }), O.length > 0 ? (0, i.jsx)(E.A.Body, {

@@ -1,7 +1,7 @@
 /** chunk id: 291731 params = (module,exports,require) **/
 let i, l, a;
 n.d(t, {
-    A: () => b
+    A: () => y
 }), n(321073);
 var r = n(735438),
     s = n.n(r),
@@ -29,7 +29,7 @@ function N() {
     I = m.XlH.OPEN, f = {}, C = !1
 }
 let S = s().debounce(() => {
-    C && ((null == g || s().isEqual(g, x(g.id))) && (C = !1), C || y.emitChange())
+    C && ((null == g || s().isEqual(g, x(g.id))) && (C = !1), C || b.emitChange())
 }, 500);
 
 function x(e) {
@@ -76,7 +76,7 @@ class v extends o.Ay.Store {
         }
     }
 }
-let y = new v(d.h, __OVERLAY__ ? {} : {
+let b = new v(d.h, __OVERLAY__ ? {} : {
         INTEGRATION_SETTINGS_INIT: N,
         INTEGRATION_SETTINGS_SAVE_SUCCESS: N,
         CHANNEL_SETTINGS_SET_SECTION: function(e) {
@@ -160,4 +160,4 @@ let y = new v(d.h, __OVERLAY__ ? {} : {
             I = m.XlH.OPEN, f = e.errors ?? {}
         }
     }),
-    b = y
+    y = b

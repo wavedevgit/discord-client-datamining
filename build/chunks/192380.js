@@ -35,18 +35,18 @@ let _ = function(e) {
         x = (0, a.bG)([r.A], () => r.A.isHydrating(), []),
         v = l.useMemo(() => T[0].onViewableItemsChanged, [T]),
         {
-            registerItemRef: y
+            registerItemRef: b
         } = (0, A.N)(E, v, t),
-        b = l.useMemo(() => E.some(e => "end" === e.data.kind), [E]),
+        y = l.useMemo(() => E.some(e => "end" === e.data.kind), [E]),
         O = l.useCallback(() => {
-            if (b) return;
+            if (y) return;
             let e = t.current;
             null == e || !(e.scrollHeight - e.scrollTop - e.clientHeight < 300) || p || I || x || (g(!0), (0, s._x)().finally(() => {
                 setTimeout(() => {
                     g(!1)
                 }, 300)
             }))
-        }, [I, p, x, b, t]);
+        }, [I, p, x, y, t]);
     l.useEffect(() => {
         let e = t.current;
         if (null != e) return e.addEventListener("scroll", O), () => {
@@ -88,12 +88,12 @@ let _ = function(e) {
                 children: "You're all caught up!"
             })
         }, e.id) : (0, i.jsx)("div", {
-            ref: t => y(e.id, t),
+            ref: t => b(e.id, t),
             "data-item-id": e.id,
             children: (0, i.jsx)(u.A, {
                 item: e
             })
-        }, e.id), [y]);
+        }, e.id), [b]);
     return I && 0 === E.length ? (0, i.jsx)("div", {
         style: {
             padding: "32px",
@@ -129,7 +129,7 @@ let _ = function(e) {
         }), (0, i.jsxs)("div", {
             ref: m,
             className: h.j,
-            children: [E.map(e => P(e)), !b && (p || x) && (0, i.jsx)("div", {
+            children: [E.map(e => P(e)), !y && (p || x) && (0, i.jsx)("div", {
                 style: {
                     padding: "16px",
                     textAlign: "center"

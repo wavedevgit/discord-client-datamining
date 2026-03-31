@@ -31,8 +31,8 @@ function N() {
         S = (0, a.bG)([h.A], () => h.A.getChannel(N), [N]),
         x = n ?? S?.guild_id,
         v = (0, a.bG)([_.A], () => _.A.getGuild(x), [x]),
-        y = (0, o.DZ)(),
-        b = (0, A.lI)(),
+        b = (0, o.DZ)(),
+        y = (0, A.lI)(),
         {
             application: O,
             isFrameInFocusedMode: L
@@ -55,9 +55,9 @@ function N() {
         src: R,
         "aria-hidden": !0,
         draggable: !1
-    })) : b ? (e = f.intl.string(f.t.HcoRu0), P = (0, i.jsx)(r.XFE, {
+    })) : y ? (e = f.intl.string(f.t.HcoRu0), P = (0, i.jsx)(r.XFE, {
         size: "sm"
-    })) : null != v ? (e = (0, d.YC)(v), P = y ? (0, i.jsx)(r.Gg5, {
+    })) : null != v ? (e = (0, d.YC)(v), P = b ? (0, i.jsx)(r.Gg5, {
         size: "sm"
     }) : (0, i.jsx)(u.Ay, {
         guild: v,

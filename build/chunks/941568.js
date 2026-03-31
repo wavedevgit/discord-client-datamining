@@ -3,9 +3,9 @@ n.d(t, {
     A: () => E
 }), n(323874), n(14289), n(35956);
 var a = n(627968),
-    l = n(64700),
-    i = n(503698),
-    r = n.n(i),
+    i = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(621466),
     c = n(397927),
     o = n(688810),
@@ -34,9 +34,9 @@ function C(e) {
     let {
         variant: t,
         message: n,
-        channelId: i,
+        channelId: l,
         onCardClick: o
-    } = e, [u, m] = l.useState(!1), x = null != n.mediaUrl, h = "video" === n.mediaType, f = "main" === t, g = l.useCallback(() => m(!0), []), _ = l.useCallback(e => {
+    } = e, [u, m] = i.useState(!1), x = null != n.mediaUrl, h = "video" === n.mediaType, f = "main" === t, g = i.useCallback(() => m(!0), []), _ = i.useCallback(e => {
         if (!((0, s.vq)(e.target, HTMLAnchorElement) || (0, s.vq)(e.target, HTMLSpanElement) && (0, s.vq)(e.target.parentElement, HTMLAnchorElement))) return o(n.id)
     }, [o, n.id]);
     return (0, a.jsxs)(c.DUT, {
@@ -77,10 +77,10 @@ function C(e) {
                 variant: f ? "heading-md/bold" : "heading-sm/bold",
                 color: "text-strong",
                 className: f ? v.KX : v._N,
-                children: j(n.title, i)
+                children: j(n.title, l)
             }), n.body.length > 0 && (0, a.jsx)("div", {
                 className: r()(v.h_, f ? v.My : v.Gd, A.PT),
-                children: j(n.body, i)
+                children: j(n.body, l)
             })]
         })]
     })
@@ -91,7 +91,7 @@ function E(e) {
         gameId: t,
         trackAction: n
     } = e, {
-        analyticsLocations: i
+        analyticsLocations: l
     } = (0, o.Ay)(), {
         officialInvite: r,
         closeModal: s
@@ -99,24 +99,24 @@ function E(e) {
         messages: c,
         guildId: d,
         channelId: m
-    } = (0, h.A)(t), A = l.useCallback(() => {
+    } = (0, h.A)(t), A = i.useCallback(() => {
         let e = r?.guild?.id ?? d;
         null != e && (n(x.Ws.Announcements), s(), (0, f.A)({
             invite: r,
             guildId: e,
             channelId: m,
-            analyticsLocationStack: i
+            analyticsLocationStack: l
         }))
-    }, [n, s, r, d, m, i]), j = l.useCallback(e => {
+    }, [n, s, r, d, m, l]), j = i.useCallback(e => {
         let t = r?.guild?.id ?? d;
         null != t && (n(x.Ws.AnnouncementsItem), s(), (0, f.A)({
             invite: r,
             guildId: t,
             channelId: m,
             messageId: e,
-            analyticsLocationStack: i
+            analyticsLocationStack: l
         }))
-    }, [n, s, r, d, m, i]);
+    }, [n, s, r, d, m, l]);
     if (null == m || 0 === c.length) return null;
     let E = 2 !== c.length,
         I = E ? c[0] : null,

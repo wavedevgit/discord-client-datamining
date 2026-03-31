@@ -1,7 +1,7 @@
 /** chunk id: 854514 params = (module,exports,require) **/
 n.d(t, {
     Ae: () => v,
-    Ay: () => b,
+    Ay: () => y,
     Hk: () => O
 });
 var i = n(627968),
@@ -34,7 +34,7 @@ function v() {
     })
 }
 
-function y(e) {
+function b(e) {
     let {
         assetImage: t,
         assetVideo: n
@@ -98,7 +98,7 @@ function y(e) {
     })
 }
 
-function b(e) {
+function y(e) {
     let {
         config: t,
         onQuestCtaClick: n
@@ -160,7 +160,7 @@ function b(e) {
                     variant: "color-mix"
                 }, l) : null)]
             }),
-            background: (0, i.jsx)(y, {
+            background: (0, i.jsx)(b, {
                 assetImage: t.assetHeroImage,
                 assetVideo: t.assetHeroVideo
             })

@@ -28,8 +28,8 @@ var i, l = n(627968),
     S = n(403362),
     x = n(707592),
     v = n(698441),
-    y = n(935159),
-    b = n(473019),
+    b = n(935159),
+    y = n(473019),
     O = n(11550),
     L = n(435328),
     R = n(539446),
@@ -113,7 +113,7 @@ function H(e) {
         return t
     }), [n]), a = (0, u.gU)(n);
     return (0, l.jsx)(B, {
-        onClickCloseIcon: () => (0, y.iF)({
+        onClickCloseIcon: () => (0, b.iF)({
             eventId: t?.id
         }),
         heading: k.intl.string(k.t["X2K3/4"]),
@@ -137,9 +137,9 @@ function F(e) {
         guildEvent: t,
         noticeType: n
     } = e, i = (0, j.G3)(t), a = (0, o.bG)([v.Ay], () => v.Ay.isInterestedInEventRecurrence(t.id, i), [t.id, i]), r = (0, o.bG)([O.A], () => O.A.getUpcomingNoticeSeenTime(t.id), [t.id]);
-    return a || null != r || (0, y.pE)(t.id), (0, l.jsx)(d.Button, {
+    return a || null != r || (0, b.pE)(t.id), (0, l.jsx)(d.Button, {
         onClick: function() {
-            (0, w.A)(t.id, null, t.guild_id, () => setTimeout(() => (0, y.Lx)(t.id), 1e3)), N.default.track(G.HAw.CHANNEL_NOTICE_CTA_CLICKED, {
+            (0, w.A)(t.id, null, t.guild_id, () => setTimeout(() => (0, b.Lx)(t.id), 1e3)), N.default.track(G.HAw.CHANNEL_NOTICE_CTA_CLICKED, {
                 guild_id: t.guild_id,
                 notice_type: n
             })
@@ -193,7 +193,7 @@ function Y(e) {
                     N.default.track(G.HAw.CHANNEL_NOTICE_CLOSED, {
                         notice_type: n,
                         guild_id: t.guild_id
-                    }), (0, y.Lx)(t.id)
+                    }), (0, b.Lx)(t.id)
                 },
                 className: V.ut,
                 "aria-label": k.intl.string(k.t.cpT0Cq),
@@ -246,7 +246,7 @@ function W(e) {
         guildEvent: t
     } = e, n = (0, M.oF)(t);
     return null == n ? null : (0, l.jsx)(B, {
-        onClickCloseIcon: () => (0, y.iF)({
+        onClickCloseIcon: () => (0, b.iF)({
             eventId: t?.id
         }),
         heading: k.intl.string(k.t["1+boPi"]),
@@ -314,7 +314,7 @@ function z(e) {
         count: `${a}`
     });
     return (0, l.jsx)(B, {
-        onClickCloseIcon: () => (0, y.iF)({
+        onClickCloseIcon: () => (0, b.iF)({
             stageId: t?.id
         }),
         heading: k.intl.string(k.t["X2K3/4"]),
@@ -391,11 +391,11 @@ let X = a.memo(function(e) {
     } = (0, A.P)(!0), i = (0, R.V)(t.id), a = (0, D.BP)(t.id), r = (0, D.WG)(t.id), s = (0, o.bG)([I.A], () => I.A.getStageInstanceByChannel(i?.id), [i]), {
         isStageNoticeHidden: d,
         isEventNoticeHidden: c
-    } = (0, o.cf)([b.A], () => ({
-        isStageNoticeHidden: b.A.isLiveChannelNoticeHidden({
+    } = (0, o.cf)([y.A], () => ({
+        isStageNoticeHidden: y.A.isLiveChannelNoticeHidden({
             stageId: s?.id
         }),
-        isEventNoticeHidden: b.A.isLiveChannelNoticeHidden({
+        isEventNoticeHidden: y.A.isLiveChannelNoticeHidden({
             eventId: a?.id
         })
     }), [s, a]), u = null, _ = null != s && null != i && !d;

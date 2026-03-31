@@ -3,8 +3,8 @@ n.d(t, {
     p: () => o
 });
 var a = n(155718),
-    l = n(731068),
-    i = n(77350),
+    i = n(731068),
+    l = n(77350),
     r = n(141468),
     s = n(383233);
 let c = /^#{1,3}\s+(.+)$/;
@@ -18,7 +18,7 @@ function o(e) {
                     let t = e.components.find(e => e.type === a.I5.MEDIA_GALLERY),
                         n = t?.items[0]?.media;
                     if (null != n) {
-                        let e = (0, l.FE)(n);
+                        let e = (0, i.FE)(n);
                         if ("INVALID" === e) return;
                         return {
                             url: n.proxyUrl ?? n.url,
@@ -26,12 +26,12 @@ function o(e) {
                         }
                     }
                 }
-                let t = e.attachments.find(e => (0, i.tT)(e.content_type));
+                let t = e.attachments.find(e => (0, l.tT)(e.content_type));
                 if (null != t) return {
                     url: t.proxy_url,
                     type: "image"
                 };
-                let n = e.attachments.find(e => (0, i.XB)(e.content_type));
+                let n = e.attachments.find(e => (0, l.XB)(e.content_type));
                 if (null != n) return {
                     url: n.proxy_url,
                     type: "video"

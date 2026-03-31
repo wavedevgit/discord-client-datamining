@@ -13,8 +13,8 @@ var r = n(627968),
     c = n(890942),
     p = n(744201),
     _ = n(522055),
-    m = n(793506),
-    f = n(204017),
+    m = n(881756),
+    f = n(793506),
     A = n(843095),
     g = n(568065),
     x = n(800007),
@@ -32,10 +32,10 @@ function I(e) {
     } = (0, a.cf)([_.A], () => ({
         state: _.A.getStateForGuild(t),
         lowestGameServerCost: _.A.getLowestGameCostForGuild(t)
-    })), j = (0, m.A)(t), {
+    })), j = (0, f.A)(t), {
         gameName: S,
         gameName2: C
-    } = (0, f.A)(), {
+    } = (0, m.A)(), {
         textColor: w
     } = (0, p.A)(j?.type === "active");
     return null == l ? null : (0, r.jsxs)(c.NI, {

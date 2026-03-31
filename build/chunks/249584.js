@@ -29,8 +29,8 @@ var i = n(627968),
     g = n(987144),
     p = n(976860),
     f = n(71393),
-    x = n(297930),
-    E = n(204017),
+    x = n(881756),
+    E = n(297930),
     C = n(645619),
     I = n(379229),
     N = n(990208),
@@ -254,7 +254,7 @@ function X(e) {
     } = (0, S.A)(t), {
         gameName: r,
         gameName2: d
-    } = (0, E.A)(), u = (0, c.bG)([h.A], () => h.A.useReducedMotion);
+    } = (0, x.A)(), u = (0, c.bG)([h.A], () => h.A.useReducedMotion);
     return (0, i.jsx)(en, {
         size: "video",
         targetElementRef: l,
@@ -316,7 +316,7 @@ function J(e) {
     } = e, {
         gameName: l,
         gameName2: a
-    } = (0, E.A)(), r = (0, c.bG)([h.A], () => h.A.useReducedMotion);
+    } = (0, x.A)(), r = (0, c.bG)([h.A], () => h.A.useReducedMotion);
     return (0, i.jsx)(en, {
         size: "video",
         targetElementRef: s,
@@ -365,7 +365,7 @@ function $(e) {
     return (0, i.jsx)(en, {
         targetElementRef: s,
         ...l,
-        asset: (0, i.jsx)(x.default, {
+        asset: (0, i.jsx)(E.default, {
             gameId: O.YJ
         }),
         aspectRatio: "6/4",

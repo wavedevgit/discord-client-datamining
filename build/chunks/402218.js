@@ -35,11 +35,11 @@ var n = l(627968),
     E = l(427262),
     y = l(157347),
     T = l(70738),
-    Z = l(134413),
-    w = l(266047),
-    U = l(178052),
-    O = l(589935),
-    k = l(225671),
+    Z = l(587426),
+    w = l(134413),
+    U = l(266047),
+    O = l(178052),
+    k = l(589935),
     F = l(189552),
     B = l(950072),
     P = l(652215),
@@ -260,7 +260,7 @@ let $ = i.memo(function(e) {
             selectedUserIds: H,
             addUsers: j,
             removeUser: _
-        } = (0, k.A)(t.guildId), f = (0, Z.vA)(t.guildId), p = (0, Z.O6)(t.guildId, f, t.userId), b = (0, d.bG)([w.A], () => w.A.getSearchStateByGuildId(t.guildId).selectedSort ?? T.mF.ORDER_BY_UNSPECIFIED, [t.guildId], o()), v = i.useCallback(e => {
+        } = (0, Z.A)(t.guildId), f = (0, w.vA)(t.guildId), p = (0, w.O6)(t.guildId, f, t.userId), b = (0, d.bG)([U.A], () => U.A.getSearchStateByGuildId(t.guildId).selectedSort ?? T.mF.ORDER_BY_UNSPECIFIED, [t.guildId], o()), v = i.useCallback(e => {
             e.stopPropagation(), e.preventDefault(), null != t && p && (H.has(t.userId) ? _(t.userId) : j([t.userId]))
         }, [j, p, t, _, H]), A = b === T.mF.ORDER_BY_GUILD_JOINED_AT_ASC, V = b === T.mF.ORDER_BY_USER_ID_ASC || b === T.mF.ORDER_BY_USER_ID_DESC;
         return (0, n.jsxs)(n.Fragment, {
@@ -307,7 +307,7 @@ let $ = i.memo(function(e) {
                 className: a()(z.qp, {
                     [z.oE]: x
                 }),
-                children: (0, n.jsx)(O.Ay, {
+                children: (0, n.jsx)(k.Ay, {
                     userId: t.userId,
                     guildId: t.guildId
                 })
@@ -379,7 +379,7 @@ let $ = i.memo(function(e) {
             compact: m = !1
         } = e, {
             analyticsLocations: x
-        } = (0, g.Ay)(), h = (0, d.bG)([V.Ay], () => V.Ay.getGuildSidebarState(l), [l]), H = h?.details.userId === t, j = (0, d.bG)([w.A], () => w.A.getEnhancedMember(l, t), [l, t]), _ = (0, F.YH)(j), b = (0, d.bG)([R.default], () => R.default.getUser(t), [t]), v = (0, p.q)(l), A = (0, F.UY)(j ?? void 0), L = i.useCallback(e => {
+        } = (0, g.Ay)(), h = (0, d.bG)([V.Ay], () => V.Ay.getGuildSidebarState(l), [l]), H = h?.details.userId === t, j = (0, d.bG)([U.A], () => U.A.getEnhancedMember(l, t), [l, t]), _ = (0, F.YH)(j), b = (0, d.bG)([R.default], () => R.default.getUser(t), [t]), v = (0, p.q)(l), A = (0, F.UY)(j ?? void 0), L = i.useCallback(e => {
             e.stopPropagation(), e.preventDefault(), A(e)
         }, [A]), N = i.useCallback(e => {
             e.stopPropagation(), e.preventDefault(), null != j && (0, F.Ko)(j, x)
@@ -388,7 +388,7 @@ let $ = i.memo(function(e) {
                 modViewPanel: q.g.INFO
             }) : (0, F.Ko)(j, x))
         }, [j, x, v]), M = i.useCallback((e, t) => o()((0, r.omit)(e, el), (0, r.omit)(t, el)), []);
-        return null == j ? null : (0, n.jsx)(U.A, {
+        return null == j ? null : (0, n.jsx)(O.A, {
             role: "row",
             value: j,
             style: s,

@@ -15,8 +15,8 @@ var a = n(627968),
     h = n(859703),
     x = n(341915),
     p = n(12251),
-    g = n(33621),
-    _ = n(551456),
+    g = n(551456),
+    _ = n(112142),
     f = n(714510),
     v = n(890687),
     b = n(18437),
@@ -111,7 +111,7 @@ function B(e) {
         text: l
     } = e, {
         enabled: o
-    } = _.K.useConfig({
+    } = g.K.useConfig({
         location: R.rE.QUEST_LEARN_MORE_CTA
     }), {
         externalLinkCta: c,
@@ -165,7 +165,7 @@ function G(e) {
         formattedExpirationDate: i
     } = e, {
         enabled: s
-    } = _.K.useConfig({
+    } = g.K.useConfig({
         location: R.rE.QUEST_LEARN_MORE_CTA
     }), {
         externalLinkCta: l,
@@ -207,7 +207,7 @@ function F(e) {
     let {
         quest: t,
         questContent: n,
-        onReceiveErrorHints: _,
+        onReceiveErrorHints: g,
         contentPosition: A,
         rowIndex: S,
         sourceQuestContent: U
@@ -226,11 +226,11 @@ function F(e) {
         isClaiming: h.A.isClaimingReward(t.id) || h.A.isFetchingRewardCode(t.id),
         isEnrolling: h.A.isEnrolling(t.id),
         isQuestEnrollmentBlocked: null != h.A.questEnrollmentBlockedUntil
-    })), Y = t.userStatus?.enrolledAt != null, J = t.userStatus?.completedAt != null, X = J && t.userStatus?.claimedAt == null, Z = (0, y.if)(t), ee = !(0, y.Ic)(t), et = (0, v.In)(t), en = (0, T.IO)(t), ea = (0, T.K$)(t), ei = (0, T.Cr)(t), es = (0, v.fc)(t), [el, er, eo] = (0, v.Qo)(t, es), ed = ee && et === v.F3.ACCEPTED, ec = ed && el === x.X0.SELECT, eu = ed && !ec && er.length > 1, em = g.t.useConfig({
+    })), Y = t.userStatus?.enrolledAt != null, J = t.userStatus?.completedAt != null, X = J && t.userStatus?.claimedAt == null, Z = (0, y.if)(t), ee = !(0, y.Ic)(t), et = (0, v.In)(t), en = (0, T.IO)(t), ea = (0, T.K$)(t), ei = (0, T.Cr)(t), es = (0, v.fc)(t), [el, er, eo] = (0, v.Qo)(t, es), ed = ee && et === v.F3.ACCEPTED, ec = ed && el === x.X0.SELECT, eu = ed && !ec && er.length > 1, em = _.t.useConfig({
         location: R.rE.QUEST_HOME_DESKTOP
     }), eh = (0, k.Pd)(t), ex = (0, m.O)(e => e.clearErrorHints), ep = i.useCallback(e => {
-        eo(e), e === R.fO.DESKTOP && (_([]), ex(t.id))
-    }, [eo, _, ex, t.id]), {
+        eo(e), e === R.fO.DESKTOP && (g([]), ex(t.id))
+    }, [eo, g, ex, t.id]), {
         text: eg,
         onClick: e_
     } = (0, N._c)({
@@ -259,7 +259,7 @@ function F(e) {
             })
         },
         afterRequest: e => {
-            V.stopAnimation(), _(e)
+            V.stopAnimation(), g(e)
         }
     }), eb = t.userStatus?.claimedAt != null, {
         launchInGameActivity: ej

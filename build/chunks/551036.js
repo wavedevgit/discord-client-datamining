@@ -26,12 +26,12 @@ var i = n(627968),
     S = n(139613),
     x = n(746080),
     v = n(985018),
-    y = n(369717);
+    b = n(369717);
 
-function b(e) {
+function y(e) {
     let {
         guildId: t
-    } = e, n = (0, r.bG)([p.A], () => p.A.getGuild(t), [t]), b = (0, r.bG)([_.A], () => _.A.isConnected()), O = (0, A.A)(t), L = (0, I.A)(t), R = (0, r.bG)([g.A], () => g.A.isSubscriptionFetching), P = (0, E.X)(), {
+    } = e, n = (0, r.bG)([p.A], () => p.A.getGuild(t), [t]), y = (0, r.bG)([_.A], () => _.A.isConnected()), O = (0, A.A)(t), L = (0, I.A)(t), R = (0, r.bG)([g.A], () => g.A.isSubscriptionFetching), P = (0, E.X)(), {
         shouldHideGuildPurchaseEntryPoints: D,
         restrictionsLoading: M
     } = (0, h.MH)(t), j = null == n || !P || R || M;
@@ -39,7 +39,7 @@ function b(e) {
         subsection: v.intl.string(v.t["KzCF/6"]),
         location: n?.name
     }), (0, d.A)(a.Fr ? "role-subscriptions-overview" : void 0);
-    let w = b && (null == n || !(O || L) || D && !M);
+    let w = y && (null == n || !(O || L) || D && !M);
     if (l.useEffect(() => {
             o.hP()
         }, []), l.useEffect(() => {
@@ -51,10 +51,10 @@ function b(e) {
         })
     }
     return (0, i.jsxs)("div", {
-        className: y.kL,
+        className: b.kL,
         children: [(0, i.jsxs)(m.A, {
             toolbar: (0, i.jsx)(l.Fragment, {}),
-            className: y.jr,
+            className: b.jr,
             children: [(0, i.jsx)(m.A.Icon, {
                 icon: (0, s.kHD)(f.A),
                 "aria-hidden": !0
@@ -64,11 +64,11 @@ function b(e) {
         }), (0, i.jsx)("div", {
             id: S.K
         }), (0, i.jsx)("div", {
-            className: y.Qs,
+            className: b.Qs,
             children: O ? (0, i.jsx)(s.d_W, {
-                className: y.XG,
+                className: b.XG,
                 children: (0, i.jsx)("div", {
-                    className: y.gT,
+                    className: b.gT,
                     children: j ? (0, i.jsx)(s.y$y, {}) : (0, i.jsx)(C.A, {
                         guild: n
                     })
@@ -85,7 +85,7 @@ function O(e) {
     return (0, i.jsx)(E.H, {
         guildId: t,
         refetchOnMount: !0,
-        children: (0, i.jsx)(b, {
+        children: (0, i.jsx)(y, {
             guildId: t
         })
     })

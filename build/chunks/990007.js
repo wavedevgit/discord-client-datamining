@@ -28,15 +28,15 @@ let x = "CachedTokens",
     v = {
         "1273616940451102832": new o.A(2, +f.A.Millis.MINUTE)
     };
-async function y(e, t, n) {
+async function b(e, t, n) {
     let i, a, s, o, d, {
         client_id: c,
         response_type: u = "code",
         redirect_uri: f,
         code_challenge: N,
         code_challenge_method: x,
-        state: y,
-        nonce: b,
+        state: b,
+        nonce: y,
         scope: O,
         permissions: L,
         guild_id: R,
@@ -78,7 +78,7 @@ async function y(e, t, n) {
             redirectUri: f,
             codeChallenge: N,
             codeChallengeMethod: x,
-            state: y,
+            state: b,
             integrationType: a,
             signal: U
         }), (0, h.vG)(c)])
@@ -99,8 +99,8 @@ async function y(e, t, n) {
             redirectUri: f,
             codeChallenge: N,
             codeChallengeMethod: x,
-            state: y,
-            nonce: b,
+            state: b,
+            nonce: y,
             integrationType: a
         })).location
     } catch (t) {
@@ -128,7 +128,7 @@ async function y(e, t, n) {
         redirectUri: f,
         codeChallenge: N,
         codeChallengeMethod: x,
-        state: y,
+        state: b,
         guildId: R,
         channelId: P,
         prompt: D,
@@ -140,7 +140,7 @@ async function y(e, t, n) {
     })
 }
 
-function b(e, t) {
+function y(e, t) {
     if (e.authorization.accessToken) throw new T.A({
         errorCode: S.Lw6.INVALID_COMMAND
     }, "Already authenticated");
@@ -203,7 +203,7 @@ function O(e, t) {
                         errorCode: S.Lw6.INVALID_COMMAND
                     }, "No application.");
                     let o = a.F.IDENTIFY,
-                        d = () => y({
+                        d = () => b({
                             client_id: n,
                             scope: o,
                             response_type: "token",
@@ -224,7 +224,7 @@ function O(e, t) {
                                 accessToken: t,
                                 scope: a,
                                 expires: Date.now() + r
-                            }, c.w.set(x, s), b(l, d.access_token)
+                            }, c.w.set(x, s), y(l, d.access_token)
                         });
                     return null != (s = function(e, t) {
                         let n = c.w.get(x);
@@ -233,7 +233,7 @@ function O(e, t) {
                             if (!(i.scope !== t || i.expires <= Date.now())) return i.accessToken;
                             delete n[e], c.w.set(x, n)
                         }
-                    }(n, o)) ? b(l, s).catch(() => {
+                    }(n, o)) ? y(l, s).catch(() => {
                         let e;
                         return e = c.w.get(x) ?? {}, delete e[n], c.w.set(x, e), d()
                     }) : d()
@@ -241,7 +241,7 @@ function O(e, t) {
                 if (null == s) throw new T.A({
                     errorCode: S.Lw6.INVALID_TOKEN
                 }, "No access token provided");
-                return b(l, s)
+                return y(l, s)
             }
         }),
         [S.e$_.AUTHORIZE]: {
@@ -268,7 +268,7 @@ function O(e, t) {
                     errorCode: S.Lw6.INVALID_CLIENTID
                 }, "Application does not match the connection's");
                 let o = a.scopes || a.scope;
-                return delete a.scopes, y({
+                return delete a.scopes, b({
                     ...a,
                     scope: o,
                     signal: l,

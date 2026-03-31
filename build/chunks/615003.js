@@ -27,8 +27,8 @@ var i = n(627968),
     S = n(851746),
     x = n(881489),
     v = n(113359),
-    y = n(288349),
-    b = n(920050),
+    b = n(288349),
+    y = n(920050),
     O = n(553081),
     L = n(131168),
     R = n(422936),
@@ -100,9 +100,9 @@ let Q = e => {
             eS = !(0, C.TW)(et),
             ex = eS && eE,
             ev = eg?.last_granted_reward,
-            ey = eg?.last_granted_reward_amount,
-            eb = (0, _.mB)(o.M.PREMIUM_ORBS_REWARDS_INTRO_POPOVER),
-            eO = el && eE && null != ev && null != ey && !eb,
+            eb = eg?.last_granted_reward_amount,
+            ey = (0, _.mB)(o.M.PREMIUM_ORBS_REWARDS_INTRO_POPOVER),
+            eO = el && eE && null != ev && null != eb && !ey,
             eL = el && eE && !eO && null != eg,
             eR = null != eo && null != en && en.status === q.Dmq.CANCELED,
             {
@@ -141,7 +141,7 @@ let Q = e => {
                 has_premium: ei
             }), null != eF && eY(z.i.USER_DISMISS), null != eQ && eX(z.i.USER_DISMISS), (eW === o.M.PREMIUM_GROUP_POPOVER || eW === o.M.PREMIUM_GROUP_POPOVER_UPSELL_V2) && eK(z.i.USER_DISMISS), eW === o.M.L_3PP_NITRO_TOOLTIP && eK(z.i.USER_DISMISS), eW === o.M.L_3PP_NON_NITRO_POPOVER && eK(z.i.USER_DISMISS)
         };
-        ej === K.xc.NONE || ed || (n = 7, t = (0, i.jsx)(y.A, {
+        ej === K.xc.NONE || ed || (n = 7, t = (0, i.jsx)(b.A, {
             className: "",
             startsAt: ew,
             endsAt: eU,
@@ -229,7 +229,7 @@ let Q = e => {
             onClick: () => {
                 if (e6) {
                     let e = new URLSearchParams({
-                        [O.W]: b.LOGITECH_3PP_CARD_ID
+                        [O.W]: y.LOGITECH_3PP_CARD_ID
                     }).toString();
                     (0, g.pX)(Z.includes("?") ? `${Z}&${e}` : `${Z}?${e}`)
                 }
@@ -246,7 +246,7 @@ let Q = e => {
             premiumSubscription: en,
             receivesUpdatedUpsellPopover: eI,
             orbsRewardAmount: ef,
-            lastGrantedRewardAmount: ey,
+            lastGrantedRewardAmount: eb,
             dismissCoachMark: eK,
             dismissOrbsDropPopover: e1,
             dismissMarketingPopover: eJ,

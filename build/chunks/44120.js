@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968);
 n(64700);
-var l = n(835245),
-    i = n(397927),
+var i = n(835245),
+    l = n(397927),
     r = n(73153),
     s = n(391048),
     c = n(636099),
@@ -33,7 +33,7 @@ function v(e) {
             onComplete: b
         } = e,
         S = !1,
-        T = (0, l.A)(),
+        T = (0, i.A)(),
         k = j ? "gift-payment-modal" : "payment-modal",
         L = x.default.getCurrentUser();
     L?.verified ? (r.h.wait(() => {
@@ -74,22 +74,22 @@ function v(e) {
             }(0, s.ET)(), (0, c.z)(), N?.(S), S && (0, m.gB)()
         },
         onCloseRequest: () => {
-            null != t && p.has(t) && (0, i.OoC)(k)
+            null != t && p.has(t) && (0, l.OoC)(k)
         },
         onComplete: () => {
             S = !0, b?.()
         }
-    })) : (0, i.mMO)(async () => {
+    })) : (0, l.mMO)(async () => {
         let {
             default: e
         } = await Promise.all([n.e("12206"), n.e("90406")]).then(n.bind(n, 661925));
         return t => {
             let {
                 onClose: n,
-                ...l
+                ...i
             } = t;
             return (0, a.jsx)(e, {
-                ...l,
+                ...i,
                 onClose: () => {
                     n(), N?.(!1)
                 }
@@ -102,8 +102,8 @@ let A = e => {
         loadId: t,
         skuId: n,
         analyticsLocations: a,
-        onStepChange: l,
-        modalKey: i,
+        onStepChange: i,
+        modalKey: l,
         isGift: r = !1,
         giftMessage: s,
         giftingOrigin: c,
@@ -126,10 +126,10 @@ let A = e => {
         onClose: u,
         onComplete: h,
         flowSpecificOptions: {
-            onStepChange: l
+            onStepChange: i
         },
         openModalOptions: {
-            modalKey: i,
+            modalKey: l,
             onCloseCallback: m,
             onCloseRequest: x
         }

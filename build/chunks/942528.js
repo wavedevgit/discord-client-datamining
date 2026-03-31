@@ -3,9 +3,9 @@ n.d(t, {
     A: () => v
 });
 var a = n(627968),
-    l = n(64700),
-    i = n(503698),
-    r = n.n(i),
+    i = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(311907),
     c = n(397927),
     o = n(734057),
@@ -22,16 +22,16 @@ let v = e => {
     let {
         entry: t,
         onClose: n,
-        onReaction: i,
+        onReaction: l,
         onRequestOpen: v,
         disableActivityProfileLinks: A,
         customCTA: j,
         popoutClassname: C,
         popoutPosition: E = "right"
-    } = e, I = l.useRef(null), N = (0, s.bG)([d.A, o.A], () => o.A.getChannel(d.A.getChannelId())), b = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
+    } = e, I = i.useRef(null), N = (0, s.bG)([d.A, o.A], () => o.A.getChannel(d.A.getChannelId())), b = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
         nick: S,
         avatar: T
-    } = l.useMemo(() => {
+    } = i.useMemo(() => {
         let e = b?.getAvatarURL(N?.guild_id, 48, !1);
         return {
             nick: m.Ay.getName(N?.guild_id, N?.id, b),
@@ -43,19 +43,19 @@ let v = e => {
         position: E,
         renderPopout: e => {
             let {
-                closePopout: l,
+                closePopout: i,
                 updatePosition: r
             } = e;
             return (0, a.jsx)("div", {
                 className: C,
                 children: (0, a.jsx)(x.Oo, {
                     entry: t,
-                    closePopout: l,
+                    closePopout: i,
                     updatePopoutPosition: r,
                     onReaction: () => {
-                        i?.(), n(), l()
+                        l?.(), n(), i()
                     },
-                    onUserPopoutClosed: () => l(),
+                    onUserPopoutClosed: () => i(),
                     disableGameProfileLinks: !0,
                     disableActivityProfileLinks: A
                 })

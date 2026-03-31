@@ -2,7 +2,7 @@
 n.d(t, {
     Ay: () => L,
     jO: () => O,
-    nO: () => y
+    nO: () => b
 });
 var i = n(627968),
     l = n(64700),
@@ -29,17 +29,17 @@ var i = n(627968),
     x = n(517061),
     v = n(970890);
 
-function y(e) {
+function b(e) {
     let {
         guild: t,
         onClick: a,
         onView: s
-    } = e, [_, m] = l.useState(!1), [I, y] = l.useState(!1), [b, O] = l.useState(!1), L = l.useRef(null), R = l.useCallback(async () => {
-        y(!0);
+    } = e, [_, m] = l.useState(!1), [I, b] = l.useState(!1), [y, O] = l.useState(!1), L = l.useRef(null), R = l.useCallback(async () => {
+        b(!0);
         try {
             await a(t.id)
         } finally {
-            y(!1)
+            b(!1)
         }
     }, [t.id, a]), P = l.useCallback(e => {
         e && !_ && (m(!0), s?.(t.id))
@@ -96,7 +96,7 @@ function y(e) {
                     className: N.wx,
                     children: [(0, i.jsx)("div", {
                         className: r()(N.vK, {
-                            [N.Kc]: b
+                            [N.Kc]: y
                         }),
                         children: (0, i.jsx)("img", {
                             src: w,
@@ -180,13 +180,13 @@ function y(e) {
     })
 }
 
-function b(e) {
+function y(e) {
     let {
         guildId: t,
         onClick: n,
         onView: l
     } = e, a = (0, s.bG)([I.A], () => I.A.getGuild(t));
-    return null == a ? null : (0, i.jsx)(y, {
+    return null == a ? null : (0, i.jsx)(b, {
         guild: a,
         onClick: n,
         onView: l
@@ -209,7 +209,7 @@ function O(e) {
         state: n,
         cleanUp: l,
         animate: s.current,
-        children: (0, i.jsx)(b, {
+        children: (0, i.jsx)(y, {
             guildId: t.guildId,
             onClick: a,
             onView: r
@@ -227,4 +227,4 @@ function O(e) {
         })
     })
 }
-let L = l.memo(b)
+let L = l.memo(y)
