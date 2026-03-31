@@ -17,9 +17,9 @@ var r = n(627968),
     f = n(152056),
     m = n(780964),
     p = n(162396),
-    v = n(960545),
-    y = n(841329),
-    b = n(12901),
+    b = n(960545),
+    v = n(841329),
+    y = n(12901),
     g = n(921854),
     x = n(985018),
     E = n(879797);
@@ -40,10 +40,10 @@ function N(e) {
     }, []), [E, N] = i.useState(!1);
     return (i.useLayoutEffect(() => {
         let e = () => {
-            null == h.default.getCurrentUser() && (N(!0), (0, b.default)())
+            null == h.default.getCurrentUser() && (N(!0), (0, y.default)())
         };
         return _.default.addChangeListener(e), () => {
-            _.default.removeChangeListener(e), v.A.resetState(), c.A.resetState(), s.A.close()
+            _.default.removeChangeListener(e), b.A.resetState(), c.A.resetState(), s.A.close()
         }
     }, []), E) ? null : (0, r.jsx)(d.A, {
         partialRoot: g.D,
@@ -51,15 +51,15 @@ function N(e) {
         emptyState: I,
         sidebarFooter: p.A,
         onViewChange: e => {
-            S.has(e) || (0, y._)(e);
+            S.has(e) || (0, v._)(e);
             let t = A.get(e);
             null != t && (0, o.x)({
                 type: a.ImpressionTypes.PANE,
                 name: t,
                 properties: {
-                    source: v.A.getField("source")
+                    source: b.A.getField("source")
                 }
-            }), v.A.setState({
+            }), b.A.setState({
                 source: void 0
             })
         },

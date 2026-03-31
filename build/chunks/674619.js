@@ -17,8 +17,8 @@ var l = t(627968),
     m = t(117945),
     E = t(594832),
     _ = t(97352),
-    x = t(166403),
-    S = t(937008),
+    S = t(166403),
+    x = t(937008),
     P = t(156312),
     T = t(166532),
     I = t(491057),
@@ -51,7 +51,7 @@ function L(e) {
         initialPlanId: c,
         subscriptionTier: p,
         onClose: E,
-        trialId: x,
+        trialId: S,
         trialFooterMessageOverride: I,
         reviewWarningMessage: A,
         openInvoiceId: f,
@@ -80,7 +80,7 @@ function L(e) {
     } = (0, P.P5)(), {
         isGift: K,
         giftMessage: V
-    } = (0, S.Pv)(), z = (0, m.T)(K, B), q = W === h.h.PURCHASING;
+    } = (0, x.Pv)(), z = (0, m.T)(K, B), q = W === h.h.PURCHASING;
     return (0, l.jsx)(C.A, {
         isConfirmationStep: H === T.pn.CONFIRM && null == L && null == R,
         isEligibleForWowMoment: z,
@@ -97,7 +97,7 @@ function L(e) {
             giftMessage: V,
             subscriptionTier: p,
             onClose: E,
-            trialId: x,
+            trialId: S,
             isGift: K,
             trialFooterMessageOverride: I,
             reviewWarningMessage: A,
@@ -132,7 +132,7 @@ function F(e) {
     } = (0, P.P5)(), {
         isGift: o,
         claimableRewards: u
-    } = (0, S.Pv)(), d = (0, k.A)({
+    } = (0, x.Pv)(), d = (0, k.A)({
         isGift: o,
         skuId: s,
         referralTrialOfferId: i
@@ -243,7 +243,7 @@ let H = function() {
     B = H();
 
 function W(e) {
-    let n = (0, r.bG)([x.A], () => x.A.getPremiumTypeSubscription()),
+    let n = (0, r.bG)([S.A], () => S.A.getPremiumTypeSubscription()),
         t = (0, c.cg)() ? w.gD.PREMIUM_MONTH_TIER_2 : void 0,
         {
             analyticsLocations: i
@@ -281,7 +281,7 @@ function W(e) {
             unifiedCheckoutFlow: d.C.PREMIUM_CHECKOUT,
             children: (0, l.jsx)(I.Qt, {
                 confirmationFooter: s,
-                children: (0, l.jsx)(S.dX, {
+                children: (0, l.jsx)(x.dX, {
                     isGift: h,
                     giftRecipient: null == _ ? void 0 : _,
                     giftMessage: m,

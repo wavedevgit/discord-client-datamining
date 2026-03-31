@@ -26,8 +26,8 @@ function v(e) {
             analyticsLocations: f,
             analyticsObject: v,
             isGift: j = !1,
-            giftMessage: C,
-            giftingOrigin: E,
+            giftMessage: E,
+            giftingOrigin: C,
             giftRecipient: I,
             onClose: N,
             onComplete: b
@@ -49,8 +49,8 @@ function v(e) {
         },
         modalKey: k,
         isGift: j,
-        giftMessage: C,
-        giftingOrigin: E,
+        giftMessage: E,
+        giftingOrigin: C,
         giftRecipient: I,
         onClose: N,
         onCloseCallback: () => {

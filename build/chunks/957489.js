@@ -1,6 +1,6 @@
 /** chunk id: 957489 params = (module,exports,require) **/
 t.d(n, {
-    F: () => S
+    F: () => x
 });
 var l = t(627968),
     i = t(158954),
@@ -15,9 +15,9 @@ var l = t(627968),
     m = t(169801),
     E = t(788868),
     _ = t(985018),
-    x = t(338042);
+    S = t(338042);
 
-function S(e) {
+function x(e) {
     let {
         handleStepChange: n,
         referralTrialOfferId: t
@@ -26,8 +26,8 @@ function S(e) {
         activeSubscription: s,
         startedPaymentFlowWithPaymentSourcesRef: a,
         setSelectedPlanId: _,
-        priceOptions: x,
-        defaultPlanId: S,
+        priceOptions: S,
+        defaultPlanId: x,
         hasPaymentSources: T
     } = (0, d.P5)(), {
         isGift: I,
@@ -48,15 +48,15 @@ function S(e) {
             } = e;
             l(t);
             let _ = c.pn.PLAN_SELECT,
-                x = (0, o.aZ)(n);
-            x !== E.pe.TIER_1 && x !== E.pe.TIER_2 || t !== E.pe.TIER_0 || r || (_ = c.pn.WHAT_YOU_LOSE);
-            let S = (0, m.t)({
+                S = (0, o.aZ)(n);
+            S !== E.pe.TIER_1 && S !== E.pe.TIER_2 || t !== E.pe.TIER_0 || r || (_ = c.pn.WHAT_YOU_LOSE);
+            let x = (0, m.t)({
                     userTrialOffer: s,
                     isGift: r,
                     skuId: t
                 }),
                 P = (0, p.vT)({
-                    isTrial: S,
+                    isTrial: x,
                     isGift: r,
                     selectedSkuId: t,
                     startedPaymentFlowWithPaymentSources: u
@@ -75,7 +75,7 @@ function S(e) {
             userTrialOffer: A,
             startedPaymentFlowWithPaymentSources: a.current,
             setSelectedPlanId: _,
-            defaultPlanId: S
+            defaultPlanId: x
         }),
         onSelectPremiumGroup: () => (function(e) {
             let {
@@ -96,7 +96,7 @@ function S(e) {
             setSelectedSkuId: i
         }),
         isGift: I,
-        priceOptions: x,
+        priceOptions: S,
         showPromotionalGiftBanner: g
     })
 }
@@ -117,7 +117,7 @@ function P(e) {
             title: _.intl.string(_.t["r+SebU"])
         }), c ? (0, l.jsx)(i.cwr, {
             children: (0, l.jsx)("div", {
-                className: x.eE,
+                className: S.eE,
                 children: (0, l.jsx)(a.yS, {
                     onSelectSku: e => n((0, o.mH)(e)),
                     onSelectPremiumGroup: d,
@@ -127,7 +127,7 @@ function P(e) {
             })
         }) : (0, l.jsx)(i.cwr, {
             children: (0, l.jsx)("div", {
-                className: x.a2,
+                className: S.a2,
                 children: (0, l.jsx)(a.Ay, {
                     onSelectSku: e => n((0, o.mH)(e)),
                     isGift: t,

@@ -1,6 +1,6 @@
 /** chunk id: 94836 params = (module,exports,require) **/
 n.d(t, {
-    A: () => C,
+    A: () => E,
     a: () => N
 });
 var a = n(627968),
@@ -23,7 +23,7 @@ var a = n(627968),
     A = n(426401),
     j = n(791129);
 
-function C(e) {
+function E(e) {
     let {
         detectedGame: t,
         trackAction: n
@@ -105,7 +105,7 @@ function C(e) {
         })]
     })
 }
-let E = i.memo(function(e) {
+let C = i.memo(function(e) {
         let {
             item: t,
             index: n,
@@ -182,7 +182,7 @@ function N(e) {
     let {
         detectedGame: t,
         trackAction: n
-    } = e, [l, r] = i.useState(0), [c, m] = i.useState(t.artwork), [h, _] = i.useState(t.screenshots), v = i.useRef(null), A = i.useRef(null), C = (0, s.bG)([d.A], () => d.A.useReducedMotion);
+    } = e, [l, r] = i.useState(0), [c, m] = i.useState(t.artwork), [h, _] = i.useState(t.screenshots), v = i.useRef(null), A = i.useRef(null), E = (0, s.bG)([d.A], () => d.A.useReducedMotion);
     (c !== t.artwork || h !== t.screenshots) && (m(t.artwork), _(t.screenshots), r(0));
     let N = i.useMemo(() => {
             let e = (t.trailers ?? []).map(e => {
@@ -256,7 +256,7 @@ function N(e) {
             className: j.ND,
             children: (0, a.jsx)(I, {
                 item: S,
-                reducedMotion: C,
+                reducedMotion: E,
                 videoRef: v,
                 mediaPlayerRef: y,
                 onPlay: R,
@@ -276,7 +276,7 @@ function N(e) {
         }), (0, a.jsx)(u.A, {
             gap: "xs",
             iconButtonSize: "sm",
-            children: N.map((e, n) => (0, a.jsx)(E, {
+            children: N.map((e, n) => (0, a.jsx)(C, {
                 item: e,
                 index: n,
                 isPlaying: k,

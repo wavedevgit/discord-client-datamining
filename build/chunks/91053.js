@@ -25,7 +25,7 @@ function _(e) {
         planOptions: c,
         shouldRenderUpdatedPaymentModal: m = !1,
         isTrial: _,
-        isNextDisabled: S = !1
+        isNextDisabled: x = !1
     } = e, {
         paymentSources: P,
         selectedPlan: T
@@ -39,7 +39,7 @@ function _(e) {
         text: A,
         onClick: f,
         disabled: j
-    } = x({
+    } = S({
         onStepChange: n,
         selectedPlanId: t = t ?? T?.id,
         isGift: I,
@@ -47,7 +47,7 @@ function _(e) {
         paymentSources: r,
         shouldRenderUpdatedPaymentModal: m,
         isTrial: _,
-        isNextDisabled: S
+        isNextDisabled: x
     }), R = i.useMemo(() => null != t && c.includes(t) ? [{
         variant: g,
         text: A,
@@ -65,7 +65,7 @@ function _(e) {
         actions: R
     })
 }
-let x = e => {
+let S = e => {
     let {
         onStepChange: n,
         selectedPlanId: t,
@@ -75,15 +75,15 @@ let x = e => {
         shouldRenderUpdatedPaymentModal: a,
         isTrial: p,
         isNextDisabled: _ = !1
-    } = e, x = (0, r.bG)([d.A], () => d.A.getPremiumTypeSubscription()), {
-        step: S,
+    } = e, S = (0, r.bG)([d.A], () => d.A.getPremiumTypeSubscription()), {
+        step: x,
         selectedPlan: P
     } = (0, o.P5)(), {
         hasEntitlements: T
-    } = (0, m.X)(t, l), I = null != x && null != x.paymentSourceId || Object.keys(s).length > 0 || T && !p;
+    } = (0, m.X)(t, l), I = null != S && null != S.paymentSourceId || Object.keys(s).length > 0 || T && !p;
     var h = a ? E.intl.string(E.t.PDTjLN) : E.intl.string(E.t.XqMe3N),
         g = u.pn.ADD_PAYMENT_STEPS;
-    return I && (g = u.pn.REVIEW), (0, c.px)(P, l, i) && S !== u.pn.SELECT_FREE_SKU && (g = u.pn.SELECT_FREE_SKU), {
+    return I && (g = u.pn.REVIEW), (0, c.px)(P, l, i) && x !== u.pn.SELECT_FREE_SKU && (g = u.pn.SELECT_FREE_SKU), {
         variant: "primary",
         text: h,
         onClick: () => n(g),

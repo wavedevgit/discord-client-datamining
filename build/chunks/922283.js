@@ -1,6 +1,6 @@
 /** chunk id: 922283 params = (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => E
 });
 var a = n(627968),
     i = n(64700),
@@ -83,11 +83,11 @@ function v(e) {
         topCriticRating: void 0,
         topCriticRatingCount: void 0,
         tier: void 0
-    }, m = o.tier, h = o.topCriticRating ?? -1, f = o.topCriticRatingCount ?? -1, p = (h <= 0 || f <= 0) && null == m, v = (0, x.A)(), C = i.useCallback(() => {
+    }, m = o.tier, h = o.topCriticRating ?? -1, f = o.topCriticRatingCount ?? -1, p = (h <= 0 || f <= 0) && null == m, v = (0, x.A)(), E = i.useCallback(() => {
         l(d.Ws.OpenCriticReviews), v(n)
     }, [v, l, n]);
     return (0, a.jsx)(s.DUT, {
-        onClick: C,
+        onClick: E,
         className: _.nf,
         role: "link",
         "aria-label": g.intl.string(g.t.aLNBAw),
@@ -159,7 +159,7 @@ function j(e) {
         })
     }, "open-critic-rating")
 }
-let C = function(e) {
+let E = function(e) {
     let {
         detectedGame: t,
         trackAction: n

@@ -26,8 +26,8 @@ let v = e => {
         onRequestOpen: v,
         disableActivityProfileLinks: A,
         customCTA: j,
-        popoutClassname: C,
-        popoutPosition: E = "right"
+        popoutClassname: E,
+        popoutPosition: C = "right"
     } = e, I = i.useRef(null), N = (0, s.bG)([d.A, o.A], () => o.A.getChannel(d.A.getChannelId())), b = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
         nick: S,
         avatar: T
@@ -40,14 +40,14 @@ let v = e => {
     }, [b, N]);
     return null == b ? null : (0, a.jsx)(c.YNO, {
         targetElementRef: I,
-        position: E,
+        position: C,
         renderPopout: e => {
             let {
                 closePopout: i,
                 updatePosition: r
             } = e;
             return (0, a.jsx)("div", {
-                className: C,
+                className: E,
                 children: (0, a.jsx)(x.Oo, {
                     entry: t,
                     closePopout: i,

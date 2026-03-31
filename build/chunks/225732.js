@@ -1,6 +1,6 @@
 /** chunk id: 225732 params = (module,exports,require) **/
 n.d(t, {
-    default: () => eE
+    default: () => eC
 });
 var a = n(627968),
     i = n(64700),
@@ -21,8 +21,8 @@ var a = n(627968),
     v = n(688810),
     A = n(139286),
     j = n(362490),
-    C = n(429913),
-    E = n(590703),
+    E = n(429913),
+    C = n(590703),
     I = n(708197),
     N = n(583846),
     b = n(885151),
@@ -35,8 +35,8 @@ var a = n(627968),
     R = n(240248),
     G = n(409626),
     M = n(880405),
-    w = n(422069),
-    P = n(476464),
+    P = n(422069),
+    w = n(476464),
     V = n(205184),
     D = n(939764),
     W = n(277089),
@@ -316,7 +316,7 @@ function ep(e) {
     let {
         applicationId: t,
         analyticsLocations: n
-    } = e, a = (0, C.h)(t), i = (0, _.A)({
+    } = e, a = (0, E.h)(t), i = (0, _.A)({
         application: a,
         analyticsLocations: n
     });
@@ -450,11 +450,11 @@ function ej(e) {
         trackExternalAction: d
     } = e, {
         clientThemesClassName: u
-    } = (0, E.Ay)(), m = (0, x.bG)([k.default], () => k.default.locale), {
+    } = (0, C.Ay)(), m = (0, x.bG)([k.default], () => k.default.locale), {
         analyticsLocations: h
-    } = (0, v.Ay)(p.A.GAME_PROFILE), _ = i.useMemo(() => (0, G.u9)(), []), A = (0, x.yK)([w.A], () => (w.A.getSimilarGames(t) ?? []).slice(0, 25)), [j, S] = i.useState(null), T = (0, V.s)(t), [L, y] = i.useState(null), O = (0, C.h)(t), {
+    } = (0, v.Ay)(p.A.GAME_PROFILE), _ = i.useMemo(() => (0, G.u9)(), []), A = (0, x.yK)([P.A], () => (P.A.getSimilarGames(t) ?? []).slice(0, 25)), [j, S] = i.useState(null), T = (0, V.s)(t), [L, y] = i.useState(null), O = (0, E.h)(t), {
         data: R,
-        refetch: P
+        refetch: w
     } = (0, b.k)(t), D = R?.supplementalData ?? null, W = D?.name ?? O?.name, U = (e, a) => {
         (0, G.Tn)({
             gameName: W ?? "",
@@ -475,9 +475,9 @@ function ej(e) {
             authorId: l,
             profileType: G.HV.FullProfile
         }), (0, I.He)()
-    }), (0, C.A)(A), i.useEffect(() => {
-        m.startsWith("en") || D?.summaryLocalized != null || P()
-    }, [t, D?.summaryLocalized, m, P]), i.useEffect(() => {
+    }), (0, E.A)(A), i.useEffect(() => {
+        m.startsWith("en") || D?.summaryLocalized != null || w()
+    }, [t, D?.summaryLocalized, m, w]), i.useEffect(() => {
         (async () => {
             if (0 === A.length) {
                 S(null);
@@ -556,7 +556,7 @@ function ej(e) {
     })
 }
 
-function eC(e) {
+function eE(e) {
     let {
         applicationId: t,
         source: n,
@@ -567,11 +567,11 @@ function eC(e) {
         trackExternalAction: u
     } = e, [m, h] = i.useState(!0), [_, A] = i.useState(null), {
         clientThemesClassName: S
-    } = (0, E.Ay)(), L = (0, x.bG)([k.default], () => k.default.locale), y = i.useMemo(() => (0, G.u9)(), []), {
+    } = (0, C.Ay)(), L = (0, x.bG)([k.default], () => k.default.locale), y = i.useMemo(() => (0, G.u9)(), []), {
         analyticsLocations: O
-    } = (0, v.Ay)(p.A.GAME_PROFILE), R = (0, C.h)(t), M = (0, V.s)(t), {
-        data: w
-    } = (0, b.k)(t), P = w?.supplementalData ?? null, F = P?.name ?? w?.name ?? R?.name ?? "", {
+    } = (0, v.Ay)(p.A.GAME_PROFILE), R = (0, E.h)(t), M = (0, V.s)(t), {
+        data: P
+    } = (0, b.k)(t), w = P?.supplementalData ?? null, F = w?.name ?? P?.name ?? R?.name ?? "", {
         hasAlreadyLinked: U,
         canStartAuthorization: Y,
         fetched: B,
@@ -580,7 +580,7 @@ function eC(e) {
     } = (0, j.RD)(R), {
         invite: X,
         isMember: Z
-    } = (0, W.A)(P, A), {
+    } = (0, W.A)(w, A), {
         socialLayerStorefrontRecommendationsData: $
     } = (0, D.V)(R ?? null), Q = (e, a) => {
         (0, G.Tn)({
@@ -647,7 +647,7 @@ function eC(e) {
         ea = i.useCallback(() => {
             c(), (0, T.closeUserProfileModal)()
         }, [c]);
-    return null == w || null == P || null == R ? null : (0, a.jsx)(v.f5, {
+    return null == P || null == w || null == R ? null : (0, a.jsx)(v.f5, {
         value: O,
         children: (0, a.jsx)(f.dWK, {
             transitionState: s,
@@ -661,7 +661,7 @@ function eC(e) {
                     children: (0, a.jsxs)(f.HOs, {
                         orientation: "auto",
                         children: [(0, a.jsx)(J.A, {
-                            game: w,
+                            game: P,
                             application: R,
                             onClose: c,
                             trackAction: Q
@@ -669,11 +669,11 @@ function eC(e) {
                             children: m ? (0, a.jsxs)("div", {
                                 className: eu.jC,
                                 children: [(0, a.jsx)(ef, {
-                                    game: w,
+                                    game: P,
                                     closeModal: ea,
                                     trackAction: Q
                                 }), (0, a.jsx)(eA, {
-                                    game: w,
+                                    game: P,
                                     application: R,
                                     appContext: o,
                                     source: n,
@@ -684,7 +684,7 @@ function eC(e) {
                             }) : (0, a.jsx)("div", {
                                 className: eu.b9,
                                 children: (0, a.jsx)(eg, {
-                                    game: w,
+                                    game: P,
                                     application: R,
                                     trackAction: Q,
                                     analyticsLocations: O
@@ -697,8 +697,8 @@ function eC(e) {
         })
     })
 }
-let eE = function(e) {
-    return (0, P._)("GameProfileModal") ? (0, a.jsx)(eC, {
+let eC = function(e) {
+    return (0, w._)("GameProfileModal") ? (0, a.jsx)(eE, {
         ...e
     }) : (0, a.jsx)(ej, {
         ...e

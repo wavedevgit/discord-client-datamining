@@ -28,7 +28,7 @@ let _ = function(e) {
         application: t,
         detectedGame: n,
         trackAction: _
-    } = e, p = i.useMemo(() => n.genres.map(r.du).join(", "), [n]), v = n.publishers.join(", "), A = n.developers.join(", "), j = n.firstReleaseDate, C = (0, o.A)(n), E = (0, c.Y)(n), I = !(0, s.uJ)(p), N = !(0, s.uJ)(v), b = !(0, s.uJ)(A), S = !(0, s.uJ)(j), T = C.length > 0, k = E.length > 0 && !E.every(e => (0, s.uJ)(e.url));
+    } = e, p = i.useMemo(() => n.genres.map(r.du).join(", "), [n]), v = n.publishers.join(", "), A = n.developers.join(", "), j = n.firstReleaseDate, E = (0, o.A)(n), C = (0, c.Y)(n), I = !(0, s.uJ)(p), N = !(0, s.uJ)(v), b = !(0, s.uJ)(A), S = !(0, s.uJ)(j), T = E.length > 0, k = C.length > 0 && !C.every(e => (0, s.uJ)(e.url));
     return (0, a.jsxs)("div", {
         className: f.uW,
         children: [(0, a.jsx)("div", {
@@ -97,10 +97,10 @@ let _ = function(e) {
                 children: [(0, a.jsx)(l.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
-                    children: C.length > 1 ? h.intl.string(h.t.PNqxNe) : h.intl.string(h.t["UxAag+"])
+                    children: E.length > 1 ? h.intl.string(h.t.PNqxNe) : h.intl.string(h.t["UxAag+"])
                 }), T ? (0, a.jsx)("div", {
                     className: f.Gu,
-                    children: C.map(e => (0, a.jsx)(m.s, {
+                    children: E.map(e => (0, a.jsx)(m.s, {
                         platform: e
                     }, e))
                 }) : (0, a.jsx)(g, {})]
@@ -112,7 +112,7 @@ let _ = function(e) {
                     children: h.intl.string(h.t["Oj3o1/"])
                 }), k ? (0, a.jsx)("div", {
                     className: f.Gu,
-                    children: E.map(e => (0, a.jsx)(u.K, {
+                    children: C.map(e => (0, a.jsx)(u.K, {
                         website: e,
                         trackAction: _
                     }, e.url))

@@ -31,7 +31,7 @@ function h(e) {
         })
     }, [t, _, n]);
     if (!h || null == p || !g || f || null == A) return null;
-    let C = v?.guild != null ? o.Ay.getGuildSplashURL({
+    let E = v?.guild != null ? o.Ay.getGuildSplashURL({
         id: v.guild.id,
         splash: v.guild.splash
     }) : null;
@@ -44,9 +44,9 @@ function h(e) {
             children: m.intl.string(m.t["VDAhr+"])
         }), (0, a.jsxs)("div", {
             className: x.kL,
-            children: [null != C ? (0, a.jsx)("img", {
+            children: [null != E ? (0, a.jsx)("img", {
                 className: x.ll,
-                src: C,
+                src: E,
                 alt: ""
             }) : (0, a.jsx)("div", {
                 className: x.sB,

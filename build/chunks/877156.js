@@ -15,8 +15,8 @@ var l = t(627968),
     m = t(512213),
     E = t(898461),
     _ = t(837015),
-    x = t(61750),
-    S = t(287809),
+    S = t(61750),
+    x = t(287809),
     P = t(482132),
     T = t(758836),
     I = t(985018),
@@ -26,7 +26,7 @@ function g(e) {
     let {
         rewardSkuId: n,
         onClose: t
-    } = e, g = (0, r.bG)([S.default], () => S.default.getCurrentUser()), A = (0, r.bG)([o.A], () => o.A.useReducedMotion), {
+    } = e, g = (0, r.bG)([x.default], () => x.default.getCurrentUser()), A = (0, r.bG)([o.A], () => o.A.useReducedMotion), {
         analyticsLocations: f
     } = (0, u.Ay)(), j = a._3J.SIZE_32, {
         product: R,
@@ -88,7 +88,7 @@ function g(e) {
                     text: I.intl.string(I.t.kMYVwv),
                     loading: C,
                     onClick: () => {
-                        null != R && (t(), (0, x.A)({
+                        null != R && (t(), (0, S.A)({
                             product: R,
                             shouldShowPromotionalExperience: !0,
                             analyticsLocations: f,

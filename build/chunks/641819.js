@@ -15,8 +15,8 @@ var l = t(627968),
     m = t(91053),
     E = t(287809),
     _ = t(937008),
-    x = t(156312),
-    S = t(166532),
+    S = t(156312),
+    x = t(166532),
     P = t(482132),
     T = t(985018),
     I = t(706360);
@@ -28,7 +28,7 @@ function h(e) {
         selectedPlan: t,
         selectedSkuId: r,
         step: h
-    } = (0, x.P5)(), {
+    } = (0, S.P5)(), {
         setSelectedGiftingPromotionReward: g,
         selectedGiftingPromotionReward: A,
         claimableRewards: f
@@ -58,7 +58,7 @@ function h(e) {
         w = (0, l.jsx)(P.UX, {
             children: (0, l.jsx)(m.Z, {
                 onStepChange: n,
-                onBackClick: () => n(S.pn.PLAN_SELECT),
+                onBackClick: () => n(x.pn.PLAN_SELECT),
                 shouldRenderUpdatedPaymentModal: !0,
                 showBackButton: !0,
                 planOptions: [t.id],

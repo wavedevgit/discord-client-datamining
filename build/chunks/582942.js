@@ -1,6 +1,6 @@
 /** chunk id: 582942 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => C
 });
 var a = n(627968);
 n(64700);
@@ -22,7 +22,7 @@ var i = n(503698),
     v = n(985018),
     A = n(282063),
     j = n(379093);
-let C = e => {
+let E = e => {
     let {
         game: t,
         onClose: n,
@@ -50,7 +50,7 @@ let C = e => {
     })
 };
 
-function E(e) {
+function C(e) {
     let {
         applicationId: t,
         onClose: n,
@@ -79,7 +79,7 @@ function E(e) {
             children: v.intl.string(v.t["6rLyQB"])
         }), (0, a.jsx)("div", {
             className: j.D$,
-            children: h.map(e => null != e.supplementalData ? (0, a.jsx)(C, {
+            children: h.map(e => null != e.supplementalData ? (0, a.jsx)(E, {
                 game: e.supplementalData,
                 onClose: n,
                 trackClick: i

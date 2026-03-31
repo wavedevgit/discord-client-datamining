@@ -1,8 +1,8 @@
 /** chunk id: 561769 params = (module,exports,require) **/
 n.d(t, {
     AW: () => j,
-    Hi: () => C,
-    UU: () => E,
+    Hi: () => E,
+    UU: () => C,
     Vm: () => N,
     gZ: () => A,
     nY: () => v,
@@ -36,8 +36,8 @@ function A() {
     return l.useContext(p).prioritizedCurrency
 }
 var j = ((a = {}).NONE = "none", a.NEW = "new", a.ORBS_EXCLUSIVE = "orbs_exclusive", a.LIMITED_TIME = "limited_time", a.NITRO_EXCLUSIVE = "nitro_exclusive", a),
-    C = ((i = {}).FIAT = "fiat", i.ORBS = "orbs", i);
-let E = (e, t, n) => a => {
+    E = ((i = {}).FIAT = "fiat", i.ORBS = "orbs", i);
+let C = (e, t, n) => a => {
         d.default.track(_.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
             collectibles_shop_session_id: n?.sessionId,
             sku_id: e.skuId,

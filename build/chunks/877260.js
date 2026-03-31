@@ -17,9 +17,9 @@ var r = n(627968),
     f = n(894858),
     m = n(397274),
     p = n(189857),
-    v = n(188180),
-    y = n(133457),
-    b = n(985018),
+    b = n(188180),
+    v = n(133457),
+    y = n(985018),
     g = n(107567);
 
 function x(e) {
@@ -27,12 +27,12 @@ function x(e) {
         root: t,
         onClose: n,
         footer: a,
-        emptyState: v,
+        emptyState: b,
         searchBar: x
     } = e, S = f.A.useField("showNavigationMobile"), A = i.useRef(null), [N] = i.useState(t), {
         accessibleDirectory: C
     } = (0, h._)(), I = i.useMemo(() => (0, p.Z)(N, C), [N, C]), [j] = (0, d.kn)(I.allDismissibleContents);
-    (0, y.B)({
+    (0, v.B)({
         visibleContent: j,
         dismissibleBadges: I,
         accessibleDirectory: C
@@ -60,7 +60,7 @@ function x(e) {
                         onClick: n,
                         variant: "icon-only",
                         size: "sm",
-                        "aria-label": b.intl.string(b.t.cpT0Cq)
+                        "aria-label": y.intl.string(y.t.cpT0Cq)
                     })
                 }), (0, r.jsx)("div", {
                     children: T.map(e => (0, r.jsx)(E, {
@@ -69,7 +69,7 @@ function x(e) {
                         dismissibleBadges: I,
                         hoisted: !0
                     }, e.key))
-                }), null != x && (0, r.jsx)(x, {}), null != v && 0 === R.length && (0, r.jsx)(v, {})]
+                }), null != x && (0, r.jsx)(x, {}), null != b && 0 === R.length && (0, r.jsx)(b, {})]
             }), (0, r.jsx)(s.hD, {
                 navigator: w,
                 children: (0, r.jsx)(s.PR, {
@@ -119,7 +119,7 @@ function E(e) {
                 color: "text-muted",
                 children: l
             })
-        }), t.layout.map(e => (0, r.jsx)(v.X, {
+        }), t.layout.map(e => (0, r.jsx)(b.X, {
             node: e,
             visibleContent: n,
             dismissibleBadges: i,

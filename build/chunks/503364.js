@@ -107,15 +107,15 @@ function m(e) {
                     children: (0, a.jsx)(r.K0, {
                         icon: r.jNK,
                         variant: "overlay-secondary",
-                        color: "currentColor",
+                        size: "sm",
                         "aria-label": d.intl.string(d.t["UKOtz+"])
                     })
                 })
             })
         }), (0, a.jsx)(r.K0, {
-            icon: r.d$L,
+            icon: r.PGe,
             variant: "overlay-secondary",
-            color: "currentColor",
+            size: "sm",
             onClick: n,
             "aria-label": d.intl.string(d.t.cpT0Cq)
         })]

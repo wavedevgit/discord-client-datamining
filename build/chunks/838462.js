@@ -15,8 +15,8 @@ var l = t(627968),
     m = t(841702),
     E = t(367727),
     _ = t(810498),
-    x = t(173834),
-    S = t(412260),
+    S = t(173834),
+    x = t(412260),
     P = t(380083),
     T = t(954571),
     I = t(203982),
@@ -70,8 +70,8 @@ function v(e) {
         el = (0, _.px)(H, Y, ee),
         ei = (0, _.Mq)(H),
         er = (0, m.Mv)(en, !1),
-        es = (0, u.bG)([S.A], () => {
-            let e = S.A.getMarketingComponentByType(o.C.GIFT_REMINDER_NAGBAR);
+        es = (0, u.bG)([x.A], () => {
+            let e = x.A.getMarketingComponentByType(o.C.GIFT_REMINDER_NAGBAR);
             return null == e || "giftReminderNagbar" !== e.properties.properties.oneofKind ? null : e.properties.properties.giftReminderNagbar
         }),
         ea = (0, M.g)(L, F),
@@ -125,7 +125,7 @@ function v(e) {
             onSubscriptionConfirmation: b
         })
     }, [$, Y, Z, X, Q, J, b]), i.useEffect(() => {
-        el && null != es && (0, E.$l)(d.M.GIFTING_PROMOTION_REMINDER, (0, x.p)(), {
+        el && null != es && (0, E.$l)(d.M.GIFTING_PROMOTION_REMINDER, (0, S.p)(), {
             dismissAction: O.i.INDIRECT_ACTION
         })
     }, [es, el]);

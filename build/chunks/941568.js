@@ -1,6 +1,6 @@
 /** chunk id: 941568 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => C
 }), n(323874), n(14289), n(35956);
 var a = n(627968),
     i = n(64700),
@@ -30,7 +30,7 @@ function j(e, t) {
     })
 }
 
-function C(e) {
+function E(e) {
     let {
         variant: t,
         message: n,
@@ -86,7 +86,7 @@ function C(e) {
     })
 }
 
-function E(e) {
+function C(e) {
     let {
         gameId: t,
         trackAction: n
@@ -118,15 +118,15 @@ function E(e) {
         }))
     }, [n, s, r, d, m, l]);
     if (null == m || 0 === c.length) return null;
-    let E = 2 !== c.length,
-        I = E ? c[0] : null,
-        N = E ? c.slice(1) : c;
+    let C = 2 !== c.length,
+        I = C ? c[0] : null,
+        N = C ? c.slice(1) : c;
     return (0, a.jsx)(_.A, {
         title: p.intl.string(p.t.B0BV3Y),
         onClickViewAll: A,
         children: (0, a.jsxs)("div", {
             className: v.f3,
-            children: [null != I && (0, a.jsx)(C, {
+            children: [null != I && (0, a.jsx)(E, {
                 variant: "main",
                 message: I,
                 channelId: m,
@@ -134,7 +134,7 @@ function E(e) {
             }), N.length > 0 && (0, a.jsx)(u.A, {
                 gap: "sm",
                 className: v.jG,
-                children: N.map(e => (0, a.jsx)(C, {
+                children: N.map(e => (0, a.jsx)(E, {
                     variant: "small",
                     message: e,
                     channelId: m,

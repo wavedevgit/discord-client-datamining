@@ -23,14 +23,14 @@ function p(e) {
     let {
         detectedGame: t,
         trackAction: n
-    } = e, [l, x] = i.useState(t?.summaryLocalized != null), [p, v] = i.useState(!0), [A, j] = i.useState(!1), C = i.useRef(null), {
-        width: E,
+    } = e, [l, x] = i.useState(t?.summaryLocalized != null), [p, v] = i.useState(!0), [A, j] = i.useState(!1), E = i.useRef(null), {
+        width: C,
         height: I
     } = (0, u.A)();
     return (i.useEffect(() => {
-        let e = C.current;
+        let e = E.current;
         null != e && j(e.scrollHeight - e.clientHeight > 1 || !p)
-    }, [C, E, I, p]), null == t.summary) ? null : (0, a.jsxs)("div", {
+    }, [E, C, I, p]), null == t.summary) ? null : (0, a.jsxs)("div", {
         className: r()(g.fi, g.mX),
         children: [null != t.summaryLocalized && (0, a.jsxs)("div", {
             className: r()(g.nM, g.Lc),
@@ -47,7 +47,7 @@ function p(e) {
                 })
             })]
         }), (0, a.jsx)(c.EYj, {
-            ref: C,
+            ref: E,
             lineClamp: p ? 8 : void 0,
             variant: "text-sm/normal",
             children: l ? t.summaryLocalized : t.summary
@@ -85,12 +85,12 @@ function v(e) {
         let t = parseInt(window.getComputedStyle(e).lineHeight, 10);
         isNaN(t) || j(Math.floor(e.offsetHeight / t))
     }, [h, o, j]);
-    let C = i.useCallback(() => {
+    let E = i.useCallback(() => {
         let e = !l;
         n(e ? m.Ws.ShowMore : m.Ws.ShowLess), s(e)
     }, [l, n]);
     if (null == t.summary) return null;
-    let E = l ? f.intl.string(f.t["6MwJo/"]) : f.intl.string(f.t.lBeKY2);
+    let C = l ? f.intl.string(f.t["6MwJo/"]) : f.intl.string(f.t.lBeKY2);
     return (0, a.jsxs)("div", {
         className: r()(g.fi, g.mX),
         children: [(0, a.jsx)(c.EYj, {
@@ -99,8 +99,8 @@ function v(e) {
             variant: "text-md/medium",
             children: t.summary
         }), o && (0, a.jsx)(c.QWc, {
-            onClick: C,
-            text: E
+            onClick: E,
+            text: C
         })]
     })
 }

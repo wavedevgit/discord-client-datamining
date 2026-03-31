@@ -23,14 +23,14 @@ function E(e) {
         activeSubscription: i,
         selectedSkuId: E,
         setSelectedPlanId: _,
-        startedPaymentFlowWithPaymentSourcesRef: x
+        startedPaymentFlowWithPaymentSourcesRef: S
     } = (0, d.P5)(), {
-        isGift: S
+        isGift: x
     } = (0, u.Pv)(), P = null != i ? (0, o.EL)(i) : null, T = null != P ? (0, o.RH)(P.planId) : null, I = null != P ? (0, o.m6)(P.planId) : null, h = (0, p.vT)({
         isTrial: !1,
-        isGift: S,
+        isGift: x,
         selectedSkuId: E,
-        startedPaymentFlowWithPaymentSources: x.current
+        startedPaymentFlowWithPaymentSources: S.current
     });
     return r()(null != I, "Expected premium type"), (0, l.jsx)(a.A, {
         premiumType: I,
