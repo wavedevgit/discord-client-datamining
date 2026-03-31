@@ -125,7 +125,7 @@ let A = {
             effect: t
         } = e, {
             upsertConfig: n
-        } = (0, g.wu)(), s = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [d, j] = i.useState(!0), y = i.useRef({}), [S, E] = i.useState(!1), [N, I] = i.useState(!1), [k, O] = i.useState(8), [R, w] = i.useState([]), [D, P] = i.useState(A), M = i.useRef([]), [L, U] = i.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), G = i.useMemo(() => ({
+        } = (0, g.wu)(), s = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [d, j] = i.useState(!0), y = i.useRef({}), [S, E] = i.useState(!1), [N, I] = i.useState(!1), [O, k] = i.useState(8), [R, w] = i.useState([]), [D, P] = i.useState(A), M = i.useRef([]), [L, U] = i.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), G = i.useMemo(() => ({
             id: C,
             skuId: C,
             title: C,
@@ -278,16 +278,16 @@ let A = {
                         min: 4,
                         max: 24,
                         step: 2,
-                        value: k,
-                        onChange: e => O(+e.target.value)
+                        value: O,
+                        onChange: e => k(+e.target.value)
                     }), (0, a.jsxs)(c.Text, {
                         variant: "text-sm/normal",
-                        children: [k, "px"]
+                        children: [O, "px"]
                     })]
                 }), (0, a.jsxs)("div", {
                     className: l()(v.nz, v.VH),
                     style: {
-                        borderRadius: k
+                        borderRadius: O
                     },
                     children: [N ? (0, a.jsx)("div", {
                         className: v.jq,
@@ -318,7 +318,7 @@ let A = {
                     children: N && (0, a.jsxs)("div", {
                         className: l()(v.f5, v.VH),
                         style: {
-                            borderRadius: k
+                            borderRadius: O
                         },
                         children: [(0, a.jsx)(h.A, {
                             user: s,

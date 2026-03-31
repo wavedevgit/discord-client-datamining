@@ -1,24 +1,24 @@
 /** chunk id: 72817 params = (module,exports,require) **/
-a.d(t, {
+l.d(t, {
     K: () => i,
     m: () => n
 });
-var l = a(943357);
-let i = Object.entries(l.Wn).map(e => {
-        let [t, a] = e;
+var a = l(943357);
+let i = Object.entries(a.Wn).map(e => {
+        let [t, l] = e;
         return {
-            id: a.toString(),
+            id: l.toString(),
             label: t,
-            value: a
+            value: l
         }
     }).filter(function(e) {
         return "string" != typeof e.value
     }),
-    n = Object.entries(l.Fo).map(e => {
-        let [t, a] = e;
+    n = Object.entries(a.Fo).map(e => {
+        let [t, l] = e;
         return {
-            id: a,
+            id: l,
             label: t,
-            value: a
+            value: l
         }
     })

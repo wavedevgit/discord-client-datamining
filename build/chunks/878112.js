@@ -38,7 +38,7 @@ let v = e => {
             tile_type: i.R[t.type],
             tile_position: String(R?.tilePosition),
             cta_name: "gift button",
-            page_type: T || "home"
+            page_type: T ?? "home"
         }), (0, c.A)({
             skuId: (0, p.Y)({
                 product: t,

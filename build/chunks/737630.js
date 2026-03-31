@@ -70,7 +70,7 @@ let F = e => {
                 currentTab: G,
                 hasFilters: U
             } = (0, j.v)(),
-            V = r.useMemo(() => t === M.G2.HOME && G && U() ? G : t, [t, G, U]),
+            V = r.useMemo(() => t === M.G2.HOME && null != G && U() ? G : t, [t, G, U]),
             {
                 categories: K,
                 refreshCategories: W

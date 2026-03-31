@@ -52,7 +52,7 @@ function m(e) {
         location: {
             section: i,
             object: c.ZSU.LEARN_MORE,
-            objectType: d ? (0, o.k1)(d) : void 0
+            objectType: null != d ? (0, o.k1)(d) : void 0
         },
         guild_id: t.id,
         location_stack: n

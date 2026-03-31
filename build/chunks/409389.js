@@ -24,7 +24,7 @@ let g = [],
             [f, C] = (0, h.Y)(),
             T = l.useMemo(() => {
                 var e;
-                return e = f.get(E), ((0, o.uJ)(e) ? null : Object.values(_.kL).find(t => t === e) || null) ?? _.kL.SUGGESTED
+                return e = f.get(E), ((0, o.uJ)(e) ? null : Object.values(_.kL).find(t => t === e) ?? null) ?? _.kL.SUGGESTED
             }, [f]),
             N = l.useMemo(() => (function(e) {
                 if ((0, o.uJ)(e)) return null;

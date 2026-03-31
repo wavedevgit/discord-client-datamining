@@ -29,8 +29,8 @@ var a = n(627968),
     E = n(448362),
     N = n(71393),
     I = n(166403),
-    k = n(652215),
-    O = n(788868),
+    O = n(652215),
+    k = n(788868),
     R = n(19897);
 
 function w(e) {
@@ -46,16 +46,16 @@ function w(e) {
     }) : null
 }
 let D = function() {
-    let [e, t] = i.useState(O.pe.TIER_2), [n, v] = i.useState(null), b = (0, r.yK)([N.A], () => N.A.getGuildsArray()), [D] = (0, r.yK)([I.A], () => [I.A.getPremiumSubscription()]), P = b.map(e => ({
+    let [e, t] = i.useState(k.pe.TIER_2), [n, v] = i.useState(null), b = (0, r.yK)([N.A], () => N.A.getGuildsArray()), [D] = (0, r.yK)([I.A], () => [I.A.getPremiumSubscription()]), P = b.map(e => ({
         id: e.id,
         value: e,
         label: e.name
     })), [M, L] = i.useState(P.length > 0 ? P[0].value : null), [U, B] = i.useState(""), [G, F] = i.useState({
-        plan_id: O.gD.PREMIUM_MONTH_TIER_2,
+        plan_id: k.gD.PREMIUM_MONTH_TIER_2,
         gift: "true"
     }), V = "true" !== G.gift && null != D, [W, H] = i.useState(P.length > 0 ? P[0].value : null), {
         analyticsLocations: K
-    } = (0, x.Ay)(h.A.PAYMENT_FLOW_TEST_PAGE), [z, $] = i.useState(""), [q, Q] = i.useState(k.dJq), {
+    } = (0, x.Ay)(h.A.PAYMENT_FLOW_TEST_PAGE), [z, $] = i.useState(""), [q, Q] = i.useState(O.dJq), {
         balance: Y,
         isFetching: J,
         error: X
@@ -63,7 +63,7 @@ let D = function() {
         isSubmitting: Z,
         responseMessage: ee,
         redeemVirtualCurrency: et
-    } = (0, T.Q)(), [en, ea] = i.useState(k.dJq), [ei, es] = i.useState(""), [el, er] = i.useState(k.dJq), [eo, ed] = i.useState(k.dJq);
+    } = (0, T.Q)(), [en, ea] = i.useState(O.dJq), [ei, es] = i.useState(""), [el, er] = i.useState(O.dJq), [eo, ed] = i.useState(O.dJq);
     return (0, a.jsx)(x.f5, {
         value: K,
         children: (0, a.jsx)(c.IpV, {
@@ -80,15 +80,15 @@ let D = function() {
                         value: e,
                         options: [{
                             id: "tier_2",
-                            value: O.pe.TIER_2,
+                            value: k.pe.TIER_2,
                             label: "Nitro"
                         }, {
                             id: "tier_1",
-                            value: O.pe.TIER_1,
+                            value: k.pe.TIER_1,
                             label: "Nitro Classic"
                         }, {
                             id: "tier_0",
-                            value: O.pe.TIER_0,
+                            value: k.pe.TIER_0,
                             label: "Nitro Basic"
                         }, {
                             id: "none",
@@ -113,15 +113,15 @@ let D = function() {
                         value: n,
                         options: [{
                             id: "tier_2",
-                            value: O.pe.TIER_2,
+                            value: k.pe.TIER_2,
                             label: "Nitro"
                         }, {
                             id: "tier_1",
-                            value: O.pe.TIER_1,
+                            value: k.pe.TIER_1,
                             label: "Nitro Classic"
                         }, {
                             id: "tier_0",
-                            value: O.pe.TIER_0,
+                            value: k.pe.TIER_0,
                             label: "Nitro Basic"
                         }, {
                             id: "none",
@@ -178,7 +178,7 @@ let D = function() {
                                 text: "Open Link",
                                 disabled: U.length < 1,
                                 onClick: () => {
-                                    window.open(k.BVt.BILLING_PROMOTION_REDEMPTION(U))
+                                    window.open(O.BVt.BILLING_PROMOTION_REDEMPTION(U))
                                 }
                             })
                         })]
@@ -190,15 +190,15 @@ let D = function() {
                         value: G.plan_id,
                         options: [{
                             id: "tier_2",
-                            value: O.gD.PREMIUM_MONTH_TIER_2,
+                            value: k.gD.PREMIUM_MONTH_TIER_2,
                             label: "Nitro"
                         }, {
                             id: "tier_1",
-                            value: O.gD.PREMIUM_MONTH_TIER_1,
+                            value: k.gD.PREMIUM_MONTH_TIER_1,
                             label: "Nitro Classic"
                         }, {
                             id: "tier_0",
-                            value: O.gD.PREMIUM_MONTH_TIER_0,
+                            value: k.gD.PREMIUM_MONTH_TIER_0,
                             label: "Nitro Basic"
                         }],
                         onSelectionChange: e => {
@@ -238,7 +238,7 @@ let D = function() {
                         text: "Open Link",
                         disabled: V,
                         onClick: () => {
-                            window.open(k.BVt.BILLING_PREMIUM_SUBSCRIBE + "?" + s.stringify({
+                            window.open(O.BVt.BILLING_PREMIUM_SUBSCRIBE + "?" + s.stringify({
                                 ...G
                             }))
                         }
@@ -321,9 +321,9 @@ let D = function() {
                             openPremiumPaymentModal: () => !0,
                             analyticsLocations: [],
                             analyticsLocationObject: {
-                                page: k.liQ.IN_APP
+                                page: O.liQ.IN_APP
                             },
-                            context: k.BRT.APP
+                            context: O.BRT.APP
                         })
                     })]
                 }), (0, a.jsx)(c.cGx, {}), (0, a.jsx)(c.BJc, {

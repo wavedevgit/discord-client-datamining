@@ -29,8 +29,8 @@ var a = n(627968),
     E = n(405311),
     N = n(424994),
     I = n(519382),
-    k = n(793877);
-let O = [{
+    O = n(793877);
+let k = [{
     key: "type",
     cellClassName: l()(I.Hn, I.T$),
     render(e) {
@@ -120,7 +120,7 @@ function w() {
         U = (0, g.A)(L).filter(j.Vq),
         B = (0, u.bG)([A.A], () => A.A.getFakeGameToShow());
     return (0, a.jsx)("div", {
-        className: k.nd,
+        className: O.nd,
         children: (0, a.jsxs)(h.IpV, {
             className: I.Qs,
             children: [(0, a.jsxs)(h.BJc, {
@@ -129,7 +129,7 @@ function w() {
                     variant: "text-md/semibold",
                     children: "Inventory"
                 }), r.length > 0 && (0, a.jsx)(_.A, {
-                    columns: O,
+                    columns: k,
                     data: r
                 }), (0, a.jsx)(E.A, {}), (0, a.jsx)(h.Button, {
                     variant: "primary",

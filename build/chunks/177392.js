@@ -14,9 +14,9 @@ var i = n(627968),
 
 function h() {
     let e = (0, a.bG)([o.A], () => o.A.getError());
-    return e ? (0, i.jsx)(m, {
+    return null == e ? null : (0, i.jsx)(m, {
         error: e
-    }) : null
+    })
 }
 let m = e => {
     let {

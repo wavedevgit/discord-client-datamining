@@ -26,8 +26,8 @@ let A = s.forwardRef(function(e, t) {
             redGlow: f,
             onMouseEnter: S,
             onMouseLeave: h,
-            "aria-label": T,
-            "aria-checked": x,
+            "aria-label": x,
+            "aria-checked": T,
             role: _,
             plated: N
         } = e, g = "function" == typeof c ? (0, l.jsx)(c, {
@@ -39,7 +39,7 @@ let A = s.forwardRef(function(e, t) {
         }) : c;
         return (0, l.jsxs)(o.$n, {
             "data-migration-pending": !0,
-            "aria-label": T,
+            "aria-label": x,
             buttonRef: t,
             look: o.$n.Looks.BLANK,
             size: o.$n.Sizes.NONE,
@@ -61,7 +61,7 @@ let A = s.forwardRef(function(e, t) {
             onMouseLeave: h,
             onContextMenu: s,
             role: _,
-            "aria-checked": x,
+            "aria-checked": T,
             focusProps: {
                 offset: {
                     left: -1,

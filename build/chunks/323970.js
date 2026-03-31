@@ -95,7 +95,7 @@ let y = {
 function T() {
     let e = (0, l.A)(),
         t = (0, a.Mw)((0, i.Ay)());
-    if (!e) return null;
+    if (null == e) return null;
     let n = y[e],
         o = S[e],
         d = {

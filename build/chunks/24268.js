@@ -40,20 +40,20 @@ function b() {
             e ? E(b) : E(null)
         }, [b, E]),
         I = (0, r.bG)([h.A], () => null != h.A.testModeApplicationId),
-        k = i.useCallback(e => {
+        O = i.useCallback(e => {
             e ? (0, o.qfG)(e => (0, a.jsx)(m.A, {
                 ...e
             })) : d.cL()
         }, []),
-        O = (0, u.A)({
+        k = (0, u.A)({
             location: "DevToolsSlayerStorefrontPanel",
             applicationId: s,
             source: c.Ob.Embed,
             trackEntryPointImpression: !0
         }),
         R = i.useCallback(e => {
-            O?.(e)
-        }, [O]);
+            k?.(e)
+        }, [k]);
     return (0, a.jsx)("div", {
         className: l()(_.nd, f.n),
         children: (0, a.jsxs)("div", {
@@ -76,7 +76,7 @@ function b() {
             }), (0, a.jsx)(o.dOG, {
                 label: "Enable application test mode",
                 checked: I,
-                onChange: k
+                onChange: O
             }), (0, a.jsx)(o.Button, {
                 text: "Open Game Profile Modal",
                 onClick: R
