@@ -33,8 +33,8 @@ function b() {
             g(e), n && t(e)
         }, [n, t]),
         y = (0, x.i)(e => e.showSelfActivity),
-        T = (0, x.i)(e => e.setShowSelfActivity),
-        S = (0, x.i)(e => e.recommendationApplicationIds),
+        S = (0, x.i)(e => e.setShowSelfActivity),
+        T = (0, x.i)(e => e.recommendationApplicationIds),
         E = (0, x.i)(e => e.setRecommendationApplicationIds),
         N = i.useCallback(e => {
             e ? E(b) : E(null)
@@ -72,7 +72,7 @@ function b() {
             }), (0, a.jsx)(o.dOG, {
                 label: "Show own voice activity (bypass self check)",
                 checked: y,
-                onChange: T
+                onChange: S
             }), (0, a.jsx)(o.dOG, {
                 label: "Enable application test mode",
                 checked: I,
@@ -87,10 +87,10 @@ function b() {
                 label: "Recommendation application IDs",
                 value: b,
                 onChange: j,
-                disabled: null == S
+                disabled: null == T
             }), (0, a.jsx)(o.dOG, {
                 label: "Enable recommendation application IDs override",
-                checked: null != S,
+                checked: null != T,
                 onChange: N
             })]
         })

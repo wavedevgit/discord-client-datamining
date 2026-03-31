@@ -28,8 +28,8 @@ function y(e) {
     let {
         targetElementRef: t,
         onClose: n
-    } = e, [y, T] = i.useState(!1), {
-        trackUserProfileEditAction: S
+    } = e, [y, S] = i.useState(!1), {
+        trackUserProfileEditAction: T
     } = (0, h.NJ)(), E = (0, s.bG)([v.default], () => v.default.getId()), N = function() {
         let e, t, n = (0, s.bG)([v.default], () => v.default.getId()),
             a = (0, g.A)(n),
@@ -103,15 +103,15 @@ function y(e) {
                 actions: [o ? {
                     text: C.intl.string(C.t.VSLDly),
                     onClick: () => {
-                        T(!0), d().then(() => {
+                        S(!0), d().then(() => {
                             let e;
                             return e = new x.R({
                                 applicationId: r.application.id
-                            }), void((0, p.Y5)(e), S({
+                            }), void((0, p.Y5)(e), T({
                                 action: "WIDGET_ADDED",
                                 ...e.getProfileEditAnalyticsOptions()
                             }), (0, f.XA)(A.jM.WIDGET_ADDED))
-                        }).finally(() => T(!1))
+                        }).finally(() => S(!1))
                     },
                     loading: y
                 } : {
@@ -119,7 +119,7 @@ function y(e) {
                     onClick: () => {
                         r.authFlow.initiate({
                             onConfirm: () => {
-                                T(!0), d().finally(() => T(!1))
+                                S(!0), d().finally(() => S(!1))
                             },
                             analyticsLocations: I
                         })

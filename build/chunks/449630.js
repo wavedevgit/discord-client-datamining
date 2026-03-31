@@ -24,8 +24,8 @@ var a = n(627968),
     A = n(206835),
     C = n(183555),
     y = n(950191),
-    T = n(657331),
-    S = n(718019),
+    S = n(657331),
+    T = n(718019),
     E = n(31432),
     N = n(915614),
     I = n(223330),
@@ -97,8 +97,8 @@ function ea(e) {
         }),
         eC = (0, W.TW)(t),
         ey = i.useRef(null),
-        eT = i.useRef(null),
-        eS = i.useRef((0, H.A)(e => e.shouldRenderTenureLevelUp)),
+        eS = i.useRef(null),
+        eT = i.useRef((0, H.A)(e => e.shouldRenderTenureLevelUp)),
         eE = i.useMemo(() => (0, v.A)(), []),
         [eN, eI] = i.useState(!0);
     i.useEffect(() => {
@@ -107,7 +107,7 @@ function ea(e) {
         }, 500)
     }, []);
     let ek = e => {
-            n?.(), (0, T.openUserProfileModal)({
+            n?.(), (0, S.openUserProfileModal)({
                 customStatusPrompt: eE,
                 sourceAnalyticsLocations: eo,
                 ...ed,
@@ -168,7 +168,7 @@ function ea(e) {
                                 user: t,
                                 displayProfile: el,
                                 themeType: Z.d.POPOUT
-                            }), (0, a.jsx)(S.A, {
+                            }), (0, a.jsx)(T.A, {
                                 user: t,
                                 displayProfile: el,
                                 themeType: Z.d.POPOUT,
@@ -198,7 +198,7 @@ function ea(e) {
                                     themeType: Z.d.POPOUT,
                                     onClose: n,
                                     shouldOpenBadgeTooltip: null != ea ? e => e === ea : void 0,
-                                    shouldGlowTenureBadge: eS.current
+                                    shouldGlowTenureBadge: eT.current
                                 }),
                                 nicknameIcons: (0, a.jsx)(P.A, {
                                     user: t,
@@ -231,7 +231,7 @@ function ea(e) {
                                             label: ee.intl.string(ee.t.s5vZlQ),
                                             icon: c.R2l,
                                             onClick: ew,
-                                            ref: eT
+                                            ref: eS
                                         }), (0, a.jsx)($.N3, {
                                             action: "PRESS_SET_STATUS",
                                             label: (0, a.jsx)(q.A, {}),
@@ -315,12 +315,12 @@ function ea(e) {
                             })]
                         }), null != er && (0, a.jsx)(_.A, {
                             frame: er
-                        }), el?.profileEffect != null && !eS.current && (0, a.jsx)(p.A, {
+                        }), el?.profileEffect != null && !eT.current && (0, a.jsx)(p.A, {
                             skuId: el.profileEffect.skuId,
                             isHovering: eh
                         })]
                     }), eD && eP ? (0, a.jsx)(z.A, {
-                        targetElementRef: eT,
+                        targetElementRef: eS,
                         onClose: n
                     }) : null, (0, a.jsx)(j.A, {})]
                 })]

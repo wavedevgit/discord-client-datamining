@@ -1,6 +1,6 @@
 /** chunk id: 498336 params = (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => T
 });
 var a = n(627968),
     i = n(989349),
@@ -33,14 +33,14 @@ async function y(e, t, n) {
         rejectWithError: !0
     }), (0, c.VU)(e), (0, p.Xd)(e, !0)
 }
-async function T(e) {
+async function S(e) {
     await r.Bo.post({
         url: A.Rsh.SEND_POWERUPS_SYSTEM_MESSAGE(e),
         rejectWithError: !0
     })
 }
 
-function S() {
+function T() {
     let e = (0, l.bG)([b.A], () => b.A.getGuildId()),
         t = (0, l.bG)([v.A], () => v.A.getGuild(e)?.name),
         n = (0, l.yK)([_.A], () => [...j.DX, ...j.gh].filter(t => null != e && (0, h.zs)(t, e))),
@@ -154,7 +154,7 @@ function S() {
                 variant: "primary",
                 text: "Send System Message",
                 onClick: () => {
-                    T(e)
+                    S(e)
                 }
             })]
         }), (0, a.jsx)(d.Button, {

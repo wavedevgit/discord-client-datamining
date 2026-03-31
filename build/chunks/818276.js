@@ -29,11 +29,11 @@ let v = i.forwardRef(function(e, t) {
         taskDetails: j,
         isExpanded: A,
         isExpansionAnimationComplete: C
-    } = i.useContext(x.T), y = b.userStatus?.completedAt != null, T = (0, d.I3)(b), S = i.useRef(null), E = b.userStatus?.enrolledAt != null, N = null != T ? T.percentComplete : j.percentComplete, [I, k] = i.useState(!1);
+    } = i.useContext(x.T), y = b.userStatus?.completedAt != null, S = (0, d.I3)(b), T = i.useRef(null), E = b.userStatus?.enrolledAt != null, N = null != S ? S.percentComplete : j.percentComplete, [I, k] = i.useState(!1);
     return (0, a.jsxs)(a.Fragment, {
         children: [y && (0, a.jsx)(h.A, {
             overlayRef: s,
-            progressBarRef: S,
+            progressBarRef: T,
             isHovered: I
         }), (0, a.jsx)(r.animated.div, {
             ref: t,
@@ -59,7 +59,7 @@ let v = i.forwardRef(function(e, t) {
                     })]
                 }), E ? (0, a.jsx)(p.A, {
                     contentLocation: "collapsed",
-                    progressBarRef: S,
+                    progressBarRef: T,
                     isExpanded: !1,
                     percentComplete: N
                 }) : null, y && (0, a.jsx)(m.f, {

@@ -28,16 +28,16 @@ function o(e) {
         v(!0)
     }, []), y = a.useCallback(() => {
         v(!1), o(!1)
-    }, [o]), T = a.useCallback(function() {
+    }, [o]), S = a.useCallback(function() {
         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
         if (n) return;
         let {
             withDelay: t = !1
         } = e;
         t ? x.current = window.setTimeout(d, 75) : d()
-    }, [d, n]), S = a.useCallback(() => {
-        T()
-    }, [T]), E = a.useCallback(() => {
+    }, [d, n]), T = a.useCallback(() => {
+        S()
+    }, [S]), E = a.useCallback(() => {
         window.clearTimeout(x.current), g || f || p.current || o(!1)
     }, [g, f, o]), N = a.useCallback(() => {
         (0, s.av)({
@@ -50,10 +50,10 @@ function o(e) {
             },
             shouldExtendSession: !0,
             sourceQuestContent: i.uF.QUEST_BAR_V2
-        }), p.current = !0, T({
+        }), p.current = !0, S({
             withDelay: !0
         })
-    }, [T, h, t.id]), I = a.useCallback(() => {
+    }, [S, h, t.id]), I = a.useCallback(() => {
         (0, s.av)({
             questId: t.id,
             event: r.HAw.QUEST_HOVER_OFF,
@@ -79,8 +79,8 @@ function o(e) {
         handleCtxMenuSelection: A,
         handleGameSheetOpened: C,
         handleGameSheetClosed: y,
-        handleFocus: T,
-        handleFocusWithoutDelay: S,
+        handleFocus: S,
+        handleFocusWithoutDelay: T,
         handleBlur: E,
         handleMouseEnter: N,
         handleMouseLeave: I

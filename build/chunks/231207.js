@@ -24,8 +24,8 @@ var a = n(627968),
     A = n(44120),
     C = n(532794),
     y = n(216678),
-    T = n(194509),
-    S = n(761705),
+    S = n(194509),
+    T = n(761705),
     E = n(448362),
     N = n(71393),
     I = n(166403),
@@ -59,11 +59,11 @@ let D = function() {
         balance: Y,
         isFetching: J,
         error: X
-    } = (0, S.W)(), {
+    } = (0, T.W)(), {
         isSubmitting: Z,
         responseMessage: ee,
         redeemVirtualCurrency: et
-    } = (0, S.Q)(), [en, ea] = i.useState(k.dJq), [ei, es] = i.useState(""), [el, er] = i.useState(k.dJq), [eo, ed] = i.useState(k.dJq);
+    } = (0, T.Q)(), [en, ea] = i.useState(k.dJq), [ei, es] = i.useState(""), [el, er] = i.useState(k.dJq), [eo, ed] = i.useState(k.dJq);
     return (0, a.jsx)(x.f5, {
         value: K,
         children: (0, a.jsx)(c.IpV, {
@@ -98,7 +98,7 @@ let D = function() {
                         onSelectionChange: e => t(e),
                         selectionMode: "single",
                         fullWidth: !0
-                    }), (0, a.jsx)(T.A, {
+                    }), (0, a.jsx)(S.A, {
                         subscriptionTier: e,
                         premiumModalAnalyticsLocation: {},
                         color: d.XD.PRIMARY,

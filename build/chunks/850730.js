@@ -1,9 +1,9 @@
 /** chunk id: 850730 params = (module,exports,require) **/
 n.d(t, {
     DB: () => N,
-    ZL: () => S,
+    ZL: () => T,
     ln: () => E,
-    t0: () => T
+    t0: () => S
 });
 var a = n(64700),
     i = n(873298),
@@ -30,7 +30,7 @@ let A = [v.NJ8.DARK, v.NJ8.LIGHT, v.NJ8.DARKER, v.NJ8.MIDNIGHT],
 function y(e) {
     return e[Math.floor(Math.random() * e.length)]
 }
-async function T() {
+async function S() {
     let e, t = (e = _.default.getCurrentUser(), f.Ay.canUseClientThemes(e) ? Object.keys(b.ag).map(e => Number(e)) : []),
         n = t.length > 0 && Math.random() > .7;
     try {
@@ -56,7 +56,7 @@ async function T() {
         }
     } catch (e) {}
 }
-async function S() {
+async function T() {
     let e = d.A.purchases,
         t = (0, c.x9)(e),
         n = (0, c.$W)(e),
@@ -96,8 +96,8 @@ function N() {
             A = null != b ? a.find(e => e.skuId === b) ?? null : null,
             C = null != j ? i.find(e => e.skuId === j) ?? null : null,
             y = o.A.fontSize,
-            T = o.A.messageGroupSpacing,
-            S = p.Xi.getSetting();
+            S = o.A.messageGroupSpacing,
+            T = p.Xi.getSetting();
         return () => {
             try {
                 l.u_({
@@ -110,7 +110,7 @@ function N() {
                 });
                 let e = h.A.getPendingChanges(),
                     t = (0, u.Sk)(e);
-                (0, s._L)(t).finally(s.pZ), (0, r.XS)(y), (0, r.AC)(T), p.Xi.updateSetting(S)
+                (0, s._L)(t).finally(s.pZ), (0, r.XS)(y), (0, r.AC)(S), p.Xi.updateSetting(T)
             } catch (e) {}
         }
     }, [])

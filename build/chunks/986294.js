@@ -24,8 +24,8 @@ var a = n(627968),
     A = n(603047),
     C = n(435738),
     y = n(99753),
-    T = n(868068),
-    S = n(476398),
+    S = n(868068),
+    T = n(476398),
     E = n(405311),
     N = n(424994),
     I = n(519382),
@@ -186,7 +186,7 @@ function w() {
                         })
                     }
                 })]
-            }), !1, (0, a.jsx)(S.A, {}), (0, a.jsxs)(h.BJc, {
+            }), !1, (0, a.jsx)(T.A, {}), (0, a.jsxs)(h.BJc, {
                 gap: 8,
                 children: [(0, a.jsx)(h.Text, {
                     variant: "text-md/semibold",
@@ -213,7 +213,7 @@ function w() {
                     children: "Activity Sharing"
                 }), (0, a.jsx)(h.l6P, {
                     label: "Force show game",
-                    options: T.K.map(e => ({
+                    options: S.K.map(e => ({
                         label: e,
                         value: e,
                         id: e

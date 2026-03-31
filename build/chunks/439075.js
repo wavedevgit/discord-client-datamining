@@ -29,7 +29,7 @@ function b(e) {
         rowIndex: m,
         impressionRef: b,
         sourceQuestContent: j
-    } = e, [A, C] = i.useState(!1), [y, T] = i.useState([]), S = (0, o.aC)(t), E = i.useMemo(() => (0, u.vv)(t), [t]), N = (0, d.u0)(), I = i.useCallback(() => {
+    } = e, [A, C] = i.useState(!1), [y, S] = i.useState([]), T = (0, o.aC)(t), E = i.useMemo(() => (0, u.vv)(t), [t]), N = (0, d.u0)(), I = i.useCallback(() => {
         C(!0), N({
             questId: t.id,
             event: f.HAw.QUEST_HOVER,
@@ -81,7 +81,7 @@ function b(e) {
             quest: t,
             isHovering: A,
             errorHints: y,
-            warningHints: S,
+            warningHints: T,
             isVisibleInViewport: w,
             sourceQuestContent: j
         }), (0, a.jsx)(_.A, {
@@ -90,7 +90,7 @@ function b(e) {
             isHovering: A,
             contentPosition: r,
             rowIndex: m,
-            onReceiveErrorHints: T,
+            onReceiveErrorHints: S,
             isVisibleInViewport: w,
             sourceQuestContent: j
         })]

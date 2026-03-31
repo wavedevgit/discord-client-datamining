@@ -80,8 +80,8 @@ function A() {
     i.useEffect(() => {
         y()
     }, [y]);
-    let T = i.useMemo(() => m.filter(e => e.status !== g.Dmq.ACTIVE).sort((e, t) => e.id > t.id ? -1 : 1), [m]),
-        S = async () => {
+    let S = i.useMemo(() => m.filter(e => e.status !== g.Dmq.ACTIVE).sort((e, t) => e.id > t.id ? -1 : 1), [m]),
+        T = async () => {
             await o.Bo.post({
                 url: "/debug/subscription",
                 body: {
@@ -128,7 +128,7 @@ function A() {
                         variant: "primary",
                         size: "sm",
                         text: "Create Subscription",
-                        onClick: S
+                        onClick: T
                     })]
                 })
             }), null != e && (0, a.jsx)(p.A, {
@@ -146,12 +146,12 @@ function A() {
                     text: "End All Subscriptions",
                     onClick: E
                 })
-            }), T.length > 0 && (0, a.jsxs)(a.Fragment, {
+            }), S.length > 0 && (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsx)(d.Heading, {
                     variant: "heading-lg/semibold",
                     className: v.wx,
                     children: "Previous Subscriptions"
-                }), T.map(e => (0, a.jsx)(p.A, {
+                }), S.map(e => (0, a.jsx)(p.A, {
                     subscription: e,
                     onUpdated: y
                 }, e.id))]

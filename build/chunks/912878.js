@@ -1,6 +1,6 @@
 /** chunk id: 912878 params = (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => T
 });
 var a = n(627968),
     i = n(64700),
@@ -71,7 +71,7 @@ function y() {
     })
 }
 
-function T() {
+function S() {
     let e = i.useCallback(() => {
         u.A.openPrivateChannel({
             recipientIds: [j.K]
@@ -85,7 +85,7 @@ function T() {
     })
 }
 
-function S() {
+function T() {
     let e = (0, d.bG)([b.Ay], () => b.Ay.allByCategory(b.xW.MESSAGING), [], d.My).map(e => {
         let [t, n, {
             label: i
@@ -103,6 +103,6 @@ function S() {
             className: A.yF
         }), (0, a.jsx)(y, {}), (0, a.jsx)("div", {
             className: A.yF
-        }), (0, a.jsx)(T, {})]
+        }), (0, a.jsx)(S, {})]
     })
 }

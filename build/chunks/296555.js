@@ -1,6 +1,6 @@
 /** chunk id: 296555 params = (module,exports,require) **/
 n.d(t, {
-    B: () => T,
+    B: () => S,
     G: () => y
 });
 var a = n(627968),
@@ -355,7 +355,7 @@ let h = i.createContext({
             })]
         })
     },
-    T = e => {
+    S = e => {
         let {
             children: t
         } = e, [n, s] = i.useState(() => () => {}), l = i.useMemo(() => ({
